@@ -1,0 +1,79 @@
+---
+title: Umsetzung
+seo-title: Umsetzung
+description: Umsetzung
+seo-description: null
+page-status-flag: never-activated
+uuid: 883bad1c-c35b-4c48-9dca-c0cb947facb6
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: delivery
+content-type: reference
+topic-tags: deliverability-management
+discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+
+---
+
+
+# Verbesserung der Lieferbarkeit durch erneute Bindung{#re-engagement}
+
+Während der Implementierung der Zustellbarkeit bestehen einige der Best Practices darin, eine gesunde Teilnehmerbasis zu erhalten und die Zustellbarkeit durch Strategien zur erneuten Interaktion zu verbessern.
+
+* Die Aufrechterhaltung einer gesunden Teilnehmerbasis ist einer der Hauptaspekte, um eine gute und konsistente Bereitstellung zu gewährleisten. Viele Bereitstellungsprobleme entstehen durch schlechte Datenpraxis und Wartung.
+* Eines der häufigsten Probleme, mit denen Marketingexperten heutzutage konfrontiert sind, ist die Inaktivität von Abonnenten (auch als &quot;gering&quot;oder &quot;nicht aktiv&quot;bezeichnet), was sich negativ auf die Bereitstellung von E-Mails und den niedrigen ROI auswirken kann.
+
+>[!NOTE]
+>
+>Weitere Informationen zu Kampagnenstrategien und den Bereitstellungsdiensten von Adobe erhalten Sie von Ihrem Berater für Auslieferung oder von Ihrem Adobe-Vertriebsmitarbeiter.
+
+## Wie beurteilen ISPs inaktives Verhalten? {#how-do-isps-view-non-engagement-activity-}
+
+Seit Jahren verwenden ISPs Feedback-Messwerte für die Interaktion von Benutzern, um zu entscheiden, wohin Nachrichten übermittelt werden und ob sie überhaupt übermittelt werden. Benutzerinteraktion kann sowohl positives als auch negatives Feedback enthalten und ISPs überwachen permanent beides. Fehlende Interaktion ist besonders negativ. Das ständige Versenden von Kampagnen an inaktive Benutzer kann der allgemeinen Reputation Ihrer IP-Adresse und Ihrer Domains schaden.
+
+ISPs wie AOL, Gmail, Microsoft und Yahoo! erachten bei fehlender Interaktion eine E-Mail als unerwünscht und befördern diese Nachricht in den Spam-Ordner. Zusätzlich können E-Mail-Konten, die nicht mehr von Abonnenten verwendet werden, als &quot;wiederverwertete&quot; Spamfallen verwendet werden. Das bedeutet, dass die Adresse längere Zeit hindurch ungültig war und alle Nachrichten dorthin abgelehnt wurden. Wenn Ihr Abonnentenverwaltungssystem &quot;Hardbounces&quot; nicht entfernt, könnten Sie in einer solchen Mailing-Spamfalle landen, die beträchtliche Versandprobleme verursacht.
+
+## Wie sollten Sie bei Inaktivität vorgehen? {#how-should-you-approach-inactivity-}
+
+Kunden der Adobe-Campaign-Plattform haben die Möglichkeit, Inaktivität innerhalb ihrer Instanz zu erkennen, indem sie die Öffnungs- und Klickraten des Segments betrachten. Da fehlende Interaktion die Zustellbarkeit beeinträchtigen kann, ist der erste Gedanke, diese Abonnenten einfach aus der Datenbank zu entfernen. Doch dies könnte in manchen Fällen die falsche Entscheidung sein. Empfehlenswert ist eine Rückgewinnungsstrategie (auch Win-Back-Strategie genannt), um die Abonnenten zu behalten, die E-Mails erhalten möchten, und diejenigen, die keine Aktivität zeigen, nach und nach zu entfernen.
+
+## Funktionieren Rückgewinnungskampagnen wirklich? {#do-re-engagement-campaigns-really-work-}
+
+Laut einer Studie von Return Path erzielten Rückgewinnungskampagnen eine Öffnungsrate von 12 % verglichen mit einer durchschnittlichen Öffnungsrate von 14 % bei normalen Kampagnen. Obwohl nur 24 % der Abonnenten die Rückgewinnungskampagne gelesen hatten, lasen ca. 45 % von ihnen die darauf folgenden Nachrichten.
+
+![](assets/deliverability_implementation_1.png)
+
+## Wie wird eine Rückgewinnungskampagne erstellt? {#how-do-you-create-a-re-engagement-campaign-}
+
+### Phase 1 {#phase-1}
+
+* Zunächst müssen die Abonnenten identifiziert werden, die nur sehr geringe oder gar keine Öffnungs- oder Klickaktivität zeigen, und entsprechend einem bestimmten Zeitrahmen aufgeteilt werden. Als Faustregel sollten alle Abonnenten überprüft werden, die innerhalb der letzten 90 Tage keine E-Mails geöffnet oder angeklickt haben. Doch dies variiert je nach Geschäftstätigkeit (z. B. saisonaler Versand).
+* Ein weiterer Punkt, den Sie beim Festlegen des Zeitrahmens beachten sollten, ist, dass ISPs und Blacklist-Unternehmen bei der Interaktion einen Zeitraum zwischen 1,5 und 1,8 Jahren betrachten. Zusätzlich werden auch Aktivitäten wie Einkäufe und Website-Besuche oder andere Kontaktpunkte beachtet, wie Präferenzen während der Anmeldung oder der Ort der ersten Kontaktaufnahme.
+
+### Phase 2 {#phase-2}
+
+* Sobald ein Segment definiert, ist, wird im nächsten Schritt eine auf die erfassten Messwerte des Abonnenten abgestimmte Rückgewinnungskampagne entwickelt. Zusätzlich weckt eine Betreffzeile verstärkt das Interesse des Abonnenten. Laut einer Studie von Return Path erzielen Betreffzeilen und Inhalte, in denen steht &quot;Wir vermissen Sie&quot; höhere Antwortraten als &quot;Wir wollen Sie zurückhaben&quot;.
+* Für eine erneute Interaktion kann in der E-Mail auch ein Anreiz angeboten werden. Beim Angebot von Rabatten ist es besser, Beträge zu nennen als Prozentsätze, was laut Return Path höhere Antwortraten zur Folge hat. Schließlich sind auch A/B-Tests zur Überprüfung von Antwort- und Erfolgsraten eine nützliche Methode.
+
+### Phase 3 {#phase-3}
+
+Als Nächstes muss die Frequenz der Rückgewinnungskampagne bestimmt werden. Im Gegensatz zu einfachen Bestätigungsnachrichten sollen Rückgewinnungskampagnen die Abonnenten langfristig mit mehreren E-Mails zurückgewinnen. Im Folgenden wird ein Beispiel für die Ermittlung der Frequenz beschrieben.
+
+![](assets/deliverability_implementation_2.png)
+
+Abonnenten, die in der Kampagne durch Öffnen oder Anklicken erneut aktiv werden, werden wieder auf die Liste aktiver Abonnenten gesetzt.
+
+### Phase 4 {#phase-4}
+
+* In der nächsten Phase werden Abonnenten identifiziert, die längere Zeit hindurch keine Aktivität zeigen. Der Versand von E-Mails an sie wird schrittweise verringert. Wenn innerhalb des letzten Jahres gar keine Aktivität stattgefunden hat, sollte die E-Mail-Adresse dieser Abonnenten ausgesetzt werden. Obwohl sie kein Interesse am Inhalt der E-Mail gezeigt haben, besteht immer noch die Möglichkeit, dass sie ihre Anmeldung erneuern, wenn Sie eine einmalige Bestätigungskampagne starten.
+* Eine Bestätigungskampagne ermöglicht Ihnen, bereits seit langer Zeit inaktive Abonnenten zu fragen, ob sie auf der Abonnentenliste bleiben möchten. Bei der Erstellung der Kampagne sollten Sie einen &quot;Hier klicken&quot;-Link einfügen, damit Empfänger ihre Absicht bestätigen und ihre Adresse verifizieren können. Auf diese Weise kann die Aktion in der Datenbank festgehalten werden. Unten finden Sie ein Beispiel einer Bestätigungs-E-Mail:
+
+   ![](assets/deliverability_implementation_3.png)
+
+   Nachdem der Abonnent die Aktion ausgeführt hat, könnten Sie ihm eine Landingpage mit der Bestätigung seiner erneuten Anmeldung anzeigen. Unten finden Sie ein Beispiel für eine Landingpage:
+
+   ![](assets/deliverability_implementation_4.png)
