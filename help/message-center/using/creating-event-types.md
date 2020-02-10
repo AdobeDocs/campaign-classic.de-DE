@@ -1,0 +1,31 @@
+---
+title: Ereignistypen erstellen
+seo-title: Ereignistypen erstellen
+description: Ereignistypen erstellen
+seo-description: null
+page-status-flag: never-activated
+uuid: 70c8325e-a6ef-4e47-85f9-a9fa04c2ef30
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: message-center
+content-type: reference
+topic-tags: instance-configuration
+discoiquuid: 5c0a428f-a3e7-4848-8c47-b72832ba97c2
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+
+---
+
+
+# Ereignistypen erstellen{#creating-event-types}
+
+Ereignistypen, die von Adobe Campaign verarbeitet werden sollen, müssen in der Steuerelementinstanz erstellt werden. Dies kann über den **[!UICONTROL Administration > Platform > Enumerations]** Ordner des Baumes erfolgen. Jeder Ereignistyp stimmt mit einem Wert in der **[!UICONTROL eventType]** Aufzählung überein. Dabei kann es sich um eine Auftragsbestätigung, ein Passwort oder eine Auftragsbestätigung usw. handeln.
+
+![](assets/messagecenter_eventtype_enum_001.png)
+
+Nähere Informationen erhalten Sie im Abschnitt [Auflistungsverwaltung](../../platform/using/managing-enumerations.md).
+
+Melden Sie sich nach der Erstellung der Auflistungswerte von Ihrer Instanz ab und wieder an, damit die Änderungen berücksichtigt werden.
