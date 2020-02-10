@@ -1,0 +1,72 @@
+---
+title: Filteroptionen
+seo-title: Filteroptionen
+description: Filteroptionen
+seo-description: null
+page-status-flag: never-activated
+uuid: 79e9870b-3a27-4924-9d75-1ebec6911140
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: platform
+content-type: reference
+topic-tags: filtering-data
+discoiquuid: 199eb687-3da6-49c1-9997-ef1cbd2647b6
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+
+---
+
+
+# Filteroptionen{#filtering-options}
+
+## Über Filter {#about-filtering}
+
+Adobe Campaign zeigt standardmäßig alle Daten der Datenbank an, auf die der Benutzer Lesezugriff hat.
+
+Diese Daten können über die Optionen im oberen Bereich des Browserfensters gefiltert werden.
+
+![](assets/filter_web_zone.png)
+
+Es gibt unterschiedliche Möglichkeiten, die angezeigten Informationen zu filtern und zu ordnen. Wenn nötig, können sie auch kumuliert werden:
+
+* Nach Ordnern filtern, siehe [Nach Ordner](#filter-by-folder)filtern,
+* Filtern nach Status, siehe [Filtern nach Status](#filter-by-status),
+* Datensortierung, siehe [Reihenfolge nach](#order-by),
+* Suchen, siehe [Schnellsuche](#quick-search).
+
+## Nach Ordner filtern {#filter-by-folder}
+
+Click the **[!UICONTROL Folder]** icon to select the folder containing the data to display.
+
+![](assets/filter_web_select_folder.png)
+
+Es werden nur die Profile des ausgewählten Ordners angezeigt:
+
+![](assets/filter_web_folder_display.png)
+
+Über das rechts von der Zeile der Ordnerauswahl gelegene Kreuz kann der Standard-Anzeigemodus wieder aktiviert werden.
+
+## Nach Status filtern {#filter-by-status}
+
+Je nach Typ der angezeigten Informationen können Sie Statusfilter anwenden. Sie können beispielsweise beim Filtern von Sendungen nur solche anzeigen lassen, die abgeschlossen sind:
+
+![](assets/d_ncs_user_interface_filter_delivery.png)
+
+## Sortierreihenfolge {#order-by}
+
+Über die Dropdown-Liste rechts des Ordner-Filterfelds kann die Sortierreihenfolge der angezeigten Daten ausgewählt werden. Der Inhalt dieses Filters hängt vom Datentyp der aufgerufenen Seite ab.
+
+Sie können beispielsweise Ihre Aufgaben nach Priorität, nach Erstellungsdatum oder nach dem Alphabet ordnen.
+
+![](assets/order_data_sample.png)
+
+## Schnellsuche {#quick-search}
+
+Verwenden Sie das Suchfeld, um schnell auf ein bestimmtes Element zuzugreifen: Geben Sie im Titel oder im internen Namen des Elements enthaltene Zeichen ein und bestätigen Sie die Eingabe, um die Daten auf der Seite automatisch zu filtern.
+
+![](assets/d_ncs_user_interface_filter_search.png)
+
+Klicken Sie auf das Kreuz, um den Inhalt des Suchfelds zu löschen und erneut alle vorhandenen Elemente anzuzeigen.
