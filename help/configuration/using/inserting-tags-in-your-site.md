@@ -1,0 +1,193 @@
+---
+title: Tags in Ihre Site einfügen
+seo-title: Tags in Ihre Site einfügen
+description: Tags in Ihre Site einfügen
+seo-description: null
+page-status-flag: never-activated
+uuid: e5e4a431-2093-4d5a-acd2-0040b6ce3519
+contentOwner: sauviat
+products: SG_CAMPAIGN/CLASSIC
+audience: configuration
+content-type: reference
+topic-tags: setting-up-web-tracking
+discoiquuid: 57988b00-62cc-43d3-a2eb-bfed5bff7dc1
+index: y
+internal: n
+snippet: y
+translation-type: tm+mt
+source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+
+---
+
+
+# Tags in Ihre Site einfügen{#inserting-tags-in-your-site}
+
+## Einfache Methode {#simple-method}
+
+Diese Methode besteht darin, einen HTTP-Aufruf an den Umleitungsserver zu senden, indem ein **`<img>`** HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die Sie verfolgen möchten.
+
+>[!CAUTION]
+>
+>Diese Methode verwendet die vom Webbrowser gesendeten Cookies zur Identifizierung des Empfängers und ist nicht zu 100 % zuverlässig.
+
+**Beispiel**:
+
+```
+<img height='0' width='0' alt='' src='https://localhost/r/12343?tagid=home'
+```
+
+Das eingefügte Tag kontaktiert den Weiterleitungsserver.
+
+![](assets/d_ncs_integration_webtracking_structure2.png)
+
+Wenn Sie eine Seite definieren, die in der Konsole verfolgt werden soll, können Sie ein Beispiel-Web-Tracking-Tag generieren, das kopiert und in den Quellcode Ihrer Webseite eingefügt wird.
+
+Wenn Sie TRANSACTION-Tags verwenden, müssen Sie das Beispiel-Tag jedoch mit JavaScript ändern, um die Transaktionsinformationen (Menge, Anzahl der Elemente) und alle durch ein Erweiterungsschema definierten Informationen einzufügen.
+
+### Statisches Einfügen von Tags {#static-insertion-of-tags}
+
+Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole erzeugten oder manuell erstellten Tags in die Quelle Ihrer Webseite.
+
+**Beispiel**: Einfügen eines Web-Tracking-Tags auf einer Seite, auf der ein Formular angezeigt wird.
+
+```
+<html>
+  <...>
+  <body>
+  <script>
+      document.write("<img height='0' width='0' alt='' src='https://localhost/r/" + Math.random().toString() + "?tagid=home'>");
+    </script>
+    <noscript>
+     <img height='0' width='0' alt='' src='https://localhost/r/?tagid=home'>
+    </noscript>
+    <h1>My site</h1>
+    <form action="http://localhost/amount.md">
+      Quantity: <input type="text" name="quantity"/><br/><br/>
+      Amount: <input type="text" name="amount"/><br/><br/>
+      <input value="Save" type="submit">
+    </form>
+  </body>
+</html>
+```
+
+Einfügen eines TRANSACTION-artigen Web-Tracking-Tags in die Bestätigungsseite (&quot;amount.md&quot;).
+
+```
+<html>
+  <body>
+    <script>
+      function getURLparam(name) 
+      {
+        var m = location.search.match new RegExp("[?&]" + name + "=([^&]+)"));
+        return m ? unescape(m[1]) : "";
+      }
+ 
+       var params = "https://localhost/r/" + Math.random().toString() + "?tagid=amount&amount="
+                      +getURLparam("amount")+"&article="+getURLparam("quantity");
+       document.write("<img height='0' width='0' src='"+params+"'/>");
+    </script>
+
+    <h1>Approval confirmation</h1>
+  </body>
+</html>
+```
+
+### Dynamische Erstellung von Web-Tracking-Tags {#dynamic-generation-of-web-tracking-tags}
+
+Wenn Ihre Webseiten dynamisch generiert werden, können Sie das Web-Tracking-Tag zur Seitengenerierung hinzufügen.
+
+**Beispiel**: Zu JSPs hinzugefügte Webverfolgung.
+
+```
+<%@page import="java.util.Random" %>
+<html>
+  <body>
+    <img height='0' width='0' alt='' src='https://localhost/r/<%=new Random().nextInt()%>?tagid=home'>
+    <h1>My site</h1>
+    <form action="https://localhost/amount.md">
+      Quantity: <input type="text" name="quantity"/><br/><br/>
+      Amount: <input type="text" name="amount"/><br/><br/>
+      <input value="Save" type="submit">
+    </form>
+  </body>
+</html>
+```
+
+```
+<%@page import="java.util.Random" %>
+<html>
+  <body>
+    <%  
+      String strParams = new Random().nextInt() + "?tagid=amount";
+      strParams += "&amount="+request.getParameter("amount");
+      strParams += "&article="+request.getParameter("quantity");
+    %>
+    <img height='0' width='0' alt=''
+     src='http://localhost/r/<%=strParams%>'>
+    <h1>Approval confirmation</h1>
+    </body>
+</html>
+```
+
+## Optimum-Methode {#optimum-method-}
+
+Wenn Sie die an den Umleitungsserver gesendeten Informationen steuern möchten, ist die zuverlässigste Möglichkeit, die HTTP-Abfrage selbst synchron mit einer Seitenerstellungssprache durchzuführen.
+
+Die URL, die Sie erstellen, muss den im [Web-Tracking-Tag definierten Syntaxregeln entsprechen: Definition](../../configuration/using/web-tracking-tag--definition.md).
+
+![](assets/d_ncs_integration_webtracking_structure3.png)
+
+>[!NOTE]
+>
+>Für Umleitung und Webverfolgung werden Cookies verwendet. Es ist wichtig, dass sich der Webserver, der den synchronen HTTP-Aufruf durchführt, in derselben Domäne befindet wie der Umleitungsserver. Die verschiedenen HTTP-Austausche müssen die Cookies &quot;id&quot;, &quot;uuid&quot;und &quot;uuid230&quot;enthalten.
+
+**Beispiel**: Dynamische Generierung in Java mit Empfänger-Authentifizierung unter Verwendung ihrer Kontonummer.
+
+```
+[...]
+  // Recipient account, amount and articles
+  String strAccount = request.getParameter("account");
+  String strAmount = request.getParameter("amount");
+  String strArticle = request.getParameter("article");
+
+  StringBuffer strCookies = new StringBuffer();
+  String strSetCookie = null;
+
+  // Get cookies from client request
+  Cookie[] cookies = request.getCookies();
+  for(int i=0; i< cookies.length; i++ )
+  {
+    Cookie c = cookies[i];
+    String strName = c.getName();
+    if( strName.equals("id") || strName.equals("uuid") || strName.equals("uuid230") )
+      // Helper function to add cookies in string
+      AddCookie(strCookies, c);
+  }
+  // Now perform a synchronous HTTP request to inform redirection server
+  // Add a tagid in auto-discover mode, and a default jobId to use (in hexa)
+  StringBuffer strURL = new StringBuffer("https://www.adobe.com/r/a?tagid=cmd_page%7Ct&jobid=27EE");
+  if( strAccount != null )
+    AddParameter(strURL, "rcpid", "saccount="+strAccount);
+  if( strAmount != null )
+    AddParameter(strURL, "amount", strAmount);
+  if( strArticle != null )
+    AddParameter(strURL, "article", strArticle);
+  
+  URL url = new URL(strURL.toString());
+  HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+  // Add the client cookies
+  if( strCookies.length() > 0 )
+    connection.setRequestProperty("Cookie", strCookies.toString());
+
+  int errcode = connection.getResponseCode();
+
+  // Now add the Adobe Campaign cookies if the server returned one :
+  if( errcode == 200 )
+  {
+    strSetCookie = connection.getHeaderField("Set-Cookie");
+    if( strSetCookie != null && strSetCookie.length() > 0 )
+      response.addHeader("Set-Cookie", strSetCookie);
+  }
+  [...]
+```
+
