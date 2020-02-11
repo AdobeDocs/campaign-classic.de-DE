@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
 
 ---
 
@@ -31,9 +31,10 @@ Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Re
 ## Empfehlungen und Einschränkungen  {#recommendations-and-limitations}
 
 * Die Funktion zum Archivieren von E-Mails ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Bei gehosteten und hybriden Architekturen wenden Sie sich an Ihren Kundenbetreuer, um sie zu aktivieren. Für lokale Installationen befolgen Sie die unten stehenden Richtlinien - siehe Abschnitte [Aktivieren der E-Mail-Archivierung (vor Ort)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (vor Ort)](#configuring-the-bcc-email-address--on-premise-) .
-* Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Bereitstellungsvorlage oder in der Bereitstellung über die **[!UICONTROL Archive emails]** Option aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+* Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die BCC-Adresse Ihrer Wahl muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfiguriert.
+* Für **lokale Installationen** folgen Sie den unten stehenden Richtlinien, um sie zu aktivieren - siehe [Aktivieren der E-Mail-Archivierung (vor Ort)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (vor Ort)](#configuring-the-bcc-email-address--on-premise-) .
 * Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
+* Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Bereitstellungsvorlage oder in der Bereitstellung über die **[!UICONTROL Archive emails]** Option aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
 * Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits mit der E-Mail-Archivierung arbeiten, müssen Sie manuell auf das neue E-Mail-Archivierungssystem (BCC) aktualisieren. Weitere Informationen finden Sie im Abschnitt [Aktualisiertes E-Mail-Archivierungssystem (BCC)](#updated-email-archiving-system--bcc-) .
 
