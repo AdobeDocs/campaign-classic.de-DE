@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3a4eb0cf49b81d720fa3925d48cd250e0c3fde32
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -78,7 +78,7 @@ DKIM geht auf eine Kombination der Authentifizierungsprinzipien DomainKeys von Y
 
 DKIM hat sozusagen die **DomainKeys**-Authentifizierung ersetzt.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Bei gehosteten oder hybriden Installationen erfolgt die DKIM-E-Mail-Authentifizierungssignatur durch die erweiterte MTA, wenn Sie auf die erweiterte MTA aktualisiert haben. Das DKIM-Signieren durch die native Kampagnen-MTA wird im Rahmen des erweiterten MTA-Upgrades in der **[!UICONTROL Domain management]** Tabelle deaktiviert.
 >
