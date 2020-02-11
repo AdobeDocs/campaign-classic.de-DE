@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ce2a1a55e244180a4e62d6f3b5a5ed5bb8aff6e
+source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
 
 ---
 
@@ -28,10 +28,11 @@ Im folgenden Abschnitt erhalten Sie einen Überblick über die Konfiguration, di
 
 >[!NOTE]
 >
->Alle technischen Empfehlungen zum effizienten Senden und Empfangen von Nachrichten von einer Adobe Campaign-Plattform finden Sie im technischen Hinweis zur **Auslieferung** .
->
->Einige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).\
->Refer to the [getting started guide](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) that presents the concepts and best practices related to deliverability.
+>Einige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+
+Weitere Informationen zu den Konzepten und Best Practices im Zusammenhang mit der Lieferbarkeit finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
+
+Alle technischen Empfehlungen zum effizienten Senden und Empfangen von Nachrichten von einer Adobe Campaign-Plattform finden Sie in diesem [Abschnitt](../../delivery/using/technical-recommendations.md).
 
 ## Grundprinzip {#operating-principle}
 
@@ -139,7 +140,7 @@ Standardmäßig überwacht der Statistikserver den Anschluss 7777. Dieser Anschl
 
 MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sender- und einem Empfangs-Server.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Bei gehosteten oder hybriden Installationen werden die Regeln für den **[!UICONTROL MX management]** Bereitstellungsdurchsatz nicht mehr verwendet, wenn Sie auf die erweiterte MTA aktualisiert haben. Die erweiterte MTA verwendet ihre eigenen MX-Regeln, die es ermöglichen, Ihren Durchsatz nach Domäne basierend auf Ihrem eigenen historischen E-Mail-Ruf und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, anzupassen.
 >
