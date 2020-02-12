@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 37946a63a0cd0312de31b26dd4d115895d959638
+source-git-commit: 48969956922cf11aa208c23d985cc13b300bab05
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 37946a63a0cd0312de31b26dd4d115895d959638
 
 Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032) , um den **letzten stabilen Build** (GA) anzuzeigen.
 
-## ![](assets/orange2.png) Version 19.2.3 - Build 9081 {#release-19-2-2-build-9081}
+## ![](assets/orange2.png) Version 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 7. Februar 2020_
 
@@ -67,8 +67,8 @@ _2. Dezember 2019_
    <td> <p>CCPA ist das neue Datenschutzgesetz des Bundesstaates Kalifornien, mit dem die Datenschutzvorschriften harmonisiert und modernisiert werden, die am 01. Januar 2020 in Kraft treten. Der CCPA gilt für Adobe Campaign-Kunden, die Daten von Personen ("Datensubjekten") erfassen, die in Kalifornien wohnhaft sind.</p>
     <p> Zusätzlich zu den bereits verfügbaren Datenschutzfunktionen (einschließlich Zustimmungsverwaltung, Einstellungen zur Datenspeicherung und Benutzerrollen) hilft Adobe Campaign Ihnen bei der Vorbereitung auf CCPA:</p>
     <ul>
-      <li>Recht auf Zugriff und Recht auf Löschung: Dazu nutzen wir die Funktionen, die wir analog dazu für die DSGVO ergänzt haben – <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">mehr dazu</a></li>
-      <li>Sie können nachverfolgen, ob ein Verbraucher sich für den Verkauf von persönlichen Informationen entschieden hat. Dazu müssen Sie die Tabelle "Profile"erweitern und ein Feld " <strong>Ausschluss für CCPA</strong> "hinzufügen. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">mehr dazu</a></li></td> 
+      <li>Recht auf Zugriff und Recht auf Löschung: Dazu nutzen wir die Funktionen, die wir analog dazu für die DSGVO ergänzt haben – <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#righttoaccess">Mehr dazu</a></li>
+      <li>Sie können nachverfolgen, ob ein Verbraucher sich für den Verkauf von persönlichen Informationen entschieden hat. Dazu müssen Sie die Tabelle "Profile"erweitern und ein Feld " <strong>Ausschluss für CCPA</strong> "hinzufügen. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ccpa">Mehr dazu</a></li></td> 
   </tr> 
  </tbody> 
 </table>
@@ -125,20 +125,20 @@ _2. Dezember 2019_
 **Neuheiten**
 
 * Optimierung des Speicherverbrauchs für Push-Benachrichtigungen.
-* Zur Optimierung der Leistung und des Speicherplatzes wurde die Handhabung der Datei **login.log** verbessert. Die Datei wird nun in mehrere Dateien aufgeteilt, wobei pro Tag maximal 365 Dateien gespeichert werden. [mehr dazu](../../production/using/log-files.md)
-* Das externe Microsoft Dynamics CRM-Konto kann jetzt mit Passwortdaten (Kennwort + Benutzername) oder Zertifikat (privater Schlüssel) konfiguriert werden. [mehr dazu](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* Zur Optimierung der Leistung und des Speicherplatzes wurde die Handhabung der Datei **login.log** verbessert. Die Datei wird nun in mehrere Dateien aufgeteilt, wobei pro Tag maximal 365 Dateien gespeichert werden. [Mehr dazu](../../production/using/log-files.md)
+* Das externe Microsoft Dynamics CRM-Konto kann jetzt mit Passwortdaten (Kennwort + Benutzername) oder Zertifikat (privater Schlüssel) konfiguriert werden. [Mehr dazu](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Einige Verbesserungen wurden dem Hadoop FDA-Anschluss hinzugefügt, um die Zuverlässigkeit zu verbessern
 * Es wurde eine spezielle Garantie hinzugefügt, um den Speicherplatz auf der Festplatte zu überprüfen, bevor es möglich ist, öffentliche Ressourcen auf den Server hochzuladen.
 * Neue [Kampagnenoptionen](../../installation/using/configuring-campaign-options.md) wurden hinzugefügt:
    * Mit der **Konfigurationsoption WdbcKillSessionPolicy** können Sie das Verhalten &quot; **Unbedingter Stopp** &quot;bei allen Workflows und PostgreSQL-Datenbankabfragen beeinflussen.
    * Mit der Option **NmsOperation_DeliveryVorbereitungsfenster** können Sie die Anzahl der Tage festlegen, ab denen Lieferungen mit inkonsistentem Status von der Zählung laufender Lieferungen ausgeschlossen werden.
-   * Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replizierung optimiert. [mehr dazu](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
-   * Die Option **XtkCleanup_NoStats** wurde für PostgreSQL erweitert, um das Verhalten des Speicheroptimierungsschritts des Arbeitsablaufs für die Datenbankbereinigung besser zu steuern. [mehr dazu](../../production/using/database-cleanup-workflow.md#statistics-update)
+   * Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replizierung optimiert. [Mehr dazu](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
+   * Die Option **XtkCleanup_NoStats** wurde für PostgreSQL erweitert, um das Verhalten des Speicheroptimierungsschritts des Arbeitsablaufs für die Datenbankbereinigung besser zu steuern. [Mehr dazu](../../production/using/database-cleanup-workflow.md#statistics-update)
 * Der **Anmelde()** -API wurde ein Mechanismus zur Kontosperrung hinzugefügt. Es verhindert alle weiteren Anmeldeversuche nach einer bestimmten Anzahl aufeinander folgender fehlgeschlagener Anmeldeversuche innerhalb eines bestimmten Zeitraums.
-* Mit der neuen Option **Maximale Personalisierungslaufzeit** in den Auslieferungseigenschaften können Sie einen Timeout-Zeitraum für die Personalisierungslaufzeit definieren, um zu verhindern, dass die Personalisierungsphase zu lange läuft. [mehr dazu](../../delivery/using/personalization-fields.md#timing-out-personalization)
-* Die Option **ftp-Protokoll** wurde hinzugefügt, um Ihnen die Verwendung einer Proxykonfiguration für SFTP-Verbindungen zu ermöglichen. [mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
+* Mit der neuen Option **Maximale Personalisierungslaufzeit** in den Auslieferungseigenschaften können Sie einen Timeout-Zeitraum für die Personalisierungslaufzeit definieren, um zu verhindern, dass die Personalisierungsphase zu lange läuft. [Mehr dazu](../../delivery/using/personalization-fields.md#timing-out-personalization)
+* Die Option **ftp-Protokoll** wurde hinzugefügt, um Ihnen die Verwendung einer Proxykonfiguration für SFTP-Verbindungen zu ermöglichen. [Mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration)
 * Neue Unterstützung des Proxyzugriffs auf einen externen SFTP-Server für lokale Umgebungen.
-* Es wurde eine spezielle Garantie hinzugefügt, um die Installation von Paketen zu verhindern, die nicht mit der Campaign-Instanz kompatibel sind. [mehr dazu](../../installation/using/installing-campaign-standard-packages.md)
+* Es wurde eine spezielle Garantie hinzugefügt, um die Installation von Paketen zu verhindern, die nicht mit der Campaign-Instanz kompatibel sind. [Mehr dazu](../../installation/using/installing-campaign-standard-packages.md)
 
 _Veraltete Systeme_
 
@@ -146,7 +146,7 @@ Die folgenden Systeme werden jetzt für Campaign Classic-Implementierungen [nich
 * Apache 2.2
 * Centos 6
 
-Vergewissern Sie sich, dass Sie sich auf unterstützten Versionen aller Systeme befinden, die in der neuesten Kampagnen-Kompatibilitätsmatrix aufgeführt sind. [mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Vergewissern Sie sich, dass Sie sich auf unterstützten Versionen aller Systeme befinden, die in der neuesten Kampagnen-Kompatibilitätsmatrix aufgeführt sind. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 _Campaign Mobile SDK_
 
