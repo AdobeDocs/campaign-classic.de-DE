@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0237aafd79753db1bc1ca54853b7c51b65492eb2
+source-git-commit: e091bab4032a0fe8292ea65100627fefab2a5e30
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 0237aafd79753db1bc1ca54853b7c51b65492eb2
 
 Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032) , um den **letzten stabilen Build** (GA) anzuzeigen.
 
-## ![](assets/blue2.png) Version 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
+## ![](assets/blue-2.png) Version 19.2.3 - Build 9081 {#release-19-2-3-build-9081}
 
 _7. Februar 2020_
 
@@ -50,7 +50,7 @@ _7. Februar 2020_
 * Korrektur des Regressionsfehlers aufgrund der Implementierung der SSL-Zertifizierung, der dazu führte, dass die Benutzerverbindung auf dem Windows-Server fehlschlug. (NEO-20629)
 * Es wurde ein Problem behoben, bei dem im Menü **Info** eine falsche Version-Tag-Nummer angezeigt wurde.
 
-## ![](assets/orange2.png) Version 19.2 - Build 9080 {#release-19-2-build-9080}
+## ![](assets/orange-2.png) Version 19.2 - Build 9080 {#release-19-2-build-9080}
 
 _2. Dezember 2019_
 
