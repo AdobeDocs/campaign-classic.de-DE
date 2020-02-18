@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
 
 ---
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor:
 
       Weitere Informationen finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      oder
+      or
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
@@ -181,7 +181,7 @@ Gehen Sie wie folgt vor:
    * Für Linux: Integration [in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
    * Windows: Integration [in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Starten Sie die Website und testen Sie die Umleitung mithilfe der URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
+1. Starten Sie die Website und testen Sie die Umleitung mithilfe der URL: https://tracking.campaign.net/r/test.
 
    Der Browser muss die folgende Meldung anzeigen:
 
@@ -196,6 +196,10 @@ Gehen Sie wie folgt vor:
 
 1. Starten Sie den Adobe Campaign-Server (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) und führen Sie den Befehl **nlserver pdump** erneut aus, um zu prüfen, ob alle aktivierten Module vorhanden sind.
 
+   >[!NOTE]
+   >
+   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl start**
+
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
    syslogd@default (7611) - 9.2 MB
@@ -209,7 +213,7 @@ Gehen Sie wie folgt vor:
 
    Mit diesem Befehl können Sie auch die Version und die Build-Nummer des Adobe Campaign-Servers kennen, der auf dem Computer installiert ist.
 
-1. Testen Sie das **nlserver-Webmodul** unter Verwendung der URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test)
+1. Testen Sie das **nlserver-Webmodul** unter Verwendung der URL: https://console.campaign.net/nl/jsp/logon.jsp
 
    Mit dieser URL können Sie auf die Download-Seite für das Client-Setup-Programm zugreifen.
 
@@ -222,7 +226,7 @@ Gehen Sie wie folgt vor:
    * Für Linux: Verfügbarkeit der [Client-Konsole für Linux](../../installation/using/client-console-availability-for-linux.md)
    * Windows: Verfügbarkeit der [Client-Konsole für Windows](../../installation/using/client-console-availability-for-windows.md)
 
-1. Starten Sie die Adobe Campaign-Client-Konsole (von der vorherigen Downloadseite oder bei einer Windows-Installation direkt auf dem Server), setzen Sie die Server-Verbindungs-URL auf [https://console.campaign.net](https://console.campaign.net) und stellen Sie mithilfe der **internen** Anmeldung eine Verbindung her.
+1. Starten Sie die Adobe Campaign-Client-Konsole (von der vorherigen Downloadseite oder bei einer Windows-Installation direkt auf dem Server), setzen Sie die Server-Verbindungs-URL auf https://console.campaign.net und stellen Sie mithilfe der **internen** Anmeldung eine Verbindung her.
 
    Siehe [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md) und [Interne ID](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
