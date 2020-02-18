@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -59,7 +59,7 @@ Damit Adobe Campaign auf den Wänden Ihrer Seiten veröffentlichen kann, müssen
 1. Melden Sie sich bei dem Facebook-Konto an, mit dem Sie Seiten verwalten.
 1. Geben Sie folgende Adresse in Ihren Browser ein: [https://developers.facebook.com/apps](https://developers.facebook.com/apps).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Je nach dem von Ihnen verwendeten Kontotyp können eine oder mehrere Autorisierungen erforderlich sein.
    >
@@ -87,7 +87,7 @@ Um den Schreibzugriff auf Adobe Campaign zum Posten auf den Wänden Ihrer Seiten
 
 Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und einen Internetbrowser, der beim Facebook-Konto angemeldet ist, das Sie für die Seitenverwaltung verwenden:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Der Adobe Campaign-Operator muss über Administratorrechte verfügen, um diese Konfiguration durchführen zu können.
 
@@ -107,7 +107,7 @@ Dieser Schritt erfordert Zugriff auf Ihre Adobe Campaign-Konsole und einen Inter
 
    ![](assets/social_facebook_external_account_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Sie dürfen die unsichere URL unter keinen Umständen verwenden.
 
