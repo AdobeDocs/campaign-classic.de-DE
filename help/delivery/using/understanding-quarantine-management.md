@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
 
 ---
 
@@ -116,15 +116,23 @@ Adobe Campaign verwaltet die Quarantäne entsprechend dem Typ des Bereitstellung
 
 * **Ignorierter Fehler**: Bei ignorierten Fehlern wird eine Adresse nicht unter Quarantäne gestellt.
 * **Hardbounce**: Die E-Mail-Adresse kommt sofort in Quarantäne.
-* **Softbounce**: In diesem Fall wird die Adresse nicht sofort unter Quarantäne gestellt, sondern der Fehlerzähler nur hinaufgesetzt. Sollte der Zähler eine festgelegte Schwelle überschreiten, kommt die Adresse in Quarantäne. Die Standardkonfiguration sieht eine Schwelle von fünf Fehlern vor, die jeweils in einem Abstand von mindestens 24 Stunden auf den vorhergehenden folgen müssen, um berücksichtigt zu werden. Beim sechsten Fehler kommt die Adresse in Quarantäne. Die Schwelle für den Fehlerzähler ist einstellbar. For more on this, refer to [Retries after a delivery temporary failure](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
-
-   Wenn eine Nachricht bei einem erneuten Versuch zugestellt werden kann, wird der Fehlerzähler der in Quarantäne befindlichen Adresse neu initialisiert. Der Status der Adresse wird auf **Gültig** gesetzt und mithilfe des Workflows **Datenbankbereinigung** wird die Adresse nach zwei Tagen aus der Quarantäneliste gelöscht.
+* **Softbounce**: In diesem Fall wird die Adresse nicht sofort unter Quarantäne gestellt, sondern der Fehlerzähler nur hinaufgesetzt. For more on this, see [Soft error management](#soft-error-management).
 
 Wenn ein Benutzer eine E-Mail als Spam kennzeichnet (**Feedback Loop**), wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt.
 
 In the list of quarantined addresses, the **[!UICONTROL Error reason]** field indicates why the selected address was placed in quarantine. Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
 
 ![](assets/tech_quarant_error_reasons.png)
+
+### Weiche Fehlerverwaltung {#soft-error-management}
+
+Im Gegensatz zu harten Fehlern senden weiche Fehler nicht sofort eine Adresse an Quarantäne, sondern erhöhen einen Fehlerzähler.
+
+* Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse in Quarantäne gestellt.
+* Die Standardkonfiguration sieht eine Schwelle von fünf Fehlern vor, die jeweils in einem Abstand von mindestens 24 Stunden auf den vorhergehenden folgen müssen, um berücksichtigt zu werden. Beim sechsten Fehler kommt die Adresse in Quarantäne.
+* Die Schwelle für den Fehlerzähler ist einstellbar. For more on this, refer to [Retries after a delivery temporary failure](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+
+Der Fehlerzähler wird erneut initialisiert, wenn der letzte bedeutende Fehler vor mehr als 10 Tagen auftrat. The address status then changes to **Valid** and it is deleted from the list of quarantines by the **Database cleanup** workflow.
 
 ## Quarantäne für Push-Benachrichtigungen {#push-notification-quarantines}
 
@@ -414,13 +422,13 @@ SR Generic DELIVRD 000|#MESSAGE#
 ```
 
 * Alle Fehlernachrichten beginnen mit **SR**, sodass SMS-Fehlercodes von E-Mail-Fehlercodes unterschieden werden können.
-* The second part (**Generic** in this example) of the error message refers to the name of the SMSC implementation such as defined in the **[!UICONTROL SMSC implementation name]** field of the SMS external account. Siehe [diese Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* The second part (**Generic** in this example) of the error message refers to the name of the SMSC implementation such as defined in the **[!UICONTROL SMSC implementation name]** field of the SMS external account. Weiterführende Informationen finden Sie auf [dieser Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    Da derselbe Fehlercode bei jedem Provider eine andere Bedeutung haben kann, sehen Sie in diesem Feld, welcher Provider den Fehlercode erstellt hat. Den Fehler können Sie dann in der entsprechenden Dokumentation des Providers einsehen.
 
 * Der dritte Teil der Fehlernachricht (in diesem Beispiel **DELIVRD**) entspricht dem Statuscode, der von der Empfangsbestätigung unter Verwendung des – im externen SMS-Konto definierten – regulären Ausdruck zur Statusextraktion abgerufen wurde.
 
-   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des externen Kontos angegeben. Siehe [diese Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des externen Kontos angegeben. Weiterführende Informationen finden Sie auf [dieser Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -428,7 +436,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Der vierte Teil der Fehlernachricht (in diesem Beispiel **000**) entspricht dem Fehlercode, der von der Empfangsbestätigung unter Verwendung des im externen SMS-Konto definierten regulären Ausdrucks zur Fehlercode-Extraktion extrahiert wurde.
 
-   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des externen Kontos angegeben. Siehe [diese Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des externen Kontos angegeben. Weiterführende Informationen finden Sie auf [dieser Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
 
