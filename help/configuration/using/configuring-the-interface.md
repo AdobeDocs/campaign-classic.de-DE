@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -38,7 +38,7 @@ Adobe Campaign verwendet eine globale Variable &quot;Nms_DefaultRcpSchema&quot;,
 
 Wenn Sie ein neues Formular erstellen, können Sie die Daten der externen Empfängertabelle anzeigen und bearbeiten.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Der Name des Formulars muss mit dem Namen des Schemas identisch sein, das es betrifft.
 
