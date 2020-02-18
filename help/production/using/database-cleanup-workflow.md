@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d5813af76e3cad16d9094a19509dcb855e36c01f
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -152,13 +152,13 @@ Diese Aufgabe löscht alle zu löschenden oder wiederverwertenden Lieferungen.
 
       wobei **$(l)** die Kennung der Lieferung ist.
 
-   * In den Lieferprotokolltabellen (**NmsBroadlogXxx**) werden Massenlöschungen in Stapeln von 10.000 Datensätzen ausgeführt.
-   * In den Angebotstabellen (**NmsPropositionXxx**) werden Massenlöschungen in Stapeln von 10.000 Datensätzen ausgeführt.
-   * In den Verfolgungsprotokolltabellen (**NmsTrackinglogXxx**) werden Massenlöschungen in Stapeln von 5.000 Datensätzen ausgeführt.
-   * In der Fragment-Tabelle (**NmsDeliveryPart**) werden Massenlöschungen in Stapeln von 5.000 Datensätzen ausgeführt. Diese Tabelle enthält Personalisierungsinformationen zu den verbleibenden zu liefernden Nachrichten.
-   * In der Tabelle mit dem Datenfragment für die Spiegelseite (**NmsMirrorPageInfo**) werden Massenlöschungen in Stapeln von 5.000 Datensätzen ausgeführt. Diese Tabelle enthält Personalisierungsinformationen zu allen Nachrichten, die zum Generieren von Spiegelseiten verwendet werden.
-   * In der Suchtabelle der Spiegelseiten (**NmsMirrorPageSearch**) werden Massenlöschungen in Stapeln von 5.000 Datensätzen ausgeführt. Diese Tabelle ist ein Suchindex, der Zugriff auf Personalisierungsinformationen bietet, die in der Tabelle **NmsMirrorPageInfo** gespeichert sind.
-   * In der Stapelverarbeitungsprotokolltabelle (**XtkJobLog**) werden Massenlöschungen in Stapeln von 5.000 Datensätzen ausgeführt. Diese Tabelle enthält das Protokoll der zu löschenden Lieferungen.
+   * In den Lieferprotokolltabellen (**NmsBroadlogXxx**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt.
+   * In den Angebotstabellen (**NmsPropositionXxx**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt.
+   * In den Verfolgungsprotokolltabellen (**NmsTrackinglogXxx**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt.
+   * In der Fragment-Tabelle (**NmsDeliveryPart**) werden Massenlöschungen in Stapeln von 500.000 Datensätzen ausgeführt. Diese Tabelle enthält Personalisierungsinformationen zu den verbleibenden zu liefernden Nachrichten.
+   * In der Tabelle mit dem Datenfragment für die Spiegelseite (**NmsMirrorPageInfo**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen für abgelaufene Lieferteile und für fertige oder abgebrochene Teile ausgeführt. Diese Tabelle enthält Personalisierungsinformationen zu allen Nachrichten, die zum Generieren von Spiegelseiten verwendet werden.
+   * In der Suchtabelle der Spiegelseiten (**NmsMirrorPageSearch**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt. Diese Tabelle ist ein Suchindex, der Zugriff auf Personalisierungsinformationen bietet, die in der Tabelle **NmsMirrorPageInfo** gespeichert sind.
+   * In der Stapelverarbeitungsprotokolltabelle (**XtkJobLog**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt. Diese Tabelle enthält das Protokoll der zu löschenden Lieferungen.
    * In der Verfolgungstabelle für die Liefer-URL (**NmsTrackingUrl**) wird die folgende Abfrage verwendet:
 
       ```
@@ -576,6 +576,26 @@ Diese Aufgabe bereinigt verwaiste Simulationstabellen (die nicht mehr mit einer 
    DROP TABLE wkSimu_456831_aggr
    ```
 
+### Bereinigung des Prüfpfads {#cleanup-of-audit-trail}
+
+Die folgende Abfrage wird verwendet:
+
+```
+DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
+```
+
+wobei **$(tsDate)** das aktuelle Serverdatum ist, ab dem der für die Option **XtkCleanup_AuditTrailPurgeDelay** definierte Zeitraum ersetzt wird.
+
+### Bereinigung von Nmsaddress {#cleanup-of-nmsaddress}
+
+Die folgende Abfrage wird verwendet:
+
+```
+DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=STATUS_QUARANTINE AND tsLastModified < $(NmsCleanup_AppSubscriptionRcpPurgeDelay + 5d) AND iType IN (MESSAGETYPE_IOS, MESSAGETYPE_ANDROID ) LIMIT 5000)
+```
+
+Diese Abfrage löscht alle Einträge im Zusammenhang mit iOS und Android.
+
 ### Optimierung der Statistikaktualisierung und -speicherung {#statistics-update}
 
 Mit der Option **XtkCleanup_NoStats** können Sie das Verhalten des Speicheroptimierungsschritts des Bereinigungs-Workflows steuern.
@@ -590,13 +610,15 @@ Wenn der Wert der Option 2 ist, wird die Speicheranalyse im ausführlichen Modus
 
 Diese Aufgabe löscht alle Abonnements im Zusammenhang mit gelöschten Diensten oder mobilen Anwendungen.
 
-1. Um die Liste der Breitbandschemata wiederherzustellen, wird die folgende Abfrage verwendet:
+Um die Liste der Breitbandschemata wiederherzustellen, wird die folgende Abfrage verwendet:
 
-   ```
-   SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
-   ```
+```
+SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
+```
 
-1. Die Aufgabe stellt dann die Namen der Tabellen wieder her, die mit dem Link &quot; **appSubscription** &quot;verknüpft sind, und löscht diese Tabellen.
+Die Aufgabe stellt dann die Namen der Tabellen wieder her, die mit dem Link &quot; **appSubscription** &quot;verknüpft sind, und löscht diese Tabellen.
+
+Dieser Bereinigungsarbeitsablauf löscht auch alle Einträge, bei denen deaktiviert = 1 ist und die seit dem in der Option **NmsCleanup_AppSubscriptionRcpPurgeDelay** festgelegten Zeitraum nicht aktualisiert wurden.
 
 ### Sitzungsinformationen löschen {#cleansing-session-information}
 
@@ -613,13 +635,3 @@ Diese Aufgabe löscht die Ereignisse, die in den Ausführungsinstanzen empfangen
 ### Reinigungsreaktionen {#cleansing-reactions}
 
 Diese Aufgabe bereinigt die Reaktionen (Tabelle **NmsRemaMatchRcp**), in denen die Hypothesen selbst gelöscht wurden.
-
-### Bereinigung des Prüfpfads {#cleanup-of-audit-trail}
-
-Die folgende Abfrage wird verwendet:
-
-```
-DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
-```
-
-wobei **$(tsDate)** das aktuelle Serverdatum ist, ab dem der für die Option **XtkCleanup_AuditTrailPurgeDelay** definierte Zeitraum ersetzt wird.
