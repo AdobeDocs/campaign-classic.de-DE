@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -53,7 +53,7 @@ Sie können die Werte dieser Parameter anzeigen, indem Sie die Verfolgungsprotok
 
 In der Serverkonfiguration können Sie die maximale Anzahl von Zeichen festlegen, die für Ihre Webverfolgungsparameter berücksichtigt werden sollen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Erhöhung der maximal zu berücksichtigenden Zeichenanzahl kann sich auf die Webverfolgungsleistung Ihrer Plattform auswirken.
 
@@ -76,15 +76,25 @@ Nach der Änderung der Konfiguration müssen Sie:
 
 * Beenden Sie den Webserver, der das Umleitungsmodul hostet (Apache, IIS usw.),
 * Adobe Campaign-Server beenden: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
+
+   >[!NOTE]
+   >
+   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl stop**
+
 * Löschen Sie unter Linux die freigegebenen Speichersegmente mit dem **Befehl ipcrm** ,
 * Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
+
+   >[!NOTE]
+   >
+   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl start**
+
 * Starten Sie den Webserver neu.
 
 **Beispiel**: unter Berücksichtigung der Konfiguration unter Linux.
 
 ```
-adobe@selma:~$ /etc/init.d/nlserver6 stop
-adobe@selma:~$ /etc/init.d/apache stop
+adobe@selma:~$ systemctl stop nlserver
+adobe@selma:~$ systemctl stop apache2
 adobe@selma:~$ ipcs shm
 
 ------ Shared Memory Segments --------
@@ -100,8 +110,8 @@ key        msqid      owner      perms      used-bytes   messages
 
 adobe@selma:~$ ipcrm shm 2097153                             
 1 resource(s) deleted
-adobe@selma:~$ /etc/init.d/nlserver6 start
-adobe@selma:~$ /etc/init.d/apache start
+adobe@selma:~$ systemctl start nlserver
+adobe@selma:~$ systemctl start apache2
 ```
 
 >[!NOTE]
