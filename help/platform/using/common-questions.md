@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f46b499e4b81cf500baa84cf683a6e0273f802a7
+source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
 
 ---
 
@@ -74,58 +74,3 @@ Adobe berücksichtigt das DNS-System (Domain Name System) für die E-Mail-Zustel
 
 [Hier erfahren Sie mehr darüber](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
-Als Admin-Benutzer können Sie über die Kampagnen-Systemsteuerung eine vollständige Domänendelegation zu Adobe einrichten. [mehr dazu](https://docs.adobe.com/content/help/en/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-
-## 10. Wie kann ich die Zustellbarkeit meiner E-Mails sicherstellen? {#how-to-get-emails-in-the-recipient-s-inbox-}
-
-Lesen Sie im Erste-Schritte-Handbuch den Abschnitt [E-Mail-Versand einrichten](https://helpx.adobe.com/campaign/kb/acc-deliverability.html). Hier erfahren Sie mehr zu Konzepten und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Optimierung des E-Mail-Versands.
-
-## Mehr dazu {#more-faq}
-
-Lesen Sie weitere allgemeine Fragen zu bestimmten Themen.
-
-<table>
-<tr>
-<td>
-        <a href="../../platform/using/faq-key-concepts.md"><img alt="Bedingungen" src="assets/icon_start.png"/></a>
-        <div><a href="../../platform/using/faq-key-concepts.md"><strong>Schlüsselkonzepte</strong></a></div>
-        <em>Häufig gestellte Fragen</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-audiences.md"><img alt="Bedingungen" src="assets/icon_audience.png"/></a>
-        <div><a href="../../platform/using/faq-audiences.md"><strong>Bereich Empfänger</strong></a></div>
-        <em>Häufig gestellte Fragen zu Zielgruppen</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-designing.md"><img alt="Bedingungen" src="assets/icon_content.png"/></a>
-        <div><a href="../../platform/using/faq-designing.md"><strong>Design</strong></a></div>
-        <em>Häufig gestellte Fragen zum Nachrichtenentwurf</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-messages.md"><img alt="Bedingungen" src="assets/icon_delivery.png"/></a>
-        <div><a href="../../platform/using/faq-messages.md"><strong>Senden</strong></a></div>
-        <br/><em>Meldungstest und Senden von FAQ</em>
-    </td>
-</tr>
-<tr>
-    <td>
-        <a href="../../platform/using/faq-workflows.md"><img alt="Bedingungen" src="assets/icon_process.png"/></a>
-        <div><a href="../../platform/using/faq-workflows.md"><strong>Workflows</strong></a></div>
-        <em>Häufig gestellte Fragen zur Prozessautomatisierung</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-reporting.md"><img alt="Bedingungen" src="assets/icon_report.png"/></a>
-        <div><a href="../../platform/using/faq-reporting.md"><strong>Reporting</strong></a></div>
-        <em>Häufig gestellte Fragen zu Kampagnenberichten</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-campaign-config.md"><img alt="Bedingungen" src="assets/icon_config.png"/></a>
-        <div><a href="../../platform/using/faq-campaign-config.md"><strong>Konfiguration</strong></a></div>
-        <em>Häufig gestellte Fragen zu Instanzeinstellungen</em>
-    </td>
-    <td>
-        <a href="../../platform/using/faq-developers.md"><img alt="Bedingungen" src="assets/icon_server.png"/></a>
-        <div><a href="../../platform/using/faq-developers.md"><strong>Entwicklung</strong></a></div>
-        <br/><em>Häufig gestellte Fragen zu Entwicklern</em>
-    </td>
-    </tr></table>
