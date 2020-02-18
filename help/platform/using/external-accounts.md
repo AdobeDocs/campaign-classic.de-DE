@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
 
 ---
 
@@ -114,8 +114,8 @@ Die folgenden Kanäle können konfiguriert werden:
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
 * [iOS
-                            -Kanal](../../delivery/using/setting-up-mobile-app-channel.md#ios-connectors)
-* [Android-Kanal](../../delivery/using/setting-up-mobile-app-channel.md#android-connectors)
+                            -Kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
+* [Android-Kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-android)
 
 ## Externes FTP-Konto {#ftp-external-account}
 
@@ -155,10 +155,9 @@ Adobe Campaign bietet mehrere Connectors, mit denen Sie mit externen Anwendungen
 
 Die folgenden Verbindungstypen können konfiguriert werden:
 
-* Oracle. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/accessing-an-external-database.md#configure-access-to-oracle).
-* MySQL. Informationen zum Konfigurieren des Zugriffs auf MYSQL finden Sie auf dieser [Seite](../../platform/using/accessing-an-external-database.md#configure-access-to-mysql).
-* Netezza. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/accessing-an-external-database.md#configure-access-to-netezza).
-* SAP HANA. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/accessing-an-external-database.md#configure-access-to-sap-hanaa).
+* Oracle. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
+* Netezza. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
+* SAP HANA. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
 * InfiniDB
 * Microsoft SQL Server
 * AsterData
@@ -169,9 +168,33 @@ Die folgenden Verbindungstypen können konfiguriert werden:
 * ODBC (Sybase ASE, Sybase IQ)
 * HTTP-Weiterleitung auf Remote-Datenbank
 
+### Schneeflocken-Außenkonto {#snowflake-external-account}
+
+Mit dem externen **Snowflake** -Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Snowflake-Datenbank verbinden. Weitere Informationen zur Konfiguration von Campaign Classic mit Snowflake finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+
+Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
+
+* **[!UICONTROL Server]**
+
+       URL des Snowflake-Servers.
+   
+* **[!UICONTROL Account]**
+
+       Name des Benutzers.
+   
+* **[!UICONTROL Password]**
+
+       Passwort des Benutzerkontos.
+   
+* **[!UICONTROL Database]**
+
+       Name der Datenbank.
+   
+![](assets/snowflake.png)
+
 ### Externes Teradata-Konto {#teradata-external-account}
 
-Mit dem externen **Teradata** -Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden. Weitere Informationen zum Konfigurieren von Campaign Classic mit Teradata finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) oder in diesem [Abschnitt](../../platform/using/accessing-an-external-database.md#configure-access-to-teradata).
+Mit dem externen **Teradata** -Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden. Weitere Informationen zum Konfigurieren von Campaign Classic mit Teradata finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) oder in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
 
 ![](assets/ext_account_19.png)
 
@@ -199,11 +222,11 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 * **[!UICONTROL Options]**
 
-   Optionen, die über Teradata übermittelt werden sollen
+   Optionen, die über Teradata übermittelt werden sollen.
 
 * **[!UICONTROL Timezone]**
 
-   Die in Teradata eingestellte Zeitzone
+   Die in Teradata eingestellte Zeitzone.
 
 ![](assets/ext_account_20.png)
 
@@ -245,7 +268,7 @@ Für jede Facebook-Anwendung müssen Sie ein externes **[!UICONTROL Facebook Con
 
 * **[!UICONTROL Application secret]**
 
-   App-Geheimnis Ihrer Facebook-Anwendung
+   App-Geheimnis Ihrer Facebook-Anwendung.
 
 Wenn Sie den Modus &quot;Auf dieser Instanz gehostet&quot; gewählt haben, muss die Sichere Canvas-URL in das Feld **Facebook Web Games (https)** auf Facebook eingefügt werden.
 
@@ -291,11 +314,11 @@ To connect to the Adobe Campaign console using an Adobe ID, you must configure t
 
 * **[!UICONTROL IMS client secret]**
 
-   Ihr IMS-Client-Geheimnisses
+   Ihr IMS-Client-Geheimnisses.
 
 * **[!UICONTROL Callback server]**
 
-   Zugriff-URL Ihrer Adobe Campaign-Instanz
+   Zugriff-URL Ihrer Adobe Campaign-Instanz.
 
 * **[!UICONTROL IMS organization ID]**
 
@@ -409,7 +432,7 @@ Mit dem externen **[!UICONTROL Azure]**-Konto können Sie über Adobe Campaign a
 
 ## Externes Hadoop-Konto {#hadoop-external-account}
 
-Mit dem externen **[!UICONTROL Hadoop]**-Konto können Sie über Adobe Campaign auf eine gemeinsam genutzte externe Datenbank zugreifen, vorausgesetzt die Verbindung ist aktiv. For more information on how to configure access to Hadoop, refer to this [section](../../platform/using/accessing-an-external-database.md#configure-access-to-hadoop).
+Mit dem externen **[!UICONTROL Hadoop]**-Konto können Sie über Adobe Campaign auf eine gemeinsam genutzte externe Datenbank zugreifen, vorausgesetzt die Verbindung ist aktiv. For more information on how to configure access to Hadoop, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
 
 ![](assets/ext_account_16.png)
 
