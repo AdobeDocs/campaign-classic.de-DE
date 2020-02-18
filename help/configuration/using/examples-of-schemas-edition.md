@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -49,7 +49,7 @@ Um die **nms:empfänger** -Schemaempfängertabelle zu erweitern, führen Sie das
 
    In diesem Beispiel wird ein indiziertes Feld (**Treue**) hinzugefügt, und das **location** -Element (das bereits im Schema **nms:empfänger** vorhanden war) wird durch ein aufgezähltes Feld (**Bereich**) ergänzt.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Denken Sie daran, das Attribut **extendedSchema** hinzuzufügen, um auf das Erweiterungsschema zu verweisen.
 
