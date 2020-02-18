@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 58b69ae83d0ff2bece26cb3ff0604cd92e3c20f4
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -90,7 +90,7 @@ Beispiele:
 
 Das **xpath** -Attribut verweist auf das Feld im Schema, das Sie indizieren möchten.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Es ist wichtig zu bedenken, dass die Leistungssteigerungen der SQL-Abfrage beim Lesen von Datensätzen, die von Indizes bereitgestellt werden, auch mit einem Leistungsschlag beim Schreiben von Datensätzen einhergehen. Die Indizes sollten daher mit Vorsicht verwendet werden.
 
@@ -112,7 +112,7 @@ Beispiel:
 
 In diesem Beispiel geben wir anstelle des Attributs **@autopk** einen standardmäßigen primären Schlüssel mit dem Namen &quot;id&quot;unseren eigenen primären Schlüssel &quot;budgetId&quot;an.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselfolge (@pkSequence) beibehalten.
 
@@ -171,7 +171,7 @@ Beispiel für ein XML-Feld, das auch in einem SQL-Feld gespeichert ist und das e
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Obwohl die meisten Attribute gemäß einer 1-1-Kardinalität mit einem physischen Feld der Datenbank verknüpft sind, ist dies bei den XML-Feldern oder den berechneten Feldern nicht der Fall.\
 >Ein XML-Feld wird in einem Memofeld (&quot;mData&quot;) der Tabelle gespeichert.\
