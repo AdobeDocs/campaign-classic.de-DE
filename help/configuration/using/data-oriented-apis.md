@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -392,7 +392,7 @@ Wenn eine Abfrage erstellt wird, werden die &quot;gebundenen&quot; Werte durch e
 
 Um eine Bindung eines Parameters zu vermeiden, muss das Attribut &quot;noSqlBind&quot;mit dem Wert &quot;true&quot;ausgefüllt werden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn die Abfrage &quot;Reihenfolge-durch&quot;oder &quot;Gruppe-durch&quot;Anweisungen enthält, können die Datenbankmaschinen keine Werte &quot;binden&quot;. Sie müssen das Attribut &quot;@noSqlBind=&quot;true&quot; auf die Anweisungen &quot;select&quot;und/oder &quot;where&quot;der Abfrage setzen.
 
