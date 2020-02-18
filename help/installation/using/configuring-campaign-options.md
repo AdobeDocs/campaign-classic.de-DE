@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 93a19c765e8d3de0fcbc29e27202fcbd2da6d32f
+source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 
 ---
 
@@ -36,7 +36,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -221,8 +221,8 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
    <td> Gültige Zeichen für eine E-Mail-Adresse.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td> 
-   <td> Ermöglicht die Angabe eines maximalen Zeitraums (in Stunden ausgedrückt), um die Anzahl der bei jeder Ausführung des Synchronisierungs-Workflows wiederhergestellten Broadlogs zu begrenzen. Siehe <a href="../../platform/using/accessing-an-external-database.md#cloud-messaging---fda-synchronization">diesen Abschnitt</a>.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span><br /> </td>
+   <td> Ermöglicht die Angabe eines maximalen Zeitraums (in Stunden ausgedrückt), um die Anzahl der bei jeder Ausführung des Synchronisierungs-Workflows wiederhergestellten Broadlogs zu begrenzen.</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span><br /> </td> 
@@ -269,7 +269,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -334,7 +334,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -387,7 +387,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -432,7 +432,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -549,7 +549,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -635,7 +635,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span><br /> </td> 
-   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Tabellen auf Microsoft SQL Server. Dadurch werden Backups und Replizierung optimiert. <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)">mehr dazu</a> <br /> </td> 
+   <td> Ermöglicht die Konfiguration einer separaten Datenbank für Tabellen auf Microsoft SQL Server. Dadurch werden Backups und Replizierung optimiert. <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)">Mehr dazu</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span><br /> </td> 
@@ -695,7 +695,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -748,7 +748,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -785,7 +785,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -822,7 +822,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -895,7 +895,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -924,7 +924,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -1005,7 +1005,7 @@ Einige sind bei der Installation von Campaign integriert, andere können bei Bed
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
