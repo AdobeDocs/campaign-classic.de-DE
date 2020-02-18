@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
 
 ---
 
@@ -74,11 +74,11 @@ Bei den Variablen handelt es sich um die freien Eigenschaften der Objekte **[!UI
 
 ### Instanzvariablen {#instance-variables}
 
-Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit allgemeinen Variablen vergleichbar, sie sind aktivitätenübergreifend gültig.
+Die Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit den globalen Variablen vergleichbar. Sie werden von allen Aktivitäten geteilt.
 
 ### Aufgabenvariablen {#task-variables}
 
-Die Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit den lokalen Variablen vergleichbar: Sie werden nur von der aktuellen Aufgabe verwendet. Diese Variablen werden von persistenten Aktivitäten zur Datenspeicherung verwendet und werden manchmal zum Datenaustausch zwischen den verschiedenen Skripten derselben Aktivität verwendet.
+Die Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit den lokalen Variablen vergleichbar.  Sie werden nur von der aktuellen Aufgabe verwendet. Diese Variablen werden von persistenten Aktivitäten zur Datenspeicherung verwendet und werden manchmal zum Datenaustausch zwischen den verschiedenen Skripten derselben Aktivität verwendet.
 
 ### Ereignisvariablen {#event-variables}
 
