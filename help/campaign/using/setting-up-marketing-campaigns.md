@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -68,7 +68,7 @@ So konfigurieren Sie Ihre Ordnerhierarchie für Marketingpläne und -programme:
    ![](assets/create_plan_2.png)
 
 1. Passen Sie im Tab **Allgemein** die Option **Interner Name** an, um bei Package-Exporten Duplikate zu vermeiden.
-1. Wählen Sie **Speichern** aus.
+1. Klicken Sie auf **Speichern**.
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 1. Wiederholen Sie die obigen Schritte, um Ihren neuen Programmordner und seinen internen Namen umzubenennen.
 
@@ -148,14 +148,14 @@ Sie können den Assistenten zur Erstellung von Zeitplänen verwenden, um alle Au
 
 Der Konfigurationsmodus des Ausführungsplans fällt mit dem **[!UICONTROL Scheduler]** Objekt des Workflows zusammen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/executing-a-workflow.md#architecture).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Konfiguration der Ausführungsplanung muss mit Vorsicht erfolgen, um die Datenbank nicht zu überlasten. Wiederkehrende Kampagnen duplizieren den oder die Workflows ihrer Vorlage entsprechend der definierten Planung. Eine zu hohe Erstellungsfrequenz dieser Workflows kann die effiziente Funktionsweise der Datenbank beeinträchtigen.
 
 1. Specify a value in the **[!UICONTROL Create in advance for]** field in order to create the corresponding workflows for the period indicated.
 1. Erstellen Sie schließlich die Workflow-Vorlage, die in den auf dieser Kampagnenvorlage basierenden Kampagnen verwendet werden soll, mit den Parametern der Zielgruppenbestimmung sowie einer oder mehreren generischen Sendungen.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Dieser Workflow muss als wiederkehrende Workflow-Vorlage gespeichert werden. Bearbeiten Sie dazu die Workflow-Eigenschaften und wählen Sie die **[!UICONTROL Recurring workflow template]** Option auf der **[!UICONTROL Execution]** Registerkarte aus.
 
@@ -174,7 +174,7 @@ Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten
 
    Für jede Zeile können die folgenden ergänzenden Optionen hinzugefügt werden:
 
-   * **[!UICONTROL To be approved]** : Erzwingen der Zustellgenehmigung im Workflow
+   * **[!UICONTROL To be approved]** : können Sie die Zustellgenehmigungsanforderungen im Workflow erzwingen.
    * **[!UICONTROL To be started]** : können Sie den Workflow starten, wenn das Startdatum erreicht wurde.
    Im **[!UICONTROL Create in advance for]** Feld können Sie alle Arbeitsabläufe für den eingegebenen Zeitraum erstellen.
 
@@ -211,7 +211,7 @@ Eine periodische Kampagne ist eine spezifische Vorlage, die die automatische Ers
 
 1. Konfigurieren Sie die Vorlage.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Der der Vorlage zugeordnete Benutzer muss über die notwendigen Berechtigungen zur Erstellung von Kampagnen im ausgewählten Programm verfügen.
 
@@ -227,7 +227,7 @@ Eine periodische Kampagne ist eine spezifische Vorlage, die die automatische Ers
 
    ![](assets/s_ncs_user_op_template_period_planning_add.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Vorlagen für periodische Kampagnen erstellen neue Kampagnen entsprechend der zuvor festgelegten Planung. Die Konfiguration der Ausführungsplanung muss mit Vorsicht erfolgen, um die Adobe-Campaign-Datenbank nicht zu überlasten.
 
