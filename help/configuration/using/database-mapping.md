@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -304,7 +304,7 @@ Sie können im Quellschema den Namen der Sequenz angeben, die mit dem **pkSequen
 
 Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in den vordefinierten Schemata. Sie können nun ein Schema erstellen oder ein vorhandenes Schema mit einer dedizierten Sequenz erweitern.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselfolge (@pkSequence) beibehalten.
 
@@ -346,7 +346,7 @@ Das erstellte Schema:
 
 Zusätzlich zur Definition des Schlüssels und seines Indexes wurde dem erweiterten Schema ein numerisches Feld namens &quot;id&quot;hinzugefügt, um den automatisch generierten primären Schlüssel zu enthalten.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ein Datensatz mit einem Primärschlüssel auf 0 wird bei der Tabellenerstellung automatisch eingefügt. Dieser Datensatz wird verwendet, um äußere Verbindungen zu vermeiden, die bei Volumentabellen nicht wirksam sind. Standardmäßig werden alle Fremdschlüssel mit dem Wert 0 initialisiert, sodass ein Ergebnis immer bei der Verknüpfung zurückgegeben werden kann, wenn das Datenelement nicht gefüllt wird.
 
@@ -373,7 +373,7 @@ Für Verbindungsbeziehungen mit Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinalität 1-1
 * ![](assets/join_fda_1m.png) : Kardinalität 1-N
 
-For more information on FDA tables, refer to [Accessing an external database](../../platform/using/accessing-an-external-database.md).
+For more information on FDA tables, refer to [Accessing an external database](../../platform/using/about-fda.md).
 
 Ein Link muss im Schema deklariert werden, das den Fremdschlüssel der Tabelle enthält, die über das Hauptelement verknüpft ist:
 
