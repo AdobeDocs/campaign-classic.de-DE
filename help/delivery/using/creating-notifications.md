@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 6d503847787f2a8e0c4efdef0fa2f5769ea6035b
+source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
@@ -59,7 +59,7 @@ Erstellen Sie zunächst einen neuen Versand:
    >Der **Silent Push**-Modus ist ab iOS-Version 7 verfügbar und ermöglicht den Versand einer &quot;stillen&quot; Benachrichtigung an eine Mobile App. Der Benutzer wird über die Ankunft der Benachrichtigung nicht in Kenntnis gesetzt, da diese direkt an die Anwendung übermittelt wird.
 
 1. Geben Sie im **[!UICONTROL Title]** Feld die Bezeichnung des Titels ein, der in der Benachrichtigung angezeigt werden soll. Sie wird nur in der Liste der Benachrichtigungen angezeigt, die im Benachrichtigungscenter verfügbar sind. Mit diesem Feld können Sie den Wert des **title** -Parameters der iOS-Benachrichtigungs-Payload definieren.
-1. If you use the HTTP/2 connector, you can add a subtitle (value of the **subtitle** parameter of the iOS notification payload). Refer to the [Connectors](../../delivery/using/setting-up-mobile-app-channel.md#connectors) section.
+1. If you use the HTTP/2 connector, you can add a subtitle (value of the **subtitle** parameter of the iOS notification payload). Weitere Informationen finden Sie im Abschnitt [Konfigurieren der mobilen Anwendung in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
 1. Geben Sie dann den **[!UICONTROL Message]** und den **[!UICONTROL Value of the badge]** basierend auf dem ausgewählten Benachrichtigungstyp ein.
 
    ![](assets/nmac_delivery_ios_5.png)
@@ -77,13 +77,13 @@ Erstellen Sie zunächst einen neuen Versand:
 
    >[!NOTE]
    >
-   >Sounds müssen in die Anwendung eingeschlossen und beim Erstellen des Dienstes definiert werden. Siehe [Anwendungsgeräusche](../../delivery/using/setting-up-mobile-app-channel.md#application-sounds).
+   >Sounds müssen in die Anwendung eingeschlossen und beim Erstellen des Dienstes definiert werden. Siehe [Konfigurieren des externen iOS-Kontos](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios).
 
 1. Geben Sie in das **[!UICONTROL Application variables]** Feld den Wert der einzelnen Variablen ein. Mit Anwendungsvariablen können Sie das Benachrichtigungsverhalten definieren: Sie können beispielsweise einen bestimmten Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
 
    >[!NOTE]
    >
-   >Anwendungsvariablen müssen im Code der mobilen Anwendung definiert und bei der Diensterstellung eingegeben werden. For more on this, refer to: [General information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >Anwendungsvariablen müssen im Code der mobilen Anwendung definiert und bei der Diensterstellung eingegeben werden. For more on this, refer to: [Configuring a mobile application in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Once the notification is configured, click the **[!UICONTROL Preview]** tab to preview the notification.
 
@@ -129,7 +129,7 @@ Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, 
 
    >[!NOTE]
    >
-   >Anwendungsvariablen müssen im Code der mobilen Anwendung definiert und bei der Diensterstellung eingegeben werden. For more on this, refer to: [General information](../../delivery/using/setting-up-mobile-app-channel.md#general-information).
+   >Anwendungsvariablen müssen im Code der mobilen Anwendung definiert und bei der Diensterstellung eingegeben werden. For more on this, refer to: [Configuring a mobile application in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 1. Once the notification is configured, click the **[!UICONTROL Preview]** tab to preview the notification.
 
