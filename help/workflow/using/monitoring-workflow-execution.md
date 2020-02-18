@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e04eb83a7c2e29f8d3ea6458dd3f0e780dfb9c3
+source-git-commit: 202f571f5c348ca4ab617821cd1ec24cefa8c504
 
 ---
 
@@ -259,26 +259,23 @@ Die Supervisoren des Workflows sowie der Ersteller und der letzte Benutzer, der 
 
 ## Filtern von Workflows nach ihrem Status{#filtering-workflows-status}
 
-Mit der Oberfläche von Campaign Classic können Sie den Ausführungsstatus aller Workflows auf Ihrer Instanz mithilfe vordefinierter **Ansichten**&#x200B;überwachen. Um auf diese Ansichten zuzugreifen, öffnen Sie den Knoten **Administration**/**Audit**/**Workflows Status**.
+Mit der Oberfläche von Campaign Classic können Sie den Ausführungsstatus aller Workflows auf Ihrer Instanz mithilfe vordefinierter **Ansichten**&#x200B;überwachen. Um auf diese Ansichten zuzugreifen, öffnen Sie den Knoten **[!UICONTROL Administration]**/**[!UICONTROL Audit]**/**[!UICONTROL Workflows Status]**.
 
 Die folgenden Ansichten sind verfügbar:
 
-* **Ausführen**: listet alle ausgeführten Workflows auf.
-* **Angehalten**: Listet alle angehaltenen Workflows auf.
-* **Fehlgeschlagen**: listet alle fehlgeschlagenen Workflows auf.
-
-<!--Start Pending: lists all workflows that are waiting to be started by the operationMgt process.-->
+* **[!UICONTROL Running]**: listet alle ausgeführten Workflows auf.
+* **[!UICONTROL Paused]**: listet alle angehaltenen Workflows auf.
+* **[!UICONTROL Failed]**: listet alle fehlgeschlagenen Workflows auf.
+* **[!UICONTROL Start Pending]**: listet alle Workflows auf, die darauf warten, vom operationMgt-Prozess gestartet zu werden. Diese Ansicht steht nur mit dem **Marketing-Kampagnen**-Paket zur Verfügung (siehe [Installieren von Kampagnen-Standardpaketen](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
-<!--The Start Pending view is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
-Standardmäßig sind diese Ansichten im Ordner &quot;**Prüfung**&quot;verfügbar. Sie können sie jedoch an der gewünschten Stelle in der Ordnerstruktur neu erstellen. Auf diese Weise sind sie für Standardbenutzer ohne Administratorrechte verfügbar.
+Standardmäßig sind diese Ansichten im **[!UICONTROL Audit]** Ordner verfügbar. Sie können sie jedoch an der gewünschten Stelle in der Ordnerstruktur neu erstellen. Auf diese Weise sind sie für Standardbenutzer ohne Administratorrechte verfügbar.
 
 Gehen Sie folgendermaßen vor:
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner, in dem Sie die Ansicht hinzufügen möchten.
-1. Wählen Sie unter **Neuen Ordner**/**Verwaltung** hinzufügen die Ansicht aus, die Sie hinzufügen möchten.
+1. Wählen Sie **[!UICONTROL Add new folder]**/**[!UICONTROL Administration]** die Ansicht aus, die Sie hinzufügen möchten.
 1. Nachdem der Ordner zum Baum hinzugefügt wurde, stellen Sie sicher, dass Sie ihn als Ansicht konfigurieren, damit alle Workflows unabhängig vom Ursprungsordner angezeigt werden.Weitere Informationen zum Konfigurieren von Ansichten finden Sie in [diesem Abschnitt](../../platform/using/access-management.md#adding-folders-and-creating-views).
 
 Zusätzlich zu diesen Ansichten können Sie Filter-Ordner einrichten, mit denen Sie die Liste der Arbeitsabläufe nach ihrem Ausführungsstatus filtern können. Gehen Sie dazu wie folgt vor:
@@ -293,6 +290,3 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 * [Erstellen erweiterter Filter](../../platform/using/creating-filters.md#creating-an-advanced-filter)
 * [Speichern von Filtern](../../platform/using/creating-filters.md#saving-a-filter)
-
-<!-- need to check if pending status filter will be implemented or not in january release, note, Additionally to these views, a prefedefined filter is available in workflow-type folders. It allows you to display in the list workflows that are waiting to be started by the operationMgt process only.This filter is available with the Marketing campaigns package only. See Installing Campaign standard packages../../installation/using/installing-campaign-standard-packages.md.-->
-
