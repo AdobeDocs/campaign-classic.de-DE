@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -78,7 +78,7 @@ Es ist jedoch auch möglich, die von Facebook verwendeten Zielgruppenfilter zu v
 * **[!UICONTROL Cities]**
 * **[!UICONTROL Languages]**
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Verwenden Sie diese Funktion mit Vorsicht. In Bereitstellungsberichten berücksichtigt der **[!UICONTROL Number of fans]** Indikator diese Facebook-Filter nicht.
 >
@@ -115,7 +115,7 @@ Eine Statuszustellung mit einem Link kann Text, Bilder und einen Link enthalten.
 
 Geben Sie die verschiedenen Felder ein:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Alle URLs müssen mit **&quot;http://&quot;** oder **&quot;https://&quot;** beginnen.
 
@@ -136,7 +136,7 @@ Geben Sie die verschiedenen Felder ein:
 
 1. Geben Sie in das **[!UICONTROL Image]** Feld die URL des Bildes ein, das links neben der Veröffentlichung angezeigt wird.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Das Bild muss auf einer öffentlichen Internetseite gehostet werden, damit Facebook es hochladen kann.
 
