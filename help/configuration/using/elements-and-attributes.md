@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -160,8 +160,8 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werd
    * percent
    * primarykey
    * short
-   * string
-   * time
+   * Zeichenfolge
+   * Zeit
    * Zeitspanne
    * uuid
    Wenn das Attribut &quot;@type&quot;leer gelassen wird, verknüpft Adobe Campaign standardmäßig eine Zeichenfolge (STRING) mit einer Länge von 100 Zeichen mit dem Feld.
@@ -171,7 +171,7 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werd
 * **userEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;offenen&quot;Aufzählung. Die Werte der Aufzählung können vom Benutzer in der Schnittstelle definiert werden.
 * **visibleIf (Zeichenfolge)**: definiert eine Bedingung in Form eines XTK-Ausdrucks, um das Attribut ein- oder auszublenden.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Das Attribut ist ausgeblendet, es können jedoch weiterhin auf seine Daten zugegriffen werden.
 
@@ -580,8 +580,8 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
    * percent
    * primarykey
    * short
-   * string
-   * time
+   * Zeichenfolge
+   * Zeit
    * Zeitspanne
    * uuid
 
@@ -652,8 +652,8 @@ Aufzählungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement d
    * percent
    * primarykey
    * short
-   * string
-   * time
+   * Zeichenfolge
+   * Zeit
    * Zeitspanne
    * uuid
 
@@ -1048,8 +1048,8 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
    * percent
    * primarykey
    * short
-   * string
-   * time
+   * Zeichenfolge
+   * Zeit
    * Zeitspanne
    * uuid
 
