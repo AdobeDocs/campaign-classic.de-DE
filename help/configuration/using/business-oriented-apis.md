@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -43,7 +43,7 @@ Die Business-API ist für jeden Objekttyp spezifisch. Sie wirken sich auf Folgen
 
 In diesem Abschnitt wird die Verwendung der Dienste &quot;Abonnieren&quot;, &quot;Abbestellen&quot;und &quot;SendenAuslieferung&quot;beschrieben.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >[Die Kampagnen-JSAPI-Dokumentation](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) enthält zusätzliche Informationen zu SOAP-Aufrufen und zur Verwendung von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.
 
