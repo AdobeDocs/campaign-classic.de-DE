@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -29,8 +29,6 @@ Der Webschnittstellentyp **Standardformular** impliziert die Nutzung einer **Web
 >[!NOTE]
 >
 >Die diversen APIs werden in einem separaten Dokument beschrieben, auf das je nach Lizenzvertrag Zugriff besteht, siehe [APIs](../../configuration/using/about-web-services.md).
-
->[!NOTE]
 >
 >Die in diesem Beispiel verwendete Webanwendung ist nicht standardmäßig in Adobe Campaign vorhanden. Um in einer Kampagne ein Formular benutzen zu können, muss vorab die entsprechende Webanwendung erstellt werden.
 
@@ -159,7 +157,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
    * den Inhalt der Benachrichtigung, die die Lokalstellen erhalten;
    * die Validierungserinnerung;
-   * die vorgezogene Bearbeitung der Kampagne nach Validierung.
+   * die erwartete Verarbeitung für die Kampagne.
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Speichern Sie die Kampagne.
