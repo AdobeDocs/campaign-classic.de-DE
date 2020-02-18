@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f9b3508fee3b441752648258b1bc9d5d2b919791
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -123,7 +123,7 @@ Folgende Regeln müssen eingehalten werden:
 
 * Jede **`<element>`** und **`<attribute>`** muss durch den Namen über das **Attribut name** identifiziert werden.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Der Name des Elements sollte kurz sein, vorzugsweise in Englisch, und nur autorisierte Zeichen gemäß XML-Benennungsregeln einschließen.
 
@@ -188,7 +188,7 @@ In der folgenden Tabelle sind die Zuordnungen der Datentypen aufgeführt, die vo
    <td> <strong>MS SQL</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
    <td> VARCHAR2 (NVARCHAR2, wenn Unicode)<br /> </td> 
    <td> VARCHAR (VARCHAR-ZEICHEN EINSTELLEN VON UNICODE, falls Unicode<br /> </td> 
@@ -365,7 +365,7 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<
 
 #### Kostenlose Aufzählung {#free-enumeration}
 
-Mit der **userEnum** -Eigenschaft können Sie eine kostenlose Aufzählung definieren, um die über dieses Feld eingegebenen Werte zu speichern und anzuzeigen. Die Syntax lautet wie folgt:
+Mit der **userEnum** -Eigenschaft können Sie eine kostenlose Aufzählung definieren, um die über dieses Feld eingegebenen Werte zu speichern und anzuzeigen. Die Syntax sieht folgendermaßen aus:
 
 **userEnum=&quot;Name der Aufzählung&quot;**
 
