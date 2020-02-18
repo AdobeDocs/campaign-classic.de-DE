@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
+source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
 
 ---
 
@@ -25,10 +25,11 @@ source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 ## Abfragen erstellen {#creating-a-query}
 
 Über Abfragen lassen sich Zielgruppen anhand von Filterkriterien bestimmen. Es besteht die Möglichkeit, dem Abfrageergebnis einen Segment-Code zuzuweisen und es mit Zusatzdaten zu ergänzen.
+Weitere Informationen zu Abfragebeispielen finden Sie in diesem [Abschnitt](../../workflow/using/querying-recipient-table.md).
 
 >[!NOTE]
 >
->Beispiele für Abfragen werden in [diesem Abschnitt](../../workflow/using/querying-recipient-table.md) beschrieben.
+>Abfrageaktivitäten sind bei Verwendung von Oracle nicht mit CLOB-Feldern kompatibel.
 
 ![](assets/s_user_segmentation_wizard_9.png)
 
@@ -112,7 +113,7 @@ Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Info
 
    * If a single element of the collection coincides with the filtering conditions for this collection, select **[!UICONTROL Single row]** in the **[!UICONTROL Data collected]** field.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Dieser Modus optimiert die erzeugte SQL-Abfrage, da ein direkter Join auf die Kollektionselemente erstellt wird.
       >
