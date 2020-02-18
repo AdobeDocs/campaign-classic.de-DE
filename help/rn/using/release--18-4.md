@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 14690ab1435f291679e643ee4240ae9df7e86356
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -111,7 +111,7 @@ April 2018
     <ul> 
      <li> <p>Recht auf Zugriff: Das Datensubjekt hat das Recht, eine Kopie seiner personenbezogenen Daten, die vom Datenverantwortlichen erfasst werden, zu erhalten. Hierzu zählen unter Umständen auch die in Adobe Campaign gespeicherten Daten.</p> </li> 
      <li> <p>Recht auf Löschung: Das Datensubjekt hat das Recht, seine personenbezogenen Daten, die vom Datenverantwortlichen erfasst werden, löschen zu lassen. Hierzu zählen unter Umständen auch die in Adobe Campaign gespeicherten Daten.</p> </li> 
-    </ul> Lesen Sie für weiterführende Informationen das <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html">entsprechende Handbuch</a>.<br /> </td> 
+    </ul> Lesen Sie für weiterführende Informationen das <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">entsprechende Handbuch</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aktive Profile<br /> </td> 
@@ -119,7 +119,7 @@ April 2018
   </tr> 
   <tr> 
    <td> Verbesserung des Android-Connectors für Push-Benachrichtigungen<br /> </td> 
-   <td> <p>Der Android-Connector wurde verbessert und bietet jetzt höheren Durchsatz. </p> <p>Weitere Informationen finden Sie im <a href="../../delivery/using/setting-up-mobile-app-channel.md#android-connectors">entsprechenden Handbuch</a>.</p> </td> 
+   <td> <p>Der Android-Connector wurde verbessert und bietet jetzt höheren Durchsatz. </p> <p>Weitere Informationen finden Sie im <a href="../../delivery/using/configuring-the-mobile-application.md">entsprechenden Handbuch</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -141,7 +141,7 @@ April 2018
 * Für den Package-Import ist ein neuer Modus verfügbar, bei dem die Befehlszeile verwendet wird. Dadurch sind zirkuläre Abhängigkeiten möglich (nicht empfohlen für große Packages). Weiterführende Informationen dazu finden Sie im Abschnitt &quot;Technische Entwicklungen&quot;. (NEO-8979)
 * Die Leistung für große, in Teradata geladene Datenmengen wurde verbessert. Außerdem wurde ein Fehler behoben, sodass nun der richtige Wert verarbeiteter Daten im Log angezeigt wird. (NEO-10429)
 * Der Import von Audiences aus Audience Manager funktioniert jetzt mit aufgesplitteten Dateien. Zuvor wurde vom technischen Workflow importSharedAudience nur die letzte Datei des Segments importiert. (NEO-10156)
-* Unter Windows wurde der Standardinstallationspfad des Campaign-Servers geändert. Beim Starten der 64-Bit-Version lautet der Standardinstallationspfad jetzt: **C:ProgrammeAdobe Campaign Classic v7** anstelle von **C:Programme (x86)Adobe Campaign Classic v7**
+* On Windows, the Campaign server default installation path has changed. When launching the 64-bit version setup, the default installation path is now: **C:\Program Files\Adobe\Adobe Campaign Classic v7** instead of **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
 * Die Standard-MX-Regeln wurden verbessert und enthalten jetzt mehr Domains und ermöglichen höheren Durchsatz.
 * Zugriffsbeschränkungen für den SOAP-Aufruf des Softwareverteilungs-Assistenten wurden verstärkt (xtk:serverOptions#SaveOptions).
 * Die veraltete Bibliothek weka.jar wurde entfernt und die OpenSSL-Bibliothek wurde zur Optimierung der Sicherheit aktualisiert.
