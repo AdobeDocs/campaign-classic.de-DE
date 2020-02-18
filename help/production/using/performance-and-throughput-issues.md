@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -57,16 +57,16 @@ Im Folgenden finden Sie eine Liste von Artikeln zu Best Practices für die Anwen
 
 * MTA- und MTAChild-Prozesse und -Speicher: das **Modul mta** verteilt Nachrichten an seine untergeordneten **mtachild** -Module. Jede **mtachild** erstellt Nachrichten, bevor sie eine Autorisierung vom Statistikserver anfordert und sie sendet. Weitere Informationen finden Sie auf dieser [Seite](../../installation/using/email-deliverability.md) .
 * TLS-Konfiguration: Die globale Aktivierung von TLS wird nicht empfohlen, da dies den Durchsatz reduzieren kann. Stattdessen sollten die vom Bereitstellungsteam verwalteten TLS-Einstellungen pro Domäne je nach Bedarf angepasst werden. Weitere Informationen finden Sie auf dieser [Seite](../../installation/using/email-deliverability.md#mx-configuration) .
-* DKIM: zur Gewährleistung der Sicherheitsstufe des DKIM ist 1024b die empfohlene Verschlüsselungsgröße. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Lesen Sie diese [Seite](../../delivery/using/technical-recommendations.md#domainkeys-identified-mail--dkim-) und diese [Technote](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+* DKIM: zur Gewährleistung der Sicherheitsstufe des DKIM ist 1024b die empfohlene Verschlüsselungsgröße. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Lesen Sie diese [Seite](../../delivery/using/technical-recommendations.md#dkim) und diese [Technote](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
 
 ## Probleme mit der Lieferbarkeit {#deliverability-issues}
 
 Im Folgenden finden Sie eine Liste der Best Practices und Artikel im Zusammenhang mit der Lieferbarkeit:
 
-* IP-Ruf: Wenn der IP-Ruf nicht gut genug ist, wirkt sich dies auf die Leistung aus. Das **Lieferbarkeitsüberwachungsmodul** bietet verschiedene Tools zur Verfolgung der Leistung Ihrer Plattform. Refer to this [page](../../delivery/using/technical-monitoring.md).
+* IP-Ruf: Wenn der IP-Ruf nicht gut genug ist, wirkt sich dies auf die Leistung aus. Das **Lieferbarkeitsüberwachungsmodul** bietet verschiedene Tools zur Verfolgung der Leistung Ihrer Plattform. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/technical-monitoring.md).
 * IP-Aufwärmen: die IP-Aufwärmphase wird vom Zustellteam durchgeführt. Dazu gehört die schrittweise Erhöhung der Anzahl der E-Mails durch neue IPs über einen Zeitraum von einigen Wochen.
-* IP-Affinitätseinstellung: eine falsche IP-Affinitätseinstellung kann die E-Mails ganz stoppen (inkorrekter Operator-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Refer to this [page](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Refer to this [page](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im Bericht [Bereitstellungsdurchsatz](../../reporting/using/reports-on-deliveries.md#delivery-throughput) die Anzahl der nach Stunde übertragenen Byte.
+* IP-Affinitätseinstellung: eine falsche IP-Affinitätseinstellung kann die E-Mails ganz stoppen (inkorrekter Operator-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im Bericht [Bereitstellungsdurchsatz](../../reporting/using/delivery-reports.md#delivery-throughput) die Anzahl der nach Stunde übertragenen Byte.
 * Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinflussen. Die MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
 * Umfang der Personalisierung: Wenn eine Bereitstellung in &quot;Personalisierung in Bearbeitung&quot;bleibt, überprüfen Sie das in Personalisierungsblöcken verwendete JavaScript.
 
