@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3946d97e786423bf831d17e486186660db403709
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -43,7 +43,7 @@ Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können
 >
 >Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html) zu lesen.
 
-## Benutzer {#operators}
+## Operatoren {#operators}
 
 ### Über Benutzer {#about-operators}
 
@@ -103,7 +103,7 @@ Nachdem das Profil des Operators erstellt wurde, können Sie dessen Informatione
 
 >[!NOTE]
 >
->Im **[!UICONTROL Session timeout]** Feld können Sie die Verzögerung vor dem Timeout der FDA-Sitzung anpassen. Weitere Informationen finden Sie unter [Informationen zum Zugriff auf](../../platform/using/accessing-an-external-database.md#about-federated-data-access)Federated Data.
+>Im **[!UICONTROL Session timeout]** Feld können Sie die Verzögerung vor dem Timeout der FDA-Sitzung anpassen. Weitere Informationen finden Sie unter [Informationen zum Zugriff auf](../../platform/using/about-fda.md)Federated Data.
 
 ### Benutzer-Zeitzone {#time-zone-of-the-operator}
 
