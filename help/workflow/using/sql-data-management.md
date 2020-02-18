@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -28,7 +28,7 @@ Die Aktivität **SQL Data Management** ermöglicht Ihnen das Schreiben eigener S
 
 Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben sein:
 
-* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Das **[!UICONTROL FDA]** (Federated Data Access-)Paket muss daher auf Ihrer Instanz installiert sein (siehe [diesen Abschnitt](../../platform/using/accessing-an-external-database.md)).
+* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Das **[!UICONTROL FDA]** (Federated Data Access-)Paket muss daher auf Ihrer Instanz installiert sein (siehe [diesen Abschnitt](../../platform/using/about-fda.md)).
 * Das Outbound-Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verbunden sein (weitere Informationen zu Datenschemata finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-reference.md)).
 * Der Operator, der den Workflow ausführt, muss über die **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** benannte Berechtigung verfügen. For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
 
