@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -37,7 +37,7 @@ In Version 6.02 war der &quot;Zeitzonenmodus&quot;nur für PostgreSQL-Datenbankm
 
 Um den TIMESTAMP MIT TIMEZONE-Modus zu verwenden, müssen Sie auch die Option **-userTimestamptz:1** zur Befehlszeile nach der Aktualisierung hinzufügen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn der Parameter **-usetimestamptz:1** mit einer inkompatiblen Datenbank-Engine verwendet wird, wird Ihre Datenbank beschädigt und Sie müssen eine Sicherung Ihrer Datenbank wiederherstellen und den oben genannten Befehl erneut ausführen.
 
@@ -87,7 +87,7 @@ So prüfen Sie, ob sich beide Seiten in denselben Zeitzonen befinden:
 
 ### Sicherheitszonen {#security-zones}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Aus Sicherheitsgründen ist die Adobe Campaign-Plattform standardmäßig nicht mehr verfügbar: Sie müssen die Sicherheitszonen konfigurieren und daher IP-Adressen der Bediener erfassen.
 
@@ -107,7 +107,7 @@ In v7 muss die **interne** Verbindung mit dem **Operator** mit einem Kennwort ge
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Das **interne** Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier) und in [diesem Abschnitt](../../platform/using/access-management.md#about-permissions).
 
@@ -170,7 +170,7 @@ Neuer Link auf der Seite &quot;Verbindung&quot;:
 /nl/jsp/logon.jsp?login=<trusted login>&action=submit&target=/view/recipientOverview
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn Sie einen Operator verwenden, der mit einer vertrauenswürdigen IP-Maske verknüpft ist, überprüfen Sie, ob er über die Mindestrechte verfügt und sich im **sessionTokenOnly** -Modus in einer Sicherheitszone befindet.
 
@@ -178,7 +178,7 @@ Neuer Link auf der Seite &quot;Verbindung&quot;:
 
 Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gesendet. Derzeit müssen alle SQL-Funktionen dem Schema **xtk:funcList** hinzugefügt werden (weitere Informationen dazu finden Sie in [diesem Abschnitt](../../configuration/using/adding-additional-sql-functions.md)). Bei der Migration wird während der Nachrüstung eine Option hinzugefügt, mit der Sie die Kompatibilität mit alten nicht deklarierten SQL-Funktionen aufrechterhalten können. Wenn Sie diese Funktionen weiterhin verwenden möchten, überprüfen Sie, ob die Option **XtkPassUnknownSQLFunctionsToRDBMS** tatsächlich auf der **[!UICONTROL Administration > Platform > Options]** Knotenebene definiert ist.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wir empfehlen dringend, diese Option aufgrund der mit ihr verbundenen Sicherheitsrisiken nicht zu verwenden.
 
@@ -460,7 +460,7 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 * **[!UICONTROL Accept the new version]**: empfohlen, wenn die mit Adobe Campaign bereitgestellten Ressourcen vom Benutzer nicht geändert wurden.
 * **[!UICONTROL Keep the current version]**: bedeutet, dass die Aktualisierung abgelehnt wird.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    Wenn Sie diesen Auflösungsmodus auswählen, laufen Sie Gefahr, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur den Betreibern von Fachleuten vorzubehalten.
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
@@ -506,7 +506,7 @@ $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
 
 In v7 wurde der Angebotsinhalt verschoben. In Version 6.02 befanden sich die Inhalte in jedem Darstellungsschema (**nms:emailOfferView**). In v7 befindet sich der Inhalt jetzt im Angebotsschema. Nach der Aktualisierung ist der Inhalt daher nicht mehr in der Oberfläche sichtbar. Nach der Aktualisierung müssen Sie den Angebotsinhalt neu erstellen oder ein Skript entwickeln, das den Inhalt automatisch vom Darstellungsschema in das Angebotsschema verschiebt.
 
->[!CAUTION]
+>[!IMPORTANT]
 Wenn einige Auslieferungen mit konfigurierten Angeboten nach der Migration gesendet werden sollten, müssen Sie alle Auslieferungen in Version 7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der eigentlichen 6.1-Migration abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
 
 Ein Beispiel für ein Bewegungsskript (**interactionTo610_full_XX.js**) ist im Ordner &quot; **Migration** &quot;im Ordner &quot;Adobe Campaign v7&quot;verfügbar. Diese Datei zeigt ein Beispiel eines Skripts für einen Client, das eine einzelne E-Mail-Darstellung pro Angebot verwendet (die **[!UICONTROL htmlSource]** und die **[!UICONTROL textSource]** Felder). Der Inhalt der Tabelle **NmsEmailOfferView** wurde in die Angebotstabelle verschoben.
