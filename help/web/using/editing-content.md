@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -135,13 +135,14 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >Für jeden Linktyp können Sie den Öffnungsmodus konfigurieren: Wählen Sie das Zielfenster in der Dropdownliste **Target** aus. Dieser Wert entspricht dem **`<target>`** HTML-Tag.
 >
 >Diese **Ziele** stehen zur Verfügung:
-
+>
 >* Sonstige (IFrame)
 >* Vorderstes Fenster (_top)
-* Elternfenster (_parent)
-* Neues Fenster (_blank)
-* Aktuelles Fenster (_self)
-* Standard-Navigationseinstellungen
+>* Elternfenster (_parent)
+>* Neues Fenster (_blank)
+>* Aktuelles Fenster (_self)
+>* Standard-Navigationseinstellungen
+>
 
 
 
@@ -170,7 +171,8 @@ Mit der Option **Eine Aktion definierender Link** können Sie eine Aktion konfig
 ![](assets/dce_toolbar_imgblock_action.png)
 
 >[!NOTE]
-Die verfügbaren Aktionen werden im Abschnitt [Hinzufügen einer Aktion zu einer Schaltfläche](#adding-an-action-to-a-button) beschrieben.
+>
+>Die verfügbaren Aktionen werden im Abschnitt [Hinzufügen einer Aktion zu einer Schaltfläche](#adding-an-action-to-a-button) beschrieben.
 
 ### Link löschen {#delete-a-link}
 
@@ -180,7 +182,8 @@ Nachdem ein Link eingefügt wurde, bietet die Symbolleiste zwei neue Symbole zur
 * **[!UICONTROL Break the link]** können Sie den Link und alle zugehörigen Parameter nach der Bestätigung löschen.
 
 >[!NOTE]
-Auch wenn der Link gelöscht wird, bleibt der Inhalt bestehen.
+>
+>Auch wenn der Link gelöscht wird, bleibt der Inhalt bestehen.
 
 ## Schriftartattribute ändern {#changing-font-attributes}
 
@@ -202,8 +205,10 @@ Folgende Optionen sind verfügbar:
 * Symbol **Textfarbe ändern**: Ändert die Textfarbe des ausgewählten Bausteins oder nur den ausgewählten Text (`<span style="color: #CODE">`)
 
 >[!NOTE]
-* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
-
+>
+>* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
+   >
+   >
 * Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
 
@@ -223,7 +228,8 @@ Um mit dem DCE kompatibel zu sein, sind **Flash-Animationen** wie folgt in HTML-
 ```
 
 >[!CAUTION]
-You must not call up external files in a **script** tag of the HTML page. These files will not be imported onto the Adobe Campaign server.
+>
+>You must not call up external files in a **script** tag of the HTML page. These files will not be imported onto the Adobe Campaign server.
 
 ### Bild hinzufügen/löschen/duplizieren {#adding---deleting---duplicating-an-image}
 
@@ -240,7 +246,8 @@ The **Delete** icon deletes the ![]() tag containing the image.
 The **Duplicate** icon duplicates the ![]() tag and its content.
 
 >[!CAUTION]
-Beim Duplizieren eines Bildes werden die Identifikatoren für das neue Bild gelöscht.
+>
+>Beim Duplizieren eines Bildes werden die Identifikatoren für das neue Bild gelöscht.
 
 ### Bildeigenschaften bearbeiten {#editing-image-properties}
 
