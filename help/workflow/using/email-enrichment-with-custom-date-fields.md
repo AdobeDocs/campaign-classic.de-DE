@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
 ---
 
@@ -126,4 +126,4 @@ You can now start designing your email delivery with the custom date fields crea
 
    ![](assets/uc_enrichment_20.png)
 
-Ihre E-Mail ist jetzt fertig. Sie können mit den Testsendungen beginnen und Ihren Versand validieren, um Ihre Geburtstags-E-Mails zu versenden.
+Ihre E-Mail ist jetzt bereit. Sie können damit beginnen, Ihre Proofs zu senden und Ihre Lieferung zu bestätigen, um Ihre Geburtstagsemail zu versenden.
