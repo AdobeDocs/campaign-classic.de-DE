@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -90,7 +90,7 @@ Dieser Schritt erfordert gleichzeitigen Zugriff auf Ihre Adobe Campaign-Konsole 
 
    ![](assets/social_twitter_service_009.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Der Name **[!UICONTROL Internal name]** des Dienstes muss mit dem Namen des Twitter-Kontos identisch sein. Gehen Sie wie folgt vor, um sicherzustellen, dass keine Eintragsfehler auftreten.
 
@@ -124,7 +124,7 @@ Der **[!UICONTROL Twitter account Synchronization]** Arbeitsablauf synchronisier
 
 ## Synchronisieren von Twitter-Konten {#synchronizing-twitter-accounts}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Damit der Workflow die Liste der Twitter-Abonnenten wiederherstellen kann, muss das **[!UICONTROL Twitter account synchronization]** Kontrollkästchen im Bearbeitungsbereich des mit dem Konto verknüpften Dienstes aktiviert werden. Weitere Informationen finden Sie unter [Delegieren von Schreibzugriff auf Adobe Campaign](#delegating-write-access-to-adobe-campaign).
 
