@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
 
 ---
 
@@ -30,7 +30,7 @@ Im Folgenden finden Sie die Installations- und Konfigurationsschritte für Hybri
 * Installieren von Paketen: finden Sie in diesem [Abschnitt](../../installation/using/installing-campaign-standard-packages.md).
 * Lieferbarkeit: Konfigurieren von [MX-Regeln](../../installation/using/email-deliverability.md#mx-configuration) und [E-Mail-Formaten](../../installation/using/email-deliverability.md#managing-email-formats). Erfahren Sie mehr über die Werkzeuge und Best Practices für die Bereitstellung, indem Sie den [Einstiegsleitfaden](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) und die [ausführliche Dokumentation](../../delivery/using/about-deliverability.md)lesen.
 * Konfigurieren von Kampagnenoptionen: finden Sie in diesem [Abschnitt](../../installation/using/configuring-campaign-options.md).
-* Konfigurieren einer externen Datenbank (FDA): finden Sie in diesem [Abschnitt](../../platform/using/accessing-an-external-database.md).
+* Konfigurieren einer externen Datenbank (FDA): finden Sie in diesem [Abschnitt](../../platform/using/about-fda.md).
 * CRM-Connectors konfigurieren: finden Sie in diesem [Abschnitt](../../platform/using/crm-connectors.md).
 * Weitere Informationen zu Implementierungsprinzipien für Mid-Sourcing finden Sie in diesem [Abschnitt](../../installation/using/mid-sourcing-deployment.md).
 
