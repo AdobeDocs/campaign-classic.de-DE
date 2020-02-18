@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9662e88578747a519df2e68e5a7d7987cc3ffdd4
+source-git-commit: 8fd9949ec03b7c2cdf88a9d5fcf5c8d8fd85f7d0
 
 ---
 
@@ -368,7 +368,7 @@ Wenden Sie sich an Ihren Datenbankadministrator, um die für Ihre Oracle-Version
 
 >[!NOTE]
 >
->Für Microsoft SQL Server können Sie den [auf dieser Seite](http://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)beschriebenen Wartungsplan verwenden.
+>Für Microsoft SQL Server können Sie den [auf dieser Seite](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)beschriebenen Wartungsplan verwenden.
 
 Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um Informationen zu den Wartungsabläufen zu erhalten.
 
