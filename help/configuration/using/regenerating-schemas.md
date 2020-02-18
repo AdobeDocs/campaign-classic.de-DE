@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -33,8 +33,7 @@ Anschließend können Sie die Struktur des erstellten Schemas auf den Registerka
 >[!NOTE]
 >
 >Wenn Sie die Wiederherstellung des gesamten Schemas erzwingen müssen, um beispielsweise bestimmte Abhängigkeitsprobleme in den Rückwärtslinks zu lösen, können Sie den folgenden Befehl vom Adobe Campaign-Anwendungsserver starten:
-
+>
 >**nlserver config -postupgrade -instance:` &lt;instance_name>&#39; -force**
-
+>
 >Anschließend müssen Sie den Adobe Campaign-Anwendungsserver neu starten und die Verbindung zur Client-Konsole trennen/wiederherstellen.
-
