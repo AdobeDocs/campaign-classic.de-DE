@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
 
 Mit Social Marketing können Sie Auslieferungen an Ihre verschiedenen Facebook-Seiten und Twitter-Konten senden, im Gegensatz zu Empfängerprofilen. Auf Facebook werden Bereitstellungsinhalte in Form von Veröffentlichungen auf Seitenwänden angezeigt und erscheinen auch im News-Feed aller Seitenfans. Auf Twitter werden Bereitstellungsinhalte als Tweets angezeigt und erscheinen auf der Homepage der Kontofolger. Sie können auch Direktnachrichten an die von Ihnen erfassten Kontofolger senden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Campaign fordert Sie auf, die von Facebook und Twitter bezüglich der Nachrichtenübermittlung übermittelten Servicebestimmungen einzuhalten.
 >
