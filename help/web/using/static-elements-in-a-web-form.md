@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -64,7 +64,7 @@ Um einen Hyperlink hinzuzufügen, gehen Sie zu **[!UICONTROL Static elements>Lin
 ![](assets/s_ncs_admin_survey_add_link.png)
 
 * The **[!UICONTROL Label]** is the content of the hypertext link as it will be displayed on the form page.
-* Die **[!UICONTROL URL]** ist die gewünschte Adresse, z. B.: [https://www.adobe.com](https://www.adobe.com) für eine Website oder [mailto:info@adobe.com](mailto:info@adobe.com), um eine Nachricht zu senden.
+* The **[!UICONTROL URL]** is the desired address, e.g.: [https://www.adobe.com](https://www.adobe.com) for a website, or [info@adobe.com](mailto:info@adobe.com) to send a message.
 * Im **[!UICONTROL Window]** Feld können Sie den Anzeigemodus für den Link im Fall einer Site auswählen. Sie können den Link in einem neuen Fenster, im aktuellen Fenster oder in einem anderen Fenster öffnen.
 * Sie können einen ToolTip wie unten gezeigt hinzufügen:
 
@@ -92,7 +92,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   Sie können die Schaltflächen **[!UICONTROL Next]** und/oder **[!UICONTROL Back]** ausblenden, wenn sie durch einen Link ersetzt werden sollen. Refer to this [page](../../web/using/defining-web-forms-page-sequencing.md).
+   Sie können die Schaltflächen **[!UICONTROL Next]** und/oder **[!UICONTROL Back]** ausblenden, wenn sie durch einen Link ersetzt werden sollen. Mehr dazu erfahren Sie auf [dieser Seite](../../web/using/defining-web-forms-page-sequencing.md).
 
    The link will replace the **[!UICONTROL Next]** button used by default.
 
