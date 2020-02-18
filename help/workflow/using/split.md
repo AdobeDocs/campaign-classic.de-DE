@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 463d2d60e8776fc0414fdb8c91dbf257e119d823
+source-git-commit: afe286211c21f4fc178ffb5f9f30baed96ebfeab
 
 ---
 
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor:
 
    Die Vorgehensweise ist mit der der Abfrageaktivität identisch.****
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Es können maximal Daten aus zwei externen Datenbanken gefiltert werden.
 
@@ -59,7 +59,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_user_segmentation_partage_add.png)
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >Wenn die **[!UICONTROL Enable overlapping of output populations]** Option nicht aktiviert ist, werden die Untergruppen in der Reihenfolge der Registerkarten erstellt. Verwenden Sie die Pfeile oben rechts in diesem Fenster, um sie zu verschieben. Wenn die erste Untergruppe beispielsweise 70 % der ursprünglichen Population wiederherstellt, wendet die nächste Untergruppe ihre Auswahlkriterien nur auf die verbleibenden 30 % an usw.
 
@@ -135,7 +135,7 @@ Ein Beispiel für die **[!UICONTROL Local approval]** Aktivität mit einer Verte
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Zur Verwendung dieser Funktion benötigen Sie das Modul Distributed Marketing (Campaign-Option). Bitte prüfen Sie Ihren Lizenzvertrag.
 
@@ -155,7 +155,7 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
    * **[!UICONTROL Targeting dimension]**: Geben Sie die Targeting-Dimension ein, auf die die Datenverteilung angewendet werden soll, **[!UICONTROL Recipient]** z. B. Dieses Schema muss immer mit den im Targeting-Workflow verwendeten Daten kompatibel sein.
    * **[!UICONTROL Distribution field]**: Wählen Sie ein Feld über die Targeting-Dimension aus. Wenn Sie beispielsweise das **[!UICONTROL Email domain]** Feld auswählen, wird die Liste der Empfänger nach Domäne aufgeschlüsselt.
    * **[!UICONTROL Distribution type]**: wählen Sie die Art und Weise aus, wie der Grenzwert des Ziels auf der **[!UICONTROL Distribution]** Registerkarte aufgeschlüsselt wird: **[!UICONTROL Percentage]** oder **[!UICONTROL Set]**.
-   * **[!UICONTROL Assignment type]**: Wählen Sie den Zuordnungstyp für die Datenverteilung aus. Sie können zwischen Zuweisungen nach Gruppe oder Operator oder Zuweisungen nach lokaler Entität wählen. Die Zuweisung durch eine lokale Entität wird im **verteilten Marketing** verwendet. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Assignment type]**: Wählen Sie den Zuordnungstyp für die Datenverteilung aus. Sie können zwischen Zuweisungen nach Gruppe oder Operator oder Zuweisungen nach lokaler Entität wählen. Die Zuweisung durch eine lokale Entität wird im **verteilten Marketing** verwendet. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../campaign/using/about-distributed-marketing.md).
    * **[!UICONTROL Approval storage]**: Wenn Sie eine **[!UICONTROL Local approval]** Aktivität in Ihrem Targeting-Arbeitsablauf verwenden (siehe [Lokale Genehmigung](../../workflow/using/local-approval.md)), geben Sie das Schema ein, in dem die Genehmigungsergebnisse gespeichert werden. Sie müssen ein Speicherschema pro Targeting-Schema angeben. Wenn Sie das **[!UICONTROL Recipients]** Targeting-Schema verwenden, geben Sie das Standard- **[!UICONTROL Local approval of recipients]** Speicherschema ein.
 
       In case of a simple limitation by data grouping without local approval, you do not need to enter the **[!UICONTROL Approvals storage]** field.
@@ -200,11 +200,11 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
 
       In case of a simple limitation by data grouping without local approval, you do not need to enter the **[!UICONTROL Group or operator]** field.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
 
-   * **[!UICONTROL Local entity]**: Wählen Sie die lokale Entität, die jedem Verteilungswert zugewiesen ist. Lokale Entitäten werden im **verteilten Marketing** verwendet. For more information, refer to this [section](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Local entity]**: Wählen Sie die lokale Entität, die jedem Verteilungswert zugewiesen ist. Lokale Entitäten werden im **verteilten Marketing** verwendet. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../campaign/using/about-distributed-marketing.md).
 
 ## Filterparameter {#filtering-parameters}
 
