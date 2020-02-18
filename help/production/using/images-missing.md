@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -34,6 +34,6 @@ Apache-Benutzer haben keine Auswirkung, wenn sie die bereitgestellte **apache_ne
 
 Bei IIS-Benutzern (unter Windows) werden nach dem Build-Update mehrere Symbole in der Konsole fehlen. Weitere IIS-Aktualisierungsschritte sind erforderlich:
 
-1. Doppelklicken Sie nach dem Build-Update auf **is_neolane_setup.vbs** im Installationsordner von Campaign. Der Standardpfad ist C:Programme (x86)AdobeAdobe Campaign v7tomcat-7conf
+1. Doppelklicken Sie nach dem Build-Update auf **is_neolane_setup.vbs** im Installationsordner von Campaign. Der Standardpfad lautet C:\Program Files (x86)\Adobe\Adobe Campaign v7\tomcat-7\conf
 1. Starten Sie die IIS-Site neu, die im vorherigen Schritt aktualisiert wurde.
 
