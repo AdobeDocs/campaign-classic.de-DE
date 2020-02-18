@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
 Unsere intuitiven Handbücher bieten Ihnen einen einfachen Einstieg in Adobe Campaign.
 
 * [Bearbeiten von E-Mail-Inhalt mit Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): Machen Sie Sie sich mit den Grundlagen zur Integration zwischen Adobe Campaign und Experience Manager vertraut.
-* [Datenschutz-Grundverordnung](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html): Hier erfahren Sie, wie Ihnen Adobe Campaign Classic hilft, die DSGVO bei der Nutzung unseres Dienstes gesetzeskonform umzusetzen.
+* [Datenschutzverwaltung](https://helpx.adobe.com/campaign/kb/acc-privacy.html): entdecken Sie, was Adobe Campaign Classic Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen bei der Nutzung unseres Dienstes bietet.
 * [Integrieren dynamischer Inhalte in einer E-Mail](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
 * [Verwalten der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
 * [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html): Hier erfahren Sie über Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign Classic.
