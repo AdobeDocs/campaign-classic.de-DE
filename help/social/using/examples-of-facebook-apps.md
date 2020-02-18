@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7f03e1fbb94bbd5b00fa0094a0b5e9be45629ec7
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -30,7 +30,7 @@ Wenn ein Benutzer auf die Registerkarte einer Facebook-Anwendung klickt, wird si
 
 ![](assets/social_webapp_fb_000.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Bitte befolgen Sie die Konfigurationsschritte, die unter [Erstellen einer Facebook-Anwendung](../../social/using/creating-a-facebook-application.md)beschrieben werden.
 
@@ -44,7 +44,7 @@ Die hier aufgeführten Beispiele für Webanwendungen vom Facebook-Typ sind:
 * Weiterleiten von Einstellungen an eine Facebook-Anwendung. Weitere Informationen finden Sie unter Weiterleiten [von Einstellungen an eine Facebook-Anwendung?](#how-to-forward-settings-to-a-facebook-application-).
 * Anleitung zum Erfassen von Lüfterdaten. Weitere Informationen finden Sie unter [Wie erfassen Sie Lüfterdaten?](#how-to-acquire-fan-data-).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Diese einfachen Anwendungsfälle werden als Beispiele zur Veranschaulichung der Funktionen von Webanwendungen vom Typ Facebook bereitgestellt.
 
@@ -97,7 +97,7 @@ Um diese Anwendung zu erstellen, führen Sie die folgenden Schritte aus:
 
 ## Wie können Einstellungen an eine Facebook-Anwendung weitergeleitet werden? {#how-to-forward-settings-to-a-facebook-application-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Befolgen Sie die Konfigurationsschritte, die unter [Erstellen einer Facebook-Anwendung](../../social/using/creating-a-facebook-application.md)beschrieben sind.
 
@@ -256,7 +256,7 @@ Wenn das Profil nicht in der Datenbank vorhanden ist und die E-Mail-Adresse des 
 
 1. Sie können einen Suchordner für die Versöhnung und einen Erstellungsordner für neue Profile auswählen. Wenn die Felder leer sind, werden Profile gesucht und im Standardordner des Zuordnungsschemas erstellt.
 
-### Aktivität beenden {#end-activity}
+### Endaktivität {#end-activity}
 
 Um den mit Facebook verknüpften Anzeigefehler zu umgehen, müssen Sie das **[!UICONTROL Use an external URL]** Feld markieren und die URL der Facebook-Anwendung, gefolgt vom **[!UICONTROL app_data]** Parameter und einem Wert eingeben. Dieser Wert wird in der **[!UICONTROL Test]** Aktivität verwendet, um festzustellen, ob der Benutzer gerade an dem Wettbewerb teilgenommen hat, und um gegebenenfalls eine Dankesmeldung anzuzeigen. For more on this, refer to: [Test activity](#test-activity).
 
