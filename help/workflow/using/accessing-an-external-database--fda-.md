@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -31,4 +31,4 @@ Verschiedene Workflow-Aktivitäten bieten die Option, Daten aus einer externen D
 * Anreicherung
 * Laden von Daten.
 
-Die Möglichkeit der Verwendung der FDA-Option hängt von Ihrer Adobe-Campaign-Lizenz ab. Informationen zu Konfiguration, Best Practices und Begrenzungen dieser Option finden Sie in diesem [Abschnitt](../../platform/using/accessing-an-external-database.md).
+Die Möglichkeit der Verwendung der FDA-Option hängt von Ihrer Adobe-Campaign-Lizenz ab. Informationen zu Konfiguration, Best Practices und Begrenzungen dieser Option finden Sie in diesem [Abschnitt](../../platform/using/about-fda.md).
