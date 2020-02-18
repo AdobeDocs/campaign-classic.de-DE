@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62553344f557206443fa2de0499df42d8b771e21
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -30,7 +30,7 @@ Diese Art von Datenbanken, die über einen DNS-Mechanismus abgefragt werden, nen
 * Nach Absender-Domain: Auflistung von Absender-Domains (vollständige Domain der Bounce-Message-Adresse), die Spam senden oder eine falsche Konfiguration aufweisen.
 * Nach Webdomain: Auflistung der in den Link-URLs vorkommenden Domains (wie die bei den Registraren verzeichneten High-Level-Domains) sowie der im Spam-Inhalt enthaltenen Bilder. In Adobe Campaign handelt es sich bei der zu berücksichtigenden Domain im Allgemeinen um die für das Tracking verwendete Adresse.
 
-Die folgende Liste enthält die am weitesten verbreiteten RBL. Besuchen Sie zur Einsicht in eine umfassendere Liste die Seiten [https://www.declude.com/Articles.asp?ID=97](https://www.declude.com/Articles.asp?ID=97) oder [https://www.dnsstuff.com/](https://www.dnsstuff.com/) (Abschnitt &quot;IP Tools&quot;, Formular &quot;Spam Database Lookup&quot;).
+Im Folgenden finden Sie eine Liste der am häufigsten verwendeten RBLs. Eine umfassendere Liste finden Sie unter [https://www.dnsstuff.com/](https://tools.dnsstuff.com/) (&quot;Spam Blacklist Lookup&quot;-Formular).
 
 * **Spamhaus**
 
