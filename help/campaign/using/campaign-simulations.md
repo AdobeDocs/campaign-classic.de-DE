@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -78,11 +78,11 @@ Folgen Sie den nachstehenden Etappen, um eine Simulation zu erstellen:
 
    ![](assets/simu_campaign_opti_edit_scope_save.png)
 
-   Bei Bedarf können Sie eine dynamische Bedingung über den **[!UICONTROL Edit the dynamic condition...]** Link verwenden
+   Bei Bedarf können Sie eine dynamische Bedingung über den **[!UICONTROL Edit the dynamic condition...]** Link verwenden.
 
    Click **[!UICONTROL Save]** to approve this configuration.
 
-   >[!CAUTION]
+   >[!NOTE]
    >
    >In den Simulationsberechnungen werden nur die Sendungen berücksichtigt, deren Zielgruppe bereits berechnet wurde (Status **Zielbestimmung abgeschlossen** oder **Versandbereit**).
 
@@ -215,13 +215,13 @@ Es soll eine zusätzliche Berichtsachse über den Empfängerstatus (&quot;Kunde&
 
    * **[!UICONTROL Generate target overlap statistics]** Sie können alle Überschneidungsstatistiken im Simulationsbericht wiederherstellen. Überschneidungen sind Empfänger, die in mindestens zwei Auslieferungen innerhalb einer Simulation als Ziel dienen.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Die Auswahl dieser Option verlängert die Ausführungsdauer der Simulation beträchtlich.
 
    * **[!UICONTROL Keep the simulation work table]** können Sie Simulationsspuren beibehalten.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Die systematische Speicherung dieser Tabellen erfordert eine erhöhte Speicherkapazität: Stellen Sie sicher, dass Ihre Datenbank über entsprechenden Speicherplatz verfügt.
 
