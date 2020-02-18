@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 703fa6e5d5e6f1c8c512bd65ebadad724f02ded3
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -59,7 +59,7 @@ Obwohl dies nicht empfohlen wird, gibt es bestimmte Lösungen, wenn Sie bestimmt
 
 ## MySQL {#mysql}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >MySQL wird nur in v7 als Haupt-Datenbank-Engine bei der Migration von Version 6.02 oder 5.11 mit dieser Engine unterstützt.
 
