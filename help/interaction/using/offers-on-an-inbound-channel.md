@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
 
 ---
 
@@ -28,11 +28,11 @@ Das Unternehmen Neobank möchte auf seiner Webseite Besuchern, die sich nicht mi
 
 Folgende Etappen sind zur Umsetzung dieser Interaktion zu durchlaufen:
 
-1. [Anonyme Umgebung erstellen](#creating-an-anonymous-environment).
-1. [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces).
-1. [Angebotskategorie und Thema erstellen.](#creating-an-offer-category-and-a-theme).
-1. [Anonyme Angebote erstellen.](#creating-anonymous-offers).
-1. [Angebotsplatzierungen auf der Website konfigurieren](#configure-the-web-offer-space-on-the-website).
+1. [Anonyme Umgebung erstellen](#creating-an-anonymous-environment)
+1. [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)
+1. [Angebotskategorie und Thema erstellen](#creating-an-offer-category-and-a-theme)
+1. [Anonyme Angebote erstellen.](#creating-anonymous-offers)
+1. [Angebotsplatzierungen auf der Website konfigurieren](#configure-the-web-offer-space-on-the-website)
 
 ### Erstellung einer anonymen Umgebung {#creating-an-anonymous-environment}
 
@@ -64,7 +64,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
    * Title
    * HTML-Inhalt,
    * Bild-URL,
-   * Ziel-URL.
+   * Ziel-URL
    ![](assets/offer_inbound_anonymous_example_030.png)
 
 1. Geben Sie die HTML-Rendering-Funktion an. Sie kann beispielsweise folgende Form annehmen:
