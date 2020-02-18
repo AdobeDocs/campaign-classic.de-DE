@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
+source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
 
@@ -128,7 +128,7 @@ source-git-commit: 12f4237c34560257901ae210d4e22a7d152a795d
      <li> <p>Tracken stiller Benachrichtigungen unter iOS </p> </li> 
      <li> <p>Implementieren von Feedback zu Registrierungsaufrufen unter iOS</p> </li> 
      <li> <p>Beschleunigte iOS-Versandvorbereitung</p> </li> 
-    </ul> <p>Aufgrund der Beendigung von GCM durch Google ermöglicht der Android-V2-Connector jetzt nur Verbindungen zum FCM-Server.</p><p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/setting-up-mobile-app-channel.md#integrating-campaign-sdk-into-the-mobile-application">ausführlichen Dokumentation</a>. Das manuelle Upgrade auf FCM wird in diesem <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">Artikel</a> beschrieben. </p> </td> 
+    </ul> <p>Aufgrund der Beendigung von GCM durch Google ermöglicht der Android-V2-Connector jetzt nur Verbindungen zum FCM-Server.</p><p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">ausführlichen Dokumentation</a>. Das manuelle Upgrade auf FCM wird in diesem <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">Artikel</a> beschrieben. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL-Data-Management-Aktivität<br /> </td> 
