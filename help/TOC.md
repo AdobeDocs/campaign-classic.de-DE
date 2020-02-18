@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
+source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
 
 ---
 
@@ -17,6 +17,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
 + Versionshinweise {#release-notes}
    + [Neueste Version](rn/using/latest-release.md)
    + Frühere Versionen {#previous-releases}
+      + [Version 19.2](rn/using/release--19-2.md)
       + [Version 19.1](rn/using/release--19-1.md)
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
@@ -54,7 +55,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
    + Datenfilter {#filtering-data}
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
-      + [Umsetzung](platform/using/use-case.md)
+      + [Anwendungsfall](platform/using/use-case.md)
    + Abfragen erstellen {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
@@ -64,9 +65,17 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Datenpackages](platform/using/working-with-data-packages.md)
       + [Auflistungen verwalten](platform/using/managing-enumerations.md)
       + [Externe Konten](platform/using/external-accounts.md)
+   + Zugriff auf externe Datenbanken (FDA){#accessing-external-database}
+      + [Über FDA](platform/using/about-fda.md)
+      + [Spezifische Konfigurationen nach Datenbanktyp](platform/using/specific-configuration-database.md)
+      + [Zugriffsberechtigungen auf Remote-Datenbank](platform/using/remote-database-access-rights.md)
+      + [Herstellung der Datenbankverbindung](platform/using/connecting-to-database.md)
+      + [Erstellen des Datenschemas](platform/using/creating-data-schema.md)
+      + [Definition des Daten-Mappings](platform/using/defining-data-mapping.md)
+      + [Zusätzliche Optionen](platform/using/additional-options.md)
+      + [Verwenden von Daten aus einer externen Datenbank in einem Workflow](platform/using/data-external-database-workflow.md)
    + Connectoren {#connectors}
       + [Über Connectoren](platform/using/about-connectors.md)
-      + [Zugriff auf externe Datenbanken](platform/using/accessing-an-external-database.md)
       + [CRM-Connectoren](platform/using/crm-connectors.md)
       + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Sending Messages {#sending-messages}
@@ -92,7 +101,8 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [LINE-Kanal](delivery/using/line-channel.md)
    + Push-Benachrichtigungen senden {#sending-push-notifications}
       + [Über den Mobile-App-Kanal](delivery/using/about-mobile-app-channel.md)
-      + [Mobile-App-Kanal einrichten](delivery/using/setting-up-mobile-app-channel.md)
+      + [Integration des Campaign SDK in Mobile Apps](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
+      + [Konfiguration der Mobile App in Adobe Campaign](delivery/using/configuring-the-mobile-application.md)
       + [Benachrichtigungen erstellen](delivery/using/creating-notifications.md)
       + [Problembehebung](delivery/using/troubleshooting.md)
    + Briefpost senden {#sending-direct-mail}
@@ -213,8 +223,8 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
    + Populationen analysieren {#analyzing-populations}
       + [Über die deskriptive Analyse](reporting/using/about-descriptive-analysis.md)
       + [Analyse-Assistenten (deskriptiv) verwenden](reporting/using/using-the-descriptive-analysis-wizard.md)
-      + [Verwenden eines Analyseberichts](reporting/using/processing-a-report.md)
-      + [Anwendungsbeispiele](reporting/using/use-cases.md)
+      + [Berichtbearbeitung](reporting/using/processing-a-report.md)
+      + [Anwendungsfälle](reporting/using/use-cases.md)
    + Benutzerdefinierte Berichte erstellen {#creating-new-reports}
       + [Über die Berichterstellung in Campaign](reporting/using/about-reports-creation-in-campaign.md)
       + [Neue Berichte erstellen](reporting/using/creating-a-new-report.md)
@@ -351,7 +361,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Warnung](workflow/using/alert.md)
       + [Aufgabe](workflow/using/task.md)
    + Aktionsaktivitäten {#action-activities}
-      + [Informationen zu Aktivitäten](workflow/using/about-action-activities.md)
+      + [Informationen zu Aktionsaktivitäten](workflow/using/about-action-activities.md)
       + [Versand](workflow/using/delivery.md)
       + [Versand bearbeiten](workflow/using/delivery-control.md)
       + [Versand (fortlaufend)](workflow/using/continuous-delivery.md)
@@ -374,7 +384,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [HTTP-Übertragung](workflow/using/web-download.md)
       + [E-Mail-Empfang](workflow/using/inbound-emails.md)
       + [SMS-Empfang](workflow/using/inbound-sms.md)
-   + Anwendungsbeispiele {#use-cases}
+   + Anwendungsfälle {#use-cases}
       + [Lokale Validierung verwenden](workflow/using/using-the-local-approval-activity.md)
       + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
       + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
@@ -427,7 +437,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Marketing-Ressourcen (MRM)](workflow/using/marketing-resources--mrm-.md)
       + [Social Marketing](workflow/using/social-marketing.md)
       + [Integrationen mit Adobe Experience Cloud-Lösungen](workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-      + [Die Datenschutzgrundverordnung (DSGVO)](workflow/using/general-data-protection-regulation--gdpr-.md)
+      + [Datenschutzbestimmung](workflow/using/general-data-protection-regulation--gdpr-.md)
       + [Sendung an Mid-Sourcing-Server](workflow/using/transfer-to-mid-sourcing.md)
       + [Mid-Sourcing-Plattform](workflow/using/mid-sourcing-platform.md)
 + Verwalten von Angeboten {#managing-offers}
@@ -515,7 +525,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
    + Anwendungsbeispiel {#use-case}
       + [Zweck](message-center/using/purpose.md)
-      + [Wichtige Hinweise](message-center/using/important-notes.md)
+      + [Wichtige Hinweise ](message-center/using/important-notes.md)
       + [Umsetzung](message-center/using/implementation.md)
 + Integration mit sozialen Medien {#integrating-with-social-media}
    + [Informationen zum Social Marketing](social/using/about-social-marketing.md)
@@ -576,7 +586,7 @@ source-git-commit: 6903548c1b6912daa825e98adc8467d56f937478
       + [Verbindung über LDAP](installation/using/connecting-through-ldap.md)
       + [E-Mail-Zustellung](installation/using/email-deliverability.md)
       + [E-Mail-Archivierung](installation/using/email-archiving.md)
-      + [Zeitzonen](installation/using/time-zone-management.md)
+      + [Zeitzonen-Management](installation/using/time-zone-management.md)
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
       + [Server mit mittlerer Quelle](installation/using/mid-sourcing-server.md)
       + [Interaktion - Datenpuffer](installation/using/interaction---data-buffer.md)
