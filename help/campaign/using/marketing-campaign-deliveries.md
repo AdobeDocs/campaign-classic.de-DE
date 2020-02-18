@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -72,7 +72,7 @@ Die Hauptzielgruppe eines Versands kann auch über einen Zielgruppen-Workflow be
 
 Eine detaillierte Beschreibung der Funktionsweise des Workflow-Moduls erhalten Sie im Handbuch [Automatisierung mithilfe von Workflows](../../workflow/using/executing-a-workflow.md#architecture).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Für dieselbe Kampagne können maximal 28 Workflows eingerichtet werden. Zusätzliche Workflows sind in der Benutzeroberfläche nicht sichtbar und können Fehler verursachen.
 
@@ -233,7 +233,7 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. Klicken Sie auf die **[!UICONTROL Control group]** Registerkarte und wählen Sie dann **[!UICONTROL Enable and edit control group configuration]**.
-1. Klicken Sie **[!UICONTROL Edit...]** , um die Kontrollgruppe zu konfigurieren
+1. Klicken Sie auf **[!UICONTROL Edit...]** , um die Kontrollgruppe zu konfigurieren.
 
 Das Konfigurationsverfahren wird unter [Extrahieren der Kontrollgruppe vom Hauptziel](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Population](#adding-a-population)dargestellt.
 
@@ -353,7 +353,7 @@ Die Dateiextraktion startet zwei Vorgänge: die Berechnung der Budgets und die B
 
 Sie können verschiedene Dokumente mit einer Kampagne verknüpfen: Bericht, Foto, Webseite, Diagramm usw. Diese Dokumente können in jedem Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.). Informationen zum Verknüpfen von Dokumenten mit einer Kampagne finden Sie unter [Hinzufügen von Dokumenten](#adding-documents).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Diese Funktionalität eignet sich nur für kleine Dokumente.
 
