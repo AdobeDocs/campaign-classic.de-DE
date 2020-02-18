@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
 
 Diese Methode besteht darin, einen HTTP-Aufruf an den Umleitungsserver zu senden, indem ein **`<img>`** HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die Sie verfolgen möchten.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Diese Methode verwendet die vom Webbrowser gesendeten Cookies zur Identifizierung des Empfängers und ist nicht zu 100 % zuverlässig.
 
