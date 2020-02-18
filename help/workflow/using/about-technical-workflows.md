@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
+source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
 
@@ -47,6 +47,6 @@ In diesem Abschnitt finden Sie Informationen über technische Workflows, die fol
 * [Marketing-Ressourcen (MRM)](../../workflow/using/marketing-resources--mrm-.md)
 * [Social Marketing](../../workflow/using/social-marketing.md)
 * [Integrationen mit Adobe Experience Cloud-Lösungen](../../workflow/using/integrations-with-adobe-experience-cloud-solutions.md)
-* [Die Datenschutzgrundverordnung (DSGVO)](../../workflow/using/general-data-protection-regulation--gdpr-.md)
+* [Datenschutzbestimmung](../../workflow/using/general-data-protection-regulation--gdpr-.md)
 * [Sendung an Mid-Sourcing-Server](../../workflow/using/transfer-to-mid-sourcing.md)
 * [Mid-Sourcing-Plattform](../../workflow/using/mid-sourcing-platform.md)
