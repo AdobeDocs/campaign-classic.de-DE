@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -26,10 +26,10 @@ source-git-commit: 62e6537ba306956cac3bf6e1dd18567bc1414917
 
 Für jede Bereitstellung können Sie mehrere Arten von Zielgruppen definieren. Im folgenden Abschnitt finden Sie weitere Informationen zur Auswahl:
 
-* **Die Hauptempfänger der Lieferung**. [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* **Die Empfänger von Proof-Meldungen**, um einen Überprüfungszyklus einzurichten. [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Die Hauptempfänger der Lieferung**. [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
+* **Die Empfänger von Proof-Meldungen**, um einen Überprüfungszyklus einzurichten. [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
-Darüber hinaus können Sie auch [Seed-Adressen](../../delivery/using/about-seed-addresses.md)und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)definieren. wenn die Bereitstellung in einer Marketingkampagne enthalten ist.
+Darüber hinaus können Sie auch [Seed-Adressen](../../delivery/using/about-seed-addresses.md)und [Steuerungsgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)definieren. wenn die Bereitstellung in einer Marketingkampagne enthalten ist.
 
 ## Auswählen der Hauptempfänger der Bereitstellung {#selecting-the-main-target}
 
