@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
@@ -37,6 +37,10 @@ Die folgenden Befehle werden verwendet, um den Adobe Campaign-Dienst manuell zu 
 
    * **/etc/init.d/nlserver6 start**
    * **/etc/init.d/nlserver6 stop**
+
+>[!NOTE]
+>
+>Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver** / **systemCtl stop nlserver**
 
 Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unter Linux (als **Adobe Campaign**) zugegriffen werden kann:
 
@@ -76,24 +80,22 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
    **nlserver-Neustart Web**
 
    >[!NOTE]
-
-   >* Wenn die Instanz nicht angegeben ist, wird die Standardinstanz verwendet.
-   >    
-   >    
+   > 
+   >    * Wenn die Instanz nicht angegeben ist, wird die Standardinstanz verwendet.
    >    * Im Falle eines Notfalls verwenden Sie die **-sofortige** Option, um einen sofortigen Stopp des Prozesses zu erzwingen (entsprechend Unix Befehl **töten -9**).
-   * Verwenden Sie die Option **-noconsole** , um sicherzustellen, dass das gestartete Modul nichts in der Konsole anzeigt. Seine Protokolle werden über das **syslogd** Modul auf die Festplatte geschrieben.
-   * Verwenden Sie die Option **-verbose** , um weitere Informationen zu Prozessaktionen anzuzeigen.
-
-
+   >    * Verwenden Sie die Option **-noconsole** , um sicherzustellen, dass das gestartete Modul nichts in der Konsole anzeigt. Seine Protokolle werden über das **syslogd** Modul auf die Festplatte geschrieben.
+   >    * Verwenden Sie die Option **-verbose** , um weitere Informationen zu Prozessaktionen anzuzeigen.
+      >    
+      >      
       Beispiel:
-
-
+      >    
+      >      
       **nlserver Neustart web -verbose**
-
-
+      >    
+      >      
       **nlserver start mta@myinstance -verbose**
-
-
+      >    
+      >      
       Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
 
 
@@ -110,5 +112,6 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
    **nlserver config -reload**
 
    >[!NOTE]
-   Einige Konfigurationsänderungen werden nicht dynamisch berücksichtigt. Adobe Campaign muss beendet und dann neu gestartet werden.
+   >
+   >Einige Konfigurationsänderungen werden nicht dynamisch berücksichtigt. Adobe Campaign muss beendet und dann neu gestartet werden.
 
