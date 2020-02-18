@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -55,7 +55,7 @@ Diese beiden Informationen müssen mit dem Bezeichner der verfolgten Seite verkn
 tagid=<identifier>|<type>|<foldername>
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Denken Sie daran, den Wert des Parameters **tagid** zu kodieren, wenn er als URL-Parameter verwendet wird.
 
