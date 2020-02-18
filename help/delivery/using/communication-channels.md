@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -37,7 +37,7 @@ Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 1. **E-Mail-Kanal**: Mit E-Mail-Zustellungen können Sie personalisierte E-Mails an die Zielgruppe senden. Siehe [Informationen zum E-Mail-Kanal](../../delivery/using/about-email-channel.md).
 1. **Direct Mail-Kanal**: Mit Direktversand können Sie eine Extraktionsdatei erstellen, die Daten zur Zielpopulation enthält. Weitere Informationen finden Sie unter [Informationen zum Direktpostkanal](../../delivery/using/about-direct-mail-channel.md).
 1. **Mobilkanal**: Mit Auslieferungen auf mobilen Kanälen können Sie personalisierte SMS- oder LINE-Nachrichten an die Zielgruppe senden. Siehe [SMS-Kanal](../../delivery/using/sms-channel.md).
-1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](../../delivery/using/about-mobile-app-channel.md).
+1. **Mobilanwendungskanal**: Mit mobilen App-Auslieferungen können Sie Benachrichtigungen an iOS- und Android-Systeme senden. Weitere Informationen finden Sie im Kapitel [Mobile App-Kanal](../../delivery/using/about-mobile-app-channel.md) .
 
    Andere Kanäle werden auf [dieser Seite](../../delivery/using/other-channels.md) beschrieben.
 
