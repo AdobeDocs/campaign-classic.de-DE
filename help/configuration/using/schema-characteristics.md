@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Die Eigenschaften eines Schemas, das auf eine vorhandene Tabelle verweist, sind 
 * Die Namen der Tabellen und Spalten müssen explizit angegeben werden.
 * Indizes müssen deklariert werden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Löschen Sie keine Felder in der Standard-Empfängertabelle, auch wenn sie nutzlos sind. Dies kann zu Verhaltensfehlern in der Adobe Campaign-Datenbank führen.
 
