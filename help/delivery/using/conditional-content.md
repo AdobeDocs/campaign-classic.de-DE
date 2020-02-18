@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -81,7 +81,7 @@ Click **[!UICONTROL Preview]** and select a recipient to view the conditional co
 
 ## Mehrsprachige E-Mail erstellen {#creating-multilingual-email}
 
-Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen können. Der Inhalt wird dann in der gewünschten Sprache des Empfängers angezeigt.
+Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen. Der Inhalt wird je nach Sprache des Empfängers in der einen oder anderen Sprache angezeigt.
 
 1. Erstellen Sie eine E-Mail und wählen Sie eine Zielpopulation aus. In unserem Beispiel basiert die Bedingung für die Darstellung einer bestimmten Version auf dem Wert **Sprache** des Empfängerprofils, also **EN**, **FR** oder **ES**.
 1. In the email HTML content, click the **[!UICONTROL Source]** tab and paste the following code:
