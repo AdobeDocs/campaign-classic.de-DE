@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -68,4 +68,4 @@ Um das entsprechende Schema zu erstellen, wenden Sie die folgenden Schritte an:
 
 Mit der Option **Federated Data Access - FDA** haben Sie Zugriff auf die in einer externen Datenbank gespeicherten Daten.
 
-Die Konfiguration für die Schemata zum Zugriff auf Daten in einer externen Datenbank ist auf [dieser Seite](../../platform/using/accessing-an-external-database.md#creating-the-data-schema)ausführlich beschrieben.
+Die Konfiguration für die Schemata zum Zugriff auf Daten in einer externen Datenbank ist auf [dieser Seite](../../platform/using/creating-data-schema.md)ausführlich beschrieben.
