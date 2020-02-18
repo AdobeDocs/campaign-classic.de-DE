@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 194d2263de0bf98afa0efc7e2e0b4ca433c95b6d
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -30,7 +30,7 @@ Ein **Versand** ist ein unabhängiges Versandobjekt, das ein einziges Mal ausgef
 
 Sendungen können entweder in der Versandliste oder innerhalb eines Workflows über die Aktivität [Versand](../../workflow/using/delivery.md) erstellt werden.
 
-Workflows bieten zusätzlich spezifische Versandaktivitäten entsprechend dem verwendeten Kanal. Weiterführende Informationen zu diesen Aktivitäten finden Sie in [diesem Abschnitt](../../workflow/using/cross-channel-deliveries.md).
+Workflows bieten auch spezifische Bereitstellungsaktivitäten je nach dem Kanal, den Sie verwenden möchten. For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
 
 ## Wiederkehrender Versand {#recurring-delivery}
 
