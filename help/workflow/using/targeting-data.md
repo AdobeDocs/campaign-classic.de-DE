@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
 
@@ -182,7 +182,7 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/accessing-an-external-database.md).
+   Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/about-fda.md).
 
 Danach müssen neue Teilmengen hinzugefügt werden:
 
