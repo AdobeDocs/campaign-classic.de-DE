@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dcefad5aade740c8f5e5a7a7f6602b4ee0bf5f8d
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -35,7 +35,7 @@ Mit der Anwendung **Verwalten sozialer Netzwerke** (Social Marketing), die für 
 
    Mit Adobe Campaign Social Marketing können Sie auch ganz einfach neue Kontakte über Facebook erwerben: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen weitergeben möchten. Wenn sie diese akzeptieren, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie Targeting-Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Facebook und Twitter nehmen regelmäßige Änderungen an ihren Bildschirmen und Prozessen vor. Dieses Dokument wird entsprechend aktualisiert.
 >
