@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: aa941e4f8803f65ce9d5f7567206b1fcc20a6dc6
 
 ---
 
 
-# Die Datenschutzgrundverordnung (DSGVO){#general-data-protection-regulation-gdpr}
+# Datenschutzbestimmung{#general-data-protection-regulation-gdpr}
 
-Die folgenden Workflows werden mit dem Modul **Datenschutzgrundverordnung (DSGVO)** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/ACC_GDPR.html).
+Die unten aufgeführten Arbeitsabläufe werden standardmäßig mit dem **Datenschutzregelungsmodul** installiert. For more on this module, refer to this [article](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
 
 <table> 
  <tbody> 
