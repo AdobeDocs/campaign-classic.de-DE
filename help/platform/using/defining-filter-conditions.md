@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ---
 
@@ -267,7 +267,7 @@ Relationen zu einer Tabelle oder zu Kollektionselementen:
 >* Verwenden Sie die **[!UICONTROL Add]** Schaltfläche (über der Seitensymbolleiste), um eine Ausgabefalte hinzuzufügen, in der Sie den Ausdruck bearbeiten möchten. Weitere Informationen zum Bearbeiten eines Ausdrucks finden Sie unter [Erstellen von Ausdrücken](#building-expressions).
 >* Klicken Sie auf das rote Kreuz **Löschen**, um eine Ausgabespalte zu entfernen.
 >* Ändern Sie die Reihenfolge der Ausgabespalten anhand der Pfeile.
->* The **[!UICONTROL Distribution of values]** serves as a way to view the distributon of the values of the field selected (for example, the distributions linked to recipient towns, recipient languages, etc.).
+>* The **[!UICONTROL Distribution of values]** serves as a way to view the distribution of the values of the field selected (for example, the distributions linked to recipient towns, recipient languages, etc.).
 
 
 ## Erstellung berechneter Felder {#creating-calculated-fields}
@@ -414,7 +414,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
  </tbody> 
 </table>
 
-**String**
+**Zeichenfolge**
 
 <table> 
  <tbody> 
