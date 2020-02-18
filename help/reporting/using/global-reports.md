@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
 
 ---
 
@@ -30,7 +30,7 @@ Klicken Sie zur Anzeige eines Berichts auf seinen Namen. Standardmäßig stehen 
 
 ![](assets/s_ncs_user_report_global_list.png)
 
->[!CAUTION]
+>[!NOTE]
 >
 >Dieser Abschnitt behandelt nur versandbezogene Berichte.
 
@@ -104,7 +104,7 @@ Folgende Indikatoren werden angezeigt:
    >
    >Dieser Fehler betrifft nur Sendungen über Mobile-Kanäle. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/sms-channel.md).
 
-   You can open up each line of the value table by clicking the [+] symbol. For each error type, you can show the breakdown of error messages by domain.
+   You can open up each line of the value table by clicking the `[+]` symbol. For each error type, you can show the breakdown of error messages by domain.
 
    ![](assets/s_ncs_user_errors_report_detail.png)
 
