@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
 
 # Erweitern eines Schemas{#extending-a-schema}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Einige integrierte Schemata dürfen nicht erweitert werden: hauptsächlich für die folgenden Einstellungen:\
 >**dataSource=&quot;file&quot;** und **mappingType=&quot;xmlFile&quot;**.\
@@ -38,7 +38,7 @@ Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
 
    Ein Erweiterungsschema hat kein eigenes Schema: Das aus dem Quellschema generierte Schema wird mit den Feldern des Erweiterungsschemas ausgefüllt.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Es ist nicht zulässig, die integrierten Schemata der Anwendung zu ändern, sondern den Schemaerweiterungsmechanismus. Andernfalls werden geänderte Schemata zum Zeitpunkt künftiger Aktualisierungen der Anwendung nicht aktualisiert. Dies kann zu Funktionsstörungen bei der Verwendung von Adobe Campaign führen.
 
@@ -66,7 +66,7 @@ Es gibt zwei Methoden zum Erweitern eines vorhandenen Schemas:
 
    Das Attribut **gehörtTo** auf den Feldfüllungen im Schema, in dem es deklariert wird.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Damit die Änderungen berücksichtigt werden, müssen Sie Schemata neu generieren. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.\
 >Wenn sich die Änderungen auf die Struktur der Datenbank auswirken, müssen Sie eine Aktualisierung ausführen. Weiterführende Informationen finden Sie im Abschnitt [Datenbankstruktur aktualisieren](../../configuration/using/updating-the-database-structure.md).
