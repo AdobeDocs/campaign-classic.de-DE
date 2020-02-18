@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 20174427735b90129cd4cbd9ee1ba5fd705fa302
+source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
 
 ---
 
@@ -69,7 +69,7 @@ Auf der **[!UICONTROL Target of the proofs]** Registerkarte können Sie das Twit
 >
 >Wenn Sie für alle Auslieferungen dasselbe Twitter-Testkonto verwenden, können Sie das Proof-Ziel in der **[!UICONTROL Tweet]** Bereitstellungsvorlage speichern, die über den **[!UICONTROL Resources > Templates > Delivery templates]** Knoten aufgerufen wird. Das Proof-Ziel wird dann standardmäßig für jede neue Auslieferung eingegeben.
 
-### Definieren des Nachrichteninhalts {#defining-the-message-content}
+### Defining the message content {#defining-the-message-content}
 
 Geben Sie den Inhalt Ihres Tweets auf der **[!UICONTROL Content]** Registerkarte ein.
 
@@ -100,7 +100,7 @@ Die Verfolgungskonfiguration ist dieselbe wie bei einer E-Mail-Auslieferung. Wei
 >
 >In der **[!UICONTROL Tweet]** Bereitstellungsvorlage ist die Verfolgung standardmäßig aktiviert.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wir können nicht unterscheiden zwischen Robotern, die Tweets analysieren, und Benutzern, die tatsächlich klicken.
 
@@ -134,7 +134,7 @@ Der **[!UICONTROL Synchronize Twitter accounts]** Arbeitsablauf (siehe [Synchron
 
 ![](assets/social_twitter_visitors_001.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Damit der Workflow die Liste der Twitter-Follower wiederherstellen kann, muss das **[!UICONTROL Synchronize Twitter accounts]** Kontrollkästchen im Bearbeitungsbildschirm des mit dem Konto verknüpften Dienstes aktiviert sein. Weitere Informationen finden Sie unter: Schreibzugriff [an Adobe Campaign](../../social/using/configuring-publishing-on-twitter.md#delegating-write-access-to-adobe-campaign)delegieren
 
@@ -181,7 +181,7 @@ Wählen Sie die Follower aus, an die Sie Ihre Direktnachricht senden möchten.
 
    * Wählen Sie **[!UICONTROL Twitter subscribers]** aus, um eine Direktnachricht an alle Kontofolger zu senden.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Sie können nicht mehr als 250 Nachrichten pro Tag senden. Wenn Ihr Twitter-Konto mehr als 250 Follower hat, empfehlen wir dringend die Bereitstellung in Wellen. Dies umfasst den gleichen Prozess wie E-Mail-Auslieferungen. Siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 
