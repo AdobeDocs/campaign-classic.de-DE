@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f460c79a763c6a207656c54351a4c685f2a78a03
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -77,7 +77,7 @@ In v7 muss die **interne** Verbindung mit dem **Operator** mit einem Kennwort ge
 nlserver config -internalpassword
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Das **interne** Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in den Abschnitten [Interne ID](../../installation/using/campaign-server-configuration.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md#about-permissions) .
 
