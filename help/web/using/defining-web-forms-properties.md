@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
 
@@ -141,7 +141,7 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 * **origin** zur Spezifizierung der Herkunft des reagierenden Kontakts
 * **_uuid** aktiviert die Formularansicht vor der Veröffentlichung und die Fehlerverfolgung. Dieser Parameter dient internen Zwecken (Erstellung und Debugging): Wenn Sie über diese URL auf das Webformular zugreifen, werden die erstellten Datensätze bei der Verfolgung (in Berichten) nicht berücksichtigt. Der Ursprung wird zum **[!UICONTROL Adobe Campaign]** Wert gezwungen.
 
-   It is used with the **_preview** parameters and/or ** _debug**:
+   Dieser Parameter wird gemeinsam mit den **_preview**-Parametern und/oder **_debug**: verwendet:
 
    **_preview** zur Anzeige der zuletzt gespeicherten Version. Dieser Parameter darf nur in der Testphase verwendet werden.
 
