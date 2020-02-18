@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
 
 ---
 
@@ -26,9 +26,9 @@ Der folgende Abschnitt beschreibt die in Adobe Campaign erforderlichen Konfigura
 
 Die Verwendung von dynamischen Bildern setzt das Vorhandensein diverser Elemente in Adobe Target voraus:
 
-* [Umleitungsangebote](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_a_Redirect_Offer.html), in denen die URL der zu verwendenden Bilder anzugeben ist;
+* [Umleitungsangebote](https://docs.adobe.com/help/en/target/using/experiences/offers/offer-redirect.html), in denen die URL der zu verwendenden Bilder anzugeben ist;
 * [Zielgruppen](https://marketing.adobe.com/resources/help/en_US/target/target/t_create-audience.html), die die durch Ihre Aktivität anzusprechenden Kontakte enthalten;
-* Aktivität vom Typ [formularbasierter Experience Composer](https://marketing.adobe.com/resources/help/en_US/tnt/help/t_Creating_an_A_B_Test.html), in der eine Rawbox auszuwählen und entsprechend der Anzahl erstellter Umleitungsangebote Erlebnisse zu definieren sind. Für jedes Erlebnis ist eins der erstellten Umleitungsangebote auszuwählen.
+* Aktivität vom Typ [formularbasierter Experience Composer](https://docs.adobe.com/content/help/en/target/using/activities/abtest/create/test-create-ab.html), in der eine Rawbox auszuwählen und entsprechend der Anzahl erstellter Umleitungsangebote Erlebnisse zu definieren sind. Für jedes Erlebnis ist eins der erstellten Umleitungsangebote auszuwählen.
 
    Zur Definition der Erlebnisse können unter Einbeziehung aus Adobe Campaign stammender Informationen Segmente erstellt werden. Wenn Sie in den Angebotsauswahlregeln Daten aus Adobe Campaign verwenden möchten, müssen diese in der Adobe-Target-Rawbox angegeben werden.
 
