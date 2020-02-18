@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -28,7 +28,7 @@ Sie können Ihre Plattform jedoch so konfigurieren, dass alle Besuche von Seiten
 
 Ein Benutzer, der der Plattform bekannt ist, ist ein Empfänger, für den bereits eine Zustellung geplant war und der mindestens einmal auf eine empfangene Nachricht geklickt hat. Zur Identifizierung dieses Empfängers wird ein permanentes Cookie verwendet.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Adobe Campaign-Plattform ist nicht zur Verwendung als Website-Verfolgungstool über den Kontext des Besuchs der Site hinaus nach einem Klick in einer Nachricht hinaus vorgesehen. Wenn diese Option aktiviert ist, kann dies zu einem sehr hohen Ressourcenverbrauch auf den Computern führen, auf denen Ihre Server gehostet werden (Umleitung, Anwendung und Datenbank). Es wird empfohlen, sicherzustellen, dass Ihre Hardware-Architektur diese Belastung unterstützen kann, und zu vermeiden, dass Web-Tracking-Tags auf den am häufigsten besuchten Seiten wie der Homepage platziert werden.
 
