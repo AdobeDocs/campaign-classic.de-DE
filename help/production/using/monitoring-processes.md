@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 954018e1016fc924064bd795066f80704499f6a7
 
 ---
 
@@ -228,7 +228,7 @@ Mit Adobe Campaign können Sie Indikatoren anpassen. Gehen Sie dazu wie folgt vo
    </indicator>"
    ```
 
-   oder
+   or
 
    ```
    #!/bin/bash 
@@ -417,7 +417,7 @@ Der Operatorname und die Anmeldung müssen zuvor in der Adobe Campaign-Client-Ko
 
 #### /nl/jsp/monitor.jsp {#nl-jsp-monitor-jsp}
 
-Dies ist ein Test, um zu überprüfen, ob ein Operator über eine Webseite auf den Adobe Campaign-Server zugreifen kann. dieselbe Webseite wie die über die Menüs in der Client-Konsole. Es wird empfohlen, ihn in Ihre Überwachungswerkzeuge (Tivoli, Nagios usw.) aufzunehmen.
+Dies ist ein Test, um zu überprüfen, ob ein Operator über eine Webseite auf den Adobe Campaign-Server zugreifen kann. dieselbe Webseite wie die über die Menüs in der Client-Konsole. Sie können diese Seite über Ihre Überwachungstools (Tivoli, Nagios usw.) aufrufen.
 
 ![](assets/ncs_monitoring_web.png)
 
