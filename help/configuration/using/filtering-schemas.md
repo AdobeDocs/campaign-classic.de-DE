@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -103,7 +103,7 @@ Standardmäßig sind integrierte Schemas nur mit WRITE-Berechtigungen für Benut
 * xtk:strings
 * xtk:xslt
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >READ- und WRITE-Berechtigungen für das **Schema &quot;xtk:sessionInfo** &quot;sind nur für das interne Konto einer Adobe Campaign-Instanz verfügbar.
 
