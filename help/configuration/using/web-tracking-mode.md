@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Es gibt drei verfügbare Web-Verfolgungsmodi: **&quot;Sitzungsverfolgung&quot;**
 
 Jeder Modus hat bestimmte Eigenschaften. Der &quot;permanente&quot;Web-Tracking-Modus beinhaltet die Eigenschaften des &quot;Session&quot;-Web-Tracking-Modus, während der &quot;anonyme&quot; Modus die Eigenschaften der &quot;permanent&quot;- und &quot;session&quot;-Modus enthält.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Der &quot;anonyme&quot;Webverfolgungsmodus ist standardmäßig aktiviert, wenn das Paket &quot;Interessenten&quot;aktiviert ist. In allen anderen Fällen ist der Web-Tracking-Modus &quot;Sitzung&quot;standardmäßig aktiviert.
 >
