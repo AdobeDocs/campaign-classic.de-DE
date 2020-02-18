@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -30,7 +30,7 @@ Dieser Mechanismus kann auch verwendet werden, wenn Sie eine kürzlich verwendet
 
 Nachdem diese Funktionen hinzugefügt wurden, werden sie wie andere vordefinierte Funktionen im Ausdruckseditor angezeigt.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >SQL-Funktionsaufrufe in der Konsole werden nicht mehr automatisch an den Server gesendet. Der hier beschriebene Mechanismus wird daher **die einzige Möglichkeit, den ungeplanten SQL-Funktionsserver aufzurufen** .
 
@@ -40,7 +40,7 @@ Die hinzuzufügenden Funktionen befinden sich in einer **&quot;Paket&quot;-Datei
 
 Um das Paket über die Konsole zu installieren, wählen Sie im Menü die Optionen **Extras/Erweitert/Paket** importieren aus, dann die **[!UICONTROL Install from file]** und befolgen Sie die Anweisungen im Importassistenten.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Warnung: Auch wenn die Liste der importierten Funktionen sofort im Funktionseditor angezeigt wird, sind sie erst nach einem Neustart von Adobe Campaign einsetzbar.
 
@@ -92,7 +92,7 @@ Die hinzuzufügende(n) Funktion(en) befindet/befinden sich in der Datei **&quot;
      name="window"          ( label="Windowing functions" )
    ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Vergewissern Sie sich, dass Sie das Attribut &quot;@label&quot;abgeschlossen haben: dies ist der Name, der in der Liste der verfügbaren Funktionen angezeigt wird. Wenn Sie nichts eingeben, hat die Gruppe keinen Namen. Wenn Sie jedoch einen anderen Namen als den vorhandenen eingeben, ändert sich der Name der gesamten Gruppe.
 
