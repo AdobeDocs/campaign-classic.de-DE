@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -46,7 +46,7 @@ Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möc
 
 ## Benutzerfreundlichkeit: Homepage und Navigation {#user-friendliness--home-page-and-navigation}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn Sie weiterhin Übersichtswebanwendungen vom Typ v6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** vor der Aktualisierung in den verschiedenen Sicherheitszonen aktivieren. Siehe [Webanwendungen](#web-applications).
 
