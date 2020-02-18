@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
@@ -51,7 +51,7 @@ This information is also offered in the **[!UICONTROL Campaign orders]** view wh
 
 Zentrale Benutzer verfügen über zwei unterschiedliche Möglichkeiten, eine Bestellung zu bearbeiten:
 
-1. Sie können auf den Titel der Bestellung klicken, um sie zu öffnen. Daraufhin werden Details der Bestellung angezeigt.
+1. Der Operator kann auf den Bestellnamen klicken, um ihn zu bearbeiten: zeigt die Bestelldetails an.
 
    ![](assets/mkg_dist_catalog_op_command_edit1.png)
 
