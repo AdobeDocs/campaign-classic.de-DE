@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
 
@@ -38,7 +38,7 @@ Drei Einfügemodi stehen zur Verfügung:
 
    Klicken Sie dazu auf den **[!UICONTROL Import seed templates...]** Link und wählen Sie den Ordner aus, der die Adressvorlagen enthält. Weitere Informationen hierzu finden Sie unter Vorlagen für Startadressen [erstellen](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
 
-   If necessary, once they are added, you can doucle-click them or click the **[!UICONTROL Detail...]** button to adapt the content of each address.
+   If necessary, once they are added, you can double-click them or click the **[!UICONTROL Detail...]** button to adapt the content of each address.
 
 1. Dynamische Auswahl der Testadressen durch Erstellen einer Filterbedingung.
 
