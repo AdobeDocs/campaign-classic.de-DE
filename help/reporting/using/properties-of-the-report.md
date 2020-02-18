@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
+source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
 
@@ -86,7 +86,7 @@ Weiterführende Informationen zu Webformular-Eigenschaften finden Sie auf [diese
 
 ## Zusätzliche Parameter definieren {#defining-additional-settings}
 
-The **[!UICONTROL Settings]** tab lets you create additional settings for the report: these settings will be passed into the URL during the call up.
+The **[!UICONTROL Parameters]** tab lets you create additional settings for the report: these settings will be passed into the URL during the call up.
 
 Weiterführende Informationen zu Webformular-Eigenschaften finden Sie auf [dieser Seite](../../web/using/about-web-forms.md).
 
@@ -110,6 +110,14 @@ Gehen Sie wie folgt vor, um einen neuen Parameter zu erstellen:
    Die Daten werden direkt auf Ebene der Entität abgerufen: **ctx/recipient/@account**.
 
    Über die Option **[!UICONTROL Variable]** kann eine Variable erstellt oder ausgewählt werden, die als URL-Parameter übergeben und auf Ebene der Filter genutzt werden kann.
+
+Mit der **[!UICONTROL Response HTTP headers]** können Sie Clickjacking verhindern, wenn Sie die Seite Ihres Berichts mit iframe in eine HTML-Seite einschließen. Zur Vermeidung von Klickjacking können Sie das **[!UICONTROL X-Frame-options header]** Verhalten auswählen:
+
+* **[!UICONTROL None]**: Der Bericht wird keine haben **[!UICONTROL X-Frame-options header]**.
+* **[!UICONTROL Same as origin]**: Standardmäßig für neue Berichte und erneut veröffentlichte Berichte festgelegt. Der Hostname entspricht der URL des Berichts.
+* **[!UICONTROL Deny]**: Der Bericht kann nicht mit iframe in eine HTML-Seite eingefügt werden.
+
+![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## Variablen hinzufügen {#adding-variables}
 
