@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
 
 ---
 
@@ -108,6 +108,10 @@ Um Adobe Campaign-Dienste zu beenden, verwenden Sie einen der folgenden Befehle:
       /etc/init.d/nlserver6 stop
       ```
 
+      >[!NOTE]
+      >
+      >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl stop**
+
    * Windows:
 
       ```
@@ -127,6 +131,11 @@ Ebenso können Sie zum Neustart von Adobe Campaign einen der folgenden Befehle v
 * Wenn Sie Zugriff auf Root oder Administrator haben:
 
    * Unter Linux: /etc/init.d/nlserver6 start
+
+      >[!NOTE]
+      >
+      >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl start**
+
    * Windows: net start nlserver6
 
 * Andernfalls im Adobe Campaign-Konto: **nlserver watchdog -svc -noconsole**
