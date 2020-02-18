@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5130802f3723311bcd09e21fc405d298923dd20e
+source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ---
 
@@ -79,7 +79,7 @@ Ein Datenschema wird durch seinen Namen und seinen Namespace identifiziert.
 
 Mit einem Namespace können Sie eine Gruppe von Schemata nach Interessensgebieten gruppieren. Beispielsweise wird der **cus** -Namespace für die kundenspezifische Konfiguration (**Kunden**) verwendet.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Standardmäßig muss der Name des Namespace knapp sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
 >
