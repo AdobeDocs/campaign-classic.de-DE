@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4f8a13e3788b99ff4214e00dec1f88fdef0cb964
+source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 ---
 
@@ -49,7 +49,7 @@ Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests 
 
 1. Bei erfolgreicher Migration der Entwicklungsumgebung können Sie die Produktionsumgebung migrieren.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Aufgrund von Änderungen an der Datenstruktur ist das Importieren und Exportieren von Datenpaketen zwischen einer v5- und einer v7-Plattform nicht möglich.
 
