@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9d7cbe5f2407deb8fd2e00a60bf9e3789101e6ff
+source-git-commit: 09fa3751d94fd71a68470174dd0b4a48d94d3f44
 
 ---
 
@@ -73,7 +73,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **Authentifizierungsknot
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -88,7 +88,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des **Authentifizierungsknot
   <tr> 
    <td> defaultMode<br /> </td> 
    <td> Standardidentifizierungsmodus.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'nl'<br /> </td> 
   </tr> 
   <tr> 
@@ -126,7 +126,7 @@ Hier sind die verschiedenen Parameter des Knotens **Authentication > XTK** :
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -135,13 +135,13 @@ Hier sind die verschiedenen Parameter des Knotens **Authentication > XTK** :
   <tr> 
    <td> internalPassword<br /> </td> 
    <td> Kennwort des internen Kontos.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> internalSecurityZone<br /> </td> 
    <td> Sicherheitszone des internen Kontos: autorisierte Zone für das interne Konto.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'lan'<br /> </td> 
   </tr> 
  </tbody> 
@@ -155,7 +155,7 @@ Hier sind die verschiedenen Parameter des **dataStore** -Knotens. Hier werden di
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -164,13 +164,13 @@ Hier sind die verschiedenen Parameter des **dataStore** -Knotens. Hier werden di
   <tr> 
    <td> exportDirectory<br /> </td> 
    <td> Exportverzeichnis: Pfad des Zielverzeichnisses für die exportierten Daten.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/export/' <br /> </td> 
   </tr> 
   <tr> 
    <td> extraSandboxedDirectories<br /> </td> 
    <td> Extra sandboxed directories: other paths to be added in the sandbox (coma separated).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '/home/Customers/,/sftp/' <br /> </td> 
   </tr> 
   <tr> 
@@ -182,7 +182,7 @@ Hier sind die verschiedenen Parameter des **dataStore** -Knotens. Hier werden di
   <tr> 
    <td> hosts<br /> </td> 
    <td> DNS-Masken: Liste der DNS-Masken, die diese Instanz bereitstellt (kommagetrennt, kann * und ? Muster).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '*'<br /> </td> 
   </tr> 
   <tr> 
@@ -194,19 +194,19 @@ Hier sind die verschiedenen Parameter des **dataStore** -Knotens. Hier werden di
   <tr> 
    <td> lang<br /> </td> 
    <td> Instanzsprache (Enumeration). Mögliche Werte sind "fr_FR" (Français), "en_GB" (Englisch (UK)), "en_US" (Englisch (USA)), "de_DE" (Deutsch) und "ja_JP" (Japanisch).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'en_US'<br /> </td> 
   </tr> 
   <tr> 
    <td> uploadDirectory<br /> </td> 
    <td> Ordner hochladen: Pfad des Zielverzeichnisses für die hochgeladenen Daten.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
    <td> uploadWhitelist<br /> </td> 
    <td> Autorisierte Dateien zum Herunterladen, getrennt durch ','. Die Zeichenfolge muss ein gültiger, regulärer Java-Ausdruck sein. Siehe <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Beschränkungen für hochladbare Dateien</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
   <tr> 
@@ -218,19 +218,19 @@ Hier sind die verschiedenen Parameter des **dataStore** -Knotens. Hier werden di
   <tr> 
    <td> vaultSecretPath<br /> </td> 
    <td> Geheimer Pfad in Vault<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '/v1/secret/campaign/'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultTokenPath<br /> </td> 
    <td> Lokaler Pfad der Datei, die den Volt-Token enthält. $(HOME) kann in diesem Pfad verwendet werden (aber nicht andere ENV-Variablen).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '$(HOME)/.vaulttoken'<br /> </td> 
   </tr> 
   <tr> 
    <td> vaultUrl<br /> </td> 
    <td> Vault-URL von HashiCorp <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -242,7 +242,7 @@ Hier sind die verschiedenen Parameter des **dataStore** -Knotens. Hier werden di
   <tr> 
    <td> workingDirectory<br /> </td> 
    <td> XPath des Arbeitsverzeichnisses.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> workingDirectory :XPath des Arbeitsverzeichnisses. Standard: '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/workspace/'<br /> </td> 
   </tr> 
  </tbody> 
@@ -256,7 +256,7 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore > proxyAdjust** . 
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -264,12 +264,12 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore > proxyAdjust** . 
   <tr> 
    <td> urlBase<br /> </td> 
    <td> Basis, die beim Generieren externer URLs verwendet wird. Ex: https://server.domain.com<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
    <td> Regulärer Ausdruck zur Übereinstimmung mit URLs. Ex: http://server\.lan\.net.*<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -282,7 +282,7 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore > dataSource** .
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -291,7 +291,7 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore > dataSource** .
   <tr> 
    <td> name<br /> </td> 
    <td> Data Source name<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> default<br /> </td> 
   </tr> 
  </tbody> 
@@ -303,7 +303,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert<br /> </th> 
   </tr> 
@@ -318,7 +318,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   <tr> 
    <td> dbSchema<br /> </td> 
    <td> Arbeitsbereich<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -330,31 +330,31 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   <tr> 
    <td> login<br /> </td> 
    <td> Konto<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> password<br /> </td> 
    <td> Passwort<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> Anbieter<br /> </td> 
    <td> Typ (Aufzählung). Mögliche Werte sind "Oracle", "MSSQL" (Microsoft SQL Server), "PostgreSQL" (PostgreSQL, Greenplum), "Teradata", "DB2", "MySQL", "Netezza", "AsterData", "SAPHANA" (SAP HANA), "RedShift" (Amazon Redshift), ODBC (C (Sybase ASE, Sybase IQ)), 'Relay' (HTTP Relay to remote database).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
   <tr> 
    <td> server<br /> </td> 
    <td> Server<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> timezone<br /> </td> 
    <td> Zeitzone: Siehe <a href="../../installation/using/time-zone-management.md" target="_blank">Zeitzonenverwaltung</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -378,7 +378,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > sqlParams** die SQL-Param
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -386,7 +386,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > sqlParams** die SQL-Param
   <tr> 
    <td> funcPrefix<br /> </td> 
    <td> Funktionspräfix<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -397,7 +397,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > pool** die Parameter des 
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -435,7 +435,7 @@ Weitere Informationen finden Sie unter [Verwalten öffentlicher Ressourcen](../.
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -443,12 +443,12 @@ Weitere Informationen finden Sie unter [Verwalten öffentlicher Ressourcen](../.
   <tr> 
    <td> name<br /> </td> 
    <td> Name des virtuellen Ordners <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> path<br /> </td> 
    <td> Vollständiger Pfad des tatsächlichen Ordners<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -469,7 +469,7 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore > preprocessComman
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -477,17 +477,17 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore > preprocessComman
   <tr> 
    <td> command<br /> </td> 
    <td> Befehlszeile <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> label<br /> </td> 
    <td> Titel der Befehlszeile<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Name der Befehlszeile<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -509,7 +509,7 @@ For additional information, refer to this [section](../../installation/using/con
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -518,13 +518,13 @@ For additional information, refer to this [section](../../installation/using/con
   <tr> 
    <td> localDomain<br /> </td> 
    <td> Domänenname: Standarddomänenname. Wird vom SMTP HELO-Befehl verwendet. Standardmäßig werden die Netzwerkparameter der ersten unter Windows deklarierten Netzwerkschnittstelle verwendet. oder analysiert das file/etc/resolv.conf unter Linux (Domäne oder Sucheintrag). <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> nameServers<br /> </td> 
    <td> DNS-Server: Kommagetrennte Liste der Domänennamenserver (DNS). Siehe den Hinweis unten.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -566,7 +566,7 @@ Weitere Informationen finden Sie unter [Eingrenzen von autorisierten externen Be
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -574,12 +574,12 @@ Weitere Informationen finden Sie unter [Eingrenzen von autorisierten externen Be
   <tr> 
    <td> blacklistFile<br /> </td> 
    <td> Pfad zur Datei, die die Befehle zur schwarzen Liste enthält. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> Benutzer<br /> </td> 
    <td> Führen Sie Befehle als ein anderer Benutzer aus.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -592,7 +592,7 @@ Hier sind die verschiedenen Parameter des **Knotens htmlToPdf** . Dies ist die K
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -601,7 +601,7 @@ Hier sind die verschiedenen Parameter des **Knotens htmlToPdf** . Dies ist die K
   <tr> 
    <td> command<br /> </td> 
    <td> Befehlszeile zum Ausführen der Konvertierung (im "anderen" Modus).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -613,7 +613,7 @@ Hier sind die verschiedenen Parameter des **Knotens htmlToPdf** . Dies ist die K
   <tr> 
    <td> mode<br /> </td> 
    <td> Tool für die Konvertierung. Mögliche Werte sind: phantomjs, wkhtmltopdf, andere, deaktiviert<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> "phantomjs" <br /> </td> 
   </tr> 
   <tr> 
@@ -653,7 +653,7 @@ Weitere Informationen finden Sie in der [Berichterstellungsdokumentation](../../
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -682,7 +682,7 @@ Hier sind die verschiedenen Parameter des **mailExchange-Knotens** . Dies ist di
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -691,13 +691,13 @@ Hier sind die verschiedenen Parameter des **mailExchange-Knotens** . Dies ist di
   <tr> 
    <td> mxAddress<br /> </td> 
    <td> SMTP-Server: IP-Adresse des SMTP-Servers für die Übertragung von E-Mails.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> mxPort<br /> </td> 
    <td> TCP-Anschluss des SMTP-Servers, der für die E-Mail-Übertragung verwendet wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 25<br /> </td> 
   </tr> 
  </tbody> 
@@ -711,7 +711,7 @@ Hier sind die verschiedenen Parameter des **Modulknotens** . Dies ist die Konfig
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -720,7 +720,7 @@ Hier sind die verschiedenen Parameter des **Modulknotens** . Dies ist die Konfig
   <tr> 
    <td> defaultNameSpace<br /> </td> 
    <td> Standardnamespace, der beim Erstellen einer neuen Entität verwendet wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'cus'<br /> </td> 
   </tr> 
  </tbody> 
@@ -734,7 +734,7 @@ Hier sind die verschiedenen Parameter des **Überwachungsknotens** . Dies ist di
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -749,13 +749,13 @@ Hier sind die verschiedenen Parameter des **Überwachungsknotens** . Dies ist di
   <tr> 
    <td> unixScript<br /> </td> 
    <td> Vom Überwachungsdienst ausgeführtes Unix-Skript.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> winScript<br /> </td> 
    <td> Vom Überwachungsdienst auszuführendes Windows-Skript.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -769,7 +769,7 @@ Hier sind die verschiedenen Parameter des **ooconv** -Knotens. Dies ist die Konf
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -790,13 +790,13 @@ Hier sind die verschiedenen Parameter des **ooconv** -Knotens. Dies ist die Konf
   <tr> 
    <td> portRange<br /> </td> 
    <td> Intervall der Anschlüsse, auf denen die OpenOffice-Server lauschen.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 8101-8110<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
    <td> URL des Dokumentkonvertierungsservers.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> http://localhost:8080/nl/jsp/ooconv.jsp'<br /> </td> 
   </tr> 
  </tbody> 
@@ -812,7 +812,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../in
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -827,7 +827,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../in
   <tr> 
    <td> override<br /> </td> 
    <td> Ausnahmen: Liste der Adressen, bei denen die Parameter der Proxy-Klasse ignoriert werden.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'localhost*' <br /> </td> 
   </tr> 
   <tr> 
@@ -849,7 +849,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../in
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -857,17 +857,17 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../in
   <tr> 
    <td> address<br /> </td> 
    <td> Adresse des Proxyservers<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> login<br /> </td> 
    <td> Für die Verbindung zum Proxyserver anmelden<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> password<br /> </td> 
    <td> Kennwort für die Verbindung mit dem Proxyserver<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> port<br /> </td> 
@@ -885,7 +885,7 @@ Hier sind die verschiedenen Parameter des Knotens **threadPool** .
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -914,7 +914,7 @@ Weitere Informationen finden Sie unter Schutz [ausgehende Verbindungen](../../in
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -923,7 +923,7 @@ Weitere Informationen finden Sie unter Schutz [ausgehende Verbindungen](../../in
   <tr> 
    <td> Aktion<br /> </td> 
    <td> Standardaktion, wenn die URL nicht in der Liste der autorisierten Benutzer enthalten ist (Aufzählung). Mögliche Werte sind "ignore"(autorisieren ohne Warnmeldung, dies erfordert die Deaktivierung des Schutzes), "warn"(autorisieren und geben Sie eine Warnmeldung) und "Ablehnen"(verbieten Sie den Zugriff auf die URL).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> deny<br /> </td> 
   </tr> 
   <tr> 
@@ -945,7 +945,7 @@ Weitere Informationen finden Sie unter Schutz [ausgehende Verbindungen](../../in
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -953,12 +953,12 @@ Weitere Informationen finden Sie unter Schutz [ausgehende Verbindungen](../../in
   <tr> 
    <td> dnsSuffix<br /> </td> 
    <td> Domänenname oder Domänenname des übergeordneten Elements, der von der URL betroffen ist: die Domäne der URL ganz oder teilweise zu überprüfen, um die Überprüfung zu beschleunigen. Die URL wird nur in Bezug auf den regulären Ausdruck überprüft, wenn die Domäne dsnSuffix enthält.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> urlRegEx<br /> </td> 
    <td> Regulärer Ausdruck zum Präzisieren der Validierung von URLs, die zu dieser Domäne gehören: regulärer Ausdruck, den die URL überprüfen muss, sollte sie mit dnsSuffix übereinstimmen.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -969,7 +969,7 @@ Um beispielsweise den Zugriff auf alle URLs der Domäne &quot;business.com&quot;
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;http://.*&quot;
 
-und
+and
 
 dnsSuffix=&quot;business.com&quot; urlRegEx=&quot;https://.*&quot;
 
@@ -1000,7 +1000,7 @@ Hier sind die verschiedenen Parameter des **xtkJobs** -Knotens. Dies ist die Kon
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1025,7 +1025,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1046,7 +1046,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1076,7 +1076,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1100,7 +1100,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1118,7 +1118,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
   <tr> 
    <td> smtpBccAddress<br /> </td> 
    <td> Archivieren des Zielziels<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1136,7 +1136,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
   <tr> 
    <td> smtpRelayAddress<br /> </td> 
    <td> Kommagetrennte Liste der DNS-Namen oder IP-Adressen der zu verwendenden SMTP-Relais. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1156,7 +1156,7 @@ Hier sind die verschiedenen Parameter des **InMail** -Knotens. Dies ist die Konf
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1165,7 +1165,7 @@ Hier sind die verschiedenen Parameter des **InMail** -Knotens. Dies ist die Konf
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1178,18 +1178,18 @@ Hier sind die verschiedenen Parameter des **InMail** -Knotens. Dies ist die Konf
    <td> checkInstanceName<br /> </td> 
    <td> Instanzname überprüfen: Wenn "true", muss der Name der Adobe Campaign-Instanz in den Nachrichten-ID-Headern mit dem Namen der aktuellen Instanz übereinstimmen. <br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> defaultForwardAddress<br /> </td> 
    <td> Anschrift: Standard-E-Mail-Übertragungsadresse wird nicht von einer Regel verarbeitet. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
   <tr> 
    <td> errorForwardAddress<br /> </td> 
    <td> Fehleradresse: Standardadresse zur Übertragung ungültiger E-Mails (ungültige MIME-Kodierung). <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1207,7 +1207,7 @@ Hier sind die verschiedenen Parameter des **InMail** -Knotens. Dies ist die Konf
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1261,7 +1261,7 @@ Hier sind die verschiedenen Parameter des **InMail** -Knotens. Dies ist die Konf
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1287,7 +1287,7 @@ Konfigurieren Sie im Knoten **inMail > msgDump** die folgenden Parameter. Dies i
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1302,7 +1302,7 @@ Konfigurieren Sie im Knoten **inMail > msgDump** die folgenden Parameter. Dies i
   <tr> 
    <td> msgPath<br /> </td> 
    <td> Meldungsdump-Pfad.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '/tmp/inMail'<br /> </td> 
   </tr> 
  </tbody> 
@@ -1318,7 +1318,7 @@ Weitere Informationen finden Sie unter [Interaktion - Datenpuffer](../../install
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1327,7 +1327,7 @@ Weitere Informationen finden Sie unter [Interaktion - Datenpuffer](../../install
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1345,7 +1345,7 @@ Weitere Informationen finden Sie unter [Interaktion - Datenpuffer](../../install
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1375,7 +1375,7 @@ Weitere Informationen finden Sie unter [Interaktion - Datenpuffer](../../install
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1407,7 +1407,7 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1416,7 +1416,7 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '-tracefilter:nlmta' <br /> </td> 
   </tr> 
   <tr> 
@@ -1428,13 +1428,13 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
   <tr> 
    <td> dataLogPath<br /> </td> 
    <td> Pfad der gesendeten E-Mails speichern: wenn nicht leer, der Pfad, in dem alle Quelldateien gesendeter E-Mails gespeichert werden. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> debugPath<br /> </td> 
    <td> Dump-Verzeichnis: Wenn nicht leer, kopieren Sie MIME-Hüllkurven der gesendeten E-Mail-Nachrichten in diesen Ordner. Dient zum Schießen von Schwierigkeiten. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1452,14 +1452,14 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> logEmailErrors<br /> </td> 
    <td> Erstellen Sie Fehlerstatistiken und speichern Sie sie in der Datenbank.<br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> logLevel<br /> </td> 
@@ -1506,13 +1506,13 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Benachrichtigungsrelais: HostName:Anschluss, der zum Weiterleiten von Benachrichtigungen verwendet wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -1525,7 +1525,7 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
    <td> retryLostMessages<br /> </td> 
    <td> Verlorene Nachrichten wiederholen: Teile der Lieferungen werden erneut versucht, wenn der Kindprozess tot ist.<br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1539,21 +1539,27 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
      &lt;Anschluss&gt; ]. Siehe <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinaten des Statistikservers</a>. 
       <br /> 
      </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> Wenn nicht definiert, ist der Standardanschluss 7777.<br /> </td> 
   </tr> 
   <tr> 
    <td> statServerTLSSsupport<br /> </td> 
    <td> TLS nach Domäne aktivieren: aktiviert die durch MX konfigurierbaren TLS (erfordert einen aktuellen Statistikserver).<br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr <br /> </td> 
+   <td> true <br /> </td> 
   </tr> 
   <tr> 
    <td> statServerVersion<br /> </td> 
    <td> Verwendete Protokollversion: Kommunikationsprotokoll-Version (1 für einen Server der Version 5.11 und 6.0.2, 2 für einen Server der Version 6.1).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> Wenn nicht definiert, wird die neueste Version verwendet. <br /> </td> 
   </tr> 
+  <tr> 
+   <td> useMomentum<br /> </td> 
+   <td> Bei der Einstellung "true"verwendet Ihre Instanz die <a href="https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html" target="_blank">erweiterte MTA</a>.<br /> </td> 
+   <td> Boolesch<br /> </td> 
+   <td> <br /> </td>b 
+  </tr>
   <tr> 
    <td> verifyMode<br /> </td> 
    <td> Überprüfungsmodus: aktiviert den Überprüfungsmodus (keine physische Übertragung von Nachrichten); für Simulation und Tests verwendet werden).<br /> </td> 
@@ -1563,15 +1569,15 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
   <tr> 
    <td> workingPath<br /> </td> 
    <td> Arbeitsverzeichnis: Speicherort temporärer Dateien, die vom MTA zur Kommunikation mit seinen untergeordneten Prozessen verwendet werden.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/mta/' <br /> </td> 
   </tr> 
   <tr> 
    <td> xMailer<br /> </td> 
    <td> X-Mailer-Feld: Wert des Felds 'X-Mailer' in der SMTP-Mail-Kopfzeile.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'nlserver, Build $(PRODUCT_VERSION)'<br /> </td> 
-  </tr> 
+  </tr>  
  </tbody> 
 </table>
 
@@ -1583,7 +1589,7 @@ Konfigurieren Sie im **Cache** -Knoten die folgenden Parameter. Dies ist die lok
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1620,7 +1626,7 @@ Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/co
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1629,7 +1635,7 @@ Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/co
   <tr> 
    <td> address<br /> </td> 
    <td> Kommagetrennte Liste der DNS-Namen oder IP-Adressen der zu verwendenden SMTP-Relais. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1651,7 +1657,7 @@ For additional information, refer to this [section](../../installation/using/con
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1706,7 +1712,7 @@ Weitere Informationen finden Sie unter Optimierung des [E-Mail-Versands](../../i
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1715,7 +1721,7 @@ Weitere Informationen finden Sie unter Optimierung des [E-Mail-Versands](../../i
   <tr> 
    <td> extraArgs<br /> </td> 
    <td> Optionale Befehlszeilenargumente <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1781,7 +1787,7 @@ Konfigurieren Sie im Knoten **mta > child > smtp** die folgenden Parameter. Dies
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1822,7 +1828,7 @@ Weitere Informationen finden Sie in der [Liste der IP-Adressen, die für die Ver
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -1830,12 +1836,12 @@ Weitere Informationen finden Sie in der [Liste der IP-Adressen, die für die Ver
   <tr> 
    <td> localDomain<br /> </td> 
    <td> Domänenname: lokaler Domänenname, der mit der IP-Adresse verknüpft ist. Wird verwendet, wenn ein SMTP-HELO-Befehl ausgegeben wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Logischer Name: Namen, die mit der Affinität der Benutzer verknüpft sind. Namen werden durch Semikolons getrennt.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1848,7 +1854,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden](../../install
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -1856,7 +1862,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden](../../install
   <tr> 
    <td> address<br /> </td> 
    <td> Zugehörige physische Adresse. z. B.: '192.168.0.1'<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
@@ -1871,17 +1877,17 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden](../../install
   <tr> 
    <td> includeDomains<br /> </td> 
    <td> Kommagetrennte Liste der einzuschließenden Domänenmasken.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> excludeDomains<br /> </td> 
    <td> Kommagetrennte Liste der auszuschließenden Domänenmasken.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
    <td> heloHost<br /> </td> 
    <td> Computername, der mit der IP-Adresse verknüpft ist. Wird verwendet, wenn ein SMTP-HELO-Befehl ausgegeben wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1894,7 +1900,7 @@ Hier sind die verschiedenen Parameter des **nmac** Knotens. Dies ist die Konfigu
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1917,7 +1923,7 @@ Hier sind die verschiedenen Parameter des Knotens **nmac > relais** . Dadurch wi
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1926,7 +1932,7 @@ Hier sind die verschiedenen Parameter des Knotens **nmac > relais** . Dadurch wi
   <tr> 
    <td> address<br /> </td> 
    <td> DNS-Adresse oder Name des zu verwendenden Relais. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -1938,7 +1944,7 @@ Hier sind die verschiedenen Parameter des Knotens **nmac > relais** . Dadurch wi
   <tr> 
    <td> trustCertsChain<br /> </td> 
    <td> Zertifikatskette (PEM-Datei). Nützlich bei der Verwendung eines Trackservers.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -1952,7 +1958,7 @@ Hier sind die verschiedenen Parameter des **pipelinierten** Knotens. Dies ist di
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -1961,25 +1967,25 @@ Hier sind die verschiedenen Parameter des **pipelinierten** Knotens. Dies ist di
   <tr> 
    <td> appName<br /> </td> 
    <td> Name der Anwendung, die in der Developer-Verbindung beim Speichern des öffentlichen Schlüssels generiert wurde. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> authGatewayEndpoint<br /> </td> 
    <td> URL zum Abrufen eines Gateway-Tokens.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> https://api.omniture.com' <br /> </td> 
   </tr> 
   <tr> 
    <td> authPrivateKey<br /> </td> 
    <td> Privater Schlüssel zum Abrufen von Token (verschlüsselt in AES mit der XtkKey-Option).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -1997,7 +2003,7 @@ Hier sind die verschiedenen Parameter des **pipelinierten** Knotens. Dies ist di
   <tr> 
    <td> discoverPipelineEndpoint<br /> </td> 
    <td> URL, um die URL der Pipeline-Dienste zu ermitteln.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> https://producer-pipeline-pnw.adobe.net'<br /> </td> 
   </tr> 
   <tr> 
@@ -2009,13 +2015,13 @@ Hier sind die verschiedenen Parameter des **pipelinierten** Knotens. Dies ist di
   <tr> 
    <td> forcedPipelineEndpoint<br /> </td> 
    <td> Listening-URL: erzwingen Sie die Listening-URL der Pipeline-Dienste. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2051,7 +2057,7 @@ Hier sind die verschiedenen Parameter des **pipelinierten** Knotens. Dies ist di
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2095,7 +2101,7 @@ Hier sind die verschiedenen Parameter des **Reparaturknotens** . Dies ist die Ko
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2120,7 +2126,7 @@ Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../i
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2159,13 +2165,13 @@ Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../i
   <tr> 
    <td> label<br /> </td> 
    <td> Titel<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Interner Name<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
@@ -2218,7 +2224,7 @@ Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../i
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2227,25 +2233,25 @@ Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../i
   <tr> 
    <td> label<br /> </td> 
    <td> Titel<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> NewLabel()<br /> </td> 
   </tr> 
   <tr> 
    <td> Maske<br /> </td> 
    <td> Maske oder Adresse<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> name<br /> </td> 
    <td> Interner Name<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> NewName() <br /> </td> 
   </tr> 
   <tr> 
    <td> proxy<br /> </td> 
    <td> Maske oder Adresse des (umgekehrten) Proxys, der von diesem Unternetzwerk verwendet wird, um auf die Instanz zuzugreifen. In diesem Fall wird der Header "X-Forwarded-For"anstelle dieses Proxys getestet.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 127.0.0.1 <br /> </td> 
   </tr> 
  </tbody> 
@@ -2259,7 +2265,7 @@ Hier sind die verschiedenen Parameter des **sms** Knotens. Dies ist die Konfigur
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2268,7 +2274,7 @@ Hier sind die verschiedenen Parameter des **sms** Knotens. Dies ist die Konfigur
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2292,7 +2298,7 @@ Hier sind die verschiedenen Parameter des **sms** Knotens. Dies ist die Konfigur
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2322,7 +2328,7 @@ Hier sind die verschiedenen Parameter des **sms** Knotens. Dies ist die Konfigur
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2360,7 +2366,7 @@ Hier sind die verschiedenen Parameter des Knotens **sms > netsize** .
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2383,7 +2389,7 @@ Hier sind die verschiedenen Parameter des **stat** Knotens. Dies ist die Konfigu
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2392,7 +2398,7 @@ Hier sind die verschiedenen Parameter des **stat** Knotens. Dies ist die Konfigu
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2404,7 +2410,7 @@ Hier sind die verschiedenen Parameter des **stat** Knotens. Dies ist die Konfigu
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2428,7 +2434,7 @@ Hier sind die verschiedenen Parameter des **stat** Knotens. Dies ist die Konfigu
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2448,7 +2454,7 @@ Hier sind die verschiedenen Parameter des **syslogd** Knotens. Dies ist die Konf
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2457,7 +2463,7 @@ Hier sind die verschiedenen Parameter des **syslogd** Knotens. Dies ist die Konf
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2469,7 +2475,7 @@ Hier sind die verschiedenen Parameter des **syslogd** Knotens. Dies ist die Konf
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2499,7 +2505,7 @@ Hier sind die verschiedenen Parameter des **syslogd** Knotens. Dies ist die Konf
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2519,7 +2525,7 @@ Hier sind die verschiedenen Parameter des **Tracking** -Knotens. Dies ist die Ko
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2528,7 +2534,7 @@ Hier sind die verschiedenen Parameter des **Tracking** -Knotens. Dies ist die Ko
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2570,7 +2576,7 @@ Hier sind die verschiedenen Parameter des **Tracking** -Knotens. Dies ist die Ko
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2594,7 +2600,7 @@ Hier sind die verschiedenen Parameter des **Tracking** -Knotens. Dies ist die Ko
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2632,7 +2638,7 @@ Hier sind die verschiedenen Parameter des **Knoten trackinglogd** . Dies ist die
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2641,7 +2647,7 @@ Hier sind die verschiedenen Parameter des **Knoten trackinglogd** . Dies ist die
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2653,7 +2659,7 @@ Hier sind die verschiedenen Parameter des **Knoten trackinglogd** . Dies ist die
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2689,7 +2695,7 @@ Hier sind die verschiedenen Parameter des **Knoten trackinglogd** . Dies ist die
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2723,7 +2729,7 @@ For additional information, refer to this [section](../../installation/using/con
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2732,7 +2738,7 @@ For additional information, refer to this [section](../../installation/using/con
   <tr> 
    <td> JVMOptions<br /> </td> 
    <td> Optionen der als String übergebenen JVM.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2750,7 +2756,7 @@ For additional information, refer to this [section](../../installation/using/con
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2774,7 +2780,7 @@ For additional information, refer to this [section](../../installation/using/con
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2798,13 +2804,13 @@ For additional information, refer to this [section](../../installation/using/con
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Benachrichtigungsrelais: HostName:Port, der das Weiterleiten von Benachrichtigungen ermöglicht.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
@@ -2830,7 +2836,7 @@ Hier sind die verschiedenen Parameter des Knotens **web > jsp** . Dies ist die K
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2845,19 +2851,19 @@ Hier sind die verschiedenen Parameter des Knotens **web > jsp** . Dies ist die K
   <tr> 
    <td> downloadPath<br /> </td> 
    <td> Ordner herunterladen: Downloadpfad von Installationsprogrammen für die Client-Konsolen.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '$(XTK_INSTALL_DIR)/datakit/nl/eng/jsp'<br /> </td> 
   </tr> 
   <tr> 
    <td> foFileName<br /> </td> 
    <td> Pfad der .fo-Datei.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> soapRouter<br /> </td> 
    <td> URL des SOAP-Routers (http://myserver/xxx, http://jni oder mailto:xxx).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> http://jni'<br /> </td> 
   </tr> 
  </tbody> 
@@ -2910,7 +2916,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > jssp** .
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2920,7 +2926,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > jssp** .
    <td> collectsGarbageAfterRequest<br /> </td> 
    <td> Aktiviert den Garbage Collector des JavaScript-Kontexts nach jeder Abfrage.<br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> timeToLive<br /> </td> 
@@ -2943,7 +2949,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -2958,19 +2964,19 @@ For additional information, refer to this [section](../../installation/using/dep
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
    <td> Verbotene Zeichen (Domäne): Liste der verbotenen Zeichen im Abschnitt 'Authority' eines URI.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
    <td> Verbotene Zeichen (Pfad): Liste der verbotenen Zeichen im Abschnitt 'Pfad' eines URI.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
    <td> Wert der Moduloption "mod_dir": Liste der Dateien, die bei einer Abfrage in einem Ordner verwendet werden sollen.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
   <tr> 
@@ -2983,12 +2989,12 @@ For additional information, refer to this [section](../../installation/using/dep
    <td> startRelayInModule<br /> </td> 
    <td> Starten Sie das HTTP-Relaismodul innerhalb des Webservers. <br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> timeout<br /> </td> 
    <td> Warten Sie, bevor Sie die verbotene URL löschen.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '60'<br /> </td> 
   </tr> 
  </tbody> 
@@ -3002,7 +3008,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit, Relais](../
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -3011,7 +3017,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit, Relais](../
   <tr> 
    <td> IPMask<br /> </td> 
    <td> Autorisierte IPs: Kommagetrennte Liste der Quell-IP-Adressen, die den Relais für diese Maske verwenden dürfen.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3023,7 +3029,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit, Relais](../
   <tr> 
    <td> hostMask<br /> </td> 
    <td> DNS-Alias für Relais: Kommagetrennte Liste der DNS-Aliasmasken an Relais (z. B.: '*.adobe.com').<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3047,13 +3053,13 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit, Relais](../
   <tr> 
    <td> status<br /> </td> 
    <td> Synchronisierungsstatus einer öffentlichen Ressource (Aufzählung). Mögliche Werte sind 'normal' (normale Ausführung), 'blacklist' (URL-Blacklist bei Fehler 404) und 'reserve' (Datei-Upload auf Reserveserver, falls vorhanden).<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
    <td> URL der Zielseite: Siehe <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3065,7 +3071,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit, Relais](../
   <tr> 
    <td> urlPath<br /> </td> 
    <td> Maske der URLs zum Relais (z. B.: '/nl*', '*.jsp').<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3144,7 +3150,7 @@ Weitere Informationen finden Sie unter [Verwalten von HTTP-Headern](../../instal
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -3152,12 +3158,12 @@ Weitere Informationen finden Sie unter [Verwalten von HTTP-Headern](../../instal
   <tr> 
    <td> name<br /> </td> 
    <td> Header-Name<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
   <tr> 
-   <td> value<br /> </td> 
+   <td> Wert<br /> </td> 
    <td> Kopfzeilenwert <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3178,7 +3184,7 @@ For additional information, refer to this [section](../../installation/using/dep
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -3187,25 +3193,25 @@ For additional information, refer to this [section](../../installation/using/dep
   <tr> 
    <td> IMSOrgId<br /> </td> 
    <td> IMS organization identifier: unique organization identifier within the Adobe Marketing Cloud, used in particular for the VisitorID service and the IMS SSO. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> P3PCompactPolicy<br /> </td> 
    <td> Wert, der die Richtlinie beschreibt, die für permanente Cookies verwendet wird (konform mit dem P3P Compact Policy-Format). <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 'CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV'<br /> </td> 
   </tr> 
   <tr> 
    <td> cookieDomain<br /> </td> 
    <td> Durch Kommata getrennte Liste von Domains, die so konfiguriert werden sollen, dass Ihre Domain zum Setzen von Cookies angegeben wird. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> databaseId<br /> </td> 
    <td> Mit der Verfolgungsinstanz verknüpfte Datenbank-ID.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3217,7 +3223,7 @@ For additional information, refer to this [section](../../installation/using/dep
   <tr> 
    <td> expirationURL<br /> </td> 
    <td> Seite für abgelaufene Umleitungen: URL der Webseite, die standardmäßig vom Umleitungsserver verwendet wird, wenn die Umleitung für eine Auslieferungsaktion abgelaufen ist.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3230,13 +3236,13 @@ For additional information, refer to this [section](../../installation/using/dep
    <td> startReleitung<br /> </td> 
    <td> Starten Sie den Umleitungsdienst.<br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> startRedirectInModule<br /> </td> 
    <td> Starten Sie den Umleitungsdienst im Modulmodus.<br /> </td> 
    <td> Boolesch<br /> </td> 
-   <td> wahr<br /> </td> 
+   <td> true<br /> </td> 
   </tr> 
   <tr> 
    <td> trackWebVisitors<br /> </td> 
@@ -3247,7 +3253,7 @@ For additional information, refer to this [section](../../installation/using/dep
   <tr> 
    <td> trackingPassword<br /> </td> 
    <td> Das vom Umleitungsserver verwendete Kennwort.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3261,7 +3267,7 @@ Weitere Informationen finden Sie unter [Redundante Verfolgung](../../installatio
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -3270,19 +3276,19 @@ Weitere Informationen finden Sie unter [Redundante Verfolgung](../../installatio
   <tr> 
    <td> enabledIf<br /> </td> 
    <td> Berücksichtigt, wenn der Tracking-Server berücksichtigt wird, wenn der Ausdruck true zurückgibt. <br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> id<br /> </td> 
    <td> Name<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> 1<br /> </td> 
   </tr> 
   <tr> 
    <td> url<br /> </td> 
    <td> Extra-Umleitungsserver-URL<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
@@ -3298,7 +3304,7 @@ Weitere Informationen finden Sie unter SpamAssassin [konfigurieren](../../instal
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
   </tr> 
  </thead> 
@@ -3306,7 +3312,7 @@ Weitere Informationen finden Sie unter SpamAssassin [konfigurieren](../../instal
   <tr> 
    <td> command<br /> </td> 
    <td> Befehl zum Ausführen, um den Anti-Spam-Wert einer E-Mail (z. 'perl spamcheck.pl').<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3321,7 +3327,7 @@ Weitere Informationen finden Sie unter Arbeitsabläufe und Affinitäten mit [hoh
  <thead> 
   <tr> 
    <th> Parameter </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Typ </th> 
    <th> Standardwert </th> 
   </tr> 
@@ -3330,13 +3336,13 @@ Weitere Informationen finden Sie unter Arbeitsabläufe und Affinitäten mit [hoh
   <tr> 
    <td> affinity<br /> </td> 
    <td> Affinität<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> args<br /> </td> 
    <td> Startparameter<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3354,7 +3360,7 @@ Weitere Informationen finden Sie unter Arbeitsabläufe und Affinitäten mit [hoh
   <tr> 
    <td> initScript<br /> </td> 
    <td> ID von JavaScript, das beim Starten des Prozesses ausgeführt wird.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -3372,13 +3378,13 @@ Weitere Informationen finden Sie unter Arbeitsabläufe und Affinitäten mit [hoh
   <tr> 
    <td> notifRelay<br /> </td> 
    <td> Benachrichtigungsrelais: HostName:Port, der das Weiterleiten von Benachrichtigungen ermöglicht.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
    <td> Die Uhrzeit, zu der der Prozess automatisch neu gestartet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozessneustart</a>.<br /> </td> 
-   <td> String <br /> </td> 
+   <td> Zeichenfolge<br /> </td> 
    <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
