@@ -24,7 +24,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4.5 - Build 8937{#release-18-4-5-build-8937}
 
-21. November 2018
+\21. November 2018
 
 **Neuheiten**
 
@@ -68,7 +68,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4.3 - Build 8935{#release-18-4-3-build-8935}
 
-22. Juni 2018
+\22. Juni 2018
 
 **Neuheiten**
 
@@ -82,7 +82,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4.2 - Build 8932{#release-18-4-2-build-8932}
 
-22. Mai 2018
+\22. Mai 2018
 
 **Neuheiten**
 
