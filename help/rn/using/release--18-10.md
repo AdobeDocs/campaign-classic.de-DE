@@ -24,7 +24,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
-12. Juli 2019
+\12. Juli 2019
 
 **Neuheiten**
 
@@ -36,7 +36,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
-23. April 2019
+\23. April 2019
 
 **Neuheiten**
 
@@ -46,7 +46,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
-15. April 2019
+\15. April 2019
 
 **Neuheiten**
 
@@ -59,7 +59,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
-29. Januar 2019
+\29. Januar 2019
 
 >[!CAUTION]
 >
@@ -83,7 +83,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
-6. Dezember 2018
+\6. Dezember 2018
 
 >[!CAUTION]
 >
@@ -105,7 +105,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10 - Build 8977{#release-18-10-build-8977}
 
-5 Nov. 2018
+\5 Nov. 2018
 
 >[!CAUTION]
 >
