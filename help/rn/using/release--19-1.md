@@ -28,7 +28,7 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 >
 >Dieser Build dient nur für lokale Installationen. Bei Hybridbereitstellungen wird der 9032-Build von gehosteten Instanzen weiterhin ausgeführt. Aktualisieren Sie Ihre Marketing-Instanz nicht auf den Build 9035, da er nicht mit 9032 kompatibel ist.
 
-3. Oktober 2019
+\3. Oktober 2019
 
 **Neuheiten**
 
@@ -40,7 +40,7 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## Version 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-13. August 2019
+\13. August 2019
 
 >[!CAUTION]
 >
@@ -103,7 +103,7 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## Version 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
-21. Juni 2019
+\21. Juni 2019
 
 >[!CAUTION]
 >
@@ -123,7 +123,7 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## Version 19.1 - Build 9026{#release-19-1-build-9026}
 
-30. Mai 2019
+\30. Mai 2019
 
 >[!CAUTION]
 >
