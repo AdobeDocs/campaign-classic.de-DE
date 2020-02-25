@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -63,7 +63,7 @@ Diese Konfiguration kann eine große Anzahl von Empfängern (500.000 bis 1.000.0
 
 ### Anwendungsserver installieren {#installing-the-application-server}
 
-Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver bis zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe [Installieren und Konfigurieren (Einzelcomputer)](#installing-and-configuring--single-machine-).
+Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver bis zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe [Installieren und Konfigurieren (Einzelcomputer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Da der Computer kein Tracking-Server ist, sollten Sie die Integration mit dem Webserver nicht berücksichtigen.
 
@@ -97,7 +97,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
       Weitere Informationen finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      oder
+      or
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
@@ -155,7 +155,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
-   oder
+   or
 
    ```
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
