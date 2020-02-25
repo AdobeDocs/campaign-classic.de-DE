@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb1f5acabbd976a92219424c14813b7783b56f38
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -61,7 +61,7 @@ ISPs bieten normalerweise die Möglichkeit, eine erhaltene Nachricht als Spam zu
 
 ## Send to honeypot addresses {#honeypot-addresses}
 
-ISPs und diverse andere Unternehmen (siehe http://www.projecthoneypot.org/) setzen Mailboxen ein, die keiner echten Person gehören, sondern ausschließlich der Täuschung von Spammern dienen. Diese sogenannten &quot;honeypot&quot;-Adressen werden im Web veröffentlicht, um von Spambots gefunden zu werden, sodass zweifelhafte Absender erkannt werden können. Durch ein doppeltes Anmeldeverfahren wird verhindert, dass solche Adressen einer Liste hinzugefügt werden. Wenn Sie eine Liste Dritter verwenden, sollten Sie sich über die vom Ersteller verwendeten Methoden erkundigen.
+ISPs und andere Organisationen (siehe https://www.projecthoneypot.org/) verwenden Postfächer, die nicht mit physischen Personen übereinstimmen, sondern ausschließlich eingerichtet werden, um Spammer anzuziehen. Diese so genannten &quot;honeypot&quot;-Adressen werden im Web veröffentlicht, um von Spambots gesammelt zu werden und so eine Erkennung illegitimer Absender zu erlauben. Durch ein Anmeldeverfahren mit doppelter Bestätigung wird verhindert, dass solche Adressen einer Liste hinzugefügt werden. Wenn Sie eine Liste eines Drittanbieters nutzen, müssen Sie wissen, welche Methoden der jeweilige Verwalter anwendet.
 
 ## Inhalt der Nachricht anpassen {#message-content}
 
