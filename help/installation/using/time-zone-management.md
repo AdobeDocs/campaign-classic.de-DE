@@ -1,7 +1,7 @@
 ---
-title: Zeitzonen
-seo-title: Zeitzonen
-description: Zeitzonen
+title: Zeitzonen-Management
+seo-title: Zeitzonen-Management
+description: Zeitzonen-Management
 seo-description: null
 page-status-flag: never-activated
 uuid: b8926761-65e2-48fd-8689-2ae6b0596e72
@@ -15,12 +15,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c2b5ce9afa45b472f161d6d62517513888e062e
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
 
-# Zeitzonen{#time-zone-management}
+# Zeitzonen-Management{#time-zone-management}
 
 ## Grundprinzip {#operating-principle}
 
@@ -103,5 +103,5 @@ Beispiel für mögliche Werte:
 * Europa/London,
 * Amerika/New_York usw.
 
-   Diese Werte werden aus der Datenbank tz (Olson) entnommen. Weitere Informationen finden Sie unter [http://en.wikipedia.org/wiki/List_of_tz_database_time_zones](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+   Diese Werte werden aus der Datenbank tz (Olson) entnommen. Weitere Informationen finden Sie unter [https://en.wikipedia.org/wiki/List_of_tz_database_time_zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
