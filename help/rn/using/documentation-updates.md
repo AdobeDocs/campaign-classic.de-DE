@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc6f0f2989977c5a199dbfd413c6a2bac4628545
+source-git-commit: 230ff1a8453cf512b7da828cdcdd49edca59331c
 
 ---
 
@@ -25,6 +25,20 @@ Erfahren Sie mehr über die neuesten Aktualisierungen der Dokumentation zu Adobe
 Diese Seite listet alle neuen Funktionen und Dokumentationsaktualisierungen für jede Version von Adobe Campaign Classic auf.
 
 You can also consult the [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md).
+
+## February 2020 {#february-2020}
+
+Ein neuer Abschnitt mit Best Practices und wichtigen Empfehlungen beim Entwerfen des Adobe Campaign-Datenmodells ist jetzt verfügbar. [Mehr dazu](../../configuration/using/data-model-best-practices.md)
+
+Der Abschnitt &quot;E-Mail-Zustellbarkeit&quot;wurde in &quot;Technische E-Mail-Konfigurationen&quot;umbenannt. [Mehr dazu](../../installation/using/email-deliverability.md)
+
+Das Dokument &quot;Häufig gestellte Fragen zur Auslieferung&quot;wurde mit weiteren Details zur Fehlermeldung &quot;Kontingente erfüllt&quot;aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+
+AMP für E-Mail wird jetzt von drei E-Mail-Anbietern (Gmail, Outlook und Mail.ru) unterstützt. Der Abschnitt, der beschreibt, wie interaktive Inhalte mit AMP definiert werden, wurde aktualisiert. [Mehr dazu](../../delivery/using/defining-interactive-content.md)
+
+Der Abschnitt zur E-Mail-Archivierung wurde geklärt. [Mehr dazu](../../installation/using/email-archiving.md#recommendations-and-limitations)
+
+
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
@@ -67,12 +81,6 @@ Bei Verwendung einer Abfrageaktivität in einem Workflow wurde eine Einschränku
 Es wurde ein neuer Abschnitt hinzugefügt, in dem die verbesserten Validierungsregeln für E-Mail-Adressen detailliert beschrieben werden, um im Falle eines weichen Fehlers eine Adresse an die Quarantäne zu senden. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 Der Parameter aus der Konfigurationsdatei, der angibt, dass eine Instanz die erweiterte MTA verwendet oder nicht, wird jetzt dokumentiert. [Mehr dazu](../../installation/using/the-server-configuration-file.md#mta)
-
-## February 2020 {#february-2020}
-
-AMP für E-Mail wird jetzt von drei E-Mail-Anbietern (Gmail, Outlook und Mail.ru) unterstützt. Der Abschnitt, der beschreibt, wie interaktive Inhalte mit AMP definiert werden, wurde aktualisiert. [Mehr dazu](../../delivery/using/defining-interactive-content.md)
-
-Der Abschnitt zur E-Mail-Archivierung wurde geklärt. [Mehr dazu](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## Januar 2020 {#january-2020}
 
