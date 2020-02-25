@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c4e4c7d7433f782f810fdc2ecdeeedacd72b6c6
+source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
 
@@ -52,6 +52,6 @@ In den folgenden Schritten des Assistenten lassen sich die Frequenz der Ausführ
 
    ![](assets/s_user_segmentation_scheduler5.png)
 
-Die Verwendung einer Scheduler-Aktivität kann dazu führen, dass mehrere Ausführungen eines Workflows gleichzeitig ausgeführt werden. Beispielsweise könnte die Workflow-Ausführung stündlich ausgelöst werden, manchmal aber länger als eine Stunde dauern. Wenn der Workflow bereits ausgeführt wird, ist es empfehlenswert, den Start einer weiteren Ausführung zu überspringen. Weitere Informationen dazu, wie Sie die gleichzeitige Ausführung eines Workflows verhindern können, finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-execution).
+Die Verwendung einer Scheduler-Aktivität kann dazu führen, dass mehrere Ausführungen eines Workflows gleichzeitig ausgeführt werden. Beispielsweise könnte die Workflow-Ausführung stündlich ausgelöst werden, manchmal aber länger als eine Stunde dauern. Wenn der Workflow bereits ausgeführt wird, ist es empfehlenswert, den Start einer weiteren Ausführung zu überspringen. Weitere Informationen dazu, wie Sie die gleichzeitige Ausführung eines Workflows verhindern können, finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
 
 Es ist des Weiteren zu beachten, dass die Transition u. U. mit mehreren Stunden Verspätung aktiviert werden kann, wenn der Workflow eine Aufgabe ausführt, die über einen längeren Zeitraum läuft (z. B. ein Import) oder wenn das wfserver-Modul für eine gewisse Dauer inaktiv war. In diesem Fall ist es empfehlenswert, die Ausführung der von der Planung aktivierten Aufgabe auf einen bestimmten Zeitraum zu beschränken.
