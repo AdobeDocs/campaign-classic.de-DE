@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c4e6a9273c920c9d125ec3fb18a0628109475a4e
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -39,12 +39,12 @@ Klicken Sie zur Anzeige eines Berichts auf seinen Namen. Standardmäßig stehen 
 * **[!UICONTROL Sharing to social networks]** : Siehe [Freigeben in sozialen Netzwerken](#sharing-to-social-networks).
 * **[!UICONTROL Statistics on sharing activities]** : finden Sie unter [Statistiken über Freigabeaktivitäten](#statistics-on-sharing-activities).
 * **[!UICONTROL Operating systems]** : bezieht sich auf [Betriebssysteme](#operating-systems).
-* **[!UICONTROL URLs and click streams]** : auf [URLs verweisen und auf Streams](#urls-and-click-streams)klicken.
-* **[!UICONTROL Tracking indicators]** : auf [Tracking-Indikatoren](#tracking-indicators).
+* **[!UICONTROL URLs and click streams]** : auf [URLs verweisen und auf Streams](../../reporting/using/delivery-reports.md#urls-and-click-streams)klicken.
+* **[!UICONTROL Tracking indicators]** : auf [Tracking-Indikatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
 * **[!UICONTROL Non-deliverables and bounces]** : bezieht sich auf [Nicht-Lieferungen und Absprünge](#non-deliverables-and-bounces).
 * **[!UICONTROL User activities]** : Siehe [Benutzeraktivitäten](#user-activities).
 * **[!UICONTROL Subscription tracking]** : Siehe [Abonnementverfolgung](#subscription-tracking).
-* **[!UICONTROL Delivery summary]** : Siehe [Lieferübersicht](#delivery-summary).
+* **[!UICONTROL Delivery summary]** : Siehe [Lieferübersicht](../../reporting/using/delivery-reports.md#delivery-summary).
 * **[!UICONTROL Delivery statistics]** : Siehe [Lieferstatistik](#delivery-statistics).
 * **[!UICONTROL Breakdown of opens]** : Siehe [Aufschlüsselung der geöffneten Fenster](#breakdown-of-opens).
 
@@ -64,7 +64,7 @@ Dieser Bericht zeigt Öffnungen, Klicks und Transaktionen in Form eines Diagramm
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Opens]** : Gesamtzahl der geöffneten Nachrichten.  E-Mails im Textformat werden nicht berücksichtigt. For more information on tracking opens, refer to [Tracking opens](#tracking-opens-).
+* **[!UICONTROL Opens]** : Gesamtzahl der geöffneten Nachrichten.  E-Mails im Textformat werden nicht berücksichtigt. For more information on tracking opens, refer to [Tracking opens](../../reporting/using/indicator-calculation.md#tracking-opens-).
 * **[!UICONTROL Clicks]** : Gesamtanzahl der Klicks auf Links in Auslieferungen. Klicks auf Abmeldelinks und Spiegelseiten werden nicht berücksichtigt.
 * **[!UICONTROL Transactions]** : Gesamtzahl der Transaktionen nach Erhalt einer Nachricht. Damit eine Transaktion berücksichtigt werden kann, muss ein Transaktions-Typ-Web-Tracking-Tag in die entsprechende Webseite eingefügt werden. Die Webtracking-Konfiguration wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md)vorgestellt.
 
@@ -302,7 +302,7 @@ Folgende Indikatoren werden angezeigt:
 
 Dieser Bericht zeigt die Öffnungsverteilung nach Betriebssystem, Geräteart und Browser für den ausgewählten Zeitraum. Für jede Kategorie stehen zwei Diagramme zur Verfügung. Das erste zeigt die Öffnungsstatistiken für Computer und Mobilgeräte an, das zweite nur für Mobilgeräte.
 
-Die Anzahl der geöffneten Nachrichten entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht gezählt. Weitere Informationen zum Öffnen der Verfolgung finden Sie im Abschnitt zum Öffnen der [Verfolgung](#tracking-opens-) .
+Die Anzahl der geöffneten Nachrichten entspricht der Gesamtzahl der geöffneten Nachrichten. E-Mails im Textformat werden nicht gezählt. Weitere Informationen zum Öffnen der Verfolgung finden Sie im Abschnitt zum Öffnen der [Verfolgung](../../reporting/using/indicator-calculation.md#tracking-opens-) .
 
 ![](assets/dlv_useragent_report.png)
 
