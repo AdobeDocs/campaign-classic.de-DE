@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 912507f25c5bc3c1ca7121b0df8182176900f4c0
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -96,7 +96,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument.
 
 Mithilfe einer Befehlstrennlinie können Sie eine Trennleiste zwischen Befehlen anzeigen. Er wird durch den **&#39;-&#39;** Wert in der Befehlsbeschriftung identifiziert.
 
-Das optionale Vorhandensein des **`<soapcall>`** -Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der JSAPI-Dokumentation von [Campaign](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
+Das optionale Vorhandensein des **`<soapcall>`** -Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der JSAPI-Dokumentation von [Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 Der Formularkontext kann bei der Initialisierung vom **`<enter>`** Tag aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zu den Eingabeformularen.
 
@@ -269,7 +269,7 @@ Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument.
 
 Mithilfe einer Befehlstrennlinie können Sie eine Trennleiste zwischen Befehlen anzeigen. Er wird durch den **&#39;-&#39;** Wert in der Befehlsbeschriftung identifiziert.
 
-Das optionale Vorhandensein des **`<soapcall>`** -Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie in der JSAPI-Dokumentation von [Campaign](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html).
+Das optionale Vorhandensein des **`<soapcall>`** -Tags mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie in der JSAPI-Dokumentation von [Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 Der Formularkontext kann bei der Initialisierung über das **`<enter>`** Tag aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zum Eingabefeld.
 
