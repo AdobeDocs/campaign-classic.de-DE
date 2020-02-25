@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -35,7 +35,7 @@ Folgende Feldtypen sind verfügbar:
 
    >[!NOTE]
    >
-   >Auf der Serverseite kann das Skript die in der [Campaign JSAPI-Dokumentation](http://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) definierten Funktionen verwenden.
+   >Auf der Serverseite kann das Skript die in der [Campaign JSAPI-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) definierten Funktionen verwenden.
 
 ## HTML-Inhalt einfügen {#inserting-html-content}
 
