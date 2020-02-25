@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe campaign classic
 translation-type: tm+mt
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 
 ---
 
@@ -525,7 +525,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
       + [Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
    + Anwendungsbeispiel {#use-case}
       + [Zweck](message-center/using/purpose.md)
-      + [Wichtige Hinweise ](message-center/using/important-notes.md)
+      + [Wichtige Hinweise  ](message-center/using/important-notes.md)
       + [Umsetzung](message-center/using/implementation.md)
 + Integration mit sozialen Medien {#integrating-with-social-media}
    + [Informationen zum Social Marketing](social/using/about-social-marketing.md)
@@ -584,7 +584,7 @@ source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
    + Ergänzende Konfigurationen {#additional-configurations}
       + [Campaign-Server konfigurieren](installation/using/configuring-campaign-server.md)
       + [Verbindung über LDAP](installation/using/connecting-through-ldap.md)
-      + [E-Mail-Zustellung](installation/using/email-deliverability.md)
+      + [Technische E-Mail-Konfigurationen](installation/using/email-deliverability.md)
       + [E-Mail-Archivierung](installation/using/email-archiving.md)
       + [Zeitzonen-Management](installation/using/time-zone-management.md)
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
