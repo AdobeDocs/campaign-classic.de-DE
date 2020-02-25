@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ed5390b4f620c3cddaf9b856f3354dc5f06f4d98
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
@@ -62,7 +62,7 @@ Erwecken Sie die Aufmerksamkeit Ihrer Kunden und verbessern Sie Ihre Antwortrate
 
 ### Analyse und Reporting {#analysis-and-reporting}
 
-Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Berichts- und Analysewerkzeuge trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketingmaßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert. Weiterführende Informationen zu diesem Thema finden Sie auf [dieser Seite](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports).
+Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Berichts- und Analysewerkzeuge trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketingmaßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert. Weiterführende Informationen zu diesem Thema finden Sie auf [dieser Seite](../../reporting/using/delivery-reports.md).
 
 ### Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
