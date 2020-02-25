@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4969c5e56f1911b3abfd770ca4f8f5ed25784a52
+source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
 ---
 
@@ -26,7 +26,7 @@ Um eine Verbindung mit der externe Datenbank zu ermöglichen, müssen Sie die Ve
 
 >[!CAUTION]
 >
->Der Adobe Campaign-Benutzer benötigt spezifische Rechte für die externe Datenbank und den Adobe Campaign-Anwendungsserver, um Daten aus einer externen Datenbank zu verarbeiten. Weitere Informationen finden Sie im Abschnitt [Zugriffsrechte](#remote-database-access-rights) für Remote-Datenbanken.
+>Der Adobe Campaign-Benutzer benötigt spezifische Rechte für die externe Datenbank und den Adobe Campaign-Anwendungsserver, um Daten aus einer externen Datenbank zu verarbeiten. Weitere Informationen finden Sie im Abschnitt [Zugriffsrechte](../../platform/using/remote-database-access-rights.md) für Remote-Datenbanken.
 >
 >Um Fehlfunktionen zu verhindern, müssen Benutzer, die auf geteilte Remote-Daten zugreifen, von getrennten Arbeitsplätzen aus arbeiten.
 
@@ -38,7 +38,7 @@ Sie können auf eine gemeinsam genutzte externe Datenbank über Adobe Campaign z
 1. Klicken Sie auf die **[!UICONTROL New]** Schaltfläche und wählen Sie den **[!UICONTROL External database]** Typ aus.
 1. Define the **[!UICONTROL Connection]** parameters of the external database.
 
-   Bei Verbindungen zu einer **ODBC**-Datenbank muss das Feld **[!UICONTROL Server]** den Namen der ODBC-Datenquelle und nicht den Servernamen enthalten. Darüber hinaus können je nach verwendeter Datenbank zusätzliche Konfigurationen erforderlich sein. Siehe Abschnitt [Spezifische Konfigurationen nach Datenbanktyp](#specific-configurations-by-database-type) .
+   Bei Verbindungen zu einer **ODBC**-Datenbank muss das Feld **[!UICONTROL Server]** den Namen der ODBC-Datenquelle und nicht den Servernamen enthalten. Darüber hinaus können je nach verwendeter Datenbank zusätzliche Konfigurationen erforderlich sein. Siehe Abschnitt [Spezifische Konfigurationen nach Datenbanktyp](../../platform/using/specific-configuration-database.md) .
 
 1. Once the parameters are entered, click the **[!UICONTROL Test the connection]** button to approve them.
 
