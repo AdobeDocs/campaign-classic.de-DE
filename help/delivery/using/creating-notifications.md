@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -72,7 +72,7 @@ Erstellen Sie zunächst einen neuen Versand:
    >
    >**[!UICONTROL Badge]** und **[!UICONTROL Alert and badge]** Typbenachrichtigungen ermöglichen es Ihnen, den Wert des Zeichens (die Zahl über dem Logo der mobilen Anwendung) zu ändern. Um das Zeichen zu aktualisieren, müssen Sie einfach 0 als Wert eingeben. Wenn das Feld leer ist, ändert sich der Kennzeichnungswert nicht.
 
-1. Mit der **[!UICONTROL Action button]** können Sie eine Beschriftung für die Aktionsschaltfläche definieren, die in den Warnhinweisen angezeigt wird (Feld **action_loc_key** der Nutzlast). Wenn Ihre iOS-Anwendung lokalisierbare Zeichenfolgen (**Localizable.strings**) verwaltet, geben Sie den entsprechenden Schlüssel in dieses Feld ein. Wenn Ihre Anwendung nicht lokalisierbaren Text verwaltet, geben Sie die Beschriftung ein, die auf der Aktionsschaltfläche angezeigt werden soll. Weitere Informationen zu lokalisierbaren Zeichenfolgen finden Sie in der [Apple-Dokumentation](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.md#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
+1. Mit der **[!UICONTROL Action button]** können Sie eine Beschriftung für die Aktionsschaltfläche definieren, die in den Warnhinweisen angezeigt wird (Feld **action_loc_key** der Nutzlast). Wenn Ihre iOS-Anwendung lokalisierbare Zeichenfolgen (**Localizable.strings**) verwaltet, geben Sie den entsprechenden Schlüssel in dieses Feld ein. Wenn Ihre Anwendung nicht lokalisierbaren Text verwaltet, geben Sie die Beschriftung ein, die auf der Aktionsschaltfläche angezeigt werden soll. Weitere Informationen zu lokalisierbaren Zeichenfolgen finden Sie in der [Apple-Dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. In the **[!UICONTROL Play a sound]** field, select the sound to be played by the mobile terminal when the notification is received.
 
    >[!NOTE]
