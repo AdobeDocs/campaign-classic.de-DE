@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Beispiel wird der Unterschied zwischen Personen und Empfängern in Ado
 
 >[!NOTE]
 >
->Diese Indikatoren werden im **[!UICONTROL Tracking indicators]** Bericht verwendet. For more on this, refer to [Tracking indicators](#tracking-indicators).
+>Diese Indikatoren werden im **[!UICONTROL Tracking indicators]** Bericht verwendet. For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Einem Versand werden drei Links hinzugefügt. Er wird an vier Empfänger gesendet.
 
