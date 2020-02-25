@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Sie können das Tracking für jede in der Nachricht enthaltene URL aktivieren od
 
 Adobe Campaign verfügt über eine Reihe von Berichten zum Überwachen von Sendungen und zum Tracken Ihrer Nachrichten.
 
-[Hier erfahren Sie mehr zu integrierten Berichten](../../reporting/using/reports-on-deliveries.md#delivery-reports).
+[Hier erfahren Sie mehr zu integrierten Berichten](../../reporting/using/delivery-reports.md).
 
 ### Wie qualifiziert und handhabt Adobe Campaign in Quarantäne befindliche Adressen? {#how-does-adobe-campaign-qualify-and-manage-quarantine-addresses-}
 
