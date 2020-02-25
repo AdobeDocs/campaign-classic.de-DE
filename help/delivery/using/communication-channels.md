@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
 
 
 # Kommunikationskanäle{#communication-channels}
 
-Mit Adobe Campaign können Sie kanalübergreifende Kampagnen erstellen, die E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Briefpost beinhalten, und ihre Wirkung mithilfe diverser [Berichte](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports) erfassen. Diese Nachrichten werden erstellt und in Sendungen verteilt und können für jeden Empfänger personalisiert werden.
+Mit Adobe Campaign können Sie kanalübergreifende Kampagnen erstellen, die E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Briefpost beinhalten, und ihre Wirkung mithilfe diverser [Berichte](../../reporting/using/delivery-reports.md) erfassen. Diese Nachrichten werden erstellt und in Sendungen verteilt und können für jeden Empfänger personalisiert werden.
 
 Die Hauptfunktionen ermöglichen eine präzise Abstimmung von Marketing-Kommunikationen auf genauestens definierte Zielgruppen, eine leistungsfähige Ausführung von Sendungen sowie deren Analyse und Zusammenfassung in Berichten. Der Versand-Assistent bildet das funktionale Herzstück. Er wird durch weitere Adobe-Campaign-Funktionen ergänzt.
 
