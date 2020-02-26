@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -56,4 +56,4 @@ In unseren Anleitungsvideos werden die Hauptfunktionen von Adobe Campaign erklä
 * [Verwalten von Testadressen und ‑sendungen in einer E-Mail](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html): Hier erfahren Sie, wie Sie in Adobe Campaign Testadressen und ‑sendungen zu einer vorhandenen E-Mail hinzufügen.
 * [Integration von Adobe Campaign mit Microsoft Dynamics 365](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html): Hier erfahren Sie, wie Sie Adobe Campaign mit Microsoft Dynamics über CRM-Connectoren verbinden und synchronisieren.
 
-Neben diesen Videos finden Sie auf unserer Webseite auch [Schulungskurse](https://training.adobe.com/training/courses.html) und [Präsentationsvideos](https://www.adobe.com/training/video.html).
+Neben diesen Videos finden Sie auf unserer Webseite auch [Schulungskurse](https://learning.adobe.com/catalog.html) und [Präsentationsvideos](https://www.adobe.com/training/video.html).
