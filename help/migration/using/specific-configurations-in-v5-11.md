@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -71,7 +71,7 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie auf der [Seite http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html](http://dev.mysql.com/doc/refman/5.5/en/time-zone-support.html) .
+>Weitere Informationen finden Sie auf der [Seite https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) .
 
 Wenn Änderungen an der Datenbankstruktur vorgenommen wurden, z. B. während der Konfiguration (Erstellen spezifischer Indizes, Erstellen von SQL-Ansichten usw.), sollten bei der Migration bestimmte Vorsichtsmaßnahmen getroffen werden. Tatsächlich können bestimmte Änderungen aufgrund von Inkompatibilitäten mit dem Migrationsverfahren vorgenommen werden. Das Erstellen von SQL-Ansichten mit **Zeitstempelfeldern** ist beispielsweise nicht mit der **Option usetimestamptz** kompatibel. Wir empfehlen Ihnen daher, den folgenden Empfehlungen zu folgen:
 
