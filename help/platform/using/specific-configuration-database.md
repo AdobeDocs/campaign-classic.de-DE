@@ -169,6 +169,7 @@ Dazu müssen Sie die jeweilige Client-Ebene in der externen Datenbank auf dem Ad
    /etc/init.d/nlserver6 stop
    /etc/init.d/nlserver6 start
    ```
+   
 1. Konfigurieren Sie in Campaign Classic Ihr externes Snowflake-Konto in Campaign Classic. From the **[!UICONTROL Explorer]**, unfold the **[!UICONTROL Administration]** menu.
 
 1. Blenden Sie das **[!UICONTROL Platform]** Menü aus und klicken Sie auf **[!UICONTROL External accounts]**.
