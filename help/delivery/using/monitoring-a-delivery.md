@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
+source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 ---
 
@@ -92,11 +92,11 @@ Im Versand-Dashboard können Sie anhand der verarbeiteten Nachrichten und der Ve
 Manche Indikatoren oder Status können falsch oder nicht aktuell sein. Gehen Sie zur Behebung dieses Problems wie folgt vor:
 
 * Wenn Ihr Lieferstatus nicht korrekt ist, überprüfen Sie, ob alle erforderlichen Genehmigungen für diese Bereitstellung durchgeführt wurden oder ob die **[!UICONTROL operationMgt]** und die **[!UICONTROL deliveryMgt]** Workflows fehlerfrei ausgeführt werden. Dies kann auch auf die Bereitstellung mit einer Affinität zurückzuführen sein, die in der sendenden Instanz nicht konfiguriert wurde.
-* Wenn Ihre Auslieferungsindikatoren immer noch bei null liegen und Sie eine Konfiguration mit mittlerer Auslieferung vornehmen, überprüfen Sie den **[!UICONTROL Mid-sourcing (delivery counters)]** technischen Arbeitsablauf. Starten Sie es, wenn sein Status nicht **[!UICONTROL Started]** ist. Sie können dann versuchen, die Indikatoren neu zu berechnen, indem Sie mit der rechten Maustaste auf die entsprechende Bereitstellung im Adobe Campaign-Explorer klicken und dann **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. For more information on tracking indicators, refer to this [section](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
-* If your delivery counter does not match your delivery, try to recompute the indicators by right-clicking the relevant delivery in the Adobe Campaign explorer and selecting **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** to resynchronize. For more information on tracking indicators, refer to this [section](../../reporting/using/reports-on-deliveries.md#tracking-indicators).
+* Wenn Ihre Auslieferungsindikatoren immer noch bei null liegen und Sie eine Konfiguration mit mittlerer Auslieferung vornehmen, überprüfen Sie den **[!UICONTROL Mid-sourcing (delivery counters)]** technischen Arbeitsablauf. Starten Sie es, wenn sein Status nicht **[!UICONTROL Started]** ist. Sie können dann versuchen, die Indikatoren neu zu berechnen, indem Sie mit der rechten Maustaste auf die entsprechende Bereitstellung im Adobe Campaign-Explorer klicken und dann **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
+* If your delivery counter does not match your delivery, try to recompute the indicators by right-clicking the relevant delivery in the Adobe Campaign explorer and selecting **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** to resynchronize. For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
 * Wenn Ihr Bereitstellungszähler für Bereitstellungen mit mittlerer Quelle nicht aktuell ist, überprüfen Sie, ob der **[!UICONTROL Mid-Sourcing (Delivery counters)]** technische Arbeitsablauf ausgeführt wird. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../installation/using/mid-sourcing-deployment.md).
 
-Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/reports-on-deliveries.md#accessing-existing-reports).
+Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
 ## Leistungsprobleme {#performance-issues}
 
@@ -118,7 +118,7 @@ Nachdem Sie auf die **[!UICONTROL Send]** Schaltfläche geklickt haben, dauert I
 * Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
-   * Ausgegebene Nachrichten (**[!UICONTROL quotas met]** Meldung): die in den deklarativen MX-Regeln in Campaign angegebenen Quoten eingehalten wurden. For more information about this message, refer to [this page](../../delivery/using/technical-recommendations.md#quota-met). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Ausgegebene Nachrichten (**[!UICONTROL quotas met]** Meldung): die in den deklarativen MX-Regeln in Campaign angegebenen Quoten eingehalten wurden. For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
    * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential blacklisting.
 
 * Durch einen Systemfehler wird möglicherweise verhindert, dass Server miteinander interagieren. Dadurch kann sich der gesamte Versandvorgang verlangsamen. Überprüfen Sie die Server, um sicherzustellen, dass keine Speicher- oder Ressourcenfehler vorliegen, die Campaign beispielsweise daran hindern können, Personalisierungsdaten abzurufen.
