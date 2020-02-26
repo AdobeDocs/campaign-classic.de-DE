@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -42,7 +42,7 @@ Erstellen Sie zunächst ein Facebook-Konto und mehrere Seiten: Diese werden zum 
 
 ## Erstellen einer Facebook-Testseite {#creating-a-test-facebook-page}
 
-Es wird empfohlen, eine private Facebook-Seite für die Bereitstellung von Proofs für Veröffentlichungen zu erstellen (weitere Informationen hierzu finden Sie unter [Senden des Nachweises](#sending-the-proof)).
+Es wird empfohlen, eine private Facebook-Seite für die Bereitstellung von Proofs für Veröffentlichungen zu erstellen (weitere Informationen hierzu finden Sie unter [Senden des Beweises](../../social/using/publishing-on-facebook.md#sending-the-proof).
 
 1. Melden Sie sich bei dem Facebook-Konto an, mit dem Sie Ihre Seiten verwalten.
 1. Erstellen Sie eine neue Facebook-Seite.
