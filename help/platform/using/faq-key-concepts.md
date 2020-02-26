@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
+source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
@@ -106,7 +106,7 @@ Mit dem Digital Content Editor von Adobe Campaign können Sie Landingpages entwe
 
 ## Wie kann ich Sendungen nachverfolgen? {#how-can-i-track-deliveries-}
 
-Sie können in Campaign Classic gesendete Nachrichten mithilfe von speziellen [Versandberichten](../../reporting/using/reports-on-deliveries.md#delivery-reports) nachverfolgen und Ihre Sendungen beobachten.
+Sie können in Campaign Classic gesendete Nachrichten mithilfe von speziellen [Versandberichten](../../reporting/using/delivery-reports.md) nachverfolgen und Ihre Sendungen beobachten.
 
 Erfahren Sie mehr über das Tracking-Management in Campaign auf [dieser Seite](https://helpx.adobe.com/campaign/kb/acc-tracking.html).
 
