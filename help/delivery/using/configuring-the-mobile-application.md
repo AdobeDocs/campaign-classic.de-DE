@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: a358da7c499b5ee780563b4aef0eb2f4463186cf
 
 ---
 
@@ -125,7 +125,7 @@ Im folgenden Beispiel fügen wir **mediaURl** und **mediaExt** hinzu, um Rich-Pu
 
 1. Klicken Sie auf **[!UICONTROL Next]** , um die Konfiguration der Entwicklungsanwendung zu starten.
 
-1. Stellen Sie sicher, dass dasselbe in Adobe Campaign und im Anwendungscode über das SDK definiert **[!UICONTROL Integration key]** ist. Weitere Informationen finden Sie unter: [Integrieren des Kampagnen-SDK in die Mobilanwendung](#integrating-campaign-sdk-into-the-mobile-application). Mit diesem für jede Anwendung spezifischen Integrationsschlüssel können Sie die mobile Anwendung mit der Adobe Campaign-Plattform verknüpfen.
+1. Stellen Sie sicher, dass dasselbe in Adobe Campaign und im Anwendungscode über das SDK definiert **[!UICONTROL Integration key]** ist. Weitere Informationen finden Sie unter: [Integrieren des Kampagnen-SDK in die Mobilanwendung](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Mit diesem für jede Anwendung spezifischen Integrationsschlüssel können Sie die mobile Anwendung mit der Adobe Campaign-Plattform verknüpfen.
 
    >[!NOTE]
    >
@@ -256,7 +256,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
 1. Geben Sie eine ein **[!UICONTROL Label]**.
 
-1. Stellen Sie sicher, dass dasselbe in Adobe Campaign und im Anwendungscode über das SDK definiert **[!UICONTROL Integration key]** ist. Weitere Informationen finden Sie unter: [Integrieren des Kampagnen-SDK in die Mobilanwendung](#integrating-campaign-sdk-into-the-mobile-application).
+1. Stellen Sie sicher, dass dasselbe in Adobe Campaign und im Anwendungscode über das SDK definiert **[!UICONTROL Integration key]** ist. Weitere Informationen finden Sie unter: [Integrieren des Kampagnen-SDK in die Mobilanwendung](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
    >[!NOTE]
    >
@@ -280,7 +280,7 @@ Standardmäßig speichert Adobe Campaign einen Schlüssel im Feld **[!UICONTROL 
 1. Definieren Sie die Zuordnung auf der **[!UICONTROL Subscription parameters]** Registerkarte.
    >[!CAUTION]
    >
-   >Stellen Sie sicher, dass die Konfigurationsnamen auf der **[!UICONTROL Subscription parameters]** Registerkarte mit denen im Code der mobilen Anwendung identisch sind. Weitere Informationen finden Sie im Abschnitt [Integrating Campaign SDK im Abschnitt Mobilanwendung](#integrating-campaign-sdk-into-the-mobile-application) .
+   >Stellen Sie sicher, dass die Konfigurationsnamen auf der **[!UICONTROL Subscription parameters]** Registerkarte mit denen im Code der mobilen Anwendung identisch sind. Weitere Informationen finden Sie im Abschnitt [Integrating Campaign SDK im Abschnitt Mobilanwendung](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) .
 
 ### Schritt 4: Erstellen einer Rich-Benachrichtigung für Android {#creating-android-delivery}
 
