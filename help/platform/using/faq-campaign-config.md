@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7aa381654805798fcdd24f588160bed15e037a2b
+source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
 
@@ -45,7 +45,7 @@ Erfahrene Benutzer können die Tracking-Funktionen in der Campaign-Instanz konfi
 
 ## Wie kann ich den E-Mail-Versand konfigurieren? {#how-to-configure-email-deliverability-}
 
-Lesen Sie das [Erste-Schritte-Handbuch zur Zustellbarkeit](http://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) und den Abschnitt zur Konfiguration des E-Mail-Versands, um zu erfahren, wie Sie Ihre Instanz konfigurieren können, um die Versandfunktion von Campaign optimal zu nutzen.
+Lesen Sie das [Erste-Schritte-Handbuch zur Zustellbarkeit](https://docs.adobe.com/content/help/en/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und den Abschnitt zur Konfiguration des E-Mail-Versands, um zu erfahren, wie Sie Ihre Instanz konfigurieren können, um die Versandfunktion von Campaign optimal zu nutzen.
 
 [Hier erfahren Sie mehr darüber](../../installation/using/email-deliverability.md).
 
