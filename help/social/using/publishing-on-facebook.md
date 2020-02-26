@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
 
@@ -159,7 +159,7 @@ Geben Sie die verschiedenen Felder ein:
 
 1. Geben Sie in das **[!UICONTROL Status]** Feld den Text ein, der unter dem Namen der Seite angezeigt wird.
 1. Geben Sie im **[!UICONTROL Name]** Feld den Titel der Veröffentlichung ein.
-1. Geben Sie in das **[!UICONTROL Video code]** Feld den Code des YouTube-Videos ein. Für den Link &quot;http://www.youtube.com/watch?v=abc123456&#39;&quot;lautet der Videocode beispielsweise &quot;abc123456&quot;.
+1. Geben Sie in das **[!UICONTROL Video code]** Feld den Code des YouTube-Videos ein. Für den Link &quot;https://www.youtube.com/watch?v=abc123456&#39;&quot;lautet der Videocode beispielsweise &quot;abc123456&quot;.
 1. Geben Sie in das **[!UICONTROL Caption]** Feld den Text ein, der am Ende der Veröffentlichung angezeigt werden soll.
 1. Gehen Sie zum **[!UICONTROL Description]** Feld und geben Sie den Text ein, der unter dem Titel angezeigt werden soll.
 
