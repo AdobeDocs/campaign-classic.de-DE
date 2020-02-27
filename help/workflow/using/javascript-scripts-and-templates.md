@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 80b500653f5cfe216b32db045974b18d85838d9a
+source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
 
@@ -114,7 +114,9 @@ In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Populati
 
 1. Definieren Sie im Abschnitt Initialisierungsskript auf der Registerkarte Erweitert der Teilungsaktivität eine JS-Bedingung. Die JS-Bedingung wählt den zufälligen Stichprobenprozentsatz des ersten Übergangs aus der Split-Aktivität aus und aktualisiert ihn auf einen Wert, der von der zuvor erstellten Instanzvariablen festgelegt wurde.
 
-   ```activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;```
+   ```
+   activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
+   ```
 
    ![](assets/js_ex3.png)
 
@@ -128,29 +130,29 @@ In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Populati
 
 1. Ausgehend vom Workflow des vorangehenden Beispiels wird das Script der **JavaScript-Code**-Aktivität durch folgendes Script ersetzt:
 
-    ```
-    instance.vars.foo = "bar1"
-    vars.foo = "bar2"
-    task.vars.foo = "bar3"
-    ```
+   ```
+   instance.vars.foo = "bar1"
+   vars.foo = "bar2"
+   task.vars.foo = "bar3"
+   ```
 
 1. Ergänzen Sie dann das Initialisierungsscript der **Ende**-Aktivität um folgendes Script:
 
-    ```
-    logInfo("instance.vars.foo = " + instance.vars.foo)
-    logInfo("vars.foo = " + vars.foo)
-    logInfo("task.vars.foo = " + task.vars.foo)
-    ```
+   ```
+   logInfo("instance.vars.foo = " + instance.vars.foo)
+   logInfo("vars.foo = " + vars.foo)
+   logInfo("task.vars.foo = " + task.vars.foo)
+   ```
 
 1. Starten Sie den Workflow und rufen Sie das Protokoll auf:
 
-    ```
-    Workflow finished
-    task.vars.foo = undefined
-    vars.foo = bar2
-    instance.vars.foo = bar1
-    Starting workflow (operator 'admin')
-    ```
+   ```
+   Workflow finished
+   task.vars.foo = undefined
+   vars.foo = bar2
+   instance.vars.foo = bar1
+   Starting workflow (operator 'admin')
+   ```
 
 Das Beispiel zeigt, dass die Aktivität **JavaScript-Code** auf die Instanz- und Ereignisvariablen zugreift, während die Aufgabenvariablen ausserhalb der Aufgaben nicht verfügbar sind (&#39;undefined&#39;).
 
