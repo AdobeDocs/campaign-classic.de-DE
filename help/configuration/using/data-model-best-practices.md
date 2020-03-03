@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a8bfeaecc8a4832cac96f479ea1a0b11cd73c1e8
+source-git-commit: ad3aedeb18cfce809f959ccb62cb27928877c9d2
 
 ---
 
@@ -68,7 +68,7 @@ Wenn Sie entscheiden möchten, ob ein Attribut in Adobe Campaign erforderlich is
 
 Wenn Sie nicht in eine dieser Kategorien fallen, benötigen Sie dieses Attribut wahrscheinlich nicht in Adobe Campaign.
 
-## Auswahl der Datentypen {#data-types}
+### Auswahl der Datentypen {#data-types}
 
 Um eine gute Architektur und Leistung Ihres Systems sicherzustellen, befolgen Sie die folgenden Best Practices, um Daten in Adobe Campaign einzurichten.
 
@@ -78,6 +78,28 @@ Um eine gute Architektur und Leistung Ihres Systems sicherzustellen, befolgen Si
 * Der **XML** -Typ ist eine gute Möglichkeit, zu viele Felder zu vermeiden. Es nimmt aber auch Speicherplatz auf der Festplatte auf, da es eine CLOB-Spalte in der Datenbank verwendet. Es kann auch zu komplexen SQL-Abfragen führen und die Leistung beeinträchtigen.
 * Die Länge eines **Zeichenfolgenfelds** sollte immer mit der Spalte definiert werden. Standardmäßig beträgt die maximale Länge in Adobe Campaign 255, Adobe empfiehlt jedoch, das Feld zu kürzen, wenn Sie bereits wissen, dass die Größe eine kürzere Länge nicht überschreitet.
 * Es ist akzeptabel, dass ein Feld in Adobe Campaign kürzer ist als im Quellsystem, wenn Sie sicher sind, dass die Größe im Quellsystem überschätzt wurde und nicht erreicht wird. Dies könnte eine kürzere oder kleinere Ganzzahl in Adobe Campaign bedeuten.
+
+### Feldauswahl {#choice-of-fields}
+
+Ein Feld muss in einer Tabelle gespeichert werden, wenn es einen Targeting- oder Personalisierungszweck hat. Mit anderen Worten, wenn ein Feld nicht zum Senden einer personalisierten E-Mail verwendet wird oder als Kriterium in einer Abfrage verwendet wird, nimmt es Speicherplatz auf der Festplatte in Anspruch, während es nutzlos ist.
+
+Bei Hybrid- und lokalen Instanzen deckt die FDA (Federated Data Access, eine optionale Funktion, die den Zugriff auf externe Daten ermöglicht) die Notwendigkeit ab, während eines Kampagnenprozesses ein Feld &quot;on-the-fly&quot;hinzuzufügen. Sie müssen nicht alles importieren, wenn Sie FDA haben. Weitere Informationen finden Sie unter [Informationen zum Zugriff auf](../../platform/using/about-fda.md)Federated Data.
+
+### Schlüsselauswahl {#choice-of-keys}
+
+Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten **Autotyp** sollten Sie einige logische oder geschäftliche Schlüssel hinzufügen (Kontonummer, Kundennummer usw.). Sie kann später für Import/Abgleich oder Datenpakete verwendet werden. For more on this, see [Identifiers](#identifiers).
+
+Effiziente Schlüssel sind unverzichtbar für die Leistung. Numerische Datentypen sollten immer als Schlüssel für Tabellen bevorzugt werden.
+
+Für die SQLServer-Datenbank können Sie die Verwendung eines &quot;Clusterindex&quot; in Erwägung ziehen, wenn eine Leistung erforderlich ist. Da Adobe dies nicht handhabt, müssen Sie es in SQL erstellen.
+
+### Dedizierte Tablespaces {#dedicated-tablespaces}
+
+Mit dem Attribut tablespace im Schema können Sie einen speziellen Tablespace für eine Tabelle angeben.
+
+Mit dem Installationsassistenten können Sie Objekte nach Typ (Daten, temporär und Index) speichern.
+
+Dedizierte Tablespaces eignen sich besser für Partitionierung, Sicherheitsregeln und ermöglichen eine reibungslose und flexible Verwaltung, bessere Optimierung und Leistung.
 
 ## Bezeichner {#identifiers}
 
@@ -201,6 +223,8 @@ Es gibt einige Lösungen, um den Bedarf an Datensätzen in Adobe Campaign zu min
 * Exportieren Sie die Daten in ein Data Warehouse außerhalb von Adobe Campaign.
 * Generieren Sie aggregierte Werte, die weniger Platz einnehmen und gleichzeitig für Ihre Marketingpraktiken ausreichen. So benötigen Sie beispielsweise nicht den vollständigen Verlauf der Kundentransaktionen in Adobe Campaign, um die letzten Käufe zu verfolgen.
 
+Sie können das Attribut &quot;deleteStatus&quot;in einem Schema deklarieren. Es ist effizienter, den Datensatz als gelöscht zu markieren und dann den Löschvorgang in der Bereinigungsaufgabe zu verschieben.
+
 ## Leistung {#performance}
 
 Um jederzeit eine bessere Leistung zu gewährleisten, befolgen Sie die folgenden Best Practices.
@@ -222,9 +246,11 @@ Um jederzeit eine bessere Leistung zu gewährleisten, befolgen Sie die folgenden
 * Es ist gut, alle wichtigen Felder in einer Tabelle zu haben, da es für Benutzer einfacher ist, Abfragen zu erstellen. Manchmal ist es auch gut für die Leistung, einige Felder über Tabellen hinweg zu duplizieren, wenn eine Verknüpfung vermieden werden kann.
 * Bestimmte integrierte Funktionen werden nicht in der Lage sein, auf 1-zu-viele Beziehungen zu verweisen, z. B. Angebotsgewichtungsformel und Lieferungen.
 
-### Große Tabellen {#large-tables}
+## Große Tabellen {#large-tables}
 
-Im Folgenden finden Sie einige Best Practices, die beim Entwerfen Ihres Datenmodells mit großen Tabellen und komplexen Verbindungen befolgt werden sollten.
+Adobe Campaign basiert auf Datenbankmaschinen von Drittanbietern. Je nach Anbieter ist für die Leistungsoptimierung bei größeren Tabellen möglicherweise ein bestimmtes Design erforderlich.
+
+Im Folgenden finden Sie einige gängige Best Practices, die beim Entwerfen Ihres Datenmodells mit großen Tabellen und komplexen Verbindungen befolgt werden sollten.
 
 * Wenn Sie zusätzliche benutzerdefinierte Empfängertabellen verwenden, stellen Sie sicher, dass Sie für jede Zuordnungstabelle über eine dedizierte Protokolltabelle verfügen.
 * Reduzieren Sie die Anzahl der Spalten, insbesondere durch Identifizieren der nicht verwendeten Spalten.
@@ -232,4 +258,36 @@ Im Folgenden finden Sie einige Best Practices, die beim Entwerfen Ihres Datenmod
 * Verwenden Sie für Verbindungsschlüssel immer numerische Daten anstelle von Zeichenfolgen.
 * Verringern Sie so viel wie möglich die Tiefe der Protokollbindung. Wenn Sie einen tieferen Verlauf benötigen, können Sie Berechnungen zusammenstellen und/oder benutzerspezifische Protokolltabellen bearbeiten, um einen größeren Verlauf zu speichern.
 
-Detailliertere Best Practices zur Optimierung des Datenbankentwurfs für größere Volumes finden Sie unter Best Practices für das [Campaign Classic-Datenmodell](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).
+### Tabellengröße {#size-of-tables}
+
+Die Tabellengröße ist eine Kombination aus der Anzahl der Datensätze und der Anzahl der Spalten pro Datensatz. Beides kann die Leistung von Abfragen beeinträchtigen.
+
+* Eine **kleine** Tabelle ähnelt der Liefertabelle.
+* Eine **Tabelle mittlerer Größe** entspricht der Größe der Empfängertabelle. Es hat einen Datensatz pro Kunde.
+* Eine **große** Tabelle ähnelt der weit gefassten Tabelle. Es enthält viele Datensätze pro Kunde.
+Wenn Ihre Datenbank beispielsweise 10 Millionen Empfänger enthält, enthält die Tabelle &quot;Umfassendes Protokoll&quot;etwa 100 bis 200 Millionen Meldungen und die Tabelle &quot;Auslieferung&quot;enthält einige Tausend Datensätze.
+
+Unter PostgreSQL sollte eine Zeile nicht größer als 8 KB sein, um den [TOAST](https://wiki.postgresql.org/wiki/TOAST) -Mechanismus zu vermeiden. Versuchen Sie daher, die Anzahl der Spalten und die Größe jeder Zeile so weit wie möglich zu reduzieren, um eine optimale Leistung des Systems (Speicher und CPU) zu erhalten.
+
+Die Anzahl der Zeilen beeinflusst auch die Leistung. Die Adobe Campaign-Datenbank dient nicht zum Speichern von Verlaufsdaten, die nicht aktiv für Targeting- oder Personalisierungszwecke verwendet werden - dies ist eine operative Datenbank.
+
+Um Leistungsprobleme im Zusammenhang mit der hohen Zeilenanzahl zu vermeiden, sollten Sie nur die erforderlichen Datensätze in der Datenbank speichern. Alle anderen Datensätze sollten in ein Drittanbieter-Data Warehouse exportiert und aus der operativen Adobe Campaign-Datenbank entfernt werden.
+
+Im Folgenden finden Sie einige Best Practices zur Größe von Tabellen:
+
+* Entwerfen Sie große Tabellen mit weniger Feldern und mehr numerischen Daten.
+* Keine große Anzahl von Spalten verwenden (z. B.: Int64), um kleine Zahlen wie boolesche Werte zu speichern.
+* Entfernen Sie nicht verwendete Spalten aus der Tabellendefinition.
+* Behalten Sie keine historischen oder inaktiven Daten in Ihrer Adobe Campaign-Datenbank bei (Export und Bereinigung).
+
+Hier ein Beispiel:
+
+![](assets/transaction-table-example.png)
+
+In diesem Beispiel:
+* Die Tabellen *Transaktionen* und *Transaktionselement* sind groß: mehr als 10 Millionen.
+* Die *Tabellen &quot;Produkt* &quot;und &quot; *Store* &quot;sind kleiner: weniger als 10.000.
+* Die Produktbeschriftung und die Referenz wurden in die *Produkttabelle* aufgenommen.
+* Die Tabelle &quot; *Transaktionselement* &quot;enthält nur einen Link zur Tabelle &quot; *Produkt* &quot;, die numerisch ist.
+
+<!--For more detailed best practices on how to optimize the database design for larger volumes, see [Campaign Classic Data model Best practices](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html).-->
