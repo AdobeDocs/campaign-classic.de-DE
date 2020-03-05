@@ -15,14 +15,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+source-git-commit: 44d8ba19f2e79d30229239312e6a5148d247fb28
 
 ---
 
 
 # Über Kampagnentypologien{#about-campaign-typologies}
 
-Das Modul „Kampagnenoptimierung“ (Campaign Optimization) ermöglicht es, den Nachrichtenversand anhand von Regeln zu steuern, zu filtern und zu überwachen. Um Konflikte zwischen Kampagnen zu vermeiden, testet Adobe Campaign unterschiedliche Zusammenstellungen und Kombinationen von Sendungen unter Anwendung bestimmter Bedingungen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
+Die Kampagnenoptimierung ist das Adobe Campaign-Modul, mit dem Sie das Senden von Auslieferungen steuern, filtern und überwachen können. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen testen, indem es spezifische Beschränkungsregeln anwendet. Dadurch wird gewährleistet, dass die gesendeten Nachrichten den Bedürfnissen und Erwartungen der Kunden und den Kommunikationsrichtlinien des Unternehmens entsprechen.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Das Modul „Kampagnenoptimierung“ (Campaign Optimization) ermöglicht es, den
 
 Mit Adobe Campaign können vier Arten von Typologieregeln erstellt und angewendet werden:
 
-1. **Filtern** von Regeln, mit denen Sie einen Teil des Ziels basierend auf Kriterien ausschließen können. For more on this, refer to [Filtering rules](../../campaign/using/filtering-rules.md).
+1. **Filtern** von Regeln, mit denen Sie einen Teil des Ziels auf der Grundlage von Kriterien ausschließen können. For more on this, refer to [Filtering rules](../../campaign/using/filtering-rules.md).
 1. **Druckregeln** , mit denen Sie Marketingmüdigkeit kontrollieren können. For more on this, refer to [Pressure rules](../../campaign/using/pressure-rules.md).
 1. **Kapazitätsregeln** , mit denen Sie Lasten begrenzen können, um optimale Verarbeitungsbedingungen zu gewährleisten. For more on this, refer to [Controlling capacity](../../campaign/using/consistency-rules.md#controlling-capacity).
 1. **Steuerungsregeln** , mit denen Sie die Gültigkeit von Nachrichten überprüfen können, bevor sie gesendet werden. For more on this, refer to [Control rules](../../campaign/using/control-rules.md).
