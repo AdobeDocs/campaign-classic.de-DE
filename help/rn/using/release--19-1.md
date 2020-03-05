@@ -15,22 +15,43 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-## Version 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+[Build-Aktualisierung](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Systemsteuerung](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Aktualisierungen](../../rn/using/documentation-updates.md) der Dokumentation| [Frühere Versionen](../../rn/using/release--19-1.md) | [Veraltete Funktionen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+
+<table> 
+ <tbody> 
+  <tr> 
+   <td><img src="assets/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
+   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
+   <td><img src="assets/red3.png"/><strong>Veraltet</strong></td> 
+  </tr> 
+   <tr> 
+   <td>Neueste stabile Version verfügbar. Erstellen validiert in Produktion.<br> </td>
+   <td>Erstellen von Adobe validiert Warte auf Proof.<br> </td>
+   <td>Neuere Version mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
+   <td>Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.<br> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+Der **letzte stabile Build** ist 9032 (205c981c3). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+
+## ![](assets/orange_2.png) Version 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
 >Dieser Build dient nur für lokale Installationen. Bei Hybridbereitstellungen wird der 9032-Build von gehosteten Instanzen weiterhin ausgeführt. Aktualisieren Sie Ihre Marketing-Instanz nicht auf den Build 9035, da er nicht mit 9032 kompatibel ist.
 
-\3. Oktober 2019
+_3. Oktober 2019_
 
-**Neuheiten**
+**Verbesserungen**
 
 * Es wurde ein Problem bei der Verwendung des CRM Connector für Salesforce behoben. (NEO-17712)
 * Es wurde ein Indexproblem behoben, das beim Senden von Transaktionsnachrichten Leistungsprobleme verursachte.
@@ -38,15 +59,11 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Es wurde ein Fehler behoben, der dazu führte, dass bestimmte Nachrichten nicht vom Mid-Sourcing-Server verarbeitet wurden. (NEO-12395)
 * Es wurde ein Problem behoben, das die vollständige Nutzung der SQL Data Management-Aktivität verhinderte (die &quot;SQL Data Management&quot;-Berechtigung fehlte).
 
-## Version 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/orange_2.png) Version 19.1.5 - Build 9033{#release-19-1-5-build-9033}
 
-\13. August 2019
+_13. August 2019_
 
->[!CAUTION]
->
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
-
-**Neuheiten**
+**Verbesserungen**
 
 * Es wurde ein Problem mit der SQL-Anweisung &#39;SELECT COUNT&#39; behoben, die bei der Datenextraktion in der Datenverwaltungsaktivität in der Standarddatenbank und nicht in der FDA-Datenbank ausgeführt wurde.
 * Um die Funktionen der Kundeninfrastruktur zu verbessern, ist jetzt eine SFTP-Proxydeklaration in der Serverkonfigurationsdatei verfügbar.
@@ -57,43 +74,31 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-**17. Dezember 2019**: neuer Build (9032-9d34fb17e), der die folgende Fehlerbehebung enthält:
+![](assets/green_2.png) 5. **März 2020**: neuer Build (9032-...205c981c3), der die folgende Fehlerbehebung enthält:
+
+* Es wurde ein Problem mit externen Konten mit FTP über SSL behoben. (NEO-20498)
+
+![](assets/orange_2.png) 17. **Dezember 2019**: neuer Build (9032-...9d34fb17e), der die folgende Fehlerbehebung enthält:
 
 * Es wurde ein Verfolgungsfehler in den folgenden Kommunikationskanälen behoben: mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter).
 (NEO-19595)
 
-**11. Dezember 2019**: neuer Build (9032-e28b428b7), der die folgende Fehlerbehebung enthält:
-
->[!CAUTION]
->
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+![](assets/orange_2.png) 11. **Dezember 2019**: Neubau (9032-...e28b428b7), die die folgende Fehlerbehebung enthält:
 
 * Ein Leistungsproblem beim Senden von Nachrichten mit einer MSSQL-Datenbank wurde behoben. (NEO-17558)
 
-**20. November 2019**: neuer Build (9032-3468c7bb5), der die folgenden Fehlerbehebungen enthält:
-
->[!CAUTION]
->
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+![](assets/orange_2.png) 20. **November 2019**: new build (9032-...3468c7bb5), das die folgenden Fehlerbehebungen enthält:
 
 * Es wurde ein Problem bei der Anmeldung über die IMS-Authentifizierung behoben. (NEO-17312)
 * Es wurde ein Problem behoben, das bei der Anzeige kumulativer Berichte für mehrere Auslieferungen auftrat. (NEO-18165)
 * Es wurde ein Problem behoben, durch das der Webserver blockiert oder gestürzt werden konnte.
 
-**19. September 2019**: new build (9032-cee805c93), das die folgenden Fehlerbehebungen enthält:
-
->[!CAUTION]
->
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+![](assets/orange_2.png) 19. **September 2019**: Neubau (9032-...cee805c93), die die folgenden Fehlerbehebungen enthält:
 
 * Es wurde ein Problem bei der Verwendung des CRM Connector für Salesforce behoben. (NEO-17712)
 * Es wurde ein Indexproblem behoben, das beim Senden von Transaktionsnachrichten Leistungsprobleme verursachte.
 
-**13. August 2019**: initiale Version 19.1.4, die die folgenden Fehlerbehebungen enthält:
-
->[!CAUTION]
->
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+![](assets/orange_2.png) 13. **August 2019**: initiale Version 19.1.4, die die folgenden Fehlerbehebungen enthält:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
 * Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
@@ -101,19 +106,15 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Fehlerkorrektur – Der DKIM-Schlüssel wird jetzt in E-Mails eingebettet, sodass der Versand fehlerfrei funktioniert. (NEO-16804)
 * Fehlerkorrektur – Die Workflow-Planung funktioniert jetzt wieder einwandfrei, sodass Workflows entsprechend ihrer Konfiguration ausgeführt werden. (NEO-16619, NEO-16426)
 
-## Version 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/orange_2.png) Version 19.1.2 - Build 9029{#release-19-1-2-build-9029}
 
-\21. Juni 2019
-
->[!CAUTION]
->
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+_21. Juni 2019_
 
 **Verbesserungen bei der Sicherheit**
 
 * Zur Verbesserung der Sicherheit wurde die Java-Bibliothek (Netty) auf die neueste Version (4.1.34) aktualisiert. (NEO-12788)
 
-**Neuheiten**
+**Verbesserungen**
 
 * Korrektur der mit der Sdomain-Spaltenverwaltung zusammenhängenden Regression – E-Mails können jetzt bei allen Konfigurationen gesendet werden.
 * Zur Leistungssteigerung wurde das Attribut _operation=&quot;none&quot; zu rtEvent-SOAP-Aufrufen hinzugefügt, um die Anfragen &quot;UPDATE AUSWÄHLEN&quot; zu vermeiden.
@@ -121,13 +122,9 @@ source-git-commit: ba5496a008a28a29fc8e2032f31355a7c34f3ef8
 * Jetzt können in Microsoft Dynamics erstellte Platzhaltereinträge während des Import-Workflows gelöscht werden.
 * Erweiterte Berechtigungen zur Ausführung des Sicherheitszonen-Package bei der Verwendung eines internen Kontos.
 
-## Version 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/orange_2.png) Version 19.1 - Build 9026{#release-19-1-build-9026}
 
-\30. Mai 2019
-
->[!CAUTION]
->
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+_30. Mai 2019_
 
 **Neue Funktionen?**
 
