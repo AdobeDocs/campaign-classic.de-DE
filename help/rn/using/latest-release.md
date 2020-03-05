@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
+source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 ---
 
@@ -31,21 +31,21 @@ source-git-commit: d94ded3b87244a7cd51a15c1ebe409c9fdfcd843
    <td><img src="assets/red3.png"/><strong>Veraltet</strong></td> 
   </tr> 
    <tr> 
-   <td>Neueste stabile Version verfügbar. <br>Erstellen validiert in Produktion. </td>
-   <td>Erstellen von Adobe validiert <br>Warte auf Proof. </td>
-   <td>Neuere Version mit Fehlerbehebungen verfügbar. <br>Aktualisierung erforderlich. </td>
-   <td>Enthält bekannte Regressionen. <br>Aktualisierung ist obligatorisch. </td>
+   <td>Neueste stabile Version verfügbar. Erstellen validiert in Produktion.<br> </td>
+   <td>Erstellen von Adobe validiert Warte auf Proof.<br> </td>
+   <td>Neuere Version mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
+   <td>Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032) , um den **letzten stabilen Build** (GA) anzuzeigen.
+Der **letzte stabile Build** ist 9032 (205c981c3). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue-2.png) Version 20.1 - Build 9122 {#release-20-1-build-XXXX}
+## ![](assets/blue_2.png) Version 20.1 - Build 9122 {#release-20-1-build-9122}
 
 _17. Februar 2020_
 
-**Neue Funktionen?**
+**Neue Funktionen**
 
 <table> 
  <thead> 
@@ -91,25 +91,25 @@ _17. Februar 2020_
 
 * Es wurde ein Fehler behoben, der verhinderte, dass die Datei &quot;login.log&quot;erfolgreiche Anmeldeversuche über IMS aufzeichnete. (NEO-11004)
 
-**Neuheiten**
+**Verbesserungen**
 
 * iOS 13 wird jetzt mit dem HTTP2-Connector unterstützt.
 
-* Verbesserte Quarantäne-Verwaltung und Bereinigung der von der Push-Benachrichtigungsfunktion verwendeten Tabellen (nms:address und nms:appSubscriptionRcp). Bei iOS (nur HTTP2-Connector) werden deaktivierte Token jetzt genauso behandelt wie bei Android. Das Deaktivieren-Flag ist jetzt in der Tabelle NmsAppSubscriptionRcp festgelegt. [Mehr dazu](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* Verbesserte Quarantäne-Verwaltung und Bereinigung der von der Push-Benachrichtigungsfunktion verwendeten Tabellen (nms:address und nms:appSubscriptionRcp). Bei iOS (nur HTTP2-Connector) werden deaktivierte Token jetzt genauso behandelt wie bei Android. Das Deaktivieren-Flag ist jetzt in der Tabelle NmsAppSubscriptionRcp festgelegt. [mehr dazu](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Im Arbeitsablauf für **JavaScript-Code** - und **erweiterte JavaScript-Code** -Aktivitäten wurde eine neue Option hinzugefügt, um einen Zeitlimitzeitraum zu definieren. Dadurch wird verhindert, dass die Javascript-Ausführungsphase zu lange ausgeführt wird. Wenn der Timeout-Zeitraum abgelaufen ist, wird der Workflow beendet. Der Standardwert für das Zeitlimit ist 1 Stunde. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
+* Im Arbeitsablauf für **JavaScript-Code** - und **erweiterte JavaScript-Code** -Aktivitäten wurde eine neue Option hinzugefügt, um einen Zeitlimitzeitraum zu definieren. Dadurch wird verhindert, dass die Javascript-Ausführungsphase zu lange ausgeführt wird. Wenn der Timeout-Zeitraum abgelaufen ist, wird der Workflow gestoppt. Der Standardwert für das Zeitlimit ist 1 Stunde. [mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
 
 * Die Auslieferungsanalyse wird nun beendet, wenn keine übereinstimmende Affinität auf dem mid-sourcing-Server gefunden wird und die entsprechende Fehlermeldung angezeigt wird.
 
 * Database Failover for Postgres wird jetzt unterstützt: Wenn der Datenbankserver abstürzt und neu startet, stellt Campaign jetzt automatisch eine erneute Verbindung her.
 
-* Die Ansicht &quot; **Start ausstehend** &quot;wurde dem Knoten Administration > Prüfung > Arbeitsablaufstatus hinzugefügt. Dadurch können Sie alle Workflows auf Ihrer Instanz überwachen, die darauf warten, vom **operationMgt** -Prozess gestartet zu werden. Diese Ansicht wird mit dem Marketing-Kampagnenpaket geliefert. [Mehr dazu](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* Die Ansicht &quot; **Start ausstehend** &quot;wurde dem Knoten Administration > Prüfung > Arbeitsablaufstatus hinzugefügt. Auf diese Weise können Sie alle Workflows auf Ihrer Instanz überwachen, die darauf warten, vom **operationMgt** -Prozess gestartet zu werden. Diese Ansicht wird mit dem Marketing-Kampagnenpaket geliefert. [mehr dazu](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Sonstige Änderungen**
 
 * Unter Linux verwendet der Systemstart des nlserver-Dienstes jetzt eine Systemeinheit anstelle des Skripts /etc/init.d/nlserver6. Die Migration zum neuen Startschema wird automatisch ausgeführt, wenn Sie das 20.1-Paket installieren. Der Befehl /etc/init.d/nlserver6 wird weiterhin bereitgestellt, aber für die Interaktion mit dem nlserver-Dienst (Start, Neustart, Stopp usw.) sollten Sie den Befehl systemCtl direkt verwenden.
 
-* Die am häufigsten verwendeten benutzerdefinierten Tabellen wurden von der **xtkNewId** -Sequenz in dedizierte Sequenzen verschoben. [Mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Die am häufigsten verwendeten benutzerdefinierten Tabellen wurden von der **xtkNewId** -Sequenz in dedizierte Sequenzen verschoben. [mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Verbesserte Abfrageleistung, die durch unnötige Datenbankverbindungen beeinträchtigt werden könnte.
 
@@ -119,13 +119,13 @@ _17. Februar 2020_
 
 * Die Stabilität des Verbindungspools wurde verbessert, was dazu führen kann, dass unerwartete Verbindungsfehler zu oft auftreten.
 
-* Die Validierungsregeln für E-Mail-Adressen, mit denen im Falle eines weichen Fehlers eine Adresse an Quarantäne gesendet werden soll, wurden verbessert. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* Die Validierungsregeln für E-Mail-Adressen, mit denen im Falle eines weichen Fehlers eine Adresse an Quarantäne gesendet werden soll, wurden verbessert. [mehr dazu](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
 * Für Debian verwendet Campaign jetzt System-PCRE-Bibliotheken, wenn diese verfügbar sind.
 
 * Kampagne ermöglicht nun die Verwendung einer aktuelleren ODBC-Systembibliothek.
 
-* Dem LINE-Servlet wurde beim Öffnen einer Verbindung ein Timeout hinzugefügt, um ein Rich-Bild zu laden. Wenn das Laden des Bildes zu lange dauert, beendet das Servlet die Verbindung, um einen Engpass zu vermeiden.
+* Dem LINE-Servlet wurde beim Öffnen einer Verbindung ein Timeout hinzugefügt, um ein Rich-Bild zu laden. Wenn das Laden des Bildes zu lange dauert, stoppt das Servlet die Verbindung, um einen Engpass zu vermeiden.
 
 **Korrekturen**
 
@@ -169,7 +169,7 @@ _17. Februar 2020_
 
 * Ein Verfolgungsproblem beim Senden von SMS-Nachrichten wurde behoben. (NEO-19595)
 
-* Es wurde ein Problem behoben, bei dem in den Auslieferungsindikatoren eine falsche Zielgruppenanzahl angezeigt wurde.
+* Es wurde ein Problem behoben, bei dem in den Auslieferungsindikatoren eine falsche zielgerichtete Zielgruppenzahl angezeigt wurde.
 
 * Es wurde ein Problem behoben, bei dem beim Generieren eines beschreibenden Berichts über eine Workflow-Aktivität falsche Prozentwerte angezeigt wurden. (NEO-14314)
 
@@ -191,17 +191,17 @@ _17. Februar 2020_
 
 * Es wurde ein Fehler behoben, der verhinderte, dass E-Mails gesendet wurden, wenn die if-Anweisung außerhalb des `body` Tags verwendet wurde.
 
-* Es wurde ein Problem behoben, das beim Versuch auftrat, die Spiegelseite aus den Lieferprotokollen einer gesendeten Nachricht anzuzeigen. (NEO-17976)
+* Es wurde ein Problem behoben, das beim Versuch auftrat, die Spiegelseite aus den Auslieferungsprotokollen einer gesendeten Nachricht anzuzeigen. (NEO-17976)
 
 * Es wurde ein Fehler behoben, der verhinderte, dass der **Link zum Spiegeln des Seiten** -Personalisierungsblocks auf der Registerkarte **Textinhalt** angezeigt wurde, nachdem in einer Bereitstellung auf HTML **** importieren geklickt wurde. (NEO-17568)
 
 * Die Fehlermeldung, die beim Klicken auf einen Link zu einer abgelaufenen Spiegelseite angezeigt wird, wurde geklärt. (NEO-17340)
 
-* Es wurde ein Fehler behoben, der dazu führte, dass einige Schaltflächen nicht im Erstellungsbildschirm zur **Datenverteilung** verwendet werden konnten.
+* Es wurde ein Fehler behoben, der dazu führte, dass einige Schaltflächen nicht im Erstellungsbildschirm für die **Datenverteilung** verwendet werden konnten.
 
 * Es wurde ein Problem behoben, das beim Planen einer Bereitstellungsaktivität in einer Instanz mit Asien/Kalkutta als Zeitzone auftrat. (NEO-20001)
 
-* Ein Fehler wird nun angezeigt, wenn bei einer Bereitstellung ein Affinitätskonfigurationsproblem auftritt.
+* Es wird nun ein Fehler angezeigt, wenn bei einer Bereitstellung ein Affinitätskonfigurationsproblem auftritt.
 
 * Es wurde ein Problem behoben, bei dem im Menü **Info** eine falsche Version-Tag-Nummer angezeigt wurde.
 
