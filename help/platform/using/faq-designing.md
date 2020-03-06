@@ -14,7 +14,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
 
 ---
 
@@ -44,10 +44,6 @@ Sie können mit nur einem Klick eine vorhandene HTML-Datei importieren, um eine 
 ## Wie kann ich mit Campaign DCE E-Mail-Inhalt erstellen? {#how-to-use-campaign-dce-to-create-an-email-content-}
 
 [E-Mail mit dem Digital Content Editor von Campaign erstellen](../../web/using/use-case--creating-an-email-delivery.md): Hier erfahren Sie anhand eines Beispiels, wie Sie mit dem DCE-Modul von Campaign eine E-Mail erstellen können.
-
-## Wie kann ich zu einer E-Mail einen Barcode hinzufügen? {#how-can-i-add-a-barcode-in-an-email-}
-
-Hier erfahren Sie, wie Sie in einer personalisierten E-Mail einfach [einen Barcode hinzufügen können](../../delivery/using/inserting-a-barcode-in-an-email.md).
 
 ## Wie kann ich in Campaign einen Newsletter zum Abonnieren erstellen? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
