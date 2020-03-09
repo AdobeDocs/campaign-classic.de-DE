@@ -66,7 +66,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Auflistungen verwalten](platform/using/managing-enumerations.md)
       + [Externe Konten](platform/using/external-accounts.md)
    + Zugriff auf externe Datenbanken (FDA){#accessing-external-database}
-      + [Über FDA](platform/using/about-fda.md)
+      + [Info zur FDA](platform/using/about-fda.md)
       + [Spezifische Konfigurationen nach Datenbanktyp](platform/using/specific-configuration-database.md)
       + [Zugriffsberechtigungen auf Remote-Datenbank](platform/using/remote-database-access-rights.md)
       + [Herstellung der Datenbankverbindung](platform/using/connecting-to-database.md)
@@ -84,8 +84,8 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Auf Versandinformationen zugreifen](delivery/using/accessing-deliveries-information.md)
       + [Versandtypen](delivery/using/types-of-deliveries.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
-      + [Grundlagen zur Bereitstellungserstellung ](delivery/using/steps-about-delivery-creation-steps.md)
-      + [Erstellung und Identifizierung der Bereitstellung](delivery/using/steps-create-and-identify-the-delivery.md)
+      + [Informationen zur Erstellung von Versänden ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [Erstellen und Identifizieren des Versands](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Zielpopulation bestimmen](delivery/using/steps-defining-the-target-population.md)
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
       + [Versenden der Nachrichten](delivery/using/steps-sending-the-delivery.md)
@@ -93,7 +93,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Über den E-Mail-Kanal](delivery/using/about-email-channel.md)
       + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md).
       + [E-Mail-Inhalt erstellen](delivery/using/defining-the-email-content.md)
-      + [Definieren interaktiver Inhalte](delivery/using/defining-interactive-content.md)
+      + [Definieren von interaktiven Inhalten](delivery/using/defining-interactive-content.md)
       + [Nachrichten senden](delivery/using/sending-messages.md)
       + [Anhänge erstellen](delivery/using/attaching-files.md)
    + Nachrichten an Mobiltelefone senden {#sending-messages-on-mobiles}
@@ -156,7 +156,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Blacklist-Datenbanken](delivery/using/blacklisting-databases.md)
-   + Content Management-Modul {#content-management}
+   + Content-Management {#content-management}
       + [Über Content Management](delivery/using/about-content-management.md)
       + [Ressourcen und Grundlagen des Content-Manager-Moduls](delivery/using/content-manager-resources-and-principles.md)
       + [Anwendungsbeispiele: Verwenden des Content Managements](delivery/using/use-case--creating-content-management.md)
@@ -167,16 +167,16 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Verwendung von Inhaltsvorlagen](delivery/using/using-a-content-template.md)
       + [Anreicherung von Inhalten](delivery/using/enriching-content.md)
       + [Automatisierung mit Workflows](delivery/using/automating-via-workflows.md)
-+ Orchestrieren von Kampagnen {#orchestrating-campaigns}
++ Orchestrieren von Campaignen {#orchestrating-campaigns}
    + Über Marketingkampagnen {#about-marketing-campaigns}
       + [Marketingkampagnen entwerfen](campaign/using/designing-marketing-campaigns.md)
-      + [Zugriff auf Marketingkampagnen](campaign/using/accessing-marketing-campaigns.md)
+      + [Zugriff auf Marketing-Campaign](campaign/using/accessing-marketing-campaigns.md)
    + Kampagnen koordinieren {#orchestrate-campaigns}
-      + [Einrichten von Marketingkampagnen](campaign/using/setting-up-marketing-campaigns.md)
+      + [Einrichten von Marketing-Campaignen](campaign/using/setting-up-marketing-campaigns.md)
       + [Marketing-Kampagnenvorlagen](campaign/using/marketing-campaign-templates.md)
-      + [Auslieferungen von Marketing-Kampagnen](campaign/using/marketing-campaign-deliveries.md)
-      + [Genehmigung der Marketing-Kampagne](campaign/using/marketing-campaign-approval.md)
-      + [Marketing-Kampagnenüberwachung](campaign/using/marketing-campaign-monitoring.md)
+      + [Marketing-Campaign-Versand](campaign/using/marketing-campaign-deliveries.md)
+      + [Genehmigung für das Marketing-Campaign](campaign/using/marketing-campaign-approval.md)
+      + [Marketing-Campaign-Überwachung](campaign/using/marketing-campaign-monitoring.md)
       + [Dienstleister, Lager und Budgets](campaign/using/providers--stocks-and-budgets.md)
    + Aufgaben, Budgets, Ressourcen {#tasks--resources-and-budgets}
       + [Über die Verwaltung von Marketing-Ressourcen](campaign/using/about-marketing-resource-management.md)
@@ -208,13 +208,13 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Hypothesenverfolgung](campaign/using/hypothesis-tracking.md)
 + Reporting {#reporting}
    + Reporting in Adobe Campaign {#reporting-in-adobe-campaign}
-      + [Erste Schritte mit der Berichterstellung](reporting/using/about-adobe-campaign-reporting-tools.md)
-      + [Best Practices für die Berichterstellung](reporting/using/best-practices.md)
+      + [Erste Schritte mit Berichte](reporting/using/about-adobe-campaign-reporting-tools.md)
+      + [Bewährte Verfahren für Berichte](reporting/using/best-practices.md)
    + Zugriff auf native Berichte {#accessing-built-in-reports}
       + [Über native Berichte in Campaign](reporting/using/about-campaign-built-in-reports.md)
       + [Liste von Berichten](reporting/using/list-of-reports.md)
    + Versandberichte{#reports-on-deliveries}
-      + [Berichte zu Auslieferungen](reporting/using/reports-on-deliveries.md)
+      + [Berichte zu Versänden](reporting/using/reports-on-deliveries.md)
       + [Allgemeine Berichte](reporting/using/global-reports.md)
       + [Versandberichte](reporting/using/delivery-reports.md)
       + [Zusammenfassende Berichte](reporting/using/cumulative-reports.md)
@@ -346,7 +346,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Daten aktualisieren](workflow/using/update-data.md)
       + [CRM-Connector](workflow/using/crm-connector.md)
    + Steuerungsaktivitäten {#flow-control-activities}
-      + [Informationen zu Aktivitäten zur Flusskontrolle](workflow/using/about-flow-control-activities.md)
+      + [Aktivitäten zur Flusskontrolle](workflow/using/about-flow-control-activities.md)
       + [Start und Ende](workflow/using/start-and-end.md)
       + [Verzweigung](workflow/using/fork.md)
       + [Und-Verknüpfung](workflow/using/and-join.md)
@@ -372,13 +372,13 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Laden (SOAP)](workflow/using/loading--soap-.md)
       + [Laden (Datei)](workflow/using/data-loading--file-.md)
       + [Content Management](workflow/using/content-management.md)
-      + [Datenextrahierung (Datei)](workflow/using/extraction--file-.md)
+      + [Datendatei (Extraktion)](workflow/using/extraction--file-.md)
       + [SQL-Code und JavaScript-Code](workflow/using/sql-code-and-javascript-code.md)
       + [SQL Data Management](workflow/using/sql-data-management.md)
       + [nlserver-Modul](workflow/using/nlserver-module.md)
       + [Aggregat-Update](workflow/using/update-aggregate.md)
    + Ereignisaktivitäten {#event-activities}
-      + [Informationen zu Ereignisaktivitäten](workflow/using/about-event-activities.md)
+      + [Informationen zu Ereignis-Aktivitäten](workflow/using/about-event-activities.md)
       + [Datei-Wächter](workflow/using/file-collector.md)
       + [Dateiversand](workflow/using/file-transfer.md)
       + [HTTP-Übertragung](workflow/using/web-download.md)
@@ -402,17 +402,17 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
          + [Aggregat berechnen](workflow/using/performing-aggregate-computing.md)
          + [Abfrage mit Gruppierungsbedingungen](workflow/using/querying-using-grouping-management.md)
          + [Abfragen mithilfe einer Viele-zu-viele-Beziehung](workflow/using/querying-using-many-to-many-relationship.md)
-         + [Hinzufügen eines berechneten Felds für Aufzählungstyp](workflow/using/adding-enumeration-type-calculated-field.md)
+         + [Berechnete Auflistung hinzufügen](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Erstellung von Filtern](workflow/using/creating-a-filter.md)
          + [Duplizierte Empfänger filtern](workflow/using/filtering-duplicated-recipients.md)
       + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
       + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-   + Überwachen von Workflows {#monitoring-workflows}
+   + Workflows {#monitoring-workflows}
       + [Ausführung des Workflows überwachen](workflow/using/monitoring-workflow-execution.md)
       + [Technische Workflows überwachen](workflow/using/monitoring-technical-workflows.md)
       + [Workflow-Heatmap](workflow/using/heatmap.md)
    + Fortgeschrittene Optionen {#advanced-management}
-      + [Workflow-Eigenschaften ](workflow/using/workflow-properties.md)
+      + [Workflow-Eigenschaften  ](workflow/using/workflow-properties.md)
       + [Erweiterte Parameter](workflow/using/advanced-parameters.md)
       + [Scripts/JavaScript-Templates](workflow/using/javascript-scripts-and-templates.md)
       + [Zugriff auf externe Datenbanken (FDA)](workflow/using/accessing-an-external-database--fda-.md)
@@ -525,12 +525,12 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
    + Anwendungsbeispiel {#use-case}
       + [Zweck](message-center/using/purpose.md)
-      + [Wichtige Hinweise  ](message-center/using/important-notes.md)
+      + [Wichtige Hinweise   ](message-center/using/important-notes.md)
       + [Umsetzung](message-center/using/implementation.md)
 + Integration mit sozialen Medien {#integrating-with-social-media}
    + [Informationen zum Social Marketing](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
-      + [Starten von Workflows](social/using/starting-workflows.md)
+      + [Starten Workflows](social/using/starting-workflows.md)
       + [Veröffentlichen auf Facebook-Wänden](social/using/publishing-on-facebook-walls.md)
       + [Erstellen einer Facebook-Anwendung](social/using/creating-a-facebook-application.md)
       + [Konfigurieren der Veröffentlichung auf Twitter](social/using/configuring-publishing-on-twitter.md)
@@ -551,7 +551,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Hybridmodell](installation/using/hybrid-model.md)
       + [gehostetes Modell](installation/using/hosted-model.md)
    + Voraussetzungen und Empfehlungen {#prerequisites-and-recommendations-}
-      + [Vor Beginn](installation/using/before-starting.md)
+      + [Vor dem Start](installation/using/before-starting.md)
       + [Datenbank](installation/using/database.md)
       + [Anwendungsserver](installation/using/application-server.md)
       + [Messaging-Server](installation/using/messaging-server.md)
@@ -564,11 +564,11 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Bereitstellung von Mid-Sourcing](installation/using/mid-sourcing-deployment.md)
       + [Stromverstärker und Stromverteiler](installation/using/power-booster-and-power-cluster.md)
    + Installieren von Campaign unter Windows {#installing-campaign-in-windows-}
-      + [Voraussetzungen für die Installation von Campaign unter Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+      + [Voraussetzungen für die Installation des Campaigns unter Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Server installieren](installation/using/installing-the-server.md)
       + [Integration in einen Webserver für Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Client-Konsolenverfügbarkeit für Windows](installation/using/client-console-availability-for-windows.md)
-      + [Installieren der Clientkonsole](installation/using/installing-the-client-console.md)
+      + [Installieren der Client-Konsole](installation/using/installing-the-client-console.md)
    + Installieren von Campaign unter Linux {#installing-campaign-in-linux-}
       + [Voraussetzungen für die Campaign-Installation unter Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Installieren von Paketen mit Linux](installation/using/installing-packages-with-linux.md)
@@ -578,7 +578,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Grundlagen zur Erstkonfiguration](installation/using/about-initial-configuration.md)
       + [Erstellen einer Instanz und Anmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [Datenbank erstellen und konfigurieren](installation/using/creating-and-configuring-the-database.md)
-      + [Konfiguration des Kampagnenservers](installation/using/campaign-server-configuration.md)
+      + [Konfiguration des Campaign-Servers](installation/using/campaign-server-configuration.md)
       + [Bereitstellen einer Instanz](installation/using/deploying-an-instance.md)
       + [Installieren von Campaign Classic-Standardpaketen](installation/using/installing-campaign-standard-packages.md)
    + Ergänzende Konfigurationen {#additional-configurations}
@@ -588,14 +588,14 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [E-Mail-Archivierung](installation/using/email-archiving.md)
       + [Zeitzonen-Management](installation/using/time-zone-management.md)
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
-      + [Server mit mittlerer Quelle](installation/using/mid-sourcing-server.md)
+      + [Mid-Sourcing-Server](installation/using/mid-sourcing-server.md)
       + [Interaktion - Datenpuffer](installation/using/interaction---data-buffer.md)
    + Anlagen {#appendices}
       + [Die Serverkonfigurationsdatei](installation/using/the-server-configuration-file.md)
       + [Befehlszeilen](installation/using/command-lines.md)
       + [Erstellen neuer Instanzen](installation/using/creating-new-instances.md)
       + [Liste der Optionen von Campaign Classic](installation/using/configuring-campaign-options.md)
-      + [Deinstallieren von Kampagne](installation/using/uninstalling-campaign.md)
+      + [Campaign deinstallieren](installation/using/uninstalling-campaign.md)
 + Überwachungskampagne Classic {#monitoring-campaign-classic}
    + Einleitung {#introduction}
       + [Vorwort](production/using/foreword.md)
@@ -606,13 +606,13 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Administration](production/using/administration.md)
       + [Konfiguration](production/using/configuration.md)
       + [Protokolldateien](production/using/log-files.md)
-      + [Überwachungsverfahren](production/using/monitoring-processes.md)
+      + [Überwachungsprozesse](production/using/monitoring-processes.md)
       + [Übliche Befehle](production/using/usual-commands.md)
       + [Prüfpfad](production/using/audit-trail.md)
    + Datenverarbeitung {#data-processing}
       + [Sicherung](production/using/backup.md)
       + [Wiederherstellung](production/using/restoration.md)
-      + [Duplizieren von Umgebungen](production/using/duplicating-environments.md)
+      + [Duplizieren von Umgebung](production/using/duplicating-environments.md)
       + [Arbeitsablauf für die Datenbankbereinigung](production/using/database-cleanup-workflow.md)
    + Adobe Campaign aktualisieren {#updating-adobe-campaign}
       + [Einleitung](production/using/introduction.md)
@@ -633,7 +633,7 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Datenbankleistungen](production/using/database-performances.md)
       + [Module und häufige Probleme](production/using/modules-and-frequent-issues.md)
       + [Protokollgenauigkeit](production/using/log-precision.md)
-      + [Probleme mit Trackingprotokollen](production/using/tracking-logs-issues.md)
+      + [Probleme mit Trackinglogs](production/using/tracking-logs-issues.md)
       + [Workflow-Ausführung](production/using/workflow-execution.md)
       + [Verbindung fehlgeschlagen](production/using/failure-to-connect.md)
       + [Verbindungsschwellenwerte](production/using/connection-thresholds.md)
@@ -645,33 +645,33 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
 + Konfigurieren von Campaign Classic {#configuring-campaign-classic}
    + Datenmodell {#data-model}
       + [Datenmodell](configuration/using/about-data-model.md)
-      + [Verwenden der standardmäßigen Empfängertabelle](configuration/using/default-recipient-table.md)
+      + [Verwenden der Standardtabelle Empfänger](configuration/using/default-recipient-table.md)
       + [Erweitern des Datenmodells](configuration/using/extending-data-model.md)
-      + [Verwenden einer benutzerdefinierten Empfängertabelle](configuration/using/custom-recipient-table.md)
+      + [Verwenden einer benutzerdefinierten Empfänger-Tabelle](configuration/using/custom-recipient-table.md)
       + [Best Practices](configuration/using/data-model-best-practices.md)
-   + Schemareferenz {#schema-reference}
-      + [Informationen zur Schemareferenz](configuration/using/about-schema-reference.md)
+   + Schema-Referenz {#schema-reference}
+      + [Info zum Schema](configuration/using/about-schema-reference.md)
       + [Schemastruktur](configuration/using/schema-structure.md)
       + [Datenbankzuordnung](configuration/using/database-mapping.md)
       + [Elemente und Attribute](configuration/using/elements-and-attributes.md)
    + Schemabearbeitung {#editing-schemas}
-      + [Informationen zur Schemaausgabe](configuration/using/about-schema-edition.md)
+      + [Informationen zur Schema-Edition](configuration/using/about-schema-edition.md)
       + [Datenschemata](configuration/using/data-schemas.md)
       + [Schema einer vorhandenen Tabelle](configuration/using/schema-of-an-existing-table.md)
       + [Erweitern eines Schemas](configuration/using/extending-a-schema.md)
-      + [Filtern von Schemata](configuration/using/filtering-schemas.md)
+      + [Filtern von Schemas](configuration/using/filtering-schemas.md)
       + [Einschränkung der PII-Ansicht](configuration/using/restricting-pii-view.md)
       + [Datenbankstruktur aktualisieren](configuration/using/updating-the-database-structure.md)
       + [Neuer Feldassistent](configuration/using/new-field-wizard.md)
-      + [Struktur eines Datenschemas](configuration/using/structure-of-a-data-schema.md)
-      + [Regenerieren von Schemata](configuration/using/regenerating-schemas.md)
-      + [Beispiele für Schemaausgabe](configuration/using/examples-of-schemas-edition.md)
+      + [Struktur eines Schemas](configuration/using/structure-of-a-data-schema.md)
+      + [Regenerieren von Schemas](configuration/using/regenerating-schemas.md)
+      + [Beispiele für Schemas](configuration/using/examples-of-schemas-edition.md)
    + Formulare {#input-forms}
       + [Formulare identifizieren](configuration/using/identifying-a-form.md)
       + [Formulare bearbeiten](configuration/using/editing-forms.md)
       + [Formularstruktur](configuration/using/form-structure.md)
    + API {#api}
-      + [Webdienste](configuration/using/about-web-services.md)
+      + [Informationen zu Webdiensten](configuration/using/about-web-services.md)
       + [Webdienstaufrufe](configuration/using/web-service-calls.md)
       + [Datenorientierte APIs](configuration/using/data-oriented-apis.md)
       + [Geschäftsorientierte APIs](configuration/using/business-oriented-apis.md)
@@ -682,26 +682,26 @@ source-git-commit: e8de8441303cb9d5102db2a95742ec7d38b16fc2
       + [Navigationshierarchie](configuration/using/about-navigation-hierarchy.md)
       + [Konfiguration](configuration/using/configuration.md)
       + [Edition](configuration/using/edition.md)
-   + Verwenden einer benutzerdefinierten Empfängertabelle {#use-a-custom-recipient-table}
-      + [Informationen zur Tabelle &quot;Benutzerdefinierte Empfänger&quot;](configuration/using/about-custom-recipient-table.md)
-      + [Schemamerkmale](configuration/using/schema-characteristics.md)
+   + Benutzerdefinierte Empfänger-Tabelle verwenden {#use-a-custom-recipient-table}
+      + [Tabelle mit benutzerdefiniertem Empfänger](configuration/using/about-custom-recipient-table.md)
+      + [Merkmale des Schemas](configuration/using/schema-characteristics.md)
       + [Target mapping](configuration/using/target-mapping.md)
       + [Konfigurieren der Oberfläche](configuration/using/configuring-the-interface.md)
       + [Testadressen](configuration/using/seed-addresses.md)
       + [Filter erstellen](configuration/using/creating-filters.md)
-      + [Erstellen einer Profilliste mit einem Workflow](configuration/using/creating-a-profile-list-with-a-workflow.md)
+      + [Erstellen einer Profil-Liste mit einem Workflow](configuration/using/creating-a-profile-list-with-a-workflow.md)
       + [Workflows verwalten](configuration/using/managing-workflows.md)
       + [Verwalten von Berichten](configuration/using/managing-reports.md)
    + Einrichten der Web-Verfolgung {#setting-up-web-tracking}
-      + [Informationen zur Webverfolgung](configuration/using/about-web-tracking.md)
-      + [Webverfolgungsmodus](configuration/using/web-tracking-mode.md)
-      + [Web-Tracking-Tag: Definition](configuration/using/web-tracking-tag--definition.md)
+      + [Informationen zur Web-Verfolgung](configuration/using/about-web-tracking.md)
+      + [Webtracking-Modus](configuration/using/web-tracking-mode.md)
+      + [Webtrackingtag: Definition](configuration/using/web-tracking-tag--definition.md)
       + [Einrichtungsschritte](configuration/using/setup-stages.md)
       + [Zusätzliche Parameter](configuration/using/additional-parameters.md)
-      + [Web-Tracking-Tags erstellen](configuration/using/creating-web-tracking-tags.md)
+      + [Erstellen von Web-Trackingtagen](configuration/using/creating-web-tracking-tags.md)
       + [Tags in Ihre Site einfügen](configuration/using/inserting-tags-in-your-site.md)
-      + [Erfassen aller Besuche](configuration/using/collecting-all-visits.md)
-      + [Anonyme Verfolgung](configuration/using/anonymous-tracking.md)
+      + [Alle Besuche erfassen](configuration/using/collecting-all-visits.md)
+      + [Anonym-Tracking](configuration/using/anonymous-tracking.md)
 + Migration zu einer neuen Version {#migrating-to-a-new-version}
    + Migrationsübersicht {#migration-overview}
       + [Informationen zur Migration](migration/using/about-migration.md)
