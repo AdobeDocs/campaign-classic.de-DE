@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 16e7266a101b4abea3271c32fcc403e7d7fbaa2d
+source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
 
 ---
 
@@ -60,7 +60,7 @@ Quarantined addresses for a specific delivery are listed during the delivery pre
 
 ### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-the-entire-platform}
 
-Administratoren können die Adressen in Quarantäne für die gesamte Plattform vom **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** Knoten aus auflisten.
+Administratoren können die Adressen in Quarantäne für die gesamte Plattform vom **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** Knoten aus Liste werden.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Diese Informationen stehen für alle Sendungen der Plattform (**Startseite > Ber
 
 ### Für einen Empfänger in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-a-recipient}
 
-Sie können den Status der E-Mail-Adresse eines Empfängers nachschlagen. Wählen Sie dazu das Empfängerprofil aus und klicken Sie auf die **[!UICONTROL Deliveries]** Registerkarte. Für alle Lieferungen an diesen Empfänger können Sie herausfinden, ob die Adresse fehlgeschlagen ist, während der Analyse isoliert wurde usw. Für jeden Ordner können Sie nur die Empfänger anzeigen, deren E-Mail-Adresse in Quarantäne steht. Verwenden Sie dazu den **[!UICONTROL Quarantined email address]** Anwendungsfilter.
+Sie können den Status der E-Mail-Adresse jedes Empfängers nachschlagen. Wählen Sie dazu das Profil Empfänger aus und klicken Sie auf die **[!UICONTROL Deliveries]** Registerkarte. Für alle Versände zu diesem Empfänger können Sie herausfinden, ob die Adresse fehlgeschlagen, wurde während der Analyse isoliert, etc. Für jeden Ordner können Sie nur die Empfänger anzeigen, deren E-Mail-Adresse in Quarantäne ist. Verwenden Sie dazu den **[!UICONTROL Quarantined email address]** Anwendungsfilter.
 
 ![](assets/tech_quarant_recipients_filter.png)
 
@@ -112,7 +112,7 @@ Sie können außerdem die Fehlerschwelle und die Spanne zwischen zwei Fehlern an
 
 ## Ursachen für Quarantänen {#conditions-for-sending-an-address-to-quarantine}
 
-Adobe Campaign verwaltet die Quarantäne entsprechend dem Typ des Bereitstellungsfehlers und dem Grund, der während der Qualifizierung von Fehlermeldungen zugewiesen wurde (siehe Qualifizierung[der ](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)Absprungmail), sowie den Fehlertypen und -gründen für die [Auslieferung](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Adobe Campaign verwaltet die Quarantäne entsprechend dem Fehlerfehlertyp und dem bei der Qualifizierung von Fehlermeldungen angegebenen Grund (siehe [Absprungmail-Qualifikation](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)) sowie den Fehlertypen und -gründen des [Versands](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
 * **Ignorierter Fehler**: Bei ignorierten Fehlern wird eine Adresse nicht unter Quarantäne gestellt.
 * **Hardbounce**: Die E-Mail-Adresse kommt sofort in Quarantäne.
@@ -126,17 +126,17 @@ In the list of quarantined addresses, the **[!UICONTROL Error reason]** field in
 
 ### Weiche Fehlerverwaltung {#soft-error-management}
 
-Im Gegensatz zu harten Fehlern senden weiche Fehler nicht sofort eine Adresse an Quarantäne, sondern erhöhen einen Fehlerzähler.
+Im Gegensatz zu Fehlermeldungen senden Softwarerecher nicht sofort eine Adresse an die Quarantäne, sondern erhöhen einen Fehlerzähler.
 
-* Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse in Quarantäne gestellt.
-* Die Standardkonfiguration sieht eine Schwelle von fünf Fehlern vor, die jeweils in einem Abstand von mindestens 24 Stunden auf den vorhergehenden folgen müssen, um berücksichtigt zu werden. Beim sechsten Fehler kommt die Adresse in Quarantäne.
+* Wenn der Fehlerzähler den Grenzwert erreicht, wird die Adresse in Quarantäne gesetzt.
+* Die Standardkonfiguration sieht eine Schwelle von fünf Fehlern vor, die jeweils in einem Abstand von mindestens 24 Stunden auf den vorhergehenden folgen müssen, um berücksichtigt zu werden. Die Adresse wird beim fünften Fehler in Quarantäne gesetzt.
 * Die Schwelle für den Fehlerzähler ist einstellbar. For more on this, refer to [Retries after a delivery temporary failure](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
 
 Der Fehlerzähler wird erneut initialisiert, wenn der letzte bedeutende Fehler vor mehr als 10 Tagen auftrat. The address status then changes to **Valid** and it is deleted from the list of quarantines by the **Database cleanup** workflow.
 
 ## Quarantäne für Push-Benachrichtigungen {#push-notification-quarantines}
 
-Der Quarantänemechanismus für Push-Benachrichtigungen ist global identisch mit dem allgemeinen Prozess. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Bestimmte Fehler werden jedoch für Push-Benachrichtigungen unterschiedlich verwaltet. Bei bestimmten Soft-Fehlern werden beispielsweise innerhalb derselben Bereitstellung keine Wiederholungen durchgeführt. Die Besonderheiten für die Push-Benachrichtigung sind unten aufgeführt. Der Wiederholungsmechanismus (Anzahl der Wiederholungen, Häufigkeit) entspricht dem für E-Mails.
+Der Quarantäne-Mechanismus für Push-Benachrichtigungen ist global identisch mit dem allgemeinen Prozess. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Bestimmte Fehler werden jedoch für Push-Benachrichtigungen unterschiedlich verwaltet. Bei bestimmten Soft-Fehlern werden beispielsweise innerhalb desselben Versands keine weitere Zustellversuche ausgeführt. Die Besonderheiten für die Push-Benachrichtigung sind unten aufgeführt. Der Wiederholungsmechanismus (Anzahl der weitere Zustellversuche, Häufigkeit) ist identisch mit dem für E-Mails.
 
 Bei den unter Quarantäne gestellten Objekten handelt es sich um Device Token.
 
@@ -151,11 +151,11 @@ Für jede Benachrichtigung empfängt Adobe Campaign die synchronen und asynchron
 * Connection lost during the delivery: retry performed, the failure reason is **[!UICONTROL Unreachable]**.
 * Service configuration issue (invalid certificate, invalid certificate password, no certificate): no retry, the failure reason is **[!UICONTROL Unreachable]**.
 
-Der APNS-Server benachrichtigt Adobe Campaign asynchron, dass ein Gerätetoken nicht registriert wurde (wenn die Mobilanwendung vom Benutzer deinstalliert wurde). Der **[!UICONTROL mobileAppOptOutMgt]** Arbeitsablauf wird alle 6 Stunden ausgeführt, um die APNS-Feedback-Dienste zu kontaktieren, um die **AppSubscriptionRcp** -Tabelle zu aktualisieren. Bei allen deaktivierten Token ist das Feld **Deaktiviert** auf **True** eingestellt und das mit diesem Gerätetoken verknüpfte Abonnement wird automatisch aus zukünftigen Auslieferungen ausgeschlossen.
+Der APNS-Server benachrichtigt Adobe Campaign asynchron, dass ein Gerätetoken nicht registriert wurde (wenn die Mobilanwendung vom Benutzer deinstalliert wurde). Der **[!UICONTROL mobileAppOptOutMgt]** Arbeitsablauf wird alle 6 Stunden ausgeführt, um die APNS-Feedback-Dienste zu kontaktieren, um die **AppSubscriptionRcp** -Tabelle zu aktualisieren. Bei allen deaktivierten Token ist das Feld **Deaktiviert** auf **True** eingestellt, und das mit diesem Gerätetoken verknüpfte Abonnement wird automatisch von zukünftigen Versänden ausgeschlossen.
 
 **Für iOS - HTTP/2-Connector**
 
-Das HTTP/2-Protokoll ermöglicht ein direktes Feedback und Status für jede Push-Bereitstellung. Wenn der HTTP/2-Protokollanschluss verwendet wird, wird der Feedback-Dienst nicht mehr vom **[!UICONTROL mobileAppOptOutMgt]** Workflow aufgerufen. Die nicht registrierten Token werden zwischen dem binären iOS-Connector und dem iOS-HTTP/2-Connector unterschiedlich gehandhabt. Ein Token gilt als nicht registriert, wenn eine Mobilanwendung deinstalliert oder neu installiert wird.
+Das HTTP/2-Protokoll ermöglicht ein direktes Feedback und Status für jeden Push-Versand. Wenn der HTTP/2-Protokollanschluss verwendet wird, wird der Feedback-Dienst nicht mehr vom **[!UICONTROL mobileAppOptOutMgt]** Workflow aufgerufen. Die nicht registrierten Token werden zwischen dem binären iOS-Connector und dem iOS-HTTP/2-Connector unterschiedlich gehandhabt. Ein Token gilt als nicht registriert, wenn eine Mobilanwendung deinstalliert oder neu installiert wird.
 
 Wenn das APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt, wird der Target Token sofort in Quarantäne gestellt.
 
@@ -254,7 +254,7 @@ Für jede Benachrichtigung erhält Adobe Campaign die synchronen Fehler direkt v
 * Device quota exceeded: no retry, soft error, failure reason is **[!UICONTROL Refused]**.
 * Invalid or unregistered token, unexpected error, sender account issue: no retry, hard error, failure reason is **[!UICONTROL Refused]**.
 
-Der **[!UICONTROL mobileAppOptOutMgt]** Arbeitsablauf wird alle 6 Stunden ausgeführt, um die **Tabelle AppSubscriptionRcp** zu aktualisieren. Für die Token, die nicht registriert oder nicht mehr gültig sind, ist das Feld **Deaktiviert** auf **True** eingestellt und das Abonnement, das mit diesem Gerätetoken verknüpft ist, wird automatisch von zukünftigen Auslieferungen ausgeschlossen.
+Der **[!UICONTROL mobileAppOptOutMgt]** Arbeitsablauf wird alle 6 Stunden ausgeführt, um die **Tabelle AppSubscriptionRcp** zu aktualisieren. Für die Token, die nicht registriert oder nicht mehr gültig sind, ist das Feld **Deaktiviert** auf **True** eingestellt und das mit diesem Gerätetoken verknüpfte Abonnement wird automatisch aus zukünftigen Versänden ausgeschlossen.
 
 Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgeschlossen werden, automatisch zur Tabelle **excludeLogAppSubRcp** hinzugefügt.
 
@@ -351,7 +351,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
 
 **Für Standard-Connectoren**
 
-Der Quarantänemechanismus für SMS-Nachrichten ist global identisch mit dem allgemeinen Prozess. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Die Besonderheiten für SMS sind nachfolgend aufgeführt.
+Der Mechanismus zur Quarantäne von SMS-Nachrichten ist global identisch mit dem allgemeinen Prozess. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Die Besonderheiten für SMS sind nachfolgend aufgeführt.
 
 >[!NOTE]
 The **[!UICONTROL Delivery log qualification]** table does not apply to the **Extended generic SMPP** connector.
@@ -428,7 +428,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Der dritte Teil der Fehlernachricht (in diesem Beispiel **DELIVRD**) entspricht dem Statuscode, der von der Empfangsbestätigung unter Verwendung des – im externen SMS-Konto definierten – regulären Ausdruck zur Statusextraktion abgerufen wurde.
 
-   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des externen Kontos angegeben. Weiterführende Informationen finden Sie auf [dieser Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des Externen Kontos angegeben. Weiterführende Informationen finden Sie auf [dieser Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    ![](assets/tech_quarant_error_regex.png)
 
@@ -436,7 +436,7 @@ SR Generic DELIVRD 000|#MESSAGE#
 
 * Der vierte Teil der Fehlernachricht (in diesem Beispiel **000**) entspricht dem Fehlercode, der von der Empfangsbestätigung unter Verwendung des im externen SMS-Konto definierten regulären Ausdrucks zur Fehlercode-Extraktion extrahiert wurde.
 
-   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des externen Kontos angegeben. Weiterführende Informationen finden Sie auf [dieser Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+   Dieser Regex wird auf der **[!UICONTROL SMSC specificities]** Registerkarte des Externen Kontos angegeben. Weiterführende Informationen finden Sie auf [dieser Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
    Standardmäßig erfolgt die Regex-Extraktion des **err:**-Felds entsprechend der Definition im Bereich **Appendix B** der **SMPP 3.4-Spezifikation**.
 
