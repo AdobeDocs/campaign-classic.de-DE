@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 >
 >Im MTA hat die Verarbeitung von Transaktionsnachrichten Priorität vor allen anderen Sendungen.
 
-In der Ausführungsinstanz wird die Auslieferung gesendet, sobald die Anreicherungsschritte abgeschlossen sind und eine Bereitstellungsvorlage mit dem Ereignis verknüpft wurde. Alle Auslieferungen werden im **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** Ordner gruppiert.
+Auf der Ausführungsinstanz wird der Versand gesendet, sobald die Anreicherung abgeschlossen ist und eine Versandvorlage mit dem Ereignis verknüpft wurde. Alle Versand sind im **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** Ordner gruppiert.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
@@ -38,4 +38,4 @@ Diese Gruppierung kann in den Eigenschaften der jeweiligen Nachrichtenvorlage wi
 
 >[!NOTE]
 >
->Bei gehosteten oder hybriden Installationen können nach einem Upgrade auf die erweiterte MTA auch alle Transaktionsmeldungen mit der Adobe Campaign Enhanced MTA gesendet werden, um die Bereitstellung, den Durchsatz und die Absprungbehandlung zu verbessern. Alle Auswirkungen sind dieselben wie für Standard-Marketingmeldungen und werden im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) beschrieben.
+>Bei gehosteten oder hybriden Installationen können, wenn Sie auf die erweiterte MTA aktualisiert haben, alle Transaktionsnachrichten auch mit der Adobe Campaign Enhanced MTA gesendet werden, um die Bereitstellung, den Durchsatz und die Absprungbehandlung zu verbessern. Alle Auswirkungen sind dieselben wie bei standardmäßigen Marketing-Nachrichten und werden im Dokument [Erweiterter MTA von Adobe Campaign](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) beschrieben.
