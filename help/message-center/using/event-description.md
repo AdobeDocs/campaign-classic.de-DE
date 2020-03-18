@@ -15,16 +15,16 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7c57fb0f2d9867b5ea96185c1984e0b1baeb056a
+source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
 
 
 # Ereignisbeschreibung{#event-description}
 
-## Über das Transaktionsnachrichten-Datenmodell {#about-transactional-messaging-datamodel}
+## Datenmodell für Transaktionsnachrichten {#about-transactional-messaging-datamodel}
 
-Transaktionsnachrichten beruhen auf dem Campaign-Datenmodell und verwenden zwei Tabellen. Diese Tabellen, **NmsRtEvent** und **NmsBatchEvent**, enthalten jeweils die gleichen Felder und erlauben die separate Verwaltung von Ereignissen, die entweder in Echtzeit oder im Stapel (Batch) verarbeitet werden.
+Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche separate Tabellen. Diese [Tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** und **NmsBatchEvent**, enthalten dieselben Felder und ermöglichen Ihnen die Verwaltung von Echtzeit-Ereignissen einerseits und Batch-Ereignissen andererseits.
 
 ## SOAP-Methoden {#soap-methods}
 
@@ -40,7 +40,7 @@ Die WSDL-Zugriffspfade der zwei Methoden lauten:
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent**, um auf das Echtzeit-Schema zuzugreifen;
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent**, um auf das Batch-Schema zuzugreifen.
 
-Beide Methoden enthalten ein **`<urn:sessiontoken>`** Element zum Anmelden beim Transaktionsmessungs-Modul. Wir empfehlen die Verwendung einer Identifizierungsmethode über vertrauenswürdige IP-Adressen. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Anmeldeaufruf und dann ein get-Token gefolgt von einem logoff durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Methode des Sitzungstokens, die empfohlen wird.
+Beide Methoden enthalten ein **`<urn:sessiontoken>`** Element zum Anmelden beim Transaktionsmessungs-Modul. Es wird empfohlen, eine Identifizierungsmethode über vertrauenswürdige IP-Adressen zu verwenden. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Anmeldeaufruf und dann ein get-Token gefolgt von einem logoff durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Methode des Sitzungstokens, die empfohlen wird.
 
 Wenn Sie einen Lastverteilungsserver verwenden, können Sie die Benutzer-/Passwort-Authentifizierung (auf der Ebene der Echtzeitnachricht) verwenden. Beispiel:
 
@@ -112,9 +112,9 @@ The **`<rtevent>`** and **`<batchevent>`** elements have a set of attributes as 
 
 >[!NOTE]
 >
->Mit dem **`<batchevent>`** Element können Sie das Ereignis der Warteschlange &quot;Batch&quot;hinzufügen. Das Ereignis **`<rtevent>`** wird der Warteschlange &quot;Echtzeit&quot;hinzugefügt.
+>Mit dem **`<batchevent>`** Element können Sie das Ereignis zur Stapelwarteschlange hinzufügen. Das Ereignis **`<rtevent>`** wird der Warteschlange &quot;Echtzeit&quot;hinzugefügt.
 
-Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`** Elemente sind &quot;@type&quot;und &quot;@email&quot;. Der Wert von &quot;@type&quot;muss mit dem bei der Konfiguration der Ausführungsinstanz definierten itemisierten Listenwert übereinstimmen. Mit diesem Wert können Sie die Vorlage definieren, die während der Bereitstellung mit dem Inhalt des Ereignisses verknüpft werden soll.
+Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`** Elemente sind &quot;@type&quot;und &quot;@email&quot;. Der Wert von &quot;@type&quot;muss mit dem Wert für &quot;itemized&quot;übereinstimmen, der beim Konfigurieren der Ausführungsinstanz definiert wurde. Mit diesem Wert können Sie die Vorlage definieren, die während des Versands mit dem Inhalt des Ereignisses verknüpft werden soll.
 
 `<rtevent> configuration example:`
 
@@ -124,7 +124,7 @@ Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`*
 
 In diesem Beispiel sind mit der E-Mail-Adresse und der Mobiltelefonnummer zwei Kanäle angegeben. Das Feld **wishedChannel** ermöglicht die Bestimmung des Kanals, der bei der Reaktion auf ein Ereignis verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
 
-Wenn Sie eine Ereignisauslieferung verschieben möchten, fügen Sie das **[!UICONTROL scheduled]** Feld gefolgt vom bevorzugten Datum hinzu. Das Ereignis wird zu diesem Zeitpunkt in eine Meldung umgewandelt.
+Wenn Sie einen Ereignis-Versand verschieben möchten, fügen Sie das Feld mit dem **[!UICONTROL scheduled]** gewünschten Datum hinzu. Das Ereignis wird zu diesem Zeitpunkt in eine Meldung umgewandelt.
 
 Es wird empfohlen, die Attribute @wishedChannel und @emailFormat in Form von numerischen Werten anzugeben. Die Mapping-Tabelle der numerischen Werte und der ihnen zugeordnete Titel finden sich in der Beschreibung der Datenschemata.
 
