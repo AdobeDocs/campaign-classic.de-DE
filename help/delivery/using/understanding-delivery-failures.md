@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+source-git-commit: ba750d51d31d7783a3fdc5ef6b0bcf4a863c69d4
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 
 ## Über fehlgeschlagene Sendungen {#about-delivery-failures}
 
-Wenn eine Nachricht (E-Mail, SMS, Push-Benachrichtigung) nicht an ein Profil gesendet werden kann, sendet der Remote-Server automatisch eine Fehlermeldung, die von der Adobe Campaign-Plattform abgerufen und qualifiziert wird, um zu bestimmen, ob die E-Mail-Adresse oder Telefonnummer in Quarantäne gestellt werden soll. See [Bounce mail management](#bounce-mail-management).
+Wenn eine Nachricht (E-Mail, SMS, Push-Benachrichtigung) nicht an ein Profil gesendet werden kann, sendet der Remote-Server automatisch eine Fehlermeldung, die von der Adobe Campaign-Plattform abgerufen und qualifiziert wird, um zu bestimmen, ob die E-Mail-Adresse oder Telefonnummer in Quarantäne gestellt werden soll oder nicht. See [Bounce mail management](#bounce-mail-management).
 
 >[!NOTE]
 >
@@ -38,11 +38,11 @@ Mitteilungen können während der Versandvorbereitung auch ausgeschlossen werden
 
 * [Protokolle und Versandverlauf](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)
 * [Status Fehlgeschlagen](../../delivery/using/monitoring-a-delivery.md#failed-status)
-* [Typen und Ursachen für fehlgeschlagene Sendungen](#delivery-failure-types-and-reasons)
+* [Typen und Ursachen für fehlgeschlagene Sendungen ](#delivery-failure-types-and-reasons)
 
-## Typen und Ursachen für fehlgeschlagene Sendungen {#delivery-failure-types-and-reasons}
+## Typen und Ursachen für fehlgeschlagene Sendungen  {#delivery-failure-types-and-reasons}
 
-Es gibt drei Arten von Fehlern, wenn eine Nachricht fehlschlägt. Jeder Fehlertyp bestimmt, ob eine Adresse an Quarantäne gesendet wird. Weitere Informationen finden Sie unter [Bedingungen für das Senden einer Adresse an die Quarantäne](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
+Es gibt drei Arten von Fehlern, wenn eine Nachricht fehlschlägt. Jeder Fehlertyp bestimmt, ob eine Adresse an Quarantänen gesendet wird. Weitere Informationen finden Sie unter [Bedingungen für das Senden einer Adresse an die Quarantäne](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
 * **Hard**: Dieser Fehlertyp tritt bei einer ungültigen Adresse auf. Fehlermeldung, die explizit eine ungültige Adresse anzeigt, beispielsweise &quot;Benutzer unbekannt&quot;.
 * **Soft**: Fehler, der eventuell nur vorübergehend auftritt oder der nicht qualifiziert werden konnte, beispielsweise &quot;Ungültige Domain&quot;, &quot;Postfach voll&quot;.
@@ -56,7 +56,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Bezeichnung des Fehlers </td> 
    <td> Fehlertyp </td> 
    <td> Technischer Wert </td> 
-   <td> Description </td> 
+   <td> Beschreibung </td> 
   </tr> 
   <tr> 
    <td> Konto deaktiviert </td> 
@@ -181,7 +181,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
  </tbody> 
 </table>
 
-## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand {#retries-after-a-delivery-temporary-failure}
+## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand  {#retries-after-a-delivery-temporary-failure}
 
 Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignorierten Fehlers** fehlschlägt, werden während der Versandlaufzeit erneute Zustellversuche vorgenommen.
 
@@ -193,11 +193,11 @@ Gehen Sie zur Änderung der Versandlaufzeit in die erweiterten Eigenschaften des
 
 Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global geändert werden (kontaktieren Sie Ihren technischen Administrator von Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
-## Synchrone und asynchrone Fehler {#synchronous-and-asynchronous-errors}
+## Synchrone und asynchrone Fehler  {#synchronous-and-asynchronous-errors}
 
 Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren Zeitpunkt nach dem Versand (asynchroner Fehler).
 
-* Synchroner Fehler: Wenn der vom Adobe Campaign-Bereitstellungsserver kontaktierte Remote-E-Mail-Server sofort eine Fehlermeldung zurückgegeben hat, darf die Bereitstellung nicht an den Profilserver gesendet werden. Adobe Campaign qualifiziert jeden Fehler, um festzustellen, ob die betreffenden E-Mail-Adressen in Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
+* Synchroner Fehler: Wenn der vom Adobe Campaign Versand-Server kontaktierte Remote-E-Mail-Server sofort eine Fehlermeldung zurückgegeben hat, darf der Versand nicht an den Server des Profils gesendet werden. Adobe Campaign qualifiziert jeden Fehler, um festzustellen, ob die betreffenden E-Mail-Adressen in Quarantäne gestellt werden sollen. Siehe [Bounce-Message-Qualifizierung](#bounce-mail-qualification).
 * Asynchroner Fehler: Eine Bounce Message oder ein SR wird vom Remote-Server verzögert zurückgesendet. Diese E-Mail wird an ein spezifisches Postfach weitergeleitet, das automatisch von der Anwendung abgefragt wird, um die fehlerhaften Nachrichten zu erfassen. Asynchrone Fehler können bis zu einer Woche nach dem Versand auftreten.
 
    >[!NOTE]
@@ -214,19 +214,19 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
 
 Die Adobe Campaign-Plattform bietet mit der Bounce-Message-Funktion die Möglichkeit, Zustellprobleme zu verwalten. Wenn eine E-Mail nicht zugestellt werden kann, sendet der Remote-E-Mail-Server automatisch eine Fehlermeldung, eine s. g. Bounce Message, an die speziell für diesen Zweck konfigurierte technische E-Mail-Adresse. Adobe Campaign ruft diese Fehlermeldungen ab und qualifiziert sie mithilfe des inMail-Prozesses, um die Liste der E-Mail-Verwaltungsregeln anzureichern.
 
-### Bounce-Message-Qualifizierung {#bounce-mail-qualification}
+### Bounce-Message-Qualifizierung  {#bounce-mail-qualification}
 
 Wenn eine E-Mail nicht zugestellt werden kann, empfängt der Adobe Campaign-Versandserver eine Fehlermeldung vom Remote-Mail- oder -DNS-Server. Jeder Fehlermeldung wird ein Fehlertyp und -grund zugeordnet.
 
-Diese Liste ist über den **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** Knoten verfügbar. Es enthält alle Regeln, die Adobe Campaign verwendet, um Auslieferungsfehler zu qualifizieren. Es ist nicht erschöpfend, wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
+Diese Liste ist über den **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Delivery log qualification]** Knoten verfügbar. Es enthält alle Regeln, die Adobe Campaign verwendet, um Versand-Fehler zu qualifizieren. Es ist nicht erschöpfend, wird regelmäßig von Adobe Campaign aktualisiert und kann auch vom Benutzer verwaltet werden.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-* Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Meldung wird in der **[!UICONTROL First text]** Spalte der **[!UICONTROL Delivery log qualification]** Tabelle angezeigt. Wenn diese Spalte nicht angezeigt wird, klicken Sie auf die **[!UICONTROL Configure list]** Schaltfläche am rechten Ende der Liste, um sie auszuwählen.
+* Die Meldung, die der Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgibt, wird in der **[!UICONTROL First text]** Spalte der **[!UICONTROL Delivery log qualification]** Tabelle angezeigt. Wenn diese Spalte nicht angezeigt wird, klicken Sie auf die **[!UICONTROL Configure list]** Schaltfläche am rechten unteren Rand der Liste, um sie auszuwählen.
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
-Adobe Campaign filtert diese Nachricht, um den variablen Inhalt (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) zu löschen. und zeigt das gefilterte Ergebnis in der **[!UICONTROL Text]** Spalte an. Die Variablen werden durch ersetzt **`#xxx#`**, mit Ausnahme der Adressen, die durch ersetzt werden **`*`**.
+Adobe Campaign Filter diese Meldung, um Variableninhalte (wie IDs, Daten, E-Mail-Adressen, Telefonnummern usw.) zu löschen. und zeigt das gefilterte Ergebnis in der **[!UICONTROL Text]** Spalte an. Die Variablen werden durch ersetzt **`#xxx#`**, mit Ausnahme der Adressen, die durch ersetzt werden **`*`**.
 
 Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehrfache Einträge für ähnliche Fehler in die Versandlogqualifizierungs-Tabelle werden vermieden.
 
@@ -237,16 +237,20 @@ Dadurch können alle Fehlschläge desselben Typs zusammengefasst werden und mehr
 Folgende Qualifikationsstatus von Bounce Messages treten auf:
 
 * **[!UICONTROL To qualify]** : die Absprungmail konnte nicht qualifiziert werden. Die Qualifikation muss dem Bereitstellungs-Team zugewiesen werden, um eine effiziente Bereitstellung der Plattform zu gewährleisten. Solange sie nicht qualifiziert ist, wird die Absprungmail nicht dazu verwendet, die Liste der E-Mail-Verwaltungsregeln zu bereichern.
-* **[!UICONTROL Keep]** : die Absprungmail wurde qualifiziert und wird vom Arbeitsablauf **Aktualisieren auf Zustellbarkeit** verwendet, um mit den vorhandenen E-Mail-Verwaltungsregeln verglichen und die Liste erweitert zu werden.
+* **[!UICONTROL Keep]** : die Absprungmail wurde qualifiziert und wird vom Arbeitsablauf **Aktualisieren auf Zustellbarkeit** verwendet, um mit den bestehenden E-Mail-Verwaltungsregeln verglichen und die Liste zu bereichern.
 * **[!UICONTROL Ignore]** : die Absprungmail wurde qualifiziert, wird aber nicht vom Arbeitsablauf **Aktualisieren für Zustellbarkeit** verwendet. Es wird nicht an Client-Instanzen gesendet.
 
 ![](assets/deliverability_qualif_status.png)
 
->[!NOTE]
->
->Bei gehosteten oder hybriden Installationen werden die Absprungqualifikationen in der **[!UICONTROL Delivery log qualification]** Tabelle nicht mehr verwendet, wenn Sie auf die erweiterte MTA aktualisiert haben. Die erweiterte MTA bestimmt den Absprungtyp und die Qualifikation und sendet diese Informationen an Kampagne zurück.
->
->Weitere Informationen zur erweiterten MTA-Datei für Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+Bei gehosteten oder Hybridinstallationen, wenn Sie auf die erweiterte MTA aktualisiert haben:
+
+* Die Absprungqualifikationen in der **[!UICONTROL Delivery log qualification]** Tabelle werden nicht mehr für Fehlermeldungen bei synchronen Versänden verwendet. Die erweiterte MTA bestimmt den Absprungtyp und die Qualifikation und sendet diese Informationen an die Kampagne zurück.
+
+* Asynchrone Absprünge sind nach wie vor durch den InMail-Prozess durch die **[!UICONTROL Inbound email]** Regeln qualifiziert. For more on this, see [Email management rules](#email-management-rules).
+
+* Bei Instanzen, die die erweiterte MTA ohne **Webhooks/EFS** verwenden, werden die **[!UICONTROL Inbound email]** Regeln auch zur Verarbeitung der synchronen Absprungmeldungen aus der erweiterten MTA verwendet, wobei dieselbe E-Mail-Adresse wie für asynchrone Absprungmeldungen verwendet wird.
+
+Weitere Informationen zum erweiterten MTA von Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 ### E-Mail-Verwaltungsregeln {#email-management-rules}
 
@@ -264,42 +268,62 @@ Folgende Regeln sind in der Standardkonfiguration vorgesehen:
 
 * **Eingehende E-Mails**
 
-   Wenn die Zustellung einer E-Mail fehlschlägt, gibt der Remote-Server eine Fehlermeldung an die in den Plattform-Parametern angegebene Bounce-Adresse zurück. Adobe Campaign vergleicht den Inhalt jeder Bounce-E-Mail mit den in der Regelliste verzeichneten Strings und ordnet einen der drei Fehlertypen zu.
+   Wenn eine E-Mail fehlschlägt, gibt der Remote-Server eine Absprungmeldung an die in den Plattformparametern angegebene Adresse zurück.
+
+   Adobe Campaign vergleicht den Inhalt jeder Bounce-E-Mail mit den in der Regelliste verzeichneten Strings und ordnet einen der drei Fehlertypen zu.
 
    Der Benutzer kann eigene Regeln erstellen.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Beim Import eines Packages und bei der Aktualisierung von Daten durch den **Zustellbarkeit**-Workflow werden benutzerdefinierte E-Mail-Regeln überschrieben.
 
+   Weitere Informationen zur Absprungmail-Qualifizierung finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
+
+   >[!NOTE]
+   >
+   >Bei gehosteten oder hybriden Installationen werden die **[!UICONTROL Inbound email]** Regeln nicht mehr für Fehlermeldungen bei synchronen Versänden verwendet, wenn Sie auf die erweiterte MTA aktualisiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
+   >
+   >Weitere Informationen zum erweiterten MTA von Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+
 * **Domain-Verwaltung**
 
-   Domain-Verwaltungsregeln ermöglichen die Regulierung des Volumens der ausgehenden E-Mails nach Domains. Sie analysieren die Bounce Messages und blockieren falls nötig den Versand. Der Adobe-Campaign-E-Mail-Server wendet zunächst die spezifischen Domain-Regeln an und im Anschluss jene, die den Normalfall repräsentieren (durch * gekennzeichnet). Die Regeln für Hotmail und MSN sind standardmäßig in Adobe Campaign enthalten.
+   Der Adobe-Campaign-E-Mail-Server wendet zunächst die spezifischen Domain-Regeln an und anschließend die Regeln für den allgemeinen Fall, der in der Liste der Regeln mit einem Sternchen (*) gekennzeichnet ist.
+
+   Die Regeln für Hotmail und MSN sind standardmäßig in Adobe Campaign enthalten.
 
    Klicken Sie auf das **[!UICONTROL Detail]**-Symbol, um auf die Regelkonfiguration zuzugreifen.
 
    ![](assets/tech_quarant_domain_rules_02.png)
 
-   Um eigene Domain-Verwaltungsregeln zu erstellen, sind die Angabe einer Schwelle und die Auswahl gewisser SMTP-Parameter erforderlich. Die **Schwelle** entspricht einem Prozentsatz an Fehlern, der bei Überschreiten den Versand an die betroffene Domain unterbricht.
-
-   So wird beispielsweise der Versand drei Stunden lang unterbrochen, wenn bei einem Volumen von mindestens 300 Nachrichten die Fehlerquote 90% erreicht.
-
    Die **SMTP-Parameter** agieren wie die im Falle einer Blockierungsregel angewendeten Filter.
 
    * Sie haben die Möglichkeit, gewisse Authentifizierungsnormen und Verschlüsselungsschlüssel zu aktivieren, um den Domain-Namen zu prüfen: **Sender ID**, **DomainKeys**, **DKIM**, **S/MIME**.
-   * **SMTP-Relais**: Zur Konfiguration der IP-Adresse und des Relais-Server-Ports für eine bestimmte Domain.
+   * **SMTP-Relais**: Zur Konfiguration der IP-Adresse und des Relais-Server-Ports für eine bestimmte Domain. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#smtp-relay).
+   Wenn Ihre Nachrichten in Outlook wie **[!UICONTROL on behalf of]** mit einem anderen Domänennamen angezeigt werden, vergewissern Sie sich, dass Sie Ihre E-Mails nicht mit der **Sender-ID** signieren, der veraltete Standard für die E-Mail-Authentifizierung von Microsoft. Wenn die **[!UICONTROL Sender ID]** Option aktiviert ist, deaktivieren Sie das entsprechende Feld und wenden Sie sich an den Adobe Campaign-Support. Ihre Lieferbarkeit wird nicht beeinträchtigt.
+
+   >[!NOTE]
+   >
+   >Bei gehosteten oder hybriden Installationen werden die **[!UICONTROL Domain management]** Regeln nicht mehr verwendet, wenn Sie auf die erweiterte MTA aktualisiert haben. **Die Signierung der DKIM-E-Mail-Authentifizierung (DomainKeys Identified Mail)** erfolgt durch die erweiterte MTA für alle Nachrichten mit allen Domänen. Es wird nicht mit **Sender-ID**, **DomainKeys** oder **S/MIME** signiert, es sei denn, auf der Ebene der erweiterten MTA wird etwas Anderes angegeben.
+   >
+   >Weitere Informationen zum erweiterten MTA von Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
 * **MX-Verwaltung**
 
+   * Die MX-Verwaltungsregeln dienen zur Regulierung des Flusses ausgehender E-Mails für eine bestimmte Domäne. Sie analysieren die Bounce Messages und blockieren falls nötig den Versand.
+
+   * Der Adobe-Campaign-E-Mail-Server wendet zunächst die spezifischen Domain-Regeln an und anschließend die Regeln für den allgemeinen Fall, der in der Liste der Regeln mit einem Sternchen (*) gekennzeichnet ist.
+
+   * Um MX-Verwaltungsregeln zu konfigurieren, legen Sie einfach einen Schwellenwert fest und wählen Sie bestimmte SMTP-Parameter aus. Die **Schwelle** entspricht einem Prozentsatz an Fehlern, der bei Überschreiten den Versand an die betroffene Domain unterbricht. So wird beispielsweise der Versand drei Stunden lang unterbrochen, wenn bei einem Volumen von mindestens 300 Nachrichten die Fehlerquote 90% erreicht.
    Weiterführende Informationen zur MX-Verwaltung erfahren Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#mx-configuration).
 
    >[!NOTE]
    >
-   >Bei gehosteten oder hybriden Installationen werden die Regeln für den **[!UICONTROL MX management]** Bereitstellungsdurchsatz nicht mehr verwendet, wenn Sie auf die erweiterte MTA aktualisiert haben. Die erweiterte MTA verwendet ihre eigenen MX-Regeln, die es ermöglichen, Ihren Durchsatz nach Domäne basierend auf Ihrem eigenen historischen E-Mail-Ruf und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, anzupassen.
+   >Bei gehosteten oder hybriden Installationen werden die Durchsatzregeln für Versand nicht mehr verwendet, wenn Sie auf die erweiterte MTA aktualisiert haben. **[!UICONTROL MX management]** Der erweiterte MTA verwendet seine eigenen MX-Regeln, die es ihm ermöglichen, Ihren Durchsatz nach Domain auf der Grundlage Ihrer eigenen historischen E-Mail-Reputation und des Echtzeit-Feedbacks aus den Domains, in denen Sie E-Mails versenden, anzupassen.
    >
-   >Weitere Informationen zur erweiterten MTA-Datei für Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+   >Weitere Informationen zum erweiterten MTA von Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Nach Änderungen in der Konfiguration muss der Versandserver (MTA) neu gestartet werden.
 >* Neuerstellung und Änderungen von Verwaltungsregeln sollten erfahrenen Benutzern vorbehalten bleiben.
