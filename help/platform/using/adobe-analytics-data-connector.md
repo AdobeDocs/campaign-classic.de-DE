@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: becdffadaaaa40359b61a6ad786b9fd8ebecc6e9
+source-git-commit: cda7ae757a6de0e8cd6227faa2b731e9f392791b
 
 ---
 
@@ -75,7 +75,7 @@ Im Folgenden wird die Konfiguration des Data Connectors mithilfe eines Assistent
    * Integrationen (Löschen)
    ![](assets/adobe_genesis_install_002.png)
 
-1. From the list of partners, select **[!UICONTROL Neolane - Enterprise Marketing Platform]**.
+1. From the list of partners, select **[!UICONTROL Adobe Campaign Classic]**.
 
    ![](assets/adobe_genesis_install_014.png)
 
@@ -149,7 +149,7 @@ Die Integration von Adobe Campaign in die Analytics-Plattformen geschieht mithil
 1. The **[!UICONTROL Advanced]** tab lets you configure or modify more technical settings.
 
    * **[!UICONTROL Lifespan]**: können Sie die Verzögerung angeben (in tagen_, nach der die Web-Ereignis in Adobe Campaign nach Technischen Workflows wiederhergestellt wurden). Standard: 180 Tage.
-   * **[!UICONTROL Persistence]**: ermöglicht Ihnen den Zeitraum, in dem alle Web-Ereignis (z. B. ein Kauf) einem Remarketing-Campaign zugeordnet werden können (Standard: 7 Tage.
+   * **[!UICONTROL Persistence]**: ermöglicht Ihnen den Zeitraum, in dem alle Web-Ereignis (z. B. ein Kauf) einer Remarketing-Kampagne zugeordnet werden können (Standard: 7 Tage.
 
 >[!NOTE]
 >
@@ -199,8 +199,8 @@ Sie sind in der Adobe Campaign-Struktur unter dem **[!UICONTROL Administration >
 ![](assets/webanalytics_workflows.png)
 
 * **[!UICONTROL Recovering of web events]**: einmal pro Stunde werden in diesem Arbeitsablauf Segmente zum Verhalten von Benutzern auf einer bestimmten Site heruntergeladen, in die Adobe Campaign-Datenbank aufgenommen und der Remarketing-Arbeitsablauf Beginn.
-* **[!UICONTROL Event purge]**: Mit diesem Arbeitsablauf können Sie alle Ereignis je nach dem im **[!UICONTROL Lifespan]** Feld konfigurierten Zeitraum aus der Datenbank löschen. Weitere Informationen finden Sie in [Schritt 2: Erstellen Sie das Externe Konto in Campaign](#step-2--create-the-external-account-in-campaign).
-* **[!UICONTROL Identification of converted contacts]**: Verzeichnis der Besucher, die nach einem Remarketing-Campaign einen Kauf tätigten. Die von diesem Arbeitsablauf erfassten Daten können im **[!UICONTROL Re-marketing efficiency]** Bericht abgerufen werden, siehe diese [Seite](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: lets you send email campaign indicators via Adobe Campaign to the Adobe Experience Cloud using Adobe Analytics - Data connector. Dieser Arbeitsablauf wird jeden Tag um 4 Uhr ausgelöst und es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
+* **[!UICONTROL Event purge]**: Mit diesem Arbeitsablauf können Sie alle Ereignis je nach dem im **[!UICONTROL Lifespan]** Feld konfigurierten Zeitraum aus der Datenbank löschen. Weitere Informationen finden Sie in [Schritt 2: Erstellen Sie das Externe Konto in Kampagne](#step-2--create-the-external-account-in-campaign).
+* **[!UICONTROL Identification of converted contacts]**: Verzeichnis der Besucher, die nach einer Remarketing-Kampagne einen Kauf tätigten. Die von diesem Arbeitsablauf erfassten Daten können im **[!UICONTROL Re-marketing efficiency]** Bericht abgerufen werden, siehe diese [Seite](#creating-a-re-marketing-campaign).* **[!UICONTROL Sending of indicators and campaign attributes]**: lets you send email campaign indicators via Adobe Campaign to the Adobe Experience Cloud using Adobe Analytics - Data connector. Dieser Arbeitsablauf wird jeden Tag um 4 Uhr ausgelöst und es kann 24 Stunden dauern, bis die Daten an Analytics gesendet werden.
 
    Bitte beachten Sie, dass dieser Workflow nicht neu gestartet werden sollte, da sonst alle vorherigen Daten erneut gesendet werden, was die Analyseergebnisse verfälschen könnte.
 
@@ -232,7 +232,7 @@ Sie sind in der Adobe Campaign-Struktur unter dem **[!UICONTROL Administration >
    * **[!UICONTROL Contact date]** (Scheduling/@contactDate)
 
 
-* **Identifizierung konvertierter Kontakte**: Verzeichnis der Besucher, die nach einem Remarketing-Campaign einen Kauf tätigten. Die von diesem Workflow erfassten Daten können im **[!UICONTROL Re-marketing efficiency]** Bericht abgerufen werden (siehe diese [Seite](../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign)).
+* **Identifizierung konvertierter Kontakte**: Verzeichnis der Besucher, die nach einer Remarketing-Kampagne einen Kauf tätigten. Die von diesem Workflow erfassten Daten können im **[!UICONTROL Re-marketing efficiency]** Bericht abgerufen werden (siehe diese [Seite](../../platform/using/adobe-analytics-data-connector.md#creating-a-re-marketing-campaign)).
 
 ## Versandverfolgung in Adobe Campaign {#tracking-deliveries-in-adobe-campaign}
 
@@ -282,7 +282,7 @@ Adobe Campaign stellt vorkonfigurierte Versandvorlagen zur Verfügung, die Sie v
 
 1. Klicken Sie nun auf **[!UICONTROL OK]**, um das Kampagnenfenster zu schließen.
 
-Der Zugriff auf den **[!UICONTROL Re-marketing efficiency]** Bericht erfolgt über die Seite &quot;Globale Berichte&quot;. Damit können Sie die Anzahl der umgerechneten Kontakte (d. h. die gekaufte Ware) im Verhältnis zur Anzahl der Warenkorbabbrüche nach dem Adobe Campaign-Remarketing-Campaign Ansicht werden. Der Konversionsrate wird pro Woche, Monat oder seit dem Beginn der Synchronisierung zwischen Adobe Campaign- und Webanalysetools berechnet.
+Der Zugriff auf den **[!UICONTROL Re-marketing efficiency]** Bericht erfolgt über die Seite &quot;Globale Berichte&quot;. Damit können Sie die Anzahl der umgerechneten Kontakte (d. h. die gekaufte Ware) im Verhältnis zur Anzahl der Warenkorbabbrüche nach der Adobe Campaign-Remarketing-Kampagne Ansicht haben. Der Konversionsrate wird pro Woche, Monat oder seit dem Beginn der Synchronisierung zwischen Adobe Campaign- und Webanalysetools berechnet.
 
 ![](assets/webanalytics_reporting.png)
 
