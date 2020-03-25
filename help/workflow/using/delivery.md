@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
 
 ---
 
@@ -32,7 +32,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    Sie haben folgende Möglichkeiten:
 
-   * Handelt bei der im eingehenden Übergang angegebenen Bereitstellung. Wählen Sie dazu die erste Option im **[!UICONTROL Delivery]** Abschnitt des Fensters aus.
+   * Handeln Sie auf dem in der Transition &quot;Inbound&quot;angegebenen Versand. Wählen Sie dazu die erste Option im **[!UICONTROL Delivery]** Abschnitt des Fensters aus.
 
       Diese Option kann verwendet werden, wenn eine vorangehende Workflow-Aktivität bereits den Versand erstellt oder bezeichnet. Dies kann wie in unten stehendem Beispiel durch eine Aktivität des gleichen Typs erfolgen, die eine ausgehende Transition erzeugt.
 
@@ -40,9 +40,9 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
       ![](assets/specified_transition_option_exemple.png)
 
-   * Wählen Sie die betreffende Lieferung direkt aus. Wählen Sie dazu die **[!UICONTROL Explicit]** Option aus und wählen Sie die Bereitstellung aus der Dropdownliste des **[!UICONTROL Delivery]** Felds aus.
+   * Wählen Sie den Versand direkt aus. Wählen Sie dazu die **[!UICONTROL Explicit]** Option aus und wählen Sie den Versand aus der Dropdown-Liste des **[!UICONTROL Delivery]** Felds aus.
 
-      Die Liste zeigt standardmäßig nicht fertige Auslieferungen im Ordner &quot; **Auslieferungen** &quot;an. Um auf andere Kampagnen zuzugreifen, klicken Sie auf das **[!UICONTROL Select link]** Symbol.
+      Die Liste zeigt standardmäßig nicht fertige Versand im Ordner &quot; **Versand** &quot;an. Um auf andere Kampagnen zuzugreifen, klicken Sie auf das **[!UICONTROL Select link]** Symbol.
 
       ![](assets/diffusion_edit_1.png)
 
@@ -52,11 +52,11 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
       After selecting the delivery action, you can display the content by clicking the **[!UICONTROL Edit link]** icon.
 
-   * Erstellen Sie ein Skript zur Berechnung der Auslieferung. Wählen Sie dazu die **[!UICONTROL Calculated by a script]** Option aus und geben Sie das Skript ein. Sie können ein Eingabefenster öffnen, indem Sie auf die **[!UICONTROL Edit...]** Option klicken. Im folgenden Beispiel wird die ID der Bereitstellung wiederhergestellt:
+   * Erstellen Sie ein Skript zur Berechnung des Versands. Wählen Sie dazu die **[!UICONTROL Computed by a script]** Option aus und geben Sie das Skript ein. Sie können ein Eingabefenster öffnen, indem Sie auf die **[!UICONTROL Edit...]** Option klicken. Im folgenden Beispiel wird der Bezeichner des Versands wiederhergestellt:
 
       ![](assets/diffusion_edit_3.png)
 
-   * Erstellen Sie eine neue Bereitstellung. Wählen Sie dazu die **[!UICONTROL New, created from a template]** Option aus und wählen Sie die Bereitstellungsvorlage, auf der die Bereitstellung basieren soll.
+   * Erstellen Sie einen neuen Versand. Wählen Sie dazu die **[!UICONTROL New, created from a template]** Option aus und wählen Sie die Versandvorlage aus, auf der der Versand basieren soll.
 
       ![](assets/diffusion_edit_4.png)
 
@@ -82,12 +82,12 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    Kreuzen Sie eine der möglichen Optionen an:
 
-   * **[!UICONTROL Save]**: Mit dieser Option können Sie die Bereitstellung erstellen und speichern. Es wird nicht analysiert oder bereitgestellt.
-   * **[!UICONTROL Estimate the target]**: Mit dieser Option können Sie das Lieferziel berechnen, um sein Potenzial zu bewerten (erste Analysephase). Diese Aktion entspricht der Auswahl der **[!UICONTROL Estimate the population to be targeted]** Option und dem Klicken auf **[!UICONTROL Analyze]** , wenn eine Lieferung per **Auslieferung** an das Hauptziel gesendet wird.
-   * **[!UICONTROL Prepare]**: Mit dieser Option können Sie den gesamten Analyseprozess (Zielberechnung und Inhaltsvorbereitung) ausführen. Die Lieferung wird nicht gesendet. Diese Aktion entspricht der Auswahl der **[!UICONTROL Deliver as soon as possible]** Option und dem Klicken auf **[!UICONTROL Analyze]** , wenn eine Lieferung mit **Auslieferung** an das Hauptziel gesendet wird.
-   * **[!UICONTROL Send a proof]**: Mit dieser Option können Sie einen Liefernachweis senden. Diese Aktion entspricht dem Klicken auf die **[!UICONTROL Send a proof]** Schaltfläche in der Symbolleiste einer Bereitstellung mit **Auslieferung**
-   * **[!UICONTROL Prepare and start]**: Diese Option startet den vollständigen Analysevorgang (Zielberechnung und Inhaltsvorbereitung) und sendet die Bereitstellung. Diese Aktion entspricht dem Klick **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** und der **[!UICONTROL Confirm delivery]** Option, wenn eine Lieferung mit **Auslieferung** an das Hauptziel gesendet wird.
-   Mit der **[!UICONTROL Act on a delivery]** Aktivität, die im Workflow weiter verwendet wird, können Sie alle verbleibenden Schritte starten, die zum Starten der Bereitstellung erforderlich sind (Zielberechnung, Inhaltsvorbereitung, Bereitstellung). For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
+   * **[!UICONTROL Save]**: Mit dieser Option können Sie den Versand erstellen und speichern. Es wird nicht analysiert oder bereitgestellt.
+   * **[!UICONTROL Estimate the target]**: Mit dieser Option können Sie die Zielgruppe des Versands berechnen, um sein Potenzial zu bewerten (Phase der ersten Analyse). Dies entspricht der Auswahl der **[!UICONTROL Estimate the population to be targeted]** Option und dem Klicken, **[!UICONTROL Analyze]** wenn ein Versand per **Versand** an die Hauptdatei gesendet wird.
+   * **[!UICONTROL Prepare]**: Mit dieser Option können Sie den gesamten Prozess der Analyse (Zielgruppe und Inhaltsvorbereitung) ausführen. Der Versand wird nicht gesendet. Diese Aktion entspricht dem Auswählen der **[!UICONTROL Deliver as soon as possible]** Option und dem Anklicken **[!UICONTROL Analyze]** , wenn ein Versand mit **Versand** an die Haupt-Zielgruppe gesendet wird.
+   * **[!UICONTROL Send a proof]**: Mit dieser Option können Sie einen Testversand des Versands senden. Dies entspricht dem Klicken auf die **[!UICONTROL Send a proof]** Schaltfläche in der Symbolleiste eines Versands mit **Versand**
+   * **[!UICONTROL Prepare and start]**: Diese Option startet den gesamten Prozess der Analyse (Zielgruppe und Inhaltsvorbereitung) und sendet den Versand. Diese Aktion entspricht dem Klick **[!UICONTROL Deliver as soon as possible]**, **[!UICONTROL Analyze]** und der **[!UICONTROL Confirm delivery]** Option, wenn ein Versand mit **Versand** an die Haupt-Zielgruppe gesendet wird.
+   Mit der **[!UICONTROL Act on a delivery]** Aktivität, die im Workflow weiter verwendet wird, können Sie alle verbleibenden Schritte starten, die zum Starten des Versands erforderlich sind (Zielgruppe, Inhaltsvorbereitung, Versand). For more on this, refer to [Delivery control](../../workflow/using/delivery-control.md).
 
    Darüber hinaus stehen folgende Optionen für die Aktivität zur Verfügung:
 
@@ -101,7 +101,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    * **[!UICONTROL Processing errors]**
 
-      Siehe [Liefersteuerung](../../workflow/using/delivery-control.md).
+      Siehe [Versand-Steuerung](../../workflow/using/delivery-control.md).
    Im Tab **Script** können die Versandparameter angepasst werden.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -114,13 +114,13 @@ Erstellen Sie einen neuen Workflow und fügen Sie Aktivitäten aus der unten dar
 
 Öffnen Sie die **Versand**-Aktivität und definieren Sie die Eigenschaften folgendermaßen:
 
-* Wählen Sie im **[!UICONTROL Delivery]** Abschnitt eine Bereitstellungsvorlage aus **[!UICONTROL New, created from a template]** und wählen Sie sie aus.
+* Wählen Sie im **[!UICONTROL Delivery]** Abschnitt eine Versandvorlage aus **[!UICONTROL New, created from a template]** und wählen Sie sie aus.
 * Wählen Sie im **[!UICONTROL Recipients]** Abschnitt **[!UICONTROL Specified in the delivery]**.
 * Behalten Sie im **[!UICONTROL Action to execute]** Abschnitt die **[!UICONTROL Prepare]** Option bei.
 
 ![](assets/new-workflow-param-delivery.png)
 
-Klicken Sie auf **[!UICONTROL OK]** , um das Eigenschaftenfenster zu schließen. Sie haben gerade eine Aktivität konfiguriert, die darin besteht, eine neue Bereitstellung auf der Grundlage einer Bereitstellungsvorlage zu erstellen und vorzubereiten, deren Ziel darin angegeben wird.
+Klicken Sie auf **[!UICONTROL OK]** , um das Eigenschaftenfenster zu schließen. Sie haben soeben eine Aktivität konfiguriert, die darin besteht, einen neuen Versand zu erstellen und vorzubereiten, der auf einer Versandvorlage basiert, deren Zielgruppe darin angegeben wird.
 
 Öffnen Sie die Aktivität **Validierung** und definieren Sie folgende Eigenschaften:
 
@@ -131,7 +131,7 @@ Klicken Sie auf **[!UICONTROL OK]** , um das Eigenschaftenfenster zu schließen.
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Diese Meldung enthält einen in JavaScript geschriebenen Ausdruck: **[!UICONTROL vars.recCount]** stellt die Anzahl der Empfänger dar, auf die sich die Bereitstellung der vorherigen Aufgabe bezieht. Weitere Informationen zu JavaScript-Ausdrücken finden Sie unter [JavaScript-Skripten und -Vorlagen](../../workflow/using/javascript-scripts-and-templates.md).
+   Diese Meldung enthält einen in JavaScript geschriebenen Ausdruck: Die **[!UICONTROL vars.recCount]** Anzahl der Empfänger, auf die sich der Versand der vorherigen Aufgabe bezieht. Weitere Informationen zu JavaScript-Ausdrücken finden Sie unter [JavaScript-Skripten und -Vorlagen](../../workflow/using/javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
@@ -139,7 +139,7 @@ Klicken Sie auf **[!UICONTROL OK]** , um das Eigenschaftenfenster zu schließen.
 
 ## Eingabeparameter {#input-parameters}
 
-Lieferkennung, wenn die **[!UICONTROL Specified in the transition]** Option im **[!UICONTROL Delivery]** Abschnitt ausgewählt ist.
+Versand-ID, wenn die **[!UICONTROL Specified in the transition]** Option im **[!UICONTROL Delivery]** Abschnitt ausgewählt ist.
 
 * deliveryId
 * tableName
@@ -165,7 +165,7 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Dieser Satz von drei Werten identifiziert das Ziel, das sich aus der Bereitstellung ergibt. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Bezeichner des Ziels speichert, **[!UICONTROL schema]** das Schema der Population (normalerweise nms:empfänger) und die Anzahl der Elemente in der Tabelle **[!UICONTROL recCount]** ist.
+Dieser Satz von drei Werten identifiziert die Zielgruppe, die sich aus dem Versand ergibt. **[!UICONTROL tableName]** ist der Name der Tabelle, die die Bezeichner der Zielgruppe speichert, das Schema der Population (normalerweise nms:Empfänger) und die Anzahl der Elemente in der Tabelle **[!UICONTROL schema]** ist **[!UICONTROL recCount]** die Anzahl der Elemente.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
 
