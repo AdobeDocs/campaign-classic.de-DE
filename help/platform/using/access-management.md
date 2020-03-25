@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 63d0551c0c036cb54ebea4e6cc4dc1f6566cf976
+source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
 
@@ -36,8 +36,8 @@ Sie werden durch Sicherheitsparameter ergänzt, die im Zusammenhang mit dem jewe
 
 Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können:
 
-* Sie können Gruppen von Operatoren definieren, denen Sie Rechte zuweisen, und dann die Operatoren einer oder mehreren Gruppen zuordnen. Dadurch können Sie Rechte wiederverwenden und die Benutzerprofile konsistenter gestalten. Sie erleichtert auch die Verwaltung und Pflege von Profilen. Gruppenerstellung und -verwaltung werden in [Operatorgruppen](#operator-groups)dargestellt.
-* Sie können benannte Rechte Benutzern direkt zuweisen, in einigen Fällen, um die über Gruppen zugewiesenen Rechte zu überladen. Diese Rechte werden in [Namensrechten](#named-rights)dargestellt.
+* Sie können Benutzergruppen definieren, denen Sie Rechte zuweisen, und dann die Operatoren einer oder mehreren Gruppen zuordnen. Auf diese Weise können Sie Rechte wiederverwenden und die Profile von Operatoren konsistenter gestalten. Sie erleichtert auch die Verwaltung und Wartung von Profilen. Gruppenerstellung und -verwaltung werden in [Operatorgruppen](#operator-groups)dargestellt.
+* Sie können Spezifische Berechtigungen Benutzern direkt zuordnen, in einigen Fällen, um die über Gruppen zugewiesenen Rechte zu überladen. Diese Rechte werden in [Spezifische Berechtigungen](#named-rights)dargestellt.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Geben Sie den **[!UICONTROL Identification parameters]** Benutzer an: Login, Kennwort und Name. Die Anmeldung und das Kennwort werden vom Bediener bei Adobe Campaign verwendet. Sobald der Benutzer angemeldet ist, kann er sein Passwort über das **[!UICONTROL Tools > Change password]** Menü ändern. Die E-Mail-Adresse des Operators ist unverzichtbar, da sie es dem Operator ermöglicht, Benachrichtigungen zu empfangen, z. B. bei der Verarbeitung von Genehmigungen.
+1. Geben Sie den **[!UICONTROL Identification parameters]** Benutzer an: Login, Passwort und Name. Die Anmeldung und das Kennwort werden vom Bediener bei Adobe Campaign verwendet. Sobald der Benutzer angemeldet ist, kann er sein Passwort über das **[!UICONTROL Tools > Change password]** Menü ändern. Die E-Mail-Adresse des Operators ist unverzichtbar, da sie es dem Operator ermöglicht, Benachrichtigungen zu empfangen, z. B. bei der Verarbeitung von Genehmigungen.
 
    In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Siehe hierzu auch [diese Seite](../../campaign/using/about-distributed-marketing.md).
 
@@ -83,7 +83,7 @@ Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   Sie können auch eine oder mehrere benannte Rechte auswählen (siehe [Benannte Rechte](#named-rights)). Klicken Sie dazu auf den Pfeil rechts neben dem **[!UICONTROL Folder]** Feld und wählen Sie **[!UICONTROL Named rights]**:
+   Sie können auch eine oder mehrere Spezifische Berechtigungen auswählen (siehe [Spezifische Berechtigungen](#named-rights)). Klicken Sie dazu auf den Pfeil rechts neben dem **[!UICONTROL Folder]** Feld und wählen Sie **[!UICONTROL Named rights]**:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
@@ -103,11 +103,11 @@ Nachdem das Profil des Operators erstellt wurde, können Sie dessen Informatione
 
 >[!NOTE]
 >
->Im **[!UICONTROL Session timeout]** Feld können Sie die Verzögerung vor dem Timeout der FDA-Sitzung anpassen. Weitere Informationen finden Sie unter [Informationen zum Zugriff auf](../../platform/using/about-fda.md)Federated Data.
+>Im **[!UICONTROL Session timeout]** Feld können Sie die Verzögerung vor dem Sitzungs-Timeout der FDA anpassen. Weitere Informationen finden Sie unter [Info zu Federated Data Access](../../platform/using/about-fda.md).
 
 ### Benutzer-Zeitzone {#time-zone-of-the-operator}
 
-Auf der **[!UICONTROL General]** Registerkarte können Sie die Zeitzone des Operators auswählen. Standardmäßig arbeiten Operatoren in der Zeitzone des Servers. Es ist jedoch möglich, mithilfe der Dropdownliste eine andere Zeitzone auszuwählen.
+Auf der **[!UICONTROL General]** Registerkarte können Sie die Zeitzone des Operators auswählen. Standardmäßig arbeiten Operatoren in der Zeitzone des Servers. Es ist jedoch möglich, mithilfe der Dropdown-Liste eine andere Zeitzone auszuwählen.
 
 Die Konfiguration der Zeitzonen wird auf [dieser Seite](../../installation/using/time-zone-management.md) beschrieben.
 
@@ -152,7 +152,7 @@ The **[!UICONTROL Edit the access parameters...]** link lets you access the foll
 
 ### Ordner, Validierung und Aufgaben eines Benutzers {#folders--approval-and-tasks-of-an-operator}
 
-Auf der **[!UICONTROL Audit]** Registerkarte können Sie Informationen zum Operator anzeigen. Die verschiedenen Registerkarten werden automatisch hinzugefügt, basierend auf den Einstellungen, die im Interventionsbereich des Operators definiert sind.
+Auf der **[!UICONTROL Audit]** Registerkarte können Sie Informationen zur Ansicht des Operators anzeigen. Die verschiedenen Registerkarten werden automatisch hinzugefügt, basierend auf den Einstellungen, die im Interventionsbereich des Operators definiert sind.
 
 Sie haben Zugriff auf Folgendes:
 
@@ -281,32 +281,51 @@ Es existieren folgende Standardgruppen:
 
 ## Spezifische Berechtigungen {#named-rights}
 
-Adobe Campaign bietet standardmäßig einen Satz benannter Rechte, mit denen Sie die den Operatoren und Gruppen von Operatoren zugewiesenen Berechtigungen definieren können. Diese Rechte können vom **[!UICONTROL Administration > Access management > Named rights]** Knoten des Baums bearbeitet werden.
+Adobe Campaign schlägt standardmäßig eine Reihe von Spezifische Berechtigungen vor, mit denen Sie die den Operatoren und Benutzergruppen zugewiesenen Berechtigungen definieren können. Diese Rechte können vom **[!UICONTROL Administration > Access management > Named rights]** Knoten des Baums bearbeitet werden.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
 Es handelt sich um folgende Berechtigungen:
 
-* ADMINISTRATION: Allgemeine Berechtigung zur Verwaltung aller Ordner der Konsole.
-* VALIDIERUNGSADMINISTRATION: Berechtigt zur Zuordnung der Validierungsverantwortlichen.
-* ZENTRAL: Berechtigt zur zentralen Verwaltung (Distributed Marketing).
-* LÖSCHEN VON ORDNERN: Berechtigt zum Löschen von Ordnern.
-* BEARBEITUNG VON ORDNERN: Berechtigt zur Bearbeitung der Ordnereigenschaften (Name, Titel, zugeordnetes Bild etc.).
-* EXPORT: Berechtigt zum Export von Daten.
-* ZUGRIFF AUF DATEIEN: Berechtigt zum Lese- und Schreibzugriff auf Dateien von einem Script ausgehend.
-* ALLGEMEINER IMPORT: Berechtigt zum allgemeinen Import von Daten.
-* EINFÜGEN VON ORDNERN: Berechtigt zum Einfügen von Ordnern.
-* LOKAL: Berechtigt zur lokalen Verwaltung (Distributed Marketing).
-* FUSION: Berechtigt zur Fusion von Datensätzen.
-* SENDUNGEN VORBEREITEN: Berechtigt zum Erstellen, Bearbeiten und Starten der Versandanalyse.
-* DATENRECHT: Recht, Datenschutzdaten zu sammeln und zu löschen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
-* AUSFÜHRUNG VON PROGRAMMEN: Berechtigt zur Ausführung von externen Programmen.
-* IMPORT VON EMPFÄNGERN: Berechtigt zum Import von Empfängern.
-* AUSFÜHRUNG VON SQL-Scripts: Berechtigt zur Ausführung von SQL-Scripts bezüglich der Datenbank.
-* SENDUNGEN STARTEN: Berechtigt zur Validierung von zuvor analysierten Sendungen.
-* USE SQL DATA MANAGEMENT ACTIVITY: Berechtigt zum Schreiben Ihrer eigenen SQL-Scripts unter Verwendung der SQL-Data-Management-Aktivität, um Arbeitstabellen zu erstellen und zu füllen (siehe [diesen Abschnitt](../../workflow/using/sql-data-management.md)).
-* WORKFLOW: Berechtigt zur Nutzung von Workflows.
-* WEBAPP: Berechtigt zur Nutzung von Webanwendungen.
+* **[!UICONTROL ADMINISTRATION]**: Operatoren mit der **[!UICONTROL ADMINISTRATION]** Berechtigung haben vollen Zugriff auf die Instanz. Administratoren können Objekte wie Workflow, Versand, Skripten usw. ausführen, erstellen, bearbeiten, löschen.
+
+* **[!UICONTROL APPROVAL ADMINISTRATION]**: Sie können mehrere Genehmigungsschritte innerhalb von Workflows und Versänden festlegen, um sicherzustellen, dass der aktuelle Status von einem zugewiesenen Operator oder einer zugewiesenen Gruppe genehmigt wurde. Benutzer mit der **[!UICONTROL APPROVAL ADMINISTRATION]** Berechtigung können Genehmigungsschritte festlegen und auch einen Operator oder eine Operatorgruppe zuweisen, der bzw. die diese Schritte genehmigen soll.
+
+* **[!UICONTROL CENTRAL]**: Recht auf Zentralverwaltung (Dezentrale Marketing).
+
+* **[!UICONTROL DELETE FOLDER]**: Recht zum Löschen von Ordnern. Mit dieser Berechtigung können Benutzer Ordner aus der Explorer-Ansicht löschen.
+
+* **[!UICONTROL EDIT FOLDERS]**: Recht zum Ändern von Ordnereigenschaften wie interner Name, Bezeichnung, verknüpftes Bild, Reihenfolge der Unterordner usw.
+
+* **[!UICONTROL EXPORT]**: Benutzer können Daten aus ihren Adobe Campaign-Instanzen mithilfe der Workflow-Aktivität in eine Serverdatei oder auf einem lokalen Computer exportieren. **[!UICONTROL EXPORT]**
+
+* **[!UICONTROL FILES ACCESS]**: Recht auf Lese- und Schreibzugriff für Dateien über ein Skript, das in die Workflow-Aktivität geschrieben werden kann, um Dateien auf einem Server zu lesen und zu schreiben. **[!UICONTROL JavaScript]**
+
+* **[!UICONTROL IMPORT]**: Recht für den Import allgemeiner Daten. **[!UICONTROL IMPORT]** erlaubt es Ihnen, Daten in eine andere Tabelle zu importieren, während die **[!UICONTROL RECIPIENT IMPORT]** Berechtigung nur den Import in die Empfänger-Tabelle erlaubt.
+
+* **[!UICONTROL INSERT FOLDERS]**: Recht zum Einfügen von Ordnern. Benutzer mit der **[!UICONTROL INSERT FOLDERS]** rechten Maustaste können in der Explorer-Ansicht neue Ordner im Ordnerbaum erstellen.
+
+* **[!UICONTROL LOCAL]**: Recht auf lokale Verwaltung (Dezentrale Marketing).
+
+* **[!UICONTROL MERGE]**: Recht zum Zusammenführen der ausgewählten Datensätze zu einem. Wenn Empfänger als Duplikat vorhanden sind, können Sie die Duplikat mit der **[!UICONTROL MERGE]** rechten Maustaste auswählen und zu einem primären Empfänger zusammenführen.
+
+* **[!UICONTROL PREPARE DELIVERIES]**: Berechtigung zum Erstellen, Bearbeiten und Speichern eines Versands. Benutzer mit der **[!UICONTROL PREPARE DELIVERIES]** rechten Maustaste können auch den Versand-Analyse-Prozess Beginn haben.
+
+* **[!UICONTROL PRIVACY DATA RIGHT]**: Recht, Datenschutzdaten zu sammeln und zu löschen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+
+* **[!UICONTROL PROGRAM EXECUTION]**: Recht, Befehle in verschiedenen Programmiersprachen auszuführen.
+
+* **[!UICONTROL RECIPIENT IMPORT]**: Recht zum Importieren von Empfängern. Benutzer mit der **[!UICONTROL RECIPIENT IMPORT]** Berechtigung können eine lokale Datei in die Empfänger-Tabelle importieren.
+
+* **[!UICONTROL SQL SCRIPT EXECUTION]** Recht, SQL-Befehle direkt in der Datenbank auszuführen.
+
+* **[!UICONTROL START DELIVERIES]**: Recht zur Genehmigung zuvor analysierter Versand. Nach der Analyse des Versands wird der Versand bei verschiedenen Genehmigungsschritten angehalten und muss genehmigt werden, damit er wieder aufgenommen werden kann. Benutzer mit **[!UICONTROL START DELIVERIES]** Berechtigung dürfen Versand genehmigen.
+
+* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Berechtigt zum Schreiben Ihrer eigenen SQL-Scripts unter Verwendung der SQL-Data-Management-Aktivität, um Arbeitstabellen zu erstellen und zu füllen (siehe [diesen Abschnitt](../../workflow/using/sql-data-management.md)).
+
+* **[!UICONTROL WORKFLOW]**: Recht, Workflows auszuführen. Ohne dieses Recht können Benutzer Workflows nicht Beginn ausführen, beenden oder neu starten.
+
+* **[!UICONTROL WEBAPP]**: Berechtigt zur Nutzung von Webanwendungen.
 
 >[!NOTE]
 >
@@ -360,7 +379,7 @@ Die in diesem Fenster festgelegten Berechtigungen werden dadurch auf alle Untero
 
 ### Allen Benutzern Zugriff gewähren {#grant-access-to-all-operators}
 
-Wenn auf der **[!UICONTROL Security]** Registerkarte die **[!UICONTROL System folder]** Option ausgewählt ist, haben alle Operatoren unabhängig von ihren Rechten Zugriff auf diese Daten. Wenn diese Option gelöscht wird, müssen Sie den Operator (oder seine Gruppe) explizit zur Liste der Genehmigungen hinzufügen, damit sie Zugriff haben.
+Wenn auf der **[!UICONTROL Security]** Registerkarte die **[!UICONTROL System folder]** Option ausgewählt ist, haben alle Operatoren unabhängig von ihren Rechten Zugriff auf diese Daten. Wenn diese Option gelöscht wird, müssen Sie den Operator (oder seine Gruppe) explizit zur Liste der Autorisierungen hinzufügen, damit sie Zugriff haben.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
 
@@ -395,7 +414,7 @@ Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzu
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. Wählen Sie auf der **[!UICONTROL Restriction]** Registerkarte **[!UICONTROL This folder is a view]**. Alle Auslieferungen in der Datenbank werden dann angezeigt.
+1. Wählen Sie auf der **[!UICONTROL Restriction]** Registerkarte **[!UICONTROL This folder is a view]**. Alle Versand in der Datenbank werden dann angezeigt.
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
