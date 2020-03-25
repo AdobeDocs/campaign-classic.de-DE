@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+source-git-commit: 443c119593e9ba4c3cdf6a6d2ee742a0a17830c5
 
 ---
 
@@ -52,6 +52,22 @@ Im Webzugriff hingegen stehen vorwiegend konsultative Optionen zur Verfügung:
 
 ![](assets/operation_from_web.png)
 
+### Sprachen {#languages}
+
+Die Sprache wird bei der Installation der Adobe Campaign Classic-Instanz ausgewählt und kann danach nicht mehr geändert werden. For more information on how to create an instance, refer to this [page](../../installation/using/creating-an-instance-and-logging-on.md).
+
+![](assets/language.png)
+
+Sie können zwischen fünf verschiedenen Sprachen wählen:
+
+* English (US)
+* English (EN)
+* französisch
+* deutsch
+* Japanisch
+
+Die Sprache, die Sie für Ihre Adobe Campaign Classic-Instanz gewählt haben, kann sich auf Datums- und Uhrzeitformate auswirken. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+
 ## Navigationsprinzipien {#navigation-basics}
 
 ### Auf Seiten navigieren {#browsing-pages}
@@ -62,7 +78,7 @@ Die Funktionen der Plattform sind in verschiedene Rubriken unterteilt. Verwenden
 
 Die Liste der Rubriken hängt von den installierten Packages und Add-ons sowie den Zugriffsberechtigungen des aktuellen Benutzers ab.
 
-Jede Funktionalität umfasst eine Reihe von Funktionen, die auf aufgabenbezogenen Anforderungen und dem jeweiligen Anwendungskontext basieren. Der **[!UICONTROL Profiles and targets]** Link ruft Sie beispielsweise zu den Empfängerlisten, den Abonnementdiensten, den vorhandenen Targeting-Arbeitsabläufen und den Verknüpfungen zum Erstellen dieser Elemente auf.
+Jede Funktion umfasst eine Reihe von Funktionen, die auf den mit der Aufgabe verbundenen Anforderungen und dem jeweiligen Nutzungskontext basieren. Der **[!UICONTROL Profiles and targets]** Link führt Sie beispielsweise zu den Listen des Empfängers, den Anmeldediensten, den vorhandenen Targeting-Workflows und den Verknüpfungen zum Erstellen dieser Elemente.
 
 The lists are available via the **[!UICONTROL Lists]** link in the left-hand section of the **[!UICONTROL Profiles and Targets]** interface.
 
@@ -70,7 +86,7 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 ### Tabs verwenden {#using-tabs}
 
-* Wenn Sie auf eine Kernfunktion oder einen Link klicken, ersetzt die entsprechende Seite die aktuelle Seite. Um zur vorherigen Seite zurückzukehren, klicken Sie auf die **[!UICONTROL Back]** Schaltfläche in der Symbolleiste. Um zur Homepage zurückzukehren, klicken Sie auf die **[!UICONTROL Home]** Schaltfläche.
+* Wenn Sie auf eine Kernfunktion oder einen Link klicken, ersetzt die entsprechende Seite die aktuelle Seite. Um zur vorherigen Seite zurückzukehren, klicken Sie auf die **[!UICONTROL Back]** Schaltfläche in der Symbolleiste. Um zur Startseite zurückzukehren, klicken Sie auf die **[!UICONTROL Home]** Schaltfläche.
 
    ![](assets/d_ncs_user_interface_back_home_buttons.png)
 
@@ -80,9 +96,9 @@ The lists are available via the **[!UICONTROL Lists]** link in the left-hand sec
 
 ### Element erstellen {#creating-an-element}
 
-In jedem Abschnitt mit den Hauptfunktionen können Sie zwischen den verfügbaren Elementen suchen. Verwenden Sie dazu die Verknüpfungen im **[!UICONTROL Browsing]** Abschnitt. Über den **[!UICONTROL Other choices]** Link können Sie unabhängig von der Umgebung auf alle anderen Seiten zugreifen.
+In jedem Abschnitt mit den Hauptfunktionen können Sie zwischen den verfügbaren Elementen suchen. Verwenden Sie dazu die Tastaturbefehle im **[!UICONTROL Browsing]** Abschnitt. Über den **[!UICONTROL Other choices]** Link können Sie unabhängig von der Umgebung auf alle anderen Seiten zugreifen.
 
-Sie können ein neues Element erstellen (Bereitstellung, Webanwendung, Workflow usw.) mit den Tastaturbefehlen im **[!UICONTROL Create]** Abschnitt links im Bildschirm. Verwenden Sie die **[!UICONTROL Create]** Schaltfläche oberhalb der Liste, um der Liste neue Elemente hinzuzufügen.
+Sie können ein neues Element erstellen (Versand, Webanwendung, Workflow usw.) mit den Tastaturbefehlen im **[!UICONTROL Create]** Abschnitt links im Bildschirm. Verwenden Sie die **[!UICONTROL Create]** Schaltfläche über der Liste, um der Liste neue Elemente hinzuzufügen.
 
 For example, on the delivery page, use the **[!UICONTROL Create]** button to create a new delivery.
 
@@ -267,7 +283,7 @@ Anschließend kann diese Konfiguration auf einen anderen Ordner vom Typ **Versan
 
 ![](assets/s_ncs_user_folder_save_config_3.png)
 
-Klicken Sie **[!UICONTROL Save]** im Fenster mit den Ordnereigenschaften auf . Die Listenanzeige wurde entsprechend der angegebenen Konfiguration geändert:
+Klicken Sie **[!UICONTROL Save]** im Fenster mit den Ordnereigenschaften auf . Die Anzeige der Liste wurde entsprechend der angegebenen Konfiguration geändert:
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
@@ -289,7 +305,7 @@ Durch die Auswahl eines Spaltentitels werden die Daten aufsteigend oder absteige
 
 Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehen Sie dazu folgendermaßen vor:
 
-1. **[!UICONTROL Configure list]** unterhalb und rechts neben der Liste.
+1. **[!UICONTROL Configure list]** unterhalb und rechts von der Liste.
 
    ![](assets/s_ncs_user_configure_list.png)
 
@@ -308,7 +324,7 @@ Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehe
 
 ### In Listen suchen {#running-a-search}
 
-Sie können eine Suche der verfügbaren Felder in einem Editor ausführen, indem Sie das **[!UICONTROL Search]** Feld oberhalb der Feldliste verwenden. Drücken Sie auf der Tastatur die **Eingabetaste** oder navigieren Sie zur Liste. Die Felder, die zu Ihrer Suche passen, sind fett markiert.
+Sie können eine Suche der verfügbaren Felder in einem Editor ausführen, indem Sie das **[!UICONTROL Search]** Feld oberhalb der Liste der Felder verwenden. Drücken Sie auf der Tastatur die **Eingabetaste** oder navigieren Sie zur Liste. Die Felder, die zu Ihrer Suche passen, sind fett markiert.
 
 >[!NOTE]
 >
@@ -353,7 +369,7 @@ Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisc
 
 ### Werte in einer Auflistung hinzufügen {#add-values-in-an-enumeration}
 
-Mithilfe der Eingabefelder mit einer Dropdown-Liste können Sie einen Aufzählungswert eingeben, der gespeichert und dann als Option in der Dropdown-Liste angeboten werden kann. Beispielsweise können Sie im **[!UICONTROL City]** Feld der **[!UICONTROL General]** Registerkarte eines Empfängerprofils London eingeben. Wenn Sie die Eingabetaste drücken, um diesen Wert zu bestätigen, wird in einer Meldung gefragt, ob Sie diesen Wert für die mit dem Feld verknüpfte Aufzählung speichern möchten.
+Mithilfe der Eingabefelder mit einer Dropdown-Liste können Sie einen Auflistung-Wert eingeben, der gespeichert und dann als Option in der Dropdown-Liste angeboten werden kann. Beispielsweise können Sie im **[!UICONTROL City]** Feld der **[!UICONTROL General]** Registerkarte eines Empfänger-Profils London eingeben. Wenn Sie die Eingabetaste drücken, um diesen Wert zu bestätigen, wird in einer Meldung gefragt, ob Sie diesen Wert für die mit dem Feld verknüpfte Auflistung speichern möchten.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
@@ -361,7 +377,7 @@ If you click **[!UICONTROL Yes]**, this value will be available in the combo box
 
 >[!NOTE]
 >
->Aufzählungen (auch als &quot;Einzellisten&quot;bezeichnet) werden vom Administrator über den **[!UICONTROL Administration > Platform > Enumerations]** Abschnitt verwaltet. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
+>Auflistungen (auch als &quot;itemized Listen&quot;bezeichnet) werden vom Administrator über den **[!UICONTROL Administration > Platform > Enumerations]** Abschnitt verwaltet. For more on this, refer to [Managing enumerations](../../platform/using/managing-enumerations.md).
 
 ### Standardeinheiten {#default-units}
 
