@@ -14,7 +14,7 @@ discoiquuid: 4ed23249-4ecf-4e57-91b3-6fae1387bd6a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -29,8 +29,8 @@ Sie können Tracking auf Mirrorseiten, E-Mail-Protokolle und Links testen. Gehen
 1. Fügen Sie dem E-Mail-Inhalt einen Mirrorseiten-Personalisierungsbaustein (MirrorPage) hinzu.
 1. Senden Sie die den Mirrorseiten-Link enthaltende Nachricht an die Mirrorseite.
 1. Öffnen Sie nach dem Erhalt die E-Mail und klicken Sie auf den Mirrorseiten-Link.
-1. After you are correctly redirected to the mirror page, access the **Administration > Technical workflows** folder and open the **Tracking** workflow.
-1. Start the workflow, right click the **Scheduler** activity and select **Execute pending task now**.
+1. Wenn Sie ordnungsgemäß auf die Mirrorseite weitergeleitet werden, gehen Sie zu **Administration > Technische Workflows** und öffnen Sie den Workflow **Tracking**.
+1. Starten Sie den Workflow, indem Sie mit der rechten Maustaste auf die Aktivität **Planung** klicken und **Vorgezogene Ausführung der ausstehenden Aufgaben** auswählen.
 1. Warten Sie ca. 30 Sekunden und öffnen Sie dann den Tab **Verfolgung**. Vergewissern Sie sich, dass zumindest ein Trackinglog gefunden wurde.
 
    Falls Sie keine neuen Logs sehen, klicken Sie auf **Aktualisieren**.
@@ -39,9 +39,9 @@ Sie können Tracking auf Mirrorseiten, E-Mail-Protokolle und Links testen. Gehen
 
    >[!NOTE]
    >
-   >The recipient&#39;s profile page is located in the **Profiles and Targets > Recipients** folder by default.
+   >Standardmäßig befindet sich die Profilseite des Empfängers im Ordner **Profile und Zielgruppen > Empfänger**.
 
-   To check the email log tracking, look for the values **Open** and **[!UICONTROL Email click]** in the **Type** column.
+   Um das E-Mail-Logtracking zu überprüfen, sehen Sie sich in der Spalte **Typ** die Werte **Öffnen** und **[!UICONTROL E-Mail-Klick]** an.
 
-   If the open logs do not appear, go to the delivery and access its **Properties** to make sure that both **Activate tracking** and **[!UICONTROL Opens tracking]** options are checked.
+   Wenn die Öffnen-Logs nicht angezeigt werden, gehen Sie zum Versand und überprüfen Sie in seinen **Eigenschaften**, ob sowohl die Optionen **Tracking aktivieren** als auch **[!UICONTROL Öffnungstracking]** angekreuzt sind.
 
