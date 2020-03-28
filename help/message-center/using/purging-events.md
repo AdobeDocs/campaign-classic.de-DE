@@ -14,7 +14,7 @@ discoiquuid: 2f643080-93b4-4c9f-80cf-b1770b149e6c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Die Dauer der Speicherung der Ereignisse in der Datenbank kann ebenfalls über den Softwareverteilungs-Assistenten konfiguriert werden.
 
-Die Ereignisbereinigung wird automatisch vom **[!UICONTROL Database cleanup]** Arbeitsablauf durchgeführt. Dieser Arbeitsablauf löscht die Ereignisse, die in den Ausführungsinstanzen und -ereignissen empfangen und gespeichert wurden, die auf einer Steuerelementinstanz archiviert wurden.
+Die Bereinigung der Ereignisse wird automatisch vom Workflow **[!UICONTROL Datenbankbereinigung]** durchgeführt. Es handelt sich dabei um die in den Ausführungsinstanzen empfangenen und gespeicherten sowie die in der Kontrollinstanz mit Verlauf gespeicherten Ereignisse.
 
 Um die Bereinigungsparameter zu ändern, nutzen Sie die aufsteigenden und absteigenden Pfeile.
 
