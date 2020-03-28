@@ -14,7 +14,7 @@ discoiquuid: a4c62580-664d-47fe-87f5-cfe608b05e6f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -65,15 +65,15 @@ Ein Datenschema ist ein mit einem Inhalt verknüpftes XML-Dokument zur Beschreib
 >
 >Erstellung und Konfiguration von Datenschemata in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/about-schema-edition.md) beschrieben.
 >
->Configuration elements specific to content management are detailed in [Data schemas](../../delivery/using/data-schemas.md).
+>Die das Content Management betreffenden Elemente werden im Kapitel ](../../delivery/using/data-schemas.md)Datenschemata[ erläutert.
 
 Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
-1. Öffnen Sie den Adobe Campaign Explorer und wählen Sie den **[!UICONTROL Administration > Configuration > Data schemas]** Knoten aus.
+1. Markieren Sie im Explorer den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]**.
 
-   Click the **[!UICONTROL New]** icon located above the list of data schemas.
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Datenschemata-Liste.
 
-1. Wählen Sie die **[!UICONTROL Create a schema]** Option für die Inhaltsverwaltung und klicken Sie dann auf **[!UICONTROL Next]**.
+1. Kreuzen Sie die Option **[!UICONTROL Schema für das Content Management erstellen]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/s_ncs_content_create_schema.png)
 
@@ -81,15 +81,15 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema.png)
 
-   Click **[!UICONTROL Next]** to validate.
+   Klicken Sie auf **[!UICONTROL Weiter]**, um die Eingaben zu bestätigen.
 
-1. Enter the content of the schema in the **[!UICONTROL Edit schema]** window.
+1. Geben Sie nun den Inhalt des Schemas im Fenster **[!UICONTROL Schema-Bearbeitung]** ein.
 
-   Use the **[!UICONTROL Insert]** button to create the schema content.
+   Verwenden Sie hierzu die Schaltfläche **[!UICONTROL Einfügen]**.
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   For more on this, refer to [Editing schemas](../../delivery/using/data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](../../delivery/using/data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -98,9 +98,9 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Inhalt</strong><br /> </th> 
-   <th> <strong>Format</strong><br /> </th> 
-   <th> <strong>Typ</strong><br /> </th> 
+   <th> <strong>Content</strong> <br /> </th> 
+   <th> <strong>Format</strong> <br /> </th> 
+   <th> <strong>Typ</strong> <br /> </th> 
    <th> <strong>Titel</strong> <br /> </th> 
   </tr> 
  </thead> 
@@ -165,7 +165,7 @@ Das Schema stellt sich also wie folgt dar:
   </element>
 ```
 
-1. Click **[!UICONTROL Save]** to create the data schema.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung des Datenschemas abzuschließen.
 
 ## 3. Schritt - Erstellung des Formulars {#step-3---creating-the-input-form}
 
@@ -177,21 +177,21 @@ Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, welches di
 >
 >Erstellung und Konfiguration von Formularen in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/identifying-a-form.md) beschrieben.
 >
->Configuration elements specific to content management are detailed in [Input forms](../../delivery/using/input-forms.md).
+>Die das Content Management betreffenden Elemente werden im Kapitel ](../../delivery/using/input-forms.md)Formulare[ erläutert.
 
 Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstellen:
 
-1. Öffnen Sie den Adobe Campaign Explorer und wählen Sie den **[!UICONTROL Administration > Configuration > Input forms]** Knoten aus.
+1. Markieren Sie im Explorer den Knoten **[!UICONTROL Administration > Konfiguration > Formular]**.
 
-   Click the **[!UICONTROL New]** icon above the list of forms.
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Formularliste.
 
-1. Geben Sie Namen und Titel des Formulars an und wählen Sie den Typ **[!UICONTROL Content management]** aus.
+1. Geben Sie Namen und Titel des Formulars an und wählen Sie den Typ **[!UICONTROL Content Management]** aus.
 
    ![](assets/s_ncs_content_param_form_edit.png)
 
    >[!NOTE]
    >
-   >Damit beide Elemente automatisch übereinstimmen, sollten Sie denselben Namen wie für das verknüpfte Datenschema verwenden. Verwenden Sie die **[!UICONTROL Insert]** Schaltfläche oberhalb der Eingabezone, um Felder aus dem mit dem Formular verknüpften Schema hinzuzufügen.
+   >Um die automatische Verknüpfung zwischen Datenschema und Formular zu erzeugen, wird empfohlen, für beide den gleichen Namen zu verwenden. Auf diese Weise können Sie die aus dem Schema stammenden Felder ganz einfach über die **[!UICONTROL Einfügen]**-Schaltfläche hinzufügen.
 
    ![](assets/s_ncs_content_param_form_edit_step2.png)
 
@@ -213,11 +213,11 @@ Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstelle
      </input>
    ```
 
-   The **[!UICONTROL Preview]** tab lets you check the rendering of the form while you are editing it:
+   Im **[!UICONTROL Vorschau]**-Tab können Sie das Rendering des erstellten Formulars prüfen:
 
    ![](assets/s_ncs_content_param_form_preview.png)
 
-1. Click **[!UICONTROL Save]** to create the input form.
+1. Klicken Sie nun auf **[!UICONTROL Speichern]**, um die Formularerstellung abzuschließen.
 
 ## 4. Schritt - Erstellung der Umwandlungsvorlagen {#step-4---creating-the-construction-template}
 
@@ -227,18 +227,18 @@ Im vorliegenden Beispiel wird ein JavaScript-Template verwendet, um den Aufbau u
 
 >[!NOTE]
 >
->Constraints linked to document building (JavaScript or XSL template) are detailed in [Formatting](../../delivery/using/formatting.md).
+>Eventuelle Einschränkungen in Verbindung mit der Dokumentenerstellung via JavaScript oder XSL werden im Abschnitt [Formatierung](../../delivery/using/formatting.md) behandelt.
 
 Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstellen:
 
-1. Öffnen Sie den Adobe Campaign Explorer und wählen Sie den **[!UICONTROL Administration > Configuration > JavaScript Templates]** Knoten aus.
+1. Markieren Sie im Explorer den Knoten **[!UICONTROL Administration > Konfiguration > JavaScript-Templates]**.
 
-   Click the **[!UICONTROL New]** icon above the list of templates.
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Template-Liste.
 
 1. Geben Sie einen Namen für das Template ein und wählen Sie das zuvor für das Content Management erstellte Schema aus.
 1. Importieren Sie die Inhalte, die in allen Ausgabedokumenten, die das Template verwenden, unveränderlich angezeigt werden sollen.
 
-   Add the variable elements while respecting the syntax detailed in [JavaScript templates](../../delivery/using/formatting.md#javascript-templates).
+   Fügen Sie unter Beachtung der im Abschnitt ](../../delivery/using/formatting.md#javascript-templates)JavaScript-Templates[ dargestellten Syntax die variablen Elemente ein.
 
    Für das vorliegende Beispiel stellt sich das JavaScript-Template wie folgt dar:
 
@@ -331,7 +331,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
    </html>
    ```
 
-   Durch Aufruf einer Funktion am Anfang einer Vorlage können Sie einen Aufruf zu Personalisierungsdaten aus der Adobe Campaign-Datenbank einrichten (in diesem Fall: empfänger.firstName und empfänger.lastName), sodass sie bei der Verwendung in einer Bereitstellung interpretiert werden können. Weitere Informationen hierzu finden Sie unter JavaScript-Vorlage [einschließen](../../delivery/using/formatting.md#including-a-javascript-template).
+   Der Funktionsaufruf zu Beginn des Templates steuert die Personalisierung des Dokuments und verweist auf Informationen, die in der Adobe Campaign-Datenbank gespeichert sind (hier recipient.firstName und recipient.lastName). Bei Durchführung eines Versands, der auf diesem Template beruht, werden diese Daten dynamisch ersetzt. Weitere Informationen hierzu finden Sie unter [Verwendung von JavaScript-Templates](../../delivery/using/formatting.md#including-a-javascript-template).
 
    Im vorliegenden Beispiel enthält die Funktion folgenden Code:
 
@@ -350,7 +350,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
    }
    ```
 
-   In order for the JavaScript template to be valid, this function must be created beforehand from the **[!UICONTROL JavaScript codes]** node in the tree structure, as below:
+   Damit das JavaScript-Template gültig ist, muss diese Funktion zuvor im Knoten **[!UICONTROL JavaScript-Code]** des Navigationsbaums, wie unten gezeigt, erstellt werden:
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
@@ -360,25 +360,25 @@ In diesem Schritt wird die Vorlage erstellt, die die Relation zwischen Schema, F
 
 >[!NOTE]
 >
->For more on content publication templates, refer to [Publication templates](../../delivery/using/publication-templates.md).
+>Weiterführende Informationen finden Sie im Abschnitt [Publikationsvorlagen](../../delivery/using/publication-templates.md).
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie eine neue Veröffentlichungsvorlage über den **[!UICONTROL Administration > Configuration > Publication templates]** Knoten.
+1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Publikationsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
-1. Geben Sie dann den Namen der Vorlage ein und wählen Sie den Rendermodus, den Sie anwenden möchten. Hier haben wir eine **[!UICONTROL JavaScript]** Art Rendering basierend auf der Vorlage erstellt oben.
+1. Füllen Sie das Feld **[!UICONTROL Vorlagenname]** aus und wählen Sie im Tab den gewünschten Typ aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.
 
    ![](assets/s_ncs_content_param_form_publish.png)
 
    >[!NOTE]
    >
-   >Die **[!UICONTROL DOM interface]** Option ist standardmäßig aktiviert, sodass auf dieses Dokument nicht zugegriffen werden kann, wenn Sie die E4X-Syntax verwenden. Die DOM-Schnittstelle muss verwendet werden, wenn diese Option aktiviert ist und die empfohlene Syntax ist.
+   >Die Option **[!UICONTROL DOM-Schnittstelle]** ist standardmäßig aktiviert, was bedeutet, dass der Zugriff auf das Dokument nicht über die E4X-Syntax erfolgen kann. Wenn diese Option aktiviert ist, muss die DOM-Schnittstelle verwendet werden. Sie ist auch die empfohlene Syntax.
    >
    >Wenn Sie dennoch die E4X-Syntax verwenden möchten, deaktivieren Sie diese Option.
 
-   Use the **[!UICONTROL Add]** button to create other transformation templates.
+   Verwenden Sie die **[!UICONTROL Hinzufügen]**-Schaltfläche, wenn Sie weitere Umwandlungsvorlagen erstellen möchten.
 
-1. Click **[!UICONTROL Save]** to create the publication template.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Vorlagenerstellung abzuschließen.
 
 ## 6. Schritt - Erstellung des Inhalts {#step-6---creating-contents}
 
@@ -386,13 +386,13 @@ Nun können Sie auf der zuvor erstellten Publikationsvorlage beruhende Inhalte e
 
 >[!NOTE]
 >
->Weitere Informationen zum Erstellen von Inhalten finden Sie unter [Verwenden einer Inhaltsvorlage](../../delivery/using/using-a-content-template.md).
+>Weitere Informationen zum Erstellen von Inhalten finden Sie unter [Verwendung von Inhaltsvorlagen](../../delivery/using/using-a-content-template.md).
 
 ### Inhaltserstellung im Versand-Assistenten {#creating-content-in-the-delivery-wizard}
 
 Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
-1. Start by referencing the publication template via the **[!UICONTROL Advanced]** tab of the delivery properties.
+1. Geben Sie im **[!UICONTROL Erweitert]**-Tab der Versandeigenschaften die Publikationsvorlage an.
 
    ![](assets/s_ncs_content_in_delivery.png)
 
@@ -402,6 +402,6 @@ Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
    ![](assets/s_ncs_content_in_delivery_edition_tab.png)
 
-1. Klicken Sie auf die **[!UICONTROL HTML preview]** Registerkarte, um die Wiedergabe anzuzeigen. Sie müssen einen Empfänger auswählen, um die Personalisierung zu testen.
+1. Klicken Sie auf den **[!UICONTROL HTML-Vorschau]**-Tab und wählen Sie einen Empfänger aus, um Rendering und Personalisierung zu testen.
 
    ![](assets/s_ncs_content_use_in_delivery_preview.png)
