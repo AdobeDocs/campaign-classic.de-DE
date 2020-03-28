@@ -14,7 +14,7 @@ discoiquuid: 6dad49af-4818-471b-9df1-057cc6b9a68a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,18 +22,18 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # Testadressen erstellen{#creating-seed-addresses}
 
-Seed addresses are not managed via standard profiles and targets, but in a dedicated node of the Adobe Campaign hierarchy **[!UICONTROL Resources > Campaign management > Seed addresses]**.
+Testadressen werden separat von Standard-Profilen und -Zielgruppen im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Testadressen]** verwaltet.
 
-Sie können Unterordner erstellen, um die Startadressen zu organisieren. Klicken Sie dazu mit der rechten Maustaste auf den **[!UICONTROL Seed addresses]** Knoten und wählen Sie **[!UICONTROL Create a new 'Seed addresses' folder]**. Benennen Sie den Unterordner und drücken Sie dann **[!UICONTROL Enter]** zur Überprüfung die Eingabetaste. Sie können jetzt Seed-Adressen erstellen oder in diesen Unterordner kopieren. For more on this, refer to [Defining addresses](#defining-addresses).
+Zur besseren Übersicht können Sie Unterordner anlegen. Klicken Sie hierfür mit der rechten Maustaste auf den **[!UICONTROL Testadressen]**-Knoten und wählen Sie die Option **[!UICONTROL Testadressen-Ordner hinzufügen]** aus. Benennen Sie den neuen Ordner und bestätigen Sie die Eingabe mit **[!UICONTROL Enter]**. Nun können Sie neue Testadressen erstellen oder existierende Adressen in diesen Unterordner kopieren. Weitere Informationen hierzu finden Sie im Abschnitt [Adressen konfigurieren](#defining-addresses).
 
-Mit Adobe Campaign können Sie auch Vorlagen für Startadressen erstellen, die in Auslieferungen oder Kampagnen importiert und je nach den spezifischen Anforderungen der jeweiligen Auslieferungen und Kampagnen angepasst werden. Weitere Informationen finden Sie unter [Erstellen von Vorlagen](#creating-seed-address-templates)für Startadressen.
+Adobe Campaign bietet auch die Möglichkeit, Testadressenvorlagen zu erstellen, die in Sendungen oder Kampagnen importiert und deren spezifischen Bedürfnissen angepasst werden. Weitere Informationen finden Sie unter [Testadressenvorlagen erstellen](#creating-seed-address-templates).
 
 ## Adressen konfigurieren {#defining-addresses}
 
 Gehen Sie zur Erstellung von Testadressen wie folgt vor:
 
-1. Click the **[!UICONTROL New]** button above the list of seed addresses.
-1. Geben Sie die mit der Adresse verknüpften Daten in die entsprechenden Felder auf der **[!UICONTROL Recipient]** Registerkarte ein. Die verfügbaren Felder entsprechen den Standardfeldern in den Profilen der Empfänger der Auslieferung (nms:Empfängertabelle): Name, Vorname, E-Mail usw.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Testadressenliste.
+1. Füllen Sie im Tab **[!UICONTROL Empfänger]** die jeweiligen Felder aus. Die verfügbaren Felder entsprechen den Standardfeldern in den Profilen der Versandempfänger (nms:recipient table): Name, Vorname, E-Mail etc.
 
    >[!NOTE]
    >
@@ -43,8 +43,8 @@ Gehen Sie zur Erstellung von Testadressen wie folgt vor:
 
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
-1. In the **[!UICONTROL Seed fields]** tab, enter the values that will be inserted in the delivery logs during the analysis phase (in the **[!UICONTROL nms:broadLog]** table).
-1. In the **[!UICONTROL Additional data]** tab, enter the personalization data used for the deliveries created in the Datamanagement workflows and which you want to assign a specific value to.
+1. Geben Sie im **[!UICONTROL Adressfelder]**-Tab die Werte an, die bei der Analysephase in die Versandlogs (Tabelle **[!UICONTROL nms:broadLog]**) geschrieben werden sollen.
+1. Geben Sie im Tab **[!UICONTROL Zusätzliche Daten]** die Personalisierungsdaten an, die in mit Datamanagement-Workflows erstellten Sendungen verwendet werden und die durch einen spezifischen Wert ersetzt werden sollen.
 
 ## Testadressenvorlagen erstellen {#creating-seed-address-templates}
 
@@ -52,12 +52,12 @@ Die Erstellung von Adressenvorlagen, die importiert und für jeden Versand angep
 
 Gehen Sie wie folgt vor, um einen Vorlagenordner zu konfigurieren:
 
-1. Create a new **[!UICONTROL Seed addresses]** type folder, right-click the folder then select **[!UICONTROL Properties...]**.
+1. Erstellen Sie einen neuen Ordner vom Typ **[!UICONTROL Testadressen]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
 
    ![](assets/s_ncs_user_seedlist_template_folder.png)
 
-1. Click the **[!UICONTROL Restriction]** tab and add the following filtering condition: **@isModel = true**.
+1. Fügen Sie im Tab **[!UICONTROL Einschränkungen]** folgende Filterbedingung hinzu: **@isModel = true**.
 
    ![](assets/s_ncs_user_seedlist_folder_is_model.png)
 
-   Die in diesem Ordner gespeicherten Adressen können nun als Vorlage verwendet werden. Sie können sie in Lieferungen oder Kampagnen importieren und entsprechend den spezifischen Bedürfnissen der betreffenden Lieferungen und Kampagnen anpassen (siehe [Hinzufügen von Saatgutadressen](../../delivery/using/adding-seed-addresses.md)).
+   Die in diesem Ordner gespeicherten Adressen können nun als Vorlage verwendet werden. Sie können sie in Sendungen oder Kampagnen importieren und an die jeweiligen Bedürfnisse Ihrer Sendungen und Kampagnen anpassen (siehe [Testadressen hinzufügen](../../delivery/using/adding-seed-addresses.md)).
