@@ -14,7 +14,7 @@ discoiquuid: d678db05-cc44-4086-98a5-e5296e8e5de8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -50,7 +50,7 @@ Das folgende Beispiel zeigt ein auf dem Schema &quot;cus:Buch&quot; basierendes 
 
 Die verschiedenen JavaScript-Anweisungen werden wie folgt dargestellt:
 
-* Merge fields: displays the content of the data with the **`<%= <source> %>`** syntax where `<source>`is the source field of the data to be displayed.
+* Verbindungsfelder: zeigt den Dateninhalt mit der Syntax **`<%= <source> %>`** an, wobei `<source>` das Quellfeld der anzuzeigenden Daten bezeichnet.
 * Anweisungsblock: führt zwischen den Tags &lt;% und %> enthaltene JavaScript-Anweisungen aus.
 
 Das Objekt **content** steht für das Hauptelement des XML-Quelldokuments.
@@ -61,7 +61,7 @@ Die nächste Zeile unseres Beispiels zeigt den Inhalt des Buchtitels:
 <h1><%= content.@name %></h1>
 ```
 
-The following code iterates on the `<chapter>` collection element:
+Der anschließende Code bezieht sich auf das Kollektionselement `<chapter>`:
 
 ```
 <% for each(var chapter in content.chapter) { %>
@@ -73,16 +73,16 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 
 **Beispiel**:
 
-* **content.@name**: retrieves the value of the &quot;name&quot; attribute of the main element
+* **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
 * **content.@`['name']`**: identisch mit dem** Inhalt.@name **-Syntax
-* **content.chapter.length**: gibt die Anzahl der Elemente im `<chapter` Collection-Element zurück
-* **content.chapter`[0]`.@name**: retrieves the name of the first `<chapter>` element
-* **chapter.name()**: gibt den Namen des `<chapter>` Elements zurück
-* **chapter.parent().name()**: gibt den Namen des übergeordneten Elements von `<chapter>`
+* **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
+* **content.chapter`[0]`.@name**: gibt den Namen des ersten Elements von `<chapter>` aus
+* **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
+* **chapter.parent().name()**: gibt den Namen des Elternelements von `<chapter>` aus
 
 >[!CAUTION]
 >
->Because the &#39;-&#39; character is reserved in the JavaScript language, the recovery of the value of any attribute or element containing this character must be carried out via the `['<field>']` syntax.
+>Da das Zeichen &#39;-&#39; in JavaScript bereits belegt ist, muss die Abfrage eines Attributs oder Elements, das dieses Zeichen enthält, über die `['<field>']`-Syntax erfolgen.
 >
 >Beispiel: `content.@['offer-id']`.
 
@@ -182,7 +182,7 @@ Der Inhalt des JavaScript-Templates wird im Editor erfasst:
 >
 >Um JavaScript-Objekte initialisieren zu können, muss das Schema des verknüpften Datenmodells angegeben werden.
 
-To generate the preview of the output document at any time, select a content and an output format (HTML, Text, XML), then click **[!UICONTROL Generate]** :
+Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie einen Inhalt und das Ausgabeformat (HTML, Text, XML) angeben und anschließend auf die Schaltfläche **[!UICONTROL Erzeugen]** klicken.
 
 ![](assets/d_ncs_content_form17.png)
 
@@ -237,7 +237,7 @@ Gehen Sie wie folgt vor:
    </srcSchema>
    ```
 
-1. Create the linked **[!UICONTROL Content management]** type form (**neo:news**)
+1. Erstellen Sie das zugeordnete Formular (**neo:News**) vom Typ **[!UICONTROL Content Management]**:
 
    ```
    <form _cs="News (neo)" entitySchema="xtk:form"  img="xtk:form.png" label="News"  name="news" namespace="neo" type="contentForm" xtkschema="xtk:form">
@@ -371,7 +371,7 @@ Gehen Sie wie folgt vor:
 
 1. Nun können Sie diese Inhaltsvorlage in Ihren Sendungen verwenden.
 
-   Weitere Informationen finden Sie unter [Verwenden einer Inhaltsvorlage](../../delivery/using/using-a-content-template.md).
+   Weitere Informationen hierzu finden Sie unter [Verwendung von Inhaltsvorlagen](../../delivery/using/using-a-content-template.md).
 
 ## XSL-Stylesheets {#xsl-stylesheets}
 
@@ -415,16 +415,16 @@ Ein Stylesheet ist ein XML-Dokument, das folgenden Regeln entspricht:
 
 * Werte von Attributen stehen zwischen Anführungszeichen,
 * Elemente weisen einen öffnenden und einen schließenden Tag auf,
-* replace the &#39;&lt;&#39; or &#39;&amp;&#39; characters with the **&#39;&lt;&#39;** or **&#39;&amp;&#39;** entities,
+* die Zeichen &#39;&lt;&#39; oder &#39;&amp;&#39; werden durch **&#39;&lt;&#39;** oder **&#39;&amp;&#39;** ersetzt,
 * jedes XSL-Element verwendet den Namensraum **xsl**.
 
-Ein Stylesheet muss mit der XSL-Stammelement-Markierung beginnen **`<xsl:stylesheet>`** und mit der **`</xsl:stylesheet>`** -Markierung enden. Der XSL-Namespace muss wie folgt in der öffnenden Markierung definiert werden:
+Ein Stylesheet muss mit der XSL-Stammelement-Markierung **`<xsl:stylesheet>`** beginnen und mit der **`</xsl:stylesheet>`**-Markierung enden. Der XSL-Namensraum muss wie folgt in der öffnenden Markierung definiert werden:
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 ```
 
-Das **`<xsl:output>`** Element gibt das Format des erstellten Dokuments an. Geben Sie den gewünschten Zeichensatz und das Ausgabeformat an.
+Das **`<xsl:output>`**-Element gibt das Format des erstellten Dokuments an. Geben Sie den gewünschten Zeichensatz und das Ausgabeformat an.
 
 ```
 <xsl:output encoding="ISO-8859-1" method="html"/>
@@ -459,9 +459,9 @@ Im vorliegenden Beispiel wird ausgehend vom Schema &quot;cus:Buch&quot; eine HTM
 
 ### HTML/XML anzeigen {#displaying-html-xml}
 
-Um ein **HTML** -Feld anzuzeigen, verwenden Sie die Option **disable-output-escaping=&quot;yes&quot;** aus der **`<xsl:value-of>`** Direktive. Auf diese Weise vermeiden Sie das Ersetzen von Zeichen durch ihre XML-Entität (z. B. &lt; mit &lt;).
+Um ein **HTML**-Feld anzuzeigen, verwenden Sie die Option **disable-output-escaping=&quot;yes&quot;** aus der Anweisung **`<xsl:value-of>`**. Auf diese Weise vermeiden Sie das Ersetzen von Zeichen durch ihre XML-Entität (z. B. &lt; mit &lt;).
 
-The **`<xsl:text>`** directive with the **disable-output-escaping=&quot;yes&quot;** option lets you insert JavaScript tags for personalization fields or conditional tests.
+Die Anweisung **`<xsl:text>`** mit der Option **disable-output-escaping=&quot;yes&quot;** erlaubt die Verwendung von JavaScript-Tags für Personalisierungsfelder oder bedingte Tests.
 
 Beispiele:
 
@@ -487,7 +487,7 @@ Beispiele:
 
 Sie haben die Möglichkeit, eine Bibliothek mit Vorlagen oder Variablen anzulegen, die in mehreren Stylesheets verwendet werden. Die unten dargestellte **Vorlage** &quot;longMonth&quot; ist ein typisches Beispiel für die Auslagerung einer Vorlage in ein Stylesheet, welches seine spätere Wiederverwendung ermöglicht.
 
-The **`<xsl:include>`** directive indicates the name of the stylesheet to be included in the document.
+Die Anweisung **`<xsl:include>`** verweist auf den Namen des in das Dokument einzufügenden Stylesheets.
 
 **Beispiel**: Verwendung des Stylesheets &quot;common.xsl&quot;.
 
@@ -510,7 +510,7 @@ Der Inhalt des Stylesheets wird im Editor erfasst:
 
 ![](assets/d_ncs_content_form14.png)
 
-To generate a preview of the output document at any time, select a content instance and the format (HTML, Text, XML), and then click **[!UICONTROL Generate]** :
+Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie einen Inhalt und das Ausgabeformat (HTML, Text, XML) angeben und anschließend auf die Schaltfläche **[!UICONTROL Erzeugen]** klicken.
 
 ![](assets/d_ncs_content_form15.png)
 
@@ -526,12 +526,12 @@ Die im HTML-Ausgabedokument angegebenen Bilder können mit relativen oder absolu
 
 Bei der relativen Adressierung kann in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** die URL des Servers, auf dem die Bilder gespeichert sind, angegeben werden. Die Optionen enthalten den Speicherort der Bilder in der Adobe-Campaign-Clientkonsole für die Publikation und die Vorschau.
 
-These two options are accessible via the option management screen in the **[!UICONTROL Administration > Platform > Options]** folder.
+Auf beide Optionen kann im Explorer über den Knoten **[!UICONTROL Administration > Plattform > Optionen]** zugegriffen werden.
 
 **Beispiel**:
 
 * NcmResourcesDir = &quot;https://server/images/&quot;
-* NcmRessourcesDirPreview = &quot;x:/images/&quot;
+* NcmResourcesDirPreview = &quot;x:/images/&quot;
 
 Bei der Verarbeitung des Stylesheets wird je nach Kontext - Vorschau oder Publikation - das Attribut **_resPath** des Hauptelements des zugrunde liegenden XML-Dokuments automatisch mit einer der beiden Optionen ergänzt.
 
@@ -547,7 +547,7 @@ Beispiel für die Adressierung eines Bilds mit Pfadangabe:
 
 ### Verwendung öffentlicher Ressourcen {#using-public-resources}
 
-You can also use **[!UICONTROL Public resources]** to declare images and upload them onto the server depending on the instance settings entered in the deployment wizard.
+Eine weitere Möglichkeit ist die Verwendung der **[!UICONTROL öffentlichen Ressourcen]**, um die Bilder zu deklarieren und entsprechend der im Softwareverteilungs-Assistenten konfigurierten Instanzparameter auf den Server zu laden.
 
 Im Anschluss daran, können Sie die Bilder in Ihren Inhalten aufrufen. Verwenden Sie hierfür die folgende Syntax im Content-Management-Schema:
 
@@ -567,7 +567,7 @@ Im Formular wird das Bildauswahlfeld mit folgender Syntax deklariert:
 
 >[!NOTE]
 >
->For more on **[!UICONTROL Public resources]** and how to configure and use them, refer to [this section](../../installation/using/deploying-an-instance.md#managing-public-resources).
+>Konfiguration und Verwendung **[!UICONTROL öffentlicher Ressourcen]** werden in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#managing-public-resources) beschrieben.
 
 ## Datumsangaben {#date-display}
 
