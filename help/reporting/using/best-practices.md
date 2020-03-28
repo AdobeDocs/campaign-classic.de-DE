@@ -1,7 +1,7 @@
 ---
-title: Best Practices für die Berichterstellung
-seo-title: Best Practices für die Berichterstellung
-description: Best Practices für die Berichterstellung
+title: Best Practices für das Reporting
+seo-title: Best Practices für das Reporting
+description: Best Practices für das Reporting
 seo-description: null
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
@@ -14,13 +14,13 @@ discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
 
 ---
 
 
-# Best Practices für die Berichterstellung{#best-practices-reporting}
+# Best Practices für das Reporting{#best-practices-reporting}
 
 ## Bedarfsanalyse{#analyzing-needs}
 
