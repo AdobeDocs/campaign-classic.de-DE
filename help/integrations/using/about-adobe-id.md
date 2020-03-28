@@ -14,7 +14,7 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -29,9 +29,9 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 * Optimierte Sicherheitsrichtlinien für die Kennwortverwaltung;
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-Weiterführende Informationen zu den unterschiedlichen Adobe-Identitätstypen finden Sie hier: [https://helpx.adobe.com/de/enterprise/help/identity.html](https://helpx.adobe.com/en/enterprise/help/identity.html)
+Weiterführende Informationen zu den unterschiedlichen Adobe-Identitätstypen finden Sie hier: [https://helpx.adobe.com/de/enterprise/help/identity.html](https://helpx.adobe.com/de/enterprise/help/identity.html)
 
 >[!CAUTION]
 >
->Die IM-Implementierung ist ausschließlich dem technischen Adobe-Administrator vorbehalten. Dies ist ein komplexer Vorgang, der einige Zeit in Anspruch nehmen kann.
+>Die IMS-Implementierung ist ausschließlich dem technischen Adobe-Administrator vorbehalten. Dies ist ein komplexer Vorgang, der einige Zeit in Anspruch nehmen kann.
 
