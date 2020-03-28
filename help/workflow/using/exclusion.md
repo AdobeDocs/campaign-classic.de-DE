@@ -14,7 +14,7 @@ discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -30,9 +30,9 @@ Konfigurieren Sie die Aktivität, indem Sie sie benennen und eine Hauptmenge aus
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren und Verwenden der Ausschlussaktivität finden Sie unter Ausschließen einer Population [(Ausschluss)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-).
+>Weitere Informationen zum Konfigurieren und Verwenden der Ausschlussaktivität finden Sie unter [Populationen ausschließen (Ausschluss)](../../workflow/using/targeting-data.md#excluding-a-population--exclusion-).
 
-Aktivieren Sie die **[!UICONTROL Generate complement]** Option, wenn Sie die verbleibende Population ausnutzen möchten. Die Ergänzung umfasst die wichtigsten eingehenden Bevölkerungsgruppen abzüglich der ausreisenden Bevölkerung. Daraufhin wird der Aktivität ein zusätzlicher Ausgabeübergang hinzugefügt:
+Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie auch die restliche Population verwenden möchten. Das Komplement enthält in diesem Fall die Hauptmenge abzüglich der Ergebnismenge. Die Ausschlussaktivität weist somit, wie unten abgebildet, zwei ausgehende Transitionen auf:
 
 ![](assets/s_user_segmentation_exclu_compl.png)
 
@@ -40,15 +40,15 @@ Aktivieren Sie die **[!UICONTROL Generate complement]** Option, wenn Sie die ver
 
 Gesucht werden Empfänger zwischen 18 und 30 Jahre, die nicht in Berlin leben. Gehen Sie wie folgt vor:
 
-1. Fügen Sie nach zwei Abfragen eine **[!UICONTROL Exclusion]** -type-Aktivität ein und öffnen Sie sie. Die erste Abfrage richtet sich an Empfänger, die in Paris leben. Die zweite Abfrage wendet sich an Personen zwischen 18 und 30 Jahren.
+1. Schließen Sie einen **[!UICONTROL Ausschluss]** an zwei Abfragen an. Die erste Abfrage ruft alle Empfänger ab, die in Berlin leben, die zweite alle Empfänger zwischen 18 und 30 Jahre.
 1. Geben Sie die Hauptmenge an, in diesem Fall die Abfrage **18-30 Jahre**. Alle Empfänger, die in der Ergebnismenge der zweiten Abfrage enthalten sind, werden auf diese Weise vom Endergebnis ausgeschlossen.
-1. Markieren Sie die **[!UICONTROL Generate complement]** Option, wenn Sie die nach dem Ausschluss verbleibenden Daten ausnutzen möchten. In diesem Fall besteht die Ergänzung aus Empfängern im Alter von 18 bis 30 Jahren, die in Paris leben.
+1. Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie die ausgeschlossenen Elemente weiterverwenden möchten. In diesem Fall enthält das Komplement die Empfänger zwischen 18 und 30 Jahre, die in Berlin leben.
 1. Bestätigen Sie die Konfiguration der Ausschlussaktivität und fügen Sie ein Listen-Update an. Schließen Sie, wenn Sie das Komplement verwenden, auch hier ein Listen-Update an.
 1. Starten Sie den Workflow. Im vorliegenden Beispiel enthält die Ergebnisliste alle Empfänger im Alter von 18 bis 30 Jahre, außer denen, die in Berlin leben. Diese werden in der Komplementliste gespeichert.
 
    ![](assets/exclusion_example.png)
 
-The blacklist importation example uses an **Exclusion**-type activity which can be found in [Read list](../../workflow/using/read-list.md).
+Ein Beispiel eines Ausschlussdatei-Imports mithilfe einer **Ausschlussaktivität** finden Sie im Abschnitt [Liste lesen](../../workflow/using/read-list.md).
 
 ## Eingabeparameter {#input-parameters}
 
@@ -63,6 +63,6 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Dieser Satz von drei Werten identifiziert das Ziel, das sich aus dem Ausschluss ergibt. **[!UICONTROL tableName]** ist der Name der Tabelle, in der die Zielkennungen aufgezeichnet werden, das Schema der Population (normalerweise nms:empfänger) und die Anzahl der Elemente in der Tabelle **[!UICONTROL schema]** ist **[!UICONTROL recCount]** dies.
+Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
