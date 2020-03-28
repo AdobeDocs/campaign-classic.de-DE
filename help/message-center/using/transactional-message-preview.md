@@ -14,7 +14,7 @@ discoiquuid: 3bc88f9c-cc42-4bf6-a318-0093c73e4d82
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalts können Sie eine Vorschau Ihrer Nachricht erzeugen und ihre Personalisierung überprüfen:
 
-1. In the message template, click the **[!UICONTROL Preview]** tab.
+1. Klicken Sie in der Nachrichtenvorlage auf den Tab **[!UICONTROL Vorschau]**.
 
    ![](assets/messagecenter_preview_001.png)
 
-1. Wählen Sie **[!UICONTROL A seed address]** in der Dropdownliste aus.
+1. Klicken Sie in der Dropdown-Liste auf **[!UICONTROL Testadresse...]**.
 
    ![](assets/messagecenter_preview_002.png)
 
