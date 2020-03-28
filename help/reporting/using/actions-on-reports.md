@@ -14,7 +14,7 @@ discoiquuid: 3b9c138e-8f7f-4ee1-9baa-328848d01d3a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ---
@@ -40,15 +40,15 @@ Wenn ein Bericht mehrere Seiten enthält, muss der Vorgang für jede Seite wiede
 
 Sie können Ihren Bericht für den Export im PDF-, Excel- oder OpenOffice-Format konfigurieren. Öffnen Sie den Adobe-Campaign-Explorer und wählen Sie den betreffenden Bericht aus.
 
-Export options are accessed via the **[!UICONTROL Page]** activities of the report, in the **[!UICONTROL Advanced]** tab.
+Die Exportoptionen sind über die **[!UICONTROL Seite]**-Aktivität(en) des Berichts im Tab **[!UICONTROL Erweitert]** zugänglich.
 
-Ändern Sie die Einstellungen von **[!UICONTROL Paper]** und **[!UICONTROL Margins]** passen Sie Ihre Anforderungen an. Sie können auch den Export einer Seite nur im PDF-Format genehmigen. Deaktivieren Sie dazu die **[!UICONTROL Activate OpenOffice/Microsoft Excel export]** Option.
+Passen Sie die Parameter **[!UICONTROL Papier]** und **[!UICONTROL Rand]** Ihren Bedürfnissen nach an. Sie haben auch die Möglichkeit, nur den Export im PDF-Format zu erlauben. Deaktivieren Sie hierzu die Option **[!UICONTROL Export in OpenOffice/Excel aktivieren]**.
 
 ![](assets/s_ncs_advuser_report_wizard_021.png)
 
 ### Nach Microsoft Excel exportieren {#exporting-into-microsoft-excel}
 
-For **[!UICONTROL List with group]** type reports destined to be exported into Excel, the following recommendations and limitations apply:
+Für Berichte vom Typ **[!UICONTROL Liste mit Gruppierung]**, die im Excel-Format exportiert werden sollen, gelten folgende Empfehlungen und Einschränkungen:
 
 * Die Berichte dürfen keine leeren Zeilen enthalten.
 
@@ -58,10 +58,10 @@ For **[!UICONTROL List with group]** type reports destined to be exported into E
 
    ![](assets/export_limitations_hide_label.png)
 
-* Die Berichte müssen keine spezielle Formatierung verwenden, die auf Zellenebene definiert ist. Es empfiehlt sich, das Format der Zellen in der Tabelle **[!UICONTROL Form rendering]** zu definieren. Der Zugriff **[!UICONTROL Form rendering]** ist über **[!UICONTROL Administration > Configuration > Form rendering]**.
+* Die Berichte dürfen keine spezifische Zellenformatierung aufweisen. Es empfiehlt sich, das **[!UICONTROL Formular-Rendering]** zu verwenden, um das Format der Zellen der Tabelle zu definieren. Der Zugriff auf das **[!UICONTROL Formular-Rendering]** erfolgt im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**.
 * Es wird empfohlen, keinen HTML-Inhalt einzufügen.
 * Wenn ein Bericht mehrere Elemente vom Typ Tabelle, Grafik etc. enthält, werden diese untereinander exportiert.
-* Sie können den Wagenrücklauf in Zellen erzwingen: Diese Konfiguration wird in Excel beibehalten. Weitere Informationen hierzu finden Sie in diesem [Definieren des Zellenformats](../../reporting/using/creating-a-table.md#defining-cell-format).
+* Sie können den Zeilenumbruch in Zellen erzwingen: Diese Konfiguration wird in Excel beibehalten. Weitere Informationen hierzu finden Sie unter [Zellenformat bestimmen](../../reporting/using/creating-a-table.md#defining-cell-format).
 
 ### Export verzögern {#postpone-the-export}
 
@@ -93,7 +93,7 @@ Weiterführende Informationen zum **nlserver**-Service finden Sie in [diesem Abs
 
 Sie haben die Möglichkeit, Ihren Bericht zu drucken. Klicken Sie hierzu auf das Drucker-Symbol. Das Druck-Dialogfenster öffnet sich.
 
-Um ein besseres Ergebnis zu erzielen, bearbeiten Sie die Druckoptionen in Internet Explorer und wählen Sie **[!UICONTROL Print background colors and images]**.
+Um das Druckergebnis zu optimieren, öffnen Sie die Druckoptionen von Internet Explorer und aktivieren Sie die Option **[!UICONTROL Farben und Hintergrundbilder drucken]**.
 
 ![](assets/s_ncs_advuser_report_print_options.png)
 
@@ -113,7 +113,7 @@ Die gespeicherten Verläufe können über das Ein-/Ausblende-Symbol angezeigt we
 
 ![](assets/s_ncs_advuser_report_history_04.png)
 
-Es ist möglich, ein Berichtsarchiv zu löschen. Gehen Sie dazu zum Adobe Campaign-Knoten, in dem Ihre Berichte gespeichert sind. Klicken Sie auf die **[!UICONTROL Archives]** Registerkarte, wählen Sie die zu löschende aus und klicken Sie auf **[!UICONTROL Delete]**.
+Der Verlauf eines Berichts kann gelöscht werden. Gehen Sie hierzu im Adobe-Campaign-Navigationsbaum in den Knoten, in dem sich Ihre Berichte befinden. Klicken Sie auf den Tab **[!UICONTROL Verläufe]**, markieren Sie den betreffenden Verlauf und klicken Sie auf **[!UICONTROL Löschen]**.
 
 ![](assets/s_ncs_advuser_report_history_01.png)
 
