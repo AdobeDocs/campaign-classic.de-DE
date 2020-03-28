@@ -14,7 +14,7 @@ discoiquuid: 72fe6df0-0271-48f9-bd6d-bb1ff25fbdf3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,17 +22,17 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # Kontext verwenden{#using-the-context}
 
-Wenn Sie Daten in Form von **[!UICONTROL tables]** oder **[!UICONTROL charts]** darstellen möchten, können sie aus zwei Quellen stammen: eine neue Abfrage (siehe [Definieren eines direkten Datenfilters](#defining-a-direct-filter-on-data)) oder den Berichtskontext (siehe [Verwenden von Kontextdaten](#using-context-data)).
+Wenn Sie Daten in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Diagrammen]** darstellen möchten, können sie aus zwei Quellen stammen: einer neuen Abfrage (siehe [Direkten Datenfilter definieren](#defining-a-direct-filter-on-data)) oder dem Berichtskontext (siehe [Kontextdaten verwenden](#using-context-data)).
 
 ## Direkten Datenfilter definieren {#defining-a-direct-filter-on-data}
 
 ### Datenfilter {#filtering-data}
 
-Die Verwendung einer **[!UICONTROL Query]** Typaktivität ist beim Erstellen eines Berichts nicht zwingend erforderlich. Daten können direkt in den Tabellen und Diagrammen gefiltert werden, aus denen der Bericht besteht.
+Die Nutzung einer Aktivität vom Typ **[!UICONTROL Abfrage]** bei der Erstellung eines Berichts ist nicht obligatorisch. Die Daten können alternativ direkt in den Tabellen und Grafiken des Berichts gefiltert werden.
 
-This enables you to select the data to display in the report directly via the **[!UICONTROL Page]** activity of the report.
+Wählen Sie in diesem Fall die im Bericht anzuzeigenden Daten direkt in der **[!UICONTROL Seite]**-Aktivität des Berichts aus.
 
-To do this, click the **[!UICONTROL Filter data...]** link in the **[!UICONTROL Data]** tab: this link lets you access the expressions editor to define a query on the data to be analyzed.
+Klicken Sie hierzu auf den im Tab **[!UICONTROL Daten]** verfügbaren Link **[!UICONTROL Daten filtern...]** aus: Dieser Link ermöglicht den Zugriff auf den Ausdruck-Editor, um eine Abfrage über die zu analysierenden Daten zu definieren.
 
 ![](assets/reporting_filter_data_from_page.png)
 
@@ -40,7 +40,7 @@ To do this, click the **[!UICONTROL Filter data...]** link in the **[!UICONTROL 
 
 Im folgenden Beispiel soll die Grafik nur die Profile der Empfänger anzeigen, die in Deutschland leben und im laufenden Jahr Einkäufe getätigt haben.
 
-Um diesen Filter zu definieren, platzieren Sie eine Seite in das Diagramm und bearbeiten Sie sie. Klicken Sie auf den **[!UICONTROL Filter data]** Link und erstellen Sie den Filter, der den anzuzeigenden Daten entspricht. Mehr Informationen über die Erstellung von Abfragen in Adobe Campaign erhalten Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
+Um diesen Filter zu definieren, positionieren Sie eine Seite im Bericht-Diagramm und öffnen Sie die Aktivität. Klicken Sie auf den Link **[!UICONTROL Daten filtern...]** und erstellen Sie den gewünschten Filter. Mehr Informationen über die Erstellung von Abfragen in Adobe Campaign erhalten Sie in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md).
 
 ![](assets/s_ncs_advuser_report_wizard_029.png)
 
@@ -60,8 +60,8 @@ Gehen Sie wie folgt vor:
 
 1. Positionieren Sie eine Seite im Diagramm und öffnen Sie sie.
 1. Erstellen Sie eine Pivot-Tabelle.
-1. Go to the **[!UICONTROL Data]** tab and select the cube to be used.
-1. Click the **[!UICONTROL Filter data...]** link and define the following query to remove Adobe from the list of companies.
+1. Wählen Sie im Tab **[!UICONTROL Daten]** den zu verwendenden Cube aus.
+1. Klicken Sie auf den Link **[!UICONTROL Daten filtern...]** und definieren Sie die folgende Abfrage, um Adobe aus der Liste der Firmen zu entfernen.
 
    ![](assets/s_ncs_advuser_report_display_03.png)
 
@@ -71,20 +71,20 @@ Somit werden nur die den Filterbedingungen entsprechenden Empfänger im Bericht 
 
 ## Kontextdaten verwenden {#using-context-data}
 
-To represent data in the form of a **[!UICONTROL table]** or a **[!UICONTROL chart]**, the data can come from the report context.
+Die im Bericht anzuzeigenden Daten können aus dem Berichtkontext stammen und in Form von **[!UICONTROL Tabellen]** oder **[!UICONTROL Grafiken]** dargestellt werden.
 
-In the page that contains the table or the chart, the **[!UICONTROL Data]** tab lets you select the data source.
+Im Tab **[!UICONTROL Daten]** der die Grafik oder die Tabelle enthaltenden Seite kann die Datenquelle ausgewählt werden.
 
 ![](assets/s_ncs_advuser_report_datasource_3.png)
 
-* Mit dieser **[!UICONTROL New query]** Option können Sie eine Abfrage zur Datenerfassung erstellen. Weitere Informationen finden Sie unter [Definieren eines direkten Datenfilters](#defining-a-direct-filter-on-data).
-* Mit der **[!UICONTROL Context data]** Option können Sie die Eingabedaten verwenden: Der Kontext des Berichts fällt mit den Informationen zusammen, die im eingehenden Übergang der Seite enthalten sind, die das Diagramm oder die Tabelle enthält. Dieser Kontext kann z. B. Daten enthalten, die über eine **[!UICONTROL Query]** **[!UICONTROL Page]** Aktivität erfasst wurden, die vor der Aktivität platziert wurde und für die Sie die Tabelle und die Felder angeben müssen, die der Bericht betrifft.
+* Mit der Option **[!UICONTROL Neue Abfrage]** können Sie eine Abfrage zur Datenerfassung erstellen. Weitere Informationen hierzu finden Sie unter [Direkten Datenfilter definieren](#defining-a-direct-filter-on-data).
+* Die Option **[!UICONTROL Kontextdaten]** ermöglicht die Verwendung der Eingangsdaten: Der Kontext des Berichts entspricht den Informationen, die von der eingehenden Transition der die Grafik oder die Tabelle enthaltenen Seite übertragen werden. Dieser Kontext kann beispielsweise Daten enthalten, die über die vor der Aktivität **[!UICONTROL Seite]** positionierte Aktivität **[!UICONTROL Abfrage]** abgerufen werden. In dieser Aktivität werden zudem die Tabelle und die Felder angegeben, auf die sich der Bericht beziehen soll.
 
 Erstellen Sie in einer Abfrage-Aktivität zum Beispiel folgende Abfrage über die Empfänger:
 
 ![](assets/s_ncs_advuser_report_datasource_2.png)
 
-Then indicate the source of the data in your report, in this case: **[!UICONTROL Data from the context]**.
+Geben Sie anschließend die Quelle der Daten Ihres Berichts im Feld **[!UICONTROL Kontextdaten]** an.
 
 Die Platzierung der Daten wird automatisch abgeleitet. Bei Bedarf können Sie den Pfad der Daten forcieren.
 
