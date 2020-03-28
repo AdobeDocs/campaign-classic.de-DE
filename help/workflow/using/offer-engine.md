@@ -14,7 +14,7 @@ discoiquuid: 08987595-e80c-4197-ad1e-9aa7cfc7c3eb
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Angebotsmodul{#offer-engine}
 
-The **[!UICONTROL Offer engine]** activity lets you define a call to the offer engine prior to a delivery.
+Die Aktivität **[!UICONTROL Angebotsmodul]** ermöglicht den Aufruf des Interaction-Angebotsmoduls im Vorfeld eines Versands.
 
 Das Prinzip dieser Aktivität entspricht dem der Anreicherung. Auch hier werden die Daten der Eingangspopulation mit einem vom Modul berechneten Angebot angereichert, bevor die eigentliche Versandaktivität startet.
 
@@ -30,7 +30,7 @@ Das Prinzip dieser Aktivität entspricht dem der Anreicherung. Auch hier werden 
 
 Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](../../workflow/using/query.md)). Gehen Sie dann wie folgt vor:
 
-1. Add and open an **[!UICONTROL Offer engine]** activity.
+1. Platzieren Sie im Anschluss an die Abfrage ein **[!UICONTROL Angebotsmodul]** und öffnen Sie es zur weiteren Bearbeitung.
 1. Konfigurieren Sie die verschiedenen Parameter der Abfrage des Angebotsmoduls (Platzierung, Kategorie oder Themen, Kontaktdatum, Anzahl beizubehaltender Angebote). Das Modul berechnet automatisch die den Parametern entsprechenden Angebote.
 
    >[!CAUTION]
@@ -39,5 +39,5 @@ Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](..
 
    ![](assets/int_offerengine_activity1.png)
 
-1. Konfigurieren Sie dann eine Auslieferungsaktivität, die Ihrem ausgewählten Kanal entspricht. Siehe [Kanalübergreifende Auslieferungen](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](../../workflow/using/cross-channel-deliveries.md).
 
