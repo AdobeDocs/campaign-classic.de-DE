@@ -14,7 +14,7 @@ discoiquuid: dddc3bdc-2344-423b-81d9-6f93847448a0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -38,7 +38,7 @@ Die folgenden Workflows werden mit dem Modul **Integration mit Adobe Experience 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Zielgruppenexport zu Adobe Experience Cloud</span> <br /> </td> 
-   <td> <span class="uicontrol">exportSharedAudience</span><br /> </td> 
+   <td> <span class="uicontrol">exportSharedAudience</span> <br /> </td> 
    <td> Dieser Workflow exportiert freigegebene Zielgruppen. Diese können dann in anderen von Ihnen verwendeten Lösungen der Adobe Experience Cloud genutzt werden.<br /> </td> 
   </tr> 
  </tbody> 
