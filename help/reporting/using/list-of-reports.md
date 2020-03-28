@@ -14,7 +14,7 @@ discoiquuid: 3e593527-5580-44ea-93dc-9084d862537e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ---
@@ -246,7 +246,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   </tr> 
   <tr> 
    <td> Kumulierte Entwicklung des Budgets (budgetCumulativeEvolution)<br /> </td> 
-   <td> Evolution of the cumulated budget costs broken down by commi<br /> tment level. </td> 
+   <td> Entwicklung der kumulierten Budgetbeträge, verteilt nach Verbindlichkeitsniveau<br /> </td> 
    <td> nms:budget<br /> </td> 
   </tr> 
   <tr> 
@@ -316,7 +316,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
 
 ## Berichte über Webanwendungen {#reports-on-web-applications}
 
-Berichte über Webanwendungen beziehen sich auf die Daten der Tabelle **nms:webApp**.
+Berichte über Webanwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
 
 Die nativen Berichte von Adobe Campaign werden in der folgenden Tabelle aufgelistet.
 
