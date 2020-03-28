@@ -14,7 +14,7 @@ discoiquuid: be037a80-3f94-465c-ba7d-ae7d50f70e36
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
 ---
@@ -28,18 +28,18 @@ Kontrollregeln dienen dazu, vor dem Versand die Gültigkeit und Qualität der Na
 
 Mehrere standardmäßige Regeln führen grundlegende Kontrollen durch. Es handelt sich um folgende, in der Benutzeroberfläche durch Fettschrift gekennzeichnete Regeln:
 
-* **[!UICONTROL Object approval]** (E-Mail): überprüft, ob das Objekt und die Adresse des Absenders keine Sonderzeichen enthalten, die Probleme bei bestimmten E-Mail-Agenten verursachen können.
-* **[!UICONTROL URL label approval]** (E-Mail): überprüft, ob jede Tracking-URL eine Beschriftung enthält.
-* **[!UICONTROL URL approval]** (E-Mail): prüft die Tracking-URLs (Vorhandensein des Zeichens &quot;&amp;&quot;).
-* **[!UICONTROL Message size approval]** (mobil): überprüft die Größe von SMS-Nachrichten.
-* **[!UICONTROL Validity period check]** (E-Mail): überprüft, dass die Gültigkeitsdauer der Lieferung lang genug ist, um alle Nachrichten zu senden.
-* **[!UICONTROL Proof size check]** (alle Kanäle): erzeugt eine Fehlermeldung, wenn die Proof-Zielpopulation 100 Empfänger überschreitet.
-* **[!UICONTROL Wave scheduling check]** (E-Mail): überprüft, ob die letzte Zustellungswelle vor Ablauf der Gültigkeitsdauer beginnen soll, wenn die Zustellung in mehrere Wellen unterteilt wird.
-* **[!UICONTROL Unsubscription link approval]** (E-Mail): prüft, ob in jedem Inhalt (HTML und Text) mindestens eine Ausschluss- (Ausschluss-)URL vorhanden ist.
+* **[!UICONTROL Betreffvalidierung]** (E-Mail): stellt sicher, dass Betreff und Absenderadresse keine Sonderzeichen enthalten, die bei gewissen E-Mail-Programmen Probleme bereiten könnten.
+* **[!UICONTROL Validierung der URL-Titel]** (E-Mail): stellt sicher, dass jede Tracking-URL über einen Titel verfügt.
+* **[!UICONTROL URL-Validierung]** (E-Mail): überprüft die Tracking-URLs (Vorhandensein des &quot;&amp;&quot;-Zeichens).
+* **[!UICONTROL Validierung der Nachrichtengröße]** (Mobiltelefon): überprüft die Größe von SMS-Nachrichten.
+* **[!UICONTROL Prüfung der Gültigkeit]** (E-Mail): stellt sicher, dass die Gültigkeit des Versands ausreichend lang ist, um alle Nachrichten zu versenden.
+* **[!UICONTROL Prüfung der Testversandgröße]** (alle Kanäle): erzeugt eine Fehlernachricht, wenn die Test-Zielgruppe mehr als 100 Empfänger enthält.
+* **[!UICONTROL Prüfung der Schub-Planung]** (E-Mail): prüft im Falle von Schub-Sendungen, ob der letzte geplante Schub vor dem Ablaufdatum des Versands liegt.
+* **[!UICONTROL Validierung des Abmelde-Links]** (E-Mail): prüft, ob in jedem Inhalt (HTML und Text) mindestens eine URL vom Typ &quot;Opt-out&quot; enthalten ist.
 
 ## Kontrollregeln erstellen {#creating-a-control-rule}
 
-Es ist möglich, neue Steuerungsregeln zu erstellen, die Ihren Anforderungen entsprechen. Erstellen Sie dazu eine **[!UICONTROL Control]** Typologieregel und geben Sie die Steuerformel in SQL auf der **[!UICONTROL Code]** Registerkarte ein.
+Sie können entsprechend Ihren Bedürfnissen neue Kontrollregeln hinzufügen. Erstellen Sie hierfür eine Typologieregel vom Typ **[!UICONTROL Kontrolle]** und geben Sie die SQL-Kontrollformel im Tab **[!UICONTROL Code]** ein.
 
 **Beispiel:**
 
@@ -47,7 +47,7 @@ Im folgenden Beispiel wird eine Regel erstellt, die den Versand eines Angebots a
 
 Gehen Sie wie folgt vor:
 
-1. Create a **[!UICONTROL Control]** typology rule. Wählen Sie eine **[!UICONTROL Warning]** Warnungsebene aus.
+1. Erstellen Sie eine Typologieregel vom Typ **[!UICONTROL Kontrolle]**. Wählen Sie das Niveau **[!UICONTROL Warnung]** aus.
 
    ![](assets/campaign_opt_create_control_01.png)
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_control_05.png)
 
-   At the end of the analysis, the **[!UICONTROL Confirm delivery]** button will not be available.
+   In diesem Fall ist am Ende der Analyse die Schaltfläche **[!UICONTROL Versand bestätigen]** nicht verfügbar.
 
    ![](assets/campaign_opt_create_control_06.png)
 
