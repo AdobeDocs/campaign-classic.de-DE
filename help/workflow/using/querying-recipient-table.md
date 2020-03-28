@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ab2c133aaa2f754e56fe8fdfc76d10526d4d1ce2
 
 ---
@@ -36,58 +36,58 @@ In diesem Beispiel werden die Namen und E-Mail-Adressen der Empfänger gesucht, 
 
 * Wird das Ergebnis sortiert?
 
-   Ja, basierend auf **[!UICONTROL Account number]** und **[!UICONTROL Last name]**
+   Ja, nach **[!UICONTROL Kundennummer]** und **[!UICONTROL Nachname]**.
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie auf **[!UICONTROL Tools > Generic query editor...]** und wählen Sie die **Tabelle Empfänger** (**nms:empfänger**). Klicken Sie dann auf **[!UICONTROL Next]**.
-1. Wählen Sie: **[!UICONTROL Last name]**, **[!UICONTROL First name]**, **[!UICONTROL Email]**, **[!UICONTROL City]** und **[!UICONTROL Account number]**. Diese Felder werden hinzugefügt **[!UICONTROL Output columns]**. Klicken Sie dann auf **[!UICONTROL Next]**.
+1. Klicken Sie auf **[!UICONTROL Werkzeuge > Generisches Abfragetool...]** und wählen Sie die Tabelle der **Empfänger** (**nms:recipient**). Klicken Sie nun auf **[!UICONTROL Weiter]**.
+1. Doppelklicken Sie auf **[!UICONTROL Nachname]**, **[!UICONTROL Vorname]**, **[!UICONTROL E-Mail]**, **[!UICONTROL Ort]** und **[!UICONTROL Kundennummer]**. Diese Felder befinden sich nun im Bereich der **[!UICONTROL Ausgabespalten]**. Klicken Sie nun auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_03.png)
 
-1. Sort the columns to display them in the right order. Here we want to sort account numbers in descending order and names in alphabetical order. Then click **[!UICONTROL Next]**.
+1. Sortieren Sie die Spalten in der gewünschten Anzeigereihenfolge, hier beispielsweise die Kundennummern in absteigender und die Nachnamen in alphabetischer Reihenfolge. Klicken Sie nun auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_04.png)
 
-1. Verfeinern Sie im **[!UICONTROL Data filtering]** Fenster die Suche: Wählen Sie **[!UICONTROL Filtering conditions]** und klicken Sie auf **[!UICONTROL Next]**.
-1. The **[!UICONTROL Target element]** window lets you enter the filter settings.
+1. Wählen Sie im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]** aus, um die Abfrageergebnisse einzuschränken, und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Das Fenster **[!UICONTROL Zielelement]** dient der Konfiguration der Filterbedingungen.
 
-   Definieren Sie die folgende Filterbedingung: Empfänger mit einer E-Mail-Domäne gleich &quot;orange.co.uk&quot;. Wählen Sie dazu in der **Spalte die Option** E-Mail-Domäne (@email)**[!UICONTROL Expression]** , wählen Sie **gleich** in der **[!UICONTROL Operator]** Spalte und geben Sie &quot;orange.co.uk&quot;in die **[!UICONTROL Value]** Spalte ein.
+   Gesucht werden die Empfänger mit E-Mail-Domain &quot;web.de&quot;. Wählen Sie also **E-Mail-Domain (@domain)** in der Spalte **[!UICONTROL Ausdruck]**, **gleich** in der Spalte **[!UICONTROL Operator]** und geben Sie &quot;web.de&quot; in der Spalte **[!UICONTROL Wert]** ein.
 
    ![](assets/query_editor_05.png)
 
-1. Klicken Sie bei Bedarf auf die **[!UICONTROL Distribution of values]** Schaltfläche, um eine Distribution anzuzeigen, die auf der E-Mail-Domäne der Interessenten basiert. Für jede E-Mail-Domäne in der Datenbank ist ein Prozentsatz verfügbar. Andere Domänen als &quot;orange.co.uk&quot;werden angezeigt, bis der Filter angewendet wird.
+1. Bei Bedarf können Sie die Schaltfläche **[!UICONTROL Werteverteilung]** auswählen. Dann werden die in der Datenbank enthaltenen E-Mail-Domains und deren Häufigkeit angezeigt. Auch alle anderen Domains werden angezeigt, da der Filter noch nicht aktiv ist.
 
    Die Zusammenfassung der Abfrage wird unten im Fenster angezeigt, hier also **E-Mail-Domain gleich web.de**.
 
-1. Click the **[!UICONTROL Preview]** to get an idea of the query result: only &quot;orange.co.uk&quot; email domains are displayed.
+1. Klicken Sie nun auf **[!UICONTROL Vorschau]**, um die Ergebnisse der Abfrage zum bisherigen Zeitpunkt anzusehen. Es werden nur Empfänger angezeigt, deren E-Mail-Domain &quot;web.de&quot; ist.
 
    ![](assets/query_editor_nveau_17.png)
 
 1. Ändern Sie die Abfrage, um nur die Empfänger anzuzeigen, die nicht in Berlin wohnen.
 
-   Wählen Sie **[!UICONTROL City (location/@city)]** in der **[!UICONTROL Expression]** Spalte **[!UICONTROL different from]** als Operator und geben Sie **[!UICONTROL London]** in die **[!UICONTROL Value]** Spalte ein.
+   Wählen Sie **[!UICONTROL Ort (location/@city)]** in der Spalte **[!UICONTROL Ausdruck]**, den Operator **[!UICONTROL ungleich]** und geben Sie **[!UICONTROL Berlin]** in der Spalte **[!UICONTROL Wert]** ein.
 
    ![](assets/query_editor_08.png)
 
-1. Das bringt dich zum **[!UICONTROL Data formatting]** Fenster. Überprüfen Sie die Spaltenreihenfolge. Verschieben Sie die Spalte &quot;Stadt&quot;unter der Spalte &quot;Kontonummer&quot; nach oben.
+1. Im Fenster **[!UICONTROL Datenformatierung]** können Sie die Anzeigereihenfolge der Ausgabespalten festlegen. Benutzen Sie die Pfeile, um die Zeile &quot;Ort&quot; nach oben unmittelbar unter &quot;Kundennummer&quot; zu verschieben.
 
    Entfernen Sie das Kreuz aus der &quot;Vorname&quot;-Checkbox, um dieses Feld im Ergebnis nicht anzuzeigen.
 
    ![](assets/query_editor_nveau_15.png)
 
-1. Klicken Sie im **[!UICONTROL Data preview]** Fenster auf **[!UICONTROL Start the preview of the data]**. Diese Funktion berechnet das Ergebnis der Abfrage.
+1. Im letzten Schritt, der **[!UICONTROL Datenvorschau]**, wird das Abfrageergebnis berechnet. Klicken Sie hierfür auf **[!UICONTROL Datenvorschau starten]**.
 
-   The **[!UICONTROL Column results]** tab shows the query result in columns.
+   Im Tab **[!UICONTROL Ergebnis in Spalten]** wird das Ergebnis der Abfrage in Spaltenform angezeigt.
 
    Die Ergebnistabelle enthält alle Empfänger, deren E-Mail-Domain &quot;web.de&quot; ist, und die nicht in Berlin wohnen. Die Vornamen werden nicht angezeigt, da diese Spalte im verangehenden Schritt abgewählt wurde. Die Kundennummern wurden in absteigender Reihenfolge sortiert.
 
    ![](assets/query_editor_nveau_12.png)
 
-   The **[!UICONTROL XML result]** tab shows the result in XML format.
+   Im Tab **[!UICONTROL XML-Ergebnis]** können Sie das Ergebnis im XML-Format einsehen.
 
    ![](assets/query_editor_nveau_13.png)
 
-   Die **[!UICONTROL Generated QSL queries]** Registerkarte zeigt das Abfrageergebnis im SQL-Format an.
+   Klicken Sie auf **[!UICONTROL Erzeugte SQL-Abfragen]**, um die SQL-Entsprechung der Abfrage anzusehen.
 
    ![](assets/query_editor_nveau_14.png)
