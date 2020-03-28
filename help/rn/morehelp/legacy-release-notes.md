@@ -1,6 +1,6 @@
 ---
-title: Alte Versionshinweise
-seo-title: Alte Versionshinweise
+title: Ältere Versionshinweise
+seo-title: Ältere Versionshinweise
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -11,11 +11,11 @@ iscontainer: true
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
 
 
-# Alte Versionshinweise{#legacy-release-notes}
+# Ältere Versionshinweise{#legacy-release-notes}
 
