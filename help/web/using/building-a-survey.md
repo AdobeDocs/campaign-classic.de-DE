@@ -14,7 +14,7 @@ discoiquuid: 6850851d-1dbe-44f0-bbff-18dbac2cad9a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -26,13 +26,13 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 In diesem Abschnitt werden die Erstellung eines Formulars vom Typ **Umfrage** in Adobe Campaign sowie die verfügbaren Optionen und Konfigurationen beschrieben. Mit Adobe Campaign können Sie diese Umfrage Benutzern zur Verfügung stellen sowie Antworten erfassen und in der Datenbank archivieren.
 
-Der Zugriff auf Webformulare erfolgt über den **[!UICONTROL Resources > Online > Web applications]** Knoten der Struktur. Um eine Umfrage zu erstellen, klicken Sie auf die **[!UICONTROL New]** Schaltfläche über der Liste der Anwendungen oder klicken Sie mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL New]**.
+Der Zugriff auf Webformulare erfolgt über den Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Baums. Wählen Sie zur Erstellung einer neuen Umfrage oberhalb der Liste der Anwendungen die Schaltfläche **[!UICONTROL Neu]** aus oder rechtsklicken Sie auf die Liste und wählen Sie **[!UICONTROL Neu]** aus.
 
 Wählen Sie die Umfragenvorlage (standardmäßig **[!UICONTROL newSurvey]**) aus.
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-Die Seiten des Formulars werden mit einem speziellen Editor erstellt, mit dem Sie Eingabefelder, Auswahlfelder (Listen, Kontrollkästchen usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Sie können in &quot;Behältern&quot;gesammelt und entsprechend den Anforderungen angeordnet werden (siehe [Hinzufügen von Fragen](#adding-questions)).
+Die Seiten des Formulars werden mit einem speziellen Editor erstellt, mit dem Sie Eingabefelder (Text), Auswahlfelder (Listen, Checkboxes usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Sie können in „Behältern“ gesammelt und entsprechend den Anforderungen angeordnet werden (siehe [Fragen hinzufügen](#adding-questions)).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Die Seiten des Formulars werden mit einem speziellen Editor erstellt, mit dem Si
 
 ## Felder hinzufügen {#adding-fields}
 
-Mithilfe der Felder in einem Formular können Benutzer Informationen eingeben und Optionen auswählen. Sie werden für jede Seite im Formular über die erste Schaltfläche in der Symbolleiste mithilfe des **[!UICONTROL Add using the wizard]** Menüs erstellt.
+Über Formularfelder können Benutzer Informationen eingeben und Optionen auswählen. Diese Felder werden für jede Formularseite mit der ersten Schaltfläche der Symbolleiste im Menü **[!UICONTROL Mit Hilfe des Assistenten hinzufügen]** erstellt.
 
 ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
@@ -52,16 +52,16 @@ Mithilfe der Felder in einem Formular können Benutzer Informationen eingeben un
 
 Beim Hinzufügen eines Felds zu einer Umfrage müssen Sie den Typ des Felds auswählen. Die folgenden Optionen sind verfügbar:
 
-1. **[!UICONTROL Answer a question]**: Mit dieser Option können Sie ein neues Feld (als &quot;archiviertes Feld&quot;bezeichnet) zum Speichern von Antworten deklarieren. In diesem Fall werden alle erfassten Werte gespeichert, auch wenn ein Teilnehmer das Formular mehrmals ausfüllt. Dieser Speichermodus ist nur in **Umfragen** verfügbar. Weitere Informationen finden Sie unter [Speichern erfasster Antworten](../../web/using/managing-answers.md#storing-collected-answers).
-1. **[!UICONTROL Edit a recipient]**: Mit dieser Option können Sie ein Feld in der Datenbank auswählen. In diesem Fall werden Benutzerantworten in diesem Feld gespeichert. Für jeden Teilnehmer wird nur der zuletzt gespeicherte Wert beibehalten und den Profildaten hinzugefügt.
-1. **[!UICONTROL Add a variable]**: Mit dieser Option können Sie ein Setup erstellen, sodass Informationen nicht in der Datenbank gespeichert werden.  Lokale Variablen können im Upstream deklariert werden. Sie können sie auch direkt beim Erstellen des Felds hinzufügen.
-1. **[!UICONTROL Import an existing question]**: Mit dieser Option können Sie vorhandene Fragen importieren, die in anderen Umfragen erstellt wurden.
+1. **[!UICONTROL Frage beantworten]**: Mit dieser Option können Sie ein neues Feld zum Speichern von Antworten festlegen („Archiviertes Feld“ genannt). In diesem Fall werden alle erfassten Werte gespeichert, auch wenn ein Besucher ein Formular mehr als einmal ausfüllt. Dieser Speichermodus ist nur in **Fragebögen** verfügbar. Weitere Informationen finden Sie unter [Erfasste Antworten speichern](../../web/using/managing-answers.md#storing-collected-answers).
+1. **[!UICONTROL Empfänger bearbeiten]**: Mit dieser Option können Sie ein Feld in der Datenbank auswählen. In diesem Fall werden die Antworten des Besuchers in diesem Feld gespeichert. Für jeden Besucher wird nur der jeweils letzte Wert gespeichert und zu den Profildaten hinzugefügt.
+1. **[!UICONTROL Variable hinzufügen]**: Mit dieser Option können Sie die Umfrage so einrichten, dass die Informationen nicht in der Datenbank gespeichert werden. Die lokalen Variablen können entweder in vorgelagerten Schritten festgelegt oder direkt bei der Erstellung des Felds hinzugefügt werden.
+1. **[!UICONTROL Existierende Frage importieren]**: Mit dieser Option können Sie bereits vorhandene, in anderen Umfragen erstellte Fragen importieren.
 
    >[!NOTE]
    >
-   >Speichermodi und Feldimporte werden unter [Speichern der erfassten Antworten](../../web/using/managing-answers.md#storing-collected-answers)ausführlich beschrieben.
+   >Speichermodi und Feldimporte werden unter [Erfasste Antworten speichern](../../web/using/managing-answers.md#storing-collected-answers) ausführlich beschrieben.
 
-Die Art des hinzuzufügenden Felds (Dropdown-Liste, Textfeld, Kontrollkästchen usw.) passt sich an den ausgewählten Speichermodus an. Sie können sie mithilfe des **[!UICONTROL Type]** Felds auf der **[!UICONTROL General]** Registerkarte ändern, stellen Sie jedoch sicher, dass sie mit dem Datentyp konsistent bleibt.
+Der Typ des Felds, das hinzugefügt werden kann (Dropdown-Liste, Textfeld, Checkboxes etc.), hängt vom ausgewählten Speichermodus ab. Der Feldtyp kann im Feld **[!UICONTROL Typ]** im Tab **[!UICONTROL Allgemein]** geändert werden. Achten Sie dabei aber darauf, dass der Feldtyp zum Datentyp passt.
 
 ![](assets/s_ncs_admin_survey_change_type.png)
 
@@ -73,7 +73,7 @@ Online-Umfragen verwenden die Funktionen von Webanwendungen. Die spezifischen Fu
 
 ### Multiple Choice {#multiple-choice}
 
-Für **[!UICONTROL Multiple choice]** Typsteuerelemente können Sie eine Mindest- und eine Höchstanzahl von Auswahlen definieren. Beispielsweise können Sie mit dieser Option die Auswahl auf mindestens **2** Werte und höchstens **4** Werte aus den verfügbaren Optionen erzwingen:
+Für Steuerelemente vom Typ **[!UICONTROL Multiple Choice]** können Sie eine Mindest- und Höchstanzahl von Auswahlmöglichkeiten definieren. Beispielsweise ermöglicht Ihnen diese Option, die Auswahl von mindestens **zwei** und höchstens **vier** Werten aus den verfügbaren Optionen zu erzwingen:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex1.png)
 
@@ -89,14 +89,14 @@ Die entsprechende Konfiguration sieht folgendermaßen aus:
 
 ![](assets/s_ncs_admin_survey_multichoice_ex3.png)
 
-In addition, the storage location for this input field must be a **[!UICONTROL Multiple values]** type **archived field**:
+Zusätzlich muss der Speicherort für dieses Eingabefeld ein **archiviertes Feld** vom Typ **[!UICONTROL Mehrfachwerte]** sein:
 
 ![](assets/s_ncs_admin_survey_multiple_values_field.png)
 
 >[!CAUTION]
 >
 >* Diese Funktion ist nur für Formulare vom Typ **Umfrage** verfügbar.
->* Diese Option ist nicht mit der Anzeige zufälliger Fragen kompatibel. For more on this, refer to [Adding questions](#adding-questions).
+>* Diese Option ist nicht mit der Anzeige zufälliger Fragen kompatibel. Weitere Informationen hierzu finden Sie unter [Fragen hinzufügen ](#adding-questions).
 
 
 ### Fragen hinzufügen {#adding-questions}
@@ -111,7 +111,7 @@ Mit einem **Frage**-Container können Sie eine Frage zur Seite hinzufügen und d
 
 ![](assets/s_ncs_admin_question_label.png)
 
-Die Bezeichnung der Frage wird in das Beschriftungsfeld eingegeben. In diesem Fall wird der Stil aus dem Stylesheet des Formulars angewendet. Wählen Sie die **[!UICONTROL Enter the title in HTML format]** Option aus, um sie zu personalisieren. Dadurch erhalten Sie Zugriff auf den HTML-Editor.
+Der Titel der Frage wird im Titelfeld eingetragen. In diesem Fall wird der Stil des Formular-Stylesheets übernommen. Wählen Sie die Option **[!UICONTROL Titel im HTML-Format angeben]** aus, um die Frage zu personalisieren. Dadurch erhalten Sie Zugriff auf den HTML-Editor.
 
 >[!NOTE]
 >
@@ -141,5 +141,5 @@ Wenn die Seite aktualisiert wird, ändert sich die Anzeige der Fragen.
 
 >[!CAUTION]
 >
->When you display a question randomly (**[!UICONTROL Display randomly]** option checked on the page), be careful not to use multiple choice questions for which one or more selections are mandatory.
+>Achten Sie bei der zufälligen Anzeige von Fragen darauf (die Option **[!UICONTROL Zufällige Anzeige]** ist auf der Seite aktiviert), dass Sie keine Multiple-Choice-Fragen verwenden, für die mindestens eine Auswahl zwingend erforderlich ist.
 
