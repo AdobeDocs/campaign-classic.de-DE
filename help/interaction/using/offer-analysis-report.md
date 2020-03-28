@@ -14,7 +14,7 @@ discoiquuid: 6aae6a10-b03e-41f1-a6e9-29100800bae1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 # Angebotsanalyse-Bericht{#offer-analysis-report}
 
-The **[!UICONTROL Offer analysis]** report provides you with an overview of the number of accepted or rejected propositions.
+Der **[!UICONTROL Angebotsanalyse]**-Bericht bietet eine Zusammenfassung der akzeptierten und abgelehnten Vorschläge.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 
    ![](assets/offer_report_perdeliveries.png)
 
-Die Daten können anhand der verschiedenen Kriterien gefiltert werden, die im oberen Bereich des Berichts verfügbar sind. Nachdem Sie die gewünschten Kriterien ausgewählt haben, klicken Sie auf den **[!UICONTROL Refresh]** Link, um sie auf den Bericht anzuwenden.
+Im Berichtskopf können Sie die angezeigten Daten mithilfe bestimmter Kriterien einschränken. Wählen Sie z. B. einen Zeitraum aus und klicken Sie abschließend auf **[!UICONTROL Aktualisieren]**, um die Filter auf den Bericht anzuwenden.
 
 ![](assets/offer_report_criteria.png)
 
