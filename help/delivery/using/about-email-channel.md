@@ -1,5 +1,5 @@
 ---
-title: Informationen zum E-Mail-Kanal in Adobe Campaign Classic
+title: Über den E-Mail-Kanal in Adobe Campaign Classic
 description: Dieser Abschnitt enthält allgemeine Informationen zum E-Mail-Kanal in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: aaef3c4a-99b2-4554-9a78-bb66459e45a4
@@ -12,7 +12,7 @@ discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b7470011bbb08cc1a7041b53e8405c971f33e51c
 
 ---
@@ -20,13 +20,13 @@ source-git-commit: b7470011bbb08cc1a7041b53e8405c971f33e51c
 
 # Über den E-Mail-Kanal{#about-email-channel}
 
-Mit Adobe Campaign können Sie personalisierte elektronische Nachrichten an eine Zielgruppe senden.
+Mit Adobe Campaign können Sie personalisierte elektronische Nachrichten an eine Zielpopulation senden.
 
-Bevor Sie mit dem Senden von E-Mails beginnen:
+Achten Sie vor dem Versand von E-Mails auf Folgendes:
 
 * Empfängerprofile müssen zumindest eine E-Mail-Adresse enthalten.
-* Erfahren Sie mehr über die Best Practices zur [Bereitstellung von Adobe Campaign](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
-* Lesen Sie mehr über [Lieferbarkeit](../../delivery/using/about-deliverability.md) und [Lieferbarkeit](https://helpx.adobe.com/campaign/kb/acc-deliverability.html).
+* Erfahren Sie mehr über [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html) mit Adobe Campaign.
+* Erfahren Sie mehr über die [Zustellbarkeit](../../delivery/using/about-deliverability.md) und [Verwaltung der Zustellbarkeit](https://helpx.adobe.com/de/campaign/kb/acc-deliverability.html).
 
 Die wichtigsten Schritte zum Senden einer E-Mail sind:
 
@@ -34,6 +34,6 @@ Die wichtigsten Schritte zum Senden einer E-Mail sind:
 * [Zielpopulation bestimmen](../../delivery/using/steps-defining-the-target-population.md)
 * [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md)
 * [E-Mail senden](../../delivery/using/sending-messages.md)
-* [Überwachung der Bereitstellung](../../delivery/using/monitoring-a-delivery.md)
+* [Sendung beobachten](../../delivery/using/monitoring-a-delivery.md)
 
-Die folgenden Abschnitte enthalten Informationen, die spezifisch für den E-Mail-Kanal sind. Globale Informationen zum Erstellen einer Bereitstellung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+Die folgenden Abschnitte enthalten Informationen, die speziell für den E-Mail-Kanal gelten. Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
