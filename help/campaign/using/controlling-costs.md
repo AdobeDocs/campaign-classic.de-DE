@@ -14,7 +14,7 @@ discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -36,33 +36,33 @@ Zur Nutzung der Budget-Verwaltung mit MRM sind folgende Etappen umzusetzen:
 
 1. Festlegung des Budgets;
 
-   For more on this, refer to [Creating a budget](#creating-a-budget).
+   Weitere Informationen hierzu finden Sie unter [Erstellung von Budgets](#creating-a-budget).
 
 1. Bestimmung des Kostenberechnungsmodus;
 
-   Kostenstrukturen werden für die Dienstleister definiert. See [Creating a service provider and its cost categories](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+   Kostenstrukturen werden für Dienstleister bestimmt. Siehe [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
 1. Bestimmung der Kampagnenkosten (Sendungen/Aufgaben);
 
-   Die Kosten, die durch die Auslieferungen und Aufgaben entstehen, werden einzeln oder global für die Kampagnenvorlage eingegeben. See [Calculation of costs and stocks](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
+   die durch Sendungen und Aufgaben anfallenden Kosten werden einzeln oder pauschal in der Kampagnenvorlage angegeben. Siehe [Kosten- und Lagerberechnung](../../campaign/using/marketing-campaign-deliveries.md#calculation-of-costs-and-stocks).
 
 1. Konsolidierung;
 
    gemäß dem Erfüllungsstatus der Aufgaben, Sendungen und Kampagnen werden die Kosten berechnet und dem entsprechenden Budget übermittelt.
 
-   When the creation of the campaign is sufficiently advanced, the progress status of the campaign budget can be changed to **[!UICONTROL Specified]**. The calculated cost of the program is then entered automatically with the costs calculated on the campaign. See [Cost commitment, calculation and charging](#cost-commitment--calculation-and-charging).
+   Wenn die Erstellung der Kampagne ausreichend fortgeschritten ist, kann der Erfüllungsstatus des Kampagnenbudgets in **[!UICONTROL Angegeben]** geändert werden. Die berechneten Kosten des Programms werden daraufhin automatisch mit den berechneten Kosten der Kampagnen konsolidiert. Siehe [Entstehung, Berechnung und Anrechnung von Kosten](#cost-commitment--calculation-and-charging).
 
 ## Erstellung von Budgets {#creating-a-budget}
 
-Die Budgets werden in der Karte über den **[!UICONTROL Campaign management > Budgets]** Knoten erstellt. Mit der **[!UICONTROL New]** Schaltfläche in der Symbolleiste können Sie ein Budget erstellen.
+Budgets werden im Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]** des Navigationsbaums über die Schaltfläche **[!UICONTROL Neu]** erstellt.
 
 * Neues Budget hinzufügen
 
-   Click the **[!UICONTROL New]** icon, name and save the budget.
+   Klicken Sie auf das Symbol **[!UICONTROL Neu]**, benennen und speichern Sie das Budget.
 
 * Zugeteilten Betrag eingeben
 
-   Geben Sie den zugewiesenen Betrag in das entsprechende Feld ein. Die anderen Beträge werden automatisch eingegeben. Siehe [Berechnen von Beträgen](#calculating-amounts).
+   Geben Sie den zugeteilten Betrag im entsprechenden Feld ein. Die übrigen Beträge werden automatisch ausgefüllt. Siehe [Betragsberechnung](#calculating-amounts).
 
 * Gültigkeitszeitraum bestimmen
 
@@ -70,7 +70,7 @@ Die Budgets werden in der Karte über den **[!UICONTROL Campaign management > Bu
 
 * Ausgaben
 
-   Erstellen Sie die Ausgabekategorien, mit denen die diesem Budget zugewiesenen Kosten für Kampagnen, Aufgaben usw. verknüpft werden können. Siehe [Ausgabenkategorien](#expense-categories).
+   Erstellen Sie die Ausgabenkategorien, denen die für Kampagnen, Sendungen, Aufgaben usw. anfallenden Kosten in diesem Budget zugeordnet werden können. Siehe [Ausgabenkategorien](#expense-categories).
 
    ![](assets/s_ncs_user_budget_create_and_save.png)
 
@@ -78,7 +78,7 @@ Die Budgets werden in der Karte über den **[!UICONTROL Campaign management > Bu
 >
 >Sie können ein übergeordnetes Budget auswählen.
 >
->Weitere Informationen finden Sie unter [Verknüpfen eines Budgets mit einem anderen](#linking-a-budget-to-another).
+>Weitere Informationen hierzu finden Sie unter [Zuordnung von Budgets untereinander](#linking-a-budget-to-another).
 
 ### Betragsberechnung {#calculating-amounts}
 
@@ -86,7 +86,7 @@ Der Anfangsbestand eines Budgets verringert sich im Zuge der ihm zugeordneten Ka
 
 >[!NOTE]
 >
->The amounts entered for the categories must match the budget envelope defined in the **[!UICONTROL Allocated]** field.
+>Die in den Kategorien eingetragenen Beträge müssen dem im Feld **[!UICONTROL Zugeteilt]** angegebenen Gesamtbudget entsprechen.
 
 In Kampagnen können je nach Verbindlichkeitsniveau Kosten für eine zukünftige Aktion geplant, eingesetzt oder reserviert werden.
 
@@ -94,28 +94,28 @@ In Kampagnen können je nach Verbindlichkeitsniveau Kosten für eine zukünftige
 
 >[!CAUTION]
 >
->Wenn eine Kampagne erstellt wird, **[!UICONTROL Budget]** muss der Status &quot;Fortschritt in&quot;auf **[!UICONTROL Defined]** eingestellt werden, damit die Kosten bei der Ausführung berücksichtigt werden. Ist der Status **[!UICONTROL Being edited]** vorhanden, werden die Kosten nicht konsolidiert.
+>Bei der Erstellung einer Kampagne muss im **[!UICONTROL Budget]**-Tab der Erfüllungsstatus **[!UICONTROL Angegeben]** sein, damit die Kosten bei der Ausführung berücksichtigt werden. Wenn der Status **[!UICONTROL In Bearbeitung]** ist, werden die Kosten nicht konsolidiert.
 >   
->Die Option **[!UICONTROL Commitment level]** stellt eine Prognose der Kosten für die Zukunft dar, bevor sie dem Haushalt in Rechnung gestellt werden. Je nach Fortschritt einer Kampagne, Aufgabe oder Bereitstellung können Sie entscheiden, eine höhere oder niedrigere Verpflichtungsstufe zuzuweisen (1). Geplant, 2. Reserviert, 3. Zugegeben) mit dem Kombinationsfeld.
+>Die Option **[!UICONTROL Verbindlichkeitsniveau]** stellt eine Schätzung der zukünftigen Kosten dar, bevor diese dem Budget angerechnet werden. Entsprechend dem Fortschritt einer Kampagne, einer Aufgabe oder eines Versands kann mithilfe der Dropdown-Liste ein höheres oder niedrigeres Niveau zugewiesen werden (1. Geplant, 2. Reserviert, 3. Eingesetzt).
 
 Beispiel: Die Kosten einer Web-Kampagne werden auf 45 000 Euro geschätzt.
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
-For the campaign, when the budget creation status is set to **[!UICONTROL Defined]**, the real cost of the campaign (or, if none, the computed cost) will be carried over into the budget totals.
+Wenn der Erfüllungsstatus des Budgets in der Kampagne **[!UICONTROL Angegeben]** ist, werden die tatsächlichen Kosten der Kampagne (oder, wenn nicht angegeben, die berechneten Kosten) in die Budgetbeträge übertragen.
 
 ![](assets/s_user_budget_in_op_a.png)
 
-According to the level of commitment of the campaign budget, the amount will be entered in the **[!UICONTROL Planned]**, **[!UICONTROL Reserved]** or **[!UICONTROL Committed]** field.
+Je nach Verbindlichkeitsniveau der Kampagne wird der Betrag in das Feld **[!UICONTROL Geplant]**, **[!UICONTROL Reserviert]** oder **[!UICONTROL Eingesetzt]** übertragen.
 
 Das Verbindlichkeitsniveau kann geändert werden:
 
-* in der **Kampagnenebene** im **[!UICONTROL Budget]** Fenster auf der **[!UICONTROL Edit]** Registerkarte. Hier werden Budgets, Kosten und Ausgaben konfiguriert.
-* in der **Aufgabenebene** im **[!UICONTROL Expenses and revenues]** Fenster.
+* in einer **Kampagne** im Fenster **[!UICONTROL Budget]** des **[!UICONTROL Bearbeiten]**-Tabs. Hier werden insbesondere Budgets, Kosten und Ausgaben konfiguriert.
+* in einer **Aufgabe** im Fenster **[!UICONTROL Ausgaben und Einnahmen]**.
 
 ![](assets/s_user_op_engagement_level_costs.png)
 
-When the budget is **[!UICONTROL Reserved]**, the update is performed automatically for the charged budget.
+Sobald ein Budget **[!UICONTROL Reserviert]** ist, wird automatisch das zugeteilte Budget aktualisiert.
 
 ![](assets/s_user_edit_budget_node_impact_2.png)
 
@@ -123,13 +123,13 @@ Der Ablauf entspricht dem der Aufgaben:
 
 ![](assets/s_user_edit_budget_node_impact_task.png)
 
-When an expenditure gives rise to an invoice and the invoice is paid, its amount is then entered in the **[!UICONTROL Invoiced]** field.
+Wenn eine Ausgabe in Rechnung gestellt und diese Rechnung beglichen wird, wird der jeweilige Betrag im Feld **[!UICONTROL Fakturiert]** eintragen.
 
 ### Ausgabenkategorien {#expense-categories}
 
-Die Beträge können in verschiedene Ausgabenkategorien verteilt werden, um die Daten besser lesbar zu machen und die Marketinginvestitionen detaillierter zu melden. Die Ausgabekategorien werden während der Erstellung des Budgets über den **[!UICONTROL Budgets]** Knoten des Baumes definiert.
+Kostenbeträge können in verschiedene Ausgabenkategorien verteilt werden, um eine bessere Lesbarkeit und detaillierte Berichte über Marketingkosten zu erhalten. Ausgabenkategorien werden bei der Budgeterstellung über den Knoten **[!UICONTROL Budgets]** des Navigationsbaums bestimmt.
 
-To add a category, click the **[!UICONTROL Add]** button in the lower section of the window.
+Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** im unteren Abschnitt des Fensters, um eine Kategorie hinzuzufügen.
 
 ![](assets/s_user_budget_category.png)
 
@@ -137,7 +137,7 @@ Sie können eine der existierenden Kategorien auswählen oder eine neue definier
 
 ### Zuordnung von Budgets untereinander {#linking-a-budget-to-another}
 
-Sie können ein Budget mit einem Hauptbudget verknüpfen. Wählen Sie dazu das Hauptbudget im **[!UICONTROL related budget]** Bereich der Sekundarhaushalte aus.
+Sie können ein Budget einem Hauptbudget zuordnen. Wählen Sie dieses im Feld **[!UICONTROL Übergeordnetes Budget]** der untergeordneten Budgets aus.
 
 ![](assets/budget_link.png)
 
@@ -163,7 +163,7 @@ Damit enthält jede Ausgabenzeile folgende Informationen:
 * die entsprechende Rechnungszeile (ausschließlich in MRM);
 * die Liste der berechneten Kosten je Kostenstelle (wenn eine Kostenstruktur existiert).
 
-Im obigen Beispiel enthält die bearbeitete Ausgabenzeile die Kosten, die für die Bereitstellung **neuer Karten** für die Kampagne &quot; **Loyalty Spring Pack** &quot;berechnet wurden. Wenn die Bereitstellung bearbeitet wird, können Sie auf der **[!UICONTROL Direct Mail]** Registerkarte sehen, wie die Ausgabenzeile berechnet wird.
+Im unten stehenden Beispiel entspricht die bearbeitete Ausgabenzeile den für den Versand **Sonderangebot Schreibwaren** der Kampagne **Sonderangebot Büromaterialien** berechneten Kosten. Wenn der Versand geöffnet wird, kann im **[!UICONTROL Briefpost]**-Tab der Berechnungsmodus der Ausgabenzeile eingesehen werden.
 
 Als Grundlage der Kostenberechnung für diesen Versand dienen die für den betroffenen Dienstleister ausgewählten Kostenstellen.
 
@@ -175,7 +175,7 @@ Abhängig von diesen Kostenstellen werden die entsprechenden Kostenstrukturen zu
 
 >[!NOTE]
 >
->Kostenkategorien und Strukturen werden unter [Erstellen eines Dienstleisters und dessen Kostenkategorien](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories)dargestellt.
+>Kostenstellen und -strukturen werden unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories) beschrieben.
 
 ## Entstehung, Berechnung und Anrechnung von Kosten {#cost-commitment--calculation-and-charging}
 
@@ -187,9 +187,9 @@ Kosten werden in drei Kategorien eingeteilt:
 
 1. Plankosten
 
-   Die geschätzten vorläufigen Kosten sind eine Schätzung der Kosten für die Prozesse der Kampagne. Solange sie bearbeitet wird, werden die eingegebenen Beträge nicht konsolidiert. Er muss über den **[!UICONTROL Specified]** Status verfügen, damit die in die Berechnungen einzugebenden Beträge berücksichtigt werden.
+   Die Plankosten entsprechen der Kostenschätzung für Kampagnenvorgänge. Solange sich das Budget in Bearbeitung befindet, werden die erfassten Beträge nicht konsolidert. Erst wenn der Status auf **[!UICONTROL Angegeben]** gesetzt wird, werden die erfassten Beträge in den Berechnungen berücksichtigt.
 
-   Dieser Betrag wird manuell eingegeben und kann in mehrere Ausgabekategorien unterteilt werden. Klicken Sie zum Aufschlüsseln der Kosten auf den **[!UICONTROL Breakdown...]** Link und dann auf die Schaltfläche, um einen neuen Betrag zu definieren **[!UICONTROL Add]** .
+   Der Betrag wird manuell eingegeben und kann über unterschiedliche Ausgabenkategorien verteilt werden. Um einen Kostenbetrag zu verteilen, klicken Sie auf den Link **[!UICONTROL Verteilung...]** und anschließend auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um einen neuen Betrag zu bestimmen.
 
    ![](assets/s_user_edit_budget_tab_ventil.png)
 
@@ -207,7 +207,7 @@ Kosten werden in drei Kategorien eingeteilt:
    * Sowohl für Marketingpläne als auch für Programme entsprechen die berechneten Kosten der Summe der für die verknüpften Kampagnen berechneten Kosten. Wenn diese nicht angegeben sind, werden die Plankosten anstelle der berechneten Kosten verwendet.
    >[!NOTE]
    >
-   >The **[!UICONTROL Breakdown]** link lets you view the details of the calculation and the last cost calculation date.
+   >Über den **[!UICONTROL Verteilung]**-Link der berechneten Kosten können Details der Berechnung sowie das Datum der letzten Kostenberechnung eingesehen werden.
 
 1. Tatsächliche Kosten
 
@@ -217,7 +217,7 @@ Kosten werden in drei Kategorien eingeteilt:
 
 Kosten werden mithilfe der Kostenstrukturen berechnet und auf die in den betroffenen Kampagnen, Sendungen oder Aufgaben ausgewählten Budgets angerechnet.
 
-Über die Billigung des Budgets kann eine Prüfung der für Kampagnen gebundenen Beträge durchgeführt werden. In einer Kampagne können zusätzliche Aufgaben im Kontrollkästchenstil erstellt werden, um andere Genehmigungen einzurichten. Siehe [Aufgabenarten](../../campaign/using/creating-and-managing-tasks.md#types-of-task).
+Über die Budget-Validierung können die in Kampagnen anfallenden Beträge geprüft werden. Zusätzlich ist die Erstellung von Kontrollaufgaben ein weiteres Mittel, um einzelne Bereiche einer Kampagne zur Validierung zu unterbreiten. Siehe [Aufgabenarten](../../campaign/using/creating-and-managing-tasks.md#types-of-task).
 
 ### Beispiel {#example}
 
@@ -229,19 +229,19 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 #### 1. Schritt - Budget erstellen {#step-1---creating-the-budget}
 
-Erstellen Sie ein neues Budget über den **[!UICONTROL Campaign management > Budgets]** Knoten.
+Erstellen Sie ein neues Budget über den Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]**.
 
-Definieren Sie ein Budget von 10.000 Euro im **[!UICONTROL Allocated]** Bereich des **[!UICONTROL Amounts]** Einzelplans. Fügen Sie im unteren Bereich des Fensters zwei Ausgabekategorien hinzu:
+Bestimmen Sie ein Gesamtbudget von 10.000 Euro im Feld **[!UICONTROL Zugeteilt]** des Abschnitts **[!UICONTROL Beträge]**. Fügen Sie drei Ausgabenkategorien im unteren Abschnitt des Fensters hinzu:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### 2. Schritt - Dienstleister konfigurieren und Kostenstrukturen festlegen {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-Create a service provider and a service template with its cost structure from the **[!UICONTROL Administration > Campaigns]** node.
+Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**.
 
-Weitere Informationen finden Sie unter [Erstellen eines Dienstanbieters und dessen Kostenkategorien](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-* Erstellen Sie für Direktpostsendungen Kostenkategorien **[!UICONTROL Envelopes]** (Typen 114 x 229 und 162 x 229) **[!UICONTROL Postage]** und **[!UICONTROL Print]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
+* Erstellen Sie für die Briefpost-Sendungen **[!UICONTROL Briefumschläge]**-Kostenstellen (Typen 114x229 und 162x229), **[!UICONTROL Porto und Versand]** und **[!UICONTROL Farbdruck]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
@@ -251,11 +251,11 @@ Weitere Informationen finden Sie unter [Erstellen eines Dienstanbieters und dess
 
 * Erstellen Sie für die Aufgaben die folgenden zwei Kostenstellen:
 
-   1. **[!UICONTROL Room reservation]** (Kleines Zimmer und großes Zimmer) mit einer **festen** Kostenstruktur in Höhe von 300 und 500 Euro:
+   1. **[!UICONTROL Raumreservierung]** (Typen Kleiner Saal und Großer Saal) mit einer **Pauschale** von 300 und 500 Euro.
 
       ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   1. **[!UICONTROL Creation]** (**Content template** type) mit einer **täglichen** Kostenstruktur von 300 Euro:
+   1. **[!UICONTROL Erstellung]** (Typ **Inhaltsvorlage**) mit von der **Dauer in Tagen** abhängigen Kosten in Höhe von 300 Euro:
 
       ![](assets/s_user_cost_mgmt_sample_7.png)
 
@@ -273,7 +273,7 @@ Geben Sie die Plankosten mit Verteilung an:
 
 ![](assets/s_user_cost_mgmt_sample_9.png)
 
-Klicken Sie auf **[!UICONTROL Ok]** und bestätigen Sie **[!UICONTROL Save]** diese Informationen. Die berechneten Kosten der Kampagne werden dann mit den geschätzten vorläufigen Kosten aktualisiert.
+Klicken Sie zur Speicherung dieser Daten auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**. Die berechneten Kosten der Kampagne werden daraufhin mit den Plankosten aktualisiert.
 
 #### 4. Schritt - Briefpost-Versand erstellen {#step-4---creating-the-direct-mail-delivery}
 
@@ -297,7 +297,7 @@ Wenn die Budgetvalidierung für diese Kampagne aktiviert wurde, validieren Sie d
 
 ![](assets/s_user_cost_mgmt_sample_10b.png)
 
-Die Ausgabenzeile für die Bereitstellung wird auf der **[!UICONTROL Edit > Budget]** Registerkarte der Kampagne hinzugefügt. Bearbeiten Sie sie, um die Details der Berechnung anzuzeigen.
+Die den Versand betreffende Ausgabenzeile wird im Tab **[!UICONTROL Bearbeiten > Budget]** der Kampagne hinzugefügt. Klicken Sie auf Details..., um genauere Informationen zu erhalten.
 
 ![](assets/s_user_cost_mgmt_sample_11.png)
 
@@ -309,21 +309,21 @@ Beim Bearbeiten der berechneten Kosten können Sie die Kostenverteilung sowie St
 
 #### 5. Schritt - Aufgaben erstellen {#step-5---creating-tasks}
 
-Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen zuvor erstellt wurden (siehe [Schritt 2 - Konfigurieren des Dienstanbieters und Definieren der Kostenstrukturen](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klicken Sie dazu im Kampagnen-Dashboard auf die **[!UICONTROL Add a task]** Schaltfläche. Benennen Sie die Aufgabe und klicken Sie auf **[!UICONTROL Save]**.
+Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen zuvor erstellt wurden (siehe [2. Schritt - Dienstleister konfigurieren und Kostenstrukturen festlegen](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klicken Sie dazu im Kampagnen-Dashboard auf die Schaltfläche **[!UICONTROL Aufgabe hinzufügen]**. Benennen Sie die Aufgabe und klicken Sie auf **[!UICONTROL Speichern]**.
 
 Konfigurieren Sie sie wie folgt:
 
-In the **[!UICONTROL Properties]** tab, select the service and the corresponding cost category:
+Klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Dienstleistung sowie die entsprechende Kostenstelle auszuwählen:
 
 ![](assets/s_user_cost_mgmt_sample_14.png)
 
-Next, click the **[!UICONTROL Expenses and revenue]** icon of the task and specify the estimated provisional cost.
+Öffnen Sie anschließend die **[!UICONTROL Ausgaben und Einnahmen]** der Aufgabe und geben Sie ihre Plankosten an.
 
 ![](assets/s_user_cost_mgmt_sample_15.png)
 
 Mit Speicherung der Aufgabe übernehmen die berechneten Kosten den für die Plankosten angegebenen Wert.
 
-Wenn die Aufgabe abgeschlossen ist (Status **[!UICONTROL Finished]** ), werden die berechneten Kosten automatisch mit den Kosten des großen Raumes aktualisiert, wie in der Kostenstruktur angegeben. Diese Kosten werden auch in dieser Kategorie in der Aufschlüsselung angezeigt.
+Nach Beendung der Aufgabe (Status **[!UICONTROL Abgeschlossen]**) werden die berechneten Kosten automatisch mit den Kosten des Großen Saals aktualisiert (entsprechend der Angabe in seiner Kostenstruktur). Diese Kosten werden ebenfalls der Kategorie zugeordnet.
 
 Erstellen Sie auf die gleiche Weise eine zweite Aufgabe mit einer Planung über fünf Tage und verbinden Sie sie mit der zuvor erstellen Kostenstruktur.
 
@@ -335,7 +335,7 @@ Nach Abschluss der Aufgabe übernehmen die berechneten Kosten den aus der Kosten
 
 #### 6. Schritt - Status des Kampagnenbudgets aktualisieren {#step-6---update-the-campaign-budget-status}
 
-When the campaign is configured, its status can be updated by setting it to **[!UICONTROL Specified]**. The calculated cost of the campaign will then indicate the sum of the calculated costs of the delivery and the tasks of the campaign:
+Der Status eines konfigurierten Budgets kann aktualisiert werden: Setzen Sie hierzu den Status auf **[!UICONTROL Angegeben]**. Im Feld der berechneten Kosten der Kampagne wird daraufhin die Summe der für den Versand und die Aufgaben der Kampagne berechneten Kosten angezeigt.
 
 ![](assets/s_user_cost_mgmt_sample_18.png)
 
@@ -355,7 +355,7 @@ Im Kontext von MRM können Sie bei Dienstleistern aufgebebene Bestellungen und z
 
 ### Lagerergänzungen {#order-creation}
 
-To save a new order with a service provider, click the **[!UICONTROL MRM > Orders]** node of the tree, and then click the **[!UICONTROL New]** button.
+Um eine Lagerergänzung zu erfassen, gehen Sie zum Knoten **[!UICONTROL MRM > Lagerergänzungen]** des Navigationsbaums und klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
 
 Geben Sie die Nummer der Lagerergänzung, den entsprechenden Dienstleister sowie die Gesamtkosten für die Lagerergänzung an.
 
@@ -365,18 +365,18 @@ Geben Sie die Nummer der Lagerergänzung, den entsprechenden Dienstleister sowie
 
 Sie können für jeden Dienstleister Rechnungen speichern und ihren Status sowie das betroffene Budget angeben.
 
-Invoices are created and stored in the **[!UICONTROL MRM > Invoices]** node of the Adobe Campaign tree.
+Rechnungen werden im Knoten **[!UICONTROL MRM > Rechnungen]** des Adobe-Campaign-Navigationsbaums erstellt.
 
 ![](assets/s_user_cost_create_invoice.png)
 
-Eine Rechnung besteht aus Rechnungslinien, deren Gesamtsumme die automatische Berechnung des Betrags erlaubt. Diese Zeilen werden manuell auf der **[!UICONTROL Invoice lines]** Registerkarte erstellt. Sie können einer Bestellung zugeordnet werden, um die Informationen in die Bestellungen hochzuladen.
+Eine Rechnung besteht aus Rechnungszeilen, deren Summe automatisch den Rechnungsbetrag ergibt. Sie werden manuell im **[!UICONTROL Rechnungszeilen]**-Tab erstellt. Sie können mit einer Lagerergänzung verknüpft werden, um eine automatische Informationsweiterleitung zu ermöglichen.
 
 ![](assets/s_user_cost_invoice_add_line.png)
 
-The invoices of each service provider are displayed in the **[!UICONTROL Invoices]** tab of the profile:
+Die Rechnungen jeden Dienstleisters werden im **[!UICONTROL Rechnungen]**-Tab seines Profils angezeigt:
 
 ![](assets/s_ncs_user_invoice_from_supplier.png)
 
 Im **[!UICONTROL Details]**-Tab kann der Inhalt der jeweiligen Rechnung eingesehen werden.
 
-Click **[!UICONTROL Add]** to create a new invoice.
+Klicken Sie auf **[!UICONTROL Hinzufügen]**, um eine neue Rechnung zu erstellen.
