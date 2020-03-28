@@ -1,7 +1,7 @@
 ---
 title: Häufige Fragen
 seo-title: Häufige Fragen
-description: Häufig gestellte Fragen zu Campaign Classic
+description: Häufig gestellte Fragen zu Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,23 +13,23 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
 
 ---
 
 
-# Häufig gestellte Fragen zu Entwicklern {#dev-faq}
+# Häufige Fragen für Entwickler{#dev-faq}
 
 Adobe Campaign ist eine offene Lösung, die die benutzerdefinierte Nutzung und die Weiterentwicklung der Anwendung ermöglicht.
 
-## Was ist das Kampagnendatenmodell? {#what-is-the-campaign-data-model}
+## Was ist das Campaign-Datenmodell? {#what-is-the-campaign-data-model}
 
-Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Es folgt einer für Adobe Campaign spezifischen Grammatik, einem Schema. Weitere Informationen zu Adobe Campaign-Schemata [finden Sie in diesem Abschnitt](../../configuration/using/about-schema-edition.md).
+Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weiterführende Informationen zu Adobe Campaign-Schemata [finden Sie in diesem Abschnitt](../../configuration/using/about-schema-edition.md).
 
-[Klicken Sie hier, um mehr über das Kampagnen-Datenmodell](https://helpx.adobe.com/campaign/kb/acc-datamodel.html)zu erfahren.
+[Hier erfahren Sie mehr zum Datenmodell von Campaign](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
 
-Bewährte Verfahren werden [in diesem Artikel](https://helpx.adobe.com/campaign/kb/acc-data-model-best-practices.html)aufgeführt.
+Best Practices werden [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-data-model-best-practices.html) beschrieben.
 
 ## Wie funktionieren Schemata in Campaign? {#how-to-work-with-campaign-schemas-}
 
@@ -57,7 +57,7 @@ Sie können mit diesem generischen Abfragetool Daten aus der Campaign-Datenbank 
 
 Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Feldern oder mithilfe einer Formel durchgeführt. Die wichtigsten Grundsätze bei der Erstellung einer Abfrage in der Campaign-Datenbank werden auf [dieser Seite](../../platform/using/about-queries-in-campaign.md) beschrieben.
 
-[Klicken Sie hier](../../workflow/using/query.md) , um den Kampagnenabfrageeditor zu entdecken.
+[Klicken Sie hier](../../workflow/using/query.md), um mehr über den Campaign-Abfrageeditor zu erfahren.
 
 ## Wie kann ich Datenpackages importieren? {#how-can-i-import-a-data-package-}
 
@@ -69,4 +69,4 @@ Das Prinzip der Datenpackages besteht darin, eine Datenkonfiguration zu exportie
 
 ## Wo finde ich die Liste der Campaign Classic-APIs? {#where-can-i-find-the-list-of-campaign-classic-apis}
 
-Alle Kampagnen-APIs mit ihrer vollständigen Beschreibung finden Sie in dieser [Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Alle Campaign-APIs inklusive vollständiger Beschreibung finden Sie in dieser speziellen [Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
