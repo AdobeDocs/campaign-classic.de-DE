@@ -14,7 +14,7 @@ discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -24,20 +24,20 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Gehen Sie wie folgt vor, um einen Bericht zu erstellen:
 
-1. Open the Adobe Campaign Explorer and from the **[!UICONTROL Administration > Configuration]** node, then select the **[!UICONTROL Reports]** folder.
-1. Click the **[!UICONTROL New]** button above the list of reports.
-1. Wählen Sie **[!UICONTROL Create a new report from a template]** und klicken Sie auf **[!UICONTROL Next]**.
+1. Öffnen Sie den Adobe-Campaign-Explorer und wählen Sie im Knoten **[!UICONTROL Administration > Konfiguration]** den Ordner **[!UICONTROL Berichte]** aus.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** rechts oberhalb der Liste der Berichte.
+1. Wählen Sie **[!UICONTROL Neuen Bericht basierend auf einer Vorlage erstellen]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/s_ncs_advuser_report_wizard_new_01.png)
 
 1. Wählen Sie die Berichtvorlage in der Dropdown-Liste aus.
 
-   * The **[!UICONTROL Extended report]** lets you create a report configured using a chart.
-   * The **[!UICONTROL Qualitative distribution]** report lets you create statistics based on all types of data (company name, email domain, etc.).
-   * The **[!UICONTROL Quantitative distribution]** report lets you create statistics on data that can be measured or counted (invoice amount, recipient age, etc.).
+   * Anhand der Vorlage **[!UICONTROL Erweiterter Bericht]** kann ein mithilfe eines Diagramms konfigurierter Bericht erstellt werden.
+   * Der Bericht **[!UICONTROL Qualitative Verteilung]** ermöglicht die Erzeugung von Statistiken über alle Datentypen (z. B. Firmennamen, E-Mail-Domains etc.).
+   * Der Bericht **[!UICONTROL Quantitative Verteilung]** ermöglicht Statistiken über Daten, die gemessen oder gezählt werden können (Rechnungsbetrag, Alter der Empfänger etc.).
    Nähere Informationen über diese Berichtvorlagen erhalten Sie in [diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md).
 
-1. Geben Sie den Berichtsnamen und seine Beschreibung in die entsprechenden Felder ein. Geben Sie an, **[!UICONTROL schema]** auf welchen Bericht der Bericht angewendet werden soll.
+1. Erfassen Sie den Namen des Berichts und seine Beschreibung in den entsprechenden Feldern. Geben Sie das **[!UICONTROL Schema]** an, auf das sich der Bericht beziehen soll.
 
    ![](assets/s_ncs_advuser_report_wizard_020.png)
 
@@ -115,15 +115,15 @@ Alternativ können Sie einen Rechtsklick auf den Knoten machen, um eine der verf
 >
 >Wenn der Bericht für den Export im Excel-Format vorgesehen ist, sollten Sie keine komplexe HTML-Formatierung verwenden. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-A **[!UICONTROL Page]** can include the following elements:
+Eine **[!UICONTROL Seite]** kann folgende Elemente enthalten:
 
-* Bar, pie, curve type **[!UICONTROL charts]**, etc.
-* Pivot; List with group, or Breakdown **[!UICONTROL tables]**.
-* Text- oder Zahlentyp **[!UICONTROL Input controls]**.
-* Drop-down list, checkbox, radio button, multiple choice, date, or Matrix type **[!UICONTROL Selection controls]**.
-* Link editor, Constant, Folder selection type **[!UICONTROL Advanced controls]**.
-* Wert, Link, HTML, Bild usw. **[!UICONTROL Static elements]**.
-* **[!UICONTROL Containers]** , mit denen Sie das Komponentenlayout steuern können.
+* **[!UICONTROL Grafiken]** vom Typ Histogramm, Kreis- oder Kurvendiagramm etc.
+* **[!UICONTROL Tabellen]** vom Typ Pivot, Gruppierungsliste oder Verteilung.
+* **[!UICONTROL Eingabedialoge]** vom Typ Text oder Zahl.
+* **[!UICONTROL Auswahldialoge]** vom Typ Dropdown-Liste, Checkbox, Radiobutton, Multiple Choice, Datum oder Matrix.
+* **[!UICONTROL Erweiterte Dialoge]** vom Typ Link-Editor, Konstante, Ordnerauswahl.
+* **[!UICONTROL Statische Elemente]** vom Typ Wert, Link, HTML, Bild etc.
+* **[!UICONTROL Container]** zur Anordnung der Komponenten.
 
 Die Konfiguration einer Seite und ihrer Elemente wird in [diesem Abschnitt](../../web/using/about-web-forms.md) erläutert.
 
