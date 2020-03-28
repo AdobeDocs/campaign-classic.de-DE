@@ -14,7 +14,7 @@ discoiquuid: d10624ea-d961-4162-879b-1754f897d763
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -31,9 +31,9 @@ Die Asset-Dienste sind:
 
 Bei der Bearbeitung eines E-Mail-Versands oder einer Landingpage in Adobe Campaign können Sie Assets von Ihren Adobe-Experience-Cloud-Bibliotheken einfügen. Abhängig von den von Ihnen verwendeten Lösungen können diese Assets in Assets Core Service oder Adobe Experience Manager Assets gespeichert werden.
 
-Die verfügbaren Bibliotheken werden in [diesem Dokument](https://marketing.adobe.com/resources/help/en_US/mcloud/experience-cloud-assets.html) erläutert.
+Die verfügbaren Bibliotheken werden in [diesem Dokument](https://marketing.adobe.com/resources/help/de_DE/mcloud/experience-cloud-assets.html) erläutert.
 
-Consult the [Configuring access to Assets](../../integrations/using/configuring-access-to-assets.md) section to find out more about the specifics linked to each library.
+Weitere Informationen zu den Besonderheiten der einzelnen Bibliotheken finden Sie unter [Zugriff auf Assets konfigurieren](../../integrations/using/configuring-access-to-assets.md).
 
 >[!NOTE]
 >
