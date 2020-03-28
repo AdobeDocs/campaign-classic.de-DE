@@ -14,7 +14,7 @@ discoiquuid: a4669fee-4512-455f-b495-ebd5a0746b76
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -40,7 +40,7 @@ Auf diese Weise besteht die Möglichkeit, im Anschluss an einen für das jeweili
 
 >[!CAUTION]
 >
->Response Manager ist eine **[!UICONTROL Campaign]** Option. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+>Response Manager ist eine Option von **[!UICONTROL Campaign]**. Bitte überprüfen Sie Ihren Lizenzvertrag.
 
 Es ist zudem möglich, alle Reaktionen des gesamten Haushalts eines Empfängers eines Versands oder Angebots zu erfassen.
 
@@ -48,19 +48,19 @@ Jede Hypothese wird einer einzigen Transaktionstabelle zugeordnet. Ein Versand o
 
 ## Vorgehensweise {#method}
 
-Before you start using Response Manager, refer to [Configuration](../../campaign/using/configuration.md) and carry out the necessary configurations.
+Lesen Sie vor der Nutzung von Response Manager den Abschnitt [Konfiguration](../../campaign/using/configuration.md) und nehmen Sie die notwendigen Einstellungen vor.
 
 Bevor eine Hypothese über einen Versand oder ein Angebot gestartet werden kann, muss zunächst ihr Kontext in einer Vorlage bestimmt werden, auf welcher die Hypothese anschließend beruht.
 
 Um Messhypothesen zu definieren und zu messen, gehen Sie also wie folgt vor:
 
-1. Definieren Sie ein Hypothesen-Modell. Siehe [Erstellen eines Hypothesemodells](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
-1. Erstellen Sie eine oder mehrere Hypothesen zu einer vorhandenen Bereitstellung. Refer to [Referencing a hypothesis in a campaign delivery](../../campaign/using/creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery).
+1. Erstellen Sie eine Hypothesenvorlage. Siehe [Hypothesevorlage erstellen](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model).
+1. Stellen Sie eine oder mehrere Hypothesen über einen bestehenden Versand auf. Siehe [Referenzieren einer Hypothese im Versand einer Kampagne](../../campaign/using/creating-hypotheses.md#referencing-a-hypothesis-in-a-campaign-delivery).
 
    oder
 
-   Erstellen Sie eine oder mehrere Hypothesen zu Angeboten. Siehe [Erstellen einer Hypothese für ein Angebot](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-an-offer).
+   Stellen Sie eine oder mehrere Hypothesen über Angebote auf. Siehe [Angebotshypothese erstellen](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-an-offer).
 
-1. Überprüfen Sie die hypothetischen Ergebnisse. Siehe [Hypothese-Verfolgung](../../campaign/using/hypothesis-tracking.md).
-1. Hypothesen bei Bedarf neu starten. Refer to [Creating a hypothesis on the fly on a delivery](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
+1. Überprüfen Sie die Ergebnisse der Hypothesen. Siehe [Hypothesenverfolgung](../../campaign/using/hypothesis-tracking.md).
+1. Starten Sie Hypothesen bei Bedarf neu. Siehe [Erstellen einer Hypothese direkt in einem Versand](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
 
