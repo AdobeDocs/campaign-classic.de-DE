@@ -14,7 +14,7 @@ discoiquuid: f0e8a50b-d4a4-4271-87f7-802ef410a0f9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -22,11 +22,11 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 # URL-Tracking personalisieren{#personalizing-url-tracking}
 
-Advanced message tracking settings are accessible via the **[!UICONTROL Tracking & Images]** icon in the toolbar of the delivery wizard.
+Erweiterte Tracking-Parameter können im Versand-Assistenten konfiguriert werden. Klicken Sie hierfür in der Symbolleiste auf die Schaltfläche **[!UICONTROL Tracking &amp; Bilder]**.
 
 >[!NOTE]
 >
->Die Verwaltung von Bildern in E-Mails ist auch in diesem Fenster konfiguriert. Siehe [Hinzufügen von Bildern](../../delivery/using/defining-the-email-content.md#adding-images).
+>Auch die Einstellungen bezüglich der in E-Mails enthaltenen Bilder werden in diesem Fenster vorgenommen. Siehe [Bilder hinzufügen](../../delivery/using/defining-the-email-content.md#adding-images).
 
 ![](assets/s_ncs_user_email_del_tracking_ico.png)
 
@@ -36,7 +36,7 @@ Sie haben folgende Möglichkeiten:
 
    >[!CAUTION]
    >
-   >When tracking is not activated on a delivery (i.e. **[!UICONTROL Activate tracking]** option not selected), reports and data related to tracking are not available: Opens, Hot click and tracked URLs reports will not show any data, and **[!UICONTROL Tracking logs]** tabs will not be displayed for this delivery.
+   >Wenn beim Versand das Tracking nicht aktiviert ist (d. h. die Option **[!UICONTROL Tracking aktivieren]** nicht ausgewählt ist), sind keine Berichte und Daten zum Tracking verfügbar. In diesem Fall sind für Öffnungen, Klickposition und getrackte URLs keine Daten vorhanden und für den Versand werden keine **[!UICONTROL Trackinglogs]**-Tabs angezeigt.
 
 * Aktivierung/Deaktivierung des Trackings bei Öffnung der Nachricht.
 
@@ -46,7 +46,7 @@ Die getrackten URLs werden im mittleren Bereich des Fensters in Form einer Baums
 
 Sie können für jede URL separat das Tracking aktivieren oder deaktivieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/how-to-configure-tracked-links.md).
 
-The **[!UICONTROL Advanced]** tab lets you personalize the calculation formulas of the tracked URLs and the opening URL.
+Im **[!UICONTROL Erweitert]**-Tab haben Sie die Möglichkeit, die Formeln zur Berechnung der getrackten URLs und der Öffnungs-URL zu personalisieren.
 
 ![](assets/s_ncs_user_email_del_tracking_param_adv.png)
 
