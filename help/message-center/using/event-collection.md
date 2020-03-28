@@ -14,7 +14,7 @@ discoiquuid: cfff302a-6ac0-461a-a1e4-8e4b617fe134
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Die vom Informationssystem erzeugten Ereignisse können auf zwei Weisen abgerufen werden:
 
-* Aufrufe von SOAP-Methoden ermöglichen Ihnen das Senden von Ereignissen in Adobe Campaign: Mit der PushEvent-Methode können Sie jeweils ein Ereignis senden. Mit der PushEvents-Methode können Sie mehrere Ereignisse gleichzeitig senden. Siehe [Ereignisbeschreibung](../../message-center/using/event-description.md).
+* Nutzung von SOAP-Methoden, die die Ereignisse Adobe Campaign zuführen: die PushEvent-Methode ermöglicht den Versand eines Ereignisses, die PushEvents-Methode den Versand mehrerer Ereignisse auf einmal. Siehe [Ereignisbeschreibung](../../message-center/using/event-description.md).
 * Ausführung eines Workflows, der den Abruf der Ereignisse über einen Dateiimport oder ein SQL-Gateway ermöglicht (mit der Option **Federated Data Access**).
 
 Nach dem Abruf werden die Ereignisse von den technischen Workflows auf die Echtzeit- und Batch-Warteschlangen der Instanzen verteilt, bis sie einer Nachrichtenvorlage zugeordnet werden.
