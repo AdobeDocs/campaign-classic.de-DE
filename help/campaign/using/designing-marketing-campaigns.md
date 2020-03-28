@@ -14,7 +14,7 @@ discoiquuid: a9eb6627-2e51-42d0-9b29-5b798bdf5b33
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 Adobe Campaign bietet Ihnen die Möglichkeit zur Definition, Optimierung, Ausführung und Analyse von Kommunikations- und Marketing-Kampagnen. Campaign ist somit gleichzeitig Steuerungs- und Ausführungszentrale Ihrer Marketingstrategie. Weiterführende Informationen dazu finden Sie in den Abschnitten [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md) und [Marketingkampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
-In addition, the **Marketing Resource Management (MRM)** module lets you control marketing actions in a collaborative mode by providing complete management and real-time tracking of the tasks, budgets and marketing resources involved. The Marketing Resource Management lets you optimize and regulate the management of internal and external processes, resources and marketing campaigns, as well as third party relations (agencies, printers, etc.). For more on this, refer to [this section](../../campaign/using/about-marketing-resource-management.md).
+Zusätzlich ergänzt das Modul **Marketing Resource Management (MRM)** diese Anwendung mit einer vollständigen Verwaltung und Echtzeitverfolgung von Aufgaben, Budgets und Marketing-Ressourcen. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung des Managements von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Lesen Sie diesbezüglich diesen [Abschnitt](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
    Ein Marketingplan umfasst unterschiedliche Programme einer bestimmten Kalenderperiode. Er führt das für diesen Zeitraum zugeteilte Budget und kann mit Dokumenten und Zielvorgaben verbunden werden.
 
-   For more on this, refer to [Campaign calendar](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenkalender](../../campaign/using/accessing-marketing-campaigns.md#campaign-calendar).
 
 * **Workflow**
 
@@ -65,4 +65,4 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
    Ein Versandentwurf ist eine strukturierte Beschreibung eines Versands. Jeder Versand kann einen Entwurf referenzieren, der zum Beispiel passende Angebote, anzuhängende Dokumente oder Links zu Verkaufsstellen enthält. Entsprechend dem ausgewählten Versandentwurf werden die jeweiligen enthaltenen Angebote im Versand verzeichnet.
 
-   Weitere Informationen dazu finden Sie unter [Verknüpfen und Strukturieren von Ressourcen, die über eine Lieferumgebung](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline)verknüpft sind.
+   Weitere Informationen hierzu finden Sie unter [Ressourcen in einem Versandentwurf verknüpfen](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
