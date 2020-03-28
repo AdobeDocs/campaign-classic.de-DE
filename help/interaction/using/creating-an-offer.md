@@ -14,7 +14,7 @@ discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -26,11 +26,11 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 Gehen Sie wie folgt vor, um ein Angebot zu erstellen:
 
-1. Go to the **[!UICONTROL Campaigns]** universe and click the **[!UICONTROL Offers]** link.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Angebote]** in der Rubrik **[!UICONTROL Kampagnen]**.
 
    ![](assets/offer_create_001.png)
 
-1. Click the **[!UICONTROL Create]** button.
+1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
 
    ![](assets/offer_create_005.png)
 
@@ -38,7 +38,7 @@ Gehen Sie wie folgt vor, um ein Angebot zu erstellen:
 
    ![](assets/offer_create_002.png)
 
-1. Click **[!UICONTROL Save]** to create the offer.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung abzuschließen.
 
    ![](assets/offer_create_003.png)
 
@@ -48,7 +48,7 @@ Gehen Sie wie folgt vor, um ein Angebot zu erstellen:
 
 ## Angebotseignungen konfigurieren {#configuring-offer-eligibility}
 
-In the **[!UICONTROL Eligibility]** tab, define the period the offer will be valid for and can be presented, the filters to apply to the target and the offer weight.
+Im **[!UICONTROL Eignung]**-Tab des Angebots werden die Verwendungsdaten, auf die Zielgruppe anzuwendende Filter und die Angebotsgewichtung definiert.
 
 ### Verwendungsdaten definieren {#defining-the-eligibility-period-of-an-offer}
 
@@ -62,11 +62,11 @@ Außerhalb dieses Zeitraums wird das Angebot nicht vom Angebotsmodul ausgewählt
 
 Sie können mithilfe von Filtern die Zielgruppe der Angebote einschränken.
 
-Klicken Sie dazu auf den **[!UICONTROL Edit query]** Link und wählen Sie den Filter aus, den Sie anwenden möchten. (Siehe [diesen Abschnitt](../../platform/using/steps-to-create-a-query.md#step-4---filter-data)).
+Klicken Sie hierfür auf den Link **[!UICONTROL Abfrage bearbeiten...]** und definieren Sie den anzuwendenden Filter. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../platform/using/steps-to-create-a-query.md#step-4---filter-data).
 
 ![](assets/offer_eligibility_create_003.png)
 
-Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der Benutzerfilter auswählen. For more on this, refer to [Creating predefined filters](../../interaction/using/creating-predefined-filters.md).
+Wenn bereits vordefinierte Filter erstellt wurden, können Sie diese in der Liste der Benutzerfilter auswählen. Weitere Informationen hierzu finden Sie unter [Vordefinierte Filter](../../interaction/using/creating-predefined-filters.md).
 
 ![](assets/offer_eligibility_create_004.png)
 
@@ -80,11 +80,11 @@ Ein Angebot kann für Kontakte im Alter von 18 bis 25 Jahren eine Gewichtung A a
 
 >[!NOTE]
 >
->Die zugewiesene Gewichtung kann vorübergehend entsprechend den Parametern der Kategorie geändert werden, zu der das Angebot gehört. For more on this, refer to [Creating offer categories](../../interaction/using/creating-offer-categories.md).
+>Die zugewiesene Gewichtung kann vorübergehend entsprechend den Parametern der Kategorie geändert werden, zu der das Angebot gehört. Weitere Informationen hierzu finden Sie unter [Angebotskategorien](../../interaction/using/creating-offer-categories.md).
 
 Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
-1. Klicks **[!UICONTROL Add]**.
+1. Wählen Sie **[!UICONTROL Hinzufügen]** aus.
 
    ![](assets/offer_weight_create_001.png)
 
@@ -120,22 +120,22 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
 Im Dashboard des Angebots können Sie auf die Details der Eignungskonfiguration zugreifen.
 
-Klicken Sie zum Anzeigen auf den **[!UICONTROL Schedule and eligibility rules]** Link.
+Klicken Sie hierfür auf den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]**.
 
 ![](assets/offer_eligibility_create_005.png)
 
 ## Angebotsinhalte erstellen {#creating-the-offer-content}
 
-1. Click the **[!UICONTROL Edit]** tab, then click the **[!UICONTROL Content]** tab.
+1. Gehen Sie in den **[!UICONTROL Bearbeiten]**-Tab des Angebots und klicken Sie auf **[!UICONTROL Inhalt]**.
 
    ![](assets/offer_content_create_001.png)
 
 1. Füllen Sie die diversen zur Verfügung stehenden Felder aus:
 
-   * **[!UICONTROL Title]** : Geben Sie den Titel an, der in Ihrem Angebot angezeigt werden soll. Warnung: Dies bezieht sich nicht auf die Beschreibung des Angebots, die auf der **[!UICONTROL General]** Registerkarte definiert ist.
-   * **[!UICONTROL Destination URL]** : Geben Sie die URL Ihres Angebots an. Um richtig verarbeitet zu werden, muss es mit &quot;http://&quot;oder &quot;https://&quot;beginnen.
-   * **[!UICONTROL Image URL]** : Geben Sie eine URL oder einen Zugriffspfad zum Bild Ihres Angebots an.
-   * **[!UICONTROL HTML content]** / **[!UICONTROL Text content]** : Geben Sie den Hauptteil Ihres Angebots auf der Registerkarte ein, die Sie möchten. Um eine Verfolgung zu generieren, **[!UICONTROL HTML content]** muss die aus HTML-Elementen bestehen, die in ein `<div>` Typelement eingeschlossen werden können. Beispielsweise lautet das Ergebnis eines `<table>` Elements auf der HTML-Seite wie folgt:
+   * **[!UICONTROL Titel]**: Geben Sie den Titel an, der bei Unterbreitung des Angebots angezeigt werden soll. (Hinweis: Es handelt sich hierbei nicht um den Titel, der im Tab **[!UICONTROL Allgemein]** vergeben wurde.)
+   * **[!UICONTROL Ziel-URL]**: Geben Sie die URL Ihres Angebots an. Um korrekt verarbeitet werden zu können, muss sie zwingend mit &quot;http://&quot; oder &quot;https://&quot; beginnen.
+   * **[!UICONTROL Bild-URL]**: Geben Sie die URL oder einen Zugangspfad für das Bild Ihres Angebots an.
+   * **[!UICONTROL HTML-Inhalt]**/**[!UICONTROL Textinhalt]**: Geben Sie den Body Ihres Angebots in den Tab Ihrer Wahl ein. Um Tracking zu generieren, muss der **[!UICONTROL HTML-Inhalt]** aus HTML-Elementen bestehen, die in ein `<div>`-Typelement eingeschlossen werden können. Beispielsweise erzeugt ein `<table>`-Element auf der HTML-Seite Folgendes:
 
    ```
       <div> 
@@ -152,11 +152,11 @@ Klicken Sie zum Anzeigen auf den **[!UICONTROL Schedule and eligibility rules]**
       </div>
    ```
 
-   Die Definition der Akzeptanz-URL wird im Abschnitt Status [konfigurieren angezeigt, wenn der Vorschlag akzeptiert](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) wird.
+   Die Definition der Annahme-URL wird im Abschnitt [Konfiguration des Status bei Annahme des Vorschlags](../../interaction/using/creating-offer-spaces.md#configuring-the-status-when-the-proposition-is-accepted) beschrieben.
 
    ![](assets/offer_content_create_002.png)
 
-   Um die erforderlichen Felder zu finden, wie sie bei der Konfiguration des Angebotsraums definiert wurden, klicken Sie auf den **[!UICONTROL Content definitions]** Link, um die Liste anzuzeigen. For more on this, refer to [Creating offer spaces](../../interaction/using/creating-offer-spaces.md).
+   Durch Klick auf den Link **[!UICONTROL Inhaltsdefinition]** können Sie prüfen, welche Felder in der Platzierungskonfiguration als Pflichtfelder definiert wurden. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_content_create_003.png)
 
@@ -166,7 +166,7 @@ Klicken Sie zum Anzeigen auf den **[!UICONTROL Schedule and eligibility rules]**
 
 Sobald der Angebotsinhalt konfiguriert wurde, können Sie die endgültige Darstellung des Angebots für die Empfänger prüfen. Gehen Sie wie folgt vor:
 
-1.  Klicken Sie auf die **[!UICONTROL Preview]** Registerkarte.
+1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab.
 
    ![](assets/offer_preview_create_001.png)
 
@@ -186,7 +186,7 @@ Sie haben die Möglichkeit, Hypothesen bezüglich Ihrer Angebotsvorschläge zu d
 >
 >Die Hypothesen werden mithilfe von Response Manager erstellt. Bitte prüfen Sie Ihren Lizenzvertrag.
 
-Hypotheses carried out on an offer proposition are referenced in their **[!UICONTROL Measure]** tab.
+Die zu einem Angebotsvorschlag definierten Hypothesen können im Tab **[!UICONTROL Messung]** des Angebots eingesehen werden.
 
 Weiterführende Informationen zum Erstellen von Hypothesen finden Sie auf [dieser Seite](../../campaign/using/about-response-manager.md).
 
