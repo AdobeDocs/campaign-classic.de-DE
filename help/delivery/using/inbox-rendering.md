@@ -14,7 +14,7 @@ discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
 
 ---
@@ -34,27 +34,27 @@ Die für das **Inbox Rendering** in Adobe Campaign verfügbaren Clients für Mob
 
 >[!NOTE]
 >
->Das Inbox-Rendering ist nicht erforderlich, um die Personalisierung in Auslieferungen zu testen. Die Personalisierung kann mit Adobe Campaign-Tools wie **[!UICONTROL Preview]** und [Proofs](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)überprüft werden.
+>Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Die Personalisierung kann auch mit Adobe-Campaign-Tools, z. B. der **[!UICONTROL Vorschau]** und [Testsendungen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof), überprüft werden.
 
-## Aktivieren des Inbox-Renderings{#activating-inbox-rendering}
+## Inbox Rendering aktivieren{#activating-inbox-rendering}
 
-Für gehostete und hybride Clients wird das Inbox-Rendering auf Ihrer Instanz vom technischen Support und von Beratern von Adobe konfiguriert. Weitere Informationen erhalten Sie von Ihrem Adobe-Kundenbetreuer.
+Für gehostete und hybride Clients wird das Inbox Rendering auf Ihrer Instanz vom technischen Support und von Beratern von Adobe konfiguriert. Weiterführende Informationen dazu erhalten Sie von Ihrem Adobe-Kundenbetreuer.
 
-Gehen Sie bei lokalen Installationen wie folgt vor, um das Rendering von Posteingängen zu konfigurieren.
+Gehen Sie bei On-Premise-Installationen wie folgt vor, um das Inbox Rendering zu konfigurieren.
 
-1. Installieren Sie das **[!UICONTROL Inbox rendering (IR)]** Paket über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** . Weitere Informationen hierzu finden Sie unter [Installieren der Standardpakete](../../installation/using/installing-campaign-standard-packages.md)von Campaign Classic.
-1. Konfigurieren Sie ein externes Konto des HTTP-Typs über den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL External Accounts]** . For more on this, see [Creating an external account](../../platform/using/external-accounts.md#creating-an-external-account).
+1. Installieren Sie das **[!UICONTROL Inbox Rendering (IR)]**-Package über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]**. Weitere Informationen hierzu finden Sie unter [Installieren von Campaign Classic-Standardpaketen](../../installation/using/installing-campaign-standard-packages.md).
+1. Konfigurieren Sie ein externes HTTP-Konto über den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]**. Weitere Informationen hierzu finden Sie unter [Externes Konto erstellen](../../platform/using/external-accounts.md#creating-an-external-account).
 1. Legen Sie die Parameter für das externe Konto wie folgt fest:
-   * **[!UICONTROL Label]**: Informationen zum Bereitstellungsserver
-   * **[!UICONTROL Internal name]**: deliveryInstance
-   * **[!UICONTROL Type]**:HTTP
+   * **[!UICONTROL Titel]**: Zustellbarkeits-Server-Information
+   * **[!UICONTROL Interner Name]**: deliverabilityInstance
+   * **[!UICONTROL Typ]**: HTTP
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
-   * **[!UICONTROL Encryption]**: Keiner
-   * Aktivieren Sie die **[!UICONTROL Enabled]** Option.
+   * **[!UICONTROL Verschlüsselung]**: Keine
+   * Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
-1. Wechseln Sie zum Knoten **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** . Suchen Sie nach der **[!UICONTROL DmRendering_cuid]** Option und wenden Sie sich an den Support, um die ID der Lieferberichte abzurufen, die in das **[!UICONTROL Value (text)]** Feld kopiert werden muss.
-1. Bearbeiten Sie die Datei &quot; **serverConf.xml** &quot;, um einen Aufruf an den Litmus-Server zuzulassen. Fügen Sie dem `<urlPermission>` Abschnitt die folgende Zeile hinzu:
+1. Wechseln Sie zum Knoten **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]**. Suchen Sie nach der Option **[!UICONTROL DmRendering_cuid]** und wenden Sie sich an den Support, um die ID der Versandberichte abzurufen, die in das Feld **[!UICONTROL Wert (Text)]** kopiert werden muss.
+1. Bearbeiten Sie die Datei **serverConf.xml**, um einen Aufruf an den Litmus-Server zuzulassen. Fügen Sie dem Abschnitt `<urlPermission>` die folgende Zeile hinzu:
 
    ```
    <url dnsSuffix="deliverability-app.neolane.net" urlRegEx="https://.*"/>
@@ -68,7 +68,7 @@ Gehen Sie bei lokalen Installationen wie folgt vor, um das Rendering von Postein
 
 >[!NOTE]
 >
->Möglicherweise müssen Sie sich von der Konsole abmelden und sich wieder anmelden, um das Inbox-Rendering verwenden zu können.
+>Möglicherweise müssen Sie sich von der Konsole abmelden und sich wieder anmelden, um das Inbox Rendering verwenden zu können.
 
 ## Über Litmus-Token {#about-litmus-tokens}
 
@@ -80,7 +80,7 @@ In Adobe Campaign entspricht das Guthaben der Anzahl der verfügbaren Renderings
 >
 >Die Anzahl der verfügbaren Litmus-Token hängt von der von Ihnen erworbenen Campaign-Lizenz ab. Diese Information können Sie Ihrem Lizenzabkommen entnehmen.
 
-Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox rendering]** verwenden, wird die verfügbare Anzahl der Token um jeweils eins verringert.
+Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]** verwenden, wird die verfügbare Anzahl der Token um jeweils eins verringert.
 
 >[!IMPORTANT]
 >
@@ -92,7 +92,7 @@ Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox rendering]
 
 
 
-Die Anzahl der verbleibenden verfügbaren Token wird im Bericht **[!UICONTROL General summary]** zum Rendern [ des ](#inbox-rendering-report)Posteingangs angezeigt.
+Die Anzahl der restlichen Token wird in der **[!UICONTROL Zusammenfassung]** des Berichts [Inbox Rendering-Bericht](#inbox-rendering-report) angezeigt.
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -110,8 +110,8 @@ Nachdem Sie Ihren E-Mail-Versand erstellt und seinen Inhalt sowie die Zielpopula
 
 Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/about-email-channel.md).
 
-1. Wählen Sie in der Symbolleiste des Versands die Schaltfläche **[!UICONTROL Inbox rendering]** aus.
-1. Select **[!UICONTROL Analyze]** to start the capture process.
+1. Wählen Sie in der Symbolleiste des Versands die Schaltfläche **[!UICONTROL Inbox Rendering]** aus.
+1. Wählen Sie **[!UICONTROL Analysieren]** aus, um den Aufnahmeprozess zu starten.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
@@ -131,13 +131,13 @@ Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines V
 
 Dieser Bericht enthält Informationen zum Inbox Rendering, d. h. zur Darstellung der E-Mail in der Inbox des Empfängers. Die Renderings können unterschiedlich aussehen, je nachdem ob die E-Mail in einem Browser, auf einem Mobilgerät oder über eine E-Mail-Anwendung geöffnet wird.
 
-The **[!UICONTROL General summary]** presents the number of messages received, unwanted (spam), not received, or pending reception, as a list and through a graphical color-coded representation.
+Die **[!UICONTROL Zusammenfassung]** des Berichts zeigt die Anzahl der empfangenen, als Spam gekennzeichneten und nicht empfangenen Nachrichten oder die Anzahl der Nachrichten, deren Empfang ausstehend ist, in einer Liste und in einer farbcodierten Grafik.
 
 ![](assets/s_tn_inbox_rendering_summary.png)
 
 Bewegen Sie die Maus über das Diagramm, um Informationen zu jeder Farbe aufzurufen.
 
-Der Bericht ist in drei Teile untergliedert: **[!UICONTROL Mobile]**, **[!UICONTROL Messaging clients]** und **[!UICONTROL Webmails]**. Scrollen Sie im Bericht nach unten, um alle in diese drei Kategorien eingeteilten Renderings anzusehen.
+Der Hauptteil des Berichts ist in drei Bereiche unterteilt: **[!UICONTROL Mobiltelefon]**, **[!UICONTROL E-Mail-Clients]** und **[!UICONTROL Webmails]**. Scrollen Sie im Bericht nach unten, um sich alle in diese drei Kategorien unterteilten Renderings anzusehen.
 
 ![](assets/s_tn_inbox_rendering_report.png)
 
