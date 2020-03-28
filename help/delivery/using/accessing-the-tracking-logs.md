@@ -14,7 +14,7 @@ discoiquuid: ad1ce80d-8976-430d-9964-e50d548b2822
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 # Auf Trackinglogs zugreifen{#accessing-the-tracking-logs}
 
-When the delivery has been sent and tracking activated, the **[!UICONTROL Tracking]** technical workflow is in charge of retrieving the tracking data. Er wird standardmäßig stündlich ausgeführt.
+Der technische Workflow **[!UICONTROL Tracking]** hat die Aufgabe, nach dem Versand und der Aktivierung des Trackings die Tracking-Informationen abzurufen. Standardmäßig wird er stündlich ausgeführt.
 
 Die derart gesammelten Informationen reichern die im **[!UICONTROL Tracking]**-Tab der Versandempfänger angezeigten Daten an:
 
@@ -34,4 +34,4 @@ Sie stehen darüber hinaus im **[!UICONTROL Tracking]**-Tab des entsprechenden V
 
 >[!NOTE]
 >
->If you cannot see the **[!UICONTROL Tracking]** tab of a delivery, it means that tracking has not been activated. Siehe [diesen Abschnitt](../../delivery/using/how-to-configure-tracked-links.md).
+>Wenn der Tab **[!UICONTROL Tracking]** eines Versands nicht sichtbar ist, bedeutet dies, dass das Tracking nicht aktiviert wurde. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/how-to-configure-tracked-links.md).
