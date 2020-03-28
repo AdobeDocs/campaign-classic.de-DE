@@ -14,7 +14,7 @@ discoiquuid: 367314a2-eb6d-4710-8a47-5a51049ad924
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # LINE-Kanal{#line-channel}
 
-**** Die folgenden Workflows werden mit dem LINE-Kanal-Modul installiert. Weiterführende Informationen zum Modul finden Sie in diesem [ Abschnitt](../../delivery/using/line-channel.md).
+Die folgenden Workflows werden mit dem **LINE-Kanal**-Modul installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../delivery/using/line-channel.md).
 
 <table> 
  <tbody> 
@@ -43,7 +43,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Migration von MID zu LineUserID</span> <br /> </td> 
-   <td> <span class="uicontrol">MIDToUserIDMigration</span><br /> </td> 
+   <td> <span class="uicontrol">MIDToUserIDMigration</span> <br /> </td> 
    <td> Dieser Workflow erzeugt die Kennung von LINE V2-Benutzern für die Migration von LINE V1 nach LINE V2.<br /> </td> 
   </tr> 
  </tbody> 
