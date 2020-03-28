@@ -14,7 +14,7 @@ discoiquuid: 13b72aa1-de40-4548-835b-97e765e04e95
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -40,49 +40,49 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
 1. **Content**
 
-   * **[!UICONTROL Specified in the transition]**
+   * **[!UICONTROL Wird durch die Transition angegeben]**
 
-      Mit dieser Option können Sie den Inhalt verwenden, der im Übergang angegeben wurde, d. h. das Ereignis, das die Inhaltsverwaltung aktiviert, muss eine **[!UICONTROL contentId]** Variable enthalten. Diese Variable kann von einer vorherigen Inhaltsverwaltung oder einem beliebigen Skript festgelegt worden sein.
+      Bei Auswahl dieser Option wird der durch die eingehende Transition übermittelte Inhalt verwendet. Dies bedeutet, dass das Ereignis, welches das Content Management aktiviert, eine **[!UICONTROL contentId]**-Variable enthalten muss. Diese kann durch eine vorangehende Content-Management-Aktivität oder durch ein beliebiges Script bestimmt worden sein.
 
-   * **[!UICONTROL Explicit]**
+   * **[!UICONTROL Explizit]**
 
-      Mit dieser Option können Sie einen bereits erstellten Inhalt über das **[!UICONTROL Content]** Feld auswählen. Dieses Feld ist nur sichtbar, wenn die **[!UICONTROL Explicit]** Option ausgewählt ist.
+      Wählen Sie diese Option, wenn ein zuvor erstellter Inhalt verwendet werden soll. Geben Sie diesen im Feld **[!UICONTROL Inhalt]** an. Das Feld erscheint nur, wenn die Option **[!UICONTROL Explizit]** angekreuzt wurde.
 
       ![](assets/content_mgmt_explicit.png)
 
-   * **[!UICONTROL Calculated by a script]**
+   * **[!UICONTROL Wird durch ein Script erstellt]**
 
-      Die Inhaltskennung wird durch ein Skript berechnet. Im **[!UICONTROL Script]** Feld können Sie eine JavaScript-Vorlage definieren, mit der der Bezeichner (Primärschlüssel) des Inhalts ausgewertet wird. Dieses Feld ist nur sichtbar, wenn die **[!UICONTROL Calculated by a script]** Option ausgewählt ist.
+      Die Kennung des Inhalts wird über ein Script erstellt. Im Feld **[!UICONTROL Script]** wird das JavaScript-Template berechnet, welches die Kennung (den Primärschlüssel) des Inhalts evaluiert. Das Feld erscheint nur, wenn die Option **[!UICONTROL Wird durch ein Script erstellt]** angekreuzt wurde.
 
       ![](assets/content_mgmt_script.png)
 
-   * **[!UICONTROL New, created from a publication template]**
+   * **[!UICONTROL Neu, basierend auf einer Publikationsvorlage erstellt]**
 
-      Erstellt einen neuen Inhalt aus einer Veröffentlichungsvorlage. Dieser neue Inhalt wird in der im **[!UICONTROL String]** Feld angegebenen Datei gespeichert. Das **[!UICONTROL Template]** Feld gibt die Veröffentlichungsvorlage an, die zum Erstellen des Inhalts verwendet werden soll.
+      Wählen Sie diese Option, wenn ein neuer, auf einer Vorlage beruhender Inhalt erstellt werden soll. Geben Sie im Feld **[!UICONTROL Inhaltskanal]** den Ordner an, in dem der neue Inhalt gespeichert werden soll und im Feld **[!UICONTROL Vorlage]** die zu verwendende Publikationsvorlage.
 
       ![](assets/content_mgmt_new.png)
 
 1. **Bereich Inhalt aktualisieren**
 
-   * **[!UICONTROL Subject]**
+   * **[!UICONTROL Betreff]**
 
       Hier kann der Betreff der dem Inhalt entsprechenden Versandaktion überschrieben werden.
 
-   * **[!UICONTROL Access to data from an XML feed]**
+   * **[!UICONTROL Zugriff auf Daten eines XML-Streams]**
 
-      Mit dieser Option können Sie Inhalte aus einem XML-Dokument erstellen, das über ein XSL-Stylesheet heruntergeladen wurde. Wenn diese Option aktiviert ist, gibt das **[!UICONTROL URL]** Feld die URL des XML-Inhalts zum Herunterladen an. Mit der **[!UICONTROL XSL stylesheet]** können Sie das Stylesheet angeben, das zum Transformieren des heruntergeladenen XML-Dokuments verwendet werden soll. Diese Eigenschaft ist optional.
+      Mithilfe dieser Option ist es möglich, einen Inhalt ausgehend von einem XML-Dokument, das von einem Webserver heruntergeladen wurde, zu erstellen und ihn gegebenenfalls mit einem XSL-Stylesheet umzuwandeln. Im Feld **[!UICONTROL URL]** ist die URL für den XML-Download und im Feld **[!UICONTROL XSL-Stylesheet]** das für die Umwandlung zu nutzende Stylesheet anzugeben. Letzteres ist optional.
 
       ![](assets/content_mgmt_xmlcontent.png)
 
 1. **Auszuführende Aktion**
 
-   * **[!UICONTROL Save]**
+   * **[!UICONTROL Speichern]**
 
       Der erstellte oder geänderte Inhalt wird gespeichert.
 
       In diesem Fall wird die ausgehende Transition einmal aktiviert. In der Variable **[!UICONTROL contentId]** wird die Kennung des Inhalts gespeichert.
 
-   * **[!UICONTROL Generate]**
+   * **[!UICONTROL Erzeugen]**
 
       Der Inhalt wird gespeichert und die Ausgabedateien für alle Umwandlungsvorlagen mit dem Publikationstyp &#39;Datei&#39; werden erzeugt.
 
@@ -94,7 +94,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
 * contentId
 
-Bezeichner des Inhalts, der verwendet werden soll, wenn die **[!UICONTROL Specified in the transition]** Option aktiviert ist.
+Kennung des zu verwendenden Inhalts, wenn die Option **[!UICONTROL Wird durch die Transition angegeben]** ausgewählt wurde.
 
 ## Ausgabeparameter {#output-parameters}
 
@@ -104,8 +104,8 @@ Bezeichner des Inhalts, der verwendet werden soll, wenn die **[!UICONTROL Specif
 
 * filename
 
-   Full name of the generated file if the selected action is **[!UICONTROL Generate]**.
+   Vollständiger Name der erzeugten Datei, wenn die Aktion **[!UICONTROL Erzeugen]** ausgewählt wurde.
 
-## Beispiele {#examples}
+## Beispiele  {#examples}
 
 Beispiele werden in diesem [Abschnitt](../../delivery/using/automating-via-workflows.md#examples) bereitgestellt.
