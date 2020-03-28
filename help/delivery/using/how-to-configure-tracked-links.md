@@ -14,7 +14,7 @@ discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -32,7 +32,7 @@ Sie haben die Möglichkeit, für jeden Versand die Zustellung und Klicks auf ent
 
 Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von URLs zu personalisieren, gehen Sie folgendermaßen vor:
 
-1. Select the **[!UICONTROL Display URLs]** option in the lower section of the delivery wizard, under the message content.
+1. Wählen Sie die Option **[!UICONTROL URLs anzeigen]** im unteren Bereich des Versand-Assistenten unter dem Nachrichtentext aus.
 
    ![](assets/s_ncs_user_email_del_display_urls.png)
 
@@ -60,11 +60,11 @@ Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von U
 
    Für jede einzelne URL können Sie den Tracking-Modus auf einen dieser Werte festlegen.
 
-   * **[!UICONTROL Enabled]** : aktiviert die Verfolgung für diese URL.
-   * **[!UICONTROL Not tracked]** : deaktiviert die Verfolgung für diese URL.
-   * **[!UICONTROL Always enabled]** : aktiviert immer die Verfolgung dieser URL. Diese Informationen werden gespeichert, damit die Verfolgung beim nächsten Mal automatisch aktiviert wird, wenn die URL in einem zukünftigen Nachrichtensatz erneut angezeigt wird.
-   * **[!UICONTROL Never tracked]** : aktiviert nie die Verfolgung dieser URL. Diese Informationen werden gespeichert, damit die Verfolgung beim nächsten Mal automatisch deaktiviert wird, wenn die URL in einer zukünftigen Meldung erneut angezeigt wird.
-   * **[!UICONTROL Opt-out]** : Diese URL wird als Opt-out-URL behandelt.
-   * **[!UICONTROL Mirror page]** : betrachtet diese URL als Spiegelseite-URL.
+   * **[!UICONTROL Aktiviert]**: Aktiviert das Tracking dieser URL.
+   * **[!UICONTROL Nicht aktiviert]**: Deaktiviert das Tracking dieser URL.
+   * **[!UICONTROL Immer aktiviert]**: Aktiviert immer das Tracking dieser URL. Diese Eingabe wird gespeichert, sodass das Tracking automatisch aktiviert wird, wenn die URL das nächste Mal in einem Nachrichtentext vorkommt.
+   * **[!UICONTROL Nie aktiviert]**: Aktiviert nie das Tracking dieser URL. Diese Eingabe wird gespeichert, sodass das Tracking automatisch deaktiviert wird, wenn die URL das nächste Mal in einem Nachrichtentext vorkommt.
+   * **[!UICONTROL Opt-out]**: Diese URL wird als Opt-out-URL behandelt.
+   * **[!UICONTROL Mirrorseite]**: Diese URL wird als Mirrorseite behandelt.
 
-1. Darüber hinaus können Sie in der Dropdown-Liste der **[!UICONTROL Category]** Spalte eine Kategorie für jede verfolgte URL auswählen. Diese Kategorien können in Berichten angezeigt werden, z. B. in **[!UICONTROL URLs and click streams]** (siehe [diesen Abschnitt](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorien werden in einer bestimmten Aufzählung definiert: **[!UICONTROL urlCategory]** (siehe [Verwalten von Enumerationen](../../platform/using/managing-enumerations.md)).
+1. Zusätzlich können Sie für jede getrackte URL in der Dropdown-Liste der Spalte **[!UICONTROL Kategorie]** eine Kategorie auswählen. Diese Kategorien können angezeigte Berichte sein, wie z. B. in **[!UICONTROL URLs und Clickstreams]** (siehe [diesen Abschnitt](../../reporting/using/reports-on-deliveries.md#urls-and-click-streams)). Kategorien werden in einer speziellen Auflistung definiert: **[!UICONTROL urlCategory]** (siehe [Auflistungen verwalten](../../platform/using/managing-enumerations.md)).
