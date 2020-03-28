@@ -14,7 +14,7 @@ discoiquuid: f26cc65a-76be-4b7a-bde3-d0cbe3eedaaf
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -26,15 +26,15 @@ source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 Der Import von Zielgruppen/Segmenten aus Audience Manager oder People Core Service in Adobe Campaign erfolgt mithilfe von Empfängerlisten.
 
-1. Wechseln Sie zum Knoten **[!UICONTROL Profiles and Targets]** > **[!UICONTROL Lists]** im Adobe Campaign-Explorer.
-1. Wählen Sie in der Aktionsleiste **[!UICONTROL New]** > **[!UICONTROL Create a shared audience...]**.
+1. Gehen Sie in den Knoten **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Listen]** des Adobe-Campaign-Navigationsbaums.
+1. Klicken Sie in der Symbolleiste auf die Schaltfläche **[!UICONTROL Neu]** > **[!UICONTROL Freigegebene Zielgruppe erstellen...]**
 
    ![](assets/aam_import_audience.png)
 
-1. In the window that opens, click **[!UICONTROL Select a shared audience]** to go to the list of shared audiences/segments available from the other Adobe Experience Cloud solutions.
+1. Klicken Sie dann im sich öffnenden Fenster auf **[!UICONTROL Freigegebene Zielgruppe auswählen]**, um auf die Liste der von anderen Adobe Experience Cloud-Lösungen freigegebenen Zielgruppen/Segmente zugreifen zu können.
 1. Wählen Sie die gewünschte Zielgruppe aus und validieren Sie. Die Informationen zur ausgewählten Zielgruppe werden automatisch ausgefüllt.
 
-   Bitte beachten Sie, dass Sie zum Importieren freigegebener Zielgruppen das Produkt in der Admin-Konsole und als Administrator in Audience Manager zuordnen **[!UICONTROL Audience library]** müssen. Weiterführende Informationen dazu finden Sie im [Handbuch zur Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html).
+   Um freigegebene Zielgruppen importieren zu können, sollte Ihnen das Produkt **[!UICONTROL Audience Library]** in der Admin Console zugewiesen worden sein. Außerdem sollten Sie in Audience Manager Administratorrechte besitzen. Weiterführende Informationen dazu finden Sie im [Handbuch zur Admin Console](https://helpx.adobe.com/de/enterprise/managing/user-guide.html).
 
    ![](assets/aam_import_audience_3.png)
 
@@ -52,7 +52,7 @@ Wenn Segmente direkt von People Core Service oder Audience Manager importiert we
 >
 >Wenn Sie Zielgruppen aus Adobe Analytics in Adobe Campaign importieren, müssen diese Zielgruppen zunächst in People Core Service oder Audience Manager freigegeben werden. Dieser Vorgang dauert 12 bis 24 Stunden. Diese Zeit muss zu den 24 bis 36 Stunden für die Synchronisation mit Campaign addiert werden.
 >
->In diesem speziellen Fall kann die Zielgruppenfreigabe bis zu 60 Stunden dauern. Weitere Informationen zur Adobe Analytics-Zielgruppenfreigabe in People Core Service und Audience Manager finden Sie in dieser [Dokumentation](https://marketing.adobe.com/resources/help/en_US/mcloud/t_publish_audience_segment.html).
+>In diesem speziellen Fall kann die Zielgruppenfreigabe bis zu 60 Stunden dauern. Weitere Informationen zur Adobe Analytics-Zielgruppenfreigabe in People Core Service und Audience Manager finden Sie in dieser [Dokumentation](https://marketing.adobe.com/resources/help/de_DE/mcloud/t_publish_audience_segment.html).
 
 Bei jeder späteren Synchronisation werden alle Daten der zuvor erstellten Zielgruppe vollständig ersetzt. Nur Segmente können importiert werden. Granulare Daten wie Schlüssel/Wert-Paare, Merkmale und Regeln werden nicht unterstützt.
 
@@ -62,11 +62,11 @@ Der Export von Zielgruppen aus Adobe Campaign in Audience Manager oder People Co
 
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
 1. Verwenden Sie die diversen zur Verfügung stehenden Aktivitäten, um eine Gruppe von Empfängern auszuwählen.
-1. After the targeting, drag and drop an **[!UICONTROL Update shared audience]** activity, then open it.
+1. Platzieren Sie im Anschluss an die Zielgruppenbestimmung die Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppe]** im Workflow-Diagramm und öffnen Sie sie.
 
    ![](assets/aam_export_example.png)
 
-1. Definieren Sie die Zielgruppe, die Sie über die **[!UICONTROL Select a shared audience]** Option exportieren möchten. Im sich öffnenden Fenster können Sie eine bestehende Zielgruppe auswählen oder eine neue Zielgruppe erstellen.
+1. Definieren Sie die zu exportierende Zielgruppe anhand der Option **[!UICONTROL Freigegebene Zielgruppe auswählen]**. Im sich öffnenden Fenster können Sie zwischen der Auswahl einer existierenden und der Erstellung einer neuen Zielgruppe wählen.
 
    Wenn Sie eine existierende Zielgruppe verwenden, wird sie mit den neuen Datensätzen ergänzt.
 
@@ -74,7 +74,7 @@ Der Export von Zielgruppen aus Adobe Campaign in Audience Manager oder People Co
 
    Schließen Sie den Vorgang ab, indem Sie auf die Validierungsschaltfläche oben rechts im Fenster und dann auf **[!UICONTROL OK]** klicken.
 
-1. Wählen Sie die **[!UICONTROL AMC Data source]** aus, um den erwarteten Datentyp anzugeben. Das Schema wird automatisch bestimmt.
+1. Wählen Sie im Feld **[!UICONTROL AMC Data source]** die Adobe-Marketing-Cloud-Datenquelle aus, um den erwarteten Datentyp zu definieren. Das Schema wird automatisch abgeleitet.
 
    ![](assets/aam_export_audience_activity.png)
 
@@ -82,7 +82,7 @@ Der Export von Zielgruppen aus Adobe Campaign in Audience Manager oder People Co
 
 Die Zielgruppe wird daraufhin exportiert. Die Aktivität zum Zielgruppenexport weist zwei ausgehende Transitionen auf. Die erste Transition enthält die Empfänger, die erfolgreich exportiert wurden. Die zweite Transition enthält die Empfänger, denen keine Besucherkennung oder Declared ID zugeordnet werden konnte.
 
-Die Synchronisation von Adobe Campaign und People Core Service dauert 24 bis 36 Stunden. Danach ist Ihre neue Audience in People Core Service auffindbar und kann in anderen Adobe Experience Cloud-Lösungen verwendet werden. Weiterführende Informationen zur Verwendung einer in Adobe Campaign freigegebenen Audience in Adobe People Core Service finden Sie in dieser [Dokumentation](https://marketing.adobe.com/resources/help/en_US/mcloud/t_audience_create.html).
+Die Synchronisation von Adobe Campaign und People Core Service dauert 24 bis 36 Stunden. Danach ist Ihre neue Audience in People Core Service auffindbar und kann in anderen Adobe Experience Cloud-Lösungen verwendet werden. Weiterführende Informationen zur Verwendung einer in Adobe Campaign freigegebenen Audience in Adobe People Core Service finden Sie in dieser [Dokumentation](https://marketing.adobe.com/resources/help/de_DE/mcloud/t_audience_create.html).
 
 >[!NOTE]
 >
