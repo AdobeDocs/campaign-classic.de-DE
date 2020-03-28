@@ -14,7 +14,7 @@ discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -32,9 +32,9 @@ In Adobe Campaign kommen Workflows in unterschiedlichsten Kontexten und zu versc
 
 Beispielhaft seien folgende Vorgänge genannt:
 
-* Durchführung von Targeting-Kampagnen. For more on this, refer to [Implementation steps](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Erstellen von Kampagnen: können Sie auf der **[!UICONTROL Workflow]** Registerkarte für jede Kampagne das Ziel erstellen und die Auslieferungen erstellen. For more on this, refer to [Campaign workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Technische Prozesse durchführen: Bereinigung, Erfassung von Verfolgungsinformationen oder vorläufige Berechnungen. For more on this, refer to [Technical workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Durchführen einer Zielgruppenbestimmung. Weitere Informationen hierzu finden Sie unter [Umsetzung](../../workflow/using/building-a-workflow.md#implementation-steps-).
+* Erstellen von Kampagnen: Auf dem Tab **[!UICONTROL Workflow]** können Sie die Zielgruppe und die Sendungen erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnen-Workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
+* Durchführen von technischen Prozessen: Bereinigung, Erfassung von Tracking-Informationen oder vorläufige Berechnungen. Weitere Informationen hierzu finden Sie im Abschnitt [Technische Workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
 
 Der Begriff Workflow bezeichnet einerseits einen Prozess (Workflow-Vorlage: Darstellung eines theoretischen Ablaufs) und andererseits eine Instanz dieses Prozesses (Workflow-Instanz: Darstellung des tatsächlichen Ablaufs).
 
@@ -46,13 +46,13 @@ Jeder Workflow besteht aus:
 
 * **[!UICONTROL Activities]**
 
-   Eine Aktivität beschreibt eine Aufgabenvorlage. Die verschiedenen verfügbaren Aktivitäten werden im Diagramm durch Symbole dargestellt. Jeder Typ hat allgemeine Eigenschaften und spezifische Eigenschaften. Während beispielsweise alle Aktivitäten einen Namen und eine Bezeichnung haben, verfügt nur die **[!UICONTROL Approval]** Aktivität über eine Zuweisung.
+   Aktivitäten sind Vorlagen für Aufgaben. Es gibt verschiedene Aktivitätstypen, die jeweils durch verschiedene Symbole im Diagramm dargestellt werden. Jeder Aktivitätstyp weist allgemeine und spezifische Eigenschaften auf. So haben beispielsweise alle Aktivitäten einen Namen und einen Titel, aber nur die Aktivität **[!UICONTROL Validierung]** bietet die Möglichkeit, einem Benutzer eine Aufgabe zuzuweisen.
 
    In einem Workflow-Diagramm kann eine einzelne Aktivität verschiedene Aufgaben auslösen. Dies ist insbesondere der Fall bei Schleifen oder (periodisch) wiederkehrenden Aktionen.
 
    Alle Workflow-Aktivitäten einschließlich Anwendungsbeispiele finden Sie in [diesem Abschnitt](../../workflow/using/about-activities.md).
 
-* **[!UICONTROL Transitions]**
+* **[!UICONTROL Transitionen]**
 
    Transitionen stellen die Verbindungen zwischen Aktivitäten her und bestimmen die Reihenfolge der Verarbeitung. Jede Transition verbindet eine Quellaktivität mit einer Zielaktivität. Je nach Quellaktivität existieren verschiedene Transitionstypen. Bestimmte Transitionen bieten die Möglichkeit, zusätzliche Eigenschaften wie z. B. eine Dauer, eine Bedingung oder einen Filter zu definieren.
 
@@ -64,7 +64,7 @@ Jeder Workflow besteht aus:
 
    Weiterführende Informationen zur Erstellung eines Workflows finden Sie in [diesem Abschnitt](../../workflow/using/building-a-workflow.md).
 
-* **[!UICONTROL Worktables]**
+* **[!UICONTROL Arbeitstabellen]**
 
    Arbeitstabellen enthalten alle von der Transition übertragenen Informationen. Dies bedeutet, dass jeder Workflow mehrere Arbeitstabellen beansprucht. Vorausgesetzt, dass sie nicht bereinigt werden, können die Daten der Arbeitstabellen während des ganzen Lebenszyklus eines Workflows verwendet werden. Tatsächlich werden unnütze Tabellen bei jeder Workflow-Passivierung und gegebenenfalls während der Ausführung eines Workflows bereinigt. Letzteres ist bei umfangreichen Arbeitstabellen der Fall, um die Server nicht zu überlasten.
 
