@@ -14,7 +14,7 @@ discoiquuid: 907d82c8-9262-4952-b8df-21144dd55824
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d5eac80743d4cc82cdf55aa9287e8bb4fcc84356
 
 ---
@@ -26,7 +26,7 @@ In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrors
 
 ## Voraussetzungen {#prerequisites}
 
-* All of the hosts must be added to the configuration file of the instance (`config-<instance>.xml`).
+* Alle Hosts müssen der Konfigurationsdatei der Instanz (`config-<instance>.xml`) hinzugefügt werden.
 * Jeder Marke muss eine Sub-Domain zugewiesen werden.
 * Wenn das Webtracking auf HTTPS-Seiten erfolgt, müssen Sie für alle Marken über ein HTTPS-Zertifikat verfügen.
 
@@ -38,7 +38,7 @@ Um Multibranding zu konfigurieren, ist es nötig, sowohl Ausführungsinstanzen a
 
    >[!NOTE]
    >
-   >Creating an execution instance type external account is presented in the [Control instance](../../message-center/using/creating-a-shared-connection.md#control-instance) section.
+   >Die Erstellung eines externen Kontos vom Ausführungsinstanz-Typ wird in Abschnitt [Kontrollinstanz](../../message-center/using/creating-a-shared-connection.md#control-instance) beschrieben.
 
 1. Erweitern Sie das Schema nms:extAccount, um die Tracking-URL hinzuzufügen:
 
@@ -85,5 +85,5 @@ In der Kontrollinstanz müssen Versandvorlagen und externe Konten verknüpft wer
 
 1. Erstellen Sie für jede Marke ein externes Konto mit demselben internen Namen wie in Schritt 1 definiert.
 1. Erstellen Sie für jede Marke eine Standard-Versandvorlage.
-1. In the delivery template&#39;s **[!UICONTROL Properties]** , set the routing to the external account of the brand.
+1. Konfigurieren Sie in den **[!UICONTROL Eigenschaften]** der Versandvorlage das Routing zum externen Konto der Marke.
 
