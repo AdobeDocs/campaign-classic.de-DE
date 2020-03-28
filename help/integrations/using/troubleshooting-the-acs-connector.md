@@ -14,7 +14,7 @@ discoiquuid: 538d3b48-ff39-463f-878d-ebe085057129
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -79,11 +79,11 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
    Standardmäßig werden 20 Felder der Tabelle nms:recipient mit Campaign Standard synchronisiert. Sehen Sie sich dazu die detaillierte Liste synchronisierter Feldern an. Jedes zusätzliche Feld, das Sie in Campaign Standard abrufen möchten, muss von Ihrem Consultant zugeordnet und konfiguriert werden.
 
-   To make sure the field you want to use is available, you can check the profile resource definition from **[!UICONTROL Administration > Development > Diagnosis > Data schemas]**.
+   Um zu überprüfen, ob das gewünschte Feld verfügbar ist, sehen Sie sich die Definition der Profilressource in **[!UICONTROL Administration > Entwicklung > Prüfung > Datenschemata]** an.
 
    Abgesehen davon werden keine Daten standardmäßig nach Campaign Standard synchronisiert, die mit Empfängern verknüpft und in nms:recipients-Empfängertabellen gespeichert sind.
 
-   To still be able to use related data, you can perform your targeting in Campaign v7 and add additional data as explained in the [Synchronizing audiences](../../integrations/using/synchronizing-audiences.md) section, or you can refer to your consultant to explore customization possibilities.
+   Um dennoch verknüpfte Daten verwenden zu können, nehmen Sie die Zielgruppenbestimmung in Campaign v7 vor und fügen Sie zusätzliche Daten wie in Abschnitt [Zielgruppen synchronisieren](../../integrations/using/synchronizing-audiences.md) beschrieben hinzu. Andernfalls können Sie sich auch an Ihren Berater wenden, um Anpassungsmöglichkeiten zu prüfen.
 
 * **Ich verwende in Campaign v7 eine andere Profildimension als die Standardtabelle nms:recipient. Wie kann ich diese Profildimension mit Campaign Standard synchronisieren?**
 
@@ -93,11 +93,11 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
 * **Ich möchte mit einem Workflow eine Profilliste nach Campaign Standard übertragen, kann aber in Campaign Standard meine Zielgruppe nicht finden**.
 
-   Zielgruppen finden Sie im **[!UICONTROL Audiences]** Menü in Campaign Standard. Sie haben die Beschriftung, die in der **[!UICONTROL List update]** Aktivität in Ihrem Kampagnen-v7-Arbeitsablauf angegeben ist. Sie unterliegen der während der Implementierung definierten Ordnerzuordnung.
+   Zielgruppen finden Sie in Campaign Standard im Menü **[!UICONTROL Zielgruppen]**. Ihr Titel wird im Campaign v7-Workflow in der Aktivität **[!UICONTROL Listen-Update]** spezifiziert. Zielgruppen basieren auf dem Ordner-Mapping, das während der Implementierung definiert wird.
 
-   Zunächst muss geprüft werden, ob der Workflow fehlerfrei abgeschlossen wurde. Wenn Sie einen Fehler bei der **[!UICONTROL List update]** Aktivität bemerken, bedeutet dies, dass die Synchronisierung mit Campaign Standard möglicherweise fehlgeschlagen ist. Um weitere Details zu den Fehlern anzuzeigen, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Process]** > **[!UICONTROL Diagnosis]**. Dieser Ordner enthält Synchronisierungs-Workflows, die durch die Ausführung der **[!UICONTROL List update]** Aktivität ausgelöst werden.
+   Zunächst sollten Sie überprüfen, ob der Workflow ohne Fehler abgeschlossen wurde. Wenn bei der Aktivität **[!UICONTROL Listen-Update]** ein Fehler auftritt, ist möglicherweise die Synchronisation mit Campaign Standard fehlgeschlagen. Um zu sehen, wo der Fehler liegt, gehen Sie zu **[!UICONTROL Administration]** > **[!UICONTROL ACS Connector]** > **[!UICONTROL Prozesse]** > **[!UICONTROL Prüfung]**. Dieser Ordner enthält Synchronisations-Workflows, die von der Aktivität **[!UICONTROL Listen-Update]** ausgelöst wurden.
 
-   Also, make sure that the **[!UICONTROL Share with ACS]** option is checked in the **[!UICONTROL List update]** activity and that the workflow was correctly executed.
+   Vergewissern Sie sich außerdem, dass die Option **[!UICONTROL In ACS freigeben]** in der Aktivität **[!UICONTROL Listen-Update]** mit einem Häkchen versehen ist und dass der Workflow korrekt ausgeführt wurde.
 
    Beachten Sie, dass vor dem Workflow die in der Liste enthaltenen Empfängerprofile mit Campaign Standard synchronisiert worden sein müssen. Nach der Übertragung der Empfänger an Campaign Standard werden diese mit Campaign Standard-Profilen abgeglichen, d. h. sie müssen dort vorhanden sein. Empfänger auf der Liste, die nicht mit Profilen in Campaign Standard abgeglichen werden können, werden ignoriert.
 
@@ -107,12 +107,12 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
    Prüfen Sie die externe Kontokonfiguration von sowohl Campaign Standard als auch Campaign v7, indem Sie die Verbindung testen:
 
-   * **[!UICONTROL acsDefaultRelayAccount]** in Campaign Standard.
-   * **[!UICONTROL acsDefaultAccount]** in Campaign v7.
+   * **[!UICONTROL acsDefaultRelayAccount]** in Campaign Standard
+   * **[!UICONTROL acsDefaultAccount]** in Campaign v7
 
 * **Beim Mapping von Ordnern zwischen Campaign v7 und Campaign Standard ist keine Sicherheitsgruppe verfügbar.**
 
-   Zunächst müssen Sie die Sicherheitsgruppen synchronisieren, von **[!UICONTROL Administration > ACS Connector > Rights management > Security groups]** denen aus Sie die Daten abrufen. Diese Aktion überprüft die in Campaign Standard verfügbaren Sicherheitsgruppen. Nach der Synchronisierung können Sie die Sicherheitsgruppen beim Konfigurieren der Ordnerzuordnung suchen.
+   Synchronisieren Sie zunächst Ihre Sicherheitsgruppen in **[!UICONTROL Administration > ACS Connector > Berechtigungs-Management > Sicherheitsgruppen]**. Damit werden die in Campaign Standard verfügbaren Sicherheitsgruppen überprüft. Danach stehen die Sicherheitsgruppen beim Konfigurieren des Ordner-Mappings zur Verfügung.
 
 * **Ich kann in Campaign Standard weder ein Profil, noch eine Zielgruppe oder Landingpage bearbeiten. Warum?**
 
