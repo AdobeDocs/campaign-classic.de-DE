@@ -14,7 +14,7 @@ discoiquuid: c89926b6-488e-4c72-8f67-b6af388bade3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -24,29 +24,29 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Speicherfelder für Antworten {#response-storage-fields}
 
-Antworten auf Formulare können in einem Feld der Datenbank oder vorübergehend in einer lokalen Variablen gespeichert werden. Der Speichermodus für Antworten wird während der Felderstellung ausgewählt. Es kann über den **[!UICONTROL Edit storage...]** Link bearbeitet werden.
+Antworten in Formularen können in einem Feld der Datenbank oder temporär in einer lokalen Variablen gespeichert werden. Der Speichermodus für Antworten wird während der Felderstellung ausgewählt. Er kann über den Link **[!UICONTROL Speicherinformationen bearbeiten...]** bearbeitet werden.
 
 Für jedes Eingabefeld in einem Formular sind die folgenden Speicheroptionen verfügbar:
 
 ![](assets/s_ncs_admin_survey_select_storage.png)
 
-* **[!UICONTROL Edit a recipient]**
+* **[!UICONTROL Empfänger bearbeiten]**
 
-   Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert: Es wird zu ihrem Profil hinzugefügt: Siehe [Speichern von Daten in der Datenbank](#storing-data-in-the-database).
+   Sie können ein Feld der Datenbank auswählen: Die Antworten der Benutzer werden in diesem Feld gespeichert. Für jeden Benutzer wird nur der zuletzt eingegebene Wert gespeichert: Es wird seinem Profil hinzugefügt: Siehe [Speichern von Daten in der Datenbank](#storing-data-in-the-database).
 
 * **[!UICONTROL Variable]**
 
-   Wenn Sie keine Informationen in der Datenbank speichern möchten, können Sie eine Variable verwenden. Lokale Variablen können im Upstream deklariert werden. Siehe [Speichern von Daten in einer lokalen Variablen](#storing-data-in-a-local-variable).
+   Wenn Sie die Informationen nicht in der Datenbank speichern möchten, können Sie eine Variable verwenden. Lokale Variablen können in vorgelagerten Arbeitsschritten festgelegt werden. Siehe [Daten in einer lokalen Variablen speichern](#storing-data-in-a-local-variable).
 
 ### Speichern von Daten in der Datenbank {#storing-data-in-the-database}
 
-To save the data in an existing field of the database, click the **[!UICONTROL Edit expression]** icon and select it from the list of available fields.
+Um Daten in einem vorhandenen Datenbankfeld zu speichern, wählen Sie das Symbol **[!UICONTROL Ausdruck bearbeiten]** und danach das Feld aus der Liste der verfügbaren Felder aus.
 
 ![](assets/s_ncs_admin_survey_storage_type1.png)
 
 >[!NOTE]
 >
->Das Standardreferenzdokument ist das Schema **nms:empfänger** . Um das Formular anzuzeigen oder ein neues auszuwählen, wählen Sie das Formular in der Liste aus und klicken Sie auf die **[!UICONTROL Properties]** Schaltfläche.
+>Das Standard-Referenzdokument ist das Schema **nms:recipient**. Wenn Sie es anzeigen oder ein neues auswählen möchten, wählen Sie das Formular in der Liste und danach die Schaltfläche **[!UICONTROL Eigenschaften]** aus.
 
 ### Daten in einer lokalen Variablen speichern {#storing-data-in-a-local-variable}
 
@@ -56,11 +56,11 @@ Das bedeutet, dass Sie den Wert eines nicht gespeicherten Felds verwenden könne
 
 ![](assets/s_ncs_admin_survey_no_storage_variable.png)
 
-It is stored in a variable which must be selected when the drop-down box is created, or via the **[!UICONTROL Edit storage...]** link.
+Er ist in einer Variablen gespeichert, die bei der Erstellung der Dropdown-Liste oder über den Link **[!UICONTROL Speicherinformationen bearbeiten...]** ausgewählt werden muss.
 
 ![](assets/s_ncs_admin_survey_no_storage_variable2.png)
 
-Sie können vorhandene Variablen anzeigen und über den **[!UICONTROL Edit variables...]** Link neue erstellen. Click the **[!UICONTROL Add]** button to create a new variable.
+Über den Link **[!UICONTROL Variablen bearbeiten...]** können Sie vorhandene Variablen anzeigen und neue erstellen. Wenn Sie eine neue Variable erstellen möchten, wählen Sie die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
 ![](assets/s_ncs_admin_survey_add_a_variable.png)
 
@@ -68,11 +68,11 @@ Die hinzugefügte Variable wird in der Liste lokaler Variablen verfügbar sein, 
 
 >[!NOTE]
 >
->Für jedes Formular können Sie Variablen im Upstream erstellen. Wählen Sie dazu das Formular aus und klicken Sie auf die **[!UICONTROL Properties]** Schaltfläche. Die **[!UICONTROL Variables]** Registerkarte enthält die lokalen Variablen für das Formular.
+>Sie können für jedes Formular in einem vorgelagerten Schritt Variablen erstellen. Wählen Sie dazu das Formular und danach die Schaltfläche **[!UICONTROL Eigenschaften]** aus. Der Tab **[!UICONTROL Variablen]** enthält die lokalen Variablen für das Formular.
 
 **Beispiel für die lokale Speicherung mit einer Bedingung**
 
-In the above example, the container that includes data concerning private vehicles is displayed only if the **[!UICONTROL Private]** option is selected from the drop-down list, as indicated in the visibility condition:
+Im obigen Beispiel wird der Container mit Daten zu Personenfahrzeugen nur angezeigt, wenn die Option **[!UICONTROL Personen]** (wie in der Sichtbarkeitsbedingung dargestellt) aus der Dropdown-Liste ausgewählt wird:
 
 ![](assets/s_ncs_admin_survey_add_a_condition.png)
 
@@ -112,7 +112,7 @@ Für jedes Formular können die bereitgestellten Antworten in Feldern oder Titel
 
    >[!NOTE]
    >
-   >Unlike the other fields for which `<%=` characters are replaced with escape characters, the HTML content is saved as is by using the `<%==` syntax.
+   >Im Gegensatz zu anderen Feldern, bei denen `<%=`-Zeichen durch Escape-Zeichen ersetzt werden, wird der HTML-Inhalt unverändert unter Verwendung der `<%==`-Syntax gespeichert.
 
 ## Webformulare-Antworten speichern {#saving-web-forms-answers}
 
@@ -122,9 +122,9 @@ Um die in Formularseiten erfassten Informationen zu speichern, müssen Sie in da
 
 Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
-* Wenn der Zugriff auf das Webformular über einen per E-Mail gesendeten Link erfolgt und der Benutzer, der auf die Anwendung zugreift, sich bereits in der Datenbank befindet, können Sie die **[!UICONTROL Update the preloaded record]** Option aktivieren. Weitere Informationen hierzu finden Sie unter [Senden eines Formulars per E-Mail](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Wenn auf das Webformular über einen in einer E-Mail gesendeten Link zugegriffen wird und der Benutzer, der auf die Anwendung zugreift, bereits in der Datenbank gespeichert ist, können Sie die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils, einen eindeutigen Bezeichner, der jedem Profil von Adobe Campaign zugewiesen wird. Sie müssen die Informationen so konfigurieren, dass sie über das Feld für das Vorausladen vorgeladen werden. Weitere Informationen finden Sie unter [Vorladen der Formulardaten](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+   In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine einmalige Kennung, die von Adobe Campaign jedem Profil zugewiesen wird. Konfigurieren Sie die Informationen so, dass sie über die Vorausfüllen-Komponente geladen werden. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
@@ -134,7 +134,7 @@ Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
    ![](assets/s_ncs_admin_survey_save_box_edit.png)
 
-Standardmäßig werden die Daten durch einen **[!UICONTROL Update or insertion]** Vorgang in die Datenbank importiert: Wenn es in der Datenbank vorhanden ist, wird das Element aktualisiert (z. B. der ausgewählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn sie nicht vorhanden ist, werden die Informationen hinzugefügt.
+Standardmäßig werden die Daten über den Vorgang **[!UICONTROL Aktualisieren oder einfügen]** in die Datenbank importiert: Wenn ein Element bereits in der Datenbank vorhanden ist, wird es aktualisiert (z. B. der ausgewählte Newsletter oder die eingegebene E-Mail-Adresse). Wenn es noch nicht existiert, wird die Information hinzugefügt.
 
 Sie können dieses Verhalten jedoch auch verändern. Wählen Sie dazu die Wurzel des Elements aus und danach aus der Dropdown-Liste den auszuführenden Vorgang.
 
@@ -144,7 +144,7 @@ Sie können für die Abstimmung einen Suchordner und für neue Profile den Erste
 
 >[!NOTE]
 >
->Mögliche Vorgänge sind: **[!UICONTROL Simple reconciliation]**, **[!UICONTROL Update or insertion]**, **[!UICONTROL Insertion]**, **[!UICONTROL Update]**, **[!UICONTROL Deletion]**.\
+>Die möglichen Vorgänge sind: **[!UICONTROL einfache Abstimmung]**, **[!UICONTROL Aktualisieren oder Einfügen]**, **[!UICONTROL Einfügen]**, **[!UICONTROL Aktualisieren]**, **[!UICONTROL Löschen]**.\
 >Der Standardordner des Operators entspricht dem ersten Ordner, für den er Schreibzugriff hat.\
 >Siehe [diesen Abschnitt](../../platform/using/access-management.md).
 
