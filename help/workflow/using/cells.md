@@ -14,7 +14,7 @@ discoiquuid: f7187d42-56e9-4681-b172-22abd43ecd29
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,15 +22,15 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Segmente{#cells}
 
-Die **[!UICONTROL Cells]** Aktivität bietet eine Ansicht der verschiedenen Untergruppen in Form von Datenspalten. Es erleichtert die Manipulation von Untergruppen und ist auch darauf ausgelegt, Personalisierungsmöglichkeiten zu fördern.
+Die **[!UICONTROL Segmente]**-Aktivität bietet eine Ansicht der verschiedenen Teilmengen in Form von Spalten, was den Umgang mit Teilmengen erleichtert, falls diese sehr zahlreich sind. Des Weiteren bietet die Aktivität Vorteile bei Personalisierungen.
 
 ![](assets/wf_split_cells.png)
 
-Diese Aktivität kann so konfiguriert werden, dass sie je nach Benutzeranforderungen bestimmte Parameter eingibt. Standardmäßig werden die Details der einzelnen Untergruppen in einem eigenen Fenster über die Registerkarten **[!UICONTROL Selection]** und **[!UICONTROL Advanced]** beschrieben. Im folgenden Beispiel wurde das Formular geändert: Es wurde eine **[!UICONTROL Data]** Registerkarte hinzugefügt, um die Verknüpfung eines Angebots und eine Prioritätsstufe für jede Untergruppe zu aktivieren.
+Die Segmentierungsaktivität ermöglicht benutzerspezifische Konfigurationen. Standardmäßig können Details in einem dedizierten Fenster mit den Tabs **[!UICONTROL Auswahl]** und **[!UICONTROL Erweitert]** eingesehen werden. Im unten abgebildeten Beispiel wurde das entsprechende Formular angepasst und ein Tab **[!UICONTROL Daten]** hinzugefügt, um die Zuordnung von Angeboten und Prioritätsniveaus zu den einzelnen Teilmengen zu erlauben:
 
 ![](assets/wf_split_cells_with_customization.png)
 
-For this configuration, the following information was added to the workflow form (in the **[!UICONTROL Administration > Configurations > Input forms]** node of the Adobe Campaign tree):
+Öffnen Sie das Workflow-Formular im Knoten **[!UICONTROL Administration > Konfiguration > Formulare]** und fügen Sie folgende Zeilen ein:
 
 ```
 <container img="nms:miniatures/mini-enrich.png" label="Data">
