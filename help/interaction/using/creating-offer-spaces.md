@@ -14,7 +14,7 @@ discoiquuid: 0fae2149-0980-466d-ac9e-8afec2e278be
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -24,9 +24,9 @@ source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 Die Erstellung von Platzierungen erfolgt in der Design-Umgebung. Sie erfordert ein Benutzerprofil vom Typ **Technischer Administrator** mit Zugriff auf den Platzierungs-Unterordner. Die Platzierungen eines Angebots werden automatisch in die Live-Umgebung dupliziert, sobald das entsprechende Angebot validiert wurde.
 
-Der Inhalt der Katalogangebote wird in den Angebotseinheiten konfiguriert. Standardmäßig kann der Inhalt die folgenden Felder umfassen: **[!UICONTROL Title]**, **[!UICONTROL Destination URL]**, **[!UICONTROL Image URL]**, **[!UICONTROL HTML content]** und **[!UICONTROL Text content]**. Die Feldsequenz wird im Angebotsumfeld konfiguriert.
+Der Inhalt der im Katalog enthaltenen Angebote wird in den Platzierungen konfiguriert. Standardmäßig kann der Inhalt folgende Felder beinhalten: **[!UICONTROL Titel]**, **[!UICONTROL Ziel-URL]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und **[!UICONTROL Textinhalt]**. Die Reihenfolge der Felder wird ebenfalls in den Platzierungen bestimmt.
 
-Mit erweiterten Parametern können Sie einen Kontaktkennungsschlüssel angeben (der aus verschiedenen Elementen, dem Namen und dem E-Mail-Feld bestehen kann, z. B.). For more on this, refer to the [Presenting an identified offer](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) section.
+In den erweiterten Parametern können Sie Identifikationsschlüssel für Kontakte definieren. Diese können aus mehreren Elementen (z. B. Name und E-Mail-Adresse) zusammengesetzt sein. Die Vorgehensweise wird im Abschnitt [Angebote für identifizierte Kontakte](../../interaction/using/integration-via-javascript--client-side-.md#presenting-an-identified-offer) erläutert.
 
 Die HTML- oder XML-Darstellungen werden über Rendering-Funktionen definiert. Die in der jeweiligen Rendering-Funktion definierte Reihenfolge der Felder muss mit der im Inhalt definierten übereinstimmen.
 
@@ -34,7 +34,7 @@ Die HTML- oder XML-Darstellungen werden über Rendering-Funktionen definiert. Di
 
 Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
-1. Go to the list of offer spaces and click **[!UICONTROL New]**.
+1. Klicken Sie auf **[!UICONTROL Neu]** in der Liste der Platzierungen.
 
    ![](assets/offer_space_create_001.png)
 
@@ -42,20 +42,20 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    ![](assets/offer_space_create_002.png)
 
-1. Check the **[!UICONTROL Enable unitary mode]** box if one of the following cases applies to you:
+1. Kreuzen Sie die Option **[!UICONTROL Einzelmodus zulassen]** an, wenn einer der beiden folgenden Fälle für Sie zutrifft:
 
    * Sie verwenden Interaction in Kombination mit Message Center,
    * Sie verwenden den Interaction-Einzelmodus (eingehende Interaktionen).
 
-1. Gehen Sie zum **[!UICONTROL Content field]** Fenster und klicken Sie auf **[!UICONTROL Add]**.
+1. Klicken Sie dann im Bereich **[!UICONTROL Felder des Angebotsinhalts]** auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/offer_space_create_003.png)
 
-1. Gehen Sie zum **[!UICONTROL Content]** Knoten und wählen Sie die Felder in der folgenden Reihenfolge aus: **[!UICONTROL Title]**, dann **[!UICONTROL Image URL]**, dann **[!UICONTROL HTML content]**, dann **[!UICONTROL Destination URL]**.
+1. Wählen Sie aus dem **[!UICONTROL Inhalt]**-Knoten unter Berücksichtigung der Reihenfolge folgende Felder aus: **[!UICONTROL Titel]**, **[!UICONTROL Bild-URL]**, **[!UICONTROL HTML-Inhalt]** und schließlich **[!UICONTROL Ziel-URL]**.
 
    ![](assets/offer_space_create_004.png)
 
-1. Check the **[!UICONTROL Required]** box to make each field mandatory.
+1. Machen Sie jedes Feld zum **[!UICONTROL Pflichtfeld]**.
 
    >[!NOTE]
    >
@@ -63,18 +63,18 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    ![](assets/offer_space_create_005.png)
 
-1. Klicken Sie auf **[!UICONTROL Edit functions]** , um eine Renderfunktion zu erstellen.
+1. Klicken Sie auf **[!UICONTROL Funktionen bearbeiten...]**, um eine Rendering-Funktion zu erstellen.
 
    Diese Funktionen dienen der Erzeugung der Angebotsdarstellung in einer Platzierung. Sie haben die Wahl zwischen verschiedenen Formaten: HTML oder Text für ausgehende Interaktionen und XML für eingehende Interaktionen.
 
    ![](assets/offer_space_create_006.png)
 
-1. Gehen Sie zur **[!UICONTROL HTML rendering]** Registerkarte und wählen Sie **[!UICONTROL Overload the HTML rendering function]**.
+1. Gehen Sie in den **[!UICONTROL HTML-Rendering]**-Tab und kreuzen Sie die Option **[!UICONTROL HTML-Rendering-Funktion überschreiben]** an.
 1. Geben Sie nun Ihre Rendering-Funktion ein.
 
    ![](assets/offer_space_create_007.png)
 
-Bei Bedarf können Sie die XML-Renderfunktionen für eingehende Interaktionen überladen. Sie können auch HTML- und Textwiedergabefunktionen für ausgehende Interaktionen überladen. For more on this, refer to [About inbound channels](../../interaction/using/about-inbound-channels.md).
+Für eingehende Interaktionen können die XML-Rendering-Funktionen, für ausgehende die HTML- und Text-Rendering-Funktionen überschrieben werden. Weitere Informationen finden Sie unter [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md).
 
 ## Status von Angebotsvorschlägen {#offer-proposition-statuses}
 
@@ -88,12 +88,12 @@ Angebotsvorschläge können je nach Interaktion mit der Zielgruppe verschiedene 
 
 Folgende Status sind bereits in Interaction enthalten und können zur Kennzeichnung der Angebotsvorschläge verwendet werden:
 
-* **[!UICONTROL Accepted]**.
-* **[!UICONTROL Scheduled]**.
-* **[!UICONTROL Generated]**.
-* **[!UICONTROL Interested]**.
-* **[!UICONTROL Presented]**.
-* **[!UICONTROL Rejected]**.
+* **[!UICONTROL Akzeptiert]**,
+* **[!UICONTROL Zeitversetzt]**,
+* **[!UICONTROL Erzeugt]**,
+* **[!UICONTROL Interessant]**,
+* **[!UICONTROL Unterbreitet]**,
+* **[!UICONTROL Zurückgewiesen]**.
 
 Diese Status werden nicht standardmäßig angewendet, sie müssen zuvor konfiguriert werden.
 
@@ -103,13 +103,13 @@ Diese Status werden nicht standardmäßig angewendet, sie müssen zuvor konfigur
 
 ### Konfiguration des Status bei Erzeugung des Vorschlags {#configuring-the-status-when-the-proposition-is-created}
 
-Wenn ein Angebotsprojekt von der Interaktions-Engine erstellt wird, wird sein Status geändert, unabhängig davon, ob es sich um eine Inbound- oder eine Outbound-Interaktion handelt. Die Wahl zwischen diesen beiden Werten hängt davon ab, wie die Angebotsobjekte in der **[!UICONTROL Design]** Umgebung konfiguriert wurden
+Sobald ein Vorschlag durch das Angebotsmodul erzeugt wird, wechselt sein Status. Dies gilt sowohl für eingehende als auch ausgehende Interaktionen. Die Auswahl eines Werts aus der Liste der möglichen Status hängt von der Konfiguration der Angebotsplatzierungen in der **[!UICONTROL Design-Umgebung]** ab.
 
 Sie können je nach Platzierung unterschiedliche, bei der Angebotserzeugung zuzuweisende Status konfigurieren, je nachdem, welche Informationen Sie in den Angebotsberichten anzeigen möchten.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Go to the **[!UICONTROL Storage]** tab of the desired space.
+1. Gehen Sie in den **[!UICONTROL Speicherung]**-Tab der zu konfigurierenden Platzierung.
 1. Wählen Sie den Status aus, der bei der Vorschlagserzeugung zugewiesen werden soll.
 
    ![](assets/offer_update_status_001.png)
@@ -120,14 +120,14 @@ Konfigurieren Sie den bei Annahme eines Vorschlags anzuzeigenden Status, indem S
 
 Gehen Sie dazu wie folgt vor:
 
-1. Go to the **[!UICONTROL Storage]** tab of the desired space.
+1. Gehen Sie in den **[!UICONTROL Speicherung]**-Tab der zu konfigurierenden Platzierung.
 1. Wählen Sie den Status aus, den der Vorschlag erhalten soll, nachdem er akzeptiert wurde.
 
    ![](assets/offer_update_status_002.png)
 
 **Eingehende Interaktionen**
 
-Auf der **[!UICONTROL Storage]** Registerkarte können Sie nur Status für **vorgeschlagene** und **akzeptierte** Angebotsprojekte definieren. Bei einer eingehenden Interaktion sollte der Status der Angebotsprojekte direkt in der URL für den Aufruf der Angebotsmaschine und nicht über die Schnittstelle angegeben werden. Auf diese Weise können Sie festlegen, welcher Status in anderen Fällen angewendet werden soll, z. B. wenn ein Angebot abgelehnt wird.
+Über den Tab **[!UICONTROL Speicherung]** können Sie nur die Status für **unterbreitete** und **akzeptierte** Angebotsvorschläge definieren. Für eingehende Interaktionen sollte der Status von Angebotsvorschlägen nicht über die Schnittstelle, sondern direkt in der URL definiert werden, über die das Angebotsmodul aufgerufen wird. Auf diese Weise können Sie festlegen, welche Status in anderen Szenarien angewendet werden (z. B. wenn ein Angebotsvorschlag abgelehnt wird).
 
 ```
 <BASE_URL>?a=UpdateStatus&p=<PRIMARY_KEY_OF_THE_PROPOSITION>&st=<NEW_STATUS_OF_THE_PROPOSITION>&r=<REDIRECT_URL>
@@ -139,17 +139,17 @@ So enthält beispielsweise der auf der **Neobank**-Webseite angezeigte Vorschlag
 <BASE_URL>?a=UpdateStatus&p=<40004>&st=<3>&r=<"http://www.neobank.com/insurance/subscribe.html">
 ```
 
-As soon as a visitor clicks the offer, and therefore the URL, the **[!UICONTROL Accepted]** status (value **3**) is applied to the proposition and the visitor is redirected to a new page of the **Neobank** site to take out the insurance contract.
+Wenn nun ein Besucher auf den Vorschlag und somit auf die URL klickt, wird dem Vorschlag der Status **[!UICONTROL Akzeptiert]** (entspricht dem Wert **3**) zugewiesen und der Besucher wird auf eine andere Seite der **Neobank**-Webseite weitergeleitet, um die Versicherung abzuschließen.
 
 >[!NOTE]
 >
->Wenn Sie einen anderen Status in der URL angeben möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den Wert, der dem gewünschten Status entspricht. Beispiel: **[!UICONTROL Rejected]** = &quot;5&quot;, **[!UICONTROL Presented]** = &quot;1&quot; usw.
+>Wenn Sie in der URL einen anderen Status festlegen möchten (z. B. wenn ein Angebotsvorschlag abgelehnt wird), verwenden Sie den dem gewünschten Status entsprechenden Wert. Beispiel: **[!UICONTROL Abgelehnt]** = &quot;5&quot;, **[!UICONTROL Unterbreitet]** = &quot;1&quot; usw.
 >
->Status und ihre Werte können im Datenschema **[!UICONTROL Offer propositions (nms)]** abgerufen werden. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../configuration/using/data-schemas.md).
+>Status und die ihnen zugehörigen Werte können aus dem Datenschema **[!UICONTROL Angebotsvorschläge (nms)]** abgerufen werden. Näheres hierzu finden Sie auf [dieser Seite](../../configuration/using/data-schemas.md).
 
 **Ausgehende Interaktionen**
 
-Bei einer ausgehenden Interaktion können Sie den **[!UICONTROL Interested]** Status automatisch auf ein Angebotsangebot anwenden, wenn die Bereitstellung einen Link enthält. Fügen Sie dem Link einfach den Wert **_urlType=&quot;11&quot;** hinzu:
+Bei ausgehenden Interaktionen besteht die Möglichkeit, dem Angebotsvorschlag automatisch den Status **[!UICONTROL Interessant]** zuzuweisen, wenn der Versand einen Link enthält. Fügen Sie hierfür den Wert **_urlType=&quot;11&quot;** in den Link ein:
 
 ```
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
@@ -165,4 +165,4 @@ Sollte kein Angebot für einen Empfänger infrage kommen, ist dies in der Vorsch
 
 ![](assets/offer_space_overview_001.png)
 
-Die Vorschau kann Kontexte ignorieren, wenn sie auf einen Bereich beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema erweitert wurde, um Felder hinzuzufügen, auf die in einem Bereich mithilfe eines eingehenden Kanals verwiesen wird (weitere Informationen hierzu finden Sie im [Erweiterungsbeispiel](../../interaction/using/extension-example.md)).
+Die Vorschau kann Kontexte ignorieren, wenn diese auf eine Platzierung beschränkt sind. Dies ist der Fall, wenn das Interaktionsschema um Felder erweitert wurde, auf die in einer Platzierung mit einem eingehenden Kanal verwiesen wird (Weitere Informationen hierzu finden Sie im [Beispiel einer Erweiterung](../../interaction/using/extension-example.md)).
