@@ -1,6 +1,6 @@
 ---
-title: Senden einer E-Mail mit Adobe Campaign Classic
-description: Erfahren Sie mehr über die Parameter, die für die Bereitstellung von E-Mails in Adobe Campaign Classic spezifisch sind.
+title: E-Mail-Versand mit Adobe Campaign Classic
+description: Erfahren Sie mehr über die Parameter, die speziell für den Versand von E-Mails in Adobe Campaign Classic gelten.
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -12,22 +12,22 @@ discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7c800c20fff89b97f6fa38b3c659ca765765e157
 
 ---
 
 
-# Sending an email{#sending-an-email}
+# E-Mail-Versand{#sending-an-email}
 
-To approve your email and send it to the recipients of the delivery being created, click **[!UICONTROL Send]**.
+Klicken Sie auf **[!UICONTROL Senden]**, um die E-Mail-Erstellung zu verifizieren und den Versand zu starten.
 
 Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finden Sie in den folgenden Abschnitten:
 
 * [Versand validieren](../../delivery/using/steps-validating-the-delivery.md)
 * [Versenden der Nachrichten](../../delivery/using/steps-sending-the-delivery.md)
 
-In den folgenden Abschnitten werden die Parameter beschrieben, die für die Bereitstellung von E-Mails spezifisch sind.
+In den folgenden Abschnitten werden die Parameter beschrieben, die speziell für den Versand von E-Mails gelten.
 
 ## E-Mails archivieren {#archiving-emails}
 
@@ -43,25 +43,25 @@ Bei der Erstellung eines neuen Versands oder einer Versandvorlage ist die E-Mail
 
 Gehen Sie dazu wie folgt vor:
 
-1. Gehen Sie zu **[!UICONTROL Campaign Management]** > **[!UICONTROL Deliveries]** oder **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Delivery templates]**.
+1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** oder **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]**.
 1. Wählen Sie den gewünschten Versand aus oder duplizieren Sie die Standardvorlage **E-Mail-Versand**, und wählen Sie dann die duplizierte Vorlage aus.
 1. Wählen Sie die **Eigenschaften**-Schaltfläche aus.
-1. Wählen Sie die **[!UICONTROL Delivery]** Registerkarte.
+1. Gehen Sie in den **[!UICONTROL Versand]**-Tab.
 1. Aktivieren Sie die Option **E-Mails archivieren**, um eine Kopie aller gesendeten Nachrichten dieses Versands oder aller auf dieser Vorlage basierenden Sendungen aufzubewahren.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
    >[!NOTE]
    >
-   >If the emails sent to the BCC address are opened and clicked through, this will be taken into account in the **[!UICONTROL Total opens]** and **[!UICONTROL Clicks]** from the send analysis, which could cause some miscalculations.
+   >Wenn die an eine BCC-Adresse gesendeten E-Mails geöffnet und angeklickt werden, wird dies in **[!UICONTROL Gesamtöffnungen]** und **[!UICONTROL Klicks]** der Versandanalyse berücksichtigt, was zu falschen Berechnungen führen könnte.
 
 ## Mirrorseite erstellen {#generating-the-mirror-page}
 
 Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist.
 
-Standardmäßig wird die Spiegelseite generiert, wenn der Link in den Inhalt der E-Mail eingefügt wird. Weitere Informationen zum Einfügen von Personalisierungsblöcken finden Sie unter [Personalisierungsblöcke](../../delivery/using/personalization-blocks.md).
+Standardmäßig wird die Mirror­Seite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](../../delivery/using/personalization-blocks.md).
 
-In the delivery properties, the **[!UICONTROL Mode]** field of the **[!UICONTROL Validity]** tab lets you modify the generation mode for this page.
+In den Versandeigenschaften kann die Erzeugung der Seite über das Feld **[!UICONTROL Modus]** im Tab **[!UICONTROL Gültigkeit]** konfiguriert werden.
 
 ![](assets/s_ncs_user_wizard_miror_page_mode.png)
 
@@ -71,9 +71,9 @@ In the delivery properties, the **[!UICONTROL Mode]** field of the **[!UICONTROL
 
 Außerdem stehen die folgenden Modi zur Verfügung:
 
-* **[!UICONTROL Force the generation of the mirror page]** : Auch wenn kein Link zur Spiegelseite in die Bereitstellung eingefügt wird, wird die Spiegelseite erstellt.
-* **[!UICONTROL Do not generate the mirror page]** : Es wird keine Spiegelseite erzeugt, auch wenn der Link in der Bereitstellung vorhanden ist.
-* **[!UICONTROL Generates a mirror page accessible using only the message identifier]** : Mit dieser Option können Sie im Lieferprotokoll-Fenster auf den Inhalt der Spiegelseite mit Personalisierungsinformationen zugreifen. Klicken Sie dazu nach dem Ende der Bereitstellung auf die **[!UICONTROL Delivery]** Registerkarte und wählen Sie die Zeile des Empfängers aus, dessen Spiegelseite Sie anzeigen möchten. Klicken Sie auf den **[!UICONTROL Display the mirror page for this message...]** Link.
+* **[!UICONTROL Mirrorseitenerzeugung forcieren]**: Erstellt eine Mirrorseite, selbst wenn im Versandinhalt kein entsprechender Link enthalten ist.
+* **[!UICONTROL Keine Mirrorseite erzeugen]**: Erstellt keine Mirrorseite, selbst wenn im Versandinhalt der entsprechende Link enthalten ist.
+* **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Diese Option ermöglicht den Zugriff auf den Inhalt der Mirrorseite einschließlich aller Personalisierungsinformationen von den Versandlogs aus. Klicken Sie hierfür nach Durchführung des Versands auf den Tab **[!UICONTROL Versand]** und wählen Sie die Zeile des Empfängers aus, dessen Mirrorseite Sie ansehen möchten. Klicken Sie dann auf den Link **[!UICONTROL Mirrorseite dieser Nachricht anzeigen...]**.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -89,19 +89,19 @@ Sie können eine weitere Adresse angeben, die es ermöglicht, die Unzustellbarke
 
 ## Zeichenkodierung {#character-encoding}
 
-Auf der **[!UICONTROL SMTP]** Registerkarte der Bereitstellungsparameter können Sie mit dem **[!UICONTROL Character encoding]** Abschnitt eine bestimmte Kodierung festlegen.
+Auf dem Tab **[!UICONTROL SMTP]** der Versandparameter können Sie im Abschnitt **[!UICONTROL Zeichenkodierung]** eine bestimmte Kodierung festlegen.
 
-Die Standardkodierung ist UTF-8. Wenn einige E-Mail-Anbieter Ihrer Empfänger die UTF-8-Standardkodierung nicht unterstützen, sollten Sie eine bestimmte Kodierung so einrichten, dass die Sonderzeichen den Empfängern Ihrer E-Mails korrekt angezeigt werden.
+Die Standardkodierung ist UTF-8. Wenn einige E-Mail-Anbieter Ihrer Empfänger keine UTF-8-Standardkodierung unterstützen, sollten Sie eine bestimmte Kodierung einrichten, sodass Sonderzeichen den Empfängern Ihrer E-Mails korrekt angezeigt werden.
 
-Sie möchten beispielsweise eine E-Mail mit japanischen Zeichen senden. Um sicherzustellen, dass alle Zeichen Ihren Empfängern in Japan korrekt angezeigt werden, sollten Sie eine Kodierung verwenden, die anstelle des Standard-UTF-8 die japanischen Zeichen unterstützt.
+Gehen wir davon aus, dass Sie eine E-Mail mit japanischen Zeichen versenden möchten. Um sicherzustellen, dass Ihren Empfängern in Japan alle Zeichen korrekt dargestellt werden, sollten Sie eine Kodierung verwenden, die anstelle der standardmäßigen UTF-8-Kodierung japanische Zeichen unterstützt.
 
-Wählen Sie dazu die **[!UICONTROL Force the encoding used for messages]** Option im **[!UICONTROL Character encoding]** Abschnitt aus und wählen Sie eine Kodierung aus der angezeigten Dropdownliste aus.
+Wählen Sie dazu die Option **[!UICONTROL Nachrichtenkodierung erzwingen (Codepage)]** im Abschnitt **[!UICONTROL Zeichenkodierung]** und wählen Sie eine Kodierung aus der angezeigten Dropdown-Liste.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab_encoding.png)
 
 ## SMTP-Header hinzufügen {#adding-smtp-headers}
 
-Es ist möglich, SMTP-Header zu Ihren Auslieferungen hinzuzufügen. Verwenden Sie dazu den entsprechenden Abschnitt der **[!UICONTROL SMTP]** Registerkarte in der Bereitstellung.
+Sie haben die Möglichkeit, Ihren Sendungen weitere SMTP-Header hinzuzufügen. Gehen Sie hierfür in den Tab **[!UICONTROL SMTP]** in den Versandeigenschaften.
 
 Das in diesem Fenster erfasste Script muss pro Zeile einen Header im Format **Name: Wert** enthalten.
 
