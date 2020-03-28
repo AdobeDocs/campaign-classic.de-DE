@@ -14,7 +14,7 @@ discoiquuid: 5c0a428f-a3e7-4848-8c47-b72832ba97c2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Ereignistypen erstellen{#creating-event-types}
 
-Ereignistypen, die von Adobe Campaign verarbeitet werden sollen, müssen in der Steuerelementinstanz erstellt werden. Dies kann über den **[!UICONTROL Administration > Platform > Enumerations]** Ordner des Baumes erfolgen. Jeder Ereignistyp stimmt mit einem Wert in der **[!UICONTROL eventType]** Aufzählung überein. Dabei kann es sich um eine Auftragsbestätigung, ein Passwort oder eine Auftragsbestätigung usw. handeln.
+Die von Adobe Campaign zu verarbeitenden Ereignistypen müssen in der Kontrollinstanz erstellt werden. Gehen Sie hierzu in den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** des Navigationsbaums. Jedem Ereignistyp muss ein Wert in der Auflistung **[!UICONTROL eventType]** entsprechen. Es kann sich hierbei zum Beispiel um eine Bestellbestätigung, eine Passwortänderung oder den Versand einer Bestellung handeln.
 
 ![](assets/messagecenter_eventtype_enum_001.png)
 
