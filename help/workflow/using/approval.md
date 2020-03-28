@@ -14,7 +14,7 @@ discoiquuid: a0090c78-5873-446d-8d5f-b0f94ff5d373
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -30,7 +30,7 @@ Standardmäßig wird eine Validierung einer Benutzergruppe zugewiesen. Gruppen r
 
 Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung von Filtern mehreren Benutzern zugewiesen werden.
 
-* To select a single operator, select the **[!UICONTROL Operator]** value in the **[!UICONTROL Assignment type]** field and select the relevant operator in the drop-down list of the **[!UICONTROL Assignee]** field.
+* Zur Auswahl eines einzelnen Benutzers ist im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Benutzer]** zu wählen. Wählen Sie dann aus der Dropdown-Liste des Felds **[!UICONTROL Zuweisung]** den gewünschten Benutzer aus.
 
    ![](assets/s_advuser_validation_box_assign.png)
 
@@ -38,7 +38,7 @@ Bei Bedarf kann die Validierung auch einem einzelnen oder durch die Verwendung v
    >
    >Nur der ausgewählte Benutzer verfügt über die Berechtigung zur Validierung der Aufgabe.
 
-* Sie können eine Abfrage zum Filtern von Genehmigungsoperatoren definieren. Wählen Sie dazu den **[!UICONTROL Filter]** Wert im **[!UICONTROL Assignment type]** Feld aus und klicken Sie auf den **[!UICONTROL Advanced parameters...]** Link, um Filterbedingungen zu definieren, wie im folgenden Beispiel gezeigt:
+* Es besteht die Möglichkeit, eine Abfrage zu erstellen, um die zur Validierung berechtigten Benutzer zu filtern. Wählen Sie hierzu im Feld **[!UICONTROL Zuweisungstyp]** die Option **[!UICONTROL Filter]** und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter...]**, um die Filterkriterien zu definieren, wie in unten stehendem Beispiel dargestellt:
 
    ![](assets/s_advuser_validation_box_filter.png)
 
@@ -52,7 +52,7 @@ Benutzer können die ihnen zugewiesenen Aufgaben in der Clientkonsole validieren
 
 Änderungen in Bezug auf die Titel oder den Nachrichten-Textkörper der Aktivität haben keinen Einfluss auf laufende Aufgaben. Sollten jedoch die möglichen Antworten geändert werden, werden die neuen Optionen automatisch in den laufenden Aufgaben übernommen.
 
-**Aufgaben des Genehmigungstyps** können über den **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** Knoten aufgerufen werden: Operatoren können direkt über diese Ansicht auf das Genehmigungsformular zugreifen.
+Auf **Validierungsaufgaben** kann im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** zugegriffen werden. Aus dieser Ansicht heraus gelangen die Benutzer direkt in die verschiedenen Validierungsformulare.
 
 ![](assets/s_advuser_validation_from_console.png)
 
@@ -62,15 +62,15 @@ In den Benachrichtigungen, die an die für die Validierung ausgewählten Benutze
 
 ![](assets/edit_validation.png)
 
-Dieses **[!UICONTROL Title]** Feld enthält den Titel der Nachricht: Dies ist der Betreff der gesendeten E-Mail. Der Titel sowie der Nachrichtentext sind JavaScript-Vorlagen und können daher Werte enthalten, die nach dem Kontext des Workflows berechnet werden.
+Das **[!UICONTROL Titel]**-Feld entspricht dem Betreff der Benachrichtigungs-E-Mail. Sowohl beim Titel als auch beim Body handelt es sich um JavaScript-Templates, die somit vom Workflow-Kontext ausgehend berechnete Werte enthalten können.
 
 Im unteren Bereich des Editors werden die möglichen Antworten definiert. Jeder Antwort entspricht eine aus der Aktivität ausgehende Transition. Der Name ist die interne Kennung und der Titel, der in der Auswahlliste angezeigte Text.
 
-Klicken Sie auf den **[!UICONTROL Advanced parameters...]** Link, um die Bereitstellungsvorlage auszuwählen, mit der die Operatoren benachrichtigt werden sollen. Die Standardvorlage (interner Name &quot;notificationAssignee&quot;) nimmt den Titel und die Meldung und fügt einen Link zur Webseite hinzu, die zur Beantwortung verwendet wird.
+Klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**, um die für die Benutzerbenachrichtigungen zu verwendende Versandvorlage auszuwählen. Die Standardvorlage (mit internem Namen &#39;notifyAssignee&#39;) übernimmt den Titel und den Nachrichteninhalt sowie einen Link auf die Webseite mit dem Antwortformular.
 
 Die Vorlage kann angepasst werden. Es wird jedoch empfohlen, sie zu duplizieren und unter einem neuen Namen zu speichern. Der Zielgruppenmechanismus (externe Datei, Zielgruppen-Mapping) darf hingegen nicht geändert werden. Er ist für die korrekte Funktionsweise der Benachrichtigungen erforderlich.
 
-An approval example is shown in [Defining approvals](../../workflow/using/executing-a-workflow.md#defining-approvals).
+Ein Validierungsbeispiel finden Sie im Abschnitt ](../../workflow/using/executing-a-workflow.md#defining-approvals)Validierungen definieren[.
 
 ## Ausgabeparameter {#output-parameters}
 
@@ -80,5 +80,5 @@ An approval example is shown in [Defining approvals](../../workflow/using/execut
 
 * **[!UICONTROL responseOperator]**
 
-   Bezeichner des Operators, der reagiert hat. Dieses Feld ist ein Zahlenwert, aber ein **[!UICONTROL String]** Feld.
+   Kennung des Benutzers, der die Validierung vorgenommen hat. Dieses Feld enthält einen numerischen Wert, ist aber vom Typ **[!UICONTROL String]**.
 
