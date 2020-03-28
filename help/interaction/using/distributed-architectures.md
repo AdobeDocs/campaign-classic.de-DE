@@ -14,7 +14,7 @@ discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -43,7 +43,7 @@ Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsins
 >
 >Es wird dringend empfohlen, kurze und ausdrucksstarke interne Namen zu verwenden.
 
-Die Freigabe und Publikation der Angebote in den Ausführungs- und Kontrollinstanzen  erfolgt automatisch.
+Die Freigabe und Publikation der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
 
 In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Obsolete Vorschläge und Angebote werden nach Ablauf der durch die Bereinigungsparameter im Softwareverteilungs-Assistenten aller Instanzen definierten Frist und des in den Typologieregeln definierten beweglichen Zeitraums automatisch gelöscht.
 
@@ -69,7 +69,7 @@ Das Interaction-Package muss auf allen Instanzen installiert werden (Kontroll- u
 >
 >Im Zuge der Package-Installation werden Datenfelder der Vorschlagstabelle **nms:proposition** mit dem Typ **long**, beispielsweise die Vorschlagskennung, in den Typ **int64** umgewandelt. Weiterführende Informationen zu Datentypen finden Sie in diesem [Abschnitt](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
 
-Die Dauer der Datenspeicherung muss für jede Instanz konfiguriert werden (über das **[!UICONTROL Data purge]** Fenster im Bereitstellungsassistenten). Bei Ausführungsinstanzen muss dieser Zeitraum der historischen Tiefe entsprechen, die für die Berechnung der Typologieregeln (Übergangsfrist) und der Förderfähigkeitsregeln erforderlich ist.
+Für jede Instanz muss außerdem die Aufbewahrungsdauer der Daten konfiguriert werden (im Fenster **[!UICONTROL Datenbereinigung]** des Softwareverteilungs-Assistenten). Bei den Ausführungsinstanzen muss diese Dauer der Verlaufstiefe entsprechen, die für die Berechnung der Eignungs- bzw. Typologieregeln (beweglicher Zeitraum) erforderlich ist.
 
 Bei den Kontrollinstanzen müssen Sie darüber hinaus:
 
@@ -78,11 +78,11 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
    ![](assets/interaction_powerbooster1.png)
 
    * Geben Sie einen Titel sowie einen kurzen und expliziten internen Namen an.
-   * Wählen Sie die **[!UICONTROL Execution instance]**.
-   * Aktivieren Sie die **[!UICONTROL Enabled]** Option.
+   * Wählen Sie den Typ **[!UICONTROL Ausführungsinstanz]** aus.
+   * Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
    * Geben Sie die Verbindungsparameter zur Ausführungsinstanz an.
-   * Jede Ausführungsinstanz muss mit einer ID verknüpft sein. Diese ID wird zugewiesen, wenn Sie auf die **[!UICONTROL Initialize connection]** Schaltfläche klicken.
-   * Check the type of application used: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]**, or both.
+   * Jeder Ausführungsinstanz muss eine Kennung zugeordnet werden. Dies geschieht durch Klick auf die Schaltfläche **[!UICONTROL Verbindung initialisieren]**.
+   * Kreuzen Sie die verwendete Anwendung an: **[!UICONTROL Message Center]**, **[!UICONTROL Interaction]** oder beide.
    * Geben Sie das genutzte FDA-Konto an. Benutzer müssen in den Ausführungsinstanzen erstellt werden und über die folgenden Lese- und Schreibberechtigungen in den entsprechenden Instanzen verfügen:
 
       ```
@@ -104,7 +104,7 @@ Bei den Kontrollinstanzen müssen Sie darüber hinaus:
       >
       >Sollten Fehler auftreten, sind die technischen Workflows zur Vorschlagssynchronisation und Angebotsbenachrichtigung zu prüfen.
 
-Wenn aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in den Ausführungsinstanzen dupliziert wird, können Sie ein eingeschränktes Schema angeben, das mit der Umgebung verknüpft ist, damit die Benutzer nur Daten verwenden können, die in den Ausführungsinstanzen verfügbar sind. Sie können ein Angebot mit Daten erstellen, die in Ausführungsinstanzen nicht verfügbar sind. Dazu müssen Sie die Regel auf den anderen Kanälen deaktivieren, indem Sie diese Regel auf den ausgehenden Kanal (**[!UICONTROL Taken into account if]** Feld) beschränken.
+Falls aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in die Ausführungsinstanzen dupliziert wird, haben Sie die Möglichkeit, ein der Umgebung zugeordnetes eingeschränktes Schema zu definieren. Auf diese Weise können die Benutzer nur die Daten verwenden, die tatsächlich in den Ausführungsinstanzen zur Verfügung stehen. Es ist trotzdem möglich, ein Angebot zu erstellen, das Daten verwendet, die nicht in der Ausführungsinstanz verfügbar sind. Begrenzen Sie hierfür mithilfe des Felds **[!UICONTROL Berücksichtigt wenn]** die Regel auf den gewünschten ausgehenden Kanal.
 
 ![](assets/ita_filtering.png)
 
@@ -116,8 +116,8 @@ Folgende Wartungsoptionen stehen für die Kontrollinstanz zur Verfügung:
 >
 >Diese Optionen sind nur bei klar definierten Wartungsbedarfen zu nutzen.
 
-* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: Datum, an dem eine Umgebung für eine bestimmte Instanz synchronisiert wurde.
-* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: das letzte Datum, an dem Vorschläge aus einem bestimmten Schema von einer Instanz zu einer anderen synchronisiert wurden.
+* **`NmsInteraction_LastOfferEnvSynch_<offerEnvId>_<executionInstanceId>`**: Datum der letzten Synchronisation einer Umgebung in einer bestimmten Instanz.
+* **`NmsInteraction_LastPropositionSynch_<propositionSchema>_<executionInstanceIdSource>_<executionInstanceIdTarget>`**: Datum der letzten Synchronisation der Vorschläge eines bestimmten Schemas zwischen zwei Instanzen.
 * **`NmsInteraction_MapWorkflowId`**: Option, die die Liste aller erzeugten Synchronisations-Workflows enthält.
 
 Die folgende Option steht für Ausführungsinstanzen zur Verfügung:
