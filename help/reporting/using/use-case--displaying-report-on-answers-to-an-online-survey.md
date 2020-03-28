@@ -14,7 +14,7 @@ discoiquuid: 5404a227-6cfb-463b-9a56-af46a022eb38
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -42,9 +42,9 @@ Voraussetzung für die Durchführung dieses Anwendungsbeispiels sind ein Fragebo
 
 Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
-1. Erstellen Sie einen Workflow und platzieren Sie eine **[!UICONTROL Answers to a survey]** Aktivität. For more on using this activity, refer to [this section](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
+1. Erstellen Sie einen Workflow mit der Aktivität **[!UICONTROL Umfrageantworten]**. Weitere Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../web/using/publish--track-and-use-collected-data.md#using-the-collected-data).
 1. Öffnen Sie die Aktivität und wählen Sie die Umfrage aus, deren Antworten analysiert werden sollen.
-1. Aktivieren Sie die **[!UICONTROL Select all the answer data]** Option, um alle Informationen zu erfassen.
+1. Aktivieren Sie die Option **[!UICONTROL Alle Antwortdaten auswählen]**, um alle verfügbaren Informationen abzurufen.
 
    ![](assets/reporting_usecase_1_01.png)
 
@@ -52,11 +52,11 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
    ![](assets/reporting_usecase_1_02.png)
 
-1. Once the answer collection box is configured, position a **[!UICONTROL List update]** type activity to save the data.
+1. Fügen Sie nach der Konfiguration des Antwortenabrufs eine Aktivität vom Typ **[!UICONTROL Listen-Update]** hinzu, um die abgerufenen Daten zu speichern.
 
    ![](assets/reporting_usecase_1_04.png)
 
-   Geben Sie in dieser Aktivität die zu aktualisierende Liste an und deaktivieren Sie die **[!UICONTROL Purge and re-use the list if it exists (otherwise add to the list)]** Option: Antworten werden der vorhandenen Tabelle hinzugefügt. Mit dieser Option können Sie auf die Liste in einem Würfel verweisen. Das mit der Liste verknüpfte Schema wird nicht für jede Aktualisierung neu generiert, was die Integrität des Würfels gewährleistet, der diese Liste verwendet.
+   Geben Sie in dieser Aktivität die zu aktualisierende Liste an und deaktivieren Sie die Option **[!UICONTROL Wenn sie existiert, Liste leeren und erneut verwenden]**: Die Antworten werden so der existierenden Tabelle hinzugefügt. Dies ermöglicht es, die Liste in einem Cube zu referenzieren: Das mit der Liste verknüpfte Schema wird nicht bei jeder Aktualisierung neu erzeugt, dadurch wird die Vollständigkeit des diese Liste verwendenden Cubes garantiert.
 
    ![](assets/reporting_usecase_1_03.png)
 
@@ -68,11 +68,11 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
 1. Fügen Sie eine Planung hinzu, um einen täglichen Abruf der Antworten und die Aktualisierung der Liste zu konfigurieren.
 
-   Die **[!UICONTROL List update]** und **[!UICONTROL Scheduler]** Aktivitäten sind in ausführlich beschrieben.
+   Die Aktivitäten **[!UICONTROL Listen-Update]** und **[!UICONTROL Planung]** werden erläutert in .
 
 ## 2. Schritt - Erstellung des Cubes und seiner Kennzahlen {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
-Erstellen Sie anschließend den Cube und konfigurieren Sie seine Kennzahlen: Sie werden bei der Erstellung der Indikatoren verwendet. Die Indikatoren werden später im Bericht angezeigt. For more on creating and configuring cubes, refer to [About cubes](../../reporting/using/about-cubes.md).
+Erstellen Sie anschließend den Cube und konfigurieren Sie seine Kennzahlen: Sie werden bei der Erstellung der Indikatoren verwendet. Die Indikatoren werden später im Bericht angezeigt. Weitere Informationen zur Erstellung und Konfiguration von Cubes finden Sie unter [Über Cubes](../../reporting/using/about-cubes.md).
 
 Im vorliegenden Beispiel basiert der Cube auf den Daten der Liste, die im zuvor erstellten Workflow angereichert wird.
 
@@ -82,7 +82,7 @@ Definieren Sie die im Bericht anzuzeigenden Dimensionen und Kennzahlen. Im Beisp
 
 ![](assets/reporting_usecase_2_02.png)
 
-The **[!UICONTROL Preview]** tab lets you control the rendering of the report.
+Im **[!UICONTROL Vorschau]**-Tab können Sie die Anzeige des Berichts überprüfen.
 
 ## 3. Schritt - Berichterstellung und Konfiguration der Datenanzeige in der Tabelle {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
