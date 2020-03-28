@@ -14,7 +14,7 @@ discoiquuid: 434a4bda-0907-42a7-8a75-2db658bba046
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # Erfasste Daten publizieren, tracken und verwenden{#publish-track-and-use-collected-data}
 
-Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können Sie den Link für Ihre Zielgruppe freigeben und die Antworten verfolgen.
+Nachdem das Formular erstellt, konfiguriert und publiziert wurde, können Sie den Link mit Ihrer Zielgruppe teilen und die Antworten tracken.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können S
 
 ## Umfrage-Dashboard {#survey-dashboard}
 
-Jede Umfrage verfügt über ein eigenes Dashboard, über das Sie ihren Status, ihre Beschreibung, ihre öffentliche URL und ihren Verfügbarkeitsplan anzeigen können. Sie können auch die verfügbaren Berichte anzeigen. Weitere Informationen finden Sie unter [Berichte zu Umfragen](#reports-on-surveys).
+Jede Umfrage besitzt ihr eigenes Dashboard, über das Sie den Status, die Beschreibung, die öffentliche URL und die zeitliche Verfügbarkeit aufrufen können. Zusätzlich können Sie die verfügbaren Berichte einsehen. Weitere Informationen hierzu finden Sie unter [Berichte zu Umfragen](#reports-on-surveys).
 
 Die öffentliche URL der Umfrage wird im Dashboard angezeigt:
 
@@ -42,11 +42,11 @@ Sie können die Antworten auf die Umfrage in Logs und Berichten verfolgen.
 
 ### Umfrage-Logs {#survey-logs}
 
-Für jede bereitgestellte Umfrage können Sie die Antworten auf der **[!UICONTROL Logs]** Registerkarte verfolgen. Auf dieser Registerkarte werden die Liste der Benutzer angezeigt, die die Umfrage abgeschlossen haben, und ihr Ursprung:
+Sie können die Antworten aller bereitgestellten Umfragen im Tab **[!UICONTROL Logs]** verfolgen. In diesem Tab wird die Liste der Teilnehmer an der Umfrage sowie ihre Herkunft angezeigt:
 
 ![](assets/s_ncs_admin_survey_logs.png)
 
-Doppelklicken Sie auf eine Zeile, um das Umfrageformular so anzuzeigen, wie es vom Befragten ausgefüllt wurde. Sie können die Umfrage vollständig durchsuchen und die Antworten vollständig aufrufen. Diese können in eine externe Datei exportiert werden. For more on this, refer to [Exporting answers](#exporting-answers).
+Durch Doppelklick auf eine Zeile öffnet sich das vom reagierenden Kontakt ausgefüllte Umfrageformular. Sie können die gesamte Umfrage durchsuchen, auf die vollständigen Antworten zugreifen und diese in eine externe Datei exportieren. Weitere Informationen finden Sie unter [Antworten exportieren](#exporting-answers).
 
 Die Herkunft wird in der Umfrage-URL durch Hinzufügen folgender Buchstaben gekennzeichnet:
 
@@ -54,7 +54,7 @@ Die Herkunft wird in der Umfrage-URL durch Hinzufügen folgender Buchstaben geke
 ?origin=xxx
 ```
 
-während die Umfrage bearbeitet wird, enthält die URL den Parameter **[!UICONTROL __uuid]**, der angibt, dass sie sich in einer Testphase befindet und noch nicht online ist. Wenn Sie über diese URL auf die Umfrage zugreifen, werden die erstellten Datensätze bei der Verfolgung (den Berichten) nicht berücksichtigt. Der Ursprung wird zum Wert gezwungen **[!UICONTROL Adobe Campaign]**.
+Während der Bearbeitung der Umfrage enthält die URL den Parameter **[!UICONTROL __uuid]**, der darauf hinweist, dass sich die Umfrage in einer Testphase befindet und noch nicht online ist. Wenn Sie auf die Umfrage über diese URL zugreifen, werden die erzeugten Datensätze beim Tracken (in Berichten) nicht berücksichtigt. Für die Herkunft wird der Wert **[!UICONTROL Adobe Campaign]** übernommen.
 
 Weiterführende Informationen zu URL-Parametern finden Sie auf [dieser Seite](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
@@ -64,9 +64,9 @@ Der Zugriff auf Umfrageberichte erfolgt über das Dashboard-Tab. Klicken Sie ein
 
 ![](assets/s_ncs_admin_survey_report_doc.png)
 
-The structure of the survey is visible in the **[!UICONTROL Documentation]** report.
+Im Bericht **[!UICONTROL Dokumentation]** wird die Struktur der Umfrage dargestellt.
 
-Zwei weitere Berichte zu Web-Umfragen sind auf der **[!UICONTROL Reports]** Registerkarte der Umfragen verfügbar: **[!UICONTROL General]** und **[!UICONTROL Breakdown of responses]**.
+Im Tab **[!UICONTROL Berichte]** sind zwei weitere Berichte zu Webumfragen verfügbar: **[!UICONTROL Allgemein]** und **[!UICONTROL Antwortenverteilung]**.
 
 * Allgemein
 
@@ -78,7 +78,7 @@ Zwei weitere Berichte zu Web-Umfragen sind auf der **[!UICONTROL Reports]** Regi
 
 * Antwortenverteilung
 
-   Dieser Bericht zeigt die Aufschlüsselung der Antworten für jede Frage. Diese Aufschlüsselung ist nur für Antworten auf Felder verfügbar, die in **[!UICONTROL Question]** Typbehältern gespeichert werden. Sie ist nur für Auswahlsteuerelemente gültig (z. B. keine Aufschlüsselung nach Textfeldern).
+   In diesem Bericht wird die Antwortenverteilung für alle Fragen dargestellt. Diese Verteilung ist nur für Antworten auf Felder verfügbar, die in Containern vom Typ **[!UICONTROL Frage]** gespeichert sind. Die Verteilung gilt nur für Auswahldialoge (keine Verteilung für z. B. Textfelder).
 
    ![](assets/s_ncs_admin_survey_report_2.png)
 
@@ -88,13 +88,13 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
 1. Berichtsdaten exportieren
 
-   To export report data, click the **[!UICONTROL Export]** button and choose the export format.
+   Um Berichtsdaten zu exportieren, wählen Sie die Schaltfläche **[!UICONTROL Exportieren]** und danach das Exportformat aus.
 
    Weiterführende Informationen zum Exportieren von Berichtdaten finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
 1. Antworten exportieren
 
-   To export answers, click the **[!UICONTROL Responses]** tab of the survey and right-click. Auswählen **[!UICONTROL Export...]**.
+   Um Antworten zu exportieren, wählen Sie in der Umfrage den Tab **[!UICONTROL Antworten]** aus und rechtsklicken Sie darauf. Wählen Sie dann **[!UICONTROL Exportieren...]** aus.
 
    ![](assets/s_ncs_admin_survey_logs_export_menu.png)
 
@@ -107,11 +107,11 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
    * Spalten zur Ausgabedatei hinzufügen und Informationen über den Empfänger abrufen (die in der Datenbank gespeichert sind);
    * die exportierte Datei formatieren;
    * das Codierungsformat für die Daten in der Datei auswählen.
-   Wenn die Umfrage, die Sie exportieren möchten, mehrere **[!UICONTROL Multi-line text]** oder **[!UICONTROL HTML text]** Felder enthält, muss sie im **[!UICONTROL XML]** Format exportiert werden. Wählen Sie dazu dieses Format in der Dropdown-Liste des **[!UICONTROL Output format]** Felds aus, wie nachfolgend gezeigt:
+   Wenn die zu exportierende Umfrage mehrere Felder mit **[!UICONTROL mehrzeiligem Text]** oder **[!UICONTROL HTML-Text]** enthält, muss sie im **[!UICONTROL XML]**-Format exportiert werden. Wählen Sie dazu dieses Format aus der Dropdown-Liste im Feld **[!UICONTROL Ausgabeformat]** wie unten dargestellt aus:
 
    ![](assets/s_ncs_admin_survey_logs_export_xml.png)
 
-   Click **[!UICONTROL Start]** to run the export.
+   Klicken Sie auf **[!UICONTROL Starten]**, um mit dem Export zu beginnen.
 
    >[!NOTE]
    >
@@ -119,19 +119,19 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
 ## Die erfassten Daten nutzen {#using-the-collected-data}
 
-Die über Online-Umfragen erfassten Informationen können im Rahmen eines Targeting-Workflows wiederhergestellt werden. Verwenden Sie dazu das **[!UICONTROL Survey responses]** Kontrollkästchen.
+Die durch Online-Umfragen gesammelten Daten können im Rahmen eines Zielgruppen-Workflows abgerufen werden. Verwenden Sie zu diesem Zweck die Box **[!UICONTROL Umfrageantworten]**.
 
 Im folgenden Beispiel soll den fünf Empfängern, die bei einer Online-Umfrage die höchste Punktzahl hatten und mindestens zwei Kinder haben, ein Webangebot gemacht werden. Die Antworten auf die Umfrage lauteten:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_4.png)
 
-In the targeting workflow, the **[!UICONTROL Survey responses]** will be configured as follows:
+Im Zielgruppen-Workflow werden die **[!UICONTROL Umfrageantworten]** folgendermaßen konfiguriert:
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_1.png)
 
 Wählen Sie zuerst die entsprechende Umfrage und dann in der Mitte des Fensters die zu extrahierenden Daten aus. In diesem Fall muss zumindest die Punktzahl-Spalte extrahiert werden, da sie in der Aufspaltungsbox zum Abrufen der fünf höchsten Punkte verwendet wird.
 
-Indicate the filtering conditions for answers by clicking the **[!UICONTROL Edit query...]** link.
+Geben Sie die Filterbedingungen für Antworten ein, indem Sie den Link **[!UICONTROL Abfrage bearbeiten...]** auswählen.
 
 ![](assets/s_ncs_admin_survey_responses_wf_box_2.png)
 
@@ -147,23 +147,23 @@ Platzieren Sie dann eine Aufspaltungsbox in den Workflow, um die fünf Empfänge
 
 Bearbeiten Sie die Aufspaltungsbox, um sie zu konfigurieren:
 
-* Start by selecting the adequate schema in the **[!UICONTROL General]** tab, then configure the sub-set:
+* Wählen Sie zunächst im Tab **[!UICONTROL Allgemein]** das entsprechende Schema aus und konfigurieren Sie dann die Untereinheit:
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_6b.png)
 
-* Gehen Sie zur **[!UICONTROL Sub-sets]** Registerkarte und wählen Sie die **[!UICONTROL Limit the selected records]** Option. Klicken Sie dann auf den **[!UICONTROL Edit...]** Link.
+* Gehen Sie zum Tab **[!UICONTROL Teilmengen]** und wählen Sie die Option **[!UICONTROL Anzahl von Datensätzen begrenzen]** und danach den Link **[!UICONTROL Bearbeiten...]** aus.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_7.png)
 
-* Wählen Sie die **[!UICONTROL Keep only the first records after sorting]** Option und dann die Sortierspalte aus. Aktivieren Sie die **[!UICONTROL Descending sort]** Option.
+* Wählen Sie die Option **[!UICONTROL Die ersten aus einer Sortierung hervorgehenden Elemente beibehalten]** und dann die Spalte, nach der sortiert werden soll, aus. Aktivieren Sie die Option **[!UICONTROL Absteigende Sortierung]**.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_8.png)
 
-* Click the **[!UICONTROL Next]** button and limit the number of records to 5.
+* Wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus und beschränken Sie die Anzahl der Datensätze auf fünf.
 
    ![](assets/s_ncs_admin_survey_responses_wf_box_9.png)
 
-* Click **[!UICONTROL Finish]** then restart the workflow to approve targeting.
+* Wählen Sie **[!UICONTROL Beenden]** aus und starten Sie dann den Workflow neu, um die Zielgruppe zu validieren.
 
 ## Daten vereinheitlichen {#standardizing-data}
 
