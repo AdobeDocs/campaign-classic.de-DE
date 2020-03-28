@@ -14,7 +14,7 @@ discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 Technische Workflows müssen überwacht werden und bei einer Störung müssen Maßnahmen ergriffen werden.
 
-Auf [dieser Seite](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)werden weitere Möglichkeiten zur Überwachung der verschiedenen Kampagnenprozesse vorgestellt.
+Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html) vorgestellt.
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
@@ -40,35 +40,35 @@ Prüfen Sie unter &quot;System Indicators&quot; und &quot;core files&quot;, ob I
 
 ## Technische Workflows {#technical-workflows}
 
-Technische Arbeitsabläufe stehen unter **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+Technische Workflows finden Sie unter **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Technische Workflows]**.
 
 Folgen Sie je nach technischem Workflow den unten beschriebenen Schritten, um ein reibungsloses Funktionieren zu gewährleisten.
 
 In diesem [Abschnitt](../../workflow/using/about-technical-workflows.md) erfahren Sie, was jeder technische Workflow bewirkt.
 
-Für **[!UICONTROL Database Cleanup workflow (‘cleanup’)]**:
+**[!UICONTROL Datenbankbereinigungs-Workflow (‘cleanup’)]**:
 
-1. Check that the **[!UICONTROL Database Cleanup]** workflow runs and finishes successfully every day. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../workflow/using/delivery.md).
+1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Datenbankbereinigung]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/delivery.md).
 1. Vergewissern Sie sich im Protokoll, dass die Ausführungsdauer auch langfristig ungefähr konstant bleibt und andere Workflows nicht stört.
 1. Weiterführende Informationen erfahren Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md).
 
-Für **[!UICONTROL Tracking workflow (‘tracking’)]**:
+**[!UICONTROL Tracking-Workflow (‘tracking’)]**:
 
 Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (standardmäßig jede Stunde) und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../workflow/using/delivery.md).
 
-Für **[!UICONTROL Deliverability update (‘deliverabilityUpdate’)]**:
+**[!UICONTROL Aktualisierung der Zustellbarkeit (‘deliverabilityUpdate’)]**:
 
-1. Check that the **[!UICONTROL Deliverability update]** workflow runs and finishes successfully every day. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../workflow/using/delivery.md).
+1. Vergewissern Sie sich, dass der **[!UICONTROL Zustellbarkeits-Workflow]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/delivery.md).
 1. Prüfen Sie im Protokoll, ob die Regeln regelmäßig aktualisiert werden.
 
-Für **[!UICONTROL Campaign process ('operationMgt', 'deliveryMgt', ...)]**:
+**[!UICONTROL Kampagnenprozesse (&#39;operationMgt&#39;, &#39;deliveryMgt‘ etc.)]**:
 
-1. Look at all the workflows located under the **[!UICONTROL Campaign process]** folder. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../workflow/using/campaign.md).
+1. Sehen Sie sich die Workflows im Ordner **[!UICONTROL Kampagnenprozesse]** an. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../workflow/using/campaign.md).
 1. Vergewissern Sie sich, dass die Workflows plangemäß ausgeführt werden und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden.
 
 ## Workflow-Supervision {#workflow-supervision}
 
-The **[!UICONTROL Workflow supervisors]** group should contain operators that need to be kept informed of failures and who can take action in time.
+In der Gruppe **[!UICONTROL Workflow-Supervisoren]** sollten Benutzer enthalten sein, die von Fehlschlägen informiert werden müssen und umgehend Abhilfemaßnahmen setzen können.
 
 ![](assets/monitoring_technical_workflows3.png)
 
