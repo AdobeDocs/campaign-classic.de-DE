@@ -14,7 +14,7 @@ discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -41,14 +41,14 @@ Stellen Sie sicher, dass der Produktkontext für Campaign und Experience Cloud i
 
 Wenn beispielsweise das Feld **Produktkontext** nicht angezeigt wird, sollte der Standardproduktkontext sowohl für Campaign als auch Experience Cloud **dma_campaign** lauten. Wenn das Feld **Produktkontext** angezeigt wird, sollte der Standardproduktkontext sowohl für Campaign als auch Experience Cloud **dma_campaign_classic** lauten.
 
-**[!UICONTROL IMS Server URL]**
+**[!UICONTROL IMS-Server-URL]**
 
-Überprüfen Sie im externen Kampagnen- **Adobe Marketing Cloud** -Konto, ob es sich um **[!UICONTROL IMS Server URL]** adobeid-na1.services.adobe.com[ oder ](https://adobeid-na1.services.adobe.com/)ims-na1.adobelogin.com[](http://ims-na1.adobelogin.com/) handelt. Stellen Sie sicher, dass sowohl die Stage- als auch die Produktionsinstanzen auf denselben IMS-Produktionsendpunkt verweisen.
+Überprüfen Sie für das externe Campaign-Konto **Adobe Marketing Cloud**, ob die **[!UICONTROL IMS-Server-URL]** [adobeid-na1.services.adobe.com](https://adobeid-na1.services.adobe.com/) oder [ims-na1.adobelogin.com](http://ims-na1.adobelogin.com/) lautet. Stellen Sie sicher, dass sowohl die Staging- als auch die Produktionsinstanzen auf denselben IMS-Produktionsendunkt verweisen.
 
 **Zuordnungsmaske**
 
 * Überprüfen Sie, ob der Benutzer, der sich anzumelden versucht, zu einer Benutzergruppe im Enterprise Dashboard gehört.
-* Check that the **[!UICONTROL Association Mask]** is a prefix of the user&#39;s operator group name in the Enterprise Dashboard.
+* Überprüfen Sie, ob die **[!UICONTROL Zuordnungsmaske]** ein Präfix des Benutzergruppennamens des Benutzers im Enterprise Dashboard ist.
 * Achten Sie darauf, dass keine Leerzeichen und Rechtschreibfehler vorhanden sind.
 * Stellen Sie sicher, dass die Namen der Benutzergruppen in Campaign nicht geändert wurden, und befolgen Sie folgende Syntax:
 
@@ -78,11 +78,11 @@ Führen Sie einen Neustart des Servers durch, falls Änderungen an den obigen Ei
 
 * Der Benutzer wird an die Seite &quot;adobe.com&quot; weitergeleitet:
 
-   Es gibt ein Problem mit dem **[!UICONTROL Callback URL]**. Refer to the previous steps to check the **[!UICONTROL Callback URL]** configuration.
+   Es gibt ein Problem mit der **[!UICONTROL Callback-URL]**. Überprüfen Sie anhand der vorherigen Schritte die Konfiguration der **[!UICONTROL Callback-URL]**.
 
 * Meldung &quot;Der Login besitzt keine Berechtigung, die dem Ausdruck in Adobe Campaign entspricht&quot;:
 
-   Refer to the previous steps to check the **[!UICONTROL Association Mask]** and operator groups configuration.
+   Überprüfen Sie anhand der vorherigen Schritte die Konfiguration von **[!UICONTROL Zuordnungsmaske]** und Benutzergruppen.
 
 * Der Benutzer kann nicht auf die Seite für die Anmeldung mit der Adobe ID zugreifen:
 
