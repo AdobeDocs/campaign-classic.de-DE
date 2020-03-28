@@ -14,7 +14,7 @@ discoiquuid: 594a333d-1fc3-49a0-b3f6-7ea8fa4321e9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 0c41cf2f35495a1514642e47f0b7146d8dd50946
 
 # Zu analysierende Daten abrufen{#collecting-data-to-analyze}
 
-The data to be used for building the report can be selected directly in the report page (for more on this, refer to [Using the context](../../reporting/using/using-the-context.md)) or collected via one or more queries.
+Die zur Erstellung eines Berichts verwendeten Daten können direkt auf der Seite des Berichts ausgewählt (siehe hierzu den Abschnitt [Kontext verwenden](../../reporting/using/using-the-context.md)) oder über eine oder mehrere Abfragen abgerufen werden.
 
 In der Abfrage-Aktivität stehen drei verschiedene Methoden zur Verfügung:
 
@@ -32,11 +32,11 @@ In der Abfrage-Aktivität stehen drei verschiedene Methoden zur Verfügung:
 
 Die Wahl der einen oder der anderen Methode hängt vom auszuführenden Berechnungstyp, dem zu bewegenden Datenvolumen, ihrer Beständigkeit und mehr ab. Diese Konfigurationen müssen genau durchdacht werden, um die Datenbank nicht zu überlasten und die Erzeugung und Nutzung der erstellten Berichte zu optimieren. Lesen Sie diesbezüglich [diese Seite](../../reporting/using/best-practices.md#optimizing-report-creation).
 
-In all cases, data is collected via a **[!UICONTROL Query]** type activity.
+In jedem Fall werden die Daten über eine Aktivität vom Typ **[!UICONTROL Abfrage]** abgerufen.
 
 ![](assets/reporting_query_edit.png)
 
-Dieser Datenauswahlmodus ist relevant, wenn die Daten im Bericht mithilfe von Daten in der Datenbank erfasst oder erstellt werden müssen. In einigen Fällen können Sie die Daten auch direkt aus den im Bericht verwendeten Elementen auswählen. Wenn Sie beispielsweise ein Diagramm einfügen, können Sie die Quelldaten direkt auswählen. Weitere Informationen finden Sie unter [Verwenden des Kontexts](../../reporting/using/using-the-context.md).
+Dieser Datenauswahl-Modus empfiehlt sich dann, wenn die Daten des Berichts über die Datenbank abgerufen oder erstellt werden. In bestimmten Fällen ist es auch möglich, die Daten direkt über die im Bericht verwendeten Elemente auszuwählen: Beim Einfügen einer Grafik beispielsweise können Sie die Quelldaten direkt auswählen. Weitere Informationen finden Sie unter [Kontext verwenden](../../reporting/using/using-the-context.md).
 
 ## Datenbankschemata benutzen {#using-the-data-from-a-schema}
 
@@ -50,11 +50,11 @@ Im folgenden Beispiel wird die Empfängeranzahl pro Land aus den Profilen der Da
 
 Sie haben die Möglichkeit, eine Liste mit importierten Daten als Basis für Ihren Bericht zu verwenden.
 
-To do this, select the **[!UICONTROL Use an imported list]** option in the query box and select the concerned list.
+Aktivieren Sie hierzu die Option **[!UICONTROL Importierte Liste verwenden]** in der Abfrage-Aktivität und wählen Sie die betreffende Liste aus.
 
 ![](assets/reporting_query_from_list.png)
 
-Click the **[!UICONTROL Edit query...]** link to define the data to collect among the elements in this list for building the report.
+Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**, um zu bestimmen, welche Elemente aus der Liste für die Berichtserstellung abzurufen sind.
 
 ## Cubes benutzen {#using-a-cube}
 
@@ -64,7 +64,7 @@ Sie können einen Cube zur Definition der Abfrage auswählen.
 
 Cubes ermöglichen es, die Kapazitäten der Datenexploration und -analyse zu erweitern und gleichzeitig die Konfiguration der Berichte und Tabellen für die Endbenutzer zu vereinfachen: Wählen Sie einfach einen existierenden, vollständig konfigurierten Cube aus, um dessen Berechnungen, Messungen und Statistiken zu nutzen. Weiterführende Informationen zum Erstellen von Cubes finden Sie in [diesem Abschnitt](../../reporting/using/about-cubes.md).
 
-Click the **[!UICONTROL Edit query...]** link and select the indicators that you want to display or use in your report.
+Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und wählen Sie die Indikatoren aus, die im Bericht angezeigt oder genutzt werden sollen.
 
 ![](assets/reporting_query_from_cube_edit_query.png)
 
@@ -74,9 +74,9 @@ Um zu vermeiden, dass die Abfragen sich auf die gesamte Datenbank beziehen, müs
 
 ### Einfache Filter {#simplified-filter}
 
-You can select the **[!UICONTROL Filter automatically with the context]** option to make the report accessible via a specific node of the tree such as a list, a recipient, or a delivery.
+Sie können die Option **[!UICONTROL Automatisch mit dem Kontext filtern]** aktivieren, um den Bericht in einem bestimmten Knoten des Navigationsbaums (Liste, Empfänger, Versand) zugänglich zu machen.
 
-Mit der **[!UICONTROL Filter with the folder]** Option können Sie einen Ordner angeben und nur dessen Inhalt berücksichtigen. Auf diese Weise können Sie die Berichtsdaten filtern, sodass nur die Daten aus einem der Ordner in der Struktur angezeigt werden, wie unten dargestellt:
+Die Option **[!UICONTROL Mit dem Ordner filtern]** ermöglicht es, durch Angabe eines bestimmten Ordners nur dessen Elemente zu berücksichtigen. Auf diese Weise können Sie den Bericht dahingehend konfigurieren, dass nur die Daten eines bestimmten Ordners des Navigationsbaums angezeigt werden, wie im folgenden Beispiel:
 
 ![](assets/reporting_control_folder.png)
 
@@ -84,6 +84,6 @@ Mit der **[!UICONTROL Filter with the folder]** Option können Sie einen Ordner 
 
 Konfigurieren Sie die Anzahl der über eine Abfrage zu extrahierenden Daten mithilfe der Optionen zur Ergebnisbegrenzung:
 
-* **[!UICONTROL Limit to first record]** ein Ergebnis zu extrahieren,
-* **[!UICONTROL Size]** um eine bestimmte Anzahl von Datensätzen zu extrahieren.
+* **[!UICONTROL Auf den ersten Datensatz begrenzen]**: extrahiert ein einziges Ergebnis;
+* **[!UICONTROL Anzahl]**: extrahiert eine bestimmte Anzahl an Datensätzen.
 
