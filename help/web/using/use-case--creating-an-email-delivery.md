@@ -14,7 +14,7 @@ discoiquuid: 4ec34980-62a2-47b9-b103-de4290925624
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 # Anwendungsfall: E-Mail-Versand erstellen{#use-case-creating-an-email-delivery}
 
-In diesem Fall lernen Sie die Schritte zum Entwerfen einer E-Mail-Zustellung mit Adobe Campaign Digital Content Editor (DCE) kennen.
+In diesem Anwendungsbeispiel lernen Sie die Schritte zum Erstellen eines E-Mail-Versands mit Adobe Campaign Digital Content Editor (DCE) kennen.
 
 Ein Versand soll mit einer personalisierten Vorlage erstellt werden, die Folgendes enthält:
 
@@ -35,17 +35,17 @@ Ein Versand soll mit einer personalisierten Vorlage erstellt werden, die Folgend
 >
 >Bevor Sie beginnen, muss mindestens eine **HTML-Vorlage** entsprechend dem Inhalt Ihrer künftigen Sendungen konfiguriert werden.
 >
->Stellen Sie in der Bereitstellung **[!UICONTROL Properties]** sicher, dass **[!UICONTROL Content editing mode]** (auf der **[!UICONTROL Advanced]** Registerkarte) auf **[!UICONTROL DCE]**. Um sicherzustellen, dass der Editor optimal funktioniert, lesen Sie die Best Practices zur [Inhaltsbearbeitung](../../web/using/content-editing-best-practices.md).
+>Stellen Sie in den **[!UICONTROL Versandeigenschaften]** sicher, dass die **[!UICONTROL Inhaltserstellung]** (auf dem Tab **[!UICONTROL Erweitert]**) auf **[!UICONTROL DCE]** gesetzt ist. Um sicherzustellen, dass der Editor optimal funktioniert, lesen Sie die [Best Practices bei der Inhaltsbearbeitung](../../web/using/content-editing-best-practices.md).
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Um eine neue Bereitstellung zu erstellen, platzieren Sie den Cursor auf der Registerkarte &quot; **Kampagnen** &quot;und klicken Sie auf **Auslieferungen**. Klicken Sie dann auf die Schaltfläche **Erstellen** oberhalb der Liste der vorhandenen Auslieferungen. For more on creating deliveries, refer to [this page](../../delivery/using/about-email-channel.md).
+Um einen neuen Versand zu erstellen, platzieren Sie den Cursor auf dem Tab **Kampagnen** und klicken Sie auf **Sendungen**. Klicken Sie dann über der Liste der vorhandenen Sendungen auf die Schaltfläche **Erstellen**. Weiterführende Informationen zur Erstellung eines Versands finden Sie auf [dieser Seite](../../delivery/using/about-email-channel.md).
 
 ![](assets/delivery_step_1.png)
 
 ## Schritt 2: Auswählen einer Vorlage {#step-2---selecting-a-template}
 
-Select a delivery template, then name your delivery. This name will only be visible to users of the Adobe Campaign console and not by your recipients, however this heading will be displayed in your list of deliveries. Click **[!UICONTROL Continue]**.
+Wählen Sie eine Versandvorlage aus und geben Sie Ihrem Versand eine Bezeichnung. Diese Bezeichnung ist nur für Benutzer der Adobe Campaign-Konsole sichtbar, nicht aber für die Empfänger. Diese Bezeichnung wird in der Liste der Sendungen angezeigt. Bestätigen Sie die Angaben mit der Schaltfläche **[!UICONTROL Fortfahren]**.
 
 ![](assets/dce_delivery_model.png)
 
@@ -53,15 +53,15 @@ Select a delivery template, then name your delivery. This name will only be visi
 
 Der Digital Content Editor verfügt über verschiedene native Vorlagen mit unterschiedlichen Strukturen (Spalten, Textbereiche etc.).
 
-Select the content template that you want to use, then click the **[!UICONTROL Start with the selected content]** button to display the template in the created delivery.
+Wählen Sie die Inhaltsvorlage aus, das Sie verwenden möchten, und verwenden Sie dann die Schaltfläche **[!UICONTROL Mit dem ausgewählten Inhalt beginnen]**, um die Vorlage im erstellten Versand anzuzeigen.
 
 ![](assets/dce_select_model.png)
 
-You can also import an HTML content created outside of Adobe Campaign by selecting **[!UICONTROL From a file]**.
+Darüber hinaus besteht die Möglichkeit, außerhalb von Adobe Campaign erstellte HTML-Inhalte zu importieren, indem Sie die Option **[!UICONTROL Aus einer Datei]** auswählen.
 
 ![](assets/dce_select_from_file_template.png)
 
-Sie können diesen Inhalt als Vorlage für die künftige Verwendung speichern. Nachdem eine personalisierte Inhaltsvorlage erstellt wurde, können Sie sie in der Liste der Vorlagen in der Vorschau anzeigen. For more on this, refer to [Template management](../../web/using/template-management.md).
+Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachdem eine personalisierte Inhaltsvorlage erstellt wurde, können Sie sich eine Vorschau davon in der Liste der Vorlagen ansehen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](../../web/using/template-management.md).
 
 >[!CAUTION]
 >
@@ -71,13 +71,13 @@ Sie können diesen Inhalt als Vorlage für die künftige Verwendung speichern. N
 
 * Vor- und Nachnamen der Empfänger anzeigen
 
-   To insert the first and second names of your recipients into a text field in your delivery, click your chosen text field, then place your cursor where you want to display them. Click the first icon in the pop-up toolbar, then click **[!UICONTROL Personalization block]**. Wählen Sie **[!UICONTROL Greetings]** aus und klicken Sie auf **[!UICONTROL OK]**.
+   Um den Vor- und Nachnamen der Empfänger in ein Textfeld Ihres Versands einzufügen, klicken Sie auf das gewünschte Textfeld und platzieren Sie den Cursor an die Stelle, wo der Name angezeigt werden soll. Klicken Sie auf das erste Symbol in der Pop-up-Symbolleiste und danach auf **[!UICONTROL Gestaltungsbaustein]**. Wählen Sie **[!UICONTROL Grußformeln]** und danach **[!UICONTROL OK]** aus.
 
    ![](assets/dce_personalizationblock_greetings.png)
 
 * Link in ein Bild einfügen
 
-   Um Empfänger über ein Bild an eine externe Adresse zu senden, klicken Sie auf das entsprechende Bild, um die Popup-Symbolleiste anzuzeigen, setzen Sie den Cursor auf das erste Symbol und klicken Sie dann auf **[!UICONTROL Link to an external URL]**. Weitere Informationen finden Sie unter [Hinzufügen eines Links](../../web/using/editing-content.md#adding-a-link).
+   Um Empfänger eines Versands über ein Bild zu einer externen Adresse weiterzuleiten, klicken Sie auf das jeweilige Bild, um die Symbolleiste zu öffnen, platzieren Sie den Cursor auf das erste Symbol und wählen Sie dann **[!UICONTROL Link auf eine externe URL]** aus. Weitere Informationen finden Sie unter [Link hinzufügen](../../web/using/editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
@@ -87,19 +87,19 @@ Sie können diesen Inhalt als Vorlage für die künftige Verwendung speichern. N
 
 * Link in Text einfügen
 
-   Um einen externen Link in den Text in Ihrer Bereitstellung zu integrieren, wählen Sie Text oder Textblock aus und klicken Sie dann auf das erste Symbol in der Popup-Symbolleiste. Klicken Sie auf **[!UICONTROL Link to an external URL]**, geben Sie die Link-Adresse in das **[!UICONTROL URL]** Feld ein. Weitere Informationen finden Sie unter [Hinzufügen eines Links](../../web/using/editing-content.md#adding-a-link).
+   Um einen externen Link in den Text Ihres Versands einzufügen, wählen Sie Text aus und klicken Sie auf das erste Symbol der Pop-up-Symbolleiste. Wählen Sie **[!UICONTROL Link auf eine externe URL]** aus und geben Sie im Feld **[!UICONTROL URL]** die Adresse des Links ein. Weitere Informationen finden Sie unter [Link hinzufügen](../../web/using/editing-content.md#adding-a-link).
 
    Der Link kann jederzeit im rechten Fensterbereich geändert werden.
 
    >[!CAUTION]
    >
-   >The text entered in the **[!UICONTROL Label]** field replaces the original text.
+   >Der im Feld **[!UICONTROL Titel]** eingegebene Text ersetzt den ursprünglichen Text.
 
 * Mirrorseite hinzufügen
 
    Um Empfängern zu ermöglichen, Ihren Versandinhalt in einem Webbrowser zu sehen, können Sie in Ihrem Versand einen Link zu einer Mirrorseiten integrieren.
 
-   Klicken Sie auf das Textfeld, in dem Sie den Link sehen möchten. Klicken Sie auf das erste Symbol in der Popup-Symbolleiste und wählen Sie **[!UICONTROL Personalization block]** dann **[!UICONTROL Link to Mirror Page (MirrorPage)]**. Klicken Sie **[!UICONTROL Save]** zur Bestätigung.
+   Klicken Sie auf das Textfeld, in dem der Link erscheinen soll. Klicken Sie auf das erste Symbol in der Pop-up-Symbolleiste und wählen Sie **[!UICONTROL Gestaltungsbaustein]** und danach **[!UICONTROL Mirrorseiten-Link (MirrorPage)]** aus. Wählen Sie zur Bestätigung **[!UICONTROL Speichern]** aus.
 
    ![](assets/dce_mirrorpage.png)
 
@@ -109,9 +109,9 @@ Sie können diesen Inhalt als Vorlage für die künftige Verwendung speichern. N
 
 * Einen Link auf eine Webanwendung integrieren
 
-   Mit dem Digital Content Editor können Sie Links zu Webanwendungen aus Ihrer Adobe Campaign-Konsole integrieren, z. B. eine Einstiegsseite oder eine Formularseite. Weitere Informationen finden Sie unter [Verknüpfen mit einer Webanwendung](../../web/using/editing-content.md#link-to-a-web-application).
+   Mit dem Digital Content Editor können Sie über die Adobe Campaign-Konsole Links auf Webanwendungen integrieren, z. B. auf eine Landingpage oder Formularseite. Weitere Informationen hierzu finden Sie unter [Link auf eine Webanwendung](../../web/using/editing-content.md#link-to-a-web-application).
 
-   Wählen Sie ein Textfeld für den Link zu einer Webanwendung aus und klicken Sie dann auf das erste Symbol. Wählen Sie **[!UICONTROL Link to a Web application]** die gewünschte Anwendung aus, indem Sie auf das Symbol am Ende des Felds **Webanwendung** klicken.
+   Wählen Sie ein Textfeld für Ihren Link auf eine Webanwendung aus und klicken Sie dann auf das erste Symbol. Wählen Sie **[!UICONTROL Link auf eine Webanwendung]** und danach die gewünschte Anwendung aus, indem Sie auf das Symbol am Ende des Feldes **Webanwendung** klicken.
 
    ![](assets/dce_webapp.png)
 
@@ -119,8 +119,8 @@ Sie können diesen Inhalt als Vorlage für die künftige Verwendung speichern. N
 
    >[!NOTE]
    >
-   >Für diesen Schritt müssen Sie zuvor mindestens eine Webanwendung speichern. Diese finden Sie auf der **[!UICONTROL Campaigns > Web applications]** Registerkarte Ihrer Konsole.
+   >Für diesen Schritt müssen Sie zunächst mindestens eine Webanwendung speichern. Diese finden Sie auf dem Tab **[!UICONTROL Kampagnen > Webanwendungen]** Ihrer Konsole.
 
 ## Schritt 5: Speichern des Versands {#step-5---saving-the-delivery}
 
-Nachdem der Inhalt integriert wurde, speichern Sie die Bereitstellung, indem Sie auf **Speichern** klicken. Es wird nun in Ihrer Liste der Auslieferungen angezeigt, die Sie auf der **[!UICONTROL Campaigns > Deliveries]** Registerkarte finden.
+Nachdem der Inhalt integriert wurde, speichern Sie den Versand, indem Sie auf **Speichern** klicken. Er wird nun in Ihrer Liste der Sendungen angezeigt, die Sie auf dem Tab **[!UICONTROL Kampagnen > Sendungen]** finden.
