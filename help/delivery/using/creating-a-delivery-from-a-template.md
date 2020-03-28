@@ -14,7 +14,7 @@ discoiquuid: 8b50d14a-8cc6-4546-8069-47fe24f15b61
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -28,26 +28,26 @@ Um einen Versand auf Basis einer existierenden Vorlage zu erstellen, wählen Sie
 
 ![](assets/s_ncs_user_wizard_select_template.png)
 
-Otherwise, click the **[!UICONTROL Select link]** folder to the right of the field to browse the tree.
+Es besteht außerdem die Möglichkeit, auf **[!UICONTROL Verknüpftes Element auswählen]** zu klicken, um den Navigationsbaum zu durchsuchen.
 
 ![](assets/s_ncs_user_wizard_choose_link.png)
 
-Select the desired directory from the **[!UICONTROL Folder]** field, or click the **[!UICONTROL Display sub-levels]** icon to display the contents of the directories in the sub-trees of the current directory.
+Wählen Sie im Feld **[!UICONTROL Ordner]** das gesuchte Verzeichnis aus oder klicken Sie auf das Symbol **[!UICONTROL Unterordner anzeigen]**.
 
-Wählen Sie dann die zu verwendende Versandvorlage und danach **[!UICONTROL Ok]** aus.
+Wählen Sie dann die zu verwendende Versandvorlage aus und klicken Sie auf **[!UICONTROL OK]**.
 
 ## Vorlage ausführen {#executing-the-template}
 
-You can launch the execution of a template directly from the template list without creating a delivery first. To do this, select the template to be executed and right-click. Select **[!UICONTROL Actions>Execute the delivery template...]**.
+Sie haben die Möglichkeit, eine Vorlage direkt aus der Vorlagenliste heraus auszuführen, ohne zuvor einen Versand zu erstellen. Markieren Sie hierfür die auszuführende Vorlage und klicken Sie mit der rechten Maustaste. Wählen Sie die Option **[!UICONTROL Aktionen > Ausgewählte Versandvorlage ausführen...]**.
 
-Sie können auch verwenden **[!UICONTROL File>Actions>Execute the delivery template...]**.
+Sie können auch das Menü **[!UICONTROL Datei > Aktionen > Ausgewählte Versandvorlage ausführen...]** verwenden.
 
 ![](assets/s_ncs_user_template_execute_menu.png)
 
-Enter the delivery parameters and click **[!UICONTROL Send]**.
+Geben Sie die Versandparameter an und klicken Sie auf **[!UICONTROL Senden]**.
 
 Der Versand wird daraufhin in dem der Vorlage entsprechenden Ordner erstellt. Der Name des neuen Versands wird von der zugrundeliegenden Vorlage übernommen.
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren einer Bereitstellung finden Sie unter [Definieren des E-Mail-Inhalts](../../delivery/using/defining-the-email-content.md).
+>Weitere Informationen zum Konfigurieren eines Versands finden Sie unter [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md).
