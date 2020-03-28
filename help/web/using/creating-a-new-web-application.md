@@ -14,7 +14,7 @@ discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 Die Auswahl des Typs der Webanwendung erfolgt während der Erstellung.
 
-Gehen Sie zur Registerkarte **Kampagnen** und wählen Sie das **[!UICONTROL Web Applications]** Menü aus. Click the **[!UICONTROL Create]** button. Wählen Sie die gewünschte Webanwendungsvorlage aus:
+Gehen Sie zum Tab **Kampagnen** und wählen Sie das Menü **[!UICONTROL Webanwendungen]** aus. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus. Wählen Sie die gewünschte Webanwendungsvorlage aus:
 
 ![](assets/webapp_create_from_campaign.png)
 
