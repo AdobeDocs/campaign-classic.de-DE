@@ -1,7 +1,7 @@
 ---
-title: Häufig gestellte Fragen zur Berichterstellung
+title: Häufige Fragen zum Reporting
 seo-title: Datenanalyse und Berichterstellung
-description: Häufig gestellte Fragen zu Campaign Classic
+description: Häufig gestellte Fragen zu Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,13 +13,13 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 994ec35e37a1c26e83a8dd2ae31f6594cadd4c45
 
 ---
 
 
-# Häufig gestellte Fragen zur Berichterstellung {#reporting-faq}
+# Häufige Fragen zum Reporting {#reporting-faq}
 
 ## Wie kann ich neue Berichte erstellen? {#how-can-i-create-new-reports-}
 
@@ -47,12 +47,12 @@ Dies ermöglicht es, die Kapazitäten zur Datenexploration und -analyse optimal 
 
 Nach ihrer Erstellung und Konfiguration werden die Cubes in den Abfrage-Aktivitäten der Berichte und Webanwendungen genutzt. Sie können außerdem in Pivot-Tabellen verwendet und verändert werden.
 
-Erfahren Sie, wie Sie Ihre Daten[ mit Würfeln ](../../reporting/using/using-cubes-to-explore-data.md)erforschen.
+Erfahren Sie, wie Sie Ihre Daten [mit Cubes analysieren](../../reporting/using/using-cubes-to-explore-data.md) können.
 
 ## Kann ich einen Bericht aus Antworten auf eine Online-Umfrage erstellen? {#can-i-create-a-report-from-answers-to-an-online-survey-}
 
 Lesen Sie [dieses Anwendungsbeispiel](../../reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md), um zu erfahren, wie Sie einen Bericht zu Antworten auf eine Online-Umfrage erstellen.
 
-## Wie kann ich den Zugriff auf meinen Bericht in der Kampagnenoberfläche freigeben? {#how-can-i-share-access-to-my-report}
+## Wie kann ich den Zugriff auf meinen Bericht in der Campaign-Oberfläche freigeben? {#how-can-i-share-access-to-my-report}
 
-Sie können festlegen, in welchem Kontext Ihr Bericht in der Benutzeroberfläche von Adobe Campaign angezeigt wird. For more on report access, refer to [this section](../../reporting/using/configuring-access-to-the-report.md).
+Sie können festlegen, in welchem Kontext Ihr Bericht in der Benutzeroberfläche von Adobe Campaign angezeigt werden soll. Weiterführende Informationen zum Zugriff auf Berichte finden Sie in [diesem Abschnitt](../../reporting/using/configuring-access-to-the-report.md).
