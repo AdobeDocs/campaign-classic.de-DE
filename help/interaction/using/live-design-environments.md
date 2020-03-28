@@ -14,7 +14,7 @@ discoiquuid: 3cea2be4-4da4-4ebd-a241-1bbaa5abb16e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -26,32 +26,32 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Interaction arbeitet mit zwei Angebotsumgebungstypen:
 
-* **[!UICONTROL Design]** Angebotsumgebungen mit Angeboten, die bearbeitet werden und geändert werden können. Diese Angebote wurden noch nicht im Genehmigungszyklus durchgeführt und werden nicht an Kontakte geliefert.
-* **[!UICONTROL Live]** Angebotsumgebungen, die genehmigte Angebote enthalten, während sie Kontakten präsentiert werden. Die Angebote in dieser Umgebung sind schreibgeschützt.
+* **[!UICONTROL Design-Umgebungen]**, in denen Angebote erstellt und geändert werden können. Vor Validierung der Angebote oder etwaiger Änderungen stehen sie nicht zur Unterbreitung zur Verfügung.
+* **[!UICONTROL Live-Umgebungen]**, in denen die validierten Angebote zur Unterbreitung zur Verfügung stehen. Die hier enthaltenen Angebote sind schreibgeschützt.
 
 ![](assets/offer_environments_overview_001.png)
 
-Jede **[!UICONTROL Design]** Umgebung ist mit einer **[!UICONTROL Live]** Umgebung verknüpft. Nach Abschluss eines Angebots werden dessen Inhalt und die Förderfähigkeitsregeln einem Genehmigungszyklus unterzogen. Nach Abschluss dieses Zyklus wird das betreffende Angebot automatisch in die **[!UICONTROL Live]** Umgebung bereitgestellt. Ab diesem Moment wird es zur Lieferung verfügbar sein.
+Jeder **[!UICONTROL Design-Umgebung]** entspricht eine **[!UICONTROL Live-Umgebung]**. Nach Erstellung eines Angebots unterlaufen sein Inhalt und die konfigurierten Eignungsregeln einen Validierungszyklus, nach dessen erfolgreichem Abschluss das Angebot automatisch für die **[!UICONTROL Live-Umgebung]** freigegeben wird. Nun kann es in Sendungen verwendet werden.
 
-Interaktion ist standardmäßig mit einer **[!UICONTROL Design]** Umgebung und einer damit verbundenen **[!UICONTROL Live]** Umgebung verbunden. Beide Umgebungen sind für das Targeting der vordefinierten Empfängertabelle vorkonfiguriert.
+Standardmäßig sind im Interaction-Package bereits eine **[!UICONTROL Design-Umgebung]** und ihre entsprechende **[!UICONTROL Live-Umgebung]** enthalten. Beide sind werksmäßig dahin gehend konfiguriert, die native Empfängertabelle zu mappen.
 
 >[!NOTE]
 >
->Um eine andere Tabelle als Ziel festzulegen (Besuchertabelle für anonyme Angebote oder eine bestimmte Empfängertabelle), müssen Sie den Assistenten für die Zielzuordnung verwenden, um die Umgebungen zu erstellen. Weitere Informationen finden Sie unter [Erstellen einer Angebotsumgebung](#creating-an-offer-environment).
+>Sollten Sie eine andere Tabelle (beispielsweise die Besuchertabelle für anonyme Angebote oder eine spezifische Empfängertabelle) verwenden wollen, steht Ihnen ein Assistent zur Verfügung, um die Umgebungen mit den entsprechenden Zielgruppen-Mappings zu erstellen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](#creating-an-offer-environment).
 
 ![](assets/offer_environments_overview_002.png)
 
-Angebotsmanager und Liefermanager haben Zugriff auf verschiedene Ansichten der Umgebung. Bereitstellungsmanager können nur die **[!UICONTROL Live]** Angebotsumgebung anzeigen und Angebote zur Bereitstellung verwenden. Angebotsmanager können die **[!UICONTROL Design]** Umgebung anzeigen und ändern und die **[!UICONTROL Live]** Umgebung anzeigen. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
+Angebots- und versandverantwortliche Benutzer greifen auf unterschiedliche Weise auf die Umgebungen zu. Versandverantwortliche haben nur Lesezugriff auf die **[!UICONTROL Design-Umgebung]**, deren Angebote sie in Sendungen verwenden können. Angebotsverantwortliche hingegen haben Schreibzugriff auf die **[!UICONTROL Design-Umgebung]**, aber nur Lesezugriff auf die **[!UICONTROL Live-Umgebung]**. Weitere Informationen hierzu finden Sie im Abschnitt [Benutzerprofile](../../interaction/using/operator-profiles.md).
 
 ## Angebotsumgebungen {#creating-an-offer-environment}
 
 Standardmäßig wird Interaction mit einer Umgebung geliefert, die für ein Zielgruppenmapping der Empfängertabelle konfiguriert ist, also für Angebote an identifizierte Kontakte. Sollten Sie eine andere Tabelle (beispielsweise die Besuchertabelle für anonyme Angebote oder eine spezifische Empfängertabelle) verwenden wollen, gehen Sie wie folgt vor:
 
-1. Platzieren Sie den Cursor auf dem Knoten **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Delivery mappings]** . Klicken Sie mit der rechten Maustaste auf die gewünschte Zuordnungsoption (**[!UICONTROL Visitors]** wenn Sie anonyme Angebote verwenden möchten) und wählen Sie **[!UICONTROL Actions]** > **[!UICONTROL Modify the options of the targeting dimension]**.
+1. Markieren Sie den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Zielgruppen-Mappings]**. Klicken Sie mit der rechten Maustaste auf das Mapping, das Sie verwenden möchten (**[!UICONTROL Besucher]** im Fall von anonymen Angeboten) und wählen Sie im Kontextmenü die Option **[!UICONTROL Aktionen]** > **[!UICONTROL Optionen der Zielgruppendimension ändern...]** aus.
 
    ![](assets/offer_env_anonymous_001.png)
 
-1. Klicken Sie auf **[!UICONTROL Next]** , um zum nächsten Bildschirm im Assistenten zu gelangen, markieren Sie das **[!UICONTROL Generate a storage schema for propositions]** Feld und klicken Sie auf **[!UICONTROL Save]**.
+1. Klicken Sie auf **[!UICONTROL Weiter]** und kreuzen Sie im nächsten Bildschirm das Feld **[!UICONTROL Speicherschema für Vorschläge erzeugen]** an. Klicken Sie zum Abschluss auf **[!UICONTROL Speichern]**.
 
    ![](assets/offer_env_anonymous_002.png)
 
@@ -59,17 +59,17 @@ Standardmäßig wird Interaction mit einer Umgebung geliefert, die für ein Ziel
    >
    >Falls das Feld bereits angekreuzt war, muss es zunächst deaktiviert und dann erneut aktiviert werden.
 
-1. Adobe Campaign erstellt zwei Umgebungen (**[!UICONTROL Design]** und **[!UICONTROL Live]** ) mit Targeting-Informationen aus der zuvor aktivierten Zielzuordnung. Die Umgebung ist mit den Targeting-Informationen vorkonfiguriert.
+1. Adobe Campaign erstellt nun die beiden dem zuvor ausgewählten Zielgruppen-Mapping entsprechenden Umgebungen (**[!UICONTROL Design-Umgebung]** und **[!UICONTROL Live-Umgebung]**). Beide Umgebungen sind mit den gewünschten Zielgruppeninformationen vorkonfiguriert.
 
-   Wenn Sie die **[!UICONTROL Visitor]** Zuordnung aktiviert haben, wird das **[!UICONTROL Environment dedicated to incoming anonymous interactions]** Feld automatisch auf der **[!UICONTROL General]** Registerkarte der Umgebung markiert.
+   Im Falle eines Mappings mit der **[!UICONTROL Besuchertabelle]** ist das Feld **[!UICONTROL Für anonyme eingehende Interaktionen reservierte Umgebung]** im Tab **[!UICONTROL Allgemein]** der Umgebung automatisch ausgewählt.
 
    Diese Option ermöglicht die Aktivierung von für anonyme Interaktionen reservierten Funktionen, beispielsweise in Bezug auf die Konfiguration der Umgebungsplatzierungen. Dies ermöglicht es, Optionen zu konfigurieren, die den Wechsel von &quot;identifizierten&quot; zu &quot;anonymen&quot; Umgebungen erlauben.
 
-   Sie können beispielsweise eine Empfängerumgebung mit einem Angebotsumfeld verknüpfen, das einer Besucherumgebung entspricht (nicht identifizierter Kontakt). Auf diese Weise werden dem Kontakt je nachdem, ob er identifiziert wird oder nicht, verschiedene Angebote zur Verfügung gestellt. For more on this, refer to [Creating offer spaces](../../interaction/using/creating-offer-spaces.md).
+   Sie können zum Beispiel eine Platzierung der Empfängerumgebung (identifizierter Kontakt) mit der entsprechenden Platzierung der Besucherumgebung (nicht identifizierter Kontakt) verknüpfen. Auf diese Weise werden dem Kontakt verschiedene Angebote unterbreitet, je nachdem ob er identifiziert werden konnte oder nicht. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_env_anonymous_003.png)
 
 >[!NOTE]
 >
->For more information on anonymous interactions on an inbound channel, refer to [Anonymous interactions](../../interaction/using/anonymous-interactions.md).
+>Weiterführende Informationen zu anonymen Interaktionen in einem eingehenden Kanal finden Sie im Abschnitt [Anonyme Interaktionen](../../interaction/using/anonymous-interactions.md).
 
