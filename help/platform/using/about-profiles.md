@@ -14,7 +14,7 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 
 ---
@@ -44,45 +44,45 @@ Die gängigsten Methoden der Profilerstellung sind:
 
 >[!NOTE]
 >
->To find out how files and web forms are imported, refer to [Generic imports and exports](../../platform/using/generic-imports-and-exports.md).
+>Dateiimport und Webformulare werden im Abschnitt [Allgemeine Importe und Exporte](../../platform/using/generic-imports-and-exports.md) vorgestellt.
 
 ## Profile und Zielgruppen {#profiles-and-targets}
 
-Über den **[!UICONTROL Profiles and targets]** Link können Sie Empfänger anzeigen, die in der Adobe Campaign-Datenbank gespeichert sind. Sie können einen neuen Empfänger erstellen, einen vorhandenen Empfänger bearbeiten und auf sein Profil zugreifen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../platform/using/editing-a-profile.md).
+Über den Link **[!UICONTROL Profile und Zielgruppen]** können Sie in der Datenbank enthaltene Empfängerprofile anzeigen. Sie können neue Empfänger erstellen, bestehende bearbeiten und auf Profile zugreifen. Lesen Sie hierzu auch [diese Seite](../../platform/using/editing-a-profile.md).
 
 ![](assets/d_ncs_user_interface_target_link.png)
 
 Außerdem haben Sie an dieser Stelle Zugriff auf:
 
-* Listen; siehe [Erstellen und Verwalten von Listen](../../platform/using/creating-and-managing-lists.md),
+* Listen; siehe [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md),
 * Anmeldedienste; siehe [diese Seite](../../delivery/using/managing-subscriptions.md),
 * Webanwendungen; siehe [diese Seite](../../web/using/about-web-applications.md),
-* Einfuhren und Ausfuhren (Arbeitsplätze); auf [allgemeine Ein- und Ausfuhren](../../platform/using/generic-imports-and-exports.md),
+* Importe und Exporte (Vorgänge); siehe [Allgemeine Importe und Exporte](../../platform/using/generic-imports-and-exports.md),
 * Zielgruppen-Workflow; siehe [diese Seite](../../workflow/using/building-a-workflow.md#implementation-steps-),
 
 Über die Empfängerseite sind die gängigsten Aktionen möglich. Sie können Profile bearbeiten, aktualisieren, sortieren, löschen oder neue Profile erstellen.
 
-Für erweiterte Profilmanipulationen müssen Sie die Adobe Campaign-Struktur bearbeiten. Klicken Sie dazu auf den **[!UICONTROL Explorer]** Link auf der Adobe Campaign-Homepage.
+Erweiterte Funktionalitäten stehen über den Navigationsbaum zur Verfügung. Klicken Sie hierfür auf die **[!UICONTROL Explorer]**-Schaltfläche in der Symbolleiste der Adobe-Campaign-Startseite.
 
-Standardmäßig werden Empfänger im **[!UICONTROL Profiles and Targets > Recipients]** Knoten des Baums gespeichert. Sie können Empfänger aus dieser Ansicht erstellen sowie:
+Standardmäßig sind die Empfänger im Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Empfänger]** gespeichert. Sie haben an dieser Stelle nicht nur die Möglichkeit, Empfänger zu erstellen, sondern auch
 
-* sort and filter the profiles of the database; see [Filtering options](../../platform/using/filtering-options.md),
-* move, copy or delete profiles from the database; see [Managing profiles](../../platform/using/managing-profiles.md),
-* Aktualisierungsprofile; siehe [Aktualisieren von Daten](../../platform/using/updating-data.md),
-* Empfänger; siehe [Profile](../../platform/using/exporting-and-importing-profiles.md)exportieren und importieren,
-* Empfängergruppen erstellen; Siehe [Erstellen und Verwalten von Listen](../../platform/using/creating-and-managing-lists.md).
+* Profile der Datenbank sortieren und filtern; siehe ](../../platform/using/filtering-options.md)Filteroptionen[,
+* Profile der Datenbank verschieben, kopieren oder löschen; siehe ](../../platform/using/managing-profiles.md)Profile verwalten[,
+* Profile aktualisieren; siehe [Daten-Update](../../platform/using/updating-data.md),
+* Exportempfänger; siehe [Profile im-/exportieren](../../platform/using/exporting-and-importing-profiles.md),
+* Empfängergruppen erstellen; siehe [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md).
 
 Erweiterte Funktionen und Konfigurationsmöglichkeiten stehen ausschließlich über den **[!UICONTROL Explorer]** zur Verfügung.
 
 ![](assets/d_ncs_user_interface01.png)
 
-Das allgemeine Layout des Adobe Campaign-Explorers wird in [Verwenden des Adobe Campaign-Explorers](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)dargestellt.
+Das allgemeine Layout von Adobe Campaign-Explorer wird in [Adobe Campaign-Explorer verwenden](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) beschrieben.
 
 >[!NOTE]
 >
->Sie können eine erweiterte Ansicht dieser Liste auch in der Adobe Campaign-Struktur anzeigen, indem Sie auf den **[!UICONTROL Profiles and targets > Recipients]** Link klicken. Die Listenanzeige kann entsprechend Ihren Anforderungen konfiguriert werden. Sie können Spalten hinzufügen oder löschen, die Spaltenreihenfolge definieren, Daten sortieren usw. Die Konfiguration der Listenanzeige wird unter [Verwenden des Adobe Campaign-Explorers](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer)beschrieben.
+>Durch Klick auf **[!UICONTROL Profile und Zielgruppen > Empfänger]** haben Sie Zugriff auf eine erweiterte Ansicht der Empfängerliste. Es besteht die Möglichkeit, sie Ihren Bedürfnissen entsprechend anzupassen. Sie können beispielsweise Spalten hinzufügen oder löschen und ihre Reihenfolge festlegen, Daten sortieren etc. Die Konfiguration der Listenanzeige wird unter [Adobe Campaign-Explorer verwenden](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) beschrieben.
 >
->Sie können auch Empfänger-Ansichten definieren. Weitere Informationen zu dieser Funktion finden Sie unter [Ordner und Ansichten](../../platform/using/access-management.md#folders-and-views).
+>Sie können auch Empfängeransichten definieren. Weitere Informationen zu dieser Funktion finden Sie unter [Ordner und Ansichten](../../platform/using/access-management.md#folders-and-views).
 
 ## Aktive Profile {#active-profiles}
 
@@ -96,8 +96,8 @@ Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil 
 >
 >Die Kanäle Facebook und Twitter werden nicht berücksichtigt.
 
-Sie können sich einen Überblick über das **[!UICONTROL Number of active profiles]** Menü **[!UICONTROL Administration > Campaign Management > Customer metrics]** verschaffen.
+Eine Übersicht über die **[!UICONTROL Anzahl der aktiven Profile]** erhalten Sie über das Menü **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]**.
 
-Die tatsächliche Anzahl wird durch den **[!UICONTROL Number of active billing profiles]** (**[!UICONTROL billingActiveContactCount]**) [technischen Arbeitsablauf](../../workflow/using/delivery.md)ausgeführt, der täglich ausgeführt wird und die neuen Daten dem vorhandenen Bericht für den aktuellen Zeitraum im **[!UICONTROL Customer metrics]** Menü hinzufügt. Jeder Zeitraum dauert 12 Monate.
+Die tatsächliche Zählung erfolgt über den [technischen Workflow](../../workflow/using/delivery.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** (**[!UICONTROL billingActiveContactCount]**), der täglich ausgeführt wird. Dabei werden die neuen Daten für den aktuellen Zeitraum im Menü **[!UICONTROL Kundenmetriken]** zum vorhandenen Bericht hinzugefügt. Jeder Zeitraum hat eine Dauer von 12 Monaten.
 
 Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typologieregeln, Quarantänen), werden nicht berücksichtigt. Ein Profil, das mehrere Sendungen erhalten hat, wird nur einmal gezählt.
