@@ -14,7 +14,7 @@ discoiquuid: 5b2b7682-6bac-4282-8d27-e8a259934e7d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -26,8 +26,8 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 
 * **Umgebung**: Einheit aus Angebotskatalog und Integrationspunkten (Platzierungen). Eine Umgebung wird einer Zielgruppendimension zugeordnet. Es gibt zwei verschiedene Umgebungstypen:
 
-   * **Entwurfsumgebung**: Umgebung, in der Angebote erstellt und/oder Typologieregeln definiert werden (Regeln, die festlegen, welche Angebote einer bestimmten Person präsentiert werden sollen oder nicht). Die Tabelle der Personen, die von den Angeboten als Ziel ausgewählt werden, und die Tabelle zum Speichern aller Angebotsprojekte werden ebenfalls definiert. Der **[!UICONTROL Design environment]** Knoten enthält Unterordner für Angebotsbereiche, vordefinierte Filter und Angebotskategorien. Für alle **[!UICONTROL Design environment]** gibt es eine entsprechende schreibgeschützte **[!UICONTROL Live environment]**, aus der die gleiche generiert wurde **[!UICONTROL Design environment]**.
-   * **Live-Umgebung**: mit einer **[!UICONTROL Design environment]** verknüpften Umgebung. Es enthält schreibgeschützte Angebote, deren Inhalt und Berechtigung über die **[!UICONTROL Design environment]** genehmigt wurden. Sie werden ausgewählt, um auf einer Website präsentiert oder in eine Nachricht eingefügt zu werden.
+   * **Angebote - Design**: Umgebung, in der Angebote erstellt sowie Typologieregeln definiert werden, die darüber entscheiden, ob ein bestimmtes Angebot einer Zielperson unterbreitet wird oder nicht. Des Weiteren werden hier sowohl die Tabelle der in der Angebotszielgruppe enthaltenen Individuen als auch die Tabelle, in der die Angebotsvorschläge gespeichert werden, angegeben. Der Knoten **[!UICONTROL Angebote - Design]** enthält in Unterverzeichnissen diverse Umgebungen, vordefinierte Filter und Angebotskataloge. Jedes **[!UICONTROL Angebote - Design]**-Ereignis entspricht einer aus ihr erzeugten **[!UICONTROL Live-Umgebung]******.
+   * **Live-Umgebung**: Aus einem **[!UICONTROL Angebote - Design]**-Ereignis entstandene schreibgeschützte Umgebung, welche die Angebote enthält, deren Inhalt und Eignung in **[!UICONTROL Angebote - Design]** erstellt und validiert wurden. Die Angebote können an dieser Stelle nicht mehr geändert werden und sind dazu bestimmt, beispielsweise auf einer Webseite oder in einem Versand unterbreitet zu werden.
 
 * **Platzierung**: Ordner, in dem bestimmt wird, wo ein Angebot integriert werden werden soll. Über die Platzierung wird insbesondere der zu verwendende Kanal festgelegt, aber auch die Möglichkeit, ob der Einzelmodus genutzt werden kann (standardmäßig kommt nur der Batch-Modus zum Einsatz). Des Weiteren können hier mithilfe von Darstellungsfunktionen Angebotsinhalte erstellt und Angebotsthemen definiert werden. Eine Platzierung bildet somit die Schnittstelle zwischen dem Angebotsmodul und den diversen Kanälen.
 
@@ -56,8 +56,8 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 * **Schlichtung**: Etappe der Angebotsauswahl, bei der die für eine Platzierung infrage kommenden Angebote nach ihrer auf Kategorie- und Angebotsniveau definierten Gewichtung geordnet werden. Das Angebot mit der höchsten Gewichtung ist demzufolge prioritär bei der Unterbreitung.
 * **Kontakt**: Person am Ursprung einer eingehenden Interaktion. Bei einer Abfrage des Angebotsmoduls wird der Kontakt einer Zielgruppendimension zugeordnet. Es werden zwei Kontakttypen unterschieden:
 
-   * **[!UICONTROL Identified contact]** : ein Kontakt, der freiwillig auf dem Kanal identifiziert wurde. Bei ausgehenden Interaktionen wird der Kontakt automatisch identifiziert.
-   * **[!UICONTROL Anonymous contact]** : einen Kontakt, der nicht freiwillig über den Kanal abonniert, sondern implizit durch ein Cookie identifiziert werden kann. Diese Terminologie wird nur für eingehende Interaktionen verwendet.
+   * **[!UICONTROL Identifizierter Kontakt]**: Kontakt, der sich explizit im Kanal identifiziert hat (z. B. durch Angabe einer Benutzerkennung und eines Kennworts). Bei ausgehenden Interaktionen sind alle Kontakte systematisch identifiziert.
+   * **[!UICONTROL Anonymer Kontakt]**: Kontakt, der sich nicht explizit im Kanal identifiziert hat, der jedoch mithilfe eines Cookies implizit identifiziert werden kann. Diese Art von Kontakten tritt nur bei eingehenden Interaktionen auf.
 
       >[!NOTE]
       >
@@ -69,9 +69,9 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 * **Einzelmodus**: Pro Vorgang wird ein einzelner Kontakt verarbeitet. Dieser Modus kommt in der Regel bei eingehenden Interaktionen oder bei Transaktionsnachrichten zum Einsatz.
 * **Identifikationsmodus**: bezieht sich auf den Status eines Kontakts:
 
-   * **[!UICONTROL explicit]** : der Kontakt wird nach seiner Anmeldung auf der Kanaloberfläche identifiziert.
-   * **[!UICONTROL implicit]** : der Kontakt wurde durch ein Cookie (dauerhaft oder Sitzung) identifiziert. Es kann als anonymer oder identifizierter Kontakt verarbeitet werden.
-   * **[!UICONTROL anonymous]** : der Kontakt nicht identifiziert werden kann.
+   * **[!UICONTROL explizit]**: Der Kontakt konnte identifiziert werden, da er sich in der Kanalschnittstelle mit seinen Kundendaten angemeldet hat.
+   * **[!UICONTROL implizit]**: Der Kontakt konnte mithilfe eines Cookies (Sitzungs- oder permanenter Cookie) identifiziert werden. Er kann entweder wie ein anonymer oder wie ein identifizierter Kontakt behandelt werden.
+   * **[!UICONTROL anonym]**: Der Kontakt konnte nicht identifiziert werden.
 
 * **Geeignetes Angebot**: Angebot, das bestimmten, zuvor definierten Bedingungen entspricht und somit einer Zielgruppe auf mit ihrer Markenerfahrung kohärente Weise unterbreitet werden kann.
 * **Unterbreitungsregeln**: Typologieregeln, die auf Basis der einem Kontakt bereits vorgeschlagenen Angebote bestimmte Angebote von der Unterbreitung ausschließen. Die Regeln werden auf Ebene der Umgebung der Angebote verzeichnet.
