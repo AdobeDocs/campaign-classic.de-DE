@@ -14,7 +14,7 @@ discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -36,7 +36,7 @@ Adobe Campaign stellt ein Musterbanner bereit, das Sie an Ihre Anforderungen anp
 >
 >Wenn Sie ein eigenes Banner erstellen möchten, personalisieren Sie das native Banner.
 
-Um das Banner zu aktivieren, müssen Sie die Webanwendungseigenschaften konfigurieren. Weitere Informationen finden Sie im Abschnitt [Entwerfen einer Webanwendung](../../web/using/designing-a-web-application.md) .
+Um das Banner zu aktivieren, müssen Sie die Eigenschaften für Webanwendungen konfigurieren. Weitere Informationen hierzu finden Sie im Abschnitt [Webanwendungen konzipieren](../../web/using/designing-a-web-application.md).
 
 Wenn Webtracking aktiviert ist, haben Sie folgende Möglichkeiten:
 
