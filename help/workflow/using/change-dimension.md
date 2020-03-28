@@ -14,7 +14,7 @@ discoiquuid: 61583062-2349-4ab3-a3bf-310d21894f34
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -32,7 +32,7 @@ Außerdem können Deduplizierungskriterien für die Daten angegeben werden.
 
 Gehen Sie wie folgt vor:
 
-1. Select the new targeting dimension via the **[!UICONTROL Change dimension]** field.
+1. Wählen Sie im Feld **[!UICONTROL Dimensionsänderung]** die neue Zielgruppendimension aus.
 
    ![](assets/s_user_change_dimension_param1.png)
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor:
 
    Wenn Sie nur einen Datensatz beibehalten wollen, erscheint im Arbeitsschema eine Kollektion, welche alle Datensätze, die nicht im Endergebnis enthalten sind, enthält. Anhand dieser Kollektion können Sie, wie bei anderen Kollektionen auch, Aggregate berechnen oder Informationen abrufen.
 
-   For example, if you change the **[!UICONTROL Customers]** dimension to the **[!UICONTROL Recipients]** dimension, it will be possible to target customers of a specific store, while adding the number of purchases made.
+   Wenn Sie beispielsweise von der Dimension **[!UICONTROL Kunden]** zur Dimension **[!UICONTROL Empfänger]** wechseln, können Sie die Kunden eines bestimmten Geschäfts unter Angabe der getätigten Käufe abrufen.
 
 1. Wenn Sie nicht alle Datensätze beibehalten, können Sie die Deduplizierungsparameter bestimmen.
 
@@ -52,23 +52,23 @@ Gehen Sie wie folgt vor:
 
    Im vorliegenden Beispiel erfolgt die Deduplizierung zunächst über die E-Mail-Adresse und bei Bedarf anschließend über die Kundennummer.
 
-1. The **[!UICONTROL Result]** tab lets you add additional information.
+1. Im **[!UICONTROL Ergebnis]**-Tab kann die Hinzufügung von Zusatzinformationen konfiguriert werden.
 
-   For example, you can recover the county based on the zip code by using a **Substring** type function. Gehen Sie dazu wie folgt vor:
+   Sie können beispielsweise den Bezirk anhand der Postleitzahl wiederherstellen, indem Sie eine **Substring**-Funktion verwenden. Gehen Sie dazu wie folgt vor:
 
-   * Klicken Sie auf den **[!UICONTROL Add data...]** Link und wählen Sie **[!UICONTROL Data linked to the filtering dimension]**.
+   * Klicken Sie auf den Link **[!UICONTROL Daten hinzufügen...]** und kreuzen Sie die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** an.
 
       ![](assets/wf_change-dimension_sample_01.png)
 
       >[!NOTE]
       >
-      >For information on creating and managing additional columns, refer to [Adding data](../../workflow/using/query.md#adding-data).
+      >Weitere Informationen zur Erstellung und Verwendung von Zusatzspalten finden Sie unter [Daten hinzufügen](../../workflow/using/query.md#adding-data).
 
-   * Select the previous targeting dimension (before axis switch) and select the **[!UICONTROL Zip Code]** in the recipient&#39;s **[!UICONTROL Location]** sub-tree, then click **[!UICONTROL Edit expression]**.
+   * Wählen Sie die ursprüngliche Zielgruppendimension aus (vor der Dimensionsänderung), markieren Sie die **[!UICONTROL Kundennummer]** und klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]****[!UICONTROL .]**
 
       ![](assets/wf_change-dimension_sample_02.png)
 
-   * Klicken Sie auf **[!UICONTROL Advanced selection]** und wählen Sie **[!UICONTROL Edit the formula using an expression]**.
+   * Klicken Sie auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]** und kreuzen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** an.
 
       ![](assets/wf_change-dimension_sample_03.png)
 
