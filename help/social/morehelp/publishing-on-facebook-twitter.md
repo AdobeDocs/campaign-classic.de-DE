@@ -1,6 +1,6 @@
 ---
-title: Veröffentlichen auf Facebook/Twitter
-seo-title: Veröffentlichen auf Facebook/Twitter
+title: Publishing auf Facebook/Twitter
+seo-title: Publishing auf Facebook/Twitter
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -11,11 +11,11 @@ iscontainer: true
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
 
 
-# Veröffentlichen auf Facebook/Twitter{#publishing-on-facebook-twitter}
+# Publishing auf Facebook/Twitter{#publishing-on-facebook-twitter}
 
