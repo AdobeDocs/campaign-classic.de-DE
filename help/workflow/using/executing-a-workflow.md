@@ -14,7 +14,7 @@ discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
 
 ---
@@ -22,71 +22,71 @@ source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
 
 # Workflow ausführen{#executing-a-workflow}
 
-Richtlinien zur Fehlerbehebung in Bezug auf die Ausführung von Workflows finden Sie in [diesem Abschnitt](../../production/using/workflow-execution.md).
+Anleitungen zur Fehlerbehebung bei der Ausführung von Workflows finden Sie in [diesem Abschnitt](../../production/using/workflow-execution.md).
 
 ## Workflow starten {#starting-a-workflow}
 
-Workflows werden grundsätzlich manuell gestartet, Beim Starten kann es jedoch inaktiv bleiben, je nachdem, welche Informationen über einen Planer (siehe [Planer](../../workflow/using/scheduler.md)) oder die Aktivitätsplanung angegeben wurden.
+Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](../../workflow/using/scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
 Die mit der Workflow-Ausführung in Zusammenhang stehenden Prozesse (starten, anhalten, aussetzen etc.) laufen **asynchron** ab, d. h. der jeweilige Befehl wird gespeichert und erst dann ausgeführt, wenn ein Server verfügbar ist.
 
 Anhand der Schaltflächen der Symbolleiste kann die Ausführung des Workflows gesteuert und überwacht werden.
 
-The list of options available in the **[!UICONTROL Actions]** menu and the right-click menu are detailed below.
+Die im Menü **[!UICONTROL Aktionen]** und im Kontextmenü verfügbaren Befehle werden nachstehend erläutert.
 
 ### Aktionen-Symbolleiste {#actions-toolbar}
 
-Die Symbolleistenschaltflächen sind in diesem [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow)beschrieben. Über die **[!UICONTROL Actions]** Schaltfläche haben Sie Zugriff auf zusätzliche Ausführungsoptionen, um auf ausgewählte Workflows zu reagieren. Sie können auch das **[!UICONTROL File > Actions]** Menü verwenden oder mit der rechten Maustaste auf einen Workflow klicken und die Option auswählen **[!UICONTROL Actions]**.
+Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) beschrieben. Die Schaltfläche **[!UICONTROL Aktionen]** bietet weiterführende Optionen, um auf die Ausführung eines oder mehrerer Workflows Einfluss zu nehmen. Auf die Aktionen können Sie außerdem über das Menü **[!UICONTROL Datei > Aktionen]** oder durch Rechtsklick und Auswahl der Option **[!UICONTROL Aktionen]** im Kontextmenü zugreifen.
 
 ![](assets/purge_historique.png)
 
-* **[!UICONTROL Start]**
+* **[!UICONTROL Starten]**
 
    Dieser Befehl startet die Ausführung eines Workflows. Sein Status wechselt von **In Bearbeitung**, **Ausgesetzt** oder **Abgeschlossen** in **Gestartet**. Die Workflow-Engine übernimmt die Ausführung des Workflows. Bei zuvor ausgesetzten Workflows wird die Ausführung an der Stelle wieder aufgenommen, wo sie ausgesetzt wurde. In den anderen Fällen starten die Workflows jeweils mit der ersten Aktivität.
 
    Der Start eines Workflows ist ein asynchroner Prozess, d. h. der jeweilige Befehl wird gespeichert und erst dann ausgeführt, wenn ein Server verfügbar ist.
 
-* **[!UICONTROL Pause]**
+* **[!UICONTROL Aussetzen]**
 
    Dieser Befehl überführt den Workflow in den Status **Ausgesetzt**. Bis zur Wiederaufnahme werden keine weiteren Aktivitäten gestartet, laufende Vorgänge werden jedoch nicht unterbrochen.
 
-* **[!UICONTROL Stop]**
+* **[!UICONTROL Anhalten]**
 
    Dieser Befehl hält die Ausführung eines laufenden Workflows an. Der Status der Workflow-Instanz wechselt zu **Abgeschlossen**. Laufende Vorgänge werden nach Möglichkeit unterbrochen. Gestartete Importe oder SQL-Abfragen werden sofort abgebrochen.
 
    Das Anhalten eines Workflows ist ein asynchroner Prozess, d. h. der jeweilige Befehl wird gespeichert und der oder die Server brechen die laufenden Vorgänge ab. Das Anhalten einer Workflow-Instanz kann daher eine geraume Zeit dauern, insbesondere wenn der Workflow über verschiedene Server verteilt ist. In diesem Fall muss jeder Server den Prozess übernehmen und die laufenden Aufgaben abbrechen.
 
-* **[!UICONTROL Restart]**
+* **[!UICONTROL Neu starten]**
 
    Dieser Befehl hält einen Workflow zunächst an und startet ihn dann erneut.In den meisten Fällen ermöglicht diese Vorgehensweise einen schnelleren Neustart als die separate Verwendung der Anhalten- und Starten-Schaltflächen. Dies ist insbesondere dann nützlich, wenn das Anhalten eines Workflows geraume Zeit in Anspruch nimmt, da der Befehl &quot;Starten&quot; erst wieder verfügbar ist, wenn der Workflow tatsächlich angehalten wurde.
 
-   Die **[!UICONTROL Start / Pause / Stop / Restart]** Aktionen sind auch über die Ausführungssymbole in der Symbolleiste verfügbar. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
+   Die Befehle **[!UICONTROL Starten/Aussetzen/Anhalten/Neu starten]** sind auch über die entsprechenden Schaltflächen der Symbolleiste verfügbar. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#creating-a-targeting-workflow).
 
-* **[!UICONTROL Purge history]**
+* **[!UICONTROL Verlaufsbereinigung]**
 
-   Mit dieser Aktion können Sie den Workflow-Verlauf bereinigen. Weitere Informationen finden Sie unter [Bereinigen der Protokolle](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+   Mit dieser Aktion können Sie den Workflow-Verlauf bereinigen. Weitere Informationen finden Sie unter [Verläufe bereinigen](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
-* **[!UICONTROL Start in simulation mode]**
+* **[!UICONTROL Im Simulationsmodus starten]**
 
-   Mit dieser Option können Sie den Workflow im Simulationsmodus anstatt im echten Modus starten. Das bedeutet, dass bei Aktivierung dieses Modus nur Aktivitäten ausgeführt werden, die sich nicht auf die Datenbank oder das Dateisystem auswirken (z. **[!UICONTROL Query]**, **[!UICONTROL Union]**, **[!UICONTROL Intersection]** usw.). Aktivitäten, die eine Wirkung haben (z. **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.) sowie die darauf folgenden (in derselben Zweigstelle) nicht ausgeführt werden.
+   Mithilfe dieses Befehls wird der Workflow im Simulationsmodus gestartet. In diesem Modus werden nur die Aktivitäten ausgeführt, die keine Auswirkungen auf die Datenbank oder das Dateisystem haben. Dies können Aktivitäten vom Typ **[!UICONTROL Abfrage]**, **[!UICONTROL Vereinigung]**, **[!UICONTROL Schnittmenge]** usw. sein. Aktivitäten mit Auswirkungen (beispielsweise **[!UICONTROL Export]**, **[!UICONTROL Import]** usw.) sowie die darauf folgenden Aktivitäten im selben Zweig werden nicht ausgeführt.
 
-* **[!UICONTROL Execute pending tasks now]**
+* **[!UICONTROL Vorgezogene Ausführung der ausstehenden Aufgaben]**
 
-   This action lets you start all pending tasks as soon as possible. To start a specific task, right-click its activity and select **[!UICONTROL Execute pending task(s) now]**.
+   Dieser Befehl bietet die Möglichkeit, so schnell wie möglich alle ausstehenden Aufgaben zu starten. Wenn Sie eine bestimmte Aufgabe starten möchten, klicken Sie auf die entsprechende Aktivität und wählen Sie **[!UICONTROL Aufgabe(n) jetzt bearbeiten]**.
 
-* **[!UICONTROL Unconditional stop]**
+* **[!UICONTROL Unbedingter Stopp]**
 
-   Diese Option ändert den Workflow-Status in **[!UICONTROL Finished]**. Diese Aktion sollte nur als letztes Mittel verwendet werden, wenn der normale Stopp-Prozess nach einigen Minuten fehlschlägt. Verwenden Sie den bedingungslosen Stopp nur, wenn Sie sicher sind, dass keine aktiven Workflow-Aufträge ausgeführt werden.
+   Bei Auswahl dieses Befehls wechselt der Workflow-Status zu **[!UICONTROL Abgeschlossen]**. Dieser Befehl darf nur als letztes Mittel eingesetzt werden, wenn das normale Anhalten auch nach mehreren Minuten keine Wirkung zeigt. Verwenden Sie den unbedingten Stopp nur, wenn Sie sicher sind, dass der Workflow keine reellen laufenden Prozesse aufweist.
 
    >[!CAUTION]
    >
    >Die Verwendung dieses Befehls sollte erfahrenen Benutzern vorbehalten bleiben.
 
-* **[!UICONTROL Save as template]**
+* **[!UICONTROL Als Vorlage speichern]**
 
-   Diese Aktion erstellt eine neue Workflow-Vorlage basierend auf dem ausgewählten Workflow. Sie müssen den Ordner angeben, in dem er gespeichert wird (im **[!UICONTROL Folder]** Feld).
+   Dieser Befehl erstellt eine neue, auf dem markierten Workflow basierende Workflow-Vorlage. Geben Sie im Feld **[!UICONTROL Ordner]** den gewünschten Speicherordner an.
 
-   Die **[!UICONTROL Mass update of selected lines]** und **[!UICONTROL Merge selected lines]** Optionen sind allgemeine Plattformoptionen, die in allen **[!UICONTROL Actions]** Menüs verfügbar sind. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/updating-data.md).
+   Die Optionen **[!UICONTROL Ausgewählte Zeilen gebündelt aktualisieren...]** und **[!UICONTROL Ausgewählte Zeilen fusionieren...]** sind allgemeine Optionen der Plattform, die in allen **[!UICONTROL Aktionen]**-Menüs zur Verfügung stehen. Lesen Sie diesbezüglich diesen [Abschnitt](../../platform/using/updating-data.md).
 
 ### Kontextmenü {#right-click-menu}
 
@@ -96,21 +96,21 @@ Durch Markierung und Rechtsklick auf eine oder mehrere Aktivitäten eines Workfl
 
 Im Kontextmenü stehen folgende Optionen zur Verfügung:
 
-**[!UICONTROL Open]**: Mit dieser Option können Sie auf die Aktivitätseigenschaften zugreifen.
+**[!UICONTROL Öffnen...]** - ermöglicht den Zugriff auf die Eigenschaften der Aktivität.
 
-**[!UICONTROL Display logs:]** Mit dieser Option können Sie das Aufgabenausführungsprotokoll für die ausgewählte Aktivität anzeigen. Weitere Informationen finden Sie unter Protokolle [anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Protokoll anzeigen]** - zeigt das Ausführungsprotokoll der Aufgaben der ausgewählten Aktivität an. Weitere Informationen finden Sie unter [Protokoll anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
 
-**[!UICONTROL Execute pending task(s) now:]** Mit dieser Aktion können Sie ausstehende Aufgaben so schnell wie möglich starten.
+**[!UICONTROL Aufgabe(n) jetzt bearbeiten]** - startet so schnell wie möglich alle ausstehenden Aufgaben der Aktivität.
 
-**[!UICONTROL Workflow restart from a task:]** Mit dieser Option können Sie den Workflow mit den zuvor für diese Aktivität gespeicherten Ergebnissen neu starten.
+**[!UICONTROL Workflow ab dieser Aufgabe neu starten]** - startet den Workflow ab der ausgewählten Aufgabe neu und verwendet dabei die durch die vorangehende Ausführung in der Aktivität gespeicherten Ergebnisse.
 
-**[!UICONTROL Cut/Copy/Paste/Delete:]** Mit diesen Optionen können Sie Aktivitäten ausschneiden, kopieren, einfügen und löschen.
+**[!UICONTROL Ausschneiden/Kopieren/Einfügen/Löschen]** - ermöglicht das Ausschneiden, Kopieren, Einfügen oder Löschen der ausgewählten Aktivität(en).
 
-**[!UICONTROL Copy as bitmap:]** Mit dieser Option können Sie einen Screenshot aller Aktivitäten erstellen.
+**[!UICONTROL Als Bild kopieren]** - erstellt einen Screenshot sämtlicher Aktivitäten des Workflows.
 
-**[!UICONTROL Normal execution / Enable but do not execute / Do not enable:]** Diese Optionen stehen auch auf der **[!UICONTROL Advanced]** Registerkarte der Aktivitätseigenschaften zur Verfügung. Sie werden unter [Ausführung](../../workflow/using/advanced-parameters.md#execution)ausführlich beschrieben.
+**[!UICONTROL Normale Ausführung/Aktivieren, aber nicht ausführen/Nicht aktivieren]** - sind auch im Tab **[!UICONTROL Erweitert]** der Aktivitätseigenschaften verfügbar. Sie werden unter [Ausführung](../../workflow/using/advanced-parameters.md#execution) ausführlich beschrieben.
 
-**[!UICONTROL Save / Cancel:]** können Sie die an einem Workflow vorgenommenen Änderungen speichern oder abbrechen.
+**[!UICONTROL Speichern/Abbrechen]** - speichert oder verwirft die im Workflow vorgenommenen Änderungen.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Der Workflow wartet also auf die Entscheidung eines Benutzers, der der Gruppe an
 
 Die Benutzerverwaltung wird in diesem [Abschnitt](../../platform/using/access-management.md) beschrieben.
 
-Weitere Informationen zur Überwachung der Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
+Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
 ## Lebenszyklus der Arbeitsdaten {#data-life-cycle}
 
@@ -166,7 +166,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
    ![](assets/wf-right-click-display.png)
 
-   Weitere Informationen finden Sie unter [Tabellen und Workflow-Schema](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
+   Weitere Informationen finden Sie unter [Arbeitstabellen und Workflow-Schemata](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Ergebnis analysieren...
 
@@ -174,7 +174,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
    Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../reporting/using/using-the-descriptive-analysis-wizard.md).
 
-Die Zieldaten werden bei Ausführung des Workflows bereinigt. Nur der letzte Arbeitstisch ist verfügbar. Sie können den Workflow so konfigurieren, dass alle Arbeitstabellen weiterhin verfügbar sind: aktivieren Sie die **[!UICONTROL Keep the result of interim populations between two executions]** Option in den Workflow-Eigenschaften.
+Die Zielgruppendaten werden im Verlauf der Workflow-Ausführung nach und nach bereinigt. Nur die letzte Arbeitstabelle bleibt zugänglich. Sie haben die Möglichkeit, den Workflow dahingehend zu konfigurieren, dass alle Arbeitstabellen beibehalten werden. Kreuzen Sie hierzu in den Workflow-Eigenschaften die Option **[!UICONTROL Zwischen zwei Ausführungen die ermittelte Population festhalten]** an.
 
 Bei großen Datenmengen sollte diese Option jedoch nicht aktiviert werden.
 
@@ -190,9 +190,9 @@ Auf diese Weise können Sie in einem Versand mithilfe einer Liste gesammelte ode
 %= targetData.FIELD %
 ```
 
-**[!UICONTROL Target extension]** (targetData) Personalisierungselemente vom Typ sind für Targeting-Arbeitsabläufe nicht verfügbar. Das Bereitstellungsziel muss im Workflow integriert und im eingehenden Übergang der Bereitstellung angegeben werden.
+Personalisierungsinformationen vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) stehen nur in Zielgruppen-Workflows zur Verfügung. Dies bedeutet, dass die Versandzielgruppe im Workflow zu bestimmen und in der in den Versand eingehenden Transition zu übermitteln ist.
 
-Wenn Sie Auslieferungsnachweise erstellen möchten, muss das Proof-Ziel basierend auf dem **[!UICONTROL Address substitution]** Modus erstellt werden, damit die Personalisierungsdaten eingegeben werden können. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
+Wenn Sie Testsendungen durchführen möchten, muss die Testversand-Zielgruppe daher im Modus **[!UICONTROL Adressersetzung]** konzipiert werden, damit die Personalisierungsdaten ausgefüllt werden können. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#using-address-substitution-in-proof).
 
 Im folgenden Anwendungsbeispiel sollen Kundeninformationen in einer Liste gesammelt und dann in einer personalisierten E-mail verwendet werden.
 
@@ -218,23 +218,23 @@ Gehen Sie wie folgt vor:
 
    ![](assets/wf-targetdata-sample-2.png)
 
-1. Configure the **[!UICONTROL Enrichment]** type activity to reconcile the collected data with that already in the Adobe Campaign database.
+1. Konfigurieren Sie nun die Aktivität vom Typ **[!UICONTROL Anreicherung]**, um die geladenen Daten mit denen der Datenbank abzustimmen.
 
    Hier dient die Kundennummer als Abstimmschlüssel:
 
    ![](assets/wf-targetdata-sample-3.png)
 
-1. Then configure the **[!UICONTROL Delivery]**: it is created based on a template, and the recipients are specified by the inbound transition.
+1. Konfigurieren Sie dann die **[!UICONTROL Versandaktivität]**. Sie wird basierend auf einer Vorlage erstellt und die Empfänger werden durch die eingehende Transition bestimmt.
 
    ![](assets/wf-targetdata-sample-4.png)
 
    >[!CAUTION]
    >
-   >Nur die im Übergang enthaltenen Daten können zur Personalisierung der Bereitstellung verwendet werden. **Personalisierungsfelder für targetData** -Typen stehen nur für die eingehende Bevölkerung der Aktivität zur Verfügung **[!UICONTROL Delivery]** .
+   >Nur die von der Transition übermittelten Daten können für die Versandpersonalisierung verwendet werden. Personalisierungsfelder vom Typ **targetData** stehen nur für die in die **[!UICONTROL Versandaktivität]** eingehende Population zur Verfügung.
 
 1. Verwenden Sie in der Versandvorlage die im Workflow gesammelten Daten.
 
-   To do this, insert **[!UICONTROL Target extension]** type personalization fields.
+   Fügen Sie hierfür Personalisierungsfelder vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** ein.
 
    ![](assets/wf-targetdata-sample-5.png)
 
@@ -244,7 +244,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/wf-targetdata-sample-6.png)
 
-   **[!UICONTROL Target extension]** (targetData)-Typdaten werden unter Verwendung der gleichen Eigenschaften wie alle Personalisierungsfelder in Auslieferungen eingefügt. Sie können auch im Betreff, in den Linkbeschriftungen oder in den Links selbst verwendet werden.
+   Daten vom Typ **[!UICONTROL Erweiterung des Zieldatensatzes]** (targetData) werden wie andere Personalisierungsfelder auch in Sendungen eingefügt. D. h. sie können u. a. in Nachrichtenbetreffs, Linktiteln oder Links selbst verwendet werden.
 
    Die in der ersten Aktivität des Workflows erhobenen Empfänger erhalten somit die folgende Nachricht:
 
@@ -278,15 +278,15 @@ Benutzer werden durch den Versand einer E-Mail-Benachrichtigung zur Validierung 
 
 Die Benutzerverwaltung wird in diesem [Abschnitt](../../platform/using/access-management.md) beschrieben.
 
-Genehmigungs-E-Mails werden kontinuierlich gesendet. Die standardmäßige Bereitstellungsvorlage lautet **[!UICONTROL notifyAssignee]**: Er wird im **[!UICONTROL Administration > Campaign management > Technical delivery templates]** Ordner gespeichert. Dieses Szenario kann angepasst werden. Es wird außerdem empfohlen, eine Kopie zu erstellen und Vorlagen für jede Aktivität zu ändern.
+E-Mail-Benachrichtigen werden über eine fortlaufende Versandaktion gesteuert. Die Standardvorlage heißt **[!UICONTROL notifyAssignee]** und ist im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich. Es wird empfohlen, die Vorlage nicht zu ändern, sondern sie zu duplizieren und für jede Aktivität eine gesonderte Benachrichtigungsvorlage zu erstellen.
 
-Über diese Vorlage erstellte Lieferungen werden im **[!UICONTROL Administration > Production > Objects created automatically > Technical deliveries > Workflow notifications]** Ordner gespeichert.
+Auf der genannten Vorlage basierende Sendungen werden im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** gespeichert.
 
 ### Validierung in der Clientkonsole {#approval-via-the-console}
 
 In Kampagnen sind die ausstehenden Validierungen im Dashboard ersichtlich.
 
-Bei technischen Arbeitsabläufen können die Aufgaben, die der Benutzer genehmigen kann, von der Baumstruktur im **[!UICONTROL Administration > Production > Objects created automatically > Pending approvals]** Ordner aus aufgerufen werden.
+Bei technischen Workflows können Benutzer auf zu validierenden Aufgaben im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** zugreifen.
 
 ![](assets/validation-node.png)
 
@@ -295,7 +295,7 @@ Bei technischen Arbeitsabläufen können die Aufgaben, die der Benutzer genehmig
 Validierungen können einem einzelnen Benutzer, einer Benutzergruppe oder verschiedenen, durch eine Filterbedingung ermittelten Benutzern zugewiesen werden.
 
 1. Bei einfachen Validierungen wird die Aufgabe als abgeschlossen angesehen, sobald ein Benutzer geantwortet hat. Sollte ein weiterer Benutzer antworten wollen, erhält er eine Benachrichtigung, dass die Aufgabe bereits abgeschlossen ist.
-1. Für mehrere Genehmigungen siehe [Mehrere Genehmigungen](#multiple-approval).
+1. Für mehrfache Validierungen siehe Abschnitt [Mehrfach-Validierungen](#multiple-approval).
 
 Validierungsverantwortliche Benutzergruppen sollten wie Rollen oder Funktionen konzipiert werden und nicht aus mit Namen bezeichneten Personen bestehen. So ist beispielsweise eine Gruppe &quot;Verantwortliche für Kampagnen-Budgets&quot; weitaus pertinenter als &quot;Team Hans Meyer&quot;. Des Weiteren wird empfohlen, dass eine Gruppe jeweils mindestens zwei Personen enthält, um im Falle einer Abwesenheit nicht den ganzen Ablauf zu blockieren.
 
@@ -307,16 +307,16 @@ Ablauffristen werden im zweiten Tab der Eigenschaften von Validierungsaktivität
 
 ![](assets/expiration.png)
 
-To add a new expiration, click **[!UICONTROL Add]**. A transition is added to each of the expirations created. Sie haben folgende Möglichkeiten:
+Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Ablauffrist zu konfigurieren. Für jede Frist wird eine Transition erstellt. Sie haben die Möglichkeit:
 
 * die vorgeschlagenen Parameter direkt in der Liste zu ändern, indem Sie in die entsprechende Zelle klicken,
-* or edit the expression by clicking the **[!UICONTROL Detail...]** button.
+* oder das Ablauffenster zu öffnen, indem Sie auf die Schaltfläche **[!UICONTROL Detail...]** klicken.
 
 >[!NOTE]
 >
 >Es ist nicht notwendig, die Ablauffristen zu ordnen, sie werden automatisch in chronologischer Reihenfolge verarbeitet.
 
-Die **[!UICONTROL Do not terminate the task]** Option lässt die Genehmigung aktiv, wenn die Verzögerung überschritten wird. Dieser Modus ermöglicht die Verwaltung von Erinnerungen während der Aktivierung der Genehmigung: Operatoren können weiterhin reagieren. Diese Option ist standardmäßig deaktiviert, d. h. die Aufgabe wird bei Ablauf als abgeschlossen betrachtet und die Operatoren reagieren nicht mehr.
+Wenn die Option **[!UICONTROL Aufgabe nicht beenden]** angekreuzt wird, bleibt die Validierung auch nach Ablauf der Frist aktiv. Dies erlaubt beispielsweise den Versand von Erinnerungen mit der Möglichkeit, dass die Benutzer auch mit Verspätung antworten können. Standardmäßig ist diese Option nicht aktiviert, d. h. nach Ablauf der Frist wechselt die Aufgabe in den Status &quot;Abgeschlossen&quot; und die Benutzer können nicht mehr antworten.
 
 Vier verschiedene Arten der Berechnung der Ablauffrist stehen zur Auswahl:
 
