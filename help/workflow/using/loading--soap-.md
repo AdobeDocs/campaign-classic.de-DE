@@ -14,7 +14,7 @@ discoiquuid: 94178104-f8ba-4c17-8ff9-928c5d2df1b7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -42,21 +42,21 @@ Gehen Sie wie folgt vor:
 
    ![](assets/soap_load_003.png)
 
-1. Wählen Sie **[!UICONTROL Click here to view and edit analysis results]** die einzelnen identifizierten Spalten aus.
+1. Klicken Sie auf den Link **[!UICONTROL Zur Ansicht und Änderung des Analyseergebnisses hier klicken...]**, um die identifizierten Spalten zu definieren.
 
    ![](assets/soap_load_001.png)
 
-   Wenn Sie das Beispiel aktualisieren möchten, wählen Sie **[!UICONTROL Re-analyze the example]**.
+   Durch Klick auf **[!UICONTROL Beispiel erneut analysieren]**, können Sie das Beispiel aktualisieren.
 
-   Sie können das Format der Spaltendaten auch über den **[!UICONTROL Advanced parameters]** Link personalisieren. For more on formatting imported data, refer to this [section](../../platform/using/importing-data.md#import-wizard).
+   Der Link **[!UICONTROL Erweiterte Parameter...]** erlaubt eine benutzerdefinierte Formatierung der Spaltendaten. Weiterführende Informationen zur Formatierung von importierten Daten finden Sie in diesem [Abschnitt](../../platform/using/importing-data.md#import-wizard).
 
 1. Als Kennung kann die Zeilennummer verwendet werden und/oder Sie können angeben, dass der SOAP-Aufruf mehrere Elemente zurückgibt.
 1. Geben Sie die erforderlichen Scripts in den entsprechenden Tabs ein:
 
-   * **[!UICONTROL Initialization]**: stellt eine SOAP-Verbindung her.
-   * **[!UICONTROL Iteration]**: führt den Aufruf des SOAP-Dienstes aus. Die Rückgabe für diese Funktion muss ein XML-Objekt sein, das mit der Beschreibung des Beispiels oder der WSDL kompatibel ist.
+   * **[!UICONTROL Initialisierung]**: Herstellung der SOAP-Verbindung.
+   * **[!UICONTROL Iteration]**: Aufruf des SOAP-Dienstes. Zurückgegeben werden muss ein XML-Objekt, dass mit der Beispielbeschreibung oder der WSDL kompatibel ist.
 
       Der Code dieses Tabs wird von Adobe Campaign so lange in einer Schleife aufgerufen, bis ein Null-XML-Element zurückgegeben wird.
 
-   * **[!UICONTROL Finalization]**: schließt die Verbindung und/oder befreit andere Ressourcen, die während der Verarbeitung erstellt wurden.
+   * **[!UICONTROL Fertigstellung]**: Unterbrechung der Verbindung und/oder Freigabe der anderen, während des Vorgangs erstellten Ressourcen.
 
