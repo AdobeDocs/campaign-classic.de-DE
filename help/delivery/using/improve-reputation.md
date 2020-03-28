@@ -1,6 +1,6 @@
 ---
-title: Verbessern Ihres Rufs bei der Verwendung von Adobe Campaign Classic
-description: Erfahren Sie mehr über die Verbesserung Ihres Rufs bei der Verwendung von Adobe Campaign Classic.
+title: Ihre Reputation bei der Verwendung von Adobe Campaign Classic verbessern
+description: Erfahren Sie mehr über die Verbesserung Ihrer Reputation bei der Verwendung von Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
 
 ---
@@ -29,7 +29,7 @@ Gehen Sie folgendermaßen vor, um Duplikate zu vermeiden:
 * Gehen Sie bei automatischen Importen sorgfältig vor
 * Sortieren Sie die Profile und speichern Sie sie in unterschiedlichen Ordnern
 
-Quarantine management is presented in [this section](../../delivery/using/understanding-quarantine-management.md).
+Die Quarantäneverwaltung wird in diesem [Abschnitt](../../delivery/using/understanding-quarantine-management.md) beschrieben.
 
 Unten finden Sie Details zur Duplikaten- und Quarantäneverwaltung.
 
@@ -55,6 +55,6 @@ In gewissen Fällen sind Duplikate in unterschiedlichen Partitionen jedoch norma
 
 ## Quarantänen {#quarantines}
 
-Adobe Campaign verwaltet eine Liste von unter Quarantäne gestellten Adressen. Empfänger, deren Adressen unter Quarantäne gestellt wurden, werden bei der Versandanalyse standardmäßig ausgeschlossen: Sie gehören nicht zur Zielgruppe. Eine E-Mail-Adresse kann zum Beispiel unter Quarantäne gestellt werden, weil das Postfach voll ist oder die Adresse nicht existiert. In allen Fällen entspricht die Quarantäne den nachstehend beschriebenen spezifischen Vorschriften.
+Adobe Campaign verwaltet eine Liste von unter Quarantäne gestellten Adressen. Empfänger, deren Adressen unter Quarantäne gestellt wurden, werden bei der Versandanalyse standardmäßig ausgeschlossen: Sie gehören nicht zur Zielgruppe. Eine E-Mail-Adresse kann zum Beispiel unter Quarantäne gestellt werden, weil das Postfach voll ist oder die Adresse nicht existiert. Nachfolgend werden die Regeln, die eine Quarantäne auslösen, näher erläutert.
 
-Quarantine management is presented in [this section](../../delivery/using/understanding-quarantine-management.md).
+Die Quarantäneverwaltung wird in diesem [Abschnitt](../../delivery/using/understanding-quarantine-management.md) beschrieben.
