@@ -14,7 +14,7 @@ discoiquuid: 7f79c0d8-77b0-4cc6-a888-7dbd32d2f3b6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -28,10 +28,10 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >
 >Die im Folgenden beschriebenen Konfigurationsschritte sind von einem **Administrator** durchzuführen. Sie betreffen ausschließlich Design-Umgebungen.
 
-1. Erstellen von Benutzerprofilen. For more on this, refer to [Operator profiles](../../interaction/using/operator-profiles.md).
-1. Erstellen einer Angebotsumgebung durch Targeting-Dimension. Weitere Informationen finden Sie unter [Erstellen einer Angebotsumgebung](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
-1. Erstellen von Typologieregeln für jede Umgebung. Weitere Informationen hierzu finden Sie unter [Erstellen und Verweisen auf eine Angebotsbildungsregel](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
-1. Erstellen von Angebotsbereichen für jede Umgebung und Konfigurieren von Renderfunktionen. For more on this, refer to [Creating offer spaces](../../interaction/using/creating-offer-spaces.md).
+1. Erstellung von Benutzerprofilen. Weitere Informationen hierzu finden Sie im Abschnitt [Benutzerprofile](../../interaction/using/operator-profiles.md).
+1. Erstellung von Angebotsumgebungen anhand von Zielgruppendimensionen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Erstellung von Typologieregeln für einzelne Umgebungen. Weitere Informationen hierzu finden Sie unter [Unterbreitungsregeln erstellen und zuweisen](../../interaction/using/managing-offer-presentation.md#creating-and-referencing-an-offer-presentation-rule).
+1. Erstellung von Angebotsplatzierungen für einzelne Umgebungen und Konfiguration von Rendering-Funktionen. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md).
 
    >[!NOTE]
    >
@@ -39,7 +39,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 1. Konfiguration des Angebotsmoduls für eingehende Interaktionen, um Angebote zu unterbreiten und zu aktualisieren.
 
-   Die verschiedenen Integrationsmodi werden unter [Eingehende Kanäle](../../interaction/using/about-inbound-channels.md)beschrieben.
+   Die verschiedenen Integrationsmodi werden im Abschnitt [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md) beschrieben.
 
    >[!NOTE]
    >
@@ -51,9 +51,9 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >
 >Die im Folgenden beschriebenen Schritte sind von einem **Angebotsverantwortlichen** durchzuführen.
 
-1. Erstellen von Angebotskategorien in Designumgebungen. For more on this, refer to [Creating offer categories](../../interaction/using/creating-offer-categories.md).
-1. Erstellen von Angeboten in Designumgebungen. For more on this, refer to [Creating an offer](../../interaction/using/creating-an-offer.md).
-1. Genehmigung und Veröffentlichung von Angeboten an einem oder mehreren Stellen, um sie in Live-Umgebungen für den Bereitstellungsmanager verfügbar zu machen. Weitere Informationen finden Sie unter [Genehmigen und Aktivieren eines Angebots](../../interaction/using/approving-and-activating-an-offer.md).
+1. Erstellung von Angebotskategorien in Design-Umgebungen. Weitere Informationen hierzu finden Sie unter [Angebotskategorien](../../interaction/using/creating-offer-categories.md).
+1. Erstellung von Angeboten in Design-Umgebungen. Weiterführende Informationen finden Sie unter [Erstellung eines Angebots](../../interaction/using/creating-an-offer.md).
+1. Validierung und Freigabe der Angebote in einer oder mehreren Platzierungen, um sie in den Live-Umgebungen für den Versandverantwortlichen verfügbar zu machen. Weitere Informationen finden Sie unter [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
 
 ## Verwendung des Angebotskatalogs {#using-the-offer-catalog-}
 
@@ -62,5 +62,5 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 >Die im Folgenden beschriebenen Schritte sind von einem **Versandverantwortlichen** durchzuführen. Dieser hat nur auf Angebote in Live-Umgebungen Zugriff.
 
 1. Kampagnen erstellen.
-1. Verweis auf ein Angebot in einer Kampagne oder Kampagnenbereitstellung. For more on this, refer to [About outbound channels](../../interaction/using/about-outbound-channels.md).
+1. Verweis auf ein Angebot in einer Kampagne oder im gebündelten Versand einer Kampagne. Weitere Informationen hierzu finden Sie im Abschnitt [Über ausgehende Kanäle](../../interaction/using/about-outbound-channels.md).
 
