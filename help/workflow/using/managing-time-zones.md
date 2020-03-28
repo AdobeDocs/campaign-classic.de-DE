@@ -14,7 +14,7 @@ discoiquuid: 8bcbcd23-9251-412a-ae72-11f15db74112
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -30,9 +30,9 @@ In einem Workflow besteht nicht nur die Möglichkeit, die Ausführung einzelner 
 
 ## Ausführung planen {#execution-scheduling}
 
-Sie können die Ausführung von Aufgaben mit dem Zeitplan planen (siehe [Zeitplan](../../workflow/using/scheduler.md)). Sie können auch die Planungsoptionen verwenden, die in den Aktivitäten verfügbar sind, die diese Funktion bieten. Diese Aktivitäten bieten eine **[!UICONTROL Schedule]** Registerkarte: **[!UICONTROL File collector]**, **[!UICONTROL File transfer]**, **[!UICONTROL Web download]**, **[!UICONTROL Email reception]** &amp; **[!UICONTROL SMS]**, etc.
+Sie können die Ausführung von Aufgaben mit der Planung planen (siehe [Planung](../../workflow/using/scheduler.md)). Alternativ können Sie die Planungsoptionen verwenden, die in den Aktivitäten verfügbar sind, die diese Funktion bieten. Diese Aktivitäten bieten einen Tab namens **[!UICONTROL Planung]**: **[!UICONTROL Datei-Wächter]**, **[!UICONTROL Dateiversand]**, **[!UICONTROL HTTP-Übertragung]**, **[!UICONTROL E-Mail-Empfang]** und **[!UICONTROL SMS]** usw.
 
-Für alle geplanten Aufgaben, d. h. alle Aktivitäten mit Planungsoptionen, können Sie die anzuwendende Zeitzone auswählen. Die Zeitzone wird über die **[!UICONTROL Advanced]** Registerkarte der betreffenden Aktivität ausgewählt:
+Öffnen Sie zur Zeitzonenauswahl die gewünschte Aktivität und geben Sie im entsprechenden Feld des **[!UICONTROL Erweitert]**-Tabs die Zeitzone an:
 
 ![](assets/wf-timezone-in-a-box.png)
 
@@ -54,8 +54,8 @@ Mögliche Werte:
 
    Verwendet die ausgewählte Zeitzone.
 
-If the **[!UICONTROL By default]** value is selected, the time zone of the workflow is applied, or, otherwise, that of the application server.
+Bei Auswahl der Option **[!UICONTROL Standard]** wird die Zeitzone des Workflows oder, wenn nicht vorhanden, des Anwendungsservers verwendet.
 
 ## Aktivitäten eine Zeitzone zuweisen {#linking-a-time-zone-to-an-activity}
 
-Auf der **[!UICONTROL Advanced]** Registerkarte der Workflow-Aktivitäten können Sie die Zeitzone auswählen. Obwohl die Zeitzone der Workflows meistens ausreicht, kann es notwendig sein, sie für eine bestimmte Aktivität wie den Datenimport immer wieder zu überladen, um Daten mit der richtigen Zeitzone zu verknüpfen.
+Im **[!UICONTROL Erweitert]**-Tab der Workflow-Aktivitäten besteht die Möglichkeit, die Zeitzone anzugeben. I. d. R. reicht es aus, dem gesamten Workflow eine Zeitzone zuzuweisen. Punktuell kann es jedoch interessant sein, sie für eine bestimmte Aktivität zu überschreiben, beispielsweise beim Datenimport, um den enthaltenen Datumsangaben die entsprechende Zeitzone zuzuordnen.
