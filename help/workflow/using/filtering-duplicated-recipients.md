@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -24,8 +24,8 @@ In diesem Beispiel werden wir Empfänger filtern, die doppelt oder öfter in ein
 
 Gehen Sie wie folgt vor:
 
-1. Drag and drop a **[!UICONTROL Query]** activity in a workflow and open the activity.
-1. Klicken Sie auf **[!UICONTROL Edit query]** und legen Sie die Ziel- und Filterdimensionen auf **[!UICONTROL Recipients]**.
+1. Ziehen Sie eine **[!UICONTROL Abfrage]** in den Workflow-Arbeitsbereich und öffnen Sie sie.
+1. Wählen Sie **[!UICONTROL Abfrage bearbeiten]** aus und wählen Sie für die Zielgruppen- und Filterdimension die Option **[!UICONTROL Empfänger]** aus.
 
    ![](assets/query_recipients_1.png)
 
@@ -33,12 +33,12 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_recipients_2.png)
 
-1. Definieren Sie die folgende Filterbedingung, um Ihre Bereitstellung zielgerichtet durchzuführen. Wählen Sie **[!UICONTROL Internal name]** in der Spalte &quot;Ausdruck&quot;und in der Spalte &quot;Operator&quot; **[!UICONTROL equal to]** .
+1. Definieren Sie die folgende Filterbedingung für Ihren Versand. Wählen Sie in der Ausdrucksspalte die Option **[!UICONTROL Interner Name]** und in der Operator-Spalte die Option **[!UICONTROL gleich]**.
 1. Fügen Sie in der Wertspalte den internen Namen des Versands ein.
 
    ![](assets/query_recipients_3.png)
 
-1. With an **[!UICONTROL AND]** operator, repeat the same operations to target other deliveries.
+1. Wiederholen Sie diesen Vorgang mit einem **[!UICONTROL UND]**-Operator für andere Sendungen.
 
    ![](assets/query_recipients_4.png)
 
