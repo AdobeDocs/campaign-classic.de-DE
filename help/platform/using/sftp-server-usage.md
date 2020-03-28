@@ -14,7 +14,7 @@ discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1e8492d8e91d679ac13da875974e27d0f7791dc3
 
 ---
@@ -28,13 +28,13 @@ Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien au
 
 Wenn der Speicherplatz nicht korrekt verwendet oder gewartet wird, kann der verfügbare physische Platz schnell aufgebraucht sein und dazu führen, dass Dateien beim Hochladen abgeschnitten werden. Wenn der Speicherplatz aufgebraucht ist, kann eine automatische Bereinigung ausgelöst werden, bei der die ältesten Dateien aus dem SFTP-Speicher gelöscht werden.
 
-Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten aufgeführten Best Practices zu befolgen.
+Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Practices zu befolgen.
 
 >[!NOTE]
 >
->Wenn Ihre Instanz auf AWS gehostet wird, können Sie den Speicherplatz des SFTP-Servers mit dem [Control Panel](https://docs.adobe.com/content/help/en/control-panel/using/sftp-management/sftp-storage-management.html) von Campaign Classic überwachen.
+>Wenn Ihre Instanz auf AWS gehostet wird, können Sie den Speicherplatz des SFTP-Servers mit dem [Control Panel](https://docs.adobe.com/content/help/de-DE/control-panel/using/sftp-management/sftp-storage-management.html) von Campaign Classic überwachen.
 >
->Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten in [diesem Abschnitt](https://docs.adobe.com/content/help/en/control-panel/using/faq.html#ims-org-id) .
+>Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten in [diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/control-panel/using/faq.html#ims-org-id) .
 
 * Die Größe des Servers variiert je nach Ihrer Lizenz. Achten Sie in jedem Fall darauf, dass die Datengröße möglichst gering ist und bewahren Sie Daten nur so lange auf, wie dies erforderlich ist (15 Tage ist das obere Zeitlimit).
 * Verwenden Sie eine schlüsselbasierte Authentifizierung anstelle einer passwortbasierten Authentifizierung, um das Ablaufen von Passwörtern zu vermeiden (Passwörter haben eine Gültigkeitsdauer von 90 Tagen). Außerdem ermöglicht die schlüsselbasierte Authentifizierung die Erstellung mehrerer Schlüssel, wenn beispielsweise mehrere Entitäten verwaltet werden. Im Gegensatz dazu erfordert die passwortbasierte Authentifizierung, dass das Passwort mit allen verwalteten Entitäten geteilt wird.
@@ -57,7 +57,7 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten aufgeführten Best P
 
 Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportteam bereitstellen müssen, wenn Sie im Fall eines Verbindungsproblems mit den von Adobe gehosteten SFTP-Servern ein [Supportticket](https://support.neolane.net) lösen.
 
-1. Überprüfen Sie, ob Ihre Instanz ausgeführt wird. Öffnen Sie dazu den Browser und führen Sie dann einen **[!UICONTROL GET]** Aufruf an den Instanzendpunkt **[!UICONTROL /r/test]** durch:
+1. Überprüfen Sie, ob Ihre Instanz ausgeführt wird. Öffnen Sie dazu Ihren Browser und machen Sie einen **[!UICONTROL GET]**-Aufruf am **[!UICONTROL /r/test]**-Endpunkt der Instanz:
 
    ```
    https://instanceUrl/r/test
@@ -90,7 +90,7 @@ Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportte
    Wenn der Port nicht geöffnet ist, stellen Sie sicher, dass Sie ausgehende Verbindungen auf Ihrer Seite öffnen und versuchen Sie es dann erneut. Wenn Sie immer noch Verbindungsprobleme haben, melden Sie das Ergebnis des Befehls dem Adobe-Supportteam.
 
 1. Überprüfen Sie, ob die öffentliche IP-Adresse, von der Sie versuchen, die SFTP-Verbindung herzustellen, auch tatsächlich diejenige ist, die Sie dem Adobe-Supportteam zur Aufnahme in die Whitelist bereitgestellt haben.
-1. Wenn Sie eine kennwortbasierte Authentifizierung verwenden, ist Ihr Kennwort möglicherweise abgelaufen (die Gültigkeitsdauer der Kennwörter beträgt 90 Tage). Daher empfehlen wir dringend die Verwendung einer schlüsselbasierten Authentifizierung (siehe Best Practices zum [SFTP-Server](#sftp-server-best-practices)).
+1. Wenn Sie Passwort-basierte Authentifizierung verwenden, ist Ihr Passwort möglicherweise abgelaufen (die Gültigkeitsdauer von Passwörtern beträgt 90 Tage). Daher empfehlen wir dringend die Verwendung einer schlüsselbasierten Authentifizierung (siehe [Best Practices für die Nutzung von SFTP-Servern](#sftp-server-best-practices)).
 1. Wenn Sie eine schlüsselbasierte Authentifizierung verwenden, überprüfen Sie, ob der von Ihnen verwendete Schlüssel mit dem übereinstimmt, den Sie dem Adobe-Supportteam zur Konfiguration der Instanz bereitgestellt haben.
 1. Wenn Sie FileZilla oder ein ähnliches FTP-Tool verwenden, geben Sie im Supportticket die Verbindungsprotokoll-Details an.
 
