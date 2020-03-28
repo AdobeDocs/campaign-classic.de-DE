@@ -14,7 +14,7 @@ discoiquuid: 669635bd-868b-4550-b075-6294ccb71297
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Vorlage zum Formular-Rendering auswählen {#selecting-the-form-rendering-template}
 
-Mit den Formulareinstellungen können Sie die Vorlage auswählen, die zum Generieren der Seiten verwendet wird. Klicken Sie zum Zugreifen auf die **[!UICONTROL Settings]** Schaltfläche in der Symbolleiste mit den Formulardetails und wählen Sie die **[!UICONTROL Rendering]** Registerkarte aus. Standardmäßig sind mehrere Vorlagen (Stylesheets) verfügbar.
+In den Formulareinstellungen können Sie eine Vorlage zum Erstellen der Seiten auswählen. Wählen Sie dazu in der Formular-Detail-Symbolleiste die Schaltfläche **[!UICONTROL Einstellungen]** und danach den Tab **[!UICONTROL Rendering]** aus. Standardmäßig stehen mehrere Vorlagen (Stylesheets) zur Verfügung.
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 
@@ -34,7 +34,7 @@ Mit der Zoom-Funktion können Sie die ausgewählte Vorlage bearbeiten.
 
 ![](assets/s_ncs_admin_survey_render_edit.png)
 
-Sie können diese Vorlagen ändern oder überschreiben. Klicken Sie dazu auf den **[!UICONTROL Page layout...]** Link und personalisieren Sie die Informationen.
+Sie können diese Vorlagen ändern oder überschreiben. Wählen Sie dazu den Link **[!UICONTROL Seitenlayout...]** aus und passen Sie die Einstellungen an.
 
 ![](assets/s_ncs_admin_survey_render_edit_param.png)
 
@@ -47,13 +47,13 @@ Mit dem Tab **[!UICONTROL Headers/Footers]** können Sie die Informationen ände
 
 ![](assets/s_ncs_admin_survey_render_edit_header.png)
 
-Jede Zeile des **[!UICONTROL Page headers]** **[!UICONTROL Page footers]** Abschnitts und des Abschnitts entspricht einer Zeile auf der HTML-Seite. Klicken Sie auf **[!UICONTROL Add]** , um eine neue Zeile zu erstellen.
+Jede Zeile des Bereichs **[!UICONTROL Seitenkopf]** und **[!UICONTROL Seitenfuß]** entspricht einer Zeile auf der HTML-Seite. Wählen Sie **[!UICONTROL Hinzufügen]**, um eine neue Zeile zu erstellen.
 
 Wählen Sie eine vorhandene Zeile und danach die Schaltfläche **[!UICONTROL Detail]** aus, um sie zu bearbeiten.
 
 ![](assets/s_ncs_admin_survey_render_edit_header_detail.png)
 
-Sie können den Inhalt der Zeile ändern, Ränder hinzufügen und die Schriftattribute über die entsprechenden Registerkarten ändern. Klicken Sie auf **[!UICONTROL OK]** , um diese Änderungen zu bestätigen.
+Verwenden Sie die jeweiligen Tabs, um den Inhalt der Zeile zu ändern, Rahmen hinzuzufügen und die Schriftart-Attribute anzupassen. Bestätigen Sie diese Änderungen mit **[!UICONTROL OK]**.
 
 Mit den Feldern **[!UICONTROL Position]** können Sie die Position der Elemente im Seitenkopf und -fuß definieren.
 
@@ -61,8 +61,8 @@ Mit den Feldern **[!UICONTROL Position]** können Sie die Position der Elemente 
 
 >[!NOTE]
 >
->Rendervorlagen werden im **[!UICONTROL Administration > Configuration > Form rendering]** Knoten gespeichert.\
->Weitere Informationen finden Sie unter [Anpassen der Formularwiedergabe.](#customizing-form-rendering)
+>Rendering-Vorlagen befinden sich im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**.\
+>Weitere Informationen hierzu finden Sie unter [Formular-Rendering anpassen](#customizing-form-rendering).
 
 ## Formular-Rendering anpassen {#customizing-form-rendering}
 
@@ -70,20 +70,20 @@ Mit den Feldern **[!UICONTROL Position]** können Sie die Position der Elemente 
 
 Sie können das Stylesheet für jedes Element des Formulars überschreiben (Eingabefelder, Bilder, Radiobuttons etc.).
 
-To do this, use the **[!UICONTROL Advanced]** tab.
+Verwenden Sie dazu den Tab **[!UICONTROL Erweitert]**.
 
 ![](assets/s_ncs_admin_survey_advanced_tab.png)
 
 Damit können Sie die folgenden Eigenschaften definieren:
 
-* **[!UICONTROL Label position]**: siehe [Festlegung der Position der Beschriftungen](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
-* **[!UICONTROL Label format]**: Wortumbruch oder Kein Wortumbruch,
-* **[!UICONTROL Number of cells]** : siehe [Positionieren der Felder auf der Seite](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
-* **[!UICONTROL Horizontal alignment]** (Links, Rechts, Zentriert) und **[!UICONTROL Vertical alignment]** (Hoch, Niedrig, Mittel),
-* **[!UICONTROL Width]** des Gebiets: dies kann als Prozentsatz oder in ems, points oder pixel (Standardwert) ausgedrückt werden,
-* Maximum **[!UICONTROL Length]**: Maximum number of characters allowed (for Text, Number and Password type controls),
-* **[!UICONTROL Lines]**: Anzahl der Zeilen für eine **[!UICONTROL Multi-line text]** Typzone,
-* **[!UICONTROL Style inline]**: ermöglicht Ihnen, das CSS-Stylesheet mit zusätzlichen Einstellungen zu überladen. **Diese werden durch** die Zeichen wie im folgenden Beispiel gezeigt:
+* **[!UICONTROL Titelposition]**: siehe [Die Position von Titeln definieren](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Titelformat]**: mit oder ohne Zeilenumbruch,
+* **[!UICONTROL Zellenanzahl]** : siehe [Die Felder auf der Seite positionieren](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Horizontale Ausrichtung]** (links, rechts, zentriert) und **[!UICONTROL vertikale Ausrichtung]** (hoch, niedrig, Mitte),
+* **[!UICONTROL Breite]** des Bereichs: Diese kann als Prozentsatz oder in em, Punkten oder Pixeln (Standardwert) ausgedrückt werden,
+* Maximale **[!UICONTROL Länge]**: Maximale Anzahl erlaubter Zeichen (für Steuerelemente vom Typ Text, Zahl und Passwort),
+* **[!UICONTROL Zeilen]**: Anzahl der Zeilen für einen Bereich vom Typ **[!UICONTROL Mehrzeiliger Text]**,
+* **[!UICONTROL Inline-Stil]**: ermöglicht das Überschreiben des CSS-Stylesheets mit zusätzlichen Einstellungen. Diese sind wie unten gezeigt durch das Zeichen **;** voneinander getrennt:
 
    ![](assets/s_ncs_admin_survey_advanced_tab_inline.png)
 
@@ -91,13 +91,13 @@ Damit können Sie die folgenden Eigenschaften definieren:
 
 Die Felder sind in einer Baumstruktur angeordnet, deren Wurzel denselben Namen hat wie die Seite. Wählen Sie die Wurzel aus, um den Namen zu ändern.
 
-Der Titel des Fensters muss auf der **[!UICONTROL Page]** Registerkarte des Fensters der Formulareigenschaft eingegeben werden. Sie können auch einen bestimmten Inhalt zur Kopf- und Fußzeile der Seite hinzufügen (diese Informationen werden auf jeder Seite angezeigt). Dieser Inhalt wird wie unten gezeigt in die entsprechenden Abschnitte der **[!UICONTROL Texts]** Registerkarte eingefügt:
+Geben Sie im Formulareigenschaften-Fenster im Tab **[!UICONTROL Seite]** den Titel des Fensters ein. Sie können zum Seiten-Header und Footer einen vordefinierten Inhalt hinzufügen (diese Information wird dann auf jeder Seite gezeigt). Dieser Inhalt wird wie unten gezeigt in den jeweiligen Bereich des Tabs **[!UICONTROL Texte]** eingegeben:
 
 ![](assets/s_ncs_admin_survey_titles_config.png)
 
 ### Elemente zum HTML-Header hinzufügen {#adding-elements-to-html-header}
 
-Sie können zusätzliche Elemente eingeben, die in die HTML-Kopfzeile einer Formularseite eingefügt werden sollen. Geben Sie dazu die Elemente auf der **[!UICONTROL Header]** Registerkarte der entsprechenden Seite ein.
+Sie können zusätzliche Elemente zum HTML-Header einer Formularseite hinzufügen. Geben Sie dazu die Elemente auf der entsprechenden Seite im Tab **[!UICONTROL Header]** ein.
 
 Damit können Sie beispielsweise ein Symbol referenzieren, das in der Symbolleiste der Seite angezeigt werden soll.
 
@@ -105,7 +105,7 @@ Damit können Sie beispielsweise ein Symbol referenzieren, das in der Symbolleis
 
 ## Kontrolleinstellungen definieren {#defining-control-settings}
 
-Wenn der Benutzer das Formular ausfüllt, wird in bestimmten Feldern je nach Format oder Konfiguration automatisch eine Überprüfung durchgeführt. Auf diese Weise können Sie bestimmte Felder obligatorisch machen (siehe [Definieren von Pflichtfeldern](#defining-mandatory-fields)) oder das Format der eingegebenen Daten überprüfen (siehe Datenformat [überprüfen](#checking-data-format)). Prüfungen werden während der Seitengenehmigung durchgeführt (durch Klicken auf einen Link oder eine Schaltfläche, die einen Ausgabenübergang ermöglicht).
+Wenn der Benutzer das Formular ausfüllt, wird in bestimmten Feldern je nach Format oder Konfiguration automatisch eine Überprüfung durchgeführt. Auf diese Weise können Sie bestimmte Felder obligatorisch machen (siehe [Pflichtfelder definieren](#defining-mandatory-fields)) oder das Format der eingegebenen Daten überprüfen (siehe [Datenformat überprüfen](#checking-data-format)). Prüfungen werden während der Seitengenehmigung durchgeführt (durch Klicken auf einen Link oder eine Schaltfläche, der/die eine ausgehende Transition ermöglicht).
 
 ### Pflichtfelder definieren {#defining-mandatory-fields}
 
@@ -117,7 +117,7 @@ Sollte ein Benutzer diese Seite validieren, ohne das Feld ausgefüllt zu haben, 
 
 ![](assets/s_ncs_admin_survey_required_default_msg.png)
 
-Sie können diese Nachricht personalisieren, indem Sie auf den **[!UICONTROL Personalize this message]** Link klicken.
+Sie können diese Mitteilung anpassen, indem Sie den Link **[!UICONTROL Nachricht personalisieren, die bei geschlossenem Formular angezeigt wird...]** auswählen.
 
 ![](assets/s_ncs_admin_survey_required_custom_msg.png)
 
@@ -131,7 +131,7 @@ Für Formularprüfungen, bei denen die Werte in einem vorhandenen Datenbankfeld 
 
 Für Formularprüfungen, bei denen die Werte in einer Variablen gespeichert sind, hängen die Validierungsregeln vom Format der Variablen ab.
 
-For example, if you create a **[!UICONTROL Number]** check to store the client number, as shown below:
+Sie können beispielsweise die Prüfung einer **[!UICONTROL Zahl]** einrichten, um wie unten gezeigt die Kundennummer zu speichern:
 
 ![](assets/s_ncs_admin_survey_choose_format.png)
 
@@ -141,7 +141,7 @@ Der Benutzer muss in diesem Fall eine ganze Zahl im Formularfeld eingeben.
 
 Sie können festlegen, dass die Felder auf einer Seite auf der Basis der Werte angezeigt werden, die der Benutzer auswählt. Dies gilt für ein einziges Feld oder eine Feldergruppe (wenn die Felder in einem Container zusammengefasst sind).
 
-For each element of the page, the **[!UICONTROL Visibility]** section lets you define the display conditions.
+Sie können für jedes Element der Seite die Anzeigebedingungen im Bereich **[!UICONTROL Sichtbarkeit]** definieren.
 
 ![](assets/s_ncs_admin_survey_condition_edit.png)
 
@@ -155,15 +155,15 @@ Im Feldauswahl-Fenster können Sie aus folgenden Daten auswählen:
 
    Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
-* The **[!UICONTROL Recipients]** sub-tree contains the input fields inserted into the form and stored in the database.
+* Im Unterbaum **[!UICONTROL Empfänger]** befinden sich die Eingabefelder, die in das Formular eingefügt wurden und in der Datenbank gespeichert sind.
 
    Weitere Informationen finden Sie unter [Speichern von Daten in der Datenbank](../../web/using/web-forms-answers.md#storing-data-in-the-database).
 
-* Die **[!UICONTROL Variables]** Unterstruktur enthält die verfügbaren Variablen für dieses Formular. Weitere Informationen finden Sie unter Daten in einer lokalen Variablen [speichern](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+* Die Unterstruktur **[!UICONTROL Variablen]** enthält die verfügbaren Variablen für dieses Formular. Weitere Informationen finden Sie unter [Daten in einer lokalen Variablen speichern](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
 
-Weitere Informationen finden Sie im Verwendungsfall unter: Die [Anzeige verschiedener Optionen hängt von den ausgewählten Werten](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values)ab.
+Weitere Informationen hierzu finden Sie in diesem Anwendungsbeispiel: [Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-Sie können die Anzeige von Formularseiten auch mithilfe des **[!UICONTROL Test]** Objekts festlegen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+Sie können auch mit dem Objekt **[!UICONTROL Test]** eine Bedingung für die Anzeige von Formularseiten festlegen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Elemente aus einem vorhandenen Formular importieren {#importing-elements-from-an-existing-form}
 
@@ -171,7 +171,7 @@ Sie haben die Möglichkeit, Felder oder Container aus anderen Webformularen zu i
 
 Gehen Sie wie folgt vor, um ein Element in ein Formular zu importieren:
 
-1. Edit the page which you want to insert one or more elements into, then click **[!UICONTROL Import an existing block]** in the toolbar.
+1. Bearbeiten Sie die Seite, in die Sie ein oder mehrere Elemente einfügen möchten und wählen Sie dann in der Symbolleiste **[!UICONTROL Existierenden Baustein importieren]** aus.
 
    ![](assets/s_ncs_admin_survey_import_block.png)
 
@@ -181,9 +181,9 @@ Gehen Sie wie folgt vor, um ein Element in ein Formular zu importieren:
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Edit link]** icon to the right of the source form name lets you view the selected Web form.
+   >Über das Symbol **[!UICONTROL Link bearbeiten]** rechts neben dem Quell-Formularnamen können Sie das ausgewählte Webformular anzeigen.
 
-1. Click **[!UICONTROL Ok]** to confirm insertion.
+1. Wählen Sie **[!UICONTROL OK]** aus, um das Einfügen des Elements zu bestätigen.
 
    ![](assets/s_ncs_admin_survey_import_block_rendering.png)
 
