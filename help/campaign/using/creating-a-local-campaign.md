@@ -14,7 +14,7 @@ discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # Lokale Kampagnen{#creating-a-local-campaign}
 
-Eine lokale Kampagne ist eine Instanz, die aus einer Vorlage erstellt wurde, auf die in der Liste der **[!UICONTROL campaign packages]** mit einem **bestimmten Ausführungsplan** verwiesen wird. Ziel ist es, einen lokalen Kommunikationsbedarf mithilfe einer von der zentralen Stelle eingerichteten und konfigurierten Kampagnenvorlage zu decken. Die wichtigsten Schritte zur Durchführung einer lokalen Operation sind folgende:
+Lokale Kampagnen sind Kampagneninstanzen, die bei jeder Bestellung basierend auf einem **[!UICONTROL Kampagnenkit]** erstellt werden. Sie verfügen jeweils über eine **spezifische Ausführungsplanung**. Ziel ist es, lokalen Kommunikationsbedürfnissen entsprechen zu können, hierbei jedoch zentral festgelegten Standards zu folgen. Letzteres wird durch die von der Zentralstelle konfigurierten Kampagnenvorlagen sichergestellt.
 
 **Zentralstellenseitig**
 
@@ -38,9 +38,9 @@ Eine lokale Kampagne ist eine Instanz, die aus einer Vorlage erstellt wurde, auf
 
 ## Vorlage für eine lokale Kampagne erstellen {#creating-a-local-campaign-template}
 
-To create a campaign package, you must first create the **campaign template** via the **[!UICONTROL Resources > Templates]** node.
+Um ein Kamapgnenkit zu erstellen, muss zunächst eine **Kamapgnenvorlage** im Navigationsknoten **[!UICONTROL Ressourcen > Vorlagen]** erstellt werden.
 
-To create a new local template, duplicate the default **[!UICONTROL Local campaign (opLocal)]** template.
+Um eine neue Vorlage für eine lokale Kampagne zu erstellen, duplizieren Sie die Standard-Vorlage **[!UICONTROL Lokale Kampagne (opLocal)]**.
 
 ![](assets/mkg_dist_local_op_creation.png)
 
@@ -48,7 +48,7 @@ Benennen Sie die Kampagnenvorlage und erfassen Sie die verfügbaren Felder.
 
 ![](assets/mkg_dist_local_op_creation1.png)
 
-Klicken Sie im Kampagnenfenster auf die **[!UICONTROL Edit]** Registerkarte und dann auf den **[!UICONTROL Advanced campaign settings...]** Link.
+Klicken Sie im Kampagnenfenster auf den Tab **[!UICONTROL Bearbeiten]** und anschließend auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**.
 
 ![](assets/mkt_distr_4.png)
 
@@ -64,15 +64,15 @@ Wählen Sie den Webschnittstellentyp aus, der für die auf dieser Vorlage basier
 
 Es stehen vier unterschiedliche Webschnittstellentypen zur Verfügung:
 
-* **[!UICONTROL By brief]** : muss eine Beschreibung der Kampagnenkonfigurationen bereitgestellt werden. Nachdem die Bestellung genehmigt wurde, konfiguriert und führt die zentrale Entität die Kampagne als Ganzes aus.
+* **[!UICONTROL Briefing]**: Die Lokalstelle beschreibt die gewünschten Kampagnenparameter bei der Bestellung. Sobald die Bestellung validiert wurde, konfiguriert die Zentralstelle die Kampagne und führt sie aus.
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL By form]** : lokale Entitäten haben Zugriff auf ein Webformular, in dem sie je nach verwendeter Vorlage den Inhalt, das Ziel, seine maximale Größe sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten können. Eine lokale Entität kann das Ziel bewerten und Inhalte aus diesem Webformular in der Vorschau anzeigen.
+* **[!UICONTROL Standardformular]**: Die Lokalstelle hat Zugriff auf ein Webformular, in dem sie beispielsweise Inhalt, Zielgruppe, maximale Zielgruppengröße sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Zudem hat die Lokalstelle über dieses Webformular die Möglichkeit, die Zielgruppe zu evaluieren und den Inhalt in einer Vorschau zu überprüfen.
 
    ![](assets/mkt_distr_8.png)
 
-   The form offered is specified in a Web application that must be selected in a drop-down list from the **[!UICONTROL Web Interface]** field in the template&#39;s **[!UICONTROL Advanced campaign settings...]** link. Siehe [Erstellen einer lokalen Kampagne (nach Formular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+   Das angebotene Formular wird in einer Webanwendung definiert, die in der Vorlage unter dem Link **[!UICONTROL Erweiterte Kampagnenparameter...]** in der Dropdown-Liste des Felds **[!UICONTROL Webschnittstelle]** ausgewählt werden muss. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
@@ -80,27 +80,27 @@ Es stehen vier unterschiedliche Webschnittstellentypen zur Verfügung:
 
    ![](assets/mkt_distr_7.png)
 
-* **[!UICONTROL By external form]** : lokale Entität hat Zugriff auf Kampagnenparameter in ihrem Extranet (nicht Adobe Campaign). Diese Parameter sind identisch mit denen einer **lokalen Kampagne (nach Formular)**.
-* **[!UICONTROL Pre-set]** : eine lokale Entität bestellt eine Kampagne mit dem Standardformular, ohne es zu lokalisieren.
+* **[!UICONTROL Externes Formular]**: Die Lokalstelle hat Zugriff auf die Parameter der Kampagne über ihr Extranet (nicht über Adobe Campaign). Die Parameter sind identisch mit denen einer lokalen Kampagne mit Webschnittstellentyp **Standardformular**.
+* **[!UICONTROL Einfach]**: Die Lokalstelle bestellt die Kampagne über das Standardformular, ohne sie zu lokalisieren.
 
    ![](assets/mkt_distr_5.png)
 
 ### Standardwerte {#default-values}
 
-Wählen Sie die **[!UICONTROL Default values]** von lokalen Entitäten auszufüllen. Beispiel:
+Wählen Sie die **[!UICONTROL Standardwerte]** aus, die von den Lokalstellen angegeben werden sollen. Zum Beispiel:
 
 * Kontakt- und Extraktionsdatum,
 * Zielgruppeneigenschaften (Altersgruppe etc.).
 
 ![](assets/mkg_dist_local_op_creation2.png)
 
-Füllen Sie die Felder **[!UICONTROL Parent marketing program]** und **[!UICONTROL Charge]** aus.
+Wählen Sie **[!UICONTROL Zugehörigkeitsprogamm]** und **[!UICONTROL Budget]** (Anrechnung) aus.
 
 ![](assets/mkg_dist_local_op_creation3.png)
 
 ### Validierungen {#approvals}
 
-Über den **[!UICONTROL Advanced parameters for campaign entry]** Link können Sie die maximale Anzahl von Prüfern angeben.
+Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter...]** kann die maximale Anzahl an Validierungsverantwortlichen festgelegt werden.
 
 ![](assets/s_advuser_mkg_dist_add_valid_op1.png)
 
@@ -112,7 +112,7 @@ Wenn keine Angabe validierungsverantwortlicher Benutzer für die Kampagnen gewü
 
 ### Dokumente {#documents}
 
-Sie können lokalen Entitätsbetreibern gestatten, Dokumente (Textdateien, Tabellen, Bilder, Kampagnenbeschreibungen usw.) beim Erstellen der Bestellung mit der lokalen Kampagne zu verknüpfen. Über den **[!UICONTROL Advanced parameters for campaign entry...]** Link können Sie die Anzahl der Dokumente einschränken. Geben Sie dazu einfach die maximal zulässige Zahl in das **[!UICONTROL Number of documents]** Feld ein.
+Sie können den Benutzern der Lokalstelle ermöglichen, der lokalen Kampagne bei der Bestellung Dokumente hinzuzufügen (Textdateien, Tabellen, Grafiken, Beschreibung der Kampagne etc.). Über den Link **[!UICONTROL Erweiterte Kampagnenerfassungs-Parameter...]** kann im Feld **[!UICONTROL Anzahl Dokumente]** die maximale Anzahl an Dokumenten festgelegt werden.
 
 ![](assets/s_advuser_mkg_dist_local_docs.png)
 
@@ -120,31 +120,31 @@ Bei der Bestellung eines Kampagnenkits bietet das Eingabeformular die Möglichke
 
 ![](assets/s_advuser_mkg_dist_add_docs.png)
 
-If you do not wish to display a document upload field, enter **[!UICONTROL 0]** in the **[!UICONTROL Number of documents]** field.
+Wenn Sie das Hochladen von Dokumenten nicht zulassen möchten, geben Sie im Feld **[!UICONTROL Anzahl Dokumente]** den Wert **[!UICONTROL 0]** an.
 
 >[!NOTE]
 >
->Das **[!UICONTROL Advanced parameters for campaign entry]** kann durch eine Überprüfung deaktiviert werden **[!UICONTROL Do not display the page used to enter the campaign parameters]**.
+>Der Zugriff auf die **[!UICONTROL Erweiterten Kampagnenerfassungs-Parameter]** kann per Klick auf **[!UICONTROL Kampagnenparameter-Formular ausblenden]** deaktiviert werden.
 
 ![](assets/s_advuser_mkg_dist_disable_op_parameters.png)
 
 ### Workflow {#workflow}
 
-Erstellen Sie auf der **[!UICONTROL Targeting and workflows]** Registerkarte den Kampagnen-Workflow, der die im Abschnitt **[!UICONTROL Default values]** angegebenen Elemente erfasst **[!UICONTROL Advanced campaign settings...]** und die Auslieferungen erstellt.
+Erstellen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** der Kampagnenvorlage den Workflow, der die zuvor in den **[!UICONTROL Erweiterten Kampagnenparametern]** festgelegten **[!UICONTROL Standardwerte]** abruft und Sendungen erstellt.
 
 ![](assets/mkg_dist_local_op_creation4b.png)
 
-Double click the **[!UICONTROL Query]** activity to configure it according to the specified **[!UICONTROL Default values]**.
+Doppelklicken Sie auf die Aktivität **[!UICONTROL Abfrage]**, um diese entsprechend der festgelegten **[!UICONTROL Standardwerte]** zu konfigurieren.
 
 ![](assets/mkt_dist_local_campaign_localize_query.png)
 
 ### Versand {#delivery}
 
-In the **[!UICONTROL Audit]** tab, click the **[!UICONTROL Detail...]** icon to view the **[!UICONTROL Scheduling]** for the selected delivery.
+Klicken Sie im Tab **[!UICONTROL Verfolgung]** auf das Symbol **[!UICONTROL Details]**, um auf die **[!UICONTROL Planung]** des gewählten Versands zuzugreifen.
 
 ![](assets/mkg_dist_local_op_creation4c.png)
 
-The **[!UICONTROL Scheduling]** icon lets you configure the delivery&#39;s contact and execution date.
+Im Fenster der **[!UICONTROL Planung]** können Kontakt- und Ausführungsdatum des Versands festgelegt werden.
 
 ![](assets/mkg_dist_local_op_creation4d.png)
 
@@ -152,17 +152,17 @@ Konfigurieren Sie bei Bedarf die Maximalgröße des Versands:
 
 ![](assets/mkg_dist_local_op_creation4e.png)
 
-Suchen Sie nach HTML Ihrer Bereitstellung. Verwenden Sie in **[!UICONTROL Delivery > Current order > Additional fields]** diesem Beispiel das **[!UICONTROL Age segment]** Feld, um die Bereitstellung entsprechend dem Alter des Ziels zu suchen.
+Passen Sie nun die HTML-Version des Versands den lokalen Bedürfnissen an. Gehen Sie beispielsweise in **[!UICONTROL Versand > Aktuelle Bestellung > Zusätzliche Felder]** und nutzen Sie das Feld **[!UICONTROL Altersgruppen]**, um eine altersabhängige Kampagne zu schalten.
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Speichern Sie Ihre Kampagnenvorlage. You can now use it from the **Campaign packages** view in the **Campaigns** universe, by clicking the **[!UICONTROL Create]** button.
+Schließen Sie die Erstellung der Vorlage ab, indem Sie sie speichern. Sie steht Ihnen nun zur Verfügung, wenn Sie über die **Kampagnenkit-Liste** in der **Kampagnen**-Rubrik ein neues Kit erstellen.****
 
 ![](assets/mkt_distr_9.png)
 
 >[!NOTE]
 >
->Campaign templates and their general configuration are detailed in [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Kampagnenvorlagen und ihre allgemeine Konfiguration werden im Abschnitt [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates) beschrieben.
 
 ## Kampagnenkit erstellen {#creating-the-campaign-package}
 
@@ -170,18 +170,18 @@ Um die Kampagnenvorlage den Lokalstellen zur Verfügung zu stellen, muss sie der
 
 Gehen Sie wie folgt vor:
 
-1. In the **[!UICONTROL Navigation]** section on the **Campaigns** page, click the **[!UICONTROL Campaign packages]** link.
-1. Click the **[!UICONTROL Create]** button.
+1. Klicken Sie im Menü **[!UICONTROL Navigation]** der Rubrik **Kampagnen** auf den Link **[!UICONTROL Kampagnenkits]**.
+1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
 
    ![](assets/mkg_dist_add_an_entry.png)
 
 1. Im oberen Bereich des Fensters kann die [zuvor](#creating-a-local-campaign-template) definierte Kampagnenkit-Vorlage ausgewählt werden.
 
-   Standardmäßig wird die **[!UICONTROL New local campaign package (localEmpty)]** Vorlage für lokale Kampagnen verwendet.
+   Die Vorlage **[!UICONTROL Neues Kampagnenkit (localEmpty)]** kann standardmäßig für lokale Kampagnen genutzt werden.
 
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen  {#dates}
+### Datum-Funktionen   {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
@@ -197,19 +197,19 @@ Diese und andere Informationen sind über den Link in der den Lokalstellen gesen
 
 ### Audience {#audience}
 
-Bei einer lokalen Kampagne kann die zentrale Entität die beteiligten lokalen Entitäten angeben, indem sie die **[!UICONTROL Limit the package to a set of local entities]**.
+Für eine lokale Kampagne kann die Zentralstelle durch Ankreuzen der Option **[!UICONTROL Kampagnenkit auf gewisse Lokalstellen beschränken]** die teilnehmenden Lokalstellen festlegen.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
 ### Ergänzende Konfigurationen {#additional-settings}
 
-Once the package is saved, the central entity can edit it from the **[!UICONTROL Edit]** tab.
+Nach der Speicherung kann die Zentralstelle das Kit über den **[!UICONTROL Bearbeiten]**-Tab verändern.
 
 ![](assets/mkg_dist_edit_kit.png)
 
-From the **[!UICONTROL General]** tab, the central entity can:
+Im Tab **[!UICONTROL Allgemein]** kann die Zentralstelle:
 
-* configure the campaign package reviewer(s) from the **[!UICONTROL Approval parameters...]** link,
+* den oder die Validierungsverantwortlichen des Kampagnenkits über den Link **[!UICONTROL Validierungsparameter...]** bestimmen,
 * die Erfüllungsplanung überprüfen,
 * Lokalstellen hinzufügen oder entfernen.
 
@@ -217,13 +217,13 @@ From the **[!UICONTROL General]** tab, the central entity can:
 >
 >Standardmäßig kann jede Lokalstelle eine **lokale Kampagne** nur ein einziges Mal bestellen.
 >   
->Check the **[!UICONTROL Enable multiple creation]** option to allow several local campaigns to be created from the campaign package.
+>Kreuzen Sie die Option **[!UICONTROL Multiple Erstellung zulassen]** an, um einer Lokalstelle die Erstellung mehrerer lokaler Kampagnen auf Basis des Kampagnenkits zu ermöglichen.
 
 ![](assets/mkg_dist_local_op_multi_crea.png)
 
 ### Benachrichtigungen {#notifications}
 
-Wenn eine Kampagne verfügbar wird oder der Registrierungszeitpunkt erreicht ist, wird eine Nachricht an die Betreiber der lokalen Benachrichtigungsgruppe gesendet. For more on this, refer to [Organizational entities](../../campaign/using/about-distributed-marketing.md#organizational-entities).
+Wenn eine Kampagne verfügbar ist oder der Anmeldeschluss erreicht ist, erhalten die Benutzer der lokalen Benachrichtigungsgruppe eine Nachricht. Weitere Informationen hierzu finden Sie unter [Organisationseinheiten](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 ## Kampagne bestellen {#ordering-a-campaign}
 
@@ -239,7 +239,7 @@ Um eine von der Zentralstelle angebotene Kampagne nutzen zu können, muss die Lo
 
 Gehen Sie wie folgt vor:
 
-1. Click **[!UICONTROL Order campaign]** in the notification message, or the corresponding button in Adobe Campaign.
+1. Klicken Sie auf den Link **[!UICONTROL Kampagne bestellen]** in der Benachrichtigungs-E-Mail oder klicken Sie auf die entsprechende Schaltfläche in Ihrer Adobe-Campaign-Konsole.
 
    Geben Sie Ihre Kennung und Ihr Passwort ein, um die Bestellung vorzunehmen. Sie werden zu der Webanwendung weitergeleitet, die das von der Zentralstelle konfigurierte Formular enthält.
 
@@ -247,7 +247,7 @@ Gehen Sie wie folgt vor:
    >
    >Webanwendungen werden im [Webfunktionen](../../web/using/about-web-applications.md)-Handbuch näher erläutert.
 
-1. Enter the necessary information in the first page (order label and comment) and click **[!UICONTROL Next]**.
+1. Geben Sie auf der ersten Seite Informationen wie Bestelltitel und Kommentar ein und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
@@ -265,7 +265,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/mkg_dist_local_op_catalog_detail_1.png)
 
-   The **[!UICONTROL Edit]** tab contains information entered by the local entity when ordering the campaign.
+   Der Tab **[!UICONTROL Allgemein]** enthält alle von der Lokalstelle bei der Bestellung angegebenen Informationen:
 
    ![](assets/mkg_dist_local_op_catalog_detail_1b.png)
 
@@ -273,11 +273,11 @@ Gehen Sie wie folgt vor:
 
    ![](assets/mkg_dist_local_op_catalog_detail_3.png)
 
-   For more on this, refer to the [Approval process](#approval-process) section.
+   Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](#approval-process).
 
-1. The local operator is then notified that the campaign is available: campaign availability can be found in the list of campaign packages within the **Campaigns** universe. The campaign can then be used. For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
+1. Der lokale Benutzer wird daraufhin über die Verfügbarkeit der Kampagne informiert: Sie ist über die Liste der Kampagnenkits in der Rubrik **Kampagnen** zugänglich. Die Kampagne kann dann verwendet werden. Weitere Informationen hierzu finden Sie unter [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md).
 
-   The **[!UICONTROL Start targeting with order approval]** option lets the local entity run the campaign as soon as the order has been approved.
+   Die Option **[!UICONTROL Zielgruppenbestimmung bei Bestellvalidierung starten]** ermöglicht es der Lokalstelle, die Kampagne auszuführen, sobald die Bestellung validiert wurde.
 
    ![](assets/mkg_dist_local_op_catalog_use.png)
 
@@ -285,7 +285,7 @@ Gehen Sie wie folgt vor:
 
 Um die Bestellung einer Kampagne zu bestätigen, muss die Zentralstelle diese validieren.
 
-The **[!UICONTROL Campaign orders]** overview, accessed via the **Campaigns** universe lets you view the status of campaign orders and approve them.
+Die über den entsprechenden Link in der Rubrik **Kampagnen** zugängliche Übersicht **[!UICONTROL Kampagnenbestellungen]** informiert über den Status der Bestellungen und ermöglicht deren Validierung.
 
 >[!NOTE]
 >
@@ -301,27 +301,27 @@ Wenn eine Lokalstelle eine Kampagne bestellt hat, werden die validierungsverantw
 
 >[!NOTE]
 >
->Die Auswahl der Prüfer wird im Abschnitt [Prüfer](#reviewers) angezeigt. Sie können die Bestellung annehmen oder ablehnen.
+>Die Auswahl der Validierungsverantwortlichen wird im Abschnitt [Validierungsverantwortliche](#reviewers) beschrieben. Sie können die Bestellung annehmen oder ablehnen.
 
 ![](assets/mkg_dist_command_valid_web.png)
 
 #### Validierung über die Adobe-Campaign-Konsole {#approving-via-the-adobe-campaign-console}
 
-The order may also be approved via the console, in the campaign order overview. To approve an order, select it and click **[!UICONTROL Approve the order]**.
+Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kampagnenbestellungen erfolgen. Um eine Bestellung zu validieren, wählen Sie diese aus und klicken Sie auf die Schaltfläche **[!UICONTROL Anmeldung validieren]**.
 
 ![](assets/mkg_dist_local_order_valid.png)
 
 >[!NOTE]
 >
->Die Kampagne kann bis zum Verfügbarkeitsdatum der Kampagne bearbeitet und neu konfiguriert werden. Lokale Entitäten können die Kampagne auch durch Klicken auf die **[!UICONTROL Cancel]** Schaltfläche ablehnen.
+>Die Kampagne kann bis zu ihrem Verfügbarkeitsdatum jederzeit bearbeitet und ihre Parameter verändert werden. Die Lokalstelle hat auch die Möglichkeit, die Kampagne über die Schaltfläche **[!UICONTROL Abbrechen]** zu annulieren.
 
-#### Kampagnen erstellen  {#creating-a-campaign}
+#### Kampagnen erstellen   {#creating-a-campaign}
 
 Wenn eine Bestellung validiert wurde, kann es von der Lokalstelle konfiguriert und ausgeführt werden.
 
 ![](assets/mkg_dist_mutual_op_created.png)
 
-For more on this, refer to [Accessing campaigns](../../campaign/using/accessing-campaigns.md).
+Weitere Informationen hierzu finden Sie unter [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md).
 
 ### Ablehnung einer Validierung {#rejecting-an-approval}
 
@@ -335,7 +335,7 @@ Die Ablehnung wird in der Liste der Kampagnenkits oder der Kampagnenbestellungen
 
 ![](assets/mkg_dist_do_not_valid_view.png)
 
-They can view the related comment in the campaign package&#39;s **[!UICONTROL Edit]** tab.
+Der Kommentar kann im Tab **[!UICONTROL Bearbeiten > Verfolgung]** des Kits eingesehen werden.
 
 ![](assets/mkg_dist_do_not_valid_tab.png)
 
@@ -343,7 +343,7 @@ They can view the related comment in the campaign package&#39;s **[!UICONTROL Ed
 
 Die validierungsverantwortlichen Benutzer werden per E-Mail benachrichtigt, wenn eine Validierung erforderlich ist.
 
-Für jede lokale Entität werden die Prüfer für die Genehmigung der Kampagnenbestellung und die Genehmigung der Kampagne ausgewählt. Weitere Informationen zur Auswahl lokaler Prüfer finden Sie unter [Organisatorische Elemente](../../campaign/using/about-distributed-marketing.md#organizational-entities).
+Für jede Lokalstelle werden Validierungsverantwortliche für die Kampagnenbestellungsvalidierung und die Kampagnenvalidierung ausgewählt. Weitere Informationen zur Auswahl lokaler Validierungsverantwortlicher finden Sie unter [Organisationseinheiten](../../campaign/using/about-distributed-marketing.md#organizational-entities).
 
 >[!NOTE]
 >
@@ -351,8 +351,8 @@ Für jede lokale Entität werden die Prüfer für die Genehmigung der Kampagnenb
 
 ### Abbruch einer Bestellung {#canceling-an-order}
 
-The central agency can cancel an order using the **[!UICONTROL Delete]** button, located on the order dashboard.
+Die Zentralstelle hat die Möglichkeit, eine Bestellung über die entsprechende Schaltfläche im Dashboard der Bestellung zu löschen und damit abzubrechen.****
 
 ![](assets/mkg_dist_local_op_cancel.png)
 
-This cancels the campaign in the **[!UICONTROL Campaign orders]** view.
+Die Kampagne wird daraufhin aus der Liste der **[!UICONTROL Kampagnenbestellungen]** entfernt.
