@@ -14,7 +14,7 @@ discoiquuid: d90594bb-e3ba-4fb1-9e11-83d519c1ca7d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,20 +22,20 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Angebote pro Segment{#offers-by-cell}
 
-The **[!UICONTROL Offers by cell]** activity lets you distribute the inbound population (from a query for example) into several segments and to specify an offer to present for each of these segments.
+Mithilfe der Aktivität **[!UICONTROL Angebote pro Segment]** lässt sich die eingehende Population (die beispielsweise aus einer Abfrage hervorgeht) in mehrere Zielgruppen aufspalten, um so je Segment spezifische Angebote zu unterbreiten.
 
 Um diese Aktivität verwenden zu können, benötigen Sie das Modul **Interaction**. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../interaction/using/about-outbound-channels.md).
 
 Gehen Sie dazu wie folgt vor:
 
-1. Add the **[!UICONTROL Offers by cell]** activity once you have specified the target population, then open it.
-1. In the **[!UICONTROL General]** tab, select the offer space on which you want to present the offers.
-1. In the **[!UICONTROL Cells]** tab, specify the different sub-sets using the **[!UICONTROL Add]** button:
+1. Platzieren Sie im Anschluss an die Abfrage eine Aktivität **[!UICONTROL Angebote pro Segment]** und öffnen Sie sie zur weiteren Bearbeitung.
+1. Wählen Sie im **[!UICONTROL Allgemein]**-Tab die Platzierung, über die Sie Angebote unterbreiten möchten.
+1. Definieren Sie nun im **[!UICONTROL Segmente]**-Tab über die Schaltfläche **[!UICONTROL Hinzufügen]** die verschiedenen Segmente:
 
    * Konfigurieren Sie anhand der verfügbaren Filter und Begrenzungen die Population des Segments.
    * Wählen Sie dann das Angebot aus, das Sie dem Segment unterbreiten möchten. Es stehen die Angebote zur Verfügung, die der Konfiguration der zuvor ausgewählten Platzierung entsprechen.
 
       ![](assets/int_offer_per_cell1.png)
 
-1. Konfigurieren Sie dann eine Auslieferungsaktivität, die Ihrem ausgewählten Kanal entspricht. Siehe [Kanalübergreifende Auslieferungen](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](../../workflow/using/cross-channel-deliveries.md).
 
