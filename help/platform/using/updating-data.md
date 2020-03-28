@@ -14,7 +14,7 @@ discoiquuid: 1e196989-b8c1-473a-89c9-bbeb68b98419
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ---
@@ -30,7 +30,7 @@ Automatische Aktualisierungen lassen sich unter Verwendung von Workflows durchf�
 
 ## Gebündeltes Update durchführen {#performing-a-mass-update}
 
-To perform manual updates, right-click the selected recipient(s) to use the **[!UICONTROL Actions]** shortcut menu, or use the **[!UICONTROL Actions]** icon.
+Für eine manuelle Aktualisierung können Sie entweder das Kontextmenü **[!UICONTROL Aktionen]** verwenden (klicken Sie mit der rechten Maustaste auf den oder die ausgewählten Empfänger) oder auf das **[!UICONTROL Aktionen]**-Symbol oben rechts klicken.
 
 ![](assets/s_ncs_user_action_icon.png)
 
@@ -38,23 +38,23 @@ Sie haben die Wahl zwischen einer gebündelten Aktualisierung der ausgewählten 
 
 ### Gebündelte Aktualisierung {#mass-update}
 
-Für Massenaktualisierung verwenden **[!UICONTROL Action > Mass update of selected lines...]**. Der Assistent unterstützt Sie beim Konfigurieren und Ausführen des Updates.
+Für eine gebündelte Aktualisierung wählen Sie die Option **[!UICONTROL Aktionen > Ausgewählte Zeilen gebündelt aktualisieren...]**. Ein Assistent ermöglicht es Ihnen, das Update zu konfigurieren und zu starten.
 
 Im ersten Schritt des Assistenten sind die zu aktualisierenden Felder anzugeben.
 
-Im linken Bereich des Assistenten wird die Liste der verfügbaren Felder angezeigt. Verwenden Sie das **[!UICONTROL Find]** Feld, um eine Suche nach diesen Feldern durchzuführen. Drücken Sie die **Eingabetaste** , um die Liste zu durchsuchen. Die mit Ihrem Eintrag übereinstimmenden Feldnamen werden wie unten dargestellt fett dargestellt.
+In der linken Spalte des Assistenten befindet sich die Liste der verfügbaren Felder. Mithilfe des **[!UICONTROL Suchen]**-Feldes haben Sie die Möglichkeit, die Auswahl einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt wie in unten stehendem Beispiel.
 
 Durch Doppelklick werden die zu aktualisierenden Felder in der rechten Spalte des Assistenten angezeigt.
 
 ![](assets/s_ncs_user_update_wizard01_1.png)
 
-In the event of an error, use the **[!UICONTROL Delete]** button to delete a field from the list of fields to be updated.
+Ein versehentlich ausgewähltes Feld kann durch Klick auf die Schaltfläche **[!UICONTROL Löschen]** wieder aus der Liste der zu aktualisierenden Felder entfernt werden.
 
 Wählen Sie nun die auf die zu aktualisierenden Profile anzuwendenden Werte aus oder geben Sie sie ein.
 
 ![](assets/s_ncs_user_update_wizard01_12.png)
 
-You can click **[!UICONTROL Distribution of values]** to display the distribution of values of the selected field for the recipients present in the current folder (not only the recipients affected by the update).
+Wenn Sie auf die Schaltfläche **[!UICONTROL Werteverteilung]** klicken, wird angezeigt, wie sich die im ausgewählten Feld enthaltenen Werte auf die im aktuellen Ordner befindlichen Empfänger (und nicht nur in Bezug auf die zu aktualisierenden Empfänger) verteilen.
 
 ![](assets/s_ncs_user_update_wizard01_2.png)
 
@@ -62,34 +62,34 @@ Sie haben die Möglichkeit, die Werteverteilung zu filtern oder den zugrunde lie
 
 ![](assets/s_ncs_user_update_wizard01_3.png)
 
-Schließen Sie dieses Fenster und klicken Sie auf **[!UICONTROL Next]** , um den zweiten Schritt des Aktualisierungsassistenten anzuzeigen. In diesem Schritt können Sie die Aktualisierung starten, indem Sie auf **[!UICONTROL Start]**.
+Schließen Sie das Fenster und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**, um zum zweiten Schritt des Aktualisierungsassistenten überzugehen. Klicken Sie nun zur Ausführung des Updates auf die Schaltfläche **[!UICONTROL Starten]**.
 
 ![](assets/s_ncs_user_update_wizard01_4.png)
 
 In der oberen Hälfte des Assistenten werden Informationen bezüglich der Durchführung des Updates angezeigt.
 
-Mit dem **[!UICONTROL Stop]** können Sie die Aktualisierung abbrechen, aber bestimmte Datensätze wurden möglicherweise aktualisiert, und das Beenden des Prozesses wird diese Aktualisierungen nicht abbrechen. Die Fortschrittsleiste zeigt an, wie weit der Vorgang fortgeschritten ist.
+Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann die Aktualisierung gestoppt werden. Es ist jedoch möglich, dass einzelne Datensätze bereits verarbeitet wurden, diese Aktualisierungen werden durch den Abbruch nicht rückgängig gemacht.
 
 ### Daten fusionieren {#merge-data}
 
-Wählen Sie diese Option, **[!UICONTROL Merge selected lines...]** um das Zusammenführen zweier Empfängerprofile zu starten. Die zusammenzuführenden Profile müssen vor Auswahl der Option ausgewählt werden. Die Zusammenführung wird mithilfe eines Assistenten konfiguriert und gestartet.
+Die Option **[!UICONTROL Ausgewählte Zeilen fusionieren...]** ermöglicht die Fusion von zwei zuvor ausgewählten Empfängerprofilen. Ein Assistent ermöglicht es Ihnen, die Zusammenführung zu konfigurieren und zu starten.
 
-Der Assistent zeigt die Werte an, die für jedes Feld abgerufen werden sollen, das in einem oder anderen Quellprofil ausgefüllt wurde. Wenn eines oder mehrere Felder in den zusammenzuführenden Profilen unterschiedliche Werte aufweisen, werden sie im **[!UICONTROL List of conflicts]** Abschnitt angezeigt. Sie können dann das Standardprofil mit den Optionsfeldern unter der Liste auswählen, wie im folgenden Beispiel:
+Der Assistent listet die Werte aller in mindestens einem der Quelldatensätze ausgefüllten Felder. Bei unterschiedlichen Werten in den jeweiligen Quellen werden diese im Abschnitt **[!UICONTROL Konfliktliste]** angezeigt. Geben Sie unter Verwendung der unter der Liste zur Verfügung stehenden Radiobuttons das Quellprofil an, dessen Werte im Konfliktfall übernommen werden sollen.
 
 ![](assets/s_ncs_user_merge_wizard01_1.png)
 
-Click **[!UICONTROL Compute]** to display the result of your choice.
+Durch Klick auf die Schaltfläche **[!UICONTROL Berechnen]** wird das Ihrer Wahl entsprechende Ergebnis angezeigt.
 
 ![](assets/s_ncs_user_merge_wizard01_2.png)
 
-Check the **[!UICONTROL Result]** columns of both sections of the window, and click **[!UICONTROL Finish]** to run the merge.
+Prüfen Sie die **[!UICONTROL Ergebnis]**-Spalte im oberen und unteren Abschnitt des Fensters und klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**, um die Zusammenführung zu starten.
 
 ## Export von Daten {#exporting-data}
 
 Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren und zu starten, gehen Sie folgendermaßen vor:
 
 1. Markieren Sie die zu exportierenden Datensätze.
-1. Right-click and select **[!UICONTROL Export...]**.
+1. Wählen Sie sie mit der rechten Maustaste aus und verwenden Sie danach **[!UICONTROL Exportieren...]**.
 
    ![](assets/s_ncs_user_export_list.png)
 
@@ -97,35 +97,35 @@ Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren un
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   For more on how to configure the export wizard, refer to [Export wizard](../../platform/using/exporting-data.md#export-wizard).
+   Informationen zur Konfiguration des Export-Assistenten finden Sie im Abschnitt [Export-Assistent](../../platform/using/exporting-data.md#export-wizard).
 
 ## Anmeldung für einen Dienst {#subscribing-to-a-service}
 
 Normalerweise melden sich Empfänger über eine spezielle Landingpage für einen Newsletter an, wie in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschrieben. Empfängerprofile können aber auch manuell für einen Dienst (z. B. Newsletter oder viraler Dienst) angemeldet werden. Gehen Sie dazu folgendermaßen vor:
 
 1. Markieren Sie die gewünschten Empfänger und wählen Sie sie mit der rechten Maustaste aus.
-1. Auswählen **[!UICONTROL Actions > Subscribe selection to a service]**.
+1. Wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**.
 
    ![](assets/s_ncs_user_selection_subscribe_service.png)
 
-1. Select the desired service and click **[!UICONTROL Next]**:
+1. Wählen Sie den entsprechenden Dienst und danach **[!UICONTROL Weiter]** aus:
 
    ![](assets/s_ncs_user_selection_subscribe_service_2.png)
 
    >[!NOTE]
    >
-   >This editor lets you create a new service: click the **[!UICONTROL Create]** button.
+   >Der Assistent erlaubt auch die Erstellung eines neuen Dienstes. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
-1. Sie können **[!UICONTROL Send a confirmation message]** zu den Empfängern gelangen. Der Inhalt dieser Nachricht kann im Abonnementszenario konfiguriert werden, das mit dem ausgewählten Dienst verknüpft ist.
-1. Click the **[!UICONTROL Start]** button to run the subscription process.
+1. Es besteht die Möglichkeit, den Empfängern durch Ankreuzen der Option **[!UICONTROL Benachrichtigung versenden]** die Anmeldung zu bestätigen. Der Inhalt dieser Nachricht wird im dem Dienst zugeordneten Anmeldeszenario konfiguriert.
+1. Klicken Sie nun zur Ausführung des Vorgangs auf die Schaltfläche **[!UICONTROL Starten]**.
 
    ![](assets/s_ncs_user_selection_subscribe_service_3.png)
 
-Im oberen Bereich des Fensters können Sie den Ausführungsprozess überwachen. Mit der **[!UICONTROL Stop]** Schaltfläche können Sie den Prozess beenden. Die bereits verarbeiteten Empfänger werden jedoch abonniert.
+In der oberen Hälfte des Assistenten werden Informationen bezüglich der Ausführung angezeigt. Durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** kann der Vorgang gestoppt werden. Bereits verarbeitete Empfänger werden jedoch trotzdem für den entsprechenden Dienst angemeldet.
 
-Wenn Sie die **[!UICONTROL Do not keep a trace of this job in the database]** Option deaktivieren, können Sie den Ausführungsordner auswählen (oder erstellen), in dem die Informationen zu diesem Prozess gespeichert werden.
+Wenn Sie die Option **[!UICONTROL Vorgang nicht in der Datenbank protokollieren]** abwählen, ist die Auswahl oder Erstellung eines Ausführungsordners erforderlich, in dem die den Vorgang betreffenden Protokollnachrichten gespeichert werden.
 
-To check on the process, go to the **[!UICONTROL Subscriptions]** tab on the profiles of the recipients concerned by this operation, or to the **[!UICONTROL Subscriptions]** tab accessed via the **[!UICONTROL Profiles and Targets > Services and Subscriptions]** node.
+Im Tab **[!UICONTROL Abonnements]******, zugänglich über die vom Vorgang betroffenen Empfängerprofile oder den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** kann das Ergebnis der Anmeldung geprüft werden.
 
 ![](assets/s_ncs_user_selection_subscribe_service_4.png)
 
