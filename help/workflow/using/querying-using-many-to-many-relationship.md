@@ -1,6 +1,6 @@
 ---
 title: Abfrage mit einer n:n-Relation
-description: Erfahren Sie, wie Sie mithilfe einer Viele-zu-viele-Beziehung Abfragen durchführen können
+description: Erfahren Sie, wie Sie mit einer n:n-Relation Abfragen durchführen können
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 In diesem Beispiel werden die Empfänger gesucht, die innerhalb der letzten sieben Tage nicht kontaktiert wurden.
 
-Dieses Beispiel zeigt auch, wie ein Filter in Bezug auf die Auswahl eines Collection-Elements (oder eines orangefarbenen Knotens) konfiguriert wird. Sammlungselemente sind im **[!UICONTROL Field to select]** Fenster verfügbar.
+Außerdem wird die Konfiguration eines von einem Kollektionselement (orangefarbener Knoten) ausgehenden Filters gezeigt. Auf Kollektionselemente kann im Fenster **[!UICONTROL Feldauswahl]** zugegriffen werden.
 
 * Welche Tabelle soll ausgewählt werden?
 
@@ -38,8 +38,8 @@ Dieses Beispiel zeigt auch, wie ein Filter in Bezug auf die Auswahl eines Collec
 
 Gehen Sie wie folgt vor:
 
-1. Open the Generic query editor and select the Recipient table **[!UICONTROL (nms:recipient)]**.
-1. Wählen Sie im **[!UICONTROL Data to extract]** Fenster **[!UICONTROL Primary key]**, **[!UICONTROL First name]** und **[!UICONTROL Last name]****[!UICONTROL Email]**.
+1. Öffnen Sie das generische Abfragetool und wählen Sie die Empfängertabelle (**[!UICONTROL nms:recipient]**).
+1. Wählen Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** die Felder **[!UICONTROL Primärschlüssel]**, **[!UICONTROL Vorname]**, **[!UICONTROL Nachname]** und **[!UICONTROL E-Mail]**.
 
    ![](assets/query_editor_nveau_33.png)
 
@@ -47,20 +47,20 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_34.png)
 
-1. Wählen Sie im **[!UICONTROL Data filtering]** Fenster **[!UICONTROL Filtering conditions]**.
-1. Im **[!UICONTROL Target element]** Fenster umfasst die Filterbedingung zum Extrahieren von Profilen ohne Verfolgungsprotokoll für die letzten 7 Tage zwei Schritte. Das Element, das Sie auswählen müssen, ist ein vielseitiger Link.
+1. Wählen Sie dann im **[!UICONTROL Datenfilter]**-Fenster die Option **[!UICONTROL Filterbedingungen]**.
+1. Anschließend wird im Fenster **[!UICONTROL Zielelement]** in zwei Schritten die gesuchte Filterbedingung erstellt. Es handelt sich bei dem auszuwählenden Kollektionselement um eine n:n-Relation.
 
-   * Wählen Sie zunächst das **[!UICONTROL Recipient delivery logs (broadlog)]** Collection-Element (orange-Node) für die erste **[!UICONTROL Value]** Spalte aus.
+   * Wählen Sie also im **[!UICONTROL Ausdruck]**-Feld das durch einen orangefarbenen Knoten symbolisierte Kollektionselement **[!UICONTROL Versandlogs der Empfänger (broadLog)]**.
 
       ![](assets/query_editor_nveau_67.png)
 
-      Wählen Sie den **[!UICONTROL do not exist as]** Operator. Es ist nicht erforderlich, einen zweiten Wert in dieser Zeile auszuwählen.
+      In diesem Fall ist der zu wählende Operator **[!UICONTROL nicht wie]** und es wird kein Wert angegeben.
 
-   * Der Inhalt der zweiten Filterbedingung hängt von der ersten ab. Hier wird das **[!UICONTROL Event date]** Feld direkt in der **[!UICONTROL Recipient delivery logs]** Tabelle angeboten, da ein Link zu dieser Tabelle vorhanden ist.
+   * Der Inhalt der zweiten Filterbedingung ergibt sich direkt aus der Wahl der ersten: Hier wird das Feld **[!UICONTROL Ereignisdatum]** aus der Tabelle **[!UICONTROL Versandlogs der Empfänger]** vorgeschlagen, da eine Relation mit dieser Tabelle besteht.
 
       ![](assets/query_editor_nveau_36.png)
 
-      Wählen Sie **[!UICONTROL Event date]** mit dem **[!UICONTROL greater than or equal to]** Operator aus. Wählen Sie den **[!UICONTROL DaysAgo (7)]** Wert aus. Klicken Sie dazu auf **[!UICONTROL Edit expression]** das **[!UICONTROL Value]** Feld. Wählen Sie im **[!UICONTROL Formula type]** Fenster **[!UICONTROL Process on dates]** und **[!UICONTROL Current date minus n days]** geben Sie &quot;7&quot;als Wert ein.
+      Wählen Sie also **[!UICONTROL Ereignisdatum]** und den Operator **[!UICONTROL streng später als]** aus. Geben Sie den Wert **[!UICONTROL DaysAgo (7)]** ein. Klicken Sie hierzu im Feld **[!UICONTROL Wert]** auf **[!UICONTROL Ausdruck bearbeiten]**. Wählen Sie im Fenster **[!UICONTROL Formeltyp]** die Option **[!UICONTROL Datumsfunktionen]** und **[!UICONTROL Aktuelles Datum abzüglich n Tage]**. Geben Sie den Wert &quot;7&quot; ein.
 
       ![](assets/query_editor_nveau_37.png)
 
@@ -68,13 +68,13 @@ Gehen Sie wie folgt vor:
 
       ![](assets/query_editor_nveau_38.png)
 
-1. Ändern Sie im **[!UICONTROL Data formatting]** Fenster die Nachnamen in Großbuchstaben. Klicken Sie auf die **[!UICONTROL Last name]** Zeile in der **[!UICONTROL Transformation]** Spalte und wählen Sie **[!UICONTROL Switch to upper case]** im Dropdown-Menü aus.
+1. Im Fenster **[!UICONTROL Datenformatierung]** können Sie die Anzeige dahingehend ändern, dass alle Nachnamen in Großbuchstaben angezeigt werden. Klicken Sie hierfür in der Zeile **[!UICONTROL Nachname]** auf **[!UICONTROL Schreibweise]** und wählen Sie **[!UICONTROL Alles in Großbuchstaben]** aus der Dropdownliste.
 
    ![](assets/query_editor_nveau_39.png)
 
-1. Verwenden Sie die **[!UICONTROL Add a calculated field]** Funktion, um eine Spalte in das Datenvorschaufenster einzufügen.
+1. Verwenden Sie die Funktion **[!UICONTROL Berechnetes Feld hinzufügen]**, um eine neue Spalte zu erstellen.
 
-   Fügen Sie in diesem Beispiel ein berechnetes Feld mit dem Vor- und Nachnamen der Empfänger in einer einzigen Spalte hinzu. Klicken Sie auf die **[!UICONTROL Add a calculated field]** Funktion. Geben Sie im **[!UICONTROL Export calculated field definition]** Fenster eine Bezeichnung und einen internen Namen ein und wählen Sie den **[!UICONTROL JavaScript Expression]** Typ. Geben Sie dann den folgenden Ausdruck ein:
+   In unserem Beispiel sollen Vor- und Nachname in einer Spalte angezeigt werden. Klicken Sie also auf **[!UICONTROL Berechnetes Feld hinzufügen]** und geben Sie im Fenster **[!UICONTROL Definition eines berechneten Export-Feldes]** einen Titel und einen internen Namen für die neue Spalte ein. Wählen Sie den Typ **[!UICONTROL JavaScript-Ausdruck]** aus der Dropdown-Liste und erfassen Sie folgenden Ausdruck:
 
    ```
    var rep = source._firstName+" - "+source._lastName
@@ -83,10 +83,10 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_40.png)
 
-   Klicks **[!UICONTROL OK]**. Das **[!UICONTROL Data formatting]** Fenster ist konfiguriert.
+   Klicken Sie auf **[!UICONTROL OK]**. Die Konfiguration des **[!UICONTROL Datenformatierung]**-Fensters ist abgeschlossen.
 
    Weiterführende Informationen zum Hinzufügen berechneter Felder finden Sie in diesem Abschnitt.
 
-1. Das Ergebnis wird im **[!UICONTROL Data preview]** Fenster angezeigt. Empfänger, die in den letzten 7 Tagen nicht kontaktiert wurden, werden in alphabetischer Reihenfolge angezeigt. Namen werden in Großbuchstaben angezeigt und die Spalte mit Vor- und Nachnamen wurde erstellt.
+1. Im Fenster **[!UICONTROL Datenvorschau]** können Sie das Ergebnis prüfen. Es werden die Empfänger angezeigt, die innerhalb der letzten sieben Tage vor dem aktuellen Tagesdatum nicht kontaktiert worden sind. Die Nachnamen sind in Großbuchstaben und alphabetisch geordnet. Eine weitere Spalte zeigt Vor- und Nachnamen in einem Feld an.
 
    ![](assets/query_editor_nveau_41.png)
