@@ -14,7 +14,7 @@ discoiquuid: aeaa9475-3715-40a4-8864-29d126883272
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -28,7 +28,7 @@ Erstellung und Konfiguration von Datenschemata in Adobe Campaign werden in [dies
 
 ## Schemastruktur {#schema-structure}
 
-The XML document of a data schema must contain the **`<srcschema>`** root element with the **name** and **namespace** attributes to populate the schema name and its namespace.
+Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den Attributen **name** und **namespace** zur Angabe des Schemanamens und des Namensraums enthalten.
 
 ```
 <srcSchema name="schema_name" namespace="namespace">
@@ -78,7 +78,7 @@ Beispiel eines mit Datentypen komplettierten Content-Management-Schemas:
 
 ## Eigenschaften {#properties}
 
-Various properties can be used to enrich the **`<element>`** and **`<attribute>`** elements of the data schema.
+Verschiedene Eigenschaften können die Elemente (**`<element>`**) und (**`<attribute>`**) des Datenschemas ergänzen.
 
 Im Content Management werden vor allem folgende Eigenschaften verwendet:
 
@@ -115,7 +115,7 @@ Beispiel des um diese Eigenschaften ergänzten Schemas:
 
 Eine Kollektion ist eine Liste von Elementen mit gleichem Namen und auf gleicher Hierarchieebene.
 
-In unserem Beispiel sind die Elemente **`<chapter>`** und **`<page>`** Elemente Sammlungselemente. Das **Attribut &quot;ungebunden** &quot;muss daher der Definition folgender Elemente hinzugefügt werden:
+In unserem Beispiel sind die Elemente **`<chapter>`** und **`<page>`** Kollektionselemente. Das Attribut **unbound** muss daher der Definition folgender Elemente hinzugefügt werden:
 
 ```
 <element name="chapter" label="Chapter" unbound="true" ordered="true">
@@ -131,11 +131,11 @@ In unserem Beispiel sind die Elemente **`<chapter>`** und **`<page>`** Elemente 
 
 ## Referenzierung von Elementen {#element-referencing}
 
-Elementverweise werden in Inhaltsschemata sehr häufig verwendet. Es ermöglicht Ihnen, die Definition eines **`<element>`** Elements zu factorisieren, sodass auf andere Elemente mit derselben Struktur verwiesen werden kann.
+Eine Referenzierung von Elementen wird in Inhaltsschemata häufig verwendet. Sie erlaubt es, die Definition eines **`<element>`**-Elements so zu aufzugliedern, dass andere Elemente mit derselben Struktur darauf verweisen können.
 
 Das Attribut **ref** des zu referenzierenden Elements muss mit dem Pfad (XPath) des Referenz-Elements angegeben werden.
 
-**Beispiel**: Hinzufügen eines **Anhangs** -Abschnitts mit derselben Struktur wie das **`<chapter>`** -Element unseres Beispielschemas.
+**Beispiel**: Hinzufügung eines Segments **Anhang**, welches die gleiche Struktur wie das Element **`<chapter>`** im Beispielschema aufweist.
 
 ```
 <srcSchema name="book" namespace="cus">
