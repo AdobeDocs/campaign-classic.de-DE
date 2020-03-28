@@ -14,7 +14,7 @@ discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ---
@@ -34,7 +34,7 @@ Tabs und ihr Inhalt sind abhängig von Ihrer Konfiguration und den installierten
 
 >[!CAUTION]
 >
->Der Zugriff auf das XML-Schema und das Formular für die Felder in der Tabelle &quot;Profile&quot;erfolgt über den **[!UICONTROL Administration > Configuration > Data schemas]** Knoten der Adobe-Kampagnenstruktur. Nur sachkundige Benutzer können Änderungen an diesen Schemata vornehmen.
+>Auf das XML-Schema und das den Feldern der Profiltabelle entsprechende Formular kann über den Verzeichnisknoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** zugegriffen werden. Eventuelle Änderungen dieser Schemata sollten von erfahrenen Benutzern vorgenommen werden.
 >
 >Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md).
 
@@ -46,7 +46,7 @@ Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Prof
 
 >[!NOTE]
 >
->Wenn die **[!UICONTROL No longer contact (by any channel)]** Option ausgewählt ist, bedeutet dies, dass das Profil in der schwarzen Liste aufgeführt ist, d. h. das Profil hat den Wunsch geäußert, nicht kontaktiert zu werden (z. B. durch Klicken auf einen Link zum Abbestellen eines Abonnements in einem Newsletter). Sie werden nicht mehr durch Auslieferungen auf Kanälen (E-Mail, Direktwerbung usw.) gezielt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/understanding-quarantine-management.md).
+>Sollte die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** angekreuzt sein, bedeutet dies, dass das Profil auf der Blacklist steht. Die jeweilige Person hat also mitgeteilt (z. B. durch Klick auf einen Abmelde-Link in einem Newsletter), dass sie nicht mehr kontaktiert werden möchte. Sie wird somit nicht in Zielgruppen eingeschlossen, unabhängig davon, welchen Kanal der Versand verwendet (E-Mail, Briefpost etc.). Lesen Sie hierzu auch [diese Seite](../../delivery/using/understanding-quarantine-management.md).
 
 ## Tab &quot;Kontaktdaten&quot;{#contact-information-tab}
 
@@ -58,7 +58,7 @@ Hier werden zudem der Qualitätsindex sowie die Anzahl von fehlgeschlagenen Send
 
 ## Tab &quot;Sonstige&quot;{#other-tab}
 
-Dieser Bildschirm enthält benutzerdefinierte Felder, die je nach Bedarf personalisiert werden können. Sie können auch die Namen der Felder ändern und ihr Format definieren, **[!UICONTROL Field properties...]** wie unten dargestellt:
+Dieser Bildschirm enthält frei vom Benutzer definierbare Felder. Sie haben über das Menü **[!UICONTROL Feldeigenschaften...]** die Möglichkeit, Felder umzubenennen oder das Format zu ändern, wie das folgende Beispiel zeigt:
 
 ![](assets/s_ncs_user_profile_others_tab.png)
 
@@ -68,11 +68,11 @@ Dieser Bildschirm enthält benutzerdefinierte Felder, die je nach Bedarf persona
 
 ## Tab &quot;Listen&quot;{#lists-tab}
 
-In diesem Bildschirm werden die Gruppen angezeigt, zu denen das ausgewählte Profil gehört. Klicken Sie auf **[!UICONTROL Add]** , um das Profil für eine Liste zu abonnieren. Klicken Sie auf **[!UICONTROL Detail]** , um die Beschreibung und die Liste der Profile in der ausgewählten Liste anzuzeigen.
+Dieser Bildschirm zeigt an, welchen Gruppen der ausgewählte Empfänger angehört. Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** kann das Profil zu einer Liste hinzugefügt werden. Klicken Sie auf die Schaltfläche **[!UICONTROL Details]**, um die Beschreibung der Liste und alle enthaltenen Profile anzuzeigen.
 
 ![](assets/s_ncs_user_profile_groups_tab_details.png)
 
-Weitere Informationen finden Sie unter [Erstellen und Verwalten von Listen](../../platform/using/creating-and-managing-lists.md).
+Weitere Informationen finden Sie unter [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md).
 
 ## Tab &quot;Abonnements&quot;{#subscriptions-tab}
 
@@ -80,7 +80,7 @@ Dieser Bildschirm enthält die Informationsdienste, die das Profil abonniert hat
 
 ![](assets/s_ncs_user_profile_subscript_tab_details.png)
 
-Die **[!UICONTROL Detail]** Schaltfläche zeigt die Eigenschaften des ausgewählten Abonnements an. Über die **[!UICONTROL Add]** Schaltfläche können Sie ein neues Abonnement manuell hinzufügen.
+Die Schaltfläche **[!UICONTROL Details]** zeigt die Eigenschaften des ausgewählten Abonnements an. Die Schaltfläche **[!UICONTROL Hinzufügen]** erlaubt die manuelle Anmeldung eines Empfängers für einen Informationsdienst.
 
 Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/managing-subscriptions.md).
 
