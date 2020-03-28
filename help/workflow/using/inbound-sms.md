@@ -14,7 +14,7 @@ discoiquuid: fa9ae600-91fc-4aea-ae02-8ab9064947ac
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -30,12 +30,12 @@ Die Aktivität **SMS-Empfang** ermöglicht den Abruf und die Verarbeitung von SM
 
 Geben Sie im Tab **SMS-Empfang** die SMS-Routing-Parameter sowie das bei Empfang jeder Nachricht auszuführende Script an. Im zweiten Tab können Sie eine Planung für die Aktivität definieren und im dritten bei Bedarf eine Ablauffrist.
 
-1. **[!UICONTROL SMS routing]**: Wählen Sie das externe Konto aus, das für die SMS-Wiederherstellung verwendet werden soll. Externe Konten werden über den **[!UICONTROL Administration > Platform > External accounts]** Knoten der Struktur konfiguriert.
+1. **[!UICONTROL SMS-Routing]**: Wählen Sie das für den SMS-Empfang zu verwendende externe Konto aus. Externe Konten werden im Knoten **[!UICONTROL Administration > Platform >Externe Konten]** der Baumstruktur konfiguriert.
 1. **[!UICONTROL Script]**
-1. **[!UICONTROL Schedule]**
+1. **[!UICONTROL Planung]**
 
    ![](assets/sms_rec_edit_2.png)
 
-1. **[!UICONTROL Expiration]**
+1. **[!UICONTROL Ablauf]**
 
-Die **[!UICONTROL Script]**- **[!UICONTROL Schedule]** und **[!UICONTROL Expiry]** -Registerkarten sind in den [Inbound-E-Mails](../../workflow/using/inbound-emails.md)ausführlich beschrieben.
+Die Tabs **[!UICONTROL Script]**, **[!UICONTROL Planung]** und **[!UICONTROL Ablauf]** werden im Abschnitt ](../../workflow/using/inbound-emails.md)Eingehende E-Mails[ erläutert.
