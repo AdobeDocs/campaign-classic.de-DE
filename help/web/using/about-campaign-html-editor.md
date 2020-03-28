@@ -14,7 +14,7 @@ discoiquuid: 1ffe9f58-7258-4794-a314-524065f8a33b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -44,25 +44,25 @@ Allgemein gilt:
 
 ![](assets/dce_schema.png)
 
-Um eine einfache Webanwendung zu erstellen, gehen Sie wie folgt vor:
+Gehen Sie zur Erstellung einer Webanwendung wie folgt vor:
 
-* Erstellen Sie eine Webanwendung. Weitere Informationen finden Sie unter [Erstellen einer Einstiegsseite](../../web/using/creating-a-landing-page.md),
-* Select existing content or creating content from a standard template, for more on this, refer to [Template management](../../web/using/template-management.md),
-* Bearbeiten und Konfigurieren von Inhalten. Weitere Informationen finden Sie unter [Bearbeiten von Inhalten](../../web/using/editing-content.md),
-* Publish the Web application, for more on this, refer to [Publishing content](../../web/using/creating-a-landing-page.md#step-3---publishing-content) and [this page](../../web/using/publishing-a-web-form.md#managing-web-forms-delivery-and-tracking).
+* Erstellen Sie eine Webanwendung. Weitere Informationen hierzu finden Sie unter [Landingpage erstellen](../../web/using/creating-a-landing-page.md).
+* Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer Standardvorlage; weiterführende Informationen dazu finden Sie unter [Vorlagenverwaltung](../../web/using/template-management.md).
+* Bearbeiten und konfigurieren Sie Inhalte; weiterführende Informationen dazu finden Sie unter [Bearbeiten von Inhalten](../../web/using/editing-content.md).
+* Publizieren Sie die Webanwendung; weiterführende Informationen dazu finden Sie unter [Publizieren des Inhalts](../../web/using/creating-a-landing-page.md#step-3---publishing-content) und auf [dieser Seite](../../web/using/publishing-a-web-form.md#managing-web-forms-delivery-and-tracking).
 
 >[!NOTE]
 >
->For a complete example detailing the implementation of the DCE within the framework of a Web application, refer to [Creating a landing page](../../web/using/creating-a-landing-page.md).
+>Ein vollständiges Beispiel für die Implementierung des DCE im Rahmen einer Webanwendung finden Sie unter [Landingpage erstellen](../../web/using/creating-a-landing-page.md).
 
 Gehen Sie zur Erstellung eines E-Mail-Versands wie folgt vor:
 
-* Erstellen Sie eine Auslieferung aus einer E-Mail-Typvorlage, in der das DCE aktiv ist.
-* Wählen Sie vorhandenen Inhalt oder erstellen Sie Inhalte aus einer Standardvorlage.
-* Bearbeiten und Konfigurieren von Onlineinhalten,
-* Senden Sie die Lieferung, für weitere Informationen zu diesem Abschnitt finden Sie [diesen Abschnitt](../../delivery/using/communication-channels.md).
+* Erstellen Sie einen Versand aus einer Vorlage vom Typ „E-Mail“, in der der DCE aktiv ist.
+* Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer Standardvorlage.
+* Bearbeiten und konfigurieren Sie den Online-Inhalt.
+* Führen Sie den Versand durch. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/communication-channels.md).
 
 >[!NOTE]
 >
->For a complete example detailing the implementation of the DCE within the framework of an email delivery, refer to [this use case](../../web/using/use-case--creating-an-email-delivery.md).
+>Ein vollständiges Beispiel für die Implementierung des DCE im Rahmen eines E-Mail-Versands finden Sie in [diesem Anwendungsbeispiel](../../web/using/use-case--creating-an-email-delivery.md).
 
