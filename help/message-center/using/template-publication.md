@@ -14,7 +14,7 @@ discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -32,13 +32,13 @@ Nach der Erstellung der Nachrichtenvorlage auf der Kontrollinstanz ist diese auf
 >
 >Bei der Publikation der Transaktionsnachrichten-Vorlagen werden auch die Typologieregeln automatisch auf den Ausführungsinstanzen publiziert.
 
-1. Wechseln Sie in der Steuerelementinstanz zum **[!UICONTROL Message Center > Transactional message templates]** Ordner der Struktur.
+1. Gehen Sie in der Kontrollinstanz in den Knoten **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** des Navigationsbaums.
 1. Wählen Sie die auf den Ausführungsinstanzen zu publizierende Vorlage aus.
-1. Klicks **[!UICONTROL Publication]** .
+1. Klicken Sie auf **[!UICONTROL Publizieren]** .
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Once publication is complete, both message templates to be applied to batch and real time type events are created in the tree of the production instance in the **[!UICONTROL Administration > Production > Message Center > Default > Transactional message templates]** folder.
+Nach Abschluss der Publikation werden die beiden Vorlagen, die auf die Echtzeit- und Batch-Ereignisse angewendet werden, im Navigationsbaum der Ausführungsinstanz im Knoten **[!UICONTROL Administration > Betreibung > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** erstellt.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
