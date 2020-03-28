@@ -14,7 +14,7 @@ discoiquuid: 339f4aa9-0513-4b0e-ac2a-24f5dc012d49
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -33,27 +33,27 @@ Die folgenden Workflows werden mit dem Modul **Social Marketing** installiert. W
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Berechnung der Facebook-Statistiken</span> <br /> </td> 
-   <td> <span class="uicontrol">statsFacebook</span><br /> </td> 
+   <td> <span class="uicontrol">statsFacebook</span> <br /> </td> 
    <td> Berechnet die Statistiken in Bezug auf Interaktionen mit Fans bei Facebook.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Facebook-Fan-Synchronisation</span> <br /> </td> 
-   <td> <span class="uicontrol">syncFacebookFans</span><br /> </td> 
+   <td> <span class="uicontrol">syncFacebookFans</span> <br /> </td> 
    <td> Importiert täglich um 7 Uhr Facebook-Fans in Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Facebook-Seiten-Sychronisation</span> <br /> </td> 
-   <td> <span class="uicontrol">syncFacebook</span><br /> </td> 
+   <td> <span class="uicontrol">syncFacebook</span> <br /> </td> 
    <td> Synchronisiert täglich um 7 Uhr Facebook-Seiten mit Adobe Campaign.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Berechnung der Twitter-Statistiken</span> <br /> </td> 
-   <td> <span class="uicontrol">statsTwitter</span><br /> </td> 
+   <td> <span class="uicontrol">statsTwitter</span> <br /> </td> 
    <td> Berechnet Statistiken in Bezug auf Retweets und Besuchen auf Twitter.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Twitter-Konto-Synchronisation</span> <br /> </td> 
-   <td> <span class="uicontrol">syncTwitter</span><br /> </td> 
+   <td> <span class="uicontrol">syncTwitter</span> <br /> </td> 
    <td> Importiert täglich um 7 Uhr Twitter-Followers in Adobe Campaign.<br /> </td> 
   </tr> 
  </tbody> 
