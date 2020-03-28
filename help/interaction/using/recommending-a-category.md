@@ -14,7 +14,7 @@ discoiquuid: d52c3e72-bac0-48d9-9750-0a30aa816b83
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -27,8 +27,8 @@ Es kann vorkommen, dass für einen Empfänger aufgrund der definierten Filter un
 Gehen Sie wie folgt vor, um eine Kategorie immer in die Empfehlungen einzuschließen:
 
 1. Klicken Sie im Navigationsbaum auf einen Angebotskatalog.
-1. Klicken Sie auf die **[!UICONTROL Eligibility]** Registerkarte und dann auf das **[!UICONTROL Always include this category in the recommendations]** Kästchen.
-1. Finish and approve by clicking **[!UICONTROL Save]**.
+1. Klicken Sie im Tab **[!UICONTROL Eignung]** auf **[!UICONTROL Diese Kategorie immer in die Empfehlungen einschließen]**.
+1. Klicken Sie zum Abschluss auf **[!UICONTROL Speichern]**.
 
    ![](assets/offer_cat_default_001.png)
 
