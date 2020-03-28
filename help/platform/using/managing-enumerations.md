@@ -14,7 +14,7 @@ discoiquuid: 7674c856-2b64-4a85-9ffa-3e14a142028e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -32,7 +32,7 @@ Diverse Felder der Anwendung enthalten derartige Auflistungen. Sie werden &quot;
 
 ## Wertekonfiguration {#access-to-values}
 
-The values for this type of field are defined and overall administration of these fields (adding/deleting a value) is performed via the **[!UICONTROL Administration > Platform > Enumerations]** node of the tree.
+Die Bestimmung der Werte für Auflistungsfelder und ihre Verwaltung (Hinzufügen/Löschen eines Werts) erfolgen über den Verzeichnisknoten **[!UICONTROL Administration > Plattform > Auflistungen]**.
 
 ![](assets/s_ncs_user_itemized_list_node.png)
 
@@ -41,15 +41,15 @@ The values for this type of field are defined and overall administration of thes
 
    ![](assets/s_ncs_user_itemized_list_values.png)
 
-   To create a new enumeration value, click **[!UICONTROL Add]**.
+   Um einen neuen Auflistungswert zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
    ![](assets/s_ncs_user_itemized_list.png)
 
-   Wenn die **[!UICONTROL Open]** Option ausgewählt ist, kann der Benutzer direkt im entsprechenden Feld einen neuen Einzellistenwert hinzufügen. Mit einer Bestätigungsmeldung können Sie diesen Wert erstellen.
+   Wenn der Typ **[!UICONTROL Offen]** ausgewählt wird, kann der Benutzer einen neuen Auflistungswert durch direkte Eingabe in das entsprechende Feld hinzufügen. Eine Bestätigungsnachricht ermöglicht die Erstellung des Werts.
 
    ![](assets/s_ncs_user_itemized_list_new_value.png)
 
-* If the **[!UICONTROL Closed]** option is selected, users will not be able to create new values, but merely choose from the values available.
+* Wenn der Typ **[!UICONTROL Geschlossen]** ausgewählt wird, können die Benutzer keine neuen Werte erstellen, sondern nur unter den vorgeschlagenen Werten auswählen.
 
 ## Daten vereinheitlichen {#standardizing-data}
 
@@ -63,27 +63,27 @@ In Auflistungsfelder können auch andere als die in der Auflistung vorgesehenen 
 
 Der eingegebene Wert kann:
 
-* Added to the itemized list values: in this case the **[!UICONTROL Open]** option must be selected,
-* automatisch von seinem ersetzt werden. Hierzu muss Letzterer zuvor im Tab **[!UICONTROL Alias]** Alias bestimmt worden sein;
+* den Werten der Auflistung hinzugefügt werden. Hierzu muss der Typ **[!UICONTROL Offen]** ausgewählt werden;
+* automatisch von seinem Alias ersetzt werden. Hierzu muss Letzterer zuvor im Tab **[!UICONTROL Alias]** bestimmt worden sein;
 * in der Liste der Alias gespeichert werden. Die Zuordnung des Alias kann zu einem späteren Zeitpunkt erfolgen.
 
    >[!NOTE]
    >
-   >If you need to use data cleansing capabilities, select the **[!UICONTROL Alias cleansing]** option in the itemized list.
+   >Wenn Sie Datenbereinigungskapazitäten benötigen, wählen Sie in der Aufzählung die Option **[!UICONTROL Alias-Verwaltung]**.
 
 ### Alias verwenden {#using-aliases}
 
-Die Option **[!UICONTROL Alias cleansing]** ermöglicht die Verwendung von Aliasen für die ausgewählte Einzelliste. Wenn diese Option aktiviert ist, wird die **[!UICONTROL Alias]** Registerkarte unten im Fenster angezeigt.
+Die Option **[!UICONTROL Alias-Verwaltung]** ermöglicht es, die Alias für die ausgewählte Auflistung zu verwalten. Wenn diese Option angekreuzt ist, wird der Tab **[!UICONTROL Alias]** im unteren Teil des Fensters hinzugefügt.
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
 #### Alias-Erstellung {#creating-an-alias}
 
-To create an alias, click **[!UICONTROL Add]**.
+Um einen Alias zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create.png)
 
-Geben Sie den zu konvertierenden Alias und den anzuwendenden Wert an und klicken Sie auf **[!UICONTROL Ok]**.
+Geben Sie den zu konvertierenden Alias und den anzuwendenden Wert an und klicken Sie auf **[!UICONTROL OK]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_create_2.png)
 
@@ -95,21 +95,21 @@ Geben Sie den zu konvertierenden Alias und den anzuwendenden Wert an und klicken
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Thus, when a user enters the value **NEILSEN** in a &quot;company&quot; field (in the Adobe Campaign console or in a form), it will automatically be replaced by the value **NIELSEN Ltd**. Value replacement is performed by the **Alias cleansing** workflow. Siehe [Ausführen der Datenbereinigung](#running-data-cleansing).
+Wenn der Benutzer also z. B. den Wert **Buch Berlin** im Feld „Firma“ (in der Adobe Campaign-Konsole oder in einem Formular) eingibt, wird dieser durch den Wert **Buchverlag Berlin** ersetzt. Die Werteersetzung wird vom Workflow **Alias-Verwaltung** durchgeführt. Siehe [Datenbereinigung durchführen](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
 #### Werte in Alias konvertieren {#converting-values-into-aliases}
 
-To convert an enumeration value into an alias, right-click in the list of values and choose **[!UICONTROL Convert values into aliases...]**.
+Um einen Auflistungswert in einen Alias zu konvertieren, klicken Sie mit der rechten Maustaste in die Werteliste und wählen Sie die Aktion **[!UICONTROL Werte in Alias konvertieren...]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail.png)
 
-Choose the values you want to convert and click **[!UICONTROL Next]**.
+Wählen Sie die Werte aus, die Sie konvertieren möchten, und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
 
 ![](assets/s_ncs_user_itemized_list_alias_transform.png)
 
-Click **[!UICONTROL Start]** to run the conversion.
+Klicken Sie auf **[!UICONTROL Starten]**, um die Konvertierung zu starten.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail1.png)
 
@@ -119,53 +119,53 @@ Nach erfolgreicher Konvertierung wird der Alias der Alias-Liste hinzugefügt.
 
 #### Alias abrufen {#retrieving-alias-hits}
 
-Die von den Benutzern eingegebenen Werte können in Aliase umgewandelt werden. Wenn der Benutzer einen Wert eingibt, der nicht in der Liste der Einzelangaben enthalten ist, wird der Wert in der **[!UICONTROL Alias]** Registerkarte gespeichert.
+Die von den Benutzern eingegebenen Werte können in Alias konvertiert werden. Wenn der Benutzer einen Wert eingibt, der sich nicht in den Auflistungswerten befindet, wird dieser im Tab **[!UICONTROL Alias]** gespeichert.
 
-The **Alias cleansing** technical workflow recovers these values every night to update itemized list. Siehe [Ausführen der Datenbereinigung](#running-data-cleansing)
+Der technische Workflow **Alias-Verwaltung** (aliasCleansing) ruft diese Werte jede Nacht ab, um die Auflistungen zu aktualisieren. Siehe [Datenbereinigung durchführen](#running-data-cleansing).
 
-Bei Bedarf kann die **[!UICONTROL Hits]** Spalte anzeigen, wie oft dieser Wert eingegeben wurde. Die Berechnung dieses Wertes kann sowohl Zeit- als auch Arbeitsspeicheraufwendungen verursachen. Weitere Informationen finden Sie unter [Berechnen von Einstiegsereignissen](#calculating-entry-occurrences).
+Wenn gewünscht, kann in der **[!UICONTROL Treffer]**-Spalte die Anzahl der Eingaben dieses Werts angezeigt werden. Die Berechnung dieses Werts kann jedoch lang und speicherintensiv sein. Weitere Informationen hierzu finden Sie unter [Berechnung der Eingabeanzahl](#calculating-entry-occurrences).
 
 ### Datenbereinigung durchführen {#running-data-cleansing}
 
-Die Datenbereinigung erfolgt durch den **[!UICONTROL Alias cleansing]** technischen Arbeitsablauf. Die für Aufzählungen definierten Konfigurationen werden während der Ausführung angewendet. Siehe [Alias-Bereinigungsarbeitsablauf](#alias-cleansing-workflow).
+Die Datenbereinigung wird von dem technischen Workflow **[!UICONTROL Alias-Verwaltung]** (aliasCleansing) durchgeführt. Die für die Auflistungen festgelegten Konfigurationen werden während der Ausführung des Workflows berücksichtigt. Siehe [Workflow Alias-Verwaltung](#alias-cleansing-workflow).
 
-Cleansing can be triggered via the **[!UICONTROL Cleanse values...]** link.
+Die Datenbereinigung kann über den Link **[!UICONTROL Werte bereinigen...]** ausgelöst werden.
 
 ![](assets/s_ncs_user_itemized_list_alias_start_normalize.png)
 
-The **[!UICONTROL Advanced parameters...]** link lets you set the date starting from which collected values are taken into account.
+Der Link **[!UICONTROL Erweiterte Parameter...]** ermöglicht die Festlegung des Datums, ab dem die gesammelten Werte berücksichtigt werden.
 
 ![](assets/s_ncs_user_itemized_list_alias_normalize.png)
 
-Click the **[!UICONTROL Start]** button to run data cleansing.
+Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um die Datenbereinigung zu beginnen.
 
 #### Berechnung der Eingabeanzahl {#calculating-entry-occurrences}
 
-Auf der **[!UICONTROL Alias]** Unterregisterkarte einer Liste kann die Anzahl der Vorkommen eines Alias unter allen eingegebenen Werten angezeigt werden. Diese Informationen sind eine Schätzung und werden in der **[!UICONTROL Hits]** Spalte angezeigt.
+Der Untertab **[!UICONTROL Alias]** einer Auflistung kann die Anzahl der Erscheinungen eines Alias unter allen eingegebenen Werten anzeigen. Es handelt sich bei dieser Information um eine Schätzung. Sie wird in der Spalte **[!UICONTROL Treffer]** angezeigt.
 
 >[!CAUTION]
 >
 >Die Berechnung der Anzahl der Alias-Erscheinungen kann zeitaufwändig sein. Diese Funktion sollte daher mit Vorsicht angewandt werden.
 
-Sie können die Trefferberechnung manuell über den **[!UICONTROL Cleanse values...]** Link ausführen. Klicken Sie dazu auf den **[!UICONTROL Advanced parameters...]** Link und wählen Sie die gewünschten Optionen aus.
+Sie können die Berechnung der Erscheinungen punktuell über den Link **[!UICONTROL Werte bereinigen...]** starten. Klicken Sie hierfür auf den Link **[!UICONTROL Erweiterte Parameter...]** und wählen Sie die gewünschte(n) Option(en) aus.
 
 ![](assets/s_ncs_user_itemized_list_alias_hits.png)
 
-* **[!UICONTROL Update the number of alias hits]**: Dadurch können Sie Treffer aktualisieren, die basierend auf dem eingegebenen Datum bereits berechnet wurden.
-* **[!UICONTROL Recalculate the number of alias hits from the start]**: ermöglicht die Ausführung von Berechnungen auf der gesamten Adobe Campaign-Plattform.
+* **[!UICONTROL Anzahl der Alias-Erscheinungen aktualisieren]**: Ermöglicht es, die bereits berechneten Treffer ab dem angegebenen Berücksichtigungsdatum zu aktualisieren.
+* **[!UICONTROL Anzahl der Alias-Erscheinungen von Beginn an neu berechnen]**: Ermöglicht die Durchführung der Berechnung auf der gesamten Adobe-Campaign-Plattform.
 
 Sie können auch einen dedizierten Workflow erstellen, um die Berechnung automatisch in bestimmten Abständen durchzuführen, beispielsweise jede Woche.
 
-To do this, create a copy of the **[!UICONTROL Alias cleansing]** workflow, change the scheduler and use the following settings in the **[!UICONTROL Enumeration value cleansing]** activity:
+Erstellen Sie hierfür eine Kopie des Workflows **[!UICONTROL Alias-Verwaltung]**, passen Sie die Planung an und konfigurieren Sie in der Aktivität **[!UICONTROL Bereinigung der Auflistungswerte]** folgende Parameter:
 
-* **-updateHits** , um die Anzahl der Aliastreffer zu aktualisieren,
-* **-updateHits:full** , um alle Aliastreffer neu zu berechnen.
+* **-updateHits**, um die Anzahl der Alias-Erscheinungen zu aktualisieren;
+* **-updateHits:full**, um die Anzahl aller Alias-Erscheinungen neu zu berechnen.
 
 #### Alias-Verwaltungs-Workflow {#alias-cleansing-workflow}
 
 Der Workflow **Alias-Verwaltung** führt die Bereinigung der Auflistungswerte durch. Er wird standardmäßig täglich ausgeführt.
 
-Der Zugriff erfolgt über den **[!UICONTROL Administration > Production > Technical workflows]** Knoten.
+Der Alias-Verwaltungs-Workflow ist über den Verzeichnisknoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** zugänglich.
 
 ![](assets/s_ncs_user_itemized_list_alias_wf.png)
 
