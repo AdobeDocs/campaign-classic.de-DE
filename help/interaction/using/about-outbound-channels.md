@@ -14,7 +14,7 @@ discoiquuid: a22a25bf-e920-4766-a864-00d32b4c8029
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
 
 ---
@@ -26,10 +26,10 @@ Angebote können in verschiedenen Platzierungen über eingehende oder ausgehende
 
 >[!NOTE]
 >
->Sie können sich auch dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) ansehen, in dem erfahren wird, wie ein Angebot auf einem ausgehenden Kanal bereitgestellt wird.
+>Sie können sich auch dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ansehen, in dem Sie erfahren, wie ein Angebot über einen Outbound-Kanal bereitgestellt wird.
 
-Damit ein Angebot von der Angebotsmaschine ausgewählt werden kann, muss es genehmigt und in einer Live-Umgebung verfügbar sein. Weitere Informationen finden Sie unter [Genehmigen und Aktivieren eines Angebots](../../interaction/using/approving-and-activating-an-offer.md).
+Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor validiert und für die Live-Umgebung freigegeben worden sein. Weitere Informationen finden Sie unter [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
 
-Die Angebotsdarstellung über einen ausgehenden Kommunikationskanal erfolgt per Direktversand, E-Mail, SMS usw., im Allgemeinen im Stapelmodus (siehe [Glossar](../../interaction/using/glossary.md)). Sie können auch den einheitlichen Modus verwenden, insbesondere mit dem Message Center (weitere Informationen finden Sie im [Message Center](../../message-center/using/about-transactional-messaging.md) -Handbuch).
+Die Angebotspräsentation über einen Outbound-Kommunikationskanal erfolgt per Direktversand, E-Mail, SMS usw., in der Regel im Batch-Modus (siehe [Glossar](../../interaction/using/glossary.md)). Sie können auch den einheitlichen Modus verwenden, insbesondere mit Message Center (weitere Informationen finden Sie im [Message Center](../../message-center/using/about-transactional-messaging.md)-Handbuch).
 
 Es existieren verschiedene Optionen, um Angebote zu unterbreiten. Dies kann beispielsweise durch einen Versand, eine Kampagne, einen Versandentwurf oder auch diverse Workflow-Aktivitäten geschehen.
