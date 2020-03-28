@@ -14,7 +14,7 @@ discoiquuid: 6101e083-3754-41e1-8a93-021b1a771dc0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ## Einleitung {#introduction}
 
-The **Marketing Resource Management (MRM)** module lets you control marketing actions in a collaborative mode by providing complete management and real-time tracking of the tasks, budgets and marketing resources involved.
+Das Modul **Marketing Resource Management (MRM)** ermöglicht die Steuerung kollaborativer Marketing-Aktionen durch eine vollständige Verwaltung und Echtzeit-Verfolgung von Aufgaben, Budgets und verwendeten Marketing-Ressourcen.
 
 Adobe-Campaign-Benutzer können so ihre Aktionen koordinieren und mithilfe von umfassenden Validierungsprozessen und benutzerfreundlichen Verfolgungswerkzeugen den reibunglosen Ablauf aller Etappen sicherstellen: Berichte, Validierungsverfolgung, Benachrichtigungen, Forumsdiskussionen etc. Die Benutzer werden im Falle von Fehlern oder Verspätungen und bei jeder neuen Validierungsetappe benachrichtigt.
 
@@ -42,13 +42,13 @@ Im Kontext von Adobe Campaign kommt folgenden Konzepten eine entscheidende Rolle
 
    Eine Aufgabe ist eine im Zuge einer Marketingkampagne durchzuführende Aktion, die einem Benutzer oder einer Gruppe von Benutzern zugeteilt wird. Unterschiedliche Aufgaben können einander untergeordnet werden: Eine übergeordnete Aufgabe ist nur dann erfüllt, wenn alle ihr untergeordneten Aufgaben beendet sind. Bei einer Aufgabe kann es sich beispielsweise um die Referenzierung einer Internetseite, eine Budgetüberprüfung, ein Protokoll o. Ä. handeln.
 
-   Weitere Informationen finden Sie unter [Erstellen und Verwalten von Aufgaben](../../campaign/using/creating-and-managing-tasks.md).
+   Weitere Informationen finden Sie unter [Verwaltung von Aufgaben](../../campaign/using/creating-and-managing-tasks.md).
 
 * **Marketing-Ressourcen**
 
    Adobe Campaign ermöglicht die Verfolgung der Ausführung von kollaborativen Marketingprojekten wie beispielsweise Kommunikationsmedien, Aktionsplanungen, Newsletter etc. Der Ausführungs- und Validierungszyklus dieser Marketing-Ressourcen kann über das Dashboard der Ressourcen bis zu ihrer Veröffentlichung überwacht werden.
 
-   Weitere Informationen finden Sie unter [Verwalten von Marketingressourcen](../../campaign/using/managing-marketing-resources.md).
+   Weitere Informationen finden Sie unter [Verwalten von Ressourcen](../../campaign/using/managing-marketing-resources.md).
 
 ## Benutzerfreundlichkeit {#user-friendliness}
 
@@ -58,11 +58,11 @@ Im Kontext von Adobe Campaign kommt folgenden Konzepten eine entscheidende Rolle
 >  
 >Mit Sendungen sowie der Profilverwaltung verbundene Funktionen werden in [diesem Abschnitt](../../delivery/using/communication-channels.md) erläutert.
 >
->Alle kampagnenbezogenen Funktionen sind im Abschnitt Zugriff auf [Marketingkampagnen](../../campaign/using/accessing-marketing-campaigns.md)ausführlich beschrieben.
+>Alle kampagnenbezogenen Funktionen werden im Abschnitt [Auf Marketing-Kampagnen zugreifen](../../campaign/using/accessing-marketing-campaigns.md) ausführlich beschrieben.
 
 In Adobe Campaign bieten Pläne und Programme folgende über eine Standardkonfiguration hinausgehende Funktionen:
 
-* Haushaltsführung. For more on this, refer to [Controlling costs](../../campaign/using/controlling-costs.md),
-* Aufgabenverwaltung. Weitere Informationen finden Sie unter [Erstellen und Verwalten von Aufgaben](../../campaign/using/creating-and-managing-tasks.md),
-* Marketing-Ressourcenverwaltung. Weitere Informationen finden Sie unter [Verwalten von Marketingressourcen](../../campaign/using/managing-marketing-resources.md).
+* Budgetverwaltung. Weiterführende Informationen hierzu finden Sie unter [Verwaltung von Budgets](../../campaign/using/controlling-costs.md),
+* Aufgabenverwaltung. Weitere Informationen finden Sie unter [Verwaltung von Aufgaben](../../campaign/using/creating-and-managing-tasks.md),
+* Verwaltung von Marketing-Ressourcen. Weitere Informationen finden Sie unter [Verwalten von Ressourcen](../../campaign/using/managing-marketing-resources.md).
 
