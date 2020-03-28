@@ -14,7 +14,7 @@ discoiquuid: fbc38e33-60a6-4d21-a598-312293d168fb
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 ---
@@ -26,22 +26,22 @@ source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
 
 In diesem Anwendungsbeispiel wird die Erstellung eines Filters beschrieben, der Newsletter-Abonnements entsprechend des von den Empfängern angegebenen E-Mail-Formats filtert.
 
-Dazu müssen wir einen vordefinierten Filter verwenden: Diese Filter sind mit einem Dokumenttyp verknüpft und werden über den **[!UICONTROL Administration > Configuration > Predefined filters]** Knoten aufgerufen. Diese Datenfilter können für jeden Typ von Editor (oder Dokument) in der Anwendung verwendet werden.
+Hierfür wird ein vordefinierter Filter verwendet. Diese einem Dokumenttyp zugeordnete Art von Filter ist über den Verzeichnisknoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** zugänglich. Er kann in jedem Editor- oder Dokumenttyp zum Einsatz kommen.
 
 Datenfilter werden wie vordefinierte Filter erstellt. Ein zusätzliches Feld ermöglicht es jedoch, den Dokumenttyp auszuwählen, für den der Filter angewendet werden soll.
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie einen neuen Filter über den **[!UICONTROL Administration > Configuration > Predefined filters]** Knoten.
-1. Click the **[!UICONTROL Select link]** icon to select the concerned document:
+1. Erstellen Sie einen neuen Filter ausgehend vom Verzeichnisknoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]**.
+1. Klicken Sie auf das Symbol **[!UICONTROL Verknüpfung auswählen]**, um das gewünschte Dokument auszuwählen:
 
    ![](assets/s_ncs_user_filter_choose_schema.png)
 
-1. Wählen Sie das Schema Abonnements (nms:subscription) aus und klicken Sie auf **[!UICONTROL OK]**
+1. Wählen Sie das Schema Abonnements (nms:subscription) aus und klicken Sie auf **[!UICONTROL OK.]**
 
    ![](assets/s_ncs_user_filter_select_schema.png)
 
-1. Click **[!UICONTROL Edit link]** to view the fields of the selected document.
+1. Klicken Sie zur Ansicht der Felder des ausgewählten Dokuments auf das Symbol **[!UICONTROL Verknüpfung ansehen]**.
 
    ![](assets/s_ncs_user_filter_edit_schema.png)
 
@@ -49,18 +49,18 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   Sie können auf diese Felder zugreifen, um Filterbedingungen im Hauptteil des Filter-Editors zu definieren. Ein Anwendungsfilter wird genau wie ein erweiterter Filter definiert. See [Creating an advanced filter](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   Diese Felder werden für die Bestimmung der Filterbedingungen im Filtereditor zugänglich sein. Die Bestimmung eines Anwendungsfilters erfolgt auf die gleiche Weise wie die eines erweiterten Filters. Siehe [Erweiterte Filter erstellen](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 1. Erstellen Sie einen neuen Abonnementfilter, um nur solche Abonnements anzuzeigen, für die kein E-Mail-Format bestimmt wurde:
 
    ![](assets/s_ncs_user_filter_parameters.png)
 
-1. Click **[!UICONTROL Save]** to add a filter to the pre-defined filters for this type of list.
-1. You can now use this filter in the **[!UICONTROL Subscriptions]** tab of the recipient profile; you can access the &quot;Unknown e-mail format&quot; filter by clicking the **[!UICONTROL Filters]** button.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Filter den vordefinierten Filtern für diesen Listentyp hinzuzufügen.
+1. Der Filter &quot;Unbekanntes E-Mail-Format&quot; kann nun im Tab **[!UICONTROL Abonnements]** des Empfängerprofils angewendet werden und ist über die Schaltfläche **[!UICONTROL Filter]** zugänglich.
 
    ![](assets/s_ncs_user_filter_on_events.png)
 
-   Der Name des aktuellen Filters wird über der Liste angezeigt. Um den Filter abzubrechen, klicken Sie auf das **[!UICONTROL Delete this filter]** Symbol.
+   Der Name des aktuellen Filters wird oberhalb der Liste angezeigt. Um den Filter aufzuheben, klicken Sie auf das Symbol **[!UICONTROL Filter entfernen]**.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)
 
