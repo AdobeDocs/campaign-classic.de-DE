@@ -14,7 +14,7 @@ discoiquuid: 279b0ae6-2578-4f1f-af59-13a1a9c80b32
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -42,7 +42,7 @@ Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den N
 
 ## Erstellung und Konfiguration der Vorlagen {#creating-and-configuring-the-template}
 
-Veröffentlichungsvorlagen werden standardmäßig im **[!UICONTROL Administration > Configuration > Publication templates]** Knoten gespeichert. Um eine neue Vorlage zu erstellen, klicken Sie auf die **[!UICONTROL New]** Schaltfläche über der Liste der Vorlagen.
+Standardmäßig werden Publikationsvorlagen im Knoten **[!UICONTROL Administration > Konfiguration > Publikationsvorlagen]** gespeichert. Klicken Sie dort zur Erstellung einer neuen Vorlage auf die Schaltfläche **[!UICONTROL Neu]**.
 
 Geben Sie den Namen der Vorlage (d. h. den aus Namensraum und Namen bestehenden Identifikationsschlüssel), den Titel, das zugeordnete Datenschema sowie das entsprechende Formular an.
 
@@ -52,15 +52,15 @@ Geben Sie den Namen der Vorlage (d. h. den aus Namensraum und Namen bestehenden 
 >
 >Bei Erstellung eines auf dieser Publikationsvorlage beruhenden Inhalts wird der hier vergebene Titel angezeigt.
 
-The **Check status to validate content generation** option forces a check on the &quot;Validated&quot; status of the content instances to authorize file generation. For more on this, refer to [Publication](#publication).
+Die Option **Zur Erstellung des Inhalts Status prüfen** stellt sicher, dass die Inhaltsinstanzen den Status „Validiert“ aufweisen, bevor die Datei erzeugt wird. Weitere Informationen hierzu finden Sie im Abschnitt [Publikation](#publication).
 
 Für jedes Ausgabeformat muss eine Umwandlungsvorlage hinzugefügt werden. Es können so viele Umwandlungsvorlagen wie nötig erstellt werden.
 
-Das **[!UICONTROL Name of template]** Feld ist eine kostenlose Beschriftung, die den Rendertyp bei der Ausgabe beschreibt. Die Veröffentlichungseinstellungen stehen für jede Transformationsvorlage auf den Registerkarten zur Verfügung.
+Im Feld **[!UICONTROL Vorlagenname]** ist ein frei wählbarer Titel anzugeben, der das Rendering des Ausgabedokuments beschreibt. Die verschiedenen Publikationsparameter sind für jede Umwandlungsvorlage separat in den einzelnen Tabs zu erfassen.
 
 ### Rendering {#rendering}
 
-The **[!UICONTROL Rendering]** tab, choose:
+Konfigurieren Sie im **[!UICONTROL Rendering]**-Tab folgende Parameter:
 
 * den Typ der Umwandlungsvorlage: XSL-Stylesheet oder JavaScript-Template;
 * das Format des Ausgabedokuments: HTML, Text, XML oder RTF;
@@ -68,17 +68,17 @@ The **[!UICONTROL Rendering]** tab, choose:
 
 ### Publikation {#publication}
 
-Publication involves generating the output document in the form of a file, if the type selected is **[!UICONTROL File]**.
+Publikation bezeichnet den Vorgang der Erzeugung des Ausgabedokuments in Form einer Datei. Wählen Sie hierzu im gleichnamigen Tab im Feld Typ die Option **[!UICONTROL Datei]**.
 
 ![](assets/d_ncs_content_model2.png)
 
 Des Weiteren können folgende Publikationsparameter konfiguriert werden:
 
-* Der Zeichensatz für die Ausgabedateikodierung kann über das **[!UICONTROL Encoding]** Feld erzwungen werden. Der Zeichensatz Latein 1 (1252) wird standardmäßig verwendet.
-* Die **[!UICONTROL Multi-file generation]** Option aktiviert einen speziellen Veröffentlichungsmodus für Dokumente. Diese Option besteht darin, ein Partitionierungs-Tag am Anfang jeder Seite des Ausgabedokuments zu füllen. Beim Generieren des Inhalts wird für jedes ausgefüllte Partitionierungs-Tag eine Datei erzeugt. Dieser Modus wird verwendet, um Mini-Sites aus einem Inhaltsblock zu generieren. for more on this, refer to [Multi-file generation](#multi-file-generation).
-* Das **[!UICONTROL Location]** Feld enthält den Namen der Ausgabedatei. Der Name kann aus Variablen bestehen, um einen automatischen Dateinamen zu generieren.
+* **[!UICONTROL Zeichenkodierung]** der Ausgabedatei. Standardmäßig wird die Zeichensatztabelle Latin 1 (1252) verwendet.
+* **[!UICONTROL Multidatei-Erzeugung]** fügt zu Beginn jeder neuen Seite des Ausgabedokuments ein Trennzeichen ein. Bei der Inhaltserzeugung werden so viele Dateien erstellt, wie Trennzeichen angegeben wurden. Dieser Modus wird für die Erstellung von Minisites verwendet. Weitere Informationen hierzu finden Sie im Abschnitt [Multidatei-Erzeugung](#multi-file-generation).
+* Das Eingabefeld **[!UICONTROL Speicherort]** enthält den Namen der Ausgabedatei. Wenn dieser aus Variablen besteht, wird er automatisch erzeugt.
 
-   A variable is populated with the following format: **`$(<xpath>)`, where `<xpath>` is the path of a field of the publication template data schema.
+   Die Variablen sind wie folgt anzugeben: **`$(<xpath>)`, wobei `<xpath>` den Pfad eines Felds des der Publikationsvorlage zugrunde liegenden Datenschemas bezeichnet.
 
    Beispielsweise kann der Dateiname auf ein Datumsfeld verweisen. In diesem Fall ist die Funktion **$date-format** zu verwenden und Feldpfad sowie Ausgabeformat sind anzugeben.
 
@@ -92,7 +92,7 @@ Des Weiteren können folgende Publikationsparameter konfiguriert werden:
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Inhaltserstellung finden Sie unter [Erstellen einer Inhaltsinstanz](../../delivery/using/using-a-content-template.md#creating-a-content-instance).
+   >Weitere Informationen zur Inhaltserstellung finden Sie unter [Erstellung einer Inhaltsinstanz](../../delivery/using/using-a-content-template.md#creating-a-content-instance).
 
 ### Versand {#delivery}
 
@@ -102,7 +102,7 @@ In diesem Tab kann eine Versandvorlage ausgewählt werden, um direkt einen Versa
 
 >[!NOTE]
 >
->For an example of delivery creation based on a content, refer to [Delivering a content instance](../../delivery/using/using-a-content-template.md#delivering-a-content-instance).
+>Ein Beispiel für einen Versand, der einen im Content-Management erstellten Inhalt verwendet, finden Sie im Abschnitt [Versand einer Inhaltsinstanz](../../delivery/using/using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregator {#aggregator}
 
@@ -110,13 +110,13 @@ Sie können das XML-Ausgabedokument durch die Aggregation von Daten mithilfe ein
 
 ### Multidatei-Erzeugung {#multi-file-generation}
 
-Um mehrere Dateigenerationen zu aktivieren, wählen Sie die **[!UICONTROL Multi-file generation]** Option im Veröffentlichungsmodell aus. Mit dieser Option können Sie Partitionierungs-Tags am Anfang jeder Seite des Ausgabedokuments im Stylesheet angeben. Die Generierung des Inhalts erzeugt eine Datei für jedes aufgetretene Partitionierungstag.
+Zur Verwendung dieser Option ist das Feld **[!UICONTROL Multidatei-Erzeugung]** in der Publikationsvorlage anzukreuzen. Auf diese Weise können im Stylesheet Trennzeichen zu Beginn jeder neuen Seite des Ausgabedokuments eingefügt werden. Bei der Inhaltserzeugung werden so viele Dateien erstellt, wie Trennzeichen angegeben wurden.
 
 Das zu verwendende Trennzeichen stellt sich wie folgt dar:
 
-**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`** wobei **`<name_of_file>`** der Dateiname der zu generierenden Seite ist.
+**`<xsl:comment> #nl:output_replace(<name_of_file>) </xsl:comment>`**, wobei **`<name_of_file>`** der Dateiname der zu erzeugenden Seite ist.
 
-**Beispiel:**Generieren mehrerer Dateien mit dem Schema &quot;cus:book&quot;
+**Beispiel:** Multidatei-Erzeugung anhand des Schemas &quot;cus:Buch&quot;.
 
 Ziel ist es, eine Hauptseite zu erzeugen, die die Kapitel auflistet und die Möglichkeit bietet, die Details der Kapitel in einer externen Seite anzuzeigen.
 
@@ -178,12 +178,12 @@ Das Trennzeichen wird zu Beginn jeder Seite angegeben, die in die zu erzeugende 
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
-The filename is constructed with the **$(path)** variable containing the publication path and **`<xsl:value-of select="@id" />`**, which matches the identifier of the chapter in the input document.
+Der Dateiname wird mit der Variable **$(path)** konstruiert, welche den Publikationspfad bezeichnet, ergänzt durch **`<xsl:value-of select="@id" />`**, was der Kennung des Kapitels im Quelldokument entspricht.
 
 In der Publikationsvorlage müssen beide Stylesheets &quot;cus:Buch.xsl&quot; und &quot;cus:Kapitel.xsl&quot; angegeben werden.
 
-The **[!UICONTROL Multi-file generation]** option must be active on the chapter transformation model:
+In der Umwandlungsvorlage der Kapitel ist die Option **[!UICONTROL Multidatei-Erzeugung]** anzukreuzen:
 
 ![](assets/d_ncs_content_chunk2.png)
 
-The **[!UICONTROL Location]** field is not used in the generation of multiple files, but you must still populate this field to avoid an error when publishing.
+Auch wenn das Feld **[!UICONTROL Speicherort]** bei der Multidatei-Erzeugung nicht verwendet wird, muss ein Dateiname angegeben werden, um eine Fehlermeldung zu vermeiden.
