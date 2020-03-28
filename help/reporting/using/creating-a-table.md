@@ -14,7 +14,7 @@ discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -28,11 +28,11 @@ Sie haben die Möglichkeit, in Berichten je nach anzuzeigenden Daten verschieden
 
 ## Liste mit Gruppierung erstellen {#creating-a-list-with-group}
 
-Mit einer **[!UICONTROL List with group]** Typtabelle können Sie Daten in der Tabelle gruppieren und Statistiken dazu erstellen. Sie können beispielsweise Summen und Zwischensummen für die Daten erstellen. Jede Gruppe hat ihre eigene Kopf-, Detail- und Fußzeile.
+Eine **[!UICONTROL Liste mit Gruppierung]** ermöglicht es, bestimmte Daten in der Tabelle zusammenzufassen und Statistiken über die enthaltenen Daten zu erzeugen. Sie können beispielsweise Summen und Zwischensummen erstellen. Jede Gruppierung enthält eine Header-, Detail- und Footer-Zeile.
 
 >[!CAUTION]
 >
->Der **[!UICONTROL Page]** Aktivität, die die Tabelle enthält, muss eine **[!UICONTROL Query]** oder **[!UICONTROL Script]** Aktivität vorausgehen, um die im Bericht zu analysierenden Daten zu erfassen. Weitere Informationen zu diesen Aktivitäten finden Sie unter [Datenerfassung zur Analyse](../../reporting/using/collecting-data-to-analyze.md) und [Skriptaktivität](../../reporting/using/advanced-functionalities.md#script-activity).
+>Der die Tabelle enthaltenden **[!UICONTROL Seite]**-Aktivität muss eine **[!UICONTROL Abfrage]**- oder **[!UICONTROL Script]**-Aktivität vorangehen, um die Daten abzurufen, die im Bericht analysiert werden sollen. Weitere Informationen zu diesen Aktivitäten finden Sie unter [Zu analysierende Daten abrufen](../../reporting/using/collecting-data-to-analyze.md) und [Script-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
 
 ### Grundprinzip {#operating-principle}
 
@@ -40,30 +40,30 @@ Es besteht die Möglichkeit, dass Sie mehrere Datenkategorien gleichzeitig zu an
 
 Im unten stehenden Beispiel werden mithilfe der Gruppierung die Gesamtheit aller Kampagnen der Datenbank, die Sendungen und die Anzahl der pro Versand und pro Kampagne versendeten Nachrichten angezeigt.
 
-It lets you list the campaigns (**[!UICONTROL Label (Campaign)]**, the list of deliveries (**[!UICONTROL Label]** ) linked to the campaign, and lets you count the number of messages sent per delivery (**[!UICONTROL Processed)]**, before adding them up for each campaign (**[!UICONTROL Sum(@processed)]** ).
+Sie ermöglicht es, die Liste der Kampagnen (**[!UICONTROL Titel (Kampagne)]**) und die Liste der zur Kampagne gehörenden Sendungen (**[!UICONTROL Titel]**) zu verzeichnen sowie die Anzahl an pro Versand versendeten Nachrichten zu zählen (**[!UICONTROL Verarbeitet]**) und sie für jede Kampagne zu addieren (**[!UICONTROL Sum(@processed)]** ).
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
 ### Umsetzung {#implementation-steps}
 
-Ein Beispiel für die vollständige Implementierung finden Sie hier: Anwendungsfall: [Erstellen Sie einen Bericht mit einer Gruppenliste](#use-case--create-a-report-with-a-group-list).
+Ein Beispiel für die vollständige Implementierung finden Sie hier: [Anwendungsbeispiel: Bericht mit einer Liste mit Gruppierung erstellen](#use-case--create-a-report-with-a-group-list).
 
 Im Folgenden werden die Etappen zur Erstellung einer Tabelle vom Typ &quot;Liste mit Gruppierung&quot; kurz zusammengefasst:
 
-1. Gehen Sie zum Berichtsdiagramm und platzieren Sie eine **[!UICONTROL Query]** Aktivität. Weitere Informationen finden Sie unter [Zu analysierende](../../reporting/using/collecting-data-to-analyze.md)Daten erfassen.
+1. Gehen Sie zur Grafik des Berichts und platzieren Sie eine **[!UICONTROL Abfrageaktivität]**. Siehe [Zu analysierende Daten abrufen](../../reporting/using/collecting-data-to-analyze.md).
 1. Geben Sie die Quelltabelle an und wählen Sie die Felder der Tabelle aus, auf die sich die Statistiken beziehen sollen.
-1. Platzieren Sie eine **[!UICONTROL Page]** Aktivität in das Diagramm. Weitere Informationen finden Sie unter [Statische Elemente](../../reporting/using/creating-a-new-report.md#static-elements).
-1. Fügen Sie eine **[!UICONTROL List with group]** Typtabelle in die Seite ein.
+1. Platzieren Sie eine **[!UICONTROL Seitenaktivität]** in der Grafik. Weitere Informationen finden Sie unter [Statische Elemente](../../reporting/using/creating-a-new-report.md#static-elements).
+1. Fügen Sie ein Diagramm vom Typ **[!UICONTROL Liste mit Gruppierung]** in die Seite ein.
 1. Geben Sie den Pfad der Daten an, also die als Datenquelle in der Abfrage gewählte Tabelle.
 
    Diese Etappe ist zwingend erforderlich, um die Felder der Quelltabelle zu finden und sie in die Zellen der Tabelle einzufügen.
 
 1. Erstellen Sie die Tabelle und Ihren Inhalt.
-1. Zeigen Sie den abgeschlossenen Bericht auf der **[!UICONTROL Preview]** Registerkarte an. Anschließend können Sie den Bericht veröffentlichen und ihn bei Bedarf in ein anderes Format exportieren. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Überprüfen Sie im Tab **[!UICONTROL Vorschau]** den erstellten Bericht. Er kann nun publiziert und bei Bedarf in einem anderen Format exportiert werden. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Zeilen und Spalten hinzufügen {#adding-lines-and-columns}
 
-By default, a **[!UICONTROL List with group]** type table includes a header, a detail line, and a footer line.
+Eine Tabelle vom Typ **[!UICONTROL Liste mit Gruppierung]** besteht standardmäßig aus einer Header-, einer Detail- und einer Footer-Zeile.
 
 Eine Gruppierung enthält selbst ebenfalls eine Header-, eine Detail- und eine Footer-Zeile.
 
@@ -89,11 +89,11 @@ Die Gruppierung kann in einer beliebigen Zeile der Tabelle positioniert werden. 
 
 ![](assets/s_advuser_ergo_listgroup_006.png)
 
-The nature of the line you add depends on the location of the cursor. For example, to add a header line, place your cursors on a header, then click **[!UICONTROL Add > A line above/below]**.
+Um zum Beispiel eine Header-Zeile hinzuzufügen, muss der Mauszeiger auf einem Header positioniert und auf **[!UICONTROL Hinzufügen > Zeile oberhalb/unterhalb]** geklickt werden.
 
 ![](assets/s_advuser_ergo_listgroup_006a.png)
 
-The width of the columns can be modified via the **[!UICONTROL Column format]** item.
+Die Breite der Spalten kann über den Menüpunkt **[!UICONTROL Spaltenformat]** geändert werden.
 
 **Gruppierung**: Um eine Gruppierung hinzuzufügen, klicken Sie ebenfalls in eine Zeile und wählen Sie den entsprechenden Punkt im Kontextmenü aus.
 
@@ -103,7 +103,7 @@ The width of the columns can be modified via the **[!UICONTROL Column format]** 
 
 Um eine Zeile der Tabelle zu bearbeiten und Inhalt und Format zu definieren, klicken Sie in die Zelle und nutzen Sie das Kontextmenü.
 
-Use the **[!UICONTROL Expression]** menu entry to select the values to display.
+Wählen Sie den Menüpunkt **[!UICONTROL Ausdruck]**, um die anzuzeigenden Werte zu bestimmen.
 
 ![](assets/s_advuser_ergo_listgroup_010.png)
 
@@ -115,11 +115,11 @@ Use the **[!UICONTROL Expression]** menu entry to select the values to display.
 
 * Erfassen Sie einen Titel, zum Beispiel in einer Header-Zelle.
 
-   Verwenden Sie dazu denselben Prozess wie zum Einfügen eines Felds in die Datenbank, wählen Sie jedoch keinen Ausdruck aus. Geben Sie die Bezeichnung in das **[!UICONTROL Label]** Feld ein. Es wird so angezeigt, wie es ist.
+   Gehen Sie hierzu vor wie beim Einfügen eines Datenbank-Felds, aber wählen Sie keinen Ausdruck aus. Erfassen Sie den Titel im Feld **[!UICONTROL Titel]**: Er wird genau so angezeigt.
 
 * Berechnen Sie ein Aggregat (Durchschnitt, Summe etc.) und lassen Sie es in einer Zelle anzeigen.
 
-   To do this, use the **[!UICONTROL Aggregates]** menu entry and select the desired campaign.
+   Nutzen Sie hierzu den Menüpunkt **[!UICONTROL Aggregate]** und wählen Sie die gewünschte Funktion aus.
 
    ![](assets/s_advuser_ergo_listgroup_008.png)
 
@@ -127,24 +127,24 @@ Use the **[!UICONTROL Expression]** menu entry to select the values to display.
 
 ![](assets/s_advuser_ergo_listgroup_017.png)
 
-To define the cell format, the **[!UICONTROL Cell format...]** menu lets you access all formatting options available for the selected cell.
+Um das Zellenformat zu definieren, ermöglicht der Menüpunkt **[!UICONTROL Zellenformat...]** Zugriff auf alle für die gewählte Zelle verfügbaren Formatierungsoptionen.
 
 Diese Optionen erlauben es, die spätere Darstellung des Berichts anzupassen und die Lesbarkeit der enthaltenen Informationen zu optimieren.
 
-Verwenden Sie beim Exportieren von Daten in Excel das **[!UICONTROL Carriage return]** Feld: Wählen Sie den **[!UICONTROL Yes]** Wert aus, um den Wagenrücklauf zu erzwingen. Dieser Wert wird beim Exportieren beibehalten. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
+Das Feld **[!UICONTROL Zeilenumbruch]** ist im Rahmen eines Datenexports im Excel-Format von Nutzen: Wählen Sie den Wert **[!UICONTROL Ja]** aus, um den Zeilenumbruch zu forcieren. Dieser Wert wird beim Export berücksichtigt. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
-The **[!UICONTROL Cell format]** window lets you access the following tab:
+Über das Fenster **[!UICONTROL Zellen formatieren]** erhalten Sie Zugriff auf den folgenden Tab:
 
-* Registerkarte **[!UICONTROL Value]**
-* Registerkarte **[!UICONTROL Borders]**
-* Registerkarte **[!UICONTROL Click]**
-* Registerkarte **[!UICONTROL Extra]**
+* Den Tab **[!UICONTROL Wert]**
+* Den Tab **[!UICONTROL Rahmen]**
+* Den Tab **[!UICONTROL Klick]**
+* Den Tab **[!UICONTROL Mehr]**
 
-The **[!UICONTROL Value]** tab lets you change the font and the various value attributes or to define a format based on their nature.
+Im Tab **[!UICONTROL Wert]** können die Schriftart und die unterschiedlichen Attribute der Werte verändert oder ihnen ein ihrer Art entsprechendes Format zugeteilt werden.
 
 ![](assets/s_advuser_ergo_listgroup_009.png)
 
-The format changes data display: for example, the **[!UICONTROL Number]**, **[!UICONTROL Monetary]** and **[!UICONTROL Percentage]** formats allow you to align the figures on the right and display decimal points.
+Das Format ändert die Anzeige der Daten: Die Formate **[!UICONTROL Zahl]**, **[!UICONTROL Währung]** und **[!UICONTROL Prozent]** erlauben beispielsweise eine rechtsbündige Anzeige der Ziffern mit Dezimalen.
 
 Konfigurationsbeispiel Währungsformat: Sie können die Währung angeben, in der die Werte ausgedrückt werden, das Tausendertrennzeichen bei Bedarf verwenden und negative Werte in Rot anzeigen. Die Position des Währungssymbols hängt von der Sprache des Benutzers ab, die in seinem Profil festgelegt wurde.
 
@@ -158,7 +158,7 @@ Im Tab **Rahmen** können den Zeilen und Spalten der Tabelle Rahmen hinzufügt w
 
 ![](assets/s_advuser_ergo_listgroup_014.png)
 
-Bei Bedarf können Sie Ränder in der Tabellenvorlage definieren (**[!UICONTROL Administration > Configuration > Form rendering]** ).
+Bei Bedarf können Rahmen auch in der Tabellenvorlage hinzugefügt werden (**[!UICONTROL Administration > Konfiguration > Formular-Rendering]** ).
 
 Die Syntax lautet in diesem Fall wie folgt:
 
@@ -192,13 +192,13 @@ im Excel-Tab:
  </style> 
 ```
 
-The **[!UICONTROL Click]** tab lets you define an action when the user clicks the content of a cell or of the table.
+Im Tab **[!UICONTROL Klick]** kann definiert werden, welche Aktion der Klick auf den Inhalt einer Zelle der Tabelle ermöglicht.
 
 Im nachstehenden Beispiel wird durch Klick auf die Zelle die zweite Seite des Berichts angezeigt: Sie enthält Informationen bezüglich des in der Zelle enthaltenen Versands.
 
 ![](assets/s_advuser_ergo_listgroup_015.png)
 
-The **Extra** tab lets you link a visual to your data, such as a colored mark or a value bar. The colored mark is used when the table is shown as a legend in a chart. Weitere Informationen finden Sie im Implementierungsbeispiel: [Schritt 5: Erstellen der zweiten Seite](#step-5---create-the-second-page)
+Mit dem Tab **Mehr** kann das Layout der Daten ausgewählt werden, zum Beispiel eine Farbplakette oder ein Bargraph. Die Farbplakette wird genutzt, wenn die Tabelle als Legende einer Grafik angezeigt wird. Weitere Informationen finden Sie im Implementierungsbeispiel: [5. Schritt - Zweite Seite konfigurieren](#step-5---create-the-second-page)
 
 ![](assets/s_advuser_ergo_listgroup_016.png)
 
@@ -210,11 +210,11 @@ In diesem Beispiel wird ein zweiseitiger Bericht erstellt: Die erste Seite soll 
 
 ### 1. Schritt - Bericht erstellen {#step-1---create-a-report}
 
-Create a new report that concerns the campaign schema, **[!UICONTROL Campaigns (nms)]**.
+Erstellen Sie einen neuen Bericht, der sich auf das Kampagnen-Schema bezieht (**[!UICONTROL Kampagnen (nms)]**).
 
 ![](assets/s_advuser_report_listgroup_001.png)
 
-Click **[!UICONTROL Save]** to create the report.
+Klicken Sie auf **[!UICONTROL Speichern]**.
 
 Positionieren Sie im Bericht die ersten Komponenten zur Erstellung des Inhalts: eine erste Abfrage und eine erste Seite.
 
@@ -226,8 +226,8 @@ Die erste Abfrage soll die Sendungen aller Kampagnen abrufen.
 
 Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Sie sie folgenderweise:
 
-1. Start by changing the schema on which the query&#39;s source is applied: select the **[!UICONTROL Deliveries (nms)]** schema.
-1. Click the **[!UICONTROL Edit query]** link and display the advanced fields.
+1. Ändern Sie zunächst das Schema, auf das sich die Abfrage bezieht: Wählen Sie das Schema **[!UICONTROL Sendungen (nms)]**.
+1. Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und aktivieren Sie die Anzeige der erweiterten Felder.
 
    ![](assets/reporting_quick_start_query-1.png)
 
@@ -253,7 +253,7 @@ Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Si
    * Fehlerrate: **@errorRatio**
 
 
-1. Klicken Sie zweimal auf die **[!UICONTROL Next]** Schaltfläche, um zum **[!UICONTROL Data filtering]** Schritt zu gelangen.
+1. Klicken Sie zweimal auf die Schaltfläche **[!UICONTROL Weiter]** bis zur Etappe **[!UICONTROL Datenfilterung]**.
 
    Fügen Sie eine Filterbedingung hinzu, um nur die zu einer Kampagne gehörenden Sendungen abzurufen.
 
@@ -261,13 +261,13 @@ Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Si
 
    ![](assets/reporting_quick_start_query_filter.png)
 
-1. Click **[!UICONTROL Finish]** to save these conditions, then click **[!UICONTROL Ok]** to close the query editor.
+1. Klicken Sie zur Speicherung dieser Bedingung auf **[!UICONTROL Beenden]** und zum Schließen des Abfrage-Editors auf **[!UICONTROL OK]**.
 
 ### 3. Schritt - Erste Seite konfigurieren {#step-3--create-the-first-page}
 
 In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie folgt vor:
 
-1. Open the **[!UICONTROL Page]** activity and enter its title, for instance **Deliveries** in this case.
+1. Öffnen Sie die **[!UICONTROL Seite]**-Aktivität und vergeben Sie einen Titel, hier zum Beispiel **Sendungen**.
 
    ![](assets/s_advuser_report_listgroup_003.png)
 
@@ -275,11 +275,11 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
    ![](assets/s_advuser_report_listgroup_004.png)
 
-1. Klicken Sie auf den **[!UICONTROL Table data XPath...]** Link und wählen Sie den Lieferlink, d. h. `[query/delivery]`.
+1. Klicken Sie auf den Link **[!UICONTROL Pfad der Tabellendaten...]** und wählen Sie den Sendungen-Link aus, also `[query/delivery]`.
 
    ![](assets/s_advuser_report_listgroup_005.png)
 
-1. Click the **[!UICONTROL Data]** tab and change layout of the table: add three columns on the right.
+1. Klicken Sie auf den Tab **[!UICONTROL Daten]** und vergrößern Sie die Tabelle, indem Sie sie rechts auf insgesamt drei Spalten erweitern.
 
    ![](assets/s_advuser_report_listgroup_006.png)
 
@@ -293,31 +293,31 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
    ![](assets/s_advuser_report_listgroup_007.png)
 
-1. Edit the first cell of the group header and insert the **[!UICONTROL Label]** field of the campaigns as an expression.
+1. Bearbeiten Sie die erste Zelle des Gruppierungs-Headers und fügen Sie das **[!UICONTROL Titel]**-Feld der Kampagnen als Ausdruck ein.
 
    ![](assets/s_advuser_report_listgroup_009.png)
 
-1. Edit the second cell of the details line and select the deliveries **[!UICONTROL Label]**.
+1. Bearbeiten Sie die zweite Zelle der Detailzeile und wählen Sie das **[!UICONTROL Titel]**-Feld der Sendungen.
 
    ![](assets/s_advuser_report_listgroup_011.png)
 
-1. Bearbeiten Sie das Format dieser Zelle und öffnen Sie die **[!UICONTROL Click]** Registerkarte. Konfigurieren Sie die entsprechenden Optionen, damit beim Klicken auf den Namen einer Bereitstellung die entsprechende Anzeige im selben Fenster geöffnet wird.
+1. Bearbeiten Sie das Format der Zelle und öffnen Sie den Tab **[!UICONTROL Klick]**. Konfigurieren Sie die entsprechenden Optionen dahingehend, dass beim Klick auf den Namen eines Versands sich dieser im selben Fenster öffnet.
 
    ![](assets/s_advuser_report_listgroup_0111.png)
 
-   Wählen Sie dazu eine **[!UICONTROL Next page]** Typaktion und dann **[!UICONTROL In the same window]** als offene Option aus.
+   Wählen Sie hierzu die Aktion vom Typ **[!UICONTROL Nächste Seite]** mit der Fensteroption **[!UICONTROL Im selben Fenster]**.
 
    ![](assets/s_advuser_report_listgroup_0112.png)
 
-1. In the lower section of the window, click **[!UICONTROL Add]** and specify the **`/vars/selectedDelivery`** path and the **[!UICONTROL @deliveryId]** expression that matches the alias of the primary key of the delivery, as defined in the query created previously. Mit dieser Formel können Sie auf die ausgewählte Bereitstellung zugreifen.
+1. Klicken Sie im unteren Bereich des Fensters auf **[!UICONTROL Hinzufügen]** und geben Sie den Pfad **`/vars/selectedDelivery`** sowie den Ausdruck **[!UICONTROL @deliveryId]** an, der dem Alias des Primärschlüssels des Versands entspricht, der in der zuvor erstellten Abfrage definiert wurde. Diese Formel ermöglicht den Zugriff auf den gewählten Versand.
 
    ![](assets/s_advuser_report_listgroup_010.png)
 
-1. Edit the second cell of the footer line of the group and enter **[!UICONTROL Total per campaign]** as a label.
+1. Bearbeiten Sie die zweite Zelle des Gruppierungs-Footers und geben Sie den Titel **[!UICONTROL Gesamt je Kampagne]** ein.
 
    ![](assets/s_advuser_report_listgroup_012.png)
 
-1. Edit the third cell of the header line of the group and enter **[!UICONTROL Number of messages sent]** as a label.
+1. Bearbeiten Sie die dritte Zelle des Gruppierungs-Headers und geben Sie den Titel **[!UICONTROL Anzahl gesendeter Nachrichten]** an.
 
    ![](assets/s_advuser_report_listgroup_013.png)
 
@@ -327,7 +327,7 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
    ![](assets/s_advuser_report_listgroup_014.png)
 
-1. Edit the third cell of the footer line of the group, select the processed delivery indicator and apply the **[!UICONTROL Sum]** aggregate to it.
+1. Bearbeiten Sie die dritte Zelle des Gruppierungs-Footers, wählen Sie den Indikator der verarbeiteten Sendungen und teilen Sie ihm das Aggregat **[!UICONTROL Summe]** zu.
 
    ![](assets/s_advuser_report_listgroup_015.png)
 
@@ -337,21 +337,21 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
 1. Markieren Sie diese Zelle, um die Fehlerrate der Sendungen als Bargraph darzustellen.
 
-   Rufen Sie dazu das Zellenformat auf und gehen Sie dann zur **[!UICONTROL More]** Registerkarte. Wählen Sie den **[!UICONTROL Value bar]** Eintrag in der Dropdownliste aus und wählen Sie die **[!UICONTROL Hide the cell value]** Option aus.
+   Gehen Sie hierzu in den Tab **[!UICONTROL Mehr]** des Zellenformats. Wählen Sie dort das Format **[!UICONTROL Bargraph]** in der Dropdown-Liste aus und aktivieren Sie die Option **[!UICONTROL Zellenwert ausblenden]**.
 
    ![](assets/s_advuser_report_listgroup_023.png)
 
-   Sie können jetzt eine Darstellung des Berichts anzeigen. Klicken Sie auf die **[!UICONTROL Preview]** Registerkarte und wählen Sie die **[!UICONTROL Global]** Option aus: zeigt die Liste aller Auslieferungen in der Adobe Campaign-Datenbank, die mit einer Kampagne verknüpft sind.
+   Sie können nun die **[!UICONTROL Vorschau]** des Berichts im gleichnamigen Tab einsehen. Aktivieren Sie die Option **[!UICONTROL Allgemein]**: Die Liste aller mit einer Kampagne verbundenen Sendungen aus der Adobe-Campaign-Datenbank wird angezeigt.
 
    ![](assets/s_advuser_report_listgroup_025.png)
 
-   Es wird empfohlen, die **[!UICONTROL Preview]** Registerkarte zu verwenden, um sicherzustellen, dass die Daten in der Tabelle korrekt ausgewählt und konfiguriert sind. Danach können Sie die Tabelle formatieren.
+   Es wird empfohlen, stets im **[!UICONTROL Vorschau]**-Tab zu überprüfen, ob die Tabellendaten korrekt ausgewählt und konfiguriert wurden. Nach der Überprüfung können Sie Ihre Tabelle formatieren.
 
-1. Apply the **[!UICONTROL Bold]** style to the cells that show the total per campaign and the total number of messages processed.
+1. Wählen Sie für die Zellen, die die Gesamtanzahl pro Kampagne und die Summen der verarbeiteten Nachrichten anzeigen, den Stil **[!UICONTROL Fett]** aus.
 
    ![](assets/s_advuser_report_listgroup_024.png)
 
-1. Click the 1st cell of the group header line, the one that displays the campaign name, and select **[!UICONTROL Edit > Merge to right]**.
+1. Klicken Sie auf die erste Zelle des Gruppierungs-Headers, die den Namen der Kampagne enthält, und wählen Sie **[!UICONTROL Bearbeiten > Nach rechts verbinden]**.
 
    ![](assets/s_advuser_report_listgroup_026.png)
 
@@ -367,7 +367,7 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
 
 Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details eines Versands anzuzeigen, wenn er vom Benutzer des Berichts angeklickt wird. Bevor Sie die Abfrage hinzufügen, öffnen Sie die bereits erstellte Seite und aktivieren Sie die ausgehende Transition, um sie mit der Abfrage verbinden zu können.
 
-1. Add a new query after the **[!UICONTROL Page]** activity and edit its schema: select the **[!UICONTROL Recipient delivery logs]** schema.
+1. Fügen Sie die neue Abfrage nach der **[!UICONTROL Seite]**-Aktivität ein und wählen Sie als Quellschema die **[!UICONTROL Versandlogs der Empfänger]** aus.
 
    ![](assets/reporting_quick_start_query-2.png)
 
@@ -377,7 +377,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
       ![](assets/reporting_quick_start_query-2_count.png)
 
-   * collect recipient email domains and group information on this field: to do this, select the **[!UICONTROL Group]** option in the domain name column.
+   * Fragen Sie die E-Mail-Domains der Empfänger ab und aktivieren Sie die Gruppierung für dieses Feld. Aktivieren Sie hierzu die Option **[!UICONTROL Gruppieren]** der Spalte des Domain-Namens.
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Ordnen Sie den Feldern die folgenden Alias zu:
@@ -388,11 +388,11 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
       ![](assets/reporting_quick_start_query-2_alias.png)
 
 
-1. Click the **[!UICONTROL Next]** button twice: this takes you to the **[!UICONTROL Data filtering]** step.
+1. Klicken Sie zweimal auf die Schaltfläche **[!UICONTROL Weiter]**, bis zum Schritt **[!UICONTROL Datenfilter]**.
 
    Fügen Sie eine Filterbedingung hinzu, um nur die mit dem markierten Versand zusammenhängenden Informationen abzufragen.
 
-   The syntax is as follows: Foreign key of the &#39;Delivery&#39; link equals the value of the setting `$([vars/selectedDelivery])`
+   Die Syntax lautet wie folgt: Fremdschlüssel der &#39;Versand&#39;-Relation ist gleich dem Wert dieses Parameters `$([vars/selectedDelivery])`
 
    ![](assets/s_advuser_report_listgroup_017.png)
 
@@ -401,43 +401,43 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 ### 5. Schritt - Zweite Seite konfigurieren {#step-5---create-the-second-page}
 
 1. Öffnen Sie die Seite und vergeben Sie einen Titel, hier **E-Mail-Domains**.
-1. Uncheck the **[!UICONTROL Enable output transitions]** option: this is the last page of the report and will not be followed by another activity.
+1. Deaktivieren Sie die Option **[!UICONTROL Ausgehende Transitionen aktivieren]**: Diese Seite ist die letzte Aktivität des Berichts.
 
    ![](assets/s_advuser_report_listgroup_028.png)
 
 1. Fügen Sie eine neue Gruppierungs-Liste mithilfe des Kontextmenüs hinzu und geben Sie ihr den Titel **E-Mail-Domains nach Empfängern**.
-1. Klicken Sie auf den Link **[!UICONTROL Table data XPath...]** und wählen Sie den **[!UICONTROL Recipient delivery logs]** Link aus.
+1. Klicken Sie auf den Link **[!UICONTROL Pfad der Tabellendaten...]** und wählen Sie die Relation **[!UICONTROL Versandlogs der Empfänger]**.
 
    ![](assets/s_advuser_report_listgroup_029.png)
 
-1. In the **[!UICONTROL Data]** tab, adapt the table as follows:
+1. Passen Sie die Tabelle im Tab **[!UICONTROL Daten]** wie folgt an:
 
    * Fügen Sie rechts zwei zusätzliche Spalten ein.
-   * Fügen Sie in der ersten Zelle der Zeile den **[!UICONTROL rowNum()-1]** Ausdruck hinzu, um die Anzahl der Zeilen zu zählen. Ändern Sie dann das Format der Zelle: auf der **[!UICONTROL Extra]** Registerkarte wählen Sie **[!UICONTROL Color tab]** und klicken Sie auf **[!UICONTROL Ok]**.
+   * Fügen Sie in der ersten Zelle der Detailzeile den Ausdruck **[!UICONTROL rowNum()-1]** hinzu, um die Anzahl der Zeilen zu zählen. Ändern Sie anschließend das Format der Zelle: Wählen Sie im Tab **[!UICONTROL Mehr]** die Option **[!UICONTROL Farbplakette]** aus und klicken Sie auf **[!UICONTROL OK]**.
 
       ![](assets/s_advuser_report_listgroup_018.png)
 
       Diese Konfiguration ermöglicht es, die Tabelle als Legende für die Grafik zu verwenden.
 
-   * In the second cell of the detail line, add the **[!UICONTROL Email domain(Recipient)]** expression.
-   * In the third cell of the detail line, add the **[!UICONTROL count(primary key)]** expression.
+   * Fügen Sie in der zweiten Zelle der Detailzeile den Ausdruck **[!UICONTROL E-Mail-Domain(Empfänger)]** hinzu.
+   * Fügen Sie in der dritten Zelle der Detailzeile den Ausdruck **[!UICONTROL count(Primärschlüssel)]** hinzu.
    ![](assets/s_advuser_report_listgroup_019.png)
 
-1. Add a pie chart to the page using the right-click menu and assign the **Email domains** label to it. Weitere Informationen finden Sie unter [Diagrammtypen und Varianten](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
-1. Klicken Sie auf den **[!UICONTROL Variants]** Link und deaktivieren Sie die Optionen **[!UICONTROL Display label]** und **[!UICONTROL Display caption]** Optionen.
+1. Fügen Sie der Seite über das Kontextmenü ein Kreisdiagramm hinzu und geben Sie ihm den Titel **E-Mail-Domains**. Weitere Informationen finden Sie unter [Grafiktypen und ihre Parameter](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
+1. Klicken Sie auf den Link **[!UICONTROL Grafikparameter...]** und deaktivieren Sie die Optionen **[!UICONTROL Titel anzeigen]** und **[!UICONTROL Legende anzeigen]**.
 1. Stellen Sie sicher, dass keine Wertesortierung konfiguriert wurde. Nähere Informationen diesbezüglich erhalten Sie in [diesem Abschnitt](../../reporting/using/processing-a-report.md#configuring-the-layout-of-a-descriptive-analysis-report).
 
    ![](assets/s_advuser_report_listgroup_0191.png)
 
-1. In the **[!UICONTROL Data]** tab, change the data source: select **[!UICONTROL Context data]** from the drop-down list.
+1. Ändern Sie im Tab **[!UICONTROL Daten]** die Datenquelle: Wählen Sie **[!UICONTROL Kontextdaten]** aus der Dropdown-Liste aus.
 
    ![](assets/s_advuser_report_listgroup_020.png)
 
-1. Then click **[!UICONTROL Advanced settings]** and select the link to the recipient delivery logs.
+1. Klicken Sie dann auf **[!UICONTROL Erweiterte Parameter]** und wählen Sie die Relation der Empfänger-Versandlogs.
 
    ![](assets/s_advuser_report_listgroup_0201.png)
 
-1. Wählen Sie im **[!UICONTROL Chart type]** Abschnitt die **[!UICONTROL Email domain]** Variable aus.
+1. Wählen Sie im Abschnitt **[!UICONTROL Grafiktyp]** die Variable **[!UICONTROL E-Mail-Domain]**.
 1. Fügen Sie anschließend die auszuführende Berechnung hinzu: Wählen Sie Summe als Funktion.
 
    ![](assets/s_advuser_report_listgroup_0202.png)
@@ -452,7 +452,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
 ### 6. Schritt - Bericht überprüfen {#step-6---viewing-the-report}
 
-To view the result of this configuration, click the **[!UICONTROL Preview]** tab and select the **[!UICONTROL Global]** option.
+Um das Ergebnis der Konfiguration zu überprüfen, klicken Sie auf den Tab **[!UICONTROL Vorschau]** und wählen Sie die Option **[!UICONTROL Allgemein]** aus.
 
 Die erste Seite des Berichts zeigt die Liste aller in der Datenbank enthaltenen Sendungen.
 
