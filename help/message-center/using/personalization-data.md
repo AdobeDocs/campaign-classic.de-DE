@@ -14,7 +14,7 @@ discoiquuid: 2cd8a320-37e8-410a-b71b-0c13c8e15482
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -28,9 +28,9 @@ Diese Daten dienen nur dazu, die Nachrichten vor dem eigentlichen Versand zu tes
 
 ![](assets/messagecenter_create_custo_006.png)
 
-This information enables you to personalize message content using personalization tags (for more on this, refer to [Creating message content](../../message-center/using/creating-message-content.md)).
+Diese Informationen erlauben die Personalisierung des Nachrichteninhalts mithilfe von Personalisierungsfeldern (siehe hierzu den Abschnitt [Nachrichteninhalt erstellens](../../message-center/using/creating-message-content.md)).
 
-1. In the message template, click the **[!UICONTROL Seed addresses]** tab.
+1. Klicken Sie in der Nachrichtenvorlage auf den Tab **[!UICONTROL Testadressen]**.
 1. Geben Sie im Inhalt des Ereignisses die Testinformationen im XML-Format ein.
 
    ![](assets/messagecenter_create_custo_001.png)
