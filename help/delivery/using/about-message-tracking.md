@@ -14,7 +14,7 @@ discoiquuid: 5d8bbfe0-e202-4062-aa47-9ad87b975bb7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 # Über das Nachrichten-Tracking{#about-message-tracking}
 
-Im Kontext einer E-Mail-Zustellung können Sie mit der Verfolgung die gesendeten Nachrichten und das Verhalten der Empfänger verfolgen: Öffnen, Klicken auf Links, Abmelden usw. Diese Informationen werden auf der **[!UICONTROL Tracking]** Registerkarte des Profils jedes Empfängers der Bereitstellung abgerufen. Auf dieser Registerkarte werden alle URL-Links angezeigt, die vom in der Liste ausgewählten Empfänger verfolgt und angeklickt werden. Dies ist die Akkumulation aller in den Auslieferungen verfolgten URLs, die noch im Bereitstellungsbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält in der Regel Folgendes: die angeklickte URL, das Datum und die Uhrzeit des Klicks und das Dokument, in dem die URL gefunden wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
+Im Rahmen eines E-Mail-Versands können Sie mithilfe des Trackings die gesendeten Nachrichten und das Verhalten der Empfänger in Bezug auf Öffnungen, Klicks auf Links, Opt-outs etc. verfolgen. All diese Informationen werden im **[!UICONTROL Tracking]**-Tab jedes Empfängerprofils gespeichert. Angezeigt werden – jeweils für den ausgewählten Empfänger – die Gesamtheit aller getrackten und angeklickten URLs aller Sendungen, die noch in der Versandübersicht enthalten sind. Standardmäßig werden die angeklickte URL, Datum und Uhrzeit des Klicks und das Dokument angezeigt, in dem der Link enthalten war. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
 
-Verfolgungsmetriken können in den **[!UICONTROL URLs and click streams]**-, **[!UICONTROL Tracking statistics]**- und **[!UICONTROL Hot clicks]** -Berichten sowie auf der **[!UICONTROL Tracking]** Registerkarte der Bereitstellung eingesehen werden.
+Tracking-Metriken können in den Berichten **[!UICONTROL URLs und Clickstreams]**, **[!UICONTROL Trackingstatistiken]** und **[!UICONTROL Klickposition]** sowie im Tab **[!UICONTROL Tracking]** des Versands angesehen werden.
 
 Im Versand-Dashboard können Sie Sendungen beobachten und etwaige Probleme beim Nachrichtenversand erkennen. Weitere Informationen dazu finden Sie in diesem [Abschnitt](../../delivery/using/monitoring-a-delivery.md).
 
