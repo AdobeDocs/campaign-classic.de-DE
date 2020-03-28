@@ -14,7 +14,7 @@ discoiquuid: 1683477a-9233-4a25-b0d0-0c81051eb440
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 28a32c9a5300c28784ae7a2837075b4dc3aad1fa
 
 ---
@@ -37,8 +37,8 @@ Der folgende Workflow wird mit dem **Angebotsmodul (Interaction)** installiert. 
    <td> Dieser Workflow aktualisiert das <strong>full</strong>-Aggregat des <strong>Angebotsvorschlag</strong>-Cubes. Es wird standardmäßig täglich um 6 Uhr gestartet. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Versand, Marketingangebot und Datum.<br /> Mit dem <strong>Angebotsvorschlag</strong>-Cube können anschließend Berichte auf der Basis von Angeboten erstellt werden. Weiterführende Informationen zu Cubes finden Sie in <a href="../../reporting/using/about-cubes.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
    <tr> 
-   <td> <span class="uicontrol">Vollständige Berechnung</span> von MessageCenter <br /> </td> 
-   <td> <span class="uicontrol">agg_messageCenter_full</span><br /> </td> 
+   <td> <span class="uicontrol">Vollständige Message Center-Aggregatberechnung</span> <br /> </td> 
+   <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
