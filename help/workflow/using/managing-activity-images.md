@@ -14,7 +14,7 @@ discoiquuid: ae8fc2b7-456b-481c-8abb-64dab1c22534
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müssen jedoch gewisse Auflagen erfüllen. Gehen Sie wie folgt vor:
 
-* To change the background image, select the desired targeting workflow, then click the **[!UICONTROL Properties]** tab.
+* Gehen Sie zur Wahl eines anderen Hintergrundbilds in den betroffenen Workflow und klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]**.
 
    ![](assets/s_user_segmentation_properties_tab.png)
 
-   To select the image to be used, click the **[!UICONTROL Select link]** icon to the right of the **[!UICONTROL Background image]** field.
+   Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Hintergrundbild]** ermöglicht die Auswahl eines neuen Bilds.
 
    >[!NOTE]
    >
@@ -36,21 +36,21 @@ Die in Workflow-Diagrammen verwendeten Bilder können angepasst werden. Sie müs
 
    ![](assets/s_user_segmentation_background_select.png)
 
-   The **[!UICONTROL Edit link]** icon lets you view the selected image.
+   Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
 
-* To change the image associated with an activity, double-click the object, then click the **[!UICONTROL Advanced]** tab.
+* Bilder von Aktivitäten können angepasst werden, indem Sie auf dem entsprechenden Objekt einen Doppelklick machen. Gehen Sie dann in den **[!UICONTROL Erweitert]**-Tab.
 
-   To select the image to be used, click the **[!UICONTROL Select link]** icon to the right of the **[!UICONTROL Image]** field.
+   Das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts vom Feld **[!UICONTROL Bild]** ermöglicht die Auswahl eines neuen Bilds.
 
    ![](assets/s_user_segmentation_activity_image.png)
 
-   The **[!UICONTROL Edit link]** icon lets you view the selected image.
+   Klicken Sie auf **[!UICONTROL Verknüpftes Element öffnen]**, um eine Vorschau des neuen Bilds anzuzeigen.
 
    ![](assets/s_user_segmentation_activity_image_select.png)
 
 >[!NOTE]
 >
->The images saved in the **[!UICONTROL Administration > Configuration > Images]** node of the tree are available for selection.
+>Um verfügbar zu sein, müssen die Bilder im Knoten **[!UICONTROL Administration > Konfiguration > Bilder]** des Navigationsbaums gespeichert werden.
 >  
 >Sie müssen im Format PNG mit einer Größe von 48 x 48 Pixeln, mit 16 Mio. Farben und einem transparenten Hintergrund vorliegen.
 
