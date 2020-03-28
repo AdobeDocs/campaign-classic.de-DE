@@ -14,7 +14,7 @@ discoiquuid: 2df82006-dcc3-4b07-bc36-b646b1c27aaa
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -38,13 +38,13 @@ Die einzelnen Schritte sind:
 
 ## Schritt 1: Erstellen einer Umfrage {#step-1---creating-a-survey}
 
-Um eine neue Umfrage zu erstellen, gehen Sie zur **[!UICONTROL Campaigns]** Registerkarte oder **[!UICONTROL Profiles and targets]** klicken Sie auf das **[!UICONTROL Web Applications]** Menü. Click the **[!UICONTROL Create]** button above the list of forms.
+Um eine neue Umfrage zu erstellen, rufen Sie die Registerkarte **[!UICONTROL Kampagnen]** oder **[!UICONTROL Profile und Zielgruppen]** auf und klicken Sie auf das Menü **[!UICONTROL Webanwendungen]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]** oberhalb der Formularliste.
 
 ![](assets/s_ncs_admin_survey_create.png)
 
 ## Schritt 2: Auswählen einer Vorlage {#step-2---selecting-the-template}
 
-Wählen Sie eine Umfragevorlage und geben Sie der Umfrage einen Namen. Dieser Name wird von den Endbenutzern nicht angezeigt, ermöglicht jedoch die Identifizierung der Umfrage in Adobe Campaign. Klicken Sie auf **[!UICONTROL Save]** , um die Umfrage der Liste der Webanwendungen hinzuzufügen.
+Wählen Sie eine Umfragevorlage aus und benennen Sie die Vorlage. Dieser Name ist für die Endbenutzer unsichtbar, er dient lediglich zur Identifikation der Umfrage innerhalb von Adobe Campaign. Wählen Sie **[!UICONTROL Speichern]**, um die Umfrage zur Liste der Webanwendungen hinzuzufügen.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
@@ -52,36 +52,36 @@ Wählen Sie eine Umfragevorlage und geben Sie der Umfrage einen Namen. Dieser Na
 
 Umfragen werden in einer Grafik durch Platzierung der folgenden Elemente erstellt: die Seite(n), wo der Inhalt erstellt wird, die Schritte zum Vorausfüllen der Daten und zum Speichern sowie die Testphasen. Zusätzlich können Skripts und Abfragen eingefügt werden.
 
-To build the chart, click the **[!UICONTROL Edit]** form of the survey.
+Um die Grafik zu erstellen, wählen Sie das **[!UICONTROL Bearbeitungsformular]** der Umfrage aus.
 
 Eine Umfrage muss **zumindest** die folgenden drei Komponenten enthalten: eine Seite, eine Speicherungsbox und eine Endseite.
 
-* To create a page, select the **[!UICONTROL Page]** object in the left-hand section of the editor and deposit it in the middle section, as shown below:
+* Um eine Seite zu erstellen, wählen Sie im linken Bereich des Editors das Objekt **[!UICONTROL Seite]** aus und legen Sie es wie unten gezeigt in der Mitte ab:
 
    ![](assets/s_ncs_admin_survey_new_page.png)
 
-* Next, select the **[!UICONTROL Storage]** object and place it on the output transition of the page.
-* Finally, select the **[!UICONTROL End]** object and place it on the end of the output transition of the storage box to obtain the following diagram:
+* Wählen Sie danach das Objekt **[!UICONTROL Speicherung]** aus und platzieren Sie es auf der ausgehenden Transition der Seite.
+* Wählen Sie abschließend das Objekt **[!UICONTROL Ende]** aus und platzieren Sie es am Ende der ausgehenden Transition der Speicherungsbox. Sie erhalten somit die folgende Grafik:
 
    ![](assets/s_ncs_admin_survey_end.png)
 
 ## Schritt 4: Erstellen des Seiteninhalts {#step-4---creating-the-page-content}
 
-Im folgenden Beispiel verwenden wir eine **[!UICONTROL Page (v5 compatibility)]** Typseite. Auf diesen Seitentyp wird über das erweiterte Menü der **[!UICONTROL Edit]** Registerkarte zugegriffen.
+Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibilität)]** verwendet. Der Zugriff auf diesen Seitentyp erfolgt über das erweiterte Menü im Tab **[!UICONTROL Bearbeiten]**.
 
 ![](assets/s_ncs_admin_survey_pagev5.png)
 
 * Eingabefelder hinzufügen
 
-   Um den Inhalt der Seite zu erstellen, müssen Sie sie bearbeiten: Doppelklicken Sie dazu auf das **[!UICONTROL Page]** Objekt. Klicken Sie auf das erste Symbol in der Symbolleiste, um den Assistenten zum Erstellen von Feldern zu öffnen. Um ein Eingabefeld für den Benutzernamen zu erstellen, der im entsprechenden Feld des Empfängerprofils gespeichert werden soll, wählen Sie **[!UICONTROL Edit a recipient]**.
+   Um den Inhalt der Seite zu erstellen, müssen Sie sie bearbeiten: Doppelklicken Sie dazu auf das Objekt **[!UICONTROL Seite]**. Wählen Sie das erste Symbol in der Symbolleiste aus, um den Feld-Assistenten zu öffnen. Wählen Sie **[!UICONTROL Edit a recipient]** aus, um ein Eingabefeld für den Benutzernamen zu erstellen, der im entsprechenden Feld des Empfängerprofils gespeichert werden soll.
 
    ![](assets/s_ncs_admin_survey_add_field_menu.png)
 
-   Klicken Sie auf die **[!UICONTROL Next]** Schaltfläche, um das Feld für die Datenspeicherung in der Datenbank auszuwählen. In diesem Fall das Feld &quot;Nachname&quot;.
+   Wählen Sie die Schaltfläche **[!UICONTROL Weiter]** aus, um das Feld für die Datenspeicherung in der Datenbank festzulegen, in diesem Fall das Feld &quot;Nachname&quot;.
 
    ![](assets/s_ncs_admin_survey_choose_field.png)
 
-   Click **[!UICONTROL Finish]** to confirm field creation.
+   Wählen Sie zur Bestätigung der Felderstellung die Option **[!UICONTROL Beenden]**.
 
    Wenn die Informationen in einem bereits in der Datenbank vorhandenen Feld gespeichert werden, nimmt das Feld standardmäßig den Namen des ausgewählten Felds an, d. h. in diesem Beispiel &quot;Nachname&quot;. Sie können diese Bezeichnung folgendermaßen ändern:
 
@@ -91,11 +91,11 @@ Im folgenden Beispiel verwenden wir eine **[!UICONTROL Page (v5 compatibility)]*
 
    Wiederholen Sie dieselben Schritte, um ein Feld für die E-Mail-Adresse des Benutzers hinzuzufügen.
 
-* To create a question, right-click the last element in the tree, and select **[!UICONTROL Containers > Question]** , or click the **[!UICONTROL Containers]** icon and select **[!UICONTROL Question]**.
+* Um eine Frage zu erstellen, rechtsklicken Sie auf das letzte Element im Baum und wählen Sie **[!UICONTROL Container > Frage]** aus oder klicken Sie auf das Symbol **[!UICONTROL Container]** und wählen Sie danach **[!UICONTROL Frage]** aus.
 
    ![](assets/s_ncs_admin_survey_add_qu.png)
 
-   Geben Sie die Bezeichnung der Frage ein und fügen Sie das/die Antwortfeld(e) als Unterzweig der Frage ein. Dazu muss der mit der Frage verknüpfte Knoten beim Erstellen des Antwortfelds ausgewählt werden. Fügen Sie eine **[!UICONTROL drop-down listx]** mit dem **[!UICONTROL Selection controls]** Symbol oder durch Rechtsklicken hinzu, wie unten dargestellt:
+   Geben Sie den Titel der Frage ein und fügen Sie die Antwortfelder als Unterzweig der Frage ein. Bei der Erstellung der Antwortfelder muss der mit der Frage verknüpfte Knoten ausgewählt sein. Fügen Sie eine **[!UICONTROL Dropdown-Liste]** mithilfe des Symbols **[!UICONTROL Auswahldialog]** oder durch Rechtsklicken wie unten gezeigt hinzu:
 
    ![](assets/s_ncs_admin_survey_add_list.png)
 
@@ -103,17 +103,17 @@ Im folgenden Beispiel verwenden wir eine **[!UICONTROL Page (v5 compatibility)]*
 
    ![](assets/s_ncs_admin_survey_add_itz_list.png)
 
-   Klicken Sie auf der **[!UICONTROL General]** Registerkarte auf den **[!UICONTROL Initialize the list of values from the database]** Link: die Tabelle der Werte wird automatisch eingegeben.
+   Wählen Sie im Tab **[!UICONTROL Allgemein]** den Link **[!UICONTROL Werteliste aus der Datenbank übernehmen]** aus. Die Wertetabelle wird daraufhin automatisch eingetragen.
 
    ![](assets/s_ncs_admin_survey_add_value.png)
 
-   Click **[!UICONTROL OK]** to close the editor, and **[!UICONTROL Save]** to save changes.
+   Wählen Sie **[!UICONTROL OK]** aus, um den Editor zu schließen, und **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
    >[!NOTE]
    >
-   >Für jedes Feld oder jede Frage können Sie das Seitenlayout an Ihre Anforderungen anpassen, dank der Optionen in der **[!UICONTROL Advanced]** Registerkarte. Das Layout der Umfrageseiten ist in [diesem Abschnitt](../../web/using/about-web-forms.md)ausführlich beschrieben.
+   >Mit den Optionen im Tab **[!UICONTROL Erweitert]** können Sie für jedes Feld oder jede Frage das Seitenlayout nach Bedarf anpassen. Das Layout der Umfragefenster wird in [diesem Abschnitt](../../web/using/about-web-forms.md) näher beschrieben.
 
-   In the detail screen, click the **[!UICONTROL Preview]** tab to view the rendering of the survey you have just created.
+   Wählen Sie im Detailfenster den Tab **[!UICONTROL Vorschau]** aus, um sich die Darstellung der soeben erstellten Umfrage anzusehen.
 
    ![](assets/s_ncs_admin_survey_preview.png)
 
@@ -127,13 +127,13 @@ Im unten stehenden Beispiel passiert Folgendes bei der Speicherung (Bestätigung
 
 ![](assets/s_ncs_admin_survey_save_edit.png)
 
-Click **[!UICONTROL OK]** to confirm, then click **[!UICONTROL Save]** to save the survey
+Wählen Sie zum Bestätigen **[!UICONTROL OK]** und danach **[!UICONTROL Speichern]** aus, um die Umfrage zu speichern.
 
 ## Schritt 6: Publizieren der Seiten {#step-6---publishing-the-pages}
 
 Damit die Benutzer auf die HTML-Seiten zugreifen können, muss die Anwendung verfügbar gemacht werden. Dazu müssen Sie vom Bearbeitungsstatus in den Produktionsstatus wechseln, d. h. die Umfrage publizieren. Gehen Sie dazu wie folgt vor:
 
-* Click the **[!UICONTROL Publish]** button located above the survey dashboard.
+* Klicken Sie auf die Schaltfläche **[!UICONTROL Publizieren]** oberhalb des Umfrage-Dashboards.
 * Wählen Sie **[!UICONTROL Start]** aus, um die Publikation zu starten und den Assistenten zu schließen.
 
    ![](assets/s_ncs_admin_survey_start_publ.png)
