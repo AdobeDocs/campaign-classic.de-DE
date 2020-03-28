@@ -14,7 +14,7 @@ discoiquuid: a223641e-93e1-42ef-bb6b-8e1a0f8f6a65
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 # Lokale Validierung{#local-approval}
 
-When integrated into a targeting workflow, the **[!UICONTROL Local approval]** activity lets you set up a recipient approval process before the delivery is sent.
+Im Rahmen eines Zielgruppen-Workflows ermöglicht die Aktivität **[!UICONTROL Lokale Validierung]** die Formalisierung eines Validierungsprozesses, der die Überprüfung der ausgewählten Empfänger vor Absendung der Kampagne sicherstellt.
 
 ![](assets/local_validation_0.png)
 
@@ -30,23 +30,23 @@ When integrated into a targeting workflow, the **[!UICONTROL Local approval]** a
 >
 >Zur Verwendung dieser Funktion benötigen Sie das Modul Distributed Marketing (Campaign-Option). Bitte prüfen Sie Ihren Lizenzvertrag.
 
-Ein Beispiel für die **[!UICONTROL Local approval]** Aktivität mit einer Verteilungsvorlage finden Sie unter [Verwenden der lokalen Genehmigungsaktivität](../../workflow/using/using-the-local-approval-activity.md).
+Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie unter [Lokale Validierung verwenden](../../workflow/using/using-the-local-approval-activity.md).
 
-Start by entering a label for the activity and the **[!UICONTROL Action to execute]** field:
+Benennen Sie zunächst die Aktivität und kreuzen Sie die **[!UICONTROL Auszuführende Aktion]** an:
 
 ![](assets/local_validation_1.png)
 
-* Select the **[!UICONTROL Target approval notification]** option to send a notification email to local supervisors before the delivery, asking them to approve the recipients assigned to them.
+* Wählen Sie die Option **[!UICONTROL Benachrichtigung zur Zielgruppenvalidierung]**, um die Verantwortlichen der Lokalstellen zur Validierung ihrer jeweiligen Empfängerliste aufzufordern.
 
    ![](assets/local_validation_intro_2.png)
 
-* **Inkrementelle Abfrage**: können Sie eine Abfrage ausführen und deren Ausführung planen. Refer to the [Incremental query](../../workflow/using/incremental-query.md) section.
+* **Inkrementelle Abfrage**: erlaubt es, eine Abfrage auszuführen und deren Ausführung zu planen. Siehe Abschnitt [Inkrementelle Abfrage](../../workflow/using/incremental-query.md).
 
    ![](assets/local_validation_intro_3.png)
 
 ## Benachrichtigung zur Zielgruppenvalidierung {#target-approval-notification}
 
-In this case, the **[!UICONTROL Local approval]** activity is placed between upstream targeting and the delivery:
+Bei Verwendung dieser Option ist die Aktivität **[!UICONTROL Lokale Validierung]** im Anschluss an die Zielgruppenbestimmung und vor der Versandaktivität zu platzieren:
 
 ![](assets/local_validation_2.png)
 
@@ -54,22 +54,22 @@ In diesem Fall sind folgende Felder zu konfigurieren:
 
 ![](assets/local_validation_3.png)
 
-* **[!UICONTROL Distribution context]**: Wählen Sie die **[!UICONTROL Specified in the transition]** Option aus, wenn Sie eine **[!UICONTROL Split]** Typaktivität verwenden, um die Zielgruppe einzuschränken. In diesem Fall wird die Distributionsvorlage in die geteilte Aktivität eingegeben. Wenn Sie die Zielgruppe nicht einschränken, wählen Sie die **[!UICONTROL Explicit]** Option hier aus und geben Sie die Verteilungsvorlage in das **[!UICONTROL Data distribution]** Feld ein.
+* **[!UICONTROL Verteilungskontext]**: Kreuzen sie **[!UICONTROL Wird von der Transition angegeben]** an, wenn Sie die Zielpopulation durch eine **[!UICONTROL Aufspaltung]** begrenzen. In diesem Fall wird die Verteilungsvorlage in der Aufspaltungsaktivität angegeben. Wenn die Population nicht begrenzt werden soll, ist die Option **[!UICONTROL Explizit]** anzukreuzen. Geben Sie dann im Feld **[!UICONTROL Datenverteilung]** die gewünschte Vorlage an.
 
-   Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Beschränken der Anzahl der untergeordneten Datensätze pro Datenverteilung](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+   Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
-* **[!UICONTROL Approval management]**
+* **[!UICONTROL Validierungsverwaltung:]**
 
-   * Select the delivery template and the subject that will be used for the email notification. A default template is available: **[!UICONTROL Local approval notification]**. You can also add a description that will appear above the recipient lists in the approval and feedback notifications.
-   * Geben Sie den **[!UICONTROL Approval type]** an, der der Genehmigungsfrist entspricht (Datum oder Frist ab Beginn der Genehmigung). Ab diesem Datum wird der Workflow erneut gestartet, und die Empfänger, die nicht genehmigt wurden, werden beim Targeting nicht berücksichtigt. Sobald die Benachrichtigungen gesendet wurden, wird die Aktivität in eine Warteschlange gestellt, damit die lokalen Aufsichtsbehörden ihre Kontakte genehmigen können.
+   * Geben Sie die Versandvorlage und den Betreff der Benachrichtigungs-E-Mail an. Sie können die Standardvorlage **[!UICONTROL Benachrichtigung bezüglich der Zielgruppenvalidierung]** oder eine benutzerdefinierte Vorlage verwenden. Wenn Sie eine Beschreibung angeben, wird diese oberhalb der Empfängerlisten in den Benachrichtigungen oder im Versandreaktionen-Bericht angezeigt.
+   * Geben Sie den **[!UICONTROL Validierungstyp]** an, d. h. die Validierungsdeadline (Datum oder Abstand vom Unterbreitungsdatum). Zum angegebenen Zeitpunkt wird die Ausführung des Workflows fortgesetzt. Nicht validierte Empfänger werden von der Zielgruppe ausgeschlossen. Nach Absendung der Benachrichtigungen wechselt die Aktivität in den Wartezustand bis die Lokalstellen-Verantwortlichen die Empfänger validiert haben oder der Validierungszeitraum abgelaufen ist.
 
       >[!NOTE]
       >
       >Wenn nicht anders angegeben, wartet die Aktivität drei Tage.
 
-      Sie können auch eine oder mehrere Erinnerungen hinzufügen, um lokale Aufsichtsbehörden darüber zu informieren, dass die Frist näher rückt. To do this, click the **[!UICONTROL Add a reminder]** link.
+      Klicken Sie auf **[!UICONTROL Erinnerung hinzufügen]**, um die Validierungsverantwortlichen vor Ablauf der Frist zu erinnern.
 
-* **[!UICONTROL Complementary set]**: Mit der **[!UICONTROL Generate complement]** Option können Sie einen zweiten Satz erstellen, der alle nicht genehmigten Ziele enthält.
+* **[!UICONTROL Komplement]**: Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, um eine zweite Ergebnismenge mit allen nicht validierten Empfängern zu erzeugen.
 
    >[!NOTE]
    >
@@ -77,7 +77,7 @@ In diesem Fall sind folgende Felder zu konfigurieren:
 
 ## Versandreaktionen-Bericht {#delivery-feedback-report}
 
-In this case, the **[!UICONTROL Local approval]** activity is placed after the delivery:
+In diesem Fall wird die **[!UICONTROL Lokale Validierung]** im Anschluss an die Versandaktion platziert:
 
 ![](assets/local_validation_4.png)
 
@@ -85,12 +85,12 @@ Folgende Angaben sind erforderlich:
 
 ![](assets/local_validation_workflow_4.png)
 
-* Wählen Sie die **[!UICONTROL Specified in the transition]** Option, wenn die Bereitstellung während einer vorherigen Aktivität eingegeben wurde. Wählen Sie **[!UICONTROL Explicit]** die Bereitstellung in der lokalen Genehmigungsaktivität aus.
-* Select the delivery template and the object of the notification email. There is a default template: **[!UICONTROL Local approval notification]**.
+* Kreuzen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** an, wenn der Versand in einer vorangehenden Aktivität konfiguriert wurde. Kreuzen Sie andernfalls **[!UICONTROL Explizit]** an und konfigurieren Sie den Versand direkt in der Validierungsaktivität.
+* Geben Sie die Versandvorlage und den Betreff der Benachrichtigungs-E-Mail-an. Sie können die Standardvorlage **[!UICONTROL Benachrichtigung bezüglich der Zielgruppenvalidierung]** oder eine benutzerdefinierte Vorlage verwenden.
 
 ## Beispiel: Workflow-Versand validieren {#example--approving-a-workflow-delivery}
 
-Dieses Beispiel zeigt, wie Sie einen Genehmigungsprozess für eine Workflow-Bereitstellung einrichten. Weitere Informationen zum Erstellen von Bereitstellungsarbeitsabläufen finden Sie im [Beispiel: Abschnitt zum Bereitstellungsarbeitsablauf](../../workflow/using/delivery.md#example--delivery-workflow) .
+Dieses Beispiel zeigt, wie Sie einen Validierungsprozess für einen Workflow-Versand einrichten. Weitere Informationen zum Erstellen von Versand-Workflows finden Sie im Abschnitt [Beispiel: Versand-Workflow](../../workflow/using/delivery.md#example--delivery-workflow).
 
 Dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu validieren. Dies kann entweder per Webzugriff unter Verwendung des in der Benachrichtigung enthaltenen Links oder direkt in der Clientkonsole geschehen.
 
@@ -102,20 +102,20 @@ Dem Benutzer bieten sich zwei verschiedene Möglichkeiten, um einen Versand zu v
 
    ![](assets/new-workflow-valid-webaccess.png)
 
-   Make a choice and click the **[!UICONTROL Submit]** button.
+   Kreuzen Sie die gewünschte Antwort an und klicken Sie auf **[!UICONTROL Unterbreiten]**.
 
    ![](assets/new-workflow-valid-webaccess-confirm.png)
 
 * Validierung in der Clientkonsole
 
-   In der Baumstruktur enthält der **[!UICONTROL Administration > Production > Objects created automatically > Approvals pending]** Knoten die Liste der Aufgaben, die vom derzeit angeschlossenen Operator genehmigt werden sollen. Die Liste sollte eine Zeile enthalten. Doppelklicken Sie auf diese Zeile, um zu antworten. Das folgende Fenster wird angezeigt:
+   Im Navigationsbaum enthält der Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Ausstehende Validierungen]** die Liste der vom aktuellen Benutzer zu validierenden Aufgaben. Doppelklicken Sie auf die entsprechende Zeile, um die Validierung vorzunehmen.
 
 ![](assets/new-workflow-7.png)
 
-Select **Yes**, then click **[!UICONTROL Approve]**. A message will inform you that the response has been recorded.
+**** Kreuzen Sie die gewünschte Antwort an und klicken Sie auf **[!UICONTROL Validieren]**. Ein Pop-up bestätigt Ihnen, dass die Antwort gespeichert wurde.
 
 Wenn Sie nach einigen Sekunden zum Workflow-Diagramm zurückkehren, stellt es sich wie folgt dar:
 
 ![](assets/new-workflow-8.png)
 
-Der Workflow hat die **[!UICONTROL Delivery control]** Aufgabe ausgeführt, was in diesem Fall bedeutet, dass die zuvor erstellte Bereitstellung gestartet wird. Der Workflow wurde fehlerfrei abgeschlossen.
+Der Workflow hat die Aufgabe **[!UICONTROL Versand bearbeiten]** ausgeführt, d. h. der zuvor erstellte Versand wurde gestartet, und der Workflow wurde erfolgreich abgeschlossen.
