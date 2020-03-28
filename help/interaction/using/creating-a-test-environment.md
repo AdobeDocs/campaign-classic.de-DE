@@ -14,7 +14,7 @@ discoiquuid: 7a92bc51-24cf-4ce6-bd50-a315f8f6e34e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -26,19 +26,19 @@ Gehen Sie wie folgt vor, um eine Testumgebung (Sandbox) zu erstellen:
 
 >[!CAUTION]
 >
->Verwenden Sie diese Methode zur Umgebungserstellung nur für Testumgebungen. In allen anderen Fällen verwenden Sie den Assistenten für die Zielzuordnung. Weitere Informationen finden Sie unter [Erstellen einer Angebotsumgebung](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Verwenden Sie diese Erstellungsmethode für Umgebungen nur für Testumgebungen. Verwenden Sie in allen anderen Fällen den Assistenten für das Zielgruppen-Mapping. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 1. Gehen Sie in den Adobe-Campaign-Explorer und markieren Sie die Wurzel der Instanz.
-1. Right-click and add a **[!UICONTROL Generic folder]** using the drop-down menus.
+1. Klicken Sie mit der rechten Maustaste und fügen Sie mithilfe des Kontextmenüs einen **[!UICONTROL Kind]**-Ordner hinzu.
 
    ![](assets/offer_env_creation_001.png)
 
-1. Next, go to the folder you just created and add an **[!UICONTROL Offer environment]** using the right-click menus.
+1. Markieren Sie nun den zuvor erstellten Ordner und fügen Sie einen **[!UICONTROL Angbotsumgebung]**-Ordner hinzu.
 
    ![](assets/offer_env_creation_001bis.png)
 
 1. Erstellen Sie auf die gleiche Weise die Unterordner und Elemente der Umgebung und führen Sie die gewünschten Tests durch.
-1. Once your tests have finished and you wish to use the environment in production, duplicate the offers and spaces in your design environment. (Right-click > **[!UICONTROL Actions]** > **[!UICONTROL Deploy]** ).
+1. Nach Abschluss Ihrer Tests können Sie die in der Testumgebung enthaltenen Elemente zur tatsächlichen Verwendung freigeben. Duplizieren Sie hierzu die Angebote und Platzierungen in Ihre Live-Umgebung (Rechtsklick > **[!UICONTROL Aktionen]** > **[!UICONTROL Freigeben]** ).
 
    ![](assets/migration_interaction_5.png)
 
