@@ -14,7 +14,7 @@ discoiquuid: e1ab1e82-8194-40a8-8df3-e7cfbaa3e777
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -36,7 +36,7 @@ Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen
 
 ### 1. Schritt - Erstellung eines Cube-basierten Berichts {#step-1---creating-a-report-based-on-a-cube}
 
-To create a report based on a cube, click the **[!UICONTROL Create]** button in the **[!UICONTROL Reports]** universe and select the cube you want to use.
+Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]** der **[!UICONTROL Berichte]**-Rubrik und wählen Sie den zu verwendenden Cube.
 
 Der Prozess wird hier detailliert beschrieben: [Cube-basierten Bericht erstellen](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
@@ -44,7 +44,7 @@ Der Prozess wird hier detailliert beschrieben: [Cube-basierten Bericht erstellen
 
 Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unserem Beispiel: Alter und Stadt).
 
-The **[!UICONTROL Add]** buttons on each axis enable you to add dimensions.
+Über die oberhalb der jeweiligen Achse gelegenen **[!UICONTROL Hinzufügen]**-Schaltflächen können weitere Dimensionen hinzugefügt werden.
 
 ![](assets/s_advuser_cube_in_report_03.png)
 
@@ -73,9 +73,9 @@ The **[!UICONTROL Add]** buttons on each axis enable you to add dimensions.
    * die Werte absteigend (A-Z, 0-9) oder aufsteigend (Z-A, 9-0) anzuzeigen;
    * die Anzahl der beim Laden anzuzeigenden Spalten ändern (Standardwert: 200).
 
-1. Klicken Sie zur Bestätigung auf **[!UICONTROL Ok]**: Die Dimension wird den existierenden Dimensionen hinzugefügt.
+1. Klicken Sie zur Bestätigung auf **[!UICONTROL OK]**: Die Dimension wird den existierenden Dimensionen hinzugefügt.
 
-   The yellow banner above the table shows that you have made changes: click the **[!UICONTROL Save]** button to save them.
+   Das gelbe Banner oberhalb der Tabelle zeigt an, dass Sie Änderungen vorgenommen haben. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, wenn diese berücksichtigt werden sollen.
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
@@ -85,11 +85,11 @@ Geben Sie nach der Positionierung der Zeilen und Spalten die anzuzeigenden Kennz
 
 Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen oder zu konfigurieren, gehen Sie wie folgt vor:
 
-1. Click the **[!UICONTROL Measures]** button.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Kennzahlen]**.
 
    ![](assets/s_advuser_cube_in_report_05.png)
 
-1. The **[!UICONTROL Use a measure]** button enables you to select one of the existing measures.
+1. Über die Schaltfläche **[!UICONTROL Kennzahl benutzen]** können existierende Kennzahlen ausgewählt werden.
 
    ![](assets/s_advuser_cube_in_report_08.png)
 
@@ -97,13 +97,13 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    ![](assets/s_advuser_cube_in_report_09.png)
 
-   Die Gesamtmesskonfiguration ist auch über das **[!UICONTROL Edit the configuration of the pivot table]** Symbol in der Kopfzeile verfügbar.
+   Eine übergreifende Konfiguration der Kennzahlen ist über das Symbol **[!UICONTROL Konfiguration der Pivot-Tabelle bearbeiten]** möglich.
 
    ![](assets/s_advuser_cube_in_report_config_02.png)
 
    Sie können insbesondere bestimmen, ob die Titel der Kennzahlen angezeigt werden sollen. Weitere Informationen finden Sie unter [Anzeige konfigurieren](../../reporting/using/concepts-and-methodology.md#configuring-the-display).
 
-1. Es ist möglich, neue Maßnahmen zu entwickeln, indem man bestehende nutzt. Klicken Sie dazu auf **[!UICONTROL Create a measure]** und konfigurieren Sie es.
+1. Sie können neue Kennzahlen auf Basis von bereits existierenden erstellen. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Kennzahl erstellen]** und geben Sie ihre Konfiguration an.
 
    ![](assets/s_advuser_cube_in_report_config_02a.png)
 
@@ -120,9 +120,9 @@ Standardmäßig wird nur eine Kennzahl angezeigt. Um Kennzahlen hinzuzufügen od
 
    ![](assets/s_advuser_cube_in_report_config_02b.png)
 
-   Nachdem Sie eine Maßnahme erstellt haben, können Sie sie bearbeiten und bei Bedarf ihre Konfiguration ändern. Klicken Sie dazu auf die **[!UICONTROL Measures]** Schaltfläche und dann auf die Registerkarte des zu bearbeitenden Messwerts.
+   Nach der Erstellung können Sie die Kennzahl bearbeiten und bei Bedarf ihre Konfiguration ändern. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Kennzahlen]** und dann auf den Tab der zu bearbeitenden Kennzahl.
 
-   Klicken Sie dann auf **[!UICONTROL Edit the dynamic measure]** , um das Einstellungsmenü aufzurufen.
+   Klicken Sie anschließend auf die Schaltfläche **[!UICONTROL Dynamische Kennzahl bearbeiten]**, um auf die Einstellungen zuzugreifen.
 
 ## Zielpopulation erstellen {#building-a-target-population}
 
@@ -132,23 +132,23 @@ Hierzu können Sie diese einem Warenkorb hinzufügen, dessen Inhalt anschließen
 
 Gehen Sie wie folgt vor, um eine Population in einer Liste zusammenzufassen:
 
-1. Click the cells that contain the population to be collected to select them, then click the **[!UICONTROL Add to cart]** icon.
+1. Markieren Sie durch Klick die Zellen, die die abzurufenden Populationen enthalten, und klicken Sie auf das Symbol **[!UICONTROL Zum Warenkorb hinzufügen]**.
 
    ![](assets/s_advuser_cube_in_report_config_02c.png)
 
    Wiederholen Sie diesen Vorgang so oft wie nötig, um die unterschiedlichen Profile zu sammeln.
 
-1. Click the **[!UICONTROL Show cart]** button to view its content before running the export.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Warenkorb anzeigen]**, um den Inhalt einzusehen, bevor er exportiert wird.
 
    ![](assets/s_advuser_cube_in_report_config_02d.png)
 
-1. The **[!UICONTROL Export]** button lets you group the items in the cart into a list.
+1. Die Schaltfläche **[!UICONTROL Exportieren]** ermöglicht die Zusammenfassung der Elemente des Warenkorbs in einer Liste.
 
    Geben Sie den Namen der Liste und den Exporttyp an.
 
    ![](assets/s-advuser_cube_in_report_config_02e.png)
 
-   Click **[!UICONTROL Start]** to run the export.
+   Klicken Sie auf **[!UICONTROL Starten]**, um mit dem Export zu beginnen.
 
 1. Nach Abschluss des Exports bestätigt eine Nachricht seine korrekte Ausführung und die Anzahl der verarbeiteten Datensätze.
 
@@ -156,7 +156,7 @@ Gehen Sie wie folgt vor, um eine Population in einer Liste zusammenzufassen:
 
    Sie können den Inhalt des Warenkorbs beibehalten oder löschen.
 
-   Die entsprechende Liste wird über das **[!UICONTROL Profiles and targets]** Universum aufgerufen.
+   Die entsprechende Liste ist über die Rubrik **[!UICONTROL Profile und Zielgruppen]** zugänglich.
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
@@ -168,7 +168,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_cube_in_report_01.png)
 
-1. In the **[!UICONTROL Data]** tab of the page, select a cube to process the dimensions it contains and display calculated measures.
+1. Im Tab **[!UICONTROL Daten]** haben Sie die Möglichkeit, einen existierenden Cube auszuwählen. Auf diese Weise werden automatisch die Dimensionen und Kennzahlen angezeigt, die zuvor konfiguriert wurden.
 
    ![](assets/s_advuser_cube_in_report_02.png)
 
