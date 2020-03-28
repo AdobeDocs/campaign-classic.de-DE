@@ -14,7 +14,7 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ---
@@ -28,6 +28,6 @@ Sie haben die Möglichkeit, verschiedene Sendungen in zusammenfassenden Berichte
 
 Drücken Sie die Strg-Taste, um nicht direkt aufeinanderfolgende Sendungen zu markieren.
 
-Klicken Sie auf **[!UICONTROL Display sub-levels]** (über die Symbolleiste), um die in einem anderen Ordner gespeicherten Auslieferungen auszuwählen. Sie werden dann in derselben Liste angezeigt.
+Klicken Sie in der Symbolleiste auf **[!UICONTROL Unterordner anzeigen]**, wenn Sie Sendungen einbeziehen möchten, die sich in einem anderen Ordner befinden. Auf diese Weise werden sie in derselben Liste angezeigt.
 
 ![](assets/s_ncs_user_display_children_icon.png)
