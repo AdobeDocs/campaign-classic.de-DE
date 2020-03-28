@@ -14,7 +14,7 @@ discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f3006ac7178b4fc3091859ca8a7225864da9524a
 
 ---
@@ -34,55 +34,55 @@ In diesem täglich ausgeführten Workflow werden alle Empfänger ausgewählt, de
 
 Dieses Anwendungsbeispiel ist auch als Video unter [Creating a workflow](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html) verfügbar.
 
-Erstellen Sie dazu eine Kampagne und klicken Sie auf die **[!UICONTROL Targeting and workflows]** Registerkarte. For more on this, refer to the [Building the main target in a workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow) section.
+Erstellen Sie eine Kampagne und klicken Sie auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]**. Lesen Sie diesbezüglich auch den Abschnitt [Erstellen einer Hauptzielgruppe im Workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 Gehen Sie dann wie folgt vor:
 
-## Planen des Sendens {#configuring-the-scheduler}
+## Planung des Versands {#configuring-the-scheduler}
 
-1. Fügen Sie zunächst einen **Zeitplan** hinzu, um das Senden der Bereitstellung jeden Tag auszulösen. Im Beispiel unten wird die Bereitstellung jeden Tag um 6 Uhr erstellt.
+1. Fügen Sie zunächst eine **Planung** hinzu, um den täglichen Versand auszulösen. Im Beispiel unten wird der Versand jeden Tag um 6 Uhr erstellt.
 
    ![](assets/recur_delivery2.png)
 
 
 ## Identifizieren von Empfängern, die Geburtstag haben {#identifying-recipients-whose-birthday-it-is}
 
-After configuring the **[!UICONTROL Scheduler]** activity so that the workflow starts every day, identify all of the recipients whose date of birth equals the current date.
+Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Ausführung des Workflows. Identifizieren Sie dann alle Empfänger, deren Geburtstag dem aktuellen Datum entspricht.
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Drag and drop a **[!UICONTROL Query]** activity into the workflow and double-click it.
-1. Click the **Edit query** link and select **[!UICONTROL Filtering conditions]**.
+1. Ziehen Sie eine **[!UICONTROL Abfrage]** in den Workflow-Arbeitsbereich und öffnen Sie sie per Doppelklick.
+1. Klicken Sie auf den Link **Abfrage bearbeiten** und wählen Sie **[!UICONTROL Filterbedingungen]** aus.
 
    ![](assets/s_ncs_user_create_exp_exple00.png)
 
-1. Click the first cell of the **[!UICONTROL Expression]** column and click **[!UICONTROL Edit expression]** to open the expression editor.
+1. Klicken Sie in die erste Zelle der Spalte **[!UICONTROL Ausdruck]** und anschließend auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**, um den Ausdruckseditor zu öffnen.
 
    ![](assets/s_ncs_user_create_exp_exple.png)
 
-1. Klicken Sie auf **[!UICONTROL Advanced selection]** , um den Filtermodus auszuwählen.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]**, um den Filtermodus auszuwählen.
 
    ![](assets/s_ncs_user_create_exp_exple_a.png)
 
-1. Wählen Sie **[!UICONTROL Edit the formula using an expression]** und klicken Sie auf **[!UICONTROL Next]** , um den Ausdruckseditor anzuzeigen.
-1. In the list of functions, double-click **[!UICONTROL Day]**, which is accessible via the **[!UICONTROL Date]** node. Diese Funktion gibt die Zahl zurück, die den Tag darstellt, der dem als Parameter übergebenen Datum entspricht.
+1. Wählen Sie die Option **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
+1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus. Diese Funktion gibt die Zahl aus, die dem Tag des als Parameter übergebenen Datums entspricht.
 
    ![](assets/s_ncs_user_create_exp_exple01.png)
 
-1. In the list of available fields, double-click **[!UICONTROL Birth date]**. The upper section of the editor then displays the following formula:
+1. Wählen Sie in der Liste der verfügbaren Felder mit einem Doppelklick das **[!UICONTROL Geburtsdatum]** aus. Im oberen Abschnitt des Editors wird nun die folgende Formel angezeigt:
 
    ```
    Day(@birthDate)
    ```
 
-   Klicken Sie **[!UICONTROL Finish]** zur Bestätigung.
+   Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. In the query editor, in the first cell of the **[!UICONTROL Operator]** column, select **[!UICONTROL equal to]**.
+1. Wählen Sie nun aus der Dropdown-Liste den **[!UICONTROL Operator]****[!UICONTROL gleich aus]**.
 
    ![](assets/s_ncs_user_create_exp_exple02.png)
 
-1. Next, click the first cell of the second column (**[!UICONTROL Value]**), and click **[!UICONTROL Edit expression]** to open the expression editor.
-1. In the list of functions, double-click **[!UICONTROL Day]**, which is accessible via the **[!UICONTROL Date]** node.
+1. Klicken Sie anschließend in die erste Zelle der Spalte **[!UICONTROL Werte]** und auf die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**, um den Ausdruckseditor zu öffnen.
+1. Wählen Sie aus der Funktionsliste über den Knoten **[!UICONTROL Datum]** mit einem Doppelklick die Funktion **[!UICONTROL Day]** aus.
 1. Wählen Sie anschließend mit einem Doppelklick die Funktion **[!UICONTROL GetDate]** aus, um das aktuelle Datum abzurufen.
 
    ![](assets/s_ncs_user_create_exp_exple04.png)
@@ -93,15 +93,15 @@ Gehen Sie hierzu wie folgt vor:
    Day(GetDate())
    ```
 
-   Klicken Sie **[!UICONTROL Finish]** zur Bestätigung.
+   Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
-1. Wiederholen Sie diesen Vorgang, um den Geburtsmonat des aktuellen Monats abzurufen. Klicken Sie dazu auf die **[!UICONTROL Add]** Schaltfläche und wiederholen Sie die Schritte 3 bis 10 und ersetzen Sie **[!UICONTROL Day]** durch **[!UICONTROL Month]**.
+1. Wiederholen Sie diesen Vorgang, um den dem aktuellen Monat entsprechenden Geburtsmonat abzurufen. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wiederholen Sie die Schritte 3 bis 10 unter Ersetzung der Funktion **[!UICONTROL Day]** durch die Funktion **[!UICONTROL Month]**.
 
    Die vollständige Formel lautet wie folgt:
 
    ![](assets/s_ncs_user_create_exp_exple03.png)
 
-Link the result of the **[!UICONTROL Query]** activity to an **[!UICONTROL Email delivery]** activity to send an email to the list of all of your recipients on their birthday.
+Schließen Sie nun am Ergebnis der **[!UICONTROL Abfrage]**-Aktivität einen **[!UICONTROL E-Mail-Versand]** an, damit alle in Ihrer Liste enthaltenen Empfänger eine E-Mail zum Geburtstag erhalten.
 
 ## Einschluss von Abonnenten, die am 29. Februar Geburtstag haben (optional) {#including-recipients-born-on-february-29th--optional-}
 
@@ -121,7 +121,7 @@ Sollte es sich bei dem laufenden Jahr **nicht um ein Schaltjahr handeln**, müss
 
 ### 1. Schritt: Auswahl der Empfänger, die am aktuellen Datum Geburtstag haben {#step-1--selecting-the-recipients}
 
-After configuring the **[!UICONTROL Scheduler]** activity so that the workflow starts every day, identify all of the recipients whose anniversary is the current day.
+Konfigurieren Sie zunächst die **[!UICONTROL Planung]** für eine tägliche Ausführung des Workflows. Identifizieren Sie dann alle Empfänger, deren Geburtstag dem aktuellen Datum entspricht.
 
 >[!NOTE]
 >
@@ -129,15 +129,15 @@ After configuring the **[!UICONTROL Scheduler]** activity so that the workflow s
 
 ![](assets/birthday-workflow_usecase_2.png)
 
-Die Auswahl der Empfänger, deren Geburtstag dem aktuellen Datum entspricht, wird im Abschnitt [Identifizierende Empfänger, deren Geburtstag es ist](#identifying-recipients-whose-birthday-it-is) , angezeigt.
+Die Auswahl der Empfänger, deren Geburtstag dem aktuellen Datum entspricht, wird im Abschnitt [Identifizieren von Empfängern, die Geburtstag haben](#identifying-recipients-whose-birthday-it-is) beschrieben.
 
 ### 2. Schritt: Test, ob ein Schaltjahr vorliegt {#step-2--select-whether-or-not-it-is-a-leap-year}
 
 Prüfen Sie mithilfe einer **[!UICONTROL Test]**-Aktivität, ob das aktuelle Jahr ein Schaljahr und ob das aktuelle Datum der 1. März ist.
 
-Wenn der Test überprüft wird (das Jahr ist kein Schaltjahr - es gibt keinen 29. Februar - und das aktuelle Datum ist in der Tat der 1. März), wird der **[!UICONTROL True]** Übergang aktiviert und die Empfänger, die am 29. Februar geboren werden, werden zur Lieferung am 1. März hinzugefügt. Andernfalls wird der **[!UICONTROL False]** Übergang aktiviert und nur die am aktuellen Datum geborenen Empfänger erhalten die Lieferung.
+Wenn der Test wahr ist (d. h. es ist kein Schaltjahr – es gibt keinen 29. Februar – und das aktuelle Datum ist der 1. März), wird die **[!UICONTROL Wahr]**-Transition aktiviert und die Empfänger, die am 29. Februar Geburtstag haben, werden zum Versand des 1. März hinzugefügt. Andernfalls wird die **[!UICONTROL Falsch]**-Transition aktiviert und nur die Empfänger, die am aktuellen Datum Geburtstag haben, erhalten den Versand.
 
-Copy and paste the code below into the **[!UICONTROL Initialization script]** section of the **[!UICONTROL Advanced]** tab.
+Kopieren Sie den unten stehenden Code und fügen Sie ihn im Bereich **[!UICONTROL Initialisierungsscript]** des **[!UICONTROL Erweitert]**-Tabs ein.
 
 ```
 function isLeapYear(iYear)
@@ -183,7 +183,7 @@ vars.firstOfMarch = 1;
 
 ![](assets/birthday-workflow_usecase_3.png)
 
-Add the following condition in the **[!UICONTROL Conditional forks]** section:
+Fügen Sie im Bereich **[!UICONTROL Bedingte Verzweigung]** die folgende Bedingung hinzu:
 
 ```
 vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
@@ -193,24 +193,24 @@ vars.currentIsALeapYear == 0 && vars.firstOfMarch == 1
 
 ### 3. Schritt: Auswahl der Empfänger, die am 29. Februar Geburtstag haben {#step-3--select-any-recipients-born-on-february-29th}
 
-Create a **[!UICONTROL Fork]** activity and link one of the outbound transitions to a **[!UICONTROL Query]** activity.
+Ziehen Sie eine **[!UICONTROL Verzweigung]** in das Diagramm und schließen Sie an eine der ausgehenden Transitionen eine **[!UICONTROL Abfrage]**-Aktivität an.
 
 Wählen Sie in dieser Abfrage alle Empfänger aus, die am 29. Februar Geburtstag haben.
 
 ![](assets/birthday-workflow_usecase_5.png)
 
-Combine the results with a **[!UICONTROL Union]** activity.
+Kombinieren Sie die Ergebnisse mithilfe einer **[!UICONTROL Vereinigung]**.
 
-Link the results of the two **[!UICONTROL Test]** activity branches to an **[!UICONTROL Email delivery]** activity to send an email to the list of all of your recipients on their birthday, even to those born on February 29th during a non-leap year.
+Schließen Sie nun an beide Zweige der **[!UICONTROL Test]**-Aktivität einen **[!UICONTROL E-Mail-Versand]** an, damit alle in Ihrer Liste enthaltenen Empfänger eine E-Mail zum Geburtstag erhalten – selbst diejenigen, die am 29. Februar Geburtstag haben, und das auch, wenn gerade kein Schaltjahr vorliegt.
 
-## Creating a recurring delivery {#creating-a-recurring-delivery-in-a-targeting-workflow}
+## Wiederkehrenden Versand erstellen {#creating-a-recurring-delivery-in-a-targeting-workflow}
 
 Fügen Sie für die gewünschte Geburtstags-E-Mail-Vorlage einen **wiederkehrenden Versand** hinzu.
 
 >[!CAUTION]
 >
->Damit die Workflows ausgeführt werden, müssen die technischen Arbeitsabläufe im Zusammenhang mit dem Kampagnenprozess gestartet werden. For more on this, refer to the [List of campaign process workflows](../../workflow/using/campaign.md) section.
+>Damit die Workflows ausgeführt werden, müssen die mit dem Kampagnenprozess verbundenen technischen Workflows gestartet werden. Lesen Sie diesbezüglich den Abschnitt [Liste der Kampagnenprozess-Workflows](../../workflow/using/campaign.md).
 >
->Wenn die Genehmigungsschritte für die Kampagne aktiviert sind, werden die Auslieferungen erst gesendet, nachdem diese Schritte bestätigt wurden. Weitere Informationen finden Sie im Abschnitt [Auswahl der zu genehmigenden](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved) Prozesse.
+>Wenn die Validierungsschritte für die Kampagne aktiviert sind, werden die Sendungen erst ausgeführt, nachdem diese Schritte bestätigt wurden. Weitere Informationen hierzu finden Sie im Abschnitt [Zu verifizierende Prozesse auswählen](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 
 ![](assets/birthday-workflow_usecase_1.png)
