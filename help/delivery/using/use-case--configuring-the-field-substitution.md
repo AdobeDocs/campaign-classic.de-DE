@@ -14,7 +14,7 @@ discoiquuid: a104fcab-75e6-4d73-bc3d-88570de6df7f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 003bac4c5d89290b9d3653d6ddfab7284b68642d
 
 ---
@@ -39,7 +39,7 @@ Zur Verwendung der zufälligen Wertersetzung benötigen Sie:
 
 ## Versanderstellung {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen einer Auslieferung finden Sie im Abschnitt [Erstellen einer E-Mail-Auslieferung](../../delivery/using/creating-an-email-delivery.md) .
+Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [E-Mail-Versand erstellen](../../delivery/using/creating-an-email-delivery.md).
 
 Im vorliegenden Beispiel wurde der unten gezeigte Newsletter erstellt :
 
@@ -47,7 +47,7 @@ Im vorliegenden Beispiel wurde der unten gezeigte Newsletter erstellt :
 
 ## Testadressen-Schema erweitern {#editing-the-seed-addresses-data-schema}
 
-Die einzelnen Schritte der Schemaerweiterung werden im Abschnitt  beschrieben.
+Die einzelnen Schritte der Schemaerweiterung werden im Abschnitt beschrieben.
 
 Im vorliegenden Beispiel übernimmt das Testadressen-Schema einen im Datenschema der Empfänger erstellten Wert:
 
@@ -58,7 +58,7 @@ Im vorliegenden Beispiel übernimmt das Testadressen-Schema einen im Datenschema
 
 Diese Auflistung ermöglicht es dem Benutzer, das bevorzugte literarische Genre der Kunden anzugeben.
 
-For this data schema modification to be viewable in the seed addresses **Input form**, you must update it. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabedrucks](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form) .
+Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen angezeigt werden kann, müssen Sie es aktualisieren. Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisieren](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Personalisierung konfigurieren {#configuring-personalization}
 
@@ -68,7 +68,7 @@ For this data schema modification to be viewable in the seed addresses **Input f
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Konfigurieren Sie Ihre Lieferliste und Ihre Startadressen. Siehe [Identifizieren von Zielgruppen](../../delivery/using/steps-defining-the-target-population.md).
+1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Zielpopulationen identifizieren](../../delivery/using/steps-defining-the-target-population.md).
 
    Im vorliegenden Beispiel soll der Versand an alle Kunden mit dem bevorzugten Genre **Science-Fiction** adressiert werden.
 
@@ -80,9 +80,9 @@ For this data schema modification to be viewable in the seed addresses **Input f
 
    >[!NOTE]
    >
-   >Weitere Informationen zum **[!UICONTROL Edit the dynamic condition...]** Link finden Sie unter [Verwendungsfall: Auswahl der Saatgutadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Weitere Informationen zum Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** finden Sie unter [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
-1. Click the **[!UICONTROL Preview]** tab then select a seed address to test the personalization.
+1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie eine Testadresse aus, um die Personalisierung zu testen.
 
    ![](assets/dlv_seeds_usecase_28.png)
 
@@ -90,7 +90,7 @@ For this data schema modification to be viewable in the seed addresses **Input f
 
    Die zufällige Wertersetzung erfolgt erst **zum Zeitpunkt der Absendung**.
 
-1. Click the **[!UICONTROL Send]** button.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Senden]**.
 1. Analysieren Sie den Versand und klicken Sie auf **Absendung bestätigen**.
 
    Bei Eingang des Versands im Postfach wurde bei den Testadressen-Empfängern der Wert wie gewünscht ersetzt.
