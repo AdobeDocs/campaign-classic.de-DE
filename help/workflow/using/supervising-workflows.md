@@ -14,7 +14,7 @@ discoiquuid: 978cbe62-f06a-46a6-b8a1-e30a65b8470a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
 
 ---
@@ -33,14 +33,14 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 1. Erstellung des Monitoring-Workflows,
 1. Erstellung des JavaScripts zur Abfrage der Workflows mit den Status fehlgeschlagen, ausgesetzt oder angehalten.
-1. Create the **[!UICONTROL Test]** activity.
+1. Erstellung der **[!UICONTROL Test]**-Aktivität.
 1. Erstellung der Versandvorlage.
 
 >[!NOTE]
 >
->**** Zusätzlich zum Workflow können Sie mit der Campaign Workflow-Heatmap die aktuell aktiven Workflows im Detail analysieren. Weiterführende Informationen dazu finden Sie im [ entsprechenden Abschnitt](../../workflow/using/heatmap.md).
+>**** Zusätzlich zum Workflow können Sie mit der Campaign Workflow-Heatmap die aktuell aktiven Workflows im Detail analysieren. Weiterführende Informationen dazu finden Sie im [entsprechenden Abschnitt](../../workflow/using/heatmap.md).
 >
->Weitere Informationen zur **Überwachung der Ausführung** Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
+>Weitere Informationen zur **Überwachung der Ausführung Ihrer Workflows** finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
 ## 1. Schritt: Erstellung des Monitoring-Workflows {#step-1--creating-the-monitoring-workflow}
 
