@@ -14,7 +14,7 @@ discoiquuid: 12b2d22b-ac6d-4ddd-a8cb-57bc56df4281
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -28,7 +28,7 @@ Bei der Erstellung einer Webanwendung vom Typ &quot;Landingpage&quot; können Si
 
 ![](assets/dce_popup_templatechoice.png)
 
-To add a template, refer to [Global options](../../web/using/content-editor-interface.md#global-options).
+Weiterführende Informationen zum Hinzufügen einer Vorlage finden Sie im Abschnitt [Globale Optionen](../../web/using/content-editor-interface.md#global-options).
 
 ## Versand als Vorlage speichern {#saving-a-delivery-as-a-template}
 
