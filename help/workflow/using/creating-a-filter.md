@@ -1,6 +1,6 @@
 ---
 title: Erstellung von Filtern
-description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen
+description: Erfahren Sie, wie Sie bei Abfragen einen Filter erstellen können
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -26,17 +26,17 @@ Filter werden in Adobe Campaign auf die gleiche Weise erstellt wie Abfragen.
 >
 >Weiterführende Informationen zum Erstellen von Filtern finden Sie in [diesem Abschnitt](../../platform/using/filtering-options.md).
 
-Der **[!UICONTROL Administration > Configuration > Predefined filters]** Knoten enthält alle Filter, die in den Listen und Übersichten verwendet werden.
+Der Knoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** enthält alle in Listen und Übersichten verwendeten Filter.
 
-For example, the list of operators can be filtered by **[!UICONTROL Active accounts]**:
+Beispielsweise kann die Benutzerliste nach **[!UICONTROL Aktiven Konten]** gefiltert werden:
 
 ![](assets/query_editor_filter_sample_1.png)
 
-The matching filter contains the query on the **[!UICONTROL Account disabled]** value of the **[!UICONTROL Operators]** schema:
+Der entsprechende Filter enthält die Abfrage bezüglich des Werts **[!UICONTROL Gesperrtes Konto]** des **[!UICONTROL Benutzer]**-Schemas:
 
 ![](assets/query_editor_filter_sample_2.png)
 
-For the same list, the **[!UICONTROL By login or label]** filter lets you filter the data on the list based on the value entered in the filter field:
+Dieselbe Liste kann mit dem Filter **[!UICONTROL Nach Login oder Titel]** nach dem im Eingabefeld erfassten Wert durchsucht werden:
 
 ![](assets/query_editor_filter_sample_3.png)
 
@@ -54,7 +54,7 @@ Um dem Filter zu entsprechen, muss das Benutzerkonto eine der folgenden Bedingun
 >
 >Bei Verwendung der Funktion **[!UICONTROL Upper]** werden bei einer Abfrage Groß- und Kleinschreibung nicht beachtet.
 
-In der **[!UICONTROL Taken into account if]** Spalte können Sie die Anwendungskriterien für diese Filterbedingungen definieren. Hier stellen die Zeichen **$(/tmp/@text)** den Inhalt des Eingabefelds dar, das mit dem Filter verknüpft ist:
+Die Spalte **[!UICONTROL Berücksichtigt wenn]** ermöglicht die Konfiguration von Voraussetzungen dafür, dass die Filterbedingungen zum Tragen kommen. Die Zeichen **$(/tmp/@text)** entsprechen dem Inhalt des dem Filter zugeordneten Eingabefelds:
 
 ![](assets/query_editor_filter_sample_5.png)
 
