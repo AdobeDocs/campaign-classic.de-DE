@@ -14,7 +14,7 @@ discoiquuid: b22b3abb-6fe5-4f4d-93fc-0d00d426edb6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -32,11 +32,11 @@ Es ist die Kombination aus einem XML-Dokument mit XSL-Stylesheets oder JavaScrip
 
 Für die Konfiguration des Inhalts werden die folgenden Ressourcen benötigt:
 
-* Datenschemata: Beschreibung der XML-Inhaltsstruktur. For more on this, refer to [Data schemas](../../delivery/using/data-schemas.md).
-* Formulare zur Dateneingabe: Aufbau von Dateneingabebildschirmen. For more on this, refer to [Input forms](../../delivery/using/input-forms.md).
-* Bilder: Bilder, die in Dateneingabeformularen verwendet werden. For more on this, refer to [Image management](../../delivery/using/formatting.md#image-management).
-* Stylesheets: Formatieren von Ausgabedokumenten mit XSLT-Sprache. For more on this, refer to [Formatting](../../delivery/using/formatting.md).
-* JavaScript-Vorlagen: Formatieren von Ausgabedokumenten mit JavaScript-Sprache. For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* JavaScript-Codes: JavaScript-Codes für die Datenaggregation. For more on this, refer to [Aggregator](../../delivery/using/publication-templates.md#aggregator).
-* Veröffentlichungsvorlagen: Definition von Vorlagen für Veröffentlichungen. For more on this, refer to [Publication templates](../../delivery/using/publication-templates.md).
-* Inhalt: Inhaltsinstanzen, die erstellt und veröffentlicht werden sollen. Weitere Informationen finden Sie unter [Verwenden einer Inhaltsvorlage](../../delivery/using/using-a-content-template.md).
+* Datenschemata: Beschreibung der XML-Inhaltsstruktur. Weitere Informationen dazu finden Sie im Abschnitt [Datenschemata](../../delivery/using/data-schemas.md).
+* Formulare: Erstellen von Bildschirmen zur Dateneingabe. Weitere Informationen hierzu finden Sie im Abschnitt [Formulare](../../delivery/using/input-forms.md).
+* Bilder: Bilder, die in Formularen verwendet werden. Weitere Informationen hierzu finden Sie im Abschnitt [Hintergrundbild und Symbole](../../delivery/using/formatting.md#image-management).
+* Stylesheets: Formatieren von Ausgabedokumenten mit XSLT-Sprache. Weitere Informationen hierzu finden Sie im Abschnitt [Formatierung](../../delivery/using/formatting.md).
+* JavaScript-Vorlagen: Formatieren von Ausgabedokumenten mit JavaScript-Sprache. Weitere Informationen hierzu finden Sie im Abschnitt [Publikationsvorlagen](../../delivery/using/publication-templates.md).
+* JavaScript-Codes: JavaScript-Codes für Datenaggregation. Weitere Informationen hierzu finden Sie im Abschnitt [Aggregator](../../delivery/using/publication-templates.md#aggregator).
+* Publikationsvorlagen: Definieren von Publikationsvorlagen. Weitere Informationen hierzu finden Sie im Abschnitt [Publikationsvorlagen](../../delivery/using/publication-templates.md).
+* Inhalt: Inhaltsinstanzen, die erstellt und veröffentlicht werden sollen. Weitere Informationen hierzu finden Sie unter [Verwendung von Inhaltsvorlagen](../../delivery/using/using-a-content-template.md).
