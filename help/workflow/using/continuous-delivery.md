@@ -14,7 +14,7 @@ discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -26,7 +26,7 @@ Ein **fortlaufender Versand** bietet die Möglichkeit, Empfänger zu existierend
 
 ![](assets/edit_diffusion_fil.png)
 
-Die **[!UICONTROL Process errors]** Option zeigt einen bestimmten Übergang an, der aktiviert wird, wenn ein Fehler erzeugt wird. In diesem Fall wird der Workflow nicht in den Fehlermodus versetzt und fährt mit der Ausführung fort.
+Dank der Option **[!UICONTROL Fehler verarbeiten]** erscheint eine spezifische Transition, wenn ein Fehler auftritt. In diesem Fall wird die Ausführung des Workflows nicht ausgesetzt, sondern fortgeführt.
 
 Dies gilt für Fehler des Dateisystems (Datei kann nicht verschoben werden, Zugriff auf das Verzeichnis nicht möglich usw.).
 
@@ -39,7 +39,7 @@ Fehler, die aus der Konfiguration der Aktivität resultieren, beispielsweise dur
 
 Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe angeben.
 
-Nur, wenn die **[!UICONTROL Specified by the inbound event]** Option ausgewählt ist.
+Dies gilt nur, wenn die Option **[!UICONTROL Wird durch das Eingangsereignis angegeben]** angekreuzt wurde.
 
 ## Ausgabeparameter {#output-parameters}
 
@@ -47,6 +47,6 @@ Nur, wenn die **[!UICONTROL Specified by the inbound event]** Option ausgewählt
 * schema
 * recCount
 
-Dieser Satz von drei Werten identifiziert das Ziel, das sich aus der on-the-fly-Bereitstellung ergibt. **[!UICONTROL tableName]** ist der Name der Tabelle, in der die Bezeichner des Ziels gespeichert werden, das Schema der Population (normalerweise nms:empfänger) und die Anzahl der Elemente in der Tabelle **[!UICONTROL schema]** ist **[!UICONTROL recCount]** dies.
+Anhand der drei Werte lässt sich die durch den wiederkehrenden Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
