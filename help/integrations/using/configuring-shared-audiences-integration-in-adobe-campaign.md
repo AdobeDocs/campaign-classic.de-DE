@@ -14,7 +14,7 @@ discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
 
 ---
@@ -29,15 +29,15 @@ Nach Übermittlung dieses Antrags wird dieser von Adobe bearbeitet. Sie werden e
 1. [Schritt 3: Konfigurieren Sie den Campaign Tracking Server.](#step-3--configure-campaign-tracking-server)
 1. [Schritt 4: Konfigurieren Sie den Visitor-ID-Dienst.](#step-4--configure-the-visitor-id-service)
 
-## Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.   {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.  {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfigurieren bzw. zu überprüfen:
 
-1. Click the **[!UICONTROL Explorer]** icon.
-1. Go to **[!UICONTROL Administration > Platform > External accounts]**. Die entsprechenden SFTP-Konten sollten von Adobe konfiguriert und die erforderlichen Informationen sollten Ihnen übermittelt worden sein.
+1. Wählen Sie das **[!UICONTROL Explorer]**-Symbol aus.
+1. Gehen Sie zu **[!UICONTROL Administration > Plattform > Externe Konten]**. Die entsprechenden SFTP-Konten sollten von Adobe konfiguriert und die erforderlichen Informationen sollten Ihnen übermittelt worden sein.
 
-   * **[!UICONTROL importSharedAudience]** : SFTP-Konto für den Zielgruppen-Import.
-   * **[!UICONTROL exportSharedAudience]** : SFTP-Konto für den Zielgruppen-Export.
+   * **[!UICONTROL importSharedAudience]**: SFTP-Konto für den Zielgruppen-Import.
+   * **[!UICONTROL exportSharedAudience]**: SFTP-Konto für den Zielgruppen-Export.
    ![](assets/aam_config_1.png)
 
 1. Füllen Sie das **[!UICONTROL Server]**-Feld aus: die Domain **ftp-out.demdex.com** für das externe Importkonto und die Domain **ftp-in.demdex.com** für das externe Exportkonto.
@@ -46,13 +46,13 @@ Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfi
 
    >[!NOTE]
    >
-   >Wenn Sie S3 verwenden, geben Sie die folgende **[!UICONTROL AWS S3 Account Server]** Syntax ein:\
+   >Wenn Sie S3 verwenden, geben Sie Ihren **[!UICONTROL AWS S3-Konto-Server]** wie folgt ein:\
    `<S3bucket name>.s3.amazonaws.com/<s3object path>`\
-   For more information on how to configure your S3 account, refer to this [page](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
+   Weitere Informationen zur Konfiguration Ihres S3-Kontos finden Sie auf [dieser Seite](../../platform/using/external-accounts.md#amazon-simple-storage-service--s3--external-account).
 
    ![](assets/aam_config_2.png)
 
-1. Fügen Sie die von Adobe bereitgestellten **[!UICONTROL Account]** und **[!UICONTROL Password]** -Dienste hinzu.
+1. Geben Sie das von Adobe bereitgestellte **[!UICONTROL Konto]** und **[!UICONTROL Passwort]** ein.
 
 Ihre externen Konten sind somit konfiguriert.
 
@@ -60,22 +60,22 @@ Ihre externen Konten sind somit konfiguriert.
 
 Die **Empfänger - Besucher-ID** wird innerhalb von Audience Manager erstellt. Dies ist eine native Datenquelle, die standardmäßig für die Besucher-ID konfiguriert wird. In Campaign erstellte Segmente werden ebenfalls Teil dieser Datenquelle sein.
 
-So konfigurieren Sie die **[!UICONTROL Recipient - Visitor ID]** Datenquelle:
+So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
-1. Wählen Sie aus der **[!UICONTROL Explorer]** Node **[!UICONTROL Administration > Platform > AMC Data sources]**.
-1. Auswählen **[!UICONTROL Recipient - Visitor ID]**.
-1. Geben Sie die **[!UICONTROL Data Source ID]** und die von Adobe bereitgestellten **[!UICONTROL AAM Destination ID]** Werte ein.
+1. Wählen Sie im Knoten **[!UICONTROL Explorer]** **[!UICONTROL Administration > Plattform > AMC Data sources]** aus.
+1. Wählen Sie **[!UICONTROL Empfänger - Besucher-ID]** aus.
+1. Geben Sie die von Adobe bereitgestellte **[!UICONTROL ID der Datenquelle]** und die **[!UICONTROL AAM Destination ID]** ein.
 
    ![](assets/aam_config_3.png)
 
-## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.   {#step-3--configure-campaign-tracking-server}
+## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.  {#step-3--configure-campaign-tracking-server}
 
 Für die Konfiguration der Integration mit People Core Service oder Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
 
-Der Campaign Tracking Server muss in der Domain (CNAME) registriert sein. Weitere Informationen zur Delegation von Domains finden Sie in [diesem Artikel](https://helpx.adobe.com/campaign/kb/domain-name-delegation.html).
+Der Campaign Tracking Server muss in der Domain (CNAME) registriert sein. Weitere Informationen zur Delegation von Domains finden Sie in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html).
 
 ## Schritt 4: Konfigurieren Sie den Visitor-ID-Dienst.{#step-4--configure-the-visitor-id-service}
 
-Falls Ihr Visitor-ID-Dienst nie in Ihren Web-Parametern und Webseiten konfiguriert wurde, finden Sie im folgenden [Dokument](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-setup-aam-analytics.html) oder im folgenden [Video](https://helpx.adobe.com/marketing-cloud/how-to/email-marketing.html#step-two) nähere Informationen dazu .
+Falls Ihr Visitor-ID-Dienst nie in Ihren Web-Parametern und Webseiten konfiguriert wurde, finden Sie im folgenden [Dokument](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid-setup-aam-analytics.html) oder im folgenden [Video](https://helpx.adobe.com/de/marketing-cloud/how-to/email-marketing.html#step-two) nähere Informationen dazu .
 
 Die Konfiguration und Einrichtung sind jetzt abgeschlossen. Die Integration kann somit zum Import und Export von Audiences und Segmenten verwendet werden.
