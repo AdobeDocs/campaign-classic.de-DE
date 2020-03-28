@@ -14,7 +14,7 @@ discoiquuid: 443689f4-4c82-490f-ad96-22446f649a07
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -24,13 +24,13 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Extraktionsdatei {#extraction-file}
 
-Der Name der Datei, die die extrahierten Daten enthält, wird im **[!UICONTROL File]** Feld definiert. Über die Schaltfläche rechts neben dem Feld können Sie Personalisierungsfelder verwenden, um den Dateinamen zu erstellen.
+Im Feld **[!UICONTROL Datei]** ist der Name der die extrahierten Daten enthaltenden Datei anzugeben. Die Schaltfläche rechts ermöglicht die Verwendung von Personalisierungsfeldern, um den Namen zu erstellen.
 
-By default, the extraction file is created and stored on the server. You can save it on your computer. To do this, check the **[!UICONTROL Download the generated file after the analysis of the delivery]**. In this case, you need to indicate the access path to the local storage directory as well as the file name.
+Standardmäßig wird die Extraktionsdatei auf dem Server erstellt und gespeichert. Sie können sie jedoch auch lokal auf Ihrem Rechner speichern, indem Sie die Option **[!UICONTROL Nach dem Export erzeugte Datei herunterladen]** ankreuzen. In diesem Fall sind der Pfad zum lokalen Speicherverzeichnis und der Dateiname anzugeben.
 
 ![](assets/s_ncs_user_mail_delivery_local_file.png)
 
-Bei einer Direktversand wird der Inhalt der Extraktion in **[!UICONTROL Edit the extraction file format...]** Link definiert.
+Bei einem Briefversand wird der Extraktionsinhalt über den Link **[!UICONTROL Extraktionsdateiformat bearbeiten...]** konfiguriert.
 
 ![](assets/s_ncs_user_mail_delivery_format_link.png)
 
