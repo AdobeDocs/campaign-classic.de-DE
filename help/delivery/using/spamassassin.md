@@ -14,7 +14,7 @@ discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -46,7 +46,7 @@ Nachdem Sie Ihren E-Mail-Versand erstellt und seinen Inhalt definiert haben, fol
 
 Weiterführende Informationen zur Erstellung und Konzeption eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/about-email-channel.md).
 
-1. Go to the **[!UICONTROL Preview]** tab.
+1. Gehen Sie zum Tab **[!UICONTROL Vorschau]**.
 1. Wählen Sie einen Empfänger aus, um Ihren Versand in der Vorschau zu betrachten.
 
    ![](assets/s_tn_del_preview_spamassassin_recipient.png)
@@ -59,12 +59,12 @@ Weiterführende Informationen zur Erstellung und Konzeption eines Versands finde
 
    ![](assets/s_tn_del_preview_spamassassin_ko.png)
 
-1. Click the **[!UICONTROL More...]** link next to the warning.
-1. Wählen Sie die **[!UICONTROL Anti-spam checking]** Registerkarte.
-1. Go to the **[!UICONTROL Points / Rule / Description]** section to view the reasons for this risk.
+1. Wählen Sie den Link **[!UICONTROL Details...]** neben dem Warnhinweis aus.
+1. Wählen Sie den Tab **[!UICONTROL Anti-Spam-Prüfung]** aus.
+1. Gehen Sie zum Bereich **[!UICONTROL Punktzahl/Regel/Beschreibung]**, um sich die Gründe für das Risiko anzusehen.
 
    ![](assets/s_tn_del_msg_spamassassin_ko.png)
 
 >[!NOTE]
 >
->Jedes Mal, wenn Sie auf den **[!UICONTROL Anti-spam checking]** Dienst klicken, wird der SpamAssassin-Dienst aufgerufen und die Nachricht wird erneut zur Spam-Erkennung analysiert. Vergewissern Sie sich, dass Sie Ihren Inhalt geändert haben, bevor Sie die Anti-Spam-Analyse erneut ausführen.
+>Jedes Mal, wenn Sie **[!UICONTROL Anti-Spam-Prüfung]** auswählen, wird der SpamAssassin-Dienst aufgerufen und die Nachricht wird erneut analysiert. Achten Sie darauf, dass Sie den Inhalt ändern, bevor Sie die Anti-Spam-Prüfung erneut durchführen.
