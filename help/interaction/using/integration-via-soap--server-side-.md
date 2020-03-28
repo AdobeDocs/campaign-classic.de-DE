@@ -14,7 +14,7 @@ discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -30,7 +30,7 @@ Für Angebotsvorschläge über SOAP muss der Befehl **nms:proposition#Propose** 
 
 * **targetId** - Primärschlüssel des Kontakts (es kann sich um einen zusammengesetzten Schlüssel handeln).
 * **maxCount** - gibt die Anzahl an Angebotsvorschlägen für den Kontakt an.
-* **context**: können Sie Kontextinformationen in das Raumschema einfügen. Wenn das verwendete Schema **nms:interaction** ist, sollte **`<empty>`** hinzugefügt werden.
+* **context** - erlaubt das Einfügen von Kontextdaten in das Platzierungsschema. Wenn das verwendete Schema **nms:interaction** lautet, sollte **`<empty>`** hinzugefügt werden.
 * **categories** - bezeichnet die Kategorie, der die vorgeschlagenen Angebote angehören müssen.
 * **themes** - bezeichnet die Themen, denen die vorgeschlagenen Angebote entsprechen müssen.
 * **uuid** - Wert des permanenten Adobe-Campaign-Cookies (&quot;uuid230&quot;).
@@ -50,9 +50,9 @@ Als Antwort auf die Abfrage gibt der SOAP-Dienst folgende Parameter zurück:
 
 Ergänzen Sie die URL mit dem Befehl **nms:interaction#UpdateStatus** und folgenden Parametern:
 
-* **Vorschlag**: Zeichenfolge enthält, die die während eines Angebotsprojekts als Ausgabe angegebene Proposition-ID enthält. Siehe [Angebotsvorschlag](#offer-proposition).
+* **proposition** - die die vom Angebotsmodul ausgegebene Vorschlagskennung enthaltende Zeichenkette. Siehe [Angebotsvorschläge](#offer-proposition).
 * **status** - Zahl, die den neuen Status des Angebots angibt. Die möglichen Werte sind in der Auflistung **propositionStatus**, im Schema **nms:common** aufgeführt. Beispielsweise entspricht die Zahl 3 werksmäßig dem Status **Akzeptiert**.
-* **context**: Mit dem XML-Element können Sie Kontextdaten zum Raumschema hinzufügen. Wenn das verwendete Schema **nms:interaction** ist, sollte **`<empty>`** hinzugefügt werden.
+* **context** - XML-Element, mit dem Sie Kontextdaten zum Platzierungsschema hinzufügen können. Wenn das verwendete Schema **nms:interaction** lautet, sollte **`<empty>`** hinzugefügt werden.
 
 ## Anwendungsbeispiel eines SOAP-Aufrufs {#example-using-a-soap-call}
 
