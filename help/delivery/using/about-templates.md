@@ -14,7 +14,7 @@ discoiquuid: 22e289d0-c33c-4daa-a893-b292e523f30b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 Eine Versandkonfiguration kann in einer Vorlage gespeichert werden, um zu einem späteren Zeitpunkt erneut verwendet zu werden. Dabei kann die Vorlage eine partielle oder komplette Konfiguration aufweisen.
 
-Die Bereitstellungsvorlage kann manuell ausgeführt werden, wie in diesem Kapitel beschrieben, oder nach einem Ereignis (zu einem bestimmten Zeitpunkt, bei Ankunft einer Datei auf einem Server usw.). Bereitstellungsvorlagen können über den **[!UICONTROL Resources > Templates > Delivery templates]** Knoten in der Struktur konfiguriert werden.
+Die Ausführung von Versandvorlagen geschieht entweder manuell - wie nachfolgend beschrieben - oder wird durch ein Ereignis ausgelöst (Start zu einer festen Uhrzeit, bei Eingang einer bestimmten Datei auf dem Server usw.). Der Zugriff auf Versandvorlagen geschieht im Navigationsbaum über den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]**.
 
 ![](assets/s_user_template_list.png)
 
@@ -40,4 +40,4 @@ Es gibt zwei Arten von Vorlagen:
 
 >[!NOTE]
 >
->Die verfügbaren Vorlagen hängen von Ihren Zugriffsrechten, Ihrer Instanzkonfiguration und dem Kontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Bereitstellungsvorlage für Bestätigungsmeldungen verknüpfen: Sie können dann nur auf die Vorlagen zugreifen, deren Zielzuordnung die Abonnementzuordnung ist. Weitere Informationen finden Sie unter [Auswählen einer Zielzuordnung](../../delivery/using/selecting-a-target-mapping.md) und [Informationen zu Diensten und Abonnements](../../delivery/using/about-services-and-subscriptions.md).
+>Welche Vorlagen Ihnen zur Verfügung stehen, hängt von Ihren Benutzerrechten, der Konfiguration Ihrer Instanz und dem jeweiligen Anwendungskontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Vorlage zum Versand von Bestätigungsnachrichten verwenden. In diesem Kontext werden nur Vorlagen mit dem Zielgruppen-Mapping „Abonnements“ angezeigt. Weitere Informationen hierzu finden Sie unter [Zielgruppen-Mapping wählen](../../delivery/using/selecting-a-target-mapping.md) und [Über Dienste und Abonnements](../../delivery/using/about-services-and-subscriptions.md).
