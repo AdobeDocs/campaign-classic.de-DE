@@ -14,7 +14,7 @@ discoiquuid: 97df4bd5-a8e3-48f4-87c8-fa090ea3f771
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 833907c7a7b84b94a00b131738c73ff54a744a40
 
 ---
@@ -26,7 +26,7 @@ Transaktionsnachricht (Message Center) ist ein Campaign-Modul, das die Nachricht
 
 >[!CAUTION]
 >
->Für Transaktionsnachrichten ist eine spezifische Lizenz erforderlich. Bitte überprüfen Sie Ihre Lizenzvereinbarung.
+>Für Transaktionsnachrichten ist eine spezifische Lizenz erforderlich. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Das Adobe Campaign Message Center ist in ein Informationssystem integriert, das Ereignisse zurückgibt, die wiederum in personalisierte Transaktionsnachrichten transformiert werden. Diese Nachrichten können einzeln oder gebündelt per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
