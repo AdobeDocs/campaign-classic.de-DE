@@ -14,7 +14,7 @@ discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 
 ---
@@ -30,7 +30,7 @@ LINE kann auch mit dem Transaktionsnachrichten-Modul kombiniert werden, sodass E
 
 ![](assets/line_message.png)
 
-Die folgenden Abschnitte enthalten Informationen, die speziell für den LINE-Kanal gelten. Globale Informationen zum Erstellen einer Bereitstellung finden Sie in[diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+Die folgenden Abschnitte enthalten Informationen, die speziell für den LINE-Kanal gelten. Allgemeine Informationen zum Erstellen einer Sendung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 Wie bei anderen Kanälen haben Sie bei Verwendung des LINE-Kanals folgende Möglichkeiten:
 
@@ -52,7 +52,7 @@ Sie müssen zunächst ein LINE-Konto erstellen und dieses mit Adobe Campaign ver
 
 Weiterführende Informationen zur Erstellung und Konfiguration eines LINE-Kontos finden Sie unter folgendem Link [https://developers.line.me/](https://developers.line.me/).
 
-To create and configure a LINE service, see [Managing subscriptions](../../delivery/using/managing-subscriptions.md).
+Weitere Informationen zur Erstellung und Konfiguration eines LINE-Dienstes finden Sie im Abschnitt [Abonnements verwalten](../../delivery/using/managing-subscriptions.md).
 
 ![](assets/line_service.png)
 
@@ -64,22 +64,22 @@ Gehen Sie wie folgt vor, um ein externes Konto zu erstellen:
    ![](assets/line_config.png)
 
 1. Füllen Sie die Felder **Titel** und **Interner Name** aus.
-1. In the **[!UICONTROL Type]** field, select Routing and in the **Channel** field, select LINE.
-1. Click **[!UICONTROL Save]** to create your LINE external account.
+1. Wählen Sie im Feld **[!UICONTROL Typ]** die Option &quot;Routing&quot; und im Feld **Kanal** die Option &quot;LINE&quot;.
+1. Wählen Sie **[!UICONTROL Speichern]** aus, um ein externes LINE-Konto zu erstellen.
 1. Ein **LINE**-Personalisierungsfeld wird daraufhin unter dem Symbol **Allgemein** angezeigt. Füllen Sie die folgenden Felder aus:
 
    ![](assets/line_config_2.png)
 
-   * **Kanalalias**: über Ihr LINE-Konto auf der Registerkarte **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** .
+   * **Alias des Kanals**: Entnehmen Sie diese Information dem Tab **[!UICONTROL Channels]** > **[!UICONTROL Technical configuration]** Ihres LINE-Kontos.
    * **Kennung des Kanals**: Entnehmen Sie die Kennung dem Tab **Channels** > **Basic Information panel** Ihres LINE-Kontos.
    * **Geheimschlüssel des Kanals**: Entnehmen Sie den Geheimschlüssel dem Tab **Channels** > **Basic Information panel** Ihres LINE-Kontos.
-   * **Zugriffstoken**: wird über Ihr LINE-Konto im Developer Portal oder durch Klicken auf die **[!UICONTROL Get access token]** Schaltfläche bereitgestellt.
+   * **Zugriffstoken**: wird über Ihr LINE-Konto im Entwicklerportal oder durch Klicken auf die Schaltfläche **[!UICONTROL Zugriffstoken abrufen]** bereitgestellt.
    * **Ablaufdatum des Zugriffstokens**: dient der Angabe des Zugriffstoken-Ablaufdatums.
    * **LINE-Abonnement-Dienst**: dient der Angabe des Dienstes, für den die Nutzer angemeldet werden.
 
 >[!NOTE]
 >
->Sie müssen überprüfen, ob die **[!UICONTROL LINE access token update (updateLineAccessToken)]** und die **[!UICONTROL Delete blocked LINE users (deleteBlockedLineUsers)]** Workflows gestartet wurden. Klicken Sie im Explorer auf , **[!UICONTROL Administration > Production > Technical workflows > LINE workflows]** um den Status der Workflows zu überprüfen.
+>Es ist zu überprüfen, dass die Workflows **[!UICONTROL Aktualisierung des LINE-Zugriffstokens (updateLineAccessToken)]** und **[!UICONTROL Bereinigung der gesperrten LINE-Benutzer (deleteBlockedLineUsers)]** gestartet sind. Verwenden Sie hierfür ausgehend vom Explorer das Menü **[!UICONTROL Administration > Betreibung > Technische Workflows > LINE-Workflows]**, um den Status der Workflows zu überprüfen.
 
 ## Versand erstellen {#creating-the-delivery}
 
@@ -89,13 +89,13 @@ Gehen Sie wie folgt vor, um einen **LINE**-Versand zu erstellen:
 >
 >Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
-1. Wählen Sie auf der **[!UICONTROL Campaigns]** Registerkarte **[!UICONTROL Deliveries]** und klicken Sie auf die **[!UICONTROL Create]** Schaltfläche.
-1. In the window that appears, select **[!UICONTROL LINE V2 delivery]** delivery template.
+1. Verwenden Sie im Tab **[!UICONTROL Kampagnen]** **[!UICONTROL Sendungen]** und danach die Schaltfläche **[!UICONTROL Erstellen]**.
+1. Wählen Sie im sich öffnenden Fenster die Versandvorlage **[!UICONTROL LINE V2-Bereitstellung]**.
 
    ![](assets/line_message_01.png)
 
 1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
-1. Click **[!UICONTROL Continue]** to create your delivery.
+1. Bestätigen Sie durch Verwendung der Schaltfläche **[!UICONTROL Fortfahren]** die Versanderstellung.
 
 ## Nachrichteninhalt konfigurieren {#defining-the-content}
 
@@ -147,23 +147,23 @@ Dabei können folgende Elemente verwendet werden:
 
    Fügen Sie dann Alternativtext hinzu, der auf dem Mobilgerät des Empfängers angezeigt wird.
 
-* und **[!UICONTROL Links]**.
+* **[!UICONTROL Links]**
 
    ![](assets/line_message_05.png)
 
-   Im **[!UICONTROL Links]** Abschnitt können Sie zwischen verschiedenen Layouts wählen, die das Bild in mehrere klickbare Bereiche unterteilen. Anschließend können Sie jedem Benutzer einen eigenen Link zuweisen.
+   Im Bereich **[!UICONTROL Links]** können Sie aus unterschiedlichen Layouts wählen, durch die Ihr Bild in mehrere anklickbare Bereiche unterteilt wird. Sie können dann zu jedem Bereich einen eigenen Link hinzufügen.
 
 >[!NOTE]
 >
 >Die Syntax &lt;%@ include option=&#39;NmsServer_URL&#39; %>/webApp/APP3?id=&lt;%=escapeUrl(cryptString(visitor.id))%> ermöglicht es, einen WebApp-Link in eine LINE-Nachricht einzuschließen.
 
-### Empfehlungen {#recommendations}
+### Empfehlungen  {#recommendations}
 
 * Wenn Sie einen LINE-Versand erstmals an einen neuen Empfänger senden, sind Sie verpflichtet, die offizielle LINE-Mitteilung hinzuzufügen, in der die Nutzungsbedingungen sowie die Einverständniserklärung enthalten sind. Der offizielle Text ist unter folgendem Link verfügbar: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
 
 ## Zielgruppe bestimmen {#selecting-the-target-population}
 
-Die Auswahl der Empfänger einer LINE-Zustellung ist ähnlich wie die Definition der Empfänger der E-Mail-Zustellung. Weitere Informationen finden Sie unter [Zielgruppen](../../delivery/using/steps-defining-the-target-population.md)identifizieren.
+Die Auswahl der Empfänger eines LINE-Versands ist mit der Definition der Empfänger eines E-Mail-Versands vergleichbar. Weitere Informationen hierzu finden Sie unter [Zielpopulationen identifizieren](../../delivery/using/steps-defining-the-target-population.md).
 
 Die Zielgruppenbestimmung ist auf **Besucher** ausgerichtet.
 
@@ -171,15 +171,15 @@ Die Zielgruppenbestimmung ist auf **Besucher** ausgerichtet.
 
 Nach Abschluss der Konfiguration Ihres Versands können Sie ihn an die zuvor bestimmte Zielgruppe senden.
 
-Das Senden von LINE-Zustellungen ist mit dem Senden einer E-Mail-Zustellung vergleichbar. Weitere Informationen zum Senden einer Lieferung finden Sie unter [Senden von Nachrichten](../../delivery/using/sending-messages.md).
+Das Senden eines LINE-Versands ist mit dem Senden eines E-Mail-Versands vergleichbar. Weitere Informationen zum Senden finden Sie unter [Nachrichten senden](../../delivery/using/sending-messages.md).
 
 ## Zugriff auf Berichte {#accessing-reports}
 
-Sie können Berichte zum LINE-Dienst anzeigen, indem Sie im Explorer auf **[!UICONTROL Profiles and Targets > Services and Subscriptions > LINE]** klicken. Klicken Sie dann auf das **[!UICONTROL Reports]** Symbol im LINE-Dienst.
+Der Zugriff auf LINE-Dienst-Berichte ist im Explorer über das Menü **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements > LINE]** möglich. Klicken Sie dann im gewünschten Dienst auf das **[!UICONTROL Berichte]**-Symbol.
 
 ![](assets/line_reports.png)
 
-Um Berichte zu LINE-Auslieferungen anzuzeigen, klicken Sie auf **[!UICONTROL Campaign Management > Deliveries]** und wählen Sie dann die gewünschte Auslieferung aus. Die Verfolgungsberichte geben die Clickthrough-Rate an. LINE berücksichtigt nicht den offenen Tarif.
+Der Zugriff auf LINE-Sendungen betreffende Berichte ist im Explorer über das Menü **[!UICONTROL Kampagnenverwaltung > Sendungen]** möglich. Wählen Sie den gewünschten Versand aus. Beachten Sie, dass in den Trackingberichten Klickraten angezeigt werden. LINE berücksichtigt keine Öffnungsraten.
 
 ![](assets/line_reports_01.png)
 
@@ -187,11 +187,11 @@ Um Berichte zu LINE-Auslieferungen anzuzeigen, klicken Sie auf **[!UICONTROL Cam
 
 In diesem Beispiel wird aufgezeigt, wie Sie eine Textnachricht und ein Bild, die je nach Empfänger personalisiert werden, erstellen und konfigurieren können.
 
-1. Create your LINE delivery by clicking the **[!UICONTROL Create]** button from the **[!UICONTROL Campaign]** tab.
+1. Erstellen Sie unter Verwendung der Schaltfläche **[!UICONTROL Erstellen]** im Menü **[!UICONTROL Kampagnen]** einen neuen Versand.
 
    ![](assets/line_usecase.png)
 
-1. Select the **[!UICONTROL LINE V2 delivery]** delivery template and name your delivery.
+1. Wählen Sie die LINE-Versandvorlage **[!UICONTROL LINE V2-Bereitstellung]** aus und benennen Sie Ihren Versand.
 
    ![](assets/line_usecase_01.png)
 
@@ -199,17 +199,17 @@ In diesem Beispiel wird aufgezeigt, wie Sie eine Textnachricht und ein Bild, die
 
    ![](assets/line_usecase_02.png)
 
-1. Klicken Sie auf **[!UICONTROL Add]** , um eine Nachricht zu erstellen, und wählen Sie die **[!UICONTROL Message type]**.
+1. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um Ihre Nachricht zu erstellen, und wählen Sie danach **[!UICONTROL Nachrichtentyp]** aus.
 
    Hier möchten wir zunächst eine Textnachricht erstellen.
 
    ![](assets/line_usecase_03.png)
 
-1. Place your cursor in the place where you want to insert the personalized text and click the drop-down icon then select **[!UICONTROL Visitor > First name]**.
+1. Platzieren Sie den Cursor an der Stelle, an der der personalisierte Text eingefügt werden soll, und wählen Sie das Symbol der Dropdown-Liste und danach **[!UICONTROL Besucher > Vorname]** aus.
 
    ![](assets/line_usecase_05.png)
 
-1. Gehen Sie wie folgt vor, um ein Bild hinzuzufügen und wählen Sie **[!UICONTROL Image and links]** in der **[!UICONTROL Message type]** Dropdown-Liste aus.
+1. Gehen Sie ebenso vor, um ein Bild hinzuzufügen, indem Sie **[!UICONTROL Bild und Link]** in der Dropdown-Liste **[!UICONTROL Nachrichtentyp]** auswählen.
 
    Fügen Sie Ihre Bild-URL hinzu.
 
@@ -220,7 +220,7 @@ In diesem Beispiel wird aufgezeigt, wie Sie eine Textnachricht und ein Bild, die
 
    ![](assets/line_usecase_08.png)
 
-1. Save your delivery then click **[!UICONTROL Send]** to analyze and send it to the target.
+1. Speichern Sie Ihren Versand und verwenden Sie die Schaltfläche **[!UICONTROL Senden]**, um den Versand zu analysieren und ihn anschließend an die Zielgruppe zu senden.
 
    Der Versand wird an die Zielgruppe gesendet:
 
