@@ -14,7 +14,7 @@ discoiquuid: 2c2a7196-9183-46b1-b1e2-4a07a53e93b4
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
 
 ---
@@ -22,8 +22,8 @@ source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
 
 # Nachrichtenvorlagen erstellen{#creating-the-message-template}
 
-1. Wechseln Sie zum **[!UICONTROL Message Center >Transactional message templates]** Ordner in der Adobe Campaign-Struktur.
-1. In the list of transactional message templates, right-click and select **[!UICONTROL New]** in the drop-down menu or click the **[!UICONTROL New]** button above the list of transactional message templates.
+1. Wechseln Sie zum Knoten **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** im Adobe-Campaign-Navigationsbaum.
+1. Klicken Sie mit der rechten Maustaste in die Liste der Vorlagen und wählen Sie **[!UICONTROL Neu]** im Kontextmenü aus oder klicken Sie direkt auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Liste.
 
    ![](assets/messagecenter_create_model_001.png)
 
@@ -36,13 +36,13 @@ source-git-commit: 2c0d4054fbc15a88ea0370269b62c7d647aea033
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Ereignistypen müssen zuvor in der Konsole erstellt werden. For more on this, refer to [Creating event types](../../message-center/using/creating-event-types.md).
+   Ereignistypen müssen zuvor in der Konsole erstellt werden. Weiterführende Informationen finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
 
    >[!NOTE]
    >
    >Ein Ereignistyp sollte nie mit mehr als einer Vorlage verknüpft werden.
 
-1. Enter a nature and a description, then click **[!UICONTROL Continue]** to create the message body (refer to [Creating message content](../../message-center/using/creating-message-content.md)).
+1. Geben Sie bei Bedarf die Art sowie eine Beschreibung der Vorlage an und klicken Sie auf **[!UICONTROL Fortfahren]**, um den Nachrichteninhalt zu erstellen (siehe [Nachrichteninhalt erstellen](../../message-center/using/creating-message-content.md)).
 
    ![](assets/messagecenter_create_model_004.png)
 
