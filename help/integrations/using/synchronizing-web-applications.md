@@ -14,7 +14,7 @@ discoiquuid: df68ab11-7a8b-4e89-8cc4-8764e8a859b2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -30,9 +30,9 @@ Wenn Sie über zahlreiche Dienste und Webanwendungen in Campaign v7 verfügen, i
 
 Dazu ist Folgendes erforderlich:
 
-* Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe Abschnitt [Synchronisierungsprofile](../../integrations/using/synchronizing-profiles.md) .
+* Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe Abschnitt [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md).
 * Ein Dienst und eine Webanwendung, die in Campaign v7 erstellt und publiziert wurden.
-* die Webanwendung muss eine **[!UICONTROL Pre-loading]** Aktivität mit der **[!UICONTROL Adobe Campaign encryption]** Identifizierungsmethode enthalten.
+* Die Webanwendung muss die Aktivität **[!UICONTROL Vorausfüllen]** enthalten, die die Verschlüsselungsmethode **[!UICONTROL Adobe-Campaign-Verschlüsselung]** verwendet.
 
 ## Webanwendung und Dienst erstellen {#creating-the-web-application-and-service}
 
@@ -41,37 +41,37 @@ Sie können in Campaign v7 Webanwendungen erstellen, mit denen sich Empfänger f
 In Campaign v7 wurden die folgenden Objekte erstellt:
 
 * ein Newsletter-Dienst
-* eine Webanwendung mit einer **[!UICONTROL Pre-loading]**, einer **[!UICONTROL Page]** und einer **[!UICONTROL Storage]** Aktivität.
+* eine Webanwendung, die die Aktivität **[!UICONTROL Vorausfüllen]**, **[!UICONTROL Seite]** und **[!UICONTROL Speicherung]** enthält.
 
-1. Wählen Sie eine vorhandene Webanwendung **[!UICONTROL Resources > Online > Web applications]** aus.
+1. Gehen Sie zu **[!UICONTROL Ressourcen > Online > Webanwendungen]** und wählen Sie eine vorhandene Webanwendung aus.
 
    ![](assets/acs_connect_lp_2.png)
 
-1. Bearbeiten Sie die **[!UICONTROL Preloading]** Aktivität. Das **[!UICONTROL Auto-load data referenced in the form]** Kästchen wird markiert und das **[!UICONTROL Adobe Campaign encryption]** Identifizierungsverfahren ausgewählt. Auf diese Weise kann die Webanwendung die Felder des Formulars im Voraus mit den in der Adobe Campaign-Datenbank gespeicherten Daten laden. Siehe [dieses Dokument](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+1. Bearbeiten Sie die Aktivität **[!UICONTROL Vorausfüllen]**. Das Feld **[!UICONTROL Referenzierte Daten werden automatisch in das Formular geladen]** ist mit einem Häkchen versehen und die Identifizierungsmethode **[!UICONTROL Adobe-Campaign-Verschlüsselung]** ist ausgewählt. Dadurch kann die Webanwendung die Felder des Formulars mit den in der Adobe Campaign-Datenbank gespeicherten Daten ausfüllen. Weiterführende Informationen hierzu finden Sie in [diesem Dokument](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    ![](assets/acs_connect_lp_4.png)
 
-1. Edit the **[!UICONTROL Page]**. Three fields (Name, Email and Phone) have been included, as well as a check box to invite the recipient to subscribe to a newsletter (**[!UICONTROL Newsletter]** service).
+1. Bearbeiten Sie die **[!UICONTROL Seite]**. Drei Felder (Name, E-Mail und Telefonnummer) wurden eingefügt sowie das Kontrollkästchen, mit dem sich der Empfänger zum Newsletter anmelden kann (**[!UICONTROL Newsletter]**-Dienst).
 
    ![](assets/acs_connect_lp_3.png)
 
-1. Gehen Sie zu **[!UICONTROL Profiles and Target > Services and subscriptions]** und öffnen Sie den **[!UICONTROL Newsletter]** Dienst. Dies ist der Dienst, der von der Kommunikation mit Campaign Standard aktualisiert wird. Sie können sehen, dass noch kein Empfänger diesen Dienst abonniert hat.
+1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** und öffnen Sie den Dienst **[!UICONTROL Newsletter]**. Dieser Dienst wird durch die Campaign Standard-Kommunikation aktualisiert. Sie sehen, dass sich noch kein Empfänger für diesen Dienst angemeldet hat.
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Wählen Sie einen Empfänger **[!UICONTROL Profiles and Targets > Recipient]** aus. Sie können sehen, dass er den Dienst noch nicht abonniert hat.
+1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie einen Empfänger aus. Sie sehen, dass er sich noch nicht für den Dienst angemeldet hat.
 
    ![](assets/acs_connect_lp_6.png)
 
 ## Daten replizieren {#replicating-the-data}
 
-Um die erforderlichen Daten zwischen Campaign v7 und Campaign Standard zu replizieren, stehen verschiedene Vorlagen für den Replikationsarbeitsablauf zur Verfügung. Der **[!UICONTROL Profiles replication]** Arbeitsablauf repliziert automatisch alle Empfänger der Kampagne v7 in Campaign Standard. See [Technical and replication workflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Der **[!UICONTROL Landing pages replication]** Arbeitsablauf ermöglicht die Replizierung der Webanwendungen, die wir in Campaign Standard verwenden möchten.
+Um die erforderlichen Daten zwischen Campaign v7 und Campaign Standard zu replizieren, stehen verschiedene Workflow-Vorlagen für die Replikation zur Verfügung. Der Workflow für die **[!UICONTROL Profilreplikation]** repliziert automatisch alle Campaign v7-Empfänger nach Campaign Standard. Siehe [Technische und Replikations-Workflows](../../integrations/using/acs-connector-principles-and-data-cycle.md#technical-and-replication-workflows). Der Workflow für die **[!UICONTROL Landingpage-Replikation]** ermöglicht eine Replikation der Webanwendungen, die wir in Campaign Standard nutzen möchten.
 
 ![](assets/acs_connect_lp_1.png)
 
 Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaign Standard folgendermaßen vor:
 
-1. From the home screen, click on **[!UICONTROL Customer profiles]**.
+1. Wählen Sie auf der Startseite die Option **[!UICONTROL Kundenprofile]** aus.
 
    ![](assets/acs_connect_lp_7.png)
 
@@ -79,7 +79,7 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
    ![](assets/acs_connect_lp_8.png)
 
-1. Klicken Sie in der oberen Leiste auf **[!UICONTROL Marketing activities]** und suchen Sie die Webanwendung Campaign v7. Es wird als Landingpage in Campaign Standard angezeigt.
+1. Klicken Sie auf der obersten Leiste auf **[!UICONTROL Marketingaktivitäten]** und suchen Sie nach der Campaign v7-Webanwendung. Sie wird in Campaign Standard als Landingpage angezeigt.
 
    ![](assets/acs_connect_lp_9.png)
 
@@ -91,10 +91,10 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
 In diesem Abschnitt erfahren Sie, wie in eine E-Mail in Campaign Standard ein Link eingefügt wird, der zu einer Landingpage weist, die von einer Campaign v7-Webanwendung repliziert wurde.
 
-Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfolgen wie üblich. Siehe das [Adobe Campaign Standard](https://helpx.adobe.com/support/campaign/standard.html)-Handbuch.
+Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfolgen wie üblich. Siehe das [Adobe Campaign Standard](https://helpx.adobe.com/de/support/campaign/standard.html)-Handbuch.
 
 1. Erstellen Sie eine neue E-Mail und wählen Sie mindestens ein repliziertes Profil als Zielgruppe.
-1. Bearbeiten Sie den Inhalt und fügen Sie eine **[!UICONTROL Link to a landing page]** ein.
+1. Bearbeiten Sie den Inhalt und fügen Sie einen **[!UICONTROL Link zu einer Landingpage]** hinzu.
 
    ![](assets/acs_connect_lp_12.png)
 
@@ -115,15 +115,15 @@ Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfo
 
 Wenn der Empfänger seine Daten über die Webanwendung aktualisiert, ruft Adobe Campaign v7 synchron die aktualisierten Daten ab. Diese werden anschließend von Campaign v7 nach Campaign Standard repliziert.
 
-1. Wechseln Sie in Campaign v7 zu **[!UICONTROL Profiles and Target > Services and subscriptions]** und öffnen Sie den **[!UICONTROL Newsletter]** Dienst. Sie können sehen, dass der Empfänger jetzt in der Abonnentenliste angezeigt wird.
+1. Gehen Sie in Campaign v7 zu **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** und öffnen Sie den **[!UICONTROL Newsletter]**-Dienst. Sie sehen, dass der Empfänger jetzt in der Abonnentenliste angezeigt wird.
 
    ![](assets/acs_connect_lp_16.png)
 
-1. Wählen Sie den Empfänger **[!UICONTROL Profiles and Targets > Recipient]** aus. Sie können sehen, dass die Telefonnummer jetzt gespeichert ist.
+1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie den Empfänger aus. Sie sehen, dass die Telefonnummer gespeichert ist.
 
    ![](assets/acs_connect_lp_17.png)
 
-1. In the **[!UICONTROL Subscriptions]** tab, we can also see that he has subscribed to the newsletter service.
+1. Außerdem ist im Tab **[!UICONTROL Abonnements]** ebenfalls ersichtlich, dass er sich für den Newsletter angemeldet hat.
 
    ![](assets/acs_connect_lp_18.png)
 
@@ -136,7 +136,7 @@ Wenn der Empfänger seine Daten über die Webanwendung aktualisiert, ruft Adobe 
 
    ![](assets/acs_connect_lp_20.png)
 
-1. Klicken Sie auf die **[!UICONTROL Subscriptions]** Registerkarte. Der Newsletter-Dienst wird jetzt angezeigt.
+1. Wählen Sie den Tab **[!UICONTROL Abonnements]** aus. Der Newsletter-Dienst wird angezeigt.
 
    ![](assets/acs_connect_lp_21.png)
 
