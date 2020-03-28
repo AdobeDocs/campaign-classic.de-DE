@@ -14,7 +14,7 @@ discoiquuid: f3cd5409-c301-4580-96e3-9349e18cf42a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Sprung (Start und Ziel){#jump-start-point-and-end-point}
 
-**[!UICONTROL Jump]** -typische grafische Objekte werden zur Verbesserung der Lesbarkeit eines komplexen Diagramms verwendet, insbesondere bei Übergängen.
+**[!UICONTROL Sprung]**-Aktivitäten dienen der besseren Übersichtlichkeit von komplexen Workflow-Diagrammen, insbesondere bei sich überschneidenden Transitionen.
 
 Sprünge sind Transitionen ohne Pfeil: sie erlauben den Übergang von einer Aktivität zu einer anderen, wie unten dargestellt.
 
@@ -34,4 +34,4 @@ Ein Workflow kann mehrere derartige Sprung-Paare aufweisen. Sprung-Paare werden 
 
 ![](assets/s_user_segmentation_jump_in.png)
 
-Um die Lesbarkeit des Diagramms zu verbessern, können Sie das mit Jumps verknüpfte Bild so ändern, dass die zugehörige Nummer angezeigt wird. Siehe [Verwalten von Aktivitätsbildern](../../workflow/using/managing-activity-images.md).
+Für eine bessere Lesbarkeit des Diagramms können Sie das den Sprüngen zugeordnete Symbol durch die entsprechende Ziffer ersetzen. Siehe [Bilder für Aktivitäten verwalten](../../workflow/using/managing-activity-images.md).
