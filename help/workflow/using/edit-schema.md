@@ -14,7 +14,7 @@ discoiquuid: 733576d2-505f-4598-89eb-a10e7331bf7e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 # Schema-Bearbeitung{#edit-schema}
 
-Daten können mithilfe der **[!UICONTROL Edit schema]** Aktivität transformiert, normalisiert und bei Bedarf im Workflow bereichert werden. Es wird im Allgemeinen zur Normalisierung der Datenstruktur verwendet: Sie können die Ausgabespalten umbenennen oder ihren Inhalt ändern, indem Sie beispielsweise die Durchschnittswerte eines Felds oder Aggregats berechnen.
+Mithilfe der **[!UICONTROL Schema-Bearbeitung]** lassen sich Daten im Workflow umwandeln, standardisieren und bei Bedarf anreichern. Sie dient im Allgemeinen dazu, die Struktur der Daten zu harmonisieren: Ausgabespalten können umbenannt und ihr Inhalt verändert werden, beispielsweise durch Berechnung eines Durchschnitts oder Aggregats ausgehend von den ursprünglichen Werten.
 
 Diese Aktivität verändert nicht die Daten der Arbeitstabelle, sondern nur ihr Schema, d. h. die logische Darstellung der Daten.
 
 ![](assets/wf_manipulation_box.png)
 
-You can also create joins with other worktables, via the **[!UICONTROL Links]** tab.
+Im Tab **[!UICONTROL Relationen]** können Sie Beziehungen zu anderen Arbeitstabellen herstellen.
 
 ![](assets/wf_manipulation_box_link_tab.png)
 
