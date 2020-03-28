@@ -14,7 +14,7 @@ discoiquuid: a128caac-5740-4dac-b14d-1d2fcef3cc69
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 # Laden (DBMS){#data-loading-rdbms}
 
-The **[!UICONTROL Data loading (RDBMS)]** activity lets you access this external database directly and to collect only the data required for targeting.
+Die Aktivität **[!UICONTROL Laden (DBMS)]** dient dem Abruf von für die Zielgruppenbestimmung erforderlichen Daten durch Zugriff auf externe Datenbanken.
 
-Zur Verbesserung der Leistung empfehlen wir die Verwendung der Abfrageaktivität (wo die Daten einer externen Datenbank verwendet werden können). For more on this, refer to [Accessing an external database (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+Um eine korrekte Leistung sicherzustellen, ist die Verwendung einer Abfrageaktivität vorzuziehen, die ebenfalls den Abruf externer Daten erlaubt. Weitere Informationen hierzu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
 
 Gehen Sie wie folgt vor:
 
@@ -32,15 +32,15 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   The name of the table entered in the corresponding field is used as a template for collecting data in the external database. The name of the table processed by the workflow can be computed or conveyed by the inbound transition of the data loading activity. To select the table to be used, click the **[!UICONTROL Advanced..]**. und wählen Sie die **[!UICONTROL Specified in the transition]** oder- **[!UICONTROL Explicit]** Option aus.
+   Der Name der Tabelle dient als Vorlage zum Abruf der externen Daten. Der Name der Tabelle, die tatsächlich vom Workflow verarbeitet wird, kann berechnet oder von einer eingehenden Transition übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf **[!UICONTROL Erweitert...]** und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
-1. Klicken Sie auf den **[!UICONTROL Select the columns to extract...]** Link, um die in der Datenbank zu erfassenden Daten auszuwählen.
+1. Klicken Sie auf den Link **[!UICONTROL Zu extrahierende Spalten auswählen...]**, um die abzurufenden Daten auszuwählen.
 
    ![](assets/s_advuser_wf_sgbd_sample_2.png)
 
-1. Sie können einen Filter für diese Daten definieren. To do this, click the **[!UICONTROL Edit query....]** link.
+1. Durch Klick auf **[!UICONTROL Abfrage bearbeiten...]** können die Daten gefiltert werden.
 
    Derart abgerufene Daten sind im weiteren Verlauf des Workflows verwendbar.
 
