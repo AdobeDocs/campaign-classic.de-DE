@@ -14,7 +14,7 @@ discoiquuid: 3fd7a1ef-b0e2-4a7e-9e36-044d997db785
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8e37be4f764feadb49c70a9d598f8f3b8f864380
 
 ---
@@ -22,29 +22,29 @@ source-git-commit: 8e37be4f764feadb49c70a9d598f8f3b8f864380
 
 # Anonyme Interaktionen{#anonymous-interactions}
 
-Sehen Sie sich dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&ref=helpx.adobe.com) an, um einen Überblick darüber zu erhalten, wie Angebote an identifizierte und anonyme Ziele gesendet werden.
+Sehen Sie sich dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/indetified-and-anonymous-interaction-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) an, um einen Überblick darüber zu erhalten, wie Angebote an identifizierte und anonyme Zielgruppen gesendet werden.
 
 ## Umgebung für anonyme Interaktionen {#targeting-and-storing-an-environment-for-anonymous-interactions}
 
-Interaktion verfügt standardmäßig über eine vorkonfigurierte Umgebung, um die Empfängertabelle (identifizierte Angebote) als Ziel festzulegen. Wenn Sie eine andere Tabelle als Ziel auswählen möchten (Besuchstabelle für anonyme Angebote oder eine bestimmte Empfängertabelle), müssen Sie den Assistenten für die Zielzuordnung verwenden, um die Umgebung zu erstellen. For more on this, see [Creating an offer environment](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+Standardmäßig wird Interaction mit einer Umgebung geliefert, die für ein Zielgruppen-Mapping der Empfängertabelle konfiguriert ist, also für Angebote an identifizierte Kontakte. Sollten Sie eine andere Tabelle (beispielsweise die Besuchertabelle für anonyme Angebote) verwenden wollen, müssen Sie eine neue Umgebung mit einem entsprechenden Zielgruppen-Mapping erstellen. Hierzu steht Ihnen ein Assistent zur Verfügung. Weiterführende Informationen finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-Wenn Sie eine anonyme Umgebung über den Assistenten zum Erstellen der Zuordnung erstellen, wird das **[!UICONTROL Environment dedicated to incoming anonymous interactions]** Feld automatisch auf der **[!UICONTROL General]** Registerkarte der Umgebung markiert.
+Bei der Erstellung einer anonymen Umgebung mithilfe des Assistenten ist im Tab **[!UICONTROL Allgemein]** das Feld **[!UICONTROL Für anonyme eingehende Interaktionen reservierte Umgebung]** bereits angekreuzt.
 
-Der Vorgang **[!UICONTROL Targeting dimension]** wird automatisch abgeschlossen. Standardmäßig wird eine Verknüpfung zur Besuchstabelle erstellt.
+Die **[!UICONTROL Zielgruppendimension]** wird vorausgefüllt und verweist standardmäßig auf die Besuchertabelle.
 
-Das **[!UICONTROL Visitor folder]** Feld wird angezeigt. Es wird automatisch abgeschlossen, um eine Verknüpfung zum **[!UICONTROL Visitors]** Ordner herzustellen. In diesem Feld können Sie festlegen, wo Besucherprofile gespeichert werden sollen.
+Auch das Feld **[!UICONTROL Besucherordner]** enthält bereits den Ordner **[!UICONTROL Besucher]**. Dieses Feld dient der Angabe des Speicherorts der Besucherprofile.
 
 ![](assets/anonymous_environment_option.png)
 
 >[!NOTE]
 >
->If you want to filter several types of visitors, for instance in the case of anonymous offers presented for one or more brands, you need to create an environment for each brand, and a **[!UICONTROL Visitors]** type folder for each environment.
+>Wenn Sie verschiedene Besuchertypen unterscheiden möchten, beispielsweise im Fall von anonymen Angeboten verschiedener Marken, müssen Sie für jede Marke eine Umgebung und einen zugeordneten **[!UICONTROL Besucher]**-Ordner erstellen.
 
 ## Angebotskataloge für anonyme Interaktionen {#offer-catalog-for-anonymous-interactions}
 
 Wie bei ausgehenden spielt der Angebotskatalog auch bei eingehenden Interaktionen eine zentrale Rolle. Er enthält alle nach Kategorien geordneten Angebote.
 
-Wenden Sie zum Erstellen von Kategorien und Räumen denselben Prozess an wie für identifizierte Besucher (siehe [Erstellen von Angebotskategorien](../../interaction/using/creating-offer-categories.md) und [Erstellen einer Angebotsumgebung](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
+Wenden Sie zum Erstellen von Kategorien und Platzierungen denselben Prozess an wie für identifizierte Besucher (siehe [Angebotskategorien](../../interaction/using/creating-offer-categories.md) und [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment)).
 
 ## Anonyme Besucher {#anonymous-visitors}
 
@@ -52,7 +52,7 @@ Anonyme Besucher können beim Webseitenaufruf einem Identifizierungsversuch durc
 
 Während dieser Etappe werden die mithilfe der Cookies gesammelten Informationen zu den in Ihrer Datenbank enthaltenen Daten in Beziehung gebracht. Auf diese Weise können gewisse Besucher erkannt, also implizit identifiziert werden. Gelingt die Identifizierung nicht, bleibt der Besucher anonym.
 
-Um diese Analyse auszuführen, aktivieren Sie für den Angebotsbereich die **[!UICONTROL Implicitly identify the individual based on their browser history]** Option.
+Kreuzen Sie in der Platzierung das Feld **[!UICONTROL Person implizit über den Navigationsverlauf identifizieren]** an, wenn Sie diese Möglichkeit nutzen wollen.
 
 ![](assets/identification_anonymous_visitors.png)
 
@@ -62,7 +62,7 @@ Wenn ein Besucher nicht identifiziert werden konnte, können seine Daten in eine
 
 Für nicht identifizierte Kontakte oder solche, die zwar implizit identifiziert werden können, denen Sie aber keine für bekannte Kontakte erstellten Angebote unterbreiten möchten, haben Sie die Möglichkeit, in eine anonyme Umgebung wechseln.
 
-Überprüfen Sie dazu die **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** und geben Sie dann bei Angabe eines Angebotsbereichs die Umgebung an, die diesen nicht identifizierten Besuchern gewidmet ist **[!UICONTROL Linked anonymous space]** .
+Kreuzen Sie hierfür das Feld **[!UICONTROL Zu einer anonymen Platzierung wechseln, wenn keine Zielperson identifiziert wurde]** an und geben Sie im Feld **[!UICONTROL Zugeordnete anonyme Platzierung]** die den nicht identifizierten Besuchern vorbehaltene Umgebung an.
 
 ![](assets/anonymous_to_anonymous_environment.png)
 
