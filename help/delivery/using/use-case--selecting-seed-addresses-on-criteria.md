@@ -14,7 +14,7 @@ discoiquuid: fa8aab62-e182-4388-aa23-c255b0dbd42e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 # Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien{#use-case-selecting-seed-addresses-on-criteria}
 
-In the framework of a delivery or a campaign, the **[!UICONTROL Edit the dynamic condition...]** link lets you choose seed addresses based on specific selection criteria.
+Der Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** ermöglicht es, im Rahmen einer Kampagne oder einer Sendung die zu verwendenden Testadressen nach bestimmten Kriterien auszuwählen.
 
 In unserem Anwendungsbeispiel versendet die Webseite **Mein Online-Buchshop** je nach bevorzugtem Genre verschiedene Newsletter an seine Kunden.
 
@@ -37,7 +37,7 @@ Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen einer Auslieferung finden Sie im Abschnitt [Erstellen einer E-Mail-Auslieferung](../../delivery/using/creating-an-email-delivery.md) .
+Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [E-Mail-Versand erstellen](../../delivery/using/creating-an-email-delivery.md).
 
 Im vorliegenden Beispiel hat der Versandverantwortliche zunächst den Newsletter erstellt und die Zielgruppe ausgewählt.
 
@@ -51,16 +51,16 @@ Die Hinzufügung des Abteilung-Feldes, welches den gemeinsamen Wert aufnehmen so
 
 Weiterführende Informationen zur Schemaerweiterung entnehmen Sie bitte dem [Konfigurationshandbuch](../../configuration/using/data-schemas.md).
 
-1. Klicken Sie im **[!UICONTROL Administration > Configuration > Data schemas]** Knoten auf das **[!UICONTROL New]** Symbol.
-1. Wählen Sie im **[!UICONTROL Creation of a data schema]** Fenster die **[!UICONTROL Extension of a schema]** Option aus und klicken Sie auf **[!UICONTROL Next]**.
+1. Klicken Sie im Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** auf die Schaltfläche **[!UICONTROL Neu]**.
+1. Kreuzen Sie im Fenster **[!UICONTROL Datenschemaerstellung]** die Option **[!UICONTROL Schemaerweiterung]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. Wählen Sie das **[!UICONTROL Seed addresses]** Quellschema aus, geben Sie **doc** als Wert ein **[!UICONTROL Namespace]** und klicken Sie auf **[!UICONTROL Ok]**.
+1. Wählen Sie das Quellschema **[!UICONTROL Testadressen]** aus, klicken Sie auf **[!UICONTROL OK]** und geben Sie als **[!UICONTROL Namensraum]** beispielsweise **doc** an.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
-1. Klicks **[!UICONTROL Save]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. Fügen Sie nun die nachfolgenden Zeilen wie auf der Abbildung dargestellt in das Schema ein:
 
    ```
@@ -74,7 +74,7 @@ Weiterführende Informationen zur Schemaerweiterung entnehmen Sie bitte dem [Kon
 
    ![](assets/dlv_seeds_usecase_20.png)
 
-   Kopieren Sie dann die folgenden Zeilen und fügen Sie sie unter dem **[!UICONTROL Seed to insert in the export files]** Element ein.
+   Fügen Sie anschließend unter dem Element **[!UICONTROL In die Exportdateien einzufügende Testadressen]** folgende Zeile ein:
 
    ```
        <element aggregate="doc:seedMember:common">
@@ -83,34 +83,34 @@ Weiterführende Informationen zur Schemaerweiterung entnehmen Sie bitte dem [Kon
 
    ![](assets/dlv_seeds_usecase_29.png)
 
-   In this case, you are specifying that a new enumeration named **[!UICONTROL Department]** has been created in the seed address table, and it is based on the standard **[!UICONTROL @company]** enumeration template (labeled under the name **Company** in the seed address form).
+   Auf diese Weise konfigurieren Sie in der Testadressentabelle die Erstellung einer neuen Auflistung mit Namen **[!UICONTROL Abteilung]**, welche auf der Standardauflistung **[!UICONTROL @company]** (**Firma** im Testadressenformular) beruht.
 
-1. Klicks **[!UICONTROL Save]**.
-1. Wählen Sie im **[!UICONTROL Tools > Advanced]** Menü die **[!UICONTROL Update database structure]** Option aus.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Die im Testadressen-Schema vorgenommenen Änderungen erfordern eine Aktualisierung der Datenbankstruktur. Gehen Sie hierzu in das Menü **[!UICONTROL Werkzeuge > Erweitert]** und wählen Sie die Option **[!UICONTROL Datenbankstruktur aktualisieren...]** aus.
 
    ![](assets/dlv_seeds_usecase_12.png)
 
-1. When the update wizard is displayed, click the **[!UICONTROL Next]** button to access the Edit tables window: changes carried out in the seed address data schema require a structure update.
+1. Klicken Sie im Datenbankaktualisierungs-Assistenten auf **[!UICONTROL Weiter]**, um zur Tabellenbearbeitung zu gelangen.
 
    ![](assets/dlv_seeds_usecase_13.png)
 
-1. Folgen Sie dem Assistenten, bis Sie zur Seite gelangen, um das Update auszuführen. Click the **[!UICONTROL Start]** button.
+1. Durchlaufen Sie den Assistenten, bis Sie zur Seite **[!UICONTROL Datenbank aktualisieren]** gelangen, und klicken Sie auf .
 
    ![](assets/dlv_seeds_usecase_14.png)
 
    Nach Abschluss der Aktualisierung können Sie den Assistenten schließen.
 
-1. Disconnect then reconnect to Adobe Campaign. The changes made in the seed address data schema are now effective. In order for them to be visible from the seed address screen, you must update the associated **[!UICONTROL Input form]**. Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabedrucks](#updating-the-input-form) .
+1. Melden Sie sich von Adobe Campaign ab und verbinden Sie sich erneut. Die im Testadressen-Schema vorgenommenen Änderungen sind nun effektiv. Damit sie im Eingabefenster der Testadressen sichtbar werden, ist eine Anpassung des **[!UICONTROL entsprechenden Formulars]** erforderlich. Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisieren](#updating-the-input-form).
 
 #### Datenschema ausgehend von einer verbundenen Tabelle erweitern {#extending-the-data-schema-from-a-linked-table}
 
 Das Testadressen-Schema kann auch Werte aus einer mit dem Empfängerschema verbundenen Tabelle übernehmen.
 
-For example, the user would like to integrate the **[!UICONTROL Internet Extension]** found in the **[!UICONTROL Country]** table that is linked to the recipients schema.
+Angenommen, ein Benutzer möchte das Feld **[!UICONTROL Domain-Endung]**, das in der mit dem Empfängerschema verbundenen Tabelle **[!UICONTROL Land]** enthalten ist, integrieren.
 
 ![](assets/dlv_seeds_usecase_06.png)
 
-In diesem Fall ist das Testadressen-Schema wie im Abschnitt  beschrieben zu erweitern. Die im **Schritt 4** einzufügenden Code-Zeilen lauten jedoch wie folgt:
+In diesem Fall ist das Testadressen-Schema wie im Abschnitt beschrieben zu erweitern. Die im **Schritt 4** einzufügenden Code-Zeilen lauten jedoch wie folgt:
 
 ```
 <element name="country">
@@ -123,28 +123,28 @@ In diesem Fall ist das Testadressen-Schema wie im Abschnitt  beschrieben zu erwe
 
 Auf diese Weise:
 
-* that the user wants to create a new element named **[!UICONTROL Internet Extension]**,
+* wird ein neues Element mit Namen **[!UICONTROL Domain-Endung]** erstellt,
 * welches aus der Tabelle **[!UICONTROL Country]** stammt.
 
 >[!CAUTION]
 >
 >Es ist erforderlich, in der verbundenen Tabelle den **xpath-dst** anzugeben.
 >
->This can be found in the **[!UICONTROL Country]** element in the recipients table.
+>Diesen finden Sie in der Empfängertabelle **[!UICONTROL nms:recipient]** im Element :
 
 ![](assets/dlv_seeds_usecase_07.png)
 
-The user can then follow from **step 5** of the section, and update the **[!UICONTROL Input form]** of the seed addresses.
+Befolgen Sie im Anschluss die im Abschnitt beschriebene Vorgehensweise ab dem **Schritt 5** und passen Sie dann das Formular **[!UICONTROL Testadressen]** an.
 
-Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabedrucks](#updating-the-input-form) .
+Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisieren](#updating-the-input-form).
 
 #### Testadressen-Formular aktualisieren {#updating-the-input-form}
 
-1. Suchen Sie im **[!UICONTROL Administration > Configuration > Input forms]** Knoten das Eingabeformular für die Startadressen.
+1. Gehen Sie in den Knoten **[!UICONTROL Administration > Konfiguration > Formulare]** und öffnen Sie das Testadressen-Formular.
 
    ![](assets/dlv_seeds_usecase_19.png)
 
-1. Edit the form and insert the following line in the **[!UICONTROL Recipient]** container.
+1. Fügen Sie im Container **[!UICONTROL Empfänger]** folgende Zeile ein.
 
    ```
    <input xpath="@workField"/>
@@ -153,11 +153,11 @@ Weitere Informationen finden Sie im Abschnitt [Aktualisieren des Eingabedrucks](
    ![](assets/dlv_seeds_usecase_21.png)
 
 1. Speichern Sie Ihre Änderungen.
-1. Öffnen Sie eine Seed-Adresse. Das **[!UICONTROL Department]** Feld wird in der **[!UICONTROL Recipient]** Tabelle angezeigt.
+1. Wenn Sie nun eine Testadresse öffnen, wird das neue Feld **[!UICONTROL Abteilung]** in der Tabelle **[!UICONTROL Empfänger]** angezeigt.
 
    ![](assets/dlv_seeds_usecase_22.png)
 
-1. Edit the seed addresses that you want to use for the delivery and enter **Purchasing** as the value in the **[!UICONTROL Department]** field.
+1. Geben Sie nun in den Testadressen, die Sie für den Versand verwenden möchten, im Feld **[!UICONTROL Abteilung]** den Wert **Einkauf** ein.
 
 ## 3. Schritt - Bedingung bestimmen {#step-3---defining-the-condition}
 
@@ -167,11 +167,11 @@ Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definiere
 
    ![](assets/dlv_seeds_usecase_01.png)
 
-1. Klicken Sie auf den **[!UICONTROL To]** Link und dann auf die **[!UICONTROL Seed addresses]** Registerkarte, um auf den **[!UICONTROL Edit the dynamic condition...]** Link zuzugreifen.
+1. Klicken Sie auf **[!UICONTROL An:]** und im **[!UICONTROL Testadressen]**-Tab auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten...]**.
 
    ![](assets/dlv_seeds_usecase_02.png)
 
-1. Wählen Sie den Ausdruck aus, mit dem Sie die gewünschten Startadressen auswählen können. Hier wählt der Benutzer den **[!UICONTROL Department (@workField)]** Ausdruck aus.
+1. Wählen Sie den Ausdruck aus, der Ihnen die Filterung der gewünschten Testadressen ermöglicht, im vorliegenden Beispiel also **[!UICONTROL Abteilung (@workField)]**.
 
    ![](assets/dlv_seeds_usecase_03.png)
 
@@ -181,22 +181,22 @@ Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definiere
 
    >[!NOTE]
    >
-   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema (**(recipient**). Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.****
+   >Die zuvor vorgenommene Schemaerweiterung beruht auf dem Empfängerschema **recipient**. Dies gilt auch für die Auflistung, aus der die oben zu sehenden Werte stammen.****
 
-1. Klicks **[!UICONTROL Ok]**.
+1. Bestätigen Sie die Aktion mit der Schaltfläche **[!UICONTROL OK]**.
 
-   The query is displayed in the **[!UICONTROL Select target]** window.
+   Die Abfrage wird im Fenster **[!UICONTROL Auswahl der Zielgruppe]** angezeigt.
 
    ![](assets/dlv_seeds_usecase_04.png)
 
-1. Klicken Sie erneut auf **[!UICONTROL Ok]**, um die Abfrage zu bestätigen.
-1. Analyze your delivery then click on the **[!UICONTROL Delivery]** tab to access the delivery logs.
+1. Klicken Sie erneut auf **[!UICONTROL OK]**, um die Abfrage zu bestätigen.
+1. Analysieren Sie nun den Versand und gehen Sie in den **[!UICONTROL Versand]**-Tab, um die Logs anzuzeigen.
 
    Die Testadressen der Einkaufsabteilung werden wie die Empfängeradressen auch mit ausstehendem Status angezeigt:
 
    ![](assets/dlv_seeds_usecase_05.png)
 
-1. Click the **[!UICONTROL Send]** button to start the delivery.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Absenden]**, um den Versand zu starten.
 
    Die in Ihren Testadressen enthaltenen Personen der Einkaufsabteilung erhalten die Sendung in ihrem E-Mail-Postfach:
 
