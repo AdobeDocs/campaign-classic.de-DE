@@ -14,7 +14,7 @@ discoiquuid: 145c26cc-c868-4b7b-904d-6af577fbcb83
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -38,7 +38,7 @@ Die Standardsprache ist die Sprache, in der die Webanwendung dargestellt wird, w
 
 ## Sprachen wählen {#choosing-languages}
 
-Um eine oder mehrere Übersetzungssprachen zu definieren, klicken Sie auf die **[!UICONTROL Properties]** Schaltfläche der Webanwendung und dann auf die **[!UICONTROL Localization]** Registerkarte. Klicken Sie auf die **[!UICONTROL Add]** Schaltfläche, um eine neue Übersetzungssprache für die Webanwendung zu definieren.
+Um eine oder mehr Zielsprachen zu definieren, wählen Sie in der Webanwendung die Schaltfläche **[!UICONTROL Eigenschaften]** und dann den Tab **[!UICONTROL Lokalisierung]** aus. Wählen Sie dann die Schaltfläche **[!UICONTROL Hinzufügen]** aus, um eine neue Zielsprache für die Webanwendung zu definieren.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Um eine oder mehrere Übersetzungssprachen zu definieren, klicken Sie auf die **
 
 ![](assets/s_ncs_admin_survey_add_lang.png)
 
-When you add translation languages for a Web application (or when the default language and the editing language are different), a **[!UICONTROL Translation]** sub-tab is added to the **[!UICONTROL Edit]** tab to manage translations.
+Wenn Sie zu einer Webanwendung Zielsprachen hinzufügen (oder wenn die Standardsprache oder die Bearbeitungssprache unterschiedlich sind), erscheint im Tab **[!UICONTROL Bearbeiten]** der Untertab **[!UICONTROL Übersetzungen]**, über den Übersetzungen verwaltet werden können.
 
 Adobe Campaign besitzt ein Tool zur Übersetzung und Verwaltung mehrsprachiger Übersetzungen. Mit diesem Editor können Sie die zu übersetzenden oder zu validierenden Strings anzeigen, Übersetzungen direkt in die Benutzeroberfläche eingeben oder Zeichenfolgen importieren/exportieren, um Übersetzungen extern anfertigen zu lassen.
 
@@ -54,11 +54,11 @@ Adobe Campaign besitzt ein Tool zur Übersetzung und Verwaltung mehrsprachiger �
 
 ### Strings abrufen {#collecting-strings}
 
-The **[!UICONTROL Translations]** tab lets you enter translations for the character strings that make up the Web application.
+Im Tab **[!UICONTROL Übersetzungen]** können Sie die Übersetzungen der Zeichenfolgen der Webanwendung eingeben.
 
-Wenn Sie diese Registerkarte zum ersten Mal öffnen, enthält sie keine Daten. Klicken Sie auf den **[!UICONTROL Collect the strings to translate]** Link, um die Zeichenfolgen in der Webanwendung zu aktualisieren.
+Wenn Sie diesen Tab das erste Mal öffnen, sind keine Daten vorhanden. Wählen Sie den Link **[!UICONTROL Zu übersetzende Strings abrufen]** aus, um die Strings in der Webanwendung zu aktualisieren.
 
-Adobe Campaign collects labels of fields and strings defined in the **[!UICONTROL Texts]** tabs of all static elements: HTML blocks, Javascript, etc. Statische Elemente werden in [Statische Elemente in einem Webformular](../../web/using/static-elements-in-a-web-form.md) detailliert erläutert.
+Adobe Campaign ruft Titel von Feldern und Strings ab, die im Tab **[!UICONTROL Texte]** aller statischen Elemente definiert wurden: HTML-Bausteine, JavaScript usw. Statische Elemente werden in [Statische Elemente in einem Webformular](../../web/using/static-elements-in-a-web-form.md) detailliert erläutert.
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
@@ -70,19 +70,19 @@ Adobe Campaign collects labels of fields and strings defined in the **[!UICONTRO
 
 Immer wenn ein String übersetzt wurde, wird die Übersetzung zum Übersetzungswörterbuch hinzugefügt.
 
-Wenn der Erfassungsvorgang erkennt, dass bereits eine Übersetzung vorhanden ist, wird diese Übersetzung in der **[!UICONTROL Text]** Spalte der Zeichenfolge angezeigt. Der Status der Zeichenfolge wird auf **[!UICONTROL Translated]**.
+Wenn beim Abrufen festgestellt wird, dass eine Übersetzung bereits vorhanden ist, wird diese Übersetzung in der Spalte **[!UICONTROL Text]** des Strings angezeigt. Der Status des Strings ändert sich in **[!UICONTROL Übersetzt]**.
 
-For characters strings which have never been translated, the **[!UICONTROL Text]** field is empty and the status is **[!UICONTROL To translate]**.
+Bei noch nicht übersetzten Zeichenfolgen ist das Feld **[!UICONTROL Text]** leer und der Status lautet **[!UICONTROL Zu übersetzen]**.
 
 ### Strings filtern {#filtering-strings}
 
-Standardmäßig wird jede Übersetzungssprache der Webanwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Klicken Sie auf die **[!UICONTROL Filters]** Schaltfläche und dann auf **[!UICONTROL By language or status]** , um die entsprechenden Dropdown-Felder anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+Standardmäßig wird jede Zielsprache der Webanwendung angezeigt. Es gibt zwei Standardfilter: Sprache und Status. Wählen Sie die Schaltfläche **[!UICONTROL Filter]** und dann die Option **[!UICONTROL Nach Sprache oder Status]** aus, um die jeweiligen Dropdown-Listen anzuzeigen. Sie können auch einen erweiterten Filter erstellen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 ![](assets/s_ncs_admin_survey_trad_tab_en.png)
 
-Go to the **[!UICONTROL Language]** drop-down box to select the translation language.
+Gehen Sie zur Dropdown-Liste **[!UICONTROL Sprache]**, um die Übersetzungssprache auszuwählen.
 
-Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen Sie **[!UICONTROL To translate]** im **[!UICONTROL Status]** Dropdown-Feld aus. Sie können auch nur übersetzte oder genehmigte Zeichenfolgen anzeigen.
+Wenn Sie nur unübersetzte Strings anzeigen möchten, wählen Sie in der Dropdown-Liste **[!UICONTROL Status]** die Option **[!UICONTROL Zu übersetzen]** aus. Sie können auch nur übersetzte oder validierte Strings anzeigen.
 
 ### Strings übersetzen {#translating-strings}
 
@@ -92,13 +92,13 @@ Um nur nicht übersetzte Zeichenfolgen anzuzeigen, wählen Sie **[!UICONTROL To 
 
    Im oberen Bereich des Fensters wird der Quellstring angezeigt.
 
-1. Geben Sie die Übersetzung im unteren Abschnitt ein. Um ihn zu genehmigen, aktivieren Sie die **[!UICONTROL Translation approved]** Option.
+1. Geben Sie im unteren Bereich die Übersetzung ein. Aktivieren Sie zur Validierung die Option **[!UICONTROL Validierte Übersetzung]**.
 
    >[!NOTE]
    >
    >Die Validierung von Übersetzungen ist optional und blockiert nicht den Vorgang.
 
-   Non-approved translations are displayed as **[!UICONTROL Translated]**. Approved translations are displayed as **[!UICONTROL Approved]**.
+   Nicht-validierte Übersetzungen werden als **[!UICONTROL Übersetzt]** angezeigt. Validierte Übersetzungen werden als **[!UICONTROL Validiert]** angezeigt.
 
 ## Übersetzungen extern durchführen {#externalizing-translation}
 
@@ -110,34 +110,34 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
 
 ### Dateien exportieren {#exporting-files}
 
-1. Wählen Sie die Webanwendung(en) aus, deren Zeichenfolgen Sie importieren möchten, klicken Sie mit der rechten Maustaste und wählen Sie dann **[!UICONTROL Actions > Export strings for translation...]**
+1. Wählen Sie die Webanwendung(en) aus, deren Strings Sie exportieren möchten. Führen Sie dann einen Rechtsklick darauf aus und wählen Sie **[!UICONTROL Aktionen > Strings zur Übersetzung exportieren...]** aus.
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
-1. Select an **[!UICONTROL Export strategy]** :
+1. Wählen Sie eine **[!UICONTROL Exportstrategie]** aus :
 
-   * **[!UICONTROL One file per language]**: Beim Export wird pro Übersetzungssprache eine Datei generiert. Jede Datei wird allen ausgewählten Webanwendungen gemein sein.
-   * **[!UICONTROL One file per Web application]**: Beim Exportieren wird pro ausgewählte Webanwendung eine Datei generiert. Jede Datei enthält alle Übersetzungssprachen.
-
-      >[!NOTE]
-      >
-      >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
-
-   * **[!UICONTROL One file per language and per Web application]**: der Export mehrere Dateien generiert. Jede Datei enthält eine Übersetzungssprache pro Webanwendung.
-   * **[!UICONTROL One file for all]**: Beim Export wird eine einzelne mehrsprachige Datei für alle Webanwendungen generiert. Es enthält alle Übersetzungssprachen für alle ausgewählten Webanwendungen.
+   * **[!UICONTROL Eine Datei je Sprache]**: Beim Export wird für jede Übersetzungssprache eine Datei erstellt. Diese Datei wird für alle ausgewählten Webanwendungen verwendet.
+   * **[!UICONTROL Eine Datei je Webanwendung (nur CSV)]**: Beim Export wird für jede ausgewählte Webanwendung eine Datei erstellt. In jeder Datei sind alle Übersetzungssprachen enthalten.
 
       >[!NOTE]
       >
       >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
 
-1. Then chose the **[!UICONTROL Target folder]** where files will be recorded.
-1. Select the file format ( **[!UICONTROL CSV]** or **[!UICONTROL XLIFF]** ) and click **[!UICONTROL Start]**.
+   * **[!UICONTROL Eine Datei je Sprache und Webanwendung]**: Beim Export werden mehrere Dateien erzeugt. Jede Datei enthält eine einzige Sprache und wird nur für eine Webanwendung verwendet.
+   * **[!UICONTROL Eine Datei für alles (nur CSV)]**: Beim Export wird eine einzige mehrsprachige Datei für alle Webanwendungen erzeugt. Sie enthält alle Sprachen für alle ausgewählten Webanwendungen.
+
+      >[!NOTE]
+      >
+      >Dieser Exporttyp ist nicht für XLIFF-Exporte verfügbar.
+
+1. Wählen Sie dann den **[!UICONTROL Zielordner]**, in dem die Dateien gespeichert werden sollen.
+1. Wählen Sie das Dateiformat (**[!UICONTROL CSV]** oder **[!UICONTROL XLIFF]**) und danach **[!UICONTROL Start]** aus.
 
 ![](assets/s_ncs_admin_survey_trad_export_start.png)
 
 >[!NOTE]
 >
->Die Namen der Exportdateien werden automatisch generiert. Wenn Sie denselben Export mehrmals ausführen, ersetzen Sie vorhandene Dateien durch die neuen. Wenn Sie die vorherigen Dateien beibehalten möchten, ändern Sie die **[!UICONTROL Target folder]** und klicken Sie dann erneut auf **[!UICONTROL Start]** , um den Export auszuführen.
+>Die Namen der Exportdateien werden automatisch erstellt. Wenn derselbe Export mehrmals durchgeführt wird, werden die vorhandenen Dateien durch die neuen ersetzt. Wenn Sie die vorherigen Dateien behalten möchten, ändern Sie den **[!UICONTROL Zielordner]** und wählen Sie erneut **[!UICONTROL Start]** aus, um den Export durchzuführen.
 
 Wenn Sie Dateien im **CSV-Format** exportieren, wird jede Sprache mit einem Status und einem Validierungsstatus verknüpft. In der Spalte **Validieren?** können Sie eine Übersetzung validieren. Diese Spalte kann die Werte **Ja** oder **Nein** enthalten. Wie beim integrierten Editor (siehe [Übersetzungen im Editor verwalten](#managing-translations-in-the-editor)) ist das Validieren von Übersetzungen optional und blockiert den Fortschritt nicht.
 
@@ -145,7 +145,7 @@ Wenn Sie Dateien im **CSV-Format** exportieren, wird jede Sprache mit einem Stat
 
 Nach dem Abschluss der externen Übersetzung können Sie die übersetzten Dateien importieren.
 
-1. Rufen Sie die Liste der Webanwendungen auf, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Actions > Import translated strings...]**
+1. Gehen Sie zur Liste der Webanwendungen, klicken Sie mit der rechten Maustaste und wählen Sie dann **[!UICONTROL Aktionen > Übersetzte Strings importieren...]** aus.
 
    >[!NOTE]
    >
@@ -163,7 +163,7 @@ Nach dem Abschluss der externen Übersetzung können Sie die übersetzten Dateie
 
 ## Anzeigesprache in Formularen ändern {#changing-forms-display-language}
 
-Webformulare werden in der Standardsprache angezeigt, die auf der **[!UICONTROL Localization]** Registerkarte der Webanwendungseigenschaften angegeben ist. Um Sprachen zu ändern, müssen Sie die folgenden Zeichen am Ende der URL hinzufügen (wobei **xx** das Sprachsymbol ist):
+Webformulare werden in der Standardsprache angezeigt, die in den Eigenschaften der Webanwendung im Tab **[!UICONTROL Lokalisierung]** spezifiziert sind. Um die Sprache zu ändern, fügen Sie die folgenden Zeichen an das Ende der URL hinzu (wobei **xx** das Symbol für die Sprache ist):
 
 ```
 ?lang=xx
@@ -419,7 +419,7 @@ Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind u
 
 ## Beispiel: eine Webanwendung in mehreren Sprachen anzeigen {#example--displaying-a-web-application-in-several-languages}
 
-Das folgende Webformular ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Spanisch. Die Zeichenfolgen wurden alle über die **[!UICONTROL Translation]** Registerkarte des Webformulars übersetzt. Da die Standardsprache Englisch ist, verwenden Sie beim Veröffentlichen der Umfrage die Standard-URL, um sie in Englisch anzuzeigen.
+Das folgende Webformular ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Spanisch. Die Zeichenfolgen wurden alle über den Tab **[!UICONTROL Übersetzung]** des Webformulars übersetzt. Da die Standardsprache Englisch ist, verwenden Sie bei der Publikation der Umfrage die Standard-URL, um den Inhalt auf Englisch anzuzeigen.
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
@@ -446,7 +446,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 
 ### Systemstrings übersetzen {#translating-the-system-strings}
 
-Systemzeichenfolgen sind vordefinierte Zeichenfolgen, die von allen Webanwendungen verwendet werden. Beispiel: **[!UICONTROL Next]** , **[!UICONTROL Previous]**, **[!UICONTROL Approve]** Schaltflächen, **[!UICONTROL Loading]** Nachrichten usw. Einige Sprachen enthalten standardmäßig ein Wörterbuch mit Übersetzungen für diese Zeichenfolgen. Die Liste der Sprachen finden Sie in [Anzeigesprache in Formularen ändern](#changing-forms-display-language).
+Systemstrings sind native Zeichenfolgen, die von allen Webanwendungen verwendet werden. Beispiel: die Schaltflächen **[!UICONTROL Weiter]**, **[!UICONTROL Zurück]**, **[!UICONTROL Validieren]**, die Nachricht **[!UICONTROL Lädt...]** usw. Standardmäßig enthalten manche Sprachen ein Wörterbuch mit Übersetzungen für diese Strings. Die Liste der Sprachen finden Sie in [Anzeigesprache in Formularen ändern](#changing-forms-display-language).
 
 Wenn Sie Ihre Webanwendung in eine Sprache übersetzen, für die es kein System-Wörterbuch gibt, erscheint ein Warnhinweis, der Ihnen mitteilt, dass manche Übersetzungen fehlen.
 
@@ -454,12 +454,12 @@ Wenn Sie Ihre Webanwendung in eine Sprache übersetzen, für die es kein System-
 
 Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
-1. Gehen Sie zur Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Administration > Configuration > Global dictionary > System dictionary]** .
-1. In the upper section of the window, select the system string to translate, then click **[!UICONTROL Add]** in the lower section.
+1. Gehen Sie zum Adobe Campaign-Baum und wählen Sie **[!UICONTROL Administration > Konfiguration > Allgemeines Wörterbuch > System-Wörterbuch]** aus .
+1. Wählen Sie im oberen Bereich des Fensters den zu übersetzenden Systemstring und danach im unteren Bereich die Option **[!UICONTROL Hinzufügen]** aus.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Wählen Sie die Übersetzungssprache und geben Sie eine Übersetzung für die Zeichenfolge ein. Sie können die Übersetzung genehmigen, indem Sie die **[!UICONTROL Translation validated]** Option aktivieren.
+1. Wählen Sie die Sprache aus, in die übersetzt werden soll, und geben Sie die Übersetzung für den String ein. Sie können die Übersetzung validieren, indem Sie die Option **[!UICONTROL Validierte Übersetzung]** aktivieren.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -475,11 +475,11 @@ Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
 Um Webanwendungen in andere Sprachen als die Standardsprachen zu übersetzen (siehe [Anzeigesprache in Formularen ändern](#changing-forms-display-language)), müssen Sie eine neue Übersetzungssprache hinzufügen.
 
-1. Klicken Sie auf den **[!UICONTROL Administration > Platform > Itemized lists]** Knoten der Adobe-Kampagnenstruktur und wählen Sie in der Liste **[!UICONTROL Languages available for translation]** die Option aus. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
+1. Wählen Sie den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** im Adobe Campaign-Baum und danach aus der Liste **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
-1. Klicken Sie auf die **[!UICONTROL Add]** Schaltfläche und geben Sie die **[!UICONTROL Internal name]** ID **[!UICONTROL Label]** und den Bezeichner des Bilds (Flag) ein. Wenden Sie sich an Ihren Administrator, um ein neues Bild hinzuzufügen.
+1. Wählen Sie die Schaltfläche **[!UICONTROL Hinzufügen]** aus und geben Sie dann den **[!UICONTROL internen Namen]**, den **[!UICONTROL Titel]** und die Kennung des Bildes (Kennzeichnung) ein. Wenn Sie ein neues Bild hinzufügen möchten, wenden Sie sich an Ihren Administrator.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
 
