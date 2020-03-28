@@ -14,7 +14,7 @@ discoiquuid: 01d8be92-7312-4386-b5f5-651af31308f7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d30de91002862b664249c5a704b7c0f521dd30f2
 
 ---
@@ -26,33 +26,33 @@ Partizipative Kampagnen werden von Zentralstellen auf Basis der Kampagnenvorlage
 
 ## Partizipative Kampagne erstellen {#creating-a-collaborative-campaign}
 
-Klicken Sie zum Konfigurieren einer kollaborativen Kampagne auf die **[!UICONTROL Campaign management > Campaigns]** Node und dann auf das **[!UICONTROL New]** Symbol.
+Partizipative Kampagnen beruhen jeweils auf einer Referenzkampagne, die von der Zentralstelle zu erstellen ist. Dies geschieht ausgehend vom Knoten **[!UICONTROL Kampagnenverwaltung > Kampagnen]** durch Klick auf das **[!UICONTROL Neu]**-Symbol.
 
 >[!NOTE]
 >
->Apart from **[!UICONTROL collaborative campaigns (by campaign)]**, these campaigns can be configured and executed via a web interface.
+>Mit Ausnahme der **[!UICONTROL partizipativen Kampagnen mit Kampagnenzugriff]** können die Kampagnen über eine Webschnittstelle konfiguriert und ausgeführt werden.
 
 Die Basiskonfiguration einer partizipativen Kampagne gleicht der der Vorlage einer lokalen Kampagne. Die Besonderheiten der unterschiedlichen partizipativen Kampagnentypen werden nachstehend beschrieben.
 
 ### Partizipative Kampagne (Formular){#by-form}
 
-Zum Erstellen einer Kampagnen für die Zusammenarbeit (nach Formular) muss die **[!UICONTROL Collaborative campaign (by form)]** Vorlage ausgewählt werden.
+Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opCollaborativeByForm)]** aus und klicken Sie auf , um die Kampagne zu erstellen.
 
 ![](assets/mkg_dist_mutual_op_form2.png)
 
-In the **[!UICONTROL Edit]** tab, click the **[!UICONTROL Advanced campaign settings...]** link to access the **Distributed Marketing** tab.
+Gehen Sie in den Tab **[!UICONTROL Bearbeiten]** und klicken Sie auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**, um auf den Tab **Dezentrales Marketing** zuzugreifen.
 
-Select the **By form** Web interface. This type of interface lets you create personalization fields that will be used by local entities when ordering a campaign. Siehe [Erstellen einer lokalen Kampagne (nach Formular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+Wählen Sie den Web-Schnittstellentyp **Standardformular** aus. Dieser Schnittstellentyp ermöglicht die Erstellung von Personalisierungsfeldern, die von den Lokalstellen bei der Kampagnenbestellung genutzt werden können. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
-Speichern Sie Ihre Kampagne. You can now use it from the **Campaign packages** view in the **Campaign** universe, by clicking the **[!UICONTROL Create]** button.
+Speichern Sie Ihre Kampagne. Sie steht Ihnen nun in der **Kampagnenkit-Liste** in der **Kampagnen**-Rubrik zur Verfügung, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
 
-The **[!UICONTROL Campaign Package]** view allows you to use local campaign templates (out-of-the-box or duplicated), as well as reference campaigns for collaborative campaigns, with the aim of creating campaigns for your different organizational entities.
+Die **[!UICONTROL Kampagnenkit]**-Liste ermöglicht Ihnen die Verwendung von lokalen Kampagnenvorlagen (native oder duplizierte) sowie Referenzkampagnen für partizipative Kampagnen. So können Sie Kampagnen für unterschiedliche Unternehmenseinheiten erstellen.
 
 ![](assets/mkg_dist_mutual_op_form1b.png)
 
 ### Partizipative Kampagne (Kampagnenzugriff){#by-campaign}
 
-Um eine Kampagnenkampagne (nach Kampagne) zu erstellen, muss die **[!UICONTROL Collaborative campaign (by campaign) (opCollaborativeByCampaign)]** Vorlage ausgewählt werden.
+Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Kampagnenzugriff) (opCollaborativeByCampaign)]** aus.
 
 ![](assets/mkg_dist_mutual_op_by_op2.png)
 
@@ -66,13 +66,13 @@ Wenn die Bestellung einer **Partizipativen Kampagne mit Kampagnenzugriff** von d
 
 Die Kindkampagne wird von der Lokalstelle, die Elternkampagne von der Zentralstelle ausgeführt.
 
-The central entity can view all child campaigns linked with a **Collaborative campaign (by campaign)** from this dashboard (via the **[!UICONTROL List of associated campaigns]** link).
+Über den Link **Liste der verknüpften Kampagnen...** im Kampagnen-Dashboard kann die Zentralstelle alle Tochterkampagnen der **[!UICONTROL partizipativen Kampagne mit Kampagnenzugriff]** einsehen.
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
 ### Partizipative Kampagne (Zielgruppenvalidierung){#by-target-approval}
 
-Um eine gemeinschaftliche Kampagne (nach Zielgenehmigung) zu erstellen, muss die **[!UICONTROL Collaborative campaign (by target approval)]** Vorlage ausgewählt werden.
+Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Zielgruppenvalidierung) (opCollaborativeByValidation)]** aus.
 
 ![](assets/mkg_dist_mutual_op_by_valid.png)
 
@@ -82,17 +82,17 @@ Um eine gemeinschaftliche Kampagne (nach Zielgenehmigung) zu erstellen, muss die
 
 Der Kampagnenworkflow muss die Aktivität **Lokale Validierung** beinhalten. Diese hat folgende Parameter:
 
-* **[!UICONTROL Action to perform]** : Benachrichtigung zur Zielgruppenvalidierung.
-* **[!UICONTROL Distribution context]** : Explizit.
-* **[!UICONTROL Data distribution]** : Verteilung lokaler Entitäten.
+* **[!UICONTROL Auszuführende Aktion]**: Benachrichtigung zur Zielgruppenvalidierung;
+* **[!UICONTROL Verteilungskontext]**: Explizit;
+* **[!UICONTROL Datenverteilung]**: Lokalstellen-Datenverteilung.
 
-**Die Datenverteilung** eines lokalen Entitätsverteilungstyps muss erstellt werden. Mit der Datenverteilungsvorlage können Sie die Anzahl der Datensätze aus einer Liste von Gruppierungswerten begrenzen. Klicken Sie **[!UICONTROL Resources > Campaign management > Data distribution]** in auf das **[!UICONTROL New]** Symbol, um eine neue zu erstellen **[!UICONTROL Data distribution]**. For more information on data distribution, refer to the [Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-) guide.
+Zunächst muss die Datenverteilung **Verteilung der Lokalstellen** erstellt werden, um die Anzahl der Datensätze mithilfe einer Liste von Gruppierungswerten zu beschränken. Klicken Sie zur Erstellung im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** auf das Symbol **[!UICONTROL Neu]******. Mehr Informationen über Datenverteilungen erhalten Sie im [Workflows](../../workflow/using/using-the-local-approval-activity.md#step-1--creating-the-data-distribution-template-)-Handbuch.
 
 ![](assets/mkg_dist_data_distribution.png)
 
-Wählen Sie die **Targeting-Dimension** und die **[!UICONTROL Distribution field]**. Wählen Sie **[!UICONTROL Assignment type]** für &quot; **Lokale Entität**&quot;aus.
+Geben Sie die **[!UICONTROL Zielgruppendimension]** sowie das **[!UICONTROL Verteilungsfeld]** an. Wählen Sie als **Zuweisungstyp** **Lokalstelle** aus.
 
-In the **[!UICONTROL Distribution]** tab, add a field for each local entity and specify the value.
+Fügen Sie im Tab **[!UICONTROL Verteilung]** ein Feld für jede Lokalstelle hinzu und geben Sie den jeweiligen Wert an.
 
 ![](assets/mkg_dist_data_distribution2.png)
 
@@ -108,7 +108,7 @@ Der Lokalstelle steht es frei, je nach Kampagneninhalt bestimmte Kontakte zu ent
 
 ### Partizipative Kampagne (ohne Konfiguration){#simple}
 
-To create a simple collaborative campaign, the **[!UICONTROL Collaborative campaign (simple)]** template must be selected.
+Um eine einfache partizipative Kampagne zu erstellen, wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (ohne Konfiguration)]** aus.
 
 ## Partizipative Kampagnenkits erstellen {#creating-a-collaborative-campaign-package}
 
@@ -116,13 +116,13 @@ Um die Kampagne den Lokalstellen zur Verfügung zu stellen, muss die Zentralstel
 
 Gehen Sie wie folgt vor:
 
-1. In the **[!UICONTROL Navigation]** section on the **Campaigns** page, click the **[!UICONTROL Campaign packages]** link.
-1. Click the **[!UICONTROL Create]** button.
-1. The section at the top of the window lets you select the **[!UICONTROL New collaborative package (mutualizedEmpty)]** template.
+1. Klicken Sie im Menü **[!UICONTROL Navigation]** der Rubrik **Kampagnen** auf den Link **[!UICONTROL Kampagnenkits]**.
+1. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus.
+1. Wählen Sie im oberen Bereich des Assistenten die Kampagnenvorlage **[!UICONTROL Neues Kit für eine partizipative Kampagne (mutualizedEmpty)]** aus.
 1. Geben Sie die Referenzkampagne an.
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen  {#dates}
+### Datum-Funktionen   {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
@@ -130,7 +130,7 @@ Für **partizipative Kampagnen** muss die Zentralstelle einen Anmeldeschluss und
 
 >[!NOTE]
 >
->Die **[!UICONTROL Personalization deadline]** ermöglicht es der zentralen Stelle, einen Termin festzulegen, innerhalb dessen die lokalen Entitäten die Dokumente (Tabellen, Bilder) bereitgestellt haben müssen, die zur Konfiguration der Kampagne verwendet werden sollen. Dies ist keine obligatorische Option. Das seitliche Stepping dieses Datums hat keine Auswirkungen auf die Kampagnenimplementierung.
+>Lokalstellen kann die Möglichkeit eingeräumt werden, der Zentralstelle für die endgültige Konfiguration der Kampagne nützliche Dokumente (Tabellen, Grafiken o. Ä.) zu übermitteln. In diesem Fall legt die Zentralstelle eine **[!UICONTROL Übergabe-Deadline]** fest. Sollten die Dokumente bis zu diesem Zeitpunkt nicht übermittelt worden sein, wird die Kampagne trotz allem wie geplant ausgeführt.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry.png)
 
@@ -142,7 +142,7 @@ Die Zentralstelle muss für die Teilnahme an der Kampagne vorgesehenen Lokalstel
 
 >[!CAUTION]
 >
->**[!UICONTROL Simple, by form and by campaign collaborative campaign kits]** kann nur genehmigt werden, wenn die entsprechenden lokalen Stellen angegeben wurden.
+>**[!UICONTROL Partizipative Kampagnenkits ohne Konfiguration, mit Formular oder mit Kampagnenzugriff]** können nicht validiert werden, sofern die vorgesehenen Lokalstellen nicht angegeben wurden.
 
 ### Validierungsmodi {#approval-modes}
 
@@ -176,7 +176,7 @@ Nach Speicherung der Bestellung erhält der validierungsverantwortliche Benutzer
 
 ![](assets/mkg_dist_mutual_op_valid_command.png)
 
-For more on this, refer to the [Approval process](../../campaign/using/creating-a-local-campaign.md#approval-process) section.
+Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](../../campaign/using/creating-a-local-campaign.md#approval-process).
 
 ## Bestellung bestätigen {#approving-an-order}
 
