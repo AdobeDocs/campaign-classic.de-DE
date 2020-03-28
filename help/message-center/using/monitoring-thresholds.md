@@ -14,7 +14,7 @@ discoiquuid: 76922657-2c0d-467e-acee-c1a61677fb44
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Überwachungsschwellen{#monitoring-thresholds}
 
-Sie können die Warnungsschwellenwerte (orange) und die Alarmschwellenwerte (rot) der Indikatoren konfigurieren, die auf der **Nachrichtencenter-Dienstebene** und in den **Nachrichtencenter-Verarbeitungszeitberichten** angezeigt werden (siehe [Informationen zu Transaktionsmeldungen](../../message-center/using/about-transactional-messaging-reports.md)). Öffnen Sie dazu den Bereitstellungsassistenten der Ausführungsinstanz, gehen Sie zur **[!UICONTROL Message Center]** Seite und ändern Sie die Schwellenwerte mit den Pfeilen.
+Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Über Transaktionsnachrichten-Berichte](../../message-center/using/about-transactional-messaging-reports.md)). Öffnen Sie dazu den Softwareverteilungs-Assistenten der Ausführungsinstanz, wechseln Sie zur Seite **[!UICONTROL Message Center]** und verwenden Sie die Pfeile, um die Schwellenwerte zu ändern.
 
 ![](assets/messagecenter_monitor_events_001.png)
 
