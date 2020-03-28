@@ -1,6 +1,6 @@
 ---
-title: Informationen zur Lieferbarkeit in Adobe Campaign Classic
-description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign Classic.
+title: Über die Zustellbarkeit in Adobe Campaign Classic
+description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 2681042b-3018-42ae-b252-2367b56616bd
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
 
 ---
@@ -20,16 +20,16 @@ source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
 
 # Über die Zustellbarkeit{#about-deliverability}
 
-Adobe Campaign bietet eine Reihe von Tools zur Verfolgung der Leistung Ihrer Plattform im Hinblick auf die Bereitstellung. In diesem Abschnitt werden auch die wichtigsten Grundsätze hervorgehoben, die Sie bei der Verwaltung und Optimierung der Zustellbarkeit beachten sollten.
+Adobe Campaign bietet eine Reihe von Tools zur Verfolgung der Zustellbarkeitsleistung Ihrer Plattform. In diesem Abschnitt werden auch die wichtigsten Grundsätze hervorgehoben, die Sie bei der Verwaltung und Optimierung der Zustellbarkeit beachten sollten.
 
 ## Konfiguration {#configuration}
 
-Diese Funktion ist über ein dediziertes Paket in Adobe Campaign verfügbar. Um es zu verwenden, muss dieses Paket installiert sein. Starten Sie nach Abschluss des Vorgangs den Server neu, damit das Paket berücksichtigt wird.
-* Bei gehosteten und hybriden Clients wird die **Überwachung** der Auslieferbarkeit auf Ihrer Instanz vom technischen Support und von Beratern von Adobe konfiguriert. Weitere Informationen erhalten Sie von Ihrem Adobe-Kundenbetreuer.
+Diese Funktion ist über ein dediziertes Package in Adobe Campaign verfügbar. Damit Sie es verwenden können, muss dieses Package installiert sein. Starten Sie nach Abschluss des Vorgangs den Server neu, damit das Package berücksichtigt wird.
+* Für gehostete und hybride Clients wird das **Zustellbarkeits-Monitoring** auf Ihrer Instanz vom technischen Support und von Beratern von Adobe konfiguriert. Weiterführende Informationen dazu erhalten Sie von Ihrem Adobe-Kundenbetreuer.
 
-* Bei lokalen Installationen müssen Sie das **[!UICONTROL Deliverability monitoring (Email Deliverability)]** Paket über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Import package]** installieren. Weitere Informationen hierzu finden Sie unter [Installieren der Standardpakete](../../installation/using/installing-campaign-standard-packages.md)von Campaign Classic.
+* Bei On-Premise-Installationen müssen Sie das Package **[!UICONTROL Zustellbarkeits-Monitoring (Email Deliverability)]** über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]** installieren. Weitere Informationen hierzu finden Sie unter [Installieren von Campaign Classic-Standardpaketen](../../installation/using/installing-campaign-standard-packages.md).
 
-In Adobe Campaign Classic wird die **Überwachung** der Auslieferbarkeit vom **[!UICONTROL Refresh for deliverability]** Workflow verwaltet. Es wird standardmäßig auf allen Instanzen installiert und ermöglicht es Ihnen, die Liste der Regeln für die Absprung-E-Mail-Qualifizierung, die Liste der Domänen und die Liste der MXs zu initialisieren. Sobald das **[!UICONTROL Deliverability monitoring (Email Deliverability)]** Paket installiert ist, wird dieser Arbeitsablauf jeden Abend ausgeführt, um die Regelliste regelmäßig zu aktualisieren und Sie können die Plattformbereitstellung aktiv verwalten.
+In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Workflow **[!UICONTROL Zustellbarkeit]** verwaltet. Er wird standardmäßig auf allen Instanzen installiert und ermöglicht es Ihnen, die Liste der Regeln für die Bounce-Message-Qualifizierung, die Liste der Domains und die Liste der MXs zu initialisieren. Sobald das Package **[!UICONTROL Zustellbarkeits-Monitoring (Email Deliverability)]** installiert ist, wird dieser Workflow nächtlich ausgeführt, um die Regelliste regelmäßig zu aktualisieren und die Zustellbarkeit der Plattform aktiv zu verwalten.
 
 ## Hintergrund {#background}
 
