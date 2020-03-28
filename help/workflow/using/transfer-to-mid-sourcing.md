@@ -14,7 +14,7 @@ discoiquuid: 57b873e9-e934-410b-b966-040cebd94e3e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -33,12 +33,12 @@ Die folgenden Workflows werden mit dem Modul **Sendung an Mid-Sourcing-Server** 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Mid-Sourcing (Versandzähler)</span> <br /> </td> 
-   <td> <span class="uicontrol">defaultMidSourcingDlv</span><br /> </td> 
+   <td> <span class="uicontrol">defaultMidSourcingDlv</span> <br /> </td> 
    <td> <p>Dieser Workflow ruft Informationen bezüglich der Zählung von Sendungen vom Mid-Sourcing-Server ab. Zu diesen Informationen gehören allgemeine Indikatoren zum Versand wie etwa die Anzahl der Sendungen.</p> <p>Trackinginformationen wie Öffnungen sind nicht enthalten.</p> <p>Dieser Workflow wird standardmäßig alle zehn Minuten gestartet.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Mid-Sourcing (Versandlogs)</span> <br /> </td> 
-   <td> <span class="uicontrol">defaultMidSourcingLog</span><br /> </td> 
+   <td> <span class="uicontrol">defaultMidSourcingLog</span> <br /> </td> 
    <td> Ruft Versandlogs vom Mid-Sourcing-Server ab. Wird standardmäßig stündlich gestartet.<br /> </td> 
   </tr> 
  </tbody> 
