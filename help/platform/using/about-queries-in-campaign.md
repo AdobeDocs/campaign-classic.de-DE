@@ -14,7 +14,7 @@ discoiquuid: 08161b4a-7196-41db-b3df-68012a9fc2f8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -24,12 +24,12 @@ source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 Die Adobe-Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielgruppenbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
 
-Mit dem Adobe Campaign-Abfragewerkzeug können Sie eine Datenbank mithilfe eines dedizierten Assistenten abfragen: den generischen Abfrageeditor. Der Zugriff erfolgt über das **[!UICONTROL Tools > Generic query editor...]** Menü. Damit können Sie in einer Datenbank gespeicherte Informationen extrahieren und organisieren, gruppieren, sortieren usw. Beispielsweise kann der Benutzer Empfänger wiederherstellen, die während eines bestimmten Zeitraums mehr als das &quot;n&quot;-Mal auf den Link eines Newsletters geklickt haben. Mit diesem Tool können Sie die Ergebnisse nach Ihren Bedürfnissen erfassen, sortieren und anzeigen.
+Dieses so genannte generische Abfragetool hat die Form eines Assistenten und ermöglicht es, in der Datenbank gespeicherte Informationen abzurufen, zu organisieren, zu gruppieren, zu sortieren usw. So kann ein Benutzer beispielsweise die Empfänger abrufen, die innerhalb eines bestimmten Zeitraums mehr als x-mal auf einen Link in einem Newsletter geklickt haben. Die Ergebnisliste kann nach Bedarf sortiert und die Anzeige angepasst werden. Der Zugriff auf den Assistenten erfolgt über das Menü **[!UICONTROL Werkzeuge > Generisches Abfragetool...]**.
 
 Alle Abfrageoptionen in Adobe Campaign werden über dieses Tool gesteuert. So lassen sich z. B. Einschränkungsfilter im Tool erstellen und speichern. Derart angelegte Benutzerfilter sind dadurch auch in der Abfrageaktivität eines Zielgruppen-Workflows verfügbar.
 
 Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Feldern oder mithilfe einer Formel durchgeführt.
 
-[Klicken Sie hier](../../workflow/using/query.md) , um den Kampagnenabfrageeditor zu entdecken.
+[Klicken Sie hier](../../workflow/using/query.md), um mehr über den Campaign-Abfrageeditor zu erfahren.
 
 ![](assets/query_recipients_4.png)
