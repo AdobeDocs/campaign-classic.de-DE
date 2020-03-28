@@ -14,7 +14,7 @@ discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -26,13 +26,13 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 Die Erstellung, Bearbeitung und Publikation von Inhalten kann mithilfe eines in der Adobe-Campaign-Clientkonsole konfigurierten Workflows automatisiert werden.
 
-The **Content management** activity is accessed via the **[!UICONTROL Tools]** toolbar of the workflow diagram.
+Die Aktivität **Content Management** ist in der **[!UICONTROL Werkzeug]**-Symbolleiste des Workflow-Diagramms enthalten.
 
 Vier Aktivitätseigenschaften sind zu konfigurieren:
 
-* **[!UICONTROL Content]** : Sie können vorhandene Inhalte eingeben oder Inhalte erstellen.
-* **[!UICONTROL Update content]** : können Sie den Inhalt des Inhalts ändern oder den Inhalt über einen XML-Datenfluss aktualisieren,
-* **[!UICONTROL Action to execute]** : Sie können Inhalte speichern oder generieren.
+* **[!UICONTROL Inhalt]** - Auswahl eines existierenden oder Erstellung eines neuen Inhalts;
+* **[!UICONTROL Inhalt aktualisieren]** - Änderung des Betreffs oder Aktualisierung des Inhalts mit einem XML-Stream;
+* **[!UICONTROL Auszuführende Aktion]** - Speicherung oder Erzeugung des Inhalts;
 * **[!UICONTROL Transition]** - Erzeugung und Benennung einer ausgehenden Transition.
 
 ![](assets/d_ncs_content_wf.png)
@@ -79,9 +79,9 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 ### Transition {#transition}
 
-Mit der Option &quot;Ausgabenübergang **erstellen** &quot;können Sie der **[!UICONTROL Content management]** Aktivität einen Ausgabenübergang hinzufügen, um eine neue Aktivität mit der Workflow-Ausführung zu verknüpfen. Nachdem Sie diese Option aktiviert haben, geben Sie eine Beschriftung für den Übergang ein.
+Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
 
-## Beispiele {#examples}
+## Beispiele  {#examples}
 
 ### Erstellung und Versand eines Inhalts automatisieren {#automating-content-creation-and-delivery}
 
@@ -95,7 +95,7 @@ Der Inhalt wird in der Aktivität &quot;Content Management&quot; konfiguriert:
 
 Ausgehend von der Publikationsvorlage wird im Inhaltskanal-Ordner eine neue Inhaltsinstanz erstellt.
 
-In unserem Beispiel haben wir den Liefergegenstand überlastet. Es wird anstelle des in der **[!UICONTROL Delivery]** Vorlage eingegebenen berücksichtigt.
+Im vorliegenden Beispiel wurde der Versandbetreff überschrieben. Er ersetzt den in der Versandvorlage der **[!UICONTROL Versand]**-Aktivität angegebenen Betreff.
 
 Der Inhalt wird automatisch durch den von der angegebenen URL heruntergeladenen XML-Stream ergänzt:
 
@@ -108,7 +108,7 @@ Der Inhalt wird automatisch durch den von der angegebenen URL heruntergeladenen 
 </book>
 ```
 
-Das Datenformat stimmt nicht mit dem Datenschema überein, das in der Veröffentlichungsvorlage eingegeben wurde (**cus:book** in unserem Beispiel). das **`<section>`** Element durch das **`<chapter>`** Element ersetzt werden muss. Wir müssen das Stylesheet &quot;cus:book-workflow.xsl&quot;anwenden, um die notwendigen Änderungen vorzunehmen.
+Das Datenformat stimmt nicht mit dem Datenschema überein, das in der Publikationsvorlage eingegeben wurde (**cus:book** in unserem Beispiel); das **`<section>`**-Element muss durch das **`<chapter>`** Element ersetzt werden. Sie müssen das Stylesheet „cus:book-workflow.xsl“ anwenden, um die notwendigen Änderungen vorzunehmen.
 
 Quellcode des verwendeten XSLT-Stylesheets:
 
@@ -177,7 +177,7 @@ Die erste **Content-Management**-Aktivität erstellt eine Inhaltsinstanz.
 
 >[!NOTE]
 >
->The **[!UICONTROL Publication]** tab of the transformation templates window must be populated with the location of the target to be generated.
+>Im **[!UICONTROL Publikation]**-Tab der Umwandlungsvorlagen ist der Speicherort der zu erzeugenden Zielgruppe anzugeben.
 
 Eine Warte-Aktivität setzt die nachfolgende Transition für die Dauer einer Woche aus.
 
@@ -233,11 +233,11 @@ Inhaltsdaten können in einem halbautomatischen Modus aktualisiert werden. Die D
 
 Die Aktivierung des Datenabrufs geschieht manuell über ein Formular.
 
-Das Ziel ist, ein **editBtn** -Feld **`<input>`** im Formular zu deklarieren. Dieses Steuerelement umfasst eine Bearbeitungszone und eine Schaltfläche zum Starten der Verarbeitung.
+Das Ziel besteht darin, ein **editBtn**-Feld **`<input>`** im Formular zu deklarieren. Dieses Steuerelement umfasst eine Bearbeitungszone und eine Schaltfläche zum Starten der Verarbeitung.
 
 Die variablen Daten für die Erstellung der URL des XML-Streams der abzurufenden Daten werden im Editor erfasst.
 
-The button executes the **GetAndTransform** SOAP method populated under the **`<input>`** tag.
+Die Betätigung der Schaltfläche löst die **GetAndTransform**-SOAP-Methode aus, die unter dem **`<input>`**-Tag notiert ist.
 
 Das Steuerelement wird im Formular wie folgt deklariert:
 
@@ -253,7 +253,7 @@ Das Steuerelement wird im Formular wie folgt deklariert:
 </input>
 ```
 
-Die **GetAndTransform** -Methode muss unter dem **`<enter>`** Element des **`<input>`** -Tags deklariert werden. Dieses Tag akzeptiert als Parameter die URL der Wiederherstellung von XML-Daten aus einem dynamisch erstellten Ausdruck. Der zweite Parameter der Funktion ist optional und verweist auf ein Stylesheet, das für eine Zwischentransformation verwendet wird, wenn die eingehenden XML-Daten nicht im gleichen Format wie der Inhalt vorliegen.
+Die **GetAndTransform**-Methode muss unter dem **`<enter>`**-Element des **`<input>`**-Tags deklariert werden. Dieses Tag akzeptiert als Parameter die URL der Wiederherstellung von XML-Daten aus einem dynamisch erstellten Ausdruck. Der zweite Parameter der Funktion ist optional und verweist auf ein Stylesheet, das für eine Zwischentransformation verwendet wird, wenn die eingehenden XML-Daten nicht im gleichen Format wie der Inhalt vorliegen.
 
 Die Aktualisierung der Inhaltsinstanz geschieht ausgehend vom im letzten Parameter angegebenen Pfad.
 
