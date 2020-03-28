@@ -14,7 +14,7 @@ discoiquuid: 08efa472-d090-404d-9ad7-47adb3489c30
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -22,17 +22,17 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 # Webanwendung konzipieren{#designing-a-web-application}
 
-Web applications are created and managed according to the same principle as [online surveys](../../web/using/about-surveys.md).
+Webanwendungen werden nach demselben Prinzip erstellt und verwaltet wie [Online-Umfragen](../../web/using/about-surveys.md).
 
 Es gibt jedoch folgende funktionelle Unterschiede:
 
 * Für Webanwendungen werden keine archivierten Felder verwendet. Daten können daher nur in Datenbankfeldern oder lokalen Variablen gespeichert werden.
-* Es gibt keine integrierten Berichte zu Webanwendungen.
-* Es werden zusätzliche Felder angeboten, hauptsächlich zur Erstellung von Tabellen und Diagrammen.
+* Zu Webanwendungen sind keine nativen Berichte verfügbar.
+* Zusätzliche Felder sind verfügbar, die hauptsächlich zur Erstellung von Tabellen und Grafiken dienen.
 
 >[!CAUTION]
 >
->Es wird dringend empfohlen, die verwendeten Konfigurationen ständig zu überprüfen, um Fehler frühzeitig beim Aufbau der Webanwendung zu erkennen. Um die Wiedergabe einer Änderung zu überprüfen, speichern Sie die Anwendung und klicken Sie dann auf die **[!UICONTROL Preview]** Unterregisterkarte.
+>Es wird dringend empfohlen, die angewendeten Konfigurationen laufend zu überprüfen, um etwaige Fehler in einer frühen Phase des Erstellungsprozesses einer Webanwendung zu erkennen. Um das Rendering einer Änderung zu überprüfen, speichern Sie die Anwendung und wählen Sie dann den Untertab **[!UICONTROL Vorschau]** aus.
 >
 >Die Änderungen sind erst dann für den Endbenutzer sichtbar, wenn die Webanwendung publiziert wurde.
 
@@ -42,7 +42,7 @@ Sie können Grafiken in Webanwendungen einfügen. Verwenden Sie dazu die Grafike
 
 ![](assets/s_ncs_admin_webapps_bar_graph.png)
 
-Sie können auch das **[!UICONTROL Add a chart]** Menü auswählen.
+Sie können auch das Menü **[!UICONTROL Grafik hinzufügen]** verwenden.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
@@ -62,9 +62,9 @@ In der Benutzeroberfläche von Adobe Campaign werden zahlreiche Webanwendungen b
 
 In der Benutzeroberfläche erscheinen sie in Form von Dashboards, die aus einer einzigen Seite bestehen.
 
-Die vordefinierten Webanwendungen werden im **[!UICONTROL Administration > Configuration > Web applications]** Knoten gespeichert.
+Die nativen Webanwendungen sind im Knoten **[!UICONTROL Administration > Konfiguration > Webanwendungen]** gespeichert.
 
-## Webanwendungen vom Typ &quot;forms&quot;bearbeiten {#edit-forms-type-web-applications}
+## Webanwendungen mit Bearbeitungsformularen bearbeiten {#edit-forms-type-web-applications}
 
 Webanwendungen mit Bearbeitungsformularen für ein Extranet besitzen folgende Merkmale:
 
