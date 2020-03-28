@@ -1,7 +1,7 @@
 ---
-title: Häufig gestellte Fragen zu Workflows
+title: Häufige Fragen zu Workflows
 seo-title: Automatisieren von Prozessen und Datenverwaltung mit Workflows
-description: Häufig gestellte Fragen zu Campaign Classic
+description: Häufig gestellte Fragen zu Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,13 +13,13 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
 
 ---
 
 
-# Häufig gestellte Fragen zu Workflows {#workflows-faq}
+# Häufige Fragen zu Workflows {#workflows-faq}
 
 Hier erfahren Sie, wie Sie Prozesse und Aufgaben mit Adobe Campaign-Workflows aufeinander abstimmen.
 
