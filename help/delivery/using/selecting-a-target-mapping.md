@@ -14,7 +14,7 @@ discoiquuid: e2c6e273-1640-4f46-a80e-0cecb06e2769
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 # Zielgruppen-Mapping wählen{#selecting-a-target-mapping}
 
-Standardmäßig werden Bereitstellungsvorlagen als Ziel ausgewählt **[!UICONTROL Recipients]**. Ihre Zielzuordnung verwendet daher die Felder der Tabelle **nms:empfänger** . Adobe Campaign bietet weitere Zielzuordnungen für Ihre Auslieferungen, die je nach Bedarf verwendet werden.
+Standard-Zielgruppe in Versandvorlagen sind die **[!UICONTROL Empfänger]**. Das Zielgruppen-Mapping verwendet also die Felder der Tabelle **nms:recipient**. Adobe Campaign stellt jedoch auch andere Zielgruppen-Mappings zur Verfügung, auf die Sie je nach Bedarf zurückgreifen können.
 
 ![](assets/delivery_select_mapping.png)
 
