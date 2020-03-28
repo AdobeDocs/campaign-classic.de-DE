@@ -14,7 +14,7 @@ discoiquuid: a557026c-3b6a-4302-a042-0015449eaca5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Verfolgung{#simulation-tracking}
 
-Once the simulation is finished, you can analyze its result via the **[!UICONTROL Results]** tab which is added to the simulation window and the **[!UICONTROL Breakdown of offers by rank]** report, available via in the simulation dashboard.
+Nach Abschluss der Simulation wird automatisch ein **[!UICONTROL Ergebnis]**-Tab hinzugefügt, der Ihnen eine genaue Analyse ermöglicht. Im Berichte-Tab des Dashboard wird der Bericht **[!UICONTROL Angebotsverteilung nach Rang]** angezeigt.
 
 Das Simulationsergebnis zeigt die Verteilung der Vorschläge nach Rang und Zielgruppe. Falls angegeben, werden auch die zusätzlichen Berichtsachsen in diesem Tab angezeigt.
 
