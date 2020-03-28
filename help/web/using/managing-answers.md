@@ -14,7 +14,7 @@ discoiquuid: affecd87-00a3-4d50-92d3-31ac6228948b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -32,15 +32,15 @@ Zusätzlich zu den Standard-Speichermodi, die für alle Webformulare in Adobe Ca
 
 ### In einem archivierten Feld speichern {#storing-in-an-archived-field}
 
-Die Datenvorlage lässt sich einfach erweitern, indem neue Speicherräume hinzugefügt werden, um die in Umfragen bereitgestellten Antworten zu speichern. Wählen Sie dazu beim Erstellen des Eingabefelds die **[!UICONTROL Store answers to a question]** Option aus. Klicken Sie auf den **[!UICONTROL New field...]** Link und geben Sie dessen Eigenschaften an:
+Die Datenvorlage kann einfach erweitert werden, indem neue Speicherorte hinzugefügt werden, um die Umfrageantworten zu speichern. Wählen Sie dazu bei der Erstellung des Eingabefelds die Option **[!UICONTROL Antworten auf eine Frage speichern]** aus. Wählen Sie den Link **[!UICONTROL Neues Feld...]** aus und geben Sie dessen Eigenschaften ein:
 
 ![](assets/s_ncs_admin_survey_new_space.png)
 
 Geben Sie den Titel und den Namen des Felds ein und wählen Sie den Typ des Felds aus: Text, boolesch, ganze Zahl oder Dezimalzahl, Datum etc.
 
-Der ausgewählte Feldtyp beinhaltet eine Steuerung der Daten, wenn Antworten von Benutzern eingegeben werden. Bei **Textfeldern** können Sie eine Einschränkung (Groß-/Kleinschreibung, Format) oder eine Verknüpfung zu einer vorhandenen Aufzählung hinzufügen, um die Auswahl zu erzwingen.
+Über den ausgewählten Feldtyp lassen sich auch die von den Benutzern eingegebenen Daten definieren. Bei **Text**-Feldern können Sie eine Einschränkung (Groß-/Kleinschreibung, Format) oder einen Link zu einer vorhandenen Auflistung hinzufügen, um eine Auswahl zu erzwingen.
 
-Um eine Einschränkung hinzuzufügen, wählen Sie sie aus der Dropdownliste aus. Es gibt zwei Arten von Einschränkungen:
+Um eine Einschränkung hinzuzufügen, wählen Sie sie aus der Dropdown-Liste aus. Es gibt zwei Arten von Einschränkungen:
 
 1. Groß- und Kleinschreibung von Buchstaben
 
@@ -48,25 +48,25 @@ Um eine Einschränkung hinzuzufügen, wählen Sie sie aus der Dropdownliste aus.
 
 1. Datenformat
 
-If this field is used in a list, the values of the enumeration can be retrieved automatically in the table of values using the **[!UICONTROL Initialize the list of values from the database]** link above the list of values.
+Wenn dieses Feld in einer Liste verwendet wird, können die Werte der Aufzählung automatisch in der Wertetabelle über den Link **[!UICONTROL Datenbankverbindung über der Liste der Werte]** oberhalb der Werteliste abgerufen werden.
 
 Beispielsweise können Sie eine Dropdown-Liste erstellen, aus der der Benutzer seine Muttersprache auswählen kann. Das entsprechende archivierte Feld kann mit der Auflistung **Sprache** verknüpft werden, die eine Liste von Sprachen enthält:
 
 ![](assets/s_ncs_admin_survey_database_values_2b.png)
 
-The **[!UICONTROL Edit link]** icon located to the right of the field lets you edit the content of this enumeration:
+Mit dem Symbol **[!UICONTROL Link bearbeiten]** rechts neben dem Feld können Sie den Inhalt dieser Auflistung bearbeiten:
 
 ![](assets/s_ncs_admin_survey_database_values_2c.png)
 
-Auf der **[!UICONTROL General]** Registerkarte des Felds können Sie über den **[!UICONTROL Initialize the list of values from the database]** Link automatisch die Liste der angebotenen Beschriftungen eingeben.
+Im Tab **[!UICONTROL Allgemein]** des Felds können Sie über den Link **[!UICONTROL Werteliste aus der Datenbank übernehmen]** automatisch die angebotene Liste der Titel eingeben.
 
 ![](assets/s_ncs_admin_survey_database_values_2.png)
 
 **Beispiel**: Die Verträge eines Empfängers sollen gemeinsam in einem Feld gespeichert werden.
 
-To store different types of contracts in one field, create a **[!UICONTROL Text]** input field and select the **[!UICONTROL Store answers to a question]** option.
+Um verschiedene Arten von Verträgen gemeinsam in einem Feld zu speichern, erstellen Sie ein Eingabefeld vom Typ **[!UICONTROL Text]** und wählen Sie die Option **[!UICONTROL Antworten auf eine Frage speichern]** aus.
 
-Klicken Sie auf den **[!UICONTROL New field...]** Link und geben Sie die Feldeigenschaften ein. Wählen Sie die **[!UICONTROL Multiple values]** Option, um die Speicherung mehrerer Werte zu aktivieren.
+Wählen Sie den Link **[!UICONTROL Neues Feld...]** aus und geben Sie die Feldeigenschaften ein. Wählen Sie die Option **[!UICONTROL Mehrfachwerte]** aus, um die Speicherung mehrerer Werte zu ermöglichen.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex1.png)
 
@@ -74,7 +74,7 @@ Erstellen Sie für die anderen Verträge Eingabefelder und speichern Sie die Dat
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex2.png)
 
-When users approve the survey, their answers will be stored in the **[!UICONTROL Contracts]** field.
+Wenn Benutzer die Umfrage validieren, werden ihre Antworten im Feld **[!UICONTROL Verträge]** gespeichert.
 
 In unserem Beispiel betrifft das die folgenden Antworten:
 
@@ -82,11 +82,11 @@ In unserem Beispiel betrifft das die folgenden Antworten:
 
 Die vier eingegebenen Verträge werden im Profil des Benutzers gespeichert.
 
-They can be viewed in the **[!UICONTROL Answers]** tab of the survey by displaying the relevant columns.
+Die Verträge können im Tab **[!UICONTROL Antworten]** der Umfrage aufgerufen werden, indem die entsprechenden Spalten angezeigt werden.
 
 ![](assets/s_ncs_admin_survey_storage_multi_ex4.png)
 
-Sie können Empfänger auch nach Antworten filtern, um nur die Benutzer anzuzeigen, die Sie interessieren. Erstellen Sie dazu einen Targeting-Workflow und verwenden Sie das **[!UICONTROL Survey responses]** Kontrollkästchen.
+Sie können Empfänger auch auf der Basis ihrer Antworten filtern, sodass nur die für Sie interessanten Benutzer angezeigt werden. Erstellen Sie dazu einen Zielgruppen-Workflow unter Verwendung der Box **[!UICONTROL Umfrageantworten]**.
 
 ![](assets/s_ncs_admin_survey_read_responses_wf.png)
 
@@ -106,7 +106,7 @@ Die gegebenen Antworten können in allen Formularen in Feldern oder Titeln verwe
 
 ### Speichereinstellungen {#storage-settings}
 
-Antworten auf Umfragen können im XML-Format archiviert werden. Auf diese Weise können Sie eine Rohkopie der gesammelten Antworten speichern, was bei einer übermäßigen Standardisierung der Daten in einer Einzelliste nützlich sein kann (weitere Informationen finden Sie unter [Standarddaten](../../web/using/publish--track-and-use-collected-data.md#standardizing-data)).
+Antworten auf Umfragen können im XML-Format archiviert werden. Auf diese Weise können Sie eine Rohkopie der gesammelten Antworten speichern, was bei übermäßiger Standardisierung der Daten in einer Auflistung nützlich sein kann (Weitere Informationen hierzu finden Sie unter [Daten vereinheitlichen](../../web/using/publish--track-and-use-collected-data.md#standardizing-data)).
 
 >[!CAUTION]
 >
@@ -114,12 +114,12 @@ Antworten auf Umfragen können im XML-Format archiviert werden. Auf diese Weise 
 
 Gehen Sie dazu wie folgt vor:
 
-* Edit the survey properties via the **[!UICONTROL Properties]** button of the **[!UICONTROL Edit]** tab.
-* Klicken Sie auf den **[!UICONTROL Advanced parameters]** Link und aktivieren Sie die **[!UICONTROL Save a copy of raw answers]** Option.
+* Öffnen Sie die Umfrageeigenschaften über die Schaltfläche **[!UICONTROL Eigenschaften]** im Tab **[!UICONTROL Bearbeiten]**.
+* Wählen Sie den Link **[!UICONTROL Erweiterte Parameter]** aus und aktivieren Sie die Option **[!UICONTROL Kopie der Originalantworten speichern]**.
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-Sie können sie standardmäßig für alle Umfragen aktivieren (diese Option wird angewendet, wenn die Umfrage veröffentlicht wird). Erstellen Sie dazu die **[!UICONTROL NmsWebApp_XmlBackup]** Option und weisen Sie ihr einen Wert **[!UICONTROL 1]** zu, wie nachfolgend gezeigt:
+Sie können diese Option standardmäßig für alle Umfragen aktivieren (diese Option wird bei der Publikation der Umfrage angewendet). Erstellen Sie dazu die Option **[!UICONTROL NmsWebApp_XmlBackup]** und weisen Sie ihr den Wert **[!UICONTROL 1]** wie unten dargestellt zu:
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
@@ -133,7 +133,7 @@ Sie können den auf den Formularseiten bereitgestellten Optionen eine Punktzahl 
 
 ![](assets/s_ncs_admin_survey_score_create.png)
 
-The scores are accumulated and saved on the server side when the page is confirmed, i.e. when the user clicks the **[!UICONTROL Next]** or **[!UICONTROL Finish]** button.
+Die Punkte werden kumuliert und auf dem Server gespeichert, wenn die Seite bestätigt wird, d. h. wenn der Benutzer auf die Schaltfläche **[!UICONTROL Weiter]** oder **[!UICONTROL Beenden]** klickt.
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ Die Punktzahl kann in Tests oder Skripts verwendet werden.
 >
 >Die Punktzahl kann nicht in den Sichtbarkeitsbedingungen für Felder verwendet werden, die sich auf derselben Seite befinden. Sie kann aber auf aufeinanderfolgenden Seiten verwendet werden.
 
-* To use scores in tests, use the **[!UICONTROL Score]** field in the test calculation formula, as shown below:
+* Um Punkte in Tests einzubeziehen, verwenden Sie in der Test-Berechnungsformel wie unten gezeigt das Feld **[!UICONTROL Punktzahl]**:
 
    ![](assets/s_ncs_admin_survey_score_in_a_test.png)
 
@@ -161,7 +161,7 @@ Die Punktzahl kann in Tests oder Skripts verwendet werden.
 
    ![](assets/s_ncs_admin_survey_score_exb.png)
 
-* When the user clicks the **[!UICONTROL Next]** button, the two values are added up.
+* Wenn der Benutzer die Schaltfläche **[!UICONTROL Weiter]** auswählt, werden die beiden Werte addiert.
 
    ![](assets/s_ncs_admin_survey_score_exe.png)
 
