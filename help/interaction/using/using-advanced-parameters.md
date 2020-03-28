@@ -14,7 +14,7 @@ discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -28,9 +28,9 @@ Dieses Kapitel behandelt die verschiedenen fortgeschrittenen Konfigurationsmögl
 >
 >Die folgenden Ausführungen richten sich vor allem an **technische Administratoren**.
 
-* Sie können zusätzliche Kontextdaten verwenden. Refer to the [Additional data](../../interaction/using/additional-data.md) section.
-* You can enrich the application contexts of the suggested offers via an incoming channel. To do this, the **nms:interaction** interaction schema must be extended. Den vollständigen Vorgang finden Sie im Abschnitt zum Beispiel[ für ](../../interaction/using/extension-example.md)Erweiterung.
-* Das Erstellen einer Testumgebung ist im Abschnitt [Erstellen einer Testumgebung](../../interaction/using/creating-a-test-environment.md) ausführlich beschrieben.
-* Sie können das standardmäßige Motorverhalten mithilfe von Haken ändern. For more on this, refer to the [Hooks](../../interaction/using/hooks.md) section
-* Finally, using Interaction with a distributed architecture is detailed in the [Distributed architectures](../../interaction/using/distributed-architectures.md) section.
+* Sie können zusätzliche Kontextdaten verwenden. Weiterführende Informationen finden Sie im Abschnitt [Zusätzliche Daten](../../interaction/using/additional-data.md).
+* Sie haben die Möglichkeit, den Anwendungskontext von Angeboten anzureichern, die über einen eingehenden Kanal vorgeschlagenen werden. Hierzu ist eine Erweiterung des Interaktionsschemas **nms:interaction** erforderlich. Den vollständigen Vorgang finden Sie im Abschnitt [Beispiel einer Erweiterung](../../interaction/using/extension-example.md).
+* Das Erstellen einer Testumgebung ist im Abschnitt [Erstellung einer Testumgebung](../../interaction/using/creating-a-test-environment.md) ausführlich beschrieben.
+* Sie können das standardmäßige Verhalten der Moduls mithilfe von Erweiterungspunkten ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweiterungspunkte](../../interaction/using/hooks.md)
+* Die Verwendung von Interaction in verteilten Architekturen wird im Abschnitt [Verteilte Architekturmodelle](../../interaction/using/distributed-architectures.md) behandelt.
 
