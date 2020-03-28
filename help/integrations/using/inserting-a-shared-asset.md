@@ -14,7 +14,7 @@ discoiquuid: 3d01cc7e-5685-4101-bf4b-ef5f6e52b3c9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
 
 ---
@@ -28,15 +28,15 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
    Verwenden Sie beim Gebrauch von Assets aus der Adobe-Experience-Manager-Bibliothek eine bei der [Integrationskonfiguration](../../integrations/using/configuring-access-to-assets.md#integrating-with-aem-assets) erstellte Versandvorlage.
 
-   If you do not have this specific template, make sure that in the delivery **Properties**, the **[!UICONTROL Content editing mode]** (**[!UICONTROL Advanced]** tab) is set to **DCE** and that the AEM external account that you want to use for accessing your AEM Assets resource library is provided.
+   Sollten Sie über keine spezielle Vorlage verfügen, vergewissern Sie sich, dass in den **Eigenschaften** des Versands im Feld **[!UICONTROL Inhaltserstellung]** (im **[!UICONTROL Erweitert]**-Tab) die Option **DCE** ausgewählt ist und dass das externe AEM-Konto, das Sie für den Zugriff auf Ihre AEM-Assets-Bibliothek verwenden möchten, angegeben ist.
 
 1. Wählen Sie im Bearbeitungsfenster die Option zum Einfügen eines Bilds aus:
 
-   * Wenn Sie den [Standard-Bearbeitungsmodus](../../delivery/using/defining-the-email-content.md#adding-images)verwenden, wählen Sie **[!UICONTROL Image]** > **[!UICONTROL Select a shared asset]**.
+   * Wenn Sie sich im [Standard-Bearbeitungsmodus](../../delivery/using/defining-the-email-content.md#adding-images) befinden, wählen Sie aus der **[!UICONTROL Bild]**-Dropdown-Liste die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
 
       ![](assets/dam_insert_image_standard.png)
 
-   * If you are using the [advanced editing mode](../../web/using/about-campaign-html-editor.md) (DCE), go to an image block, then via the contextual menu, select **[!UICONTROL Select a shared asset]**.
+   * Wenn Sie sich im [erweiterten Bearbeitungsmodus](../../web/using/about-campaign-html-editor.md) (DCE) befinden, markieren Sie einen Inhaltsbaustein und wählen Sie im Kontextmenü die Option **[!UICONTROL Freigegebenes Asset auswählen]** aus.
 
       ![](assets/dam_insert_image_dce.png)
 
@@ -46,7 +46,7 @@ Freigegebene Assets der Adobe Experience Cloud können in E-Mails und Landingpag
 
 1. Wählen Sie im sich öffnenden Fenster das gewünschte Bild aus und bestätigen Sie Ihre Auswahl.
 
-   Die verfügbaren Bilder stammen entweder aus Ihrer Adobe Experience Cloud-Bibliothek oder aus Ihrer AEM Assets-Bibliothek, je nachdem, wie Ihre Adobe Campaign-Instanz konfiguriert ist. Weitere Informationen finden Sie im Abschnitt Zugriff auf Assets [konfigurieren](../../integrations/using/configuring-access-to-assets.md) .
+   Die verfügbaren Bilder stammen je nach der Konfiguration Ihrer Adobe Campaign-Instanz entweder aus Ihrer Adobe Experience Cloud-Bibliothek oder aus Ihrer AEM Assets-Bibliothek. Weitere Informationen finden Sie im Abschnitt [Zugriff auf Assets konfigurieren](../../integrations/using/configuring-access-to-assets.md).
 
    ![](assets/dam_shared_image_selection.png)
 
