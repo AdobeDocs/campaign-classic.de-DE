@@ -14,7 +14,7 @@ discoiquuid: a5fc6c78-b4fb-41fd-a072-7be4ece3c554
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -26,10 +26,10 @@ Um einen Cube nutzen zu können, müssen zunächst die erforderlichen Dimensione
 
 Ein Cube wird in folgenden Schritten konfiguriert:
 
-1. Wählen Sie die Arbeitstabelle aus. Siehe [Auswählen der Arbeitstabelle](#selecting-the-work-table).
-1. Definieren von Dimensionen Siehe [Definieren von Dimensionen](#defining-dimensions).
-1. Definieren Sie Maßnahmen. Siehe [Erstellen von Indikatoren](#building-indicators).
-1. Erstellen von Aggregaten (optional). Siehe [Berechnen und Verwenden von Aggregaten](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
+1. Wählen Sie die Arbeitstabelle aus. Siehe [Arbeitstabelle auswählen](#selecting-the-work-table).
+1. Definieren Sie Dimensionen. Siehe [Dimensionen bestimmen](#defining-dimensions).
+1. Definieren Sie Kennzahlen. Siehe [Kennzahlen erstellen](#building-indicators).
+1. Erstellen Sie Aggregate (optional). Siehe [Aggregate berechnen und verwenden](../../reporting/using/concepts-and-methodology.md#calculating-and-using-aggregates).
 
 Das nachstehende Beispiel zeigt, wie schnell ein einfacher Cube erstellt und in einem Bericht zur Kennzahlenanalyse verwendet werden kann.
 
@@ -37,7 +37,7 @@ Die Durchführungsschritte werden im Nachstehenden beschrieben, die verschiedene
 
 ## Arbeitstabelle auswählen {#selecting-the-work-table}
 
-To create a cube, click the **[!UICONTROL New]** button above the list of cubes.
+Um einen Cube zu erstellen, klicken Sie auf die oberhalb der Cube-Liste gelegene Schaltfläche **[!UICONTROL Neu]**.
 
 ![](assets/s_advuser_cube_create.png)
 
@@ -45,9 +45,9 @@ Wählen Sie ein Faktenschema aus, d. h. das Schema, das die zu analysierenden El
 
 ![](assets/s_advuser_cube_wz_02.png)
 
-Click **[!UICONTROL Save]** to create the Cube: it will appear on the list of Cubes and may then be configured using the appropriate tabs.
+Klicken Sie auf **[!UICONTROL Speichern]**, um den Cube zu erstellen: Er erscheint daraufhin in der Liste der Cubes und kann über seine verschiedenen Tabs konfiguriert werden.
 
-Click the **[!UICONTROL Filter the source data...]** link to apply the calculations of this Cube to a select of data in the database.
+Klicken Sie auf den Link **[!UICONTROL Quelldaten filtern...]**, wenn Sie die Berechnungen des Cubes nur auf eine Auswahl von Daten anwenden möchten.
 
 ![](assets/s_advuser_cube_wz_03.png)
 
@@ -55,21 +55,21 @@ Click the **[!UICONTROL Filter the source data...]** link to apply the calculati
 
 Dimensionen sind die Analyseachsen, die für jeden Cube entsprechend dem Faktenschema, auf das er sich bezieht, bestimmt werden. Es handelt sich um die analysierten Dimensionen, wie zum Beispiel die Zeit (Jahr, Monat, Tag etc.), eine Produkt- oder Vertragsnomenklatur (Familie, Referenz etc.), ein Populationssegment (nach Stadt, Altersgruppe, Status etc).
 
-These analysis axes are defined in the **[!UICONTROL Dimension]** tab of the Cube.
+Diese Analyseachsen werden im Tab **[!UICONTROL Dimensionen]** des Cubes festgelegt.
 
-Click the **[!UICONTROL Add]** button to create a new dimension, then in the **[!UICONTROL Expression field]**, click the **[!UICONTROL Edit expression]** icon to select the field that contains the concerned data.
+Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Dimension zu erstellen, und klicken Sie im Feld **[!UICONTROL Ausdruck]** auf das Symbol **[!UICONTROL Ausdruck bearbeiten]**, um das die betroffenen Daten enthaltende Feld auszuwählen.
 
 ![](assets/s_advuser_cube_wz_04.png)
 
 * Wählen Sie zunächst das **Alter** der Empfänger. Für dieses Feld können Sie eine Klassierung bestimmen, um Altersgruppen zusammenzufassen und so die Lesbarkeit der Daten zu vereinfachen. Die Klassierung wird empfohlen, wenn ein Merkmal eine Vielzahl von unterschiedlichen Ausprägungen aufweist.
 
-   Markieren Sie dazu die **[!UICONTROL Enable binning]** Option. Die Binnungsmodi werden im Abschnitt [Datenablage](../../reporting/using/concepts-and-methodology.md#data-binning)detailliert beschrieben.
+   Kreuzen Sie hierzu die Option **[!UICONTROL Klassierung aktivieren]** an. Klassierungsmodi werden im Abschnitt [Daten klassieren](../../reporting/using/concepts-and-methodology.md#data-binning) detailliert beschrieben.
 
    ![](assets/s_advuser_cube_wz_05.png)
 
 * Fügen Sie eine Dimension vom Typ **Datum** hinzu. Im Beispiel sollen die Erstellungsdaten der Empfängerprofile angezeigt werden.
 
-   To do this, click **[!UICONTROL Add]** and select the **[!UICONTROL Creation date]** field in the recipient table.
+   Klicken Sie hierzu auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL Erstellungsdatum]** in der Empfängertabelle aus.
 
    ![](assets/s_advuser_cube_wz_06.png)
 
@@ -81,7 +81,7 @@ Click the **[!UICONTROL Add]** button to create a new dimension, then in the **[
 
 * Erstellen Sie eine weitere Dimension, um die Informationen in Bezug auf den Ort des Empfängers zu analysieren.
 
-   To do this, add a new dimension and select the city in the **[!UICONTROL Location]** node of the recipient schema.
+   Fügen Sie hierzu eine neue Dimension hinzu und wählen Sie im Knoten **[!UICONTROL Geografische Lokalisierung]** des Empfängerschemas das Feld Ort aus.
 
    ![](assets/s_advuser_cube_wz_08.png)
 
@@ -93,24 +93,24 @@ Click the **[!UICONTROL Add]** button to create a new dimension, then in the **[
 
    ![](assets/s_advuser_cube_wz_10.png)
 
-   Nur die Werte in der Aufzählung werden angezeigt. Die anderen werden unter der im **[!UICONTROL Label of the other values]** Feld definierten Beschriftung gruppiert.
+   Nur die in der Auflistung vorhandenen Werte werden angezeigt. Alle anderen werden unter einem Titel zusammengefasst, den Sie im Feld **[!UICONTROL Titel der anderen Werte]** definieren können.
 
-   Weitere Informationen finden Sie unter [Dynamisches Verwalten von Ablagen](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
+   Weitere Informationen hierzu finden Sie unter [Klassen dynamisch verwalten](../../reporting/using/concepts-and-methodology.md#dynamically-managing-bins).
 
 ## Kennzahlen erstellen {#building-indicators}
 
-Sobald die Dimensionen definiert sind, müssen Sie einen Berechnungsmodus für die Werte festlegen, die in den Zellen angezeigt werden sollen. Erstellen Sie dazu die entsprechenden Indikatoren auf der **[!UICONTROL Measures]** Registerkarte: Sie können so viele Messwerte wie Spalten erstellen, die im Bericht angezeigt werden, der den Würfel verwendet.
+Nach der Definition der Dimensionen muss der Berechnungsmodus der Werte bestimmt werden, die in den Zellen angezeigt werden sollen. Erstellen Sie hierzu die jeweiligen Kennzahlen im gleichnamigen Tab: Die Anzahl der Kennzahlen muss der Anzahl der Spalten entsprechen, die im Bericht angezeigt werden.****
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Click the **[!UICONTROL Add]** button.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 1. Wählen Sie den Kennzahltyp und die anzuwendende Formel aus. Im Beispiel wird die Anzahl an Frauen unter den Empfängern gezählt.
 
-   Our measure is based on the fact schema and uses the **[!UICONTROL Count]** operator.
+   Die Kennzahl basiert auf dem Faktenschema und verwendet die Funktion **[!UICONTROL Zählung]**.
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   Über den **[!UICONTROL Filter the measure data...]** Link können Sie nur Frauen auswählen. For more on defining measures and the available options, refer to [Defining measures](../../reporting/using/concepts-and-methodology.md#defining-measures).
+   Über den Link **[!UICONTROL Kennzahldaten filtern...]** gelangen Sie in das Abfragefenster, das die Beschränkung der zu berücksichtigenden Werte auf Frauen ermöglicht. Die Vorgehensweise zur Bestimmung der Kennzahlen und die verfügbaren Optionen werden im Abschnitt ](../../reporting/using/concepts-and-methodology.md#defining-measures)Kennzahlen definieren[ beschrieben.
 
    ![](assets/s_advuser_cube_wz_12.png)
 
@@ -126,17 +126,17 @@ Nach der Konfiguration des Cubes kann er als Vorlage für einen neuen Bericht ve
 
 Gehen Sie dazu wie folgt vor:
 
-1. Click the **[!UICONTROL Create]** button of the **[!UICONTROL Reports]** universe and select the cube you have just created.
+1. Klicken Sie in der Rubrik **[!UICONTROL Berichte]** auf die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie den zuvor erstellten Cube aus.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
-1. Click the **[!UICONTROL Create]** button to confirm: this will take you to the report configuration and viewing page.
+1. Klicken Sie zur Bestätigung auf die Schaltfläche **[!UICONTROL Erstellen]**: Der Bildschirm zur Konfiguration und Ansicht des Berichts wird geöffnet.
 
    Die ersten beiden verfügbaren Dimensionen werden standardmäßig in Spalten- und Zeilenform angezeigt, die Tabelle enthält jedoch keine Werte. Klicken Sie auf das zentrale Symbol, um sie zu erzeugen:
 
    ![](assets/s_advuser_cube_wz_15.png)
 
-1. Sie können die Dimensionen von einer Achse in die andere verschieben, sie löschen, neue Kennzahlen hinzufügen etc. Mögliche Vorgänge sind im Folgenden beschrieben: Verwendung [von Würfeln zur Erforschung von Daten](../../reporting/using/using-cubes-to-explore-data.md).
+1. Sie können die Dimensionen von einer Achse in die andere verschieben, sie löschen, neue Kennzahlen hinzufügen etc. Mögliche Vorgänge werden unter [Cubes zur Datenanalyse verwenden](../../reporting/using/using-cubes-to-explore-data.md) beschrieben.
 
    Verwenden Sie hierzu die entsprechenden Symbole.
 
