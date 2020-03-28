@@ -14,7 +14,7 @@ discoiquuid: f78603e9-f6ff-4ebe-941b-b3fbd1924b71
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -34,16 +34,16 @@ Die Verwaltung der Benutzer sowie ihrer Rechte wird in diesem [Abschnitt](../../
 
 Folgende Benutzergruppen sind im Zusammenhang mit Workflows von Bedeutung:
 
-* Mit der **[!UICONTROL Workflow execution]** Gruppe können Sie die Ausführung und Genehmigung von Targeting-Workflows steuern: der WORKFLOW mit dem Namen right wird den Operatoren dieser Gruppe zugeordnet. Es ist für alle Aktionen in Workflows erforderlich, zusätzlich zu den Zugriffsrechten auf die Datendateien. Standardmäßig hat die **[!UICONTROL Workflow execution]** Gruppe schreibgeschützten Zugriff auf Standard-Targeting-Workflow-Dateien und Workflow-Vorlagen. Operatoren dieser Gruppe haben auch Lese- und Schreibzugriff auf die ausstehende Genehmigungsdatei.
-* The **[!UICONTROL Workflow supervisors]** group lets operators manage workflow approvals.
-* Die **[!UICONTROL Operation Managers]** Gruppe, die auf Kampagnen-Workflows zugreifen soll.
+* Die Gruppe **[!UICONTROL Workflow-Ausführung]** dient der Ausführungs- und Validierungskontrolle von Zielgruppen-Workflows. Die Benutzer dieser Gruppe verfügen automatisch über die spezifische Berechtigung WORKFLOW. Diese ist neben den Datenzugriffsrechten Vorraussetzung für alle Workflow-bezogenen Aktionen. Die Gruppe **[!UICONTROL Workflow-Ausführung]** verfügt standardmäßig über Lesezugriff auf die Standard-Ordner der Zielgruppen-Workflows und der Workflow-Vorlagen. Die Benutzer dieser Gruppen haben des Weiteren Lese- und Schreibzugriff auf den Ordner der ausstehenden Validierungen.
+* Die Gruppe **[!UICONTROL Workflow-Supervisoren]** ermöglicht den Benutzern die Verwaltung der Workflow-Validierungen.
+* Die Benutzer der Gruppe **[!UICONTROL Kampagnenverantwortliche Benutzer]** haben Zugriff auf Kampagnen-Workflows.
 
 ## Spezifische Berechtigungen {#named-rights}
 
-Nur der rechts benannte WORKFLOW ist spezifisch für Workflows: Damit können Sie Workflows erstellen, starten und beenden. Die Leserechte in der Workflow-Datei sind erforderlich, damit das benannte Recht angewendet werden kann. Für Targeting-Arbeitsabläufe ist das Lesen direkt in der **[!UICONTROL Profiles and Targets]** Datei erforderlich.
+Nur die spezifische Berechtigung WORKFLOW bezieht sich ausschließlich auf die Bearbeitung von Workflows. Sie berechtigt zu Erstellung, Start und Stopp von Workflows. Vorraussetzung ist, dass die entsprechenden Benutzer mindestens über einen Lesezugriff auf den Workflow-Ordner verfügen. Für Zielgruppen-Workflows ist außerdem der Lesezugriff auf den Ordner **[!UICONTROL Profile und Zielgruppen]** erforderlich.
 
 ## Workflow-Ausführungskonto {#workflow-execution-account}
 
 Das Ausführungskonto eines Workflows wird auf Niveau der Vorlage definiert. Das Ausführungskonto ermöglicht die direkte Zuordnung der Rechte zum Workflow, unabhängig vom Adobe-Campaign-Benutzer, der die Ausführung startet. Standardmäßig wird jeder Workflow mit den Rechten des Benutzers ausgeführt, der ihn gestartet hat.
 
-Um einem Workflow ein Ausführungskonto zuzuordnen, navigieren Sie zur Liste der Workflow-Vorlagen und klicken Sie mit der rechten Maustaste auf die mit dem Workflow verknüpfte Vorlage. Wählen Sie **[!UICONTROL Action > Change execution account...]** dann das zu verwendende Konto aus.
+Gehen Sie wie folgt vor, um einem Workflow ein Ausführungskonto zuzuordnen: Gehen Sie in die Liste der Workflow-Vorlagen und klicken Sie mit der rechten Maustaste auf die dem Workflow entsprechende Vorlage. Verwenden Sie die Option **[!UICONTROL Aktionen > Ausführungskonto ändern...]** und wählen Sie das zu verwendende Konto aus.
