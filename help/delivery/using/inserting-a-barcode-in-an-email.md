@@ -14,7 +14,7 @@ discoiquuid: 679b9ae2-362c-483d-acb8-47bc01928541
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -26,7 +26,7 @@ Die Barcode-Lösung bietet die Möglichkeit, verschiedene ein- oder zweidimensio
 
 Barcodes können in Form eines Bitmaps dynamisch mithilfe eines durch Kundenkriterien definierten Werts erzeugt werden. Personalisierte Barcodes lassen sich dann über E-Mails in Marketingkampagnen integrieren. Der Empfänger kann die Nachricht ausdrucken und sie dem Unternehmen (z. B. bei einem Zahlvorgang) zum Scannen vorlegen.
 
-To insert a barcode into an email, place the cursor in the content where you want to display it, then click the personalization button. Select **[!UICONTROL Include > Barcode...]**.
+Positionieren Sie den Cursor im Inhalt an der Stelle, an der der Barcode eingefügt werden soll, und klicken Sie auf die Personalisierungsschaltfläche. Wählen Sie **[!UICONTROL Einfügen > Barcode...]**.
 
 ![](assets/barcode_insert_14.png)
 
@@ -55,13 +55,13 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
       ![](assets/barcode_insert_12.png)
 
 1. Geben Sie die gewünschte Größe des Barcodes an. Durch Angabe eines Faktors von x1 bis x10 kann die Größe angepasst werden.
-1. Mit dem **[!UICONTROL Value]** Feld können Sie den Wert des Barcodes definieren. Ein Wert kann mit einem bestimmten Angebot übereinstimmen und die Funktion eines Kriteriums sein. Es kann sich dabei um den Wert eines Datenbankfelds handeln, das mit den Kunden verknüpft ist.
+1. Das Feld **[!UICONTROL Wert]** dient der Bestimmung des Barcode-Werts. Dieser kann einem Sonderangebot entsprechen oder durch eine Bedingungsfunktion definiert werden, beispielsweise den Wert eines kundenbezogenen Datenbankfelds.
 
-   Dieses Beispiel zeigt einen EAN-8-Barcode, dem die Kontonummer eines Empfängers hinzugefügt wurde. Um diese Kontonummer hinzuzufügen, klicken Sie auf die Personalisierungsschaltfläche rechts neben dem **[!UICONTROL Value]** Feld und wählen Sie **[!UICONTROL Recipient > Account number]**.
+   Unten stehendes Beispiel zeigt einen EAN-8-Barcode, in dem die Kundennummer eines Empfängers enthalten ist. Klicken Sie auf die Personalisierungsschaltfläche rechts vom Feld **[!UICONTROL Wert]** und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. The **[!UICONTROL Height]** field lets you configure the height of the barcode without changing its width, by altering the amount of space between each bar.
+1. Im Feld **[!UICONTROL Höhe]** können Sie die Höhe des Barcodes anpassen, ohne die Breite und somit die Abstände zwischen den Balken zu verändern.
 
    Bitte beachten Sie, dass keine einschränkende Kontrolle Ihrer Eingaben in Bezug auf den Barcode-Typ erfolgt. Sollte ein falscher oder nicht kompatibler Wert eingegeben werden, sehen Sie dies erst in der **Vorschau**. In diesem Fall ist der Barcode rot durchkreuzt.
 
@@ -69,11 +69,11 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
    >
    >Der einem Barcode zugeteilte Wert ist vom Typ abhängig. So muss beispielsweise ein EAN-8-Barcode genau acht Ziffern enthalten.
    >
-   >Mit der Personalisierungsschaltfläche rechts neben dem **[!UICONTROL Value]** Feld können Sie zusätzlich zu dem Wert selbst Daten hinzufügen. Dadurch wird der Barcode angereichert, sofern er vom Barcode-Standard akzeptiert wird.
+   >Die Personalisierungsschaltfläche rechts vom **[!UICONTROL Wert]**-Feld ermöglicht das Hinzufügen von den Wert ergänzenden Daten. Diese reichern den Barcode an, sofern der Barcode-Typ dies zulässt.
    >
-   >For example, if you are using a GS1-128 type barcode and want to enter the account number of a recipient in addition to the value, click the personalization button and select **[!UICONTROL Recipient > Account number]**. If the account number of the selected recipient is entered correctly, the barcode takes it into account.
+   >Wenn Sie beispielsweise einen GS1-128-Barcode verwenden und zusätzlich zum Wert die Kundennummer des Empfängers angeben möchten, klicken Sie auf die Personalisierungsschaltfläche und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**. Wenn die Kundennummer des Empfängers korrekt in der Datenbank gespeichert ist, wird sie im Barcode berücksichtigt.
 
-Nachdem diese Elemente konfiguriert wurden, können Sie Ihre E-Mail abschließen und senden. Um Fehler zu vermeiden, sollten Sie stets sicherstellen, dass Ihr Inhalt korrekt angezeigt wird, bevor Sie eine Bereitstellung durchführen, indem Sie auf die **[!UICONTROL Preview]** Registerkarte klicken.
+Bevor Sie den Versand starten, prüfen Sie im **[!UICONTROL Vorschau]**-Tab, dass der Inhalt wie gewünscht angezeigt wird.
 
 ![](assets/barcode_insert_10.png)
 
