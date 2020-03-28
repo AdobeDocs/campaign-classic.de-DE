@@ -14,7 +14,7 @@ discoiquuid: 66f2b229-92d9-4db1-97a4-2d9eb2270446
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -42,7 +42,7 @@ Um den Versandempfängern die Möglichkeit zu geben, den Inhalt der Nachrichten 
 
 >[!NOTE]
 >
->Standardmäßig wird dieser Link nicht in der Blockliste angezeigt. Sie können darauf zugreifen, indem Sie auf **[!UICONTROL Other...]** und den **[!UICONTROL Social network sharing links]** Block auswählen.
+>Dieser Link wird nicht standardmäßig in der Bausteinliste vorgeschlagen. Sie können jedoch durch Klick auf **[!UICONTROL Sonstige...]** darauf zugreifen. Wählen Sie dann aus den vorgeschlagenen Bausteinen **[!UICONTROL Teilen-Links der sozialen Netzwerke]** aus.
 
 ![](assets/s_ncs_user_viral_add_link_via_others.png)
 
@@ -54,7 +54,7 @@ Wenn ein Empfänger auf das Symbol eines der vorgeschlagenen Netzwerke klickt, w
 
 >[!NOTE]
 >
->Dieser Personalisierungsblock enthält alle Links (zum Senden und Freigeben von Nachrichten an alle sozialen Netzwerke). Es kann an Ihre Bedürfnisse angepasst werden. Die Konfiguration ist jedoch für fortgeschrittene Benutzer reserviert. Um den passenden Personalisierungsblock zu bearbeiten, gehen Sie zum **[!UICONTROL Resources > Campaign management > Personalization blocks]** Knoten der Adobe Campaign-Struktur.
+>Der verwendete Gestaltungsbaustein enthält alle Links (Weiterleitung und Teilen in allen sozialen Netzwerken). Er kann Ihren Bedürfnissen entsprechend angepasst werden. Diese Art der Konfiguration sollte jedoch erfahrenen Benutzern vorbehalten bleiben. Auf den Baustein kann im Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden.
 
 ## Weiterleiten von Nachrichten {#viral-marketing--forward-to-a-friend}
 
@@ -64,8 +64,8 @@ Gehen Sie zur Ermöglichung der Weiterleitung wie bei der Einfügung des Teilen-
 
 Folgende Schritte sind dazu nötig:
 
-1. Fügen Sie den **[!UICONTROL Social network sharing links]** Personalisierungsblock in den Text der ursprünglichen Nachricht ein.
-1. Durch Klick auf das **[!UICONTROL Email]**-Symbol kann der Empfänger die Nachricht an seine Kontakte weiterleiten.
+1. Fügen Sie den Gestaltungsbaustein **[!UICONTROL Teilen-Links der sozialen Netzwerke]** in den Nachrichten-Textkörper ein.
+1. Durch Klick auf das **[!UICONTROL E-Mail]**-Symbol kann der Empfänger die Nachricht an seine Kontakte weiterleiten.
 
    ![](assets/s_ncs_user_viral_email_link.png)
 
@@ -73,13 +73,13 @@ Folgende Schritte sind dazu nötig:
 
    ![](assets/s_ncs_user_viral_email_msg.png)
 
-   The message is sent to them when the main recipient clicks the **[!UICONTROL Next]** button.
+   Der Klick auf die Schaltfläche **[!UICONTROL Senden]** löst den Versand der Mitteilung aus.
 
    >[!NOTE]
    >
-   >Der Inhalt dieser Nachricht kann an Ihre Bedürfnisse angepasst werden. Er wird basierend auf der **[!UICONTROL Transfer of original message]** Vorlage erstellt, die im **[!UICONTROL Administration > Campaign management > Technical delivery templates]** Knoten gespeichert wird.
+   >Der Inhalt der Mitteilung kann Ihren Bedürfnissen angepasst werden. Er beruht auf der Vorlage **[!UICONTROL Weiterleitung der ursprünglichen Nachricht]** und ist im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich.
    >
-   >It is also possible to change the message forward form made available to the referrer To do this, you need to change the **Viral form** Web application stored in the **[!UICONTROL Resources > Online > Web applications]** node.
+   >Sie können außerdem das Weiterleitungsformular Ihren Wünschen entsprechend ändern. Dies geschieht über die Webanwendung **Teilen-Formular**, auf die Sie im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** zugreifen können.
 
 1. Ein Link innerhalb der weitergeleiteten Nachricht erlaubt es dem geworbenen Kontakt, sich in der Datenbank zu registrieren. Dies geschieht über ein Formular.
 
@@ -87,11 +87,11 @@ Folgende Schritte sind dazu nötig:
 
    >[!NOTE]
    >
-   >Diese Konfiguration kann angepasst werden. Dazu müssen Sie die Webanwendung für das **Abonnement** des Empfängers ändern, die im **[!UICONTROL Resources > Online > Web applications]** Knoten gespeichert ist.
+   >Auch hier haben Sie die Möglichkeit, die Konfigurationen anzupassen. Begeben Sie sich hierzu in den Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** und wählen Sie **Empfängeranmeldung** aus.
    >
    >Weitere Informationen zu Webanwendungen finden Sie in [diesem Abschnitt](../../web/using/about-web-applications.md).
 
-   Nach der Validierung wird eine Bestätigungsmeldung gesendet: sie werden erst dann endgültig registriert, wenn sie den Link in der Bestätigungsmeldung aktivieren. Diese Meldung wird basierend auf der **[!UICONTROL Registration confirmation]** Vorlage erstellt, die im **[!UICONTROL Administration > Campaign management > Technical delivery templates]** Knoten gespeichert wird.
+   Eine automatische Nachricht bestätigt die Registrierung des Kontakts, seine Daten werden jedoch erst in der Datenbank gespeichert, wenn er den in der Bestätigung enthaltenen Link aktiviert. Die Bestätigungsnachricht wird unter Verwendung der Vorlage **[!UICONTROL Anmeldebestätigung]** erstellt, die im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Vorlagen technischer Sendungen]** zugänglich ist.
 
    Der geworbene Kontakt wird nun im **Empfänger**-Ordner der Datenbank gespeichert. Standardmäßig wurde er außerdem automatisch für den Informationsdienst **Newsletter** angemeldet.
 
@@ -103,7 +103,7 @@ Jede Weiterleitung und jeder Zugriff auf die geteilten Informationen wird auf Ve
 
    ![](assets/s_ncs_user_network_del_tracking_tab.png)
 
-* in einem eigenen **[!UICONTROL Sharing to social networks]** Bericht:
+* im Bericht **[!UICONTROL Teilen über soziale Netzwerke]**:
 
    ![](assets/s_ncs_user_viral_report.png)
 
