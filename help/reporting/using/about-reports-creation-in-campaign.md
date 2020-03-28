@@ -14,7 +14,7 @@ discoiquuid: a21e9c9e-ffc5-40d1-8eac-f4f25da8f21d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -31,9 +31,9 @@ Um Statistiken über Daten Ihrer Campaign-Datenbank zu erzeugen, können Sie Ber
 Um einen Analysebericht Ihrer Daten zu erstellen, zu veröffentlichen und zu versenden, durchlaufen Sie folgende Schritte:
 
 1. Erstellung eines neuen Berichts (siehe [Erstellungsetappen](../../reporting/using/creating-a-new-report.md));
-1. Erfassen Sie die zu analysierenden Daten: auf die [Datenerfassung zur Analyse](../../reporting/using/collecting-data-to-analyze.md) und [Verwendung des Kontexts](../../reporting/using/using-the-context.md)verweisen,
-1. Definieren Sie den Inhalt des Berichts mit den Aktivitäten und ihren Behältern: Siehe [Erstellen einer Tabelle](../../reporting/using/creating-a-table.md), [Erstellen eines Diagramms](../../reporting/using/creating-a-chart.md) und [Elementlayouts](../../reporting/using/element-layout.md),
-1. Konfigurieren Sie die Anzeigeoptionen: Anzeigetyp, freigegebene Berichte: Siehe [Berichtsanzeigekontext](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Definieren eines bedingten Inhalts](../../reporting/using/defining-a-conditional-content.md) und [Konfigurieren des Berichtzugriffs](../../reporting/using/configuring-access-to-the-report.md),
-1. Bericht veröffentlichen (Veröffentlichungsassistent): Siehe [Veröffentlichen des Berichts](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report),
-1. Convert the report: export, history, display in a browser: refer to [Actions on reports](../../reporting/using/actions-on-reports.md).
+1. Abruf der zu analysierenden Daten (siehe [Zu analysierende Daten abrufen](../../reporting/using/collecting-data-to-analyze.md) und [Kontext verwenden](../../reporting/using/using-the-context.md));
+1. Definieren des Inhalts des Berichts mit den Aktivitäten und ihren Containern (siehe [Tabellen erstellen](../../reporting/using/creating-a-table.md), [Grafiken erstellen](../../reporting/using/creating-a-chart.md) und [Elemente anordnen](../../reporting/using/element-layout.md));
+1. Konfigurieren der Anzeigeoptionen: Anzeigetyp, geteilte Berichte (siehe [Anzeigekontext von Berichten](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Bedingte Inhalte erstellen](../../reporting/using/defining-a-conditional-content.md) und [Berichtanzeige konfigurieren](../../reporting/using/configuring-access-to-the-report.md)),
+1. Publizieren des Berichts (Publikationsassistent; siehe [Berichtpublikation](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)),
+1. Umwandlung des Berichts durch Export, Verlaufserstellung oder Anzeige im Browser (siehe [Mit Berichten arbeiten](../../reporting/using/actions-on-reports.md)).
 
