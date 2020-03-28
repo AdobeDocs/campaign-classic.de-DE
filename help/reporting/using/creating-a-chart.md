@@ -14,7 +14,7 @@ discoiquuid: 70e4e63d-354d-4912-b75a-dba38e1c0b03
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -38,15 +38,15 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
    ![](assets/s_ncs_advuser_report_wizard_018.png)
 
-1. Click the **[!UICONTROL Data]** tab to define the data source and the series to be calculated.
+1. Klicken Sie auf den Tab **[!UICONTROL Daten]**, um die Datenquelle sowie die zu berechnenden Serien zu bestimmen.
 
-   The statistics to be displayed in the chart can be calculated based on a query or on the context data, i.e. the data provided by the inbound transition of the current page (for more on this, refer to [Using context data](../../reporting/using/using-the-context.md#using-context-data)).
+   Die in der Grafik anzuzeigenden Statistiken können über eine Abfrage oder über Kontextdaten, d. h. die von der eingehenden Transition der betreffenden Seite übertragenen Daten, berechnet werden. Lesen Sie hierzu den Abschnitt ](../../reporting/using/using-the-context.md#using-context-data)Kontextdaten verwenden[.
 
-   * Click the **[!UICONTROL Filter data...]** link to define filtering criteria for the data in the database.
+   * Klicken Sie auf den Link **[!UICONTROL Daten filtern...]**, um die Kriterien zur Filterung der Daten zu bestimmen.
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Um Kontextdaten zu verwenden, wählen Sie diese Option und klicken Sie auf den **[!UICONTROL Advanced settings...]** Link. Wählen Sie dann die Daten aus, die die Statistiken betreffen.
+   * Zur Verwendung der Kontextdaten aktivieren Sie die entsprechende Option und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter...]**. Wählen Sie anschließend die Daten aus, auf die sich die Statistiken beziehen werden.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -62,11 +62,11 @@ Der Grafiktyp wird beim Einfügen in die Seite ausgewählt.
 
 ![](assets/s_advuser_report_page_activity_04.png)
 
-It can also be altered via the **[!UICONTROL Chart type]** section of the **[!UICONTROL General]** tab in the chart.
+Er kann im Abschnitt **[!UICONTROL Grafiktyp]** des Tabs **[!UICONTROL Allgemein]** der Grafik geändert werden.
 
 ![](assets/reporting_change_graph_type.png)
 
-Die Varianten hängen vom ausgewählten Diagrammtyp ab. Sie werden über den **[!UICONTROL Variants...]** Link ausgewählt.
+Darüber hinaus stehen je Grafiktyp verschiedene Parameter zur Verfügung. Diese werden über den Link **[!UICONTROL Grafikparameter...]** ausgewählt.
 
 ### Verteilung: Kreisdiagramm {#breakdown--pie-charts}
 
@@ -76,7 +76,7 @@ Die Anzeige in Form von Sektoren beschränkt die Analyse auf eine Variable.
 
 ![](assets/reporting_graph_type_sector_1.png)
 
-The **[!UICONTROL Variants]** link lets you personalize the overall rendering of the chart.
+Über den Link **[!UICONTROL Grafikparameter...]** kann das Rendering der Grafik angepasst werden.
 
 ![](assets/reporting_graph_type_sector_2.png)
 
@@ -106,11 +106,11 @@ Diese grafische Darstellungsform zeigt die Entwicklung einer oder mehrerer Messu
 
 Histogramme ermöglichen den Vergleich unterschiedlicher Werte von einer oder zwei Variablen.
 
-For these types of charts, the following options are offered in the **[!UICONTROL Variants]** window:
+Für diese Art von Grafik stehen folgende Optionen im Fenster **[!UICONTROL Grafikparameter]** zur Verfügung:
 
 ![](assets/reporting_select_graph_var.png)
 
-Check the **[!UICONTROL Display caption]** option to show the caption with the chart and choose its position:
+Aktivieren Sie die Option **[!UICONTROL Legende anzeigen]**, damit die Legende mit der Grafik angezeigt wird. Daraufhin kann ihre Position bestimmt werden:
 
 ![](assets/reporting_select_graph_legend.png)
 
@@ -118,7 +118,7 @@ Wenn sich die Werte dazu eignen, können Sie sie stapeln.
 
 ![](assets/reporting_graph_type_histo.png)
 
-Bei Bedarf können Sie die Wertanzeigesequenz umkehren. To do this, select the **[!UICONTROL Reverse stacking]** option.
+Bei Bedarf können Sie die Anzeigereihenfolge der Werte umkehren. Aktivieren Sie hierzu die Option **[!UICONTROL Umgekehrte Stapelung]**.
 
 ### Konversion: Trichter {#conversion--funnel}
 
@@ -134,25 +134,25 @@ Diese Elemente werden in den Grafikparametern definiert.
 
 ![](assets/reporting_graph_type_gauge1.png)
 
-* Das **[!UICONTROL Value]** Feld wird durch ein schwarzes Zifferblatt im Diagramm dargestellt. Es stellt das Element dar, dessen Fortschritt Sie berechnen möchten. Der zu repräsentierende Wert muss bereits gespeichert sein, damit er verwendet werden kann.
-* The **[!UICONTROL Goal]** field represents the maximum value to achieve.
-* Using the **[!UICONTROL Other mark]** field you can add a second indicator to the chart.
-* The **[!UICONTROL Display range]** fields let you specify the values between which the report is calculated.
-* The **[!UICONTROL Value ranges]** field lets you attribute statuses (None, Bad, Acceptable, Good) to a set of values to better illustrate the progress.
+* Das Feld **[!UICONTROL Wert]** wird in der Grafik als schwarzer Pfeil dargestellt. Es legt das Element fest, dessen Fortschritt berechnet werden soll. Der zu definierende Wert muss vor-gespeichert werden, bevor er verwendet werden kann.
+* Im Feld **[!UICONTROL Zielvorgabe]** wird der zu erreichende Maximalwert angegeben.
+* Im Feld **[!UICONTROL Andere Markierung]** kann der Grafik ein zweiter Indikator hinzugefügt werden.
+* In den **[!UICONTROL Anzeigebereich]**-Feldern werden die zu berechnenden Intervalle bestimmt.
+* Die **[!UICONTROL Wertebereiche]** ermöglichen es, verschiedene Status (Ohne, Schlecht, Zufriedenstellend, Gut) an Wertegruppen zu vergeben, um den Fortschritt besser zu veranschaulichen.
 
-In the **[!UICONTROL Display settings]** section, the **[!UICONTROL Change appearance...]** lets you configure the way the chart is displayed.
+Über den Link **[!UICONTROL Layout ändern...]** im Bereich **[!UICONTROL Anzeigeparameter]** kann die Anzeige der Grafik konfiguriert werden.
 
 ![](assets/reporting_graph_type_gauge2.png)
 
-Mit der **[!UICONTROL Display the value below the gauge]** Option können Sie den Werterfolg unterhalb des Diagramms anzeigen.
+Durch Aktivierung der Option **[!UICONTROL Wert unter dem Tacho anzeigen]** wird der erreichte Wert unter der Grafik angegeben.
 
-Im **[!UICONTROL Aperture ratio]** Feld, das zwischen 0 und 1 liegen muss, können Sie die Blende des Berichts in einem mehr oder weniger vollständigen Kreis bearbeiten. Im obigen Beispiel entspricht der Wert 0,50 einem Halbkreis.
+Das Feld **[!UICONTROL Öffnungsgrad]** muss zwischen 0 und 1 definiert werden und ermöglicht die Anzeige des Berichts in Form eines mehr oder weniger vollständig ausgefüllten Kreises. Im oben stehenden Beispiel entspricht der Wert 0,5 einem halboffenen Kreis.
 
-The **[!UICONTROL Width]** field lets you edit the chart size.
+Über das Feld **[!UICONTROL Breite]** kann die Größe der Grafik eingestellt werden.
 
 ## Interaktion mit der Grafik {#interaction-with-the-chart}
 
-Sie können eine Aktion definieren, wenn der Benutzer auf das Diagramm klickt. Öffnen Sie das **[!UICONTROL Interaction events]** Fenster und wählen Sie die gewünschte Aktion aus.
+Im Fenster **[!UICONTROL Interaktionsereignisse]** können Sie bestimmen, welche Aktion durch einen Klick auf die Grafik ausgelöst wird.
 
 Die möglichen Interaktionstypen und ihre jeweilige Konfiguration werden in [diesem Abschnitt](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) beschrieben.
 
@@ -162,9 +162,9 @@ Die möglichen Interaktionstypen und ihre jeweilige Konfiguration werden in [die
 
 Sie können in den Grafiken Statistiken über die abgerufenen Daten anzeigen.
 
-These statistics are defined via the **[!UICONTROL Series parameters]** section of the **[!UICONTROL Data]** tab.
+Diese Statistiken werden im Bereich **[!UICONTROL Serienparameter]** des Tabs **[!UICONTROL Daten]** definiert.
 
-Um eine neue Statistik zu erstellen, klicken Sie auf das **[!UICONTROL Add]** Symbol und konfigurieren Sie das entsprechende Fenster. Die verfügbaren Berechnungsarten sind nachfolgend beschrieben.
+Um eine neue Statistik zu erstellen, klicken Sie auf das Symbol **[!UICONTROL Hinzufügen]** und konfigurieren Sie das entsprechende Fenster. In der folgenden Grafik werden die möglichen Berechnungsarten abgebildet:
 
 ![](assets/reporting_add_statistics.png)
 
