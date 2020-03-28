@@ -14,13 +14,13 @@ discoiquuid: c5dad561-0708-4b7a-84a0-eb00beff58c6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1719d6ac9643f0b3e9339037cf4d0f209d16340e
 
 ---
 
 
-# Erste Schritte mit der Berichterstellung {#about-adobe-campaign-reporting-tools}
+# Erste Schritte mit Reporting {#about-adobe-campaign-reporting-tools}
 
 Neben den [nativen Berichten](../../reporting/using/about-campaign-built-in-reports.md) ermöglicht es Adobe Campaign, Berichte in unterschiedlichen Kontexten und den verschiedenen Bedürfnissen entsprechend zu erstellen. Die Anwendungsprinzipien und ihre Umsetzung werden im vorliegenden Dokument beschrieben.
 
@@ -30,7 +30,7 @@ Der Export von Daten aus Adobe Campaign ist mithilfe der Datenexport-Aktivität 
 
 Adobe Campaign bietet verschiedene Reporting-Tools:
 
-1. **Integrierte Berichte**: Adobe Campaign bietet eine Reihe von Berichten zu Auslieferungen, Kampagnen, Plattformaktivitäten, optionalen Funktionen usw. Diese Berichte stehen über die verschiedenen Funktionen zur Verfügung, auf die sie sich beziehen. Sie können an Ihre spezifischen Bedürfnisse angepasst werden.
+1. **Native Berichte**: Adobe Campaign bietet eine Berichtserie über Sendungen, Kampagnen, Plattform-Aktivitäten, optionale Funktionalitäten und mehr. Diese Berichte sind jeweils über die Funktionalitäten verfügbar, auf die sie sich beziehen. Sie können Ihren Bedürfnissen entsprechend angepasst werden.
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/about-campaign-built-in-reports.md).
 
