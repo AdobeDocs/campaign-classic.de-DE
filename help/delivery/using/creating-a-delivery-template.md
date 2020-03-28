@@ -14,7 +14,7 @@ discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -24,17 +24,17 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ## Einen bestehenden Versand in eine Vorlage konvertieren {#converting-an-existing-delivery-to-a-template}
 
-Eine Bereitstellung kann für neue wiederholte Übermittlungsaktionen in eine Vorlage konvertiert werden. Um eine Bereitstellung in eine Vorlage zu konvertieren, wählen Sie sie in der Bereitstellungsliste aus, auf die über den **[!UICONTROL Campaign management]** Knoten der Struktur zugegriffen werden kann.
+Sie haben die Möglichkeit, einen existierenden Versand als Basis für wiederkehrende Versandaktionen zu verwenden. Markieren Sie hierfür in der über den Knoten **[!UICONTROL Kampagnenverwaltung > Sendungen]** zugänglichen Versandliste den gewünschten Versand.
 
-Right-click and select **[!UICONTROL Actions > Save as template...]**.
+Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]**.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario.png)
 
-Diese Aktion erstellt eine Bereitstellungsvorlage aus der ausgewählten Bereitstellung. Sie müssen den Ordner eingeben, in dem die Bereitstellung gespeichert wird (im **[!UICONTROL Folder]** Feld), sowie den Ordner, in dem die auf der Grundlage dieser Vorlage erstellten Auslieferungen erstellt werden (im **[!UICONTROL Execution folder]** Feld).
+Geben Sie im Feld **[!UICONTROL Ordner]** an, wo die Vorlage gespeichert werden soll, und im Feld **[!UICONTROL Ausführungsordner]**, wo die auf dieser Vorlage beruhenden Sendungen zu speichern sind.
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-Weitere Informationen zum Konfigurationsmodus finden Sie unter [Verknüpfen der Vorlage mit einer Bereitstellung](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
+Weitere Informationen zum Konfigurationsmodus finden Sie unter [Vorlage einem Versand zuordnen](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## Neue Vorlage erstellen {#creating-a-new-template}
 
