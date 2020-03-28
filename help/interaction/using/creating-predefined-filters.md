@@ -14,7 +14,7 @@ discoiquuid: d47017a3-a342-4758-a700-b8e88aa724f2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 28614a6b0c45deef17d9b3275a16e65bdff4538b
 
 ---
@@ -26,11 +26,11 @@ Vordefinierte Filter erleichtern die Erstellung von auf die Zielgruppe anwendbar
 
 Gehen Sie wie folgt vor, um einen Filter zu erstellen:
 
-1. Gehen Sie zum **[!UICONTROL Administration]** Ordner und wählen Sie **[!UICONTROL Pre-defined offer filters]**.
+1. Markieren Sie im Ordner **[!UICONTROL Administration]** der jeweiligen Umgebung den Knoten **[!UICONTROL Vordefinierte Angebotsfilter]**.
 
    ![](assets/offer_filter_create_005.png)
 
-1. Klicks **[!UICONTROL New]**.
+1. Klicken Sie auf **[!UICONTROL Neu]**.
 
    ![](assets/offer_filter_create_001.png)
 
@@ -46,10 +46,10 @@ Gehen Sie wie folgt vor, um einen Filter zu erstellen:
 
    ![](assets/offer_filter_create_004.png)
 
-1. Click **[!UICONTROL Preview]** to view the result of the filter.
+1. Durch Klick auf den **[!UICONTROL Vorschau]**-Tab können Sie das Ergebnis des Filters prüfen.
 
    ![](assets/offer_filter_create_006.png)
 
 **Verwandtes Thema**
 
-* [Häufig verwendete Abfragen als bearbeitbare vordefinierte Filter speichern](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)
+* [Häufig verwendete Abfragen als bearbeitbare vordefinierte Filter speichern](https://helpx.adobe.com/de/campaign/kb/simplifying-campaign-management-acc.html#Savefrequentlyusedqueriesaseditablepredefinedfilters)
