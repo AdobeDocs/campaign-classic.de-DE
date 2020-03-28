@@ -14,7 +14,7 @@ discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 # Datei-Wächter{#file-collector}
 
-Der **Dateisammler** überwacht den Eingang einer oder mehrerer Dateien in einem Verzeichnis und aktiviert den Übergang für jede empfangene Datei. Für jedes Ereignis enthält eine **[!UICONTROL filename]** Variable den vollständigen Namen der empfangenen Datei. Die gesammelten Dateien werden zu Archivierungszwecken in ein anderes Verzeichnis verschoben, um sicherzustellen, dass sie nur einmal gezählt werden.
+Die **Datei-Wächter-Aktivität** überwacht ein Verzeichnis und aktiviert ihre Transition bei jedem neuen Eingang von Dateien. Für jedes Ereignis enthält eine **[!UICONTROL filename]**-Variable den vollständigen Namen der eingegangenen Datei. Die abgerufenen Dateien werden zu Verlaufszwecken und damit sie nur einmal berücksichtigt werden in ein anderes Verzeichnis verschoben.
 
 Standardmäßig ist der Datei-Wächter eine persistente Aufgabe, die zu den in der Planung definierten Zeitpunkten das Verzeichnis auf das Vorhandensein von Dateien prüft.
 
@@ -30,41 +30,41 @@ Die Dateien müssen sich auf dem Server befinden, auf dem das wfserver-Modul des
 
 ## Eigenschaften {#properties}
 
-Auf der ersten Registerkarte der **[!UICONTROL File collector]** Aktivität können Sie den Quellordner auswählen und bei Bedarf die erfassten Dateien filtern. Die anderen Registerkarten sind unter [Inbound Emails](../../workflow/using/inbound-emails.md) (**[!UICONTROL Schedule]** und **[!UICONTROL Expiry]** Registerkarten) ausführlich beschrieben.
+Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie den Quellordner auswählen und die erfassten Dateien bei Bedarf filtern. Die anderen Tabs werden unter [E-Mail-Empfang](../../workflow/using/inbound-emails.md) (auf den Tabs **[!UICONTROL Planung]** und **[!UICONTROL Ablauf]**) ausführlich beschrieben.
 
 ![](assets/file_collect_edit.png)
 
 1. **Abruf der Dateien**
 
-   * **[!UICONTROL Directory]**
+   * **[!UICONTROL Verzeichnis]**
 
       Angabe des die abzurufenden Dateien enthaltenden Verzeichnisses. Das Verzeichnis muss zuvor auf dem Server erstellt worden sein. Wenn es nicht existiert, wird ein Fehler erzeugt.
 
    * **[!UICONTROL Filter]**
 
-      Es werden nur Dateien berücksichtigt, die diesem Filter entsprechen. Die anderen Dateien im Ordner werden ignoriert. Wenn der Filter leer ist, werden alle Dateien im Ordner berücksichtigt. Filterbeispiele: ***.zip**, **import-*.txt**.
+      Nur die Dateien, die den angegebenen Filterkriterien entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn kein Filter definiert wurde, werden alle im Verzeichnis enthaltenen Dateien abgerufen. Filterbeispiele: ***.zip**, **import-*.txt**.
 
-   * **[!UICONTROL Stop as soon as a file has been processed]**
+   * **[!UICONTROL Beenden, sobald eine Datei bearbeitet wurde]**
 
       Wenn diese Option angekreuzt wird, ist die Aufgabe abgeschlossen, sobald die erste Datei empfangen wurde. In diesem Fall wird nur eine Datei berücksichtigt, auch wenn das Verzeichnis mehrere, den Kriterien entsprechende Dateien enthält. Diese Option stellt somit sicher, dass nur ein Ereignis übermittelt wird. Die berücksichtigte Datei ist die erste in alphabetischer Reihenfolge.
 
-      For an unscheduled activity, if no file matching the filter is found in the specified directory, and if the **[!UICONTROL Process file nonexistence]** option is not enabled, an error will be raised.
+      Im Falle einer Aktivität, für die keine Planung definiert wurde, wird ein Fehler erzeugt, wenn keine Datei den Filterkriterien entspricht und die Option **[!UICONTROL Fehlen von Dateien bearbeiten]** nicht aktiviert wurde.
 
-   * **[!UICONTROL Execution schedule]**
+   * **[!UICONTROL Planung]**
 
-      Determines the frequency of the file presence check via the parameters of the **[!UICONTROL Schedule]** tab.
+      Definiert mithilfe der im Tab **[!UICONTROL Planung]** angegebenen Parameter die Häufigkeit, mit der das Verzeichnis auf die Existenz von Dateien überprüft wird.
 
 1. **Umgang mit Fehlern**
 
    Zwei Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Process file nonexistence]**
+   * **[!UICONTROL Fehlen von Dateien bearbeiten]**
 
       Bei Ankreuzen dieser Option erscheint eine spezifische Transition, die immer dann aktiviert wird, wenn keine dem Filter entsprechende Datei im angegebenen Verzeichnis vorhanden ist.
 
       Wenn für die Aufgabe keine Planung definiert wurde, wird diese Transition nur einmal aktiviert.
 
-   * **[!UICONTROL Processing errors]**
+   * **[!UICONTROL Fehler verarbeiten]**
 
       Bei Ankreuzen dieser Option erscheint eine spezifische Transition, die immer dann aktiviert wird, wenn ein Fehler auftritt. In diesem Fall wird die Ausführung des Workflows nicht ausgesetzt, sondern fortgeführt.
 
@@ -74,9 +74,9 @@ Auf der ersten Registerkarte der **[!UICONTROL File collector]** Aktivität kön
 
 1. **Verlauf**
 
-   Gehen Sie wie folgt **[!UICONTROL File historization]** vor: [Webdownload](../../workflow/using/web-download.md).
+   Informationen zum Schritt **[!UICONTROL Verlaufserstellung]** finden Sie unter ](../../workflow/using/web-download.md)HTTP-Übertragung[.
 
-Die Dateiverarbeitungsreihenfolge kann nicht bestimmt werden. Um einen Satz Dateien nacheinander zu verarbeiten, verwenden Sie die **[!UICONTROL Stop as soon as a file has been processed]** Option und erstellen Sie eine Schleife. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Mit der **[!UICONTROL Process file nonexistence]** Option können Sie die Iteration beenden.
+Die Reihenfolge der Dateiverarbeitung kann nicht beeinflusst werden. Um eine Reihe von Dateien schrittweise zu verarbeiten, kann die Option **[!UICONTROL Beenden, sobald eine Datei bearbeitet wurde]** in Verbindung mit einer Schlaufe verwendet werden. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die Option **[!UICONTROL Fehlen von Dateien bearbeiten]** beendet die Schlaufe.
 
 ![](assets/file_collect_loop.png)
 
