@@ -14,7 +14,7 @@ discoiquuid: 4113c3fe-a279-4fe1-be89-ea43c96edc34
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -44,21 +44,21 @@ Gehen Sie zur Erstellung des A/B-Tests wie folgt vor:
 
 ## 1. Schritt: Erstellung eines Zielgruppen-Workflows {#step-1--creating-a-targeting-workflow}
 
-Sie müssen Ihren Workflow auf der **[!UICONTROL Targeting and Workflows]** Registerkarte einer Kampagne erstellen. Er besteht aus einer **[!UICONTROL Query]** Aktivität, einer **[!UICONTROL Split]** Aktivität, die mit zwei **[!UICONTROL Email delivery]** Aktivitäten verbunden ist, einer **[!UICONTROL Wait]** Aktivität, einer **[!UICONTROL JavaScript code]** Aktivität und einer **[!UICONTROL Delivery]** Aktivität.
+Zielgruppen-Workflows werden im Rahmen von Kampagnen im Tab **[!UICONTROL Zielbestimmungen und Workflows]** erstellt. Im vorliegenden Beispiel enthält der Workflow eine **[!UICONTROL Abfrage]**, eine **[!UICONTROL Aufspaltung]** mit je einem angeschlossenen **[!UICONTROL E-Mail-Versand]**, eine **[!UICONTROL Warten]**-Aktivität, eine **[!UICONTROL JavaScript-Code]**-Aktivität und einen **[!UICONTROL Versand]**.
 
 1. Öffnen Sie eine existierende Kampagne oder erstellen Sie eine neue (siehe diesen [Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
 
    ![](assets/use_case_abtesting_targetwkfl_001.png)
 
-1. Go to the **[!UICONTROL Targeting and Workflows]** tab.
+1. Gehen Sie in den Tab **[!UICONTROL Zielbestimmungen und Workflows]**.
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Change the label of the existing workflow or click **[!UICONTROL Add]** to create a new one (for more on this, refer to this [section](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population)).
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen neuen Workflow zu erstellen oder verwenden Sie den Standard-Workflow und benennen Sie ihn. Lesen Sie diesbezüglich auch diesen [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
-1. Verwenden Sie die Maus, um Aktivitäten in das Workflow-Diagramm zu ziehen, darunter eine **[!UICONTROL Query]** (**[!UICONTROL Target]** Registerkarte), eine **[!UICONTROL Split]** (**[!UICONTROL Target]** Registerkarte), zwei **[!UICONTROL Email deliveries]** (**[!UICONTROL Deliveries]** Registerkarte), eine **[!UICONTROL Wait]** Aktivität (**[!UICONTROL Flow Control]** Registerkarte), eine **[!UICONTROL JavaScript code]** Aktivität (Registerkarte) und eine-Aktivität (Registerkarte &quot;**[!UICONTROL Actions]** **[!UICONTROL Delivery]****[!UICONTROL Actions]** &quot;).
+1. Ziehen Sie mit der Maus die Aktivitäten in das Workflow-Diagramm und zwar aus dem Tab **[!UICONTROL Zielgruppenbestimmung]** eine **[!UICONTROL Abfrage]** und eine **[!UICONTROL Aufspaltung]**, aus dem Tab **[!UICONTROL Sendungen]** zwei **[!UICONTROL E-Mail-Versand]**-Aktivitäten, aus dem Tab **[!UICONTROL Steuerung]** eine **[!UICONTROL Warten]**-Aktivität und aus dem Tab **[!UICONTROL Aktionen]** eine **[!UICONTROL JavaScript-Code]**-Aktivität sowie einen **[!UICONTROL Versand]**.********
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
@@ -66,15 +66,15 @@ Sie müssen Ihren Workflow auf der **[!UICONTROL Targeting and Workflows]** Regi
 
 ### Konfiguration der Abfrage {#configuring-the-query-activity}
 
-* Double-click the **[!UICONTROL Query]** activity.
+* Öffnen Sie die **[!UICONTROL Abfrage]** per Doppelklick.
 
    ![](assets/use_case_abtesting_createrecipients_001.png)
 
-* Click the **[!UICONTROL Edit query]** link and select the recipients you want to target.
+* Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten]** und wählen Sie die Empfänger aus, die die Zielgruppe enthalten soll.
 
    ![](assets/use_case_abtesting_createrecipients_002.png)
 
-* Verknüpfen Sie die **[!UICONTROL Query]** Aktivität mit der **[!UICONTROL Split]** Aktivität.
+* Verbinden Sie die **[!UICONTROL Abfrage]** mit der **[!UICONTROL Aufspaltung]**.
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
@@ -84,7 +84,7 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
 1. Erstellung der Testpopulation A:
 
-   * Double-click the **[!UICONTROL Split]** activity.
+   * Öffnen Sie die **[!UICONTROL Aufspaltung]** per Doppelklick.
 
       ![](assets/use_case_abtesting_createrecipients_004.png)
 
@@ -92,21 +92,21 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
       ![](assets/use_case_abtesting_createrecipients_005.png)
 
-   * Select the **[!UICONTROL Limit the selected records]** option.
+   * Aktivieren Sie die Option **[!UICONTROL Anzahl von Datensätzen begrenzen]**.
 
       ![](assets/use_case_abtesting_createrecipients_006.png)
 
-   * Klicken Sie auf den **[!UICONTROL Edit]** Link, wählen Sie **[!UICONTROL Activate random sampling]** und klicken Sie auf **[!UICONTROL Next]**.
+   * Klicken Sie auf den Link **[!UICONTROL Bearbeiten]**, kreuzen Sie **[!UICONTROL Zufallsauswahl aktivieren]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
       ![](assets/use_case_abtesting_createrecipients_007.png)
 
-   * Set the threshold to 10%, then click **[!UICONTROL Finish]**.
+   * Begrenzen Sie die Testpopulation auf 10 % und klicken Sie auf **[!UICONTROL Beenden]**.
 
       ![](assets/use_case_abtesting_createrecipients_008.png)
 
 1. Erstellung der Testpopulation B:
 
-   * Click **[!UICONTROL Add]** to create a new tab for population B.
+   * Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen zweiten Tab für die Testpopulation B zu erstellen.
 
       ![](assets/use_case_abtesting_createrecipients_009.png)
 
@@ -116,11 +116,11 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
 1. Erstellung der verbleibenden Population:
 
-   * Go to the **[!UICONTROL General]** tab.
+   * Gehen Sie in den **[!UICONTROL Allgemein]**-Tab.
 
       ![](assets/use_case_abtesting_createrecipients_011.png)
 
-   * Auswählen **[!UICONTROL Generate complement]**.
+   * Aktivieren Sie die Option **[!UICONTROL Komplement erzeugen]**.
 
       ![](assets/use_case_abtesting_createrecipients_012.png)
 
@@ -130,10 +130,10 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
 ## 3. Schritt: Erstellung von zwei Versandvorlagen {#step-3--creating-two-delivery-templates}
 
-Wir möchten nun zwei Bereitstellungsvorlagen erstellen. Jede Vorlage wird in einer **[!UICONTROL Email delivery]** Aktivität referenziert, die mit der **[!UICONTROL Split]** Aktivität verknüpft ist. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md).
+Erstellen Sie nun zwei Versandvorlagen, die jeweils in einem an die **[!UICONTROL Aufspaltung]** angeschlossenen **[!UICONTROL E-Mail-Versand]** verwendet werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md). Gehen Sie wie folgt vor:
 
-1. Wechseln Sie zum **[!UICONTROL Resources > Delivery template]** Ordner.
-1. Duplicate the **[!UICONTROL Email]** delivery template.
+1. Gehen Sie im Navigationsbaum in den Knoten **[!UICONTROL Ressourcen > Versandvorlagen]**.
+1. Duplizieren Sie die Vorlage **[!UICONTROL E-Mail]**.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
 
@@ -147,9 +147,9 @@ Wir möchten nun zwei Bereitstellungsvorlagen erstellen. Jede Vorlage wird in ei
 
 ## 4. Schritt: Konfiguration der Sendungen im Workflow {#step-4--configuring-the-deliveries-in-the-workflow}
 
-Der nächste Schritt ist die Konfiguration der Auslieferungen. Sie sind für die drei Bevölkerungsgruppen bestimmt, die in der vorherigen Phase gebildet wurden: [Schritt 2: Konfigurieren von Populationsbeispielen](#step-2--configuring-population-samples). Die ersten beiden Auslieferungen ermöglichen es Ihnen, verschiedene Inhalte an die Gruppe A und B zu senden. Die dritte Lieferung ist für die Bevölkerung bestimmt, die weder A noch B erhalten hat. Der Inhalt wird durch ein Skript berechnet und ist entweder mit A oder B identisch, je nachdem, welche die höchste offene Rate erzielt hat. Wir müssen eine Wartezeit für die dritte Lieferung konfigurieren, um das Ergebnis der Lieferungen A und B herauszufinden. Deshalb beinhaltet die dritte Lieferung auch eine **[!UICONTROL Wait]** Aktivität.
+Der nächste Schritt besteht aus der Konfiguration der Sendungen. Sie sind für die drei Populationen bestimmt, die im vorherigen Schritt [Schritt 2: Konfiguration der Testpopulation](#step-2--configuring-population-samples) erstellt wurden. Die ersten beiden Sendungen ermöglichen es Ihnen, verschiedene Inhalte an Population A und B zu senden. Die dritte Sendung ist für jene Population bestimmt, die weder A noch B erhalten hat. Der Inhalt wird durch ein Skript berechnet und ist entweder mit A oder B identisch, je nachdem, welcher Versand die höchste Öffnungsrate erzielt hat. Wir müssen eine Wartezeit für die dritte Sendung konfigurieren, um das Ergebnis der Sendungen A und B zu ermitteln. Aus diesem Grund beinhaltet die dritte Sendung eine Aktivität vom Typ **[!UICONTROL Warten]**.
 
-1. Go to the **[!UICONTROL Split]** activity and link the transition destined for population A to one of the email deliveries already in the workflow.
+1. Verbinden Sie ausgehend von der Aufspaltung die Transition der Population A mit einer der **[!UICONTROL E-Mail-Versand]**-Aktivitäten.
 
    ![](assets/use_case_abtesting_createdeliveries_001.png)
 
@@ -158,11 +158,11 @@ Der nächste Schritt ist die Konfiguration der Auslieferungen. Sie sind für die
 
    ![](assets/use_case_abtesting_createdeliveries_003.png)
 
-1. Click **[!UICONTROL Continue]** to view the delivery, then save it.
+1. Klicken Sie auf **[!UICONTROL Fortfahren]** und anschließend auf .
 
    ![](assets/use_case_abtesting_createdeliveries_002.png)
 
-1. Link the transition of the **[!UICONTROL Split]** activity destined for population B to the second email delivery.
+1. Verbinden Sie ausgehend von der Aufspaltung die Transition der Population B mit der zweiten **[!UICONTROL E-Mail-Versand]**-Aktivität.
 
    ![](assets/use_case_abtesting_createdeliveries_004.png)
 
@@ -170,15 +170,15 @@ Der nächste Schritt ist die Konfiguration der Auslieferungen. Sie sind für die
 
    ![](assets/use_case_abtesting_createdeliveries_005.png)
 
-1. Link the transition destined for the remaining population to the **[!UICONTROL Wait]** activity.
+1. Verbinden Sie ausgehend von der Aufspaltung die Transition der verbleibenden Population mit der **[!UICONTROL Warten]**-Aktivität.
 
    ![](assets/use_case_abtesting_createdeliveries_006.png)
 
-1. Open the **[!UICONTROL Wait]** activity and configure a 5-day waiting period.
+1. Öffnen Sie die **[!UICONTROL Warten]**-Aktivität und legen Sie die Wartezeit auf 5 Tage fest.
 
    ![](assets/use_case_abtesting_createdeliveries_007.png)
 
-1. Verknüpfen Sie die **[!UICONTROL Wait]** Aktivität mit der **[!UICONTROL JavaScript code]** Aktivität.
+1. Verbinden Sie die **[!UICONTROL Warten]**-Aktivität mit der **[!UICONTROL JavaScript-Code]**-Aktivität.
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
@@ -188,7 +188,7 @@ Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird
 
 ### Script-Beispiel {#example-of-a-script}
 
-Das folgende Skript kann wie im Targeting-Arbeitsablauf verwendet werden. For more on this, refer to [Implementation](#implementation).
+Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden. Weitere Informationen hierzu finden Sie im Abschnitt [Implementierung](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -234,16 +234,16 @@ Das folgende Skript kann wie im Targeting-Arbeitsablauf verwendet werden. For mo
    vars.deliveryId = delivery.id
 ```
 
-Eine ausführliche Erläuterung des Skripts finden Sie unter [Details des Skripts](#details-of-the-script).
+Eine ausführliche Erläuterung des Scripts finden Sie unter [Script-Details](#details-of-the-script).
 
 ### Umsetzung {#implementation}
 
-1. Öffnen Sie Ihre **[!UICONTROL JavaScript code]** Aktivität.
-1. Kopieren Sie das unter [Beispiel eines Skripts](#example-of-a-script) angebotene Skript in das **[!UICONTROL JavaScript code]** Fenster.
+1. Öffnen Sie die **[!UICONTROL JavaScript-Code]**-Aktivität.
+1. Kopieren Sie das in [Script-Beispiel](#example-of-a-script) angebotene Script in das Fenster **[!UICONTROL JavaScript-Code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
-1. In the **[!UICONTROL Label]** field, enter the name of the script, i.e.
+1. Geben Sie im **[!UICONTROL Titel]**-Feld den Script-Titel ein, d. h.
 
    ```
    <%= vars.deliveryId %>
@@ -251,14 +251,14 @@ Eine ausführliche Erläuterung des Skripts finden Sie unter [Details des Skript
 
    ![](assets/use_case_abtesting_configscript_003.png)
 
-1. Schließen Sie die **[!UICONTROL JavaScript code]** Aktivität.
+1. Schließen Sie die **[!UICONTROL JavaScript-Code]**-Aktivität.
 1. Speichern Sie den Workflow.
 
 ### Script-Details {#details-of-the-script}
 
 Im Folgenden werden die verschiedenen Script-Abschnitte und deren Funktionsweise erläutert.
 
-* Der erste Teil des Skripts ist eine Abfrage. The **queryDef** command lets you recover from the **NmsDelivery** table the deliveries created by executing the targeting workflow and to sort them based on their estimated rate of opens, then the information from the delivery with the highest rate of opens is recovered.
+* Der erste Abschnitt des Scripts ist eine Abfrage. Mit dem **queryDef**-Befehl werden aus der Tabelle **NmsDelivery** die durch die Ausführung des Workflows erstellten Sendungen abgerufen und nach ihren geschätzten Öffnungsraten geordnet. Im Anschluss werden die Informationen des Versands abgerufen, der die beste Öffnungsrate erzielt hat.
 
    ```
    // query the database to find the winner (best open rate)
@@ -329,30 +329,30 @@ Im Folgenden werden die verschiedenen Script-Abschnitte und deren Funktionsweise
 
 Im zuvor dargestellten Beispiel wird die endgültige Version anhand der Öffnungsraten der Testversionen bestimmt. Es besteht jedoch die Möglichkeit, andere Kriterien zu verwenden und das Script entsprechend anzupassen:
 
-* Best click throughput: `[indicators/@recipientClickRatio]`,
+* Höchste Klickrate: `[indicators/@recipientClickRatio]`,
 * Höchste Reaktionsrate (Öffnung der E-Mail und Klicks in der Nachricht): `[indicators/@reactivity]`,
-* Lowest complaint rate: `[indicators/@refusedRatio]` (use the false value for the sortDesc attribute),
-* Highest conversion rate: `[indicators/@transactionRatio]`,
+* Niedrigste Beschwerderate: `[indicators/@refusedRatio]` (Attribut sortDesc auf „false“ setzen),
+* Höchste Konversionsrate: `[indicators/@transactionRatio]`,
 * Höchste Anzahl an besuchten Webseiten nach Erhalt der Nachricht: `[indicators/@totalWebPage]`,
-* Lowest unsubscription rate: `[indicators/@optOutRatio]`,
-* Transaction amount: `[indicators/@amount]`.
+* Niedrigste Abmelderate: `[indicators/@optOutRatio]`,
+* Höchster Gesamtumsatz infolge des Erhalts der Nachricht: `[indicators/@amount]`.
 
 ## 6. Schritt - Ausgabeformat bestimmen {#step-6--defining-the-final-delivery}
 
 Nachdem das Script zur Ermittlung des Gewinners des A/B-Tests erstellt wurde, können Sie die Parameter des endgültigen Versands definieren.
 
-1. Verbinden Sie die **[!UICONTROL JavaScript code]** Aktivität mit der verbleibenden **[!UICONTROL Delivery]** Aktivität.
-1. Open the **[!UICONTROL Delivery]** activity.
-1. Deaktivieren Sie die **[!UICONTROL Generate an outbound transition]** Option, um den Workflow mit dieser Aktivität abzuschließen.
+1. Verbinden Sie die Aktivität **[!UICONTROL JavaScript-Code]** mit der restlichen **[!UICONTROL Versand]**-Aktivität.
+1. Öffnen Sie die **[!UICONTROL Versand]**-Aktivität.
+1. Deaktivieren Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]**, um den Workflow mit dieser Aktivität abzuschließen.
 1. Lassen Sie die Standardwerte der anderen Optionen unverändert.
 
    ![](assets/ab_test_final_delivery.png)
 
-By preparing the delivery specified in the transition (defined via the **[!UICONTROL Javascript Code]** activity), you will be then able to approve it and to start the sending, as described in the next step.
+Durch die Vorbereitung des in der Transition spezifizierten Versands (definiert durch die **[!UICONTROL Javascript-Code]**-Aktivität), können Sie sie im Anschluss validieren und den Versand starten, wie im nächsten Schritt beschrieben wird.
 
 ## 7. Schritt: Start des Workflows {#step-7--starting-the-workflow}
 
-1. Click **[!UICONTROL Start]** the workflow.
+1. Klicken Sie in der Workflow-Symbolleiste auf **[!UICONTROL Start]**.
 
    ![](assets/use_case_abtesting_startwkfl_001.png)
 
@@ -370,7 +370,7 @@ By preparing the delivery specified in the transition (defined via the **[!UICON
 
 Nach Verarbeitung der Testsendungen besteht die Möglichkeit im Kampagnen-Dashboard zu prüfen, welche Empfänger welche Version erhalten und ob sie die Sendungen geöffnet haben. Klicken Sie auf den Link einer der Sendungen:
 
-* To find out which recipients have been targeted, open a delivery via the campaign dashboard and click the **[!UICONTROL Delivery]** tab.
+* Im **[!UICONTROL Versand]**-Tab wird angezeigt, welche Empfänger den Versand erhalten haben.
 
    ![](assets/use_case_abtesting_analysis_001.png)
 
