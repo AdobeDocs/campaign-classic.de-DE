@@ -14,7 +14,7 @@ discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -24,15 +24,15 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Filterregeln ermöglichen es, auszuschließende Nachrichten nach in einer Abfrage definierten Kriterien zu bestimmen. Diese Regeln werden mit einer Zielgruppendimension verknüpft.
 
-Filtering rules can be linked to other types of rules (control, pressure, etc.) in typologies, or grouped in a dedicated **Filtering** typology. Weitere Informationen finden Sie unter [Erstellen und Verwenden einer Filtertypologie](#creating-and-using-a-filtering-typology).
+Filterregeln können mit anderen Regeltypen (Kontrolle, Druck usw.) in Typologien kombiniert oder in einer spezifischen **Filtertypologie** zusammengefasst werden. Weitere Informationen finden Sie unter [Filtertypologien erstellen und anwenden](#creating-and-using-a-filtering-typology).
 
-## Filterregel erstellen {#creating-a-filtering-rule}
+## Filterregel erstellen  {#creating-a-filtering-rule}
 
 Sie können beispielsweise die Abonnenten Ihrer Newsletter filtern, um keine Nachrichten an minderjährige Empfänger zu senden.
 
 Gehen Sie wie folgt vor:
 
-1. Create a **[!UICONTROL Filtering]** typology rule applicable to all communication channels.
+1. Erstellen Sie eine Typologieregel vom Typ **[!UICONTROL Filter]**, die sich auf alle Kommunikationskanäle anwenden lässt.
 
    ![](assets/campaign_opt_create_filter_01.png)
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/campaign_opt_create_filter_02.png)
 
-1. Erstellen Sie den Filter mithilfe des **[!UICONTROL Edit the query from the targeting dimension...]** Links.
+1. Erstellen Sie den Filter über den Link **[!UICONTROL Abfrage von der Zieldimension ausgehend bearbeiten]**.
 
    ![](assets/campaign_opt_create_filter_03.png)
 
@@ -56,7 +56,7 @@ Bei Anwendung dieser Regel in einem Versand werden minderjährige Abonnenten aut
 
 Die Anwendungskriterien einer Filterregel können dem Versand oder dem verknüpften Versandentwurf entsprechend eingeschränkt werden.
 
-To do this, go to the **[!UICONTROL General]** tab of the typology rule, select the type of restriction to apply and create the filter, as shown below:
+Gehen Sie hierzu in den Tab **[!UICONTROL Allgemein]** der Typologieregel, wählen Sie das Anwendungskriterium aus und erstellen Sie den Filter wie nachfolgend dargestellt:
 
 ![](assets/campaign_opt_create_filter_06.png)
 
@@ -64,19 +64,19 @@ In diesem Fall wird die Regel nur auf die Sendungen angewandt, die den Kriterien
 
 >[!NOTE]
 >
->Typologies and filtering rules can be used in a workflow, in the **[!UICONTROL Delivery outline]** activity. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/delivery-outline.md).
+>Typologien und Filterregeln können auch im Rahmen eines Workflows über die Aktivität **[!UICONTROL Versandentwurf]** verwendet werden. Näheres hierzu finden Sie in [diesem Abschnitt](../../workflow/using/delivery-outline.md).
 
 ## Filtertypologien erstellen und anwenden {#creating-and-using-a-filtering-typology}
 
-You can create **[!UICONTROL Filtering]** typologies: they only contain filtering rules.
+Sie haben die Möglichkeit, Typologien zu erstellen, die nur Filterregeln enthalten.****
 
 ![](assets/campaign_opt_create_typo_filtering.png)
 
-These specific typologies can be linked to a delivery when the target is selected: in the delivery wizard, click the **[!UICONTROL To]** link, then click the **[!UICONTROL Exclusions]** tab.
+Diese **[!UICONTROL Filtertypologien]** können bei der Zielgruppenbestimmung einem Versand zugeordnet werden: Klicken Sie im Versandassistent auf den Link **[!UICONTROL An]**, dann auf den Tab .
 
 ![](assets/campaign_opt_apply_typo_filtering.png)
 
-Wählen Sie dann die Filtertypologie aus, die auf die Bereitstellung angewendet werden soll. Klicken Sie dazu auf die **[!UICONTROL Add]** Schaltfläche und wählen Sie die anzuwendenden Typologien aus.
+Wählen Sie anschließend die beim Versand anzuwendende(n) Filtertypologie(n). Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die jeweilige Typologie aus.
 
 Im unteren Bereich des gleichen Tabs können Sie zudem einzelne Filterregeln hinzufügen, die nicht in einer Typologie zusammengefasst sind.
 
@@ -90,9 +90,9 @@ Im unteren Bereich des gleichen Tabs können Sie zudem einzelne Filterregeln hin
 
 
 
-## Standardmäßige Ausschlussregeln für Zustellbarkeit {#default-deliverability-exclusion-rules}
+## Standardmäßige Ausschlussregeln für Zustellbarkeit  {#default-deliverability-exclusion-rules}
 
-Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Exclude addresses]** ( **[!UICONTROL addressExclusions]** ) und **[!UICONTROL Exclude domains]** ( **[!UICONTROL domainExclusions]** ). Während der E-Mail-Analyse vergleichen diese Regeln die E-Mail-Adressen der Empfänger mit den unzulässigen Adressen oder Domain-Namen aus einer verschlüsselten globalen Unterdrückungsliste, die in der Zustellbarkeitsinstanz verwaltet wird. Im Falle einer Übereinstimmung wird die Nachricht nicht an den jeweiligen Empfänger gesendet.
+Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Ausschluss der Adressen]** (**[!UICONTROL addressExclusions]**) und **[!UICONTROL Ausschluss der Domains]** (**[!UICONTROL domainExclusions]**). Während der E-Mail-Analyse werden die E-Mail-Adressen der Empfänger anhand dieser Regeln mit den verbotenen Adressen oder Domain-Namen in einer verschlüsselten globalen in der Versandinstanz verwalteten Unterdrückungsliste verglichen. Wenn es eine Übereinstimmung gibt, wird die Nachricht nicht an den entsprechenden Empfänger gesendet.
 
 Auf diese Weise soll Blacklisting aufgrund von schädlichen Aktivitäten, insbesondere durch die Verwendung von Spamtraps, vermieden werden. Wenn beispielsweise für die Anmeldung über ein Webformular eine Spamtrap verwendet wird, wird automatisch eine Bestätigungs-E-Mail an diese Spamtrap gesendet. Als Folge davon wird Ihre Adresse automatisch auf die Blacklist gesetzt.
 
