@@ -14,7 +14,7 @@ discoiquuid: 41bcfe67-b5d6-4ee6-9f8a-6a7a208e2036
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -28,7 +28,7 @@ Im Editor werden der Titel und die Wartezeit angegeben, wie unten abgebildet:
 
 ![](assets/edit_wait.png)
 
-In the **[!UICONTROL Duration]** field, the value can be expressed in the unit of your choice: (according to the operator&#39;s regional settings):
+Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Benutzers nicht anders angegeben, folgende Einheiten verwendet werden:
 
 * **s** für Sekunden, **m** für Minuten, **h** für Stunden, **d** für Tage und **y** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt.
 
