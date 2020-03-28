@@ -14,7 +14,7 @@ discoiquuid: efe09c66-b74b-48f0-9042-5da4342e014e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
 
 ---
@@ -48,11 +48,11 @@ Gehen Sie zur Erstellung des Workflows wie folgt vor:
 
 1. Fügen Sie zur **Nein**-Verzweigung die Aktivität **Ende** hinzu, damit nichts ausgeführt wird, falls der Workflow bereits ausgeführt wird.
 1. Fügen Sie die gewünschten Aktivitäten zur **Ja**-Verzweigung hinzu. Für unser Beispiel sind dies die Aktivitäten **Abfrage** und **Daten-Update**.
-1. Öffnen Sie die erste Aktivität und fügen Sie dann den Befehl **instance.vars.isRunning = true** auf der **[!UICONTROL Advanced]** Registerkarte hinzu. Auf diese Weise wird die Instanzvariable als ausgeführt eingestellt.
+1. Öffnen Sie die erste Aktivität und fügen Sie den Befehl **instance.vars.isRunning = true** auf dem Tab **[!UICONTROL Erweitert]** hinzu. Auf diese Weise wird die Instanzvariable auf „wird ausgeführt“ gesetzt.
 
    ![](assets/uc_dataupdate_query.png)
 
-1. Add an **End** activity at the end of the **[!UICONTROL Yes]** fork, then add the **instance.vars.isRunning = false** command in the **[!UICONTROL Advanced]** tab.
+1. Fügen Sie am Ende der **[!UICONTROL Ja]**-Verzweigung eine **Ende**-Aktivität an und geben Sie danach den Befehl **instance.vars.isRunning = false** im Tab **[!UICONTROL Erweitert]** ein.
 
    Dadurch wird keine Aktion aufgeführt, solange der Workflow ausgeführt wird.
 
