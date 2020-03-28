@@ -14,7 +14,7 @@ discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 # Webanwendung tracken{#tracking-a-web-application}
 
-Mit Adobe Campaign können Sie Besuche auf Webseiten von Webanwendungen verfolgen und messen, indem Sie Tracking-Tags einfügen. Diese Funktion kann für alle Webanwendungstypen verwendet werden (Formulare, Online-Umfragen, mit DCE erstellte Webseiten usw.).
+Mit Adobe Campaign können Sie Besuche auf Seiten von Webanwendungen verfolgen und messen, indem Sie Tracking-Tags einfügen. Diese Funktion kann für alle Webanwendungstypen verwendet werden (Formulare, Online-Umfragen, mit DCE erstellte Webseiten usw.).
 
 Auf diese Weise können Sie mehrere Navigationspfade definieren und ihren Erfolg bewerten. Diese Daten sind in den Berichten einer jeden Anwendung verfügbar.
 
@@ -39,17 +39,17 @@ Die wichtigsten Verbesserungen in dieser Version sind:
 
    Die wichtigsten Indikatoren sind:
 
-   * **Konversionsrate**: Anzahl der Personen, die alle Stufen eines Navigationspfads angezeigt haben.
-   * **Absprungrate**: Anzahl der Personen, die nur den ersten Schritt angezeigt haben
-   * **Umrechnungstunnel**: Verlustrate zwischen den einzelnen Schritten.
-   In addition, a **Sector** type chart shows the population according to its source.
+   * **Konvertierungsrate**: Anzahl der Personen, die alle Schritte eines Vorgangs durchlaufen haben.
+   * **Bounce-Rate**: Anzahl der Personen, für die nur der erste Schritt angezeigt wurde.
+   * **Konvertierungstunnel:** Verlustrate von einem Schritt zum nächsten.
+   Zusätzlich wird in einer **Sektorgrafik** die Population entsprechend ihrer Herkunft dargestellt.
 
-## Identifizieren der Traffic-Quelle {#identifying-the-traffic-source}
+## Traffic-Herkunft identifizieren {#identifying-the-traffic-source}
 
-Mit zwei verschiedenen Modi können Sie identifizieren, woher der Besucher beim Zugriff auf eine Webanwendung kommt:
+Es können zwei verschiedene Modi verwendet werden, um festzustellen, woher der Besucher beim Zugriff auf eine Webanwendung kommt:
 
-1. Senden einer bestimmten Bereitstellung, um Zugriff auf die Webseiten der Webanwendung zu gewähren: in diesem Fall ist die Traffic-Quelle diese Bereitstellung,
-1. Verknüpfen der Webanwendung mit einer dedizierten Traffic-Quelle: in diesem Fall muss es sich um eine externe &quot;Traffic-Quelle&quot;handeln. Sie kann aus den Webanwendungseigenschaften oder aus der Zielzuordnung ausgewählt werden.
+1. Senden einer speziellen Nachricht, in der Sie ihm Zugriff auf die Webanwendungsseiten gewähren: In diesem Fall ist die Traffic-Herkunft dieser Versand.
+1. Verknüpfen der Webanwendung mit einer bestimmten Traffic-Herkunft: In diesem Fall muss es sich um eine externe „Traffic-Herkunft“ handeln. Sie kann aus den Eigenschaften der Webanwendung oder dem Zielgruppen-Mapping ausgewählt werden.
 
    ![](assets/trackers_6.png)
 
@@ -63,11 +63,11 @@ Um die Traffic-Herkunft in einer Webanwendung festzustellen, sucht Adobe Campaig
 >
 >Beachten Sie, dass Anonym-Tracking nur möglich ist, wenn die entsprechende Option im Softwareverteilungs-Assistenten aktiviert wurde.
 >
->For more on this, refer to the [Installation guide](../../installation/using/deploying-an-instance.md).
+>Weitere Informationen hierzu finden Sie im [Installationshandbuch](../../installation/using/deploying-an-instance.md).
 
-## Web applications designed with Digital Content Editor (DCE) {#web-applications-designed-with-digital-content-editor--dce-}
+## Mit dem Digital Content Editor (DCE) erstellte Webanwendungen {#web-applications-designed-with-digital-content-editor--dce-}
 
-Wenn eine Webanwendung mit dem HTML-Inhaltseditor - **Digital Content Editor (DCE)** - erstellt wird, werden Verfolgungs-Tags aus der **[!UICONTROL Properties]** Registerkarte des Editors eingefügt. Weitere Informationen zum Digital Content Editor (DCE) finden Sie in [diesem Abschnitt](../../web/using/about-campaign-html-editor.md).
+Wenn eine Webanwendung mit dem HTML-Contenteditor – dem **Digital Content Editor (DCE)** – erstellt wird, werden Trackingtags über den Tab **[!UICONTROL Eigenschaften]** des Editors eingefügt. Weiterführende Informationen zum Digital Content Editor (DCE) finden Sie in [diesem Abschnitt](../../web/using/about-campaign-html-editor.md).
 
 ![](assets/trackers_2.png)
 
@@ -75,7 +75,7 @@ Bei der Verwendung der Webschnittstelle werden Trackingtags über die Seiteneige
 
 ![](assets/trackers_3.png)
 
-The **[!UICONTROL Display blocks]** icon lets you view the number of tracking tags defined for the page.
+Mit dem Symbol **[!UICONTROL Bausteine anzeigen]** können Sie die Anzahl der für die Seite definierten Trackingtags anzeigen.
 
 ![](assets/trackers_4.png)
 
