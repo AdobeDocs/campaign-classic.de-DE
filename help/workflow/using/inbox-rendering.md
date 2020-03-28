@@ -1,6 +1,6 @@
 ---
-title: Technischer Arbeitsablauf für die Inbox-Wiedergabe in Adobe Campaign Classic
-description: In diesem Abschnitt wird der technische Arbeitsablauf beschrieben, der mit dem Inbox-Renderingpaket in Adobe Campaign Classic installiert wurde.
+title: Technischer Workflow von Inbox Rendering in Adobe Campaign Classic
+description: In diesem Abschnitt wird der technische Workflow beschrieben, der mit dem Inbox Rendering-Paket in Adobe Campaign Classic installiert wird.
 page-status-flag: never-activated
 uuid: f60a09f0-47a0-4fc0-b0ac-47178af6ad55
 contentOwner: sauviat
@@ -12,15 +12,15 @@ discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e1bd878c45576932e085b579f91eb72f5d36d6fd
 
 ---
 
 
-# Inbox-Rendering (IR){#inbox-rendering}
+# Inbox Rendering (IR){#inbox-rendering}
 
-Der unten beschriebene Workflow wird standardmäßig mit dem **Inbox-Rendering-Modul (IR)** installiert. For more on Inbox rendering, refer to this [section](../../delivery/using/inbox-rendering.md).
+Der unten beschriebene Workflow wird mit dem **Inbox Rendering (IR)**-Modul standardmäßig installiert. Weiterführende Informationen zu Inbox Rendering finden Sie in diesem [Abschnitt](../../delivery/using/inbox-rendering.md).
 
 <table> 
  <tbody> 
@@ -30,9 +30,9 @@ Der unten beschriebene Workflow wird standardmäßig mit dem **Inbox-Rendering-M
    <td> <strong>Beschreibung</strong><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Aktualisieren des Seed-Netzwerks für das Inbox-Rendering</strong><br /> </td> 
-   <td> <span class="uicontrol">updateRenderingSeeds</span><br /> </td> 
-   <td> This workflow updates email addresses used for Inbox rendering and only works if the HTTPS port is open for <strong>deliverability.neolane.net</strong>.<br /> </td> 
+   <td> <strong>Testnetzwerk-Update für das Inbox Rendering</strong><br /> </td> 
+   <td> <span class="uicontrol">updateRenderingSeeds</span> <br /> </td> 
+   <td> Aktualisiert die für das Inbox Rendering verwendeten E-Mail-Adressen. Setzt voraus, dass der HTTPS-Port für <strong>deliverability.neolane.net</strong> geöffnet ist.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
