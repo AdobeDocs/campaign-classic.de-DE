@@ -14,7 +14,7 @@ discoiquuid: d9369ba1-0397-40fe-bbaf-24252564d93c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -22,28 +22,28 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 # Webformularvorlage verwenden{#using-a-web-form-template}
 
-Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen mit Webanwendungsvorlagen im **[!UICONTROL Resources > Templates > Web application templates]** Knoten gespeichert.
+Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen gemeinsam mit Webanwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** gespeichert.
 
-Von hier aus können Sie entweder neue Vorlagen erstellen oder ein vorhandenes Formular in eine Vorlage konvertieren.
+Hier können Sie entweder neue Vorlagen erstellen oder ein bestehendes Formular in eine Vorlage umwandeln.
 
-## Convert an existing form into a template {#convert-an-existing-form-into-a-template}
+## Ein bestehendes Formular in eine Vorlage umwandeln {#convert-an-existing-form-into-a-template}
 
-A form can be changed into a template and its configuration re-used. To do this, select the form, right-click and select **[!UICONTROL Actions > Save as template...]**.
+Sie können ein Formular in eine Vorlage umwandeln und seine Konfiguration wiederverwenden. Wählen Sie dazu das Formular aus, führen Sie einen Rechtsklick darauf aus und wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]** aus.
 
 ![](assets/s_ncs_admin_survey_saveastemplate.png)
 
 Dadurch öffnet sich ein Fenster zur Erstellung von Webanwendungen. Dort können Sie den Namen und die Beschreibung der Vorlage eingeben und den Ordner auswählen, in dem sie gespeichert werden soll.
 
-## Create a new form template {#create-a-new-form-template}
+## Neue Formularvorlage erstellen {#create-a-new-form-template}
 
-Um eine Webformularvorlage zu erstellen, klicken Sie mit der rechten Maustaste auf die Liste der Webanwendungsvorlagen und wählen Sie **[!UICONTROL New]**. Sie können auch die **[!UICONTROL New]** Schaltfläche über der Liste der Vorlagen verwenden.
+Klicken Sie zur Erstellung einer Webformularvorlage mit der rechten Maustaste auf die Webanwendungsvorlagen-Liste und wählen Sie **[!UICONTROL Neu]** aus oder verwenden Sie die Schaltfläche **[!UICONTROL Neu]** oberhalb der Vorlagenliste.
 
 ![](assets/s_ncs_admin_survey_createtemplate.png)
 
-Geben Sie den Namen der Vorlage ein. Wählen Sie im **[!UICONTROL Instance folder]** Feld den Ordner aus, in dem die auf der Grundlage dieser Vorlage erstellten Webformulare gespeichert werden. Im **[!UICONTROL Nature]** Feld können Sie beschreibende Informationen hinzufügen, um Ihre verschiedenen Webanwendungsvorlagen zu sortieren und/oder zu filtern.
+Geben Sie den Namen der Vorlage ein. Wählen Sie im Feld **[!UICONTROL Instanzordner]** den Ordner aus, in dem die auf dieser Vorlage basierenden Webformulare gespeichert werden sollen. Über das Feld **[!UICONTROL Art]** können Sie eine Beschreibung zur Sortierung und/oder Filterung der unterschiedlichen Webanwendungsvorlagen hinzufügen.
 
 ![](assets/s_ncs_admin_survey_createtemplate_details.png)
 
-Click the **[!UICONTROL Save]** button to create the template, then build the content of this template and define its parameters.
+Wählen Sie die Schaltfläche **[!UICONTROL Speichern]** aus, um die Vorlage zu erstellen. Definieren Sie dann den Inhalt dieser Vorlage und deren Parameter.
 
 Jetzt können Sie diese Vorlage auswählen, um ein neues Formular zu erstellen.
