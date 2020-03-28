@@ -14,7 +14,7 @@ discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -26,7 +26,7 @@ Testadressen dienen dazu, eine Nachrichtenvorschau zu erzeugen, Testsendungen au
 
 ## Testadressen erstellen {#creating-a-seed-address}
 
-1. In the transactional message template, click the **[!UICONTROL Seed addresses]** tab.
+1. Gehen Sie in den Tab **[!UICONTROL Testadressen]** der Transaktionsnachrichten-Vorlage.
 
    ![](assets/messagecenter_create_seedaddr_001.png)
 
@@ -48,13 +48,13 @@ Testadressen dienen dazu, eine Nachrichtenvorschau zu erzeugen, Testsendungen au
 
 ## Mehrere Testadressen erstellen {#creating-several-seed-addresses}
 
-1. Klicken Sie auf den **[!UICONTROL Add other seed addresses]** Link und dann auf die **[!UICONTROL Add]** Schaltfläche.
+1. Klicken Sie auf den Link **[!UICONTROL Testadressen ergänzen]**, dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
-1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.
+1. Folgen Sie den Konfigurationsetappen einer Testadresse im Abschnitt [Testadressen erstellen](#creating-a-seed-address).
 1. Wiederholen Sie diesen Vorgang, um beliebig viele weitere Testadressen zu erstellen.
 
    ![](assets/messagecenter_create_seedaddr_008.png)
 
-Nachdem die Adressen erstellt wurden, können Sie deren Vorschau und Personalisierung anzeigen. Siehe Vorschau der [Transaktionsnachricht](../../message-center/using/transactional-message-preview.md).
+Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und ihrer Personalisierung erzeugen. Siehe [Transaktionsnachrichten-Vorschau](../../message-center/using/transactional-message-preview.md).
