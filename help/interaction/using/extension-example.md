@@ -14,7 +14,7 @@ discoiquuid: 990b6cbc-9b7b-4278-a635-653d5abafe87
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -36,5 +36,5 @@ Im Fall eines eingehenden Kontakts (Callcenter oder Webseite) bestimmt das Angeb
 
    ![](assets/s_ncs_configuration_offer_context.png)
 
-* When configuring SOAP calls, insert the **context** XML element to reference context information added in the interaction schema. Weitere Informationen finden Sie unter [Integration via SOAP (serverseitig)](../../interaction/using/integration-via-soap--server-side-.md).
+* Fügen Sie bei der Konfiguration der SOAP-Aufrufe das XML-Element **context** ein, um die kontextbezogenen Informationen, um die Sie zuvor das Interaction-Schema erweitert haben, zu referenzieren. Weitere Informationen hierzu finden Sie unter [SOAP-Integration (Server-seitig)](../../interaction/using/integration-via-soap--server-side-.md).
 
