@@ -14,7 +14,7 @@ discoiquuid: 299f84e6-f6ff-4ca0-9799-b56d57e1752b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,10 +22,10 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Profile hinzufügen{#adding-profiles}
 
-In den meisten Fällen werden Profile über einen Workflow[in Campaign ](../../workflow/using/importing-data.md)importiert. Sie können jedoch ein oder mehrere Profile direkt über die Oberfläche hinzufügen, indem Sie auf die **[!UICONTROL Create]** Schaltfläche klicken. Sie werden dann der Datenbank hinzugefügt.
+Meist werden Profile [über einen Workflow in Campaign importiert](../../workflow/using/importing-data.md). Es besteht aber auch die Möglichkeit, neue Profile direkt über die Benutzeroberfläche hinzuzufügen. Wählen Sie hierzu die Schaltfläche **[!UICONTROL Erstellen]** aus.
 
 ![](assets/s_ncs_user_profile_add.png)
 
-Geben Sie die Informationen für dieses Profil ein. Die auszufüllenden Registerkarten und Felder werden unter [Bearbeiten eines Profils](../../platform/using/editing-a-profile.md)beschrieben.
+Machen Sie die erforderlichen Angaben zum Profil. Die auszufüllenden Tabs und Felder werden unter [Profile bearbeiten](../../platform/using/editing-a-profile.md) beschrieben.
 
-Klicken Sie auf **[!UICONTROL Save]** , um die Profilerstellung zu überprüfen. Das Profil wird dann der Adobe Campaign-Datenbank hinzugefügt.
+Verwenden Sie **[!UICONTROL Speichern]**, um die Profilerstellung abzuschließen. Das Profil wird der Adobe-Campaign-Datenbank hinzugefügt.
