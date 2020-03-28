@@ -14,7 +14,7 @@ discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,26 +22,26 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # Gestaltungsbausteine{#personalization-blocks}
 
-Personalisierungsblöcke sind dynamisch, personalisiert und enthalten ein bestimmtes Rendering, das Sie in Ihre Auslieferungen einfügen können. Sie können beispielsweise ein Logo, eine Grußmeldung oder einen Link zu einer Spiegelseite hinzufügen. Siehe [Einfügen von Personalisierungsblöcken](#inserting-personalization-blocks).
+Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Mirror-Seiten-Link. Siehe [Gestaltungsbausteine einfügen](#inserting-personalization-blocks).
 
 >[!NOTE]
 >
->Personalization blocks are also available from the **[!UICONTROL Digital Content Editor (DCE)]** . For more on this, refer to [this page](../../web/using/editing-content.md#inserting-a-personalization-block).
+>Gestaltungsbausteine sind auch im **[!UICONTROL Digital Content Editor (DCE)]** verfügbar. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/editing-content.md#inserting-a-personalization-block).
 
-Auf Personalisierungsblöcke wird über den **[!UICONTROL Resources > Campaign Management > Personalization blocks]** Knoten des Adobe Campaign-Explorers zugegriffen. Standardmäßig sind mehrere Blöcke verfügbar (siehe [Vordefinierte Personalisierungsblöcke](#out-of-the-box-personalization-blocks)).
+Auf Gestaltungsbausteine kann im Adobe Campaign-Explorer über den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden. Standardmäßig sind verschiedene Bausteine verfügbar (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks)).
 
-Sie haben die Möglichkeit, neue Blöcke zu definieren, mit denen Sie die Personalisierung Ihrer Auslieferungen optimieren können. Weitere Informationen finden Sie unter [Definieren benutzerdefinierter Personalisierungsblöcke](#defining-custom-personalization-blocks).
+Sie haben die Möglichkeit, neue Bausteine zu definieren, mit denen Sie die Personalisierung Ihrer Sendungen verbessern können. Weitere Informationen finden Sie unter [Benutzerdefinierte Gestaltungsbausteine definieren](#defining-custom-personalization-blocks).
 
 ## Gestaltungsbausteine einfügen {#inserting-personalization-blocks}
 
 Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzufügen:
 
-1. In the content editor of the delivery wizard, click the personalized field icon and select the **[!UICONTROL Include]** menu.
-1. Select a personalization block from the list (the list displays the 10 last used blocks), or click the **[!UICONTROL Other...]** menu to access the full list.
+1. Wählen Sie im Inhaltseditor des Versand-Assistenten die Personalisierungsfelder-Schaltfläche und danach das Menü **[!UICONTROL Einfügen]**.
+1. Wählen Sie einen Gestaltungsbaustein aus der Liste aus (in der Liste werden die zehn zuletzt verwendeten Gestaltungsbausteine angezeigt) oder greifen Sie über das Menü **[!UICONTROL Sonstige...]** auf die vollständige Liste zu.
 
    ![](assets/s_ncs_user_personalized_block01.png)
 
-1. Das **[!UICONTROL Other...]** Menü bietet Zugriff auf alle vordefinierten und benutzerdefinierten Personalisierungsblöcke (siehe [Vordefinierte Personalisierungsblöcke](#out-of-the-box-personalization-blocks) und [Definieren benutzerdefinierter Personalisierungsblöcke](#defining-custom-personalization-blocks)).
+1. Das Menü **[!UICONTROL Sonstige...]** bietet Ihnen Zugriff auf alle nativen und benutzerdefinierten Gestaltungsbausteine (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks) und [Benutzerdefinierte Gestaltungsbausteine definieren](#defining-custom-personalization-blocks)).
 
    ![](assets/s_ncs_user_personalized_block02.png)
 
@@ -49,15 +49,15 @@ Gehen Sie folgendermaßen vor, um Gestaltungsbausteine in eine Nachricht einzuf�
 
    ![](assets/s_ncs_user_personalized_block03.png)
 
-1. Click the **[!UICONTROL Preview]** tab and select a recipient to view the personalization.
+1. Klicken Sie nun auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie einen Empfänger aus, um das Ergebnis der Personalisierung anzusehen.
 
    ![](assets/s_ncs_user_personalized_block04.png)
 
-Sie können den Quellcode eines Personalisierungsblocks in den Bereitstellungsinhalt aufnehmen. Wählen Sie dazu **[!UICONTROL Include the HTML source code of the block]** beim Auswählen aus.
+Sie können auch den Quellcode eines Gestaltungsbausteins im Versandinhalt verwenden, indem Sie die Option **[!UICONTROL HTML-Quellcode des Bausteins einfügen]** auswählen.
 
 ![](assets/s_ncs_user_personalized_block05.png)
 
-Der HTML-Quellcode wird in den Bereitstellungsinhalt eingefügt. Der **[!UICONTROL Greetings]** Personalisierungsblock wird beispielsweise wie folgt angezeigt:
+Der HTML-Quellcode wird im Versandinhalt eingefügt. Beispielsweise wird der Gestaltungsbaustein **[!UICONTROL Grußformeln]** wie folgt angezeigt:
 
 ![](assets/s_ncs_user_personalized_block06.png)
 
@@ -67,22 +67,22 @@ In diesem Beispiel erstellen wir eine E-Mail, in der wir Gestaltungsbausteine ve
 
 Zu diesem Zweck müssen wir folgende Gestaltungsbausteine einfügen:
 
-* **[!UICONTROL Link to mirror page]** .
-* **[!UICONTROL Social network sharing links]** .
-* **[!UICONTROL Unsubscription link]** .
+* **[!UICONTROL Link zur Mirrorseite]** .
+* **[!UICONTROL Teilen-Links der sozialen Netzwerke]** .
+* **[!UICONTROL Abmelde-Link]** .
 
 >[!NOTE]
 >
->Weitere Informationen zur Erzeugung der Spiegelseite finden Sie unter [Generieren der Spiegelseite](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+>Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
-1. In the delivery wizard, click **[!UICONTROL Subject]** to edit the subject of the message and enter a subject.
-1. Fügen Sie die Personalisierungsblöcke in den Nachrichtentext ein. Klicken Sie dazu auf den Inhalt der Nachricht, klicken Sie auf das Symbol für das personalisierte Feld und wählen Sie das **[!UICONTROL Include]** Menü aus.
+1. Klicken Sie im Versand-Assistenten auf den **[!UICONTROL Betreff]**-Link, um einen Betreff einzugeben.
+1. Im nächsten Schritt wird der Nachrichten-Textkörper angepasst. Klicken Sie dazu in das Inhaltsfeld der Nachricht und danach auf die Schaltfläche zum Einfügen von Personalisierungsfeldern. Wählen Sie danach das Menü **[!UICONTROL Einfügen]** aus.
 1. Wählen Sie den ersten einzufügenden Gestaltungsbaustein aus. Wiederholen Sie diesen Vorgang, um die beiden anderen Bausteine einzufügen.
 
    ![](assets/s_ncs_user_personalized_block_example.png)
 
-1. Klicken Sie auf die **[!UICONTROL Preview]** Registerkarte, um das Personalisierungsergebnis anzuzeigen. Sie müssen einen Empfänger auswählen, um die Nachricht des Empfängers anzuzeigen.
+1. Klicken Sie nun auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie einen Empfänger aus, um sich das Ergebnis der Personalisierung anzusehen.
 
    ![](assets/s_ncs_user_personalized_block_example2.png)
 
@@ -98,20 +98,20 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
 ![](assets/s_ncs_user_personalized_block_list.png)
 
-* **[!UICONTROL Greetings]** : fügt Grüße mit dem Namen des Empfängers ein. Beispiel: &quot;Hallo John Doe.&quot;
-* **[!UICONTROL Insert logo]** : fügt ein vordefiniertes Logo ein, das beim Konfigurieren der Instanz definiert wurde.
-* **[!UICONTROL Powered by Adobe Campaign]** : fügt das Logo &quot;Powered by Adobe Campaign&quot;ein.
-* **[!UICONTROL Mirror page URL]** : fügt die URL der Spiegelseite ein, sodass die Entwickler der Auslieferung den Link überprüfen können.
+* **[!UICONTROL Grußformeln]**: Hiermit werden Grußformeln mit dem Empfängernamen eingefügt, z. B. &quot;Guten Tag, Max Mustermann&quot;.
+* **[!UICONTROL Logo einfügen]**: Hiermit wird ein natives Logo eingefügt, das beim Konfigurieren der Instanz definiert wurde.
+* **[!UICONTROL Powered by Adobe Campaign]**: Hiermit wird das Logo &quot;Powered by Adobe Campaign&quot; eingefügt.
+* **[!UICONTROL Mirrorseiten-URL]**: Hiermit wird die Mirrorseiten-URL eingefügt, damit Versanddesigner den Link prüfen können.
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Erzeugung der Spiegelseite finden Sie unter [Generieren der Spiegelseite](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+   >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
-* **[!UICONTROL Link to mirror page]** : fügt einen Link zur Spiegelseite ein: &quot;Wenn Sie diese Meldung nicht richtig anzeigen können, klicken Sie hier.&quot;
-* **[!UICONTROL Unsubscription link]** : fügt einen Link ein, der es ermöglicht, sich von allen Auslieferungen abzumelden (schwarze Liste).
-* **[!UICONTROL Formatting function for proper nouns]** : generiert die **[!UICONTROL toSmartCase]** JavaScript-Funktion, die den ersten Buchstaben jedes Wortes in Großbuchstaben ändert. Dieser Block muss in den Quellcode der Lieferung in **`<script>...</script>`** -Tags eingefügt werden.
+* **[!UICONTROL Mirrorseiten-Link]**: Hiermit wird der Link zur Mirrorseite &quot;Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken&quot; eingefügt.
+* **[!UICONTROL Abmelde-Link]**: Hiermit wird ein Link zur Abmeldung von allen Nachrichten (Blacklist) eingefügt.
+* **[!UICONTROL Formatierungsfunktion für Eigennamen]**: Hiermit wird die JavaScript-Funktion **[!UICONTROL toSmartCase]** erstellt, mit der der erste Buchstabe eines jeden Worts in einen Großbuchstaben umgewandelt wird. Dieser Baustein muss in den Quell-Code des Versands in **`<script>...</script>`**-Tags eingefügt werden.
 
-   Im Beispiel unten wird mit der Funktion das Element &quot;My header&quot;durch &quot;My new header&quot;durch Großbuchstaben bei jedem Wort ersetzt:
+   Im unten stehenden Beispiel wird mithilfe dieser Funktion das Element „Mein Header“ durch „Mein neuer Header“ mit Großbuchstaben für jedes Wort ersetzt:
 
    ```
    <h1 id="sample">My header</h1>
@@ -122,37 +122,37 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
    ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
 
-* **[!UICONTROL Registration page URL]** : fügt eine Abonnement-URL ein (siehe [Informationen zu Diensten und Abonnements](../../delivery/using/about-services-and-subscriptions.md)).
-* **[!UICONTROL Registration link]** : fügt einen Abonnementlink ein. die beim Konfigurieren der Instanz definiert wurde.
-* **[!UICONTROL Registration link (with referrer)]** : fügt einen Abonnementlink ein, über den der Besucher und die Auslieferung identifiziert werden können. Der Link wurde beim Konfigurieren der Instanz definiert.
+* **[!UICONTROL Anmeldungsseiten-URL]**: Hiermit wird eine Anmelde-URL eingefügt (siehe [Über Dienste und Abonnements](../../delivery/using/about-services-and-subscriptions.md)).
+* **[!UICONTROL Anmelde-Link]**: Hiermit wird ein Anmelde-Link eingefügt, der beim Konfigurieren der Instanz definiert wurde.
+* **[!UICONTROL Registrierungslink (mit Werber)]**: Hiermit wird ein Anmelde-Link eingefügt, über den der Besucher und der Versand identifiziert werden kann. Der Link wurde beim Konfigurieren der Instanz definiert.
 
    >[!NOTE]
    >
    >Dieser Baustein kann in Sendungen verwendet werden, die nur an Besucher gerichtet sind.
 
-* **[!UICONTROL Registration confirmation]** : fügt einen Link zur Bestätigung des Abonnements ein.
-* **[!UICONTROL Social network sharing links]** : fügt Schaltflächen ein, mit denen der Empfänger einen Link zum Inhalt der Spiegelseite mit dem E-Mail-Client, Facebook, Twitter, Google + und LinkedIn teilen kann (siehe [Virales Marketing: an einen Freund weitergeleitet](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
-* **[!UICONTROL Style of content emails]** und **[!UICONTROL Notification style]** : Code generieren, der eine E-Mail mit vordefinierten HTML-Stilen formatiert. Diese Blöcke müssen in den Quellcode der Lieferung, im **[!UICONTROL ...]** Abschnitt, in **`<style>...</style>`** -Tags eingefügt werden.
-* **[!UICONTROL Offer acceptance URL in unitary mode]** : fügt eine URL ein, mit der ein Interaktionsangebot festgelegt werden kann **[!UICONTROL Accepted]** (siehe [diesen Abschnitt](../../interaction/using/offer-analysis-report.md)).
+* **[!UICONTROL Anmeldebestätigung]**: Hiermit wird ein Link eingefügt, mit dem die Anmeldung bestätigt werden kann.
+* **[!UICONTROL Teilen-Links der sozialen Netzwerke]**: Hiermit werden Schaltflächen eingefügt, mit denen der Empfänger mit dem E-Mail-Client sowie mit Facebook, Twitter, Google + und LinkedIn einen Link zum Mirror-Seiten-Inhalt teilen kann (siehe [Weiterleiten von Nachrichten](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Stil der Inhalts-E-Mails]** und **[!UICONTROL Stil der Benachrichtigungen]**: Hiermit wird Code erstellt, mit dem eine E-Mail mit nativen HTML-Stilen formatiert werden kann. Diese Bausteine müssen in den Quell-Code des Versands im Abschnitt **[!UICONTROL ...]** in **`<style>...</style>`**-Tags eingefügt werden.
+* **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]**: Hiermit wird eine URL eingefügt, mit der ein Interaction-Angebot auf **[!UICONTROL Angenommen]** gesetzt werden kann (siehe [diesen Abschnitt](../../interaction/using/offer-analysis-report.md)).
 
 ## Benutzerdefinierte Gestaltungsbausteine definieren {#defining-custom-personalization-blocks}
 
-Sie können neue Personalisierungsfelder definieren, die über das **[!UICONTROL Include...]** Menü aus dem personalisierten Feldsymbol eingefügt werden sollen. Diese Felder werden in Personalisierungsblöcken definiert.
+Sie haben die Möglichkeit, neue Personalisierungsfelder zu konfigurieren, die dann über die entsprechende Schaltfläche ausgehend von der Option **[!UICONTROL Einfügen...]** verfügbar sind. Diese Felder werden in Gestaltungsbausteinen erstellt.
 
 Gehen Sie wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
-1. Klicken Sie auf die **[!UICONTROL Resources > Campaign Management > Personalization blocks]** Node.
-1. Right-click the list of blocks and select **[!UICONTROL New]** .
+1. Gehen Sie in den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]**.
+1. Klicken Sie mit der rechten Maustaste in der Bausteinliste und wählen Sie die Option **[!UICONTROL Neu]** .
 1. Konfigurieren Sie den Gestaltungsbaustein:
 
    ![](assets/s_ncs_user_personalized_block.png)
 
    * Benennen Sie den Baustein. Der hier angegebene Titel wird im Einfügefenster der Personalisierungsfelder angezeigt.
-   * Wählen Sie **[!UICONTROL Visible in the customization menus]** diese Option, um über das Symbol zum Einfügen des Personalisierungsfelds auf diesen Block zuzugreifen.
-   * Legen Sie bei Bedarf zwei separate Blöcke für E-Mails im HTML-Format und im Textformat **[!UICONTROL The content of the personalization block depends upon the format]** fest.
+   * Wählen Sie die Option **[!UICONTROL Im Personalisierungsmenü anzeigen]**, um den Baustein in der Dropdown-Liste der Personalisierungsfelder verfügbar zu machen.
+   * Bei Bedarf können Sie die Option **[!UICONTROL Der Inhalt des Bausteins ist formatabhängig (HTML oder Text)]** ankreuzen, um für jedes Format einen separaten Baustein zu konfigurieren.
 
       In diesem Fall wird das Fenster in zwei Tabs – HTML- und Textinhalt – unterteilt, um die formatbedingten Inhalte separat erfassen zu können.
 
       ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Enter the content (in HTML, text, JavaScript, etc.) of the personalization block(s) and click **[!UICONTROL Save]** .
+   * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]** .
