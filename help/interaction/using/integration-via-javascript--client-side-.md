@@ -14,7 +14,7 @@ discoiquuid: 7453d768-31eb-4372-aae3-27527cd5c79b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # JavaScript-Integration (clientseitig){#integration-via-javascript-client-side}
 
-Um die Interaktions-Engine auf einer Webseite aufzurufen, fügen Sie einen Aufruf an einen JavaScript-Code direkt in die Seite ein. Dieser Aufruf gibt den Angebotsinhalt in einem zielgerichteten
+Innerhalb einer Webseite erfolgt die Abfrage an das Interaction-Angebotsmodul direkt durch Integration eines JavaScript-Aufrufs. Dieser Aufruf gibt den Angebotsinhalt zurück in einem gezielten
 
 Element.
 
@@ -54,9 +54,9 @@ Unten stehend werden verschiedene Integrationsmöglichkeiten mit JavaScript beis
 
 1. **Inhalt der HTML-Seite**
 
-   Die HTML-Seite muss eine
+   Die HTML-Seite muss ein
 
-   -Element mit einem Attribut &quot;@id&quot;mit dem Wert des internen Namens des erstellten Angebotraums (&quot;i_internal name space&quot;). Das Angebot wird durch Interaktion in dieses Element eingefügt.
+   -Element mit einem „@id“-Attribut enthalten, das den Wert des internen Namens der erstellten Platzierung hat („i_internal name space“). Das Angebot wird durch Interaction in dieses Element eingefügt.
 
    Im vorliegenden Beispiel nimmt das Attribut @id den Wert &quot;i_SPC12&quot; an, wobei &quot;SPC12&quot; der interne Name der zuvor erstellten Platzierung ist:
 
@@ -72,7 +72,7 @@ Unten stehend werden verschiedene Integrationsmöglichkeiten mit JavaScript beis
 
    >[!CAUTION]
    >
-   >The `<script>` tag must not be self-closing.
+   >Das `<script>`-Element darf nicht in sich geschlossen sein.
 
    Dieser statische Aufruf erzeugt automatisch einen dynamischen Aufruf, welcher alle vom Angebotsmodul benötigten Parameter enthält.
 
@@ -106,7 +106,7 @@ Unten stehend werden verschiedene Integrationsmöglichkeiten mit JavaScript beis
 
 ### Angebote für identifizierte Kontakte {#presenting-an-identified-offer}
 
-Um einem identifizierten Kontakt ein Angebot zu unterbreiten, ist der Prozess ähnlich dem hier beschriebenen: Anonyme [Angebote](#presenting-an-anonymous-offer). Im Inhalt der Webseite müssen Sie das folgende Skript hinzufügen, das den Kontakt während des Aufrufs an die Engine identifiziert:
+Um einem identifizierten Kontakt ein Angebot zu unterbreiten, läuft der Prozess ähnlich ab, wie hier beschrieben: [Angebote für anonyme Kontakte](#presenting-an-anonymous-offer). Im Inhalt der Web-Seite müssen Sie das folgende Script hinzufügen, das während des Aufrufs an das Modul den Kontakt identifiziert:
 
 ```
 <script type="text/javascript">
@@ -114,7 +114,7 @@ Um einem identifizierten Kontakt ein Angebot zu unterbreiten, ist der Prozess ä
 </script>
 ```
 
-1. Go to the offer space that will be called up by the web page, click **[!UICONTROL Advanced parameters]** and add one or more identification keys.
+1. Klicken Sie in der Platzierung, die von der Webseite aus aufgerufen werden soll, auf **[!UICONTROL Erweiterte Parameter]** und fügen Sie mindestens einen Identifikationsschlüssel hinzu.
 
    ![](assets/interaction_htmlmode_001.png)
 
@@ -134,9 +134,9 @@ Um einem identifizierten Kontakt ein Angebot zu unterbreiten, ist der Prozess ä
 
 Die Verwendung einer HTML-Rendering-Funktion bietet den Vorteil, das die HTML-Darstellung des Angebots automatisch erzeugt wird.
 
-1. Go to the offer space and click the **[!UICONTROL Edit functions]** link.
-1. Auswählen **[!UICONTROL Overload the HTML rendering function]**.
-1. Go to the **[!UICONTROL HTML rendering]** tab and insert the variables that match the fields defined for the offer content in the offer space.
+1. Klicken Sie in der Angebotsplatzierung auf den Link **[!UICONTROL Funktionen bearbeiten...]**.
+1. Kreuzen Sie die Option **[!UICONTROL HTML-Rendering-Funktion überschreiben]** an.
+1. Geben Sie dann im Tab **[!UICONTROL HTML-Rendering]** die den in der Platzierung für den Angebotsinhalt definierten Feldern entsprechenden Variablen ein.
 
    ![](assets/interaction_htmlmode_002.png)
 
@@ -183,7 +183,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Weitere Informationen zum Erstellen einer Umgebung finden Sie unter [Live-/Design-Umgebungen](../../interaction/using/live-design-environments.md).
 
-   For more on creating an offer space, refer to [Creating offer spaces](../../interaction/using/creating-offer-spaces.md).
+   Die Erstellung von Platzierungen wird im Abschnitt ](../../interaction/using/creating-offer-spaces.md)Angebotsplatzierungen[ genauer erläutert.
 
 1. **Erweiterung des Angebotsschemas zur Hinzufügung neuer Felder**
 
@@ -266,17 +266,17 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    >[!CAUTION]
    >
-   >The fields of the ( `<input>`) form must point to the CDATA type elements defined in the created schema.
+   >Die Formularfelder (`<input>`) müssen auf die im zuvor erstellten Schema definierten CDATA-Elemente verweisen.
 
    Im Formular der Angebotsdarstellungen schlagen sich die Änderungen wie folgt nieder:
 
    ![](assets/interaction_xmlmode_form.png)
 
-   The **[!UICONTROL Title 2]** and **[!UICONTROL Price]** fields have been added and the **[!UICONTROL Destination URL]** field is no longer displayed.
+   Die Felder **[!UICONTROL Titel 2]** und **[!UICONTROL Preis]** wurden eingefügt und das Feld **[!UICONTROL Ziel-URL]** wird nicht mehr angezeigt.
 
 1. **Erstellung eines Angebots**
 
-   Weitere Informationen zum Erstellen von Angeboten finden Sie unter [Erstellen eines Angebots](../../interaction/using/creating-an-offer.md).
+   Weitere Informationen zum Erstellen von Angeboten finden Sie unter [Erstellung eines Angebots](../../interaction/using/creating-an-offer.md).
 
    Im vorliegenden Anwendungsbeispiel wird das Angebot wie folgt konfiguriert:
 
@@ -317,9 +317,9 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
 Es besteht die Möglichkeit, Angebotsdarstellungen mithilfe von XML-Rendering-Funktionen zu erzeugen. Diese Funktion ändert den infolge der Modulabfrage an die HTML-Seite zurückgegebenen XML-Knoten.
 
-1. Go to the offer space and click the **[!UICONTROL Edit functions]** link.
-1. Auswählen **[!UICONTROL Overload the XML rendering function]**.
-1. Go to the **[!UICONTROL XML rendering]** tab and insert the desired function.
+1. Klicken Sie in der Angebotsplatzierung auf den Link **[!UICONTROL Funktionen bearbeiten...]**.
+1. Kreuzen Sie die Option **[!UICONTROL XML-Rendering-Funktion überschreiben]** an.
+1. Fügen Sie im Tab **[!UICONTROL XML-Rendering]** die gewünschte Funktion ein.
 
    Die Funktion kann folgendem Beispiel entsprechen:
 
