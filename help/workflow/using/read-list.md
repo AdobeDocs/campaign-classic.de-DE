@@ -14,7 +14,7 @@ discoiquuid: 96a7aea4-4799-4ac7-8dff-666b075a1c43
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -24,9 +24,9 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 In Workflows genutzte Daten können aus Listen stammen, deren Daten zuvor aufbereitet und strukturiert wurden, beispielsweise in einer früheren Segmentierung oder im Zuge eines Datei-Ladevorgangs.
 
-Mit der **[!UICONTROL Read list]** Aktivität können Sie die Daten aus einer Liste in der Workflow-Tabelle kopieren, z. B. Daten aus einer Abfrage. Er ist dann im gesamten Workflow verfügbar.
+Die Aktivität **[!UICONTROL Liste lesen]** kopiert Daten aus einer Liste in eine Workflow-Arbeitstabelle (analog zu Daten aus Abfragen). Auf diese Weise stehen sie während der gesamten Workflow-Ausführung zur Verfügung.
 
-The list to be processed can be specified explicitly, computed by a script or localized dynamically, according to options selected and parameters defined in a **[!UICONTROL Read list]** activity.
+Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den in der Aktivität **[!UICONTROL Liste lesen]** aktivierten Optionen oder angegebenen Parametern ab.
 
 ![](assets/list_edit_select_option_01.png)
 
@@ -34,7 +34,7 @@ Wenn die Liste nicht explizit bezeichnet wird, ist eine Beispielliste anzugeben,
 
 ![](assets/s_advuser_list_template_select.png)
 
-Once the list selection has been configured, you can add a filter using the **[!UICONTROL Edit query]** option to keep one part of the population for the next workflow.
+Nach erfolgter Konfiguration der Liste können Sie über die Option **[!UICONTROL Abfrage bearbeiten...]** einen Filter hinzufügen, um die für den weiteren Workflow-Verlauf zu nutzende Population einzuschränken.
 
 ![](assets/wf_readlist_1.png)
 
@@ -42,7 +42,7 @@ Once the list selection has been configured, you can add a filter using the **[!
 >
 >Um in einer Liste-lesen-Aktivität Filter verwenden zu können, muss die Liste als Datei vorliegen.
 
-Die Listen können direkt in Adobe Campaign über den **[!UICONTROL Profiles and Targets > Lists]** Link der Homepage erstellt werden. Sie können auch in einem Workflow mithilfe der **[!UICONTROL List update]** Aktivität erstellt werden.
+Listen können direkt in der Adobe-Campaign-Startseite über die Schaltfläche **[!UICONTROL Profile und Zielgruppen > Listen]** erstellt werden oder aber im Rahmen eines Workflows über die Aktivität **[!UICONTROL Listen-Update]**.
 
 **Anwendungsbeispiel: Ausschluss einer Adressenliste von einem Versand**
 
@@ -64,13 +64,13 @@ Die im **Premiumkunden**-Ordner enthaltenen Profile sollen im Rahmen einer Marke
 
    ![](assets/s_advuser_list_read_sample_3.png)
 
-   Ausschlussregeln werden im zentralen Bereich des Bearbeitungswerkzeugs konfiguriert. Klicken Sie auf die **[!UICONTROL Add]** Schaltfläche, um den anzuwendenden Ausschlusstyp zu definieren.
+   Die Ausschlussregeln werden im mittleren Bereich des Fensters konfiguriert. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um den Ausschlusstyp zu definieren.
 
    Sie können für jede in die Aktivität eingehende Transition einen Ausschluss definieren.
 
-1. In the **[!UICONTROL Exclusion set]** field, select the **[!UICONTROL Read list]** activity: the data in this activity is to be excluded from the main set.
+1. Wählen Sie im Feld **[!UICONTROL Ausschlussmenge]** die Aktivität **[!UICONTROL Liste lesen]** aus. Die von dieser Aktivität übermittelten Daten werden somit von der Hauptmenge ausgeschlossen.
 
-   In unserem Beispiel haben wir einen Ausschluss von Joins: Die in der Liste enthaltenen Daten werden über das Feld mit der E-Mail-Adresse mit den Daten des Hauptsatzes abgeglichen. Um die Verbindung zu konfigurieren, wählen Sie **[!UICONTROL Joins]** im **[!UICONTROL Change dimension]** Feld aus.
+   Im vorliegenden Beispiel handelt es sich um einen Ausschluss über einen Join: Die Daten der Liste werden über das E-Mail-Feld mit der Hauptmenge abgestimmt. Wählen Sie zur Konfiguration des Joins im Feld **[!UICONTROL Dimensionsänderung]** die Option **[!UICONTROL Join]** aus.
 
    ![](assets/s_advuser_list_read_sample_4.png)
 
