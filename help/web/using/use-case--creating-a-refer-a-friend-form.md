@@ -14,7 +14,7 @@ discoiquuid: bbb1154f-2818-489c-9860-0e860596cbf7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
 
 ---
@@ -70,7 +70,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    ![](assets/s_ncs_admin_survey_viral_sample_4b.png)
 
-1. Erstellen Sie dann die Bereitstellungsvorlage, die mit dem in Schritt 1 erstellten Informationsdienst verknüpft ist. Sie wird im **[!UICONTROL Choose scenario]** Bereich des Informationsdienstes ausgewählt.
+1. Erstellen Sie dann die Versandvorlage, die mit dem in Schritt 1 erstellten Informationsdienst verknüpft ist. Sie wird im Feld **[!UICONTROL Choose scenario]** des Informationsdienstes ausgewählt.
 
    Die Versandvorlage zur Erstellung der Freunde-Werben-Nachricht enthält die folgenden Informationen:
 
@@ -126,7 +126,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
-   The referee is added to the visitor folder in the **[!UICONTROL Administration > Visitors node]**:
+   Der Angeworbene wird zum Besucherordner im Knoten **[!UICONTROL Administration > Besucher]** hinzugefügt:
 
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
