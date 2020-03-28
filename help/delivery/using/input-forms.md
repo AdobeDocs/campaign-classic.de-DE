@@ -14,7 +14,7 @@ discoiquuid: abf097eb-ade5-479e-9e20-8bd6bc9d96aa
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -28,7 +28,7 @@ Weiterführende Informationen zu Formularen finden Sie in [diesem Abschnitt](../
 
 ## Formularstruktur {#form-structure}
 
-The XML document of an input form must contain the **`<form>`** root element with the **name** and **namespace** attributes to populate the form name and its namespace, respectively.
+Das XML-Dokument eines Formulars muss die Wurzel **`<form>`** mit den Attributen **name** und **namespace** zur Angabe des Formularnamens und des Namensraums enthalten.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -36,7 +36,7 @@ The XML document of an input form must contain the **`<form>`** root element wit
 </form>
 ```
 
-Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace hat. Um ein Formular mit einem anderen Namen zu verknüpfen, geben Sie den Schemaschlüssel im **entity-schema** -Attribut des **`<form>`** Elements ein.
+Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namensraum aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, geben Sie den Schemaschlüssel im Attribut **entity-schema** des **`<form>`**-Elements ein.
 
 Nachfolgend wird die Struktur eines Formulars anhand des Datenschemas &quot;cus:Buch&quot; verdeutlicht:
 
@@ -52,9 +52,9 @@ Das entsprechende XML-Dokument stellt sich wie folgt dar:
 </form>
 ```
 
-The description of the edit elements begins with the **`<form>`** root element.
+Die Beschreibung der Eingabeelemente beginnt bei der Wurzel **`<form>`**.
 
-An edit control is entered in an **`<input>`** element with the **xpath** attribute containing the path of the field in its schema.
+Ein Eingabefeld wird in einem **`<input>`**-Element mit seinem **xpath**-Attribut notiert, welches den Pfad des Felds in seinem Schema enthält.
 
 **Informationen zur XPath-Syntax:**
 
@@ -67,7 +67,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 Beispiele:
 
 * **@Datum**: markiert das Attribut mit Namen &quot;Datum&quot;;
-* **chapter/@title**: wählt das Attribut &quot;title&quot;unter dem `<chapter>` Element aus
+* **Kapitel/@Titel**: markiert das Attribut „Titel“ im Element `<chapter>`;
 * **../@Datum**: markiert das Datum des dem aktuellen Element übergeordneten Elternelements.
 
 Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet den im Schema angegebenen Titel.
@@ -76,7 +76,7 @@ Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten 
 
 >[!CAUTION]
 >
->The input form must reference a **type=&quot;contentForm&quot;** attribute on the **`<form>`** element to automatically add the frame required for content to be input.
+>Zur automatischen Formatierung als Formular muss auf ein Attribut **type=&quot;contentForm&quot;** im **`<form>`**-Element verweisen.
 
 ## Layout {#formatting}
 
@@ -103,7 +103,7 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 
 Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Kollektionselement verweisen.
 
-The columns are declared by the child **`<input>`** elements of the list.
+Die Spalten werden als Kindelemente der Liste (**`<input>`**) definiert.
 
 >[!NOTE]
 >
@@ -151,9 +151,9 @@ Dies ist in folgenden Fällen zu empfehlen:
 </input>
 ```
 
-Die Definition des Bearbeitungsformulars wird über das **`<form>`** Element unter dem Listenelement angegeben. Die Struktur des Formulars ist identisch mit der Struktur des Eingabefelds.
+Die Definition des Bearbeitungsformulars erfolgt über das **`<form>`**-Element unter dem Listenelement. Seine Struktur ist identisch mit der Struktur eines Eingabeformulars.
 
-Eine **[!UICONTROL Detail]** Schaltfläche wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** in die Listendefinition eingegeben wird. Dadurch können Sie das Bearbeitungsformular in der ausgewählten Zeile öffnen.
+Die **[!UICONTROL Detail]**-Schaltfläche wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** in der Definition der Liste angegeben ist. Sie ermöglicht den Aufruf des Bearbeitungsformulars in der ausgewählten Zeile.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Das Steuerelement &quot;Liste&quot; muss mit dem Attribut **type=&quot;notebookl
 
 Der Tab-Titel entspricht dem im Attribut **xpath-label** angegebenen Wert.
 
-The edit controls must be declared under a **`<container>`** element that is a child of the list control.
+Die Eingabefelder werden in einem **`<container>`**-Element, Kindelement des Listenelements, notiert.
 
 Mithilfe der Schaltflächen der Symbolleiste können Sie Elemente zur Liste hinzufügen oder von der Liste entfernen.
 
@@ -189,7 +189,7 @@ Mithilfe der Schaltflächen der Symbolleiste können Sie Elemente zur Liste hinz
 
 ## Container {#containers}
 
-Mit Behältern können Sie einen Satz von Steuerelementen gruppieren. Sie existieren über das **`<container>`** Element. Sie wurden bereits zur Formatierung von Steuerelementen in mehreren Spalten und zur Steuerung der Tab-Liste verwendet.
+Mit Containern können Sie einen Satz von Steuerelementen gruppieren. Sie sind über das **`<container>`**-Element verfügbar. Sie wurden bereits zur Formatierung von Steuerelementen in mehreren Spalten und zur Steuerung der Tab-Liste verwendet.
 
 Container und ihre Verwendung in Formularen werden in [diesem Abschnitt](../../configuration/using/form-structure.md#containers) näher beschrieben.
 
@@ -199,6 +199,6 @@ Der XML-Code des Formulars wird im Editor erfasst:
 
 ![](assets/d_ncs_content_form12.png)
 
-The **[!UICONTROL Preview]** tab lets you view the input form:
+Im **[!UICONTROL Vorschau]**-Tab können Sie das so erstellte Formular prüfen.
 
 ![](assets/d_ncs_content_form13.png)
