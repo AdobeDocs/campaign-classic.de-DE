@@ -14,7 +14,7 @@ discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -45,17 +45,17 @@ Es wird von folgendem Szenario ausgegangen:
 
 Bestätigungsnachrichten werden über eine spezielle Versandvorlage gesendet, die im temporären Dienst referenziert ist.
 
-1. Wählen Sie in **[!UICONTROL Explorer]** die **[!UICONTROL Resources > Templates > Delivery templates]**.
+1. Wählen Sie im **[!UICONTROL Explorer]** die Option **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** aus.
 1. Erstellen Sie eine Versandvorlage zum Senden der Anmeldebestätigung.
-1. Click the **[!UICONTROL To]** button in the **[!UICONTROL Email parameters]** to associate the delivery template with the Subscriptions target mapping instead of Recipients.
+1. Wählen Sie in den **[!UICONTROL E-Mail-Parametern]** die Schaltfläche **[!UICONTROL An]** aus, um die Versandvorlage mit dem Abonnement-Zielgruppen-Mapping anstelle der Empfänger zu verbinden.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
 1. Da die Empfänger dieses Versands ihre Anmeldung noch nicht bestätigt haben, stehen sie in der Datenbank noch auf der Blacklist. Damit diese Empfänger diese Nachricht empfangen können, müssen Sie den mit dieser Vorlage durchgeführten Versand genehmigen, um Empfänger auf der Blacklist ansprechen zu können.
 
-   To do this, click the **[!UICONTROL Exclusions]** tab.
+   Verwenden Sie dazu den Tab **[!UICONTROL Ausschlüsse]**.
 
-1. Klicken Sie auf den **[!UICONTROL Edit...]** Link und deaktivieren Sie die **[!UICONTROL Exclude recipients who no longer want to be contacted (blacklist)]** Option.
+1. Wählen Sie den Link **[!UICONTROL Bearbeiten...]** aus und deaktivieren Sie die Option **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert werden möchten (Blacklist)]**.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)
 
@@ -85,13 +85,13 @@ Der Webformular-Workflow umfasst die folgenden Aktivitäten:
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie ein Webformular und wählen Sie die Vorlage **[!UICONTROL Newsletter subscription (subNewsletter)]**.
+1. Erstellen Sie ein Webformular und wählen Sie die Vorlage **[!UICONTROL Newsletter-Anmeldung (subNewsletter)]** aus.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5a.png)
 
-1. In the **[!UICONTROL Edit]** tab, we need to configure the existing workflow since we want to add a confirmation message to the recipients who want to subscribe.
+1. Im Tab **[!UICONTROL Bearbeiten]** muss der vorhandene Workflow konfiguriert werden, da eine Bestätigungsnachricht an die Empfänger, die sich anmelden möchten, hinzugefügt werden soll.
 
-   To do so, double-click the **[!UICONTROL Preloading]** box and configure it as follows.
+   Doppelklicken Sie dazu auf die Aktivität **[!UICONTROL Vorausfüllen]** und konfigurieren Sie sie wie folgt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5b.png)
 
@@ -101,7 +101,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6e.png)
 
-   Die **[!UICONTROL Test]** Aktivität kann die Empfänger-E-Mail betreffen. In diesem Fall konfigurieren Sie es wie folgt:
+   Die **[!UICONTROL Test]**-Aktivität kann sich auf die Empfänger-E-Mail beziehen. Konfigurieren Sie sie in diesem Fall wie folgt:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6d.png)
 
@@ -109,7 +109,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   Die erste **[!UICONTROL Script]** Aktivität erscheint auf der schwarzen Liste der Empfänger, bis sie ihr Abonnement für den Newsletter bestätigt haben. Der Inhalt muss wie folgt lauten:
+   Mit der ersten **[!UICONTROL Script]**-Aktivität werden Empfänger auf die Blacklist gesetzt, bis sie ihre Anmeldung für den Newsletter bestätigt haben. Der Inhalt des Skripts muss wie folgt aussehen:
 
    ```
    ctx.recipient.@blackList=1
@@ -117,7 +117,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6bbis.png)
 
-   Die zweite **[!UICONTROL Script]** Aktivität erlaubt die Auslieferung an die Benutzer und abonniert sie zum Newsletter. Die letzten beiden Zeilen des Skripts ermöglichen es Ihnen, Empfänger aus dem temporären Ordner in einen anderen Ordner zu übertragen und mit vorhandenen Profilen abzustimmen, sobald diese das Abonnement bestätigt haben.
+   Mit der zweiten **[!UICONTROL Script]**-Aktivität werden Sendungen an die Besucher genehmigt. Außerdem ermöglicht sie die Anmeldung zum Newsletter. Die letzten beiden Zeilen des Skripts ermöglichen Ihnen den Transfer Ihrer Empfänger vom temporären Ordner in einen anderen Ordner und die Abstimmung mit vorhandenen Profilen, sobald die Anmeldung bestätigt wurde.
 
    ```
    ctx.recipient.@blackList=0
@@ -132,11 +132,11 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6b.png)
 
-1. Double-click the **[!UICONTROL Subscription]** activity to personalize the subscription form and link a checkbox with the temporary service previously created.
+1. Doppelklicken Sie auf die **[!UICONTROL Abonnement]**-Aktivität, um das Anmeldeformular anzupassen und eine Checkbox mit dem zuvor erstellten temporären Dienst zu verbinden.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5c.png)
 
-1. Configure the **[!UICONTROL Storage]** activity to save the information entered in the form page.
+1. Konfigurieren Sie die Aktivität **[!UICONTROL Speicherung]**, um die auf der Formularseite eingegebenen Informationen zu speichern.
 
    Mit dieser Aktivität können Sie Empfängerprofile in einem speziellen temporären Ordner erstellen. Damit können Sie sie von den Profilen in der Datenbank trennen, denen Nachrichten gesendet werden können.
 
@@ -146,9 +146,9 @@ Gehen Sie dazu wie folgt vor:
    >
    >Es dürfen keine Abstimmoptionen definiert werden.
 
-1. Add two **[!UICONTROL End]** activities to display a message for the user.
+1. Fügen Sie zwei **[!UICONTROL Ende]**-Aktivitäten hinzu, um dem Benutzer eine Nachricht anzuzeigen.
 
-   The second **[!UICONTROL End]** box will display the confirmation message once the subscription is complete.
+   Die zweite **[!UICONTROL Ende]**-Aktivität enthält die Bestätigungsnachricht, sobald die Anmeldung abgeschlossen ist.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5h.png)
 
