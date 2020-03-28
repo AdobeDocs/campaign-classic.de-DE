@@ -14,21 +14,21 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7655cd93a7dc8ecd35cd379da350ad279cae725
 
 ---
 
 
-# Berichte zu Auslieferungen{#reports-on-deliveries}
+# Über Versandberichte{#reports-on-deliveries}
 
 Adobe Campaign bietet diverse Berichte, auf die über die Konsole oder einen Webbrowser Zugriff besteht.
 
 Folgende Berichttypen stehen zur Verfügung:
 
-* Reports on the entire platform, see [Global reports](../../reporting/using/global-reports.md).
-* Bereitstellungsberichte, siehe [Bereitstellungsberichte](../../reporting/using/delivery-reports.md).
-* Kumulierte Berichte, siehe [Kumulative Berichte](../../reporting/using/cumulative-reports.md).
+* Berichte zur gesamten Plattform, siehe [Allgemeine Berichte](../../reporting/using/global-reports.md).
+* Versandberichte, siehe [Versandberichte](../../reporting/using/delivery-reports.md).
+* Zusammenfassende Berichte, siehe [Zusammenfassende Berichte](../../reporting/using/cumulative-reports.md).
 
 Der Zugriff auf Berichte ist über die Startseite der Clientkonsole, das Bericht-Dashboard oder die Versandliste möglich. Der Anzeigemodus eines Berichts hängt vom Kontext ab. Die wichtigsten Berichte stehen auf der Startseite zur Verfügung und ermöglichen einen schnellen Zugang zu Versanddaten. Die zugrunde liegende Liste kann Ihren Bedürfnissen entsprechend angepasst werden. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
