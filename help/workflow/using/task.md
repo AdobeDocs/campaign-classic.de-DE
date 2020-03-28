@@ -14,7 +14,7 @@ discoiquuid: ec6f9a10-ad84-4d9f-86e2-490539c2171b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Aufgabe{#task}
 
-In a campaign workflow, the **[!UICONTROL Task]** activity lets you specify two scenarios: the first if the task is completed and a second if the task is not completed (if it is manually marked as incomplete or if it expires).
+In Kampagnen-Workflows können mithilfe einer **[!UICONTROL Aufgabe]** zwei mögliche Szenarien definiert werden: Das erste kommt zum Tragen, wenn die Aufgabe beendet (im Sinn von erfüllt und wenn erforderlich validiert) wurde, das zweite, wenn die Aufgabe nicht beendet wurde. Dies ist beispielsweise der Fall, wenn der Benutzer die Erfüllung abgelehnt hat oder wenn sie überfällig ist.
 
 ![](assets/mrm_task_in_workflow.png)
 
@@ -30,4 +30,4 @@ Funktionsweise und Konfiguration von Aufgaben werden in diesem [Abschnitt](../..
 
 ![](assets/wkf_task_activity.png)
 
-Mit der **[!UICONTROL Resources]** Option können Sie mehrere Operatoren sowie einen Genehmigungsplan für die Aufgabe definieren. Wenn die Person, die die Genehmigung erteilt hat, diese ablehnt, führt dies nicht zur Ablehnung der Aufgabe selbst.
+In der Option **[!UICONTROL Ressourcen]** können die für die Erfüllung der Aufgabe verantwortlichen Benutzer sowie Angaben zu ihrer Validierung gemacht werden. Die Zurückweisung einer erfüllten Aufgabe durch den Validierungsverantwortlichen zieht nicht automatisch die Aktivierung der Transition &#39;Nicht beendet&#39; nach sich.
