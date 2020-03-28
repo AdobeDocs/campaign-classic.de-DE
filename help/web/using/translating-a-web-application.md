@@ -14,7 +14,7 @@ discoiquuid: 328e5b2f-8596-4eda-8ac5-57cb29bfb691
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 # Webanwendung übersetzen{#translating-a-web-application}
 
-Sie können Webseiten mit Adobe Campaign Digital Content Editor (DCE) übersetzen.
+Sie können Webanwendungsseiten übersetzen, die mit dem Adobe Campaign Digital Content Editor (DCE) erstellt wurden.
 
-If you select at least one additional language via the **[!UICONTROL Localization]** tab in the **[!UICONTROL Properties]** of a Web application, a new option becomes available when adding an HTML content block in a page edited with DCE.
+Wählen Sie mindestens eine weitere Sprache im Tab **[!UICONTROL Lokalisierung]** in den **[!UICONTROL Eigenschaften]** einer Webanwendung aus. Dadurch wird eine neue Option verfügbar, wenn Sie einen HTML-Inhaltsbaustein auf einer mit dem DCE bearbeiteten Seite hinzufügen.
 
 Mit dieser Option können Sie angeben, ob der Inhaltsbaustein übersetzt werden muss oder nicht.
 
-Zu übersetzende Zeichenfolgen werden auf die gleiche Weise wie die anderen Zeichenfolgen der Webanwendung über die **[!UICONTROL Translations]** Registerkarte der Anwendung erfasst. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/translating-a-web-form.md).
+Zu übersetzende Strings werden auf dieselbe Weise erfasst wie die anderen Strings der Webanwendung, nämlich über den Tab der Anwendung **[!UICONTROL Übersetzungen]**. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/translating-a-web-form.md).
 
 So kennzeichnen Sie die zu übersetzenden Strings:
 
@@ -37,7 +37,7 @@ So kennzeichnen Sie die zu übersetzenden Strings:
    ![](assets/dce_translation_3.png)
 
 1. Wählen Sie einen HTML-Baustein aus.
-1. Im Parameterblock auf der rechten Seite können Sie mit der **[!UICONTROL Localization]** Option den Inhalt des ausgewählten Blocks kennzeichnen. Standardmäßig wird nur der Seitentitel übersetzt.
+1. In den Baustein-Parametern auf der rechten Seite können Sie über die Option **[!UICONTROL Lokalisierung]** den Inhalt des ausgewählten Bausteins kennzeichnen. Standardmäßig ist nur der Seitentitel zur Übersetzung ausgewählt.
 
    ![](assets/dce_translation_1.png)
 
@@ -45,7 +45,7 @@ So kennzeichnen Sie die zu übersetzenden Strings:
    >
    >Strings dürfen maximal 1.023 Zeichen enthalten.
 
-   Es gibt drei konkrete Fälle:
+   Es gibt drei Fälle:
 
    * Wenn der ausgewählte Baustein mehrere Strings/Bausteine enthält, wird er als ein einzelner zu übersetzender String gekennzeichnet. Der String enthält dann den HTML-Code der Elemente innerhalb dieses Bausteins.
    * Wenn Sie einen Baustein kennzeichnen möchten, der mehrere Strings enthält und mindestens einer dieser Strings bereits gekennzeichnet ist, wird ein Warnhinweis angezeigt. Sie haben dann die Möglichkeit, die Kennzeichnung von dem einzelnen String zu entfernen und dem gesamten Baustein hinzuzufügen.
@@ -56,8 +56,8 @@ So kennzeichnen Sie die zu übersetzenden Strings:
 
       ![](assets/dce_translation_2.png)
 
-1. Once you have finished flagging the strings, go back to the Web application and select the **[!UICONTROL Translations]** tab.
-1.  Wählen Sie **[!UICONTROL Collect the strings to translate]**. Die in DCE gekennzeichneten Zeichenfolgen werden den Zeichenfolgen der Webanwendung hinzugefügt.
+1. Nachdem Sie die Strings fertig gekennzeichnet haben, kehren Sie zur Webanwendung zurück und wählen Sie den Tab **[!UICONTROL Übersetzungen]** aus.
+1. Wählen Sie **[!UICONTROL Zu übersetzende Strings abrufen]** aus. Die im DCE gekennzeichneten Strings werden daraufhin zu den Strings der Webanwendung hinzugefügt.
 
    >[!NOTE]
    >
@@ -65,5 +65,5 @@ So kennzeichnen Sie die zu übersetzenden Strings:
 
 1. Übersetzen und validieren Sie die Strings.
 
-   You can then preview the translations by selecting the desired language from the **[!UICONTROL Preview]** tab in the Web application.
+   Sie können die Übersetzungen in der Vorschau betrachten, indem Sie die gewünschte Sprache in der Webanwendung im Tab **[!UICONTROL Vorschau]** auswählen.
 
