@@ -14,7 +14,7 @@ discoiquuid: 4c0530b1-0292-45bc-8730-668bc5b8550b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -28,32 +28,32 @@ Die Aktivität **E-Mail-Empfang** ermöglicht den Abruf und die Verarbeitung von
 
 Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jeder Nachricht auszuführende Script an. Im zweiten Tab können Sie eine Planung für die Aktivität definieren und im dritten eine eventuelle Ablauffrist.
 
-1. **[!UICONTROL Inbound Emails]**
+1. **[!UICONTROL E-Mail-Empfang]**
 
-   * **[!UICONTROL Use an external account]**
+   * **[!UICONTROL Externes Konto verwenden]**
 
-      Wenn diese Option aktiviert ist, können Sie ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter einzugeben. Das **[!UICONTROL External account]** Feld gibt das externe POP3-Konto an, mit dem eine Verbindung zum E-Mail-Dienst hergestellt werden soll. Dieses Feld ist nur sichtbar, wenn die Option &quot;Externes Konto verwenden&quot;aktiviert ist.
+      Wenn diese Option aktiviert wird, können Sie direkt ein externes POP3-Konto auswählen, anstatt die Verbindungsparameter anzugeben. Im Feld **[!UICONTROL Externes Konto]** (nur sichtbar bei Aktivierung der Option) wird das zu verwendende POP3-Konto angezeigt, das die Verbindung zur Mailbox herstellt.
 
       Wenn die zuvor beschriebene Option nicht aktiviert wurde, sind folgende Parameter anzugeben:
 
       ![](assets/email_rec_edit_1b.png)
 
-      * **[!UICONTROL POP3 server]**
+      * **[!UICONTROL POP3-Server]**
 
          Name des POP3-Servers.
 
-      * **[!UICONTROL POP3 account]**
+      * **[!UICONTROL POP3-Konto]**
 
          Name des Benutzers.
 
-      * **[!UICONTROL Password]**
+      * **[!UICONTROL Passwort]**
 
          Passwort des Benutzerkontos.
 
       * **[!UICONTROL Port]**
 
          Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
-   * **[!UICONTROL Stop as soon as email is processed]**
+   * **[!UICONTROL Beenden, sobald eine E-Mail verarbeitet wurde]**
 
       Bei Auswahl dieser Option werden die E-Mails einzeln verarbeitet. Die Transition der Aktivität wird nur einmal aktiviert. Alle nicht verarbeiteten Nachrichten bleiben auf dem Server.
 
@@ -70,17 +70,17 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
    * 4 - Lässt die Nachricht auf dem Server.
    Auf den Inhalt der Nachricht kann über die allgemeine Variable **[!UICONTROL mailMessage]** zugegriffen werden.
 
-1. **[!UICONTROL Schedule]**
+1. **[!UICONTROL Planung]**
 
-   Um einen Zeitplan für die Aktivität zu definieren, klicken Sie auf die **[!UICONTROL Scheduling]** Registerkarte und aktivieren Sie **[!UICONTROL Plan execution]**. Klicken Sie auf die **[!UICONTROL Change]** Schaltfläche, um den Zeitplan zu konfigurieren.
+   Gehen Sie in den **[!UICONTROL Planung]**-Tab und kreuzen Sie die Option **[!UICONTROL Ausführung planen an]**. Klicken Sie anschließend auf die Schaltfläche **[!UICONTROL Ändern]**, um den Ausführungsrhythmus der Aktivität zu konfigurieren.
 
-   Die Konfiguration des Zeitplans ist mit der der Planungsaktivität identisch. Siehe [Zeitplan](../../workflow/using/scheduler.md).
+   Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Planung](../../workflow/using/scheduler.md).
 
-1. **[!UICONTROL Expiration]**
+1. **[!UICONTROL Ablauf]**
 
-   You can define expiration delays via the **[!UICONTROL Expiration]** tab.
+   Im **[!UICONTROL Ablauf]**-Tab können Ablauffristen für die Aktivität definiert werden.
 
    ![](assets/email_rec_edit_3.png)
 
-   Die Konfiguration ist mit der der Planungsaktivität identisch. Siehe [Ablauf](../../workflow/using/executing-a-workflow.md#expirations).
+   Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Timeouts](../../workflow/using/executing-a-workflow.md#expirations).
 
