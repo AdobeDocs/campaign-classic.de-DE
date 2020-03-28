@@ -14,7 +14,7 @@ discoiquuid: 4d72db10-29bd-4b3c-adb3-bead02890271
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -24,20 +24,20 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 In diesem Beispiel möchten wir einem Benutzer eine Warnung senden, die den Namen der Profile enthält, die einen Newsletter geöffnet, aber nicht auf den darin enthaltenen Link geklickt haben.
 
-Die Felder für Vor- und Nachnamen der Profile sind mit der **[!UICONTROL Recipients]** Targeting-Dimension verknüpft, während die **[!UICONTROL Alert]** Aktivität mit der **[!UICONTROL Operator]** Targeting-Dimension verknüpft ist. Daher steht zwischen den beiden Targeting-Dimensionen kein Feld zur Verfügung, um eine Abstimmung durchzuführen und die Felder mit dem Vor- und Nachnamen abzurufen und sie in der Warnhinweisaktivität anzuzeigen.
+Die Vor- und Nachname-Felder der Profile sind mit der Zielgruppendimension **[!UICONTROL Empfänger]** verknüpft, während die Aktivität **[!UICONTROL Warnung]** mit der Zielgruppendimension **[!UICONTROL Operator]** verknüpft ist. Deshalb ist bei den beiden Zielgruppendimensionen kein Feld verfügbar, um eine Abstimmung vorzunehmen, die Vor- und Nachname-Felder abzurufen und in der Warnungsaktivität anzuzeigen.
 
 Deshalb muss der folgende Workflow erstellt werden:
 
-1. Use a **[!UICONTROL Query]** activity to target data.
-1. Add a **[!UICONTROL JavaScript code]** activity into the workflow to save the population form the query to the instance variable.
+1. Wählen Sie mit der Aktivität **[!UICONTROL Abfrage]** die gewünschten Daten aus.
+1. Fügen Sie die Aktivität **[!UICONTROL JavaScript-Code]** in den Workflow ein, um die Population aus der Abfrage in der Instanzvariablen zu speichern.
 1. Verwenden Sie die Aktivität **[!UICONTROL Test]**, um die Populationsgröße festzustellen.
-1. Use an **[!UICONTROL Alert]** activity to send an alert to an operator, depending on the **[!UICONTROL Test]** activity result.
+1. Verwenden Sie die Aktivität **[!UICONTROL Warnung]**, um je nach Ergebnis der **[!UICONTROL Test]**-Aktivität eine Warnung an einen Benutzer zu senden.
 
 ![](assets/uc_operator_1.png)
 
 ## Die Population in der Instanzvariablen speichern {#saving-the-population-to-the-instance-variable}
 
-Add the code below into the **[!UICONTROL JavaScript code]** activity.
+Fügen Sie den unten stehenden Code zur Aktivität **[!UICONTROL JavaScript-Code]** hinzu.
 
 ```
 var query = xtk.queryDef.create(  
@@ -60,11 +60,11 @@ Achten Sie darauf, dass der JavaScript-Code mit Ihren Workflow-Informationen üb
 
 Um diese Informationen abzurufen, gehen Sie wie folgt vor:
 
-1. Klicken Sie mit der rechten Maustaste auf den ausgehenden Übergang aus der **[!UICONTROL Query]** Aktivität und wählen Sie dann **[!UICONTROL Display the target]**.
+1. Klicken Sie in der **[!UICONTROL Abfrage]**-Aktivität mit der rechten Maustaste auf die ausgehende Transition und wählen Sie dann **[!UICONTROL Ergebnis anzeigen...]**.
 
    ![](assets/uc_operator_4.png)
 
-1. Klicken Sie mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL Configure list]**.
+1. Klicken Sie mit der rechten Maustaste auf die Liste und wählen Sie dann **[!UICONTROL Liste konfigurieren]** aus.
 
    ![](assets/uc_operator_5.png)
 
@@ -84,9 +84,9 @@ var.recCount>0
 
 ## Warnung einrichten {#setting-up-the-alert}
 
-Now that the population has been added into the instance variable with the desired fields, you can add these information into the **[!UICONTROL Alert]** activity.
+Nachdem die Population zur Instanzvariablen mit den gewünschten Feldern hinzugefügt wurde, können Sie jetzt diese Informationen zur Aktivität **[!UICONTROL Warnung]** hinzufügen.
 
-To do this, add into the **[!UICONTROL Source]** tab the code below:
+Fügen Sie zu diesem Zweck den unten stehenden Code in das Tab **[!UICONTROL Quelle]** ein:
 
 ```
 <ul>
@@ -101,7 +101,7 @@ for each (var item in items){
 
 >[!NOTE]
 >
->The **[!UICONTROL <%= item.target.recipient.@fieldName %>]** command lets you add one of the fields that have been saved to the instance variable through the **[!UICONTROL JavaScript code]** activity.\
+>Mit dem Befehl **[!UICONTROL &lt;%= item.target.recipient.@fieldName %>]** können Sie eines der Felder hinzufügen, die mit der Aktivität **[!UICONTROL JavaScript-Code]** in der Instanzvariablen gespeichert wurden.\
 >Sie können beliebig viele Felder hinzufügen, vorausgesetzt diese wurden in den JavaScript-Code eingefügt.
 
 ![](assets/uc_operator_8.png)
