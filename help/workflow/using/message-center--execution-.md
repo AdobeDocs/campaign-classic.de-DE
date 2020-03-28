@@ -14,7 +14,7 @@ discoiquuid: dc3d8998-9493-4d71-b3e2-6f9531cb9bac
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -48,12 +48,12 @@ Weiterführende Informationen zur Konfiguration technischer Workflows für das M
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Verarbeitung der Batch-Ereignisse</span> <br /> </td> 
-   <td> <span class="uicontrol">batchEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">batchEventsProcessing</span> <br /> </td> 
    <td> Teilt die Batch-Ereignisse in eine Warteschlange ein, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Verarbeitung der Echtzeit-Ereignisse</span> <br /> </td> 
-   <td> <span class="uicontrol">rtEventsProcessing</span><br /> </td> 
+   <td> <span class="uicontrol">rtEventsProcessing</span> <br /> </td> 
    <td> Teilt die Echtzeit-Ereignisse in eine Warteschlange ein, bevor ihnen eine Nachrichtenvorlage zugeordnet wird. <br /> </td> 
   </tr> 
  </tbody> 
