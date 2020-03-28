@@ -14,7 +14,7 @@ discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -34,9 +34,9 @@ Dieses Kapitel bietet einen Überblick über die Verwaltung von Webanwendungen.
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
-## Anwendungsbereich {#web-application-scope}
+## Webanwendungsbereich {#web-application-scope}
 
-Webanwendungen in Adobe Campaign bieten Zugriff auf die folgenden Funktionen:
+Webanwendungen in Adobe Campaign bieten folgende Funktionen:
 
 * Erstellung eines Formulars mit mehreren Seiten
 * Mehrsprachige Umfrageverwaltung mit einem integrierten Übersetzungstool
@@ -51,7 +51,7 @@ Webanwendungen in Adobe Campaign bieten Zugriff auf die folgenden Funktionen:
 * Verwendung von Bildern, Videos, Hypertext-Links, Captcha etc.
 * Überwachung der Antworten in Echtzeit
 
-The optional **Survey** creation module offers the following additional functionalities:
+Das optionale Modul zur Umfrageerstellung (**Umfrage**) bietet die folgenden zusätzlichen Funktionen:
 
 * Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht in der ursprünglichen Datenvorlage enthalten sind
 * Erstellung spezieller Berichte
@@ -64,7 +64,7 @@ Gegenüber Webanwendungen verfügen Umfragen über eine vereinfachte grafische B
 >
 >Die allgemeinen Funktionen von Webformularen in Adobe Campaign werden in [diesem Abschnitt](../../web/using/about-web-forms.md) beschrieben.
 
-## Webanwendungs-Implementierung {#web-application-implementation}
+## Implementierung von Webanwendungen {#web-application-implementation}
 
 Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlichen:
 
@@ -75,14 +75,14 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
 1. Sie können nach Bedarf die Schritte zum Vorausfüllen, Testen und Speichern hinzufügen und das Zugriffskontrollsystem konfigurieren (hauptsächlich für Extranet-Publikationen).
 1. Publizieren Sie die Webanwendung, um sie im Extranet oder in Adobe Campaign verfügbar zu machen.
 
-## Erstkonfiguration der Webanwendung {#web-application-initial-configuration}
+## Erstkonfiguration von Webanwendungen {#web-application-initial-configuration}
 
-Webanwendungen werden über den **[!UICONTROL Web Applications]** Link in den Registerkarten **[!UICONTROL Campaigns]** und **[!UICONTROL Profiles and targets]** erstellt.
+Die Erstellung von Webanwendungen erfolgt über den Link **[!UICONTROL Webanwendungen]** in den Tabs **[!UICONTROL Kampagnen]** und **[!UICONTROL Profile und Zielgruppen]**.
 
-Webanwendungen werden im **[!UICONTROL Resources > Online > Web Applications]** Knoten der Adobe Campaign-Struktur gespeichert. Konfigurationen werden in die folgenden Ordner unterteilt:
+Gespeichert werden Webanwendungen im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Adobe Campaign-Baums. Konfigurationen befinden sich in folgenden Ordnern:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: enthält die Rendervorlagen für die Webformulardarstellung (Anwendungen und Umfragen). Mit der Vorlage können Sie das Formular erstellen. Es wird auch ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überladen werden. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Resources > Templates > Web application templates]**: enthält Formularvorlagen. Um ein Formular oder eine Webanwendung zu erstellen, müssen Sie mit einer Vorlage beginnen.
+* **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**: enthält die Rendering-Vorlagen für Webformulare (Anwendungen und Umfragen). Die Vorlage ermöglicht die Erstellung eines Formulars. Zusätzlich wird ein CSS-Stylesheet verwendet, das auf Vorlagenebene überschrieben werden kann. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält Formularvorlagen. Diese sind zur Erstellung eines Formulars oder einer Webanwendung erforderlich.
 
 ## Webanwendungsvorlagen {#web-application-templates}
 
@@ -90,9 +90,9 @@ Standardmäßig bietet Adobe Campaign für jede verfügbare Webanwendung eine Vo
 
 >[!NOTE]
 >
->You can convert an existing Web application into a template. To do this, select the form and right-click. Select **[!UICONTROL Actions > Save as template...]**.
+>Sie können eine vorhandene Webanwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]** aus.
 
-Sie können neue Vorlagen über den **[!UICONTROL Resources > Templates > Web Application templates]** Knoten der Adobe Campaign-Struktur erstellen.
+Neue Vorlagen werden im Adobe Campaign-Baum im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** erstellt.
 
 Im Erstellungsassistenten können Sie wie unten dargestellt die zu aktivierenden Optionen auswählen.
 
