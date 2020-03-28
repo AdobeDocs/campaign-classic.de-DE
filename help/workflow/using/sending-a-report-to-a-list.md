@@ -14,7 +14,7 @@ discoiquuid: 41b8a8a8-efac-4e8e-8aea-d4fd06c46e74
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -22,19 +22,19 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 # Bericht-Versand an eine Liste{#sending-a-report-to-a-list}
 
-This use case details how to generate a monthly out-of-the-box **[!UICONTROL Tracking indicators]** report in PDF format and how to send it to a list of recipients.
+Im folgenden Anwendungsbeispiel soll jeden Monat der Standardbericht zu den **[!UICONTROL Trackingindikatioren]** erzeugt und als PDF an eine Empfängerliste gesendet werden.
 
 ![](assets/use_case_report_intro.png)
 
 Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
-* Erstellen einer Liste der Empfänger, die die Bereitstellung erhalten werden (siehe: [Schritt 1: Erstellen der Empfängerliste](#step-1--creating-the-recipient-list)).
-* Creating a delivery template that will let you generate a new delivery each time the workflow is executed (refer to: [Step 2: Creating the delivery template](#step-2--creating-the-delivery-template)).
-* Creating a workflow that will let you generate the report in PDF format and send it to the list of recipients (refer to: [Step 3: Creating the workflow](#step-3--creating-the-workflow)).
+* Erstellen einer Liste von Empfängern, die den Versand erhalten werden (siehe [1. Schritt: Erstellung der Empfängerliste](#step-1--creating-the-recipient-list)).
+* Erstellung einer Versandvorlage, die bei jeder Workflow-Ausführung einen neuen Versand erzeugt (siehe ](#step-2--creating-the-delivery-template)2. Schritt: Erstellung der Versandvorlage[).
+* Erstellung eines Workflows, der den Bericht im PDF-Format erzeugt und an die Empfängerliste sendet (siehe ](#step-3--creating-the-workflow)3. Schritt: Erstellung des Workflows[).
 
 ## 1. Schritt: Erstellung der Empfängerliste {#step-1--creating-the-recipient-list}
 
-Gehen Sie zum **[!UICONTROL Profiles and targets]** Universum, klicken Sie auf den **[!UICONTROL Lists]** Link und dann auf die **[!UICONTROL Create]** Schaltfläche. Wählen Sie **[!UICONTROL New list]** und erstellen Sie eine neue Empfängerliste für den Bericht, an den gesendet werden soll.
+Gehen Sie in die Rubrik **[!UICONTROL Profile und Zielgruppen]** der Startseite. Klicken Sie auf die Schaltfläche **[!UICONTROL Listen]** und anschließend auf **[!UICONTROL Erstellen]**. Wählen Sie die Option **[!UICONTROL Neue Liste]** und fügen Sie die gewünschten Empfänger hinzu.
 
 ![](assets/use_case_report_1.png)
 
@@ -42,7 +42,7 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
 
 ## 2. Schritt: Erstellung der Versandvorlage {#step-2--creating-the-delivery-template}
 
-1. Wechseln Sie zum **[!UICONTROL Resources > Templates > Delivery templates]** Knoten des Adobe Campaign-Explorers und duplizieren Sie die **[!UICONTROL Email delivery]** vordefinierte Vorlage.
+1. Gehen Sie im Adobe-Campaign-Explorer in den Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** und duplizieren Sie die Vorlage **[!UICONTROL E-Mail-Versand]**.
 
    ![](assets/use_case_report_2.png)
 
@@ -52,19 +52,19 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
 
    ![](assets/use_case_report_3.png)
 
-1. Bei jeder Ausführung des Workflows wird der **[!UICONTROL Tracking indicators]** Bericht aktualisiert (siehe [Schritt 3: Erstellen des Workflows](#step-3--creating-the-workflow)). Um die neueste Version des Berichts in die Bereitstellung einzubeziehen, müssen Sie eine hinzufügen **[!UICONTROL Calculated attachment]**:
+1. Bei jeder Ausführung des Workflows wird der Bericht zu **[!UICONTROL Trackingindikatoren]** aktualisiert (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)). Um die neueste Version des Berichts in den Versand einzubeziehen, müssen Sie einen **[!UICONTROL berechneten Anhang]** hinzufügen:
 
    Weiterführende Informationen zur Erstellung eines berechneten Anhangs finden Sie in diesem [Abschnitt](../../delivery/using/attaching-files.md#creating-a-calculated-attachment).
 
-   * Klicken Sie auf den **[!UICONTROL Attachments]** Link und dann **[!UICONTROL Add]** auf **[!UICONTROL Calculated attachment]**.
+   * Klicken Sie auf den Link **[!UICONTROL Anhänge]**, dann auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Option **[!UICONTROL Berechneter Anhang...]** aus.
 
       ![](assets/use_case_report_4.png)
 
-   * Gehen Sie zum **[!UICONTROL Type]** Feld und wählen Sie die vierte Option aus: **[!UICONTROL File name is computed during delivery of each message (it may then depend on the recipient profile)]**.
+   * Wählen Sie im Feld **[!UICONTROL Typ]** die Option **[!UICONTROL Dateiname wird bei der Absendung für jede Nachricht berechnet (kann vom Empfänger abhängen)]** aus.
 
       ![](assets/use_case_report_5.png)
 
-      The value entered in the **[!UICONTROL Label]** field will not appear in the final delivery.
+      Der im Feld **[!UICONTROL Titel]** angegebene Wert erscheint nicht im tatsächlichen Versand.
 
    * Geben Sie im Eingabefeld den Pfad und den genauen Namen der Datei ein.
 
@@ -72,9 +72,9 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
 
       >[!CAUTION]
       >
-      >Die Datei muss sich auf dem Server befinden. Pfad und Name müssen mit denen identisch sein, die in der **[!UICONTROL JavaScript code]** Typaktivität des Workflows eingegeben wurden (siehe: [Schritt 3: Erstellen des Workflows](#step-3--creating-the-workflow)).
+      >Die Datei muss sich auf dem Server befinden. Pfad und Name müssen mit den Werten übereinstimmen, die in der **[!UICONTROL JavaScript-Code]**-Aktivität des Workflows eingegeben wurden (siehe [3. Schritt: Erstellung des Workflows](#step-3--creating-the-workflow)).
 
-   * Wählen Sie die **[!UICONTROL Advanced]** Registerkarte und aktivieren Sie **[!UICONTROL Script the name of the file name displayed in the mails sent]**. Gehen Sie zur Bearbeitungszone und geben Sie den Namen ein, den Sie der Anlage bei der endgültigen Auslieferung geben möchten.
+   * Gehen Sie in den **[!UICONTROL Erweitert]**-Tab und aktivieren Sie die Option **[!UICONTROL Script erstellen zur Berechnung des Dateinamens, der beim Empfänger angezeigt wird]**. Geben Sie im Eingabefeld den Namen für den Anhang im endgültigen Versand ein.
 
       ![](assets/use_case_report_6bis.png)
 
@@ -82,23 +82,23 @@ Weiterführende Informationen zum Erstellen von Listen finden Sie in diesem [Abs
 
 Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
 
-* One **[!UICONTROL Scheduler]** type activity that lets you execute the workflow once a month,
-* One **[!UICONTROL JavaScript code]** type activity that lets you generate the report in PDF format,
-* one **[!UICONTROL Delivery]** type activity that uses the previously created delivery template.
+* **[!UICONTROL Planung]**, um die Workflow-Ausführung jeden Monat zu wiederholen,
+* **[!UICONTROL JavaScript-Code]**, um den Bericht im PDF-Format zu erzeugen,
+* **[!UICONTROL Versand]**, basierend auf der zuvor erstellten Vorlage.
 
 ![](assets/use_case_report_8.png)
 
-1. Wechseln Sie nun zum **[!UICONTROL Administration > Production > Technical workflows]** Knoten und erstellen Sie einen neuen Workflow.
+1. Gehen Sie in den Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** und erstellen Sie einen neuen Workflow.
 
    ![](assets/use_case_report_7.png)
 
-1. Start by adding a **[!UICONTROL Scheduler]** type activity and configure it so that the workflow executes on the first Monday of the month.
+1. Ziehen Sie eine **[!UICONTROL Planung]** in das Diagramm und konfigurieren Sie sie dahingehend, dass der Workflow an jedem ersten Montag eines Monats ausgeführt wird.
 
    ![](assets/use_case_report_9.png)
 
-   For more on configuring the scheduler, refer to [Scheduler](../../workflow/using/scheduler.md).
+   Weiterführende Informationen zur Konfiguration der Planung finden Sie im Abschnitt [Planung](../../workflow/using/scheduler.md).
 
-1. Fügen Sie dann eine **[!UICONTROL JavaScript code]** Typaktivität hinzu.
+1. Schließen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität an.
 
    ![](assets/use_case_report_10.png)
 
@@ -122,16 +122,16 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
 
       >[!CAUTION]
       >
-      >Die Datei muss auf dem Server gespeichert werden. Sie müssen denselben Pfad und denselben Namen auf der **[!UICONTROL General]** Registerkarte des Bearbeitungsfensters für die berechnete Anlage eingeben (siehe: [Schritt 2: Erstellen der Bereitstellungsvorlage](#step-2--creating-the-delivery-template)).
+      >Die Datei muss auf dem Server gespeichert werden. Sie müssen für den berechneten Anhang denselben Pfad und denselben Namen wie auf dem Tab **[!UICONTROL Allgemein]** des Bearbeitungsfensters eingeben (siehe [2. Schritt: Erstellung der Versandvorlage](#step-2--creating-the-delivery-template)).
 
    * **var exportFormat**: Format des Anhangs (&quot;PDF&quot;).
-   * **var_ctx** (context): In diesem Fall nutzen wir den **[!UICONTROL Tracking indicators]** Bericht in seinem globalen Kontext.
+   * **var _ctx** (Kontext): Im vorliegenden Beispiel wird der Bericht **[!UICONTROL Trackingindikatoren]** im allgemeinen Kontext verwendet.
 
-1. Finish by adding a **[!UICONTROL Delivery]** type activity with the following options:
+1. Fügen Sie abschließend einen **[!UICONTROL Versand]** an und wählen Sie folgende Optionen:
 
-   * **[!UICONTROL Delivery]**: Wählen Sie **[!UICONTROL New, created from a template]** die zuvor erstellte Bereitstellungsvorlage aus.
-   * Wählen Sie für die **[!UICONTROL Recipients]** und **[!UICONTROL Content]** die Felder **[!UICONTROL Specified in the delivery]**.
-   * **[!UICONTROL Action to execute]**: auswählen **[!UICONTROL Prepare and start]**.
-   * Deaktivieren **[!UICONTROL Generate an outbound transition]** und **[!UICONTROL Process errors]**.
+   * Im Bereich **[!UICONTROL Versand]**: Aktivieren Sie die Option **[!UICONTROL Neu, basierend auf einer Vorlage erstellt]** und wählen Sie die zuvor erstellte Vorlage aus.
+   * In den Bereichen **[!UICONTROL Empfänger]** und **[!UICONTROL Inhalt]**: Aktivieren Sie **[!UICONTROL Werden bzw. Wird im Versand angegeben]**.
+   * Im Bereich **[!UICONTROL Auszuführende Aktion]**: Aktivieren Sie **[!UICONTROL Vorbereiten und starten]**.
+   * Deaktivieren Sie die Optionen **[!UICONTROL Ausgehende Transition erzeugen]** und **[!UICONTROL Fehler verarbeiten]**.
    ![](assets/use_case_report_11.png)
 
