@@ -14,7 +14,7 @@ discoiquuid: d1f591d2-95e8-4d99-bc60-955c96b532eb
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,20 +22,20 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Verarbeitungsdauer{#message-center-processing-time}
 
-Dieser Bericht zeigt die wichtigsten Indikatoren für die Echtzeitwarteschlange an. Dieser Bericht, der an technische Administratoren gerichtet ist, kann auch über das **[!UICONTROL Monitoring]** Universum in der Kontrollinstanz aufgerufen werden.
+Dieser Bericht zeigt die wichtigsten Kennzahlen für die Echtzeit-Warteschlange. Der für erfahrene Benutzer bestimmte Bericht ist auch über die Rubrik **[!UICONTROL Monitoring]** der Kontrollinstanz zugänglich.
 
 ![](assets/mc_reports_2.png)
 
-Genau wie im **[!UICONTROL Message Center service level]** Bericht können Sie die Gesamtstatistik oder die Statistiken im Verhältnis zu einer bestimmten Ausführungsinstanz anzeigen. Sie können die Daten auch nach Kanal und über einen bestimmten Zeitraum filtern. Die im **[!UICONTROL Indicators over the period]** Abschnitt angezeigten Indikatoren werden über den ausgewählten Zeitraum berechnet:
+Wie auch im Bericht **[!UICONTROL Message Center Dienstqualität]** können entweder allgemeine oder auf eine bestimmte Ausführungsinstanz bezogene Statistiken angezeigt werden. Die im Bereich **[!UICONTROL Kennzahlen über die Periode]** angezeigten Kennzahlen werden entsprechend dem gewählten Zeitraum gefiltert:
 
-* **[!UICONTROL Average queuing time]** : die durchschnittliche Zeit, mit der im Message Center verbrachte Ereignisse erfolgreich verarbeitet wurden. Nur die Verarbeitungszeit wird berücksichtigt.
-* **[!UICONTROL Average message sending time (s)]** : die durchschnittliche Zeit, mit der im Message Center verbrachte Ereignisse erfolgreich verarbeitet wurden. Nur die Datenbereitstellungszeit wird berücksichtigt.
-* **[!UICONTROL Average processing time (s)]** : die durchschnittliche Zeit, mit der im Message Center verbrachte Ereignisse erfolgreich verarbeitet wurden. Bei der Berechnung werden die Verarbeitungszeit und die Sendezeit berücksichtigt.
-* **[!UICONTROL Maximum number of queued events]** : maximale Anzahl von Ereignissen, die sich zu einem bestimmten Zeitpunkt in der Warteschlange des Nachrichtenzentrums befinden.
-* **[!UICONTROL Minimum number of queued events]** : Mindestanzahl von Ereignissen, die zu einem bestimmten Zeitpunkt in der Warteschlange des Nachrichtenzentrums vorhanden sind.
-* **[!UICONTROL Average number of queued events]** : durchschnittliche Anzahl von Ereignissen, die zu einem bestimmten Zeitpunkt in der Warteschlange des Nachrichtenzentrums vorhanden sind.
+* **[!UICONTROL Durchschnittliche Verweildauer in der Warteschlange (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Verarbeitungsdauer berücksichtigt.
+* **[!UICONTROL Durchschnittliche Sendungsdauer (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Dauer des Versands durch die MTAs berücksichtigt.
+* **[!UICONTROL Durchschnittliche Verarbeitungsdauer (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Die Berechnung berücksichtigt die Verarbeitungs- und MTA-Versanddauer.
+* **[!UICONTROL Maximale Anzahl an Ereignissen in der Warteschlange]**: Maximale Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
+* **[!UICONTROL Minimale Anzahl an Ereignissen in der Warteschlange]**: Minimale Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
+* **[!UICONTROL Durchschnittliche Anzahl an Ereignissen in der Warteschlange]**: Durchschnittliche Anzahl der zum gleichen Zeitpunkt in der Message-Center-Warteschlange vorhandenen Ereignisse.
 
 >[!NOTE]
 >
->Die Schwellenwerte für Warnung (orange) und Warnung (rot) können im Adobe Campaign-Bereitstellungsassistenten konfiguriert werden. Siehe [Überwachungsschwellenwerte](../../message-center/using/monitoring-thresholds.md).
+>Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Software-Verteilungs-Assistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/monitoring-thresholds.md).
 
