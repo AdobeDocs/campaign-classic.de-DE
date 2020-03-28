@@ -14,7 +14,7 @@ discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 215e4d1ca78938b38b53cae0357612deebf7727b
 
 ---
@@ -42,11 +42,11 @@ Sie haben daher die Möglichkeit, den Inhalt eines Angebots für gewisse Platzie
 
 Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
-1. Klicken Sie auf die **[!UICONTROL Approval]** Schaltfläche und wählen Sie **[!UICONTROL Approve content]** im Popup aus.
+1. Klicken Sie im Angebots-Dashboard auf die Schaltfläche **[!UICONTROL Validierung]** und wählen Sie im Kontextmenü die Option **[!UICONTROL Inhalt validieren]** aus.
 
    ![](assets/offer_validate_002.png)
 
-1. Using the drop-down list, select the representations you want to keep editing or those you want to publish to the live environment, then click **[!UICONTROL Content approval]**.
+1. Geben Sie für jede Angebotsdarstellung mithilfe der Dropdown-Liste an, ob sie für die Live-Umgebung aktiviert oder in der Design-Umgebung in Bearbeitung gelassen werden soll. Bestätigen Sie Ihre Wahl durch Klick auf die Schaltfläche **[!UICONTROL Inhaltsvalidierung]**.
 
    ![](assets/offer_validate_003.png)
 
@@ -56,7 +56,7 @@ Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
    >[!NOTE]
    >
-   >Die **[!UICONTROL Content approved]** Erwähnung bedeutet nicht, dass alle Angebotsdarstellungen aktiviert und genehmigt wurden. Es zeigt an, dass der Prozess zur Inhaltsgenehmigung erreicht wurde, unabhängig davon, ob alle Angebote aktiviert/genehmigt wurden oder nicht.
+   >Die Kennzeichnung **[!UICONTROL Inhalt validiert]** bedeutet nicht, dass alle Angebotsdarstellungen aktiviert und validiert wurden. Sie bedeutet, dass der Inhaltsvalidierungsprozess abgeschlossen ist, unabhängig davon, ob alle Angebote aktiviert/validiert wurden oder nicht.
 
 ## Angebotseignungen validieren {#approving-offer-eligibility}
 
@@ -66,11 +66,11 @@ Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot
 >
 >Sobald Inhalt und Eignung eines Angebots validiert wurden, startet automatisch der Publikations-Workflow (Angebotsbenachrichtigung), welcher das Angebot in die Live-Umgebung dupliziert und für die aktivierten Platzierungen verfügbar macht.
 
-* Die vollständige Liste der Regeln können Sie durch Klicken auf **[!UICONTROL Schedule and eligibility rules]**.
+* Um eine Übersicht aller konfigurierten Regeln zu erhalten, klicken Sie auf **[!UICONTROL Planung und Eignungsregeln des Angebots]**.
 
    ![](assets/offer_validate_005.png)
 
-* Um die Berechtigungsregeln zu ändern, klicken Sie auf **[!UICONTROL Reject]** und dann auf **[!UICONTROL Eligibility approval]**.
+* Falls Sie die Eignungsregeln ändern möchten, müssen Sie die Eignung zunächst **[!UICONTROL Ablehnen]**. Bestätigen Sie Ihre Wahl durch Klick auf die Schaltfläche **[!UICONTROL Eignungsvalidierung]**.
 
    ![](assets/offer_validate_007.png)
 
@@ -78,11 +78,11 @@ Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot
 
    ![](assets/offer_validate_006.png)
 
-* To accept the offer eligibility, click **[!UICONTROL Approve eligibility]**.
+* Um die Eignung eines Angebots zu akzeptieren, klicken Sie auf die Schaltfläche **[!UICONTROL Eignung validieren]**.
 
    ![](assets/offer_validate_008.png)
 
-   Approve eligibility, add a comment if necessary, then click **[!UICONTROL Eligibility approval]**.
+   Kreuzen Sie die Option Akzeptieren an, geben Sie gegebenenfalls einen Kommentar ein und klicken Sie zur Bestätigung auf **[!UICONTROL Eignungsvalidierung]**.
 
    ![](assets/offer_validate_009.png)
 
@@ -92,27 +92,27 @@ Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot
 
 ## Validierungsverfolgung {#approval-tracking}
 
-Die Genehmigungsverfolgung ist im Angebots-Dashboard verfügbar. Klicken Sie auf **[!UICONTROL Hide/display logs]** , um darauf zuzugreifen.
+Der Validierungsverlauf kann im Dashboard nachvollzogen werden. Klicken Sie hierfür auf den Link **[!UICONTROL Protokoll anzeigen/ausblenden]**.
 
 ![](assets/offer_validate_012.png)
 
 >[!NOTE]
 >
->Tracking is also available in the **[!UICONTROL Audit]** tab of the offer, with details of reviewers&#39; comments.
+>Auf den Verlauf kann auch im Tab **[!UICONTROL Verfolgung]** des Angebots zugegriffen werden. Hier werden zusätzlich die Kommentare der validierenden Benutzer angezeigt.
 
 ## Validierungen zurücksetzen {#restart-the-approval}
 
 Sie haben die Möglichkeit, eine bereits erfolgte Validierung zurückzusetzen. Gehen Sie wie folgt vor:
 
-1. Klicken Sie **[!UICONTROL Content approved]** auf das Angebotsdashboard.
-1. Wählen Sie im daraufhin angezeigten **[!UICONTROL Edit]** Fenster die zu startende Genehmigung aus und klicken Sie dann auf **[!UICONTROL Re-initialize approval to submit it again]**.
-1. Confirm by clicking **[!UICONTROL Ok]**.
+1. Klicken Sie im Dashboard auf den Link **[!UICONTROL Inhalt validiert]**.
+1. Markieren Sie im sich öffnenden **[!UICONTROL Bearbeiten]**-Fenster die Validierung, die rückgängig gemacht werden soll, und klicken Sie auf den Link **[!UICONTROL Validierung zurücksetzen, um sie erneut durchzuführen]**.
+1. Klicken Sie zur Bestätigung der Zurücksetzung auf **[!UICONTROL OK]**.
 
 ![](assets/offer_validate_013.png)
 
 ## Angebote freigeben {#publishing-the-offer}
 
-Sobald der Inhalt und die Berechtigung eines Angebots genehmigt wurden, wird das Angebot durch einen Workflow veröffentlicht, der automatisch für jedes Angebot ausgeführt wird, dessen Genehmigungszyklus abgeschlossen ist. Der **[!UICONTROL Offer notification]** Workflow wird außerdem stündlich ausgeführt, um die im Angebotskatalog enthaltenen Bereiche und Kategorien (falls erforderlich) von der Designumgebung zur Live-Umgebung zu synchronisieren.
+Nach Validierung wird das Angebot für die Live-Umgebung freigegeben. Dies geschieht mithilfe eines technischen Workflows, der automatisch startet, sobald der Validierungszyklus eines Angebots abgeschlossen wurde. Der Workflow **[!UICONTROL Angebotsbenachrichtigung]** startet darüber hinaus stündlich, um die Platzierungen und im Angebotskatalog enthaltene Kategorien der Design-Umgebung mit denen der Live-Umgebung zu synchronisieren.
 
 Das Angebots-Dashboard in der Design-Umgebung enthält alle Informationen bezüglich seiner Freigabe für die Live-Umgebung, insbesondere den dortigen Angebotstitel.
 
@@ -126,9 +126,9 @@ Bei freigegebenen Angeboten werden Sie durch Klick auf den Angebotstitel in die 
 
 Es besteht die Möglichkeit, bereits validierte Angebote zu deaktivieren.
 
-To do this, go to the dashboard for an online offer or an offer waiting to go online, then click **[!UICONTROL Disable offer]**.
+Klicken Sie hierfür im Dashboard des entsprechenden Angebots auf die Schaltfläche **[!UICONTROL Angebot deaktivieren]**.
 
-You can also directly disable a category by going to the **[!UICONTROL Eligibility]** tab and checking the **[!UICONTROL Enabled]** box.
+Sie können darüber hinaus auch ganze Angebotskategorien deaktivieren. Gehen Sie hierfür auf Kategorieebene in den Tab **[!UICONTROL Eignung]** und entfernen Sie das Kreuz im Feld **[!UICONTROL Aktiviert]**.
 
 >[!NOTE]
 >
