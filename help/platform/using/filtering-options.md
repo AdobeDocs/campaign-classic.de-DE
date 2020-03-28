@@ -14,7 +14,7 @@ discoiquuid: 199eb687-3da6-49c1-9997-ef1cbd2647b6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -32,14 +32,14 @@ Diese Daten können über die Optionen im oberen Bereich des Browserfensters gef
 
 Es gibt unterschiedliche Möglichkeiten, die angezeigten Informationen zu filtern und zu ordnen. Wenn nötig, können sie auch kumuliert werden:
 
-* Nach Ordnern filtern, siehe [Nach Ordner](#filter-by-folder)filtern,
+* Ordner-Filter, siehe [Ordnerfilter](#filter-by-folder),
 * Filtern nach Status, siehe [Filtern nach Status](#filter-by-status),
-* Datensortierung, siehe [Reihenfolge nach](#order-by),
+* Datensortierung, siehe [Sortierreihenfolge](#order-by),
 * Suchen, siehe [Schnellsuche](#quick-search).
 
 ## Nach Ordner filtern {#filter-by-folder}
 
-Click the **[!UICONTROL Folder]** icon to select the folder containing the data to display.
+Klicken Sie auf das **[!UICONTROL Ordner]**-Symbol, um den Ordner auszuwählen, der die anzuzeigenden Daten enthält.
 
 ![](assets/filter_web_select_folder.png)
 
