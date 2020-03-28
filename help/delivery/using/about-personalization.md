@@ -14,7 +14,7 @@ discoiquuid: 43afd347-6600-409a-8f67-a4f3e9776d51
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 ---
@@ -22,12 +22,12 @@ source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
 
 # Über die Personalisierung{#about-personalization}
 
-Von Adobe Campaign bereitgestellte Nachrichten können auf verschiedene Weise personalisiert werden, zum Inhalt oder zum Erscheinungsbild von Nachrichten. Diese Methoden können nach Kriterien kombiniert werden, die speziell aus den Empfängerprofilen genommen werden. Bei E-Mail-Auslieferungen können Sie die Elemente und Personalisierungsbedingungen einer Auslieferung direkt in JavaScript auf der **[!UICONTROL Source]** Registerkarte der Nachricht definieren. Im Allgemeinen bietet Adobe Campaign folgende Möglichkeiten:
+Die mit Adobe Campaign versendeten Nachrichten können in verschiedener Hinsicht personalisiert werden. Sowohl Inhalt als auch Rendering der Mitteilungen können dem Empfängerprofil entsprechend angepasst werden. Bei E-Mail-Sendungen haben Sie die Möglichkeit, Personalisierungselemente und -bedingungen direkt in JavaScript über den **[!UICONTROL Quelle]**-Tab der Nachricht zu definieren. Im Allgemeinen ermöglicht es Ihnen Adobe Campaign:
 
-* Personalisieren Sie das Nachrichtenformat. Siehe [Nachrichteninhalt](../../delivery/using/defining-the-email-content.md#message-content).
+* Das Nachrichtenformat personalisieren. Siehe [Nachrichteninhalt](../../delivery/using/defining-the-email-content.md#message-content).
 * Dynamische Personalisierungsfelder einfügen. Siehe [Personalisierungsfelder](../../delivery/using/personalization-fields.md).
-* Vordefinierte Personalisierungsbausteine einfügen. Siehe [Personalisierungsblöcke](../../delivery/using/personalization-blocks.md).
-* Bedingte Inhalte erstellen. Siehe Abschnitt [Bedingter Inhalt](../../delivery/using/conditional-content.md) .
+* Vordefinierte Personalisierungsbausteine einfügen. Siehe [Gestaltungsbausteine](../../delivery/using/personalization-blocks.md).
+* Bedingte Inhalte erstellen. Siehe Abschnitt [Bedingter Inhalt](../../delivery/using/conditional-content.md).
 
 >[!CAUTION]
 >
