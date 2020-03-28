@@ -14,7 +14,7 @@ discoiquuid: 3ad38469-8e22-4bfc-8029-5d360f76d6bb
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -26,7 +26,7 @@ Bitte beachten Sie folgende Hinweise, um eine optimale Funktionsweise des Editor
 
 * Bevor Sie in Adobe Campaign eine **HTML-Vorlage importieren**, ist sicherzustellen, dass die Vorlage korrekt geöffnet und in den verschiedenen Browsern angezeigt werden kann.
 * Wenn die HTML-Seite **JavaScript**-Elemente enthält, müssen diese außerhalb des Editors **fehlerfrei** ausführbar sein.
-* Bei der Erstellung einer Vorlage wird empfohlen, den Tags ein **&#39;type&#39;**-Attribut beizufügen. `<input>` Diese Informationen werden vom Editor verarbeitet und helfen dem Benutzer, beim Konfigurieren der Webanwendung ein Feld der Datenbank mit dem Formularfeld zu verknüpfen.
+* Bei der Erstellung einer Vorlage wird empfohlen, den Tags ein **&#39;type&#39;**-Attribut beizufügen. `<input>` Beim Konfigurieren von Webanwendungen hilft die Interpretation dieser Information durch den Editor dem Benutzer bei der Zuordnung von einem Feld der Datenbank zu dem Feld des Formulars.
 
    Beispiel eines HTML-Codes in einer Vorlage:
 
@@ -38,13 +38,13 @@ Bitte beachten Sie folgende Hinweise, um eine optimale Funktionsweise des Editor
 
    ![](assets/dce_sidebar_inputtypechanges.png)
 
-   Die offizielle Liste der &quot;type&quot; Attribute ist [auf dieser Website](https://www.w3schools.com/tags/att_input_type.asp)verfügbar.
+   Die offizielle Liste der „type“-Attribute ist [auf dieser Website](https://www.w3schools.com/tags/att_input_type.asp) verfügbar.
 
 * Schritte zur Simulation einer Endseite mit dem DCE:
 
    ![](assets/dce_enchainement.png)
 
-* Make sure that there is only one `<body> </body>` in the page.
+* Achten Sie darauf, dass `<body> </body>` auf der Seite nur einmal vorkommt.
 * Beim Hochladen einer CSS- oder JS-Datei werden die in der ZIP-Datei enthaltenen Bilder nicht hochgeladen. Die in der CSS-Datei vorhandenen Referenzen auf diese Bilder werden deshalb nicht aktualisiert.
 
 ## Vom Content Editor unterstützte Formate {#content-editor-supported-formats}
@@ -56,7 +56,7 @@ Die Importfunktion des Digital Content Editors funktioniert mit diesen unterstü
 * CSS: Die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Referenzen auf diese Bilder in der CSS-Datei werden nicht aktualisiert.
 * JS: Die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Referenzen auf diese Bilder in der JS-Datei werden nicht aktualisiert.
 * Iframe: Die verknüpften Seiten werden nicht importiert.
-* Einstiegsseiten und Web-Apps: Wenn ein **form** -Tag fehlt, wird eine Warnung angezeigt. Eine `<form> </form>` muss immer im Nachrichtentext vorhanden sein.
+* Landingpages und Webanwendungen: Wenn ein **form**-Tag fehlt, wird eine Warnung angezeigt. Im Nachrichtentext muss immer ein `<form> </form>` vorhanden sein.
 
 Der Digital Content Editor unterstützt auch die folgenden Code-Seiten:
 
