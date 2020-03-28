@@ -14,7 +14,7 @@ discoiquuid: 695cf33f-1cc7-4ae8-8ef6-05aa65219411
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -30,7 +30,7 @@ Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zieldimension ex
 
    Kategorien können automatisch durch die Validierung oder manuell in der Live-Umgebung publiziert werden.
 
-   Die Vorgehensweise zum Genehmigen von Angeboten wird im Abschnitt [Genehmigen und Aktivieren eines Angebots](../../interaction/using/approving-and-activating-an-offer.md) beschrieben.
+   Die Vorgehensweise zum Validieren von Angeboten wird im Abschnitt [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md) beschrieben.
 
 * eine Live-Umgebung, in der die in der Design-Umgebung validierten bzw. definierten Angebote sowie die verschiedenen Platzierungen, Filter, Kategorien und Regeln zur Verfügung stehen. Bei einer Abfrage des Angebotsmoduls greift dieses ausschließlich auf die Angebote der Live-Umgebung zu.
 
