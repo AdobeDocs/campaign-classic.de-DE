@@ -14,7 +14,7 @@ discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ## Einleitung {#introduction}
 
-Wenn Sie in der Struktur von Adobe Campaign navigieren (über das **[!UICONTROL Explorer]** Menü auf der Homepage), werden die in der Datenbank enthaltenen Daten in Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die vom Operator benötigten Daten angezeigt werden. Aktionen können dann für die gefilterten Daten gestartet werden. Mit der Filterkonfiguration können Sie Daten aus einer Liste auswählen **[!UICONTROL dynamically]**. Wenn die Daten geändert werden, werden die gefilterten Daten aktualisiert.
+Beim Navigieren im Adobe-Campaign-**[!UICONTROL Explorer]** (zugänglich über die entsprechende Schaltfläche auf der Startseite) werden die Informationen der Datenbank in Form von Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die dem Benutzer nützlichen Elemente angezeigt werden. Auf den gefilterten Daten können dann Aktionen gestartet werden. Die Filterkonfiguration ermöglicht eine **[!UICONTROL dynamische]** Auswahl von Daten einer Liste. Bei Datenänderungen werden die gefilterten Daten automatisch aktualisiert.
 
 >[!NOTE]
 >
->Die Anzeigekonfiguration wird lokal auf Workstation-Ebene definiert. Es wird in versteckten Dateien gespeichert, und es kann manchmal notwendig sein, diese Daten zu bereinigen, insbesondere wenn beim Aktualisieren von Daten Probleme auftreten. Verwenden Sie dazu das **[!UICONTROL File > Clear the local cache]** Menü.
+>Die Anzeige wird lokal am Arbeitsplatz konfiguriert und in verborgenen Dateien gespeichert. Insbesondere im Fall von Problemen bei der Datenaktualisierung kann es nützlich sein, diese Daten zu bereinigen. Gehen Sie hierzu ins Menü **[!UICONTROL Datei > Lokalen Cache leeren]**.
 
 ## Typologie verfügbarer Filter {#typology-of-available-filters}
 
@@ -48,7 +48,7 @@ Folgende Filtertypen sind in Adobe Campaign verfügbar:
   >
   >The **%** character replaces any character string. For example, the string `%@yahoo.com` lets you display all the profiles with an e-mail address in the domain "yahoo.com".
 -->
-Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden Sie unter [Ändern des Standardfilters](#altering-the-default-filter).
+Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden Sie unter [Standardfilter ändern](#altering-the-default-filter).
 
 * Einfache Filter
 
@@ -58,15 +58,15 @@ Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden
 
    ![](assets/filters_recipient_simple_filter.png)
 
-   Einfache Filter werden unter [Erstellen eines einfachen Filters](#creating-a-simple-filter)ausführlich beschrieben.
+   Einfache Filter werden unter [Einfache Filter erstellen](#creating-a-simple-filter) ausführlich beschrieben.
 
 * Erweiterte Filter
 
    **Erweiterte Filter** werden basierend auf einer Abfrage oder einer Kombination von Abfragen über die Daten erstellt.
 
-   Weitere Informationen zum Erstellen eines erweiterten Filters finden Sie unter [Erstellen eines erweiterten Filters](#creating-an-advanced-filter).
+   Weitere Informationen zum Erstellen eines erweiterten Filters finden Sie unter [Erweiterte Filter erstellen](#creating-an-advanced-filter).
 
-   Sie können Funktionen verwenden, um den Inhalt des Filters zu definieren. Weitere Informationen finden Sie unter [Erstellen eines erweiterten Filters mit Funktionen](#creating-an-advanced-filter-with-functions).
+   Sie können Funktionen verwenden, um den Inhalt des Filters zu definieren. Weitere Informationen finden Sie unter [Erweiterte Filter mit Funktionen erstellen](#creating-an-advanced-filter-with-functions).
 
    >[!NOTE]
    >
@@ -76,18 +76,18 @@ Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden
 
    Ein **Anwendungsfilter** ist ein erweiterter Filter, dessen Konfiguration zur wiederholten und gemeinsamen Nutzung mit anderen Benutzern gespeichert wird.
 
-   Die **[!UICONTROL Filters]** Schaltfläche oberhalb der Listen bietet eine Reihe von Anwendungsfiltern, die kombiniert werden können, um die Filterung zu verfeinern. Die Methode zum Erstellen dieser Filter wird unter [Speichern eines Filters](#saving-a-filter)beschrieben.
+   Die Schaltfläche **[!UICONTROL Filter]** oberhalb der Listen enthält eine Reihe von Anwendungsfiltern, die kombiniert werden können, um die Filterung zu verfeinern. Die Methode zum Erstellen dieser Filter wird unter [Filter speichern](#saving-a-filter) beschrieben.
 
 ## Standardfilter ändern {#altering-the-default-filter}
 
-Um den Standardfilter für eine Empfängerliste zu ändern, klicken Sie auf die **[!UICONTROL Profiles and Targets > Pre-defined filters]** Node der Struktur.
+Um den Standardfilter für eine Empfängerliste zu ändern, klicken Sie auf den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]**.
 
-For all other types of data, configure the default filter via the **[!UICONTROL Administration > Configuration > Predefined filters]** node.
+Standardfilter für andere Datentypen werden im Verzeichnisknoten **[!UICONTROL Administration > Konfigurationen > Vordefinierte Filter]** konfiguriert.
 
 Gehen Sie wie folgt vor:
 
 1. Wählen Sie den Filter aus, der als Standardfilter dienen soll.
-1. Klicken Sie auf die **[!UICONTROL Parameters]** Registerkarte und wählen Sie **[!UICONTROL Default filter for the associated document type]**.
+1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und kreuzen Sie die Option **[!UICONTROL Standardfilter für den verbundenen Dokumenttyp]** an.
 
    ![](assets/s_ncs_user_default_filter.png)
 
@@ -95,17 +95,17 @@ Gehen Sie wie folgt vor:
    >
    >Wenn bereits ein Standardfilter für diese Liste definiert wurde, muss dieser vor der Anwendung des neuen Filters deaktiviert werden. Klicken Sie hierzu auf das rote Kreuz oberhalb der Filterfelder.
 
-1. Click **[!UICONTROL Save]** to apply the filter.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um den Filter anzuwenden.
 
    >[!NOTE]
    >
-   >Das Fenster &quot;Filterdefinition&quot;wird unter [Erstellen eines erweiterten Filters](#creating-an-advanced-filter) und [Speichern eines Filters](#saving-a-filter)ausführlich beschrieben.
+   >Das Fenster „Filterdefinition“ wird unter [Erweiterte Filter erstellen](#creating-an-advanced-filter) und [Filter speichern](#saving-a-filter) ausführlich beschrieben.
 
 ## Einfache Filter erstellen {#creating-a-simple-filter}
 
 Gehen Sie wie folgt vor, um einen **einfachen Filter** zu erstellen:
 
-1. Klicken Sie mit der rechten Maustaste auf das Feld, das Sie filtern möchten, und wählen Sie **[!UICONTROL Filter on this field]**.
+1. Klicken Sie mit der rechten Maustaste auf das Feld, nach dem Sie die Daten filtern möchten, und wählen Sie die Option **[!UICONTROL Nach diesem Feld filtern]** aus.
 
    ![](assets/s_ncs_user_sort_this_field.png)
 
@@ -119,7 +119,7 @@ Gehen Sie wie folgt vor, um einen **einfachen Filter** zu erstellen:
 
 Wenn das Feld, nach dem die Daten gefiltert werden sollen, nicht im Profilformular angezeigt wird, können Sie es zu den angezeigten Spalten hinzufügen und anschließend nach dieser Spalte filtern. Befolgen Sie hierzu die nachstehenden Schritte:
 
-1. Click the **[!UICONTROL Configure the list]** icon.
+1. Klicken Sie auf das Symbol **[!UICONTROL Liste konfigurieren]**.
 
    ![](assets/s_ncs_user_configure_list.png)
 
@@ -127,7 +127,7 @@ Wenn das Feld, nach dem die Daten gefiltert werden sollen, nicht im Profilformul
 
    ![](assets/s_ncs_user_select_fields_to_display.png)
 
-1. Klicken Sie mit der rechten Maustaste auf die Spalte **Alter** in der Empfängerliste und wählen Sie **[!UICONTROL Filter on this column]**.
+1. Klicken Sie anschließend mit der rechten Maustaste in der Empfängerliste auf die Spalte **Alter** und wählen Sie **[!UICONTROL Nach dieser Spalte filtern]** aus.
 
    ![](assets/s_ncs_user_sort_this_column.png)
 
@@ -139,22 +139,22 @@ Wenn das Feld, nach dem die Daten gefiltert werden sollen, nicht im Profilformul
 
 Gehen Sie wie folgt vor, um einen **erweiterten Filter** zu erstellen.
 
-1. Klicken Sie auf die **[!UICONTROL Filters]** Schaltfläche und wählen Sie **[!UICONTROL Advanced filter...]**.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Erweiterte Filter...]** aus.
 
    ![](assets/filters_recipient_create_adv_filter.png)
 
-   You can also right-click the list of data to filter and select **[!UICONTROL Advanced filter...]**.
+   Alternativ können Sie mit der rechten Maustaste in die Liste der zu filternden Daten klicken und **[!UICONTROL Erweiterte Filter...]** auswählen.
 
    Daraufhin wird das Fenster zur Bestimmung der Filterbedingungen angezeigt.
 
-1. Click the **[!UICONTROL Expression]** column to define the input value.
-1. Click **[!UICONTROL Edit expression]** to select the field to which the filter will be applied.
+1. Klicken Sie in die Spalte **[!UICONTROL Ausdruck]**, um den Eingangswert zu bestimmen.
+1. Klicken Sie auf das Symbol **[!UICONTROL Ausdruck bearbeiten]**, um das Feld auszuwählen, nach dem gefiltert werden soll.
 
    ![](assets/s_user_filter_choose_field.png)
 
-1. Wählen Sie in der Liste das Feld aus, in dem die Daten gefiltert werden sollen. Klicken Sie **[!UICONTROL Finish]** zur Bestätigung.
+1. Wählen Sie in der Liste das Feld aus, nach dem die Daten gefiltert werden sollen. Klicken Sie zum Bestätigen auf **[!UICONTROL Beenden]**.
 1. Klicken Sie in die Spalte **[!UICONTROL Operator]** und wählen Sie in der Dropdown-Liste den anzuwendenden Operator aus.
-1. Wählen Sie einen erwarteten Wert aus der **[!UICONTROL Value]** Spalte. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Um eine Filterbedingung hinzuzufügen, klicken Sie auf **[!UICONTROL Add]**.
+1. Geben Sie dann in der Spalte **[!UICONTROL Wert]** den Vergleichswert an. Sie können mehrere Filter kombinieren, um Ihre Abfrage zu verfeinern. Für jede weitere Filterbedingung klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
    ![](assets/s_ncs_user_filter_add_button_alone.png)
 
@@ -171,33 +171,33 @@ Der angewendete Filter wird oberhalb der Liste angezeigt.
 
 Durch Klick auf seinen Titel kann der Filter bearbeitet werden.
 
-To cancel this filter, click the **[!UICONTROL Remove this filter]** icon to the right of the filter.
+Um den Filter aufzuheben, klicken Sie auf das Symbol **[!UICONTROL Filter entfernen]**, das sich rechts vom Filter befindet.
 
 ![](assets/s_ncs_user_filter_adv_remove.png)
 
-Sie können einen erweiterten Filter speichern, um ihn für die zukünftige Verwendung zu verwenden. Weitere Informationen zu diesem Filtertyp finden Sie unter [Speichern eines Filters](#saving-a-filter).
+Sie können einen erweiterten Filter speichern, um ihn für die zukünftige Verwendung aufzubewahren. Weitere Informationen zu diesem Filtertyp finden Sie unter [Filter speichern](#saving-a-filter).
 
 ### Erweiterte Filter mit Funktionen erstellen {#creating-an-advanced-filter-with-functions}
 
 Erweiterte Filter können Funktionen verwenden: **Filter mit Funktionen** werden über einen Ausdruckseditor erstellt, der es ermöglicht, anhand von Daten aus der Datenbank und erweiterten Funktionen Formeln zu definieren. Befolgen Sie die Schritte 1, 2 und 3 der Erstellung von erweiterten Filtern und gehen Sie anschließend wie folgt vor:
 
-1. In the field selection window, click **[!UICONTROL Advanced selection]**.
+1. Klicken Sie im Fenster der Feldauswahl auf die Schaltfläche **[!UICONTROL Erweiterte Auswahl]**.
 1. Wählen Sie den zu verwendenden Formeltyp aus.
 
    ![](assets/s_ncs_user_filter_formula_select.png)
 
    Folgende Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Field only]** , um ein Feld auszuwählen. Dies ist der Standardmodus.
-   * **[!UICONTROL Aggregate]** zur Auswahl der zu verwendenden Summenformel (Zähler, Summe, Durchschnitt, Maximum, Minimum).
-   * **[!UICONTROL User filter]** , um einen der vorhandenen Benutzerfilter auszuwählen. Benutzerfilter werden unter [Speichern eines Filters](#saving-a-filter)ausführlich beschrieben.
-   * **[!UICONTROL Expression]** , um auf den Ausdruckseditor zuzugreifen.
+   * **[!UICONTROL Einfaches Feld]**: Standardmodus.
+   * **[!UICONTROL Aggregat]**: Auswahl der Aggregatformel (Zählung, Summe, Durchschnitt, minimaler Wert, maximaler Wert).
+   * **[!UICONTROL Benutzerfilter]** zur Auswahl eines der vorhandenen Benutzerfilter. Benutzerfilter werden unter [Filter speichern](#saving-a-filter) ausführlich beschrieben.
+   * **[!UICONTROL Ausdruck]**: Erstellung mithilfe des Ausdruckseditors.
 
       Der Ausdruckseditor dient der Erstellung erweiterter Filter. Er gestaltet sich wie folgt:
 
       ![](assets/s_ncs_user_create_exp_exple01.png)
 
-      Damit können Sie Felder in Datenbanktabellen auswählen und ihnen erweiterte Funktionen hinzufügen: Wählen Sie die zu verwendende Funktion im **[!UICONTROL List of functions]** Menü. Die verfügbaren Funktionen sind in [Liste der Funktionen](../../platform/using/defining-filter-conditions.md#list-of-functions)beschrieben. Wählen Sie dann das Feld bzw. die Felder aus, die von den Funktionen betroffen sind, und klicken Sie auf , um den Ausdruck **[!UICONTROL OK]** zu genehmigen.
+      Es ermöglicht Ihnen, Felder in den Datenbanktabellen auszuwählen und diesen erweiterte Funktionen hinzuzufügen: Wählen Sie die zu verwendende Funktion in der **[!UICONTROL Funktionsliste]** aus. Die verfügbaren Funktionen sind in [Funktionsliste](../../platform/using/defining-filter-conditions.md#list-of-functions) beschrieben. Wählen Sie anschließend das Feld bzw. die Felder aus, die von den Funktionen betroffen sind, und klicken Sie auf **[!UICONTROL OK]**, um den Ausdruck zu validieren.
 
       >[!NOTE]
       >
@@ -207,29 +207,29 @@ Erweiterte Filter können Funktionen verwenden: **Filter mit Funktionen** werden
 
 Filter sind jedem Benutzer spezifisch und werden bei jeder Cache-Leerung der Clientkonsole zurückgesetzt.
 
-Sie haben jedoch die Möglichkeit, einen **Anwendungsfilter** durch die Speicherung eines erweiterten zu erstellen. Einmal gespeichert kann dieser über die rechte Maustaste in jeder Liste oder über die Schaltfläche **[!UICONTROL Filters]** Filter oberhalb der Listen wiederverwendet werden.
+Sie haben jedoch die Möglichkeit, einen **Anwendungsfilter** durch die Speicherung eines erweiterten Filters zu erstellen. Einmal gespeichert kann dieser über die rechte Maustaste in jeder Liste oder über die Schaltfläche **[!UICONTROL Filter]** oberhalb der Listen wiederverwendet werden.
 
 Direkter Zugriff auf diese Filter besteht zudem über den Versand-Assistenten bei der Zielgruppenbestimmung (nähere Informationen zur Erstellung von Sendungen erhalten Sie in [diesem Abschnitt](../../delivery/using/creating-an-email-delivery.md)). Es gibt folgende Möglichkeiten, einen Anwendungsfilter zu erstellen:
 
-* Konvertieren Sie einen erweiterten Filter in einen Anwendungsfilter. Klicken Sie dazu auf , **[!UICONTROL Save]** bevor Sie den erweiterten Filter-Editor schließen.
+* Umwandlung eines erweiterten Filters in einen Anwendungsfilter: Wählen Sie hierzu **[!UICONTROL Speichern]** aus, bevor Sie den Editor der erweiterten Filter schließen.
 
    ![](assets/s_ncs_user_filter_save.png)
 
-* Erstellen Sie diesen Anwendungsfilter über den Knoten **[!UICONTROL Administration > Configuration > Predefined filters]** (oder **[!UICONTROL Profiles and targets > Predefined filters]** für Empfänger) der Struktur. Klicken Sie dazu mit der rechten Maustaste auf die Filterliste und wählen Sie **[!UICONTROL New...]**. Das Verfahren entspricht dem zum Erstellen erweiterter Filter.
+* Erstellung eines Anwendungsfilters über den Verzeichnisknoten **[!UICONTROL Administration > Konfiguration > Vordefinierte Filter]** (oder **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** für Empfänger): Klicken Sie mit der rechten Maustaste in die Filterliste und wählen Sie **[!UICONTROL Neu...]**. Die weitere Verfahrensweise entspricht der Erstellung erweiterter Filter.
 
-   Mit dem **[!UICONTROL Label]** Feld können Sie diesem Filter einen Namen geben. Dieser Name wird im Kombinationsfeld der **[!UICONTROL Filters...]** Schaltfläche angezeigt.
+   Im Feld **[!UICONTROL Titel]** kann der Filter benannt werden. Der Name erscheint in der Dropdown-Liste der Schaltfläche **[!UICONTROL Filter...]**.
 
    ![](assets/user_filter_apply.png)
 
-You can delete all filters on the current list by right-clicking and selecting **[!UICONTROL No filter]** or via the **[!UICONTROL Filters]** icon located above the list.
+Sie können alle Filter auf der aktuellen Liste über die Option **[!UICONTROL Kein Filter]** aufheben, zugänglich über die rechte Maustaste oder die Schaltfläche **[!UICONTROL Filter]** oberhalb der Liste.
 
-You can combine filters by clicking the **[!UICONTROL Filters]** button and using the **[!UICONTROL And...]** menu.
+Sie haben die Möglichkeit, Filter über die Schaltfläche **[!UICONTROL Filter]** im Menü **[!UICONTROL Und...]** kombinieren.
 
 ![](assets/s_ncs_user_filter_combination.png)
 
 ## Empfängerfilter {#filtering-recipients}
 
-Vordefinierte Filter (siehe [Speichern eines Filters](#saving-a-filter)) ermöglichen es Ihnen, die Profile der in der Datenbank enthaltenen Empfänger zu filtern. Sie können Filter vom **[!UICONTROL Profiles and Targets > Predefined filters]** Knoten der Struktur bearbeiten. Die Filter werden über die **[!UICONTROL Filters]** Schaltfläche im oberen Bereich des Arbeitsbereichs angezeigt.
+Vordefinierte Filter (siehe [Filter speichern ](#saving-a-filter)) ermöglichen es Ihnen, die Profile der in der Datenbank enthaltenen Empfänger zu filtern. Sie können Filter über den Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** des Baums bearbeiten. Die Filter werden über die Schaltfläche **[!UICONTROL Filter]** im oberen Bereich des Arbeitsbereichs angezeigt.
 
 Wählen Sie einen Filter aus, um seine Parameter anzuzeigen und eine Vorschau der gefilterten Daten zu erhalten.
 
@@ -237,7 +237,7 @@ Wählen Sie einen Filter aus, um seine Parameter anzuzeigen und eine Vorschau de
 
 >[!NOTE]
 >
->For a detailed example of predefined filter creation, refer to [Use case](../../platform/using/use-case.md).
+>Ein detailliertes Beispiel zur Erstellung vordefinierter Filter finden Sie unter [Anwendungsbeispiel](../../platform/using/use-case.md).
 
 Folgende vordefinierte Filter stehen standardmäßig zur Verfügung:
 
@@ -366,20 +366,20 @@ Zum Beispiel:
 
 ## Erweiterte Parameter von Datenfiltern {#advanced-settings-for-data-filters}
 
-Click the **[!UICONTROL Settings]** tab to access the following options:
+Klicken Sie auf den Tab **[!UICONTROL Parameter]**, um auf folgende Optionen zuzugreifen:
 
-* **[!UICONTROL Default filter for the associated document type]**: Mit dieser Option können Sie diesen Filter standardmäßig im Editor der von der Sortierung betroffenen Listen vorschlagen.
+* **[!UICONTROL Standardfilter für diesen Dokumenttyp]**: Ermöglicht es, den entsprechenden Filter standardmäßig im Editor der von der Sortierung betroffenen Listen vorzuschlagen.
 
-   Der **[!UICONTROL By name or login]** Filter wird beispielsweise auf Operatoren angewendet. Diese Option ist aktiviert, sodass der Filter immer in allen Operatorlisten angezeigt wird.
+   Beispielsweise wird der Filter **[!UICONTROL Nach Name oder Login]** auf Benutzer angewendet. Die Option Standardfilter für diesen Dokumenttyp ist angekreuzt, der Filter wird daher systematisch für alle Benutzerlisten vorgeschlagen.
 
-* **[!UICONTROL Filter shared with other operators]**: Mit dieser Option können Sie den Filter allen anderen Operatoren in der aktuellen Datenbank zur Verfügung stellen.
-* **[!UICONTROL Use parameter entry form]**: Mit dieser Option können Sie die Filterfelder definieren, die über der Liste angezeigt werden sollen, wenn dieser Filter ausgewählt ist. Mit diesen Feldern können Sie die Filtereinstellungen definieren. Dieses Formular muss über die **[!UICONTROL Form]** Schaltfläche im XML-Format eingegeben werden. Beispielsweise zeigt der vorkonfigurierte Filter, der in der Liste der Empfänger verfügbar **[!UICONTROL Recipients who have opened]** ist, ein Filterfeld an, in dem Sie die Bereitstellung auswählen können, für die der Filter bestimmt ist.
+* **[!UICONTROL Mit anderen Benutzern geteilter Filter]**: Ermöglicht es, den Filter für alle anderen Benutzer der aktuellen Datenbank verfügbar zu machen.
+* **[!UICONTROL Nutzung eines Formulars zur Parametereingabe]**: Ermöglicht die Bestimmung des oder der Filterfelder, die bei Auswahl des entsprechenden Filters oberhalb der Liste angezeigt werden. Über diese Felder lassen sich die Parameter des Filters bestimmen. Durch Klick auf die Schaltfläche **[!UICONTROL Formular]** gelangen Sie in den Texteditor, in dem die Parameter im XML-Format einzugeben sind. Der in der Empfängerliste verfügbare vordefinierte Filter **[!UICONTROL Haben geöffnet]** zeigt beispielsweise ein Filterfeld an, das die Einschränkung der Ergebnisse auf einen bestimmten Versand ermöglicht.
 
-   The **[!UICONTROL Preview]** button displays the result of the selected filter.
+   Die Schaltfläche **[!UICONTROL Vorschau]** zeigt das Ergebnis des gewählten Filters an.
 
-* Über den **[!UICONTROL Advanced parameters]** Link können Sie weitere Einstellungen festlegen. Insbesondere können Sie eine SQL-Tabelle mit dem Filter verknüpfen, um sie allen Editoren, die die Tabelle gemeinsam verwenden, zuzuordnen.
+* Über den Link **[!UICONTROL Erweiterte Parameter]** können zusätzliche Einstellungen festgelegt werden. Insbesondere kann an dieser Stelle eine SQL-Tabelle mit dem Filter verknüpft werden, um ihn in allen Editoren zugänglich zu machen, die sich auf diese Tabelle beziehen.
 
-   Wählen Sie die **[!UICONTROL Do not restrict the filter]** Option aus, wenn Sie verhindern möchten, dass der Benutzer diesen Filter außer Kraft setzt.
+   Aktivieren Sie die Option **[!UICONTROL Filter nicht weiter einschränken]**, wenn der Benutzer nicht berechtigt sein soll, den Filter zu überschreiben.
 
    Diese Option ist zum Beispiel für die im Versand-Assistenten angebotenen Filter &quot;Versandempfänger&quot; und &quot;Zu einem Ordner gehörende Versandempfänger&quot; aktiv, die nicht überschrieben werden können.
 
