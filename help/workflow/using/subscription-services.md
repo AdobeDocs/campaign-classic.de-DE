@@ -14,7 +14,7 @@ discoiquuid: 940bec7e-e3f0-4251-b7fe-72bf188743a7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -29,12 +29,12 @@ Die Konfiguration der Aktivität besteht in der Angabe eines Titels, die Auswahl
 ![](assets/edit_service_inscription.png)
 
 1. Benennen Sie die Aktivität.
-1. Select **[!UICONTROL Generate an outbound transition]** if you wish to create a transition at the end of the execution.
+1. Kreuzen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen an]**, wenn sich weitere Aktivitäten anschließen.
 
    Im Allgemeinen bildet die Abonnementaktivität den Schlusspunkt eines Workflows. Aus diesem Grund, wird die ausgehende Transition nicht standardmäßig erzeugt.
 
-1. Click **[!UICONTROL Subscription]** or **[!UICONTROL Unsubscription]** if you wish to subscribe or unsubscribe the specified population to or from the selected information service.
-1. Select **[!UICONTROL Send a confirmation message]** to notify recipients that they are subscribed to or unsubscribed from a service.
+1. Kreuzen Sie je nach Bedarf **[!UICONTROL Anmeldung]** oder **[!UICONTROL Abmeldung]** an.
+1. Aktivieren Sie die Option **[!UICONTROL Benachrichtigung versenden]**, um den Empfänger von seiner An- oder Abmeldung in Kenntnis zu setzen.
 
    Der Benachrichtigungsinhalt wird in der Versandvorlage des entsprechenden Informationsdienstes definiert. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../delivery/using/managing-subscriptions.md).
 
@@ -59,16 +59,16 @@ Dabei sollen die Profile, die den Newsletter bereits erhalten, ausgeschlossen we
 1. Schließen Sie eine Schnittmenge an, um die verschiedenen Ergebnisse zu kreuzen.
 1. Fügen Sie bei Bedarf ein Listen-Update ein, um stets über eine aktuelle Liste der neuesten Abonnenten zu verfügen.
 1. Positionnieren Sie im Anschluss eine Abonnementaktivität und öffnen Sie diese.
-1. Enter the activity label and select **[!UICONTROL Subscription]**.
+1. Benennen Sie die Aktivität und kreuzen Sie die Option **[!UICONTROL Anmeldung]** an.
 
-   If you like, you can inform recipients of their newsletter subscription by checking the **[!UICONTROL Send a confirmation message]** box.
+   Es besteht die Möglichkeit, die neuen Newsletter-Empfänger von ihrer Anmeldung zu informieren, indem Sie die Option **[!UICONTROL Benachrichtigung versenden]** aktivieren.
 
 1. Geben Sie den Ordner an, der den Newsletter enthält und wählen Sie diesen dann aus der Liste der verfügbaren Kommunikationen aus.
-1. Leave the **[!UICONTROL Generate outbound transition]** unchecked so that this activity will mark the end of the workflow, then click **[!UICONTROL Ok]**.
+1. Lassen Sie die Option **[!UICONTROL Ausgehende Transition erzeugen]** deaktiviert, damit der Workflow mit der Abonnementaktivität endet. Bestätigen Sie die Konfiguration durch Klick auf **[!UICONTROL OK]**.
 
 Bei Ausführung des Workflows werden die Profile, die allen drei Abfragebedingungen entsprechen, zur Abonnentenliste hinzugefügt und für den Newsletter angemeldet.
 
-You can check that the subscription was successful by going to the **[!UICONTROL Subscription]** tab for your recipients.
+Im Tab **[!UICONTROL Abonnements]** der Empfängerprofile können Sie prüfen, ob der Workflow das gewünschte Ergebnis erzielt hat.
 
 ## Eingabeparameter {#input-parameters}
 
