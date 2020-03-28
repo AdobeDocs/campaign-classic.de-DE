@@ -1,6 +1,6 @@
 ---
-title: Adobe Campaign Classic-Architektur für Transaktionsnachrichten
-description: In diesem Abschnitt wird die transaktionale Messaging-Architektur von Adobe Campaign Classic beschrieben.
+title: Adobe Campaign Classic – Transaktionsnachrichten-Architektur
+description: In diesem Abschnitt wird die Transaktionsnachrichten-Architektur von Adobe Campaign Classic beschrieben.
 page-status-flag: never-activated
 uuid: a8fe7a37-6df7-49f4-838f-97a72e4a38f3
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
 
 ---
@@ -37,7 +37,7 @@ Ausführungsinstanzen empfangen die Ereignisse des Informationssystems, ordnen d
 
 >[!CAUTION]
 >
->Die Freigabe eines Ausführungsclusters mit mehreren Steuerungsinstanzen wird nur für lokale Umgebungen unterstützt.
+>Die Freigabe eines Ausführungs-Clusters mit mehreren Kontrollinstanzen wird nur bei On-Premise-Umgebungen unterstützt.
 
 Mehrere Kontrollinstanzen können einen Ausführungscluster gemeinsam nutzen. Wenn Sie beispielsweise unterschiedliche spezialisierte Marken führen, haben Sie die Möglichkeit, für jede Marke eine Kontrollinstanz zu konfigurieren und alle Kontrollinstanzen mit dem gleichen Ausführungscluster zu verbinden.
 
@@ -45,7 +45,7 @@ Mehrere Kontrollinstanzen können einen Ausführungscluster gemeinsam nutzen. We
 
 >[!NOTE]
 >
->Weitere Informationen zur erforderlichen Konfiguration finden Sie unter [Verwenden mehrerer Steuerinstanzen](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances).
+>Weitere Informationen zur erforderlichen Konfiguration finden Sie unter [Mehrere Kontrollinstanzen verwenden](../../message-center/using/creating-a-shared-connection.md#using-several-control-instances).
 
 ## Instanzeninstallation {#installing-instances}
 
@@ -55,13 +55,13 @@ Bei der Installation der Transaktionsnachrichten-Packages sind mehrere Vorsichts
 >
 >Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
 
-Wenn Sie mehrere Kanäle verwenden müssen, müssen Sie zugehörige Pakete installieren und konfigurieren, bevor Sie Transaktionsnachrichten installieren. Siehe [Hinzufügen eines Bereitstellungskanals](#adding-a-delivery-channel).
+Wenn Sie mehrere Kanäle benötigen, müssen Sie die entsprechenden Packages installieren und konfigurieren, bevor Sie die Transaktionsnachrichten-Packages installieren. Siehe [Hinzufügen von Versandkanälen](#adding-a-delivery-channel).
 
-* To install the control instance on your machine, select the **[!UICONTROL Transactional message control]** module.
+* Um eine Kontrollinstanz auf Ihrem Gerät zu installieren, wählen Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** aus.
 
    ![](assets/messagecenter_install_controlinstance_001.png)
 
-* To install the execution instance on your machine, select the **[!UICONTROL Transactional message execution]** module.
+* Um eine Ausführungsinstanz auf Ihrem Gerät zu installieren, wählen Sie das Modul **[!UICONTROL Transaktionsnachrichten-Ausführung]** aus.
 
    ![](assets/messagecenter_install_executioninstance_001.png)
 
@@ -69,9 +69,9 @@ Wenn Sie mehrere Kanäle verwenden müssen, müssen Sie zugehörige Pakete insta
 
 Versandkanäle (Mobile (SMS), Mobile App etc.) müssen unbedingt vor der Installation der Transaktionsnachrichten-Packages hinzugefügt werden. Falls Sie bereits ein Transaktionsnachrichten-Projekt über den E-Mail-Kanal begonnen haben und im Laufe des Projekts einen weiteren Kanal hinzufügen möchten, gehen Sie wie folgt vor:
 
-1. Installieren Sie den Kanal, den Sie benötigen, z. B. den **Mobilkanal**, mithilfe des Paketimportassistenten ( **[!UICONTROL Tools > Advanced > Import package... > Adobe Campaign Package]** ).
-1. Führen Sie einen Dateiimport ( **[!UICONTROL Tools > Advanced > Import package... > File]** ) durch und wählen Sie die Datei ****`[Your language]`**datakitnmspackagedageCenter.xml** .
-1. Behalten Sie in **[!UICONTROL XML content of the data to import]** nur die Bereitstellungsvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **Mobilkanal** hinzugefügt haben, sollten Sie nur das **Entitätselement** beibehalten, das dem Element entspricht **[!UICONTROL Mobile transactional message]** (smsTriggerMessage). Wenn Sie den **Mobilanwendungskanal** hinzugefügt haben, behalten Sie nur die **iOS-Transaktionsmeldung** (iosTriggerMessage) und die **Android-Transaktionsmeldung** (androidTriggerMessage) bei.
+1. Installieren Sie den benötigten Kanal, zum Beispiel den **Mobile-Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Werkzeuge > Erweitert > Package importieren... > Adobe-Campaign-Package]** ).
+1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packaageCenter.xml** aus.
+1. Behalten Sie im Bereich **[!UICONTROL XML-Inhalt der zu importierenden Daten]** nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **Mobile-Kanal** gewählt haben, behalten Sie nur das Element **Entitäten** bei, das der Vorlage **[!UICONTROL Mobiltelefon-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile-App-Kanal** hinzugefügt haben, behalten Sie nur die Vorlagen **iOS-Transaktionsnachricht** (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
 
    ![](assets/messagecenter_install_channel.png)
 
@@ -91,7 +91,7 @@ Um Transaktionsnachrichten in Verbindung mit Interaction zu nutzen, sind folgend
    >
    >Replizieren Sie die erstellten Angebote nicht in den Ausführungsinstanzen.
 
-* Um die Angebote zu personalisieren, muss das betreffende Ereignis eine mit dem Empfänger verknüpfte Kennung enthalten. Der Wert dieser Kennung wird im Attribut **@externalID** festgeschrieben. **Interaction** ist standardmäßig so konfiguriert, dass der Empfänger über den Primärschlüssel identifiziert wird:
+* Um die Angebote zu personalisieren, muss das betreffende Ereignis eine mit dem Empfänger verknüpfte Kennung enthalten. Der Wert dieser Kennung wird im Attribut **@externalId** festgeschrieben. **Interaction** ist standardmäßig so konfiguriert, dass der Empfänger über den Primärschlüssel identifiziert wird:
 
    ```
    <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
@@ -125,7 +125,7 @@ Um Transaktionsnachrichten-Module in Verbindung mit dem Mobile-App-Kanal zu nutz
 
 Das betreffende Ereignis muss folgende Elemente enthalten:
 
-* Die Kennung des Mobilgeräts (**registrationID** für Android und **deviceToken** für iOS). Diese Kennung repräsentiert die &quot;Adresse&quot;, an die die Benachrichtigung gesendet wird.
+* Die Kennung des Mobilgeräts (**registrationId** für Android und **deviceToken** für iOS). Diese Kennung repräsentiert die &quot;Adresse&quot;, an die die Benachrichtigung gesendet wird.
 * Die Definition der Relation zu der Mobile App oder dem Integrationsschlüssel (**uuid**), die den Abruf der App-spezifischen Verbindungsinformationen erlaubt.
 * Den Kanal über den die Benachrichtigung gesendet wird (**wishedChannel**): 41 für iOS und 42 für Android.
 * Alle für die Personalisierung nützlichen Daten.
@@ -163,68 +163,68 @@ In Kombination mit dem LINE-Kanal ermöglichen Ihnen Transaktionsnachrichten, Ec
 
 Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden Elemente zur Konfiguration Ihrer **Marketinginstanz** und Ihrer Ausführungsinstanz **erforderlich**:
 
-* Install the **[!UICONTROL LINE Connect]** package on both instances.
-* Installieren Sie das **[!UICONTROL Transactional message control]** Paket auf Ihrer Marketing-Instanz und das **[!UICONTROL Transactional message execution]** -Paket auf der Ausführungsinstanz.
+* Installieren Sie das Package **[!UICONTROL LINE Connect]** auf beiden Instanzen.
+* Installieren Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** auf Ihrer Marketinginstanz und das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** auf der Ausführungsinstanz.
 * Erstellen Sie ein **externes LINE-Konto** und den entsprechenden **Service** auf beiden Instanzen mit identischen Namen, damit sie synchronisiert werden können. Weiterführende Informationen zum Erstellen eines externen LINE-Kontos und Services finden Sie auf dieser [Seite](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
 
-Then, from the **[!UICONTROL Explorer]** , in **[!UICONTROL Platform]** > **[!UICONTROL External account]** , you need to configure different external accounts on both instances:
+Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattform]** > **[!UICONTROL Externes Konto]** unterschiedliche externe Konten auf beiden Instanzen:
 
-1. Create an **[!UICONTROL External database]** external account in your **execution** instance with the following configuration:
+1. Erstellen Sie in der **Ausführungsinstanz** das externe Konto **[!UICONTROL Externe Datenbank]** mit der folgenden Konfiguration:
 
    ![](assets/line_config_mc.png)
 
-   * **[!UICONTROL Label]** und **[!UICONTROL Internal name]** : Benennen Sie Ihr externes Konto nach Bedarf.
-   * **[!UICONTROL Type]** : auswählen **[!UICONTROL External database]** .
-   * **[!UICONTROL Enabled]** muss markiert werden.
-   Aus der **[!UICONTROL Connection]** Kategorie:
+   * **[!UICONTROL Titel]** und **[!UICONTROL Interner Name]**: Benennen Sie Ihr externes Konto beliebig.
+   * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL Externe Datenbank]** .
+   * Die Option **[!UICONTROL Aktiviert]** muss aktiviert sein.
+   In der Kategorie **[!UICONTROL Verbindung]**:
 
-   * **[!UICONTROL Type]** : Wählen Sie Ihren Datenbankserver, z.B. PostgresSQL.
-   * **[!UICONTROL Server]** : Geben Sie Ihre Datenbankserver-URL ein.
-   * **[!UICONTROL Account]** : Geben Sie Ihr Datenbankkonto ein.
+   * **[!UICONTROL Typ]**: Wählen Sie Ihren Datenbankserver aus, z. B. PostgresSQL.
+   * **[!UICONTROL Server]**: Geben Sie Ihre Datenbankserver-URL ein.
+   * **[!UICONTROL Konto]**: Geben Sie Ihr Datenbankkonto ein.
 
       >[!NOTE]
       >
       >Ein Datenbankbenutzer benötigt für die FDA-Verbindung Lesezugriff auf die folgenden Tabellen: XtkOption, NmsVisitor, NmsVisitorSub, NmsService, NmsBroadLogRtEvent, NmsBroadLogBatchEvent, NmsTrackingLogRtEvent, NmsTrackingLogBatchEvent, NmsRtEvent, NmsBatchEvent, NmsBroadLogMsg, NmsTrackingUrl, NmsDelivery, NmsWebTrackingLogXtkFolder.
 
-   * **[!UICONTROL Password]** : Geben Sie das Kennwort für Ihr Datenbankkonto ein.
-   * **[!UICONTROL Database]** : Geben Sie den Datenbanknamen der Ausführungsinstanz ein.
-   * **[!UICONTROL Target of an HTTP relay to remote database's account]** muss markiert werden.
+   * **[!UICONTROL Passwort]**: Geben Sie das Passwort für Ihr Datenbankkonto ein.
+   * **[!UICONTROL Datenbank]**: Geben Sie den Datenbanknamen der Ausführungsinstanz ein.
+   * Die Option **[!UICONTROL Ziel des &#39;HTTP-Weiterleitung auf Remote-Datenbank&#39; Kontos]** muss aktiviert sein.
 
 
-1. Create an **[!UICONTROL External Database]** account in your **marketing** instance with the following configuration.
+1. Erstellen Sie in der **Marketinginstanz** das Konto **[!UICONTROL Externe Datenbank]** mit der folgenden Konfiguration:
 
    ![](assets/line_config_mc_1.png)
 
-   * **[!UICONTROL Label]** und **[!UICONTROL Internal name]** : Benennen Sie Ihr externes Konto nach Bedarf.
-   * **[!UICONTROL Type]** : auswählen **[!UICONTROL External database]** .
+   * **[!UICONTROL Titel]** und **[!UICONTROL Interner Name]**: Benennen Sie Ihr externes Konto beliebig.
+   * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL Externe Datenbank]** .
    * Die Option &quot;Aktiviert&quot; muss aktiviert sein.
-   Aus der **[!UICONTROL Connection]** Kategorie:
+   In der Kategorie **[!UICONTROL Verbindung]**:
 
-   * **[!UICONTROL Type]** : auswählen **[!UICONTROL HTTP relay to remote Database]** .
-   * **[!UICONTROL Server]** : Geben Sie die Kampagnenserver-URL der Ausführungsinstanz ein.
-   * **[!UICONTROL Account]** : Geben Sie das Konto ein, das für den Zugriff auf Ihre Ausführungsinstanz verwendet wird.
-   * **[!UICONTROL Password]** : Geben Sie das Kennwort für das Konto ein, das für den Zugriff auf Ihre Ausführungsinstanz verwendet wird.
-   * **[!UICONTROL Data Source]** : Geben Sie die folgende Syntax ein **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
+   * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL HTTP-Weiterleitung auf Remote-Datenbank]** aus .
+   * **[!UICONTROL Server]**: Geben Sie die Kampagnenserver-URL der Ausführungsinstanz ein.
+   * **[!UICONTROL Konto]**: Geben Sie das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
+   * **[!UICONTROL Passwort]**: Geben Sie das Passwort für das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
+   * **[!UICONTROL Datenquelle]**: Geben Sie die folgende Syntax ein: **[!UICONTROL nms:extAccount:ID of your external database account in the execution instance]** .
 
 
-1. Create an **[!UICONTROL Execution instance]** external account in your **marketing** instance using the following configuration to create the data synchronization workflow:
+1. Erstellen Sie in der **Marketinginstanz** das externe Konto **[!UICONTROL Ausführungsinstanz]** mit der folgenden Konfiguration, um den Datensynchronisations-Workflow zu erstellen:
 
    ![](assets/line_config_mc_2.png)
 
-   * **[!UICONTROL Label]** und **[!UICONTROL Internal name]** : Benennen Sie Ihr externes Konto nach Bedarf.
-   * **[!UICONTROL Type]** : auswählen **[!UICONTROL Execution instance]** .
+   * **[!UICONTROL Titel]** und **[!UICONTROL Interner Name]**: Benennen Sie Ihr externes Konto beliebig.
+   * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL Ausführungsinstanz]** aus .
    * Die Option &quot;Aktiviert&quot; muss aktiviert sein.
-   Aus der **[!UICONTROL Connection]** Kategorie:
+   In der Kategorie **[!UICONTROL Verbindung]**:
 
-   * **[!UICONTROL URL]** : Geben Sie die URL der Ausführungsinstanz ein.
-   * **[!UICONTROL Account]** : Geben Sie Ihr Konto ein, das für den Zugriff auf Ihre Ausführungsinstanz verwendet wird.
-   * **[!UICONTROL Password]** : Geben Sie das Kennwort für das Konto ein, das für den Zugriff auf Ihre Ausführungsinstanz verwendet wird.
-   Aus der **[!UICONTROL Account connection method]** Kategorie:
+   * **[!UICONTROL URL]**: Geben Sie die URL der Ausführungsinstanz ein.
+   * **[!UICONTROL Konto]**: Geben Sie das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
+   * **[!UICONTROL Passwort]**: Geben Sie das Passwort für das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
+   In der Kategorie **[!UICONTROL Konto-Verbindungsmethode]**:
 
-   * **[!UICONTROL Method]** : auswählen **[!UICONTROL Federated Data Access (FDA)]** .
-   * **[!UICONTROL FDA account]** : Wählen Sie Ihr FDA-Konto aus der Dropdownliste.
-   * Click the **[!UICONTROL Create the archiving workflow]** button.
-   * Klicken Sie auf die **[!UICONTROL Create data synchronization workflow]** Schaltfläche, um den LINE-Arbeitsablauf für die Datensynchronisierung zu erstellen.
+   * **[!UICONTROL Methode]**: Wählen Sie **[!UICONTROL Federated Data Access (FDA)]** aus.
+   * **[!UICONTROL FDA-Konto]**: Wählen Sie Ihr FDA-Konto aus der Dropdown-Liste aus.
+   * Wählen Sie die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]** aus.
+   * Wählen Sie die Schaltfläche **[!UICONTROL Datensynchronisations-Workflow erstellen]** aus, um den LINE-Datensynchronisations-Workflow zu erstellen.
 
 
 
