@@ -14,7 +14,7 @@ discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -41,7 +41,7 @@ Mit dem Marketing-Analytics-Modul bietet Campaign die folgenden Möglichkeiten:
    * Daten zu aggregieren und in einer Arbeitstabelle zu speichern, um Indikatoren im Voraus zu berechnen;
    * auf diese Weise das in den verschiedenen Berechnungen der Berichte und Abfragen bewegte Datenenvolumen zu reduzieren und die Berechnungszeit der Indikatoren deutlich zu optimieren;
    * den Datenzugriff zu erleichtern und Benutzern nach verschiedenen Dimensionen geordnete - unter Umständen voraggregierte - Daten zur Verfügung zu stellen.
-   For more on this, refer to [Creating indicators](../../reporting/using/creating-indicators.md).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Cubes erstellen](../../reporting/using/creating-indicators.md).
 
 1. Die Erstellung von Pivot-Tabellen, um
 
@@ -49,7 +49,7 @@ Mit dem Marketing-Analytics-Modul bietet Campaign die folgenden Möglichkeiten:
    * die anzuzeigenden Daten sowie ihren Anzeigemodus auszuwählen,
    * die verwendeten Kennzahlen anzupassen,
    * nicht technischen Benutzern interaktive Analyse-Tools anzubieten.
-   Weitere Informationen finden Sie unter [Würfel verwenden, um Daten](../../reporting/using/using-cubes-to-explore-data.md)zu untersuchen.
+   Weitere Informationen hierzu finden Sie unter [Cubes zur Datenanalyse verwenden](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Die Erstellung von Abfragen über in einem Cube berechnete und aggregierte Daten.
 1. Die Identifizierung von Populationen und deren Referenzierung in Listen.
@@ -86,31 +86,31 @@ Im Kontext von Cubes sind folgende Grundbegriffe von Bedeutung:
 
 ## Arbeitsbereich Cube {#cube-workspace}
 
-Kuben werden im **[!UICONTROL Administration > Configuration > Cubes]** Knoten gespeichert.
+Cubes befinden sich im Knoten **[!UICONTROL Administration > Konfiguration > Cubes]**.
 
 ![](assets/s_advuser_cube_node.png)
 
 Die hauptsächlichen Verwendungskontexte der Cubes sind folgende:
 
-* Data exports can be carried out directly in a report, designed in the **[!UICONTROL Reports]** universe of the Adobe Campaign platform.
+* Datenanalyse innerhalb von Berichten. Diese werden in der gleichnamigen Rubrik ausgehend von der Plattform-Startseite entworfen.****
 
    Erstellen Sie hierzu einen neuen Bericht und wählen Sie den zu verwendenden Cube.
 
    ![](assets/cube_create_new.png)
 
-   Cubes erscheinen wie Vorlagen, auf deren Grundlage Berichte erstellt werden. Nachdem Sie eine Vorlage ausgewählt haben, klicken Sie auf **[!UICONTROL Create]** , um den entsprechenden Bericht zu konfigurieren und anzuzeigen.
+   Cubes stellen Vorlagen dar, auf deren Basis Berichte erstellt werden. Klicken Sie nach der Auswahl einer Vorlage auf die Schaltfläche **[!UICONTROL Erstellen]**, um den entsprechenden Bericht zu konfigurieren und zu visualisieren.
 
    Sie können die Kennzahlen anpassen, den Anzeigemodus ändern oder eine Tabelle konfigurieren und dann den Bericht über die zentrale Schaltfläche erzeugen.
 
    ![](assets/cube_display_new.png)
 
-* You can also reference a cube in the **[!UICONTROL Query]** box of a report to use its indicators, as shown below:
+* Referenzierung in **[!UICONTROL Abfrage]**-Aktivitäten von Berichten zur Nutzung der Cube-Indikatoren:
 
    ![](assets/s_advuser_query_using_a_cube.png)
 
-* Sie können auch eine Pivot-Tabelle, die auf einem Würfel basiert, in eine beliebige Seite eines Berichts einfügen. Verweisen Sie dazu auf den Würfel, der auf der **[!UICONTROL Data]** Registerkarte der Pivot-Tabelle auf der betreffenden Seite verwendet werden soll.
+* Sie können außerdem eine auf einem Cube basierte Pivot-Tabelle in eine beliebige Seite eines Berichts einfügen. Referenzieren Sie hierzu den zu verwendenden Cube im Tab **[!UICONTROL Daten]** der Pivot-Tabelle der betreffenden Seite.
 
    ![](assets/s_advuser_cube_in_report.png)
 
-   Weitere Informationen finden Sie unter Daten in einem Bericht [untersuchen](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
+   Weitere Informationen hierzu finden Sie unter [Daten eines Berichts analysieren](../../reporting/using/using-cubes-to-explore-data.md#exploring-the-data-in-a-report).
 
