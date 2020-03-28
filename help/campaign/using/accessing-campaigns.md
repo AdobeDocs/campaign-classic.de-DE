@@ -14,7 +14,7 @@ discoiquuid: 39d8ddcd-7fae-44fa-8a49-c3ad999e7903
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -34,7 +34,7 @@ Sie wird im Detail der entsprechenden Bestellung angezeigt und kann bearbeitet w
 
 ![](assets/mkg_dist_local_op_edit_new_op1.png)
 
-The campaign remains accessible in the Campaign overview, located via the **[!UICONTROL Campaigns]** link on the home page.
+Auch über die Kampagnenübersicht in der Rubrik **[!UICONTROL Kampagnen]** besteht Zugriff auf die jeweilige Kampagne.
 
 ## Verfügbare Parameter {#available-settings}
 
