@@ -14,7 +14,7 @@ discoiquuid: de892ec4-c378-4b22-875e-aa9345f82552
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d687b57f75b432547baef57021b716a8ce37ad4
 
 ---
@@ -37,28 +37,28 @@ Die folgenden Workflows werden mit dem **Campaign**-Modul installiert. Weiterfü
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Kostenberechnung</span> <br /> </td> 
-   <td> <span class="uicontrol">budgetMgt</span><br /> </td> 
+   <td> <span class="uicontrol">budgetMgt</span> <br /> </td> 
    <td> Berechnet Ausgaben- und Kostenzeilen für Pläne, Programme, Kampagnen, Sendungen und Aufgaben.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Lager: Ergänzungen und Meldebestände</span> <br /> </td> 
-   <td> <span class="uicontrol">stockMgt</span><br /> </td> 
-   <td> Dieser Arbeitsablauf startet die Bestandsberechnung in den Bestellzeilen und verwaltet Warnungsschwellenwerte.<br /> </td> 
+   <td> <span class="uicontrol">stockMgt</span> <br /> </td> 
+   <td> Startet die Berechnung der Lagerbestände in den Bestellzeilen und verwaltet Warnschwellen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge bezüglich Kampagnensendungen</span> <br /> </td> 
-   <td> <span class="uicontrol">deliveryMgt</span><br /> </td> 
-   <td> Startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externen Sendungen. Außerdem werden Genehmigungsbenachrichtigungen und Erinnerungen gesendet.<br /> </td> 
+   <td> <span class="uicontrol">deliveryMgt</span> <br /> </td> 
+   <td> Startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externen Sendungen. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Kampagnenvorgänge</span> <br /> </td> 
-   <td> <span class="uicontrol">operationMgt</span><br /> </td> 
+   <td> <span class="uicontrol">operationMgt</span> <br /> </td> 
    <td> Verwaltet Vorgänge in Marketingkampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Erstellt darüber hinaus Workflows für wiederkehrende und periodische Kampagnen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Bearbeitungsvorgänge bezüglich der Dienstleister</span> <br /> </td> 
-   <td> <span class="uicontrol">vendorMgt</span><br /> </td> 
-   <td> This workflow starts processing the provider (email to the router and post-processing) once deliveries have been approved. <br /> </td> 
+   <td> <span class="uicontrol">supplierMgt</span> <br /> </td> 
+   <td> Startet nach erfolgter Versandvalidierung Dienstleistervorgänge (E-Mail an den Router und Anschlussvorgang). <br /> </td> 
   </tr> 
  </tbody> 
 </table>
