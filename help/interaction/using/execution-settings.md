@@ -14,7 +14,7 @@ discoiquuid: 52b5d5a9-10dc-4601-8fe4-962a2334322b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Bei Erstellung einer Simulation haben Sie die Möglichkeit, Ausführungsparameter anzugeben. Auf diese Weise können Sie die Ausführung der Simulation in Abhängigkeit von ihrer Prioritätsstufe auf einen Zeitpunkt mit geringer Auslastung verschieben und die SQL-Abfragen im Protokoll speichern.
 
-These settings can be changed later in the **[!UICONTROL General]** tab of the simulation window.
+Eine Änderung dieser Parameter ist im späteren Verlauf im Tab **[!UICONTROL Allgemein]** des Simulationsfensters möglich.
 
 ![](assets/offer_simulation_008.png)
 
-* **[!UICONTROL Schedule execution for a time of low activity]** : Damit können Sie die Simulation auf Grundlage der gewählten Priorität (niedrig, durchschnittlich oder hoch) planen, um die Leistung von Adobe Campaign zu optimieren.
-* **[!UICONTROL Priority]** : Dies ist die Stufe, die für die Simulation zur Planung angewendet wird. Wenn die **[!UICONTROL Schedule execution for a time of low activity]** Option aktiviert ist, wählt der Arbeitsablauf für die Kampagnenverarbeitung eine Zeit niedriger Aktivität aus, um die Kampagne zu starten.
-* **[!UICONTROL Log SQL queries in the journal]** : Diese Funktion ist nur für erfahrene Benutzer gedacht. Damit können Sie eine Registerkarte zum Protokoll hinzufügen, auf der SQL-Abfragen angezeigt werden, um mögliche Fehlfunktionen zu erkennen, wenn die Simulation mit Fehlern abgeschlossen ist.
+* **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]**: plant den Simulationsstart in Abhängigkeit von der angegebenen Priorität (Niedrig, Mittel, Hoch) mit dem Ziel, die Leistungen von Adobe Campaign zu optimieren.
+* **[!UICONTROL Priorität]**: auf die Simulation angewendete Dringlichkeit, die den Ausführungsbeginn entsprechend verschiebt. Wenn die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** aktiviert wurde, wählt der Workflow der Kampagnenvorgänge einen Zeitpunkt mit geringer Aktivität, um die Simulation zu starten.
+* **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: Diese Funktion ist erfahrenen Benutzern vorbehalten. Bei Aktivierung wird dem Protokoll ein Tab hinzugefügt, in dem die SQL-Abfragen angezeigt werden. Dies erleichtert die Fehlerbehebung, wenn die Simulation fehlschlägt.
 
