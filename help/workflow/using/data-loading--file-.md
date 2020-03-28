@@ -1,6 +1,6 @@
 ---
 title: Laden (Datei)
-description: Erfahren Sie mehr über die Aktivität zum Laden von Daten (Datei).
+description: Erfahren Sie mehr über die Aktivität „Laden (Datei)“.
 page-status-flag: never-activated
 uuid: c064aa23-412e-49b4-a51d-b0e8ca572f2e
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 ## Verwendung {#use}
 
-Mit der **[!UICONTROL Load (File)]** Aktivität können Sie direkt auf eine Quelle externer Daten zugreifen und diese in Adobe Campaign verwenden. Tatsächlich befinden sich nicht immer alle für Targeting-Operationen erforderlichen Daten in der Adobe Campaign-Datenbank: es kann in externen Dateien verfügbar gemacht werden.
+Die Aktivität **[!UICONTROL Laden (Datei)]** dient dem direkten Zugriff auf eine externe Datenquelle und der Verwendung der dortigen Daten in Adobe Campaign. Tatsächlich ist es möglich, für die Zielgruppenbestimmung Daten aus externen Dateien zu verwenden.
 
 Die zu ladende Datei kann in der Transition angegeben oder bei Ausführung der Aktivität berechnet werden. Es kann sich beispielsweise um die Liste der zehn meistgekauften Artikel eines Kunden handeln, wobei die Kaufhandlungen in einer separaten, externen Datenbank verwaltet werden.
 
@@ -34,13 +34,13 @@ Im oberen Bereich des Fensters zur Konfiguration dieser Aktivität wird das Date
 
 ![](assets/s_advuser_wf_etl_file.png)
 
-Es besteht die Möglichkeit, eine Vorab-Bearbeitung der Datei vor dem Import zu definieren. Hierbei kann es sich z. B. darum handeln, die Datei nicht auf dem Server, sondern im Zuge der Workflow-Ausführung zu dekomprimieren, um auf dem Server Speicherplatz zu sparen. Wählen Sie die **[!UICONTROL Pre-process the file]** Option aus und wählen Sie eine der drei Optionen: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) oder **[!UICONTROL Decrypt]** (gpg).
+Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt werden soll, z. B. um die Datei nicht auf dem Server entpacken zu müssen (und damit Platz für die entpackte Datei zu sparen), sondern um das Entpacken in die Dateiverarbeitung aufzunehmen. Wählen Sie die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]** aus und danach Sie dieser drei Optionen: **[!UICONTROL Keine]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (gpg).
 
 ## Datei formatieren {#defining-the-file-format}
 
 Beim Laden einer Datei werden das Spaltenformat automatisch erkannt und Standardparameter für jeden Datentyp angewendet. Diese Standardparameter können angepasst werden, um beispielsweise im Fall von Fehlern oder leeren Werten einen spezifischen Umgang mit Ihren Daten zu definieren.
 
-Wählen Sie dazu im Hauptfenster **[!UICONTROL Click here to change the file format...]** der **[!UICONTROL Data loading (file)]** Aktivität aus. Daraufhin wird das Fenster mit den Formatdetails geöffnet.
+Verwenden Sie in diesem Fall im Hauptfenster der Aktivität **[!UICONTROL Laden (Datei)]** den Link **[!UICONTROL Zur Formatänderung hier klicken...]**, um das Detailfenster zur Formatbearbeitung zu öffnen.
 
 ![](assets/file_loading_columns_format.png)
 
@@ -50,34 +50,34 @@ In den allgemeinen Formatierungsoptionen kann beispielsweise die Art der Spalten
 
 Verschiedene Optionen zum Umgang mit den Spaltenwerten stehen zur Auswahl:
 
-* **[!UICONTROL Ignore column]**: verarbeitet diese Spalte beim Laden der Daten nicht.
-* **[!UICONTROL Data type]**: gibt den Datentyp an, der für jede Spalte erwartet wird.
-* **[!UICONTROL Allow NULLs]**: gibt an, wie leere Werte verwaltet werden.
+* **[!UICONTROL Spalte ignorieren]**: Spalte wird beim Laden der Daten nicht berücksichtigt.
+* **[!UICONTROL Datentyp]**: Angabe des in der Spalte erwarteten Datentyps.
+* **[!UICONTROL NULL erlauben]**: Angabe des Umgangs mit leeren Werten.
 
-   * **[!UICONTROL Adobe Campaign default]**: erzeugt nur einen Fehler für die numerischen Felder, andernfalls wird ein NULL-Wert eingefügt.
-   * **[!UICONTROL Empty value allowed]**: erlaubt leere Werte. Der Wert NULL wird eingefügt.
-   * **[!UICONTROL Always populated]**: erzeugt einen Fehler, wenn ein Wert leer ist.
+   * **[!UICONTROL Adobe-Campaign-Standardeinstellung]**: Erzeugt nur bei numerischen Feldern einen Fehler. Fügt bei anderen Feldern den Wert NULL ein.
+   * **[!UICONTROL Leer erlaubt]**: Leere Werte sind zulässig, der Wert NULL wird eingefügt.
+   * **[!UICONTROL Leer nicht erlaubt]**: Erzeugung eines Fehlers bei leeren Werten.
 
-* **[!UICONTROL Length]**: gibt die maximale Anzahl von Zeichen für den **String** -Datentyp an.
+* **[!UICONTROL Länge]**: Angabe der maximal zulässigen Anzahl an Zeichen für Daten vom Typ **String**.
 * **[!UICONTROL Format]**: Definition des Formats von Uhrzeit und Datum.
-* **[!UICONTROL Data transformation]**: definiert, ob ein Zeichenfolgenprozess auf eine **Zeichenfolge** angewendet werden muss.
+* **[!UICONTROL Formatierung]**: Definition der Groß- und Kleinschreibung bei Daten vom Typ **String**.
 
-   * **[!UICONTROL None]**: die importierte Zeichenfolge wird nicht geändert.
-   * **[!UICONTROL First letter in upper case]**: Der erste Buchstabe jedes Wortes der Zeichenfolge beginnt mit einer Großschreibung.
-   * **[!UICONTROL Upper case]**: alle Zeichen in der Zeichenfolge in Großbuchstaben.
-   * **[!UICONTROL Lower case]**: alle Zeichen in der Zeichenfolge in Kleinbuchstaben.
+   * **[!UICONTROL Keine Angabe]**: Der importierte String wird nicht geändert.
+   * **[!UICONTROL Ersten Buchstaben großschreiben]**: Der erste Buchstabe aller Worte des Strings wird großgeschrieben.
+   * **[!UICONTROL Großbuchstaben]**: Alle Buchstaben des Strings werden großgeschrieben.
+   * **[!UICONTROL Kleinbuchstaben]**: Alle Buchstaben des Strings werden kleingeschrieben.
 
-* **[!UICONTROL White space management]**: gibt an, ob bestimmte Leerzeichen in einer Zeichenfolge ignoriert werden müssen. Der **[!UICONTROL Ignore spaces]** Wert lässt nur zu, dass Leerzeichen am Anfang und am Ende einer Zeichenfolge ignoriert werden.
-* **[!UICONTROL Error processings]**: definiert das Verhalten, wenn ein Fehler auftritt.
+* **[!UICONTROL Umgang mit Leerzeichen]**: Angabe, ob gewisse Leerzeichen in einem String ignoriert werden sollen. Bei Auswahl von **[!UICONTROL Leerzeichen ignorieren]** werden nur Leerzeichen am Anfang und am Ende eines Strings ignoriert.
+* **[!UICONTROL Umgang mit Fehlern]**: Definition des Verhaltens beim Auftritt von Fehlern.
 
-   * **[!UICONTROL Ignore the value]**: der Wert wird ignoriert. Im Ausführungsprotokoll des Workflows wird ein Hinweis erzeugt.
-   * **[!UICONTROL Reject line]**: die gesamte Zeile wird nicht verarbeitet.
-   * **[!UICONTROL Use a default value in case of error]**: ersetzt den Wert, der den Fehler verursacht, durch einen im **[!UICONTROL Default value]** Feld definierten Standardwert.
-   * **[!UICONTROL Reject the line when there is no remapping value]**: die gesamte Zeile wird nur verarbeitet, wenn eine Zuordnung für den fehlerhaften Wert definiert wurde (siehe die **[!UICONTROL Mapping]** Option unten).
-   * **[!UICONTROL Use a default value in case the value is not remapped]**: ersetzt den Wert, der den Fehler verursacht, durch einen im **[!UICONTROL Default value]** Feld definierten Standardwert, es sei denn, für den fehlerhaften Wert wurde eine Zuordnung definiert (siehe die **[!UICONTROL Mapping]** Option unten).
+   * **[!UICONTROL Wert ignorieren]**: Der Wert wird ignoriert. Im Ausführungsprotokoll des Workflows wird ein Hinweis erzeugt.
+   * **[!UICONTROL Zeile zurückweisen]**: Die gesamte Zeile wird nicht verarbeitet.
+   * **[!UICONTROL Bei Fehler Standardwert verwenden]**: Der den Fehler verursachende Wert wird durch den im Feld **[!UICONTROL Standardwert]** gespeicherten Wert ersetzt.
+   * **[!UICONTROL Bei fehlender Neukodifizierung Zeile zurückweisen]**: Die gesamte Zeile wird nicht verarbeitet, es sei denn, für den fehlerhaften Wert wurde ein Mapping definiert (siehe nachfolgend die Option **[!UICONTROL Mapping]**).
+   * **[!UICONTROL Bei fehlender Neukodifizierung Standardwert verwenden]**: Der den Fehler verursachende Wert wird durch den im Feld **[!UICONTROL Standardwert]** gespeicherten Wert ersetzt, es sei denn, für den fehlerhaften Wert wurde ein Mapping definiert (siehe nachfolgend die Option **[!UICONTROL Mapping]**).
 
-* **[!UICONTROL Default value]**: gibt den Standardwert entsprechend der gewählten Fehlerverarbeitung an.
-* **[!UICONTROL Mapping]**: Dieses Feld ist nur in der Spaltendetailkonfiguration verfügbar (Zugriff über einen Doppelklick oder über die Optionen rechts neben der Spaltenliste). Dadurch werden bestimmte Werte beim Import transformiert. Sie können beispielsweise &quot;drei&quot; in &quot;3&quot; umwandeln.
+* **[!UICONTROL Standardwert]**: Angabe des Standardwerts, der im Bezug auf den jeweils definierten Umgang mit Fehlern zum Tragen kommt.
+* **[!UICONTROL Mapping]**: Auf dieses Feld kann nur in der Detailkonfiguration einer Spalte zugegriffen werden (entweder per Doppelklick oder mithilfe der entsprechenden Schaltfläche rechts der Spaltenliste). Es ermöglicht im Zuge des Imports die Umwandlung gewisser Werte. So kann beispielsweise &quot;drei&quot; in &quot;3&quot; umgewandelt werden.
 
 ## Anwendungsbeispiel: Daten abrufen und in die Datenbank laden {#example--collecting-data-and-loading-it-in-the-database}
 
@@ -87,21 +87,21 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
 1. Die Datei-Wächter-Aktivität dient dazu, in definierten Zeitabständen die in einem bestimmten Verzeichnis gespeicherten Dateien abzurufen.
 
-   Die **[!UICONTROL Directory]** Registerkarte enthält Informationen zu den wiederherzustellenden Dateien. In unserem Beispiel werden alle Dateien im Textformat wiederhergestellt, deren Namen das Wort &quot;Kunden&quot;enthalten und die im Verzeichnis tmp/Adobe/Data/files des Servers gespeichert sind.
+   Die Informationen bezüglich des oder der abzurufenden Verzeichnisse werden im **[!UICONTROL Verzeichnis]**-Tab angegeben. Im vorliegenden Beispiel sollen alle Textformat-Dateien abgerufen werden, deren Name das Wort &#39;Kunde&#39; enthält und die im Verzeichnis tmp/Adobe/Data/files des Servers gespeichert sind.
 
-   Die Verwendung der **[!UICONTROL File collector]** ist im Abschnitt [Dateierfassung](../../workflow/using/file-collector.md) detailliert beschrieben.
+   Weiterführende Informationen zum Thema **[!UICONTROL Datei-Wächter]** finden Sie im Abschnitt [Datei-Wächter](../../workflow/using/file-collector.md).
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
-   The **[!UICONTROL Schedule]** tab lets you schedule the execution of the collector, i.e. to specify the frequency with which the presence of these files will be checked.
+   Im **[!UICONTROL Planung]**-Tab wird die Ausführungshäufigkeit des Datei-Wächters konfiguriert, d. h. in welchen Abständen das Vorhandensein derartiger Dateien überprüft wird.
 
    Hier soll der Datei-Wächter an allen Tagen, an denen die Geschäfte geöffnet haben, um 21 Uhr ausgelöst werden.
 
    ![](assets/s_advuser_load_file_sample_2.png)
 
-   To do this, click the **[!UICONTROL Change...]** button located in the lower right-hand section of the editing tool and configure the schedule.
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]** rechts unten im Editor, um die Planung entsprechend zu konfigurieren.
 
-   For more on this, refer to [Scheduler](../../workflow/using/scheduler.md).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Planung](../../workflow/using/scheduler.md).
 
 1. Konfigurieren Sie anschließend die Datei-Laden-Aktivität, um anzugeben, wie die abgerufenen Dateien zu lesen sind. Wählen Sie hierzu eine Beispieldatei aus, die dieselbe Struktur aufweist, wie die zu ladenden Dateien.
 
@@ -123,11 +123,11 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
    ![](assets/s_advuser_load_file_sample_5.png)
 
-   The **[!UICONTROL Split]** activity will therefore contain the following information:
+   Die **[!UICONTROL Aufspaltung]** stellt sich somit wie folgt dar:
 
    ![](assets/s_advuser_load_file_sample_6.png)
 
-1. Geben Sie dann die für jede Population durchzuführenden Prozesse an. In unserem Beispiel werden wir **[!UICONTROL Update the data]** in die Datenbank gehen. Platzieren Sie dazu eine **[!UICONTROL Update data]** Aktivität am Ende jedes ausgehenden Übergangs von der aufgeteilten Aktivität.
+1. Definieren Sie nun für jeden Populationstyp den Anschlussvorgang. Im vorliegenden Beispiel wird die Datenbank aktualisiert. Dies erfolgt im Zuge von **[!UICONTROL Daten-Update]**-Aktivitäten, die jeweils an eine der ausgehenden Transitionen der **[!UICONTROL Aufspaltung]** angeschlossen werden.
 
-   Die **[!UICONTROL Update data]** Aktivität wird im Abschnitt [Daten](../../workflow/using/update-data.md) aktualisieren beschrieben.
+   Die Aktivität **[!UICONTROL Daten-Update]** wird im Abschnitt [Daten-Update](../../workflow/using/update-data.md) genauer beschrieben.
 
