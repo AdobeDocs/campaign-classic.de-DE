@@ -14,7 +14,7 @@ discoiquuid: 798409af-b236-4bb5-ac0f-90f0a19db345
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -26,7 +26,7 @@ Mit der Aktivität **Zeitliche Beschränkung** können Sie die Ausführung einer
 
 Benennen Sie die Aktivität und geben Sie Beginn und Ende der Zeitspanne an.
 
-Wenn die **[!UICONTROL Try again later if outside of execution period]** Option ausgewählt ist, können Sie die Aufgabe außerhalb des Ausführungszeitraums neu starten. Wenn die Workflow-Aktion nach der Aussetzung endgültig abgebrochen werden soll, deaktivieren Sie diese Option.
+Kreuzen Sie die Option **[!UICONTROL Erneut versuchen, wenn außerhalb der Ausführungsperiode]** an, um weitere Ausführungsversuche zu unternehmen. Andernfalls wird der Workflow nach der Aussetzung definitiv abgebrochen.
 
 ![](assets/s_user_scheduled_wait.png)
 
