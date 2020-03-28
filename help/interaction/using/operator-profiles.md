@@ -14,7 +14,7 @@ discoiquuid: 9a3f1dc9-71ef-4039-94b4-a217996f6a80
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,22 +24,22 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 In Interaction werden zwei verschiedene Profile benötigt: ein angebotsverantwortlicher und ein versandverantwortlicher Benutzer. Die entsprechenden Benutzer haben jeweils nur auf bestimmte Bereiche des Navigationsbaums Zugriff.
 
-* **[!UICONTROL Offer manager]** : Angebote erstellen und verwalten
-* **[!UICONTROL Delivery manager]** : genehmigt und verwendet Angebote
+* **[!UICONTROL Angebotsverantwortlicher]**: erstellt und verwaltet Angebote;
+* **[!UICONTROL Versandverantwortlicher]**: validiert und verwendet Angebote.
 
 Die Erstellung der Interaction-Benutzerprofile folgt der üblichen Vorgehensweise. Lesen Sie diesbezüglich [diesen Abschnitt](../../platform/using/access-management.md#creating-an-operator). Die spezifischen Berechtigungen werden im Verlauf der Benutzererstellung zugewiesen.
 
 ## Angebotsverantwortliche Benutzer {#offer-manager}
 
 1. Erstellen Sie den neuen Benutzer.
-1. Gehen Sie zum **[!UICONTROL Groups and named rights]** Fenster, klicken Sie auf **[!UICONTROL Add]** und wählen Sie die **[!UICONTROL Offer manager]** Gruppe aus.
+1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Angebotsverantwortliche Benutzer]** aus.
 
    ![](assets/offer_operators_create_001.png)
 
 Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgende Tätigkeiten:
 
-* Ändern Sie **[!UICONTROL Design]** Umgebungen.
-* Anzeigen von **[!UICONTROL Live]** Umgebungen.
+* Änderung von **[!UICONTROL Design-Umgebungen]**;
+* Ansicht von **[!UICONTROL Live-Umgebungen]**;
 * Konfiguration von administrativen Funktionen (Platzierungen und vordefinierte Filter);
 * Erstellung und Änderung von Angebotskategorien;
 * Erstellung und Änderung von Angeboten;
@@ -53,13 +53,13 @@ Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgen
 ## Versandverantwortliche Benutzer {#delivery-manager}
 
 1. Erstellen Sie den neuen Benutzer.
-1. Gehen Sie zum **[!UICONTROL Groups and named rights]** Fenster, klicken Sie auf **[!UICONTROL Add]** und wählen Sie die **[!UICONTROL Delivery manager]** Gruppe aus.
+1. Klicken Sie im Fenster **[!UICONTROL Gruppen oder spezifische Berechtigungen]** auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe **[!UICONTROL Versandverantwortliche Benutzer]** aus.
 
    ![](assets/offer_operators_create_002.png)
 
 Die dem Versandverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgende Tätigkeiten:
 
-* Anzeigen von **[!UICONTROL Live]** Umgebungen.
+* Ansicht der **[!UICONTROL Design-Umgebungen]**;
 * Anzeige und Änderung von Angebotskategorien;
 * Validierung von Angeboten, wenn er als Validierer bezeichnet wurde.
 
