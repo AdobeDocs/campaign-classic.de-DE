@@ -14,7 +14,7 @@ discoiquuid: addfc395-7a85-4be1-a757-a719ed34bb33
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -28,74 +28,74 @@ Die Konfiguration einer Hypothesenvorlage ermöglicht die Bestimmung des Kontext
 
 Folgen Sie den nachstehenden Etappen, um eine Hypothesenvorlage zu erstellen:
 
-1. Klicken Sie im Adobe Campaign-Explorer auf **[!UICONTROL Resources>Templates>Hypothesis templates]**.
+1. Rufen Sie im Adobe-Campaign-Explorer den Verzeichnisknoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** auf.
 
    ![](assets/response_hypothesis_model_creation_001.png)
 
-1. Click **[!UICONTROL New]** or right-click in the list of templates and choose **[!UICONTROL New]** in the drop-down list.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oder machen Sie einen Rechtsklick in die Liste der Vorlagen und wählen Sie im Kontextmenü **[!UICONTROL Neu]** aus.
 1. Geben Sie den Titel der Hypothese ein.
-1. Specify whether the template is destined for hypotheses on offers or deliveries via the **[!UICONTROL Hypothesis type]**.
-1. For **[!UICONTROL Delivery]** type templates, specify whether measurements should be carried out with or without a control group (for more on this, refer to [Properties of a hypothesis template](#properties-of-a-hypothesis-template)).
-1. For **[!UICONTROL Delivery]** type templates, you can choose a specific channel or decide to apply the template to all available channels in Adobe Campaign using the **[!UICONTROL Channel]** drop-down list (for more on this, refer to [Properties of a hypothesis template](#properties-of-a-hypothesis-template)).
-1. Select the **[!UICONTROL Execution folder]** in which you wish to create and automatically execute the hypotheses that will be created from this template.
-1. Wählen Sie die Ausführungseinstellungen aus (weitere Informationen finden Sie unter [Einstellungen](#hypothesis-template-execution-settings)für die Ausführung von Hypothese-Vorlagen).
-1. Geben Sie den Zeitraum für die Berechnung der Hypothese an (weitere Informationen dazu finden Sie unter Einstellungen für die Ausführung der [Hypothese-Vorlage](#hypothesis-template-execution-settings)).
+1. Wählen Sie im Feld **[!UICONTROL Hypothesentyp]** aus, ob die Vorlage für Hypothesen über Angebote oder Sendungen bestimmt ist.
+1. Falls es sich um eine Vorlage vom Typ **[!UICONTROL Sendungen]** handelt, geben Sie an, ob die Messung mit oder ohne Kontrollgruppe stattfindet (siehe hierzu den Abschnitt [Eigenschaften einer Hypothesenvorlage](#properties-of-a-hypothesis-template)).
+1. Für eine Vorlage vom Typ **[!UICONTROL Sendungen]** können Sie mithilfe der Dropdown-Liste **[!UICONTROL Kanal]** einen bestimmten oder alle in Adobe Campaign verfügbaren Kanäle auswählen (siehe hierzu den Abschnitt [Eigenschaften einer Hypothesenvorlage](#properties-of-a-hypothesis-template)).
+1. Wählen Sie den **[!UICONTROL Ausführungsordner]**, in dem Sie die basierend auf der Vorlage aufgestellten Hypothesen erstellen und automatisch ausführen möchten.
+1. Wählen Sie die Ausführungsparameter aus (weitere Informationen finden Sie unter [Ausführungsparameter einer Hypothesenvorlage](#hypothesis-template-execution-settings)).
+1. Geben Sie den Berechnungszeitraum der Hypothese an (weitere Informationen finden Sie unter [Ausführungsparameter einer Hypothesenvorlage](#hypothesis-template-execution-settings)).
 
    >[!CAUTION]
    >
    >Der Zeitraum wird ausgehend vom Kontaktdatum bestimmt.
 
-1. In the **[!UICONTROL Transactions]** tab, specify the tables and fields required for the hypothesis calculation (for more on this, refer to [Transactions](#transactions)).
-1. If your template is configured for **[!UICONTROL Offer]** type hypotheses, you can enable the **[!UICONTROL Update offer proposition status]** option: in this case, select the status of the offer proposition you want to change.
-1. Specify the scope of the hypothesis application (for more on this, refer to [Hypothesis perimeter](#hypothesis-perimeter)).
-1. If necessary, use a script to complete filtering (for more on this, refer to [Hypothesis perimeter](#hypothesis-perimeter)).
+1. Geben Sie im Tab **[!UICONTROL Transaktionen]** die Tabellen und Felder an, die zur Berechnung der Hypothese benötigt werden (weitere Informationen finden Sie unter [Transaktionen](#transactions)).
+1. Wenn Ihre Vorlage für Hypothesen vom Typ **[!UICONTROL Angebote]** konfiguriert ist, können Sie die Option **[!UICONTROL Vorschlagsstatus aktualisieren]** aktivieren: Wählen Sie in diesem Fall den Vorschlagsstatus aus, den Sie verändern möchten.
+1. Geben Sie den Perimeter der Hypothesenanwendung an (weitere Informationen finden Sie unter [Perimeter](#hypothesis-perimeter)).
+1. Vervollständigen Sie bei Bedarf die Filterung mithilfe eines Skripts (weitere Informationen finden Sie unter [Perimeter ](#hypothesis-perimeter)).
 
 ### Eigenschaften einer Hypothesenvorlage {#properties-of-a-hypothesis-template}
 
-Auf der **[!UICONTROL General]** Registerkarte der Vorlage können Sie die allgemeinen Vorlagenoptionen festlegen. Die verfügbaren Felder sind:
+Im Tab **[!UICONTROL Allgemein]** der Vorlage werden die allgemeinen Optionen der Vorlage festgelegt. Es sind folgende Felder verfügbar:
 
-* **[!UICONTROL Hypothesis type]**: können Sie festlegen, ob die Vorlage für Hypothesen bei Lieferungen oder Angeboten bestimmt sein soll.
+* **[!UICONTROL Hypothesentyp]**: Wählen Sie hier aus, ob die Vorlage für Hypothesen über Sendungen oder über Angebote bestimmt ist.
 
    Sie können auch eine Hypothese erstellen, die sich sowohl auf Sendungen als auch auf Angebote bezieht.
 
    >[!NOTE]
    >
-   >Wenn die Vorlage für Angebote gilt, ist die **[!UICONTROL Update offer proposition status]** Option auf der **[!UICONTROL Transactions]** Registerkarte verfügbar.
+   >Wenn die Vorlage sich auf Angebote bezieht, wird die Option **[!UICONTROL Vorschlagsstatus aktualisieren]** im Tab **[!UICONTROL Transaktionen]** verfügbar.
 
-* **[!UICONTROL Measurement with control group]**: können Sie angeben, ob eine Kontrollgruppe für die Bereitstellung oder die Kampagne definiert wurde, und diese in die Messungsindikatoren einbeziehen. Mit der Kontrollgruppe, die keine Auslieferungen erhält, können Sie die Auswirkungen der Kampagne nach der Auslieferung messen, indem Sie sie mit der Zielgruppe vergleichen, die die Auslieferung erhalten hat.
+* **[!UICONTROL Messung mit Kontrollgruppe]**: Aktivieren Sie diese Option, wenn eine Kontrollgruppe für den jeweiligen Versand oder die jeweilige Kampagne erstellt wurde und diese in den Messindikatoren berücksichtigt werden soll. Die Kontrollgruppe erhält keine Sendungen: Sie dient der Messung der Auswirkung dieser durch den Vergleich mit dem Verhalten der Zielgruppe, die die Sendungen erhält.
 
    >[!NOTE]
    >
    >Wenn die Konfiguration der Vorlage eine Kontrollgruppe vorsieht, jedoch keine in dem Versand bestimmt ist, auf den sich die Hypothesen beziehen, werden die Ergebnisse nur auf Grundlage der Zielgruppen-Empfänger berechnet.
 
-   Weitere Informationen zum Definieren und Konfigurieren einer Kontrollgruppe finden Sie unter [Definieren einer Kontrollgruppe](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   Weitere Informationen zum Definieren und Konfigurieren einer Kontrollgruppe finden Sie unter [Kontrollgruppen festlegen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
-* **[!UICONTROL Channel]**: Sie können einen bestimmten Kanal auswählen oder die Hypothese-Vorlage allen Kanälen in der Adobe Campaign-Konsole zur Verfügung stellen, indem Sie sie in **[!UICONTROL All channels]** der Dropdownliste auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können Sie damit automatisch Auslieferungen pro Kanal filtern, wenn Sie die Hypothese erstellen (siehe [Erstellen von Hypothesen](../../campaign/using/creating-hypotheses.md)).
+* **[!UICONTROL Kanal]**: Sie können einen bestimmten Kanal auswählen oder die Hypothese-Vorlage für alle Kanäle in der Adobe Campaign-Konsole verfügbar machen, indem Sie in der Dropdown-Liste **[!UICONTROL Alle Kanäle]** auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können Sie damit automatisch Sendungen pro Kanal filtern, wenn Sie die Hypothese erstellen (siehe [Hypothesenerstellung](../../campaign/using/creating-hypotheses.md)).
 
    ![](assets/response_properties_001.png)
 
-* **[!UICONTROL Execution folder]**: können Sie den Ausführungsordner für die Hypothese angeben.
-* **[!UICONTROL Taken into account in campaign ROI calculation]**: berücksichtigt das hypothetische Ergebnis bei der ROI-Berechnung für die entsprechende Kampagne.
+* **[!UICONTROL Ausführungsordner]**: Legen Sie hier den Ordner fest, in dem die Hypothese erstellt und ausgeführt werden soll.
+* **[!UICONTROL In der Berechnung des Kampagnen-ROIs berücksichtigen]**: Diese Option ermöglicht es, das Ergebnis der Hypothese in der Berechnung des ROIs der verbundenen Kampagne zu berücksichtigen (im Fall eines Kampagnenversands).
 
 ### Ausführungsparameter einer Hypothesenvorlage {#hypothesis-template-execution-settings}
 
-Auf der **[!UICONTROL General]** Registerkarte der Vorlage können Sie auch die Parameter für die Ausführung der Hypothese angeben. Die folgenden Optionen stehen zur Verfügung:
+Im Tab **[!UICONTROL Allgemein]** der Vorlage können zudem die Ausführungsparameter der Hypothese festgelegt werden. Folgende Optionen sind verfügbar:
 
-* **[!UICONTROL Schedule execution for a time of low activity]**: können Sie den Hypothese-Start planen, um die Leistung von Adobe Campaign zu optimieren. Wenn diese Option aktiviert ist, führt der Verarbeitungsablauf für Kampagnen während der Ausfallzeit eine Hypothese aus.
+* **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]**: Diese Option dient der Leistungsoptimierung von Adobe Campaign. Bei Aktivierung der Option verschiebt der Workflow der Kampagnenvorgänge den Start der Hypothesenberechnung auf einen Zeitraum mit schwacher Aktivität.
 
    ![](assets/response_exec_settings_002.png)
 
-* **[!UICONTROL Priority]**: auf die Hypothese angewendet, um die hypothetischen Berechnungsaufträge auszugleichen, wenn es gleichzeitig ausgeführt wird.
+* **[!UICONTROL Priorität]**: Im Falle simultaner Ausführungen kann mithilfe der Prioritätseinteilung die Reihenfolge der Hypothesenberechnungen gestaffelt werden.
 
    ![](assets/response_exec_settings_003.png)
 
-* **[!UICONTROL Automatic execution]**: bei Bedarf können Sie eine Hypothese-Neuberechnung planen (z. B. wenn Sie Indikatoren regelmäßig bis zum Ende der Bereitstellung aktualisieren möchten).
+* **[!UICONTROL Automatische Ausführung]**: Mit dieser Option kann bei Bedarf eine erneute Berechnung der Hypothese geplant werden (z. B. wenn eine regelmäßige Aktualisierung der Indikatoren bis zum Ende eines Versands gewünscht ist).
 
    ![](assets/response_exec_settings_001.png)
 
    Um die Häufigkeit der Aktualisierung zu bestimmen, gehen Sie wie folgt vor:
 
-   1. Klicken Sie auf den **[!UICONTROL Frequency of execution...]** Link und dann auf die **[!UICONTROL Change...]** Schaltfläche.
+   1. Klicken Sie auf den Link **[!UICONTROL Ausführungsfrequenz...]** und anschließend auf die Schaltfläche **[!UICONTROL Ändern]**.
 
       ![](assets/response_frequency_execution_001.png)
 
@@ -103,12 +103,12 @@ Auf der **[!UICONTROL General]** Registerkarte der Vorlage können Sie auch die 
 
       ![](assets/response_frequency_execution_002.png)
 
-   1. Click **[!UICONTROL Finish]** to save the schedule.
+   1. Klicken Sie zur Bestätigung Ihrer Eingaben auf **[!UICONTROL Beenden]**.
 
       ![](assets/response_frequency_execution_003.png)
 
-* **[!UICONTROL Log SQL queries in journal]**: Diese Funktion ist für erfahrene Benutzer reserviert. Damit können Sie eine Registerkarte zur Prüfung der Messhypothese hinzufügen, um SQL-Abfragen anzuzeigen. Dies ermöglicht die Erkennung möglicher Fehlfunktionen, wenn eine Simulation mit Fehlern abgeschlossen ist.
-* **[!UICONTROL Keep execution workflow]**: Sie können den Workflow behalten, der automatisch zu Beginn der Hypothese erstellt wurde. In den Hypothesen, die aus einer Vorlage erstellt wurden, für die diese Option aktiviert ist, steht der generierte Workflow zur Verfügung, um den Prozess zu verfolgen.
+* **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: Diese Funktion sollte erfahrenen Benutzern vorbehalten bleiben. Sie fügt der Verfolgung der Messhypothesen einen Tab hinzu, in dem SQL-Abfragen angezeigt werden. Dies ermöglicht es, mögliche Fehlfunktionen ausfindig zu machen, wenn eine Simulation mit Fehlern beendet wird.
+* **[!UICONTROL Ausführungs-Workflow beibehalten]**: Diese Option ermöglicht es, den beim Start der Hypothesenberechnung automatisch erzeugten Workflow beizubehalten. In Hypothesen, die basierend auf einer Vorlage mit dieser Option erstellt werden, besteht zur Beobachtung des Ablaufs Zugriff auf den Workflow.
 
    >[!CAUTION]
    >
@@ -120,27 +120,27 @@ Auf der **[!UICONTROL General]** Registerkarte der Vorlage können Sie auch die 
 
 Dieser Tab enthält die unterschiedlichen Felder und Tabellen, die den Verlauf der Empfängerreaktionen in Form von Transaktionen speichern. Weiterführende Informationen über die der Reaktionsverwaltung dedizierten Tabellen erhalten Sie im [Konfigurationshandbuch](../../configuration/using/about-schema-reference.md).
 
-* **[!UICONTROL Schema (reaction log storage)]**: Wählen Sie die Reaktionstabelle des Empfängers aus. Die vordefinierte Tabelle in Adobe Campaign lautet **NmsRemaMatchRcp**.
-* **[!UICONTROL Transaction schema]**: Wählen Sie die Tabelle aus, die die Hypothesen betreffen, d.h. die Transaktion oder die Kauftabelle.
-* **[!UICONTROL Querying schema]**: die Kriterien zum Filtern der Hypothese auswählen.
-* **[!UICONTROL Link to individuals]**: Wählen Sie die Verknüpfung zwischen Einzelpersonen und der als Transaktionsschema verwendeten Tabelle.
-* **[!UICONTROL Link to the household]**: Wählen Sie den Link zum Haushalt im Transaktionsschema aus, wenn Sie alle Mitglieder eines Haushalts in eine Hypothese einbeziehen möchten. Dieses Feld ist optional.
-* **[!UICONTROL Transaction date]**: Dieses Feld ist optional, wird jedoch empfohlen, da Sie damit einen Bereich für die Hypothese definieren können.
-* **[!UICONTROL Measurement period]**: können Sie Start- und Enddaten konfigurieren, während denen Hypothesen ausgeführt und Kaufzeilen wiederhergestellt werden.
+* **[!UICONTROL Schema (Speicherung des Reaktionslogs)]**: Geben Sie die Tabelle der Empfängerreaktionen an. Die standardmäßige Adobe-Campaign-Tabelle hierfür ist **NmsRemaMatchRcp**.
+* **[!UICONTROL Transaktionsschema]**: Wählen Sie die Tabelle aus, auf die sich die Hypothesen beziehen sollen (also die die Bestellungen enthaltende Transaktionstabelle).
+* **[!UICONTROL Abfrageschema]**: Wählen Sie Kriterien zur Filterung der Hypothese aus.
+* **[!UICONTROL Relation zu den Individuen]**: Geben Sie die Relation zwischen den Individuen und der als Transaktionschema ausgewählten Tabelle an.
+* **[!UICONTROL Relation zum Haushalt]**: Wählen Sie die Relation mit dem Haushalt im Transaktionsschema aus, wenn Sie alle Mitglieder eines Haushalts in Ihre Hypothese integrieren möchten. Dieses Feld ist optional.
+* **[!UICONTROL Transaktionsdatum]**: Dieses Feld ist optional. Seine Nutzung wird jedoch empfohlen, da es die Begrenzung des Perimeters der Hypothesenberechnung ermöglicht.
+* **[!UICONTROL Zeitraum der Hypothesenberechnung]**: Sie können Anfang und Ende des Zeitraums konfigurieren, während dem die Hypothesen ausgeführt und die Bestellzeilen abgerufen werden.
 
    Wenn eine Hypothese einem Versand zugeordnet wird, wird die Messung automatisch einige Tage nach dem Kontaktdatum (im Fall eines Briefpost-Versands) oder nach dem Versanddatum (im Fall eines E-Mail- oder SMS-Versands) ausgelöst.
 
    ![](assets/response_measurement_001.png)
 
-   Wenn die Hypothese von vornherein gestartet wird, kann sie erzwungen werden, wenn sie sofort ausgelöst werden soll. Andernfalls wird sie automatisch auf Grundlage des konfigurierten Berechnungsdatums ausgelöst, das auf dem Erstellungsdatum der Hypothese basiert (siehe [Erstellen einer Hypothese im Handumdrehen bei Lieferung](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
+   Wenn die Hypothese ohne Vorbereitung gestartet wird, kann sie erzwungen werden, wenn sie sofort ausgelöst werden soll. Andernfalls wird sie automatisch auf Grundlage des konfigurierten Berechnungsdatums ausgelöst, das auf dem Erstellungsdatum der Hypothese basiert (siehe [Erstellen einer Hypothese direkt in einem Versand](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery)).
 
-* **[!UICONTROL Transaction/Margin amount]**: Diese Felder sind optional und ermöglichen die automatische Berechnung von Umsatzindikatoren (siehe [Indikatoren](../../campaign/using/hypothesis-tracking.md#indicators)).
-* **[!UICONTROL Unit amount]**: können Sie einen Betrag zur Berechnung des Umsatzes festlegen (siehe [Indikatoren](../../campaign/using/hypothesis-tracking.md#indicators)).
+* **[!UICONTROL Transaktionsbetrag/Betrag der Spanne]**: Diese Felder sind optional. Sie ermöglichen die automatische Berechnung der Umsatzindikatoren (siehe [Indikatoren](../../campaign/using/hypothesis-tracking.md#indicators)).
+* **[!UICONTROL Stückbetrag]**: Dieses Feld ermöglicht die Festsetzung eines Betrags für die Berechnung der Umsatzindikatoren (siehe Indikatoren[](../../campaign/using/hypothesis-tracking.md#indicators)).
 
    ![](assets/response_transactions_001.png)
 
-* **[!UICONTROL Additional measures and data]**: können Sie zusätzliche Berichtsmaße oder Achsen aus Feldern in den verschiedenen Tabellen angeben.
-* **[!UICONTROL Update offer proposition status]**: können Sie den Status des Angebotsprojektes ändern, wenn ein Angebotempfänger durch die Hypothese identifiziert wird.
+* **[!UICONTROL Ergänzende Messungen und Daten]**: In diesem Feld werden zusätzliche Messungen und Berichtsachsen basierend auf den Feldern der unterschiedlichen Tabellen bestimmt.
+* **[!UICONTROL Vorschlagsstatus aktualisieren]**: Diese Option ermöglicht die Änderung eines Vorschlagsstatus, wenn ein Angebotsempfänger von der Hypothese identifiziert wurde.
 
    ![](assets/response_offer_status_001.png)
 
@@ -148,9 +148,9 @@ Dieser Tab enthält die unterschiedlichen Felder und Tabellen, die den Verlauf d
 
 Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder definiert wurden, können Sie den Perimeter Ihrer Hypothese weiter einschränken, indem Sie die betreffenden Transaktionen und Sendungen mithilfe von Filtern angeben. Sie haben auch die Möglichkeit, ein JavaScript zu verwenden, um ein in der Transaktionstabelle referenziertes Produkt, für das Sie eine Hypothese erstellen möchten, explizit anzugeben.
 
-* **Filtern nach Transaktionen**: auf der **[!UICONTROL Scope]** Registerkarte können Sie einen Filter auf die Hypothese konfigurieren. Gehen Sie dazu wie folgt vor:
+* **Filterung der Transaktionen**: Im Tab **[!UICONTROL Perimeter]** können Sie Filter für die Transaktionen erstellen. Gehen Sie hierzu wie folgt vor:
 
-   1. Klicken Sie auf den **[!UICONTROL Edit query]** Link.
+   1. Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**.
 
       ![](assets/response_scope_filtering_001.png)
 
@@ -162,9 +162,9 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
       ![](assets/response_scope_filtering_003.png)
 
-* **Filtern nach Empfängern**: auf der **[!UICONTROL Scope]** Registerkarte können Sie Ihre Hypothese auf alle Informationen beschränken, die mit einer Nachricht verknüpft sind (Lieferung, Empfänger, E-Mail-Adresse, Dienst usw.):
+* **Empfängerfilter**: Im Tab **[!UICONTROL Perimeter]** können Sie Ihre Hypothese auf jegliche, in Zusammenhang mit einer Nachricht stehende Information beschränken (Versand, Empfänger, E-Mail-Adresse, Dienst etc.). Gehen Sie hierzu wie folgt vor:
 
-   1. Klicken Sie auf den **[!UICONTROL Add a filter]** Link und dann **[!UICONTROL Edit query]**.
+   1. Klicken Sie auf den Link **[!UICONTROL Filter hinzufügen]** und anschließend auf **[!UICONTROL Abfrage bearbeiten]**.
 
       ![](assets/response_scope_filtering_004.png)
 
@@ -172,13 +172,13 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
       ![](assets/response_scope_filtering_005.png)
 
-   1. Click **[!UICONTROL Finish]** to save your query.
+   1. Klicken Sie auf **[!UICONTROL Beenden]**, um Ihre Abfrage zu speichern.
 
       ![](assets/response_scope_filtering_006.png)
 
 * **Script**: Mithilfe eines JavaScripts besteht die Möglichkeit, die Parameter der Hypothese bei ihrer Ausführung dynamisch zu überschreiben.
 
-   To do this, click the **[!UICONTROL Advanced settings]** link then enter the desired script.
+   Klicken Sie hierzu auf den Link **[!UICONTROL Erweiterte Parameter...]** und erfassen Sie das Script Ihrer Wahl.
 
    >[!NOTE]
    >
@@ -190,8 +190,8 @@ Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder d
 
 Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand erstellt. Die Transaktionstabelle (**Bestellungen** in unserem Beispiel), auf welcher die Hypothesen basieren, enthält Bestellzeilen, denen Produkte zugeordnet sind. Die Vorlage wird so konfiguriert, dass die Hypothesen sich auf eben diese Produkte bezieht.
 
-1. Wechseln Sie im Adobe Campaign-Explorer zum **[!UICONTROL Resources > Templates > Hypothesis templates]** Knoten.
-1. Click **[!UICONTROL New]** to create a template.
+1. Positionieren Sie sich im Knoten **[!UICONTROL Ressourcen > Vorlagen > Hypothesenvorlagen]** des Adobe-Campaign-Explorers.
+1. Klicken Sie auf **[!UICONTROL Neu]**, um eine Vorlage zu erstellen.
 
    ![](assets/response_hypothesis_model_example_001.png)
 
@@ -199,23 +199,23 @@ Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand e
 
    ![](assets/response_hypothesis_model_example_002.png)
 
-1. Select **[!UICONTROL Deliveries]** as a hypothesis type.
+1. Wählen Sie den Hypothesentyp **[!UICONTROL Sendungen]**.
 1. Geben Sie an, dass der Versand eine Kontrollgruppe enthalten kann, indem Sie das entsprechende Feld ankreuzen.
-1. Wählen Sie den **[!UICONTROL Direct mail]** Kanal aus.
+1. Wählen Sie den Kanal **[!UICONTROL Briefpost]**.
 
    >[!NOTE]
    >
    >Da die Vorlage briefversandspezifisch ist, können die basierend auf dieser Vorlage erstellten Hypothesen keinen Sendungen zugeordnet werden, die andere Kanäle nutzen.
 
-1. In the **[!UICONTROL Transactions]** tab, select the recipient reactions table.
+1. Geben Sie im Tab **[!UICONTROL Transaktionen]** die Empfängerreaktionen-Tabelle an.
 
    ![](assets/response_hypothesis_model_example_006.png)
 
-1. In the **[!UICONTROL Transactions schema]** field, choose your purchase table.
+1. Wählen Sie im Feld **[!UICONTROL Transaktionsschema]** Ihre die Bestellung enthaltende Transaktionstabelle aus.
 
    ![](assets/response_hypothesis_model_example_007.png)
 
-1. Wählen Sie im **[!UICONTROL Querying schema]** Feld Kaufzeilen aus.
+1. Wählen Sie im Feld **[!UICONTROL Abfrageschema]** Bestellzeilen aus.
 
    ![](assets/response_hypothesis_model_example_008.png)
 
@@ -233,11 +233,11 @@ Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand e
 
    ![](assets/response_hypothesis_model_example_005.png)
 
-1. In the **[!UICONTROL Scope]** tab, click **[!UICONTROL Edit query]** to create a filter on hypotheses.
+1. Klicken Sie im Tab **[!UICONTROL Perimeter]** auf **[!UICONTROL Abfrage bearbeiten]**, um einen Hypothesenfilter zu erstellen.
 
    ![](assets/response_hypothesis_model_example_011.png)
 
    Die auf diese Weise erstellte Vorlage ermöglicht es Ihnen, Hypothesen für in Ihrer Bestellungen-Tabelle enthaltene Produkte zu erstellen.
 
-1. Click **[!UICONTROL Save]** to record your template.
+1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung der Vorlage zu beenden.
 
