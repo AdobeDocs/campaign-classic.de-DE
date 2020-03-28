@@ -14,7 +14,7 @@ discoiquuid: ef7d9b16-506a-409c-a578-000b88cd17a2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 
 ---
@@ -36,7 +36,7 @@ Weiterführende Informationen zur Verwaltung von Webanwendungen finden Sie in [d
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
-## Kampagnenumfragebereich {#campaign-surveys-scope}
+## Campaign-Umfragenbereich {#campaign-surveys-scope}
 
 In Adobe Campaign stehen für Webanwendungen im Allgemeinen die folgenden Funktionen zur Verfügung:
 
@@ -57,11 +57,11 @@ In Adobe Campaign stehen für Webanwendungen im Allgemeinen die folgenden Funkti
 
 Das optionale Modul zur Umfrageerstellung (**Umfrage**) bietet die folgenden zusätzlichen Funktionen:
 
-* Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht Teil des anfänglichen Datenmodells sind. Weitere Informationen finden Sie unter [Speichern der gesammelten Antworten](../../web/using/managing-answers.md#storing-collected-answers).
-* Verwaltung der Punktzahl. For more on this, refer to [Score management](../../web/using/managing-answers.md#score-management).
-* Zufällige Anzeige von Fragen. For more on this, refer to [Adding questions](../../web/using/building-a-survey.md#adding-questions).
-* Echtzeit-Verfolgung von Antworten. For more on this, refer to [Response tracking](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
-* Erstellung spezieller Berichte Weitere Informationen finden Sie unter [Berichte zu Umfragen](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
+* Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht Teil des anfänglichen Datenmodells sind. Weitere Informationen finden Sie unter [Erfasste Antworten speichern](../../web/using/managing-answers.md#storing-collected-answers).
+* Verwaltung der Punktzahl. Weitere Informationen hierzu finden Sie im Abschnitt [Verwaltung der Punktzahl](../../web/using/managing-answers.md#score-management).
+* Zufällige Anzeige von Fragen. Weitere Informationen hierzu finden Sie unter [Fragen hinzufügen ](../../web/using/building-a-survey.md#adding-questions).
+* Echtzeit-Tracking von Antworten. Weitere Informationen hierzu finden Sie im Abschnitt [Antworten tracken](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
+* Erstellung spezieller Berichte Weitere Informationen hierzu finden Sie unter [Berichte zu Umfragen](../../web/using/publish--track-and-use-collected-data.md#reports-on-surveys).
 
 Gegenüber Webanwendungen verfügen Umfragen über eine vereinfachte grafische Benutzeroberfläche mit weniger Steuerelementen zur Bearbeitung.
 
@@ -74,17 +74,17 @@ Führen Sie die folgenden Schritte aus, um eine Umfrage zu erstellen und bereitz
 
    Ein Zwischenschritt zum Vorausfüllen der Daten kann eingerichtet werden, damit das Formular mit Daten ausgefüllt wird, die sich bereits in der Datenbank befinden. Sie können auch eine Testbox hinzufügen.
 
-1. Veröffentlichen Sie die Umfrage und senden Sie sie dann an die Empfänger (z. B. Link in eine Bereitstellung oder auf einer Website einschließen).
+1. Publizieren Sie die Umfrage und senden Sie sie dann an Empfänger (schließen Sie z. B. den Link in eine Sendung oder auf einer Website ein).
 1. Überwachen Sie die Antworten und prüfen Sie die entsprechenden Berichte.
 
-Weitere Informationen zum Konfigurieren und Sequenzieren dieser Schritte finden Sie in [diesem Abschnitt](../../web/using/about-web-forms.md). In diesem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
+Weitere Informationen zum Konfigurieren und Sequenzieren dieser Schritte finden Sie in [diesem Abschnitt](../../web/using/about-web-forms.md). In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
 
 ## Konfiguration von Umfragen {#surveys-configuration}
 
-Umfragen werden im **[!UICONTROL Resources > Online > Web Applications]** Knoten der Adobe Campaign-Struktur gespeichert. Konfigurationen befinden sich in den folgenden Ordnern:
+Die Speicherung von Umfragen erfolgt im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Adobe Campaign-Baums. Konfigurationen befinden sich in folgenden Ordnern:
 
-* **[!UICONTROL Administration > Configuration > Form rendering]**: enthält die Rendervorlagen für die Darstellung von Webformularen (Anwendungen und Umfragen).
-* **[!UICONTROL Resources > Templates > Web application templates]**: enthält die Formularvorlagen. Um ein Formular zu erstellen, müssen Sie mit einer Vorlage beginnen.
+* **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**: enthält die Rendering-Vorlagen für Webformulare (Anwendungen und Umfragen).
+* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält die Formularvorlagen. Zur Erstellung eines Formulars benötigen Sie eine Vorlage.
 
 >[!NOTE]
 >
