@@ -1,7 +1,7 @@
 ---
-title: 'Antrag an Adobe übermitteln  '
-seo-title: 'Antrag an Adobe übermitteln  '
-description: 'Antrag an Adobe übermitteln  '
+title: Antrag an Adobe übermitteln
+seo-title: Antrag an Adobe übermitteln
+description: Antrag an Adobe übermitteln
 seo-description: null
 page-status-flag: never-activated
 uuid: 8caa1dd6-864d-4101-8b72-c9bd28b8173f
@@ -14,13 +14,13 @@ discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ee483a8ed8d04fec561f8d4e96b630890209793c
 
 ---
 
 
-# Antrag an Adobe übermitteln  {#submitting-request-to-adobe}
+# Antrag an Adobe übermitteln{#submitting-request-to-adobe}
 
 >[!NOTE]
 >
