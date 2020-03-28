@@ -14,7 +14,7 @@ discoiquuid: 71969b30-cc01-4358-9597-f17939720684
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ## Ausführungstab {#execution-tab}
 
-The **[!UICONTROL Execution]** tab of the **[!UICONTROL Properties]** window in a workflow is broken down into 3 sections:
+Der Tab **[!UICONTROL Ausführung]** im Fenster der Workflow-**[!UICONTROL Eigenschaften]** enthält 3 Bereiche:
 
 ![](assets/wf_execution_tab.png)
 
@@ -32,60 +32,60 @@ The **[!UICONTROL Execution]** tab of the **[!UICONTROL Properties]** window in 
 
 Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
-* **[!UICONTROL Priority]**
+* **[!UICONTROL Versandpriorität]**
 
-   Die Workflow-Engine verarbeitet die auszuführenden Workflows anhand des in diesem Feld definierten Prioritätskriteriums. Beispielsweise werden alle Arbeitsabläufe mit einer **[!UICONTROL Average]** Priorität vor denen mit einer **[!UICONTROL Low]** Priorität ausgeführt.
+   Die Workflow-Engine verarbeitet anstehende Workflows gemäß der in diesem Feld angegebenen Priorität. So werden beispielsweise alle Workflows mit **[!UICONTROL mittlerer Priorität]** vor den Workflows mit **[!UICONTROL niedriger Priorität]** ausgeführt.
 
-* **[!UICONTROL Schedule execution for a time of low activity]**
+* **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]**
 
-   Diese Option verschiebt den Workflow-Start auf einen weniger aktiven Zeitraum. Einige Arbeitsabläufe können im Hinblick auf Ressourcen für die Datenbank-Engine teuer sein. Wir empfehlen die Ausführung der Zeitplanung für eine Zeit niedriger Aktivität (z.B. in der Nacht). Die Zeiträume mit geringer Aktivität werden im **[!UICONTROL Processes on campaigns]** technischen Arbeitsablauf definiert.
+   Bei Aktivierung dieser Option wird der Workflow zu einem Zeitpunkt mit geringerer Auslastung gestartet. Gewisse Workflows können sich als sehr ressourcenintensiv für die Datenbank-Engine erweisen. Es kann daher interessant sein, weniger dringende Workflows beispielsweise nachts auszuführen. Die Zeiten mit geringer Auslastung werden im technischen Workflow **[!UICONTROL Kampagnenvorgänge]** bestimmt.
 
 ### Ausführung {#execution}
 
-* **[!UICONTROL Default affinity]**
+* **[!UICONTROL Standard-Affinität]**
 
    Verwenden Sie dieses Feld, wenn Ihre Installation mehrere Workflow-Server aufweist, um festzulegen, auf welchem Server der Workflow laufen soll. Sollte der in diesem Feld angegebene Wert auf keinem Server existieren, bleibt der Workflow im Stand-by.
 
    Siehe diesen [Abschnitt](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
-* **[!UICONTROL History in days]**
+* **[!UICONTROL Verlaufsumfang (Tage)]**
 
    In den Arbeitstabellen der Datenbank werden der Ausführungsverlauf von Aufgaben und Ereignissen sowie das Protokoll gespeichert. Geben Sie hier an, wie lange der Verlauf für diesen Workflow beibehalten werden soll. Die in der Datenbank enthaltenen Bereinigungsprozesse löschen jeden Tag die obsoleten Verläufe. Bei Angabe von Null wird der Verlauf nie gelöscht.
 
-* **[!UICONTROL Log SQL queries in the journal]**
+* **[!UICONTROL SQL-Abfragen im Protokoll speichern]**
 
    Diese Funktion richtet sich an erfahrene Benutzer. Sie betrifft Workflows mit Zielgruppenbestimmungs-Aktivitäten (Abfrage, Vereinigung, Schnittmenge usw.). Wenn diese Option aktiviert wurde, werden die bei Ausführung des Workflows an die Datenbank gesendeten SQL-Abfragen in Adobe Campaign gespeichert. Auf diese Weise haben Sie die Möglichkeit, die Abfragen zu analysieren und eventuelle Probleme zu erkennen.
 
-   Abfragen werden auf einer **[!UICONTROL SQL logs]** Registerkarte angezeigt, die dem Workflow (mit Ausnahme von Kampagnen-Workflows) und der Aktivität hinzugefügt wird, wenn die Option aktiviert ist **[!UICONTROL Properties]** . Die **[!UICONTROL Audit]** Registerkarte enthält auch SQL-Abfragen.
+   Die Abfragen werden in diesem Fall im Tab **[!UICONTROL SQL-Logs]** angezeigt, der dem Workflow (außer bei Kampagnen-Workflows) und dem Fenster der Workflow-**[!UICONTROL Eigenschaften]** hinzugefügt wird. Die SQL-Abfragen werden darüber hinaus im **[!UICONTROL Verfolgung]**-Tab angezeigt.
 
    ![](assets/wf_tab_log_sql.png)
 
-* **[!UICONTROL Execute in the engine]**
+* **[!UICONTROL In der Engine ausführen]**
 
    Diese Option darf nur zur Problembehebung verwendet werden und nie im Produktionsalltag. Bei Aktivierung der Option wird der Workflow prioritär. Alle anderen Workflows werden bis zu seinem Abschluss von der Workflow-Engine angehalten.
 
-### Umgang mit Fehlern  {#error-management}
+### Umgang mit Fehlern   {#error-management}
 
-* **[!UICONTROL Troubleshooting]**
+* **[!UICONTROL Problembehebung]**
 
    In diesem Feld können Sie angeben, welche Aktion ausgeführt werden soll, wenn eine Workflow-Aufgabe einen Fehler ausgibt. Zwei Optionen stehen zur Verfügung:
 
-   * **[!UICONTROL Stop the process]**: Der Workflow wird automatisch angehalten. Der Workflow-Status ändert sich in **[!UICONTROL Failed]**. Nachdem das Problem behoben wurde, starten Sie den Workflow mit den **[!UICONTROL Start]** oder **[!UICONTROL Restart]** Schaltflächen neu.
-   * **[!UICONTROL Ignore]**: Der Status der Aufgabe, die den Fehler ausgelöst hat, ändert sich in **[!UICONTROL Failed]**, der Workflow behält jedoch den **[!UICONTROL Started]** Status bei. Diese Konfiguration ist für wiederkehrende Aufgaben relevant: Wenn die Verzweigung einen Scheduler enthält, wird sie beim nächsten Ausführen des Workflows normal gestartet.
+   * **[!UICONTROL Prozess aussetzen]** - der Workflow wird automatisch ausgesetzt. Der Workflow-Status wechselt zu **[!UICONTROL Fehlgeschlagen]**. Nach Behebung des Problems können Sie den Workflow **[!UICONTROL Starten]** oder **[!UICONTROL Neu starten]**.
+   * **[!UICONTROL Ignorieren]** - die den Fehler verursachende Aufgabe wechselt in den Status **[!UICONTROL Fehlgeschlagen]**, der Workflow behält jedoch den Status **[!UICONTROL Gestartet]**. Diese Konfiguration empfiehlt sich bei wiederkehrenden Aufgaben. Wenn der Workflow-Zweig eine Planungsaktivität enthält, löst diese automatisch zum nächsten geplanten Zeitpunkt die nächste Ausführung aus.
 
-* **[!UICONTROL Consecutive errors]**
+* **[!UICONTROL Folgefehler]**
 
-   Dieses Feld wird verfügbar, wenn der **[!UICONTROL Ignore]** Wert im **[!UICONTROL In case of errors]** Feld ausgewählt ist. Sie können die Anzahl der Fehler angeben, die ignoriert werden können, bevor der Prozess beendet wird. Sobald diese Zahl erreicht ist, ändert sich der Workflow-Status in **[!UICONTROL Failed]**. Wenn der Wert dieses Felds 0 beträgt, wird der Workflow unabhängig von der Anzahl der Fehler nie beendet.
+   Dieses Feld erscheint, wenn im Feld **[!UICONTROL Bei Fehler]** die Option **[!UICONTROL Ignorieren]** ausgewählt wurde. Geben Sie die Anzahl an Fehlern an, die ignoriert werden soll, bevor der Prozess ausgesetzt wird. Bei Erreichen der angegebenen Fehleranzahl wechselt der Workflow in den Status **[!UICONTROL Fehlgeschlagen]**. Bei Angabe von Null wird der Workflow nie aufgrund von Fehlern unterbrochen.
 
 * **[!UICONTROL Template]**
 
-   This field lets you select the notification template to be sent to the workflow supervisors when its status changes to **[!UICONTROL Failed]**.
+   Geben Sie in diesem Feld die Vorlage für die Benachrichtigung an, die die Workflow-Supervisoren erhalten, wenn ein Workflow den Status **[!UICONTROL Fehlgeschlagen]** annimmt.
 
-   Die betroffenen Betreiber werden per E-Mail benachrichtigt, wenn sich in ihrem Profil eine E-Mail-Adresse befindet. Um Workflow-Aufsichtsbehörden zu definieren, wechseln Sie zum **[!UICONTROL Supervisor(s)]** Feld der Eigenschaften (**[!UICONTROL General]** Registerkarte).
+   Die betroffenen Benutzer werden per E-Mail benachrichtigt, sofern in ihrem Profil eine E-Mail-Adresse angegeben wurde. Die verantwortlichen Supervisoren werden im Feld **[!UICONTROL Supervisor(en)]** im **[!UICONTROL Allgemein]**-Tab der Workflow-Eigenschaften ausgewählt.
 
    ![](assets/wf-properties_select-supervisors.png)
 
-   The **[!UICONTROL Notification to a workflow supervisor]** default template includes a link for accessing the Adobe Campaign console via the Web so that the recipient can work on the issue once they are logged on.
+   Die Standardvorlage **[!UICONTROL Benachrichtigung des Workflow-Verantwortlichen]** enthält einen Link, die den Webzugriff auf die Adobe-Campaign-Konsole ermöglicht. Auf diese Weise kann der Supervisor nach Anmeldung in den fehlgeschlagenen Workflow eingreifen.
 
-   Um eine personalisierte Vorlage zu erstellen, gehen Sie zu **[!UICONTROL Administration>Campaign management>Technical deliveries and templates]**.
+   Sie haben die Möglichkeit, im Knoten **[!UICONTROL Administration > Kampagnen > Vorlagen technischer Sendungen]** eine eigene Vorlage zu erstellen.
 
