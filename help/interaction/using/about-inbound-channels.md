@@ -14,7 +14,7 @@ discoiquuid: 9469495c-9e46-4fd8-826d-1b7227326ce1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5489e09303920bf5bd3dcd08263dc3c945d151c1
 
 ---
@@ -26,9 +26,9 @@ Angebote können in verschiedenen Platzierungen über eingehende oder ausgehende
 
 >[!NOTE]
 >
->Sie können sich auch dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ansehen, in dem erfahren wird, wie ein Angebot auf einem eingehenden Kanal bereitgestellt wird.
+>Sie können sich auch dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ansehen, um zu erfahren, wie Sie ein Angebot über einen eingehenden Kanal senden können.
 
-In order for an offer to be selected by the offer engine, it has to be approved and be available in a live environment For more on this, refer to [Approving and activating an offer](../../interaction/using/approving-and-activating-an-offer.md).
+Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor validiert und für die Live-Umgebung freigegeben worden sein. Lesen Sie diesbezüglich den Abschnitt [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
 
 Eingehende Interaktionen lassen sich dahingehend unterscheiden, ob der sie auslösende Kontakt identifiziert werden konnte oder nicht. Das Angebotsmodul ermöglicht es, anonymen und identifizierten Kontakten jeweils verschiedene Angebote zu unterbreiten.
 
@@ -38,4 +38,4 @@ Um in eingehenden Kanälen Angebote vorschlagen zu können, muss die Abfrage an 
 >
 >Im Falle von eingehenden Interaktionen muss das Angebotsmodul dahingehend konfiguriert werden, ein oder mehrere Angebote zu aktualisieren und vorzuschlagen.
 >
->Sie müssen auch den Einheitsmodus auf Ihren Angebotspaletten aktivieren. For more on this, refer to the [Creating offer spaces](../../interaction/using/creating-offer-spaces.md) section.
+>Außerdem müssen Sie für Ihre Platzierungen den Einzelmodus zulassen. Weiterführende Informationen finden Sie unter [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md).
