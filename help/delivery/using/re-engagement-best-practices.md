@@ -14,22 +14,22 @@ discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
 
 ---
 
 
-# Verbesserung der Lieferbarkeit durch erneute Bindung{#re-engagement}
+# Zustellbarkeit durch Rückgewinnung verbessern{#re-engagement}
 
-Während der Implementierung der Zustellbarkeit bestehen einige der Best Practices darin, eine gesunde Teilnehmerbasis zu erhalten und die Zustellbarkeit durch Strategien zur erneuten Interaktion zu verbessern.
+Einige der Best Practices bei der Implementierung der Zustellbarkeit bestehen darin, einen gesunden Abonnentenstamm zu erhalten und die Zustellbarkeit durch Rückgewinnungsstrategien zu verbessern.
 
-* Die Aufrechterhaltung einer gesunden Teilnehmerbasis ist einer der Hauptaspekte, um eine gute und konsistente Bereitstellung zu gewährleisten. Viele Bereitstellungsprobleme entstehen durch schlechte Datenpraxis und Wartung.
-* Eines der häufigsten Probleme, mit denen Marketingexperten heutzutage konfrontiert sind, ist die Inaktivität von Abonnenten (auch als &quot;gering&quot;oder &quot;nicht aktiv&quot;bezeichnet), was sich negativ auf die Bereitstellung von E-Mails und den niedrigen ROI auswirken kann.
+* Die Aufrechterhaltung eines gesunden Abonnentenstamms ist einer der Hauptaspekte für einen guten und konsistenten Versand. Viele Zustellbarkeitsprobleme entstehen durch schlechte Datenpraxis und Wartung.
+* Eines der häufigsten Probleme, mit denen Marketing-Experten heutzutage konfrontiert sind, ist die Inaktivität von Abonnenten (auch als „niedrige“ oder „fehlende Interaktion“ bezeichnet), die sich negativ auf den Versand von E-Mails auswirken und einen niedrigen ROI verursachen kann.
 
 >[!NOTE]
 >
->Weitere Informationen zu Kampagnenstrategien und den Bereitstellungsdiensten von Adobe erhalten Sie von Ihrem Berater für Auslieferung oder von Ihrem Adobe-Vertriebsmitarbeiter.
+>Weitere Informationen zu Wiedergewinnungsstrategien und Zustellbarkeitsdiensten von Adobe erhalten sie von Ihrem Zustellbarkeitsberater oder Ihrem Adobe-Vertreter.
 
 ## Wie beurteilen ISPs inaktives Verhalten? {#how-do-isps-view-non-engagement-activity-}
 
