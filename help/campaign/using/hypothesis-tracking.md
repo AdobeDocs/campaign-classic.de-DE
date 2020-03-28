@@ -14,7 +14,7 @@ discoiquuid: 4452bfc6-9ac4-4d81-a63c-879a163c13ee
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -28,7 +28,7 @@ Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Ad
 
 ### Indicators {#indicators}
 
-Nachdem die Hypothese berechnet wurde, werden mehrere Messindikatoren automatisch aktualisiert. Diese sind auf der **[!UICONTROL General]** Registerkarte der Hypothese verfügbar.
+Nach Berechnung der Hypothese werden mehrere Messindikatoren automatisch aktualisiert. Diese sind im Tab **[!UICONTROL Allgemein]** der Hypothese verfügbar.
 
 ![](assets/response_hypothesis_delivery_example_010.png)
 
@@ -40,7 +40,7 @@ Es handelt sich um folgende Indikatoren:
 * **Reaktionsrate Kontrollgruppe**: Anzahl von reagierenden Individuen der Kontrollgruppe/Individuen der Kontrollgruppe des Versands insgesamt.
 * **Anzahl Reaktionen**: Anzahl der Datensätze in der Tabelle, die die Beziehung zwischen Individuen, Hypothese und Transaktionstabelle enthält.
 
-Für die vollständige Liste der Indikatoren klicken Sie auf den **[!UICONTROL Display the list]** Link:
+Klicken Sie auf den Link **[!UICONTROL Liste anzeigen]**, um eine Liste aller Indikatoren anzuzeigen:
 
 ![](assets/response_hypothesis_indicators_002.png)
 
@@ -63,21 +63,21 @@ Folgende Informationen werden von den Indikatoren bereitgestellt:
 
 ### Reaktionen {#reactions}
 
-You can view recipients&#39; reactions to the hypotheses via the **[!UICONTROL Reactions]** tab.
+Sie können die durch die Hypothesen generierten Empfängerreaktionen im Tab **[!UICONTROL Reaktionen]** einsehen.
 
-1. Once hypothesis calculation is complete, go to the **[!UICONTROL Campaign management > Measurement hypotheses]** node of the Adobe Campaign tree.
-1. Select the desired hypothesis and click the **[!UICONTROL Reactions]** tab to view the list of recipients likely to purchase something following the marketing campaign.
+1. Gehen Sie nach Abschluss der Hypothesenberechnung in den Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]** des Adobe-Campaign-Navigationsbaums.
+1. Wählen Sie die gewünschte Hypothese aus der Liste aus und klicken Sie auf den Tab **[!UICONTROL Reaktionen]**, um die Liste der Empfänger anzuzeigen, die im Anschluss an die Marketingkampagne möglicherweise eine Bestellung tätigen.
 
    ![](assets/response_hypothesis_reactions_001.png)
 
 ## Berichte {#reports}
 
-Mit der **[!UICONTROL Hypothesis report]** können Sie die Ergebnisse der Hypothesen anzeigen, die für Kampagnen und Lieferungen durchgeführt wurden. Dieser Bericht enthält die anhand der Hypothese berechneten Indikatoren (weitere Informationen finden Sie unter [Indikatoren](#indicators)).
+Im **[!UICONTROL Hypothesenbericht]** können Sie die Ergebnisse der Hypothesen zu Kampagnen und Sendungen einsehen. Dieser Bericht enthält die von der Hypothese berechneten Indikatoren (weitere Informationen finden Sie unter [Indikatoren](#indicators)).
 
-* **Auf Kampagnenebene**: Klicken Sie auf den **[!UICONTROL Reports]** Link der jeweiligen Kampagne und wählen Sie die **[!UICONTROL Hypothesis report]**. Dieser Bericht enthält eine Liste der Kampagnenlieferungen und die für jede Lieferung berechneten Hypothesen.
+* **In der Kampagne**: Klicken Sie auf den Link **[!UICONTROL Berichte]** der betreffenden Kampagne und wählen Sie den **[!UICONTROL Hypothesenbericht]** aus. Dieser Bericht enthält die Liste der Sendungen der Kampagne sowie die für jeden Versand berechneten Hypothesen.
 
    ![](assets/response_hypothesis_campaign_report_001.png)
 
-* **Auf Zustellungsebene**: Um auf den Bericht zuzugreifen, öffnen Sie die entsprechende Bereitstellung, klicken Sie auf die **[!UICONTROL Reports]** Registerkarte **[!UICONTROL Summary]** und wählen Sie die **[!UICONTROL Hypothesis report]**. Wenn mehrere Hypothesen für dieselbe Lieferung berechnet wurden, enthält der Bericht alle Hypothesen.
+* **Im Versand**: Öffnen Sie den betreffenden Versand, klicken Sie auf die Schaltfläche **[!UICONTROL Berichte]** im Tab **[!UICONTROL Zusammenfassung]** und wählen Sie den **[!UICONTROL Hypothesenbericht]** aus. Der Bericht enthält alle für den Versand berechneten Hypothesen.
 
    ![](assets/response_hypothesis_delivery_report_001.png)
