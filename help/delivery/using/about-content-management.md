@@ -14,7 +14,7 @@ discoiquuid: 9f4e8d10-7387-4716-aa85-a6b012ad14ef
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e0ab9a3545b5c688975c32075c41e3987da5cf37
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: e0ab9a3545b5c688975c32075c41e3987da5cf37
 
 # Über Content Management{#about-content-management}
 
-Das Adobe Campaign Content Manager-Modul ist ein spezifisches Campaign Classic- [Standardpaket](../../installation/using/installing-campaign-standard-packages.md) , das Sie installieren können, um wiederkehrende Newsletter oder Websites zu erstellen. Das Modul unterstützt Sie in der Erstellung, Validierung und Publikation Ihrer Nachrichten:
+Das Adobe Campaign-Modul Inhaltsverwaltung (Content Manager) ist ein spezifisches Campaign Classic-[Standard-Package](../../installation/using/installing-campaign-standard-packages.md), das Sie installieren können, um wiederkehrende Newsletter oder Websites zu erstellen. Das Modul unterstützt Sie in der Erstellung, Validierung und Publikation Ihrer Nachrichten:
 
 >[!NOTE]
 >
->Dieser Abschnitt bezieht sich auf das Inhaltsverwaltungsmodul. Weitere Informationen zum Entwerfen von E-Mail-Zustellinhalten finden Sie in [diesem Abschnitt](../../delivery/using/defining-the-email-content.md).
+>Dieser Abschnitt bezieht sich auf das Content Management-Modul. Weitere Informationen zum Entwerfen von Inhalten für den E-Mail-Versand finden Sie in [diesem Abschnitt](../../delivery/using/defining-the-email-content.md).
 
-Das Content-Management-Modul umfasst Arbeitsgruppen-, Workflow- und Inhaltsaggregations-Funktionen. Dadurch kann eine Meldung automatisch formatiert werden: E-Mail, Post, SMS, Web usw.
+Das Content Management-Modul umfasst Funktionen für Arbeitsgruppen, Workflows und Inhaltsaggregationen. Damit können Nachrichten automatisch formatiert werden: E-Mail, Post, SMS, Web usw.
 
 Die Verwendung des Content-Manager-Moduls ermöglicht es Ihnen, den für die Inhaltserstellung zuständigen Benutzern Eingabe- und Auswahlfelder zur Verfügung zu stellen. Das Layout der Inhalte wird automatisch über ein Stylesheet gesteuert.
 
