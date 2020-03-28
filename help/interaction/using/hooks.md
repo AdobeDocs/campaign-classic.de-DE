@@ -14,7 +14,7 @@ discoiquuid: 2b799ad7-b729-4b3e-9adc-1df13259f2a9
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 Erweiterungspunkte (Hooks) bieten die Möglichkeit, das **Standardverhalten des Angebotsmoduls** Ihren Bedürfnissen entsprechend anzupassen.
 
-Die **[!UICONTROL Target loading]** und die **[!UICONTROL Proposition post-processing]** Haken werden in Adobe Campaign im Angebotsumfeld konfiguriert:
+In Adobe Campaign stehen auf Platzierungsebene die Erweiterungspunkte **[!UICONTROL Laden der Zielgruppe]** und **[!UICONTROL Vorschlags-Anschlussvorgang]** zur Verfügung:
 
 ![](assets/interaction_hooks_1.png)
 
-The **[!UICONTROL Dynamic offer]** hook is configured with the offer weight in Adobe Campaign:
+Auf Ebene der Gewichtung ist der Erweiterungspunkt **[!UICONTROL Dynamisches Angebot]** verfügbar:
 
 ![](assets/interaction_hooks_2.png)
 
@@ -124,7 +124,7 @@ return aReturnedProps;
 
 Diese Art Erweiterungspunkt ermöglicht die Abfrage eines externes Moduls, um eine Produktliste in Zusammenhang mit einem Angebot auszuwählen. Die Abfrage erfolgt nach Anwendung der Eignungsregeln, aber vor den Typologieregeln.
 
-Zuvor sollte der Integrator das **PropositionRcp** -Schema um zusätzliche Informationen zum Produkt erweitern. Um anzugeben, wo diese Daten gespeichert werden sollen, steht auf der **[!UICONTROL Proposition being processed]** Registerkarte des Bereichs ein **[!UICONTROL Storage]** Link zur Verfügung
+Der Integrator muss zuvor das Vorschlagsschema **PropositionRcp** um die mit dem Vorschlag zu speichernden zusätzlichen Produktdaten erweitern. Über die Relation **[!UICONTROL Aktueller Vorschlag]** im Tab **[!UICONTROL Speicherung]** der Platzierung lässt sich die Speicherung dieser Daten (z. B. Produktnummer) definieren.
 
 ![](assets/interaction_hooks_3.png)
 
