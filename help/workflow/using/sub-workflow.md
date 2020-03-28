@@ -14,7 +14,7 @@ discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 # Unter-Workflow{#sub-workflow}
 
-Mit der **[!UICONTROL Sub-workflow]** Aktivität können Sie die Ausführung eines anderen Workflows auslösen und das Ergebnis wiederherstellen. Mit dieser Aktivität können Sie komplexe Arbeitsabläufe mit einer vereinfachten Oberfläche verwenden.
+Mit der Aktivität **[!UICONTROL Unter-Workflow]** kann die Ausführung eines anderen Workflows gestartet und dessen Ergebnis zur weiteren Verwendung abgerufen werden. Dies ermöglicht komplexe, aber dennoch übersichtliche Workflow-Konstruktionen.
 
 Sie können in einem einzigen Workflow mehrere Unter-Workflows starten. Unter-Workflows werden synchron ausgeführt.
 
@@ -31,31 +31,31 @@ Sie können in einem einzigen Workflow mehrere Unter-Workflows starten. Unter-Wo
 >Damit der Unter-Workflow korrekt ausgeführt wird, darf nur ein einziger Sprung vom Typ &quot;Ziel&quot; mit der niedrigsten Nummer und ein einziger Sprung vom Typ &quot;Start&quot; mit der höchsten Nummer vorhanden sein. Wenn beispielsweise Sprünge vom Typ &quot;Start&quot; mit einer Priorität von 1, 2 und 3 vorhanden sind, sollte nur ein Sprung vom Typ &quot;Start&quot; mit einer Priorität von 3 vorhanden sein.
 
 1. Erstellen Sie einen Workflow, den Sie als Unter-Workflow in einem anderen Workflow verwenden möchten.
-1. Fügen Sie eine **[!UICONTROL Jump (end point)]** Aktivität mit der Priorität 1 am Anfang des Workflows ein. Wenn Sie mehrere Sprünge vom Typ &quot;Ankunft&quot;haben, verwendet Adobe Campaign den Springen &quot;Ankunft&quot;mit der niedrigsten Zahl.
+1. Fügen Sie zu Beginn des Workflows die Aktivität **[!UICONTROL Sprung (Ziel)]** mit der Priorität 1 ein. Wenn Sie mehrere Sprünge vom Typ &quot;Ziel&quot; haben, verwendet Adobe Campaign den Ziel-Sprung mit der niedrigsten Nummer.
 
-   Fügen Sie am Ende des Workflows eine **[!UICONTROL Jump (start point)]** Aktivität mit der Priorität 2 ein. Wenn Sie mehrere &quot;Start&quot;-Jumps haben, verwendet Adobe Campaign den &quot;Start&quot;-Sprung mit der höchsten Anzahl.
+   Fügen Sie am Ende des Workflows die Aktivität **[!UICONTROL Sprung (Start)]** mit der Priorität 2 ein. Wenn Sie mehrere Sprünge vom Typ &quot;Start&quot; haben, verwendet Adobe Campaign den Start-Sprung mit der höchsten Nummer.
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >If the sub-workflow activity references a workflow with several **[!UICONTROL Jump]** activities, the sub-workflow is executed between the &quot;arrival&quot; type jump with the lowest number and the &quot;start&quot; type jump with the highest number.
+   >Wenn die Unter-Workflow-Aktivität einen Workflow startet, der mehrere **[!UICONTROL Sprung]**-Aktivitäten aufweist, wird der Unter-Workflow zwischen dem Sprung vom Typ &quot;Ziel&quot; mit der kleinsten Nummer und dem Sprung vom Typ &quot;Start&quot; mit der höchsten Nummer ausgeführt.
 
 1. Vervollständigen und speichern Sie diesen Unter-Workflow.
 1. Erstellen Sie einen &quot;Master&quot;-Workflow.
-1. Insert a **[!UICONTROL Sub-workflow]** activity and open it.
-1. Select the workflow that you want to use from the **[!UICONTROL Workflow template]** drop-down list.
+1. Fügen Sie die Aktivität **[!UICONTROL Unter-Workflow]** ein und öffnen Sie sie.
+1. Wählen Sie in der Dropdown-Liste der **[!UICONTROL Workflow-Vorlagen]** den gewünschten Workflow aus.
 
    ![](assets/subworkflow_selection.png)
 
 1. Es besteht auch die Möglichkeit, ein Konfigurationsscript hinzuzufügen, um die Funktionsweise des referenzierten Workflows anzupassen.
-1. Klicks **[!UICONTROL Ok]**. It will automatically create an outbound transition with the label of the **[!UICONTROL Jump (start point)]** activity from the selected workflow.
+1. Wählen Sie **[!UICONTROL OK]** aus. Aus dem ausgewählten Workflow wird automatisch eine ausgehende Transition mit dem Titel der Aktivität **[!UICONTROL Sprung (Start)]** erstellt.
 
    ![](assets/subworkflow_outbound.png)
 
 1. Führen Sie den Workflow aus.
 
-Once run, the workflow that was called as a sub-workflow is still in **[!UICONTROL Being edited]** status, which means the following:
+Nach Ausführung befindet sich der Workflow, der als Unter-Workflow gestartet wurde, im Status **[!UICONTROL In Bearbeitung]**, was Folgendes bedeutet:
 
 * Sie können mit der rechten Maustaste nicht auf die Transitionen klicken, um die Zielgruppe anzuzeigen.
 * Es kann kein Zwischenergebnis der Populationsgröße angezeigt werden.
@@ -76,8 +76,8 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Dieser Satz von drei Werten identifiziert die Zielgruppe der Abfrage. **[!UICONTROL tableName]** ist der Name der Tabelle, in der die Zielkennungen aufgezeichnet werden, das Schema der Population (normalerweise nms:empfänger) und die Anzahl der Elemente in der Tabelle **[!UICONTROL schema]** ist **[!UICONTROL recCount]** dies.
+Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
 
 * targetSchema
 
-Dieser Wert ist das Schema der Arbeitstabelle. Dieser Parameter ist für alle Übergänge mit **[!UICONTROL tableName]** und gültig **[!UICONTROL schema]**.
+Dieser Wert bezeichnet das Schema der Arbeitstabelle. Dieser Parameter ist für alle Transitionen mit **[!UICONTROL tableName]** und **[!UICONTROL schema]** gültig.
