@@ -14,7 +14,7 @@ discoiquuid: a2a65f97-425b-44b2-8cf4-beea850423bc
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 67dce820b7a90163032ee72263a9dd23b521ea69
 
 ---
@@ -44,7 +44,7 @@ Die in Kampagnen-Workflows zur Verfügung stehende Versandentwurfsaktivität erl
 1. Füllen Sie die verfügbaren Felder Ihrem Versand entsprechend aus.
 1. Sie haben zwei Möglichkeiten:
 
-   * Wenn Sie die Angebotsmaschine aufrufen möchten, markieren Sie das **[!UICONTROL Restrict the number of propositions selected]** Kästchen. Geben Sie den Angebotsbereich und die Anzahl der Vorschläge an, die in der Bereitstellung präsentiert werden sollen.
+   * Versand mit Abfrage an das Angebotsmodul: Kreuzen Sie in diesem Fall die Option **[!UICONTROL Anzahl der ausgewählten Vorschläge begrenzen]** an. Konfigurieren Sie die Platzierung und die Anzahl an zu unterbreitenden Angeboten.
 
       Gewichtung und Eignungsregeln der Angebote werden vom Angebotsmodul berücksichtigt.
 
