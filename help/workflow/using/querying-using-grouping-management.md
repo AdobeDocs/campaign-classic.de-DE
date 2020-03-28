@@ -1,6 +1,6 @@
 ---
 title: Abfrage mit Gruppierungsbedingungen
-description: Erfahren Sie, wie Sie mithilfe der Gruppenverwaltung Abfragen durchführen
+description: Erfahren Sie, wie Sie mit Gruppierungsbedingungen Abfragen durchführen können
 page-status-flag: never-activated
 uuid: 0556d53e-0fdf-47b3-b1e0-b52e85e0c662
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
 
 ---
@@ -32,40 +32,40 @@ Im folgenden Beispiel werden die E-Mail-Domains gesucht, die bei früheren Sendu
 
 * Nach welchen Kriterien werden die Daten gruppiert?
 
-   Basierend auf E-Mail-Domäne mit einer Anzahl von Primärschlüsseln über 30. Dieser Vorgang wird nach **[!UICONTROL Group by + Having]** Wahl durchgeführt. **[!UICONTROL Group by + Having]** können Sie Daten gruppieren (&quot;Gruppieren nach&quot;) und eine Auswahl dessen treffen, was gruppiert wurde (&quot;haben&quot;).
+   Nach E-Mail-Domain mit einer Primärschlüsselanzahl von über 30. Hierfür wird die Funktion **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** ) verwendet, welche sowohl die Gruppierung (&quot;group by&quot;) als auch die Filterung (&quot;having&quot;) der Daten erlaubt, die gruppiert wurden.****
 
 Gehen Sie wie folgt vor:
 
-1. Open the **[!UICONTROL Generic query editor]** and choose the Recipient table (**nms:recipient**).
+1. Öffnen Sie das **[!UICONTROL generische Abfragetool]** und wählen Sie die Empfängertabelle (**nms:recipient**).
 
    ![](assets/query_editor_02.png)
 
-1. Wählen Sie im **[!UICONTROL Data to extract]** Fenster die Felder **[!UICONTROL Email domain]** und **[!UICONTROL Primary key]** aus. Führen Sie eine Zählung für das **[!UICONTROL Primary key]** Feld aus.
+1. Wählen Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** das Feld **[!UICONTROL E-Mail-Domain]** aus und konfigurieren Sie eine Zählung des Felds **[!UICONTROL Primärschlüssel]**.****
 
    Weiterführende Informationen zu Primärschlüsselzählungen finden Sie in [diesem Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions).
 
-1. Markieren Sie das **[!UICONTROL Handle groupings (GROUP BY + HAVING)]** Kästchen.
+1. Kreuzen Sie die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** an.
 
    ![](assets/query_editor_nveau_29.png)
 
-1. Sortieren Sie im **[!UICONTROL Sorting]** Fenster E-Mail-Domänen in absteigender Reihenfolge. Dazu checken Sie **[!UICONTROL Yes]** die **[!UICONTROL Descending sort]** Spalte ein. Klicks **[!UICONTROL Next]**.
+1. Ordnen Sie im Fenster **[!UICONTROL Sortierung]** die E-Mail-Domains in absteigender Reihenfolge. Kreuzen Sie hierfür in der Spalte **[!UICONTROL Absteigende Sortierung]** die Option **[!UICONTROL Ja]** an. Klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_nveau_70.png)
 
-1. Wählen Sie **[!UICONTROL Data filtering]** in **[!UICONTROL Filtering conditions]**. Gehen Sie zum **[!UICONTROL Target elements]** Fenster und klicken Sie auf **[!UICONTROL Next]**.
-1. Wählen Sie im **[!UICONTROL Data grouping]** Fenster die **[!UICONTROL Email domain]** durch Klicken auf **[!UICONTROL Add]**.
+1. Wählen Sie im Fenster **[!UICONTROL Datenfilter]** die Option **[!UICONTROL Filterbedingungen]** und klicken Sie im Fenster **[!UICONTROL Zielelement]** auf **[!UICONTROL Weiter]**.
+1. Klicken Sie im Fenster **[!UICONTROL Gruppierung der Daten]** auf **[!UICONTROL Hinzufügen]** und wählen Sie das Feld **[!UICONTROL E-Mail-Domain]** aus.
 
-   Dieses Fenster für die Datengruppierung wird nur angezeigt, wenn das **[!UICONTROL Handle groupings (GROUP BY + HAVING]**)-Feld markiert wurde.
+   Die Gruppierung (GROUP BY) erfolgt an dieser Stelle. Das Fenster wird nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde.
 
    ![](assets/query_editor_blacklist_04.png)
 
-1. In the **[!UICONTROL Grouping condition]** window, indicate a primary key count greater than 30 since we only want email domains targeted more than 30 times to be returned as results.
+1. Geben Sie anschließend im Fenster **[!UICONTROL Gruppierbedingung]** eine Primärschlüsselanzahl von über 30 an. So werden nur die E-Mail-Domains ausgegeben, die mehr als 30-mal kontaktiert wurden.
 
-   This window appears when the **[!UICONTROL Manage groupings (GROUP BY + HAVING)]** box was checked: this is where the grouping result is filtered (HAVING).
+   Dieses Fenster wird ebenfalls nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde. Hier erfolgt die Filterung des Ergebnisses der Gruppierung (HAVING).
 
    ![](assets/query_editor_blacklist_05.png)
 
-1. Klicken Sie im **[!UICONTROL Data formatting]** Fenster auf **[!UICONTROL Next]**: hier ist keine Formatierung erforderlich.
-1. In the data preview window, click **[!UICONTROL Launch data preview]**: here, three different email domains targeted over 30 times are returned.
+1. Da in unserem Beispiel keine spezielle Formatierung erforderlich ist, können Sie im Fenster **[!UICONTROL Datenformatierung]** direkt auf **[!UICONTROL Weiter]** klicken.
+1. Klicken Sie anschließend auf **[!UICONTROL Datenvorschau starten]**. Das Ergebnis zeigt nur eine E-Mail-Domain, die mehr als 30-mal kontaktiert wurde.
 
    ![](assets/query_editor_blacklist_06.png)
