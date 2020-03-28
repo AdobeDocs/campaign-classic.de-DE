@@ -14,7 +14,7 @@ discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
 
 ---
@@ -32,13 +32,13 @@ In der Kontrollinstanz ist für jede Ausführungsinstanz ein separater Archivier
 
 **Verteilte Architektur**
 
-Wenn Sie eine oder mehrere Ausführungsinstanzen registriert haben, müssen Sie in der Steuerelementinstanz für jedes **[!UICONTROL Message Center execution instance]** externe Konto einen Archivierungsarbeitsablauf erstellen. Klicken Sie auf die **[!UICONTROL Create the archiving workflow]** Schaltfläche, um den Workflow zu erstellen und zu starten.
+Wenn ein oder mehrere Ausführungsinstanzen registriert sind, ist in der Kontrollinstanz für jedes externe Konto vom Typ **[!UICONTROL Message-Center-Ausführungsinstanz]** ein separater Archivierungs-Workflow zu erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
 
 ![](assets/messagecenter_archiving_002.png)
 
 **Minimale Architektur**
 
-Nachdem die Kontroll- und Ausführungsmodule auf derselben Instanz installiert wurden, müssen Sie den Archivierungsarbeitsablauf mithilfe des Bereitstellungsassistenten erstellen. Klicken Sie auf die **[!UICONTROL Create the archiving workflow]** Schaltfläche, um den Workflow zu erstellen und zu starten.
+Wenn die Kontroll- und Ausführungsmodule auf derselben Instanz installiert sind, ist der Archivierungs-Workflow mithilfe des Softwareverteilungs-Assistenten zu erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
 
 ![](assets/messagecenter_archiving_001.png)
 
@@ -46,16 +46,16 @@ Nachdem die Kontroll- und Ausführungsmodule auf derselben Instanz installiert w
 
 Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows erfolgt in der oder den Ausführungsinstanz(en) im Knoten **Administration > Betreibung > Message Center**. Stellen Sie sicher, dass alle Workflows gestartet wurden. Folgende Workflows stehen zur Verfügung:
 
-* **[!UICONTROL Processing batch events]** (interner Name: **[!UICONTROL batchEventsProcessing]** ): Mit diesem Arbeitsablauf können Sie Batch-Ereignisse in einer Warteschlange unterteilen, bevor sie mit einer Meldungsvorlage verknüpft werden.
-* **[!UICONTROL Processing real time events]** (interner Name: **[!UICONTROL rtEventsProcessing]** ): Mit diesem Arbeitsablauf können Sie Echtzeit-Ereignisse in einer Warteschlange unterteilen, bevor sie mit einer Nachrichtenvorlage verknüpft werden.
-* **[!UICONTROL Update event status]** (interner Name: **[!UICONTROL updateEventStatus]** ): Mit diesem Arbeitsablauf können Sie dem Ereignis einen Status zuweisen.
+* **[!UICONTROL Verarbeitung der Batch-Ereignisse]** (interner Name **[!UICONTROL batchEventsProcessing]**): teilt die Batch-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
+* **[!UICONTROL Verarbeitung der Echtzeit-Ereignisse]** (interner Name **[!UICONTROL rtEventsProcessing]**): teilt die Echtzeit-Ereignisse einer Warteschlange zu, bis sie einer Nachrichtenvorlage zugeordnet werden.
+* **[!UICONTROL Update des Ereignisstatus]** (interner Name **[!UICONTROL updateEventStatus]**): ordnet jedem Ereignis einen Status zu.
 
    Folgende Status sind möglich:
 
-   * **[!UICONTROL Pending]** : das Ereignis sich in der Warteschlange befindet. Es wurde noch keine Nachrichtenvorlage zugeordnet.
-   * **[!UICONTROL Pending delivery]** : Wenn sich das Ereignis in der Warteschlange befindet, wurde ihm eine Meldungsvorlage zugewiesen und wird von der Bereitstellung verarbeitet.
-   * **[!UICONTROL Sent]** : dieser Status wird aus den Lieferprotokollen kopiert. Das bedeutet, dass die Lieferung gesendet wurde.
-   * **[!UICONTROL Ignored by the delivery]** : dieser Status wird aus den Lieferprotokollen kopiert. Er bedeutet, dass kein Versand vorgenommen bzw. die Sendung ignoriert/nicht berücksichtigt wurde.
-   * **[!UICONTROL Delivery failed]** : dieser Status wird aus den Lieferprotokollen kopiert. Er bedeutet, dass der Versand fehlgeschlagen ist.
-   * **[!UICONTROL Event not taken into account]** : das Ereignis konnte nicht mit einer Meldungsvorlage verknüpft werden. Es erfolgt kein weiterer Versuch der Ereignisverarbeitung.
+   * **[!UICONTROL Ausstehend]**: Das Ereignis befindet sich in der Warteschlange und wurde noch keiner Nachrichtenvorlage zugeteilt.
+   * **[!UICONTROL Versand ausstehend]**: Das Ereignis befindet sich in der Warteschlange, wurde einer Nachrichtenvorlage zugeordnet und wird vom Versand verarbeitet.
+   * **[!UICONTROL Gesendet]**: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.
+   * **[!UICONTROL Vom Versand ignoriert]**: Der Versand konnte nicht erfolgen, z. B. aufgrund einer Quarantäne (Status wird den Versandlogs entnommen).
+   * **[!UICONTROL Versandfehler]**: Der Versand ist fehlgeschlagen (Status wird den Versandlogs entnommen).
+   * **[!UICONTROL Ereignis wurde nicht berücksichtigt]**: Das Ereignis konnte keiner Vorlage zugeordnet werden. Das Ereignis wird nicht erneut verarbeitet.
 
