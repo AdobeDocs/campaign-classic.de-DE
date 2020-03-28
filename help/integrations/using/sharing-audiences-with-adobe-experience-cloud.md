@@ -14,7 +14,7 @@ discoiquuid: 8f295058-5a78-4512-9bdf-d5f022457e10
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 418a36cd51106dae2b4201c8b5abda9b05285a18
 
 ---
@@ -29,7 +29,7 @@ source-git-commit: 418a36cd51106dae2b4201c8b5abda9b05285a18
 Adobe Campaign erlaubt den Austausch und die Freigabe von Zielgruppen/Segmenten mit der Adobe Marketing Cloud und Core Services. Konkret bietet die Integration von **Adobe Campaign** mit **People core service** (auch **Profiles &amp; Audiences Core Service** genannt) oder Adobe Audience Manager folgende Möglichkeiten:
 
 * Import von Zielgruppen/Segmenten aus den verschiedenen Lösungen der Adobe Experience Cloud in Adobe Campaign. Der Import von Zielgruppen erfolgt in Adobe Campaign in Listen.
-* Exportieren von Listen in Form freigegebener Zielgruppen in Adobe Experience Cloud. Diese Zielgruppen können in den verschiedenen Adobe Experience Cloud-Lösungen verwendet werden, die Sie verwenden. Audiences can be exported after targeting in a workflow, using a dedicated **[!UICONTROL Update shared audience]** activity.
+* Export von Listen in Form von Adobe-Experience-Cloud-Zielgruppen. Diese Zielgruppen können dann in den anderen von Ihnen verwendeten Lösungen der Adobe Experience Cloud genutzt werden. Der Export von Zielgruppen erfolgt innerhalb eines Workflows im Anschluss an eine Zielgruppenbestimmung mithilfe der dedizierten Aktivität **[!UICONTROL Aktualisierung freigegebener Zielgruppe]**.
 
 >[!CAUTION]
 >
