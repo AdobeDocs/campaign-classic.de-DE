@@ -14,7 +14,7 @@ discoiquuid: f4322902-c72d-4443-9c30-09add4c615a3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -28,29 +28,29 @@ Wenn Sie die in der Datenbank gespeicherten Profile mithilfe eines Webformulars 
 
 Folgende Identifizierungsmöglichkeiten gibt es:
 
-* **[!UICONTROL Adobe Campaign Encryption]**
+* **[!UICONTROL Adobe Campaign-Verschlüsselung]**
 
    Diese Verschlüsselungsmethode verwendet die verschlüsselte Adobe Campaign-Kennung (ID). Diese Methode ist nur für Adobe Campaign-Objekte möglich. Die verschlüsselte Kennung darf außerdem nur von der Adobe Campaign-Plattform generiert werden.
 
-   When using this method, you need to adapt the URL of the form to deliver to the email address by adding the **`<%=escapeUrl(recipient.cryptedId) %>`** parameter. Weitere Informationen hierzu finden Sie unter [Senden eines Formulars per E-Mail](#delivering-a-form-via-email).
+   Wenn Sie diese Methode verwenden, müssen Sie die URL des Formulars anpassen, das an die E-Mail-Adresse gesendet wird. Fügen Sie zu diesem Zweck den Parameter **`<%=escapeUrl(recipient.cryptedId) %>`** hinzu. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](#delivering-a-form-via-email).
 
-* **[!UICONTROL DES encryption]**
+* **[!UICONTROL DES-Verschlüsselung]**
 
    ![](assets/s_ncs_admin_survey_preload_methods_001.png)
 
-   Diese Verschlüsselungsmethode verwendet eine ID (ID), die extern bereitgestellt wird und mit einem Schlüssel verknüpft ist, der von Adobe Campaign und dem externen Anbieter gemeinsam verwendet wird. Im **[!UICONTROL Des key]** Feld können Sie diesen Verschlüsselungsschlüssel eingeben.
+   Diese Verschlüsselungsmethode verwendet eine extern bereitgestellte Kennung (ID), die mit einem Schlüssel verknüpft ist, der von Adobe Campaign und dem externen Anbieter gemeinsam verwendet wird. Dieser Schlüssel wird im Feld **[!UICONTROL DES-Schlüssel]** eingegeben.
 
-* **[!UICONTROL List of fields]**
+* **[!UICONTROL Feldliste]**
 
    Mit dieser Option können Sie aus den im aktuellen Kontext des Formulars bereitgestellten Feldern auswählen. Anhand dieser Felder wird das entsprechende Profil in der Datenbank gesucht.
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   Felder können den Formulareigenschaften über die **[!UICONTROL Parameters]** Registerkarte hinzugefügt werden (siehe [Parameter](../../web/using/defining-web-forms-properties.md#adding-parameters)hinzufügen). Sie werden in der Formular-URL oder in den Eingabebereichen platziert.
+   Felder können den Formulareigenschaften über den Tab **[!UICONTROL Parameter]** hinzugefügt werden (siehe [Parameter hinzufügen](../../web/using/defining-web-forms-properties.md#adding-parameters)). Sie werden in der Formular-URL oder den Eingabefeldern platziert.
 
    >[!CAUTION]
    >
-   >Die Daten in den ausgewählten Feldern werden nicht verschlüsselt. Es darf nicht in einem verschlüsselten Formular bereitgestellt werden, da Adobe Campaign es nicht entschlüsseln kann, wenn die **[!UICONTROL Field list]** Option aktiviert ist.
+   >Die Daten in den ausgewählten Feldern sind nicht verschlüsselt. Sie dürfen nicht verschlüsselt bereitgestellt werden, da sie Adobe Campaign nicht entschlüsseln kann, wenn die Option **[!UICONTROL Feldliste]** ausgewählt ist.
 
    Im folgenden Beispiel wird das Vorausfüllen des Profils auf Basis der E-Mail-Adresse durchgeführt.
 
@@ -68,11 +68,11 @@ Folgende Identifizierungsmöglichkeiten gibt es:
    > 
    >Diese Funktion ist besonders nützlich für Webanwendungen, aber nicht empfohlen für öffentliche Formulare. Als Zugriffskontrolloption muss &quot;Zugriffskontrolle aktivieren&quot; ausgewählt werden.
 
-Die **[!UICONTROL Skip preloading if identification is empty]** Option muss aktiviert sein, wenn Sie keine Profile aktualisieren möchten. In diesem Fall wird jedes eingegebene Profil nach Genehmigung des Formulars der Datenbank hinzugefügt. Diese Option wird beispielsweise verwendet, wenn das Formular auf einer Website veröffentlicht wird.
+Wenn Sie Profile aktualisieren möchten, müssen Sie die Option **[!UICONTROL Bei nicht angegebener Identifizierung vorausgefüllte Informationen ignorieren]** auswählen. In diesem Fall wird jedes eingegebene Profil zur Datenbank hinzugefügt, nachdem das Formular validiert wurde. Diese Option wird beispielsweise verwendet, wenn ein Formular auf einer Website öffentlich zugänglich ist.
 
-Mit dieser **[!UICONTROL Auto-load data referenced in the form]** Option können Sie die Daten, die mit Eingabe- und Zusammenführungsfeldern im Formular übereinstimmen, automatisch im Voraus laden. Daten, auf die in **[!UICONTROL Script]** und **[!UICONTROL Test]** Aktivitäten verwiesen wird, sind jedoch nicht betroffen. Wenn diese Option nicht ausgewählt ist, müssen Sie die Felder mit der **[!UICONTROL Load additional data]** Option definieren.
+Mit der Option **[!UICONTROL Referenzierte Daten werden automatisch in das Formular geladen]** können Sie automatisch Daten, die den Eingabe- und Verbindungsfeldern des Formulars entsprechen, vorausfüllen. Dies betrifft aber keine Daten, die in den Aktivitäten **[!UICONTROL Script]** und **[!UICONTROL Test]** referenziert werden. Ist diese Option nicht ausgewählt, müssen Sie die Felder mit der Option **[!UICONTROL Ladung zusätzlicher Daten]** definieren.
 
-The **[!UICONTROL Load additional data]** option lets you add information which is not used in the pages of the form, but will nonetheless be preloaded.
+Mit der Option **[!UICONTROL Ladung zusätzlicher Daten]** können Sie Felder mit Daten vorausfüllen, auch wenn diese Informationen nicht auf den Seiten des Formulars verwendet werden.
 
 So können Sie beispielsweise das Geschlecht des Empfängers vorausfüllen und ihn über eine Test-Komponente automatisch zur entsprechenden Seite weiterleiten.
 
@@ -88,7 +88,7 @@ Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
 1. **Das Formular wird bearbeitet**
 
-   Dies ist die erste Entwurfsphase. Wenn ein neues Formular erstellt wird, befindet es sich in der Bearbeitungsphase. Für den Zugriff auf das Formular, nur zu Testzwecken, muss der Parameter dann in der URL verwendet **[!UICONTROL __uuid]** werden. Auf diese URL kann auf der **[!UICONTROL Preview]** Unterregisterkarte zugegriffen werden. Siehe Parameter für die [Formular-URL](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Dies ist die anfängliche Phase, in der ein neues Formular erstellt wird; es befindet sich in der Bearbeitungsphase. Um auf das Formular zugreifen zu können, muss (ausschließlich für Testzwecke) der Parameter **[!UICONTROL __uuid]** in seine URL eingegeben werden. Auf diese URL können Sie über den Unter-Tab **[!UICONTROL Vorschau]** zugreifen. Siehe [Parameter der Formular-URL](../../web/using/defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -96,19 +96,19 @@ Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
 1. **Das Formular ist online**
 
-   Nach Abschluss der Entwurfsphase kann das Formular ausgeliefert werden. Erstens muss sie veröffentlicht werden. Weitere Informationen finden Sie unter [Veröffentlichen eines Formulars](#publishing-a-form).
+   Nach Abschluss der Konzeptionsphase kann das Formular versendet werden. Zuerst muss es publiziert werden. Weitere Informationen finden Sie unter [Formular publizieren ](#publishing-a-form).
 
    Das Formular ist so lange **[!UICONTROL Live]**, bis seine Gültigkeit erlischt.
 
    >[!CAUTION]
    >
-   >To be delivered, the URL of the survey must not contain the **[!UICONTROL __uuid]** parameter.
+   >Damit eine Umfrage bereitgestellt werden kann, darf ihre URL nicht den Parameter **[!UICONTROL __uuid]** enthalten.
 
 1. **Das Formular ist nicht verfügbar**
 
    Wenn die Bereitstellungsphase vorüber ist, ist das Formular geschlossen und nicht mehr verfügbar. Benutzer können dann nicht mehr darauf zugreifen.
 
-   Das Ablaufdatum kann im Fenster &quot;Formulareigenschaften&quot;definiert werden. Weitere Informationen finden Sie unter [Bereitstellen eines Formulars online](#making-a-form-available-online)
+   Das Ablaufdatum kann im Fenster mit den Formulareigenschaften definiert werden. Weitere Informationen hierzu finden Sie unter [Formular online verfügbar machen](#making-a-form-available-online).
 
 Der Publikationsstatus eines Formulars wird in der Formularliste angezeigt.
 
@@ -116,47 +116,47 @@ Der Publikationsstatus eines Formulars wird in der Formularliste angezeigt.
 
 ### Formular publizieren {#publishing-a-form}
 
-Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu auf die **[!UICONTROL Publication]** Schaltfläche über der Liste der Webformulare und wählen Sie den Status in der Dropdown-Liste aus.
+Um den Status eines Formulars zu ändern, müssen Sie es publizieren. Klicken Sie dazu oberhalb der Liste der Webformulare auf die Schaltfläche **[!UICONTROL Publikation]** und wählen Sie in der Dropdown-Liste den Status aus.
 
 ![](assets/webapp_publish_webform.png)
 
 ### Formular online verfügbar machen {#making-a-form-available-online}
 
-Damit der Benutzer darauf zugreifen kann, muss das Formular in Produktion sein und innerhalb der Gültigkeitsdauer gestartet werden. Die Gültigkeitsdaten werden über den **[!UICONTROL Properties]** Link des Formulars eingegeben.
+Damit Benutzer auf das Formular zugreifen können, muss es sich in Produktion befinden und gestartet worden sein, d. h. sich innerhalb seines Gültigkeitszeitraums befinden. Die Gültigkeitsdaten werden über den Link **[!UICONTROL Eigenschaften]** des Formulars eingegeben.
 
-* Use the fields in the **[!UICONTROL Project]** section to enter start and end dates for the form.
+* Geben Sie im Bereich **[!UICONTROL Projekt]** über die entsprechenden Felder das Start- und Enddatum für das Formular ein.
 
    ![](assets/webapp_availability_date.png)
 
-* Klicken Sie auf den **[!UICONTROL Personalize the message displayed if the form is closed...]** Link, um die Fehlermeldung zu definieren, die angezeigt werden soll, wenn der Benutzer versucht, auf das Formular zuzugreifen, während es nicht gültig ist.
+* Wählen Sie den Link **[!UICONTROL Nachricht personalisieren, die bei geschlossenem Formular angezeigt wird...]** aus, um eine Fehlernachricht zu definieren. Diese wird angezeigt, wenn ein Benutzer versucht, auf das Formular zuzugreifen, das nicht gültig ist;
 
-   See [Accessibility of the form](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
+   Siehe [Zugriff auf das Formular](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Formular per E-Mail versenden {#delivering-a-form-via-email}
 
-Wenn Sie eine Einladung per E-Mail senden, können Sie die **[!UICONTROL Adobe Campaign Encryption]** Option für die Datenabstimmung verwenden. Gehen Sie dazu zum Auslieferungsassistenten und passen Sie den Link zum Formular an, indem Sie den folgenden Parameter hinzufügen:
+Wenn Sie eine Einladung per E-Mail versenden, können Sie die Option **[!UICONTROL Adobe-Campaign-Verschlüsselung]** zur Abstimmung der Daten verwenden. Gehen Sie dazu zum Versand-Assistenten und passen Sie den Link an das Formular an, indem Sie die folgenden Parameter hinzufügen:
 
 ```
 <a href="https://server/webApp/APP264?&id=<%=escapeUrl(recipient.cryptedId) %>">
 ```
 
-In diesem Fall muss der Abgleichschlüssel für die Datenspeicherung der verschlüsselte Identifikator des Empfängers sein. Weitere Informationen finden Sie unter [Vorladen der Formulardaten](#pre-loading-the-form-data).
+In diesem Fall muss der Abstimmschlüssel für die Datenspeicherung die verschlüsselte Kennung des Empfängers sein. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](#pre-loading-the-form-data).
 
-In diesem Fall müssen Sie die **[!UICONTROL Update the preloaded record]** Option im Feld &quot;Datensatz&quot;aktivieren. Weitere Informationen finden Sie unter [Speichern von Webformularantworten](../../web/using/web-forms-answers.md#saving-web-forms-answers).
+In diesem Fall müssen Sie im Datensatzfeld die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weiterführende Informationen finden Sie unter [Antworten in Webformularen speichern](../../web/using/web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
 ### Log responses {#log-responses}
 
-Die Rückverfolgung von Antworten kann auf einer speziellen Registerkarte aktiviert werden, um die Auswirkungen Ihres Webformulars zu überwachen. Klicken Sie dazu auf den **[!UICONTROL Advanced parameters...]** Link im Fenster &quot;Formulareigenschaften&quot;und wählen Sie die **[!UICONTROL Log responses]** Option aus.
+Das Tracking der Antworten kann in einem speziellen Tab aktiviert werden, um die Wirkung Ihres Webformulars zu überwachen. Wählen Sie dazu im Fenster mit den Formulareigenschaften den Link **[!UICONTROL Erweiterte Parameter...]** und dann die Option **[!UICONTROL Antworten protokollieren]** aus.
 
 ![](assets/s_ncs_admin_survey_trace.png)
 
-The **[!UICONTROL Responses]** tab appears to let you view the identity of respondents.
+Im Tab **[!UICONTROL Antworten]** sehen Sie die Identität der reagierenden Kontakte.
 
 ![](assets/s_ncs_admin_survey_trace_tab.png)
 
-Select a recipient and click the **[!UICONTROL Detail...]** button to view the responses provided.
+Selektieren Sie einen Empfänger und wählen Sie dann die Schaltfläche **[!UICONTROL Details...]** aus, um die Antworten aufzurufen.
 
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
