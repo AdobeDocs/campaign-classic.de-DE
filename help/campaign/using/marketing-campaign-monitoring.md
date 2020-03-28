@@ -1,7 +1,7 @@
 ---
-title: Überwachung von Marketingkampagnen
-seo-title: Überwachung von Marketingkampagnen
-description: Überwachung von Marketingkampagnen
+title: Überwachen von Marketing-Kampagnen
+seo-title: Überwachen von Marketing-Kampagnen
+description: Überwachen von Marketing-Kampagnen
 seo-description: null
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
@@ -14,37 +14,37 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
 
 
-# Überwachung von Marketingkampagnen {#monitoring-marketing-campaigns}
+# Überwachen von Marketing-Kampagnen {#monitoring-marketing-campaigns}
 
 ## Kampagnen verfolgen {#tracking-a-campaign}
 
-Auf der **[!UICONTROL Tracking]** Registerkarte können Sie für jede Kampagne alle Aufträge und deren Status anzeigen. Auf die folgenden Informationen kann über diese Unterregisterkarte zugegriffen werden:
+In jeder Kampagne können über den Tab **[!UICONTROL Verfolgung]** die ausgeführten Prozesse sowie ihre Status eingesehen werden. Die Informationen sind in diverse Untertabs eingeteilt.
 
 * Im Aktivitätenprotokoll wird die Ausführung allgemeiner Kampagnenprozesse protokolliert: Workflow-Erstellung oder -Start, Validierung, Extraktion usw.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_a.png)
 
-* Die **[!UICONTROL Deliveries]** Unterregisterkarte enthält alle Auslieferungen der Kampagne, die in dieser Ansicht bearbeitet werden können. Wählen Sie dazu die Bereitstellung aus und klicken Sie auf das **[!UICONTROL Detail]** Symbol.
+* Im Untertab **[!UICONTROL Sendungen]** werden alle Sendungen der Kampagne zusammengefasst. Sie können aus dieser Übersicht heraus geöffnet werden. Wählen Sie hierzu den gewünschten Versand aus und klicken Sie auf das Symbol **[!UICONTROL Details]**.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* Auf der **[!UICONTROL Tasks]** Unterregisterkarte werden alle Aufgaben gruppiert, die mit der Kampagne verknüpft sind. In dieser Ansicht können Sie sie bearbeiten oder löschen. Aufgaben stehen mit der MRM-Anwendung zur Verfügung. Sie finden Sie unter [Erstellen und Verwalten von Aufgaben](../../campaign/using/creating-and-managing-tasks.md).
+* Im Unter-Tab **[!UICONTROL Aufgaben]** werden alle mit dieser Kampagne verbundenen Aufgaben aufgelistet. Sie können aus dieser Übersicht heraus geöffnet oder gelöscht werden. Aufgaben sind nur mit der Anwendung MRM verfügbar. Sie werden unter [Verwaltung von Aufgaben](../../campaign/using/creating-and-managing-tasks.md) genauer beschrieben.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
-* Die Workflows, die zum Generieren von Meldungen für Dienstanbieter erstellt wurden, werden auf der **[!UICONTROL Jobs on service providers]** Unterregisterkarte angezeigt. Klicken Sie auf das **[!UICONTROL Detail]** Symbol, um den ausgewählten Workflow anzuzeigen.
+* Die zur Generierung der Nachrichten an Dienstleister erstellten Workflows werden im Untertab **[!UICONTROL Bearbeitungsvorgänge bezüglich der Dienstleister]** aufgelistet. Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den ausgewählten Workflow anzuzeigen.
 
    ![](assets/s_ncs_user_op_edit_exe_tab_d.png)
 
 ## Versandverfolgung {#delivery-tracking}
 
-The list of deliveries is available via the **[!UICONTROL Deliveries]** link of the Campaign node.
+Eine Liste der Sendungen ist über die gleichnamige Schaltfläche in der Kampagnen-Rubrik verfügbar.****
 
 ![](assets/s_ncs_user_op_del_state_from_homepage.png)
 
@@ -58,6 +58,6 @@ Um den Status eines Versands zu überprüfen, öffnen Sie diesen. Im Dashboard u
 
 ## Verarbeitung verfolgen {#execution-tracking}
 
-You can look up the status of deliveries by clicking the **[!UICONTROL Deliveries]**, which is accessible via the Adobe Campaign home page. Siehe [Auslieferungsverfolgung](#delivery-tracking).
+Sie können den Status der Sendungen einsehen, indem Sie auf die Schaltfläche **[!UICONTROL Sendungen]** in der Rubrik „Kampagnen“ der Adobe Campaign-Startseite klicken. Siehe [Versandverfolgung](#delivery-tracking).
 
-Informationen zu den in einer Kampagne ausgeführten Prozessen werden auf der **[!UICONTROL Edit > Audit]** Registerkarte der Kampagne erfasst. Dort können Sie die Liste der Auslieferungen in der Kampagne anzeigen. Siehe [Verfolgung einer Kampagne](#tracking-a-campaign).
+Informationen bezüglich der in einer Kampagne ausgeführten Prozesse werden im Tab **[!UICONTROL Bearbeiten > Verfolgung]** der jeweiligen Kampagne zusammengefasst. Siehe [Kampagnen verfolgen](#tracking-a-campaign).
