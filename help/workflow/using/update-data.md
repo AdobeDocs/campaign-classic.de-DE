@@ -14,7 +14,7 @@ discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 
 ---
@@ -26,25 +26,25 @@ Die **Daten-Update**-Aktivität ermöglicht eine gebündelte Aktualisierung von 
 
 ## Aktionstyp {#operation-type}
 
-The **[!UICONTROL Operation type]** field lets you choose the process to be carried out on the data in the database:
+Geben Sie im Feld **[!UICONTROL Aktionstyp]** an, auf welche Weise die Daten aktualisiert werden sollen:
 
-* **[!UICONTROL Insert or update]**: Daten hinzufügen oder aktualisieren, wenn sie bereits hinzugefügt wurden.
-* **[!UICONTROL Insert]**: nur Daten hinzufügen.
-* **[!UICONTROL Update]**: nur Daten aktualisieren.
-* **[!UICONTROL Update and merge collections]**: aktualisieren Sie die Daten und wählen Sie einen &quot;Master&quot;-Datensatz und verknüpfen Sie dann Elemente, die mit den Duplikaten in diesem Master-Datensatz verknüpft sind. Duplikate können dann gelöscht werden, ohne verwaiste angehängte Elemente zu erstellen.
-* **[!UICONTROL Delete]**: Daten löschen.
+* **[!UICONTROL Hinzufügen oder aktualisieren]**: fügt neue Daten zur Datenbank hinzu oder aktualisiert existierende Daten.
+* **[!UICONTROL Hinzufügen]**: fügt nur neue Daten hinzu (existierende Daten werden nicht verändert).
+* **[!UICONTROL Aktualisieren]**: aktualisiert existierende Daten (fügt keine neuen Datensätze hinzu).
+* **[!UICONTROL Kollektionen aktualisieren und fusionieren]**: aktualisiert existierende Daten und wählt einen Master-Datensatz aus, dem aus Dubletten stammende Elemente zugeordnet werden. Auf diese Weise können Dubletten anschließend gelöscht werden, ohne verwaiste Elemente zurückzubehalten.
+* **[!UICONTROL Löschen]** - löscht in der Datenbank existierende Daten.
 
 ![](assets/s_advuser_update_data_1.png)
 
-Im **[!UICONTROL Batch size]** Feld können Sie die Anzahl der zu aktualisierenden eingehenden Übergangselemente auswählen. Wenn Sie beispielsweise 500 angeben, werden die ersten 500 verarbeiteten Datensätze aktualisiert.
+Im Feld **[!UICONTROL Aktualisierungsgröße]** wird bestimmt, wie viele Elemente der eingehenden Transition aktualisiert werden. Bei Angabe von 500 beispielsweise werden die 500 ersten Datensätze aktualisiert.
 
 ## Datensatz-Identifizierung {#record-identification}
 
 Geben Sie an, auf welche Weise die Datensätze der Datenbank identifiziert werden können:
 
-* Wenn sich Dateneinträge auf eine vorhandene Targeting-Dimension beziehen, wählen Sie die **[!UICONTROL By directly using the targeting dimension]** Option aus und wählen Sie sie im **[!UICONTROL Updated dimension]** Feld aus.
+* Wählen Sie die Option **[!UICONTROL Über die Zielgruppendimension]**, wenn die eingehenden Daten einer existierenden Zielgruppendimension entsprechen und geben Sie diese im Feld **[!UICONTROL Aktualisierte Dimension]** an.
 
-   You can display the fields for the selected dimension using the **[!UICONTROL Edit this link]** magnifying glass button.
+   Mithilfe der Lupe (**[!UICONTROL Verknüpftes Element öffnen]**) können die Felder der ausgewählten Dimension angezeigt werden.
 
 * Wenn die eingehenden Daten keiner existierenden Zielgruppendimension entsprechen, können Sie entweder eine oder mehrere Relationen angeben, die die Identifizierung der Daten ermöglichen, oder Abstimmschlüssel verwenden.
 
@@ -52,40 +52,40 @@ Geben Sie an, auf welche Weise die Datensätze der Datenbank identifiziert werde
 
 ## Auswahl der zu aktualisierenden Felder {#selecting-the-fields-to-be-updated}
 
-Verwenden Sie diese **[!UICONTROL Automatically associate fields with the same name]** Option, damit Adobe Campaign die zu aktualisierenden Felder automatisch identifiziert.
+Über die Schaltfläche **[!UICONTROL Felder gleichen Namens automatisch verknüpfen]** werden die zu aktualisierenden Felder automatisch von Adobe Campaign identifiziert.
 
 ![](assets/s_advuser_update_data_3b.png)
 
-You can also use the **[!UICONTROL Insert]** icon to manually select the database fields to be updated.
+Es besteht auch die Möglichkeit, die Zuordnung manuell vorzunehmen, indem Sie die zu aktualisierenden Felder über die Schaltfläche **[!UICONTROL Hinzufügen]** auswählen.
 
 ![](assets/s_advuser_update_data_3.png)
 
-Wählen Sie alle zu aktualisierenden Felder aus und fügen Sie bei Bedarf Bedingungen hinzu, je nachdem, welche Aktualisierung durchgeführt werden soll. Verwenden Sie dazu die **[!UICONTROL Taken into account if]** Spalte. Bedingungen werden nacheinander und in der Reihenfolge in der Liste angewendet. Verwenden Sie die Pfeile auf der rechten Seite, um die Reihenfolge der Updates zu ändern.
+Wählen Sie alle zu aktualisierenden Felder aus und geben Sie bei Bedarf Bedingungen für die Aktualisierung an. Dies ist in der Spalte **[!UICONTROL Berücksichtigt wenn]** möglich. Die Bedingungen werden nacheinander, in Reihenfolge der Liste geprüft. Die Reihenfolge kann mithilfe der blauen Pfeile rechts der Tabelle angepasst werden.
 
 Ein Zielfeld kann mehrmals verwendet werden.
 
-Innerhalb eines **[!UICONTROL Insert or update]** Vorgangs können Sie die Kampagne einzeln oder für jedes Feld auswählen. Wählen Sie dazu den gewünschten Wert in der **[!UICONTROL Operation]** Spalte aus.
+Wenn Sie die Option **[!UICONTROL Hinzufügen oder aktualisieren]** gewählt haben, können Sie in der Spalte **[!UICONTROL Aktion]** für jedes Feld individuell entscheiden, welche der möglichen Aktionen ausgeführt werden soll.
 
 ![](assets/s_advuser_update_data_5.png)
 
-The **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** and **[!UICONTROL createdBy]** fields are updated automatically during data updates, unless their management mode is configured specifically in the field update table.
+Die Felder **[!UICONTROL modifiedDate]**, **[!UICONTROL modifiedBy]**, **[!UICONTROL createdDate]** und **[!UICONTROL createdBy]** werden im Zuge der Daten-Update-Aktivität automatisch aktualisiert, es sei denn, in der Tabelle der zu aktualisierenden Felder wird explizit etwas anderes konfiguriert.
 
 Nur Datensätze, die mindestens eine Änderung aufweisen, werden aktualisiert. Alle anderen bleiben unverändert.
 
-The **[!UICONTROL Advanced parameters]** link lets you specify additional options to deal with updating data as well as managing duplicates. Sie können auch:
+Über den Link **[!UICONTROL Erweiterte Parameter]** können weitere Optionen zur Aktualisierung und den Umgang mit Dubletten definiert werden:
 
-* **[!UICONTROL Disable automatic key management]**.
-* **[!UICONTROL Disable audit]**.
-* **[!UICONTROL Empty the destination value if the source value is empty (NULL)]**. Diese Option ist standardmäßig automatisch aktiviert.
-* **[!UICONTROL Update all columns with matching names]**.
-* Specify conditions that consider source elements using an expression in the **[!UICONTROL Enabled if]** field.
-* Geben Sie Bedingungen an, bei denen Duplikate mit einem Ausdruck verwendet werden sollen. Wenn Sie die **[!UICONTROL Ignore records which concern the same target]** Option aktivieren, wird nur der erste in der Liste der Ausdrücke berücksichtigt.
+* **[!UICONTROL Automatische Schlüsselverwaltung deaktivieren]**;
+* **[!UICONTROL Audit deaktivieren]**;
+* **[!UICONTROL Bei leerem Quellwert (NULL) den Zielwert löschen]** (standardmäßig aktiviert);
+* **[!UICONTROL Alle Spalten mit übereinstimmenden Namen aktualisieren]**;
+* Angabe von Bedingungen bezüglich der Quellelemente mithilfe eines Ausdrucks im Feld **[!UICONTROL Berücksichtigung]**;
+* Angabe von Bedingungen zur Berücksichtigung von Dubletten mithilfe eines Ausdrucks. Wenn die Option **[!UICONTROL Den gleichen Zielkontakt betreffende Datensätze ignorieren]** aktiviert ist, wird nur der erste Datensatz der Ausdruckliste berücksichtigt.
 
-**[!UICONTROL Generate an outbound transition]**
+**[!UICONTROL Ausgehende Transition erzeugen]**
 
 Erzeugt eine ausgehende Transition im Anschluss an die Aktivität. Im Allgemeinen bildet die Daten-Update-Aktivität den Schlusspunkt eines Zielgruppen-Workflows. Aus diesem Grund, wird die ausgehende Transition nicht standardmäßig erzeugt.
 
-**[!UICONTROL Generate an outbound transition for the rejects]**
+**[!UICONTROL Ausgehende Transition für die Zurückweisungen erzeugen]**
 
 Erzeugt eine ausgehende Transition, welche die Datensätze enthält, die im Zuge der Aktualisierung nicht korrekt verarbeitet werden konnten (z. B. Dubletten). Im Allgemeinen bildet die Daten-Update-Aktivität den Schlusspunkt eines Zielgruppen-Workflows. Aus diesem Grund, wird die ausgehende Transition nicht standardmäßig erzeugt.
 
@@ -97,7 +97,7 @@ Die Aktualisierung mit Fusion von Kollektionen ermöglicht die Aktualisierung vo
 >
 >Diese Option bietet auch die Möglichkeit, Referenzen zu sekundären Datensätzen in Workflow-Arbeitstabellen (targetWorkflow), Sendungen (targetDelivery) und Listen (targetList) zu verarbeiten. Wenn vorhanden, erscheinen diese Relationen in der Auswahlliste der Felder und Kollektionen.
 
-1. Wählen Sie den **[!UICONTROL Update and merge collections]** Vorgang aus.
+1. Wählen Sie die Option **[!UICONTROL Kollektionen aktualisieren und fusionieren]**.
 
    ![](assets/update_and_merge_collections1.png)
 
@@ -115,7 +115,7 @@ Die Aktualisierung mit Fusion von Kollektionen ermöglicht die Aktualisierung vo
 
    Die Kollektionsfusion ermöglicht die Verschmelzung von heterogenen Daten wie z. B. bei der Liste der Abonnements eines Empfängers. Mithilfe der Regeln kann einer neuer, auf den sekundären Datensätzen beruhender Abonnementverlauf erstellt oder die Liste der Abonnements eines sekundären Datensatzes zum primären Datensatz verschoben werden.
 
-1. Specify the order in which you would like the secondary records to be processed, by selecting **[!UICONTROL Advanced parameters]** > **[!UICONTROL Duplicates]**.
+1. Im **[!UICONTROL Dubletten]**-Tab der **[!UICONTROL Erweiterten Parameter]** besteht die Möglichkeit, die Reihenfolge anzugeben, in der die sekundären Datensätze verarbeitet werden sollen.
 
    ![](assets/update_and_merge_collections3.png)
 
@@ -123,7 +123,7 @@ Die Daten der sekundären Datensätze werden dem Hauptdatensatz zugeordnet, wenn
 
 ## Anwendungsbeispiel: Daten-Update nach einer Anreicherung {#example--update-data-following-an-enrichment}
 
-Der [Schritt 2: Das Schreiben von erweiterten Daten in den Tabellenabschnitt](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) &quot;Einkäufe&quot;des Anwendungsfalls, in dem die Details zum Erstellen einer Notizliste ein Beispiel für eine Datenaktualisierung nach einer Anreicherungsaktivität bieten.
+Der Abschnitt [2. Schritt: Schreiben der angereicherten Daten in die &#39;Verkauf&#39;-Tabelle](../../workflow/using/creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) des Anwendungsbeispiels, der Details zum Erstellen einer Zusammenfassungsliste liefert, ist ein Beispiel für ein Daten-Update nach einer Anreicherungsaktivität.
 
 ## Eingabeparameter {#input-parameters}
 
