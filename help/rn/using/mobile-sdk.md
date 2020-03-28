@@ -14,15 +14,15 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e2ef5a6bd6fa3a53826d6b1a3ba39ae4509054e
 
 ---
 
 
-# Campaign Mobile SDK{#mobile-sdk}
+# Campaign Mobile SDK{#mobile-sdk}
 
-Hier finden Sie Informationen zu den Kampagnen Mobile SDK-Versionen.
+Hier finden Sie Informationen zu den Campaign Mobile SDK-Versionen.
 
 
 
@@ -30,10 +30,10 @@ Weitere Informationen zum Konfigurieren und Verwenden von Push-Benachrichtigunge
 
 ## Build 1.0.26{#build-1-0-26}
 
-\10. Oktober 2019
+10. Oktober 2019
 
-Version 1.0.26 des iOS-SDK ist jetzt verfügbar. In diesem neuen Build wurde die Unterstützung von iOS 13 hinzugefügt. Diese neue Version unterstützt jetzt die Benachrichtigungspriorität und den neuen Registrierungstoken-Verwaltungsprozess für iOS 13-Push-Benachrichtigungen.
+Version 1.0.26 des iOS-SDK ist jetzt verfügbar. In diesem neuen Build wurde Unterstützung für iOS 13 hinzugefügt. Diese neue Version unterstützt jetzt die Benachrichtigungspriorität und den neuen Anmeldetoken-Verwaltungsprozess für iOS 13-Push-Benachrichtigungen.
 
 Wenn Sie Anwendungen auf einer früheren Version des SDK ausführen, müssen Sie Ihre Anwendungen mit dem neuen SDK neu kompilieren.
 
-Wenden Sie sich an den Adobe-Kundendienst, um das SDK zu erhalten.
+Wenden Sie sich an die Adobe-Kundenunterstützung, um das SDK zu erhalten.
