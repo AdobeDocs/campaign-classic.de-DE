@@ -14,7 +14,7 @@ discoiquuid: 3b8e4691-fcbc-48ef-b529-11c9a9a9d788
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -38,9 +38,9 @@ In diesem Abschnitt werden die Schritte zur Erstellung eines Formulars vom Typ *
 >
 >Zur Konfiguration von Webanwendungen und Webformularen benötigen Sie eine vertikale Auflösung von mindestens 900 Pixel (z. B.: 1.600 x 900).
 
-Der Zugriff auf Webformulare erfolgt über das Menü &quot;Webanwendungen&quot;auf der Registerkarte &quot; **Kampagnen** &quot;. In der Adobe Campaign-Struktur werden sie unter dem **[!UICONTROL Resources > Online > Web Applications]** Knoten gruppiert.
+Der Zugriff auf Webformulare erfolgt über das Menü „Webanwendungen“ auf dem Tab **Kampagnen**. In der Baumstruktur von Adobe Campaign befinden sie sich unter dem Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]**.
 
-To create a Web form, click the **[!UICONTROL Create]** button above the list of Web applications.
+Um ein Webformular zu erstellen, klicken Sie oberhalb der Webanwendungen-Liste auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
 ![](assets/webapp_create_new.png)
 
@@ -52,7 +52,7 @@ Damit gelangen Sie zum Dashboard des Formulars.
 
 ![](assets/webapp_empty_dashboard.png)
 
-The **[!UICONTROL Edit]** tab lets you create your content.
+Im Tab **[!UICONTROL Bearbeiten]** können Sie den Inhalt erstellen.
 
 ![](assets/webapp_edit_tab.png)
 
@@ -64,15 +64,15 @@ Um das Webformular zu definieren und zu konfigurieren, gehen Sie folgendermaßen
 
 * Definieren Sie die Seitenreihenfolge und legen Sie für die Anzeige der Seiten Bedingungen fest.
 
-   Dieser Schritt wird unter [Definieren der Seitensequenz](../../web/using/defining-web-forms-page-sequencing.md)von Webformularen ausführlich beschrieben.
+   Dieser Schritt wird unter [Seitenreihenfolge eines Webformulars definieren](../../web/using/defining-web-forms-page-sequencing.md) beschrieben.
 
 * Übersetzen Sie den Inhalt bei Bedarf.
 
-   Dieser Schritt wird unter [Übersetzen eines Webformulars](../../web/using/translating-a-web-form.md)beschrieben.
+   Dieser Schritt wird unter [Webformular übersetzen](../../web/using/translating-a-web-form.md) beschrieben.
 
 ## Über die Erstellung von Webformularen {#about-web-forms-designing}
 
-Die Seiten des Formulars werden mit einem bestimmten Editor erstellt, mit dem Sie Eingabebereiche (Text), Auswahlfelder (Listen, Kontrollkästchen usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Sie können in Behälter gruppiert und ihr Layout an Ihre Anforderungen angepasst werden (weitere Informationen finden Sie unter Container [erstellen](../../web/using/defining-web-forms-layout.md#creating-containers)).
+Die Seiten des Formulars werden mit einem bestimmten Editor erstellt, mit dem Sie Eingabebereiche (Text), Auswahlfelder (Listen, Checkboxes usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Diese können in Containern gruppiert und ihr Layout an Ihren Bedarf angepasst werden (weitere Informationen finden Sie unter [Container erstellen](../../web/using/defining-web-forms-layout.md#creating-containers)).
 
 In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout von Formularen definieren.
 
@@ -83,8 +83,8 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 
 >[!NOTE]
 >
->* Während des Seitenentwurfs können Sie die endgültige Wiedergabe auf der **[!UICONTROL Preview]** Registerkarte anzeigen. Um Änderungen anzuzeigen, speichern Sie das Formular zuerst. Alle Fehler werden auf der **[!UICONTROL Log]** Registerkarte angezeigt.
->* Um sicherzustellen, dass die Seitenanzeige und die Informationsspeicherung in der gewünschten Reihenfolge erfolgen, aktivieren Sie den Debug-Modus im Webformular. Gehen Sie dazu zur **[!UICONTROL Preview]** Unterregisterkarte und aktivieren Sie das **[!UICONTROL Enable debug mode]** Kontrollkästchen: Alle erfassten Informationen und mögliche Ausführungsfehler werden am Ende jeder Seite angezeigt.
+>* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
+>* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
 >
 
 
@@ -99,7 +99,7 @@ Wählen Sie in diesem Fall den Typ des hinzuzufügenden Feldes und den Antwort-S
 
 ![](assets/s_ncs_admin_webform_select_storage.png)
 
-Klicken Sie auf **[!UICONTROL Ok]**, um die Auswahl zu bestätigen.
+Klicken Sie auf **[!UICONTROL OK]**, um die Auswahl zu bestätigen.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)
 
