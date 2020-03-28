@@ -14,7 +14,7 @@ discoiquuid: 6d694f5c-1d1f-4686-b3bf-8697d919a0c8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
 
 ## Einleitung {#introduction}
 
-Adobe Campaign bietet eine **verteilte Marketing** -Anwendung zur Implementierung von Kooperationskampagnen zwischen zentralen Stellen (Hauptsitz, Marketingabteilungen usw.) und lokalen Stellen (Verkaufspunkte, regionale Agenturen usw.). Diese Zusammenarbeit basiert auf einem freigegebenen Arbeitsbereich, der als der bezeichnet wird **[!UICONTROL list of campaign packages]**, in dem zentral erstellte Kampagnenvorlagen und -instanzen lokalen Entitäten angeboten werden.
+Die Option **Distributed Marketing** von Adobe Campaign ermöglicht es, partizipative Kampagnen zwischen Zentralstellen (z. B. dem Unternehmenssitz, der Marketingabteilung etc.) und Lokalstellen (z. B. Verkaufsstellen, regionalen Zweigstellen etc.) einzurichten. Die Zusammenarbeit basiert auf einem kollaborativen Arbeitsplatz, der **[!UICONTROL Kampagnenkit-Liste]**, an dem Kampagnenmodelle und -instanzen, die von Zentralstellen erstellt wurden, Lokalstellen zur Verfügung gestellt werden.
 
 Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokale oder eine partizipative Nutzung ausgelegt sein können. Zur Teilnahme müssen die Lokalstellen die gewünschten Kampagne bestellen. Diese werden erst durch die Validierung der Bestellung seitens der Zentralstelle tatsächlich verfügbar.
 
@@ -65,30 +65,30 @@ Vorlage oder Kampagneninstanz, die von der Zentralstelle erstellt und den Lokals
 
 ### Lokale Kampagnen {#local-campaign}
 
-Eine lokale Kampagne ist eine Instanz, die aus einer Vorlage erstellt wurde, auf die in der Liste der **[!UICONTROL campaign packages]** mit einem **bestimmten Ausführungsplan** verwiesen wird. Ziel ist es, einen lokalen Kommunikationsbedarf mithilfe einer von der zentralen Stelle eingerichteten und konfigurierten Kampagnenvorlage zu decken.
+Eine lokale Kampagne ist eine über eine in der **[!UICONTROL Kampagnenkit]**-Liste verzeichnete Vorlage erstellte Kampagneninstanz mit einer **spezifischen Ausführungsplanung** bei jeder Bestellung der Lokalstelle. Lokale Kampagnen ermöglichen es, mit einer von der Zentralstelle formalisierten und konfigurierten Vorlage auf lokale Bedürfnisse zu antworten.
 
 Der Umfang der Anpassungsmöglichkeiten für die Lokalstelle ist abhängig von der gewählten Kampagnenart.
 
-Siehe [Erstellen einer lokalen Kampagne](../../campaign/using/creating-a-local-campaign.md).
+Siehe [Erstellung einer lokalen Kampagne](../../campaign/using/creating-a-local-campaign.md).
 
 ### Partizipative Kampagnen {#collaborative-campaign}
 
 Eine partizipative Kampagne ist eine Kampagne, deren **Ausführungsplanung von der Zentralstelle festgelegt** wird. Die Lokalstellen können frei entscheiden, ob sie teilnehmen oder nicht. Abhängig von der Konfiguration der Kampagne können Zielgruppe und Inhalt von der Lokalstelle angepasst werden. Es gibt verschiedene Arten partizipativer Kampagnen:
 
-* **[!UICONTROL Collaborative campaign (by form)]**: empfohlen für Kampagnen mit bis zu 300 lokalen Körperschaften. Die lokale Entität kann vordefinierte Parameter für Targeting und die Personalisierung von Inhalten in einem Webformular eingeben. Das Formular kann ein Adobe Campaign-Formular oder ein externes Formular (Extranet-Client) sein. Ein funktionaler Administrator kann das Formular auf der Grundlage einer vom Integrator definierten Formularvorlage definieren und konfigurieren. Um die Kampagne zu bestellen, benötigt die lokale Entität nur Web-Zugriff.
-* **[!UICONTROL Collaborative campaign (by campaign)]**: empfohlen für Kampagnen, die auf Dutzende lokale Einrichtungen abzielen. Dieser Kampagnentyp erstellt untergeordnete Kampagnen für jede lokale Entität. Sobald die Kampagne von der zentralen Entität genehmigt **[!UICONTROL collaborative campaign (by campaign)]** wurde, wird sie der lokalen Entität zur Verfügung gestellt, die sie ändern kann. Die Ausführung wird automatisch zwischen übergeordneten und untergeordneten Kampagnen synchronisiert. Die lokale Entität muss Zugriff auf eine Instanz haben, um eine Kampagne zu bestellen und an ihr teilzunehmen.
-* **[!UICONTROL Collaborative campaign (by target approval)]**: empfohlen für Kampagnen, die auf mehrere tausend lokale Entitäten abzielen. Lokale Entität erhält eine Kontaktliste, die von der zentralen Entität vordefiniert wurde. Die lokale Entität entscheidet, ob bestimmte Kontakte basierend auf dem Kampagneninhalt über ein Webformular bestehen bleiben sollen. Lokale Einheiten werden von der Liste der ausgewählten Kontakte abgezogen. Um an der Kampagne teilnehmen zu können, benötigt die lokale Entität nur Web-Zugriff.
-* **[!UICONTROL Collaborative campaign (simple)]**: Dieser Modus stellt die Kompatibilität mit den spezifischen Ausführungsprozessen früherer Versionen sicher.
+* **[!UICONTROL Partizipative Kampagne mit Formular]**: eignet sich für Kampagnen für bis zu 300 Lokalstellen. Die Lokalstelle kann vordefinierte Parameter zu Zielgruppe und Inhaltspersonalisierung in einem Webformular erfassen. Es kann sowohl ein Adobe-Campaign-Formular als auch ein externes Formular (Kunden-Extranet) verwendet werden. Die Definition und Konfiguration des Formulars können von einem funktionellen Administrator auf Basis einer vom Systemintegrator definierten Formularvorlage erfolgen. Zur Bestellung der Kampagne benötigt die Lokalstelle in diesem Fall nur einen Webzugriff.
+* **[!UICONTROL Partizpative Kampagne mit Kampagnenzugriff]**: eignet sich für Kampagnen für einige Dutzend Lokalstellen. Dieser Kampagnentyp erstellt Kindkampagnen für jede Lokalstelle. Wenn die Bestellung einer **[!UICONTROL Partizipativen Kampagne mit Kampagnenzugriff]** von der Zentralstelle validiert wurde, wird die Kampagne der Lokalstelle zur Verfügung gestellt und kann von dieser angepasst werden. Die Ausführung von Eltern- und Kindkampagnen wird automatisch synchronisiert. Die Lokalstelle benötigt einen Rich-Client-Zugriff, um die Kampagne zu bestellen und ausführen zu können.
+* **[!UICONTROL Partizipative Kampagne mit Zielgruppenvalidierung]**: eignet sich für Kampagnen für mehrere Tausend Lokalstellen. Die Lokalstellen erhalten eine von der Zentralstelle ausgewählte Kontaktliste. Sie haben dank eines Webformulars die Möglichkeit, je nach Inhalt der Kampagne Kontakte herauszustreichen. Die teilnehmenden Lokalstellen werden von der ausgewählten Kontaktliste abgeleitet. Die Lokalstelle benötigt lediglich einen Webzugriff, um an der Kampagne teilnehmen zu können.
+* **[!UICONTROL Partizipative Kampagne ohne Konfiguration]**: Dieser Modus stellt die Kompatibilität mit dezentralen Kampagnen aus vorhergehenden Versionen sicher.
 
-Weitere Informationen finden Sie unter [Erstellen einer Kooperationskampagne](../../campaign/using/creating-a-collaborative-campaign.md).
+Weitere Informationen finden Sie unter [Partizipative Kampagne erstellen](../../campaign/using/creating-a-collaborative-campaign.md).
 
 ### Kampagnenkit-Bestellung {#ordering-campaign-packages}
 
 Um an einer Kampagne teilnehmen zu können, bestellt die Lokalstelle den entsprechenden Kampagnenkit und gibt hierbei sämtliche für die lokale Anpassung erforderlichen Informationen an.
 
-## Arbeitsbereich {#workspace}
+## Arbeitsbereich  {#workspace}
 
-The list of campaign packages can be accessed from the **Campaigns** universe: click the **[!UICONTROL Campaign packages]** link.
+Die Kampagnenkit-Liste ist über die Rubrik **Kampagnen** zugänglich: Klicken Sie dort auf **[!UICONTROL Kampagnenkits]**.
 
 ![](assets/mkg_dist_home_local_op.png)
 
@@ -98,7 +98,7 @@ Für zentrale Agenturen besteht hier Zugriff auf alle verfügbaren Kampagnenkits
 
 ## Benutzer und Organisationseinheiten {#operators-and-entities}
 
-Start by specifying the central and local entity operators via the **[!UICONTROL Access management]** folder.
+Bestimmen Sie zunächst die Akteure der Zentral- und Lokalstellen im Ordner **[!UICONTROL Zugriffe]**.
 
 ![](assets/s_advuser_mkg_dist_tree.png)
 
@@ -106,19 +106,19 @@ Start by specifying the central and local entity operators via the **[!UICONTROL
 
 Es müssen zentrale und lokale Benutzer erstellt werden.
 
-Central operators must belong to the **[!UICONTROL Central management]** operator group or have the **[!UICONTROL CENTRAL]** named right.
+Die zentralen Benutzer müssen der Gruppe **[!UICONTROL Zentrale Verwaltung]** angehören oder über die Berechtigung **[!UICONTROL ZENTRAL]** verfügen.
 
-Lokale Operatoren müssen zur **[!UICONTROL Local management]** Operatorgruppe gehören oder über das **[!UICONTROL LOCAL]** Namensrecht verfügen. Sie müssen auch mit ihrer lokalen Einheit verbunden sein.
+Lokale Benutzer müssen der Benutzergruppe **[!UICONTROL Lokale Verwaltung]** zugeordnet sein oder über die spezifische Berechtigung **[!UICONTROL LOKAL]** verfügen. Sie müssen zudem mit ihrer Lokalstelle verbunden sein.
 
 ![](assets/s_advuser_mkg_dist_local_create.png)
 
 ### Organisationseinheiten {#organizational-entities}
 
-Um eine organisatorische Entität zu erstellen, klicken Sie auf die **[!UICONTROL Administration > Access management > Organizational entities]** Node und dann auf das **[!UICONTROL New]** Symbol oberhalb der Liste der Entitäten.
+Um eine Organisationseinheit zu erstellen, klicken Sie auf den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Organisationseinheiten]** und auf das Symbol **[!UICONTROL Neu]** oberhalb der Liste der Einheiten.
 
 ![](assets/s_advuser_mkg_dist_local_list.png)
 
-Jede organisatorische Einheit enthält Identifizierungsinformationen (Etikett, interner Name, Kontaktinformationen usw.) und Gruppen, die am Bestellgenehmigungsprozess beteiligt sind. Diese werden im **[!UICONTROL Notifications and approvals]** Abschnitt auf der **[!UICONTROL General]** Registerkarte definiert.
+Jede Organisationseinheit enthält Identifikationsdaten (Titel, interner Name, Adresse etc.) und die an der Bestellvalidierung beteiligten Benutzergruppen. Diese werden im Abschnitt **[!UICONTROL Benachrichtigungen und Validierungen]** des Tabs **[!UICONTROL Allgemein]** bestimmt.
 
 * Definieren Sie eine Benachrichtigungsgruppe, die bei Aktionen bezüglich der Kampagnenkits informiert wird: Alle Benutzer dieser Gruppe erhalten eine Benachrichtigung, wenn der Kampagnenkit-Liste ein neuer Kit hinzugefügt wird und wenn eine Kampagne verfügbar wird.
 * Wählen Sie anschließend die Benutzergruppe aus, die dafür verantwortlich ist, die Kampagnenbestellungen der Lokalstelle zu validieren.
@@ -126,7 +126,7 @@ Jede organisatorische Einheit enthält Identifizierungsinformationen (Etikett, i
 
 >[!NOTE]
 >
->The approval process is presented in the [Approval process](../../campaign/using/creating-a-local-campaign.md#approval-process) section.
+>Der Validierungsprozess wird im Abschnitt [Validierungsprozess](../../campaign/using/creating-a-local-campaign.md#approval-process) beschrieben.
 
 ## Umsetzung {#implementation}
 
