@@ -14,7 +14,7 @@ discoiquuid: 92c32b2d-d8bf-41ab-9349-ef4a15f10521
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 # Externe Empfängertabelle verwenden{#using-an-external-recipient-table}
 
-Wenn es sich bei der Auslieferungstabelle um eine externe Tabelle handelt, müssen Sie zusätzliche Konfigurationen vornehmen. Das **[!UICONTROL nms:seedmember]** Schema muss erweitert werden. Den Saatgutadressen wird eine Registerkarte hinzugefügt, um die entsprechenden Felder zu definieren, wie nachfolgend gezeigt:
+Im Falle einer externen Versandtabelle sind zusätzliche Konfigurationen erforderlich. So muss das Schema **[!UICONTROL nms:seedmember]** erweitert werden. Der im Zuge dessen hinzugefügte Tab erlaubt die Angabe der entsprechenden Felder, wie in unten stehendem Beispiel dargestellt:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
