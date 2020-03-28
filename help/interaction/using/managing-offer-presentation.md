@@ -14,7 +14,7 @@ discoiquuid: f6e44634-3a13-480e-ab44-f3c744054a96
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -28,8 +28,8 @@ Interaction bietet die Möglichkeit, die Menge der Angebotsvorschläge mithilfe 
 
 ## Unterbreitungsregeln erstellen und zuweisen {#creating-and-referencing-an-offer-presentation-rule}
 
-1. Gehen Sie zum Knoten **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typology rules]** .
-1. Create a typology rule and choose the **[!UICONTROL Offer presentation]** type.
+1. Gehen Sie in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Typologieverwaltung]** > **[!UICONTROL Typologieregeln]**.
+1. Erstellen Sie eine neue Typologieregel und wählen Sie den Typ **[!UICONTROL Angebotsunterbreitung]**.
 
    ![](assets/offer_typology_001.png)
 
@@ -37,8 +37,8 @@ Interaction bietet die Möglichkeit, die Menge der Angebotsvorschläge mithilfe 
 
    ![](assets/offer_typology_002.png)
 
-1. Konfigurieren Sie die Anwendungskriterien der Regel. Weitere Informationen finden Sie unter Einstellungen für [Präsentationsregeln](#presentation-rule-settings).
-1. Wechseln Sie zum Knoten **[!UICONTROL Administration]** > **[!UICONTROL Campaign execution]** > **[!UICONTROL Typology management]** > **[!UICONTROL Typologies]** und erstellen Sie eine Typologie, die alle **[!UICONTROL Offer presentation]** Typregeln gruppiert.
+1. Konfigurieren Sie die Anwendungskriterien der Regel. Weitere Informationen hierzu finden Sie unter [Parameter der Unterbreitungsregeln](#presentation-rule-settings).
+1. Gehen Sie in den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Kampagnen]** > **[!UICONTROL Typologieverwaltung]** > **[!UICONTROL Typologien]** und erstellen Sie eine Typologie, um alle Regeln des Typs **[!UICONTROL Angebotsunterbreitung]** zusammenzufassen.
 
    ![](assets/offer_typology_003.png)
 
@@ -54,9 +54,9 @@ Interaction bietet die Möglichkeit, die Menge der Angebotsvorschläge mithilfe 
 
 ### Anwendungskriterien {#application-criteria-}
 
-Mit den auf der **[!UICONTROL General]** Registerkarte verfügbaren Anwendungskriterien können Sie die Angebote angeben, für die die Darstellungsregel gilt. Dazu müssen Sie eine Abfrage erstellen und die entsprechenden Angebote auswählen, wie nachfolgend beschrieben.
+Auf die Anwendungskriterien kann im **[!UICONTROL Allgemein]**-Tab der Typologieregeln zugegriffen werden. Sie erlauben die Zuweisung der Regel zu einer Auswahl an Angeboten. Die Auswahl geschieht mithilfe einer Abfrage. Gehen Sie wie folgt vor:
 
-1. Klicken Sie in Ihrer Typologieregel auf den **[!UICONTROL Edit the rule application conditions...]** Link, um Ihre Abfrage zu erstellen.
+1. Klicken Sie auf den Link **[!UICONTROL Anwendungskriterien der Regel bearbeiten...]**.
 
    ![](assets/offer_typology_006.png)
 
@@ -68,21 +68,21 @@ Mit den auf der **[!UICONTROL General]** Registerkarte verfügbaren Anwendungskr
 
 ### Angebotsdimensionen {#offer-dimensions}
 
-In the **[!UICONTROL Offer presentation]** tab, you must specify the same dimensions for the presentation rule as those configured in the environment.
+Die im Tab **[!UICONTROL Angebotsunterbreitung]** konfigurierten Dimensionen für die Unterbreitungsregel müssen mit denen auf Umgebungsebene übereinstimmen.
 
-Die Tabelle **[!UICONTROL Targeting dimension]** fällt mit der Empfängertabelle zusammen (standardmäßig: nms:empfänger), die die Angebotsvorschläge erhalten. Die Tabelle **[!UICONTROL Storage dimension]** fällt mit dem mit der Targeting-Dimension verknüpften Angebotsverlauf zusammen (standardmäßig: nms:propositionRcp).
+Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle der Empfänger, denen die Angebote unterbreitet werden sollen (standardmäßig nms:recipients). Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle, die den mit der Zieldimension verknüpften Vorschlagsverlauf enthält (standardmäßig nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
 >[!NOTE]
 >
->Sie können auch nicht standardmäßige Tabellen verwenden. Wenn Sie eine bestimmte Targeting-Dimension verwenden möchten, müssen Sie Tabellen sowie eine dedizierte Umgebung mithilfe der Zielzuordnung erstellen. Weitere Informationen finden Sie unter [Erstellen einer Angebotsumgebung](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+>Sie haben die Möglichkeit, andere Tabellen zu verwenden. Zur Nutzung einer anderen Zielgruppendimension ist die Erstellung von entsprechenden Tabellen und einer dedizierten Umgebung mit dem passenden Mapping erforderlich. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
 ### Beweglicher Zeitraum {#period}
 
 Es handelt sich um den Zeitraum, während dessen die Vorschläge von der Regel einbezogen werden. Er definiert, für welche Dauer der Vorschlagsverlauf bei Anwendung der Regel berücksichtigt wird. Die Regel kommt somit nicht bei Vorschlägen zum Tragen, die außerhalb dieses Zeitraums unterbreitet werden.
 
-The period starts **n** days before the proposition date and ends **n** days afterwards, where **n** corresponds to the number entered in the **[!UICONTROL Period considered]** field:
+Der Zeitraum beginnt **X** Tage vor und endet **X** Tage nach der Unterbreitung, wobei **X** dem im Feld **[!UICONTROL Betroffener Zeitraum]** angegebenen Wert entspricht:
 
 * Bei Platzierungen vom Typ &quot;eingehend&quot; entspricht das Vorschlagsdatum dem Unterbreitungsdatum.
 * Bei Platzierungen vom Typ &quot;ausgehend&quot; entspricht das Vorschlagsdatum dem Kontaktdatum des Versands (z. B. das in einem Zielgruppen-Workflow angegebene Versanddatum).
@@ -101,7 +101,7 @@ Verwenden Sie die Pfeile des Felds, um die Anzahl zu ändern, oder geben Sie dir
 
 ## Vorschläge und Empfänger konfigurieren {#defining-propositions-and-recipients}
 
-The **[!UICONTROL Propositions to count]** section lets you specify both the recipients and the propositions which will lead to the exclusion of the offers defined in the **[!UICONTROL General]** tab if they appear a certain number of times in the propositions history.
+Im Bereich **[!UICONTROL Zu zählende Vorschläge]** können Sie die Angebote und die Empfänger angeben, die zu einem Ausschluss der im **[!UICONTROL Allgemein]**-Tab definierten Angebote führen, wenn Sie im Vorschlagsverlauf mit einer ausreichenden Häufigkeit vorkommen.
 
 ### Vorschläge filtern {#filtering-propositions}
 
@@ -109,55 +109,55 @@ Standardmäßig kann nach Kanal, betroffenen Angeboten und Vorschlagstatus gefil
 
 ![](assets/offer_typology_014.png)
 
-Diese Kriterien stellen die häufigsten Anwendungen von Präsentationsregeln dar. Um andere Kriterien zu verwenden, können Sie eine Abfrage über den **[!UICONTROL Limit propositions...]** Link erstellen. For more on this, refer to the [Creating a query on propositions](#creating-a-query-on-propositions) section.
+Hierbei handelt es sich um die gängigsten Anwendungen für Unterbreitungsregeln. Wenn Sie andere Kriterien verwenden möchten, haben Sie die Möglichkeit, mithilfe des Links **[!UICONTROL Vorschläge begrenzen...]** eine Abfrage zu konfigurieren. Lesen Sie diesbezüglich auch den Abschnitt [Abfrage bezüglich der Vorschläge erstellen](#creating-a-query-on-propositions).
 
 * **Kanalfilter**
 
-   **[!UICONTROL On the same channel only]** : können Sie Angebotsvorschläge auf dem in der **[!UICONTROL General]** Registerkarte angegebenen Kanal ausschließen.
+   **[!UICONTROL Nur denselben Kanal betreffend]**: ermöglicht den Ausschluss der Vorschläge, die den im **[!UICONTROL Allgemein]**-Tab angegebenen Kanal betreffen.
 
-   Der für die Regel auf der Registerkarte angegebene Kanal ist beispielsweise E-Mail. **[!UICONTROL General]** Wenn die Angebote, für die die Regel gilt, bisher nur auf dem Webkanal angeboten wurden, kann die Interaktions-Engine die Angebote in einer E-Mail-Zustellung präsentieren. Sobald die Angebote jedoch per E-Mail präsentiert wurden, wählt die Interaktions-Engine einen anderen Kanal, um die Angebote anzuzeigen.
+   Angenommen, der in der Regel angegebene Kanal ist der E-Mail-Kanal. Wenn die von der Regel betroffenen Angebote bisher nur im Web-Kanal unterbreitet wurden, kann das Angebotsmodul die Angebote für einen E-Mail-Versand auswählen. Sobald die Angebote jedoch einmal per E-Mail unterbreitet wurden, wählt das Angebotsmodul für künftige Vorschläge einen anderen Kanal aus.****
 
    >[!NOTE]
    >
    >Es handelt sich hier um den Kanal, nicht um die Platzierung. Wenn die Regel beispielsweise den Ausschluss eines Angebots im Web-Kanal betrifft, wird ein Angebot, das auf einer Webseite in zwei Platzierungen (z. B. in einem Banner und im Textkörper) vorgeschlagen werden soll, weder in der einen noch in der anderen Platzierung auf der Webseite angezeigt, wenn es zuvor bereits auf der Webseite unterbreitet wurde.
    >
-   >For a workflow involving offer presentation, the rules are only correctly taken into account if they are configured on **[!UICONTROL All channels]**.
+   >Im Falle eines Workflows, der eine Angebotsunterbreitung enthält, können Regeln nur korrekt berücksichtigt werden, wenn der Parameter **[!UICONTROL Alle Kanäle]** ausgewählt wurde.
 
 * **Angebotsfilter**
 
    Dieses Feld ermöglicht es, die Zählung der Angebote auf gewisse Angebotsgruppen zu beschränken.
 
-   **[!UICONTROL All offers]** : Standardwert. Auf die Angebote wird kein Filter angewendet.
+   **[!UICONTROL Alle Angebote]**: Standardoption, die Angebote werden nicht gefiltert.
 
-   **[!UICONTROL Offer being presented]** : das auf der **[!UICONTROL General]** Registerkarte angegebene Angebot wird ausgeschlossen, wenn es bereits präsentiert wurde.
+   **[!UICONTROL Nur das aktuell unterbreitete Angebot]**: Das im **[!UICONTROL Allgemein]**-Tab angegebene Angebot wird ausgeschlossen, wenn es zuvor bereits unterbreitet wurde.
 
-   **[!UICONTROL Offers from the same category]** : Ein Angebot wird ausgeschlossen, wenn bereits ein Angebot aus derselben Kategorie vorgelegt wurde.
+   **[!UICONTROL Angebote derselben Kategorie]**: Ein Angebot wird ausgeschlossen, wenn bereits ein anderes Angebot derselben Kategorie unterbreitet wurde.
 
-   **[!UICONTROL The offers which the rule applies to]** : Wenn mehrere Angebote auf der **[!UICONTROL General]** Registerkarte definiert sind, wird jeder Angebotsvorschlag aus diesem Angebotsset berücksichtigt und endet mit dem Ausschluss aller Angebote, wenn der Angebotsschwellenwert erreicht wird.
+   **[!UICONTROL Angebote, für die die Regel Anwendung findet]**: Wenn im **[!UICONTROL Allgemein]**-Tab mehrere Angebote angegeben wurden, wird jeder einzelne Vorschlag dieser Angebotsgruppe gezählt und bei Erreichen der maximalen Vorschlagsanzahl werden alle angegebenen Angebote ausgeschlossen.
 
-   Angebote 2, 3 und 5 werden beispielsweise auf der **[!UICONTROL General]** Registerkarte definiert. Die maximale Anzahl der Vorschläge ist auf 2 eingestellt. Wenn die Angebote 2 und 5 einmal präsentiert werden, beträgt die Anzahl der gezählten Vorschläge 2. Daher wird Angebot 3 nie präsentiert.
+   Angenommen, die Regel bezieht sich auf die Angebote Nr. 2, 3 und 5 und die maximale Anzahl an Vorschlägen wurde auf 2 begrenzt. Wenn die Angebote Nr. 2 und 5 jeweils einmal unterbreitet wurden, erreicht die Anzahl zu zählender Vorschläge 2. Das Angebot Nr. 3 wird somit nicht unterbreitet.****
 
 * **Vorschlagsstatusfilter**
 
    Dieses Feld ermöglicht die direkte Auswahl der gängigsten Vorschlagsstatus, die zu berücksichtigen sind, wenn sie im Verlauf erscheinen.
 
-   **[!UICONTROL Regardless of the proposition status]** : Standardwert. Auf den Status des Vorschlags wird kein Filter angewendet.
+   **[!UICONTROL Unabhängig vom Vorschlagsstatus]**: Standardoption, die Vorschlagsstatus werden nicht gefiltert.
 
-   **[!UICONTROL Accepted or rejected propositions]** : ermöglicht Ihnen, zuvor angebotene Angebote, die angenommen oder abgelehnt wurden, auszuschließen.
+   **[!UICONTROL Angenommene oder abgelehnte Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die angenommen oder abgelehnt wurden.
 
-   **[!UICONTROL Accepted propositions]** : ermöglicht Ihnen, zuvor angebotene Angebote, die akzeptiert wurden, auszuschließen.
+   **[!UICONTROL Angenommene Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die akzeptiert wurden.
 
-   **[!UICONTROL Rejected propositions]** : können Sie zuvor angezeigte Angebote, die abgelehnt wurden, ausschließen.
+   **[!UICONTROL Abgelehnte Vorschläge]**: ermöglicht den Ausschluss von bereits vorgeschlagenen Angeboten, die abgelehnt wurden.
 
 ### Empfänger definieren {#defining-recipients}
 
-Um die Empfänger anzugeben, klicken Sie auf den **[!UICONTROL Edit the query from the targeting dimension...]** Link und wählen Sie die von der Regel betroffenen Empfänger aus.
+Klicken Sie auf den Link **[!UICONTROL Abfrage von der Zieldimension ausgehend bearbeiten...]** und wählen Sie die von der Regel betroffenen Empfänger aus.
 
 ![](assets/offer_typology_012.png)
 
 ### Abfrage bezüglich der Vorschläge erstellen {#creating-a-query-on-propositions}
 
-To specify the propositions to be counted via a query, click the **[!UICONTROL Limit propositions...]** link and specify the criteria to be taken into account.
+Um die zu zählenden Vorschläge über eine Abfrage zu definieren, klicken Sie auf den Link **[!UICONTROL Vorschläge begrenzen...]** und geben Sie die Bedingungen für die Berücksichtigung an.
 
 In unten stehendem Beispiel werden ab der zweiten Unterbreitung die Angebote der Kategorie **Spezialangebote** in der Platzierung **Callcenter** mit einer Gewichtung von unter **20** gezählt.
 
