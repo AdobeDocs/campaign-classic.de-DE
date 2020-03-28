@@ -14,7 +14,7 @@ discoiquuid: 0325ab0f-394e-404b-9f4a-db3cc18d2493
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
 
 ---
@@ -24,11 +24,11 @@ source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
 
 Empfängerprofile können in die Adobe-Campaign-Datenbank importiert oder in externe Dateien exportiert werden.
 
-To configure and execute data imports and exports, go to the **[!UICONTROL Profiles and targets]** universe and click the **[!UICONTROL Jobs]** link.
+Zur Konfiguration derartiger Im- oder Exporte klicken Sie auf den Link **[!UICONTROL Vorgänge]** in der Rubrik **[!UICONTROL Profile und Zielgruppen]**.
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
 >[!NOTE]
 >
->Daten importieren und exportieren werden in [Generische Ein- und Ausfuhren](../../platform/using/generic-imports-and-exports.md) und in [diesem Video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html)dargestellt.
+>Das Importieren und Exportieren von Daten wird unter [Allgemeine Importe und Exporte](../../platform/using/generic-imports-and-exports.md) und in [diesem Video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html) vorgestellt.
 
