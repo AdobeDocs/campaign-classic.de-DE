@@ -14,7 +14,7 @@ discoiquuid: 0c264783-2775-4ec6-8d49-cd9a45a18d60
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: af768da6ee8cc0ca2ea1f24f297239b974c113a5
 
 ---
@@ -30,7 +30,7 @@ Diese Aktivität ermöglicht es, Daten zu bearbeiten und auf einfache Weise komp
 
 Geben Sie einfach Ihre Abfrage im Script-Fenster ein.
 
-Auf der **[!UICONTROL Texts]** Registerkarte können Sie Textzeichenfolgen definieren.  Sie können dann mit der folgenden Syntax verwendet werden: **$(Bezeichner)**. Weitere Informationen zur Verwendung von Texten finden Sie unter [Hinzufügen einer Kopf- und Fußzeile](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+Auf dem Tab **[!UICONTROL Texte]** können Sie Text-Strings definieren. Diese können dann mit der folgenden Syntax verwendet werden: **$(Identifier)**. Weitere Informationen zur Verwendung von Texten finden Sie unter [Header und Footer hinzufügen](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 >[!CAUTION]
 >
@@ -49,7 +49,7 @@ Andernfalls werden die aktuellen Daten angezeigt.
 Es besteht die Möglichkeit, ein externes Script hinzuzufügen, das server- und/oder clientseitig ausgeführt wird. Gehen Sie hierzu wie folgt vor:
 
 1. Öffnen Sie die Eigenschaften des Berichts und klicken Sie auf den Tab **[!UICONTROL Scripts]**.
-1. Click **[!UICONTROL Add]** and select the script to be referenced.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie das zu referenzierende Script aus.
 1. Bestimmen Sie anschließend den Ausführungsmodus.
 
    Wenn Sie mehrere Scripts hinzufügen, können Sie deren Ausführungsreihenfolge mithilfe der Pfeile in der Symbolleiste verändern.
