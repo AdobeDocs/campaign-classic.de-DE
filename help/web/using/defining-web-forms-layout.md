@@ -14,7 +14,7 @@ discoiquuid: 67d1d39b-3a5f-4ed6-8fcf-570891043b10
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 ---
@@ -26,17 +26,17 @@ source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
 
 Mit Containern können Sie die Felder einer Seite zusammenfassen und ihr Layout konfigurieren, um die Elemente der Seite anzuordnen.
 
-For each page of the form, containers are created via the **[!UICONTROL Containers]** button of the toolbar.
+Sie können für jede Seite des Formulars Container mit der Schaltfläche **[!UICONTROL Container]** in der Symbolleiste erstellen.
 
 ![](assets/s_ncs_admin_survey_containers_add.png)
 
-Verwenden Sie einen Behälter, um Elemente der Seite zu gruppieren, ohne eine Bezeichnung zum endgültigen Rendering hinzuzufügen. Elemente werden in der Unterstruktur des Containers gruppiert. Mit Standardbehältern können Sie das Layout verwalten.
+Mit Containern können Sie die Elemente einer Seite gruppieren, ohne einen Titel zum endgültigen Rendering hinzuzufügen. Die Elemente sind im Container-Unterverzeichnis zusammengefasst. Mit Standard-Containern können Sie das Layout verwalten.
 
 Beispiel:
 
 ![](assets/s_ncs_admin_survey_containers_std_arbo.png)
 
-Die Position der Beschriftungen wird auf Elemente angewendet, die unterhalb des Containers in der Hierarchie platziert werden. Sie kann bei Bedarf für jedes Element überladen werden. Fügen Sie Spalten hinzu oder entfernen Sie sie, um das Layout zu ändern. See [Positioning the fields on the page](#positioning-the-fields-on-the-page).
+Die Position der Titel wird auf die Elemente angewendet, die sich in der Hierarchie unter dem Container befinden. Bei Bedarf kann die Position in jedem Element überschrieben werden. Zum Ändern des Layouts können Spalten hinzugefügt oder entfernt werden. Siehe [Die Felder auf der Seite positionieren](#positioning-the-fields-on-the-page).
 
 Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
@@ -74,7 +74,7 @@ Sie können die Formatierung in jedem Container ändern. In unserem Beispiel kö
 
 ![](assets/s_ncs_admin_survey_container_ex2_rend.png)
 
-Der Titel und die Liste belegen jeweils eine Zelle (und damit eine ganze Zeile des Containers), und das Kontrollkästchen erstreckt sich über zwei Zellen. Die Anzahl der dem Eingabefeld zugeschriebenen Zellen wird auf der **[!UICONTROL General]** Registerkarte oder auf der **[!UICONTROL Advanced]** Registerkarte je nach Feldtyp definiert:
+Der Titel und die Liste befinden sich in je einer Zelle (und daher in einer ganzen Zeile des Containers) und die Checkbox erstreckt sich über zwei Zellen. Die Anzahl der dem Eingabefeld zugeordneten Zellen ist im Tab **[!UICONTROL Allgemein]** oder im Tab **[!UICONTROL Erweitert]** entsprechend dem Feldtyp definiert:
 
 ![](assets/s_ncs_admin_survey_container_ex2.png)
 
@@ -84,11 +84,11 @@ Sie können die Ausrichtung von Feldern und Titeln im Formular definieren.
 
 Standardmäßig übernehmen die Anzeigeparameter für Felder und andere Inhalte der Seite die allgemeine Konfiguration des Formulars, die Konfiguration der Seite oder die Konfiguration des übergeordneten Containers, sofern einer vorhanden ist.
 
-Die globalen Anzeigeparameter für das gesamte Formular werden im Feld &quot;Formulareigenschaften&quot;angegeben. Auf der **[!UICONTROL Rendering]** Registerkarte können Sie die Position der Beschriftungen auswählen.
+Die globalen Anzeigeparameter für das gesamte Formular werden im Eigenschaftsfeld des Formulars festgelegt. Im Tab **[!UICONTROL Rendering]** kann die Position der Titel ausgewählt werden.
 
 ![](assets/s_ncs_admin_survey_label_position.png)
 
-This position can be overloaded for each page, each container, and each field, via the **[!UICONTROL Advanced]** tab.
+Diese Position kann für jede Seite, jeden Container und jedes Feld über den Tab **[!UICONTROL Erweitert]** überschrieben werden.
 
 Folgende Ausrichtungen werden unterstützt:
 
