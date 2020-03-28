@@ -14,7 +14,7 @@ discoiquuid: ef658468-e20b-45d9-a714-c152e55c1c79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Perimeter konfigurieren {#definition-of-the-scope}
 
-Open the **[!UICONTROL Scope]** tab to choose your settings.
+Die Perimeterkonfiguration erfolgt im Tab **[!UICONTROL Perimeter]**.
 
 Folgende Felder müssen zwingend ausgefüllt werden:
 
@@ -51,9 +51,9 @@ Sie haben des Weiteren die Möglichkeit, die Simulation für alle Angebote durch
 
 ## Berichtsachsen hinzufügen {#adding-reporting-axes}
 
-You can enhance the simulation analysis by adding reporting axes on the target or the offers themselves via the **[!UICONTROL Calculations]** tab.
+Im Tab **[!UICONTROL Berechnungen]** können Sie auf die Zielgruppe oder direkt auf die Angebote bezogene Berichtsachsen hinzufügen, um die Analyse der Simulation zu bereichern.
 
-Klicken Sie dazu auf die **[!UICONTROL Add]** Schaltfläche und wählen Sie die entsprechenden Felder aus. Die Achsen werden zur Berechnung der Simulation verwendet und im Analysebericht angezeigt. For more on this, refer to [Simulation tracking](../../interaction/using/simulation-tracking.md).
+Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie in der Spalte die Felder aus, die die gewünschten Werte enthalten. Die neuen Achsen werden zur Berechnung der Simulation herangezogen und erscheinen im Analysebericht. Weitere Informationen hierzu finden Sie im Abschnitt [Verfolgung](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)
 
