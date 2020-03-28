@@ -14,7 +14,7 @@ discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 ---
@@ -39,7 +39,7 @@ In diesem Fall ist wie folgt vorzugehen:
 
 Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anzugeben und gegebenenfalls Optionen in Bezug auf das Ergebnis zu wählen.
 
-Click the **[!UICONTROL Edit configuration...]** link to define the deduplication mode.
+Klicken Sie auf den Link **[!UICONTROL Konfiguration bearbeiten...]**, um die Deduplizierungsmethode zu definieren.
 
 ![](assets/s_user_segmentation_dedup_param.png)
 
@@ -49,7 +49,7 @@ Click the **[!UICONTROL Edit configuration...]** link to define the deduplicatio
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
-   In the next step, the **[!UICONTROL Other]** option lets you select the criterion or criteria to be used:
+   Die Option **[!UICONTROL Sonstige]** ermöglicht im nächsten Schritt die Auswahl anderer Felder:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -61,19 +61,19 @@ Click the **[!UICONTROL Edit configuration...]** link to define the deduplicatio
 
    Folgende Methoden stehen zur Verfügung:
 
-   * **[!UICONTROL Choose for me]**: wählt zufällig den Datensatz aus den Duplikaten aus.
-   * **[!UICONTROL Following a list of values]**: können Sie eine Wertpriorität für ein oder mehrere Felder definieren. Wählen Sie zur Bestimmung dieser Werte ein Feld aus oder erstellen Sie einen Ausdruck, fügen Sie dann den oder die Werte der entsprechenden Tabelle hinzu. To define a new field, click the **[!UICONTROL Add]** button located above the list of values.
+   * **[!UICONTROL Automatische Auswahl]**: wählt nach dem Zufallsprinzip unter den Dubletten den beizubehaltenden Datensatz aus.
+   * **[!UICONTROL Gemäß einer Werteliste]**: ermöglicht die Bestimmung einer Reihenfolge nach Priorität von Werten für ein oder mehrere Felder. Wählen Sie zur Bestimmung dieser Werte ein Feld aus oder erstellen Sie einen Ausdruck, fügen Sie dann den oder die Werte der entsprechenden Tabelle hinzu. Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** oberhalb der Werteliste, um ein neues Feld zu definieren.
 
       ![](assets/s_user_segmentation_dedup_param5.png)
 
-   * **[!UICONTROL Non-empty value]**: Auf diese Weise können Sie Datensätze speichern, für die der Wert des ausgewählten Ausdrucks als Priorität nicht leer ist.
+   * **[!UICONTROL Wert nicht leer]**: hiermit lassen sich vornehmlich jene Datensätze beibehalten, für die der Wert des ausgewählten Ausdrucks nicht leer ist.
 
       ![](assets/s_user_segmentation_dedup_param6.png)
 
-   * **[!UICONTROL Using an expression]**: können Sie Datensätze mit dem niedrigsten (oder höchsten) Wert des angegebenen Ausdrucks führen.
+   * **[!UICONTROL Von einem Ausdruck ausgehend]**: Beibehalten werden die Datensätze, für die der ausgewählte Ausdruck den kleinsten oder größen Wert aufweist.
 
       ![](assets/s_user_segmentation_dedup_param7.png)
-   Click **[!UICONTROL Finish]** to approve the selected deduplication method.
+   Klicken Sie auf **[!UICONTROL Beenden]**, um die Auswahl der Deduplizierungsmethode zu bestätigen.
 
    Die konfigurierten Deduplizierungsparameter werden zusammenfassend angezeigt.
 
@@ -81,7 +81,7 @@ Click the **[!UICONTROL Edit configuration...]** link to define the deduplicatio
 
    ![](assets/s_user_segmentation_dedup_param8.png)
 
-   Aktivieren Sie die **[!UICONTROL Generate complement]** Option, wenn Sie die verbleibende Population ausnutzen möchten. Die Ergänzung besteht aus allen Duplikaten. Anschließend wird der Aktivität ein zusätzlicher Übergang wie folgt hinzugefügt:
+   Kreuzen Sie die Option **[!UICONTROL Komplement erzeugen]** an, wenn Sie auch die restliche Population im weiteren Verlauf des Workflows verwenden möchten. Das Komplement enthält in diesem Fall alle Dubletten und die Aktivität weist somit, wie unten abgebildet, eine zusätzliche Transition auf:
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
@@ -97,17 +97,17 @@ Die identifizierten Dubletten werden für eine eventuelle spätere Verwendung in
 
 1. Positionnieren Sie die erforderlichen Aktivitäten wie oben abgebildet im Workflow-Diagramm.
 
-   Die Gewerkschaftsaktivität wird hier verwendet, um die drei Abfragen in einem einzigen Übergang zu &quot;vereinen&quot;. Deduplizierung funktioniert daher nicht für jede Abfrage einzeln, sondern für die gesamte Abfrage. Weitere Informationen zu diesem Thema finden Sie unter [Bewährte Verfahren](#best-practices).
+   Die Vereinigungsaktivität dient hier der Zusammenführung der verschiedenen Abfrageergebnisse in einer ausgehenden Transition. Auf diese Weise erfolgt die Deduplizierung nicht separat für jede Abfrage, sondern gebündelt für alle Ergebnisse. Weitere Informationen zu diesem Thema finden Sie unter [Best Practices](#best-practices).
 
-1. Open the deduplication activity then click the **[!UICONTROL Edit configuration...]** link to define the deduplication mode.
-1. Wählen Sie im neuen Fenster **[!UICONTROL Database schema]**.
+1. Öffnen Sie die Deduplizierungsaktivität und klicken Sie auf den Link **[!UICONTROL Konfiguration bearbeiten...]**, um die Deduplizierungsmethode zu bestimmen.
+1. Wählen Sie im sich öffnenden Fenster die Option **[!UICONTROL Datenbankschema]** aus.
 1. Wählen Sie für die Zielgruppen- und die Filterdimension jeweils **Empfänger** aus.
-1. Select the ID field for the **[!UICONTROL Email]** duplicates, to send the delivery only once to every email address, then click **[!UICONTROL Next]**.
+1. Kreuzen Sie **[!UICONTROL E-Mail]** als Identifizierungskriterium der Dubletten an, damit jeder Empfänger den Versand nur einmal erhält. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   If you wish to base the duplicate IDs on a specific field, select **[!UICONTROL Other]** to access the list of available fields.
+   Wenn die Identifizierung der Dubletten auf einem anderen als den angebotenen Feldern basieren soll, kreuzen Sie **[!UICONTROL Sonstige]** an. Im nächsten Schritt können Sie dann das Feld aus den in der zugrundeliegenden Tabelle enthaltenen auswählen.
 
 1. Geben Sie an, dass nur ein Datensatz beibehalten werden soll, wenn dieselbe E-Mail-Adresse für mehrere Empfänger identifiziert wurde.
-1. Select the **[!UICONTROL Choose for me]** deduplication mode so that the records saved in case of identified duplicates are randomly chosen, then click **[!UICONTROL Finish]**.
+1. Wählen Sie als Deduplizierungsmethode **[!UICONTROL Automatische Auswahl]**, damit der beizubehaltende Datensatz zufällig bestimmt wird. Klicken Sie abschließend auf **[!UICONTROL Beenden]**.
 
 Bei Ausführung des Workflows werden die als Dubletten identifizierten Empfänger von der Ergebnismenge (und somit vom Versand) ausgeschlossen und in der Liste der Dubletten gespeichert. Diese Liste kann erneut verwendet werden, um die Identifizierung der Dubletten nicht wiederholt vornehmen zu müssen.
 
@@ -124,6 +124,6 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 * schema
 * recCount
 
-Dieser Satz von drei Werten identifiziert das Ziel, das sich aus der Deduplizierung ergibt. **[!UICONTROL tableName]** ist der Name der Tabelle, in der Zielkennungen gespeichert werden, das Schema der Population (normalerweise nms:empfänger) und die Anzahl der Elemente in der Tabelle **[!UICONTROL schema]** ist **[!UICONTROL recCount]** dies.
+Anhand der drei Werte lässt sich die durch die Deduplizierung ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger speichert, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
