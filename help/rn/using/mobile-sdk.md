@@ -30,7 +30,7 @@ Weitere Informationen zum Konfigurieren und Verwenden von Push-Benachrichtigunge
 
 ## Build 1.0.26{#build-1-0-26}
 
-10. Oktober 2019
+\10. Oktober 2019
 
 Version 1.0.26 des iOS-SDK ist jetzt verfügbar. In diesem neuen Build wurde Unterstützung für iOS 13 hinzugefügt. Diese neue Version unterstützt jetzt die Benachrichtigungspriorität und den neuen Anmeldetoken-Verwaltungsprozess für iOS 13-Push-Benachrichtigungen.
 

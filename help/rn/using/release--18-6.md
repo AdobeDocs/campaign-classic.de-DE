@@ -24,7 +24,7 @@ source-git-commit: d046304657f04312d78176c49a650690b05e4c94
 
 ## Version 18.6.2 - Build 8949{#release-18-6-3-build-8949}
 
-22. August 2018
+\22. August 2018
 
 >[!CAUTION]
 >
@@ -80,7 +80,7 @@ Weitere Informationen zu Query Banding finden Sie in diesen Artikeln.
 
 ## Version 18.6 – Build 8947{#release-18-6-build-8947}
 
-25. Juni 2018
+\25. Juni 2018
 
 >[!CAUTION]
 >
