@@ -1,7 +1,7 @@
 ---
-title: Häufig gestellte Fragen zu Kampagneneinstellungen
+title: Häufig gestellte Fragen zu Campaign-Einstellungen
 seo-title: Konfiguration von Campaign
-description: Häufig gestellte Fragen zu Campaign Classic
+description: Häufig gestellte Fragen zu Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -14,12 +14,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
 
 ---
 
 
-# Häufig gestellte Fragen zu Kampagneneinstellungen {#settings-faq}
+# Häufig gestellte Fragen zu Campaign-Einstellungen {#settings-faq}
 
 Hier erfahren Sie die wichtigsten Informationen zur Konfiguration, um Ihre Campaign-Instanz an Ihre Anforderungen anzupassen.
 
@@ -78,3 +78,35 @@ Adobe Campaign stellt verschiedene CRM-Connectoren zur Verfügung, die die Verbi
 Dank der Connectoren ist eine schnelle und einfache Datenintegration möglich. Mithilfe eines spezifischen Assistenten lassen sich Daten aus den im CRM-System verfügbaren Tabellen auswählen und sammeln. Die Zwei-Wege-Synchronisation der Informationen gewährleistet einen einheitlichen Datenstand auf den verschiedenen Systemen.
 
 Lesen Sie [CRM-Connectoren konfigurieren](../../platform/using/crm-connectors.md), um zu erfahren, wie Sie das CRM-Tool mit Adobe Campaign synchronisieren. Dieses Video zeigt ein Anwendungsbeispiel zur [Integration von Adobe Campaign mit Microsoft Dynamics 365](https://helpx.adobe.com/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+
+## Wie kann Soft Cache Clear ausgeführt werden, wenn die Probleme maschinspezifisch oder benutzerspezifisch sind? {#perform-soft-cache-clear}
+
+Wenn Sie Probleme haben, z. B. wenn die neuen Logos korrekt dargestellt werden und die Daten, die spezifisch für Computer/Benutzer sind, erfolgreich exportiert werden können, müssen Sie möglicherweise eine Soft Cache-Bereinigung mit Windows (Windows 7, Windows XP, Windows 10) durchführen.
+
+Wenn Sie sich angemeldet haben, gehen Sie zu **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**. Danach melden Sie sich ab und wieder an.
+
+![](assets/faq_soft_cache.png)
+
+Wenn dies weiterhin nicht hilfreich ist, versuchen Sie bitte, den Hard Cache zu leeren, indem Sie die folgenden Schritte ausführen.
+
+## Wie kann der Hartcache gelöscht werden, wenn die Probleme maschinspezifisch oder benutzerspezifisch sind? {#perform-hard-cache-clear}
+
+Wenn Sie Probleme haben, z. B. wenn die neuen Logos korrekt dargestellt werden und die Daten, die spezifisch für Computer/Benutzer sind, erfolgreich exportiert werden können, müssen Sie eventuell eine Bereinigung des Hard-Cache unter Windows (Windows 7, Windows XP, Windows 10) durchführen.
+
+1. Wählen Sie in der Client-Konsole **[!UICONTROL File]** > **[!UICONTROL Clear the local cache]**.
+
+1. Melden Sie sich ab und schließen Sie die Client-Konsole (Rich-Client).
+
+1. Gehen Sie je nach Betriebssystemversion zu den folgenden Speicherorten:
+
+   * Windows 7: C:\Users\&lt; Benutzername> \AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\&lt; Benutzername >\Anwendung Data\Neolane\NL_5
+   Hier sehen Sie viele XML-Dateien namens nlclient-config-&lt; alphanumerischer Wert >.xml.
+
+1. Löschen Sie diese XML-Dateien und die zugehörigen Ordner.
+
+   >[!CAUTION]
+   >
+   >Löschen Sie nicht die Datei &quot;nlclient_cnx.xml&quot;.
+
+1. Melden Sie sich bei Client Console an.
