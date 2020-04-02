@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
+source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ---
 
@@ -77,7 +77,7 @@ source-git-commit: 234fffd42829a37a705a9472fe23053c8b8ab03d
 |---|---|
 | [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlermeldungen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Anleitungsvideos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Kampagnen-Classic-Datenmodell](configuration/using/about-data-model.md) |
-| [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-Dokumentation](configuration/using/about-web-services.md) |
+| [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Erste Schritte mit Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [Implementierungshandbuch](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
 | [Gold Standard-Upgrade ](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Veraltete und entfernte Funktionen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html) |
