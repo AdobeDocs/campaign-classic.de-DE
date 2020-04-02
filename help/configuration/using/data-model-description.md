@@ -13,12 +13,12 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 828c95aaa4b1d0d9507129edb164ddf978c363c1
+source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
 
 ---
 
 
-# Beschreibung des Campaign-Datenmodells{#data-model-description}
+# Beschreibung des Kampagne-Datenmodells{#data-model-description}
 
 Adobe Campaign enthält ein vordefiniertes Datenmodell. Dieser Abschnitt enthält einige Details zu den integrierten Tabellen des Adobe Campaign-Datenmodells und deren Interaktion.
 
@@ -28,7 +28,7 @@ Um die Tabellenbeschreibung aufzurufen, wählen Sie in der Liste eine Ressource 
 
 >[!NOTE]
 >
->Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Es folgt einer für Adobe Campaign spezifischen Grammatik, einem so genannten Schema. Weitere Informationen zu Adobe Campaign-Schemas finden Sie in diesem [Abschnitt](../../configuration/using/about-schema-reference.md).
+>Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. For more on Adobe Campaign schemas, read out this [section](../../configuration/using/about-schema-reference.md).
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 
@@ -40,7 +40,7 @@ Das folgende Diagramm zeigt die Verbindungen zwischen den wichtigsten Geschäfts
 
 ![](assets/data-model_simplified-diagram.png)
 
-Das vordefinierte Adobe Campaign-Datenmodell umfasst die folgenden Haupttabellen.
+Das vordefinierte Adobe Campaign-Datenmodell enthält die unten aufgeführten Haupttabellen.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -54,7 +54,7 @@ Dies ist die Standardtabelle für die **Empfänger von Versänden**. Sie enthäl
 * sPhone, sMobilePhone, sFax enthalten die Telefon-, Handy- und Faxnummern.
 * iBlackList ist das standardmäßige Ausschluss-Flag, das für die Profil verwendet wird (1 bedeutet &quot;unsubscribed&quot;, 0 ansonsten).
 
-Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit dem Ausführungsordner verknüpft. For more on this, see [XtkFolder](#XtkFolder).
+Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit dem Ausführungsordner verknüpft. Weitere Informationen hierzu finden Sie unter [XtkFolder](#XtkFolder).
 
 Das Feld sCountryCode ist der ISO-Code 3166-1 Alpha 2 (2 Zeichen) des Landes, das mit dem Empfänger verknüpft ist. Dieses Feld ist tatsächlich ein ausländischer Schlüssel in der Länderreferenztabelle (NmsCountry), die die Länderbeschriftungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt wird, wird der Wert &quot;XX&quot;gespeichert (und anstelle eines Null-ID-Datensatzes verwendet).
 
@@ -64,7 +64,7 @@ Weitere Informationen zur Empfänger-Tabelle finden Sie in diesem [Abschnitt](..
 
 Diese Tabelle entspricht dem Schema **nms:group** .
 
-Sie können **statische Gruppen von Empfängern** erstellen. Zwischen Empfängern und Gruppen besteht eine Beziehung zwischen vielen und vielen. Ein Empfänger kann beispielsweise zu mehreren Gruppen gehören und eine Gruppe kann mehrere Empfänger enthalten. Gruppen können manuell, über einen Import oder über Versand-Targeting erstellt werden. Gruppen werden oft als Versand-Zielgruppen verwendet. Es gibt einen eindeutigen Index im Feld, der den internen Namen der sName-Gruppe darstellt. Die Gruppe ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. For more on this, see [XtkFolder](#XtkFolder)).
+Sie können **statische Gruppen von Empfängern** erstellen. Zwischen Empfängern und Gruppen besteht eine Beziehung zwischen vielen und vielen. Ein Empfänger kann beispielsweise zu mehreren Gruppen gehören und eine Gruppe kann mehrere Empfänger enthalten. Gruppen können manuell, über einen Import oder über Versand-Targeting erstellt werden. Gruppen werden oft als Versand-Zielgruppen verwendet. Es gibt einen eindeutigen Index im Feld, der den internen Namen der sName-Gruppe darstellt. Die Gruppe ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. Weitere Informationen finden Sie unter [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -76,7 +76,7 @@ Diese Tabelle entspricht dem Schema **nms:service** .
 
 Dienste sind Einrichtungen, die Gruppen ähnlich sind (statische Empfänger), mit der Ausnahme, dass sie mehr Informationen verbreiten und eine einfache Verwaltung von Abonnements und Abmeldungen über Formulare ermöglichen.
 
-Es gibt einen eindeutigen Index im Feld, der den internen Namen des sName-Dienstes darstellt. Der Dienst ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. For more on this, see [XtkFolder](#XtkFolder)). Schließlich gibt das Feld &quot;iType&quot;den Kanal des Versands dieses Dienstes an (0 für E-Mail, 1 für SMS, 2 für Telefon, 3 für Direktwerbung und 4 für Fax).
+Es gibt einen eindeutigen Index im Feld, der den internen Namen des sName-Dienstes darstellt. Der Dienst ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. Weitere Informationen finden Sie unter [XtkFolder](#XtkFolder)). Schließlich gibt das Feld &quot;iType&quot;den Kanal des Versands dieses Dienstes an (0 für E-Mail, 1 für SMS, 2 für Telefon, 3 für Direktwerbung und 4 für Fax).
 
 ### NmsSubscription {#NmsSubscription}
 
@@ -96,7 +96,7 @@ Diese Tabelle entspricht dem Schema **nms:Versand** .
 
 Jeder Datensatz in dieser Tabelle stellt eine **Versand-Aktion** oder eine **Versandvorlage** dar. Es enthält alle erforderlichen Parameter für die Ausführung von Versänden (Zielgruppe, Inhalt usw.). Während der Analyse werden Versand- (Broadcast-)Protokolle (NmsBroadLog) und zugehörige Tracking-URLs (NmsTrackingUrl) erstellt (weitere Informationen zu beiden Tabellen finden Sie unten).
 
-Es gibt eine eindeutige Indexposition auf dem Feld, die den internen Namen des Versands sInternalName oder Szenarios darstellt. Der Versand ist mit einem Ausführungsordner verknüpft (der Fremdschlüssel ist iFolderProcessId. For more on this, see [XtkFolder](#XtkFolder)).
+Es gibt eine eindeutige Indexposition auf dem Feld, die den internen Namen des Versands sInternalName oder Szenarios darstellt. Der Versand ist mit einem Ausführungsordner verknüpft (der Fremdschlüssel ist iFolderProcessId. Weitere Informationen finden Sie unter [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
@@ -108,25 +108,31 @@ Die Struktur wird von den Feldern iParentId und iChildCount verwaltet. Das Feld 
 
 ## Versand und Verfolgung {#delivery-and-tracking}
 
+Dieser Tabellensatz ist mit dem **Versand** -Modul verknüpft, das die Überwachung von Versänden und eventuell aufgetretenen Problemen beim Senden von Nachrichten ermöglicht. For more on this, see [Monitoring deliveries](../../delivery/using/monitoring-a-delivery.md). Weitere Informationen zur Verfolgung finden Sie unter [Rückverfolgungsmeldungen](../../delivery/using/about-message-tracking.md).
+
 ![](assets/data-model_delivery.png)
 
 **NmsBroadLogMsg**: Diese Tabelle entspricht dem **nms:wideLogMsg** -Schema. Es handelt sich um eine Erweiterung der Protokolltabelle des Versands.
 
 ## Kampagnenverwaltung {#campaign-management}
 
+Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, das die Definition, Optimierung, Ausführung und Analyse von Kommunikations- und Marketing-Kampagnen ermöglicht. For more on this, see [About marketing campaigns](../../campaign/using/designing-marketing-campaigns.md).
+
 ![](assets/data-model_campaign.png)
 
-* **NmsOperation**: Diese Tabelle entspricht dem Schema **nms:operation** . Es enthält die Daten von Marketing-Campaignen.
+* **NmsOperation**: Diese Tabelle entspricht dem Schema **nms:operation** . Es enthält die Daten zu Marketing-Kampagnen.
 * **NmsDeliveryOutline**: Diese Tabelle entspricht dem Schema **nms:deliveryOutline** . Es enthält die erweiterten Eigenschaften des Versands (Versandentwurf).
 * **NmsDlvOutlineItem**: Diese Tabelle entspricht dem Schema **nms:dlvOutlineItem** . Es enthält die Artikel eines Versandentwurfs.
 * **NmsDeliveryCustomization**: Diese Tabelle entspricht dem Schema **nms:deliveryCustomization** . Es enthält die Personalisierungsfelder eines Versands.
-* **NmsBudget**: Diese Tabelle entspricht dem Schema **nms:budget** . Es enthält die Daten eines Budgets für ein Campaign, einen Plan, ein Programm, eine Aufgabe und/oder Versände.
-* **NmsDocument**: Diese Tabelle entspricht dem Schema **nms:Dokument** . Es enthält die Marketing-Dokumente des Campaigns in Form von Dateien (Bilder, Excel- oder Wortdateien usw.)
-* **XtkWorkflow**: Diese Tabelle entspricht dem Schema **xtk:workflow** . Es enthält Campaign-Targeting.
+* **NmsBudget**: Diese Tabelle entspricht dem Schema **nms:budget** . Es enthält die Daten eines Budgets über eine Kampagne, einen Plan, ein Programm, eine Aufgabe und/oder Versände.
+* **NmsDocument**: Diese Tabelle entspricht dem Schema **nms:Dokument** . Es enthält die Marketing-Dokumente der Kampagne in Form von Dateien (Bilder, Excel- oder Wortdateien usw.)
+* **XtkWorkflow**: Diese Tabelle entspricht dem Schema **xtk:workflow** . Es enthält Kampagnen-Targeting.
 * **NmsTask**: Diese Tabelle entspricht dem Schema **nms:Aufgabe** . Es enthält die Definition einer Marketing-Aufgabe.
 * **NmsAsset**: Diese Tabelle entspricht dem Schema **nms:asset** . Es enthält die Definition einer Marketing-Ressource.
 
 ## Kommunikationskonsistenz {#communication-consistency}
+
+Dieser Tabellensatz ist mit dem **Campaign Optimization** -Modul verknüpft, das das Steuern, Filtern und Überwachen des Sendens von Versänden ermöglicht. For more on this, see [About campaign typologies](../../campaign/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -137,6 +143,8 @@ Die Struktur wird von den Feldern iParentId und iChildCount verwaltet. Das Feld 
 * **NmsVolumeConsumed**: Diese Tabelle entspricht dem **nms:volumeConsumed** -Schema. Er enthält alle Verbrauchslinien der Kapazitätsregeln.
 
 ## Reaktionsmanagement {#response-management}
+
+Dieser Tabellensatz ist mit dem **Reaktionsverwaltung** -Modul verknüpft, das es ermöglicht, den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikations-Kanal zu messen. For more on this, see [About response manager](../../campaign/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 
@@ -186,7 +194,7 @@ Die folgenden Indikatoren werden während der Ausführung der Hypothese automati
 * Durchschnittliche Kosten pro Kontakt (SQL Ausdruck). Berechnete Kosten des Versands / Anzahl der kontaktierten Personen.
 * ROI (SQL Ausdruck). Berechnete Kosten des Versands/Gesamtmarge der kontaktierten Personen.
 * Effektiver ROI (SQL Ausdruck). Berechnete Kosten des Versands/zusätzliche Marge.
-* Bedeutung: **Significativität** (SQL Ausdruck). Enthält Werte von 0 bis 3, je nach Bedeutung des Campaigns.
+* Bedeutung: **Significativität** (SQL Ausdruck). Enthält Werte von 0 bis 3, je nach Bedeutung der Kampagne.
 
 ### NmsRemaMatchRcp {#NmsRemaMatchRcp}
 
@@ -196,6 +204,8 @@ Es enthält einen Datensatz, der die Reaktion eines Individuums auf eine bestimm
 
 ## Simulation und Versand {#simulation-and-delivery}
 
+Dieser Tabellensatz ist mit dem Modul **Simulation** verknüpft, das es ermöglicht, die Verteilung von Angeboten zu einer Kategorie oder Umgebung zu testen, bevor Sie Ihren Vorschlag an Empfänger senden. For more on this, see [About offers simulation](../../interaction/using/about-offers-simulation.md).
+
 ![](assets/data-model_simulation.png)
 
 * **NmsSimulation**: Diese Tabelle entspricht dem Schema **nms:Simulation** . Es stellt eine Simulation für eine Reihe von Versänden oder Angeboten für eine bestimmte Bevölkerungsgruppe dar.
@@ -203,6 +213,8 @@ Es enthält einen Datensatz, der die Reaktion eines Individuums auf eine bestimm
 * **NmsOfferSimulationRegel**: Diese Tabelle entspricht dem **nms:offerSimulationRel** -Schema. Damit können Sie eine Simulation mit einem Angebot verknüpfen.
 
 ## Interaktionsmodul {#interaction-module}
+
+Dieser Tabellensatz ist mit dem **Interaktionsmodul** verknüpft, das es ermöglicht, während einer Interaktion mit einem bestimmten Kontakt in Echtzeit zu reagieren, indem es zu einem oder mehreren angepassten Angeboten macht. Weitere Informationen finden Sie unter [Interaktion und Angebot-Management](../../interaction/using/interaction-and-offer-management.md).
 
 * **NmsOffer**: Diese Tabelle entspricht dem Schema **nms:Angebot** . Es enthält die Definition der einzelnen Marketing-Angebot.
 * **NmsPropositionRcp**: Diese Tabelle entspricht dem **nms:propositionRcp** -Schema. Es enthält das Kanal-übergreifende Protokoll der Marketingvorschläge, die an die einzelnen Personen gesendet werden. Der Datensatz wird erstellt, wenn ein Vorschlag vorbereitet oder effektiv an eine Einzelperson gemacht wird.
@@ -213,6 +225,8 @@ Es enthält einen Datensatz, der die Reaktion eines Individuums auf eine bestimm
 * **NmsOfferEnv**: Diese Tabelle entspricht **nms:offerEnv**. Es enthält die Angebot-Umgebung.
 
 ## Nachrichtencenter-Modul {#message-center-module}
+
+Die folgenden Tabellen sind mit dem Modul **Transaktionsnachrichten** (Message Center) verknüpft, mit dem individuelle und individuelle Nachrichten verwaltet werden können, die an einen Benutzer gesendet und aus Ereignissen generiert werden, die aus Informationssystemen ausgelöst werden. For more on this, see [About transactional messaging](../../message-center/using/about-transactional-messaging.md).
 
 ### NmsRtEvent {#NmsRtEvent}
 
@@ -226,15 +240,19 @@ Diese Tabelle entspricht dem Schema **nms:rtEvent** . Es enthält eine Definitio
 
 Diese Tabelle entspricht dem Schema **nms:batchEvent** . Es enthält die Definition von Ereignissen nach Stapeln.
 
-## Microsites-Modul {#microsites-module}
+<!--## Microsites Module {#microsites-module}
+
+This set of tables is linked to the **Web applications** functionality, which allows to create and publish dynamic and interactive web applications with data from the database and content adapted to the rights of the connected user. For more on this, see [About web applications](../../web/using/about-web-applications.md).
 
 ![](assets/data-model_microsites.png)
 
-* **NmsTrackingUrl**: Diese Tabelle entspricht dem **nms:trackingUrl** -Schema.
+* **NmsTrackingUrl**: This table matches the **nms:trackingUrl** schema.
 
-* **NmsPurl**: Diese Tabelle entspricht dem Schema **nms:purl** .
+* **NmsPurl**: This table matches the **nms:purl** schema.-->
 
 ## NMAC-Modul {#nmac-module}
+
+Dieser Tabellensatz ist mit dem **Mobile App Kanal** verknüpft, mit dem personalisierte Benachrichtigungen über Apps an iOS- und Android-Terminals gesendet werden können. Weitere Informationen finden Sie unter [Info zu Mobile App Kanal](../../delivery/using/about-mobile-app-channel.md).
 
 * **NmsMobileApp**: Diese Tabelle entspricht dem Schema **nms:mobileApp** . Es enthält die in Adobe Campaign definierten Mobilanwendungen.
 * **NmsAppSubscription**: Diese Tabelle entspricht dem Schema **nms:appSubscription** . Es enthält die Abonnenteninformationen zu einer oder mehreren Anwendungen.
@@ -244,6 +262,8 @@ Diese Tabelle entspricht dem Schema **nms:batchEvent** . Es enthält die Definit
 * **NmsBroadLogAppSubRcp**: Diese Tabelle entspricht dem **nms:wideLogAppSubRcp** -Schema.
 
 ## Social Marketing-Modul {#social-marketing-module}
+
+Dieser Tabellensatz ist mit dem Modul **Verwalten sozialer Netzwerke** verknüpft, das die Interaktion mit Kunden und Potenzieller Kunden über Facebook und Twitter ermöglicht. For more on this, see [About social marketing](../../social/using/about-social-marketing.md).
 
 ![](assets/data-model_social.png)
 
