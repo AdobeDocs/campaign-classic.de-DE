@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
+source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
 
 ---
 
@@ -74,13 +74,7 @@ _13. August 2019_
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 3. **April 2020**: Neubau (9032-...e8b36257e), die die folgende Fehlerbehebung enthält:
-
-* Wir führen einen Signaturmechanismus zur Verfolgung von Links in E-Mails ein, um eine potenzielle böswillige Verwendung (Phishing) zu verhindern. Dies schützt vor dem Umschreiben von Verfolgungsparametern, die eine URL enthalten können, mit der der Benutzer umgeleitet wird. Dieser Mechanismus ist derzeit standardmäßig deaktiviert. Wenden Sie sich an die Kundenunterstützung, wenn Sie sie aktivieren müssen.
-
-* Es wurde ein zusätzlicher Sicherheitsschutz hinzugefügt, um zu verhindern, dass fehlerhafte URLs, die von vorherigen Builds generiert wurden, umgeleitet werden oder wenn der Signaturmechanismus deaktiviert ist. Wenden Sie sich an den Kundendienst, wenn Sie ihn benötigen.
-
-![](assets/orange_2.png) 5. **März 2020**: neuer Build (9032-...205c981c3), der die folgende Fehlerbehebung enthält:
+![](assets/green_2.png) 5. **März 2020**: neuer Build (9032-...205c981c3), der die folgende Fehlerbehebung enthält:
 
 * Es wurde ein Problem mit Externen Konti behoben, die FTP über SSL verwenden. (NEO-20498)
 
