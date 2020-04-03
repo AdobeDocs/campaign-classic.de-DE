@@ -15,27 +15,27 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
+source-git-commit: c1f5217fb45d2ffcb73ad4ec7d32ba6bd7ddbc15
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-[Build-Aktualisierung](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Systemsteuerung](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Aktualisierungen](../../rn/using/documentation-updates.md) der Dokumentation| [Frühere Versionen](../../rn/using/release--19-1.md) | [Veraltete Funktionen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Build-Aktualisierung](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Control Panel-Versionen](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md) | [Frühere Versionshinweise](../../rn/using/release--19-1.md) | [Eingestellte Funktionen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
   <tr> 
    <td><img src="assets/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
+   <td><img src="assets/blue3.png"/><strong>Veröffentlichungskandidat</strong></td> 
    <td><img src="assets/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
    <td><img src="assets/red3.png"/><strong>Veraltet</strong></td> 
   </tr> 
    <tr> 
-   <td>Neueste stabile Version verfügbar. Erstellen validiert in Produktion.<br> </td>
-   <td>Erstellen von Adobe validiert Warte auf Proof.<br> </td>
-   <td>Neuere Version mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
+   <td>Neuester verfügbarer stabiler Build. Build in Produktion validiert.<br> </td>
+   <td>Build validiert von Adobe. Produktionstestversand ist ausstehend.<br> </td>
+   <td>Neuerer Build mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
    <td>Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.<br> </td>
   </tr> 
  </tbody> 
@@ -43,62 +43,68 @@ source-git-commit: fd7bc26fe12a26d8fb0dcccd2135b799e76b52bd
 
 Der **letzte stabile Build** ist 9032 (205c981c3). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) Version 19.1.6 - Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
->Dieser Build dient nur für lokale Installationen. Bei Hybridbereitstellungen wird der 9032-Build von gehosteten Instanzen weiterhin ausgeführt. Aktualisieren Sie Ihre Marketing-Instanz nicht auf den Build 9035, da er nicht mit 9032 kompatibel ist.
+>Dieser Build ist nur für On-Premise-Installationen gedacht. Bei Hybridbereitstellungen wird von gehosteten Instanzen weiterhin Build 9032 ausgeführt. Aktualisieren Sie Ihre Marketing-Instanz nicht auf den Build 9035, da er nicht mit Build 9032 kompatibel ist.
 
 _3. Oktober 2019_
 
-**Verbesserungen**
+**Neuheiten**
 
-* Es wurde ein Problem bei der Verwendung des CRM Connector für Salesforce behoben. (NEO-17712)
-* Es wurde ein Indexproblem behoben, das beim Senden von Transaktionsnachrichten Leistungsprobleme verursachte.
-* Ein Leistungsproblem beim Senden von Nachrichten wurde behoben. (NEO-17558)
+* Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
+* Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
+* Fehlerkorrektur – Beim Senden von Nachrichten treten keine Leistungsprobleme mehr auf. (NEO-17558)
 * Es wurde ein Fehler behoben, der dazu führte, dass bestimmte Nachrichten nicht vom Mid-Sourcing-Server verarbeitet wurden. (NEO-12395)
-* Es wurde ein Problem behoben, das die vollständige Nutzung der SQL Data Management-Aktivität verhinderte (die &quot;SQL Data Management&quot;-Berechtigung fehlte).
+* Fehlerkorrektur – Die SQL-Data-Management-Aktivität lässt sich jetzt voll nutzen (es fehlte die spezifische „SQL-Data-Management“-Berechtigung).
 
-## ![](assets/orange_2.png) Version 19.1.5 - Build 9033{#release-19-1-5-build-9033}
+## ![](assets/orange_2.png) Version 19.1.5 – Build 9033{#release-19-1-5-build-9033}
 
 _13. August 2019_
 
-**Verbesserungen**
+**Neuheiten**
 
-* Es wurde ein Problem mit der SQL-Anweisung &#39;SELECT COUNT&#39; behoben, die bei der Datenextraktion in der Datenverwaltungsaktivität in der Standarddatenbank und nicht in der FDA-Datenbank ausgeführt wurde.
-* Um die Funktionen der Kundeninfrastruktur zu verbessern, ist jetzt eine SFTP-Proxydeklaration in der Serverkonfigurationsdatei verfügbar.
+* Fehlerkorrektur – Bei der SQL-Anweisung &#39;SELECT COUNT&#39; wird in der Data-Management-Aktivität nicht mehr die Standard-Datenbank, sondern die FDA-Datenbank zur Extraktion herangezogen.
+* Um die Möglichkeiten der Kundeninfrastruktur zu verbessern, ist jetzt eine SFTP-Proxy-Deklaration in der Server-Konfigurationsdatei verfügbar.
 * Fehlerkorrektur – Jetzt stürzt die Clientkonsole nicht mehr ab, wenn eine unbenannte verknüpfte Tabelle in der Workflow-Aktivität &quot;Daten Laden (RDBMS)&quot; hinzugefügt wird. (NEO-12213)
 * Fehlerkorrektur – Jetzt kann die midEmetter-Package-Installation über eine Befehlszeile fehlerfrei installiert werden.
 * Eine neue Authentifizierungsoption wurde hinzugefügt, die in AC Connector in Verbindung mit Microsoft Dynamics OAuth-Zugangsdaten unterstützt. (NEO-11982)
-* Das Problem mit UUID (Unique Universal Identifier) wurde behoben, sodass die Anreicherungsaktivität mit Hive FDA fehlschlug.
+* Fehlerkorrektur – Die Anreicherungsaktivität funktioniert jetzt bei Hive FDA mit der UUID (Unique Universal Identifier).
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5. **März 2020**: neuer Build (9032-...205c981c3), der die folgende Fehlerbehebung enthält:
+![](assets/green_2.png) 3. **April 2020**: Neubau (9032-...e8b36257e), die die folgende Fehlerbehebung enthält:
 
-* Es wurde ein Problem mit externen Konten mit FTP über SSL behoben. (NEO-20498)
+* Wir führen einen Signaturmechanismus zur Verfolgung von Links in E-Mails ein, um eine potenzielle böswillige Verwendung (Phishing) zu verhindern. Dies schützt vor dem Umschreiben von Verfolgungsparametern, die eine URL enthalten können, mit der der Benutzer umgeleitet wird. Dieser Mechanismus ist derzeit standardmäßig deaktiviert. Wenden Sie sich an die Kundenunterstützung, wenn Sie sie aktivieren müssen.
+
+* Es wurde ein zusätzlicher Sicherheitsschutz hinzugefügt, um zu verhindern, dass fehlerhafte URLs, die von vorherigen Builds generiert wurden, umgeleitet werden oder wenn der Signaturmechanismus deaktiviert ist. Wenden Sie sich an den Kundendienst, wenn Sie ihn benötigen.
+
+![](assets/orange_2.png) 5. **März 2020**: neuer Build (9032-...205c981c3), der die folgende Fehlerbehebung enthält:
+
+* Es wurde ein Problem mit Externen Konti behoben, die FTP über SSL verwenden. (NEO-20498)
 
 ![](assets/orange_2.png) 17. **Dezember 2019**: neuer Build (9032-...9d34fb17e), der die folgende Fehlerbehebung enthält:
 
-* Es wurde ein Verfolgungsfehler in den folgenden Kommunikationskanälen behoben: mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter).
+* Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter).
 (NEO-19595)
 
 ![](assets/orange_2.png) 11. **Dezember 2019**: Neubau (9032-...e28b428b7), die die folgende Fehlerbehebung enthält:
 
-* Ein Leistungsproblem beim Senden von Nachrichten mit einer MSSQL-Datenbank wurde behoben. (NEO-17558)
+* Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
 
 ![](assets/orange_2.png) 20. **November 2019**: new build (9032-...3468c7bb5), das die folgenden Fehlerbehebungen enthält:
 
-* Es wurde ein Problem bei der Anmeldung über die IMS-Authentifizierung behoben. (NEO-17312)
-* Es wurde ein Problem behoben, das bei der Anzeige kumulativer Berichte für mehrere Auslieferungen auftrat. (NEO-18165)
-* Es wurde ein Problem behoben, durch das der Webserver blockiert oder gestürzt werden konnte.
+* Fehlerkorrektur – Die Anmeldung per IMS-Authentifizierung funktioniert nun. (NEO-17312)
+* Fehlerkorrektur – Kumulative Berichte zu mehreren Sendungen werden nun richtig angezeigt. (NEO-18165)
+* Fehlerkorrektur – Der Webserver wird nicht mehr blockiert oder zum Absturz gebracht.
 
 ![](assets/orange_2.png) 19. **September 2019**: Neubau (9032-...cee805c93), die die folgenden Fehlerbehebungen enthält:
 
-* Es wurde ein Problem bei der Verwendung des CRM Connector für Salesforce behoben. (NEO-17712)
-* Es wurde ein Indexproblem behoben, das beim Senden von Transaktionsnachrichten Leistungsprobleme verursachte.
+* Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
+* Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
 
-![](assets/orange_2.png) 13. **August 2019**: initiale Version 19.1.4, die die folgenden Fehlerbehebungen enthält:
+![](assets/orange_2.png) **13. August 2019**: erster Build 19.1.4, der folgende Fehlerkorrekturen enthält:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
 * Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
@@ -106,7 +112,7 @@ _13. August 2019_
 * Fehlerkorrektur – Der DKIM-Schlüssel wird jetzt in E-Mails eingebettet, sodass der Versand fehlerfrei funktioniert. (NEO-16804)
 * Fehlerkorrektur – Die Workflow-Planung funktioniert jetzt wieder einwandfrei, sodass Workflows entsprechend ihrer Konfiguration ausgeführt werden. (NEO-16619, NEO-16426)
 
-## ![](assets/orange_2.png) Version 19.1.2 - Build 9029{#release-19-1-2-build-9029}
+## ![](assets/orange_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
 
 _21. Juni 2019_
 
@@ -114,15 +120,15 @@ _21. Juni 2019_
 
 * Zur Verbesserung der Sicherheit wurde die Java-Bibliothek (Netty) auf die neueste Version (4.1.34) aktualisiert. (NEO-12788)
 
-**Verbesserungen**
+**Neuheiten**
 
 * Korrektur der mit der Sdomain-Spaltenverwaltung zusammenhängenden Regression – E-Mails können jetzt bei allen Konfigurationen gesendet werden.
 * Zur Leistungssteigerung wurde das Attribut _operation=&quot;none&quot; zu rtEvent-SOAP-Aufrufen hinzugefügt, um die Anfragen &quot;UPDATE AUSWÄHLEN&quot; zu vermeiden.
-* Korrektur eines Workflow-Anzeigefehlers bei ausgehenden Übergängen nach der Testaktivität. (NEO-12727)
+* Behebung eines Workflow-Anzeigeproblems bei ausgehenden Transitionen nach der Testaktivität. (NEO-12727)
 * Jetzt können in Microsoft Dynamics erstellte Platzhaltereinträge während des Import-Workflows gelöscht werden.
 * Erweiterte Berechtigungen zur Ausführung des Sicherheitszonen-Package bei der Verwendung eines internen Kontos.
 
-## ![](assets/orange_2.png) Version 19.1 - Build 9026{#release-19-1-build-9026}
+## ![](assets/orange_2.png) Version 19.1 – Build 9026{#release-19-1-build-9026}
 
 _30. Mai 2019_
 
@@ -138,10 +144,10 @@ _30. Mai 2019_
  <tbody> 
   <tr> 
    <td> Control Panel<br /> </td> 
-   <td> <p>Um Ihre Arbeit als Admin-Benutzer effizienter zu gestalten, haben Sie die Möglichkeit, die Einstellungen Ihrer SFTP-Server zu verwalten. So können Sie den Speicher überwachen, IP-Adressen auf die Whitelist setzen und SSH-Schlüssel für jede Instanz installieren. Das Control Panel ist ab heute nur noch für Kunden verfügbar ist, die auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich noch heute über Experience Cloud an</a>).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf die Systemsteuerung ist keine Aktualisierung auf den neuesten Kampagnenerstellung erforderlich.</p> </td> 
+   <td> <p>Um Ihre Arbeit als Admin-Benutzer effizienter zu gestalten, haben Sie die Möglichkeit, die Einstellungen Ihrer SFTP-Server zu verwalten. So können Sie den Speicher überwachen, IP-Adressen auf die Whitelist setzen und SSH-Schlüssel für jede Instanz installieren. Das Control Panel ist ab heute nur noch für Kunden verfügbar ist, die auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich noch heute über Experience Cloud an</a>).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf das Control Panel ist keine Aktualisierung auf den neuesten Campaign-Build nötig.</p> </td> 
   </tr> 
     <tr> 
-   <td> Audit trail<br /> </td> 
+   <td> Audit-Protokoll<br /> </td> 
    <td> <p>Als Administrator können Sie die Produktivität steigern, indem Sie Änderungen in der Adobe Campaign Classic-Instanz überwachen und verwalten. Im Audit-Protokoll werden die Aktionen protokolliert, die in Quellschemata, Workflows und Optionen durchgeführt wurden. Damit können Sie schnell erkennen, ob ein Element angelegt, geändert oder gelöscht wurde.</p><p>Weiterführende Informationen finden Sie im <a href="../../production/using/audit-trail.md">entsprechenden Handbuch</a> und im <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/monitoring/audit-trail.html">Anleitungsvideo</a>.</p></td> 
   </tr> 
   <tr> 
@@ -164,7 +170,7 @@ _30. Mai 2019_
 
 **Verbesserungen bei der Sicherheit**
 
-* Aus Sicherheitsgründen können Sie keine beliebigen Befehle mehr einfügen, wenn Sie die **[!UICONTROL Pre-process the file]** Option in einer **[!UICONTROL Data loading (file)]** Workflow-Aktivität verwenden. Es steht jetzt eine Dropdownliste zur Verfügung, in der Sie aus drei Optionen auswählen können: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) oder **[!UICONTROL Decrypt]** (gpg). Das Sicherheitskennzeichen XtkSecurity_Disable_Preproc wurde hinzugefügt. Für neue Kunden wird diese Option auf 0 gesetzt. Bei bestehenden Kunden wird diese Option bis zum Upgrade auf 1 gesetzt, um das vorherige Verhalten zu erhalten. Siehe diesen [Abschnitt](../../workflow/using/data-loading--file-.md).
+* Aus Sicherheitsgründen können Sie keine beliebigen Befehle mehr einfügen, wenn Sie die **[!UICONTROL Pre-process the file]** Option in einer **[!UICONTROL Data loading (file)]** Workflow-Aktivität verwenden. Es steht jetzt eine Dropdown-Liste zur Verfügung, mit der Sie aus drei Optionen auswählen können: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) oder **[!UICONTROL Decrypt]** (gpg). Das Sicherheitskennzeichen XtkSecurity_Disable_Preproc wurde hinzugefügt. Für neue Kunden wird diese Option auf 0 gesetzt. Bei bestehenden Kunden wird diese Option bis zum Upgrade auf 1 gesetzt, um das vorherige Verhalten zu erhalten. Siehe diesen [Abschnitt](../../workflow/using/data-loading--file-.md).
 * Es wurde ein Problem mit der Sichtbarkeit des Passworts behoben, das auftrat, wenn beim Testen der Verbindung eines externen FDA-Kontos keine Zeitzone festgelegt war.
 * Die PDFBox-Bibliothek wurde entfernt.
 * Tomcat wurde auf Version 7.0.93 aktualisiert.
@@ -176,13 +182,13 @@ _30. Mai 2019_
 * Der gleiche allgemeine Fehler wird nun bei fehlgeschlagenen Anmeldeversuchen mit einem gültigen oder ungültigen Benutzernamen angezeigt.
 * Die Benennung von hochgeladenen Dateien wurde verbessert.
 * Die neue Option XtkSecurity_Disable_GetSetEnv wurde hinzugefügt, um die Verwendung der Funktionen setEnv und getEnv zu blockieren.
-* Sensible Informationen werden jetzt im Anwendungsstapelablauf ausgeblendet.
+* Sensible Informationen werden jetzt im Stack Trace der Anwendung verborgen.
 
 **Verbesserungen bei Schutzmechanismen, Stabilität und Skalierbarkeit**
 
 * Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA über HTTP v2: Das FDA über HTTP-Protokoll wird häufig bei hybriden Implementierungen verwendet, insbesondere für den Abruf von Broadlogs und die Sendungsvorbereitung. Die Stabilität wurde verbessert, um Netzwerkprobleme und mögliche Fehler beim Abrufen oder Senden von Daten zu vermeiden. Dies setzt voraus, dass die Builds an beiden Enden der Verbindung auf dem neuesten Stand sind, da ansonsten das alte Protokoll weiterhin verwendet wird.
-* Tracking-Workflow: Die Stabilität des Tracking-Workflows wurde verbessert. Mehrere Probleme im Zusammenhang mit Trackinglog-Einfügungen/-Aktualisierungen und der individuellen URL-Tracking-Anpassung wurden behoben. Darüber hinaus erkennt der Tracking-Arbeitsablauf jetzt Verfolgungsprotokoll-Probleme, die zu Fehlern führen könnten, und stoppt den Workflow. Diese Probleme werden jetzt verworfen und nicht verarbeitet.
+* Tracking-Workflow: Die Stabilität des Tracking-Workflows wurde verbessert. Mehrere Probleme im Zusammenhang mit Trackinglog-Einfügungen/-Aktualisierungen und der individuellen URL-Tracking-Anpassung wurden behoben. Darüber hinaus erkennt der Tracking-Workflow jetzt Trackinglog-Probleme, die zu Fehlern führen könnten, und stoppt den Workflow. Diese Probleme werden jetzt verworfen und nicht mehr verarbeitet.
 * Bereinigungs-Workflow: Der Bereinigungs-Workflow wurde verbessert, um mögliche Fehler und Unterbrechungen zu vermeiden. Dadurch wird auch die Größe und Leistungsfähigkeit der Datenbank optimiert.
 * In Transaktionsnachrichten eingebettete Bilder: Jetzt werden in Transaktionsnachrichten eingebettete Bilder vollständig unterstützt, um mögliche Abstürze oder das Fehlen von Bildern zu vermeiden.
 * Datenbankgröße – XtkJobLog: Dieser Tabelle wurde ein Bereinigungsmechanismus hinzugefügt, der sich positiv auf die Datenbankgröße auswirkt.
