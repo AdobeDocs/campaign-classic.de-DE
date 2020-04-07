@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
+source-git-commit: 6143f23e05f4528a9d76aece3a6e41165e2f95d4
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 17eed4f4ead8ce4f424d4fb2681269e888229692
 
 Damit ein Benutzer über FDA Aktionen in einer Datenbank ausführen kann, muss er über eine entsprechende Berechtigung in Adobe Campaign verfügen.
 
-1. Wählen Sie den **[!UICONTROL Administration > Access Management > Named Rights]** Knoten im Adobe Campaign-Explorer aus.
+1. Wählen Sie die **[!UICONTROL Administration > Access Management > Named Rights]** Node im Adobe Campaign Explorer aus.
 1. Erstellen Sie eine neue Berechtigung, indem Sie einen Titel eingeben.
 1. Das Feld **[!UICONTROL Name]** muss das Format **user:base@server** aufweisen, wobei:
 
@@ -46,7 +46,7 @@ Generell sind die folgenden Berechtigungen erforderlich:
 * **READ Data**: Nur Lesezugriff auf Tabellen, die Kundendaten enthalten,
 * **READ &#39;MetaData&#39;**: Zugriff auf Serverdatenkataloge zum Abruf der Tabellenstruktur,
 * **LOAD**: Ladevorgänge für große Datenmengen in Arbeitstabellen (erforderlich bei der Arbeit an Kollektionen und Joins),
-* **CREATE/DROP** für **TABLE/INDEX/PROCEDURE/FUNCTION**,
+* **CREATE/DROP** for **TABLE/INDEX/PROCEDURE/FUNCTION** (nur für von Adobe Campaign generierte Tabellen),
 * **EXPLAIN** (empfohlen): für die Leistungsüberwachung im Fall von Problemen,
 * **WRITE Data** (abhängig vom Integrationsszenario).
 
@@ -56,11 +56,11 @@ Der Datenbankadministrator muss sicherstellen, dass diese Rechte mit den für di
 
 |   | Snowflake | Redshift | Oracle | SQLServer | PostgreSQL | MySQL |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Verbindung zur Remote-Datenbank herstellen** | VERWENDUNG IN WAREHOUSE und VERWENDUNG IN DATENBANKRECHTEN | Erstellen eines mit dem AWS-Konto verknüpften Benutzers | Berechtigung &quot;SITZUNG ERSTELLEN&quot; | CONNECT-Berechtigung | CONNECT-Berechtigung | Erstellen eines Benutzers, der mit einem Remote-Host verbunden ist, der ALLE BERECHTIGUNGEN hat |
+| **Verbindung zur Remote-Datenbank herstellen** | VERWENDUNG IN WAREHOUSE, NUTZUNG AUF DATENBANK UND VERWENDUNG AUF SCHEMA | Erstellen eines mit dem AWS-Konto verknüpften Benutzers | Berechtigung &quot;SITZUNG ERSTELLEN&quot; | CONNECT-Berechtigung | CONNECT-Berechtigung | Erstellen eines Benutzers, der mit einem Remote-Host verbunden ist, der ALLE BERECHTIGUNGEN hat |
 | **Erstellen von Tabellen** | CREATE TABLE ON SCHEMA - Berechtigung | Berechtigung ERSTELLEN | Berechtigung &quot;CREATE TABLE&quot; | Berechtigung &quot;TABELLEN ERSTELLEN&quot; | Berechtigung ERSTELLEN | Berechtigung ERSTELLEN |
 | **Erstellen von Indizes** | K. A. | Berechtigung ERSTELLEN | INDEX- oder ERSTELLUNGSBEDINGUNGEN FÜR INDEX | ALTER-Berechtigung | Berechtigung ERSTELLEN | INDEX-Berechtigung |
 | **Erstellen von Funktionen** | FUNKTION FÜR SCHEMA ERSTELLEN | USAGE ON LANGUAGE plpythonu Privileg, um externe Python Skripte aufrufen zu können | VERFAHREN ERSTELLEN oder EINE BELIEBIGE VERFAHRENSberechtigung ERSTELLEN | Berechtigung &quot;FUNKTION ERSTELLEN&quot; | USAGE-Berechtigung | ROUTINE-Berechtigung ERSTELLEN |
-| **Verfahren erstellen** | VERFAHREN FÜR SCHEMA ERSTELLEN | USAGE ON LANGUAGE plpythonu Privileg, um externe Python Skripte aufrufen zu können | VERFAHREN ERSTELLEN oder EINE BELIEBIGE VERFAHRENSberechtigung ERSTELLEN | Berechtigung &quot;VERFAHREN ERSTELLEN&quot; | USAGE-Berechtigung (Verfahren sind Funktionen) | ROUTINE-Berechtigung ERSTELLEN |
+| **Verfahren erstellen** | K. A. | USAGE ON LANGUAGE plpythonu Privileg, um externe Python Skripte aufrufen zu können | VERFAHREN ERSTELLEN oder EINE BELIEBIGE VERFAHRENSberechtigung ERSTELLEN | Berechtigung &quot;VERFAHREN ERSTELLEN&quot; | USAGE-Berechtigung (Verfahren sind Funktionen) | ROUTINE-Berechtigung ERSTELLEN |
 | **Objekte entfernen (Tabellen, Indizes, Funktionen, Verfahren)** | Eigentümer des Objekts | Eigentümer des Objekts oder Superuser | ALLE &lt; Objekt > Berechtigung ABLAUFEN | ALTER-Berechtigung | Tabelle: Besitz des Tabellenindex: Inhaber der Indexfunktion: Eigentümer der Funktion | DROP-Berechtigung |
 | **Überwachen von Hinrichtungen** | MONITOR-Berechtigung für das erforderliche Objekt | Keine Berechtigung erforderlich, um den Befehl EXPLAIN zu verwenden | INSERT- und SELECT-Berechtigung und erforderliche Berechtigung, um die Anweisung auszuführen, auf der der EXPLAIN-PLAN basiert | SHOWPLAN-Berechtigung | Für die Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | SELECT-Berechtigung |
 | **Daten schreiben** | INSERT- und/oder UPDATE-Berechtigungen (je nach Schreibvorgang) | INSERT- und UPDATE-Berechtigungen | EINFÜGEN und AKTUALISIEREN oder EINFÜGEN UND AKTUALISIEREN VON BELIEBIGEN TABELLENberechtigungen | INSERT- und UPDATE-Berechtigungen | INSERT- und UPDATE-Berechtigungen | INSERT- und UPDATE-Berechtigungen |
