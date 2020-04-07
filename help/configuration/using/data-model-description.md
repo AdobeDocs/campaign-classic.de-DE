@@ -1,6 +1,6 @@
 ---
 title: Beschreibung des Adobe Campaign Classic-Datenmodells
-description: In diesem Dokument wird das Adobe Campaign Classic-Datenmodell beschrieben.
+description: In diesem Dokument wird das Datenmodell von Adobe Campaign Classic beschrieben.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 707e16e9e493e175c70af606bf4568a9127cedb2
+source-git-commit: 4406e11e33e14136ea43fc3cc5a92e0d1c466100
 
 ---
 
@@ -32,7 +32,7 @@ Um die Tabellenbeschreibung aufzurufen, wählen Sie in der Liste eine Ressource 
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 
-Adobe Campaign nutzt eine relationale Datenbank, die Tabellen enthält, die miteinander verknüpft sind.
+Adobe Campaign setzt auf eine relationale Datenbank, die Tabellen enthält, die miteinander verknüpft sind.
 
 Das folgende Diagramm zeigt die Verbindungen zwischen den wichtigsten Geschäftstabellen des Adobe Campaign-Datenmodells mit den jeweiligen Hauptfeldern.
 
@@ -40,7 +40,7 @@ Das folgende Diagramm zeigt die Verbindungen zwischen den wichtigsten Geschäfts
 
 ![](assets/data-model_simplified-diagram.png)
 
-Das vordefinierte Adobe Campaign-Datenmodell enthält die unten aufgeführten Haupttabellen.
+Das vordefinierte Adobe Campaign-Datenmodell umfasst die unten aufgeführten Haupttabellen.
 
 ### NmsRecipient {#NmsRecipient}
 
@@ -73,6 +73,8 @@ Die Beziehungstabelle NmsRcpGrpRel enthält nur die beiden Felder, die den Bezei
 ### NmsService {#NmsService}
 
 Diese Tabelle entspricht dem Schema **nms:service** .
+
+In Adobe Campaign können Sie Abonnement für Informationsdienst (Themen) erstellen und verwalten. Die NmsService-Tabelle speichert die Definition der Informationsdienst (Themen), die Sie Ihren Empfängern zum Abonnieren Angebot geben (z. B. einen Newsletter).
 
 Dienste sind Einrichtungen, die Gruppen ähnlich sind (statische Empfänger), mit der Ausnahme, dass sie mehr Informationen verbreiten und eine einfache Verwaltung von Abonnements und Abmeldungen über Formulare ermöglichen.
 
