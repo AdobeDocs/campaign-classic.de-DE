@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Tabelle Adobe Campaign Classic Empfänger
+title: Verwenden der Tabelle "Adobe Campaign Classic Empfänger"
 description: Erfahren Sie, wie Sie beim Entwerfen Ihres Datenmodells die vordefinierte Empfänger-Tabelle in Adobe Campaign Classic verwenden.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
+source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: 239272386b709f81d1e6898a68b9b3552ddeb9b7
 
 In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adobe Campaign-Datenmodells erläutert.
 
-Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie im Abschnitt [Kampagnen-Classic-Datenmodell](../../configuration/using/about-data-model.md) .
+Weitere Informationen zu integrierten Tabellen und deren Interaktion mit Kampagnen finden Sie im Abschnitt zum [Campaign Classic-Datenmodell](../../configuration/using/about-data-model.md) .
 
 Lesen Sie diese [Dokumentation](../../configuration/using/about-schema-reference.md) , um mit Kampagne-Schemas zu beginnen. Erfahren Sie, wie Sie Erweiterungsschema konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank in diesem [Dokument](../../configuration/using/about-schema-edition.md)zu erweitern.
 
@@ -30,7 +30,7 @@ Lesen Sie diese [Dokumentation](../../configuration/using/about-schema-reference
 
 Das Adobe Campaign-System ist äußerst flexibel und kann über die ursprüngliche Implementierung hinaus erweitert werden. Obwohl die Möglichkeiten unbegrenzt sind, ist es wichtig, die richtigen Entscheidungen zu treffen und eine solide Grundlage zu schaffen, um mit der Entwicklung Ihres Datenmodells zu beginnen.
 
-Dieses Dokument enthält häufige Anwendungsfälle und Best Practices, um zu erfahren, wie Sie Ihr Adobe Campaign-Tool ordnungsgemäß erstellen.
+Dieses Dokument enthält gängige Anwendungsfälle und Best Practices, um zu erfahren, wie Sie Ihr Adobe Campaign-Tool richtig erstellen.
 
 ## Architektur von Datenmodellen {#data-model-architecture}
 
@@ -58,9 +58,9 @@ Welche Daten sollten an Adobe Campaign gesendet werden? Es ist äußerst wichtig
 
 >[!NOTE]
 >
->Adobe Campaign ist weder ein Data Warehouse noch ein Berichte-Tool. Daher sollten Sie nicht versuchen, alle möglichen Kunden und die zugehörigen Informationen in Adobe Campaign zu importieren, oder Daten importieren, die nur zum Erstellen von Berichten verwendet werden.
+>Adobe Campaign ist weder ein Data Warehouse noch ein Berichte-Tool. Versuchen Sie daher nicht, alle möglichen Kunden und die zugehörigen Informationen in Adobe Campaign zu importieren oder Daten zu importieren, die nur zum Erstellen von Berichten verwendet werden.
 
-Wenn Sie entscheiden möchten, ob ein Attribut in Adobe Campaign erforderlich ist oder nicht, fragen Sie sich, ob es unter eine der folgenden Kategorien fällt:
+Wenn Sie entscheiden möchten, ob ein Attribut im Adobe Campaign benötigt wird oder nicht, fragen Sie sich, ob es unter eine dieser Kategorien fällt:
 
 * Für die **Segmentierung** verwendetes Attribut
 * Für **Datenverwaltungsprozesse** verwendetes Attribut (z. B. Aggregatberechnung)
@@ -76,7 +76,7 @@ Um eine gute Architektur und Systemleistung sicherzustellen, befolgen Sie die fo
 * Mit dem **Attribut &quot;expr** &quot;können Sie ein Schema-Attribut als berechnetes Feld und nicht als physikalischen Tabellensatzwert definieren. Dadurch können Informationen in einem anderen Format (z. B. Alter und Geburtsdatum) aufgerufen werden, ohne dass beide Werte gespeichert werden müssen. Dies ist eine gute Möglichkeit, Felder nicht zu duplizieren. Die Tabelle &quot;Empfänger&quot;verwendet beispielsweise einen Ausdruck für die Domäne, der bereits im E-Mail-Feld vorhanden ist.
 * Wenn die Berechnung des Ausdrucks jedoch komplex ist, wird nicht empfohlen, das **Attribut &quot;expr** &quot;zu verwenden, da die Berechnung im Handumdrehen die Leistung Ihrer Abfragen beeinträchtigen kann.
 * Der **XML** -Typ ist eine gute Möglichkeit, zu viele Felder zu vermeiden. Es nimmt aber auch Speicherplatz auf der Festplatte auf, da es eine CLOB-Spalte in der Datenbank verwendet. Es kann auch zu komplexen SQL-Abfragen führen und die Leistung beeinträchtigen.
-* The length for a **string** field should always be defined with the column. Standardmäßig beträgt die maximale Länge in Adobe Campaign 255, Adobe empfiehlt jedoch, das Feld zu kürzen, wenn Sie bereits wissen, dass die Größe eine kürzere Länge nicht überschreitet.
+* The length for a **string** field should always be defined with the column. Standardmäßig beträgt die maximale Feldlänge 255. Adobe empfiehlt jedoch, das Adobe Campaign kürzer zu halten, wenn Sie bereits wissen, dass die Feldlänge kürzer ist.
 * Es ist akzeptabel, dass ein Feld in Adobe Campaign kürzer ist als im Quellsystem, wenn Sie sicher sind, dass die Länge im Quellsystem zu groß ist und nicht benötigt wird. Dies könnte eine kürzere Zeichenfolge oder kleinere Ganzzahl in Adobe Campaign bedeuten.
 
 ### Feldauswahl {#choice-of-fields}
@@ -97,7 +97,7 @@ Für die SQLServer-Datenbank können Sie die Verwendung eines &quot;Clusterindex
 
 Mit dem Attribut tablespace im Schema können Sie einen eigenen Tablespace für eine Tabelle angeben.
 
-Mit dem Installationsassistenten können Sie Objekte nach Typ (Daten, temporäre Daten und Index) speichern.
+Mit dem Installationsassistenten können Sie Objekte nach Typ (Daten, temporär und Index) speichern.
 
 Dedizierte Tablespaces eignen sich besser für Partitionierung, Sicherheitsregeln und ermöglichen eine reibungslose und flexible Verwaltung, bessere Optimierung und Leistung.
 
@@ -109,7 +109,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 
 | Kennung | Beschreibung | Best Practices |
 |--- |--- |--- |
-| Kennung | <ul><li>Die ID ist der physische primäre Schlüssel einer Adobe Campaign-Tabelle. Bei vordefinierten Tabellen handelt es sich um eine generierte 32-Bit-Zahl aus einer Sequenz</li><li>Diese Kennung ist in der Regel für eine bestimmte Adobe Campaign-Instanz eindeutig. </li><li>Eine automatisch generierte ID kann in einer Schema-Definition sichtbar sein. Suchen Sie das *Attribut autopk=&quot;true&quot;* .</li></ul> | <ul><li>Automatisch generierte IDs sollten nicht als Referenz in einem Workflow oder in einer Paketdefinition verwendet werden.</li><li>Es sollte nicht angenommen werden, dass die ID immer eine steigende Zahl ist.</li><li>Die ID in einer vordefinierten Tabelle ist eine 32-Bit-Zahl und dieser Typ sollte nicht geändert werden. Diese Zahl stammt aus einer Sequenz, die im Abschnitt mit demselben Namen behandelt wird.</li></ul> |
+| Kennung | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei vordefinierten Tabellen handelt es sich um eine generierte 32-Bit-Zahl aus einer Sequenz</li><li>Diese Kennung ist in der Regel für eine bestimmte Adobe Campaign-Instanz eindeutig. </li><li>Eine automatisch generierte ID kann in einer Schema-Definition sichtbar sein. Suchen Sie das *Attribut autopk=&quot;true&quot;* .</li></ul> | <ul><li>Automatisch generierte IDs sollten nicht als Referenz in einem Workflow oder in einer Paketdefinition verwendet werden.</li><li>Es sollte nicht angenommen werden, dass die ID immer eine steigende Zahl ist.</li><li>Die ID in einer vordefinierten Tabelle ist eine 32-Bit-Zahl und dieser Typ sollte nicht geändert werden. Diese Zahl stammt aus einer Sequenz, die im Abschnitt mit demselben Namen behandelt wird.</li></ul> |
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Dieser Wert kann manuell aktualisiert werden, üblicherweise mit einem generierten Namen.</li><li>Dieser Bezeichner behält seinen Wert bei, wenn er in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und sollte nicht leer sein.</li></ul> | <ul><li>Benennen Sie den von Adobe Campaign generierten Datensatznamen um, wenn das Objekt von einer Umgebung in eine andere bereitgestellt werden soll.</li><li>Wenn ein Objekt über ein Namensraum-Attribut verfügt (z. B.*Schema* ), wird dieser allgemeine Namensraum für alle erstellten benutzerdefinierten Objekte verwendet. Einige reservierte Namensraum sollten nicht verwendet werden: *nms*, *xtk*.</li><li>Wenn ein Objekt keinen Namensraum hat (z. B.*Workflow* oder *Versand* ), wird dieser Namensraum als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot; &quot;, Doppelpunkt &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
@@ -119,7 +119,7 @@ Für jede in Adobe Campaign erstellte Tabelle sind Primärschlüssel erforderlic
 
 Die meisten Organisationen importieren Datensätze aus externen Systemen. Während der physische Schlüssel der Empfänger-Tabelle das Attribut &quot;id&quot;ist, kann zusätzlich ein benutzerdefinierter Schlüssel festgelegt werden.
 
-Dieser benutzerdefinierte Schlüssel ist der eigentliche primäre Datensatzschlüssel im externen System, das Adobe Campaign unterstützt.
+Dieser benutzerdefinierte Schlüssel ist der eigentliche Hauptschlüssel für den Datensatz im externen Adobe Campaign zur Systemzufuhr.
 
 Wenn eine vordefinierte Tabelle sowohl einen automatischen als auch einen internen Schlüssel enthält, wird der interne Schlüssel als eindeutiger Index in der physischen Datenbanktabelle festgelegt.
 
@@ -133,24 +133,28 @@ Beim Erstellen einer benutzerdefinierten Tabelle stehen Ihnen zwei Optionen zur 
 
 ## Sequenzen {#sequences}
 
-Der primäre Adobe Campaign-Schlüssel ist eine automatisch generierte ID für alle vordefinierten Tabellen und kann für benutzerdefinierte Tabellen identisch sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#identifiers).
+Der primäre Adobe Campaign ist eine automatisch generierte ID für alle vordefinierten Tabellen und kann für benutzerdefinierte Tabellen identisch sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#identifiers).
 
 Dieser Wert stammt aus einer so genannten **Sequenz**, einem Datenbankobjekt, das zum Generieren einer Zahlensequenz verwendet wird.
 
 Es gibt zwei Arten von Sequenzen:
-* **Freigegeben**: mehr als eine Tabelle würde ihre ID aus derselben Sequenz auswählen. Das bedeutet, dass keine andere Tabelle, die dieselbe Sequenz verwendet, einen Datensatz mit der ID &quot;X&quot;hat, wenn eine ID &quot;X&quot;von einer Tabelle verwendet wird. **XtkNewId** ist die in Adobe Campaign verfügbare standardmäßige freigegebene Sequenz.
+* **Freigegeben**: mehr als eine Tabelle würde ihre ID aus derselben Sequenz auswählen. Das bedeutet, dass keine andere Tabelle, die dieselbe Sequenz verwendet, einen Datensatz mit der ID &quot;X&quot;hat, wenn eine ID &quot;X&quot;von einer Tabelle verwendet wird. **XtkNewId** ist die standardmäßige freigegebene Sequenz, die in Adobe Campaign verfügbar ist.
 * **Zweckgebunden**: Nur eine Tabelle wählt ihre IDs aus der Sequenz. Der Sequenzname enthält normalerweise den Tabellennamen.
 
-Die Sequenz ist ein 32-Bit-Ganzzahlwert mit einer endlichen Höchstzahl verfügbarer Werte: 2,14 Mrd. Nach Erreichen des Maximalwerts wird die Sequenz auf 0 zurückgesetzt, um IDs zu recyceln. Wenn die alten Daten nicht bereinigt wurden, stellt dies eine Verletzung des eindeutigen Schlüssels dar, die zu einem Blocker für den Zustand und die Nutzung der Plattform wird. Adobe Campaign ist nicht in der Lage, Mitteilungen zu senden (wenn sich dies auf die Protokolltabelle des Versands auswirkt), und die Leistungen wären stark beeinträchtigt.
+>[!IMPORTANT]
+>
+>Die Sequenz ist ein 32-Bit-Ganzzahlwert mit einer endlichen Höchstzahl verfügbarer Werte: 2,14 Mrd. Nach Erreichen des Maximalwerts wird die Sequenz auf 0 zurückgesetzt, um IDs zu recyceln.
+>
+>Wenn die alten Daten nicht bereinigt wurden, stellt dies eine Verletzung des eindeutigen Schlüssels dar, die zu einem Blocker für den Zustand und die Nutzung der Plattform wird. Adobe Campaign wäre nicht in der Lage, Mitteilungen zu senden (wenn es sich auf die Versand-Protokolltabelle auswirkt), und die Leistungen wären stark beeinträchtigt.
 
 Daher würde einem Kunden, der jährlich 6 Milliarden E-Mails mit einer Retentionszeit von 180 Tagen für seine Protokolle sendet, innerhalb von 4 Monaten die ID ausgehen. Um eine solche Herausforderung zu vermeiden, stellen Sie sicher, dass die Bereinigungseinstellungen Ihren Volumes entsprechen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#data-retention).
 
-Wenn in Adobe Campaign eine benutzerdefinierte Tabelle mit einem Primärschlüssel als autoPK erstellt wird, sollte dieser Tabelle systematisch eine benutzerdefinierte, dedizierte Sequenz zugeordnet werden.
+Wenn eine benutzerdefinierte Tabelle in Adobe Campaign mit einem Primärschlüssel als autoPK erstellt wird, sollte dieser Tabelle systematisch eine benutzerdefinierte, dedizierte Sequenz zugeordnet werden.
 
 Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2.1BB. Technisch ist es möglich, eine komplette Reichweite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen übergegangen wird: Der Datensatz 0 wird normalerweise von Adobe Campaign Classic in generierten SQL-Abfragen ignoriert.
 
 **Verwandte Themen:**
-* Weitere Informationen zur Funktion zur automatischen **Sequenzgenerierung** finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
+* Weitere Informationen zur Funktion zur automatischen **Sequenzgenerierung** finden Sie in diesem [Dokument](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
 * Weitere Informationen zur Sequenzerschöpfung finden Sie in diesem [Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
@@ -203,7 +207,7 @@ Die folgende Tabelle zeigt, in welchen Fällen die drei unten beschriebenen Indi
 | Vorname gleich &quot;Johnny&quot;UND Nachname gleich &quot;Smith&quot; | Verwendet | Nicht verwendet | Nicht verwendet | Da beide Attribute in derselben Abfrage gesucht werden, wird nur der Index verwendet, der beide Attribute kombiniert. |
 | Nachname gleich &quot;Schmidt&quot; | Nicht verwendet | Nicht verwendet | Verwendet | Die Reihenfolge der Attribute im Index wird berücksichtigt. Wenn Sie diese Reihenfolge nicht einhalten, wird der Index möglicherweise nicht verwendet. |
 | Beginn mit Vorname und &quot;Joh&quot; | Verwendet | Verwendet | Nicht verwendet | &quot;Nach links suchen&quot;aktiviert Indizes. |
-| Vorname endet mit &quot;nny&quot; | Nicht verwendet | Nicht verwendet | Nicht verwendet | &quot;Rechtliche Suche&quot; deaktiviert Indizes und eine vollständige Überprüfung wird durchgeführt. Einige bestimmte Indextypen können diesen Anwendungsfall bearbeiten, sind jedoch in Adobe Campaign standardmäßig nicht verfügbar. |
+| Vorname endet mit &quot;nny&quot; | Nicht verwendet | Nicht verwendet | Nicht verwendet | &quot;Rechtliche Suche&quot; deaktiviert Indizes und eine vollständige Überprüfung wird durchgeführt. Einige bestimmte Indextypen können diesen Anwendungsfall bearbeiten, sind jedoch in Adobe Campaign nicht standardmäßig verfügbar. |
 | Vorname enthält &quot;John&quot; | Nicht verwendet | Nicht verwendet | Nicht verwendet | Dies ist eine Kombination aus &quot;links&quot;und &quot;rechts&quot;-Suchen. Aufgrund der letzteren werden Indizes deaktiviert und eine vollständige Überprüfung durchgeführt. |
 | Vorname gleich &quot;john&quot; | Nicht verwendet | Nicht verwendet | Nicht verwendet | Bei Indizes wird zwischen Groß- und Kleinschreibung unterschieden. Damit die Groß-/Kleinschreibung nicht berücksichtigt wird, sollten Sie einen bestimmten Index erstellen, der eine SQL-Funktion wie &quot;upper(firstname)&quot;enthält. Sie sollten dies auch bei anderen Datentransformationen tun, z. B. &quot;unaccent(firstname)&quot;. |
 
@@ -223,7 +227,7 @@ Benennen Sie den Link konsistent mit dem Tabellennamen: der Linkname sollte dabe
 
 Benennen Sie eine Relation nicht mit &quot;id&quot; als Suffix. Benennen Sie sie beispielsweise &quot;transaction&quot; anstelle von &quot;transactionId&quot;.
 
-Standardmäßig erstellt Adobe Campaign einen Link mit dem Primärschlüssel der externen Tabelle. Aus Gründen der Klarheit ist es besser, die Verknüpfung in der Linkdefinition explizit zu definieren.
+Standardmäßig erstellt Adobe Campaign eine Verknüpfung mit dem Primärschlüssel der externen Tabelle. Aus Gründen der Klarheit ist es besser, die Verknüpfung in der Linkdefinition explizit zu definieren.
 
 Den Attributen, die in einem Link verwendet werden, wird ein Index hinzugefügt.
 
@@ -243,9 +247,9 @@ Links, die einen externen Anschluss (1-0.1) ausführen, sollten mit Vorsicht ver
 
 ## Datenaufbewahrung - Bereinigung und Bereinigung {#data-retention}
 
-Adobe Campaign ist weder ein Data Warehouse noch ein Berichte-Tool. Um eine gute Leistung der Adobe Campaign-Lösung sicherzustellen, sollte daher das Datenbankwachstum unter Kontrolle bleiben. Um dies zu erreichen, kann die Befolgung einiger der unten aufgeführten Best Practices hilfreich sein.
+Adobe Campaign ist weder ein Data Warehouse noch ein Berichte-Tool. Um eine gute Performance der Adobe Campaign-Lösung zu gewährleisten, sollte daher das Datenbankwachstum unter Kontrolle bleiben. Um dies zu erreichen, kann die Befolgung einiger der unten aufgeführten Best Practices hilfreich sein.
 
-Adobe Campaign Versand und Trackinglogs haben standardmäßig eine Aufbewahrungsdauer von 180 Tagen. Ein Bereinigungsprozess wird ausgeführt, um alle älteren Protokolle zu entfernen.
+Standardmäßig haben Adobe Campaign-Versand und Trackinglogs eine Retentionsdauer von 180 Tagen. Ein Bereinigungsprozess wird ausgeführt, um alle älteren Protokolle zu entfernen.
 
 * Wenn Sie die Protokolle länger aufbewahren möchten, sollten Sie diese Entscheidung in Abhängigkeit von der Datenbankgröße und der Menge der gesendeten Nachrichten sorgfältig treffen. Zur Erinnerung: Die Adobe Campaign-Sequenz ist eine 32-Bit-Ganzzahl.
 * Es wird empfohlen, nicht mehr als 1 Milliarde Datensätze gleichzeitig in diesen Tabellen zu haben (etwa 50 % der 2,14 Milliarden verfügbaren IDs), um die Risiken des Verbrauchs aller verfügbaren IDs zu begrenzen. Dies erfordert, dass einige Kunden die Retentionsdauer unter 180 Tage senken.
@@ -283,7 +287,7 @@ Befolgen Sie die nachstehenden Best Practices, um eine bessere Leistung sicherzu
 
 ## Große Tabellen {#large-tables}
 
-Adobe Campaign basiert auf Datenbankmaschinen von Drittanbietern. Je nach Anbieter ist für die Leistungsoptimierung bei größeren Tabellen möglicherweise ein bestimmtes Design erforderlich.
+Adobe Campaign setzt auf Datenbankmaschinen von Drittanbietern. Je nach Anbieter ist für die Leistungsoptimierung bei größeren Tabellen möglicherweise ein bestimmtes Design erforderlich.
 
 Im Folgenden finden Sie einige gängige Best Practices, die beim Entwerfen Ihres Datenmodells mit großen Tabellen und komplexen Verbindungen befolgt werden sollten.
 
@@ -306,7 +310,7 @@ Unter PostgreSQL sollte eine Zeile nicht größer als 8 KB sein, um den [TOAST](
 
 Die Anzahl der Zeilen wirkt sich auch auf die Leistung aus. Die Adobe Campaign-Datenbank dient nicht zum Speichern von Verlaufsdaten, die nicht aktiv für Targeting- oder Personalisierungszwecke verwendet werden - dies ist eine operative Datenbank.
 
-Um Leistungsprobleme im Zusammenhang mit der hohen Zeilenanzahl zu vermeiden, sollten Sie nur die erforderlichen Datensätze in der Datenbank speichern. Alle anderen Datensätze sollten in ein Drittanbieter-Data Warehouse exportiert und aus der operativen Adobe Campaign-Datenbank entfernt werden.
+Um Leistungsprobleme im Zusammenhang mit der hohen Zeilenanzahl zu vermeiden, sollten Sie nur die erforderlichen Datensätze in der Datenbank speichern. Alle anderen Datensätze sollten in ein Drittanbieter-Data Warehouse exportiert und aus der Adobe Campaign-Betriebsdatenbank entfernt werden.
 
 Im Folgenden finden Sie einige Best Practices zur Größe von Tabellen:
 
