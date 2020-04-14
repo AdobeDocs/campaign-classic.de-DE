@@ -14,8 +14,8 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+translation-type: tm+mt
+source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 ---
 
@@ -29,9 +29,17 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 * Optimierte Sicherheitsrichtlinien für die Kennwortverwaltung;
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-Weiterführende Informationen zu den unterschiedlichen Adobe-Identitätstypen finden Sie hier: [https://helpx.adobe.com/de/enterprise/help/identity.html](https://helpx.adobe.com/de/enterprise/help/identity.html)
+Das Identitätsverwaltungssystem von Adobe hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weitere Informationen zu den verschiedenen Typen von Adobe-IDs finden Sie auf [dieser Seite](https://helpx.adobe.com/enterprise/using/identity.html).
 
 >[!CAUTION]
 >
->Die IMS-Implementierung ist ausschließlich dem technischen Adobe-Administrator vorbehalten. Dies ist ein komplexer Vorgang, der einige Zeit in Anspruch nehmen kann.
+>Die IMS-Implementierung ist ausschließlich technischen Administratoren von Adobe vorbehalten. Die IMS-Implementierung ist ein komplexer Prozess, der lange zu implementieren sein kann.
+
+## Verwandte Themen
+
+| Nützliche Seiten | Zusätzliche Ressourcen |
+|---|---|
+| [IMS konfigurieren](../../integrations/using/configuring-ims.md) | [Häufig gestellte Fragen zu Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
+| [IMS implementieren](../../integrations/using/implementing-ims.md) | [Zugriffsverwaltung](../../platform/using/access-management.md) |
+| [IMS-Fehlerbehebung](../../integrations/using/ims-troubleshooting.md) | [Installieren von Kampagnen-Paketen](../../installation/using/installing-campaign-standard-packages.md) |
 
