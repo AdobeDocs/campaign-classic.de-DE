@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: aa0eb7acfb5d3b622475544735aed37d6beea892
+source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
 
 ---
 
@@ -36,7 +36,7 @@ Folgende Etappen sind zur Umsetzung dieser Interaktion zu durchlaufen:
 
 ### Erstellung einer anonymen Umgebung {#creating-an-anonymous-environment}
 
-Follow the procedure detailed in [Creating an offer environment](../../interaction/using/live-design-environments.md#creating-an-offer-environment) to create your anonymous environment based on the **Visitors**&#39; dimensions.
+Gehen Sie wie im Abschnitt [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment) beschrieben vor, um eine anonyme, auf der **Besucher**-Dimension basierende Umgebung zu erstellen.
 
 Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
@@ -135,9 +135,9 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Konfiguration der Angebotsplatzierung auf der Webseite {#configure-the-web-offer-space-on-the-website}
 
-To make the offers you have just configured visible on the website, insert a JavaScript code into the HTML page of your site to call up the Interaction engine (for more on this, refer to [About inbound channels](../../interaction/using/about-inbound-channels.md)).
+Damit die zuvor erstellten Angebote auf der Web-Seite erscheinen können, fügen Sie einen JavaScript-Code in die HTML-Seite Ihrer Web-Präsenz ein, der die Abfrage des Angebotsmoduls auslöst (siehe [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md)).
 
-1. Go to the HTML page and insert an @id attribute with a value matching the internal name of the anonymous offer space created previously (refer to [Creating anonymous offer spaces](#creating-anonymous-offer-spaces)), preceded by **i_**.
+1. Fügen Sie in der HTML-Seite ein @id-Attribut ein, dessen Wert dem internen Namen der zuvor erstellten anonymen Platzierung entspricht (siehe [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)), mit einem vorangestellten **i_**.
 
    ![](assets/offer_inbound_anonymous_example_019.png)
 
@@ -145,7 +145,7 @@ To make the offers you have just configured visible on the website, insert a Jav
 
    ![](assets/offer_inbound_anonymous_example_020.png)
 
-   Die blauen URL-Felder oben entsprechen dem Instanznamen, dem internen Namen der Umgebung (siehe [Erstellen einer anonymen Umgebung](#creating-an-anonymous-environment)) und dem Thema, das mit der Kategorie verknüpft ist ([Erstellen einer Angebotskategorie und eines Designs](#creating-an-offer-category-and-a-theme)). Letzteres ist optional.
+   Die blauen URL-Felder oben entsprechen dem Instanznamen, dem internen Namen der Umgebung (siehe [Erstellung einer anonymen Umgebung](#creating-an-anonymous-environment)) und dem Thema, das mit der Kategorie verknüpft ist ([Erstellunge einer Angebotskategorie und eines Themas](#creating-an-offer-category-and-a-theme)). Das Thema ist optional.
 
 Wenn ein Besucher auf die Startseite der Webpräsenz zugreift, werden die Angebote des Themas **Finanzierungen** wie zuvor konfiguriert angezeigt.
 
@@ -199,7 +199,7 @@ Gehen Sie wie folgt vor:
 
 ### Erstellung einer Umgebung für anonyme Kontakte {#creating-an-environment-for-anonymous-contacts}
 
-1. Erstellen Sie eine Angebotsumgebung für anonyme eingehende Interaktionen über den Zuordnungsassistenten (**Besucherzuordnung** ). Weitere Informationen finden Sie unter [Erstellen einer Angebotsumgebung](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
+1. Erstellen Sie mit dem Versand-Zuordnungsassistenten (**Besucher**-Mapping) eine Angebotsumgebung für anonyme eingehende Interaktionen. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
    ![](assets/offer_env_anonymous_003.png)
 
@@ -286,10 +286,10 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
 Die auf der Webseite zu unterbreitenden Angebote für identifizierte Kontakte stammen aus zwei verschiedenen Kategorien: **Premium** und **Partner**. Im vorliegenden Beispiel wird für jede Kategorie eine spezifische Platzierung erstellt.
 
-Um die beiden Angebotsräume zu erstellen, wenden Sie das gleiche Verfahren wie für anonyme Angebotsräume an. Refer to [Configuring offer spaces for the anonymous environment](#configuring-offer-spaces-for-the-anonymous-environment).
+Erstellen Sie die beiden Platzierungen auf die gleiche Weise wie die anonymen Platzierungen. Siehe [Konfiguration der Platzierungen für die anonyme Umgebung](#configuring-offer-spaces-for-the-anonymous-environment).
 
 1. Gehen Sie in die identifizierte Design-Umgebung und fügen Sie die Platzierungen **Premium** und **Partner** hinzu.
-1. Wenden Sie den unter Anonyme Umgebung [konfigurieren beschriebenen Prozess an](#configuring-offer-spaces-for-the-anonymous-environment).
+1. Wenden Sie das unter [Konfiguration der Platzierungen für die anonyme Umgebung](#configuring-offer-spaces-for-the-anonymous-environment) beschriebene Verfahren an.
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
@@ -297,7 +297,7 @@ Um die beiden Angebotsräume zu erstellen, wenden Sie das gleiche Verfahren wie 
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
-1. Wählen Sie mithilfe der Dropdownliste den zuvor erstellten anonymen Webangebotsraum aus (siehe [Konfigurieren von Angebotseinheiten für die anonyme Umgebung](#configuring-offer-spaces-for-the-anonymous-environment)).
+1. Wählen Sie mithilfe der Dropdown-Liste die zuvor erstellte anonyme Web-Platzierung aus (siehe [Konfiguration der Platzierungen für die anonyme Umgebung](#configuring-offer-spaces-for-the-anonymous-environment)).
 
    ![](assets/offer_inbound_fallback_example_007.png)
 
@@ -377,7 +377,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
 1. Fügen Sie im Inhalt der HTML-Seite drei
 
-   -Elemente mit einem @id-Attribut, dessen Wert es uns ermöglicht, die Angebote in den verschiedenen Angebotspaletten der Website aufzurufen.
+   Elemente mit einem @id-Attribut ein, dessen Wert es uns ermöglicht, die Angebote in den verschiedenen Platzierungen der Web-Seite aufzurufen.
 
    ![](assets/offer_inbound_fallback_example_039.png)
 
@@ -397,7 +397,7 @@ Gehen Sie wie folgt vor, um die Platzierungen der Angebote in der HTML-Seite der
 
    ![](assets/offer_inbound_fallback_example_043.png)
 
-   Die Identifizierung der Person kann auf einem Browser-Cookie, einem Leseparameter in der URL, E-Mail oder der Kennung der Person basieren. Wenn ein Feld der Empfängertabelle außer dem Primärschlüssel verwendet wird, muss es in den erweiterten Parametern des Bereichs definiert werden (siehe [Festlegen der erweiterten Einstellungen der angegebenen Angebotseinstellungen](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
+   Die Identifizierung der Person kann anhand eines Browser-Cookies, eines Leseparameters in der URL, der E-Mail-Adresse oder der Kennung der Person erfolgen. Wenn ein Feld der Empfängertabelle verwendet wird, bei dem es sich nicht um den Primärschlüssel handelt, muss es in den erweiterten Parametern der Platzierung definiert werden (siehe [Definition der erweiterten Parameter der identifizierten Umgebung](#specifying-the-advanced-settings-of-the-identified-offer-spaces)).
 
 1. Fügen Sie die Abfrage-URL ein.
 
