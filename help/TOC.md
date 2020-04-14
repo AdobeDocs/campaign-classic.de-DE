@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe Kampagne classic
 translation-type: tm+mt
-source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
+source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 
 ---
 
@@ -22,6 +22,7 @@ source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
       + [Version 18.4](rn/using/release--18-4.md)
+   + [Veraltete Funktionen](rn/using/deprecated-features.md)
 + Erste Schritte {#getting-started}
    + Einstieg in Adobe Campaign {#starting-with-adobe-campaign}
       + [Über Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -392,7 +393,7 @@ source-git-commit: ce5513c2af9b522919c038e25557634b11e8e3cb
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring   {#monitoring}
+      + Monitoring    {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
