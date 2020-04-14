@@ -5,7 +5,7 @@ solution: Campaign Classic
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
+source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 
 ---
 
@@ -16,11 +16,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 
 ## Neue Funktionen
 
-* **[Gewährleistung des Datenschutzes](https://helpx.adobe.com/campaign/kb/campaign-privacy.html)**<br/>: Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen kann.
+* **[Datenschutzbestimmungen](https://helpx.adobe.com/de/campaign/kb/campaign-privacy.html)**<br/> Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen kann.
 
-* **[Tracking-Handbuch](https://helpx.adobe.com/campaign/kb/acc-tracking.html)**<br/>: Lernen Sie die Verfolgungsfunktionen von Campaign kennen.
-
-* **[Wartungshandbuch](https://helpx.adobe.com/campaign/kb/acc-maintenance.html)**<br/>: Erfahren Sie, wie Sie Ihre Kampagneninstanz und -prozesse überwachen können.
+* **[Verfolgungsfunktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/> verstehen Verfolgungsfunktionen in der Kampagne
 
 * **[Interaktive Inhalte mit AMP](delivery/using/defining-interactive-content.md)**<br/>: Erfahren Sie, wie Sie mit dem neuen[AMP for Email](https://amp.dev/about/email/)dynamische E-Mails senden können.
 
@@ -44,11 +42,11 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
     <p>
   </td>
    <td>
-    <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+    <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html">
       <img alt="Build-Aktualisierung" src="platform/using/assets/upgrade.png" />
     </a>
     <div>
-      <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html">
+      <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html">
     <strong>Aktualisierung auf den aktuellen Build</strong></a>
     </div>
     <p>
@@ -76,9 +74,9 @@ source-git-commit: 53e250cb24d5386e6e9e5d85b52d5eb689b2914c
 | Nützliche Seiten | Ressourcen für Entwickler |
 |---|---|
 | [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlermeldungen](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
-| [Anleitungsvideos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Kampagnen-Classic-Datenmodell](configuration/using/about-data-model.md) |
-| [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) | [JSAPI-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Erste Schritte mit Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [Implementierungshandbuch](https://helpx.adobe.com/campaign/kb/acc-implementation.html) |
-| [Gold Standard-Upgrade ](https://helpx.adobe.com/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
-| [Veraltete und entfernte Funktionen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html) |
-| [Dokumentation zur Systemsteuerung](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html) | [Technotes](https://helpx.adobe.com/campaign/kb/article-list.html) |
+| [Anleitungsvideos](https://docs.adobe.com/content/help/de-DE/campaign-learn/campaign-classic-tutorials/overview.html) | [Kampagne-Datenmodell](configuration/using/about-data-model.md) |
+| [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) | [Kampagne JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
+| [Erste Schritte mit Campaign Classic](platform/using/about-adobe-campaign-classic.md) | [Implementierungshandbuch](https://helpx.adobe.com/de/campaign/kb/acc-implementation.html) |
+| [Gold Standard-Upgrade ](https://helpx.adobe.com/de/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
+| [Veraltete und entfernte Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
+| [Campaign Control Panel](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) | [Überwachen von Best Practices](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html) |
