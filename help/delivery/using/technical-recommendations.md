@@ -1,6 +1,6 @@
 ---
-title: Technische Empfehlungen zur Verbesserung der Zustellbarkeit mit Adobe Campaign Classic
-description: Discover-Techniken, -Konfigurationen und -Tools, mit denen Sie Ihre Auslieferungsrate mit Adobe Campaign Classic verbessern können.
+title: Technische Empfehlungen zur Verbesserung der Zustellbarkeit mit Adobe Campaign Classic
+description: Entdecken Sie Techniken, Konfigurationen und Werkzeuge zur Verbesserung Ihrer Zustellrate mit Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 71be1087-e5ff-4a7a-85ca-36803839e72f
 contentOwner: sauviat
@@ -13,14 +13,14 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0291f464c2b4db51e1e56cefe83aa9e751e680a9
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
 
 # Technische Empfehlungen{#technical-recommendations}
 
-Im Folgenden werden verschiedene Techniken, Konfigurationen und Tools aufgelistet, mit denen Sie Ihre Bereitstellungsrate verbessern können.
+Die folgende Liste enthält diverse Techniken, Konfigurationen und Werkzeuge zur Verbesserung Ihrer Zustellrate.
 
 ## Konfiguration {#configuration}
 
@@ -30,17 +30,17 @@ Im Folgenden werden verschiedene Techniken, Konfigurationen und Tools aufgeliste
 
 Bei der Netzwerkkonfiguration ist es wichtig sicherzustellen, dass für jede der für ausgehende Nachrichten bestimmten IP-Adressen ein korrektes Reverse-DNS angegeben ist. Für eine bestimmte IP-Adresse existiert also ein Reverse-DNS Datensatz (PTR-Datensatz) mit einem passenden DNS (Datensatz), das auf die ursprüngliche IP zurückverweist.
 
-Die Domänenauswahl für ein umgekehrtes DNS hat Auswirkungen auf bestimmte ISPs. Insbesondere akzeptiert AOL nur Feedback-Schleifen mit einer Adresse in derselben Domäne wie das umgekehrte DNS (siehe [Feedback-Schleife](#feedback-loop)).
+Die Wahl der Domain für ein Reverse DNS hat Auswirkungen auf den Umgang mit bestimmten ISPs. Insbesondere AOL akzeptiert nur Feedback-Schleifen mit einer Adresse in derselben Domain wie das Reverse DNS (siehe [Feedback Loop](#feedback-loop)).
 
-A tool is available to verify the configuration of a domain: [https://mxtoolbox.com/SuperTool.aspx](https://mxtoolbox.com/SuperTool.aspx).
+Zur Überprüfung der Konfiguration einer Domain steht folgendes Tool zur Verfügung: [https://mxtoolbox.com/SuperTool.aspx](https://mxtoolbox.com/SuperTool.aspx).
 
 ### MX-Regeln {#mx-rules}
 
 MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sender- und einem Empfangs-Server.
 
-Genauer gesagt, werden sie dazu verwendet, die Geschwindigkeit zu steuern, mit der die Kampagne MTA (Message Transfer Agent) E-Mails an jede einzelne E-Mail-Domäne oder jeden ISP sendet (z.B. hotmail.com, comcast.net). Diese Regeln basieren meist auf den von den ISPs veröffentlichten Beschränkungen (z. B. nicht mehr als 20 Nachrichten pro SMTP-Verbindung).
+Genauer gesagt dienen sie zum Steuern der Geschwindigkeit, mit der der Campaign MTA (Message Transfer Agent) E-Mails an die einzelnen E-Mail-Domains oder ISPs (z. B. hotmail.com, comcast.net) sendet. Diese Regeln basieren meist auf den von den ISPs veröffentlichten Beschränkungen (z. B. nicht mehr als 20 Nachrichten pro SMTP-Verbindung).
 
-For more on MX management, refer to the [dedicated section](../../installation/using/email-deliverability.md#mx-configuration).
+Weitere Informationen zur MX-Verwaltung finden Sie im [entsprechenden Abschnitt](../../installation/using/email-deliverability.md#mx-configuration).
 
 ### TLS {#tls}
 
@@ -52,27 +52,27 @@ For more on MX management, refer to the [dedicated section](../../installation/u
 
 : SPF (Sender Policy Framework) ist ein Standard für die E-Mail-Authentifizierung, mit dem der Inhaber einer Domain angeben kann, welche E-Mail-Server E-Mails im Namen dieser Domain senden dürfen. Bei diesem Standard wird die Domain in der Kopfzeile &quot;Return-Path&quot; der E-Mail (auch als &quot;Envelope From&quot;-Adresse bezeichnet) genutzt.
 
-A tool is available to verify an SPF record: [https://www.kitterman.com/spf/validate.html](https://www.kitterman.com/spf/validate.html)
+Zur Überprüfung eines SPF-Eintrags steht folgendes Tool zur Verfügung: [https://www.kitterman.com/spf/validate.html](https://www.kitterman.com/spf/validate.html)
 
-Der SPF ist eine Technik, mit der Sie in gewissem Umfang sicherstellen können, dass der in einer E-Mail verwendete Domänenname nicht gefälscht wird. Wenn eine Nachricht von einer Domäne empfangen wird, wird der DNS-Server der Domäne abgefragt. Die Antwort ist ein kurzer Datensatz (der SPF-Datensatz), der angibt, welche Server für das Senden von E-Mails aus dieser Domäne autorisiert sind. Wenn wir davon ausgehen, dass nur der Eigentümer der Domäne die Mittel hat, um diesen Datensatz zu ändern, können wir bedenken, dass diese Technik nicht erlaubt, die Absenderadresse gefälscht werden, zumindest nicht der Teil von der rechten Seite des &quot;@&quot;.
+SPF ist eine Technik, mit der Sie in gewissem Umfang sicherstellen können, dass der in einer E-Mail verwendete Domain-Name nicht gefälscht wird. Wenn eine Nachricht von einer Domain empfangen wird, wird der DNS-Server der Domain abgefragt. Die Antwort ist ein kurzer Datensatz (der SPF-Datensatz), der angibt, welche Server für das Senden von E-Mails von dieser Domain autorisiert sind. Wenn wir davon ausgehen, dass nur der Eigentümer der Domain über die Mittel verfügt, um diesen Datensatz zu ändern, können wir davon ausgehen, dass mit dieser Technik die Absenderadresse nicht gefälscht werden kann, zumindest nicht der Teil rechts von „@“.
 
-In der endgültigen [RFC 4408-Spezifikation](https://www.rfc-editor.org/info/rfc4408)werden zwei Elemente der Nachricht verwendet, um die Domäne zu bestimmen, die als Absender gilt: Die Domäne, die vom SMTP-Befehl &quot;HELO&quot; (oder &quot;EHLO&quot;) angegeben wird, und die Domäne, die von der Adresse des Headers &quot;Return-Path&quot;(oder &quot;MAIL VON&quot;) angegeben wird, die auch die Absprungadresse ist. Unterschiedliche Überlegungen ermöglichen es, nur einen dieser Werte zu berücksichtigen. Es wird empfohlen sicherzustellen, dass beide Quellen dieselbe Domäne angeben.
+In der endgültigen [RFC 4408-Spezifikation](https://www.rfc-editor.org/info/rfc4408) werden zwei Elemente der Nachricht verwendet, um die Domain zu bestimmen, die als Absender gilt: Die Domain, die durch den SMTP-Befehl „HELO“ (oder „EHLO“) angegeben wird, und die Domain, die durch die Adresse des „Return-Path“-Headers (oder „MAIL FROM“) angegeben wird, die gleichzeitig die Bounce-Adresse ist. Verschiedene Überlegungen ermöglichen es, nur einen dieser Werte zu berücksichtigen. Wir empfehlen, dass beide Quellen dieselbe Domain angeben.
 
 Durch die Überprüfung des SPF ist eine Evaluierung der Gültigkeit der Absender-Domain gewährleistet.
 
-* **Keine**: Es konnte keine Bewertung durchgeführt werden,
-* **Neutral**: Die abgefragte Domäne ermöglicht keine Auswertung,
-* **Übergeben**: Die Domäne gilt als authentisch,
-* **Fehler**: Die Domäne wird gefälscht und die Meldung sollte zurückgewiesen werden —
-* **SoftFail**: Die Domain ist wahrscheinlich gefälscht, aber die Nachricht sollte nicht allein aufgrund dieses Ergebnisses abgelehnt werden,
-* **TempError**: Ein temporärer Fehler stoppte die Auswertung. Die Nachricht kann abgelehnt werden.
-* **PermError**: Die SPF-Aufzeichnungen der Domäne sind ungültig.
+* **None**: Es konnte keine Evaluierung ausgeführt werden.
+* **Neutral**: Für die abgefragte Domain ist keine Evaluierung aktiviert.
+* **Pass**: Die Domain wird als echt angesehen.
+* **Fail**: Die Domain ist gefälscht und die Nachricht sollte abgelehnt werden.
+* **SoftFail**: Die Domain ist wahrscheinlich gefälscht, aber die Nachricht sollte nicht ausschließlich aufgrund dieses Ergebnisses abgelehnt werden.
+* **TempError**: Ein temporärer Fehler hat die Evaluierung angehalten. Die Nachricht kann abgelehnt werden.
+* **PermError**: Die SPF-Einträge der Domain sind ungültig.
 
 Bitte beachten Sie, dass es bis zu 48 Stunden in Anspruch nehmen kann, bis in der Umgebung von DNS-Servern gemachte Einträge berücksichtigt werden. Die Dauer hängt davon ab, mit welcher Häufigkeit die DNS-Caches der Empfangs-Server aktualisiert werden.
 
 ### DKIM {#dkim}
 
-Die DKIM-Authentifizierung (DomainKeys Identified Mail) ist eine Nachfolgerin von SPF und verwendet eine Public-Key-Kryptographie, mit der der Empfänger-E-Mail-Server überprüfen kann, ob eine Nachricht tatsächlich von der Person oder Entität gesendet wurde, von der sie versendet wurde, und ob der Inhalt der Nachricht zwischen dem Zeitpunkt der ursprünglichen Versendung (und dem &quot;Signieren&quot; von DKIM) und dem Zeitpunkt des Eingangs geändert wurde. Bei diesem Standard wird in der Regel die Domain im &quot;Von&quot;- oder &quot;Absender&quot;-Header genutzt. Um die Sicherheitsstufe des DKIM zu gewährleisten, wird die Verschlüsselungsgröße 1024b empfohlen. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen.
+DKIM (DomainKeys Identified Mail)-Authentifizierung ist ein Nachfolger von SPF und verwendet Public-Key-Verschlüsselung, mit der der E-Mail-Empfangs-Server überprüfen kann, ob eine Nachricht tatsächlich von der angegebenen Person oder dem angegebenen Unternehmen gesendet wurde. Ferner kann festgestellt werden, ob die Nachricht zwischen dem Versandzeitpunkt (und der „Signierung“ mit DKIM) sowie dem Empfangszeitpunkt verändert wurde. Bei diesem Standard wird in der Regel die Domain im &quot;Von&quot;- oder &quot;Absender&quot;-Header genutzt. Um die DKIM-Sicherheitsstufe zu gewährleisten, ist 1024b die in den Best Practices empfohlene Verschlüsselungsgröße. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen.
 
 DKIM geht auf eine Kombination der Authentifizierungsprinzipien DomainKeys von Yahoo! und Identified Internet Mail von Cisco zurück und dient der Prüfung der Authentizität von Absender-Domains sowie der Sicherstellung der Integrität von Nachrichten.
 
@@ -80,9 +80,9 @@ DKIM hat sozusagen die **DomainKeys**-Authentifizierung ersetzt.
 
 >[!IMPORTANT]
 >
->Bei gehosteten oder hybriden Installationen erfolgt die DKIM-E-Mail-Authentifizierungssignatur durch die erweiterte MTA, wenn Sie auf die erweiterte MTA aktualisiert haben. Das DKIM-Signieren durch die native Kampagnen-MTA wird im Rahmen des erweiterten MTA-Upgrades in der **[!UICONTROL Domain management]** Tabelle deaktiviert.
+>Bei gehosteten oder hybriden Installationen erfolgt die DKIM-E-Mail-Authentifizierungssignatur durch den Enhanced MTA, wenn Sie auf den Enhanced MTA aktualisiert haben. DKIM-signing by the native Campaign MTA will be turned off within the **[!UICONTROL Domain management]** table as part of the Enhanced MTA upgrade.
 >
->Weitere Informationen zur erweiterten MTA-Datei für Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html).
+>Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Für die Verwendung von DKIM müssen folgende Voraussetzungen gegeben sein:
 
@@ -104,7 +104,7 @@ DMARC (Domain-based Message Authentication, Reporting and Conformance) ist die n
 * Conformance (Konformität) – ermöglicht dem Absender, ISPs anzuweisen, was mit einer Nachricht passieren soll, die nicht authentifiziert werden kann (z. B. nicht akzeptieren).
 * Reporting (Berichterstellung) – liefert dem Absender einen detaillierten Bericht mit allen Nachrichten, die die DMARC-Authentifizierung nicht bestanden haben, sowie die jeweils verwendete &quot;Von&quot;-Domain und IP-Adresse. Damit können Unternehmen legitime E-Mails erkennen, die nicht authentifiziert werden konnten und &quot;repariert&quot; werden müssen (z. B. durch Hinzufügen von IP-Adressen zu ihrem SPF-Datensatz), sowie die Quellen und das Vorkommen von Phishing-Versuchen auf ihren E-Mail-Domains identifizieren.
 
-DMARC can leverage the reports generated by [250ok](https://250ok.com/).
+DMARC kann die von [250ok](https://250ok.com/) erstellten Berichte nutzen.
 
 <!--#### Configuring the application {#configuring-the-application}
 
@@ -139,14 +139,14 @@ Recommendations for defining an SPF record:
 
 Ein Feedback Loop funktioniert nach dem Prinzip, dass auf ISP-Niveau eine bestimmte E-Mail-Adresse für eine Reihe von für den E-Mail-Versand verwendeten IP-Adressen deklariert wird. An diese E-Mail-Adresse senden die ISPs ähnlich wie für Bounce Messages diejenigen Nachrichten, die von Empfängern als Spam erklärt werden. Die Plattform sollte so konfiguriert werden, dass zukünftige Sendungen an Benutzer, die sich beschwert haben, blockiert werden. Dabei ist es wichtig, dass diese Benutzer nicht länger kontaktiert werden, selbst wenn sie nicht den offiziellen Opt-out-Link verwendet haben. Diese Beschwerden bilden die Basis dafür, dass ISPs IP-Adressen auf die Blacklist setzen. Je nach ISP wird eine IP-Adresse bei einer ungefähren Beschwerderate von 1 % auf die Blacklist gesetzt.
 
-A standard is currently being drawn up to define the format of feedback loop messages: the [Abuse Feedback Reporting Format (ARF)](https://tools.ietf.org/html/rfc6650).
+Aktuell wird an der Konzeption eines Standards für das Format von Feedback-Loop-Nachrichten gearbeitet: das [Abuse Feedback Reporting Format (ARF)](https://tools.ietf.org/html/rfc6650).
 
 Zur Implementierung eines Feedback Loops für eine Instanz sind folgende Elemente erforderlich:
 
 * ein für die Instanz bestimmtes Postfach, bei dem es sich um das Bounce-Postfach handeln kann,
 * für die Instanz bestimmte IP-Versandadressen.
 
-Die Implementierung einer einfachen Feedback-Schleife in Adobe Campaign verwendet die Funktion der Absprungmeldung. Das Feedback-Schleifenfeld wird als Absprung-Mailbox verwendet und es wird eine Regel zur Erkennung dieser Nachrichten definiert. Die E-Mail-Adressen der Empfänger, die die Nachricht als Spam gemeldet haben, werden der Quarantäneliste hinzugefügt.
+Die Implementierung eines einfachen Feedback Loop in Adobe Campaign verwendet die Bounce-Nachrichtenfunktionalität. Das Feedback Loop-Postfach wird als ein Bounce-Postfach verwendet. Es wird eine Regel zur Erkennung dieser Nachrichten definiert. Die E-Mail-Adressen der Empfänger, die die Nachricht als Spam gemeldet haben, werden der Quarantäneliste hinzugefügt.
 
 * Erstellen oder ändern Sie eine Absprung-Mail-Regel, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** mit dem Grund **Weigerung** und dem Typ **Hard**.
 * If a mailbox has been defined specially for the feedback loop, define the parameters to access it by creating a new external Bounce Mails account in **[!UICONTROL Administration > Platform > External accounts]**.
@@ -162,7 +162,7 @@ Sollten Sie gezwungen sein, eine einzige Feedback-Loop-Adresse für mehrere Inst
 
 * die empfangenen Nachrichten auf so vielen Postfächern replizieren wie Instanzen vorhanden sind,
 * dafür sorgen, dass jedes Postfach von einer einzigen Instanz abgerufen wird,
-* Konfigurieren Sie die Instanzen so, dass sie nur die Meldungen verarbeiten, die sie betreffen: Die Instanzinformationen sind im Message-ID-Header der von Adobe Campaign gesendeten Nachrichten enthalten und befinden sich daher auch in den Feedback-Schleifenmeldungen. Geben Sie einfach den Parameter **checkInstanceName** in der Konfigurationsdatei der Instanz an (standardmäßig wird die Instanz nicht überprüft, was dazu führen kann, dass bestimmte Adressen falsch isoliert werden):
+* Konfigurieren Sie die Instanzen so, dass sie nur die Nachrichten verarbeiten, die sie betreffen: Die Instanzinformationen sind im Nachrichten-ID-Header der von Adobe Campaign gesendeten Nachrichten enthalten und befinden sich daher auch in den Feedback Loop-Nachrichten. Geben Sie einfach den Parameter **checkInstanceName** in der Konfigurationsdatei der Instanz an (standardmäßig wird die Instanz nicht überprüft, was dazu führen kann, dass bestimmte Adressen falsch unter Quarantäne gestellt werden):
 
    ```
    <serverConf>
@@ -243,9 +243,9 @@ Die Regel muss das Script zur Erzeugung der Befehlszeile beinhalten und im E-Mai
 
 ### SMTP {#smtp}
 
-SMTP (Simple Mail Transfer Protocol) ist ein Internetstandard für die E-Mail-Übertragung.
+SMTP (Simple Mail Transfer Protocol) ist ein Internet-Standard für die E-Mail-Übertragung.
 
-Die SMTP-Fehler, die nicht von einer Regel überprüft werden, werden im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** angezeigt. Diese Fehlermeldungen werden standardmäßig als nicht erreichbare weiche Fehler interpretiert. Die häufigsten Fehler müssen identifiziert und eine entsprechende Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > hinzugefügt werden, **[!UICONTROL Mail rule sets]** wenn Sie das Feedback von den SMTP-Servern korrekt qualifizieren möchten. Andernfalls führt die Plattform unnötige Wiederholungen durch (bei unbekannten Benutzern) oder platziert bestimmte Empfänger fälschlicherweise nach einer bestimmten Anzahl von Tests in Quarantäne.
+Die SMTP-Fehler, die nicht von einer Regel überprüft werden, werden im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** angezeigt. Diese Fehlermeldungen werden standardmäßig als unerreichbar weiche Fehler interpretiert. Die häufigsten Fehler müssen identifiziert und eine entsprechende Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > hinzugefügt werden, **[!UICONTROL Mail rule sets]** wenn Sie das Feedback von den SMTP-Servern korrekt qualifizieren möchten. Andernfalls führt die Plattform unnötige weitere Zustellversuche durch (bei Unbekannten Nutzern) oder legt nach einer bestimmten Anzahl von Tests fälschlicherweise bestimmte Empfänger in die Quarantäne.
 
 ### Dedizierte IP-Adressen {#dedicated-ips}
 
@@ -253,27 +253,27 @@ Adobe bietet jedem Kunden für die Anlaufphase eine dedizierte IP-Strategie zum 
 
 ## IP-Zertifizierung {#ip-certification}
 
-Die IP-Zertifizierung ist ein Programm für die Whitelist- und Versendetechnik, mit dem sichergestellt wird, dass E-Mails ohne Blockierung durch Antispam-Filter oder andere E-Mail-Sperrsysteme empfangen werden.
+IP-Zertifizierung ist ein Whitelist- und Sendeprogramm, mit dem sichergestellt wird, dass E-Mails ohne Blockierung durch Antispam-Filter oder andere E-Mail-Blockierungssysteme empfangen werden.
 
-Derzeit bieten zwei Anbieter eine IP-Zertifizierung an: Rückkehrpfad und Allianz der zertifizierten Sender.
+Derzeit bieten zwei Anbieter eine IP-Zertifizierung an: Return Path und Certified Senders Alliance.
 
-Zertifizierte Absender werden E-Mail-Whitelists hinzugefügt, die von globalen Mailbox-Anbietern und E-Mail-Sicherheitsunternehmen verwendet werden. Diese kommerziellen Whitelists basieren auf einem System, das es dem Absender erlaubt, Antispam-Filter ganz zu umgehen oder inkrementelle Punkte zuzuweisen, wenn er in das System eintritt.
+Zertifizierte Absender werden E-Mail-Whitelists hinzugefügt, die von globalen E-Mail-Anbietern und E-Mail-Sicherheitsunternehmen verwendet werden. Diese kommerziellen Whitelists basieren auf einem System, das es dem Absender erlaubt, beim Eintritt in das System Anti-Spam-Filter ganz zu umgehen oder inkrementelle Punkte zu erhalten.
 
-Das [Programm zur Zertifizierung](https://www.validity.com/products/returnpath/certification/) des Rückkehrpfads bietet eine Reihe von Vorteilen:
+Das [Zertifizierungsprogramm von Return Path](https://www.validity.com/products/returnpath/certification/) bietet eine Reihe von Vorteilen, darunter die folgenden:
 
-* Eine messbare Steigerung der Posteingangsplatzierung bei Top-Postfachanbietern wie Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru und mehr
-* Gute Reputation und Behandlung bei kritischen Filtern wie Cloudmark, SpamAssassin und Cisco Ironport
-* Ein Compliance-Team, das rund um die Uhr überwacht, Sicherheitswarnungen bereitstellt und mit Ihnen durch die Lösung von Kompromissen zusammenarbeitet
-* Postfach-Anbieterdaten mit detaillierten Informationen zu KPIs, Platzierung und Zertifizierungsleistung
-* Vereinfachte und schnellere IP-Erwärmung, einschließlich besserer Ruf und Anerkennung bei der Migration oder beim Erhalt einer neuen IP-Adresse
+* Eine messbare Steigerung der Posteingangsplatzierung bei führenden E-Mail-Anbietern wie Microsoft, AOL, Yahoo, Gmail, Comcast, Orange, Mail.ru und mehr
+* Positive Reputation und bevorzugte Behandlung bei kritischen Filtern wie Cloudmark, SpamAssassin und Cisco Ironport
+* Ein Compliance-Team, das rund um die Uhr überwacht, Sicherheitswarnungen bereitstellt und mit Ihnen bei der Lösung von Kompromissen zusammenarbeitet
+* E-Mail-Anbieterdaten mit detaillierten Informationen zu KPIs, Platzierung und Zertifizierungsleistung
+* Vereinfachtes und schnelleres IP-Warmup, einschließlich einer besseren Reputation und Erkennung bei der Migration oder beim Erhalt einer neuen IP-Adresse
 
-Die [Zertifizierung der Senderallianz](https://certified-senders.org/certification-process/) bietet unter anderem folgende Vorteile:
+Die Zertifizierung durch [Certified Senders Alliance](https://certified-senders.org/certification-process/) bietet unter anderem folgende Vorteile:
 
 * Zertifizierung von Absendern von kommerziellen E-Mails, die hohe Qualitätsstandards erfüllen können
-* Verbesserte Auslieferung und Zustellbarkeit von kommerziellen E-Mails zur Erhöhung der Platzierungsrate im Posteingang und zur Reduzierung der Spam-Filterung
-* Schutz vor rechtlichen und finanziellen Risiken durch vollständige Einhaltung der gesetzlichen Normen
-* Schutz des Ruhestands durch Frühwarnungen des Beschwerdeamts der CSA und tägliche Berichte über Spam-Traps
+* Verbesserter Versand und verbesserte Zustellbarkeit von kommerziellen E-Mails, um die Platzierungsrate im Posteingang zu erhöhen und das Filtern von Spam zu reduzieren
+* Schutz vor rechtlichen und finanziellen Risiken durch vollständige Einhaltung der Rechtsnormen
+* Schutz der Reputation durch frühzeitige Warnungen der CSA-Beschwerdestelle und tägliche Berichte über Spam-Fallen
 
-ISPs können diese Dienste kostenlos nutzen, und die Anzahl der ISPs kann je nach Whitelist variieren.
+ISPs können diese Dienste beliebig verwenden und die Anzahl der ISPs variiert je nach Whitelist.
 
-Da jedoch immer mehr ISPs ihre Anti-Spam-Filter auf Grundlage des Verhaltens jedes Posteingangsbesitzers erstellen, anstatt den Inhalt der Nachricht selbst zu analysieren, kann die Verwendung der IP-Zertifizierung keine Garantie für die Platzierung des Posteingangs oder sogar für die Bereitstellung sein.
+Da jedoch immer mehr ISPs ihre Antispam-Filter auf Grundlage des Verhaltens jedes Posteingangsbesitzers erstellen, anstatt den Nachrichteninhalt selbst zu analysieren, kann die Verwendung der IP-Zertifizierung keine Garantie für die Platzierung im Posteingang oder gar die Bereitstellung sein.
