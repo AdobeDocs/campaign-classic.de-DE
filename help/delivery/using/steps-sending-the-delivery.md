@@ -1,7 +1,7 @@
 ---
-title: Konfigurieren und Senden der Bereitstellung
-seo-title: Konfigurieren und Senden der Bereitstellung
-description: Konfigurieren und Senden der Bereitstellung
+title: Versand konfigurieren und senden
+seo-title: Versand konfigurieren und senden
+description: Versand konfigurieren und senden
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -15,20 +15,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
 
-# Konfigurieren und Senden der Bereitstellung {#configuring-and-sending-the-delivery}
+# Versand konfigurieren und senden {#configuring-and-sending-the-delivery}
 
 >[!NOTE]
 >
->Nur der Lieferinhaber kann eine Lieferung starten. Damit ein anderer Operator (oder eine Operatorgruppe) eine Auslieferung starten kann, müssen Sie diese als Überprüfer in das **[!UICONTROL Delivery start:]** Feld einfügen.
+>Nur der Versand-Inhaber kann einen Versand Beginn haben. Damit ein anderer Operator (oder eine andere Operatorgruppe) einen Versand Beginn ausführen kann, müssen Sie ihn als Überprüfer im **[!UICONTROL Delivery start:]** Feld hinzufügen.
 >
 >Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
-## Bereitstellung zusätzlicher Parameter {#delivery-additiona-parameters}
+## Zusätzliche Versandparameter {#delivery-additiona-parameters}
 
 Before sending the delivery, you can define the sending parameters in the delivery properties, via the **[!UICONTROL Delivery]** tab.
 
@@ -36,13 +36,13 @@ Before sending the delivery, you can define the sending parameters in the delive
 
 * **[!UICONTROL Delivery priority]**: Mit dieser Option haben Sie die Möglichkeit, die Reihenfolge Ihrer Sendungen zu beeinflussen, indem Sie eine Versandpriorität (normal, hoch oder niedrig) festlegen. Auf diese Weise werden dringende Sendungen vorrangig ausgeführt.
 
-* **[!UICONTROL Message batch quantity]**: Mithilfe dieser Option können Sie die Anzahl der in einem XML-Sendekontingent enthaltenen Nachrichten festlegen. Wenn der Parameter auf 0 gesetzt ist, werden die Meldungen automatisch gruppiert. Die Paketgröße wird durch die Berechnung definiert `<delivery size>/1024`, mit mindestens 8 und maximal 256 Meldungen pro Paket.
+* **[!UICONTROL Message batch quantity]**: Mithilfe dieser Option können Sie die Anzahl der in einem XML-Sendekontingent enthaltenen Nachrichten festlegen. Wenn der Parameter auf „0“ gesetzt ist, werden die Nachrichten automatisch gruppiert. Die Package-Größe wird durch die `<delivery size>/1024`-Berechnung definiert, mit mindestens 8 und maximal 256 Nachrichten pro Package.
 
    >[!CAUTION]
    >
    >Bei Duplizierung eines Versands wird dieser Parameter automatisch auf 0 zurückgesetzt.
 
-* **[!UICONTROL Send using multiple waves]**: Weitere Informationen finden Sie unter [Senden mit mehreren Wellen](#sending-using-multiple-waves).
+* **[!UICONTROL Send using multiple waves]**: Weitere Informationen finden Sie unter [Senden mit mehreren Schüben](#sending-using-multiple-waves).
 
 * **[!UICONTROL Test SMTP delivery]**: Mithilfe dieser Option können Sie das Senden über SMTP testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server vorbereitet aber nicht abgeschickt.
 
@@ -52,9 +52,9 @@ Before sending the delivery, you can define the sending parameters in the delive
    >
    >Weiterführende Informationen zur Konfiguration eines SMTP-Servers finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL Archive emails]**: Mit dieser Option können Sie E-Mails auf einem externen System über BCC speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrem Nachrichtenziel hinzufügen. For more on this, refer to [Archiving emails](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL Archive emails]**: Mit dieser Option können Sie E-Mails auf einem externen System über BCC speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Zielgruppe hinzufügen. Weitere Informationen hierzu finden Sie unter [E-Mails archivieren](../../delivery/using/sending-messages.md#archiving-emails).
 
-Nachdem die Bereitstellung konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie die [Auslieferungsanalyse](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)ausgeführt haben. Klicken Sie anschließend auf , **[!UICONTROL Confirm delivery]** um die Auslieferung der Nachrichten zu starten.
+Nachdem der Versand konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie die [Versandanalyse](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)ausgeführt haben. Once done, click **[!UICONTROL Confirm delivery]** to launch the delivery of messages.
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -76,7 +76,7 @@ Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben
 
 ![](assets/dlv_email_del_plan.png)
 
-1. Sie können dann die Zustellungsanalyse starten und dann den Versand bestätigen. Die Auslieferung beginnt jedoch erst nach dem im **[!UICONTROL Contact date]** Feld angegebenen Datum.
+1. Sie können dann die Versandanalyse starten und den Versand bestätigen. However, the delivery sending will not start until the date given in the **[!UICONTROL Contact date]** field.
 
 >[!CAUTION]
 >
@@ -84,7 +84,7 @@ Sie können das Senden der Nachrichten auf einen späteren Zeitpunkt verschieben
 
 ![](assets/s_ncs_user_email_del_start_delayed.png)
 
-In der Lieferliste wird die Bereitstellung mit dem **[!UICONTROL Pending]** Status angezeigt.
+In the delivery list, the delivery will appear with **[!UICONTROL Pending]** status.
 
 ![](assets/s_ncs_user_email_del_waiting.png)
 
@@ -94,15 +94,15 @@ Scheduling can also be configured upstream via the **[!UICONTROL Scheduling]** b
 
 Dies bietet die Möglichkeit, den Versand auf einen späteren Zeitpunkt zu verschieben und ihn im Planungskalender zu verzeichnen.
 
-* Mit dieser **[!UICONTROL Schedule delivery (no automatic execution)]** Option können Sie eine vorläufige Analyse der Lieferung planen.
+* Mit dieser **[!UICONTROL Schedule delivery (no automatic execution)]** Option können Sie eine vorläufige Analyse des Versands planen.
 
-   Wenn diese Konfiguration gespeichert wird, wird die Bereitstellung in **[!UICONTROL Targeting pending]** Status geändert. Die Analyse wird am angegebenen Datum gestartet.
+   Wenn diese Konfiguration gespeichert wird, ändert sich der Versand in den **[!UICONTROL Targeting pending]** Status. Die Analyse wird am angegebenen Datum gestartet.
 
-* Mit der **[!UICONTROL Schedule delivery (automatic execution on planned date)]** Option können Sie das Lieferdatum angeben.
+* Mit dieser **[!UICONTROL Schedule delivery (automatic execution on planned date)]** Option können Sie das Datum des Versands angeben.
 
-   Klicken Sie auf **[!UICONTROL Send]** und wählen Sie **[!UICONTROL Postpone delivery]** dann die Analyse aus und bestätigen Sie die Bereitstellung. Wenn die Analyse abgeschlossen ist, ist das Auslieferungsziel fertig und die Nachrichten werden automatisch am angegebenen Datum gesendet.
+   Klicken Sie auf **[!UICONTROL Send]** und wählen Sie **[!UICONTROL Postpone delivery]** dann die Analyse aus und bestätigen Sie den Versand. Wenn die Analyse abgeschlossen ist, ist die Zielgruppe des Versands fertig und die Meldungen werden automatisch am angegebenen Datum gesendet.
 
-Datum und Uhrzeit werden in der Zeitzone des aktuellen Operators angegeben. Mit der **[!UICONTROL Time zone]** Dropdownliste unter dem Eingabefeld für das Kontaktdatum können Sie das eingegebene Datum und die eingegebene Uhrzeit automatisch in die ausgewählte Zeitzone konvertieren.
+Datum und Uhrzeit werden in der Zeitzone des aktuellen Operators angegeben. Mit der **[!UICONTROL Time zone]** Dropdown-Liste unterhalb des Eingabefelds für das Kontaktdatum können Sie das eingegebene Datum und die eingegebene Uhrzeit automatisch in die ausgewählte Zeitzone konvertieren.
 
 Wenn Sie also beispielsweise einen Versand für 8 Uhr Brüsseler Zeit terminieren, wird die Uhrzeit automatisch in die ausgewählte Zeitzone konvertiert:
 
@@ -125,24 +125,24 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
 
    * Definieren Sie die Größe für jede Welle. For example, if you enter **[!UICONTROL 30%]** in the corresponding field, each wave will represent 30% of the messages included in the delivery, except the last one, which will represent 10% of the messages.
 
-      Geben Sie im **[!UICONTROL Period]** Feld die Verzögerung zwischen dem Start zweier aufeinander folgender Wellen an. Wenn Sie zum Beispiel einsteigen, **[!UICONTROL 2d]** beginnt die erste Welle sofort, die zweite Welle beginnt in zwei Tagen, die dritte Welle in vier Tagen usw.
+      Geben Sie im **[!UICONTROL Period]** Feld die Verzögerung zwischen dem Beginn von zwei aufeinander folgenden Schüben an. Wenn Sie z. B. **[!UICONTROL 2d]** eintreten, wird die erste Welle sofort Beginn, die zweite in zwei Tagen, die dritte in vier Tagen usw.
 
       ![](assets/s_ncs_user_wizard_waves_create_size.png)
 
    * Definieren Sie einen Kalendereintrag für den Versand eines jeden Schubs.
 
-      Geben Sie in der **[!UICONTROL Start]** Spalte die Verzögerung zwischen dem Start zweier aufeinander folgender Wellen an. Geben Sie in die **[!UICONTROL Size]** Spalte eine feste Zahl oder einen Prozentwert ein.
+      Geben Sie in der **[!UICONTROL Start]** Spalte die Verzögerung zwischen dem Beginn von zwei aufeinander folgenden Schüben an. Geben Sie in die **[!UICONTROL Size]** Spalte eine feste Zahl oder einen Prozentwert ein.
 
       Im unten stehenden Beispiel beinhaltet der erste Schub 25 % der Gesamtzahl der im Versand enthaltenen Nachrichten und beginnt unmittelbar. Die nächsten beiden Schübe vervollständigen den Versand und starten in Intervallen von je sechs Stunden.
 
       ![](assets/s_ncs_user_wizard_waves_create.png)
-   Eine bestimmte Typologieregel **[!UICONTROL Wave scheduling check]** stellt sicher, dass die letzte Welle vor der Gültigkeitsdauer der Bereitstellung geplant ist. Campaign typologies and their rules, configured in the **[!UICONTROL Typology]** tab of the delivery properties, are presented in [Validation process with typologies](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+   A specific typology rule, **[!UICONTROL Wave scheduling check]**, ensures that the last wave is planned before the delivery validity limit. Campaign typologies and their rules, configured in the **[!UICONTROL Typology]** tab of the delivery properties, are presented in [Validation process with typologies](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
    >[!CAUTION]
    >
-   >Achten Sie darauf, dass die letzten Wellen den in der **[!UICONTROL Validity]** Registerkarte festgelegten Liefertermin nicht überschreiten. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet.
+   >Vergewissern Sie sich, dass die letzten Schübe den in der **[!UICONTROL Validity]** Registerkarte festgelegten Termin für den Versand nicht überschreiten. Andernfalls werden einige Nachrichten möglicherweise nicht gesendet.
    >
-   >Bei der Konfiguration der letzten Wellen müssen Sie auch genügend Zeit für Wiederholungen einräumen. Siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
+   >Planen Sie bei der Konfiguration der letzten Schübe auch genügend Zeit für zusätzliche Versuche ein. Siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
 1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Näheres hierzu finden Sie auf [dieser Seite](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
 
@@ -178,31 +178,31 @@ The central section of the **[!UICONTROL Delivery]** tab for delivery parameters
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
-Standardmäßig sind fünf Wiederholungen für den ersten Tag der Auslieferung geplant, wobei ein Mindestintervall von einer Stunde über die 24 Stunden des Tages verteilt wird. One retry per day is programmed after that and until the delivery deadline, which is defined in the **[!UICONTROL Validity]** tab (see [Defining validity period](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)).
+Standardmäßig sind innerhalb der ersten 24 Stunden des Versands fünf erneute Versuche im Abstand von mindestens einer Stunde vorgesehen. One retry per day is programmed after that and until the delivery deadline, which is defined in the **[!UICONTROL Validity]** tab (see [Defining validity period](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period)).
 
 >[!NOTE]
 >
->Bei gehosteten oder hybriden Installationen werden die Einstellungen für den erneuten Versuch in der Bereitstellung nicht mehr von Campaign verwendet, wenn Sie auf die erweiterte MTA aktualisiert haben. Soft-Absprungwiederholungen und die Zeitdauer zwischen ihnen werden durch die erweiterte MTA bestimmt, basierend auf Typ und Schwere der Absprungantworten, die von der E-Mail-Domäne der Nachricht zurückgegeben werden.
+>Bei gehosteten oder hybriden Installationen werden die Einstellungen für den erneuten Versuch im Versand nicht mehr von Campaign verwendet, wenn Sie auf den Enhanced MTA aktualisiert haben. Versuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 >
->Alle Auswirkungen sind im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) ausführlich beschrieben.
+>Alle Auswirkungen sind im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) ausführlich beschrieben.
 
 
 ## Gültigkeitszeitraum bestimmen {#defining-validity-period}
 
-Nach dem Start der Lieferung können die Nachrichten (und alle Wiederholungen) bis zum Liefertermin gesendet werden. Dies wird über die **[!UICONTROL Validity]** Registerkarte in den Liefereigenschaften angezeigt.
+Nach dem Start des Versands können die Nachrichten (und alle weitere Zustellversuche) bis zum Ablauf der Frist für den Versand gesendet werden. Dies wird in den Eigenschaften des Versands über die **[!UICONTROL Validity]** Registerkarte angezeigt.
 
 ![](assets/s_ncs_user_email_del_valid_period.png)
 
-* Mit dem **[!UICONTROL Delivery duration]** Feld können Sie die Beschränkung für globale Versandwiederholungen eingeben. Das bedeutet, dass Adobe Campaign die Nachrichten sendet, die am Startdatum beginnen. Bei Meldungen, die nur einen Fehler zurückgeben, werden regelmäßige, konfigurierbare Wiederholungen durchgeführt, bis die Gültigkeitsdauer erreicht ist.
+* Im **[!UICONTROL Delivery duration]** Feld können Sie die Beschränkung für weitere Zustellversuche globaler Versand eingeben. Das bedeutet, dass Adobe Campaign die Meldungen, die am Tag des Beginns beginnen, sendet. Bei Meldungen, die nur einen Fehler zurückgeben, werden regelmäßige, konfigurierbare weitere Zustellversuche ausgeführt, bis die Gültigkeit erreicht ist.
 
-   Sie können auch Datumsangaben angeben. Wählen Sie dazu **[!UICONTROL Explicitly set validity dates]**. In diesem Fall können Sie mit den Auslieferungs- und Gültigkeitszeitangaben auch die Uhrzeit angeben. Die aktuelle Zeit wird standardmäßig verwendet, Sie können dies jedoch direkt im Eingabefeld ändern.
+   Sie können auch Datumsangaben angeben. Wählen Sie dazu **[!UICONTROL Explicitly set validity dates]**. In diesem Fall können Sie mit dem Versand- und dem Datumsbereich der Gültigkeit auch die Uhrzeit angeben. Die aktuelle Zeit wird standardmäßig verwendet, Sie können dies jedoch direkt im Eingabefeld ändern.
 
-* **Gültigkeitsdauer der Ressourcen**: Das **[!UICONTROL Validity limit]** Feld wird für hochgeladene Ressourcen verwendet, hauptsächlich für die Spiegelseite und Bilder. Die Gültigkeitsdauer der Ressourcen auf dieser Seite ist begrenzt, um Speicherkapazität zu sparen.
+* **Gültigkeit der Mittel**: Das **[!UICONTROL Validity limit]** Feld wird für hochgeladene Ressourcen verwendet, hauptsächlich für die Mirrorseite und Bilder. Die Gültigkeitsdauer der Ressourcen auf dieser Seite ist begrenzt, um Speicherkapazität zu sparen.
 
    Die in diesem Feld möglichen Zeiteinheiten (Tage, Stunden etc.) können Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#default-units) nachlesen.
 
 >[!NOTE]
 >
->Bei gehosteten oder hybriden Installationen wird, wenn Sie auf die erweiterte MTA aktualisiert haben, die Einstellung für die **[!UICONTROL Delivery duration]** Auslieferung Ihrer Kampagne nur verwendet, wenn sie auf **3,5** Tage oder weniger eingestellt ist. Wenn Sie einen Wert von mehr als 3,5 Tagen definieren, wird dieser nicht berücksichtigt.
+>For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL Delivery duration]** setting in your Campaign deliveries will be used only if set to **3.5** days or less. Wenn Sie einen Wert von mehr als 3,5 Tagen definieren, wird dieser nicht berücksichtigt.
 >
->Alle Auswirkungen sind im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) ausführlich beschrieben.
+>Alle Auswirkungen sind im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) ausführlich beschrieben.
