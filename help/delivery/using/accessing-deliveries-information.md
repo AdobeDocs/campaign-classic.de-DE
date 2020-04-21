@@ -14,8 +14,8 @@ discoiquuid: d2631c67-7781-4baa-b24e-e7921353d131
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
+translation-type: tm+mt
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -24,9 +24,9 @@ source-git-commit: 211556bbf023731ffeab2e90692410a852ab3555
 
 ## Auf die Versandliste zugreifen {#accessing-the-list-of-deliveries}
 
-Begeben Sie sich in die Rubrik **[!UICONTROL Kampagnen]** und klicken Sie auf die Schaltfläche **[!UICONTROL Sendungen]**, um auf die Versandliste zuzugreifen.
+To access the list of deliveries, go to the **[!UICONTROL Campaigns]** universe and click the **[!UICONTROL Deliveries]** link.
 
-Im [Explorer](../../platform/using/adobe-campaign-workspace.md#about-adobe-campaign-explorer) besteht über den Knoten **[!UICONTROL Kampagnenverwaltung > Sendungen]** Zugriff auf alle Sendungen.
+If you use [the Explorer view](../../platform/using/adobe-campaign-workspace.md#about-adobe-campaign-explorer), you can access all deliveries via the **[!UICONTROL Campaign management > Deliveries]** node in the tree.
 
 >[!NOTE]
 >
@@ -64,30 +64,30 @@ Die Status lassen sich leicht anhand der verschiedenfarbigen Label unterscheiden
 
 ![](assets/s_ncs_user_status_campaigns_120.png)
 
-Die Dropdown-Liste neben der Schaltfläche **[!UICONTROL Erstellen]** ermöglicht die Filterung der Versandliste nach Status.
+The drop-down list next to the **[!UICONTROL Create]** button enables you to filter deliveries based on their status.
 
 ![](assets/delivery_filter_status.png)
 
 ## Auf den Versandkalender zugreifen {#accessing-the-delivery-calendar}
 
-Durch Anklicken der Schaltfläche **[!UICONTROL Kampagnenkalender]** in der Rubrik **[!UICONTROL Kampagnen]** gelangen Sie in eine Übersicht, in der die zeitliche Verteilung der Kampagnen dargestellt wird. Sie können die Anzeige Ihren Bedürfnissen gemäß anpassen (nach Monat, Woche oder Tag) und nach verschiedenen Kampagnenelementen (nach Sendungen, Aufgaben usw.) filtern.
+Um auf den Versand-Kalender zuzugreifen, gehen Sie zum **[!UICONTROL Campaign]** Universum und klicken Sie auf den **[!UICONTROL Campaign calendar]** Link. Dieser Kalender zeigt die Aufschlüsselung der Kampagnen im Zeitverlauf an. Sie können die Anzeige nach Monat, Woche oder Tag anpassen.
 
 ![](assets/s_ncs_user_interface_delivery04.png)
 
-Durch Klick auf den Titel werden die wichtigsten Informationen angezeigt. Sie haben außerdem die Möglichkeit, die Kampagne zu **[!UICONTROL öffnen]**, indem Sie auf den entsprechenden Link klicken.
+Click the name of a delivery to display the main information about it. You can also open the campaign if necessary by clicking **[!UICONTROL Open]**.
 
 ![](assets/s_ncs_user_interface_delivery05.png)
 
 ## Auf Informationen zum Versanddurchsatz zugreifen {#accessing-deliveries-throughput-information}
 
-Die über die Rubrik Berichte zugängliche Statistik zum **[!UICONTROL Versanddurchsatz]** bezieht sich auf über die Plattform durchgeführte Sendungen. Zur Messung der Versandgeschwindigkeit von Nachrichten werden zwei Kennzahlen herangezogen: Anzahl an gesendeten Nachrichten pro Stunde und die gesendete Datenmenge in Bits pro Sekunde. Die unten stehende Grafik zeigt in Blau die Anzahl der erfolgreich versandten und in Orange die Anzahl der fehlgeschlagenen Nachrichten.
+Die Informationen auf der **[!UICONTROL Delivery throughput]** Seite beziehen sich auf alle Versand der Plattform. Zur Messung der Geschwindigkeit, mit der die Nachrichten gesendet werden, sind die Kriterien die Anzahl der gesendeten Nachrichten pro Stunde und die Größe der Nachrichten (in Bits pro Sekunde). Im Beispiel unten zeigt das erste Diagramm die erfolgreichen Versand in Blau und die Anzahl der fehlerhaften Versand in Orange.
 
-Sie haben die Möglichkeit, die der Berechnung zugrunde zu legende Zeitspanne aus der Dropdown-Liste auszuwählen. Klicken Sie zum Start der Berechnung auf **[!UICONTROL Aktualisieren]**.
+You can choose the time slot for which the throughput is calculated. To do this, select the value from the drop-down list, and then click **[!UICONTROL Refresh]**.
 
 ![](assets/s_ncs_user_interface_delivery06.png)
 
 >[!NOTE]
 >
->Bei gehosteten oder hybriden Installationen zeigt die Seite **[!UICONTROL Versanddurchsatz]** den Durchsatz an Ihre E-Mail-Empfänger nicht mehr an, wenn Sie auf Enhanced MTA aktualisiert haben. Sie zeigt die Durchsatzgeschwindigkeit für die Weiterleitung Ihrer Nachrichten von Campaign an Enhanced MTA an.
+>For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL Delivery throughput]** page will no longer display the throughput to your email recipients. Sie zeigt die Durchsatzgeschwindigkeit für die Weiterleitung Ihrer Nachrichten von Campaign an Enhanced MTA an.
 >
->Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-enhanced-mta.html).
+>Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
