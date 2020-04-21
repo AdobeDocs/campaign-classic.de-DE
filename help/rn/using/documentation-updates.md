@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
 
 ---
 
@@ -40,7 +40,7 @@ Anwendungsfälle aus dem Handbuch &quot;Automatisieren mit Workflows&quot;wurden
 
 Die Abschnitte [für die Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) von AbsprungMails und für die [E-Mail-Verwaltung](../../delivery/using/understanding-delivery-failures.md#email-management-rules) wurden um aktualisierte Informationen erweitert.
 
-Der Adobe Campaign Enhanced MTA-Artikel wurde aktualisiert. Sie gilt jetzt nur für Campaign Classic. [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
+Der Adobe Campaign Enhanced MTA-Artikel wurde aktualisiert. Sie gilt jetzt nur für Campaign Classic. [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## März 2020 {#march-2020}
 
