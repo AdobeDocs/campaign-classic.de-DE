@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 75f195a11170b4213f930deed886f8bf5b0817bc
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -39,6 +39,8 @@ Der Abschnitt, der das vordefinierte Datenmodell des Adobe Campaigns beschreibt,
 Anwendungsfälle aus dem Handbuch &quot;Automatisieren mit Workflows&quot;wurden in thematische Abschnitte umstrukturiert. [mehr dazu](../../workflow/using/using-the-local-approval-activity.md)
 
 Die Abschnitte [für die Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) von AbsprungMails und für die [E-Mail-Verwaltung](../../delivery/using/understanding-delivery-failures.md#email-management-rules) wurden um aktualisierte Informationen erweitert.
+
+Der Adobe Campaign Enhanced MTA-Artikel wurde aktualisiert. Sie gilt jetzt nur für Campaign Classic. [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-acc-campaign-enhanced-mta.html)
 
 ## März 2020 {#march-2020}
 
@@ -74,7 +76,7 @@ Snowflake FDA Connector - [Weitere Informationen](../../platform/using/specific-
 
 Hadoop FDA Connector-Erweiterungen - [Weitere Informationen](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
 
-**Weitere Dokumentationsaktualisierungen zu dieser Version**
+**Weitere Aktualisierungen der Dokumentation zu dieser Version**
 
 Die [Installations](../../installation/using/before-reading.md)-, [Produktions](../../production/using/foreword.md) - und [Konfigurationsanleitungen](../../configuration/using/additional-parameters.md) wurden mit der neuen Systemeinheit aktualisiert, die vom nlserver-Dienst-Start verwendet wird. Sie können weiterhin /etc/init.d/nlserver6 verwenden. Es wird jedoch empfohlen, jetzt den Befehl &quot;systemCtl&quot;für die Interaktion mit dem nlserver-Dienst zu verwenden.
 
@@ -114,7 +116,7 @@ Der Abschnitt „Zulieferbarkeit“ wurde verschoben, neu organisiert und mit ak
 
 Ein neuer Abschnitt mit den Grundlagen des Adobe Campaign Classic-Datenmodells und dem Zugriff auf die Beschreibung der einzelnen Tabellen ist jetzt verfügbar – [mehr dazu](../../configuration/using/about-data-model.md)
 
-Der Artikel zu Adobe Campaign Enhanced MTA wurde mit detaillierteren Informationen zur Installation eines spezifischen Typologie-Packages in Instanzen aktualisiert, die die erforderlichen Enhanced MTA-Header nicht zu jeder Nachricht hinzufügen – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/campaign-enhanced-mta.html#impacts)
+Der Artikel zu Adobe Campaign Enhanced MTA wurde mit detaillierteren Informationen zur Installation eines spezifischen Typologie-Packages in Instanzen aktualisiert, die die erforderlichen Enhanced MTA-Header nicht zu jeder Nachricht hinzufügen – [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 Die Anwendungsbeispiele im Zusammenhang mit der Abfragegestaltung wurden in separate Abschnitte umstrukturiert – [mehr dazu](../../workflow/using/querying-recipient-table.md)
 
@@ -152,7 +154,7 @@ Sicherer SMS-Versand (TLS) – [mehr dazu](https://helpx.adobe.com/de/campaign/k
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/campaign-enhanced-mta.html)
+Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar – [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie Fehler in einem Workflow beheben können, der im Status „Schnellstmöglicher Start“ in einer Kampagne verbleibt – [mehr dazu](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
