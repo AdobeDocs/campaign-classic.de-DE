@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -38,4 +38,4 @@ Diese Gruppierung kann in den Eigenschaften der jeweiligen Nachrichtenvorlage wi
 
 >[!NOTE]
 >
->Bei gehosteten oder hybriden Installationen können, wenn Sie auf die erweiterte MTA aktualisiert haben, alle Transaktionsnachrichten auch mit der Adobe Campaign Enhanced MTA gesendet werden, um die Bereitstellung, den Durchsatz und die Absprungbehandlung zu verbessern. Alle Auswirkungen sind dieselben wie bei standardmäßigen Marketing-Nachrichten und werden im Dokument [Erweiterter MTA von Adobe Campaign](https://helpx.adobe.com/campaign/kb/campaign-enhanced-mta.html) beschrieben.
+>Bei gehosteten oder hybriden Installationen können nach einem Upgrade auf den Enhanced MTA auch alle Transaktionsmeldungen mit dem Adobe Campaign Enhanced MTA gesendet werden, um die Zustellbarkeit, den Durchsatz und die Bearbeitung von Bounces zu verbessern. Alle Folgen sind dieselben wie bei standardmäßigen Marketing-Nachrichten und werden im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) beschrieben.
