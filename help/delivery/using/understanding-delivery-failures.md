@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0932d0836c53b8dea715f471f9319603140c9950
+source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 
 ---
 
@@ -193,7 +193,7 @@ Gehen Sie zur Änderung der Versandlaufzeit in die erweiterten Eigenschaften des
 
 Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global geändert werden (kontaktieren Sie Ihren technischen Administrator von Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
-## Synchrone und asynchrone Fehler  {#synchronous-and-asynchronous-errors}
+## Synchrone und asynchrone Fehler   {#synchronous-and-asynchronous-errors}
 
 Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren Zeitpunkt nach dem Versand (asynchroner Fehler).
 
@@ -249,13 +249,13 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 >* Die Absprungqualifikationen in der **[!UICONTROL Delivery log qualification]** Tabelle werden nicht mehr für Fehlermeldungen bei synchronen Versänden verwendet. Die erweiterte MTA bestimmt den Absprungtyp und die Qualifikation und sendet diese Informationen an die Kampagne zurück.
    >
    >
-* Asynchrone Absprünge sind nach wie vor durch den InMail-Prozess durch die **[!UICONTROL Inbound email]** Regeln qualifiziert. For more on this, see [Email management rules](#email-management-rules).
+* Asynchronous bounces are still qualified by the inMail process through the **[!UICONTROL Inbound email]** rules. For more on this, see [Email management rules](#email-management-rules).
    >
    >
 * Bei Instanzen, die die erweiterte MTA ohne **Webhooks/EFS** verwenden, werden die **[!UICONTROL Inbound email]** Regeln auch zur Verarbeitung der synchronen Absprungmeldungen aus der erweiterten MTA verwendet, wobei dieselbe E-Mail-Adresse wie für asynchrone Absprungmeldungen verwendet wird.
 >
 >
-Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-enhanced-mta.html).
+Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### E-Mail-Verwaltungsregeln {#email-management-rules}
 
@@ -285,13 +285,13 @@ When an email fails, the remote server returns a bounce message to the address s
 >
 >Der Benutzer kann eigene Regeln erstellen. Beim Import eines Packages und bei der Aktualisierung von Daten durch den **Zustellbarkeit**-Workflow werden benutzerdefinierte E-Mail-Regeln überschrieben.
 
-Weitere Informationen zur Absprungmail-Qualifizierung finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
+For more on bounce mail qualification, see [this section](#bounce-mail-qualification).
 
 >[!IMPORTANT]
 >
 >Bei gehosteten oder hybriden Installationen werden die Regeln nicht mehr für Fehlermeldungen bei synchronen Versänden verwendet, wenn Sie ein Upgrade auf die erweiterte MTA durchgeführt haben und Ihre Instanz über **Webhooks/EFS** -Funktionen verfügt **[!UICONTROL Inbound email]** . Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
 >
->Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-enhanced-mta.html).
+>Weitere Informationen zum erweiterten MTA von Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### Domain-Verwaltung {#domain-management}
 
@@ -306,9 +306,9 @@ Wenn Ihre Nachrichten in Outlook mit **[!UICONTROL on behalf of]** der Absendera
 
 >[!IMPORTANT]
 >
->For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL Domain management]** rules are no longer used. **Die Signierung der DKIM-E-Mail-Authentifizierung (DomainKeys Identified Mail)** erfolgt durch die erweiterte MTA für alle Nachrichten mit allen Domänen. Es wird nicht mit **Sender-ID**, **DomainKeys** oder **S/MIME** signiert, es sei denn, auf der Ebene der erweiterten MTA wird etwas Anderes angegeben.
+>For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL Domain management]** rules are no longer used. Die E-Mail-Authentifizierung und -Signierung mit **DKIM (DomainKeys Identified Mail)** erfolgt durch den erweiterten MTA für alle Nachrichten mit allen Domains. Eine Signierung mit **Sender ID**, **DomainKeys** oder **S/MIME** findet nicht statt, es sei denn, auf der Ebene des erweiterten MTA ist etwas anderes angegeben.
 >
->Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-enhanced-mta.html).
+>Weitere Informationen zum erweiterten MTA von Adobe Campaign finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 #### MX-Verwaltung {#mx-management}
 
@@ -324,4 +324,4 @@ Weiterführende Informationen zur MX-Verwaltung erfahren Sie in [diesem Abschnit
 >
 >For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL MX management]** delivery throughput rules are no longer used. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
 >
->Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-enhanced-mta.html).
+>Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
