@@ -13,41 +13,41 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8d6e3118dc498096283d54713725071e0906aba3
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
 
 # Neueste Version{#latest-release}
 
-[Build-Aktualisierung](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Systemsteuerung](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Aktualisierungen](../../rn/using/documentation-updates.md) der Dokumentation| [Frühere Versionen](../../rn/using/release--19-2.md) | [Veraltete Funktionen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) | [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html) | [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md) | [Frühere Versionshinweise](../../rn/using/release--19-2.md) | [Eingestellte Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Release Candidate</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Veraltet</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Veröffentlichungskandidat</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Veraltet</strong></td> 
   </tr> 
    <tr> 
-   <td>Neueste stabile Version verfügbar. Erstellen validiert in Produktion.<br> </td>
-   <td>Erstellen von Adobe validiert Warte auf Proof.<br> </td>
-   <td>Neuere Version mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
+   <td>Neuester verfügbarer stabiler Build. Build in Produktion validiert.<br> </td>
+   <td>Build validiert von Adobe. Produktionstestversand ist ausstehend.<br> </td>
+   <td>Neuerer Build mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
    <td>Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.<br> </td>
   </tr> 
  </tbody> 
 </table>
 
-Der **letzte stabile Build** ist 9032 (205c981c3). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Der **letzte stabile Build** ist 9032 (3a9dc9c). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/blue_2.png) Version 20.1.2 - Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/blue_2.png) Version 20.1.2 – Build 9123 {#release-20-1-2-build-9123}
 
 _13. März 2020_
 
 * Es wurde ein Problem behoben, das die Bereitstellung von Versionen auf Red Hat 7-Servern verhinderte. (NEO-23332)
 
-## ![](assets/orange_2.png) Version 20.1 - Build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1 – Build 9122 {#release-20-1-build-9122}
 
 _17. Februar 2020_
 
@@ -101,21 +101,21 @@ _17. Februar 2020_
 
 * iOS 13 wird jetzt mit dem HTTP2-Connector unterstützt.
 
-* Verbesserte Verwaltung und Bereinigung der Quarantänen, die von der Push-Benachrichtigungsfunktion verwendet werden (nms:address und nms:appSubscriptionRcp). Bei iOS (nur HTTP2-Connector) werden deaktivierte Token jetzt genauso behandelt wie bei Android. Das Deaktivieren-Flag ist jetzt in der Tabelle NmsAppSubscriptionRcp festgelegt. [Mehr dazu](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
+* Verbesserte Verwaltung und Bereinigung der Quarantänen, die von der Push-Benachrichtigungsfunktion verwendet werden (nms:address und nms:appSubscriptionRcp). Bei iOS (nur HTTP2-Connector) werden deaktivierte Token jetzt genauso behandelt wie bei Android. Das Deaktivieren-Flag ist jetzt in der Tabelle NmsAppSubscriptionRcp festgelegt. [mehr dazu](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Eine neue Option wurde den Aktivitäten für den **JavaScript-Code** und den **erweiterten JavaScript-Code** -Workflow hinzugefügt, um einen Timeout-Zeitraum zu definieren. Dadurch wird verhindert, dass die Javascript-Ausführungsphase zu lange ausgeführt wird. Wenn der Timeout-Zeitraum abgelaufen ist, wird der Workflow gestoppt. Der Standardwert für das Zeitlimit ist 1 Stunde. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
+* Eine neue Option wurde den Aktivitäten für den **JavaScript-Code** und den **erweiterten JavaScript-Code** -Workflow hinzugefügt, um einen Timeout-Zeitraum zu definieren. Dadurch wird verhindert, dass die Javascript-Ausführungsphase zu lange ausgeführt wird. Wenn der Timeout-Zeitraum abgelaufen ist, wird der Workflow gestoppt. Der Standardwert für das Zeitlimit ist 1 Stunde. [mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
 
 * Die Analyse des Versands wird jetzt beendet, wenn keine übereinstimmende Affinität auf dem Mid-Sourcing-Server gefunden wird und die entsprechende Fehlermeldung angezeigt wird.
 
-* Database Failover for Postgres wird jetzt unterstützt: Wenn der Datenbankserver abstürzt und neu startet, stellt Campaign jetzt automatisch eine erneute Verbindung her.
+* Database Failover for Postgres wird jetzt unterstützt: Wenn der Datenbankserver abstürzt und neu startet, stellt die Kampagne jetzt automatisch eine erneute Verbindung her.
 
-* Die Ansicht &quot; **Beginn ausstehend** &quot;wurde dem Knoten &quot;Administration&quot;> &quot;Prüfung&quot;> &quot;Workflows&quot;hinzugefügt. Dadurch können Sie alle Workflows auf Ihrer Instanz überwachen, die darauf warten, vom **operationMgt** -Prozess gestartet zu werden. Diese Ansicht ist im Lieferumfang des Marketing Campaigns enthalten. [Mehr dazu](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+* Die Ansicht &quot; **Beginn ausstehend** &quot;wurde dem Knoten &quot;Administration&quot;> &quot;Prüfung&quot;> &quot;Workflows&quot;hinzugefügt. Dadurch können Sie alle Workflows auf Ihrer Instanz überwachen, die darauf warten, vom **operationMgt** -Prozess gestartet zu werden. Diese Ansicht ist im Lieferumfang des Marketing-Kampagnen-Pakets enthalten. [mehr dazu](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
 **Sonstige Änderungen**
 
 * Unter Linux verwendet der Systemstart des nlserver-Dienstes jetzt eine Systemeinheit anstelle des Skripts /etc/init.d/nlserver6. Die Migration zum neuen Startschema wird automatisch ausgeführt, wenn Sie das 20.1-Paket installieren. Der Befehl /etc/init.d/nlserver6 wird weiterhin bereitgestellt, aber für die Interaktion mit dem nlserver-Dienst (Beginn, Neustart, Stopp usw.) sollten Sie den Befehl systemCtl direkt verwenden.
 
-* Die am häufigsten verwendeten benutzerdefinierten Tabellen wurden von der **xtkNewId** -Sequenz in dedizierte Sequenzen verschoben. [Mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Die am häufigsten verwendeten benutzerdefinierten Tabellen wurden von der **xtkNewId** -Sequenz in dedizierte Sequenzen verschoben. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 
 * Verbesserte Leistung bei der Abfrage, die durch unnötige Datenbankverbindungen beeinträchtigt werden könnte.
 
@@ -125,11 +125,11 @@ _17. Februar 2020_
 
 * Die Stabilität des Verbindungspools wurde verbessert, was dazu führen kann, dass unerwartete Verbindungsfehler zu oft auftreten.
 
-* Die Validierungsregeln für E-Mail-Adressen, mit denen im Falle eines &quot;soft error&quot;eine Adresse an die Quarantäne gesendet werden soll, wurden verbessert. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+* Die Validierungsregeln für E-Mail-Adressen, mit denen im Falle eines &quot;soft error&quot;eine Adresse an die Quarantäne gesendet werden soll, wurden verbessert. [mehr dazu](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
-* Für Debian verwendet Campaign jetzt System-PCRE-Bibliotheken, wenn diese verfügbar sind.
+* Für Debian verwendet Kampagne jetzt System-PCRE-Bibliotheken, wenn sie verfügbar sind.
 
-* Campaign ermöglicht nun die Verwendung einer aktuelleren ODBC-Systembibliothek.
+* Kampagne ermöglicht nun die Verwendung einer aktuelleren ODBC-Systembibliothek.
 
 * Dem LINE-Servlet wurde beim Öffnen einer Verbindung ein Timeout hinzugefügt, um ein Rich-Bild zu laden. Wenn das Laden des Bildes zu lange dauert, stoppt das Servlet die Verbindung, um einen Engpass zu vermeiden.
 
@@ -151,17 +151,17 @@ _17. Februar 2020_
 
 * Es wurde ein Fehler behoben, der beim Analysieren der URLs im Inhalt von kontinuierlichen Versänden zum Absturz führen konnte. (NEO-16910)
 
-* Es wurde ein Problem behoben, bei dem die **Beginn** - und **End** -Felder beim Erstellen eines neuen Campaigns nicht berechnet wurden.
+* Es wurde ein Problem behoben, bei dem die **Beginn** - und **End** -Felder beim Erstellen einer neuen Kampagne nicht berechnet wurden.
 
 * Es wurde ein Problem mit der Workflow-Aktivität zum **Dateidownload** behoben, das bei Verwendung einer URL auftrat.
 
 * Es wurde ein Problem behoben, das beim Anzeigen einer Vorschau einer importierten Liste in einer Abfrage-Aktivität eines Berichts auftrat. (NEO-13119)
 
-* Es wurde ein Problem behoben, bei dem ein veraltetes Bild angezeigt wurde, wenn der Personalisierungsblock **Powered by Campaign** im E-Mail-Editor ausgewählt wurde.
+* Es wurde ein Problem behoben, bei dem ein veraltetes Bild angezeigt wurde, wenn der Personalisierungsblock **Powered by Kampagne** im E-Mail-Editor ausgewählt wurde.
 
 * Die Netzwerkkommunikation zwischen Client und Server wurde verbessert.
 
-* Es wurde ein Problem behoben, durch das zu viele Workflows im selben Campaign erstellt wurden. Jetzt können Sie nicht mehr als 28 Workflows erstellen. Es wird eine Warnung angezeigt.
+* Es wurde ein Problem behoben, durch das zu viele Workflows in derselben Kampagne erstellt wurden. Jetzt können Sie nicht mehr als 28 Workflows erstellen. Es wird eine Warnung angezeigt.
 
 * Es wurde ein Fehler behoben, der bei Verwendung der Option **Spaltenabgleich** A in einer Workflow-Aktivität der **Vereinigung** auftrat.
 
