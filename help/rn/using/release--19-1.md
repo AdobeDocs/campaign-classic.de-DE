@@ -15,22 +15,22 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
+source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-[Build-Aktualisierung](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html) | [Control Panel-Versionen](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html) | [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md) | [Frühere Versionshinweise](../../rn/using/release--19-1.md) | [Eingestellte Funktionen](https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html)
+[Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) | [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html) | [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md) | [Frühere Versionshinweise](../../rn/using/release--19-1.md) | [Eingestellte Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html)
 
 <table> 
  <tbody> 
   <tr> 
-   <td><img src="assets/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
-   <td><img src="assets/blue3.png"/><strong>Veröffentlichungskandidat</strong></td> 
-   <td><img src="assets/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
-   <td><img src="assets/red3.png"/><strong>Veraltet</strong></td> 
+   <td><img src="assets/do-not-localize/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
+   <td><img src="assets/do-not-localize/blue3.png"/><strong>Veröffentlichungskandidat</strong></td> 
+   <td><img src="assets/do-not-localize/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
+   <td><img src="assets/do-not-localize/red3.png"/><strong>Veraltet</strong></td> 
   </tr> 
    <tr> 
    <td>Neuester verfügbarer stabiler Build. Build in Produktion validiert.<br> </td>
@@ -41,9 +41,9 @@ source-git-commit: 62f63a47fae9bddf2303bbed18f1aadab4717245
  </tbody> 
 </table>
 
-Der **letzte stabile Build** ist 9032 (205c981c3). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Der **letzte stabile Build** ist 9032 (3a9dc9c). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
 
-## ![](assets/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -59,7 +59,7 @@ _3. Oktober 2019_
 * Es wurde ein Fehler behoben, der dazu führte, dass bestimmte Nachrichten nicht vom Mid-Sourcing-Server verarbeitet wurden. (NEO-12395)
 * Fehlerkorrektur – Die SQL-Data-Management-Aktivität lässt sich jetzt voll nutzen (es fehlte die spezifische „SQL-Data-Management“-Berechtigung).
 
-## ![](assets/orange_2.png) Version 19.1.5 – Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1.5 – Build 9033{#release-19-1-5-build-9033}
 
 _13. August 2019_
 
@@ -74,31 +74,35 @@ _13. August 2019_
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/green_2.png) 5. **März 2020**: neuer Build (9032-...205c981c3), der die folgende Fehlerbehebung enthält:
+![](assets/do-not-localize/green_2.png) 29. **April 2020**: new build (9032@3a9dc9c), das die folgende Fehlerbehebung enthält:
+
+* Verbesserte Sicherheit bei der Verfolgung von Links in E-Mails. Dies ist standardmäßig für alle Kunden aktiviert. Es steht eine zusätzliche, erweiterte Sicherheitsfunktion zur Verfügung, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weitere Informationen zu den Funktionen und Schritten für nicht gehostete Kunden, um sie zu aktivieren, finden Sie in der Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
+* Es wurde ein Problem behoben, das die Anzeige von Bildern in Line-Versänden verhinderte. (NEO-23207)
+
+![](assets/do-not-localize/orange_2.png) 5. **März 2020**: new build (9032@19f73c5), das die folgende Fehlerbehebung enthält:
 
 * Es wurde ein Problem mit Externen Konti behoben, die FTP über SSL verwenden. (NEO-20498)
 
-![](assets/orange_2.png) 17. **Dezember 2019**: neuer Build (9032-...9d34fb17e), der die folgende Fehlerbehebung enthält:
+![](assets/do-not-localize/orange_2.png) 17. **Dezember 2019**: new build (9032@d6b8062), das die folgende Fehlerbehebung enthält:
 
-* Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter).
-(NEO-19595)
+* Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter). (NEO-19595)
 
-![](assets/orange_2.png) 11. **Dezember 2019**: Neubau (9032-...e28b428b7), die die folgende Fehlerbehebung enthält:
+![](assets/do-not-localize/orange_2.png) 11. **Dezember 2019**: new build (9032@bc4a935), das die folgende Fehlerbehebung enthält:
 
 * Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
 
-![](assets/orange_2.png) 20. **November 2019**: new build (9032-...3468c7bb5), das die folgenden Fehlerbehebungen enthält:
+![](assets/do-not-localize/orange_2.png) 20. **November 2019**: new build (9032@3468c7b), das die folgenden Fehlerbehebungen enthält:
 
 * Fehlerkorrektur – Die Anmeldung per IMS-Authentifizierung funktioniert nun. (NEO-17312)
 * Fehlerkorrektur – Kumulative Berichte zu mehreren Sendungen werden nun richtig angezeigt. (NEO-18165)
 * Fehlerkorrektur – Der Webserver wird nicht mehr blockiert oder zum Absturz gebracht.
 
-![](assets/orange_2.png) 19. **September 2019**: Neubau (9032-...cee805c93), die die folgenden Fehlerbehebungen enthält:
+![](assets/do-not-localize/orange_2.png) 19. **September 2019**: new build (9032@cee805c), das die folgenden Fehlerbehebungen enthält:
 
 * Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
 * Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
 
-![](assets/orange_2.png) **13. August 2019**: erster Build 19.1.4, der folgende Fehlerkorrekturen enthält:
+![](assets/do-not-localize/orange_2.png) **13. August 2019**: erster Build 19.1.4, der folgende Fehlerkorrekturen enthält:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
 * Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
@@ -106,7 +110,7 @@ _13. August 2019_
 * Fehlerkorrektur – Der DKIM-Schlüssel wird jetzt in E-Mails eingebettet, sodass der Versand fehlerfrei funktioniert. (NEO-16804)
 * Fehlerkorrektur – Die Workflow-Planung funktioniert jetzt wieder einwandfrei, sodass Workflows entsprechend ihrer Konfiguration ausgeführt werden. (NEO-16619, NEO-16426)
 
-## ![](assets/orange_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
 
 _21. Juni 2019_
 
@@ -122,7 +126,7 @@ _21. Juni 2019_
 * Jetzt können in Microsoft Dynamics erstellte Platzhaltereinträge während des Import-Workflows gelöscht werden.
 * Erweiterte Berechtigungen zur Ausführung des Sicherheitszonen-Package bei der Verwendung eines internen Kontos.
 
-## ![](assets/orange_2.png) Version 19.1 – Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/orange_2.png) Version 19.1 – Build 9026{#release-19-1-build-9026}
 
 _30. Mai 2019_
 
@@ -138,7 +142,7 @@ _30. Mai 2019_
  <tbody> 
   <tr> 
    <td> Control Panel<br /> </td> 
-   <td> <p>Um Ihre Arbeit als Admin-Benutzer effizienter zu gestalten, haben Sie die Möglichkeit, die Einstellungen Ihrer SFTP-Server zu verwalten. So können Sie den Speicher überwachen, IP-Adressen auf die Whitelist setzen und SSH-Schlüssel für jede Instanz installieren. Das Control Panel ist ab heute nur noch für Kunden verfügbar ist, die auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich noch heute über Experience Cloud an</a>).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf das Control Panel ist keine Aktualisierung auf den neuesten Campaign-Build nötig.</p> </td> 
+   <td> <p>Um Ihre Arbeit als Admin-Benutzer effizienter zu gestalten, haben Sie die Möglichkeit, die Einstellungen Ihrer SFTP-Server zu verwalten. So können Sie den Speicher überwachen, IP-Adressen auf die Whitelist setzen und SSH-Schlüssel für jede Instanz installieren. Das Control Panel ist ab heute nur noch für Kunden verfügbar ist, die auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich noch heute über Experience Cloud an</a>).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf das Control Panel ist keine Aktualisierung auf den neuesten Campaign-Build nötig.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit-Protokoll<br /> </td> 
@@ -150,7 +154,7 @@ _30. Mai 2019_
   </tr> 
   <tr> 
    <td> Aktualisierung der Kompatibilitätsmatrix<br /> </td> 
-   <td> Mit dieser neuen Version unterstützt Adobe Campaign nun die folgenden Datenbanksysteme. Siehe <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix</a>.<br /> 
+   <td> Mit dieser neuen Version unterstützt Adobe Campaign nun die folgenden Datenbanksysteme. Siehe <a href="https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix</a>.<br /> 
     <ul> 
      <li> <p>Oracle 18c</p> </li> 
      <li> <p>MySQL 5.7 (FDA)</p> </li> 
@@ -180,7 +184,7 @@ _30. Mai 2019_
 
 **Verbesserungen bei Schutzmechanismen, Stabilität und Skalierbarkeit**
 
-* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA über HTTP v2: Das FDA über HTTP-Protokoll wird häufig bei hybriden Implementierungen verwendet, insbesondere für den Abruf von Broadlogs und die Sendungsvorbereitung. Die Stabilität wurde verbessert, um Netzwerkprobleme und mögliche Fehler beim Abrufen oder Senden von Daten zu vermeiden. Dies setzt voraus, dass die Builds an beiden Enden der Verbindung auf dem neuesten Stand sind, da ansonsten das alte Protokoll weiterhin verwendet wird.
 * Tracking-Workflow: Die Stabilität des Tracking-Workflows wurde verbessert. Mehrere Probleme im Zusammenhang mit Trackinglog-Einfügungen/-Aktualisierungen und der individuellen URL-Tracking-Anpassung wurden behoben. Darüber hinaus erkennt der Tracking-Workflow jetzt Trackinglog-Probleme, die zu Fehlern führen könnten, und stoppt den Workflow. Diese Probleme werden jetzt verworfen und nicht mehr verarbeitet.
 * Bereinigungs-Workflow: Der Bereinigungs-Workflow wurde verbessert, um mögliche Fehler und Unterbrechungen zu vermeiden. Dadurch wird auch die Größe und Leistungsfähigkeit der Datenbank optimiert.
