@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
 
 ---
 
@@ -74,7 +74,7 @@ _13. August 2019_
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29. **April 2020**: new build (9032@3a9dc9c), das die folgende Fehlerbehebung enthält:
+![](assets/do-not-localize/green_2.png) 29. **April 2020**: new build (9032@3a9dc9c), das die folgenden Fehlerbehebungen enthält:
 
 * Verbesserte Sicherheit bei der Verfolgung von Links in E-Mails. Dies ist standardmäßig für alle Kunden aktiviert. Es steht eine zusätzliche, erweiterte Sicherheitsfunktion zur Verfügung, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weitere Informationen zu den Funktionen und Schritten für nicht gehostete Kunden, um sie zu aktivieren, finden Sie in der Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 * Es wurde ein Problem behoben, das die Anzeige von Bildern in Line-Versänden verhinderte. (NEO-23207)
