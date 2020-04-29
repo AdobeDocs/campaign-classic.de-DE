@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c8910fdfd07bd835d456baca29710ea927ad20e5
+source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
 
 ---
 
@@ -134,7 +134,7 @@ Es wurde ein Beispiel für die Verwendung einer Instanzvariablen in einem Workfl
 
 Die Option „WdbcOptions_TempDbName“ wurde der Liste der Kampagnenoptionen hinzugefügt – [mehr dazu](../../installation/using/configuring-campaign-options.md)
 
-Die Seite „FDA-Matrix“ wurde [hierher](/help/rn/using/assets/fda_rdbms_rights.pdf) verschoben.
+Die Seite „FDA-Matrix“ wurde [hierher](../../platform/using/remote-database-access-rights.md) verschoben.
 
 Die Seite „Zugriffsberechtigungsmatrix“ wurde [hierher](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf) verschoben.
 
