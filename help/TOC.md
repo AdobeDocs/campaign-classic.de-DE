@@ -5,7 +5,7 @@ index: y
 product: adobe campaign
 sub-product: adobe Kampagne classic
 translation-type: tm+mt
-source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
+source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
 
 ---
 
@@ -286,34 +286,34 @@ source-git-commit: ffaa4d4442448f9d30c4a1ef41b8bd73363088e0
 + Integration mit Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Über Campaign-Integrationen](integrations/using/about-campaign-integrations.md)
    + Zielgruppenfreigabe {#audience-sharing}
-      + [Zielgruppenfreigabe mit Adobe Marketing Cloud](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Freigeben von Audiencen mit [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Antrag an Adobe übermitteln](integrations/using/submitting-request-to-adobe.md)
-      + [Integration mit freigegebenen Zielgruppen in Adobe Campaign konfigurieren](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Konfigurieren der Integration freigegebener Audiencen im [!DNL-Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Problembehebung](integrations/using/troubleshooting.md)
       + [Zielgruppenimport und -export](integrations/using/importing-and-exporting-audiences.md)
    + Asset-Freigabe {#asset-sharing}
-      + [Assets mit Adobe Marketing Cloud freigeben](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Zugriff auf Assets konfigurieren](integrations/using/configuring-access-to-assets.md)
+      + [Freigeben von Assets mit [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [Zugriff auf [!DNL Assets] konfigurieren](integrations/using/configuring-access-to-assets.md)
       + [Freigegebene Assets nutzen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
-      + [Über Adobe Experience Manager](integrations/using/about-adobe-experience-manager.md)
+      + [Info zu [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Integration konfigurieren](integrations/using/configuring-the-integration.md)
-      + [Experience-Manager-Newsletter erstellen](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [Erstellen eines [!DNL Experience Manager]-Newsletters](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Integration mit Adobe Target](integrations/using/integrating-with-adobe-target.md)
-      + [Integration mit Adobe Target konfigurieren](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Integration mit [!DNL Adobe Zielgruppe]](integrations/using/integrating-with-adobe-target.md)
+      + [Integration mit [!DNL Adobe Zielgruppe] konfigurieren](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Dynamisches Bild einfügen](integrations/using/inserting-a-dynamic-image.md)
    + Verbindung mit Adobe ID {#connecting-via-an-adobe-id}
-      + [Über die Adobe ID](integrations/using/about-adobe-id.md)
-      + [IMS konfigurieren](integrations/using/configuring-ims.md)
-      + [IMS implementieren](integrations/using/implementing-ims.md)
+      + [Info zu [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [[!DNL IMS] konfigurieren](integrations/using/configuring-ims.md)
+      + [Implementierung von [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Problembehebung bei IMS](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
-      + [Grundlagen und Datenzyklus von ACS Connector](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] - Grundsätze und Datenzyklus](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profile synchronisieren](integrations/using/synchronizing-profiles.md)
       + [Zielgruppen synchronisieren](integrations/using/synchronizing-audiences.md)
       + [Webanwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
-      + [Problembehebung bei ACS Connector](integrations/using/troubleshooting-the-acs-connector.md)
+      + [Fehlerbehebung beim [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
 + Mit Workflows automatisieren {#automating-with-workflows}
    + Einleitung {#introduction}
       + [Über Workflows](workflow/using/about-workflows.md)
