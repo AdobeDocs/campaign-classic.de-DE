@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 47fd157e369ddf6c67f0b2b467799cecc6e5a822
+source-git-commit: 9d22af2a2e25cb0dd83759096139996372f60c33
 
 ---
 
@@ -26,22 +26,21 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 
 >[!CAUTION]
 >
->Der Zugriff auf eine externe Datenbank über FDA ist nur für lokale oder hybride Installationen möglich, mit Ausnahme der Snowflake Connectors. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Der Zugriff auf eine externe Datenbank über FDA ist nur bei lokalen oder hybriden Installationen möglich, mit Ausnahme der Snowflake-Anschlüsse. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Grundprinzip {#operating-principle}
 
-Mit der FDA-Option können Sie Ihr Datenmodell in einer Datenbank eines Drittanbieters erweitern. Es erkennt automatisch die Struktur der zielgerichteten Tabellen und verwendet Daten aus den SQL-Quellen.
-
+Mit der Option &quot;FDA&quot;können Sie Ihr Datenmodell in einer Drittanbieterdatenbank erweitern. Es erkennt automatisch die Struktur der zielgerichteten Tabellen und verwendet Daten aus den SQL-Quellen.
 
 Um diese Funktion zu verwenden, gehen Sie folgendermaßen vor:
 
-1. Sie benötigen eine externe Datenbank, die mit dem FDA-Modul von Adobe Campaign kompatibel ist. Die Liste mit Datenbanksystemen und kompatiblen Versionen finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html). Benutzer benötigen zudem die [entsprechenden Berechtigungen](../../platform/using/remote-database-access-rights.md) für Adobe Campaign und die externe Datenbank.
+1. Sie benötigen eine externe Datenbank, die mit dem FDA-Modul von Adobe Campaign kompatibel ist. Die Liste mit Datenbanksystemen und kompatiblen Versionen finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html). Benutzer benötigen zudem die [entsprechenden Berechtigungen](../../platform/using/remote-database-access-rights.md) für Adobe Campaign und die externe Datenbank.
 1. [Installieren Sie die entsprechenden Treiber](../../platform/using/specific-configuration-database.md) für Ihre Datenbank auf dem Adobe-Campaign-Server.
 1. [Erstellen und konfigurieren Sie ein externes Konto](../../platform/using/connecting-to-database.md), über das Sie die Verbindung zwischen Adobe Campaign und der externen Datenbank herstellen können. Weitere Informationen zu verfügbaren externen Konten finden Sie auf dieser [Seite](../../platform/using/external-accounts.md).
-1. [Erstellen Sie das Schema](../../platform/using/creating-data-schema.md) der externen Datenbank in Adobe Campaign. Dadurch können Sie die Datenstruktur der externen Datenbank erkennen.
+1. [Erstellen Sie das Schema](../../platform/using/creating-data-schema.md) der externen Datenbank in Adobe Campaign. Auf diese Weise können Sie die Datenstruktur der externen Datenbank erkennen.
 1. [Erstellen Sie abschließend ein neues Zielgruppen-Mapping](../../platform/using/defining-data-mapping.md) aus dem zuvor erstellten Schema, wenn die Empfänger Ihrer Sendungen aus der externen Datenbank stammen. Dies bringt gewisse Einschränkungen mit sich, vor allem in Bezug auf die Personalisierung der Sendungen.
 
-Nachdem das Datenschema erstellt wurde, können Daten in Adobe Campaign-Workflows verarbeitet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/executing-a-workflow.md#architecture).
+Nachdem das Schema erstellt wurde, können die Daten in Adobe Campaign Workflows verarbeitet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/accessing-an-external-database--fda-.md).
 
 ## Best Practices und Empfehlungen {#best-practices-and-recommendations}
 
