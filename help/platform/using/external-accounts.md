@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7df1f73dd454f826096ce4d5fe430e10fe407ad
+source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
 
 ---
 
@@ -33,7 +33,7 @@ Die folgenden externen Konten können eingerichtet werden:
 * [Externes Facebook Connect-Konto](#facebook-connect-external-account)
 * [Externes Konto der Ausführungsinstanz](#execution-instance-external-account)
 * [Externes Adobe Experience Cloud-Konto](#adobe-experience-cloud-external-account)
-* [Externes SFTP-Konto  ](#sftp-external-account)
+* [Externes SFTP-Konto](#sftp-external-account)
 * [Externes Adobe-Experience-Manager-Konto](#adobe-experience-manager-external-account)
 * [Externes Amazon Simple Storage Service-Konto (S3)](#amazon-simple-storage-service--s3--external-account)
 * [externes Azure-Konto](#azure-external-account)
@@ -57,7 +57,7 @@ Externe Konten werden von technischen Prozessen, wie technischen Workflows oder 
 
    ![](assets/ext_account_2.png)
 
-1. Geben Sie ein **[!UICONTROL Label]** und ein **[!UICONTROL Internal Name]**. Beide werden bei der Auswahl externer Konten in Workflows verwendet.
+1. Geben Sie ein **[!UICONTROL Label]** und ein **[!UICONTROL Internal Name]**. Beide werden bei der Auswahl von Externen Konti in Workflows verwendet.
 1. Check **[!UICONTROL Enabled]** if you want your connection to be enabled.
 1. Select your external account **[!UICONTROL Type]** which one you want to create.
 1. Konfigurieren Sie den Zugriff auf das Konto, indem Sie die Anmeldeinformationen entsprechend dem gewählten externen Kontotyp angeben.
@@ -113,8 +113,7 @@ Die folgenden Kanäle können konfiguriert werden:
 * [Agentur](../../delivery/using/other-channels.md)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
 * [Twitter](../../social/using/configuring-publishing-on-twitter.md)
-* [iOS
-                            -Kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
+* [iOS-Kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-ios)
 * [Android-Kanal](../../delivery/using/configuring-the-mobile-application.md#configuring-the-mobile-application-android)
 
 ## Externes FTP-Konto {#ftp-external-account}
@@ -168,9 +167,9 @@ Die folgenden Verbindungstypen können konfiguriert werden:
 * ODBC (Sybase ASE, Sybase IQ)
 * HTTP-Weiterleitung auf Remote-Datenbank
 
-### Schneeflocken-Außenkonto {#snowflake-external-account}
+### Schneeflocken-Externe Konto {#snowflake-external-account}
 
-Mit dem externen **Snowflake** -Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Snowflake-Datenbank verbinden. Weitere Informationen zur Konfiguration von Campaign Classic mit Snowflake finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+The **Snowflake** external account allows you to connect your Campaign instance to your Snowflake external database. For more information on how to configure Campaign Classic with Snowflake, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
 
 Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
@@ -194,7 +193,7 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 ### Externes Teradata-Konto {#teradata-external-account}
 
-Mit dem externen **Teradata** -Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden. Weitere Informationen zum Konfigurieren von Campaign Classic mit Teradata finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/campaign_fda_teradata.html) oder in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
+Über das externe **Teradata**-Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden. Weiterführende Informationen zum Konfigurieren von Campaign Classic mit Teradata finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/campaign_fda_teradata.html) oder in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
 
 ![](assets/ext_account_19.png)
 
@@ -236,15 +235,15 @@ Jedes Mal, wenn ein Campaign-Benutzer eine Abfrage in der Teradata-Datenbank aus
 
 Check the **[!UICONTROL Active]** box to activate this feature
 
-Mit dem **[!UICONTROL Default]** Feld können Sie ein Standard-Abfrageband eingeben, das verwendet wird, wenn ein Benutzer kein zugewiesenes Abfrageband hat. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrageband keine Teradata verwenden.
+Im **[!UICONTROL Default]** Feld können Sie ein Standardband für die Abfrage eingeben, das verwendet wird, wenn ein Benutzer über kein zugewiesenes Abfragen-Band verfügt. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrage keine Teradata verwenden.
 
-Mit dem **[!UICONTROL Users]** Feld können Sie für jeden Benutzer ein Abfrageband angeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Abfrageband zugewiesen ist, wird das **[!UICONTROL Default]** Feld angewendet.
+Mit dem **[!UICONTROL Users]** Feld können Sie für jeden Benutzer ein Abfrage-Band angeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Abfragen-Band zugewiesen ist, wird das **[!UICONTROL Default]** Feld angewendet.
 
 Weitere Informationen zu **[!UICONTROL Query banding]** finden Sie im [Teradata-Handbuch](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 ## Externes Web Analytics-Konto {#web-analytics-external-account}
 
-Mit dem **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** externen Konto können Sie Daten aus Adobe Analytics in Form von Segmenten an Adobe Campaign weiterleiten. Umgekehrt sendet es Indikatoren und Attribute von E-Mail-Kampagnen, die von Adobe Campaign an Adobe Analytics - Data Connector gesendet werden.
+Mit dem **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** Externe Konto können Sie Daten aus Adobe Analytics in Segmentform an Adobe Campaign weiterleiten. Umgekehrt sendet es Indikatoren und Attribute von E-Mail-Kampagnen, die von Adobe Campaign an Adobe Analytics - Data Connector gesendet werden.
 
 ![](assets/ext_account_10.png)
 
@@ -254,7 +253,7 @@ Für dieses externe Konto muss die Berechnungsformel für getrackte URLs angerei
 
 Mit dem externen Konto **[!UICONTROL Facebook Connect]** können Sie in Facebook-Anwendungen personalisierte Inhalte anzeigen. Dadurch wird es einfacher, über dieses soziale Netzwerk potenzielle Kunden zu gewinnen.
 
-Für jede Facebook-Anwendung müssen Sie ein externes **[!UICONTROL Facebook Connect]** Konto erstellen. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+Für jede Facebook-Anwendung müssen Sie ein externes **[!UICONTROL Facebook Connect]**-Konto erstellen. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
@@ -322,7 +321,7 @@ To connect to the Adobe Campaign console using an Adobe ID, you must configure t
 
 * **[!UICONTROL IMS organization ID]**
 
-   ID Ihrer IMS-Organisation. Um Ihre Organisations-ID zu finden, gehen Sie auf diese [Seite](https://marketing.adobe.com/resources/help/en_US/mcloud/faq.html) (**Wo finde ich meine IMS-Organisations-ID?**).
+   ID Ihrer IMS-Organisation. Um Ihre Organisations-ID zu finden, gehen Sie auf diese [Seite](https://marketing.adobe.com/resources/help/de_DE/mcloud/faq.html) (**Wo finde ich meine IMS-Organisations-ID?**).
 
 * **[!UICONTROL Association mask]**
 
@@ -338,7 +337,7 @@ To connect to the Adobe Campaign console using an Adobe ID, you must configure t
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../integrations/using/configuring-ims.md).
 
-## Externes SFTP-Konto   {#sftp-external-account}
+## Externes SFTP-Konto  {#sftp-external-account}
 
 Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie dem SFTP-Server einzurichten, der für Dateiübertragungen verwendet wird, können Sie eigene externe Konten erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/file-transfer.md).
 
@@ -350,7 +349,7 @@ Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb 
 
 * **[!UICONTROL Port]**
 
-   Anschlussnummer der FTP-Verbindung. Der Standardanschluss ist 22.
+   Port-Nummer der FTP-Verbindung. Der Standard-Port ist 22.
 
 * **[!UICONTROL Account]**
 
@@ -406,7 +405,7 @@ Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informa
 
 * **[!UICONTROL AWS Region]**
 
-   Weitere Informationen zur AWS-Region finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
+   Weiterführende Informationen zur AWS-Region finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
 * The **[!UICONTROL Use server side encryption]** checkbox allows you to store your file in S3 encrypted mode.
 
@@ -428,11 +427,11 @@ Mit dem externen **[!UICONTROL Azure]**-Konto können Sie über Adobe Campaign a
 
 * **[!UICONTROL Access key]**
 
-   Informationen darüber, wo Sie Ihren Zugangsschlüssel finden, erfahren Sie auf dieser [Seite](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-manage) (Abschnitt **Zugangsschlüssel anzeigen und kopieren**).
+   Informationen darüber, wo Sie Ihren Zugangsschlüssel finden, erfahren Sie auf dieser [Seite](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-manage) (Abschnitt **Zugangsschlüssel anzeigen und kopieren**).
 
 ## Externes Hadoop-Konto {#hadoop-external-account}
 
-Mit dem externen **[!UICONTROL Hadoop]**-Konto können Sie über Adobe Campaign auf eine gemeinsam genutzte externe Datenbank zugreifen, vorausgesetzt die Verbindung ist aktiv. For more information on how to configure access to Hadoop, refer to this [section](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
+Mit dem externen **[!UICONTROL Hadoop]**-Konto können Sie über Adobe Campaign auf eine gemeinsam genutzte externe Datenbank zugreifen, vorausgesetzt die Verbindung ist aktiv. Weiterführende Informationen zur Konfiguration des Zugriffs auf Hadoop finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop).
 
 ![](assets/ext_account_16.png)
 
@@ -448,8 +447,8 @@ Mit dem externen **[!UICONTROL Hadoop]**-Konto können Sie über Adobe Campaign 
 
 Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
 
-Die Konfiguration von Microsoft Dynamics Connector für die Verwendung mit Adobe Campaign hängt von Ihrem Bereitstellungstyp ab.
-Bei **[!UICONTROL On-premise]** und **[!UICONTROL Office 365]** Bereitstellungstypen müssen Sie die folgenden Details angeben:
+Wie Sie den Microsoft Dynamics Connector zur Verwendung mit Adobe Campaign konfigurieren müssen, hängt von Ihrem Bereitstellungstyp ab.
+Bei den Bereitstellungstypen **[!UICONTROL On-premise]** und **[!UICONTROL Office 365]** müssen Sie folgende Details angeben:
 
 ![](assets/ext_account_21.png)
 
@@ -467,18 +466,18 @@ Bei **[!UICONTROL On-premise]** und **[!UICONTROL Office 365]** Bereitstellungst
 
 * **[!UICONTROL Company name]** für die Bereitstellung vor Ort und Office 365
 
-   Name Ihres Unternehmens.
+   Der Name Ihres Unternehmens.
 
 * **[!UICONTROL Organization name]** für lokale Bereitstellung
 
    Name Ihrer Organisation
-Organisationsname, der im Developers Resources Dashboard in Microsoft Dynamics, **[!UICONTROL Unique Name]** Feld gefunden wird.
+Organization name which can be found in the Developers resources dashboard in Microsoft Dynamics, **[!UICONTROL Unique Name]** field.
 
 * **[!UICONTROL CRM version]** für lokale Anwendungen
 
    Version des CRM zwischen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**.
 
-Bei **[!UICONTROL Web API]** Bereitstellungstyp und **[!UICONTROL Password credentials]** Authentifizierung müssen Sie die folgenden Details angeben:
+With **[!UICONTROL Web API]** deployment type and **[!UICONTROL Password credentials]** authentication, you need to provide the following details:
 
 ![](assets/ext_account_14.png)
 
@@ -492,13 +491,13 @@ Bei **[!UICONTROL Web API]** Bereitstellungstyp und **[!UICONTROL Password crede
 
 * **[!UICONTROL Client identifier]**
 
-   Client-ID, die aus dem Microsoft Azurblaus Management Portal in der **[!UICONTROL Update your code]** Kategorie, **[!UICONTROL Client ID]** Feld gefunden werden kann.
+   Client-ID, die von Microsoft Azurblaus Management Portal in der **[!UICONTROL Update your code]** Kategorie, **[!UICONTROL Client ID]** Feld gefunden werden kann.
 
 * **[!UICONTROL CRM version]**
 
    Version des CRM zwischen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**.
 
-Bei **[!UICONTROL Web API]** Bereitstellungstyp und **[!UICONTROL Certificate]** Authentifizierung müssen Sie die folgenden Details angeben:
+With **[!UICONTROL Web API]** deployment type and **[!UICONTROL Certificate]** authentication, you need to provide the following details:
 
 ![](assets/ext_account_22.png)
 
@@ -508,16 +507,15 @@ Bei **[!UICONTROL Web API]** Bereitstellungstyp und **[!UICONTROL Certificate]**
 
 * **[!UICONTROL Private Key (Base64 encoded)]**
 
-   Privater Schlüssel in Base64 kodiert
+   Privater Schlüssel mit Base64-Kodierung
 
 * **[!UICONTROL Custom Key identifier]**
-
 
 * **[!UICONTROL Key ID]**
 
 * **[!UICONTROL Client identifier]**
 
-   Client-ID, die aus dem Microsoft Azurblaus Management Portal in der **[!UICONTROL Update your code]** Kategorie, **[!UICONTROL Client ID]** Feld gefunden werden kann.
+   Client-ID, die von Microsoft Azurblaus Management Portal in der **[!UICONTROL Update your code]** Kategorie, **[!UICONTROL Client ID]** Feld gefunden werden kann.
 
 * **[!UICONTROL CRM version]**
 
@@ -565,11 +563,11 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 * **[!UICONTROL Client identifier]**
 
-   Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
+   Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL Security token]**
 
-   Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&type=1).
+   Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
 * **[!UICONTROL API version]**
 
