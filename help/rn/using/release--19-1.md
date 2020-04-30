@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ab6ce2fbe1ea9e2b2498c87471ad7813a082ebe6
+source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
 
 ---
 
@@ -78,6 +78,17 @@ _13. August 2019_
 
 * Verbesserte Sicherheit bei der Verfolgung von Links in E-Mails. Dies ist standardmäßig für alle Kunden aktiviert. Es steht eine zusätzliche, erweiterte Sicherheitsfunktion zur Verfügung, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weitere Informationen zu den Funktionen und Schritten für nicht gehostete Kunden, um sie zu aktivieren, finden Sie in der Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 * Es wurde ein Problem behoben, das die Anzeige von Bildern in Line-Versänden verhinderte. (NEO-23207)
+* Es wurde ein Problem mit der **File Transfer** -Aktivität behoben, durch das die SFTP-Schlüsselauthentifizierung nicht auf Debian 9 funktionierte. (NEO-23183)
+* Es wurde ein Problem behoben, das sich auf Push-Benachrichtigungen auswirken konnte, wenn diese mit hoher Frequenz gesendet wurden. (NEO-20516)
+* Es wurde ein Problem im Angebot-Antwortmanagement behoben, das zu Webserverabstürzen führen konnte. (NEO-19482)
+* Es wurde ein Fehler in der LibreOffice-Verwaltung behoben, der das Exportieren von Berichten verhinderte. (NEO-20982)
+* Es wurde ein Fehler behoben, der beim Aktualisieren zahlreicher Workflows mit einer Umfrage-Aktivität auftrat.
+* Verbesserte LibreOffice-Verwaltung, um Fehler bei der E-Mail-Vorschau mit .odt-Dateien zu vermeiden.
+* Verbesserte Verwaltung der Apache-Verbindung, um Latenzzeiten beim Webdienst zu vermeiden.
+* Die Anzeige des Version-Tags (7-stellig) im Menü **Info** wurde verbessert.
+* Korrektur eines Rückgangs im Listen-Management, der die Veröffentlichung von Angeboten verhinderte.
+* Korrektur einer Regression, die zum Absturz des Bereinigungs-Workflows führte.
+* Eine geringfügige Regression in den Bereinigungs-Workflow-Protokollen wurde behoben.
 
 ![](assets/do-not-localize/orange_2.png) 5. **März 2020**: new build (9032@19f73c5), das die folgende Fehlerbehebung enthält:
 
