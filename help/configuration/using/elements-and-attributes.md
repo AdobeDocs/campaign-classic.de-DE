@@ -15,18 +15,18 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
 
 ---
 
 
 # Elemente und Attribute {#elements-and-attributes}
 
-Beim Bearbeiten eines Schemas ist ein auf dem Quellschema basierendes Genehmigungssystem (xtk:srcSchema) verfügbar. Beim Aktualisieren der Datenbank mit dem Befehl &quot;Datenbankstruktur aktualisieren...&quot; können auch Fehler erkannt werden. Assistent.
+Beim Bearbeiten eines Schemas ist ein auf dem Quellcode-Schema basierendes Genehmigungssystem (xtk:srcSchema) verfügbar. Beim Aktualisieren der Datenbank mit dem Befehl &quot;Datenbankstruktur aktualisieren...&quot; können auch einige Fehler erkannt werden. Assistent.
 
-Standardmäßig sind in Adobe Campaign-Schemata alle booleschen Typattribute &quot;false&quot;. Um sie zu aktivieren, müssen Sie das Attribut im Schema angeben und seinen Wert auf &quot;true&quot;setzen.
+Standardmäßig sind in Adobe Campaign-Schemas alle booleschen Typattribute &quot;false&quot;. Um sie zu aktivieren, müssen Sie das Attribut im Schema angeben und dessen Wert auf &quot;true&quot;setzen.
 
-## `<attribute>` element {#attribute--element}
+## `<attribute>` Element {#attribute--element}
 
 ### Inhaltsmodell {#content-model}
 
@@ -34,7 +34,7 @@ attribute:==help
 
 ### Attribute {#attributes}
 
-_operation (string), advanced (boolean), applyIf (string), autoIncrement (boolean), gehörtTo (string), dataPolicy (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), edit (string), enum (string), expr (string), feature (string), Date (boolean), img (string), inout (string), label (string), length (string), localizable (boolean), name (MNTOKEN), notNull (boolean), pkgStatus (string), ref (string), required (boolean), sql (boolean), sqlDefault (string), sqlname (string), sqltable (string), target (MNTOKEN), template (string), translatedDefault (string), translatedExpr (string), type (MNTOKEN), user (boolean), userEnum (string), visibleIf (string), xml (boolean)
+_operation (string), advanced (boolean), applyIf (string), autoIncrement (boolean), gehörtTo (string), dataPolicy (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), edit (string), enum (string), expr (string), feature (string), Date (boolean), img (string), inout (string), label (string), length (string), localizable (boolean), name (MNTOKEN), notNull (boolean), pkgStatus (string), ref (string), required (boolean), sql (boolean), sqlDefault (string), sqlname (string), sqltable (string), Zielgruppe (MNTOKEN), Vorlage (string), translatedDefault (string), translationExpr (string), type (MNTOKEN), user (boolean), userEnum (string), visibleIf (string), xml (boolean)
 
 ### Eltern {#parents}
 
@@ -52,13 +52,13 @@ _operation (string), advanced (boolean), applyIf (string), autoIncrement (boolea
 
 `<attribute>` -Elemente in einem `<element>` Element deklariert werden.
 
-Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werden, wirkt sich nicht auf die Felderstellungssequenz in der Datenbank aus `<srcschema>` . Die Erstellungssequenz ist alphabetisch.
+Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werden, wirkt sich nicht auf die Felderstellungssequenz in der Datenbank aus `<srcschema>` . Die Erstellungsreihenfolge ist alphabetisch.
 
 ### Attributbeschreibung {#attribute-description}
 
 * **_operation (string)**: definiert den Typ des Schreibens in der Datenbank.
 
-   Dieses Attribut wird hauptsächlich beim Erweitern von vordefinierten Schemata verwendet.
+   Dieses Attribut wird hauptsächlich beim Erweitern von vordefinierten Schemas verwendet.
 
    Barrierefreie Werte sind:
 
@@ -68,10 +68,10 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werd
    * &quot;update&quot;: aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
    * &quot;delete&quot;: löschen. Das bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
-* **advanced (boolean)**: Wenn diese Option aktiviert ist (@advanced=&quot;true&quot;), können Sie das Attribut in der Liste der verfügbaren Felder ausblenden, die für die Konfiguration einer Liste in einem Formular verfügbar sind.
+* **advanced (boolean)**: Wenn diese Option aktiviert ist (@advanced=&quot;true&quot;), können Sie das Attribut auf der Liste der verfügbaren Felder ausblenden, auf die Sie zur Konfiguration einer Liste in einem Formular zugreifen können.
 * **applyIf (Zeichenfolge)**: Mit diesem Attribut können Sie Felder optional machen. Das `<attribute>` Element wird bei der Aktualisierung der Datenbank berücksichtigt, wenn die Einschränkung eingehalten wird. &quot;applyIf&quot;erhält einen XTK-Ausdruck.
 * **autoIncrement (boolean)**: Wenn diese Option aktiviert ist, wird das Feld zu einem Zähler. Auf diese Weise können Sie einen Wert (meist IDs) erhöhen. (externe Verwendung)
-* **assignTo (string)**: nimmt den Namen und den Namespace der Tabelle, die das Feld gemeinsam verwendet, und füllt das Schema, in dem das Attribut deklariert wird. (nur in a verwendet `<schema>`).
+* **assignTo (string)**: nimmt den Namen und den Namensraum der Tabelle, die das Feld gemeinsam verwendet, und füllt das Schema, in dem das Attribut deklariert wird. (nur in a verwendet `<schema>`).
 * **dataPolicy (Zeichenfolge)**: ermöglicht Ihnen, Genehmigungsbeschränkungen für im SQL- oder XML-Feld zulässige Werte festzulegen. Die Werte für dieses Attribut lauten:
 
    * &quot;none&quot;: no value
@@ -83,14 +83,14 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werd
    * &quot;identifier&quot;: Bezeichnername
    * &quot;resIdentifier&quot;: Dateiname
 
-* **dbEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;geschlossenen&quot;Aufzählung. Die Aufzählungswerte müssen in der `<srcschema>`definiert werden.
+* **dbEnum (Zeichenfolge)**: erhält den internen Namen einer &quot;geschlossenen&quot;Auflistung. Die Werte für die Auflistung müssen in der `<srcschema>`definiert werden.
 * **defOnDuplicate (boolean)**: Wenn dieses Attribut aktiviert ist, wird bei der Duplizierung eines Datensatzes der (in &quot;@default&quot;definierte) Standardwert automatisch erneut auf den Datensatz angewendet.
 * **default (Zeichenfolge)**: können Sie den Wert des Standardfelds definieren (Aufruf einer Funktion, Standardwert). Dieses Attribut erhält einen XTK-Ausdruck.
 * **desc (Zeichenfolge)**: können Sie eine Beschreibung des Attributs einfügen. Diese Beschreibung wird in der Statusleiste der Benutzeroberfläche angezeigt.
-* **edit (string)**: Dieses Attribut gibt den Typ der Eingabe an, die in dem mit dem Schema verknüpften Formular verwendet wird.
-* **enum (Zeichenfolge)**: erhält den Namen der Aufzählung, die mit dem Feld verknüpft ist. Die Aufzählung kann in dasselbe Schema oder in ein Remote-Schema eingefügt werden.
-* **expr (Zeichenfolge)**: definiert einen Ausdruck für die Feldvorberechnung. Dieses Attribut empfängt einen Xpath- oder XTK-Ausdruck.
-* **Funktion (Zeichenfolge)**: definiert ein Kennzeichenfeld: Diese Felder dienen zum Erweitern der Daten in einer vorhandenen Tabelle, jedoch mit Speicherung in einer Anhang-Tabelle. Akzeptierte Werte sind:
+* **edit (string)**: Dieses Attribut gibt den Typ der Eingabe an, die im mit dem Schema verknüpften Formular verwendet wird.
+* **enum (Zeichenfolge)**: erhält den Namen der Auflistung, die mit dem Feld verknüpft ist. Die Auflistung kann in dasselbe Schema oder in ein Remote-Schema eingefügt werden.
+* **expr (Zeichenfolge)**: definiert einen Ausdruck zur Feldvorberechnung. Dieses Attribut empfängt einen Xpath- oder XTK-Ausdruck.
+* **Funktion (Zeichenfolge)**: definiert ein Kennzeichenfeld: Diese Felder dienen zum Erweitern der Daten in einer vorhandenen Tabelle, jedoch mit Datenspeicherung in einer Anhang-Tabelle. Akzeptierte Werte sind:
 
    * &quot;shared&quot;: der Inhalt in einer freigegebenen Tabelle nach Datentyp gespeichert wird
    * &quot;dediziert&quot;: der Inhalt in einer speziellen Tabelle gespeichert wird
@@ -100,41 +100,41 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werd
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
    Es gibt zwei Arten von Eigenschaftenfeldern: einfache oà¹-Felder, bei denen ein einzelner Wert für das Merkmal autorisiert ist, und bei denen das Merkmal mit einem Collection-Element verknüpft ist, das mehrere Werte enthalten kann.
 
-   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema einen Hauptschlüssel haben, der auf einem einzelnen Feld basiert (Composite-Schlüssel sind nicht autorisiert).
+   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema einen Hauptschlüssel haben, der auf einem einzigen Feld basiert (Composite-Schlüssel sind nicht autorisiert).
 
-* **featureDate (boolean)**: -Attribut mit dem Charakteristikumsfeld &quot;@feature&quot;verknüpft. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
-* **img (Zeichenfolge)**: können Sie einen Pfad für ein Bild definieren, das mit einem Feld verknüpft ist (Namespace + Bildname) (Beispiel: img=&quot;cus:mypicture.jpg&quot;). Das Bild muss physisch auf den Anwendungsserver importiert werden.
+* **featureDate (boolean)**: -Attribut, das mit dem Charakteristikumsfeld &quot;@feature&quot;verknüpft ist. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
+* **img (Zeichenfolge)**: können Sie einen Pfad für ein Bild definieren, das mit einem Feld verknüpft ist (Namensraum und Bildname) (Beispiel: img=&quot;cus:mypicture.jpg&quot;). Das Bild muss physisch auf den Anwendungsserver importiert werden.
 * **label (Zeichenfolge)**: -Beschriftung, die mit dem Feld verknüpft ist, meist für den Benutzer in der Oberfläche bestimmt. Damit können Sie Benennungsbeschränkungen vermeiden.
 * **length (Zeichenfolge)**: max. Anzahl der Zeichen für einen Wert des SQL-Felds vom Typ &quot;string&quot;. Wenn das Attribut &quot;@length&quot;nicht angegeben ist, erstellt Adobe Campaign automatisch ein Feld für 255 Zeichen.
 * **localizable (boolean)**: Wenn es aktiviert ist, weist dieses Attribut das Erfassungswerkzeug an, den Wert des Attributs &quot;@label&quot;für die Übersetzung wiederherzustellen (interne Verwendung).
-* **name (MNTOKEN)**: Name des Attributs, das mit dem Namen des Felds in der Tabelle übereinstimmt. Der Wert des Attributs &quot;@name&quot;muss kurz sein, vorzugsweise auf Englisch, und XML-Benennungsbeschränkungen entsprechen.
+* **name (MNTOKEN)**: Name des Attributs, das mit dem Namen des Felds in der Tabelle übereinstimmt. Der Wert des Attributs &quot;@name&quot;muss kurz sein, vorzugsweise auf Englisch, und den XML-Benennungsbeschränkungen entsprechen.
 
-   Wenn das Schema in die Datenbank geschrieben wird, werden dem Feldnamen automatisch Präfixe von Adobe Campaign hinzugefügt:
+   Wenn das Schema in die Datenbank geschrieben wird, werden dem Feldnamen automatisch Präfixe per Adobe Campaign hinzugefügt:
 
    * &quot;i&quot;: Präfix für den Integer-Typ.
-   * &quot;d&quot;: Präfix für den Typ &quot;Double&quot;.
+   * &quot;d&quot;: Präfix für den Typ &quot;Dublette&quot;.
    * &quot;s&quot;: Präfix für den Zeichenfolgen-Typ.
    * &quot;ts&quot;: Präfix für den Typ &quot;Datum&quot;.
    Um den Namen des Felds in der Tabelle vollständig zu definieren, verwenden Sie beim Definieren eines Attributs die Option &quot;@sqlname&quot;.
 
-* **notNull (boolean)**: können Sie das Verhalten von Adobe Campaign hinsichtlich der Verwaltung von NULL-Datensätzen in der Datenbank neu definieren. Numerische Felder sind standardmäßig nicht null, und die Felder für den Datumstyp können null sein.
+* **notNull (boolean)**: können Sie das Verhalten von Adobe Campaign in Bezug auf die Verwaltung von NULL-Datensätzen in der Datenbank neu definieren. Numerische Felder sind standardmäßig nicht null, und die Felder für den Datumstyp können null sein.
 * **pkgStatus (Zeichenfolge)**: bei Paketexporten werden Werte in Abhängigkeit vom Wert von &quot;@pkgStatus&quot;berücksichtigt:
 
    * &quot;always&quot;: immer vorhanden
    * &quot;never&quot;: niemals vorhanden
    * &quot;default (or nothing)&quot;: der Wert wird exportiert, es sei denn, es handelt sich um den Standardwert oder um ein internes Feld, das nicht mit anderen Instanzen kompatibel ist.
 
-* **ref (string)**: Dieses Attribut definiert einen Verweis auf ein `<attribute>` Element, das von mehreren Schemata gemeinsam verwendet wird (Definition Factoring). Die Definition wird nicht in das aktuelle Schema kopiert.
+* **ref (string)**: Dieses Attribut definiert einen Verweis auf ein `<attribute>` Element, das von mehreren Schemas gemeinsam verwendet wird (Definition Factoring). Die Definition wird nicht in das aktuelle Schema kopiert.
 * **erforderlich (Boolescher Wert)**: Wenn dieses Attribut aktiviert ist (@required=&quot;true&quot;), wird das Feld in der Oberfläche markiert. Die Beschriftung des Felds wird in Formularen rot dargestellt.
-* **sql (boolean)**: Wenn dieses Attribut aktiviert ist (@sql=&quot;true&quot;), erzwingt es die Speicherung des SQL-Attributs, selbst wenn das Element, das das Attribut enthält, die Eigenschaft xml=&quot;true&quot; hat.
-* **sqlDefault (Zeichenfolge)**: Mit diesem Attribut können Sie den Standardwert definieren, der bei der Aktualisierung der Datenbank berücksichtigt wird, wenn das Attribut &quot;@notNull&quot;aktiviert ist. Wenn dieses Attribut nach der Attributerstellung hinzugefügt wird, ändert sich das Schemaverhalten auch für die neuen Datensätze nicht. Um das Schema zu ändern und den Wert für neue Datensätze zu aktualisieren, müssen Sie das Attribut löschen und erneut erstellen.
+* **sql (boolean)**: Wenn dieses Attribut aktiviert ist (@sql=&quot;true&quot;), erzwingt es die Datenspeicherung des SQL-Attributs, selbst wenn das Element, das das Attribut enthält, die Eigenschaft xml=&quot;true&quot; hat.
+* **sqlDefault (Zeichenfolge)**: Mit diesem Attribut können Sie den Standardwert definieren, der bei der Aktualisierung der Datenbank berücksichtigt wird, wenn das Attribut &quot;@notNull&quot;aktiviert ist. Wenn dieses Attribut nach der Attributerstellung hinzugefügt wird, ändert sich das Verhalten des Schemas auch für die neuen Datensätze nicht. Um das Schema zu ändern und den Wert für neue Datensätze zu aktualisieren, müssen Sie das Attribut löschen und erneut erstellen.
 * **sqlname (Zeichenfolge)**: des Felds während der Tabellenerstellung. Wenn &quot;@sqlname&quot;nicht angegeben ist, wird standardmäßig der Wert des Attributs &quot;@name&quot;verwendet. Wenn das Schema in die Datenbank geschrieben wird, werden je nach Feldtyp automatisch Präfixe hinzugefügt.
 * **template (string)**: Dieses Attribut definiert einen Verweis auf ein `<attribute>` Element, das von mehreren Schemas gemeinsam verwendet wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
-* **translateDefault (Zeichenfolge)**: Wenn ein &quot;@default&quot;-Attribut gefunden wird, können Sie mit &quot;@translatedDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten Ausdruck übereinstimmt, der vom Übersetzungstool erfasst wird (interne Verwendung).
-* **translationExpr (Zeichenfolge)**: Wenn ein Attribut &quot;@expr&quot;vorhanden ist, können Sie mit dem Attribut &quot;@translatedExpr&quot;einen Ausdruck neu definieren, der mit dem in &quot;@expr&quot;definierten Ausdruck übereinstimmt, der vom Übersetzungstool erfasst wird (interne Verwendung).
+* **translateDefault (Zeichenfolge)**: Wenn ein Attribut &quot;@default&quot;gefunden wird, können Sie mit &quot;@translatedDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten übereinstimmt und vom Übersetzungstool erfasst wird (interner Einsatz).
+* **translationExpr (Zeichenfolge)**: Wenn ein Attribut &quot;@expr&quot;vorhanden ist, können Sie mit dem Attribut &quot;@translatedExpr&quot;einen Ausdruck neu definieren, der mit dem in &quot;@expr&quot;definierten übereinstimmt und vom Übersetzungstool erfasst wird (interner Einsatz).
 * **type (MNTOKEN)**: Feldtyp.
 
-   Feldtypen sind generisch. Je nach installiertem Datenbanktyp ändert Adobe Campaign den definierten Typ in einen Wert, der für die während der Strukturaktualisierung installierte Datenbank spezifisch ist.
+   Feldtypen sind generisch. Je nach installiertem Datenbanktyp ändert Adobe Campaign den definierten Typ in einen Datenbankwert, der während der Strukturaktualisierung installiert wird.
 
    Liste der verfügbaren Typen:
 
@@ -148,7 +148,7 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werd
    * datetimetz
    * datetimenotz
    * date
-   * double
+   * Dublette
    * enum
    * float
    * html
@@ -166,20 +166,20 @@ Die Reihenfolge, in der `<attribute>` Elemente in einer Datenbank definiert werd
    * uuid
    Wenn das Attribut &quot;@type&quot;leer gelassen wird, verknüpft Adobe Campaign standardmäßig eine Zeichenfolge (STRING) mit einer Länge von 100 Zeichen mit dem Feld.
 
-   Wenn das Feld vom STRING-Typ ist und der Feldname nicht durch das Attribut &quot;@sqlname&quot;angegeben wird, wird dem Namen des Felds in der Datenbank automatisch ein &quot;s&quot;vorangestellt. Dieser Betriebsmodus ist mit den Feldern des Typs INTEGER (i), DOUBLE (d) und DATES (ts) vergleichbar.
+   Wenn das Feld vom STRING-Typ ist und der Feldname nicht durch das Attribut &quot;@sqlname&quot;angegeben wird, wird dem Namen des Felds in der Datenbank automatisch ein &quot;s&quot;vorangestellt. Dieser Betriebsmodus ist mit den Feldern des Typs INTEGER (i), DUBLETTE (d) und DATES (ts) vergleichbar.
 
-* **userEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;offenen&quot;Aufzählung. Die Werte der Aufzählung können vom Benutzer in der Schnittstelle definiert werden.
-* **visibleIf (Zeichenfolge)**: definiert eine Bedingung in Form eines XTK-Ausdrucks, um das Attribut ein- oder auszublenden.
+* **userEnum (Zeichenfolge)**: erhält den internen Namen einer &quot;offenen&quot;Auflistung. Die Werte der Auflistung können vom Benutzer in der Benutzeroberfläche definiert werden.
+* **visibleIf (Zeichenfolge)**: definiert eine Bedingung in Form eines XTK-Ausdrucks zum Ein- oder Ausblenden des Attributs.
 
    >[!IMPORTANT]
    >
    >Das Attribut ist ausgeblendet, es können jedoch weiterhin auf seine Daten zugegriffen werden.
 
-* **xml (boolean)**: Wenn diese Option aktiviert ist, haben die Feldwerte kein verknüpftes SQL-Feld. Adobe Campaign erstellt ein Textfeld vom Typ &quot;mData&quot;für die Speicherung von Datensätzen. Das bedeutet, dass diese Felder nicht gefiltert oder sortiert werden.
+* **xml (boolean)**: Wenn diese Option aktiviert ist, haben die Feldwerte kein verknüpftes SQL-Feld. Adobe Campaign erstellt ein Textfeld vom Typ &quot;mData&quot;für die Datenspeicherung von Datensätzen. Das bedeutet, dass diese Felder nicht gefiltert oder sortiert werden.
 
 ### Beispiele {#examples}
 
-Beispiel für Aufzählungswerte, deren Werte in der Datenbank gespeichert werden:
+Beispiel für Auflistungen, deren Werte in der Datenbank gespeichert werden:
 
 ```
     <enumeration name="myEnum">
@@ -219,7 +219,7 @@ Beispiel mit &quot;@feature&quot;vom Typ &quot;dedizierte&quot;Zeichen:
 <attribute name="field1" label="Field 1" type="long" feature="dedicated" sqlname="sField1" sqltable="Ft_recipient_field1"/>
 ```
 
-## `<compute-string>` element {#compute-string--element}
+## `<compute-string>` Element {#compute-string--element}
 
 ### Inhaltsmodell {#content-model-1}
 
@@ -239,11 +239,11 @@ Keiner
 
 ### Beschreibung {#description-1}
 
-Mit dem `<compute-string>` Element können Sie eine Zeichenfolge erstellen, die auf einem XTK-Ausdruck basiert, um eine &quot;integrierte&quot;Beschriftung in der Schnittstelle basierend auf mehreren Werten anzuzeigen.
+Mit dem `<compute-string>` Element können Sie eine auf einem XTK-Ausdruck basierende Zeichenfolge erstellen, um eine &quot;integrierte&quot;Beschriftung in der Benutzeroberfläche anzuzeigen, die auf mehreren Werten basiert.
 
 ### Verwendung und Kontext {#use-and-context-of-use-1}
 
-Wenn kein Element definiert `<compute-string>` ist, wird ein `<compute-string>` Element standardmäßig mit den Werten des primären Schlüssels im Schema eingegeben.
+Wenn kein Element definiert `<compute-string>` ist, wird ein `<compute-string>` Element standardmäßig mit den Werten des Primärschlüssels im Schema eingegeben.
 
 ### Attributbeschreibung {#attribute-description-1}
 
@@ -256,7 +256,7 @@ Wenn kein Element definiert `<compute-string>` ist, wird ein `<compute-string>` 
 <compute-string expr="ToString([@centralCatalog-id]) + ',' + ToString([@localOrgUnit-id])" />
 ```
 
-Ergebnis der für einen Empfänger berechneten Zeichenfolge: &quot;John Doe (john.doe@aol.com)&quot;:
+Ergebnis der auf einem Empfänger berechneten Zeichenfolge: &quot;John Doe (john.doe@aol.com)&quot;:
 
 ```
 <element name="recipient">
@@ -266,7 +266,7 @@ Ergebnis der für einen Empfänger berechneten Zeichenfolge: &quot;John Doe (joh
 </element>
 ```
 
-## `<condition>` element {#condition--element}
+## `<condition>` Element {#condition--element}
 
 ### Inhaltsmodell {#content-model-2}
 
@@ -297,7 +297,7 @@ Ein `<sysfiler>` Element kann mehrere Filterbedingungen enthalten.
 ### Attributbeschreibung {#attribute-description-2}
 
 * **boolOperator (Zeichenfolge)**: Wenn mehrere Elemente innerhalb desselben `<conditions>` Elements definiert `<sysfilter>` sind, können Sie sie mit diesem Attribut kombinieren. Standardmäßig lautet die logische Verknüpfung zwischen `<condition>` Elementen &quot;AND&quot;. Mit dem Attribut &quot;@boolOperator&quot;können Sie Links vom Typ &quot;OR&quot;und &quot;AND&quot;kombinieren.
-* **enabledIf (Zeichenfolge)**: Bedingungsaktivierungstest.
+* **enabledIf (Zeichenfolge)**: Aktivierung der Bedingung.
 * **expr (Zeichenfolge)**: ein XTK-Ausdruck.
 
 ### Beispiele {#examples-2}
@@ -308,7 +308,7 @@ Ein `<sysfiler>` Element kann mehrere Filterbedingungen enthalten.
 </sysfilter>
 ```
 
-## `<dbindex>` element {#dbindex--element}
+## `<dbindex>` Element {#dbindex--element}
 
 ### Inhaltsmodell {#content-model-3}
 
@@ -336,17 +336,17 @@ Mit diesem Element können Sie einen mit einer Tabelle verknüpften Index defini
 
 ### Verwendung und Kontext {#use-and-context-of-use-3}
 
-Es ist möglich, mehrere Indizes zu definieren. Ein Index kann auf ein oder mehrere Felder der Tabelle verweisen. Die Indexdeklaration folgt normalerweise der Definition des Hauptschemaelements.
+Es ist möglich, mehrere Indizes zu definieren. Ein Index kann auf ein oder mehrere Felder der Tabelle verweisen. Die Indexdeklaration entspricht in der Regel der Definition des Hauptelements Schema.
 
-Die Reihenfolge der `<keyfield>` Elemente, die in einem definiert sind, `<dbindex>` ist sehr wichtig. Das erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Anfragen hauptsächlich basieren.
+Die Reihenfolge der `<keyfield>` Elemente, die in einem definiert sind, `<dbindex>` ist sehr wichtig. Das erste `<keyfield>` muss das Indexierungskriterium sein, auf dem die Abfragen hauptsächlich basieren.
 
-Der Name des Indexes in der Datenbank wird durch Verkettung des Namens der Tabelle und des Indexnamens berechnet. Beispiel: Tabellenname &quot;Sample&quot;, Namespace &quot;Cus&quot;, Indexname &quot;MyIndex&quot;-> Name des Indexfelds bei der Indexerstellung bei der Abfrage: &quot;CusSample_myIndex&quot;.
+Der Name des Indexes in der Datenbank wird durch Verkettung des Namens der Tabelle und des Indexnamens berechnet. Beispiel: Tabellenname &quot;Beispiel&quot;, Namensraum &quot;Cus&quot;, Indexname &quot;MyIndex&quot;-> Name des Indexfelds bei der Indexerstellung bei der Abfrage: &quot;CusSample_myIndex&quot;.
 
 ### Attributbeschreibung {#attribute-description-3}
 
 * **_operation (string)**: definiert den Typ des Schreibens in der Datenbank.
 
-   Dieses Attribut wird hauptsächlich beim Erweitern von vordefinierten Schemata verwendet.
+   Dieses Attribut wird hauptsächlich beim Erweitern von vordefinierten Schemas verwendet.
 
    Barrierefreie Werte sind:
 
@@ -356,14 +356,14 @@ Der Name des Indexes in der Datenbank wird durch Verkettung des Namens der Tabel
    * &quot;update&quot;: aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
    * &quot;delete&quot;: löschen. Das bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
-* **applyIf (Zeichenfolge)**: -Bedingung zur Berücksichtigung des Indexes - empfängt einen XTK-Ausdruck.
+* **applyIf (Zeichenfolge)**: Bedingung für die Berücksichtigung des Indexes - erhält einen XTK-Ausdruck.
 * **label (Zeichenfolge)**: Indexbeschriftung.
 * **name (MNTOKEN)**: eindeutiger Indexname.
 * **eindeutig (boolean)**: Wenn diese Option aktiviert ist (@unique=&quot;true&quot;), garantiert das Attribut die Eindeutigkeit des Indexes in allen Feldern.
 
 ### Beispiele {#examples-3}
 
-Erstellen eines Indexes im Feld &quot;id&quot;. (Das Attribut &quot;@unique&quot;im `<dbindex>` Element löst das Hinzufügen des SQL-Schlüsselworts &quot;UNIQUE&quot;aus, wenn der Index in der Datenbank erstellt wird (Abfrage).
+Erstellen eines Indexes im Feld &quot;id&quot;. (Das Attribut &quot;@unique&quot;im `<dbindex>` Element löst das Hinzufügen des SQL-Schlüsselworts &quot;UNIQUE&quot;aus, wenn der Index in der Abfrage erstellt wird).
 
 ```
 <element label="Sample" name="Sample">
@@ -400,15 +400,15 @@ Erstellen eines Composite-Index in den Feldern &quot;@mail&quot;und &quot;@phone
 CREATE INDEX DocNewSchemaUser_myIndex ON DocNewSchemaUser(sEmail, sPhone);
 ```
 
-## `<element>` element {#element--element}
+## `<element>` Element {#element--element}
 
 ### Inhaltsmodell {#content-model-4}
 
-element:==(attribute| compute-string| dbindex| default| element| help| join| Schlüssel| sysFilter| translatedDefault)
+element:==(attribute | compute-string | dbindex | default | element | help | join | Schlüssel | sysFilter | translatedDefault)
 
 ### Attribute {#attributes-4}
 
-_operation (string), advanced (boolean), aggregate (string), applyIf (string), autopk (boolean), assignTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), displayAs Field (boolean), doesNotSupportDiff (boolean), edit (string), emptyKeyValue (string), enum (string), enumImage (string), developSchemaTarget (string), expr (string), externalJoin (boolean), feature (string), featureDate (boolean), filterPath (string), folderLink (string)), folderModel (string), folderProcess (string), fullLoad (boolean), hierarchisch (boolean), hierarchischPath (string), img (string), Inout (string), Integrität (string), label (string), labelSingular (string), length (string), localizable (boolean), name (MNTOKEN), noDbIndex (boolean), noKey (boolean), ordered (boolean), overflow table (boolean), pkSequence (string), pkgStatus (string), ref (string), required (boolean), revAdvanced (boolean), revCardinality (string), revDesc (string), revExternalJoin (boolean)), revIntegrity (string), revLabel (string), revLink (string), revTarget (string), revVisibleIf (string), sql (boolean), sqlname (string), sqltable (string), tableSpace (string), tableSpaceIndex (string), target (MNTOKEN), template (string), temporary Tabelle (boolean), translatedDefault (string), translatedExpr (string), Typ (MNTOKEN), unbound (boolean), Benutzer (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
+_operation (string), advanced (boolean), Aggregat (string), applyIf (string), autopk (boolean), gehörtTo (string), convDate (string), dataPolicy (string), dataSource (string), dbEnum (string), defOnDuplicate (boolean), default (string), desc (string), display Field (boolean), doesNotSupportDiff (boolean), edit (string), emptyKeyValue (string), enum (string), enumImage (string), developSchemaTarget (string), expr (string), externalJoin (boolean), feature (string), featureDate (boolean), filterPath (string), folderLink string), folderModel (string), folderProcess (string), fullLoad (boolean), hierarchisch (boolean), hierarchischPath (string), img (string), Inout (string), Integrität (string), label (string), labelSingular (string), length (string), localizable (boolean), name (MNTOKEN), noDb Index (boolean), noKey (boolean), ordered (boolean), overflow table (boolean), pkSequence (string), pkgStatus (string), ref (string), required (boolean), revAdvanced (boolean), revCardinality (string), revDesc (string), revExternalJoin (boolean) ean), revIntegrity (string), revLabel (string), revLink (string), revTarget (string), revVisibleIf (string), sql (boolean), sqlname (string), sqltable (string), tableSpace (string), tableSpaceIndex (string), Zielgruppe (MNTOKEN), template (string), temporaryTable (boolean), translatedDefault (string), translatedExpr (string), type (MNTOKEN), unbound (boolean), user (boolean), userEnum (string), visibleIf (string), xml (boolean), xmlChildren (boolean)
 
 ### Eltern {#parents-4}
 
@@ -431,7 +431,7 @@ _operation (string), advanced (boolean), aggregate (string), applyIf (string), a
 
 ### Beschreibung {#description-4}
 
-Adobe Campaign enthält vier `<element>` Elementtypen:
+In Adobe Campaign gibt es vier `<element>` Elementtypen:
 
 * Stamm `<element>` : definiert den Namen der SQL-Tabelle, die dem Schema entspricht.
 * Struktur `<element>` : definiert eine Gruppe von `<element>` oder `<attribute>` Elementen.
@@ -442,7 +442,7 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
 
 * **_operation (string)**: definiert den Typ des Schreibens in der Datenbank.
 
-   Dieses Attribut wird hauptsächlich beim Erweitern von vordefinierten Schemata verwendet.
+   Dieses Attribut wird hauptsächlich beim Erweitern von vordefinierten Schemas verwendet.
 
    Barrierefreie Werte sind:
 
@@ -452,10 +452,10 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
    * &quot;update&quot;: aktualisieren. Das bedeutet, dass Adobe Campaign das Element aktualisiert oder einen Fehler erzeugt, wenn es nicht vorhanden ist.
    * &quot;delete&quot;: löschen. Das bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
-* **advanced (boolean)**: Wenn diese Option aktiviert ist (@advanced=&quot;true&quot;), können Sie das Attribut in der Liste der verfügbaren Felder ausblenden, die für die Konfiguration einer Liste in einem Formular verfügbar sind.
-* **aggregate (Zeichenfolge)**: können Sie die Definition eines Schemas `<element>` über ein anderes kopieren. Dieses Attribut erhält eine Schemadeklaration in Form eines &quot;namespace:name&quot;.
+* **advanced (boolean)**: Wenn diese Option aktiviert ist (@advanced=&quot;true&quot;), können Sie das Attribut auf der Liste der verfügbaren Felder ausblenden, auf die Sie zur Konfiguration einer Liste in einem Formular zugreifen können.
+* **Aggregat (Zeichenfolge)**: können Sie die Definition eines Begriffs `<element>` über ein anderes Schema kopieren. Dieses Attribut erhält eine Schema-Deklaration in Form eines &quot;Namensraum:name&quot;.
 * **applyIf (Zeichenfolge)**: Bedingung für die Anwendung des Indexes. Dieses Attribut erhält einen XTK-Ausdruck.
-* **autopk (boolean)**: Wenn diese Option aktiviert ist (autopk=&quot;true&quot;), wird automatisch ein eindeutiger Schlüssel definiert. Diese Option kann nur für das Hauptelement des Schemas verwendet werden. Warnung: Adobe Campaign gewährleistet nur, dass der generierte Schlüssel eindeutig ist. Es ist nicht garantiert, dass die Schlüsselwerte nacheinander und inkrementell sind.
+* **autopk (boolean)**: Wenn diese Option aktiviert ist (autopk=&quot;true&quot;), wird automatisch ein eindeutiger Schlüssel definiert. Diese Option kann nur für das Hauptelement des Schemas verwendet werden. Warnung: Adobe Campaign garantiert nur, dass der generierte Schlüssel eindeutig ist. Es ist nicht garantiert, dass die Schlüsselwerte nacheinander und inkrementell sind.
 * **dataPolicy (Zeichenfolge)**: ermöglicht Ihnen die Angabe von Genehmigungsbeschränkungen für die im SQL-Feld zulässigen Werte. Die Werte für dieses Attribut lauten:
 
    * &quot;none&quot;: no value
@@ -467,16 +467,16 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
    * &quot;identifier&quot;: Bezeichnername
    * &quot;resIdentifier&quot;: Dateiname
 
-* **dbEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;geschlossenen&quot;Aufzählung. Die Aufzählungswerte müssen in der `<srcschema>`definiert werden.
+* **dbEnum (Zeichenfolge)**: erhält den internen Namen einer &quot;geschlossenen&quot;Auflistung. Die Werte für die Auflistung müssen in der `<srcschema>`definiert werden.
 * **defOnDuplicate (boolean)**: Wenn dieses Attribut aktiviert ist, wird bei der Duplizierung eines Datensatzes der (in &quot;@default&quot;definierte) Standardwert automatisch erneut auf den Datensatz angewendet.
 * **default (Zeichenfolge)**: ermöglicht die Definition des Elementverhaltens (Aufruf einer Funktion, Standardwert). Dieses Attribut erhält einen XTK-Ausdruck.
 * **desc (Zeichenfolge)**: können Sie eine Beschreibung des Elements einfügen. Diese Beschreibung wird in der Statusleiste der Benutzeroberfläche angezeigt.
-* **displayAsField (boolean)**: Wenn dieses Attribut aktiviert ist, `<element>` wird in der Strukturansicht der Schemata ein &quot;Link&quot;-Typ als Feld angezeigt (&quot;Struktur&quot;, Registerkarte). Auf diese Weise kann ein Link als lokales Feld angezeigt und sein Verhalten während einer Abfrage geändert werden. Wenn das Element in der SELECT-Anweisung einer Abfrage gefunden wird, wird der Wert des Link-Ziels verwendet. Wenn das Element im WO einer Abfrage gefunden wird, wird der zugrunde liegende Schlüssel des Links verwendet.
-* **edit (string)**: Dieses Attribut gibt den Typ der Eingabe an, die in dem mit dem Schema verknüpften Formular verwendet wird.
-* **enum (Zeichenfolge)**: erhält den Namen der Aufzählung, die mit dem Feld verknüpft ist. Die Aufzählung kann in dasselbe Schema oder in ein Remote-Schema eingefügt werden.
-* **expr (Zeichenfolge)**: Dieses Attribut definiert ein berechnetes Feld, für das keine Definition in der Tabelle gespeichert ist. Es erhält einen Xpath- oder einen XTK-Ausdruck (String).
+* **displayAsField (boolean)**: Wenn dieses Attribut aktiviert ist, `<element>` wird ein &quot;Link&quot;-Typ als Feld in der Ansicht der Schema (&quot;Struktur&quot;, Registerkarte &quot;Struktur&quot;) angezeigt. Auf diese Weise können Sie einen Link als lokales Feld anzeigen und das Verhalten während einer Abfrage ändern. Wenn das Element in der SELECT-Anweisung einer Abfrage gefunden wird, wird der Wert der Link-Zielgruppe verwendet. Wenn das Element im WO einer Abfrage gefunden wird, wird der zugrunde liegende Schlüssel des Links verwendet.
+* **edit (string)**: Dieses Attribut gibt den Typ der Eingabe an, die im mit dem Schema verknüpften Formular verwendet wird.
+* **enum (Zeichenfolge)**: erhält den Namen der Auflistung, die mit dem Feld verknüpft ist. Die Auflistung kann in dasselbe Schema oder in ein Remote-Schema eingefügt werden.
+* **expr (Zeichenfolge)**: Dieses Attribut definiert ein berechnetes Feld, für das keine Definition in der Tabelle gespeichert ist. Es empfängt einen Xpath- oder einen XTK-Ausdruck (Zeichenfolge).
 * **externalJoin (boolean)**: externe Verknüpfung in einem Element vom Typ &quot;Link&quot;.
-* **Funktion (Zeichenfolge)**: definiert ein Kennzeichenfeld: Diese Felder dienen zum Erweitern der Daten in einer vorhandenen Tabelle, jedoch mit Speicherung in einer Anhang-Tabelle. Akzeptierte Werte sind:
+* **Funktion (Zeichenfolge)**: definiert ein Kennzeichenfeld: Diese Felder dienen zum Erweitern der Daten in einer vorhandenen Tabelle, jedoch mit Datenspeicherung in einer Anhang-Tabelle. Akzeptierte Werte sind:
 
    * &quot;shared&quot;: der Inhalt in einer freigegebenen Tabelle nach Datentyp gespeichert wird
    * &quot;dediziert&quot;: der Inhalt in einer speziellen Tabelle gespeichert wird
@@ -486,23 +486,23 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
    * shared: `Ft_[type_of_key_of_the_schema_containing_the_characteristic]_[type_of_the_characteristic]`
    Es gibt zwei Arten von Eigenschaftenfeldern: einfache Felder, in denen ein einzelner Wert für das Merkmal autorisiert ist, und Mehrfachauswahlfelder, in denen das Merkmal mit einem Collection-Element verknüpft ist, das mehrere Werte enthalten kann.
 
-   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema einen Hauptschlüssel haben, der auf einem einzelnen Feld basiert (Composite-Schlüssel sind nicht autorisiert).
+   Wenn ein Merkmal in einem Schema definiert ist, muss dieses Schema einen Hauptschlüssel haben, der auf einem einzigen Feld basiert (Composite-Schlüssel sind nicht autorisiert).
 
-* **featureDate (boolean)**: -Attribut mit dem Charakteristikumsfeld &quot;@feature&quot;verknüpft. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
+* **featureDate (boolean)**: -Attribut, das mit dem Charakteristikumsfeld &quot;@feature&quot;verknüpft ist. Wenn der Wert &quot;true&quot;ist, können Sie feststellen, wann der Wert zuletzt aktualisiert wurde.
 * **filterPath (string)**: Dieses Attribut empfängt einen Xpath und ermöglicht Ihnen, einen Filter für ein Feld zu definieren.
 * **folderLink (Zeichenfolge)**: Dieses Attribut erhält den Namen des Links, über den Sie die Dateien wiederherstellen können, die Entitäten enthalten.
-* **folderModel (string)**: definiert den Ordnertyp, der die Entitätsspeicherung ermöglicht. Dieses Attribut ist nur definiert, wenn &quot;@folderLink&quot;vorhanden ist.
+* **folderModel (string)**: definiert den Ordnertyp, der die Entitäts-Datenspeicherung aktiviert. Dieses Attribut ist nur definiert, wenn &quot;@folderLink&quot;vorhanden ist.
 * **folderProcess (string)**: definiert den Link, unter dem Entitätsmodellinstanzen gespeichert werden. Dieses Attribut ist nur definiert, wenn &quot;@folderLink&quot;vorhanden ist.
 * **fullLoad (boolean)**: Dieses Attribut erzwingt die Anzeige aller Datensätze in einer Tabelle während der Feldauswahl in einem Formular.
-* **img (Zeichenfolge)**: empfängt den Pfad eines Bildes, das mit einem Element verknüpft ist. Der Wert dieses Attributs ist vom Typ &quot;namespace:image name&quot;. Beispiel: img=&quot;cus:myImage.jpg&quot;. Das Bild muss physisch auf den Anwendungsserver importiert werden.
-* **integer (Zeichenfolge)**: Referenzintegrität des Vorkommens der Quelltabelle in Richtung der Zieltabelle.
+* **img (Zeichenfolge)**: empfängt den Pfad eines Bildes, das mit einem Element verknüpft ist. Der Wert dieses Attributs ist vom Typ &quot;Namensraum:Name des Bilds&quot;. Beispiel: img=&quot;cus:myImage.jpg&quot;. Das Bild muss physisch auf den Anwendungsserver importiert werden.
+* **integer (Zeichenfolge)**: Referenzintegrität des Vorkommens der Quelltabelle in Richtung der Zielgruppe.
 
    Barrierefreie Werte sind:
 
    * &quot;definieren&quot;: Adobe Campaign löscht die Entität nicht, wenn sie über den Link referenziert wird
-   * &quot;normal&quot;: Wenn Sie das Quellereignis löschen, werden die Schlüssel des Links beim Zielereignis initialisiert (Standardmodus). Bei diesem Integritätsmodus werden alle Fremdschlüssel initialisiert
-   * &quot;own&quot;: Löschen des Quellvorkommens löscht das Löschen des Zielvorkommens
-   * &quot;Kopie&quot;: ähnlich wie &quot;eigene&quot;(bei Löschung) oder dupliziert Vorfälle (bei Vervielfältigung)
+   * &quot;normal&quot;: Wenn Sie das Quellvorkommen löschen, werden die Schlüssel des Links beim Auftreten der Zielgruppe initialisiert (Standardmodus). Bei diesem Integritätsmodus werden alle Fremdschlüssel initialisiert
+   * &quot;own&quot;: Löschen des Quellvorkommens löscht das Löschen des Vorkommens der Zielgruppe
+   * &quot;Kopie&quot;: ähnlich wie &quot;eigene&quot;(bei Löschung) oder Duplikate (bei Vervielfältigung)
    * &quot;neutral&quot;: tut nichts
 
 * **label (Zeichenfolge)**: Elementbezeichnung.
@@ -511,13 +511,13 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
 * **localizable (boolean)**: Wenn es aktiviert ist, weist dieses Attribut das Erfassungswerkzeug an, den Wert des Attributs &quot;@label&quot;für die Übersetzung wiederherzustellen (interne Verwendung).
 * **name (MNTOKEN)**: interner Name des Elements, das mit dem Namen der Tabelle übereinstimmt. Der Wert des Attributs &quot;@name&quot;muss kurz sein, vorzugsweise in Englisch, und mit XML verknüpfte Benennungsbeschränkungen einhalten.
 
-   Wenn das Schema in die Datenbank geschrieben wird, werden dem Feldnamen automatisch Präfixe von Adobe Campaign hinzugefügt.
+   Wenn das Schema in die Datenbank geschrieben wird, werden dem Feldnamen automatisch Präfixe per Adobe Campaign hinzugefügt.
 
    * &quot;i&quot;: Präfix für den Integer-Typ.
-   * &quot;d&quot;: Präfix für den Typ &quot;Double&quot;.
+   * &quot;d&quot;: Präfix für den Typ &quot;Dublette&quot;.
    * &quot;s&quot;: Präfix für den Zeichenfolgen-Typ.
    * &quot;ts&quot;: Präfix für den Typ &quot;Datum&quot;.
-   Um den Namen der Tabelle autonom zu definieren, müssen Sie das Attribut &quot;@sqltable&quot;in der Definition des Hauptschemaelements verwenden.
+   Um den Tabellennamen autonom zu definieren, müssen Sie das Attribut &quot;@sqltable&quot;in der Definition des Hauptelements Schema verwenden.
 
 * **noDbIndex (boolean)**: können Sie angeben, dass das Element nicht indiziert werden soll.
 * **geordnet (boolean)**: Wenn das Attribut aktiviert ist (ordered=&quot;true&quot;), behält Adobe Campaign die Elementdeklarationssequenz in einem XML-Collection-Element bei.
@@ -541,19 +541,19 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
 
 * **revDesc (Zeichenfolge)**: Dieses Attribut erhält eine Beschreibung, die mit dem anderen Link verknüpft ist.
 * **revExternalJoin (boolean)**: Wenn dieses Attribut aktiviert ist, können Sie die externe Verknüpfung auf dem anderen Link erzwingen.
-* **revIntegrity (Zeichenfolge)**: Dieses Attribut definiert die Integrität des Zielschemas. Es werden dieselben Werte wie das Attribut &quot;@integer&quot;autorisiert. Adobe Campaign gibt diesem Attribut standardmäßig den &quot;normalen&quot;Wert zu.
+* **revIntegrity (Zeichenfolge)**: Dieses Attribut definiert die Integrität des Schemas Zielgruppe. Es werden dieselben Werte wie das Attribut &quot;@integer&quot;autorisiert. Standardmäßig gibt Adobe Campaign diesem Attribut den &quot;normalen&quot;Wert zu.
 * **revLabel (Zeichenfolge)**: Beschriftung des Gegenlinks.
-* **revLink (Zeichenfolge)**: Name des anderen Links. Lautet der Wert &quot;_KEINE_&quot;, wird im Zielschema keine andere Verknüpfung erstellt.
-* **revTarget (Zeichenfolge)**: Ziel des Gegenlinks.
-* **sql (boolean)**: Wenn dieses Attribut aktiviert ist (@sql=&quot;true&quot;), erzwingt es die Speicherung des SQL-Elements, auch wenn das Element die Eigenschaft xml=&quot;true&quot; hat.
+* **revLink (Zeichenfolge)**: Name des anderen Links. Lautet der Wert &quot;_KEINE_&quot;, wird im Schema &quot;Ziel&quot;kein gegenteiliger Link erstellt.
+* **revTarget (Zeichenfolge)**: Zielgruppe des gegenteiligen Links.
+* **sql (boolean)**: Wenn dieses Attribut aktiviert ist (@sql=&quot;true&quot;), erzwingt es die Datenspeicherung des SQL-Elements, auch wenn das Element die Eigenschaft xml=&quot;true&quot; hat.
 * **sqlname (Zeichenfolge)**: Name des Felds bei der Tabellenerstellung. Wenn &quot;@sqlname&quot;nicht angegeben ist, wird der Wert des Attributs &quot;@name&quot;standardmäßig verwendet. Beim Schreiben des Schemas in die Tabelle werden je nach Feldtyp automatisch Präfixe hinzugefügt.
-* **sqltable (Zeichenfolge)**: für das Hauptelement des Schemas, überschreibt dieses Attribut den standardmäßig generierten Namen der SQL-Tabelle. Wenn &quot;@sqltable&quot;nicht angegeben ist, wird der Standardname wie folgt strukturiert: namespace (erste Großbuchstabe) gefolgt vom Wert des SrcSchema &quot;@name&quot;.
+* **sqltable (Zeichenfolge)**: für das Hauptelement des Schemas, überschreibt dieses Attribut den standardmäßig generierten Namen der SQL-Tabelle. Wenn &quot;@sqltable&quot;nicht angegeben ist, wird der Standardname wie folgt strukturiert: Namensraum (Groß-/Kleinschreibung des ersten Buchstabens) gefolgt vom Wert des SrcSchema &quot;@name&quot;.
 * **tableSpace (Zeichenfolge)**: Mit diesem Attribut können Sie eine neue Datenspeicherung für Tablespace für eine Tabelle angeben (gültig im Stammverzeichnis `<element>`).
-* **tableSpaceIndex (Zeichenfolge)**: Mit diesem Attribut können Sie einen neuen Indexspeicher-Tablespace für eine Tabelle angeben (gültig im Stammverzeichnis `<element>`).
-* **target (MNTOKEN)**: empfängt den Namen des Zielschemas beim Erstellen einer Verknüpfung zwischen Tabellen. Dieses Attribut ist nur für Elemente des Typs &quot;Link&quot;aktiv.
+* **tableSpaceIndex (Zeichenfolge)**: Mit diesem Attribut können Sie einen neuen Tabellenraum für die Index-Datenspeicherung angeben (gültig im Stammverzeichnis `<element>`).
+* **Zielgruppe (MNTOKEN)**: erhält beim Erstellen einer Verknüpfung zwischen Tabellen den Namen des Schemas Zielgruppe. Dieses Attribut ist nur für Elemente des Typs &quot;Link&quot;aktiv.
 * **template (string)**: Dieses Attribut definiert einen Verweis auf ein `<element>` Element, das von mehreren Schemas gemeinsam verwendet wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
-* **translateDefault (Zeichenfolge)**: Wenn ein &quot;@default&quot;-Attribut gefunden wird, können Sie mit &quot;@translatedDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten Ausdruck übereinstimmt, der vom Übersetzungstool erfasst wird (interne Verwendung).
-* **translationExpr (Zeichenfolge)**: Wenn ein Attribut &quot;@expr&quot;gefunden wird, können Sie mit dem Attribut &quot;@translatedExpr&quot;einen Ausdruck neu definieren, der dem in &quot;@expr&quot;definierten entspricht und vom Übersetzungstool erfasst wird (interne Verwendung).
+* **translateDefault (Zeichenfolge)**: Wenn ein Attribut &quot;@default&quot;gefunden wird, können Sie mit &quot;@translatedDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten übereinstimmt und vom Übersetzungstool erfasst wird (interner Einsatz).
+* **translationExpr (Zeichenfolge)**: Wenn ein Attribut &quot;@expr&quot;gefunden wird, können Sie mit dem Attribut &quot;@translatedExpr&quot;einen Ausdruck neu definieren, der mit dem in &quot;@expr&quot;definierten übereinstimmt und vom Übersetzungstool erfasst wird (interne Verwendung).
 * **type (MNTOKEN)**: definiert den Typ der im Element gespeicherten Daten.
 
    Liste der verfügbaren Typen:
@@ -568,7 +568,7 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
    * datetimetz
    * datetimenotz
    * date
-   * double
+   * Dublette
    * enum
    * float
    * html
@@ -586,15 +586,15 @@ Adobe Campaign enthält vier `<element>` Elementtypen:
    * uuid
 
 * **ungebunden (boolean)**: Wenn das Attribut aktiviert ist (unbound=&quot;true&quot;), wird der Link als Collection-Element für eine 1-N-Kardinalität deklariert.
-* **userEnum (Zeichenfolge)**: empfängt den internen Namen einer &quot;offenen&quot;Aufzählung. Enumeration-Werte können vom Benutzer in der Schnittstelle definiert werden.
+* **userEnum (Zeichenfolge)**: erhält den internen Namen einer &quot;offenen&quot;Auflistung. Auflistungen können vom Benutzer in der Benutzeroberfläche definiert werden.
 * **xml (boolean)**: Wenn diese Option aktiviert ist, werden alle im Element definierten Werte in XML in einem Feld vom Typ &quot;mData&quot;gespeichert. Das bedeutet, dass diese Felder nicht gefiltert oder sortiert werden.
-* **xmlChildren (boolean)**: erzwingt die Lagerung für jedes Kind ( `<element>  or  <attribute>   ) of the   <element>    element in an XML document.   </element>  </attribute> </element>`
+* **xmlChildren (boolean)**: erzwingt Datenspeicherung für jedes Kind ( `<element>  or  <attribute>   ) of the   <element>    element in an XML document.   </element>  </attribute> </element>`
 
-## `<enumeration>` element {#enumeration--element}
+## `<enumeration>` Element {#enumeration--element}
 
 ### Inhaltsmodell {#content-model-5}
 
-enumeration:==(help| value)
+Auflistung:==(help| value)
 
 ### Attribute {#attributes-5}
 
@@ -616,15 +616,15 @@ enumeration:==(help| value)
 
 ### Beschreibung {#description-5}
 
-Mit diesem Element können wir eine Wertaufzählung definieren. Eine Aufzählung gehört zu dem Schema, in dem sie definiert ist, kann jedoch über ein anderes Schema aufgerufen werden.
+Mit diesem Element können wir eine Auflistung definieren. Eine Auflistung gehört zu dem Schema, in dem sie definiert ist, ist jedoch über ein anderes Schema verfügbar.
 
 ### Verwendung und Kontext {#use-and-context-of-use-4}
 
-Aufzählungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement definiert wird).
+Auflistungen werden am Beginn eines Schemas definiert (bevor das Hauptelement definiert wird).
 
 ### Attributbeschreibung {#attribute-description-5}
 
-* **basetype (Zeichenfolge)**: Typ der in der Aufzählung gespeicherten Werte.
+* **basetype (Zeichenfolge)**: Typ der in der Auflistung gespeicherten Werte.
 
    Liste der verfügbaren Typen:
 
@@ -640,7 +640,7 @@ Aufzählungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement d
    * date
    * DOMDocument
    * DOMElement
-   * double
+   * Dublette
    * enum
    * float
    * html
@@ -657,15 +657,15 @@ Aufzählungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement d
    * Zeitspanne
    * uuid
 
-* **default (Zeichenfolge)**: Standardwert. Der Standardwert kann auch einer der in der Aufzählung definierten Werte sein.
-* **desc (Zeichenfolge)**: Beschreibung der Aufzählung.
-* **label (Zeichenfolge)**: Aufzählungsbezeichnung.
-* **name (Zeichenfolge)**: interner Name der Aufzählung.
+* **default (Zeichenfolge)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
+* **desc (Zeichenfolge)**: Beschreibung der Auflistung.
+* **label (Zeichenfolge)**: Beschriftung der Auflistung.
+* **name (Zeichenfolge)**: interner Name der Auflistung.
 * **template (string)**: Dieses Attribut definiert einen Verweis auf ein `<enumeration>` Element, das von mehreren Schemas gemeinsam verwendet wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 
 ### Beispiele {#examples-4}
 
-Beispiel für Aufzählungswerte, deren Werte in der Datenbank gespeichert werden:
+Beispiel für Auflistungen, deren Werte in der Datenbank gespeichert werden:
 
 ```
     <enumeration name="myEnum">
@@ -678,7 +678,7 @@ Beispiel für Aufzählungswerte, deren Werte in der Datenbank gespeichert werden
     </element>
 ```
 
-Definition einer Aufzählung mit einem Standardwert:
+Definition einer Auflistung mit einem Standardwert:
 
 ```
  <enumeration basetype="byte" default="email" name="canal">
@@ -688,7 +688,7 @@ Definition einer Aufzählung mit einem Standardwert:
  </enumeration>
 ```
 
-## `<help>` element {#help--element}
+## `<help>` Element {#help--element}
 
 ### Inhaltsmodell {#content-model-6}
 
@@ -723,7 +723,7 @@ Dieses Element hat keine Attribute.
 </method> 
 ```
 
-## `<join>` element {#join--element}
+## `<join>` Element {#join--element}
 
 ### Inhaltsmodell {#content-model-7}
 
@@ -751,7 +751,7 @@ Hiermit können Sie die Felder definieren, die eine Verbindung zwischen SQL-Tabe
 
 Ein `<join>` Element kann nur verwendet werden, wenn das übergeordnete `<element>` Element vom Typ &quot;link&quot;ist. Das bedeutet, dass für das übergeordnete Element das Attribut &quot;@type=link&quot;deklariert sein muss.
 
-Es ist nicht erforderlich, den Namen und den Namespace der Remote-Tabelle im `<join>` -Element anzugeben. Sie müssen im übergeordneten Element angegeben werden `<element>`.
+Es ist nicht erforderlich, den Namen und den Namensraum der Remote-Tabelle im `<join>` Element anzugeben. Sie müssen im übergeordneten Element angegeben werden `<element>`.
 
 Standardmäßig werden Links am Ende des Schemas definiert.
 
@@ -765,7 +765,7 @@ Wenn das `<join>` Element bei der Definition des Linktypelements nicht angegeben
 
 ### Beispiele {#examples-6}
 
-Link zwischen dem Feld &#39;email&#39; der aktuellen Tabelle und dem Feld &quot;@company-id&quot;der Remote-Tabelle:
+Link zwischen dem Feld &quot;E-Mail&quot;der aktuellen Tabelle und dem Feld &quot;@company-id&quot;der Remote-Tabelle:
 
 ```
 <join xpath-dst="@compagny-id" xpath-src="@email"/>
@@ -779,7 +779,7 @@ Gefilterter Link zur Tabelle &quot;cus:Country&quot;basierend auf dem Inhalt des
  </element>
 ```
 
-## `<key>` element {#key--element}
+## `<key>` Element {#key--element}
 
 ### Inhaltsmodell {#content-model-8}
 
@@ -814,15 +814,15 @@ In der Regel werden Schlüssel nach dem Hauptelement des Schemas und den Indizes
 
 Ein Schlüssel wird als &quot;Composite&quot;bezeichnet, wenn er mehrere Felder enthält (d. h. mehrere `<keyfield>` untergeordnete Felder). Verwenden Sie keinen zusammengesetzten Schlüssel, um einen primären Schlüssel zu definieren.
 
-Wenn das Hauptelement des Schemas das Attribut &quot;@autopk=true&quot;enthält, ist der primäre Schlüssel eindeutig. Wir können nur einen Primärschlüssel pro Schema haben.
+Wenn das Hauptelement des Schemas das Attribut &quot;@autopk=true&quot;enthält, ist der Primärschlüssel eindeutig. Wir können nur einen Primärschlüssel pro Schema haben.
 
-Die ersten 1000 Bezeichner sind reserviert. Wenn also ein Wertebereich für Schlüssel definiert werden muss, beginnen Sie mit 1000.
+Die ersten 1000 Bezeichner sind reserviert. Wenn also ein Wertebereich für Schlüssel definiert werden muss, ist der Beginn bei 1000.
 
 ### Attributbeschreibung {#attribute-description-8}
 
 * **allowEmptyPart (boolean)**: bei einem zusammengesetzten Schlüssel, wenn dieses Attribut aktiviert ist, wird der Schlüssel als gültig betrachtet, wenn mindestens einer der Schlüssel nicht leer ist. Ist dies der Fall, ist der leere Vorgabewert &quot;0&quot;(boolesch oder für alle Arten numerischer Daten). Standardmäßig müssen alle Schlüssel, aus denen ein Composite-Schlüssel besteht, eingegeben werden.
 * **applyIf (Zeichenfolge)**: Mit diesem Attribut können Sie den Schlüssel optional machen. Er definiert die Bedingung, nach der die Schlüsseldefinition angewendet wird. Dieses Attribut erhält einen XTK-Ausdruck.
-* **internal (boolean)**: Wenn es aktiviert ist, informiert Adobe Campaign über das Attribut, dass der Schlüssel primär ist.
+* **internal (boolean)**: Wenn es aktiviert ist, zeigt dieses Attribut Adobe Campaign an, dass der Schlüssel primär ist.
 * **label (Zeichenfolge)**: Beschriftung des Schlüssels.
 * **name (MNTOKEN)**: interner Name des Schlüssels.
 * **noDbIndex (boolean)**: Wenn es aktiviert ist (noDbIndex=&quot;true&quot;), wird das Feld, das dem Schlüssel entspricht, nicht indiziert.
@@ -849,7 +849,7 @@ Erklärung eines Primärschlüssels im Feld &quot;Name&quot; des STRING-Typs in 
 CREATE UNIQUE INDEX Schema_PrimaryKey ON Schema(sName);
 ```
 
-## `<keyfield>` element {#keyfield--element}
+## `<keyfield>` Element {#keyfield--element}
 
 ### Inhaltsmodell {#content-model-9}
 
@@ -874,8 +874,8 @@ Dieses Element definiert die Felder, die in einen Index oder Schlüssel integrie
 
 ### Attributbeschreibung {#attribute-description-9}
 
-* **xlink (MNTOKEN)**: können Sie automatisch auf Fremdschlüssel verweisen, die in der Verknüpfung für eine Beziehungstabelle (N-N Link) definiert sind.
-* **xpath (MNTOKEN)**: Definition eines Indexes oder eines Schlüssels für ein `<attribute>` Element. Dieses Attribut erhält einen Xpath, der den Pfad zum Schemaattribut definiert, das den Schlüssel oder den Index definiert.
+* **xlink (MNTOKEN)**: können Sie automatisch auf Fremdschlüssel verweisen, die in der Verknüpfung für eine Beziehungstabelle (N-N-Link) definiert sind.
+* **xpath (MNTOKEN)**: Definition eines Indexes oder eines Schlüssels für ein `<attribute>` Element. Dieses Attribut erhält einen Xpath, der den Pfad zum Schema-Attribut definiert, das den Schlüssel oder den Index definiert.
 
 ### Beispiele {#examples-}
 
@@ -885,11 +885,11 @@ Auswahl des Felds &quot;sName&quot;in einem Index mit einem Xpath auf &quot;@nam
 <keyfield xpath="@name"/>
 ```
 
-## `<method>` element {#method--element}
+## `<method>` Element {#method--element}
 
 ### Inhaltsmodell {#content-model-10}
 
-Methode:==( help| Parameter)
+Methode:==( help | Parameter)
 
 ### Attribute {#attributes-10}
 
@@ -920,11 +920,11 @@ Mit diesem Element können Sie eine SOAP-Methode definieren.
 
 SOAP-Methoden ermöglichen Anwendungsprozesse.
 
-Die &quot;@library&quot;ist erforderlich, um eine neue Methode zu deklarieren (nicht native): Der Namespace und der für die Bibliothek verwendete Name sind unabhängig vom Namespace und dem Namen des Schemas, in dem sich die Deklaration befindet.
+Die &quot;@library&quot;ist erforderlich, um eine neue Methode zu deklarieren (nicht native): der Namensraum und der Bibliotheksname sind unabhängig vom Namensraum und vom Namen des Schemas, in dem die Deklaration enthalten ist.
 
 ### Attributbeschreibung {#attribute-description-10}
 
-* **access (Zeichenfolge)**: Dieses Attribut definiert die Zugriffssteuerung für die Verwendung der Methode. Wenn dieses Attribut fehlt, ist die Identifizierung obligatorisch. Verfügbare Werte sind: &#39;anonymous&#39;, &#39;admin&#39; und &#39;sql&#39;.
+* **access (Zeichenfolge)**: Dieses Attribut definiert die Zugriffskontrolle für die Verwendung der Methode. Wenn dieses Attribut fehlt, ist die Identifizierung obligatorisch. Verfügbare Werte sind: &#39;anonymous&#39;, &#39;admin&#39; und &#39;sql&#39;.
 * **const (boolean)**: Wenn es aktiviert ist, bedeutet dieses Attribut, dass die deklarierte Methode die Entität ändert
 * **label (Zeichenfolge)**: Bezeichnung der Methode.
 * **library (string)**: Diese Methode ist nicht nativ für die Anwendung. Dieses Attribut nimmt den Wert der Methodenbibliothek ein, in der die Methodendefinition gefunden wird (nms:mylibrary.js).
@@ -949,7 +949,7 @@ Definition der Out-of-the-Box-Methode &quot;Abonnieren&quot;:
     </method>
 ```
 
-## `<methods>` element {#methods--element}
+## `<methods>` Element {#methods--element}
 
 ### Inhaltsmodell {#content-model-11}
 
@@ -983,7 +983,7 @@ Dieses Element hat keine Attribute.
 </methods>
 ```
 
-## `<param>` element {#param--element}
+## `<param>` Element {#param--element}
 
 ### Inhaltsmodell {#content-model-12}
 
@@ -998,7 +998,7 @@ param:==help
 * @label (Zeichenfolge)
 * @localizable (Zeichenfolge)
 * @name (MNTOKEN)
-* @namespace (MNTOKEN)
+* @Namensraum (MNTOKEN)
 * @type (Zeichenfolge)
 
 ### Eltern {#parents-12}
@@ -1017,7 +1017,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
 
 * **desc (Zeichenfolge)**: Beschreibung, die das `<param>` Element betrifft.
 * **inout (Zeichenfolge)**: Dieses Attribut definiert, ob sich der Parameter am Eingang (in) oder an der Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben ist, lautet der Standardparameter input (&quot;@inout=in&quot;).
-* **label (Zeichenfolge)**: `<param>` Etikett
+* **label (Zeichenfolge)**: `<param>` label
 * **localizable (Zeichenfolge)**: Wenn es aktiviert ist, weist dieses Attribut das Erfassungswerkzeug an, den Wert des Attributs &quot;@label&quot;für die Übersetzung wiederherzustellen (interne Verwendung).
 * **name (MNTOKEN)**: interner Name der `<param>`
 * **type (string)**: Dieses Attribut definiert den Typ des `<param>` Elements
@@ -1036,7 +1036,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
    * date
    * DOMDocument
    * DOMElement
-   * double
+   * Dublette
    * enum
    * float
    * html
@@ -1062,7 +1062,7 @@ Definition der Einstellung &quot;serviceName&quot; für den Zeichenfolgentyp:
                name="serviceName" type="string" inout="in"/>
 ```
 
-## `<parameters>` element {#parameters--element}
+## `<parameters>` Element {#parameters--element}
 
 ### Inhaltsmodell {#content-model-13}
 
@@ -1100,15 +1100,15 @@ Keiner
 </parameters>
 ```
 
-## `<srcschema>` element {#srcschema--element}
+## `<srcschema>` Element {#srcschema--element}
 
 ### Inhaltsmodell {#content-model-14}
 
-srcSchema:==(attribute| createdBy| data| element| enumeration| help| Schnittstelle| Methoden| modifyBy)
+srcSchema:==(attribute | createdBy | data | element | Auflistung | help | Schnittstelle | Methoden | modifyBy)
 
 ### Attribute {#attributes-14}
 
-created (datetime), createdBy-id (long), desc (string), entitySchema (string), extendedSchema (string), img (string), implements (string), label (string), labelSingular (string), lastModified (datetime), library (boolean), mappingType (string), modifyBy-id (long), name (string), (Zeichenfolge), useRecycleBin (boolean), view (boolean), xtkschema (string)
+created (datetime), createdBy-id (long), desc (string), entitySchema (string), extendedSchema (string), img (string), implements (string), label (string), labelSingular (string), lastModified (datetime), library (boolean), mappingType (string), modifyBy-id (long), name (string), Namensraum,  (Zeichenfolge), useRecycleBin (boolean), Ansicht (boolean), xtkschema (Zeichenfolge)
 
 ### Eltern {#parents-14}
 
@@ -1128,24 +1128,24 @@ Keiner
 
 ### Beschreibung {#description-14}
 
-Das `<srcschema>` Stammelement eines Schemas. Es ist der Eingabepunkt für die Definition des Schemas.
+Das `<srcschema>` ist das Stammelement eines Schemas. Es ist der Eingabepunkt für die Definition des Schemas.
 
 ### Verwendung und Kontext {#use-and-context-of-use-9}
 
-Die Schemadarstellung ist unter [Informationen zu Schemaverweis](../../configuration/using/about-schema-reference.md) und [Schemastruktur](../../configuration/using/schema-structure.md)verfügbar.
+Die Präsentation zum Schema finden Sie unter [Informationen zu Schema-Referenz](../../configuration/using/about-schema-reference.md) und [Schema-Struktur](../../configuration/using/schema-structure.md).
 
 ### Attributbeschreibung {#attribute-description-14}
 
-* **created (dattime)**: Dieses Attribut enthält Informationen zum Datum und zur Uhrzeit der Schemaerstellung. Es enthält das Formular &quot;Date Time&quot;. Die angezeigten Werte werden vom Server übernommen. Die Uhrzeit wird im UTC-Format angezeigt.
-* **createdBy-id (long)**: ist der Bezeichner des Operators, der das Schema erstellt hat.
-* **desc (Zeichenfolge)**: Schemabeschreibung
-* **entitySchema (Zeichenfolge)**: Basisschema, auf dem Syntax und Genehmigung basieren (standardmäßig für Adobe Campaign: xtk:srcSchema). Wenn Sie das aktuelle Schema speichern, genehmigt Adobe Campaign seine Grammatik mit dem Schema, das im @xtkschema-Attribut deklariert ist.
-* **extendedSchema (Zeichenfolge)**: empfängt den Namen des vordefinierten Schemas, auf dem die aktuelle Schemaerweiterung basiert. Das Formular lautet &quot;namespace:name&quot;.
-* **img (Zeichenfolge)**: mit dem Schema verknüpftes Symbol (kann im Assistenten zum Erstellen des Schemas definiert werden).
-* **label (Zeichenfolge)**: Schemabezeichnung.
+* **created (dattime)**: Dieses Attribut enthält Informationen zum Datum und zur Uhrzeit der Erstellung des Schemas. Es enthält das Formular &quot;Date Time&quot;. Die angezeigten Werte werden vom Server übernommen. Die Uhrzeit wird im UTC-Format angezeigt.
+* **createdBy-id (long)**: ist die Kennung des Operators, der das Schema erstellt hat.
+* **desc (Zeichenfolge)**: Beschreibung des Schemas
+* **entitySchema (Zeichenfolge)**: Basis-Schema, auf dem Syntax und Genehmigung basieren (zum Adobe Campaign standardmäßig): xtk:srcSchema). Wenn Sie das aktuelle Schema speichern, genehmigt Adobe Campaign seine Grammatik mit dem im @xtkschema-Attribut deklarierten Schema.
+* **extendedSchema (Zeichenfolge)**: erhält den Namen des vordefinierten Schemas, auf dem die aktuelle Schema-Erweiterung basiert. Das Formular lautet &quot;Namensraum:Name&quot;.
+* **img (Zeichenfolge)**: mit dem Schema verknüpft ist (kann im Assistenten zum Erstellen von Schemas definiert werden).
+* **label (Zeichenfolge)**: Beschriftung des Schemas.
 * **labelSingular (Zeichenfolge)**: Beschriftung (Singular) für die Anzeige in der Schnittstelle.
 * **lastModified (datetime)**: Dieses Attribut enthält Informationen zum Datum und zur Uhrzeit der letzten Änderung. Es enthält das Formular &quot;Date Time&quot;. Die angezeigten Werte werden vom Server übernommen. Die Uhrzeit wird im UTC-Format angezeigt.
-* **library (boolean)**: Verwendung des Schemas als Bibliothek und nicht als Entität. Auf dieses Schema kann daher mithilfe der Attribute &quot;@ref&quot;und &quot;@template&quot;von anderen Schemata verwiesen werden.
+* **library (boolean)**: Verwendung des Schemas als Bibliothek und nicht als Entität. Dieses Schema kann daher von anderen Schemas mithilfe der Attribute &quot;@ref&quot;und &quot;@template&quot;referenziert werden.
 * **mappingType (Zeichenfolge)**:
 
    * &quot;sql&quot;: Datenbankzuordnung
@@ -1154,15 +1154,15 @@ Die Schemadarstellung ist unter [Informationen zu Schemaverweis](../../configura
    * &quot;inaryFile&quot;: Binäre Dateizuordnung
 
 * **modifyBy-id (long)**: entspricht der Kennung des Operators, der das Schema geändert hat.
-* **name (Zeichenfolge)**: eindeutiger Schemaname.
-* **namespace (string)**: namespace of the schema (default: nms, xtk, nl). Beim Erstellen eines neuen Schemas für ein Projekt wird empfohlen, einen dedizierten Namespace zu verwenden.
-* **useRecycleBin (boolean)**: Aktiviert die Papierkorbsfunktion in der Anwendung. Gelöschte Datensätze werden vor der endgültigen Löschung in den Papierkorb gelegt. Diese Funktion ist nur im Bereitstellungsmodus verfügbar.
-* **Ansicht (boolean)**: Wenn es aktiviert ist (@view=&quot;true&quot;), wird das Schema als Ansicht verwendet. Der Assistent zum Aktualisieren der Datenbankstruktur berücksichtigt das Schema nicht. Diese Option wird hauptsächlich für den Verweis auf externe Tabellen verwendet.
-* **xtkschema (Zeichenfolge)**: Name des Schemas, das die Schemakompatibilität definiert (standardmäßig xtk:srcSchema).
+* **name (Zeichenfolge)**: eindeutiger Name des Schemas.
+* **Namensraum (Zeichenfolge)**: Namensraum des Schemas (Standard: nms, xtk, nl). Beim Erstellen eines neuen Schemas für ein Projekt wird empfohlen, einen eigenen Namensraum zu verwenden.
+* **useRecycleBin (boolean)**: Aktiviert die Funktion &quot;Papierkorb&quot;in der Anwendung. Gelöschte Datensätze werden vor der endgültigen Löschung in den Papierkorb gelegt. Diese Funktion ist nur im Versand-Modus verfügbar.
+* **Ansicht (boolean)**: Wenn es aktiviert ist (@Ansicht=&quot;true&quot;), wird das Schema als Ansicht verwendet. Der Assistent zum Aktualisieren der Datenbankstruktur berücksichtigt das Schema nicht. Diese Option wird hauptsächlich für den Verweis auf externe Tabellen verwendet.
+* **xtkschema (Zeichenfolge)**: Name des Schemas, das die Schema-Grammatik definiert (standardmäßig xtk:srcSchema).
 
 ### Beispiele {#examples-11}
 
-`<srcschema>` -Element des Schemas &quot;nms:delivery&quot;
+`<srcschema>` -Element des Schemas &quot;nms:Versand&quot;
 
 ```
 <srcSchema desc="Defines all the settings of a delivery (or delivery template)."  
@@ -1171,7 +1171,7 @@ Die Schemadarstellung ist unter [Informationen zu Schemaverweis](../../configura
            name="delivery" namespace="nms" useRecycleBin="true" xtkschema="xtk:srcSchema">
 ```
 
-## `<sysfilter>` element {#sysfilter--element}
+## `<sysfilter>` Element {#sysfilter--element}
 
 ### Inhaltsmodell {#content-model-15}
 
@@ -1207,7 +1207,7 @@ Definition eines Filters mit einer Bedingung für das @name-Attribut:
   <sysFilter>
 ```
 
-## `<value>` element {#value--element}
+## `<value>` Element {#value--element}
 
 ### Inhaltsmodell {#content-model-16}
 
@@ -1233,17 +1233,17 @@ value:==help
 
 ### Beschreibung {#description-16}
 
-Mit diesem Element können Sie die in einer Aufzählung gespeicherten Werte definieren.
+Mit diesem Element können Sie die in einer Auflistung gespeicherten Werte definieren.
 
 ### Attributbeschreibung {#attribute-description-16}
 
-* **applyIf (Zeichenfolge)**: Mit diesem Attribut können Sie einen Enumeration-Wert optional machen. Es erhält einen XTK-Ausdruck.
-* **desc (Zeichenfolge)**: Beschreibung des Aufzählungswerts.
-* **enabledIf (Zeichenfolge)**: Bedingung zum Aktivieren des Aufzählungswerts.
-* **img (Zeichenfolge)**: Bild, das mit der Aufzählung im Formular &quot;namespace:image_name&quot;verknüpft ist. Das Bild muss auf den Anwendungsserver importiert werden.
-* **label (Zeichenfolge)**: Beschriftung des Aufzählungswerts.
-* **name (Zeichenfolge)**: interner Name des Aufzählungswerts.
-* **Wert (Zeichenfolge)**: Wert des Aufzählungswerts. Der Werttyp wird basierend auf dem Aufzählungstyp definiert. Wenn die Aufzählung vom Zeichenfolgentyp ist, darf sie nur Zeichenfolgentypwerte enthalten.
+* **applyIf (Zeichenfolge)**: Mit diesem Attribut können Sie einen Auflistung-Wert als optional definieren. Es erhält einen XTK-Ausdruck.
+* **desc (Zeichenfolge)**: Beschreibung der Auflistung.
+* **enabledIf (Zeichenfolge)**: Bedingung zum Aktivieren des Auflistung-Werts.
+* **img (Zeichenfolge)**: Bild, das mit der Auflistung im Formular &quot;Namensraum:image_name&quot;verknüpft ist. Das Bild muss auf den Anwendungsserver importiert werden.
+* **label (Zeichenfolge)**: Beschriftung des Auflistung-Werts.
+* **name (Zeichenfolge)**: interner Name des Wertes der Auflistung.
+* **Wert (Zeichenfolge)**: Wert der Auflistung. Der Werttyp wird basierend auf dem Typ der Auflistung definiert. Wenn die Auflistung vom Zeichenfolgentyp ist, darf sie nur Zeichenfolgentypwerte enthalten.
 
 ### Beispiele {#examples-13}
 
