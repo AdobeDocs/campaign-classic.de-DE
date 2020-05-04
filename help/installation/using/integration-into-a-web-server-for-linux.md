@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a37daa8e31afd3d2ab7d5b70bd8ae02c59ce9ee0
+source-git-commit: 4fbc576ba65c44d91ac87ea2967fac3b0a88a040
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Campaign enthält Apache Tomcat, der als Einstiegspunkt im Anwendungsserve
 
 Sie können diesen integrierten Tomcat-Server verwenden, um HTTP-Anforderungen zu erfüllen.
 
-In diesem Fall
+In diesem Fall:
 
 * Der standardmäßige Listening-Anschluss ist 8080. Informationen zum Ändern finden Sie unter [Konfigurieren von Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
 * Der Client Konsolen verbindet sich dann mit einer URL wie:
@@ -43,7 +43,7 @@ Ebenso müssen Sie einen Webserver verwenden, wenn Sie die Verfolgungsfunktion v
 
 >[!NOTE]
 >
->Wenn Sie die Verfolgungsfunktion nicht verwenden, können Sie eine Standardinstallation von Apache oder IIS mit einer Umleitung zu Campaign durchführen. Das Tracking-Webserver-Erweiterungsmodul ist nicht erforderlich.
+>Wenn Sie die Verfolgungsfunktion nicht verwenden, können Sie eine Standardinstallation von Apache oder IIS mit einer Weiterleitung zur Kampagne durchführen. Das Tracking-Webserver-Erweiterungsmodul ist nicht erforderlich.
 
 ## Konfigurieren des Apache-Webservers mit Debian {#configuring-the-apache-web-server-with-debian}
 
@@ -99,7 +99,7 @@ Gehen Sie wie folgt vor:
 
    Speichern Sie die Änderungen.
 
-1. Fügen Sie dann Adobe Campaign-Benutzer zur Apache-Benutzergruppe hinzu und umgekehrt mit dem folgenden Befehlstyp:
+1. Fügen Sie dann Adobe Campaign-Benutzer zur Apache-Benutzergruppe hinzu und umgekehrt, indem Sie den folgenden Befehlstyp verwenden:
 
    ```
    usermod neolane -G www-data
@@ -168,7 +168,7 @@ Gehen Sie wie folgt vor:
 
 1. Für **RHEL7**:
 
-   Fügen Sie die `/etc/systemd/system/httpd.service` Datei mit folgendem Inhalt hinzu:
+   Hinzufügen die `/etc/systemd/system/httpd.service` Datei mit folgendem Inhalt:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -183,7 +183,7 @@ Gehen Sie wie folgt vor:
    systemctl daemon-reload
    ```
 
-1. Fügen Sie dann Adobe Campaign-Operatoren zur Apache-Operatorgruppe hinzu und umgekehrt, indem Sie den Befehl ausführen:
+1. Fügen Sie dann der Gruppe der Apache-Operatoren Adobe Campaign-Operatoren hinzu und umgekehrt, indem Sie den Befehl ausführen:
 
    ```
    usermod -a -G neolane apache
@@ -203,7 +203,7 @@ Gehen Sie wie folgt vor:
 
 ## Webserver starten und Konfiguration testen{#launching-the-web-server-and-testing-the-configuration}
 
-Sie können die Konfiguration jetzt testen, indem Sie Apache starten. Das Adobe Campaign-Modul sollte nun sein Banner in der Konsole anzeigen (zwei Banner auf bestimmten Betriebssystemen):
+Sie können die Konfiguration jetzt testen, indem Sie Apache starten. Das Adobe Campaign-Modul sollte nun sein Banner auf der Konsole anzeigen (zwei Banner auf bestimmten Betriebssystemen):
 
 ```
  /etc/init.d/apache start
@@ -234,19 +234,19 @@ Sie sollten Folgendes erhalten:
 Trying 127.0.0.1...
 Connected to localhost.localdomain.
 Escape character is '^]'.
-````
+```
 
 Geben Sie dann ein:
 
 ```
 GET /r/test
-````
+```
 
 Die folgenden Informationen werden angezeigt:
 
 ```
 <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='' localHost='XXXX'/>
 Connection closed by foreign host.
-````
+```
 
 Sie können die URL auch [`https://<computer>`](https://machine/r/test) über einen Webbrowser anfordern.
