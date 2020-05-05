@@ -1,7 +1,7 @@
 ---
-title: Problembehebung
-seo-title: Problembehebung
-description: Problembehebung
+title: Fehlerbehebung
+seo-title: Fehlerbehebung
+description: Fehlerbehebung
 seo-description: null
 page-status-flag: never-activated
 uuid: 02bd48cf-3928-4817-97b0-1e64cc8ad8ef
@@ -14,13 +14,13 @@ discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
 
 
-# Problembehebung{#troubleshooting}
+# Fehlerbehebung{#troubleshooting}
 
 Wenn Ihr Mobilgerät mit einem WLAN verbunden ist und Sie keine Benachrichtigungen erhalten, stellen Sie sicher, dass die FCM/APNS-Ports nicht von Ihrer Firewall gesperrt werden.
 
@@ -37,4 +37,4 @@ HTTP/2-Connector: Erlauben Sie die Kommunikation zu und von den folgenden Server
 
 >[!NOTE]
 >
->Weitere Informationen zu den beiden Connectors finden Sie unter [Mobilanwendung konfigurieren in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+>Weiterführende Informationen zu den beiden Connectoren finden Sie unter [Konfiguration der Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
