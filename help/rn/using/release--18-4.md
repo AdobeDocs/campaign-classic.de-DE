@@ -1,7 +1,7 @@
 ---
-title: Version 18.4
-seo-title: Version 18.4
-description: Version 18.4
+title: Version 18.4
+seo-title: Version 18.4
+description: Version 18.4
 seo-description: null
 page-status-flag: never-activated
 uuid: d132570e-20e6-4550-95bd-176701f43b19
@@ -14,17 +14,17 @@ discoiquuid: 4dc87ff3-eb6a-40ac-97ee-00b64cd7718d
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ---
 
 
-# Version 18.4{#release-18-4}
+# Version 18.4{#release-18-4}
 
-## Version 18.4.5 - Build 8937{#release-18-4-5-build-8937}
+## Version 18.4.5 – Build 8937{#release-18-4-5-build-8937}
 
-\21. November 2018
+21. November 2018
 
 **Neuheiten**
 
@@ -49,7 +49,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 * Die Verfügbarkeitsdauer des gemeinsamen Speichers bei der Verarbeitung von untergeordneten Zombieprozessen wurde verlängert (MTA).
 * In Apache wurde ein potenzieller Deadlock behoben (Tracking).
 
-## Version 18.4.4 - Build 8936{#release-18-4-4-build-8936}
+## Version 18.4.4 – Build 8936{#release-18-4-4-build-8936}
 
 1. August 2018
 
@@ -58,17 +58,17 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 * E-Mail-Archivierungs-Logs wurden verbessert. Dank der BCC-Archivierung kann jetzt einfacher festgestellt werden, welche E-Mails erfolgreich gesendet wurden oder fehlgeschlagen sind. (NEO-10675)
 * Fehlerkorrektur – In den Tracking-Broadlogs werden jetzt Kunden-IPs anstatt Lastverteilungs-IPs angezeigt. (NEO-11295)
 * Fehlerkorrektur – Bei der LATIN1-Codierung tritt jetzt kein Fehler mehr auf, wenn eine FDA-Verbindung zu einer PostgreSQL-Datenbank verwendet wird. (NEO-11299)
-* Es wurde ein Problem behoben, das bei Verwendung der **[!UICONTROL Prepare the personalization data with a workflow]** Auslieferungsoption aufgetreten ist. (NEO-11047, NEO-11301)
+* Fehlerkorrektur – Bei der Verwendung der Versandoption **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** tritt kein Fehler mehr auf. (NEO-11047, NEO-11301)
 * Fehlerkorrektur – Die Eigenschaften eines Versands werden nicht mehr fälschlicherweise überschrieben. (NEO-11015)
-* Fixed an issue when using calculated fields in a **[!UICONTROL Survey answers]** workflow activity. (NEO-11382)
-* Es wurde ein Problem behoben, das bei der Verwendung von in XML gespeicherten Daten in einer **[!UICONTROL Survey answers]** Workflow-Aktivität auftrat. (NEO-10816)
-* Es wurde ein Problem bei der Serveraktualisierung mit Build 8935 behoben.
-* Fixed an issue which displayed useless errors in the postupgrade log when a **[!UICONTROL Survey answers]** workflow activity was not fully configured.
-* FDA Teradata: Es wurde ein Problem mit automatisch inkrementierten Feldern und Indizes in SQL-Tabellen behoben.
+* Fehlerkorrektur – Bei der Verwendung von berechneten Feldern in der Workflow-Aktivität **[!UICONTROL Umfrageantworten]** tritt kein Fehler mehr auf. (NEO-11382)
+* Es wurde ein Problem behoben, das bei der Verwendung von in XML gespeicherten Daten in einer Workflow-Aktivität **[!UICONTROL Umfrageantworten]** auftrat. (NEO-10816)
+* Es wurde ein Problem bei der Server-Aktualisierung mit Build 8935 behoben.
+* Fehlerkorrektur – Im Postupgrade-Log werden keine unnützen Fehler mehr angezeigt, wenn die Workflow-Aktivität **[!UICONTROL Umfrageantworten]** nicht vollständig konfiguriert ist.
+* FDA-Teradata: Es wurde ein Problem mit automatisch inkrementierten Feldern und Indizes in SQL-Tabellen behoben.
 
-## Version 18.4.3 - Build 8935{#release-18-4-3-build-8935}
+## Version 18.4.3 – Build 8935{#release-18-4-3-build-8935}
 
-\22. Juni 2018
+22. Juni 2018
 
 **Neuheiten**
 
@@ -76,24 +76,24 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 * Fehlerkorrektur – Bildlinks beim LINE-Versand können nun personalisiert werden. (NEO-11077)
 * Fehlerkorrektur – der Mechanismus für die Generierung von ID-Sequenzen wird nun ordnungsgemäß ausgeführt. (NEO-11115)
 * Fehlerkorrektur – Datenschutzanfragen (DSGVO) funktionieren nun, wenn ein benutzerdefinierter Namensraum mit einem Integer-Abstimmschlüssel verwendet wird. (NEO-11123)
-* Es wurde ein Fehler behoben, der bei Verwendung der **[!UICONTROL Distribution of values]** Option in **[!UICONTROL Query]** Workflow-Aktivitäten auftrat. (NEO-10958)
+* Fehlerkorrektur – die Verwendung der Option **[!UICONTROL Werteverteilung]** in **[!UICONTROL Abfrage]**-Workflow-Aktivitäten funktioniert nun fehlerfrei. (NEO-10958)
 * Fehlerkorrektur – die Synchronisierung von Platzierungen zwischen der Marketinginstanz und der Interaktionsinstanz funktioniert nun fehlerfrei. (NEO-11162)
 * Die Verwaltung langer Indexnamen während des Postupgrades wurde verbessert.
 
-## Version 18.4.2 - Build 8932{#release-18-4-2-build-8932}
+## Version 18.4.2 – Build 8932{#release-18-4-2-build-8932}
 
-\22. Mai 2018
+22. Mai 2018
 
 **Neuheiten**
 
 * Fehlerkorrektur – das Update für Windows Server wird nun ordnungsgemäß ausgeführt.
-* Es wurde ein Problem in der **[!UICONTROL Survey Result]** Aktivität bei der Verwendung von in XML gespeicherten Daten behoben. Der Bericht wurde falsch angezeigt. (NEO-10816)
+* Fehlerkorrektur – für die Aktivität **[!UICONTROL Umfrageergebnis]** wird der Bericht bei Verwendung von in XML gespeicherten Daten nun ordnungsgemäß angezeigt. (NEO-10816)
 * Fehlerkorrektur – für den inMail-Prozess tritt bei Verwendung eines Bounce Message-Servers kein Leistungsproblem mehr auf. (NEO-10641)
 * Fehlerkorrektur – bei der Aktualisierung von mehr als 1.000 Schemata gibt es kein Problem mehr beim Datenbank-Update.
 
-## Version 18.4 - Build 8931{#release-18-4-build-8931}
+## Version 18.4 – Build 8931{#release-18-4-build-8931}
 
-April 2018
+24. April 2018
 
 **Neue Funktionen?**
 
@@ -111,7 +111,7 @@ April 2018
     <ul> 
      <li> <p>Recht auf Zugriff: Das Datensubjekt hat das Recht, eine Kopie seiner personenbezogenen Daten, die vom Datenverantwortlichen erfasst werden, zu erhalten. Hierzu zählen unter Umständen auch die in Adobe Campaign gespeicherten Daten.</p> </li> 
      <li> <p>Recht auf Löschung: Das Datensubjekt hat das Recht, seine personenbezogenen Daten, die vom Datenverantwortlichen erfasst werden, löschen zu lassen. Hierzu zählen unter Umständen auch die in Adobe Campaign gespeicherten Daten.</p> </li> 
-    </ul> Lesen Sie für weiterführende Informationen das <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">entsprechende Handbuch</a>.<br /> </td> 
+    </ul> Lesen Sie für weiterführende Informationen das <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">entsprechende Handbuch</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Aktive Profile<br /> </td> 
@@ -134,19 +134,19 @@ April 2018
 **Neuheiten**
 
 * **LINE-Kanal - verbesserte Architektur**: Der LINE-Kanal wird jetzt wie alle anderen Kanäle in Adobe Campaign in allen Installationstypen unterstützt: gehostet, Hybrid und On-Premise.
-* **Automatische Erzeugung von Sequenzen**: Der Mechanismus zur ID-Erzeugung wurde verbessert, sodass nun die Lebensdauer von Campaign-Instanzen bei großen Objektmengen verlängert ist. Weiterführende Informationen finden Sie in dieser [Technote](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html).
+* **Automatische Erzeugung von Sequenzen**: Der Mechanismus zur ID-Erzeugung wurde verbessert, sodass nun die Lebensdauer von Campaign-Instanzen bei großen Objektmengen verlängert ist. Weiterführende Informationen finden Sie in dieser [Technote](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
 
 **Sonstige Änderungen**
 
 * Für den Package-Import ist ein neuer Modus verfügbar, bei dem die Befehlszeile verwendet wird. Dadurch sind zirkuläre Abhängigkeiten möglich (nicht empfohlen für große Packages). Weiterführende Informationen dazu finden Sie im Abschnitt &quot;Technische Entwicklungen&quot;. (NEO-8979)
 * Die Leistung für große, in Teradata geladene Datenmengen wurde verbessert. Außerdem wurde ein Fehler behoben, sodass nun der richtige Wert verarbeiteter Daten im Log angezeigt wird. (NEO-10429)
 * Der Import von Audiences aus Audience Manager funktioniert jetzt mit aufgesplitteten Dateien. Zuvor wurde vom technischen Workflow importSharedAudience nur die letzte Datei des Segments importiert. (NEO-10156)
-* On Windows, the Campaign server default installation path has changed. When launching the 64-bit version setup, the default installation path is now: **C:\Program Files\Adobe\Adobe Campaign Classic v7** instead of **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**
+* Unter Windows hat sich der Standard-Installationspfad für den Campaign-Server geändert. Beim Setup der 64-Bit-Version lautet der standardmäßige Installationspfad jetzt: **C:\Program Files\Adobe\Adobe Campaign Classic v7** anstatt **C:\Program Files (x86)\Adobe\Adobe Campaign Classic v7**.
 * Die Standard-MX-Regeln wurden verbessert und enthalten jetzt mehr Domains und ermöglichen höheren Durchsatz.
 * Zugriffsbeschränkungen für den SOAP-Aufruf des Softwareverteilungs-Assistenten wurden verstärkt (xtk:serverOptions#SaveOptions).
 * Die veraltete Bibliothek weka.jar wurde entfernt und die OpenSSL-Bibliothek wurde zur Optimierung der Sicherheit aktualisiert.
 * Der technische Fakturierungs-Workflow wurde verbessert, um eine ausreichende Leistung der Instanzen sicherzustellen.
-* Die Möglichkeit für Administratoren, das Kennwort eines Operators festzulegen oder zurückzusetzen, wurde wiederhergestellt. Klicken Sie dazu mit der rechten Maustaste auf einen Operator, wählen Sie **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** und legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass Operatoren ihr Kennwort ändern, wenn sie die Verbindung zum ersten Mal wiederherstellen. Weitere Informationen finden Sie im [entsprechenden Handbuch](../../production/using/lost-password.md).
+* Administratoren haben jetzt wieder die Möglichkeit, das Passwort von Benutzern festzulegen oder zurückzusetzen. Klicken Sie dazu mit der rechten Maustaste auf einen Benutzer, wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Passwort zurücksetzen]** und geben Sie das neue Passwort des Benutzers ein. Wir empfehlen Benutzern, ihr Passwort bei der ersten Anmeldung zu ändern. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../production/using/lost-password.md).
 * Um die neue Mandantenfähigkeit in Adobe Target zu unterstützen, kann jetzt ein neuer &quot;at_property&quot;-Parameter zu URLs hinzugefügt werden, wenn Optionen und externe Konten für die Integration mit Target konfiguriert werden. Der für diesen Parameter zu verwendende Wert kann Adobe Target entnommen werden und wird von Campaign bei Abrufen in Target verwendet. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../integrations/using/inserting-a-dynamic-image.md).
 * Jetzt kann eine Standard-Landingpage spezifiziert werden, die sich öffnet, wenn auf ein von Adobe Target ausgegebenes Bild geklickt wird. Zuvor wurde bei Klick nur zum bei der E-Mail-Erstellung eingefügten Standard-Bild weitergeleitet. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../integrations/using/inserting-a-dynamic-image.md).
 * Im externen Konto wurde das Kästchen **Enable SMPP traces** hinzugefügt, um die Spurenausgabe zu erzwingen. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
