@@ -14,7 +14,7 @@ discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
@@ -30,7 +30,7 @@ Die Campaign SDKs für iOS und Android sind im Mobile App Channel-Modul enthalte
 
 Ziel eines SDK ist es, die Integration einer Mobile App in die Adobe-Campaign-Plattform zu erleichtern.
 
-Weiterführende Informationen zu den unterstützten Android- und iOS-Versionen finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html#MobileSDK) .
+Weiterführende Informationen zu den unterstützten Android- und iOS-Versionen finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html#MobileSDK) .
 
 ## Campaign SDK laden {#loading-campaign-sdk}
 
@@ -68,7 +68,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
    >[!NOTE]
    >
-   >This integration key is entered in the Adobe Campaign console, in the **[!UICONTROL Information]** tab of service dedicated to the mobile application. Weitere Informationen finden Sie unter [Konfigurieren einer mobilen Anwendung in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
 * **Marketing-URL**: zur Abfrage der Abonnements.
@@ -152,7 +152,7 @@ Die Registrierungsfunktion ermöglicht
 
    Trackingfunktionen ermöglichen das Tracking der Benachrichtigungsanzeige (Impression) und die Aktivierung der Benachrichtigungen (Öffnungen).
 
-   To track the notification display (done by calling the **notifyReceive** function of the SDK), follow the implementation below. Note that if you use FCM (Firebase Cloud Messaging), we advise you to use the **notifyReceive** function when the **onMessageReceived** function is called by the Android system.
+   Um die Benachrichtigungsanzeige zu tracken (durch Aufruf der SDK-Funktion **notifyReceive**), folgen Sie der unten beschriebenen Implementierung. Bitte beachten Sie: Wenn Sie FCM (Firebase Cloud Messaging) verwenden, empfehlen wir, beim Aufruf der Funktion **onMessageReceived** durch das Android-System die Funktion **notifyReceive** zu nutzen.
 
    ```
    package com.android.YourApplication;
@@ -527,7 +527,7 @@ Um die **registerDeviceStatus**-Delegation zu implementieren, gehen Sie folgende
 
 ## Variablen {#variables}
 
-Mit den Variablen können Sie das Verhalten von Mobilanwendungen nach dem Erhalt einer Benachrichtigung definieren. Diese Variablen müssen im Code der mobilen Anwendung und in der Adobe Campaign-Konsole auf der **[!UICONTROL Variables]** Registerkarte des dedizierten Mobilanwendungsdienstes definiert werden (siehe [Konfigurieren einer Mobilanwendung in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobilanwendung alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable &quot;VAR&quot;.
+Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der Mobile App und in der Adobe Campaign-Konsole auf dem Tab **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden (siehe [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
 * **Für Android**:
 
