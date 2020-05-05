@@ -14,7 +14,7 @@ discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b2222b2997105801164f930428c7b05ae7d11336
 
 ---
@@ -30,13 +30,13 @@ Ein Bericht kann vollständig angepasst und nach Bedarf konfiguriert werden. Öf
 
 ## Allgemeine Eigenschaften {#overall-properties}
 
-Auf der **[!UICONTROL General]** Registerkarte können Sie die Bezeichnung und das Schema, das sich auf den Bericht bezieht, anzeigen oder ändern. Diese Elemente werden bei der Berichterstellung eingegeben.
+Im Tab **[!UICONTROL Allgemein]** können der Titel und das Schema, auf das sich der Bericht bezieht, eingesehen und verändert werden. Diese Elemente werden bei der Erstellung des Berichts angegeben.
 
-We do not recommend changing the **[!UICONTROL Internal name]** : this is used in the report access URL.
+Es wird dringend davon abgeraten, den **[!UICONTROL Internen Namen]** zu verändern, da dieser in der Zugriffs-URL des Berichts verwendet wird.
 
 Die Berichtvorlage wird bei der Erstellung des Berichts gewählt und kann später nicht mehr verändert werden.
 
-Um die Tabelle zu ändern, die den Bericht betrifft, klicken Sie auf das **[!UICONTROL Select link]** Symbol rechts neben dem **[!UICONTROL Document type]** Feld. Um die verfügbaren Felder in der ausgewählten Tabelle anzuzeigen, klicken Sie auf das **[!UICONTROL Magnifier]** Symbol.
+Um die Tabelle zu ändern, auf die sich der Bericht bezieht, klicken Sie auf das rechts vom Feld **[!UICONTROL Dokumenttyp]** liegende Symbol **[!UICONTROL Verknüpftes Element auswählen]**. Um die in der ausgewählten Tabelle verfügbaren Felder einzusehen, klicken Sie auf das Symbol **[!UICONTROL Lupe]**.
 
 ![](assets/s_ncs_advuser_report_properties_02.png)
 
@@ -48,18 +48,18 @@ Ein Bericht kann von außerhalb der Adobe-Campaign-Konsole, beispielsweise von e
 
 Allgemein gilt:
 
-* Die **[!UICONTROL Anonymous access]** Option ermöglicht uneingeschränkten Zugriff auf den Bericht. Manipulation ist jedoch nicht möglich.
+* Die Option **[!UICONTROL Anonymen Zugriff zulassen]** macht den Bericht öffentlich zugänglich. Er kann jedoch nicht verändert werden.
 
    Die Anzeige der Berichtelemente hängen von den Berechtigungen des Standard-Berichtebenutzers ab (&#39;webapp&#39;).
 
-* The **[!UICONTROL Access control]** option enables Adobe Campaign operators to access it once they are logged on.
-* The **[!UICONTROL Specific account]** option lets you execute the report with the rights of the operator selected in the **[!UICONTROL Operator]** field.
+* Die Option **[!UICONTROL Zugriffskontrolle]** erlaubt Adobe-Campaign-Benutzern den Zugriff auf den Bericht nach Anmeldung.
+* Die Option **[!UICONTROL Spezifisches Konto nutzen]** ermöglicht die Ausführung des Berichts mit den Berechtigungen des im Feld **[!UICONTROL Benutzer]** ausgewählten Benutzers.
 
 Weiterführende Informationen zu Webformular-Eigenschaften finden Sie auf [dieser Seite](../../web/using/about-web-forms.md).
 
 ## Berichtlokalisierung verwalten {#managing-report-localization}
 
-Sie können die Sprachen konfigurieren, in die der Bericht übersetzt werden soll. To do this, click the **[!UICONTROL Localization]** tab.
+Die Sprachen, in die der Bericht übersetzt werden soll, können konfiguriert werden. Klicken Sie hierzu auf den Tab **[!UICONTROL Lokalisierung]**.
 
 ![](assets/s_ncs_advuser_report_properties_06.png)
 
@@ -73,7 +73,7 @@ Die Arbeitssprache entspricht der Sprache, in der Sie den Bericht verfassen. Bei
 
 ## HTML-Rendering anpassen {#personalizing-html-rendering}
 
-In the **[!UICONTROL Rendering]** tab, you can personalize the data display mode for the page. Sie können Folgendes auswählen:
+Im Tab **[!UICONTROL Rendering]** haben Sie die Möglichkeit, den Anzeigemodus der Daten auf der Seite anzupassen. Folgende Elemente können ausgewählt werden:
 
 * Die Rendering-Engine für Grafiken: Adobe Campaign bietet zwei verschiedene Modi zur Erzeugung des Grafik-Renderings. Die Standard-Rendering-Engine ist HTML 5. Bei Bedarf kann ein Flash-Rendering gewählt werden.
 * Die Navigation im Bericht: über Schaltflächen oder Links.
@@ -86,7 +86,7 @@ Weiterführende Informationen zu Webformular-Eigenschaften finden Sie auf [diese
 
 ## Zusätzliche Parameter definieren {#defining-additional-settings}
 
-The **[!UICONTROL Parameters]** tab lets you create additional settings for the report: these settings will be passed into the URL during the call up.
+Im Tab **[!UICONTROL Parameter]** können zusätzliche Parameter für den Bericht erstellt werden: Diese werden beim Aufruf der URL übergeben.
 
 Weiterführende Informationen zu Webformular-Eigenschaften finden Sie auf [dieser Seite](../../web/using/about-web-forms.md).
 
@@ -96,14 +96,14 @@ Weiterführende Informationen zu Webformular-Eigenschaften finden Sie auf [diese
 
 Gehen Sie wie folgt vor, um einen neuen Parameter zu erstellen:
 
-1. Click the **[!UICONTROL Add]** button and enter the name of the setting.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und erfassen Sie den Namen des Parameters.
 
    ![](assets/s_ncs_advuser_report_properties_09a.png)
 
 1. Geben Sie an, ob es sich um einen obligatorischen Parameter handeln soll.
 1. Wählen Sie den zu erstellenden Parameter aus: **[!UICONTROL Filter]** oder **[!UICONTROL Variable]**.
 
-   The **[!UICONTROL Filter entities]** option lets you use a field of the database as a parameter.
+   Die Option **[!UICONTROL Entitäten filtern]** ermöglicht die Nutzung eines Datenbank-Feldes als Parameter.
 
    ![](assets/s_ncs_advuser_report_properties_09b.png)
 
@@ -111,21 +111,21 @@ Gehen Sie wie folgt vor, um einen neuen Parameter zu erstellen:
 
    Über die Option **[!UICONTROL Variable]** kann eine Variable erstellt oder ausgewählt werden, die als URL-Parameter übergeben und auf Ebene der Filter genutzt werden kann.
 
-Mit der **[!UICONTROL Response HTTP headers]** können Sie Clickjacking verhindern, wenn Sie die Seite Ihres Berichts mit iframe in eine HTML-Seite einschließen. Zur Vermeidung von Klickjacking können Sie das **[!UICONTROL X-Frame-options header]** Verhalten auswählen:
+Mit **[!UICONTROL Antwort-HTTP-Headers]** können Sie Clickjacking verhindern, wenn Sie die Seite Ihres Berichts mit iframe in eine HTML-Seite einschließen. Zur Vermeidung von Clickjacking können Sie das Verhalten **[!UICONTROL X-Frame-Options-Header]** auswählen:
 
-* **[!UICONTROL None]**: Der Bericht wird keine haben **[!UICONTROL X-Frame-options header]**.
-* **[!UICONTROL Same as origin]**: Standardmäßig für neue Berichte und erneut veröffentlichte Berichte festgelegt. Der Hostname entspricht der URL des Berichts.
-* **[!UICONTROL Deny]**: Der Bericht kann nicht mit iframe in eine HTML-Seite eingefügt werden.
+* **[!UICONTROL Keiner]**: Der Bericht enthält keinen **[!UICONTROL X-Frame-Options-Header]**.
+* **[!UICONTROL Identisch mit Ursprung]**: Standardmäßig für neue Berichte und erneut veröffentlichte Berichte festgelegt. Der Host-Name entspricht der URL des Berichts.
+* **[!UICONTROL Ablehnen]**: Der Bericht kann nicht mit iframe in eine HTML-Seite eingefügt werden.
 
 ![](assets/s_ncs_advuser_report_properties_09c.png)
 
 ## Variablen hinzufügen {#adding-variables}
 
-Die **[!UICONTROL Variables]** Registerkarte enthält die Liste der im Bericht konfigurierten Variablen. Diese Variablen werden im Kontext des Berichts bereitgestellt und können in Berechnungen verwendet werden.
+Der Tab **[!UICONTROL Variablen]** enthält die Liste der im Bericht konfigurierten Variablen. Diese werden im Kontext des Berichts aufgeführt und können in den Berechnungen verwendet werden.
 
-Click the **[!UICONTROL Add]** button to create a new variable.
+Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um eine neue Variable zu erstellen.
 
-To view the definition of a variable, select it and click the **[!UICONTROL Detail...]** button.
+Um die Parameter einer Variablen einzusehen, markieren Sie sie und klicken Sie auf die Schaltfläche **[!UICONTROL Detail...]**.
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
@@ -137,9 +137,9 @@ Die referenzierten Scripts müssen in JavaScript verfasst und mit den gängigen 
 
 ## Fehlerseite anpassen {#personalizing-the-error-page}
 
-The **[!UICONTROL Error page]** tab lets you configure the message that will come up in case of an error in the report display.
+Im Tab **[!UICONTROL Fehlerseite]** können Sie die Nachricht anpassen, die im Falle eines Fehlers bei der Berichtanzeige erscheint.
 
-Sie können Texte verfassen und diesen Kennungen zuordnen, die für die Berichtlokalisierung erforderlich sind. Weitere Informationen finden Sie unter [Hinzufügen einer Kopf- und Fußzeile](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
+Sie können Texte verfassen und diesen Kennungen zuordnen, die für die Berichtlokalisierung erforderlich sind. Weitere Informationen hierzu finden Sie unter [Header und Footer hinzufügen](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
 ![](assets/s_ncs_advuser_report_properties_11.png)
 
