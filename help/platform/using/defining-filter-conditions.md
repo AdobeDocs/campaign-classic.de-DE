@@ -14,7 +14,7 @@ discoiquuid: 8e575da0-c51a-4106-a826-3e1771e63649
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a0698ad55afb391bdc652a00b43b20df6fb9851b
 
 ---
@@ -91,7 +91,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Ist wie</span> <br /> </td> 
-   <td> <span class="uicontrol">Ist wie</span> erzielt ähnliche Ergebnisse wie der Operator <span class="uicontrol">enthält. </span> Damit können Sie ein Platzhalterzeichen <span class="uicontrol">%</span> in den Wert einfügen.<br /> </td> 
+   <td> <span class="uicontrol">Ist wie</span> erzielt ähnliche Ergebnisse wie der Operator <span class="uicontrol">enthält. </span> Sie können ein Platzhalterzeichen (<span class="uicontrol">%</span>) in den Wert einfügen.<br /> </td> 
    <td> <strong>Nachname (@lastName) ist wie 'Me%er'</strong>. In diesem Fall werden alle Empfänger ausgegeben, deren Nachname z. B. 'Meyer', 'Meier' oder 'Meiser' lautet.<br /> </td> 
   </tr> 
   <tr> 
@@ -126,22 +126,22 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
 
 In Abfragen, die mehr als eine Bedingung enthalten, müssen die Bedingungen miteinander verknüpft werden. Mögliche Verknüpfungen sind:
 
-* **[!UICONTROL And]** Sie können zwei Filterbedingungen kombinieren.
-* **[!UICONTROL Or]** Sie können eine Alternative anbieten,
-* **[!UICONTROL Except]** können Sie eine Ausnahme definieren.
+* **[!UICONTROL Und]** - beide Filterbedingungen müssen erfüllt werden;
+* **[!UICONTROL Oder]** - mindestens eine der Filterbedingungen muss erfüllt werden;
+* **[!UICONTROL Außer]** - bezeichnet eine Ausnahme.
 
-Click **[!UICONTROL And]** (offered by default) and choose from the drop-down list.
+Standardmäßig wird die Verknüpfung **[!UICONTROL Und]** vorgeschlagen. Anhand der Dropdown-Liste besteht jedoch die Möglichkeit, eine andere Verknüpfung auszuwählen.
 
 ![](assets/query_condition_modif_01.png)
 
-* **[!UICONTROL And]**: fügt eine Bedingung hinzu und aktiviert das Überfiltern.
-* **[!UICONTROL Or]**: fügt eine Bedingung hinzu und aktiviert das Überfiltern.
+* **[!UICONTROL Und]** fügt eine weitere Filterbedingung hinzu und schränkt die Ergebnisse weiter ein.
+* **[!UICONTROL Oder]** berücksichtigt mindestens eine der angegebenen Bedingungen.
 
    Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält ODER deren Postleitzahl mit &quot;20&quot; beginnt.
 
    ![](assets/query_condition_modif_02.png)
 
-* **[!UICONTROL Except]**: Wenn Sie über zwei Filter verfügen und der erste keinen Wert zurückgibt, erstellt dieser Linktyp eine Ausnahme.
+* **[!UICONTROL Außer]** ermöglicht die Konfiguration einer Ausnahme, wenn die erste Filterbedingung keine Ergebnisse zulässt.
 
    Im unten stehenden Beispiel werden die Empfänger ausgegeben, deren E-Mail-Domain &quot;web.de&quot; enthält, AUSSER wenn der Familienname &quot;Schmidt&quot; lautet.
 
@@ -162,33 +162,33 @@ In diesem Kapitel wird erläutert, wie anhand der blauen Pfeile in der Symbollei
 
 * Die nach oben und unten gerichteten Pfeile ermöglichen das Verschieben einer Bedingung und somit die Reihenfolge der Filterung.
 
-Dieses Beispiel zeigt, wie Sie mit dem Pfeil eine Klammerebene löschen können. Beginnen Sie mit der folgenden Filterbedingung: **[!UICONTROL City equal to London OR gender equal to male and mobile not indicated OR account # starts with "95" and company name starts with "A"]**.
+Das folgende Beispiel verdeutlicht die Funktionsweise des Linkspfeils. Die ursprüngliche Filterbedingung lautet: **[!UICONTROL Ort gleich Hamburg ODER Geschlecht gleich Männlich und Mobiltelefon nicht angegeben ODER Kundennummer beginnt mit &quot;95&quot; und Firma beginnt mit &quot;A&quot;]**.
 
-Platzieren Sie den Cursor auf die **[!UICONTROL Gender (@gender) equal to Male]** Filterbedingung und klicken Sie auf den **[!UICONTROL Remove a parenthesis level]** Pfeil.
+Platzieren Sie den Cursor auf der Filterbedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** und klicken Sie auf den Pfeil **[!UICONTROL Eine Klammerebene entfernen]**.
 
 ![](assets/query_editor_nveau_32.png)
 
-Die **[!UICONTROL Gender (@gender) equal to Male]** Bedingung wurde aus ihrer Klammer entfernt. Es hat sich auf die gleiche Ebene wie die Bedingung &quot;City equal to London&quot;. Diese Bedingungen sind miteinander verknüpft (**[!UICONTROL And]**).
+Die Bedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** wurde aus der Klammer entfernt. Sie befindet sich nun auf der gleichen Ebene wie die Bedingung &quot;Ort gleich Hamburg&quot;. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
 
 ## Zu extrahierende Daten auswählen {#selecting-data-to-extract}
 
-The available fields vary from one table to another. All fields are stored in a main node known as the **[!UICONTROL Main element]**. In the following example, the available fields are in the recipient table. Felder werden immer alphabetisch angezeigt.
+Je nach Tabelle stehen verschiedene Felder zur Verfügung. Alle Felder sind in einem **[!UICONTROL Hauptelement]** genannten Knoten gespeichert. Die Felder in unten stehendem Beispiel stammen aus der Empfängertabelle (nms:recipient). Die Anzeige erfolgt jeweils in alphabetischer Reihenfolge.
 
-Die Details des ausgewählten Felds werden unten im Fenster angezeigt. Beispielsweise ist das **[!UICONTROL Email domain]** Feld ein **[!UICONTROL Calculated SQL field]** und seine Erweiterung ist **[!UICONTROL (@domain)]**.
+Unten im Fenster werden weitere Details zum ausgewählten Feld angezeigt. So handelt es sich beispielsweise beim Feld **[!UICONTROL E-Mail-Domain]** um ein **[!UICONTROL Berechnetes SQL-Feld]** mit der ergänzenden Bezeichnung **[!UICONTROL (@domain)]**.
 
 ![](assets/query_editor_nveau_59.png)
 
 >[!NOTE]
 >
->Use the **[!UICONTROL Search]** tool to find an available field.
+>Verwenden Sie das Eingabefeld **[!UICONTROL Suchen]**, um die Liste der möglichen Felder einzuschränken.
 
-Doppelklicken Sie auf ein verfügbares Feld, um es den Ausgabespalten hinzuzufügen. Am Ende der Abfrage erstellt jedes ausgewählte Feld eine Spalte im **[!UICONTROL Data preview]** Fenster.
+Doppelklicken Sie auf ein Feld, um es zu den Ausgabespalten hinzuzufügen. Jedes ausgewählte Feld entspricht einer Spalte in der **[!UICONTROL Datenvorschau]** am Ende der Abfrage.
 
 ![](assets/query_editor_nveau_01.png)
 
-Erweiterte Felder werden nicht standardmäßig angezeigt. Klicken Sie **[!UICONTROL Display advanced fields]** in der unteren rechten Ecke der verfügbaren Felder, um alles anzuzeigen. Klicken Sie erneut, um zur vorherigen Ansicht zurückzukehren.
+Standardmäßig werden erweiterte Felder nicht angezeigt. Dies können Sie ändern, indem Sie auf **[!UICONTROL Erweiterte Felder anzeigen]** im rechten unteren Winkel der verfügbaren Felder klicken. Dann wird auch der vollständige Name der Felder angezeigt.
 
-In der Empfängertabelle sind die erweiterten Felder beispielsweise **Boolescher Wert 1**, **[!UICONTROL Boolean 2]**, **[!UICONTROL Boolean 3]**, **[!UICONTROL Foreign key of "Folder" link]** usw.
+In der Empfängertabelle beispielsweise gelten folgende Felder als erweitert: **Boolesch 1**, **[!UICONTROL Boolesch 2]**, **[!UICONTROL Boolesch 3]**, **[!UICONTROL Fremdschlüssel der &#39;Ordner&#39;-Verknüpfung]** usw.
 
 In unten stehendem Beispiel wurden alle erweiterten Felder der Empfängertabelle markiert.
 
@@ -212,17 +212,17 @@ Feld-Kategorien:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_48.png" /> </td> 
-   <td> Primärschlüssel. This SQL field is a way of identifying a record in a table.<br /> </td> 
+   <td> Primärschlüssel. Dieses SQL-Feld dient der eindeutigen Identifikation eines Datensatzes.<br /> </td> 
    <td> Eine Benutzerkennung - von Natur aus "eindeutig" - ist ein Primärschlüssel.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_02.png" /> </td> 
-   <td> Fremdschlüssel. Used as a link to another table.<br /> </td> 
+   <td> Fremdschlüssel. Ermöglicht die Herstellung einer Relation zu einer anderen Tabelle.<br /> </td> 
    <td> Fremdschlüssel des Empfängers, Fremdschlüssel des Dienstes usw.<br /> </td> 
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_46.png" /> </td> 
-   <td> Berechnetes Feld. This type of field is calculated on request using the values in the database.<br /> </td> 
+   <td> Berechnetes Feld. Diese Art von Feld wird bei Bedarf basierend auf den in der Datenbank hinterlegten Werten berechnet.<br /> </td> 
    <td> Alter, E-Mail-Domain usw.<br /> </td> 
   </tr> 
   <tr> 
@@ -232,7 +232,7 @@ Feld-Kategorien:
   </tr> 
   <tr> 
    <td> <img height="21px" src="assets/query_editor_nveau_50.png" /> </td> 
-   <td> Indexed SQL field. <br /> </td> 
+   <td> Indexiertes SQL-Feld. <br /> </td> 
    <td> Vollständiger Name, ISO-Code usw. <br /> </td> 
   </tr> 
  </tbody> 
@@ -264,50 +264,50 @@ Relationen zu einer Tabelle oder zu Kollektionselementen:
 
 >[!NOTE]
 >
->* Verwenden Sie die **[!UICONTROL Add]** Schaltfläche (über der Seitensymbolleiste), um eine Ausgabefalte hinzuzufügen, in der Sie den Ausdruck bearbeiten möchten. Weitere Informationen zum Bearbeiten eines Ausdrucks finden Sie unter [Erstellen von Ausdrücken](#building-expressions).
+>* Verwenden Sie die Schaltfläche **[!UICONTROL Hinzufügen]** (über der Seitensymbolleiste), um eine Ausgabespalte hinzuzufügen, in der Sie den Ausdruck bearbeiten möchten. Weitere Informationen zum Bearbeiten eines Ausdrucks finden Sie unter [Erstellung von Ausdrücken](#building-expressions).
 >* Klicken Sie auf das rote Kreuz **Löschen**, um eine Ausgabespalte zu entfernen.
 >* Ändern Sie die Reihenfolge der Ausgabespalten anhand der Pfeile.
->* The **[!UICONTROL Distribution of values]** serves as a way to view the distribution of the values of the field selected (for example, the distributions linked to recipient towns, recipient languages, etc.).
+>* Verwenden Sie die Schaltfläche **[!UICONTROL Werteverteilung]**, um die im ausgewählten Feld enthaltenen Werte anzuzeigen (z. B. das anteilige Vorkommen von Städten oder Sprachen).
 
 
 ## Erstellung berechneter Felder {#creating-calculated-fields}
 
-If necessary, add a column during data formatting. A calculated field adds a column to the data preview section. Click **[!UICONTROL Add a calculated field]**.
+Sie haben die Möglichkeit, im Schritt der Datenformatierung ein berechnetes Feld hinzuzufügen. Dieses wird bei der Datenvorschau in Form einer zusätzlichen Spalte angezeigt. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
 
 ![](assets/query_editor_nveau_43.png)
 
 Vier verschiedene Feldtypen stehen zur Verfügung:
 
-* **[!UICONTROL Fixed string]**: können Sie eine Zeichenfolge hinzufügen.
+* **[!UICONTROL Unveränderliche Zeichenkette]**: Fügt eine Zeichenkette hinzu.
 
    ![](assets/query_editor_nveau_60.png)
 
-* **[!UICONTROL String with JavaScript tags]**: Der Wert des berechneten Felds kombiniert eine Zeichenfolge mit JavaScript-Direktiven.
+* **[!UICONTROL Zeichenkette mit JavaScript-Fusion]**: Das berechnete Feld kombiniert eine Zeichenkette mit JavaScript-Direktiven.
 
    ![](assets/query_editor_nveau_61.png)
 
-* **[!UICONTROL JavaScript expression]**: Der Wert des berechneten Felds ist das Ergebnis einer JavaScript-Funktionsbewertung. Der zurückgegebene Wert kann eingegeben werden (Zahl, Datum usw.).
+* **[!UICONTROL JavaScript-Ausdruck]**: Der Wert des berechneten Felds ist das Ergebnis einer JavaScript-Funktion. Der ausgegebene Wert kann einen bestimmten Typ aufweisen (Ziffer, Datum usw.).
 
    ![](assets/query_editor_nveau_62.png)
 
-* **[!UICONTROL Enumerations]**: Mit diesem Feldtyp können Sie den Inhalt einer der Ausgabespalten in einer neuen Spalte verwenden/ändern.
+* **[!UICONTROL Auflistungen]**: Dieser Feldtyp erlaubt die Verwendung/Umwandlung des Inhalts einer anderen Spalte.
 
    Dem Quellwert einer Spalte kann ein Zielwert zugeordnet werden. Es ist der Zielwert, der in der neuen Ausgabespalte angezeigt wird.
 
-   An example of adding calculated field type **[!UICONTROL Enumerations]** is available, refer to [this section](../../workflow/using/adding-enumeration-type-calculated-field.md).
+   Ein Beispiel zu berechneten **[!UICONTROL Auflistungsfeldern]** können Sie [diesem Abschnitt](../../workflow/using/adding-enumeration-type-calculated-field.md) entnehmen.
 
    ![](assets/query_editor_nveau_63.png)
 
-   The **[!UICONTROL Enumerations]** type calculated field can include 4 conditions:
+   Ein berechnetes Feld vom Typ **[!UICONTROL Auflistungen]** kann vier Bedingungen enthalten:
 
-   * **[!UICONTROL Keep the source value]** stellt den Quellwert dem Ziel wieder her, ohne ihn zu ändern.
-   * **[!UICONTROL Use the following value]** können Sie einen Standardzielwert für nicht definierte Quellwerte eingeben.
-   * **[!UICONTROL Generate a warning and continue]** warnt den Benutzer, dass der Quellwert nicht geändert werden kann.
-   * **[!UICONTROL Generate an error and reject the line]** verhindert, dass die Zeile berechnet und importiert wird.
+   * **[!UICONTROL Quellwert beibehalten]** gibt den Quellwert unverändert als Zielwert aus.
+   * **[!UICONTROL Folgenden Wert benutzen]** ermöglicht die Eingabe eines Standard-Zielwerts für fehlende Quellwerte.
+   * **[!UICONTROL Warnhinweis erzeugen und fortfahren]** weist den Benutzer darauf hin, dass der Quellwert nicht verändert werden kann.
+   * **[!UICONTROL Fehler erzeugen und Zeile zurückweisen]** verhindert die Berechnung und den Export der Zeile.
 
-Klicken Sie auf **[!UICONTROL Detail of calculated field]** , um die Details des eingefügten Felds anzuzeigen.
+Eine detaillierte Ansicht des hinzugefügten Felds erhalten Sie durch Klick auf die Lupe (**[!UICONTROL Details des berechneten Felds]**).
 
-Um dieses berechnete Feld zu entfernen, klicken Sie auf das **[!UICONTROL Remove the calculated field]** Kreuz.
+Klicken Sie zum Entfernen des Felds auf das rote Kreuz (**[!UICONTROL Berechnetes Feld entfernen]**).
 
 ![](assets/query_editor_nveau_58.png)
 
@@ -319,11 +319,11 @@ Folgendes Beispiel zeigt die Erstellung eines Ausdrucks zum Zählen eines Primä
 
 Gehen Sie wie folgt vor:
 
-1. Klicken Sie **[!UICONTROL Add]** im **[!UICONTROL Data to extract]** Fenster. Wählen Sie im **[!UICONTROL Formula type]** Fenster einen Formeltyp aus, um den Ausdruck einzugeben.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** im Fenster **[!UICONTROL Zu extrahierende Daten]** und wählen Sie im Fenster **[!UICONTROL Formeltyp]** die Ihrem Ausdruck entsprechende Formel aus.
 
-   Es stehen verschiedene Formeln zur Verfügung: **[!UICONTROL Field only]**, **[!UICONTROL Aggregate]****[!UICONTROL Expression]**.
+   **[!UICONTROL Einfaches Feld]**, **[!UICONTROL Aggregat]** und **[!UICONTROL Ausdruck]** stehen zur Verfügung.
 
-   Wählen Sie **[!UICONTROL Process on an aggregate function]** und **[!UICONTROL Count]**. Klicks **[!UICONTROL Next]**.
+   Wählen Sie die Option **[!UICONTROL Aggregatfunktionen]** und **[!UICONTROL Zählung]** und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/query_editor_nveau_54.png)
 
@@ -331,30 +331,30 @@ Gehen Sie wie folgt vor:
 
    ![](assets/query_editor_nveau_88.png)
 
-Here is a detailed view of the choices available in the **[!UICONTROL Formula types]** window:
+Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
 
 ![](assets/query_editor_nveau_05.png)
 
-1. **[!UICONTROL Field only]** können Sie zum **[!UICONTROL Field to select]** Fenster zurückkehren.
-1. **[!UICONTROL Aggregate (Process on an aggregate function)]**. Hier sind einige Beispiele für die Verwendung als Granulat:
+1. **[!UICONTROL Einfaches Feld]**: führt zurück zum Fenster **[!UICONTROL Feldauswahl]**.
+1. **[!UICONTROL Aggregat (Aggregatfunktionen)]**. Nachfolgend einige Beispiele zur Verwendung von Aggregaten:
 
-   * **[!UICONTROL Count]** ermöglicht Ihnen die Ausführung einer primären Schlüsselanzahl.
-   * **[!UICONTROL Sum]** können Sie alle Einkäufe eines Kunden über ein Jahr zusammenrechnen.
-   * **[!UICONTROL Maximum value]** können Sie die Kunden finden, die die meisten &quot;n&quot; Produkte gekauft haben.
-   * **[!UICONTROL Minimum value]** Sie können Kunden durchsuchen und diejenigen finden, die ein Angebot zuletzt abonniert haben.
-   * **[!UICONTROL Average]**. Mit dieser Funktion können Sie das Durchschnittsalter der Empfänger berechnen.
+   * **[!UICONTROL Zählung]**: ermöglicht die Zählung eines Primärschlüssels.
+   * **[!UICONTROL Summe]**: berechnet beispielsweise die Gesamtheit aller Bestellungen eines Kunden.
+   * **[!UICONTROL Maximaler Wert]**: gibt beispielsweise die Kunden aus, die maximal &quot;n&quot; Artikel gekauft haben.
+   * **[!UICONTROL Minimaler Wert]**: gibt beispielsweise die Kunden aus, die zuletzt ein Angebot angenommen haben.
+   * **[!UICONTROL Durchschnitt]**: berechnet beispielsweise das durchschnittliche Alter der Empfänger.
 
-      Mit **[!UICONTROL Distinct]** dem Feld können Sie eindeutige und ungleich null Werte einer Spalte wiederherstellen. Sie können beispielsweise alle Verfolgungsprotokolle eines Empfängers wiederherstellen, und diese Verfolgungsprotokolle werden in den Wert 1 geändert, da sie alle denselben Empfänger betreffen.
+      Das Feld **[!UICONTROL Unterschiedlich]** gibt die unterschiedlichen Werte aus, die ungleich Null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für einen Empfänger abfragen und auf 1 setzen, da es sich um nur einen Empfänger handelt.
 
-1. **[!UICONTROL Expression]** öffnet das **[!UICONTROL Edit the expression]** Fenster. Auf diese Weise können Sie Telefonnummern mit zu vielen Zahlen erkennen, die vermutlich Eingabefehler sind.
+1. **[!UICONTROL Ausdruck]**: öffnet das Fenster **[!UICONTROL Ausdruck bearbeiten]**. Ein Ausdruck kann beispielsweise Postleitzahlen mit mehr als 4 bzw. 5 Ziffern filtern, um eventuelle Eingabefehler zu korrigieren.
 
    ![](assets/query_editor_nveau_71.png)
 
-   For a list of all available functions, refer to [List of functions](#list-of-functions).
+   Im Abschnitt ](#list-of-functions)Funktionsliste[ finden Sie eine vollständige Liste aller Funktionen.
 
 ## Funktionsliste {#list-of-functions}
 
-Wenn eine **[!UICONTROL Expression]** Typformel ausgewählt ist, gelangen Sie zum Fenster &quot;Ausdruck bearbeiten&quot;. Den verfügbaren Feldern können verschiedene Funktionskategorien zugeordnet werden: **[!UICONTROL Aggregates]**, **[!UICONTROL String]**, **[!UICONTROL Date]**, **[!UICONTROL Numerical]**, **[!UICONTROL Currency]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Windowing function]** und **[!UICONTROL Others]**.
+Mit der Option **[!UICONTROL Ausdruck]** gelangen Sie zum Fenster &quot;Ausdruck bearbeiten&quot;. Verschiedene Funktionskategorien können mit den verfügbaren Feldern zum Einsatz kommen: **[!UICONTROL Aggregate]**, **[!UICONTROL String]**, **[!UICONTROL Datum]**, **[!UICONTROL Numerisch]**, **[!UICONTROL Währung]**, **[!UICONTROL Geomarketing]**, **[!UICONTROL Sonstige]** und **[!UICONTROL Window-Funktionen]**.
 
 Der Ausdruckseditor gestaltet sich wie folgt:
 
@@ -414,7 +414,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
  </tbody> 
 </table>
 
-**Zeichenfolge**
+**String**
 
 <table> 
  <tbody> 
@@ -461,7 +461,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   <tr> 
    <td> <strong>IsMemoNull</strong><br /> </td> 
    <td> Gibt an, ob das als Parameter ausgegebene Memo gleich null ist<br /> </td> 
-   <td> IsMemoNull(&lt;memo&gt;)<br /></td> 
+   <td> IsMemoNull(&lt;Memo&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>JuxtWords</strong><br /> </td> 
@@ -476,7 +476,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   <tr> 
    <td> <strong>LPad</strong><br /> </td> 
    <td> Gibt den String linksseitig aufgefüllt aus<br /> </td> 
-   <td> LPad(, &lt;number&gt;, &lt;character&gt;)<br /></td> 
+   <td> LPad(&lt;String&gt;, &lt;Zahl&gt;, &lt;Zeichen&gt;)<br /></td> 
   </tr> 
   <tr> 
    <td> <strong>Left</strong><br /> </td> 
@@ -536,7 +536,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   <tr> 
    <td> <strong>ToString</strong><br /> </td> 
    <td> Konvertiert eine Zahl in einen String<br /> </td> 
-   <td> ToString(&lt;number&gt;, &lt;number&gt;)<br /> </td>  
+   <td> ToString(&lt;Zahl&gt;, &lt;Zahl&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>Upper</strong><br /> </td> 
@@ -748,7 +748,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   <tr> 
    <td> <strong>TruncTime</strong><br /> </td> 
    <td> Kürzt die Uhrzeitangabe auf Sekunden<br /> </td> 
-   <td> TuncTim(e&lt;Datum&gt;, &lt;Anzahl Sekunden&gt;)<br /> </td>  
+   <td> TruncTime(&lt;Datum&gt;, &lt;Anzahl Sekunden&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>TruncWeek</strong><br /> </td> 
@@ -945,7 +945,7 @@ Er ermöglicht die Verknüpfung von Feldern aus den Datenbanktabellen mit folgen
   <tr> 
    <td> <strong>Else</strong><br /> </td> 
    <td> Gibt den Wert 1 aus (kann nur als Parameter der 'Case'-Funktion verwendet werden)<br /> </td> 
-   <td> Else(&lt;value 1&gt;, &lt;value 2&gt;)<br /> </td>  
+   <td> Else(&lt;Wert 1&gt;, &lt;Wert 2&gt;)<br /> </td>  
   </tr> 
   <tr> 
    <td> <strong>GetEmailDomain</strong><br /> </td> 
