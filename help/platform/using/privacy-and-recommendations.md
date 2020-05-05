@@ -14,7 +14,7 @@ discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ---
@@ -24,21 +24,21 @@ source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
 
 ## Über Datenschutz und Einverständniserklärung {#about-privacy-and-consent}
 
-Adobe Campaign ist ein leistungsstarkes Tool zum Sammeln und Verarbeiten extrem großer Datenmengen, einschließlich personenbezogener Daten. Wir empfehlen allen Nutzern von Adobe Campaign, im Rahmen der Gesetzgebung (DPA, CAN-SPAM, Europäische Datenschutzrichtlinie für elektronische Kommunikation, Europäischer Datenschutzausschuss, CCPA usw.) zu arbeiten, persönliche Informationen verantwortungsbewusst und ethisch zu nutzen und keine unerwünschten E-Mails, Push-Benachrichtigungen und SMS-Nachrichten (&quot;Spam&quot;) zu versenden. Wir sind fest davon überzeugt, dass die Prinzipien des Marketing für Genehmigungen den Lebenszeitwert und die Treue der Kunden fördern. Daher verbieten wir die Verwendung von Adobe Campaign beim Senden von unerbetenen Nachrichten strikt.
+Adobe Campaign ist ein leistungsstarkes Tool zur Erfassung und Verarbeitung sehr großer Datenmengen, einschließlich personenbezogener Daten. Wir fordern alle Nutzer von Adobe Campaign dazu auf, im Rahmen der Rechtsvorschriften (DPA, CAN-SPAM, europäische Datenschutzrichtlinie für elektronische Kommunikation, europäische DSGVO, CCPA usw.) zu arbeiten, personenbezogene Daten verantwortungsbewusst und ethisch zu verwenden und keine unerwünschten E-Mails, Push-Benachrichtigungen und SMS-Nachrichten („Spam“) zu versenden. Wir glauben fest an Permission Marketing, um den Kundenlebenszeitwert und die Treue zu fördern, und verbieten daher strikt die Verwendung von Adobe Campaign zum Versenden von unerbetenen Nachrichten.
 
-Weiterführende Informationen finden Sie in den [Datenschutzbestimmungen von Adobe Experience Cloud](https://www.adobe.com/privacy/marketing-cloud.html).
+Weiterführende Informationen finden Sie in den [Datenschutzbestimmungen von Adobe Experience Cloud](https://www.adobe.com/de/privacy/marketing-cloud.html).
 
-Lesen Sie auch die [Checkliste zu Sicherheit und Datenschutz](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html), um sich über die wichtigsten Elemente zu informieren, die in Bezug auf Sicherheit und Datenschutz zu überprüfen sind.
+Lesen Sie auch die [Checkliste zu Sicherheit und Datenschutz](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html), um sich über die wichtigsten Elemente zu informieren, die in Bezug auf Sicherheit und Datenschutz zu überprüfen sind.
 
 ## Datenschutzverwaltung {#privacy-management}
 
-Die Datenschutzverordnung (GDPR) ist das Datenschutzgesetz der Europäischen Union (EU), mit dem die Datenschutzanforderungen harmonisiert und modernisiert werden. Die DSGVO gilt für Adobe Campaign-Kunden, die Daten von Personen erfassen, die in der EU wohnhaft sind.
+Die DSGVO (EU-Datenschutz-Grundverordnung) ist die Datenschutzgrundverordnung der Europäischen Union (EU), in der die Anforderungen an den Datenschutz harmonisiert und neu geregelt werden. Die DSGVO gilt für Adobe Campaign-Kunden, die Daten von Personen erfassen, die in der EU wohnhaft sind.
 
-Das CCPA (California Consumer Privacy Act) gewährt kalifornischen Einwohnern neue Rechte in Bezug auf ihre persönlichen Daten und erlegt bestimmten Stellen, die in Kalifornien Geschäfte tätigen, Datenschutzpflichten auf.
+CCPA (California Consumer Privacy Act) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
 
-Neben der Verwaltung von Einwilligungen, den Einstellungen für die Datenspeicherung und der Rechteverwaltung bieten wir als Datenprozessor zusätzliche Funktionen an, um Ihre Bereitschaft als Data Controller für bestimmte Datenschutzanforderungen zu erleichtern.
+Neben der Verwaltung von Einwilligungen, den Einstellungen zur Datenspeicherung und der Rechteverwaltung bieten wir als Datenverarbeiter zusätzliche Funktionen an, um Ihre Bereitschaft als Datenverantwortlicher für bestimmte Datenschutzanfragen zu unterstützen.
 
-In diesem [Artikel](https://helpx.adobe.com/campaign/kb/acc-privacy.html)erfahren Sie, wie Adobe Campaign Sie bei der Verwaltung der verschiedenen Funktionen des Datenschutzschlüssels unterstützt: Zugriffsrecht, Recht auf Vergessen, Einwilligung, Datenspeicherung und Benutzerrollen. Darüber hinaus finden Sie Best Practices, die Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen helfen, wenn Sie unseren Service nutzen.
+In diesem [Artikel](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) erfahren Sie, wie Ihnen Adobe Campaign bei der Verwaltung wichtiger Datenschutzfunktionen hilft: Recht auf Zugriff, Recht auf Vergessenwerden, Einwilligung, Datenspeicherung und Benutzerrollen. Darüber hinaus finden Sie Best Practices, die Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen helfen, wenn Sie unseren Service nutzen.
 
 ## Cookies und Tracking-Funktionen {#cookies-and-tracking-capabilities}
 
