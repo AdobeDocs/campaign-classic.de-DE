@@ -14,7 +14,7 @@ discoiquuid: 96c0ffae-b7b8-4346-bf20-963aa233438f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -26,13 +26,13 @@ Das folgende Kapitel beschreibt im Detail alle zur Verfügung stehenden Workflow
 
 Die verschiedenen Workflow-Aktivitäten werden in Kategorien zusammengefasst. Jeweils vier Tabs stehen simultan zur Verfügung:
 
-In den Kampagnen-Workflows wird die **[!UICONTROL Events]** Registerkarte durch die **[!UICONTROL Deliveries]** Registerkarte ersetzt. Die Aktivitäten auf dieser Registerkarte sind im Abschnitt [Aktionen](../../workflow/using/about-action-activities.md) beschrieben.
+In den Kampagnen-Workflows wird der Tab **[!UICONTROL Ereignisse]** durch den Tab **[!UICONTROL Versand]** ersetzt. Die Aktivitäten auf diesem Tab werden im Abschnitt [Aktionsaktivitäten](../../workflow/using/about-action-activities.md) beschrieben.
 
 ![](assets/wf-activity-tabs.png)
 
-Mehr dazu:
+mehr dazu:
 
-* [Informationen zu Targeting-Aktivitäten](../../workflow/using/about-targeting-activities.md)
+* [Über Zielgruppenbestimmungsaktivitäten](../../workflow/using/about-targeting-activities.md)
 * [Daten importieren](../../workflow/using/importing-data.md)
 * [Workflow ausführen](../../workflow/using/executing-a-workflow.md)
 * [Best Practices bei Workflows](../../workflow/using/workflow-best-practices.md)
