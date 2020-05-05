@@ -14,7 +14,7 @@ discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
 
 ---
@@ -30,11 +30,11 @@ Erstellen Sie zunächst einen neuen Versand:
 
 ## Versand von Benachrichtigungen auf iOS-Geräte {#sending-notifications-on-ios}
 
-1. Wählen Sie die **[!UICONTROL Deliver on iOS]** Bereitstellungsvorlage aus.
+1. Wählen Sie die Versandvorlage **[!UICONTROL iOS-Versand]**.
 
    ![](assets/nmac_delivery_ios_1.png)
 
-1. To define the target of the notification, click the **[!UICONTROL To]** link, then click **[!UICONTROL Add]**.
+1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/nmac_delivery_ios_2.png)
 
@@ -42,15 +42,15 @@ Erstellen Sie zunächst einen neuen Versand:
    >
    >Die detaillierten Schritte zur Auswahl der Zielpopulation eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md).
    >
-   >For more on the use of personalization fields, refer to [About personalization](../../delivery/using/about-personalization.md).
+   >Weitere Informationen zur Verwendung von Personalisierungsfeldern finden Sie unter [Über die Personalisierung](../../delivery/using/about-personalization.md).
    >
-   >For more on the inclusion of a seed list, refer to [About seed addresses](../../delivery/using/about-seed-addresses.md).
+   >Weitere Informationen zur Verwendung von Testadressen finden Sie unter [Über Testadressen](../../delivery/using/about-seed-addresses.md).
 
-1. Wählen Sie **[!UICONTROL Subscribers of an iOS mobile application (iPhone, iPad)]** den Dienst, der für Ihre Mobilanwendung relevant ist (in diesem Fall Neotrips), und wählen Sie dann die iOS-Version der Anwendung aus.
+1. Wählen Sie **[!UICONTROL Abonnenten einer iOS-Mobile-App (iPhone, iPad)]**, dann den Ihrer Mobile App entsprechenden Dienst (hier Neotrips) und schließlich die iOS-Version der App.
 
    ![](assets/nmac_delivery_ios_3.png)
 
-1. Wählen Sie den Benachrichtigungstyp aus: **[!UICONTROL Alert]**, **[!UICONTROL Badge]** oder **[!UICONTROL Alert and badge]** oder **[!UICONTROL Silent Push]**.
+1. Kreuzen Sie den gewünschten Benachrichtigungstyp (Hinweisstil) an: **[!UICONTROL Hinweis]**, **[!UICONTROL Kennzeichen]**, **[!UICONTROL Hinweis und Kennzeichen]** oder **[!UICONTROL Silent Push]**.
 
    ![](assets/nmac_delivery_ios_4.png)
 
@@ -58,9 +58,9 @@ Erstellen Sie zunächst einen neuen Versand:
    >
    >Der **Silent Push**-Modus ist ab iOS-Version 7 verfügbar und ermöglicht den Versand einer &quot;stillen&quot; Benachrichtigung an eine Mobile App. Der Benutzer wird über die Ankunft der Benachrichtigung nicht in Kenntnis gesetzt, da diese direkt an die Anwendung übermittelt wird.
 
-1. Geben Sie im **[!UICONTROL Title]** Feld die Bezeichnung des Titels ein, der in der Benachrichtigung angezeigt werden soll. Sie wird nur in der Liste der Benachrichtigungen angezeigt, die im Benachrichtigungscenter verfügbar sind. Mit diesem Feld können Sie den Wert des **title** -Parameters der iOS-Benachrichtigungs-Payload definieren.
-1. If you use the HTTP/2 connector, you can add a subtitle (value of the **subtitle** parameter of the iOS notification payload). Weitere Informationen finden Sie im Abschnitt [Konfigurieren der mobilen Anwendung in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
-1. Geben Sie dann den **[!UICONTROL Message]** und den **[!UICONTROL Value of the badge]** basierend auf dem ausgewählten Benachrichtigungstyp ein.
+1. Geben Sie im Feld **[!UICONTROL Titel]** die Bezeichnung an, die auf der Benachrichtigung erscheinen soll. Dieser Titel wird nur in der im Benachrichtigungszentrum zur Verfügung stehenden Benachrichtigungsliste angezeigt. In diesem Feld können Sie den Wert des **title**-Parameters der iOS-Benachrichtigungs-Nutzdaten definieren.
+1. Wenn Sie den HTTP/2-Connector verwenden, können Sie einen Untertitel hinzufügen (Wert des Parameters **subtitle** der iOS-Benachrichtigungs-Nutzdaten). Weitere Informationen finden Sie im Abschnitt [Konfiguration der Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+1. Geben Sie nun, je nach gewähltem Benachrichtigungstyp (Hinweisstil), die **[!UICONTROL Nachricht]** und den **[!UICONTROL Kennzeichenwert]** ein.
 
    ![](assets/nmac_delivery_ios_5.png)
 
@@ -70,22 +70,22 @@ Erstellen Sie zunächst einen neuen Versand:
 
    >[!NOTE]
    >
-   >**[!UICONTROL Badge]** und **[!UICONTROL Alert and badge]** Typbenachrichtigungen ermöglichen es Ihnen, den Wert des Zeichens (die Zahl über dem Logo der mobilen Anwendung) zu ändern. Um das Zeichen zu aktualisieren, müssen Sie einfach 0 als Wert eingeben. Wenn das Feld leer ist, ändert sich der Kennzeichnungswert nicht.
+   >Bei Benachrichtigungen bzw. Hinweisen vom Typ **[!UICONTROL Kennzeichen]** und **[!UICONTROL Hinweis und Kennzeichen]** haben Sie die Möglichkeit, den Kennzeichenwert (Ziffer, die über dem Mobile-App-Logo angezeigt wird) zu ändern. Zur Zurücksetzung des Kennzeichens genügt es, 0 als Wert anzugeben. Wenn das Feld leer ist, wird der Wert des Kennzeichens nicht geändert.
 
-1. Mit der **[!UICONTROL Action button]** können Sie eine Beschriftung für die Aktionsschaltfläche definieren, die in den Warnhinweisen angezeigt wird (Feld **action_loc_key** der Nutzlast). Wenn Ihre iOS-Anwendung lokalisierbare Zeichenfolgen (**Localizable.strings**) verwaltet, geben Sie den entsprechenden Schlüssel in dieses Feld ein. Wenn Ihre Anwendung nicht lokalisierbaren Text verwaltet, geben Sie die Beschriftung ein, die auf der Aktionsschaltfläche angezeigt werden soll. Weitere Informationen zu lokalisierbaren Zeichenfolgen finden Sie in der [Apple-Dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
-1. In the **[!UICONTROL Play a sound]** field, select the sound to be played by the mobile terminal when the notification is received.
-
-   >[!NOTE]
-   >
-   >Sounds müssen in die Anwendung eingeschlossen und beim Erstellen des Dienstes definiert werden. Siehe [Konfigurieren des externen iOS-Kontos](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios).
-
-1. Geben Sie in das **[!UICONTROL Application variables]** Feld den Wert der einzelnen Variablen ein. Mit Anwendungsvariablen können Sie das Benachrichtigungsverhalten definieren: Sie können beispielsweise einen bestimmten Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
+1. Im Feld **[!UICONTROL Aktionsschaltfläche]** können Sie den Text der Aktionsschaltfläche angeben, die auf Benachrichtigungen vom Typ Warnung erscheint (Feld **action_loc_key** der Nutzdaten). Wenn Ihre iOS-Anwendung die Lokalisierung von Text unterstützt (**Localizable.strings**), ist in diesem Feld der entsprechende Schlüssel anzugeben. Wenn dies nicht der Fall ist, geben Sie direkt den Text an, der auf der Aktionsschaltfläche erscheinen soll. Lesen Sie für weiterführende Informationen hierzu die [Apple-Dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
+1. Wählen Sie im Feld **[!UICONTROL Ton abspielen]** die Melodie aus, die bei Erhalt einer Nachricht abgespielt werden soll.
 
    >[!NOTE]
    >
-   >Anwendungsvariablen müssen im Code der mobilen Anwendung definiert und bei der Diensterstellung eingegeben werden. For more on this, refer to: [Configuring a mobile application in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Töne müssen in die App integriert und zum Zeitpunkt der Erstellung des entsprechenden Dienstes konfiguriert werden. Siehe [Konfiguration des externen iOS-Kontos](../../delivery/using/configuring-the-mobile-application.md#configuring-external-account-ios).
 
-1. Once the notification is configured, click the **[!UICONTROL Preview]** tab to preview the notification.
+1. Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** für jede Variable den zugehörigen Wert an. Variablen dienen zur Konfiguration des Anwendungsverhaltens infolge des Erhalts einer Benachrichtigung. So können Sie einen speziellen Bildschirm anzeigen lassen, wenn der Nutzer auf die App tippt.
+
+   >[!NOTE]
+   >
+   >Anwendungsvariablen müssen im Code der Mobile App definiert und bei der Diensterstellung eingegeben werden. Weiterführende Informationen dazu finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+
+1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
 
    ![](assets/nmac_intro_2.png)
 
@@ -105,15 +105,15 @@ Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, 
 
 ## Versand von Benachrichtigungen auf Android-Geräte {#sending-notifications-on-android}
 
-1. Wählen Sie zunächst die **[!UICONTROL Deliver on Android (android)]** Bereitstellungsvorlage aus.
+1. Wählen Sie die Versandvorlage **[!UICONTROL Android-Versand]**.
 
    ![](assets/nmac_delivery_android_1.png)
 
-1. To define the target of the notification, click the **[!UICONTROL To]** link, then click **[!UICONTROL Add]**.
+1. Klicken Sie zur Bestimmung der Zielgruppe der Benachrichtigung auf den Link **[!UICONTROL An]** und anschließend auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/nmac_delivery_android_2.png)
 
-1. Select **[!UICONTROL Subscribers of an Android mobile application]**, choose the service relevant to your mobile application (Neotrips, in this case), then select the Android version of the application.
+1. Wählen Sie **[!UICONTROL Abonnenten einer Android-Mobile-App]**, dann den Ihrer Mobile App entsprechenden Dienst (hier Neotrips) und schließlich die Android-Version der App.
 
    ![](assets/nmac_delivery_android_3.png)
 
@@ -125,13 +125,13 @@ Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, 
    >
    >Sie können zum Inhalt Ihrer Benachrichtigung Emojis hinzufügen. Gehen Sie hierzu auf eine Website mit Emojis ([Beispiel](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), kopieren Sie ein Emoji und fügen Sie es direkt in den Inhaltseditor ein. Unter Windows 7 werden einige Emojis im Editor möglicherweise nicht korrekt angezeigt (viereckiges Symbol), in der endgültigen E-Mail sollten sie aber korrekt erscheinen. Die Darstellungsmöglichkeit von Emojis hängt vom jeweiligen Betriebssystem des Geräts ab. Wir empfehlen eine Testsendung, um sicherzustellen, dass der Versand korrekt dargestellt wird.
 
-1. Geben Sie in das **[!UICONTROL Application variables]** Feld den Wert der einzelnen Variablen ein. Mit Anwendungsvariablen können Sie das Benachrichtigungsverhalten definieren: Sie können beispielsweise einen bestimmten Anwendungsbildschirm konfigurieren, der angezeigt wird, wenn der Benutzer die Benachrichtigung aktiviert.
+1. Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** für jede Variable den zugehörigen Wert an. Variablen dienen zur Konfiguration des Anwendungsverhaltens infolge des Erhalts einer Benachrichtigung. So können Sie einen speziellen Bildschirm anzeigen lassen, wenn der Nutzer auf die App tippt.
 
    >[!NOTE]
    >
-   >Anwendungsvariablen müssen im Code der mobilen Anwendung definiert und bei der Diensterstellung eingegeben werden. For more on this, refer to: [Configuring a mobile application in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Anwendungsvariablen müssen im Code der Mobile App definiert und bei der Diensterstellung eingegeben werden. Weiterführende Informationen dazu finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
-1. Once the notification is configured, click the **[!UICONTROL Preview]** tab to preview the notification.
+1. Klicken Sie nach Angabe aller erforderlichen Benachrichtigungsparameter auf den **[!UICONTROL Vorschau]**-Tab, um das Rendering der Benachrichtigung zu prüfen.
 
    ![](assets/nmac_intro_1.png)
 
