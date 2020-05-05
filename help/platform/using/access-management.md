@@ -14,7 +14,7 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92f4047628eca0fc1d71aded0329720c094463bd
 
 ---
@@ -36,20 +36,20 @@ Sie werden durch Sicherheitsparameter ergänzt, die im Zusammenhang mit dem jewe
 
 Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können:
 
-* Sie können Benutzergruppen definieren, denen Sie Rechte zuweisen, und dann die Operatoren einer oder mehreren Gruppen zuordnen. Auf diese Weise können Sie Rechte wiederverwenden und die Profile von Operatoren konsistenter gestalten. Sie erleichtert auch die Verwaltung und Wartung von Profilen. Gruppenerstellung und -verwaltung werden in [Operatorgruppen](#operator-groups)dargestellt.
-* Sie können Spezifische Berechtigungen Benutzern direkt zuordnen, in einigen Fällen, um die über Gruppen zugewiesenen Rechte zu überladen. Diese Rechte werden in [Spezifische Berechtigungen](#named-rights)dargestellt.
+* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen und Benutzer zuordnen. Diese Vorgehensweise ermöglicht eine gemeinsame Nutzung der Rechte und eine Vereinheitlichung der Benutzerprofile. Zudem wird auf diese Weise die Verwaltung der Profile vereinfacht. Die Erstellung und Verwaltung von Gruppen wird im Abschnitt [Benutzergruppen](#operator-groups) näher beschrieben.
+* Sie können den Benutzern direkt spezifische Berechtigungen einräumen, gegebenenfalls, um über Gruppen eingeräumte Berechtigungen zu überschreiben. Diese Berechtigungen werden im Abschnitt [Spezifische Berechtigungen](#named-rights) beschrieben.
 
 >[!NOTE]
 >
->Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html) zu lesen.
+>Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html) zu lesen.
 
-## Operatoren {#operators}
+## Benutzer {#operators}
 
 ### Über Benutzer {#about-operators}
 
 Ein Benutzer ist ein Benutzer von Adobe Campaign, der die Berechtigung besitzt, sich anzumelden und Aktionen durchzuführen.
 
-Standardmäßig werden Operatoren im **[!UICONTROL Administration > Access management > Operators]** Knoten gespeichert.
+Benutzerprofile werden standardmäßig im Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** gespeichert.
 
 ![](assets/s_ncs_user_list_operators.png)
 
@@ -69,45 +69,45 @@ Benutzer können auch über ihre Adobe ID eine direkt Verbindung mit Adobe Campa
 
 Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen zu erteilen:
 
-1. Click the **[!UICONTROL New]** button located above the list of operators, and enter the details of the new operator.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** oberhalb der Benutzerliste und erfassen Sie die Details des Benutzers.
 
    ![](assets/s_ncs_user_operator_new.png)
 
-1. Geben Sie den **[!UICONTROL Identification parameters]** Benutzer an: Login, Passwort und Name. Die Anmeldung und das Kennwort werden vom Bediener bei Adobe Campaign verwendet. Sobald der Benutzer angemeldet ist, kann er sein Passwort über das **[!UICONTROL Tools > Change password]** Menü ändern. Die E-Mail-Adresse des Operators ist unverzichtbar, da sie es dem Operator ermöglicht, Benachrichtigungen zu empfangen, z. B. bei der Verarbeitung von Genehmigungen.
+1. Spezifizieren Sie die **[!UICONTROL Authentifizierungsparameter]** des Benutzers: Login, Password und Name. Login und Passwort werden vom jeweiligen Benutzer zur Anmeldung bei Adobe Campaign verwendet. Nach der Anmeldung kann der Benutzer sein Passwort im Menü **[!UICONTROL Werkzeuge > Passwort ändern...]** ändern. Die E-Mail-Adresse des Benutzers ist notwendig, um dem Benutzer Benachrichtigungen zukommen zu lassen, beispielsweise wenn er für Validierungen verantwortlich ist.
 
    In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Siehe hierzu auch [diese Seite](../../campaign/using/about-distributed-marketing.md).
 
-1. Select the permissions granted to the operator in the **[!UICONTROL Operator access rights]** section.
+1. Wählen Sie die dem Benutzer erteilten Berechtigungen im Bereich **[!UICONTROL Zugriffsberechtigungen des Benutzers]** aus.
 
-   To assign rights to the operator, click the **[!UICONTROL Add]** button located above the list of rights, then select a group of operators from the list of available groups:
+   Um dem Benutzer Berechtigungen einzuräumen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** oberhalb der Liste der Berechtigungen. Wählen Sie anschließend eine Benutzergruppe in der Liste der verfügbaren Gruppen aus:
 
    ![](assets/s_ncs_user_permissions_operators.png)
 
-   Sie können auch eine oder mehrere Spezifische Berechtigungen auswählen (siehe [Spezifische Berechtigungen](#named-rights)). Klicken Sie dazu auf den Pfeil rechts neben dem **[!UICONTROL Folder]** Feld und wählen Sie **[!UICONTROL Named rights]**:
+   Sie können auch eine oder mehrere spezifische Berechtigungen auswählen (siehe [Spezifische Berechtigungen](#named-rights)). Klicken Sie dazu auf den Pfeil rechts neben dem Feld **[!UICONTROL Ordner]** und wählen Sie **[!UICONTROL Spezifische Berechtigungen]** aus:
 
    ![](assets/s_ncs_user_rights_operators.png)
 
    Wählen Sie die jeweiligen Gruppen und/oder spezifischen Berechtigungen aus und klicken Sie zur Bestätigung auf **[!UICONTROL OK]**.
 
-1. Klicken Sie auf **[!UICONTROL Ok]**, um den Benutzer zu erstellen. Sein Profil wird der Liste der bereits existierenden Benutzer hinzugefügt.
+1. Klicken Sie auf **[!UICONTROL OK]**, um den Benutzer zu erstellen. Sein Profil wird der Liste der bereits existierenden Benutzer hinzugefügt.
 
    ![](assets/operator_profile_new.png)
 
 >[!NOTE]
 >
->You can organize the operators according to your requirements by creating new operator folders. To do this, right-click the operator folder and select **[!UICONTROL Add an 'Operators' folder]**.
+>Die Benutzer können bei Bedarf verschiedenen Ordnern zugewiesen werden. Klicken Sie zur Erstellung weiterer Ordner mit der rechten Maustaste auf den Benutzer-Ordner und wählen Sie **[!UICONTROL Benutzer-Ordner hinzufügen]** aus.
 
-Nachdem das Profil des Operators erstellt wurde, können Sie dessen Informationen hinzufügen oder aktualisieren. To do this, click the **[!UICONTROL Edit]** tab.
+Wenn das Benutzerprofil erstellt wurde, können darin enthaltende Informationen vervollständigt oder aktualisiert werden. Klicken Sie hierzu auf den Tab **[!UICONTROL Bearbeiten]**.
 
 ![](assets/operator_edit_profile.png)
 
 >[!NOTE]
 >
->Im **[!UICONTROL Session timeout]** Feld können Sie die Verzögerung vor dem Sitzungs-Timeout der FDA anpassen. Weitere Informationen finden Sie unter [Info zu Federated Data Access](../../platform/using/about-fda.md).
+>Im Feld **[!UICONTROL Sitzungs-Timeout]** können Sie die Verzögerung vor dem Timeout der FDA-Sitzung anpassen. Weitere Informationen finden Sie unter [Über Federated Data Access - FDA](../../platform/using/about-fda.md).
 
 ### Benutzer-Zeitzone {#time-zone-of-the-operator}
 
-Auf der **[!UICONTROL General]** Registerkarte können Sie die Zeitzone des Operators auswählen. Standardmäßig arbeiten Operatoren in der Zeitzone des Servers. Es ist jedoch möglich, mithilfe der Dropdown-Liste eine andere Zeitzone auszuwählen.
+Im Tab **[!UICONTROL Allgemein]** können Sie die Zeitzone des Benutzers auswählen. Standardmäßig arbeiten die Benutzer in der Zeitzone des Servers. Es ist jedoch möglich, über die Dropdown-Liste eine andere Zeitzone auszuwählen.
 
 Die Konfiguration der Zeitzonen wird auf [dieser Seite](../../installation/using/time-zone-management.md) beschrieben.
 
@@ -117,18 +117,18 @@ Die Konfiguration der Zeitzonen wird auf [dieser Seite](../../installation/using
 >
 >Beschränkungen und Empfehlungen bezüglich dieser Verwendungskontexte werden in den entsprechenden Abschnitten der Adobe-Campaign-Dokumentation beschrieben.
 
-In addition, the **[!UICONTROL Regional settings]** drop-down list lets you select the format to display dates and numbers.
+Zusätzlich können Sie aus der Dropdown-Liste **[!UICONTROL Regionale Parameter]** das Format auswählen, in dem das Datum und Zahlen dargestellt werden sollen.
 
 ### Optionen für Zugriffsberechtigungen {#access-rights-options}
 
-Use the **[!UICONTROL Access rights]** tab to update the groups and named rights linked to the operator.
+Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordneten Gruppen und spezifischen Berechtigungen aktualisiert werden.
 
 ![](assets/operator_profile_security_options.png)
 
-The **[!UICONTROL Edit the access parameters...]** link lets you access the following options:
+Über den Link **[!UICONTROL Zugriffsparameter bearbeiten...]** sind folgende Optionen verfügbar:
 
-* The **[!UICONTROL Disable account]** option lets you disable the operator&#39;s account: he will no longer access Adobe Campaign.
-* The **[!UICONTROL Forbid access from the rich client]** option lets you restrict the use of Adobe Campaign to [Web access](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) or through APIs: access to the Adobe Campaign client console is no longer available.
+* Über die Option **[!UICONTROL Konto sperren]** kann das Benutzerkonto deaktiviert werden: Der Benutzer kann nicht mehr auf Adobe Campaign zugreifen.
+* Über die Option **[!UICONTROL Zugriff von der Clientkonsole aus sperren]** kann die Nutzung von Adobe Campaign auf den [Webzugriff](../../platform/using/adobe-campaign-workspace.md#console-and-web-access) oder den Zugriff über APIs beschränkt werden: Der Zugriff auf die Adobe-Campaign-Clientkonsole ist nicht mehr verfügbar.
 * Dem Benutzer kann eine Sicherheitszone zugeordnet werden. Mehr Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 * Zudem kann über den entsprechenden Link eine Maske vertrauenswürdiger IP-Adressen hinzugefügt werden.
 
@@ -142,7 +142,7 @@ The **[!UICONTROL Edit the access parameters...]** link lets you access the foll
    >
    >Um den Zugriff auf Ihre Plattform zu sichern, ist diese Option jedoch mit Vorsicht anzuwenden.
 
-* Mit der **[!UICONTROL Restrict to information found in sub-folders of:]** Option können Sie die dem Ordnerbetreiber zugewiesenen Rechte einschränken. Für den Benutzer sind nur die Unterordner des in dieser Option angegebenen Knotens sichtbar:
+* Die Option **[!UICONTROL Beschränken auf Daten in den Unterordnern von]** ermöglicht die Beschränkung von Zugriffsberechtigungen eines Benutzers für einen Ordner, sodass lediglich die Unterordner des in dieser Option angegebenen Knotens für den Benutzer sichtbar sind:
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
@@ -152,7 +152,7 @@ The **[!UICONTROL Edit the access parameters...]** link lets you access the foll
 
 ### Ordner, Validierung und Aufgaben eines Benutzers {#folders--approval-and-tasks-of-an-operator}
 
-Auf der **[!UICONTROL Audit]** Registerkarte können Sie Informationen zur Ansicht des Operators anzeigen. Die verschiedenen Registerkarten werden automatisch hinzugefügt, basierend auf den Einstellungen, die im Interventionsbereich des Operators definiert sind.
+Im Tab **[!UICONTROL Verfolgung]** können detaillierte Informationen über den Benutzer eingesehen werden. Die unterschiedlichen Tabs werden automatisch entsprechend den festgelegten Einstellungen und den Einsatzbereichen des Benutzers angereichert.
 
 Sie haben Zugriff auf Folgendes:
 
@@ -162,7 +162,7 @@ Sie haben Zugriff auf Folgendes:
 
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie unter [Ordnerzugriffsverwaltung](#folder-access-management).
+   >Weitere Informationen hierzu finden Sie unter [Zugriffsverwaltungsordner](#folder-access-management).
 
 * Validierungsprotokoll des Benutzers;
 
@@ -184,19 +184,19 @@ Adobe Campaign verwendet technische Benutzer mit standardmäßig konfigurierten 
 
 Der technische Benutzer &#39;webapp&#39; verfügt standardmäßig über die spezifische Berechtigung ADMINISTRATION, was zu Sicherheitslücken führen kann. Um diesem Problem entgegenzuwirken, empfiehlt es sich, ihm diese Berechtigung zu entziehen. Gehen Sie hierzu wie folgt vor:
 
-1. Klicken Sie im **[!UICONTROL Administration > Access management > Named rights]** Knoten auf , **[!UICONTROL New]** um eine rechte Seite zu erstellen und sie WEBAPP zu benennen.
+1. Wählen Sie über den Knoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** die Schaltfläche **[!UICONTROL Neu]** aus, um eine Berechtigung zu erstellen, die Sie z. B. WEBAPP nennen.
 
    ![](assets/s_ncs_default_operators_webapp_right.png)
 
-   Named rights are detailed in the [Named rights](#named-rights) section.
+   Die spezifischen Berechtigungen werden im Abschnitt [Spezifische Berechtigungen](#named-rights) beschrieben.
 
-1. Wählen Sie im **[!UICONTROL Administration > Access management > Operators]** Knoten den Webanwendungs-Agent-Operator (&#39;webapp&#39;).
+1. Wählen Sie anschließend im Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** den Benutzer Webanwendungs-Agent (&#39;webapp&#39;).
 
-   Select the **[!UICONTROL Edit]** tab, then the **[!UICONTROL Access rights]** tab and delete the ADMINISTRATION named right from the list.
+   Gehen Sie in den Tab **[!UICONTROL Bearbeiten]**, dann in den Tab **[!UICONTROL Zugriffsberechtigungen]**, um die spezifische Berechtigung ADMINISTRATION aus der Liste zu löschen.
 
    ![](assets/s_ncs_default_operators_webapp_admin_right.png)
 
-   Click **[!UICONTROL Add]** and select the WEBAPP right that you have just created, then save your changes.
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die gerade von Ihnen erstellte Berechtigung WEBAPP aus, speichern Sie dann Ihre Änderungen.
 
    ![](assets/s_ncs_default_operators_webapp_webapp_right.png)
 
@@ -204,35 +204,35 @@ Der technische Benutzer &#39;webapp&#39; verfügt standardmäßig über die spez
 
    ![](assets/s_ncs_default_operators_webapp_folder_access.png)
 
-   Modifying rights on tree folders is detailed in the [Folder access management](#folder-access-management) section.
+   Die Änderung von Berechtigungen bezüglich Ordnern im Navigationsbaum wird im Abschnitt [Zugriffsverwaltungsordner](#folder-access-management) beschrieben.
 
 >[!NOTE]
 >
->Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html).
+>Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html).
 
 ## Benutzergruppen {#operator-groups}
 
-Operatorgruppen werden über den **[!UICONTROL Administration > Access management > Operator groups]** Knoten in der Struktur erstellt.
+Benutzergruppen werden über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Benutzergruppen]** erstellt.
 
 ### Erstellung neuer Benutzergruppen {#creating-a-new-operator-group}
 
 Gehen Sie wie folgt vor, um eine neue Benutzergruppe zu erstellen:
 
-1. Click the **[!UICONTROL New]** button to the right of the list of groups or right-click the list and choose **[!UICONTROL New]**.
-1. In the section lower window, from the **[!UICONTROL General]** tab, enter the name and a description for this group in the corresponding fields.
+1. Klicken Sie oberhalb der Gruppenliste auf die Schaltfläche **[!UICONTROL Neu]** oder klicken Sie mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL Neu]**.
+1. Geben Sie im unteren Bereich des Fensters im Tab **[!UICONTROL Allgemein]** den Namen und die Beschreibung der Gruppe in die entsprechenden Felder ein.
 
    ![](assets/s_ncs_user_create_operator_gp.png)
 
-1. Click the **[!UICONTROL Content]** tab to define authorizations for this group.
-1. Click the **[!UICONTROL Add]** button to select an appointed right or an operator to associate to the group.
-1. Click the drop-down list or on the folder to the right of the **[!UICONTROL Folder]** field to locate the appointed rights or operators to associate to this group.
+1. Klicken Sie auf den Tab **[!UICONTROL Inhalt]**, um der Gruppe Berechtigungen einzuräumen.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um spezifische Berechtigungen oder Benutzer auszuwählen, die der Gruppe hinzugefügt werden sollen.
+1. Klicken Sie auf die Dropdown-Liste oder auf das Ordnersymbol rechts neben dem Feld **[!UICONTROL Ordner]**, um die der Gruppe zuzuordnenden spezifischen Berechtigungen oder Benutzer zu lokalisieren und anzuzeigen.
 1. Wählen Sie die hinzuzufügenden Berechtigungen oder Benutzer aus und klicken Sie zum Bestätigen auf **[!UICONTROL OK]**.
 
    ![](assets/s_ncs_user_create_operator_gp03.png)
 
    Wiederholen Sie diese Schritte, um weitere Berechtigungen oder Benutzer hinzuzufügen.
 
-1. Click the **[!UICONTROL Save]** button to add the group to the list.
+1. Klicken Sie abschließend auf die Schaltfläche **[!UICONTROL Speichern]**, um die Gruppe der Liste hinzuzufügen.
 
 ### Standardgruppen {#default-groups}
 
@@ -281,51 +281,51 @@ Es existieren folgende Standardgruppen:
 
 ## Spezifische Berechtigungen {#named-rights}
 
-Adobe Campaign schlägt standardmäßig eine Reihe von Spezifische Berechtigungen vor, mit denen Sie die den Operatoren und Benutzergruppen zugewiesenen Berechtigungen definieren können. Diese Rechte können vom **[!UICONTROL Administration > Access management > Named rights]** Knoten des Baums bearbeitet werden.
+Adobe Campaign bietet standardmäßig eine Reihe von spezifischen Berechtigungen, die Benutzern und Gruppen bestimmte Rechte einräumen. Diese Berechtigungen können über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** bearbeitet werden.
 
 ![](assets/s_ncs_admin_named_rights.png)
 
 Es handelt sich um folgende Berechtigungen:
 
-* **[!UICONTROL ADMINISTRATION]**: Operatoren mit der **[!UICONTROL ADMINISTRATION]** Berechtigung haben vollen Zugriff auf die Instanz. Administratoren können Objekte wie Workflow, Versand, Skripten usw. ausführen, erstellen, bearbeiten, löschen.
+* **[!UICONTROL ADMINISTRATION]**: Benutzer mit **[!UICONTROL ADMINISTRATORRECHTEN]** haben vollen Zugriff auf die Instanz. Administratoren können Objekte wie Workflows, Sendungen, Skripte usw. ausführen, erstellen, bearbeiten und löschen.
 
-* **[!UICONTROL APPROVAL ADMINISTRATION]**: Sie können mehrere Genehmigungsschritte innerhalb von Workflows und Versänden festlegen, um sicherzustellen, dass der aktuelle Status von einem zugewiesenen Operator oder einer zugewiesenen Gruppe genehmigt wurde. Benutzer mit der **[!UICONTROL APPROVAL ADMINISTRATION]** Berechtigung können Genehmigungsschritte festlegen und auch einen Operator oder eine Operatorgruppe zuweisen, der bzw. die diese Schritte genehmigen soll.
+* **[!UICONTROL VALIDIERUNGSADMINISTRATION]**: Sie können verschiedene Validierungsschritte innerhalb von Workflows und Sendungen festlegen, um sicherzustellen, dass der aktuelle Status durch einen zugewiesenen Benutzer oder eine zugewiesene Gruppe validiert wurde. Benutzer mit der Berechtigung **[!UICONTROL VALIDIERUNGSADMINISTRATION]** können Validierungsschritte festlegen und auch einen Benutzer oder eine Benutzergruppe zuweisen, der bzw. die diese Schritte validieren soll.
 
-* **[!UICONTROL CENTRAL]**: Recht auf Zentralverwaltung (Dezentrale Marketing).
+* **[!UICONTROL ZENTRAL]**: Berechtigt zur zentralen Verwaltung (Dezentrales Marketing).
 
-* **[!UICONTROL DELETE FOLDER]**: Recht zum Löschen von Ordnern. Mit dieser Berechtigung können Benutzer Ordner aus der Explorer-Ansicht löschen.
+* **[!UICONTROL LÖSCHEN VON ORDNERN]**: Berechtigt zum Löschen von Ordnern. Mit dieser Berechtigung können Benutzer Ordner aus der Explorer-Ansicht löschen.
 
-* **[!UICONTROL EDIT FOLDERS]**: Recht zum Ändern von Ordnereigenschaften wie interner Name, Bezeichnung, verknüpftes Bild, Reihenfolge der Unterordner usw.
+* **[!UICONTROL BEARBEITUNG VON ORDNERN]**: Berechtigt zum Ändern von Ordnereigenschaften wie interner Name, Titel, verknüpftes Bild, Reihenfolge der Unterordner usw.
 
-* **[!UICONTROL EXPORT]**: Benutzer können Daten aus ihren Adobe Campaign-Instanzen mithilfe der Workflow-Aktivität in eine Serverdatei oder auf einem lokalen Computer exportieren. **[!UICONTROL EXPORT]**
+* **[!UICONTROL EXPORTIEREN]**: Mit der Workflow-Aktivität **[!UICONTROL EXPORTIEREN]** können Benutzer Daten aus ihren Adobe Campaign-Instanzen in eine Datei auf einem Server oder lokalen Computer exportieren.
 
-* **[!UICONTROL FILES ACCESS]**: Recht auf Lese- und Schreibzugriff für Dateien über ein Skript, das in die Workflow-Aktivität geschrieben werden kann, um Dateien auf einem Server zu lesen und zu schreiben. **[!UICONTROL JavaScript]**
+* **[!UICONTROL ZUGRIFF AUF DATEIEN]**: Berechtigung für Lese- und Schreibzugriff auf Dateien über ein Skript, das in die **[!UICONTROL JavaScript]**-Workflow-Aktivität geschrieben werden kann, um Dateien auf einem Server zu lesen und zu schreiben.
 
-* **[!UICONTROL IMPORT]**: Recht für den Import allgemeiner Daten. **[!UICONTROL IMPORT]** erlaubt es Ihnen, Daten in eine andere Tabelle zu importieren, während die **[!UICONTROL RECIPIENT IMPORT]** Berechtigung nur den Import in die Empfänger-Tabelle erlaubt.
+* **[!UICONTROL ALLGEMEINER IMPORT]**: Berechtigt zum allgemeinen Import von Daten. Mit **[!UICONTROL ALLGEMEINER IMPORT]** können Sie Daten in eine andere Tabelle importieren, während die Berechtigung **[!UICONTROL BERECHTIGT ZUM IMPORT VON EMPFÄNGERN]** nur den Import in die Empfängertabelle erlaubt.
 
-* **[!UICONTROL INSERT FOLDERS]**: Recht zum Einfügen von Ordnern. Benutzer mit der **[!UICONTROL INSERT FOLDERS]** rechten Maustaste können in der Explorer-Ansicht neue Ordner im Ordnerbaum erstellen.
+* **[!UICONTROL EINFÜGEN VON ORDNERN]**: Berechtigt zum Einfügen von Ordnern. Benutzer mit der Berechtigung **[!UICONTROL EINFÜGEN VON ORDNERN]** können in der Ordnerstruktur der Explorer-Ansicht neue Ordner erstellen.
 
-* **[!UICONTROL LOCAL]**: Recht auf lokale Verwaltung (Dezentrale Marketing).
+* **[!UICONTROL LOKAL]**: Berechtigt zur lokalen Verwaltung (Dezentrales Marketing).
 
-* **[!UICONTROL MERGE]**: Recht zum Zusammenführen der ausgewählten Datensätze zu einem. Wenn Empfänger als Duplikat vorhanden sind, können Sie die Duplikat mit der **[!UICONTROL MERGE]** rechten Maustaste auswählen und zu einem primären Empfänger zusammenführen.
+* **[!UICONTROL FUSION]**: Berechtigt zum Verbinden der ausgewählten Datensätze zu einem Datensatz. Wenn Empfänger als Duplikate vorhanden sind, kann der Benutzer mit der Berechtigung **[!UICONTROL FUSION]** die Duplikate auswählen und zu einem primären Empfänger vereinen.
 
-* **[!UICONTROL PREPARE DELIVERIES]**: Berechtigung zum Erstellen, Bearbeiten und Speichern eines Versands. Benutzer mit der **[!UICONTROL PREPARE DELIVERIES]** rechten Maustaste können auch den Versand-Analyse-Prozess Beginn haben.
+* **[!UICONTROL SENDUNGEN VORBEREITEN]**: Berechtigung zum Erstellen, Bearbeiten und Speichern einer Sendung. Benutzer mit der Berechtigung **[!UICONTROL SENDUNGEN VORBEREITEN]** können auch den Prozess der Versandanalyse starten.
 
-* **[!UICONTROL PRIVACY DATA RIGHT]**: Recht, Datenschutzdaten zu sammeln und zu löschen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/acc-privacy.html).
+* **[!UICONTROL DATENSCHUTZRECHT]**: Berechtigt dazu, Datenschutzdaten zu sammeln und zu löschen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html).
 
-* **[!UICONTROL PROGRAM EXECUTION]**: Recht, Befehle in verschiedenen Programmiersprachen auszuführen.
+* **[!UICONTROL AUSFÜHRUNG VON PROGRAMMEN]**: Berechtigt dazu, Befehle in verschiedenen Programmiersprachen auszuführen.
 
-* **[!UICONTROL RECIPIENT IMPORT]**: Recht zum Importieren von Empfängern. Benutzer mit der **[!UICONTROL RECIPIENT IMPORT]** Berechtigung können eine lokale Datei in die Empfänger-Tabelle importieren.
+* **[!UICONTROL IMPORT VON EMPFÄNGERN]**: Berechtigt zum Import von Empfängern. Benutzer mit der Berechtigung **[!UICONTROL IMPORT VON EMPFÄNGERN]** können eine lokale Datei in eine Empfängertabelle importieren.
 
-* **[!UICONTROL SQL SCRIPT EXECUTION]** Recht, SQL-Befehle direkt in der Datenbank auszuführen.
+* **[!UICONTROL AUSFÜHRUNG VON SQL-SCRIPTS]**: Berechtigt zur Ausführung von SQL-Befehlen direkt in der Datenbank.
 
-* **[!UICONTROL START DELIVERIES]**: Recht zur Genehmigung zuvor analysierter Versand. Nach der Analyse des Versands wird der Versand bei verschiedenen Genehmigungsschritten angehalten und muss genehmigt werden, damit er wieder aufgenommen werden kann. Benutzer mit **[!UICONTROL START DELIVERIES]** Berechtigung dürfen Versand genehmigen.
+* **[!UICONTROL SENDUNGEN STARTEN]**: Berechtigt zur Validierung von zuvor analysierten Sendungen. Nach der Versandanalyse wird der Versand bei verschiedenen Validierungsschritten angehalten und muss validiert werden, damit er wieder aufgenommen werden kann. Benutzer mit der Berechtigung **[!UICONTROL SENDUNGEN STARTEN]** können Sendungen validieren.
 
-* **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY]**: Berechtigt zum Schreiben Ihrer eigenen SQL-Scripts unter Verwendung der SQL-Data-Management-Aktivität, um Arbeitstabellen zu erstellen und zu füllen (siehe [diesen Abschnitt](../../workflow/using/sql-data-management.md)).
+* **[!UICONTROL SQL-DATEN-MANAGEMENT-AKTIVITÄT VERWENDEN]**: Berechtigt zum Schreiben Ihrer eigenen SQL-Scripts unter Verwendung der SQL-Daten-Management-Aktivität, um Arbeitstabellen zu erstellen und zu füllen (siehe [diesen Abschnitt](../../workflow/using/sql-data-management.md)).
 
-* **[!UICONTROL WORKFLOW]**: Recht, Workflows auszuführen. Ohne dieses Recht können Benutzer Workflows nicht Beginn ausführen, beenden oder neu starten.
+* **[!UICONTROL WORKFLOW]**: Berechtigt zur Ausführung von Workflows. Ohne diese Berechtigung können Benutzer Workflows nicht starten, anhalten oder neu starten.
 
-* **[!UICONTROL WEBAPP]**: Berechtigt zur Nutzung von Webanwendungen.
+* **[!UICONTROL WEBAPP]**: Berechtigt zur Nutzung von Web-Anwendungen.
 
 >[!NOTE]
 >
@@ -345,11 +345,11 @@ Jedem Ordner des Navigationsbaums sind Schreib-, Lese- und Lösch-Zugriffseigens
 
 Um Berechtigungen für einen bestimmten Ordner des Baums zu bearbeiten, gehen Sie folgendermaßen vor:
 
-1. Right-click on the folder and select **[!UICONTROL Properties...]**.
+1. Klicken Sie mit der rechten Maustaste auf den entsprechenden Ordner und wählen Sie **[!UICONTROL Eigenschaften...]**.
 
    ![](assets/s_ncs_user_folder_properties.png)
 
-1. Click the **[!UICONTROL Security]** tab to view authorizations on this folder.
+1. Klicken Sie auf den Tab **[!UICONTROL Sicherheit]**, um die Berechtigungen bezüglich des Ordners anzusehen.
 
    ![](assets/s_ncs_user_folder_properties_security.png)
 
@@ -361,15 +361,15 @@ Zum Ändern von Berechtigungen haben Sie folgende Möglichkeiten:
 
    ![](assets/s_ncs_user_folder_properties_security02.png)
 
-* **Genehmigen Sie eine Gruppe oder einen Operator**. To do this, click the **[!UICONTROL Add]** button and select the group or operator to which you want to assign authorizations for this folder.
-* **Verbieten Sie eine Gruppe oder einen Operator**. Klicken Sie dazu auf **[!UICONTROL Delete]** und wählen Sie die Gruppe oder den Operator aus, aus der Sie die Autorisierung für diesen Ordner entfernen möchten.
+* **Gruppe oder Benutzer berechtigen**: Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie die Gruppe oder den Benutzer aus, denen Berechtigungen bezüglich des Ordners zugewiesen werden sollen.
+* **Gruppe oder Benutzer verbieten**: Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Löschen]** und wählen Sie die Gruppe oder den Benutzer aus, denen Sie jegliche Berechtigung bezüglich des Ordners entziehen möchten.
 * **Berechtigungen einer Gruppe oder eines Benutzers auswählen**: Klicken Sie hierzu auf die betroffene Gruppe oder den Benutzer und wählen Sie anschließend die Zugriffsberechtigungen aus bzw. ab, die Sie zuweisen oder entziehen möchten.
 
    ![](assets/s_ncs_user_folder_properties_security03.png)
 
 ### Berechtigungen ausdehnen {#propagate-permissions}
 
-Sie können Berechtigungen und Zugriffsrechte weitergeben. Wählen Sie dazu die **[!UICONTROL Propagate]** Option in den Ordnereigenschaften aus.
+Sie können Berechtigungen und Zugriffsberechtigungen ausdehnen. Wählen Sie dazu die Option **[!UICONTROL Ausdehnen]** in den Dateieigenschaften aus.
 
 Die in diesem Fenster festgelegten Berechtigungen werden dadurch auf alle Unterordner des aktuellen Verzeichnisknotens ausgeweitet. Die Berechtigungen können anschließend für jeden einzelnen der Unterordner überschrieben werden.
 
@@ -379,7 +379,7 @@ Die in diesem Fenster festgelegten Berechtigungen werden dadurch auf alle Untero
 
 ### Allen Benutzern Zugriff gewähren {#grant-access-to-all-operators}
 
-Wenn auf der **[!UICONTROL Security]** Registerkarte die **[!UICONTROL System folder]** Option ausgewählt ist, haben alle Operatoren unabhängig von ihren Rechten Zugriff auf diese Daten. Wenn diese Option gelöscht wird, müssen Sie den Operator (oder seine Gruppe) explizit zur Liste der Autorisierungen hinzufügen, damit sie Zugriff haben.
+Wenn im Tab **[!UICONTROL Sicherheit]** die Option **[!UICONTROL Systemordner]** angekreuzt ist, haben alle Benutzer ungeachtet ihrer Berechtigungen Zugriff auf die Daten des Ordners. Wenn die Option nicht angekreuzt ist, muss ein Benutzer (oder seine Gruppe) der Liste ausdrücklich hinzugefügt werden, um Zugriff zu erhalten.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
 
@@ -387,11 +387,11 @@ Wenn auf der **[!UICONTROL Security]** Registerkarte die **[!UICONTROL System fo
 
 ### Über Ordner und Ansichten {#about-folders-and-views}
 
-Ordner sind Knoten in der Adobe Campaign-Struktur. Diese Knoten werden durch Rechtsklick auf den Baum über das **[!UICONTROL Add new folder]** Menü erstellt. Standardmäßig können Sie im ersten Menü den Ordner hinzufügen, der dem aktuellen Kontext entspricht.
+Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der rechten Maustaste über das Menü **[!UICONTROL Ordner hinzufügen]** im Verzeichnis erstellt. Anschließend kann der zu erstellende Ordnertyp ausgewählt werden. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-Sie können diesen Ordnern wie in allen anderen Ordnern der Struktur Berechtigungen erteilen. Siehe [Ordnerzugriffsverwaltung](#folder-access-management).
+Berechtigungen bezüglich dieser Ordner werden auf die gleiche Weise wie über alle anderen Ordner des Navigationsbaums eingeräumt. Siehe [Zugriffsverwaltungsordner](#folder-access-management).
 
 Es besteht außerdem die Möglichkeit, Ansichten zu erstellen, um den Datenzugriff einzuschränken und den Inhalt des Navigationsbaums Ihren Bedürfnissen entsprechend zu organisieren. Es ist darüber hinaus möglich, den jeweiligen Ansichten Berechtigungen zuzuordnen.
 
@@ -409,12 +409,12 @@ Wenn ein Ordner zu einer Ansicht gemacht wird, werden alle dem Ordnertyp entspre
 
 Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzustellen:
 
-1. Create a new **[!UICONTROL Deliveries]** type folder, and name it **Deliveries France**.
-1. Right-click this folder and select **[!UICONTROL Properties...]**.
+1. Erstellen Sie einen neuen Ordner vom Typ **[!UICONTROL Sendungen]** und nennen Sie ihn **Sendungen Deutschland**.
+1. Klicken Sie mit der rechten Maustaste auf diesen Ordner und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
 
    ![](assets/s_ncs_user_add_folder_exple.png)
 
-1. Wählen Sie auf der **[!UICONTROL Restriction]** Registerkarte **[!UICONTROL This folder is a view]**. Alle Versand in der Datenbank werden dann angezeigt.
+1. Wählen Sie im Tab **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
 
    ![](assets/s_ncs_user_add_folder_exple01.png)
 
