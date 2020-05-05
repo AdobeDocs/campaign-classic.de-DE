@@ -14,7 +14,7 @@ discoiquuid: 9cb3be65-6652-47fa-b8a4-e088530aab4a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
 ---
@@ -24,89 +24,89 @@ source-git-commit: 1c4b5b7c44bbc74f56d3c70b93b131bba4d78c6f
 
 In diesem Beispiel möchten wir Empfängern, die im aktuellen Monat Geburtstag feiern, eine E-Mail mit benutzerdefinierten Datumsfeldern senden. Die E-Mail soll einen Gutschein enthalten, der bis zu einer Woche vor und nach ihrem Geburtstag gültig ist.
 
-Wir müssen Empfänger aus einer Liste auswählen, die diesen Monat ihre Geburtstage mit einer **[!UICONTROL Split]** Aktivität feiern. Anschließend wird das Feld für die benutzerdefinierten Daten mithilfe der **[!UICONTROL Enrichment]** Aktivität als Gültigkeitsdatum in der E-Mail für das Sonderangebot des Kunden verwendet.
+Zunächst müssen mithilfe der Aktivität **[!UICONTROL Aufspaltung]** aus einer Liste Empfänger ausgewählt werden, die im aktuellen Monat Geburtstag haben. Danach wird mit der Aktivität **[!UICONTROL Anreicherung]** das benutzerdefinierte Datumsfeld zur Angabe des Gültigkeitsdatums in der Angebots-E-Mail verwendet.
 
 ![](assets/uc_enrichment.png)
 
 Gehen Sie wie folgt vor:
 
-1. In the **[!UICONTROL Targeting and workflows]** tab of your campaign, drag and drop a **[!UICONTROL Read list]** activity to target your list of recipients.
+1. Fügen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** Ihrer Kampagne per Drag &amp; Drop die Aktivität **[!UICONTROL Liste lesen]** hinzu, um Ihre Empfängerliste auszuwählen.
 1. Die zu verarbeitende Liste kann explizit angegeben, von einem Script berechnet oder dynamisch abgerufen werden. Dies hängt von den hier aktivierten Optionen oder angegebenen Parametern ab.
 
    ![](assets/uc_enrichment_1.png)
 
-1. Add a **[!UICONTROL Split]** activity to differentiate recipients who will celebrate their birthdays this month from other recipients.
-1. Um die Liste zu teilen, wählen Sie in der **[!UICONTROL Filtering of selected records]** Kategorie die Option **[!UICONTROL Add a filtering condition on the inbound population]**. Klicken Sie dann auf **[!UICONTROL Edit]**.
+1. Fügen Sie die Aktivität **[!UICONTROL Aufspaltung]** hinzu, um die Empfänger, die im aktuellen Monat Geburtstag haben, von den restlichen Empfängern zu trennen.
+1. Um Ihre Liste aufzuspalten, wählen Sie in der Kategorie **[!UICONTROL Filterung der Datensätze]** die Option **[!UICONTROL Filterbedingung für die Eingangspopulation hinzufügen]** aus. Klicken Sie danach auf **[!UICONTROL Bearbeiten]**.
 
    ![](assets/uc_enrichment_2.png)
 
-1. Select **[!UICONTROL Filtering conditions]** then click the **[!UICONTROL Edit expression]** button to filter the month of the recipient&#39;s birthday.
+1. Wählen Sie **[!UICONTROL Filterbedingungen]** aus und danach die Schaltfläche **[!UICONTROL Ausdruck bearbeiten]**, um nach dem Geburtstagsmonat zu filtern.
 
    ![](assets/uc_enrichment_3.png)
 
-1. Klicken Sie **[!UICONTROL Advanced Selection]** dann **[!UICONTROL Edit the formula using an expression]** und fügen Sie den folgenden Ausdruck hinzu: Monat(@Geburtsdatum).
-1. Wählen Sie in der **[!UICONTROL Operator]** Spalte die **[!UICONTROL equal to]**.
-1. Further filter your condition, by adding the **[!UICONTROL Value]** month of the current date: Month(GetDate()).
+1. Wählen Sie **[!UICONTROL Erweiterte Auswahl]** und danach **[!UICONTROL Formel von einem Ausdruck ausgehend erstellen]** aus und fügen Sie den folgenden Ausdruck hinzu: Month(@birthDate).
+1. Wählen Sie in der Spalte **[!UICONTROL Operator]** die Option **[!UICONTROL gleich]** aus.
+1. Filtern Sie Ihre Bedingung weiter, indem Sie für den Monat den **[!UICONTROL Wert]** des aktuellen Datums hinzufügen: Month(GetDate()).
 
    Dadurch werden Empfänger abgerufen, deren Geburtsmonat mit dem aktuellen Monat übereinstimmt.
 
    ![](assets/uc_enrichment_4.png)
 
-1. Klicks **[!UICONTROL Finish]**. Klicken Sie dann auf der **[!UICONTROL General]** Registerkarte Ihrer **[!UICONTROL Split]** Aktivität auf die **[!UICONTROL Generate complement]** Kategorie **[!UICONTROL Results]** .
+1. Wählen Sie **[!UICONTROL Beenden]** aus. Wählen Sie dann im Tab **[!UICONTROL Allgemein]** der Aktivität **[!UICONTROL Aufspaltung]** in der Kategorie **[!UICONTROL Ergebnisse]** die Option **[!UICONTROL Komplement erzeugen]** aus.
 
-   Mit dem **[!UICONTROL Complement]** Ergebnis können Sie eine Bereitstellungsaktivität hinzufügen oder eine Liste aktualisieren. Hier haben wir gerade eine **[!UICONTROL End]** Aktivität hinzugefügt.
+   Mit dem Ergebnis von **[!UICONTROL Komplement]** können Sie eine Versandaktivität hinzufügen oder eine Liste aktualisieren. In unserem Beispiel haben wir einfach die Aktivität **[!UICONTROL Ende]** hinzugefügt.
 
    ![](assets/uc_enrichment_6.png)
 
-You now need to configure your **[!UICONTROL Enrichment]** activity:
+Konfigurieren Sie anschließend die Aktivität **[!UICONTROL Anreicherung]**:
 
-1. Add an **[!UICONTROL Enrichment]** activity after your subset to add your custom date fields.
+1. Fügen Sie die Aktivität **[!UICONTROL Anreicherung]** nach Ihrer Teilmenge ein, um Ihre benutzerdefinierten Datumsfelder hinzuzufügen.
 
    ![](assets/uc_enrichment_7.png)
 
-1. Öffnen Sie Ihre **[!UICONTROL Enrichment]** Aktivität. Klicken Sie in der **[!UICONTROL Complementary information]** Kategorie auf **[!UICONTROL Add data]**.
+1. Öffnen Sie die Aktivität **[!UICONTROL Anreicherung]**. Wählen Sie in der Kategorie **[!UICONTROL Zusatzinformationen]** die Option **[!UICONTROL Daten hinzufügen]** aus.
 
    ![](assets/uc_enrichment_8.png)
 
-1. Wählen Sie **[!UICONTROL Data linked to the filtering dimension]** dann **[!UICONTROL Data of the filtering dimension]**.
-1. Click the **[!UICONTROL Add]** button.
+1. Wählen Sie zuerst **[!UICONTROL Daten in Relation mit der Filterdimension]** und danach **[!UICONTROL Daten der Filterdimension]** aus.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
    ![](assets/uc_enrichment_9.png)
 
-1. Add a **[!UICONTROL Label]**. Klicken Sie dann in der **[!UICONTROL Expression]** Spalte auf **[!UICONTROL Edit expression]**.
+1. Fügen Sie einen **[!UICONTROL Titel]** hinzu. Wählen Sie dann in der Spalte **[!UICONTROL Ausdruck]** die Option **[!UICONTROL Ausdruck bearbeiten]** aus.
 
    ![](assets/uc_enrichment_10.png)
 
-1. First, we need to target the week before the birthdate as the **Validity start date** with the following **[!UICONTROL Expression]**: `SubDays([target/@birthDate], 7)`.
+1. Zuerst muss die Woche vor dem Geburtstag als das **Gültigkeitsstartdatum** mit dem folgenden **[!UICONTROL Ausdruck]** ausgewählt werden: `SubDays([target/@birthDate], 7)`.
 
    ![](assets/uc_enrichment_11.png)
 
-1. Then, to create the custom date field **Validity end date** which will target the week after the birthdate, you need to add the **[!UICONTROL Expression]**: `AddDays([target/@birthDate], 7)`.
+1. Um danach das benutzerdefinierte Datumsfeld **Gültigkeitsenddatum** zu erstellen, mit dem die Woche nach dem Geburtstag ausgewählt wird, muss dieser **[!UICONTROL Ausdruck]** hinzugefügt werden: `AddDays([target/@birthDate], 7)`.
 
    Sie können Ihren Ausdruck mit einem Titel kennzeichnen.
 
    ![](assets/uc_enrichment_12.png)
 
-1. Wählen Sie **[!UICONTROL Ok]** aus. Ihre Anreicherung ist nun fertig.
+1. Wählen Sie **[!UICONTROL OK]** aus. Ihre Anreicherung ist nun fertig.
 
-Nach der **[!UICONTROL Enrichment]** Aktivität können Sie eine Bereitstellung hinzufügen. In diesem Fall haben wir eine E-Mail-Zustellung hinzugefügt, um Empfängern ein Sonderangebot mit Gültigkeitsdaten zu senden, an Kunden, die diesen Monat ihre Geburtstage feiern.
+Nach der Aktivität **[!UICONTROL Anreicherung]** können Sie einen Versand hinzufügen. In unserem Fall haben wir einen E-Mail-Versand hinzugefügt, mit dem Empfänger, die im aktuellen Monat Geburtstag feiern, ein spezielles Angebot mit Gültigkeitsdaten erhalten.
 
-1. Ziehen Sie eine **[!UICONTROL Email delivery]** Aktivität nach Ihrer **[!UICONTROL Enrichment]** Aktivität per Drag &amp; Drop.
+1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** per Drag &amp; Drop nach der Aktivität **[!UICONTROL Anreicherung]** ein.
 
    ![](assets/uc_enrichment_15.png)
 
-1. Double-click your **[!UICONTROL Email delivery]** activity to start personalizing your delivery.
-1. Add a **[!UICONTROL Label]** to your delivery and click **[!UICONTROL Continue]**.
-1. Click **[!UICONTROL Save]** to create your email delivery.
-1. Überprüfen Sie die **[!UICONTROL Approval]** Registerkarte der E-Mail-Zustellung, **[!UICONTROL Properties]** die aktiviert **[!UICONTROL Confirm delivery before sending option]** ist.
+1. Doppelklicken Sie auf die Aktivität **[!UICONTROL E-Mail-Versand]**, um Ihren Versand zu personalisieren.
+1. Fügen Sie zu Ihrem Versand einen **[!UICONTROL Titel]** hinzu und wählen Sie dann **[!UICONTROL Fortfahren]** aus.
+1. Bestätigen Sie die Erstellung des E-Mail-Versands mithilfe der **[!UICONTROL Speichern]**-Schaltfläche.
+1. Vergewissern Sie sich im Tab **[!UICONTROL Validierung]** in den **[!UICONTROL Versandeigenschaften]** der E-Mail, dass die Option **[!UICONTROL Vor dem Start Versand bestätigen]** aktiviert ist.
 
    Starten Sie dann den Workflow, um Ihre ausgehende Transition mit den ausgewählten Daten anzureichern.
 
    ![](assets/uc_enrichment_18.png)
 
-You can now start designing your email delivery with the custom date fields created in the **[!UICONTROL Enrichment]** activity.
+Sie können jetzt Ihre E-Mail-Nachricht mit den benutzerdefinierten Feldern gestalten, die Sie in der Aktivität **[!UICONTROL Anreicherung]** erstellt haben.
 
-1. Doppelklicken Sie auf Ihre **[!UICONTROL Email delivery]** Aktivität.
+1. Doppelklicken Sie auf die Aktivität **[!UICONTROL E-Mail-Versand]**.
 1. Fügen Sie Ihre Zielgruppenerweiterungen zu Ihrer E-Mail hinzu. Diese sollte sich innerhalb des folgendes Ausdrucks befinden, damit Sie das Format der Gültigkeitsdaten konfigurieren können.
 
    ```
@@ -114,7 +114,7 @@ You can now start designing your email delivery with the custom date fields crea
            formatDate(targetData.alias of your expression,"%2D.%2M")  %>
    ```
 
-1. Klicks ![](assets/uc_enrichment_16.png) . Select **[!UICONTROL Target extension]** then the previously created custom validity dates with the **[!UICONTROL Enrichment]** activity to add your extension to the formatDate expression.
+1. Klicken Sie auf ![](assets/uc_enrichment_16.png). Wählen Sie **[!UICONTROL Erweiterung des Zieldatensatzes]** und danach die zuvor erstellten benutzerdefinierten Gültigkeitsdaten mit der Aktivität **[!UICONTROL Anreicherung]** aus, um Ihre Erweiterung zum formatDate-Ausdruck hinzuzufügen.
 
    ![](assets/uc_enrichment_19.png)
 
@@ -126,4 +126,4 @@ You can now start designing your email delivery with the custom date fields crea
 
    ![](assets/uc_enrichment_20.png)
 
-Ihre E-Mail ist jetzt bereit. Sie können damit beginnen, Ihre Proofs zu senden und Ihre Lieferung zu bestätigen, um Ihre Geburtstagsemail zu versenden.
+Ihre E-Mail ist jetzt bereit. Sie können mit dem Ausführen Ihrer Testsendungen beginnen und den Versand Ihrer Geburtstags-E-Mails bestätigen.
