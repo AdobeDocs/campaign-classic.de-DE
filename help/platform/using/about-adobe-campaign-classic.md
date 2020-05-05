@@ -14,7 +14,7 @@ discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
@@ -44,11 +44,11 @@ Alle Profile (Kunden, Interessenten, Newsletter-Abonnenten etc.) werden in der A
 
 In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS etc.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie das Ziel filtern, das eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
 
-Profile management basics are explained in [About profiles](../../platform/using/about-profiles.md).
+Die Grundlagen des Profil-Managements werden im Abschnitt ](../../platform/using/about-profiles.md)Über Profile[ erläutert.
 
 ### Zielgruppensegmentierung {#targeted-segmentation}
 
-Adobe Campaign has powerful, user-friendly segmentation and targeting features that let you create highly targeted, differentiated offers. The descriptive analysis functionality lets you analyze information upstream and downstream of your marketing campaigns, and the filter management and [graphical query editor](../../platform/using/about-queries-in-campaign.md) functionality lets you filter your subscriber population and sample or create target groups based on an unlimited number of criteria. Die Analyse- und Targeting-Funktionen werden auf [dieser Seite](../../reporting/using/about-descriptive-analysis.md) und im Abschnitt [Erstellen von Filtern](../../platform/using/creating-filters.md) beschrieben.
+Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunktionen, die es Ihnen ermöglichen, sehr spezifische, dem Kundenprofil entsprechende Angebote zu erstellen. Dank der deskriptiven Analysefunktionen können Sie Informationen vor und nach Ihren Marketing-Kampagnen detailliert betrachten. Außerdem ermöglichen Filter und ein [benutzerfreundliches Abfragetool](../../platform/using/about-queries-in-campaign.md), registrierte Kontakte mithilfe unzähliger Kriterien zu kategorisieren und extrem genaue Zielgruppen zu definieren. Die Analyse- und Zielgruppenbestimmungsfunktionen werden auf [dieser Seite](../../reporting/using/about-descriptive-analysis.md) und im Abschnitt [Filter erstellen](../../platform/using/creating-filters.md) beschrieben.
 
 Fortgeschrittene Data-Management-Funktionen erweitern die Datenverarbeitungskapazitäten. Sie vereinfachen und optimieren den Zielgruppenbestimmungsprozess, indem sie nicht modellierte Daten in den Data-Mart einschließen. Diese Funktionen werden auf [dieser Seite](../../workflow/using/targeting-data.md#data-management) genauer erläutert.
 
