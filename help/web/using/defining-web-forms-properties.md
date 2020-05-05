@@ -14,7 +14,7 @@ discoiquuid: 36953eb5-3296-4796-9352-945121bbdc69
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
@@ -24,23 +24,23 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 Webformulare können vollständig konfiguriert und entsprechend Ihren Anforderungen angepasst werden. Geben Sie dazu im Eigenschaftenfenster die entsprechenden Parameter ein.
 
-Auf das Eigenschaftenfenster kann über die **[!UICONTROL Properties]** Schaltfläche in der Symbolleiste des Webformulars zugegriffen werden. In diesem Fenster können Sie auf einen bestimmten Bereich von Einstellungen für das Webformular zugreifen. Einige Einstellungen stammen möglicherweise aus der Vorlagenkonfiguration.
+Auf das Eigenschaftenfenster können Sie über die Schaltfläche **[!UICONTROL Eigenschaften]** in der Symbolleiste des Webformulars zugreifen. Über dieses Fenster haben Sie Zugriff auf die Eigenschaften des Webformulars. Einige Einstellungen stammen möglicherweise aus der Konfiguration der Vorlage.
 
 ![](assets/s_ncs_admin_survey_properties_general.png)
 
 ## Allgemeine Formulareigenschaften {#overall-form-properties}
 
-Auf der **[!UICONTROL General]** Registerkarte des Eigenschaftenfensters können Sie die **Beschriftung** des Formulars ändern. Es wird dringend empfohlen, den **internen Namen** nicht zu ändern.
+Im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters können Sie den **Titel** des Formulars ändern. Es wird dringend davon abgeraten, den **internen Namen** zu ändern.
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-Die Formularvorlage wird während der Formularerstellung ausgewählt. Sie kann nicht später geändert werden. Weitere Informationen zum Erstellen und Verwalten von Formularvorlagen finden Sie unter [Verwenden einer Webformularvorlage](../../web/using/using-a-web-form-template.md).
+Die Formularvorlage wird bei der Formularerstellung ausgewählt. Sie kann später nicht mehr geändert werden. Weitere Informationen zum Erstellen und Verwalten von Formularvorlagen finden Sie unter [Webformularvorlage verwenden](../../web/using/using-a-web-form-template.md).
 
 ## Formulardaten speichern {#form-data-storage}
 
-Die Felder von Webformularen werden standardmäßig in der Empfängertabelle gespeichert. Sie können die Tabelle ändern, indem Sie eine neue Tabelle im **[!UICONTROL Document type]** Feld auswählen. Mit dem **[!UICONTROL Zoom]** Symbol können Sie den Inhalt der ausgewählten Tabelle anzeigen.
+Standardmäßig werden die Felder des Webformulars in der Empfängertabelle gespeichert. Um eine andere Tabelle zu verwenden, wählen Sie im Feld **[!UICONTROL Dokumenttyp]** eine neue Tabelle aus. Mit dem **[!UICONTROL Zoom]**-Symbol können Sie den Inhalt der ausgewählten Tabelle anzeigen.
 
-Antworten werden standardmäßig in der **[!UICONTROL Answer to a recipient form]** Tabelle gespeichert.
+Standardmäßig werden die Antworten in der Tabelle **[!UICONTROL Antworten auf ein Formular]** gespeichert.
 
 ## Fehlerseite einrichten {#setting-up-an-error-page}
 
@@ -52,15 +52,15 @@ Standardmäßig enthält sie die folgenden Informationen:
 
 ![](assets/s_ncs_admin_survey_default_error_page.png)
 
-Der Inhalt der angezeigten Zeichenfolgen wird auf der **[!UICONTROL Error page]** Registerkarte des Eigenschaftenfensters definiert. Auf der **[!UICONTROL HTML]** Registerkarte wird das Rendering angezeigt. Auf der **[!UICONTROL Texts]** Registerkarte können Sie die Textzeichenfolgen ändern und bei Bedarf Text hinzufügen:
+Der Inhalt der dargestellten Strings wird im Tab **[!UICONTROL Fehlerseite]** des Eigenschaftenfensters definiert. Im Tab **[!UICONTROL HTML]** wird das Rendering dargestellt und im Tab **[!UICONTROL Texte]** können Sie die Textstrings ändern und Text nach Bedarf hinzufügen:
 
 ![](assets/s_ncs_admin_survey_error_page.png)
 
 ## Lokalisierung eines Formulars {#form-localization}
 
-The **[!UICONTROL Localization]** tab lets you select the design and display languages for the Web form.
+Im Tab **[!UICONTROL Lokalisierung]** können Sie das Design und die Anzeigesprachen für das Webformular auswählen.
 
-See [Translating a web form](../../web/using/translating-a-web-form.md).
+Siehe [Webformular übersetzen](../../web/using/translating-a-web-form.md).
 
 ## Navigation und Rendering im Formular {#form-browsing-and-rendering}
 
@@ -72,47 +72,47 @@ Sie können zwischen der Navigation per Link oder Schaltfläche wählen.
 
 Standardmäßig sind Schaltflächen als Navigationselemente ausgewählt. Sie können damit folgende Aktionen ausführen:
 
-* Approve the current page and display the next page by clicking **[!UICONTROL Next]**. This button is displayed on all pages except the last.
-* Display the previous page by clicking **[!UICONTROL Previous]**. This button is displayed on all pages except the first.
-* Speichern Sie die Antworten des Formulars, indem Sie auf die **[!UICONTROL Approve]** Schaltfläche klicken. Diese Schaltfläche wird nur auf der letzten Seite angezeigt.
+* Die aktuelle Seite validieren und durch Auswahl von **[!UICONTROL Weiter]** die nächste Seite anzeigen. Diese Schaltfläche wird auf allen Seiten außer der letzten angezeigt.
+* Durch Auswahl von **[!UICONTROL Zurück]** die vorherige Seite anzeigen. Diese Schaltfläche wird auf allen Seiten außer der ersten angezeigt.
+* Die Formularantworten durch Auswahl der Schaltfläche **[!UICONTROL Validieren]** speichern. Diese Schaltfläche wird nur auf der letzten Seite angezeigt.
 
 Diese Elemente befinden sich am unteren Rand einer jeden Seite. Ihre Position kann durch die Bearbeitung des Stylesheets geändert werden.
 
 >[!NOTE]
 >
->Es ist möglich, die **[!UICONTROL Previous]** Schaltfläche auf einigen Seiten auszublenden. Gehen Sie dazu zur entsprechenden Seite und aktivieren Sie die **[!UICONTROL Disallow returning to the previous page]** Option. Diese Option ist verfügbar, wenn die Stamm-Node der Seitenstruktur ausgewählt ist.
+>Auf manchen Seiten kann die Schaltfläche **[!UICONTROL Zurück]** ausblendet werden. Gehen Sie dazu auf die entsprechende Seite und aktivieren Sie die Option **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]**. Diese Option ist verfügbar, wenn die Wurzel des Seitenbaums ausgewählt wird.
 
-The **[!UICONTROL Template]** field of the **[!UICONTROL Rendering]** tab lets you select a theme from those available.
+Das Feld **[!UICONTROL Vorlage]** des Tabs **[!UICONTROL Rendering]** ermöglicht die Auswahl eines Themas.
 
-Designs werden im **[!UICONTROL Administration>Configuration>Form rendering]** Knoten des Baums gespeichert. See [Selecting the form rendering template](../../web/using/form-rendering.md#selecting-the-form-rendering-template)
+Themen werden im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]** des Baums gespeichert. Siehe [Vorlage zum Formular-Rendering auswählen](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
 
-Im unteren Bereich des Eigenschaftenfensters wird eine Beispielwiedergabe angezeigt. Mit dem **[!UICONTROL Edit link]** Symbol können Sie die Konfiguration für das ausgewählte Design anzeigen.
+Das jeweilige Rendering wird im unteren Teil des Eigenschaftenfensters angezeigt. Über das Symbol **[!UICONTROL Link bearbeiten]** kann die Konfiguration für das ausgewählte Thema aufgerufen werden.
 
 ![](assets/s_ncs_admin_survey_properties_render.png)
 
 ## Texte im Formular {#texts-in-the-form}
 
-The **[!UICONTROL Page]** tab lets you define the content of the form header and footer. See [Defining headers and footers](../../web/using/form-rendering.md#defining-headers-and-footers).
+Im Tab **[!UICONTROL Seite]** können Sie den Inhalt des Formularkopfs und -fußes definieren. Siehe [Header und Footer definieren](../../web/using/form-rendering.md#defining-headers-and-footers).
 
-Sie können damit auch Übersetzungen verwalten. See [Translating a web form](../../web/using/translating-a-web-form.md).
+Dort können Sie auch Übersetzungen verwalten. Siehe [Webformular übersetzen](../../web/using/translating-a-web-form.md).
 
 ## Zugriff auf das Formular {#accessibility-of-the-form}
 
-Ein Webformular ist für Benutzer verfügbar, wenn das aktuelle Datum innerhalb der Gültigkeitsdauer **[!UICONTROL Online]** liegt. Der Status des Formulars wird während der Veröffentlichung geändert (siehe [Veröffentlichen eines Formulars](../../web/using/publishing-a-web-form.md#publishing-a-form)). Der Status wird auf der Registerkarte des Eigenschaftenfensters im Abschnitt **Projekt** **[!UICONTROL General]** angezeigt.
+Ein Webformular ist für Benutzer verfügbar, wenn es **[!UICONTROL online]** ist und das aktuelle Datum innerhalb der Gültigkeitsdauer liegt. Der Status des Formulars ändert sich in der Publikationsphase (siehe [Formular publizieren](../../web/using/publishing-a-web-form.md#publishing-a-form)). Der Status wird im Bereich **Projekt** im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters angezeigt.
 
-Die Gültigkeitsdauer reicht vom **[!UICONTROL Start]** Datum bis zum **[!UICONTROL End date]**. Wenn in diesen Feldern keine Daten angegeben sind, ist das Formular dauerhaft gültig.
+Der Gültigkeitszeitraum erstreckt sich vom **[!UICONTROL Startdatum]** bis zum **[!UICONTROL Enddatum]**. Wenn keine Daten in diesen Feldern eingetragen sind, hat das Formular permanente Gültigkeit.
 
 ![](assets/s_ncs_admin_survey_properties_date.png)
 
 >[!NOTE]
 >
->If the form is closed, and therefore its validity period has not been reached or has expired, or if it was closed by the Adobe Campaign operator, a message is displayed when the user attempts to access it. You can personalize this message by clicking **[!UICONTROL Personalize the message displayed if the form is closed...]**.
+>Wenn das Formular geschlossen wird, ohne dass sein Gültigkeitszeitraum abgelaufen ist oder dieser bereits abgelaufen ist, oder wenn es vom Adobe Campaign-Operator geschlossen wurde, wird Besuchern eine entsprechende Mitteilung angezeigt, wenn diese versuchen, darauf zuzugreifen. Sie können diese Mitteilung anpassen, indem Sie **[!UICONTROL Nachricht personalisieren, die bei geschlossenem Formular angezeigt wird...]** auswählen.
 
 ## Zugriffskontrolle auf Formulare {#form-access-control}
 
 Standardmäßig kann der Zugriff auf Webformulare anonym erfolgen: Allen Operatoren, die auf das Formular zugreifen, werden WEBAPP-Operatorrechte erteilt.
 
-Sie können die Zugriffssteuerung für die Anzeige des Formulars aktivieren, z. B. bei der Bereitstellung eines Formulars auf einer Intranet-Site, um Benutzer zu authentifizieren. Zeigen Sie dazu das **[!UICONTROL Properties]** Fenster des betreffenden Formulars an und klicken Sie auf die **[!UICONTROL Enable access control]** Option, wie unten dargestellt:
+Sie können die Zugriffskontrolle für die Anzeige des Formulars aktivieren, um Besucher zu authentifizieren, wenn Sie beispielsweise ein Formular auf einer Intranet-Seite bereitstellen. Rufen Sie dazu für das entsprechende Formular das Fenster **[!UICONTROL Eigenschaften]** auf und wählen Sie die Option **[!UICONTROL Zugriffskontrolle aktivieren]** wie unten gezeigt aus:
 
 ![](assets/s_ncs_admin_survey_access_ctrl.png)
 
@@ -122,7 +122,7 @@ Beim Zugriff auf die Seite erscheint das folgende Authentifizierungsformular:
 
 Der Benutzername und das Passwort entspricht denen der Adobe Campaign-Operatoren. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt ](../../platform/using/access-management.md).
 
-Mit der **[!UICONTROL Use a specific account]** Option können Sie die Lese- und Schreibberechtigung des Operators einschränken, der auf das Formular zugreift. Verwenden Sie das Dropdownfeld, um einen Operator oder eine Gruppe von Operatoren auszuwählen, die für die Erteilung dieser Berechtigungen zuständig sind.
+Mit der Option **[!UICONTROL Spezifisches Konto nutzen]** können Sie die Lese- oder Schreibrechte eines Operators einschränken, der auf das Formular zugreift. Wählen Sie in der Dropdown-Liste einen Operator oder eine Operatorgruppe aus, die für die Vergabe dieser Rechte zuständig sein sollen.
 
 ![](assets/s_ncs_admin_survey_access_op_select.png)
 
@@ -139,9 +139,9 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 * **id** zur Darstellung der verschlüsselten Kennung
 * **lang** zur Änderung der Anzeigesprache
 * **origin** zur Spezifizierung der Herkunft des reagierenden Kontakts
-* **_uuid** aktiviert die Formularansicht vor der Veröffentlichung und die Fehlerverfolgung. Dieser Parameter dient internen Zwecken (Erstellung und Debugging): Wenn Sie über diese URL auf das Webformular zugreifen, werden die erstellten Datensätze bei der Verfolgung (in Berichten) nicht berücksichtigt. Der Ursprung wird zum **[!UICONTROL Adobe Campaign]** Wert gezwungen.
+* **_uuid** ermöglicht die Ansicht des Formulars vor der Publikation sowie die Fehlerprüfung. Dieser Parameter ist nur für die interne Nutzung vorgesehen (Erstellung und Fehlerkorrektur): Wenn Sie ein Webformular über diese URL aufrufen, werden beim Tracking (Berichte) die erzeugten Datensätze nicht berücksichtigt. Der Wert für die Herkunft lautet stets **[!UICONTROL Adobe Campaign]**.
 
-   Dieser Parameter wird gemeinsam mit den **_preview**-Parametern und/oder **_debug**: verwendet:
+   Dieser Parameter wird gemeinsam mit den Parametern **_preview** und/oder **_debug** verwendet:
 
    **_preview** zur Anzeige der zuletzt gespeicherten Version. Dieser Parameter darf nur in der Testphase verwendet werden.
 
@@ -149,15 +149,15 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 
    >[!CAUTION]
    >
-   >When the form is displayed via a URL with the **_uuid** parameter, the value of the **[!UICONTROL origin]** parameter is forced to **Adobe Campaign**.
+   >Wenn das Formular über eine URL mit dem Parameter **_uuid** aufgerufen wird, wird im Parameterwert **[!UICONTROL Herkunft]** immer **Adobe Campaign** angezeigt.
 
 ## Parameter hinzufügen {#adding-parameters}
 
-Parameter können über die **[!UICONTROL Parameters...]** Registerkarte im Fenster Eigenschaften des Formulars hinzugefügt werden. Sie können wie unten gezeigt obligatorisch gemacht werden:
+Parameter können im Eigenschaftenfenster des Formulars über den Tab **[!UICONTROL Parameter...]** hinzugefügt werden. Sie können wie unten gezeigt als obligatorisch festgelegt werden:
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-Sie müssen einen Speicherort angeben, aus dem der Wert des Parameters abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und klicken Sie dann auf die **[!UICONTROL Storage]** Registerkarte, um das Feld oder die Variable auszuwählen. Die Speicheroptionen sind in den [Antwortspeicherfeldern](../../web/using/web-forms-answers.md#response-storage-fields)ausführlich beschrieben.
+Spezifizieren Sie einen Speicherort, von dem der Parameterwert abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und öffnen Sie danach den Tab **[!UICONTROL Speicherung]**, um das entsprechende Feld oder die entsprechende Variable auszuwählen. Die Speicheroptionen werden in den [Speicherfeldern für Antworten](../../web/using/web-forms-answers.md#response-storage-fields) ausführlich beschrieben.
 
 Der Status des reagierenden Kontakts (0, 1 oder ein beliebiger anderer Wert) kann dann entsprechend dem Formularzugriff zur URL hinzugefügt werden. Diese Information kann auf den Formularseiten oder in einer Text-Box wiederverwendet werden. Die Anzeige von Seiten kann wie unten gezeigt von einem kontextuellen Wert abhängig gemacht werden:
 
