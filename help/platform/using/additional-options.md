@@ -14,7 +14,7 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
 
 ---
@@ -85,7 +85,7 @@ Wenn Sie mehrere Zugriffe auf eine externe FDA-Datenbank verwalten möchten, erm
 
 ## Optimieren von E-Mail-Personalisierung mit externen Daten {#optimizing-email-personalization-with-external-data}
 
-Ab Build 8740 **[!UICONTROL Prepare the personalization data with a workflow]** ist die Option jetzt auf der **[!UICONTROL Analysis]** Registerkarte der Bereitstellungseigenschaften verfügbar.
+Ab dem Build 8740 steht im **[!UICONTROL Analyse]**-Tab der Versandeigenschaften die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** zur Verfügung.
 
 Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus über FDA verknüpften Tabellen).
 
