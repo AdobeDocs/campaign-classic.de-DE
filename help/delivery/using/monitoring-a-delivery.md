@@ -14,7 +14,7 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 ---
@@ -28,8 +28,8 @@ Im **Versand-Dashboard** können Sie Sendungen beobachten und etwaige Probleme b
 
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md)
-* [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html)
-* [Erste-Schritte-Handbuch: Verwalten der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html)
+* [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html)
+* [Erste-Schritte-Handbuch: Verwalten der Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)
 
 ## Versand-Dashboard {#delivery-dashboard}
 
@@ -41,15 +41,15 @@ Nach Abschluss des Versands kann der Inhalt der einzelnen Tabs nicht mehr verän
 
 ### Versandzusammenfassung {#delivery-summary}
 
-Die **[!UICONTROL Summary]** Registerkarte enthält die Merkmale der Bereitstellung: Lieferstatus, verwendeter Kanal, Angaben zum Absender, Betreff, Angaben zur Ausführung. Weitere Informationen finden Sie unter [Anzahl der gesendeten](#number-of-messages-sent)Nachrichten.
+Der Tab **[!UICONTROL Zusammenfassung]** enthält die Merkmale des Versands: Versandstatus, verwendeter Kanal, Absenderinformationen, Betreff, Informationen zur Ausführung. Weitere Informationen hierzu finden Sie unter [Anzahl gesendeter Nachrichten](#number-of-messages-sent).
 
-Über den **[!UICONTROL reports]** Link können Sie eine Reihe von Berichten zur Auslieferungsaktion anzeigen: allgemeiner Lieferbericht, detaillierter Bericht, Lieferbericht, Verteilung fehlgeschlagener Nachrichten, Öffnungsrate, Klicks und Transaktionen usw. Der Inhalt dieser Registerkarte kann entsprechend Ihren Anforderungen konfiguriert werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
+Die Rubrik **[!UICONTROL Berichte]** bietet Übersichten und Analysen mit verschiedenen Schwerpunkten: Allgemeiner Sendebericht, detaillierter Bericht, Versandbericht, Verteilung fehlgeschlagener Sendungen, Öffnungsrate, Klicks und Transaktionen etc. Der Inhalt dieser Rubrik kann Ihren Bedürfnissen entsprechend angepasst werden. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
 ### Protokolle und Versandverlauf {#delivery-logs-and-history}
 
-Auf der **[!UICONTROL Delivery]** Registerkarte wird ein Verlauf der Vorfälle in dieser Bereitstellung angezeigt. Es enthält die Lieferprotokolle, d.h. die Liste der gesendeten Nachrichten und deren Status sowie die zugehörigen Meldungen.
+Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands an.
 
-Bei einer Lieferung können Sie (z. B.) nur Empfänger mit einer fehlgeschlagenen Lieferung oder einer Adresse in der Quarantäne anzeigen. Klicken Sie dazu auf die **[!UICONTROL Filters]** Schaltfläche und wählen Sie **[!UICONTROL By state]**. Wählen Sie dann den Status in der Dropdownliste aus.
+Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus.
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
@@ -57,33 +57,33 @@ Unterschiedliche Status werden auf [dieser Seite](#delivery-statuses) beschriebe
 
 >[!NOTE]
 >
->Über den **[!UICONTROL Display the mirror page for this message...]** Link können Sie die Spiegelseite für den Inhalt der Auslieferung anzeigen, die in der Liste in einem neuen Fenster ausgewählt wurde. Die Spiegelseite steht nur für Auslieferungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen finden Sie unter [Generieren der Spiegelseite](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+>Der Link **[!UICONTROL Mirrorseite dieser Nachricht anzeigen...]** ermöglicht das Laden der Mirrorseite der markierten Zeile in einem separaten Fenster. Dies ist jedoch nur für Sendungen mit HTML-Inhalt möglich. Weitere Informationen finden Sie unter [Mirrorseite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
-### Trackinglogs {#tracking-logs}
+### Trackinglogs   {#tracking-logs}
 
-The **[!UICONTROL Tracking]** tab lists the tracking history for this delivery. Auf dieser Registerkarte werden Verfolgungsdaten für die gesendeten Nachrichten angezeigt, d. h. alle URLs, die von Adobe Campaign verfolgt werden. Die Verfolgungsdaten werden stündlich aktualisiert.
+Im **[!UICONTROL Tracking]**-Tab wird der Tracking-Verlauf des Versands angezeigt. Hier werden die Tracking-Informationen bezüglich aller von Adobe Campaign gesendeten Nachrichten, d. h. alle getrackten URLs gelistet. Tracking-Informationen werden stündlich aktualisiert.
 
 >[!NOTE]
 >
 >Sollte das Tracking für einen Versand nicht aktiviert worden sein, wird dieser Tab nicht angezeigt.
 
-Die Verfolgungskonfiguration wird im entsprechenden Stadium des Auslieferungsassistenten ausgeführt. See [How to configure tracked links](../../delivery/using/how-to-configure-tracked-links.md).
+Die Tracking-Konfiguration erfolgt im Versand-Assistenten. Siehe [Getrackte Links konfigurieren](../../delivery/using/how-to-configure-tracked-links.md).
 
-**[!UICONTROL Tracking]** Daten werden in den Bereitstellungsberichten interpretiert. Siehe [diesen Abschnitt](../../reporting/using/delivery-reports.md).
+Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
 ![](assets/s_ncs_user_delivery_tracking_tab.png)
 
 ### Versandverfolgung {#delivery-audit-}
 
-Die **[!UICONTROL Audit]** Registerkarte enthält das Lieferprotokoll und alle Meldungen zu den Proofs. Über die **[!UICONTROL Refresh]** Schaltfläche können Sie die Daten aktualisieren. Verwenden Sie die **[!UICONTROL Filters]** Schaltfläche, um einen Filter für die Daten zu definieren.
+Der Tab **[!UICONTROL Verfolgung]** enthält u. a. Informationen zu den Testsendungen des betreffenden Versands. Die **[!UICONTROL Aktualisieren]**-Schaltfläche ermöglicht die Aktualisierung der Informationen, während die **[!UICONTROL Filter]**-Schaltfläche es Ihnen erlaubt, nur die Daten anzuzeigen, die bestimmte Kriterien erfüllen.
 
-Mit Sondersymbolen können Sie Fehler oder Warnungen identifizieren. Siehe [Analysieren der Bereitstellung](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Siehe [Versand analysieren](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
-The **[!UICONTROL Proofs]** sub-tab lets you view the list of proofs that have been sent.
+Ein Untertab listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
 
 ![](assets/s_ncs_user_delivery_log_tab.png)
 
-Sie können die in diesem Fenster angezeigten Informationen (und die Informationen der Registerkarten **[!UICONTROL Delivery]** und **[!UICONTROL Tracking]** Registerkarten) ändern, indem Sie die anzuzeigenden Spalten auswählen. Klicken Sie dazu auf das **[!UICONTROL Configure list]** Symbol unten rechts. Weitere Informationen zum Konfigurieren der Listenanzeige finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+Sie können die Anzeige in diesem Fenster (wie auch in den Tabs **[!UICONTROL Versand]** bzw. **[!UICONTROL Tracking]**) anpassen und die Spalten auswählen, die angezeigt werden sollen. Klicken Sie hierfür auf das Symbol **[!UICONTROL Liste konfigurieren]** in der rechten unteren Ecke des Bildschirms. Weiterführende Informationen zur Listenanzeige finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
 ### Synchronisation des Versand-Dashboards {#delivery-dashboard-synchronization}
 
@@ -91,10 +91,10 @@ Im Versand-Dashboard können Sie anhand der verarbeiteten Nachrichten und der Ve
 
 Manche Indikatoren oder Status können falsch oder nicht aktuell sein. Gehen Sie zur Behebung dieses Problems wie folgt vor:
 
-* Wenn Ihr Lieferstatus nicht korrekt ist, überprüfen Sie, ob alle erforderlichen Genehmigungen für diese Bereitstellung durchgeführt wurden oder ob die **[!UICONTROL operationMgt]** und die **[!UICONTROL deliveryMgt]** Workflows fehlerfrei ausgeführt werden. Dies kann auch auf die Bereitstellung mit einer Affinität zurückzuführen sein, die in der sendenden Instanz nicht konfiguriert wurde.
-* Wenn Ihre Auslieferungsindikatoren immer noch bei null liegen und Sie eine Konfiguration mit mittlerer Auslieferung vornehmen, überprüfen Sie den **[!UICONTROL Mid-sourcing (delivery counters)]** technischen Arbeitsablauf. Starten Sie es, wenn sein Status nicht **[!UICONTROL Started]** ist. Sie können dann versuchen, die Indikatoren neu zu berechnen, indem Sie mit der rechten Maustaste auf die entsprechende Bereitstellung im Adobe Campaign-Explorer klicken und dann **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]**. For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
-* If your delivery counter does not match your delivery, try to recompute the indicators by right-clicking the relevant delivery in the Adobe Campaign explorer and selecting **[!UICONTROL Actions]** > **[!UICONTROL Recompute delivery and tracking indicators]** to resynchronize. For more information on tracking indicators, refer to this [section](../../reporting/using/delivery-reports.md#tracking-indicators).
-* Wenn Ihr Bereitstellungszähler für Bereitstellungen mit mittlerer Quelle nicht aktuell ist, überprüfen Sie, ob der **[!UICONTROL Mid-Sourcing (Delivery counters)]** technische Arbeitsablauf ausgeführt wird. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../installation/using/mid-sourcing-deployment.md).
+* Wenn der Versandstatus falsch angezeigt wird, vergewissern Sie sich, dass alle nötigen Validierungen für diesen Versand durchgeführt wurden und die Workflows **[!UICONTROL operationMgt]** und **[!UICONTROL deliveryMgt]** problemlos ablaufen. Dieses Problem kann auch auftreten, wenn vom Versand eine Affinität verwendet wird, die in der Sendeinstanz nicht konfiguriert wurde.
+* Wenn Ihre Versandindikatoren noch null anzeigen und eine Mid-Sourcing-Konfiguration verwendet wird, überprüfen Sie den technischen Workflow **[!UICONTROL Mid-Sourcing (Versandzähler)]**. Starten Sie ihn, wenn sein Status nicht **[!UICONTROL Gestartet]** lautet. Sie können dann die Indikatoren neu berechnen lassen, indem Sie mit der rechten Maustaste den entsprechenden Versand im Adobe Campaign-Explorer und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen. Weiterführende Informationen zu Trackingindikatoren finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Wenn Ihr Versandzähler nicht die Anzahl Ihrer Sendungen anzeigt, lassen Sie die Indikatoren neu berechnen, indem Sie mit der rechten Maustaste im Adobe Campaign-Explorer den entsprechenden Versand und danach **[!UICONTROL Aktionen]** > **[!UICONTROL Sende- und Berichtindikatoren neu berechnen...]** auswählen, um eine neue Synchronisation durchzuführen. Weiterführende Informationen zu Trackingindikatoren finden Sie in diesem [Abschnitt](../../reporting/using/delivery-reports.md#tracking-indicators).
+* Wenn Ihr Versandzähler nicht auf dem aktuellen Stand für Mid-Sourcing-Bereitstellungen ist, vergewissern Sie sich, dass der technische Workflow **[!UICONTROL Mid-Sourcing (Versandzähler)]** läuft. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../installation/using/mid-sourcing-deployment.md).
 
 Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
@@ -106,44 +106,44 @@ Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
 
 * **Die Versandgröße**: Größere Sendungen benötigen zur Ausführung länger. MTA-Kindprozesse werden für Standard-Bündelgrößen konfiguriert. Diese sind für die meisten Instanzen ausreichend, müssen jedoch überprüft werden, wenn Sendungen immer zu langsam durchgeführt werden.
 * **Die Zielgruppe des Versands**: Die Versandleistung kann durch Softbounce-Fehler beeinträchtigt werden, die entsprechend der Konfiguration der Neuversuche gehandhabt werden. Je größer die Anzahl der Fehler ist, desto mehr Neuversuche sind nötig.
-* **Die Gesamtauslastung der Plattform**: Wenn mehrere große Sendungen durchgeführt werden, kann die gesamte Plattform davon beeinträchtigt sein. In diesem Zusammenhang sollten Sie auch die IP-Reputation und Probleme bei der Zustellbarkeit überprüfen. Weiterführende Informationen dazu finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
+* **Die Gesamtauslastung der Plattform**: Wenn mehrere große Sendungen durchgeführt werden, kann die gesamte Plattform davon beeinträchtigt sein. In diesem Zusammenhang sollten Sie auch die IP-Reputation und Probleme bei der Zustellbarkeit überprüfen. Weiterführende Informationen dazu finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
 
 Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand beeinträchtigen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-performances.md).
 
 ### Langsame Sendungen {#slow-deliveries}
 
-Nachdem Sie auf die **[!UICONTROL Send]** Schaltfläche geklickt haben, dauert Ihre Lieferung länger als sonst. Dies kann von verschiedenen Elementen verursacht werden:
+Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
 
-* Manche Internet Service Provider haben Ihre IP-Adressen möglicherweise auf eine Schwarze Liste gesetzt. Prüfen Sie in diesem Fall Ihre Broadlogs und lesen Sie in [diesem Erste-Schritte-Handbuch](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html).
-* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+* Manche Internet Service Provider haben Ihre IP-Adressen möglicherweise auf eine Schwarze Liste gesetzt. Prüfen Sie in diesem Fall Ihre Broadlogs und lesen Sie in [diesem Erste-Schritte-Handbuch](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html).
+* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
-   * Ausgegebene Nachrichten (**[!UICONTROL quotas met]** Meldung): die in den deklarativen MX-Regeln in Campaign angegebenen Quoten eingehalten wurden. For more information about this message, refer to [this page](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential blacklisting.
+   * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL Kontingent ausgeschöpft]**): Das in Campaign von den MX-Regeln definierte Kontingent ist ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-deliverability-faq.html). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL dynamische Durchsatzkontrolle]**): Vom Campaign MTA wurden beim Sendeversuch an einen ISP Fehler entdeckt, weshalb der Versand verlangsamt wurde, um die Fehlerdichte zu verringern und zu vermeiden, dass die IP-Adresse auf eine Schwarze Liste gesetzt wird.
 
 * Durch einen Systemfehler wird möglicherweise verhindert, dass Server miteinander interagieren. Dadurch kann sich der gesamte Versandvorgang verlangsamen. Überprüfen Sie die Server, um sicherzustellen, dass keine Speicher- oder Ressourcenfehler vorliegen, die Campaign beispielsweise daran hindern können, Personalisierungsdaten abzurufen.
 
-### Best Practices für die Leistung {#best-practices-performance}
+### Best Practices zur Leistungserhaltung {#best-practices-performance}
 
 * Bewahren Sie auf der Instanz keine fehlgeschlagenen Sendungen auf, da dadurch temporäre Tabellen gespeichert werden, was wiederum die Leistung beeinträchtigt.
 
-* Entfernen Sie nicht mehr benötigte Lieferungen.
+* Entfernen Sie nicht mehr benötigte Sendungen.
 
 * Inaktive Empfänger in den letzten 12 Monaten werden aus der Datenbank entfernt, um die Adressenqualität zu erhalten.
 
-* Planen Sie nicht die gleichzeitige Durchführung umfangreicher Sendungen. In einem Zeitraum von 5 bis 10 Minuten wird die Last gleichmäßig über das System verteilt. Koordinieren Sie die Planung der Auslieferungen mit den anderen Mitgliedern Ihres Teams, um die beste Leistung sicherzustellen. Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Leistung verlangsamt werden.
+* Planen Sie nicht die gleichzeitige Durchführung umfangreicher Sendungen. In einem Zeitraum von 5 bis 10 Minuten wird die Last gleichmäßig über das System verteilt. Koordinieren Sie die Planung von Sendungen mit anderen Team-Mitgliedern, um eine optimale Leistung zu gewährleisten. Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Leistung verlangsamt werden.
 
-* Halten Sie die Größe Ihrer E-Mails so gering wie möglich. Die empfohlene maximale Größe einer E-Mail beträgt ca. 35 KB. Die Größe einer E-Mail-Zustellung generiert eine bestimmte Menge an Volumen auf den sendenden Servern.
+* Halten Sie die Größe Ihrer E-Mails so gering wie möglich. Die empfohlene maximale Größe einer E-Mail beträgt ca. 35 KB. Die Größe eines E-Mail-Versands generiert eine bestimmte Menge an Volumen auf den sendenden Servern.
 
-* Große Auslieferungen wie Lieferungen an über eine Million Empfänger benötigen Platz in den Versandwarteschlangen. Dies allein ist kein Problem für den Server, aber in Kombination mit Dutzenden von anderen großen Auslieferungen, die alle gleichzeitig ausgehen, kann es zu einer Versandverzögerung führen.
+* Große Sendungen wie Sendungen an über eine Million Empfänger benötigen Platz in den Versandwarteschlangen. Dies allein ist kein Problem für den Server, aber in Kombination mit Dutzenden von anderen großen Sendungen, die alle gleichzeitig ausgehen, kann es zu einer Versandverzögerung führen.
 
-* Durch Personalisierung in E-Mails werden Daten für jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung der Bereitstellung benötigt wird.
+* Durch Personalisierung in E-Mails werden Daten für jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung des Versands benötigt wird.
 
 * Indexieren von Adressen. Um die Performance der in der Anwendung verwendeten SQL-Abfragen zu optimieren, kann ein Index vom Hauptelement des Datenschemas deklariert werden.
 
 >[!NOTE]
 >
->ISPs würden Adressen nach einer Inaktivität deaktivieren. An Absender werden abgespeckte Nachrichten gesendet, um sie über diesen neuen Status zu informieren.
+>ISPs würden Adressen nach einer Inaktivitätsphase deaktivieren. Bounce-Nachrichten werden an den Absender gesendet, um sie über diesen neuen Status zu informieren.
 
 ## Versandstatus {#delivery-statuses}
 
@@ -171,7 +171,7 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
   </tr> 
   <tr> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Siehe Status <a href="#failed-status" target="_blank">"Fehlgeschlagen"</a><br /> </td> 
+   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Siehe <a href="#failed-status" target="_blank">Status „Fehlgeschlagen“</a><br /> </td> 
   </tr> 
   <tr> 
    <td> Vom Dienstleister berücksichtigt<br /> </td> 
@@ -183,7 +183,7 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
   </tr> 
   <tr> 
    <td> Ausstehend<br /> </td> 
-   <td> Die Nachrichten sind versandbereit und werden vom Versand-Server (MTA) verarbeitet. Siehe <a href="#pending-status" target="_blank">Ausstehender Status</a>.<br /> </td> 
+   <td> Die Nachrichten sind versandbereit und werden vom Versand-Server (MTA) verarbeitet. Siehe <a href="#pending-status" target="_blank">Status „Ausstehend“</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> Versand abgebrochen<br /> </td> 
@@ -200,19 +200,19 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
  </tbody> 
 </table>
 
-Weiterführende Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
+Weiterführende Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
 
 ### Status Ausstehend {#pending-status}
 
-After confirming your delivery, you can see that the status of your delivery is **[!UICONTROL Pending]**. This status means that the execution process is waiting on the availability of some resources.
+Nach der Bestätigung des Versands ist dessen Status **[!UICONTROL Ausstehend]**. Das bedeutet, dass im Ausführungsprozess auf die Verfügbarkeit von Ressourcen gewartet wird.
 
-Der **[!UICONTROL Pending]** Status kann zunächst bedeuten, dass Ihre Auslieferung geplant wurde und bis zum angegebenen Datum aussteht. For more on this, refer to the [Delivery scheduling](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending) section.
+Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminiert wurde und bis zum entsprechenden Datum in der Warteschlange bleibt. Weitere Informationen hierzu finden Sie im Abschnitt [Versandauslösung](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
-If your delivery is not being sent and its status remains **[!UICONTROL Pending]**, it can be the result of:
+Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehend]** bleibt, kann dies folgende Gründe haben:
 
 * Der MTA (Message Transfer Agent), der für die Durchführung von Modulen und Prozessen am Versandserver und die Verwaltung des E-Mail-Versands verantwortlich ist, wurde möglicherweise noch nicht gestartet oder muss neu gestartet werden. Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
 
-   * Check that your `mta@<instance>` modules are launched on your MTA servers.
+   * Überprüfen Sie, ob Ihre `mta@<instance>`-Module auf den MTA-Servern ausgeführt werden.
 
    ```
    nlserver pdump
@@ -230,18 +230,18 @@ If your delivery is not being sent and its status remains **[!UICONTROL Pending]
 
    >[!NOTE]
    >
-   >Ersetzen Sie `<INSTANCENAME>` dies durch den Namen Ihrer Instanz (Produktion, Entwicklung usw.). Der Instanzname wird über die Konfigurationsdateien identifiziert: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
+   >Ersetzen Sie `<INSTANCENAME>` durch den Namen Ihrer Instanz (Produktion, Entwicklung usw.). Der Instanzname wird über die Konfigurationsdateien identifiziert: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
 
-* Die Bereitstellung kann eine Affinität verwenden, die auf dem sendenden Server nicht konfiguriert ist. Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das **[!UICONTROL Managing affinities with IP addresses]** Feld, um die Bereitstellung mit dem MTA zu verknüpfen, das die Affinität verwaltet. For more information on affinities, refer to [this section](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
-* Wenn die Bereitstellungsvorbereitung aussteht, können zu viele Kampagnen ausgeführt werden, die die Statusaktualisierung der Bereitstellung blockieren. Um dies zu lösen, gehen Sie zu **[!UICONTROL Options]** und erhöhen Sie den Wert von **[!UICONTROL NmsOperation_LimitConcurrency]** (Standard ist 10). Führen Sie nicht mehr Kampagnen aus als der Wert, der dieser spezifischen Option zugewiesen ist.
+* Möglicherweise wird für den Versand eine Affinität verwendet, die auf dem sendenden Server nicht konfiguriert wurde. Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]**, um die Sendungen mit dem MTA zu verknüpfen, der die Affinität verwaltet. Weiterführende Informationen zu Affinitäten finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+* Der Grund für eine ausstehende Versandvorbereitung kann darin liegen, dass zu viele Kampagnen aktiv sind, was die Aktualisierung des Versandstatus blockiert. Um dieses Problem zu beheben, öffnen Sie **[!UICONTROL Optionen]** und erhöhen Sie den Wert **[!UICONTROL NmsOperation_LimitConcurrency]** (der Standardwert ist 10). Führen Sie nicht mehr Kampagnen durch als im Wert für diese Option angegeben ist.
 
 ### Status Fehlgeschlagen {#failed-status}
 
-Wenn der Status einer E-Mail-Zustellung **[!UICONTROL Failed]** lautet, kann sie mit einem Problem mit Personalisierungsblöcken verknüpft werden. Personalisierungsblöcke in einer Bereitstellung können Fehler hervorrufen, wenn die Schemata beispielsweise nicht mit der Zuordnungszuordnung übereinstimmen.
+Wenn der Status eines E-Mail-Versands **[!UICONTROL Fehlgeschlagen]** lautet, kann die Ursache an Problemen mit Gestaltungsbausteinen liegen. Gestaltungsbausteine können bei einem Versand Fehler verursachen, wenn beispielsweise das Schema nicht mit dem Versand-Mapping übereinstimmt.
 
 Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen Sendungen, wie z. B.:
 
-* Wenn Empfängermeldungen mit einem Fehler &quot;Nicht erreichbar&quot;fehlschlagen, der Folgendes angibt: **Fehler beim Kompilieren des Skripts &quot;content htmlContent&quot;Zeile X: nicht definiert`[table]`ist. JavaScript: Fehler bei der Auswertung von Skript &#39;content htmlContent**, die Ursache dieses Problems ist fast immer eine Personalisierung im HTML-Versuch, auf eine Tabelle oder ein Feld aufzurufen, die nicht im Upstream Targeting oder in der Targeting-Zuordnung der Bereitstellung definiert oder zugeordnet wurde.
+* Wenn Empfängernachrichten mit einem Fehler „Nicht erreichbar“ fehlschlagen, der Folgendes angibt: **Fehler beim Kompilieren der Skriptzeile &#39;content htmlContent&#39; Zeile X:`[table]`ist nicht definiert. JavaScript: Fehler beim Auswerten des Inhalts des Skripts htmlContent**. Die Ursache für dieses Problem ist fast immer eine Personalisierung innerhalb des HTML-Codes, die versucht, eine Tabelle oder ein Feld aufzurufen, die bzw. das bei der vorangegangenen Zielgruppenbestimmung oder beim Zielgruppen-Mapping des Versands nicht definiert oder zugeordnet wurde.
 
    Um dieses Problem zu beheben, müssen der Workflow und der Versandinhalt überprüft werden, um festzustellen, welcher Personalisierungsinhalt konkret die Tabelle aufrufen möchte und ob die Tabelle zugeordnet werden kann. Danach muss entweder der Aufruf dieser Tabelle in der HTML-Datei entfernt oder das Mapping mit dem Versand korrigiert werden.
 
@@ -257,7 +257,7 @@ Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen 
 
    Normalerweise bedeutet dieser Fehler, dass es in der E-Mail ein Personalisierungsfeld oder einen Gestaltungsbaustein gibt, der für einen Empfänger mehr als einen Datensatz abruft.
 
-   Um dies zu lösen, überprüfen Sie die verwendeten Personalisierungsdaten und überprüfen Sie dann das Ziel auf Empfänger, die mehr als einen Eintrag für eines dieser Felder haben. Sie können auch eine **[!UICONTROL Deduplication]** Aktivität im Targeting-Arbeitsablauf vor der Bereitstellungsaktivität verwenden, um zu überprüfen, ob immer nur ein Personalisierungsfeld vorhanden ist. For more information on deduplication, refer to [this page](../../workflow/using/deduplication.md).
+   Um dieses Problem zu beheben, überprüfen Sie die verwendeten Personalisierungsdaten und danach den Zieldatensatz für die Empfänger, für deren Feld mehr als ein Eintrag vorhanden ist. Sie können vor der Versandaktivität auch die Aktivität **[!UICONTROL Deduplizierung]** im Zielgruppen-Workflow auswählen, damit immer nur ein einziges Personalisierungsfeld verwendet wird. Weitere Informationen zur Deduplizierung finden Sie auf [dieser Seite](../../workflow/using/deduplication.md).
 
 * Wenn ein Versand fehlschlägt und der Fehler &quot;Unerreichbar&quot; mit der Mitteilung &quot;Empfang einer Bounce Message (Regel &#39;Auto_replies&#39; wurde auf diesen Bounce angewandt)&quot; angezeigt wird, bedeutet dies, dass der Versand erfolgreich war, aber Adobe Campaign eine automatische Antwort vom Empfänger erhalten hat (z. B. eine Abwesenheitsantwort), die den E-Mail-Empfangsregeln &#39;Auto_replies&#39; entsprochen hat. Die automatische Antwort wird von Adobe Campaign ignoriert, und die Empfängeradresse kommt nicht in Quarantäne.
 
@@ -269,19 +269,19 @@ Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen 
 
 ## Anzahl gesendeter Nachrichten {#number-of-messages-sent}
 
-You can access deliveries from the delivery list, via the **[!UICONTROL Campaign Management > Deliveries]** node of the tree.
+Auf die Liste aller Sendungen kann im Knoten **[!UICONTROL Kampagnenverwaltung > Sendungen]** zugegriffen werden.
 
 Standardmäßig zeigt die Versandliste die Titel und Status aller im ausgewählten Knoten erstellten Sendungen sowie die Anzahl der zu versendenden, der verarbeiteten und der erfolgreich zugestellten Nachrichten an.
 
-* The number of **[!UICONTROL Messages to send]** corresponds to the number of recipients targeted after analysis and prior to delivery.
-* The number of messages in the **[!UICONTROL success]** column corresponds to the number of messages sent by the server and received by the recipients.
-* The number of **[!UICONTROL processed]** messages corresponds to the number of messages received plus the number of messages with errors.
+* Die Angabe **[!UICONTROL Zu sendende Nachrichten]** entspricht der Anzahl der Empfänger in der Zielgruppe, nach der Analyse aber vor Absendung.
+* In der Spalte **[!UICONTROL Erfolg]** wird die Anzahl der erfolgreich zugestellten Nachrichten angezeigt.
+* Die Spalte **[!UICONTROL Verarbeitet]** schließlich enthält die Summe der zugestellten und der fehlerhaften Nachrichten.
 
 Dieselben Informationen werden auch im Versand-Dashboard angezeigt.
 
 >[!NOTE]
 >
->Bei großen Auslieferungen sollten Sie diese Werte eventuell aktualisieren. Wählen Sie dazu die betreffende Lieferung aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie diese Informationen aus **[!UICONTROL Action > Recompute delivery and tracking indicators...]** und verwenden Sie dann den Assistenten.
+>Bei umfangreichen Sendungen kann es nützlich sein, diese Werte zu aktualisieren. Machen Sie einen Rechtsklick auf dem entsprechenden Versand. Wählen Sie **[!UICONTROL Aktion > Sende- und Berichtindikatoren neu berechnen...]** und folgen Sie den einzelnen Schritten des Assistenten.
 
 ## Terminierte Sendungen {#scheduled-deliveries-}
 
