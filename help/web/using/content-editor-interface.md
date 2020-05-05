@@ -15,7 +15,7 @@ discoiquuid: 20c64d31-c2ed-4bc9-9f0e-46f2e0c08c88
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -29,9 +29,9 @@ Das Bearbeitungsfenster des DCE besteht aus drei Bereichen. Darin können Sie de
 
 ![](assets/dce_decoupe_window_nb.png)
 
-1. The **top** section is a display area for messages to the user. These messages indicate the status of the Web application status or the delivery being created as well as warnings and error messages related to the content. Weitere Informationen finden Sie unter [HTML-Inhaltsstatus](../../web/using/content-editing-best-practices.md#html-content-statuses).
-1. The section to the **left** of the window is the area for editing content. From this area, the user can directly interact with the content using the pop-up toolbar: insert a link into an image, change the font, delete a field, etc. For more on this refer to [Editing forms](../../web/using/editing-content.md#editing-forms).
-1. The section to the **right** of the window is the control panel area. This area groups the different options for the editor, particularly those related to configuring the page heading and general options for a block: add a border, link a database field with an input zone, access Web page properties, etc. Weitere Informationen finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Bearbeiten von Inhalten](../../web/using/editing-content.md) .
+1. Im **oberen** Bereich werden Nachrichten für den Benutzer angezeigt. Hier sind Hinweise zum Status der Webanwendung oder zum gerade erstellten Versand sowie Warnhinweise und Fehlernachrichten in Verbindung mit dem Inhalt zu sehen. Weitere Informationen hierzu finden Sie unter [HTML-Inhaltsstatus](../../web/using/content-editing-best-practices.md#html-content-statuses).
+1. Der **linke** Bereich des Fensters ermöglicht die Bearbeitung des Inhalts. Hier kann der Benutzer direkt über die sich öffnende Symbolleiste z. B. einen Link in ein Bild einfügen, die Schriftart ändern und ein Feld löschen. Weitere Informationen hierzu finden Sie unter [Formulare bearbeiten](../../web/using/editing-content.md#editing-forms).
+1. Im **rechten** Bereich des Fensters befindet sich das Steuerfeld. In diesem Bereich werden die Optionen des Editors gruppiert dargestellt, vor allem jene zur Konfiguration der Seitenüberschrift und allgemeine Optionen für Bausteine. Hier können Sie beispielsweise einen Rand hinzufügen, ein Datenbankfeld mit einem Eingabefeld verknüpfen und auf die Eigenschaften einer Web-Seite zugreifen. Weitere Informationen hierzu finden Sie in den Abschnitten [Globale Optionen](#global-options) und [Inhalt bearbeiten](../../web/using/editing-content.md).
 
 ## Globale Optionen {#global-options}
 
@@ -43,7 +43,7 @@ Dort finden Sie vier Symbole:
 
 ![](assets/dce_icons_sidebar.png)
 
-* The **Display/Hide blocks** icon lets you display blue frames around the content blocks (corresponding to the `<div>` HTML tag).
+* Mit dem Symbol **Bausteine anzeigen/ausblenden** können Sie Inhaltsbausteine mit blauen Rahmen versehen (entspricht dem HTML-Tag `<div>`).
 
 * Über das Symbol **Anderen Inhalt wählen** können Sie neuen Inhalt aus einer (bereits erstellten oder nativen) Vorlage laden.
 
@@ -53,7 +53,7 @@ Dort finden Sie vier Symbole:
    >
    >Bei der Auswahl eines neuen Inhalts wird der aktuelle Inhalt automatisch ersetzt.
 
-* Mit dem Symbol &quot;Als Vorlage **** speichern&quot;können Sie den aktuellen Inhalt als Vorlage speichern. Sie müssen die Bezeichnung und den internen Namen für die Vorlage eingeben. Vorlagen werden im **[!UICONTROL Resources > Templates > Content templates]** Knoten gespeichert.
+* Mit dem Symbol **Als Vorlage speichern** können Sie den aktuellen Inhalt als Vorlage speichern. Geben Sie dazu den Titel und den internen Namen der Vorlage ein. Vorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Inhaltsvorlagen]** gespeichert.
 
    ![](assets/dce_popup_savetemplate.png)
 
@@ -67,7 +67,7 @@ Dort finden Sie vier Symbole:
 
    >[!NOTE]
    >
-   >This information corresponds to the **`<title>`** and **`<meta>`** HTML tags on the page.
+   >Diese Informationen entsprechen den HTML-Tags **`<title>`** und **`<meta>`** auf der Seite.
    >
    >Die Schlüsselwörter müssen durch Kommata getrennt sein.
 
@@ -79,12 +79,12 @@ Im rechten Bereich des Editors befinden sich die wichtigsten Optionen zum Bearbe
 
 Sie haben folgende Möglichkeiten:
 
-* Legen Sie die Anzeige für einen oder mehrere Blöcke fest, siehe [Definieren einer Sichtbarkeitsbedingung](../../web/using/editing-content.md#defining-a-visibility-condition),
-* Definieren Sie die Ränder und Rahmen, siehe [Hinzufügen von Rahmen und Hintergrund](../../web/using/editing-content.md#adding-a-border-and-background),
-* Definieren Sie Bildattribute (Größe, Beschriftung), siehe [Bearbeiten von Bildeigenschaften](../../web/using/editing-content.md#editing-image-properties),
-* Verknüpfen der Datenbank mit einem Formularelement (Eingabezone, Kontrollkästchen), siehe [Ändern der Dateneigenschaften für ein Formular](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Machen Sie einen Teil eines Formulars obligatorisch, siehe [Ändern der Dateneigenschaften für ein Formular](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
-* Definieren Sie eine Aktion für eine Schaltfläche, siehe [Hinzufügen einer Aktion zu einer Schaltfläche](../../web/using/editing-content.md#adding-an-action-to-a-button).
+* Anzeige für einen oder mehrere Blöcke festlegen, siehe [Sichtbarkeitsbedingung definieren](../../web/using/editing-content.md#defining-a-visibility-condition),
+* Ränder und Rahmen angeben, siehe [Rahmen und Hintergründe hinzufügen ](../../web/using/editing-content.md#adding-a-border-and-background),
+* Bildattribute (Größe, Beschriftung) festlegen, siehe [Bildeigenschaften bearbeiten](../../web/using/editing-content.md#editing-image-properties),
+* Datenbank mit einem Formularelement (Eingabefeld, Checkbox) verknüpfen, siehe [Dateneigenschaften für ein Formular ändern](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
+* Einen Teil eines Formulars obligatorisch machen, siehe [Dateneigenschaften für ein Formular ändern](../../web/using/editing-content.md#changing-the-data-properties-for-a-form),
+* Eine Aktion für eine Schaltfläche hinzufügen , siehe [Eine Aktion zu einer Schaltfläche hinzufügen](../../web/using/editing-content.md#adding-an-action-to-a-button).
 
 ## Symbolleiste für die Inhaltsbearbeitung {#content-toolbar}
 
