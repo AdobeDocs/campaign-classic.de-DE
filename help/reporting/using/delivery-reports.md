@@ -14,7 +14,7 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
 
 ---
@@ -24,30 +24,30 @@ source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
 
 Ausgehend von der Versandübersicht stehen diverse Berichte zur Verfügung, die Informationen bezüglich der Versanddurchführung enthalten. Gehen Sie wie folgt vor, um auf diese Berichte zuzugreifen:
 
-1. Go to the **[!UICONTROL Campaigns]** universe and click the **[!UICONTROL Delivery]** link to display the list of deliveries.
+1. Klicken Sie in der Rubrik **[!UICONTROL Kampagnen]** auf die Schaltfläche **[!UICONTROL Sendungen]**, um die Versandliste aufzurufen.
 1. Klicken Sie auf den Namen des gewünschten Versands, um ihn im Detail anzusehen.
 
    ![](assets/s_ncs_user_detailled_report.png)
 
-1. Select the **[!UICONTROL Summary]** tab and click the **[!UICONTROL Reports]** link to access the reports specific to the delivery.
+1. Klicken Sie im Tab **[!UICONTROL Zusammenfassung]** auf **[!UICONTROL Berichte]**, um die spezifischen Versandberichte aufzurufen.
 
    ![](assets/s_ncs_user_detailled_report2.png)
 
    Standardmäßig stehen folgende Berichte zur Verfügung:
 
-   * **[!UICONTROL Delivery throughput]** : bezieht sich auf den [Bereitstellungsdurchsatz](../../reporting/using/global-reports.md#delivery-throughput).
-   * **[!UICONTROL Sharing to social networks]** : Siehe [Freigeben in sozialen Netzwerken](../../reporting/using/global-reports.md#sharing-to-social-networks).
-   * **[!UICONTROL Statistics on sharing activities]** : finden Sie unter [Statistiken über Freigabeaktivitäten](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
-   * **[!UICONTROL Hot clicks]** : siehe [Hotclicks](#hot-clicks).
-   * **[!UICONTROL Tracking statistics]** : siehe [Verfolgungsstatistiken](#tracking-statistics)
-   * **[!UICONTROL URLs and click streams]** : auf [URLs verweisen und auf Streams](#urls-and-click-streams)klicken.
-   * **[!UICONTROL Tracking indicators]** : auf [Tracking-Indikatoren](#tracking-indicators).
-   * **[!UICONTROL Non-deliverables and bounces]** : bezieht sich auf [Nicht-Lieferungen und Absprünge](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
-   * **[!UICONTROL User activities]** : Siehe [Benutzeraktivitäten](../../reporting/using/global-reports.md#user-activities).
-   * **[!UICONTROL Delivery summary]** : Siehe [Lieferübersicht](#delivery-summary).
-   * **[!UICONTROL Subscription tracking]** : Siehe [Abonnementverfolgung](../../reporting/using/global-reports.md#subscription-tracking).
-   * **[!UICONTROL Delivery statistics]** : Siehe [Lieferstatistik](../../reporting/using/global-reports.md#delivery-statistics).
-   * **[!UICONTROL Breakdown of opens]** : Siehe [Aufschlüsselung der geöffneten Fenster](../../reporting/using/global-reports.md#breakdown-of-opens).
+   * **[!UICONTROL Versanddurchsatz]**: siehe [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput).
+   * **[!UICONTROL Teilen über soziale Netzwerke]**: siehe [Teilen über soziale Netzwerke](../../reporting/using/global-reports.md#sharing-to-social-networks).
+   * **[!UICONTROL Statistiken zu Teilungsaktivitäten]**: siehe [Statistiken zu Teilungsaktivitäten](../../reporting/using/global-reports.md#statistics-on-sharing-activities).
+   * **[!UICONTROL Klickposition]**: siehe [Klickposition](#hot-clicks).
+   * **[!UICONTROL Trackingstatistiken]**: siehe [Trackingstatistiken](#tracking-statistics).
+   * **[!UICONTROL URLs und Clickstreams]**: siehe [URLs und Clickstreams](#urls-and-click-streams).
+   * **[!UICONTROL Trackingindikatoren]**: siehe [Trackingindikatoren](#tracking-indicators).
+   * **[!UICONTROL Fehler und Bounces]**: siehe [Fehler und Bounces](../../reporting/using/global-reports.md#non-deliverables-and-bounces).
+   * **[!UICONTROL Nutzer-Aktivitäten]**: siehe [Nutzer-Aktivitäten](../../reporting/using/global-reports.md#user-activities).
+   * **[!UICONTROL Versandzusammenfassung]**: siehe [Versandzusammenfassung](#delivery-summary).
+   * **[!UICONTROL Abonnement-Verfolgung]**: siehe [Abonnement-Verfolgung](../../reporting/using/global-reports.md#subscription-tracking).
+   * **[!UICONTROL Versandstatistiken]**: siehe [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
+   * **[!UICONTROL Öffnungsverteilung]**: siehe [Öffnungsverteilung](../../reporting/using/global-reports.md#breakdown-of-opens).
 
 ## Trackingindikatoren {#tracking-indicators}
 
@@ -55,73 +55,73 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 
 >[!NOTE]
 >
->Werte, die auf der Grundlage der Meldung &quot;Öffnen&quot;berechnet werden, sind immer Schätzungen, da die Fehlerspanne mit E-Mails im Textformat verknüpft ist. Die **[!UICONTROL Distinct opens/Sum of opens for the population reached]** Indikatoren berücksichtigen diese Fehlerquote. For more information on tracking opens, refer to [Tracking opens](../../reporting/using/indicator-calculation.md#tracking-opens-).
+>Die in Bezug auf Öffnungen berechneten Werte sind immer nur Schätzungen. Dies hängt insbesondere mit der durch E-Mails im Textformat bedingten Fehlerquote zusammen. Die Indikatoren **[!UICONTROL Unterschiedliche Öffnungen (Unique Opens) und Summe der Öffnungen in Bezug auf die erreichte Population]** berücksichtigen diese Fehlerquote. Weiterführende Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
 ![](assets/s_ncs_user_tracking_synth_report.png)
 
-**[!UICONTROL 1. Delivery statistics]**
+**[!UICONTROL 1. Versandstatistiken]**
 
-* **[!UICONTROL Messages to deliver]** : Gesamtzahl der Nachrichten, die nach der Auslieferungsanalyse gesendet werden.
-* **[!UICONTROL Success]** : Anzahl der erfolgreich verarbeiteten Nachrichten.
+* **[!UICONTROL Zu versendende Nachricht(en)]**: Gesamtzahl der nach erfolgter Versandanalyse zu versendenden Nachrichten.
+* **[!UICONTROL Erfolg]**: Anzahl der erfolgreich verarbeiteten Nachrichten.
 
-**[!UICONTROL 2. Reception statistics]**
+**[!UICONTROL 2. Empfangsstatistiken]**
 
 >[!NOTE]
 >
 >Die Prozentsätze werden in Bezug auf die erfolgreich zugestellten Nachrichten berechnet.
 
-* **[!UICONTROL Distinct opens for the population reached]** : Schätzung der Anzahl der Empfänger, die eine Nachricht mindestens einmal geöffnet haben. Klicks auf Abmeldelinks und Spiegelseiten werden berücksichtigt.
-* **[!UICONTROL Sum of opens for the population reached]** : Schätzung der Gesamtzahl der Öffnen nach Zielempfängern.
-* **[!UICONTROL Clicks on opt-out link]** : Zahl der Klicks auf den Abmelde-Link.
-* **[!UICONTROL Clicks on the mirror page link]** : Anzahl der Klicks auf den Link zur Spiegelseite. Um berücksichtigt zu werden, muss der Link als solcher im Auslieferungsassistenten (verfolgte URLs) definiert werden. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/monitoring-a-delivery.md).
-* **[!UICONTROL Estimation of forwards]** : Schätzung der Anzahl der E-Mails, die von den Zielempfängern weitergeleitet werden. Dieser Wert wird berechnet, indem die Anzahl der einzelnen Personen und die Anzahl der einzelnen Empfänger, die auf die E-Mail geklickt haben, abgezogen werden.
+* **[!UICONTROL Unique Opens der erreichten Population]**: Schätzung der Anzahl unterschiedlicher Zielgruppenempfänger, die mindestens einmal die betreffende Nachricht geöffnet haben. Klicks auf Abmelde- und Mirrorseite-Links werden berücksichtigt.
+* **[!UICONTROL Summe der Öffnungen in Bezug auf die erreichte Population]**: Schätzung der Gesamt-Öffnungszahl durch Zielgruppenempfänger.
+* **[!UICONTROL Klicks auf den Abmelde-Link]**: Anzahl der Klicks auf den Abmelde-Link.
+* **[!UICONTROL Klicks auf den Mirrorseite-Link]**: Anzahl der Klicks auf den Mirrorseite-Link. Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert worden sein (getrackte URLs). Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Schätzung der Weiterleitungen]**: Schätzung der Anzahl der E-Mails, die von Zielgruppenempfängern an andere Personen weitergeleitet wurden. Dieser Wert ist die Differenz aus den Unique Opens allgemein und den Unique Opens der Zielgruppenempfänger.
 
    >[!NOTE]
    >
-   >For more information on the difference between distinct people and targeted recipients, refer to [Targeted persons / recipients](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
+   >Weiterführende Informationen zur Unterscheidung von Personen und Zielgruppenempfängern finden Sie unter [Unterschied zwischen Personen und Zielgruppenempfängern](../../reporting/using/indicator-calculation.md#targeted-persons---recipients).
 
-**[!UICONTROL 3. Open and click-through rate]**
+**[!UICONTROL 3. Öffnungs- und Klickrate]**
 
 Die Tabelle zeigt - aufgeschlüsselt nach Domains - Sendungen, Öffnungen, Klicks und Brutto-Reaktionsraten. Folgende Indikatoren werden angezeigt:
 
-* **[!UICONTROL Sent]** : Gesamtanzahl der in dieser Domäne gesendeten Nachrichten.
-* **[!UICONTROL Complaints]** : Anzahl der Meldungen für diese Domäne, die vom Empfänger als unerwünscht gemeldet wurden. Die Rate wird basierend auf der Gesamtzahl der Nachrichten berechnet, die auf dieser Domäne gesendet werden.
-* **[!UICONTROL Opens]** : Anzahl der eindeutigen zielgerichteten Empfänger für diese Domäne, die mindestens einmal eine Nachricht geöffnet haben. Die Rate wird basierend auf der Gesamtzahl der Nachrichten berechnet, die auf dieser Domäne gesendet werden.
-* **[!UICONTROL Clicks]** : Anzahl der einzelnen zielgerichteten Empfänger, die mindestens einmal auf dieselbe Bereitstellung geklickt haben. Die Rate wird basierend auf der Gesamtzahl der Nachrichten berechnet, die auf dieser Domäne gesendet werden
-* **[!UICONTROL Raw reactivity]** : Prozentsatz der Anzahl der Empfänger, die mindestens einmal auf eine Lieferung geklickt haben, verglichen mit der Anzahl der Empfänger, die mindestens einmal eine Lieferung geöffnet haben.
+* **[!UICONTROL Sendungen]**: Gesamtzahl der an die jeweilige Domain gesandten Nachrichten.
+* **[!UICONTROL Beschwerden]**: Anzahl der Nachrichten, die von den Empfängern als unerwünscht erklärt wurden, in Bezug auf die Gesamtzahl der an die Domain gesendeten Nachrichten.
+* **[!UICONTROL Öffnungen]**: Anzahl unterschiedlicher Zielgruppenempfänger dieser Domain, die mindestens einmal die betreffende Nachricht geöffnet haben, in Bezug auf die Gesamtzahl der an die Domain gesandten Nachrichten.
+* **[!UICONTROL Klicks]**: Anzahl der unterschiedlichen Zielgruppenempfänger, die mindestens einmal im entsprechenden Versand geklickt haben, in Bezug auf die Gesamtzahl der an die Domain gesandten Nachrichten.
+* **[!UICONTROL Brutto-Reaktionsrate]**: Prozentualer Anteil der Empfänger, die mindestens einmal im betreffenden Versand geklickt haben, in Bezug auf die Empfänger, die mindestens einmal den betreffenden Versand geöffnet haben.
 
 >[!NOTE]
 >
->Die in diesem Bericht angezeigten Domänennamen werden in der auf Kubikebene verwendeten Einzelliste definiert. Um Standarddomänen zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]** Einzelliste und ändern Sie Werte und Aliase. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/managing-enumerations.md). Die **[!UICONTROL Others]** Kategorie enthält Domänennamen, die keinem Wert der Einzelliste angehören.
+>Die in diesem Bericht dargestellten Domain-Namen werden in der auf Cube-Niveau verwendeten Auflistung definiert. Um Standard-Domains zu ändern, hinzuzufügen oder zu entfernen, bearbeiten Sie die **[!UICONTROL Domains]**-Auflistung und passen Sie die Werte und Aliase an. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../platform/using/managing-enumerations.md). Die Kategorie **[!UICONTROL Sonstige]** enthält Domain-Namen, die keinem Auflistungswert entsprechen.
 
-**[!UICONTROL 4. Generated click streams]**
+**[!UICONTROL 4. Erzeugte Clickstreams]**
 
 >[!NOTE]
 >
 >Die Prozentsätze werden in Bezug auf die erfolgreich zugestellten Nachrichten berechnet.
 
-* **[!UICONTROL Distinct clicks for the population reached]** : Anzahl der einzelnen Personen, die mindestens einmal auf eine Lieferung geklickt haben.
-* **[!UICONTROL Cumulated clicks]** : Gesamtanzahl der Klicks nach Zielempfängern, ohne Abo-Links und Spiegelseiten.
-* **[!UICONTROL Recipient clicks]** : Anzahl der einzelnen zielgerichteten Empfänger, die mindestens einmal auf dieselbe Bereitstellung geklickt haben.
-* **[!UICONTROL Estimated recipient reactivity]** : Verhältnis der Anzahl der Empfänger, die mindestens einmal bei einer Lieferung geklickt haben, zur geschätzten Anzahl der Empfänger, die mindestens einmal eine Lieferung geöffnet haben. Klicks auf Ausschluss- und Spiegelseiten-Links werden nicht berücksichtigt.
+* **[!UICONTROL Unique Clicks der erreichten Population]**: Anzahl unterschiedlicher Personen, die mindestens einmal im betreffenden Versand geklickt haben.
+* **[!UICONTROL Klicks insgesamt]**: Gesamtzahl der Klicks von Zielgruppenempfängern, ausgenommen Abmelde- und Mirrorseite-Links.
+* **[!UICONTROL Empfänger-Klicks]**: Anzahl unterschiedlicher Zielgruppenempfänger, die mindestens einmal im betreffenden Versand geklickt haben.
+* **[!UICONTROL Geschätzte Empfänger-Reaktionsrate]**: Prozentualer Anteil der Empfänger, die mindestens einmal im betreffenden Versand geklickt haben, in Bezug auf die geschätzte Anzahl der Empfänger, die mindestens einmal den betreffenden Versand geöffnet haben. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
 
-**[!UICONTROL 5. Web tracking]**
+**[!UICONTROL 5. Webtracking]**
 
-* **[!UICONTROL Visited pages]** : Anzahl der Webseiten, die nach dem Empfang der Nachricht besucht wurden.
-* **[!UICONTROL Transactions]** : Anzahl der Käufe nach dem Empfang der Nachricht.
-* **[!UICONTROL Total amount]** : Gesamtsumme der Käufe nach dem Empfang der Nachricht.
-* **[!UICONTROL Average transaction amount]** : Durchschnittlicher Einkauf durch unterschiedliche Empfänger.
-* **[!UICONTROL Articles]** : Anzahl der von den Lieferempfängern gekauften Artikel.
-* **[!UICONTROL Average count of articles per transaction]** : Durchschnittliche Anzahl von Artikeln pro Einkauf durch unterschiedliche Empfänger.
-* **[!UICONTROL Average amount per message]** : Durchschnittliche Menge der pro Nachricht generierten Käufe.
+* **[!UICONTROL Besuchte Seiten]**: Anzahl besuchter Webseiten infolge des Erhalts einer Nachricht.
+* **[!UICONTROL Transaktionen]**: Anzahl der Käufe infolge des Erhalts einer Nachricht.
+* **[!UICONTROL Gesamtbetrag]**: Gesamtbetrag der Käufe infolge des Erhalts einer Nachricht.
+* **[!UICONTROL Durchschnittlicher Transaktionsbetrag]**: Durchschnittlicher Warenkorb der unterschiedlichen Versandempfänger.
+* **[!UICONTROL Artikel]**: Anzahl der von den Versandempfängern gekauften Artikel.
+* **[!UICONTROL Durchschnittliche Artikelanzahl pro Transaktion]**: Durchschnittliche Artikelanzahl pro von unterschiedlichen Empfängern getätigtem Kauf.
+* **[!UICONTROL Durchschnittlicher Transaktionsbetrag pro Nachricht]**: Durchschnittlicher Betrag der Käufe pro Nachricht.
 
    >[!NOTE]
    >
    >Damit Webseitenbesuche, Transaktionen, Umsätze und Artikel berücksichtigt werden können, muss auf der entsprechenden Webseite ein Webtrackingtag gesetzt werden. Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) erläutert.
 
-**[!UICONTROL 6. Sharing activities to email and social networks]**
+**[!UICONTROL 6. Teilen über E-Mail und in sozialen Netzwerken]**
 
-Dieser Abschnitt zeigt die Anzahl der in jedem sozialen Netzwerk freigegebenen Nachrichten. Weitere Informationen finden Sie unter [Freigeben in sozialen Netzwerken](../../reporting/using/global-reports.md#sharing-to-social-networks).
+Dieser Abschnitt zeigt die Anzahl der in einzelnen sozialen Netzwerken geteilten Nachrichten. Weitere Informationen finden Sie unter [Teilen über soziale Netzwerke](../../reporting/using/global-reports.md#sharing-to-social-networks).
 
 ## URLs und Clickstreams {#urls-and-click-streams}
 
@@ -129,27 +129,27 @@ Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Webseite
 
 ![](assets/s_ncs_user_url_report.png)
 
-You can configure the contents of this report by selecting: the score chart to be displayed, the time filter (since the action launch, over the first 6 hours following launch, etc.) and the data display mode (by label, by URL, by category - for more on this, refer to [this page](../../delivery/using/monitoring-a-delivery.md)). Klicken Sie auf **[!UICONTROL Refresh]** , um Ihre Auswahl zu bestätigen.
+Sie haben die Möglichkeit, den Bericht in Bezug auf verschiedene Kriterien anzupassen: Anzahl der anzuzeigenden Ränge, Zeitraum (seit dem Start der Werbeaktion, über die ersten sechs Stunden nach dem Start usw.) oder auch Anzeigemodi der Daten (nach Titel, nach URL, nach Kategorie – lesen Sie diesbezüglich auch [diese Seite](../../delivery/using/monitoring-a-delivery.md)). Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
 Im oberen Bereich des Berichts werden folgende Indikatoren angezeigt:
 
-* **[!UICONTROL Reactivity]** : Verhältnis der Anzahl der Zielempfänger, die auf eine Bereitstellung geklickt haben, im Verhältnis zur geschätzten Anzahl der Zielempfänger, die eine Bereitstellung geöffnet haben. Klicks auf den Ausschluss-Link und auf der Spiegelseite werden nicht berücksichtigt.
+* **[!UICONTROL Reaktionsrate]**: Prozentualer Anteil der Zielgruppenempfänger, die mindestens einmal im betreffenden Versand geklickt haben, in Bezug auf die geschätzte Anzahl der Zielgruppenempfänger, die mindestens einmal den betreffenden Versand geöffnet haben. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
 
    >[!NOTE]
    >
-   >For more information on tracking opens, refer to [Tracking opens](../../reporting/using/indicator-calculation.md#tracking-opens-).
+   >Weiterführende Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
 
-* **[!UICONTROL Distinct clicks]** : Anzahl der einzelnen Personen, die mindestens einmal auf eine Lieferung geklickt haben (ohne den Link zum Abmelden und die Spiegelseite). Die angezeigte Rate wird basierend auf der Anzahl der erfolgreich bereitgestellten Nachrichten berechnet.
-* **[!UICONTROL Cumulated clicks]** : Gesamtanzahl der Klicks nach Zielempfängern (ohne Link zum Abmelden und Spiegelseite). Die angezeigte Rate wird basierend auf der Anzahl der erfolgreich weitergeleiteten Nachrichten berechnet.
+* **[!UICONTROL Unique Clicks]**: Prozentualer Anteil der unterschiedlichen Personen, die mindestens einmal im betreffenden Versand geklickt haben (ausgenommen Abmelde- und Mirrorseite-Link), in Bezug auf die Gesamtzahl erfolgreich zugestellter Nachrichten.
+* **[!UICONTROL Klicks insgesamt]**: Prozentualer Anteil aller Klicks von Zielgruppenempfängern, ausgenommen Abmelde- und Mirrorseite-Links, in Bezug auf die Gesamtzahl erfolgreich zugestellter Nachrichten.
 
-**[!UICONTROL Platform average]** : Diese durchschnittliche Rate, die unter jeder Rate (Reaktivität, unterschiedliche Klicks und kumulierte Klicks) angezeigt wird, wird für die in den letzten sechs Monaten gesendeten Lieferungen berechnet. Nur Lieferungen mit der gleichen Typologie und auf dem gleichen Kanal werden berücksichtigt. Nachweise sind ausgeschlossen.
+**[!UICONTROL Plattform-Durchschnitt]**: Dieser unter allen Raten (Reaktivität, Unique Clicks und aufaddierte Klicks) angezeigte Wert bezieht sich auf die Gesamtheit der in den letzten sechs Monaten gesendeten Nachrichten. Nur Sendungen, die dieselbe Typologie aufweisen und die auf demselben Kanal gesendet wurden, werden berücksichtigt. Testsendungen sind von der Statistik ausgenommen.
 
 Der mittlere Bereich der Tabelle zeigt folgende Indikatoren:
 
-* **[!UICONTROL Clicks]** : Anzahl der kumulierten Klicks pro Link.
-* **[!UICONTROL Clicks (in %)]** : Aufschlüsselung der Anzahl der Klicks pro Link im Verhältnis zur Gesamtanzahl der kumulierten Klicks.
+* **[!UICONTROL Klicks]**: Anzahl an Klicks insgesamt je Link.
+* **[!UICONTROL Klicks (in %)]**: Prozentualer Anteil der Klicks je Link in Bezug auf die Anzahl an Klicks insgesamt.
 
-**[!UICONTROL Breakdown of clicks in time]**
+**[!UICONTROL Zeitliche Klickverteilung]**
 
 Dieses Diagramm zeigt die Verteilung der Klicks insgesamt nach Tagen.
 
@@ -159,25 +159,25 @@ Dieser Bericht zeigt die wichtigsten Informationen zu einem Versand.
 
 ![](assets/s_ncs_user_synth_report.png)
 
-**[!UICONTROL Target population]**
+**[!UICONTROL Zielpopulation]**
 
 Dieser Bereich zeigt zwei Indikatoren:
 
-* **[!UICONTROL Initial population]** : Gesamtzahl der Empfänger, die den Versand erhalten sollen.
-* **[!UICONTROL Messages rejected by the rule]** : Anzahl der Adressen, die während der Analyse bei Anwendung von Typologieregeln ignoriert wurden: Adresse fehlt, unter Quarantäne gestellt, auf der schwarzen Liste usw. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Ursprungspopulation]**: Gesamtzahl der Empfänger, die den Versand erhalten sollen.
+* **[!UICONTROL Durch eine Regel zurückgewiesene Nachrichten]**: Anzahl der im Zuge der Versandanalyse aufgrund einer Typologieregel zurückgewiesenen Adressen (unvollständige Adresse, in Quarantäne, auf der Blacklist etc.). Weiterführende Informationen zu Typologieregeln finden Sie auf dieser [Seite](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
-**[!UICONTROL Causes of exclusion]**
+**[!UICONTROL Ausschlussgründe]**
 
 Das Diagramm in der Mitte veranschaulicht die Verteilung der ausgeschlossenen Nachrichten nach Regeln.
 
-**[!UICONTROL Delivery statistics]**
+**[!UICONTROL Versandstatistiken]**
 
 Dieser Bereich zeigt folgende Indikatoren:
 
-* **[!UICONTROL Messages to be delivered]** : Gesamtzahl der Nachrichten, die nach der Auslieferungsanalyse gesendet werden.
-* **[!UICONTROL Success]** : Anzahl erfolgreich verarbeiteter Nachrichten. Die zugehörige Rate ist das Verhältnis zur Anzahl der bereitzustellenden Nachrichten.
-* **[!UICONTROL Errors]** : Gesamtanzahl der Fehler, die während der Auslieferung und der automatischen Rückgabeverarbeitung kumuliert wurden. Die zugehörige Rate ist das Verhältnis zur Anzahl der bereitzustellenden Nachrichten.
-* **[!UICONTROL New quarantines]** : Anzahl der Adressen, die nach einer fehlgeschlagenen Bereitstellung isoliert wurden (unbekannte, ungültige Domäne des Benutzers). Die zugehörige Rate ist das Verhältnis zur Anzahl der bereitzustellenden Nachrichten.
+* **[!UICONTROL Zu versendende Nachricht(en)]**: Gesamtzahl der nach erfolgter Versandanalyse zu versendenden Nachrichten.
+* **[!UICONTROL Erfolg]**: Anzahl der erfolgreich verarbeiteten Nachrichten. Die zugeordnete Rate wird in Bezug auf die Anzahl zu versendender Nachrichten berechnet.
+* **[!UICONTROL Fehler]**: Gesamtzahl an Fehlern in Sendungen und der automatischen Bounce-Verarbeitung. Die zugeordnete Rate wird in Bezug auf die Anzahl zu versendender Nachrichten berechnet.
+* **[!UICONTROL Neu in Quarantäne]**: Anzahl der Adressen, die infolge eines fehlgeschlagenen Zustellversuchs unter Quarantäne gestellt wurden (unbekannter Nutzer, ungültige Domain). Die zugeordnete Rate wird in Bezug auf die Anzahl zu versendender Nachrichten berechnet.
 
 ## Klicks {#hot-clicks}
 
@@ -195,10 +195,10 @@ Dieser Bericht zeigt Statistiken zu Öffnungen, Klicks und Transaktionen.
 
 ![](assets/s_ncs_user_stat_report.png)
 
-Damit können Sie die Marketingauswirkungen der Bereitstellung verfolgen. Sie können konfigurieren, wie Werte angezeigt werden, indem Sie die Zeitspanne (1-Stunde-, 3-Stunden- oder 24-Stunden-Ansicht usw.) ändern. Klicken Sie auf **[!UICONTROL Refresh]** , um Ihre Auswahl zu bestätigen.
+Er gibt Aufschluss über Empfänger-Reaktionen. Sie können die Anzeige durch Wechsel des Parameters (z. B. 1 Stunde, 3 Stunden, 24 Stunden usw.) variieren. Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
 Die Statistiken werden in Form einer Tabelle und eines Pareto-Diagramms dargestellt, welches die Dauer angibt, die der Versand benötigt hat, um seine höchste Effizienz zu erreichen. Folgende Indikatoren werden angezeigt:
 
-* **[!UICONTROL Opens]** : Schätzen Sie die Zeit, die erforderlich ist, um einen Prozentsatz der Gesamtzahl der geöffneten Nachrichten zu erreichen. E-Mails im Textformat werden nicht berücksichtigt. For more information on tracking opens, refer to [Tracking opens](../../reporting/using/indicator-calculation.md#tracking-opens-).
-* **[!UICONTROL Clicks]** : Schätzen der erforderlichen Zeit, um einen Prozentsatz der Gesamtzahl der aufgezeichneten Klicks zu erreichen. Klicks auf den Ausschluss-Link und die Spiegelseite werden nicht berücksichtigt.
-* **[!UICONTROL Transactions]** : Zeit, die erforderlich ist, um einen Prozentsatz der Gesamtanzahl der Transaktionen nach dem Empfang der Nachricht zu erreichen. Damit eine Transaktion berücksichtigt werden kann, muss ein Transaktions-Typ-Web-Tracking-Tag in die entsprechende Webseite eingefügt werden. Die Webtracking-Konfiguration wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md)vorgestellt.
+* **[!UICONTROL Öffnungen]**: Geschätzte Dauer, um einen bestimmten Anteil an Öffnungen in Bezug auf die Gesamtzahl der geöffneten Nachrichten zu erreichen. E-Mails im Textformat werden nicht berücksichtigt. Weiterführende Informationen zum Verfolgen von Öffnungen finden Sie im Abschnitt [Öffnungs-Tracking](../../reporting/using/indicator-calculation.md#tracking-opens-).
+* **[!UICONTROL Klicks]**: Geschätzte Dauer, um einen bestimmten Anteil an Klicks in Bezug auf die Gesamtzahl der getrackten Klicks zu erreichen. Klicks auf Abmelde- und Mirrorseite-Links werden nicht berücksichtigt.
+* **[!UICONTROL Transaktionen]**: Geschätzte Dauer, um einen bestimmten Anteil an Transaktionen in Bezug auf die Gesamt-Transaktionsanzahl infolge eines Versands zu erreichen. Damit die Transaktionen berücksichtigt werden können, muss auf der entsprechenden Webseite ein Webtrackingtag vom Typ Transaktion gesetzt werden. Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) erläutert.
