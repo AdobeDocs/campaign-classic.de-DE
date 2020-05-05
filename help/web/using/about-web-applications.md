@@ -14,7 +14,7 @@ discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
 
 ---
@@ -38,16 +38,16 @@ Dieses Kapitel bietet einen Überblick über die Verwaltung von Webanwendungen.
 
 Webanwendungen in Adobe Campaign bieten folgende Funktionen:
 
-* Mehrseitige Formularerstellung. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/about-web-forms.md).
-* Mehrsprachiges Umfragen-Management mit einem integrierten Übersetzungstool. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/translating-a-web-application.md).
-* Grafische Seitenverwaltungs-Oberfläche, mehrspaltiges Seitenlayout. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/designing-a-web-application.md).
-* Rendern von Personalisierung und Feldposition. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/editing-content.md#adding-personalization-content).
-* Bedingte Anzeige von Umfragen-Feldern entsprechend den Antworten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/form-rendering.md#defining-fields-conditional-display).
+* Erstellung eines Formulars mit mehreren Seiten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/about-web-forms.md).
+* Mehrsprachige Umfrageverwaltung mit einem integrierten Übersetzungs-Tool. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/translating-a-web-application.md).
+* Grafische Benutzeroberfläche zur Seitenverwaltung, mehrspaltiges Seiten-Layout. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/designing-a-web-application.md).
+* Personalisierte Darstellung und Feldposition. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/editing-content.md#adding-personalization-content).
+* Anzeige von Umfragefeldern entsprechend den Antworten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/form-rendering.md#defining-fields-conditional-display).
 * Zufällige Anzeige von Fragen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/building-a-survey.md#adding-questions).
 * Bedingte Anzeige von Seiten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
-* Vor der Überprüfung prüfen Sie die Informationen je nach Datentyp (Nummer, E-Mail-Adresse, Datum usw.) und den erforderlichen Feldern. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/form-rendering.md#defining-control-settings).
-* E-Mail-Einladungen oder -Benachrichtigungen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
-* Personalisierung von Fehler- und Endmeldungen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
+* Informationsprüfung vor der Validierung abhängig vom erwarteten Datentyp (Zahl, E-Mail-Adresse, Datum etc.) und von den Pflichtfeldern. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/form-rendering.md#defining-control-settings).
+* Einladungen oder Benachrichtigungen per E-Mail. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
+* Personalisierung von Fehler- und Beendigungsnachrichten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-properties.md#setting-up-an-error-page).
 * Verwendung von Bildern, Videos, Hypertext-Links, Captcha etc. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/editing-content.md).
 * Überwachung der Antworten in Echtzeit Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/publish--track-and-use-collected-data.md#response-tracking).
 
@@ -77,12 +77,12 @@ Gehen Sie wie folgt vor, um eine Webanwendung zu erstellen und zu veröffentlich
 
 ## Erstkonfiguration von Webanwendungen {#web-application-initial-configuration}
 
-Webanwendung werden über den **[!UICONTROL Web Applications]** Link in den Registerkarten **[!UICONTROL Campaigns]** und **[!UICONTROL Profiles and targets]** erstellt.
+Die Erstellung von Webanwendungen erfolgt über den Link **[!UICONTROL Webanwendungen]** in den Tabs **[!UICONTROL Kampagnen]** und **[!UICONTROL Profile und Zielgruppen]**.
 
-Webanwendungen werden im **[!UICONTROL Resources > Online > Web Applications]** Knoten der Adobe Campaign-Struktur gespeichert. Konfigurationen werden in die folgenden Ordner unterteilt:
+Gespeichert werden Webanwendungen im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Adobe Campaign-Baums. Konfigurationen befinden sich in folgenden Ordnern:
 
-* **[!UICONTROL Administration > Configuration > Form renderings]**: enthält die Rendervorlagen für die Webformulardarstellung (Anwendungen und Umfragen). Mit der Vorlage können Sie das Formular erstellen. Es wird auch ein CSS-Stylesheet verwendet. Dieses Stylesheet kann auf Vorlagenebene überladen werden. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
-* **[!UICONTROL Resources > Templates > Web application templates]**: enthält Formularvorlagen. Um ein Formular oder ein Webanwendung zu erstellen, müssen Sie einen Beginn aus einer Vorlage erstellen.
+* **[!UICONTROL Administration > Konfiguration > Formular-Rendering]**: enthält die Rendering-Vorlagen für Webformulare (Anwendungen und Umfragen). Die Vorlage ermöglicht die Erstellung eines Formulars. Zusätzlich wird ein CSS-Stylesheet verwendet, das auf Vorlagenebene überschrieben werden kann. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+* **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]**: enthält Formularvorlagen. Diese sind zur Erstellung eines Formulars oder einer Webanwendung erforderlich.
 
 ## Webanwendungsvorlagen {#web-application-templates}
 
@@ -90,9 +90,9 @@ Standardmäßig bietet Adobe Campaign für jede verfügbare Webanwendung eine Vo
 
 >[!NOTE]
 >
->You can convert an existing Web application into a template. To do this, select the form and right-click. Select **[!UICONTROL Actions > Save as template...]**.
+>Sie können eine vorhandene Webanwendung in eine Vorlage konvertieren. Wählen Sie dazu das Formular aus und klicken Sie mit der rechten Maustaste darauf. Wählen Sie **[!UICONTROL Aktionen > Als Vorlage speichern...]** aus.
 
-Sie können neue Vorlagen über den **[!UICONTROL Resources > Templates > Web Application templates]** Knoten der Adobe Campaign-Struktur erstellen.
+Neue Vorlagen werden im Adobe Campaign-Baum im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** erstellt.
 
 Im Erstellungsassistenten können Sie wie unten dargestellt die zu aktivierenden Optionen auswählen.
 
