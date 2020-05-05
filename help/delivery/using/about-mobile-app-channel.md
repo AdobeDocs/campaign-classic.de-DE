@@ -1,6 +1,6 @@
 ---
-title: Informationen zum mobilen App-Kanal in Adobe Campaign Classic
-description: Dieser Abschnitt enthält allgemeine Informationen zum mobilen App-Kanal in Adobe Campaign Classic.
+title: Über den Mobile-App-Kanal in Adobe Campaign Classic
+description: Dieser Abschnitt enthält allgemeine Informationen zum Mobile-App-Kanal in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: e8d26b33-dc7c-4abd-956a-92f419a117e1
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
@@ -22,11 +22,11 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 >[!CAUTION]
 >
->In diesem Dokument wird der Vorgang zur Integration Ihrer mobilen Anwendung mit der Adobe Campaign-Plattform beschrieben. Es werden keine Informationen zum Erstellen der mobilen Anwendung oder zum Konfigurieren der Anwendung zum Verwalten von Benachrichtigungen bereitgestellt. If you would like further information on this, refer to the official Apple [documentation](https://developer.apple.com/) and Android [documentation](https://developer.android.com/index.html).
+>In diesem Dokument wird beschrieben, wie Sie Ihre Mobile App mit der Adobe Campaign-Plattform integrieren können. Es enthält weder Informationen zum Erstellen der Mobile App noch zum Konfigurieren der Anwendung für die Verwaltung von Benachrichtigungen. Weitere Informationen finden Sie in der offiziellen Apple-[Dokumentation](https://developer.apple.com/) sowie der offiziellen Android-[Dokumentation](https://developer.android.com/index.html).
 
-Die folgenden Abschnitte enthalten Informationen, die sich speziell auf den mobilen App-Kanal beziehen.
+Die folgenden Abschnitte enthalten Informationen, die sich speziell auf den Mobile-App-Kanal beziehen.
 
- Globale Informationen zum Erstellen einer Bereitstellung finden Sie in[diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 Der Mobile-Kanal (**Mobile App Channel**) bietet die Möglichkeit, mithilfe von Apps aus Adobe Campaign personalisierte Benachrichtigungen auf iOS- und Android-Geräte zu senden. Zwei Kanäle stehen zur Auswahl:
 
@@ -53,13 +53,13 @@ Sie können das Verhalten der Anwendung dahingehend konfigurieren, dass dem Empf
 
 >[!CAUTION]
 >
->* Sie müssen sicherstellen, dass die an eine mobile Anwendung gesendeten Benachrichtigungen die von Apple (Apple Push Notification Service) und Google (Firebase Cloud Messaging) festgelegten Voraussetzungen und Bedingungen erfüllen.
+>* Stellen Sie sicher, dass die an Mobile Apps gesendeten Benachrichtigungen den von Apple (Apple Push Notification Service) bzw. Google (Firebase Cloud Messaging) gestellten Anforderungen entsprechen.
 >* In manchen Ländern ist es gesetzlich vorgeschrieben, die Benutzer Ihrer Mobile Apps über die Natur und den Zweck der erhobenen Daten zu unterrichten. Prüfen Sie die jeweiligen gesetzlichen Regelungen.
 
 
-Der Arbeitsablauf **[!UICONTROL NMAC opt-out management]** (mobileAppOptOutMgt) aktualisiert Benachrichtigungen zu Abonnements auf Mobilgeräten. For more information on this workflow, refer to the [Workflows guide](../../workflow/using/mobile-app-channel.md).
+Der Workflow **[!UICONTROL NMAC-Opt-outs]** (mobileAppOptOutMgt) aktualisiert die Abmeldungen von Benachrichtigungen auf Mobile-Geräten. Weiterführende Informationen zu diesem Workflow finden Sie im [Workflows](../../workflow/using/mobile-app-channel.md)-Handbuch.
 
-Adobe Campaign ist mit binären und HTTP/2 APNS kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfigurieren einer mobilen Anwendung in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md) .
+Adobe Campaign ist sowohl mit binärem als auch HTTP/2-basiertem APNs kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 ## Datenfluss {#data-path}
 
