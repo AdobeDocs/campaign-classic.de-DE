@@ -14,7 +14,7 @@ discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 ---
@@ -26,7 +26,7 @@ source-git-commit: 7a0d82dfc6dc50026214d7d3b1094d45ffadbc03
 
 Sie können für ein Webseitenelement eine Sichtbarkeitsbedingung festlegen. Dieses Element wird dann nur angezeigt, wenn die Bedingung erfüllt ist.
 
-To add a visibility condition, select a block and enter the condition in the **[!UICONTROL Visibility condition]** field using the expression editor.
+Markieren Sie den gewünschten Baustein und geben Sie mit dem Ausdrucks-Editor im Feld **[!UICONTROL Sichtbarkeitsbedingung]** die zu erfüllende Bedingung an.
 
 ![](assets/dce_add_condition.png)
 
@@ -36,7 +36,7 @@ To add a visibility condition, select a block and enter the condition in the **[
 
 ![](assets/dce_popup_visibilitycondition.png)
 
-Diese Bedingungen übernehmen die XTK-Ausdruckssyntax (z. B. **ctx.empfänger).@email != &quot;&quot;** oder **ctx.empfänger.@status==&quot;0&quot;**). Standardmäßig werden alle Felder angezeigt.
+Diese Bedingungen übernehmen die XTK-Ausdruckssyntax (z. B. **ctx.recipient.@email != &quot;&quot;** oder **ctx.recipient.@status==&quot;0&quot;**). Standardmäßig werden alle Felder angezeigt.
 
 >[!NOTE]
 >
@@ -78,11 +78,11 @@ Wenn die verwendete Vorlage keinen Standardwert enthält, müssen Sie ihn im Edi
 
 Gehen Sie dazu wie folgt vor:
 
-* Click the **[!UICONTROL Edit]** icon.
+* Verwenden Sie das Symbol **[!UICONTROL Bearbeiten]**.
 
    ![](assets/dce_sidebar_options.png)
 
-* Enter the itemized list value (defined by the selected field) into the **[!UICONTROL Value]** field.
+* Geben Sie einen Wert der Liste (je nach ausgewähltem Feld anders) in das Feld **[!UICONTROL Wert]** ein.
 
    ![](assets/dce_sidebar_completeoptionradio.png)
 
@@ -92,9 +92,9 @@ Formularfelder wie Radiobuttons, Eingabefelder und Dropdown-Listen können über
 
 Folgende Optionen stehen zur Auswahl:
 
-* Delete the block containing the form fields using the **[!UICONTROL Delete]** icon.
-* Duplicate the selected field by creating a new block using the **[!UICONTROL Duplicate]** icon.
-* Edit the **[!UICONTROL Form data]** window to link a database field to the form zone, using the **[!UICONTROL Edit]** icon.
+* Löschen Sie den Baustein mit den Formularfeldern mithilfe des Symbols **[!UICONTROL Löschen]**.
+* Duplizieren Sie das ausgewählte Feld durch die Erstellung eines neuen Bausteins mithilfe des Symbols **[!UICONTROL Duplizieren]**.
+* Bearbeiten Sie das Feld **[!UICONTROL Formulardaten]** mithilfe des Symbols **[!UICONTROL Bearbeiten]**, um ein Datenbankfeld mit einem Formularbereich zu verknüpfen.
 
    ![](assets/dce_toolbar_formblock_edition.png)
 
@@ -106,13 +106,13 @@ Sie können für eine angeklickte Schaltfläche eine Aktion festlegen. Wählen S
 
 Folgende Aktionen sind möglich:
 
-* **[!UICONTROL Refresh]** : aktualisiert die aktuelle Seite.
-* **[!UICONTROL Next page]** : erstellt einen Link zur nächsten Seite in der Webanwendung.
-* **[!UICONTROL Previous page]** : erstellt einen Link zur vorherigen Seite der Webanwendung.
+* **[!UICONTROL Aktualisieren]**: aktualisiert die aktuelle Seite.
+* **[!UICONTROL Nächste Seite]**: erstellt einen Link zur nächsten Seite in der Webanwendung.
+* **[!UICONTROL Vorherige Seite]**: erstellt einen Link zur vorherigen Seite in der Webanwendung.
 
 >[!NOTE]
 >
->The **[!UICONTROL None]** value allows you to not activate the button.
+>Mit dem Wert **[!UICONTROL Keiner]** wird die Schaltfläche nicht aktiviert.
 
 Sie können den mit der Schaltfläche verknüpften Titel im entsprechenden Feld ändern.
 
@@ -132,7 +132,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 
 >[!NOTE]
 >
->Für jeden Linktyp können Sie den Öffnungsmodus konfigurieren: Wählen Sie das Zielfenster in der Dropdownliste **Target** aus. Dieser Wert entspricht dem **`<target>`** HTML-Tag.
+>Für jeden Link-Typ können Sie den Öffnungsmodus konfigurieren: Wählen Sie das Zielgruppenfenster in der Dropdown-Liste **Zielgruppe** aus. Dieser Wert entspricht dem HTML-Tag **`<target>`**.
 >
 >Diese **Ziele** stehen zur Verfügung:
 >
@@ -162,7 +162,7 @@ Mit der Option **Link auf eine Webanwendung** können Sie auf eine Webanwendung 
 
 Wählen Sie im entsprechenden Feld die Webanwendung aus.
 
-The list of suggested Web applications corresponds to the available applications in the **[!UICONTROL Resources > Online > Web Applications]** node.
+Die Liste der Webanwendungen entspricht den verfügbaren Anwendungen im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]**.
 
 ### Link zu einer Aktion {#link-to-an-action}
 
@@ -172,14 +172,14 @@ Mit der Option **Eine Aktion definierender Link** können Sie eine Aktion konfig
 
 >[!NOTE]
 >
->Die verfügbaren Aktionen werden im Abschnitt [Hinzufügen einer Aktion zu einer Schaltfläche](#adding-an-action-to-a-button) beschrieben.
+>Die verfügbaren Aktionen werden im Abschnitt [Eine Aktion zu einer Schaltfläche hinzufügen](#adding-an-action-to-a-button) beschrieben.
 
 ### Link löschen {#delete-a-link}
 
 Nachdem ein Link eingefügt wurde, bietet die Symbolleiste zwei neue Symbole zur Auswahl: **Link bearbeiten** und **Link unterbrechen**, mit denen Sie den erstellten Link verändern können.
 
-* **[!UICONTROL Edit link]** können Sie ein Fenster mit allen Parametern des Links anzeigen.
-* **[!UICONTROL Break the link]** können Sie den Link und alle zugehörigen Parameter nach der Bestätigung löschen.
+* **[!UICONTROL Link bearbeiten]** öffnet ein Fenster mit allen Parametern des Links.
+* **[!UICONTROL Link unterbrechen]** löscht nach einer Bestätigung den Link und alle damit verbundenen Parameter.
 
 >[!NOTE]
 >
@@ -193,15 +193,15 @@ Bei der Auswahl eines Textelements können Sie die Attribute der Schriftart änd
 
 Folgende Optionen sind verfügbar:
 
-* **Symbol für Schriftart** vergrößern: erhöht die Größe des ausgewählten Textes (Hinzufügen `<span style="font size:">`)
-* **Schriftsymbol** reduzieren: verringert die Größe des ausgewählten Textes (Hinzufügen `<span style="font size:">`)
-* **Fett** -Symbol: macht ausgewählten Text fett (Umbruch mit dem `<strong> </strong>` Tag)
-* **Kursivsymbol** : macht ausgewählten Text kursiv (Umbruch mit dem `<em> </em>` Tag)
-* **Symbol &quot;Unterstreichen** &quot;: markiert den ausgewählten Text unterstrichen (Umbruch mit dem `<span style="text-decoration: underline;">` Tag)
-* **Symbol links** ausrichten: Richtet den Text links neben dem ausgewählten Block aus (add style=&quot;text-align: left;&quot;)
-* **Symbol Mitte** : zentriert den Text für den ausgewählten Block (add style=&quot;text-align: center;&quot;)
-* **Symbol rechts** ausrichten: Richtet den Text rechts vom ausgewählten Block aus (add style=&quot;text-align: right;&quot;)
-* **Ändern Sie das Symbol für die Hintergrundfarbe** : können Sie die Hintergrundfarbe für den ausgewählten Block ändern (add style=&quot;background-color: rgba(170, 86, 255, 0.87))
+* Symbol **Schriftgröße vergrößern**: Vergrößert den ausgewählten Text (`<span style="font size:">` hinzufügen)
+* Symbol **Schriftgröße verkleinern**: Verkleinert den ausgewählten Text (`<span style="font size:">` hinzufügen)
+* Symbol **Fett**: Stellt den ausgewählten Text fett dar (Text in das Tag `<strong> </strong>` einschließen)
+* Symbol **Kursiv**: Stellt den ausgewählten Text kursiv dar (Einschließen von Text in das Tag `<em> </em>`)
+* Symbol **Unterstreichen**: Unterstreicht den ausgewählten Text (Einschließen von Text in das Tag `<span style="text-decoration: underline;">`)
+* Symbol **Linksbündig ausrichten:** Richtet den Text am linken Rand des markierten Bausteins aus (Hinzufügung von style=&quot;text-align: left;&quot;)
+* Symbol **Zentrieren**: Richtet den Text im markierten Baustein mittig aus (Hinzufügung von style=&quot;text-align: center;&quot;)
+* Symbol **Rechtsbündig ausrichten**: Richtet den Text am rechten Rand des markierten Bausteins aus (Hinzufügung von style=&quot;text-align: right;&quot;)
+* Symbol **Hintergrundfarbe ändern**: Ändert die Hintergrundfarbe für den ausgewählten Baustein (Hinzufügung von style=&quot;background-color: rgba(170, 86, 255, 0.87))
 * Symbol **Textfarbe ändern**: Ändert die Textfarbe des ausgewählten Bausteins oder nur den ausgewählten Text (`<span style="color: #CODE">`)
 
 >[!NOTE]
@@ -229,7 +229,7 @@ Um mit dem DCE kompatibel zu sein, sind **Flash-Animationen** wie folgt in HTML-
 
 >[!CAUTION]
 >
->You must not call up external files in a **script** tag of the HTML page. These files will not be imported onto the Adobe Campaign server.
+>Externe Dateien dürfen nicht in einem **Script**-Tag der HTML-Seite aufgerufen werden. Diese Dateien werden nicht in den Adobe Campaign-Server importiert.
 
 ### Bild hinzufügen/löschen/duplizieren {#adding---deleting---duplicating-an-image}
 
@@ -241,9 +241,9 @@ Wählen Sie eine lokal gespeicherte Bilddatei aus.
 
 ![](assets/dce_popup_imgupload.png)
 
-The **Delete** icon deletes the ![]() tag containing the image.
+Mit dem Symbol **Löschen** wird das Tag ![](), das das Bild enthält, gelöscht.
 
-The **Duplicate** icon duplicates the ![]() tag and its content.
+Mit dem Symbol **Duplizieren** wird das Tag ![]() und sein Inhalt gelöscht.
 
 >[!CAUTION]
 >
@@ -266,11 +266,11 @@ Die Option **Personalisierungsfeld** des Einfügesymbols ermöglicht das Hinzuf�
 
 ![](assets/dce_toolbar_textblock_persofield.png)
 
-Standardmäßig werden die angebotenen Felder aus der **[!UICONTROL Recipient]** Tabelle übernommen. Bearbeiten Sie bei Bedarf die Webanwendungseigenschaften, um eine andere Tabelle auszuwählen.
+Standardmäßig stammen die dargestellten Felder aus der Tabelle **[!UICONTROL Empfänger]**. Sie können die Eigenschaften der Webanwendung bearbeiten, um eine andere Tabelle auszuwählen.
 
 Der Name des Feldes erscheint daraufhin gelb unterlegt im Editor. Er wird zum Zeitpunkt der Personalisierung (z. B. bei der Ansicht einer Landingpage in der Vorschau) durch das für den jeweiligen Empfänger gespeicherte Profil ersetzt.
 
-Ein Beispiel wird im Abschnitt zum [Einfügen eines Personalisierungsfelds](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) dargestellt.
+Ein Beispiel wird im Abschnitt [Personalisierungsfeld einfügen](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) dargestellt.
 
 ### Gestaltungsbaustein einfügen {#inserting-a-personalization-block}
 
@@ -280,4 +280,4 @@ Mit der Option **Gestaltungsbaustein** können Sie dynamische und personalisiert
 
 Nach dem Einfügen erscheint der Name des Gestaltungsbausteins gelb hinterlegt im Editor. Er wird während der Personalisierung automatisch an das Empfängerprofil angepasst.
 
-For more on built-in personalization blocks and how to define custom personalization blocks, refer to [this page](../../delivery/using/personalization-blocks.md).
+Weiterführende Informationen zu nativen Gestaltungsbausteinen und zum Festlegen von benutzerdefinierten Gestaltungsbausteinen finden Sie auf [dieser Seite](../../delivery/using/personalization-blocks.md).
