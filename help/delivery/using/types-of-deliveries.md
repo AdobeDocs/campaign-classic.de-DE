@@ -14,7 +14,7 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -30,7 +30,7 @@ Ein **Versand** ist ein unabhängiges Versandobjekt, das ein einziges Mal ausgef
 
 Sendungen können entweder in der Versandliste oder innerhalb eines Workflows über die Aktivität [Versand](../../workflow/using/delivery.md) erstellt werden.
 
-Workflows bieten auch spezifische Bereitstellungsaktivitäten je nach dem Kanal, den Sie verwenden möchten. For more on these activities, refer to [this section](../../workflow/using/cross-channel-deliveries.md).
+Workflows bieten abhängig vom zu verwendeten Kanal auch spezifische Versandaktivitäten. Weiterführende Informationen zu diesen Aktivitäten erhalten Sie in [diesem Abschnitt](../../workflow/using/cross-channel-deliveries.md).
 
 ## Wiederkehrender Versand {#recurring-delivery}
 
@@ -48,4 +48,4 @@ Wenn sich Daten im Versand ändern (Inhalt, Name etc.), wird bei der Ausführung
 
 Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das eine einzige Sendung im Jahr (vorausgesetzt Sie haben am Versand keine Änderung vorgenommen).
 
-Continuous deliveries are created within workflows via the [Continuous delivery activity](../../workflow/using/continuous-delivery.md).
+Fortlaufende Sendungen werden in Workflows über die Aktivität [Versand (fortlaufend)](../../workflow/using/continuous-delivery.md) erstellt.
