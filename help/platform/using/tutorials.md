@@ -14,7 +14,7 @@ discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 ---
@@ -26,13 +26,13 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 Unsere intuitiven Handbücher bieten Ihnen einen einfachen Einstieg in Adobe Campaign.
 
-* [Bearbeiten von E-Mail-Inhalt mit Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/aem.html): Machen Sie Sie sich mit den Grundlagen zur Integration zwischen Adobe Campaign und Experience Manager vertraut.
-* [Datenschutzverwaltung](https://helpx.adobe.com/campaign/kb/acc-privacy.html): entdecken Sie, was Adobe Campaign Classic Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen bei der Nutzung unseres Dienstes bietet.
-* [Integrieren dynamischer Inhalte in einer E-Mail](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/target.html): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
-* [Verwalten der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
-* [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html): Hier erfahren Sie über Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign Classic.
-* [Build-Aktualisierung durchführen](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html): In diesem Dokument erfahren Sie die wichtigsten Schritte und Best Practices zur Durchführung einer Build-Aktualisierung bei Campaign Classic.
-* [Checkliste zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/security.html): Hier erfahren Sie, welche Schlüsselelemente geprüft werden müssen, um eine sichere Konfiguration für On-Premise-Anwendungen zu gewährleisten.
+* [Bearbeiten von E-Mail-Inhalt mit Adobe Experience Manager](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/aem.html): Machen Sie Sie sich mit den Grundlagen zur Integration zwischen Adobe Campaign und Experience Manager vertraut.
+* [Datenschutzverwaltung](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html): Hier erfahren Sie, wie Ihnen Adobe Campaign Classic hilft, die Datenschutzbestimmungen bei der Nutzung unseres Dienstes gesetzeskonform umzusetzen.
+* [Integrieren dynamischer Inhalte in einer E-Mail](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/target.html): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
+* [Verwalten der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliverability.html): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
+* [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html): Hier erfahren Sie über Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign Classic.
+* [Build-Aktualisierung durchführen](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html): In diesem Dokument erfahren Sie die wichtigsten Schritte und Best Practices zur Durchführung einer Build-Aktualisierung bei Campaign Classic.
+* [Checkliste zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html): Hier erfahren Sie, welche Schlüsselelemente geprüft werden müssen, um eine sichere Konfiguration für On-Premise-Anwendungen zu gewährleisten.
 
 Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungsbeispiele durchlesen:
 
@@ -42,7 +42,7 @@ Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungs
 * [Erstellen von Übersichten](../../web/using/use-cases--creating-overviews.md): Erstellen Sie Übersichts-Webanwendungen, um alle Webanwendungen in Ihrer Datenbank anzuzeigen.
 * [Anwendungsbeispiel für Workflow](../../workflow/using/using-the-local-approval-activity.md): Mithilfe dieser Anwendungsbeispiele lernen Sie die verschiedenen Verwendungsmöglichkeiten von Workflows kennen.
 
-## Videos {#how-to-videos}
+## Anleitungsvideos {#how-to-videos}
 
 In unseren Anleitungsvideos werden die Hauptfunktionen von Adobe Campaign erklärt.
 
