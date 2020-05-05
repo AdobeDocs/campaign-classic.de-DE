@@ -14,7 +14,7 @@ discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
 
 ---
@@ -38,10 +38,10 @@ In einem Workflow-Diagramm sind Scripts allgegenwärtig:
 Jedes im Rahmen des Workflows ausgeführte JavaScript greift auf eine Reihe von globalen Objekten zu.
 
 * **instance**: Stellt den Workflow dar, der ausgeführt wird. Das Schema dieses Objekts ist **xtk:workflow**.
-* **Aufgabe**: Stellt die ausgeführten Aufgaben dar. Das Schema dieses Objekts ist **xtk:workflowTask**.
-* **Ereignis**: Stellt die Ereignisse dar, die die ausgeführte Aufgabe aktiviert haben. Das Schema dieses Objekts ist **xtk:workflowEvent**. Dieses Objekt wird nicht für Aktivitäten vom Typ **AND-join** initialisiert, die von mehreren Übergängen aktiviert wurden.
-* **Ereignisse**: Stellt die Liste der Ereignisse dar, die die aktuelle Aufgabe aktiviert haben. Das Schema dieses Objekts ist **xtk:workflowEvent**. Diese Tabelle enthält in der Regel ein Element, kann jedoch mehrere für **AND-join** -Aktivitäten enthalten, die aufgrund mehrerer Übergänge aktiviert wurden.
-* **Aktivität**: Stellt das Modell der ausgeführten Aufgabe dar. Das Schema dieses Objekts hängt vom Aktivitätstyp ab. Dieses Objekt kann vom Initialisierungsskript geändert werden, in anderen Skripten, Änderungen mit unbestimmbaren Auswirkungen.
+* **task**: Stellt die ausgeführten Aufgaben dar. Das Schema dieses Objekts ist **xtk:workflowTask**.
+* **event**: Stellt die Ereignisse dar, die die ausgeführte Aufgabe aktiviert haben. Das Schema dieses Objekts ist **xtk:workflowEvent**. Dieses Objekt wird nicht für Aktivitäten vom Typ **Und-Verknüpfung** initialisiert, die von mehreren Transitionen aktiviert wurden.
+* **events**: Stellt die Liste der Ereignisse dar, die die aktuelle Aufgabe aktiviert haben. Das Schema dieses Objekts ist **xtk:workflowEvent**. Diese Tabelle enthält in der Regel ein Element, kann jedoch mehrere Aktivitäten vom Typ **Und-Verknüpfung** enthalten, die anhand mehrerer Transitionen aktiviert wurden.
+* **activity**: Stellt das Modell der ausgeführten Aufgabe dar. Das Schema dieses Objekts hängt vom Aktivitätstyp ab. Das Objekt kann vom Initialisierungs-Script geändert werden; in anderen Scripten werden Änderungen unbestimmbare Folgen haben.
 
 Die verfügbaren Eigenschaften dieser Objekte sind über die Dropdown-Liste rechts in der Symbolleiste des Scripts abrufbar.
 
@@ -64,55 +64,55 @@ logInfo("Label: " + instance.label)
 logInfo("Start date: " + task.creationDate)
 ```
 
-The **[!UICONTROL logInfo(message)]** function inserts a message into the log.
+Die Funktion **[!UICONTROL logInfo(message)]** erstellt einen Eintrag im Protokoll.
 
-Klicken Sie auf **[!UICONTROL OK]** , um den Erstellungsassistenten zu schließen, und starten Sie dann den Workflow mit den Aktionsschaltflächen oben rechts in der Liste der Arbeitsabläufe. Am Ende der Ausführung konsultieren Sie das Protokoll. Es sollten zwei Meldungen entsprechend dem Skript angezeigt werden: Eine zeigt die Beschriftung des Workflows an, die andere das Datum, an dem das Skript aktiviert wurde.
+Klicken Sie auf **[!UICONTROL OK]**, um den Assistenten zu schließen und starten Sie den Workflow mithilfe der Aktionsschaltflächen oben rechts der Workflow-Liste. Rufen Sie nach Ende der Ausführung das Protokoll auf. Bei korrekter Ausführung werden zwei dem Script entsprechende Nachrichten angezeigt: Ein Eintrag zeigt den Workflow-Titel, der zweite das Datum der Script-Aktivierung.
 
 ## Variablen {#variables}
 
-Bei den Variablen handelt es sich um die freien Eigenschaften der Objekte **[!UICONTROL instance]**, **[!UICONTROL task]** und **[!UICONTROL event]** . Die für diese Variablen autorisierten JavaScript-Typen sind **[!UICONTROL string]**, **[!UICONTROL number]** und **[!UICONTROL Date]**.
+Variablen sind freie Eigenschaften der Objekte **[!UICONTROL instance]**, **[!UICONTROL task]** und **[!UICONTROL event]**. Die für diese Variablen zulässigen JavaScript-Typen sind **[!UICONTROL string]**,**[!UICONTROL number]** und **[!UICONTROL Date]**.
 
 ### Instanzvariablen {#instance-variables}
 
-Die Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit den globalen Variablen vergleichbar. Sie werden von allen Aktivitäten geteilt.
+Instanzvariablen (**[!UICONTROL instance.vars.xxx]**) sind mit allgemeinen Variablen vergleichbar und gelten für alle Aktivitäten.
 
 ### Aufgabenvariablen {#task-variables}
 
-Die Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit den lokalen Variablen vergleichbar.  Sie werden nur von der aktuellen Aufgabe verwendet. Diese Variablen werden von persistenten Aktivitäten zur Datenspeicherung verwendet und werden manchmal zum Datenaustausch zwischen den verschiedenen Skripten derselben Aktivität verwendet.
+Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit lokalen Variablen vergleichbar. Nur die laufende Aufgabe kann auf sie zugreifen. Sie werden für persistente Aktivitäten verwendet, um Daten beizubehalten, und gegebenenfalls zum Austausch von Werten zwischen verschiedenen Skripts innerhalb einer Aktivität.
 
 ### Ereignisvariablen {#event-variables}
 
-Die Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Datenaustausch zwischen den elementaren Aufgaben eines Workflow-Prozesses. Diese Variablen werden von der Aufgabe übergeben, die die laufende Aufgabe aktiviert hat. Es ist möglich, sie zu ändern und neue zu definieren. Sie werden dann an die folgenden Aktivitäten weitergeleitet.
+Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Daten zwischen elementaren Aufgaben eines Workflow-Prozesses. Sie werden von der Aufgabe übermittelt, die die laufende Aufgabe aktiviert hat. Es besteht die Möglichkeit, sie zu ändern oder neue Ereignisvariablen zu definieren, die dann an die anschließenden Aktivitäten übermittelt werden.
 
 Bei Verwendung einer **UND-Verknüpfung** fusionieren die Variablen. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
 
 Diese Variablen werden am häufigsten verwendet und sind Instanzvariablen vorzuziehen.
 
-Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Zeichenfolgenvariablen. Beispiel: Ein Export setzt die **[!UICONTROL vars.filename]** Variable mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Info-Aktivitäten](../../workflow/using/about-activities.md)in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten dokumentiert.
+Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Zeichenfolgenvariablen. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](../../workflow/using/about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
-### Beispiele {#example}
+### Beispiele   {#example}
 
 **Beispiel 1**
 
-In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Population anzuwendenden geteilten Prozentsatz dynamisch zu berechnen.
+In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Population anzuwendenden Aufspaltungsprozentsatz dynamisch zu berechnen.
 
 1. Erstellen Sie einen Workflow und fügen Sie eine Startaktivität hinzu.
 
-1. Fügen Sie eine JavaScript-Codeaktivität hinzu und konfigurieren Sie sie, um eine Instanzvariable zu definieren.
+1. Fügen Sie eine JavaScript-Code-Aktivität hinzu und konfigurieren Sie sie, um eine Instanzvariable zu erstellen.
 
    Beispiel: `instance.vars.segmentpercent = 10;`
 
    ![](assets/js_ex1.png)
 
-1. Fügen Sie eine Abfrageaktivität hinzu und richten Sie die Empfänger entsprechend Ihren Anforderungen an.
+1. Fügen Sie eine Abfrageaktivität hinzu und wählen Sie entsprechend Ihren Anforderungen Empfänger für die Zielgruppe aus.
 
-1. Fügen Sie eine Teilungsaktivität hinzu und konfigurieren Sie sie, um eine zufällige Stichprobe der eingehenden Population durchzuführen. Der Stichprobenprozentsatz kann beliebig sein. In diesem Beispiel ist er auf 50 % festgelegt.
+1. Fügen Sie eine Aufspaltungsaktivität hinzu und konfigurieren Sie sie so, dass eine Stichprobe für die eingehende Population vorgenommen wird. Der Stichprobenprozentsatz kann beliebig sein. In diesem Beispiel ist er auf 50 % festgelegt.
 
    Dieser Prozentsatz wird dank der zuvor definierten Instanzvariablen dynamisch aktualisiert.
 
    ![](assets/js_ex2.png)
 
-1. Definieren Sie im Abschnitt Initialisierungsskript auf der Registerkarte Erweitert der Teilungsaktivität eine JS-Bedingung. Die JS-Bedingung wählt den zufälligen Stichprobenprozentsatz des ersten Übergangs aus der Split-Aktivität aus und aktualisiert ihn auf einen Wert, der von der zuvor erstellten Instanzvariablen festgelegt wurde.
+1. Definieren Sie im Abschnitt „Initialisierungs-Script“ auf dem Tab „Erweitert“ der Aufspaltungsaktivität eine JS-Bedingung. Die JS-Bedingung wählt den zufälligen Stichprobenprozentsatz der ersten Transition aus der Aufspaltungsaktivität aus und aktualisiert ihn auf einen Wert, der von der zuvor erstellten Instanzvariablen festgelegt wurde.
 
    ```
    activity.transitions.extractOutput[0].limiter.percent = instance.vars.segmentpercent;
@@ -120,7 +120,7 @@ In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Populati
 
    ![](assets/js_ex3.png)
 
-1. Stellen Sie sicher, dass die Ergänzung in einem separaten Übergang der Teilungsaktivität generiert wird, und fügen Sie nach jedem der ausgehenden Übergänge End-Aktivitäten hinzu.
+1. Stellen Sie sicher, dass das Komplement in einer separaten Transition der Aufspaltungsaktivität generiert wird, und fügen Sie nach jeder der ausgehenden Transitionen Endaktivitäten hinzu.
 
 1. Speichern und starten Sie den Workflow. Das dynamische Sampling wird entsprechend der Instanzvariablen angewendet.
 
@@ -164,7 +164,7 @@ Geben Sie beispielsweise zum Abruf der Variablen **instance.vars.xxx = &quot;yyy
 
 Beispiel:
 
-1. Create an instance variable that defines a delivery&#39;s internal name via the **[!UICONTROL JavaScript code]**: **instance.vars.deliveryIN = &quot;DM42&quot;**.
+1. Erstellen Sie eine Instanzvariable, die über die **[!UICONTROL JavaScript-Code]**-Aktivität den internen Namen eines Versands definiert: **instance.vars.deliveryIN = &quot;DM42&quot;**
 
    ![](assets/wkf_js_activity_1.png)
 
@@ -172,7 +172,7 @@ Beispiel:
 
    Hinweis: Diese Informationen werden in den Versandlogs gespeichert.
 
-   To reference the instance variable in the **[!UICONTROL Value]** column, enter **$(instance/vars/@deliveryIN)**.
+   Geben Sie in der Spalte **[!UICONTROL Wert]** **$(instance/vars/@deliveryIN)** an, um sich auf die Instanzvariable zu beziehen.
 
    Der Workflow gibt die Empfänger aus, die den Versand DM42 erhalten haben.
 
@@ -194,4 +194,4 @@ Eine Aktivitätseigenschaft kann unter bestimmten Bedingungen zum Zeitpunkt der 
 
 Die Mehrzahl der Aktivitätseigenschaften kann dynamisch berechnet werden, entweder unter Verwendung eines JavaScript-Templates oder weil die Workflow-Eigenschaften die Berechnung des Werts durch ein Script explizit erlauben.
 
-Bei anderen Eigenschaften müssen Sie jedoch das Initialisierungsskript verwenden. Dieses Skript wird ausgewertet, bevor die Aufgabe ausgeführt wird. Die **[!UICONTROL activity]** Variable verweist auf die Aktivität, die der Aufgabe entspricht. Die Eigenschaften dieser Aktivität können geändert werden und betreffen nur diese Aufgabe.
+Für andere Eigenschaften ist jedoch das Initialisierungsscript zu verwenden. Dieses Script wird vor Ausführung der Aufgabe ausgewertet. Die Variable **[!UICONTROL activity]** referenziert die der Aufgabe entsprechende Aktivität. Die Eigenschaften dieses Objekts können geändert werden und betreffen nur diese Aufgabe.
