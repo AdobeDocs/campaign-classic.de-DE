@@ -14,7 +14,7 @@ discoiquuid: 8dda45b4-4b5d-4b4e-a8b4-45d9bc49aaf3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: fa2b6890d3c9eaf7b4b6521b2edfb494faa4798c
 
 # Kanalübergreifender Versand{#cross-channel-deliveries}
 
-Cross-channel deliveries are available in the **[!UICONTROL Deliveries]** tab of campaign workflow activities.
+Auf kanalübergreifende Sendungen kann im Tab **[!UICONTROL Sendungen]** von Kampagnen-Workflows zugegriffen werden.
 
 Sie ermöglichen die Erstellung eines Versands für einen bestimmten Kanal. Die Konfiguration einer derartigen Aktivität (Auswahl der Vorlage, Inhaltserstellung etc.) erfolgt auf die gleiche Weise wie mit dem klassischen Versand-Assistenten.
 
@@ -41,7 +41,7 @@ Die Zielgruppe des Versands kann mithilfe der verschiedenen dedizierten Aktivit�
 Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail oder einer SMS an Abonnenten einer Push-Benachrichtigung sowie für eine Push-Benachrichtigung eine Woche später. Gehen Sie dazu folgendermaßen vor:
 
 1. Kampagne erstellen.
-1. Fügen Sie auf der **[!UICONTROL Targeting and workflows]** Registerkarte Ihrer Kampagne Ihrem Workflow eine **[!UICONTROL Query]** hinzu.
+1. Fügen Sie in Ihrer Kampagne dem Workflow im Tab **[!UICONTROL Zielbestimmungen und Workflows]** eine **[!UICONTROL Abfrage]** hinzu.
 1. Konfigurieren Sie Ihre Abfrage. In unserem Beispiel wählen wir als Zieldimension die Empfänger aus, die Push-Benachrichtigungen abonniert haben.
 
    >[!NOTE]
@@ -54,15 +54,15 @@ Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail o
 
    ![](assets/cross_channel_delivery_2.png)
 
-1. Add a **[!UICONTROL Split]** activity to your workflow to divide recipients who have a mobile number and those who have an email address.
-1. In the **[!UICONTROL Delivery]** tab, select a delivery for each of your targets.
+1. Fügen Sie Ihrem Workflow eine **[!UICONTROL Aufspaltung]** hinzu, um Empfänger in Besitzer einer Mobiltelefonnummer und in Besitzer einer E-Mail-Adresse zu unterteilen.
+1. Wählen Sie im Tab **[!UICONTROL Versand]** für jeden Zieldatensatz einen Versand.
 
    Erstellen Sie Ihren Versand auf dieselbe Weise wie mit dem klassischen Versand-Assistenten, indem Sie die Versandaktivität in Ihrem Workflow durch einen Doppelklick auswählen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../delivery/using/about-email-channel.md).
 
    ![](assets/cross_channel_delivery_3.png)
 
-1. Add and configure a **[!UICONTROL Wait]** activity in order for the recipients not to receive too many deliveries at once.
-1. Add a **[!UICONTROL Split]** activity to divide subscribers of an iOS or Android mobile applications.
+1. Fügen Sie eine **[!UICONTROL Warten]**-Aktivität hinzu und konfigurieren Sie sie, damit die Empfänger nicht zu viele Sendungen gleichzeitig erhalten.
+1. Fügen Sie eine **[!UICONTROL Aufspaltung]** hinzu, um Abonnenten in Anwender von iOS- und Android-Apps zu unterteilen.
 
    Wählen Sie für jedes Betriebssystem einen Dienst aus. Weiterführende Informationen zur Abonnementerstellung finden Sie auf dieser [Seite](../../delivery/using/configuring-the-mobile-application.md).
 
