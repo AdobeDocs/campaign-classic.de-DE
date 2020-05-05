@@ -1,7 +1,7 @@
 ---
-title: Häufig gestellte Fragen zum Test und Senden
-seo-title: Nachrichten validieren, senden und verfolgen
-description: Häufig gestellte Fragen zu Campaign Classic
+title: Häufig gestellte Fragen zum Testen und Senden
+seo-title: Nachrichten validieren, senden und tracken
+description: Häufig gestellte Fragen zu Campaign Classic
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -13,13 +13,13 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ef56aa04a3ecc94e9e3dda24562760d6a93739d
 
 ---
 
 
-# Nachrichten validieren, senden und verfolgen {#validate-send-track}
+# Nachrichten validieren, senden und tracken {#validate-send-track}
 
 ## Test und Validierung {#test-and-validate-before-sending}
 
