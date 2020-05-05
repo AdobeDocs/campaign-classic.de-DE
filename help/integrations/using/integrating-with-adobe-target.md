@@ -14,7 +14,7 @@ discoiquuid: 44c7acdd-6b7a-4e88-b2a7-3e9bf8a6eab5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b0cd40d4616f7b55a1d655a1717b9c7ce8d8b6c6
 
 ---
@@ -26,7 +26,7 @@ Die Integration von Adobe Campaign und Adobe Target (Classic und Standard) inner
 
 Wenn ein Empfänger eine mit Adobe Campaign versendete E-Mail öffnet, ermöglicht ein Aufruf von Adobe Target die Anzeige einer dynamischen Version des Inhalts. Diese dynamische Version wird anhand von bei der E-Mail-Erstellung definierten Regeln berechnet.
 
-Weitere Informationen zur Integration von Adobe Campaign und Adobe Zielgruppe finden Sie in [diesen vier Tipps und Tricks](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
+Weitere Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie in [diesen vier Tipps und Tricks](https://www.adobe.com/content/dam/www/us/en/marketing/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
 >[!NOTE]
 >
 >Im Rahmen der Integration werden nur statische Bilder unterstützt. Der weitere Inhalt kann nicht personalisiert werden.
@@ -39,4 +39,4 @@ Verschiedene Datentypen können in Verbindung mit Adobe Target zum Einsatz komme
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie auf den [Adobe-Target-Hilfeseiten](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_campaign_and_target.html).
+>Weiterführende Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie auf den [Adobe-Target-Hilfeseiten](https://marketing.adobe.com/resources/help/de_DE/target/a4t/c_campaign_and_target.html).
