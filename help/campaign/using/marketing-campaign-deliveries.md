@@ -1,8 +1,8 @@
 ---
-title: Marketingkampagnenlieferungen
-seo-title: Marketingkampagnenlieferungen
-description: Marketingkampagnenlieferungen
-seo-description: Weitere Informationen zu Marketingkampagnenlieferungen
+title: Sendungen zur Marketing-Kampagne
+seo-title: Sendungen zur Marketing-Kampagne
+description: Sendungen zur Marketing-Kampagne
+seo-description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -14,19 +14,19 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
 
 ---
 
 
-# Marketingkampagnenlieferungen {#marketing-campaign-deliveries}
+# Sendungen zur Marketing-Kampagne {#marketing-campaign-deliveries}
 
 Sendungen können über das Dashboard einer Kampagne, einen Kampagnenworkflow oder direkt über die Übersicht der Sendungen erstellt werden.
 
 ## Sendungen erstellen {#creating-deliveries}
 
-To create a delivery linked to a campaign, click the **[!UICONTROL Add a delivery]** link in the campaign dashboard.
+Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf den Link **[!UICONTROL Versand hinzufügen]** im Dashboard der Kampagne.
 
 ![](assets/campaign_op_add_delivery.png)
 
@@ -40,15 +40,15 @@ Die angebotenen Parameter werden den unterschiedlichen Versandtypen angepasst (B
 
 Der Kampagnenverantwortliche bestimmt für jeden Versand
 
-* Das Hauptziel. Weitere Informationen finden Sie unter [Erstellen des Hauptziels in einem Workflow](#building-the-main-target-in-a-workflow) und [Auswählen der Zielgruppe](#selecting-the-target-population).
-* Die Kontrollgruppe. Weitere Informationen finden Sie unter [Definieren einer Kontrollgruppe](#defining-a-control-group).
-* Die Seed-Adresse. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
+* die Hauptzielgruppe. Weiterführende Informationen finden Sie unter [Erstellen einer Hauptzielgruppe im Workflow](#building-the-main-target-in-a-workflow) und [Zielgruppe bestimmen](#selecting-the-target-population).
+* die Kontrollgruppe. Weiterführende Informationen finden Sie unter [Bestimmen einer Kontrollgruppe](#defining-a-control-group).
+* die Testadressen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
 Einige dieser Parameter werden bereits durch die Kampagnenvorlage festgelegt.
 
 >[!NOTE]
 >
->Kampagnenvorlagen werden in [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates)dargestellt.
+>Kampagnenvorlagen werden in [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates) dargestellt.
 
 Zur Bestimmung einer Versand-Zielgruppe können Sie die in Ihrer Datenbank enthaltenen Empfänger mithilfe von Kriterien filtern. Dieser Auswahlmodus wird im Abschnitt [Nachrichten senden](../../delivery/using/steps-defining-the-target-population.md) beschrieben.
 
@@ -56,13 +56,13 @@ Zur Bestimmung einer Versand-Zielgruppe können Sie die in Ihrer Datenbank entha
 
 Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und diese Liste als Zielgruppe eines Versands zu verwenden.
 
-1. To do this, edit the concerned delivery and click the **[!UICONTROL To]** link to change the targeted population.
+1. Öffnen Sie hierzu den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**, um die Zielpopulation zu ändern.
 
-1. Wählen Sie auf der **[!UICONTROL Main target]** Registerkarte die **[!UICONTROL Defined via the database]** Option aus und klicken Sie auf **[!UICONTROL Add]** , um die Empfänger auszuwählen.
+1. Markieren Sie im Tab **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Von der Datenbank ausgehend bestimmt]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um Empfänger auszuwählen.
 
 ![](assets/s_user_target_group_add.png)
 
-1. Wählen Sie **[!UICONTROL A list of recipients]** die Option und klicken Sie auf **[!UICONTROL Next]** , um sie auszuwählen.
+1. Markieren Sie den Zielgruppentyp **[!UICONTROL Empfängerliste]** und klicken Sie auf **[!UICONTROL Weiter]**, um die Liste auszuwählen, die die gewünschten Emfpänger enthält. Klicken Sie zum Abschluss auf .
 
 ![](assets/s_user_target_group_next.png)
 
@@ -78,7 +78,7 @@ Eine detaillierte Beschreibung der Funktionsweise des Workflow-Moduls erhalten S
 
 #### Erstellen eines Zielgruppen-Workflows {#creating-a-targeting-workflow}
 
-Targeting kann über eine Kombination von Filterbedingungen in einer grafischen Sequenz in einem Workflow erstellt werden. Sie können Populationen und Subpopulationen erstellen, die entsprechend Ihren Anforderungen ausgerichtet werden. Um den Workflow-Editor anzuzeigen, klicken Sie auf die **[!UICONTROL Targeting and workflows]** Registerkarte im Kampagnen-Dashboard.
+Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]** der entsprechenden Kampagne.
 
 ![](assets/s_ncs_user_edit_op_wf_link.png)
 
@@ -94,7 +94,7 @@ Verbinden Sie die zur Zielgruppenerstellung notwendigen Zielbestimmungs- und Ste
 
 >[!NOTE]
 >
->Examples and procedure for defining queries are presented in [this section](../../workflow/using/query.md).
+>Beispiele und Anleitungen zum Definieren von Abfragen finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
 
 Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, die Aktivitäten repräsentieren. Der erste Tab enthält Aktivitäten zur Zielgruppenbestimmung, der zweite Aktivitäten zur Steuerung. Letztere werden gelegentlich zur Koordinierung der Zielgruppenbestimmungs-Aktivitäten verwendet.
 
@@ -108,16 +108,16 @@ Im linken Bereich des Editors befindet sich eine Bibliothek grafischer Objekte, 
 
 Es besteht die Möglichkeit, mehrere Zielgruppen-Workflows für eine einzelne Kampagne zu erstellen. Gehen Sie wie folgt vor, um einen Workflow hinzuzufügen:
 
-1. Gehen Sie zum oberen linken Bereich der Workflow-Erstellungszone, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Add]**. Sie können auch die **[!UICONTROL New]** Schaltfläche oberhalb dieser Zone verwenden.
+1. Positionieren Sie den Mauszeiger im linken oberen Abschnitt des Workflow-Editors, machen Sie einen Rechtsklick und wählen Sie **[!UICONTROL Hinzufügen]** aus. Sie können auch die Schaltfläche **[!UICONTROL Neu]** oberhalb dieses Bereichs nutzen.
 
    ![](assets/s_ncs_user_add_a_wf.png)
 
-1. Select the **[!UICONTROL New workflow]** template and name this workflow.
+1. Wählen Sie die Workflow-Vorlage **[!UICONTROL Neuer Workflow]** aus und benennen Sie den Workflow.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Workflow-Erstellung zu bestätigen, und entwerfen Sie das Diagramm des Workflows.
 
 #### Workflow ausführen {#executing-a-workflow}
 
-Targeting workflows can be launched manually via the **[!UICONTROL Start]** button in the toolbar, provided that you have the appropriate rights.
+Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell über die Schaltfläche **[!UICONTROL Starten]** in der Symbolleiste ausführen.
 
 Die Zielgruppenbestimmung kann so konfiguriert werden, dass sie entsprechend einer Planungsaktivität (Planungsassistent) oder abhängig von einem Ereignis (externes Signal, Dateiimport usw.) automatisch ausgeführt wird.
 
@@ -127,7 +127,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
 * Starten oder neu starten
 
-   * Über das **[!UICONTROL Start]** Symbol können Sie den Targeting-Arbeitsablauf starten. Wenn Sie auf dieses Symbol klicken, werden alle Aktivitäten ohne Eingabetaste aktiviert (mit Ausnahme von Endpunktspringern).
+   * Bei Klick auf das Symbol **[!UICONTROL Starten]** werden alle Aktivitäten des Zielgruppen-Workflows aktiviert, die über keine eingehende Verbindung verfügen (außer Sprünge vom Typ &quot;Ziel&quot;).
 
       ![](assets/s_user_segmentation_start.png)
 
@@ -135,19 +135,19 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
       ![](assets/s_user_segmentation_start_status.png)
 
-      The process status changes to **[!UICONTROL Started]**.
+      Anschließend wechselt der Prozessstatus auf **[!UICONTROL Gestartet]**.
 
-   * Sie können den Targeting-Workflow über das entsprechende Symbolleistensymbol neu starten. Dieser Befehl kann nützlich sein, wenn das **[!UICONTROL Start]** Symbol nicht verfügbar ist, z. B. wenn das Beenden des Targeting-Workflows ausgeführt wird. Klicken Sie in diesem Fall auf das **[!UICONTROL Restart]** Symbol, um den Neustart vorherzusehen. Der Server berücksichtigt die Anforderung, wie ihr Status zeigt:
+   * Sie können den Zielgruppen-Workflow über das entsprechende Symbol der Menüleiste neu starten. Dieser Befehl kann besonders dann nützlich sein, wenn das Symbol **[!UICONTROL Starten]** nicht verfügbar ist, beispielsweise wenn der Workflow gerade angehalten wird. Klicken Sie in diesem Fall auf das Symbol **[!UICONTROL Neu starten]**, um den Neustart vorzuziehen. Diese Anfrage wird daraufhin vom Server erfasst, wie am Ausführungsstatus zu erkennen ist:
 
       ![](assets/s_user_segmentation_restart_status.png)
 
-      The process then enters **[!UICONTROL Started]** status.
+      Anschließend wechselt der Prozessstatus auf **[!UICONTROL Gestartet]**.
 
 * Anhalten oder aussetzen
 
    * Über die Symbolleiste kann die Ausführung des Zielgruppen-Workflows angehalten oder ausgesetzt werden.
 
-      When you click **[!UICONTROL Pause]**, operations in progress **[!UICONTROL are not]** paused, but no other activity is launched until the next restart.
+      Bei Klick auf das Symbol **[!UICONTROL Aussetzen]** werden laufende Prozesse **[!UICONTROL nicht]** abgebrochen, es wird jedoch bis zur Wiederaufnahme keine andere Aktivität gestartet.
 
       ![](assets/s_user_segmentation_pause.png)
 
@@ -155,7 +155,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
       ![](assets/s_user_segmentation_pause_status.png)
 
-      You can also pause a targeting workflow automatically when its execution reaches a particular activity. To do this, right-click the activity from which targeting workflow is to be paused, and select **[!UICONTROL Enable but do not execute]**.
+      Ein Zielgruppen-Workflow kann auch automatisch ausgesetzt werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow ausgesetzt werden soll, und klicken Sie auf **[!UICONTROL Aktivieren, aber nicht ausführen]**.
 
       ![](assets/s_user_segmentation_donotexecute.png)
 
@@ -167,16 +167,16 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
       >
       >Diese Option erweist sich insbesondere in Entwurfs- und Testphasen einer Zielbestimmung als nützlich.
 
-      Click **[!UICONTROL Start]** to resume execution.
+      Klicken Sie auf **[!UICONTROL Starten]**, um die Ausführung wieder aufzunehmen.
 
-   * Click the **[!UICONTROL Stop]** icon to stop the execution in progress.
+   * Klicken Sie auf das Symbol **[!UICONTROL Anhalten]**, um die Ausführung zu stoppen.
 
       ![](assets/s_user_segmentation_stop.png)
 
       Die Anfrage wird vom Server erfasst und vom Ausführungsstatus angezeigt:
 
       ![](assets/s_user_segmentation_stop_status.png)
-   You can also stop a targeting workflow automatically when the execution reaches an activity. To do this, right-click the activity from which targeting workflow will be stopped, and select **[!UICONTROL Do not activate]**.
+   Ein Zielgruppen-Workflow kann auch automatisch angehalten werden, wenn die Ausführung eine bestimmte Aktivität erreicht: Machen Sie hierzu einen Rechtsklick auf die Aktivität, ab der der Workflow angehalten werden soll, und klicken Sie auf **[!UICONTROL Nicht aktivieren]**.
 
    ![](assets/s_user_segmentation_donotactivate.png)
 
@@ -190,9 +190,9 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
 * Unbedingter Stopp
 
-   Wählen Sie im Explorer **[!UICONTROL Administration > Production > Object created automatically > Campaign workflows]** die Option, um auf jeden Kampagnen-Workflow zuzugreifen und darauf zu reagieren.
+   Wählen Sie im Explorer **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** aus, um auf einen beliebigen Campaign-Workflow zuzugreifen und diesen zu steuern.
 
-   Sie können Ihren Workflow bedingungslos beenden, indem Sie auf das **[!UICONTROL Actions]** Symbol klicken und **[!UICONTROL Unconditional]** Stopp auswählen. Durch diese Aktion wird Ihr Kampagnen-Workflow beendet.
+   Sie können Ihren Workflow stoppen, indem Sie das Symbol **[!UICONTROL Aktionen]** und danach **[!UICONTROL Unbedingter Stopp]** auswählen. Damit wird Ihr Kampagnen-Workflow sofort angehalten.
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
@@ -204,23 +204,23 @@ Die Kontrollgruppe kann aus der Hauptzielgruppe extrahiert werden und/oder aus e
 
 #### Aktivieren der Kontrollgruppe für eine Kampagne {#activating-the-control-group-for-a-campaign}
 
-Sie können eine Kontrollgruppe auf Kampagnenebene definieren. In diesem Fall wird die Kontrollgruppe auf jede Auslieferung der betreffenden Kampagne angewendet.
+Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall wird die erstellte Kontrollgruppe für alle Sendungen der betreffenden Kampagne angewandt.
 
-1. Bearbeiten Sie die betreffende Kampagne und klicken Sie auf die **[!UICONTROL Edit]** Registerkarte.
-1. Klicks **[!UICONTROL Advanced campaign settings]**.
+1. Bearbeiten Sie die betreffende Kampagne; klicken Sie dazu auf den Tab **[!UICONTROL Bearbeiten]**.
+1. Klicken Sie auf **[!UICONTROL Erweiterte Kampagnenparameter]**.
 
    ![](assets/s_ncs_user_edit_op_target.png)
 
-1. Select the **[!UICONTROL Enable and edit control group configuration]** option.
-1. Klicken Sie auf **[!UICONTROL Edit...]** , um die Kontrollgruppe zu konfigurieren.
+1. Wählen Sie die Option **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-Das Konfigurationsverfahren wird unter [Extrahieren der Kontrollgruppe vom Hauptziel](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Population](#adding-a-population)dargestellt.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer zusätzlichen Population](#adding-a-population) beschrieben.
 
-#### Aktivieren der Kontrollgruppe für eine Bereitstellung {#activating-the-control-group-for-a-delivery}
+#### Aktivieren der Kontrollgruppe für einen Versand {#activating-the-control-group-for-a-delivery}
 
-Sie können eine Kontrollgruppe auf Bereitstellungsebene definieren. In diesem Fall wird die Kontrollgruppe auf jede Auslieferung der betreffenden Kampagne angewendet.
+Sie können eine Kontrollgruppe auf Versandebene erstellen: In letzterem Fall wird die erstellte Kontrollgruppe für alle Sendungen der betreffenden Kampagne angewandt.
 
 Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt standardmäßig für jeden Versand dieser Kampagne. Sie kann jedoch für einzelne Sendungen angepasst werden.
 
@@ -228,14 +228,14 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
 >
 >Wenn Sie eine Kontrollgruppe für eine Kampagne bestimmt haben und eine andere für einen Versand dieser Kampagne konfigurieren, so wird nur die für den Versand bestimmte Kontrollgruppe angewandt.
 
-1. Bearbeiten Sie die betreffende Lieferung und klicken Sie dann auf den **[!UICONTROL To]** Link im **[!UICONTROL Email parameters]** Abschnitt.
+1. Bearbeiten Sie den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]** des Abschnitts **[!UICONTROL E-Mail-Parameter]**.
 
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
-1. Klicken Sie auf die **[!UICONTROL Control group]** Registerkarte und wählen Sie dann **[!UICONTROL Enable and edit control group configuration]**.
-1. Klicken Sie auf **[!UICONTROL Edit...]** , um die Kontrollgruppe zu konfigurieren.
+1. Klicken Sie auf den Tab **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
 
-Das Konfigurationsverfahren wird unter [Extrahieren der Kontrollgruppe vom Hauptziel](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Population](#adding-a-population)dargestellt.
+Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer zusätzlichen Population](#adding-a-population) beschrieben.
 
 #### Extraktion der Kontrollgruppe aus der Hauptzielgruppe {#extracting-the-control-group-from-the-main-target}
 
@@ -243,12 +243,12 @@ Sie haben die Möglichkeit, Empfänger der Hauptzielgruppe eines Versands zu ext
 
 ![](assets/s_ncs_user_extract_from_target_population.png)
 
-Um eine Kontrollgruppe zu extrahieren, aktivieren Sie die Kontrollgruppe für die Kampagne oder Bereitstellung und wählen Sie eine der folgenden Optionen: **[!UICONTROL Activate random sampling]** oder **[!UICONTROL Keep only the first records after sorting]**.
+Um eine Kontrollgruppe zu extrahieren, aktivieren Sie diese auf Kampagnen- oder Versandniveau und wählen Sie eine der folgenden Optionen: **[!UICONTROL Zufallsauswahl aktivieren]** oder **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**.
 
-* **[!UICONTROL Activate random sampling]** : Diese Option wendet Stichproben auf die Empfänger in der Zielgruppe an. Wenn Sie dann den Schwellenwert auf 100 festlegen, besteht die Kontrollgruppe aus 100 zufällig ausgewählten Empfängern aus der Zielgruppe. Die Stichprobenauswahl hängt von der Datenbank-Engine ab.
-* **[!UICONTROL Keep only the first records after sorting]** : Mit dieser Option können Sie eine Beschränkung festlegen, die auf einer oder mehreren Sortierreihenfolgen basiert. Wenn Sie das **[!UICONTROL Age]** Feld als Sortierkriterium auswählen und dann 100 als Schwellenwert definieren, besteht die Kontrollgruppe aus den 100 jüngsten Empfängern. So könnte es interessant sein, eine Kontrollgruppe zu definieren, die Empfänger mit wenigen Käufen oder Empfänger mit häufigen Käufen umfasst, und ihr Verhalten mit dem der kontaktierten Empfänger zu vergleichen.
+* **[!UICONTROL Zufallsauswahl aktivieren]**: Diese Option wendet eine Zufallsauswahl auf die Empfänger der Zielgruppe an. Wenn Sie anschließend einen Grenzwert von 100 festlegen, wird die Kontrollgruppe aus 100 zufällig aus der Zielgruppe ausgewählten Empfängern zusammengesetzt. Die angewandte Zufallsauswahl hängt von der Datenbank-Engine ab.
+* **[!UICONTROL Die ersten, aus einer Sortierung hervorgehenden Elemente beibehalten]**: Diese Option ermöglicht die Begrenzung der Kontrollgruppe nach einer oder mehreren Sortierreihenfolgen. Wenn Sie das Feld **[!UICONTROL Alter]** als Kriterium auswählen und anschließend einen Grenzwert von 100 angeben, wird die Kontrollgruppe aus den 100 jüngsten Empfängern zusammengesetzt. Es könnte sich zum Beispiel anbieten, eine Kontrollgruppe aus Kontakten zusammenzustellen, die besonders wenig oder besonders viele Einkäufe tätigen und diese mit dem Verhalten der kontaktierten Empfänger zu vergleichen.
 
-Click **[!UICONTROL Next]** to define the sorting order (if necessary) and select the recipient limitation mode.
+Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge festzulegen und die Empfängerbegrenzung zu bestimmen.
 
 ![](assets/s_ncs_user_edit_op_target_param.png)
 
@@ -266,21 +266,21 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. D
 
 ## Starten eines Versands {#starting-a-delivery}
 
-Sobald alle Genehmigungen erteilt wurden, kann die Bereitstellung gestartet werden. Der Liefervorgang hängt dann von der Art der Lieferung ab. Informationen zu E-Mail- oder Mobilkanalauslieferungen finden Sie unter [Starten einer Online-Auslieferung](#starting-an-online-delivery)und zu Direktversandauslieferungen finden Sie unter [Starten einer Offline-Auslieferung](#starting-an-offline-delivery).
+Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der Versandvorgang hängt dann von der Art des Versands ab. Informationen zu E-Mail- oder Mobile-Kanal-Versand finden Sie unter [Starten eines Online-Versands](#starting-an-online-delivery) und zu Briefpost-Versand unter [Starten eines Offline-Versands](#starting-an-offline-delivery).
 
 ### Starten eines Online-Versands {#starting-an-online-delivery}
 
-Sobald alle Genehmigungsanforderungen erteilt wurden, ändert sich der Lieferstatus in **[!UICONTROL Pending confirmation]** und kann von einem Operator gestartet werden. Gegebenenfalls wird der Adobe Campaign-Betreiber (oder eine Gruppe von Betreibern), der bzw. die zum Starten der Bereitstellung ernannt wurde, darüber informiert, dass die Bereitstellung gestartet werden kann.
+Wenn alle Validierungsanfragen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Zu bestätigen]** und kann von einem Benutzer gestartet werden. Gegebenenfalls wird der Adobe-Campaign-Benutzer (oder die Benutzergruppe), der für die Validierung des Versandstarts zuständig ist, über den startbereiten Versand informiert.
 
 >[!NOTE]
 >
->If a specific operator or group of operators is designated for starting a delivery in the delivery&#39;s properties, you can also allow the operator in charge of the delivery to confirm the send. To do this, activate the **NMS_ActivateOwnerConfirmation** option by entering **1** as the value. Die Optionen werden über den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Options]** im Adobe Campaign Explorer verwaltet.
+>Wenn in den Versandeigenschaften ein spezifischer Benutzer oder eine Benutzergruppe zur Validierung des Versandstarts angegeben wurden, besteht die Möglichkeit, dieses Recht auch dem versandverantwortlichen Benutzer einzuräumen. Aktivieren Sie in diesem Fall die Option **NMS_ActivateOwnerConfirmation**, indem Sie den Wert **1** angeben. Der Zugriff auf diese Option erfolgt im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** des Adobe-Campaign-Explorers.
 >  
 >Um die entsprechende Option zu deaktivieren, ist der Wert **0** anzugeben. In diesem Fall kann die Versandvalidierung nur durch die in den Versandeigenschaften angegebenen Benutzer oder Benutzergruppen bzw. einen Administrator erfolgen.
 
 ![](assets/s_ncs_user_edit_del_to_start_from_del.png)
 
-Die Informationen werden auch im Kampagnen-Dashboard angezeigt. Über den **[!UICONTROL Confirm delivery]** Link können Sie die Bereitstellung starten.
+Diese Information wird ebenfalls im Dashboard der Kampagne angezeigt. Über den Link **[!UICONTROL Versand bestätigen]** kann der Versand gestartet werden.
 
 ![](assets/s_ncs_user_edit_del_to_start.png)
 
@@ -288,17 +288,17 @@ Zur Sicherheit werden Sie in einer Pop-up-Nachricht zur Bestätigung des Vorgang
 
 ### Starten eines Offline-Versands {#starting-an-offline-delivery}
 
-Sobald alle Genehmigungen erteilt wurden, wird der Lieferstatus in **[!UICONTROL Pending extraction]** geändert. Die Extrahierungsdateien werden über einen speziellen Arbeitsablauf erstellt, der in einer Standardkonfiguration automatisch startet, wenn die Extrahierung einer Direktversand-Datei noch aussteht. Wenn ein Prozess ausgeführt wird, wird er im Dashboard angezeigt und kann über den Link bearbeitet werden.
+Wenn alle Validierungen akzeptiert wurden, erhält der Versand den Status **[!UICONTROL Extraktion ausstehend]**. Die Extraktionsdateien werden über einen spezifischen Workflow erstellt, der standardmäßig automatisch startet, wenn ein Briefversand auf Extraktion wartet. Laufende Vorgänge dieser Art werden im Dashboard angezeigt und können über den entsprechenden Link bearbeitet werden.
 
 >[!NOTE]
 >
->Die technischen Arbeitsabläufe zu Kampagnenprozessen werden in der [Liste der Kampagnenprozesse](../../workflow/using/campaign.md)dargestellt.
+>Die technischen Workflows für Kampagnenprozesse werden in der [Liste der Kampagnenprozesse](../../workflow/using/campaign.md) dargestellt.
 
 **1. Schritt - Datei validieren**
 
 Wenn der Extraktions-Workflow korrekt ausgeführt wurde, muss die Extrationsdatei validiert werden (sofern die Validierung der Extraktionsdatei in der Versandkonfiguration aktiviert wurde).
 
-Weitere Informationen finden Sie unter [Genehmigen einer Extraktionsdatei](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
+Weiterführende Informationen finden Sie unter [Extraktionsdatei validieren](../../campaign/using/marketing-campaign-approval.md#approving-an-extraction-file).
 
 **2. Schritt - Nachricht an den Dienstleister validieren**
 
@@ -311,19 +311,19 @@ Weitere Informationen finden Sie unter [Genehmigen einer Extraktionsdatei](../..
 ![](assets/s_ncs_user_file_valid_select_BAT.png)
 
 
-* Klicken Sie auf die **[!UICONTROL Send a proof]** Schaltfläche, um die Proofs zu erstellen.
+* Klicken Sie auf die Schaltfläche **[!UICONTROL Testversand]**, um Testsendungen zu erstellen.
 
    Zunächst muss die Zielgruppe der Testsendungen bestimmt werden.
 
-   Sie können so viele Proofs wie nötig erstellen. Diese werden über den **[!UICONTROL Direct mail...]** Link der Lieferdetails aufgerufen.
+   Sie können so viele Testsendungen erstellen wie nötig. Auf die durchgeführten Testsendungen besteht Zugriff über den Link **[!UICONTROL Briefpost...]** in den Versanddetails.
 
    ![](assets/s_ncs_user_file_notif_submit_proof.png)
 
-* Der Bereitstellungsstatus ändert sich in **[!UICONTROL To submit]**. Klicken Sie auf die **[!UICONTROL Submit proofs]** Schaltfläche, um den Genehmigungsprozess zu starten.
+* Der Versand erhält nun den Status **[!UICONTROL Zu unterbreiten]**. Klicken Sie auf die Schaltfläche **[!UICONTROL Testsendungen unterbreiten]** um den Validierungsprozess zu starten.
 
    ![](assets/s_ncs_user_file_notif_submit_proof_validation.png)
 
-* The delivery status changes to **[!UICONTROL Proof to validate]** and a button lets you accept or reject approval.
+* Der Versandstatus wird daraufhin zu **[!UICONTROL Testversand zu validieren]**. Über die entsprechende Schaltfläche kann die Validierung erfolgen.
 
    ![](assets/s_ncs_user_file_notif_supplier_link.png)
 
@@ -337,42 +337,42 @@ Weitere Informationen finden Sie unter [Genehmigen einer Extraktionsdatei](../..
 
 Die Dateiextraktion startet zwei Vorgänge: die Berechnung der Budgets und die Berechnung der Lagerbestände. Die Budgetzeilen werden aktualisiert.
 
-* Auf der **[!UICONTROL Budget]** Registerkarte können Sie die Budgets für die Kampagne verwalten. Die Gesamtsumme der Kosteneinträge wird im **[!UICONTROL Calculates cost]** Feld der Hauptregisterkarte der Kampagne und des Programms angezeigt, zu dem sie gehört. Die Beträge werden auch im Kampagnenbudget angezeigt.
+* Im Kampagnentab **[!UICONTROL Budget]** findet die Budgetverwaltung statt. Die Summe der Kostenzeilen wird im Feld **[!UICONTROL Berechnete Kosten]** des Haupttabs der Kampagne und des übergeordneten Programms angezeigt. Die Beträge werden auch im Budget der Kampagne übernommen.
 
    Die tatsächlichen Kosten werden am Ende entsprechend der vom Router kommunizierten Informationen berechnet: Nur die tatsächlich versendeten Briefe werden fakturiert.
 
-* Die Bestände werden im **[!UICONTROL Administration > Campaign management > Stocks]** Knoten des Baums definiert und die Kostenstrukturen im **[!UICONTROL Administration > Campaign management > Service providers]** Knoten.
+* Die Lagerbestände werden im Knoten **[!UICONTROL Administration > Kampagnen > Lager]** und die Kostenstrukturen im Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]** des Navigationsbaums bestimmt.
 
    Lagerpositionen können auf Ebene der Lager angezeigt werden. Öffnen Sie eine Lagerposition, um den Anfangsbestand festzulegen. Der Bestand wird mit jedem Versand dekrementiert. Sie haben die Möglichkeit, einen Meldebestand mit Benachrichtigungen zu konfigurieren.
 
 >[!NOTE]
 >
->Weitere Informationen zu Kostenberechnungen und Bestandsverwaltung finden Sie unter [Anbieter, Bestände und Budgets](../../campaign/using/providers--stocks-and-budgets.md).
+>Weiterführende Informationen zu Kostenberechnungen und Lagerverwaltung finden Sie unter [Dienstleister, Lager und Budgets](../../campaign/using/providers--stocks-and-budgets.md).
 
 ## Zugeordnete Dokumente verwalten {#managing-associated-documents}
 
-Sie können verschiedene Dokumente mit einer Kampagne verknüpfen: Bericht, Foto, Webseite, Diagramm usw. Diese Dokumente können in jedem Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.). Informationen zum Verknüpfen von Dokumenten mit einer Kampagne finden Sie unter [Hinzufügen von Dokumenten](#adding-documents).
+Sie können einer Kampagne unterschiedliche Dokumente zuordnen: Berichte, Fotos, Web-Seiten, Schemata etc. Die Dokumente können beliebigen Formats sein (Microsoft Word, PowerPoint, PNG, JPEG, Acrobat PDF etc.). Informationen zum Verknüpfen von Dokumenten mit einer Kampagne finden Sie unter [Hinzufügen von Dokumenten](#adding-documents).
 
 >[!IMPORTANT]
 >
 >Diese Funktionalität eignet sich nur für kleine Dokumente.
 
-In einer Kampagne können Sie auch auf andere Elemente verweisen, wie z.B. Promo-Gutscheine, Sonderangebote für eine bestimmte Branche oder einen bestimmten Store usw. Wenn diese Elemente in einer Umrisslinie enthalten sind, können sie mit einer Direktversand in Verbindung gebracht werden. See [Associating and structuring resources linked via a delivery outline](#associating-and-structuring-resources-linked-via-a-delivery-outline).
+Sie haben auch die Möglichkeit, externe Elemente in Kampagnen zu referenzieren, wie zum Beispiel Gutscheine, zweig- oder verkaufsstellenspezifische Angebote etc. Diese können in einem Versandentwurf zusammengefasst und einem Briefpost-Versand zugeordnet werden. Lesen Sie diesbezüglich [Ressourcen in einem Versandentwurf verknüpfen](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
->Wenn Sie MRM verwenden, können Sie auch eine Bibliothek mit Marketingressourcen verwalten, die mehreren Teilnehmern für die gemeinsame Arbeit zur Verfügung stehen. Siehe [Verwalten von Marketingressourcen](../../campaign/using/managing-marketing-resources.md).
+>MRM ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer partizipativ arbeiten können. Lesen Sie diesbezüglich [Verwalten von Marketing-Ressourcen](../../campaign/using/managing-marketing-resources.md).
 
 ### Hinzufügen von Dokumenten {#adding-documents}
 
 Dokumente können einer Kampagne (kontextrelevante Dokumente) oder einem Programm (allgemeine Dokumente) zugeordnet werden.
 
-Die **[!UICONTROL Documents]** Registerkarte enthält:
+Der Tab **[!UICONTROL Dokumente]** enthält:
 
 * die Liste aller für den Inhalt notwendigen Dokumente (Vorlagen, Bilder usw.), die von berechtigten Adobe-Campaign-Benutzern lokal heruntergeladen werden können;
 * Informationen für den Router enthaltende Dokumente, wenn vorhanden.
 
-The documents are linked to the program or the campaign via the **[!UICONTROL Edit > Documents]** tab.
+Die Dokumente werden über den Tab **[!UICONTROL Bearbeiten > Dokumente]** einem Programm oder einer Kampagne zugeordnet.
 
 ![](assets/s_ncs_user_op_add_document.png)
 
@@ -384,7 +384,7 @@ Klicken Sie auf das Symbol **[!UICONTROL Details]**, um den Inhalt einer Datei a
 
 ![](assets/s_ncs_user_op_add_document_details.png)
 
-In the dashboard, documents associated with the campaign are grouped in the **[!UICONTROL Document(s)]** section, as in the following example:
+Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle der Kampagne zugeordneten Dokumente aufgelistet, wie im folgenden Beispiel:
 
 ![](assets/s_ncs_user_op_edit_document.png)
 
@@ -394,7 +394,7 @@ In the dashboard, documents associated with the campaign are grouped in the **[!
 
 >[!NOTE]
 >
->Lieferumrisse werden ausschließlich im Rahmen von Direktpostkampagnen verwendet.
+>Versandentwürfe werden ausschließlich im Rahmen von Briefversand-Kampagnen verwendet.
 
 Ein Versandentwurf stellt eine strukturierte Einheit von Elementen dar (Dokumente, Gutscheine etc.), die für eine bestimmte Kampagne erstellt wurden.
 
@@ -404,41 +404,41 @@ Versandentwürfe ermöglichen es, in Kampagnen externe Elemente zu strukturieren
 
 #### Versandentwurf erstellen {#creating-an-outline}
 
-To create an outline, click the **[!UICONTROL Delivery outlines]** sub-tab in the **[!UICONTROL Edit > Documents]** tab of the concerned campaign.
+Um einen Versandentwurf zu erstellen, klicken Sie auf den Untertab **[!UICONTROL Versandentwürfe]** im Tab **[!UICONTROL Bearbeiten > Dokumente]** der betreffenden Kampagne.
 
 >[!NOTE]
 >
 >Sollte dieser Tab nicht vorhanden sein, ist die Funktionalität für diese Kampagne nicht verfügbar. Überprüfen Sie in diesem Fall die Konfiguration der Kampagnenvorlage.
 >   
->For more on this, refer to [Campaign templates](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
-Klicken Sie anschließend auf **[!UICONTROL Add a delivery outline]** und erstellen Sie die Hierarchie der Umrisse für die Kampagne:
+Klicken Sie anschließend auf **[!UICONTROL Versandentwurf hinzufügen]**. Es wird ein Navigationsbaum für die Kampagne erstellt:
 
-1. Klicken Sie mit der rechten Maustaste auf die Stamm-Node und wählen Sie **[!UICONTROL New > Delivery outlines]**.
-1. Klicken Sie mit der rechten Maustaste auf die gerade erstellte Umrisslinie und wählen Sie **[!UICONTROL New > Item]** oder **[!UICONTROL New > Personalization fields]**.
+1. Machen Sie einen Rechtsklick auf den Wurzelknoten und wählen Sie **[!UICONTROL Neu > Versandentwürfe]** aus, um einen neuen Versandentwurf hinzuzufügen.
+1. Machen Sie einen Rechtsklick auf den soeben erstellten Versandentwurf und wählen Sie beispielsweise **[!UICONTROL Neu > Artikel]** oder **[!UICONTROL Neu > Personalisierungsfelder]** aus.
 
 ![](assets/s_ncs_user_op_add_composition.png)
 
 Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebote enthalten:
 
 * Artikel sind beispielsweise physische Dokumente, die an dieser Stelle referenziert und beschrieben und schließlich dem Versand angehängt werden.
-* Mit Personalisierungsfeldern können Sie Personalisierungselemente erstellen, die sich auf Lieferungen und nicht auf Empfänger beziehen. Es ist somit möglich, Werte zu erstellen, die in Lieferungen für ein bestimmtes Ziel (Willkommensangebot, Rabatt usw.) verwendet werden. Sie werden in Adobe Campaign erstellt und über den **[!UICONTROL Import personalization fields...]** Link in die Gliederung importiert.
+* Personalisierungsfelder ermöglichen die Erstellung von mit Sendungen (und nicht Empfängern) verbundenen Personalisierungselementen. So können Werte erstellt werden, die in Sendungen mit einer spezifischen Zielgruppe verwendet werden (z. B. Willkommensangebot, prozentuale Ermäßigung). Sie werden in Adobe Campaign erstellt und über den Link **[!UICONTROL Personalisierungsfelder importieren...]** in den jeweiligen Entwurf importiert.
 
    ![](assets/s_ncs_user_op_add_composition_field.png)
 
-   They can also be created directly in the outline by clicking the **[!UICONTROL Add]** icon to the right of the list zone.
+   Über das Symbol **[!UICONTROL Hinzufügen]** rechts vom Bereich der Liste können dem Entwurf auch direkt Personalisierungselemente hinzugefügt werden.
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* The resources are marketing resources generated in the marketing resource dashboard accessed via the **[!UICONTROL Resources]** link of the **[!UICONTROL Campaigns]** universe.
+* Ressourcen sind Marketing-Ressourcen, auf die Sie über die Startseite durch Klick auf die Schaltfläche **[!UICONTROL Ressourcen]** in der Rubrik **[!UICONTROL Kampagnen]** zugreifen können.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
    >[!NOTE]
    >
-   >Weitere Informationen zu Marketingressourcen finden Sie unter [Verwalten von Marketingressourcen](../../campaign/using/managing-marketing-resources.md).
+   >Weiterführende Informationen zu Marketing-Ressourcen finden Sie unter [Verwalten von Marketing-Ressourcen](../../campaign/using/managing-marketing-resources.md).
 
 #### Einen Versandentwurf auswählen {#selecting-an-outline}
 
@@ -450,7 +450,7 @@ Der ausgewählte Entwurf wird daraufhin im unteren Abschnitt des Fenster angezei
 
 ![](assets/s_ncs_user_op_select_composition_b.png)
 
-The **[!UICONTROL Summary]** tab of the delivery also displays this information:
+Diese Information wird ebenfalls im Tab **[!UICONTROL Zusammenfassung]** des Versands angezeigt:
 
 ![](assets/s_ncs_user_op_select_composition_c.png)
 
@@ -462,7 +462,7 @@ Im folgenden Beispiel werden der Titel, die Plankosten sowie die Beschreibung de
 
 ![](assets/s_ncs_user_op_composition_in_export_template.png)
 
-Das Exportmodell muss mit dem für die Lieferung ausgewählten Dienstleister verknüpft sein. See [Creating service providers and their cost structures](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versand zugeordnet sein. Lesen Sie diesbezüglich den Abschnitt [Erstellung von Dienstleistern und deren Kostenstrukturen](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
 >[!NOTE]
 >
