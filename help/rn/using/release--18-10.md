@@ -14,7 +14,7 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.6 - Build 8985{#release-18-10-6-build-8985}
 
-\12. Juli 2019
+12. Juli 2019
 
 **Neuheiten**
 
@@ -36,7 +36,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.5 - Build 8984{#release-18-10-5-build-8984}
 
-\23. April 2019
+23. April 2019
 
 **Neuheiten**
 
@@ -46,7 +46,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.4 - Build 8983{#release-18-10-4-build-8983}
 
-\15. April 2019
+15. April 2019
 
 **Neuheiten**
 
@@ -59,11 +59,11 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.3 - Build 8981{#release-18-10-3-build-8981}
 
-\29. Januar 2019
+29. Januar 2019
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
 
 **Neuheiten**
 
@@ -83,11 +83,11 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 
 ## Version 18.10.2 - Build 8978{#release-18-10-2-build-8978}
 
-\6. Dezember 2018
+6. Dezember 2018
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
 
 **Neuheiten**
 
@@ -103,13 +103,13 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 * Fehlerkorrektur – Die Workflow-Dauer in Workflow-Heatmap wird jetzt korrekt berechnet.
 
 
-## Version 18.10 - Build 8977{#release-18-10-build-8977}
+## Version 18.10 – Build 8977{#release-18-10-build-8977}
 
-\5 Nov. 2018
+5. November 2018
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
 
 **Neue Funktionen?**
 
@@ -128,7 +128,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
      <li> <p>Tracken stiller Benachrichtigungen unter iOS </p> </li> 
      <li> <p>Implementieren von Feedback zu Registrierungsaufrufen unter iOS</p> </li> 
      <li> <p>Beschleunigte iOS-Versandvorbereitung</p> </li> 
-    </ul> <p>Aufgrund der Beendigung von GCM durch Google ermöglicht der Android-V2-Connector jetzt nur Verbindungen zum FCM-Server.</p><p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">ausführlichen Dokumentation</a>. Das manuelle Upgrade auf FCM wird in diesem <a href="https://helpx.adobe.com/campaign/kb/migrate-to-fcm.html">Artikel</a> beschrieben. </p> </td> 
+    </ul> <p>Aufgrund der Beendigung von GCM durch Google ermöglicht der Android-V2-Connector jetzt nur Verbindungen zum FCM-Server.</p><p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md">ausführlichen Dokumentation</a>. Das manuelle Upgrade auf FCM wird in diesem <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-fcm.html">Artikel</a> beschrieben. </p> </td> 
   </tr> 
   <tr> 
    <td> SQL-Data-Management-Aktivität<br /> </td> 
@@ -136,7 +136,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
   </tr> 
   <tr> 
    <td> Workflow-Monitoring<br /> </td> 
-   <td> <p>Mit der neuen Workflow-HeatMap von Adobe Campaign haben Plattformadministratoren die Möglichkeit, alle gleichzeitig ausgeführten Workflows rasch grafisch darzustellen, um so die Auslastung der Instanz zu überwachen und Workflows entsprechend zu planen.</p> <p>Weitere Informationen finden Sie im <a href="../../workflow/using/heatmap.md">entsprechenden Handbuch</a>.</p> <p>Das Workflow-HeatMap-Package ist auch auf Anfrage für Builds vor 8977 erhältlich (ab Build 8700). Weiterführende Informationen zur Anfrage und Installation finden Sie auf <a href="https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html">dieser Seite</a>.</p> </td> 
+   <td> <p>Mit der neuen Workflow-HeatMap von Adobe Campaign haben Plattformadministratoren die Möglichkeit, alle gleichzeitig ausgeführten Workflows rasch grafisch darzustellen, um so die Auslastung der Instanz zu überwachen und Workflows entsprechend zu planen.</p> <p>Weitere Informationen finden Sie im <a href="../../workflow/using/heatmap.md">entsprechenden Handbuch</a>.</p> <p>Das Workflow-HeatMap-Package ist auch auf Anfrage für Builds vor 8977 erhältlich (ab Build 8700). Weiterführende Informationen zur Anfrage und Installation finden Sie auf <a href="https://helpx.adobe.com/de/campaign/kb/install-workflow-heatmap-package.html">dieser Seite</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -152,7 +152,7 @@ source-git-commit: a8c4face331ab6d646480322c0f53a7147251aa6
 **Neuheiten**
 
 * Campaign-Classic-APIs sind jetzt auf einer [eigenen Seite](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt die neue Online-Version nutzen.
-* PostgreSQL 10, Debian 9 und Teradata 16.20 werden jetzt unterstützt. Weiterführende Informationen dazu finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+* PostgreSQL 10, Debian 9 und Teradata 16.20 werden jetzt unterstützt. Weiterführende Informationen dazu finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
 * Bei der Erstellung einer SFTP-Verbindung kann jetzt Proxy-Authentifizierung verwendet werden. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration). (NEO-9868)
 * Bei der Erstellung eines einzelnen Versands unter Verwendung der Briefpost-Versandvorlage ist jetzt in den Versandeigenschaften eine Option mit einer **Datumsberechnungsformel** verfügbar. (NEO-9792)
 * Die Domain-Namensverwaltung wurde für Cookie-Tracking und Webanwendungen verbessert. Weiterführende Informationen dazu finden Sie im Abschnitt &quot;Technische Entwicklungen&quot; weiter unten.
