@@ -14,7 +14,7 @@ discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: bc227c2da2e8b1a78714748809ad40bbcefe0458
 
 # Ereignisbeschreibung{#event-description}
 
-## Datenmodell für Transaktionsnachrichten {#about-transactional-messaging-datamodel}
+## Über das Datenmodell für Transaktionsnachrichten {#about-transactional-messaging-datamodel}
 
-Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche separate Tabellen. Diese [Tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** und **NmsBatchEvent**, enthalten dieselben Felder und ermöglichen Ihnen die Verwaltung von Echtzeit-Ereignissen einerseits und Batch-Ereignissen andererseits.
+Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche separate Tabellen. Die [Tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** und **NmsBatchEvent** enthalten dieselben Felder und ermöglichen Ihnen die Verwaltung von Echtzeit-Ereignissen einerseits und Batch-Ereignissen andererseits.
 
 ## SOAP-Methoden {#soap-methods}
 
@@ -40,7 +40,7 @@ Die WSDL-Zugriffspfade der zwei Methoden lauten:
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:rtEvent**, um auf das Echtzeit-Schema zuzugreifen;
 * **http://hostname/nl/jsp/schemawsdl.jsp?schema=nms:batchEvent**, um auf das Batch-Schema zuzugreifen.
 
-Beide Methoden enthalten ein **`<urn:sessiontoken>`** Element zum Anmelden beim Transaktionsmessungs-Modul. Es wird empfohlen, eine Identifizierungsmethode über vertrauenswürdige IP-Adressen zu verwenden. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Anmeldeaufruf und dann ein get-Token gefolgt von einem logoff durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Methode des Sitzungstokens, die empfohlen wird.
+Beide Methoden enthalten ein **`<urn:sessiontoken>`**-Element zum Anmelden beim Modul für den Transaktionsnachrichtenversand. Wir empfehlen die Verwendung einer Authentifizierungsmethode über vertrauenswürdige IP-Adressen. Um das Sitzungstoken abzurufen, führen Sie einen SOAP-Aufruf zur Anmeldung und dann ein GET-Token gefolgt von einer Abmeldung durch. Verwenden Sie dasselbe Token für mehrere RT-Aufrufe. Die in diesem Abschnitt enthaltenen Beispiele verwenden die Sitzungstoken-Methode, wobei es sich um das empfohlene Verfahren handelt.
 
 Wenn Sie einen Lastverteilungsserver verwenden, können Sie die Benutzer-/Passwort-Authentifizierung (auf der Ebene der Echtzeitnachricht) verwenden. Beispiel:
 
@@ -56,9 +56,9 @@ Wenn Sie einen Lastverteilungsserver verwenden, können Sie die Benutzer-/Passwo
 </PushEvent>
 ```
 
-The **PushEvent** method is made up of a **`<urn:domevent>`** parameter which contains the event.
+Die Methode **PushEvent** besteht aus einem **`<urn:domevent>`**-Parameter, der das Ereignis enthält.
 
-The **PushEvents** method is made up of a **`<urn:domeventcollection>`** parameter which contains events.
+Die Methode **PushEvents** besteht aus einem **`<urn:domeventcollection>`**-Parameter, der die Ereigniskollektion enthält.
 
 Beispiel der Methode PushEvent:
 
@@ -82,7 +82,7 @@ Beispiel der Methode PushEvent:
 
 >[!NOTE]
 >
->Im Falle eines Aufrufs der **PushEvents** -Methode müssen wir ein übergeordnetes XML-Element hinzufügen, um die standardmäßige XML zu erfüllen. Dieses XML-Element bildet den Rahmen für die verschiedenen im Ereignis enthaltenen **`<rtevent>`** Elemente.
+>Bei Aufruf der **PushEvents**-Methode müssen wir ein übergeordnetes XML-Element hinzufügen, um die standardmäßige XML zu erfüllen. Dieses XML-Element bildet den Rahmen für die verschiedenen im Ereignis enthaltenen **`<rtevent>`**-Elemente.
 
 Beispiel der Methode PushEvents:
 
@@ -108,13 +108,13 @@ Beispiel der Methode PushEvents:
 </urn:PushEvents>
 ```
 
-The **`<rtevent>`** and **`<batchevent>`** elements have a set of attributes as well as a mandatory child element: **`<ctx>`** for integrating message data.
+Die **`<rtevent>`**- und **`<batchevent>`**-Elemente besitzen einen Satz an Attributen sowie ein unbedingt erforderliches Kindelement **`<ctx>`**, welches die Integration der Nachrichtendaten ermöglicht.
 
 >[!NOTE]
 >
->Mit dem **`<batchevent>`** Element können Sie das Ereignis zur Stapelwarteschlange hinzufügen. Das Ereignis **`<rtevent>`** wird der Warteschlange &quot;Echtzeit&quot;hinzugefügt.
+>Mit dem **`<batchevent>`**-Element können Sie das Ereignis der „Batch“-Warteschlange hinzufügen. Das Ereignis **`<rtevent>`** wird der Warteschlange „Echtzeit“ hinzugefügt.
 
-Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`** Elemente sind &quot;@type&quot;und &quot;@email&quot;. Der Wert von &quot;@type&quot;muss mit dem Wert für &quot;itemized&quot;übereinstimmen, der beim Konfigurieren der Ausführungsinstanz definiert wurde. Mit diesem Wert können Sie die Vorlage definieren, die während des Versands mit dem Inhalt des Ereignisses verknüpft werden soll.
+Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`** lauten „@type“ und „@email“. Der Wert von „@type“ muss mit dem bei der Konfiguration der Ausführungsinstanz definierten Auflistungswert übereinstimmen. Mit diesem Wert können Sie die Vorlage definieren, die beim Versand mit dem Inhalt des Ereignisses verknüpft werden soll.
 
 `<rtevent> configuration example:`
 
@@ -124,7 +124,7 @@ Die obligatorischen Attribute der Elemente **`<rtevent>`** und **`<batchevent>`*
 
 In diesem Beispiel sind mit der E-Mail-Adresse und der Mobiltelefonnummer zwei Kanäle angegeben. Das Feld **wishedChannel** ermöglicht die Bestimmung des Kanals, der bei der Reaktion auf ein Ereignis verwendet werden soll. Der Wert &quot;0&quot; entspricht dem E-Mail-Kanal, der Wert &quot;1&quot; dem Mobile-Kanal usw.
 
-Wenn Sie einen Ereignis-Versand verschieben möchten, fügen Sie das Feld mit dem **[!UICONTROL scheduled]** gewünschten Datum hinzu. Das Ereignis wird zu diesem Zeitpunkt in eine Meldung umgewandelt.
+Wenn Sie die Verarbeitung eines Ereignisses terminieren möchten, fügen Sie das Feld **[!UICONTROL scheduled]** hinzu, gefolgt vom gewünschten Datum. Erst zum angegebenen Zeitpunkt wird auf das Ereignis reagiert.
 
 Es wird empfohlen, die Attribute @wishedChannel und @emailFormat in Form von numerischen Werten anzugeben. Die Mapping-Tabelle der numerischen Werte und der ihnen zugeordnete Titel finden sich in der Beschreibung der Datenschemata.
 
@@ -132,7 +132,7 @@ Es wird empfohlen, die Attribute @wishedChannel und @emailFormat in Form von num
 >
 >Zulässige Attribute und ihre Werte werden in den Schemabeschreibungen von **nms:rtEvent** und **nms:BatchEvent** aufgeführt.
 
-Das **`<ctx>`** Element enthält die Nachrichtendaten. Der XML-Inhalt ist offen, d. h. er kann je nach bereitzustellendem Inhalt konfiguriert werden.
+Das **`<ctx>`**-Element enthält die Nachrichtendaten. Der XML-Inhalt ist offen, d. h. er kann je nach zu sendendem Inhalt konfiguriert werden.
 
 >[!NOTE]
 >
