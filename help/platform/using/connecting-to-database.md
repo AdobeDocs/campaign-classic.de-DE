@@ -14,7 +14,7 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb081f893b7da13cda5892409b063b8781e93b2a
 
 ---
@@ -26,7 +26,7 @@ Um eine Verbindung mit der externe Datenbank zu ermöglichen, müssen Sie die Ve
 
 >[!CAUTION]
 >
->Der Adobe Campaign-Benutzer benötigt spezifische Rechte für die externe Datenbank und den Adobe Campaign-Anwendungsserver, um Daten aus einer externen Datenbank zu verarbeiten. Weitere Informationen finden Sie im Abschnitt [Zugriffsrechte](../../platform/using/remote-database-access-rights.md) für Remote-Datenbanken.
+>Der Adobe Campaign-Benutzer benötigt spezifische Berechtigungen für die externe Datenbank und den Adobe Campaign-Anwendungs-Server, um Daten aus einer externen Datenbank verarbeiten zu können. Weiterführende Informationen finden Sie im Abschnitt [Zugriffsberechtigungen auf Remote-Datenbank](../../platform/using/remote-database-access-rights.md).
 >
 >Um Fehlfunktionen zu verhindern, müssen Benutzer, die auf geteilte Remote-Daten zugreifen, von getrennten Arbeitsplätzen aus arbeiten.
 
@@ -34,26 +34,26 @@ Um eine Verbindung mit der externe Datenbank zu ermöglichen, müssen Sie die Ve
 
 Sie können auf eine gemeinsam genutzte externe Datenbank über Adobe Campaign zugreifen, vorausgesetzt die Verbindung ist aktiv.
 
-1. Die Konfiguration muss vorher über den **[!UICONTROL Administration > Platform > External accounts]** Knoten definiert werden.
-1. Klicken Sie auf die **[!UICONTROL New]** Schaltfläche und wählen Sie den **[!UICONTROL External database]** Typ aus.
-1. Define the **[!UICONTROL Connection]** parameters of the external database.
+1. Die Konfiguration muss zuvor über den Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** durchgeführt werden.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]** und wählen Sie als Typ **[!UICONTROL Externe Datenbank]** aus.
+1. Definieren Sie die Parameter **[!UICONTROL Verbindung]** für die externe Datenbank.
 
-   Bei Verbindungen zu einer **ODBC**-Datenbank muss das Feld **[!UICONTROL Server]** den Namen der ODBC-Datenquelle und nicht den Servernamen enthalten. Darüber hinaus können je nach verwendeter Datenbank zusätzliche Konfigurationen erforderlich sein. Siehe Abschnitt [Spezifische Konfigurationen nach Datenbanktyp](../../platform/using/specific-configuration-database.md) .
+   Bei Verbindungen zu einer **ODBC**-Datenbank muss das Feld **[!UICONTROL Server]** den Namen der ODBC-Datenquelle und nicht den Server-Namen enthalten. Abhängig von den verwendeten Datenbanken sind möglicherweise zusätzliche Konfigurationen erforderlich. Siehe Abschnitt [Spezifische Konfigurationen nach Datenbanktyp](../../platform/using/specific-configuration-database.md).
 
-1. Once the parameters are entered, click the **[!UICONTROL Test the connection]** button to approve them.
+1. Klicken Sie nach der Eingabe der Parameter zur Bestätigung auf die Schaltfläche **[!UICONTROL Verbindung testen]**.
 
    ![](assets/wf-external-account-create.png)
 
-1. If necessary, uncheck the **[!UICONTROL Enabled]** option to disable access to this database without deleting its configuration.
-1. Damit Adobe Campaign auf diese Datenbank zugreifen kann, müssen Sie die SQL-Funktionen bereitstellen. Klicken Sie auf die **[!UICONTROL Parameters]** Registerkarte und dann auf die **[!UICONTROL Deploy functions]** Schaltfläche.
+1. Deselektieren Sie nötigenfalls die Option **[!UICONTROL Aktiviert]**, um den Zugriff auf diese Datenbank zu deaktivieren, ohne ihre Konfiguration zu löschen.
+1. Um Adobe Campaign Zugriff auf diese Datenbank zu erlauben, müssen Sie die SQL-Funktionen bereitstellen. Klicken Sie dazu auf den Tab **[!UICONTROL Parameter]** und danach auf die Schaltfläche **[!UICONTROL Funktionen freigeben]**.
 
    ![](assets/wf-external-account-functions.png)
 
-You can define specific work tablespaces for the tables and for the index in the **[!UICONTROL Parameters]** tab.
+Im Tab **[!UICONTROL Parameter]** können Sie spezifische Arbeits-Tablespaces für die Tabellen und den Index definieren.
 
 ## Herstellen einer temporären Verbindung {#creating-a-temporary-connection}
 
-Sie können eine Verbindung zu einer externen Datenbank direkt aus den Workflow-Aktivitäten definieren. In diesem Fall befindet es sich in einer lokalen externen Datenbank, die für die Verwendung in einem aktuellen Workflow reserviert ist: sie wird nicht in den externen Konten gespeichert. Diese Art der pünktlichen Verbindung kann für verschiedene Aktivitäten des Workflows erstellt werden, insbesondere für die **[!UICONTROL Query]**, die **[!UICONTROL Data loading (RDBMS)]** Aktivität, die **[!UICONTROL Enrichment]** Aktivität oder die **[!UICONTROL Split]** Aktivität.
+Sie können eine Verbindung zu einer externen Datenbank direkt über Workflow-Aktivitäten definieren. In diesem Fall wird die Verbindung in einer lokalen externen Datenbank gespeichert und kann nur innerhalb des aktuellen Workflows verwendet werden. Sie wird nicht in den externen Konten gespeichert. Diese Art von punktueller Verbindung kann für verschiedene Aktivitäten im Workflow erstellt werden, insbesondere für die Aktivitäten **[!UICONTROL Abfrage]**, **[!UICONTROL Laden (DBMS)]**, **[!UICONTROL Anreicherung]** oder **[!UICONTROL Split]**.
 
 >[!CAUTION]
 >
@@ -61,8 +61,8 @@ Sie können eine Verbindung zu einer externen Datenbank direkt aus den Workflow-
 
 Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung zu einer externen Datenbank beispielsweise folgendermaßen vor:
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Add data...]** und wählen Sie die **[!UICONTROL External data]** Optionen aus.
-1. Select the **[!UICONTROL Locally defining the data source]** option.
+1. Klicken Sie auf **[!UICONTROL Daten hinzufügen...]** und wählen Sie die Option **[!UICONTROL Externe Daten]** aus.
+1. Wählen Sie die Option **[!UICONTROL Datenquelle lokal definieren]**.
 
    ![](assets/wf_add_data_local_external_data.png)
 
@@ -72,7 +72,7 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
    ![](assets/wf_add_data_local_external_data_param.png)
 
-   Click the **[!UICONTROL Next]** button.
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Weiter]**.
 
 1. Wählen Sie die Tabelle aus, in der die Daten gespeichert sind.
 
@@ -80,22 +80,22 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Klicken Sie auf die **[!UICONTROL Add]** Schaltfläche, um ein oder mehrere Abgleichungsfelder zwischen den externen Datenbankdaten und den Daten in der Adobe Campaign-Datenbank zu definieren. Die **[!UICONTROL Edit expression]** Symbole der **[!UICONTROL Remote field]** und **[!UICONTROL Local field]** gibt Ihnen Zugriff auf die Liste der Felder der einzelnen Tabellen.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um ein oder mehrere Abstimmungsfelder zwischen den Daten der externen Datenbank und den Daten in der Adobe-Campaign-Datenbank zu definieren. Über die Symbole **[!UICONTROL Ausdruck bearbeiten]** der Option **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** erhalten Sie Zugriff auf die Liste mit den Feldern einer jeden Tabelle.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
 1. Spezifizieren Sie nötigenfalls eine Filterbedingung und den Datensortierungsmodus.
-1. Select the additional data to be collected in the external database. To do this, double click on the fields(s) that you want to add to display them in the **[!UICONTROL Output columns]**.
+1. Wählen Sie zusätzlich in der externen Datenbank zu sammelnden Daten aus. Doppelklicken Sie dazu auf die Felder, die Sie hinzufügen möchten, damit sie in den **[!UICONTROL Ausgabespalten]** angezeigt werden.
 
    ![](assets/wf_add_data_local_external_data_select.png)
 
-   Click **[!UICONTROL Finish]** to confirm this configuration.
+   Klicken Sie zur Bestätigung der Konfiguration auf **[!UICONTROL Beenden]**.
 
 ## Sichere Verbindung {#secure-connection}
 
 >[!NOTE]
 >
->Eine sichere Verbindung ist nur für PostgreSQL verfügbar.
+>Eine sichere Verbindung ist nur bei PostgreSQL verfügbar.
 
 Sie können durch das Konfigurieren eines externen FDA-Kontos eine sichere Verbindung für den Zugriff auf eine externe Datenbank herstellen.
 
