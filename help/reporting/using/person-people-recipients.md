@@ -14,7 +14,7 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 ---
@@ -24,24 +24,24 @@ source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
 
 In diesem Beispiel wird der Unterschied zwischen Personen und Empfängern in Adobe Campaign erläutert. Zu diesem Zweck werden wir einen Versand an mehrere Personen durchführen. Zusätzlich wird die Berechnungsmethode für die folgenden Indikatoren erklärt:
 
-* **[!UICONTROL Clicks]**
-* **[!UICONTROL Distinct clicks for the population reached]**
-* **[!UICONTROL Distinct opens for the population reached]**
-* **[!UICONTROL Estimation of forwards]**
-* **[!UICONTROL Raw reactivity]**
+* **[!UICONTROL Klicks]**
+* **[!UICONTROL Unique Clicks der erreichten Population]**
+* **[!UICONTROL Unique Opens der erreichten Population]**
+* **[!UICONTROL Schätzung der Weiterleitungen]**
+* **[!UICONTROL Brutto-Reaktionsrate]**
 
 >[!NOTE]
 >
->Diese Indikatoren werden im **[!UICONTROL Tracking indicators]** Bericht verwendet. For more on this, refer to [Tracking indicators](../../reporting/using/delivery-reports.md#tracking-indicators).
+>Diese Indikatoren werden im Bericht **[!UICONTROL Trackingindikatoren]** verwendet. Weitere Informationen hierzu finden Sie unter [Trackingindikatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 Einem Versand werden drei Links hinzugefügt. Er wird an vier Empfänger gesendet.
 
 ![](assets/s_ncs_user_indicators_example_1.png)
 
 * **[!UICONTROL John Davis]** öffnet die E-Mail nicht und klickt demzufolge auf keinen der Links.
-* **[!UICONTROL Marie Stuart]** : öffnet die E-Mail, klickt jedoch auf keinen der Links.
-* **[!UICONTROL Florian David]** : öffnet die E-Mail und klickt neunmal auf die Links. Er leitet die E-Mail auch an jemanden weiter, der sie öffnet und zweimal klickt.
-* **[!UICONTROL Henry Macdonald]** : dieser Empfänger hat seinen Internetbrowser so konfiguriert, dass er Cookies ablehnt. Er öffnet die E-Mail und klickt 4 mal auf die Links.
+* **[!UICONTROL Marie Stuart]** öffnet die E-Mail, klickt jedoch auf keinen der Links.
+* **[!UICONTROL Florian David]** öffnet die E-Mail und klickt neunmal auf die Links. Er leitet die E-Mail darüber hinaus an eine Person weiter, welche sie öffnet und zweimal klickt.
+* **[!UICONTROL Henry Macdonald]** öffnet die E-Mail und klickt viermal auf die Links. Sein Browser akzeptiert keine Cookies.
 
 Folgende Trackinglogs werden ausgegeben:
 
@@ -86,7 +86,7 @@ Die Öffnung wird einem Empfänger zugeordnet (Marie). Adobe Campaign zählt als
 
 ## 3. Schritt: Florian {#step-3--florian}
 
-**[!UICONTROL Florian David]** öffnet die E-Mail und klickt neunmal auf die Links. Er leitet die E-Mail auch an jemanden weiter, der sie öffnet und zweimal klickt.
+**[!UICONTROL Florian David]** öffnet die E-Mail und klickt neunmal auf die Links. Er leitet die E-Mail darüber hinaus an eine Person weiter, welche sie öffnet und zweimal klickt.
 
 ![](assets/s_ncs_user_indicators_example_9.png)
 
@@ -96,7 +96,7 @@ Florians Handlungen (eine Öffnung, neun Klicks) erscheinen in folgenden Logs:
 
 **Empfänger:** Die Öffnung und die Klicks werden demselben Empfänger (Florian) zugeordnet. Da dieser nicht mit dem ersten Empfänger (Marie) identisch ist, zählt Adobe Campaign einen neuen Empfänger.
 
-People: Since this recipient&#39;s browser accepts cookies, we can see that the same identifier (UUID) is assigned to all click logs: **`fe37a503 [...]`**. Adobe Campaign correctly identifies these clicks as belonging to the same person. Der Zählung wird eine neue Person hinzugefügt.
+Personen: Dank der Cookies lässt sich beobachten, dass allen Klick-Logs dieselbe Kennung zugeordnet ist, nämlich **`fe37a503 [...]`**. Adobe Campaign erkennt also folgerichtig, dass die Klicks von derselben Person stammen und zählt eine neue Person.
 
 **Zwischenrechnung:**
 
@@ -115,7 +115,7 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 
 ![](assets/s_ncs_user_indicators_example_12.png)
 
-**Personen**: in Bezug auf Klicks sehen wir, dass allen Protokollen dieselbe ID (UUID) zugewiesen ist: **`9ab648f9 [...]`**. Diese Kennung wurde noch nicht gezählt. Der Zählung wird daher eine neue Person hinzugefügt.
+**Personen**: In Bezug auf Klicks sehen wir, dass allen Logs dieselbe ID (UUID) zugewiesen ist: **`9ab648f9 [...]`**. Diese Kennung wurde noch nicht gezählt. Es wird daher eine neue Person gezählt.
 
 ![](assets/s_ncs_user_indicators_example_13.png)
 
@@ -131,7 +131,7 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 
 ## 4. Schritt: Henry {#step-4--henry}
 
-**[!UICONTROL Henry Macdonald]** hat seinen Internetbrowser so konfiguriert, dass Cookies abgelehnt werden. Er öffnet die E-Mail und klickt 4 mal auf die Links.
+**[!UICONTROL Henry Macdonald]** akzeptiert keine Cookies. Er öffnet die E-Mail und klickt viermal auf die Links.
 
 ![](assets/s_ncs_user_indicators_example_10.png)
 
@@ -160,21 +160,21 @@ Auf Versandniveau stellt sich das Ergebnis wie folgt dar:
 
 ![](assets/s_ncs_user_indicators_example.png)
 
-* **[!UICONTROL Clicks]** (Empfänger, die geklickt haben): 2
-* **[!UICONTROL Distinct clicks for the population reached]** (Personen, die auf klicken): 6
-* **[!UICONTROL Distinct opens for the population reached]** (Empfänger, die geöffnet haben): 3
+* **[!UICONTROL Klicks]** (Empfänger, die geklickt haben): 2
+* **[!UICONTROL Unique Clicks der erreichten Population]** (Personen, die geklickt haben): 6
+* **[!UICONTROL Unique Opens der erreichten Population]** (Empfänger, die geöffnet haben): 3
 
 Die Brutto-Reaktionsrate und die Weiterleitungen werden wie folgt berechnet:
 
 ![](assets/s_ncs_user_indicators_example11.png)
 
-* **[!UICONTROL Estimation of forwards]** = **B - A** (also 6 - 2 = 4)
-* **[!UICONTROL Raw reactivity]** = **A / C** (also 2 / 3 = 66,67%)
+* **[!UICONTROL Schätzung der Weiterleitungen]** = **B - A** (also 6 - 2 = 4)
+* **[!UICONTROL Brutto-Reaktionsrate]** = **A / C** (also 2 / 3 = 66,67%)
 
 >[!NOTE]
 >
 >In oben stehenden Formeln bezeichnet:
 >
->* A represents the **[!UICONTROL Clicks]** indicator (recipients who clicked).
->* B stellt den **[!UICONTROL Distinct clicks for the population reached]** Indikator dar (Personen, die auf ihn geklickt haben).
->* C steht für den **[!UICONTROL Distinct opens for the population reached]** Indikator (Empfänger, die geöffnet haben).
+>* A den Indikator **[!UICONTROL Klicks]** (Empfänger, die geklickt haben).
+>* B den Indikator **[!UICONTROL Unique Clicks der erreichten Population]** (Personen, die geklickt haben).
+>* C den Indikator **[!UICONTROL Unique Opens der erreichten Population]** (Empfänger, die geöffnet haben).
