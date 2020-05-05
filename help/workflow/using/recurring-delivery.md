@@ -14,7 +14,7 @@ discoiquuid: 185d3256-a21e-47d7-bee7-7b91762ca1e2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 ---
@@ -22,9 +22,9 @@ source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 # Wiederkehrender Versand{#recurring-delivery}
 
-A **[!UICONTROL Recurring delivery]** activity lets you configure a delivery template occurrence that is specific to a campaign.
+Ein **[!UICONTROL wiederkehrender Versand]** dient der Konfiguration einer Versandvorlageninstanz im Rahmen einer Kampagne.
 
-This activity is only available from the **[!UICONTROL Targeting and workflows]** tab found in a campaign.
+Diese Aktivität ist nur im Tab **[!UICONTROL Zielbestimmungen und Workflows]** von Kampagnen verfügbar.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -40,6 +40,6 @@ Ein Anwendungsbeispiel für diese Aktivität ist in diesem [Abschnitt](../../wor
 
 >[!NOTE]
 >
->It is not possible to send a proof from a **[!UICONTROL Recurring delivery]** type activity.\
->To directly create a delivery via a campaign workflow, use the channel specific activities that are preconfigured (e.g. **[!UICONTROL Email delivery]**).
+>Die Durchführung von Testsendungen ist in der Aktivität **[!UICONTROL Wiederkehrender Versand]** nicht möglich.\
+>Nutzen Sie zur direkten Erstellung von Sendungen in Kampagnen-Workflows die vorkonfigurierten kanalspezifischen Versandaktionen, wie z. B. **[!UICONTROL E-Mail-Versand]**.
 
