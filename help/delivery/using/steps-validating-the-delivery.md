@@ -14,7 +14,7 @@ discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
@@ -26,11 +26,11 @@ Der erstellte und konfigurierte Versand muss vor dem Senden an die Hauptzielgrup
 
 Gehen Sie dazu wie folgt vor:
 
-1. **Analyse der Bereitstellung**: In diesem Schritt können Sie die zu sendenden Nachrichten vorbereiten. Weitere Informationen finden Sie unter [Analysieren der Bereitstellung](#analyzing-the-delivery).
+1. **Versand analysieren** – hier erfolgt die Vorbereitung der zu sendenden Nachrichten. Siehe [Versand analysieren ](#analyzing-the-delivery).
 
-   Die verfügbaren Überprüfungsmodi werden unter [Ändern des Genehmigungsmodus](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)beschrieben.
+   Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
 
-1. **Proofs** senden: In diesem Schritt können Sie Inhalte, URLs, Personalisierungsfelder usw. genehmigen. Weitere Informationen finden Sie unter [Senden eines Tests](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) und [Definieren eines bestimmten Proof-Ziels](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
+1. **Testsendungen durchführen** – hier erfolgt die Validierung von Inhalt, URLs, Personalisierungsfeldern usw. Siehe [Testversand durchführen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) und [Spezifische Testversand-Zielgruppe definieren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
 >[!CAUTION]
 >
@@ -38,19 +38,19 @@ Gehen Sie dazu wie folgt vor:
 
 ## Versand analysieren {#analyzing-the-delivery}
 
-Die Analyse ist der Zeitraum, in dem die Zielpopulation berechnet und der Bereitstellungsinhalt vorbereitet wird. Sobald die Lieferung abgeschlossen ist, ist die Lieferung bereit zu senden. Um die Auslieferungsanalyse zu starten, klicken Sie auf **[!UICONTROL Send]** und wählen Sie **[!UICONTROL Deliver as soon as possible]**.
+Die Analyse ist die Phase, in der die Zielpopulation berechnet und der Versandinhalt vorbereitet wird. Sobald sie abgeschlossen ist, ist der Versand startbereit. Um die Versandanalyse zu starten, klicken Sie auf **[!UICONTROL Senden]** und wählen Sie **[!UICONTROL Sendungen schnellstmöglich abschicken]** aus.
 
 ![](assets/s_ncs_user_email_del_send.png)
 
-Über die **[!UICONTROL Analyze]** Schaltfläche können Sie die Analyse manuell starten. Die Fortschrittsleiste zeigt den Fortschritt der Analyse an. Im unteren Bereich des Fensters wird das Analyseergebnis angezeigt. Über Sondersymbole werden Warnungen angezeigt.
+Über die Schaltfläche **[!UICONTROL Analysieren]** können Sie die Analyse manuell starten. Die Statusbar zeigt den Bearbeitungsfortschritt an. Im unteren Bereich des Bildschirms wird das Ergebnis der Analyse angezeigt, wobei Warnhinweise durch spezifische Symbole gekennzeichnet werden.
 
 ![](assets/s_ncs_user_interface_delivery04b.png)
 
 >[!NOTE]
 >
->Die Validierungsregeln werden unter [Validierung mit Typologien](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)beschrieben.
+>Die Validierungsregeln werden unter [Validierung mit Typologien](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) beschrieben.
 
-You can stop this job at any time by clicking **[!UICONTROL Stop]**.
+Es ist jederzeit möglich, den Vorgang durch Klick auf die Schaltfläche **[!UICONTROL Abbrechen]** zu unterbrechen.
 
 ![](assets/s_ncs_user_wizard_email01_16.png)
 
@@ -64,36 +64,36 @@ Der letzte Logeintrag zeigt eventuelle Fehler und deren Anzahl an. Ein spezifisc
 
 ![](assets/s_ncs_user_email_del_analyze_error.png)
 
-Klicken Sie auf **[!UICONTROL Close]** , um die Fehler zu korrigieren. Nachdem Sie die Änderungen vorgenommen haben, müssen Sie die Analyse neu starten.
+Klicken Sie auf **[!UICONTROL Schließen]**, um die Fehler zu korrigieren. Führen Sie dann eine neue Analyse durch.
 
-Überprüfen Sie das Ergebnis der Analyse, bevor Sie auf klicken, **[!UICONTROL Confirm delivery]** um die Nachricht an das angegebene Ziel zu senden.  Mit einer Bestätigungsmeldung können Sie die Bereitstellung starten.
+Prüfen Sie zunächst das Ergebnis der Analyse und klicken Sie dann auf **[!UICONTROL Absendung bestätigen]**, um die Nachrichten an die gewählte Zielgruppe zu senden. Durch Bestätigung des Pop-ups wird der Versand gestartet.
 
 ![](assets/s_ncs_user_email_del_analyze_ok.png)
 
 >[!NOTE]
 >
->Klicken Sie auf den **[!UICONTROL Change the main delivery target]** Link, wenn die Anzahl der zu sendenden Nachrichten nicht Ihrer Konfiguration entspricht. Auf diese Weise können Sie die Definition der Zielpopulation ändern und die Analyse neu starten.
+>Klicken Sie auf den Link **[!UICONTROL Hauptzielgruppe des Versands ändern]**, wenn die Anzahl der zu sendenden Nachrichten nicht Ihrer Konfiguration entspricht. Passen Sie die Zielpopulation entsprechend an und analysieren Sie erneut den Versand.
 
-The delivery parameters **[!UICONTROL Analysis]** tab lets you define a set of information concerning the preparation of messages during the analysis phase.
+Der **[!UICONTROL Analyse]**-Tab in den Versandeigenschaften ermöglicht die Konfiguration verschiedener Parameter in Bezug auf die Nachrichtenvorbereitung im Zuge der Analyse.
 
 ![](assets/s_ncs_user_email_del_analyze_adv_param.png)
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Label and code of the delivery]** : Die Optionen für diesen Abschnitt des Bildschirms werden zur Berechnung der Werte dieser Felder während der Auslieferungsphase verwendet. Das **[!UICONTROL Calculate the execution folder during the delivery analysis]** Feld berechnet den Namen des Ordners, der diese Auslieferungsaktion während der Analysephase enthält.
-* **[!UICONTROL Approval mode]** : In diesem Feld können Sie den Typ der Liefergenehmigung auswählen. Die Genehmigungsmodi werden im [Validierungsprozess mit Typologien](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies)dargestellt.
-* **[!UICONTROL Prepare the personalization data with a workflow]** : Mit dieser Option können die Personalisierungsdaten, die in Ihrer Bereitstellung enthalten sind, in einem automatischen Workflow vorbereitet werden. Es ermöglicht eine deutliche Verbesserung der Leistung der Auslieferungsanalyse, wenn viele Daten verarbeitet werden, insbesondere wenn die Personalisierungsdaten von einer externen Tabelle über FDA stammen. Weitere Informationen finden Sie im Abschnitt [Zugreifen auf eine externe Datenbank (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data) .
-* **[!UICONTROL Start job in a detached process]** : Mit dieser Option können Sie die Auslieferungsanalyse in einem separaten Prozess starten. Die Analysefunktion verwendet standardmäßig den Adobe Campaign-Anwendungsserverprozess (Web-Nlserver). Durch Auswahl dieser Option stellen Sie sicher, dass die Analyse auch bei einem Anwendungsserverausfall abgeschlossen wird.
-* **[!UICONTROL Log SQL queries generated during the analysis in the journal]** : Diese Option fügt die SQL-Abfrageprotokolle während der Analysephase dem Bereitstellungsprotokoll hinzu.
-* **[!UICONTROL Ignore personalization scripts during sending]** : Mit dieser Option können Sie die Interpretation von JavaScript-Direktiven umgehen, die in HTML-Inhalten gefunden werden. Sie werden wie im bereitgestellten Inhalt angezeigt. Diese Direktiven werden mit dem **&lt;%=** -Tag eingeführt.
+* **[!UICONTROL Titel und Versandcode]** - die Optionen in diesem Bildschirmbereich ermöglichen die Berechnung der entsprechenden Felder im Zuge der Versandanalyse. Das Feld **[!UICONTROL Ausführungsordner bei der Versandanalyse berechnen]** ermöglicht die Berechnung des Namens der Datei, die diese Versandaktion im Zuge der Analysephase enthalten wird.
+* **[!UICONTROL Validierungsmodus]**: In diesem Feld können Sie den Typ der Versandvalidierung auswählen. Die Validierungsmodi werden unter [Validierung mit Typologien](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) beschrieben.
+* **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]**: Mit dieser Option können Sie die im Versand enthaltenen Personalisierungsdaten in einem automatischen Workflow vorbereiten. Dies verbessert erheblich die Leistung der Versandanalyse, wenn eine große Datenmenge verarbeitet wird, insbesondere wenn die Personalisierungsdaten von einer externen Tabelle per FDA kommen. Lesen Sie hierzu auch den Abschnitt [Zugriff auf externe Datenbanken (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
+* **[!UICONTROL Vorgang in einem separaten Prozess starten]** - die Versandanalyse wird in einem separaten Prozess durchgeführt. Standardmäßig verwendet die Analysefunktion den Prozess des Adobe-Campaign-Anwendungsserver (nlserver web). Durch Ankreuzen dieser Option stellen Sie sicher, dass die Analyse selbst im Falle eines Problems mit dem Anwendungsserver vollständig durchgeführt wird.
+* **[!UICONTROL Zielbestimmungs- und Personalisierungsabfragen im Protokoll speichern]** - schreibt in der Analysephase die SQL-Abfrage-Logs in das Versandprotokoll.
+* **[!UICONTROL Personalisierungsscripts beim Versand ignorieren]** - im HTML-Inhalt enthaltene JavaScript-Anweisungen werden nicht interpretiert, sondern 1:1 in den gesendeten Inhalten abgebildet. Die Anweisungen beginnen mit dem Tag **&lt;%=**.
 
-### Konfigurieren der Analysepriorität {#analysis-priority-}
+### Analysepriorität konfigurieren {#analysis-priority-}
 
-Wenn die Bereitstellung Teil einer Kampagne ist, bietet die **[!UICONTROL Advanced]** Registerkarte eine zusätzliche Option. Auf diese Weise können Sie die Verarbeitungsreihenfolge für Lieferungen in derselben Kampagne organisieren.
+Wenn Ihr Versand Teil einer Kampagne ist, bietet der **[!UICONTROL Erweitert]**-Tab eine zusätzliche Option, die die Hierarchisierung der Sendungen innerhalb der Kampagne ermöglicht.
 
 Jeder Versand wird analysiert, bevor die Nachrichten abgeschickt werden. Die Analysedauer hängt von der Größe der Extraktionsdatei des Versands ab. Je größer die Datei, desto länger die Analyse. Nachfolgende Sendungen werden verzögert.
 
-Mit den Optionen für die **[!UICONTROL Message preparation by the scheduler]** können Sie der Bereitstellungsanalyse in einem Kampagnen-Workflow Priorität einräumen.
+Die Optionen im Bereich **[!UICONTROL Nachrichtenvorbereitung durch die Steuerung]** erlauben die Priorisierung der Versandanalysen eines Kampagnen-Workflows.
 
 ![](assets/delivery_analysis_priority.png)
 
@@ -101,7 +101,7 @@ Einem großen Versand sollte also vorzugsweise eine niedrige Priorität zugewies
 
 >[!NOTE]
 >
->To ensure that the larger delivery analyses do not slow down the progress of your workflows, you can schedule their executions by ticking the **[!UICONTROL Schedule execution for a time of low activity]**.
+>Um sicherzustellen, dass die Analyse umfangreicher Sendungen die Durchführung Ihrer Workflows nicht bremst, haben Sie die Möglichkeit, die Option **[!UICONTROL Ausführung auf einen Zeitpunkt mit geringer Auslastung verschieben]** anzukreuzen.
 
 ## Testversand durchführen {#sending-a-proof}
 
@@ -109,23 +109,23 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 
 >[!NOTE]
 >
->* Die verfügbaren Überprüfungsmodi werden unter [Ändern des Genehmigungsmodus](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode)beschrieben.
->* Die Konfiguration des Proof-Ziels wird unter [Definieren eines bestimmten Proof-Ziels](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)beschrieben.
+>* Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
+>* Die Konfiguration der Testversand-Zielgruppe wird unter [Spezifische Testversand-Zielgruppe definieren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben.
 >
 
 
 
 Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 
-1. Stellen Sie sicher, dass das Proof-Ziel wie unter [Definieren eines bestimmten Proof-Ziels](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)beschrieben konfiguriert wurde.
-1. Klicken Sie **[!UICONTROL Send a proof]** auf die obere Leiste des Auslieferungsassistenten.
+1. Stellen Sie sicher, dass die Testversand-Zielgruppe wie unter [Spezifische Testversand-Zielgruppe definieren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben konfiguriert wurde.
+1. Wählen Sie **[!UICONTROL Testversand auslösen]** in der Symbolleiste am oberen Rand des Versand-Assistenten aus.
 
    ![](assets/s_ncs_user_email_del_send_proof.png)
 
-1. Starten Sie die Nachrichtenanalyse. Siehe [Analysieren der Bereitstellung](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
-1. Sie können die Lieferung jetzt senden (siehe [Senden der Lieferung](../../delivery/using/steps-sending-the-delivery.md)).
+1. Starten Sie die Nachrichtenanalyse. Siehe [Versand analysieren](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+1. Sie können den Versand jetzt starten (siehe [Versand senden](../../delivery/using/steps-sending-the-delivery.md)).
 
-   Nach dem Versand wird der Beweis in der Lieferliste angezeigt und automatisch erstellt und nummeriert. Sie kann bearbeitet werden, wenn Sie auf den Inhalt und die Eigenschaften zugreifen möchten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+   Nach dem Versand gestartet wurde, wird der Testversand in der Versandliste angezeigt und automatisch erstellt und nummeriert. Er kann bearbeitet werden, wenn Sie auf den Inhalt und die Eigenschaften zugreifen möchten. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
 
    ![](assets/s_ncs_user_delivery_validation_cycle_03a.png)
 
@@ -137,22 +137,22 @@ Gehen Sie wie folgt vor, um einen Testversand durchzuführen:
 
 Zur Einarbeitung der Hinweise der Testversand-Empfänger werden verschiedene Änderungen im Versandinhalt vorzunehmen sein. Im Anschluss an diese Änderungen müssen Analyse und Testversand erneut durchgeführt werden. Die fortlaufend nummerierten Testsendungen werden im Versandprotokoll verzeichnet.
 
-Once the delivery has been analyzed, you can view the various proofs sent via the **[!UICONTROL Proofs]** sub-tab of the log (**[!UICONTROL Audit]** tab).
+Klicken Sie auf den Tab **[!UICONTROL Testsendungen]** des Protokolls (Rubrik **[!UICONTROL Verfolgung]**), um einen Überblick über die gesamte Testversandliste zu erhalten.
 
 ![](assets/s_ncs_user_delivery_validation_cycle_03.png)
 
 Nach Abschluss des Validierungszyklus kann der Versand der Hauptzielgruppe zugestellt werden.
 
-Auf der **[!UICONTROL Advanced]** Registerkarte &quot;Eigenschaften&quot;können Sie die Eigenschaften des Proof definieren. Bei Bedarf können Sie die Ausschlussregeln des Empfängers überschreiben.
+Im Tab **[!UICONTROL Erweitert]** der Versandeigenschaften kann der Testversand konfiguriert werden. Bei Bedarf können Sie die Ausschlussregeln überschreiben.
 
 ![](assets/s_ncs_user_wizard_email01_145.png)
 
 Folgende Optionen stehen zur Verfügung:
 
 * Beibehaltung von doppelten Adressen und Empfängern;
-* Mit beiden der folgenden Optionen können Sie Empfänger und Adressen in der schwarzen Liste in Quarantäne halten. Siehe Beschreibung dieser Optionen für das Hauptziel unter [Anpassen der Ausschlusseinstellungen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zum Ziel einer Lieferung, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für das Ziel eines Beweises beibehalten.
-* Mit der **[!UICONTROL Keep the delivery code for the proof]** Option können Sie dem Nachweis denselben Liefercode wie dem für die Lieferung, auf die er sich bezieht, definierten geben. Dieser Code wird im ersten Schritt des Auslieferungsassistenten angegeben.
-* Standardmäßig wird dem Betreff des Beweises der Proof # vorangestellt, wobei # die Nummer des Nachweises ist. Sie können dieses Präfix im **[!UICONTROL Label prefix]** Feld ändern.
+* Mit beiden der folgenden Optionen können Sie Blacklist-Empfänger und -Adressen in Quarantäne halten. Eine Beschreibung dieser Optionen für die Hauptzielgruppe finden Sie unter [Ausschlussparameter anpassen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zur Zielgruppe eines Versands, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für die Zielgruppe eines Testversands beibehalten.
+* Wenn Sie die Option **[!UICONTROL Versandcode für den Testversand beibehalten]** auswählen, werden Haupt- und Testversand unter dem gleichen Code geführt, welcher im ersten Schritt des Versandassistenten vergeben wird.
+* Standardmäßig enthält der Betreff des Testversands &#39;Proof #‘, wobei # der Nummer des Testversands entspricht. Sie können dieses Präfix im Feld **[!UICONTROL Titelpräfix]** ändern.
 
 ## Validierung mit Typologien {#validation-process-with-typologies}
 
@@ -166,27 +166,27 @@ Während der Versandanalyse werden Inhalt und Konfiguration anhand gewisser Rege
 * Prüfung der Gültigkeitsdauer,
 * Prüfung der Schub-Planung.
 
-The typology to be applied for each delivery is selected in the **[!UICONTROL Typologies]** tab in the delivery parameters.
+Die jeweils anzuwendenden Regeln werden im **[!UICONTROL Typologie]**-Tab der Versandeigenschaften ausgewählt.
 
-Sie können die Genehmigungsregeln, ihren Inhalt, ihre Ausführungsreihenfolge und ihre vollständige Beschreibung über den **[!UICONTROL Administration > Campaign execution > Typology management > Typology rules]** Knoten anzeigen und bearbeiten.
+Sie können auf die Typologieregeln im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Typologieverwaltung > Typologieregeln]** zugreifen, um z. B. eine ausführliche Beschreibung zu erhalten oder die Reihenfolge der Anwendung festzulegen.
 
 An dieser Stelle können auch neue Regeln und Typologien erstellt werden. Dies sollte jedoch erfahrenen Anwendern mit JavaScript-Kenntnissen vorbehalten bleiben.
 
-To edit the current typology, click the **[!UICONTROL Edit link]** icon to the right of the **[!UICONTROL Typology]** field.
+Klicken Sie zur Bearbeitung der aktuellen Typologie auf das Symbol **[!UICONTROL Verknüpftes Element öffnen]** (rechts vom Feld **[!UICONTROL Typologie]**).
 
 ![](assets/s_ncs_user_email_del_typo_tab.png)
 
-Auf der **[!UICONTROL Rule]** Registerkarte finden Sie eine Liste der anzuwendenden Typologieregeln. Wählen Sie eine Regel aus und klicken Sie auf das **[!UICONTROL Detail...]** Symbol, um die Konfiguration anzuzeigen:
+Im Tab **[!UICONTROL Regeln]** finden Sie die Liste der anzuwendenden Typologieregeln. Ihre genaue Konfiguration können Sie durch Klick auf das Symbol **[!UICONTROL Details...]** einsehen:
 
 ![](assets/s_ncs_user_email_del_typo_rules_edit.png)
 
 >[!NOTE]
 >
->**[!UICONTROL Arbitration]** Typologien werden im Rahmen des Druckmanagements für den Vertrieb verwendet. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/about-marketing-resource-management.md).
+>Typologien vom Typ **[!UICONTROL Schlichtung]** kommen im Bereich des Werbedruck-Managements zum Einsatz. Lesen Sie diesbezüglich [diesen Abschnitt](../../campaign/using/about-marketing-resource-management.md).
 
 ## Validierungsmodus ändern {#changing-the-approval-mode}
 
-Auf der **[!UICONTROL Analysis]** Registerkarte für Bereitstellungseigenschaften können Sie den Überprüfungsmodus auswählen. Wenn während der Analyse Warnungen generiert werden (z. B. wenn bestimmte Zeichen im Bereitstellungsgegenstand akzentuiert sind usw.), können Sie die Bereitstellung so konfigurieren, dass festgelegt wird, ob sie weiterhin ausgeführt werden soll oder nicht. Standardmäßig muss der Benutzer das Senden von Nachrichten am Ende der Analysephase bestätigen: dies ist eine **manuelle** Überprüfung.
+Der **[!UICONTROL Analyse]**-Tab in den Versandeigenschaften bietet die Möglichkeit, einen Validierungsmodus zu wählen. So können Sie angeben, ob ein Versand trotz Erzeugung von Warnhinweisen bei der Analyse (z. B. weil im Versandbetreff bestimmte Sonderzeichen wie § oder $ verwendet wurden) gestartet werden soll oder nicht. Standardmäßig muss der Benutzer den Versand der Nachrichten nach Abschluss der Analyse bestätigen. Es handelt sich in diesem Fall um eine **manuelle** Validierung.
 
 In der Dropdown-Liste des entsprechenden Felds
 
@@ -194,6 +194,6 @@ In der Dropdown-Liste des entsprechenden Felds
 
 stehen folgende Validierungsmodi zur Verfügung:
 
-* **[!UICONTROL Manual]**: Am Ende der Analysephase muss der Benutzer die Bereitstellung bestätigen, um mit dem Senden beginnen zu können. Klicken Sie dazu auf die **[!UICONTROL Start]** Schaltfläche, um die Bereitstellung zu starten.
-* **[!UICONTROL Semi-automatic]**: Die Nachrichten werden automatisch abgeschickt, wenn die Analysephase ohne Warnhinweise abschließt.
-* **[!UICONTROL Automatic]**: Die Nachrichten werden unabhängig vom Ergebnis der Analysephase automatisch abgeschickt.
+* **[!UICONTROL Manuell]**: Am Ende der Analysephase muss der Benutzer die Absendung bestätigen, um die Nachrichten abzuschicken. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Start]**, um den Versand zu starten.
+* **[!UICONTROL Halbautomatisch]**: Die Nachrichten werden automatisch abgeschickt, wenn die Analysephase ohne Warnhinweise abschließt.
+* **[!UICONTROL Automatisch]**: Die Nachrichten werden unabhängig vom Ergebnis der Analysephase automatisch abgeschickt.
