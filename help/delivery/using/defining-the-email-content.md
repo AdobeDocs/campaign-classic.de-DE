@@ -1,6 +1,6 @@
 ---
-title: Definieren des E-Mail-Inhalts in Adobe Campaign Classic
-description: Erfahren Sie, wie Sie den E-Mail-Inhalt mit Adobe Campaign Classic definieren.
+title: E-Mail-Inhalt in Adobe Campaign Classic festlegen
+description: Erfahren Sie, wie Sie den E-Mail-Inhalt mit Adobe Campaign Classic festlegen.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
 contentOwner: sauviat
@@ -12,7 +12,7 @@ discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
 
 ## Absender {#sender}
 
-To define the name and address of the sender which will appear in the header of messages sent, click the **[!UICONTROL From]** link.
+Klicken Sie auf **[!UICONTROL Von]**, um den Namen und die Adresse des Absenders zu konfigurieren.
 
 ![](assets/s_ncs_user_wizard_email02.png)
 
 In dem sich öffnenden Fenster werden alle im E-Mail-Header angezeigten Informationen erfasst. Diese können vom Benutzer individuell gestaltet werden. Nutzen Sie hierfür die Personalisierungsfelder, die über die Schaltflächen rechts der Eingabefelder eingefügt werden.
 
-To find out how to insert and use personalization fields, refer to [About personalization](../../delivery/using/about-personalization.md) section.
+Informationen zum Einfügen und Verwenden von Personalisierungsfeldern finden Sie im Abschnitt [Über die Personalisierung](../../delivery/using/about-personalization.md).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ To find out how to insert and use personalization fields, refer to [About person
 
 ## Nachrichtenbetreff {#message-subject}
 
-Der Betreff der Nachricht wird im entsprechenden Feld konfiguriert. Sie können sie direkt in das Feld eingeben oder auf den **[!UICONTROL Subject]** Link klicken, um ein Skript einzugeben. Über den Personalisierungslink können Sie Datenbankfelder in den Betreff einfügen.
+Der Betreff der Nachricht wird im gleichnamigen Feld konfiguriert. Sie können ihn direkt im Feld eingeben oder auf den Link **[!UICONTROL Betreff]** klicken, um ein Script zu erfassen. Die Personalisierungsschaltfläche ermöglicht die Einfügung eines Datenbankfeldes.
 
 >[!CAUTION]
 >
@@ -58,19 +58,19 @@ In oben stehender Nachricht wurde beispielsweise der Betreff der Nachricht für 
 
 >[!NOTE]
 >
->The use of personalization fields is presented in [About personalization](../../delivery/using/about-personalization.md).
+>Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](../../delivery/using/about-personalization.md) beschrieben.
 
 ## Nachrichteninhalt {#message-content}
 
 >[!CAUTION]
 >
->Aus Datenschutzgründen wird empfohlen, HTTPS für alle externen Ressourcen zu verwenden.
+>Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
 Der eigentliche Nachrichteninhalt wird im unteren Bereich des Versandkonfigurationsfensters erfasst.
 
-Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Empfängereinstellung. Es wird empfohlen, Inhalte in beiden Formaten zu erstellen, um sicherzustellen, dass Nachrichten in jedem Mailsystem korrekt angezeigt werden können. Weitere Informationen finden Sie unter [Auswählen von Nachrichtenformaten](#selecting-message-formats).
+Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend im HTML- oder Textformat versandt. Um die korrekte Anzeige in allen E-Mail-Systemen zu gewährleisten, wird empfohlen, jeweils sowohl HTML- als auch Textinhalte zu erstellen. Weitere Informationen hierzu finden Sie unter [Wahl des Nachrichtenformats](#selecting-message-formats).
 
-* Um einen HTML-Inhalt zu importieren, verwenden Sie die **[!UICONTROL Open]** Schaltfläche. Sie können den Quellcode auch direkt in die **[!UICONTROL Source]** Unterregisterkarte einfügen.
+* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um HTML-Inhalt zu importieren. Sie haben auch die Möglichkeit, den Quellcode direkt in den Tab **[!UICONTROL Quelle]** einzufügen.
 
    Wenn Sie den [Digital Content Editor](../../web/using/about-campaign-html-editor.md) (DCE) verwenden, lesen Sie den Abschnitt zur [Auswahl einer Inhaltsvorlage](../../web/using/use-case--creating-an-email-delivery.md#step-3---selecting-a-content).
 
@@ -78,25 +78,25 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Em
    >
    >Der HTML-Inhalt muss vorab erstellt und anschließend in Adobe Campaign importiert werden. Der HTML-Editor ist nicht für die Inhaltserstellung vorgesehen.
 
-   Auf der **[!UICONTROL Preview]** Unterregisterkarte können Sie die Wiedergabe der einzelnen Inhalte eines Empfängers anzeigen. Die Personalisierungsfelder und die bedingten Elemente des Inhalts werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt.
+   Der Tab **[!UICONTROL Vorschau]** ermöglicht es, das Rendering für einen Empfänger zu simulieren. Die Personalisierungsfelder und die bedingten Elemente des Inhalts werden durch die im ausgewählten Profil gespeicherten Informationen ersetzt.
 
    Über die verschiedenen Schaltflächen der Symbolleiste haben Sie Zugriff auf die Standard-Parameter für die Seitenaufmachung im HTML-Format.
 
    ![](assets/s_ncs_user_wizard_email01_138.png)
 
-   Sie können Bilder in Nachrichten aus einer lokalen Datei oder aus einer Bildbibliothek in Adobe Campaign einfügen. Klicken Sie dazu auf das **[!UICONTROL Image]** Symbol und wählen Sie die entsprechende Option aus.
+   Durch Klick auf die Schaltfläche **[!UICONTROL Bild]** können Sie beispielsweise Bilder aus einer lokalen Datei oder aus der in Adobe Campaign enthaltenen Bibliothek einfügen.
 
    ![](assets/s_ncs_user_wizard_email01_18.png)
 
-   Auf Bibliotheksbilder kann über den **[!UICONTROL Resources>Online>Public resources]** Ordner in der Ordnerstruktur zugegriffen werden. Siehe auch [Hinzufügen von Bildern](#adding-images).
+   Zugriff auf die Bilder aus der Bibliothek besteht über den Ordner **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Ordnerbaums. Siehe auch [Bilder hinzufügen](#adding-images).
 
    Die letzte Schaltfläche in der Symbolleiste dient der Einfügung von Personalisierungsfeldern.
 
    >[!NOTE]
    >
-   >The use of personalization fields is presented in [About personalization](../../delivery/using/about-personalization.md).
+   >Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](../../delivery/using/about-personalization.md) beschrieben.
 
-   Auf den Registerkarten unten auf der Seite können Sie den HTML-Code der erstellten Seite anzeigen und die Wiedergabe der Nachricht mit ihrer Personalisierung anzeigen. Um diese Anzeige zu starten, klicken Sie auf **[!UICONTROL Preview]** und wählen Sie einen Empfänger über die Schaltfläche in der Symbolleiste **[!UICONTROL Test personalization]** aus. Sie können einen Empfänger aus den definierten Zielen auswählen oder einen anderen Empfänger auswählen.
+   Die Tabs am unteren Seitenrand ermöglichen die Anzeige des HTML-Quellcodes der in Erstellung begriffenen Seite und des Renderings der Nachricht beim Empfänger inklusive Personalisierung. Klicken Sie hierfür auf den Tab **[!UICONTROL Vorschau]** und wählen Sie über die Symbolleisten-Schaltfläche **[!UICONTROL Personalisierung testen...]** einen Empfänger aus. Sie können dabei einen beliebigen oder einen in der Zielgruppe enthaltenen Empfänger wählen.
 
    ![](assets/s_ncs_user_wizard_email01_139.png)
 
@@ -104,27 +104,27 @@ Nachrichten werden standardmäßig im HTML- oder Textformat gesendet, je nach Em
 
    ![](assets/s_ncs_user_wizard_email01_140.png)
 
-* Um einen Textinhalt zu importieren, verwenden Sie die **[!UICONTROL Open]** Schaltfläche oder die **[!UICONTROL Text Content]** Registerkarte, um den Inhalt der Nachricht einzugeben, wenn sie im Textformat angezeigt wird. Verwenden Sie die Symbolleistenschaltflächen, um auf Aktionen für den Inhalt zuzugreifen. Über die letzte Schaltfläche können Sie Personalisierungsfelder einfügen.
+* Verwenden Sie die Schaltfläche **[!UICONTROL Öffnen]**, um Textinhalt zu importieren. Sie haben auch die Möglichkeit, den Inhalt im Tab **[!UICONTROL Textinhalt]** direkt zu erfassen. Über die verschiedenen Schaltflächen der Symbolleiste können Sie die Textaufmachung ändern. Die letzte Schaltfläche in der Symbolleiste dient der Einfügung von Personalisierungsfeldern.
 
    ![](assets/s_ncs_user_wizard_email01_141.png)
 
-   As for the HTML format click the **[!UICONTROL Preview]** tab at the bottom of the page to view the rendering of the message with its personalization.
+   Der Tab **[!UICONTROL Vorschau]** am unteren Seitenrand ermöglicht die Anzeige des Renderings der Nachricht beim Empfänger inklusive Personalisierung.
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
 
 ## Wahl des Nachrichtenformats {#selecting-message-formats}
 
-Sie können das Format der gesendeten E-Mail-Nachrichten ändern. Bearbeiten Sie dazu die Bereitstellungseigenschaften und klicken Sie auf die **[!UICONTROL Delivery]** Registerkarte.
+Sie können das Format der zu versendenden E-Mails konfigurieren. Klicken Sie hierzu auf die Schaltfläche **[!UICONTROL Eigenschaften]** und begeben Sie sich in den Tab .
 
 ![](assets/s_ncs_user_wizard_email_param.png)
 
 Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
-* **[!UICONTROL Use recipient preferences]** (Standardmodus)
+* **[!UICONTROL Empfängerangaben berücksichtigen]** (Standardmodus)
 
-   The message format is defined according to the data stored in the recipient profile and stored by default in the **[!UICONTROL email format]** field (@emailFormat). Falls ein Empfänger Nachrichten in einem bestimmten Format erhalten möchte, werden sie in diesem Format gesendet. Wenn das Feld nicht ausgefüllt ist, wird eine mehrteilige alternative Meldung gesendet (siehe unten).
+   Das Nachrichtenformat wird anhand der im Empfängerprofil im Feld **[!UICONTROL E-Mail-Format]** gespeicherten Informationen bestimmt. Wenn ein Empfänger ein bestimmtes Format angegeben hat, wird ihm die Nachricht in diesem Format zugestellt. Wenn das Feld leer ist, wird die Nachricht im Multipart-Alternative-Format versandt (siehe unten).
 
-* **[!UICONTROL Let recipient mail client choose the most appropriate format]**
+* **[!UICONTROL E-Mail-Programm des Empfängers das beste Format wählen lassen]**
 
    Die Nachricht enthält beide Formate: Text und HTML. Das beim Empfänger angezeigte Format hängt von der Konfiguration des E-Mail-Programms ab (Multipart-Alternative).
 
@@ -132,19 +132,19 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
    >
    >Bei dieser Option werden beide Versionen des Dokuments gesendet. Der hierdurch erhöhte Kapazitätsverbrauch kann den Versanddurchsatz beeinträchtigen.
 
-* **[!UICONTROL Send all messages in text format]**
+* **[!UICONTROL Alle Nachrichten im Textformat senden]**
 
    Die Nachricht wird im Textformat gesendet. Das HTML-Format wird nicht gesendet, sondern nur für die Mirrorseite verwendet, auf die ein Empfänger gelangt, wenn er auf den entsprechenden Link in der Nachricht klickt.
 
-## Definieren interaktiver Inhalte {#amp-for-email-format}
+## Interaktive Inhalte definieren {#amp-for-email-format}
 
-Mit Adobe Campaign können Sie das neue interaktive [AMP für E-Mail](https://amp.dev/about/email/) -Format ausprobieren, das das Senden dynamischer E-Mails unter bestimmten Bedingungen ermöglicht.
+Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/defining-interactive-content.md).
 
 ## Inhaltsverwaltung (Content Management){#using-content-management}
 
-Sie können den Inhalt der Bereitstellung mithilfe der Inhaltsverwaltungsformulare direkt im Bereitstellungsassistenten definieren. Zu diesem Zweck müssen Sie auf der Registerkarte der Bereitstellungseigenschaften auf die Veröffentlichungsvorlage des zu verwendenden Inhaltsmanagements verweisen **[!UICONTROL Advanced]** .
+Wenn Sie den Inhalt Ihres Versands mithilfe des Content Managements erstellen, ist es erforderlich, die zu verwendende Inhaltsvorlage in den Versandeigenschaften im **[!UICONTROL Erweitert]**-Tab des Versand-Assistenten anzugeben.
 
 ![](assets/s_ncs_content_in_delivery.png)
 
@@ -154,18 +154,18 @@ Ein zusätzlicher Tab erlaubt nun die Erstellung eines Inhalts, der automatisch 
 
 >[!NOTE]
 >
->For further information about content management in Adobe Campaign, refer to [this section](../../delivery/using/about-content-management.md).
+>Weitere Informationen zum Content Management in Adobe Campaign finden Sie in [diesem Abschnitt](../../delivery/using/about-content-management.md).
 
 ## Bilder hinzufügen {#adding-images}
 
-E-Mail-Zustellungen im HTML-Format können Bilder enthalten. From the delivery wizard, you can import an HTML page containing images or insert images directly using the HTML editor via the **[!UICONTROL Image]** icon.
+E-Mail-Sendungen im HTML-Format können Bilder enthalten. Sie können im Versand-Assistenten entweder eine fertige HTML-Seite mit Bildern importieren oder Bilder im HTML-Editor über das **[!UICONTROL Bild]**-Symbol einfügen.
 
 Diese Bilder können:
 
 * lokal gespeichert sein oder von einem Server abgerufen werden;
 * aus der Bibliothek der öffentlichen Ressourcen in Adobe Campaign stammen;
 
-   Öffentliche Ressourcen können über den **[!UICONTROL Resources > Online]** Knoten der Adobe Campaign-Hierarchie aufgerufen werden. Sie sind in einer Bibliothek gruppiert und können in E-Mail-Nachrichten eingeschlossen werden, können aber auch für Kampagnen, Aufgaben oder für die Inhaltsverwaltung verwendet werden.
+   Auf öffentliche Ressourcen kann im Knoten **[!UICONTROL Ressourcen > Online > Öffentliche Ressourcen]** des Navigationsbaums zugegriffen werden. Sie sind in einer Bibliothek zusammengefasst und können in E-Mails, Kampagnen, Aufgaben und dem Content Management verwendet werden.
 
 * Weiterführende Informationen zu freigegebenen Assets in Adobe Experience Cloud finden Sie in [diesem Abschnitt](../../integrations/using/sharing-assets-with-adobe-experience-cloud.md).
 
@@ -173,22 +173,22 @@ Diese Bilder können:
 >
 >Um E-Mails über den Versand-Assistenten mit Bildern zu versehen, muss die Konfiguration der Adobe-Campaign-Instanz die Verwaltung öffentlicher Ressourcen zulassen. Dies wird im Softwareverteilungs-Assistenten festgelegt. In [diesem Abschnitt](../../installation/using/deploying-an-instance.md) finden Sie weiterführende Hinweise zur Konfiguration.
 
-Mit dem Auslieferungsassistenten können Sie lokale Bilder oder Bilder, die in der Bibliothek gespeichert sind, zum Inhalt von Nachrichten hinzufügen. Klicken Sie dazu in der Symbolleiste für HTML-Inhalt auf die **[!UICONTROL Image]** Schaltfläche .
+Der Versand-Assistent bietet die Möglichkeit, lokale oder in der Bibliothek enthaltene Bilder in den Inhalt der Nachrichten einzuschließen. Wählen Sie hierfür die Schaltfläche **[!UICONTROL Bild]** in der Symbolleiste des HTML-Inhalts aus.
 
 ![](assets/s_ncs_user_image_from_library.png)
 
 Um von den Empfängern gesehen werden zu können, müssen die Bilder auf einem extern zugänglichen Server gespeichert werden.
 
-To manage images via the delivery wizard, you must click the **[!UICONTROL Tracking & Images]** icon in the toolbar.
+Klicken Sie auf **[!UICONTROL Tracking &amp; Bilder]** in der Symbolleiste, um die Bilder über den Versand-Assistenten zu verwalten.
 
 ![](assets/s_ncs_user_email_del_img_param.png)
 
-Wählen Sie **[!UICONTROL Upload images]** auf der **[!UICONTROL Images]** Registerkarte aus. Sie können dann auswählen, ob die Bilder in die E-Mail-Nachricht aufgenommen werden sollen.
+Kreuzen Sie die Option **[!UICONTROL Online-Stellen der Bilder]** im **[!UICONTROL Bilder]**-Tab an und geben Sie an, ob die Bilder in die E-Mail eingeschlossen werden sollen.
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Sie können Bilder manuell hochladen, ohne auf die Auslieferungsanalyse zu warten. To do this, click the **[!UICONTROL Upload images now]** link.
-* Sie können einen anderen Pfad für den Zugriff auf die Bilder auf dem Tracking-Server angeben. Geben Sie zu diesem Zweck die Datei in das **[!UICONTROL Image URL]** Feld ein. Dieser Wert setzt den in den Parametern des Installationsassistenten definierten Wert außer Kraft.
+* Durch Klick auf den Link **[!UICONTROL Bilder sofort online stellen...]** werden die Bilder manuell online gestellt, ohne die Versandanalyse abzuwarten.
+* Im Feld **[!UICONTROL URL der Bilder]** können Sie einen anderen Pfad zu den Bildern auf dem Trackingserver angeben. Dieser Wert überschreibt den im Softwareverteilungs-Assistenten angegebenen Wert.
 
 Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relativen Pfadnamen enthält, wird Ihnen je nach Versandparametern vorgeschlagen, die Bilder sofort online zu stellen.
 
@@ -204,25 +204,25 @@ Es soll folgende Versandnachricht mit vier Bildern erstellt werden:
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_1.png)
 
-These images come from a local directory or Web site as you can verify from the **[!UICONTROL Source]** tab.
+Die Bilder stammen aus einem lokalen Verzeichnis oder von einer Webseite, wie Sie im **[!UICONTROL Quelle]**-Tab feststellen können.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_2.png)
 
-Click the **[!UICONTROL Tracking & Images]** icon and then the **[!UICONTROL Images]** tab to start detecting images in the message.
+Wählen Sie das Symbol **[!UICONTROL Tracking &amp; Bilder]** und dann den Tab **[!UICONTROL Bilder]** aus, um die Erkennung der in der Nachricht enthaltenen Bilder zu starten.
 
 Für jedes erkannte Bild können Sie den Status prüfen:
 
-* If an image is stored locally or located on another server, even if this server is visible from the outside (on an internet site, for example), it will be detected as **[!UICONTROL Not yet online]**.
-* The images are detected as **[!UICONTROL Already online]** if they were uploaded earlier while creating another delivery.
-* In the deployment wizard, you can define URLs for which image detection is not enabled: uploading these images will be **[!UICONTROL Skipped]**.
+* Lokale oder auf anderen Servern gespeicherte Bilder werden als **[!UICONTROL Noch nicht online]** gekennzeichnet, auch wenn der Server von außerhalb zugänglich ist (beispielsweise bei Bildern einer Webseite).
+* Bilder werden als **[!UICONTROL Bereits online]** gekennzeichnet, wenn Sie zuvor, z. B. bei Erstellung eines anderen Versands, online gestellt wurden.
+* Im Softwareverteilungs-Assistenten können Sie URLs angeben, die bei der Bilderkennung nicht berücksichtigt werden sollen. Das Online-Stellen dieser Bilder wird demnach **[!UICONTROL Ignoriert]**.
 
 >[!NOTE]
 >
->Images are identified by their content and not by their access paths. This means that an image uploaded previously under a different name or in a different directory will be detected as **[!UICONTROL Already online]**.
+>Ein Bild wird über seinen Inhalt und nicht seinen Namen oder Pfad identifiziert. Daher wird auch ein Bild, das zuvor bereits unter einem anderen Namen oder aus einem anderen Verzeichnis online gestellt wurde, als **[!UICONTROL Bereits online]** erkannt.
 
 Bilder werden im Zuge der Nachrichtenanalyse auf den Server geladen, um von außerhalb zugänglich zu sein. Dies gilt nicht für lokal gespeicherte Bilder, die im Vorfeld hochzuladen sind.
 
-Sie können die Vorbereitungen vorantreiben und Bilder hochladen, damit sie von anderen Adobe Campaign-Operatoren angezeigt werden können. Dies kann hilfreich sein, wenn Sie zusammenarbeiten. Klicken Sie dazu auf , **[!UICONTROL Upload the images straightaway...]** um die Bilder auf den Server hochzuladen.
+Es besteht die Möglichkeit, das Online-Stellen der Bilder vorzuziehen, damit beispielsweise andere Adobe-Campaign-Benutzer im Rahmen gemeinsamer Versandprojekte darauf zugreifen können. Wählen Sie hierfür die Option **[!UICONTROL Online-Stellen der Bilder]** und klicken Sie auf den Link , um den Upload der Bilder auf den Server zu starten.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_3.png)
 
@@ -230,11 +230,11 @@ Sie können die Vorbereitungen vorantreiben und Bilder hochladen, damit sie von 
 >
 >Dies löst die Änderung der Bild-URLs und insbesondere der Namen der Bilder aus.
 
-Once the images are online, you can view changes to their names and paths from the **[!UICONTROL Source]** tab of the message.
+Sobald die Bilder online sind, können Sie die Namens- und Pfadänderungen im **[!UICONTROL Quelle]**-Tab der Nachricht prüfen.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_4.png)
 
-Wenn Sie **[!UICONTROL Include the images in the email]** diese Option wählen, können Sie festlegen, welche Bilder in die entsprechende Spalte aufgenommen werden sollen.
+Durch Ankreuzen der Option **[!UICONTROL Bilder in die E-Mail einschließen (multipart related)]** haben Sie die Möglichkeit, in der entsprechenden Spalte für jedes Bild anzugeben, ob es in die E-Mail eingeschlossen werden soll oder nicht.
 
 ![](assets/s_ncs_user_images_in_delivery_wiz_5.png)
 
@@ -248,7 +248,7 @@ Die Barcode-Lösung bietet die Möglichkeit, verschiedene ein- oder zweidimensio
 
 Barcodes können in Form eines Bitmaps dynamisch mithilfe eines durch Kundenkriterien definierten Werts erzeugt werden. Personalisierte Barcodes lassen sich dann über E-Mails in Marketingkampagnen integrieren. Der Empfänger kann die Nachricht ausdrucken und sie dem Unternehmen (z. B. bei einem Zahlvorgang) zum Scannen vorlegen.
 
-To insert a barcode into an email, place the cursor in the content where you want to display it, then click the personalization button. Select **[!UICONTROL Include > Barcode...]**.
+Positionieren Sie den Cursor im Inhalt an der Stelle, an der der Barcode eingefügt werden soll, und klicken Sie auf die Personalisierungsschaltfläche. Wählen Sie **[!UICONTROL Einfügen > Barcode...]**.
 
 ![](assets/barcode_insert_14.png)
 
@@ -277,13 +277,13 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
       ![](assets/barcode_insert_12.png)
 
 1. Geben Sie die gewünschte Größe des Barcodes an. Durch Angabe eines Faktors von x1 bis x10 kann die Größe angepasst werden.
-1. Mit dem **[!UICONTROL Value]** Feld können Sie den Wert des Barcodes definieren. Ein Wert kann mit einem bestimmten Angebot übereinstimmen und die Funktion eines Kriteriums sein. Es kann sich dabei um den Wert eines Datenbankfelds handeln, das mit den Kunden verknüpft ist.
+1. Das Feld **[!UICONTROL Wert]** dient der Bestimmung des Barcode-Werts. Dieser kann einem Sonderangebot entsprechen oder durch eine Bedingungsfunktion definiert werden, beispielsweise den Wert eines kundenbezogenen Datenbankfelds.
 
-   Dieses Beispiel zeigt einen EAN-8-Barcode, dem die Kontonummer eines Empfängers hinzugefügt wurde. Um diese Kontonummer hinzuzufügen, klicken Sie auf die Personalisierungsschaltfläche rechts neben dem **[!UICONTROL Value]** Feld und wählen Sie **[!UICONTROL Recipient > Account number]**.
+   Unten stehendes Beispiel zeigt einen EAN-8-Barcode, in dem die Kundennummer eines Empfängers enthalten ist. Klicken Sie auf die Personalisierungsschaltfläche rechts vom Feld **[!UICONTROL Wert]** und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**.
 
    ![](assets/barcode_insert_15.png)
 
-1. The **[!UICONTROL Height]** field lets you configure the height of the barcode without changing its width, by altering the amount of space between each bar.
+1. Im Feld **[!UICONTROL Höhe]** können Sie die Höhe des Barcodes anpassen, ohne die Breite und somit die Abstände zwischen den Balken zu verändern.
 
    Bitte beachten Sie, dass keine einschränkende Kontrolle Ihrer Eingaben in Bezug auf den Barcode-Typ erfolgt. Sollte ein falscher oder nicht kompatibler Wert eingegeben werden, sehen Sie dies erst in der **Vorschau**. In diesem Fall ist der Barcode rot durchkreuzt.
 
@@ -291,11 +291,11 @@ Konfigurieren Sie dann die verschiedenen Elemente je nach Bedarf:
    >
    >Der einem Barcode zugeteilte Wert ist vom Typ abhängig. So muss beispielsweise ein EAN-8-Barcode genau acht Ziffern enthalten.
    >
-   >Mit der Personalisierungsschaltfläche rechts neben dem **[!UICONTROL Value]** Feld können Sie zusätzlich zu dem Wert selbst Daten hinzufügen. Dadurch wird der Barcode angereichert, sofern er vom Barcode-Standard akzeptiert wird.
+   >Die Personalisierungsschaltfläche rechts vom **[!UICONTROL Wert]**-Feld ermöglicht das Hinzufügen von den Wert ergänzenden Daten. Diese reichern den Barcode an, sofern der Barcode-Typ dies zulässt.
    >
-   >For example, if you are using a GS1-128 type barcode and want to enter the account number of a recipient in addition to the value, click the personalization button and select **[!UICONTROL Recipient > Account number]**. If the account number of the selected recipient is entered correctly, the barcode takes it into account.
+   >Wenn Sie beispielsweise einen GS1-128-Barcode verwenden und zusätzlich zum Wert die Kundennummer des Empfängers angeben möchten, klicken Sie auf die Personalisierungsschaltfläche und wählen Sie die Option **[!UICONTROL Empfänger > Kundennummer]**. Wenn die Kundennummer des Empfängers korrekt in der Datenbank gespeichert ist, wird sie im Barcode berücksichtigt.
 
-Nachdem diese Elemente konfiguriert wurden, können Sie Ihre E-Mail abschließen und senden. Um Fehler zu vermeiden, sollten Sie stets sicherstellen, dass Ihr Inhalt korrekt angezeigt wird, bevor Sie eine Bereitstellung durchführen, indem Sie auf die **[!UICONTROL Preview]** Registerkarte klicken.
+Bevor Sie den Versand starten, prüfen Sie im **[!UICONTROL Vorschau]**-Tab, dass der Inhalt wie gewünscht angezeigt wird.
 
 ![](assets/barcode_insert_10.png)
 
@@ -311,13 +311,13 @@ Nachdem diese Elemente konfiguriert wurden, können Sie Ihre E-Mail abschließen
 
 Adobe Campaign unterstützt drei spezifische Formate für E-Mails auf japanischen Mobiltelefonen für den japanischen Markt: **Deco-mail** (DoCoMo Mobiltelefone), **Decore Mail** (Softbank Mobiltelefone) und **Decoration Mail** (KDDI AU Mobiltelefone). Diese Formate unterliegen verschiedenen Einschränkungen hinsichtlich Kodierung, Struktur und Größe. Weiterführende Informationen zu Einschränkungen und Empfehlungen finden Sie in [diesem Abschnitt](#limitations-and-recommendations).
 
-In order for the recipient to correctly receive messages in one of these formats, we recommend selecting **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** or **[!UICONTROL Decoration Mail (KDDI AU)]** in the corresponding profile:
+Damit ein Empfänger, der eines dieser Formate verwendet, Nachrichten korrekt angezeigt bekommt, wird empfohlen, das entsprechende Format **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** oder **[!UICONTROL Decoration Mail (KDDI AU)]** im Empfängerprofil auszuwählen:
 
 ![](assets/deco-mail_03.png)
 
-However, if you leave the **[!UICONTROL Email format]** option as **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** or **[!UICONTROL Text]**, Adobe Campaign will automatically detect (when sending the email) the Japanese format to use so that the message is correctly displayed.
+Wenn Sie hingegen im Feld **[!UICONTROL E-Mail-Format]** eine der Optionen **[!UICONTROL Unbekannt]**, **[!UICONTROL HTML]** oder **[!UICONTROL Text]** auswählen, erkennt Adobe Campaign bei Versand der E-Mail das japanische Format, das zu verwenden ist, um eine korrekte Anzeige zu gewährleisten.
 
-Dieses automatische Erkennungssystem basiert auf der Liste vordefinierter Domänen, die im **[!UICONTROL Management of Email Formats]** E-Mail-Regelsatz definiert sind. Weitere Informationen zum Verwalten von E-Mail-Formaten finden Sie auf [dieser Seite](../../installation/using/email-deliverability.md#managing-email-formats).
+Dieses automatische Erkennungssystem beruht auf der in den E-Mail-Regeln **[!UICONTROL E-Mail-Formatverwaltung]** gespeicherten Domainliste. Weiterführende Informationen zur Verwaltung von E-Mail-Formaten finden Sie auf [dieser Seite](../../installation/using/email-deliverability.md#managing-email-formats).
 
 ### Einschränkungen und Empfehlungen {#limitations-and-recommendations}
 
@@ -348,7 +348,7 @@ In Adobe Campaign haben Sie die Möglichkeit zu prüfen, ob das Format Ihrer Nac
 
 Sobald Sie Ihren Inhalt erstellt und den Betreff der E-Mail angegeben haben, können Sie Anzeige und Formatierung der Nachricht kontrollieren.
 
-Auf der **[!UICONTROL Preview]** Registerkarte des Fensters zur Inhaltsbearbeitung können Sie durch Klicken auf **[!UICONTROL More... > Deco-mail diagnostic]** Folgendes tun:
+Verwenden Sie hierzu im **[!UICONTROL Vorschau]**-Tab des Fensters zur Inhaltsbearbeitung den Link **[!UICONTROL Details...> Deco-Mail-Prüfung]**. Hier können Sie:
 
 * prüfen, ob die Tags des HTML-Inhalts den mit dem japanischen Format einhergehenden Einschränkungen entsprechen;
 * prüfen, ob die Anzahl an Bildern in der Nachricht nicht die durch das Format vorgegebene Höchstgrenze von maximal 20 Bildern überschreitet;
@@ -358,11 +358,11 @@ Auf der **[!UICONTROL Preview]** Registerkarte des Fensters zur Inhaltsbearbeitu
 
 #### Typologieregel ausführen {#running-typology-rule}
 
-In addition to the previewing diagnosis, a second check is carried out when sending a proof or a delivery: a specific typology rule, **[!UICONTROL Deco-mail check]**, is started during the analysis.
+Zusätzlich zur Vorschauprüfung wird eine zweite Prüfung durchgeführt, die an einen Testversand oder einen normalen Versand gekoppelt ist: Eine spezifische Typologieregel, die **[!UICONTROL Deco-mail-Analyse]**, kommt im Zuge der Analyse zur Anwendung.
 
 >[!CAUTION]
 >
->This typology rule is only executed if at least one of the recipients is configured to receive emails in **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** or **[!UICONTROL Decoration Mail (KDDI AU)]** format.
+>Diese Typologieregel wird nur dann ausgeführt, wenn mindestens ein Empfängerprofil für den Empfang von E-Mails im Format **[!UICONTROL Deco-mail (DoCoMo)]**, **[!UICONTROL Decore Mail (Softbank)]** oder **[!UICONTROL Decoration Mail (KDDI AU)]** konfiguriert wurde.
 
 Mithilfe dieser Regel können Sie sich vergewissern, ob bei der Sendung die von den japanischen Anbietern vorgegebenen [Formateinschränkungen](#limitations-and-recommendations) respektiert werden, insbesondere im Hinblick auf die Gesamtgröße der E-Mail, die jeweilige Größe ihrer HTML- und Textanteile, die Anzahl an Bildern in der Nachricht sowie die Tags des HTML-Inhalts.
 
@@ -370,7 +370,7 @@ Mithilfe dieser Regel können Sie sich vergewissern, ob bei der Sendung die von 
 
 Sie können Testsendungen durchführen, um Ihren Versand zu testen. Wenn Sie dabei Ersatzadressen verwenden, geben Sie bitte die Adressen ein, die dem E-Mail-Format des verwendeten Profils entsprechen.
 
-Beispielsweise können Sie die Adresse eines Profils durch test@softbank.ne.jp ersetzen, wenn das E-Mail-Format für dieses Profil zuvor in **[!UICONTROL Decore Mail (Softbank)]** ) definiert wurde.
+Beispielsweise können Sie die Adresse eines Profils durch test@softbank.ne.jp ersetzen, wenn das E-Mail-Format für dieses Profil zuvor in **[!UICONTROL Decore Mail (Softbank)]** definiert wurde.
 
 ![](assets/deco-mail_05.png)
 
@@ -385,7 +385,7 @@ Für den Versand einer E-Mail an Empfänger mit japanischen E-Mail-Formaten mit 
 
 Erstellen Sie einen Workflow mit zwei Sendungen: einen Versand, der für japanische Mobiltelefone bestimmt ist, und einen zweiten für Empfänger mit einem Standard-E-Mail-Format.
 
-To do this, use the **[!UICONTROL Split]** activity in your workflow and define the Japanese email formats (Deco-mail, Decoration Mail and Decore Mail) as filtering conditions.
+Verwenden Sie hierfür eine **[!UICONTROL Aufspaltung]**-Aktivität in Ihrem Workflow und definieren Sie die japanischen E-Mail-Formate (Deco-mail, Decoration Mail und Decore Mail) als Filterbedingungen.
 
 ![](assets/deco-mail_08.png)
 
@@ -393,7 +393,7 @@ To do this, use the **[!UICONTROL Split]** activity in your workflow and define 
 
 #### Versand für alle Formate erstellen {#designing-a-delivery-for-all-formats}
 
-When Adobe Campaign dynamically manages the formats according to the domain (profiles with email formats defined as **[!UICONTROL Unknown]**, **[!UICONTROL HTML]** or **[!UICONTROL Text]** ), you can send the same delivery to all of your recipients.
+Wenn Adobe Campaign die Formate dynamisch in Abhängigkeit von der Domain verwaltet (Profile mit E-Mail-Format **[!UICONTROL Unbekannt]**, **[!UICONTROL HTML]** oder **[!UICONTROL Text]**), können Sie für alle Empfänger denselben Versand verwenden.
 
 Der Nachrichteninhalt wird sowohl für Empfänger mit japanischen Mobiltelefonen als auch für Standardempfänger korrekt angezeigt.
 
