@@ -14,7 +14,7 @@ discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3641e438784d40aa097f8c89ca19bdbb52f4bc7d
 
 ---
@@ -28,16 +28,16 @@ Die Hauptfunktionen ermöglichen eine präzise Abstimmung von Marketing-Kommunik
 
 >[!NOTE]
 >
->Adobe Campaign bietet Tools zur Überwachung der Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie unter [Zustellbarkeit, erste Schritte](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html) und [Verwaltung der Zustellbarkeit](../../delivery/using/about-deliverability.md).
+>Adobe Campaign bietet Tools zur Überwachung der Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie unter [Zustellbarkeit, erste Schritte](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliverability.html) und [Verwaltung der Zustellbarkeit](../../delivery/using/about-deliverability.md).
 
 Sendungen können automatisiert werden, indem ein Versand vorbereitet und/oder über einen Workflow gesendet wird. Weiterführende Informationen zu Versandaktivitäten in Workflows finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
 
 Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 
-1. **E-Mail-Kanal**: Mit E-Mail-Zustellungen können Sie personalisierte E-Mails an die Zielgruppe senden. Siehe [Informationen zum E-Mail-Kanal](../../delivery/using/about-email-channel.md).
-1. **Direct Mail-Kanal**: Mit Direktversand können Sie eine Extraktionsdatei erstellen, die Daten zur Zielpopulation enthält. Weitere Informationen finden Sie unter [Informationen zum Direktpostkanal](../../delivery/using/about-direct-mail-channel.md).
-1. **Mobilkanal**: Mit Auslieferungen auf mobilen Kanälen können Sie personalisierte SMS- oder LINE-Nachrichten an die Zielgruppe senden. Siehe [SMS-Kanal](../../delivery/using/sms-channel.md).
-1. **Mobilanwendungskanal**: Mit mobilen App-Auslieferungen können Sie Benachrichtigungen an iOS- und Android-Systeme senden. Weitere Informationen finden Sie im Kapitel [Mobile App-Kanal](../../delivery/using/about-mobile-app-channel.md) .
+1. **E-Mail-Kanal**: Ein E-Mail-Versand richtet personalisierte elektronische Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [Über den E-Mail-Kanal](../../delivery/using/about-email-channel.md).
+1. **Briefpost-Kanal**: Ein Briefpost-Versand erzeugt eine Ausgabedatei, die die Daten der Zielpopulation enthält. Weitere Informationen finden Sie unter [Über den Briefpost-Kanal](../../delivery/using/about-direct-mail-channel.md).
+1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](../../delivery/using/sms-channel.md).
+1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](../../delivery/using/about-mobile-app-channel.md).
 
    Andere Kanäle werden auf [dieser Seite](../../delivery/using/other-channels.md) beschrieben.
 
@@ -52,7 +52,7 @@ Je nach Kanal sind folgende Versandmodi verfügbar:
 * Gebündelter Versand via Adobe Campaign (Standardmodus beim E-Mail-Kanal).
 * Externer Versand über spezialisierte Dienstleister. In diesem Fall erzeugt der Versand-Assistent eine Ausgabedatei. (Standardmodus beim Briefpost-Kanal.)
 
-Externe Konten werden über den **[!UICONTROL Administration > Platform > External accounts]** Knoten konfiguriert. Diese Konfiguration sollte nur von erfahrenen Benutzern durchgeführt werden.
+Die hierfür benötigten externen Konten werden im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** verwaltet. Die Konfiguration sollte von erfahrenen Benutzern vorgenommen werden.
 
 ## E-Mail-Versand {#email-deliveries}
 
@@ -64,7 +64,7 @@ Verschiedene Typen von E-Mails können gesendet werden:
 * Wiederkehrende E-Mails: Ein und dieselbe E-Mail wird regelmäßig gesendet und die Sendungen und Berichte werden regelmäßig aggregiert. Die E-Mail selbst bleibt unverändert, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weiterführende Informationen dazu finden Sie unter [Wiederkehrender Versand](../../workflow/using/recurring-delivery.md).
 * Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe auch [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 
-Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliveryBestPractices.html).
+Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
 
 Weiterführende Informationen zu den unterschiedlichen Versandarten finden Sie in [diesem Abschnitt](../../delivery/using/types-of-deliveries.md).
 
@@ -78,7 +78,7 @@ LINE-Nachrichten können Text, Bilder und Links enthalten.
 
 Folgende Voraussetzungen müssen gegeben sein, um SMS- oder LINE-Nachrichten an Mobiltelefone zu senden:
 
-* An external account configured on the **[!UICONTROL Mobile (SMS)]** channel or on the **[!UICONTROL LINE]** channel.
+* Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** oder **[!UICONTROL LINE]** konfiguriert wurde.
 * Eine SMS- oder LINE-Versandvorlage, die auf das externe Konto Bezug nimmt.
 
 ## Push-Benachrichtigungen {#push-notifications}
