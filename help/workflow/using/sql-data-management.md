@@ -14,7 +14,7 @@ discoiquuid: 18d6f5e1-308f-4080-b7c4-ebf836f74842
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ---
@@ -28,14 +28,14 @@ Die Aktivität **SQL Data Management** ermöglicht Ihnen das Schreiben eigener S
 
 Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben sein:
 
-* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Das **[!UICONTROL FDA]** (Federated Data Access-)Paket muss daher auf Ihrer Instanz installiert sein (siehe [diesen Abschnitt](../../platform/using/about-fda.md)).
+* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Deshalb muss das **[!UICONTROL FDA]** (Federated Data Access) Package auf Ihrer Instanz installiert sein (siehe [diesen Abschnitt](../../platform/using/about-fda.md)).
 * Das Outbound-Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verbunden sein (weitere Informationen zu Datenschemata finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-reference.md)).
-* Der Operator, der den Workflow ausführt, muss über die **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** benannte Berechtigung verfügen. For more on named rights, refer to [this section](../../platform/using/access-management.md#named-rights).
+* Der Benutzer, der den Workflow ausführt, muss die spezifische Berechtigung **[!UICONTROL USE SQL DATA MANAGEMENT ACTIVITY (useSqlDmActivity)]** besitzen. Weitere Informationen zu spezifischen Berechtigungen finden Sie in [diesem Abschnitt](../../platform/using/access-management.md#named-rights).
 
 ## SQL-Data-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 
-1. Specify the activity **[!UICONTROL Label]**.
-1. Wählen Sie die **[!UICONTROL External account]** zu verwendende Option und wählen Sie dann die mit diesem externen Konto verknüpfte **[!UICONTROL Outbound schema]** aus.
+1. Spezifizieren Sie die Aktivität in **[!UICONTROL Titel]**.
+1. Wählen Sie das zu verwendende **[!UICONTROL externe Konto]** aus und danach das mit diesem externen Konto verknüpfte **[!UICONTROL Outbound-Schema]**.
 
    >[!CAUTION]
    >
@@ -47,7 +47,7 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
    >
    >Der Codierer des SQL-Skripts ist dafür verantwortlich, dass das SQL-Skript funktioniert und seine Referenzen (Feldnamen etc.) dem Outbound-Schema entsprechen.
 
-   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die **[!UICONTROL The SQL script is contained in an entity stored in the database]** Option aus. SQL-Skripten müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Configuration]** / **[!UICONTROL SQL scripts]** erstellt und gespeichert werden.
+   Wenn Sie einen vorhandenen SQL-Code laden möchten, wählen Sie die Option **[!UICONTROL Der SQL-Code ist in einer in der Datenbank gespeicherten Entität enthalten]** aus. SQL-Skripts müssen im Menü **[!UICONTROL Administration]** / **[!UICONTROL Konfiguration]** / **[!UICONTROL SQL-Scripts]** erstellt und gespeichert werden.
 
    Andernfalls können Sie Ihr SQL-Skript auch in den dafür vorgesehenen Bereich kopieren.
 
@@ -60,9 +60,9 @@ Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben se
 
       >[!NOTE]
       >
-      >Der Wert (&#39;&#39;) entspricht dem Feld **[!UICONTROL Name]** Name in den Transition-Eigenschaften.
+      >Der Wert (&#39;name&#39;) entspricht dem Feld **[!UICONTROL Name]** in den Transition-Eigenschaften.
 
-1. Wenn das SQL-Skript bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, heben Sie die Auswahl der **[!UICONTROL Automatically create work table]** Option auf. Andernfalls wird eine Arbeitstabelle automatisch erstellt, sobald der Workflow ausgeführt wird.
+1. Wenn das SQL-Skript bereits Befehle zum Erstellen einer ausgehenden Arbeitstabelle enthält, deselektieren Sie die Option **[!UICONTROL Arbeitstabelle automatisch erstellen]**. Andernfalls wird automatisch eine Arbeitstabelle erstellt, wenn der Workflow ausgeführt wird.
 1. Wählen Sie **[!UICONTROL Ok]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
 Die Aktivität ist jetzt konfiguriert und kann im Workflow ausgeführt werden.
