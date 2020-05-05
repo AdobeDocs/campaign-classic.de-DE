@@ -14,7 +14,7 @@ discoiquuid: 0d65d47f-1f51-4757-8b1d-7d4a8ddc3c97
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 ---
@@ -22,13 +22,13 @@ source-git-commit: d2ffbd97a22839975293cc792d59f1ba73b7c877
 
 # Über technische Workflows{#about-technical-workflows}
 
-The workflows detailed in this section are installed with the different Adobe Campaign built-in packages. These packages, and related technical workflows, depend on your licence agreement. By default, they are available in a sub-folder of the following node: **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Technical workflows]**.
+Die in diesem Abschnitt beschriebenen Workflows werden mit den verschiedenen in Adobe Campaign integrierten Packages installiert. Diese Packages und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung ab. Standardmäßig sind sie in einem Unterordner des folgenden Knotens verfügbar: **[!UICONTROL Adminstration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Technische Workflows]**.
 
 >[!NOTE]
 >
->Technical workflows related to the Message Center module are available by default in the **[!UICONTROL Administration]** > **[!UICONTROL Production]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technical workflows]** node.
+>Die mit dem Message Center verbundenen technischen Workflows sind standardmäßig im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Message Center]** > **[!UICONTROL Technische Workflows]** verfügbar.
 
-For more on how to monitor technical workflows, refer to the [dedicated section](../../workflow/using/monitoring-technical-workflows.md).
+Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-technical-workflows.md).
 
 In diesem Abschnitt finden Sie Informationen über technische Workflows, die folgende Packages beinhalten:
 
@@ -36,8 +36,8 @@ In diesem Abschnitt finden Sie Informationen über technische Workflows, die fol
 * [Kampagne](../../workflow/using/campaign.md)
 * [Web Analytics](../../workflow/using/web-analytics.md)
 * [Distributed Marketing](../../workflow/using/distributed-marketing.md)
-* [Überwachung der Lieferbarkeit (E-Mail-Zustellbarkeit)](../../workflow/using/email-deliverability.md)
-* [Inbox-Rendering (IR)](../../workflow/using/inbox-rendering.md)
+* [Zustellbarkeits-Monitoring (Email Deliverability)](../../workflow/using/email-deliverability.md)
+* [Inbox Rendering (IR)](../../workflow/using/inbox-rendering.md)
 * [Interaction](../../workflow/using/interaction.md)
 * [Steuerung des Angebotsmoduls](../../workflow/using/control-of-offer-engine.md)
 * [Message Center (Kontrolle)](../../workflow/using/message-center--control-.md)
