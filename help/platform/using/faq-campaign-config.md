@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c5a9823b2feb6e2f721a2ad15dc08c1abe672054
+translation-type: tm+mt
+source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -45,9 +48,9 @@ Erfahrene Benutzer können die Tracking-Funktionen in der Campaign-Instanz konfi
 
 ## Wie kann ich den E-Mail-Versand konfigurieren? {#how-to-configure-email-deliverability-}
 
-Lesen Sie das [Erste-Schritte-Handbuch zur Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und den Abschnitt zur Konfiguration des E-Mail-Versands, um zu erfahren, wie Sie Ihre Instanz konfigurieren können, um die Versandfunktion von Campaign optimal zu nutzen.
+Lesen Sie zusätzlich zum Abschnitt [Lieferbarkeitskonfiguration](../../delivery/using/about-deliverability.md#configuration) die technischen Empfehlungen für die Bereitstellung, um zu verstehen, wie Sie Ihre Instanz konfigurieren, um die Kampagne für die Bereitstellung von Funktionen zu maximieren.
 
-[Hier erfahren Sie mehr darüber](../../installation/using/email-deliverability.md).
+[Hier erfahren Sie mehr darüber](../../delivery/using/technical-recommendations.md).
 
 ## Wie kann ich die Inhaltsvalidierung implementieren? {#how-can-i-implement-content-approval-}
 
@@ -105,7 +108,7 @@ Wenn Sie zum Beispiel Probleme damit haben, neue Logos richtig darzustellen oder
 
 1. Löschen Sie diese XML-Dateien und die zugehörigen Ordner.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Löschen Sie jedoch nicht die Datei „nlclient_cnx.xml“.
 
