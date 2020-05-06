@@ -14,8 +14,11 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
+translation-type: tm+mt
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '2679'
+ht-degree: 98%
 
 ---
 
@@ -24,12 +27,12 @@ source-git-commit: 4c4e2cfaa9603c42e5e97de1e13318f8541921ca
 
 Im **Versand-Dashboard** können Sie Sendungen beobachten und etwaige Probleme beim Nachrichtenversand erkennen.
 
-**Verwandte Themen**
+**Verwandte Themen:**
 
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md)
-* [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html)
-* [Erste-Schritte-Handbuch: Verwalten der Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html)
+* [Best Practices beim Versand](https://helpx.adobe.com/de/campaign/kb/delivery-best-practices.html)
+* [Verwalten der Zustellbarkeit](../../delivery/using/about-deliverability.md)
 
 ## Versand-Dashboard {#delivery-dashboard}
 
@@ -274,8 +277,8 @@ Auf die Liste aller Sendungen kann im Knoten **[!UICONTROL Kampagnenverwaltung >
 Standardmäßig zeigt die Versandliste die Titel und Status aller im ausgewählten Knoten erstellten Sendungen sowie die Anzahl der zu versendenden, der verarbeiteten und der erfolgreich zugestellten Nachrichten an.
 
 * Die Angabe **[!UICONTROL Zu sendende Nachrichten]** entspricht der Anzahl der Empfänger in der Zielgruppe, nach der Analyse aber vor Absendung.
-* In der Spalte **[!UICONTROL Erfolg]** wird die Anzahl der erfolgreich zugestellten Nachrichten angezeigt.
-* Die Spalte **[!UICONTROL Verarbeitet]** schließlich enthält die Summe der zugestellten und der fehlerhaften Nachrichten.
+* The number of messages in the **[!UICONTROL Success]** column corresponds to the number of messages sent by the server and received by the recipients.
+* The number of **[!UICONTROL Processed]** messages corresponds to the number of messages received plus the number of messages with errors.
 
 Dieselben Informationen werden auch im Versand-Dashboard angezeigt.
 
