@@ -153,7 +153,7 @@ source-git-commit: 04684fd2933ef19a8ebfd6cbe77e78a34c66ffe3
       + [Verbessern der Reputation](delivery/using/improve-reputation.md)
       + [Best Practices zur Rückgewinnung](delivery/using/re-engagement-best-practices.md)
       + [Technische Empfehlungen](delivery/using/technical-recommendations.md)
-      + [Technisches Monitoring](delivery/using/technical-monitoring.md)
+      + [Zustellbarkeits-Monitoring](delivery/using/monitoring-deliverability.md)
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Blacklist-Datenbanken](delivery/using/blacklisting-databases.md)
