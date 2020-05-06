@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 5f73f6bc4cbc00c1b4e2f2a75e27a3056b517006
+workflow-type: tm+mt
+source-wordcount: '2464'
+ht-degree: 97%
 
 ---
 
@@ -78,12 +81,6 @@ DKIM geht auf eine Kombination der Authentifizierungsprinzipien DomainKeys von Y
 
 DKIM hat sozusagen die **DomainKeys**-Authentifizierung ersetzt.
 
->[!IMPORTANT]
->
->Bei gehosteten oder hybriden Installationen erfolgt die DKIM-E-Mail-Authentifizierungssignatur durch den Enhanced MTA, wenn Sie auf den Enhanced MTA aktualisiert haben. DKIM-signing by the native Campaign MTA will be turned off within the **[!UICONTROL Domain management]** table as part of the Enhanced MTA upgrade.
->
->Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
-
 Für die Verwendung von DKIM müssen folgende Voraussetzungen gegeben sein:
 
 * **Sicherheit**: Verschlüsselung ist ein Hauptelement von DKIM, und seit Frühjahr 2013 gewährleistet die in den Best Practices empfohlene Verschlüsselungsgröße von 1024b dessen hohen Sicherheitsstandard. DKIM-Schlüssel mit einer unter diesem Wert liegenden Größe werden von den meisten Zugangsanbietern als ungültig angesehen.
@@ -92,10 +89,14 @@ Für die Verwendung von DKIM müssen folgende Voraussetzungen gegeben sein:
 
 >[!NOTE]
 >
->* Sollten Sie DomainKeys für Ihre Adobe-Campaign-Instanz konfiguriert haben, müssen Sie lediglich **dkim** in den Regeln zur Verwaltung von Domains auswählen. Gehen Sie andernfalls bei der Konfiguration (privater/öffentlicher Schlüssel) genauso vor wie bei DomainKeys.
+>* Wenn Sie DomainKeys für Ihre Adobe Campaign-Instanz konfiguriert haben, müssen Sie nur **dkim** in den [Domänenverwaltungsregeln](../../delivery/using/understanding-delivery-failures.md#domain-management)auswählen. Andernfalls führen Sie die gleichen Konfigurationsschritte (privater/öffentlicher Schlüssel) wie bei DomainKeys aus.
 >* Es ist nicht notwendig, sowohl DomainKeys als auch DKIM für dieselbe Domain zu aktivieren, da es sich bei DKIM um eine verbesserte Version von DomainKeys handelt.
 >* Folgende Domains validieren aktuell DKIM: AOL, Gmail.
 
+
+>[!IMPORTANT]
+>
+>For hosted or hybrid installations, if you have upgraded to the [Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html), DKIM email authentication signing is done by the Enhanced MTA for all messages with all domains.
 
 ### DMARC {#dmarc}
 
@@ -148,8 +149,8 @@ Zur Implementierung eines Feedback Loops für eine Instanz sind folgende Element
 
 Die Implementierung eines einfachen Feedback Loop in Adobe Campaign verwendet die Bounce-Nachrichtenfunktionalität. Das Feedback Loop-Postfach wird als ein Bounce-Postfach verwendet. Es wird eine Regel zur Erkennung dieser Nachrichten definiert. Die E-Mail-Adressen der Empfänger, die die Nachricht als Spam gemeldet haben, werden der Quarantäneliste hinzugefügt.
 
-* Erstellen oder ändern Sie eine Absprung-Mail-Regel, **Feedback_loop**, in **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** mit dem Grund **Weigerung** und dem Typ **Hard**.
-* If a mailbox has been defined specially for the feedback loop, define the parameters to access it by creating a new external Bounce Mails account in **[!UICONTROL Administration > Platform > External accounts]**.
+* Erstellen oder bearbeiten Sie im Knoten **[!UICONTROL Administration > Kampagnen > Unzustellbarkeitsverwaltung > E-Mail-Regeln]** eine Bounce-Message-Regel **Feedback_loop** und geben Sie dabei den Grund **Abgelehnt** sowie den Typ **Hard** an.
+* Wenn speziell für das Feedback Loop ein Postfach definiert wurde, definieren Sie die dafür geltenden Zugriffsparameter, indem Sie unter **[!UICONTROL Administration > Plattform > Externe Konten]** ein neues externes Bounce-Message-Konto erstellen.
 
 Der Mechanismus zur Verarbeitung von Beschwerdebenachrichtigungen ist sofort funktionstüchtig. Um die korrekte Funktionsweise der Regel sicherzustellen, können Sie die Konten zeitweise deaktivieren, damit sie diese Nachrichten nicht abrufen. Sie können die Inhalte des Feedback-Loop-Postfachs dann manuell überprüfen. Führen Sie auf dem Server die folgenden Befehle aus:
 
@@ -245,7 +246,7 @@ Die Regel muss das Script zur Erzeugung der Befehlszeile beinhalten und im E-Mai
 
 SMTP (Simple Mail Transfer Protocol) ist ein Internet-Standard für die E-Mail-Übertragung.
 
-Die SMTP-Fehler, die nicht von einer Regel überprüft werden, werden im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Delivery log qualification]** angezeigt. Diese Fehlermeldungen werden standardmäßig als unerreichbar weiche Fehler interpretiert. Die häufigsten Fehler müssen identifiziert und eine entsprechende Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > hinzugefügt werden, **[!UICONTROL Mail rule sets]** wenn Sie das Feedback von den SMTP-Servern korrekt qualifizieren möchten. Andernfalls führt die Plattform unnötige weitere Zustellversuche durch (bei Unbekannten Nutzern) oder legt nach einer bestimmten Anzahl von Tests fälschlicherweise bestimmte Empfänger in die Quarantäne.
+Nicht mithilfe einer Regel überprüfte SMTP-Fehler sind im Ordner **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Unzustellbarkeitsverwaltung]** > **[!UICONTROL Versandlogqualifizierung]** aufgelistet. Diese Fehlermeldungen werden standardmäßig als unerreichbare Softbounces interpretiert. Wenn Sie die Ausgabe der SMTP-Server korrekt qualifizieren möchten, müssen die häufigsten Fehler identifiziert und in **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Unzustellbarkeitsverwaltung]** > **[!UICONTROL E-Mail-Regeln]** die entsprechende Regel hinzugefügt werden. Andernfalls wird die Plattform (im Fall unbekannter Nutzer) unnötige weitere Zustellversuche unternehmen oder bestimmte Empfänger nach einer gewissen Anzahl an Versuchen fälschlicherweise unter Quarantäne stellen.
 
 ### Dedizierte IP-Adressen {#dedicated-ips}
 
