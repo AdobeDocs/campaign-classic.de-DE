@@ -63,7 +63,7 @@ Im Folgenden finden Sie eine Liste von Artikeln zu Best Practices für die Anwen
 
 Im Folgenden finden Sie eine Liste der Best Practices und Artikel im Zusammenhang mit der Lieferbarkeit:
 
-* IP-Ruf: Wenn der IP-Ruf nicht gut genug ist, wirkt sich dies auf die Leistung aus. Das **Lieferbarkeitsüberwachungsmodul** bietet verschiedene Tools zur Verfolgung der Leistung Ihrer Plattform. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/technical-monitoring.md).
+* IP-Ruf: Wenn der IP-Ruf nicht gut genug ist, wirkt sich dies auf die Leistung aus. Das **Lieferbarkeitsüberwachungsmodul** bietet verschiedene Tools zur Verfolgung der Leistung Ihrer Plattform. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/monitoring-deliverability.md).
 * IP-Aufwärmen: die IP-Aufwärmphase wird vom Zustellteam durchgeführt. Dazu gehört die schrittweise Erhöhung der Anzahl der E-Mails durch neue IPs über einen Zeitraum von einigen Wochen.
 * IP-Affinitätseinstellung: eine falsche IP-Affinitätseinstellung kann die E-Mails ganz stoppen (inkorrekter Operator-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
 * E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im Bericht [Bereitstellungsdurchsatz](../../reporting/using/delivery-reports.md#delivery-throughput) die Anzahl der nach Stunde übertragenen Byte.
