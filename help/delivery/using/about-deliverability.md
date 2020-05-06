@@ -12,8 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 68756f920fbc8658cff552615adbf023b4c5e3aa
+translation-type: tm+mt
+source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+workflow-type: tm+mt
+source-wordcount: '475'
+ht-degree: 100%
 
 ---
 
@@ -47,4 +50,4 @@ Was genau ist E-Mail-Zustellbarkeit? Und wie können Marketer die Zustellbarkeit
 
 Die Zustellbarkeit von E-Mails hängt von verschiedenen Faktoren ab, die bestimmen, ob eine Nachricht innerhalb kurzer Zeit über eine persönliche E-Mail-Adresse ihr Ziel in der erwarteten Qualität bezüglich Inhalt und Format erreicht. Diese Faktoren können in vier Bereiche zusammengefasst werden: Datenqualität, Nachricht und Inhalt, Versandinfrastruktur und Reputation. Gemeinsam bilden sie die Grundlage für ein erfolgreiches E-Mail-Zustellprogramm. Im Folgenden werden diese vier Grundelemente erläutert und Best Practices beschrieben, mit denen sichergestellt werden kann, dass E-Mails den gewünschten Posteingang erreichen und E-Mail-Marketing-Programme profitabel sind.
 
-![](assets/deliverability_overview_2.png)
+<!--![](assets/deliverability_overview_2.png)-->
