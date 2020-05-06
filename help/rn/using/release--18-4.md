@@ -24,7 +24,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4.5 – Build 8937{#release-18-4-5-build-8937}
 
-21. November 2018
+_21. November 2018_
 
 **Neuheiten**
 
@@ -51,7 +51,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4.4 – Build 8936{#release-18-4-4-build-8936}
 
-1. August 2018
+_1. August 2018_
 
 **Neuheiten**
 
@@ -68,7 +68,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4.3 – Build 8935{#release-18-4-3-build-8935}
 
-22. Juni 2018
+_22. Juni 2018_
 
 **Neuheiten**
 
@@ -82,7 +82,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4.2 – Build 8932{#release-18-4-2-build-8932}
 
-22. Mai 2018
+_22. Mai 2018_
 
 **Neuheiten**
 
@@ -93,7 +93,7 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 ## Version 18.4 – Build 8931{#release-18-4-build-8931}
 
-24. April 2018
+_24. April 2018_
 
 **Neue Funktionen?**
 
