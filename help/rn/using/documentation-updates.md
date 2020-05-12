@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0b3622bb0ac95eff61e2d96332e67623dffa68be
+source-git-commit: 2e82605eda5bccd2e5604614acd4cb7d646822fc
+workflow-type: tm+mt
+source-wordcount: '6516'
+ht-degree: 98%
 
 ---
 
@@ -26,15 +29,25 @@ Auf dieser Seite finden Sie eine nach Version geordnete Übersicht neuer Funktio
 
 Lesen Sie auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md).
 
+## Mai 2020 {#may-2020}
+
+Der Abschnitt zur Überwachung der Lieferbarkeit wurde verschoben und neu organisiert. [mehr dazu](../../delivery/using/monitoring-deliverability.md)
+
+Der Abschnitt zur Fehlerbehebung bei der Bereitstellung wurde verschoben und aktualisiert. [mehr dazu](../../delivery/using/deliverability-faq.md)
+
+Der Abschnitt Starten einer neuen Plattform wurde verbessert. [mehr dazu](../../delivery/using/starting-new-platform.md)
+
+Der Abschnitt Senden von transaktionalen E-Mails mit Anlagen wurde verschoben und aktualisiert. [mehr dazu](../../message-center/using/transactional-email-with-attachments.md)
+
 ## April 2020 {#april-2020}
 
-Die Tabelle mit den FDA-Rechten wurde in die Dokumentation Zugriff auf eine externe Datenbank (FDA) verschoben. [mehr dazu](../../platform/using/remote-database-access-rights.md)
+Die Tabelle mit den FDA-Berechtigungen wurde in die Dokumentation „Zugriff auf eine externe Datenbank (FDA)“ verschoben. [mehr dazu](../../platform/using/remote-database-access-rights.md)
 
-Die FAQs wurden mit Tipps zum Löschen des weichen und harten Cache aktualisiert. [mehr dazu](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
+Die FAQs wurden um Tipps zum Löschen von Soft Cache und Hard Cache erweitert. [mehr dazu](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
-Der Abschnitt Best Practices für das Datenmodell wurde um zusätzliche Informationen zu Indizes erweitert. [mehr dazu](../../configuration/using/data-model-best-practices.md#indexes)
+Der Abschnitt mit Best Practices für das Datenmodell wurde um zusätzliche Informationen zu Indizes erweitert. [mehr dazu](../../configuration/using/data-model-best-practices.md#indexes)
 
-Der Abschnitt, der das vordefinierte Datenmodell des Adobe Campaigns beschreibt, wurde aktualisiert und enthält weitere Informationen zu den einzelnen vordefinierten Datenmodellen sowie Links zu den entsprechenden Modulen. [mehr dazu](../../configuration/using/data-model-description.md)
+Der Abschnitt, in dem das vordefinierte Datenmodell von Adobe Campaign beschrieben wird, wurde aktualisiert und enthält weitere Details zu den einzelnen nativen Datenmodellen sowie Links zu den entsprechenden Modulen. [mehr dazu](../../configuration/using/data-model-description.md)
 
 Anwendungsfälle aus dem Handbuch &quot;Automatisieren mit Workflows&quot;wurden in thematische Abschnitte umstrukturiert. [mehr dazu](../../workflow/using/using-the-local-approval-activity.md)
 
@@ -46,69 +59,69 @@ Der Adobe Campaign Enhanced MTA-Artikel wurde aktualisiert. Sie gilt jetzt nur f
 
 Die Seite mit Best Practices für das Datenmodell wurde um neue Abschnitte wie [Sequenzen](../../configuration/using/data-model-best-practices.md#sequences), [Leistung](../../configuration/using/data-model-best-practices.md#performance) und [große Tabellen](../../configuration/using/data-model-best-practices.md#large-tables)erweitert. [mehr dazu](../../configuration/using/data-model-best-practices.md)
 
-Es steht jetzt ein neuer Abschnitt zur Verfügung, in dem das vordefinierte Datenmodell des Adobe Campaigns und die vordefinierte Tabelleninteraktion beschrieben werden. [mehr dazu](../../configuration/using/data-model-description.md)
+Es steht jetzt ein neuer Abschnitt zur Verfügung, in dem das vordefinierte Datenmodell von Adobe Campaign und die native Tabelleninteraktion beschrieben werden. [mehr dazu](../../configuration/using/data-model-description.md)
 
 Zusätzliche Ressourcen wurden zur Startseite der Dokumentation hinzugefügt. [mehr dazu](../../campaign-classic-home.md)
 
-Es wurde ein Anwendungsfall hinzugefügt, der beschreibt, wie ein dynamische Angebot aus Adobe-Zielgruppe in eine E-Mail in Adobe Campaign integriert werden kann. [mehr dazu](../../integrations/using/inserting-a-dynamic-image.md)
+Es wurde ein Anwendungsfall hinzugefügt, der beschreibt, wie ein dynamisches Angebot aus Adobe Target in eine E-Mail in Adobe Campaign integriert werden kann. [mehr dazu](../../integrations/using/inserting-a-dynamic-image.md)
 
 Ein neuer Abschnitt mit den verschiedenen Sprachen, die in Adobe Campaign verfügbar sind, ist jetzt verfügbar. [mehr dazu](../../platform/using/adobe-campaign-workspace.md#languages)
 
-Auf der Seite Zugriffsverwaltung wurden weitere Informationen zu Spezifische Berechtigungen aktualisiert. [Mehr dazu](../../platform/using/access-management.md#named-rights)
+Auf der Seite „Zugriffsverwaltung“ wurden weitere Informationen zu spezifischen Berechtigungen aktualisiert. [Mehr dazu](../../platform/using/access-management.md#named-rights)
 
 ## Februar 2020 {#february-2020}
 
-Es steht jetzt ein neuer Abschnitt zur Verfügung, in dem Best Practices und wichtige Empfehlungen beim Entwerfen des Adobe Campaign-Datenmodells erläutert werden. [mehr dazu](../../configuration/using/data-model-best-practices.md)
+Es gibt jetzt einen neuen Abschnitt, in dem Best Practices und wichtige Empfehlungen zum Entwerfen des Adobe Campaign-Datenmodells erläutert werden. [mehr dazu](../../configuration/using/data-model-best-practices.md)
 
-Der Abschnitt &quot;E-Mail-Zustellbarkeit&quot;wurde in &quot;Technische E-Mail-Konfigurationen&quot;umbenannt. [mehr dazu](../../installation/using/email-deliverability.md)
+Der Abschnitt „E-Mail-Zustellbarkeit“ wurde in „Technische E-Mail-Konfigurationen“ umbenannt. [mehr dazu](../../installation/using/email-deliverability.md)
 
-Das Dokument &quot;Häufig gestellte Fragen zur Auslieferung&quot;wurde um weitere Details zur Fehlermeldung &quot;Kontingente erfüllt&quot;erweitert. [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-deliverability-faq.html#FAQ)
+Das Dokument „Häufig gestellte Fragen zur Zustellbarkeit“ wurde um weitere Details zur Fehlernachricht „Kontingente erfüllt“ erweitert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-deliverability-faq.html#FAQ)
 
-AMP für E-Mail wird jetzt von drei E-Mail-Anbietern (Gmail, Outlook und Mail.ru) unterstützt. Der Abschnitt, der beschreibt, wie interaktive Inhalte mit AMP definiert werden, wurde aktualisiert. [mehr dazu](../../delivery/using/defining-interactive-content.md)
+Da AMP for Email jetzt von drei E-Mail-Anbietern unterstützt wird (Gmail, Outlook und Mail.ru), wurde der Abschnitt aktualisiert, der beschreibt, wie sich mit AMP interaktive Inhalte definieren lassen. [mehr dazu](../../delivery/using/defining-interactive-content.md)
 
-Der Abschnitt zur E-Mail-Archivierung wurde geklärt. [mehr dazu](../../installation/using/email-archiving.md#recommendations-and-limitations)
+Der Abschnitt zur E-Mail-Archivierung wurde näher erläutert. [mehr dazu](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
 ## 20.1 - 17/02/2020{#release-20-1}
 
 **Neue Funktionen in der Version**
 
-Snowflake FDA Connector - [Weitere Informationen](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Snowflake FDA-Connector – [mehr dazu](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
 
-Hadoop FDA Connector-Erweiterungen - [Weitere Informationen](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Hadoop FDA Connector-Erweiterungen – [mehr dazu](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
 
-**Weitere Aktualisierungen der Dokumentation zu dieser Version**
+**Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die [Installations](../../installation/using/before-reading.md)-, [Produktions](../../production/using/foreword.md) - und [Konfigurationsanleitungen](../../configuration/using/additional-parameters.md) wurden mit der neuen Systemeinheit aktualisiert, die vom nlserver-Dienst-Start verwendet wird. Sie können weiterhin /etc/init.d/nlserver6 verwenden. Es wird jedoch empfohlen, jetzt den Befehl &quot;systemCtl&quot;für die Interaktion mit dem nlserver-Dienst zu verwenden.
+Die Anleitungen für [Installation](../../installation/using/before-reading.md), [Produktion](../../production/using/foreword.md) und [Konfiguration](../../configuration/using/additional-parameters.md) wurden mit der neuen systemd-Einheit aktualisiert, die vom nlserver-Dienststart verwendet wird. Sie können weiterhin /etc/init.d/nlserver6 verwenden. Es wird jedoch empfohlen, für die Interaktion mit dem nlserver-Dienst ab jetzt den Befehl „systemctl“ zu verwenden.
 
-Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neue unterstützte Systeme wurden hinzugefügt. Vorfälle zu nicht mehr unterstützten und nicht unterstützten Systemen wurden entfernt. [mehr dazu](../../installation/using/before-reading.md)
+Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neu unterstützte Systeme wurden hinzugefügt. Veraltete Vorfälle und nicht mehr unterstützte Systeme wurden entfernt. [mehr dazu](../../installation/using/before-reading.md)
 
-Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectors aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
+Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 Eine Best Practice zur IP-Affinität wurde dem Installationshandbuch hinzugefügt. [mehr dazu](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-Der Abschnitt zum Arbeitsablauf für die Datenbankbereinigung wurde aktualisiert. Die bereitgestellten Stapelzahlen spiegeln nun die Codeimplementierung wider. [mehr dazu](../../production/using/database-cleanup-workflow.md)
+Der Abschnitt zum Workflow für die Datenbankbereinigung wurde aktualisiert. Die bereitgestellten Batch-Zahlen spiegeln nun die Code-Implementierung wider. [mehr dazu](../../production/using/database-cleanup-workflow.md)
 
-Eine Einschränkung der FDA über HTTP wurde dem Handbuch für Transaktionsnachrichten hinzugefügt. [mehr dazu](../../production/using/database-cleanup-workflow.md)
+Eine Einschränkung zu FDA über HTTP wurde dem Handbuch zu Transaktionsnachrichten hinzugefügt. [mehr dazu](../../production/using/database-cleanup-workflow.md)
 
-Es wurden Informationen zur neuen Option hinzugefügt, mit der Sie einen Timeout-Zeitraum für die Aktivitäten **[!UICONTROL JavaScript code]** und den **[!UICONTROL Advanced JavaScript code]** Workflow definieren können. [mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
+Es wurden Informationen zu der neuen Option hinzugefügt, mit der Sie einen Timeout-Zeitraum für die Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]** definieren können. [mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
 
-Informationen wurden zu der neuen **[!UICONTROL Start Pending]** Ansicht hinzugefügt, die im Knoten **[!UICONTROL Administration]** > **[!UICONTROL Audit]** > **[!UICONTROL Workflows Status]** verfügbar ist. [mehr dazu](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
+Informationen wurden zur neuen Ansicht **[!UICONTROL Start ausstehend]** hinzugefügt, die unter dem Knoten **[!UICONTROL Administration]** > **[!UICONTROL Audit]** > **[!UICONTROL Status der Workflows]** verfügbar ist. [mehr dazu](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status)
 
-Der Leitfaden [für gesendete Push-Benachrichtigungen](../../delivery/using/about-mobile-app-channel.md) wurde mit klareren Informationen verschoben, neu organisiert und verbessert.
+Der Leitfaden [Senden von Push-Benachrichtigungen](../../delivery/using/about-mobile-app-channel.md) wurde verschoben, neu organisiert und mit klareren Informationen optimiert.
 
-Der neue Parameter für die URLs-Berichtskonfiguration wurde [hier](../../reporting/using/properties-of-the-report.md#defining-additional-settings)dokumentiert.
+Der neue Parameter für die URL-Berichtkonfiguration wird [hier](../../reporting/using/properties-of-the-report.md#defining-additional-settings) erläutert.
 
-Die **Funktionsmatrix** für Campaign Classic On-Premise und Hosted wurde mit den neuen FDA-Connectors aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html)
+Die **On-Premise- und Hosted-Leistungsmatrix von Campaign Classic** wurde mit den neuen FDA-Connectoren aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html)
 
-Die Seite mit der **Campaign Classic Capability Matrix** wurde aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
+Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-Der neue **[!UICONTROL Cleanup of Nmsaddress]** Arbeitsablauf wurde [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress)dokumentiert.
+Der neue Workflow zur **[!UICONTROL Bereinigung von Nmsaddress]** wird [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) erläutert.
 
-Bei Verwendung einer Abfrage-Aktivität in einem Workflow wurde eine Einschränkung hinzugefügt. [mehr dazu](../../workflow/using/query.md)
+Bei Verwendung einer Abfrageaktivität in einem Workflow wurde eine Einschränkung hinzugefügt. [mehr dazu](../../workflow/using/query.md)
 
-Es wurde ein neuer Abschnitt hinzugefügt, in dem die verbesserten Validierungsregeln für E-Mail-Adressen detailliert beschrieben werden, um im Falle eines Sofortfehlers eine Adresse an die Quarantäne zu senden. [mehr dazu](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
+Es wurde ein neuer Abschnitt hinzugefügt, in dem die verbesserten Validierungsregeln für E-Mail-Adressen detailliert beschrieben werden, die im Falle eines Softbounce eine Adresse unter Quarantäne stellen. [mehr dazu](../../delivery/using/understanding-quarantine-management.md#soft-error-management)
 
-Der Parameter aus der Konfigurationsdatei, der angibt, dass eine Instanz die erweiterte MTA verwendet oder nicht, wird jetzt dokumentiert. [Mehr dazu](../../installation/using/the-server-configuration-file.md#mta)
+Der Parameter aus der Konfigurationsdatei, der angibt, ob eine Instanz den erweiterten MTA verwendet oder nicht, wurde in die Dokumentation aufgenommen. [Mehr dazu](../../installation/using/the-server-configuration-file.md#mta)
 
 ## Januar 2020 {#january-2020}
 
@@ -234,7 +247,7 @@ Es wurde ein Abschnitt hinzugefügt, in dem die Installations- und Konfiguration
 
 Es wurde ein Abschnitt hinzugefügt, der die Deinstallationsschritte des Campaign-Servers beschreibt – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/INS_Appendices_Uninstalling_Campaign.html)
 
-The [security](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html), [deliverability](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) and [privacy](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) getting started guides have been updated.
+Die ersten Schritte zum Thema [Sicherheit](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html), [Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und [Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) wurden aktualisiert.
 
 Die Beschreibung der Workflow-Option für die Vorab-Bearbeitung wurde aktualisiert, um Produktänderungen widerzuspiegeln – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
 
@@ -323,7 +336,7 @@ Der Abschnitt „Workflow-Monitoring“ wurde mit einem Hinweis für Builds zwis
 
 Es wurde ein Anwendungsbeispiel zum Senden einer E-Mail mit benutzerdefinierten Datenfeldern mithilfe der Anreicherungsaktivität in einem Workflow hinzugefügt – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
 
-Die Funktionsvideos wurden [hierher](https://docs.adobe.com/content/help/de-DE/campaign-learn/campaign-classic-tutorials/overview.html) verschoben.
+Die Funktionsvideos wurden [hierher](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) verschoben.
 
 Es wurden zwei Technotes zu [Teradata](https://helpx.adobe.com/de/campaign/kb/campaign_fda_teradata.html) und [MySQL 5.7](https://helpx.adobe.com/de/campaign/kb/campaign_fda_mysql.html) hinzugefügt.
 
@@ -349,7 +362,7 @@ In den [Versionshinweisen](https://docs.adobe.com/content/help/de-DE/campaign-cl
 
 Die ersten Schritte zum Thema [Sicherheit](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html), [Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und [Build-Aktualisierung](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) wurden aktualisiert.
 
-The [Privacy](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) getting started guide has been updated with information on how to invoke the API externally and how to use queryDef to query for the status and download the GDPR file.
+Die ersten Schritte zum Thema [Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) wurden aktualisiert und enthalten Informationen zum externen Aufrufen der API und dazu, wie mit queryDef der Status abgefragt und die DSGVO-Datei heruntergeladen werden kann.
 
 Es wurde ein Anwendungsbeispiel für Transaktionsnachrichten hinzugefügt, in dem E-Mail-Anhänge dynamisch zu ausgehenden Sendungen hinzugefügt werden – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/MCE_Use_case_Purpose.html)
 
