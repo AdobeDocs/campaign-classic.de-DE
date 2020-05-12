@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a30c4a2d31c3f674ac4a7bb4827a6951b36014ab
+source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 50%
+source-wordcount: '811'
+ht-degree: 42%
 
 ---
 
@@ -39,9 +39,14 @@ Sie können auch die folgenden Werkzeuge verwenden:
 
 * The **[!UICONTROL Delivery throughput]** report gives you an overview of the entire platform&#39;s throughput for a given period. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
 * Der Bericht zur Überwachung **[!UICONTROL der]** technischen Lieferbarkeit enthält eine Reihe von Qualitätsindikatoren für Ihre Plattform. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#technical-deliverability-monitoring).
-* Das [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) gibt Ihnen Zugriff auf die [Versand-Zusammenfassung](../../delivery/using/monitoring-a-delivery.md#delivery-summary), die [Versandlogs, den Verlauf](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) und die [Trackinglogs](../../delivery/using/monitoring-a-delivery.md#tracking-logs). In ihnen werden Details zum Versand dargestellt und Sie erfahren, welche Zielgruppe warum ausgeschlossen wurde sowie Tracking-Informationen wie z. B. Öffnungen und Klicks. <!--For more on this, see [Monitoring a delivery](../../delivery/using/monitoring-a-delivery.md).-->
-* Sie können auch die Anzahl der Nachrichten prüfen, die erfolgreich gesendet, verarbeitet und gesendet werden sollen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent)
-   <!--[SpamAssassin](../../installation/using/configuring-spamassassin.md)?-->
+* Jeder Versand erstellt einen Bericht über die Übertragungsstatistik für die verschiedenen Internet-Dienstleister (ISPs). Es werden einige Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf Ihre Lieferbarkeit auswirken können, einschließlich der folgenden Zahlen:
+   * **[!UICONTROL Harte Absprünge]** deuten auf Datenqualität hin. Diese Zahl sollte unter 2 % liegen.
+   * **[!UICONTROL Weiche Absprünge]** deuten auf den Ruf hin. Diese Zahl sollte bei keinem ISP höher als 10 % sein.
+   For more on this, see the [Delivery statistics](../../reporting/using/global-reports.md#delivery-statistics) section.
+* Im Allgemeinen haben Sie mit dem [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) Zugriff auf:
+   * die Zusammenfassung [des](../../delivery/using/monitoring-a-delivery.md#delivery-summary)Versands, die die Details des Versands und die [Anzahl der erfolgreich zu sendenden, verarbeiteten und gesendeten Nachrichten](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) enthält;
+   * die [Versandlogs und die Geschichte](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), die zeigen, welche Zielgruppe ausgeschlossen wurde und warum;
+   * die [Trackinglogs](../../delivery/using/monitoring-a-delivery.md#tracking-logs), die Verfolgungsinformationen wie Öffnen und Klicks anzeigen.
 
 ## Überwachungsleitlinien {#monitoring-guidelines}
 
