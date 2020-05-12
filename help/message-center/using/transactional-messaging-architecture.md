@@ -12,8 +12,11 @@ discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 25ae29490f8b4c58dad499669f5bccff43de8b7a
+translation-type: tm+mt
+source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
+workflow-type: tm+mt
+source-wordcount: '1114'
+ht-degree: 100%
 
 ---
 
@@ -75,40 +78,40 @@ Versandkanäle (Mobile (SMS), Mobile App etc.) müssen unbedingt vor der Install
 
    ![](assets/messagecenter_install_channel.png)
 
-## Transaktionsnachrichten und eingehende Interaktion {#transactional-messages-and-inbound-interaction}
+<!--## Transactional messages and inbound Interaction {#transactional-messages-and-inbound-interaction}
 
-In Kombination mit dem Interaktionsmodul können den Transaktionsnachrichten personalisierte Angebote hinzugefügt werden.
+When combined with the Inbound Interaction module, transactional messaging enables you to insert a marketing offer dedicated to the recipient into the message.
 
 >[!NOTE]
 >
->Weiterführende Informationen zum Interaktionsmodul finden Sie im Abschnitt [Interaction](../../interaction/using/interaction-and-offer-management.md).
+>The Interaction module is detailed in [Interaction](../../interaction/using/interaction-and-offer-management.md).
 
-Um Transaktionsnachrichten in Verbindung mit Interaction zu nutzen, sind folgende Konfigurationen notwendig:
+To use transactional messaging with Interaction, you need to apply the following configurations:
 
-* Installieren Sie das Package **Interaction** in den Kontrollinstanzen und erstellen Sie einen Angebotskatalog.
+* Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-   >[!CAUTION]
-   >
-   >Replizieren Sie die erstellten Angebote nicht in den Ausführungsinstanzen.
+  >[!CAUTION]
+  >
+  >Do not replicate the offers onto the execution instances.
 
-* Um die Angebote zu personalisieren, muss das betreffende Ereignis eine mit dem Empfänger verknüpfte Kennung enthalten. Der Wert dieser Kennung wird im Attribut **@externalId** festgeschrieben. **Interaction** ist standardmäßig so konfiguriert, dass der Empfänger über den Primärschlüssel identifiziert wird:
+* The event must include an identifier linked to the recipients, for personalizing offers. The **@externalId** attribute must contain the value of this identifier. **Interaction** is configured by default to identify the recipient of the primary key:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="1242"> 
+  ```
 
-   Sie können **Interaction** auch dahingehend konfigurieren, dass die Identifizierung über ein Feld Ihrer Wahl erfolgt, beispielsweise die E-Mail-Adresse:
+  You can configure **Interaction** so that identification takes place in the field of your choice, for example on the email address:
 
-   ```
-   <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
-   ```
+  ```
+  <rtEvent type="order_confirmation" email="john.doe@adobe.com" externalId="john.doe@yahoo.com"> 
+  ```
 
-Erstellen Sie Ihre Versandvorlagen auf die gleiche Weise wie für E-Mail-Kampagnen:
+Create your delivery templates the way you would for an email campaign:
 
-* Fügen Sie das Angebot in die betreffende Transaktionsnachrichten-Vorlage ein.
-* Überprüfen Sie die Vorschau, führen Sie einen Testversand durch und veröffentlichen Sie die Vorlage.
+* Add the offer to your transactional message template.
+* Check the preview, send a proof and publish the template.
 
-Der Einzelmodus muss auch bei den Angebotsplatzierungen aktiviert werden, siehe [diesen Abschnitt](../../interaction/using/creating-offer-spaces.md).
+You also have to enable the unitary mode on your offer spaces. For more on this, refer to [this section](../../interaction/using/creating-offer-spaces.md).-->
 
 ## Transaktionsnachrichten und Push-Benachrichtigungen {#transactional-messaging-and-push-notifications}
 
