@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a2cb740fe9b71435f602b738bd270fd3a0954901
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3200'
+ht-degree: 4%
 
 ---
 
@@ -56,9 +59,9 @@ Im ersten Schritt des Bereitstellungsassistenten können Sie allgemeine Informat
 
 Im unteren Bereich des Fensters können Sie die zu aktivierenden Optionen auswählen.
 
-* **[!UICONTROL Customer identifier used in billing]** : Dies kann der Name der Instanz und die Versionsnummer sein.
-* **[!UICONTROL Common name of the customer]** : Geben Sie eine Zeichenfolge mit dem Namen Ihrer Firma ein. Diese Informationen können in den Links zur Abmeldung verwendet werden.
-* **[!UICONTROL Namespace]** : Geben Sie einen kurzen Bezeichner in Kleinbuchstaben ein. Ziel ist es, im Falle einer Aktualisierung zwischen Ihrer spezifischen Konfiguration und der werkseitigen Konfiguration zu unterscheiden. Der Standard-Namensraum ist **cus** - für den Kunden.
+* **[!UICONTROL Bei der Rechnungsstellung]** verwendete Kunden-ID: Dies kann der Name der Instanz und die Versionsnummer sein.
+* **[!UICONTROL Allgemeiner Name des Kunden]** : Geben Sie eine Zeichenfolge mit dem Namen Ihrer Firma ein. Diese Informationen können in den Links zur Abmeldung verwendet werden.
+* **[!UICONTROL Namensraum]** : Geben Sie einen kurzen Bezeichner in Kleinbuchstaben ein. Ziel ist es, im Falle einer Aktualisierung zwischen Ihrer spezifischen Konfiguration und der werkseitigen Konfiguration zu unterscheiden. Der Standard-Namensraum ist **cus** - für den Kunden.
 
 ### Technische Optionen {#technical-options}
 
@@ -66,10 +69,10 @@ Im unteren Bereich des Fensters können Sie die zu aktivierenden Optionen auswä
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Email channel]** : , um E-Mail-Versand zu aktivieren. Weitere Informationen finden Sie unter [E-Mail-Kanal-Parameter](#email-channel-parameters).
-* **[!UICONTROL Tracking]** : Aktivieren der Verfolgung der Population der Zielgruppe (öffnet und klickt). Siehe [Tracking-Konfiguration](#tracking-configuration).
-* **[!UICONTROL Managing bounced emails]** : Zum Definieren des POP-Kontos, das zum Abholen eingehender E-Mails verwendet wird. Weitere Informationen finden Sie unter Verwalten von [gekürzten E-Mails](#managing-bounced-emails).
-* **[!UICONTROL LDAP integration]** : Zum Konfigurieren der Benutzerauthentifizierung über einen LDAP-Ordner. Siehe [Verbindung über LDAP](../../installation/using/connecting-through-ldap.md)herstellen.
+* **[!UICONTROL Email-Kanal]** : , um E-Mail-Versand zu aktivieren. Weitere Informationen finden Sie unter [E-Mail-Kanal-Parameter](#email-channel-parameters).
+* **[!UICONTROL Verfolgung]** : Aktivieren der Verfolgung der Population der Zielgruppe (öffnet und klickt). Siehe [Tracking-Konfiguration](#tracking-configuration).
+* **[!UICONTROL Verwalten von gekürzten E-Mails]** : Zum Definieren des POP-Kontos, das zum Abholen eingehender E-Mails verwendet wird. Weitere Informationen finden Sie unter Verwalten von [gekürzten E-Mails](#managing-bounced-emails).
+* **[!UICONTROL LDAP-Integration]** : Zum Konfigurieren der Benutzerauthentifizierung über einen LDAP-Ordner. Siehe [Verbindung über LDAP](../../installation/using/connecting-through-ldap.md)herstellen.
 
 ## Parameter für den E-Mail-Kanal {#email-channel-parameters}
 
@@ -83,11 +86,11 @@ Diese Parameter können in Versandvorlagen und für jeden Versand einzeln überl
 
 Geben Sie die folgenden Parameter an:
 
-* **[!UICONTROL Sender name]** : Name des Absenders,
-* **[!UICONTROL Sender address]** : Anschrift des Absenders,
-* **[!UICONTROL Reply address text]** : Der Name, der angepasst werden kann und verwendet wird, wenn der Empfänger auf die **[!UICONTROL Reply]** Schaltfläche in der E-Mail-Client-Software klickt,
-* **[!UICONTROL Reply address]** : Die E-Mail-Adresse, die verwendet wird, wenn der Empfänger auf die **[!UICONTROL Reply]** Schaltfläche in der E-Mail-Client-Software klickt,
-* **[!UICONTROL Error address]** : E-Mail-Adresse von Fehlermeldungen. Dies ist die technische Adresse, die für die Bearbeitung von Absprungpost verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zielgruppen-Adressen empfangen wurden.
+* **[!UICONTROL Name]** des Absenders: Name des Absenders,
+* **[!UICONTROL Absenderadresse]** : Anschrift des Absenders,
+* **[!UICONTROL Antwortadressetext]** : Der Name, der angepasst werden kann und verwendet wird, wenn der Empfänger in der E-Mail-Client-Software auf die Schaltfläche **[!UICONTROL Antworten]** klickt,
+* **[!UICONTROL Antwortadresse]** : Die E-Mail-Adresse, die verwendet wird, wenn der Empfänger auf die Schaltfläche **[!UICONTROL Antworten]** in der E-Mail-Client-Software klickt,
+* **[!UICONTROL Fehleradresse]** : E-Mail-Adresse von Fehlermeldungen. Dies ist die technische Adresse, die für die Bearbeitung von Absprungpost verwendet wird, einschließlich E-Mails, die vom Adobe Campaign-Server aufgrund nicht vorhandener Zielgruppen-Adressen empfangen wurden.
 
 In addition to this, you can specify the **masks** authorized for the sender address and the error address. Bei Angabe von mehr als einer Maske sind die Masken durch Kommata zu trennen. Hierbei handelt es sich um eine optionale Konfiguration. Wenn Felder eingegeben werden, prüft Adobe Campaign zum Zeitpunkt des Versands (während der Analyse, ob die Adresse keine Variablen enthält), dass die Adressen gültig sind. Dieser Betriebsmodus stellt sicher, dass keine Adressen verwendet werden, die Probleme mit Versänden auslösen könnten. Absenderadressen sind auf dem Versandserver zu konfigurieren.
 
@@ -111,10 +114,10 @@ In diesem Fenster können Sie für alle E-Mail-Kampagnen die Verwaltungsoptionen
 
 Folgende Optionen stehen zur Verfügung:
 
-* **[!UICONTROL Delivery duration of messages]** : Nach diesem Zeitpunkt wird der Versand gestoppt (standardmäßig 5 Tage),
-* **[!UICONTROL Online resources validity duration]** : Zeitraum, für den Informationen aus dem Empfänger-Profil aufbewahrt werden, um Mirrorseiten zu generieren,
-* **[!UICONTROL Exclude recipients who no longer wish to be contacted]** : Wenn diese Option aktiviert ist, werden keine auf der Blacklist Empfänger kontaktiert.
-* **[!UICONTROL Automatically ignore doubles]** : Wenn diese Option aktiviert ist, wird kein Versand an Duplikat-Adressen vorgenommen.
+* **[!UICONTROL Dauer der Meldungen]** : Nach diesem Zeitpunkt wird der Versand gestoppt (standardmäßig 5 Tage),
+* **[!UICONTROL Gültigkeitsdauer]** der Online-Ressourcen: Zeitraum, für den Informationen aus dem Empfänger-Profil aufbewahrt werden, um Mirrorseiten zu generieren,
+* **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert]** werden möchten: Wenn diese Option aktiviert ist, werden keine auf der Blacklist Empfänger kontaktiert.
+* **[!UICONTROL Dubletten]** automatisch ignorieren: Wenn diese Option aktiviert ist, wird kein Versand an Duplikat-Adressen vorgenommen.
 
 ### Wiederholungsparameter {#retry-parameters}
 
@@ -124,8 +127,8 @@ Die Informationen zu den Wiedereinziehungen sind in den Feldern **Wiederherstell
 
 In Bezug auf die Quarantäne stehen folgende Konfigurationsoptionen zur Verfügung:
 
-* **[!UICONTROL Duration between two significant errors]** : Geben Sie einen Wert (&quot;1d&quot;) standardmäßig ein: 1 Tag), um die Zeit zu definieren, die die Anwendung wartet, bevor der Fehlerzähler im Falle eines Fehlers inkrementiert wird,
-* **[!UICONTROL Maximum number of errors before quarantine]** : Sobald dieser Wert erreicht ist, wird die E-Mail-Adresse unter Quarantäne gestellt (standardmäßig &quot;5&quot;: die Adresse wird beim sechsten Fehler in Quarantäne gestellt). Dies bedeutet, dass der Kontakt automatisch von den nächsten Sendungen ausgeschlossen wird.
+* **[!UICONTROL Dauer zwischen zwei bedeutenden Fehlern]** : Geben Sie einen Wert (&quot;1d&quot;) standardmäßig ein: 1 Tag), um die Zeit zu definieren, die die Anwendung wartet, bevor der Fehlerzähler im Falle eines Fehlers inkrementiert wird,
+* **[!UICONTROL Maximale Anzahl der Fehler vor der Quarantäne]** : Sobald dieser Wert erreicht ist, wird die E-Mail-Adresse unter Quarantäne gestellt (standardmäßig &quot;5&quot;: die Adresse wird beim sechsten Fehler in Quarantäne gestellt). Dies bedeutet, dass der Kontakt automatisch von den nächsten Sendungen ausgeschlossen wird.
 
 ## Verwalten von gekürzten E-Mails {#managing-bounced-emails}
 
@@ -141,12 +144,12 @@ In dieser Phase können Sie Einstellungen für die Verwaltung von Absprungmeldun
 
 Geben Sie die Parameter an, mit denen eine Verbindung zum Konto zum Abrufen eingehender E-Mails hergestellt werden soll.
 
-* **[!UICONTROL Label]** : Name, der alle unten angegebenen Parameter enthält,
+* **[!UICONTROL Beschriftung]** : Name, der alle unten angegebenen Parameter enthält,
 * **[!UICONTROL Server]** : Server, der zum Abrufen der Absprungmail (eingehende E-Mail) verwendet wird,
-* **[!UICONTROL Security]** : Wählen Sie ggf. **[!UICONTROL SSL]** aus der Dropdown-Liste
-* **[!UICONTROL Port]** : Serveranschluss (im Allgemeinen 110),
-* **[!UICONTROL Account]** : Name des Kontos, das für die Absprungmail verwendet wird,
-* **[!UICONTROL Password]** : Kennwort für das Konto.
+* **[!UICONTROL Sicherheit]** : Wählen Sie bei Bedarf in der Dropdown-Liste **[!UICONTROL SSL]** aus.
+* **[!UICONTROL Hafen]** : Serveranschluss (im Allgemeinen 110),
+* **[!UICONTROL Konto]** : Name des Kontos, das für die Absprungmail verwendet wird,
+* **[!UICONTROL Kennwort]** : Kennwort für das Konto.
 
 Nachdem Sie die POP-Einstellungen angegeben haben, klicken Sie auf **Testen** , um sicherzustellen, dass sie korrekt sind.
 
@@ -156,13 +159,13 @@ Absprünge werden automatisch nach Adobe Campaign verarbeitet. Dabei werden die 
 
 Nicht verarbeitete Absprünge werden nicht in der Adobe Campaign-Oberfläche angezeigt. Sie werden automatisch gelöscht, es sei denn, sie werden mithilfe der folgenden Felder in ein Drittanbieter-Postfach übertragen:
 
-* **[!UICONTROL Forwarding address]** : Füllen Sie dieses Feld aus, um alle Fehlermeldungen (verarbeitet oder unverarbeitet), die von der Adobe Campaign-Plattform erfasst wurden, an eine Drittanbieter-Adresse zu übertragen.
-* **[!UICONTROL Address for errors]** : Füllen Sie dieses Feld aus, um nur die Fehlermeldungen an eine Adresse eines Drittanbieters zu übertragen, für die der InMail-Prozess nicht qualifiziert war.
-* **[!UICONTROL SMTP server]** : Server, der zum Senden der nicht verarbeiteten Absprungs-E-Mails verwendet wird.
+* **[!UICONTROL Anschrift]** : Füllen Sie dieses Feld aus, um alle Fehlermeldungen (verarbeitet oder unverarbeitet), die von der Adobe Campaign-Plattform erfasst wurden, an eine Drittanbieter-Adresse zu übertragen.
+* **[!UICONTROL Fehleradresse]** : Füllen Sie dieses Feld aus, um nur die Fehlermeldungen an eine Adresse eines Drittanbieters zu übertragen, für die der InMail-Prozess nicht qualifiziert war.
+* **[!UICONTROL SMTP-Server]** : Server, der zum Senden der nicht verarbeiteten Absprungs-E-Mails verwendet wird.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
->Um unverarbeitete Absprung-E-Mails weiterzuleiten, empfiehlt Adobe, nur das **[!UICONTROL Address for errors]** Feld auszufüllen. Stellen Sie jedoch sicher, dass die verwendete Adresse regelmäßig überprüft wird, da dies zu einer starken Belastung Ihres Mailservers führen könnte. Weitere Informationen erhalten Sie von Ihrem Kundenbetreuer.
+>Um unverarbeitete Absprung-E-Mails weiterzuleiten, empfiehlt Adobe, nur das Feld **[!UICONTROL Adresse für Fehler]** auszufüllen. Stellen Sie jedoch sicher, dass die verwendete Adresse regelmäßig überprüft wird, da dies zu einer starken Belastung Ihres Mailservers führen könnte. Weitere Informationen erhalten Sie von Ihrem Kundenbetreuer.
 
 ## Verfolgungskonfiguration {#tracking-configuration}
 
@@ -178,7 +181,7 @@ Wenn Sie die Verfolgung für eine Instanz aktivieren, werden die URLs in den Ver
 
 * Die auf dieser Seite des Bereitstellungsassistenten eingegebenen Informationen zu externen URLs (ob sicher oder nicht) werden zum Erstellen der neuen URL verwendet. Zusätzlich zu diesen Informationen enthält der geänderte Link Folgendes: die Bezeichner des Versands, des Empfängers und der URL.
 
-   Verfolgungsinformationen werden von Adobe Campaign auf dem/den Tracking-Server(n) erfasst, um die Profil des Empfängers und die mit dem Versand verknüpften Daten ( **[!UICONTROL Tracking]** Registerkarten) zu bereichern.
+   Verfolgungsinformationen werden von Adobe Campaign auf dem/den Tracking-Server(en) erfasst, um die Profil des Empfängers und die mit dem Versand verknüpften Daten zu bereichern (Registerkarten &quot; **[!UICONTROL Verfolgung]** &quot;).
 
    Informationen zu internen URLs werden nur vom Adobe Campaign-Anwendungsserver verwendet, um den/die Tracking-Server/s zu kontaktieren.
 
@@ -195,19 +198,19 @@ Wenn Sie die Verfolgung für eine Instanz aktivieren, werden die URLs in den Ver
 Um die Effizienz der Verfolgung in diesem Fall zu gewährleisten, müssen die folgenden Informationen angezeigt werden:
 <!--With Mid-sourcing architecture, you can externalize tracking management. To do this:-->
 
-* **[!UICONTROL External URL]** und/oder **[!UICONTROL Secure external URL]** : Geben Sie die Umleitungs-URL ein, die in der zu sendenden E-Mail verwendet werden soll.
-* **[!UICONTROL Internal URL(s)]** : URLs, die nur vom Adobe Campaign-Server verwendet werden, um mit den Tracking-Servern Kontakt aufzunehmen, um Protokolle zu sammeln und die URLs hochzuladen. Es ist nicht erforderlich, sie mit der Instanz zu verknüpfen.
+* **[!UICONTROL Externe URL]** und/oder **[!UICONTROL sichere externe URL]** : Geben Sie die Umleitungs-URL ein, die in der zu sendenden E-Mail verwendet werden soll.
+* **[!UICONTROL Interne URL(s)]** : URLs, die nur vom Adobe Campaign-Server verwendet werden, um mit den Tracking-Servern Kontakt aufzunehmen, um Protokolle zu sammeln und die URLs hochzuladen. Es ist nicht erforderlich, sie mit der Instanz zu verknüpfen.
 
    Wenn Sie keine URL angeben, wird die Tracking-URL standardmäßig verwendet.
 
 Mit der Mid-Sourcing-Architektur können Sie das Tracking-Management externalisieren. Gehen Sie dazu wie folgt vor:
 
-1. Wählen Sie die Option **[!UICONTROL Externalize tracking management]** : auf diese Weise können Sie einen Mid-Sourcing-Server als Tracking-Server verwenden.
-1. Füllen Sie die Felder **[!UICONTROL External account]** und **[!UICONTROL Instance name]** Felder aus, um eine Verbindung zum Mid-Sourcing-Server herzustellen.
+1. Wählen Sie die Option **[!UICONTROL Externalize-Tracking-Management]** : auf diese Weise können Sie einen Mid-Sourcing-Server als Tracking-Server verwenden.
+1. Füllen Sie die Felder **[!UICONTROL Externe Konto]** und **[!UICONTROL Instanzname]** aus, um eine Verbindung zum Mid-Sourcing-Server herzustellen.
 
    Weitere Informationen finden Sie unter [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).
 
-1. Klicken Sie auf die **[!UICONTROL Enable the tracking instance]** Schaltfläche, um die Verbindung zum Server zu genehmigen.
+1. Klicken Sie auf die Schaltfläche &quot;Verfolgungsinstanz **** aktivieren&quot;, um die Verbindung zum Server zu genehmigen.
 
    ![](assets/s_ncs_install_deployment_wiz_18.png)
 
@@ -247,7 +250,7 @@ Es gibt drei mögliche Architekturtypen für die Implementierung der Verfolgung:
    >
    >Wenn mehrere Tracking-Server konfiguriert sind, müssen sie alle dasselbe Kennwort verwenden.
 
-   Geben Sie den Namen der Instanz, das Kennwort und alle damit verbundenen DNS-Masken, z. B. **[!UICONTROL Campaign*]** an.
+   Geben Sie den Namen der Instanz, das Kennwort und alle zugehörigen DNS-Masken wie **[!UICONTROL Kampagne*]** an.
 
 1. **Validieren einer bereits vorkonfigurierten Verfolgungsinstanz**
 
@@ -279,8 +282,8 @@ Im nächsten Schritt können Sie Standardeinstellungen für Versand zu Mobiltele
 
 Folgende Angaben sind erforderlich:
 
-* **[!UICONTROL Label]** : Geben Sie einen Namen für dieses SMS/Wap Push-Konto ein. Sie können beispielsweise den Namen Ihres Routers verwenden.
-* Für die **[!UICONTROL Server]**, **[!UICONTROL Port]**, **[!UICONTROL Account]**, **[!UICONTROL Password]**, **[!UICONTROL Connector]**, **[!UICONTROL Send Endpoint]**, **[!UICONTROL Reception Endpoint]**, **[!UICONTROL Notification Endpoint]** Felder: Wenden Sie sich für die erforderlichen Einstellungen an Ihren Dienstleister.
+* **[!UICONTROL Beschriftung]** : Geben Sie einen Namen für dieses SMS/Wap Push-Konto ein. Sie können beispielsweise den Namen Ihres Routers verwenden.
+* Für **[!UICONTROL Server]**-, **[!UICONTROL Port]**-, **[!UICONTROL Account]**-, **[!UICONTROL Password]**-, **[!UICONTROL Connector]************** -, Send-Endpunkt, Reception-EndpunktNotification-Endpunktfelder: Wenden Sie sich für die erforderlichen Einstellungen an Ihren Dienstleister.
 
 ### Parameter der gesendeten SMS {#parameters-of-sms-sent}
 
@@ -296,8 +299,8 @@ Informationen zu weiteren Zustellversuchen finden Sie in den Feldern **weitere Z
 
 In Bezug auf die Quarantäne stehen folgende Konfigurationsoptionen zur Verfügung:
 
-* **[!UICONTROL Time between two significant errors]** : Geben Sie einen Standardwert ein (standardmäßig &quot;1d&quot;): Tag), um die Zeit zu definieren, die die Anwendung wartet, bevor der Fehlerzähler auf einen Fehler erhöht wird.
-* **[!UICONTROL Maximum number of errors before quarantine]** : Sobald dieser Wert erreicht ist, wird die Mobiltelefonnummer unter Quarantäne gestellt (standardmäßig &quot;5&quot;: die Nummer wird beim sechsten Fehler in Quarantäne gestellt). Das bedeutet, dass der Kontakt automatisch von zukünftigen Versänden ausgeschlossen wird.
+* **[!UICONTROL Zeit zwischen zwei bedeutenden Fehlern]** : Geben Sie einen Standardwert ein (standardmäßig &quot;1d&quot;): Tag), um die Zeit zu definieren, die die Anwendung wartet, bevor der Fehlerzähler auf einen Fehler erhöht wird.
+* **[!UICONTROL Maximale Anzahl der Fehler vor der Quarantäne]** : Sobald dieser Wert erreicht ist, wird die Mobiltelefonnummer unter Quarantäne gestellt (standardmäßig &quot;5&quot;: die Nummer wird beim sechsten Fehler in Quarantäne gestellt). Das bedeutet, dass der Kontakt automatisch von zukünftigen Versänden ausgeschlossen wird.
 
 ## Regionale Einstellungen {#regional-settings}
 
@@ -305,12 +308,12 @@ In dieser Phase können Sie Voreinstellungen für Datenrichtlinien einbeziehen.
 
 ![](assets/s_ncs_install_deployment_wiz_14.png)
 
-* **[!UICONTROL Consider all phone numbers as international ones]** : Wenn diese Option aktiviert ist, wendet die Anwendung das internationale Format auf Telefonnummern an (das Länderpräfix ist dann obligatorisch, da die Anzahl der Ziffern nicht überprüft wird, bevor die Formatierung angewendet wird). Wenn diese Option nicht ausgewählt ist, müssen Sie der internationalen Telefonnummer das Präfix &quot;+&quot;oder &quot;00&quot;selbst voranstellen.
-* **[!UICONTROL Store all phone numbers using the international format]** : Diese Option betrifft nur **inländische** Telefonnummern, die importiert oder bearbeitet werden. Legen Sie fest, ob Sie ein internes Format (z. B. 425 555 0150) oder ein internationales Format (z. B. +1 425 555 0150)
+* **[!UICONTROL Betrachten Sie alle Telefonnummern als internationale]** : Wenn diese Option aktiviert ist, wendet die Anwendung das internationale Format auf Telefonnummern an (das Länderpräfix ist dann obligatorisch, da die Anzahl der Ziffern nicht überprüft wird, bevor die Formatierung angewendet wird). Wenn diese Option nicht ausgewählt ist, müssen Sie der internationalen Telefonnummer das Präfix &quot;+&quot;oder &quot;00&quot;selbst voranstellen.
+* **[!UICONTROL Alle Telefonnummern im internationalen Format]** speichern: Diese Option betrifft nur **inländische** Telefonnummern, die importiert oder bearbeitet werden. Legen Sie fest, ob Sie ein internes Format (z. B. 425 555 0150) oder ein internationales Format (z. B. +1 425 555 0150)
 
 ## Access from the Internet {#access-from-the-internet}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
@@ -334,7 +337,7 @@ Mit Adobe Campaign können Sie zwischen diesen drei URLs unterscheiden, um die L
 
 ## Verwalten von öffentliche Ressourcen {#managing-public-resources}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
@@ -399,7 +402,7 @@ Die folgenden Veröffentlichungsmodi stehen zur Verfügung:
 
    Geben Sie dann das Kennwort ein.
 
-   Die Parameter der dedizierten Server werden in den **[!UICONTROL Media URL(s)]**- **[!UICONTROL Password]** und **[!UICONTROL Instance name]** -Feldern angegeben.
+   Die Parameter der dedizierten Server werden in den Feldern **[!UICONTROL Medien-URL(s)]**, **[!UICONTROL Kennwort]** und **[!UICONTROL Instanzname]** angegeben.
 
    ![](assets/s_ncs_install_images_upload_b.png)
 
