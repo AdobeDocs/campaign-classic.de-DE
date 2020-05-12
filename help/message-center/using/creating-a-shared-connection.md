@@ -14,15 +14,18 @@ discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 65043155ab6ff1fe556283991777964bb43c57ce
+translation-type: tm+mt
+source-git-commit: f4ecdab4c17a6ba8deb3b98079f57bb7a9adf4a0
+workflow-type: tm+mt
+source-wordcount: '1051'
+ht-degree: 100%
 
 ---
 
 
 # Geteilte Verbindung erstellen{#creating-a-shared-connection}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Erweiterungen von Schemata, die von [technischen Workflows des Message-Center-Moduls](../../message-center/using/technical-workflows.md) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 >* Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
