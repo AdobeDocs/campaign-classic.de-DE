@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '908'
+ht-degree: 1%
 
 ---
 
@@ -26,74 +29,74 @@ source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
 
 Mit Adobe Campaign können Sie Datumsangaben in Abhängigkeit ihrer Zeitzone angeben: Dadurch können internationale Benutzer weltweit an verschiedenen Zeitzonen arbeiten. Jedes Land, das dieselbe Instanz verwendet, kann die Ausführung von Kampagnen, die Verfolgung, Archivierung usw. verwalten. je nach Ortszeit.
 
-Um die Verwendung der Adobe Campaign-Plattform auf internationaler Ebene zu ermöglichen, müssen alle vom System verwendeten Daten mit einer Zeitzone verknüpft werden können. Ein Datum, dessen Zeitzone bekannt ist, kann daher unabhängig von der Zeitzone in eine andere Zeitzone importiert werden.
+Um die Nutzung der Adobe Campaign-Plattform auf internationaler Ebene zu ermöglichen, müssen alle von den Systemen verwendeten Daten mit einer Zeitzone verknüpft werden können. Ein Datum, dessen Zeitzone bekannt ist, kann daher unabhängig von der Zeitzone in eine andere Zeitzone importiert werden.
 
 Mit Adobe Campaign können Sie Daten/Uhrzeiten im UTC-Format (Coordinated Universal Time) speichern. Wenn Daten offen gelegt werden, werden sie in das lokale Datum/die lokale Uhrzeit des Operators konvertiert. Die Konvertierung erfolgt automatisch, wenn die Datenbank in UTC konfiguriert ist (siehe [Konfiguration](#configuration)). Wenn die Datenbank nicht in UTC konfiguriert ist, werden Informationen zur Zeitzone der Daten in der Plattform in einer Option gespeichert.
 
-Die wichtigsten Plattformfunktionalitäten im Zeitzonenmanagement sind: Import-/Export-Daten sowie Operator- und Workflow-Management. Das **Vererbungskonzept** steht für Importe/Exporte oder Workflows zur Verfügung. Standardmäßig sind sie für die Zeitzone des Datenbankservers konfiguriert. Sie können jedoch neue Zeitzonen für einen Workflow und sogar für eine einzelne Aktivität neu definieren.
+Die wichtigsten Plattformfunktionalitäten im Zeitzonenmanagement sind: Import-/Export-Daten sowie Operator- und Workflow-Management. Das **Erbschaftskonzept** steht für Import/Export oder Workflows zur Verfügung. Standardmäßig sind sie für die Zeitzone des Datenbankservers konfiguriert. Sie können jedoch neue Zeitzonen für einen Workflow und sogar für eine Aktivität neu definieren.
 
-**Operatoren** können Zeitzonen während der **Bereitstellungskonfiguration** ändern und die Zeitzone angeben, in der die Bereitstellung ausgeführt wird.
+**Operatoren** können Zeitzonen während der Konfiguration **des** Versands ändern und die Zeitzone angeben, in der der Versand ausgeführt wird.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn die Datenbank nicht mehrere Zeitzonen verwaltet, müssen für alle Datenfiltermanipulationen SQL-Abfragen in der Zeitzone des Datenbankservers ausgeführt werden.
 
-Jeder Adobe Campaign-Operator ist mit einer Zeitzone verknüpft: Diese Informationen werden in ihrem Profil konfiguriert. For more on this, refer to [this document](../../platform/using/access-management.md).
+Jeder Adobe Campaign-Operator ist mit einer Zeitzone verknüpft: diese Informationen in ihrem Profil konfiguriert sind. For more on this, refer to [this document](../../platform/using/access-management.md).
 
-Wenn die Adobe Campaign-Plattform keine Zeitzonenverwaltung erfordert, können Sie einen Speichermodus im lokalen Format mit einer bestimmten verknüpften Zeitzone beibehalten.
+Wenn die Zeitzonenverwaltung für die Adobe Campaign-Plattform nicht erforderlich ist, können Sie einen Datenspeicherung-Modus im lokalen Format mit einer bestimmten verknüpften Zeitzone beibehalten.
 
-## Empfehlungen {#recommendations}
+## Empfehlungen  {#recommendations}
 
-Zeitzonen vereinen mehrere Realitäten: Der Ausdruck kann eine konstante Zeitverzögerung mit dem UTC-Datum oder der Zeit einer Region beschreiben, die sich zweimal im Jahr ändern kann (Sommerzeit).
+Zeitzonen vereinen mehrere Realitäten: Der Ausdruck kann eine konstante Zeitverzögerung mit dem UTC-Datum oder der Uhrzeit einer Region beschreiben, die zweimal im Jahr geändert werden kann (Sommerzeit).
 
-**In postgreSQL beispielsweise die** SET-ZONE &quot;Europa/Paris&quot;; Dabei werden Sommer- und Winterzeiten berücksichtigt: das Datum wird in UTC+1 oder UTC+2 je nach Jahreszeit angegeben.
+In postgreSQL beispielsweise die **SET-ZONE &quot;Europa/Paris&quot;;** Dabei werden Sommer- und Winterzeiten berücksichtigt: das Datum wird in UTC+1 oder UTC+2 je nach Jahreszeit angegeben.
 
-**Wenn Sie jedoch die** SET ZONE 0200 verwenden; angegeben ist, ist die Zeitverzögerung immer UTC+2.
+Wenn Sie jedoch die **SET TIME ZONE 0200 verwenden;** angegeben ist, ist die Zeitverzögerung immer UTC+2.
 
 ## Konfiguration {#configuration}
 
-Der Speichermodus für Datum und Uhrzeit wird während der Datenbankerstellung ausgewählt (siehe [Erstellen einer neuen Instanz](#creating-a-new-instance)). Bei einer Migration werden die mit Daten verknüpften Stunden in lokale Daten und Stunden konvertiert (siehe [Migration](#migration)).
+Der Modus &quot;Datenspeicherung&quot;für Datum und Uhrzeit wird während der Datenbankerstellung ausgewählt (siehe [Erstellen einer neuen Instanz](#creating-a-new-instance)). Bei einer Migration werden die mit Daten verknüpften Stunden in lokale Daten und Stunden konvertiert (siehe [Migration](#migration)).
 
-Technisch gesehen gibt es zwei Möglichkeiten, **Datums- und Uhrzeittypinformationen** in der Datenbank zu speichern:
+Aus technischer Ansicht gibt es zwei Möglichkeiten, **Datums- und Uhrzeitangaben** in der Datenbank zu speichern:
 
 1. TIMESTAMP MIT TIMEZONE-Format: Die Datenbank-Engine speichert Daten in UTC. Jede geöffnete Sitzung verfügt über eine Zeitzone und die Daten werden entsprechend konvertiert.
-1. Lokales Format + lokale Zeitzone: Alle Daten werden im lokalen Format gespeichert (keine Zeitverzögerung) und ihnen wird eine Zeitzone zugewiesen. Die Zeitzone wird in der **WdbcTimeZone** -Option der Adobe Campaign-Instanz gespeichert und kann über das **[!UICONTROL Administration > Platform > Options]** Menü der Struktur geändert werden.
+1. Lokales Format + lokale Zeitzone: Alle Daten werden im lokalen Format gespeichert (keine Zeitverzögerung) und ihnen wird eine Zeitzone zugewiesen. Die Zeitzone wird in der **WdbcTimeZone** -Option der Adobe Campaign-Instanz gespeichert und kann über das Menü **[!UICONTROL Administration > Plattform > Optionen]** geändert werden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Bitte beachten Sie, dass diese Änderung zu Problemen mit der Datenkonsistenz und Synchronisierung führen kann.
 
 ### Creating a new instance {#creating-a-new-instance}
 
-Damit mehrere internationale Benutzer an demselben Beispiel arbeiten können, müssen Sie Zeitzonen konfigurieren, wenn Sie die Instanz erstellen, um Zeitverzögerungen zwischen Ländern zu verwalten. Wählen Sie bei der Instanzerstellung den Datums- und Uhrzeitmanagementmodus im **[!UICONTROL Time zone]** Abschnitt der Datenbankkonfiguration aus.
+Damit mehrere internationale Benutzer an demselben Beispiel arbeiten können, müssen Sie Zeitzonen konfigurieren, wenn Sie die Instanz erstellen, um Zeitverzögerungen zwischen Ländern zu verwalten. Wählen Sie bei der Instanzerstellung den Datums- und Uhrzeitmanagementmodus im Abschnitt **[!UICONTROL Zeitzone]** des Datenbankkonfigurationsprozesses aus.
 
-Aktivieren Sie die **[!UICONTROL UTC database (date fields with time zone)]** Option, um alle Daten mit Datum und Uhrzeit im UTC-Format (SQL-Felder und XML-Felder) zu speichern.
+Aktivieren Sie die Option **[!UICONTROL UTC-Datenbank (Datumsfelder mit Zeitzone)]** , um alle Daten mit Datum und Uhrzeit im UTC-Format (SQL-Felder und XML-Felder) zu speichern.
 
 ![](assets/install_wz_select_utc_option.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn Sie **Oracle** verwenden, müssen die Zeitzonendateien (.dat) der Oracle-Clientebenen mit den auf dem Server installierten Zeitzonendateien kompatibel sein.
 
-Ist die Datenbank nicht UTC, können Sie eine der in der Dropdownliste angebotenen Zeitzonen auswählen. Sie können auch die Zeitzone des Servers verwenden oder die Option UTC (Coordinated Universal Time) wählen.
+Ist die Datenbank nicht UTC, können Sie eine der Zeitzonen auswählen, die in der Dropdown-Liste angeboten werden. Sie können auch die Zeitzone des Servers verwenden oder die Option UTC (Coordinated Universal Time) wählen.
 
 ![](assets/install_wz_unselect_utc_option.png)
 
-Wenn die **[!UICONTROL UTC Database (date fields with time zone)]** Option ausgewählt ist, werden die SQL-Felder im TIMEZONE-Format gespeichert.
+Wenn die Option **[!UICONTROL UTC-Datenbank (Datumsfelder mit Zeitzone)]** ausgewählt ist, werden die SQL-Felder im TIMEZONE-Format gespeichert.
 
 Andernfalls werden sie im lokalen Format gespeichert und Sie müssen die Zeitzone auswählen, die auf die Datenbank angewendet werden soll.
 
 ### Migration {#migration}
 
-Bei der Migration zu einer früheren Version (ohne Zeitzonenverwaltung) müssen Sie den Datumsspeichermodus in der Datenbank definieren.
+Bei der Migration zu einer früheren Version (ohne Zeitzonenverwaltung) müssen Sie den Datumsdatenbankmodus definieren, in dem die Datenspeicherung erfolgt.
 
-Um die Kompatibilität mit externen Tools beim Zugriff auf die Adobe Campaign-Datenbank zu gewährleisten, bleiben die SQL-Felder vom Typ **Datum und Uhrzeit** standardmäßig im lokalen Format gespeichert.
+Um die Kompatibilität mit externen Tools beim Zugriff auf die Adobe Campaign-Datenbank zu gewährleisten, bleiben die SQL-Felder vom Typ **Date+time** standardmäßig im lokalen Format gespeichert.
 
 XML-Felder mit Datumsangaben werden jetzt in UTC gespeichert. Beim Laden werden Felder, die nicht im UTC-Format vorliegen, automatisch mithilfe der Zeitzone des Servers konvertiert. Das bedeutet, dass alle XML-Felder schrittweise in das UTC-Format konvertiert werden.
 
 Um eine vorhandene Instanz zu verwenden, fügen Sie die Option **WdbcTimeZone** hinzu und geben Sie die Zeitzone der Instanz ein.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Stellen Sie sicher, dass der richtige Wert für die Option WdbcTimeZone konfiguriert ist: später vorgenommene Änderungen können zu Inkonsistenzen führen.
 
