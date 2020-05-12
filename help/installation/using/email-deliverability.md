@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+workflow-type: tm+mt
+source-wordcount: '3047'
+ht-degree: 21%
 
 ---
 
@@ -142,7 +145,7 @@ MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen eine
 
 >[!IMPORTANT]
 >
->For hosted or hybrid installations, if you have upgraded to the Enhanced MTA, the **[!UICONTROL MX management]** delivery throughput rules are no longer used. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
+>Bei gehosteten oder hybriden Installationen werden die Versanddurchsatzregeln der **[!UICONTROL MX-Verwaltung]** nicht mehr verwendet, wenn Sie auf den Enhanced MTA aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
 >
 >Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
@@ -215,16 +218,16 @@ Diese Nachrichten werden so schnell wie möglich gesendet.
 
 ### MX-Verwaltung konfigurieren {#configuring-mx-management}
 
-Die für MX einzuhaltenden Regeln werden im **[!UICONTROL MX management]** Dokument des **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Mail rule sets]** Knotens des Baums definiert.
+Die für MX einzuhaltenden Regeln werden im **[!UICONTROL MX-Management]** -Dokument des Knotens &quot; **[!UICONTROL Administration&quot;> &quot;Kampagnenverwaltung&quot;> &quot;Verwaltung für nicht bereitgestellte Elemente&quot;> &quot;Mail-Regelsätze]** &quot;des Baums definiert.
 
-Wenn das **[!UICONTROL MX management]** Dokument nicht im Knoten vorhanden ist, können Sie es manuell erstellen. Gehen Sie dazu wie folgt vor:
+Wenn das **[!UICONTROL MX-Management]** -Dokument nicht im Knoten vorhanden ist, können Sie es manuell erstellen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie einen neuen Satz von E-Mail-Regeln.
-1. Wählen Sie den **[!UICONTROL MX management]** Modus.
+1. Wählen Sie den **[!UICONTROL MX-Management]** -Modus.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
-1. Geben Sie **defaultMXRules** in das **[!UICONTROL Internal name]** Feld ein.
+1. Geben Sie **defaultMXRules** in das Feld &quot; **[!UICONTROL Interner Name]** &quot;ein.
 
 Damit Änderungen berücksichtigt werden, müssen Sie den Statistikserver neu starten.
 
@@ -236,13 +239,13 @@ Um die Konfiguration neu zu laden, ohne den Statistikserver neu zu starten, verw
 
 ### Konfigurieren von MX-Regeln {#configuring-mx-rules}
 
-Das **[!UICONTROL MX management]** Dokument Liste alle Domänen, die mit einer MX-Regel verknüpft sind.
+Das **[!UICONTROL MX-Management]** -Dokument Liste alle Domänen, die mit einer MX-Regel verknüpft sind.
 
 Die erste Regel, deren MX-Maske mit dem gewünschten MX kompatibel ist, wird angewendet.
 
 Die folgenden Parameter stehen für jede Regel zur Verfügung:
 
-* **[!UICONTROL MX mask]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann die Joker &quot;*&quot; und &quot;?&quot; enthalten.
+* **[!UICONTROL MX-Maske]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann die Joker &quot;*&quot; und &quot;?&quot; enthalten.
 
    So sind die Adressen
 
@@ -265,7 +268,7 @@ Die folgenden Parameter stehen für jede Regel zur Verfügung:
 
    In diesem Fall wird die MX-Regel verwendet `*.google.com` werden. Wie Sie sehen können, stimmt die MX-Regelmaske nicht unbedingt mit der Domäne in der E-Mail überein. Die MX-Regeln, die für gmail.com E-Mail-Adressen angewendet werden, sind die mit der Maske `*.google.com`.
 
-* **[!UICONTROL Range of identifiers]**: Mit dieser Option können Sie die Bereiche der Bezeichner (publicID) angeben, für die die Regel gilt. Folgende Angaben sind möglich:
+* **[!UICONTROL Bereich der Bezeichner]**: Mit dieser Option können Sie die Bereiche der Bezeichner (publicID) angeben, für die die Regel gilt. Folgende Angaben sind möglich:
 
    * Eine Ziffer: Die Regel wird nur für diese publicId angewendet,
    * A range of numbers (**number1-number2**): the rule will apply to all publicIds between these two numbers.
@@ -277,28 +280,28 @@ Die folgenden Parameter stehen für jede Regel zur Verfügung:
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-* **[!UICONTROL Shared]**: definiert den Umfang der Eigenschaften für diese MX-Regel. Wenn diese Option aktiviert ist, werden alle Parameter für alle in der Instanz verfügbaren IPs freigegeben. Wenn diese Option deaktiviert ist, werden die MX-Regeln für jede IP-Adresse definiert. Die maximale Anzahl der Nachrichten wird mit der Anzahl der verfügbaren IPs multipliziert.
-* **[!UICONTROL Maximum number of connections]**: maximale Anzahl gleichzeitiger Verbindungen zur Domäne des Absenders.
-* **[!UICONTROL Maximum number of messages]**: maximale Anzahl von Nachrichten, die bei einer Verbindung gesendet werden können. Wenn die Meldungen diese Zahl überschreiten, wird die Verbindung geschlossen und eine neue geöffnet.
-* **[!UICONTROL Messages per hour]**: maximale Anzahl von Nachrichten, die innerhalb einer Stunde an die Domäne des Absenders gesendet werden können.
-* **[!UICONTROL Connection time out]**: Zeitschwellenwert für die Verbindung mit einer Domäne.
+* **[!UICONTROL Freigegeben]**: definiert den Umfang der Eigenschaften für diese MX-Regel. Wenn diese Option aktiviert ist, werden alle Parameter für alle in der Instanz verfügbaren IPs freigegeben. Wenn diese Option deaktiviert ist, werden die MX-Regeln für jede IP-Adresse definiert. Die maximale Anzahl der Nachrichten wird mit der Anzahl der verfügbaren IPs multipliziert.
+* **[!UICONTROL Maximale Anzahl Verbindungen]**: maximale Anzahl gleichzeitiger Verbindungen zur Domäne des Absenders.
+* **[!UICONTROL Maximale Anzahl der Nachrichten]**: maximale Anzahl von Nachrichten, die bei einer Verbindung gesendet werden können. Wenn die Meldungen diese Zahl überschreiten, wird die Verbindung geschlossen und eine neue geöffnet.
+* **[!UICONTROL Nachrichten pro Stunde]**: maximale Anzahl von Nachrichten, die innerhalb einer Stunde an die Domäne des Absenders gesendet werden können.
+* **[!UICONTROL Zeitlimit für Verbindung]**: Zeitschwellenwert für die Verbindung mit einer Domäne.
 
    >[!NOTE]
    >
    >Windows kann vor diesem Schwellenwert eine **Zeitüberschreitung** ausgeben, was von Ihrer Windows-Version abhängt.
 
-* **[!UICONTROL Timeout Data]**: maximale Wartezeit nach dem Senden des Nachrichteninhalts (Abschnitt &quot;DATEN&quot;des SMTP-Protokolls).
+* **[!UICONTROL Zeitüberschreitungsdaten]**: maximale Wartezeit nach dem Senden des Nachrichteninhalts (Abschnitt &quot;DATEN&quot;des SMTP-Protokolls).
 * **[!UICONTROL Timeout]**: maximale Wartezeit für andere Austausche mit dem SMTP-Server.
 * **[!UICONTROL TLS]**: Das TLS-Protokoll, mit dem Sie E-Mail-Versand verschlüsseln können, kann selektiv aktiviert werden. Für jede MX-Maske stehen die folgenden Optionen zur Verfügung:
 
-   * **[!UICONTROL Default configuration]**: Dies ist die allgemeine Konfiguration, die in der Konfigurationsdatei &quot;serverConf.xml&quot;angegeben ist, die angewendet wird.
+   * **[!UICONTROL Standardkonfiguration]**: Dies ist die allgemeine Konfiguration, die in der Konfigurationsdatei &quot;serverConf.xml&quot;angegeben ist, die angewendet wird.
 
-      >[!CAUTION]
+      >[!IMPORTANT]
       >
       >Es wird nicht empfohlen, die Standardkonfiguration zu ändern.
 
-   * **[!UICONTROL Disabled]** : Die Nachrichten werden systematisch ohne Verschlüsselung gesendet.
-   * **[!UICONTROL Opportunistic]** : Message Versand wird verschlüsselt, wenn der empfangende Server (SMTP) das TLS-Protokoll generieren kann.
+   * **[!UICONTROL Deaktiviert]** : Die Nachrichten werden systematisch ohne Verschlüsselung gesendet.
+   * **[!UICONTROL Opportunistisch]** : Message Versand wird verschlüsselt, wenn der empfangende Server (SMTP) das TLS-Protokoll generieren kann.
 
 Konfigurationsbeispiel:
 
@@ -308,7 +311,7 @@ Konfigurationsbeispiel:
 
 Sie können das Format der gesendeten Nachrichten definieren, sodass sich der angezeigte Inhalt automatisch an die Domäne der Adresse des jeweiligen Empfängers anpasst.
 
-Gehen Sie dazu zum **[!UICONTROL Management of email formats]** Dokument, das sich unter **[!UICONTROL Administration]** > **[!UICONTROL Campaign management]** > **[!UICONTROL Non deliverables management]** > **[!UICONTROL Mail rule sets]** befindet.
+Gehen Sie dazu zum Dokument **[!UICONTROL Verwaltung von E-Mail-Formaten]** , das sich unter **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > Verwaltung **** nicht bereitgestellter Produkte > **[!UICONTROL Mail-Regelsätze]** befindet.
 
 Dieses Dokument enthält eine Liste aller vordefinierten Domänen, die den von Adobe Campaign verwalteten japanischen Formaten entsprechen. For more information, refer to [this document](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
@@ -318,16 +321,16 @@ Mit dem Parameter **MIME structure** (Multizweck Internet Mail Extensions) könn
 
 * **Mehrteilig**: Die Nachricht wird im Text- oder HTML-Format gesendet. Wenn das HTML-Format nicht akzeptiert wird, kann die Nachricht weiterhin im Textformat angezeigt werden.
 
-   Standardmäßig ist die mehrteilige Struktur **mehrteilig/alternativ**, aber sie wird automatisch zu **mehrteiligen/verwandten** Elementen, wenn ein Bild der Nachricht hinzugefügt wird. Einige Anbieter erwarten, dass das **mehrteilige/verwandte** Format standardmäßig verwendet wird. Die **[!UICONTROL Force multipart/related]** Option setzt dieses Format auch dann ein, wenn kein Bild angehängt wird.
+   Standardmäßig ist die mehrteilige Struktur **mehrteilig/alternativ**, aber sie wird automatisch zu **mehrteiligen/verwandten** Elementen, wenn ein Bild der Nachricht hinzugefügt wird. Bestimmte Anbieter erwarten, dass das **mehrteilige/verwandte** Format standardmäßig verwendet wird. Die Option Mehrteilige **[!UICONTROL Teile erzwingen/verwandte]** Formate auch dann, wenn kein Bild angehängt wird.
 
 * **HTML**: Es wird eine Nur-HTML-Nachricht gesendet. Wenn das HTML-Format nicht akzeptiert wird, wird die Meldung nicht angezeigt.
 * **Text**: Es wird eine Meldung im Format &quot;Nur Text&quot;gesendet. Der Vorteil von Textformatmeldungen ist ihre sehr geringe Größe.
 
-Wenn die **[!UICONTROL Image inclusion]** Option aktiviert ist, werden diese direkt im Text der E-Mail angezeigt. Die Bilder werden dann hochgeladen und die URL-Verknüpfungen werden durch ihren Inhalt ersetzt.
+Wenn die **[!UICONTROL Bildeinschlussoption]** aktiviert ist, werden diese direkt im Textkörper der E-Mail angezeigt. Die Bilder werden dann hochgeladen und die URL-Verknüpfungen werden durch ihren Inhalt ersetzt.
 
 Diese Option wird besonders vom japanischen Markt für **Deco-Mail**, **Decore Mail** oder **Design Mail** verwendet. Weitere Informationen finden Sie in [diesem Dokument](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Das Einfügen von Bildern in eine E-Mail vergrößert deren Größe erheblich.
 
@@ -355,7 +358,7 @@ Um den Statistiserver auf demselben Computer zu verwenden, müssen Sie mindesten
  <mta statServerAddress="localhost">
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn dieses Feld nicht ausgefüllt wird, wird die **Metadaten** nicht Beginn.
 
