@@ -13,7 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c71f54b68558178171fa30601aebf5e638db37f
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+workflow-type: tm+mt
+source-wordcount: '4014'
+ht-degree: 24%
 
 ---
 
@@ -24,7 +27,7 @@ In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adob
 
 Weitere Informationen zu integrierten Tabellen und deren Interaktion mit Kampagnen finden Sie im Abschnitt zum [Campaign Classic-Datenmodell](../../configuration/using/about-data-model.md) .
 
-Lesen Sie diese [Dokumentation](../../configuration/using/about-schema-reference.md) , um mit Kampagne-Schemas zu beginnen. Erfahren Sie, wie Sie Erweiterungsschema konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank in diesem [Dokument](../../configuration/using/about-schema-edition.md)zu erweitern.
+Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) , um mit Kampagne-Schemas zu beginnen. Erfahren Sie, wie Sie Erweiterungsschema konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank in [diesem Dokument](../../configuration/using/about-schema-edition.md)zu erweitern.
 
 ## Übersicht {#overview}
 
@@ -44,9 +47,9 @@ Dieser kundenorientierte Ansatz wird in der Grafik unten dargestellt. The **Reci
 
 ![](assets/customer-centric-data-model.png)
 
-Um die Tabellenbeschreibung aufzurufen, wählen Sie in der Liste eine Ressource aus **[!UICONTROL Admin > Configuration > Data schemas]** und klicken Sie auf die **[!UICONTROL Documentation]** Registerkarte.
+Um die Tabellenbeschreibung aufzurufen, wählen Sie &quot; **[!UICONTROL Admin&quot;> &quot;Konfiguration&quot;> &quot;Schema]**&quot;aus, wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte &quot; **[!UICONTROL Dokumentation]** &quot;.
 
-The Adobe Campaign default data model is presented in this [document](../../configuration/using/data-model-description.md).
+The Adobe Campaign default data model is presented in [this document](../../configuration/using/data-model-description.md).
 
 >[!NOTE]
 >
@@ -87,7 +90,7 @@ Bei Hybrid- und lokalen Instanzen deckt die FDA (Federated Data Access, eine opt
 
 ### Schlüsselauswahl {#choice-of-keys}
 
-Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten **Autotyp** sollten Sie einige logische oder geschäftliche Schlüssel hinzufügen (Kontonummer, Kundennummer usw.). Sie kann später für Einfuhren/Überleitungszwecke oder Datenpackagen verwendet werden. Weitere Informationen finden Sie unter [Bezeichner](#identifiers).
+Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten **Autotyp** sollten Sie einige logische oder geschäftliche Schlüssel hinzufügen (Kontonummer, Kundennummer usw.). Sie kann später für Einfuhren/Überleitungszwecke oder Datenpackagen verwendet werden. For more on this, see [Identifiers](#identifiers).
 
 Effiziente Schlüssel sind unverzichtbar für die Leistung. Numerische Datentypen sollten immer als Schlüssel für Tabellen bevorzugt werden.
 
@@ -97,7 +100,7 @@ Für die SQLServer-Datenbank können Sie die Verwendung eines &quot;Clusterindex
 
 Mit dem Attribut tablespace im Schema können Sie einen eigenen Tablespace für eine Tabelle angeben.
 
-Mit dem Installationsassistenten können Sie Objekte nach Typ (Daten, temporär und Index) speichern.
+Mit dem Installationsassistenten können Sie Objekte nach Typ (Daten, temporäre Daten und Index) speichern.
 
 Dedizierte Tablespaces eignen sich besser für Partitionierung, Sicherheitsregeln und ermöglichen eine reibungslose und flexible Verwaltung, bessere Optimierung und Leistung.
 
@@ -154,8 +157,8 @@ Wenn eine benutzerdefinierte Tabelle in Adobe Campaign mit einem Primärschlüss
 Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2.1BB. Technisch ist es möglich, eine komplette Reichweite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen übergegangen wird: Der Datensatz 0 wird normalerweise von Adobe Campaign Classic in generierten SQL-Abfragen ignoriert.
 
 **Verwandte Themen:**
-* Weitere Informationen zur Funktion zur automatischen **Sequenzgenerierung** finden Sie in diesem [Dokument](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
-* Weitere Informationen zur Sequenzerschöpfung finden Sie in diesem [Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
+* Weitere Informationen zur Funktion zur automatischen **Sequenzgenerierung** finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
+* Weitere Informationen zur Sequenzerschöpfung finden Sie in [diesem Video](https://helpx.adobe.com/customer-care-office-hours/campaign/sequences-exhaustion-campaign-classic.html).
 
 ## Indizes {#indexes}
 
@@ -176,22 +179,22 @@ Beachten Sie jedoch Folgendes:
 
 <!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
 
-### Beispiel 
+### Beispiel  
 
 Indizes zu verwalten kann sehr komplex werden, daher ist es wichtig zu verstehen, wie sie funktionieren. Um diese Komplexität zu verdeutlichen, lassen Sie uns ein einfaches Beispiel nehmen, wie z. B. die Suche nach Empfängern durch Filterung des Vor- und Nachnamens. Gehen Sie dazu wie folgt vor:
 1. Wechseln Sie zu dem Ordner, in dem alle Empfänger in der Datenbank Liste werden. For more on this, see [Managing profiles](../../platform/using/managing-profiles.md).
-1. Klicken Sie mit der rechten Maustaste auf das **[!UICONTROL First name]** Feld.
-1. Auswählen **[!UICONTROL Filter on this field]**.
+1. Klicken Sie mit der rechten Maustaste auf das Feld **[!UICONTROL Vorname]** .
+1. Wählen Sie **[!UICONTROL Filter in diesem Feld]**.
 
    ![](assets/data-model-index-example.png)
 
-1. Wiederholen Sie diesen Vorgang für das **[!UICONTROL Last name]** Feld.
+1. Wiederholen Sie diesen Vorgang für das Feld &quot; **[!UICONTROL Nachname]** &quot;.
 
 Die beiden entsprechenden Filter werden oben auf dem Bildschirm hinzugefügt.
 
 ![](assets/data-model-index-search.png)
 
-Sie können jetzt Suchfilter für die **[!UICONTROL First name]** und die **[!UICONTROL Last name]** Felder entsprechend den verschiedenen Filterbedingungen durchführen.
+Sie können jetzt Suchfilter für die Felder **[!UICONTROL Vorname]** und **[!UICONTROL Nachname]** gemäß den verschiedenen Filterbedingungen durchführen.
 
 Um die Suche auf diesen Filtern zu beschleunigen, können Sie nun Indizes hinzufügen. Aber welche Indizes sollten verwendet werden?
 
