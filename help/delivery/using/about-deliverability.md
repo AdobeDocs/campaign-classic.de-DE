@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c687c8ad19560d4181c2db52a91e096cceea705e
+source-git-commit: e6617614ae22b73c6783f9775f441e5e25ae19e3
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '495'
 ht-degree: 100%
 
 ---
 
 
 # Über die Zustellbarkeit{#about-deliverability}
+
+**Mit der Zustellbarkeit wird gemessen, wie viele Ihrer Nachrichten erfolgreich an die Empfängerpostfächer zugestellt und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden.**
 
 Adobe Campaign bietet eine Reihe von Tools zur Verfolgung der Zustellbarkeitsleistung Ihrer Plattform. In diesem Abschnitt werden auch die wichtigsten Grundsätze hervorgehoben, die Sie bei der Verwaltung und Optimierung der Zustellbarkeit beachten sollten.
 
