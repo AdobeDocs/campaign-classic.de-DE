@@ -14,8 +14,11 @@ discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 6e587747be546860c0a485b44aee79d396f25cec
+translation-type: tm+mt
+source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+workflow-type: tm+mt
+source-wordcount: '3368'
+ht-degree: 100%
 
 ---
 
@@ -135,7 +138,7 @@ Transliteration bezeichnet in einer SMS die Ersetzung eines Zeichens durch ein a
 * Wenn die Transliteration **[!UICONTROL zugelassen]** wurde, wird jedes nicht unterstützte Zeichen beim Nachrichtenversand durch ein Zeichen des GSM-Alphabets ersetzt. So wird beispielsweise der Buchstabe &quot;ë&quot; durch &quot;e&quot; ersetzt. Der Nachrichteninhalt wird in diesem Fall leicht verändert übermittelt, aber die Zeichenanzahl bleibt identisch.
 * Wenn die Transliteration **[!UICONTROL nicht zugelassen]** wurde, werden alle Nachrichten mit nicht unterstützten Zeichen im Binärformat (Unicode) gesendet: Alle Zeichen werden unverändert übermittelt. In Unicode kodierte SMS sind auf 70 Zeichen (oder 67 Zeichen bei Nachrichten, die in mehreren Teilen gesendet werden) begrenzt. Bei Überschreitung der maximalen Zeichenanzahl werden mehrere Teilnachrichten gesendet, wodurch zusätzliche Kosten entstehen können.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Verwendung von Personalisierungsfeldern im SMS-Inhalt führt u. U. dazu, dass nicht von GSM unterstützte Zeichen eingefügt werden.
 
@@ -343,7 +346,7 @@ Sie können **data_codings** deklarieren. Durch Angabe von nur einer Kodierung i
 
 * Wenn Sie die zu verwendenden Kodierungen sowie die damit verbundenen **[!UICONTROL data_coding]**-Feldwerte definieren, verwendet Adobe Campaign die Kodierungen in der Reihenfolge ihres Erscheinens in der Liste. Wenn die Verwendung der ersten Kodierung nicht möglich ist, wird die zweite verwendet, usw.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Reihenfolge der Deklarierung ist entscheidend. Wir empfehlen Ihnen, die Liste aufsteigend nach den entstehenden **Kosten** zu ordnen, um die Kodierungen zu favorisieren, die eine größere Anzahl von Zeichen pro SMS erlauben.
 >
@@ -491,7 +494,7 @@ Folgende Optionen stehen zur Verfügung:
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
    ```
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Überprüfen Sie die gültige Rechtslage Ihres Landes bezüglich der Änderung des Absendernamens. Stellen Sie außerdem sicher, dass Ihr Provider diese Funktionalität anbietet.
 
@@ -547,7 +550,7 @@ Das InSMS-Schema enthält Informationen zu eingehenden SMS. Die Beschreibung die
 * **created**: Eingangsdatum der Nachricht in Adobe Campaign.
 * **extAccount**: externes Adobe-Campaign-Konto.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Die folgenden Felder sind NetSize-spezifisch.
    >
@@ -571,7 +574,7 @@ Wenn beispielsweise das Wort STOP gesendet wird, erhält der Abonnent automatisc
 
 Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer (short code), welche auch für die üblichen Sendungen genutzt wird.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Das folgende detaillierte Verfahren gilt nur für SMPP-Connectoren, mit Ausnahme des Connectors „Erweitertes allgemeines SMPP“. Weitere Informationen hierzu finden Sie im Abschnitt [Erstellen eines externen SMPP-Kontos](#creating-an-smpp-external-account).
 >
@@ -618,7 +621,7 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 
 1. Kopieren Sie die Datei in das **conf**-Verzeichnis in Adobe Campaign (am gleichen Ort wie der Web-Server).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) enthalten.
 >
