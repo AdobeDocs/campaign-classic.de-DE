@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2aad7e586b83bbb6c7b4233e9844e038802f50d7
+source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 43%
+source-wordcount: '1338'
+ht-degree: 42%
 
 ---
 
@@ -35,9 +35,9 @@ In Adobe Campaign gibt es eine Konfiguration bezüglich der Anzahl an E-Mails, d
 
 Das heißt, eine Verbindung kann sich einer MX-Regel bedienen, ohne dass der erfolgreiche Versand einer E-Mail erfolgt. In diesem Fall muss eine Konfiguration mit IP oder einer Domain von schwacher Reputation mehrere Verbindungen ausprobieren, bevor die E-Mail erfolgreich versendet wird. Bei jedem Versuch wird ein Guthaben vom Typ Nachrichten pro Stunde verbraucht. Dadurch wird die Leistung von Marketingkampagnen stark beeinflusst.
 
-Somit ist „Kontingente ausgeschöpft“ nicht nur eine Konfigurationsfrage, sondern kann auch mit der Reputation zusammenhängen. Fehlermeldungen im SMTP-Protokoll sollten unbedingt analysiert werden.
+Daher ist &quot;erfüllte Quoten&quot; nicht nur eine Konfigurationsfrage, sondern kann auch mit dem Ruf verknüpft werden. It is important to analyze error messages in the [SMTP log](../../production/using/monitoring-processes.md#smtp-errors-per-domain).
 
-For more on MX configuration, see the [detailed documentation](../../installation/using/email-deliverability.md#mx-configuration).
+For more on MX configuration, see [this section](../../installation/using/email-deliverability.md#mx-configuration).
 
 ## Gleiche Fehlermeldung für einen ISP {#same-error-for-an-isp}
 
@@ -57,7 +57,7 @@ Wenn das Problem weiterhin besteht, wenden Sie sich an den kommerziellen oder de
    * Der Status **[!UICONTROL Auf Blacklist]** ist das Ergebnis eines Feedback-Loops (wenn ein Empfänger eine E-Mail als Spam meldet).
 
    * Der Status **[!UICONTROL In Quarantäne]** ist das Ergebnis eines Soft- oder Hardbounce.
-   For more on this, see this [section](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-blacklisting).
 
 * **Was bedeuten die unterschiedlichen Gründe für Quarantäne-Fehler?**
 
@@ -76,9 +76,9 @@ Wenn das Problem weiterhin besteht, wenden Sie sich an den kommerziellen oder de
 * **Wie kann ich feststellen, ob eine meiner IP-Adressen auf einer Blacklist steht? Wie kann ich meine IP-Adresse wieder aus der Blacklist entfernen?**
 
    Sie können auf den folgenden Webseiten überprüfen, ob Ihre IP-Adresse auf einer Blacklist steht:
-   * https://mxtoolbox.com/
-   * https://whatismyipaddress.com/blacklist-check
-   * https://www.blacklistalert.org/
+   * [https://mxtoolbox.com/](https://mxtoolbox.com/)
+   * [https://whatismyipaddress.com/blacklist-check](https://whatismyipaddress.com/blacklist-check)
+   * [https://www.blacklistalert.org/](https://www.blacklistalert.org/)
    Nach der IP-Adressen-Prüfung erhalten Sie eine Liste mit Details zur Blacklist und auch den Namen der Webseite, von der die IP-Adresse auf die Blacklist gesetzt wurde.
 
    Durch Klicken auf den entsprechenden Link können Sie auf die Website-Details zugreifen. Dann können Sie diese Webseite ersuchen, Ihre Webseite von der Blacklist zu löschen.
@@ -89,13 +89,19 @@ Wenn das Problem weiterhin besteht, wenden Sie sich an den kommerziellen oder de
 
 ## Best Practices {#best-practices}
 
+Nachstehend finden Sie einige Best Practices, die Ihnen helfen können, Probleme mit der Lieferbarkeit zu identifizieren und zu beheben.
+
 ### Identifizieren Sie ein Bereitstellungsproblem. {#identify-deliverability-issue}
 
-* Mailing- oder Kampagnen-Metriken: die Raten für Abmeldung/Missbrauch der Beschwerde/Absprungrate höher sind als gewöhnlich.
-* Abonnenten-Aktivität: open/clicks/actions sind niedriger als gewöhnlich.
+Die folgenden Punkte können Sie hervorheben:
+
+* Mailing- oder Kampagnen-Metriken: Abmelden, Missbrauchsbeschwerden und/oder Absprungraten sind höher als üblich.
+* Abonnenten-Aktivität: geöffnet werden, sind Klicks und/oder Transaktionen niedriger als gewöhnlich.
 * Saatgutkonten zeigen gefilterte oder nicht zugestellte Postings an.
 
 ### Hypothetisches Potenzial verursacht {#potential-causes}
+
+Stellen Sie sich die folgenden Fragen, um die möglichen Ursachen für Ihr Bereitstellungsproblem zu ermitteln:
 
 * Gab es in letzter Zeit eine Änderung bei der Segmentierung der Liste?
 * Habe ich neue Datenquellen erworben?
@@ -110,22 +116,36 @@ Wenn das Problem weiterhin besteht, wenden Sie sich an den kommerziellen oder de
 
 **Beschwerden**
 
-Beschwerden werden von Abonnenten definiert, die auf die Schaltfläche &quot;Dies ist Spam&quot; klicken. Wenn Ihr Versand durch Beschwerden verursacht wurde, müssen Sie versuchen, herauszufinden, warum Empfänger sich beschweren. Kunden mit hohen Reklamationsraten möchten möglicherweise auch erwägen, ihren Link zum Abmelden an den Anfang ihrer E-Mail-Adresse zu verschieben, um Abonnenten, die den Spam-Button gedrückt haben, zu ermutigen, sich abzumelden, anstatt sich zu beschweren.
+Beschwerden werden von Abonnenten definiert, die E-Mails als Spam **** melden, indem sie auf die entsprechende Schaltfläche in ihrem Posteingang klicken.
 
-Sender können eine Fülle von Informationen aus ihrer Feedback-Schleife Beschwerden. Es ist wichtig, die Daten zu sammeln und nach Mustern in Dingen wie Opt-in-Quelle, wie lange die Adresse abonniert wurde oder sogar bestimmte Verhaltensdemographien zu suchen. Beschwerden können häufig eine riskante Datenquelle oder ein Segment in der Datei identifizieren. &quot;Risky&quot;wird als am wahrscheinlichsten zu beschweren definiert, was den Ruf schädigen kann und damit auch die Inbox-Rate.
+Wenn Ihr Versand durch Beschwerden verursacht wurde:
+* Sie müssen versuchen zu ermitteln, warum Empfänger sich beschweren.
+* Sie können auch erwägen, den Link zum Abmelden an den Anfang Ihrer E-Mail zu verschieben. Dadurch werden die Abonnenten dazu angeregt, sich abzumelden, anstatt sich über die Spam-Schaltfläche zu beschweren.
 
-Beschwerden stammen auch von Abonnenten, die einfach keine E-Mail mehr erhalten möchten. Das kann oft auf Übernachten, ihre Wahrnehmung der Botschaft, dass sie die Nachricht nicht erwartet haben, oder sich nicht daran erinnern, sich zu beteiligen, zurückzuführen sein. Es ist auch wichtig, eine Prüfung durchzuführen, um sicherzustellen, dass alle Abholpunkte klar sind und dass keine Kontrollkästchen in den Abnahmestellen vorhanden sind. Sie sollten auch eine Begrüßungs-E-Mail senden, wenn Abonnenten sich anmelden, um den Ton festzulegen und zu erklären, wie oft sie E-Mails von Ihnen erwarten können.
+Sender können aus ihren [Feedback-Schleife](../../delivery/using/technical-recommendations.md#feedback-loop) -Beschwerden eine Vielzahl von Informationen abrufen:
+* Es ist wichtig, die Daten zu sammeln und nach Mustern in Dingen wie Opt-in-Quelle, wie lange die Adresse abonniert wurde oder sogar bestimmte Verhaltensdemographie zu suchen.
+* Beschwerden können häufig eine riskante Datenquelle oder ein Segment in der Datei identifizieren. &quot;Risky&quot;wird als am wahrscheinlichsten zu beschweren definiert, was den Ruf schädigen kann und damit auch die Inbox-Rate.
+
+Beschwerden stammen auch von Abonnenten, die einfach nicht mehr E-Mail erhalten möchten:
+* Dies kann oft auf Übernachrichten, die Wahrnehmung der Nachricht durch Ihre Abonnenten, dass sie die Nachricht nicht erwartet haben oder sich nicht daran erinnern, sich zu beteiligen.
+* Es ist auch wichtig, eine Prüfung durchzuführen, um sicherzustellen, dass alle Sammelstellen klar sind und dass keine Kontrollkästchen in den Akquise-Punkten vorhanden sind.
+* Sie sollten auch eine Begrüßungs-E-Mail senden, wenn Abonnenten sich anmelden, um den Ton festzulegen und zu erklären, wie oft sie E-Mails von Ihnen erwarten können.
 
 **Datengültigkeit**
 
-Harte Absprünge treten auf, wenn Sie an eine nicht auslieferbare Adresse eines ISP senden. Eine Adresse kann aus vielen Gründen unauslöschbar sein, z. B. aus falsch geschriebenen Adressen, aus schlechten Listen oder aus Datenquellen oder aus Versand an eine Adresse, die einst aktiv war, aber nach einer Inaktivität geschlossen oder beendet wurde. Wenn Sie auf einen hohen Absprung stoßen, ist es wichtig, die Liste zu überprüfen. Wenn die Adresse aus einer neuen Quelle stammt, überprüfen Sie, wie die Adressen erfasst wurden, und stellen Sie sicher, dass die Berechtigung vorhanden ist. Schlechte Daten können auch von falsch geschriebenen Adressen stammen. Dies kann mit einem Datenvalidierungsdienst in Echtzeit oder durch eine bestätigte Anmeldung behoben werden, bevor Marketing-E-Mails an diese Adresse gesendet werden.
+**Eine feste Abgrenzung** tritt auf, wenn Sie an eine **nicht auslieferbare Adresse** eines ISP senden. Eine Adresse kann aus zahlreichen Gründen unauslöschbar sein, z. B.:
+* Falsch geschriebene Adresse Dies kann mit einem Datenvalidierungsdienst in Echtzeit oder durch eine bestätigte Anmeldung behoben werden, bevor Marketing-E-Mails an diese Adresse gesendet werden.
+* Fehlerhafte Liste oder Datenquelle. Wenn die Adresse aus einer neuen Quelle stammt, überprüfen Sie, wie die Adressen erfasst wurden, und stellen Sie sicher, dass die Berechtigung vorhanden ist.
+* Versand an eine Adresse, die zu einem Zeitpunkt aktiv war, aber nach einer Inaktivität geschlossen oder beendet wurde.
 
 **Interaktion**
 
-Neben Beschwerden und Datenvalidität konzentrieren sich die ISPs mehr denn je auf eine positive Beteiligung an Entscheidungen über den Versand. Sie suchen danach, ob Ihre Abonnenten Ihre E-Mails öffnen oder löschen, ohne sie zu lesen. Da sie diese Daten nicht an Absender weitergeben, müssen wir die verfügbaren Informationen nutzen und open/clicks/transaction als Interaktion übersetzen.
+Neben Beschwerden und Datenvalidität konzentrieren sich die ISPs mehr denn je auf **positive Bemühungen** , Entscheidungen über Versände zu treffen. Sie suchen danach, ob Ihre Abonnenten Ihre E-Mails öffnen oder löschen, ohne sie zu lesen. Da sie diese Daten nicht an Absender weitergeben, müssen wir die verfügbaren Informationen nutzen und open/clicks/transaction als Interaktion übersetzen.
 
-Im Rahmen der laufenden Reputationssicherung ist es wichtig, zu verstehen, wie engagierte Abonnenten auf Ihrer Liste sind, und eine Rangordnung für die Abonnenten in jeder Datei zu entwickeln. Neuigkeit wird als letztes &quot;open/click/transact&quot;- oder &quot;sign-up&quot;-Datum definiert. Dieser Zeitrahmen kann sich vertikal unterscheiden. Stellen Sie für jede Vertikale aktive Segmente (&quot;sichere&quot;Segmente fest. Dies sind typischerweise Abonnenten, die in den letzten 3-6 Monaten aktiv waren.
+Im Rahmen der laufenden Reputationssicherung ist es wichtig, zu verstehen, wie engagierte Abonnenten auf Ihrer Liste sind, und eine **Rangordnung** für die Abonnenten in jeder Datei zu entwickeln. Neuigkeit wird als letztes &quot;open/click/transact&quot;- oder &quot;sign-up&quot;-Datum definiert. Dieser Zeitrahmen kann sich vertikal unterscheiden. Gehen Sie dazu wie folgt vor:
 
-Verringerung der Häufigkeit von Inaktivitäten. Erstellen Sie eine Reihe von Wiederbeteiligungen für mittelgradige Risikoinactive. In der Regel sind dies 6-9 Monate ohne Interaktion. Entwickeln Sie eine Kampagne zur Bestätigung von Inaktives mit höherem Risiko. Dies sind typischerweise Abonnenten, die seit 9-12 Monaten keine E-Mail erhalten haben. Schließlich müssen Sie eine Dropdown-Regel festlegen und Abonnenten entfernen, die in &quot;x&quot; Monaten nicht geöffnet haben. Normalerweise empfehlen wir 12 Monate oder mehr, aber je nach Umsatz und Kaufzyklus kann dies unterschiedlich sein.
-
-For more on re-engagement, see [this section](../../delivery/using/re-engagement-best-practices.md).
+1. Stellen Sie für jede Vertikale aktive Segmente (&quot;sichere&quot;Segmente fest. Dies sind typischerweise Abonnenten, die in den letzten 3-6 Monaten aktiv waren.
+1. Verringerung der Häufigkeit von Inaktivitäten.
+1. Erstellen Sie eine [Re-Interaktionsserie](../../delivery/using/re-engagement-best-practices.md) für mittelgradige Risikoinactive. In der Regel sind dies 6-9 Monate ohne Interaktion.
+1. Entwickeln Sie eine Kampagne zur Bestätigung von Inaktives mit höherem Risiko. Dies sind typischerweise Abonnenten, die seit 9-12 Monaten keine E-Mail erhalten haben.
+1. Legen Sie abschließend eine Dropdownregel fest und entfernen Sie Abonnenten, die Ihre E-Mails in &#39;x&#39; Monaten nicht geöffnet haben. Normalerweise empfehlen wir 12 Monate oder mehr, aber je nach Umsatz und Kaufzyklus kann dies unterschiedlich sein.
