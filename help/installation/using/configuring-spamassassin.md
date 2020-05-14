@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
+source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 1%
 
 ---
 
@@ -24,29 +27,29 @@ source-git-commit: edb99a13d8b2f39f991e8ceb6718291d92504242
 
 >[!NOTE]
 >
->Einige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Einige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Übersicht {#overview}
 
-SpamAssassin ist eine Software zum Filtern unerwünschter E-Mails. In Verbindung mit dieser Software kann Adobe Campaign E-Mails eine Punktzahl zuweisen und feststellen, ob eine Nachricht vor dem Start der Bereitstellung als unerwünscht angesehen werden kann. Dazu muss SpamAssassin auf den bzw. den Anwendungsservern von Adobe Campaign installiert und konfiguriert sein und eine bestimmte Anzahl zusätzlicher Perl-Module benötigen.
+SpamAssassin ist eine Software zum Filtern unerwünschter E-Mails. In Verbindung mit dieser Software kann Adobe Campaign E-Mails eine Punktzahl zuweisen und feststellen, ob eine Nachricht vor dem Starten des Versands als unerwünscht angesehen werden kann. Dazu muss SpamAssassin auf dem bzw. den Anwendungsservern von Adobe Campaign installiert und konfiguriert sein und eine bestimmte Anzahl zusätzlicher Perl-Module benötigen.
 
-Die Bereitstellung und Integration von SpamAssassin, wie in diesem Kapitel beschrieben, basieren auf der standardmäßigen Softwareinstallation, ebenso wie Filter- und Scoring-Regeln, die von SpamAssassin ohne Änderungen oder Optimierungen bereitgestellt werden. Score Attribution und Message Qualification basieren ausschließlich auf der Konfiguration von SpamAssassin Optionen und Filterregeln. Netzwerkadministratoren sind für die Anpassung an die Anforderungen ihres Unternehmens verantwortlich.
+Die Bereitstellung und Integration von SpamAssassin, wie in diesem Kapitel beschrieben, basieren auf der standardmäßigen Softwareinstallation, ebenso wie Filter- und Scoring-Regeln, die von SpamAssassin ohne Änderungen oder Optimierungen bereitgestellt werden. Score Attribution und Message Qualification basieren ausschließlich auf der Konfiguration von SpamAssassin Optionen und Filterregeln. Netzwerkadministratoren sind für die Anpassung an die Bedürfnisse ihrer Firma verantwortlich.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Einstufung von E-Mails als unerwünscht durch SpamAssassin basiert ausschließlich auf Filter- und Bewertungsregeln.
 >
->Diese Regeln müssen daher mindestens einmal täglich aktualisiert werden, damit Ihre SpamAssassin-Installation und ihre Integration in Adobe Campaign voll funktionsfähig sind und die Relevanz der Ergebnisse, die Ihren Auslieferungen zugewiesen wurden, vor dem Versand gewährleistet ist.
+>Diese Regeln müssen daher mindestens einmal täglich aktualisiert werden, damit Ihre SpamAssassin-Installation und ihre Integration in Adobe Campaign voll funktionsfähig sind und die Relevanz der Ergebnisse, die Ihren Versänden zugewiesen wurden, vor dem Versand gewährleistet ist.
 >
 >Für dieses Update ist der Serveradministrator verantwortlich, der SpamAssassin hostet.
 
-Die Verwendung von SpamAssassin in Adobe Campaign gibt Aufschluss über das mögliche Verhalten von E-Mail-Servern, die SpamAssassin verwenden, wenn diese E-Mails von Adobe Campaign empfangen. Es ist jedoch möglich, dass die E-Mail-Server von Internetanbietern oder Online-Mail-Servern die von Adobe Campaign gesendeten Nachrichten als unerwünscht betrachten.
+Die Verwendung von SpamAssassin in Adobe Campaign gibt Aufschluss über das mögliche Verhalten von Mail-Servern, die SpamAssassin verwenden, wenn sie per Adobe Campaign gesendete E-Mails empfangen. Es ist jedoch möglich, dass die Mailserver von Internetanbietern oder Online-Mail-Servern die von Adobe Campaign gesendeten Nachrichten als unerwünscht betrachten.
 
-Für die Bereitstellung von SpamAssassin und seinen Modulen in Perl sind Adobe Campaign-Anwendungsserver erforderlich, die über eine HTTP-Verbindung (TCP/80-Fluss) mit Internetzugang ausgestattet sind.
+Für die Bereitstellung von SpamAssassin und seinen Modulen in Perl sind Adobe Campaign-Anwendungsserver erforderlich, die über eine HTTP-Verbindung (TCP/80 flow) mit Internetzugang ausgestattet sind.
 
 ## Installieren auf einem Windows-Computer {#installing-on-a-windows-machine}
 
-Um SpamAssassin unter Windows zu installieren und zu konfigurieren, um die Integration mit Adobe Campaign zu aktivieren, führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu konfigurieren, um die Integration mit Adobe Campaign zu aktivieren:
 
 1. SpamAssassin installieren
 1. SpamAssassin in Adobe Campaign integrieren
@@ -60,15 +63,15 @@ Um SpamAssassin unter Windows zu installieren und zu konfigurieren, um die Integ
 
    >[!NOTE]
    >
-   >Sie können die Datei an den gewünschten Stellen entzippen, sofern der Pfad aus einem der folgenden Zeichen für reguläre Ausdrücke besteht: **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. Der Installationspfad darf keine Leerzeichen enthalten.
+   >Sie können die Datei an jeder gewünschten Stelle entzippen, vorausgesetzt, der Pfad besteht aus einem der folgenden regulären Ausdruck: **`-_A-Za-z\xA0-\xFF0-9\.\%\@\=\+\,\/\\\:.`**. Der Installationspfad darf keine Leerzeichen enthalten.
 
-1. Wechseln Sie zu der Datei, in der Sie die ZIP-Datei entpackt haben, und doppelklicken Sie dann auf die Datei **run_me.bat** , um das Installationsskript zu starten.
+1. Wechseln Sie zu der Datei, in der Sie die ZIP-Datei entpackt haben, und klicken Sie dann mit der Dublette auf die Datei **run_me.bat** , um das Installationsskript zu starten.
 
    Wenn eine Windows-Shell angezeigt wird und für einige Sekunden weiterhin angezeigt wird, warten Sie, bis die Installation und die Aktualisierung abgeschlossen sind, und klicken Sie auf **Eingabetaste**.
 
-   Wenn die Windows-Shell nicht angezeigt wird oder nicht angezeigt wird, bevor sie sofort ausgeblendet wird, doppelklicken Sie auf die Datei **portableShell.bat** , um eine Windows-Shell anzuzeigen, und überprüfen Sie, ob der Shell-Pfad dem Ordner entspricht, in dem die Datei **spamassin.zip** entpackt wurde. Ist dies nicht der Fall, greifen Sie mit dem Befehl **cd** darauf zu.
+   Wenn die Windows-Shell nicht angezeigt wird oder nicht angezeigt wird, bevor sie sofort ausgeblendet wird, führen Sie die folgenden Schritte aus. Klicken Sie bei gedrückter Dublette auf die Datei **portableShell.bat** , um eine Windows-Shell anzuzeigen, und überprüfen Sie, ob der Shell-Pfad dem Ordner entspricht, in dem die Datei **spamassin.zip** entpackt wurde. Ist dies nicht der Fall, greifen Sie mit dem Befehl **cd** darauf zu.
 
-   Geben Sie **run_me.bat** ein und klicken Sie dann auf **Enter** , um den Installations- und Aktualisierungsprozess zu starten. Der Vorgang gibt einen der folgenden Werte zurück, um das Ergebnis der Aktualisierung anzugeben.
+   Geben Sie **run_me.bat** ein und klicken Sie dann auf **Enter** , um den Installations- und Aktualisierungsprozess Beginn. Der Vorgang gibt einen der folgenden Werte zurück, um das Ergebnis der Aktualisierung anzugeben.
 
    * **0**: eine Aktualisierung durchgeführt wurde.
    * **1**: Keine neue Aktualisierung verfügbar.
@@ -95,7 +98,7 @@ Um SpamAssassin unter Windows zu installieren und zu konfigurieren, um die Integ
       XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
       ```
 
-   1. Doppelklicken Sie auf die Datei **portableShell.bat** , um eine Windows Shell anzuzeigen, und starten Sie dann den folgenden Befehl (oder &quot;`<root>`&quot;gibt den erstellten Ordner beim Entpacken der Datei **spamassin.zip** an):
+   1. Klicken Sie mit der Dublette auf die Datei **portableShell.bat** , um eine Windows Shell anzuzeigen, und starten Sie dann den folgenden Befehl (oder &quot;`<root>`&quot;gibt den erstellten Ordner beim Entpacken der Datei **spamassin.zip** an):
 
       ```
        "<root>\perl\site\bin\spamassassin" "C:\TestSpamMail.txt"
@@ -116,11 +119,11 @@ Um SpamAssassin unter Windows zu installieren und zu konfigurieren, um die Integ
    >
    >Alle Pfade müssen absolut sein.
 
-   Beenden und starten Sie den **[!UICONTROL Adobe Campaign]** Dienst.
+   Beenden und Beginn des **[!UICONTROL Adobe Campaign]** -Dienstes.
 
 1. Um die Integration von SpamAssassin in Adobe Campaign zu überprüfen, verwenden Sie einen GTBUE-Test (Generischer Test für nicht angeforderte Massen-E-Mail):
 
-   Doppelklicken Sie auf die **Datei portableshell.bat** . Dadurch wird die Anzeige einer Windows-Shell ausgelöst. Führen Sie dann den folgenden Befehl aus:
+   Klicken Sie mit der Dublette auf die **Datei portableshell.bat** . Dadurch wird die Anzeige einer Windows-Shell ausgelöst. Führen Sie dann den folgenden Befehl aus:
 
    ```
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
@@ -130,13 +133,13 @@ Um SpamAssassin unter Windows zu installieren und zu konfigurieren, um die Integ
 
 1. SpamAssassin-Filter- und Bewertungsregeln aktualisieren
 
-   Für eine erste Aktualisierung der Filter- und Bewertungsregeln starten Sie **portableShell.bat** und führen Sie den folgenden Befehl aus:
+   Für eine erste Aktualisierung der Filter- und Bewertungsregeln führen Sie den folgenden Beginn **portableShell.bat** aus:
 
    ```
    sa-update --no-gpg
    ```
 
-   Um eine automatische Aktualisierung von Filter- und Bewertungsregeln auszuführen, verwenden Sie denselben Befehl in einer geplanten Systemaufgabe:
+   Um eine automatische Aktualisierung von Filter- und Bewertungsregeln auszuführen, verwenden Sie denselben Befehl in einer geplanten Aufgabe des Systems:
 
    ```
    sa-update --no-gpg
