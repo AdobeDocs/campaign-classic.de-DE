@@ -14,8 +14,11 @@ discoiquuid: f87da08f-68b9-4e2b-821f-b3ff20e390f1
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '820'
+ht-degree: 97%
 
 ---
 
@@ -25,6 +28,8 @@ source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
 ## Über die Anreicherung von Daten {#about-enriching-data}
 
 In diesem Anwendungsbeispiel werden mögliche Verwendungen der Aktivität **[!UICONTROL Anreicherung]** in einem Zielgruppen-Workflow beschrieben. Weitere Informationen zur Verwendung der Aktivität **[!UICONTROL Anreicherung]** finden Sie unter [Anreicherung](../../workflow/using/enrichment.md).
+
+In [diesem Abschnitt](../../workflow/using/email-enrichment-with-custom-date-fields.md)finden Sie außerdem ein Anwendungsbeispiel zur Aufwertung eines E-Mail-Versands mit benutzerdefinierten Datumsangaben.
 
 Den in der Marketing-Datenbank enthaltenen Kontakten soll über eine Webapp ein Preisausschreiben angeboten werden. Die Ergebnisse des Wettbewerbs werden in der Tabelle **[!UICONTROL Wettbewerbsergebnisse]** gespeichert. Diese Tabelle steht in Relation mit der Tabelle der Kontakte (**[!UICONTROL Empfänger]**). Die Tabelle **[!UICONTROL Wettbewerbsergebnisse]** enthält folgende Spalten:
 
