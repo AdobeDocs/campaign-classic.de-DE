@@ -14,8 +14,11 @@ discoiquuid: b7ff47e1-ef12-4f04-afff-1a6c01d7701f
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 1aca6758bc787f91ae28d7d5add875edf04541e8
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +58,11 @@ Vier Relationstypen stehen zur Auswahl:
 
    Diese Option wird im Tab **[!UICONTROL Abstimmung &amp; Deduplizierung]** konfiguriert, auf den Sie über den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]** in der Aktivität **[!UICONTROL Anreicherung]** zugreifen können.
 
-Die Anwendungsbeispiele [Anreicherung von Daten](../../workflow/using/enriching-data.md) und [Erstellung einer zusammenfassenden Liste](../../workflow/using/creating-a-summary-list.md) beschreiben die Funktionsweise der Anreicherungsaktivitäten in ihrem Kontext.
+Anwendungsfälle, in denen die Funktionsweise der Aktivitäten der Anreicherung in ihrem Kontext ausführlich beschrieben wird, sind ebenfalls in den folgenden Abschnitten verfügbar:
+
+* [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](../../workflow/using/email-enrichment-with-custom-date-fields.md).
+* [Daten anreichern](../../workflow/using/enriching-data.md)
+* [Erstellung einer zusammenfassenden Liste.](../../workflow/using/creating-a-summary-list.md)
 
 ## Informationen hinzufügen {#adding-information}
 
@@ -215,7 +222,7 @@ Die Aktivität **[!UICONTROL Angebotsmodul]** speichert diese Informationen stan
 
 Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten:
 
-1. Erstellen Sie einen Workflow mit einer Abfrage und schließen Sie eine Anreicherung mit einer Angebotsmodul-Abfrage (siehe diesen [Abschnitt](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine)) sowie eine Versandaktivität an.
+1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird. Siehe diesen [Abschnitt](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
 1. Klicken Sie im Anreicherung-Tab der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
