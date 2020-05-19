@@ -14,8 +14,11 @@ discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 33bf5c5a08613cf88eaace91b85a76157cac7ba1
+translation-type: tm+mt
+source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 91%
 
 ---
 
@@ -32,13 +35,15 @@ Lesen Sie auch die [Checkliste zu Sicherheit und Datenschutz](https://docs.campa
 
 ## Datenschutzverwaltung {#privacy-management}
 
+Adobe Campaign Angebot eine Reihe von Tools, mit denen Sie die Datenschutzbestimmungen (GDPR, CCPA und mehr) einhalten können.
+
 Die DSGVO (EU-Datenschutz-Grundverordnung) ist die Datenschutzgrundverordnung der Europäischen Union (EU), in der die Anforderungen an den Datenschutz harmonisiert und neu geregelt werden. Die DSGVO gilt für Adobe Campaign-Kunden, die Daten von Personen erfassen, die in der EU wohnhaft sind.
 
 CCPA (California Consumer Privacy Act) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
 
 Neben der Verwaltung von Einwilligungen, den Einstellungen zur Datenspeicherung und der Rechteverwaltung bieten wir als Datenverarbeiter zusätzliche Funktionen an, um Ihre Bereitschaft als Datenverantwortlicher für bestimmte Datenschutzanfragen zu unterstützen.
 
-In diesem [Artikel](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) erfahren Sie, wie Ihnen Adobe Campaign bei der Verwaltung wichtiger Datenschutzfunktionen hilft: Recht auf Zugriff, Recht auf Vergessenwerden, Einwilligung, Datenspeicherung und Benutzerrollen. Darüber hinaus finden Sie Best Practices, die Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen helfen, wenn Sie unseren Service nutzen.
+In [this article](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html), you will learn how Adobe Campaign helps you manage the different Privacy key features: Right to Access, Right to be Forgotten, consent, data retention and user roles. Darüber hinaus finden Sie Best Practices, die Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen, wenn Sie unsere Lösung verwenden.
 
 ## Cookies und Tracking-Funktionen {#cookies-and-tracking-capabilities}
 
