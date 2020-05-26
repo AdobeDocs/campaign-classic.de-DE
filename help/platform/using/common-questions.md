@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 9a1db0fbced3550621c5520656a34344128ee13f
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 100%
 
 ---
 
@@ -51,7 +54,7 @@ Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung des
 
 ## 5. Kann ich die Ausführung von Workflows überwachen? {#can-i-monitor-workflow-execution}
 
-Informationen zur Überwachung der Workflow-Ausführung in Campaign [finden Sie auf dieser Seite](../../workflow/using/executing-a-workflow.md).
+Informationen zur Überwachung der Workflow-Ausführung in Campaign [finden Sie auf dieser Seite](../../workflow/using/starting-a-workflow.md).
 
 ## 6. Wie kann ich eine Verbindung zu Campaign Classic herstellen? {#how-can-i-connect-to-campaign-classic-}
 
