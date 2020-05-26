@@ -14,8 +14,11 @@ discoiquuid: 3da951ef-5775-4593-8301-f143c71edc19
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4b4ec97e52a494dd88b2516650ae514294f00934
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1656'
+ht-degree: 100%
 
 ---
 
@@ -49,7 +52,7 @@ Zwei zusätzliche Lösungen sind verfügbar:
    Diese Option ist im Tab **[!UICONTROL Ausführung]** der Workflow-Eigenschaften verfügbar und ermöglicht die Speicherung aller vom Tool durch die unterschiedlichen Aktivitäten erzeugten SQL-Abfragen. Damit lässt sich einfach feststellen, welche Aktivitäten von der Plattform tatsächlich ausgeführt werden. Diese Option sollte jedoch nur temporär bei der Entwicklung, nicht aber während der Produktion verwendet werden.
 
 Bereinigen Sie die Logs, wenn sie nicht mehr benötigt werden. Workflow-Verläufe werden nicht automatisch bereinigt, alle Nachrichten werden standardmäßig beibehalten. Gehen Sie zur Bereinigung zu **[!UICONTROL Datei > Aktionen]** oder klicken Sie in der Symbolleiste oberhalb der Workflow-Liste auf die Schaltfläche „Aktionen“. Wählen Sie die Option „Verlauf bereinigen“ aus.
-Informationen zum Bereinigen der Logs finden Sie in dieser [Dokumentation](../../workflow/using/executing-a-workflow.md#actions-toolbar).
+Informationen zum Bereinigen der Logs finden Sie in dieser [Dokumentation](../../workflow/using/starting-a-workflow.md).
 
 ### Workflow-Planung {#workflow-planning}
 
