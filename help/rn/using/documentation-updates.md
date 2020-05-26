@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
-source-wordcount: '6478'
+source-wordcount: '6491'
 ht-degree: 95%
 
 ---
@@ -37,6 +37,8 @@ Der Abschnitt zur Fehlerbehebung bei der Bereitstellung wurde verschoben und ver
 Die Richtlinien zur Lieferbarkeit beim Start eines neuen Plattformabschnitts wurden verbessert. [mehr dazu](../../delivery/using/starting-new-platform.md)
 
 Der Abschnitt Senden von transaktionalen E-Mails mit Anlagen wurde verschoben und aktualisiert. [mehr dazu](../../message-center/using/transactional-email-with-attachments.md)
+
+Der Abschnitt Best Practices für die Datenpackage wurde verschoben und aktualisiert. [Mehr dazu](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## April 2020 {#april-2020}
 
