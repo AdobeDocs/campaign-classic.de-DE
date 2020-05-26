@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2051'
 ht-degree: 98%
 
 ---
@@ -327,8 +327,13 @@ ht-degree: 98%
       + [Zielgruppendaten](workflow/using/targeting-data.md)
       + [Daten importieren](workflow/using/importing-data.md)
       + [Workflow-Daten verwenden](workflow/using/how-to-use-workflow-data.md)
-      + [Workflow ausführen](workflow/using/executing-a-workflow.md)
       + [Best Practices bei Workflows](workflow/using/workflow-best-practices.md)
+   + Workflow ausführen {#executing-a-workflow}
+      + [Workflow starten](workflow/using/starting-a-workflow.md)
+      + [Lebenszyklus eines Workflows](workflow/using/workflow-life-cycle.md)
+      + [Lebenszyklus der Arbeitsdaten](workflow/using/data-life-cycle.md)
+      + [Validierungen definieren](workflow/using/defining-approvals.md)
+      + [Architektur](workflow/using/architecture.md)
    + Zielgruppenbestimmungsaktivitäten {#targeting-activities}
       + [Über Zielgruppenbestimmungsaktivitäten](workflow/using/about-targeting-activities.md)
       + [Abfrage](workflow/using/query.md)
@@ -397,7 +402,7 @@ ht-degree: 98%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring    {#monitoring}
+      + Monitoring     {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
