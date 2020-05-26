@@ -14,8 +14,11 @@ discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: f5062117b5cefbdd2570018f6803f114c14a3fae
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +79,7 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
    >[!NOTE]
    >
-   >Bei Sendungen, die über einen Workflow ausgelöst werden, haben Sie die Möglichkeit, die Daten aus der temporären Arbeitstabelle des Workflows zu verwenden. Auf sie kann über das Menü **[!UICONTROL Zielerweiterung]** zugegriffen werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/executing-a-workflow.md#target-data).
+   >Bei Sendungen, die über einen Workflow ausgelöst werden, haben Sie die Möglichkeit, die Daten aus der temporären Arbeitstabelle des Workflows zu verwenden. Auf sie kann über das Menü **[!UICONTROL Zielerweiterung]** zugegriffen werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/data-life-cycle.md#target-data).
 
 ## Personalisierung optimieren {#optimizing-personalization}
 
