@@ -14,8 +14,11 @@ discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+workflow-type: tm+mt
+source-wordcount: '2551'
+ht-degree: 66%
 
 ---
 
@@ -335,3 +338,128 @@ Standard-Packages werden installiert, wenn Adobe Campaign konfiguriert wird. Abh
 Entnehmen Sie Ihrem Lizenzvertrag, welche Packages Sie installieren können.
 
 Weitere Informationen zu Standard-Packages finden Sie in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md).
+
+## Data package best practices {#data-package-best-practices}
+
+In diesem Abschnitt wird beschrieben, wie Sie Datenpackagen während der gesamten Projektlaufzeit einheitlich organisieren.
+
+<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
+
+Pakete können verschiedene Arten von Konfigurationen und Elementen enthalten, gefiltert oder nicht. Wenn Sie einige Elemente vermissen oder Elemente/Pakete nicht in der richtigen Reihenfolge importieren, kann die Plattformkonfiguration beschädigt werden.
+
+Darüber hinaus kann der Ordner &quot;Paketspezifikationen&quot;aufgrund der Tatsache, dass mehrere Personen auf derselben Plattform mit vielen verschiedenen Funktionen arbeiten, schnell komplex werden.
+
+Obwohl dies nicht zwingend erforderlich ist, wird in diesem Abschnitt eine Lösung Angebot, mit der Sie Pakete in Adobe Campaign für Großprojekte organisieren und verwenden können.
+
+<!--This solution has been used with a project involving more than 10 consultants.-->
+
+Die wichtigsten Einschränkungen sind:
+* Organisieren Sie Pakete und behalten Sie einen Überblick darüber, was geändert wurde und wann
+* Wenn eine Konfiguration aktualisiert wird, minimieren Sie das Risiko, dass etwas beschädigt wird, das nicht direkt mit der Aktualisierung verknüpft ist.
+
+>[!NOTE]
+>
+>Weitere Informationen zum Einrichten eines Workflows zum automatischen Exportieren von Paketen finden Sie auf [dieser Seite](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
+
+### Empfehlungen  {#data-package-recommendations}
+
+Importieren Sie immer innerhalb derselben Version der Plattform. Sie müssen überprüfen, ob Sie Ihre Pakete zwischen zwei Instanzen bereitstellen, die denselben Build haben. Erzwingen Sie nie den Import und aktualisieren Sie immer zuerst die Plattform (wenn der Build anders ist).
+
+>[!IMPORTANT]
+>
+>Das Importieren zwischen verschiedenen Versionen wird von Adobe nicht unterstützt.
+<!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
+
+Achten Sie auf die Schema- und Datenbankstruktur. Nach der Installation des Pakets mit Schema muss das Schema erstellt werden.
+
+### Lösung {#data-package-solution}
+
+#### Pakettypen {#package-types}
+
+Beginn durch Definition verschiedener Pakettypen. Es werden nur vier Typen verwendet:
+
+**Entitäten**
+* Alle &quot;xtk&quot;- und &quot;nms&quot;-spezifischen Elemente in Adobe Campaign wie Schemas, Formulare, Ordner, Versandvorlagen usw.
+* Sie können eine Entität sowohl als &quot;Admin&quot;als auch als &quot;Plattform&quot;betrachten.
+* Sie sollten nicht mehr als eine Entität in ein Paket einschließen, wenn Sie es in eine Kampagne-Instanz hochladen.
+
+<!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
+
+Wenn Sie Ihre Konfiguration auf einer neuen Instanz bereitstellen müssen, können Sie alle Entitätspakete importieren.
+
+**Funktionen** Diese Art von Paket:
+* Beantwortet eine Kundenanforderung/Spezifikation.
+* Enthält eine oder mehrere Funktionen.
+* Sollte alle Abhängigkeiten enthalten, um die Funktionalität ohne jedes andere Paket ausführen zu können.
+
+**Kampagnen** Dieses Paket ist nicht obligatorisch. Manchmal ist es sinnvoll, einen bestimmten Typ für alle Kampagnen zu erstellen, auch wenn eine Kampagne als Funktion angesehen werden kann.
+
+**Aktualisierungen** Nach der Konfiguration kann eine Funktion in eine andere Umgebung exportiert werden. Beispielsweise kann das Paket aus einer dev-Umgebung in eine Test-Umgebung exportiert werden. Bei dieser Prüfung wird ein Fehler festgestellt. Zunächst muss es auf der dev-Umgebung repariert werden. Dann sollte das Pflaster auf die Testplattform aufgetragen werden.
+
+Die erste Lösung wäre, die gesamte Funktion erneut zu exportieren. Um jedoch jegliches Risiko zu vermeiden (d. h. unerwünschte Elemente zu aktualisieren), ist es sicherer, ein Paket zu haben, das nur die Korrektur enthält.
+
+Daher empfehlen wir, ein &quot;Update&quot;-Paket zu erstellen, das nur einen Entitätstyp der Funktion enthält.
+
+Ein Update kann nicht nur eine Fehlerbehebung, sondern auch ein neues Element Ihres Entitäts-/Feature-/Kampagne-Pakets sein. Um die Bereitstellung des gesamten Pakets zu vermeiden, können Sie ein Updatepaket exportieren.
+
+### Namenskonventionen {#data-package-naming}
+
+Da nun Typen definiert sind, sollten wir eine Benennungsregel festlegen. Adobe Campaign ermöglicht nicht das Erstellen von Unterordnern für Paketspezifikationen, d. h. Zahlen sind die beste Lösung für die Organisation. Zahlen Präfix-Paketnamen. Sie können die folgende Konvention verwenden:
+
+* Entität: 1 bis 99
+* Funktion: 100 bis 199
+* Kampagne: von 200 bis 299
+* Aktualisieren: 5000 bis 5999
+
+### Packages {#data-packages}
+
+>[!NOTE]
+>
+>Es ist besser, Regeln zur Definition der richtigen Anzahl von Paketen festzulegen.
+
+#### Reihenfolge der Entitätspakete {#entity-packages-order}
+
+Um den Import zu unterstützen, sollten Entitätspakete nach Bestellung so importiert werden, wie sie werden. Beispiel:
+* 001 - Schema
+* 002 - Formular
+* 003 - Bilder
+* etc.
+
+>[!NOTE]
+>
+>Formulare sollten nur nach der Aktualisierung des Schemas importiert werden.
+
+#### Paket 200 {#package-200}
+
+Die Paketnummer &quot;200&quot;sollte nicht für eine bestimmte Kampagne verwendet werden: Diese Nummer wird verwendet, um etwas zu aktualisieren, das alle Kampagnen betrifft.
+
+#### Paket aktualisieren {#update-package}
+
+Der letzte Punkt betrifft die Nummerierung des Aktualisierungspakets. Es ist Ihre Paketnummer (Entität, Funktion oder Kampagne) mit der Präfix &quot;5&quot;. Beispiel:
+* 5001 zum Aktualisieren eines Schemas
+* 5200 zum Aktualisieren aller Kampagnen
+* 5101 zur Aktualisierung der 101-Funktion
+
+Das Updatepaket sollte nur eine bestimmte Entität enthalten, damit es einfach wiederverwendbar ist. Um sie zu teilen, fügen Sie eine neue Nummer hinzu (Beginn von 1). Für diese Pakete gibt es keine speziellen Bestellregeln. Um besser zu verstehen, stellen Sie sich vor, dass wir eine 101-Funktion haben, eine soziale Anwendung:
+* Es enthält eine webApp und ein Externe Konto.
+   * Die Paketbeschriftung lautet: 101 - Soziale Anwendung (socialApplication).
+* Die webApp weist einen Fehler auf.
+   * Die wepApp wird korrigiert.
+   * Es muss ein Fix-Paket mit folgendem Namen erstellt werden: 5101 - 1 - WebApp der sozialen Anwendung (socialApplication_webApp).
+* Für die Funktion &quot;Social&quot;muss ein neues Externe Konto hinzugefügt werden.
+   * Externe Konto wird erstellt.
+   * Das neue Paket umfasst: 5101 - 2 - Externe Konto für soziale Anwendungen (socialApplication_extAccount).
+   * Parallel dazu wird das 101-Paket aktualisiert und dem Externe Konto hinzugefügt, es wird jedoch nicht bereitgestellt.
+      ![](assets/ncs_datapackage_best-practices-1.png)
+
+#### Paketdokumentation {#package-documentation}
+
+Wenn Sie ein Paket aktualisieren, sollten Sie immer einen Kommentar in das Beschreibungsfeld setzen, um alle Änderungen und Gründe (z. B. &quot;Hinzufügen eines neuen Schemas&quot;oder &quot;Beheben eines Fehlers&quot;) detailliert darzustellen.
+
+![](assets/ncs_datapackage_best-practices-2.png)
+
+Du solltest auch mit dem Kommentar beginnen. Melden Sie immer Ihren Kommentar zu einem Updatepaket an das übergeordnete Paket (Paket ohne das 5-Präfix).
+
+>[!IMPORTANT]
+>
+>Das Beschreibungsfeld darf maximal 2.000 Zeichen enthalten.
