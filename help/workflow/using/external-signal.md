@@ -14,8 +14,11 @@ discoiquuid: 3739593f-056c-4165-87ef-63c812bd3c43
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 100%
 
 ---
 
@@ -32,7 +35,7 @@ Es besteht die Möglichkeit, in der Aktivität Ereignisse zu konfigurieren, die 
 
 ![](assets/edit_signal.png)
 
-Die Ablauf-Konfiguration wird im Abschnitt [Timeouts](../../workflow/using/executing-a-workflow.md#expirations) beschrieben.
+Die Ablauf-Konfiguration wird im Abschnitt [Timeouts](../../workflow/using/defining-approvals.md) beschrieben.
 
 In der Spalte **Timeout** kann die Zeitspanne vor Ablauf in den Einheiten Ihrer Wahl definiert werden. Siehe [Warten](../../workflow/using/wait.md).
 
