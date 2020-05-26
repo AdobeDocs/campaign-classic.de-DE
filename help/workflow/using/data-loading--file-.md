@@ -12,8 +12,11 @@ discoiquuid: dcb5b8e8-be38-4d89-908d-f57c2413a9bc
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
+translation-type: tm+mt
+source-git-commit: e3de6f7b21d912efa4f6faca5e57cb480e8f1805
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 96%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 ## Verwendung {#use}
 
-Die Aktivität **[!UICONTROL Laden (Datei)]** dient dem direkten Zugriff auf eine externe Datenquelle und der Verwendung der dortigen Daten in Adobe Campaign. Tatsächlich ist es möglich, für die Zielgruppenbestimmung Daten aus externen Dateien zu verwenden.
+Mit der **[!UICONTROL Aktivität zum Laden von Daten (Datei)]** können Sie direkt auf eine Quelle externer Daten zugreifen und diese in Adobe Campaign verwenden. Tatsächlich befinden sich nicht immer alle für Targeting-Vorgänge erforderlichen Daten in der Adobe Campaign-Datenbank: es kann in externen Dateien verfügbar gemacht werden.
 
 Die zu ladende Datei kann in der Transition angegeben oder bei Ausführung der Aktivität berechnet werden. Es kann sich beispielsweise um die Liste der zehn meistgekauften Artikel eines Kunden handeln, wobei die Kaufhandlungen in einer separaten, externen Datenbank verwaltet werden.
 
