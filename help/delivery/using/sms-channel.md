@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9773e8ae39133968e4e167d11715c123e00d22c2
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '3368'
 ht-degree: 100%
@@ -538,7 +538,7 @@ Das Modul **nlserver sms** ruft in regelmäßigen Abständen den Verarbeitungsfo
 
 * **Abmeldungen**: Empfänger, die keine SMS-Sendungen mehr erhalten möchten, können sich durch das Senden einer Nachricht mit Inhalt STOP abmelden. Wenn es Ihr Providervertrag vorsieht, können Sie diese Nachrichten mithilfe der Workflow-Aktivität **SMS-Empfang** abrufen. Dies ermöglicht die Erstellung einer Abfrage, die die Option **Diese Person nicht mehr kontaktieren** für die entsprechenden Empfänger aktiviert.
 
-   Nähere Informationen hierzu finden Sie im [Workflows](../../workflow/using/executing-a-workflow.md#architecture)-Handbuch.
+   Nähere Informationen hierzu finden Sie im [Workflows](../../workflow/using/architecture.md)-Handbuch.
 
 ## InSMS-Schema {#insms-schema}
 
