@@ -14,8 +14,11 @@ discoiquuid: a0090c78-5873-446d-8d5f-b0f94ff5d373
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '569'
+ht-degree: 100%
 
 ---
 
@@ -70,7 +73,7 @@ Klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**, um die für die Benutz
 
 Die Vorlage kann angepasst werden. Es wird jedoch empfohlen, sie zu duplizieren und unter einem neuen Namen zu speichern. Der Zielgruppenmechanismus (externe Datei, Zielgruppen-Mapping) darf hingegen nicht geändert werden. Er ist für die korrekte Funktionsweise der Benachrichtigungen erforderlich.
 
-Ein Validierungsbeispiel finden Sie im Abschnitt ](../../workflow/using/executing-a-workflow.md#defining-approvals)Validierungen definieren[.
+Ein Validierungsbeispiel finden Sie im Abschnitt ](../../workflow/using/defining-approvals.md)Validierungen definieren[.
 
 ## Ausgabeparameter {#output-parameters}
 
