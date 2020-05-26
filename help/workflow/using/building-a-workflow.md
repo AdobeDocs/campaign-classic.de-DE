@@ -14,8 +14,11 @@ discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+workflow-type: tm+mt
+source-wordcount: '1689'
+ht-degree: 100%
 
 ---
 
@@ -155,7 +158,7 @@ Die Konzeption von Zielgruppen geschieht in drei Schritten:
 1. Informationen zum Vorbereiten der Daten auf die Versandanforderungen finden Sie unter [Daten anreichern und ändern](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
 1. Verwendung der Daten für Aktualisierungen, Versandaktionen usw., siehe [Datenbank aktualisieren ](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
 
-Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](../../workflow/using/executing-a-workflow.md#target-data)
+Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data)
 
 ### Zielgruppen- und Filterdimensionen {#targeting-and-filtering-dimensions}
 
