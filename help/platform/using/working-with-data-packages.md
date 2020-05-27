@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4ea5504bcfe306c5c5dc4b5fd685d898766d1685
+source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
 workflow-type: tm+mt
 source-wordcount: '2551'
 ht-degree: 66%
@@ -387,14 +387,20 @@ Beginn durch Definition verschiedener Pakettypen. Es werden nur vier Typen verwe
 
 Wenn Sie Ihre Konfiguration auf einer neuen Instanz bereitstellen müssen, können Sie alle Entitätspakete importieren.
 
-**Funktionen** Diese Art von Paket:
+**Funktionen**
+
+Dieser Pakettyp:
 * Beantwortet eine Kundenanforderung/Spezifikation.
 * Enthält eine oder mehrere Funktionen.
 * Sollte alle Abhängigkeiten enthalten, um die Funktionalität ohne jedes andere Paket ausführen zu können.
 
-**Kampagnen** Dieses Paket ist nicht obligatorisch. Manchmal ist es sinnvoll, einen bestimmten Typ für alle Kampagnen zu erstellen, auch wenn eine Kampagne als Funktion angesehen werden kann.
+**Kampagnen**
 
-**Aktualisierungen** Nach der Konfiguration kann eine Funktion in eine andere Umgebung exportiert werden. Beispielsweise kann das Paket aus einer dev-Umgebung in eine Test-Umgebung exportiert werden. Bei dieser Prüfung wird ein Fehler festgestellt. Zunächst muss es auf der dev-Umgebung repariert werden. Dann sollte das Pflaster auf die Testplattform aufgetragen werden.
+Dieses Paket ist nicht obligatorisch. Manchmal ist es sinnvoll, einen bestimmten Typ für alle Kampagnen zu erstellen, auch wenn eine Kampagne als Funktion angesehen werden kann.
+
+**Updates**
+
+Nach der Konfiguration kann eine Funktion in eine andere Umgebung exportiert werden. Beispielsweise kann das Paket aus einer dev-Umgebung in eine Test-Umgebung exportiert werden. Bei dieser Prüfung wird ein Fehler festgestellt. Zunächst muss es auf der dev-Umgebung repariert werden. Dann sollte das Pflaster auf die Testplattform aufgetragen werden.
 
 Die erste Lösung wäre, die gesamte Funktion erneut zu exportieren. Um jedoch jegliches Risiko zu vermeiden (d. h. unerwünschte Elemente zu aktualisieren), ist es sicherer, ein Paket zu haben, das nur die Korrektur enthält.
 
