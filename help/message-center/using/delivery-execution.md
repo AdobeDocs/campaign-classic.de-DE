@@ -14,8 +14,11 @@ discoiquuid: afb375de-2de3-47ad-8b37-664cc04864e8
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+workflow-type: ht
+source-wordcount: '138'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
 >
 >Im MTA hat die Verarbeitung von Transaktionsnachrichten Priorität vor allen anderen Sendungen.
 
-Auf der Ausführungsinstanz wird der Versand gesendet, sobald die Anreicherung abgeschlossen ist und eine Versandvorlage mit dem Ereignis verknüpft wurde. Alle Versand sind im **[!UICONTROL Administration > Production > Message Center > Default > Deliveries]** Ordner gruppiert.
+Sobald die Anreicherung abgeschlossen ist und eine Versandvorlage mit dem Ereignis verknüpft wurde, erfolgt der Versand in der Ausführungsinstanz. Alle Sendungen werden im Ordner **[!UICONTROL Administration > Betreibung > Message Center > Standard > Sendungen]** gruppiert.
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
