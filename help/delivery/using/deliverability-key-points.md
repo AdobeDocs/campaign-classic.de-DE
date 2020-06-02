@@ -12,11 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '574'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 89%
 
 Um die Zustellbarkeit Ihrer E-Mails in Adobe Campaign zu optimieren, empfehlen wir, die unten aufgeführten Best Practices zu befolgen. Zustellbarkeitsprobleme resultieren im Allgemeinen aus Schutzmaßnahmen gegen Spam, die von Internetdienstanbietern und Mail-Server-Administratoren eingerichtet werden.
 
-**Email Deliverability bezieht sich auf jene Merkmale, die über die Fähigkeit einer Nachricht bestimmen, innerhalb kurzer Zeit über eine persönliche E-Mail-Adresse ihr Ziel zu erreichen – mit der erwarteten Qualität in Bezug auf Inhalt und Format.**
+**Email Deliverability** bezieht sich auf jene Merkmale, die über die Fähigkeit einer Nachricht entscheiden, innerhalb kurzer Zeit über eine persönliche E-Mail-Adresse ihr Ziel zu erreichen – mit der erwarteten Qualität in Bezug auf Inhalt und Format.
 
 Diese Merkmale fallen in vier Hauptkategorien:
 * Datenqualität
@@ -35,7 +35,7 @@ Diese Merkmale fallen in vier Hauptkategorien:
 
 Gemeinsam bilden sie die Grundlage eines erfolgreichen Email Deliverability-Programms.
 
-The **deliverability rate** is the number of sent emails that were successfully delivered to its recipients.
+Die **Zustellrate** ist die Anzahl der E-Mails, die ihren Empfängern erfolgreich zugestellt wurde.
 
 Die Zustellrate hängt u. a. von folgenden Faktoren ab:
 * der korrekten Konfiguration Ihrer Instanzen;
@@ -46,7 +46,7 @@ Die Zustellrate hängt u. a. von folgenden Faktoren ab:
 * der Nachrichtenauthentifizierung (SPF, DKIM, DMARC);
 * der Reputation des Absenders.
 
-Nachstehend finden Sie eine Liste der wichtigsten Punkte, die überprüft werden müssen, um eine gute Lieferbarkeit zu gewährleisten.
+Folgende Faktoren können die Zustellbarkeit Ihrer E-Mails beeinträchtigen.
 
 ## Prüfen der Netzwerkkonfiguration {#network-configuration}
 
@@ -62,7 +62,7 @@ ISPs bieten normalerweise die Möglichkeit, eine erhaltene Nachricht als Spam zu
 
 ## Senden an eine Spam-Falle (Honeypot){#honeypot-addresses}
 
-ISPs and other organizations (see the [Project Honey Pot](https://www.projecthoneypot.org/) website) make use of mailboxes that do not correspond to physical persons but are created simply to trick spammers. Diese so genannten &quot;honeypot&quot;-Adressen werden im Web veröffentlicht, um von Spambots gesammelt zu werden und so eine Erkennung illegitimer Absender zu erlauben. Durch ein Anmeldeverfahren mit doppelter Bestätigung wird verhindert, dass solche Adressen einer Liste hinzugefügt werden. Wenn Sie eine Liste eines Drittanbieters nutzen, müssen Sie wissen, welche Methoden der jeweilige Verwalter anwendet.
+ISPs und andere Organisationen (siehe Website von [Project Honey Pot](https://www.projecthoneypot.org/)) verwenden Postfächer, die nicht mit physischen Personen übereinstimmen, sondern ausschließlich eingerichtet werden, um Spammer anzulocken. Diese so genannten &quot;honeypot&quot;-Adressen werden im Web veröffentlicht, um von Spambots gesammelt zu werden und so eine Erkennung illegitimer Absender zu erlauben. Durch ein Anmeldeverfahren mit doppelter Bestätigung wird verhindert, dass solche Adressen einer Liste hinzugefügt werden. Wenn Sie eine Liste eines Drittanbieters nutzen, müssen Sie wissen, welche Methoden der jeweilige Verwalter anwendet.
 
 ## Anpassen des Nachrichteninhalts {#message-content}
 
