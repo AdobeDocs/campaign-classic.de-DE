@@ -14,11 +14,11 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3050'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -282,12 +282,12 @@ Es existieren folgende Standardgruppen:
 
    Diese Gruppen ermöglichen den Einsatz des **Dezentralen Marketings** (optionales Adobe-Campaign-Modul).
 
-1. Angebot-Manager
+1. Angebotsverantwortliche Benutzer
 
-   Die Operatoren in dieser Gruppe können Angebot erstellen und verwalten. For more information on this, refer to this [page](../../interaction/using/operator-profiles.md).
+   Die Benutzer in dieser Gruppe können Angebote erstellen und verwalten. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../interaction/using/operator-profiles.md).
 Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
-   * ORDNER EINFÜGEN: Recht zum Einfügen von Ordnern in die Adobe Campaign-Struktur (sofern Sie über Bearbeitungsrechte für die betreffenden Zweige verfügen),
+   * EINFÜGEN VON ORDNERN: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);
    * BEARBEITUNG VON ORDNERN: Berechtigt zum Ändern von Ordnereigenschaften wie interner Name, Titel, verknüpftes Bild, Reihenfolge der Unterordner usw.
 
 ## Spezifische Berechtigungen {#named-rights}
