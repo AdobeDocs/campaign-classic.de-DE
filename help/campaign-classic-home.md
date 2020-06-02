@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
 workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 83%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 83%
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>- Häufig gestellte Fragen, Best Practices, Hilfe-Ressourcen und Hilfeanfragen
 
-* **[Datenschutzbestimmungen](https://helpx.adobe.com/de/campaign/kb/campaign-privacy.html)**<br/> Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen kann.
+* **[Gewährleistung des Datenschutzes](https://helpx.adobe.com/de/campaign/kb/campaign-privacy.html)**<br/>: Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen kann.
 
 * **[Verfolgungsfunktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/> verstehen Verfolgungsfunktionen und -prozesse in der Kampagne
 
@@ -80,8 +80,8 @@ ht-degree: 83%
 |---|---|
 | [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Anleitungsvideos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
-| [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) | [Kampagne JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
+| [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Erste Schritte mit Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementierungshandbuch](https://helpx.adobe.com/de/campaign/kb/acc-implementation.html) |
 | [Gold Standard-Upgrade ](https://helpx.adobe.com/de/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
-| [Veraltete Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
-| [Campaign Control Panel](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) | [Überwachen von Best Practices](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html) |
+| [Eingestellte Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
+| [Campaign Control Panel](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) | [Best Practices für das Monitoring](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html) |
