@@ -14,11 +14,11 @@ discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](../../delivery/using/sms-channel.md).
 1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](../../delivery/using/about-mobile-app-channel.md).
 
-   Other channels are described on [this page](../../delivery/using/other-channels.md).
+   Andere Kanäle werden auf [dieser Seite](../../delivery/using/other-channels.md) beschrieben.
 
    >[!NOTE]
    >
