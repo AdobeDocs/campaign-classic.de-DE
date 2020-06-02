@@ -14,11 +14,11 @@ discoiquuid: 5d8bbfe0-e202-4062-aa47-9ad87b975bb7
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '199'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Im Rahmen eines E-Mail-Versands können Sie mithilfe des Trackings die gesendete
 
 Tracking-Metriken können in den Berichten **[!UICONTROL URLs und Clickstreams]**, **[!UICONTROL Trackingstatistiken]** und **[!UICONTROL Klickposition]** sowie im Tab **[!UICONTROL Tracking]** des Versands angesehen werden.
 
-The delivery dashboard is also key to monitor your deliveries and eventual issues encountered during the sending of messages. For more on this refer to [this section](../../delivery/using/monitoring-a-delivery.md).
+Im Versand-Dashboard können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/monitoring-a-delivery.md).
 
 **Verwandte Themen**:
 
