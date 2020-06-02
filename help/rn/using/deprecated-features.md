@@ -1,6 +1,6 @@
 ---
-title: Funktionen, die nicht mehr unterstützt und entfernt werden
-description: Diese Liste wurde eingestellt und Funktionen von Adobe Campaign Classic wurden entfernt.
+title: Eingestellte und entfernte Funktionen von Campaign Classic
+description: Auf dieser Seite finden Sie eingestellte und entfernte Funktionen von Adobe Campaign Classic
 page-status-flag: never-activated
 uuid: null
 contentOwner: simonetn
@@ -15,16 +15,16 @@ translation-type: tm+mt
 source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
 workflow-type: tm+mt
 source-wordcount: '1389'
-ht-degree: 25%
+ht-degree: 97%
 
 ---
 
 
 # Eingestellte und entfernte Funktionen {#deprecated-and-removed-features}
 
-Adobe evaluiert laufend die Funktionen seiner Produkte, um ältere Funktionen durch neuere Alternativen zu ersetzen. Auf diese Weise kann der Kundennutzen unter sorgfältiger Berücksichtigung der Abwärtskompatibilität verbessert werden. Da Adobe Campaign Classic mit Drittanbieterwerkzeugen arbeitet, wird die Kompatibilität regelmäßig aktualisiert, um nur unterstützte Versionen zu implementieren. Die Versionen, die nicht mehr mit Adobe Campaign Classic kompatibel sind, sind unten aufgeführt.
+Adobe evaluiert laufend die Funktionen seiner Produkte, um ältere Funktionen durch neuere Alternativen zu ersetzen. Auf diese Weise kann der Kundennutzen unter sorgfältiger Berücksichtigung der Abwärtskompatibilität verbessert werden. Da Adobe Campaign Classic mit Tools von Drittanbietern arbeitet, wird die Kompatibilität regelmäßig aktualisiert, um nur unterstützte Versionen zu implementieren. Versionen, die nicht mehr mit Adobe Campaign Classic kompatibel sind, werden im Folgenden aufgeführt.
 
-Für die Mitteilung der bevorstehenden Entfernung/Ersetzung von Campaign Classic-Funktionen gelten folgende Regeln:
+Bei der Mitteilung einer bevorstehenden Entfernung/Ersetzung von Campaign Classic-Funktionen gelten die folgenden Regeln:
 
 * Zuerst wird die Entfernung der Funktion angekündigt. Auch wenn nicht mehr unterstützte Funktionen für bestehende Benutzer weiterhin verfügbar sind, werden sie weder weiter verbessert noch dokumentiert.
 * Die eingestellten Funktionen werden frühestens in der folgenden Version entfernt. Das tatsächliche Zieldatum für die Entfernung wird auf dieser Seite angegeben.
@@ -35,15 +35,15 @@ Durch dieses Vorgehen erhält der Kunde mindestens einen Versionszyklus Zeit, um
 >Die Versionen und neuen Funktionen von Adobe Campaign sind in den [Versionshinweisen](../../rn/using/latest-release.md) aufgeführt.
 
 
-## Deprecated features {#deprecated-features}
+## Eingestellte Funktionen{#deprecated-features}
 
-In diesem Abschnitt werden Funktionen Liste, die mit den neuesten Campaign Classic-Versionen als veraltet gekennzeichnet wurden.
+In diesem Abschnitt werden Funktionen aufgeführt, die bei den aktuellen Campaign Classic-Versionen als eingestellt gekennzeichnet wurden.
 
 Im Allgemeinen werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zuerst als eingestellt gekennzeichnet, wobei eine Alternative bereitgestellt wird. Diese Funktionen sind für Neukunden von Campaign Classic entweder nicht mehr verfügbar oder sollten für keine neue Implementierung verwendet werden. Sie werden auch aus der Produktdokumentation entfernt.
 
 Kunden wird empfohlen, die Nutzung der Funktion in ihrer aktuellen Bereitstellung zu prüfen und Pläne zur Änderung ihrer Implementierung zu erstellen, um die verfügbare Alternative zu nutzen. Achten Sie auf das geplante Datum für die Entfernung, um Ihre Umgebungs- und Projektaktualisierungen zu planen.
 
-### Adobe Campaign 18.6 {#ac-18-6-release}
+### Adobe Campaign-Version 18.6 {#ac-18-6-release}
 
 <table> 
  <tbody> 
@@ -55,13 +55,13 @@ Kunden wird empfohlen, die Nutzung der Funktion in ihrer aktuellen Bereitstellun
    <tr> 
    <td>JavaScript-SDK – Sicherheit<br> </td>
    <td>decryptString<br> </td>
-   <td><p>Aus Sicherheitsgründen ist die <em>decryptString</em> -API bei neuen Installationen standardmäßig nicht mehr verfügbar.</p> 
-   <p>In the context of a postupgrade to 18.6 (and later), this API is no longer activated, and has been replaced by the <em>decryptPassword</em> function.</p><br> </td>
+   <td><p>Aus Sicherheitsgründen ist die <em>decryptString</em>-API bei neuen Installationen standardmäßig nicht mehr verfügbar.</p> 
+   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt.</p><br> </td>
   </tr> 
  </tbody> 
 </table>
 
-### Adobe Campaign 18.4 {#ac-18-4-release}
+### Adobe Campaign-Version 18.4 {#ac-18-4-release}
 
 <table> 
  <tbody> 
@@ -73,24 +73,24 @@ Kunden wird empfohlen, die Nutzung der Funktion in ihrer aktuellen Bereitstellun
    <tr> 
    <td>E-Mail-Archivierung<br> </td>
    <td>Dateibasierte Archivierung<br> </td>
-   <td><p>Die E-Mail-Archivierung ist jetzt über eine dedizierte BCC-E-Mail-Adresse verfügbar. <a href="../../installation/using/email-archiving.md">Mehr dazu</a>.</p> 
-   <p><em>Zielgruppen-Entfernungsdatum: Version 20.2 der Kampagne - Juni 2020</em></p><br> </td>
+   <td><p>E-Mail-Archivierung ist jetzt über eine dedizierte BCC-E-Mail-Adresse verfügbar. <a href="../../installation/using/email-archiving.md">Mehr dazu</a>.</p> 
+   <p><em>Geplantes Entfernungsdatum: Campaign-Version 20.2 – Juni 2020</em></p><br> </td>
   </tr> 
    <tr> 
-   <td>Interessentenverwaltung<br> </td>
+   <td>Leadmanagement<br> </td>
    <td>Leads<br> </td>
-   <td><p>Das Leads Management Paket in Adobe Campaign Classic hat den Aufbau und die Aufrechterhaltung des gesamten Leads Management Lebenszyklus vereinfacht. Ähnliche Funktionen können über andere native Workflow-Aktivitäten und Datenmodelländerungen implementiert werden.</p> 
-   <p><em>Zielgruppen-Entfernungsdatum: Version 20.2 der Kampagne - Juni 2020</em></p><br> </td>
+   <td><p>Das Leadmanagement-Paket in Adobe Campaign Classic hat die Einrichtung und Verwaltung des gesamten Leadmanagement-Lebenszyklus vereinfacht. Ähnliche Funktionen können über andere native Workflow-Aktivitäten und Änderungen am Datenmodell implementiert werden.</p> 
+   <p><em>Geplantes Entfernungsdatum: Campaign-Version 20.2 – Juni 2020</em></p><br> </td>
   </tr> 
  </tbody> 
 </table>
 
 
-## Veraltete Kompatibilität {#deprecated-compatibility}
+## Eingestellte Kompatibilität {#deprecated-compatibility}
 
-### Version Adobe Campaign 20.1 {#compat-20-1-release}
+### Adobe Campaign-Version 20.1 {#compat-20-1-release}
 
-Ab Version 20.1 (Februar) wird das folgende System für Campaign Classic nicht mehr unterstützt. Die Kompatibilität endet in Release 20.2 - Juni 2020.
+Ab Version 20.1 (Februar) wird das folgende System für Campaign Classic nicht mehr unterstützt. Die Kompatibilität endet mit Version 20.2 (Juni 2020).
 
 <table> 
  <tbody> 
@@ -105,54 +105,54 @@ Ab Version 20.1 (Februar) wird das folgende System für Campaign Classic nicht m
  </tbody> 
 </table>
 
-### Version 19.2 von Adobe Campaign  {#compat-19-2-release}
+### Adobe Campaign-Version 19.2  {#compat-19-2-release}
 
 Ab der Herbstversion 19.2 ist Campaign Classic nicht mehr mit den folgenden Betriebssystemen kompatibel. Die Kompatibilität endet Ende des Jahres 2020.
 
-* Webserver: Apache 2.2. [Weitere Informationen](https://wiki.centos.org/About/Product)
-* Betriebssystem: CentOS 6. [mehr dazu](https://wiki.centos.org/About/Product)
+* Webserver: Apache 2.2. [Mehr dazu](https://wiki.centos.org/About/Product)
+* Betriebssystem: CentOS 6. [Mehr dazu](https://wiki.centos.org/About/Product)
 
 Bitte konsultieren Sie die [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html), wenn Sie ein Upgrade auf eine neuere Version durchführen oder auf ein neues System umsteigen möchten.
 
-## Removed features {#removed-features}
+## Entfernte Funktionen {#removed-features}
 
 In diesem Abschnitt werden Funktionen Liste, die aus Campaign Classic entfernt wurden.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Bereich - Funktion</strong></td>
+   <td><strong>Bereich – Funktion</strong></td>
    <td><strong>Ersatz</strong></td> 
    <td><strong>Version</strong></td> 
   </tr> 
    <tr> 
-   <td>Dokumentation zu Kampagne-APIs - Datei "jsapi.chm"<br> </td>
-   <td>Campaign Classic APIs are now available in a dedicated page. If you were using the jsapi.chm file, you should now refer to <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">the new online version</a>.</td>
+   <td>Dokumentation zu Campaign-APIs – Jsapi.chm-Datei<br> </td>
+   <td>Campaign-Classic-APIs sind jetzt auf einer eigenen Seite verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html">die neue Online-Version</a> nutzen.</td>
    <td>19.1</td>
   </tr> 
   <tr> 
-   <td>Kampagne Orchestrierung - Predictive Marketing</td>
-   <td>Ein großer Teil der Prognosemöglichkeiten für das Marketing in Adobe Campaign Classic war der Einsatz von Prognosemodellen. Obwohl die Aktivität des prognostischen Marketingarbeitsablaufs in einer kommenden Version entfernt wird, unterstützt Adobe Campaign weiterhin die Nutzung und Verwendung von Prognosemodellen aus externen Quellen über andere Workflow-Aktivitäten.</td>
+   <td>Kampagnenorchestrierung – Predictive Marketing</td>
+   <td>Ein Großteil der Predictive-Marketing-Funktionen in Adobe Campaign Classic besteht aus dem Einsatz von Prognosemodellen. Zwar wird die Workflow-Aktivität für Predictive Marketing in einer kommenden Version entfernt, doch wird Adobe Campaign die Nutzung von Prognosemodellen aus externen Quellen über andere Workflow-Aktivitäten weiter unterstützen.</td>
    <td>18.10</td>
   </tr> 
   <tr> 
-   <td>Webanwendungen - Microsites</td>
-   <td>Verbessern Sie die Sicherheit, indem Sie den Zugriff auf nur dedizierte Domänen in Adobe Campaign-Konfigurationsdateien einschränken. Sie können in der Kampagne immer noch personalisierte URLs mit DNS-Aliasnamen verwenden. <a href="https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html">Mehr dazu</a>.</td>
+   <td>Web-Anwendungen – Microsites</td>
+   <td>Erhöhen Sie die Sicherheit, indem Sie Zugriff auf dedizierte Domains in Adobe Campaign-Konfigurationsdateien beschränken. Sie können in Campaign weiterhin personalisierte URLs mit DNS-Aliassen verwenden. <a href="https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html">Mehr dazu</a>.</td>
    <td>18.10</td>
   </tr> 
   <tr> 
-   <td>Push-Benachrichtigungen - iOS Binary Connector<br> </td>
-   <td>Gemäß der Empfehlung von Apple entfernt Adobe den alten iOS Binary Connector. Der leistungsfähigere und effizientere HTTP/2-basierte Connector ist bereits verfügbar.</td>
+   <td>Push-Benachrichtigungen – iOS Binary Connector<br> </td>
+   <td>Gemäß der Empfehlung von Apple wird Adobe den alten iOS Binary Connector entfernen. Der leistungsfähigere und effizientere HTTP/2-basierte Connector ist bereits verfügbar.</td>
    <td>18.10</td>
   </tr> 
    <tr> 
-   <td>Mobile Kanal - MMS- und WAP-Push-Nachrichten</td>
-   <td>MMS- und Wap Push-Kanal sind nicht mehr verfügbar. Als Ersatz können Sie <a href="../../delivery/using/sms-channel.md">SMS</a> - und <a href="../../delivery/using/about-mobile-app-channel.md">Push</a> -Versand nutzen.</td>
+   <td>Mobiler Kanal – MMS- und WAP-Push-Benachrichtigungen</td>
+   <td>MMS- und WAP Push-Kanäle sind nicht mehr verfügbar. Als Ersatz können Sie <a href="../../delivery/using/sms-channel.md">SMS</a>- und <a href="../../delivery/using/about-mobile-app-channel.md">Push</a>-Nachrichten nutzen.</td>
    <td>18.4</td>
   </tr> 
    <tr> 
-   <td>Mobile Kanal - LINE v1</td>
-   <td>Das LINE Connect-Paket steht nicht mehr zur Installation in Adobe Campaign Classic zur Verfügung. Adobe empfiehlt die Verwendung des neuen LINE Kanal-Pakets zum Senden von LINE-Nachrichten. <a href="../../delivery/using/line-channel.md">Mehr dazu</a>.</td>
+   <td>Mobiler Kanal – LINE v1</td>
+   <td>Das LINE Connect-Package ist nicht mehr zur Installation in Adobe Campaign Classic verfügbar. Adobe empfiehlt die Verwendung des neuen LINE Channel-Packages zum Senden von LINE-Nachrichten. <a href="../../delivery/using/line-channel.md">Mehr dazu</a>.</td>
    <td>18.4</td>
   </tr> 
  </tbody> 
@@ -162,11 +162,11 @@ In diesem Abschnitt werden Funktionen Liste, die aus Campaign Classic entfernt w
 
 >[!CAUTION]
 >
->Adobe Campaign Classic ist mit allen in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)aufgeführten Systemen und Tools kompatibel. Wenn bestimmte Versionen dieser Drittanbietersysteme und -werkzeuge mit ihren jeweiligen Erstellern das Lebenszyklusende (End of Life, EOL) erreichen, ist Adobe Campaign nicht mehr mit diesen Versionen kompatibel: werden sie als veraltet angekündigt und dann in der folgenden Produktversion aus unserer Kompatibilitätsmatrix entfernt. Bitte stellen Sie sicher, dass Sie sich auf unterstützten Versionen aller in der Kompatibilitätsmatrix aufgelisteten Systeme befinden, um Probleme zu vermeiden.
+>Adobe Campaign Classic ist mit allen in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) aufgeführten Systemen und Tools kompatibel. Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools bei ihren Erstanbietern das Ende des Lebenszyklus (End of Life, EOL) erreichen, ist Adobe Campaign nicht mehr mit diesen Versionen kompatibel: Sie werden als eingestellt angekündigt und dann mit der folgenden Produktversion aus unserer Kompatibilitätsmatrix entfernt. Verwenden Sie, um Probleme zu vermeiden, ausschließlich unterstützte Versionen von Systemen, die in der Kompatibilitätsmatrix aufgeführt sind.
 
-### Client-Konsole {#client-console-eol}
+### Client Console {#client-console-eol}
 
-Die Adobe Campaign Classic Client Console kann nicht mehr auf den folgenden Systemen ausgeführt werden, da sie von ihrem Editor nicht mehr unterstützt werden. Kunden, die Kampagne Client Console auf einer dieser Versionen ausführen, müssen vor dem Zeitpunkt des Löschvorgangs der Zielgruppe auf die neueste Version aktualisieren. Siehe [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
+Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nicht mehr ausgeführt werden, da sie von ihrem Anbieter eingestellt wurden. Kunden, die die Campaign Client Console in einer dieser Versionen ausführen, müssen vor dem geplanten Entfernungsdatum auf die neueste Version aktualisieren. Siehe [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
 
 * Windows Server 2003, 2008, 2008 R2
 * Windows XP, Vista
@@ -176,56 +176,56 @@ Die Adobe Campaign Classic Client Console kann nicht mehr auf den folgenden Syst
 Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen kompatibel.
 
 * Debian 7. [Mehr dazu](https://wiki.debian.org/DebianReleases).
-* RHEL 6.x. [Weitere Informationen](https://access.redhat.com/support/policy/updates/errata).
+* RHEL 6.x. [Mehr dazu](https://access.redhat.com/support/policy/updates/errata).
 * Windows Server 2008. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/1163).
-* DATEI 11. [Mehr dazu](https://www.suse.com/lifecycle).
+* SLES 11. [Mehr dazu](ttps://www.suse.com/lifecycle).
 
 ### Webserver {#web-server-eol}
 
-Ab der Frühjahrsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden Webserver kompatibel.
+Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden Webserver kompatibel.
 
 * Microsoft IIS 7. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/810).
 
-### Werkzeuge {#tools-eol}
+### Tools {#tools-eol}
 
-Ab Version 19.1 Frühjahr ist Adobe Campaign nicht mehr mit den folgenden Werkzeugen kompatibel.
+Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden Tools kompatibel.
 
 * Java JDK 7. [Mehr dazu](http://www.oracle.com/technetwork/java/javase/eol-135779.html).
 * Libre Office 3.5 / 4.3 / 5.x, außer wenn in ein anderes Tool eingebettet. [Mehr dazu](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases).
 
-### Datenbankmotoren {#dbe-eol}
+### Datenbank-Engines {#dbe-eol}
 
-Adobe unterstützt die folgenden Datenbankmaschinen nicht, da sie von ihrem Editor nicht mehr unterstützt werden. Kunden, die mit diesen Versionen arbeiten, müssen auf die neueste Version aktualisieren oder zu einer anderen wechseln.
+Adobe unterstützt die folgenden Datenbank-Engines nicht mehr, da sie von ihrem Anbieter eingestellt wurden. Kunden, die mit diesen Versionen arbeiten, müssen auf die neueste Version aktualisieren oder zu einer anderen Engine wechseln.
 
-Lesen Sie die [Campaign Classic-Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) , um auf die Liste kompatibler Versionen zuzugreifen.
+Konsultieren Sie die [Campaign Classic-Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html), um sich die Liste kompatibler Versionen anzusehen.
 
 **FEDERATED DATA ACCESS (FDA)**
 
-Ab der Frühjahrsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden FDA-Servern kompatibel.
+Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden FDA-Servern kompatibel.
 
 * Oracle 11G. [Mehr dazu](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf).
-* PostgreSQL 9.3. [Weitere Informationen](https://www.postgresql.org/support/versioning).
-* MySQL 5.5. &lt;[mehr dazu](http://www.fromdual.com/support-for-mysql-from-oracle).
-* DB2 9.5. [Weitere Informationen](http://www-01.ibm.com/support/docview.wss?uid=swg21168270).
-* Teradata 14 - 14.1. [Weitere Informationen](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068).
+* PostgreSQL 9.3. [Mehr dazu](https://www.postgresql.org/support/versioning).
+* MySQL 5.5. &lt;[Mehr dazu](http://www.fromdual.com/support-for-mysql-from-oracle).
+* DB2 9.5. [Mehr dazu](http://www-01.ibm.com/support/docview.wss?uid=swg21168270).
+* Teradata 14 – 14.1. [Mehr dazu](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068).
 
-Campaign Classic ist mit den folgenden Servern in Federated Data Access (FDA) nicht kompatibel.
+Campaign Classic ist mit den folgenden Servern in Federated Data Access (FDA) nicht mehr kompatibel.
 
-* DB2 UDB 9.5, 9.7. Die neuere Version von DB2 wird über Federated Data Access (FDA) unterstützt. [Mehr dazu](http://www-01.ibm.com/support/docview.wss?uid=swg21168270).
-* Oracle 9i, 10G R2. Neuere Versionen von Oracle werden von Federated Data Access (FDA) unterstützt. [Mehr dazu](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf).
-* PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Neuere Versionen von PostgreSQL werden von Federated Data Access (FDA) unterstützt. [Mehr dazu](https://www.postgresql.org/support/versioning).
-* MSSQL 2000, 2005, 2008 R2. Neuere Versionen von SQL Server werden von Federated Data Access (FDA) unterstützt. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/1044).
-* MySQL 5.1. Neuere Versionen von MySQL werden von Federated Data Access (FDA) unterstützt. [Mehr dazu](https://en.wikipedia.org/wiki/InfiniDB).
-* InfiniDB hat das Ende des Lebens erreicht. [Mehr dazu](https://www.mysql.com/support).
-* Teradata 13, 13.1. Neuere Versionen von Teradata werden durch Federated Data Access (FDA) unterstützt. [Mehr dazu](https://www.info.teradata.com/download.cfm?ItemID=1007255).
-* Netezza 6.02, 7.0. Netezza hat das Ende des Lebens erreicht. [Mehr dazu](https://en.wikipedia.org/wiki/Netezza).
-* AsterData 5.0. AsterData hat das Ende des Lebens erreicht. [Mehr dazu](https://en.wikipedia.org/wiki/Aster_Data_Systems).
+* DB2 UDB 9.5, 9.7. Neuere Versionen von DB2 werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](http://www-01.ibm.com/support/docview.wss?uid=swg21168270).
+* Oracle 9i, 10G R2. Neuere Versionen von Oracle werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf).
+* PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Neuere Versionen von PostgreSQL werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://www.postgresql.org/support/versioning).
+* MSSQL 2000, 2005, 2008 R2. Neuere Versionen von SQL Server werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/1044).
+* MySQL 5.1. Neuere Versionen von MySQL werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://en.wikipedia.org/wiki/InfiniDB).
+* InfiniDB hat das Ende des Lebenszyklus erreicht. [Mehr dazu](https://www.mysql.com/support).
+* Teradata 13, 13.1. Neuere Versionen von Teradata werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://www.info.teradata.com/download.cfm?ItemID=1007255).
+* Netezza 6.02, 7.0. Netezza hat das Ende des Lebenszyklus erreicht. [Mehr dazu](https://en.wikipedia.org/wiki/Netezza).
+* AsterData 5.0. AsterData hat das Ende des Lebenszyklus erreicht. [Mehr dazu](https://en.wikipedia.org/wiki/Aster_Data_Systems).
 * Sybase IQ 15.2, 15.4, 15.5 und Sybase ASE 15.0. Neuere Versionen von Sybase werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://sites.google.com/site/dbatipsandtricks/time-tracker).
-* Hadoop über HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic unterstützt weiterhin die aufgelisteten Versionen von Hadoop über HiveSQL über Federated Data Access (FDA), aber diese Versionen werden wie folgt zusammengeführt: HortonWorks (HDP 2.4.X, 2.5.x, 2.6.x) und HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6)
+* Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic wird die aufgelisteten Versionen von Hadoop via HiveSQL über Federated Data Access (FDA) weiter unterstützen, die Versionen werden jedoch zusammengeführt mit: HortonWorks (HDP 2.4.x, 2.5.x, 2.6.x) und HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6).
 
 **RDBMS-SERVER**
 
-Adobe Campaign ist nicht mit den folgenden RDBMS-Servern kompatibel:
+Adobe Campaign ist mit den folgenden RDBMS-Servern nicht mehr kompatibel:
 * Oracle 10GR2, 11G
 * PostgreSQL 9.0 bis 9.3
 * SQL Server 2005
