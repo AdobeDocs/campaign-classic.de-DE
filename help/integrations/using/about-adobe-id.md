@@ -14,8 +14,11 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+workflow-type: ht
+source-wordcount: '152'
+ht-degree: 100%
 
 ---
 
@@ -29,17 +32,17 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 * Optimierte Sicherheitsrichtlinien für die Kennwortverwaltung;
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-Das Identitätsverwaltungssystem von Adobe hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weitere Informationen zu den verschiedenen Typen von Adobe-IDs finden Sie auf [dieser Seite](https://helpx.adobe.com/enterprise/using/identity.html).
+Das Identity Management System (IMS) von Adobe hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
 >[!CAUTION]
 >
->Die IMS-Implementierung ist ausschließlich technischen Administratoren von Adobe vorbehalten. Die IMS-Implementierung ist ein komplexer Prozess, der lange zu implementieren sein kann.
+>Die IMS-Implementierung ist technischen Administratoren von Adobe vorbehalten. Die IMS-Implementierung ist ein komplexer Prozess, dessen Implementierung lange dauern kann.
 
 ## Verwandte Themen
 
 | Nützliche Seiten | Zusätzliche Ressourcen |
 |---|---|
-| [IMS konfigurieren](../../integrations/using/configuring-ims.md) | [Häufig gestellte Fragen zu Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/faq.html) |
+| [IMS konfigurieren](../../integrations/using/configuring-ims.md) | [Häufig gestellte Fragen zu Experience Cloud](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/faq.html) |
 | [IMS implementieren](../../integrations/using/implementing-ims.md) | [Zugriffsverwaltung](../../platform/using/access-management.md) |
-| [IMS-Fehlerbehebung](../../integrations/using/ims-troubleshooting.md) | [Installieren von Kampagnen-Paketen](../../installation/using/installing-campaign-standard-packages.md) |
+| [Fehlerbehebung bei IMS](../../integrations/using/ims-troubleshooting.md) | [Installieren von Kampagnenkits](../../installation/using/installing-campaign-standard-packages.md) |
 
