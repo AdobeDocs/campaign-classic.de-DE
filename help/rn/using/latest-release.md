@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e329ee546a3990850daeb7a46ee9de77fd075ff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1411'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ ht-degree: 98%
  </tbody> 
 </table>
 
-Der **letzte stabile Build** ist 9032 (3a9dc9c). Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
+Der **neueste stabile Build** ist 9032 (3a9dc9c). Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 20.1.3 – Build 9124 {#release-20-1-3-build-9124}
 
 _6. Mai 2020_
 
-* Es wurde ein Problem mit der **File Transfer** -Aktivität behoben, durch das die SFTP-Schlüsselauthentifizierung nicht auf Debian 9 funktionierte. (NEO-23183)
+* Es wurde ein Problem mit der Aktivität **Dateiübertragung** behoben, das bei Debian 9 eine SFTP-Schlüssel-basierte Authentifizierung verhinderte. (NEO-23183)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 – Build 9123 {#release-20-1-2-build-9123}
 
