@@ -14,8 +14,11 @@ discoiquuid: 9fe22450-057c-44b4-ab73-4027a2ddb20c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ad4a40053b25bbf8de81e074e135ef4944f0b427
+workflow-type: ht
+source-wordcount: '287'
+ht-degree: 100%
 
 ---
 
@@ -38,6 +41,6 @@ Sehen Sie sich dieses Video an, um sich mit den in Campaign Interaction verwende
 
 | Nützliche Seiten | Zusätzliche Ressourcen |
 |---|---|
-| [Implementierungsschritte für Interaktionen](../../interaction/using/implementation-steps.md) | [Testen der Distribution von Angeboten](../../interaction/using/about-offers-simulation.md) |
+| [Implementierungsschritte für Interaction](../../interaction/using/implementation-steps.md) | [Testen der Angebotsverteilung](../../interaction/using/about-offers-simulation.md) |
 | [Live-/Design-Umgebungen](../../interaction/using/live-design-environments.md) | [Hinzufügen eines Angebots in einer E-Mail](../../interaction/using/integrating-an-offer-via-the-wizard.md) |
-| [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md) | [Verwendungsfall: Hinzufügen eines Angebots zu einer Website](../../interaction/using/offers-on-an-inbound-channel.md) |
+| [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md) | [Anwendungsbeispiel: Hinzufügen eines Angebots auf einer Website](../../interaction/using/offers-on-an-inbound-channel.md) |
