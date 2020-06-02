@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
 workflow-type: tm+mt
 source-wordcount: '2051'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
       + [Version 18.4](rn/using/release--18-4.md)
-   + [Veraltete Funktionen](rn/using/deprecated-features.md)
+   + [Eingestellte Funktionen](rn/using/deprecated-features.md)
 + Erste Schritte {#getting-started}
    + Einstieg in Adobe Campaign {#starting-with-adobe-campaign}
       + [Über Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -60,7 +60,7 @@ ht-degree: 98%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen   {#creating-queries}
+   + Abfragen erstellen  {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -89,13 +89,13 @@ ht-degree: 98%
       + [Versandtypen](delivery/using/types-of-deliveries.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
       + [Über das Erstellen eines Versands ](delivery/using/steps-about-delivery-creation-steps.md)
-      + [Versand erstellen und identifizieren ](delivery/using/steps-create-and-identify-the-delivery.md)
+      + [Versand erstellen und identifizieren](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Zielpopulation bestimmen](delivery/using/steps-defining-the-target-population.md)
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
       + [Versenden der Nachrichten](delivery/using/steps-sending-the-delivery.md)
    + Benachrichtigungsversand {#sending-emails}
       + [Über den E-Mail-Kanal](delivery/using/about-email-channel.md)
-      + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md).
+      + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
       + [E-Mail-Inhalt erstellen](delivery/using/defining-the-email-content.md)
       + [Interaktive Inhalte definieren](delivery/using/defining-interactive-content.md)
       + [Nachrichten senden](delivery/using/sending-messages.md)
@@ -290,30 +290,30 @@ ht-degree: 98%
 + Integration mit Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
    + [Über Campaign-Integrationen](integrations/using/about-campaign-integrations.md)
    + Zielgruppenfreigabe {#audience-sharing}
-      + [Freigeben von Audiencen mit [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
-      + [Antrag an Adobe übermitteln](integrations/using/submitting-request-to-adobe.md)
-      + [Konfigurieren der Integration freigegebener Audiencen in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+      + [Audiences freigeben für [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
+      + [Anfrage an Adobe übermitteln](integrations/using/submitting-request-to-adobe.md)
+      + [Integration mit freigegebenen Zielgruppen konfigurieren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
       + [Fehlerbehebung](integrations/using/troubleshooting.md)
       + [Zielgruppenimport und -export](integrations/using/importing-and-exporting-audiences.md)
    + Asset-Freigabe {#asset-sharing}
-      + [Freigeben von Assets mit [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
-      + [Konfigurieren des Zugriffs auf [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
+      + [Assets freigeben für [!DNL Adobe Experience Cloud]](integrations/using/sharing-assets-with-adobe-experience-cloud.md)
+      + [Zugriff konfigurieren auf [!DNL Assets]](integrations/using/configuring-access-to-assets.md)
       + [Freigegebene Assets nutzen](integrations/using/inserting-a-shared-asset.md)
    + Adobe Experience Manager {#adobe-experience-manager}
       + [Info [!DNL Adobe Experience Manager]](integrations/using/about-adobe-experience-manager.md)
       + [Integration konfigurieren](integrations/using/configuring-the-integration.md)
-      + [Erstellen von [!DNL Experience Manager] Anhängen](integrations/using/creating-an-experience-manager-newsletter.md)
+      + [ [!DNL Experience Manager] -Newsletter erstellen](integrations/using/creating-an-experience-manager-newsletter.md)
    + Adobe Target {#adobe-target}
-      + [Integration mit [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
-      + [Konfigurieren der Integration mit [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
+      + [Integrieren mit [!DNL Adobe Target]](integrations/using/integrating-with-adobe-target.md)
+      + [Integration konfigurieren mit [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Dynamisches Bild einfügen](integrations/using/inserting-a-dynamic-image.md)
    + Verbindung mit Adobe ID {#connecting-via-an-adobe-id}
-      + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
-      + [Konfiguration [!DNL IMS]](integrations/using/configuring-ims.md)
-      + [Implementierung [!DNL IMS]](integrations/using/implementing-ims.md)
+      + [Versionsinformationen [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [ Konfigurieren [!DNL IMS]](integrations/using/configuring-ims.md)
+      + [ Implementieren [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Fehlerbehebung bei IMS](integrations/using/ims-troubleshooting.md)
    + ACS Connector {#acs-connector}
-      + [[!DNL ACS Connector] Grundsätze und Datenzyklus](integrations/using/acs-connector-principles-and-data-cycle.md)
+      + [[!DNL ACS Connector] Grundlagen und Datenzyklus](integrations/using/acs-connector-principles-and-data-cycle.md)
       + [Profile synchronisieren](integrations/using/synchronizing-profiles.md)
       + [Zielgruppen synchronisieren](integrations/using/synchronizing-audiences.md)
       + [Webanwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
@@ -395,14 +395,14 @@ ht-degree: 98%
       + [E-Mail-Empfang](workflow/using/inbound-emails.md)
       + [SMS-Empfang](workflow/using/inbound-sms.md)
    + Anwendungsbeispiele {#use-cases}
-      + Deliveries {#deliveries}
+      + Sendungen {#deliveries}
          + [Lokale Validierung verwenden](workflow/using/using-the-local-approval-activity.md)
-         + [A/B Testing](workflow/using/a-b-testing.md)
+         + [A/B Tests](workflow/using/a-b-testing.md)
          + [Geburtstags-E-Mail senden](workflow/using/sending-a-birthday-email.md)
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring     {#monitoring}
+      + Monitoring  {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -435,7 +435,7 @@ ht-degree: 98%
       + [Zeitzonen verwalten](workflow/using/managing-time-zones.md)
    + Technische Workflows {#technical-workflows}
       + [Über technische Workflows](workflow/using/about-technical-workflows.md)
-      + [Deliveries](workflow/using/deliveries.md)
+      + [Sendungen](workflow/using/deliveries.md)
       + [Kampagne](workflow/using/campaign.md)
       + [Web Analytics](workflow/using/web-analytics.md)
       + [Distributed Marketing](workflow/using/distributed-marketing.md)
@@ -537,7 +537,7 @@ ht-degree: 98%
       + [Dienstqualität](message-center/using/message-center-service-level.md)
       + [Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
    + Anwendungsbeispiel {#use-case}
-      + [Senden von transaktionalen E-Mails mit Anlagen](message-center/using/transactional-email-with-attachments.md)
+      + [Transaktions-E-Mails mit Anhängen senden](message-center/using/transactional-email-with-attachments.md)
 + Integration mit Social Media {#integrating-with-social-media}
    + [Über Social Marketing](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
