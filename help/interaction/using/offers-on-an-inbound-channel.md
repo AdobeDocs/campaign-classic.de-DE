@@ -14,8 +14,11 @@ discoiquuid: 63245348-0402-4929-9c4f-71f01f97758e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7c117c549b02cf24b97dc1330e703b711ba14129
+workflow-type: ht
+source-wordcount: '2159'
+ht-degree: 100%
 
 ---
 
@@ -44,8 +47,8 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Erstellung von anonymen Platzierungen {#creating-anonymous-offer-spaces}
 
-1. In your anonymous environment (**Visitors**) go to the **[!UICONTROL Administration]** > **[!UICONTROL Spaces]** node.
-1. Click **[!UICONTROL New]** to create call channels.
+1. Markieren Sie im Navigationszweig Ihrer anonymen Umgebung (**Besucher**) den Knoten **[!UICONTROL Administration]** > **[!UICONTROL Platzierungen]**.
+1. Klicken Sie auf **[!UICONTROL Neu]**, um eine Platzierung zu erstellen.
 
    ![](assets/offer_inbound_anonymous_example_010.png)
 
@@ -53,7 +56,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
    >
    >Die Platzierung wird automatisch der anonymen Umgebung zugeordnet.
 
-1. Ändern Sie die Beschriftung und wählen Sie den **[!UICONTROL Inbound Web]** Kanal aus. Du musst auch das **[!UICONTROL Enable unitary mode]** Kästchen markieren.
+1. Benennen Sie die Platzierung und wählen Sie den Kanal **[!UICONTROL Web (eingehend)]**. Aktivieren Sie darüber hinaus auch die Option **[!UICONTROL Einzelmodus zulassen]**.
 
    ![](assets/offer_inbound_anonymous_example_006.png)
 
@@ -88,19 +91,19 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
 ### Erstellung einer Angebotskategorie und eines Themas {#creating-an-offer-category-and-a-theme}
 
-1. Go to the **[!UICONTROL Offer catalog]** node within the environment you have just created.
-1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Offer catalog]** Node und wählen Sie **[!UICONTROL Create a new 'Offer category' folder]**.
+1. Markieren Sie in der zuvor erstellten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]****[!UICONTROL aus]**.
 
    Nennen Sie die neue Kategorie, beispielsweise **Finanzprodukte**.
 
-1. Go to the category&#39;s **[!UICONTROL Eligibility]** tab and enter **financing** as a theme, then save changes.
+1. Geben Sie im Tab **[!UICONTROL Eignung]** der Kategorie das Thema **Finanzierungen** ein und speichern Sie die Änderungen ab.
 
    ![](assets/offer_inbound_anonymous_example_023.png)
 
 ### Erstellung anonymer Angebote {#creating-anonymous-offers}
 
 1. Markieren Sie die soeben erstellte Kategorie.
-1. Klicks **[!UICONTROL New]**.
+1. Klicken Sie auf **[!UICONTROL Neu]**.
 
    ![](assets/offer_inbound_anonymous_example_013.png)
 
@@ -112,17 +115,17 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
    ![](assets/offer_inbound_anonymous_example_015.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and specify the weight of the offers according to its application contexts.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
    Im vorliegenden Beispiel soll das Angebot bis zum Jahresende auf der Startseite der Webpräsenz mit Priorität erscheinen.
 
    ![](assets/offer_inbound_anonymous_example_016.png)
 
-1. Go to the **[!UICONTROL Content]** tab and define the content of the offer.
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    >[!NOTE]
    >
-   >You can select **[!UICONTROL Content definitions]** to display the list of elements required for the web space.
+   >Um die für eine Web-Platzierung erforderlichen Elemente anzuzeigen, können Sie auf **[!UICONTROL Inhaltsdefinition]** klicken.
 
    ![](assets/offer_inbound_anonymous_example_017.png)
 
@@ -130,7 +133,7 @@ Das Ergebnis ist eine Navigationsstruktur, welche Ihre neue Umgebung enthält:
 
    ![](assets/offer_inbound_anonymous_example_018.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and apply the same weight as for the first offer.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die gleiche Gewichtung wie für das erste Angebot.
 1. Lassen Sie beide Angebote den Validierungszyklus durchlaufen, um sie und ihre Platzierungen in der Live-Umgebung verfügbar zu machen.
 
 ### Konfiguration der Angebotsplatzierung auf der Webseite {#configure-the-web-offer-space-on-the-website}
@@ -213,7 +216,7 @@ Gehen Sie wie folgt vor, um die Platzierung der Kategorie **Premium** zu erstell
 
    ![](assets/offer_inbound_fallback_example_023.png)
 
-1. Erstellen Sie einen neuen **[!UICONTROL Inbound web]** Typraum.
+1. Wählen Sie den Kanal **[!UICONTROL Web (eingehend)]**.
 
    ![](assets/offer_inbound_fallback_example_024.png)
 
@@ -234,8 +237,8 @@ Gehen Sie wie folgt vor, um die Platzierung der Kategorie **Premium** zu erstell
 
 Erstellen Sie zwei Angebotskategorien: **Premium** und **Partner**. Jede Kategorie soll zwei Angebote für anonyme Kontakte enthalten.
 
-1. Go to the **[!UICONTROL Offer catalog]** in the anonymous environment that you have just created.
-1. Add an **[!UICONTROL Offer category]** folder with **Best Offer** as a label.
+1. Markieren Sie hierfür in der anonymen Umgebung, die Sie zuvor erstellt haben, den Knoten **[!UICONTROL Angebotskatalog]**.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie im Kontextmenü die Option **[!UICONTROL Angebotskategorie-Ordner hinzufügen]** aus. Nennen Sie die Kategorie **Premium**.
 
    ![](assets/offer_inbound_fallback_example_027.png)
 
@@ -251,11 +254,11 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
    ![](assets/offer_inbound_fallback_example_029.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and specify the weight of the offers according to its application contexts.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
    ![](assets/offer_inbound_fallback_example_030.png)
 
-1. Go to the **[!UICONTROL Content]** tab and define the content of the offer.
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_032.png)
 
@@ -264,11 +267,11 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
    ![](assets/offer_inbound_fallback_example_031.png)
 
 1. Markieren Sie die Kategorie **Partner** und erstellen Sie das erste anonyme Angebot der Kategorie.
-1. Go to the **[!UICONTROL Content]** tab and define the content of the offer.
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_033.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and specify the weight of the offers according to its application contexts.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
    ![](assets/offer_inbound_fallback_example_034.png)
 
@@ -276,7 +279,7 @@ Erstellen Sie nun jeweils zwei Angebote in jeder der zuvor erstellten Kategorien
 
    ![](assets/offer_inbound_fallback_example_035.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and apply the same weight that you applied to the first offer in this category so that the offers are displayed successively on the website.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die gleiche Gewichtung wie für das erste Angebot dieser Kategorie, damit die Angebote abwechselnd auf der Webseite angezeigt werden.
 
    ![](assets/offer_inbound_fallback_example_036.png)
 
@@ -293,7 +296,7 @@ Erstellen Sie die beiden Platzierungen auf die gleiche Weise wie die anonymen Pl
 
    ![](assets/offer_inbound_fallback_example_005.png)
 
-1. Select the **[!UICONTROL Fall back on an anonymous environment if no individuals were identified]** option.
+1. Kreuzen Sie die Option **[!UICONTROL Zu einer anonymen Platzierung wechseln, wenn keine Zielperson identifiziert wurde]** an.
 
    ![](assets/offer_inbound_fallback_example_006.png)
 
@@ -306,19 +309,19 @@ Erstellen Sie die beiden Platzierungen auf die gleiche Weise wie die anonymen Pl
 Im vorliegenden Beispiel soll der Kontakt über seine E-Mail-Adresse in der Adobe-Campaign-Datenbank identifiziert werden. Fügen Sie die E-Mail-Adresse des Empfängers wie folgt in die Platzierung ein:
 
 1. Gehen Sie in der identifizierten Umgebung in den Platzierungsknoten.
-1. Select the **Best Offer** offer space and click **[!UICONTROL Advanced parameters]**.
+1. Wählen Sie die Platzierung **Premium** aus und klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**.
 
    ![](assets/offer_inbound_fallback_example_044.png)
 
-1. Klicken Sie auf der **[!UICONTROL Target identification]** Registerkarte auf **[!UICONTROL Add]**.
+1. Klicken Sie im Tab **[!UICONTROL Zielgruppenidentifizierung]** auf **[!UICONTROL Hinzufügen]**.
 
    ![](assets/offer_inbound_fallback_example_046.png)
 
-1. Click **[!UICONTROL Edit expression]**, go to the recipients table and select the **[!UICONTROL Email]** field.
+1. Klicken Sie auf **[!UICONTROL Ausdruck bearbeiten]** und wählen Sie das Feld **[!UICONTROL E-Mail]** aus der Empfängertabelle aus.
 
    ![](assets/offer_inbound_fallback_example_047.png)
 
-1. Click **[!UICONTROL OK]** to close the **[!UICONTROL Advanced parameters]** window and finish configuring the **Best Offer** offer space.
+1. Klicken Sie dann auf **[!UICONTROL OK]**, um das Fenster **[!UICONTROL Erweiterte Parameter]** zu verlassen und die Konfiguration der **Premium**-Platzierung abzuschließen.
 1. Wiederholen Sie den Vorgang für die **Partner**-Platzierung.
 
    ![](assets/offer_inbound_fallback_example_048.png)
@@ -327,8 +330,8 @@ Im vorliegenden Beispiel soll der Kontakt über seine E-Mail-Adresse in der Adob
 
 Erstellen Sie zwei Angebotskategorien: **Premium** und **Partner**. Jede Kategorie soll zwei personalisierte Angebote enthalten.
 
-1. Go to the **[!UICONTROL Offer catalogs]** node in the identified environment.
-1. As in the anonymous environment, add two **[!UICONTROL Offer category]** folders with **Best Offer** and **Partner** as a labels.
+1. Markieren Sie hierfür in der identifizierten Umgebung den Knoten **[!UICONTROL Angebotskatalog]**.
+1. Fügen Sie wie zuvor für die anonyme Umgebung zwei Ordner vom Typ **[!UICONTROL Angebotskategorie]** hinzu. Nennen Sie sie **Premium** und **Partner**.
 
    ![](assets/offer_inbound_fallback_example_009.png)
 
@@ -340,11 +343,11 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
    ![](assets/offer_inbound_fallback_example_011.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and specify the weight of the offers according to its application contexts.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
    ![](assets/offer_inbound_fallback_example_012.png)
 
-1. Go to the **[!UICONTROL Content]** tab and define the content of the offer.
+1. Konfigurieren Sie nun den Angebotsinhalt im entsprechenden Tab.****
 
    ![](assets/offer_inbound_fallback_example_013.png)
 
@@ -356,7 +359,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
    ![](assets/offer_inbound_fallback_example_015.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and specify the weight of the offers according to its application contexts.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die Gewichtung des Angebots in Abhängigkeit von den diversen Anwendungskontexten.
 
    ![](assets/offer_inbound_fallback_example_016.png)
 
@@ -364,7 +367,7 @@ Erstellen Sie nun in jeder Kategorie zwei Angebote, d. h. vier Angebote insgesam
 
    ![](assets/offer_inbound_fallback_example_017.png)
 
-1. Go to the **[!UICONTROL Eligibility]** tab and apply the same weight that you applied to the first offer in this category so that the offers are displayed successively on the website.
+1. Definieren Sie im Tab **[!UICONTROL Eignung]** die gleiche Gewichtung wie für das erste Angebot dieser Kategorie, damit die Angebote abwechselnd auf der Webseite angezeigt werden.
 1. Lassen Sie alle Angebote den Validierungszyklus durchlaufen, um sie in der Live-Umgebung verfügbar zu machen. Stellen Sie sicher, dass im Zuge der Inhaltsvalidierung je nach Angebot entweder die Platzierung **Partner** oder die Platzierung **Premium** aktiviert wird.
 
 ### Konfiguration der Angebotsplatzierungen auf der Webseite {#configuring-offer-spaces-on-the-web-page}
