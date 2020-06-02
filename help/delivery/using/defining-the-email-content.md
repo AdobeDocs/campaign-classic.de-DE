@@ -12,11 +12,11 @@ discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
-workflow-type: ht
-source-wordcount: '2929'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+workflow-type: tm+mt
+source-wordcount: '2928'
+ht-degree: 97%
 
 ---
 
@@ -180,17 +180,21 @@ Der Versand-Assistent bietet die Möglichkeit, lokale oder in der Bibliothek ent
 
 ![](assets/s_ncs_user_image_from_library.png)
 
-Um von den Empfängern gesehen werden zu können, müssen die Bilder auf einem extern zugänglichen Server gespeichert werden.
+>[!IMPORTANT]
+>
+>Um von den Empfängern gesehen werden zu können, müssen die Bilder auf einem extern zugänglichen Server gespeichert werden.
 
-Klicken Sie auf **[!UICONTROL Tracking &amp; Bilder]** in der Symbolleiste, um die Bilder über den Versand-Assistenten zu verwalten.
+So verwalten Sie Bilder über den Versand-Assistent
 
-![](assets/s_ncs_user_email_del_img_param.png)
+1. Klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Verfolgung und Bilder]** .
+   ![](assets/s_ncs_user_email_del_img_param.png)
 
-Kreuzen Sie die Option **[!UICONTROL Online-Stellen der Bilder]** im **[!UICONTROL Bilder]**-Tab an und geben Sie an, ob die Bilder in die E-Mail eingeschlossen werden sollen.
+1. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Bilder&quot;die Option &quot;Bilder]** **[!UICONTROL hochladen&quot;]** .
+1. Sie können dann auswählen, ob die Bilder in die E-Mail-Nachricht aufgenommen werden sollen.
 
 ![](assets/s_ncs_user_email_del_img_upload.png)
 
-* Durch Klick auf den Link **[!UICONTROL Bilder sofort online stellen...]** werden die Bilder manuell online gestellt, ohne die Versandanalyse abzuwarten.
+* Sie können Bilder manuell hochladen, ohne auf die Analyse des Versands zu warten. Klicken Sie dazu direkt auf die Schaltfläche Bilder **[!UICONTROL hochladen ...]** Link.
 * Im Feld **[!UICONTROL URL der Bilder]** können Sie einen anderen Pfad zu den Bildern auf dem Trackingserver angeben. Dieser Wert überschreibt den im Softwareverteilungs-Assistenten angegebenen Wert.
 
 Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relativen Pfadnamen enthält, wird Ihnen je nach Versandparametern vorgeschlagen, die Bilder sofort online zu stellen.
@@ -201,7 +205,7 @@ Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relati
 >
 >Die Bildpfade werden entweder durch manuelles Online-Stellen der Bilder oder beim Senden der Nachrichten geändert.
 
-**Beispiel: Versand einer Nachricht mit Bildern{#example--sending-a-message-with-images}**
+### Beispiel: Versand einer Nachricht mit Bildern {#example--sending-a-message-with-images}
 
 Es soll folgende Versandnachricht mit vier Bildern erstellt werden:
 
