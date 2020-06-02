@@ -12,8 +12,11 @@ discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
+workflow-type: ht
+source-wordcount: '840'
+ht-degree: 100%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
 
 Adobe Experience Cloud ist ein umfassendes Set hervorragender integrierter Lösungen, die auf einer gemeinsamen Datenplattform mit gemeinsamen leistungsstarken Core Services aufbauen.
 
-Learn about functional integrations available between Adobe Campaign and [Adobe Experience Cloud solutions](https://docs.adobe.com/content/help/en/core-services/interface/marketing-cloud-integrations.html) and [core services](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html). Anschließend können Sie Ihre Lösungsimplementierungen modernisieren und die Experience Cloud implementieren, sodass Sie Funktionen wie Kundenattribute und Audiencen verwenden können.
+Hier erfahren Sie mehr über die funktionalen Integrationen zwischen Adobe Campaign und den verschiedenen [Adobe Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/core-services/interface/marketing-cloud-integrations.html) sowie [Core Services](https://docs.adobe.com/content/help/de-DE/core-services/interface/about-core-services/core-services.html). Anschließend können Sie Ihre Lösungsimplementierungen modernisieren und Experience Cloud einrichten, sodass Sie Funktionen wie beispielsweise Kundenattribute und Audiences verwenden können.
 
-The full list of Adobe solutions and core services which can be integrated with Adobe Campaign, as well as associated documentation, is available in [this section](#experience-cloud-integrations).
+Die vollständige Liste der Adobe-Lösungen und Core Services, die mit Adobe Campaign integriert werden können, sowie das entsprechende Handbuch finden Sie in [diesem Abschnitt](#experience-cloud-integrations).
 
 ![](assets/ExCloud-solutions.png)
 
@@ -33,9 +36,9 @@ The full list of Adobe solutions and core services which can be integrated with 
 >
 >Die meisten Integrationen erfordern die Anmeldung mit einer Adobe-ID (IMS). Weiterführende Informationen zu dieser Implementierung finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
 >
->Beachten Sie, dass die IMS-Implementierung ein komplexer Prozess ist, der lang sein kann. Es ist ausschließlich technischen Administratoren von Adobe vorbehalten.
+>Beachten Sie, dass die IMS-Implementierung ein komplexer Prozess ist, der viel Zeit in Anspruch nehmen kann. Eine solche Implementierung ist technischen Administratoren von Adobe vorbehalten.
 
-## Verknüpfen von Lösungen {#working-with-experience-cloud-solutions}
+## Verknüpfen der Lösungen {#working-with-experience-cloud-solutions}
 
 In Ihrer Arbeitsumgebung verfügen Sie unter Umständen über verschiedene Lösungen der Adobe Experience Cloud. Diese sind miteinander über s. g. Organisationen verbunden. Eine **Organisation** ist die Entität, mit der ein Administrator Gruppen und Benutzer konfigurieren und Anmeldungen in der Experience Cloud steuern kann. Eine Organisation ist wie eine Unternehmensanmeldung bei allen Produkten und Lösungen, die in der Experience Cloud enthalten sind. Normalerweise besitzt eine Organisation den Namen Ihres Unternehmens. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen.
 
@@ -45,7 +48,7 @@ Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe
 >
 >Bei der Neuinstallation von Adobe Campaign oder der Integration einer bereits existierenden Installation mit Adobe Experience Cloud wird der [Experience-Cloud-ID-Service](https://marketing.adobe.com/resources/help/de_DE/mcvid/) aktiviert, welcher den von Adobe Campaign standardmäßig für Tracking-Funktionen eingesetzten Cookie ersetzt.
 >
->Empfängern, die Trackinglogs generieren, wird dann eine eindeutige Besucher-ID zugewiesen. Diese ID wird im **[!UICONTROL Requester UUID (@sourceID)]** Feld der **[!UICONTROL nms:trackingLogRcp]** Tabelle gespeichert. Die Verfolgungsdaten von Empfängern, die vor der Implementierung des Besucher-ID-Diensts existierten, können daher nicht mehr verwendet werden.
+>Dadurch wird Empfängern, sobald sie Trackinglogs erzeugen, eine eindeutige Besucherkennung zugeordnet. Diese wird im Feld **[!UICONTROL Anforderer-UUID (@sourceID)]** der **[!UICONTROL nms:trackingLogRcp]**-Tabelle gespeichert. Trackingdaten von Empfängern, die vor der Implementierung des Besucher-ID-Services existierten, sind dann nicht mehr verwendbar.
 >
 >Unter der Voraussetzung, dass sie denselben [CNAME](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid_cname.html) aufweisen, erkennen die anderen Lösungen der Adobe-Experience-Cloud-Lösungen diese Kennung.
 
@@ -63,7 +66,7 @@ Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe
  <tbody> 
   <tr> 
    <td> <strong>Adobe Echtzeit-Kundendatenplattform</strong><br /> </td> 
-   <td> Die Integration zwischen Adobe Campaign und Adobe Echtzeit-Kundendatenplattform ermöglicht das Freigeben von Segmentdaten und das Importieren von Audiences in Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Erfahren Sie mehr</a> über die Integration zwischen Campaign und Adobe Echtzeit-Kundendatenplattform.</p><br /> </td> 
+   <td> Die Integration zwischen Adobe Campaign und Adobe Echtzeit-Kundendatenplattform ermöglicht das Freigeben von Segmentdaten und das Importieren von Audiences in Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/de-DE/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Erfahren Sie mehr</a> über die Integration zwischen Campaign und Adobe Echtzeit-Kundendatenplattform.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>IMS - Adobe ID</strong><br /> </td> 
@@ -91,7 +94,7 @@ Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe
   </tr> 
   <tr> 
    <td> <strong>Experience Cloud Triggers</strong><br /> </td> 
-   <td> Integration between <strong>Triggers core service</strong> and Adobe Campaign allows you to send personalized emails to your customers as a reaction to specific behaviors that are tracked on your website by Adobe Analytics.<br /> <p><a href="https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html">Informationen</a> zur Integration von Adobe Campaign mit Experience Cloud Triggers.</p><br /> </td> 
+   <td> Durch die Integration von Adobe Campaign mit dem <strong>Triggers Core Service</strong> können Sie Ihren Kunden personalisierte E-Mails senden, die auf bestimmte Verhaltensweisen abgestimmt sind, die auf Ihrer Webseite mithilfe von Adobe Analytics ermittelt wurden.<br /> <p><a href="https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html">Informationen</a> zur Integration von Adobe Campaign mit Experience Cloud Triggers.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Analytics – Data Connector</strong><br /> </td> 
