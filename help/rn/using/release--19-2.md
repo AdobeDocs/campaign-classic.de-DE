@@ -14,8 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
+workflow-type: ht
+source-wordcount: '1373'
+ht-degree: 100%
 
 ---
 
@@ -41,16 +44,16 @@ source-git-commit: eab67029d477044bc853f2a5c2de06ace70ebbee
  </tbody> 
 </table>
 
-Der **letzte stabile Build** ist 9032 (3a9dc9c). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Der **neueste stabile Build** ist 9032 (3a9dc9c). Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.2.3 – Build 9081 {#release-19-2-3-build-9081}
 
 _7. Februar 2020_
 
-**Verbesserungen**
+**Neuheiten**
 
-* Korrektur des Regressionsfehlers aufgrund der Implementierung der SSL-Zertifizierung, der dazu führte, dass die Benutzerverbindung auf dem Windows-Server fehlschlug. (NEO-20629)
-* Es wurde ein Problem behoben, bei dem im Menü **Info** eine falsche Version-Tag-Nummer angezeigt wurde.
+* Korrektur eines Regressionsfehlers aufgrund der Implementierung der SSL-Zertifizierung, der dazu führte, dass die Benutzerverbindung auf einem Windows-Server fehlschlug. (NEO-20629)
+* Es wurde ein Problem behoben, bei dem im Menü **Versionsinformationen** eine falsche Versions-Tag-Nummer angezeigt wurde.
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.2 – Build 9080 {#release-19-2-build-9080}
 
