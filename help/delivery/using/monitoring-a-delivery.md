@@ -14,11 +14,11 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2679'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Unterschiedliche Status werden auf [dieser Seite](#delivery-statuses) beschriebe
 >
 >Der Link **[!UICONTROL Mirrorseite dieser Nachricht anzeigen...]** ermöglicht das Laden der Mirrorseite der markierten Zeile in einem separaten Fenster. Dies ist jedoch nur für Sendungen mit HTML-Inhalt möglich. Weitere Informationen finden Sie unter [Mirrorseite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
-### Trackinglogs   {#tracking-logs}
+### Trackinglogs    {#tracking-logs}
 
 Im **[!UICONTROL Tracking]**-Tab wird der Tracking-Verlauf des Versands angezeigt. Hier werden die Tracking-Informationen bezüglich aller von Adobe Campaign gesendeten Nachrichten, d. h. alle getrackten URLs gelistet. Tracking-Informationen werden stündlich aktualisiert.
 
@@ -277,8 +277,8 @@ Auf die Liste aller Sendungen kann im Knoten **[!UICONTROL Kampagnenverwaltung >
 Standardmäßig zeigt die Versandliste die Titel und Status aller im ausgewählten Knoten erstellten Sendungen sowie die Anzahl der zu versendenden, der verarbeiteten und der erfolgreich zugestellten Nachrichten an.
 
 * Die Angabe **[!UICONTROL Zu sendende Nachrichten]** entspricht der Anzahl der Empfänger in der Zielgruppe, nach der Analyse aber vor Absendung.
-* The number of messages in the **[!UICONTROL Success]** column corresponds to the number of messages sent by the server and received by the recipients.
-* The number of **[!UICONTROL Processed]** messages corresponds to the number of messages received plus the number of messages with errors.
+* In der Spalte **[!UICONTROL Erfolg]** wird die Anzahl der erfolgreich zugestellten Nachrichten angezeigt.
+* Die Spalte **[!UICONTROL Verarbeitet]** enthält die Summe der zugestellten und fehlerhaften Nachrichten.
 
 Dieselben Informationen werden auch im Versand-Dashboard angezeigt.
 
