@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
+source-git-commit: e2ba309643a10a2bfdb031b3ee0acd90c3d02fc0
 workflow-type: tm+mt
 source-wordcount: '6491'
 ht-degree: 96%
@@ -23,7 +23,7 @@ ht-degree: 96%
 
 # Aktualisierungen der Dokumentation{#documentation-updates}
 
-Diese Seite Liste alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Kampagne.
+Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Kampagne-Version Liste.
 
 You can also consult the [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) for more updates.
 
