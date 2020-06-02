@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 5d8959dc790c0cf0e6ea62122310bfbee5bcc0dd
 workflow-type: tm+mt
 source-wordcount: '6491'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -36,9 +36,9 @@ Der Abschnitt zur Fehlerbehebung bei der Bereitstellung wurde verschoben und ver
 
 Die Richtlinien zur Lieferbarkeit beim Start eines neuen Plattformabschnitts wurden verbessert. [mehr dazu](../../delivery/using/starting-new-platform.md)
 
-Der Abschnitt Senden von transaktionalen E-Mails mit Anlagen wurde verschoben und aktualisiert. [mehr dazu](../../message-center/using/transactional-email-with-attachments.md)
+Der Abschnitt zum Senden von Transaktions-E-Mails mit Anhängen wurde an eine andere Stelle verschoben und aktualisiert. [mehr dazu](../../message-center/using/transactional-email-with-attachments.md)
 
-Der Abschnitt Best Practices für die Datenpackage wurde verschoben und aktualisiert. [Mehr dazu](../../platform/using/working-with-data-packages.md#data-package-best-practices)
+Der Abschnitt Best Practices für die Datenpackage wurde verschoben und aktualisiert. [mehr dazu](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## April 2020 {#april-2020}
 
@@ -52,9 +52,9 @@ Der Abschnitt, der das integrierte Datenmodell des Adobe Campaigns beschreibt, w
 
 Arbeitsablaufverwendungsfälle wurden aktualisiert und in thematische Abschnitte umstrukturiert. [mehr dazu](../../workflow/using/using-the-local-approval-activity.md)
 
-Die Abschnitte [für die Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) von AbsprungMails und für die [E-Mail-Verwaltung](../../delivery/using/understanding-delivery-failures.md#email-management-rules) wurden um aktualisierte Informationen erweitert.
+Die Abschnitte [Bounce-Message-Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) und [E-Mail-Verwaltungsregeln](../../delivery/using/understanding-delivery-failures.md#email-management-rules) enthalten aktualisierte Informationen.
 
-Der Adobe Campaign Enhanced MTA-Artikel wurde aktualisiert. Sie gilt jetzt nur für Campaign Classic. [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Der Artikel zum Adobe Campaign Enhanced MTA wurde aktualisiert. Er gilt jetzt nur für Campaign Classic. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
 
 ## März 2020 {#march-2020}
 
@@ -130,7 +130,7 @@ Der Abschnitt „Zulieferbarkeit“ wurde verschoben, neu organisiert und mit ak
 
 Ein neuer Abschnitt mit den Grundlagen des Adobe Campaign Classic-Datenmodells und dem Zugriff auf die Beschreibung der einzelnen Tabellen ist jetzt verfügbar – [mehr dazu](../../configuration/using/about-data-model.md)
 
-Der Artikel zu Adobe Campaign Enhanced MTA wurde mit detaillierteren Informationen zur Installation eines spezifischen Typologie-Packages in Instanzen aktualisiert, die die erforderlichen Enhanced MTA-Header nicht zu jeder Nachricht hinzufügen – [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
+Der Artikel zu Adobe Campaign Enhanced MTA wurde mit detaillierteren Informationen zur Installation eines spezifischen Typologie-Packages in Instanzen aktualisiert, die die erforderlichen Enhanced MTA-Header nicht zu jeder Nachricht hinzufügen – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html#impacts)
 
 Die Anwendungsbeispiele im Zusammenhang mit der Abfragegestaltung wurden in separate Abschnitte umstrukturiert – [mehr dazu](../../workflow/using/querying-recipient-table.md)
 
@@ -168,7 +168,7 @@ Sicherer SMS-Versand (TLS) – [mehr dazu](https://helpx.adobe.com/de/campaign/k
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar – [mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie Fehler in einem Workflow beheben können, der im Status „Schnellstmöglicher Start“ in einer Kampagne verbleibt – [mehr dazu](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
