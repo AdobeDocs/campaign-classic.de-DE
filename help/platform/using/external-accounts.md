@@ -14,8 +14,11 @@ discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
+workflow-type: ht
+source-wordcount: '2444'
+ht-degree: 100%
 
 ---
 
@@ -48,23 +51,23 @@ Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Sie können a
 
 Externe Konten werden von technischen Prozessen, wie technischen Workflows oder Kampagnen-Workflows, verwendet. Bei der Einrichtung eines Dateitransfers in einem Workflow oder bei einem Datenaustausch mit einer anderen Anwendung (Adobe Target, Experience Manager etc.) müssen Sie ein externes Konto auswählen.
 
-1. From the **[!UICONTROL Explorer]**, unfold the **[!UICONTROL Administration]** menu.
-1. Blenden Sie das **[!UICONTROL Platform]** Menü aus und klicken Sie auf **[!UICONTROL External accounts]**.
+1. Öffnen Sie im **[!UICONTROL Explorer]** das Menü **[!UICONTROL Administration]**.
+1. Öffnen Sie das Menü **[!UICONTROL Plattform]** und wählen Sie **[!UICONTROL Externe Konten]** aus
 
    ![](assets/ext_account_1.png)
 
-1. Click the **[!UICONTROL New]** button.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
 
    ![](assets/ext_account_2.png)
 
-1. Geben Sie ein **[!UICONTROL Label]** und ein **[!UICONTROL Internal Name]**. Beide werden bei der Auswahl von Externen Konti in Workflows verwendet.
-1. Check **[!UICONTROL Enabled]** if you want your connection to be enabled.
-1. Select your external account **[!UICONTROL Type]** which one you want to create.
+1. Geben Sie einen **[!UICONTROL Titel]** und einen **[!UICONTROL internen Namen]** ein. Beide werden bei der Auswahl externer Konten in Workflows verwendet.
+1. Aktivieren Sie **[!UICONTROL Aktiviert]**, wenn Sie möchten, dass Ihre Verbindung aktiviert wird.
+1. Wählen Sie den **[!UICONTROL Typ]** des externen Kontos aus, den Sie erstellen möchten.
 1. Konfigurieren Sie den Zugriff auf das Konto, indem Sie die Anmeldeinformationen entsprechend dem gewählten externen Kontotyp angeben.
 
    Die nötigen Informationen werden normalerweise vom Anbieter des Servers bereitgestellt, mit dem Sie eine Verbindung herstellen möchten.
 
-1. Klicks **[!UICONTROL Save]**.
+1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Das externe Konto wird angelegt und in die Liste der externen Konten aufgenommen. Es steht jetzt für Ihre Daten- und Dateitransfers oder Routing-Konfigurationen in Workflow-Aktivitäten und Versandeigenschaften bereit.
 
@@ -76,7 +79,7 @@ Alle Server, die für den POP3-Zugriff konfiguriert sind, können für den Empfa
 
 ![](assets/ext_account_6.png)
 
-To configure the **[!UICONTROL Bounce mails (defaultPopAccount)]** external account:
+Um das externe Konto für **[!UICONTROL Bounce-Messages (defaultPopAccount)]** zu konfigurieren, benötigen Sie folgende Informationen:
 
 * **[!UICONTROL Server]**
 
@@ -86,17 +89,17 @@ To configure the **[!UICONTROL Bounce mails (defaultPopAccount)]** external acco
 
    Nummer des POP3-Verbindungsports. Standardmäßig ist dies der Port 110.
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Name des Benutzers.
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort des Benutzerkontos.
 
-* **[!UICONTROL Encryption]**
+* **[!UICONTROL Verschlüsselung]**
 
-   Type of chosen encryption between **[!UICONTROL By default]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** or **[!UICONTROL POP3S]**.
+   Typ der gewählten Verschlüsselung: **[!UICONTROL Standardmäßig]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** oder **[!UICONTROL POP3S]**.
 
 ## Externes Routing-Konto {#routing-external-account}
 
@@ -132,17 +135,17 @@ Geben Sie dazu in diesem externen Konto die Adresse und die Zugangsdaten für di
 
    Nummer des FTP-Verbindungsports. Standardmäßig ist dies Port 21.
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Name des Benutzers.
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort des Benutzerkontos.
 
-* **[!UICONTROL Encryption]**
+* **[!UICONTROL Verschlüsselung]**
 
-   Type of chosen encryption between **[!UICONTROL None]** or **[!UICONTROL SSL]**.
+   Typ der gewählten Verschlüsselung: **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
 
 Informationen zu diesen Zugangsdaten finden Sie auf dieser [Seite](https://help.dreamhost.com/hc/en-us/articles/115000675027-FTP-overview-and-credentials).
 
@@ -167,9 +170,9 @@ Die folgenden Verbindungstypen können konfiguriert werden:
 * ODBC (Sybase ASE, Sybase IQ)
 * HTTP-Weiterleitung auf Remote-Datenbank
 
-### Schneeflocken-Externe Konto {#snowflake-external-account}
+### Externes Snowflake-Konto {#snowflake-external-account}
 
-The **Snowflake** external account allows you to connect your Campaign instance to your Snowflake external database. For more information on how to configure Campaign Classic with Snowflake, refer to this [page](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+Über das externe **Snowflake**-Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Snowflake-Datenbank verbinden. Weiterführende Informationen zum Konfigurieren von Campaign Classic mit Snowflake finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake) oder in diesem Abschnitt.
 
 Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
@@ -177,17 +180,17 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
        URL des Snowflake-Servers.
    
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
        Name des Benutzers.
    
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
        Passwort des Benutzerkontos.
    
-* **[!UICONTROL Database]**
+* **[!UICONTROL Datenbank]**
 
-       Name der Datenbank.
+       Name Ihrer Datenbank.
    
 ![](assets/snowflake.png)
 
@@ -199,51 +202,51 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
-* **[!UICONTROL Type]**
+* **[!UICONTROL Typ]**
 
-   Choose the **[!UICONTROL Teradata]** type.
+   Wählen Sie den **[!UICONTROL Teradata]**-Typ aus.
 
 * **[!UICONTROL Server]**
 
    URL oder Name Ihres Teradata-Servers
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Name des Kontos, mit dem auf die Teradata-Datenbank zugegriffen wird
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort, das für die Verbindung zur Teradata-Datenbank verwendet wird
 
-* **[!UICONTROL Database]**
+* **[!UICONTROL Datenbank]**
 
    Dieses Feld kann leer gelassen werden.
 
-* **[!UICONTROL Options]**
+* **[!UICONTROL Optionen]**
 
    Optionen, die über Teradata übermittelt werden sollen.
 
-* **[!UICONTROL Timezone]**
+* **[!UICONTROL Zeitzone]**
 
    Die in Teradata eingestellte Zeitzone.
 
 ![](assets/ext_account_20.png)
 
-Wenn sich mehrere Adobe Campaign-Benutzer mit demselben externen FDA-Teradata-Konto verbinden, können Sie im Tab **[!UICONTROL Query banding]** einen Satz von Schlüssel/Wert-Paaren für eine Sitzung festlegen.
+Wenn sich mehrere Adobe Campaign-Benutzer mit demselben externen FDA-Teradata-Konto verbinden, können Sie im Tab **[!UICONTROL Query Banding]** einen Satz von Schlüssel/Wert-Paaren für eine Sitzung festlegen.
 
 Jedes Mal, wenn ein Campaign-Benutzer eine Abfrage in der Teradata-Datenbank ausführt, sendet Adobe Campaign Metadaten, die aus einer Liste von Schlüsseln bestehen, die diesem Benutzer zugeordnet sind. Diese Daten können dann von Teradata-Administratoren für Prüfzwecke oder zur Verwaltung von Zugriffsrechten verwendet werden.
 
-Check the **[!UICONTROL Active]** box to activate this feature
+Markieren Sie die Option **[!UICONTROL Aktiv]**, um diese Funktion zu aktivieren.
 
-Im **[!UICONTROL Default]** Feld können Sie ein Standardband für die Abfrage eingeben, das verwendet wird, wenn ein Benutzer über kein zugewiesenes Abfragen-Band verfügt. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrage keine Teradata verwenden.
+Im Feld **[!UICONTROL Standard]** können Sie einen Standardwert für Query Banding eingeben, der verwendet wird, wenn einem Benutzer kein Query Banding zugeordnet ist. Wenn kein Standardwert für Query Banding definiert ist, können Benutzer ohne Query Banding Teradata nicht verwenden.
 
-Mit dem **[!UICONTROL Users]** Feld können Sie für jeden Benutzer ein Abfrage-Band angeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Abfragen-Band zugewiesen ist, wird das **[!UICONTROL Default]** Feld angewendet.
+Im Feld **[!UICONTROL Benutzer]** können Sie für jeden Benutzer ein Query Banding angeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Query Banding zugewiesen ist, wird das Feld **[!UICONTROL Standard]** angewendet.
 
-Weitere Informationen zu **[!UICONTROL Query banding]** finden Sie im [Teradata-Handbuch](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
+Weitere Informationen zu **[!UICONTROL Query Banding]** finden Sie im [Teradata-Handbuch](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
 ## Externes Web Analytics-Konto {#web-analytics-external-account}
 
-Mit dem **[!UICONTROL Web Analytics (Adobe Analytics - Data connector)]** Externe Konto können Sie Daten aus Adobe Analytics in Segmentform an Adobe Campaign weiterleiten. Umgekehrt sendet es Indikatoren und Attribute von E-Mail-Kampagnen, die von Adobe Campaign an Adobe Analytics - Data Connector gesendet werden.
+Das externe Konto **[!UICONTROL Web Analytics (Adobe Analytics – Data Connector)]** ermöglicht es Ihnen, Daten aus Adobe Analytics an Adobe Campaign in Form von Segmenten weiterzuleiten. Umgekehrt werden Indikatoren und Attribute von E-Mail-Kampagnen, die von Adobe Campaign bereitgestellt werden, an Adobe Analytics – Data Connector gesendet.
 
 ![](assets/ext_account_10.png)
 
@@ -253,19 +256,19 @@ Für dieses externe Konto muss die Berechnungsformel für getrackte URLs angerei
 
 Mit dem externen Konto **[!UICONTROL Facebook Connect]** können Sie in Facebook-Anwendungen personalisierte Inhalte anzeigen. Dadurch wird es einfacher, über dieses soziale Netzwerk potenzielle Kunden zu gewinnen.
 
-Für jede Facebook-Anwendung müssen Sie ein externes **[!UICONTROL Facebook Connect]**-Konto erstellen. For more on this, refer to [page](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+Für jede Facebook-Anwendung müssen Sie ein externes Konto vom Typ **[!UICONTROL Facebook Connect]** erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
 ![](assets/ext_account_12.png)
 
-* **[!UICONTROL Hosting mode]**
+* **[!UICONTROL Hosting-Modus]**
 
-   Hosting-Modus der Anwendung zwischen **[!UICONTROL hosted by a partner]** oder **[!UICONTROL hosted by this instance]**.
+   Hosting-Modus der Anwendung: **[!UICONTROL Bei einem Partner gehostet]** oder **[!UICONTROL Auf dieser Instanz gehostet]**
 
-* **[!UICONTROL Application ID]**
+* **[!UICONTROL Anwendungs-ID]**
 
    App-ID Ihrer Facebook-Anwendung
 
-* **[!UICONTROL Application secret]**
+* **[!UICONTROL Geheimschlüssel]**
 
    App-Geheimnis Ihrer Facebook-Anwendung.
 
@@ -283,11 +286,11 @@ Wenn Sie eine aufgegliederte Architektur haben, müssen Sie die mit der Kontroll
 
    URL des Servers, auf dem die Ausführungsinstanz installiert ist.
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Name des Kontos, muss mit dem Message Center Agent übereinstimmen, der im Benutzerordner definiert ist
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort des Kontos, wie es im Benutzerordner definiert ist
 
@@ -295,35 +298,35 @@ Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](..
 
 ## Externes Adobe Experience Cloud-Konto {#adobe-experience-cloud-external-account}
 
-To connect to the Adobe Campaign console using an Adobe ID, you must configure the **[!UICONTROL Adobe Experience Cloud (MAC)]** external account.
+Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, müssen Sie das externe Konto **[!UICONTROL Adobe Experience Cloud (MAC)]** konfigurieren.
 
 ![](assets/ext_account_9.png)
 
-* **[!UICONTROL IMS server]**
+* **[!UICONTROL IMS-Server]**
 
    URL Ihres IMS-Servers. Stellen Sie sicher, dass sowohl Staging- als auch Produktionsinstanzen auf den gleichen IMS-Produktionsendpunkt verweisen.
 
-* **[!UICONTROL IMS scope]**
+* **[!UICONTROL IMS-Umfang]**
 
    Der hier definierte Umfang muss eine Teilmenge der vom IMS bereitgestellten Perimeter sein.
 
-* **[!UICONTROL IMS client identifier]**
+* **[!UICONTROL Kennung des IMS-Clients]**
 
    Die ID Ihres IMS-Client
 
-* **[!UICONTROL IMS client secret]**
+* **[!UICONTROL IMS-Client-Secret]**
 
    Ihr IMS-Client-Geheimnisses.
 
-* **[!UICONTROL Callback server]**
+* **[!UICONTROL Callback-Server]**
 
    Zugriff-URL Ihrer Adobe Campaign-Instanz.
 
-* **[!UICONTROL IMS organization ID]**
+* **[!UICONTROL Kennung der IMS-Organisation]**
 
    ID Ihrer IMS-Organisation. Um Ihre Organisations-ID zu finden, gehen Sie auf diese [Seite](https://marketing.adobe.com/resources/help/de_DE/mcloud/faq.html) (**Wo finde ich meine IMS-Organisations-ID?**).
 
-* **[!UICONTROL Association mask]**
+* **[!UICONTROL Zuordnungsmaske]**
 
    Syntax, die es ermöglicht, Konfigurationsnamen im Enterprise Dashboard mit den Gruppen in Adobe Campaign zu synchronisieren
 
@@ -331,13 +334,13 @@ To connect to the Adobe Campaign console using an Adobe ID, you must configure t
 
    URL Ihrer Adobe Experience Cloud-Instanz
 
-* **[!UICONTROL Tenant]**
+* **[!UICONTROL Mandant]**
 
    Name Ihres Adobe Experience Cloud-Mandanten
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../integrations/using/configuring-ims.md).
 
-## Externes SFTP-Konto  {#sftp-external-account}
+## Externes SFTP-Konto    {#sftp-external-account}
 
 Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie dem SFTP-Server einzurichten, der für Dateiübertragungen verwendet wird, können Sie eigene externe Konten erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/file-transfer.md).
 
@@ -351,17 +354,17 @@ Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb 
 
    Port-Nummer der FTP-Verbindung. Der Standard-Port ist 22.
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Kontoname, der für die Verbindung zum SFTP-Server verwendet wird
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort, das für die Verbindung zum SFTP-Server verwendet wird
 
 ## Externes Adobe-Experience-Manager-Konto {#adobe-experience-manager-external-account}
 
-The **[!UICONTROL AEM (AEM instance)]** external account allows you to manage the content of your email deliveries as well as your forms directly in Adobe Experience Manager.
+Mit dem externen Konto **[!UICONTROL AEM (AEM-Instanz)]** können Sie den Inhalt Ihres E-Mail-Versandes und Ihrer Formulare direkt in Adobe Experience Manager verwalten.
 
 ![](assets/ext_account_5.png)
 
@@ -373,7 +376,7 @@ The **[!UICONTROL AEM (AEM instance)]** external account allows you to manage th
 
    Kontoname, der für die Verbindung mit der Adobe Experience Manager-Authoring-Instanz verwendet wird
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort, das für die Verbindung mit der Adobe Experience Manager-Authoring-Instanz verwendet wird
 
@@ -387,7 +390,7 @@ Der Amazon Simple Storage Service (S3) Connector kann zum Import oder Export von
 
 Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informationen:
 
-* **[!UICONTROL AWS S3 Account Server]**
+* **[!UICONTROL AWS-S3-Konto-Server]**
 
    Die URL Ihres Servers sollte folgendermaßen ausgefüllt werden:
 
@@ -395,19 +398,19 @@ Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informa
    <S3bucket name>.s3.amazonaws.com/<s3object path>
    ```
 
-* **[!UICONTROL AWS access key ID]**
+* **[!UICONTROL Kennung des AWS-Zugangsschlüssels]**
 
    Informationen darüber, wo Sie Ihre Kennung des AWS-Zugangsschlüssels finden, erfahren Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) .
 
-* **[!UICONTROL Secret access key to AWS]**
+* **[!UICONTROL Geheimer AWS-Zugangsschlüssel]**
 
    Informationen darüber, wo Sie Ihren geheimen AWS-Zugangsschlüssel finden, erfahren Sie auf dieser [Seite](https://aws.amazon.com/fr/blogs/security/wheres-my-secret-access-key/).
 
-* **[!UICONTROL AWS Region]**
+* **[!UICONTROL AWS-Region]**
 
    Weiterführende Informationen zur AWS-Region finden Sie auf dieser [Seite](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/).
 
-* The **[!UICONTROL Use server side encryption]** checkbox allows you to store your file in S3 encrypted mode.
+* Die Checkbox **[!UICONTROL Serverseitige Verschlüsselung verwenden]** ermöglicht es Ihnen, Ihre Datei in S3 im verschlüsselten Modus zu speichern.
 
 Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden, erfahren Sie im [Handbuch](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) der Amazon-Webdienste .
 
@@ -421,11 +424,11 @@ Mit dem externen **[!UICONTROL Azure]**-Konto können Sie über Adobe Campaign a
 
    URL des Azure-Servers
 
-* **[!UICONTROL Encryption]**
+* **[!UICONTROL Verschlüsselung]**
 
-   Type of chosen encryption between **[!UICONTROL None]** or **[!UICONTROL SSL]**.
+   Typ der gewählten Verschlüsselung: **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
 
-* **[!UICONTROL Access key]**
+* **[!UICONTROL Zugriffsschlüssel]**
 
    Informationen darüber, wo Sie Ihren Zugangsschlüssel finden, erfahren Sie auf dieser [Seite](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-manage) (Abschnitt **Zugangsschlüssel anzeigen und kopieren**).
 
@@ -439,7 +442,7 @@ Mit dem externen **[!UICONTROL Hadoop]**-Konto können Sie über Adobe Campaign 
 
    URL des Hadoop-Servers
 
-* **[!UICONTROL User account name]**
+* **[!UICONTROL Name des Benutzerkontos]**
 
    Name des Kontos, mit dem auf die Hadoop zugegriffen wird
 
@@ -448,11 +451,11 @@ Mit dem externen **[!UICONTROL Hadoop]**-Konto können Sie über Adobe Campaign 
 Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
 
 Wie Sie den Microsoft Dynamics Connector zur Verwendung mit Adobe Campaign konfigurieren müssen, hängt von Ihrem Bereitstellungstyp ab.
-Bei den Bereitstellungstypen **[!UICONTROL On-premise]** und **[!UICONTROL Office 365]** müssen Sie folgende Details angeben:
+Bei den Bereitstellungstypen **[!UICONTROL On-Premise]** und **[!UICONTROL Office 365]** müssen Sie folgende Details angeben:
 
 ![](assets/ext_account_21.png)
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Konto, mit dem die Anmeldung bei Microsoft CRM erfolgt
 
@@ -460,28 +463,28 @@ Bei den Bereitstellungstypen **[!UICONTROL On-premise]** und **[!UICONTROL Offic
 
    URL Ihres Microsoft CRM-Servers
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort, mit dem die Anmeldung bei Microsoft CRM erfolgt
 
-* **[!UICONTROL Company name]** für die Bereitstellung vor Ort und Office 365
+* **[!UICONTROL Firmenname]** für On-Premise- und Office 365-Implementierung
 
    Der Name Ihres Unternehmens.
 
-* **[!UICONTROL Organization name]** für lokale Bereitstellung
+* **[!UICONTROL Organisationsname]** für die On-Premise-Implementierung
 
    Name Ihrer Organisation
-Organization name which can be found in the Developers resources dashboard in Microsoft Dynamics, **[!UICONTROL Unique Name]** field.
+Organisationsname, der im Dashboard für Entwicklerressourcen in Microsoft Dynamics im Feld **[!UICONTROL Eindeutiger Name]** zu finden ist.
 
-* **[!UICONTROL CRM version]** für lokale Anwendungen
+* **[!UICONTROL CRM-Version]** bei On-Premise
 
-   Version des CRM zwischen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**.
+   Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
 
-With **[!UICONTROL Web API]** deployment type and **[!UICONTROL Password credentials]** authentication, you need to provide the following details:
+Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
 
 ![](assets/ext_account_14.png)
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Konto, mit dem die Anmeldung bei Microsoft CRM erfolgt
 
@@ -489,15 +492,15 @@ With **[!UICONTROL Web API]** deployment type and **[!UICONTROL Password credent
 
    URL Ihres Microsoft CRM-Servers
 
-* **[!UICONTROL Client identifier]**
+* **[!UICONTROL Client-Kennung]**
 
-   Client-ID, die von Microsoft Azurblaus Management Portal in der **[!UICONTROL Update your code]** Kategorie, **[!UICONTROL Client ID]** Feld gefunden werden kann.
+   Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
 
-* **[!UICONTROL CRM version]**
+* **[!UICONTROL CRM-Version]**
 
-   Version des CRM zwischen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**.
+   Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
 
-With **[!UICONTROL Web API]** deployment type and **[!UICONTROL Certificate]** authentication, you need to provide the following details:
+Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Zertifikat]** müssen Sie die folgenden Details angeben:
 
 ![](assets/ext_account_22.png)
 
@@ -505,33 +508,33 @@ With **[!UICONTROL Web API]** deployment type and **[!UICONTROL Certificate]** a
 
    URL Ihres Microsoft CRM-Servers
 
-* **[!UICONTROL Private Key (Base64 encoded)]**
+* **[!UICONTROL Privater Schlüssel (Base64-kodiert)]**
 
    Privater Schlüssel mit Base64-Kodierung
 
-* **[!UICONTROL Custom Key identifier]**
+* **[!UICONTROL Benutzerdefinierte Schlüsselkennung]**
 
-* **[!UICONTROL Key ID]**
+* **[!UICONTROL Schlüsselkennung]**
 
-* **[!UICONTROL Client identifier]**
+* **[!UICONTROL Client-Kennung]**
 
-   Client-ID, die von Microsoft Azurblaus Management Portal in der **[!UICONTROL Update your code]** Kategorie, **[!UICONTROL Client ID]** Feld gefunden werden kann.
+   Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
 
-* **[!UICONTROL CRM version]**
+* **[!UICONTROL CRM-Version]**
 
-   Version des CRM zwischen **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**.
+   Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
 
 ## Externes Oracle On Demand-Konto {#oracle-on-demand-external-account}
 
-Das externe **[!UICONTROL Oracle on demand]**-Konto ermöglicht den Import und Export von Oracle-Daten in Adobe Campaign.
+Das externe **[!UICONTROL Oracle On Demand]**-Konto ermöglicht den Import und Export von Oracle-Daten in Adobe Campaign.
 
 ![](assets/ext_account_18.png)
 
 Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Konto, mit dem die Anmeldung bei Oracle CRM On Demand erfolgt
 
@@ -539,7 +542,7 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
    URL Ihres Oracle CRM On Demand-Servers
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort, mit dem die Anmeldung bei Oracle CRM On Demand erfolgt
 
@@ -553,25 +556,25 @@ Das externe **[!UICONTROL Salesforce CRM]**-Konto ermöglicht den Import und Exp
 
 Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
-* **[!UICONTROL Account]**
+* **[!UICONTROL Konto]**
 
    Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
-* **[!UICONTROL Password]**
+* **[!UICONTROL Passwort]**
 
    Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
-* **[!UICONTROL Client identifier]**
+* **[!UICONTROL Client-Kennung]**
 
    Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
-* **[!UICONTROL Security token]**
+* **[!UICONTROL Security-Token]**
 
    Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
-* **[!UICONTROL API version]**
+* **[!UICONTROL API-Version]**
 
-   Version of the API between **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** or **[!UICONTROL Version 15]**.
+   Version der API: **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** oder **[!UICONTROL Version 15]**
 
 Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
 
