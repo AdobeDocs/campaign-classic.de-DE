@@ -1,6 +1,6 @@
 ---
-title: Überwachung der Lieferbarkeit in Adobe Campaign Classic
-description: Erfahren Sie mehr über Tools und Richtlinien zur Überwachung der Lieferbarkeit in Adobe Campaign Classic.
+title: Monitoring der Zustellbarkeit in Adobe Campaign Classic
+description: Erfahren Sie mehr über Tools und Richtlinien zum Monitoring der Zustellbarkeit in Adobe Campaign Classic.
 page-status-flag: never-activated
 uuid: 0b5c5dbd-f532-4d8a-a255-9e6d88357d8d
 contentOwner: sauviat
@@ -12,53 +12,53 @@ discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
 
 # Monitoring der Zustellbarkeit{#monitoring-deliverability}
 
-Nachstehend finden Sie Einzelheiten zu den verschiedenen Überwachungswerkzeugen von Adobe Campaign sowie weitere Richtlinien zur Überwachung der Lieferbarkeit.
+Nachstehend finden Sie Einzelheiten zu den verschiedenen Monitoring-Tools von Adobe Campaign sowie weitere Richtlinien zum Monitoring der Zustellbarkeit.
 
-## Überwachungswerkzeuge {#monitoring-tools}
+## Monitoring-Tools {#monitoring-tools}
 
-Nutzen Sie die von Adobe Campaign angebotenen Funktionen, um die Lieferbarkeit Ihrer Plattform zu überwachen.
+Verwenden Sie die von Adobe Campaign bereitgestellten Funktionen zum Monitoring der Zustellbarkeit Ihrer Plattform.
 
 Das Zustellbarkeits-Package ermöglicht Ihnen Zugriff auf:
 
-* Technischer Verfolgungsbericht für die tägliche Leistungsbereitstellung (technische Überwachung). Dieser auf Anfrage verfügbare Bericht ermöglicht es Ihnen, einen täglichen Bericht per E-Mail an einer bestimmten Adresse zu erhalten. Weitere Informationen erhalten Sie vom Adobe-Kundenservice-Team.
-* Der [Inbox-Renderingbericht](../../delivery/using/inbox-rendering.md) , mit dem Sie Ihre Nachrichten auf wichtigen E-Mail-Clients zur Vorschau von Inhalten und Reputation überprüfen können.
-* Übersicht über die Nachrichtenqualität (Posteingang, Spam).
+* Einen Bericht bezüglich der täglichen Zustell-Leistungen (Technisches Monitoring). Dieser auf Anfrage verfügbare Bericht ermöglicht es Ihnen, an einer bestimmten Adresse einen täglichen Bericht per E-Mail zu erhalten. Weiterführende Informationen erhalten Sie vom Adobe-Kundenunterstützungs-Team.
+* Den [Inbox Rendering-Bericht](../../delivery/using/inbox-rendering.md), mit dem Sie Ihre Nachrichten auf gängigen E-Mail-Clients als Vorschau anzeigen können, um Inhalte und Reputation zu überprüfen.
+* Übersicht über die Nachrichtenqualität (Zustellung in der Inbox, Spam).
 
-Sie können auch die folgenden Werkzeuge verwenden:
+Sie können auch die folgenden Tools verwenden:
 
-* The **[!UICONTROL Delivery throughput]** report gives you an overview of the entire platform&#39;s throughput for a given period. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
-* Der Bericht zur Überwachung **[!UICONTROL der]** technischen Lieferbarkeit enthält eine Reihe von Qualitätsindikatoren für Ihre Plattform. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#technical-deliverability-monitoring).
-* Jeder Versand erstellt einen Bericht über die Übertragungsstatistik für die verschiedenen Internet-Dienstleister (ISPs). Es werden einige Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf Ihre Lieferbarkeit auswirken können, einschließlich der folgenden Zahlen:
-   * **[!UICONTROL Harte Absprünge]** deuten auf Datenqualität hin. Diese Zahl sollte unter 2 % liegen.
-   * **[!UICONTROL Weiche Absprünge]** deuten auf den Ruf hin. Diese Zahl sollte bei keinem ISP höher als 10 % sein.
-   For more on this, see the [Delivery statistics](../../reporting/using/global-reports.md#delivery-statistics) section.
-* Im Allgemeinen haben Sie mit dem [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) Zugriff auf:
-   * die Zusammenfassung [des](../../delivery/using/monitoring-a-delivery.md#delivery-summary)Versands, die die Details des Versands und die [Anzahl der erfolgreich zu sendenden, verarbeiteten und gesendeten Nachrichten](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) enthält;
-   * die [Versandlogs und die Geschichte](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), die zeigen, welche Zielgruppe ausgeschlossen wurde und warum;
-   * die [Trackinglogs](../../delivery/using/monitoring-a-delivery.md#tracking-logs), die Verfolgungsinformationen wie Öffnen und Klicks anzeigen.
+* Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
+* Der **[!UICONTROL Bericht zum technischen Zustellbarkeits-Monitoring]** enthält eine Reihe von Qualitätsindikatoren zur Zustellbarkeit für Ihre Plattform. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#technical-deliverability-monitoring).
+* Bei jedem Versand wird ein Bericht mit Versandstatistiken für die verschiedenen Internet-Dienstanbieter (ISPs) erstellt. Es werden verschiedene Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf die Zustellbarkeit auswirken können, einschließlich der folgenden Zahlen:
+   * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
+   * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
+   Lesen Sie diesbezüglich auch den Abschnitt [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
+* Allgemein bietet Ihnen das [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) Zugriff auf:
+   * die [Versandzusammenfassung](../../delivery/using/monitoring-a-delivery.md#delivery-summary), die die Details des Versands und die [Anzahl der zu sendenden, der verarbeiteten und der erfolgreich gesendeten Nachrichten](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) anzeigt;
+   * die [Versandlogs und den Versandverlauf](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), die zeigen, welche Zielgruppe ausgeschlossen wurde und warum;
+   * die [Trackinglogs](../../delivery/using/monitoring-a-delivery.md#tracking-logs), die Tracking-Daten wie Öffnungen und Klicks anzeigen.
 
-## Überwachungsleitlinien {#monitoring-guidelines}
+## Richtlinien für das Monitoring {#monitoring-guidelines}
 
-Im Folgenden finden Sie einige zusätzliche Leitlinien zur Überwachung der Lieferbarkeit:
+Im Folgenden finden Sie einige zusätzliche Richtlinien zum Zustellbarkeits-Monitoring:
 
-* Regularly check the [delivery throughput](../../reporting/using/global-reports.md#delivery-throughput) for the whole platform to verify whether it is consistent with the original set-up.
-* Check that [retries](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) are set up correctly (30 minutes for retry period and more than 20 retries) in delivery templates.
-* Regularly verify that the [bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management) mailbox is accessible and that the account is not about to expire.
+* Prüfen Sie regelmäßig den [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) für die gesamte Plattform, um festzustellen, ob er der ursprünglichen Einstellung entspricht.
+* Achten Sie darauf, dass [weitere Zustellversuche](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
+* Prüfen Sie regelmäßig, ob das [Bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
 * Prüfen Sie, ob die einzelnen Versanddurchsätze der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
-* When using [waves](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves), verify that each wave has enough time to finish before the next one is triggered.
-* Check that the number of errors and new [quarantines](../../delivery/using/understanding-quarantine-management.md) are consistent with other deliveries.
-* Carefully consult the [delivery logs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) in detail to check the kind of errors that are highlighted (grey or black-listing, DNS issues, anti-spam rules, etc…).
+* Wenn der Versand in [Schüben](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
+* Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](../../delivery/using/understanding-quarantine-management.md) der anderer Sendungen entspricht.
+* Prüfen Sie in den [Versandlogs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (grau oder auf der Blacklist, DNS-Probleme, Anti-Spam-Regeln etc.).
 
 ## Signal Spam {#signal-spam}
 
@@ -70,9 +70,9 @@ Signal Spam ist ein französischer Dienst, der anonymisiertes Feedback-Schleifen
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) ist eine ergänzende Überwachungslösung zu den internen Adobe-Werkzeugen zur Bereitstellung von IP, Blacklisting und Reputationsindikatoren.
+[250ok](https://250ok.com/) ist eine komplementäre Monitoring-Lösung für die internen Adobe-Tools zur Zustellbarkeit, die IP-, Domain-Blacklisting- und Reputationsindikatoren bereitstellen.
 
-Die bereitgestellten Informationen sind in Echtzeit verfügbar, was eine proaktive Unterstützung ermöglicht.
+Die bereitgestellten Werte sind in Echtzeit verfügbar, wodurch proaktive Unterstützung gewährleistet ist.
 
 ## Bericht zum technischen Zustellbarkeits-Monitoring {#technical-deliverability-monitoring}
 
@@ -82,7 +82,7 @@ Diese Indikatoren werden täglich um 9 Uhr aktualisiert.
 
 >[!NOTE]
 >
->Darüber hinaus können Sie einen täglichen Bericht per E-Mail an einer bestimmten Adresse erhalten. Teilen Sie uns die angeforderte E-Mail-Adresse per E-Mail oder über das Adobe Campaign Extranet mit.
+>Darüber hinaus besteht die Möglichkeit, den Bericht täglich per E-Mail zu beziehen. Teilen Sie uns hierzu bitte Ihre Adresse per E-Mail oder über das Adobe Campaign-Extranet mit.
 
 ![](assets/s_tn_del_monitoring.png)
 
