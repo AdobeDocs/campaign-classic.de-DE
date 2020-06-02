@@ -14,8 +14,11 @@ discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 06f2106c7c37fd5f115d15f3530997571f1f8e70
+translation-type: tm+mt
+source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 94%
 
 ---
 
@@ -42,15 +45,16 @@ Gehen Sie wie folgt vor, um eine lokale Datei an einen Versand anzuhängen.
 >Sie können auch mehrere Dateien an einen Versand anhängen. Die Anlagen können in jedem beliebigen Format vorliegen, darunter auch im Zip-Format.
 
 1. Wählen Sie den Link **[!UICONTROL Anhänge]**.
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und dann auf **[!UICONTROL Datei...]**, um die Datei auszuwählen, die an den Versand angehängt werden soll.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie auf **[!UICONTROL Datei...]** , um die Datei auszuwählen, die an den Versand angehängt werden soll.
 
-![](assets/s_ncs_user_wizard_email_attachement.png)
+   ![](assets/s_ncs_user_wizard_email_attachement.png)
 
 Sie können die Datei auch per Drag-and-Drop direkt in das Versandfeld **[!UICONTROL Anhänge]** ziehen oder das Symbol für **[!UICONTROL Datei anfügen]** in der Symbolleiste des Versand-Assistenten verwenden.
 
 ![](assets/s_ncs_user_wizard_add_file_ico.png)
 
-1. Sobald Sie die Datei ausgewählt haben, wird sie auf den Server geladen, um zum Zeitpunkt des Versandstarts zur Verfügung zu stehen. Sie wird im Feld **[!UICONTROL Anhänge]** aufgeführt.
+Sobald Sie die Datei ausgewählt haben, wird sie auf den Server geladen, um zum Zeitpunkt des Versandstarts zur Verfügung zu stehen. Sie wird im Feld **[!UICONTROL Anhänge]** aufgeführt.
 
 ![](assets/s_ncs_user_wizard_email_attachement_e.png)
 
@@ -92,7 +96,7 @@ Wenn der Anhang eine lokale Datei ist, wählen Sie die Option **[!UICONTROL Date
 
 ### Personalisierte Nachricht anhängen {#attach-a-personalized-message}
 
-Mit der Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]** können Sie eine Datei mit Personalisierungsfeldern für z. B. den Vor- und Nachnamen des Empfängers auswählen.
+The option **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** lets you select a file with personalization fields, such as the last name and first name of the intended recipient.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
