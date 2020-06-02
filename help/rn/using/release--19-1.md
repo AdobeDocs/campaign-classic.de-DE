@@ -14,8 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
+workflow-type: ht
+source-wordcount: '2701'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: 4b42a4bb0a95b2a46187c996d069846a8c3941bf
  </tbody> 
 </table>
 
-Der **letzte stabile Build** ist 9032 (3a9dc9c). Click [here](../../rn/using/release--19-1.md#release-19-1-4-build-9032)
+Der **neueste stabile Build** ist 9032 (3a9dc9c). Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
 
@@ -74,41 +77,41 @@ _13. August 2019_
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) 29. **April 2020**: new build (9032@3a9dc9c), das die folgenden Fehlerbehebungen enthält:
+![](assets/do-not-localize/green_2.png) **29. April 2020**: neuer Build (9032@3a9dc9c), der die folgenden Fehlerbehebungen enthält:
 
-* Verbesserte Sicherheit bei der Verfolgung von Links in E-Mails. Dies ist standardmäßig für alle Kunden aktiviert. Es steht eine zusätzliche, erweiterte Sicherheitsfunktion zur Verfügung, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weitere Informationen zu den Funktionen und Schritten für nicht gehostete Kunden, um sie zu aktivieren, finden Sie in der Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
-* Es wurde ein Problem behoben, das die Anzeige von Bildern in Line-Versänden verhinderte. (NEO-23207)
-* Es wurde ein Problem mit der **File Transfer** -Aktivität behoben, durch das die SFTP-Schlüsselauthentifizierung nicht auf Debian 9 funktionierte. (NEO-23183)
-* Es wurde ein Problem behoben, das sich auf Push-Benachrichtigungen auswirken konnte, wenn diese mit hoher Frequenz gesendet wurden. (NEO-20516)
-* Es wurde ein Problem im Angebot-Antwortmanagement behoben, das zu Webserverabstürzen führen konnte. (NEO-19482)
-* Es wurde ein Fehler in der LibreOffice-Verwaltung behoben, der das Exportieren von Berichten verhinderte. (NEO-20982)
-* Es wurde ein Fehler behoben, der beim Aktualisieren zahlreicher Workflows mit einer Umfrage-Aktivität auftrat.
-* Verbesserte LibreOffice-Verwaltung, um Fehler bei der E-Mail-Vorschau mit .odt-Dateien zu vermeiden.
-* Verbesserte Verwaltung der Apache-Verbindung, um Latenzzeiten beim Webdienst zu vermeiden.
-* Die Anzeige des Version-Tags (7-stellig) im Menü **Info** wurde verbessert.
-* Korrektur eines Rückgangs im Listen-Management, der die Veröffentlichung von Angeboten verhinderte.
-* Korrektur einer Regression, die zum Absturz des Bereinigungs-Workflows führte.
-* Eine geringfügige Regression in den Bereinigungs-Workflow-Protokollen wurde behoben.
+* Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism).
+* Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
+* Fehlerkorrektur – Bei der Aktivität **Dateiübertragung** funktioniert jetzt die SFTP-Schlüssel-basierte Authentifizierung bei Debian 9. (NEO-23183)
+* Fehlerkorrektur – Bei Push-Benachrichtigungen, die mit hoher Häufigkeit gesendet werden, tritt jetzt kein Problem mehr auf. (NEO-20516)
+* Fehlerkorrektur – Die Verwaltung von Angebotsantworten führt jetzt nicht mehr zu Webserver-Abstürzen. (NEO-19482)
+* Fehlerkorrektur – In der LibreOffice-Verwaltung ist jetzt das Exportieren von Berichten möglich. (NEO-20982)
+* Fehlerkorrektur – Beim Aktualisieren verschiedener Workflows mit einer Umfrageaktivität tritt jetzt kein Fehler mehr auf.
+* Die LibreOffice-Verwaltung wurde verbessert, um Fehler bei der E-Mail-Vorschau mit .odt-Dateien zu verhindern.
+* Die Verwaltung der Apache-Verbindung wurde verbessert, um Latenzzeiten beim Web-Dienst zu vermeiden.
+* Die Anzeige des Version-Tags (siebenstellig) im Menü **Versionsinformationen** wurde verbessert.
+* Fehlerkorrektur – Es wurde ein Regressionsfehler bei der Listenverwaltung behoben, der die Publizierung von Angeboten verhinderte.
+* Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.
+* Fehlerkorrektur – Es wurde ein geringfügiger Regressionsfehler in den Bereinigungs-Workflow-Logs behoben.
 
-![](assets/do-not-localize/orange_2.png) 5. **März 2020**: new build (9032@19f73c5), das die folgende Fehlerbehebung enthält:
+![](assets/do-not-localize/orange_2.png) **5. März 2020**: neuer Build (9032@19f73c5), der folgende Fehlerkorrektur enthält:
 
-* Es wurde ein Problem mit Externen Konti behoben, die FTP über SSL verwenden. (NEO-20498)
+* Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) 17. **Dezember 2019**: new build (9032@d6b8062), das die folgende Fehlerbehebung enthält:
+![](assets/do-not-localize/orange_2.png) **17. Dezember 2019**: neuer Build (9032@d6b8062), der folgende Fehlerkorrektur enthält:
 
 * Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) 11. **Dezember 2019**: new build (9032@bc4a935), das die folgende Fehlerbehebung enthält:
+![](assets/do-not-localize/orange_2.png) **11. Dezember 2019**: neuer Build (9032@bc4a935), der folgende Fehlerkorrektur enthält:
 
 * Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) 20. **November 2019**: new build (9032@3468c7b), das die folgenden Fehlerbehebungen enthält:
+![](assets/do-not-localize/orange_2.png) **20. November 2019**: neuer Build (9032@3468c7b), der folgende Fehlerkorrekturen enthält:
 
 * Fehlerkorrektur – Die Anmeldung per IMS-Authentifizierung funktioniert nun. (NEO-17312)
 * Fehlerkorrektur – Kumulative Berichte zu mehreren Sendungen werden nun richtig angezeigt. (NEO-18165)
 * Fehlerkorrektur – Der Webserver wird nicht mehr blockiert oder zum Absturz gebracht.
 
-![](assets/do-not-localize/orange_2.png) 19. **September 2019**: new build (9032@cee805c), das die folgenden Fehlerbehebungen enthält:
+![](assets/do-not-localize/orange_2.png) **19. September 2019**: neuer Build (9032@cee805c), der folgende Fehlerkorrekturen enthält:
 
 * Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
 * Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
@@ -179,7 +182,7 @@ _30. Mai 2019_
 
 **Verbesserungen bei der Sicherheit**
 
-* Aus Sicherheitsgründen können Sie keine beliebigen Befehle mehr einfügen, wenn Sie die **[!UICONTROL Pre-process the file]** Option in einer **[!UICONTROL Data loading (file)]** Workflow-Aktivität verwenden. Es steht jetzt eine Dropdown-Liste zur Verfügung, mit der Sie aus drei Optionen auswählen können: **[!UICONTROL None]**, **[!UICONTROL Decompression]** (zcat) oder **[!UICONTROL Decrypt]** (gpg). Das Sicherheitskennzeichen XtkSecurity_Disable_Preproc wurde hinzugefügt. Für neue Kunden wird diese Option auf 0 gesetzt. Bei bestehenden Kunden wird diese Option bis zum Upgrade auf 1 gesetzt, um das vorherige Verhalten zu erhalten. Siehe diesen [Abschnitt](../../workflow/using/data-loading--file-.md).
+* Aus Sicherheitsgründen können bei der Verwendung der Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]** in der Workflow-Aktivität **[!UICONTROL Laden (Datei)]** keine beliebigen Befehle mehr eingefügt werden. Eine Dropdown-Liste ist nun verfügbar, in der Sie aus drei Optionen auswählen können: **[!UICONTROL Keine]**, **[!UICONTROL Dekomprimierung]** (zcat) oder **[!UICONTROL Entschlüsseln]** (gpg). Das Sicherheits-Flag XtkSecurity_Disable_Preproc wurde hinzugefügt. Für Neukunden wird diese Option auf 0 gesetzt. Für Bestandskunden wird diese Option durch das Postupgrade auf 1 gesetzt, um das bisherige Verhalten beizubehalten. Siehe diesen [Abschnitt](../../workflow/using/data-loading--file-.md).
 * Es wurde ein Problem mit der Sichtbarkeit des Passworts behoben, das auftrat, wenn beim Testen der Verbindung eines externen FDA-Kontos keine Zeitzone festgelegt war.
 * Die PDFBox-Bibliothek wurde entfernt.
 * Tomcat wurde auf Version 7.0.93 aktualisiert.
@@ -210,7 +213,7 @@ _30. Mai 2019_
 
 * Push-Benachrichtigungen: Die die Thread-ID-Option für iOS Push wird jetzt unterstützt.
 * Die Verwaltung langer Indexnamen wurde verbessert, was andernfalls Probleme mit dem Postupgrade verursachen könnte.
-* Now, during the analysis of a decomail delivery, if the publication mode is set to **[!UICONTROL None]** in the deployment wizard, an error is logged and the analysis is stopped: &quot;Publication mode is set to &#39;none&#39;: Cannot embed image. Bilder werden nicht auf dem Smartphone angezeigt.&quot; (NEO-12208)
+* Wenn während der Analyse eines Deco-mail-Versands der Publikationsmodus im Softwareverteilungs-Assistenten auf **[!UICONTROL Keine]** gesetzt ist, wird ein Fehler angezeigt und die Analyse wird angehalten: &quot;Für den Publikationsmodus ist Keiner ausgewählt: Bild kann nicht eingebettet werden. Bilder werden nicht auf Feature Phone angezeigt.&quot; (NEO-12208)
 * Die Broadlog-Verwaltung für Transaktionsnachrichten wurde verbessert. Wenn Broadlogs von der Ausführungsinstanz mit der Kontrollinstanz synchronisiert werden, wird das Feld @lastModified auf das aktuelle Systemdatum aktualisiert. Für Kontrollinstanzen wurde die Option MC_Update_BlLastModified hinzugefügt. &quot;True&quot; bedeutet, dass das aktuelle Datum in der Kontrollinstanz verwendet wird (Standardverhalten). &quot;False&quot; bedeutet, dass das @lastModified-Datum des Broadlogs der Ausführungsinstanz verwendet wird. (NEO-12579)
 * In den temporären Coupon-Tabellen wurden Indizes hinzugefügt, um den Versand zu optimieren. (NEO-12437)
 * In der Analytics-Integration ist nun das Abrufen von AAM-Segmentdaten mit %-Zeichen erlaubt. (NEO-12025)
@@ -241,7 +244,7 @@ _30. Mai 2019_
 * Fehlerkorrektur – Die Installation des Packages **Managing Social Networks** (Social Marketing) funktioniert jetzt einwandfrei. (NEO-12081)
 * Fehlerkorrektur – Jetzt können alle Webanwendungen gelöscht werden. Zuvor war dies auch dann nicht möglich, wenn Sie die richtigen Zugriffsberechtigungen hatten. (NEO-12072)
 * Fehlerkorrektur – Jetzt werden beim Export und anschließendem Import eines Objekts über XML keine Werte mehr überschrieben. Die Option XtkExport_IncludeDefaultValues wurde hinzugefügt. Wenn der &quot;True&quot; (Standardverhalten) ausgewählt ist, werden alle Werte exportiert. Wenn &quot;False&quot; ausgewählt ist, werden Änderungen mit dem Standardwert überschrieben. (NEO-11979)
-* Fixed an issue which caused the **[!UICONTROL Alert]** workflow activity to fail when an enrichment activity was added after a query. (NEO-12132)
+* Fehlerkorrektur – Die Workflow-Aktivität **[!UICONTROL Warnung]** funktioniert jetzt einwandfrei, wenn nach einer Abfrage die Aktivität &quot;Anreicherung&quot; hinzugefügt wird. (NEO-12132)
 * Fehlerkorrektur – Bei Installationen mit Oracle werden Pipeline-(Triggers-)Offsets jetzt korrekt von der Datenbank abgerufen, sodass keine Duplikate mehr erzeugt werden. (NEO-12121)
 * Fehlerkorrektur – In Pivot-Tabellen kommt es jetzt bei der Verwendung der Analytics-Integration nicht mehr zu Darstellungsfehlern (NEO-12103).
 * Fehlerkorrektur – Der Deskriptive-Analyse-Bericht funktioniert jetzt einwandfrei (NEO-11414)
