@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a976144d70b113d1358b0514a3e805d79e11484a
+source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
 workflow-type: tm+mt
 source-wordcount: '3743'
 ht-degree: 3%
@@ -60,6 +60,13 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> Liste der Schema, für die Sie Testadressen für das Inbox-Rendering verwenden möchten. (Elementnamen werden durch Kommas getrennt) Beispiel: custom_nms_Empfänger.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
+   <td><p> Ermöglicht es dem für den Versand zuständigen Operator, den Senden zu bestätigen, wenn ein bestimmter Operator oder eine bestimmte Benutzergruppe zum Starten eines Versands in den Eigenschaften des Versands vorgesehen ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1"als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0"ein.</p><p> Der Prozess zur Bestätigung des Sendevorgangs funktioniert dann standardmäßig: Nur der für den Versand bestimmte Operator oder die Benutzergruppe in den Eigenschaften des Versands (oder ein Administrator) kann den Versand bestätigen und durchführen. Siehe <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesen Abschnitt</a>.</p> </td> 
+   <tr> 
+   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
+   <td> Adobe Campaign verwendet eine globale Variable "Nms_DefaultRcpSchema", um mit der standardmäßigen Empfänger-Datenbank (nms:Empfänger) zu kommunizieren.<br /> Der Optionswert muss mit dem Namen des Schemas übereinstimmen, der der Tabelle des externen Empfängers entspricht.<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsBilling_MainActionThreshold</span> <br /> </td> 
    <td> Mindestanzahl von Empfängern, damit ein Versand als der wichtigste im Abrechnungsbericht betrachtet werden kann.<br /> </td> 
   </tr> 
@@ -94,10 +101,6 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   <tr> 
    <td> <span class="uicontrol">NmsBroadcast_RemoveDuplicatesEmpfänger</span> <br /> </td> 
    <td> Durch Eingabe von "1"als Wert können Sie Dubletten automatisch ignorieren.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
-   <td> Adobe Campaign verwendet eine globale Variable "Nms_DefaultRcpSchema", um mit der standardmäßigen Empfänger-Datenbank (nms:Empfänger) zu kommunizieren.<br /> Der Optionswert muss mit dem Namen des Schemas übereinstimmen, der der Tabelle des externen Empfängers entspricht.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_ErrorAddressMask</span> <br /> </td> 
@@ -164,6 +167,10 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> Liste von autorisierten Weiterleitungs-E-Mail-Adressen (aus dem Modul für die Verarbeitung von eingehenden Nachrichten). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle zuzulassen). z. B. xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
+   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
+   <td> Im 'lineImage'-Servlet für die URL-Verschlüsselung verwendeter AES-Schlüssel (LINE-Kanal).<br /> </td> 
+  </tr> 
+  <tr> 
    <td> <span class="uicontrol">NmsNPAI_EmailMaxError</span> <br /> </td> 
    <td> Auf Kanal "email"(als Standard verwenden): Maximale Anzahl der zulässigen Fehler bei SOFT-Fehlern während des Sendens, bevor der Empfänger in die Quarantäne gestellt wird.<br /> </td> 
   </tr> 
@@ -180,9 +187,21 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> Kanal "mobile": Minimaler Zeitraum, der seit dem letzten referenzierten SOFT-Fehler ausgegeben wird, bevor ein neuer SOFT-Fehler berücksichtigt wird.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
-   <td> URL des Mirrorseite-Servers (standardmäßig sollte identisch mit NmsTracking_ServerUrl sein).<br /> Dies ist der Standardwert von E-Mail-Versänden, wenn die URL in der Routing-Definition nicht angegeben ist.<br /> </td> 
+   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
+   <td> Ermöglicht die Angabe eines maximalen Zeitraums (in Stunden ausgedrückt), um die Anzahl der bei jeder Ausführung des Synchronisierungs-Workflows wiederhergestellten Broadlogs zu begrenzen.</a>.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
+   <td> Maximale Anzahl der Aufrufe in der MidSourcing-Sitzung, die parallel ausgeführt werden können (standardmäßig 3).<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
+   <td> Benutzerdefinierte Verzögerung (in Minuten), nach der ein Versand als "verzögert"gilt, wobei der Standardwert 30 Minuten beträgt.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsOperation_DeliveryVorbereitungsfenster</span> <br /> </td> 
+   <td><p>Diese Option wird vom technischen Arbeitsablauf <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> beim Zählen der Anzahl laufender Versand verwendet.</p>Damit können Sie festlegen, nach wie vielen Tagen Versand mit inkonsistentem Status von der Anzahl laufender Versand ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf "7"gesetzt, d. h. inkonsistente Versand, die älter als 7 Tage sind, werden ausgeschlossen.</p></td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
    <td> Zeile 1 der Adresse des Absenders.<br /> </td> 
@@ -203,10 +222,10 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> <span class="uicontrol">NmsPaper_SenderLine7</span> <br /> </td> 
    <td> Zeile 7 der Adresse des Absenders.<br /> </td> 
   </tr>
-    <tr> 
-   <td> <span class="uicontrol">NmsOperation_DeliveryVorbereitungsfenster</span> <br /> </td> 
-   <td><p>Diese Option wird vom technischen Arbeitsablauf <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> beim Zählen der Anzahl laufender Versand verwendet.</p>Damit können Sie festlegen, nach wie vielen Tagen Versand mit inkonsistentem Status von der Anzahl laufender Versand ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf "7"gesetzt, d. h. inkonsistente Versand, die älter als 7 Tage sind, werden ausgeschlossen.</p></td> 
-  </tr>
+  <tr> 
+   <td> <span class="uicontrol">NmsServer_MirrorPageUrl</span> <br /> </td> 
+   <td> URL des Mirrorseite-Servers (standardmäßig sollte identisch mit NmsTracking_ServerUrl sein).<br /> Dies ist der Standardwert von E-Mail-Versänden, wenn die URL in der Routing-Definition nicht angegeben ist.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsSMS_Priority</span> <br /> </td> 
    <td> Parameter der gesendeten SMS: Informationen, die an das SMS-Gateway übermittelt werden, um die Nachrichtenpriorität anzugeben.<br /> </td> 
@@ -220,51 +239,33 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> Zeitraum, in dem weitere Zustellversuche von SMS-Nachrichten ausgeführt werden.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
-   <td> Gültige Zeichen für eine E-Mail-Adresse.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_LogsPeriodHour</span> <br /> </td>
-   <td> Ermöglicht die Angabe eines maximalen Zeitraums (in Stunden ausgedrückt), um die Anzahl der bei jeder Ausführung des Synchronisierungs-Workflows wiederhergestellten Broadlogs zu begrenzen.</a>.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMidSourcing_PrepareFlow</span> <br /> </td> 
-   <td> Maximale Anzahl der Aufrufe in der MidSourcing-Sitzung, die parallel ausgeführt werden können (standardmäßig 3).<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Ermöglicht es dem für den Versand zuständigen Operator, den Senden zu bestätigen, wenn ein bestimmter Operator oder eine bestimmte Benutzergruppe zum Starten eines Versands in den Eigenschaften des Versands vorgesehen ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1"als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0"ein.</p><p> Der Prozess zur Bestätigung des Sendevorgangs funktioniert dann standardmäßig: Nur der für den Versand bestimmte Operator oder die Benutzergruppe in den Eigenschaften des Versands (oder ein Administrator) kann den Versand bestätigen und durchführen. Siehe <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesen Abschnitt</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsMTA_Alert_Delay</span> <br /> </td> 
-   <td> Benutzerdefinierte Verzögerung (in Minuten), nach der ein Versand als "verzögert"gilt, wobei der Standardwert 30 Minuten beträgt.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
-   <td> Aktivieren/deaktivieren Sie die Unterstützung für Sonderzeichen in Code128.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">NmsLine_AESKey</span> <br /> </td> 
-   <td> Im 'lineImage'-Servlet für die URL-Verschlüsselung verwendeter AES-Schlüssel (LINE-Kanal).<br /> </td> 
+   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
+   <td> Letztes Konsolidierungsdatum für <span class="uicontrol">NmsUserAgent</span> -Statistiken.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsWebSegments_LastStates</span> <br /> </td> 
    <td> Name der Option, die die Websegmente und deren Status enthält.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsUserAgentStats_LastConsolidation</span> <br /> </td> 
-   <td> Letztes Konsolidierungsdatum für <span class="uicontrol">NmsUserAgent</span> -Statistiken.<br /> </td> 
+   <td> <span class="uicontrol">XtkBarcode_SpecialChar</span> <br /> </td> 
+   <td> Aktivieren/deaktivieren Sie die Unterstützung für Sonderzeichen in Code128.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">XtkEmail_Characters</span> <br /> </td> 
+   <td> Gültige Zeichen für eine E-Mail-Adresse.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
    <td> Hinzufügen Sie diese Option mit dem Wert "0", um die Ausgabe des XML-Codes der Versand zu deaktivieren (Rechtsklick / XML-Quelle <span class="uicontrol"></span> bearbeiten oder <span class="uicontrol">STRG + F4</span> -Verknüpfung).<br /> </td> 
-  </tr> 
-  <!--<tr> 
+  </tr>  
+ </tbody> 
+</table>
+
+<!--<tr> 
    <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
    <td> BCC email address for Momentum to send a raw copy of the sent emails. <br /> </td> 
-  </tr> 
- </tbody> 
-</table>-->
+  </tr>
+-->
 
 ## Ressourcen {#resources}
 
@@ -461,7 +462,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgDeliveryTimeAlert</span> <br /> </td> 
-   <td> Warnungsschwelle für die durchschnittliche Sendezeit von Echtzeit-Ereignissen.<br /> </td> 
+   <td> Warnungsschwellenwert der durchschnittlichen Sendezeit von Echtzeit-Ereignissen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">MC_RtEventAvgDeliveryTimeWarning</span> <br /> </td> 
