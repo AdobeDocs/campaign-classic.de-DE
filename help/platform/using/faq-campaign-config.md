@@ -13,11 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 928c2d944bb9709b54a41b07e8828646f2601cb9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '769'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Erfahrene Benutzer können die Tracking-Funktionen in der Campaign-Instanz konfi
 
 ## Wie kann ich den E-Mail-Versand konfigurieren? {#how-to-configure-email-deliverability-}
 
-Lesen Sie zusätzlich zum Abschnitt [Lieferbarkeitskonfiguration](../../delivery/using/about-deliverability.md#configuration) die technischen Empfehlungen für die Bereitstellung, um zu verstehen, wie Sie Ihre Instanz konfigurieren, um die Kampagne für die Bereitstellung von Funktionen zu maximieren.
+Lesen Sie zusätzlich zum Abschnitt [Zustellbarkeitskonfiguration](../../delivery/using/about-deliverability.md#configuration) die technischen Empfehlungen zur Zustellbarkeit, um zu verstehen, wie Sie Ihre Instanz so konfigurieren, dass die Kampagnenversandfunktionen optimal eingerichtet sind.
 
 [Hier erfahren Sie mehr darüber](../../delivery/using/technical-recommendations.md).
 
