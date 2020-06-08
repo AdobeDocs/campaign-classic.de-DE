@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cedcd9150c374116f187da7fd9e76bf81e978e2a
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 97%
+source-wordcount: '3022'
+ht-degree: 93%
 
 ---
 
@@ -62,6 +62,8 @@ In oben stehender Nachricht wurde beispielsweise der Betreff der Nachricht für 
 >[!NOTE]
 >
 >Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](../../delivery/using/about-personalization.md) beschrieben.
+
+Mit dem Popup-Fenster &quot;Emoticon **[!UICONTROL einfügen&quot;können Sie auch Emoticons zu Ihrer Betreffzeile hinzufügen]** .
 
 ## Nachrichteninhalt {#message-content}
 
@@ -114,6 +116,19 @@ Standardmäßig werden die Nachrichten den Angaben des Empfängers entsprechend 
    Der Tab **[!UICONTROL Vorschau]** am unteren Seitenrand ermöglicht die Anzeige des Renderings der Nachricht beim Empfänger inklusive Personalisierung.
 
    ![](assets/s_ncs_user_wizard_email01_142.png)
+
+### Inserting emoticons in an email {#inserting-emoticons}
+
+Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
+
+1. Klicken Sie auf das Symbol Emoticon **[!UICONTROL einfügen]** .
+1. Wählen Sie im Popup-Fenster ein Emoticon aus.
+
+   ![](assets/emoticon_4.png)
+
+1. Klicken Sie abschließend auf die Schaltfläche **[!UICONTROL Schließen]** .
+
+Informationen zum Anpassen der Emoticon-Liste finden Sie auf dieser [Seite](../../delivery/using/customizing-emoticon-list.md).
 
 ## Wahl des Nachrichtenformats {#selecting-message-formats}
 
@@ -191,11 +206,10 @@ So verwalten Sie Bilder über den Versand-Assistent
 
 1. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Bilder&quot;die Option &quot;Bilder]** **[!UICONTROL hochladen&quot;]** .
 1. Sie können dann auswählen, ob die Bilder in die E-Mail-Nachricht aufgenommen werden sollen.
-
-![](assets/s_ncs_user_email_del_img_upload.png)
+   ![](assets/s_ncs_user_email_del_img_upload.png)
 
 * Sie können Bilder manuell hochladen, ohne auf die Analyse des Versands zu warten. Klicken Sie dazu direkt auf die Schaltfläche Bilder **[!UICONTROL hochladen ...]** Link.
-* Im Feld **[!UICONTROL URL der Bilder]** können Sie einen anderen Pfad zu den Bildern auf dem Trackingserver angeben. Dieser Wert überschreibt den im Softwareverteilungs-Assistenten angegebenen Wert.
+* Sie können einen anderen Pfad für den Zugriff auf die Bilder auf dem Tracking-Server angeben. Geben Sie zu diesem Zweck die Datei in das Feld **[!UICONTROL Bilder-URL]** ein. Dieser Wert setzt den in den Parametern des Installationsassistenten definierten Wert außer Kraft.
 
 Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relativen Pfadnamen enthält, wird Ihnen je nach Versandparametern vorgeschlagen, die Bilder sofort online zu stellen.
 
@@ -205,7 +219,11 @@ Wenn Sie im Versand-Assistenten einen HTML-Inhalt öffnen, der Bilder mit relati
 >
 >Die Bildpfade werden entweder durch manuelles Online-Stellen der Bilder oder beim Senden der Nachrichten geändert.
 
-### Beispiel: Versand einer Nachricht mit Bildern {#example--sending-a-message-with-images}
+### Sending a message with images {#sending-a-message-with-images}
+
+>[!NOTE]
+>
+>Wenn Sie Bilder, die Sie direkt von einer personalisierten URL heruntergeladen haben, als [Anhang](../../delivery/using/attaching-files.md)hinzufügen, sollten Sie eine Bildgröße von standardmäßig nicht mehr als 100.000 Byte verwenden, um Leistungsprobleme zu vermeiden. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
 
 Es soll folgende Versandnachricht mit vier Bildern erstellt werden:
 
