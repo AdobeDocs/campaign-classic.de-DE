@@ -14,8 +14,11 @@ discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 92%
 
 ---
 
@@ -82,6 +85,4 @@ Die Reihenfolge der Dateiverarbeitung kann nicht beeinflusst werden. Um eine Rei
 
 ## Ausgabeparameter {#output-parameters}
 
-* filename
-
-Vollständiger Name der Datei. Es handelt sich hierbei um den Namen der Datei, nachdem sie in das Verlaufsverzeichnis verschoben wurde. Der Pfad weicht somit von der ursprünglichen Datei ab, gegebenenfalls auch der Name, wenn bereits eine Datei mit demselben Namen im Verzeichnis existiert. Die Endung bleibt unverändert.
+* filename: Vollständiger Dateiname. Dies ist der Dateiname, nachdem er in den Historisierungsordner verschoben wurde. Der Pfad ist daher anders, aber der Name ist auch unterschiedlich, wenn bereits eine andere Datei mit demselben Namen im Verzeichnis vorhanden ist. Die Verlängerung bleibt erhalten.
