@@ -1,7 +1,7 @@
 ---
-title: Datenbank erstellen und konfigurieren
-seo-title: Datenbank erstellen und konfigurieren
-description: Datenbank erstellen und konfigurieren
+title: Erstellen und Konfigurieren der Vorlagen
+seo-title: Erstellen und Konfigurieren der Vorlagen
+description: Erstellen und Konfigurieren der Vorlagen
 seo-description: null
 page-status-flag: never-activated
 uuid: e5143d55-61fa-416a-80db-c29a0caf9a3e
@@ -15,12 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+workflow-type: tm+mt
+source-wordcount: '1344'
+ht-degree: 1%
 
 ---
 
 
-# Creating and configuring the database{#creating-and-configuring-the-database}
+# Erstellen und Konfigurieren der Vorlagen{#creating-and-configuring-the-database}
 
 Wenn Sie eine Datenbank erstellen, bietet Adobe Campaign zwei verschiedene Optionen:
 
@@ -31,15 +34,15 @@ Die Konfigurationsschritte werden nachfolgend beschrieben.
 
 >[!CAUTION]
 >
->Die Namen von Datenbanken, Benutzern und Schemas dürfen nicht mit einer Zahl beginnen oder Sonderzeichen enthalten.
+>Die Namen von Datenbanken, Benutzern und Schemas dürfen nicht mit einer Nummer oder Sonderzeichen Beginn werden.
 >
->Nur der **interne** Bezeichner kann diese Vorgänge ausführen. For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Diese Vorgänge können nur vom **internen** Bezeichner ausgeführt werden. For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-##  Fall 1: Erstellen/Recycling einer Datenbank {#case-1--creating-recycling-a-database}
+## Fall 1: Erstellen/Recycling einer Datenbank {#case-1--creating-recycling-a-database}
 
 Die Schritte zum Erstellen einer Datenbank oder zum Recycling einer vorhandenen Datenbank werden nachfolgend beschrieben. Einige Konfigurationen hängen von der verwendeten Datenbank-Engine ab:
 
-Es handelt sich um die folgenden Schritte:
+Es handelt sich dabei um die folgenden Schritte:
 
 * [Schritt 1: Auswählen der Datenbank-Engine](#step-1---selecting-the-database-engine),
 * [Schritt 2: Verbindung zum Server](#step-2---connecting-to-the-server)herstellen,
@@ -50,13 +53,13 @@ Es handelt sich um die folgenden Schritte:
 
 ### Schritt 1: Auswählen der Datenbank-Engine {#step-1---selecting-the-database-engine}
 
-Wählen Sie die Datenbank-Engine unter den in der Dropdownliste aufgeführten aus.
+Wählen Sie die Datenbank-Engine unter den in der Dropdown-Liste aufgeführten aus.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Unterstützte Datenbanken werden im Abschnitt [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)dargestellt.
+Unterstützte Datenbanken werden im Abschnitt [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)dargestellt.
 
-Identifizieren Sie den Server und wählen Sie den Typ des Vorgangs aus, der ausgeführt werden soll. In diesem Fall **[!UICONTROL Create or recycle a database]**.
+Identifizieren Sie den Server und wählen Sie den Typ des Vorgangs aus, der ausgeführt werden soll. In diesem Fall **[!UICONTROL erstellen oder recyceln Sie eine Datenbank]**.
 
 ![](assets/s_ncs_install_db_oracle_creation01.png)
 
@@ -66,14 +69,14 @@ Je nach ausgewählter Datenbank-Engine können die Serverkennungsinformationen v
 * Bei einer **PostgreSQL** - oder **DB2** -Engine müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver definiert ist, um auf den Datenbankserver zuzugreifen.
 * Für eine **Microsoft SQL Server** -Engine müssen Sie Folgendes definieren:
 
-   1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS\ `<instance>`** (Instanzmodus),
-   1. die Authentifizierungsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** oder **[!UICONTROL Windows NT authentication]**.
+   1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS\`<instance>`**(Instanzmodus),
+   1. die Authentifizierungsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-Authentifizierung]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Schritt 2: Verbindung zum Server herstellen {#step-2---connecting-to-the-server}
 
-Definieren Sie im **[!UICONTROL Server access]** Fenster den Datenbankserverzugriff.
+Definieren Sie im Fenster **[!UICONTROL Serverzugriff]** den Datenbankserverzugriff.
 
 ![](assets/s_ncs_install_db_oracle_creation02.png)
 
@@ -98,20 +101,20 @@ Sie müssen die folgenden Einstellungen definieren:
    >
    >Bei einer DB2-Datenbank darf der Name der Datenbank 8 Zeichen nicht überschreiten.
 
-* Geben Sie das Kennwort des mit dieser Datenbank verknüpften Kontos ein.
+* Geben Sie das Kennwort des Kontos ein, das mit dieser Datenbank verknüpft ist.
 * Geben Sie an, ob sich die Datenbank in Unicode befinden muss.
 
-   Mit der **[!UICONTROL Unicode database]** Option können Sie alle Zeichentypen unabhängig von der Sprache in Unicode speichern.
+   Mit der **[!UICONTROL Unicode-Datenbankoption]** können Sie alle Zeichentypen unabhängig von der Sprache in Unicode speichern.
 
    >[!NOTE]
    >
-   >Bei einer Oracle-Datenbank können Sie mit der **[!UICONTROL Unicode storage]** Option **NCLOB** - und **NVARCHAR** -Typfelder verwenden.
+   >Bei einer Oracle-Datenbank können Sie mit der **[!UICONTROL Option &quot;Unicode-Datenspeicherung]** &quot; **NCLOB** - und **NVARCHAR** -Typfelder verwenden.
    > 
-   >Wenn Sie diese Option nicht auswählen, muss der Zeichensatz (Zeichensatz) der Oracle-Datenbank die Datenspeicherung in allen Sprachen aktivieren (AL32UTF8 wird empfohlen).
+   >Wenn Sie diese Option nicht auswählen, muss der Zeichensatz (Zeichensatz) der Oracle-Datenbank die Datenspeicherung der Daten in allen Sprachen aktivieren (AL32UTF8 wird empfohlen).
 
 * Wählen Sie eine Zeitzone für die Datenbank und geben Sie an, ob die Datenbank in UTC (falls verfügbar) enthalten sein soll.
 
-   Weitere Informationen finden Sie unter [Zeitzonenverwaltung](../../installation/using/time-zone-management.md).
+   For more on this, refer to [Time zone management](../../installation/using/time-zone-management.md).
 
 ### Schritt 4: Zu installierende Pakete {#step-4---packages-to-install}
 
@@ -123,13 +126,13 @@ Wählen Sie die Pakete aus, die Sie installieren möchten.
 
 ### Schritt 5: Erstellungsschritte {#step-5---creation-steps}
 
-Im **[!UICONTROL Creation steps]** Fenster können Sie das SQL-Skript, das zum Erstellen der Tabellen verwendet wird, anzeigen und bearbeiten.
+Im Fenster &quot; **[!UICONTROL Erstellungsschritte]** &quot;können Sie das SQL-Skript, das zum Erstellen der Tabellen verwendet wird, anzeigen und bearbeiten.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Bei einer Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbank kann der Administrator auch die **Speicherparameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden sollen.
+* Bei einer Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbank kann der Administrator auch die **Datenspeicherung-Parameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden.
 
-   Diese Parameter erhalten die genauen Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden in den folgenden Optionen im **[!UICONTROL Administration > Platform > Options]** Knoten gespeichert:
+   Diese Parameter erhalten die genauen Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden in den folgenden Optionen im Knoten **[!UICONTROL Administration > Plattform > Optionen]** gespeichert:
 
    * **WdbcOptions_TableSpaceUser**: Benutzertabellen basierend auf einem Schema
    * **WdbcOptions_TableSpaceIndex**: Index der Benutzertabellen basierend auf einem Schema
@@ -137,29 +140,29 @@ Im **[!UICONTROL Creation steps]** Fenster können Sie das SQL-Skript, das zum E
    * **WdbcOptions_TableSpaceWorkIndex**: Index der Arbeitstabellen ohne Schema
 
 * Bei einer Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der **oinstall** -Gruppe.
-* Mit dieser **[!UICONTROL Set or change the administrator password]** Option können Sie das mit dem Adobe Campaign-Operator verknüpfte Kennwort mit Administratorrechten eingeben.
+* Mit der Option **[!UICONTROL Administratorkennwort]** festlegen oder ändern können Sie das mit dem Adobe Campaign-Operator verknüpfte Kennwort mit Administratorrechten eingeben.
 
-   Es wird empfohlen, aus Sicherheitsgründen ein Adobe Campaign-Kontoverwaltungskennwort zu definieren.
+   Es wird empfohlen, aus Sicherheitsgründen ein Passwort für den Adobe Campaign-Kontoadministrator zu definieren.
 
 ### Schritt 6: Erstellen der Datenbank {#step-6---creating-the-database}
 
-Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicken Sie **[!UICONTROL Start]** zur Bestätigung.
+Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Click **[!UICONTROL Start]** to confirm.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Nachdem die Datenbank erstellt wurde, können Sie eine erneute Verbindung herstellen, um die Instanzkonfiguration abzuschließen.
 
-Sie müssen jetzt den Bereitstellungsassistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Bereitstellungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Sie müssen jetzt den Bereitstellungsassistenten Beginn ausführen, um die Konfiguration der Instanz abzuschließen. Weitere Informationen finden Sie im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert, die sich im Installationsverzeichnis von Adobe Campaign befindet. **`/conf/config-<instance>.xml`**
+Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert, die im Installationsverzeichnis des Adobe Campaigns **`/conf/config-<instance>.xml`** enthalten ist.
 
-Beispiel einer Microsoft SQL Server-Konfiguration auf der Basis der Base61-Datenbank, die mit dem &quot;campaign&quot;-Konto mit dem verschlüsselten Kennwort verknüpft ist:
+Beispiel für eine Microsoft SQL Server-Konfiguration auf der Base61-Datenbank, die mit dem verschlüsselten Kennwort des Kontos &quot;Kampagne&quot;verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-##  Fall 2: Verwenden einer vorhandenen Datenbank {#case-2--using-an-existing-database}
+## Fall 2: Verwenden einer vorhandenen Datenbank {#case-2--using-an-existing-database}
 
 Die Datenbank sowie der Benutzer müssen vom Datenbankadministrator erstellt und die Zugriffsrechte korrekt konfiguriert worden sein.
 
@@ -168,18 +171,18 @@ Für eine Oracle-Datenbank sind beispielsweise die folgenden Mindestrechte erfor
 Um eine vorhandene Datenbank zu verwenden, gehen Sie wie folgt vor:
 
 * [Schritt 1: Auswählen der Datenbank-Engine](#step-1---choosing-the-database-engine),
-* [Schritt 2: Einstellungen](#step-2---database-connection-settings)der Datenbankverbindung
+* [Schritt 2: Einstellungen](#step-2---database-connection-settings)der Datenbankverbindung,
 * [Schritt 3 - Zu installierende](#step-3---packages-to-install)Pakete,
 * [Schritt 4 - Erstellungsschritte](#step-4---creation-steps),
 * [Schritt 5 - Erstellen der Datenbank](#step-5---creating-the-database).
 
 ### Schritt 1: Auswählen der Datenbank-Engine {#step-1---choosing-the-database-engine}
 
-Wählen Sie die Datenbank-Engine aus der Dropdownliste.
+Wählen Sie die Datenbank-Engine aus der Dropdown-Liste.
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Identifizieren Sie den Server und wählen Sie die Art des Vorgangs, den Sie ausführen möchten. In diesem Fall **[!UICONTROL Use an existing database]**.
+Identifizieren Sie den Server und wählen Sie die Art des Vorgangs, den Sie ausführen möchten. In diesem Fall **[!UICONTROL verwenden Sie eine vorhandene Datenbank]**.
 
 ![](assets/s_ncs_install_db_oracle_exists_01.png)
 
@@ -190,13 +193,13 @@ Je nach ausgewählter Datenbank-Engine können die Serverkennungsinformationen v
 * Für eine **Microsoft SQL Server** -Engine müssen Sie Folgendes definieren:
 
    1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse),
-   1. die Sicherheitsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server authentication]** oder **[!UICONTROL Windows NT authentication]**.
+   1. die Sicherheitsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-Authentifizierung]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
 ### Schritt 2: Einstellungen für die Datenbankverbindung {#step-2---database-connection-settings}
 
-Legen Sie im **[!UICONTROL Database]** Fenster die Einstellungen für die Datenbankverbindung fest.
+Legen Sie im Fenster &quot; **[!UICONTROL Datenbank]** &quot;die Einstellungen für die Datenbankverbindung fest.
 
 ![](assets/s_ncs_install_db_oracle_exists_02.png)
 
@@ -207,6 +210,7 @@ Sie müssen die folgenden Einstellungen definieren:
 
    >[!NOTE]
    >
+   >Achten Sie darauf, dass sowohl der Name des Schemas als auch der Benutzername übereinstimmen. Es wird empfohlen, eine Datenbank über den Kampagne Console-Client zu erstellen.
    >Bei einer Oracle-Datenbank müssen Sie nicht den Kontonamen eingeben.
 
 * Geben Sie an, ob die Datenbank Unicode sein soll oder nicht.
@@ -221,29 +225,29 @@ Wählen Sie die Pakete aus, die Sie installieren möchten.
 
 ### Schritt 4: Erstellungsschritte {#step-4---creation-steps}
 
-Im **[!UICONTROL Creation steps]** Fenster können Sie das SQL-Skript, das zum Erstellen der Tabellen verwendet wird, anzeigen und bearbeiten.
+Im Fenster &quot; **[!UICONTROL Erstellungsschritte]** &quot;können Sie das SQL-Skript, das zum Erstellen der Tabellen verwendet wird, anzeigen und bearbeiten.
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Bei Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbanken kann der Administrator die **Speicherparameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden sollen.
+* Bei Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbanken kann der Administrator die **Datenspeicherung-Parameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden.
 * Bei einer Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der **oinstall** -Gruppe.
-* Mit dieser **[!UICONTROL Set or change the administrator password]** Option können Sie das mit dem Adobe Campaign-Operator verknüpfte Kennwort mit Administratorrechten eingeben.
+* Mit der Option **[!UICONTROL Administratorkennwort]** festlegen oder ändern können Sie das mit dem Adobe Campaign-Operator verknüpfte Kennwort mit Administratorrechten eingeben.
 
-   Es wird empfohlen, aus Sicherheitsgründen ein Adobe Campaign-Kontoverwaltungskennwort zu definieren.
+   Es wird empfohlen, aus Sicherheitsgründen ein Passwort für den Adobe Campaign-Kontoadministrator zu definieren.
 
 ### Step 5 - Creating the database {#step-5---creating-the-database}
 
-Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Klicken Sie **[!UICONTROL Start]** zur Bestätigung.
+Im letzten Schritt des Assistenten können Sie die Datenbank erstellen. Click **[!UICONTROL Start]** to confirm.
 
 ![](assets/s_ncs_install_db_oracle_creation06.png)
 
 Nach Abschluss der Datenbankerstellung können Sie die Verbindung zum Abschluss der Instanzkonfiguration wiederherstellen.
 
-Sie müssen jetzt den Bereitstellungsassistenten starten, um die Konfiguration der Instanz abzuschließen. Siehe [Bereitstellungsassistent](../../installation/using/deploying-an-instance.md#deployment-wizard).
+Sie müssen jetzt den Bereitstellungsassistenten Beginn ausführen, um die Konfiguration der Instanz abzuschließen. Weitere Informationen finden Sie im [Bereitstellungsassistenten](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
-Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert, die sich im Installationsverzeichnis von Adobe Campaign befindet. **`/conf/config-<instance>.xml`**
+Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei gespeichert, die im Installationsverzeichnis des Adobe Campaigns **`/conf/config-<instance>.xml`** enthalten ist.
 
-Beispiel einer Microsoft SQL Server-Konfiguration auf der Basis der Base61-Datenbank, die mit dem &quot;campaign&quot;-Konto mit dem verschlüsselten Kennwort verknüpft ist:
+Beispiel für eine Microsoft SQL Server-Konfiguration auf der Base61-Datenbank, die mit dem verschlüsselten Kennwort des Kontos &quot;Kampagne&quot;verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
