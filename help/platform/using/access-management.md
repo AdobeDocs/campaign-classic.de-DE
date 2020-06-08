@@ -14,11 +14,11 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4148efa9c7a8b002672d72fc526753bf7304673c
-workflow-type: ht
-source-wordcount: '3050'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
+workflow-type: tm+mt
+source-wordcount: '3068'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Das Verfahren zum Erstellen eines Benutzers wird auf [dieser Seite](#creating-an
 
 Auf [dieser Seite](../../installation/using/connecting-through-ldap.md) finden Sie weitere Angaben zu Adobe Campaign und zur LDAP-Integration.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Benutzer müssen einer Sicherheitszone zugeordnet sein, um sich auf einer Instanz anmelden zu können. Mehr Informationen über Sicherheitszonen in Adobe Campaign können auf [dieser Seite](../../installation/using/configuring-campaign-server.md#defining-security-zones) nachgelesen werden.
 
@@ -149,7 +149,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
 
    ![](assets/s_ncs_user_restrictions_operators.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Es handelt sich um eine die Anzeige betreffende Einschränkung, die mit Vorsicht angewandt werden sollte. Der mit dieser Art von Berechtigung angemeldete Benutzer sieht tatsächlich NUR den Inhalt des angegebenen Ordners und kann auf keinen anderen Verzeichnisknoten zugreifen. Je nach Funktionen, auf die er Zugriff hat (z. B. Workflows), kann es jedoch möglich sein, dass Daten angezeigt werden, die in Knoten enthalten sind, die normalerweise für ihn nicht verfügbar sind.
 
@@ -179,7 +179,7 @@ Sie haben Zugriff auf Folgendes:
 
 Adobe Campaign verwendet technische Benutzer mit standardmäßig konfigurierten Parametern: Administrator (&#39;admin&#39;), Fakturierung (&#39;billing&#39;), Monitoring, Webanwendungs-Agent (&#39;wepapp&#39;) etc. Einige hängen von den auf der Plattform installierten Anwendungen und Optionen ab: Beispielsweise sind die Benutzer &#39;central&#39; und &#39;local&#39; nur vorhanden, wenn die Option Distributed Marketing installiert ist.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Diese technischen Benutzer werden standardmäßig benachrichtigt, wenn von der Plattform Informationsnachrichten oder Warnungen gesendet werden. Es wird daher dringend empfohlen, eine Kontakt-E-Mail-Adresse für diese Benutzer anzugeben.
 >
@@ -258,6 +258,7 @@ Es existieren folgende Standardgruppen:
 
    * EINFÜGEN VON ORDNERN: Berechtigt zum Einfügen von Ordnern in den Adobe-Campaign-Navigationsbaum (erfordert Schreibzugriff auf betroffene Zweige);
    * WORKFLOW: Berechtigt zur Nutzung von Workflows.
+
    >[!NOTE]
    >
    >Benutzer dieser Gruppe können keine Sendungen starten.
@@ -396,7 +397,7 @@ Wenn im Tab **[!UICONTROL Sicherheit]** die Option **[!UICONTROL Systemordner]**
 
 ## Ordner und Ansichten {#folders-and-views}
 
-### Über Ordner und Ansichten {#about-folders-and-views}
+### Ordner {#about-folders}
 
 Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der rechten Maustaste über das Menü **[!UICONTROL Ordner hinzufügen]** im Verzeichnis erstellt. Anschließend kann der zu erstellende Ordnertyp ausgewählt werden. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
 
@@ -404,17 +405,23 @@ Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der recht
 
 Berechtigungen bezüglich dieser Ordner werden auf die gleiche Weise wie über alle anderen Ordner des Navigationsbaums eingeräumt. Siehe [Zugriffsverwaltungsordner](#folder-access-management).
 
+### Info zu Ansichten {#about-views}
+
 Es besteht außerdem die Möglichkeit, Ansichten zu erstellen, um den Datenzugriff einzuschränken und den Inhalt des Navigationsbaums Ihren Bedürfnissen entsprechend zu organisieren. Es ist darüber hinaus möglich, den jeweiligen Ansichten Berechtigungen zuzuordnen.
 
 Eine Ansicht ist ein Ordner, der in einem oder mehreren anderen Ordnern des gleichen Typs gespeicherte Datensätze anzeigt. Wenn Sie beispielsweise einen Kampagnen-Ordner erstellen, der eine Ansicht ist, zeigt dieser standardmäßig alle in der Datenbank vorhandenen Kampagnen an, unabhängig von ihrer Herkunft. Ansichten bieten zudem die Möglichkeit, die enthaltenen Daten zu filtern.
 
 Wenn ein Ordner zu einer Ansicht gemacht wird, werden alle dem Ordnertyp entsprechenden Daten, die in der Datenbank vorhanden sind, unabhängig von ihrer tatsächlichen Ordnerzuordnung angezeigt. Anschließend können sie gefiltert werden, um die Liste der angezeigten Daten einzuschränken.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Ansichten fassen Daten zusammen und verleihen Zugriff auf sie. Die Daten sind jedoch nicht physisch im Ordner der Ansicht gespeichert. Der Benutzer muss über die der gewünschten Aktion entsprechenden Berechtigungen über den oder die Herkunftsordner der Daten verfügen (mindestens Lesezugriff).
 >
 >Um Zugriff auf eine Ansicht ohne Zugriff auf den Herkunftsordner zu verleihen, darf kein Lesezugriff auf den Elternknoten des Herkunftsordners gegeben werden.
+
+Um Ansichten von Ordnern zu unterscheiden, wird der Name der einzelnen Ansichten in einer anderen Farbe angezeigt (dunkelcyan).
+
+![](assets/s_ncs_user_view_name_color.png)
 
 ### Hinzufügung von Ordnern und Erstellung von Ansichten {#adding-folders-and-creating-views}
 
@@ -442,4 +449,3 @@ Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzu
 werden folgende Sendungen in der Ansicht angezeigt:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
-
