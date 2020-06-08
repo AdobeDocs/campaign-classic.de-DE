@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b6b4fd2b21f90a88744736b499eab1b0764774e
+source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
 workflow-type: tm+mt
-source-wordcount: '3743'
+source-wordcount: '3906'
 ht-degree: 3%
 
 ---
@@ -109,6 +109,18 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_FromAddressMask</span> <br /> </td> 
    <td> Ermöglicht die Definition der Syntax der "Von"-Adresse, die beim Senden einer Nachricht verwendet wird.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_ImageServerTimeout</span> <br /> </td> 
+   <td> Ermöglicht die Festlegung einer Timeout-Grenze (in Sekunden) für das Abrufen einer Antwort vom Server beim Abrufen eines Bildes, das von einer personalisierten URL heruntergeladen und an eine E-Mail angehängt wurde. Wenn dieser Wert überschritten wird, kann die Nachricht nicht gesendet werden. Der Standardwert ist 60 Sekunden.<br /> </td> 
+  </tr> 
+ <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxDownloadedImageSize</span> <br /> </td> 
+   <td> Hiermit können Sie die maximale Größe (in Byte) festlegen, die für ein Bild zulässig ist, das von einer personalisierten URL heruntergeladen und an eine E-Mail angehängt wird. Der Standardwert ist 100.000 Byte. Wenn ein Testversand gesendet und das Bild/die Bilder heruntergeladen wird, um die E-Mail zu verarbeiten, wenn die Bildgröße diesen Wert überschreitet oder ein Download-Problem auftritt, wird in den Versandlogs ein Fehler angezeigt, und der Testversand-Versand schlägt fehl.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">NmsDelivery_MaxRecommendedAttachments</span> <br /> </td> 
+   <td> Ermöglicht die Festlegung einer maximalen Anzahl von Anlagen in einer E-Mail- oder Transaktionsvorlage. Wenn dieser Wert überschritten wird, wird eine Warnung in den Protokollen der Versand-Analyse oder beim Veröffentlichen der transaktionalen E-Mail-Vorlage angezeigt. The default value is 1 attachment.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_MaxRetry</span> <br /> </td> 
