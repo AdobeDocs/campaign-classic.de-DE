@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 2ca8fb051dce9abfcb8987c4d4527d997b480f96
+translation-type: tm+mt
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 100%
 
 ---
 
@@ -33,7 +36,7 @@ Vor der Konzeption von E-Mails sollten Sie sich über die Konzepte und Best Prac
 
 Eine Versandvorlage dient zur Speicherung der Versandkonfiguration und der Versandparameter und kann wiederverwendet werden.
 
-Hier erfahren Sie mehr darüber.
+[Hier erfahren Sie mehr darüber](../../delivery/using/about-templates.md).
 
 ## Kann ich eine vorhandene HTML-Datei einfach importieren, um eine E-Mail in Campaign zu erstellen? {#can-i-easily-import-an-existing-html-to-create-an-email-in-campaign-}
 
