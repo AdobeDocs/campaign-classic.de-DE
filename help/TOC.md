@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
 workflow-type: tm+mt
-source-wordcount: '2051'
-ht-degree: 100%
+source-wordcount: '2061'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 100%
 + Versionshinweise {#release-notes}
    + [Neueste Version](rn/using/latest-release.md)
    + Frühere Versionen {#previous-releases}
+      + [Version 20.1](rn/using/release--20-1.md)
       + [Version 19.2](rn/using/release--19-2.md)
       + [Version 19.1](rn/using/release--19-1.md)
       + [Version 18.10](rn/using/release--18-10.md)
@@ -127,6 +128,7 @@ ht-degree: 100%
       + [Bedingter Inhalt](delivery/using/conditional-content.md)
       + [Personalisierte Gutscheine](delivery/using/personalized-coupons.md)
       + [Personalisierte PDF-Dokumente erstellen](delivery/using/generating-personalized-pdf-documents.md)
+      + [Anpassen der Emoticon-Liste](delivery/using/customizing-emoticon-list.md)
    + Testadressen verwenden {#using-seed-addresses}
       + [Über Testadressen](delivery/using/about-seed-addresses.md)
       + [Testadressen erstellen](delivery/using/creating-seed-addresses.md)
@@ -526,6 +528,7 @@ ht-degree: 100%
       + [Transaktionsnachrichten-Vorschau](message-center/using/transactional-message-preview.md)
       + [Testversand durchführen](message-center/using/sending-a-proof.md)
       + [Vorlagenpublikation](message-center/using/template-publication.md)
+      + [Vorlage ohne Veröffentlichung](message-center/using/template-unpublication.md)
    + Ereignisverarbeitung {#event-processing}
       + [Über die Ereignisverarbeitung](message-center/using/about-event-processing.md)
       + [Ereignisabruf](message-center/using/event-collection.md)
@@ -603,6 +606,7 @@ ht-degree: 100%
       + [Interaction - Datenpuffer](installation/using/interaction---data-buffer.md)
    + Anlagen {#appendices}
       + [Die Server-Konfigurationsdatei](installation/using/the-server-configuration-file.md)
+      + [Kampagne-Netzwerk-Endpunkte](installation/using/campaign-network-endpoints.md)
       + [Befehlszeilen](installation/using/command-lines.md)
       + [Erstellen neuer Instanzen](installation/using/creating-new-instances.md)
       + [Liste der Optionen von Campaign Classic](installation/using/configuring-campaign-options.md)
