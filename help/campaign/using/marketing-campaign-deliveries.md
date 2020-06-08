@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 100%
+source-wordcount: '3084'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf d
 
 ![](assets/campaign_op_add_delivery.png)
 
-Die angebotenen Parameter werden den unterschiedlichen Versandtypen angepasst (Briefpost, E-Mail, Mobile-Kanäle, Fax oder Telefon).
+Die empfohlenen Konfigurationen sind auf die verschiedenen Versand abgestimmt: Direktwerbung, E-Mail, mobile Kanal.
 
 >[!NOTE]
 >
