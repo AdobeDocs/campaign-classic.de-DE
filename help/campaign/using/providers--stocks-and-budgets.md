@@ -14,8 +14,11 @@ discoiquuid: d4627141-cef1-4ddb-ad6a-5dc217b9fa96
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1998'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +84,7 @@ Um eine Dienstleistungsvorlage zu erstellen und ihren Inhalt zu bestimmen, gehen
 
    ![](assets/s_ncs_user_supplier_node_03.png)
 
-   * Geben Sie einen Titel für die Kostenstelle an und wählen Sie den betreffenden Vorgangstyp aus: Versand per **[!UICONTROL E-Mail]**, **[!UICONTROL Mobiltelefon]**, **[!UICONTROL Telefon]**, **[!UICONTROL Briefpost]**, **[!UICONTROL Fax]** oder **[!UICONTROL Aufgabe]**.
+   * Enter a label for this cost category and select the type of process concerned: Delivery by **[!UICONTROL Direct mail]**, **[!UICONTROL E-mail]**, **[!UICONTROL Mobile]**, **[!UICONTROL Telephone]** or **[!UICONTROL Task]**.
    * Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um die mit dieser Kostenstelle verbunden Kostentypen zu bestimmen.
    * Bei Bedarf können Sie jedem Kostentyp eine Lagerposition hinzufügen, um den bestehenden Lagern automatisch die verwendeten Mengen anzurechnen.
 
@@ -176,7 +179,7 @@ Wenn eine Dienstleistung ausgewählt wird, werden die dem Versandtyp (Briefpost,
 
    ![](assets/s_ncs_user_supplier_mail_delivery_select.png)
 
-* In Mobile-, Fax- oder Telefonsendungen werden Dienstleistungen auf die gleiche Weise wie bei Briefpost-Sendungen ausgewählt.
+* Bei Versänden auf mobilen Kanälen oder bei Telefonen gilt der gleiche Auswahlmodus.
 * In E-Mail-Sendungen werden Dienstleistungen über den Tab **[!UICONTROL Erweitert]** der Eigenschaften des jeweiligen Versands ausgewählt, wie im folgenden Beispiel:
 
    ![](assets/s_ncs_user_supplier_email_delivery_select.png)
