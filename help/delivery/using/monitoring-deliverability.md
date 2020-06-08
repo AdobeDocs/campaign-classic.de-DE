@@ -12,11 +12,11 @@ discoiquuid: 0baef937-f00b-4fc4-8608-a870997be684
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 74e1a883088d347cb1aab05d76b630c912411fc4
-workflow-type: ht
-source-wordcount: '811'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f4d82657fbeae39af173c867975455669497d8eb
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 94%
 
 ---
 
@@ -42,6 +42,7 @@ Sie können auch die folgenden Tools verwenden:
 * Bei jedem Versand wird ein Bericht mit Versandstatistiken für die verschiedenen Internet-Dienstanbieter (ISPs) erstellt. Es werden verschiedene Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf die Zustellbarkeit auswirken können, einschließlich der folgenden Zahlen:
    * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
    * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
+
    Lesen Sie diesbezüglich auch den Abschnitt [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
 * Allgemein bietet Ihnen das [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) Zugriff auf:
    * die [Versandzusammenfassung](../../delivery/using/monitoring-a-delivery.md#delivery-summary), die die Details des Versands und die [Anzahl der zu sendenden, der verarbeiteten und der erfolgreich gesendeten Nachrichten](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) anzeigt;
@@ -58,7 +59,7 @@ Im Folgenden finden Sie einige zusätzliche Richtlinien zum Zustellbarkeits-Moni
 * Prüfen Sie, ob die einzelnen Versanddurchsätze der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 * Wenn der Versand in [Schüben](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
 * Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](../../delivery/using/understanding-quarantine-management.md) der anderer Sendungen entspricht.
-* Prüfen Sie in den [Versandlogs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (grau oder auf der Blacklist, DNS-Probleme, Anti-Spam-Regeln etc.).
+* Carefully consult the [delivery logs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) in detail to check the kind of errors that are highlighted (grey or black-listing, DNS issues, anti-spam rules, etc.).
 
 ## Signal Spam {#signal-spam}
 
@@ -70,7 +71,7 @@ Signal Spam ist ein französischer Dienst, der anonymisiertes Feedback-Schleifen
 
 ## 250ok {#deliverability-250ok}
 
-[250ok](https://250ok.com/) ist eine komplementäre Monitoring-Lösung für die internen Adobe-Tools zur Zustellbarkeit, die IP-, Domain-Blacklisting- und Reputationsindikatoren bereitstellen.
+[250ok](https://250ok.com/) ist eine ergänzende Überwachungslösung zu den internen Werkzeugen von Adobe zur Bereitstellung von IP, Blacklisting und Reputationsindikatoren.
 
 Die bereitgestellten Werte sind in Echtzeit verfügbar, wodurch proaktive Unterstützung gewährleistet ist.
 
