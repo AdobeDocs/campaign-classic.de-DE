@@ -14,8 +14,11 @@ discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 30f313cecf1c3d7c65f6524a3f86a1c28b35f679
+translation-type: tm+mt
+source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 100%
 
 ---
 
@@ -97,12 +100,6 @@ Die Anzahl der restlichen Token wird in der **[!UICONTROL Zusammenfassung]** des
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
 Normalerweise wird die Inbox-Rendering-Funktion zum Testen des HTML-Gerüsts einer neu erstellten E-Mail verwendet. Pro Rendering sind ca. 70 Token erforderlich (abhängig von der Anzahl der getesteten Umgebungen). In manchen Fällen sind aber mehrere Inbox-Rendering-Berichte erforderlich, um Ihren Versand vollständig zu testen. Es könnte deshalb eine größere Anzahl von Token nötig sein, um mehrere Prüfungen durchzuführen.
-
->[!NOTE]
->
->Wenn Sie Litmus-Kunde sind, können Sie Ihr eigenes Litmus-Konto für das Inbox Rendering in Adobe Campaign verwenden. Weiterführende Informationen dazu erhalten Sie von Ihrem Adobe-Kundenbetreuer.
->
->Bitte beachten Sie, dass eine Änderung Ihrer Litmus-Zugangsdaten Authentifizierungsprobleme innerhalb Adobe Campaign verursachen kann.
 
 ## Inbox-Rendering-Bericht aufrufen {#accessing-the-inbox-rendering-report}
 
