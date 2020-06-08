@@ -14,8 +14,11 @@ discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: ac3a0ca00591943d79563e9fd4d85d71fa0ba81a
+translation-type: tm+mt
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '377'
+ht-degree: 99%
 
 ---
 
@@ -52,7 +55,7 @@ Im Folgenden finden Sie eine Liste der am häufigsten verwendeten RBLs. Eine umf
 
 * **SURBL**
 
-   Weiterführende Informationen finden Sie unter der Website [https://www.surbl.org/](https://www.surbl.org/),
+   Besuchen Sie die Seite [http://www.surbl.org/](http://www.surbl.org/),
 
    auf der Webseiten identifiziert werden, die regelmäßig in Spam auftauchen. Sollte Ihre Domain auf dieser Liste stehen, kann das einen starken Einfluss auf Ihre Zustellbarkeit haben. In diesem Fall sollten Sie unverzüglich die für Zustellbarkeit zuständigen Abteilungen sowie den Adobe-Campaign-Support informieren.
 
