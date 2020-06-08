@@ -14,8 +14,11 @@ discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b78db689958c9b240da9a0315060fe63bcb48e0a
+translation-type: tm+mt
+source-git-commit: 5847107a459bf47f34e4994c3521266bb174d8cb
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 94%
 
 ---
 
@@ -59,18 +62,18 @@ Erstellen Sie zunächst einen neuen Versand:
    >Der **Silent Push**-Modus ist ab iOS-Version 7 verfügbar und ermöglicht den Versand einer &quot;stillen&quot; Benachrichtigung an eine Mobile App. Der Benutzer wird über die Ankunft der Benachrichtigung nicht in Kenntnis gesetzt, da diese direkt an die Anwendung übermittelt wird.
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** die Bezeichnung an, die auf der Benachrichtigung erscheinen soll. Dieser Titel wird nur in der im Benachrichtigungszentrum zur Verfügung stehenden Benachrichtigungsliste angezeigt. In diesem Feld können Sie den Wert des **title**-Parameters der iOS-Benachrichtigungs-Nutzdaten definieren.
+
 1. Wenn Sie den HTTP/2-Connector verwenden, können Sie einen Untertitel hinzufügen (Wert des Parameters **subtitle** der iOS-Benachrichtigungs-Nutzdaten). Weitere Informationen finden Sie im Abschnitt [Konfiguration der Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+
 1. Geben Sie nun, je nach gewähltem Benachrichtigungstyp (Hinweisstil), die **[!UICONTROL Nachricht]** und den **[!UICONTROL Kennzeichenwert]** ein.
 
    ![](assets/nmac_delivery_ios_5.png)
 
    >[!NOTE]
    >
-   >Sie können zum Inhalt Ihrer Benachrichtigung Emojis hinzufügen. Gehen Sie hierzu auf eine Website mit Emojis ([Beispiel](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), kopieren Sie ein Emoji und fügen Sie es direkt in den Inhaltseditor ein. Unter Windows 7 werden einige Emojis im Editor möglicherweise nicht korrekt angezeigt (viereckiges Symbol), in der endgültigen E-Mail sollten sie aber korrekt erscheinen. Die Darstellungsmöglichkeit von Emojis hängt vom jeweiligen Betriebssystem des Geräts ab. Wir empfehlen eine Testsendung, um sicherzustellen, dass der Versand korrekt dargestellt wird.
-
-   >[!NOTE]
-   >
    >Bei Benachrichtigungen bzw. Hinweisen vom Typ **[!UICONTROL Kennzeichen]** und **[!UICONTROL Hinweis und Kennzeichen]** haben Sie die Möglichkeit, den Kennzeichenwert (Ziffer, die über dem Mobile-App-Logo angezeigt wird) zu ändern. Zur Zurücksetzung des Kennzeichens genügt es, 0 als Wert anzugeben. Wenn das Feld leer ist, wird der Wert des Kennzeichens nicht geändert.
+
+1. Klicken Sie auf das Symbol Emoticon **[!UICONTROL einfügen]** , um Emoticons zu Ihrer Push-Benachrichtigung einzufügen. Informationen zum Anpassen der Emoticon-Liste finden Sie unter [Anpassen der Emoticon-Liste](../../delivery/using/defining-interactive-content.md)
 
 1. Im Feld **[!UICONTROL Aktionsschaltfläche]** können Sie den Text der Aktionsschaltfläche angeben, die auf Benachrichtigungen vom Typ Warnung erscheint (Feld **action_loc_key** der Nutzdaten). Wenn Ihre iOS-Anwendung die Lokalisierung von Text unterstützt (**Localizable.strings**), ist in diesem Feld der entsprechende Schlüssel anzugeben. Wenn dies nicht der Fall ist, geben Sie direkt den Text an, der auf der Aktionsschaltfläche erscheinen soll. Lesen Sie für weiterführende Informationen hierzu die [Apple-Dokumentation](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW1) .
 1. Wählen Sie im Feld **[!UICONTROL Ton abspielen]** die Melodie aus, die bei Erhalt einer Nachricht abgespielt werden soll.
@@ -121,9 +124,7 @@ Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, 
 
    ![](assets/nmac_delivery_android_4.png)
 
-   >[!NOTE]
-   >
-   >Sie können zum Inhalt Ihrer Benachrichtigung Emojis hinzufügen. Gehen Sie hierzu auf eine Website mit Emojis ([Beispiel](https://www.utf8-chartable.de/unicode-utf8-table.pl?start=9728)), kopieren Sie ein Emoji und fügen Sie es direkt in den Inhaltseditor ein. Unter Windows 7 werden einige Emojis im Editor möglicherweise nicht korrekt angezeigt (viereckiges Symbol), in der endgültigen E-Mail sollten sie aber korrekt erscheinen. Die Darstellungsmöglichkeit von Emojis hängt vom jeweiligen Betriebssystem des Geräts ab. Wir empfehlen eine Testsendung, um sicherzustellen, dass der Versand korrekt dargestellt wird.
+1. Klicken Sie auf das Symbol Emoticon **[!UICONTROL einfügen]** , um Emoticons zu Ihrer Push-Benachrichtigung einzufügen. Informationen zum Anpassen der Emoticon-Liste finden Sie unter [Anpassen der Emoticon-Liste](../../delivery/using/defining-interactive-content.md)
 
 1. Geben Sie im Feld **[!UICONTROL Anwendungsvariablen]** für jede Variable den zugehörigen Wert an. Variablen dienen zur Konfiguration des Anwendungsverhaltens infolge des Erhalts einer Benachrichtigung. So können Sie einen speziellen Bildschirm anzeigen lassen, wenn der Nutzer auf die App tippt.
 
