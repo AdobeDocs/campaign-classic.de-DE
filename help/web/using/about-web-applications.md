@@ -14,21 +14,30 @@ discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 61c7681535dc08e1d705d7d239e96c603bbad339
+translation-type: tm+mt
+source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
+workflow-type: tm+mt
+source-wordcount: '709'
+ht-degree: 87%
 
 ---
 
 
 # Über Webanwendungen{#about-web-applications}
 
-Adobe Campaign ermöglicht Ihnen, mit Daten aus der Datenbank dynamische und interaktive Webanwendungen zu erstellen und zu publizieren, wobei die Inhalte auf die jeweiligen Benutzerrechte abgestimmt sind. Damit lassen sich Seiten erstellen, wie etwa Bearbeitungsformulare für das Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank in Form von Tabellen, Grafiken und Eingabeformularen enthalten. Mit der Webanwendungs-Funktion können Webseiten konzipiert und veröffentlicht werden, in denen Benutzer Informationen suchen oder eingeben können.
+Mit Adobe Campaign können Sie dynamische und interaktive Webanwendungen mit Daten aus der Datenbank und Inhalten erstellen und veröffentlichen, die an die Rechte des angeschlossenen Benutzers angepasst sind.
+
+Sie können Seiten erstellen, z. B. ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare, einschließlich Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabefeldern usw. Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
 Dabei kann es sich um ein Anmeldeformular handeln, dessen Felder wie unten dargestellt mit Daten aus der Adobe Campaign-Datenbank vorausgefüllt wurden:
 
 ![](assets/webapp_form_sample.png)
 
 Dieses Kapitel bietet einen Überblick über die Verwaltung von Webanwendungen.
+
+>[!NOTE]
+>
+>Informationen zur Optimierung der Sicherheit von Webanwendungen finden Sie in der Checkliste [für](https://helpx.adobe.com/de/campaign/kb/acc-security.html) Sicherheit und Datenschutz.
 
 >[!CAUTION]
 >
