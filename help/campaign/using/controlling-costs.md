@@ -14,8 +14,11 @@ discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '2541'
+ht-degree: 100%
 
 ---
 
@@ -205,6 +208,7 @@ Kosten werden in drei Kategorien eingeteilt:
    * In einem noch nicht analysierten Versand entsprechen die berechneten Kosten dem Betrag der Plankosten. Wenn die Analyse bereits stattgefunden hat, setzen sich die berechneten Kosten aus den basierend auf den Kostenstrukturen des Dienstleisters und der Anzahl der ausgewählten Empfänger berechneten Beträgen zusammen.
    * In einer gestarteten Aufgabe werden die Plankosten als berechnete Kosten verwendet. Nach Abschluss der Aufgabe entsprechen die berechneten Kosten der Summe aller basierend auf den Kostenstrukturen des Dienstleisters und - falls zutreffend - der Anzahl an insgesamt benötigten Tagen berechneten Kosten.
    * Sowohl für Marketingpläne als auch für Programme entsprechen die berechneten Kosten der Summe der für die verknüpften Kampagnen berechneten Kosten. Wenn diese nicht angegeben sind, werden die Plankosten anstelle der berechneten Kosten verwendet.
+
    >[!NOTE]
    >
    >Über den **[!UICONTROL Verteilung]**-Link der berechneten Kosten können Details der Berechnung sowie das Datum der letzten Kostenberechnung eingesehen werden.
@@ -229,73 +233,71 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 #### 1. Schritt - Budget erstellen {#step-1---creating-the-budget}
 
-Erstellen Sie ein neues Budget über den Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]**.
+1. Erstellen Sie ein neues Budget über den Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]**.
 
-Bestimmen Sie ein Gesamtbudget von 10.000 Euro im Feld **[!UICONTROL Zugeteilt]** des Abschnitts **[!UICONTROL Beträge]**. Fügen Sie drei Ausgabenkategorien im unteren Abschnitt des Fensters hinzu:
+1. Bestimmen Sie ein Gesamtbudget von 10.000 Euro im Feld **[!UICONTROL Zugeteilt]** des Abschnitts **[!UICONTROL Beträge]**. Fügen Sie drei Ausgabenkategorien im unteren Abschnitt des Fensters hinzu:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
 #### 2. Schritt - Dienstleister konfigurieren und Kostenstrukturen festlegen {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**.
+1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister.]** Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
-Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
-
-* Erstellen Sie für die Briefpost-Sendungen **[!UICONTROL Briefumschläge]**-Kostenstellen (Typen 114x229 und 162x229), **[!UICONTROL Porto und Versand]** und **[!UICONTROL Farbdruck]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
+   Erstellen Sie für die Briefpost-Sendungen **[!UICONTROL Briefumschläge]**-Kostenstellen (Typen 114x229 und 162x229), **[!UICONTROL Porto und Versand]** und **[!UICONTROL Farbdruck]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
 
    ![](assets/s_user_cost_mgmt_sample_2.png)
 
-   Fügen Sie in den Kostenstellen Fixkosten vom Typ &quot;Festpreis&quot; hinzu, deren Betrag in der entsprechenden Kostenstruktur leer ist. (Dieser wird einzeln für jeden Versand angegeben.)
+1. Fügen Sie in den Kostenstellen Fixkosten vom Typ &quot;Festpreis&quot; hinzu, deren Betrag in der entsprechenden Kostenstruktur leer ist. (Dieser wird einzeln für jeden Versand angegeben.)
 
    ![](assets/s_user_cost_mgmt_sample_5.png)
 
-* Erstellen Sie für die Aufgaben die folgenden zwei Kostenstellen:
+   Erstellen Sie für die Aufgaben die folgenden zwei Kostenstellen:
 
-   1. **[!UICONTROL Raumreservierung]** (Typen Kleiner Saal und Großer Saal) mit einer **Pauschale** von 300 und 500 Euro.
+   * **[!UICONTROL Raumreservierung]** (Typen Kleiner Saal und Großer Saal) mit einer **Pauschale** von 300 und 500 Euro.
 
-      ![](assets/s_user_cost_mgmt_sample_6.png)
+   ![](assets/s_user_cost_mgmt_sample_6.png)
 
-   1. **[!UICONTROL Erstellung]** (Typ **Inhaltsvorlage**) mit von der **Dauer in Tagen** abhängigen Kosten in Höhe von 300 Euro:
+   * **[!UICONTROL Erstellung]** (Typ **Inhaltsvorlage**) mit von der **Dauer in Tagen** abhängigen Kosten in Höhe von 300 Euro:
 
-      ![](assets/s_user_cost_mgmt_sample_7.png)
+   ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### 3. Schritt - Anfallende Kosten auf das Kampagnenbudget anrechnen {#step-3---charging-the-budget-in-the-campaign}
 
-Erstellen Sie eine Kampagne und wählen Sie das im 1. Schritt erstellte Budget aus.
+1. Erstellen Sie eine Kampagne und wählen Sie das im 1. Schritt erstellte Budget aus.
 
->[!NOTE]
->
->Das im Programm ausgewählte Budget wird standardmäßig für alle Kampagnen des Programms angewandt.
+   >[!NOTE]
+   >
+   >Das im Programm ausgewählte Budget wird standardmäßig für alle Kampagnen des Programms angewandt.
 
-![](assets/s_user_cost_mgmt_sample_4.png)
+   ![](assets/s_user_cost_mgmt_sample_4.png)
 
-Geben Sie die Plankosten mit Verteilung an:
+1. Geben Sie die Plankosten mit Verteilung an:
 
-![](assets/s_user_cost_mgmt_sample_9.png)
+   ![](assets/s_user_cost_mgmt_sample_9.png)
 
-Klicken Sie zur Speicherung dieser Daten auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**. Die berechneten Kosten der Kampagne werden daraufhin mit den Plankosten aktualisiert.
+1. Klicken Sie zur Speicherung dieser Daten auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**. Die berechneten Kosten der Kampagne werden daraufhin mit den Plankosten aktualisiert.
 
 #### 4. Schritt - Briefpost-Versand erstellen {#step-4---creating-the-direct-mail-delivery}
 
-Erstellen einen Kampagnen-Workflow mit einer Abfrage zur Zielgruppenbestimmung. Stellen Sie sicher, dass die Postadresse der ausgewählten Empfänger angegeben ist.
+1. Erstellen einen Kampagnen-Workflow mit einer Abfrage zur Zielgruppenbestimmung. Stellen Sie sicher, dass die Postadresse der ausgewählten Empfänger angegeben ist.
 
-Erstellen Sie nun einen Briefpost-Versand und wählen Sie den im zweiten Schritt erstellten Dienstleister aus: Die Kostenstellen werden automatisch angezeigt.
+1. Erstellen Sie nun einen Briefpost-Versand und wählen Sie den im zweiten Schritt erstellten Dienstleister aus: Die Kostenstellen werden automatisch angezeigt.
 
-Überschreiben Sie die Kosten der Briefumschläge und fügen Sie Fixkosten hinzu. Wählen Sie zudem die von diesen Kosten betroffenen Kategorien aus.
+1. Überschreiben Sie die Kosten der Briefumschläge und fügen Sie Fixkosten hinzu. Wählen Sie zudem die von diesen Kosten betroffenen Kategorien aus.
 
-![](assets/s_user_cost_mgmt_sample_3.png)
+   ![](assets/s_user_cost_mgmt_sample_3.png)
 
->[!NOTE]
->
->Wenn eine der Kostenstellen nicht verwendet wird, fallen durch diese keinerlei Ausgaben an.
+   >[!NOTE]
+   >
+   >Wenn eine der Kostenstellen nicht verwendet wird, fallen durch diese keinerlei Ausgaben an.
 
-Starten Sie den gerade erstellten Workflow, um die Analyse zu beginnen und die Kosten zu berechnen.
+1. Starten Sie den gerade erstellten Workflow, um die Analyse zu beginnen und die Kosten zu berechnen.
 
-![](assets/s_user_cost_mgmt_sample_10.png)
+   ![](assets/s_user_cost_mgmt_sample_10.png)
 
-Wenn die Budgetvalidierung für diese Kampagne aktiviert wurde, validieren Sie das Budget über das Dashboard. Sie können an dieser Stelle auch die Validierung der Kostenstellen überprüfen.
+1. Wenn die Budgetvalidierung für diese Kampagne aktiviert wurde, validieren Sie das Budget über das Dashboard. Sie können an dieser Stelle auch die Validierung der Kostenstellen überprüfen.
 
-![](assets/s_user_cost_mgmt_sample_10b.png)
+   ![](assets/s_user_cost_mgmt_sample_10b.png)
 
 Die den Versand betreffende Ausgabenzeile wird im Tab **[!UICONTROL Bearbeiten > Budget]** der Kampagne hinzugefügt. Klicken Sie auf Details..., um genauere Informationen zu erhalten.
 
@@ -311,27 +313,27 @@ Beim Bearbeiten der berechneten Kosten können Sie die Kostenverteilung sowie St
 
 Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen zuvor erstellt wurden (siehe [2. Schritt - Dienstleister konfigurieren und Kostenstrukturen festlegen](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klicken Sie dazu im Kampagnen-Dashboard auf die Schaltfläche **[!UICONTROL Aufgabe hinzufügen]**. Benennen Sie die Aufgabe und klicken Sie auf **[!UICONTROL Speichern]**.
 
-Konfigurieren Sie sie wie folgt:
+1. Konfigurieren Sie sie wie folgt:
 
-Klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Dienstleistung sowie die entsprechende Kostenstelle auszuwählen:
+1. Klicken Sie auf **[!UICONTROL Eigenschaften]**, um die Dienstleistung sowie die entsprechende Kostenstelle auszuwählen:
 
-![](assets/s_user_cost_mgmt_sample_14.png)
+   ![](assets/s_user_cost_mgmt_sample_14.png)
 
-Öffnen Sie anschließend die **[!UICONTROL Ausgaben und Einnahmen]** der Aufgabe und geben Sie ihre Plankosten an.
+1. Öffnen Sie anschließend die **[!UICONTROL Ausgaben und Einnahmen]** der Aufgabe und geben Sie ihre Plankosten an.
 
-![](assets/s_user_cost_mgmt_sample_15.png)
+   ![](assets/s_user_cost_mgmt_sample_15.png)
 
-Mit Speicherung der Aufgabe übernehmen die berechneten Kosten den für die Plankosten angegebenen Wert.
+   Mit Speicherung der Aufgabe übernehmen die berechneten Kosten den für die Plankosten angegebenen Wert.
 
-Nach Beendung der Aufgabe (Status **[!UICONTROL Abgeschlossen]**) werden die berechneten Kosten automatisch mit den Kosten des Großen Saals aktualisiert (entsprechend der Angabe in seiner Kostenstruktur). Diese Kosten werden ebenfalls der Kategorie zugeordnet.
+   Nach Beendung der Aufgabe (Status **[!UICONTROL Abgeschlossen]**) werden die berechneten Kosten automatisch mit den Kosten des Großen Saals aktualisiert (entsprechend der Angabe in seiner Kostenstruktur). Diese Kosten werden ebenfalls der Kategorie zugeordnet.
 
-Erstellen Sie auf die gleiche Weise eine zweite Aufgabe mit einer Planung über fünf Tage und verbinden Sie sie mit der zuvor erstellen Kostenstruktur.
+1. Erstellen Sie auf die gleiche Weise eine zweite Aufgabe mit einer Planung über fünf Tage und verbinden Sie sie mit der zuvor erstellen Kostenstruktur.
 
-![](assets/s_user_cost_mgmt_sample_16.png)
+   ![](assets/s_user_cost_mgmt_sample_16.png)
 
-Nach Abschluss der Aufgabe übernehmen die berechneten Kosten den aus der Kostenstruktur stammenden Wert, in unserem Beispiel also 1500 Euro (5 Tage x 300 Euro).
+   Nach Abschluss der Aufgabe übernehmen die berechneten Kosten den aus der Kostenstruktur stammenden Wert, in unserem Beispiel also 1500 Euro (5 Tage x 300 Euro).
 
-![](assets/s_user_cost_mgmt_sample_17.png)
+   ![](assets/s_user_cost_mgmt_sample_17.png)
 
 #### 6. Schritt - Status des Kampagnenbudgets aktualisieren {#step-6---update-the-campaign-budget-status}
 
