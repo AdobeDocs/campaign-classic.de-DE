@@ -14,8 +14,11 @@ discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 94%
 
 ---
 
@@ -27,6 +30,10 @@ Die Auswahl des Typs der Webanwendung erfolgt während der Erstellung.
 Gehen Sie zum Tab **Kampagnen** und wählen Sie das Menü **[!UICONTROL Webanwendungen]** aus. Wählen Sie die **[!UICONTROL Erstellen]**-Schaltfläche aus. Wählen Sie die gewünschte Webanwendungsvorlage aus:
 
 ![](assets/webapp_create_from_campaign.png)
+
+>[!NOTE]
+>
+>ALways schützt die Seiten, die möglicherweise persönliche Informationen enthalten. Lesen Sie die Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
 
 Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen:
 
