@@ -14,11 +14,11 @@ discoiquuid: 5ff1577f-0809-46fd-ac1e-11b24637e35c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e9923eb8cb78e7af05d64a122cd35b9cf3a4f215
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
 source-wordcount: '1813'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -76,6 +76,7 @@ Im Folgenden wird die Konfiguration des Data Connectors mithilfe eines Assistent
    * Integrationen (Erstellen)
    * Integrationen (Aktualisieren)
    * Integrationen (Löschen)
+
    ![](assets/adobe_genesis_install_002.png)
 
 1. Wählen Sie in der Liste der Partner die Option **[!UICONTROL Adobe Campaign Classic]**.
@@ -220,6 +221,7 @@ Auf diese Workflows kann im Adobe-Campaign-Navigationsbaum über den Knoten **[!
    * **[!UICONTROL Unique-Clicks-Anzahl]** (@recipientClick)
    * **[!UICONTROL Abmeldung (Opt-out)]** (@optOut)
    * **[!UICONTROL Fehler]** (@error)
+
    >[!NOTE]
    >
    >Die gesendete Daten sind die Differenz zur letzten Übermittlung, was zu einem negativen Wert in den Metrikdaten führen kann.
@@ -246,7 +248,7 @@ Damit die Adobe Experience Cloud nach Versand der Nachrichten durch Adobe Campai
    ![](assets/webanalytics_delivery_properties_003.png)
 
 1. Öffnen Sie die Versandeigenschaften.
-1. Wählen Sie im Tab **[!UICONTROL Web Analytics]** das zuvor erstellte externe Konto aus. Siehe [2. Schritt: Externes Konto in Adobe Campaign erstellen](#step-2--create-the-external-account-in-campaign).
+1. Wählen Sie im Tab **[!UICONTROL Web Analytics]** das zuvor erstellte externe Konto aus. Refer to [Step 2: Create the external account in Campaign](#step-2--create-the-external-account-in-campaign).
 
    ![](assets/webanalytics_delivery_properties_002.png)
 
