@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d80e3d47b06b7a03974d9cfdd465861b3c5bcf81
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
 workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 9%
@@ -69,7 +69,7 @@ Im Folgenden finden Sie eine Liste bewährter Verfahren und Artikel zur Lieferba
 * IP-Ruf: Wenn der IP-Ruf nicht gut genug ist, wirkt sich dies auf die Leistung aus. Das **Lieferbarkeitsüberwachungsmodul** Angebot verschiedene Tools zur Verfolgung der Leistung Ihrer Plattform. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/monitoring-deliverability.md).
 * IP-Aufwärmen: die IP-Aufwärmphase wird vom Zustellteam durchgeführt. Dazu gehört die schrittweise Erhöhung der Anzahl der E-Mails durch neue IPs über einen Zeitraum von einigen Wochen.
 * IP-Affinität einrichten: Bei einer falschen IP-Affinität-Einrichtung können die E-Mails ganz gestoppt werden (falscher Operator-/Affinität-Name in der Konfiguration) oder der Durchsatz reduziert werden (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im Bericht zum [Datendurchsatz](../../reporting/using/delivery-reports.md#delivery-throughput) die Anzahl der Byte, die stündlich übertragen wurden.
+* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im Bericht zum [Datendurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der Byte, die stündlich übertragen wurden.
 * Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinflussen. Die MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
 * Umfang der Personalisierung: Wenn ein Versand in &quot;Personalisierung in Bearbeitung&quot;bleibt, überprüfen Sie das in Gestaltungsbausteinen verwendete JavaScript.
 
