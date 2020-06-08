@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1686'
 ht-degree: 100%
 
 ---
@@ -91,8 +91,6 @@ So erstellen Sie das Diagramm
 >[!CAUTION]
 >
 >Sie können Aktivitäten innerhalb eines Workflows kopieren und einfügen. Wir raten jedoch davon ab, Aktivitäten über verschiedene Workflows hinweg zu kopieren und einzufügen. Einige Einstellungen, die Aktivitäten wie Sendungen und Planung betreffen, können zu Konflikten und Fehlern beim Ausführen des Ziel-Workflows führen. Stattdessen empfehlen wir, Workflows zu **duplizieren**. Weitere Informationen finden Sie unter [Workflows duplizieren ](#duplicating-workflows).
-
-### Zusätzliche Darstellungsoptionen {#additional-layout-options}
 
 Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Elemente angepasst werden:
 
