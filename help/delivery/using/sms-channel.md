@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
 workflow-type: tm+mt
-source-wordcount: '3368'
-ht-degree: 100%
+source-wordcount: '3273'
+ht-degree: 93%
 
 ---
 
@@ -41,38 +41,13 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 
 1. ein externes Konto mit Angabe des Connectors und des Nachrichtentyps;
 
-   Die verfügbaren Connectoren sind NetSize, allgemeines SMPP (SMPP Version 3.4 mit Binärmodus-Unterstützung), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und erweitertes allgemeines SMPP.
+   Beachten Sie, dass folgende Connectors ab Version 20.2 nicht mehr unterstützt werden: NetSize, Generic SMPP (SMPP Version 3.4 unterstützt Binärmodus), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und iOS. Veraltete Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
 
 1. eine Versandvorlage, die auf das externe Konto Bezug nimmt.
 
-### Aktivierung eines externen Kontos {#activating-an-external-account}
-
-Die Liste der externen Konten finden Sie im Navigationsbaum des Adobe-Campaign-Explorer über den Knoten **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]**.
-
-* Klicken Sie beispielsweise auf das Standardkonto **[!UICONTROL Routing auf Mobiltelefone durch NetSize]**.
-* Aktivieren Sie im Tab **[!UICONTROL Allgemein]** die Option **[!UICONTROL Aktiviert]**.
-
-   ![](assets/s_user_external_account_01.png)
-
-* Stellen Sie sicher, dass im Feld **[!UICONTROL Kanal]** die Option **[!UICONTROL Mobiltelefon]** angezeigt wird.
-* Wählen Sie im Tab **[!UICONTROL Mobiltelefon]** einen Connector aus der Dropdown-Liste aus: NetSize, Allgemeines SMPP, Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2, Erweitertes allgemeines SMPP. Weitere Informationen zum Connector „Erweitertes allgemeines SMPP“ finden Sie im Abschnitt [Erstellen eines externen SMPP-Kontos](#creating-an-smpp-external-account).
-
-   ![](assets/s_user_external_account_connect_01.png)
-
-* Konfigurieren Sie den Connector mit den von Ihrem Provider angegebenen Informationen. Im unten stehenden Beispiel handelt es sich bei dem Provider um NetSize.
-
-   ![](assets/s_user_external_account_param.png)
-
-* Behalten Sie im **[!UICONTROL Connector]**-Tab den Standard-Aktivierungsmodus **[!UICONTROL Web-Service-Aufruf]** bei.
-
-   ![](assets/s_user_external_account_param_02.png)
-
-* Wenn der Tab **[!UICONTROL Connector]** angezeigt wird, geben Sie die Zugriffs-URL für den Connector an. Die Adresse muss in **netsize.jsp** enden, wenn Ihr Provider NetSize ist. Bei allen anderen Connectoren endet die URL-Adresse in **smpp34.jsp**.
-
 ### Erstellen eines externen SMPP-Kontos {#creating-an-smpp-external-account}
 
-Wenn Sie das SMPP-Protokoll verwenden möchten, können Sie auch ein neues externes Konto erstellen.
-
+Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr SMPP-Externe Konto erstellen.
 Weitere Informationen zum SMS-Protokoll und zu den Einstellungen finden Sie in dieser [Technote](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Gehen Sie dazu wie folgt vor:
@@ -87,7 +62,11 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/extended_smpp_connector.png)
 
-   Mit der Option **[!UICONTROL Ausführliche SMPP-Protokolle in der Protokolldatei aktivieren]** können Sie den gesamten SMPP-Traffic in Logdateien speichern. Diese Option muss aktiviert sein, um eine Fehlerbehebung beim Connector durchzuführen und einen Vergleich mit dem vom Provider aufgezeichneten Traffic anzustellen.
+   >[!CAUTION]
+   >
+   > Ab Version 20.2 werden ältere Connectors nicht mehr unterstützt. Es wird empfohlen, den **[!UICONTROL erweiterten generischen SMPP]** -Connector zu verwenden. Weitere Informationen zum Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+
+1. Mit der Option **[!UICONTROL Ausführliche SMPP-Protokolle in der Protokolldatei aktivieren]** können Sie den gesamten SMPP-Traffic in Logdateien speichern. Diese Option muss aktiviert sein, um eine Fehlerbehebung beim Connector durchzuführen und einen Vergleich mit dem vom Provider aufgezeichneten Traffic anzustellen.
 
 1. Wenden Sie sich an Ihren SMS-Dienstleister. Dieser kann Ihnen die für das externe Konto erforderlichen Angaben auf dem Tab **[!UICONTROL Verbindungsparameter]** bereitstellen.
 
@@ -378,6 +357,7 @@ Die Empfänger sind in der Tabelle **[!UICONTROL Adressen unzustellbarer Sendung
 
 Wenn Sie mehrere externe Konten mit dem Connector „Erweitertes allgemeines SMPP“ mit demselben Provider-Konto haben, kann das folgende Problem auftreten: Wenn Sie eine Antwort an eine Kurzwahlnummer senden, kann sie auf einer Ihrer externen Kontoverbindungen empfangen werden. Folglich ist die automatische Antwort, die gesendet wird, möglicherweise nicht die erwartete Nachricht.
 Um dies zu vermeiden, wenden Sie je nach verwendetem Provider eine der folgenden Lösungen an:
+
 * Erstellen Sie für jedes externe Konto ein Provider-Konto.
 * Verwenden Sie das Feld **[!UICONTROL Systemtyp]** im Tab **[!UICONTROL Mobiltelefon]** > **[!UICONTROL Verbindungsparameter]**, um jede Kurzwahlnummer zu unterscheiden. Bitten Sie Ihren Provider um einen anderen Wert für jedes Konto.
 
@@ -393,19 +373,19 @@ Um den SMS-Kanal zu nutzen, muss in der Versandvorlage der entsprechende Connect
 
 Wir empfehlen Ihnen, nicht die native Versandvorlage zu ändern, sondern diese zu duplizieren und die Kopie nach Bedarf zu konfigurieren.
 
-Im folgenden Beispiel wird eine Vorlage erstellt, die dem Versand von Nachrichten mithilfe des zuvor aktivierten NetSize-Kontos dient. Gehen Sie dazu wie folgt vor:
+Im folgenden Beispiel erstellen wir eine Vorlage, um Nachrichten über das zuvor aktivierte SMPP-Konto zu senden. Gehen Sie dazu wie folgt vor:
 
 1. Markieren Sie den **[!UICONTROL Versandvorlagen]**-Knoten.
 1. Klicken Sie mit der rechten Maustaste auf die Vorlage **[!UICONTROL Versand auf Mobiltelefone]** und wählen Sie die Option **[!UICONTROL Duplizieren]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Ändern Sie den Vorlagentitel.
+1. Ändern Sie die Beschriftung der Vorlage, z. B. **Sent to mobiles (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie im Tab **[!UICONTROL Allgemein]** einen Routingmodus, der einem von Ihnen konfigurierten externen Konto entspricht, z. B. **[!UICONTROL Routing auf Mobiltelefone durch NetSize]**.
+1. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Allgemein]** &quot;einen Routing-Modus, der dem Externe Konto entspricht, das Sie in den vorherigen Schritten erstellt haben.
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -426,7 +406,7 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 >Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
-1. Wählen Sie die zuvor erstellte Versandvorlage **[!UICONTROL Mobiltelefon-Versand (NetSize)]** aus. Lesen Sie diesbezüglich auch den Abschnitt [Versandvorlagen ändern](#changing-the-delivery-template).
+1. Select the delivery template **Sent to mobiles (SMPP)** that you created earlier. Lesen Sie diesbezüglich auch den Abschnitt [Versandvorlagen ändern](#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -488,7 +468,7 @@ Die Schaltfläche **[!UICONTROL Eigenschaften]** gibt Zugriff auf erweiterte Ver
 
 Folgende Optionen stehen zur Verfügung:
 
-* **Absender** (nur bei NetSize- und SMPP-Connectoren): ermöglicht die Personalisierung des Absendernamens eines Versands mit einer alphanumerischen Zeichenkette von maximal 11 Zeichen. Das Feld darf nicht nur Ziffern enthalten. Es besteht die Möglichkeit, eine Bedingung zu erstellen, die beispielsweise in Abhängigkeit von der Ländervorwahl des Empfängers unterschiedliche Absender anzeigt:
+* **Absenderadresse**: ermöglicht die Personalisierung des Versand-Senders mit einer Zeichenfolge aus alphanumerischen Zeichen, die auf elf Zeichen begrenzt ist. Das Feld darf nicht ausschließlich aus Zahlen bestehen. Sie können eine Bedingung definieren, die beispielsweise je nach Bereichscode des Empfängers unterschiedliche Namen anzeigt:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
