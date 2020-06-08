@@ -14,8 +14,11 @@ discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '1702'
+ht-degree: 100%
 
 ---
 
@@ -251,9 +254,9 @@ Gehen Sie wie folgt vor:
 
    ![](assets/mkg_dist_subscribe_step1.png)
 
-   Konfigurieren Sie die verfügbaren Parameter und bestätigen Sie die Bestellung.
+1. Konfigurieren Sie die verfügbaren Parameter und bestätigen Sie die Bestellung.
 
-   Der Verantwortliche der der bestellenden Lokalstelle übergeordneten Organisationseinheit wird per E-Mail zur Validierung der Bestellung aufgefordert.
+1. Der Verantwortliche der der bestellenden Lokalstelle übergeordneten Organisationseinheit wird per E-Mail zur Validierung der Bestellung aufgefordert.
 
    ![](assets/mkg_dist_subscribe_step3.png)
 
