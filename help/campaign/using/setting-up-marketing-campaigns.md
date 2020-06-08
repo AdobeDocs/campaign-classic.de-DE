@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1268'
 ht-degree: 100%
 
 ---
@@ -145,10 +145,6 @@ Geben Sie in diesem Tab die geplanten Ausführungsdaten der Kampagnen auf der Ba
 
 ![](assets/s_ncs_user_op_template_recur_planning.png)
 
-Mithilfe des Ausführungsplanungs-Assistenten können Sie automatisch alle Ausführungsdaten ausfüllen lassen. Klicken Sie hierzu auf den Link **[!UICONTROL Ausführungsplanung ergänzen...]** oberhalb der Tabelle.
-
-![](assets/s_ncs_user_op_template_recur_planning_wz.png)
-
 Der Konfigurationsmodus der Ausführungsplanung entspricht dem der Workflow-Aktivität **[!UICONTROL Planung]**. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
@@ -179,6 +175,7 @@ Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten
 
    * **[!UICONTROL Zu validieren]**: forciert den Versand der Validierungsanfragen für die im Workflow vorgesehenen Sendungen;.
    * **[!UICONTROL Zu starten]**: startet den Workflow automatisch bei Erreichen des geplanten Startdatums.
+
    Das Feld **[!UICONTROL Im Voraus erstellen für]** ermöglicht es, alle Workflows für den angegebenen Zeitraum zu erstellen.
 
    Bei Ausführung des **[!UICONTROL Kampagnenvorgänge]**-Workflows werden die dedizierten Workflows entsprechend der zuvor festgelegten Kampagnenplanung erstellt, d. h. ein Workflow für jedes Ausführungsdatum.
