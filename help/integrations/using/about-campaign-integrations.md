@@ -12,10 +12,10 @@ discoiquuid: 0af1fd96-48ef-43c9-a03b-0f9a6e0e02fe
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
-workflow-type: ht
-source-wordcount: '840'
+translation-type: tm+mt
+source-git-commit: e488e1771fe4d07132844900f41f5f4f09fa9438
+workflow-type: tm+mt
+source-wordcount: '780'
 ht-degree: 100%
 
 ---
@@ -99,10 +99,6 @@ Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe
   <tr> 
    <td> <strong>Adobe Analytics – Data Connector</strong><br /> </td> 
    <td> Der <strong>Data Connector</strong> (vormals Adobe-Genesis-Connector) ermöglicht Adobe Campaign und Adobe Analytics die Interaktion über Segmente zum Nutzerverhalten nach einer E-Mail-Kampagne. Im Gegenzug werden Indikatoren und Attribute von E-Mail-Kampagnen von Adobe Campaign an Adobe Analytics – Data Connector gesendet.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Informationen</a> zur Integration von Campaign mit Data Connector.</p><br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <strong>Adobe Campaign Standard</strong> (Prime-Angebot)<br /> </td> 
-   <td> Ermöglicht die Replikation von Daten nach <strong>Campaign Standard</strong>, wodurch die Vorzüge beider Anwendungen genutzt werden können. Campaign Classic v7 verfügt über fortschrittliche Tools zur Verwaltung der primären Marketing-Datenbank. Durch die Replikation der Daten von Campaign Classic v7 können diese in der benutzerfreundlichen Umgebung von Campaign Standard verwendet werden.<br /><p> <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Informationen</a> zur Integration von Adobe Campaign Classic mit Adobe Campaign Standard.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
