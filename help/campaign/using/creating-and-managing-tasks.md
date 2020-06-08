@@ -14,8 +14,11 @@ discoiquuid: d71e5ff7-1e81-4c49-9673-c6fae890029b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
+workflow-type: tm+mt
+source-wordcount: '3905'
+ht-degree: 100%
 
 ---
 
@@ -274,10 +277,10 @@ Im Zusammenhang mit einer Kampagne können spezifische Aufgaben erstellt werden.
 
 Folgende Arten von Aufgaben können geplant werden:
 
-* **[!UICONTROL Kontrollaufgabe]**, siehe [Kontrollaufgaben ](#control-tasks),
-* **[!UICONTROL Aufgabe zur Erstellung einer Marketing-Ressource]**, siehe [Gruppierungsaufgaben](#grouping-task),
-* **[!UICONTROL Gruppierungsaufgabe]**, siehe [Gruppierungsaufgaben](#grouping-task),
-* **[!UICONTROL Benachrichtigungsaufgabe]**, siehe [Benachrichtigungsaufgaben](#notification-task).
+* [Kontrollaufgaben](#control-tasks),
+* [Gruppierungsaufgaben](#grouping-task),
+* [Gruppierungsaufgaben](#grouping-task),
+* [Benachrichtigungsaufgaben](#notification-task).
 
 >[!NOTE]
 >
@@ -441,6 +444,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
