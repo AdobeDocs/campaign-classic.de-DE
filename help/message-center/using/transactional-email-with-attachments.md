@@ -12,11 +12,11 @@ discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 24a50fcaad4d9081e5504652eb5b73aa7db1e65f
-workflow-type: ht
-source-wordcount: '563'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
+workflow-type: tm+mt
+source-wordcount: '632'
+ht-degree: 89%
 
 ---
 
@@ -45,6 +45,10 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 * Wenn der Anhang mit einer Transaktion verknüpft ist (wie im oben beschriebenen Beispiel), kann er dynamische Daten enthalten, die im Laufe des Kundenprozesses generiert werden.
 * Das Anhängen von PDF-Dateien erhöht die Sicherheit, da Sie diese verschlüsseln und über HTTPS senden können.
 
+>[!NOTE]
+>
+>Um Leistungsprobleme zu vermeiden, sollten Bilder, die Sie direkt von einer personalisierten URL als Anlage herunterladen, standardmäßig nicht mehr als 100.000 Byte umfassen. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
+
 ## Empfehlungen   {#important-notes}
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
@@ -53,6 +57,10 @@ Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sor
 * Da es außerhalb von Adobe keinen direkten Zugriff auf die Transaktionsnachricht-Instanzen oder Server gibt, ist keine Standardmethode zum Übertragen solcher Dateien auf diese Server verfügbar (kein FTP-Zugriff).
 * Laut Vertrag darf der Speicherplatz in Transaktionsnachricht-Instanzen nicht zum Speichern beliebiger Dateitypen verwendet werden, auch nicht für Anhänge.
 * Sie müssen zum Hosten dieser Dateien ein anderes Online-Speichersystem verwenden. Sie benötigen FTP-Zugriff auf das System und müssen Dateien schreiben und löschen können.
+
+>[!NOTE]
+>
+>Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail einzuschließen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
 
 ## Implementierung{#implementation}
 
