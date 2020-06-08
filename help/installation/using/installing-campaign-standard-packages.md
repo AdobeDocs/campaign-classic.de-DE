@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: efef031d9c662daac6634ff7cc0d05d9d512443b
+source-git-commit: e059fc9e2bfade30454601f31990c3ec14b8a847
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 14%
 
 ---
 
@@ -34,17 +37,17 @@ Pakete sind eine Reihe von Funktionen, die je nach Bedarf installiert werden kö
 
 So installieren Sie ein Standardpaket:
 
-1. Greifen Sie über **[!UICONTROL Tools > Advanced > Package import...]** die Adobe Campaign-Client-Konsole auf den Package Import-Assistent zu.
-1. Auswählen **[!UICONTROL Install a standard package]**.
+1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package-Import...]** in der Adobe-Campaign-Clientkonsole auf den Package-Import-Assistenten zu.
+1. Wählen Sie **[!UICONTROL Standard-Package installieren]** aus.
 1. Überprüfen Sie in der Liste, die angezeigt wird, die zu installierenden Pakete.
    >[!NOTE]
    >
    >Wenn ein Paket ausgegraut ist, können Sie es nicht installieren. Dies bedeutet, dass diese bereits installiert ist oder nicht mit Ihrer Instanz kompatibel ist. Beispielsweise können Sie das **Mid-Sourcing-Plattformpaket** nicht auf einer Marketing-Instanz installieren. Diese Informationen finden Sie in der unten stehenden Tabelle.
-1. Klicken Sie auf **[!UICONTROL Next]** und dann **[!UICONTROL Start]** , um die Paketinstallation Beginn.
+1. Klicken Sie auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um die Package-Installation zu starten.
 
-   Sobald die Pakete installiert sind, wird in der Fortschrittsleiste **100%** angezeigt. Die folgende Meldung wird in den Installationsprotokollen angezeigt: **[!UICONTROL Installation of packages successful]**.
+   Sobald die Packages installiert sind, wird in der Fortschrittsleiste **100 %** angezeigt. Folgende Meldung wird in den Installationsprotokollen angezeigt: **[!UICONTROL Die Installation der Packages wurde erfolgreich beendet]**.
 
-1. **[!UICONTROL Close]** das Installationsfenster.
+1. **[!UICONTROL Schließen]** Sie das Installationsfenster.
 
 Die Pakete sind jetzt installiert.
 
@@ -56,7 +59,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
  <thead> 
   <tr> 
    <th> Paket </th> 
-   <th> Description </th> 
+   <th> Beschreibung </th> 
    <th> Instanzentyp </th> 
    <th> Weitere Informationen </th> 
   </tr> 
@@ -66,7 +69,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
    <td> Versand<br /> </td> 
    <td> Überwacht Versand und eventuell aufgetretene Probleme beim Senden von Nachrichten.<br /> </td> 
    <td> Alle</td> 
-   <td> <a href="../../delivery/using/monitoring-a-delivery.md">mehr dazu</a></td> 
+   <td> <a href="../../delivery/using/monitoring-a-delivery.md">Mehr dazu</a></td> 
   </tr> 
   <tr> 
    <td> Marketing-Kampagnen (Kampagne)<br /> </td> 
@@ -124,34 +127,28 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
   </tr> 
   <tr> 
    <td> LINE-Kanal<br /> </td> 
-   <td> Sendet Versand mithilfe des LINE-Kanals mit Adobe Campaign,<br /> </td> 
+   <td> Sendet Versand mit dem LINE-Kanal mit Adobe Campaign,<br /> </td> 
    <td> Alle<br /> </td> 
    <td> Optional, Meldungscenter obligatorisch</td> 
   </tr> 
   <tr> 
    <td> Direct Mail channel<br /> </td> 
-   <td> Sendet Versand mit dem Direct-Mail-Kanal mit Adobe Campaign.<br /> </td> 
+   <td> Sendet Versand mit dem Direct Mail-Kanal mit Adobe Campaign.<br /> </td> 
    <td> Alle<br /> </td> 
    <td> Optional, <a href="../../delivery/using/about-direct-mail-channel.md">weitere Informationen</a> </td> 
   </tr> 
   <tr> 
    <td> Mobile-Kanal (SMS) <br /> </td> 
-   <td> Sendet Versand mit dem Mobile/SMS-Kanal mit Adobe Campaign.<br /> </td> 
+   <td> Sendet Versand mit dem Mobile/SMS Kanal mit Adobe Campaign.<br /> </td> 
    <td> Alle<br /> </td> 
    <td> Optional, <a href="../../delivery/using/sms-channel.md">weitere Informationen</a> </td> 
   </tr> 
   <tr> 
    <td> Telefonischer Kanal<br /> </td> 
-   <td> Sendet Versand mit dem Telefonnummer-Kanal mit Adobe Campaign.<br /> </td> 
+   <td> Sendet Versand mit dem Telefonnummer Kanal mit Adobe Campaign.<br /> </td> 
    <td> Alle<br /> </td> 
    <td> Optional</td> 
-  </tr> 
-  <tr> 
-   <td> Fax-Kanal<br /> </td> 
-   <td> Sendet Versand mit dem Fax-Kanal mit Adobe Campaign.<br /> </td> 
-   <td> Alle<br /> </td> 
-   <td> Optional</td> 
-  </tr> 
+  </tr>
   <tr> 
    <td> Mobile-App-Kanal (Mobile App Channel)<br /> </td> 
    <td> Verwendet die Adobe Campaign-Plattform, um personalisierte Benachrichtigungen über Apps an iOS- und Android-Terminals zu senden. <br /> </td> 
@@ -198,7 +195,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
    <td> Zustellbarkeits-Monitoring (Email Deliverability)<br /> </td> 
    <td> Measures the success of your campaigns reaching your recipients' inbox without bouncing, or being marked as spam.<br /> </td> 
    <td> Alle </td> 
-   <td> Optional, <a href="https://docs.campaign.adobe.com/doc/AC/getting_started/EN/deliverability.html">weitere Informationen</a> </td> 
+   <td> Optional, <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html">weitere Informationen</a> </td> 
   </tr> 
   <tr> 
    <td> Gutscheinverwaltung<br /> </td> 
@@ -252,7 +249,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
    <td> Datenschutzbestimmung<br /> </td> 
    <td> Enthält zusätzliche Funktionen, die Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen in Campaign Classic helfen.<br /> </td> 
    <td> Alle</td> 
-   <td> <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html">Mehr erfahren</a> </td> 
+   <td> <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Mehr erfahren</a> </td> 
   </tr> 
   <tr> 
    <td> Transfer to Mid-Sourcing <br /> </td> 
@@ -268,7 +265,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
-   <td> Brilliert Adobe Campaign v7 und Adobe Campaign Standard. Es handelt sich um eine integrierte Funktion in Kampagne v7, die Daten automatisch an Campaign Standard repliziert und die besten beider Anwendungen zusammenführt. <br /> </td> 
+   <td> Bridges Adobe Campaign v7 and Adobe Campaign Standard. Es handelt sich um eine integrierte Funktion in Kampagne v7, die Daten automatisch an Campaign Standard repliziert und die besten beider Anwendungen zusammenführt. <br /> </td> 
    <td> Marketing </td> 
    <td> Optional, <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">weitere Informationen</a> </td> 
   </tr> 
@@ -279,14 +276,14 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
 
 Um einen Versand-Kanal hinzuzufügen (Mobile Kanal, Mobile App Kanal usw.), muss dieser vor der Installation des Message Center-Pakets ausgeführt werden. Wenn Sie ein Message Center-Projekt auf dem E-Mail-Kanal gestartet haben und sich dann mitten im Projekt entscheiden, einen neuen Kanal hinzuzufügen, müssen Sie folgende Schritte ausführen:
 
-1. Installieren Sie den gewünschten Kanal, z. B. den **Mobile Kanal**, mit dem Package Import-Assistent ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
-1. Importieren Sie die Datei ( **[!UICONTROL Tools > Advanced > Import package > File]**) und wählen Sie:
+1. Install the channel you wish, for example the **Mobile channel**, using the package import wizard ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
+1. Importieren Sie die Datei (&quot; **[!UICONTROL Extras&quot;> &quot;Erweitert&quot;> &quot;Paket importieren&quot;> &quot;Datei]**&quot;) und wählen Sie:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. Behalten Sie im **[!UICONTROL XML data content to import]** Menü nur die Message Center-Versandvorlage bei, die dem angehängten Kanal entspricht. Wenn Sie beispielsweise den **Mobile Kanal** hinzugefügt haben, sollten Sie nur das **Entitätselement** beibehalten, das der Vorlage (smsTriggerMessage) entspricht **[!UICONTROL Mobile transactional message]** . Wenn Sie den **Mobile App Kanal** hinzugefügt haben, sollten Sie nur die **iOS-Transaktionsnachrichten** -Vorlagen (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) beibehalten.
+1. Behalten Sie im zu importierenden **[!UICONTROL XML-Dateninhalt nur die Message Center-Versandvorlage bei, die dem angehängten Kanal entspricht]**. Wenn Sie beispielsweise den **Mobile-Kanal** hinzugefügt haben, sollten Sie nur das **Entitätselement** beibehalten, das der Vorlage für die **[!UICONTROL Mobile-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile App Kanal** hinzugefügt haben, sollten Sie nur die **iOS-Transaktionsnachrichten** -Vorlagen (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) beibehalten.
 
    ![](assets/messagecenter_install_channel.png)
 
