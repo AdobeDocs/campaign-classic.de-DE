@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 631e29bd6e59b8ae46084dee3a1d470916a2032b
+source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+workflow-type: tm+mt
+source-wordcount: '7852'
+ht-degree: 10%
 
 ---
 
@@ -1534,6 +1537,12 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
+   <td> signEmailLinks<br /> </td> 
+   <td> Aktivieren Sie den Signaturmechanismus. Dadurch wird die Sicherheit bei der Verfolgung von Links in E-Mails verbessert.<br /> </td> 
+   <td> Boolesch<br /> </td> 
+   <td> true<br /> </td> 
+  </tr>
+  <tr> 
    <td> statServerAddress<br /> </td> 
    <td> Adresse des Versand-Statistikservers, angegeben als &lt;dns oder ip&gt; [: 
      &lt;Anschluss&gt; ]. Siehe <a href="../../installation/using/email-deliverability.md#coordinates-of-the-statistics-server" target="_blank">Koordinaten des Statistikservers</a>. 
@@ -1866,7 +1875,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden](../../install
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> Zugehörige öffentliche Adresse-ID. Wird als Schlüssel für den Statistikserver verwendet. Muss numerisch sein. See this <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">section</a>.<br /> </td> 
+   <td> Zugehörige öffentliche Adresse-ID. Wird als Schlüssel für den Statistikserver verwendet. Muss numerisch sein. Siehe diesen <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">Abschnitt</a>.<br /> </td> 
    <td> lang<br /> </td> 
   </tr> 
   <tr> 
@@ -2427,7 +2436,7 @@ Hier sind die verschiedenen Parameter des **STAT** Knotens. Dies ist die Konfigu
   </tr> 
   <tr> 
    <td> port<br /> </td> 
-   <td> Server-Listening-Anschluss. See this <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">section</a>.<br /> </td> 
+   <td> Server-Listening-Anschluss. Siehe diesen <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">Abschnitt</a>.<br /> </td> 
    <td> Short<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -2544,6 +2553,12 @@ Hier sind die verschiedenen Parameter des **Tracking** -Knotens. Dies ist die Ko
    <td> false<br /> </td> 
   </tr> 
   <tr> 
+   <td> blockRedirectForUnsignedTrackingLink<br /> </td> 
+   <td> Deaktivieren Sie aus vorherigen Builds generierte fehlerhafte URLs.<br /> </td> 
+   <td> Boolesch<br /> </td> 
+   <td> false<br /> </td> 
+  </tr> 
+  <tr> 
    <td> ConsolidationPeriodSec<br /> </td> 
    <td> Konsolidierungszeitraum<br /> </td> 
    <td> lang<br /> </td> 
@@ -2596,6 +2611,18 @@ Hier sind die verschiedenen Parameter des **Tracking** -Knotens. Dies ist die Ko
    <td> Speicherverbrauchswarnung: Warnhinweis über die Menge des von einem bestimmten Prozess verbrauchten Arbeitsspeichers (in MB).<br /> </td> 
    <td> lang<br /> </td> 
    <td> 1600<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceAPIKey<br /> </td> 
+   <td> API-Schlüssel für die Phishbowl Service Endpoint-Integration. Dadurch wird die Umleitung von fehlerhaften URLs, die aus älteren Builds generiert wurden, geschützt. <br /> </td> 
+   <td> lang<br /> </td> 
+   <td> <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> phishbowlServiceEndpoint<br /> </td> 
+   <td> Endpunkt für die Phishbowl Service Endpoint-Integration. Dadurch wird die Umleitung von fehlerhaften URLs, die aus älteren Builds generiert wurden, geschützt.<br /> </td> 
+   <td> lang<br /> </td> 
+   <td> <br /> </td> 
   </tr> 
   <tr> 
    <td> processRestartTime<br /> </td> 
