@@ -14,8 +14,11 @@ discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
+workflow-type: tm+mt
+source-wordcount: '1266'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +79,7 @@ Im Folgenden wird anhand der Änderung eines einzelnen Datensatzes gezeigt, dass
 
 Marketer können die umfassenden von Campaign v7 replizierten Profile und Dienste in Campaign Standard nutzen. Die folgende Anleitung zeigt, wie eine Abfrage zu einem Campaign-Standard-Workflow hinzugefügt wird und mit der replizierten Datenbank genutzt wird.
 
-Weiterführende Informationen und die vollständige Anleitung zu Campaign Standard-Workflows finden Sie im Abschnitt [Workflows](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
+Weiterführende Informationen und die vollständige Anleitung zu Campaign Standard-Workflows finden Sie im Abschnitt [Workflows](../../workflow/using/about-workflows.md).
 
 1. Gehen Sie zu Campaign Standard und wählen Sie **[!UICONTROL Marketingaktivitäten]** aus.
 1. Wählen Sie rechts oben **[!UICONTROL Erstellen]** aus.
@@ -100,7 +103,7 @@ Weiterführende Informationen und die vollständige Anleitung zu Campaign Standa
 
 Marketer können mit einer Campaign v7-Webanwendung verifizieren, dass die Entscheidung eines Empfängers, sich von einem Dienst abzumelden, an die Datenbank von Campaign v7 gesendet wurde. Nachdem der Empfänger auf den Abmelde-Link geklickt hat, wird die Entscheidung, diesen Dienst nicht mehr in Anspruch zu nehmen, von Campaign v7 nach Campaign Standard repliziert. Weitere Informationen finden Sie unter [Abmelde-Link ändern](#changing-the-unsubscription-link).
 
-Folgen Sie den unten beschriebenen Schritten, um einem bestehenden Workflow einen E-Mail-Versand hinzuzufügen, wobei der Abmeldedienst in Campaign v7 erstellt wird. Weiterführende Informationen und eine vollständige Anleitung zu Campaign-Standard-Workflows finden Sie in diesem [Dokument](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/managing-processes-and-data/about-workflows-and-data-management/workflow-data-and-processes.html).
+Folgen Sie den unten beschriebenen Schritten, um einem bestehenden Workflow einen E-Mail-Versand hinzuzufügen, wobei der Abmeldedienst in Campaign v7 erstellt wird. Weiterführende Informationen und eine vollständige Anleitung zu Campaign-Standard-Workflows finden Sie in diesem [Dokument](../../workflow/using/about-workflows.md).
 
 >[!NOTE]
 >
