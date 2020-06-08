@@ -14,11 +14,11 @@ discoiquuid: da60b9ca-4b51-4bff-affc-2b12c576973a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 090ec1f9b30c8548075493757b814a8bb40bea30
-workflow-type: ht
-source-wordcount: '2444'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+workflow-type: tm+mt
+source-wordcount: '2453'
+ht-degree: 99%
 
 ---
 
@@ -110,7 +110,7 @@ Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campa
 Die folgenden Kanäle können konfiguriert werden:
 
 * [Email](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Mobiltelefon (SMS)](../../delivery/using/sms-channel.md#activating-an-external-account).
+* [Mobiltelefon (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
 * [Phone](../../delivery/using/other-channels.md)
 * [Briefpost](../../delivery/using/about-direct-mail-channel.md)
 * [Agentur](../../delivery/using/other-channels.md)
@@ -157,6 +157,7 @@ Adobe Campaign bietet mehrere Connectors, mit denen Sie mit externen Anwendungen
 
 Die folgenden Verbindungstypen können konfiguriert werden:
 
+* Azurblauer Synapse. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
 * Oracle. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
 * Netezza. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
 * SAP HANA. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
