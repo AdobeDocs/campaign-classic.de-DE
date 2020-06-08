@@ -14,8 +14,11 @@ discoiquuid: 8f413002-bd32-426f-88b9-44cefae68593
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+translation-type: tm+mt
+source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 97%
 
 ---
 
@@ -25,6 +28,10 @@ source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
 Adobe Campaign ermöglicht Ihnen, das Tracking des Verhaltens von Endbenutzern im Web zu stoppen, die sich vom Tracking mittels Cookies oder Web-Beacons abmelden. Die Funktion bietet auch die Möglichkeit, dem Endbenutzer ein Banner mit dieser Option anzuzeigen. Diese Banner können zu Webanwendungen oder Landingpages hinzugefügt werden.
 
 Wenn sich ein Endbenutzer entscheidet, das Verhaltens-Tracking per Cookies oder Web-Beacons zu deaktivieren, wird diese Information mit JavaScript-APIs an den Adobe Campaign-Trackingserver gesendet. Beachten Sie, dass in manchen Ländern gesetzlich vorgeschrieben ist, dass Kunden den Endbenutzern eine Anmeldemöglichkeit bereitstellen müssen, bevor sie eine Abmeldemöglichkeit anbieten können (bzw. andere gesetzliche Anforderungen bestehen) und dass es in der Verantwortung des Kunden liegt, diese Gesetze einzuhalten.
+
+>[!NOTE]
+>
+>Bei der Skripterstellung befolgen Sie stets die in der Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#dev)beschriebenen Richtlinien.
 
 ## Banner konfigurieren {#configuring-the-banner-}
 
