@@ -14,17 +14,20 @@ discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+translation-type: tm+mt
+source-git-commit: 1486e897a125520c51661db3030c62ab380fb173
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 62%
 
 ---
 
 
 # Vorlagenpublikation{#template-publication}
 
-Nach der Erstellung der Nachrichtenvorlage auf der Kontrollinstanz ist diese auf allen Ausführungsinstanzen zu publizieren. Hierbei werden automatisch jeweils zwei Nachrichtenvorlagen auf den Ausführungsinstanzen erstellt, die dem Versand in Echtzeit oder im Stapel (Batch) dienen.
+Sobald die auf der Kontrollinstanz erstellte Nachrichtenvorlage abgeschlossen ist, können Sie sie auf allen Ausführungsinstanzen veröffentlichen. Mit der Veröffentlichung können Sie automatisch zwei Meldungsvorlagen auf der Ausführungsinstanz erstellen, mit denen Sie Nachrichten senden können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Nach jeder Änderung an der Vorlage muss diese erneut publizert werden, damit die Änderungen in den von der Ausführungsinstanz gesendeten Transaktionsnachrichten berücksichtigt werden.
 
@@ -34,15 +37,14 @@ Nach der Erstellung der Nachrichtenvorlage auf der Kontrollinstanz ist diese auf
 
 1. Gehen Sie in der Kontrollinstanz in den Knoten **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** des Navigationsbaums.
 1. Wählen Sie die auf den Ausführungsinstanzen zu publizierende Vorlage aus.
-1. Klicken Sie auf **[!UICONTROL Publizieren]** .
+1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Nach Abschluss der Publikation werden die beiden Vorlagen, die auf die Echtzeit- und Batch-Ereignisse angewendet werden, im Navigationsbaum der Ausführungsinstanz im Knoten **[!UICONTROL Administration > Betreibung > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** erstellt.
+Once publication is complete, both message templates to be applied to batch and real-time type events are created in the tree of the production instance in the **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** folder.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
 >[!NOTE]
 >
 >Wenn Sie ein bestehendes Feld der Transaktionsnachrichtenvorlage, wie z. B. die Adresse des Absenders, durch einen leeren Wert ersetzen, wird das entsprechende Feld in der/den Ausführungsinstanz(en) nicht aktualisiert, wenn die Transaktionsnachricht erneut publiziert wird. Es enthält weiterhin den vorherigen Wert. Wenn Sie jedoch einen nicht leeren Wert hinzufügen, wird das entsprechende Feld nach der nächsten Publikation wie gewohnt aktualisiert.
-
