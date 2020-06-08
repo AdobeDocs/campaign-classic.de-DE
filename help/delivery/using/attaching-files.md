@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: adb25307146847a1c49d9c548d00557e95562541
+source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 94%
+source-wordcount: '1056'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,13 @@ ht-degree: 94%
 
 ## Über E-Mail-Anhänge {#about-email-attachments}
 
-Ein E-Mail-Versand kann einen oder mehrere Anhänge aufweisen. Zwei Varianten stehen zur Auswahl:
+Sie können eine oder mehrere Dateien an einen E-Mail-Versand anhängen.
+
+>[!NOTE]
+>
+>Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail einzuschließen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
+
+Sie haben zwei Möglichkeiten:
 
 * Datei unverändert anhängen.
 * Datei für jeden Empfänger personalisieren. In diesem Fall ist die Erstellung eines **berechneten Anhangs** erforderlich. Der Titel des Anhangs wird für jede Nachricht zum Zeitpunkt des Versands berechnet und kann somit Empfänger-spezifisch sein. Wenn Sie über die Lizenz für **Variable Digital Printing** verfügen, können Sie die personalisierten Anhänge vor dem Senden in eine PDF-Datei umwandeln.
@@ -92,7 +98,7 @@ Wenn der Anhang eine lokale Datei ist, wählen Sie die Option **[!UICONTROL Date
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_01.png)
 
-   Nun kann die Datei als Anhang der auf dieser Vorlage beruhenden Sendungen verwendet werden.
+Nun kann die Datei als Anhang der auf dieser Vorlage beruhenden Sendungen verwendet werden.
 
 ### Personalisierte Nachricht anhängen {#attach-a-personalized-message}
 
@@ -120,6 +126,10 @@ Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_08.png)
 
+>[!NOTE]
+>
+>Um Leistungsprobleme zu vermeiden, sollten Bilder, die Sie direkt von einer personalisierten URL als Anlage herunterladen, standardmäßig nicht mehr als 100.000 Byte umfassen. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
+
 ### Berechnete Datei anhängen {#attach-a-calculated-file}
 
 Sie können den Namen des Anhangs während der Versandvorbereitung berechnen lassen. Wählen Sie dazu die Option **[!UICONTROL Dateiname wird bei der Versandanalyse berechnet (unabhängig vom Empfänger)]** aus.
@@ -131,7 +141,7 @@ Sie können den Namen des Anhangs während der Versandvorbereitung berechnen las
 1. Geben Sie den Titel an, der für den Anhang verwendet werden soll.
 1. Geben Sie den Pfad und den genauen Namen der Datei im Eingabefenster an.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Die Datei muss sich auf dem Server befinden.
 
@@ -156,7 +166,7 @@ Bei der Auswahl des Anhangs können Sie die Option **[!UICONTROL Dateiname wird 
 
    ![](assets/s_ncs_user_wizard_email_calc_attachement_010.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Die Datei muss sich auf dem Server befinden.
 
