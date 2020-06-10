@@ -69,7 +69,7 @@ Je nach ausgewählter Datenbank-Engine können die Serverkennungsinformationen v
 * Bei einer **PostgreSQL** - oder **DB2** -Engine müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver definiert ist, um auf den Datenbankserver zuzugreifen.
 * Für eine **Microsoft SQL Server** -Engine müssen Sie Folgendes definieren:
 
-   1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS\`<instance>`**(Instanzmodus),
+   1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS\ `<instance>`**(Instanzmodus),
    1. die Authentifizierungsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-Authentifizierung]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
