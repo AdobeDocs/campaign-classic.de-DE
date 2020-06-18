@@ -14,8 +14,11 @@ discoiquuid: acab51f3-686b-4d2b-bb02-8fbfae36b1ba
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 100%
 
 ---
 
@@ -47,8 +50,6 @@ Gesucht werden Empfänger zwischen 18 und 30 Jahre, die nicht in Berlin leben. G
 1. Starten Sie den Workflow. Im vorliegenden Beispiel enthält die Ergebnisliste alle Empfänger im Alter von 18 bis 30 Jahre, außer denen, die in Berlin leben. Diese werden in der Komplementliste gespeichert.
 
    ![](assets/exclusion_example.png)
-
-Ein Beispiel eines Ausschlussdatei-Imports mithilfe einer **Ausschlussaktivität** finden Sie im Abschnitt [Liste lesen](../../workflow/using/read-list.md).
 
 ## Eingabeparameter {#input-parameters}
 
