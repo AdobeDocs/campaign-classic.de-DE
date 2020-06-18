@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1909cc8640a32eb709187dab084778f03ef39118
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '3622'
-ht-degree: 6%
+source-wordcount: '3641'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ Im folgenden Abschnitt werden serverseitige Konfigurationen beschrieben, die ent
 >
 >Diese Konfigurationen müssen von Administratoren und nur für **lokale** Hostingmodelle durchgeführt werden.
 >
->Bei **gehosteten** Bereitstellungen können serverseitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch in der Systemsteuerung eingerichtet werden (z. B. IP-Whitelist oder URL-Berechtigungen).
+>Bei **gehosteten** Bereitstellungen können serverseitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch in der Systemsteuerung eingerichtet werden (z. B. IP-zulassungsliste-Verwaltung oder URL-Berechtigungen).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -215,7 +215,7 @@ Zuvor müssen Sie den Beginn konfigurieren, indem Sie die vordefinierte **[!UICO
 
 Diese Konfiguration erfolgt im Kampagne Explorer:
 
-1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** .
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Platform > Auflistungen]** .
 1. Wählen Sie die Auflistung **[!UICONTROL Sicherheitszone (securityZone)]** aus.
 
    ![](assets/enum_securityzone.png)
@@ -358,9 +358,9 @@ Bei **Hybrid** - und **On-Premise** -Hostmodellen muss der Administrator auf ein
 
 Es gibt drei Modi für den Verbindungsschutz:
 
-* **Blocking**: Alle URLs, die nicht auf der Whitelist stehen werden blockiert und eine Fehlermeldung wird angezeigt. Dies ist der Standardmodus nach einem Postupgrade.
-* **Permissive**: Alle URLs, die nicht auf der Whitelist stehen, sind erlaubt.
-* **Warnung**: Alle URLs, die nicht auf der Whitelist stehen, sind erlaubt, doch der JS-Interpreter gibt eine Warnung aus, sodass sie der Administrator erfassen kann. In diesem Modus werden Warnhinweise vom Typ JST-310027 hinzugefügt.
+* **Blockierung**: alle URLs, die nicht zur zulassungsliste gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach der Aktualisierung.
+* **Zulässig**: alle URLs, die nicht zur zulassungsliste gehören, sind zulässig.
+* **Warnung**: alle URLs, die nicht zur zulassungsliste gehören, sind zulässig, der JS-Interpreter gibt jedoch eine Warnung aus, sodass der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen für JST-310027 hinzugefügt.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,9 +372,9 @@ Es gibt drei Modi für den Verbindungsschutz:
 
 >[!IMPORTANT]
 >
->Standardmäßig verwendet der Client eines neuen Kunden den **Blockierungsmodus**. Wenn sie eine neue URL zulassen müssen, sollten sie sich mit ihrem Administrator in Verbindung setzen, um diese zu erstellen.
+>Standardmäßig verwendet der Client eines neuen Kunden den **Blockierungsmodus**. Wenn sie eine neue URL zulassen müssen, sollten sie sich an ihren Administrator wenden, um sie der zulassungsliste hinzuzufügen.
 >
->Vorhandene Kunden, die von einer Migration kommen, können den **Warnmodus** eine Weile lang verwenden. In der Zwischenzeit müssen sie den ausgehenden Traffic analysieren, bevor sie die URLs autorisieren. Sobald die Liste autorisierter URLs definiert ist, sollten sie sich an ihren Administrator wenden, um die URLs zu Whitelist und den **Blockierungsmodus** zu aktivieren.
+>Vorhandene Kunden, die von einer Migration kommen, können den **Warnmodus** eine Weile lang verwenden. In der Zwischenzeit müssen sie den ausgehenden Traffic analysieren, bevor sie die URLs autorisieren. Sobald die Liste autorisierter URLs definiert ist, sollten sie sich an ihren Administrator wenden, um die URLs der zulassungsliste hinzuzufügen und den **Blockierungsmodus** zu aktivieren.
 
 ## Dynamische Seitensicherheit und Relais {#dynamic-page-security-and-relays}
 
@@ -426,7 +426,7 @@ In diesem Beispiel fällt der **`<IP_addresses>`** Wert mit der Liste der IP-Adr
 
 >[!NOTE]
 >
->Die Werte werden entsprechend Ihrer Konfiguration und Ihren Netzwerkeinschränkungen angepasst, insbesondere, wenn für Ihre Installation spezifische Konfigurationen entwickelt wurden.
+>Die Werte sind entsprechend Ihrer Konfiguration und Ihren Netzwerkeinschränkungen anzupassen, insbesondere wenn für Ihre Installation spezifische Konfigurationen entwickelt wurden.
 
 ## Eingrenzen autorisierter externer Befehle {#restricting-authorized-external-commands}
 
@@ -455,7 +455,7 @@ sh
 >
 >Diese Liste ist nicht erschöpfend.
 
-Im **exec** -Knoten der Serverkonfigurationsdatei müssen Sie auf die zuvor erstellte Datei im **blacklistFile** -Attribut verweisen.
+Im **exec** -Knoten der Serverkonfigurationsdatei müssen Sie auf die zuvor erstellte Datei im **Attribut blocklistFile** verweisen.
 
 **Nur** für Linux: in der Serverkonfigurationsdatei sollten Sie einen Benutzer angeben, der externe Befehle ausführen soll, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im **exec** -Knoten der Konfigurationsdatei festgelegt. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
@@ -467,7 +467,7 @@ Beispiel:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
+ <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
 </serverConf>
 ```
 
@@ -487,7 +487,6 @@ Standardmäßig werden nicht alle HTTP-Header wiedergegeben. Sie können bestimm
 
    * **name**: Kopfzeilenname
    * **Wert**: Wertname.
-
    Beispiel:
 
    ```
@@ -595,7 +594,7 @@ Jeder in dieser Datei konfigurierte Prozess verfügt über ein **processRestartT
 
 ## Beschränkungen für hochladbare Dateien {#limiting-uploadable-files}
 
-Mit dem neuen Attribut **uploadWhiteList** können Sie die Dateitypen einschränken, die auf dem Adobe Campaign-Server hochgeladen werden können.
+Mit einem neuen Attribut **uploadAllowList** können Sie die Dateitypen einschränken, die auf dem Adobe Campaign-Server hochgeladen werden können.
 
 Dieses Attribut ist im **dataStore** -Element der Datei &quot; **serverConf.xml** &quot;verfügbar. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
@@ -603,7 +602,7 @@ Der Standardwert dieses Attributs ist **.+** und ermöglicht das Hochladen belie
 
 Um die möglichen Formate einzuschränken, müssen Sie den Attributwert durch einen gültigen regulären Java-Ausdruck ersetzen. Sie können mehrere Werte eingeben, indem Sie sie durch ein Komma trennen.
 
-Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen von PNG- und JPG-Formaten auf den Server. Andere Formate werden nicht akzeptiert.
+Beispiel: **uploadAllowList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen von PNG- und JPG-Formaten auf den Server. Andere Formate werden nicht akzeptiert.
 
 >[!IMPORTANT]
 >
