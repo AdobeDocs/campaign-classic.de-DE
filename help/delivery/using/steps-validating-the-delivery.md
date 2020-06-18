@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b0bcdfca1767aab5c54f06a5af5fb9097d2ec6f
+source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 65%
+source-wordcount: '1817'
+ht-degree: 64%
 
 ---
 
@@ -183,7 +183,7 @@ Im Tab **[!UICONTROL Erweitert]** der Versandeigenschaften kann der Testversand 
 Folgende Optionen stehen zur Verfügung:
 
 * Beibehaltung von doppelten Adressen und Empfängern;
-* Mit beiden der folgenden Optionen können Sie Blacklist-Empfänger und -Adressen in Quarantäne halten. Eine Beschreibung dieser Optionen für die Hauptzielgruppe finden Sie unter [Ausschlussparameter anpassen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zur Zielgruppe eines Versands, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für die Zielgruppe eines Testversands beibehalten.
+* Mit beiden der folgenden Optionen können Sie Empfänger auf der blockierungsliste und Adressen in der Quarantäne behalten. Eine Beschreibung dieser Optionen für die Hauptzielgruppe finden Sie unter [Ausschlussparameter anpassen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zur Zielgruppe eines Versands, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für die Zielgruppe eines Testversands beibehalten.
 * Wenn Sie die Option **[!UICONTROL Versandcode für den Testversand beibehalten]** auswählen, werden Haupt- und Testversand unter dem gleichen Code geführt, welcher im ersten Schritt des Versandassistenten vergeben wird.
 * Standardmäßig enthält der Betreff des Testversands &#39;Proof #‘, wobei # der Nummer des Testversands entspricht. Sie können dieses Präfix im Feld **[!UICONTROL Titelpräfix]** ändern.
 
