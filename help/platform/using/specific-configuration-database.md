@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: cc9ea59a9925930d4a4b260ce73a6bd4b615db5a
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
 workflow-type: tm+mt
-source-wordcount: '2959'
-ht-degree: 79%
+source-wordcount: '2967'
+ht-degree: 78%
 
 ---
 
@@ -55,6 +55,7 @@ So erstellen Sie Ihr [!DNL Azure Synapse] Externe Konto-Externe Konto:
    * **[!UICONTROL Passwort]**: Passwort des Benutzerkontos
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank
+
    ![](assets/azure_1.png)
 
 ### Blaue Synapse unter CentOS {#azure-centos}
@@ -123,7 +124,7 @@ So konfigurieren Sie Azurblase-Synapse unter CentOS:
 
 1. In Campaign Classic können Sie dann Ihr externes [!DNL Azure Synapse]-Konto konfigurieren. Weitere Informationen zur Konfiguration des Externen Kontos finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Da Azurblase Synapse Analytics über den TCP-Anschluss 1433 kommuniziert, müssen Sie diesen Anschluss auf Ihrer Firewall öffnen. Verwenden Sie den folgenden Befehl:
+1. Da die Azurblase Synapse Analytics über den TCP-Anschluss 1433 kommuniziert, müssen Sie diesen Port auf Ihrer Firewall öffnen. Verwenden Sie den folgenden Befehl:
 
    ```
    firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="[server_ip_here]/32" port port="1433" protocol="tcp" accept'
@@ -132,7 +133,7 @@ So konfigurieren Sie Azurblase-Synapse unter CentOS:
 
    >[!NOTE]
    >
-   >Um die Kommunikation von der Seite der Blue Synapse Analytics zu ermöglichen, müssen Sie möglicherweise Ihre öffentliche IP-Adresse auf die Positivliste setzen. Lesen Sie dazu die [Azurblauer Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Um die Kommunikation von der Seite von Azurblase Synapse Analytics zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur zulassungsliste hinzufügen. Lesen Sie dazu die [Azurblauer Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Führen Sie bei iptables den folgenden Befehl aus:
 
@@ -160,7 +161,7 @@ So konfigurieren Sie Azurblase-Synapse unter Windows:
 
 1. In Campaign Classic können Sie dann Ihr externes [!DNL Azure Synapse]-Konto konfigurieren. Weitere Informationen zur Konfiguration des Externen Kontos finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Da Azur Synapse Analytics über den TCP-Anschluss 1433 kommuniziert, müssen Sie diesen Anschluss auf der Windows Defender Firewall öffnen. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
+1. Da die Azurblase Synapse Analytics über den TCP-Anschluss 1433 kommuniziert, müssen Sie diesen Anschluss auf der Windows Defender Firewall öffnen. For more on this, refer to [Windows documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule).
 
 ### Azurblase Synapse auf Debian {#azure-debian}
 
@@ -215,7 +216,7 @@ So konfigurieren Sie Azurblase Synapse unter Debian:
 
 1. In Campaign Classic, you can now configure your [!DNL Azure Synapse] external account. Weitere Informationen zur Konfiguration des Externen Kontos finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#azure-external).
 
-1. Um die iptables unter Debian zu konfigurieren, um die Verbindung mit Azurblase Synapse Analytics sicherzustellen, aktivieren Sie die ausgehende TCP 1433-Portierung für Ihren Hostnamen mit dem folgenden Befehl:
+1. Um die iptables unter Debian zu konfigurieren, um die Verbindung mit Azurblaus Synapse Analytics sicherzustellen, aktivieren Sie die ausgehende TCP 1433-Portierung für Ihren Hostnamen mit dem folgenden Befehl:
 
    ```
    iptables -A OUTPUT -p tcp -d [server_hostname_here] --dport 1433 -j ACCEPT
@@ -223,7 +224,7 @@ So konfigurieren Sie Azurblase Synapse unter Debian:
 
    >[!NOTE]
    >
-   >Um die Kommunikation von der Seite der Blue Synapse Analytics zu ermöglichen, müssen Sie möglicherweise Ihre öffentliche IP-Adresse auf die Positivliste setzen. Lesen Sie dazu die [Azurblauer Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Um die Kommunikation von der Seite von Azurblase Synapse Analytics zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur zulassungsliste hinzufügen. Lesen Sie dazu die [Azurblauer Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Zugriff auf Snowflake konfigurieren {#configure-access-to-snowflake}
 
@@ -250,6 +251,7 @@ So konfigurieren Sie Azurblase Synapse unter Debian:
    * **[!UICONTROL Passwort]**: Passwort des Benutzerkontos
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank
+
    ![](assets/snowflake.png)
 
 1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen freigeben]**, um Funktionen zu erstellen.
@@ -345,6 +347,7 @@ Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erforder
    * **[!UICONTROL Datenbank]**: Name Ihrer Datenbank, falls nicht im DSN angegeben. Kann leer bleiben, wenn im DSN angegeben
 
    * **[!UICONTROL Zeitzone]**: Zeitzone des Servers
+
    ![](assets/hadoop3.png)
 
 Der Connector unterstützt die folgenden ODBC-Optionen:
