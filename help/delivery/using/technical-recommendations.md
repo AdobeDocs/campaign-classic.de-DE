@@ -12,11 +12,11 @@ discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: ht
-source-wordcount: '2463'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '2467'
+ht-degree: 91%
 
 ---
 
@@ -138,7 +138,7 @@ Recommendations for defining an SPF record:
 
 ## Feedback Loops {#feedback-loop}
 
-Ein Feedback Loop funktioniert nach dem Prinzip, dass auf ISP-Niveau eine bestimmte E-Mail-Adresse für eine Reihe von für den E-Mail-Versand verwendeten IP-Adressen deklariert wird. An diese E-Mail-Adresse senden die ISPs ähnlich wie für Bounce Messages diejenigen Nachrichten, die von Empfängern als Spam erklärt werden. Die Plattform sollte so konfiguriert werden, dass zukünftige Sendungen an Benutzer, die sich beschwert haben, blockiert werden. Dabei ist es wichtig, dass diese Benutzer nicht länger kontaktiert werden, selbst wenn sie nicht den offiziellen Opt-out-Link verwendet haben. Diese Beschwerden bilden die Basis dafür, dass ISPs IP-Adressen auf die Blacklist setzen. Je nach ISP wird eine IP-Adresse bei einer ungefähren Beschwerderate von 1 % auf die Blacklist gesetzt.
+Eine Feedback-Schleife funktioniert, indem auf ISP-Ebene eine bestimmte E-Mail-Adresse für eine Reihe von IP-Adressen angegeben wird, die zum Senden von Nachrichten verwendet werden. Der ISP wird die Nachrichten, die von Empfängern als Spam gemeldet werden, in ähnlicher Weise an diesen Posteingang senden wie bei den Absprungmeldungen. Die Plattform sollte so konfiguriert sein, dass zukünftige Versand für Benutzer, die sich beschwert haben, blockiert werden. Es ist wichtig, sich nicht mehr mit ihnen in Verbindung zu setzen, auch wenn sie nicht den richtigen Ausschluss-Link verwendet haben. Auf der Grundlage dieser Beschwerden wird ein ISP seiner blockierungsliste eine IP-Adresse hinzufügen. Je nach ISP wird eine Beschwerderate von etwa 1 % dazu führen, dass eine IP-Adresse blockiert wird.
 
 Aktuell wird an der Konzeption eines Standards für das Format von Feedback-Loop-Nachrichten gearbeitet: das [Abuse Feedback Reporting Format (ARF)](https://tools.ietf.org/html/rfc6650).
 
@@ -254,11 +254,11 @@ Adobe bietet jedem Kunden für die Anlaufphase eine dedizierte IP-Strategie zum 
 
 ## IP-Zertifizierung {#ip-certification}
 
-IP-Zertifizierung ist ein Whitelist- und Sendeprogramm, mit dem sichergestellt wird, dass E-Mails ohne Blockierung durch Antispam-Filter oder andere E-Mail-Blockierungssysteme empfangen werden.
+Die IP-Zertifizierung ist ein Programm zum Versenden von Best Practices, mit dem sichergestellt werden kann, dass E-Mails ohne Blockierung durch Anti-Spam-Filter oder andere E-Mail-Sperrsysteme empfangen werden.
 
 Derzeit bieten zwei Anbieter eine IP-Zertifizierung an: Return Path und Certified Senders Alliance.
 
-Zertifizierte Absender werden E-Mail-Whitelists hinzugefügt, die von globalen E-Mail-Anbietern und E-Mail-Sicherheitsunternehmen verwendet werden. Diese kommerziellen Whitelists basieren auf einem System, das es dem Absender erlaubt, beim Eintritt in das System Anti-Spam-Filter ganz zu umgehen oder inkrementelle Punkte zu erhalten.
+Zertifizierte Absender werden E-Mail-zulassungsliste hinzugefügt, die von globalen Mailbox-Anbietern und E-Mail-Firmen verwendet werden. Diese kommerziellen zulassungsliste basieren auf einem System, das es dem Absender ermöglicht, Anti-Spam-Filter ganz zu umgehen oder inkrementelle Punkte beim Einstieg in das System zuzuweisen.
 
 Das [Zertifizierungsprogramm von Return Path](https://www.validity.com/products/returnpath/certification/) bietet eine Reihe von Vorteilen, darunter die folgenden:
 
@@ -275,6 +275,6 @@ Die Zertifizierung durch [Certified Senders Alliance](https://certified-senders.
 * Schutz vor rechtlichen und finanziellen Risiken durch vollständige Einhaltung der Rechtsnormen
 * Schutz der Reputation durch frühzeitige Warnungen der CSA-Beschwerdestelle und tägliche Berichte über Spam-Fallen
 
-ISPs können diese Dienste beliebig verwenden und die Anzahl der ISPs variiert je nach Whitelist.
+ISPs können diese Dienste kostenlos nutzen, und die Anzahl der ISPs kann je nach zulassungsliste variieren.
 
 Da jedoch immer mehr ISPs ihre Antispam-Filter auf Grundlage des Verhaltens jedes Posteingangsbesitzers erstellen, anstatt den Nachrichteninhalt selbst zu analysieren, kann die Verwendung der IP-Zertifizierung keine Garantie für die Platzierung im Posteingang oder gar die Bereitstellung sein.
