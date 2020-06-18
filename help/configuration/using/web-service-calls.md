@@ -1,7 +1,7 @@
 ---
-title: Webdienstaufrufe
-seo-title: Webdienstaufrufe
-description: Webdienstaufrufe
+title: Web-Dienstaufrufe
+seo-title: Web-Dienstaufrufe
+description: Web-Dienstaufrufe
 seo-description: null
 page-status-flag: never-activated
 uuid: 7defe0e4-bb4a-4f6a-b6e8-e2ffac73b4c1
@@ -15,28 +15,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a527f246c4b0bf84c2a83e8df74b7a92542fda7a
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+workflow-type: tm+mt
+source-wordcount: '954'
+ht-degree: 1%
 
 ---
 
 
-# Webdienstaufrufe{#web-service-calls}
+# Web-Dienstaufrufe{#web-service-calls}
 
 ## Allgemeine Informationen {#general-information}
 
-Alle API-Methoden werden in Form von Webdiensten dargestellt. Auf diese Weise können Sie alle Adobe Campaign-Funktionen über SOAP-Aufrufe verwalten, die den nativen Einstiegspunkt des Adobe Campaign-Anwendungsservers darstellen. Die Adobe Campaign-Konsole selbst verwendet nur SOAP-Aufrufe.
+Alle API-Methoden werden in Form von Webdiensten dargestellt. Dadurch können Sie alle Adobe Campaign-Funktionen über SOAP-Aufrufe verwalten, die den nativen Einstiegspunkt des Adobe Campaign-Anwendungsservers darstellen. Die Adobe Campaign-Konsole selbst verwendet nur SOAP-Aufrufe.
 
 Mit Webdiensten können Sie viele Anwendungen aus einem Drittanbietersystem erstellen:
 
-* synchrone Warnhinweise, Benachrichtigungen und die Ausführung von Vorlagen für die Bereitstellung in Echtzeit über eine Backoffice- oder Transaktionszentrale,
+* synchrone Warnhinweise, Benachrichtigungen und die Ausführung von Versandvorlagen in Echtzeit über eine Backoffice- oder Transaktionszentrale,
 * Entwicklung spezieller Schnittstellen mit vereinfachten Funktionen (Webschnittstellen usw.),
 * Fütterung und Suche von Daten in der Datenbank unter Einhaltung von Handelsregeln und isoliert von dem zugrunde liegenden physischen Modell.
 
 ## Definition von Webdiensten {#definition-of-web-services}
 
-Die Definition der auf dem Adobe Campaign-Anwendungsserver implementierten Webdienste ist in den Datenschemata verfügbar.
+Die Definition der Webdienste, die auf dem Adobe Campaign-Anwendungsserver implementiert sind, ist in den Data Schemas verfügbar.
 
-Ein Webdienst wird in der Grammatik der Datenschemata beschrieben und ist über das **`<methods>`** Element verfügbar.
+Ein Webdienst wird in der Grammatik der Datenelemente beschrieben und ist im **`<methods>`** Schema verfügbar.
 
 ```
 <methods>
@@ -53,15 +56,15 @@ Ein Webdienst wird in der Grammatik der Datenschemata beschrieben und ist über 
 
 Hier haben wir ein Beispiel für die Definition der Methode namens **GenerateForm**.
 
-Die Beschreibung des Dienstes beginnt mit dem `<method>` Element. Die Liste der Parameter der Methode wird vom `<parameters>` Element abgeschlossen. Jeder Parameter wird durch einen Namen, einen Typ (Boolescher Wert, Zeichenfolge, DOMElement usw.) angegeben. und eine Beschreibung. Mit dem Attribut &quot;inout&quot;mit dem Wert &quot;out&quot;können Sie angeben, dass sich der Parameter &quot;result&quot;in der SOAP-Aufrufausgabe befindet.
+Die Beschreibung der Beginn des Dienstes mit dem `<method>` Element. Die Liste der Parameter der Methode wird vom `<parameters>` Element abgeschlossen. Jeder Parameter wird durch einen Namen, einen Typ (Boolescher Wert, Zeichenfolge, DOMElement usw.) angegeben. und eine Beschreibung. Mit dem Attribut &quot;inout&quot;mit dem Wert &quot;out&quot;können Sie angeben, dass sich der Parameter &quot;result&quot;in der SOAP-Aufrufausgabe befindet.
 
 Das Vorhandensein des Attributs &quot;static&quot;(mit dem Wert &quot;true&quot;) beschreibt diese Methode als statisch, d. h. alle Parameter der Methode müssen deklariert werden.
 
 Eine &quot;const&quot;-Methode verfügt implizit über ein XML-Dokument im Format des zugehörigen Schemas als Eingabe.
 
-Eine vollständige Beschreibung des `<method>` Elements eines Adobe Campaign-Schemas finden Sie im Kapitel &quot;Schemaverweise&quot;unter <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    Element.
+Eine vollständige Beschreibung des `<method>` Elements eines Adobe Campaign-Schemas finden Sie im Kapitel &quot;Schema-Referenzen&quot;unter  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    Element.
 
-Beispiel der Methode &quot;const&quot;-Typ &quot;ExecuteQuery&quot; aus dem Schema &quot;xtk:queryDef&quot;:
+Beispiel für die Methode &quot;const&quot;-type &quot;ExecuteQuery&quot; aus dem Schema &quot;xtk:queryDef&quot;:
 
 ```
 <method name="ExecuteQuery" const="true">
@@ -82,12 +85,12 @@ Für jeden Dienst steht eine WSDL-Datei (Web Service Description Library) zur Ve
 
 Um eine WSDL-Datei zu erstellen, müssen Sie die folgende URL aus einem Webbrowser eingeben:
 
-[https://`<server>`/nl/jsp/schemawsdl.jsp?schema=`<schema>`
+[https://`<server>`/nl/jsp/schemawsdl.jsp?Schema=`<schema>`
 
 Mit:
 
-* **`<server>`**: Adobe Campaign-Anwendungsserver (nlserver web)
-* **`<schema>`**: Schemaidentifizierungsschlüssel (namespace:schema_name)
+* **`<server>`**: Adobe Campaign Application Server (nlserver web)
+* **`<schema>`**: Schema-Identifizierungsschlüssel (Namensraum:Schema_Name)
 
 ### Beispiel für die Methode &#39;ExecuteQuery&#39; des Schemas &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
@@ -95,11 +98,11 @@ Die WSDL-Datei wird aus der URL generiert:
 
 [https://localhost/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef](https://my_serveur/nl/jsp/schemawsdl.jsp?schema=xtk:queryDef)
 
-Eine WSDL-Beschreibung beginnt mit der Definition der Typen, die verwendet werden, um Nachrichten zu bilden, die in &quot;Ports&quot; verknüpft sind, verbunden mit einem Protokoll durch &quot;Bindungen&quot;, die Webdienste bilden.
+Eine WSDL-Beschreibung Beginn, indem die Typen definiert werden, die zur Erstellung von Meldungen verwendet werden, die in &quot;Ports&quot;verknüpft sind und mit einem Protokoll durch &quot;Bindungen&quot;verbunden sind, die Webdienste bilden.
 
 #### Typen {#types}
 
-Typdefinitionen basieren auf XML-Schemata. In unserem Beispiel nimmt die Methode &quot;ExecuteQuery&quot;die Zeichenfolge &quot;s:string&quot;und ein XML-Dokument (`<s:complextype>`) als Parameter an. Der Rückgabewert der Methode (&quot;ExecuteQueryResponse&quot;) ist ein XML-Dokument ( `<s:complextype>`).
+Typdefinitionen basieren auf XML-Schemas. In unserem Beispiel nimmt die Methode &quot;ExecuteQuery&quot;die Zeichenfolge &quot;s:string&quot;und ein XML-Dokument (`<s:complextype>`) als Parameter an. Der Rückgabewert der Methode (&quot;ExecuteQueryResponse&quot;) ist ein XML-Dokument ( `<s:complextype>`).
 
 ```
 <types>
@@ -149,7 +152,7 @@ Die `<message>` beschreibt die Namen und Typen eines Satzes von Feldern, die ges
 
 #### PortType {#porttype}
 
-Die `<porttype>` verknüpfte die Meldungen des Vorgangs &quot;ExecuteQuery&quot;, der durch die Abfrage (&quot;Eingabe&quot;) ausgelöst wird, die eine Antwort (&quot;Ausgabe&quot;) generiert.
+Die Meldungen `<porttype>` werden dem Vorgang &quot;ExecuteQuery&quot;zugeordnet, der durch die Abfrage (&quot;input&quot;) ausgelöst wird, die eine Antwort (&quot;output&quot;) generiert.
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -162,7 +165,7 @@ Die `<porttype>` verknüpfte die Meldungen des Vorgangs &quot;ExecuteQuery&quot;
 
 #### Bindung {#binding}
 
-Der `<binding>` Teil gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ), den Datentransport in HTTP (Wert des Attributs &quot;transport&quot;) und das Datenformat für den Vorgang &quot;ExecuteQuery&quot; an. Der Text des SOAP-Umschlags enthält die Meldungssegmente direkt ohne Transformation.
+Der `<binding>` Teil gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ), den Datentransport in HTTP (Wert des Attributs &quot;transport&quot;) und das Datenformat für den Vorgang &quot;ExecuteQuery&quot; an. Der Hauptteil des SOAP-Umschlags enthält die Meldungssegmente direkt ohne Transformation.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -193,7 +196,7 @@ Der `<service>` Teil beschreibt den Dienst &quot;XtkQueryDef&quot;mit seinem URI
 
 ## Konnektivität {#connectivity}
 
-Adobe Campaign hat die Sicherheit für Authentifizierungsmechanismen erhöht, indem Sicherheitszonen (siehe Kapitel **Definieren von Sicherheitszonen** in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones)) sowie Sitzungsverwaltungseinstellungen eingeführt wurden.
+Adobe Campaign hat die Sicherheit für Authentifizierungsmechanismen erhöht, indem Sicherheitszonen (siehe Kapitel **Definieren von Sicherheitszonen** in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones)) sowie Sitzungsverwaltungseinstellungen eingeführt werden.
 
 Es stehen zwei Authentifizierungsmodi zur Verfügung:
 
@@ -201,7 +204,7 @@ Es stehen zwei Authentifizierungsmodi zur Verfügung:
 
 oder
 
-* **über die Adobe Campaign-Anmeldung + das Kennwort** , mit dem ein Sitzungstoken erstellt wird. Das Sitzungstoken läuft nach einem bestimmten Zeitraum automatisch ab. Dieser Modus wird nicht empfohlen und erfordert eine Reduzierung der Anwendungssicherheitseinstellungen für einige Zoneneinstellungen (allowUserPassword=&quot;true&quot; und sessionTokenOnly=&quot;true&quot;).
+* **über das Adobe Campaign login + password** , das ein Sitzungstoken erstellt. Das Sitzungstoken läuft nach einem bestimmten Zeitraum automatisch ab. Dieser Modus wird nicht empfohlen und erfordert eine Reduzierung der Anwendungssicherheitseinstellungen für einige Zoneneinstellungen (allowUserPassword=&quot;true&quot; und sessionTokenOnly=&quot;true&quot;).
 
 ### Merkmale des Sitzungstokens {#session-token-characteristics}
 
@@ -211,7 +214,7 @@ Das Sitzungstoken weist die folgenden Merkmale auf:
 * eine zufällige Konstruktion (sie enthält nicht mehr die Benutzeranmeldung und das Kennwort)
 * beim Zugriff über das Web:
 
-   * Wenn das Sitzungs-Token ein permanentes Token wird, wird es nicht zerstört, sobald der Browser geschlossen wird
+   * Wenn das Sitzungs-Token ein permanentes Token wird, wird es nach dem Schließen des Browsers nicht mehr zerstört
    * es wird in einem HTTP-ONLY-Cookie platziert (Cookies müssen für Operatoren aktiviert werden)
 
 ### Eigenschaften von Sicherheitstoken {#security-token-characteristics}
@@ -220,7 +223,7 @@ Das Sicherheits-Token weist folgende Merkmale auf:
 
 * es wird aus dem Sitzungstoken generiert
 * es hat einen 24-Stunden-Lebenszyklus (konfigurierbar in der Datei &quot;serverConf.xml&quot;, der Standardzeitraum ist 24 Stunden)
-* es wird in der Adobe Campaign-Konsole gespeichert
+* wird in der Adobe Campaign-Konsole gespeichert
 * beim Zugriff über das Web:
 
    * es wird in einem Dokument gespeichert.__securityToken-Eigenschaft
@@ -281,7 +284,7 @@ Aus einem SOAP-Aufruf:
 
 >[!NOTE]
 >
->Die in den folgenden **HttpServletRequest** -Aufrufen verwendeten URLs müssen im Abschnitt &quot;URL-Berechtigungen&quot;der Datei &quot; **serverConf.xml** &quot;in die Positivliste aufgenommen werden. Dies gilt auch für die URL des Servers selbst.
+>Die URLs, die in den folgenden **HttpServletRequest** -Aufrufen verwendet werden, müssen sich im Abschnitt &quot;URL-Berechtigungen&quot;der Datei &quot; **serverConf.xml** &quot;auf dem zulassungsliste befinden. Dies gilt auch für die URL des Servers selbst.
 
 Anmeldeausführung():
 
@@ -309,7 +312,7 @@ var sessionToken = String(xmlRes..*::pstrSessionToken);;
 var securityToken = String(xmlRes..*::pstrSecurityToken);
 ```
 
-Abfrageausführung:
+Ausführung der Abfrage:
 
 ```
 var req2 = new HttpClientRequest("https://serverURL/nl/jsp/soaprouter.jsp");
