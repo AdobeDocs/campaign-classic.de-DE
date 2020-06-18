@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d9b0f943fa09b3d0ad8547eb708e888724f1ae7e
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
-source-wordcount: '7852'
+source-wordcount: '7859'
 ht-degree: 10%
 
 ---
@@ -207,7 +207,7 @@ Hier sind die verschiedenen Parameter des **dataStore** -Knotens. Hier werden di
    <td> '$(XTK_INSTALL_DIR)/var/$(INSTANCE_NAME)/upload/' <br /> </td> 
   </tr> 
   <tr> 
-   <td> uploadWhitelist<br /> </td> 
+   <td> uploadAllowlist<br /> </td> 
    <td> Autorisierte Dateien zum Herunterladen, getrennt durch ','. Die Zeichenfolge muss ein gültiger, regulärer Java-Ausdruck sein. Siehe <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Beschränkungen für hochladbare Dateien</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> '.+' <br /> </td> 
@@ -575,8 +575,8 @@ Weitere Informationen finden Sie unter [Eingrenzen von autorisierten externen Be
  </thead> 
  <tbody> 
   <tr> 
-   <td> blacklistFile<br /> </td> 
-   <td> Pfad zur Datei, die die Befehle zur schwarzen Liste enthält. <br /> </td> 
+   <td> blocklistFile<br /> </td> 
+   <td> Pfad zur Datei, die die Befehle enthält, die der zulassungsliste hinzugefügt werden sollen. <br /> </td> 
    <td> String <br /> </td> 
   </tr> 
   <tr> 
@@ -2011,7 +2011,7 @@ Hier sind die verschiedenen Parameter des **pipelinierten** Knotens. Dies ist di
   </tr> 
   <tr> 
    <td> discoverPipelineEndpoint<br /> </td> 
-   <td> URL, um die URL der Pipeline-Dienste zu ermitteln.<br /> </td> 
+   <td> URL to discover the Pipeline Services URL.<br /> </td> 
    <td> String <br /> </td> 
    <td> https://producer-pipeline-pnw.adobe.net'<br /> </td> 
   </tr> 
@@ -3079,7 +3079,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit, Relais](../
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synchronisierungsstatus einer öffentliche Ressource (Auflistung). Mögliche Werte sind 'normal' (normale Ausführung), 'blacklist' (URL-Blacklist bei Fehler 404) und 'reserve' (Datei-Upload auf Reserveserver, falls vorhanden).<br /> </td> 
+   <td> Synchronisierungsstatus einer öffentliche Ressource (Auflistung). Mögliche Werte sind "normal"(normale Ausführung), "blockierungsliste"(URL bei Fehler 404 zu blockierungsliste hinzugefügt) und "reserve"(Datei-Upload auf Reserveserver, falls vorhanden).<br /> </td> 
    <td> String <br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3137,19 +3137,19 @@ Die Standardkonfiguration lautet:
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
