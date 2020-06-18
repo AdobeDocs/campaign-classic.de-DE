@@ -14,8 +14,11 @@ discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +34,7 @@ SpamAssassin nutzt eine Vielzahl von Spam-Erkennungs-Methoden, darunter:
 * Spam-Erkennung auf der Basis des DNS und der unscharfen Prüfsumme
 * Bayes&#39;sche Filtertechnologie
 * Externe Programme
-* Blacklists
+* Blockierungsliste
 * Online-Datenbanken
 
 >[!NOTE]
