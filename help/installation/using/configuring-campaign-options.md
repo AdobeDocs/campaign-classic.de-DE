@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: de1173786c94c2a526153e7e6948f71c9523fa7b
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
 workflow-type: tm+mt
 source-wordcount: '3906'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 # Liste der Optionen von Campaign Classic{#configuring-campaign-options}
 
-Der Knoten **[!UICONTROL Administration/Plattform/Optionen]** ermöglicht Ihnen die Konfiguration von Adobe Campaign-Optionen.
+Der Knoten **[!UICONTROL Administration/Platform/Optionen]** ermöglicht Ihnen die Konfiguration von Adobe Campaign-Optionen.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> Reguläre Ausdruck zum Normalisieren von Versand-Nachrichten.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsBroadcast_RemoveBlackList</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsBroadcast_RemoveBlockList</span> <br /> </td> 
    <td> Durch Eingabe von "1"als Wert können Sie Empfänger ausschließen, die nicht mehr kontaktiert werden möchten.<br /> </td> 
   </tr> 
   <tr> 
@@ -175,7 +175,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> Formel zur Berechnung der Gewichtung einer Meldung für einen vorläufigen Versand.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">NmsInmail_WhitelistEmails</span> <br /> </td> 
+   <td> <span class="uicontrol">NmsInmail_AllowlistEmails</span> <br /> </td> 
    <td> Liste von autorisierten Weiterleitungs-E-Mail-Adressen (aus dem Modul für die Verarbeitung von eingehenden Nachrichten). Die Adressen müssen durch Kommas getrennt werden (oder *, um alle zuzulassen). z. B. xyz@abc.com,pqr@abc.com.<br /> </td> 
   </tr> 
   <tr> 
@@ -721,7 +721,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Ermöglicht die Konfiguration von Experience Cloud-Auslösern. Der Datentyp ist "langer Text"und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud-Auslösern mit Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Hiermit können Sie Experience Cloud-Auslöser konfigurieren. Der Datentyp ist "langer Text"und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud-Auslösern mit Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -733,19 +733,19 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Adobe Zielgruppe Server für die Integration. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Zielgruppe Domain Server, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
+   <td> Für die Integration verwendeter Adobe Target-Server. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Target Domain Server, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Name der Adobe-Zielgruppe-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
+   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Die für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
+   <td> Option, die für die Integration mit Adobe Audience Manager verwendet wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Die für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
+   <td> Option, die für die Integration mit Adobe Audience Manager verwendet wird.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapability_Teradata</span> <br /> </td> 
