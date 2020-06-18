@@ -14,8 +14,11 @@ discoiquuid: 9a61fe74-f779-4f23-be25-3d9a8e95704a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1159'
+ht-degree: 97%
 
 ---
 
@@ -153,7 +156,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
 Für kommerzielle E-Mail-Sendungen ist das Einfügen eines Abmelde-Links gesetzlich vorgeschrieben. Empfänger, die nicht mehr kontaktiert werden möchten, können auf den entsprechenden Link klicken und werden so zukünftig aus den Versandzielgruppen ausgeschlossen.
 
-Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Symbolleiste des Inhaltseditors eingefügt, der im Versand-Assistenten bereitgestellt wird (siehe [Über die Personalisierung](../../delivery/using/about-personalization.md)). Wenn der Empfänger auf diesen Link klickt, wird das Profil in die Ausschlussdatei aufgenommen (Opt-out), d. h., der Empfänger wird von keiner Versandaktion mehr als Ziel ausgewählt.
+Der standardmäßige Abmelde-Link wird über die letzte Schaltfläche in der Symbolleiste des Inhaltseditors eingefügt, der im Versand-Assistenten bereitgestellt wird (siehe [Über die Personalisierung](../../delivery/using/about-personalization.md)). Wenn der Empfänger auf diesen Link klickt, wird das Profil zur blockierungsliste hinzugefügt (Ausschluss), d. h., dieser Empfänger wird nicht mehr durch eine Aktion des Versands als Ziel ausgewählt.
 
 Die Empfänger können sich allerdings von einem Dienst abmelden, ohne sich von allen Diensten abmelden zu müssen. Dazu können Sie ein Webformular verwenden (siehe [diesen Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes)) oder einen personalisierten Abmelde-Link einfügen (siehe [Gestaltungsbausteine](../../delivery/using/personalization-blocks.md)).
 
