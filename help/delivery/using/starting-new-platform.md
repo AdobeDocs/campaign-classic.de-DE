@@ -12,11 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: a1192bc804e752d13af869da66ba0505c077ed19
-workflow-type: ht
-source-wordcount: '499'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 94%
 
 ---
 
@@ -27,7 +27,7 @@ Bei der Einrichtung einer neuen Plattform ist die Wahrung der Reputation Ihrer D
 
 * Der Versand von E-Mails ist ein heikler Schritt, da die Plattform keine Nutzungsgeschichte und – wenn die sendenden IPs zu diesem Zweck noch nie verwendet wurden – auch keine Reputation aufweist.
 
-* ISPs sind naturgemäß argwöhnisch gegenüber IP-Adressen, die noch nie zum Senden von E-Mails verwendet wurden und plötzlich große Mengen von E-Mail-Traffic verursachen. Tatsächlich nutzen Spammer im Allgemeinen &quot;unbekannte&quot; IP-Adressen (Adressen, die noch nie auf Blacklists waren), um vor der Erkennung eine maximale Anzahl von Nachrichten zu senden.
+* ISPs sind naturgemäß argwöhnisch gegenüber IP-Adressen, die noch nie zum Senden von E-Mails verwendet wurden und plötzlich große Mengen von E-Mail-Traffic verursachen. Tatsächlich verwenden Spammer im Allgemeinen &quot;unbekannte&quot;IP-Adressen (Adressen, die noch nie zu einer blockierungsliste hinzugefügt wurden), um die größtmögliche Anzahl von Nachrichten vor der Erkennung zu senden.
 
 * Erwarten Sie nicht, dass der Versand gleich zu Beginn der Produktionsphase in der gewünschten Geschwindigkeit durchgeführt werden kann. Sie sollten auch nicht versuchen, Nachrichten in dieser Geschwindigkeit zu versenden, da dies ISPs veranlassen könnte, die Absenderadresse zu blockieren, was die Anfangsphase erheblich beeinträchtigen würde.
 
@@ -38,6 +38,7 @@ Oft werden Plattformen gestartet, wenn eine Adressliste zum ersten Mal verwendet
 
    * Wenn Sie über eine Liste ungültiger Adressen verfügen, ist es in Ihrem Interesse, diese in die Quarantänetabelle zu importieren (über das Menü **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]**), bevor Sie zum ersten Mal senden.
    * Wenn Sie die ungültigen Adressen trotzdem erneut qualifizieren möchten, ist es viel besser, dies zu tun, sobald die Reputation der Plattform etabliert ist – und zwar nach und nach, um die Verwendung schlechter Adressen im Laufe der Zeit zu &quot;verwässern&quot;.
+
    Weiterführende Informationen hierzu finden Sie unter [Optimieren Ihres Versands durch Quarantänen](../../delivery/using/understanding-quarantine-management.md#optimizing-your-delivery-through-quarantines).
 * **Begrenzen Sie die Durchsatzrate**, indem Sie die Anzahl der &quot;mtachilds&quot; einschränken. Wenden Sie sich für weitere Informationen zum Anpassen dieser technischen Einstellung an Ihren Adobe Campaign-Administrator.
 * **Erhöhen Sie die gesendeten Volumen schrittweise**, damit diese nicht als Spam gekennzeichnet werden. Senden Sie nicht gleich an die gesamte Datenbank, sondern fügen Sie bei jedem Senden einen weiteren Anteil der Liste hinzu. So sollten Sie das Volumen bei jedem Schritt erhöhen und gleichzeitig die Gesamtrate ungültiger Adressen reduzieren können. Um eine reibungslose Anfangsphase zu gewährleisten, können Sie Schübe verwenden. Weiterführende Informationen finden Sie unter [In mehreren Schüben versenden](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
