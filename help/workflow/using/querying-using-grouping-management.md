@@ -12,8 +12,11 @@ discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+translation-type: tm+mt
+source-git-commit: f99e3a4f69cb2b0122f2f6957d419d6b95ad54b1
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 100%
 
 ---
 
@@ -57,15 +60,15 @@ Gehen Sie wie folgt vor:
 
    Die Gruppierung (GROUP BY) erfolgt an dieser Stelle. Das Fenster wird nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde.
 
-   ![](assets/query_editor_blacklist_04.png)
+   ![](assets/query_editor_blocklist_04.png)
 
 1. Geben Sie anschließend im Fenster **[!UICONTROL Gruppierbedingung]** eine Primärschlüsselanzahl von über 30 an. So werden nur die E-Mail-Domains ausgegeben, die mehr als 30-mal kontaktiert wurden.
 
    Dieses Fenster wird ebenfalls nur angezeigt, wenn die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** angekreuzt wurde. Hier erfolgt die Filterung des Ergebnisses der Gruppierung (HAVING).
 
-   ![](assets/query_editor_blacklist_05.png)
+   ![](assets/query_editor_blocklist_05.png)
 
 1. Da in unserem Beispiel keine spezielle Formatierung erforderlich ist, können Sie im Fenster **[!UICONTROL Datenformatierung]** direkt auf **[!UICONTROL Weiter]** klicken.
 1. Klicken Sie anschließend auf **[!UICONTROL Datenvorschau starten]**. Das Ergebnis zeigt nur eine E-Mail-Domain, die mehr als 30-mal kontaktiert wurde.
 
-   ![](assets/query_editor_blacklist_06.png)
+   ![](assets/query_editor_blocklist_06.png)
