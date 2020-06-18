@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b9c57b3cba0e8c24300396c2abac613f6e1193a
+source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+workflow-type: tm+mt
+source-wordcount: '1312'
+ht-degree: 11%
 
 ---
 
@@ -26,21 +29,21 @@ Sie können Adobe Campaign so konfigurieren, dass von den von der Plattform gese
 
 Adobe Campaign selbst ermöglicht zwar nicht die Verwaltung von archivierten Dateien, Sie können aber die gewünschten Nachrichten an eine bestimmte Adresse senden, wo sie mithilfe eines externen Systems verarbeitet und archiviert werden.
 
-Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Remote-Server, z. B. einen SMTP-E-Mail-Server, übertragen. Das Archivierungsziel ist eine BCC-E-Mail-Adresse (für die Empfänger der Auslieferung unsichtbar), die Sie angeben müssen.
+Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Remote-Server, z. B. einen SMTP-E-Mail-Server, übertragen. Das Archivierungsziel ist eine BCC-E-Mail-Adresse (für die Versand-Empfänger unsichtbar), die Sie angeben müssen.
 
-## Empfehlungen und Einschränkungen  {#recommendations-and-limitations}
+## Empfehlungen und Einschränkungen      {#recommendations-and-limitations}
 
 * Die Funktion zum Archivieren von E-Mails ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die BCC-Adresse Ihrer Wahl muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfiguriert.
+* Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die gewünschte BCC-Adresse muss dem Adobe-Team übermittelt werden, das die Adresse für Sie konfigurieren wird.
 * Für **lokale Installationen** folgen Sie den unten stehenden Richtlinien, um sie zu aktivieren - siehe [Aktivieren der E-Mail-Archivierung (vor Ort)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (vor Ort)](#configuring-the-bcc-email-address--on-premise-) .
 * Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
-* Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Bereitstellungsvorlage oder in der Bereitstellung über die **[!UICONTROL Archive emails]** Option aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+* Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option E-Mails **[!UICONTROL archivieren]** aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
 * Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits mit der E-Mail-Archivierung arbeiten, müssen Sie manuell auf das neue E-Mail-Archivierungssystem (BCC) aktualisieren. Weitere Informationen finden Sie im Abschnitt [Aktualisiertes E-Mail-Archivierungssystem (BCC)](#updated-email-archiving-system--bcc-) .
 
 ## Aktivieren der E-Mail-Archivierung (vor Ort) {#activating-email-archiving--on-premise-}
 
-Gehen Sie wie unten beschrieben vor, um die BCC-E-Mail-Archivierung zu aktivieren, wenn Adobe Campaign auf der Site installiert ist.
+Gehen Sie wie unten beschrieben vor, um die BCC-E-Mail-Archivierung zu aktivieren, wenn Adobe Campaign vor Ort installiert ist.
 
 ### Lokaler Ordner {#local-folder}
 
@@ -62,7 +65,7 @@ Der vollständige Pfad lautet wie folgt: **`<datalogpath>  YYYY-MM-DDHHh`**. Dat
 C:\emails\2018-12-02\13h
 ```
 
-Der Name der Archivdatei ist **`<deliveryid>-<broadlogid>.eml`** dann der Status der E-Mails nicht **[!UICONTROL Sent]**. Sobald der Status in **[!UICONTROL Sent]** geändert wurde, wird der Dateiname **`<deliveryid>-<broadlogid>-sent.eml`** geändert. Beispiel:
+Der Name der Archivdatei ist **`<deliveryid>-<broadlogid>.eml`** der Status der E-Mails nicht **[!UICONTROL gesendet]**. Sobald der Status auf **[!UICONTROL Gesendet]** geändert wurde, wird der Dateiname **`<deliveryid>-<broadlogid>-sent.eml`** angezeigt. Beispiel:
 
 ```
 C:\emails\2018-12-02\13h\4012-8040-sent.eml
@@ -72,7 +75,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 >
 >In einer Mid-Sourcing-Instanz befindet sich der Ordner für die archivierten E-Mails auf dem Mid-Sourcing-Server.
 >
->Die deliveryID und die BroadlogID stammen vom mid-sourcing-Server, wenn der Status der E-Mails nicht gesendet wird. Sobald sich der Status in **[!UICONTROL Sent]** geändert hat, stammen diese IDs vom Marketing-Server.
+>Die deliveryID und die BroadlogID stammen vom Mid-Sourcing-Server, wenn der Status der E-Mails nicht gesendet wird. Sobald der Status auf **[!UICONTROL Gesendet]** geändert wurde, stammen diese IDs vom Marketing-Server.
 
 ### Parameter {#parameters}
 
@@ -84,26 +87,26 @@ Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente
            pollDelay="600" acquireLimit="5000" smtpNbConnection="2"/>
 ```
 
-* **compressionFormat**: Format, das beim Komprimieren der .eml-Dateien verwendet wird. Mögliche Werte sind:
+* **compressionFormat**: Format, das beim Komprimieren der .eml-Dateien verwendet wird. Die möglichen Werte sind:
 
    **0**: keine Komprimierung (Standardwert)
 
    **1**: Komprimierung (.zip-Format)
 
 * **compressBatchSize**: Anzahl der eml-Dateien, die einem Archiv hinzugefügt wurden (.zip-Datei).
-* **archivingType**: zu verwendende Archivierungsstrategie. Mögliche Werte sind:
+* **archivingType**: zu verwendende Archivierungsstrategie. Die möglichen Werte sind:
 
    **0**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert (Standardwert). Eine Archivierungskopie der **`<deliveryid>-<broadlogid>-sent.eml`** Datei wird im Ordner **dataLogPath/archives** gespeichert. Der Pfad der gesendeten E-Mail-Datei wird **`<datalogpath>archivesYYYY-MM-DDHHh <deliveryid>-<broadlogid>-sent.eml`** geändert.
 
    **1**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert und über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
 
 * **expirationDelay**: Anzahl der Tage .eml-Dateien werden zur Archivierung aufbewahrt. Nach dieser Verzögerung werden sie zur Komprimierung automatisch in den Ordner **dataLogPath/archives** verschoben. Standardmäßig laufen .eml-Dateien nach zwei Tagen ab.
-* **purgeArchivesDelay**: Die Anzahl der Tage, die Archive im **Ordner dataLogPath/`<archives>`**gespeichert werden. Nach diesem Zeitraum werden sie endgültig gelöscht. Die Bereinigung beginnt mit dem Start der MTA. Standardmäßig wird sie alle sieben Tage durchgeführt.
+* **purgeArchivesDelay**: Die Anzahl der Tage, die Archive im **Ordner &quot;dataLogPath/`<archives>`**&quot;gespeichert werden. Nach diesem Zeitraum werden sie endgültig gelöscht. Die Bereinigung beginnt mit dem Start der MTA. Standardmäßig wird sie alle sieben Tage durchgeführt.
 * **pollDelay**: Überprüfungsfrequenz (in Sekunden) für neue eingehende gesendete E-Mails im **Ordner &quot;dataLogPath** &quot;. Wenn dieser Parameter beispielsweise auf 60 gesetzt ist, bedeutet dies, dass der Archivierungsprozess jede Minute die .eml-Dateien in den **`<date and time>`**dataLogPath/-Ordnern durchläuft, bei Bedarf eine Bereinigung durchführt und E-Mail-Kopien an die BCC-Adresse sendet und/oder die archivierten Dateien komprimiert, wann immer dies erforderlich ist.
 * **acquisitionLimit**: Anzahl der .eml-Dateien, die gleichzeitig verarbeitet werden, bevor der Archivierungsprozess gemäß dem Parameter **pollDelay** erneut angewendet wird. Wenn Sie beispielsweise den Parameter **acquisitionLimit** auf 100 setzen, während der Parameter **pollDelay** auf 60 eingestellt ist, werden 100 .eml-Dateien pro Minute verarbeitet.
 * **smtpNbConnection**: Anzahl der SMTP-Verbindungen zur BCC-E-Mail-Adresse.
 
-Stellen Sie sicher, dass Sie diese Parameter an den E-Mail-Versand-Durchsatz anpassen. In einer Konfiguration, in der die MTA 30.000 E-Mails pro Stunde sendet, können Sie den Parameter **pollDelay** auf 600, den Parameter **acquisitionLimit** auf 5000 und den Parameter **smtpNbConnection** auf 2 setzen. Das bedeutet, dass bei 2 SMTP-Verbindungen alle 10 Minuten 5.000 E-Mails an die BCC-Adresse gesendet werden.
+Stellen Sie sicher, dass Sie diese Parameter an den E-Mail-Versand-Durchsatz anpassen. In einer Konfiguration, in der die MTA 30.000 E-Mails pro Stunde sendet, können Sie den Parameter **pollDelay** auf 600, den Parameter **acquisitionLimit** auf 5000 und den Parameter **smtpNbConnection** auf 2 setzen. Das bedeutet, dass bei Verwendung von 2 SMTP-Verbindungen alle 10 Minuten 5.000 E-Mails an die BCC-Adresse gesendet werden.
 
 ## BCC-E-Mail-Adresse konfigurieren (vor Ort) {#configuring-the-bcc-email-address--on-premise-}
 
@@ -117,7 +120,7 @@ Verwenden Sie in der **config-`<instance name>.xml`**-Datei die folgenden Parame
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
 ```
 
-* **smtpBccAddress**: Zielort archivieren
+* **smtpBccAddress**: Archivierungsziel der Zielgruppe
 * **smtpEnableTLS**: mit einer gesicherten SMTP-Verbindung (TLS/SSL-Protokoll)
 * **smtpRelayAddress**: zur Verwendung
 * **smtpRelayPort**: Relaisanschluss
@@ -126,7 +129,7 @@ Verwenden Sie in der **config-`<instance name>.xml`**-Datei die folgenden Parame
 >
 >Wenn Sie einen SMTP-Relais verwenden, werden die Änderungen an den E-Mails, die vom Relais vorgenommen werden, im Archivierungsprozess nicht berücksichtigt.
 >
->Darüber hinaus weist der Relaisdienst allen E-Mails einen **[!UICONTROL Sent]** Status zu, auch solchen, die nicht gesendet werden. Daher werden alle Nachrichten archiviert.
+>Darüber hinaus weist der Relais allen E-Mails, einschließlich der nicht gesendeten E-Mails, den Status **[!UICONTROL Gesendet]** zu. Daher werden alle Nachrichten archiviert.
 
 ## Aktualisiertes E-Mail-Archivierungssystem (BCC) {#updated-email-archiving-system--bcc-}
 
@@ -140,16 +143,16 @@ Nehmen Sie dazu die folgenden Änderungen an der **`config-<instance>.xml`** Dat
 1. Legen Sie den Parameter **compressionFormat** bei Bedarf auf **1** fest.
 1. Legen Sie den Parameter **archivingType** auf **1** fest.
 
-Stellen Sie nach der Konfiguration des E-Mail-BCC sicher, dass Sie die **[!UICONTROL Archive emails]** Option in der Bereitstellungsvorlage oder der Bereitstellung auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass Sie die Option E-Mails **[!UICONTROL archivieren]** in der Versandvorlage oder im Versand auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 
 ## Best Practices {#best-practices}
 
 * **BCC-Adresszeile**: Stellen Sie sicher, dass es über genügend Aufnahmekapazität verfügt, um alle E-Mails zu archivieren, die von der MTA gesendet werden.
-* **MTA-Mutualisierung**: Die BCC-Archivierungsfunktion funktioniert auf MTA-Ebene. Damit können Sie jede E-Mail, die vom MTA gesendet wird, duplizieren. Da die MTA über mehrere Instanzen (z. B. dev, test oder prod) oder sogar über mehrere Clients (in einer Umgebung mit mittlerer Quelle) hinweg mualisiert werden kann, wirkt sich das Einrichten dieser Funktion auf die Sicherheit aus:
+* **MTA-Mutualisierung**: Die BCC-Archivierungsfunktion funktioniert auf MTA-Ebene. Damit können Sie alle E-Mails, die von der MTA gesendet werden, Duplikat werden. Da die MTA über mehrere Instanzen hinweg (z. B. dev, test oder prod) oder sogar über mehrere Clients (in einer Mid-Sourcing-Umgebung) hinweg mutualisiert werden kann, wirkt sich das Einrichten dieser Funktion auf die Sicherheit aus:
 
    * Wenn Sie eine MTA für mehrere Clients freigeben und bei einem dieser Clients diese Option aktiviert ist, greift dieser Client auf alle E-Mails der anderen Clients zu, die dieselbe MTA verwenden. Um eine solche Situation zu vermeiden, verwenden Sie für jeden Client eine andere MTA.
-   * Wenn Sie dieselbe MTA für mehrere Instanzen verwenden (Entwicklung, Test, Test), werden die von allen drei Instanzen gesendeten Nachrichten von der Option dataLogPath dupliziert.
+   * Wenn Sie dieselbe MTA für mehrere Instanzen verwenden (Entwicklung, Test, Test), werden die Nachrichten, die von allen drei Instanzen gesendet werden, von der Option dataLogPath dupliziert.
 
 * **E-Mails pro Verbindung**: Die BCC E-Mail-Archivierung funktioniert durch Öffnen einer Verbindung und Versenden aller E-Mails über diese Verbindung. Adobe empfiehlt, zusammen mit Ihrem internen technischen Ansprechpartner die Anzahl der E-Mails zu überprüfen, die in einer bestimmten Verbindung akzeptiert werden. Eine Erhöhung dieser Zahl kann einen großen Einfluss auf den BCC-Durchsatz haben.
-* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Dies bedeutet, dass Sie je nach Konfiguration des E-Mail-Servers zusätzliche IPs in Ihrem Netzwerk auf eine Whitelist setzen müssen.
+* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Dies bedeutet, dass Sie je nach Konfiguration des E-Mail-Servers zusätzliche IPs zur zulassungsliste in Ihrem Netzwerk hinzufügen müssen.
 
