@@ -14,8 +14,11 @@ discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+translation-type: tm+mt
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 88%
 
 ---
 
@@ -46,7 +49,7 @@ Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Prof
 
 >[!NOTE]
 >
->Sollte die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** angekreuzt sein, bedeutet dies, dass das Profil auf der Blacklist steht. Die jeweilige Person hat also mitgeteilt (z. B. durch Klick auf einen Abmelde-Link in einem Newsletter), dass sie nicht mehr kontaktiert werden möchte. Sie wird somit nicht in Zielgruppen eingeschlossen, unabhängig davon, welchen Kanal der Versand verwendet (E-Mail, Briefpost etc.). Lesen Sie hierzu auch [diese Seite](../../delivery/using/understanding-quarantine-management.md).
+>Wenn die Option &quot; **[!UICONTROL Kein Kontakt mehr&quot;(von einem Kanal)]** ausgewählt ist, bedeutet dies, dass das Profil auf der blockierungsliste liegt, d. h. das Profil hat den Wunsch geäußert, nicht kontaktiert zu werden (z. B. durch Klicken auf einen Link in einer Abmeldung in einem Newsletter). Sie werden nicht mehr von Versänden auf einem Kanal (E-Mail, Direktwerbung usw.) angegangen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/understanding-quarantine-management.md).
 
 ## Tab &quot;Kontaktdaten&quot;{#contact-information-tab}
 
