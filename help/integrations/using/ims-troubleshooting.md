@@ -14,8 +14,11 @@ discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+translation-type: tm+mt
+source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 91%
 
 ---
 
@@ -62,7 +65,7 @@ Im externen Campaign-Konto definierte Perimeter müssen eine Teilmenge der von I
 
 **Callback-URL**
 
-Die **Callback-URL** sollte sich auf der Whitelist befinden und mit &quot;https://&quot; beginnen. Überprüfen Sie, ob die **Callback-URL** mit der entsprechenden Instanz verknüpft ist. Beispielsweise sollte die Produktionsinstanz an die Produktions-URL weiterleiten.
+Die **Callback-URL** sollte der zulassungsliste und dem Beginn mit &quot;https://&quot;hinzugefügt werden. Vergewissern Sie sich, dass die **Callback-URL** mit der entsprechenden Instanz verknüpft ist. Beispielsweise sollte die Produktionsinstanz zur Produktions-URL umgeleitet werden.
 
 **Clientkennung und Client-Geheimnis**
 
