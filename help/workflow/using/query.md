@@ -14,8 +14,11 @@ discoiquuid: b53d9810-f61f-4257-b410-e4d30f78429d
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: f8cf2f72dcf2ab48a42faf7931ca831b6431548d
+translation-type: tm+mt
+source-git-commit: ffee73b949a77343eaf23d0fb9a58a4283f4f87a
+workflow-type: tm+mt
+source-wordcount: '1680'
+ht-degree: 100%
 
 ---
 
@@ -121,6 +124,7 @@ Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Info
 
    * Wenn Sie mehrere Zeilen abrufen möchten (**[!UICONTROL Zeilenanzahl begrenzen]**), können Sie die Anzahl an abzurufenden Zeilen angeben.
    * Wenn die abgerufenen Spalten Aggregate enthalten, beispielsweise die Anzahl an Versicherungsfällen, der durchschnittliche Warenkorb in einem POS etc., kann die Option **[!UICONTROL Aggregate]** verwendet werden.
+
    ![](assets/query_add_collection_param.png)
 
 1. Definieren Sie die Unterauswahl der Kollektionselemente. Beispielsweise die Käufe der letzten 15 Tage.
@@ -145,6 +149,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
    * Alter kleiner als 30 Jahre.
    * Alter größer als 18 Jahre.
    * Land gleich Deutschland.
+
    ![](assets/query_example.png)
 
    Der der Abfrage entsprechende SQL-Code stellt sich wie folgt dar:
@@ -185,7 +190,7 @@ Im folgenden Abschnitt finden Sie Best Practices zur Optimierung der in Adobe Ca
 
    Stellen Sie sicher, dass die `where`-Klausel vom gleichen Typ wie das Feld ist.
 
-   Ein häufiger Fehler ist `iBlacklist='3'`, wobei `iBlacklist` ein numerisches Feld und `3` ein Textwert ist.
+   Ein häufiger Fehler ist `iBlocklist='3'`, wobei `iBlocklist` ein numerisches Feld und `3` ein Textwert ist.
 
    Informieren Sie sich über den Ausführungsplan Ihrer Anfrage. Vermeiden Sie vollständige Tabellen-Scans, insbesondere bei Echtzeitabfragen oder Abfragen nahezu in Echtzeit, die jede Minute ausgeführt werden.
 
@@ -228,6 +233,7 @@ Weitere Informationen zu Filterdimension finden Sie in [diesem Abschnitt](../../
    * Daten,
    * Anwendung,
    * Umfänge.
+
    >[!NOTE]
    >
    >Eine Funktion, die in einer Entwicklungsumgebung funktioniert, funktioniert möglicherweise nicht in einer Produktionsumgebung, in der die Daten unterschiedlich sein können. Versuchen Sie, die Hauptunterschiede zu identifizieren, um Risiken vorherzusehen und Lösungen vorzubereiten.
