@@ -14,8 +14,11 @@ discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 95%
 
 ---
 
@@ -54,7 +57,7 @@ Das Verfahren zum Erstellen einer Prozessvorlage wird unter [Export-Assistent](.
 
 >[!NOTE]
 >
->Die Vorlage **[!UICONTROL Import einer Blacklist-Datei]** wurde bereits dahingehend konfiguriert, eine Liste mit auf die Blacklist gesetzten E-Mail-Adressen zu importieren.
+>Die native **[!UICONTROL Import-blockierungsliste]** -Vorlage ist bereits für den Import einer Liste von E-Mail-Adressen konfiguriert, die der blockierungsliste hinzugefügt wurden.
 > 
 >Mit den Vorlagen **[!UICONTROL Neuer Textimport]** und **[!UICONTROL Neuer Textexport]** können Sie einen völlig neuen Import oder Export konfigurieren.
 
