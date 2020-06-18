@@ -14,8 +14,11 @@ discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 527d2dd2296d18c8ca26745b9f87d65c6fdf480a
+translation-type: tm+mt
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+workflow-type: tm+mt
+source-wordcount: '2537'
+ht-degree: 94%
 
 ---
 
@@ -34,21 +37,21 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 
 Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
-Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantänefunktion vermeiden Sie, von diesen Providern auf eine Blacklist gesetzt zu werden.
+Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Quarantäne ermöglicht es Ihnen daher, einer blockierungsliste nicht von diesen Anbietern hinzugefügt zu werden.
 
 Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden. Weiterführende Informationen zu Best Practices zur Durchführung und Optimierung von Sendungen finden Sie auf [dieser Seite](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
 
-### Quarantäne im Vergleich zur Blacklist {#quarantine-vs-blacklisting}
+### Quarantäne vs. blockierungsliste {#quarantine-vs-block-list}
 
 Eine **Quarantäne** bezieht sich immer nur auf die Adresse, nicht aber auf das Profil selbst. Sollten zwei Profile dieselbe E-Mail-Adresse verwenden, sind beide von der Quarantäne betroffen.
 
 Falls jedoch ein Profil mit einer E-Mail-Adresse in Quarantäne eine neue Adresse angibt, kann es erneut in Versandzielgruppen aufgenommen werden.
 
-Im Gegensatz dazu sind es bei der **Blacklist** die Profile selbst, die vom Versand ausgeschlossen werden. Dies ist z. B. nach einem Opt-out der Fall. 
+Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blacklist gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
+>Wenn ein Benutzer auf eine SMS-Nachricht mit einem Suchbegriff wie &quot;STOP&quot;antwortet, um sich von SMS-Versänden abzumelden, wird sein Profil nicht wie im E-Mail-Ausschluss zur blockierungsliste hinzugefügt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
 ## In Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses}
 
@@ -103,10 +106,10 @@ Sie haben die Möglichkeit, eine Adresse aus der Quarantäne zu nehmen, indem Si
 
 ![](assets/tech_quarant_error_status.png)
 
-Wenn Sie den Status **[!UICONTROL Auf Whitelist]** wählen, wird die Adresse auch bei Fehlern systematisch in die Zustellung einbezogen.
+If you change the status to **[!UICONTROL On allow list]**, the address will be targeted systematically each time even if an error is encountered.
 
 >[!CAUTION]
-Adressen auf der Blacklist sind nicht von der Quarantäneverwaltung betroffen und werden nicht in die Zustellung einbezogen, auch wenn ihr Status manuell geändert wurde.
+Adressen auf der blockierungsliste sind nicht vom Quarantäne-System betroffen und werden nicht als Ziel, auch wenn Sie den Status der Adresse ändern.
 
 Sie können außerdem die Fehlerschwelle und die Spanne zwischen zwei Fehlern anpassen. Auf die entsprechenden Parameter kann im Softwareverteilungs-Assistenten (E-Mail-Kanal / erweiterte Parameter) zugegriffen werden. Näheres zum Softwareverteilungs-Assistenten erfahren Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
