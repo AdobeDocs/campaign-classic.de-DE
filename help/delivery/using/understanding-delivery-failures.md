@@ -14,11 +14,11 @@ discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: ht
-source-wordcount: '2485'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9c26ef0b520c6486d86e73cb93612cc7ab9556d0
+workflow-type: tm+mt
+source-wordcount: '2501'
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,7 @@ Wenn einem Profil eine Nachricht (E-Mail, SMS, Push-Benachrichtigung) nicht zuge
 
 Nachdem eine Nachricht gesendet wurde, können Sie im Versandlogs-Tab den Versandstatus für jedes Profil sowie den damit verbundenen Fehlertyp und die Ursache einsehen.
 
-Mitteilungen können während der Versandvorbereitung auch ausgeschlossen werden, wenn eine Adresse unter Quarantäne gestellt oder ein Profil auf die Blacklist gesetzt wurde. Ausgeschlossene Mitteilungen werden im Versand-Dashboard aufgeführt.
+Nachrichten können auch während der Vorbereitung des Versands ausgeschlossen werden, wenn eine Adresse unter Quarantäne gestellt wird oder sich ein Profil auf der blockierungsliste befindet. Ausgeschlossene Nachrichten werden im Versand-Dashboard aufgeführt.
 
 **Verwandte Themen:**
 
@@ -86,10 +86,10 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Qualitätsindex der Postanschrift ist zu niedrig.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Adresse auf der Blacklist </td> 
+   <td> Adresse auf blockierungsliste </td> 
    <td> Hard </td> 
    <td> 8 </td> 
-   <td> Zum Versandzeitpunkt war die Adresse auf der Blacklist. Dieser Status wird zum Import von Daten aus externen Listen und Systemen in die Quarantäne-Liste verwendet.<br /> </td> 
+   <td> Die Adresse wurde zum Zeitpunkt des Versands der blockierungsliste hinzugefügt. Dieser Status wird zum Importieren von Daten aus externen Listen und externen Systemen in die Liste der Adobe Campaign-Quarantäne verwendet.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kontrollgruppenadresse </td> 
@@ -107,7 +107,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Fehler ignoriert </td> 
    <td> Ignoriert </td> 
    <td> 25 </td> 
-   <td> Die Adresse ist auf der Whitelist. Der Fehler wird deshalb ignoriert und eine E-Mail wird gesendet.<br /> </td> 
+   <td> Die Adresse ist auf der zulassungsliste. Der Fehler wird daher ignoriert und eine E-Mail gesendet.<br /> </td> 
   </tr> 
   <tr> 
    <td> Ausgeschlossen nach Schlichtung </td> 
@@ -207,7 +207,7 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
    >
    >Die Konfiguration der Bounce-Adresse wird in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#managing-bounced-emails) beschrieben.
 
-   Der Feedback-Loop (Beschwerdenverwaltung) folgt dem gleichen Prinzip wie die Bounce Messages. Es besteht die Möglichkeit, in Adobe Campaign E-Mail-Regeln zu konfigurieren, um zukünftige Sendungen zu verhindern, wenn ein Empfänger eine E-Mail als unerwünscht kennzeichnet. Nachrichten an Empfänger, die bereits eine E-Mail als Spam gekennzeichnet haben, werden automatisch an ein speziell hierfür angelegtes Postfach weitergeleitet. Die Adressen dieser Empfänger werden auf die Blacklist gesetzt, auch wenn sie nicht auf den Abmelde-Link geklickt haben. Diese Blacklist-Adressen werden demzufolge in der Quarantänetabelle (**NmsAddress**) und nicht in der Empfängertabelle (**NmsRecipient**) gespeichert.
+   Die [Feedback-Schleife](../../delivery/using/technical-recommendations.md#feedback-loop) funktioniert wie eine Absprungnachricht. Wenn ein Benutzer eine E-Mail als Spam qualifiziert, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Versand für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an ein speziell zu diesem Zweck erstelltes E-Mail-Feld weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der blockierungsliste, obwohl sie nicht auf den Link Abmeldung geklickt haben. Die Adressen befinden sich auf der blockierungsliste in der Quarantäne (**NmsAddress**) und nicht in der Tabelle (**NmsRecipient**) des Empfängers.
 
    >[!NOTE]
    >
