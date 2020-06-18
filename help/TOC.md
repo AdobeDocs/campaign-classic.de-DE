@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 56ddf3dc1505c0507c67f8b08c9f33b4007f8857
+source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2062'
 ht-degree: 99%
 
 ---
@@ -161,7 +161,7 @@ ht-degree: 99%
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best Practices zur Rückgewinnung](delivery/using/re-engagement-best-practices.md)
-      + [Blacklist-Datenbanken](delivery/using/blacklisting-databases.md)
+      + [Blockierungsliste-Datenbanken](delivery/using/block-list-databases.md)
       + [Fehlerbehebung](delivery/using/deliverability-faq.md)
    + Content-Management-Modul {#content-management}
       + [Über Content Management](delivery/using/about-content-management.md)
