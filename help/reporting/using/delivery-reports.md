@@ -14,8 +14,11 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b74ea9a6b079bbe88ed17a79e532bd8ce6ce13ae
+translation-type: tm+mt
+source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+workflow-type: tm+mt
+source-wordcount: '1641'
+ht-degree: 97%
 
 ---
 
@@ -164,7 +167,7 @@ Dieser Bericht zeigt die wichtigsten Informationen zu einem Versand.
 Dieser Bereich zeigt zwei Indikatoren:
 
 * **[!UICONTROL Ursprungspopulation]**: Gesamtzahl der Empfänger, die den Versand erhalten sollen.
-* **[!UICONTROL Durch eine Regel zurückgewiesene Nachrichten]**: Anzahl der im Zuge der Versandanalyse aufgrund einer Typologieregel zurückgewiesenen Adressen (unvollständige Adresse, in Quarantäne, auf der Blacklist etc.). Weiterführende Informationen zu Typologieregeln finden Sie auf dieser [Seite](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Von der Regel]** abgelehnte Nachrichten: Anzahl der Adressen, die während der Analyse bei der Anwendung von Typologieregeln ignoriert wurden: Adresse fehlt, unter Quarantäne gestellt, der blockierungsliste hinzugefügt usw. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Ausschlussgründe]**
 
