@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
 workflow-type: tm+mt
 source-wordcount: '2380'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 ---
 
 
-# Beschreibung des Kampagne-Datenmodells{#data-model-description}
+# Campaign data model description{#data-model-description}
 
 Adobe Campaign enthält ein vordefiniertes Datenmodell. Dieser Abschnitt enthält einige Details zu den integrierten Tabellen des Adobe Campaign-Datenmodells und deren Interaktion.
 
@@ -55,9 +55,9 @@ Dies ist die Standardtabelle für die **Empfänger von Versänden**. Sie enthäl
 * iEmailFormat: bevorzugte Format für E-Mails (1 für Text, 2 für HTML und 0, wenn nicht definiert).
 * sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity werden zum Aufbau der Postanschrift verwendet (gemäß XPZ 10-011 AFNOR Standard ab Mai 1997).
 * sPhone, sMobilePhone, sFax enthalten die Telefon-, Handy- und Faxnummern.
-* iBlackList ist das standardmäßige Ausschluss-Flag, das für die Profil verwendet wird (1 bedeutet &quot;unsubscribed&quot;, 0 ansonsten).
+* iBlockList ist das standardmäßige Ausschluss-Flag, das für die Profil verwendet wird (1 bedeutet &quot;unsubscribed&quot;, andernfalls 0).
 
-Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit dem Ausführungsordner verknüpft. For more on this, see [XtkFolder](#XtkFolder).
+Das Feld iFolderId ist der Fremdschlüssel, der den Empfänger mit dem Ausführungsordner verknüpft. Weitere Informationen hierzu finden Sie unter [XtkFolder](#XtkFolder).
 
 Das Feld sCountryCode ist der ISO-Code 3166-1 Alpha 2 (2 Zeichen) des Landes, das mit dem Empfänger verknüpft ist. Dieses Feld ist tatsächlich ein ausländischer Schlüssel in der Länderreferenztabelle (NmsCountry), die die Länderbeschriftungen und andere Ländercodedaten enthält. Wenn das Land nicht ausgefüllt wird, wird der Wert &quot;XX&quot;gespeichert (und anstelle eines Null-ID-Datensatzes verwendet).
 
@@ -67,7 +67,7 @@ For more on the Recipient table, see [this section](../../configuration/using/ab
 
 Diese Tabelle entspricht dem Schema **nms:group** .
 
-Sie können **statische Gruppen von Empfängern** erstellen. Zwischen Empfängern und Gruppen besteht eine Beziehung zwischen vielen und vielen. Ein Empfänger kann beispielsweise zu mehreren Gruppen gehören und eine Gruppe kann mehrere Empfänger enthalten. Gruppen können manuell, über einen Import oder über Versand-Targeting erstellt werden. Gruppen werden oft als Versand-Zielgruppen verwendet. Es gibt einen eindeutigen Index im Feld, der den internen Namen der sName-Gruppe darstellt. Die Gruppe ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. For more on this, see [XtkFolder](#XtkFolder)).
+Sie können **statische Gruppen von Empfängern** erstellen. Zwischen Empfängern und Gruppen besteht eine Beziehung zwischen vielen und vielen. Ein Empfänger kann beispielsweise zu mehreren Gruppen gehören und eine Gruppe kann mehrere Empfänger enthalten. Gruppen können manuell, über einen Import oder über Versand-Targeting erstellt werden. Gruppen werden oft als Versand-Zielgruppen verwendet. Es gibt einen eindeutigen Index im Feld, der den internen Namen der sName-Gruppe darstellt. Die Gruppe ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. Weitere Informationen finden Sie unter [XtkFolder](#XtkFolder)).
 
 ### NmsRcpGrpRel {#NmsRcpGrpRel}
 
@@ -81,7 +81,7 @@ In Adobe Campaign können Sie Abonnement für Informationsdienst (Themen) erstel
 
 Dienste sind Einrichtungen, die Gruppen ähnlich sind (statische Empfänger), mit der Ausnahme, dass sie mehr Informationen verbreiten und eine einfache Verwaltung von Abonnements und Abmeldungen über Formulare ermöglichen.
 
-Es gibt einen eindeutigen Index im Feld, der den internen Namen des sName-Dienstes darstellt. Der Dienst ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. For more on this, see [XtkFolder](#XtkFolder)). Schließlich gibt das Feld &quot;iType&quot;den Kanal des Versands dieses Dienstes an (0 für E-Mail, 1 für SMS, 2 für Telefon, 3 für Direktwerbung und 4 für Fax).
+Es gibt einen eindeutigen Index im Feld, der den internen Namen des sName-Dienstes darstellt. Der Dienst ist mit einem Ordner verknüpft (der Schlüssel ist iFolderId. Weitere Informationen finden Sie unter [XtkFolder](#XtkFolder)). Schließlich gibt das Feld &quot;iType&quot;den Kanal des Versands dieses Dienstes an (0 für E-Mail, 1 für SMS, 2 für Telefon, 3 für Direktwerbung und 4 für Fax).
 
 ### NmsSubscription {#NmsSubscription}
 
@@ -101,7 +101,7 @@ Diese Tabelle entspricht dem Schema **nms:Versand** .
 
 Jeder Datensatz in dieser Tabelle stellt eine **Versand-Aktion** oder eine **Versandvorlage** dar. Es enthält alle erforderlichen Parameter für die Ausführung von Versänden (Zielgruppe, Inhalt usw.). Während der Analyse werden Versand- (Broadcast-)Protokolle (NmsBroadLog) und zugehörige Tracking-URLs (NmsTrackingUrl) erstellt (weitere Informationen zu beiden Tabellen finden Sie unten).
 
-Es gibt eine eindeutige Indexposition auf dem Feld, die den internen Namen des Versands sInternalName oder Szenarios darstellt. Der Versand ist mit einem Ausführungsordner verknüpft (der Fremdschlüssel ist iFolderProcessId. For more on this, see [XtkFolder](#XtkFolder)).
+Es gibt eine eindeutige Indexposition auf dem Feld, die den internen Namen des Versands sInternalName oder Szenarios darstellt. Der Versand ist mit einem Ausführungsordner verknüpft (der Fremdschlüssel ist iFolderProcessId. Weitere Informationen finden Sie unter [XtkFolder](#XtkFolder)).
 
 ### XtkFolder {#XtkFolder}
 
