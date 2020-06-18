@@ -14,11 +14,11 @@ discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: fcedad248169f53e716f2bd8b1b141fbf1f4d189
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+workflow-type: tm+mt
 source-wordcount: '2679'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,12 +117,12 @@ Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand 
 
 Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
 
-* Manche Internet Service Provider haben Ihre IP-Adressen möglicherweise auf eine Schwarze Liste gesetzt. Prüfen Sie in diesem Fall Ihre Broadlogs und lesen Sie in [diesem Erste-Schritte-Handbuch](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html).
+* Einige E-Mail-Anbieter haben möglicherweise Ihre IP-Adressen zu einer blockierungsliste hinzugefügt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](../../delivery/using/about-deliverability.md).
 * Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
    * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL Kontingent ausgeschöpft]**): Das in Campaign von den MX-Regeln definierte Kontingent ist ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-deliverability-faq.html). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL dynamische Durchsatzkontrolle]**): Vom Campaign MTA wurden beim Sendeversuch an einen ISP Fehler entdeckt, weshalb der Versand verlangsamt wurde, um die Fehlerdichte zu verringern und zu vermeiden, dass die IP-Adresse auf eine Schwarze Liste gesetzt wird.
+   * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential block list.
 
 * Durch einen Systemfehler wird möglicherweise verhindert, dass Server miteinander interagieren. Dadurch kann sich der gesamte Versandvorgang verlangsamen. Überprüfen Sie die Server, um sicherzustellen, dass keine Speicher- oder Ressourcenfehler vorliegen, die Campaign beispielsweise daran hindern können, Personalisierungsdaten abzurufen.
 
@@ -166,7 +166,7 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
   </tr> 
   <tr> 
    <td> Ignoriert<br /> </td> 
-   <td> Die Nachricht wurde wegen eines Adressfehlers nicht an den Empfänger gesendet. Die Adresse stand entweder auf der Blacklist, war in Quarantäne, nicht verfügbar oder ein Duplikat. <br /> </td> 
+   <td> Der Versand wurde wegen eines Fehlers mit seiner Adresse nicht an den Empfänger gesendet. Es wurde entweder einer blockierungsliste hinzugefügt, unter Quarantäne gestellt, nicht bereitgestellt oder einem Duplikat. <br /> </td> 
   </tr> 
   <tr> 
    <td> Gesendet<br /> </td> 
