@@ -14,8 +14,11 @@ discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+translation-type: tm+mt
+source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+workflow-type: tm+mt
+source-wordcount: '1675'
+ht-degree: 97%
 
 ---
 
@@ -154,7 +157,7 @@ Folgende Optionen stehen zur Verfügung:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert werden möchten]**: schließt die Empfänger aus, die infolge eines Opt-outs auf die Blacklist gesetzt wurden. Aus berufsethischen Gründen und gemäß der gültigen Rechtslage muss diese Option stets angekreuzt bleiben.
+* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d.h. Empfänger, deren E-Mail-Adressen sich auf einer blockierungsliste (&#39;Opt-out&#39;) befinden. Diese Option muss weiterhin gewählt werden, um die Berufsethik des E-Marketing und die Gesetze über den elektronischen Geschäftsverkehr einzuhalten.
 * **[!UICONTROL Adressen in Quarantäne ausschließen]**: schließt die Empfänger aus, für die frühere Zustellversuche fehlgeschlagen sind. Es wird dringend empfohlen, diese Option NICHT ABZUWÄHLEN.
 
    >[!NOTE]
