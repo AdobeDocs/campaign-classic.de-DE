@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2c555f29f0e0029b468927dbdb4bc79f9a35990d
+source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 98%
+source-wordcount: '2819'
+ht-degree: 94%
 
 ---
 
@@ -77,7 +77,19 @@ _13. August 2019_
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **29. April 2020**: neuer Build (9032@3a9dc9c), der die folgenden Fehlerbehebungen enthält:
+![](assets/do-not-localize/green_2.png) **22. Juni 2020**: new build (9032@800be2e), das die folgenden Fehlerbehebungen enthält:
+
+* Der iOS HTTP2 Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903, NEO-25799)
+
+Die folgenden Fehlerbehebungen beziehen sich auf den Tracking-Link-Sicherheitsmechanismus:
+
+* Es wurde ein Fehler behoben, der verhinderte, dass die Verfolgung von &quot;Benachrichtigungsklicks&quot;funktionierte (iOS- und Android-Push-Benachrichtigungen). (NEO-25965)
+* Es wurde ein Problem behoben, das das Öffnen/Klicken von Tracking-URLs bei Verwendung bestimmter veralteter Outlook-Versionen verhindern konnte.  (NEO-25688)
+* Es wurde ein Fehler behoben, der verhinderte, dass die Verfolgung von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert hat. (NEO-25774)
+* Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
+* Es wurde ein Verfolgungsproblem bei der Verwendung spezifischer benutzerdefinierter Verfolgungsformeln behoben. (NEO-25277)
+
+![](assets/do-not-localize/orange_2.png) **29. April 2020**: neuer Build (9032@3a9dc9c), der die folgenden Fehlerbehebungen enthält:
 
 * Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism).
 * Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
