@@ -5,10 +5,10 @@ solution: Campaign Classic
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: be148d7cd55097b9014d2f4d3b095c65a5ca8c54
+source-git-commit: b247a3702249183e1e0851160fb3ac3809437ff1
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 90%
+source-wordcount: '275'
+ht-degree: 86%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 90%
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Neue Funktionen
+
+* Sowohl die Begriffe &quot;Whitelist&quot;als auch &quot;Blacklist&quot;wurden aus der Dokumentation zum Adobe Campaign entfernt. [mehr dazu](/help/rn/using/documentation-updates.md)
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>- Häufig gestellte Fragen, Best Practices, Hilfe-Ressourcen und Hilfeanfragen
 
