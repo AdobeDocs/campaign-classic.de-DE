@@ -12,8 +12,11 @@ discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 5eb82bb5dae589cb18d42695565b25dad36006bd
+translation-type: tm+mt
+source-git-commit: a215109db2d511180c91723059cd8ca10a34a612
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 78%
 
 ---
 
@@ -35,7 +38,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    Die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** fügt eine weitere Etappe hinzu, die die Filterung des Aggregats ermöglicht (z. B. nach einer bestimmten Art von Bestellung, nach Kunden mit mehr als zehn Bestellungen etc.).
 
-1. Bei Bedarf kann die Ausgabedatei um zusätzliche Spalten ergänzt werden, die die Ergebnisse von Berechnungen oder speziellen Vorgängen bezüglich der Daten aufnehmen. Klicken Sie hierzu auf das Symbol **[!UICONTROL Hinzufügen]**.
+1. If necessary, you can add new columns to the output file, such as computing or processing results for example. To do this, click the **[!UICONTROL Add]** icon.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -50,6 +53,12 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
    Kreuzen Sie den gewünschten Formeltyp an.
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
+
+Sie können einen Nachbearbeitungsprozess definieren, der während der Extraktion der Daten ausgeführt werden soll, sodass Sie die Dateien komprimieren oder verschlüsseln können. Dazu muss der gewünschte Befehl auf der Registerkarte &quot; **[!UICONTROL Skript]** &quot;der Aktivität hinzugefügt werden.
+
+Weitere Informationen finden Sie in diesem Abschnitt: [Komprimieren oder Verschlüsseln einer Datei](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+
+![](assets/postprocessing_dataextraction.png)
 
 ## Aggregat-Funktionen {#list-of-aggregate-functions}
 
