@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e488e1771fe4d07132844900f41f5f4f09fa9438
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 97%
 
 ---
 
@@ -42,15 +42,15 @@ Die vollständige Liste der Adobe-Lösungen und Core Services, die mit Adobe Cam
 
 In Ihrer Arbeitsumgebung verfügen Sie unter Umständen über verschiedene Lösungen der Adobe Experience Cloud. Diese sind miteinander über s. g. Organisationen verbunden. Eine **Organisation** ist die Entität, mit der ein Administrator Gruppen und Benutzer konfigurieren und Anmeldungen in der Experience Cloud steuern kann. Eine Organisation ist wie eine Unternehmensanmeldung bei allen Produkten und Lösungen, die in der Experience Cloud enthalten sind. Normalerweise besitzt eine Organisation den Namen Ihres Unternehmens. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen.
 
-Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe Experience Cloud werden im [Hilfeportal von Adobe Experience Cloud](https://marketing.adobe.com/resources/help/de_DE/mcloud/organizations.html) erläutert.
+Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe Experience Cloud werden im [Hilfeportal von Adobe Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) erläutert.
 
 >[!CAUTION]
 >
->Bei der Neuinstallation von Adobe Campaign oder der Integration einer bereits existierenden Installation mit Adobe Experience Cloud wird der [Experience-Cloud-ID-Service](https://marketing.adobe.com/resources/help/de_DE/mcvid/) aktiviert, welcher den von Adobe Campaign standardmäßig für Tracking-Funktionen eingesetzten Cookie ersetzt.
+>Bei der Neuinstallation von Adobe Campaign oder der Integration einer bereits existierenden Installation mit Adobe Experience Cloud wird der [Experience-Cloud-ID-Service](https://docs.adobe.com/content/help/de-DE/id-service/using/home.html) aktiviert, welcher den von Adobe Campaign standardmäßig für Tracking-Funktionen eingesetzten Cookie ersetzt.
 >
 >Dadurch wird Empfängern, sobald sie Trackinglogs erzeugen, eine eindeutige Besucherkennung zugeordnet. Diese wird im Feld **[!UICONTROL Anforderer-UUID (@sourceID)]** der **[!UICONTROL nms:trackingLogRcp]**-Tabelle gespeichert. Trackingdaten von Empfängern, die vor der Implementierung des Besucher-ID-Services existierten, sind dann nicht mehr verwendbar.
 >
->Unter der Voraussetzung, dass sie denselben [CNAME](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid_cname.html) aufweisen, erkennen die anderen Lösungen der Adobe-Experience-Cloud-Lösungen diese Kennung.
+>Unter der Voraussetzung, dass sie denselben [CNAME](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html) aufweisen, erkennen die anderen Lösungen der Adobe-Experience-Cloud-Lösungen diese Kennung.
 
 ## Experience Cloud-Integrationen {#experience-cloud-integrations}
 
