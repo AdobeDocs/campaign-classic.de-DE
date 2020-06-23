@@ -14,8 +14,11 @@ discoiquuid: 44c7acdd-6b7a-4e88-b2a7-3e9bf8a6eab5
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b0cd40d4616f7b55a1d655a1717b9c7ce8d8b6c6
+translation-type: tm+mt
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 95%
 
 ---
 
@@ -39,4 +42,4 @@ Verschiedene Datentypen können in Verbindung mit Adobe Target zum Einsatz komme
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie auf den [Adobe-Target-Hilfeseiten](https://marketing.adobe.com/resources/help/de_DE/target/a4t/c_campaign_and_target.html).
+>Weiterführende Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie auf den [Adobe-Target-Hilfeseiten](https://docs.adobe.com/content/help/en/target/using/integrate/campaign-and-target.html).
