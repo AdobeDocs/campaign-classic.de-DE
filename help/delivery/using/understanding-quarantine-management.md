@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f7c040ceffcce20805d7cc8d1e4e46c77e611056
+source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
 workflow-type: tm+mt
-source-wordcount: '2537'
-ht-degree: 94%
+source-wordcount: '2681'
+ht-degree: 87%
 
 ---
 
@@ -92,7 +92,7 @@ Folgende Berichte enthalten Informationen zu Adressen in Quarantäne:
 
 * In **[!UICONTROL Fehler und Bounces]** finden sich neben den Informationen bezüglich der Quarantäne-Adressen auch Hinweise auf die Fehlertypen und die Verteilung der Fehler nach Domains.
 
-Diese Informationen stehen für alle Sendungen der Plattform (**Startseite > Berichte**) oder versandspezifisch zur Verfügung. Sie haben auch die Möglichkeit, benutzerdefinierte Berichte zu erstellen und die dort angezeigten Daten Ihren Bedürfnissen entsprechend zu konfigurieren.
+Diese Informationen stehen für alle Sendungen der Plattform (**[!UICONTROL Startseite > Berichte]**) oder versandspezifisch zur Verfügung. Sie haben auch die Möglichkeit, benutzerdefinierte Berichte zu erstellen und die dort angezeigten Daten Ihren Bedürfnissen entsprechend zu konfigurieren.
 
 ### Für einen Empfänger in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-a-recipient}
 
@@ -102,16 +102,30 @@ Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klic
 
 ### Adresse aus der Quarantäne nehmen {#removing-a-quarantined-address}
 
-Sie haben die Möglichkeit, eine Adresse aus der Quarantäne zu nehmen, indem Sie manuell ihren Status auf **[!UICONTROL Gültig]** setzen.
+Bei Bedarf können Sie eine Adresse manuell aus der Liste der Quarantäne entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, automatisch aus der Quarantäne-Liste durch den **[!UICONTROL Datenbankbereinigungs]** -Workflow gelöscht.
 
-![](assets/tech_quarant_error_status.png)
+So entfernen Sie eine Adresse manuell aus der Liste &quot;Quarantäne&quot;:
 
-If you change the status to **[!UICONTROL On allow list]**, the address will be targeted systematically each time even if an error is encountered.
+* Sie können den Status des Knotens &quot; **[!UICONTROL Administration&quot;> &quot;Kampagnenverwaltung&quot;> &quot;Verwaltung für nicht bereitgestellte Elemente&quot;> &quot;Nicht bereitgestellte Elemente und Adressen&quot;in &quot;]** Gültig **[!UICONTROL &quot;ändern]** .
 
->[!CAUTION]
-Adressen auf der blockierungsliste sind nicht vom Quarantäne-System betroffen und werden nicht als Ziel, auch wenn Sie den Status der Adresse ändern.
+   ![](assets/tech_quarant_error_status.png)
 
-Sie können außerdem die Fehlerschwelle und die Spanne zwischen zwei Fehlern anpassen. Auf die entsprechenden Parameter kann im Softwareverteilungs-Assistenten (E-Mail-Kanal / erweiterte Parameter) zugegriffen werden. Näheres zum Softwareverteilungs-Assistenten erfahren Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
+* Sie können den Status auch auf **[!UICONTROL An zulassungsliste]**&#x200B;ändern. In diesem Fall bleibt die Adresse auf der Liste Quarantäne, wird jedoch systematisch als Ziel ausgewählt, auch wenn ein Fehler auftritt.
+
+<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+
+Die Adressen werden in den folgenden Fällen automatisch aus der Liste der Quarantäne entfernt:
+
+* Adressen in einem Status &quot; **[!UICONTROL Mit Fehler]** &quot;werden nach einem erfolgreichen Versand aus der Liste &quot;Quarantäne&quot;entfernt.
+* Adressen in einem Status &quot; **[!UICONTROL Mit Fehler]** &quot;werden aus der Liste &quot;Quarantäne&quot;entfernt, wenn der letzte Soft-Absprung vor mehr als 10 Tagen auftrat. Weitere Informationen zur Fehlerverwaltung finden Sie in [diesem Abschnitt](#soft-error-management).
+* Adressen in einem Status **[!UICONTROL mit Fehlern]** , die mit dem **[!UICONTROL Postfachfehler &quot;full]** &quot;abgeschnitten werden, werden nach 30 Tagen aus der Liste &quot;Quarantäne&quot;entfernt.
+
+Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
+
+>[!IMPORTANT]
+Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder dem Status &quot; **[!UICONTROL Bei blockierungsliste]** &quot;werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+
+Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Bereitstellungsassistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
 ## Ursachen für Quarantänen   {#conditions-for-sending-an-address-to-quarantine}
 
@@ -121,7 +135,7 @@ Adobe Campaign verwaltet die Quarantäne je nach dem Typ des Versandfehlers und
 * **Hardbounce**: Die E-Mail-Adresse kommt sofort in Quarantäne.
 * **Softbounce**: In diesem Fall wird die Adresse nicht sofort unter Quarantäne gestellt, sondern der Fehlerzähler nur hinaufgesetzt. Weitere Informationen hierzu finden Sie unter [Verwaltung von Softbounces](#soft-error-management).
 
-Wenn ein Benutzer eine E-Mail als Spam kennzeichnet (**Feedback Loop**), wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt.
+Wenn ein Benutzer eine E-Mail als Spam kennzeichnet ([Feedback Loop](../../delivery/using/technical-recommendations.md#feedback-loop)), wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt.
 
 Bei Adressen in Quarantäne zeigt das Feld **[!UICONTROL Fehlerursache]** an, was die Quarantäne ausgelöst hat. Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
 
