@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2454'
 ht-degree: 99%
 
 ---
@@ -325,7 +325,7 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
 * **[!UICONTROL Kennung der IMS-Organisation]**
 
-   ID Ihrer IMS-Organisation. Um Ihre Organisations-ID zu finden, gehen Sie auf diese [Seite](https://marketing.adobe.com/resources/help/de_DE/mcloud/faq.html) (**Wo finde ich meine IMS-Organisations-ID?**).
+   ID Ihrer IMS-Organisation. Um Ihre Organisations-ID zu finden, gehen Sie auf diese [Seite](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/faq.html) (**Wo finde ich meine IMS-Organisations-ID?**).
 
 * **[!UICONTROL Zuordnungsmaske]**
 
