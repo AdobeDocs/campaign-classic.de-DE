@@ -14,8 +14,11 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+translation-type: tm+mt
+source-git-commit: 972dce4b8429bb5b56fdf32b237384155bcc417a
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 90%
 
 ---
 
@@ -92,12 +95,12 @@ Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt wer
 
 Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
 
+Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typologieregeln, Quarantänen), werden nicht berücksichtigt. Ein Profil, das mehrere Sendungen erhalten hat, wird nur einmal gezählt.
+
 >[!NOTE]
 >
 >Die Kanäle Facebook und Twitter werden nicht berücksichtigt.
 
-Eine Übersicht über die **[!UICONTROL Anzahl der aktiven Profile]** erhalten Sie über das Menü **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]**.
+You can have an overview of the **[!UICONTROL Number of active profiles]** from Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu. Die tatsächliche Zählung erfolgt über den [technischen Workflow](../../workflow/using/deliveries.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** (**[!UICONTROL billingActiveContactCount]**), der täglich ausgeführt wird. Dabei werden die neuen Daten für den aktuellen Zeitraum im Menü **[!UICONTROL Kundenmetriken]** zum vorhandenen Bericht hinzugefügt. Jeder Zeitraum hat eine Dauer von 12 Monaten.
 
-Die tatsächliche Zählung erfolgt über den [technischen Workflow](../../workflow/using/delivery.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** (**[!UICONTROL billingActiveContactCount]**), der täglich ausgeführt wird. Dabei werden die neuen Daten für den aktuellen Zeitraum im Menü **[!UICONTROL Kundenmetriken]** zum vorhandenen Bericht hinzugefügt. Jeder Zeitraum hat eine Dauer von 12 Monaten.
-
-Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typologieregeln, Quarantänen), werden nicht berücksichtigt. Ein Profil, das mehrere Sendungen erhalten hat, wird nur einmal gezählt.
+Wenn Sie auf AWS gehostet werden und Campaign Classic aus Build 8931 verwenden, können Sie auch die Anzahl der aktiven Profil, die auf Ihren Instanzen verwendet werden, direkt über die Systemsteuerung überwachen. For more on this, refer to the [Control Panel documentation](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
