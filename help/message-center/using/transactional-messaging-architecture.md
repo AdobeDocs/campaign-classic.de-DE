@@ -12,9 +12,9 @@ discoiquuid: a910d5fe-cef4-47d8-b3bc-0055ef0d1afd
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e8a9d8d63c01cc19380267fced45e180b4d7ccb4
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e6f8eb6f4ffc3ffe9dbc643cf0edeef439c0f969
+workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Ausführungsinstanzen empfangen die Ereignisse des Informationssystems, ordnen d
 
 ## Mehrere Kontrollinstanzen {#supporting-several-control-instances}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Freigabe eines Ausführungs-Clusters mit mehreren Kontrollinstanzen wird nur bei On-Premise-Umgebungen unterstützt.
 
@@ -54,7 +54,7 @@ Mehrere Kontrollinstanzen können einen Ausführungscluster gemeinsam nutzen. We
 
 Bei der Installation der Transaktionsnachrichten-Packages sind mehrere Vorsichtsmaßnahmen erforderlich. Es wird empfohlen, in einer Testumgebung zu arbeiten, bevor Sie in Produktion gehen. Des Weiteren ist der Besitz einer entsprechenden Adobe-Campaign-Lizenz erforderlich. Nehmen Sie für weiterführende Informationen mit Ihrem Adobe-Kundenbetreuer Kontakt auf.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
 
@@ -90,7 +90,7 @@ To use transactional messaging with Interaction, you need to apply the following
 
 * Install the **Interaction** package onto the control instance and configure your offer catalog.
 
-  >[!CAUTION]
+  >[!IMPORTANT]
   >
   >Do not replicate the offers onto the execution instances.
 
@@ -179,6 +179,7 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Titel]** und **[!UICONTROL Interner Name]**: Benennen Sie Ihr externes Konto beliebig.
    * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL Externe Datenbank]** .
    * Die Option **[!UICONTROL Aktiviert]** muss aktiviert sein.
+
    In der Kategorie **[!UICONTROL Verbindung]**:
 
    * **[!UICONTROL Typ]**: Wählen Sie Ihren Datenbankserver aus, z. B. PostgresSQL.
@@ -201,6 +202,7 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Titel]** und **[!UICONTROL Interner Name]**: Benennen Sie Ihr externes Konto beliebig.
    * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL Externe Datenbank]** .
    * Die Option &quot;Aktiviert&quot; muss aktiviert sein.
+
    In der Kategorie **[!UICONTROL Verbindung]**:
 
    * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL HTTP-Weiterleitung auf Remote-Datenbank]** aus .
@@ -217,11 +219,13 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Titel]** und **[!UICONTROL Interner Name]**: Benennen Sie Ihr externes Konto beliebig.
    * **[!UICONTROL Typ]**: Wählen Sie **[!UICONTROL Ausführungsinstanz]** aus .
    * Die Option &quot;Aktiviert&quot; muss aktiviert sein.
+
    In der Kategorie **[!UICONTROL Verbindung]**:
 
    * **[!UICONTROL URL]**: Geben Sie die URL der Ausführungsinstanz ein.
    * **[!UICONTROL Konto]**: Geben Sie das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
    * **[!UICONTROL Passwort]**: Geben Sie das Passwort für das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
+
    In der Kategorie **[!UICONTROL Konto-Verbindungsmethode]**:
 
    * **[!UICONTROL Methode]**: Wählen Sie **[!UICONTROL Federated Data Access (FDA)]** aus.
