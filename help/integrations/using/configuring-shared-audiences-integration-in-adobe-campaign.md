@@ -14,8 +14,11 @@ discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 6ae45cbd87fc0152fc654202e03501fc8d2abd06
+translation-type: tm+mt
+source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 97%
 
 ---
 
@@ -38,6 +41,7 @@ Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfi
 
    * **[!UICONTROL importSharedAudience]**: SFTP-Konto für den Zielgruppen-Import.
    * **[!UICONTROL exportSharedAudience]**: SFTP-Konto für den Zielgruppen-Export.
+
    ![](assets/aam_config_1.png)
 
 1. Füllen Sie das **[!UICONTROL Server]**-Feld aus: die Domain **ftp-out.demdex.com** für das externe Importkonto und die Domain **ftp-in.demdex.com** für das externe Exportkonto.
@@ -76,6 +80,6 @@ Der Campaign Tracking Server muss in der Domain (CNAME) registriert sein. Weiter
 
 ## Schritt 4: Konfigurieren Sie den Visitor-ID-Dienst.{#step-4--configure-the-visitor-id-service}
 
-Falls Ihr Visitor-ID-Dienst nie in Ihren Web-Parametern und Webseiten konfiguriert wurde, finden Sie im folgenden [Dokument](https://marketing.adobe.com/resources/help/de_DE/mcvid/mcvid-setup-aam-analytics.html) oder im folgenden [Video](https://helpx.adobe.com/de/marketing-cloud/how-to/email-marketing.html#step-two) nähere Informationen dazu .
+Falls Ihr Visitor-ID-Dienst nie in Ihren Web-Parametern und Webseiten konfiguriert wurde, finden Sie im folgenden [Dokument](https://docs.adobe.com/content/help/en/id-service/using/implementation/setup-aam-analytics.html) oder im folgenden [Video](https://helpx.adobe.com/de/marketing-cloud/how-to/email-marketing.html#step-two) nähere Informationen dazu .
 
 Die Konfiguration und Einrichtung sind jetzt abgeschlossen. Die Integration kann somit zum Import und Export von Audiences und Segmenten verwendet werden.
