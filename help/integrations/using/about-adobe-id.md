@@ -14,9 +14,9 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0a4272ae13b469c7c17b8c3afa9748cbfbcf07ff
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 567cae1b91efbcd04a041630eeeb446450e002f7
+workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 
 Das Identity Management System (IMS) von Adobe hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die IMS-Implementierung ist technischen Administratoren von Adobe vorbehalten. Die IMS-Implementierung ist ein komplexer Prozess, dessen Implementierung lange dauern kann.
 
