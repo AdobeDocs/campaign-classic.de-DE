@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1b0980d540992538f7961afd7c218888dee4a39
+source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
 workflow-type: tm+mt
-source-wordcount: '6722'
+source-wordcount: '6740'
 ht-degree: 93%
 
 ---
@@ -28,6 +28,8 @@ Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen
 You can also consult the [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) for more updates.
 
 ## Juni 2020{#june-2020}
+
+Es wurden Anwendungsfälle zum [Verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) und [Entschlüsseln](../../workflow/using/importing-data.md#use-case-gpg-decrypt) von Daten mithilfe der Systemsteuerung und Kampagnen-Workflows hinzugefügt.
 
 Sowohl die Begriffe &quot;Whitelist&quot;als auch &quot;Blacklist&quot;wurden aus der Dokumentation zum Adobe Campaign entfernt. Einige dieser Begriffe sind möglicherweise in der Produktoberfläche, in Optionsnamen und im internen Code noch vorhanden, werden jedoch in den kommenden Kampagnen-Versionen mit &quot;blockierungsliste&quot;und &quot;zulassungsliste&quot;ersetzt.
 
