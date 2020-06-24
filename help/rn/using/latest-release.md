@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e3e8802aae0d10befcf9eef1ccf720f82c460038
+source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 15%
+source-wordcount: '1765'
+ht-degree: 16%
 
 ---
 
@@ -43,6 +43,8 @@ ht-degree: 15%
 </table>
 
 Der **neueste stabile Build** ist 9032 (3a9dc9c). Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
+
+![](assets/do-not-localize/cp-icon.png) **Neue Systemsteuerung Juni-Version** mit Active Profils Monitoring, Subdomain Delivery Audit und GPG Key Management. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
@@ -240,7 +242,7 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.
 * Es wurde ein Problem behoben, das beim Veröffentlichen einer Vorlage auf einer Ausführungsinstanz auftreten konnte.
 * Es wurde ein Problem behoben, das die Ausführung des technischen Arbeitsablaufs &quot;collectionPrivacyRequests&quot;verhindern konnte. (NEO-20513, NEO-25169)
-* Es wurden Probleme behoben, die auftreten konnten, wenn nach dem Hochladen auf Build 9080 versucht wurde, eine Verbindung mit Audience Manager herzustellen. (NEO-20511, NEO-25167)
+* Es wurden Probleme behoben, die auftreten konnten, wenn nach dem Hochladen zum Build 9080 versucht wurde, eine Verbindung zu Audience Manager herzustellen. (NEO-20511, NEO-25167)
 * Es wurden Probleme behoben, die beim Exportieren von Berichten im PDF- oder XLS-Format auftraten. (NEO-20982, NEO-23493, NEO-23348)
 * Es wurde ein Problem behoben, durch das ein Versand in der Liste Versand zweimal angezeigt werden konnte, nachdem er gesendet wurde.
 * Es wurde ein Problem bei der Vorbereitung des Versands behoben, das auftrat, wenn die Routing-Konfiguration so eingestellt war, dass der Versand über Mid-Sourcing gesendet wurde.
