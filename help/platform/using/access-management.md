@@ -14,11 +14,11 @@ discoiquuid: c0eb06fd-192c-4ee4-9a38-c9bedbe6aea0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 651dfdab75f64d72a1c5beb1273a878ee7102b47
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3068'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -397,7 +397,7 @@ Wenn im Tab **[!UICONTROL Sicherheit]** die Option **[!UICONTROL Systemordner]**
 
 ## Ordner und Ansichten {#folders-and-views}
 
-### Ordner {#about-folders}
+### Über Ordner {#about-folders}
 
 Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der rechten Maustaste über das Menü **[!UICONTROL Ordner hinzufügen]** im Verzeichnis erstellt. Anschließend kann der zu erstellende Ordnertyp ausgewählt werden. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
 
@@ -405,7 +405,7 @@ Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der recht
 
 Berechtigungen bezüglich dieser Ordner werden auf die gleiche Weise wie über alle anderen Ordner des Navigationsbaums eingeräumt. Siehe [Zugriffsverwaltungsordner](#folder-access-management).
 
-### Info zu Ansichten {#about-views}
+### Über Ansichten {#about-views}
 
 Es besteht außerdem die Möglichkeit, Ansichten zu erstellen, um den Datenzugriff einzuschränken und den Inhalt des Navigationsbaums Ihren Bedürfnissen entsprechend zu organisieren. Es ist darüber hinaus möglich, den jeweiligen Ansichten Berechtigungen zuzuordnen.
 
@@ -419,7 +419,7 @@ Wenn ein Ordner zu einer Ansicht gemacht wird, werden alle dem Ordnertyp entspre
 >
 >Um Zugriff auf eine Ansicht ohne Zugriff auf den Herkunftsordner zu verleihen, darf kein Lesezugriff auf den Elternknoten des Herkunftsordners gegeben werden.
 
-Um Ansichten von Ordnern zu unterscheiden, wird der Name der einzelnen Ansichten in einer anderen Farbe angezeigt (dunkelcyan).
+Zur Unterscheidung zwischen Ansichten und Ordnern wird der Name der Ansichten in einer anderen Farbe angezeigt (dunkeltürkis).
 
 ![](assets/s_ncs_user_view_name_color.png)
 
