@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 9c9554b83726da7a7dbc747878d7d0758e71a4d7
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 ## Verwendung {#use}
 
-Mit der **[!UICONTROL Aktivität zum Laden von Daten (Datei)]** können Sie direkt auf eine Quelle externer Daten zugreifen und diese in Adobe Campaign verwenden. Tatsächlich befinden sich nicht immer alle für Targeting-Vorgänge erforderlichen Daten in der Adobe Campaign-Datenbank: es kann in externen Dateien verfügbar gemacht werden.
+Mit der Aktivität **[!UICONTROL Laden (Datei)]** können Sie direkt auf eine Quelle externer Daten zugreifen und diese in Adobe Campaign nutzen. So befinden sich nicht immer alle für Targeting-Vorgänge erforderlichen Daten in der Adobe Campaign-Datenbank; sie können aber in externen Dateien verfügbar gemacht werden.
 
 Die zu ladende Datei kann in der Transition angegeben oder bei Ausführung der Aktivität berechnet werden. Es kann sich beispielsweise um die Liste der zehn meistgekauften Artikel eines Kunden handeln, wobei die Kaufhandlungen in einer separaten, externen Datenbank verwaltet werden.
 
@@ -118,7 +118,6 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
    * Die erste Spalte enthält einen dem Ereignis entsprechenden Code: Kauf (Transaktionsbetrag kleiner oder größer als 3000 Euro), Kein Kauf oder Rückgabe eines oder mehrerer Artikel.
    * Die anderen Spalten enthalten jeweils die Vornamen, Nachnamen und E-Mail-Adressen der Kunden sowie die Kundennummern.
-
    Die Formatierung der Daten geschieht auf die gleiche Weise wie bei einem Datenimport in Adobe Campaign. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Positionieren Sie im Anschluss eine Aufspaltungsaktivität und geben Sie je nach Wert in der **Ereignis**-Spalte die zu erstellenden Teilmengen an.
