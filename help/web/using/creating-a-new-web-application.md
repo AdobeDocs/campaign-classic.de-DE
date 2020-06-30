@@ -14,11 +14,11 @@ discoiquuid: 84f9dbad-365f-405d-88a0-14171fbb805f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a62e4d072573f7ed1b77f755eb57838c70745592
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Gehen Sie zum Tab **Kampagnen** und wählen Sie das Menü **[!UICONTROL Webanwen
 
 >[!NOTE]
 >
->ALways schützt die Seiten, die möglicherweise persönliche Informationen enthalten. Lesen Sie die Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#privacy).
+>Schützen Sie stets die Seiten, die möglicherweise personenbezogene Daten enthalten. Konsultieren Sie diesbezüglich die [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#privacy).
 
 Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen:
 
