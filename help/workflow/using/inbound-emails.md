@@ -14,9 +14,9 @@ discoiquuid: 4c0530b1-0292-45bc-8730-668bc5b8550b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9e5a499d723d3e4126f533b6c7dd63073aff3d09
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '363'
 ht-degree: 100%
 
@@ -71,6 +71,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
    * 2 - Lässt die Nachricht auf dem Server und aktiviert die ausgehende Transition.
    * 3 - Löscht die Nachricht auf dem Server.
    * 4 - Lässt die Nachricht auf dem Server.
+
    Auf den Inhalt der Nachricht kann über die allgemeine Variable **[!UICONTROL mailMessage]** zugegriffen werden.
 
 1. **[!UICONTROL Planung]**
