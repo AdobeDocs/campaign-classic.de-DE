@@ -16,67 +16,67 @@ translation-type: tm+mt
 source-git-commit: 57263746675152b472aa5df4ce94f97b77a84a6b
 workflow-type: tm+mt
 source-wordcount: '6740'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
 
 # Aktualisierungen der Dokumentation{#documentation-updates}
 
-Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Kampagne-Version Liste.
+Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
-You can also consult the [Adobe Campaign Classic Release Notes](../../rn/using/latest-release.md) for more updates.
+Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
 
 ## Juni 2020{#june-2020}
 
 Es wurden Anwendungsfälle zum [Verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) und [Entschlüsseln](../../workflow/using/importing-data.md#use-case-gpg-decrypt) von Daten mithilfe der Systemsteuerung und Kampagnen-Workflows hinzugefügt.
 
-Sowohl die Begriffe &quot;Whitelist&quot;als auch &quot;Blacklist&quot;wurden aus der Dokumentation zum Adobe Campaign entfernt. Einige dieser Begriffe sind möglicherweise in der Produktoberfläche, in Optionsnamen und im internen Code noch vorhanden, werden jedoch in den kommenden Kampagnen-Versionen mit &quot;blockierungsliste&quot;und &quot;zulassungsliste&quot;ersetzt.
+Die Begriffe &#39;Whitelist&#39; und &#39;Blacklist&#39; wurden aus der Dokumentation zu Adobe Campaign entfernt. Einige Vorkommen dieser Begriffe sind möglicherweise noch in der Benutzeroberfläche des Produkts, den Optionsnamen und dem internen Code vorhanden, werden jedoch in den kommenden Campaign-Versionen durch „Blockierungsliste“ und „Zulassungsliste“ ersetzt.
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
 **Neue Funktionen in der Version**
 
-Unterstützung von Emoticons - [Mehr dazu](../../delivery/using/customizing-emoticon-list.md)
+Unterstützung für Emoticons – [mehr dazu](../../delivery/using/customizing-emoticon-list.md)
 
-Azurblase Synapse FDA Connector - [Weitere Informationen](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Azure Synapse FDA-Connector – [mehr dazu](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
 
-Datenschutzgesetze für Thailand und Brasilien - [Weitere Informationen](https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+Datenschutzgesetze in Thailand und Brasilien – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
 **Weitere Aktualisierungen der Dokumentation zu dieser Version**
 
-Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichtenvorlage wird in[diesem Abschnitt](../../message-center/using/template-unpublication.md)beschrieben.
+Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichten-Vorlage wird in [diesem Abschnitt](../../message-center/using/template-unpublication.md) beschrieben.
 
-Die neuen Optionen, mit denen beim Senden von E-Mails, die Bilder aus einer personalisierten URL und Anlagen enthalten, Einschränkungen festgelegt werden können, wurden zur Liste der Campaign Classic-Optionen hinzugefügt. [mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
+Neue Optionen wurden zur Liste der Campaign Classic-Optionen hinzugefügt. Mit diesen Optionen können Einschränkungen beim Versand von E-Mails festgelegt werden, die von einer personalisierten URL und Anhängen heruntergeladene Bilder enthalten. [mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
-Die neue Option **Vorbereiten der Datenbankteile** ist in [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis)beschrieben.
+Die neue Option **Versandteile in der Datenbank vorbereiten** wird in [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis) beschrieben.
 
-Der Abschnitt Validieren des Versands wurde geklärt und aktualisiert. [mehr dazu](../../delivery/using/steps-validating-the-delivery.md)
+Der Abschnitt &quot;Validieren des Versands&quot; wurde klarer gestaltet und aktualisiert. [mehr dazu](../../delivery/using/steps-validating-the-delivery.md)
 
-Die Parameter für den neuen Verfolgungslink-Signaturmechanismus wurden dem Abschnitt [Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) hinzugefügt.
+Die Parameter für den neuen Trackinglink-Signaturmechanismus wurden dem Abschnitt [Server-Konfigurationsdatei](../../installation/using/the-server-configuration-file.md) hinzugefügt.
 
 Die Kompatibilitätsmatrix wurde aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-Der Abschnitt zum Bereinigungsarbeitsablauf wurde aktualisiert. [Mehr dazu](../../production/using/database-cleanup-workflow.md)
+Der Abschnitt zum Bereinigungs-Workflow wurde aktualisiert. [Mehr dazu](../../production/using/database-cleanup-workflow.md)
 
-Die Kampagne-Netzwerk-Endpunkte wurden in diesen [Abschnitt](../../installation/using/campaign-network-endpoints.md)verschoben.
+Die Campaign-Netzwerkendpunkte wurden in diesen [Abschnitt](../../installation/using/campaign-network-endpoints.md) verschoben.
 
-Der Abschnitt Spam Assassin zur Installation wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Mehr dazu](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Mehr dazu](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
-Der Abschnitt zur Duplizierung von Umgebung wurde aktualisiert. [Mehr dazu](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
+Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Mehr dazu](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 
 ## Mai 2020 {#may-2020}
 
-Der Abschnitt zur Überwachung der Lieferbarkeit wurde verschoben und verbessert. [mehr dazu](../../delivery/using/monitoring-deliverability.md)
+Der Abschnitt zum Monitoring der Zustellbarkeit wurde an eine andere Stelle verschoben und überarbeitet. [mehr dazu](../../delivery/using/monitoring-deliverability.md)
 
-Der Abschnitt zur Fehlerbehebung bei der Bereitstellung wurde verschoben und verbessert. [mehr dazu](../../delivery/using/deliverability-faq.md)
+Der Abschnitt zur Behebung von Problemen mit der Zustellbarkeit wurde verschoben und überarbeitet. [mehr dazu](../../delivery/using/deliverability-faq.md)
 
-Die Richtlinien zur Lieferbarkeit beim Start eines neuen Plattformabschnitts wurden verbessert. [mehr dazu](../../delivery/using/starting-new-platform.md)
+Der Abschnitt zu Zustellbarkeitsrichtlinien beim Start einer neuen Plattform wurde überarbeitet. [mehr dazu](../../delivery/using/starting-new-platform.md)
 
 Der Abschnitt zum Senden von Transaktions-E-Mails mit Anhängen wurde an eine andere Stelle verschoben und aktualisiert. [mehr dazu](../../message-center/using/transactional-email-with-attachments.md)
 
-Der Abschnitt Best Practices für die Datenpackage wurde verschoben und aktualisiert. [mehr dazu](../../platform/using/working-with-data-packages.md#data-package-best-practices)
+Der Abschnitt mit Best Practices für Datenpackages wurde verschoben und überarbeitet. [mehr dazu](../../platform/using/working-with-data-packages.md#data-package-best-practices)
 
 ## April 2020 {#april-2020}
 
@@ -84,11 +84,11 @@ Die Tabelle mit den FDA-Berechtigungen wurde in die Dokumentation „Zugriff auf
 
 Die FAQs wurden um Tipps zum Löschen von Soft Cache und Hard Cache erweitert. [mehr dazu](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
-Die Best Practices für Datenmodelle wurden durch zusätzliche Informationen zu Indizes verbessert. [mehr dazu](../../configuration/using/data-model-best-practices.md#indexes)
+Der Abschnitt mit Best Practices für das Datenmodell enthält jetzt zusätzliche Informationen über Indizes. [mehr dazu](../../configuration/using/data-model-best-practices.md#indexes)
 
-Der Abschnitt, der das integrierte Datenmodell des Adobe Campaigns beschreibt, wurde mit weiteren Details zu den einzelnen Tabellen aktualisiert. [mehr dazu](../../configuration/using/data-model-description.md)
+Der Abschnitt zum integrierten Datenmodell von Adobe Campaign enthält jetzt zusätzliche Details zu den einzelnen Tabellen. [mehr dazu](../../configuration/using/data-model-description.md)
 
-Arbeitsablaufverwendungsfälle wurden aktualisiert und in thematische Abschnitte umstrukturiert. [mehr dazu](../../workflow/using/using-the-local-approval-activity.md)
+Anwendungsbeispiele für Workflows wurden aktualisiert und in thematische Bereiche neu angeordnet. [mehr dazu](../../workflow/using/using-the-local-approval-activity.md)
 
 Die Abschnitte [Bounce-Message-Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) und [E-Mail-Verwaltungsregeln](../../delivery/using/understanding-delivery-failures.md#email-management-rules) enthalten aktualisierte Informationen.
 
@@ -96,9 +96,9 @@ Der Artikel zum Adobe Campaign Enhanced MTA wurde aktualisiert. Er gilt jetzt nu
 
 ## März 2020 {#march-2020}
 
-Data model best practices have been updated with new sections including [Sequences](../../configuration/using/data-model-best-practices.md#sequences), [Performance](../../configuration/using/data-model-best-practices.md#performance) and [Large tables](../../configuration/using/data-model-best-practices.md#large-tables), amongst others. [mehr dazu](../../configuration/using/data-model-best-practices.md)
+Die Seite mit Best Practices für das Datenmodell enthält jetzt neue Abschnitte wie [Sequenzen](../../configuration/using/data-model-best-practices.md#sequences), [Leistung](../../configuration/using/data-model-best-practices.md#performance) und [große Tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [mehr dazu](../../configuration/using/data-model-best-practices.md)
 
-Es steht nun ein neuer Abschnitt zur Verfügung, in dem das integrierte Datenmodell des Adobe Campaigns und die Interaktion zwischen Tabellen beschrieben werden. [mehr dazu](../../configuration/using/data-model-description.md)
+Ein neuer Abschnitt, in dem das integrierte Datenmodell von Adobe Campaign beschrieben wird; Interaktion zwischen Tabellen ist nun verfügbar. [mehr dazu](../../configuration/using/data-model-description.md)
 
 Zusätzliche wichtige Links wurden zur Startseite der Dokumentation hinzugefügt. [mehr dazu](../../campaign-classic-home.md)
 
@@ -106,17 +106,17 @@ Es wurde ein Anwendungsfall hinzugefügt, der beschreibt, wie ein dynamisches An
 
 Ein neuer Abschnitt mit den verschiedenen Sprachen, die in Adobe Campaign verfügbar sind, ist jetzt verfügbar. [mehr dazu](../../platform/using/adobe-campaign-workspace.md#languages)
 
-Die Richtlinien zur Zugangsverwaltung wurden aktualisiert und enthalten weitere Informationen zu Spezifische Berechtigungen. [Mehr dazu](../../platform/using/access-management.md#named-rights)
+Die Seite zu Richtlinien für die Zugriffsverwaltung enthält jetzt zusätzliche Informationen zu spezifischen Berechtigungen. [Mehr dazu](../../platform/using/access-management.md#named-rights)
 
 ## Februar 2020 {#february-2020}
 
 Es gibt jetzt einen neuen Abschnitt, in dem Best Practices und wichtige Empfehlungen zum Entwerfen des Adobe Campaign-Datenmodells erläutert werden. [mehr dazu](../../configuration/using/data-model-best-practices.md)
 
-Ein neuer Abschnitt zu technischen E-Mail-Konfigurationen ist verfügbar. [mehr dazu](../../installation/using/email-deliverability.md)
+Es gibt einen neuen Abschnitt zu technischen E-Mail-Konfigurationen. [mehr dazu](../../installation/using/email-deliverability.md)
 
-Die häufig gestellten Fragen zur Lieferbarkeit wurden mit weiteren Details zur Fehlermeldung &quot;Quote erfüllt&quot;aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-deliverability-faq.html#FAQ)
+Die häufig gestellten Fragen zur Zustellbarkeit enthalten jetzt zusätzliche Details zur Fehlernachricht &quot;Kontingente ausgeschöpft&quot;. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-deliverability-faq.html#FAQ)
 
-AMP für E-Mail wird jetzt von neuen E-Mail-Anbietern unterstützt: die zugehörige Dokumentation aktualisiert wurde. [mehr dazu](../../delivery/using/defining-interactive-content.md)
+AMP for E-Mail wird jetzt von neuen E-Mail-Anbietern unterstützt: Die zugehörige Dokumentation wurde aktualisiert. [mehr dazu](../../delivery/using/defining-interactive-content.md)
 
 Der Abschnitt zur E-Mail-Archivierung wurde verbessert. [mehr dazu](../../installation/using/email-archiving.md#recommendations-and-limitations)
 
@@ -130,7 +130,7 @@ Hadoop FDA Connector-Erweiterungen – [mehr dazu](../../platform/using/specific
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Anleitungen für [Installation](../../installation/using/before-reading.md), [Produktion](../../production/using/foreword.md) und [Konfiguration](../../configuration/using/additional-parameters.md) wurden mit der neuen systemd-Einheit aktualisiert, die vom nlserver-Dienststart verwendet wird. Sie können weiterhin /etc/init.d/nlserver6 verwenden. Adobe empfiehlt jedoch, jetzt den Befehl &quot;system.ctl&quot;für die Interaktion mit dem nlserver-Dienst zu verwenden.
+Die Anleitungen für [Installation](../../installation/using/before-reading.md), [Produktion](../../production/using/foreword.md) und [Konfiguration](../../configuration/using/additional-parameters.md) wurden mit der neuen systemd-Einheit aktualisiert, die vom nlserver-Dienststart verwendet wird. Sie können weiterhin &quot;/etc/init.d/nlserver6&quot; verwenden. Adobe empfiehlt jedoch, für die Interaktion mit dem nlserver-Dienst ab jetzt den Befehl &quot;systemctl&quot; zu verwenden.
 
 Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neu unterstützte Systeme wurden hinzugefügt. Veraltete Vorfälle und nicht mehr unterstützte Systeme wurden entfernt. [mehr dazu](../../installation/using/before-reading.md)
 
@@ -477,7 +477,7 @@ Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert – [mehr 
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Benutzerhandbücher von Campaign Classic wurden umbenannt, um die Navigation zu vereinfachen und die Benutzerfreundlichkeit und den Zugriff auf Informationen und Selbsthilfe zu verbessern – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/browseAC.html)
+Die Benutzerhandbücher von Campaign Classic wurden umbenannt, um die Navigation zu vereinfachen und die Benutzerfreundlichkeit und den Zugriff auf Informationen und Selbsthilfe zu verbessern – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/de/browseAC.html)
 
 Die Liste verfügbarer Funktionen wurde im Ausdruckseditor aktualisiert – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_Defining_filter_conditions.html#List_of_functions)
 
