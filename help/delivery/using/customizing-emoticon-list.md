@@ -1,6 +1,6 @@
 ---
 title: Anpassen der Emoticon-Liste
-description: Erfahren Sie, wie Sie die Emoticon-Liste bei der Verwendung von Adobe Campaign Classic anpassen.
+description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe Campaign Classic anpassen können.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
 contentOwner: sauviat
@@ -12,34 +12,34 @@ discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3beb62d0264cfcb03486c291ce79cc7ff582e9c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Anpassen der Emoticon-Liste {#customize-emoticons}
 
-Die im Popup angezeigte Emoticon-Liste wird von einer Auflistung gesteuert, mit der Sie Werte in einer Liste anzeigen können, um die Auswahl zu beschränken, die der Benutzer für ein bestimmtes Feld hat.
-Die Emoticon Liste Reihenfolge kann angepasst werden, Sie können auch andere Emoticons zu Ihrer Liste hinzufügen.
-Emoticons stehen für E-Mail und Push für weitere Informationen auf dieser [Seite](../../delivery/using/defining-the-email-content.md#inserting-emoticons)zur Verfügung.
+Die im Popup angezeigte Emoticon-Liste wird von einer Auflistung gesteuert, mit der Sie Werte in einer Liste anzeigen können, um die Auswahl der Benutzer für ein bestimmtes Feld zu beschränken.
+Die Reihenfolge der Emoticon-Liste kann angepasst werden; außerdem können Sie Ihrer Liste weitere Emoticons hinzufügen.
+Emoticons sind bei E-Mail- und Push-Nachrichten verfügbar; weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
 ## Hinzufügen eines neuen Emoticons {#add-new-emoticon}
 
 >[!CAUTION]
 >
->Die Emoticon-Liste kann nicht mehr als 81 Einträge anzeigen.
+>Die Emoticon-Liste kann maximal 81 Einträge anzeigen.
 
-1. Wählen Sie Ihr neues Emoticon, das Sie von dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html)hinzufügen möchten. Beachten Sie, dass es mit den verschiedenen Plattformen wie Browser und Betriebssystem kompatibel sein muss.
+1. Wählen Sie ein neues Emoticon, das Sie hinzufügen möchten, von dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html). Beachten Sie, dass es mit den verschiedenen Plattformen wie Browser und Betriebssystem kompatibel sein muss.
 
-1. Wählen Sie im **[!UICONTROL Explorer]**&quot; **[!UICONTROL Administration]** &quot;> &quot; **[!UICONTROL Plattform]** &quot;> &quot; **[!UICONTROL Auflistungen]** &quot;und klicken Sie auf die vordefinierte **[!UICONTROL Emoticon-Liste]** -Auflistung.
+1. Wählen Sie im **[!UICONTROL Explorer]** **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Auflistungen]** und klicken Sie auf die native Auflistung **[!UICONTROL Emoticon-Liste]**.
 
    >[!NOTE]
    >
-   >Vordefinierte Auflistungen können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole verwaltet werden.
+   >Native Auflistungen können nur von einem Administrator Ihrer Adobe Campaign Classic Console verwaltet werden.
 
    ![](assets/emoticon_1.png)
 
@@ -47,32 +47,32 @@ Emoticons stehen für E-Mail und Push für weitere Informationen auf dieser [Sei
 
 1. Füllen Sie die Felder aus:
 
-   * **[!UICONTROL U+]**: Code Ihres neuen Emoticons. Die Liste der Emoticons finden Sie auf dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html).
-Um Kompatibilitätsprobleme zu vermeiden, empfehlen wir Ihnen, Emoticons auszuwählen, die in Browsern und in jedem Betriebssystem unterstützt werden.
+   * **[!UICONTROL U+]**: Code Ihres neuen Emoticons. Die Liste der Codes von Emoticons finden Sie auf dieser [Seite](https://unicode.org/emoji/charts/full-emoji-list.html).
+Zur Vermeidung von Kompatibilitätsproblemen empfehlen wir Ihnen, Emoticons auszuwählen, die in Browsern und jedem Betriebssystem unterstützt werden.
 
-   * **[!UICONTROL Beschriftung]**: Etikett Ihres neuen Emoticons.
+   * **[!UICONTROL Titel]**: Bezeichnung für Ihr neues Emoticon.
 
    ![](assets/emoticon_5.png)
 
-1. Klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]** , wenn Ihre Konfiguration abgeschlossen ist.
-Ihr neues Emoticon wird automatisch in den Laden gelegt.
+1. Klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**, wenn Sie fertig mit der Konfiguration sind.
+Ihr neues Emoticon wird automatisch im Speicher abgelegt.
 
-1. Um es im Fenster &quot;Emoticon **[!UICONTROL einfügen]** &quot;Ihrer Versand anzuzeigen, wählen Sie Ihr neu erstelltes Emoticon aus, indem Sie mit der Dublette darauf klicken.
+1. Um es im Fenster **[!UICONTROL Emoticon einfügen]** Ihrer Sendungen anzuzeigen, wählen Sie das neu erstellte Emoticon aus, indem Sie darauf doppelklicken.
 
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Anzeigereihenfolge]** aus, in welcher Reihenfolge das neue Emoticon angezeigt wird. Beachten Sie, dass durch Auswahl einer bereits zugewiesenen Anzeigereihenfolge das vorhandene Emoticon automatisch in den Store verschoben wird.
+1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Reihenfolge der Anzeige]** aus, in welcher Reihenfolge das neue Emoticon angezeigt werden soll. Beachten Sie, dass bei Auswahl einer bereits zugewiesenen Anzeigereihenfolge das vorhandene Emoticon automatisch in den Speicher verschoben wird.
 
-   <br>In diesem Beispiel haben wir die Anzeigereihenfolge Nr. 61 gewählt, was bedeutet, dass ein Eintrag, der bereits diese Bestellung hatte, automatisch in den Shop verschoben wird und unser neuer Eintrag in der Liste Auflistung erfolgt.
+   <br>In diesem Beispiel haben wir die Anzeige Nr. 61 gewählt. Das bedeutet, dass ein vorhandener Eintrag an dieser Stelle automatisch in den Speicher verschoben wird und unser neuer Eintrag dessen Platz in der Auflistung einnimmt.
 
    ![](assets/emoticon_2.png)
 
-1. Ihr neues Emoticon wurde nun zur vordefinierten Auflistung **[!UICONTROL Emoticon einfügen hinzugefügt]** . Sie können die **[!UICONTROL Anzeigereihenfolge]** jederzeit ändern oder in den Store verschieben, wenn Sie sie nicht mehr benötigen.
+1. Ihr neues Emoticon wurde der nativen Auflistung **[!UICONTROL Emoticon einfügen]** hinzugefügt. Sie können seine **[!UICONTROL Reihenfolge der Anzeige]** jederzeit ändern oder das Emoticon in den Speicher verschieben, wenn Sie es nicht mehr benötigen.
 
-1. Damit Ihre Änderungen berücksichtigt werden, trennen Sie die Verbindung und stellen Sie dann die Verbindung von Adobe Campaign Classic wieder her. Wenn Ihr neues Emoticon immer noch nicht im Popup-Fenster &quot; **[!UICONTROL Emoticon]** einfügen&quot;angezeigt wird, müssen Sie möglicherweise Ihren Cache löschen. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
+1. Damit Ihre Änderungen wirksam werden, trennen Sie die Verbindung mit Adobe Campaign Classic und stellen Sie sie erneut her. Wenn Ihr neues Emoticon im Popup-Fenster **[!UICONTROL Emoticon einfügen]** immer noch nicht angezeigt wird, müssen Sie möglicherweise Ihren Cache löschen. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear).
 
-1. Ihr neues Emoticon finden Sie jetzt in Ihren Versänden im Popup-Fenster &quot; **[!UICONTROL Emoticon]** einfügen&quot;an der 61. Position, wie in den vorherigen Schritten konfiguriert. Weitere Informationen zur Verwendung von Emoticons in Ihren Versänden finden Sie auf dieser [Seite](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
+1. Ihr neues Emoticon finden Sie in Ihren Sendungen jetzt im Popup-Fenster **[!UICONTROL Emoticon einfügen]** an der 61. Stelle (wie in den vorherigen Schritten konfiguriert). Weiterführende Informationen zur Verwendung von Emoticons in Ihren Sendungen finden Sie auf dieser [Seite](../../delivery/using/defining-the-email-content.md#inserting-emoticons).
 
    ![](assets/emoticon_4.png)
 
-1. Wenn die folgenden Emoticons im Popup-Fenster &quot; **[!UICONTROL Emoticon]** einfügen&quot;angezeigt werden, bedeutet dies, dass sie nicht richtig konfiguriert wurden. Überprüfen Sie, ob Ihr **[!UICONTROL U+]** -Code oder Ihre **[!UICONTROL Anzeigereihenfolge]** in der **[!UICONTROL Emoticon-Liste]** korrekt ist.
+1. Wenn die folgenden Emoticons im Popup-Fenster **[!UICONTROL Emoticon einfügen]** angezeigt werden, heißt das, dass sie nicht richtig konfiguriert wurden. Überprüfen Sie, ob Ihr **[!UICONTROL U+]**-Code oder die **[!UICONTROL Reihenfolge der Anzeige]** in der **[!UICONTROL Emoticon-Liste]** korrekt sind.
 
    ![](assets/emoticon_6.png)
