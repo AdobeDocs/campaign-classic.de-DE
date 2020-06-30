@@ -14,20 +14,20 @@ discoiquuid: 3af763ad-6b0d-4f4c-aed1-c5e12efd4760
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1667dd0c8a38db0e554c59062cbcc5b6c6d992bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '709'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Über Webanwendungen{#about-web-applications}
 
-Mit Adobe Campaign können Sie dynamische und interaktive Webanwendungen mit Daten aus der Datenbank und Inhalten erstellen und veröffentlichen, die an die Rechte des angeschlossenen Benutzers angepasst sind.
+Adobe Campaign ermöglicht Ihnen, mit Daten aus der Datenbank dynamische und interaktive Webanwendungen zu erstellen und zu veröffentlichen, wobei die Inhalte auf die jeweiligen Benutzerrechte abgestimmt sind.
 
-Sie können Seiten erstellen, z. B. ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare, einschließlich Daten aus der Datenbank mit Tabellen, Diagrammen, Eingabefeldern usw. Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
+Sie können Seiten erstellen (z. B. ein Bearbeitungsformular in einem Extranet oder Benachrichtigungsformulare, die Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. beinhalten). Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Daten suchen oder eingeben können.
 
 Dabei kann es sich um ein Anmeldeformular handeln, dessen Felder wie unten dargestellt mit Daten aus der Adobe Campaign-Datenbank vorausgefüllt wurden:
 
@@ -37,7 +37,7 @@ Dieses Kapitel bietet einen Überblick über die Verwaltung von Webanwendungen.
 
 >[!NOTE]
 >
->Informationen zur Optimierung der Sicherheit von Webanwendungen finden Sie in der Checkliste [für](https://helpx.adobe.com/de/campaign/kb/acc-security.html) Sicherheit und Datenschutz.
+>Informationen zur Optimierung der Sicherheit von Webanwendungen finden Sie in der [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
 
 >[!CAUTION]
 >
