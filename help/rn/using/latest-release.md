@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: b2cc71f8f9b7df80b1601a9fa55bfd77f9a82433
 workflow-type: tm+mt
 source-wordcount: '1765'
-ht-degree: 16%
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 16%
 
 Der **neueste stabile Build** ist 9032 (3a9dc9c). Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
 
-![](assets/do-not-localize/cp-icon.png) **Neue Systemsteuerung Juni-Version** mit Active Profils Monitoring, Subdomain Delivery Audit und GPG Key Management. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Systemsteuerung Juni-Version** mit Active Profils Monitoring, Subdomain Delivery Audit und GPG Key Management. [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
@@ -60,8 +60,8 @@ _8. Juni 2020_
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Wenn Sie eine Nachricht in Kampagne entwerfen, können Sie nun einfach Emoticons in den Nachrichtentext einfügen, indem Sie eine entsprechende Schaltfläche verwenden. Sie können auch in der Betreffzeile der E-Mail hinzugefügt werden. Sie können die Liste der verfügbaren Emoticons in der Benutzeroberfläche anpassen.</p>
-    <p>Weitere Informationen zum Hinzufügen von Emoticons finden Sie in der <a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">ausführlichen Dokumentation</a>. Erfahren Sie, wie Sie die Emoticon-Liste <a href="../../delivery/using/customizing-emoticon-list.md">in diesem Abschnitt</a>anpassen.</p>
+   <td> <p>Wenn Sie eine Nachricht in Campaign entwerfen, können Sie nun mit einer entsprechenden Schaltfläche bequem Emoticons in den Nachrichtentext einfügen. Emoticons können auch der Betreffzeile einer E-Mail hinzugefügt werden. Die Liste der verfügbaren Emoticons lässt sich in der Benutzeroberfläche anpassen.</p>
+    <p>Weiterführende Informationen zum Hinzufügen von Emoticons finden Sie im <a href="../../delivery/using/defining-the-email-content.md#inserting-emoticons">entsprechenden Handbuch</a>. <a href="../../delivery/using/customizing-emoticon-list.md">In diesem Abschnitt</a> erfahren Sie, wie Sie die Emoticon-Liste anpassen können.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -70,13 +70,13 @@ _8. Juni 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Azurblase Synapse FDA Connector</strong><br /> </th> 
+   <th> <strong>Azure Synapse FDA-Connector</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Sie können Ihre Kampagne-Instanz jetzt mit Ihrer Azurblase Synapse-externen Datenbank verbinden. Diese Verbindung wird über ein neues Externe Konto verwaltet.</p>
-    <p>Azurblauer Synapse ist nur für Hybrid- und On-Premise-Umgebung erhältlich. Weitere Informationen finden Sie im <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">entsprechenden Handbuch</a>.</p>
+   <td> <p>Sie können Ihre Campaign-Instanz jetzt mit Ihrer externen Azure Synapse-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.</p>
+    <p>Azure Synapse ist nur für Hybrid- und On-Premise-Umgebungen verfügbar. Weitere Informationen finden Sie im <a href="../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse">entsprechenden Handbuch</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -85,17 +85,17 @@ _8. Juni 2020_
 <table> 
  <thead> 
   <tr> 
-   <th> <strong>Thailand und Brasilien - Datenschutzgesetze</strong><br /> </th> 
+   <th> <strong>Datenschutzgesetze in Thailand und Brasilien</strong><br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> <p>Der thailändische Datenschutzgesetz (PDPA) ist das neue Datenschutzgesetz, mit dem die Datenschutzanforderungen für Thailand harmonisiert und modernisiert werden. </p>
-   <p>Brasiliens Lei Geral de Proteção de Dados (LGPD) wird ab dem 16. August für alle Firmen, die personenbezogene Daten in Brasilien sammeln oder verarbeiten, wirksam sein.</p>
-   <p>Diese Vorschriften gelten für Adobe Campaign-Kunden, die Daten für in diesen Ländern wohnhafte Datensubjekte besitzen. Zusätzlich zu den bereits in der Kampagne verfügbaren Datenschutzfunktionen (einschließlich Zustimmungsverwaltung, Einstellungen zur Datenspeicherung und Benutzerrollen) bieten wir Ihnen hier zusätzliche Funktionen an, um Ihre Bereitschaft für PDPA und LGPD zu erleichtern:</p>
+   <td> <p>Das thailändische Datenschutzgesetz (PDPA) ist ein neues Datenschutzgesetz, mit dem die Datenschutzanforderungen für Thailand harmonisiert und modernisiert werden. </p>
+   <p>Das brasilianische Lei Geral de Proteção de Dados (LGPD) wird am 16. August für alle Firmen in Kraft treten, die in Brasilien personenbezogene Daten sammeln oder verarbeiten.</p>
+   <p>Die Vorschriften gelten für Adobe Campaign-Kunden, die Daten über in diesen Ländern wohnhafte Datensubjekte besitzen. Zusätzlich zu den bereits in Campaign verfügbaren Datenschutzoptionen (Einverständnisverwaltung, Einstellungen für die Datenbeibehaltung und Benutzerrollen usw.) werden weitere Funktionen bereitgestellt, mit deren Hilfe PDPA- und LGPD-konformes Verhalten sichergestellt werden kann:</p>
    <ul> 
      <li><p>Recht auf Zugriff und Recht auf Löschung: Hierfür werden die Funktionen genutzt, die für die DSGVO und PPDA hinzugefügt wurden – <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">mehr dazu</a></p></li> 
-     <li> <p>Beim Erstellen einer Datenschutzanforderung mithilfe der Benutzeroberfläche oder API wählen Sie jetzt den <strong>Regeltyp</strong> aus: PDPA, LGPD, GDPR, CCPA. <a href="https://helpx.adobe.com/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">mehr dazu</a></p></li>
+     <li> <p>Beim Erstellen einer Datenschutzanfrage mithilfe der Campaign-Benutzeroberfläche oder API können Sie nun den <strong>Regulierungstyp</strong> wählen: PDPA, LGPD, DSGVO oder CCPA. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">mehr dazu</a></p></li>
     </ul>
    </td> 
   </tr> 
@@ -104,83 +104,83 @@ _8. Juni 2020_
 
 **Verbesserungen bei der Sicherheit**
 
-* Verbesserte Sicherheit bei der Verfolgung von Links in E-Mails ist standardmäßig für alle Kunden aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html). (NEO-24232)
+* Mehr Sicherheit bei Trackinglinks in E-Mails wurde standardmäßig für alle Kunden aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html). (NEO-24232)
 
-* Um die Sicherheit zu optimieren, wurde der MD5-Hashing-Algorithmus, der zum Generieren von Dateinamen verwendet wurde, mit sha256 für das Hochladen öffentlicher Dateien verstärkt. (NEO-17044)
+* Für zusätzliche Sicherheit wurde der MD5-Hashing-Algorithmus, der zum Generieren von Dateinamen dient, für den öffentlichen Dateiversand durch SHA256 verstärkt. (NEO-17044)
 
-* Um die Sicherheit gegen XSS-Angriffe zu erhöhen, werden clientseitige Skripte beim Ausführen einer Mirrorseite deaktiviert. (NEO-17987)
+* Für mehr Schutz gegen XSS-Angriffe werden Client-seitige Scripte beim Ausführen einer Mirrorseite deaktiviert. (NEO-17987)
 
-* Es wurde ein Fehler behoben, der verhinderte, dass der technische Arbeitsablauf zur Bereinigung von **Datenschutzanfragen** die Abgleichdaten löscht. (NEO-25168, NEO-21004)
+* Fehlerkorrektur – Der technische Workflow zur **Bereinigung von Datenschutzanfragen** kann jetzt Abstimmungsdaten löschen. (NEO-25168, NEO-21004)
 
 * Fehlerkorrektur – Bei der Aktivität **Dateiübertragung** funktioniert jetzt die SFTP-Schlüssel-basierte Authentifizierung bei Debian 9. (NEO-23183)
 
 **Kompatibilitätsverbesserungen**
 
-Die folgenden Systeme werden jetzt mit Kampagne unterstützt:
+Die folgenden Systeme werden jetzt von Campaign unterstützt:
 * Betriebssysteme: Debian 10
 * RDBMS: Oracle 18c und Oracle 19c
-* FDA: Azurblase Synapse Analytics
+* FDA: Azure Synapse Analytics
 
-Weitere Informationen finden Sie in der Kompatibilitätsmatrix für [Kampagnen](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
+Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix ](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
 
 **Verbesserungen**
 
-* Die Transaktionsnachrichten wurden verbessert, um die Benutzererfahrung zu verbessern. Sie können jetzt die Veröffentlichung einer Transaktionsnachrichtenvorlage rückgängig machen, wodurch sie aus den Ausführungsinstanzen gelöscht wird. [Mehr dazu](../../message-center/using/template-unpublication.md).
+* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Publikation einer Transaktionsnachrichten-Vorlage jetzt rückgängig machen, womit sie aus den Ausführungsinstanzen gelöscht wird. [mehr dazu](../../message-center/using/template-unpublication.md).
 
-* Es stehen neue Optionen zur Verfügung, um Einschränkungen beim Senden von E-Mails mit Bildern oder Anlagen festzulegen. Diese Garantien können Leistungsprobleme vermeiden, die besonders bei transaktionalen Nachrichten nützlich sind. [mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
+* Es gibt neue Optionen zum Festlegen von Einschränkungen beim Senden von E-Mails, die Bilder oder Anhänge enthalten. Damit lassen sich Leistungsprobleme verhindern, was besonders bei Transaktionsnachrichten nützlich ist. [mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Mit der neuen Option **Vorbereiten der Datenbankteile** können Versand direkt in der Datenbank vorbereitet werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur für bestimmte Konfigurationen zur Verfügung. [Mehr dazu](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
+* Mit der neuen Option **Versandteile in der Datenbank vorbereiten** kann die Versandvorbereitung direkt in der Datenbank vorgenommen werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur bei bestimmten Konfigurationen zur Verfügung. [mehr dazu](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
-* Die Performance der [CRM Connector Aktivität](../../workflow/using/crm-connector.md) für Microsoft Dynamics wurde verbessert. (NEO-13303, NEO-12710)
+* Die Leistung der [CRM Connector-Aktivität](../../workflow/using/crm-connector.md) für Microsoft Dynamics wurde verbessert. (NEO-13303, NEO-12710)
 
-* Die Version des gemeinsamen Speichers wurde erhöht.
+* Die Version mit gemeinsamem Speicher wurde verbessert.
 
    >[!WARNING]
    >
-   >Diese Verbesserung erfordert einen zusätzlichen Schritt nach der Aktualisierung. Lesen Sie den Abschnitt **Technische Entwicklungen** weiter unten.
+   >Die Optimierung setzt einen zusätzlichen Schritt nach dem Upgrade voraus. Lesen Sie diesbezüglich den Abschnitt **Technische Entwicklungen** weiter unten.
 
-* Der Bereinigungsarbeitsablauf wurde verbessert. Die entpackten Arbeitstische aller gelöschten Workflows werden jetzt auch automatisch vom Bereinigungsarbeitsablauf gelöscht. [Mehr dazu](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
+* Der Bereinigungs-Workflow wurde verbessert. Verwaiste Arbeitstabellen aller gelöschten Workflows werden vom Bereinigungs-Workflow jetzt auch automatisch gelöscht. [mehr dazu](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
-* Zertifikate für iOS-Mobilanwendungen mit dem iOS-HTTP2-Connector werden jetzt vor dem Senden von Push-Benachrichtigungen validiert, wodurch verhindert wird, dass Versand aufgrund abgelaufener Zertifikate fehlschlagen.
+* Zertifikate für iOS-Mobile Apps mit dem iOS-HTTP2-Connector werden jetzt vor dem Senden von Push-Benachrichtigungen validiert, was verhindert, dass Sendungen aufgrund abgelaufener Zertifikate fehlschlagen.
 
-* Die Verwaltung von HTTP-Proxyverbindungen wurde verbessert. [Mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **Sonstige Änderungen**
 
-* Legacy-SMS-Connectors werden jetzt nicht mehr unterstützt. Weitere Informationen finden Sie auf der Seite zu [veralteten Funktionen](../../rn/using/deprecated-features.md).
+* Alte SMS-Connectoren werden jetzt nicht mehr unterstützt. Weiterführende Informationen finden Sie auf der [Seite zu eingestellten Funktionen](../../rn/using/deprecated-features.md).
 
-* Sie können Ihr eigenes Litmus-Konto nicht mehr für die Bereitstellung und Verwendung des Inbox-Renderings in Adobe Campaign verwenden. [Mehr dazu](../../delivery/using/inbox-rendering.md).
+* Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [mehr dazu](../../delivery/using/inbox-rendering.md).
 
-* Um Ansichten besser von Ordnern zu unterscheiden, wurde die Farbe der Ansichten von dunkelblau in dunkelblau geändert. [mehr dazu](../../platform/using/access-management.md#about-views)
+* Zur leichteren Unterscheidung von Ansichten und Ordnern wurde die Farbe der Ansichtnamen von dunkelblau in dunkeltürkis geändert. [mehr dazu](../../platform/using/access-management.md#about-views)
 
-* Campaign Classic kann nun mit Microsoft Dynamics CRM-Konten in Großbritannien, Indien und Kanada verbunden werden. Dies gilt für die Bereitstellungstypen Office 365 und On Premise (Dynamics 2015).
+* Campaign Classic kann nun mit Microsoft Dynamics CRM-Konten verbunden werden, die in Großbritannien, Indien und Kanada gehostet werden. Dies gilt für die Bereitstellungstypen &quot;Office 365&quot; und &quot;On-Premise&quot; (Dynamics 2015).
 
-* Kampagne führt nun eine TLS-Überprüfung durch, um zu überprüfen, ob der Hostname des Servers mit dem Hostnamen im bereitgestellten Zertifikat übereinstimmt.
+* Campaign führt nun eine TLS-Verifizierung durch, um zu prüfen, ob der Hostname des Servers mit dem Hostnamen im angegebenen Zertifikat übereinstimmt.
 
-* Die Tabelle mit den Statistiken zu Versand und Verfolgung zeigt jetzt einen Eintrag pro Versand für den SMS-Kanal anstelle eines Eintrags pro Versand-Empfänger an.
+* Die Tabelle mit Versand- und Trackingstatistiken zeigt für den SMS-Kanal jetzt einen Eintrag pro Versand anstelle eines Eintrags pro Versandempfänger an.
 
-* Es wurde eine Fehlermeldung in der Protokolldatei hinzugefügt, die Benutzer warnt, wenn die heruntergeladene Datei größer als der Speicherplatz ist.
+* Es wurde eine Fehlermeldung in der Protokolldatei hinzugefügt, die Benutzer warnt, wenn die heruntergeladene Datei größer als der verfügbare Speicherplatz ist.
 
-* Die folgenden Funktionen sind jetzt für den Snowflake-Connector verfügbar: Vor Monaten, TageAgoInt, ToDateTime, Jahre zuvor.
+* Folgende Funktionen sind jetzt beim Snowflake-Connector verfügbar: MonthsAgo, DaysAgoInt, ToDateTime, YearsAgo.
 
 **Technische Entwicklungen**
 
-Dieser neue Build aktualisiert den gemeinsamen Speicher und erfordert zusätzliche Schritte, um die Aktualisierung durchzuführen. Als Kampagne-Administrator müssen Sie Speichersegmente entfernen. Diese Schritte sind obligatorisch, da alte Segmente verhindern, dass nlserver/nlsrvmod gestartet wird.
+Dieser neue Build aktualisiert den gemeinsamen Speicher und erfordert zusätzliche Schritte bei der Durchführung des Upgrades. Als Campaign-Administrator müssen Sie Speichersegmente entfernen. Diese Schritte sind obligatorisch, da alte Segmente das Starten von &quot;nlserver/nlsrvmod&quot; verhindern.
 
 Unter Windows ist ein Neustart des Systems erforderlich.
 
-Bei Debian/CentOs ist eine Löschung des gemeinsamen Speichers erforderlich. Im Folgenden werden die Schritte beschrieben:
+Unter Debian/CentOs ist eine Löschung des gemeinsamen Speichers erforderlich. Im Folgenden werden die Schritte beschrieben:
 
-Vor der Aktualisierung müssen Sie die folgenden Schritte ausführen:
+Vor dem Upgrade müssen Sie folgende Schritte ausführen:
 
-1. Beenden Sie den Dienst apache2 (http2 auf CentOS), wenn er ausgeführt wird.
-1. Beenden Sie den nlserver-Dienst (nlserver6 für ältere Builds), wenn er ausgeführt wird.
+1. Beenden Sie den Dienst &quot;apache2&quot; (&quot;http2&quot; unter CentOS), sollte er ausgeführt werden.
+1. Beenden Sie den Dienst &quot;nlserver&quot; (&quot;nlserver6&quot; bei älteren Builds), sollte er ausgeführt werden.
 
-Nach der Aktualisierung:
+Nach dem Upgrade:
 
-1. Entfernen Sie den gemeinsamen Speicher mit dem **Befehl ipcrm** , wenn die Version älter als die aktuelle Version ist.
-1. Beginn des nlserver-Dienstes, wenn er ausgeführt wurde.
-1. Beginn des Apache2-Dienstes, wenn er ausgeführt wurde.
+1. Entfernen Sie den gemeinsamen Speicher mit dem Befehl **ipcrm**, wenn die Version älter als die aktuelle Version ist.
+1. Starten Sie den nlserver-Dienst, wenn er zuvor ausgeführt wurde.
+1. Starten Sie den apache2-Dienst, wenn er zuvor ausgeführt wurde.
 
 Hier sind die Befehlszeilen für Debian:
 
@@ -204,49 +204,49 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 /etc/init.d/nlserver* start
 ```
 
-Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additional-parameters.md#redirection-server-configuration)verfügbar.
+Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additional-parameters.md#redirection-server-configuration) verfügbar.
 
 **Patches**
 
 * Fehlerkorrektur – Es wurde ein geringfügiger Regressionsfehler in den Bereinigungs-Workflow-Logs behoben.
-* Es wurde ein Problem in der Aktivität **Laden (SOAP)** des Workflows beim Analysieren von WSDL-Dateien behoben.
-* Es wurde ein Fehler behoben, der beim Aktualisieren zahlreicher Workflows mit einer **Umfrage** -Aktivität zur effizienten Verarbeitung einer hohen Anzahl von Workflows auftrat.
-* Es wurde ein zeitweilig auftretendes Verbindungsproblem bei der Verarbeitung von InMail-Nachrichten aus dem erweiterten MTA behoben. (NEO-20380)
-* Es wurde ein Fehler behoben, der verhinderte, dass die Prozentwerte für Hotclick korrekt angezeigt wurden, wenn Bilder mit einer Breite von 100 % im HTML-Code angezeigt wurden. (NEO-23203)
-* Es wurde ein Fehler behoben, der verhinderte, dass der bedingte Inhalt des Versands vollständig im Bericht &quot;Hotclicks&quot;angezeigt wurde. (NEO-18729)
-* Es wurde ein Problem behoben, bei dem der Genehmigungsvorgang für die Zielgruppe beim Wiederaufnehmen eines Workflows zum Senden eines wiederkehrenden Versands übersprungen wurde. (NEO-18166)
-* Es wurde ein Fehler behoben, der dazu führte, dass die Schaltfläche zur Vorbereitung **der Meldung** neu starten den Versand nach Beheben eines Fehlers im Workflow nicht wieder aufnehmen konnte. (NEO-13488)
-* Es wurde ein Fehler behoben, der dazu führte, dass Versand im Mid-Sourcing-Modus während der Aufstiegsphase, in der die Zielgruppe Empfänger mit japanischen E-Mail-Formaten enthielt, fehlschlugen. (NEO-23846)
-* Korrektur des Zeitzonenkonvertierungsproblems mit dem Snowflake Connector (NEO-20105)
-* Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
-* Es wurde ein Problem behoben, das die Anzeige von Bildern in Line-Versänden verhinderte. (NEO-23207)
-* Es wurde ein Fehler behoben, der beim Veröffentlichen eines Angebots zu einem Fehler führte. (NEO-23312)
-* Es wurde ein Problem mit Push-Benachrichtigungen behoben, durch das Testverbindungen in mobilen Anwendungen funktionierten, selbst wenn das Zertifikat abgelaufen war. (NEO-22991)
-* Es wurde ein Problem behoben, das sich auf Push-Benachrichtigungen auswirken konnte, wenn diese mit hoher Frequenz gesendet wurden. (NEO-20516)
-* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgungsdaten Duplikat enthielten, obwohl die Trackinglogs dies nicht taten. (NEO-20040)
-* Es wurde ein Fehler behoben, der dazu führte, dass transaktionsbedingte E-Mails an Duplikate gesendet wurden, nachdem ein Kommunikationsfehler beim Tracking-Server behoben wurde. (NEO-23640)
-* Es wurde ein Problem behoben, durch das der Wert des Kodierungsparameters bei der Umleitung von einer Tracking-URL gelöscht wurde. (NEO-25637)
-* Es wurde ein Fehler behoben, der dazu führte, dass eine Abfrage beim Vergleich von Fließkommazahlen nicht funktionierte. (NEO-23243)
-* Es wurde ein Problem behoben, das die Anzeige des Inhalts &quot; **Geändert durch** Spalte&quot;nach dem Neustart des Workflows verhinderte. (NEO-23035)
-* Es wurde ein Fehler behoben, der dazu führte, dass der technische Arbeitsablauf zur Verfolgung beim Herunterladen von Protokollen von einem zweiten Container fehlschlug. (NEO-23159)
-* Es wurde ein Fehler behoben, der dazu führte, dass Workflows beim Ausführen einer **Anreicherung** -Aktivität fehlschlugen. (NEO-17338)
-* Zu den **Dubletten wurde eine Prüfung hinzugefügt, um das Feld in der Aktivität für den** Deduplizierung-Duplikate **** -Workflow zu belassen, um die Eingabe von Null- oder Negativwerten zu verhindern.
-* Der Assistent **für die** Planung wurde aus den wiederkehrenden Kampagnen entfernt, um zu vermeiden, dass Stunden und Minuten erwähnt werden. Es werden nur Daten berücksichtigt.
-* Es wurde ein Problem mit zusätzlichen Datenspeicherung behoben, das beim Erstellen von Versänden mithilfe der Skriptoption **Berechnet** in der Aktivität für den **Skriptarbeitsablauf** auftrat. (NEO-20609)
-* Es wurde ein Fehler behoben, der verhinderte, dass Ghost Workflows in den Aufgaben zur Datenbankbereinigung gelöscht werden konnte.
-* Es wurde ein Fehler behoben, der dazu führte, dass der Arbeitsablauf für die **Rechnungsstellung (aktive Profil)** fehlschlug. (NEO-19777)
-* Es wurde ein Problem beim Testen der Verbindung des acsDefaultAccount-Externen Kontos behoben. (NEO-23433)
-* Es wurde ein Fehler behoben, der verhinderte, dass Sie eine Schema-Erweiterung für einen Primärschlüssel mit mehreren Spalten mit einer Hadoop-Tabelle erstellen konnten. (NEO-17390)
-* Es wurde ein Problem in der Aktivität **Laden (SOAP)** behoben, das das Laden von WSDL-Dateien aus einer URL verhindern konnte. (NEO-16924)
-* Es wurde ein Fehler behoben, der verhinderte, dass Sie einen **bedingungslosen Stopp** über die Konsole durchführen konnten, wenn mehrere aktive Workflow-Server Lastenausgleich durchführten. (NEO-19556)
-* Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.
-* Es wurde ein Problem behoben, das beim Veröffentlichen einer Vorlage auf einer Ausführungsinstanz auftreten konnte.
-* Es wurde ein Problem behoben, das die Ausführung des technischen Arbeitsablaufs &quot;collectionPrivacyRequests&quot;verhindern konnte. (NEO-20513, NEO-25169)
-* Es wurden Probleme behoben, die auftreten konnten, wenn nach dem Hochladen zum Build 9080 versucht wurde, eine Verbindung zu Audience Manager herzustellen. (NEO-20511, NEO-25167)
-* Es wurden Probleme behoben, die beim Exportieren von Berichten im PDF- oder XLS-Format auftraten. (NEO-20982, NEO-23493, NEO-23348)
-* Es wurde ein Problem behoben, durch das ein Versand in der Liste Versand zweimal angezeigt werden konnte, nachdem er gesendet wurde.
-* Es wurde ein Problem bei der Vorbereitung des Versands behoben, das auftrat, wenn die Routing-Konfiguration so eingestellt war, dass der Versand über Mid-Sourcing gesendet wurde.
-* Es wurde ein Fehler behoben, der beim Klicken auf einen Webanwendungslink in einer Zeilenmeldung eine Fehlermeldung anzeigen konnte.
-* Es wurde ein Problem behoben, durch das Microsoft Dynamics CRM nicht alle Entitäten abrufen konnte. (NEO-24528)
-* Es wurde ein Problem behoben, durch das der Verlauf der **Inkrementelle Abfrage** -Aktivität nach der Ausführung des Bereinigungsarbeitsablaufs gelöscht wurde.
-* Es wurde ein Fehler behoben, der beim Erstellen eines Mid-Sourcing-Externen Kontos auftrat, bei dem die Option NmsMidSourcing_LastBroadLog_&lt;InternalName> fehlte
+* Fehlerkorrektur – In der Workflow-Aktivität **Laden (SOAP)** tritt beim Analysieren von WSDL-Dateien jetzt kein Fehler mehr auf.
+* Fehlerkorrektur – Beim Upgraden zahlreicher Workflows mit einer **Umfrage**-Aktivität zur effizienten Verarbeitung einer großen Zahl von Workflows tritt jetzt kein Fehler mehr auf.
+* Fehlerkorrektur – Bei der Verarbeitung von InMail-Nachrichten aus dem Enhanced MTA tritt jetzt kein Verbindungsproblem mehr auf. (NEO-20380)
+* Fehlerkorrektur – Die Prozentwerte für Klickposition werden jetzt richtig angezeigt, wenn Bilder in HTML mit einer Breite von 100 % angezeigt werden. (NEO-23203)
+* Fehlerkorrektur – Der bedingte Inhalt eines Versands im Bericht &quot;Klickposition&quot; wird jetzt vollständig angezeigt. (NEO-18729)
+* Fehlerkorrektur – Der Schritt für die Zielgruppenvalidierung beim Wiederaufnehmen eines Workflows zum Senden eines wiederkehrenden Versands wird jetzt nicht mehr übersprungen. (NEO-18166)
+* Fehlerkorrektur – Mit der Schaltfläche **Nachrichtenvorbereitung neu starten** kann der Versand nach Beheben eines Fehlers im Workflow jetzt wieder aufgenommen werden. (NEO-13488)
+* Fehlerkorrektur – Sendungen im Mid-Sourcing-Modus schlagen jetzt in der Anfangsphase nicht mehr fehl, wenn die Zielgruppe Empfänger mit japanischen E-Mail-Formaten enthält. (NEO-23846)
+* Fehlerkorrektur – Die Zeitzonenkonvertierung beim Snowflake-Connector funktioniert jetzt fehlerfrei (NEO-20105)
+* Fehlerkorrektur – Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
+* Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
+* Fehlerkorrektur – Das Publizieren eines Angebots führt jetzt nicht mehr zu einem Fehler. (NEO-23312)
+* Fehlerkorrektur – Bei Push-Benachrichtigungen funktionieren Testverbindungen in Mobile Apps jetzt nicht mehr, wenn das Zertifikat bereits abgelaufen ist. (NEO-22991)
+* Fehlerkorrektur – Bei Push-Benachrichtigungen, die mit hoher Häufigkeit gesendet werden, tritt jetzt kein Problem mehr auf. (NEO-20516)
+* Fehlerkorrektur – Tracking-Daten enthalten jetzt auch keine Duplikate, wenn die Trackinglogs keine enthalten. (NEO-20040)
+* Fehlerkorrektur – Transaktions-E-Mails werden jetzt nicht mehr doppelt gesendet, nachdem ein Kommunikationsfehler mit dem Trackingserver behoben wurde. (NEO-23640)
+* Fehlerkorrektur – Der Codierungs-Parameterwert wird bei Weiterleitung von einer Tracking-URL nicht mehr gelöscht. (NEO-25637)
+* Fehlerkorrektur – Eine Abfrage funktioniert jetzt beim Vergleich von Fließkommazahlen. (NEO-23243)
+* Fehlerkorrektur – Die Anzeige des Spalteninhalts von **Geändert von** ist jetzt nach dem Neustart eines Workflows möglich. (NEO-23035)
+* Fehlerkorrektur – Der technische Workflow zum Tracking beim Herunterladen von Protokollen aus einem zweiten Container schlägt jetzt nicht mehr fehl. (NEO-23159)
+* Fehlerkorrektur – Workflows schlagen beim Ausführen einer Aktivität vom Typ **Anreicherung** jetzt nicht mehr fehl. (NEO-17338)
+* Zum Feld **Beizubehaltende Dubletten** in der Workflow-Aktivität **Deduplizierung** wurde eine Prüfung hinzugefügt, um die Eingabe von Null- oder Negativwerten zu verhindern.
+* Der **Planungsassistent** wurde aus den wiederkehrenden Kampagnen entfernt, um zu verhindern, dass Stunden und Minuten erwähnt werden. Es werden nur Datumswerte berücksichtigt.
+* Fehlerkorrektur – Es wurde ein Problem mit zusätzlichen Speicherfeldern behoben, das beim Erstellen von Sendungen mithilfe der Option **Wird durch ein Script erstellt** in der Workflow-Aktivität **Script** auftrat. (NEO-20609)
+* Fehlerkorrektur – Geister-Workflows werden jetzt im Rahmen der Aufgaben zur Datenbankbereinigung gelöscht.
+* Fehlerkorrektur – Der technische Workflow **Abrechnung (aktive Profile)** schläft jetzt nicht mehr fehl. (NEO-19777)
+* Fehlerkorrektur – Beim Testen der Verbindung des externen acsDefaultAccount-Kontos tritt jetzt kein Fehler mehr auf. (NEO-23433)
+* Fehlerkorrektur – Das Erstellen einer Schemaerweiterung für einen Primärschlüssel mit mehreren Spalten in einer Hadoop-Tabelle wird jetzt nicht mehr verhindert. (NEO-17390)
+* Fehlerkorrektur – Es wurde ein Fehler in der Aktivität **Laden (SOAP)** behoben, der das Laden von WSDL-Dateien über eine URL verhindern konnte. (NEO-16924)
+* Fehlerkorrektur – Über die Konsole kann jetzt ein **unbedingter Stopp** ausgeführt werden, wenn mehrere aktive Workflow-Server einen Lastenausgleich durchführen. (NEO-19556)
+* Fehlerkorrektur – Jetzt tritt kein Regressionsfehler mehr auf, der zum Absturz des Bereinigungs-Workflows führt.
+* Beim Veröffentlichen einer Vorlage in einer Ausführungsinstanz tritt jetzt kein Fehler mehr auf.
+* Fehlerkorrektur – Die Ausführung des technischen Workflows &quot;collectionPrivacyRequests&quot; wird jetzt nicht mehr verhindert. (NEO-20513, NEO-25169)
+* Fehlerkorrektur – Wenn nach dem Upgrade auf Build 9080 versucht wird, eine Verbindung mit Audience Manager herzustellen, treten jetzt keine Fehler mehr auf. (NEO-20511, NEO-25167)
+* Fehlerkorrektur – Beim Exportieren von Berichten im PDF- oder XLS-Format treten jetzt keine Fehler mehr auf. (NEO-20982, NEO-23493, NEO-23348)
+* Fehlerkorrektur – Ein Versand in der Versandliste wird nach dem Senden jetzt nicht mehr zweimal angezeigt.
+* Fehlerkorrektur – Bei der Versandvorbereitung tritt jetzt kein Fehler mehr auf, wenn die Routing-Konfiguration so eingerichtet ist, dass der Versand über Mid-Sourcing erfolgt.
+* Fehlerkorrektur – Beim Klicken auf den Link einer Web-Anwendung in einer Line-Nachricht wird jetzt keine Fehlermeldung mehr angezeigt.
+* Fehlerkorrektur – Das Abrufen aller Entitäten durch Microsoft Dynamics CRM wird jetzt nicht mehr verhindert. (NEO-24528)
+* Fehlerkorrektur – Der Verlauf der Aktivität **Inkrementelle Abfrage** nach Ausführung des Bereinigungs-Workflows wird jetzt nicht mehr gelöscht.
+* Fehlerkorrektur – Beim Erstellen eines externen Mid-Sourcing-Kontos tritt jetzt kein Fehler mehr auf, wenn die Option &quot;NmsMidSourcing_LastBroadLog_&lt;InternalName>&quot; fehlt.
