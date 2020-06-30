@@ -14,9 +14,9 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1a139e1704a7df38a7b8088e23c972864f8ad998
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1268'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 1. Wiederholen Sie die obigen Schritte, um Ihren neuen Programmordner und seinen internen Namen umzubenennen.
 
-## Kampagnen erstellen    {#creating-a-campaign}
+## Kampagnen erstellen     {#creating-a-campaign}
 
 ### Hinzufügen einer Kampagne {#adding-a-campaign}
 
