@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
 workflow-type: tm+mt
 source-wordcount: '2454'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ Adobe Campaign bietet mehrere Connectors, mit denen Sie mit externen Anwendungen
 
 Die folgenden Verbindungstypen können konfiguriert werden:
 
-* Azurblauer Synapse. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
+* Azure Synapse. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse).
 * Oracle. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
 * Netezza. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
 * SAP HANA. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../platform/using/specific-configuration-database.md#configure-access-to-sap-hana).
@@ -341,7 +341,7 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../integrations/using/configuring-ims.md).
 
-## Externes SFTP-Konto    {#sftp-external-account}
+## Externes SFTP-Konto     {#sftp-external-account}
 
 Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb von Adobe Campaign konfigurieren und testen. Um Verbindungen mit externen Systemen wie dem SFTP-Server einzurichten, der für Dateiübertragungen verwendet wird, können Sie eigene externe Konten erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/file-transfer.md).
 
