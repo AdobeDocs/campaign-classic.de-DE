@@ -55,6 +55,7 @@ So erstellen Sie Ihr externes [!DNL Azure Synapse]-Konto:
    * **[!UICONTROL Passwort]**: Passwort des Benutzerkontos
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank
+
    ![](assets/azure_1.png)
 
 ### Azure Synapse unter CentOS {#azure-centos}
@@ -250,6 +251,7 @@ So konfigurieren Sie Azure Synapse unter Debian:
    * **[!UICONTROL Passwort]**: Passwort des Benutzerkontos
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank
+
    ![](assets/snowflake.png)
 
 1. Klicken Sie auf den Tab **[!UICONTROL Parameter]** und dann auf die Schaltfläche **[!UICONTROL Funktionen freigeben]**, um Funktionen zu erstellen.
@@ -345,6 +347,7 @@ Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erforder
    * **[!UICONTROL Datenbank]**: Name Ihrer Datenbank, falls nicht im DSN angegeben. Kann leer bleiben, wenn im DSN angegeben
 
    * **[!UICONTROL Zeitzone]**: Zeitzone des Servers
+
    ![](assets/hadoop3.png)
 
 Der Connector unterstützt die folgenden ODBC-Optionen:
