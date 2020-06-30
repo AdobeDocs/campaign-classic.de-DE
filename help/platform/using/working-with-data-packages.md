@@ -14,11 +14,11 @@ discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2551'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Das Prinzip der **Datenpackages** besteht darin, eine Datenkonfiguration zu expo
 
 Es gibt drei Arten exportierbarer Packages: Benutzer-Packages, Plattform-Packages und Admin-Packages.
 
-* **Benutzer-Package**: Ermöglicht es, die Liste der zu exportierenden Entitäten auszuwählen. Dieser Packagetyp verwaltet Abhängigkeiten und überprüft Fehler.
+* **Benutzer-Package**: Ermöglicht es, die Liste der zu exportierenden Entitäten auszuwählen. Dieser Package-Typ verwaltet Abhängigkeiten und überprüft Fehler.
 * **Plattform-Package**: Enthält alle hinzugefügten (nicht standardmäßigen) technischen Ressourcen: Schemata, JavaScript-Code etc.
 
    ![](assets/ncs_datapackage_package_platform.png)
@@ -339,132 +339,132 @@ Entnehmen Sie Ihrem Lizenzvertrag, welche Packages Sie installieren können.
 
 Weitere Informationen zu Standard-Packages finden Sie in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md).
 
-## Data package best practices {#data-package-best-practices}
+## Best Practices für Datenpackages {#data-package-best-practices}
 
-In diesem Abschnitt wird beschrieben, wie Sie Datenpackagen während der gesamten Projektlaufzeit einheitlich organisieren.
+In diesem Abschnitt wird beschrieben, wie Sie Datenpackages während der ganzen Projektlaufzeit einheitlich organisieren können.
 
 <!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
 
-Pakete können verschiedene Arten von Konfigurationen und Elementen enthalten, gefiltert oder nicht. Wenn Sie einige Elemente vermissen oder Elemente/Pakete nicht in der richtigen Reihenfolge importieren, kann die Plattformkonfiguration beschädigt werden.
+Packages können verschiedene Arten von Konfigurationen und Elementen enthalten, die gefiltert sein können. Wenn einzelne Elemente fehlen oder Elemente/Packages nicht in der richtigen Reihenfolge importiert werden, kann die Plattformkonfiguration beschädigt werden.
 
-Darüber hinaus kann der Ordner &quot;Paketspezifikationen&quot;aufgrund der Tatsache, dass mehrere Personen auf derselben Plattform mit vielen verschiedenen Funktionen arbeiten, schnell komplex werden.
+Zudem kann der Ordner mit Package-Spezifikationen schnell komplex werden, wenn mehrere Personen auf derselben Plattform viele verschiedene Funktionen nutzen.
 
-Obwohl dies nicht zwingend erforderlich ist, wird in diesem Abschnitt eine Lösung Angebot, mit der Sie Pakete in Adobe Campaign für Großprojekte organisieren und verwenden können.
+In diesem Abschnitt wird eine Lösung beschrieben, mit der Sie Packages in Adobe Campaign für große Projekte organisieren und sinnvoll nutzen können. Diese Lösung wird empfohlen, ist aber nicht zwingend erforderlich.
 
 <!--This solution has been used with a project involving more than 10 consultants.-->
 
-Die wichtigsten Einschränkungen sind:
-* Organisieren Sie Pakete und behalten Sie einen Überblick darüber, was geändert wurde und wann
-* Wenn eine Konfiguration aktualisiert wird, minimieren Sie das Risiko, dass etwas beschädigt wird, das nicht direkt mit der Aktualisierung verknüpft ist.
+Die wichtigsten Punkte sind folgende:
+* Organisieren Sie Packages und protokollieren Sie, was wann geändert wird.
+* Minimieren Sie beim Aktualisieren einer Konfiguration das Risiko, Elemente zu beschädigen, die nicht direkt mit der Aktualisierung verbunden sind.
 
 >[!NOTE]
 >
->Weitere Informationen zum Einrichten eines Workflows zum automatischen Exportieren von Paketen finden Sie auf [dieser Seite](https://helpx.adobe.com/campaign/kb/export-packages-automatically.html).
+>Weiterführende Informationen zum Einrichten eines Workflows für das automatische Exportieren von Packages finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/export-packages-automatically.html).
 
 ### Empfehlungen  {#data-package-recommendations}
 
-Importieren Sie immer innerhalb derselben Version der Plattform. Sie müssen überprüfen, ob Sie Ihre Pakete zwischen zwei Instanzen bereitstellen, die denselben Build haben. Erzwingen Sie nie den Import und aktualisieren Sie immer zuerst die Plattform (wenn der Build anders ist).
+Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie müssen Ihre Packages zwischen zwei Instanzen bereitstellen, die denselben Build aufweisen. Erzwingen Sie den Import niemals und aktualisieren Sie immer zuerst die Plattform (wenn der Build abweicht).
 
 >[!IMPORTANT]
 >
 >Das Importieren zwischen verschiedenen Versionen wird von Adobe nicht unterstützt.
 <!--This is not allowed. Importing from 6.02 to 6.1, for example, is prohibited. If you do so, R&D won’t be able to help you resolve any issues you encounter.-->
 
-Achten Sie auf die Schema- und Datenbankstruktur. Nach der Installation des Pakets mit Schema muss das Schema erstellt werden.
+Achten Sie auf das Schema und die Datenbankstruktur. Nach dem Importieren von Packages mit einem Schema muss ein Schema erstellt werden.
 
 ### Lösung {#data-package-solution}
 
-#### Pakettypen {#package-types}
+#### Package-Typen {#package-types}
 
-Beginn durch Definition verschiedener Pakettypen. Es werden nur vier Typen verwendet:
+Definieren Sie zunächst verschiedene Package-Typen. Es werden nur vier Typen verwendet:
 
 **Entitäten**
 * Alle &quot;xtk&quot;- und &quot;nms&quot;-spezifischen Elemente in Adobe Campaign wie Schemas, Formulare, Ordner, Versandvorlagen usw.
-* Sie können eine Entität sowohl als &quot;Admin&quot;als auch als &quot;Plattform&quot;betrachten.
-* Sie sollten nicht mehr als eine Entität in ein Paket einschließen, wenn Sie es in eine Kampagne-Instanz hochladen.
+* Sie können eine Entität sowohl als &quot;Admin&quot;- als auch als &quot;Plattform&quot;-Element betrachten.
+* Sie sollten in ein Package, das Sie in eine Campaign-Instanz hochladen möchten, nicht mehr als eine Entität einschließen.
 
 <!--Nothing “works” alone. An entity package does not have a specific role or objective.-->
 
-Wenn Sie Ihre Konfiguration auf einer neuen Instanz bereitstellen müssen, können Sie alle Entitätspakete importieren.
+Wenn Sie Ihre Konfiguration in einer neuen Instanz bereitstellen müssen, können Sie alle Ihre Entitäts-Packages importieren.
 
 **Funktionen**
 
-Dieser Pakettyp:
-* Beantwortet eine Kundenanforderung/Spezifikation.
+Dieser Package-Typ:
+* Ist eine Reaktion auf eine Kundenanfrage/Spezifikation.
 * Enthält eine oder mehrere Funktionen.
-* Sollte alle Abhängigkeiten enthalten, um die Funktionalität ohne jedes andere Paket ausführen zu können.
+* Sollte alle Abhängigkeiten enthalten, um die Funktionen ohne weitere Packages ausführen zu können.
 
 **Kampagnen**
 
-Dieses Paket ist nicht obligatorisch. Manchmal ist es sinnvoll, einen bestimmten Typ für alle Kampagnen zu erstellen, auch wenn eine Kampagne als Funktion angesehen werden kann.
+Dieses Package ist nicht obligatorisch. Manchmal ist es sinnvoll, einen bestimmten Typ für alle Kampagnen zu erstellen, selbst wenn eine Kampagne als Funktion betrachtet werden kann.
 
-**Updates**
+**Aktualisierungen**
 
-Nach der Konfiguration kann eine Funktion in eine andere Umgebung exportiert werden. Beispielsweise kann das Paket aus einer dev-Umgebung in eine Test-Umgebung exportiert werden. Bei dieser Prüfung wird ein Fehler festgestellt. Zunächst muss es auf der dev-Umgebung repariert werden. Dann sollte das Pflaster auf die Testplattform aufgetragen werden.
+Nach der Konfiguration kann eine Funktion in eine andere Umgebung exportiert werden. Beispielsweise kann das Package aus einer Entwicklungsumgebung in eine Testumgebung exportiert werden. Bei diesem Test wurde ein Fehler festgestellt. Zunächst muss er in der Entwicklungsumgebung behoben werden. Dann muss der Patch auf die Testplattform angewendet werden.
 
-Die erste Lösung wäre, die gesamte Funktion erneut zu exportieren. Um jedoch jegliches Risiko zu vermeiden (d. h. unerwünschte Elemente zu aktualisieren), ist es sicherer, ein Paket zu haben, das nur die Korrektur enthält.
+Die erste Lösung bestünde darin, die gesamte Funktion erneut zu exportieren. Um jedoch jegliches Risiko zu vermeiden (d. h. Aktualisieren unerwünschter Elemente), ist es sicherer, ein Package zu nutzen, das nur die Korrektur enthält.
 
-Daher empfehlen wir, ein &quot;Update&quot;-Paket zu erstellen, das nur einen Entitätstyp der Funktion enthält.
+Daher empfehlen wir, ein &quot;Aktualisierungs&quot;-Package zu erstellen, das nur einen Entitätstyp der Funktion enthält.
 
-Ein Update kann nicht nur eine Fehlerbehebung, sondern auch ein neues Element Ihres Entitäts-/Feature-/Kampagne-Pakets sein. Um die Bereitstellung des gesamten Pakets zu vermeiden, können Sie ein Updatepaket exportieren.
+Eine Aktualisierung kann nicht nur aus einer Fehlerbehebung, sondern auch aus einem neuen Element Ihrer Entität/Funktion bzw. Ihres Kampagnen-Packages bestehen. Um eine Bereitstellung des gesamten Packages zu vermeiden, können Sie ein Aktualisierungs-Package exportieren.
 
 ### Namenskonventionen {#data-package-naming}
 
-Da nun Typen definiert sind, sollten wir eine Benennungsregel festlegen. Adobe Campaign ermöglicht nicht das Erstellen von Unterordnern für Paketspezifikationen, d. h. Zahlen sind die beste Lösung für die Organisation. Zahlen Präfix-Paketnamen. Sie können die folgende Konvention verwenden:
+Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt werden. Adobe Campaign erlaubt keine Erstellung von Unterordnern für Package-Spezifikationen, d. h. Zahlen sind die beste Lösung, um eine übersichtliche Struktur beizubehalten. Zahlen werden Package-Namen als Präfix vorangestellt. Sie können die folgende Konvention verwenden:
 
 * Entität: 1 bis 99
 * Funktion: 100 bis 199
 * Kampagne: von 200 bis 299
-* Aktualisieren: 5000 bis 5999
+* Aktualisierung: 5000 bis 5999
 
-### Packages {#data-packages}
+### Packages  {#data-packages}
 
 >[!NOTE]
 >
->Es ist besser, Regeln zur Definition der richtigen Anzahl von Paketen festzulegen.
+>Es ist empfehlenswert, Regeln zur Definition der richtigen Zahl von Packages festzulegen.
 
-#### Reihenfolge der Entitätspakete {#entity-packages-order}
+#### Reihenfolge von Entitäts-Packages {#entity-packages-order}
 
-Um den Import zu unterstützen, sollten Entitätspakete nach Bestellung so importiert werden, wie sie werden. Beispiel:
-* 001 - Schema
-* 002 - Formular
-* 003 - Bilder
+Um den Import zu erleichtern, sollten Entitäts-Packages beim Importieren geordnet werden. Beispiel:
+* 001 – Schema
+* 002 – Formular
+* 003 – Bilder
 * etc.
 
 >[!NOTE]
 >
->Formulare sollten nur nach der Aktualisierung des Schemas importiert werden.
+>Formulare sollten erst nach Schemaaktualisierungen importiert werden.
 
-#### Paket 200 {#package-200}
+#### Package 200 {#package-200}
 
-Die Paketnummer &quot;200&quot;sollte nicht für eine bestimmte Kampagne verwendet werden: Diese Nummer wird verwendet, um etwas zu aktualisieren, das alle Kampagnen betrifft.
+Package-Nummer 200 sollte nicht für spezifische Kampagnen verwendet werden; diese Nummer wird verwendet, um Aspekte zu aktualisieren, die alle Kampagnen betreffen.
 
-#### Paket aktualisieren {#update-package}
+#### Package aktualisieren {#update-package}
 
-Der letzte Punkt betrifft die Nummerierung des Aktualisierungspakets. Es ist Ihre Paketnummer (Entität, Funktion oder Kampagne) mit der Präfix &quot;5&quot;. Beispiel:
+Der letzte Punkt betrifft die Aktualisierung der Package-Nummerierung. Das ist Ihre Package-Nummer (Entität, Funktion oder Kampagne) mit einer 5 als Präfix. Beispiel:
 * 5001 zum Aktualisieren eines Schemas
 * 5200 zum Aktualisieren aller Kampagnen
-* 5101 zur Aktualisierung der 101-Funktion
+* 5101 zum Aktualisieren der 101-Funktion
 
-Das Updatepaket sollte nur eine bestimmte Entität enthalten, damit es einfach wiederverwendbar ist. Um sie zu teilen, fügen Sie eine neue Nummer hinzu (Beginn von 1). Für diese Pakete gibt es keine speziellen Bestellregeln. Um besser zu verstehen, stellen Sie sich vor, dass wir eine 101-Funktion haben, eine soziale Anwendung:
-* Es enthält eine webApp und ein Externe Konto.
-   * Die Paketbeschriftung lautet: 101 - Soziale Anwendung (socialApplication).
+Das Aktualisierungs-Package sollte nur eine spezifische Entität enthalten, um einfach wiederverwendbar zu sein. Um sie aufzuteilen, fügen Sie eine neue Nummer hinzu (beginnen Sie bei 1). Für diese Packages gelten keine speziellen Ordnungsregeln. Stellen Sie sich zum besseren Verständnis vor, dass eine 101-Funktion verwendet wird, eine Social-Anwendung:
+* Sie enthält eine webApp und ein externes Konto.
+   * Die Package-Bezeichnung lautet: 101 – Social-Anwendung (socialApplication).
 * Die webApp weist einen Fehler auf.
-   * Die wepApp wird korrigiert.
-   * Es muss ein Fix-Paket mit folgendem Namen erstellt werden: 5101 - 1 - WebApp der sozialen Anwendung (socialApplication_webApp).
-* Für die Funktion &quot;Social&quot;muss ein neues Externe Konto hinzugefügt werden.
-   * Externe Konto wird erstellt.
-   * Das neue Paket umfasst: 5101 - 2 - Externe Konto für soziale Anwendungen (socialApplication_extAccount).
-   * Parallel dazu wird das 101-Paket aktualisiert und dem Externe Konto hinzugefügt, es wird jedoch nicht bereitgestellt.
+   * Die webApp wird korrigiert.
+   * Ein Package für die Fehlerbehebung mit folgendem Namen muss erstellt werden: 5101 – 1 – Social-Anwendung webApp (socialApplication_webApp).
+* Für die Funktion &quot;Social&quot; muss ein neues externes Konto hinzugefügt werden.
+   * Das externe Konto wird erstellt.
+   * Das neue Package heißt: 5101 – 2 – Social-Anwendung Externes Konto (socialApplication_extAccount).
+   * Parallel dazu wird das 101-Package aktualisiert und dem externen Konto hinzugefügt; es wird jedoch nicht bereitgestellt.
       ![](assets/ncs_datapackage_best-practices-1.png)
 
-#### Paketdokumentation {#package-documentation}
+#### Package-Dokumentation {#package-documentation}
 
-Wenn Sie ein Paket aktualisieren, sollten Sie immer einen Kommentar in das Beschreibungsfeld setzen, um alle Änderungen und Gründe (z. B. &quot;Hinzufügen eines neuen Schemas&quot;oder &quot;Beheben eines Fehlers&quot;) detailliert darzustellen.
+Wenn Sie ein Package aktualisieren, sollten Sie stets einen Kommentar in das Beschreibungsfeld eingeben, um sämtliche Änderungen und Gründe (z. B. &quot;Hinzufügen eines neuen Schemas&quot; oder &quot;Beheben eines Fehlers&quot;) genau zu dokumentieren.
 
 ![](assets/ncs_datapackage_best-practices-2.png)
 
-Du solltest auch mit dem Kommentar beginnen. Melden Sie immer Ihren Kommentar zu einem Updatepaket an das übergeordnete Paket (Paket ohne das 5-Präfix).
+Sie sollten auch das Datum des Kommentars angeben. Melden Sie Ihren Kommentar zu einem Aktualisierungs-Package immer an das &quot;übergeordnete&quot; Element (Package ohne Präfix 5).
 
 >[!IMPORTANT]
 >
