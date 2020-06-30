@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 30b2860250c6d1c4032a22a28f6e2e48dcacc6a8
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -21,13 +21,16 @@ ht-degree: 86%
 
 * **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Sie können Emoticons jetzt in Nachrichten und Betreffzeile einfügen
 
-* **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>- Häufig gestellte Fragen, Best Practices, Hilfe-Ressourcen und Hilfeanfragen
+* **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>
+Häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
 
-* **[Gewährleistung des Datenschutzes](https://helpx.adobe.com/de/campaign/kb/campaign-privacy.html)**<br/>: Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen kann.
+* **[Gewährleistung des Datenschutzes](https://helpx.adobe.com/de/campaign/kb/campaign-privacy.html)**<br/>
+Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen kann.
 
-* **[Verfolgungsfunktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/> verstehen Verfolgungsfunktionen und -prozesse in der Kampagne
+* **[Tracking-Funktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/>
+Lernen Sie die Tracking-Funktionen und -Verfahren von Campaign kennen.
 
-* **[Interaktive Inhalte mit AMP](delivery/using/defining-interactive-content.md)**<br/>: Erfahren Sie, wie Sie mit dem neuen AMP   dynamische E-Mails senden können.
+* **[Interaktive Inhalte mit AMP](delivery/using/defining-interactive-content.md)**<br/>Erfahren Sie, wie Sie mit dem neuen AMP-Format dynamische E-Mails senden können.
 
 [Klicken Sie hier für weitere Updates.](/help/rn/using/documentation-updates.md)
 
@@ -54,7 +57,8 @@ ht-degree: 86%
     </a>
     <div>
       <a href="https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html">
-    <strong>Aktualisierung auf den aktuellen Build</strong></a>
+    <strong>Aktualisierung auf den aktuellen Build</strong>
+    </a>
     </div>
     <p>
     <em>Wichtige Schritte und Best Practices für eine Build-Aktualisierung</em>
