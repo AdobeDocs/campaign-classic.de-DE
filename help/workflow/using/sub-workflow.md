@@ -14,11 +14,11 @@ discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -29,19 +29,19 @@ Mit der Aktivität **[!UICONTROL Unter-Workflow]** kann die Ausführung eines an
 
 Sie können in einem einzigen Workflow mehrere Unter-Workflows starten. Unter-Workflows werden synchron ausgeführt.
 
-Im folgenden Beispiel ruft ein &quot;Master&quot;-Workflow einen Unter-Workflow mit Jumps auf. Weitere Informationen zu grafischen Objekten mit Sprungtyp finden Sie in [diesem Abschnitt](../../workflow/using/jump--start-point-and-end-point-.md).
+Im folgenden Beispiel ruft ein &quot;Master&quot;-Workflow einen Unter-Workflow mithilfe von Sprüngen auf. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Erstellen Sie einen Workflow, den Sie als Unter-Workflow in einem anderen Workflow verwenden möchten.
-1. Fügen Sie am Anfang des Workflows eine **[!UICONTROL Aktivität mit der Priorität 1 ein (Endpunkt)]** . Wenn mehrere &quot;Endpunkt&quot;-Jumps vorhanden sind, verwendet Adobe Campaign den &quot;Endpunkt&quot;-Sprung mit der niedrigsten Zahl.
-1. Fügen Sie am Ende des Workflows eine **[!UICONTROL Sprung (Beginn-Point)]** -Aktivität mit der Priorität 2 ein. Wenn Sie mehrere Jumps vom Typ &quot;Beginn-Point&quot;haben, verwendet Adobe Campaign den &quot;Beginn-Point&quot;-Sprung mit der höchsten Anzahl.
+1. Fügen Sie am Anfang des Workflows eine Aktivität vom Typ **[!UICONTROL Sprung (Ziel)]** mit der Priorität 1 ein. Wenn mehrere &quot;Ziel&quot;-Sprünge vorhanden sind, verwendet Adobe Campaign den &quot;Ziel&quot;-Sprung mit der niedrigsten Nummer.
+1. Fügen Sie am Ende des Workflows eine Aktivität vom Typ **[!UICONTROL Sprung (Start)]** mit der Priorität 2 ein. Wenn mehrere &quot;Start&quot;-Sprünge vorhanden sind, verwendet Adobe Campaign den &quot;Start&quot;-Sprung mit der höchsten Nummer.
 
    ![](assets/subworkflow_jumps.png)
 
    >[!NOTE]
    >
-   >If the sub-workflow activity references a workflow with several **[!UICONTROL Jump]** activities, the sub-workflow is executed between the &quot;end point&quot; type jump with the lowest number and the &quot;start point&quot; type jump with the highest number.
+   >Wenn die Unter-Workflow-Aktivität einen Workflow startet, der mehrere **[!UICONTROL Sprung]**-Aktivitäten aufweist, wird der Unter-Workflow zwischen dem &quot;Ziel&quot;-Sprung mit der kleinsten Nummer und dem &quot;Start&quot;-Sprung mit der höchsten Nummer ausgeführt.
    >
-   >Damit der Unter-Workflow korrekt ausgeführt werden kann, muss nur ein &quot;Endpunkt&quot;-Typsprung mit der niedrigsten Zahl und nur ein &quot;Beginn-Point&quot;-Typsprung mit der höchsten Zahl vorhanden sein.
+   >Damit sich der Unter-Workflow richtig ausführen lässt, dürfen Sie nur einen &quot;Ziel&quot;-Sprung mit der niedrigsten Nummer und einen &quot;Start&quot;-Sprung mit der höchsten Nummer verwenden.
 
 1. Vervollständigen und speichern Sie diesen Unter-Workflow.
 1. Erstellen Sie einen &quot;Master&quot;-Workflow.
@@ -80,4 +80,4 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 
 Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
 
-* targetSchema: Dieser Wert ist das Schema der Arbeitstabelle. Dieser Parameter ist für alle Transitionen mit **[!UICONTROL tableName]** und **[!UICONTROL Schema]** gültig.
+* targetSchema: Dieser Wert ist das Schema der Arbeitstabelle. Dieser Parameter ist für alle Transitionen mit **[!UICONTROL tableName]** und **[!UICONTROL schema]** gültig.
