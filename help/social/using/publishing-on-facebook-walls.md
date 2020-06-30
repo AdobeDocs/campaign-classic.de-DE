@@ -14,11 +14,11 @@ discoiquuid: 8577db0b-f1fc-41af-aa0f-ec4d02dac376
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1067'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Damit Adobe Campaign Publikationen an Facebook-Pinnwände senden kann, müssen 
 Erstellen Sie zunächst ein Facebook-Konto und mehrere Seiten: Diese werden zum Senden von Publikationen verwendet.
 
 * Verwenden Sie den Link [https://www.facebook.com](https://www.facebook.com), um ein Facebook-Konto zu erstellen.
-* To create a Facebook page, use the [https://www.facebook.com/pages/create](https://www.facebook.com/pages/create) link.
+* Verwenden Sie den Link [https://www.facebook.com/pages/create](https://www.facebook.com/pages/create), um eine Facebook-Seite zu erstellen.
 
    Es wird empfohlen, alle Seiten mit demselben Facebook-Konto zu verwalten. Auf diese Weise benötigen Sie nur eine Facebook-Anwendung und ein externes Konto, um auf allen Seiten des Kontos zu schreiben.
 
