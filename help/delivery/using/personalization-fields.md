@@ -14,11 +14,11 @@ discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '889'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -83,11 +83,11 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
 ## Personalisierung optimieren {#optimizing-personalization}
 
-Mit der folgenden Option können Sie die Personalisierung optimieren: Verwenden Sie dazu im **[!UICONTROL Analyse]**-Tab der Versandeigenschaften die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten.]** Weitere Informationen zur Analyse des Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Mit der folgenden Option können Sie die Personalisierung optimieren: Verwenden Sie dazu im **[!UICONTROL Analyse]**-Tab der Versandeigenschaften die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten.]** Weiterführende Informationen zur Versandanalyse finden Sie in [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus über FDA verknüpften Tabellen).
 
-Wenn Sie diese Option aktivieren, kann sich die Analyse des Versands bei der Verarbeitung einer Vielzahl von Daten erheblich verbessern, insbesondere wenn die Personalisierungsdaten von einer externen Tabelle über die FDA stammen. For more on this, see [Accessing an external database (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
+Wenn Sie die Option aktivieren, kann sich die Leistung der Versandanalyse bei der Verarbeitung großer Datenmengen erheblich verbessern, insbesondere wenn die Personalisierungsdaten aus einer externen Tabelle via FDA stammen. Weiterführende Informationen dazu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](../../platform/using/additional-options.md#optimizing-email-personalization-with-external-data).
 
 Sollten Sie beispielsweise beim Versand an zahlreiche Empfänger Leistungsprobleme feststellen, wenn Sie viele Personalisierungsfelder und/oder Gestaltungsbausteine im Nachrichteninhalt verwenden, können Sie mit dieser Option die Personalisierung und somit den Nachrichtenversand beschleunigen.
 
