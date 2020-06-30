@@ -14,18 +14,18 @@ discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1486e897a125520c51661db3030c62ab380fb173
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 
 # Vorlagenpublikation{#template-publication}
 
-Sobald die auf der Kontrollinstanz erstellte Nachrichtenvorlage abgeschlossen ist, können Sie sie auf allen Ausführungsinstanzen veröffentlichen. Mit der Veröffentlichung können Sie automatisch zwei Meldungsvorlagen auf der Ausführungsinstanz erstellen, mit denen Sie Nachrichten senden können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
+Sobald die in der Kontrollinstanz erstellte Nachrichtenvorlage fertig ist, können Sie sie in allen Ausführungsinstanzen publizieren. Bei der Publikation können Sie in der Ausführungsinstanz automatisch zwei Nachrichtenvorlagen erstellen, um Nachrichten senden zu können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
 
 >[!IMPORTANT]
 >
@@ -37,11 +37,11 @@ Sobald die auf der Kontrollinstanz erstellte Nachrichtenvorlage abgeschlossen is
 
 1. Gehen Sie in der Kontrollinstanz in den Knoten **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** des Navigationsbaums.
 1. Wählen Sie die auf den Ausführungsinstanzen zu publizierende Vorlage aus.
-1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**.
+1. Klicken Sie auf **[!UICONTROL Publizieren]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Once publication is complete, both message templates to be applied to batch and real-time type events are created in the tree of the production instance in the **[!UICONTROL Administration > Production > Message Center Execution> Default > Transactional message templates]** folder.
+Nach Abschluss der Publikation werden die beiden Vorlagen, die auf die Echtzeit- und Batch-Ereignisse angewendet werden, im Navigationsbaum der Ausführungsinstanz im Ordner **[!UICONTROL Administration > Betreibung > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** erstellt.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
