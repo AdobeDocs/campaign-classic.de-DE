@@ -14,11 +14,11 @@ discoiquuid: 83b915bd-7e23-41b5-9f9a-f7eb72026376
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2270c9d980d963437f9bb5cf37795474d261d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Klicken Sie auf den Link **[!UICONTROL Konfiguration bearbeiten...]**, um die De
 
    >[!NOTE]
    >
-   >Wenn Sie externe Daten als Eingabe verwenden, z. B. aus einer externen Datei, müssen Sie die Option &quot; **[!UICONTROL Temporäres Schema]** &quot;auswählen.
+   >Wenn Sie externe Daten als Eingabe verwenden möchten (z. B. Daten aus einer externen Datei), müssen Sie die Option **[!UICONTROL Temporäres Schema]** markieren.
 Die Option **[!UICONTROL Sonstige]** ermöglicht im nächsten Schritt die Auswahl anderer Felder:
 
    ![](assets/s_user_segmentation_dedup_param3.png)
