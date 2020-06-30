@@ -14,8 +14,11 @@ discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+translation-type: tm+mt
+source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 100%
 
 ---
 
@@ -40,7 +43,7 @@ Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungs
 * [Anmeldung mit zweifacher Bestätigung](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in): Hier erfahren Sie, wie Sie eine Abonnementbestätigungsanfrage für eine zweifache Bestätigung senden, um sicherzustellen, dass sich der Empfänger absichtlich angemeldet hat.
 * [Erstellen eines E-Mail-Versands](../../web/using/use-case--creating-an-email-delivery.md): Hier erfahren Sie, wie Sie mit dem Digital Content Editor einen E-Mail-Versand erstellen.
 * [Erstellen von Übersichten](../../web/using/use-cases--creating-overviews.md): Erstellen Sie Übersichts-Webanwendungen, um alle Webanwendungen in Ihrer Datenbank anzuzeigen.
-* [Anwendungsbeispiel für Workflow](../../workflow/using/using-the-local-approval-activity.md): Mithilfe dieser Anwendungsbeispiele lernen Sie die verschiedenen Verwendungsmöglichkeiten von Workflows kennen.
+* [Anwendungsbeispiel für Workflow](../../workflow/using/about-workflow-use-cases.md): Mithilfe dieser Anwendungsbeispiele lernen Sie die verschiedenen Verwendungsmöglichkeiten von Workflows kennen.
 
 ## Anleitungsvideos {#how-to-videos}
 
