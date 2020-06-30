@@ -118,6 +118,7 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
    * Die erste Spalte enthält einen dem Ereignis entsprechenden Code: Kauf (Transaktionsbetrag kleiner oder größer als 3000 Euro), Kein Kauf oder Rückgabe eines oder mehrerer Artikel.
    * Die anderen Spalten enthalten jeweils die Vornamen, Nachnamen und E-Mail-Adressen der Kunden sowie die Kundennummern.
+
    Die Formatierung der Daten geschieht auf die gleiche Weise wie bei einem Datenimport in Adobe Campaign. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../platform/using/importing-data.md#step-2---source-file-selection).
 
 1. Positionieren Sie im Anschluss eine Aufspaltungsaktivität und geben Sie je nach Wert in der **Ereignis**-Spalte die zu erstellenden Teilmengen an.
