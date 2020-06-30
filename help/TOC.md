@@ -61,7 +61,7 @@ ht-degree: 99%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen  {#creating-queries}
+   + Abfragen erstellen   {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -128,7 +128,7 @@ ht-degree: 99%
       + [Bedingter Inhalt](delivery/using/conditional-content.md)
       + [Personalisierte Gutscheine](delivery/using/personalized-coupons.md)
       + [Personalisierte PDF-Dokumente erstellen](delivery/using/generating-personalized-pdf-documents.md)
-      + [Anpassen der Emoticon-Liste](delivery/using/customizing-emoticon-list.md)
+      + [Emoticon-Liste anpassen](delivery/using/customizing-emoticon-list.md)
    + Testadressen verwenden {#using-seed-addresses}
       + [Über Testadressen](delivery/using/about-seed-addresses.md)
       + [Testadressen erstellen](delivery/using/creating-seed-addresses.md)
@@ -404,7 +404,7 @@ ht-degree: 99%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring  {#monitoring}
+      + Monitoring   {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -528,7 +528,7 @@ ht-degree: 99%
       + [Transaktionsnachrichten-Vorschau](message-center/using/transactional-message-preview.md)
       + [Testversand durchführen](message-center/using/sending-a-proof.md)
       + [Vorlagenpublikation](message-center/using/template-publication.md)
-      + [Vorlage ohne Veröffentlichung](message-center/using/template-unpublication.md)
+      + [Publikation von Vorlagen rückgängig machen](message-center/using/template-unpublication.md)
    + Ereignisverarbeitung {#event-processing}
       + [Über die Ereignisverarbeitung](message-center/using/about-event-processing.md)
       + [Ereignisabruf](message-center/using/event-collection.md)
@@ -606,7 +606,7 @@ ht-degree: 99%
       + [Interaction - Datenpuffer](installation/using/interaction---data-buffer.md)
    + Anlagen {#appendices}
       + [Die Server-Konfigurationsdatei](installation/using/the-server-configuration-file.md)
-      + [Kampagne-Netzwerk-Endpunkte](installation/using/campaign-network-endpoints.md)
+      + [Campaign-Netzwerkendpunkte](installation/using/campaign-network-endpoints.md)
       + [Befehlszeilen](installation/using/command-lines.md)
       + [Erstellen neuer Instanzen](installation/using/creating-new-instances.md)
       + [Liste der Optionen von Campaign Classic](installation/using/configuring-campaign-options.md)
