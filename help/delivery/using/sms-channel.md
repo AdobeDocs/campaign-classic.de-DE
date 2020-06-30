@@ -14,11 +14,11 @@ discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3273'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -41,13 +41,13 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 
 1. ein externes Konto mit Angabe des Connectors und des Nachrichtentyps;
 
-   Beachten Sie, dass folgende Connectors ab Version 20.2 nicht mehr unterstützt werden: NetSize, Generic SMPP (SMPP Version 3.4 unterstützt Binärmodus), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und iOS. Veraltete Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
+   Beachten Sie, dass folgende Connectoren ab Version 20.2 nicht mehr unterstützt werden: NetSize, Generic SMPP (SMPP Version 3.4 mit Unterstützung für Binärmodus), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und iOS. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
 
-1. eine Versandvorlage, die auf das externe Konto Bezug nimmt.
+1. Eine Versandvorlage, die auf das externe Konto Bezug nimmt.
 
 ### Erstellen eines externen SMPP-Kontos {#creating-an-smpp-external-account}
 
-Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr SMPP-Externe Konto erstellen.
+Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr externes SMPP-Konto erstellen.
 Weitere Informationen zum SMS-Protokoll und zu den Einstellungen finden Sie in dieser [Technote](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html).
 
 Gehen Sie dazu wie folgt vor:
@@ -64,7 +64,7 @@ Gehen Sie dazu wie folgt vor:
 
    >[!CAUTION]
    >
-   > Ab Version 20.2 werden ältere Connectors nicht mehr unterstützt. Es wird empfohlen, den **[!UICONTROL erweiterten generischen SMPP]** -Connector zu verwenden. Weitere Informationen zum Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](https://helpx.adobe.com/campaign/kb/sms-connector.html).
+   > Ab Version 20.2 werden ältere Connectoren eingestellt und nicht mehr unterstützt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden. Weiterführende Informationen über das Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/sms-connector.html).
 
 1. Mit der Option **[!UICONTROL Ausführliche SMPP-Protokolle in der Protokolldatei aktivieren]** können Sie den gesamten SMPP-Traffic in Logdateien speichern. Diese Option muss aktiviert sein, um eine Fehlerbehebung beim Connector durchzuführen und einen Vergleich mit dem vom Provider aufgezeichneten Traffic anzustellen.
 
@@ -373,19 +373,19 @@ Um den SMS-Kanal zu nutzen, muss in der Versandvorlage der entsprechende Connect
 
 Wir empfehlen Ihnen, nicht die native Versandvorlage zu ändern, sondern diese zu duplizieren und die Kopie nach Bedarf zu konfigurieren.
 
-Im folgenden Beispiel erstellen wir eine Vorlage, um Nachrichten über das zuvor aktivierte SMPP-Konto zu senden. Gehen Sie dazu wie folgt vor:
+Im folgenden Beispiel wird eine Vorlage erstellt, die dem Versand von Nachrichten mithilfe des zuvor aktivierten SMPP-Kontos dient. Gehen Sie dazu wie folgt vor:
 
 1. Markieren Sie den **[!UICONTROL Versandvorlagen]**-Knoten.
 1. Klicken Sie mit der rechten Maustaste auf die Vorlage **[!UICONTROL Versand auf Mobiltelefone]** und wählen Sie die Option **[!UICONTROL Duplizieren]**.
 
    ![](assets/s_user_mobile_template_change_01.png)
 
-1. Ändern Sie die Beschriftung der Vorlage, z. B. **Sent to mobiles (SMPP)**.
+1. Ändern Sie die Beschriftung der Vorlage, z. B. **Mobiltelefon-Versand (SMPP)**.
 
    ![](assets/s_user_mobile_template_change_02.png)
 
 1. Klicken Sie auf **[!UICONTROL Eigenschaften]**.
-1. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Allgemein]** &quot;einen Routing-Modus, der dem Externe Konto entspricht, das Sie in den vorherigen Schritten erstellt haben.
+1. Wählen Sie auf dem Tab **[!UICONTROL Allgemein]** einen Routing-Modus, der dem externen Konto entspricht, das Sie in den vorherigen Schritten erstellt haben.
 
    ![](assets/s_user_mobile_template_change_03.png)
 
@@ -406,7 +406,7 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 >Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
-1. Select the delivery template **Sent to mobiles (SMPP)** that you created earlier. Lesen Sie diesbezüglich auch den Abschnitt [Versandvorlagen ändern](#changing-the-delivery-template).
+1. Wählen Sie die zuvor erstellte Versandvorlage **Mobiltelefon-Versand (SMPP)** aus. Lesen Sie diesbezüglich auch den Abschnitt [Versandvorlagen ändern](#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
@@ -468,7 +468,7 @@ Die Schaltfläche **[!UICONTROL Eigenschaften]** gibt Zugriff auf erweiterte Ver
 
 Folgende Optionen stehen zur Verfügung:
 
-* **Absenderadresse**: ermöglicht die Personalisierung des Versand-Senders mit einer Zeichenfolge aus alphanumerischen Zeichen, die auf elf Zeichen begrenzt ist. Das Feld darf nicht ausschließlich aus Zahlen bestehen. Sie können eine Bedingung definieren, die beispielsweise je nach Bereichscode des Empfängers unterschiedliche Namen anzeigt:
+* **Absenderadresse**: ermöglicht die Personalisierung des Versandabsenders mit einer Zeichenfolge aus alphanumerischen Zeichen, die auf elf Zeichen begrenzt ist. Das Feld darf nicht ausschließlich aus Zahlen bestehen. Sie können eine Bedingung definieren, um beispielsweise je nach Bereichs-Code des Empfängers unterschiedliche Namen anzuzeigen:
 
    ```
    <% if( String(recipient.mobilePhone).indexOf("+1") == 0){ %>NeoShopUS<%} else {%>NeoShopWorld<%}%>
