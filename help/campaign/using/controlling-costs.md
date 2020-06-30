@@ -14,9 +14,9 @@ discoiquuid: 892b93ed-cb0e-4af5-a1ae-eff0c8b703c6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2541'
 ht-degree: 100%
 
@@ -208,7 +208,6 @@ Kosten werden in drei Kategorien eingeteilt:
    * In einem noch nicht analysierten Versand entsprechen die berechneten Kosten dem Betrag der Plankosten. Wenn die Analyse bereits stattgefunden hat, setzen sich die berechneten Kosten aus den basierend auf den Kostenstrukturen des Dienstleisters und der Anzahl der ausgewählten Empfänger berechneten Beträgen zusammen.
    * In einer gestarteten Aufgabe werden die Plankosten als berechnete Kosten verwendet. Nach Abschluss der Aufgabe entsprechen die berechneten Kosten der Summe aller basierend auf den Kostenstrukturen des Dienstleisters und - falls zutreffend - der Anzahl an insgesamt benötigten Tagen berechneten Kosten.
    * Sowohl für Marketingpläne als auch für Programme entsprechen die berechneten Kosten der Summe der für die verknüpften Kampagnen berechneten Kosten. Wenn diese nicht angegeben sind, werden die Plankosten anstelle der berechneten Kosten verwendet.
-
    >[!NOTE]
    >
    >Über den **[!UICONTROL Verteilung]**-Link der berechneten Kosten können Details der Berechnung sowie das Datum der letzten Kostenberechnung eingesehen werden.
@@ -254,11 +253,9 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
    Erstellen Sie für die Aufgaben die folgenden zwei Kostenstellen:
 
    * **[!UICONTROL Raumreservierung]** (Typen Kleiner Saal und Großer Saal) mit einer **Pauschale** von 300 und 500 Euro.
-
    ![](assets/s_user_cost_mgmt_sample_6.png)
 
    * **[!UICONTROL Erstellung]** (Typ **Inhaltsvorlage**) mit von der **Dauer in Tagen** abhängigen Kosten in Höhe von 300 Euro:
-
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
 #### 3. Schritt - Anfallende Kosten auf das Kampagnenbudget anrechnen {#step-3---charging-the-budget-in-the-campaign}
