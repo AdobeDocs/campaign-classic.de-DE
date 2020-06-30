@@ -12,11 +12,11 @@ discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 
 >[!NOTE]
 >
->Um Leistungsprobleme zu vermeiden, sollten Bilder, die Sie direkt von einer personalisierten URL als Anlage herunterladen, standardmäßig nicht mehr als 100.000 Byte umfassen. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
+>Zur Vermeidung von Leistungsproblemen sollten Bilder, die Sie von einer personalisierten URL direkt als Anhang herunterladen, standardmäßig nicht mehr als 100.000 Byte groß sein. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
-## Empfehlungen   {#important-notes}
+## Empfehlungen    {#important-notes}
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
 
@@ -60,7 +60,7 @@ Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sor
 
 >[!NOTE]
 >
->Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail einzuschließen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
+>Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
 ## Implementierung{#implementation}
 
