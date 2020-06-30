@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 655544352070b0e2fab72b1991d2e4d80e03e349
+source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
 workflow-type: tm+mt
-source-wordcount: '2819'
-ht-degree: 94%
+source-wordcount: '2859'
+ht-degree: 93%
 
 ---
 
@@ -92,6 +92,11 @@ Die folgenden Fehlerbehebungen beziehen sich auf den Tracking-Link-Sicherheitsme
 ![](assets/do-not-localize/orange_2.png) **29. April 2020**: neuer Build (9032@3a9dc9c), der die folgenden Fehlerbehebungen enthält:
 
 * Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism).
+
+>[!CAUTION]
+>
+>Sollten Sie Probleme mit Push-Benachrichtigungen über Tracking-Links oder Versand mit Anker-Tags haben, empfehlen wir, den neuen Signaturmechanismus für die Linktracking zu deaktivieren. Das Verfahren ist auf dieser [Seite beschrieben](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+
 * Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
 * Fehlerkorrektur – Bei der Aktivität **Dateiübertragung** funktioniert jetzt die SFTP-Schlüssel-basierte Authentifizierung bei Debian 9. (NEO-23183)
 * Fehlerkorrektur – Bei Push-Benachrichtigungen, die mit hoher Häufigkeit gesendet werden, tritt jetzt kein Problem mehr auf. (NEO-20516)
@@ -107,7 +112,7 @@ Die folgenden Fehlerbehebungen beziehen sich auf den Tracking-Link-Sicherheitsme
 
 ![](assets/do-not-localize/orange_2.png) **5. März 2020**: neuer Build (9032@19f73c5), der folgende Fehlerkorrektur enthält:
 
-* Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
+* Fehlerkorrektur – Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
 
 ![](assets/do-not-localize/orange_2.png) **17. Dezember 2019**: neuer Build (9032@d6b8062), der folgende Fehlerkorrektur enthält:
 
