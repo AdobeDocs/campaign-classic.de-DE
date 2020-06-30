@@ -14,11 +14,11 @@ discoiquuid: f3666c12-5e6f-452e-b1d6-b69a7e9f6f6e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b60b5fad24c1237981f66315e7cf585c79f82641
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1056'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -27,11 +27,11 @@ ht-degree: 87%
 
 ## Über E-Mail-Anhänge {#about-email-attachments}
 
-Sie können eine oder mehrere Dateien an einen E-Mail-Versand anhängen.
+Sie können an einen E-Mail-Versand eine oder mehrere Dateien anhängen.
 
 >[!NOTE]
 >
->Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail einzuschließen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
+>Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
 Sie haben zwei Möglichkeiten:
 
@@ -52,7 +52,7 @@ Gehen Sie wie folgt vor, um eine lokale Datei an einen Versand anzuhängen.
 
 1. Wählen Sie den Link **[!UICONTROL Anhänge]**.
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
-1. Klicken Sie auf **[!UICONTROL Datei...]** , um die Datei auszuwählen, die an den Versand angehängt werden soll.
+1. Klicken Sie auf **[!UICONTROL Datei...]**, um die Datei auszuwählen, die an den Versand angehängt werden soll.
 
    ![](assets/s_ncs_user_wizard_email_attachement.png)
 
@@ -102,7 +102,7 @@ Nun kann die Datei als Anhang der auf dieser Vorlage beruhenden Sendungen verwen
 
 ### Personalisierte Nachricht anhängen {#attach-a-personalized-message}
 
-The option **[!UICONTROL The file content is personalized and converted into PDF format at the time of delivery for each message]** lets you select a file with personalization fields, such as the last name and first name of the intended recipient.
+Mit der Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für jede Nachricht personalisiert und in PDF konvertiert]** können Sie eine Datei mit Personalisierungsfeldern (z. B. für den Vor- und Nachnamen des Empfängers) auswählen.
 
 ![](assets/s_ncs_user_wizard_email_calc_attachement_06.png)
 
@@ -128,7 +128,7 @@ Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 
 >[!NOTE]
 >
->Um Leistungsprobleme zu vermeiden, sollten Bilder, die Sie direkt von einer personalisierten URL als Anlage herunterladen, standardmäßig nicht mehr als 100.000 Byte umfassen. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery)konfiguriert werden.
+>Zur Vermeidung von Leistungsproblemen sollten Bilder, die Sie von einer personalisierten URL direkt als Anhang herunterladen, standardmäßig maximal 100.000 Byte groß sein. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
 ### Berechnete Datei anhängen {#attach-a-calculated-file}
 
