@@ -14,9 +14,9 @@ discoiquuid: 72e974b8-415a-47ab-9804-b15957787198
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aef56860d6e4558a7f4833066ab3d83733591522
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
 ht-degree: 100%
 
@@ -54,6 +54,7 @@ Gehen Sie bei On-Premise-Installationen wie folgt vor, um das Inbox Rendering zu
    * **[!UICONTROL Server]**: https://deliverability-app.neolane.net/deliverability
    * **[!UICONTROL Verschlüsselung]**: Keine
    * Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
+
    ![](assets/s_tn_inbox_rendering_external-account.png)
 
 1. Wechseln Sie zum Knoten **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]**. Suchen Sie nach der Option **[!UICONTROL DmRendering_cuid]** und wenden Sie sich an den Support, um die ID der Versandberichte abzurufen, die in das Feld **[!UICONTROL Wert (Text)]** kopiert werden muss.
@@ -91,6 +92,7 @@ Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]
 >
 >* Das bedeutet, dass jedes Mal, wenn ein Inbox-Rendering-Bericht erstellt wird, pro E-Mail-Client ein Token abgezogen wird: ein Token für das Rendering in Outlook 2000, einer für das Rendering in Outlook 2010, einer für das Rendering in Apple Mail 9 usw.
 >* Wenn Sie für denselben Versand das Inbox Rendering wiederholen, wird die Anzahl der verfügbaren Token nochmals um die Anzahl der erzeugten Renderings reduziert.
+
 >
 
 
