@@ -14,18 +14,18 @@ discoiquuid: 1683477a-9233-4a25-b0d0-0c81051eb440
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
 # Interaction{#interaction}
 
-The workflows detailed below are installed with the **Offer engine (Interaction)** module by default. For more on this module, refer to this [section](../../interaction/using/interaction-and-offer-management.md).
+Die folgenden Workflows werden standardmäßig mit dem **Angebotsmodul (Interaction)** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../interaction/using/interaction-and-offer-management.md).
 
 <table> 
  <tbody> 
