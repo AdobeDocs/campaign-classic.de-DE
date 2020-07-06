@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6781'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## Juni 2020{#june-2020}
 
-Der Abschnitt Entfernen einer unter Quarantäne gestellten Adresse wurde aktualisiert. Dies umfasst eine Klärung der Fälle, in denen Adressen automatisch aus der Liste der Quarantäne entfernt werden. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
+Der Abschnitt über das Entfernen einer unter Quarantäne gestellten Adresse wurde aktualisiert. Dies umfasst eine Klarstellung der Fälle, in denen Adressen automatisch aus der Quarantäneliste entfernt werden. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
-Es wurden Anwendungsfälle zum [Verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) und [Entschlüsseln](../../workflow/using/importing-data.md#use-case-gpg-decrypt) von Daten mithilfe der Systemsteuerung und Kampagnen-Workflows hinzugefügt.
+Es wurden Anwendungsfälle zum [Verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) und [Entschlüsseln](../../workflow/using/importing-data.md#use-case-gpg-decrypt) von Daten mit dem Control Panel und mit Campaign-Workflows hinzugefügt.
 
 Die Begriffe &#39;Whitelist&#39; und &#39;Blacklist&#39; wurden aus der Dokumentation zu Adobe Campaign entfernt. Einige Vorkommen dieser Begriffe sind möglicherweise noch in der Benutzeroberfläche des Produkts, den Optionsnamen und dem internen Code vorhanden, werden jedoch in den kommenden Campaign-Versionen durch „Blockierungsliste“ und „Zulassungsliste“ ersetzt.
 
-Die Integrationsseite für Experience Cloud Triggers und Adobe Campaign Classic wurde [hier](../../integrations/using/about-triggers.md)verschoben.
+Die Seite über die Integration von Experience Cloud Triggers und Adobe Campaign Classic wurde [hierher](../../integrations/using/about-triggers.md) verschoben.
 
 ## 20.2 - 08/06/2020{#release-20-2}
 
@@ -294,7 +294,7 @@ Die ersten Schritte zum Thema [Sicherheit](https://docs.campaign.adobe.com/doc/A
 
 Die Beschreibung der Workflow-Option für die Vorab-Bearbeitung wurde aktualisiert, um Produktänderungen widerzuspiegeln – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Data_loading__file_)
 
-Die Technote zu den Marketing Cloud-Auslösern wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
+Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
 
 Die Liste der Fehlermeldungen wurde aktualisiert – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
@@ -349,7 +349,7 @@ Informationen zum Query Banding für das externe Teradata-Konto wurden hinzugef�
 
 ## Januar 2019{#release-doc-16-01-2019}
 
-Die Technote zu den Marketing Cloud-Auslösern wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
+Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
 
 Im Abschnitt über die Angebotsvalidierung wurde ein Hinweis hinzugefügt, dass die Aussage „Validierter Inhalt“ darauf hinweist, dass der Prozess der Inhaltsvalidierung abgeschlossen wurde, unabhängig davon, ob alle Angebote aktiviert/validiert wurden oder nicht – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/ITA_Managing_an_offer_catalog_Approving_and_activating_an_offer.html#Approving_offer_content)
 
@@ -543,7 +543,7 @@ Eine neue Seite mit den häufigsten Fragen zu Campaign Classic wurde hinzugefüg
 
 Die Liste der Fehlermeldungen wurde aktualisiert – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Die Technote zu den Marketing Cloud-Auslösern wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
+Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
 
 Es wurde eine Technote zur Installation und Bereitstellung des Datenschutz-Packages (DSGVO) in älteren Campaign Classic-Versionen hinzugefügt – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/how-to-install-gdpr-package-on-legacy-versions.html)
 
@@ -592,7 +592,7 @@ Es wurde ein neuer Abschnitt hinzugefügt, in dem Sie Ihren Versandstatus, aber 
 
 Die Liste der Fehlermeldungen wurde aktualisiert – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Die Technote zu den Marketing Cloud-Auslösern wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
+Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
 
 Der Campaign Classic-Migrationsleitfaden wurde der Kollektion hinzugefügt – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/MIG_Migration_overview_About_migration.html)
 
@@ -678,7 +678,7 @@ Im Abschnitt &quot;Quarantäne-Verwaltung&quot; wurde eine Tabelle hinzugefügt,
 
 Workflows: Ein neues Beispiel für einen kanalübergreifenden Workflow wurde hinzugefügt. [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/WKF_Repository_of_activities_Action_activities.html#Cross-channel_deliveries)
 
-Marketing-Cloud-Trigger: Eine Technote zur Konfiguration und Verwendung mit Adobe Campaign wurde hinzugefügt. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
+Marketing-Cloud-Triggers: Eine Technote zur Konfiguration und Verwendung mit Adobe Campaign wurde hinzugefügt. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html)
 
 Das Workflow-Handbuch wurde umstrukturiert und erweitert. Dies ermöglicht das einfache Auffinden von Informationen zum [Erstellen](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Building_a_workflow.html) und [Ausführen](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Executing_a_workflow.html) eines Workflows, zur [Zielgruppenauswahl](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html) und [Verwaltung](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Targeting_data.html#Data_Management) Ihrer Daten, zum [Import](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_Importing_data.html)[](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Updating_the_database)[ von Daten und zur Nutzung von Workflow-Daten für die Aktualisierung der Datenbank oder für den Versand](https://docs.campaign.adobe.com/doc/AC/en/WKF__General_operation_How_to_use_workflow_data.html#Delivering_via_a_workflow).
 
