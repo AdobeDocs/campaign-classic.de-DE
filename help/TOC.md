@@ -4,11 +4,11 @@ user-guide-title: Adobe Campaign Classic – Hilfe
 index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d67ab5bbc44b81c65605ae9132cf5a8356aa814
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2082'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 99%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen   {#creating-queries}
+   + Abfragen erstellen  {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -161,7 +161,7 @@ ht-degree: 99%
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best Practices zur Rückgewinnung](delivery/using/re-engagement-best-practices.md)
-      + [Blockierungsliste-Datenbanken](delivery/using/block-list-databases.md)
+      + [Blockierungslisten-Datenbanken](delivery/using/block-list-databases.md)
       + [Fehlerbehebung](delivery/using/deliverability-faq.md)
    + Content-Management-Modul {#content-management}
       + [Über Content Management](delivery/using/about-content-management.md)
@@ -322,11 +322,11 @@ ht-degree: 99%
       + [Fehlerbehebung für [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
    + Experience Cloud Triggers {#experience-triggers}
       + [Info [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
-      + [Konfigurieren der Pipeline](integrations/using/configuring-pipeline.md)
-      + [Pipeline-Option NmsPipeline_Config](integrations/using/nmspipeline-config.md)
-      + [Auslöser-Ereignis](integrations/using/events.md)
+      + [Pipeline konfigurieren](integrations/using/configuring-pipeline.md)
+      + [Pipeline-Option &quot;NmsPipeline_Config&quot;](integrations/using/nmspipeline-config.md)
+      + [Triggers-Ereignisse](integrations/using/events.md)
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
-      + [Fehlerbehebung bei Pipeline](integrations/using/pipeline-troubleshooting.md)
+      + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
 + Mit Workflows automatisieren {#automating-with-workflows}
    + Einleitung {#introduction}
       + [Über Workflows](workflow/using/about-workflows.md)
@@ -404,7 +404,7 @@ ht-degree: 99%
       + [E-Mail-Empfang](workflow/using/inbound-emails.md)
       + [SMS-Empfang](workflow/using/inbound-sms.md)
    + Anwendungsbeispiele {#use-cases}
-      + [Anwendungsfälle zum Workflow](workflow/using/about-workflow-use-cases.md)
+      + [Über Workflow-Anwendungsfälle](workflow/using/about-workflow-use-cases.md)
       + Sendungen {#deliveries}
          + [Lokale Validierung verwenden](workflow/using/using-the-local-approval-activity.md)
          + [A/B Tests](workflow/using/a-b-testing.md)
@@ -412,7 +412,7 @@ ht-degree: 99%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring   {#monitoring}
+      + Monitoring  {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
