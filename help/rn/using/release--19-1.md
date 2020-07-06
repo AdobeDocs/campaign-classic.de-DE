@@ -14,11 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3d6c304aaa0b3e6ba1156f1a65e93f5c284b0c0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2859'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -77,17 +77,17 @@ _13. August 2019_
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **22. Juni 2020**: new build (9032@800be2e), das die folgenden Fehlerbehebungen enthält:
+![](assets/do-not-localize/green_2.png) **22. Juni 2020**: neuer Build (9032@800be2e), der die folgenden Fehlerkorrekturen enthält:
 
-* Der iOS HTTP2 Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903, NEO-25799)
+* Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903, NEO-25799)
 
-Die folgenden Fehlerbehebungen beziehen sich auf den Tracking-Link-Sicherheitsmechanismus:
+Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von Trackinglinks:
 
-* Es wurde ein Fehler behoben, der verhinderte, dass die Verfolgung von &quot;Benachrichtigungsklicks&quot;funktionierte (iOS- und Android-Push-Benachrichtigungen). (NEO-25965)
-* Es wurde ein Problem behoben, das das Öffnen/Klicken von Tracking-URLs bei Verwendung bestimmter veralteter Outlook-Versionen verhindern konnte.  (NEO-25688)
-* Es wurde ein Fehler behoben, der verhinderte, dass die Verfolgung von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert hat. (NEO-25774)
-* Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
-* Es wurde ein Verfolgungsproblem bei der Verwendung spezifischer benutzerdefinierter Verfolgungsformeln behoben. (NEO-25277)
+* Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
+* Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
+* Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
+* Fehlerkorrektur – Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
+* Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
 
 ![](assets/do-not-localize/orange_2.png) **29. April 2020**: neuer Build (9032@3a9dc9c), der die folgenden Fehlerbehebungen enthält:
 
@@ -95,7 +95,7 @@ Die folgenden Fehlerbehebungen beziehen sich auf den Tracking-Link-Sicherheitsme
 
 >[!CAUTION]
 >
->Sollten Sie Probleme mit Push-Benachrichtigungen über Tracking-Links oder Versand mit Anker-Tags haben, empfehlen wir, den neuen Signaturmechanismus für die Linktracking zu deaktivieren. Das Verfahren ist auf dieser [Seite beschrieben](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism)
+>Wenn Sie Probleme mit Push-Benachrichtigungen unter Verwendung von Tracking-Links oder mit dem Versand mittels Anker-Tags haben, wird empfohlen, den neuen Signaturmechanismus für Trackinglinks zu deaktivieren. Das Verfahren wird auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism) beschrieben.
 
 * Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
 * Fehlerkorrektur – Bei der Aktivität **Dateiübertragung** funktioniert jetzt die SFTP-Schlüssel-basierte Authentifizierung bei Debian 9. (NEO-23183)
@@ -173,7 +173,7 @@ _30. Mai 2019_
  <tbody> 
   <tr> 
    <td> Control Panel<br /> </td> 
-   <td> <p>Um die Effizienz Ihrer Arbeit als Admin-Benutzer zu steigern, verwalten Sie die Einstellungen Ihrer SFTP-Server durch Überwachung der Datenspeicherung, fügen Sie der zulassungsliste IP-Adressen hinzu und installieren Sie für jede Instanz SSH-Schlüssel. Bitte beachten Sie, dass die Systemsteuerung nur für Kunden verfügbar ist, die ab heute auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich heute</a>über das Experience Cloud an).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf das Control Panel ist keine Aktualisierung auf den neuesten Campaign-Build nötig.</p> </td> 
+   <td> <p>Sie können die Einstellungen Ihrer SFTP-Server mittels Speicherüberwachung verwalten, IP-Adressen auf die Zulassungsliste setzen und für jede Instanz SSH-Schlüssel installieren, um die Effizienz Ihrer Arbeit als Admin-Benutzer zu steigern. Beachten Sie, dass das Control Panel von jetzt an nur für Kunden verfügbar ist, die auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich noch heute über Experience Cloud an</a>).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf das Control Panel ist keine Aktualisierung auf den neuesten Campaign-Build nötig.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit-Protokoll<br /> </td> 
