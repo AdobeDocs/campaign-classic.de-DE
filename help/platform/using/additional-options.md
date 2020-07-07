@@ -14,14 +14,16 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 5ae1f5462dd3e6c4858a27cadae24eb732c0535b
+translation-type: tm+mt
+source-git-commit: c86af066045c1c35b51624de8565af21746354c1
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 100%
 
 ---
 
 
 # Zusätzliche Optionen {#additional-options}
-
 
 <!--
 
@@ -91,6 +93,29 @@ Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workfl
 
 Durch Aktivierung dieser Option werden erhebliche Leistungsverbesserungen bei der Versandpersonalisierung erzielt.
 
+## Verwenden von Daten aus einer externen Datenbank in einem Workflow {#using-data-from-an-external-database-in-a-workflow}
+
+In mehreren Workflow-Aktivitäten in Adobe Campaign können Sie die in einer externen Datenbank gespeicherten Daten verwenden.
+
+### Filtern externer Daten {#filtering-on-external-data}
+
+Die Abfrageaktivität ermöglicht Ihnen, externe Daten hinzuzufügen und in den definierten Filterkonfigurationen zu verwenden.
+
+Lesen Sie diesbezüglich auch den Abschnitt [Query](../../workflow/using/targeting-data.md#selecting-data).
+
+### Erstellen von Segmenten {#creating-sub-sets}
+
+Die Split-Aktivität ermöglicht Ihnen die Erstellung von Segmenten. Sie können externe Daten nutzen, um die zu verwendenden Filterkriterien zu definieren.
+
+Lesen Sie diesbezüglich auch den Abschnitt [Split](../../workflow/using/split.md).
+
+### Laden externer Datenbanken {#loading-external-database}
+
+Sie können die externen Daten die das Laden (DBMS) verwenden. Diese Aktivität finden Sie im Abschnitt [Laden der Daten](../../workflow/using/data-loading--rdbms-.md).
+
+### Hinzufügen von Informationen und Links {#adding-information-and-links}
+
+Die Anreicherungsaktivität ermöglicht Ihnen das Hinzufügen von Daten zur Arbeitstabelle des Workflows sowie von Links zu einer externen Tabelle. Somit können damit die Daten von einer externen Datenbank genutzt werden. Diese Aktivität finden Sie im Abschnitt [Anreicherung](../../workflow/using/enrichment.md).
 <!--
 
 ## Cloud Messaging - FDA synchronization {#cloud-messaging---fda-synchronization}
