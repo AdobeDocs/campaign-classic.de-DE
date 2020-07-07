@@ -14,10 +14,10 @@ discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
-workflow-type: ht
-source-wordcount: '2088'
+translation-type: tm+mt
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '2083'
 ht-degree: 100%
 
 ---
@@ -31,7 +31,7 @@ Ein Anwendungsbeispiel zum Erstellen eines Workflows, mit dem Sie den Status ein
 
 Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](../../production/using/audit-trail.md).
 
-Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html) vorgestellt.
+Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
 
 ## Fortschritt anzeigen {#displaying-progress}
 
