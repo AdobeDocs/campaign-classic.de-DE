@@ -14,13 +14,18 @@ discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 51e4d72abf3a1f48700ca38566dbf06dd24594b8
+translation-type: tm+mt
+source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 92%
 
 ---
 
 
 # Start von Adobe Campaign{#launching-adobe-campaign}
+
+Kampagne Client Console ist ein Rich-Client, mit dem Sie eine Verbindung zu den Anwendungsservern Ihrer Kampagne herstellen können. Erfahren Sie, wie Sie die Client-Konsole auf [dieser Seite](../../installation/using/installing-the-client-console.md)herunterladen und konfigurieren.
 
 ## Adobe Campaign starten {#starting-adobe-campaign}
 
@@ -60,14 +65,13 @@ Wählen Sie im Fenster **[!UICONTROL Verbindungen]** die Option **[!UICONTROL Hi
 
 Anschließend sind die Verbindungsparameter wie folgt zu konfigurieren:
 
-* Erfassen Sie den **[!UICONTROL Namen]** der neuen Verbindung zur Datenbank.
-* Geben Sie im Feld **[!UICONTROL URL]** die Adresse des Anwendungsservers ein. Sollten Sie diese nicht kennen, kontaktieren Sie Ihren Administrator.
-* Aktivieren Sie die Option **[!UICONTROL Anmeldung mit einer Adobe ID]**, damit sich Benutzer über ihre Adobe ID mit der Konsole verbinden können. Weiterführende Informationen hierzu finden Sie [auf dieser Seite](../../integrations/using/about-adobe-id.md).
-* Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
+1. Erfassen Sie den **[!UICONTROL Namen]** der neuen Verbindung zur Datenbank.
 
->[!NOTE]
->
->Die Schaltfläche **[!UICONTROL Hinzufügen]** erlaubt die Erstellung von **[!UICONTROL Ordnern]**, in die Sie Ihre verschiedenen Verbindungen per Drag&amp;Drop verschieben können.
+1. Geben Sie im Feld **[!UICONTROL URL]** die Adresse des Anwendungsservers ein. Sollten Sie diese nicht kennen, kontaktieren Sie Ihren Administrator.
+
+1. Aktivieren Sie die Option **[!UICONTROL Anmeldung mit einer Adobe ID]**, damit sich Benutzer über ihre Adobe ID mit der Konsole verbinden können. Weiterführende Informationen hierzu finden Sie [auf dieser Seite](../../integrations/using/about-adobe-id.md).
+
+1. Wählen Sie zur Bestätigung **[!UICONTROL OK]** aus.
 
 ## Benutzer und Berechtigungen {#operators-and-permissions}
 
