@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 229df9ee7da5ac9c773a7af82aabceb755299cc6
-workflow-type: ht
-source-wordcount: '6781'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
+workflow-type: tm+mt
+source-wordcount: '6809'
+ht-degree: 99%
 
 ---
 
@@ -27,13 +27,19 @@ Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen
 
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
 
+## Juli 2020 {#july-2020}
+
+Es wurde ein neuer Abschnitt mit Leitlinien für die Überwachung von Campaign Classic hinzugefügt. [Mehr dazu](../../production/using/monitoring-guidelines.md)
+
+Der Abschnitt &quot;Datenschutz und Zustimmung&quot;wurde um detailliertere Informationen und nützliche Links erweitert. [mehr dazu](../../platform/using/privacy-and-recommendations.md)
+
 ## Juni 2020{#june-2020}
 
 Der Abschnitt über das Entfernen einer unter Quarantäne gestellten Adresse wurde aktualisiert. Dies umfasst eine Klarstellung der Fälle, in denen Adressen automatisch aus der Quarantäneliste entfernt werden. [Mehr dazu](../../delivery/using/understanding-quarantine-management.md#removing-a-quarantined-address)
 
 Es wurden Anwendungsfälle zum [Verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt) und [Entschlüsseln](../../workflow/using/importing-data.md#use-case-gpg-decrypt) von Daten mit dem Control Panel und mit Campaign-Workflows hinzugefügt.
 
-Die Begriffe &#39;Whitelist&#39; und &#39;Blacklist&#39; wurden aus der Dokumentation zu Adobe Campaign entfernt. Einige Vorkommen dieser Begriffe sind möglicherweise noch in der Benutzeroberfläche des Produkts, den Optionsnamen und dem internen Code vorhanden, werden jedoch in den kommenden Campaign-Versionen durch „Blockierungsliste“ und „Zulassungsliste“ ersetzt.
+Die Begriffe &quot;Whitelist&quot; und &quot;Blacklist&quot; wurden aus der Dokumentation zu Adobe Campaign entfernt. Einige Vorkommen dieser Begriffe sind möglicherweise noch in der Benutzeroberfläche des Produkts, den Optionsnamen und dem internen Code vorhanden, werden jedoch in den kommenden Campaign-Versionen durch &quot;Blockierungsliste&quot; und &quot;Zulassungsliste&quot; ersetzt.
 
 Die Seite über die Integration von Experience Cloud Triggers und Adobe Campaign Classic wurde [hierher](../../integrations/using/about-triggers.md) verschoben.
 
@@ -68,7 +74,6 @@ Die Campaign-Netzwerkendpunkte wurden in diesen [Abschnitt](../../installation/u
 Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Mehr dazu](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
 Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Mehr dazu](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
-
 
 ## Mai 2020 {#may-2020}
 
@@ -260,7 +265,7 @@ Die Schritte zum Konfigurieren des Inbox Renderings für On-Premise-Installation
 
 ## September 2019 {#september-2019}
 
-Eine neue Seite wurde hinzugefügt, um allgemeine Richtlinien für die Wartung von Campaign Classic bereitzustellen – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html)
+Eine neue Seite wurde hinzugefügt, um allgemeine Richtlinien für die Wartung von Campaign Classic bereitzustellen – [mehr dazu](../../production/using/monitoring-guidelines.md)
 
 Die Informationen zum Workflow-Monitoring wurden in einem neuen Abschnitt zusammengefasst – [mehr dazu](../../workflow/using/monitoring-workflow-execution.md)
 
