@@ -14,11 +14,11 @@ discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 8089eb39e7326408f94b5fd6acacd8950c0e6021
-workflow-type: ht
-source-wordcount: '2551'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 788866c4f11d3875f713a61f7560d6d5255f3019
+workflow-type: tm+mt
+source-wordcount: '2530'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Campaign ermöglicht den Export oder Import von Plattformkonfigurationen u
 
 Datenpackages ermöglichen den Austausch von Entitäten innerhalb der Adobe-Campaign-Datenbank über XML-Dateien. Jede in einem Package enthaltene Entität wird mit der Gesamtheit ihrer Daten dargestellt.
 
-Das Prinzip der **Datenpackages** besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe Campaign-System zu integrieren. Weiterführende Informationen zur Gewährleistung eines einheitlichen Sets von Datenpackages finden Sie in dieser [Technote](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/Technotes/AdobeCampaign_How_to_maintain_a_consistent_set_of_data_packages.pdf).
+Das Prinzip der **Datenpackages** besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe-Campaign-System zu integrieren. Erfahren Sie, wie Sie einen einheitlichen Satz von Datenpackagen in diesem [Abschnitt](#data-package-best-practices)beibehalten.
 
 ### Typen von Packages {#types-of-packages}
 
@@ -343,15 +343,11 @@ Weitere Informationen zu Standard-Packages finden Sie in [diesem Abschnitt](../.
 
 In diesem Abschnitt wird beschrieben, wie Sie Datenpackages während der ganzen Projektlaufzeit einheitlich organisieren können.
 
-<!--Adobe Campaign allows you to export or import the platform configuration through a package system.-->
-
 Packages können verschiedene Arten von Konfigurationen und Elementen enthalten, die gefiltert sein können. Wenn einzelne Elemente fehlen oder Elemente/Packages nicht in der richtigen Reihenfolge importiert werden, kann die Plattformkonfiguration beschädigt werden.
 
 Zudem kann der Ordner mit Package-Spezifikationen schnell komplex werden, wenn mehrere Personen auf derselben Plattform viele verschiedene Funktionen nutzen.
 
 In diesem Abschnitt wird eine Lösung beschrieben, mit der Sie Packages in Adobe Campaign für große Projekte organisieren und sinnvoll nutzen können. Diese Lösung wird empfohlen, ist aber nicht zwingend erforderlich.
-
-<!--This solution has been used with a project involving more than 10 consultants.-->
 
 Die wichtigsten Punkte sind folgende:
 * Organisieren Sie Packages und protokollieren Sie, was wann geändert wird.
