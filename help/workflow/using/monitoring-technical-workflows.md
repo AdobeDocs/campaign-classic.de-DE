@@ -14,8 +14,11 @@ discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
+translation-type: tm+mt
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: d60f47f03949177b97509166a8d9e640849e5fd7
 
 Technische Workflows müssen überwacht werden und bei einer Störung müssen Maßnahmen ergriffen werden.
 
-Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html) vorgestellt.
+Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
