@@ -14,8 +14,11 @@ discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: d6a4d56c595f16f454684b1d6afc7d7323c5914c
+translation-type: tm+mt
+source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+workflow-type: tm+mt
+source-wordcount: '1397'
+ht-degree: 100%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: d6a4d56c595f16f454684b1d6afc7d7323c5914c
 
 Die Adobe Campaign Workflow-Heatmap besteht aus einer farbcodierten grafischen Darstellung aller derzeit ausgeführten Workflows. Sie steht nur Administratoren der Instanz zur Verfügung.
 
-Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-maintenance.html) vorgestellt.
+Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
 
 ## Über die Workflow-Heatmap {#about-the-workflow-heatmap}
 
