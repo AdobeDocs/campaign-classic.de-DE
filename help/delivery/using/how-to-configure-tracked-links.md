@@ -14,11 +14,11 @@ discoiquuid: 9cae3861-88eb-447a-aa23-9d1de0710eec
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
-workflow-type: ht
-source-wordcount: '465'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ed44ccd8053d79024e8fb2d05ee27e1e663b8cb2
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 94%
 
 ---
 
@@ -29,9 +29,9 @@ Sie haben die Möglichkeit, für jeden Versand die Zustellung und Klicks auf ent
 
 >[!NOTE]
 >
->Der Begriff &quot;Tracking&quot; bezieht sich auf den Umgang der Empfänger mit Nachrichten, während &quot;Webtracking&quot; das Surfverhalten von Webseitenbesuchern dokumentiert (besuchte Seiten, Bestellungen usw.).
+>Die Verfolgung bezieht sich auf Nachrichten, aber mit der Web-Verfolgung können Sie überwachen, wie Empfänger eine Website (besuchte Seiten, Einkäufe) durchsuchen.
 >
->Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) beschrieben.
+>The configuration of web tracking is presented in [this section](../../configuration/using/about-web-tracking.md).
 
 Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von URLs zu personalisieren, gehen Sie folgendermaßen vor:
 
