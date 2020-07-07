@@ -14,9 +14,9 @@ discoiquuid: 5ff1577f-0809-46fd-ac1e-11b24637e35c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+workflow-type: tm+mt
 source-wordcount: '1813'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ## Über die Integration des Data Connectors {#about-data-connector-integration}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Adobe Analytics Data Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
 
@@ -76,6 +76,7 @@ Im Folgenden wird die Konfiguration des Data Connectors mithilfe eines Assistent
    * Integrationen (Erstellen)
    * Integrationen (Aktualisieren)
    * Integrationen (Löschen)
+
    ![](assets/adobe_genesis_install_002.png)
 
 1. Wählen Sie in der Liste der Partner die Option **[!UICONTROL Adobe Campaign Classic]**.
@@ -145,7 +146,7 @@ Die Integration von Adobe Campaign in die Analytics-Plattformen geschieht mithil
 
    ![](assets/webanalytics_tracking_003.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Diese Konfigurationsoption sollte erfahrenen Nutzern vorbehalten bleiben, da Fehler in der Formel die Versendung der Nachrichten blockieren können.
 
@@ -220,6 +221,7 @@ Auf diese Workflows kann im Adobe-Campaign-Navigationsbaum über den Knoten **[!
    * **[!UICONTROL Unique-Clicks-Anzahl]** (@recipientClick)
    * **[!UICONTROL Abmeldung (Opt-out)]** (@optOut)
    * **[!UICONTROL Fehler]** (@error)
+
    >[!NOTE]
    >
    >Die gesendete Daten sind die Differenz zur letzten Übermittlung, was zu einem negativen Wert in den Metrikdaten führen kann.
