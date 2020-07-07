@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 54cb4143fc534aa436c4b8b28e031e87a2a02e40
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
 workflow-type: tm+mt
 source-wordcount: '2052'
 ht-degree: 99%
@@ -33,7 +33,7 @@ ACS Connector ist das Bindeglied zwischen Adobe Campaign v7 und Adobe Campaign S
 
 In Kombination mit ACS Connector richtet sich Campaign Standard wie bisher an Digital Marketer, die damit Kampagnen konzipieren, ausrichten und durchführen können, während Campaign v7 auf datenorientierte Benutzer wie Datenbankmarketer zugeschnitten ist.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >ACS Connector ist nur als Teil des Adobe Campaign Prime-Angebots erhältlich. Mehr zur Lizenzierung von Adobe Campaign Prime erfahren Sie bei Ihrem Kundenbetreuer.
 >
@@ -83,7 +83,7 @@ ACS Connector repliziert regelmäßig die folgenden Elemente von Campaign Standa
 
 Die Replikation von Versandkennungen und E-Mail-Logs ermöglicht den Zugriff auf den Verlauf von Sendungen und Tracking-Daten für Ihre v7-Empfänger von Campaign v7.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Nur E-Mail-Broadlogs und -Trackinglogs werden von Campaign Standard nach Campaign v7 repliziert.
 
@@ -120,7 +120,7 @@ Die Fakturierung ist von Ihrer Wahl der Anwendung für den Versand – Campaign 
 
 Für ACS Connector gibt es zwei Arten von Implementierungen. Beide müssen unbedingt vom Adobe Campaign-Team durchgeführt werden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dieser Abschnitt richtet sich ausschließlich an Spezialisten, die einen allgemeinen Überblick über den Implementierungsvorgang und seine wichtigsten Schritte erhalten sollen.
 >
@@ -140,7 +140,7 @@ Alle mit dem ACS Connector in Verbindung stehenden technischen Elemente sind im 
 
 Nach der Installation des Packages sind zwei technische Workflows unter **[!UICONTROL Administration > ACS Connector > Prozesse]** verfügbar.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Versuchen Sie niemals, diese Workflows zu verändern. Diese Workflows sollten niemals eine Fehlermeldung aufweisen oder ausgesetzt werden. Wenden Sie sich in diesem Fall an Ihren Adobe Campaign-Consultant.
 
@@ -290,7 +290,7 @@ Berechtigungen werden in Campaign v7 und Campaign Standard unterschiedlich gehan
 
 In diesem Abschnitt werden einige Möglichkeiten beschrieben, die die erweiterte Implementierung bietet.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Diese Informationen sind nur als allgemeine Richtlinien zu verstehen. Wenden Sie sich bitte bezüglich der Implementierung an Ihren Adobe Campaign-Consultant.
 
