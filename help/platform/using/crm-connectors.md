@@ -14,9 +14,9 @@ discoiquuid: dbe9080c-66e3-4ff6-8f16-959f9748f666
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
+workflow-type: tm+mt
 source-wordcount: '2659'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Die unterstützten Versionen werden in der [Kompatibilitätsmatrix](https://help
 
    In [diesem Abschnitt](#example-for-salesforce-com) erfahren Sie, wie die Verbindung mit Salesforce.com hergestellt wird.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Bei der Verbindung von Adobe Campaign mit Salesforce.com bestehen folgende Beschränkungen:
    >
@@ -62,7 +62,7 @@ Die unterstützten Versionen werden in der [Kompatibilitätsmatrix](https://help
 
    In [diesem Abschnitt](#example-for-oracle-on-demand) erfahren Sie, wie die Verbindung mit Oracle On Demand hergestellt wird.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Bei der Verbindung von Adobe Campaign mit Oracle On Demand bestehen folgende Beschränkungen:
    >
@@ -80,7 +80,7 @@ Die unterstützten Versionen werden in der [Kompatibilitätsmatrix](https://help
 
    Anwendungsbeispiele zu Integrationen von Adobe Campaign mit Microsoft Dynamics finden Sie in [diesem Video](https://helpx.adobe.com/de/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Bei der Verbindung von Adobe Campaign mit Microsoft Dynamics bestehen folgende Beschränkungen:
    >
@@ -277,7 +277,7 @@ Gehen Sie zur Konfiguration der **CRM-Connector**-Aktivität wie folgt vor:
 
    Falls nötig, kann das Datenformat über die Dropdown-Liste der Spalte **[!UICONTROL Konvertierung]** geändert werden. Mögliche Konvertierungen werden im Abschnitt [Datenformat](#data-format) beschrieben.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Um die Objekte aus dem CRM-System mit denen in der Adobe-Campaign-Anwendung zu verknüpfen, wird die Kennung des CRM-Datensatzes benötigt. Diese wird automatisch bei Bestätigung des Dialogfensters hinzugefügt.
    >
@@ -289,7 +289,7 @@ Gehen Sie zur Konfiguration der **CRM-Connector**-Aktivität wie folgt vor:
 
    ![](assets/crm_task_import_filter.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Einschränkungen in Bezug auf Datenfilter werden im Abschnitt [Datenfilter](#filtering-data) beschrieben.
 
@@ -382,7 +382,7 @@ Gehen Sie bei der Konfiguration der **CRM-Connector**-Aktivität wie folgt vor:
 1. Wählen Sie den Vorgang vom Typ **[!UICONTROL Export in das CRM]**.
 1. Wählen Sie in der Dropdown-Liste des Felds **[!UICONTROL Remote-Objekt]** das vom Vorgang betroffene Objekt aus. Das Objekt entspricht einer der Tabellen, die bei der Connector-Konfiguration in Adobe Campaign erstellt wurden.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Die Exportfunktion der **CRM-Connector**-Aktivität ist in der Lage, Felder zum CRM-System hinzuzufügen oder existierende Felder zu aktualisieren. Für die Aktualisierung ist die Angabe des Primärschlüssels der Remote-Tabelle erforderlich. Andernfalls werden die Daten hinzugefügt (und nicht aktualisiert).
 
@@ -457,7 +457,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/crm_import_deleted_obj.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Der Löschzeitraum für die zu importierenden Objekte muss die Einschränkungen des jeweiligen CRM-Systems berücksichtigen. So ist es z. B. in Salesforce.com nicht möglich, Daten abzurufen, die vor mehr als 30 Tagen gelöscht wurden.
 
