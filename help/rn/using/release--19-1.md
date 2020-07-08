@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
 workflow-type: tm+mt
 source-wordcount: '2945'
 ht-degree: 93%
@@ -83,7 +83,7 @@ _7. Juli 2020_
 
 Dieser neue Build (9032@efd8a94) beinhaltet die folgende Fehlerbehebung:
 
-* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn der Server mit mittlerer Quelle auf Build 9032 (Gold Standard 7) und der Marketing-Server auf einem älteren Build (vor 9032) ausgeführt wurde. (NEO-26411)
+* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn der Mid-Sourcing-Server auf Build 9032 (Gold Standard) und der Marketing-Server auf einem älteren Build (vor 9032) ausgeführt wurde. (NEO-26411)
 
 >[!CAUTION]
 >
