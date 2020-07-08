@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c352c850777852d14ccf3002c20f651b46f9047
+source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
 workflow-type: tm+mt
-source-wordcount: '2928'
-ht-degree: 94%
+source-wordcount: '2945'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 94%
  </tbody> 
 </table>
 
-Der **neueste stabile Build** ist 9032 (3a9dc9c). Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
+Der **letzte stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
 
@@ -83,7 +83,7 @@ _7. Juli 2020_
 
 Dieser neue Build (9032@efd8a94) beinhaltet die folgende Fehlerbehebung:
 
-* Es wurde ein Fehler behoben, der dazu führte, dass Verfolgungslinks nicht funktionierten. (NEO-26411)
+* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn der Server mit mittlerer Quelle auf Build 9032 (Gold Standard 7) und der Marketing-Server auf einem älteren Build (vor 9032) ausgeführt wurde. (NEO-26411)
 
 >[!CAUTION]
 >
