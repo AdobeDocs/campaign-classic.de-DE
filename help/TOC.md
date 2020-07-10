@@ -4,11 +4,11 @@ user-guide-title: Adobe Campaign Classic – Hilfe
 index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2078'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 99%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen  {#creating-queries}
+   + Abfragen erstellen   {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -73,7 +73,7 @@ ht-degree: 99%
    + Zugriff auf externe Datenbanken (FDA){#accessing-external-database}
       + [Über FDA](platform/using/about-fda.md)
       + [Spezifische Konfigurationen nach Datenbanktyp](platform/using/specific-configuration-database.md)
-      + [Legacy-Anschlüsse](platform/using/legacy-connectors.md)
+      + [Veraltete Connectoren](platform/using/legacy-connectors.md)
       + [Zugriffsberechtigungen auf Remote-Datenbank](platform/using/remote-database-access-rights.md)
       + [Herstellung der Datenbankverbindung](platform/using/connecting-to-database.md)
       + [Erstellen des Datenschemas](platform/using/creating-data-schema.md)
@@ -413,7 +413,7 @@ ht-degree: 99%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring  {#monitoring}
+      + Monitoring   {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
