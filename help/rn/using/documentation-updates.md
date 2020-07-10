@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 306c7bf0a94684d27c5f95035f3d3e77da8c7097
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6809'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## Juli 2020 {#july-2020}
 
-Es wurde ein neuer Abschnitt mit Leitlinien für die Überwachung von Campaign Classic hinzugefügt. [Mehr dazu](../../production/using/monitoring-guidelines.md)
+Es wurde ein neuer Abschnitt mit Richtlinien für die Überwachung in Campaign Classic hinzugefügt. [Mehr dazu](../../production/using/monitoring-guidelines.md)
 
-Der Abschnitt &quot;Datenschutz und Zustimmung&quot;wurde um detailliertere Informationen und nützliche Links erweitert. [mehr dazu](../../platform/using/privacy-and-recommendations.md)
+Der Abschnitt &quot;Datenschutz und Einverständnis&quot; wurde um detailliertere Informationen und nützliche Links erweitert. [Mehr dazu](../../platform/using/privacy-and-recommendations.md).
 
 ## Juni 2020{#june-2020}
 
