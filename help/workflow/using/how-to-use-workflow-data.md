@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 52%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -101,9 +101,11 @@ Sie können dann Befehle oder Code auf der Registerkarte &quot; **[!UICONTROL Sk
 * [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)
 * [Aktivität](../../workflow/using/extraction--file-.md)der Datendatei
 
-### Verwendungsfall: Verschlüsseln und Exportieren von Daten mit einem in der Systemsteuerung installierten Schlüssel {#use-case-gpg-encrypt}
+### Anwendungsfall: Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel {#use-case-gpg-encrypt}
 
 In diesem Fall erstellen wir einen Workflow, um Daten mithilfe eines in der Systemsteuerung installierten Schlüssels zu verschlüsseln und zu exportieren.
+
+In [diesem Abschnitt](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html)finden Sie außerdem ein Video, in dem die Verwendung eines GPG-Schlüssels zum Verschlüsseln von Daten veranschaulicht wird.
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
