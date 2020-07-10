@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: d2781c8bc25cde742a89bddc1535886179130c2a
 workflow-type: tm+mt
 source-wordcount: '2945'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -77,27 +77,27 @@ _13. August 2019_
 
 ## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **Gold Standard 10 Version**
+![](assets/do-not-localize/green_2.png) **Gold Standard Version 10**
 
-_7. Juli 2020_
+_7. Juli 2020_
 
-Dieser neue Build (9032@efd8a94) beinhaltet die folgende Fehlerbehebung:
+Dieser neue Build (9032@efd8a94) umfasst die folgende Fehlerkorrektur:
 
 * Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn der Mid-Sourcing-Server auf Build 9032 (Gold Standard) und der Marketing-Server auf einem älteren Build (vor 9032) ausgeführt wurde. (NEO-26411)
 
 >[!CAUTION]
 >
->Es wird empfohlen, die Client-Konsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md)
+>Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md)
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 9 Release**
+![](assets/do-not-localize/orange_2.png) **Gold Standard Version 9**
 
-_22. Juni 2020_
+_22. Juni 2020_
 
-Dieser neue Build (9032@800be2e) umfasst die folgenden Fehlerbehebungen:
+Dieser neue Build (9032@800be2e) umfasst die folgenden Fehlerkorrekturen:
 
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903, NEO-25799)
 
-Die folgenden Fehlerbehebungen beziehen sich auf den Tracking-Link-Sicherheitsmechanismus (siehe Checkliste für [Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism)):
+Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von Trackinglinks (siehe die [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism)):
 
 * Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
 * Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
@@ -105,11 +105,11 @@ Die folgenden Fehlerbehebungen beziehen sich auf den Tracking-Link-Sicherheitsme
 * Fehlerkorrektur – Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 8 Release**
+![](assets/do-not-localize/orange_2.png) **Gold Standard Version 8**
 
-_29. April 2020_
+_29. April 2020_
 
-Dieser neue Build (9032@3a9dc9c) umfasst die folgenden Fehlerbehebungen:
+Dieser neue Build (9032@3a9dc9c) umfasst die folgenden Fehlerkorrekturen:
 
 * Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism).
 
@@ -130,45 +130,45 @@ Dieser neue Build (9032@3a9dc9c) umfasst die folgenden Fehlerbehebungen:
 * Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.
 * Fehlerkorrektur – Es wurde ein geringfügiger Regressionsfehler in den Bereinigungs-Workflow-Logs behoben.
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 6 Release**
+![](assets/do-not-localize/orange_2.png) **Gold Standard Version 6**
 
-_9. März 2019_
+_9. März 2019_
 
-Dieser neue Build (9032@19f73c5) beinhaltet die folgende Fehlerbehebung:
+Dieser neue Build (9032@19f73c5) umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 5 Release**
+![](assets/do-not-localize/orange_2.png) **Gold Standard Version 5**
 
-_17. Dezember 2019_
+_17. Dezember 2019_
 
-Dieser neue Build (9032@d6b8062) beinhaltet die folgende Fehlerbehebung:
+Dieser neue Build (9032@d6b8062) umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter). (NEO-19595)
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 4 Release**
+![](assets/do-not-localize/orange_2.png) **Gold Standard Version 4**
 
-_11. Dezember 2019_
+_11. Dezember 2019_
 
-Dieser neue Build (9032@bc4a935) beinhaltet die folgende Fehlerbehebung:
+Dieser neue Build (9032@bc4a935) umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 3 Release**
+![](assets/do-not-localize/orange_2.png) **Gold Standard Version 3**
 
-_20. November 2019_
+_20. November 2019_
 
-Dieser neue Build (9032@3468c7b) umfasst die folgenden Fehlerbehebungen:
+Dieser neue Build (9032@3468c7b) umfasst die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – Die Anmeldung per IMS-Authentifizierung funktioniert nun. (NEO-17312)
 * Fehlerkorrektur – Kumulative Berichte zu mehreren Sendungen werden nun richtig angezeigt. (NEO-18165)
 * Fehlerkorrektur – Der Webserver wird nicht mehr blockiert oder zum Absturz gebracht.
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard 2 Release**
+![](assets/do-not-localize/orange_2.png) **Gold Standard Version 2**
 
-_19. September 2019_
+_19. September 2019_
 
-Dieser neue Build (9032@cee805c) umfasst die folgenden Fehlerbehebungen:
+Dieser neue Build (9032@cee805c) umfasst die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
 * Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
@@ -177,7 +177,7 @@ Dieser neue Build (9032@cee805c) umfasst die folgenden Fehlerbehebungen:
 
 _13. August 2019_
 
-Ursprünglicher Build 19.1.4, der die folgenden Fehlerbehebungen enthält:
+Erster Build 19.1.4, der folgende Fehlerkorrekturen enthält:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
 * Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
