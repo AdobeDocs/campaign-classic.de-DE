@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb35d2ae2d40aaef3bb381675d0c36ffb100b242
+source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
 workflow-type: tm+mt
-source-wordcount: '2574'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -82,9 +82,11 @@ Im folgenden Anwendungsfall wird ein Beispiel vorgestellt.
 * [Aktivität](../../workflow/using/data-loading--file-.md)zum Laden von Daten.
 * [Datei komprimieren oder verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
-### Verwendungsfall: Importieren von Daten, die mit einem von der Systemsteuerung generierten Schlüssel verschlüsselt wurden {#use-case-gpg-decrypt}
+### Anwendungsfall: Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden {#use-case-gpg-decrypt}
 
 In diesem Fall erstellen wir einen Workflow, um Daten zu importieren, die in einem externen System verschlüsselt wurden, und dabei einen in der Systemsteuerung generierten Schlüssel zu verwenden.
+
+In [diesem Abschnitt](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)finden Sie außerdem ein Video, in dem gezeigt wird, wie Daten mit einem GPG-Schlüssel entschlüsselt werden können.
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
