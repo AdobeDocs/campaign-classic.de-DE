@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: d046304657f04312d78176c49a650690b05e4c94
+workflow-type: ht
+source-wordcount: '829'
+ht-degree: 100%
 
 ---
 
@@ -47,7 +50,7 @@ _22. August 2018_
  </tbody> 
 </table>
 
-**Verbesserungen**
+**Neuheiten**
 
 * E-Mail-Archivierungs-Logs wurden verbessert. Dank der BCC-Archivierung kann jetzt einfacher festgestellt werden, welche E-Mails erfolgreich gesendet wurden oder fehlgeschlagen sind. (NEO-10675)
 * Fehlerkorrektur – In den Tracking-Broadlogs werden jetzt Kunden-IPs anstatt Lastverteilungs-IPs angezeigt. (NEO-11295)
