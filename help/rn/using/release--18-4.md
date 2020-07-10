@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
+workflow-type: ht
+source-wordcount: '2285'
+ht-degree: 100%
 
 ---
 
@@ -51,7 +54,7 @@ _21. November 2018_
 
 ## Version 18.4.4 – Build 8936{#release-18-4-4-build-8936}
 
-_1. August 2018_
+1. August 2018
 
 **Neuheiten**
 
