@@ -14,8 +14,11 @@ discoiquuid: c94ce5b7-aa8a-4ea2-845d-68c9c7dc2a7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '942'
+ht-degree: 96%
 
 ---
 
@@ -31,7 +34,7 @@ Geben Sie im Feld **[!UICONTROL Aktionstyp]** an, auf welche Weise die Daten akt
 * **[!UICONTROL Hinzufügen oder aktualisieren]**: fügt neue Daten zur Datenbank hinzu oder aktualisiert existierende Daten.
 * **[!UICONTROL Hinzufügen]**: fügt nur neue Daten hinzu (existierende Daten werden nicht verändert).
 * **[!UICONTROL Aktualisieren]**: aktualisiert existierende Daten (fügt keine neuen Datensätze hinzu).
-* **[!UICONTROL Kollektionen aktualisieren und fusionieren]**: aktualisiert existierende Daten und wählt einen Master-Datensatz aus, dem aus Dubletten stammende Elemente zugeordnet werden. Auf diese Weise können Dubletten anschließend gelöscht werden, ohne verwaiste Elemente zurückzubehalten.
+* **[!UICONTROL Aktualisieren und Zusammenführen von Sammlungen]**: aktualisieren Sie die Daten und wählen Sie einen primären Datensatz und verknüpfen Sie dann die Elemente, die mit den Duplikaten in diesem primären Datensatz verknüpft sind. Duplikat können dann gelöscht werden, ohne verwaiste angehängte Elemente zu erstellen.
 * **[!UICONTROL Löschen]** - löscht in der Datenbank existierende Daten.
 
 ![](assets/s_advuser_update_data_1.png)
