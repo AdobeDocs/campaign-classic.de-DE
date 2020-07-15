@@ -14,8 +14,11 @@ discoiquuid: 627ade78-96b3-4a6e-9ace-74610a3c8d1a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+translation-type: tm+mt
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +35,7 @@ Ein detailliertes Beispiel für die Verwendung dieser Integration finden Sie in 
 
    ![](assets/aem_uc_1.png)
 
-1. Wählen Sie **[!UICONTROL Kampagnen > Name Ihres Unternehmens (hier We.Retail) > Master-Gebiet > E-Mail-Kampagnen]** aus.
+1. Select **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Main Area > Email campaigns]**.
 1. Wählen Sie rechts oben **[!UICONTROL Erstellen]** und danach **[!UICONTROL Seite]** aus.
 
    ![](assets/aem_uc_2.png)
