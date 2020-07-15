@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '438'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 # Pipeline-Überwachung {#pipeline-monitoring}
 
-Der geplante Status-Webdienst informiert über den Status des Pipelineprozesses.
+Der [!DNL pipelined] Status-Webdienst enthält Informationen zum Status des [!DNL pipelined] Prozesses.
 
 Sie können manuell über einen Browser oder automatisch mit einer Überwachungsanwendung aufgerufen werden.
 
@@ -50,7 +50,7 @@ Empfohlene Indikatoren zur Überwachung werden hervorgehoben.
    * next-offset-flush: Wartezeit bis zum nächsten Stapel, wenn dieser fertig ist.
    * processing-since-last-flush: Anzahl der im letzten Stapel verarbeiteten Auslöser.
 * Routing
-   * Auslöser: Liste der abgerufenen Auslöser. In der Pipeline-Option konfiguriert.
+   * Auslöser: Liste der abgerufenen Auslöser. In der [!DNL pipelined] Option konfiguriert.
 * stats
    * average-cursor-flush-time-ms: durchschnittliche Verarbeitungszeit für einen Stapel von Auslösern.
    * average-trigger-processing-time-ms: durchschnittliche Zeit, die mit der Analyse der Auslöserdaten verbracht wurde.
