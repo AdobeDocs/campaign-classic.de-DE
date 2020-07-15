@@ -14,11 +14,11 @@ discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: ht
-source-wordcount: '444'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,7 @@ Mit der Aktivität **[!UICONTROL Unter-Workflow]** kann die Ausführung eines an
 
 Sie können in einem einzigen Workflow mehrere Unter-Workflows starten. Unter-Workflows werden synchron ausgeführt.
 
-Im folgenden Beispiel ruft ein &quot;Master&quot;-Workflow einen Unter-Workflow mithilfe von Sprüngen auf. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](../../workflow/using/jump--start-point-and-end-point-.md).
+Im folgenden Beispiel wird ein primärer Arbeitsablauf unter Verwendung von Jumps aufgerufen. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Erstellen Sie einen Workflow, den Sie als Unter-Workflow in einem anderen Workflow verwenden möchten.
 1. Fügen Sie am Anfang des Workflows eine Aktivität vom Typ **[!UICONTROL Sprung (Ziel)]** mit der Priorität 1 ein. Wenn mehrere &quot;Ziel&quot;-Sprünge vorhanden sind, verwendet Adobe Campaign den &quot;Ziel&quot;-Sprung mit der niedrigsten Nummer.
@@ -44,7 +44,7 @@ Im folgenden Beispiel ruft ein &quot;Master&quot;-Workflow einen Unter-Workflow 
    >Damit sich der Unter-Workflow richtig ausführen lässt, dürfen Sie nur einen &quot;Ziel&quot;-Sprung mit der niedrigsten Nummer und einen &quot;Start&quot;-Sprung mit der höchsten Nummer verwenden.
 
 1. Vervollständigen und speichern Sie diesen Unter-Workflow.
-1. Erstellen Sie einen &quot;Master&quot;-Workflow.
+1. Erstellen Sie einen primären Workflow.
 1. Fügen Sie die Aktivität **[!UICONTROL Unter-Workflow]** ein und öffnen Sie sie.
 1. Wählen Sie in der Dropdown-Liste der **[!UICONTROL Workflow-Vorlagen]** den gewünschten Workflow aus.
 
@@ -57,13 +57,17 @@ Im folgenden Beispiel ruft ein &quot;Master&quot;-Workflow einen Unter-Workflow 
 
 1. Führen Sie den Workflow aus.
 
-Nach Ausführung befindet sich der Workflow, der als Unter-Workflow gestartet wurde, im Status **[!UICONTROL In Bearbeitung]**, was Folgendes bedeutet:
+Once run, the workflow that was called as a sub-workflow remains in **[!UICONTROL Being edited]** status, which means the following:
 
 * Sie können mit der rechten Maustaste nicht auf die Transitionen klicken, um die Zielgruppe anzuzeigen.
 * Es kann kein Zwischenergebnis der Populationsgröße angezeigt werden.
-* Logs werden im Master-Workflow unter der Bezeichnung &quot;subworkflow&quot; aufgeführt.
+* Die Protokolle der Arbeitsabläufe werden im primären Arbeitsablauf angezeigt.
 
-Dieser Workflow ist nur eine Vorlage. Beim Aufruf im Master-Workflow wird ein neuer Unter-Workflow auf Basis dieser Vorlage angelegt.
+   ![](assets/subworkflow_logs.png)
+
+>[!NOTE]
+>
+>Tritt im Unterarbeitsablauf ein Fehler auf, wird der primäre Arbeitsablauf angehalten und eine Kopie des Unterarbeitsablaufs erstellt.
 
 ## Eingabeparameter (optional) {#input-parameters--optional-}
 
