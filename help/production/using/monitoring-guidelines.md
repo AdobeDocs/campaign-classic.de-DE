@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7d944973e10c4df166325049b947e359853a2353
+source-git-commit: fdc305ff5bf27aa5cc0a4a9e89ac8ed9d5bead57
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 10%
+source-wordcount: '722'
+ht-degree: 9%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 10%
 
 Die Registerkarte **[!UICONTROL Überwachung]** , auf die von der Campaign Classic-Homepage aus zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
 
-Es bietet ein Dashboard für das, was auf Ihrer Instanz geschieht:  seinen Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, aktuell ausgeführte Workflows, Status der zuletzt gesendeten Versand usw.
+Es bietet ein Dashboard für das, was auf Ihrer Instanz geschieht: seinen Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, aktuell ausgeführte Workflows, Status der zuletzt gesendeten Versand usw.
 
 Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-processes.md).
 
@@ -35,16 +35,18 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 
 ## Monitoring Campaign Classic processes {#monitoring-campaign-classic-processes}
 
-Es stehen weitere Möglichkeiten zur Überwachung der verschiedenen Kampagnen zur Verfügung. Weitere Informationen finden Sie in den folgenden Abschnitten.
-
 <table>
-<tr><td><img src="assets/do-not-localize/instance_icon.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
-<td><img src="assets/do-not-localize/workflow_icon.svg" width="60px"><p><a href="#moniroting-workflows">Workflows</a></p></td>
-<td><img src="assets/do-not-localize/database_icon.svg" width="60px"><p><a href="#monitoring-database">Datenbank überwachen</a></p></td>
-<td><img src="assets/do-not-localize/delivery_icon.svg" width="60px"><p><a href="#monitoring-deliveries">Beobachtung von Sendungen</a></p></td></tr>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Workflows</a></p></td>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Datenbank überwachen</a></p></td>
+<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">Beobachtung von Sendungen</a></p></td></tr>
 </table>
 
+Es stehen weitere Möglichkeiten zur Überwachung der verschiedenen Kampagnen zur Verfügung. Sie bieten verschiedene Möglichkeiten zur Überwachung Ihrer Instanzen, um sicherzustellen, dass Ihr System einwandfrei ist, und eventuell Probleme zu beheben, die beim Einrichten von Workflows, Senden von Versänden usw. auftreten können.
+
 ### Überwachen der Instanz {#monitoring-instance}
+
+<img src="assets/do-not-localize/icon_system.svg" width="60px">
 
 **Automatische Überwachungstools**
 
@@ -56,13 +58,15 @@ Der Prüfpfad ermöglicht Ihnen die Visualisierung des vollständigen Verlaufs d
 
 **Control Panel**
 
-Über die Systemsteuerung können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Instanzdetails wie die Build-Versionen Ihrer Server überprüfen usw. Außerdem können Sie damit den verfügbaren Speicherplatz auf den SFTP-Servern überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) für weitere Informationen.
+Mit dem Control Panel können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Instanzdetails wie die Build-Versionen Ihrer Server überprüfen usw. Außerdem können Sie damit den verfügbaren Speicherplatz auf den SFTP-Servern überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) für weitere Informationen.
 
 >[!NOTE]
 >
->Bitte beachten Sie, dass die Systemsteuerung nur für Administratoren zugänglich ist und für alle Kunden, die Adobe Managed Services verwenden, verfügbar ist.
+>Bitte beachten Sie, dass der Control Panel nur Admin-Benutzern zur Verfügung steht und für alle Adobe Managed Services verfügbar ist.
 
 ### Überwachung von Workflows {#monitoring-workflows}
+
+<img src="assets/do-not-localize/icon_workflows.svg" width="60px">
 
 **Workflow-Heatmap**
 
@@ -88,6 +92,8 @@ Die Befolgung von Richtlinien und Best Practices bei der Verwendung von Workflow
 
 ### Sendungen beobachten {#monitoring-deliveries}
 
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
+
 **SMTP-Berichte**
 
 SMTP-Berichte zeigen die Statistik des Versands und SMTP-Fehler nach Domäne an. [Klicken Sie hier](../../production/using/monitoring-processes.md) für weitere Informationen.
@@ -103,6 +109,8 @@ SMTP-Berichte zeigen die Statistik des Versands und SMTP-Fehler nach Domäne an.
 * [Probleme](../../production/using/temporary-files.md) mit temporären Dateien - nur *bei lokalen Hostingmodellen*
 
 ### Datenbank überwachen {#monitoring-database}
+
+<img src="assets/do-not-localize/icon_database.svg" width="60px">
 
 **Datenbankbereinigungs-Workflow**
 
