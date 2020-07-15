@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 567cae1b91efbcd04a041630eeeb446450e002f7
+source-git-commit: 2140468e52d78a91fc4128e9187d927f08e2f0ee
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 100%
+source-wordcount: '149'
+ht-degree: 75%
 
 ---
 
@@ -32,11 +32,11 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 * Optimierte Sicherheitsrichtlinien für die Kennwortverwaltung;
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-Das Identity Management System (IMS) von Adobe hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
+Adobe IMS (Identity Management System) hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
 >[!IMPORTANT]
 >
->Die IMS-Implementierung ist technischen Administratoren von Adobe vorbehalten. Die IMS-Implementierung ist ein komplexer Prozess, dessen Implementierung lange dauern kann.
+>Die Adobe IMS-Implementierung ist ausschließlich technischen Administratoren von Adobe vorbehalten. Wenden Sie sich an Ihren Adobe-Manager, um den Implementierungsprozess Beginn.
 
 ## Verwandte Themen
 
@@ -45,4 +45,3 @@ Das Identity Management System (IMS) von Adobe hilft Administratoren beim Erstel
 | [IMS konfigurieren](../../integrations/using/configuring-ims.md) | [Häufig gestellte Fragen zu Experience Cloud](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/faq.html) |
 | [IMS implementieren](../../integrations/using/implementing-ims.md) | [Zugriffsverwaltung](../../platform/using/access-management.md) |
 | [Fehlerbehebung bei IMS](../../integrations/using/ims-troubleshooting.md) | [Installieren von Kampagnenkits](../../installation/using/installing-campaign-standard-packages.md) |
-
