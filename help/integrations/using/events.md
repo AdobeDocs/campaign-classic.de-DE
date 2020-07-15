@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1152'
 ht-degree: 2%
 
 ---
 
 
-# Auslöser-Ereignis {#events}
+# Triggers-Ereignisse {#events}
 
 ## Verarbeiten von Ereignissen in JavaScript {#events-javascript}
 
@@ -31,13 +31,13 @@ ht-degree: 2%
 
 Pipeline verwendet eine JavaScript-Funktion, um jede Meldung zu verarbeiten. Diese Funktion ist benutzerdefiniert.
 
-Es wird in der Option **[!UICONTROL NmsPipeline_Config]** unter dem Attribut &quot;JSConnector&quot;konfiguriert. Dieses Javascript wird jedes Mal aufgerufen, wenn ein Ereignis empfangen wird. Es wird vom Pipeline-Prozess gesteuert.
+Es wird in der Option **[!UICONTROL NmsPipeline_Config]** unter dem Attribut &quot;JSConnector&quot;konfiguriert. Dieses Javascript wird jedes Mal aufgerufen, wenn ein Ereignis empfangen wird. Es wird vom [!DNL pipelined] Prozess ausgeführt.
 
 Die JS-Beispieldatei lautet &quot;cus:Trigger.js&quot;.
 
 ### JavaScript-Funktion {#function-js}
 
-Die Pipeline-Javascript muss mit einer bestimmten Funktion Beginn werden.
+Das [!DNL pipelined] Javascript muss mit einer bestimmten Funktion Beginn werden.
 
 Diese Funktion wird für jedes Ereignis einmal aufgerufen:
 
@@ -51,7 +51,7 @@ Es sollte als
 <undefined/>
 ```
 
-Starten Sie die Pipeline nach der Bearbeitung des JS neu.
+Starten Sie [!DNL pipelined] nach der Bearbeitung des JS neu.
 
 ### Auslöserdatenformat {#trigger-format}
 
@@ -110,7 +110,7 @@ Beispiel:
 
 ### Reihenfolge der Verarbeitung von Ereignissen {#order-events}
 
-Die Ereignis werden einzeln in der Reihenfolge des Versatzes verarbeitet. Jeder Thread der Pipeline verarbeitet eine andere Partition.
+Die Ereignis werden einzeln in der Reihenfolge des Versatzes verarbeitet. Jeder Thread der [!DNL pipelined] Prozesse verarbeitet eine andere Partition.
 
 Der &quot;Offset&quot;des letzten abgerufenen Ereignisses wird in der Datenbank gespeichert. Wenn der Prozess gestoppt wird, wird er daher mit der letzten Meldung neu gestartet. Diese Daten werden im integrierten Schema xtk:pipelineoffset gespeichert.
 
@@ -122,8 +122,8 @@ Derzeit gibt es keine Möglichkeit, unterschiedliche Warteschlangen für separat
 
 ### Protokollierung und Fehlerverarbeitung {#logging-error-handling}
 
-Protokolle wie logInfo() werden an das Pipeline-Protokoll weitergeleitet. Fehler wie logError() werden in das Pipeline-Protokoll geschrieben und führen dazu, dass das Ereignis in eine Wiederholungswarteschlange gestellt wird. Überprüfen Sie das Pipeline-Protokoll.
-Fehlermeldungen werden in der in den Pipeline-Optionen festgelegten Dauer mehrmals wiederholt.
+Protokolle wie logInfo() werden an das [!DNL pipelined] Protokoll weitergeleitet. Fehler wie logError() werden in das [!DNL pipelined] Protokoll geschrieben und führen dazu, dass das Ereignis in eine Wiederholungswarteschlange gestellt wird. Überprüfen Sie das Pipeline-Protokoll.
+Fehlermeldungen werden in der in den [!DNL pipelined] Optionen festgelegten Dauer mehrmals wiederholt.
 
 Für Debugging- und Überwachungszwecke werden die vollständigen Auslösedaten in die Auslösetabelle geschrieben. Sie befindet sich im Feld &quot;data&quot;im XML-Format. Alternativ dazu dient eine logInfo()-Funktion, die die Auslöserdaten enthält, demselben Zweck.
 
