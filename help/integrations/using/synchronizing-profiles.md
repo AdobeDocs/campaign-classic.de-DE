@@ -14,11 +14,11 @@ discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0386ae88a1b4d9ebda64283d874e01b14e9e5af4
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+workflow-type: tm+mt
 source-wordcount: '1266'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -63,7 +63,7 @@ Wenn ein Empfänger in einer von Campaign Standard gesendeten E-Mail einen Abmel
 
 ## Empfänger bearbeiten {#editing-a-recipient}
 
-Im Folgenden wird anhand der Änderung eines einzelnen Datensatzes gezeigt, dass Campaign v7 bei der Datenreplikation als Hauptdatenbank für Campaign Standard fungiert. Werden replizierte Daten in Campaign v7 geändert oder gelöscht, werden diese Änderungen in Campaign Standard übernommen.
+Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen, wie Kampagne v7 bei der Datenreplikation zur primären Angebot-Datenbank wird. Das Ändern oder Löschen replizierter Daten in Kampagne v7 hat dieselbe Auswirkung auf die entsprechenden Daten in Campaign Standard.
 
 1. Wählen Sie unter [Neuen Empfänger erstellen](#creating-a-new-recipient) den neu erstellten Empfänger aus und bearbeiten Sie seinen Namen. Wählen Sie beispielsweise eine **[!UICONTROL Anrede]** für den Empfänger (z. B. Herr oder Frau). Weitere Informationen finden Sie unter [Profile bearbeiten](../../platform/using/editing-a-profile.md).
 
