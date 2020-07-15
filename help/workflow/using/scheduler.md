@@ -14,21 +14,34 @@ discoiquuid: 093dbe8a-494f-4fe7-8614-3bf58486e34c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+translation-type: tm+mt
+source-git-commit: 23629289ac5da3f9bef01f50c452f7c761a6fa44
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 58%
 
 ---
 
 
-# Planung{#scheduler}
+# Planung {#scheduler}
 
 Die **Planung** ist eine persistente Aufgabe, die ihre ausgehende Transition zum konfigurierten Zeitpunkt aktiviert.
 
 Eine **[!UICONTROL Planung]** entspricht einem programmierten Start, daher sind die gleichen Regeln zu beachten wie für die **[!UICONTROL Start]**-Aktivität. So darf die Planung beispielsweise keine eingehende Transition aufweisen.
 
-Es wird empfohlen, Workflows nicht öfter als alle 15 Minuten auszuführen, da die Gesamtleistung des Systems beeinträchtigt werden kann und Blöcke in der Datenbank entstehen können.
+## Best Practices {#best-practices}
 
-Pro Workflow-Verzweigung darf nur eine einzige **[!UICONTROL Planung]** verwendet werden. Weitere Informationen hierzu finden Sie unter [Aktivitäten verwenden](../../workflow/using/workflow-best-practices.md#using-activities).
+* Planen Sie die Ausführung eines Workflows nicht länger als alle 15 Minuten, da dies die Gesamtleistung des Systems beeinträchtigen und Blöcke in der Datenbank erstellen kann.
+
+* Verwenden Sie in einem Workflow nie mehr als eine **[!UICONTROL Planung]** -Aktivität pro Verzweigung. Siehe [Verwenden von Aktivitäten](../../workflow/using/workflow-best-practices.md#using-activities).
+
+* Die Verwendung einer Planungsaktivität kann dazu führen, dass mehrere Workflow-Ausführungen gleichzeitig vorgenommen werden. Beispielsweise kann eine Planung die Ausführung des Workflows stündlich auslösen, manchmal dauert die Ausführung des gesamten Workflows jedoch mehr als eine Stunde.
+
+   Sie können die Ausführung überspringen, wenn der Workflow bereits ausgeführt wird. Weitere Informationen hierzu, wie Sie gleichzeitige Ausführungen eines Workflows verhindern können, finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
+
+* Beachten Sie, dass die Transition mehrere Stunden später aktiviert werden kann, wenn der Workflow eine langfristige Aufgabe wie z. B. einen Import ausführt oder wenn das Webserver-Modul für einen bestimmten Zeitraum beendet wurde. In diesem Fall kann es erforderlich sein, die Ausführung der von der Planung aktivierten Aufgabe auf einen bestimmten Zeitraum zu beschränken.
+
+## Configuring the Scheduler activity {#configuring-scheduler-activity}
 
 In der Planung wird die einmalige oder periodische Aktivierung der ausgehenden Transition geplant. Öffnen Sie hierzu die Aktivität und klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]**.
 
@@ -51,7 +64,3 @@ In den folgenden Schritten des Assistenten lassen sich die Frequenz der Ausführ
 1. Prüfen Sie im letzten Schritt die Konfiguration und klicken Sie auf **[!UICONTROL Beenden]**, um sie zu speichern.
 
    ![](assets/s_user_segmentation_scheduler5.png)
-
-Die Verwendung einer Planungsaktivität kann dazu führen, dass mehrere Workflow-Ausführungen gleichzeitig vorgenommen werden. Beispielsweise könnte die Workflow-Ausführung stündlich ausgelöst werden, manchmal aber länger als eine Stunde dauern. Wenn der Workflow bereits ausgeführt wird, ist es empfehlenswert, den Start einer weiteren Ausführung zu überspringen. Weitere Informationen hierzu, wie Sie gleichzeitige Ausführungen eines Workflows verhindern können, finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#preventing-simultaneous-multiple-executions).
-
-Es ist des Weiteren zu beachten, dass die Transition u. U. mit mehreren Stunden Verspätung aktiviert werden kann, wenn der Workflow eine Aufgabe ausführt, die über einen längeren Zeitraum läuft (z. B. ein Import) oder wenn das wfserver-Modul für eine gewisse Dauer inaktiv war. In diesem Fall ist es empfehlenswert, die Ausführung der von der Planung aktivierten Aufgabe auf einen bestimmten Zeitraum zu beschränken.
