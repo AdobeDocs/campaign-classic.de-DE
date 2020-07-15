@@ -1,7 +1,7 @@
 ---
-title: Legacy-Anschlüsse
-seo-title: Legacy-Anschlüsse
-description: Legacy-Anschlüsse
+title: Veraltete Connectoren
+seo-title: Veraltete Connectoren
+description: Veraltete Connectoren
 seo-description: null
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fddd0b61c71c90849a1f64776eea43c57d9debe2
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 98%
+source-wordcount: '1294'
+ht-degree: 97%
 
 ---
 
 
-# Legacy-Anschlüsse {#legacy-connectors}
+# Veraltete Connectoren {#legacy-connectors}
+
+Ältere FDA werden weiterhin von Adobe unterstützt. Es wird jedoch empfohlen, sie durch aktuellere Alternativen zu ersetzen, die auf dieser [Seite](../../platform/using/specific-configuration-database.md)aufgeführt sind.
 
 ## Zugriff auf Hadoop 2.1 konfigurieren {#configure-access-to-hadoop}
 
