@@ -4,11 +4,11 @@ user-guide-title: Adobe Campaign Classic – Hilfe
 index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
-translation-type: ht
-source-git-commit: c38fe4cc442768550ee90cecc6b31b78d39f3da1
-workflow-type: ht
-source-wordcount: '2078'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
+workflow-type: tm+mt
+source-wordcount: '2076'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 100%
 + Erste Schritte {#getting-started}
    + Einstieg in Adobe Campaign {#starting-with-adobe-campaign}
       + [Über Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
-      + [Datenschutz und Empfehlungen](platform/using/privacy-and-recommendations.md)
+      + [Datenschutz und Einverständnis](platform/using/privacy-and-recommendations.md)
       + [Start von Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + [Adobe Campaign-Arbeitsbereich](platform/using/adobe-campaign-workspace.md)
       + Häufig gestellte Fragen {#faq}
@@ -72,7 +72,7 @@ ht-degree: 100%
       + [Externe Konten](platform/using/external-accounts.md)
    + Zugriff auf externe Datenbanken (FDA){#accessing-external-database}
       + [Über FDA](platform/using/about-fda.md)
-      + [Spezifische Konfigurationen nach Datenbanktyp](platform/using/specific-configuration-database.md)
+      + [FDA Connectors konfigurieren](platform/using/specific-configuration-database.md)
       + [Veraltete Connectoren](platform/using/legacy-connectors.md)
       + [Zugriffsberechtigungen auf Remote-Datenbank](platform/using/remote-database-access-rights.md)
       + [Herstellung der Datenbankverbindung](platform/using/connecting-to-database.md)
