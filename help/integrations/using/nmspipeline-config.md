@@ -15,20 +15,20 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9957dabca4c63d504a3d06cf527a97b79fee46d5
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '381'
+ht-degree: 3%
 
 ---
 
 
-# Pipeline-Option NmsPipeline_Config {#nmspipeline_config}
+# Pipeline-Option &quot;NmsPipeline_Config&quot;{#nmspipeline_config}
 
-Sobald die Authentifizierung funktioniert, können die Ereignis per Pipeline abgerufen und verarbeitet werden. Es verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert sind, wobei die anderen ignoriert werden. Der Auslöser muss aus Analytics erzeugt und zuvor in die Pipeline gedrängt worden sein.
+Sobald die Authentifizierung funktioniert, [!DNL pipelined] können Sie die Ereignis abrufen und verarbeiten. Es verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert sind, wobei die anderen ignoriert werden. Der Auslöser muss aus Analytics erzeugt und zuvor in die Pipeline gedrängt worden sein.
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen abzufangen.
 
-Die Konfiguration der Auslöser erfolgt in einer Option unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Optionen]**. Der Optionsname lautet **[!UICONTROL NmsPipeline_Config]**. Der Datentyp ist &quot;langer Text&quot;im JSON-Format.
+Die Konfiguration der Auslöser erfolgt in einer Option unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]**. Der Optionsname lautet **[!UICONTROL NmsPipeline_Config]**. Der Datentyp ist &quot;langer Text&quot;im JSON-Format.
 
 In diesem Beispiel werden zwei Auslöser angegeben.
 
@@ -90,6 +90,6 @@ Vergewissern Sie sich, dass JSON mithilfe dieser [Website](http://jsonlint.com/)
 
 * &quot;name&quot;ist die Auslöser-ID. Ein Platzhalter (*) fängt alle Auslöser.
 * &quot;Consumer&quot;ist eine eindeutige Zeichenfolge, die die Instanz &quot;nlserver&quot;eindeutig identifiziert. Normalerweise kann es sich um den Instanznamen selbst handeln. Bei mehreren Umgebung (dev/stage/prod) müssen Sie sicherstellen, dass sie für jede einzelne Instanz eindeutig sind, damit jede Instanz eine Kopie der Nachricht erhält.
-* Pipelinated unterstützt auch das Thema &quot;Aliase&quot;.
+* [!DNL Pipelined] unterstützt auch das Thema &quot;Aliase&quot;.
 
-Starten Sie die Pipeline neu, nachdem Sie Änderungen vorgenommen haben.
+Starten Sie [!DNL pipelined] nach den Änderungen neu.
