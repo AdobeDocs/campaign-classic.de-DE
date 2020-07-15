@@ -15,15 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 3%
 
 ---
 
 
-# Konfigurieren der Pipeline {#configuring-pipeline}
+# Pipeline konfigurieren {#configuring-pipeline}
 
 Authentifizierungsparameter wie die Kunden-ID, der private Schlüssel und der Authentifizierungs-Endpunkt werden in den Konfigurationsdateien der Instanz konfiguriert.
 Die Liste der zu verarbeitenden Auslöser wird in einer Option konfiguriert. Es ist im JSON-Format.
@@ -129,7 +129,7 @@ Führen Sie folgende Schritte aus:
 
 ### Registrierung des Anwendungsnamens in Adobe Campaign Classic {#application-name-registration}
 
-Die Anwendungs-ID des erstellten Auth-Clients muss in Adobe Campaign konfiguriert werden. Dazu bearbeiten Sie die Konfigurationsdatei der Instanz im Pipeline-Element, insbesondere das Attribut appName.
+Die Anwendungs-ID des erstellten Auth-Clients muss in Adobe Campaign konfiguriert werden. Sie können dies tun, indem Sie die Konfigurationsdatei der Instanz im [!DNL pipelined] Element bearbeiten, insbesondere das Attribut appName.
 
 Beispiel:
 
@@ -139,11 +139,11 @@ Beispiel:
 
 ### Schlüsselverschlüsselung {#key-encription}
 
-Der private Schlüssel muss verschlüsselt sein, damit er in Pipelines verwendet werden kann. Die Verschlüsselung erfolgt mit der Javascript-Funktion cryptString und muss auf derselben Instanz wie per Pipeline ausgeführt werden.
+Der private Schlüssel muss verschlüsselt sein, damit er verwendet werden [!DNL pipelined]kann. Die Verschlüsselung erfolgt mit der Javascript-Funktion cryptString und muss auf derselben Instanz wie [!DNL pipelined].
 
 Auf dieser [Seite](../../integrations/using/pipeline-troubleshooting.md)finden Sie ein Beispiel für die private Schlüsselverschlüsselung mit JavaScript.
 
-Der verschlüsselte private Schlüssel muss in Adobe Campaign registriert sein. Sie können dies tun, indem Sie die Konfigurationsdatei der Instanz im Pipeline-Element bearbeiten, insbesondere das Attribut authPrivateKey.
+Der verschlüsselte private Schlüssel muss in Adobe Campaign registriert sein. Sie können dies tun, indem Sie die Konfigurationsdatei der Instanz im [!DNL pipelined] Element bearbeiten, insbesondere das Attribut authPrivateKey.
 
 Beispiel:
 
@@ -153,7 +153,7 @@ Beispiel:
 
 ### Automatischer Beginn für automatisierte Prozesse {#pipelined-auto-start}
 
-Der Pipeline-Prozess muss automatisch gestartet werden.
+Der [!DNL pipelined] Prozess muss automatisch gestartet werden.
 Legen Sie dazu das Element in der Konfigurationsdatei auf autostart=&quot;true&quot; fest:
 
 ```
@@ -174,7 +174,7 @@ Ein Neustart ist erforderlich, damit die Änderungen wirksam werden:
 nlserver restart pipelined@instance
 ```
 
-Bei Fehlern suchen Sie nach Fehlern in der Standardausgabe (wenn Sie manuell gestartet haben) oder in der Pipeline-Protokolldatei. Weitere Informationen zum Beheben von Problemen finden Sie im Abschnitt Fehlerbehebung in diesem Dokument.
+Bei Fehlern suchen Sie nach Fehlern in der Standardausgabe (wenn Sie manuell gestartet haben) oder in der [!DNL pipelined] Protokolldatei. Weitere Informationen zum Beheben von Problemen finden Sie im Abschnitt Fehlerbehebung in diesem Dokument.
 
 ### Optionen für die geteilte Konfiguration {#pipelined-configuration-options}
 
@@ -187,7 +187,7 @@ Bei Fehlern suchen Sie nach Fehlern in der Standardausgabe (wenn Sie manuell ges
 | discoverPipelineEndpoint | URL, um den Endpunkt der Pipeline-Dienste zu ermitteln, der für diesen Mieter verwendet werden soll. Standard: https://producer-pipeline-pnw.adobe.net |
 | dumpStatePeriodSec | Der Zeitraum zwischen 2 Dumps des internen Prozesszustands in var/INSTANCE/pipelined.json Interne Status ist auch auf Abruf verfügbar unter http://INSTANCE/pipelined/status (Port 7781). |
 | forcedPipelineEndpoint | Deaktivieren Sie die Erkennung des PipelineServicesEndpunkts und erzwingen Sie ihn |
-| monitorServerPort | Der Pipeline-Prozess überwacht diesen Anschluss, um den internen Prozessstatus unter http://INSTANCE/pipelined/status (Port 7781) bereitzustellen. |
+| monitorServerPort | Der [!DNL pipelined] Prozess überwacht diesen Anschluss, um den internen Prozessstatus unter http://INSTANCE/pipelined/status (Port 7781) bereitzustellen. |
 | cursorFlushMessageCount | Wenn diese Anzahl von Meldungen verarbeitet wird, werden die Offsets in der Datenbank gespeichert. Der Standardwert ist 1000 |
 | cursorFlushPeriodSec | Nach diesem Zeitraum werden die Offsets in der Datenbank gespeichert. Der Standardwert ist 5 (Sekunden) |
 | processingJSThreads | Anzahl der dedizierten Threads, die Meldungen mit benutzerdefinierten JS-Connectors verarbeiten. Standardwert ist 4 |
