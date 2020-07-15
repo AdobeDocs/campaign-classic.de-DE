@@ -14,11 +14,11 @@ discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 3bf835b3f686d1293fda7e6254660c477ba26452
-workflow-type: ht
-source-wordcount: '3273'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2f0bb31f7234289f39a561fa58a23cac0390b465
+workflow-type: tm+mt
+source-wordcount: '3272'
+ht-degree: 99%
 
 ---
 
@@ -64,7 +64,7 @@ Gehen Sie dazu wie folgt vor:
 
    >[!CAUTION]
    >
-   > Ab Version 20.2 werden ältere Connectoren eingestellt und nicht mehr unterstützt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden. Weiterführende Informationen über das Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/sms-connector.html).
+   > Ab Version 20.2 werden ältere Connectors nicht mehr unterstützt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden. Weiterführende Informationen über das Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/sms-connector.html).
 
 1. Mit der Option **[!UICONTROL Ausführliche SMPP-Protokolle in der Protokolldatei aktivieren]** können Sie den gesamten SMPP-Traffic in Logdateien speichern. Diese Option muss aktiviert sein, um eine Fehlerbehebung beim Connector durchzuführen und einen Vergleich mit dem vom Provider aufgezeichneten Traffic anzustellen.
 
