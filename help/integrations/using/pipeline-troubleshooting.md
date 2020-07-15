@@ -15,21 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 39d6da007d69f81da959660b24b56ba2558a97ba
+source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '644'
 ht-degree: 2%
 
 ---
 
 
-# Fehlerbehebung bei Pipeline {#pipeline-troubleshooting}
+# Fehlerbehebung bei Pipelines {#pipeline-troubleshooting}
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;Keine Aufgabe entspricht der pipelinierten@&quot;**
 
 Ihre Version von Adobe Campaign Classic unterstützt die Pipeline nicht.
 
-1. Überprüfen Sie, ob das Pipeline-Element in der Konfigurationsdatei vorhanden ist. Wenn nicht, bedeutet das, dass es nicht unterstützt wird.
+1. Überprüfen Sie, ob das [!DNL pipelined] -Element in der Konfigurationsdatei vorhanden ist. Wenn nicht, bedeutet das, dass es nicht unterstützt wird.
 1. Aktualisieren Sie auf Version 6.11 Build 8705 oder höher.
 
 **Peilinierte fehlschlagen mit &#39;&#39; aurait dû kommencer par &#39;[&#39; ou &#39;{&#39; (iRc=16384)&#39;**
@@ -53,7 +53,7 @@ Der Parameter &quot;@authPrivateKey&quot;der Konfigurationsdatei der Instanz ist
 1. Überprüfen Sie, ob der authPrivateKey: Beginn mit @, endet mit = und ist etwa 4000 Zeichen lang.
 1. Suchen Sie nach dem Originalschlüssel und stellen Sie sicher, dass er: im RSA-Format, 4096 Bit lang und Beginn mit —BEGIN RSA PRIVATE KEY—.
    <br> Erstellen Sie den Schlüssel bei Bedarf neu und registrieren Sie ihn bei Adobe Analytics. Siehe diesen [Abschnitt](../../integrations/using/configuring-pipeline.md#oauth-client-creation).
-1. Überprüfen Sie, ob der Schlüssel in derselben Instanz wie die Pipeline kodiert wurde. <br>Wiederholen Sie bei Bedarf die Kodierung mit dem Beispiel-JavaScript oder -Arbeitsablauf.
+1. Überprüfen Sie, ob der Schlüssel in derselben Instanz kodiert wurde wie [!DNL pipelined]. <br>Wiederholen Sie bei Bedarf die Kodierung mit dem Beispiel-JavaScript oder -Arbeitsablauf.
 
 **Ausgewählte Elemente funktionieren nicht mit &quot;Token kann bei der Authentifizierung nicht gelesen werden&quot;.**
 
@@ -65,12 +65,12 @@ Das Format des privaten Schlüssels ist ungültig.
 
 **Es werden keine Auslöser abgerufen**
 
-Wenn der Pipeline-Prozess ausgeführt wird und keine Auslöser abgerufen werden:
+Wenn der [!DNL pipelined] Prozess ausgeführt wird und keine Auslöser abgerufen werden:
 
 1. Stellen Sie sicher, dass der Auslöser in Analytics aktiv ist und Ereignis generiert.
-1. Vergewissern Sie sich, dass der Pipeline-Prozess ausgeführt wird.
-1. Suchen Sie nach Fehlern im Pipeline-Protokoll.
-1. Suchen Sie auf der Seite mit dem Pipeline-Status nach Fehlern. auslöser-verworfen, Auslöserfehler sollten null sein.
+1. Vergewissern Sie sich, dass der [!DNL pipelined] Prozess ausgeführt wird.
+1. Suchen Sie nach Fehlern im [!DNL pipelined] Protokoll.
+1. Suchen Sie auf der [!DNL pipelined] Statusseite nach Fehlern. auslöser-verworfen, Auslöserfehler sollten null sein.
 1. Überprüfen Sie, ob der Auslösername in der Option **[!UICONTROL NmsPipeline_Config]** konfiguriert ist. Bei Zweifeln verwenden Sie die Platzhalteroption.
 1. Vergewissern Sie sich, dass Analytics über einen aktiven Auslöser verfügt und Ereignis generiert. Es kann eine Verzögerung von ein paar Stunden nach der Konfiguration in Analytics geben, bevor sie aktiv ist.
 
@@ -89,9 +89,9 @@ Wenn der Analytics-Zeitstempel viel älter ist als das Erstellungsdatum des Erei
 
 Im Allgemeinen kann es 15-90 Minuten dauern, bis eine Marketing-Kampagne gestartet wird. Dies hängt von der Implementierung der Datenerfassung, dem Laden in der Pipeline, der benutzerdefinierten Konfiguration des definierten Auslösers und dem Workflow in Adobe Campaign ab.
 
-1. Überprüfen Sie, ob der Pipeline-Prozess ausgeführt wurde.
+1. Überprüfen Sie, ob der [!DNL pipelined] Prozess ausgeführt wurde.
 1. Suchen Sie nach Fehlern in pipelined.log, die weitere Zustellversuche verursachen können. Korrigieren Sie die Fehler, falls zutreffend.
-1. Überprüfen Sie die Seite mit dem Pipeline-Status auf die Warteschlangengröße. Wenn die Warteschlangengröße groß ist, verbessern Sie die Leistung des JS.
+1. Überprüfen Sie die [!DNL pipelined] Statusseite auf die Warteschlangengröße. Wenn die Warteschlangengröße groß ist, verbessern Sie die Leistung des JS.
 1. Da eine Verzögerung mit zunehmendem Volumen zu steigen scheint, konfigurieren Sie die Auslöser auf Analytics mit weniger Nachrichten.
 Anhänge
 
