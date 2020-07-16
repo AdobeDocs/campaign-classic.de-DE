@@ -13,50 +13,29 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '1407'
-ht-degree: 99%
+source-wordcount: '1330'
+ht-degree: 100%
 
 ---
 
 
 # Version 20.1{#release-20-1}
 
-[Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) | [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html) | [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md) | [Frühere Versionshinweise](../../rn/using/release--19-2.md) | [Eingestellte Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Veröffentlichungskandidat</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Veraltet</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Neuester verfügbarer stabiler Build. Build in Produktion validiert.<br> </td>
-   <td>Build validiert von Adobe. Produktionstestversand ist ausstehend.<br> </td>
-   <td>Neuerer Build mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
-   <td>Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-Der **letzte stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
-
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.3 – Build 9124 {#release-20-1-3-build-9124}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1.3 – Build 9124{#release-20-1-3-build-9124}
 
 _6. Mai 2020_
 
 * Es wurde ein Problem mit der Aktivität **Dateiübertragung** behoben, das bei Debian 9 eine SFTP-Schlüssel-basierte Authentifizierung verhinderte. (NEO-23183)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 – Build 9123 {#release-20-1-2-build-9123}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1.2 – Build 9123{#release-20-1-2-build-9123}
 
 _Freitag, 13. März 2020_
 
 * Die Bereitstellung von Versionen auf Red Hat 7-Servern funktioniert jetzt problemlos. (NEO-23332)
 
-## ![](assets/do-not-localize/orange_2.png) Version 20.1 – Build 9122 {#release-20-1-build-9122}
+## ![](assets/do-not-localize/orange_2.png) Version 20.1 – Build 9122{#release-20-1-build-9122}
 
 _17. Februar 2020_
 
