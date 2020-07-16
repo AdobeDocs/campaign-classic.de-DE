@@ -13,36 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e4a8812a85c8c98cdf38145a2b1649530adab89d
+source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 99%
+source-wordcount: '1692'
+ht-degree: 100%
 
 ---
 
 
 # Neueste Version{#latest-release}
-
-[Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) | [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html) | [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md) | [Frühere Versionshinweise](../../rn/using/release--20-1.md) | [Eingestellte Funktionen](../../rn/using/deprecated-features.md)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Veröffentlichungskandidat</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Veraltet</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Neuester verfügbarer stabiler Build. Build in Produktion validiert.<br> </td>
-   <td>Build validiert von Adobe. Produktionstestversand ist ausstehend.<br> </td>
-   <td>Neuerer Build mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
-   <td>Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-Der **letzte stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
 
 ![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
