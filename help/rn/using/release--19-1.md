@@ -15,36 +15,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 77bb2ee42919a1bbf9a1a9e4594505f5cf99ca68
+source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
 workflow-type: tm+mt
-source-wordcount: '2932'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Version 19.1{#release-19-1}
-
-[Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) | [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html) | [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md) | [Frühere Versionshinweise](../../rn/using/release--19-1.md) | [Eingestellte Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html)
-
-<table> 
- <tbody> 
-  <tr> 
-   <td><img src="assets/do-not-localize/green3.png"/><strong>Allgemeine Verfügbarkeit</strong></td>
-   <td><img src="assets/do-not-localize/blue3.png"/><strong>Veröffentlichungskandidat</strong></td> 
-   <td><img src="assets/do-not-localize/orange3.png"/><strong>Nicht mehr verfügbar</strong></td> 
-   <td><img src="assets/do-not-localize/red3.png"/><strong>Veraltet</strong></td> 
-  </tr> 
-   <tr> 
-   <td>Neuester verfügbarer stabiler Build. Build in Produktion validiert.<br> </td>
-   <td>Build validiert von Adobe. Produktionstestversand ist ausstehend.<br> </td>
-   <td>Neuerer Build mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.<br> </td>
-   <td>Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.<br> </td>
-  </tr> 
- </tbody> 
-</table>
-
-Der **letzte stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/release--19-1.md#release-19-1-4-build-9032).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
 
@@ -62,7 +41,7 @@ _3. Oktober 2019_
 * Es wurde ein Fehler behoben, der dazu führte, dass bestimmte Nachrichten nicht vom Mid-Sourcing-Server verarbeitet wurden. (NEO-12395)
 * Fehlerkorrektur – Die SQL-Data-Management-Aktivität lässt sich jetzt voll nutzen (es fehlte die spezifische „SQL-Data-Management“-Berechtigung).
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.1.5 – Build 9033{#release-19-1-5-build-9033}
+## ![](assets/do-not-localize/red_2.png) Version 19.1.5 – Build 9033{#release-19-1-5-build-9033}
 
 _13. August 2019_
 
@@ -75,117 +54,14 @@ _13. August 2019_
 * Eine neue Authentifizierungsoption wurde hinzugefügt, die in AC Connector in Verbindung mit Microsoft Dynamics OAuth-Zugangsdaten unterstützt. (NEO-11982)
 * Fehlerkorrektur – Die Anreicherungsaktivität funktioniert jetzt bei Hive FDA mit der UUID (Unique Universal Identifier).
 
-## Version 19.1.4 - Build 9032{#release-19-1-4-build-9032}
+## ![](assets/do-not-localize/green_2.png) Version 19.1.4 – Build 9032{#release-19-1-4-build-9032}
 
-![](assets/do-not-localize/green_2.png) **Gold Standard Version 10**
-
-_7. Juli 2020_
-
-Dieser neue Build (9032@efd8a94) umfasst die folgende Fehlerkorrektur:
-
-* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war. (NEO-26411)
-
->[!CAUTION]
+>[!NOTE]
 >
->Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md)
+>19.1.4 Gold Standard Versionen sind auf dieser [Seite](../../rn/using/gold-standard.md)aufgeführt.
 
-![](assets/do-not-localize/orange_2.png) **Gold Standard Version 9**
 
-_22. Juni 2020_
-
-Dieser neue Build (9032@800be2e) umfasst die folgenden Fehlerkorrekturen:
-
-* Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903, NEO-25799)
-
-Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von Trackinglinks (siehe die [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism)):
-
-* Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
-* Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
-* Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
-* Fehlerkorrektur – Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
-* Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard Version 8**
-
-_29. April 2020_
-
-Dieser neue Build (9032@3a9dc9c) umfasst die folgenden Fehlerkorrekturen:
-
-* Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism).
-
->[!CAUTION]
->
->Wenn Sie Probleme mit Push-Benachrichtigungen unter Verwendung von Tracking-Links oder mit dem Versand mittels Anker-Tags haben, wird empfohlen, den neuen Signaturmechanismus für Trackinglinks zu deaktivieren. Das Verfahren wird auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism) beschrieben.
-
-* Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
-* Fehlerkorrektur – Bei der Aktivität **Dateiübertragung** funktioniert jetzt die SFTP-Schlüssel-basierte Authentifizierung bei Debian 9. (NEO-23183)
-* Fehlerkorrektur – Bei Push-Benachrichtigungen, die mit hoher Häufigkeit gesendet werden, tritt jetzt kein Problem mehr auf. (NEO-20516)
-* Fehlerkorrektur – Die Verwaltung von Angebotsantworten führt jetzt nicht mehr zu Webserver-Abstürzen. (NEO-19482)
-* Fehlerkorrektur – In der LibreOffice-Verwaltung ist jetzt das Exportieren von Berichten möglich. (NEO-20982)
-* Fehlerkorrektur – Beim Aktualisieren verschiedener Workflows mit einer Umfrageaktivität tritt jetzt kein Fehler mehr auf.
-* Die LibreOffice-Verwaltung wurde verbessert, um Fehler bei der E-Mail-Vorschau mit .odt-Dateien zu verhindern.
-* Die Verwaltung der Apache-Verbindung wurde verbessert, um Latenzzeiten beim Web-Dienst zu vermeiden.
-* Die Anzeige des Version-Tags (siebenstellig) im Menü **Versionsinformationen** wurde verbessert.
-* Fehlerkorrektur – Es wurde ein Regressionsfehler bei der Listenverwaltung behoben, der die Publizierung von Angeboten verhinderte.
-* Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.
-* Fehlerkorrektur – Es wurde ein geringfügiger Regressionsfehler in den Bereinigungs-Workflow-Logs behoben.
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard Version 6**
-
-_9. März 2019_
-
-Dieser neue Build (9032@19f73c5) umfasst die folgende Fehlerkorrektur:
-
-* Fehlerkorrektur – Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard Version 5**
-
-_17. Dezember 2019_
-
-Dieser neue Build (9032@d6b8062) umfasst die folgende Fehlerkorrektur:
-
-* Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter). (NEO-19595)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard Version 4**
-
-_11. Dezember 2019_
-
-Dieser neue Build (9032@bc4a935) umfasst die folgende Fehlerkorrektur:
-
-* Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard Version 3**
-
-_20. November 2019_
-
-Dieser neue Build (9032@3468c7b) umfasst die folgenden Fehlerkorrekturen:
-
-* Fehlerkorrektur – Die Anmeldung per IMS-Authentifizierung funktioniert nun. (NEO-17312)
-* Fehlerkorrektur – Kumulative Berichte zu mehreren Sendungen werden nun richtig angezeigt. (NEO-18165)
-* Fehlerkorrektur – Der Webserver wird nicht mehr blockiert oder zum Absturz gebracht.
-
-![](assets/do-not-localize/orange_2.png) **Gold Standard Version 2**
-
-_19. September 2019_
-
-Dieser neue Build (9032@cee805c) umfasst die folgenden Fehlerkorrekturen:
-
-* Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
-* Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
-
-![](assets/do-not-localize/orange_2.png) **Version 19.1.4 – Build 9032**
-
-_13. August 2019_
-
-Erster Build 19.1.4, der folgende Fehlerkorrekturen enthält:
-
-* Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
-* Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
-* Fehlerkorrektur – Jetzt wird kein fehlerhafter HTTP-Code mehr zurückgegeben (HTTP 200 OK statt HTTP 403 Forbidden), wenn ein ungültiges oder abgelaufenes Sitzungstoken in API-Aufrufen verwendet wird. (NEO-16826)
-* Fehlerkorrektur – Der DKIM-Schlüssel wird jetzt in E-Mails eingebettet, sodass der Versand fehlerfrei funktioniert. (NEO-16804)
-* Fehlerkorrektur – Die Workflow-Planung funktioniert jetzt wieder einwandfrei, sodass Workflows entsprechend ihrer Konfiguration ausgeführt werden. (NEO-16619, NEO-16426)
-
-## ![](assets/do-not-localize/orange_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
+## ![](assets/do-not-localize/red_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
 
 _21. Juni 2019_
 
@@ -201,7 +77,7 @@ _21. Juni 2019_
 * Jetzt können in Microsoft Dynamics erstellte Platzhaltereinträge während des Import-Workflows gelöscht werden.
 * Erweiterte Berechtigungen zur Ausführung des Sicherheitszonen-Package bei der Verwendung eines internen Kontos.
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.1 – Build 9026{#release-19-1-build-9026}
+## ![](assets/do-not-localize/red_2.png) Version 19.1 – Build 9026{#release-19-1-build-9026}
 
 _30. Mai 2019_
 
