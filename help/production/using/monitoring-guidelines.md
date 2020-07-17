@@ -39,7 +39,7 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Workflows</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Datenbank überwachen</a></p></td>
-<td><img src="assets/do-not-localize/icon_Send.svg" width="60px"><p><a href="#monitoring-deliveries">Beobachtung von Sendungen</a></p></td></tr>
+<td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Beobachtung von Sendungen</a></p></td></tr>
 </table>
 
 Es stehen weitere Möglichkeiten zur Überwachung der verschiedenen Kampagnen zur Verfügung. Sie bieten verschiedene Möglichkeiten zur Überwachung Ihrer Instanzen, um sicherzustellen, dass Ihr System einwandfrei ist, und eventuell Probleme zu beheben, die beim Einrichten von Workflows, Senden von Versänden usw. auftreten können.
@@ -92,7 +92,7 @@ Die Befolgung von Richtlinien und Best Practices bei der Verwendung von Workflow
 
 ### Sendungen beobachten {#monitoring-deliveries}
 
-<img src="assets/do-not-localize/icon_Send.svg" width="60px">
+<img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 **SMTP-Berichte**
 
