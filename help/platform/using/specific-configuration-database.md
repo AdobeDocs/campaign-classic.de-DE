@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 92%
 
 Abhängig von der externen Datenbank, auf die Sie von Adobe Campaign aus zugreifen möchten, müssen Sie bestimmte Konfigurationen vornehmen. Hierzu zählen im Prinzip die Einrichtung von Treibern und die Deklaration von Umgebungsvariablen für jedes DBMS auf dem Adobe-Campaign-Server.
 
-Weitere Informationen zu alten Connectors wie Teradata, Hadoop 2.1 oder Netezza finden Sie auf dieser [Seite](../../platform/using/legacy-connectors.md).
+Weitere Informationen zu veralteten Connectoren wie Teradata, Hadoop 2.1 oder Netezza finden Sie auf dieser [Seite](../../platform/using/legacy-connectors.md).
 
 Dazu müssen Sie die jeweilige Client-Ebene in der externen Datenbank auf dem Adobe-Campaign-Server installieren.
 
@@ -46,7 +46,7 @@ So erstellen Sie Ihr externes [!DNL Azure Synapse]-Konto:
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
-1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres Externen Kontos aus.
+1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
 1. Konfigurieren Sie das externe [!DNL Azure Synapse]-Konto; geben Sie dazu Folgendes an:
 
@@ -137,7 +137,7 @@ So konfigurieren Sie Azure Synapse unter CentOS:
 
    >[!NOTE]
    >
-   >Um die Kommunikation von der Seite der Azurblase Synapse Analytics zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Um die Kommunikation von Azure Synapse Analytics aus zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Führen Sie bei &quot;iptables&quot; den folgenden Befehl aus:
 
@@ -228,7 +228,7 @@ So konfigurieren Sie Azure Synapse unter Debian:
 
    >[!NOTE]
    >
-   >Um die Kommunikation von der Seite der Azurblase Synapse Analytics zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Um die Kommunikation von Azure Synapse Analytics aus zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Zugriff auf Snowflake konfigurieren {#configure-access-to-snowflake}
 
@@ -240,13 +240,13 @@ So konfigurieren Sie Azure Synapse unter Debian:
 
 ### Externes Snowflake-Konto {#snowflake-external}
 
-Über das externe [!DNL Snowflake]-Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Snowflake-Datenbank verbinden.
+Über das externe [!DNL Snowflake]-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Snowflake-Datenbank verbinden.
 
 1. Konfigurieren Sie in Campaign Classic Ihr externes [!DNL Snowflake]-Konto. Klicken Sie im **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
-1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres Externen Kontos aus.
+1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
 1. Konfigurieren Sie das externe **[!UICONTROL Snowflake]**-Konto; geben Sie dazu Folgendes an:
 
@@ -327,15 +327,15 @@ Der Connector unterstützt die folgenden Optionen:
 
 ### Externes Hadoop-Konto {#hadoop-external}
 
-The [!DNL Hadoop] external account allows you to connect your Campaign instance to your Hadoop external database.
+Über das externe [!DNL Hadoop]-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Hadoop-Datenbank verbinden.
 
 1. Konfigurieren Sie in Campaign Classic Ihr externes [!DNL Hadoop]-Konto. Klicken Sie im **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
-1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres Externen Kontos aus.
+1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. Configure the **[!UICONTROL Hadoop]** external account, you must specify:
+1. Konfigurieren Sie das externe **[!UICONTROL Hadoop]**-Konto. Geben Sie dazu Folgendes an:
 
    * **[!UICONTROL Typ]**: ODBC (Sybase ASE, Sybase IQ)
 
@@ -367,7 +367,7 @@ Der Connector unterstützt außerdem die folgenden Hive-Optionen:
 | bucketsNumber | 20 | Anzahl der Buckets beim Erstellen einer Cluster-Tabelle. |
 | fileFormat | PARQUET | Standarddateiformat für Arbeitstabellen. |
 
-### Konfigurieren von Hadoop 3.0 {#configuring-hadoop}
+### Konfigurieren von Hadoop 3.0 {#configuring-hadoop}
 
 Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erfordert folgende Konfigurationen auf dem Adobe Campaign-Server. Beachten Sie, dass diese Konfiguration für sowohl Windows als auch Linux verfügbar ist.
 
@@ -386,17 +386,17 @@ Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erforder
 
 ## Zugriff auf Oracle konfigurieren {#configure-access-to-oracle}
 
-### Oracle-Externe Konto {#oracle-external}
+### Externes Oracle-Konto {#oracle-external}
 
-The [!DNL Oracle] external account allows you to connect your Campaign instance to your Hadoop external database.
+Über das externe [!DNL Oracle]-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Hadoop-Datenbank verbinden.
 
 1. Konfigurieren Sie in Campaign Classic Ihr externes [!DNL oracle]-Konto. Klicken Sie im **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
-1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres Externen Kontos aus.
+1. Wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** Ihres externen Kontos aus.
 
-1. Configure the **[!UICONTROL Oracle]** external account, you must specify:
+1. Konfigurieren Sie das externe **[!UICONTROL Oracle]**-Konto. Geben Sie dazu Folgendes an:
 
    * **[!UICONTROL Typ]**: Oracle
 
@@ -412,7 +412,7 @@ The [!DNL Oracle] external account allows you to connect your Campaign instance 
 
 ### Oracle unter Linux {#for-linux-1}
 
-Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert die zusätzlichen unten aufgeführten Konfigurationen auf dem Adobe Campaign Server:
+Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert die zusätzlichen unten aufgeführten Konfigurationen auf dem Adobe Campaign-Server:
 
 1. Installieren Sie den vollständigen Oracle-Client für Ihre jeweilige Oracle-Version.
 1. Fügen Sie der Installation Ihre TNS-Definitionen hinzu. Spezifizieren Sie diese Definitionen dazu in der Datei **tnsnames.ora** im Verzeichnis /etc/oracle. Wenn dieses Verzeichnis nicht vorhanden ist, erstellen Sie es.
@@ -454,7 +454,7 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
 
 ### Oracle unter Windows {#for-windows-1}
 
-Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert die zusätzlichen unten aufgeführten Konfigurationen auf dem Adobe Campaign Server:
+Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert die zusätzlichen unten aufgeführten Konfigurationen auf dem Adobe Campaign-Server:
 
 1. Installieren Sie den Oracle-Client.
 
