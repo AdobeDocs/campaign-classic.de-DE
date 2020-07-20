@@ -14,11 +14,11 @@ discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2052'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -219,7 +219,7 @@ Unten finden Sie die Liste mit den vordefinierten Empfängerfeldern, die bei der
   </tr> 
   <tr> 
    <td> No longer contact (by any channel)<br /> </td> 
-   <td> @blockierungsliste<br /> </td> 
+   <td> @blockList<br /> </td> 
   </tr> 
   <tr> 
    <td> No longer contact by email<br /> </td> 
