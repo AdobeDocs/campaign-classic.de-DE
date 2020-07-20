@@ -14,11 +14,11 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86af066045c1c35b51624de8565af21746354c1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Nachdem das Schema erstellt wurde, können Daten in Adobe Campaign-Workflows ver
 
 ## Verfügbare externe Datenbanken {#external-database}
 
-Unten finden Sie die Liste jeder mit dem Modul Adobe Campaign FDA kompatiblen externen Datenbank:
+Unten finden Sie die Liste aller externen Datenbanken, die mit dem FDA-Modul von Adobe Campaign kompatibel sind:
 
 * Microsoft Azure Synapse Analytics. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#azure-external).
 * Snowflake. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
