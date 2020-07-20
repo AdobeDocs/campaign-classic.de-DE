@@ -14,11 +14,11 @@ discoiquuid: cfa22577-0b9e-4eee-900d-214b81256d81
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d96912e39956f2f7b0b0af29dc765d0b9775a020
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1008'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -54,11 +54,11 @@ Bestätigungsnachrichten werden über eine spezielle Versandvorlage gesendet, di
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_1d.png)
 
-1. Da die Empfänger dieses Versands ihre Genehmigung nicht bestätigt haben, befinden sie sich immer noch auf der blockierungsliste. Damit sie diese Mitteilung erhalten, müssen Sie Versand, die auf dieser Vorlage basieren, für die Zielgruppe von Empfängern autorisieren, die sich auf der blockierungsliste befinden.
+1. Da die Empfänger dieses Versands ihre Zustimmung nicht bestätigt haben, befinden sie sich immer noch auf der Blockierungsliste der Datenbank. Damit sie diese Mitteilung erhalten, müssen Sie Sendungen anhand dieser Vorlage für die gewünschten Empfänger autorisieren, die sich auf der Blockierungsliste befinden.
 
    Verwenden Sie dazu den Tab **[!UICONTROL Ausschlüsse]**.
 
-1. Click the **[!UICONTROL Edit...]** link and uncheck the **[!UICONTROL Exclude recipients who no longer want to be contacted (blocklist)]** option.
+1. Wählen Sie den Link **[!UICONTROL Bearbeiten...]** aus und deaktivieren Sie die Option **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert werden möchten (Blockierungsliste)]**.
 
    <!-- ![](assets/s_ncs_admin_survey_double-opt-in_sample_4d.png)-->
 
@@ -112,7 +112,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_6f.png)
 
-   Die erste **[!UICONTROL Script]** -Aktivität fügt Empfänger zur blockierungsliste hinzu, bis sie ihr Abonnement zum Newsletter bestätigt haben. Der Inhalt muss wie folgt lauten:
+   Die erste **[!UICONTROL Script]**-Aktivität setzt Empfänger auf die Blockierungsliste, bis diese ihr Abonnement des Newsletters bestätigt haben. Der Inhalt muss wie folgt aussehen:
 
    ```
    ctx.recipient.@blockList=1
@@ -175,7 +175,7 @@ Die Anmeldung zum Newsletter beinhaltet die folgenden Schritte:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8d.png)
 
-   The user is added to the Adobe Campaign database in the **[!UICONTROL Temp]** folder, and their profile is added to the block list until they confirm their subscription with the email.
+   Der Benutzer wird zum **[!UICONTROL Temp]**-Ordner der Adobe-Campaign-Datenbank hinzugefügt und sein Profil wird auf die Blockierungsliste gesetzt, bis er seine Anmeldung über die E-Mail bestätigt.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_8f.png)
 
@@ -189,7 +189,7 @@ Die Anmeldung zum Newsletter beinhaltet die folgenden Schritte:
 
    Das Benutzerprofil wird in Adobe Campaign aktualisiert:
 
-   * sie befinden sich nicht mehr auf der blockierungsliste,
+   * Er befindet sich nicht mehr auf der Blockierungsliste
    * und wurde zum Informationsdienst angemeldet.
 
       ![](assets/s_ncs_admin_survey_double-opt-in_sample_9.png)
