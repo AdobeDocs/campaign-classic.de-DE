@@ -31,14 +31,14 @@ Adobe Campaign ermöglicht den Export oder Import von Plattformkonfigurationen u
 
 Datenpackages ermöglichen den Austausch von Entitäten innerhalb der Adobe-Campaign-Datenbank über XML-Dateien. Jede in einem Package enthaltene Entität wird mit der Gesamtheit ihrer Daten dargestellt.
 
-Das Prinzip der **Datenpackages** besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe-Campaign-System zu integrieren. Erfahren Sie, wie Sie einen einheitlichen Satz von Datenpackagen in diesem [Abschnitt](#data-package-best-practices)beibehalten.
+Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exportieren und in ein anderes Adobe-Campaign-System zu integrieren. In diesem [Abschnitt](#data-package-best-practices) erfahren Sie, wie Sie einen konsistenten Satz von Daten-Packages aufrechterhalten.
 
 ### Typen von Packages {#types-of-packages}
 
 Es gibt drei Arten exportierbarer Packages: Benutzer-Packages, Plattform-Packages und Admin-Packages.
 
 * **Benutzer-Package**: Ermöglicht es, die Liste der zu exportierenden Entitäten auszuwählen. Dieser Package-Typ verwaltet Abhängigkeiten und überprüft Fehler.
-* **Platform**: Er umfasst alle zusätzlichen technischen Ressourcen (nicht standardmäßige): Schemas, JavaScript-Code usw.
+* **Plattformpaket**: Er umfasst alle zusätzlichen technischen Ressourcen (nicht standardmäßige): Schemas, JavaScript-Code usw.
 
    ![](assets/ncs_datapackage_package_platform.png)
 
@@ -357,7 +357,7 @@ Die wichtigsten Punkte sind folgende:
 >
 >Weiterführende Informationen zum Einrichten eines Workflows für das automatische Exportieren von Packages finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/export-packages-automatically.html).
 
-### Empfehlungen  {#data-package-recommendations}
+### Empfehlungen   {#data-package-recommendations}
 
 Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie müssen Ihre Packages zwischen zwei Instanzen bereitstellen, die denselben Build aufweisen. Erzwingen Sie den Import niemals und aktualisieren Sie immer zuerst die Plattform (wenn der Build abweicht).
 
@@ -413,7 +413,7 @@ Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt w
 * Kampagne: von 200 bis 299
 * Aktualisierung: 5000 bis 5999
 
-### Packages  {#data-packages}
+### Packages   {#data-packages}
 
 >[!NOTE]
 >
