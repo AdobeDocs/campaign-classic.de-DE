@@ -14,18 +14,18 @@ discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Start von Adobe Campaign{#launching-adobe-campaign}
 
-Kampagne Client Console ist ein Rich-Client, mit dem Sie eine Verbindung zu den Anwendungsservern Ihrer Kampagne herstellen können. Erfahren Sie, wie Sie die Client-Konsole auf [dieser Seite](../../installation/using/installing-the-client-console.md)herunterladen und konfigurieren.
+Die Clientkonsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. Auf [dieser Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie die Clientkonsole herunterladen und konfigurieren.
 
 ## Adobe Campaign starten {#starting-adobe-campaign}
 
