@@ -61,7 +61,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
  <thead> 
   <tr> 
    <th> Paket </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
    <th> Instanzentyp </th>
   </tr> 
  </thead> 
