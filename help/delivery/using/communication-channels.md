@@ -14,11 +14,11 @@ discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](../../delivery/using/sms-channel.md).
 1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](../../delivery/using/about-mobile-app-channel.md).
 
-   Andere Kanäle werden auf [dieser Seite](../../delivery/using/other-channels.md) beschrieben.
+   Andere Kanäle werden auf [dieser Seite](../../delivery/using/communication-channels.md#other-channels) beschrieben.
 
    >[!NOTE]
    >
@@ -93,3 +93,13 @@ Sie können mit Adobe Campaign über spezielle Apps personalisierte und zielgrup
 [Briefpost ist ein Offline-Kanal, über den Sie eine für Briefpost-Dienstleister nötige Datei erstellen und personalisieren können. ](../../delivery/using/about-direct-mail-channel.md) Sie erhalten damit die Möglichkeit, Online- und Offline-Kanäle in Ihren Customer Journeys zu mischen.
 
 Über Online-Kanäle können Sie Nachrichten erstellen (E-Mail, SMS, Mobile-App-Versand etc.) und direkt über Adobe Campaign an Ihre Audience senden. Offline-Kanäle sind anders. Wenn Sie einen Briefpost-Versand vorbereiten, erzeugt Adobe Campaign eine Datei, die alle Zielgruppenprofile und die ausgewählte Kontaktinformationen enthält (z. B. Postanschrift). Dann senden Sie diese Datei an Ihren Briefpost-Dienstleister, der den tatsächlichen Versand vornimmt.
+
+## Sonstige Kanäle {#other-channels}
+
+Adobe Campaign stellt auch Agentur- oder Telefonversandvorlagen zur Verfügung, mit denen externe Sendungen erstellt werden können. Die Verwendung dieser Kanäle setzt voraus, dass Sie spezielle Methoden zur Verarbeitung von Ausgabedateien einsetzen. Die Schritte zur Konfiguration sind dieselben wie für den [Brief-Kanal](../../delivery/using/about-direct-mail-channel.md).
+
+Zusätzlich verwenden Sendungen vom Typ &quot;Sonstige&quot; eine spezifische technische Vorlage, die keinen Vorgang auslöst. Dies erlaubt beispielsweise die Verwaltung von außerhalb der Plattform durchgeführten Marketingaktionen.
+
+Dieser Kanal besitzt keinen bestimmten Mechanismus. Er ist ein allgemeiner Kanal, der wie jeder andere Kommunikationskanal in Adobe Campaign über eine eigene externe Konto-Routing-Möglichkeit, Versandvorlagenart und Kampagnen-Workflow-Aktivität verfügt.
+
+Dieser Kanal ist nur für beschreibende Zwecke gedacht, z. B. um Versand zu definieren, für die Sie eine Spur der Zielgruppe einer Kampagne in einem anderen Tool als Adobe Campaign erstellen möchten.
