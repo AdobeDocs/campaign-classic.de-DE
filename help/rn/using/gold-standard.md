@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: f097fcc4363181cda21386840f19e2523c3af3f9
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 80%
+source-wordcount: '826'
+ht-degree: 79%
 
 ---
 
@@ -41,7 +41,7 @@ _7. Juli 2020_
 
 Der Build 9032@efd8a94 beinhaltet die folgende Fehlerbehebung:
 
-* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war. (NEO-26411)
+Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war oder wenn eine alte Marketing-Instanz mit einer kürzlich verwendeten Mitte verwendet wurde. (NEO-26411)
 
 >[!CAUTION]
 >
