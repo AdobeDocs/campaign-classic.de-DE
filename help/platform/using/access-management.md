@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 65399d7b3917e2df37c32735e7015d742f5f022c
+source-git-commit: 752318fa4e5b330965bef0906aa0991673e8bd68
 workflow-type: tm+mt
 source-wordcount: '3091'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -347,9 +347,9 @@ Es handelt sich um folgende Berechtigungen:
 
 Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte Ordner des Navigationsbaums sowie die Art des Zugriffs fest: Lesezugriff, Schreibzugriff und Löschzugriff.
 
-Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf) verfügbar.
+Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/user_management.png)](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf)
+[![image](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Zugriffsverwaltungsordner {#folder-access-management}
 
