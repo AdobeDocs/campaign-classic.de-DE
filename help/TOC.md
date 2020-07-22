@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
+source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2094'
 ht-degree: 99%
 
 ---
@@ -120,7 +120,6 @@ ht-degree: 99%
       + [Briefpost-Versand erstellen](delivery/using/creating-a-direct-mail-delivery.md)
       + [Briefpost-Inhalt definieren](delivery/using/defining-the-direct-mail-content.md)
       + [Validierung](delivery/using/validating.md)
-      + [Sonstige Kanäle](delivery/using/other-channels.md)
    + Versandvorlagen verwenden {#using-delivery-templates}
       + [Über Vorlagen](delivery/using/about-templates.md)
       + [Versandvorlage erstellen](delivery/using/creating-a-delivery-template.md)
@@ -426,6 +425,7 @@ ht-degree: 99%
          + [Erstellung einer zusammenfassenden Liste.](workflow/using/creating-a-summary-list.md)
          + [Daten anreichern](workflow/using/enriching-data.md)
          + [Verwendung von Aggregaten](workflow/using/using-aggregates.md)
+         + [Aktualisierung der vierteljährlichen Liste unter Verwendung einer inkrementellen Abfrage](workflow/using/quarterly-list-update.md)
       + Abfragen erstellen {#designing-queries}
          + [Abfrage zur Empfängertabelle](workflow/using/querying-recipient-table.md)
          + [Abfrage zu Versandinformationen](workflow/using/querying-delivery-information.md)
