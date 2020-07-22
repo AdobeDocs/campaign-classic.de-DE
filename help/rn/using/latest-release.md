@@ -13,19 +13,42 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 5b7c0dc12b41b8482dce9d42bbf88878bb03bf38
+source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 100%
+source-wordcount: '1987'
+ht-degree: 90%
 
 ---
 
 
 # Neueste Version{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
+## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 – Build 9180 {#release-20-2-2-build-9180}
+
+_22. Juli 2020_
+
+* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war oder wenn eine alte Marketing-Instanz mit einer kürzlich verwendeten Mitte verwendet wurde. (NEO-26411)
+* Es wurde ein Fehler behoben, der dazu führte, dass nicht signierte Links von personalisierten Domänen blockiert wurden, obwohl sie zulässig sein sollten. (NEO-25210)
+* Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
+* Es wurde ein Fehler behoben, der dazu führte, dass Mirrorseiten-URLs in E-Mail-Versänden falsch definiert wurden. (NEO-26084)
+* Es wurde ein Problem mit der URL-Kodierung im Anti-Phishing-Dienst behoben. (NEO-25283)
+* Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
+* Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
+Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
+* Korrektur einer Regression, die berechnete Felder in einem Workflow beeinträchtigte. (NEO-25194)
+* Korrektur einer Regression, die verhinderte, dass die spontane Erstellung von Web-Tracking-URLs funktionierte. (NEO-20999)
+* Es wurde ein Problem mit vordefinierten Versandberichten behoben, die beim Exportieren in PDF abgeschnitten schienen. (NEO-25757)
+* Es wurde ein Absturzproblem im Bereitstellungsassistenten behoben.
+* Es wurde ein Fehler behoben, der dazu führte, dass der Arbeitsablauf für die Angebot-Benachrichtigung nach einer Nachaktualisierung nicht ordnungsgemäß funktionierte.
+* Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903)
+* Die Liste &quot;jarsToSkip&quot;in &quot;catalina.properties&quot;wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).
+* Es wurde ein Problem behoben, das die Vorbereitung von Versänden nach der Aktualisierung blockierte.
+* Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, nach der Aktualisierung erneut veröffentlicht.
+* Potenzielle XSS-Verwundbarkeit in Versand-Inhalten behoben. (NEO-17987, NEO-26073)
+
+## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
 _8. Juni 2020_
 
