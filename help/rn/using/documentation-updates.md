@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 64b31b8d4f88023f4285bf161d236973a7d63107
+source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
 workflow-type: tm+mt
-source-wordcount: '6954'
+source-wordcount: '6978'
 ht-degree: 97%
 
 ---
@@ -29,6 +29,8 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## Juli 2020 {#july-2020}
 
+Ein Anwendungsfall zum automatischen Aktualisieren einer Liste mithilfe einer inkrementellen Abfrage wurde hinzugefügt. [Mehr dazu](../../workflow/using/about-workflow-use-cases.md)
+
 Die [Versionshinweise](../../rn/using/latest-release.md) wurden neu organisiert: Es wurde eine [Übersichtsseite](../../rn/using/latest-release.md) mit Informationen zu Buildstatus, Aktualisierungsprozess, Empfehlungen und wichtigen Links hinzugefügt. Eine spezielle Seite für [Gold Standard-Versionen](../../rn/using/gold-standard.md) wurde hinzugefügt und die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) wurde integriert.
 
 Es wurde ein neuer Abschnitt mit Richtlinien für die Überwachung in Campaign Classic hinzugefügt. [Mehr dazu](../../production/using/monitoring-guidelines.md)
@@ -37,7 +39,7 @@ Der Abschnitt &quot;Datenschutz und Einverständnis&quot; wurde um detaillierter
 
 Die Seite &quot;Datenschutzverwaltung in Campaign Classic&quot;wurde mit Informationen zum Feld &quot;Regulierung&quot;aktualisiert, das jetzt bei Verwendung der API verfügbar ist, die die Einrichtung eines automatischen Datenschutzanforderungsprozesses ermöglicht. [Mehr dazu](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-Die Seite &quot;Überblick über das Datenschutzmanagement&quot;wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und dem brasilianischen Lei Geral de Proteção de Dados (LGPD). [Mehr dazu](https://helpx.adobe.com/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+Die Seite &quot;Überblick über das Datenschutzmanagement&quot;wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und dem brasilianischen Lei Geral de Proteção de Dados (LGPD). [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 Es wurden Informationen zu Workflows-Protokollen und Verhalten im Fehlerfall hinzugefügt. [Mehr dazu](../../workflow/using/sub-workflow.md)
 
