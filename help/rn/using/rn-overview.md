@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 18035a68b0ebfee4a8165c49646e408a85371ae5
+source-git-commit: d4a170f22108b38ebe8a451feea6210fe5aa482f
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 19%
+source-wordcount: '438'
+ht-degree: 20%
 
 ---
 
@@ -37,6 +37,8 @@ Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet. Nachfolgend fin
 
 Der **letzte stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/gold-standard.md).
 
+![](assets/do-not-localize/limited.png) **Eingeschränkte Verfügbarkeit** - Erstellen Sie derzeit eine Produktionsprüfung. Nur On-Demand-Bereitstellung.
+
 ![](assets/do-not-localize/blue3.png) **Release Candidate** - Build-Validierung durch Adobe. Produktionstestversand ist ausstehend.
 
 ![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar** - Neuere Version mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.
@@ -51,7 +53,7 @@ Als Gold Standard-Benutzer profitieren Sie automatisch von der Gold Standard-Akt
 
 Als Benutzer vor Ort können Sie die Aktualisierung durchführen. Dazu müssen Sie den neuesten Stable-Build [herunterladen und alle Umgebung aktualisieren](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) . Erfahren Sie mehr über den [Aktualisierungsprozess](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html)und lesen Sie die häufig gestellten Fragen zum [Erstellen der Aktualisierung](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html).
 
-## Empfehlungen   {#recommendations}
+## Empfehlungen    {#recommendations}
 
 Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Build auf allen Servern installieren, die auf derselben Client-Konfiguration ausgeführt werden.
 
