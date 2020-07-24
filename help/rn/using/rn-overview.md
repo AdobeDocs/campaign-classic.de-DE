@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: d4a170f22108b38ebe8a451feea6210fe5aa482f
+source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 20%
@@ -35,7 +35,7 @@ Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet. Nachfolgend fin
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** - Neueste stabile Version verfügbar. Build in Produktion validiert.
 
-Der **letzte stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/gold-standard.md).
+Der **letzte stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn/using/gold-standard.md).
 
 ![](assets/do-not-localize/limited.png) **Eingeschränkte Verfügbarkeit** - Erstellen Sie derzeit eine Produktionsprüfung. Nur On-Demand-Bereitstellung.
 
