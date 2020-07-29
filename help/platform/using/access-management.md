@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 4d04c261441d4d66441c3665a7beb785383c9f14
+source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
 workflow-type: tm+mt
-source-wordcount: '3080'
-ht-degree: 99%
+source-wordcount: '3151'
+ht-degree: 95%
 
 ---
 
@@ -241,55 +241,63 @@ Gehen Sie wie folgt vor, um eine neue Benutzergruppe zu erstellen:
 
 Es existieren folgende Standardgruppen:
 
-1. Versandverantwortliche Benutzer
+1. **[!UICONTROL Administrator]**
+
+   Die Operatoren in dieser Gruppe haben vollen Zugriff auf die Instanz. Administratoren sind Benutzer, die auf die technischsten Teile der Benutzeroberfläche zugreifen können. Sie haben die **[!UICONTROL Administratorrolle]** und stellen sicher, dass alle Plattformen eingerichtet sind.
+
+   Diese Gruppe enthält den folgenden Namen right:
+
+   * **[!UICONTROL ANWENDUNG]**: können Sie Objekte wie Workflow, Versand, Skripten usw. ausführen, erstellen, bearbeiten oder löschen.
+
+1. **[!UICONTROL Versandverantwortliche Benutzer]**
 
    Die Benutzer dieser Gruppe sind für die Versandverwaltung verantwortlich. Die Gruppe verleiht Zugriff auf die für die Erstellung und Vorbereitung von Sendungen notwendigen Hauptressourcen (Kampagnentypologien, Versandmappings, Standardvorlagen, Gestaltungsbausteine etc.).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
-   * SENDUNGEN VORBEREITEN: Berechtigt zum Erstellen, Bearbeiten und Starten der Versandanalyse;
-   * SENDUNGEN STARTEN: Berechtigt zur Validierung von zuvor analysierten Sendungen;
+   * **[!UICONTROL VERSÄNDE]** VORBEREITEN: Recht, die Versand-Analyse zu erstellen, zu bearbeiten und zu Beginn,
+   * **[!UICONTROL BEGINN-VERSAND]**: das Recht, zuvor analysierte Versand zu genehmigen.
 
-1. Kampagnenverantwortliche Benutzer
+1. **[!UICONTROL Kampagnenverantwortliche Benutzer]**
 
-   Die Benutzer dieser Gruppe können Marketingkampagnen verwalten. Sie verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.).
+   Die Benutzer dieser Gruppe können Marketingkampagnen verwalten. Sie verleiht Zugriff auf mit Kampagnen verbundene Elemente (Pläne, Programme, Workflows, Budgets etc.) im Rahmen der **[!UICONTROL Kampagne]** (optionales Adobe Campaign-Modul).
 
    Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
-   * EINFÜGEN VON ORDNERN: Berechtigt zum Einfügen von Ordnern in den Adobe-Campaign-Navigationsbaum (erfordert Schreibzugriff auf betroffene Zweige);
-   * WORKFLOW: Berechtigt zur Nutzung von Workflows.
+   * **[!UICONTROL ORDNER]** EINFÜGEN: das Recht, Ordner in die Adobe Campaign-Struktur einzufügen (sofern Sie über Bearbeitungsrechte für die betreffenden Zweige verfügen),
+   * **[!UICONTROL WORKFLOW]**: Nutzungsrecht an Workflows.
 
    >[!NOTE]
    >
    >Benutzer dieser Gruppe können keine Sendungen starten.
 
-1. Autoren
+1. **[!UICONTROL Autoren]**
 
-   Benutzer dieser Gruppe haben im Rahmen der **Inhaltsverwaltung** (optionales Adobe-Campaign-Modul Content Manager) Zugriff auf Inhaltsordner. Die Gruppe verleiht keine zusätzlichen Berechtigungen.
+   Benutzer dieser Gruppe haben im Rahmen der **[!UICONTROL Inhaltsverwaltung]** (optionales Adobe-Campaign-Modul Content Manager) Zugriff auf Inhaltsordner. Die Gruppe verleiht keine zusätzlichen Berechtigungen.
 
-1. Berichtzugriff
+1. **[!UICONTROL Berichtzugriff]**
 
    Diese Gruppe ermöglicht es externen Benutzern, über einen Webzugriff Versandberichte einzusehen.
 
-1. Workflow-Ausführung
+1. **[!UICONTROL Workflow-Ausführung]**
 
    Diese Gruppe verleiht Benutzern die Berechtigung, die von Kampagnen unabhängigen Workflows zu verwalten.
 
-1. Workflow-Supervisoren
+1. **[!UICONTROL Workflow-Supervisoren]**
 
    Die Benutzer dieser Gruppe werden im Falle von Meldungen bezüglich Kampagnen-Workflows per E-Mail benachrichtigt.
 
 1. Lokale/Zentrale Verwaltung
 
-   Diese Gruppen ermöglichen den Einsatz des **Dezentralen Marketings** (optionales Adobe-Campaign-Modul).
+   Diese Gruppen ermöglichen den Einsatz des **[!UICONTROL Dezentralen Marketings]** (optionales Adobe-Campaign-Modul).
 
-1. Angebotsverantwortliche Benutzer
+1. **[!UICONTROL Angebotsverantwortliche Benutzer]**
 
    Die Benutzer in dieser Gruppe können Angebote erstellen und verwalten. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../interaction/using/operator-profiles.md).
 Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
-   * EINFÜGEN VON ORDNERN: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);
-   * BEARBEITUNG VON ORDNERN: Berechtigt zum Ändern von Ordnereigenschaften wie interner Name, Titel, verknüpftes Bild, Reihenfolge der Unterordner usw.
+   * **[!UICONTROL ORDNER]** EINFÜGEN: Recht zum Einfügen von Ordnern in die Adobe Campaign-Struktur (sofern Sie über Bearbeitungsrechte für die betreffenden Zweige verfügen),
+   * **[!UICONTROL BEARBEITUNG VON ORDNERN]**: Berechtigt zum Ändern von Ordnereigenschaften wie interner Name, Titel, verknüpftes Bild, Reihenfolge der Unterordner usw.
 
 ## Spezifische Berechtigungen {#named-rights}
 
