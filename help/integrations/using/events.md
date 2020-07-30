@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
+source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 2%
@@ -80,7 +80,7 @@ Beispiel:
 Der Inhalt wird in Analytics für jeden Auslöser definiert. Es ist im JSON-Format.
 Beispiel: In einem Auslöser logoUpload_uploading_Visits:
 
-* **[!UICONTROL eVar01]** kann die Shopper-ID enthalten, die zum Abgleich mit Kampagne-Empfängern verwendet wird. Es ist im Zeichenfolgenformat. <br>Es muss abgeglichen werden, um die Shopper-ID zu finden, die der Hauptschlüssel ist.
+* **[!UICONTROL eVar01]** kann die Shopper-ID enthalten, die zur Abstimmung mit Kampagne-Empfängern verwendet wird. Es ist im Zeichenfolgenformat. <br>Es muss abgeglichen werden, um die Shopper-ID zu finden, die der Hauptschlüssel ist.
 
 * **[!UICONTROL timeGMT]** kann die Zeit des Auslösers auf der Analytics-Seite enthalten. Es hat das Format UTC Epoch (Sekunden seit dem 01/01/1970 UTC).
 
@@ -161,7 +161,7 @@ Dieser JS-Beispielcode speichert den Auslöser in der Datenbank.
 
 ```
 function processPipelineMessage(xmlTrigger)
- {```
+ {
  (…)
  var event = 
  <pipelineEvent
@@ -201,7 +201,7 @@ Das Feld &quot;triggerType&quot;gibt an, von welchem Auslöser die Daten stammen
 
 Hier ein Beispiel für einen Schema-Code für diese Tabelle:
 
-| Attribut | Typ | Titel | Beschreibung |
+| Attribut | Typ | Titel | Beschreibung  |
 |:-:|:-:|:-:|:-:|
 | pipelineEventId | lang | Primärschlüssel | Der interne Primärschlüssel des Auslösers. |
 | data | Memo | Auslöserdaten | Der vollständige Inhalt der Auslöserdaten im XML-Format. Für Debugging- und Prüfzwecke. |
@@ -209,7 +209,7 @@ Hier ein Beispiel für einen Schema-Code für diese Tabelle:
 | shopper_id | Zeichenfolge 32 | shopper_id | Die interne Kennung des Käufers. Wird durch den Abgleicharbeitsablauf festgelegt. Bei null bedeutet dies, dass der Kunde in der Kampagne unbekannt ist. |
 | shopper_key | lang | shopper_key | Die Externe Kennung des Käufers, wie sie von Analytics erfasst wird. |
 | created | Datum/Uhrzeit | Created | Der Zeitpunkt, zu dem das Ereignis in Kampagne erstellt wurde. |
-| lastModified | Datum/Uhrzeit | Zuletzt geändert | Das letzte Mal, dass das Ereignis in Adobe geändert wurde. |
+| lastModified | Datum/Uhrzeit | Zuletzt geändert | Das letzte Mal, dass das Ereignis in der Adobe geändert wurde. |
 | timeGMT | Datum/Uhrzeit | Zeitstempel | Der Zeitpunkt, zu dem das Ereignis in Analytics generiert wurde. |
 
 ### Anzeigen der Ereignisse {#display-events}
