@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1675'
-ht-degree: 97%
+source-wordcount: '1674'
+ht-degree: 91%
 
 ---
 
@@ -29,25 +29,23 @@ ht-degree: 97%
 
 Für jeden Versand können verschiedene Zielpopulationen bestimmt werden. Im folgenden Abschnitt finden Sie weitere Informationen zur Auswahl von:
 
-* **Hauptempfängern des Versands** – [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* **Empfängern von Testversandnachrichten**, um einen Validierungszyklus einzurichten – [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* Hauptempfängern des Versands – [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* Empfängern von Testversandnachrichten, um einen Validierungszyklus einzurichten – [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-Darüber hinaus können Sie auch [Testadressen](../../delivery/using/about-seed-addresses.md) und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) definieren, wenn der Versand in einer Marketing-Kampagne enthalten ist.
+Wenn der Versand außerdem in einer Marketing-Kampagne enthalten ist, können Sie auch [Testadressen](../../delivery/using/about-seed-addresses.md)und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)definieren.
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
 
-Meistens wird die Hauptzielgruppe aus der Adobe-Campaign-Datenbank extrahiert (Standardmodus).
+In den meisten Fällen wird die Haupt-Zielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können jedoch auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-Empfänger können auch in einer externen Datei gespeichert werden. Die Konfiguration dieser Versandart finden Sie unter [Externe Empfänger auswählen](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Gehen Sie wie folgt vor, um den Empfänger eines Versands auszuwählen:
 
-Führen Sie die folgenden Schritte aus, um die Empfänger des zu erstellenden Versands auszuwählen:
-
-1. Wählen Sie den Link **[!UICONTROL An]** aus.
-1. Wählen Sie die erste Option, wenn Ihre Empfänger in der Datenbank gespeichert sind.
+1. Wählen Sie im Versand-Editor &quot; **[!UICONTROL An]**&quot;.
+1. Wenn die Empfänger in der Datenbank gespeichert sind, wählen Sie die erste Option.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Wählen Sie das Zielgruppen-Mapping in der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Standardoption im Zielgruppen-Mapping ist bei Adobe Campaign **[!UICONTROL Empfänger]**.
+1. Wählen Sie das Zielgruppen-Mapping in der Dropdown-Liste &quot; **[!UICONTROL Zielgruppen-Mapping]** &quot;aus. Adobe Campaign-Standard-Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf **nms:Empfänger** -Schema.
 
    Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](../../delivery/using/selecting-a-target-mapping.md).
 
@@ -157,7 +155,7 @@ Folgende Optionen stehen zur Verfügung:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d.h. Empfänger, deren E-Mail-Adressen sich auf einer blockierungsliste (&#39;Opt-out&#39;) befinden. Diese Option muss weiterhin gewählt werden, um die Berufsethik des E-Marketing und die Gesetze über den elektronischen Geschäftsverkehr einzuhalten.
+* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d.h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss weiterhin gewählt werden, um die Berufsethik des E-Marketing und die Gesetze über den elektronischen Geschäftsverkehr einzuhalten.
 * **[!UICONTROL Adressen in Quarantäne ausschließen]**: schließt die Empfänger aus, für die frühere Zustellversuche fehlgeschlagen sind. Es wird dringend empfohlen, diese Option NICHT ABZUWÄHLEN.
 
    >[!NOTE]
