@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 13fefe429862e856bc7ec1d376d80c176398da0b
+source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
 workflow-type: tm+mt
-source-wordcount: '6978'
-ht-degree: 97%
+source-wordcount: '6968'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +39,7 @@ Der Abschnitt &quot;Datenschutz und Einverständnis&quot; wurde um detaillierter
 
 Die Seite &quot;Datenschutzverwaltung in Campaign Classic&quot;wurde mit Informationen zum Feld &quot;Regulierung&quot;aktualisiert, das jetzt bei Verwendung der API verfügbar ist, die die Einrichtung eines automatischen Datenschutzanforderungsprozesses ermöglicht. [Mehr dazu](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-Die Seite &quot;Überblick über das Datenschutzmanagement&quot;wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und dem brasilianischen Lei Geral de Proteção de Dados (LGPD). [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+Die Seite mit der Übersicht über die Datenschutzverwaltung wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und zum brasilianischen Datenschutzgesetz (Lei Geral de Proteção de Dados, LGPD). [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 Es wurden Informationen zu Workflows-Protokollen und Verhalten im Fehlerfall hinzugefügt. [Mehr dazu](../../workflow/using/sub-workflow.md)
 
@@ -255,7 +255,7 @@ Es wurden Informationen hinzugefügt, die festlegen, dass der Inhalt von Persona
 
 Die Control Panel-Dokumentation wurde in den neuen kollaborativen Dokumentationssatz integriert. [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
 
-Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/delivery-best-practices.html)
+Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert – [mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 ## Oktober 2019 {#october-2019}
 
@@ -267,7 +267,7 @@ Eine neue Seite zur Fehlerbehebung wurde zum Tracking in Campaign Classic hinzu
 
 Eine neue Seite mit Best Practices für Adobe Analytics Data Connector wurde hinzugefügt. [Weitere Informationen zu Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
 
-Die ersten Schritte zum Thema Best Practices bei der Zustellung wurden aktualisiert. [mehr dazu](https://helpx.adobe.com/de/campaign/kb/delivery-best-practices.html)
+Die ersten Schritte zum Thema Best Practices bei der Zustellung wurden aktualisiert. [mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 In der Dokumentation zum SMS-Kanal wurde eine Empfehlung hinzugefügt, um Probleme bei der Verwendung mehrerer externer Konten zu vermeiden, indem der erweiterte allgemeine SMPP-Connector mit demselben Provider-Konto genutzt wird – [mehr dazu](../../delivery/using/sms-channel.md#automatic-reply)
 
