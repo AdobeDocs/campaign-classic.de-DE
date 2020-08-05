@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2674'
 ht-degree: 96%
 
 ---
@@ -31,7 +31,7 @@ Im **Versand-Dashboard** können Sie Sendungen beobachten und etwaige Probleme b
 
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md)
-* [Best Practices beim Versand](https://helpx.adobe.com/de/campaign/kb/delivery-best-practices.html)
+* [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md)
 * [Verwalten der Zustellbarkeit](../../delivery/using/about-deliverability.md)
 
 ## Versand-Dashboard {#delivery-dashboard}
@@ -109,7 +109,7 @@ Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
 
 * **Die Versandgröße**: Größere Sendungen benötigen zur Ausführung länger. MTA-Kindprozesse werden für Standard-Bündelgrößen konfiguriert. Diese sind für die meisten Instanzen ausreichend, müssen jedoch überprüft werden, wenn Sendungen immer zu langsam durchgeführt werden.
 * **Die Zielgruppe des Versands**: Die Versandleistung kann durch Softbounce-Fehler beeinträchtigt werden, die entsprechend der Konfiguration der Neuversuche gehandhabt werden. Je größer die Anzahl der Fehler ist, desto mehr Neuversuche sind nötig.
-* **Die Gesamtauslastung der Plattform**: Wenn mehrere große Sendungen durchgeführt werden, kann die gesamte Plattform davon beeinträchtigt sein. In diesem Zusammenhang sollten Sie auch die IP-Reputation und Probleme bei der Zustellbarkeit überprüfen. Weiterführende Informationen dazu finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
+* **Die Gesamtauslastung der Plattform**: Wenn mehrere große Sendungen durchgeführt werden, kann die gesamte Plattform davon beeinträchtigt sein. In diesem Zusammenhang sollten Sie auch die IP-Reputation und Probleme bei der Zustellbarkeit überprüfen. Weiterführende Informationen dazu finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
 
 Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand beeinträchtigen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-performances.md).
 
@@ -117,7 +117,7 @@ Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand 
 
 Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
 
-* Einige E-Mail-Anbieter haben möglicherweise Ihre IP-Adressen zu einer blockierungsliste hinzugefügt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](../../delivery/using/about-deliverability.md).
+* Einige E-Mail-Anbieter haben möglicherweise Ihre IP-Adressen zu einer Blockierungsliste hinzugefügt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](../../delivery/using/about-deliverability.md).
 * Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
@@ -166,7 +166,7 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
   </tr> 
   <tr> 
    <td> Ignoriert<br /> </td> 
-   <td> Der Versand wurde wegen eines Fehlers mit seiner Adresse nicht an den Empfänger gesendet. Es wurde entweder einer blockierungsliste hinzugefügt, unter Quarantäne gestellt, nicht bereitgestellt oder einem Duplikat. <br /> </td> 
+   <td> Der Versand wurde wegen eines Fehlers mit seiner Adresse nicht an den Empfänger gesendet. Es wurde entweder zu einer Blockierungsliste hinzugefügt, unter Quarantäne gestellt, nicht bereitgestellt oder ein Duplikat. <br /> </td> 
   </tr> 
   <tr> 
    <td> Gesendet<br /> </td> 
