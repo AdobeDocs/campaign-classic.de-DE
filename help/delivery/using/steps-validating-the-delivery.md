@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1814'
 ht-degree: 98%
 
 ---
@@ -31,7 +31,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. **Versand analysieren** – hier erfolgt die Vorbereitung der zu sendenden Nachrichten. Siehe [Versand analysieren ](#analyzing-the-delivery).
 
-   Die bei der Analyse angewendeten Regeln werden im Abschnitt [Validierung mit Typologien](#validation-process-with-typologies) dargestellt. Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](#changing-the-approval-mode) detailliert beschrieben.
+   Die während der Analyse angewendeten Regeln werden in [diesem Abschnitt](#validation-process-with-typologies) erläutert. Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](#changing-the-approval-mode) detailliert beschrieben.
 
 1. **Testsendungen durchführen** – hier erfolgt die Validierung von Inhalt, URLs, Personalisierungsfeldern usw. Siehe [Testversand durchführen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) und [Spezifische Testversand-Zielgruppe definieren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
@@ -76,6 +76,7 @@ Die Analyse ist die Phase, in der die Zielpopulation berechnet und der Versandin
    * Das blaue Symbol steht für eine informative Nachricht.
    * Das gelbe Symbol steht für einen nicht kritischen Verarbeitungsfehler.
    * Das rote Symbol steht für einen kritischen Fehler, der die Durchführung des Versands verhindert.
+
    ![](assets/s_ncs_user_email_del_analyze_error.png)
 
 1. Klicken Sie auf **[!UICONTROL Schließen]**, um Fehler (falls vorhanden) zu korrigieren.
@@ -142,6 +143,7 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 >
 >* Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
 >* Die Konfiguration der Testversand-Zielgruppe wird unter [Spezifische Testversand-Zielgruppe definieren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben.
+
 >
 
 
@@ -181,7 +183,7 @@ Im Tab **[!UICONTROL Erweitert]** der Versandeigenschaften kann der Testversand 
 Folgende Optionen stehen zur Verfügung:
 
 * Beibehaltung von doppelten Adressen und Empfängern;
-* Mit beiden der folgenden Optionen können Sie Empfänger auf der blockierungsliste und Adressen in der Quarantäne behalten. Eine Beschreibung dieser Optionen für die Hauptzielgruppe finden Sie unter [Ausschlussparameter anpassen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zur Zielgruppe eines Versands, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für die Zielgruppe eines Testversands beibehalten.
+* Mit beiden der folgenden Optionen können Sie Empfänger auf der Blockierungsliste und Adressen in der Quarantäne beibehalten. Eine Beschreibung dieser Optionen für die Hauptzielgruppe finden Sie unter [Ausschlussparameter anpassen](../../delivery/using/steps-defining-the-target-population.md#customizing-exclusion-settings). Im Gegensatz zur Zielgruppe eines Versands, bei dem diese Adressen standardmäßig ausgeschlossen sind, werden sie standardmäßig für die Zielgruppe eines Testversands beibehalten.
 * Wenn Sie die Option **[!UICONTROL Versandcode für den Testversand beibehalten]** auswählen, werden Haupt- und Testversand unter dem gleichen Code geführt, welcher im ersten Schritt des Versandassistenten vergeben wird.
 * Standardmäßig enthält der Betreff des Testversands &#39;Proof #‘, wobei # der Nummer des Testversands entspricht. Sie können dieses Präfix im Feld **[!UICONTROL Titelpräfix]** ändern.
 
