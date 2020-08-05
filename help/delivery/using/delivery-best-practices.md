@@ -13,15 +13,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f599bc5483779ae62dd4d5eb1936cbc2760639b5
+source-git-commit: 4548eda6f87566398ddf19131b777012cbf8917b
 workflow-type: tm+mt
-source-wordcount: '4395'
-ht-degree: 47%
+source-wordcount: '4408'
+ht-degree: 46%
 
 ---
 
 
 # Best Practices beim Versand {#delivery-best-practices}
+
+Erfahren Sie, welche Best Practices beim Design von Versänden und beim Senden mit Adobe Campaign gelten.
 
 ## Versand optimieren {#optimize-delivery}
 
@@ -102,7 +104,7 @@ Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisu
 
 **Tipp**:  Um Konfigurationsfehler in Campaign Standard zu vermeiden, sollten Sie eine native Vorlage mit Duplikat versehen und deren Eigenschaften ändern, anstatt eine neue Vorlage zu erstellen.
 
-**Konfigurieren von Adressen**
+### Konfigurieren von Adressen
 
 * Die Angabe der Absenderadresse ist für den E-Mail-Versand zwingend erforderlich.
 
@@ -126,7 +128,7 @@ Gehen Sie wie folgt vor, um Adressen in der Benutzeroberfläche der Kampagne zu 
 
 1. In den Textfeldern **[!UICONTROL Antwort-Adresse]** wird standardmäßig die Adresse des Absenders für Antworten verwendet. Adobe empfiehlt jedoch die Verwendung einer vorhandenen echten Adresse wie der Kundenbetreuung Ihrer Marke. In diesem Fall kann die Kundenunterstützung die Antwort dann bearbeiten, wenn ein Empfänger eine Antwort sendet.
 
-**Einrichten einer Kontrollgruppe**
+### Einrichten einer Kontrollgruppe
 
 Sobald der Versand durchgeführt wurde, können Sie das Verhalten der ausgeschlossenen Empfänger mit den Empfängern vergleichen, die den Versand erhalten haben. Anschließend können Sie die Effizienz Ihrer Kampagnen messen. Weitere Informationen zu Kontrollgruppen finden Sie [in diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
 
@@ -134,7 +136,7 @@ Um eine Kontrollgruppe einzurichten, klicken Sie auf den Link **[!UICONTROL An]*
 
 ![](assets/d_best_practices_control_group.png)
 
-**Typologien zur Anwendung von Filtern oder Kontrollregeln**
+### Typologien zur Anwendung von Filtern oder Kontrollregeln
 
 Eine Typologie enthält Regeln, die in der Analysephase vor dem Versand einer Nachricht angewendet werden.
 
@@ -342,7 +344,7 @@ Wenn Ihre Nachricht fertig ist, prüfen Sie, ob ihr Inhalt auf allen Geräten ri
 
 Prüfen Sie vor dem Nachrichtenversand außerdem, ob die Parameter und die Konfiguration dem Versand entsprechen.
 
-### Sendungen validieren {#validation-is-key}
+### Warum Validierung der Schlüssel ist {#validation-is-key}
 
 Bevor Sie einen Versand durchführen, müssen Sie sicherstellen, dass Ihre Empfänger tatsächlich die Nachricht erhalten, die Sie ihnen senden möchten. Zu diesem Zweck müssen Sie den Nachrichteninhalt und die Versandparameter validieren.
 
@@ -461,7 +463,7 @@ Um die Geschwindigkeit der Nachrichtenzustellung zu messen, können Sie den Vers
 
 * Planen Sie nicht die gleichzeitige Durchführung umfangreicher Sendungen. Beachten Sie, dass es 5 bis 10 Minuten dauern kann, bis die Last gleichmäßig über das System verteilt wurde.
 
-## Fehlerbehebung beim Versand {#delivery-troubleshooting}
+### Fehlerbehebung beim Versand {#delivery-troubleshooting}
 
 Bei Problemen mit Versänden können spezifische Aktionen durchgeführt werden:
 
