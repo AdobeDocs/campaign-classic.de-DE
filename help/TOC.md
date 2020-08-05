@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 14e275203e3436183d5a5c743375ba42f6153c6d
+source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
-source-wordcount: '2094'
-ht-degree: 99%
+source-wordcount: '2097'
+ht-degree: 98%
 
 ---
 
@@ -89,8 +89,9 @@ ht-degree: 99%
       + [CRM-Connectoren](platform/using/crm-connectors.md)
       + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Nachrichten senden {#sending-messages}
-   + Über Sendungen und Kanäle {#about-deliveries-and-channels}
+   + Get started with messages {#about-deliveries-and-channels}
       + [Kommunikationskanäle](delivery/using/communication-channels.md)
+      + [Best Practices beim Versand](delivery/using/delivery-best-practices.md)
       + [Auf Versandinformationen zugreifen](delivery/using/accessing-deliveries-information.md)
       + [Versandtypen](delivery/using/types-of-deliveries.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
