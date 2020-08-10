@@ -14,11 +14,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2129'
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ _13. August 2019_
 
 >[!NOTE]
 >
->19.1.4 Gold Standard Versionen sind auf dieser [Seite](../../rn/using/gold-standard.md)aufgeführt.
+>Gold Standard Version 19.1.4 ist auf dieser [Seite](../../rn/using/gold-standard.md) aufgeführt.
 
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
