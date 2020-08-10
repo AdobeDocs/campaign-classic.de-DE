@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1987'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,24 +29,25 @@ ht-degree: 90%
 
 _22. Juli 2020_
 
-* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war oder wenn eine alte Marketing-Instanz mit einer kürzlich verwendeten Mitte verwendet wurde. (NEO-26411)
-* Es wurde ein Fehler behoben, der dazu führte, dass nicht signierte Links von personalisierten Domänen blockiert wurden, obwohl sie zulässig sein sollten. (NEO-25210)
+* Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist oder eine alte Marketing-Instanz mit einem aktuellen Mid verwendet wird. (NEO-26411)
+* Fehlerkorrektur – Nicht signierte Links von personalisierten Domains werden nicht mehr blockiert, wenn sie zulässig sind. (NEO-25210)
 * Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
-* Es wurde ein Fehler behoben, der dazu führte, dass Mirrorseiten-URLs in E-Mail-Versänden falsch definiert wurden. (NEO-26084)
-* Es wurde ein Problem mit der URL-Kodierung im Anti-Phishing-Dienst behoben. (NEO-25283)
+* Fehlerkorrektur – Mirrorseiten-URLs in E-Mail-Sendungen werden jetzt korrekt definiert. (NEO-26084)
+* Fehlerkorrektur – Es wurde ein Problem mit der Kodierungsverwaltung von URLs im Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
+
 Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
-* Korrektur einer Regression, die berechnete Felder in einem Workflow beeinträchtigte. (NEO-25194)
-* Korrektur einer Regression, die verhinderte, dass die spontane Erstellung von Web-Tracking-URLs funktionierte. (NEO-20999)
-* Es wurde ein Problem mit vordefinierten Versandberichten behoben, die beim Exportieren in PDF abgeschnitten schienen. (NEO-25757)
-* Es wurde ein Absturzproblem im Bereitstellungsassistenten behoben.
-* Es wurde ein Fehler behoben, der dazu führte, dass der Arbeitsablauf für die Angebot-Benachrichtigung nach einer Nachaktualisierung nicht ordnungsgemäß funktionierte.
+* Fehlerkorrektur – Eine Regression, die sich auf berechnete Felder in einem Workflow auswirkte, wurde korrigiert. (NEO-25194)
+* Fehlerkorrektur – Eine Regression, die verhinderte, dass die spontane Erstellung von Web-Tracking-URLs funktioniert, wurde korrigiert. (NEO-20999)
+* Fehlerkorrektur – Es wurde ein Problem mit nativen Versandberichten behoben, die beim Exportieren in PDF abgeschnitten dargestellt wurden. (NEO-25757)
+* Es wurde ein Absturzproblem im Softwareverteilungs-Assistenten behoben.
+* Fehlerkorrektur – Der Angebotsbenachrichtigungs-Workflow funktioniert jetzt nach einem Postupgrade richtig.
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903)
-* Die Liste &quot;jarsToSkip&quot;in &quot;catalina.properties&quot;wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).
-* Es wurde ein Problem behoben, das die Vorbereitung von Versänden nach der Aktualisierung blockierte.
-* Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, nach der Aktualisierung erneut veröffentlicht.
-* Potenzielle XSS-Verwundbarkeit in Versand-Inhalten behoben. (NEO-17987, NEO-26073)
+* Die Liste &quot;jarsToSkip&quot; in &quot;catalina.properties&quot; wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).
+* Fehlerkorrektur – Es wurde ein Problem behoben, das die Sendungsvorbereitung nach einem Postupgrade blockierte.
+* Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
+* Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
@@ -96,8 +97,8 @@ _8. Juni 2020_
    <p>Das brasilianische Lei Geral de Proteção de Dados (LGPD) wird am 16. August für alle Firmen in Kraft treten, die in Brasilien personenbezogene Daten sammeln oder verarbeiten.</p>
    <p>Die Vorschriften gelten für Adobe Campaign-Kunden, die Daten über in diesen Ländern wohnhafte Datensubjekte besitzen. Zusätzlich zu den bereits in Campaign verfügbaren Datenschutzoptionen (Einverständnisverwaltung, Einstellungen für die Datenbeibehaltung und Benutzerrollen usw.) werden weitere Funktionen bereitgestellt, mit deren Hilfe PDPA- und LGPD-konformes Verhalten sichergestellt werden kann:</p>
    <ul> 
-     <li><p>Recht auf Zugriff und Recht auf Löschung: Hierfür werden die Funktionen genutzt, die für die DSGVO und PPDA hinzugefügt wurden – <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">mehr dazu</a></p></li> 
-     <li> <p>Beim Erstellen einer Datenschutzanfrage mithilfe der Campaign-Benutzeroberfläche oder API können Sie nun den <strong>Regulierungstyp</strong> wählen: PDPA, LGPD, DSGVO oder CCPA. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">mehr dazu</a></p></li>
+     <li><p>Recht auf Zugriff und Recht auf Löschung: Hierfür werden die Funktionen genutzt, die für die DSGVO und PPDA hinzugefügt wurden. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Mehr dazu</a></p></li> 
+     <li> <p>Beim Erstellen einer Datenschutzanfrage mithilfe der Campaign-Benutzeroberfläche oder API können Sie nun den <strong>Regulierungstyp</strong> wählen: PDPA, LGPD, DSGVO oder CCPA. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests">Mehr dazu</a></p></li>
     </ul>
    </td> 
   </tr> 
@@ -127,11 +128,11 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Verbesserungen**
 
-* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Publikation einer Transaktionsnachrichten-Vorlage jetzt rückgängig machen, womit sie aus den Ausführungsinstanzen gelöscht wird. [mehr dazu](../../message-center/using/template-unpublication.md).
+* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Publikation einer Transaktionsnachrichten-Vorlage jetzt rückgängig machen, womit sie aus den Ausführungsinstanzen gelöscht wird. [Mehr dazu](../../message-center/using/template-unpublication.md).
 
-* Es gibt neue Optionen zum Festlegen von Einschränkungen beim Senden von E-Mails, die Bilder oder Anhänge enthalten. Damit lassen sich Leistungsprobleme verhindern, was besonders bei Transaktionsnachrichten nützlich ist. [mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
+* Es gibt neue Optionen zum Festlegen von Einschränkungen beim Senden von E-Mails, die Bilder oder Anhänge enthalten. Damit lassen sich Leistungsprobleme verhindern, was besonders bei Transaktionsnachrichten nützlich ist. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Mit der neuen Option **Versandteile in der Datenbank vorbereiten** kann die Versandvorbereitung direkt in der Datenbank vorgenommen werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur bei bestimmten Konfigurationen zur Verfügung. [mehr dazu](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
+* Mit der neuen Option **Versandteile in der Datenbank vorbereiten** kann die Versandvorbereitung direkt in der Datenbank vorgenommen werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur bei bestimmten Konfigurationen zur Verfügung. [Mehr dazu](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * Die Leistung der [CRM Connector-Aktivität](../../workflow/using/crm-connector.md) für Microsoft Dynamics wurde verbessert. (NEO-13303, NEO-12710)
 
@@ -141,19 +142,19 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
    >
    >Die Optimierung setzt einen zusätzlichen Schritt nach dem Upgrade voraus. Lesen Sie diesbezüglich den Abschnitt **Technische Entwicklungen** weiter unten.
 
-* Der Bereinigungs-Workflow wurde verbessert. Verwaiste Arbeitstabellen aller gelöschten Workflows werden vom Bereinigungs-Workflow jetzt auch automatisch gelöscht. [mehr dazu](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
+* Der Bereinigungs-Workflow wurde verbessert. Verwaiste Arbeitstabellen aller gelöschten Workflows werden vom Bereinigungs-Workflow jetzt auch automatisch gelöscht. [Mehr dazu](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * Zertifikate für iOS-Mobile Apps mit dem iOS-HTTP2-Connector werden jetzt vor dem Senden von Push-Benachrichtigungen validiert, was verhindert, dass Sendungen aufgrund abgelaufener Zertifikate fehlschlagen.
 
-* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
 **Sonstige Änderungen**
 
 * Alte SMS-Connectoren werden jetzt nicht mehr unterstützt. Weiterführende Informationen finden Sie auf der [Seite zu eingestellten Funktionen](../../rn/using/deprecated-features.md).
 
-* Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [mehr dazu](../../delivery/using/inbox-rendering.md).
+* Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [Mehr dazu](../../delivery/using/inbox-rendering.md).
 
-* Zur leichteren Unterscheidung von Ansichten und Ordnern wurde die Farbe der Ansichtnamen von dunkelblau in dunkeltürkis geändert. [mehr dazu](../../platform/using/access-management.md#about-views)
+* Zur leichteren Unterscheidung von Ansichten und Ordnern wurde die Farbe der Ansichtnamen von dunkelblau in dunkeltürkis geändert. [Mehr dazu](../../platform/using/access-management.md#about-views)
 
 * Campaign Classic kann nun mit Microsoft Dynamics CRM-Konten verbunden werden, die in Großbritannien, Indien und Kanada gehostet werden. Dies gilt für die Bereitstellungstypen &quot;Office 365&quot; und &quot;On-Premise&quot; (Dynamics 2015).
 
@@ -208,7 +209,7 @@ for i in `ipcs -s | awk '/neolane/ {print $2}
 
 Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additional-parameters.md#redirection-server-configuration) verfügbar.
 
-**Patches**
+**Korrekturen**
 
 * Fehlerkorrektur – Es wurde ein geringfügiger Regressionsfehler in den Bereinigungs-Workflow-Logs behoben.
 * Fehlerkorrektur – In der Workflow-Aktivität **Laden (SOAP)** tritt beim Analysieren von WSDL-Dateien jetzt kein Fehler mehr auf.
