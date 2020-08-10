@@ -1,7 +1,7 @@
 ---
-title: ' Gold Standard Version '
-seo-title: ' Gold Standard Version '
-description: ' Gold Standard Version '
+title: Gold Standard Version
+seo-title: Gold Standard Version
+description: Gold Standard Version
 seo-description: null
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
@@ -18,30 +18,30 @@ translation-type: tm+mt
 source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
 workflow-type: tm+mt
 source-wordcount: '826'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
-#  Gold Standard Version {#gold-standard}
+# Gold Standard Version{#gold-standard}
 
-Als Gold Standard-Benutzer profitieren Sie automatisch von der Gold Standard-Aktualisierung mit der neuesten stabilen Version ohne Aktion.
+Als Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit der neuesten stabilen Version, ohne dass Maßnahmen ergriffen werden müssen.
 
-Auch Kunden mit Präsenzen und Hybrid können von den Gold Standard Versionen profitieren.
+On-Premise- und Hybrid-Kunden können ebenfalls von den Gold Standard-Versionen profitieren.
 
-Dies ist unsere Long-Term Support-Version. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zuerst auf diese Version zu aktualisieren.
+Dies ist unsere langfristig unterstützte Version. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen.
 
-Diese Seite Liste Gold Standard-Versionen.
+Auf dieser Seite werden die Gold Standard-Versionen aufgeführt.
 
 Weitere Informationen zum Gold Standard-Upgrade finden Sie in diesem [Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/limited.png) Gold Standard Version 10{#gs-10}
+## ![](assets/do-not-localize/limited.png) Gold Standard Version 10{#gs-10}
 
 _7. Juli 2020_
 
-Der Build 9032@efd8a94 beinhaltet die folgende Fehlerbehebung:
+Build 9032@efd8a94 umfasst die folgende Fehlerkorrektur:
 
-Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war oder wenn eine alte Marketing-Instanz mit einer kürzlich verwendeten Mitte verwendet wurde. (NEO-26411)
+Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist oder eine alte Marketing-Instanz mit einem aktuellen Mid verwendet wird. (NEO-26411)
 
 >[!CAUTION]
 >
@@ -51,7 +51,7 @@ Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktio
 
 _22. Juni 2020_
 
-Der Build 9032@800be2e beinhaltet die folgenden Fehlerbehebungen:
+Build 9032@800be2e umfasst die folgenden Fehlerkorrekturen:
 
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903, NEO-25799)
 
@@ -63,11 +63,12 @@ Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von
 * Fehlerkorrektur – Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
 
+
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 8{#gs-8}
 
 _29. April 2020_
 
-Der Build 9032@3a9dc9c beinhaltet die folgenden Fehlerbehebungen:
+Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 
 * Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism).
 
@@ -92,7 +93,7 @@ Der Build 9032@3a9dc9c beinhaltet die folgenden Fehlerbehebungen:
 
 _9. März 2020_
 
-Der Build 9032@19f73c5 beinhaltet die folgende Fehlerbehebung:
+Build 9032@19f73c5 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
 
@@ -100,7 +101,7 @@ Der Build 9032@19f73c5 beinhaltet die folgende Fehlerbehebung:
 
 _17. Dezember 2019_
 
-Der Build 9032@d6b8062 beinhaltet die folgende Fehlerbehebung:
+Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter). (NEO-19595)
 
@@ -108,7 +109,7 @@ Der Build 9032@d6b8062 beinhaltet die folgende Fehlerbehebung:
 
 _11. Dezember 2019_
 
-Der Build 9032@bc4a935 beinhaltet die folgende Fehlerbehebung:
+Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
 
@@ -116,7 +117,7 @@ Der Build 9032@bc4a935 beinhaltet die folgende Fehlerbehebung:
 
 _20. November 2019_
 
-Der Build 9032@3468c7b beinhaltet die folgenden Fehlerbehebungen:
+Build 9032@3468c7b umfasst die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – Die Anmeldung per IMS-Authentifizierung funktioniert nun. (NEO-17312)
 * Fehlerkorrektur – Kumulative Berichte zu mehreren Sendungen werden nun richtig angezeigt. (NEO-18165)
@@ -126,7 +127,7 @@ Der Build 9032@3468c7b beinhaltet die folgenden Fehlerbehebungen:
 
 _19. September 2019_
 
-Der Build 9032@cee805c beinhaltet die folgenden Fehlerbehebungen:
+Build 9032@cee805c umfasst die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – Die Verwendung von CRM-Connector für Salesforce funktioniert nun problemlos. (NEO-17712)
 * Fehlerkorrektur – Ein Indexfehler verursacht beim Senden von Transaktionsnachrichten keine Leistungsprobleme mehr.
@@ -135,7 +136,7 @@ Der Build 9032@cee805c beinhaltet die folgenden Fehlerbehebungen:
 
 _13. August 2019_
 
-Der ursprüngliche Build 19.1.4 beinhaltet die folgenden Fehlerbehebungen:
+Der erste Build 19.1.4 enthält die folgenden Fehlerkorrekturen:
 
 * Fehlerkorrektur – In der Planungsaktivität werden jetzt bei der Konfiguration des Assistenten keine unbeabsichtigten Fehlernachrichten mehr erzeugt. Update NEO-11662 wurde rückgängig gemacht. (NEO-17097)
 * Regressionskorrektur – Jetzt tritt kein durch NEO-12727 verursachter Fehler mehr auf, bei dem Workflows angehalten wurden, wenn eine Testaktivität zweimal ausgeführt wird. (NEO-16835)
