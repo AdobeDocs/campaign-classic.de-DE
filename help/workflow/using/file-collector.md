@@ -14,9 +14,9 @@ discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
 index: y
 internal: n
 snippet: y
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    * **[!UICONTROL Filter]**
 
-      Nur die Dateien, die den angegebenen Filterkriterien entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn kein Filter definiert wurde, werden alle im Verzeichnis enthaltenen Dateien abgerufen. Filterbeispiele: ***.zip**, **import-*.txt**.
+      Nur die Dateien, die den angegebenen Filterkriterien entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn kein Filter definiert wurde, werden alle im Verzeichnis enthaltenen Dateien abgerufen. Filterbeispiele: **&amp;#42;.zip**, **import-&amp;#42;.txt**.
 
    * **[!UICONTROL Beenden, sobald eine Datei bearbeitet wurde]**
 
