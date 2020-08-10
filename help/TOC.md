@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
 workflow-type: tm+mt
 source-wordcount: '2097'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 + Versionshinweise {#release-notes}
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
    + [Neueste Version](rn/using/latest-release.md)
-   + [ Gold Standard Version ](rn/using/gold-standard.md)
+   + [Gold Standard Version](rn/using/gold-standard.md)
    + Frühere Versionen {#previous-releases}
       + [Version 20.1](rn/using/release--20-1.md)
       + [Version 19.2](rn/using/release--19-2.md)
@@ -28,7 +28,7 @@ ht-degree: 98%
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
       + [Version 18.4](rn/using/release--18-4.md)
-   + Veraltete Funktionen und Kompatibilität {#deprecated-compatibility}
+   + Eingestellte Funktionen und Kompatibilität {#deprecated-compatibility}
       + [Eingestellte Funktionen](rn/using/deprecated-features.md)
       + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
 + Erste Schritte {#getting-started}
@@ -65,7 +65,7 @@ ht-degree: 98%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen   {#creating-queries}
+   + Abfragen erstellen    {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -76,7 +76,7 @@ ht-degree: 98%
       + [Externe Konten](platform/using/external-accounts.md)
    + Zugriff auf externe Datenbanken (FDA){#accessing-external-database}
       + [Über FDA](platform/using/about-fda.md)
-      + [FDA Connectors konfigurieren](platform/using/specific-configuration-database.md)
+      + [Konfigurieren von FDA-Connectoren](platform/using/specific-configuration-database.md)
       + [Veraltete Connectoren](platform/using/legacy-connectors.md)
       + [Zugriffsberechtigungen auf Remote-Datenbank](platform/using/remote-database-access-rights.md)
       + [Herstellung der Datenbankverbindung](platform/using/connecting-to-database.md)
@@ -417,7 +417,7 @@ ht-degree: 98%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring   {#monitoring}
+      + Monitoring    {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -426,7 +426,7 @@ ht-degree: 98%
          + [Erstellung einer zusammenfassenden Liste.](workflow/using/creating-a-summary-list.md)
          + [Daten anreichern](workflow/using/enriching-data.md)
          + [Verwendung von Aggregaten](workflow/using/using-aggregates.md)
-         + [Aktualisierung der vierteljährlichen Liste unter Verwendung einer inkrementellen Abfrage](workflow/using/quarterly-list-update.md)
+         + [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](workflow/using/quarterly-list-update.md)
       + Abfragen erstellen {#designing-queries}
          + [Abfrage zur Empfängertabelle](workflow/using/querying-recipient-table.md)
          + [Abfrage zu Versandinformationen](workflow/using/querying-delivery-information.md)
