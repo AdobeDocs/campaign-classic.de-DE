@@ -16,56 +16,56 @@ translation-type: tm+mt
 source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
 workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 20%
+ht-degree: 97%
 
 ---
 
 
-# Get started with upgrades{#rn-overview}
+# Erste Schritte mit Upgrades{#rn-overview}
 
 Adobe Campaign wird regelmäßig aktualisiert. Im Durchschnitt werden jedes Jahr zwei oder drei Nebenversionen mit neuen Funktionen, Verbesserungen und Fehlerbehebungen veröffentlicht. Darüber hinaus veröffentlichen wir regelmäßig Builds nur mit kumulativen Fehlerbehebungen.
 
-Diese regelmäßige Anzahl von Updates zielt darauf ab, das Beste und Beste in Ihren Händen zu halten, Ihre Umgebung zu sichern und Ihre Produkterfahrung zu verbessern.
+Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihre Produkterfahrung zu verbessern.
 
-Deshalb halten wir es für wichtig, dass Sie die neueste Version von Adobe Campaign verwenden. Sie stellt außerdem sicher, dass Sie eine bessere Supporterfahrung erhalten, da die Erkennung, Reproduktion und Behebung eines Problems bei einem kürzlich erstellten Build in der Regel viel schneller erfolgt. Außerdem wurden viele Probleme, auf die Sie möglicherweise stoßen, bereits in den letzten Builds behoben.
+Deshalb erachten wir es für wichtig, dass Sie die neueste Version von Adobe Campaign verwenden. Dadurch wird auch Ihre Supporterfahrung verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
 
 ## Versionsstatus{#rn-statuses}
 
 Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet. Nachfolgend finden Sie die Liste der Status und wie sie zu interpretieren sind.
 
-![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** - Neueste stabile Version verfügbar. Build in Produktion validiert.
+![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit**: Neuester verfügbarer stabiler Build. Build in Produktion validiert.
 
-Der **letzte stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn/using/gold-standard.md).
+Der **aktuelle stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn/using/gold-standard.md).
 
 ![](assets/do-not-localize/limited.png) **Eingeschränkte Verfügbarkeit** - Erstellen Sie derzeit eine Produktionsprüfung. Nur On-Demand-Bereitstellung.
 
-![](assets/do-not-localize/blue3.png) **Release Candidate** - Build-Validierung durch Adobe. Produktionstestversand ist ausstehend.
+![](assets/do-not-localize/blue3.png) **Veröffentlichungskandidat**: Build von Adobe validiert. Produktionstestversand ist ausstehend.
 
-![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar** - Neuere Version mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.
+![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar**: Neuerer Build mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.
 
-![](assets/do-not-localize/red3.png) **Veraltet** - Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.
+![](assets/do-not-localize/red3.png) **Veraltet**: Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.
 
-## Aktualisierungsprozess{#process-upgrade}
+## Upgrade-Prozess{#process-upgrade}
 
-Als gehosteter Kunde (Managed Service oder Hybrid) müssen Sie sich an das Kundenservice-Team wenden, um Ihre Umgebung aktualisieren zu lassen.
+Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als Gold Standard-Benutzer profitieren Sie automatisch von der Gold Standard-Aktualisierung mit der neuesten stabilen Version ohne Aktion. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
+Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
 
-Als Benutzer vor Ort können Sie die Aktualisierung durchführen. Dazu müssen Sie den neuesten Stable-Build [herunterladen und alle Umgebung aktualisieren](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) . Erfahren Sie mehr über den [Aktualisierungsprozess](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html)und lesen Sie die häufig gestellten Fragen zum [Erstellen der Aktualisierung](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html).
+Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html).
 
-## Empfehlungen    {#recommendations}
+## Empfehlungen{#recommendations}
 
-Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Build auf allen Servern installieren, die auf derselben Client-Konfiguration ausgeführt werden.
+Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Build auf allen Servern installieren, die mit derselben Client-Konfiguration ausgeführt werden.
 
-Um Ihre Implementierung auf dem neuesten Stand zu halten, sollten Sie bei jeder neuen Version die Seiten mit der [überholten und entfernten Funktionen](../../rn/using/deprecated-features.md) und der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) lesen.
+Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder neuen Version die Seiten [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md) und [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
-Um über neue Experience Cloud-Lösungsversionen informiert zu werden, abonnieren Sie das [Adobe Priority Product Update](https://www.adobe.com/de/subscription/priority-product-update.html).
+Abonnieren Sie das [Prioritätsprodukt-Update von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html), um über neue Versionen der Experience Cloud-Lösungen informiert zu werden.
 
-Erfahren Sie mehr über die anderen [Empfehlungen](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html#Recommendations).
+Erfahren Sie mehr über die anderen [Empfehlungen](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html#Recommendations).
 
-## Unterstützung und andere nützliche Links{#support}
+## Support und andere nützliche Links{#support}
 
-* [Hilfe und Support](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support)
+* [Hilfe und Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
 * [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html)
 * [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md)
 * [Frühere Versionen](../../rn/using/release--20-1.md)
