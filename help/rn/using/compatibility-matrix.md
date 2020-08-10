@@ -12,18 +12,18 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5e8598fd445f6e2ebd891af1e15c07eb836cd647
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
 
 # Kompatibilitätsmatrix{#compatibility-matrix}
 
-This document lists all systems and components supported for the latest build of **Adobe Campaign Classic (v6.11 and v7)**. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
+In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für die neueste Version von **Adobe Campaign Classic (v6.11 und v7)** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 
 ## Wichtige Hinweise{#important-notes}
 
@@ -31,9 +31,9 @@ Diese Matrix wird regelmäßig aktualisiert, wenn neue unterstützte Elemente hi
 
 Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
-Adobe Campaign Classic ist mit allen auf dieser Seite aufgeführten Systemen und Tools kompatibel. Da bestimmte Versionen dieser Drittanbietersysteme und -werkzeuge mit ihren jeweiligen Erstellern das Ende der Lebensdauer erreichen, ist Adobe Campaign nicht mehr mit diesen Versionen kompatibel und wird in der darauffolgenden Produktversion aus unserer Kompatibilitätsmatrix entfernt. Verwenden Sie, um Probleme zu vermeiden, ausschließlich unterstützte Versionen von Systemen, die in der Kompatibilitätsmatrix aufgeführt sind.
+Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dieser Seite aufgelistet sind. Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools bei ihren Erstanbietern das Ende des Lebenszyklus (End of Life, EOL) erreichen, ist Adobe Campaign nicht mehr mit ihnen kompatibel. Diese Versionen werden daher mit der nächsten Produktversion aus unserer Kompatibilitätsmatrix entfernt. Verwenden Sie, um Probleme zu vermeiden, ausschließlich unterstützte Versionen von Systemen, die in der Kompatibilitätsmatrix aufgeführt sind.
 
-Weitere Informationen zu veralteten Artikeln finden Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
+Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
 
 ## Betriebssysteme{#OperatingSystems}
 
@@ -57,21 +57,21 @@ Weitere Informationen zu veralteten Artikeln finden Sie auf [dieser Seite](../..
 <td>RHEL</td>
 <td>
 <p>7.x (64 Bit)</p>
-<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie bereit sein, SELinux zu deaktivieren oder Ihre Architekten benutzerdefinierte SELinux-Regeln schreiben zu lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Kampagnen-Operationen verursacht.</p>
+<p><strong>Wichtig:</strong> Wenn Sie RHEL verwenden, müssen Sie SELinux deaktivieren oder Ihre Programmierer benutzerdefinierte SELinux-Regeln schreiben lassen, um zu überprüfen, ob ein aktiviertes SELinux keine Probleme mit Campaign-Vorgängen verursacht.</p>
 </td>
 </tr>
 <tr>
 <td>Windows Server</td>
 <td>
 <p>2012</p>
-<p>R2 2012</p>
+<p>2012 R2</p>
 <p>2016</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-## Web Servers{#WebServers}
+## Webserver{#WebServers}
 
 <table>
 <tbody>
@@ -79,8 +79,8 @@ Weitere Informationen zu veralteten Artikeln finden Sie auf [dieser Seite](../..
 <td>Microsoft IIS</td>
 <td>
 <p>8.0 auf Windows-Server 2012 – Windows 8</p>
-<p>8.5 unter Windows Server 2012 R2</p>
-<p>10.0 unter Windows Server 2016</p>
+<p>8.5 auf Windows-Server 2012 R2</p>
+<p>10.0 auf Windows-Server 2016</p>
 </td>
 </tr>
 <tr>
@@ -101,13 +101,13 @@ Weitere Informationen zu veralteten Artikeln finden Sie auf [dieser Seite](../..
 <td>
 <p>8</p>
 <p>9</p>
-<p>Die Anwendung wurde für das Java Development Kit (JDK) von Oracle sowie für OpenJDK genehmigt.</p>
+<p>Die Anwendung wurde für das Java Development Kit (JDK), das von Oracle entwickelt wurde, sowie für OpenJDK genehmigt.</p>
 </td>
 </tr>
 <tr>
 <td>Libre Office</td>
 <td>
-<p>6 (und frühere Versionen, falls in Ihr System eingebettet)</p>
+<p>6 (und frühere Versionen, sofern in Ihrem System eingebettet)</p>
 </td>
 </tr>
 <tr>
@@ -136,7 +136,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 
 >[!NOTE]
 >
->Der RDBMS-Treiber muss mit der RDBMS-Serverversion übereinstimmen.
+>RDBMS-Treiber muss der RDBMS-Serverversion entsprechen.
 
 ## RDBMS-Server{#RDBMSservers}
 
@@ -159,7 +159,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 <p>9.6.x</p>
 <p>10.x</p>
 <p>11.x</p>
-<p>Hinweis: Sie können auch Amazon RDS für PostgreSQL mit den oben angegebenen Versionen verwenden.</p>
+<p>Hinweis: Sie können für PostgreSQL auch Amazon RDS mit den oben angegebenen Versionen verwenden.</p>
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 <p>2014</p>
 <p>2016</p>
 <p>2017</p>
-<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Kampagne-Server unter Linux ausgeführt wird. Refer to the <a href="https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html#Microsoft_SQL_Server">Installation guide</a>.</p>
+<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. Weitere Informationen finden Sie im <a href="https://docs.campaign.adobe.com/doc/AC/en/INS_Prerequisites_and_recommendations__Database.html#Microsoft_SQL_Server">Installationshandbuch</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -184,7 +184,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 <table>
 <tbody>
 <tr>
-<td>Salesforce Connector API</td>
+<td>Salesforce Connector-API</td>
 <td>
 <p>API-Version 37</p>
 </td>
@@ -196,17 +196,17 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 <p>API-Version 21</p>
 </td>
 </tr>
-<tr><td>Oracle On Demand API</td>
+<tr><td>Oracle On Demand-API</td>
 <td>
-<p>Web Services v1.0 API</p>
+<p>Web-Services-API v1.0</p>
 </td>
 </tr>
 <tr>
 <td>MS Dynamics</td>
 <td>
-<p>SOAP-API - On-Premise: 2007, 2015, 2016</p>
-<p>SOAP-API - Online: 2015, 2016</p>
-<p>Web-API - On-Premise und Online: Aktualisierung 365, 2016, 2016 1</p>
+<p>Soap-API – On-Premise: 2007, 2015, 2016</p>
+<p>Soap-API – Online: 2015, 2016</p>
+<p>Web-API – On-Premise und Online: 365, 2016, 2016 Update 1</p>
 </td>
 </tr>
 </tbody>
@@ -298,7 +298,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 </tbody>
 </table>
 
-## Client Console-Betriebssysteme{#ClientConsoleoperatingsystems}
+## Betriebssysteme der Clientkonsole{#ClientConsoleoperatingsystems}
 
 <table>
 <tbody>
@@ -329,7 +329,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 <p>7.x</p>
 <p>8.x</p>
 <p>9.0</p>
-<p>mit Mobile SDK Build 1.0.27.</p>
+<p>mit Mobile SDK Build 1.0.27.</p>
 </td>
 </tr>
 <tr>
@@ -340,7 +340,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 <p>iOS 11</p>
 <p>iOS 12</p>
 <p>iOS 13</p>
-<p>mit SDK Build 1.0.26 für Mobilgeräte, kompatibel mit 32- und 64-Bit-Versionen.</p>
+<p>mit Mobile SDK (Build 1.0.26), kompatibel mit 32- und 64-Bit-Versionen.</p>
 </td>
 </tr>
 </tbody>
@@ -348,9 +348,9 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 
 ## Browser{#Browsers}
 
-Version 11 von Internet Explorer wird unterstützt.
+Version 11 von Internet Explorer wird unterstützt.
 
-Für die folgenden Browser wird die neueste Version unterstützt:
+Bei den folgenden Browsern wird die neueste Version unterstützt:
 
 * Microsoft Edge
 
@@ -362,7 +362,7 @@ Für die folgenden Browser wird die neueste Version unterstützt:
 
 ## Experience Cloud-Integrationen{#ExperienceCloudintegrations}
 
-For integrations with Adobe solutions, refer to this [section](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
+Informationen zur Integration mit Adobe-Lösungen finden Sie in diesem [Abschnitt](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/integrating-with-adobe-experience-cloud/about-campaign-integrations.html#experience-cloud-integrations).
 
 ## Mehr dazu{#Morelikethis}
 
