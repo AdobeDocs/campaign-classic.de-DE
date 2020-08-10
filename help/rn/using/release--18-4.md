@@ -78,7 +78,7 @@ _22. Juni 2018_
 * Fehlerkorrektur – die Tracking-Kodierung bei Microsoft Edge und Internet Explorer funktioniert nun fehlerfrei. (NEO-11257)
 * Fehlerkorrektur – Bildlinks beim LINE-Versand können nun personalisiert werden. (NEO-11077)
 * Fehlerkorrektur – der Mechanismus für die Generierung von ID-Sequenzen wird nun ordnungsgemäß ausgeführt. (NEO-11115)
-* Fehlerkorrektur – Datenschutzanfragen (DSGVO) funktionieren nun, wenn ein benutzerdefinierter Namensraum mit einem Integer-Abstimmschlüssel verwendet wird. (NEO-11123)
+* Fehlerkorrektur – Datenschutzanfragen (DSGVO) funktionieren nun, wenn ein benutzerdefinierter Namespace mit einem Integer-Abstimmschlüssel verwendet wird. (NEO-11123)
 * Fehlerkorrektur – die Verwendung der Option **[!UICONTROL Werteverteilung]** in **[!UICONTROL Abfrage]**-Workflow-Aktivitäten funktioniert nun fehlerfrei. (NEO-10958)
 * Fehlerkorrektur – die Synchronisierung von Platzierungen zwischen der Marketinginstanz und der Interaktionsinstanz funktioniert nun fehlerfrei. (NEO-11162)
 * Die Verwaltung langer Indexnamen während des Postupgrades wurde verbessert.
