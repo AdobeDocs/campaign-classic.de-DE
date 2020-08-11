@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: d9b6ae9f7e2f3b15698f1a420b5416162cbcc758
-workflow-type: ht
-source-wordcount: '1987'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
+workflow-type: tm+mt
+source-wordcount: '1976'
+ht-degree: 99%
 
 ---
 
@@ -25,11 +25,11 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.1 – Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Version 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
 
 _22. Juli 2020_
 
-* Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist oder eine alte Marketing-Instanz mit einem aktuellen Mid verwendet wird. (NEO-26411)
+* Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war. (NEO-26411)
 * Fehlerkorrektur – Nicht signierte Links von personalisierten Domains werden nicht mehr blockiert, wenn sie zulässig sind. (NEO-25210)
 * Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
 * Fehlerkorrektur – Mirrorseiten-URLs in E-Mail-Sendungen werden jetzt korrekt definiert. (NEO-26084)
