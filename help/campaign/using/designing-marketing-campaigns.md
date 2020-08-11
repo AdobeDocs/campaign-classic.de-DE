@@ -14,8 +14,11 @@ discoiquuid: a9eb6627-2e51-42d0-9b29-5b798bdf5b33
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 93%
 
 ---
 
@@ -29,7 +32,7 @@ Zusätzlich ergänzt das Modul **Marketing Resource Management (MRM)** diese Anw
 >[!NOTE]
 >
 >Weitere Informationen zu den Adobe-Campaign-Core-Funktionalitäten finden Sie im Abschnitt [Erste Schritte](../../platform/using/about-adobe-campaign-classic.md).\
->Die Bestimmung von Zielgruppen sowie die Personalisierung und der Versand über verschiedene Kanäle werden in [diesem Abschnitt](../../delivery/using/communication-channels.md) beschrieben.
+>Die Bestimmung von Zielgruppen sowie die Personalisierung und der Versand über verschiedene Kanäle werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) beschrieben.
 
 ## Grundbegriffe {#core-concepts}
 
@@ -66,3 +69,11 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
    Ein Versandentwurf ist eine strukturierte Beschreibung eines Versands. Jeder Versand kann einen Entwurf referenzieren, der zum Beispiel passende Angebote, anzuhängende Dokumente oder Links zu Verkaufsstellen enthält. Entsprechend dem ausgewählten Versandentwurf werden die jeweiligen enthaltenen Angebote im Versand verzeichnet.
 
    Weitere Informationen hierzu finden Sie unter [Ressourcen in einem Versandentwurf verknüpfen](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+
+## How to create an email in a campaign
+
+In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign Classic erläutert.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
+For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
