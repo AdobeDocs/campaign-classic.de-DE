@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
 workflow-type: tm+mt
-source-wordcount: '6958'
-ht-degree: 100%
+source-wordcount: '7084'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,37 @@ ht-degree: 100%
 
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
+
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
+
+## August 2020 {#aug-2020}
+
+In einem speziellen Abschnitt erfahren Sie, welche Best Practices im Zusammenhang mit dem Design von Versänden und dem Senden mit Kampagne gelten. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
+
+The Deliverability best practices landing page has been improved to facilitate access to sub-sections. [Mehr dazu](../../delivery/using/deliverability-key-points.md)
+
+Anleitungen zu Videos stehen jetzt in den folgenden Themen zur Verfügung:
+
+* [Einrichten des Ermüdungsmanagements mithilfe von Typologieregeln und Vordefinierte Filtern](../../campaign/using/about-campaign-typologies.md)
+
+* [Erstellen einer E-Mail in einer Kampagne](../../campaign/using/designing-marketing-campaigns.md)
+
+* [So erstellen Sie einen mehrsprachigen Newsletter mit bedingten Inhalten](../../delivery/using/conditional-content.md)
+
+* [Konfigurieren und Bereitstellen einer Versandvorlage](../../delivery/using/creating-a-delivery-template.md)
+
+* [So aktivieren und verwenden Sie AMP für E-Mails](../../delivery/using/defining-interactive-content.md)
+
+* [So personalisieren Sie E-Mails mit dynamischen Inhaltsblöcken](../../delivery/using/personalization-blocks.md)
+
+* [So personalisieren Sie E-Mails mit Personalisierungsfeldern](../../delivery/using/personalization-fields.md)
+
+* [Verwalten von Saatgut und Testversänden in einer E-Mail](../../delivery/using/steps-defining-the-target-population.md)
+
+* [So richten Sie einen wiederkehrenden Versand ein](../../workflow/using/recurring-delivery.md)
+
+* [Einrichten eines kontinuierlichen Versands](../../workflow/using/continuous-delivery.md)
+
 
 ## Juli 2020 {#july-2020}
 
