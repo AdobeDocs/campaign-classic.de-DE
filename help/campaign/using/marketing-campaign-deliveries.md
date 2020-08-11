@@ -14,11 +14,11 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e31a0faf6c48e2d34ce47fc1cd5a23aae05aeebf
-workflow-type: ht
-source-wordcount: '3084'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '3087'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen a
 
 >[!NOTE]
 >
->Weitere Informationen zur Erstellung und Konfiguration von Sendungen finden Sie unter [Nachrichten senden](../../delivery/using/communication-channels.md).
+>Weitere Informationen zur Erstellung und Konfiguration von Sendungen finden Sie unter [Nachrichten senden](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Zielgruppe bestimmen {#selecting-the-target-population}
 
@@ -219,7 +219,7 @@ Sie können eine Kontrollgruppe auf Kampagnenebene erstellen: In letzterem Fall 
 
    ![](assets/s_ncs_user_edit_op_general_tab_exe_target.png)
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer zusätzlichen Population](#adding-a-population) beschrieben.
+The configuration procedure is presented in [Extracting the control group from the main target](#extracting-the-control-group-from-the-main-target) and [Adding a control group](#adding-a-population).
 
 #### Aktivieren der Kontrollgruppe für einen Versand {#activating-the-control-group-for-a-delivery}
 
@@ -236,9 +236,9 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
    ![](assets/s_ncs_user_edit_op_target_del.png)
 
 1. Klicken Sie auf den Tab **[!UICONTROL Kontrollgruppe]** und wählen Sie dann **[!UICONTROL Kontrollgruppe aktivieren und konfigurieren]**.
-1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren.
+1. Klicken Sie auf **[!UICONTROL Bearbeiten...]**, um die Kontrollgruppe zu konfigurieren..
 
-Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer zusätzlichen Population](#adding-a-population) beschrieben.
+The configuration procedure is presented in [Extracting the control group from the main target](#extracting-the-control-group-from-the-main-target) and [Adding a control group](#adding-a-population).
 
 #### Extraktion der Kontrollgruppe aus der Hauptzielgruppe {#extracting-the-control-group-from-the-main-target}
 
@@ -257,7 +257,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge 
 
 Diese Konfiguration entspricht der einer Aufspaltungsaktivität im Workflow, die die Unterteilung einer Zielgruppe in mehrere Teilmengen ermöglicht. Die Kontrollgruppe entspricht einer dieser Teilmengen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
 
-### Hinzufügen einer zusätzlichen Population {#adding-a-population}
+### Adding a control group {#adding-a-population}
 
 Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. Diese Population kann aus einer Gruppe von Empfängern oder aus einer spezifischen Abfrage hervorgehen.
 
