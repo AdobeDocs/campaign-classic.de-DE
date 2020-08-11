@@ -14,11 +14,11 @@ discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e97183256ef6d3f2068dd0fbc8eb3c3f32e0bae0
-workflow-type: ht
-source-wordcount: '381'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 79%
 
 ---
 
@@ -69,6 +69,22 @@ Gehen Sie wie folgt vor, um eine Typologie zu erstellen und auf Ihre Sendungen a
 
 Bei der Versandvorbereitung werden diejenigen Empfänger ausgeschlossen, die das jeweilige Kriterium erfüllen. Über die Logs können Sie überprüfen, welche Empfänger vom Versand ausgeschlossen wurden. Anwendungsbeispiele für Typologieregeln vom Typ &quot;Druck&quot; finden Sie auf [dieser Seite](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
+## Einrichten des Ermüdungsmanagements mithilfe von Typologieregeln
+
+In diesem Video wird erläutert, wie Sie das Ermüdungsmanagement in Adobe Campaign Classic mithilfe von Typologieregeln implementieren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+
+## Einrichten des Ermüdungsmanagements mithilfe von Vordefinierte Filtern
+
+Das Ermüdungsmanagement steuert die Häufigkeit und Quantität von Nachrichten, um eine Überforderung von Empfängern zu vermeiden. Wenn Sie nicht über das Kampagne-Optimierungsmodul in Ihrer Kampagne verfügen, können Sie einen vordefinierten Filter konfigurieren, der die Population der Zielgruppe nach der Anzahl der empfangenen Nachrichten filtert. In diesem Video wird erläutert, wie Sie das Ermüdungsmanagement in Adobe Campaign Classic mithilfe von Filtern implementieren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
 **Verwandtes Thema**
 
 * [Anwendung automatischer Geschäftsregeln auf Sendungen über beliebige Kanäle](https://helpx.adobe.com/de/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
+
+* [Über Kampagnentypologien](../../campaign/using/pressure-rules.md)
+
+* [Verwalten der Marketingermüdung anhand von Druckregeln](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
