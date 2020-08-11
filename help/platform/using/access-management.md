@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fef684cd20f9b210025b21d2bc6bdb209a929f7c
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '3151'
+source-wordcount: '3145'
 ht-degree: 95%
 
 ---
@@ -44,7 +44,7 @@ Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können
 
 >[!NOTE]
 >
->Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html) zu lesen.
+>Adobe empfiehlt, vor der Definition von Berechtigungen die [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html) zu lesen.
 
 ## Benutzer {#operators}
 
@@ -211,7 +211,7 @@ Der technische Benutzer &#39;webapp&#39; verfügt standardmäßig über die spez
 
 >[!NOTE]
 >
->Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/security.html).
+>Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
 
 ## Benutzergruppen {#operator-groups}
 
@@ -243,9 +243,9 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Administrator]**
 
-   Die Operatoren in dieser Gruppe haben vollen Zugriff auf die Instanz. Administratoren sind Benutzer, die auf die technischsten Teile der Benutzeroberfläche zugreifen können. Sie haben die **[!UICONTROL Administratorrolle]** und stellen sicher, dass alle Plattformen eingerichtet sind.
+   Die Operatoren in dieser Gruppe haben vollen Zugriff auf die Instanz. Administrators are users who can access the most technical parts of the interface. Sie haben die **[!UICONTROL Administratorrolle]** und stellen sicher, dass alle Plattformen eingerichtet sind.
 
-   Diese Gruppe enthält den folgenden Namen right:
+   This group contains the following named right:
 
    * **[!UICONTROL ANWENDUNG]**: können Sie Objekte wie Workflow, Versand, Skripten usw. ausführen, erstellen, bearbeiten oder löschen.
 
