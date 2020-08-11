@@ -15,7 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a11a73b0679c0a65dc10f71869bf2a6c6efc008
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 87%
 
 ---
 
@@ -29,6 +32,6 @@ Wenn Sie von Adobe Campaign v6 auf v7 aktualisieren, empfehlen wir Folgendes.
 
 Weitere Informationen zu Migrationsverfahren und bewährten Verfahren finden Sie unter:
 
-* [Durchführen eines Build-Upgrades](https://docs.campaign.adobe.com/doc/AC/getting_started/EN/buildUpgrade.html)
+* [Durchführen eines Build-Upgrades](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html)
 * [Migrationsübersicht](../../migration/using/about-migration.md)
 
