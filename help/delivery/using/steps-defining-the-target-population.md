@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 7ffbbe95247f28115f7e46eb0e94f2612fb4ea93
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 91%
+source-wordcount: '1720'
+ht-degree: 90%
 
 ---
 
@@ -36,7 +36,7 @@ Wenn der Versand außerdem in einer Marketing-Kampagne enthalten ist, können Si
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
 
-In den meisten Fällen wird die Haupt-Zielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können jedoch auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+In den meisten Fällen wird die Haupt-Zielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). However, recipients can also be stored in an external file. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
 Gehen Sie wie folgt vor, um den Empfänger eines Versands auszuwählen:
 
@@ -229,3 +229,15 @@ Sie können **[!UICONTROL Testadressen]** als Testversand-Zielgruppe verwenden: 
 >Die Testadressen werden unter [Über Testadressen](../../delivery/using/about-seed-addresses.md) vorgestellt.
 
 Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können Sie die Bestimmung einer speziellen Testversand-Zielgruppe und die Verwendung von Testadressen kombinieren. Die entsprechende Konfiguration erfolgt dann in zwei getrennten Tabs.
+
+## Verwalten von Saatgut und Testversänden in einer E-Mail
+
+In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Samen und Testversand hinzufügen und diese senden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+Siehe auch:
+* [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
+
+* [Grundlagen zu Seed-Adressen](../../delivery/using/about-seed-addresses.md)
+
+* [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
