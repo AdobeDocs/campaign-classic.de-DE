@@ -14,8 +14,11 @@ discoiquuid: 1ffe9f58-7258-4794-a314-524065f8a33b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c9c9d5f96856ce9e19571bad032d2bf04eaa60bd
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 100%
 
 ---
 
@@ -60,7 +63,7 @@ Gehen Sie zur Erstellung eines E-Mail-Versands wie folgt vor:
 * Erstellen Sie einen Versand aus einer Vorlage vom Typ „E-Mail“, in der der DCE aktiv ist.
 * Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer Standardvorlage.
 * Bearbeiten und konfigurieren Sie den Online-Inhalt.
-* Führen Sie den Versand durch. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/communication-channels.md).
+* Führen Sie den Versand durch. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
