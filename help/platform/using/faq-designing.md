@@ -13,10 +13,10 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e25560152a16865dc415ac2ffa1975808b3f6bbc
-workflow-type: ht
-source-wordcount: '354'
+translation-type: tm+mt
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '346'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Hier finden Sie die wichtigsten Anleitungen zum Konzipieren von kanalübergreife
 
 Vor der Konzeption von E-Mails sollten Sie sich über die Konzepte und Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign erkundigen.
 
-[Hier erfahren Sie mehr darüber](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
+[Hier erfahren Sie mehr darüber](../../delivery/using/delivery-best-practices.md).
 
 ## Was ist eine Versandvorlage? {#what-is-a-delivery-template-}
 
