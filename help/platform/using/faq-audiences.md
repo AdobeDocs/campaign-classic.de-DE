@@ -13,8 +13,11 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 2ee1912e0de2841867d0ffb5420cc9810aa1083e
+translation-type: tm+mt
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +42,7 @@ Sie können [Workflows verwenden, um die Zielpopulation](../../campaign/using/ma
 
 Eine Liste ist eine statische Gruppe von Empfängern, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank gefilterte Population in einer Liste gespeichert werden.
 
-[Hier erfahren Sie mehr dazu](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Sie können sich auch [dieses Video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) über die manuelle Erstellung einer Liste ansehen und [dieses Video](https://docs.campaign.adobe.com/doc/AC/en/Videos/creating_list_recipients_611.mp4) über die Erstellung und automatische Aktualisierung einer Empfängerliste in einem Workflow.
+[Hier erfahren Sie mehr dazu](../../platform/using/creating-and-managing-lists.md#creating-a-profile-list-from-a-group). Sie können sich auch [dieses Video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) über die manuelle Erstellung einer Liste ansehen und [dieses Video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html) über die Erstellung und automatische Aktualisierung einer Empfängerliste in einem Workflow.
 
 ## Wie kann ich eine Population vor dem Nachrichtenversand deduplizieren? {#how-can-i-deduplicate-a-population-before-sending-a-message-}
 
