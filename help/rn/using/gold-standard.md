@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 890153a5b30594a1cb90606db4be8fd1ec19267b
+source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 100%
+source-wordcount: '815'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ _7. Juli 2020_
 
 Build 9032@efd8a94 umfasst die folgende Fehlerkorrektur:
 
-Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist oder eine alte Marketing-Instanz mit einem aktuellen Mid verwendet wird. (NEO-26411)
+Es wurde ein Fehler behoben, der dazu führte, dass die Verfolgung nicht funktionierte, wenn die Signaturfunktion deaktiviert war. (NEO-26411)
 
 >[!CAUTION]
 >
