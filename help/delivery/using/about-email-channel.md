@@ -12,8 +12,11 @@ discoiquuid: 88575757-ef1b-4247-88ff-6f355c1ecd3e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b7470011bbb08cc1a7041b53e8405c971f33e51c
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ Mit Adobe Campaign können Sie personalisierte elektronische Nachrichten an eine
 Achten Sie vor dem Versand von E-Mails auf Folgendes:
 
 * Empfängerprofile müssen zumindest eine E-Mail-Adresse enthalten.
-* Erfahren Sie mehr über [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html) mit Adobe Campaign.
+* Erfahren Sie mehr über [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md) mit Adobe Campaign.
 * Erfahren Sie mehr über die [Zustellbarkeit](../../delivery/using/about-deliverability.md) und [Verwaltung der Zustellbarkeit](https://helpx.adobe.com/de/campaign/kb/acc-deliverability.html).
 
 Die wichtigsten Schritte zum Senden einer E-Mail sind:
