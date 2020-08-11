@@ -14,8 +14,11 @@ discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '370'
+ht-degree: 79%
 
 ---
 
@@ -70,3 +73,21 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 >[!NOTE]
 >
 >Zur Vermeidung von Konfigurationsfehlern wird empfohlen, keine neuen Vorlagen zu erstellen, sondern native Vorlagen zu duplizieren und die Eigenschaften je nach Bedarf anzupassen.
+
+## How to configure a delivery template
+
+The following video demonstrates how to configure a template for an ad hoc delivery.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
+
+## Einrichten der Eigenschaften von Versandvorlagen
+
+The following video shows how to set the delivery template properties and explains each property in detail.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
+
+## How to deploy an ad-hoc delivery template
+
+This video explains how to deploy an ad-hoc email delivery template and it explains the difference between an email delivery and a delivery workflow.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
