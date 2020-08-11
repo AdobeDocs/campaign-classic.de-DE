@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 99dfefe3f51115b78bfeb02094d614a6e63af124
+source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 97%
+source-wordcount: '439'
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Der **aktuelle stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn
 
 Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
+Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
 
 Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html).
 
