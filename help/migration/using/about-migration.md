@@ -1,7 +1,7 @@
 ---
-title: Informationen zur Migration
-seo-title: Informationen zur Migration
-description: Informationen zur Migration
+title: Über die Migration
+seo-title: Über die Migration
+description: Über die Migration
 seo-description: null
 page-status-flag: never-activated
 uuid: 23a9c858-b6c1-495f-a463-0ceb147068c9
@@ -15,18 +15,21 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 5%
 
 ---
 
 
-# Informationen zur Migration{#about-migration}
+# Über die Migration{#about-migration}
 
-In diesem Dokument werden die Voraussetzungen für eine Migration, die Schritte für eine Migration zu einer Adobe Campaign Classic-Plattform (v7) sowie die zusätzlichen, erforderlichen und optionalen Einstellungen je nach Konfiguration beschrieben.
+This document details the prerequisites to a migration, the steps for a migration to an Adobe Campaign Classic (v7) platform, the additional, necessary and optional settings depending on your configuration.
 
-Der Migrationsprozess muss mit Vorsicht durchgeführt werden, seine Auswirkungen müssen im Vorfeld umfassend berücksichtigt werden, und das Verfahren muss rigoros durchgeführt werden. Sie darf nur von einem erfahrenen Benutzer durchgeführt werden. Es wird dringend empfohlen, sich mit Adobe Campaign in Verbindung zu setzen, bevor Sie mit einem Migrationsverfahren beginnen.
+The migration process must be carried out with caution, its impacts must be fully considered beforehand and the procedure must be carried out rigorously. It must only be performed by an expert user. We strongly recommend getting in touch with Adobe Campaign before starting any migration procedure.
 
-Die Migration muss vorher in der Entwicklungsumgebung getestet werden, um sicherzustellen, dass sie reibungslos und fehlerfrei ausgeführt wird. Die Migration der Produktionsumgebung muss erst erfolgen, nachdem die migrierte Entwicklungsumgebung vollständig genehmigt wurde.
+Die Migration muss vorab auf der Entwicklungs-Umgebung getestet werden, um sicherzustellen, dass sie reibungslos und fehlerfrei ausgeführt wird. Die Migration der Produktions-Umgebung muss erst erfolgen, nachdem die migrierte Umgebung vollständig genehmigt wurde.
 
 >[!IMPORTANT]
 >
@@ -34,4 +37,4 @@ Die Migration muss vorher in der Entwicklungsumgebung getestet werden, um sicher
 
 >[!NOTE]
 >
->Auf [dieser Seite](https://docs.campaign.adobe.com/doc/AC/en/RN.html)werden neue Funktionen und Entwicklungen für Adobe Campaign v7 beschrieben.
+>Auf [dieser Seite](../../rn/using/latest-release.md)werden neue Funktionen und Entwicklungen für Adobe Campaign v7 beschrieben.
