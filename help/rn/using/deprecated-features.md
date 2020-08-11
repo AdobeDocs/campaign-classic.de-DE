@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e46325ab8f68a0b71198aee9cf04f2b1eb97fdd3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <tr>  
    <td>Fax-Kanal<br></td>
    <td><p>Ab Version 20.2 wird der Fax-Kanal nicht mehr unterstützt.</p> 
-   <p>Wenn Sie diesen Kanal nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/communication-channels.md">Erfahren Sie mehr</a> über Campaign-Kanäle.</p>
+   <p>Wenn Sie diesen Kanal nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Erfahren Sie mehr</a> über Campaign-Kanäle.</p>
    <p><em>Geplantes Datum für die Entfernung: 2021.</em></p></td>
   </tr>
  </tbody> 
