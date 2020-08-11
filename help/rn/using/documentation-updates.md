@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '6968'
+source-wordcount: '6958'
 ht-degree: 100%
 
 ---
@@ -291,7 +291,7 @@ Die Best Practices für die Leistungsverbesserung von Workflows und Sendungen wu
 
 Control Panel – [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
 
-Audit-Protokoll – [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Audit_trail.html)
+Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
