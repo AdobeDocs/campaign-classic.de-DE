@@ -12,11 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4582ea496fff35c5b586049b8daa379464bd78fc
-workflow-type: ht
-source-wordcount: '574'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 95%
 
 ---
 
@@ -71,3 +71,92 @@ In geringerem Maß kann auch der Nachrichteninhalt dazu führen, dass E-Mails vo
 ## Arbeiten an Ihrer Reputation {#reputation}
 
 Spammer führen programmierte Sendungen durch, um langfristig ihre Reputation zu wahren. Manchmal müssen sie ihren Marketingplan an die Best Practices des jeweiligen ISPs anpassen. Deshalb führen sie nach einer Optimierung ihrer Reputation (ramp-up) regelmäßige Sendungen durch.
+
+## Best Practices {#best-practices}
+
+Erfahren Sie, welche Best Practices für die Lieferbarkeit mit Adobe Campaign gelten. Verwenden Sie die unten stehenden Links, um durch Themen zu navigieren und Anleitungen zu erhalten.
+
+<table>
+<tr>
+  <td>
+    <a href="starting-new-platform.md">
+      <img alt="Starten" src="assets/do-not-localize/start.svg"/>
+    </a>
+    <div>
+      <a href="starting-new-platform.md">
+    <strong>Starten</strong>
+    </a>
+    </div>
+    <p>
+    <em>Einrichten einer neuen Plattform</em>
+    <p>
+  </td>
+   <td>
+    <a href="control-message-content.md">
+      <img alt="Design" src="assets/do-not-localize/design.svg"/>
+    </a>
+    <div>
+      <a href="control-message-content.md">
+    <strong>Design</strong>
+    </a>
+    </div>
+    <p>
+    <em>Steuern des Nachrichteninhalts</em>
+    <p>
+  </td>
+  <td>
+    <a href="improve-reputation.md">
+      <img alt="Design" src="assets/do-not-localize/check.svg"/>
+    </a>
+    <div>
+      <a href="improve-reputation.md">
+    <strong>Senden</strong>
+    </a>
+    </div>
+    <p>
+    <em>Verbessern der Reputation</em>
+    <p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="technical-recommendations.md">
+      <img alt="Optimieren" src="assets/do-not-localize/optimize.svg"/>
+    </a>
+    <div>
+      <a href="technical-recommendations.md">
+    <strong>Optimize</strong>
+    </a>
+    </div>
+    <p>
+    <em>Technische Empfehlungen</em>
+    <p>
+  </td>
+   <td>
+    <a href="monitoring-deliverability.md">
+      <img alt="Check" src="assets/do-not-localize/monitor.svg"/>
+    </a>
+    <div>
+      <a href="monitoring-deliverability.md">
+    <strong>Monitor</strong>
+    </a>
+    </div>
+    <p>
+    <em>Monitoring-Tools</em>
+    <p>
+  </td>
+  <td>
+    <a href="deliverability-faq.md">
+      <img alt="Optimieren" src="assets/do-not-localize/troubleshoot.svg"/>
+    </a>
+    <div>
+      <a href="deliverability-faq.md">
+    <strong>Fehlerbehebung</strong>
+    </a>
+    </div>
+    <p>
+    <em>Solve issues</em>
+    <p>
+  </td>
+</tr>
+</table>
