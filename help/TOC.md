@@ -5,9 +5,9 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: b19a8e477b4419a369fa257b4629f4a01f0b0400
+source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2110'
 ht-degree: 99%
 
 ---
@@ -89,13 +89,17 @@ ht-degree: 99%
       + [CRM-Connectoren](platform/using/crm-connectors.md)
       + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Nachrichten senden {#sending-messages}
-   + Get started with messages {#about-deliveries-and-channels}
-      + [Kommunikationskanäle](delivery/using/communication-channels.md)
-      + [Best Practices beim Versand](delivery/using/delivery-best-practices.md)
-      + [Auf Versandinformationen zugreifen](delivery/using/accessing-deliveries-information.md)
-      + [Versandtypen](delivery/using/types-of-deliveries.md)
+   + [Erste Schritte mit dem von Nachrichten](delivery/using/communication-channels.md)
+   + Best Practices beim Versand {#delivery-bestpractices}
+      + [Learn good practices](delivery/using/delivery-best-practices.md)
+      + [Versand optimieren](delivery/using/optimize-delivery.md)
+      + [Verwenden von Vorlagen](delivery/using/use-templates.md)
+      + [Personalisierte Inhalte erstellen](delivery/using/design-and-personalize.md)
+      + [Define the right audience](delivery/using/define-the-right-audience.md)
+      + [Check before sending](delivery/using/check-before-sending.md)
+      + [Tracken und Beobachten](delivery/using/track-and-monitor.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
-      + [Über das Erstellen eines Versands ](delivery/using/steps-about-delivery-creation-steps.md)
+      + [Erste Schritte mit Versänden](delivery/using/steps-about-delivery-creation-steps.md)
       + [Versand erstellen und identifizieren](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Zielpopulation bestimmen](delivery/using/steps-defining-the-target-population.md)
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
