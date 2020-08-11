@@ -14,8 +14,11 @@ discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 4ac96bf0e54268832b84b17c3cc577af038cc712
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 94%
 
 ---
 
@@ -110,3 +113,9 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
    >[!NOTE]
    >
    >Da Sie für den E-Mail-Inhalt keine andere Version definiert haben, müssen Sie die Zielpopulation vor dem Versand der E-Mail filtern.
+
+## So erstellen Sie einen mehrsprachigen Newsletter mit bedingten Inhalten
+
+Learn how to add conditional content to a delivery on the example of a multilingual newsletter.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
