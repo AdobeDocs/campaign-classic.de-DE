@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 51bbf50a1e9b00c25fca8e1e86ca21c314c18313
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2674'
+source-wordcount: '2644'
 ht-degree: 96%
 
 ---
@@ -109,7 +109,7 @@ Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
 
 * **Die Versandgröße**: Größere Sendungen benötigen zur Ausführung länger. MTA-Kindprozesse werden für Standard-Bündelgrößen konfiguriert. Diese sind für die meisten Instanzen ausreichend, müssen jedoch überprüft werden, wenn Sendungen immer zu langsam durchgeführt werden.
 * **Die Zielgruppe des Versands**: Die Versandleistung kann durch Softbounce-Fehler beeinträchtigt werden, die entsprechend der Konfiguration der Neuversuche gehandhabt werden. Je größer die Anzahl der Fehler ist, desto mehr Neuversuche sind nötig.
-* **Die Gesamtauslastung der Plattform**: Wenn mehrere große Sendungen durchgeführt werden, kann die gesamte Plattform davon beeinträchtigt sein. In diesem Zusammenhang sollten Sie auch die IP-Reputation und Probleme bei der Zustellbarkeit überprüfen. Weiterführende Informationen dazu finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
+* **Die Gesamtauslastung der Plattform**: Wenn mehrere große Sendungen durchgeführt werden, kann die gesamte Plattform davon beeinträchtigt sein. In diesem Zusammenhang sollten Sie auch die IP-Reputation und Probleme bei der Zustellbarkeit überprüfen. Weiterführende Informationen dazu finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](../../delivery/using/deliverability-key-points.md) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
 
 Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand beeinträchtigen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-performances.md).
 
@@ -118,10 +118,10 @@ Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand 
 Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
 
 * Einige E-Mail-Anbieter haben möglicherweise Ihre IP-Adressen zu einer Blockierungsliste hinzugefügt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](../../delivery/using/about-deliverability.md).
-* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
+* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md).
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
-   * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL Kontingent ausgeschöpft]**): Das in Campaign von den MX-Regeln definierte Kontingent ist ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-deliverability-faq.html). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
+   * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL Kontingent ausgeschöpft]**): Das in Campaign von den MX-Regeln definierte Kontingent ist ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](../../delivery/using/deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
    * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential block list.
 
 * Durch einen Systemfehler wird möglicherweise verhindert, dass Server miteinander interagieren. Dadurch kann sich der gesamte Versandvorgang verlangsamen. Überprüfen Sie die Server, um sicherzustellen, dass keine Speicher- oder Ressourcenfehler vorliegen, die Campaign beispielsweise daran hindern können, Personalisierungsdaten abzurufen.
@@ -166,7 +166,7 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
   </tr> 
   <tr> 
    <td> Ignoriert<br /> </td> 
-   <td> Der Versand wurde wegen eines Fehlers mit seiner Adresse nicht an den Empfänger gesendet. Es wurde entweder zu einer Blockierungsliste hinzugefügt, unter Quarantäne gestellt, nicht bereitgestellt oder ein Duplikat. <br /> </td> 
+   <td> Der Versand wurde wegen eines Fehlers mit seiner Adresse nicht an den Empfänger gesendet. It was either added to a block list, quarantined, not provided or a duplicate. <br /> </td> 
   </tr> 
   <tr> 
    <td> Gesendet<br /> </td> 
@@ -203,7 +203,7 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
  </tbody> 
 </table>
 
-Weiterführende Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/sending-messages/deliverability-management/about-deliverability.html) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
+Weiterführende Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](../../delivery/using/deliverability-key-points.md) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
 
 ### Status Ausstehend {#pending-status}
 
