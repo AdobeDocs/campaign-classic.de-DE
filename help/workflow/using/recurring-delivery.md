@@ -14,8 +14,11 @@ discoiquuid: 185d3256-a21e-47d7-bee7-7b91762ca1e2
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 66%
 
 ---
 
@@ -38,8 +41,17 @@ Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versan
 
 Ein Anwendungsbeispiel für diese Aktivität ist in diesem [Abschnitt](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow) enthalten.
 
+## Einrichten von wiederkehrenden Versänden
+
+Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versand-Instanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, ergibt dies 52 Versand nach einem Jahr. Dies bedeutet auch, dass das breite Protokoll und die Trackinglogs durch jede Versand-Instanz getrennt werden.
+
+![Wiederkehrender Versand](assets/delivery_recurring.jpg)
+
+In diesem Video wird beschrieben, wie Sie einen wiederkehrenden Versand und eine Planung-Aktivität konfigurieren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+
 >[!NOTE]
 >
 >Die Durchführung von Testsendungen ist in der Aktivität **[!UICONTROL Wiederkehrender Versand]** nicht möglich.\
 >Nutzen Sie zur direkten Erstellung von Sendungen in Kampagnen-Workflows die vorkonfigurierten kanalspezifischen Versandaktionen, wie z. B. **[!UICONTROL E-Mail-Versand]**.
-
