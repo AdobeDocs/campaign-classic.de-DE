@@ -14,8 +14,11 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+workflow-type: tm+mt
+source-wordcount: '1190'
+ht-degree: 99%
 
 ---
 
@@ -74,7 +77,7 @@ Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen 
 
 Die Erstellung und Konfiguration von Kampagnenvorlagen werden im Abschnitt ](#campaign-templates)Kampagnenvorlagen[ beschrieben.
 
-Mehr zur Erstellung von Kampagnen erfahren Sie im Video [Creating a campaign and an email](https://docs.campaign.adobe.com/doc/AC/en/Videos/Videos.html).
+Mehr zur Erstellung von Kampagnen erfahren Sie im Video [Creating a campaign and an email](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/creating-a-campaign-and-an-email.html).
 
 ## Konfiguration der verfügbaren Module {#configuration-of-the-available-modules}
 
