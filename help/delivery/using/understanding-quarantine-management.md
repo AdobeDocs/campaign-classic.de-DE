@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b080bdc4d719994c74ec5c094c917e2c40839a49
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '2681'
-ht-degree: 87%
+source-wordcount: '2673'
+ht-degree: 90%
 
 ---
 
@@ -37,21 +37,21 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 
 Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
-Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Quarantäne ermöglicht es Ihnen daher, einer blockierungsliste nicht von diesen Anbietern hinzugefügt zu werden.
+Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Anbietern auf eine Blockierungsliste gesetzt zu werden.
 
-Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden. Weiterführende Informationen zu Best Practices zur Durchführung und Optimierung von Sendungen finden Sie auf [dieser Seite](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
+Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden. Weiterführende Informationen zu Best Practices zur Durchführung und Optimierung von Sendungen finden Sie auf [dieser Seite](../../delivery/using/delivery-best-practices.md) .
 
-### Quarantäne vs. blockierungsliste {#quarantine-vs-block-list}
+### Quarantäne vs. Blockierungsliste {#quarantine-vs-block-list}
 
 Eine **Quarantäne** bezieht sich immer nur auf die Adresse, nicht aber auf das Profil selbst. Sollten zwei Profile dieselbe E-Mail-Adresse verwenden, sind beide von der Quarantäne betroffen.
 
 Falls jedoch ein Profil mit einer E-Mail-Adresse in Quarantäne eine neue Adresse angibt, kann es erneut in Versandzielgruppen aufgenommen werden.
 
-Being on the **block list**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) der Fall. 
 
 >[!NOTE]
 >
->Wenn ein Benutzer auf eine SMS-Nachricht mit einem Suchbegriff wie &quot;STOP&quot;antwortet, um sich von SMS-Versänden abzumelden, wird sein Profil nicht wie im E-Mail-Ausschluss zur blockierungsliste hinzugefügt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
+>Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
 ## In Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses}
 
@@ -102,28 +102,28 @@ Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klic
 
 ### Adresse aus der Quarantäne nehmen {#removing-a-quarantined-address}
 
-Bei Bedarf können Sie eine Adresse manuell aus der Liste der Quarantäne entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, automatisch aus der Quarantäne-Liste durch den **[!UICONTROL Datenbankbereinigungs]** -Workflow gelöscht.
+If needed, you can manually remove an address from the quarantine list. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, automatisch aus der Quarantäne-Liste durch den **[!UICONTROL Datenbankbereinigungs]** -Workflow gelöscht.
 
-So entfernen Sie eine Adresse manuell aus der Liste &quot;Quarantäne&quot;:
+To manually remove an address from the quarantine list:
 
-* Sie können den Status des Knotens &quot; **[!UICONTROL Administration&quot;> &quot;Kampagnenverwaltung&quot;> &quot;Verwaltung für nicht bereitgestellte Elemente&quot;> &quot;Nicht bereitgestellte Elemente und Adressen&quot;in &quot;]** Gültig **[!UICONTROL &quot;ändern]** .
+* You can change its status to **[!UICONTROL Valid]** from the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** node.
 
    ![](assets/tech_quarant_error_status.png)
 
-* Sie können den Status auch auf **[!UICONTROL An zulassungsliste]**&#x200B;ändern. In diesem Fall bleibt die Adresse auf der Liste Quarantäne, wird jedoch systematisch als Ziel ausgewählt, auch wenn ein Fehler auftritt.
+* Sie können den Status auch auf &quot; **[!UICONTROL An Zulassungsliste]**&quot;ändern. In this case, the address remains on the quarantine list, but it will be systematically targeted, even if an error is encountered.
 
 <!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
 
-Die Adressen werden in den folgenden Fällen automatisch aus der Liste der Quarantäne entfernt:
+The addresses are automatically removed from the quarantine list in the following cases:
 
-* Adressen in einem Status &quot; **[!UICONTROL Mit Fehler]** &quot;werden nach einem erfolgreichen Versand aus der Liste &quot;Quarantäne&quot;entfernt.
-* Adressen in einem Status &quot; **[!UICONTROL Mit Fehler]** &quot;werden aus der Liste &quot;Quarantäne&quot;entfernt, wenn der letzte Soft-Absprung vor mehr als 10 Tagen auftrat. Weitere Informationen zur Fehlerverwaltung finden Sie in [diesem Abschnitt](#soft-error-management).
+* Addresses in a **[!UICONTROL With errors]** status will be removed from the quarantine list after a successful delivery.
+* Addresses in a **[!UICONTROL With errors]** status will be removed from the quarantine list if the last soft bounce occurred more than 10 days ago. For more on soft error management, see [this section](#soft-error-management).
 * Adressen in einem Status **[!UICONTROL mit Fehlern]** , die mit dem **[!UICONTROL Postfachfehler &quot;full]** &quot;abgeschnitten werden, werden nach 30 Tagen aus der Liste &quot;Quarantäne&quot;entfernt.
 
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
-Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder dem Status &quot; **[!UICONTROL Bei blockierungsliste]** &quot;werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder dem Status &quot; **[!UICONTROL Bei Blockierungsliste]** &quot;werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Bereitstellungsassistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
 
