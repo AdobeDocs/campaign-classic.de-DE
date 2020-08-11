@@ -14,8 +14,11 @@ discoiquuid: 9d80be19-8dde-4278-ab5f-23f364fe422e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 69%
 
 ---
 
@@ -50,3 +53,17 @@ Dies gilt nur, wenn die Option **[!UICONTROL Wird durch das Eingangsereignis ang
 Anhand der drei Werte lässt sich die durch den wiederkehrenden Versand ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
 
 Die Transition des Komplements weist die gleichen Parameter auf.
+
+## How to set up a continuous delivery
+
+This section explains how to set up a continuous delivery.
+
+The **continuous delivery** lets you add new recipients to an existing delivery and avoids you having to create a new delivery each time a new recipient is added. You can update the creative directly in the campaign workflow and it will update the template in the delivery template Resource folder.
+
+A continuous delivery will create a SINGLE delivery and delivery logs (broadLog) and tracking logs that reference that one delivery are added each time it executes.
+
+![Kontinuierlicher Versand](assets/delivery_continuous.jpg)
+
+This video shows how to configure a continuous delivery with an incremental query.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
