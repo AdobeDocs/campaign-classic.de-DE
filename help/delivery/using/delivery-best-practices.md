@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: a3550b94cf68ae96e04020d99f5fc815ddaf0732
+source-git-commit: 1e7dfc5cebf6b59d1b7e718fcab289691d8b76de
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 23%
@@ -23,13 +23,13 @@ ht-degree: 23%
 
 # Best Practices beim Versand {#delivery-best-practices}
 
-Erfahren Sie, welche Best Practices beim Design von Versänden und beim Senden mit Adobe Campaign gelten. Verwenden Sie die unten stehenden Links, um durch Themen zu navigieren und Anleitungen zu erhalten.
+Learn best practices related to delivery design and sending with Adobe Campaign. Use the links below to navigate topics and find guidance.
 
 <table>
 <tr>
   <td>
     <a href="optimize-delivery.md">
-      <img alt="Optimieren" src="assets/do-not-localize/optimize.svg"/>
+      <img alt="Optimize" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="optimize-delivery.md">
@@ -37,12 +37,12 @@ Erfahren Sie, welche Best Practices beim Design von Versänden und beim Senden m
     </a>
     </div>
     <p>
-    <em>Sichern und Optimieren des Sendevorgangs</em>
+    <em>Secure and optimize the sending process</em>
     <p>
   </td>
    <td>
     <a href="use-templates.md">
-      <img alt="Vorlagen" src="assets/do-not-localize/design.svg"/>
+      <img alt="Vorlagen" src="assets/do-not-localize/design.svg" width="60px"/>
     </a>
     <div>
       <a href="use-templates.md">
@@ -55,7 +55,7 @@ Erfahren Sie, welche Best Practices beim Design von Versänden und beim Senden m
   </td>
   <td>
     <a href="design-and-personalize.md">
-      <img alt="Design" src="assets/do-not-localize/custom.svg"/>
+      <img alt="Design" src="assets/do-not-localize/custom.svg" width="60px"/>
     </a>
     <div>
       <a href="design-and-personalize.md">
@@ -70,7 +70,7 @@ Erfahren Sie, welche Best Practices beim Design von Versänden und beim Senden m
 <tr>
   <td>
     <a href="define-the-right-audience.md">
-      <img alt="Zielgruppe" src="assets/do-not-localize/profiles.svg"/>
+      <img alt="Zielgruppe" src="assets/do-not-localize/profiles.svg" width="60px"/>
     </a>
     <div>
       <a href="define-the-right-audience.md">
@@ -78,12 +78,12 @@ Erfahren Sie, welche Best Practices beim Design von Versänden und beim Senden m
     </a>
     </div>
     <p>
-    <em>Zielgruppe ist der Schlüssel</em>
+    <em>Targeted population is key</em>
     <p>
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="Häkchen" src="assets/do-not-localize/start.svg"/>
+      <img alt="Häkchen" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">
@@ -91,12 +91,12 @@ Erfahren Sie, welche Best Practices beim Design von Versänden und beim Senden m
     </a>
     </div>
     <p>
-    <em>Vermeiden häufiger Fehler</em>
+    <em>Avoid common mistakes</em>
     <p>
   </td>
   <td>
     <a href="track-and-monitor.md">
-      <img alt="Optimieren" src="assets/do-not-localize/troubleshoot.svg"/>
+      <img alt="Optimieren" src="assets/do-not-localize/troubleshoot.svg" width="60px"/>
     </a>
     <div>
       <a href="track-and-monitor.md">
@@ -114,6 +114,6 @@ Siehe auch:
 
 * [Erste Schritte mit der Lieferbarkeit](../../delivery/using/about-deliverability.md)
 
-* [Delivery creation steps](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Schritte zum Erstellen von Versänden](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 * [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html)
