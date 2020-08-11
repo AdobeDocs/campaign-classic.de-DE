@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c1f7ff6a281c2830ac23ad995b750dc09ade5e92
+source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 96%
+source-wordcount: '1183'
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ Die Hauptfunktionen ermöglichen eine präzise Abstimmung von Marketing-Kommunik
 
 >[!NOTE]
 >
->Adobe Campaign bietet Tools zur Überwachung der Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie unter [Zustellbarkeit, erste Schritte](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliverability.html) und [Verwaltung der Zustellbarkeit](../../delivery/using/about-deliverability.md).
+>Adobe Campaign bietet Tools zur Überwachung der Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie unter [Zustellbarkeit, erste Schritte](../../delivery/using/deliverability-key-points.md) und [Verwaltung der Zustellbarkeit](../../delivery/using/about-deliverability.md).
 
 Sendungen können automatisiert werden, indem ein Versand vorbereitet und/oder über einen Workflow gesendet wird. Weiterführende Informationen zu Versandaktivitäten in Workflows finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
 
@@ -42,7 +42,7 @@ Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](../../delivery/using/sms-channel.md).
 1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](../../delivery/using/about-mobile-app-channel.md).
 
-   Andere Kanäle werden auf [dieser Seite](../../delivery/using/communication-channels.md#other-channels) beschrieben.
+   Andere Kanäle werden auf [dieser Seite](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels) beschrieben.
 
    >[!NOTE]
    >
@@ -67,9 +67,9 @@ Verschiedene Typen von E-Mails können gesendet werden:
 * Wiederkehrende E-Mails: Ein und dieselbe E-Mail wird regelmäßig gesendet und die Sendungen und Berichte werden regelmäßig aggregiert. Die E-Mail selbst bleibt unverändert, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weiterführende Informationen dazu finden Sie unter [Wiederkehrender Versand](../../workflow/using/recurring-delivery.md).
 * Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe auch [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 
-Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/deliveryBestPractices.html).
+Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md).
 
-Weiterführende Informationen zu den unterschiedlichen Versandarten finden Sie in [diesem Abschnitt](../../delivery/using/types-of-deliveries.md).
+Weiterführende Informationen zu den unterschiedlichen Versandarten finden Sie in [diesem Abschnitt](#types-of-deliveries).
 
 ## Versand über den Mobiltelefon-Kanal {#mobile-deliveries}
 
@@ -103,3 +103,33 @@ Zusätzlich verwenden Sendungen vom Typ &quot;Sonstige&quot; eine spezifische te
 Dieser Kanal besitzt keinen bestimmten Mechanismus. Er ist ein allgemeiner Kanal, der wie jeder andere Kommunikationskanal in Adobe Campaign über eine eigene externe Konto-Routing-Möglichkeit, Versandvorlagenart und Kampagnen-Workflow-Aktivität verfügt.
 
 Dieser Kanal ist nur für beschreibende Zwecke gedacht, z. B. um Versand zu definieren, für die Sie eine Spur der Zielgruppe einer Kampagne in einem anderen Tool als Adobe Campaign erstellen möchten.
+
+## Versandtypen{#types-of-deliveries}
+
+In Campaign gibt es drei Typen von Versandobjekten:
+
+### Einzelversand {#single-delivery}
+
+Ein **Versand** ist ein unabhängiges Versandobjekt, das ein einziges Mal ausgeführt wird. Es kann dupliziert und nochmals vorbereitet werden, doch sobald es in seinem finalen Zustand ist (abgebrochen, gestoppt, fertiggestellt), kann es nicht wiederverwendet werden.
+
+Sendungen können entweder in der Versandliste oder innerhalb eines Workflows über die Aktivität [Versand](../../workflow/using/delivery.md) erstellt werden.
+
+Workflows bieten abhängig vom zu verwendeten Kanal auch spezifische Versandaktivitäten. Weiterführende Informationen zu diesen Aktivitäten erhalten Sie in [diesem Abschnitt](../../workflow/using/cross-channel-deliveries.md).
+
+### Wiederkehrender Versand {#recurring-delivery}
+
+Mit einem **wiederkehrenden Versand** können Sie jedes Mal, wenn eine bestimmte Aktivität ausgeführt wird, einen neuen Versand erstellen. Dadurch müssen Sie für sich wiederholende Aufgaben nicht jedes Mal erneut einen Versand erstellen.
+
+Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das im Jahr 12 Sendungen.
+
+Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../workflow/using/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie in diesem Abschnitt: [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
+
+### Versand (fortlaufend){#continuous-delivery}
+
+Bei einem **fortlaufenden Versand** können Sie einem bestehenden Versand neue Empfänger hinzufügen, sodass Sie nicht jedes Mal einen neuen Versand erstellen müssen.
+
+Wenn sich Daten im Versand ändern (Inhalt, Name etc.), wird bei der Ausführung des Versands ein neues Versandobjekt erstellt. Wenn keine Daten geändert wurden, wird dasselbe Versandobjekt erneut verwendet und die Versand- und Trackinglogs werden im selben Objekt hinzugefügt.
+
+Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das eine einzige Sendung im Jahr (vorausgesetzt Sie haben am Versand keine Änderung vorgenommen).
+
+Fortlaufende Sendungen werden in Workflows über die Aktivität [Versand (fortlaufend)](../../workflow/using/continuous-delivery.md) erstellt.
