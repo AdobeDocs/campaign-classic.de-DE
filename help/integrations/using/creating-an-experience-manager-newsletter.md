@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
+source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 96%
+source-wordcount: '375'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 96%
 
 Mit dieser Integration kann beispielsweise ein Newsletter in Adobe Experience Manager erstellt werden, der danach in Adobe Campaign als Teil einer E-Mail-Kampagne verwendet wird.
 
-Ein detailliertes Beispiel für die Verwendung dieser Integration finden Sie in dieser [schrittweisen Anleitung](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/aem.html).
+Ein detailliertes Beispiel für die Verwendung dieser Integration finden Sie in dieser [schrittweisen Anleitung](https://helpx.adobe.com/campaign/kb/acc-aem.html).
 
 **In Adobe Experience Manager:**
 
