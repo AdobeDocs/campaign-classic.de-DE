@@ -14,11 +14,11 @@ discoiquuid: 27c8e443-ee6b-4d58-bc2d-81cf8391c5de
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e9e9b1352706e15a0d0c6ff8921e430524a44b13
-workflow-type: ht
-source-wordcount: '889'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+workflow-type: tm+mt
+source-wordcount: '914'
+ht-degree: 97%
 
 ---
 
@@ -123,3 +123,9 @@ Wenn die Personalisierungsphase während der Vorschau oder beim Senden die in di
 Der Standardwert ist 5 Sekunden.
 
 Wenn Sie diese Option auf 0 setzen, gilt für die Personalisierungsphase keine Zeitbeschränkung.
+
+## So personalisieren Sie E-Mails mit Personalisierungsfeldern
+
+Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
