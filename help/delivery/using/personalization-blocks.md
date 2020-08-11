@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fa9e4ddc716809b96e259acd1137a0c24ef68fee
+source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 98%
+source-wordcount: '992'
+ht-degree: 96%
 
 ---
 
@@ -111,7 +111,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
    >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Mirrorseiten-Link]**: Hiermit wird der Link zur Mirrorseite &quot;Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken&quot; eingefügt.
-* **[!UICONTROL Link]** zur Abmeldung: fügt einen Link ein, der das Abmelden aller Versand ermöglicht (blockierungsliste).
+* **[!UICONTROL Link]** zur Abmeldung: fügt einen Link ein, der das Abmelden aller Versand ermöglicht (Blockierungsliste).
 * **[!UICONTROL Formatierungsfunktion für Eigennamen]**: Hiermit wird die JavaScript-Funktion **[!UICONTROL toSmartCase]** erstellt, mit der der erste Buchstabe eines jeden Worts in einen Großbuchstaben umgewandelt wird. Dieser Baustein muss in den Quell-Code des Versands in **`<script>...</script>`**-Tags eingefügt werden.
 
    Im unten stehenden Beispiel wird mithilfe dieser Funktion das Element „Mein Header“ durch „Mein neuer Header“ mit Großbuchstaben für jedes Wort ersetzt:
@@ -158,4 +158,10 @@ Gehen Sie wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
       ![](assets/s_ncs_user_personalized_block_b.png)
 
-   * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]** .
+   * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
+
+## So personalisieren Sie E-Mails mit dynamischen Inhaltsblöcken
+
+Erfahren Sie, wie dynamische Inhaltsblöcke erstellt wurden und wie Sie sie verwenden, um den Inhalt Ihres E-Mail-Versands zu personalisieren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
