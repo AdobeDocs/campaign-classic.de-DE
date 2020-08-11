@@ -14,8 +14,11 @@ discoiquuid: 6101e083-3754-41e1-8a93-021b1a771dc0
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: b47dcfa0e4ee2e5e43e7aa14b94e12fd70ff9c2d
+translation-type: tm+mt
+source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 96%
 
 ---
 
@@ -50,19 +53,19 @@ Im Kontext von Adobe Campaign kommt folgenden Konzepten eine entscheidende Rolle
 
    Weitere Informationen finden Sie unter [Verwalten von Ressourcen](../../campaign/using/managing-marketing-resources.md).
 
-## Benutzerfreundlichkeit {#user-friendliness}
-
 >[!NOTE]
 >
 >Die grundsätzliche Struktur des Adobe-Campaign-Arbeitsbereichs wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md) beschrieben.
 >  
->Mit Sendungen sowie der Profilverwaltung verbundene Funktionen werden in [diesem Abschnitt](../../delivery/using/communication-channels.md) erläutert.
+>All functionalities linked to deliveries and communication channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
 >
 >Alle kampagnenbezogenen Funktionen werden im Abschnitt [Auf Marketing-Kampagnen zugreifen](../../campaign/using/accessing-marketing-campaigns.md) ausführlich beschrieben.
 
 In Adobe Campaign bieten Pläne und Programme folgende über eine Standardkonfiguration hinausgehende Funktionen:
 
-* Budgetverwaltung. Weiterführende Informationen hierzu finden Sie unter [Verwaltung von Budgets](../../campaign/using/controlling-costs.md),
-* Aufgabenverwaltung. Weitere Informationen finden Sie unter [Verwaltung von Aufgaben](../../campaign/using/creating-and-managing-tasks.md),
-* Verwaltung von Marketing-Ressourcen. Weitere Informationen finden Sie unter [Verwalten von Ressourcen](../../campaign/using/managing-marketing-resources.md).
+* Budgetverwaltung. Weiterführende Informationen hierzu finden Sie unter [Verwaltung von Budgets](../../campaign/using/controlling-costs.md)
+
+* Aufgabenverwaltung. Weitere Informationen finden Sie unter [Verwaltung von Aufgaben](../../campaign/using/creating-and-managing-tasks.md)
+
+* Verwaltung von Marketing-Ressourcen. Weitere Informationen finden Sie unter [Verwalten von Ressourcen](../../campaign/using/managing-marketing-resources.md)
 
