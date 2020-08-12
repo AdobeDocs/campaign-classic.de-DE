@@ -14,18 +14,18 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1898'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# FDA Connectors konfigurieren {#specific-configurations-by-database-type}
+# Konfigurieren von FDA-Connectoren {#specific-configurations-by-database-type}
 
-Abhängig von der externen Datenbank, auf die Sie von Adobe Campaign aus zugreifen möchten, müssen Sie bestimmte Konfigurationen vornehmen. Hierzu zählen im Prinzip die Einrichtung von Treibern und die Deklaration von Umgebungsvariablen für jedes DBMS auf dem Adobe-Campaign-Server.
+Abhängig von der externen Datenbank, auf die Sie von Adobe Campaign aus zugreifen möchten, müssen Sie bestimmte Konfigurationen vornehmen. Hierzu zählen im Prinzip die Einrichtung von Treibern und die Deklaration von Umgebungsvariablen für jedes RDBMS auf dem Adobe-Campaign-Server.
 
 Weitere Informationen zu veralteten Connectoren wie Teradata, Hadoop 2.1 oder Netezza finden Sie auf dieser [Seite](../../platform/using/legacy-connectors.md).
 
@@ -419,7 +419,7 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
 
    Erstellen Sie dann eine neue TNS_ADMIN-Umgebungsvariable: Exportieren Sie TNS_ADMIN=/etc/oracle und starten Sie das Gerät neu.
 
-1. Integrieren Sie Oracle in Ihren Adobe Campaign-Server (nlserver). Dazu muss die Datei **customer.sh** im Navigationsbaum des Adobe Campaign-Servers im Ordner „nl6“ vorhanden sein; und die Datei muss die Links zu den Oracle-Bibliotheken enthalten.
+1. Integrieren Sie Oracle in Ihren Adobe Campaign-Server (nlserver). Dazu muss die Datei **customer.sh** im Navigationsbaum des Adobe Campaign-Servers im Ordner &quot;nl6&quot; vorhanden sein; und die Datei muss die Links zu den Oracle-Bibliotheken enthalten.
 
    Beispiel für einen Client in 11.2:
 
