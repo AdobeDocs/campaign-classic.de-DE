@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 96%
+source-wordcount: '997'
+ht-degree: 95%
 
 ---
 
@@ -27,13 +27,15 @@ ht-degree: 96%
 
 Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Mirror-Seiten-Link. Siehe [Gestaltungsbausteine einfügen](#inserting-personalization-blocks).
 
->[!NOTE]
->
->Gestaltungsbausteine sind auch im **[!UICONTROL Digital Content Editor (DCE)]** verfügbar. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/editing-content.md#inserting-a-personalization-block).
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#personalization-blocks-video)
 
 Auf Gestaltungsbausteine kann im Adobe Campaign-Explorer über den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden. Standardmäßig sind verschiedene Bausteine verfügbar (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks)).
 
 Sie haben die Möglichkeit, neue Bausteine zu definieren, mit denen Sie die Personalisierung Ihrer Sendungen verbessern können. Weitere Informationen finden Sie unter [Benutzerdefinierte Gestaltungsbausteine definieren](#defining-custom-personalization-blocks).
+
+>[!NOTE]
+>
+>Gestaltungsbausteine sind auch im **[!UICONTROL Digital Content Editor (DCE)]** verfügbar. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/editing-content.md#inserting-a-personalization-block).
 
 ## Gestaltungsbausteine einfügen {#inserting-personalization-blocks}
 
@@ -160,7 +162,7 @@ Gehen Sie wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
    * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
-## So personalisieren Sie E-Mails mit dynamischen Inhaltsblöcken
+## So personalisieren Sie E-Mails mit dynamischen Inhaltsblöcken {#personalization-blocks-video}
 
 Erfahren Sie, wie dynamische Inhaltsblöcke erstellt wurden und wie Sie sie verwenden, um den Inhalt Ihres E-Mail-Versands zu personalisieren.
 
