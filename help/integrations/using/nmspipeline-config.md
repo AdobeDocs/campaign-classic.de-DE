@@ -14,21 +14,21 @@ discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Pipeline-Option &quot;NmsPipeline_Config&quot;{#nmspipeline_config}
 
-Sobald die Authentifizierung funktioniert, [!DNL pipelined] können Sie die Ereignis abrufen und verarbeiten. Es verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert sind, wobei die anderen ignoriert werden. Der Auslöser muss aus Analytics erzeugt und zuvor in die Pipeline gedrängt worden sein.
-Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen abzufangen.
+Sobald die Authentifizierung funktioniert, kann [!DNL pipelined] die Ereignisse abrufen und verarbeiten. Verarbeitet werden nur Auslöser, die in Adobe Campaign konfiguriert wurden; andere werden ignoriert. Der Auslöser muss zuvor mit Analytics erzeugt und in die Pipeline gepusht worden sein.
+Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
 
-Die Konfiguration der Auslöser erfolgt in einer Option unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]**. Der Optionsname lautet **[!UICONTROL NmsPipeline_Config]**. Der Datentyp ist &quot;langer Text&quot;im JSON-Format.
+Die Konfiguration der Auslöser erfolgt in einer Option unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]**. Der Optionsname lautet **[!UICONTROL NmsPipeline_Config]**. Der Datentyp ist &quot;Memo&quot; im JSON-Format.
 
 In diesem Beispiel werden zwei Auslöser angegeben.
 
@@ -75,21 +75,21 @@ In diesem zweiten Beispiel werden alle Auslöser erfasst.
 
 >[!NOTE]
 >
->Der [!DNL Trigger] UID-Wert für einen bestimmten Auslösernamen in der Analytics-Oberfläche kann als Teil der URL-Abfrageparameter in der Trigger-Oberfläche gefunden werden. Die UID &quot;triggerType&quot;wird im Pipeline-Datenstrom übergeben und der Code kann in die Spalte &quot;ipeline.JS&quot;geschrieben werden, um die Auslöser-UID einer benutzerfreundlichen Beschriftung zuzuordnen, die in einer Spalte &quot;Auslösername&quot;im Schema &quot;pipeevents&quot;gespeichert werden kann.
+>Der [!DNL Trigger]-UID-Wert für einen bestimmten Auslösernamen in der Analytics-Oberfläche wird als Teil der URL-Abfragezeichenfolgen-Parameter in der Auslöser-Oberfläche angezeigt. Die UID &quot;triggerType&quot; wird im Pipeline-Datenstrom weitergeleitet. Außerdem kann Code in die Datei &quot;pipeline.JS&quot; geschrieben werden, um die Auslöser-UID einer anwenderfreundlichen Bezeichnung zuzuordnen, die in einer Spalte namens &quot;Auslösername&quot; im Schema &quot;pipelineEvents&quot; gespeichert werden kann.
 
-## Der Parameter &quot;Consumer&quot; {#consumer-parameter}
+## Der Parameter &quot;consumer&quot; {#consumer-parameter}
 
-Die Pipeline arbeitet mit einem &quot;Lieferanten- und Verbrauchermodell&quot;. Es kann viele Verbraucher in der gleichen Warteschlange geben. Nachrichten werden nur für einzelne Kunden &quot;konsumiert&quot;. Jeder Verbraucher erhält seine eigene &quot;Kopie&quot; der Nachrichten.
+Die Pipeline arbeitet mit einem &quot;Lieferanten- und Verbrauchermodell&quot;. In einer Warteschlange können viele Verbraucher sein. Nachrichten werden nur für einen einzelnen Verbraucher verwendet. Jeder Verbraucher erhält seine eigene &quot;Kopie&quot; der Nachrichten.
 
-Der Parameter &quot;Consumer&quot;identifiziert die Instanz als einen dieser Verbraucher. Es ist die Identität der Instanz, die die Pipeline aufruft. Sie können ihn mit dem Instanznamen füllen. Der Pipeline-Dienst verfolgt die von jedem Verbraucher abgerufenen Nachrichten. Durch die Verwendung unterschiedlicher Konsumenten für verschiedene Instanzen wird sichergestellt, dass jede Nachricht an jede Instanz gesendet wird.
+Der Parameter &quot;consumer&quot; identifiziert die Instanz als einen dieser Verbraucher. Die Pipeline wird durch die Identität der Instanz aufgerufen. Sie können den Namen der Instanz eingeben. Der Pipeline-Dienst verfolgt die von jedem Verbraucher abgerufenen Nachrichten. Durch Verwendung unterschiedlicher Verbraucher für verschiedene Instanzen wird sichergestellt, dass jede Nachricht an jede Instanz gesendet wird.
 
 ## Konfigurieren der Pipeline-Option {#configure-pipeline-option}
 
-Auslöser von Experience Clouden Hinzufügen oder bearbeiten unter dem Array &quot;Auslöser&quot;; Bearbeiten Sie nicht den Rest.
-Vergewissern Sie sich, dass JSON mithilfe dieser [Website](http://jsonlint.com/)gültig ist.
+Fügen Sie unter dem Array &quot;Auslöser&quot; Experience Cloud-Auslöser hinzu oder bearbeiten Sie sie. Lassen Sie den Rest unverändert.
+Vergewissern Sie sich mithilfe dieser [Website](http://jsonlint.com/), dass die JSON gültig ist.
 
-* &quot;name&quot;ist die Auslöser-ID. Ein Platzhalter (*) fängt alle Auslöser.
-* &quot;Consumer&quot;ist eine eindeutige Zeichenfolge, die die Instanz &quot;nlserver&quot;eindeutig identifiziert. Normalerweise kann es sich um den Instanznamen selbst handeln. Bei mehreren Umgebung (dev/stage/prod) müssen Sie sicherstellen, dass sie für jede einzelne Instanz eindeutig sind, damit jede Instanz eine Kopie der Nachricht erhält.
-* [!DNL Pipelined] unterstützt auch das Thema &quot;Aliase&quot;.
+* &quot;name&quot; ist die Auslöser-ID. Mit einem Platzhalter (*) werden alle Auslöser erfasst.
+* &quot;Consumer&quot; ist eine eindeutige Zeichenfolge, die die nlserver-Instanz eindeutig identifiziert. Normalerweise kann dies der Instanzname selbst sein. Bei verschiedenen Umgebungen (dev/stage/prod) müssen Sie jedoch sicherstellen, dass der Name für jede einzelne Instanz eindeutig ist, damit jede Instanz eine Kopie der Nachricht erhält.
+* [!DNL Pipelined] unterstützt auch &quot;Aliase&quot;.
 
-Starten Sie [!DNL pipelined] nach den Änderungen neu.
+Starten Sie [!DNL pipelined] nach Durchführung der Änderungen neu.
