@@ -14,11 +14,11 @@ discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a6b15dd1be6bb53b7a757d7fe1333314df9693a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ Das Prinzip der **Daten-Packages** besteht darin, eine Datenkonfiguration zu exp
 Es gibt drei Arten exportierbarer Packages: Benutzer-Packages, Plattform-Packages und Admin-Packages.
 
 * **Benutzer-Package**: Ermöglicht es, die Liste der zu exportierenden Entitäten auszuwählen. Dieser Package-Typ verwaltet Abhängigkeiten und überprüft Fehler.
-* **Plattformpaket**: Er umfasst alle zusätzlichen technischen Ressourcen (nicht standardmäßige): Schemas, JavaScript-Code usw.
+* **Plattform-Package**: Enthält alle hinzugefügten (nicht standardmäßigen) technischen Ressourcen: Schemata, JavaScript-Code etc.
 
    ![](assets/ncs_datapackage_package_platform.png)
 
-* **Admin-Paket**: Es enthält alle hinzugefügten Vorlagen und Geschäftsobjekte (nicht standardmäßige): Vorlagen, Bibliotheken usw.
+* **Admin-Package**: Enthält alle hinzugefügten (nicht standardmäßigen) Vorlagen und fachlichen Ressourcen: Vorlagen, Bibliotheken etc.
 
    ![](assets/ncs_datapackage_package_admin.png)
 
@@ -87,7 +87,7 @@ In unserem Beispiel wurden die Joins der &quot;folder&quot;- und &quot;company&q
 </recipient>
 ```
 
-Das Attribut **`operation`** mit dem Wert „none“ definiert eine Abstimmrelation.
+Das Attribut **`operation`** mit dem Wert &quot;none&quot; definiert eine Abstimmrelation.
 
 Ein Datenpackage kann manuell über einen beliebigen Texteditor erstellt werden. Es muss nur sichergestellt werden, dass die Struktur des XML-Dokuments mit dem &quot;xtk:navtree&quot;-Datenschema übereinstimmt. Die Adobe-Campaign-Konsole ist mit einem Modul zum Import und Export von Datenpackages ausgestattet.
 
@@ -315,7 +315,7 @@ Gehen Sie wie folgt vor, um ein Package über eine Package-Definition zu exporti
 
 Der Package-Import-Assistent wird über das Hauptmenü und die Rubrik **[!UICONTROL Werkzeuge > Erweitert > Package importieren...]** der Adobe-Campaign-Clientkonsole aufgerufen.
 
-You can import a package from an export performed earlier, e.g. from another Adobe Campaign instance, or a [built-in package](../../installation/using/installing-campaign-standard-packages.md), depending on the terms of your license.
+Sie können ein Package aus einem zuvor durchgeführten Export, zum Beispiel aus einer anderen Adobe Campaign-Instanz, oder je nach Ihren Lizenzbedingungen ein [natives Package](../../installation/using/installing-campaign-standard-packages.md) importieren.
 
 ![](assets/ncs_datapackage_import.png)
 
@@ -331,13 +331,13 @@ Klicken Sie auf **[!UICONTROL Weiter]** und **[!UICONTROL Starten]**, um den Imp
 
 ![](assets/ncs_datapackage_import_2.png)
 
-### Installing a built-in package {#installing-a-standard-package}
+### Installieren eines nativen Packages {#installing-a-standard-package}
 
-Standardpakete sind integrierte Pakete, die installiert werden, wenn das Adobe Campaign konfiguriert ist. Je nach Ihren Berechtigungen und Ihrem Bereitstellungsmodell können Sie neue Standardpakete importieren, wenn Sie neue Optionen oder Add-ons erwerben oder auf ein neues Angebot aktualisieren.
+Standardmäßige Packages sind native Packages, die bei der Konfiguration von Adobe Campaign installiert werden. Je nach Ihren Berechtigungen und Ihrem Bereitstellungsmodell können Sie neue Standard-Packages importieren, wenn Sie neue Optionen oder Add-ons erwerben oder ein Upgrade auf ein neues Produkt vornehmen.
 
 Entnehmen Sie Ihrem Lizenzvertrag, welche Packages Sie installieren können.
 
-For more information on built-in packages, refer to [this page](../../installation/using/installing-campaign-standard-packages.md).
+Weitere Informationen zu nativen Packages finden Sie auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md).
 
 ## Best Practices für Datenpackages {#data-package-best-practices}
 
@@ -357,7 +357,7 @@ Die wichtigsten Punkte sind folgende:
 >
 >Weiterführende Informationen zum Einrichten eines Workflows für das automatische Exportieren von Packages finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/export-packages-automatically.html).
 
-### Empfehlungen   {#data-package-recommendations}
+### Empfehlungen    {#data-package-recommendations}
 
 Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie müssen Ihre Packages zwischen zwei Instanzen bereitstellen, die denselben Build aufweisen. Erzwingen Sie den Import niemals und aktualisieren Sie immer zuerst die Plattform (wenn der Build abweicht).
 
@@ -413,7 +413,7 @@ Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt w
 * Kampagne: von 200 bis 299
 * Aktualisierung: 5000 bis 5999
 
-### Packages   {#data-packages}
+### Packages    {#data-packages}
 
 >[!NOTE]
 >
