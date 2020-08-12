@@ -14,11 +14,11 @@ discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2140468e52d78a91fc4128e9187d927f08e2f0ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Adobe IMS (Identity Management System) hilft Administratoren beim Erstellen und 
 
 >[!IMPORTANT]
 >
->Die Adobe IMS-Implementierung ist ausschließlich technischen Administratoren von Adobe vorbehalten. Wenden Sie sich an Ihren Adobe-Manager, um den Implementierungsprozess Beginn.
+>Die Adobe IMS-Implementierung ist technischen Administratoren von Adobe vorbehalten. Wenden Sie sich an Ihren Ansprechpartner bei Adobe, um mit der Implementierung zu beginnen.
 
 ## Verwandte Themen
 
