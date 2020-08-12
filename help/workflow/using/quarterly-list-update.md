@@ -1,6 +1,6 @@
 ---
-title: Aktualisierung der vierteljährlichen Liste unter Verwendung einer inkrementellen Abfrage
-description: In diesem Anwendungsfall wird eine inkrementelle Abfrage verwendet, um eine Empfänger-Liste automatisch zu aktualisieren.
+title: Vierteljährliches Listen-Update unter Verwendung einer inkrementellen Abfrage
+description: In diesem Anwendungsfall dient eine inkrementelle Abfrage zur automatischen Aktualisierung einer Empfängerliste.
 page-status-flag: never-activated
 uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
 contentOwner: sauviat
@@ -12,18 +12,18 @@ discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aa192d975a08246ba684940fff3d33853d7d9345
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '282'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
 
-# Aktualisierung der vierteljährlichen Liste unter Verwendung einer inkrementellen Abfrage {#quarterly-list-update}
+# Vierteljährliches Listen-Update unter Verwendung einer inkrementellen Abfrage {#quarterly-list-update}
 
-In the following example, an [incremental query](../../workflow/using/incremental-query.md) is used to automatically update a recipient list. These recipients are targeted as part of seasonal marketing campaigns.
+Im folgenden Beispiel wird eine [inkrementelle Abfrage](../../workflow/using/incremental-query.md) verwendet, um eine Empfängerliste automatisch zu aktualisieren. Diese wird regelmäßig im Rahmen saisonaler Marketing-Kampagnen verwendet.
 
 Jeweils zu Beginn einer neuen Saison werden geeignete sportliche Aktivitäten beworben. Dies bedeutet, dass die Listen einmal pro Quartal aktualisiert werden. Die Empfänger sollen jedoch im Rahmen dieser Kampagne nur einmal alle neun Monate angesprochen werden. Auf diese Weise wird eine eventuelle Werbemüdigkeit durch den Empfänger vermieden und sichergestellt, dass er im Laufe der Zeit Angebote für verschiedene Jahreszeiten erhält.
 
