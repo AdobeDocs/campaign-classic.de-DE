@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 90%
@@ -36,12 +36,12 @@ Wenn der Versand außerdem in einer Marketing-Kampagne enthalten ist, können Si
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
 
-In den meisten Fällen wird die Haupt-Zielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). However, recipients can also be stored in an external file. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+In den meisten Fällen wird die Haupt-Zielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können jedoch auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-Gehen Sie wie folgt vor, um den Empfänger eines Versands auszuwählen:
+To select the recipients of a delivery, follow the steps below:
 
 1. Wählen Sie im Versand-Editor &quot; **[!UICONTROL An]**&quot;.
-1. Wenn die Empfänger in der Datenbank gespeichert sind, wählen Sie die erste Option.
+1. If the recipients are stored in the database, choose the first option.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
@@ -235,9 +235,10 @@ Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Samen und Testversand hinzufügen und diese senden.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+
 Siehe auch:
 * [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
 
-* [Grundlagen zu Seed-Adressen](../../delivery/using/about-seed-addresses.md)
+* [About seed adresses](../../delivery/using/about-seed-addresses.md)
 
 * [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
