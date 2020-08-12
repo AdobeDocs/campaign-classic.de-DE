@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 98%
+source-wordcount: '3115'
+ht-degree: 97%
 
 ---
 
@@ -26,6 +26,8 @@ ht-degree: 98%
 # Sendungen zur Marketing-Kampagne {#marketing-campaign-deliveries}
 
 Sendungen können über das Dashboard einer Kampagne, einen Kampagnenworkflow oder direkt über die Übersicht der Sendungen erstellt werden.
+
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#create-email-video)
 
 ## Sendungen erstellen {#creating-deliveries}
 
@@ -78,6 +80,13 @@ Eine detaillierte Beschreibung der Funktionsweise des Workflow-Moduls erhalten S
 >[!IMPORTANT]
 >
 >Für dieselbe Kampagne können maximal 28 Workflows eingerichtet werden. Zusätzliche Workflows sind in der Benutzeroberfläche nicht sichtbar und können Fehler verursachen.
+
+### Erstellen einer E-Mail in einer Kampagne {#create-email-video}
+
+This video explains how to create a campaign and an email in Adobe Campaign Classic.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+
 
 #### Erstellen eines Zielgruppen-Workflows {#creating-a-targeting-workflow}
 
