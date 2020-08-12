@@ -243,9 +243,9 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Administrator]**
 
-   Die Operatoren in dieser Gruppe haben vollen Zugriff auf die Instanz. Administrators are users who can access the most technical parts of the interface. Sie haben die **[!UICONTROL Administratorrolle]** und stellen sicher, dass alle Plattformen eingerichtet sind.
+   The operators in this group have full access to the instance. Administratoren sind Benutzer, die auf die technischsten Teile der Benutzeroberfläche zugreifen können. They hold the **[!UICONTROL Administration]** role and make sure that the platform is all set up.
 
-   This group contains the following named right:
+   Diese Gruppe enthält den folgenden Namen right:
 
    * **[!UICONTROL ANWENDUNG]**: können Sie Objekte wie Workflow, Versand, Skripten usw. ausführen, erstellen, bearbeiten oder löschen.
 
@@ -357,7 +357,7 @@ Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte O
 
 Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](/help/platform/using/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/user_management.png)](https://docs.adobe.com/content/help/en/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![image](assets/user_management.png)](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Zugriffsverwaltungsordner {#folder-access-management}
 
