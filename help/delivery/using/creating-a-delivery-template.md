@@ -15,15 +15,17 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 79%
+source-wordcount: '375'
+ht-degree: 78%
 
 ---
 
 
 # Versandvorlage erstellen{#creating-a-delivery-template}
+
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#delivery-template-video)
 
 ## Einen bestehenden Versand in eine Vorlage konvertieren {#converting-an-existing-delivery-to-a-template}
 
@@ -74,19 +76,19 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 >
 >Zur Vermeidung von Konfigurationsfehlern wird empfohlen, keine neuen Vorlagen zu erstellen, sondern native Vorlagen zu duplizieren und die Eigenschaften je nach Bedarf anzupassen.
 
-## How to configure a delivery template
+## Konfigurieren einer Versandvorlage {#delivery-template-video}
 
-The following video demonstrates how to configure a template for an ad hoc delivery.
+Das folgende Video zeigt, wie eine Vorlage für einen Ad-hoc-Versand konfiguriert wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ## Einrichten der Eigenschaften von Versandvorlagen
 
-The following video shows how to set the delivery template properties and explains each property in detail.
+Das folgende Video zeigt, wie die Eigenschaften der Versandvorlage festgelegt werden, und erklärt die einzelnen Eigenschaften im Detail.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
-## How to deploy an ad-hoc delivery template
+## Bereitstellen einer Ad-hoc-Versandvorlage
 
 This video explains how to deploy an ad-hoc email delivery template and it explains the difference between an email delivery and a delivery workflow.
 
