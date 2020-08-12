@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 92%
+source-wordcount: '1631'
+ht-degree: 91%
 
 ---
 
@@ -25,13 +25,7 @@ ht-degree: 92%
 
 Mit Adobe Campaign können Sie das neue interaktive Format [AMP für E-Mail](https://amp.dev/about/email/) testen, das unter bestimmten Bedingungen das Senden dynamischer E-Mails ermöglicht.
 
->[!IMPORTANT]
->
->* Dieses Leistungsmerkmal ist eine Beta-Funktion in Adobe Campaign.
->* AMP for Email ist ein neues Open-Source-Format, mit dem Entwickler dynamische und interaktive E-Mails erstellen können. Derzeit wird es nur von wenigen E-Mail-Anbietern unterstützt: Gmail, Outlook und Mail.ru.
-
-
-Aktuell haben Sie nur folgende Möglichkeiten:
+In dieser Version können Sie:
 * den Versand von AMP-E-Mails nur an bestimmten, entsprechend konfigurierten Adressen testen.
 * AMP-E-Mails an Adressen von Gmail, Outlook oder Mail.ru senden, nachdem Sie sich bei den entsprechenden Anbietern registriert haben.
 
@@ -39,11 +33,10 @@ Weiterführende Informationen zum Testen und Senden von AMP-E-Mails finden Sie u
 
 Diese Funktion ist über ein dediziertes Package in Adobe Campaign verfügbar. Damit Sie es verwenden können, muss dieses Package installiert sein. Starten Sie nach Abschluss des Vorgangs den Server neu, damit das Package berücksichtigt wird.
 
-Bei hybriden und gehosteten Architekturen muss das Paket auf allen Servern installiert werden, einschließlich [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md) und [Ausführungsinstanz](../../message-center/using/creating-a-shared-connection.md#execution-instance). Wenden Sie sich diesbezüglich an Ihren Kundenbetreuer.
+>[!NOTE]
+>
+>Bei hybriden und gehosteten Architekturen muss das Paket auf allen Servern installiert werden, einschließlich [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md) und [Ausführungsinstanz](../../message-center/using/creating-a-shared-connection.md#execution-instance). Wenden Sie sich diesbezüglich an Ihren Kundenbetreuer.
 
-In dem folgenden Video wird erläutert, wie AMP in Adobe Campaign Classic aktiviert wird, und die Verwendung wird erläutert.
-
->[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
 ## Informationen zu AMP for Email {#about-amp-for-email}
 
@@ -53,6 +46,8 @@ Beispiel:
 * Mit AMP geschriebene E-Mails können interaktive Elemente wie Bilderkarussells enthalten.
 * Der Inhalt in der Nachricht bleibt auf dem neuesten Stand.
 * Die Empfänger können beispielsweise auf ein Formular reagieren, ohne den Posteingang verlassen zu müssen.
+
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#amp-email-video)
 
 AMP for Email ist mit vorhandenen E-Mails kompatibel. Die AMP-Version der Nachricht wird als neuer MIME-Teil in die E-Mail eingebettet, zusätzlich zu HTML und/oder Nur-Text, sodass die Kompatibilität bei allen E-Mail-Clients gewährleistet ist.
 
@@ -175,7 +170,7 @@ Sie können das Senden dynamischer Nachrichten von Adobe Campaign an ausgewählt
 >
 >Zurzeit unterstützen nur Gmail, Outlook und Mail.ru ein Testen des AMP-Formats.
 
-Bei Gmail und Outlook müssen Sie zuerst die Absenderadresse(n) hinzufügen, die Sie zur Zulassungsliste verwenden, um aus Adobe Campaign für die Gmail- und Outlook-Konten, die Sie als Ziel auswählen, zu übermitteln.
+For Gmail and Outlook, you must first add the sender address(es) you are using to the allow list to deliver from Adobe Campaign for the Gmail and Outlook accounts you are targeting.
 
 Gehen Sie dazu wie folgt vor:
 1. Stellen Sie sicher, dass die Option zum Aktivieren dynamischer E-Mail bei den entsprechenden E-Mail-Anbietern aktiviert ist.
@@ -218,3 +213,9 @@ Wenn Sie beispielsweise eine Produktliste in Ihrer E-Mail eingefügt haben und d
 >Sie können eine E-Mail-Verarbeitungsregel erstellen, um zu verhindern, dass bestimmte Domains AMP-E-Mails empfangen. Siehe [Verwalten von E-Mail-Formaten](../../installation/using/email-deliverability.md#managing-email-formats).
 >
 >Standardmäßig ist die Option **[!UICONTROL AMP-Einbindung]** auf **[!UICONTROL Nein]** gesetzt.
+
+## So aktivieren und verwenden Sie AMP für E-Mails {#amp-email-video}
+
+In dem folgenden Video wird erläutert, wie AMP in Adobe Campaign Classic aktiviert wird, und die Verwendung wird erläutert.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
