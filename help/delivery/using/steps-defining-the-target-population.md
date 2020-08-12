@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 32076ea0a817d8649d1db9e39628221e15ede37e
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1725'
 ht-degree: 90%
 
 ---
@@ -38,10 +38,10 @@ Wenn der Versand außerdem in einer Marketing-Kampagne enthalten ist, können Si
 
 In den meisten Fällen wird die Haupt-Zielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können jedoch auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-To select the recipients of a delivery, follow the steps below:
+Gehen Sie wie folgt vor, um den Empfänger eines Versands auszuwählen:
 
 1. Wählen Sie im Versand-Editor &quot; **[!UICONTROL An]**&quot;.
-1. If the recipients are stored in the database, choose the first option.
+1. Wenn die Empfänger in der Datenbank gespeichert sind, wählen Sie die erste Option.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
@@ -174,6 +174,9 @@ Sie können die Größe der Zielpopulation verringern. Geben Sie dazu die Anzahl
 
 Ein Testversand ist eine spezifische Nachricht, die den eigentlichen Versand prüft, bevor er an die Hauptzielgruppe gesendet wird. Die Testversand-Empfänger sind verantwortlich für die Überprüfung des Inhalts und der Form von Sendungen.
 
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#seeds-and-proofs-video)
+
+
 Um die Testversand-Zielgruppe auszuwählen, gehen Sie wie folgt vor:
 
 1. Wählen Sie den Link **[!UICONTROL An]** aus.
@@ -230,7 +233,7 @@ Sie können **[!UICONTROL Testadressen]** als Testversand-Zielgruppe verwenden: 
 
 Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können Sie die Bestimmung einer speziellen Testversand-Zielgruppe und die Verwendung von Testadressen kombinieren. Die entsprechende Konfiguration erfolgt dann in zwei getrennten Tabs.
 
-## Verwalten von Saatgut und Testversänden in einer E-Mail
+## Verwalten von Saatgut und Testversänden in einer E-Mail {#seeds-and-proofs-video}
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Samen und Testversand hinzufügen und diese senden.
 
@@ -239,6 +242,6 @@ In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Samen und Testver
 Siehe auch:
 * [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
 
-* [About seed adresses](../../delivery/using/about-seed-addresses.md)
+* [Grundlagen zu Seed-Adressen](../../delivery/using/about-seed-addresses.md)
 
 * [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
