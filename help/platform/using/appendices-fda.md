@@ -14,9 +14,9 @@ discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1417'
 ht-degree: 100%
 
@@ -203,7 +203,7 @@ Stellen Sie sicher, dass der Pfad des Treibers und der Dienstprogramme in der PA
 Wenn beim Testen der Verbindung der Fehler **TIM-030008 Datum &#39;2&#39;: fehlende Zeichen (iRc = -53)** auftritt, stellen Sie sicher, dass der ODBC-Treiber korrekt installiert ist und LD_LIBRARY_PATH (Linux)/PATH (Windows) für den Campaign-Server festlegt wurde.
 
 Der Fehler **ODB-240000 ODBC-Fehler:[Microsoft][ODBC Driver Manager]-Datenquellenname nicht gefunden und kein Standardtreiber angegeben.** tritt unter Windows auf, wenn Sie einen 16.X-Treiber verwenden. Adobe Campaign erwartet, dass Teradata in odbcinst.ini den Namen „{teradata}“ hat.
-Wenn die Version Ihres Adobe Campaign-Servers 18.10 lautet, können Sie ODBCDRiverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Führen Sie odbcad32.exe aus und gehen Sie zum Treiber-Tab, um den genauen Namen abzurufen.
+Wenn die Version Ihres Adobe Campaign-Servers 18.10 lautet, können Sie ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Führen Sie odbcad32.exe aus und gehen Sie zum Treiber-Tab, um den genauen Namen abzurufen.
 Für Versionen älter als 18.10 müssen Sie den Teradata-Abschnitt der odbcinst.ini, der durch die Treiberinstallation erstellt wurde, in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann regedit verwendet werden.
 
 Wenn Sie eine Latin-1-Datenbank verwenden, müssen Sie APICharSize=1 in den Optionen hinzufügen.
@@ -220,7 +220,7 @@ Die für die Verbindung verwendete Zeitzone wird angezeigt, wenn nlserver mit -v
 15:04:04 >   ODB-240007 Teradata: will use 'Europe Central' as session time zone.
 ```
 
-Wenn die verwendete Zeitzone nicht die richtige ist, kann eine Option mit dem Namen „TimeZoneName“ im externen Konto hinzugefügt werden. Verwenden Sie in diesem Fall den Wert von Teradata, z. B. „TimeZoneName=Europe Central“.
+Wenn die verwendete Zeitzone nicht die richtige ist, kann eine Option mit dem Namen &quot;TimeZoneName&quot; im externen Konto hinzugefügt werden. Verwenden Sie in diesem Fall den Wert von Teradata, z. B. &quot;TimeZoneName=Europe Central&quot;.
 
 Bei Massenladevorgängen oder Schnellladevorgängen (Fast Load) in Teradata-Dokumenten kann Campaign die Zeitzone nicht angeben. Es wird daher empfohlen, die Standardzeitzone des Benutzers festzulegen, über den Campaign die Verbindung herstellt:
 
