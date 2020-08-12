@@ -18,26 +18,26 @@ translation-type: tm+mt
 source-git-commit: 9f70468e3dd7003a18812d07669f10c561e8bef7
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# Triggers-Ereignisse {#events}
+# Auslöser-Ereignisse {#events}
 
 ## Verarbeiten von Ereignissen in JavaScript {#events-javascript}
 
 ### JavaScript-Datei {#file-js}
 
-Pipeline verwendet eine JavaScript-Funktion, um jede Meldung zu verarbeiten. Diese Funktion ist benutzerdefiniert.
+Die Pipeline verwendet eine JavaScript-Funktion, um jede Nachricht zu verarbeiten. Diese Funktion ist benutzerdefiniert.
 
-Es wird in der Option **[!UICONTROL NmsPipeline_Config]** unter dem Attribut &quot;JSConnector&quot;konfiguriert. Dieses Javascript wird jedes Mal aufgerufen, wenn ein Ereignis empfangen wird. Es wird vom [!DNL pipelined] Prozess ausgeführt.
+Sie wird in der Option **[!UICONTROL NmsPipeline_Config]** unter dem Attribut &quot;JSConnector&quot; konfiguriert. Dieses JavaScript wird jedes Mal aufgerufen, wenn ein Ereignis empfangen wird. Es wird vom [!DNL pipelined]-Prozess ausgeführt.
 
 Die JS-Beispieldatei lautet &quot;cus:Trigger.js&quot;.
 
 ### JavaScript-Funktion {#function-js}
 
-Das [!DNL pipelined] Javascript muss mit einer bestimmten Funktion Beginn werden.
+Das [!DNL pipelined]-JavaScript muss mit einer bestimmten Funktion beginnen.
 
 Diese Funktion wird für jedes Ereignis einmal aufgerufen:
 
@@ -45,22 +45,22 @@ Diese Funktion wird für jedes Ereignis einmal aufgerufen:
 function processPipelineMessage(xmlTrigger) {}
 ```
 
-Es sollte als
+Sie sollte zurückgegeben werden als
 
 ```
 <undefined/>
 ```
 
-Starten Sie [!DNL pipelined] nach der Bearbeitung des JS neu.
+Starten Sie [!DNL pipelined] nach Bearbeitung des JS neu.
 
-### Auslöserdatenformat {#trigger-format}
+### Datenformat des Auslösers {#trigger-format}
 
-Die [!DNL trigger] Daten werden an die JS-Funktion übergeben. Es ist im XML-Format.
+Die [!DNL trigger]-Daten werden an die JS-Funktion übergeben. Sie liegen im XML-Format vor.
 
-* Das **[!UICONTROL @triggerId]** -Attribut enthält den Namen des [!DNL trigger].
-* Das **Anreicherungen** -Element im JSON-Format enthält die von Analytics generierten Daten und wird an den Auslöser angehängt.
-* **[!UICONTROL @offset]** ist der &quot;Zeiger&quot;auf die Nachricht. Es gibt die Reihenfolge der Nachricht in der Warteschlange an.
-* **[!UICONTROL @partitio]**n ist ein Container von Nachrichten in der Warteschlange. Der Offset ist relativ zu einer Partition. <br>Es sind etwa 15 Partitionen in der Warteschlange.
+* Das **[!UICONTROL @triggerId]**-Attribut enthält den Namen des [!DNL trigger].
+* Das Element **Anreicherungen** im JSON-Format enthält die von Analytics generierten Daten und wird an den Auslöser angehängt.
+* **[!UICONTROL @offset]** ist der &quot;Zeiger&quot; auf die Nachricht. Er gibt die Reihenfolge der Nachrichten in der Warteschlange an.
+* **[!UICONTROL @partitio]**n ist ein Container mit Nachrichten, die sich in der Warteschlange befinden. Der Versatz ist relativ zu einer Partition. <br>Es gibt etwa 15 Partitionen in der Warteschlange.
 
 Beispiel:
 
@@ -75,14 +75,14 @@ Beispiel:
 
 >[!NOTE]
 >
->Es handelt sich dabei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
+>Es handelt sich hierbei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
 
-Der Inhalt wird in Analytics für jeden Auslöser definiert. Es ist im JSON-Format.
-Beispiel: In einem Auslöser logoUpload_uploading_Visits:
+Für jeden Auslöser wird in Analytics der Inhalt definiert. Er liegt im JSON-Format vor.
+Zum Beispiel im Auslöser &quot;logoUpload_uploading_Visits&quot;:
 
-* **[!UICONTROL eVar01]** kann die Shopper-ID enthalten, die zur Abstimmung mit Kampagne-Empfängern verwendet wird. Es ist im Zeichenfolgenformat. <br>Es muss abgeglichen werden, um die Shopper-ID zu finden, die der Hauptschlüssel ist.
+* **[!UICONTROL eVar01]** kann die Käufer-ID enthalten, die zur Abstimmung mit Campaign-Empfängern verwendet wird. Sie liegt im Zeichenfolgenformat vor. <br>Sie muss abgestimmt werden, um die Käufer-ID (den Primärschlüssel) zu ermitteln.
 
-* **[!UICONTROL timeGMT]** kann die Zeit des Auslösers auf der Analytics-Seite enthalten. Es hat das Format UTC Epoch (Sekunden seit dem 01/01/1970 UTC).
+* **[!UICONTROL timeGMT]** kann die Zeit des Auslösers auf der Analytics-Seite enthalten. Das Format lautet UTC Epoch (Sekunden seit dem 1.1.1970 UTC).
 
 Beispiel:
 
@@ -110,24 +110,24 @@ Beispiel:
 
 ### Reihenfolge der Verarbeitung von Ereignissen {#order-events}
 
-Die Ereignis werden einzeln in der Reihenfolge des Versatzes verarbeitet. Jeder Thread der [!DNL pipelined] Prozesse verarbeitet eine andere Partition.
+Die Ereignisse werden nacheinander in der Reihenfolge des Versatzes verarbeitet. Jeder Thread des [!DNL pipelined]-Prozesses verarbeitet eine andere Partition.
 
-Der &quot;Offset&quot;des letzten abgerufenen Ereignisses wird in der Datenbank gespeichert. Wenn der Prozess gestoppt wird, wird er daher mit der letzten Meldung neu gestartet. Diese Daten werden im integrierten Schema xtk:pipelineoffset gespeichert.
+Der &quot;Versatz&quot; des letzten abgerufenen Ereignisses wird in der Datenbank gespeichert. Wenn der Prozess angehalten wird, startet er daher bei der letzten Nachricht neu. Diese Daten werden im nativen Schema &quot;xtk:pipelineOffset&quot; gespeichert.
 
-Dieser Zeiger ist für jede Instanz und jeden Verbraucher spezifisch. Wenn also viele Instanzen mit unterschiedlichen Verbrauchern auf dieselbe Pipeline zugreifen, erhalten sie alle Nachrichten in derselben Reihenfolge.
+Dieser Zeiger ist für jede Instanz und jeden Verbraucher spezifisch. Wenn verschiedene Instanzen auf dieselbe Pipeline mit unterschiedlichen Verbrauchern zugreifen, erhalten diese also alle Nachrichten in derselben Reihenfolge.
 
-Der Parameter &quot;Consumer&quot;der Pipeline-Option gibt die aufrufende Instanz an.
+Der Parameter &quot;consumer&quot; der Pipeline-Option identifiziert die aufrufende Instanz.
 
-Derzeit gibt es keine Möglichkeit, unterschiedliche Warteschlangen für separate Umgebung wie &quot;Staging&quot;oder &quot;dev&quot;zu haben.
+Derzeit gibt es keine Möglichkeit, unterschiedliche Warteschlangen für separate Umgebungen wie &quot;staging&quot; oder &quot;dev&quot; zu nutzen.
 
-### Protokollierung und Fehlerverarbeitung {#logging-error-handling}
+### Protokollierung und Fehlerbehandlung {#logging-error-handling}
 
-Protokolle wie logInfo() werden an das [!DNL pipelined] Protokoll weitergeleitet. Fehler wie logError() werden in das [!DNL pipelined] Protokoll geschrieben und führen dazu, dass das Ereignis in eine Wiederholungswarteschlange gestellt wird. Überprüfen Sie das Pipeline-Protokoll.
-Fehlermeldungen werden in der in den [!DNL pipelined] Optionen festgelegten Dauer mehrmals wiederholt.
+Logs wie &quot;logInfo()&quot; werden an das [!DNL pipelined]-Log weitergeleitet. Fehler wie &quot;logError()&quot; werden in das [!DNL pipelined]-Log geschrieben und führen dazu, dass das Ereignis in eine Warteschlange für erneute Versuche gestellt wird. Überprüfen Sie das Pipelined-Protokoll.
+Bei fehlerhaften Nachrichten werden im Zeitraum, der in den [!DNL pipelined]-Optionen festgelegt ist, mehrmals erneute Versuche ausgeführt.
 
-Für Debugging- und Überwachungszwecke werden die vollständigen Auslösedaten in die Auslösetabelle geschrieben. Sie befindet sich im Feld &quot;data&quot;im XML-Format. Alternativ dazu dient eine logInfo()-Funktion, die die Auslöserdaten enthält, demselben Zweck.
+Für Debugging- und Überwachungszwecke werden die vollständigen Auslöserdaten in die Auslösertabelle geschrieben. Sie liegen im Feld &quot;data&quot; im XML-Format vor. Alternativ dazu sind die Auslöserdaten auch in &quot;logInfo()&quot; verfügbar.
 
-### Daten analysieren {#data-parsing}
+### Analysieren der Daten {#data-parsing}
 
 Dieser JS-Beispielcode analysiert die eVar01 in den Anreicherungen.
 
@@ -148,14 +148,14 @@ function processPipelineMessage(xmlTrigger)
  }
 ```
 
-Gehen Sie beim Analysieren vorsichtig vor, um Fehler zu vermeiden.
-Da dieser Code für alle Auslöser verwendet wird, sind die meisten Daten nicht erforderlich. Daher kann es leer bleiben, wenn nicht vorhanden.
+Gehen Sie beim Analysieren sorgfältig vor, um Fehler zu vermeiden.
+Da dieser Code für alle Auslöser verwendet wird, sind die meisten Daten nicht erforderlich. Sie können daher leer bleiben, wenn nicht vorhanden.
 
 ### Speichern des Auslösers {#storing-triggers-js}
 
 >[!NOTE]
 >
->Es handelt sich dabei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
+>Es handelt sich hierbei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
 
 Dieser JS-Beispielcode speichert den Auslöser in der Datenbank.
 
@@ -181,67 +181,67 @@ function processPipelineMessage(xmlTrigger)
 
 ### Einschränkungen {#constraints}
 
-Die Leistung für diesen Code muss optimal sein, da er mit hohen Frequenzen ausgeführt wird. Für andere Marketing-Aktivitäten können negative Auswirkungen auftreten. Vor allem, wenn die Verarbeitung von mehr als einer Million Auslöser-Ereignis pro Stunde auf dem Marketing-Server. Oder wenn es nicht richtig eingestellt ist.
+Die Leistung für diesen Code muss optimal sein, da er häufig ausgeführt wird. Andere Marketing-Aktivitäten können beeinträchtigt werden. Dies gilt besonders, wenn auf dem Marketing-Server mehr als eine Million Auslöserereignisse pro Stunde verarbeitet werden oder wenn keine richtige Optimierung vorgenommen wurde.
 
-Der Kontext dieses Javascripts ist begrenzt. Es sind nicht alle Funktionen der API verfügbar. Beispielsweise funktionieren getOption() oder getCurrentdate() nicht.
+Der Kontext dieses JavaScripts ist begrenzt. Es sind nicht alle Funktionen der API verfügbar. Beispielsweise funktionieren &quot;getOption()&quot; und &quot;getCurrentdate()&quot; nicht.
 
-Um eine schnellere Verarbeitung zu ermöglichen, werden mehrere Threads dieses Skripts gleichzeitig ausgeführt. Der Code muss threadsicher sein.
+Um eine schnellere Verarbeitung zu ermöglichen, werden mehrere Threads des Skripts gleichzeitig ausgeführt. Der Code muss Thread-sicher sein.
 
 ## Speichern der Ereignisse {#store-events}
 
 >[!NOTE]
 >
->Es handelt sich dabei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
+>Es handelt sich hierbei um ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
 
-### Pipeline-Ereignis-Schema {#pipeline-event-schema}
+### Pipeline-Ereignisschema {#pipeline-event-schema}
 
-Ereignis werden in einer Datenbanktabelle gespeichert. Es wird von Marketing-Kampagnen zur Zielgruppe von Kunden und zur Aufbereitung von E-Mails mithilfe von Triggern verwendet.
-Obwohl jeder Auslöser eine eigene Datenstruktur haben kann, können alle Auslöser in einer einzigen Tabelle gehalten werden.
-Das Feld &quot;triggerType&quot;gibt an, von welchem Auslöser die Daten stammen.
+Ereignisse werden in einer Datenbanktabelle gespeichert. Sie werden in Marketing-Kampagnen verwendet, um mithilfe von Auslösern Zielkunden zu bestimmen und E-Mails anzureichern.
+Zwar kann jeder Auslöser eine eigene Datenstruktur aufweisen, doch lassen sich alle Auslöser in einer einzigen Tabelle speichern.
+Das Feld &quot;triggerType&quot; gibt an, von welchem Auslöser die Daten stammen.
 
-Hier ein Beispiel für einen Schema-Code für diese Tabelle:
+Hier ist ein Beispiel für einen Schema-Code für diese Tabelle:
 
 | Attribut | Typ | Titel | Beschreibung  |
 |:-:|:-:|:-:|:-:|
-| pipelineEventId | lang | Primärschlüssel | Der interne Primärschlüssel des Auslösers. |
-| data | Memo | Auslöserdaten | Der vollständige Inhalt der Auslöserdaten im XML-Format. Für Debugging- und Prüfzwecke. |
-| triggerType | Zeichenfolge 50 | TriggerType | Der Name des Auslösers. Identifiziert das Verhalten des Kunden auf der Website. |
-| shopper_id | Zeichenfolge 32 | shopper_id | Die interne Kennung des Käufers. Wird durch den Abgleicharbeitsablauf festgelegt. Bei null bedeutet dies, dass der Kunde in der Kampagne unbekannt ist. |
-| shopper_key | lang | shopper_key | Die Externe Kennung des Käufers, wie sie von Analytics erfasst wird. |
-| created | Datum/Uhrzeit | Created | Der Zeitpunkt, zu dem das Ereignis in Kampagne erstellt wurde. |
-| lastModified | Datum/Uhrzeit | Zuletzt geändert | Das letzte Mal, dass das Ereignis in der Adobe geändert wurde. |
-| timeGMT | Datum/Uhrzeit | Zeitstempel | Der Zeitpunkt, zu dem das Ereignis in Analytics generiert wurde. |
+| pipelineEventId | Lang | Primärschlüssel | Der interne Primärschlüssel des Auslösers. |
+| data | Memo | Auslöserdaten | Der vollständige Inhalt der Auslöserdaten im XML-Format. Für Debugging- und Audit-Zwecke. |
+| triggerType | String 50 | TriggerType | Der Name des Auslösers. Identifiziert das Verhalten des Kunden auf der Website. |
+| shopper_id | String 32 | shopper_id | Die interne Kennung des Käufers. Wird durch den Abstimmungs-Workflow festgelegt. &quot;zero&quot; bedeutet, dass der Kunde in Campaign unbekannt ist. |
+| shopper_key | Lang | shopper_key | Die externe Kennung des Käufers, wie von Analytics erfasst. |
+| Erstellt | Datum/Uhrzeit | Erstellt | Der Zeitpunkt, zu dem das Ereignis in Campaign erstellt wurde. |
+| lastModified | Datum/Uhrzeit | Zuletzt geändert | Der letzte Zeitpunkt, zu dem das Ereignis in Adobe geändert wurde. |
+| timeGMT | Datum/Uhrzeit | Zeitstempel | Der Zeitpunkt, zu dem das Ereignis in Analytics erstellt wurde. |
 
 ### Anzeigen der Ereignisse {#display-events}
 
-Die Ereignisse können mit einem einfachen Formular auf der Grundlage des Ereignisses-Schemas angezeigt werden.
+Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema basiert, angezeigt werden.
 
 >[!NOTE]
 >
->Der Knoten Pipeline-Ereignis ist nicht integriert und muss hinzugefügt werden. Das zugehörige Formular muss in Kampagne erstellt werden. Diese Vorgänge sind nur für Benutzer von Experten verfügbar. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../configuration/using/about-navigation-hierarchy.md) und [Bearbeitung von Formularen](../../configuration/using/editing-forms.md).
+>Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../configuration/using/about-navigation-hierarchy.md) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
-## Verarbeitung der Ereignis {#processing-the-events}
+## Verarbeiten der Ereignisse {#processing-the-events}
 
-### Abgleichungsarbeitsablauf {#reconciliation-workflow}
+### Abstimmungs-Workflow {#reconciliation-workflow}
 
-Bei der Abstimmung wird der Kunde von Analytics in die Kampagne-Datenbank aufgenommen. Die Kriterien für die Übereinstimmung können beispielsweise die &quot;shopper_id&quot;sein.
+Bei der Abstimmung wird der Kunde von Analytics mit der Campaign-Datenbank abgeglichen. Das Kriterium für die Abstimmung kann beispielsweise &quot;shopper_id&quot; sein.
 
-Aus Leistungsgründen muss die Übereinstimmung im Stapelmodus durch einen Workflow erfolgen.
-Die Häufigkeit muss auf 15 Minuten eingestellt werden, um die Arbeitslast zu optimieren. Die Verzögerung zwischen dem Empfang eines Ereignisses in Adobe Campaign und seiner Verarbeitung durch einen Marketingarbeitsablauf beträgt daher bis zu 15 Minuten.
+Aus Leistungsgründen muss die Abstimmung von einem Workflow im Batch-Modus vorgenommen werden.
+Die Häufigkeit muss für eine optimale Arbeitslast auf 15 Minuten gesetzt werden. Die Verzögerung zwischen dem Empfang eines Ereignisses in Adobe Campaign und dessen Verarbeitung durch einen Marketing-Workflow beträgt daher bis zu 15 Minuten.
 
-### Optionen für die Einheitenaussöhnung in JavaScript {#options-unit-reconciliation}
+### Optionen zur Abstimmung von Einheiten in JavaScript {#options-unit-reconciliation}
 
-Theoretisch ist es möglich, die Abfrage zur Aussöhnung für jeden Auslöser in JavaScript auszuführen. Sie hat eine höhere Leistung und führt zu schnelleren Ergebnissen. Sie kann für spezifische Anwendungsfälle erforderlich sein, wenn eine Reaktivität erforderlich ist.
+Theoretisch ist es möglich, die Abstimmungsabfrage für jeden Auslöser im JavaScript auszuführen. Das sorgt für eine höhere Leistung und schnellere Ergebnisse. Dies kann für spezifische Anwendungsfälle erforderlich sein, wenn eine Reaktionsrate erforderlich ist.
 
-Es kann schwierig sein, dies zu tun, wenn kein Index für shopper_id festgelegt ist. Wenn sich die Kriterien auf einem separaten Datenbankserver als dem Marketingserver befinden, wird ein Datenbanklink verwendet, der eine schlechte Leistung aufweist.
+Doch das kann schwierig sein, wenn kein Index für &quot;shopper_id&quot; festgelegt ist. Wenn sich die Kriterien auf einem anderen Datenbank-Server als dem Marketing-Server befinden, wird ein Datenbank-Link mit geringer Leistung verwendet.
 
-### Arbeitsablauf löschen {#purge-workflow}
+### Workflow bereinigen {#purge-workflow}
 
-Auslöser werden innerhalb der Stunde verarbeitet, sodass es keinen Grund gibt, sie für eine lange Zeit zu behalten. Das Volumen kann etwa 1 Million Auslöser pro Stunde betragen. Es erklärt, warum ein Bereinigungsarbeitsablauf eingerichtet werden muss. Die Bereinigung löscht alle Auslöser, die älter als drei Tage sind und einmal pro Tag ausgeführt werden.
+Auslöser werden innerhalb einer Stunde verarbeitet, sodass es keinen Grund gibt, sie lange aufzubewahren. Das Volumen kann etwa 1 Million Auslöser pro Stunde betragen. Aus diesem Grund muss ein Bereinigungs-Workflow eingerichtet werden. Bei der Bereinigung werden alle Auslöser gelöscht, die älter als drei Tage sind. Dieser Vorgang wird einmal pro Tag ausgeführt.
 
-### Arbeitsablauf für Kampagnen {#campaign-workflow}
+### Kampagnen-Workflow {#campaign-workflow}
 
-Der Arbeitsablauf für die Kampagne von Auslösern ist oft ähnlich wie andere wiederkehrende Kampagnen, die verwendet wurden.
-Beispielsweise kann es mit einer Abfrage auf den Auslösern, die während des letzten Tages nach bestimmten Ereignissen suchen, Beginn geben. Diese Zielgruppe wird verwendet, um die E-Mail zu senden. Anreicherungen oder Daten können vom Auslöser stammen. Es kann von Marketing sicher verwendet werden, da es keine Konfiguration erfordert.
+Der Kampagnen-Workflow für Auslöser ähnelt oft anderen wiederkehrenden Kampagnen, die bereits verwendet wurden.
+Beispielsweise kann er mit einer Abfrage nach den Auslösern starten, um nach bestimmten Ereignissen zu suchen, die während des letzten Tages stattgefunden haben. Diese Zielgruppe wird zum Senden der E-Mail genutzt. Anreicherungen oder Daten können vom Auslöser übernommen werden. Sie können vom Marketing-Team sicher verwendet werden, da keine Konfiguration erforderlich ist.
