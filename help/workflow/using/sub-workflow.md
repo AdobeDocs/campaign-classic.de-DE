@@ -14,11 +14,11 @@ discoiquuid: a4441820-1b3d-4bac-a6e3-1c9c14466d19
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9f55a2014546ce08972f51e4930ce04d4ce0c188
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Mit der Aktivität **[!UICONTROL Unter-Workflow]** kann die Ausführung eines an
 
 Sie können in einem einzigen Workflow mehrere Unter-Workflows starten. Unter-Workflows werden synchron ausgeführt.
 
-Im folgenden Beispiel wird ein primärer Arbeitsablauf unter Verwendung von Jumps aufgerufen. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](../../workflow/using/jump--start-point-and-end-point-.md).
+Im folgenden Beispiel ruft ein primärer Workflow einen Unter-Workflow mithilfe von Sprüngen auf. Weiterführende Informationen zu grafischen Objekten vom Typ &quot;Sprung&quot; finden Sie in [diesem Abschnitt](../../workflow/using/jump--start-point-and-end-point-.md).
 
 1. Erstellen Sie einen Workflow, den Sie als Unter-Workflow in einem anderen Workflow verwenden möchten.
 1. Fügen Sie am Anfang des Workflows eine Aktivität vom Typ **[!UICONTROL Sprung (Ziel)]** mit der Priorität 1 ein. Wenn mehrere &quot;Ziel&quot;-Sprünge vorhanden sind, verwendet Adobe Campaign den &quot;Ziel&quot;-Sprung mit der niedrigsten Nummer.
@@ -57,17 +57,17 @@ Im folgenden Beispiel wird ein primärer Arbeitsablauf unter Verwendung von Jump
 
 1. Führen Sie den Workflow aus.
 
-Once run, the workflow that was called as a sub-workflow remains in **[!UICONTROL Being edited]** status, which means the following:
+Nach der Ausführung befindet sich der Workflow, der als Unter-Workflow gestartet wurde, weiter im Status **[!UICONTROL In Bearbeitung]**, was Folgendes bedeutet:
 
 * Sie können mit der rechten Maustaste nicht auf die Transitionen klicken, um die Zielgruppe anzuzeigen.
 * Es kann kein Zwischenergebnis der Populationsgröße angezeigt werden.
-* Die Protokolle der Arbeitsabläufe werden im primären Arbeitsablauf angezeigt.
+* Die Logs des Unter-Workflows werden im primären Workflow angezeigt.
 
    ![](assets/subworkflow_logs.png)
 
 >[!NOTE]
 >
->Tritt im Unterarbeitsablauf ein Fehler auf, wird der primäre Arbeitsablauf angehalten und eine Kopie des Unterarbeitsablaufs erstellt.
+>Wenn im Unter-Workflow ein Fehler auftritt, wird der primäre Workflow angehalten und eine Kopie des Unter-Workflows erstellt.
 
 ## Eingabeparameter (optional) {#input-parameters--optional-}
 
