@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 97%
+source-wordcount: '919'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,9 @@ Personalisierungsfelder bilden die erste Stufe einer Anpassung des Nachrichtenin
 
 So ersetzt Adobe Campaign das Personalisierungsfeld **&lt;%= recipient.LastName %>** durch den in der Empfängertabelle der Datenbank enthaltenen Nachnamen des Empfängers.
 
->[!NOTE]
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#personalization-fields-video)
+
+>[!CAUTION]
 >
 >Inhalt von Personalisierungsfeldern darf 1.024 Zeichen nicht überschreiten.
 
@@ -124,7 +126,7 @@ Der Standardwert ist 5 Sekunden.
 
 Wenn Sie diese Option auf 0 setzen, gilt für die Personalisierungsphase keine Zeitbeschränkung.
 
-## So personalisieren Sie E-Mails mit Personalisierungsfeldern
+## So personalisieren Sie E-Mails mit Personalisierungsfeldern {#personalization-field-video}
 
 Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
