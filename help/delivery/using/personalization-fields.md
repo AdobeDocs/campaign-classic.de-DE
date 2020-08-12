@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 96%
@@ -126,7 +126,7 @@ Der Standardwert ist 5 Sekunden.
 
 Wenn Sie diese Option auf 0 setzen, gilt für die Personalisierungsphase keine Zeitbeschränkung.
 
-## So personalisieren Sie E-Mails mit Personalisierungsfeldern {#personalization-field-video}
+## So personalisieren Sie E-Mails mit Personalisierungsfeldern {#personalization-fields-video}
 
 Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
