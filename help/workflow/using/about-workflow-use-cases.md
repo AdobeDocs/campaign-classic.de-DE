@@ -1,6 +1,6 @@
 ---
 title: Über Workflow-Anwendungsfälle
-description: Erfahren Sie mehr über Anwendungsfälle, die Sie mit Campaign Classic Workflows ausführen können.
+description: Erfahren Sie mehr über Anwendungsfälle, die Sie mit Workflows in Campaign Classic ausführen können.
 page-status-flag: never-activated
 uuid: 7c1e8cea-90d0-491f-ab8f-6cd69f8a6c3b
 contentOwner: sauviat
@@ -11,11 +11,11 @@ topic-tags: about-workflows-and-data-management
 discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d9e2b54da9de37ed8f4f873a1049b35493112d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '165'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Workflow für einen kanalübergreifenden Versand](../../workflow/using/cross-channel-delivery-workflow.md)
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 
-## Monitoring   {#monitoring}
+## Monitoring    {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
@@ -54,8 +54,8 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Daten anreichern](../../workflow/using/enriching-data.md)
 * [Verwendung von Aggregaten](../../workflow/using/using-aggregates.md)
 * [Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
-* [Verschlüsseln und Exportieren von Daten mit einem auf dem Control Panel installierten Schlüssel](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
-* [Aktualisierung der vierteljährlichen Liste unter Verwendung einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
+* [Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
+* [Vierteljährliches Listen-Update unter Verwendung einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
 
 ## Abfragen erstellen {#designing-queries}
 
