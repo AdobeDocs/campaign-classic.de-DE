@@ -14,11 +14,11 @@ discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a034749c82f44edaf718b732e6871b9af378636a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '949'
+ht-degree: 100%
 
 ---
 
@@ -85,52 +85,52 @@ Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien exporti
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Installieren Sie mithilfe der [Systemsteuerung](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data)ein GPG-Schlüsselpaar für Ihre Instanz.
+1. Installieren Sie mit dem [Control Panel](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data) ein GPG-Schlüsselpaar für Ihre Instanz.
 
    >[!NOTE]
    >
-   >Systemsteuerung steht allen auf AWS gehosteten Kunden zur Verfügung (mit Ausnahme von Kunden, die ihre Marketinginstanzen auf einer lokalen Plattform hosten).
+   >Das Control Panel steht allen auf AWS gehosteten Kunden zur Verfügung (mit Ausnahme von Kunden, die ihre Marketing-Instanzen auf einer lokalen Plattform hosten).
 
-1. Wenn Ihre Installation von Adobe Campaign von Adobe gehostet wird, wenden Sie sich an den Adobe-Kundendienst, um die erforderlichen Hilfsprogramme auf dem Server installieren zu lassen.
-1. Wenn die Installation des Adobe Campaigns vor Ort erfolgt, installieren Sie das Dienstprogramm, das Sie verwenden möchten (z. B.: GPG, GZIP) sowie die erforderlichen Schlüssel (Verschlüsselungsschlüssel) auf dem Anwendungsserver.
+1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird: Wenden Sie sich an die Kundenunterstützung von Adobe, damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
+1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben, installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
 
-Sie können dann Befehle oder Code auf der Registerkarte &quot; **[!UICONTROL Skript]** &quot;der Aktivität oder in einer **[!UICONTROL JavaScript-Code]** -Aktivität verwenden. Im folgenden Anwendungsfall wird ein Beispiel vorgestellt.
+Sie können dann auf der Registerkarte **[!UICONTROL Skript]** der Aktivität oder in einer **[!UICONTROL JavaScript-Code]**-Aktivität Befehle bzw. Code verwenden. Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 
 **Verwandte Themen:**
 
 * [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing)
-* [Aktivität](../../workflow/using/extraction--file-.md)der Datendatei
+* [Aktivität &quot;Extraktion (Datei)&quot;](../../workflow/using/extraction--file-.md).
 
 ### Anwendungsfall: Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel {#use-case-gpg-encrypt}
 
-In diesem Fall erstellen wir einen Workflow, um Daten mithilfe eines in der Systemsteuerung installierten Schlüssels zu verschlüsseln und zu exportieren.
+In diesem Anwendungsfall wird ein Workflow erstellt, um Daten mit einem im Control Panel installierten Schlüssel zu verschlüsseln und zu exportieren.
 
-In [diesem Abschnitt](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html)finden Sie außerdem ein Video, in dem die Verwendung eines GPG-Schlüssels zum Verschlüsseln von Daten veranschaulicht wird.
+In [diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html) finden Sie außerdem ein Video, in dem die Verwendung eines GPG-Schlüssels zum Verschlüsseln von Daten veranschaulicht wird.
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
-1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel in der Systemsteuerung. Ausführliche Anweisungen finden Sie in der Dokumentation zur [Systemsteuerung](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
+1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel im Control Panel. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-1. Erstellen Sie in Campaign Classic einen Workflow, um die Daten zu exportieren und mit dem privaten Schlüssel zu exportieren, der über die Systemsteuerung installiert wurde. Dazu erstellen wir einen Workflow wie folgt:
+1. Erstellen Sie einen Workflow in Campaign Classic, um die Daten mithilfe des über das Control Panel installierten privaten Schlüssels zu verschlüsseln und zu exportieren. Zu diesem Zweck wird folgender Workflow erstellt:
 
    ![](assets/gpg-workflow-encrypt.png)
 
-   * **[!UICONTROL Aktivität der Abfrage]** : In diesem Beispiel möchten wir eine Abfrage ausführen, um die Daten aus der Datenbank, die wir exportieren möchten, Zielgruppe.
-   * **[!UICONTROL Extraktion (Datei)]** Aktivität: Extrahiert die Daten in eine Datei.
-   * **[!UICONTROL JavaScript-Code]** -Aktivität: Verschlüsselt die zu extrahierenden Daten.
-   * **[!UICONTROL Aktivität der Dateiübertragung]** : Sendet die Daten an eine externe Quelle (in diesem Beispiel an einen SFTP-Server).
+   * Aktivität **[!UICONTROL Abfrage]**: In diesem Beispiel möchten wir eine Abfrage ausführen, die auf die Daten aus der Datenbank abzielt, die wir exportieren möchten.
+   * Aktivität **[!UICONTROL Extraktion (Datei)]**: Extrahiert die Daten in eine Datei.
+   * Aktivität **[!UICONTROL JavaScript-Code]**: Verschlüsselt die zu extrahierenden Daten.
+   * Aktivität **[!UICONTROL Dateiübertragung]**: Sendet die Daten an eine externe Quelle (in diesem Beispiel an einen SFTP-Server).
 
-1. Konfigurieren Sie die Aktivität der **[!UICONTROL Abfrage]** , um die gewünschten Daten aus der Datenbank Zielgruppe. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
+1. Konfigurieren Sie die Aktivität **[!UICONTROL Abfrage]** so, dass sie auf die gewünschten Daten aus der Datenbank abzielt. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
 
-1. Öffnen Sie die Aktivität **[!UICONTROL Data Extraktion (file)]** und konfigurieren Sie sie dann entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/extraction--file-.md).
+1. Öffnen Sie die Aktivität **[!UICONTROL Extraktion (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/extraction--file-.md).
 
    ![](assets/gpg-data-extraction.png)
 
-1. Öffnen Sie die **[!UICONTROL JavaScript-Code]** -Aktivität und kopieren Sie den unten stehenden Befehl, um die zu extrahierenden Daten zu verschlüsseln.
+1. Öffnen Sie die Aktivität **[!UICONTROL JavaScript-Code]** und fügen Sie den unten stehenden Befehl ein, um die zu extrahierenden Daten zu verschlüsseln.
 
    >[!IMPORTANT]
    >
-   >Stellen Sie sicher, dass Sie den **Fingerabdruckwert** des Befehls durch den Fingerabdruck des öffentlichen Schlüssels ersetzen, der in der Systemsteuerung installiert ist.
+   >Vergessen Sie nicht, den Wert **fingerprint** im Befehl durch den Fingerabdruck des öffentlichen, im Control Panel installierten Schlüssels zu ersetzen.
 
    ```
    var cmd='gpg ';
@@ -148,6 +148,6 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
    ![](assets/gpg-file-transfer.png)
 
-1. Sie können den Workflow jetzt ausführen. Nach der Ausführung wird die Zielgruppe der Daten durch die Abfrage in eine verschlüsselte GPG-Datei exportiert.
+1. Sie können den Workflow jetzt ausführen. Nach der Ausführung werden die über die Abfrage abgerufenen Daten in eine verschlüsselte .gpg-Datei für den SFTP-Server exportiert.
 
    ![](assets/gpg-sftp-encrypt.png)
