@@ -14,79 +14,79 @@ discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '937'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
 # Pipeline konfigurieren {#configuring-pipeline}
 
-Authentifizierungsparameter wie die Kunden-ID, der private Schlüssel und der Authentifizierungs-Endpunkt werden in den Konfigurationsdateien der Instanz konfiguriert.
-Die Liste der zu verarbeitenden Auslöser wird in einer Option konfiguriert. Es ist im JSON-Format.
-Der Auslöser wird sofort mit JavaScript-Code verarbeitet. Es wird in einer Datenbanktabelle gespeichert, ohne dass die Verarbeitung in Echtzeit erfolgt.
-Die Auslöser werden für das Targeting von einem Kampagnen-Workflow verwendet, der E-Mails sendet. Die Kampagne wird so eingerichtet, dass ein Kunde, der beide Ereignis auslöst, eine E-Mail erhält.
+Authentifizierungsparameter wie die Kunden-ID, der private Schlüssel und der Authentifizierungsendpunkt werden in den Konfigurationsdateien der Instanz konfiguriert.
+Die Liste der zu verarbeitenden Auslöser wird in einer Option konfiguriert. Dabei kommt das JSON-Format zum Einsatz.
+Der Auslöser wird unmittelbar mit JavaScript-Code verarbeitet. Er wird ohne weitere Verarbeitung in Echtzeit in einer Datenbanktabelle gespeichert.
+Die Auslöser werden für das Targeting eines Kampagnen-Workflows verwendet, der E-Mails sendet. Die Kampagne ist so eingerichtet, dass ein Kunde, der beide Auslöserereignisse aufweist, eine E-Mail erhält.
 
 ## Voraussetzungen {#prerequisites}
 
-Die Verwendung [!DNL Experience Cloud Triggers] in Kampagne erfordert:
+Die Verwendung von [!DNL Experience Cloud Triggers] in Campaign erfordert:
 
 * Adobe Campaign Version 6.11 Build 8705 oder höher.
 * Adobe Analytics Ultimate, Premium, Foundation, OD, Select, Prime, Mobile Apps, Select oder Standard.
 
-Erforderliche Konfigurationen sind:
+Vorausgesetzte Konfigurationen sind:
 
-* Erstellen einer privaten Schlüsseldatei und dann die Erstellung der oAuth-Anwendung, die mit diesem Schlüssel registriert ist.
-* Konfiguration der Auslöser in Adobe Analytics.
+* Erstellen einer privaten Schlüsseldatei und anschließendes Erstellen der OAuth-Anwendung, die mit diesem Schlüssel registriert wird.
+* Konfigurieren der Auslöser in Adobe Analytics.
 
-Die Adobe Analytics-Konfiguration fällt nicht in den Anwendungsbereich dieses Dokuments.
+Die Adobe Analytics-Konfiguration wird nicht in diesem Dokument behandelt.
 
 Für Adobe Campaign sind folgende Informationen von Adobe Analytics erforderlich:
 
-* Der Name der Auth-Anwendung.
+* Der Name der OAuth-Anwendung.
 * Die IMSOrgId, die Kennung des Experience Cloud-Kunden.
 * Die Namen der in Analytics konfigurierten Auslöser.
-* Name und Format der Datenfelder, die mit der Marketing-Datenbank abgeglichen werden sollen.
+* Name und Format der Datenfelder, die mit der Marketing-Datenbank abgestimmt werden sollen.
 
-Teil dieser Konfiguration ist eine benutzerdefinierte Entwicklung und erfordert Folgendes:
+Teil dieser Konfiguration muss vom Benutzer vorgenommen werden und erfordert Folgendes:
 
-* Kenntnisse der JSON-, XML- und JavaScript-Analyse in Adobe Campaign.
-* Kenntnisse der QueryDef- und Writer-APIs.
-* Arbeitsbegriffe der Verschlüsselung und Authentifizierung mit privaten Schlüsseln.
+* Grundkenntnisse der JSON-, XML- und JavaScript-Analyse in Adobe Campaign.
+* Grundkenntnisse der QueryDef- und Writer-APIs.
+* Grundverständnis der Verschlüsselung und Authentifizierung mit privaten Schlüsseln.
 
 >[!NOTE]
 >
->Da die Bearbeitung des JS-Codes technische Fertigkeiten erfordert, sollten Sie ihn nicht ohne das entsprechende Verständnis versuchen. <br>Auslöser werden in einer Datenbanktabelle gespeichert. So können Auslöserdaten von Marketingunternehmen bei der Workflows sicher verwendet werden.
+>Da die Bearbeitung des JS-Codes technische Fertigkeiten voraussetzt, sollten Sie es ohne entsprechende Kenntnisse nicht versuchen. <br>Auslöser werden in einer Datenbanktabelle gespeichert. Auf diese Weise können Auslöserdaten von Marketing-Anwendern in Zielgruppen-Workflows sicher verwendet werden.
 
 ## Authentifizierungs- und Konfigurationsdateien {#authentication-configuration}
 
-Die Authentifizierung ist erforderlich, da Pipeline in der Adobe Experience Cloud gehostet wird.
-Wenn der Marketing-Server auf einer lokalen Plattform gehostet wird und sich bei der Pipeline anmeldet, muss er sich für eine sichere Verbindung authentifizieren.
-Es verwendet ein Paar öffentlicher und privater Schlüssel. Dieser Vorgang ist dieselbe Funktion wie ein Benutzer/Kennwort, nur sicherer.
+Eine Authentifizierung ist erforderlich, da die Pipeline in Adobe Experience Cloud gehostet wird.
+Wenn der Marketing-Server lokal gehostet wird, muss er sich bei der Anmeldung bei der Pipeline für eine sichere Verbindung authentifizieren.
+Er verwendet ein Schlüsselpaar aus öffentlichem und privatem Schlüssel. Der Prozess entspricht der Verwendung einer Kombination aus Benutzer und Passwort, ist aber sicherer.
 
 ### IMSOrgId {#imsorgid}
 
-Die IMSOrgId ist die ID des Kunden in der Adobe Experience Cloud.
-Legen Sie sie in der Datei &quot;serverConf.xml&quot;unter dem Attribut &quot;IMSOrgId&quot;fest.
+Die IMSOrgId ist die Kennung des Kunden in Adobe Experience Cloud.
+Legen Sie sie in der Datei &quot;serverConf.xml&quot; der Instanz unter dem Attribut &quot;IMSOrgId&quot; fest.
 Beispiel:
 
 ```
 <redirection IMSOrgId="C5E715(…)98A4@AdobeOrg" (…)
 ```
 
-### Schlüsselgeneration {#key-generation}
+### Schlüsselgenerierung {#key-generation}
 
-Der Schlüssel ist ein Paar Dateien. Es ist im RSA-Format und 4096 Byte lang. Es kann mit einem Open-Source-Tool wie OpenSSL generiert werden. Bei jeder Ausführung des Tools wird ein neuer Schlüssel zufällig generiert.
-Aus praktischen Gründen werden die folgenden Schritte beschrieben:
+Der Schlüssel besteht aus einem Dateipaar. Er liegt im RSA-Format vor und ist 4.096 Byte lang. Er kann mit einem Open-Source-Tool wie OpenSSL generiert werden. Bei jeder Ausführung des Tools wird zufällig ein neuer Schlüssel generiert.
+Die Schritte werden im Folgenden beschrieben:
 
 * ```openssl genrsa -out <private_key.pem> 4096```
 
 * ```openssl rsa -pubout -in <private_key.pem> -out <public_key.pem>```
 
-Beispiel für die Datei private_key.pem:
+Beispiel für die Datei &quot;private_key.pem&quot;:
 
 ```
 ----BEGIN RSA PRIVATE KEY----
@@ -96,7 +96,7 @@ MIIEowIBAAKCAQEAtqcYzt5WGGABxUJSfe1Xy8sAALrfVuDYURpdgbBEmS3bQMDb
 ----END RSA PRIVATE KEY----
 ```
 
-Beispiel für die Datei public_key.pem:
+Beispiel für die Datei &quot;public_key.pem&quot;:
 
 ```
 ----BEGIN PUBLIC KEY----
@@ -108,28 +108,28 @@ EwIDAQAB
 
 >[!NOTE]
 >
->Schlüssel sollten nicht von PuttyGen generiert werden, OpenSSL ist die beste Wahl.
+>Schlüssel sollten nicht von PuttyGen generiert werden. OpenSSL ist die beste Wahl.
 
-### Auth-Client-Erstellung in Adobe Experience Cloud {#oauth-client-creation}
+### OAuth-Client-Erstellung in Adobe Experience Cloud {#oauth-client-creation}
 
-Eine Anwendung des Typs JWT muss erstellt werden, indem Sie sich beim Adobe Analytics im richtigen Unternehmenskonto unter **[!UICONTROL Admin]** > **[!UICONTROL Benutzerverwaltung]** > **[!UICONTROL Legacy-Pfad-Anwendung]** anmelden.
+Sie müssen eine Anwendung vom Typ &quot;JWT&quot; erstellen, indem Sie sich bei Adobe Analytics unter **[!UICONTROL Admin]** > **[!UICONTROL User Management]** > **[!UICONTROL Veraltete OAuth-Anwendung]** im richtigen Organisationskonto anmelden.
 
 Führen Sie folgende Schritte aus:
 
-1. Wählen Sie das **[!UICONTROL Dienstkonto aus (JWT-Zusicherung)]**.
+1. Wählen Sie das **[!UICONTROL Dienstkonto (JWT Assertion)]**.
 1. Geben Sie den **[!UICONTROL Anwendungsnamen]** ein.
 1. Registrieren Sie den **[!UICONTROL öffentlichen Schlüssel]**.
-1. Wählen Sie die **[!UICONTROL Scopes]** des Auslösers aus.
+1. Wählen Sie die **[!UICONTROL Perimeter]** des Auslösers aus.
 
    ![](assets/triggers_5.png)
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]** und überprüfen Sie die **[!UICONTROL Anwendungs-ID]** und den **[!UICONTROL Anwendungs-Geheimcode]** erstellt.
+1. Klicken Sie auf **[!UICONTROL Erstellen]** und überprüfen Sie die **[!UICONTROL Anwendungs-ID]** und den erstellten **[!UICONTROL Anwendungs-Geheimcode]**.
 
    ![](assets/triggers_6.png)
 
 ### Registrierung des Anwendungsnamens in Adobe Campaign Classic {#application-name-registration}
 
-Die Anwendungs-ID des erstellten Auth-Clients muss in Adobe Campaign konfiguriert werden. Sie können dies tun, indem Sie die Konfigurationsdatei der Instanz im [!DNL pipelined] Element bearbeiten, insbesondere das Attribut appName.
+Die Anwendungs-ID des erstellten OAuth-Clients muss in Adobe Campaign konfiguriert werden. Bearbeiten Sie dazu die Konfigurationsdatei der Instanz im [!DNL pipelined]-Element, und zwar das Attribut &quot;appName&quot;.
 
 Beispiel:
 
@@ -137,13 +137,13 @@ Beispiel:
 <pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
 ```
 
-### Schlüsselverschlüsselung {#key-encription}
+### Verschlüsselung des Schlüssels {#key-encription}
 
-Der private Schlüssel muss verschlüsselt sein, damit er verwendet werden [!DNL pipelined]kann. Die Verschlüsselung erfolgt mit der Javascript-Funktion cryptString und muss auf derselben Instanz wie [!DNL pipelined].
+Der private Schlüssel muss verschlüsselt werden, damit er von [!DNL pipelined] verwendet werden kann. Die Verschlüsselung erfolgt mit der JavaScript-Funktion &quot;cryptString&quot; und muss auf derselben Instanz wie [!DNL pipelined] vorgenommen werden.
 
-Auf dieser [Seite](../../integrations/using/pipeline-troubleshooting.md)finden Sie ein Beispiel für die private Schlüsselverschlüsselung mit JavaScript.
+Auf dieser [Seite](../../integrations/using/pipeline-troubleshooting.md) finden Sie ein Beispiel für die Verschlüsselung des privaten Schlüssels mit JavaScript.
 
-Der verschlüsselte private Schlüssel muss in Adobe Campaign registriert sein. Sie können dies tun, indem Sie die Konfigurationsdatei der Instanz im [!DNL pipelined] Element bearbeiten, insbesondere das Attribut authPrivateKey.
+Der verschlüsselte private Schlüssel muss in Adobe Campaign registriert werden. Bearbeiten Sie dazu die Konfigurationsdatei der Instanz im [!DNL pipelined]-Element, und zwar das Attribut &quot;authPrivateKey&quot;.
 
 Beispiel:
 
@@ -151,18 +151,18 @@ Beispiel:
 <pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
 ```
 
-### Automatischer Beginn für automatisierte Prozesse {#pipelined-auto-start}
+### Automatischer Start von Pipelined-Prozess {#pipelined-auto-start}
 
-Der [!DNL pipelined] Prozess muss automatisch gestartet werden.
-Legen Sie dazu das Element in der Konfigurationsdatei auf autostart=&quot;true&quot; fest:
+Der [!DNL pipelined]-Prozess muss automatisch gestartet werden.
+Setzen Sie dazu das Element in der Konfigurationsdatei auf autostart=&quot;true&quot;:
 
 ```
 <pipelined autoStart="true" appName="applicationID" authPrivateKey="@qQf146pexBksGvo0esVIDO(…)"/>
 ```
 
-### Wiederaufnahme des Pipelines-Prozesses {#pipelined-restart}
+### Neustart von Pipelined-Prozess {#pipelined-restart}
 
-Sie kann auch manuell über die Befehlszeile gestartet werden:
+Der Prozess kann über die Befehlszeile auch manuell gestartet werden:
 
 ```
 nlserver start pipelined@instance
@@ -174,23 +174,23 @@ Ein Neustart ist erforderlich, damit die Änderungen wirksam werden:
 nlserver restart pipelined@instance
 ```
 
-Bei Fehlern suchen Sie nach Fehlern in der Standardausgabe (wenn Sie manuell gestartet haben) oder in der [!DNL pipelined] Protokolldatei. Weitere Informationen zum Beheben von Problemen finden Sie im Abschnitt Fehlerbehebung in diesem Dokument.
+Sollten Fehler auftreten, suchen Sie nach Fehlern in der Standardausgabe (wenn Sie manuell gestartet haben) oder in der [!DNL pipelined]-Log-Datei. Weitere Informationen zum Beheben von Problemen finden Sie im Abschnitt zur Fehlerbehebung in diesem Dokument.
 
-### Optionen für die geteilte Konfiguration {#pipelined-configuration-options}
+### Optionen für die Pipelined-Konfiguration {#pipelined-configuration-options}
 
-| Option | Beschreibung |
+| Option | Beschreibung  |
 |:-:|:-:|
-| appName | ID der OAuth-Anwendung (Anwendungs-ID), die in Adobe Analytics registriert ist (wo der öffentliche Schlüssel hochgeladen wurde): Admin > Benutzerverwaltung > Ältere Anwendung. Refer to this [section](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
-| authGatewayEndpoint | URL zum Abrufen von &quot;Gateway-Token&quot;. <br> Standard: https://api.omniture.com |
-| authPrivateKey | Privater Schlüssel (öffentlicher Teil, der in Adobe Analytics hochgeladen wurde (siehe diesen Abschnitt). AES-Verschlüsselung mit der Option XtkSecretKey: xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
-| disableAuth | Deaktivieren der Authentifizierung (die Verbindung ohne Gateway-Token wird nur von einigen Entwicklungs-Pipeline-Endpunkten akzeptiert) |
-| discoverPipelineEndpoint | URL, um den Endpunkt der Pipeline-Dienste zu ermitteln, der für diesen Mieter verwendet werden soll. Standard: https://producer-pipeline-pnw.adobe.net |
-| dumpStatePeriodSec | Der Zeitraum zwischen 2 Dumps des internen Prozesszustands in var/INSTANCE/pipelined.json Interne Status ist auch auf Abruf verfügbar unter http://INSTANCE/pipelined/status (Port 7781). |
-| forcedPipelineEndpoint | Deaktivieren Sie die Erkennung des PipelineServicesEndpunkts und erzwingen Sie ihn |
-| monitorServerPort | Der [!DNL pipelined] Prozess überwacht diesen Anschluss, um den internen Prozessstatus unter http://INSTANCE/pipelined/status (Port 7781) bereitzustellen. |
-| cursorFlushMessageCount | Wenn diese Anzahl von Meldungen verarbeitet wird, werden die Offsets in der Datenbank gespeichert. Der Standardwert ist 1000 |
-| cursorFlushPeriodSec | Nach diesem Zeitraum werden die Offsets in der Datenbank gespeichert. Der Standardwert ist 5 (Sekunden) |
-| processingJSThreads | Anzahl der dedizierten Threads, die Meldungen mit benutzerdefinierten JS-Connectors verarbeiten. Standardwert ist 4 |
-| processingThreads | Anzahl der dedizierten Threads, die Meldungen mit integriertem Code verarbeiten. Standardwert ist 4 |
-| retryPeriodSec | Verzögerung zwischen weiteren Zustellversuchen (bei Verarbeitungsfehlern). Der Standardwert ist 30 (Sekunden) |
-| retryValiditySec | Verwerfen Sie die Nachricht, wenn sie nach diesem Zeitraum nicht erfolgreich verarbeitet wurde (zu viele weitere Zustellversuche). Der Standardwert ist 300 (Sekunden) |
+| appName | Kennung der OAuth-Anwendung (Anwendungs-ID), in Adobe Analytics registriert (wo der öffentliche Schlüssel hochgeladen wurde): &quot;Admin&quot; > &quot;User Management&quot; > &quot;Veraltete OAuth-Anwendung&quot;. Siehe diesen [Abschnitt](../../integrations/using/configuring-pipeline.md#oauth-client-creation). |
+| authGatewayEndpoint | URL zum Abrufen von &quot;Gateway-Tokens&quot;. <br> Standard: https://api.omniture.com |
+| authPrivateKey | Privater Schlüssel (öffentlicher Teil wurde in Adobe Analytics hochgeladen (siehe diesen Abschnitt)). AES-Verschlüsselung mit der XtkSecretKey-Option xtk.session.EncryptPassword(&quot;PRIVATE_KEY&quot;); |
+| disableAuth | Deaktivieren der Authentifizierung (Verbindungen ohne Gateway-Tokens werden nur von einigen Entwicklungs-Pipeline-Endpunkten akzeptiert) |
+| discoverPipelineEndpoint | URL für die Ermittlung des Pipeline-Dienstendpunkts, der für diesen Mandanten verwendet werden soll. Standard: https://producer-pipeline-pnw.adobe.net |
+| dumpStatePeriodSec | Der Zeitraum zwischen zwei Dumps des internen Prozessstatus in &quot;var/INSTANCE/pipelined.json&quot;. Der interne Status ist auch bei Bedarf abrufbar unter &quot;http://INSTANCE/pipelined/status&quot; (Port 7781). |
+| forcedPipelineEndpoint | Deaktivieren der Erkennung und Erzwingen des PipelineServicesEndpoint |
+| monitorServerPort | Der [!DNL pipelined]-Prozess prüft diesen Port, um den internen Prozessstatus unter „http://INSTANCE/pipelined/status“ bereitzustellen (Port 7781). |
+| cursorFlushMessageCount | Sobald diese Anzahl von Nachrichten verarbeitet wurde, werden die Versätze in der Datenbank gespeichert. Der Standardwert ist 1.000. |
+| cursorFlushPeriodSec | Nach diesem Zeitraum werden die Versätze in der Datenbank gespeichert. Der Standardwert ist 5 (Sekunden). |
+| processingJSThreads | Anzahl der dedizierten Threads, die Nachrichten mit benutzerdefinierten JS-Connectoren verarbeiten. Der Standardwert ist 4. |
+| processingThreads | Anzahl der dedizierten Threads, die Nachrichten mit nativem Code verarbeiten. Der Standardwert ist 4. |
+| retryPeriodSec | Pause zwischen weiteren Zustellversuchen (bei Verarbeitungsfehlern). Der Standardwert ist 30 (Sekunden). |
+| retryValiditySec | Verwerfen der Nachricht, wenn sie nach diesem Zeitraum nicht erfolgreich verarbeitet wurde (zu viele weitere Zustellversuche). Der Standardwert ist 300 (Sekunden). |
