@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: b14f5ecd2b06ed9f4cb49d8779b9f94ea4bcdddc
 workflow-type: tm+mt
 source-wordcount: '1183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Zusätzlich verwenden Sendungen vom Typ &quot;Sonstige&quot; eine spezifische te
 
 Dieser Kanal besitzt keinen bestimmten Mechanismus. Er ist ein allgemeiner Kanal, der wie jeder andere Kommunikationskanal in Adobe Campaign über eine eigene externe Konto-Routing-Möglichkeit, Versandvorlagenart und Kampagnen-Workflow-Aktivität verfügt.
 
-Dieser Kanal ist nur für beschreibende Zwecke gedacht, z. B. um Versand zu definieren, für die Sie eine Spur der Zielgruppe einer Kampagne in einem anderen Tool als Adobe Campaign erstellen möchten.
+Dieser Kanal ist nur für informative Zwecke konzipiert, wie etwa um Zielgruppeninformationen zu mit externen Tools durchgeführten Kampagnen zu speichern.
 
 ## Versandtypen{#types-of-deliveries}
 
