@@ -15,10 +15,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 93%
+source-wordcount: '416'
+ht-degree: 100%
 
 ---
 
@@ -70,10 +70,3 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
    Weitere Informationen hierzu finden Sie unter [Ressourcen in einem Versandentwurf verknüpfen](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
-## How to create an email in a campaign
-
-In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign Classic erläutert.
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-For more details, refer to [this section](../../campaign/using/marketing-campaign-deliveries.md)
