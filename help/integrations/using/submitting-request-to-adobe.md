@@ -14,11 +14,11 @@ discoiquuid: 6d19a5a6-98e5-4b1a-a56a-67cfead152bd
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a33132f64f160b20c98afd08cb9d0fe4cdf62b1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '160'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Nach der Aktivierung von IMS können Sie die Integration von People core service
   </tr> 
   <tr> 
    <td> <strong>Kennung der IMS-Organisation</strong><br /> </td> 
-   <td> Ihre IMS-Organisations-ID. <br> Sie finden Ihre IMS-Organisations-ID im Experience Cloud im Menü Administration. Sie wird auch bei der Anmeldung bei Adobe Experience Cloud bereitgestellt. </td> 
+   <td> Die Kennung Ihrer IMS-Organisation. <br> Sie finden Ihre IMS-Organisationskennung in Experience Cloud im Menü "Administration". Sie wird auch bei der Anmeldung bei Adobe Experience Cloud bereitgestellt. </td> 
   </tr> 
   <tr> 
    <td> <strong>Umgebung:</strong><br /> </td> 
