@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
+source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
 workflow-type: tm+mt
 source-wordcount: '7084'
 ht-degree: 98%
@@ -30,7 +30,7 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## August 2020 {#aug-2020}
 
-In einem speziellen Abschnitt erfahren Sie, welche Best Practices im Zusammenhang mit dem Design von Versänden und dem Senden mit Kampagne gelten. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
+Learn best practices related to delivery design and sending with Campaign in a dedicated section. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 The Deliverability best practices landing page has been improved to facilitate access to sub-sections. [Mehr dazu](../../delivery/using/deliverability-key-points.md)
 
@@ -38,7 +38,7 @@ Anleitungen zu Videos stehen jetzt in den folgenden Themen zur Verfügung:
 
 * [Einrichten des Ermüdungsmanagements mithilfe von Typologieregeln und Vordefinierte Filtern](../../campaign/using/about-campaign-typologies.md)
 
-* [Erstellen einer E-Mail in einer Kampagne](../../campaign/using/designing-marketing-campaigns.md)
+* [Erstellen einer E-Mail in einer Kampagne](../../campaign/using/marketing-campaign-deliveries.md)
 
 * [So erstellen Sie einen mehrsprachigen Newsletter mit bedingten Inhalten](../../delivery/using/conditional-content.md)
 
