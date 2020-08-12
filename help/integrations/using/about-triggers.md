@@ -14,62 +14,62 @@ discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Über Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
+# Über Adobe Experience Cloud-Auslöser{#about-adobe-experience-triggers}
 
-[!DNL Triggers] ist eine Integration zwischen Adobe Campaign und Adobe Analytics mithilfe der Pipeline. Die Pipeline ruft die Aktionen oder Auslöser der Benutzer von Ihrer Website ab. Ein Warenkorbabbruch ist ein Beispiel für einen Auslöser. Auslöser werden in Adobe Campaign verarbeitet, um E-Mails in Echtzeit zu senden.
+[!DNL Triggers] ist eine Integration zwischen Adobe Campaign und Adobe Analytics mithilfe der Pipeline. Die Pipeline ruft Aktionen oder Auslöser der Benutzer von Ihrer Website ab. Ein Beispiel für einen Auslöser ist ein Warenkorbabbruch. Auslöser werden in Adobe Campaign verarbeitet, um in nahezu Echtzeit E-Mails zu senden.
 
-[!DNL Triggers] Marketingaktionen innerhalb eines kurzen Zeitraums nach der Aktion eines Benutzers ausführen. Die typische Reaktionszeit beträgt weniger als eine Stunde.
+[!DNL Triggers] führen nach der Aktion eines Benutzers in einem kurzen Zeitraum Marketing-Aktionen aus. Die typische Reaktionszeit beträgt weniger als eine Stunde.
 
-Es ermöglicht flexiblere Integrationen, da die Konfiguration minimal ist und kein Drittanbieter beteiligt ist.
-Es unterstützt auch ein hohes Traffic-Aufkommen, ohne die Performance von Marketing-Aktivitäten zu beeinträchtigen. Beispielsweise kann die Integration eine Million Auslöser pro Stunde verarbeiten.
+Dadurch werden flexiblere Integrationen möglich, da der Konfigurationsaufwand minimal ist und keine Drittanbieter beteiligt sind.
+Unterstützt werden auch große Traffic-Volumen, ohne dass die Performance von Marketing-Aktivitäten leidet. Beispielsweise kann die Integration eine Million Auslöser pro Stunde verarbeiten.
 
-## [!DNL Triggers] Architektur {#triggers-architecture}
+## [!DNL Triggers]-Architektur {#triggers-architecture}
 
-### Was ist Pipeline? {#pipeline-explanation}
+### Was ist die Pipeline? {#pipeline-explanation}
 
 >[!CAUTION]
 >
->Nur Adobe Cloud-Lösungen können Ereignis aus den Pipeline-Diensten von Adobe erstellen und nutzen. Systeme, die nicht zu Adobe gehören, können das nicht.
+>Nur Adobe Cloud-Lösungen können Ereignisse aus Pipeline-Diensten von Adobe erstellen und nutzen. Systeme, die nicht von Adobe stammen, können das nicht.
 
-Pipeline ist ein Messaging-System, das im Experience Cloud gehostet wird, das [Apache Kafka](http://kafka.apache.org/)verwendet. Es ist eine Möglichkeit, Daten einfach zwischen Lösungen zu übertragen. Außerdem ist Pipeline eine Meldungswarteschlange und keine Datenbank. Die Hersteller drängen Ereignis in die Pipeline, und die Verbraucher hören auf den Fluss und tun, was sie mit dem Ereignis wollen. Ereignis werden einige Tage aufbewahrt, aber nicht mehr. Das Ziel ist, rund um die Uhr zuzuhören und Ereignis sofort zu verarbeiten.
+Die Pipeline ist ein Messaging-System, das in Experience Cloud gehostet wird und [Apache Kafka](http://kafka.apache.org/) verwendet. Es stellt eine einfache Möglichkeit zur Übertragung von Daten zwischen Lösungen dar. Außerdem ist die Pipeline mehr Nachrichtenwarteschlange als Datenbank. Die Ersteller pushen Ereignisse in die Pipeline und die Verbraucher prüfen den Fluss und verwenden das jeweilige Ereignis nach Belieben. Ereignisse werden nur einige Tage gespeichert. Das Ziel besteht darin, den Datenfluss rund um die Uhr zu prüfen und Ereignisse sofort zu verarbeiten.
 
 ![](assets/triggers_1.png)
 
-### Wie wirkt Pipeline? {#how-pipeline-work}
+### Wie funktioniert die Pipeline? {#how-pipeline-work}
 
-Der [!DNL pipelined] Vorgang wird immer auf dem Adobe Campaign Marketing Server ausgeführt. Es verbindet sich mit der Pipeline, ruft die Ereignis ab und verarbeitet sie sofort.
+Der [!DNL pipelined]-Prozess wird auf dem Adobe Campaign-Marketing-Server kontinuierlich ausgeführt. Er stellt eine Verbindung zur Pipeline her, ruft die Ereignisse ab und verarbeitet sie sofort.
 
 ![](assets/triggers_2.png)
 
-Der [!DNL pipelined] Prozess meldet sich mit einem Authentifizierungsdienst beim Experience Cloud an und sendet einen privaten Schlüssel. Der Authentifizierungsdienst gibt ein Token zurück. Das Token wird zum Authentifizieren beim Abrufen der Ereignis verwendet. [!DNL Triggers] werden von einem REST-Webdienst mit einer einfachen GET-Anforderung abgerufen. Die Antwort ist das JSON-Format. Zu den Parametern für die Anforderung gehören der Name des Auslösers und ein Zeiger, der die zuletzt abgerufene Meldung anzeigt. Der [!DNL pipelined] Prozess verarbeitet ihn automatisch.
+Der [!DNL pipelined]-Prozess meldet sich mit einem Authentifizierungsdienst bei Experience Cloud an und sendet einen privaten Schlüssel. Der Authentifizierungsdienst gibt ein Token zurück. Das Token dient beim Abrufen der Ereignisse zum Authentifizieren. [!DNL Triggers] werden von einem REST-Web-Dienst mit einer einfachen GET-Anfrage abgerufen. Die Antwort weist das JSON-Format auf. Zu den Parametern für die Anfrage gehören der Name des Auslösers und ein Zeiger, der die zuletzt abgerufene Nachricht angibt. Der [!DNL pipelined]-Prozess wird automatisch verarbeitet.
 
 ## Verwenden der Integration von Adobe Experience Cloud-Auslösern mit Adobe Campaign Classic
 
-Im Folgenden finden Sie einige [!DNL Triggers] Best Practices:
+Im Folgenden finden Sie einige Best Practices für [!DNL Triggers]:
 
-* Die [!DNL Trigger] Daten müssen während der Kampagne gespeichert werden. Es sollte nicht direkt verarbeitet werden, da es zu einer Latenz führen würde.
-* Der Zeitstempel sollte aus der Meldung und nicht aus der Datenbank überprüft werden.
-* Verwenden Sie TriggerTimestamp und Auslöser-ID, um Duplikat zu entfernen.
+* Die [!DNL Trigger]-Daten müssen beim Eintritt in Campaign gespeichert werden. Sie sollten nicht direkt verarbeitet werden, da dies Latenz verursachen würde.
+* Der Zeitstempel aus der Nachricht (und nicht aus der Datenbank) sollte überprüft werden.
+* Verwenden Sie &quot;TriggerTimestamp&quot; und die Auslöser-ID, um Duplikate zu entfernen.
 
 >[!CAUTION]
 >
->Das unten stehende Beispiel wird nicht standardmäßig bereitgestellt. Dies ist ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
+>Das unten stehende Beispiel wird nicht nativ bereitgestellt. Dies ist ein spezifisches Beispiel aus verschiedenen möglichen Implementierungen.
 
-Die Pipeline-Ereignis werden automatisch heruntergeladen. Diese Ereignis können mithilfe eines Formulars überwacht werden.
+Die Pipeline-Ereignisse werden automatisch heruntergeladen. Diese Ereignisse können mithilfe eines Formulars überwacht werden.
 
 ![](assets/triggers_3.png)
 
-Der Knoten Pipeline-Ereignis ist nicht integriert und muss hinzugefügt werden. Das zugehörige Formular muss in Kampagne erstellt werden. Diese Vorgänge sind nur für Benutzer von Experten verfügbar. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../configuration/using/about-navigation-hierarchy.md) und [Bearbeitung von Formularen](../../configuration/using/editing-forms.md).
+Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben müssen von erfahrenen Benutzern ausgeführt werden. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../configuration/using/about-navigation-hierarchy.md) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
 
-Eine wiederkehrende Abfrage des Arbeitsablaufs für Kampagnen bei Auslösern und wenn sie die Marketingkriterien erfüllen, wird ein Versand Beginn.
+Ein wiederkehrender Kampagnen-Workflow fragt Auslöser ab. Wenn diese den Marketing-Kriterien entsprechen, wird ein Versand gestartet.
 
 ![](assets/triggers_4.png)
