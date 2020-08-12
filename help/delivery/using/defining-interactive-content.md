@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 91%
@@ -34,8 +34,7 @@ Weiterführende Informationen zum Testen und Senden von AMP-E-Mails finden Sie u
 Diese Funktion ist über ein dediziertes Package in Adobe Campaign verfügbar. Damit Sie es verwenden können, muss dieses Package installiert sein. Starten Sie nach Abschluss des Vorgangs den Server neu, damit das Package berücksichtigt wird.
 
 >[!NOTE]
->
->Bei hybriden und gehosteten Architekturen muss das Paket auf allen Servern installiert werden, einschließlich [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md) und [Ausführungsinstanz](../../message-center/using/creating-a-shared-connection.md#execution-instance). Wenden Sie sich diesbezüglich an Ihren Kundenbetreuer.
+> Bei hybriden und gehosteten Architekturen muss das Paket auf allen Servern installiert werden, einschließlich [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md) und [Ausführungsinstanz](../../message-center/using/creating-a-shared-connection.md#execution-instance). Wenden Sie sich diesbezüglich an Ihren Kundenbetreuer.
 
 
 ## Informationen zu AMP for Email {#about-amp-for-email}
@@ -47,11 +46,11 @@ Beispiel:
 * Der Inhalt in der Nachricht bleibt auf dem neuesten Stand.
 * Die Empfänger können beispielsweise auf ein Formular reagieren, ohne den Posteingang verlassen zu müssen.
 
-![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#amp-email-video)
-
 AMP for Email ist mit vorhandenen E-Mails kompatibel. Die AMP-Version der Nachricht wird als neuer MIME-Teil in die E-Mail eingebettet, zusätzlich zu HTML und/oder Nur-Text, sodass die Kompatibilität bei allen E-Mail-Clients gewährleistet ist.
 
 Weitere Informationen zum AMP for Email-Format, Spezifikationen und Anforderungen finden Sie in der [AMP-Entwicklerdokumentation](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
+
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#amp-email-video)
 
 ## Wichtige Schritte bei der Verwendung von AMP for Email mit Adobe Campaign {#key-steps-to-use-amp}
 
@@ -160,7 +159,7 @@ Sie können auch die [Tipps und bekannten Einschränkungen für Gmail](https://d
 Da AMP for Email als Beta-Funktion verfügbar ist, können Sie derzeit testen, eine AMP-E-Mail in zwei Schritten zu senden:
 
 1. Mit Adobe Campaign können Sie den Versand einer dynamischen AMP-E-Mail an ausgewählte E-Mail-Adressen, die entsprechend konfiguriert wurden, testen, um deren Inhalt und Verhalten zu überprüfen. Siehe [Testen des AMP-E-Mail-Versands für ausgewählte Adressen](#testing-amp-delivery-for-selected-addresses).
-1. Nach dem Testen können Sie einen Versand oder eine Kampagne als Teil des AMP für E-Mail-Beta-Programms senden, indem Sie sich bei dem/den entsprechenden E-Mail-Anbieter(s) registrieren, damit Ihre Absenderdomäne zur Zulassungsliste hinzugefügt wird. Siehe [Senden von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter](#delivering-amp-emails-by-registering).
+1. Once tested, you can send a delivery or a campaign as part of the AMP for Email beta program by registering with the relevant email provider(s) to have your sender domain added to the allow list. Siehe [Senden von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter](#delivering-amp-emails-by-registering).
 
 ### Testen des AMP-E-Mail-Versands für ausgewählte Adressen {#testing-amp-delivery-for-selected-addresses}
 
@@ -184,7 +183,7 @@ Gehen Sie zum Testen des Versands einer AMP-E-Mail an eine Mail.ru-Adresse wie i
 
 ### Versand von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter {#delivering-amp-emails-by-registering}
 
-Sie können die Bereitstellung dynamischer E-Mails experimentieren, indem Sie sich bei den E-Mail-Anbietern registrieren, die am AMP Beta-Programm teilnehmen, um Ihre Absenderdomäne zur Zulassungsliste hinzufügen zu lassen.
+You can experiment delivering dynamic emails by registering with the email providers that take part to the AMP beta program in order to have your sender domain added to the allow list.
 
 >[!NOTE]
 >
@@ -216,6 +215,6 @@ Wenn Sie beispielsweise eine Produktliste in Ihrer E-Mail eingefügt haben und d
 
 ## So aktivieren und verwenden Sie AMP für E-Mails {#amp-email-video}
 
-In dem folgenden Video wird erläutert, wie AMP in Adobe Campaign Classic aktiviert wird, und die Verwendung wird erläutert.
+The video below explains how to activate AMP in Adobe Campaign Classic and showcases the usage.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
