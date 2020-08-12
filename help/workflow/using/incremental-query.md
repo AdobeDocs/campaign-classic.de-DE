@@ -14,11 +14,11 @@ discoiquuid: 31071cd2-7d97-4a4f-a6cc-5ac5b6178be5
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aa192d975a08246ba684940fff3d33853d7d9345
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,11 +29,11 @@ Inkrementelle Abfragen ermöglichen die regelmäßig wiederkehrende Auswahl eine
 
 Die zuvor ausgewählten Populationen werden nach Workflow-Instanz und nach Aktivität gespeichert. Dies bedeutet, dass zwei gestartete Workflows, die auf derselben Vorlage basieren, nicht den gleichen Verlauf aufweisen. Zwei auf derselben inkrementellen Abfrage basierende Aufgaben innerhalb einer Workflow-Instanz hingegen teilen sich ein und denselben Verlauf.
 
-Die Abfrage wird auf dieselbe Weise wie für Standard-Abfragen definiert, aber die Ausführung ist geplant.
+Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausführung wird geplant.
 
 **Verwandte Themen:**
 
-* [Verwendungsfall: Aktualisierung der vierteljährlichen Liste unter Verwendung einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
+* [Anwendungsfall: Vierteljährliches Listen-Update unter Verwendung einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
 * [Abfragen erstellen](../../workflow/using/query.md#creating-a-query)
 
 >[!CAUTION]
