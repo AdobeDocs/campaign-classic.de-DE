@@ -14,11 +14,11 @@ discoiquuid: 91115d4f-0cb6-4bce-b28d-17f15e9f9a0a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 56212b320d5077f9b66952e7c11eb8bdcea9e3b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Wenn ein Empfänger in einer von Campaign Standard gesendeten E-Mail einen Abmel
 
 ## Empfänger bearbeiten {#editing-a-recipient}
 
-Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen, wie Kampagne v7 bei der Datenreplikation zur primären Angebot-Datenbank wird. Das Ändern oder Löschen replizierter Daten in Kampagne v7 hat dieselbe Auswirkung auf die entsprechenden Daten in Campaign Standard.
+Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen auf einfache Weise, wie Campaign v7 bei Verwendung von Datenreplikation zur primären Datenbank für Campaign Standard wird. Das Ändern oder Löschen replizierter Daten in Campaign v7 hat dieselbe Wirkung auf die entsprechenden Daten in Campaign Standard.
 
 1. Wählen Sie unter [Neuen Empfänger erstellen](#creating-a-new-recipient) den neu erstellten Empfänger aus und bearbeiten Sie seinen Namen. Wählen Sie beispielsweise eine **[!UICONTROL Anrede]** für den Empfänger (z. B. Herr oder Frau). Weitere Informationen finden Sie unter [Profile bearbeiten](../../platform/using/editing-a-profile.md).
 
@@ -75,7 +75,7 @@ Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen,
 
    Standardmäßig wird für den ACS Connector alle 15 Minuten eine Replikation durchgeführt. Weitere Informationen finden Sie unter [Datenreplikation](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
-## Workflow erstellen   {#creating-a-workflow}
+## Workflow erstellen    {#creating-a-workflow}
 
 Marketer können die umfassenden von Campaign v7 replizierten Profile und Dienste in Campaign Standard nutzen. Die folgende Anleitung zeigt, wie eine Abfrage zu einem Campaign-Standard-Workflow hinzugefügt wird und mit der replizierten Datenbank genutzt wird.
 
