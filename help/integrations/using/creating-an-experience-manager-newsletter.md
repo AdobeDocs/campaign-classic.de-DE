@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Ein detailliertes Beispiel für die Verwendung dieser Integration finden Sie in 
 
    ![](assets/aem_uc_1.png)
 
-1. Select **[!UICONTROL Campaigns > Name of your brand (here We.Retail) > Main Area > Email campaigns]**.
+1. Wählen Sie **[!UICONTROL Kampagnen > Name Ihres Unternehmens (hier We.Retail) > Hauptbereich > E-Mail-Kampagnen]** aus.
 1. Wählen Sie rechts oben **[!UICONTROL Erstellen]** und danach **[!UICONTROL Seite]** aus.
 
    ![](assets/aem_uc_2.png)
