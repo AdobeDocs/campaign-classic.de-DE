@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: d4edd389fde91c3f316c5213f4d7f34e51979112
 workflow-type: tm+mt
 source-wordcount: '2627'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -61,36 +61,36 @@ Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importi
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Verwenden Sie den [Control Panel](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data) , um ein öffentliches/privates Schlüsselpaar zu generieren.
+1. Verwenden Sie das [Control Panel](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data), um ein Schlüsselpaar aus öffentlichem und privatem Schlüssel zu generieren.
 
    >[!NOTE]
    >
    >Das Control Panel steht allen auf AWS gehosteten Kunden zur Verfügung (mit Ausnahme von Kunden, die ihre Marketing-Instanzen auf einer lokalen Plattform hosten).
 
-1. Wenn Ihre Installation von Adobe Campaign von der Adobe gehostet wird, wenden Sie sich an den Kundendienst der Adobe, um die erforderlichen Hilfsprogramme auf dem Server zu installieren.
-1. Wenn die Installation des Adobe Campaigns vor Ort erfolgt, installieren Sie das Dienstprogramm, das Sie verwenden möchten (z. B.: GPG, GZIP) sowie die erforderlichen Schlüssel (Verschlüsselungsschlüssel) auf dem Anwendungsserver.
+1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird: Wenden Sie sich an die Kundenunterstützung von Adobe, damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
+1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben: Installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
 
-Anschließend können Sie die gewünschten Vorverarbeitungsbefehle in Ihre Workflows einsetzen:
+Anschließend können Sie die gewünschten Vorab-Bearbeitungsbefehle in Ihren Workflows nutzen:
 
 1. Fügen Sie in Ihrem Workflow die Aktivität **[!UICONTROL Dateiübertragung]** hinzu und konfigurieren Sie sie.
 1. Fügen Sie die Aktivität **[!UICONTROL Laden (Datei)]** hinzu und definieren Sie das Dateiformat.
 1. Aktivieren Sie die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]**.
-1. Geben Sie den Vorverarbeitungsbefehl an, den Sie anwenden möchten.
+1. Geben Sie den Vorab-Bearbeitungsbefehl an, den Sie anwenden möchten.
 1. Fügen Sie andere Aktivitäten zur Handhabung der Daten in der Datei hinzu.
 1. Speichern und starten Sie Ihren Workflow.
 
-Im folgenden Anwendungsfall wird ein Beispiel vorgestellt.
+Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 
 **Verwandte Themen:**
 
-* [Aktivität](../../workflow/using/data-loading--file-.md)zum Laden von Daten.
+* [Aktivität &quot;Laden (Datei)&quot;](../../workflow/using/data-loading--file-.md).
 * [Datei komprimieren oder verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ### Anwendungsfall: Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden {#use-case-gpg-decrypt}
 
 In diesem Anwendungsfall erstellen wir einen Workflow, um Daten, die in einem externen System verschlüsselt wurden, mithilfe eines im Control Panel generierten Schlüssels zu importieren.
 
-In [diesem Abschnitt](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html)finden Sie außerdem ein Video, in dem gezeigt wird, wie Daten mit einem GPG-Schlüssel entschlüsselt werden können.
+In [diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/decrypting-data.html) finden Sie außerdem ein Video, in dem gezeigt wird, wie Daten mit einem GPG-Schlüssel entschlüsselt werden können.
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
@@ -105,22 +105,22 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
    ![](assets/gpg_external.png)
 
-1. Erstellen Sie in Campaign Classic einen Arbeitsablauf, um die verschlüsselten Daten zu importieren und mithilfe des über den Control Panel installierten privaten Schlüssels zu entschlüsseln. Zu diesem Zweck wird folgender Workflow erstellt:
+1. Erstellen Sie einen Workflow in Campaign Classic, um die verschlüsselten Daten zu importieren und mithilfe des über das Control Panel installierten privaten Schlüssels zu entschlüsseln. Zu diesem Zweck wird folgender Workflow erstellt:
 
    ![](assets/gpg_workflow.png)
 
-   * **[!UICONTROL Aktivität der Dateiübertragung]** : Wandelt die Datei von einer externen Quelle in ein Campaign Classic um. In diesem Beispiel möchten wir die Datei von einem SFTP-Server übertragen.
-   * **[!UICONTROL Aktivität zum Laden von Daten (Datei)]** : Lädt die Daten aus der Datei in die Datenbank und entschlüsselt sie mithilfe des im Control Panel generierten privaten Schlüssels.
+   * Aktivität **[!UICONTROL Dateiübertragung]**: Überträgt die Datei von einer externen Quelle an Campaign Classic. In diesem Beispiel soll die Datei von einem SFTP-Server übertragen werden.
+   * Aktivität **[!UICONTROL Laden (Datei)]**: Lädt die Daten aus der Datei in die Datenbank und entschlüsselt sie mithilfe des im Control Panel generierten privaten Schlüssels.
 
-1. Öffnen Sie die Aktivität **[!UICONTROL Dateiübertragung]** und geben Sie dann das Externe Konto an, aus dem Sie die verschlüsselte GPG-Datei importieren möchten.
+1. Öffnen Sie die Aktivität **[!UICONTROL Dateiübertragung]** und geben Sie das externe Konto an, aus dem Sie die verschlüsselte GPG-Datei importieren möchten.
 
    ![](assets/gpg_transfer.png)
 
    Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
 
-1. Open the **[!UICONTROL Data loading (file)]** activity, then configure it according to your needs. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/data-loading--file-.md).
+1. Öffnen Sie die Aktivität **[!UICONTROL Laden (Datei)]** und konfigurieren Sie sie entsprechend Ihren Anforderungen. Globale Konzepte zur Konfiguration der Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/data-loading--file-.md).
 
-   Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu die Option Datei **** vorverarbeiten und kopieren Sie den Entschlüsselungsbefehl in das Feld **[!UICONTROL Befehl]** :
+   Fügen Sie der Aktivität eine Vorab-Bearbeitungsetappe hinzu, um die eingehenden Daten zu entschlüsseln. Wählen Sie dazu die Option **[!UICONTROL Vorab-Bearbeitung der Datei vorsehen]** und kopieren Sie den folgenden Entschlüsselungsbefehl in das Feld **[!UICONTROL Befehl]**:
 
    `gpg --batch --passphrase passphrase --decrypt <%=vars.filename%>`
 
@@ -128,13 +128,13 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
    >[!CAUTION]
    >
-   >In diesem Beispiel verwenden wir die Passphrase, die standardmäßig von Control Panel verwendet wird, nämlich &quot;Passphrase&quot;.
+   >In diesem Beispiel verwenden wir die Passphrase, die das Control Panel standardmäßig nutzt, nämlich &quot;passphrase&quot;.
    >
-   >Wenn in der Vergangenheit bereits über eine Kundendienstanfrage GPG-Schlüssel auf Ihrer Instanz installiert waren, wurde die Passphrase möglicherweise geändert und ist standardmäßig anders als die Passphrase.
+   >Wenn per Anfrage an die Kundenunterstützung bereits in der Vergangenheit GPG-Schlüssel in Ihrer Instanz installiert wurden, hat sich die Passphrase möglicherweise geändert und unterscheidet sich von der standardmäßigen Passphrase.
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um die Konfiguration der Aktivität zu bestätigen.
 
-1. Sie können den Workflow jetzt ausführen. Nach der Ausführung können Sie die Workflow-Protokolle einchecken, dass die Entschlüsselung ausgeführt wurde und die Daten aus der Datei importiert wurden.
+1. Sie können den Workflow jetzt ausführen. Nach der Ausführung können Sie in den Workflow-Logs prüfen, ob die Entschlüsselung ausgeführt wurde und Daten aus der Datei importiert wurden.
 
    ![](assets/gpg_run.png)
 
@@ -142,7 +142,7 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 Eine sorgfältige Arbeitsweise und die Befolgung der unten stehenden einfachen Regeln helfen Ihnen, die Datenbank konsistent zu halten und gängige Fehler bei der Datenbankaktualisierung oder beim Datenexport zu vermeiden.
 
-### Importvorlagen verwenden     {#using-import-templates}
+### Importvorlagen verwenden      {#using-import-templates}
 
 Import-Workflows sollten die folgenden Aktivitäten beinhalten: **[!UICONTROL Laden (Datei)]**, **[!UICONTROL Anreicherung]**, **[!UICONTROL Aufspaltung]**, **[!UICONTROL Deduplizierung]**, **[!UICONTROL Daten-Update]**.
 
@@ -154,7 +154,7 @@ Verlassen Sie sich nicht darauf, dass die eingehenden Daten konsistent und korre
 
 Ein Beispiel für eine Importvorlage finden Sie im Abschnitt [Einrichten eines wiederkehrenden Imports](#setting-up-a-recurring-import).
 
-### Dateiformate mit einfach strukturierten Daten verwenden   {#using-flat-file-formats}
+### Dateiformate mit einfach strukturierten Daten verwenden    {#using-flat-file-formats}
 
 Das effizienteste Format für Importe sind flache Dateien, die im Bulk-Modus auf Datenbankebene importiert werden können.
 
@@ -203,7 +203,7 @@ Vollständige Importe sollten nur für das erstmalige Laden verwendet werden.
 
 Für den Datenimport wird empfohlen, anstelle von JavaScript das Data Management zu verwenden.
 
-### Konsistenz gewährleisten   {#maintaining-consistency}
+### Konsistenz gewährleisten    {#maintaining-consistency}
 
 Um die Konsistenz der Adobe-Campaign-Datenbank zu gewährleisten, befolgen Sie die unten stehenden Grundsätze:
 
@@ -244,7 +244,7 @@ In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import v
 
    * Wählen Sie im Bereich **[!UICONTROL Name der zu ladenden Datei]** die Option **[!UICONTROL Lokal existierende Datei laden]** und lassen Sie das Feld leer. Jedes Mal, wenn ein neuer Workflow von dieser Vorlage erstellt wird, können Sie hier die gewünschte Datei spezifizieren, solange sie der definierten Struktur entspricht.
 
-      Sie können alle beliebigen Optionen verwenden, müssen aber die Vorlage entsprechend ändern. Wenn Sie beispielsweise **[!UICONTROL Wird durch die Transition angegeben]** auswählen, können Sie die Aktivität **[!UICONTROL Dateiübertragung]** hinzufügen, bevor Sie die zu importierende Datei von einem FTP-/SFTP-Server abrufen. Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+      Sie können alle beliebigen Optionen verwenden, müssen aber die Vorlage entsprechend ändern. Wenn Sie beispielsweise **[!UICONTROL Wird durch die Transition angegeben]** auswählen, können Sie die Aktivität **[!UICONTROL Dateiübertragung]** hinzufügen, bevor Sie die zu importierende Datei von einem FTP-/SFTP-Server abrufen. Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
       ![](assets/import_template_example1.png)
 
