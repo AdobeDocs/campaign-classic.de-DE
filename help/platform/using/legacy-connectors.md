@@ -14,18 +14,18 @@ discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 959455ec92b40581f04cf0e357b6c0d3f3fba81c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1294'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Veraltete Connectoren {#legacy-connectors}
 
-Ältere FDA werden weiterhin von Adobe unterstützt. Es wird jedoch empfohlen, sie durch aktuellere Alternativen zu ersetzen, die auf dieser [Seite](../../platform/using/specific-configuration-database.md)aufgeführt sind.
+Veraltete FDA-Connectoren werden von Adobe weiter unterstützt. Wir empfehlen jedoch, sie durch aktuellere Alternativen, die auf dieser [Seite](../../platform/using/specific-configuration-database.md) aufgeführt sind, zu ersetzen.
 
 ## Zugriff auf Hadoop 2.1 konfigurieren {#configure-access-to-hadoop}
 
@@ -175,7 +175,7 @@ Die Verbindung zu einer externen Netezza-Datenbank über die FDA-Option erforder
 
 1. Spezifizieren Sie die Umgebungsvariablen des Adobe Campaign-Servers:
 
-   * **LD_LIBRARY_PATH**: /usr/local/nz/lib und /usr/local/nz/lib64. „/usr/local/nz“ entspricht dem bei der Treiberinstallation standardmäßig angegebenen Installationsverzeichnis. Geben Sie hier das für die Installation ausgewählte Verzeichnis an.
+   * **LD_LIBRARY_PATH**: /usr/local/nz/lib und /usr/local/nz/lib64. &quot;/usr/local/nz&quot; entspricht dem bei der Treiberinstallation standardmäßig angegebenen Installationsverzeichnis. Geben Sie hier das für die Installation ausgewählte Verzeichnis an.
    * **ODBCINI**: Pfad der odbc.ini-Datei (z. B. /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: Pfad der Datei „odbc.ini“. In Netezza ist auch diese zweite Variable zur Verwendung der odbc.ini-Datei erforderlich.
 
@@ -281,7 +281,7 @@ Die Verbindung mit einer externen Teradata-Datenbank über die FDA-Option erford
       InstallDir=/etc/
       ```
 
-      „InstallDir“ entspricht dem Pfad der Datei **odbcinst.ini**.
+      &quot;InstallDir&quot; entspricht dem Pfad der Datei **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
@@ -342,7 +342,7 @@ Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erford
       User:SYSTEM
       ```
 
-      „InstallDir“ entspricht dem Pfad der Datei **odbcinst.ini**.
+      &quot;InstallDir&quot; entspricht dem Pfad der Datei **odbcinst.ini**.
 
    * **/etc/odbcinst.ini**
 
