@@ -1,6 +1,6 @@
 ---
-title: Schemaverweis in Adobe Campaign Classic
-description: Erfahren Sie, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign Classic-Datenbank zu erweitern.
+title: Info zu Schema-Referenz in Adobe Campaign Classic
+description: Erfahren Sie, wie Sie Erweiterungsschema konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign Classic-Datenbank zu erweitern.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,24 +13,27 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: d4ebaaf90d88cbec9a4d24d79eaf7c46890d933a
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 7%
 
 ---
 
 
-# Informationen zur Schemareferenz{#about-schema-reference}
+# Über die Schemareferenz{#about-schema-reference}
 
-In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
+In diesem Kapitel wird beschrieben, wie Sie Erweiterungsschema konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank zu erweitern.
 
-Ein besseres Verständnis der integrierten Kampagnentabellen und ihrer Interaktion finden Sie im Datenmodell [Campaign Classic](https://helpx.adobe.com/campaign/kb/acc-datamodel.html).
+Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie im [Campaign Classic-Datenmodell](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
 
-Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Es folgt einer für Adobe Campaign spezifischen Grammatik, einem so genannten **Schema**.
+Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. It obeys a grammar specific to Adobe Campaign, called a **schema**.
 
 Ein Schema ist ein mit einer Datenbanktabelle verknüpftes XML-Dokument. Er definiert die Datenstruktur und beschreibt die SQL-Definition der Tabelle:
 
 * Der Name der Tabelle
 * Felder
-* Indexe
+* Indizes
 * Links zu anderen Tabellen
 
 Außerdem wird die XML-Struktur zum Speichern von Daten beschrieben:
@@ -41,15 +44,15 @@ Außerdem wird die XML-Struktur zum Speichern von Daten beschrieben:
 * Standardwerte
 * Beschriftungen, Beschreibungen und andere Eigenschaften.
 
-Mithilfe von Schemas können Sie eine Entität in der Datenbank definieren. Es gibt ein Schema für jede Entität.
+Mit Schemas können Sie eine Entität in der Datenbank definieren. Es gibt ein Schema für jede Entität.
 
-Die folgende Abbildung zeigt den Speicherort von Schemas im Adobe Campaign-Datensystem:
+Die folgende Abbildung zeigt die Position von Schemas im Adobe Campaign-Datensystem:
 
 ![](assets/reference_schema_intro.png)
 
-## Syntax von Schemas {#syntax-of-schemas}
+## Syntax der Schema {#syntax-of-schemas}
 
-Das Stammelement des Schemas ist **`<srcschema>`**. Es enthält die **- **`<element>`** und **`<attribute>`** -Unterelemente.
+Das Stammelement des Schemas ist **`<srcschema>`**. Es enthält die **`<element>`** und die **`<attribute>`** Unterelemente.
 
 Das erste **`<element>`** Unterelement fällt mit der Stamm-Node der Entität zusammen.
 
@@ -73,24 +76,24 @@ Das erste **`<element>`** Unterelement fällt mit der Stamm-Node der Entität zu
 
 Die **`<element>`** -Tags definieren die Namen der Entitätselemente. **`<attribute>`** -Tags des Schemas definieren die Namen der Attribute in den **`<element>`** Tags, mit denen sie verknüpft wurden.
 
-## Identifizierung eines Schemas {#identification-of-a-schema}
+## Bezeichnung eines Schemas {#identification-of-a-schema}
 
-Ein Datenschema wird durch seinen Namen und seinen Namespace identifiziert.
+Ein Schema wird anhand seines Namens und seines Namensraums identifiziert.
 
-Mit einem Namespace können Sie eine Gruppe von Schemata nach Interessensgebieten gruppieren. Beispielsweise wird der **cus** -Namespace für die kundenspezifische Konfiguration (**Kunden**) verwendet.
+Mit einem Namensraum können Sie eine Reihe von Schemas nach Interessensgebieten gruppieren. Beispielsweise wird der **Namensraum &quot;cus** &quot;für die kundenspezifische Konfiguration (**Kunden**) verwendet.
 
 >[!IMPORTANT]
 >
->Standardmäßig muss der Name des Namespace knapp sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
+>Standardmäßig muss der Name des Namensraums knapp sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
 >
 >Bezeichner dürfen nicht mit numerischen Zeichen beginnen.
 
-Bestimmte Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind:
+Bestimmte Namensräume sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb des Adobe Campaign-Antrags erforderlich sind:
 
 * **xtk**: Plattformsystemdaten,
 * **nl**: über die Verwendung des Antrags insgesamt,
-* **nms**: bezüglich der Lieferung (Empfänger, Lieferung, Verfolgung usw.),
-* **ncm**: über die Verwaltung von Inhalten,
-* **temp**: für temporäre Schemata reserviert.
+* **nms**: versand (Empfänger, Versand, Verfolgung usw.),
+* **ncm**: content-management,
+* **temp**: für vorübergehende Schemas reserviert.
 
 The identification key of a schema is a string built using the namespace and the name separated by a colon; for example: **cus:recipient**.
