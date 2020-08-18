@@ -14,8 +14,11 @@ discoiquuid: 279b0ae6-2578-4f1f-af59-13a1a9c80b32
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: ced6c73961e949c421e9dfb638b40a06dcad4614
+workflow-type: tm+mt
+source-wordcount: '845'
+ht-degree: 97%
 
 ---
 
@@ -78,7 +81,7 @@ Des Weiteren können folgende Publikationsparameter konfiguriert werden:
 * **[!UICONTROL Multidatei-Erzeugung]** fügt zu Beginn jeder neuen Seite des Ausgabedokuments ein Trennzeichen ein. Bei der Inhaltserzeugung werden so viele Dateien erstellt, wie Trennzeichen angegeben wurden. Dieser Modus wird für die Erstellung von Minisites verwendet. Weitere Informationen hierzu finden Sie im Abschnitt [Multidatei-Erzeugung](#multi-file-generation).
 * Das Eingabefeld **[!UICONTROL Speicherort]** enthält den Namen der Ausgabedatei. Wenn dieser aus Variablen besteht, wird er automatisch erzeugt.
 
-   Die Variablen sind wie folgt anzugeben: **`$(<xpath>)`, wobei `<xpath>` den Pfad eines Felds des der Publikationsvorlage zugrunde liegenden Datenschemas bezeichnet.
+   A variable is populated with the following format: **`$(<xpath>)`**, where **`<xpath>`** is the path of a field of the publication template data schema.
 
    Beispielsweise kann der Dateiname auf ein Datumsfeld verweisen. In diesem Fall ist die Funktion **$date-format** zu verwenden und Feldpfad sowie Ausgabeformat sind anzugeben.
 
