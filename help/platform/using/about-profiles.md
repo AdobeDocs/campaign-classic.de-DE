@@ -69,8 +69,8 @@ Erweiterte Funktionalitäten stehen über den Navigationsbaum zur Verfügung. Kl
 
 Standardmäßig sind die Empfänger im Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Empfänger]** gespeichert. Sie haben an dieser Stelle nicht nur die Möglichkeit, Empfänger zu erstellen, sondern auch
 
-* Profile der Datenbank sortieren und filtern; siehe ](../../platform/using/filtering-options.md)Filteroptionen[,
-* Profile der Datenbank verschieben, kopieren oder löschen; siehe ](../../platform/using/managing-profiles.md)Profile verwalten[,
+* Profile der Datenbank sortieren und filtern; siehe [Filteroptionen](../../platform/using/filtering-options.md),
+* Profile der Datenbank verschieben, kopieren oder löschen; siehe [Profile verwalten](../../platform/using/managing-profiles.md),
 * Profile aktualisieren; siehe [Daten-Update](../../platform/using/updating-data.md),
 * Exportempfänger; siehe [Profile im-/exportieren](../../platform/using/exporting-and-importing-profiles.md),
 * Empfängergruppen erstellen; siehe [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md).
