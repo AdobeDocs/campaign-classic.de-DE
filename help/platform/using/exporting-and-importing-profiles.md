@@ -14,21 +14,36 @@ discoiquuid: 0325ab0f-394e-404b-9f4a-db3cc18d2493
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+translation-type: tm+mt
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 13%
 
 ---
 
 
-# Profile im-/exportieren{#exporting-and-importing-profiles}
+# Importing and exporting profiles{#exporting-and-importing-profiles}
 
-Empfängerprofile können in die Adobe-Campaign-Datenbank importiert oder in externe Dateien exportiert werden.
+Sie können Empfänger-Profil [Workflows](#use-workflows) zum Importieren oder Exportieren in die Adobe Campaign-Datenbank verwenden oder [generische Import- oder Exportaufträge](#create-jobs)einrichten.
 
-Zur Konfiguration derartiger Im- oder Exporte klicken Sie auf den Link **[!UICONTROL Vorgänge]** in der Rubrik **[!UICONTROL Profile und Zielgruppen]**.
+![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#import-profiles-video)
+
+## Workflows verwenden{#use-workflows}
+
+Exporte und Importe werden in dedizierten Vorlagen konfiguriert, die über Workflows über die **[!UICONTROL Import]** - und **[!UICONTROL Export]** -Aktivitäten ausgeführt werden. Sie können automatisch nach einem Zeitplan wiederholt werden, um beispielsweise den Datenaustausch zwischen verschiedenen Informationssystemen zu automatisieren. [Mehr dazu](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+
+Bei Bedarf können Sie gelegentlich einen Import- oder Exportauftrag über die unten beschriebene Funktion &quot; **[!UICONTROL Generische Ein- und Ausfuhren]** &quot;erstellen.
+
+## Erstellen von Aufträgen{#create-jobs}
+
+To configure and execute data imports and exports jobs, go to the **[!UICONTROL Profiles and targets]** tab and click the **[!UICONTROL Jobs]** link. [Mehr dazu](../../platform/using/generic-imports-and-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
->[!NOTE]
->
->Das Importieren und Exportieren von Daten wird unter [Allgemeine Importe und Exporte](../../platform/using/generic-imports-and-exports.md) und in [diesem Video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html) vorgestellt.
 
+## Wie importiere ich Profile{#import-profiles-video}
+
+In diesem Video wird erläutert, wie Profil in Adobe Campaign importiert werden, um sie gelegentlich zu importieren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
