@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ea6488686d19b020e55839afee97e71a13ce2e33
+source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
 workflow-type: tm+mt
 source-wordcount: '3775'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Go to **[!UICONTROL Monitoring]** and click the **[!UICONTROL Overview]** link t
 Auf der angezeigten Seite können Sie den Status der verbundenen Instanz, d. h.:
 
 * Informationen zum Exemplar: Version, Name, Datenbank-Engine, installierte Pakete, Serversystemindikatoren,
-* Liste fehlender Prozesse und Ausführungsinformationen (Beginn, PID usw.),
+* liste fehlender Prozesse und Ausführungsinformationen (Beginn, PID usw.),
 * eine Ansicht von Workflows und Versänden.
 
 Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
@@ -220,7 +220,7 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 Mit Adobe Campaign können Sie Indikatoren anpassen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine **.sh** -Datei und benennen Sie sie **[!UICONTROL cust_indicator.sh]** .
-1. Hinzufügen Sie Ihre benutzerdefinierten Indikatoren in diese Datei ein. Beispiel:
+1. hinzufügen Sie Ihre benutzerdefinierten Indikatoren in diese Datei ein. Beispiel:
 
    ```
    #!/bin/bash 
@@ -444,7 +444,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring  </th> 
+   <th> Monitoring    </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -495,7 +495,7 @@ Adobe Campaign kann ein Instanzenüberwachungstool (netreport) bereitstellen, mi
 
 Für die automatische Überwachung sind folgende Vorsichtsmaßnahmen vor der Installation erforderlich:
 
-* Sie müssen über die Dateien **netreport.tgz **(Linux-Installation) oder **netreport.zip** (Windows-Installation) verfügen.
+* Sie müssen über die Dateien **netreport.tgz** (Linux-Installation) oder **netreport.zip** (Windows-Installation) verfügen,
 * Wir empfehlen Ihnen dringend, keine Überwachung auf dem zu überwachenden Rechner zu installieren.
 * Es muss auf einem Computer mit JRE oder JDK installiert sein,
 * unter Linux muss der zu überwachende Rechner das **bc** -Paket haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
@@ -508,7 +508,7 @@ Das Installationsverfahren sieht wie folgt aus:
 1. Führen Sie Archiv-Extraktion aus.
 1. Lesen Sie die **Readme** -Datei.
 1. Aktualisieren Sie die Konfigurationsdatei &quot; **netconf.xml** &quot;.
-1. Aktualisieren Sie die Datei **netreport.bat** (Windows) oder **netreport.sh **(Linux).
+1. Aktualisieren Sie die Datei **netreport.bat** (Windows) oder **netreport.sh** (Linux).
 
 ### Konfigurieren der Datei &quot;netconf.xml&quot; {#configuring-the-netconf-xml-file}
 
@@ -605,7 +605,7 @@ Dieses Element konfiguriert die Überwachung eines bestimmten Servers auf dem Ho
 
    ![](assets/ncs_operators_rights_02.png)
 
-* **criticalLevel** (optional): können Sie Fehler sortieren, die nach der Schwere angezeigt werden sollen. Mögliche Werte sind &#39;0&#39; (alle Ebenen werden angezeigt), &#39;1&#39; (nur hohe und kritische Fehler) und &#39;2&#39; (nur kritische Fehler angezeigt). Wenn dieses Attribut nicht angegeben ist, werden alle Fehlerebenen angezeigt.
+* **criticalLevel** (optional): können Sie Fehler sortieren, die nach der Schwere angezeigt werden sollen. Mögliche Werte sind &quot;0&quot;(alle Ebenen werden angezeigt), &quot;1&quot;(nur hohe und kritische Fehler) und &quot;2&quot;(nur kritische Fehler angezeigt). Wenn dieses Attribut nicht angegeben ist, werden alle Fehlerebenen angezeigt.
 * **filter** (optional): können Sie bestimmte Workflow-Fehler ausschließen, z. B. **filter=&quot;wkf;wkf1&quot;**. Workflow-Beschriftungen müssen durch Semikolons getrennt werden.
 
 #### Unterelemente {#sub-elements}
