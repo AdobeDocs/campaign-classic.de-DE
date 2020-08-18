@@ -1,5 +1,5 @@
 ---
-title: Best Practices zum SFTP-Server und Fehlerbehebung
+title: Nutzung von SFTP-Servern
 description: Erfahren Sie mehr über Best Practices und Fehlerbehebung für SFTP-Server.
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 64%
+source-wordcount: '1007'
+ht-degree: 65%
 
 ---
 
@@ -118,9 +118,9 @@ Dieser Fehler gibt an, dass der Domänenname des FTP-Servers nicht ordnungsgemä
    1. Überprüfen Sie, ob der Servername dem lokalen DNS-Server hinzugefügt wurde.
    1. Falls ja, führen Sie den folgenden Befehl auf dem Adobe Campaign-Server aus, um die IP-Adresse abzurufen:
 
-   `nslookup <server domain name>`
+      `nslookup <server domain name>`
 
-   Dies bestätigt, dass der FTP-Server funktioniert und vom Adobe Campaign-Anwendungsserver aus erreichbar ist.
+      Dies bestätigt, dass der FTP-Server funktioniert und vom Adobe Campaign-Anwendungsserver aus erreichbar ist.
 
 1. Fehlerbehebung bei **Sitzungsprotokollen**:
 
@@ -128,11 +128,11 @@ Dieser Fehler gibt an, dass der Domänenname des FTP-Servers nicht ordnungsgemä
    1. Wechseln Sie zur Registerkarte **[!UICONTROL Dateiübertragung]** und klicken Sie dann auf **[!UICONTROL Erweiterte Parameter]**.
    1. Aktivieren Sie die Option Sitzungsprotokolle **[!UICONTROL anzeigen]** .
 
-   ![](assets/sftp-error-display-logs.png)
+      ![](assets/sftp-error-display-logs.png)
 
    1. Gehen Sie zur Workflow-Prüfung und prüfen Sie, ob in den Protokollen der Fehler &quot;Host-Name konnte nicht aufgelöst werden&quot;angezeigt wird.
 
-   Wenn der SFTP-Server von der Adobe gehostet wird, prüfen Sie, ob der Zulassungsliste IP hinzugefügt wird, indem Sie sich an den Kundendienst wenden.
+1. Wenn der SFTP-Server von der Adobe gehostet wird, prüfen Sie, ob der Zulassungsliste IP hinzugefügt wird, indem Sie sich an den Kundendienst wenden.
 
    Andernfalls validieren:
 
