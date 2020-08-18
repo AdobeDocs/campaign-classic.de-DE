@@ -14,8 +14,11 @@ discoiquuid: a3834828-4d39-4699-b648-d399797b8ea7
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: b01252d57ec4ca5c5c87e69566079c48d7363e38
+workflow-type: tm+mt
+source-wordcount: '1035'
+ht-degree: 98%
 
 ---
 
@@ -205,6 +208,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
    * **Benutzer:** gleich
    * **Wert:** Variablen (variables)
    * **Berücksichtigt wenn:** &#39;$(var2/@id)&#39;!=&#39;&#39;
+
    ![](assets/s_ncs_configuration_webapp_filter002.png)
 
 >[!CAUTION]
@@ -220,7 +224,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 
    ![](assets/s_ncs_configuration_webapp_refreshlink.png)
 
-1. Fügen Sie das Aktualisierungssymbol im Feld **[!UICONTROL Bild]** hinzu: **/xtk/img/refresh.png **.
+1. Add the refresh icon on the **[!UICONTROL Image]** field: **/xtk/img/refresh.png**.
 1. Ordnen Sie mithilfe der Sortierpfeile die unterschiedlichen Elemente der Webanwendung wie unten dargestellt neu.
 
    ![](assets/s_ncs_configuration_webapp_orderelements.png)
