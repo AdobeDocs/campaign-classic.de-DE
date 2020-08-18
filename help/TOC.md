@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
 workflow-type: tm+mt
-source-wordcount: '2110'
-ht-degree: 99%
+source-wordcount: '2113'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 99%
       + [Allgemeine Importe und Exporte](platform/using/generic-imports-and-exports.md)
       + [Export von Daten](platform/using/exporting-data.md)
       + [Daten importieren](platform/using/importing-data.md)
-      + [Nutzung von SFTP-Servern](platform/using/sftp-server-usage.md)
+      + [Best Practices zum SFTP-Server und Fehlerbehebung](platform/using/sftp-server-usage.md)
    + Datenfilter {#filtering-data}
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
@@ -91,12 +91,12 @@ ht-degree: 99%
 + Nachrichten senden {#sending-messages}
    + [Erste Schritte mit dem von Nachrichten](delivery/using/communication-channels.md)
    + Best Practices beim Versand {#delivery-bestpractices}
-      + [Learn good practices](delivery/using/delivery-best-practices.md)
+      + [Bewährte Verfahren](delivery/using/delivery-best-practices.md)
       + [Versand optimieren](delivery/using/optimize-delivery.md)
       + [Verwenden von Vorlagen](delivery/using/use-templates.md)
       + [Personalisierte Inhalte erstellen](delivery/using/design-and-personalize.md)
-      + [Define the right audience](delivery/using/define-the-right-audience.md)
-      + [Check before sending](delivery/using/check-before-sending.md)
+      + [Definieren der richtigen Audience](delivery/using/define-the-right-audience.md)
+      + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
       + [Tracken und Beobachten](delivery/using/track-and-monitor.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
       + [Erste Schritte mit Versänden](delivery/using/steps-about-delivery-creation-steps.md)
