@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1010'
 ht-degree: 64%
 
 ---
@@ -95,9 +95,9 @@ Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportte
 1. Wenn Sie eine schlüsselbasierte Authentifizierung verwenden, überprüfen Sie, ob der von Ihnen verwendete Schlüssel mit dem übereinstimmt, den Sie dem Adobe-Supportteam zur Konfiguration der Instanz bereitgestellt haben.
 1. Wenn Sie FileZilla oder ein ähnliches FTP-Tool verwenden, geben Sie im Supportticket die Verbindungsprotokoll-Details an.
 
-## Fehler &quot;Hostname konnte nicht aufgelöst werden&quot;, Upload-Fehler in cURL
+## Fehler &quot;Hostname konnte nicht aufgelöst werden&quot;
 
-Dieser Abschnitt enthält Informationen zu den Prüfungen und Aktionen, die beim Abrufen des Hostnamens &quot;Kann nicht aufgelöst werden&quot; durchgeführt werden. nach dem Herstellen einer Verbindung mit dem FTP-Server von Campaign Classic aus.
+Dieser Abschnitt enthält Informationen zu den Prüfungen und Aktionen, die beim Abrufen des Fehlers &quot;Host name konnte nicht aufgelöst werden&quot;nach dem Herstellen einer Verbindung mit dem FTP-Server von Campaign Classic ausgeführt werden.
 
 Das Workflow-Protokoll enthält die folgenden Protokolle:
 
