@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '7110'
+source-wordcount: '7111'
 ht-degree: 97%
 
 ---
@@ -55,7 +55,7 @@ Anleitungen zu Videos stehen jetzt in den folgenden Themen zur Verfügung:
 
 * [Einrichten eines kontinuierlichen Versands](../../workflow/using/continuous-delivery.md)
 
-Es wurden Informationen zu den Prüfungen und Aktionen hinzugefügt, die beim Abrufen des Fehlers &quot;Host name konnte nicht aufgelöst werden&quot;nach dem Herstellen einer Verbindung mit dem FTP-Server durchgeführt werden sollen. [mehr dazu](../../platform/using/sftp-server-usage.md)
+Es wurden Informationen zu den Prüfungen und Aktionen hinzugefügt, die durchgeführt werden sollen, wenn der Fehler &quot;Hostname konnte nicht aufgelöst werden&quot;nach dem Herstellen einer Verbindung mit einem FTP-Server ausgegeben wird. [mehr dazu](../../platform/using/sftp-server-usage.md)
 
 ## Juli 2020 {#july-2020}
 
