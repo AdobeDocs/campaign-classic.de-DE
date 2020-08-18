@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '3906'
+source-wordcount: '3930'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 # Liste der Optionen von Campaign Classic{#configuring-campaign-options}
 
-Der Knoten **[!UICONTROL Administration/Platform/Optionen]** ermöglicht Ihnen die Konfiguration von Adobe Campaign-Optionen.
+Der Knoten **[!UICONTROL Administration/Plattform/Optionen]** ermöglicht Ihnen die Konfiguration von Adobe Campaign-Optionen.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -268,7 +268,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Restrict_EditXML</span> </td> 
-   <td> Hinzufügen Sie diese Option mit dem Wert "0", um die Ausgabe des XML-Codes der Versand zu deaktivieren (Rechtsklick / XML-Quelle <span class="uicontrol"></span> bearbeiten oder <span class="uicontrol">STRG + F4</span> -Verknüpfung).<br /> </td> 
+   <td> hinzufügen Sie diese Option mit dem Wert "0", um die Ausgabe des XML-Codes der Versand zu deaktivieren (Rechtsklick / XML-Quelle <span class="uicontrol"></span> bearbeiten oder <span class="uicontrol">STRG + F4</span> -Verknüpfung).<br /> </td> 
   </tr>  
  </tbody> 
 </table>
@@ -285,7 +285,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -350,7 +350,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -403,7 +403,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -448,7 +448,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -565,7 +565,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -633,25 +633,25 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
     <li><p>1 - pg_cancel_backend: stoppt den Workflow-Prozess und bricht die Abfrage in der Datenbank ab<p></li>
     <li><p>2 - pg_terminate_backend: beendet den Workflow-Prozess und beendet die Abfrage in der Datenbank<p></li></ul></td> 
   </tr>  
-  <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Name des Tablespace, der die Indizes der Adobe Campaign-Standardtabellen enthalten soll.<br /> </td> 
+    <tr> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
+   <td> Name des Tablespace, der die Daten der Adobe Campaign-Standardtabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Name des Tablespace, der die Daten der Standard-Adobe Campaign-Tabellen enthalten soll.<br /> </td> 
+   <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
+   <td> Name des Tablespace, der die Indizes der Adobe Campaign-Standardtabellen enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
-   <td> Name des Tablespace, der die Daten der Arbeitstabellen des Adobe Campaigns enthalten soll.<br /> </td> 
+   <td> Name des Tablespace, der die Daten der Arbeitstabellen des Adobe Campaigns enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWorkIndex</span> <br /> </td> 
-   <td> Name des Tablespace, der die Indizes der Arbeitstabellen des Adobe Campaigns enthalten soll.<br /> </td> 
+   <td> Name des Tablespace, der die Indizes der Arbeitstabellen des Adobe Campaigns enthalten soll.<br />Siehe <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Damit können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren, um Backups und Replizierung zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden, falls angegeben, in diese Datenbank geschrieben. Beispiel: 'tempdb.dbo' (Beachten Sie, dass der Name mit einem Punkt enden muss).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">mehr dazu</a> <br /> </td> 
+   <td> Damit können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren, um Backups und Replizierung zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden, falls angegeben, in diese Datenbank geschrieben. Beispiel: 'tempdb.dbo' (Beachten Sie, dass der Name mit einem Punkt enden muss).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Mehr dazu</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
@@ -711,17 +711,17 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">AEMResourceTypeFilter</span> <br /> </td> 
-   <td> Typen von AEM-Ressourcen, die in Adobe Campaign verwendet werden können. Die Werte müssen durch Kommas getrennt werden.<br /> </td> 
+   <td> Arten von AEM Ressourcen, die in Adobe Campaign verwendet werden können. Die Werte müssen durch Kommas getrennt werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">nmsPipeline_config</span> <br /> </td> 
-   <td> Hiermit können Sie Experience Cloud-Auslöser konfigurieren. Der Datentyp ist "langer Text"und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud-Auslösern mit Adobe Campaign Classic</a>.<br /> </td> 
+   <td> Hiermit können Sie Experience Cloud-Auslöser konfigurieren. Der Datentyp ist "langer Text"und muss im JSON-Format vorliegen. Siehe <a class="anchorLink" href="https://helpx.adobe.com/campaign/kb/triggers-and-campaign.html#PipelineoptionNmsPipelineConfig" target="_blank">Verwenden von Experience Cloud-Triggern mit Adobe Campaign Classic</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">LASTIMPORT_&lt;%=instance.internalName%&gt;_&lt;%=activityName%&gt;</span> <br /> </td> 
@@ -733,7 +733,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Für die Integration verwendeter Adobe Target-Server. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Target Domain Server, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
+   <td> Adobe Target-Server, der für die Integration verwendet wird. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Target-Domänenserver, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
@@ -741,11 +741,11 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
-   <td> Option, die für die Integration mit Adobe Audience Manager verwendet wird.<br /> </td> 
+   <td> Für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DestinationId</span> <br /> </td> 
-   <td> Option, die für die Integration mit Adobe Audience Manager verwendet wird.<br /> </td> 
+   <td> Für die Integration mit Adobe Audience Manager verwendete Option.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcCapability_Teradata</span> <br /> </td> 
@@ -764,7 +764,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -801,7 +801,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -838,7 +838,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -911,7 +911,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -940,7 +940,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -1021,7 +1021,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung </th> 
+   <th> Beschreibung  </th> 
   </tr> 
  </thead> 
  <tbody> 
