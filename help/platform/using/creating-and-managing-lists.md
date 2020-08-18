@@ -14,8 +14,11 @@ discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 100%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
 
 Eine Liste ist eine statische Gruppe von Profilen, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank gefilterte Population in einer Liste gespeichert werden.
 
-Basierend auf derart erstellten Listen ist es nun möglich, Sendungen (per E-Mail, SMS usw.) zu konfigurieren. Bitte stellen Sie zuvor eine der Deontologie entsprechende Verwaltung der Empfängerzustimmungen und -ablehnungen (Permission Marketing) sicher.
+
 
 Listen werden über den Link **[!UICONTROL Listen]** im Tab **[!UICONTROL Profile und Zielgruppen]** erstellt und verwaltet.
 
