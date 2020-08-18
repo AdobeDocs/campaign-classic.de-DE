@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 5598682078a8fd3c8d9ecdca083f3a310c48f5f0
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1147'
 ht-degree: 10%
 
 ---
@@ -30,7 +30,7 @@ Bevor Sie den Aktualisierungsprozess starten, müssen Sie feststellen, auf welch
 >[!CAUTION]
 >
 >Es wird dringend empfohlen, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. For more information, refer to [Backup](../../production/using/backup.md).\
->To perform an upgrade, make sur you have the ability and permissions to access instances and logs.
+>Um eine Aktualisierung durchzuführen, stellen Sie sicher, dass Sie über die Fähigkeit und die Berechtigungen zum Zugriff auf Instanzen und Protokolle verfügen.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Bevor Sie den Aktualisierungsprozess starten, müssen Sie feststellen, auf welch
 
 ## Windows {#in-windows}
 
-To update Adobe Campaign in a new version when delivering a new build, the following procedure should be applied in Windows:
+Um Adobe Campaign bei der Bereitstellung eines neuen Builds in einer neuen Version zu aktualisieren, sollte unter Windows das folgende Verfahren angewendet werden:
 
 * [Dienste beenden](#shut-down-services),
 * [Aktualisieren Sie die Adobe Campaign-Serveranwendung](#upgrade-the-adobe-campaign-server-application),
@@ -78,7 +78,7 @@ Um die Aktualisierungsdatei auszuführen, führen Sie die folgenden Schritte aus
 
 1. Führen Sie **setup.exe** aus.
 
-   To download this file, go to the Adobe Campaign Support page ( [https://support.neolane.net/](https://support.neolane.net/)) via the **Download Center** link.
+   Um diese Datei herunterzuladen, rufen Sie die Seite &quot;Adobe Campaign-Support&quot;( [https://support.neolane.net/](https://support.neolane.net/)) über den Link &quot; **Download-Center** &quot;auf.
 
 1. Select the installation mode: choose **[!UICONTROL Update or repair]**
 1. Klicken Sie auf **[!UICONTROL Weiter]** .
@@ -97,8 +97,8 @@ Verwenden Sie die folgende Befehlszeile:
 Auf diese Weise können Sie die folgenden Vorgänge durchführen:
 
 * Ressourcen synchronisieren,
-* update schemas,
-* update the database.
+* schemas aktualisieren,
+* die Datenbank aktualisieren.
 
 >[!NOTE]
 >
@@ -121,14 +121,14 @@ Folgende Dienste sollen neu gestartet werden:
 Um Adobe Campaign in einer neuen Version zu aktualisieren, wenn ein neuer Build bereitgestellt wird, gilt folgendes Verfahren für Linux:
 
 * [Abrufen aktualisierter Pakete](#obtain-updated-packages),
-* [Perform an update](#perform-an-update),
-* [Reboot the web server](#reboot-the-web-server).
+* [Führen Sie eine Aktualisierung](#perform-an-update)durch,
+* [Starten Sie den Webserver](#reboot-the-web-server)neu.
 
 Informationen zum Aktualisieren der Client-Konsole finden Sie in [diesem Abschnitt](../../installation/using/client-console-availability-for-linux.md).
 
 >[!NOTE]
 >
->From build 8757, the third party library is no longer needed.
+>Ab Build 8757 wird die Drittanbieter-Bibliothek nicht mehr benötigt.
 
 ### Aktualisierte Pakete abrufen {#obtain-updated-packages}
 
@@ -140,15 +140,15 @@ Die Datei lautet **nlserver6-v7-XXX.rpm**
 
 * RPM-basierte Distribution (RedHat, SuSe)
 
-   To install them, execute as root:
+   Führen Sie zum Installieren die folgenden Schritte als Root aus:
 
    ```
    $rpm -Uvh nlserver6-v7-XXXX.rpm
    ```
 
-   where XXX is the version of the file.
+   wobei XXX die Version der Datei ist.
 
-   The rpm file has dependencies on packages that you can find on CentOS/Red Hat distributions. If you don&#39;t want to use some of these dependencies, you may have to use the &quot;nodeps&quot; option of rpm:
+   Die rpm-Datei hat Abhängigkeiten von Paketen, die Sie in CentOS/Red Hat-Distributionen finden können. Wenn Sie einige dieser Abhängigkeiten nicht verwenden möchten, müssen Sie möglicherweise die Option &quot;nodeps&quot;von rpm verwenden:
 
    ```
    rpm --nodeps -Uvh nlserver6-v7-XXXX-0.x86_64.rpm
@@ -156,7 +156,7 @@ Die Datei lautet **nlserver6-v7-XXX.rpm**
 
 * DEB-basierte Distribution (Debian)
 
-   To install them, execute as root:
+   Führen Sie zum Installieren die folgenden Schritte als Root aus:
 
    ```
    dpkg -i nlserver6-v7-XXXX-amd64_debX.deb
@@ -164,11 +164,11 @@ Die Datei lautet **nlserver6-v7-XXX.rpm**
 
 >[!NOTE]
 >
->Ausführliche Installationsanweisungen finden Sie in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md). Resources are synchronized automatically, however you need to make sure no errors occurred. For more on this, refer to [Resolving upgrade conflicts](#resolving-upgrade-conflicts).
+>Ausführliche Installationsanweisungen finden Sie in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md). Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen finden Sie unter [Beheben von Aktualisierungskonflikten](#resolving-upgrade-conflicts).
 
-### Reboot the web server {#reboot-the-web-server}
+### Webserver neu starten {#reboot-the-web-server}
 
-You must shut down Apache for the new library to become applicable.
+Sie müssen den Apache herunterfahren, damit die neue Bibliothek anwendbar wird.
 
 Führen Sie dazu den folgenden Befehl aus:
 
@@ -230,7 +230,7 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 
    >[!CAUTION]
    >
-   >If you select this resolution mode, you may not benefit from corrections in the new version.
+   >Wenn Sie diesen Auflösungsmodus auswählen, werden in der neuen Version möglicherweise keine Korrekturen vorgenommen.
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
@@ -249,7 +249,7 @@ Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
 Ein Updatefehler kann mit der Datenbankkonfiguration verknüpft sein. Vergewissern Sie sich, dass die vom technischen Administrator und vom Datenbankadministrator ausgeführten Konfigurationen kompatibel sind.
 
-For example, a unicode database must not only authorize storage of LATIN1 data, etc.
+Beispielsweise darf eine Unicode-Datenbank nicht nur die Datenspeicherung von LATIN1-Daten usw. autorisieren.
 
 ## Warn the client consoles of the available update {#warn-the-client-consoles-of-the-available-update}
 
@@ -257,7 +257,7 @@ For example, a unicode database must not only authorize storage of LATIN1 data, 
 
 On the machine where the (**nlserver web**) Adobe Campaign application server is installed, download and copy the file
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 in **[Pfad der Anwendung]**datakitnholjsp
 
@@ -269,9 +269,9 @@ Wenn die Client-Konsolen das nächste Mal angeschlossen werden, informiert ein F
 
 ### Unter Linux {#in-linux-1}
 
-On the machine where the Adobe Campaign application server (**nlserver web**) is installed, retrieve the following package:
+Rufen Sie auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver (**nlserver web**) installiert ist, das folgende Paket ab:
 
-**setup-client-6.** XXXX **.exe**
+**setup-client-6.XXXX.exe**
 
 und kopieren Sie es, indem Sie als **/usr/local/neolane/nl6/datakit/nl/eng/jsp** speichern:
 
