@@ -14,8 +14,11 @@ discoiquuid: 3667da3d-4940-4128-8878-f1ee67216f56
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 100%
 
 ---
 
@@ -37,6 +40,7 @@ Gehen Sie dazu wie folgt vor:
 
    * das zu verwendende externe Konto für die Verbindung mit dem S3- oder (S)FTP-Server.
    * den Pfad der Datei auf dem S3- oder (S)FTP-Server.
+
    ![](assets/delivery_loadcontent_filetransfertexample.png)
 
 1. Fügen Sie eine **[!UICONTROL Versand]**-Aktivität hinzu und verbinden Sie sie mit der ausgehenden Transition der Aktivität **[!UICONTROL Dateiübertragung]**. Konfigurieren Sie sie folgendermaßen:
@@ -45,6 +49,7 @@ Gehen Sie dazu wie folgt vor:
    * Empfänger: In diesem Beispiel wurde die Zielgruppe im Versand selbst festgelegt.
    * Inhalt: Wählen Sie **[!UICONTROL Wird im Versand angegeben]** aus, selbst wenn der Inhalt in der vorherigen Aktivität importiert wurde. Da der Inhalt direkt aus einer auf einem Remote-Server gespeicherten Datei importiert wird, besitzt er keine Kennung, wenn er vom Workflow verarbeitet wird, und kann nicht als vom Eingangsereignis kommend identifiziert werden.
    * Auszuführende Aktion: Wählen Sie **[!UICONTROL Speichern]**, um den Versand zu speichern und darauf über **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** zugreifen zu können, wenn der Workflow ausgeführt wird.
+
    ![](assets/delivery_loadcontent_activityexample.png)
 
 1. Fügen Sie in der Aktivität **[!UICONTROL Versand]** im Tab **[!UICONTROL Script]** den folgenden Befehl hinzu, um den Inhalt der importierten Datei in den Versand zu laden:
@@ -60,4 +65,3 @@ Gehen Sie dazu wie folgt vor:
 >[!NOTE]
 >
 >Best Practices und Problembehebung bei der Verwendung von SFTP-Servern finden Sie auf [dieser Seite](../../platform/using/sftp-server-usage.md).
-
