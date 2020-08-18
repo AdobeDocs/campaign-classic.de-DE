@@ -5,10 +5,10 @@ index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 translation-type: tm+mt
-source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+source-git-commit: 8198c4aa6eccc0cbb5de4712ebdd8000783b615c
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 98%
+source-wordcount: '2110'
+ht-degree: 99%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 98%
       + [Allgemeine Importe und Exporte](platform/using/generic-imports-and-exports.md)
       + [Export von Daten](platform/using/exporting-data.md)
       + [Daten importieren](platform/using/importing-data.md)
-      + [Best Practices zum SFTP-Server und Fehlerbehebung](platform/using/sftp-server-usage.md)
+      + [Nutzung von SFTP-Servern](platform/using/sftp-server-usage.md)
    + Datenfilter {#filtering-data}
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
