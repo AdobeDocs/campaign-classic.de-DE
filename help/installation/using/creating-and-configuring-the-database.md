@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 653f630079277ffb75915206c445e9414cfcdd7c
+source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
 workflow-type: tm+mt
-source-wordcount: '1344'
+source-wordcount: '1345'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ Je nach ausgewählter Datenbank-Engine können die Serverkennungsinformationen v
 * Bei einer **PostgreSQL** - oder **DB2** -Engine müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver definiert ist, um auf den Datenbankserver zuzugreifen.
 * Für eine **Microsoft SQL Server** -Engine müssen Sie Folgendes definieren:
 
-   1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS\ `<instance>`**(Instanzmodus),
+   1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS\`<instance>`** (Instanzmodus),
    1. die Authentifizierungsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-Authentifizierung]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
 
       ![](assets/s_ncs_install_db_mssql_creation01.png)
@@ -132,7 +132,7 @@ Im Fenster &quot; **[!UICONTROL Erstellungsschritte]** &quot;können Sie das SQL
 
 * Bei einer Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbank kann der Administrator auch die **Datenspeicherung-Parameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden.
 
-   Diese Parameter erhalten die genauen Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden in den folgenden Optionen im Knoten **[!UICONTROL Administration > Plattform > Optionen]** gespeichert:
+   Diese Parameter erhalten die genauen Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden jeweils im Knoten **[!UICONTROL Administration > Plattform > Optionen]** in den folgenden Optionen gespeichert (siehe [](../../installation/using/configuring-campaign-options.md#database)):
 
    * **WdbcOptions_TableSpaceUser**: Benutzertabellen basierend auf einem Schema
    * **WdbcOptions_TableSpaceIndex**: Index der Benutzertabellen basierend auf einem Schema
@@ -166,7 +166,7 @@ Beispiel für eine Microsoft SQL Server-Konfiguration auf der Base61-Datenbank, 
 
 Die Datenbank sowie der Benutzer müssen vom Datenbankadministrator erstellt und die Zugriffsrechte korrekt konfiguriert worden sein.
 
-Für eine Oracle-Datenbank sind beispielsweise die folgenden Mindestrechte erforderlich: GEWÄHREN SIE VERBINDUNG, RESSOURCE UND UNLIMITED TABLESPACE.
+Für eine Oracle-Datenbank sind beispielsweise die folgenden Mindestrechte erforderlich: ZUSCHUSS CONNECT, RESOURCE UND UNBEGRENZTER TABLESPACE.
 
 Um eine vorhandene Datenbank zu verwenden, gehen Sie wie folgt vor:
 
