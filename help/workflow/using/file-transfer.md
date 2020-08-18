@@ -12,8 +12,11 @@ discoiquuid: d8b49f68-c783-43fc-9907-e8480ecd28c2
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
+translation-type: tm+mt
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
+workflow-type: tm+mt
+source-wordcount: '621'
+ht-degree: 100%
 
 ---
 
@@ -22,6 +25,10 @@ source-git-commit: 2e16d4de068f8cb1e61069aa53626f7bf7021466
 
 Die **Dateiübertragung** ermöglicht den Empfang, den Versand und die Prüfung auf Existenz von Dateien oder das Listen von Dateien auf einem Server. Als Protokoll wird der Amazon Simple Storage Service (S3), das File Transfer Protocol (FTP) oder das Secure File Transfer Protocol (SFTP) verwendet.
 Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+
+>[!NOTE]
+>
+>Best Practices und Problembehebung bei der Verwendung von SFTP-Servern finden Sie auf [dieser Seite](../../platform/using/sftp-server-usage.md).
 
 ## Eigenschaften {#properties}
 
@@ -107,4 +114,3 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 * filename
 
    Vollständiger Name der empfangenen Datei, wenn die Option **[!UICONTROL Durch vorhergehende Aktivität erzeugte Datei verwenden]** angekreuzt wurde.
-
