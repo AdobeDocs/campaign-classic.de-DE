@@ -1,8 +1,6 @@
 ---
-title: Nutzung von SFTP-Servern
-seo-title: Nutzung von SFTP-Servern
-description: Nutzung von SFTP-Servern
-seo-description: null
+title: Best Practices zum SFTP-Server und Fehlerbehebung
+description: Erfahren Sie mehr über Best Practices und Fehlerbehebung für SFTP-Server.
 page-status-flag: never-activated
 uuid: 5281058d-91bd-4f98-835d-1d46dc7b8b1f
 contentOwner: sauviat
@@ -15,15 +13,15 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
+source-git-commit: ee4addc88c6169603122259437d5cb0362851aa6
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 91%
+source-wordcount: '1014'
+ht-degree: 64%
 
 ---
 
 
-# Nutzung von SFTP-Servern{#sftp-server-usage}
+# Best Practices zum SFTP-Server und Fehlerbehebung {#sftp-server-usage}
 
 ## Best Practices für die Nutzung von SFTP-Servern {#sftp-server-best-practices}
 
@@ -50,13 +48,13 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Pract
 * Melden Sie sich gelegentlich beim SFTP-Server direkt an, um dessen Inhalt zu prüfen.
 * Beachten Sie bitte, dass die Verwaltung des SFTP-Speichers hauptsächlich Ihre Verantwortung ist.
 * Standardmäßig sind alle von Ihnen erstellten Ordner im Lese-/Schreibmodus ausschließlich für Ihre Kennung verfügbar. Wenn Sie Ordner erstellen, auf die Campaign Zugriff haben soll, konfigurieren Sie sie mit Lese-/Schreibrechten für die gesamte Gruppe. Andernfalls ist es für Workflows unmöglich, Dateien zu erstellen oder zu löschen, da sie aus Sicherheitsgründen innerhalb derselben Gruppe unter einer anderen Kennung ausgeführt werden.
-* Die öffentlichen IPs, von denen Sie versuchen, die SFTP-Verbindung zu starten, müssen der zulassungsliste auf der Kampagne hinzugefügt werden. Das Hinzufügen von IP-Adressen zur zulassungsliste kann über ein [Support-Ticket](https://support.neolane.net)angefordert werden.
+* Die öffentlichen IPs, von denen Sie versuchen, die SFTP-Verbindung zu starten, müssen der Zulassungsliste in der Kampagne-Instanz hinzugefügt werden. Das Hinzufügen von IP-Adressen zur Zulassungsliste kann über ein [Support-Ticket](https://support.neolane.net)angefordert werden.
 
 >[!CAUTION]
 >
 >Wenn Sie Ihren eigenen SFTP-Server verwenden, versuchen Sie, die Empfehlungen möglichst umfassend einzuhalten.
 
-## Problembehebung bei SFTP-Servern {#sftp-server-troubleshooting}
+## Verbindungsprobleme mit Adobe-gehostetem SFTP-Server {#sftp-server-troubleshooting}
 
 Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportteam bereitstellen müssen, wenn Sie im Fall eines Verbindungsproblems mit den von Adobe gehosteten SFTP-Servern ein [Supportticket](https://support.neolane.net) lösen.
 
@@ -92,8 +90,54 @@ Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportte
 
    Wenn der Port nicht geöffnet ist, stellen Sie sicher, dass Sie ausgehende Verbindungen auf Ihrer Seite öffnen und versuchen Sie es dann erneut. Wenn Sie immer noch Verbindungsprobleme haben, melden Sie das Ergebnis des Befehls dem Adobe-Supportteam.
 
-1. Vergewissern Sie sich, dass die öffentliche IP, über die Sie die SFTP-Verbindung starten möchten, die IP ist, die Sie dem Adobe-Support für die zulassungsliste angegeben haben.
+1. Vergewissern Sie sich, dass die öffentliche IP, über die Sie die SFTP-Verbindung starten möchten, die IP ist, die Sie der Adobe Support für die Zulassungsliste angegeben haben.
 1. Wenn Sie Passwort-basierte Authentifizierung verwenden, ist Ihr Passwort möglicherweise abgelaufen (die Gültigkeitsdauer von Passwörtern beträgt 90 Tage). Daher empfehlen wir dringend die Verwendung einer schlüsselbasierten Authentifizierung (siehe [Best Practices für die Nutzung von SFTP-Servern](#sftp-server-best-practices)).
 1. Wenn Sie eine schlüsselbasierte Authentifizierung verwenden, überprüfen Sie, ob der von Ihnen verwendete Schlüssel mit dem übereinstimmt, den Sie dem Adobe-Supportteam zur Konfiguration der Instanz bereitgestellt haben.
 1. Wenn Sie FileZilla oder ein ähnliches FTP-Tool verwenden, geben Sie im Supportticket die Verbindungsprotokoll-Details an.
 
+## Fehler &quot;Hostname konnte nicht aufgelöst werden&quot;, Upload-Fehler in cURL
+
+Dieser Abschnitt enthält Informationen zu den Prüfungen und Aktionen, die beim Abrufen des Hostnamens &quot;Kann nicht aufgelöst werden&quot; durchgeführt werden. nach dem Herstellen einer Verbindung mit dem FTP-Server von Campaign Classic aus.
+
+Das Workflow-Protokoll enthält die folgenden Protokolle:
+
+```
+16/05/2016 12:49:03    fileTransfer    Upload error in cURL
+16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
+16/05/2016 12:49:03    fileTransfer    Couldn't resolve host name
+16/05/2016 12:49:03    fileTransfer    Starting transfer of '/usr/local/neolane/nl6/var/williamreed/export/Recipients' to 'ftp://213.253.61.250/Recipients'
+16/05/2016 12:49:03    fileTransfer    1 file(s) to transfer
+```
+
+Dieser Fehler tritt auf, wenn versucht wird, den FTP-Server über einen Workflow zu verbinden und die Dateien vom Server herunterzuladen, während Sie weiterhin über FTP eine Verbindung mit FileZilla oder WinSCP herstellen können.
+
+Dieser Fehler gibt an, dass der Domänenname des FTP-Servers nicht ordnungsgemäß aufgelöst werden konnte. Gehen Sie zur Fehlerbehebung wie folgt vor:
+
+1. Fehlerbehebung bei der **DNS-Serverkonfiguration**:
+
+   1. Überprüfen Sie, ob der Servername dem lokalen DNS-Server hinzugefügt wurde.
+   1. Falls ja, führen Sie den folgenden Befehl auf dem Adobe Campaign-Server aus, um die IP-Adresse abzurufen:
+
+   `nslookup <server domain name>`
+
+   Dies bestätigt, dass der FTP-Server funktioniert und vom Adobe Campaign-Anwendungsserver aus erreichbar ist.
+
+1. Fehlerbehebung bei **Sitzungsprotokollen**:
+
+   1. Klicken Sie im Workflow mit der Dublette auf die Aktivität [Dateiübertragung](../../workflow/using/file-transfer.md) .
+   1. Wechseln Sie zur Registerkarte **[!UICONTROL Dateiübertragung]** und klicken Sie dann auf **[!UICONTROL Erweiterte Parameter]**.
+   1. Aktivieren Sie die Option Sitzungsprotokolle **[!UICONTROL anzeigen]** .
+
+   ![](assets/sftp-error-display-logs.png)
+
+   1. Gehen Sie zur Workflow-Prüfung und prüfen Sie, ob in den Protokollen der Fehler &quot;Host-Name konnte nicht aufgelöst werden&quot;angezeigt wird.
+
+   Wenn der SFTP-Server von der Adobe gehostet wird, prüfen Sie, ob der Zulassungsliste IP hinzugefügt wird, indem Sie sich an den Kundendienst wenden.
+
+   Andernfalls validieren:
+
+   * Das Kennwort enthält kein &quot;@&quot;. Die Verbindung ist fehlgeschlagen, wenn das Kennwort &quot;@&quot;enthält.
+   * Es gibt keine Firewall-Probleme, die die Kommunikation zwischen dem Adobe Campaign-Anwendungsserver und dem SFTP-Server behindern können.
+   * Führen Sie die Befehle &quot;track&quot;und &quot;telnet&quot;vom Kampagne-Server zum SFTP aus, um zu sehen, ob Verbindungsprobleme vorliegen.
+   * Es gibt keine Probleme mit dem Kommunikationsprotokoll.
+   * Port ist offen.
