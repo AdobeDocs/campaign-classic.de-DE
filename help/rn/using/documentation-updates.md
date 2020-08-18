@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
+source-git-commit: bc7ba0c26bd57a75c3dbeaec541844a3b1196ef3
 workflow-type: tm+mt
-source-wordcount: '7084'
-ht-degree: 98%
+source-wordcount: '7110'
+ht-degree: 97%
 
 ---
 
@@ -25,14 +25,13 @@ ht-degree: 98%
 
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
-
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
 
 ## August 2020 {#aug-2020}
 
-Learn best practices related to delivery design and sending with Campaign in a dedicated section. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
+In einem speziellen Abschnitt erfahren Sie, welche Best Practices im Zusammenhang mit dem Design von Versänden und dem Senden mit Kampagne gelten. [mehr dazu](../../delivery/using/delivery-best-practices.md)
 
-The Deliverability best practices landing page has been improved to facilitate access to sub-sections. [Mehr dazu](../../delivery/using/deliverability-key-points.md)
+Die Landingpage der Best Practices zur Lieferbarkeit wurde verbessert, um den Zugriff auf Unterabschnitte zu erleichtern. [mehr dazu](../../delivery/using/deliverability-key-points.md)
 
 Anleitungen zu Videos stehen jetzt in den folgenden Themen zur Verfügung:
 
@@ -56,6 +55,7 @@ Anleitungen zu Videos stehen jetzt in den folgenden Themen zur Verfügung:
 
 * [Einrichten eines kontinuierlichen Versands](../../workflow/using/continuous-delivery.md)
 
+Es wurden Informationen zu den Prüfungen und Aktionen hinzugefügt, die beim Abrufen des Fehlers &quot;Host name konnte nicht aufgelöst werden&quot;nach dem Herstellen einer Verbindung mit dem FTP-Server durchgeführt werden sollen. [mehr dazu](../../platform/using/sftp-server-usage.md)
 
 ## Juli 2020 {#july-2020}
 
@@ -69,7 +69,7 @@ Der Abschnitt &quot;Datenschutz und Einverständnis&quot; wurde um detaillierter
 
 Die Seite &quot;Datenschutzverwaltung in Campaign Classic&quot; wurde mit Informationen zum Feld &quot;Vorschrift&quot; aktualisiert. Dieses Feld ist jetzt bei Verwendung der API verfügbar, die die Einrichtung eines automatischen Prozesses für Datenschutzanfragen ermöglicht. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-Die Seite mit der Übersicht über die Datenschutzverwaltung wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und zum brasilianischen Datenschutzgesetz (Lei Geral de Proteção de Dados, LGPD). [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
+Die Seite mit der Übersicht über die Datenschutzverwaltung wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und zum brasilianischen Datenschutzgesetz (Lei Geral de Proteção de Dados, LGPD) – [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#whatisgdpr)
 
 Es wurden Informationen zu Unter-Workflow-Protokollen und dem Verhalten im Fehlerfall hinzugefügt. [Mehr dazu](../../workflow/using/sub-workflow.md)
 
@@ -283,15 +283,15 @@ Der Abschnitt „Zugriffsverwaltung“ wurde mit dem **Datenschutzrecht** aktual
 
 Es wurden Informationen hinzugefügt, die festlegen, dass der Inhalt von Personalisierungsfeldern 1024 Zeichen nicht überschreiten darf. [Mehr dazu](../../delivery/using/personalization-fields.md)
 
-Die Control Panel-Dokumentation wurde in den neuen kollaborativen Dokumentationssatz integriert. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
+Die Control Panel-Dokumentation wurde in den neuen kollaborativen Dokumentationssatz integriert – [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
 
-Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
+Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert – [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 ## Oktober 2019 {#october-2019}
 
-Die Liste der Fehlermeldungen für Campaign Standard und Campaign Classic wurde aktualisiert. [Mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
+Die Liste der Fehlermeldungen für Campaign Standard und Campaign Classic wurde aktualisiert. [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA. [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
+Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA – [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
 
 Eine neue Seite zur Fehlerbehebung wurde zum Tracking in Campaign Classic hinzugefügt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/classic-tracking-troubleshooting.html)
 
