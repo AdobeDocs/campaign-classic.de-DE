@@ -14,8 +14,11 @@ discoiquuid: fecadb66-b81d-4fb6-9971-7bfd024d70b7
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+translation-type: tm+mt
+source-git-commit: b690e6c7141ba88c8ce72f631ec24fc068ade8f5
+workflow-type: tm+mt
+source-wordcount: '1010'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +76,7 @@ Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Te
 * Beim Format **[!UICONTROL Text]** sind die Spaltentrennzeichen (Tabstopp, Komma, Semikolon oder Sonstige) sowie die Zeichenketten-Qualifizierer (Ohne, Doppelte Anführungszeichen, Einfache Anführungszeichen) anzugeben.
 * Bei den Formaten **[!UICONTROL Text]** und **[!UICONTROL CSV]** besteht die Möglichkeit, die Option **[!UICONTROL Erste Zeile enthält die Spaltentitel]** anzukreuzen.
 * Die Formate für Daten und Zahlen können angepasst werden. Klicken Sie hierfür auf den Link **[!UICONTROL Bearbeiten...]** neben dem entsprechenden Feld und konfigurieren Sie die gewünschte Option.
-* Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Der Titel kann beispielsweise im folgenden Format gespeichert werden: **1=Mr.**, **2=Miss**,** 3=Mrs.**. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
+* For fields containing enumerated values, you can select **[!UICONTROL Export labels instead of internal values of enumerations]**. For example, the title can be stored in the form **1=Mr.**, **2=Miss**, **3=Mrs.**. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
 
 ### 4. Schritt - Daten auswählen {#step-4---data-selection}
 
@@ -109,6 +112,7 @@ An dieser Stelle können die Reihenfolge der Spalten in der Ausgabedatei und ihr
    * Alles in Großbuchstaben
    * Alles in Kleinbuchstaben
    * Ersten Buchstaben großschreiben
+
    ![](assets/s_ncs_user_export_wizard06.png)
 
 * Verwenden Sie die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**, um eine neue Spalte zu erstellen (z. B. eine Spalte mit Vor- und Nachnamen). Weitere Informationen hierzu finden Sie unter [Berechnete Felder](../../platform/using/importing-data.md#calculated-fields).
