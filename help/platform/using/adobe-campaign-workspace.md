@@ -14,8 +14,11 @@ discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 14e67ca7f57d39e6939d6ff3479aa897674b18dc
+translation-type: tm+mt
+source-git-commit: 11a6ddd275dc8482e82f163abc14cacaf0281dff
+workflow-type: tm+mt
+source-wordcount: '2240'
+ht-degree: 100%
 
 ---
 
@@ -207,8 +210,7 @@ Eine weitere Möglichkeit zum Hinzufügen von Spalten besteht im Listenkonfigura
    >
    >Mithilfe des Feldes **Suchen** können Sie die Auswahl der verfügbaren Felder einschränken. Weiterführende Informationen finden Sie unter [Listen sortieren](#sorting-a-list).
    >
-   >Die Art der Felder (SQL-Felder, verknüpfte Tabellen, berechnete Felder usw.) wird durch verschiedene Symbole verdeutlicht. Für das jeweils ausgewählte Feld wird unter der Liste der verfügbaren Felder die entsprechende Beschreibung angezeigt.
-   [Listen konfigurieren](#configuring-lists).
+   >Die Art der Felder (SQL-Felder, verknüpfte Tabellen, berechnete Felder usw.) wird durch verschiedene Symbole verdeutlicht. Für das jeweils ausgewählte Feld wird unter der Liste der verfügbaren Felder die entsprechende Beschreibung angezeigt. [Listen konfigurieren](#configuring-lists).
    >
    >Sie können außerdem Daten sortieren und filtern. Siehe [Filteroptionen](../../platform/using/filtering-options.md).
 
