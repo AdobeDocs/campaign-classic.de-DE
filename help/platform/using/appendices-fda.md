@@ -14,10 +14,10 @@ discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e7cf3b189f328cd1ea6ca8b67a3fc4c0c0bddd84
-workflow-type: ht
-source-wordcount: '1417'
+translation-type: tm+mt
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+workflow-type: tm+mt
+source-wordcount: '1416'
 ht-degree: 100%
 
 ---
@@ -190,7 +190,7 @@ Weitere Informationen zur Treiberkonfiguration finden Sie in diesem [Abschnitt](
 
 Weitere Informationen zu den Umgebungsvariablen des Adobe Campaign-Servers finden Sie in diesem [Abschnitt](../../platform/using/legacy-connectors.md#configure-access-to-teradata).
 
-### Campaign-Serverkonfiguration für Windows #campaign-server-Windows}
+### Campaign-Serverkonfiguration für Windows {#campaign-server-windows}
 
 Zunächst müssen Sie Teradata-Tools und Dienstprogramme für Windows herunterladen. Sie können sie von dieser [Seite](https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-windows-installation-package) herunterladen.
 
