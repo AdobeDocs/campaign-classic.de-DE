@@ -14,8 +14,11 @@ discoiquuid: d678db05-cc44-4086-98a5-e5296e8e5de8
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 7dbc876fae0bde78e3088ee1ab986cd09e9bcc38
+translation-type: tm+mt
+source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+workflow-type: tm+mt
+source-wordcount: '1460'
+ht-degree: 100%
 
 ---
 
@@ -74,7 +77,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
-* **content.@`['name']`**: identisch mit dem** Inhalt.@name **-Syntax
+* **content.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
 * **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
 * **content.chapter`[0]`.@name**: gibt den Namen des ersten Elements von `<chapter>` aus
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
@@ -477,7 +480,7 @@ Beispiele:
    <xsl:text disable-output-escaping="yes"><%= recipient.email %></xsl:text>
    ```
 
-* Hinzufügen der bedingten Anweisung **&lt;% if (recipient.language == &#39;en&#39;) { %>**:
+* Hinzufügen der bedingten Anweisung **&lt;% if (recipient.language == &#39;en&#39;)`{`%>**:
 
    ```
    <xsl:text disable-output-escaping="yes"><% if (recipient.language == 'en') { %></xsl:text>
