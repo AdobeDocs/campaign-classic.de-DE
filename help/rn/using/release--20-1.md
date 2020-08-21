@@ -12,10 +12,10 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 6c3c2ad62778c4c4f874c5b34c014529ce3e7185
-workflow-type: ht
-source-wordcount: '1330'
+translation-type: tm+mt
+source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
+workflow-type: tm+mt
+source-wordcount: '1331'
 ht-degree: 100%
 
 ---
@@ -183,7 +183,7 @@ _17. Februar 2020_
 
 * Fehlerkorrektur – Beim Löschen, Einfügen oder Aktualisieren einer großen Datenmenge in einem Workflow mit der Aktivität **Daten-Update**, wobei ein FDA-Schema als Zielgruppendimension verwendet wird, tritt jetzt kein Problem mehr auf. (NEO-13280)
 
-* Fehlerkorrektur – Jetzt werden E-Mails gesendet, wenn die if-Anweisung außerhalb des `body`-Tags verwendet wird.
+* Fehlerkorrektur – Jetzt werden E-Mails gesendet, wenn die if-Anweisung außerhalb des `body`-Tags verwendet wird. (NEO-18628)
 
 * Fehlerkorrektur – Die Mirrorseite kann jetzt in den Versandlogs einer gesendeten Nachricht angezeigt werden. (NEO-17976)
 
