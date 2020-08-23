@@ -15,9 +15,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 5a4ee9b14d4c77f74ff73209d4323bf4f1347155
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '653'
 ht-degree: 13%
 
 ---
@@ -44,7 +44,7 @@ Das Problem kann verschiedene Ursachen haben. Gehen Sie wie folgt vor, um es zu 
 
    Weitere Informationen zur Überwachung von Technischen Workflows finden Sie auf [dieser Seite](../../workflow/using/monitoring-technical-workflows.md).
 
-   >[HINWEIS]
+   >[!NOTE]
    >
    >Vergewissern Sie sich nach dem Neustart des Workflows, dass Sie die ausstehenden Aufgaben ausführen (klicken Sie mit der rechten Maustaste auf die Aktivität der **[!UICONTROL Planung]** /Ausstehende Aufgaben jetzt **** ausführen), um zu prüfen, ob sie auf einer der Aktivitäten erneut fehlschlagen.
 
@@ -52,7 +52,7 @@ Das Problem kann verschiedene Ursachen haben. Gehen Sie wie folgt vor, um es zu 
 
 1. Überprüfen Sie den **[!UICONTROL wfserver]** -Modulstatus auf der Registerkarte &quot; **[!UICONTROL Überwachung]** &quot;, auf die über die Campaign Classic-Homepage zugegriffen werden kann (siehe [Überwachungsprozesse](../../production/using/monitoring-processes.md)). Dieser Prozess ist für die Ausführung aller Workflows verantwortlich.
 
-   Ein Admin-Benutzer kann auch überprüfen, ob das Modul **wfserver@`<instance>`**mithilfe des folgenden Befehls auf Ihrem Hauptanwendungsserver gestartet wird.
+   Ein Admin-Benutzer kann auch überprüfen, ob das Modul **wfserver@`<instance>`** mithilfe des folgenden Befehls auf Ihrem Hauptanwendungsserver gestartet wird.
 
    ```
    nlserver pdump
@@ -62,7 +62,7 @@ Das Problem kann verschiedene Ursachen haben. Gehen Sie wie folgt vor, um es zu 
    [...]
    ```
 
-   Wenn das Modul nicht ausgeführt wird, wenden Sie sich an den Adobe-Kundendienst. Wenn Sie über eine lokale Installation verfügen, muss ein Administrator den Dienst mithilfe des folgenden Befehls neu starten.
+   Wenn das Modul nicht ausgeführt wird, wenden Sie sich an den Kundendienst der Adobe. Wenn Sie über eine lokale Installation verfügen, muss ein Administrator den Dienst mithilfe des folgenden Befehls neu starten.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
@@ -81,7 +81,7 @@ Das Problem kann verschiedene Ursachen haben. Gehen Sie wie folgt vor, um es zu 
 
    Um die Anzahl Workflows Ausführung Ihrer Instanz zu überprüfen, empfehlen wir die Verwendung der vordefinierten Ansichten, die standardmäßig im Ordner **[!UICONTROL Administration]** / **[!UICONTROL Audit]** verfügbar sind. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
-   >[VORSICHT]
+   >[!CAUTION]
    >
    >Das Erhöhen des **[!UICONTROL Optionsschwellenwertes NmsOperation_LimitConcurrency]** kann zu Leistungsproblemen in Ihrer Instanz führen. Führen Sie dies in jedem Fall nicht selbst aus und wenden Sie sich an Ihren Ansprechpartner bei Ihrem Adobe Campaign.
 
@@ -95,7 +95,7 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 
 1. Überprüfen Sie den **[!UICONTROL wfserver]** -Modulstatus auf der Registerkarte &quot; **[!UICONTROL Überwachung]** &quot;, auf die über die Campaign Classic-Homepage zugegriffen werden kann (siehe [Überwachungsprozesse](../../production/using/monitoring-processes.md)).
 
-   Ein Admin-Benutzer kann auch überprüfen, ob das Modul **wfserver@`<instance>`**mithilfe des folgenden Befehls auf Ihrem Hauptanwendungsserver gestartet wird.
+   Ein Admin-Benutzer kann auch überprüfen, ob das Modul **wfserver@`<instance>`** mithilfe des folgenden Befehls auf Ihrem Hauptanwendungsserver gestartet wird.
 
    ```
    nlserver pdump
@@ -107,7 +107,7 @@ Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt
 
    For more on how to monitor modules, refer to [this section](../../production/using/usual-commands.md#monitoring-commands-).
 
-1. Wenn das Modul nicht ausgeführt wird, wenden Sie sich an den Adobe-Kundendienst. Wenn Sie über eine lokale Installation verfügen, muss ein Administrator diese mithilfe des folgenden Befehls neu starten.
+1. Wenn das Modul nicht ausgeführt wird, wenden Sie sich an den Kundendienst der Adobe. Wenn Sie über eine lokale Installation verfügen, muss ein Administrator diese mithilfe des folgenden Befehls neu starten.
 
    ```
    nlserver start wfserver@<INSTANCENAME>
