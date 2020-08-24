@@ -68,7 +68,7 @@ Anwendungsbeispiele, mit denen die Funktionsweise der Anreicherungsaktivitäten 
 
 Verwenden Sie die **[!UICONTROL Anreicherung]**, um die Workflow-Arbeitstabelle um zusätzliche Daten zu ergänzen. Dies bietet sich insbesondere im Anschluss an eine Abfrage an.
 
-Die Konfiguration der zusätzlichen Spalten wird im Abschnitt ](../../workflow/using/query.md#adding-data)Daten hinzufügen[ beschrieben.
+Die Konfiguration der zusätzlichen Spalten wird im Abschnitt [Daten hinzufügen](../../workflow/using/query.md#adding-data) beschrieben.
 
 Wählen Sie im Feld **[!UICONTROL Hauptmenge]** die eingehende Transition aus, deren Arbeitstabelle angereichert werden soll.
 
