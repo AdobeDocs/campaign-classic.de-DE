@@ -14,9 +14,9 @@ discoiquuid: 9b937d4d-55ae-4bd4-8dc6-eea42f15b69f
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1a961822224ab0a9551f51942a5f94cf201c8ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '561'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
    * **[!UICONTROL Filter]**
 
-      Nur die Dateien, die den angegebenen Filterkriterien entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn kein Filter definiert wurde, werden alle im Verzeichnis enthaltenen Dateien abgerufen. Filterbeispiele: **&amp;#42;.zip**, **import-&amp;#42;.txt**.
+      Nur die Dateien, die den angegebenen Filterkriterien entsprechen, werden berücksichtigt. Die anderen Dateien im Verzeichnis werden ignoriert. Wenn kein Filter definiert wurde, werden alle im Verzeichnis enthaltenen Dateien abgerufen. Filterbeispiele: **&quot;*.zip&quot;**, **&quot;import-*.txt&quot;**.
 
    * **[!UICONTROL Beenden, sobald eine Datei bearbeitet wurde]**
 
@@ -77,7 +77,7 @@ Auf dem ersten Tab der Aktivität **[!UICONTROL Datei-Wächter]** können Sie de
 
 1. **Verlauf**
 
-   Informationen zum Schritt **[!UICONTROL Verlaufserstellung]** finden Sie unter ](../../workflow/using/web-download.md)HTTP-Übertragung[.
+   Informationen zum Schritt **[!UICONTROL Verlaufserstellung]** finden Sie unter [HTTP-Übertragung](../../workflow/using/web-download.md).
 
 Die Reihenfolge der Dateiverarbeitung kann nicht beeinflusst werden. Um eine Reihe von Dateien schrittweise zu verarbeiten, kann die Option **[!UICONTROL Beenden, sobald eine Datei bearbeitet wurde]** in Verbindung mit einer Schlaufe verwendet werden. In diesem Fall werden die Dateien in alphabetischer Reihenfolge verarbeitet. Die Option **[!UICONTROL Fehlen von Dateien bearbeiten]** beendet die Schlaufe.
 
