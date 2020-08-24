@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: e09692e316a92a67632201e5691e8b4df42cc341
+workflow-type: ht
+source-wordcount: '1445'
+ht-degree: 100%
 
 ---
 
@@ -154,7 +157,7 @@ Damit Adobe Campaign die Publikation durchführt, muss ein entsprechender Workfl
 Der Workflow wird ausgeführt, wenn
 
 * der Validierer der Publikation (oder, wenn dieser nicht definiert wurde, der Ressourcen-Verantwortliche) auf **[!UICONTROL Ressource publizieren]** klickt
-* die Ressource über eine Aufgabe zur Erstellung einer Marketing-Ressource verwaltet wird und die Aufgabe den Status **[!UICONTROL Abgeschlossen]** erhält; zudem muss die Option **[!UICONTROL Marketing-Ressource publizieren]** in der Aufgabe aktiviert worden sein (siehe ](../../campaign/using/creating-and-managing-tasks.md#marketing-resource-creation-task)Aufgabe „Erstellung einer Marketing-Ressource“[)
+* die Ressource über eine Aufgabe zur Erstellung einer Marketing-Ressource verwaltet wird und die Aufgabe den Status **[!UICONTROL Abgeschlossen]** erhält; zudem muss die Option **[!UICONTROL Marketing-Ressource publizieren]** in der Aufgabe aktiviert worden sein (siehe [Aufgabe „Erstellung einer Marketing-Ressource“](../../campaign/using/creating-and-managing-tasks.md#marketing-resource-creation-task))
 
 Wenn der Workflow nicht unmittelbar gestartet wird (zum Beispiel wenn die Workflow-Engine angehalten ist), erhält die Ressource den Status **[!UICONTROL Publikation ausstehend]**. Sobald der Workflow startet, wechselt der Status in **[!UICONTROL Publiziert]**. Dieser Status berücksichtigt keine möglichen Fehler im Publikationsprozess. Überprüfen Sie den Status Ihres Workflows, um sicherzustellen, dass dieser korrekt ausgeführt wurde.
 
