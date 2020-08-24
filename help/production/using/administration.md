@@ -14,8 +14,11 @@ discoiquuid: 860be8be-f28c-4836-b4fb-e91c6a4616c6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
+workflow-type: ht
+source-wordcount: '412'
+ht-degree: 100%
 
 ---
 
@@ -24,27 +27,27 @@ source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
 
 Automatischer Start der Adobe Campaign-Module (**Web**, **mta**, **wfserver** usw.) wird vom **nlserver** -Server bereitgestellt.
 
-Bei der Installation von Adobe Campaign wird der Computer automatisch so konfiguriert, dass der **nlserver** -Dienst während der Startsequenz gestartet wird.
+Bei der Installation von Adobe Campaign wird der Rechner automatisch so konfiguriert, dass der **nlserver** -Dienst während der Startsequenz Beginn wird.
 
-Die folgenden Befehle werden verwendet, um den Adobe Campaign-Dienst manuell zu starten und herunterzufahren:
+Mit den folgenden Befehlen wird der Adobe Campaign-Dienst manuell Beginn und heruntergefahren:
 
 * Windows:
 
-   * **net start nlserver6**
+   * **net Beginn nlserver6**
    * **net stop nlserver6**
 
 * Unter Linux (als root):
 
-   * **/etc/init.d/nlserver6 start**
+   * **/etc/init.d/nlserver6 Beginn**
    * **/etc/init.d/nlserver6 stop**
 
 >[!NOTE]
 >
->Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl start nlserver** / **systemCtl stop nlserver**
+>Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver** / **systemCtl stop nlserver**
 
 Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unter Linux (als **Adobe Campaign**) zugegriffen werden kann:
 
-* Alle gestarteten Adobe Campaign-Module anzeigen: **/etc/init.d/nlserver6 pdump** oder **/etc/init.d/nlserver6 status**
+* Alle gestarteten Adobe Campaign-Module anzeigen: **/etc/init.d/nlserver6 pdump** oder **/etc/init.d/nlserver6-Status**
 
    >[!NOTE]
    >
@@ -57,19 +60,19 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
    >    * einen anderen Wert, wenn ein Fehler auftritt.
 
 
-* Ein mehrinstanzliches oder eininstanzliches Modul (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver******,inmail) starten/beenden:
+* Beginn/Stopp eines Multi-Instanz- oder Mono-Instanzmoduls (**web**, **trackinglogd**, **syslogd**, **mta**, **wfserver******,inmail):
 
-   **nlserver start`<module>[@<instance>]`**
+   **nlserver-Beginn`<module>[@<instance>]`**
 
    **nlserver stop`<module>[@<instance>][-immediate][-noconsole]`**
 
-   Sie können auch den **nlserver-`<module>[@<instance>]`**Befehl Neustart verwenden, um ein Modul neu zu starten.
+   Sie können auch den **nlserver-`<module>[@<instance>]`** Befehl Neustart verwenden, um ein Modul neu zu starten.
 
    Beispiel:
 
-   **nlserver start web**
+   **nlserver Beginn Web**
 
-   **nlserver start mta@my_instance**
+   **nlserver-Beginn mta@my_instance**
 
    **nlserver stop syslogd**
 
@@ -82,9 +85,10 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
    >[!NOTE]
    > 
    >    * Wenn die Instanz nicht angegeben ist, wird die Standardinstanz verwendet.
-   >    * Im Falle eines Notfalls verwenden Sie die **-sofortige** Option, um einen sofortigen Stopp des Prozesses zu erzwingen (entsprechend Unix Befehl **töten -9**).
+   >    * Im Ereignis eines Notfalls verwenden Sie die **-sofortige** Option, um einen sofortigen Stopp des Vorgangs zu erzwingen (entspricht Unix Befehl **töten -9**).
    >    * Verwenden Sie die Option **-noconsole** , um sicherzustellen, dass das gestartete Modul nichts in der Konsole anzeigt. Seine Protokolle werden über das **syslogd** Modul auf die Festplatte geschrieben.
    >    * Verwenden Sie die Option **-verbose** , um weitere Informationen zu Prozessaktionen anzuzeigen.
+
       >    
       >      
       Beispiel:
@@ -93,25 +97,25 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
       **nlserver Neustart web -verbose**
       >    
       >      
-      **nlserver start mta@myinstance -verbose**
+      **nlserver-Beginn mta@myinstance -verbose**
       >    
       >      
       Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
 
 
-* Starten Sie alle Adobe Campaign-Prozesse (entspricht dem Starten des **nlserver6** -Dienstes):
+* Beginn aller Adobe Campaign-Prozesse (entspricht dem Starten des **nlserver6** -Dienstes):
 
    **nlserver watchdog -noconsole**
 
-* Schließen Sie alle Adobe Campaign-Prozesse (entsprechend dem Herunterfahren des **nlserver6** -Dienstes):
+* Beenden Sie alle Adobe Campaign-Prozesse (entsprechend dem Herunterfahren des **nlserver6** -Dienstes):
 
    **nlserver shutdown**
 
-* Laden Sie die Konfiguration des **nlserver-Webmoduls** (und gegebenenfalls des Webserver-Erweiterungsmoduls) neu, wenn die **Dateien &quot;serverConf.xml** &quot;und &quot; **config-&quot;`<instance>  .xml </instance>`**bearbeitet wurden.
+* Laden Sie die Konfiguration des **nlserver-Webmoduls** (und ggf. das Webserver-Erweiterungsmodul) neu, wenn die **Dateien &quot;serverConf.xml** &quot;und &quot; **config-&quot;`<instance>  .xml </instance>`** bearbeitet wurden.
 
    **nlserver config -reload**
 
    >[!NOTE]
    >
-   >Einige Konfigurationsänderungen werden nicht dynamisch berücksichtigt. Adobe Campaign muss beendet und dann neu gestartet werden.
+   >Einige Konfigurationsänderungen werden nicht dynamisch berücksichtigt. Adobe Campaign muss heruntergefahren und dann neu gestartet werden.
 
