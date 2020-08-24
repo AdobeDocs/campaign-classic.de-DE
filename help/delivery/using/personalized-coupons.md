@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+workflow-type: ht
+source-wordcount: '960'
+ht-degree: 100%
 
 ---
 
@@ -58,6 +61,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
    1. Bei der Auswahl individueller Gutscheine erscheint links unten ein neuer Coupons-Tab. Wählen Sie in diesem **[!UICONTROL Coupons]**-Tab **[!UICONTROL Hinzufügen]** aus.
    1. Geben Sie für den individuellen Gutschein einen eindeutigen Code ein, wenn Sie vom Pop-up dazu aufgefordert werden.
    1. Klicken Sie auf **[!UICONTROL Speichern]**, um den Gutschein zu erstellen.
+
    Weitere Informationen zum Tab „Coupons“ finden Sie unter [Individuelle Gutscheine konfigurieren](#configuring-individual-coupons).
 
    >[!NOTE]
