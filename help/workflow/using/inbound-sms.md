@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+workflow-type: ht
+source-wordcount: '114'
+ht-degree: 100%
 
 ---
 
@@ -38,4 +41,4 @@ Geben Sie im Tab **SMS-Empfang** die SMS-Routing-Parameter sowie das bei Empfang
 
 1. **[!UICONTROL Ablauf]**
 
-Die Tabs **[!UICONTROL Script]**, **[!UICONTROL Planung]** und **[!UICONTROL Ablauf]** werden im Abschnitt ](../../workflow/using/inbound-emails.md)Eingehende E-Mails[ erläutert.
+Die Tabs **[!UICONTROL Script]**, **[!UICONTROL Planung]** und **[!UICONTROL Ablauf]** werden im Abschnitt [Eingehende E-Mails](../../workflow/using/inbound-emails.md) erläutert.
