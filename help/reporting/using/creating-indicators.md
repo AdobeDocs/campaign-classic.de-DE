@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+workflow-type: ht
+source-wordcount: '753'
+ht-degree: 100%
 
 ---
 
@@ -110,7 +113,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/s_advuser_cube_wz_11.png)
 
-   Über den Link **[!UICONTROL Kennzahldaten filtern...]** gelangen Sie in das Abfragefenster, das die Beschränkung der zu berücksichtigenden Werte auf Frauen ermöglicht. Die Vorgehensweise zur Bestimmung der Kennzahlen und die verfügbaren Optionen werden im Abschnitt ](../../reporting/using/concepts-and-methodology.md#defining-measures)Kennzahlen definieren[ beschrieben.
+   Über den Link **[!UICONTROL Kennzahldaten filtern...]** gelangen Sie in das Abfragefenster, das die Beschränkung der zu berücksichtigenden Werte auf Frauen ermöglicht. Die Vorgehensweise zur Bestimmung der Kennzahlen und die verfügbaren Optionen werden im Abschnitt [Kennzahlen definieren](../../reporting/using/concepts-and-methodology.md#defining-measures) beschrieben.
 
    ![](assets/s_advuser_cube_wz_12.png)
 
