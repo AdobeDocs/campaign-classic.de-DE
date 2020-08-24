@@ -102,8 +102,9 @@ Wenn Sie zum Beispiel Probleme damit haben, neue Logos richtig darzustellen oder
 
 1. Gehen Sie je nach Betriebssystemversion zu den folgenden Speicherorten:
 
-   * Windows 7: C:\Users\&lt; Benutzername> \AppData\Roaming\Neolane\NL_5\
-   * Windows XP: C:\Documents and Settings\&lt; Benutzername >\Application Data\Neolane\NL_5
+   * Windows 7: C:\Users\ &lt; Benutzername > \AppData\Roaming\Neolane\NL_5\
+   * Windows XP: C:\Documents and Settings\ &lt; Benutzername > \Application Data\Neolane\NL_5
+
    Hier sehen Sie viele XML-Dateien namens „nlclient-config-&lt; alphanumerischer Wert >.xml“.
 
 1. Löschen Sie diese XML-Dateien und die zugehörigen Ordner.
