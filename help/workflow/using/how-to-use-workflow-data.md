@@ -47,13 +47,13 @@ Zur Aktualisierung der Adobe-Campaign-Datenbank und von Listen stehen zwei dediz
 
 ### An- und Abmeldungen verwalten {#subscription-unsubscription-management}
 
-Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt ](../../workflow/using/subscription-services.md)An-/Abmeldedienst[ beschrieben.
+Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt [An-/Abmeldedienst](../../workflow/using/subscription-services.md) beschrieben.
 
 ## Über einen Workflow versenden {#sending-via-a-workflow}
 
 ### Versandaktivität {#delivery-activity}
 
-Die Versandaktivität wird im Abschnitt ](../../workflow/using/delivery.md)Versand[ beschrieben.
+Die Versandaktivität wird im Abschnitt [Versand](../../workflow/using/delivery.md) beschrieben.
 
 ### Sendungen anreichern und personalisieren {#enriching-and-targeting-deliveries}
 
