@@ -20,7 +20,7 @@ source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
 ---
 
 
-# E-Mail-Versand erstellen{#creating-an-email-delivery}.
+# E-Mail-Versand erstellen.{#creating-an-email-delivery}
 
 Gehen Sie wie folgt vor, um einen neuen E-Mail-Versand zu erstellen:
 
