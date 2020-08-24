@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+workflow-type: ht
+source-wordcount: '1169'
+ht-degree: 100%
 
 ---
 
@@ -183,7 +186,7 @@ Das folgende Anwendungsbeispiel beschreibt die in Adobe Campaign vorzunehmenden 
 
    Weitere Informationen zum Erstellen einer Umgebung finden Sie unter [Live-/Design-Umgebungen](../../interaction/using/live-design-environments.md).
 
-   Die Erstellung von Platzierungen wird im Abschnitt ](../../interaction/using/creating-offer-spaces.md)Angebotsplatzierungen[ genauer erläutert.
+   Die Erstellung von Platzierungen wird im Abschnitt [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md) genauer erläutert.
 
 1. **Erweiterung des Angebotsschemas zur Hinzufügung neuer Felder**
 
