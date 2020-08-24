@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+workflow-type: ht
+source-wordcount: '1127'
+ht-degree: 100%
 
 ---
 
@@ -111,7 +114,7 @@ Sie haben die Möglichkeit, eine Hypothese auf Kampagnenebene zu referenzieren. 
 
    ![](assets/response_hypothesis_instance_creation_012.png)
 
-Sie können die Ergebnisse der Berechnung in den Tabs **[!UICONTROL Allgemein]** und **[!UICONTROL Reaktionen]** der Hypothese einsehen (siehe ](../../campaign/using/hypothesis-tracking.md)Hypothesenverfolgung[).
+Sie können die Ergebnisse der Berechnung in den Tabs **[!UICONTROL Allgemein]** und **[!UICONTROL Reaktionen]** der Hypothese einsehen (siehe [Hypothesenverfolgung](../../campaign/using/hypothesis-tracking.md)).
 
 Weiterführende Informationen finden Sie unter [Beispiel: Erstellen einer einem Versand zugeordneten Hypothese](#example--creating-a-hypothesis-linked-to-a-delivery).
 
