@@ -14,11 +14,11 @@ discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fecfff477b0750782c87c017a15e306acac4c61d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Das Verfahren zum Erstellen einer Prozessvorlage wird unter [Export-Assistent](.
 
 >[!NOTE]
 >
->Die native **[!UICONTROL Import-blockierungsliste]** -Vorlage ist bereits für den Import einer Liste von E-Mail-Adressen konfiguriert, die der blockierungsliste hinzugefügt wurden.
+>Die native **[!UICONTROL Import-Blockierungsliste]** für Vorlagen ist bereits für den Import einer Liste von E-Mail-Adressen konfiguriert, die der Blockierungsliste hinzugefügt wurden.
 > 
 >Mit den Vorlagen **[!UICONTROL Neuer Textimport]** und **[!UICONTROL Neuer Textexport]** können Sie einen völlig neuen Import oder Export konfigurieren.
 
