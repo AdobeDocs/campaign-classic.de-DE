@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: cfb1b02a6261c001392b5cc6430f00206e802bb8
+workflow-type: ht
+source-wordcount: '642'
+ht-degree: 100%
 
 ---
 
@@ -38,7 +41,7 @@ Um den Status einer Reihe von Workflows zu überwachen, sind folgende Schritte e
 
 >[!NOTE]
 >
->**** Zusätzlich zum Workflow können Sie mit der Campaign Workflow-Heatmap die aktuell aktiven Workflows im Detail analysieren. Weiterführende Informationen dazu finden Sie im [entsprechenden Abschnitt](../../workflow/using/heatmap.md).
+>Zusätzlich zum Workflow können Sie mit der **Campaign Workflow-Heatmap** die aktuell aktiven Workflows im Detail analysieren. Weiterführende Informationen dazu finden Sie im [entsprechenden Abschnitt](../../workflow/using/heatmap.md).
 >
 >Weitere Informationen zur **Überwachung der Ausführung Ihrer Workflows** finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
@@ -163,7 +166,7 @@ Nach Erstellung und Validierung der Versandvorlage ist die **Versandaktivität**
 Öffnen Sie die **Versandaktivität** per Doppelklick.
 
 * Aktivieren Sie im Bereich &quot;Versand&quot; die Option **Neu, basierend auf einer Vorlage erstellt** und wählen Sie die zuvor erstellte Versandvorlage aus.
-* Aktivieren Sie in den Bereichen &quot;Empfänger&quot; und &quot;Inhalt&quot; jeweils **Werden/Wird im Versand angegeben****.**
+* Aktivieren Sie in den Bereichen **&quot;Empfänger&quot; und &quot;Inhalt&quot;** jeweils Werden/Wird im **Versand angegeben**.
 * Aktivieren Sie schließlich im Bereich &quot;Auszuführende Aktion&quot; die Option **Vorbereiten und Starten**.
 * Deaktivieren Sie die Option **Fehler verarbeiten**.
 
