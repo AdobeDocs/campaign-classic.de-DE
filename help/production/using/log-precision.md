@@ -14,15 +14,18 @@ discoiquuid: c6c39b7d-7bbd-4789-b1ea-b938153e9679
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 779d9162b7296339a796512838612ede1186ddcc
+workflow-type: ht
+source-wordcount: '322'
+ht-degree: 100%
 
 ---
 
 
 # Protokollgenauigkeit{#log-precision}
 
-Sie können diesen Prozess auf alle Adobe Campaign-Module anwenden, um die Protokollgenauigkeit zu erhöhen.
+Sie können diesen Vorgang auf alle Adobe Campaign-Module anwenden, um die Protokollgenauigkeit zu erhöhen.
 
 Es umfasst den Neustart der Prozesse mit einer höheren Protokollierungsstufe.
 
@@ -30,7 +33,7 @@ Es umfasst den Neustart der Prozesse mit einer höheren Protokollierungsstufe.
 >
 >Durch diesen Vorgang werden die in diesem Modul ausgeführten Dienste abgebrochen.
 
-Adobe Campaign kann mit zwei Protokollierungsstufen arbeiten:
+Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
 
 1. Der Modus **Verbose** ist die erste Ebene nach der Standardstufe. Der folgende Befehl aktiviert ihn:
 
@@ -38,7 +41,7 @@ Adobe Campaign kann mit zwei Protokollierungsstufen arbeiten:
    nlserver restart <MODULE_NAME> -verbose 
    ```
 
-   Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie dann den Prozess normal neu:
+   Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie den Prozess auf die normale Weise neu:
 
    ```
    nlserver restart <MODULE_NAME> -noconsole
@@ -52,11 +55,11 @@ Adobe Campaign kann mit zwei Protokollierungsstufen arbeiten:
 
    >[!NOTE]
    >
-   >Wenn Sie **trackingFilter:*** verwenden, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtkquery, session, xtkwriter, network, pop3, inmail\
+   >Wenn Sie **trackingFilter:*** verwenden, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
    Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
    Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können sie auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:*,!soap**
 
-   Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie dann den Prozess normal neu:
+   Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie den Prozess auf die normale Weise neu:
 
    ```
    nlserver restart <MODULE_NAME> -noconsole
@@ -67,7 +70,7 @@ Die Protokolle dieser Befehle werden in der Protokolldatei des Moduls gespeicher
 
 Hier ist ein Beispiel speziell für das Webmodul. Die anderen Module funktionieren wie oben angegeben.
 
-Vergewissern Sie sich vor dem Senden dieses Befehls, dass kein laufender Auftrag betroffen ist.
+Vergewissern Sie sich vor dem Senden dieses Befehls, dass kein in Verarbeitung befindlicher Auftrag betroffen ist.
 
 ```
 nlserver pdump -who
