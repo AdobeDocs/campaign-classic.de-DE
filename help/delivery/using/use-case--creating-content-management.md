@@ -16,6 +16,9 @@ internal: n
 snippet: y
 translation-type: ht
 source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+workflow-type: ht
+source-wordcount: '1221'
+ht-degree: 100%
 
 ---
 
@@ -65,7 +68,7 @@ Ein Datenschema ist ein mit einem Inhalt verknüpftes XML-Dokument zur Beschreib
 >
 >Erstellung und Konfiguration von Datenschemata in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/about-schema-edition.md) beschrieben.
 >
->Die das Content Management betreffenden Elemente werden im Kapitel ](../../delivery/using/data-schemas.md)Datenschemata[ erläutert.
+>Die das Content Management betreffenden Elemente werden im Kapitel [Datenschemata](../../delivery/using/data-schemas.md) erläutert.
 
 Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
@@ -177,7 +180,7 @@ Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, welches di
 >
 >Erstellung und Konfiguration von Formularen in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/identifying-a-form.md) beschrieben.
 >
->Die das Content Management betreffenden Elemente werden im Kapitel ](../../delivery/using/input-forms.md)Formulare[ erläutert.
+>Die das Content Management betreffenden Elemente werden im Kapitel [Formulare](../../delivery/using/input-forms.md) erläutert.
 
 Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstellen:
 
@@ -238,7 +241,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 1. Geben Sie einen Namen für das Template ein und wählen Sie das zuvor für das Content Management erstellte Schema aus.
 1. Importieren Sie die Inhalte, die in allen Ausgabedokumenten, die das Template verwenden, unveränderlich angezeigt werden sollen.
 
-   Fügen Sie unter Beachtung der im Abschnitt ](../../delivery/using/formatting.md#javascript-templates)JavaScript-Templates[ dargestellten Syntax die variablen Elemente ein.
+   Fügen Sie unter Beachtung der im Abschnitt [JavaScript-Templates](../../delivery/using/formatting.md#javascript-templates) dargestellten Syntax die variablen Elemente ein.
 
    Für das vorliegende Beispiel stellt sich das JavaScript-Template wie folgt dar:
 
