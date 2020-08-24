@@ -14,11 +14,11 @@ discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1312'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 ### Parameter {#parameters}
 
-Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente wie gewünscht in der **config-`<instance name>.xml`**Datei hinzu und bearbeiten Sie sie. Nachfolgend sind die Standardwerte aufgeführt:
+Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente wie gewünscht in der **config-`<instance name>.xml`** Datei hinzu und bearbeiten Sie sie. Nachfolgend sind die Standardwerte aufgeführt:
 
 ```
 <archiving autoStart="false" compressionFormat="0" compressBatchSize="10000"
@@ -101,8 +101,8 @@ Nachdem der lokale Ordnerpfad definiert wurde, fügen Sie die folgenden Elemente
    **1**: Rohkopien gesendeter E-Mails werden im .eml-Format im **Ordner &quot;dataLogPath** &quot;gespeichert und über SMTP an die BCC-E-Mail-Adresse gesendet. Sobald die E-Mail-Kopien an die BCC-Adresse gesendet werden, wird der Name der Archivdatei **`<deliveryid>-<broadlogid>-sent-archived.eml`** und die Datei wird in den Ordner **dataLogPath/archives** verschoben. Der Pfad der gesendeten und archivierten E-Mail-Datei wird dann **`<datalogpath>archivesYYYY-MM-DDHHh<deliveryid>- <broadlogid>-sent-archived.eml`** angezeigt.
 
 * **expirationDelay**: Anzahl der Tage .eml-Dateien werden zur Archivierung aufbewahrt. Nach dieser Verzögerung werden sie zur Komprimierung automatisch in den Ordner **dataLogPath/archives** verschoben. Standardmäßig laufen .eml-Dateien nach zwei Tagen ab.
-* **purgeArchivesDelay**: Die Anzahl der Tage, die Archive im **Ordner &quot;dataLogPath/`<archives>`**&quot;gespeichert werden. Nach diesem Zeitraum werden sie endgültig gelöscht. Die Bereinigung beginnt mit dem Start der MTA. Standardmäßig wird sie alle sieben Tage durchgeführt.
-* **pollDelay**: Überprüfungsfrequenz (in Sekunden) für neue eingehende gesendete E-Mails im **Ordner &quot;dataLogPath** &quot;. Wenn dieser Parameter beispielsweise auf 60 gesetzt ist, bedeutet dies, dass der Archivierungsprozess jede Minute die .eml-Dateien in den **`<date and time>`**dataLogPath/-Ordnern durchläuft, bei Bedarf eine Bereinigung durchführt und E-Mail-Kopien an die BCC-Adresse sendet und/oder die archivierten Dateien komprimiert, wann immer dies erforderlich ist.
+* **purgeArchivesDelay**: Die Anzahl der Tage, die Archive im **Ordner &quot;dataLogPath/`<archives>`** &quot;gespeichert werden. Nach diesem Zeitraum werden sie endgültig gelöscht. Die Bereinigung beginnt mit dem Start der MTA. Standardmäßig wird sie alle sieben Tage durchgeführt.
+* **pollDelay**: Überprüfungsfrequenz (in Sekunden) für neue eingehende gesendete E-Mails im **Ordner &quot;dataLogPath** &quot;. Wenn dieser Parameter beispielsweise auf 60 gesetzt ist, bedeutet dies, dass der Archivierungsprozess jede Minute die .eml-Dateien in den **`<date and time>`** dataLogPath/-Ordnern durchläuft, bei Bedarf eine Bereinigung durchführt und E-Mail-Kopien an die BCC-Adresse sendet und/oder die archivierten Dateien komprimiert, wann immer dies erforderlich ist.
 * **acquisitionLimit**: Anzahl der .eml-Dateien, die gleichzeitig verarbeitet werden, bevor der Archivierungsprozess gemäß dem Parameter **pollDelay** erneut angewendet wird. Wenn Sie beispielsweise den Parameter **acquisitionLimit** auf 100 setzen, während der Parameter **pollDelay** auf 60 eingestellt ist, werden 100 .eml-Dateien pro Minute verarbeitet.
 * **smtpNbConnection**: Anzahl der SMTP-Verbindungen zur BCC-E-Mail-Adresse.
 
@@ -114,7 +114,7 @@ Stellen Sie sicher, dass Sie diese Parameter an den E-Mail-Versand-Durchsatz anp
 >
 >Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
 
-Verwenden Sie in der **config-`<instance name>.xml`**-Datei die folgenden Parameter, um den SMTP-E-Mail-Server zu definieren, auf den die gespeicherten Dateien übertragen werden:
+Verwenden Sie in der **config-`<instance name>.xml`** -Datei die folgenden Parameter, um den SMTP-E-Mail-Server zu definieren, auf den die gespeicherten Dateien übertragen werden:
 
 ```
 <archiving smtpBccAddress="" smtpEnableTLS="false" smtpRelayAddress="" smtpRelayPort="25"/>
@@ -153,6 +153,6 @@ Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass Sie die Option E
    * Wenn Sie eine MTA für mehrere Clients freigeben und bei einem dieser Clients diese Option aktiviert ist, greift dieser Client auf alle E-Mails der anderen Clients zu, die dieselbe MTA verwenden. Um eine solche Situation zu vermeiden, verwenden Sie für jeden Client eine andere MTA.
    * Wenn Sie dieselbe MTA für mehrere Instanzen verwenden (Entwicklung, Test, Test), werden die Nachrichten, die von allen drei Instanzen gesendet werden, von der Option dataLogPath dupliziert.
 
-* **E-Mails pro Verbindung**: Die BCC E-Mail-Archivierung funktioniert durch Öffnen einer Verbindung und Versenden aller E-Mails über diese Verbindung. Adobe empfiehlt, zusammen mit Ihrem internen technischen Ansprechpartner die Anzahl der E-Mails zu überprüfen, die in einer bestimmten Verbindung akzeptiert werden. Eine Erhöhung dieser Zahl kann einen großen Einfluss auf den BCC-Durchsatz haben.
-* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Dies bedeutet, dass Sie je nach Konfiguration des E-Mail-Servers zusätzliche IPs zur zulassungsliste in Ihrem Netzwerk hinzufügen müssen.
+* **E-Mails pro Verbindung**: Die BCC E-Mail-Archivierung funktioniert durch Öffnen einer Verbindung und Versenden aller E-Mails über diese Verbindung. Adobe empfiehlt, mit Ihrem internen technischen Ansprechpartner die Anzahl der E-Mails zu überprüfen, die in einer bestimmten Verbindung akzeptiert werden. Eine Erhöhung dieser Zahl kann einen großen Einfluss auf den BCC-Durchsatz haben.
+* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Dies bedeutet, dass Sie je nach Konfiguration des E-Mail-Servers zusätzliche IPs zur Zulassungsliste im Netzwerk hinzufügen müssen.
 
