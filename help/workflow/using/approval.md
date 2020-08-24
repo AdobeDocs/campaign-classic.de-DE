@@ -73,7 +73,7 @@ Klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**, um die für die Benutz
 
 Die Vorlage kann angepasst werden. Es wird jedoch empfohlen, sie zu duplizieren und unter einem neuen Namen zu speichern. Der Zielgruppenmechanismus (externe Datei, Zielgruppen-Mapping) darf hingegen nicht geändert werden. Er ist für die korrekte Funktionsweise der Benachrichtigungen erforderlich.
 
-Ein Validierungsbeispiel finden Sie im Abschnitt ](../../workflow/using/defining-approvals.md)Validierungen definieren[.
+Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](../../workflow/using/defining-approvals.md).
 
 ## Ausgabeparameter {#output-parameters}
 
