@@ -14,8 +14,11 @@ discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 9d36192a768fd0162f2301a5fe0437074d0fda58
+translation-type: tm+mt
+source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
+workflow-type: tm+mt
+source-wordcount: '1259'
+ht-degree: 97%
 
 ---
 
@@ -84,13 +87,19 @@ Aufgabenvariablen (**[!UICONTROL task.vars.xxx]**) sind mit lokalen Variablen ve
 
 Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Daten zwischen elementaren Aufgaben eines Workflow-Prozesses. Sie werden von der Aufgabe übermittelt, die die laufende Aufgabe aktiviert hat. Es besteht die Möglichkeit, sie zu ändern oder neue Ereignisvariablen zu definieren, die dann an die anschließenden Aktivitäten übermittelt werden.
 
-Bei Verwendung einer **UND-Verknüpfung** fusionieren die Variablen. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
+>[!CAUTION]
+>
+>Bei Verwendung einer [UND-Verknüpfung](../../workflow/using/and-join.md) fusionieren die Variablen. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
 
-Diese Variablen werden am häufigsten verwendet und sind Instanzvariablen vorzuziehen.
+Ereignis sind die am häufigsten verwendeten Variablen und sollten anstelle von Instanzvariablen verwendet werden.
 
 Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Zeichenfolgenvariablen. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](../../workflow/using/about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
-### Beispiele   {#example}
+### Anwendungsbeispiele {#example}
+
+>[!NOTE]
+>
+>Weitere Anwendungsfälle für Workflows sind in [diesem Abschnitt](../../workflow/using/about-workflow-use-cases.md)verfügbar.
 
 **Beispiel 1**
 
