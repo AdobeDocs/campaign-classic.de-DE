@@ -15,7 +15,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 6c66718fbbf13486d52b0cc98eae6c854b34030d
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 95%
@@ -243,7 +243,7 @@ Es existieren folgende Standardgruppen:
 
 1. **[!UICONTROL Administrator]**
 
-   The operators in this group have full access to the instance. Administratoren sind Benutzer, die auf die technischsten Teile der Benutzeroberfläche zugreifen können. They hold the **[!UICONTROL Administration]** role and make sure that the platform is all set up.
+   Die Operatoren in dieser Gruppe haben vollen Zugriff auf die Instanz. Administratoren sind Benutzer, die auf die technischsten Teile der Benutzeroberfläche zugreifen können. Sie haben die **[!UICONTROL Administratorrolle]** und stellen sicher, dass alle Plattformen eingerichtet sind.
 
    Diese Gruppe enthält den folgenden Namen right:
 
@@ -357,7 +357,7 @@ Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte O
 
 Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](/help/platform/using/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/user_management.png)](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![image](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
 
 ## Zugriffsverwaltungsordner {#folder-access-management}
 
