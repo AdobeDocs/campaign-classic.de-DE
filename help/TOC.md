@@ -5,11 +5,11 @@ user-guide-description: Adobe Campaign lets you coordinate the creation of conve
 index: y
 product: adobe campaign
 sub-product: Adobe Campaign Classic
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0810608c67e6da4d9afa3a366df664594b0b6840
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2109'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 99%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen    {#creating-queries}
+   + Abfragen erstellen     {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -90,17 +90,17 @@ ht-degree: 99%
       + [CRM-Connectoren](platform/using/crm-connectors.md)
       + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Nachrichten senden {#sending-messages}
-   + [Erste Schritte mit dem von Nachrichten](delivery/using/communication-channels.md)
+   + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
    + Best Practices beim Versand {#delivery-bestpractices}
-      + [Bewährte Verfahren](delivery/using/delivery-best-practices.md)
+      + [Best Practices erlernen](delivery/using/delivery-best-practices.md)
       + [Versand optimieren](delivery/using/optimize-delivery.md)
-      + [Verwenden von Vorlagen](delivery/using/use-templates.md)
+      + [Vorlagen verwenden](delivery/using/use-templates.md)
       + [Personalisierte Inhalte erstellen](delivery/using/design-and-personalize.md)
-      + [Definieren der richtigen Audience](delivery/using/define-the-right-audience.md)
+      + [Die richtige Zielgruppe festlegen](delivery/using/define-the-right-audience.md)
       + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
-      + [Tracken und Beobachten](delivery/using/track-and-monitor.md)
+      + [Tracken und überwachen](delivery/using/track-and-monitor.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
-      + [Erste Schritte mit Versänden](delivery/using/steps-about-delivery-creation-steps.md)
+      + [Erste Schritte mit Sendungen](delivery/using/steps-about-delivery-creation-steps.md)
       + [Versand erstellen und identifizieren](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Zielpopulation bestimmen](delivery/using/steps-defining-the-target-population.md)
       + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
@@ -320,7 +320,7 @@ ht-degree: 99%
       + [Integration konfigurieren mit [!DNL Adobe Target]](integrations/using/configuring-the-integration-with-adobe-target.md)
       + [Dynamisches Bild einfügen](integrations/using/inserting-a-dynamic-image.md)
    + Verbindung mit Adobe ID {#connecting-via-an-adobe-id}
-      + [Versionsinformationen [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
+      + [Info [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
       + [ Konfigurieren [!DNL IMS]](integrations/using/configuring-ims.md)
       + [ Implementieren [!DNL IMS]](integrations/using/implementing-ims.md)
       + [Fehlerbehebung bei IMS](integrations/using/ims-troubleshooting.md)
@@ -422,7 +422,7 @@ ht-degree: 99%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring    {#monitoring}
+      + Monitoring  {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
