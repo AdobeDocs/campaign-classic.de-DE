@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 251244225076dd11a319d1c4b2124c0d05168eaa
+source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
 workflow-type: tm+mt
-source-wordcount: '1976'
-ht-degree: 99%
+source-wordcount: '1975'
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ _8. Juni 2020_
  <tbody> 
   <tr> 
    <td> <p>Das thailändische Datenschutzgesetz (PDPA) ist ein neues Datenschutzgesetz, mit dem die Datenschutzanforderungen für Thailand harmonisiert und modernisiert werden. </p>
-   <p>Das brasilianische Lei Geral de Proteção de Dados (LGPD) wird am 16. August für alle Firmen in Kraft treten, die in Brasilien personenbezogene Daten sammeln oder verarbeiten.</p>
+   <p>Die brasilianische Lei Geral de Proteção de Dados (LGPD) wird Anfang 2021 für alle Firmen, die personenbezogene Daten in Brasilien sammeln oder verarbeiten, in Kraft treten.</p>
    <p>Die Vorschriften gelten für Adobe Campaign-Kunden, die Daten über in diesen Ländern wohnhafte Datensubjekte besitzen. Zusätzlich zu den bereits in Campaign verfügbaren Datenschutzoptionen (Einverständnisverwaltung, Einstellungen für die Datenbeibehaltung und Benutzerrollen usw.) werden weitere Funktionen bereitgestellt, mit deren Hilfe PDPA- und LGPD-konformes Verhalten sichergestellt werden kann:</p>
    <ul> 
      <li><p>Recht auf Zugriff und Recht auf Löschung: Hierfür werden die Funktionen genutzt, die für die DSGVO und PPDA hinzugefügt wurden. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Mehr dazu</a></p></li> 
