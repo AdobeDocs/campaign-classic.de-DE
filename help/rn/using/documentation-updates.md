@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7180'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,42 +29,42 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## August 2020 {#aug-2020}
 
-In einem speziellen Abschnitt erfahren Sie, welche Best Practices im Zusammenhang mit dem Design von Versänden und dem Senden mit Kampagne gelten. [mehr dazu](../../delivery/using/delivery-best-practices.md)
+Informationen zu Best Practices im Zusammenhang mit der Versandgestaltung und dem Versand mit Campaign finden Sie in einem eigenen Abschnitt – [mehr dazu](../../delivery/using/delivery-best-practices.md)
 
-Die Landingpage der Best Practices zur Lieferbarkeit wurde verbessert, um den Zugriff auf Unterabschnitte zu erleichtern. [mehr dazu](../../delivery/using/deliverability-key-points.md)
+Die Landingpage für die Best Practices für die Zustellbarkeit wurde verbessert, um den Zugriff auf Unterabschnitte zu erleichtern – [mehr dazu](../../delivery/using/deliverability-key-points.md)
 
-Anleitungen zu Videos stehen jetzt in den folgenden Themen zur Verfügung:
+Zu den folgenden Themen sind jetzt Anleitungsvideos verfügbar:
 
-* [Einrichten des Ermüdungsmanagements mithilfe von Typologieregeln und Vordefinierte Filtern](../../campaign/using/about-campaign-typologies.md)
+* [Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln und vordefinierten Filtern](../../campaign/using/about-campaign-typologies.md)
 
 * [Erstellen einer E-Mail in einer Kampagne](../../campaign/using/marketing-campaign-deliveries.md)
 
-* [So erstellen Sie einen mehrsprachigen Newsletter mit bedingten Inhalten](../../delivery/using/conditional-content.md)
+* [Erstellen eines mehrsprachigen Newsletters mit bedingten Inhalten](../../delivery/using/conditional-content.md)
 
-* [Konfigurieren und Bereitstellen einer Versandvorlage](../../delivery/using/creating-a-delivery-template.md)
+* [Konfigurieren und Implementieren einer Versandvorlage](../../delivery/using/creating-a-delivery-template.md)
 
-* [So aktivieren und verwenden Sie AMP für E-Mails](../../delivery/using/defining-interactive-content.md)
+* [Aktivieren und Verwenden von AMP für E-Mails](../../delivery/using/defining-interactive-content.md)
 
 * [Personalisieren von E-Mails mit dynamischen Inhaltsbausteinen](../../delivery/using/personalization-blocks.md)
 
-* [So personalisieren Sie E-Mails mit Personalisierungsfeldern](../../delivery/using/personalization-fields.md)
+* [Personalisieren von E-Mails mit Personalisierungsfeldern](../../delivery/using/personalization-fields.md)
 
-* [Verwalten von Saatgut und Testversänden in einer E-Mail](../../delivery/using/steps-defining-the-target-population.md)
+* [Verwalten von Testadressen und Testsendungen in einer E-Mail](../../delivery/using/steps-defining-the-target-population.md)
 
-* [So richten Sie einen wiederkehrenden Versand ein](../../workflow/using/recurring-delivery.md)
+* [Einrichten eines wiederkehrenden Versands](../../workflow/using/recurring-delivery.md)
 
-* [Einrichten eines kontinuierlichen Versands](../../workflow/using/continuous-delivery.md)
+* [Einrichten eines Versands (fortlaufend)](../../workflow/using/continuous-delivery.md)
 
-Es wurden Informationen zu den Prüfungen und Aktionen hinzugefügt, die durchgeführt werden sollen, wenn der Fehler &quot;Hostname konnte nicht aufgelöst werden&quot;nach dem Herstellen einer Verbindung mit einem FTP-Server ausgegeben wird. [mehr dazu](../../platform/using/sftp-server-usage.md)
+Es wurden Informationen zu den Prüfungen und Aktionen hinzugefügt, die durchzuführen sind, wenn der Fehler &quot;Hostname konnte nicht aufgelöst werden&quot; nach der Verbindung zu einem FTP-Server auftritt – [mehr dazu](../../platform/using/sftp-server-usage.md)
 
-In der Liste der Anwendungsfälle für [Arbeitsabläufe](../../workflow/using/about-workflow-use-cases.md)wurden neue Anwendungsfälle beschrieben:
+In der Liste der [Workflow-Anwendungsfälle](../../workflow/using/about-workflow-use-cases.md) wurden neue Anwendungsfälle referenziert:
 
-* Automatisieren der Inhaltserstellung, -ausgabe und -veröffentlichung
-* Einrichten eines Empfänger-Genehmigungsprozesses vor dem Senden eines Versands
-* Instanzvariablen in Abfragen aufrufen
-* Anwenden eines aufgeteilten Prozentsatzes auf eine Population
+* Automatisieren der Inhaltserstellung, -bearbeitung und -veröffentlichung
+* Einrichten eines Empfängergenehmigungsverfahrens vor der Ausführung eines Versands
+* Aufrufen von Instanzvariablen in Abfragen
+* Anwenden einer prozentualen Aufspaltung auf eine Population
 
-Der Bereich **[!UICONTROL AND-join]** Aktivität wurde um zusätzliche Informationen zur Verwendung der Variablen sowie einen Hinweis zur Verwendung von Variablen erweitert. [mehr dazu](../../workflow/using/and-join.md)
+Der Abschnitt über die **[!UICONTROL Und-Verknüpfungsaktivität]** wurde um zusätzliche Informationen über deren Verwendung sowie um einen Hinweis zur Verwendung von Variablen erweitert – [mehr dazu](../../workflow/using/and-join.md)
 
 ## Juli 2020 {#july-2020}
 
@@ -104,7 +104,7 @@ Azure Synapse FDA-Connector – [mehr dazu](../../platform/using/specific-config
 
 Datenschutzgesetze in Thailand und Brasilien – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
-**Weitere Aktualisierungen der Dokumentation zu dieser Version**
+**Weitere Dokumentationsaktualisierungen zu dieser Version**
 
 Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichten-Vorlage wird in [diesem Abschnitt](../../message-center/using/template-unpublication.md) beschrieben.
 
@@ -292,15 +292,15 @@ Der Abschnitt „Zugriffsverwaltung“ wurde mit dem **Datenschutzrecht** aktual
 
 Es wurden Informationen hinzugefügt, die festlegen, dass der Inhalt von Personalisierungsfeldern 1024 Zeichen nicht überschreiten darf. [Mehr dazu](../../delivery/using/personalization-fields.md)
 
-Die Control Panel-Dokumentation wurde in den neuen kollaborativen Dokumentationssatz integriert – [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
+Die Control Panel-Dokumentation wurde in den neuen kollaborativen Dokumentationssatz integriert. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
 
-Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert – [Mehr dazu](../../delivery/using/delivery-best-practices.md)
+Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 ## Oktober 2019 {#october-2019}
 
 Die Liste der Fehlermeldungen für Campaign Standard und Campaign Classic wurde aktualisiert. [mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/technicalResources/error_messages/error_codes.html)
 
-Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA – [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
+Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA. [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
 
 Eine neue Seite zur Fehlerbehebung wurde zum Tracking in Campaign Classic hinzugefügt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/classic-tracking-troubleshooting.html)
 
@@ -430,7 +430,7 @@ Der Abschnitt „Workflow-Monitoring“ wurde mit einem Hinweis für Builds zwis
 
 Es wurde ein Anwendungsbeispiel zum Senden einer E-Mail mit benutzerdefinierten Datenfeldern mithilfe der Anreicherungsaktivität in einem Workflow hinzugefügt. [Mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Email_enrichment_with_custom_date_fields.html)
 
-Die Funktionsvideos wurden [hierher](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) verschoben.
+Die Funktionsvideos wurden [hierher](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/overview.html) verschoben.
 
 Es wurden zwei Technotes zu [Teradata](https://helpx.adobe.com/de/campaign/kb/campaign_fda_teradata.html) und [MySQL 5.7](https://helpx.adobe.com/de/campaign/kb/campaign_fda_mysql.html) hinzugefügt.
 
