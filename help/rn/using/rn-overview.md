@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 27a72257904ff356b1a341c29f9a1ab3ccb20dd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet. Nachfolgend fin
 
 Der **aktuelle stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn/using/gold-standard.md).
 
-![](assets/do-not-localize/limited.png) **Eingeschränkte Verfügbarkeit** - Erstellen Sie derzeit eine Produktionsprüfung. Nur On-Demand-Bereitstellung.
+![](assets/do-not-localize/limited.png) **Eingeschränkte Verfügbarkeit**: Build wird derzeit in Produktion validiert. Implementierung nur auf Anfrage.
 
 ![](assets/do-not-localize/blue3.png) **Veröffentlichungskandidat**: Build von Adobe validiert. Produktionstestversand ist ausstehend.
 
@@ -49,7 +49,7 @@ Der **aktuelle stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn
 
 Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/campaign/kb/gold-standard.html#gs-6)
+Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html#gs-6)
 
 Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html).
 
