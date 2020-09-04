@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 69%
+ht-degree: 71%
 
 ---
 
@@ -54,16 +54,16 @@ Anhand der drei Werte lässt sich die durch den wiederkehrenden Versand ermittel
 
 Die Transition des Komplements weist die gleichen Parameter auf.
 
-## How to set up a continuous delivery
+## Einrichten eines Versands (fortlaufend)
 
-This section explains how to set up a continuous delivery.
+In diesem Abschnitt wird beschrieben, wie Sie einen kontinuierlichen Versand einrichten.
 
-The **continuous delivery** lets you add new recipients to an existing delivery and avoids you having to create a new delivery each time a new recipient is added. You can update the creative directly in the campaign workflow and it will update the template in the delivery template Resource folder.
+The **continuous delivery** lets you add new recipients to an existing delivery and avoids you having to create a new delivery each time a new recipient is added. Sie können die Kreativelemente direkt im Arbeitsablauf für Kampagnen aktualisieren und die Vorlage im Ordner &quot;Versandvorlage-Ressourcen&quot;aktualisieren.
 
-A continuous delivery will create a SINGLE delivery and delivery logs (broadLog) and tracking logs that reference that one delivery are added each time it executes.
+Ein kontinuierlicher Versand erstellt einen SINGLE-Versand und Versandlogs (wideLog) und Trackinglogs, die auf diesen einen Versand verweisen, werden bei jeder Ausführung hinzugefügt.
 
 ![Kontinuierlicher Versand](assets/delivery_continuous.jpg)
 
-This video shows how to configure a continuous delivery with an incremental query.
+In diesem Video wird gezeigt, wie ein kontinuierlicher Versand mit inkrementeller Abfrage konfiguriert wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
