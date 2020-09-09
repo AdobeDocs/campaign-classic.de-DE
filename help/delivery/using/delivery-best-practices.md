@@ -1,5 +1,5 @@
 ---
-title: Best Practices für Kampagne Versand
+title: Campaign – Best Practices beim Versand
 seo-title: Best Practices beim Versand
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
@@ -12,32 +12,32 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1e7dfc5cebf6b59d1b7e718fcab289691d8b76de
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
 
 # Best Practices beim Versand {#delivery-best-practices}
 
-Learn best practices related to delivery design and sending with Adobe Campaign. Use the links below to navigate topics and find guidance.
+Lernen Sie Best Practices im Zusammenhang mit der Versandgestaltung und dem Versand mit Adobe Campaign kennen. Verwenden Sie die folgenden Links, um durch die Themen zu navigieren und Anleitungen zu finden.
 
 <table>
 <tr>
   <td>
     <a href="optimize-delivery.md">
-      <img alt="Optimize" src="assets/do-not-localize/optimize.svg" width="60px"/>
+      <img alt="Optimieren" src="assets/do-not-localize/optimize.svg" width="60px"/>
     </a>
     <div>
       <a href="optimize-delivery.md">
-    <strong>Versand optimieren</strong>
+    <strong>Optimieren des Versands</strong>
     </a>
     </div>
     <p>
-    <em>Secure and optimize the sending process</em>
+    <em>Sichern und Optimieren des Sendevorgangs</em>
     <p>
   </td>
    <td>
@@ -50,7 +50,7 @@ Learn best practices related to delivery design and sending with Adobe Campaign.
     </a>
     </div>
     <p>
-    <em>Neue Versand erleichtern und beschleunigen</em>
+    <em>Erleichtern und Beschleunigen neuer Sendungen</em>
     <p>
   </td>
   <td>
@@ -59,11 +59,11 @@ Learn best practices related to delivery design and sending with Adobe Campaign.
     </a>
     <div>
       <a href="design-and-personalize.md">
-    <strong>Inhalte personalisieren</strong>
+    <strong>Personalisieren von Inhalten</strong>
     </a>
     </div>
     <p>
-    <em>Korrekte Einstellungen anwenden</em>
+    <em>Anwenden der richtigen Einstellungen</em>
     <p>
   </td>
 </tr>
@@ -74,24 +74,24 @@ Learn best practices related to delivery design and sending with Adobe Campaign.
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>Definieren der richtigen Audience</strong>
+    <strong>Festlegen der richtigen Zielgruppe</strong>
     </a>
     </div>
     <p>
-    <em>Targeted population is key</em>
+    <em>Die Zielgruppe ist wichtig</em>
     <p>
   </td>
    <td>
     <a href="check-before-sending.md">
-      <img alt="Häkchen" src="assets/do-not-localize/start.svg" width="60px"/>
+      <img alt="Prüfen" src="assets/do-not-localize/start.svg" width="60px"/>
     </a>
     <div>
       <a href="check-before-sending.md">
-    <strong>Vor dem Senden prüfen</strong>
+    <strong>Prüfen vor dem Senden</strong>
     </a>
     </div>
     <p>
-    <em>Avoid common mistakes</em>
+    <em>Vermeiden häufiger Fehler</em>
     <p>
   </td>
   <td>
@@ -104,7 +104,7 @@ Learn best practices related to delivery design and sending with Adobe Campaign.
     </a>
     </div>
     <p>
-    <em>Senden und Fehlerbehebung steuern</em>
+    <em>Steuern von Sendungen und Fehlerbehebung</em>
     <p>
   </td>
 </tr>
@@ -112,8 +112,8 @@ Learn best practices related to delivery design and sending with Adobe Campaign.
 
 Siehe auch:
 
-* [Erste Schritte mit der Lieferbarkeit](../../delivery/using/about-deliverability.md)
+* [Erste Schritte mit der Zustellbarkeit](../../delivery/using/about-deliverability.md)
 
-* [Schritte zum Erstellen von Versänden](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Schritte zum Erstellen von Sendungen](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 * [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html)
