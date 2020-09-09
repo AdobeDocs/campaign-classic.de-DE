@@ -14,11 +14,11 @@ discoiquuid: 167cc61a-fbc7-48cb-89ff-fbdbf9321c01
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 Die Konfiguration bedingter Inhalte erlaubt eine dynamische Personalisierung, beispielsweise auf der Basis des Empfängerprofils. Dabei werden Textbausteine und/oder Bilder ersetzt, wenn eine bestimmte Bedingung erfüllt ist.
 
-![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#conditionnal-content-video)
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#conditionnal-content-video).
 
 
 ## Bedingungen in einer E-Mail verwenden {#using-conditions-in-an-email}
@@ -117,8 +117,8 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
    >
    >Da Sie für den E-Mail-Inhalt keine andere Version definiert haben, müssen Sie die Zielpopulation vor dem Versand der E-Mail filtern.
 
-## So erstellen Sie einen mehrsprachigen Newsletter mit bedingten Inhalten {#conditionnal-content-video}
+## Erstellen eines mehrsprachigen Newsletters mit bedingten Inhalten {#conditionnal-content-video}
 
-Hier erfahren Sie, wie Sie einem Versand Bedingungsinhalte hinzufügen, z. B. einen mehrsprachigen Newsletter.
+Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
->[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12&captions=ger)
