@@ -14,11 +14,11 @@ discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1725'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,23 +29,23 @@ ht-degree: 90%
 
 Für jeden Versand können verschiedene Zielpopulationen bestimmt werden. Im folgenden Abschnitt finden Sie weitere Informationen zur Auswahl von:
 
-* Hauptempfängern des Versands – [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* Empfängern von Testversandnachrichten, um einen Validierungszyklus einzurichten – [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* Hauptempfängern des Versands – [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* Empfängern von Testversandnachrichten, um einen Validierungszyklus einzurichten – [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
 
-Wenn der Versand außerdem in einer Marketing-Kampagne enthalten ist, können Sie auch [Testadressen](../../delivery/using/about-seed-addresses.md)und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group)definieren.
+Wenn der Versand außerdem in einer Marketing-Kampagne enthalten ist, können Sie auch [Testadressen](../../delivery/using/about-seed-addresses.md) und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) definieren.
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
 
-In den meisten Fällen wird die Haupt-Zielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können jedoch auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Meistens wird die Hauptzielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können aber auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
 
-Gehen Sie wie folgt vor, um den Empfänger eines Versands auszuwählen:
+Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
-1. Wählen Sie im Versand-Editor &quot; **[!UICONTROL An]**&quot;.
-1. Wenn die Empfänger in der Datenbank gespeichert sind, wählen Sie die erste Option.
+1. Wählen Sie im Versand-Editor **[!UICONTROL An]** aus.
+1. Wählen Sie die erste Option, wenn Ihre Empfänger in der Datenbank gespeichert sind.
 
    ![](assets/s_ncs_user_wizard_email02a.png)
 
-1. Wählen Sie das Zielgruppen-Mapping in der Dropdown-Liste &quot; **[!UICONTROL Zielgruppen-Mapping]** &quot;aus. Adobe Campaign-Standard-Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf **nms:Empfänger** -Schema.
+1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe-Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
 
    Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](../../delivery/using/selecting-a-target-mapping.md).
 
@@ -155,7 +155,7 @@ Folgende Optionen stehen zur Verfügung:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d.h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss weiterhin gewählt werden, um die Berufsethik des E-Marketing und die Gesetze über den elektronischen Geschäftsverkehr einzuhalten.
+* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste („Opt-out“) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings und die Gesetze hinsichtlich E-Commerce einzuhalten.
 * **[!UICONTROL Adressen in Quarantäne ausschließen]**: schließt die Empfänger aus, für die frühere Zustellversuche fehlgeschlagen sind. Es wird dringend empfohlen, diese Option NICHT ABZUWÄHLEN.
 
    >[!NOTE]
@@ -174,7 +174,7 @@ Sie können die Größe der Zielpopulation verringern. Geben Sie dazu die Anzahl
 
 Ein Testversand ist eine spezifische Nachricht, die den eigentlichen Versand prüft, bevor er an die Hauptzielgruppe gesendet wird. Die Testversand-Empfänger sind verantwortlich für die Überprüfung des Inhalts und der Form von Sendungen.
 
-![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#seeds-and-proofs-video)
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#seeds-and-proofs-video).
 
 
 Um die Testversand-Zielgruppe auszuwählen, gehen Sie wie folgt vor:
@@ -233,15 +233,15 @@ Sie können **[!UICONTROL Testadressen]** als Testversand-Zielgruppe verwenden: 
 
 Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können Sie die Bestimmung einer speziellen Testversand-Zielgruppe und die Verwendung von Testadressen kombinieren. Die entsprechende Konfiguration erfolgt dann in zwei getrennten Tabs.
 
-## Verwalten von Saatgut und Testversänden in einer E-Mail {#seeds-and-proofs-video}
+## Verwalten von Testadressen und Testsendungen in einer E-Mail {#seeds-and-proofs-video}
 
-In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Samen und Testversand hinzufügen und diese senden.
+In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12&captions=ger)
 
 Siehe auch:
 * [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
 
-* [Grundlagen zu Seed-Adressen](../../delivery/using/about-seed-addresses.md)
+* [Über Testadressen](../../delivery/using/about-seed-addresses.md)
 
 * [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
