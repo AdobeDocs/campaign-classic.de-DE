@@ -14,11 +14,11 @@ discoiquuid: 185d3256-a21e-47d7-bee7-7b91762ca1e2
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '204'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -41,15 +41,15 @@ Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versan
 
 Ein Anwendungsbeispiel für diese Aktivität ist in diesem [Abschnitt](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow) enthalten.
 
-## Einrichten von wiederkehrenden Versänden
+## Einrichten eines wiederkehrenden Versands
 
-Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versand-Instanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, ergibt dies 52 Versand nach einem Jahr. Dies bedeutet auch, dass das breite Protokoll und die Trackinglogs durch jede Versand-Instanz getrennt werden.
+Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versandinstanz. Wenn der Workflow beispielsweise einmal pro Woche ausgeführt werden soll, führt dies nach einem Jahr zu 52 Sendungen. Dies bedeutet auch, dass das Broadlog und die Trackinglogs je Versandinstanz getrennt sind.
 
 ![Wiederkehrender Versand](assets/delivery_recurring.jpg)
 
-In diesem Video wird beschrieben, wie Sie einen wiederkehrenden Versand und eine Planung-Aktivität konfigurieren.
+In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12&captions=ger)
 
 >[!NOTE]
 >
