@@ -14,11 +14,11 @@ discoiquuid: 8867d9c3-2ce4-4611-8c88-ce505c3a01d1
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c959c0e8ace1eaaa768ea04c194eaccac0b35344
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Dat
 >
 >Bei Verwendung einer [UND-Verknüpfung](../../workflow/using/and-join.md) fusionieren die Variablen. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
 
-Ereignis sind die am häufigsten verwendeten Variablen und sollten anstelle von Instanzvariablen verwendet werden.
+Ereignisvariablen sind die am häufigsten verwendeten Variablen und sind Instanzvariablen vorzuziehen.
 
 Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Zeichenfolgenvariablen. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](../../workflow/using/about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
@@ -99,7 +99,7 @@ Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert 
 
 >[!NOTE]
 >
->Weitere Anwendungsfälle für Workflows sind in [diesem Abschnitt](../../workflow/using/about-workflow-use-cases.md)verfügbar.
+>Weitere Anwendungsbeispiele für Workflows sind in [diesem Abschnitt](../../workflow/using/about-workflow-use-cases.md) verfügbar.
 
 **Beispiel 1**
 
