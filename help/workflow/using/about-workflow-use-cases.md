@@ -11,11 +11,11 @@ topic-tags: about-workflows-and-data-management
 discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -36,16 +36,16 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Versandinhalt laden](../../workflow/using/loading-delivery-content.md)
 * [Workflow für einen kanalübergreifenden Versand](../../workflow/using/cross-channel-delivery-workflow.md)
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](../../workflow/using/email-enrichment-with-custom-date-fields.md)
-* [Automatisieren der Inhaltserstellung, -ausgabe und -veröffentlichung](../../delivery/using/automating-via-workflows.md#examples)
+* [Automatisieren der Inhaltserstellung, -bearbeitung und -veröffentlichung](../../delivery/using/automating-via-workflows.md#examples)
 
-## Monitoring    {#monitoring}
+## Monitoring     {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
 * [Bericht-Versand an eine Liste](../../workflow/using/sending-a-report-to-a-list.md)
 * [Monitoring-Workflow](../../workflow/using/supervising-workflows.md)
 * [Benutzern personalisierte Warnungen senden](../../workflow/using/sending-personalized-alerts-to-operators.md)
-* [Einrichten eines Empfänger-Genehmigungsprozesses vor dem Senden eines Versands](../../workflow/using/using-the-local-approval-activity.md)
+* [Einrichten eines Empfängergenehmigungsverfahrens vor der Ausführung eines Versands](../../workflow/using/using-the-local-approval-activity.md)
 
 ## Data Management {#management}
 
@@ -72,4 +72,4 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Erstellung von Filtern](../../workflow/using/creating-a-filter.md)
 * [Duplizierte Empfänger filtern](../../workflow/using/filtering-duplicated-recipients.md)
 * [Instanzvariablen in Abfragen aufrufen](../../workflow/using/javascript-scripts-and-templates.md#calling-an-instance-variable-in-a-query)
-* [Anwenden eines aufgeteilten Prozentsatzes auf eine Population](../../workflow/using/javascript-scripts-and-templates.md#example)
+* [Anwenden eines Aufspaltungsprozentsatz auf eine Population](../../workflow/using/javascript-scripts-and-templates.md#example)
