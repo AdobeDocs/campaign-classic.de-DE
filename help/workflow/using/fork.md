@@ -12,21 +12,21 @@ discoiquuid: 16f50f5f-cbad-4de7-aa73-38615ae76ac0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7ed7e59be2cfbde467b0c80d21cfbf52016a2b8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '72'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # Verzweigung{#fork}
 
-Mit einer Gabel können Sie alle ausgehenden Aktivitäten parallel aktivieren.
+Mit einer Verzweigung können Sie alle ausgehenden Aktivitäten parallel aktivieren.
 
-Beispielsweise können Sie die Aktivität im Zusammenhang mit der Inhaltserstellung und der Automatisierung des Versands beim Senden verwenden, um die Zielgruppe und Inhaltserstellung gleichzeitig zu starten. A dedicated use case is available in [this section](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content).
+Beispielsweise können Sie die Aktivität im Rahmen der Automatisierung der Inhaltserstellung und des Versands verwenden, um die Zielgruppenberechnung und Inhaltserstellung gleichzeitig zu starten. Ein spezielles Anwendungsbeispiel ist in [diesem Abschnitt](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) verfügbar.
 
-Um die Aktivität zu konfigurieren, öffnen Sie sie und definieren Sie die Anzahl und die Beschriftung der gewünschten ausgehenden Transitionen.
+Um die Aktivität zu konfigurieren, öffnen Sie sie und definieren Sie die Anzahl und Beschriftung der gewünschten ausgehenden Transitionen.
 
 ![](assets/s_user_segmentation_fork.png)
