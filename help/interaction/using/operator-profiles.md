@@ -14,11 +14,11 @@ discoiquuid: 9a3f1dc9-71ef-4039-94b4-a217996f6a80
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 93%
 
 In Interaction werden zwei verschiedene Profile benötigt: ein angebotsverantwortlicher und ein versandverantwortlicher Benutzer. Die entsprechenden Benutzer haben jeweils nur auf bestimmte Bereiche des Navigationsbaums Zugriff.
 
-* **[!UICONTROL Angebotsverantwortlicher]**: erstellt und verwaltet Angebote;. Beachten Sie, dass sich der Operator, wenn Angebot im Workflow verwendet werden, in der **[!UICONTROL Administratorgruppe]** oder in der Gruppe der **[!UICONTROL Angebot-Manager]** befinden muss, um den Workflow auszuführen.
+* **[!UICONTROL Angebotsverantwortlicher]**: erstellt und verwaltet Angebote;. Beachten Sie, dass, wenn Angebote im Workflow verwendet werden, der Benutzer in der Benutzergruppe **[!UICONTROL Administrator]** oder **[!UICONTROL Angebotsverantwortliche Benutzer]** sein muss, um den Workflow auszuführen.
 * **[!UICONTROL Versandverantwortlicher]**: validiert und verwendet Angebote.
 
 Die Erstellung der Interaction-Benutzerprofile folgt der üblichen Vorgehensweise. Lesen Sie diesbezüglich [diesen Abschnitt](../../platform/using/access-management.md#creating-an-operator). Die spezifischen Berechtigungen werden im Verlauf der Benutzererstellung zugewiesen.
