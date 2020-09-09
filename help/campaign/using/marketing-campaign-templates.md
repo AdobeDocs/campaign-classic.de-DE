@@ -14,11 +14,11 @@ discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6c5e11f24537d2956ade49fe0f4a8ffebdbbabcf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1174'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Gehen Sie zur Erstellung einer neuen Vorlage wie folgt vor:
 
 Es besteht auch die Möglichkeit, die Standardvorlage zu duplizieren und die bestehende Konfiguration zu verwenden und anzupassen.
 
-Die unterschiedlichen Tabs und Unter-Tabs der Kampagnenvorlage ermöglichen den Zugriff auf die Einstellungen. Sie werden im Abschnitt ](#general-configuration)Allgemeine Konfiguration[ beschrieben.
+Die unterschiedlichen Tabs und Unter-Tabs der Kampagnenvorlage ermöglichen den Zugriff auf die Einstellungen. Sie werden im Abschnitt [Allgemeine Konfiguration](#general-configuration) beschrieben.
 
 ![](assets/s_ncs_user_new_op_template_duplicate.png)
 
@@ -75,7 +75,7 @@ In einer Standardkonfiguration befinden sich Kampagnenvorlagen im Knoten **[!UIC
 
 Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
-Die Erstellung und Konfiguration von Kampagnenvorlagen werden im Abschnitt ](#campaign-templates)Kampagnenvorlagen[ beschrieben.
+Die Erstellung und Konfiguration von Kampagnenvorlagen werden im Abschnitt [Kampagnenvorlagen](#campaign-templates) beschrieben.
 
 Weitere Informationen zur Erstellung von Kampagnen finden Sie in [diesem Video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
