@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 80de051cde62038c11246f8da08a7e00505a3313
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ AMP for Email ist mit vorhandenen E-Mails kompatibel. Die AMP-Version der Nachri
 
 Weitere Informationen zum AMP for Email-Format, Spezifikationen und Anforderungen finden Sie in der [AMP-Entwicklerdokumentation](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email).
 
-![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#amp-email-video)
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#amp-email-video).
 
 ## Wichtige Schritte bei der Verwendung von AMP for Email mit Adobe Campaign {#key-steps-to-use-amp}
 
@@ -159,7 +159,7 @@ Sie können auch die [Tipps und bekannten Einschränkungen für Gmail](https://d
 Da AMP for Email als Beta-Funktion verfügbar ist, können Sie derzeit testen, eine AMP-E-Mail in zwei Schritten zu senden:
 
 1. Mit Adobe Campaign können Sie den Versand einer dynamischen AMP-E-Mail an ausgewählte E-Mail-Adressen, die entsprechend konfiguriert wurden, testen, um deren Inhalt und Verhalten zu überprüfen. Siehe [Testen des AMP-E-Mail-Versands für ausgewählte Adressen](#testing-amp-delivery-for-selected-addresses).
-1. Nach dem Testen können Sie einen Versand oder eine Kampagne als Teil des AMP für E-Mail-Beta-Programms senden, indem Sie sich bei dem/den entsprechenden E-Mail-Anbieter(s) registrieren, damit Ihre Absenderdomäne zur Zulassungsliste hinzugefügt wird. Siehe [Senden von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter](#delivering-amp-emails-by-registering).
+1. Nach dem Test können Sie einen Versand oder eine Kampagne als Teil des AMP-Betaprogramms für E-Mail senden, indem Sie sich bei den entsprechenden E-Mail-Anbietern registrieren und Ihre Absender-Domain auf die Zulassungsliste setzen lassen. Siehe [Senden von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter](#delivering-amp-emails-by-registering).
 
 ### Testen des AMP-E-Mail-Versands für ausgewählte Adressen {#testing-amp-delivery-for-selected-addresses}
 
@@ -169,7 +169,7 @@ Sie können das Senden dynamischer Nachrichten von Adobe Campaign an ausgewählt
 >
 >Zurzeit unterstützen nur Gmail, Outlook und Mail.ru ein Testen des AMP-Formats.
 
-Bei Gmail und Outlook müssen Sie zuerst die Absenderadresse(n) hinzufügen, die Sie zur Zulassungsliste verwenden, um aus Adobe Campaign für die Gmail- und Outlook-Konten, die Sie als Ziel auswählen, zu übermitteln.
+Für Gmail und Outlook müssen Sie zunächst die Absenderadressen auf die Zulassungsliste setzen, die Sie verwenden, um einen Versand über Adobe Campaign an die gewünschten Gmail- und Outlook-Zielkonten durchzuführen.
 
 Gehen Sie dazu wie folgt vor:
 1. Stellen Sie sicher, dass die Option zum Aktivieren dynamischer E-Mail bei den entsprechenden E-Mail-Anbietern aktiviert ist.
@@ -183,7 +183,7 @@ Gehen Sie zum Testen des Versands einer AMP-E-Mail an eine Mail.ru-Adresse wie i
 
 ### Versand von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter {#delivering-amp-emails-by-registering}
 
-Sie können die Bereitstellung dynamischer E-Mails experimentieren, indem Sie sich bei den E-Mail-Anbietern registrieren, die am AMP Beta-Programm teilnehmen, um Ihre Absenderdomäne zur Zulassungsliste hinzufügen zu lassen.
+Sie können mit dem Versenden dynamischer E-Mails experimentieren, indem Sie sich bei jenen E-Mail-Anbietern registrieren, die am AMP-Betaprogramm teilnehmen, um Ihre Absender-Domain auf die Zulassungsliste setzen zu lassen.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ Wenn Sie beispielsweise eine Produktliste in Ihrer E-Mail eingefügt haben und d
 >
 >Standardmäßig ist die Option **[!UICONTROL AMP-Einbindung]** auf **[!UICONTROL Nein]** gesetzt.
 
-## So aktivieren und verwenden Sie AMP für E-Mails {#amp-email-video}
+## Aktivieren und Verwenden von AMP für E-Mails {#amp-email-video}
 
 Im folgenden Video wird erläutert, wie Sie AMP in Adobe Campaign Classic aktivieren und nutzen können.
 
