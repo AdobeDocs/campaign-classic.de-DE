@@ -12,11 +12,11 @@ discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2628'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Beachten Sie beim Importieren von Daten die Einschränkungen für SFTP-Datenspeicherung, Datenbank-Datenspeicherung und Aktives Profil gemäß Ihrem AdobeCampaign-Vertrag.
+>Beachten Sie beim Importieren von Daten die Einschränkungen für SFTP-Datenspeicherung, Datenbank-Datenspeicherung und aktive Profile gemäß Ihrem Adobe Campaign-Vertrag.
 
 ## Datenerfassung {#how-to-collect-data}
 
@@ -57,7 +57,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Eine sorgfältige Arbeitsweise und die Befolgung der unten stehenden einfachen Regeln helfen Ihnen, die Datenbank konsistent zu halten und gängige Fehler bei der Datenbankaktualisierung oder beim Datenexport zu vermeiden.
 
-### Importvorlagen verwenden      {#using-import-templates}
+### Importvorlagen verwenden       {#using-import-templates}
 
 Import-Workflows sollten die folgenden Aktivitäten beinhalten: **[!UICONTROL Laden (Datei)]**, **[!UICONTROL Anreicherung]**, **[!UICONTROL Aufspaltung]**, **[!UICONTROL Deduplizierung]**, **[!UICONTROL Daten-Update]**.
 
@@ -69,7 +69,7 @@ Verlassen Sie sich nicht darauf, dass die eingehenden Daten konsistent und korre
 
 Ein Beispiel für eine Importvorlage finden Sie im Abschnitt [Einrichten eines wiederkehrenden Imports](#setting-up-a-recurring-import).
 
-### Dateiformate mit einfach strukturierten Daten verwenden    {#using-flat-file-formats}
+### Dateiformate mit einfach strukturierten Daten verwenden     {#using-flat-file-formats}
 
 Das effizienteste Format für Importe sind flache Dateien, die im Bulk-Modus auf Datenbankebene importiert werden können.
 
@@ -118,7 +118,7 @@ Vollständige Importe sollten nur für das erstmalige Laden verwendet werden.
 
 Für den Datenimport wird empfohlen, anstelle von JavaScript das Data Management zu verwenden.
 
-### Konsistenz gewährleisten    {#maintaining-consistency}
+### Konsistenz gewährleisten     {#maintaining-consistency}
 
 Um die Konsistenz der Adobe-Campaign-Datenbank zu gewährleisten, befolgen Sie die unten stehenden Grundsätze:
 
@@ -131,7 +131,7 @@ Um die Konsistenz der Adobe-Campaign-Datenbank zu gewährleisten, befolgen Sie d
 
 * Achten Sie beim Datenimport auf die **Deduplizierung**, die Abstimmung und die Gewährleistung der Konsistenz.
 
-## Verwendungsfall: Einrichten eines wiederkehrenden Imports {#setting-up-a-recurring-import}
+## Anwendungsbeispiel: Einrichten eines wiederkehrenden Imports {#setting-up-a-recurring-import}
 
 Für den regelmäßigen Import von Dateien derselben Struktur empfiehlt sich die Verwendung einer Importvorlage.
 
