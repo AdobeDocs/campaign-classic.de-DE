@@ -12,11 +12,11 @@ discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 24d2dded38ddb922891a7264d9efea02cb448323
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '623'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Spammer führen programmierte Sendungen durch, um langfristig ihre Reputation zu
 
 ## Best Practices {#best-practices}
 
-Erfahren Sie, welche Best Practices für die Lieferbarkeit mit Adobe Campaign gelten. Verwenden Sie die unten stehenden Links, um durch Themen zu navigieren und Anleitungen zu erhalten.
+Lernen Sie Best Practices für die Zustellbarkeit mit Adobe Campaign kennen. Verwenden Sie die folgenden Links, um durch die Themen zu navigieren und Anleitungen zu finden.
 
 <table>
 <tr>
@@ -134,11 +134,11 @@ Erfahren Sie, welche Best Practices für die Lieferbarkeit mit Adobe Campaign ge
   </td>
    <td>
     <a href="monitoring-deliverability.md">
-      <img alt="Häkchen" src="assets/do-not-localize/monitor.svg" width="60px"/>
+      <img alt="Prüfen" src="assets/do-not-localize/monitor.svg" width="60px"/>
     </a>
     <div>
       <a href="monitoring-deliverability.md">
-    <strong>Monitor</strong>
+    <strong>Überwachen</strong>
     </a>
     </div>
     <p>
@@ -151,11 +151,11 @@ Erfahren Sie, welche Best Practices für die Lieferbarkeit mit Adobe Campaign ge
     </a>
     <div>
       <a href="deliverability-faq.md">
-    <strong>Fehlerbehebung</strong>
+    <strong>Beheben von Fehlern</strong>
     </a>
     </div>
     <p>
-    <em>Probleme lösen</em>
+    <em>Lösen von Problemen</em>
     <p>
   </td>
 </tr>
