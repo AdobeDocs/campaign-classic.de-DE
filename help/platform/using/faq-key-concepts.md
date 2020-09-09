@@ -13,9 +13,9 @@ discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
 ht-degree: 100%
 
@@ -87,7 +87,7 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 ## Wie erstelle und sende ich die erste E-Mail? {#how-to-create-and-send-a-first-email-}
 
-[Hier erfahren Sie mehr dazu](../../delivery/using/about-email-channel.md). Sie können sich auch [dieses Video ansehen](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html), um zu erfahren, wie Sie in einer Kampagne eine E-Mail erstellen.
+[Hier erfahren Sie mehr dazu](../../delivery/using/about-email-channel.md). Sie können sich auch [dieses Video ansehen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html), um zu erfahren, wie Sie in einer Kampagne eine E-Mail erstellen.
 
 ## Wie kann ich SMS-Nachrichten senden? {#how-to-send-sms-messages-}
 
