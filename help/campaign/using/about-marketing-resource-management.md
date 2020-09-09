@@ -14,11 +14,11 @@ discoiquuid: 6101e083-3754-41e1-8a93-021b1a771dc0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 63f07746d39fff22a98b3cd4ab7f2294da778ab3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '406'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Im Kontext von Adobe Campaign kommt folgenden Konzepten eine entscheidende Rolle
 >
 >Die grundsätzliche Struktur des Adobe-Campaign-Arbeitsbereichs wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md) beschrieben.
 >  
->All functionalities linked to deliveries and communication channels are detailed in [this section](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Mit Sendungen sowie Kommunikationskanälen verbundene Funktionen werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) erläutert.
 >
 >Alle kampagnenbezogenen Funktionen werden im Abschnitt [Auf Marketing-Kampagnen zugreifen](../../campaign/using/accessing-marketing-campaigns.md) ausführlich beschrieben.
 
