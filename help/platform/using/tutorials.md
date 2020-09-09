@@ -14,11 +14,11 @@ discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ea248639e9730c6bdd1090098866a094b80daebb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '560'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ ht-degree: 97%
 
 Unsere intuitiven Handbücher bieten Ihnen einen einfachen Einstieg in Adobe Campaign.
 
-* [Bearbeiten von E-Mail-Inhalt mit Adobe Experience Manager](https://helpx.adobe.com/campaign/kb/acc-aem.html): Machen Sie Sie sich mit den Grundlagen zur Integration zwischen Adobe Campaign und Experience Manager vertraut.
+* [Bearbeiten von E-Mail-Inhalt mit Adobe Experience Manager](https://helpx.adobe.com/de/campaign/kb/acc-aem.html): Machen Sie Sie sich mit den Grundlagen zur Integration zwischen Adobe Campaign und Experience Manager vertraut.
 * [Datenschutzverwaltung](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html): Hier erfahren Sie, wie Ihnen Adobe Campaign Classic hilft, die Datenschutzbestimmungen bei der Nutzung unseres Dienstes gesetzeskonform umzusetzen.
-* [Integrieren dynamischer Inhalte in einer E-Mail](https://docs.adobe.com/content/help/en/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
+* [Integrieren dynamischer Inhalte in einer E-Mail](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
 * [Verwalten der Zustellbarkeit](../../delivery/using/deliverability-key-points.md): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
 * [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md): Hier erfahren Sie über Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign Classic.
 * [Build-Aktualisierung durchführen](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html): In diesem Dokument erfahren Sie die wichtigsten Schritte und Best Practices zur Durchführung einer Build-Aktualisierung bei Campaign Classic.
@@ -49,14 +49,14 @@ Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungs
 
 In unseren Anleitungsvideos werden die Hauptfunktionen von Adobe Campaign erklärt.
 
-* [Erstellen einer Zielgruppe](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): Hier erfahren Sie, wie Sie in Adobe Campaign eine Zielgruppe erstellen.
-* [Erstellen von Kampagnen und E-Mails](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-campaign-and-an-email.html): Hier erfahren Sie, wie Sie in Adobe Campaign eine E-Mail für eine Kampagne erstellen.
-* [Erstellen einer Empfängerliste](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html): Erstellen Sie mithilfe eines Workflows eine Empfängerliste in Adobe Campaign.
-* [Erstellen eines Zielgruppen-Workflows](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-targeting-workflow.html): Erstellen Sie einen Workflow für den Geburtstag der Zielempfänger.
-* [Erstellen eines Workflows in einer Kampagne](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-workflow.html): Hier erfahren Sie, wie Sie einen Workflow in einer Kampagne erstellen.
-* [Importieren von Profilen](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html): Hier erfahren Sie, wie Sie in Adobe Campaign Profile aus einer Datei importieren.
+* [Erstellen einer Zielgruppe](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): Hier erfahren Sie, wie Sie in Adobe Campaign eine Zielgruppe erstellen.
+* [Erstellen von Kampagnen und E-Mails](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html): Hier erfahren Sie, wie Sie in Adobe Campaign eine E-Mail für eine Kampagne erstellen.
+* [Erstellen einer Empfängerliste](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): Erstellen Sie mithilfe eines Workflows eine Empfängerliste in Adobe Campaign.
+* [Erstellen eines Zielgruppen-Workflows](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-targeting-workflow.html): Erstellen Sie einen Workflow für den Geburtstag der Zielempfänger.
+* [Erstellen eines Workflows in einer Kampagne](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-workflow.html): Hier erfahren Sie, wie Sie einen Workflow in einer Kampagne erstellen.
+* [Importieren von Profilen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/importing-profiles.html): Hier erfahren Sie, wie Sie in Adobe Campaign Profile aus einer Datei importieren.
 * [Übersicht über die Benutzeroberfläche](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html): Hier erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Campaign navigieren.
-* [Verwalten von Testadressen und ‑sendungen in einer E-Mail](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html): Hier erfahren Sie, wie Sie in Adobe Campaign Testadressen und ‑sendungen zu einer vorhandenen E-Mail hinzufügen.
-* [Integration von Adobe Campaign mit Microsoft Dynamics 365](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/integrating/dynamics365-integration.html): Hier erfahren Sie, wie Sie Adobe Campaign mit Microsoft Dynamics über CRM-Connectoren verbinden und synchronisieren.
+* [Verwalten von Testadressen und ‑sendungen in einer E-Mail](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html): Hier erfahren Sie, wie Sie in Adobe Campaign Testadressen und ‑sendungen zu einer vorhandenen E-Mail hinzufügen.
+* [Integration von Adobe Campaign mit Microsoft Dynamics 365](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/integrating/dynamics365-integration.html): Hier erfahren Sie, wie Sie Adobe Campaign mit Microsoft Dynamics über CRM-Connectoren verbinden und synchronisieren.
 
 Neben diesen Videos finden Sie auf unserer Webseite auch [Schulungskurse](https://learning.adobe.com/catalog.html) und [Präsentationsvideos](https://www.adobe.com/training/video.html).
