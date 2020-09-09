@@ -18,7 +18,7 @@ translation-type: tm+mt
 source-git-commit: 3566f42b92cc1b7280bf9b6e9e0b4da7a54f61db
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -56,14 +56,14 @@ Die Transition des Komplements weist die gleichen Parameter auf.
 
 ## Einrichten eines Versands (fortlaufend)
 
-In diesem Abschnitt wird beschrieben, wie Sie einen kontinuierlichen Versand einrichten.
+In diesem Abschnitt wird beschrieben, wie Sie einen Versand (fortlaufend) einrichten.
 
-The **continuous delivery** lets you add new recipients to an existing delivery and avoids you having to create a new delivery each time a new recipient is added. Sie können die Kreativelemente direkt im Arbeitsablauf für Kampagnen aktualisieren und die Vorlage im Ordner &quot;Versandvorlage-Ressourcen&quot;aktualisieren.
+Beim **fortlaufenden Versand** können Sie einem bestehenden Versand neue Empfänger hinzufügen, sodass Sie nicht jedes Mal einen neuen Versand erstellen müssen, wenn ein neuer Empfänger hinzugefügt wird. Sie können die kreativen Inhalte direkt im Kampagnen-Workflow aktualisieren, wodurch die Vorlage im Ressourcen-Ordner für Versandvorlagen aktualisiert wird.
 
-Ein kontinuierlicher Versand erstellt einen SINGLE-Versand und Versandlogs (wideLog) und Trackinglogs, die auf diesen einen Versand verweisen, werden bei jeder Ausführung hinzugefügt.
+Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog) und Trackinglogs, die auf diesen Versand verweisen, werden bei jeder Ausführung hinzugefügt.
 
-![Kontinuierlicher Versand](assets/delivery_continuous.jpg)
+![Versand (fortlaufend)](assets/delivery_continuous.jpg)
 
-In diesem Video wird gezeigt, wie ein kontinuierlicher Versand mit inkrementeller Abfrage konfiguriert wird.
+In diesem Video wird gezeigt, wie man einen fortlaufenden Versand mit einer inkrementellen Abfrage konfiguriert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
