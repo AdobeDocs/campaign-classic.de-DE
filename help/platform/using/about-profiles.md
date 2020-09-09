@@ -14,22 +14,22 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '945'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Über Profile{#about-profiles}
 
-Profil (Kunden, Potenzieller Kunde, Newsletter-Abonnenten usw.) werden in der Adobe Campaign-Datenbank zusammengefasst. Es gibt viele Möglichkeiten, Profile zu erwerben und diese Datenbank aufzubauen: Online-Erfassung über Web-Formulare, manueller oder automatischer Import von Textdateien, Replikation mit Firma-Datenbanken oder anderen Informationssystemen. Mit Adobe Campaign können Sie Marketingverlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PI-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
+Alle Profile (Kunden, Interessenten, Newsletter-Abonnenten usw.) werden in der Adobe Campaign-Datenbank zentral gespeichert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen geschehen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PI-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
 
 In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS etc.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie das Ziel filtern, das eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
 
-![](assets/do-not-localize/how-to-video.png) [Verstehen Sie das Konzept der Profile in Videos](#create-profiles-video)
+![](assets/do-not-localize/how-to-video.png) [Informationen zum Profilkonzept finden Sie in diesem Video](#create-profiles-video)
 
 ## Profiltypen {#profile-types}
 
@@ -107,26 +107,26 @@ Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typolog
 >
 >Die Kanäle Facebook und Twitter werden nicht berücksichtigt.
 
-You can have an overview of the **[!UICONTROL Number of active profiles]** from Campaign Standard **[!UICONTROL Administration > Campaign Management > Customer metrics]** menu. Die tatsächliche Zählung erfolgt über den [technischen Workflow](../../workflow/using/deliveries.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** (**[!UICONTROL billingActiveContactCount]**), der täglich ausgeführt wird. Dabei werden die neuen Daten für den aktuellen Zeitraum im Menü **[!UICONTROL Kundenmetriken]** zum vorhandenen Bericht hinzugefügt. Jeder Zeitraum hat eine Dauer von 12 Monaten.
+Eine Übersicht über die **[!UICONTROL Anzahl der aktiven Profile]** erhalten Sie über das Menü **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]** in Campaign Standard. Die tatsächliche Zählung erfolgt über den [technischen Workflow](../../workflow/using/deliveries.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** (**[!UICONTROL billingActiveContactCount]**), der täglich ausgeführt wird. Dabei werden die neuen Daten für den aktuellen Zeitraum im Menü **[!UICONTROL Kundenmetriken]** zum vorhandenen Bericht hinzugefügt. Jeder Zeitraum hat eine Dauer von 12 Monaten.
 
-Wenn Sie auf AWS gehostet werden und Campaign Classic aus Build 8931 verwenden, können Sie auch die Anzahl der aktiven Profil, die auf Ihren Instanzen verwendet werden, direkt über die Systemsteuerung überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+Wenn Sie auf AWS gehostet werden und Campaign Classic aus Build 8931 verwenden, können Sie die Anzahl der in Ihren Instanzen verwendeten aktiven Profile auch direkt im Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 
 ## Erstellen und Verwalten von Profilen {#create-profiles-video}
 
-Erfahren Sie, wie Sie auf Profil-Daten zugreifen, Profil sortieren und filtern und Profil manuell erstellen und verwalten können.
+Erfahren Sie, wie Sie auf Profildaten zugreifen, Profile sortieren und filtern und Profile manuell erstellen und verwalten können.
 
-In diesem Video wird auch die Einhaltung der allgemeinen Datenschutzvorschriften durch Adobe Campaign Classic erläutert.
+In diesem Video wird auch die Einhaltung der Datenschutz-Grundverordnung durch Adobe Campaign Classic erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12&captions=ger)
 
 **Siehe auch**
 
-* [Datenschutzmanagement in der Kampagne](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html)
+* [Datenschutzverwaltung in Campaign](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html)
 
-* [Definieren der Population der Zielgruppe](../../delivery/using/define-the-right-audience.md)
+* [Bestimmen der Zielpopulation](../../delivery/using/define-the-right-audience.md)
 
 * [Erstellen von Abfragen und Segmentdaten in Workflows](../../workflow/using/targeting-data.md)
 
-* [Zielgruppen-Mapping auswählen](../../delivery/using/selecting-a-target-mapping.md)
+* [Auswählen von Zielgruppen-Mapping](../../delivery/using/selecting-a-target-mapping.md)
 
-* [Definieren der Audience - Best Practices](../../delivery/using/define-the-right-audience.md)
+* [Bestimmen der Zielgruppe – Best Practices](../../delivery/using/define-the-right-audience.md)
