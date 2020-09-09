@@ -14,11 +14,11 @@ discoiquuid: e68d1435-70e6-479e-a347-9ff9f9f11b92
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 
 Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Mirror-Seiten-Link. Siehe [Gestaltungsbausteine einfügen](#inserting-personalization-blocks).
 
-![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#personalization-blocks-video)
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
 
 Auf Gestaltungsbausteine kann im Adobe Campaign-Explorer über den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Gestaltungsbausteine]** zugegriffen werden. Standardmäßig sind verschiedene Bausteine verfügbar (siehe [Native Gestaltungsbausteine](#out-of-the-box-personalization-blocks)).
 
@@ -113,7 +113,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
    >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Mirrorseiten-Link]**: Hiermit wird der Link zur Mirrorseite &quot;Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken&quot; eingefügt.
-* **[!UICONTROL Link]** zur Abmeldung: fügt einen Link ein, der das Abmelden aller Versand ermöglicht (Blockierungsliste).
+* **[!UICONTROL Abmelde-Link]**: Hiermit wird ein Link zur Abmeldung von allen Nachrichten (Blockierungsliste) eingefügt.
 * **[!UICONTROL Formatierungsfunktion für Eigennamen]**: Hiermit wird die JavaScript-Funktion **[!UICONTROL toSmartCase]** erstellt, mit der der erste Buchstabe eines jeden Worts in einen Großbuchstaben umgewandelt wird. Dieser Baustein muss in den Quell-Code des Versands in **`<script>...</script>`**-Tags eingefügt werden.
 
    Im unten stehenden Beispiel wird mithilfe dieser Funktion das Element „Mein Header“ durch „Mein neuer Header“ mit Großbuchstaben für jedes Wort ersetzt:
@@ -162,8 +162,8 @@ Gehen Sie wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
    * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
-## So personalisieren Sie E-Mails mit dynamischen Inhaltsblöcken {#personalization-blocks-video}
+## Personalisieren von E-Mails mit dynamischen Inhaltsbausteinen {#personalization-blocks-video}
 
-Erfahren Sie, wie dynamische Inhaltsblöcke erstellt wurden und wie Sie sie verwenden, um den Inhalt Ihres E-Mail-Versands zu personalisieren.
+Erfahren Sie, wie Sie dynamische Inhaltsblöcke erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12&captions=ger)
