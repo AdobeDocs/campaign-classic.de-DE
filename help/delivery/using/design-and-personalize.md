@@ -1,6 +1,6 @@
 ---
-title: Personalisierte Inhalte erstellen
-seo-title: Build personalized content
+title: Erstellen personalisierter Inhalte
+seo-title: Erstellen personalisierter Inhalte
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
@@ -12,29 +12,29 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c804745ae58a9bded885ac5aef32f019f43e82be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1280'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 
-# Build personalized content {#build-personalized-content}
+# Erstellen personalisierter Inhalte {#build-personalized-content}
 
-When designing your message content, try to avoid common issues that could prevent you from executing your delivery. Most of the time, possible errors are related to [personalization](../../delivery/using/about-personalization.md), [formatting](../../delivery/using/defining-the-email-content.md#message-content) and [images](../../delivery/using/defining-the-email-content.md#adding-images).
+Versuchen Sie beim Entwerfen Ihres Nachrichteninhalts gängige Probleme zu vermeiden, die den Versand verhindern könnten. Meist betreffen Fehler die [Personalisierung](../../delivery/using/about-personalization.md), die [Formatierung](../../delivery/using/defining-the-email-content.md#message-content) und [Bilder](../../delivery/using/defining-the-email-content.md#adding-images).
 
-## Optimize personalization {#optimize-personalization}
+## Optimieren der Personalisierung {#optimize-personalization}
 
-To avoid common issues that could prevent you from executing your delivery and to improve your recipients&#39; experience, Adobe Campaign enables you to personalize your messages.
+Um allgemeine Probleme bei der Zustellung Ihrer Nachrichten zu verhindern und das Benutzererlebnis zu verbessern, können Sie Ihre Nachrichten in Adobe Campaign personalisieren.
 
-Sie können Empfänger-Daten verwenden, die in der Adobe Campaign-Datenbank gespeichert oder über Tracking, Landingpages, Abonnement usw. erfasst werden.
-Personalization basics are presented in [this section](../../delivery/using/personalization-fields.md).
+Sie können die Empfängerdaten verwenden, die in der Adobe-Campaign-Datenbank gespeichert sind oder mithilfe von Tracking, Landingpages, Abonnements etc. erfasst wurden.
+Die Grundlagen der Personalisierung werden in [diesem Abschnitt](../../delivery/using/personalization-fields.md) dargestellt.
 
 Stellen Sie sicher, dass Ihr Nachrichteninhalt korrekt aufgebaut ist, um oft mit der Personalisierung in Verbindung stehende Probleme zu verhindern.
 
-**Tips**: In personalization fields coming from external files provided by third-party vendors, external HTML content can be wrong. To avoid this, check syntax, use of tags, characters, etc. For example, an Adobe Campaign personalization tag always has the following form: &lt;%=table.field%>. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-personalization.md).
+**Tipps**: Der externe HTML-Inhalt, der in Personalisierungsfeldern bereitgestellt wird und von externen Dateien von Drittanbietern stammt, kann falsch sein. Um das zu vermeiden, prüfen Sie die Syntax, die Verwendung von Tags, Zeichen usw. Ein Adobe-Campaign-Personalisierungs-Tag sieht stets wie folgt aus: &lt;%=table.field%>. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-personalization.md).
 
 Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme verursachen. Variablen in JavaScript sollten beispielsweise folgendermaßen verwendet werden:
 
@@ -44,66 +44,66 @@ Die falsche Verwendung von Parametern in Gestaltungsbausteinen kann Probleme ver
     
     %>
 
-For more on personalization blocks, refer to the [this section](../../delivery/using/personalization-blocks.md).
+Weitere Informationen zu Gestaltungsbausteinen finden Sie in [diesem Abschnitt](../../delivery/using/personalization-blocks.md).
 
-You can prepare personalization data in a workflow to improve delivery preparation analysis. This should be used specially if the personalization data come from an external table through Federated Data Access (FDA). This option is described in this [this section](../../delivery/using/personalization-fields.md#optimizing-personalization)
+Sie können die Personalisierungsdaten in einem Workflow vorbereiten, um die Analyse der Versandvorbereitung zu verbessern. Dies sollte insbesondere dann verwendet werden, wenn die Personalisierungsdaten über Federated Data Access (FDA) aus einer externen Tabelle stammen. Diese Option wird in diesem [Abschnitt beschrieben](../../delivery/using/personalization-fields.md#optimizing-personalization).
 
-## Build optimized content {#optimize-content}
+## Erstellen optimierter Inhalte {#optimize-content}
 
 Beachten Sie beim Erstellen Ihrer E-Mails die folgenden allgemeinen Best Practices.
 
-* Halten Sie das Design einfach
+* Halten Sie das Design einfach.
 
-* Denken Sie an Benutzer mit Mobilgeräten
+* Denken Sie an Benutzer mit Smartphones und Tablets.
 
-* Vermeiden Sie vollständig bildbasierte E-Mails
+* Vermeiden Sie vollständig bildbasierte E-Mails.
 
-* Verwenden Sie E-Mail-sichere Schriftarten
+* Verwenden Sie E-Mail-sichere Schriftarten.
 
-* Kodieren Sie Sonderzeichen
+* Kodieren Sie Sonderzeichen.
 
 ### Betreff
 
-Work on the [subject line](../../delivery/using/defining-the-email-content.md#message-content) to improve open rates:
+Achten Sie besonders auf den [Betreff](../../delivery/using/defining-the-email-content.md#message-content), um die Öffnungsraten zu verbessern:
 
-* Vermeiden Sie einen zu langen Betreff. Verwenden Sie maximal 50 Zeichen
+* Vermeiden Sie einen zu langen Betreff. Verwenden Sie maximal 50 Zeichen.
 
-* Vermeiden Sie die wiederholte Verwendung von Wörtern wie „gratis“ oder „Angebot“, die als Spam angesehen werden könnten
+* Vermeiden Sie die wiederholte Verwendung von Wörtern wie „gratis“ oder „Angebot“, die als Spam angesehen werden könnten.
 
-* Vermeiden Sie Großbuchstaben und Sonderzeichen wie &quot;!&quot;, &quot;£&quot;, &quot;€&quot;, &quot;$&quot;
+* Vermeiden Sie Großbuchstaben und Sonderzeichen wie „!“, „£“, „€“ oder „$“.
 
 ### Mirrorseite
 
-Schließen Sie immer einen Link zur Mirrorseite ein. Die bevorzugte Position ist der Anfang der E-Mail. [Mehr dazu](../../delivery/using/sending-messages.md#generating-the-mirror-page)
+Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist am Anfang der E-Mail – [mehr dazu](../../delivery/using/sending-messages.md#generating-the-mirror-page)
 
 ### Abmelde-Link
 
-The unsubscription link is essential. It must be visible and valid, and the form must be functional. By default, when the message is analyzed, a [typology rule](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) checks whether an opt-out link has been included and generates a warning if it is missing.
+Ein Abmelde-Link muss unbedingt vorhanden sein. Er muss gut sichtbar und gültig sein, und das Formular muss funktionieren. Bei der Analyse einer Nachricht wird standardmäßig von einer [Typologieregel](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) überprüft, ob ein Abmelde-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt.
 
-**Tipp**: Da menschliches Versagen immer möglich ist, überprüfen Sie vor jedem Senden, ob der Ausschluss-Link korrekt funktioniert. Achten Sie beispielsweise beim Senden des Testversands darauf, dass der Link gültig ist, dass das Formular online ist und dass das Feld Diesen Empfänger nicht mehr kontaktieren in Ja geändert wird.
+**Tipp**: Da menschliche Fehler immer möglich sind, prüfen Sie vor jedem Versand, ob der Abmelde-Link ordnungsgemäß funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass sich das Feld „Diese Person nicht mehr kontaktieren“ auf „Ja“ ändert.
 
-Hier erfahren Sie, wie Sie einen Ausschluss-Link [in diesen Abschnitt](../../delivery/using/personalization-blocks.md#personalization-blocks-example)einfügen.
+[In diesem Abschnitt](../../delivery/using/personalization-blocks.md#personalization-blocks-example) erfahren Sie, wie man einen Ausschluss-Link einfügt.
 
 ### Größe der E-Mail
 
-To avoid performance or deliverability issues, the recommended maximum size of an email is about **35KB**. To check the message size, go the **[!UICONTROL Preview]** tab and choose a test profile. Nach der Erstellung der Nachricht wird deren Größe in der Ecke rechts oben dargestellt.
+Um Leistungs- oder Zustellbarkeitsprobleme zu vermeiden, wird eine E-Mail mit einer maximalen Größe von **35 KB** empfohlen. Um die Nachrichtengröße zu überprüfen, wählen Sie auf der Registerkarte **[!UICONTROL Vorschau]** ein Testprofil aus. Nach der Erstellung der Nachricht wird deren Größe in der Ecke rechts oben dargestellt.
 
 Um Ihre E-Mail unter dem Grenzwert zu halten, beachten Sie Folgendes:
 
-* Entfernen redundanter oder nicht verwendeter Stile
+* Entfernen Sie redundante oder nicht verwendete Stile.
 
-* Verschieben eines Teils des E-Mail-Inhalts in eine Landingpage
+* Verschieben Sie einen Teil des E-Mail-Inhalts auf eine Landingpage.
 
-* Code minimieren
+* Minimieren Sie den Code.
 
-Testen Sie alle Änderungen vor dem endgültigen Senden
+Testen Sie alle Änderungen vor dem endgültigen Senden.
 
 ### Länge der SMS
 
 Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM (Global System for Mobile Communications) zur Anwendung. SMS, die das GSM-Alphabet verwenden, sind auf 160 Zeichen begrenzt oder auf 153 Zeichen pro SMS bei Nachrichten, die in mehreren Teilen gesendet werden.
 
 Transliteration bezeichnet in einer SMS die Ersetzung eines Zeichens durch ein anderes, wenn das ursprüngliche Zeichen nicht von GSM unterstützt wird. Die Verwendung von Personalisierungsfeldern im SMS-Inhalt führt u. U. dazu, dass nicht von GSM unterstützte Zeichen eingefügt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie die entsprechende Option im Tab mit den Parametern des SMPP-Kanals des entsprechenden **[!UICONTROL externen Kontos]** aktivieren.
-Learn more [in this section](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
 
 **Tipps**:
 
@@ -111,35 +111,35 @@ Learn more [in this section](../../delivery/using/sms-channel.md#creating-an-smp
 
 * Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um Ihre Versandkosten zu begrenzen.
 
-Learn more [in this section](../../delivery/using/sms-channel.md#about-character-transliteration).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/sms-channel.md#about-character-transliteration).
 
 ## Überprüfen der Formatierung {#formatting}
 
 Um häufige Formatierungsfehler zu vermeiden, prüfen Sie folgende Elemente:
 
-* Richtige **Datumsformatierung**: Adobe Campaign bietet Funktionen zur Datumsformatierung für die JavaScript-Vorlagen und XSL-Stylesheets. [Mehr dazu](../../delivery/using/formatting.md#date-display)
+* Richtige **Datumsformatierung**: Adobe Campaign bietet Formatierungsfunktionen für Datumsangaben in JavaScript-Vorlagen und XSL-Stylesheets – [mehr dazu](../../delivery/using/formatting.md#date-display)
 
-* Verwendung **autorisierter Zeichen** in E-Mails: Die Liste der gültigen Zeichen für E-Mail-Adressen wird in der Option &quot;XtkEmail_Characters&quot;definiert. Hier erfahren Sie, wie Sie auf die Optionen [in der Kampagne zugreifen können](../../installation/using/configuring-campaign-options.md). Um Sonderzeichen korrekt handhaben zu können, muss Adobe Campaign in Unicode installiert sein.
+* Verwendung **autorisierter Zeichen** in E-Mails: Eine Liste gültiger Zeichen für E-Mail-Adressen finden Sie in der Option „XtkEmail_Characters“. Informationen zum Zugriff auf Campaign-Optionen finden Sie [in diesem Abschnitt](../../installation/using/configuring-campaign-options.md). Um Sonderzeichen richtig zu handhaben, muss Adobe Campaign in Unicode installiert sein.
 
-* Konfiguration der **E-Mail-Authentifizierung**: Stellen Sie sicher, dass die E-Mail-Kopfzeilen die DKIM-Signatur enthalten. Mit der DKIM-Authentifizierung (Domain Keys Identified Mail) kann der Empfänger-E-Mail-Server überprüfen, ob eine Nachricht tatsächlich von der Person oder Organisation gesendet wurde, von der er behauptet, sie wurde gesendet, und ob der Inhalt der Nachricht zwischen dem Zeitpunkt des ursprünglichen Versands (und dem &quot;Signieren&quot; von DKIM) und dem Zeitpunkt des Eingangs geändert wurde. Dieser Standard verwendet in der Regel die Domäne im Header &quot;Von&quot;oder &quot;Absender&quot;. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/technical-recommendations.md#dkim).
+* Konfiguration der **E-Mail-Authentifizierung**: Achten Sie darauf, dass die E-Mail-Header die DKIM-Signatur enthalten. Durch Authentifizierung per DKIM (Domain Keys Identified Mail) kann der E-Mail-Empfangsserver überprüfen, ob eine Nachricht tatsächlich von der angegebenen Person oder der angegebenen Entität gesendet wurde. Ferner kann festgestellt werden, ob der Nachrichteninhalt zwischen dem Versandzeitpunkt („signiert“ mit DKIM) und dem Empfangszeitpunkt verändert wurde. Bei diesem Standard wird in der Regel die Domain im „Von“- oder „Absender“-Header angegeben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/technical-recommendations.md#dkim).
 
-### Responsive E-Mail-Design
+### Responsives E-Mail-Design
 
-Responsives E-Mail-Design stellt sicher, dass eine auf jedem Gerät optimal angezeigt wird.
+Responsives E-Mail-Design stellt sicher, dass eine E-Mail auf jedem Gerät optimal angezeigt wird.
 
-* Verwenden Sie responsive E-Mail-HTML anstelle von Web-HTML
+* Verwenden Sie responsive E-Mail-HTML anstelle von Web-HTML.
 
-* Verwenden Sie den Vorschaumodus und Testsendungen, um das Rendering auf möglichst vielen Geräten zu testen
+* Verwenden Sie den Vorschaumodus und Testsendungen, um das Rendering auf möglichst vielen Geräten zu testen.
 
-* The Adobe Campaign Classic Digital Content Editor (DCE) module includes some responsive design formatted templates for mobile available via **[!UICONTROL Resources]** > **[!UICONTROL Templates]** > **[!UICONTROL Content templates]**. Weitere Informationen [in diesem Artikel](https://theblog.adobe.com/responsive-email-design-101/)
+* Das DCE-Modul (Digital Content Editor) von Adobe Campaign enthält einige im responsiven Design formatierte Vorlagen. Gehen Sie dazu zu **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Inhaltsvorlagen]**. Weiterführende Informationen finden Sie [in diesem Artikel](https://theblog.adobe.com/responsive-email-design-101/).
 
 ## Verwalten von Bildern {#manage-images}
 
 Befolgen Sie bei der Verwendung von Bildern die unten stehenden Richtlinien.
 
-### Blockieren von Bildern verhindern
+### Verhindern der Bildblockierung
 
-Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können aber auch vom Benutzer so konfiguriert werden, dass Bilder blockiert werden, um den Datenverbrauch zu reduzieren. Wenn also keine Bilder heruntergeladen werden, kann die gesamte Nachricht verloren gehen. Um dies zu vermeiden:
+Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können aber auch vom Benutzer so konfiguriert werden, dass Bilder blockiert werden, um den Datenverbrauch zu reduzieren. Wenn keine Bilder heruntergeladen werden, kann die gesamte Nachricht verloren gehen. Um dies zu vermeiden:
 
 * Achten Sie auf eine ausgewogene Mischung aus Bild und Text. Vermeiden Sie vollständig bildbasierte E-Mails.
 
@@ -147,24 +147,24 @@ Manche E-Mail-Clients blockieren Bilder standardmäßig. Einstellungen können a
 
 * Vermeiden Sie eine Verwendung von Hintergrundbildern, da diese von einigen E-Mail-Clients nicht unterstützt werden.
 
-### Bilder reaktionsfähig machen
+### Verwenden responsiver Bilder
 
 Verwenden Sie responsive, in der Größe veränderbare Bilder. Beachten Sie, dass sich dies auf die Kosten auswirken kann, da die Erstellung länger dauert.
 
-### Absolute Bildreferenzen verwenden
+### Verwenden absoluter Bildreferenzen
 
-Um von außen darauf zugreifen zu können, müssen die in E-Mails verwendeten Bilder und öffentliche Ressourcen, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server vorhanden sein.
+Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und öffentlichen Ressourcen verwendeten Bilder, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server gespeichert sein.
 
-* Sie können prüfen, ob die Instanzkonfiguration die öffentliche Ressource-Verwaltung aktiviert. [Mehr dazu](../../installation/using/deploying-an-instance.md#managing-public-resources)
+* Sie können überprüfen, ob durch die Instanzenkonfiguration die Verwaltung öffentlicher Ressourcen ermöglicht wird – [mehr dazu](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* From the delivery wizard, you can import an HTML page containing images or insert images directly using the HTML editor via the **[!UICONTROL Image]** icon. [Mehr dazu](../../delivery/using/defining-the-email-content.md#adding-images)
+* Sie können eine HTML-Seite mit Bildern über den Versand-Assistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen – [mehr dazu](../../delivery/using/defining-the-email-content.md#adding-images)
 
-* Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie dazu in Ihrem Versand auf den Tab Quelle. Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Web-Browser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihren IT-Administrator oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
+* Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie dazu in Ihrem Versand auf den Tab „Quelle“. Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Web-Browser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihren IT-Administrator oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
 
-## Sehen Sie sich Ihre Nachricht in der Vorschau an {#preview-msg}
+## Ansehen der Nachricht in der Vorschau {#preview-msg}
 
-Adobe empfiehlt, eine Vorschau Ihrer Nachricht anzuzeigen, um deren Personalisierung und die Anzeige Ihres Versands durch Ihre Empfänger zu überprüfen.
+Adobe empfiehlt eine Vorschau Ihrer Nachricht, um die Personalisierung zu überprüfen und festzustellen, wie Ihre Empfänger den Versand sehen werden.
 
-* Im Versand-Wazard können Sie auf der Unterregisterkarte &quot; **[!UICONTROL Vorschau]** &quot;die Wiedergabe der einzelnen Inhalte für einen Empfänger Ansicht haben. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt. [Mehr dazu](../../delivery/using/defining-the-email-content.md#message-content)
+* Im Versand-Assistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** die Wiedergabe der einzelnen Inhalte für einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt – [mehr dazu](../../delivery/using/defining-the-email-content.md#message-content)
 
-* Die Vorschauerzeugung löst automatisch die Durchführung einer Anti-Spam-Prüfung aus. Überprüfen Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** den Spam- [Assassin](../../delivery/using/spamassassin.md) -Scoring.  Klicken Sie auf **[!UICONTROL Mehr...]** um mehr über die Warnung zu erfahren.  Vergewissern Sie sich zuvor, dass SpamAssassin auf dem Adobe Campaign-Anwendungsserver korrekt installiert und konfiguriert ist. [Mehr dazu](../../installation/using/configuring-spamassassin.md)
+* Die Vorschauerzeugung löst automatisch die Durchführung einer Anti-Spam-Prüfung aus. Überprüfen Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** die Spam-Bewertung von [SpamAssassin](../../delivery/using/spamassassin.md). Klicken Sie auf **[!UICONTROL Details...]**, um mehr über die Warnung zu erfahren. Stellen Sie zuvor sicher, dass SpamAssassin auf dem Adobe Campaign-Anwendungs-Server ordnungsgemäß installiert und konfiguriert ist – [mehr dazu](../../installation/using/configuring-spamassassin.md)
