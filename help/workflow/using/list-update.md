@@ -14,11 +14,11 @@ discoiquuid: ca2cd5bf-78a2-4e43-955d-206f4474d1e0
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Im vorliegenden Beispiel soll eine Liste mit allen Männern über 30 Jahre, die 
 
    Die Empfängerliste wird erstellt und bei erneuter Ausführung des Workflows aktualisiert.
 
-Mehr dazu erfahren Sie im Video [Creating a list of recipients](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html).
+Mehr dazu erfahren Sie im Video [Creating a list of recipients](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/profile-management/creating-a-list-of-recipients.html).
 
 ## Eingabeparameter {#input-parameters}
 
