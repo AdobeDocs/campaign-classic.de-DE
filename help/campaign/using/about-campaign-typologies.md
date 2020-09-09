@@ -14,11 +14,11 @@ discoiquuid: 72c5151c-ce1e-425a-9aee-beefe9f21a67
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a5711c4478f8378c079fec4792ecbb95266ad4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '498'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 78%
 
 Campaign Optimization ist das Adobe Campaign-Modul, mit dem Sie die Durchführung von Sendungen steuern, filtern und überwachen können. Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
-![](assets/do-not-localize/how-to-video.png) [Diese Funktion im Video entdecken](#typologies-video)
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#typologies-video).
 
 >[!NOTE]
 >
@@ -71,18 +71,18 @@ Gehen Sie wie folgt vor, um eine Typologie zu erstellen und auf Ihre Sendungen a
 
 Bei der Versandvorbereitung werden diejenigen Empfänger ausgeschlossen, die das jeweilige Kriterium erfüllen. Über die Logs können Sie überprüfen, welche Empfänger vom Versand ausgeschlossen wurden. Anwendungsbeispiele für Typologieregeln vom Typ &quot;Druck&quot; finden Sie auf [dieser Seite](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Einrichten des Ermüdungsmanagements mithilfe von Typologieregeln {#typologies-video}
+## Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln {#typologies-video}
 
-In diesem Video wird erläutert, wie Sie das Ermüdungsmanagement in Adobe Campaign Classic mithilfe von Typologieregeln implementieren.
+In diesem Video wird erläutert, wie man die Ermüdungsverwaltung in Adobe Campaign Classic mithilfe von Typologieregeln implementiert.
 
->[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12&captions=ger)
 
-## How to set up fatigue management using predefined filters
+## Einrichten der Ermüdungsverwaltung mithilfe von vordefinierten Filtern
 
-Fatigue management controls frequency and quantity of messaging to avoid over-solicitation of recipients. If you do not have the campaign optimization module in your campaign instance, you may configure a predefined filter that will filter the target population by the number of messages received
-This video explains how to implement fatigue management in Adobe Campaign Classic by using filters.
+Die Ermüdungsverwaltung steuert die Häufigkeit und Anzahl von Nachrichten, um eine Überforderung von Empfängern zu vermeiden. Wenn Sie das Modul zur Kampagnenoptimierung nicht in Ihrer Kampagneninstanz haben, können Sie einen vordefinierten Filter konfigurieren, der die Zielgruppe nach der Anzahl der empfangenen Nachrichten filtert.
+In diesem Video wird erläutert, wie Sie die Ermüdungsverwaltung in Adobe Campaign Classic mithilfe von Filtern implementieren.
 
->[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12&captions=ger)
 
 **Verwandtes Thema**
 
@@ -90,4 +90,4 @@ This video explains how to implement fatigue management in Adobe Campaign Classi
 
 * [Über Kampagnentypologien](../../campaign/using/pressure-rules.md)
 
-* [Verwalten der Marketingermüdung anhand von Druckregeln](https://docs.adobe.com/content/help/en/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
+* [Verwalten der Marketingermüdung anhand von Druckregeln](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
