@@ -14,11 +14,11 @@ discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2673'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 >
 >Dieser Abschnitt gilt für Online-Kanäle: E-Mail, SMS, Push-Benachrichtigungen.
 
-### Zustellbarkeit durch Quarantänen optimieren   {#optimizing-your-delivery-through-quarantines}
+### Zustellbarkeit durch Quarantänen optimieren    {#optimizing-your-delivery-through-quarantines}
 
 Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
@@ -51,17 +51,17 @@ Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil v
 
 >[!NOTE]
 >
->Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
+>Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie „STOPP“ antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
-## In Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses}
+## In Quarantäne befindliche Adressen identifizieren    {#identifying-quarantined-addresses}
 
 Die in Quarantäne befindlichen Adressen können für einen bestimmten Versand oder für die gesamte Plattform angezeigt werden.
 
-### Für einen Versand in Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses-for-a-delivery}
+### Für einen Versand in Quarantäne befindliche Adressen identifizieren    {#identifying-quarantined-addresses-for-a-delivery}
 
 Die für einen bestimmten Versand in Quarantäne befindlichen Adressen werden während der Versandvorbereitung in den Versandlogs des Versand-Dashboards angezeigt (siehe [Protokolle und Versandverlauf](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
 
-### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren   {#identifying-quarantined-addresses-for-the-entire-platform}
+### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren    {#identifying-quarantined-addresses-for-the-entire-platform}
 
 Administratoren können die für die gesamte Plattform in Quarantäne befindlichen Adressen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** anzeigen.
 
@@ -102,32 +102,32 @@ Sie können für jeden Empfänger den Status seiner E-Mail-Adresse prüfen. Klic
 
 ### Adresse aus der Quarantäne nehmen {#removing-a-quarantined-address}
 
-If needed, you can manually remove an address from the quarantine list. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, automatisch aus der Quarantäne-Liste durch den **[!UICONTROL Datenbankbereinigungs]** -Workflow gelöscht.
+Bei Bedarf können Sie eine Adresse manuell aus der Quarantäneliste entfernen. Darüber hinaus werden Adressen, die bestimmten Bedingungen entsprechen, durch den **[!UICONTROL Datenbankbereinigungs]**-Workflow automatisch aus der Quarantäneliste gelöscht.
 
-To manually remove an address from the quarantine list:
+Manuelles Entfernen einer Adresse aus der Quarantäneliste:
 
-* You can change its status to **[!UICONTROL Valid]** from the **[!UICONTROL Administration > Campaign Management > Non deliverables Management > Non deliverables and addresses]** node.
+* Sie können den Status der Adresse über den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** in **[!UICONTROL Gültig]** ändern.
 
    ![](assets/tech_quarant_error_status.png)
 
-* Sie können den Status auch auf &quot; **[!UICONTROL An Zulassungsliste]**&quot;ändern. In this case, the address remains on the quarantine list, but it will be systematically targeted, even if an error is encountered.
+* Sie können den Status auch auf **[!UICONTROL Auf Zulassungsliste]** ändern. In diesem Fall bleibt die Adresse auf der Quarantäneliste, aber sie wird systematisch als Ziel ausgewählt, selbst wenn ein Fehler auftritt.
 
 <!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
 
-The addresses are automatically removed from the quarantine list in the following cases:
+In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
 
-* Addresses in a **[!UICONTROL With errors]** status will be removed from the quarantine list after a successful delivery.
-* Addresses in a **[!UICONTROL With errors]** status will be removed from the quarantine list if the last soft bounce occurred more than 10 days ago. For more on soft error management, see [this section](#soft-error-management).
-* Adressen in einem Status **[!UICONTROL mit Fehlern]** , die mit dem **[!UICONTROL Postfachfehler &quot;full]** &quot;abgeschnitten werden, werden nach 30 Tagen aus der Liste &quot;Quarantäne&quot;entfernt.
+* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden nach einem erfolgreichen Versand aus der Quarantäneliste entfernt.
+* Adressen mit dem Status **[!UICONTROL Fehlerhaft]** werden aus der Quarantäneliste entfernt, wenn der letzte Softbounce mehr als 10 Tage zurückliegt. Weitere Informationen zum Umgang mit Softbounces finden Sie in [diesem Abschnitt](#soft-error-management).
+* Adressen mit dem Status **[!UICONTROL Fehlerhaft]**, die mit dem Fehler **[!UICONTROL Postfach voll]** zurückkommen, werden nach 30 Tagen aus der Quarantäneliste entfernt.
 
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
-Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder dem Status &quot; **[!UICONTROL Bei Blockierungsliste]** &quot;werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
-Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Bereitstellungsassistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). For more on the deployment wizard, refer to [this section](../../installation/using/deploying-an-instance.md).
+Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Softwareverteilungs-Assistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
-## Ursachen für Quarantänen   {#conditions-for-sending-an-address-to-quarantine}
+## Ursachen für Quarantänen    {#conditions-for-sending-an-address-to-quarantine}
 
 Adobe Campaign verwaltet die Quarantäne je nach dem Typ des Versandfehlers und dem Grund, der bei der Qualifizierung von Fehlermeldungen (siehe [Bounce-Message-Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) und [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)) zugewiesen wurde.
 
