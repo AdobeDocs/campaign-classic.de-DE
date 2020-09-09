@@ -1,6 +1,6 @@
 ---
-title: Versand der Nachricht optimieren
-seo-title: Optimize message delivery
+title: Optimieren des Nachrichtenversands
+seo-title: Optimieren des Nachrichtenversands
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
@@ -12,11 +12,11 @@ discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5e6ecd636ee0b2199808c03b2fd898a194f0c1ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '749'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -31,57 +31,57 @@ Im folgenden Abschnitt werden Best Practices und empfohlene Verfahren für die o
 
 Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Plattform verlangsamen:
 
-* The number and type of personalization elements: personalization in emails pulls data out of the database for each recipient. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung des Versands benötigt wird.  Learn more about personalization in [this section](../../delivery/using/about-personalization.md)
+* Anzahl und Art der Personalisierungselemente: Durch Personalisierung in E-Mails werden Daten für jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung des Versands benötigt wird.  Weiterführende Informationen zur Personalisierung finden Sie in [diesem Abschnitt](../../delivery/using/about-personalization.md).
 
-* Laden des Servers: Wenn der Marketingserver viele verschiedene Aufgaben gleichzeitig verarbeitet, kann dies die Leistung verlangsamen. Der Marketingserver muss alle eingehenden und ausgehenden Daten für alle Versand koordinieren, um sicherzustellen, dass die Daten korrekt und pünktlich sind.
+* Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Leistung verlangsamt werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
 
-   **TIPP** - Um dies zu vermeiden, koordinieren Sie die Planung der Versand mit den anderen Teammitgliedern, um die beste Leistung zu gewährleisten.
+   **Tipp**: Koordinieren Sie die zeitliche Durchführung von Sendungen mit anderen Team-Mitgliedern, um eine optimale Leistung zu gewährleisten.
 
-* Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Plattformleistung zu vermeiden. Befolgen Sie die [in diesem Dokument](../../workflow/using/workflow-best-practices.md#execution-and-performance)aufgeführten Richtlinien.
+* Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Leistung der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../workflow/using/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
 
-* Als gehosteter Kunde können Sie mithilfe der Funktionen der [Kampagne Control Panel-Funktion](https://docs.adobe.com/content/help/de-DE/control-panel/using/discover-control-panel/key-features.html) Ihre Plattform überwachen und dabei die [Leistungsüberwachung](https://docs.adobe.com/content/help/en/control-panel/using/performance-monitoring/about-performance-monitoring.html) nutzen.
+* Als gehosteter Kunde können Sie die Funktionen des [Campaign Control Panels](https://docs.adobe.com/content/help/de-DE/control-panel/using/discover-control-panel/key-features.html) nutzen, um Ihre Plattform mit Hilfe der [Leistungsüberwachungsfunktionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/about-performance-monitoring.html) zu überwachen.
 
 ## Prüfen der Netzwerkkonfiguration {#network-config}
 
 Um den Versand großer Mengen von E-Mails zu optimieren und zu verhindern, dass Sie für einen Spammer gehalten werden, achten Sie auf eine ordnungsgemäße Netzwerkkonfiguration, mit der nicht versucht wird, die Identität des Servers zu verbergen.
 
-**Tipp**:  Verwenden Sie eine transparente Absenderadresse, die der Website Ihrer Marke entspricht. Die TravelAgency-Firma verwaltet beispielsweise die Hotelkette Valentino. Für seine Website verwendet es die Domain valentino.com. Um das Valentino-Hotel in Paris zu bewerben, verwendet es die Subdomain paris.valentino.com. Eine entsprechende Absenderadresse könnte deshalb hotel@paris.valentino.com lauten.
+**Tipp**: Verwenden Sie eine transparente Absenderadresse entsprechend der Website Ihrer Marke. Nehmen wir an, das Unternehmen TravelAgency verwaltet die Hotelkette Valentino. Für seine Website verwendet es die Domain valentino.com. Um das Valentino-Hotel in Paris zu bewerben, verwendet es die Subdomain paris.valentino.com. Eine entsprechende Absenderadresse könnte deshalb hotel@paris.valentino.com lauten.
 
 ## Verwaltung der Zustellbarkeit {#deliverability-management}
 
 Sie müssen die Zustellbarkeitsrate Ihrer Nachrichten steigern, damit Ihre Nachrichten in die Empfängerpostfächer zugestellt und nicht als unzustellbar zurückgesendet oder als Spam gekennzeichnet werden.
 
-* Was ist Lieferbarkeit?
+* Was ist Zustellbarkeit?
 
-   * Es bezieht sich auf die Faktoren einer E-Mail, die bestimmen, ob sie vom Server des Empfängers akzeptiert werden kann. ISPs (Internet-Dienstleister) filtern E-Mails, die sie als SPAM identifizieren, oder blockieren das Herunterladen von Bildern. Wenn sie feststellen, dass eine bestimmte Domäne zu viele E-Mails sendet, legen sie eine Begrenzung für die Anzahl der E-Mails fest, die sie von diesem Absender akzeptieren.
+   * Sie bezeichnet die Faktoren, die darüber bestimmen, ob eine E-Mail vom Server eines Empfängers akzeptiert wird. ISPs (Internet Service Provider) filtern E-Mails heraus, die sie als Spam erachten, oder verhindern das Herunterladen von Bildern. Wenn sie feststellen, dass von einer Domain zu viele E-Mails gesendet werden, begrenzen sie die Anzahl der von diesem Absender akzeptierten E-Mails.
 
-   * Konzentrieren Sie sich bei der Zustellbarkeit Ihrer E-Mail auf vier Hauptkategorien: Datenqualität, Nachricht und Inhalt, Versandinfrastruktur und Reputation. Einen tieferen Tauchgang zu diesem Thema finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md).
+   * Konzentrieren Sie sich bei der Zustellbarkeit Ihrer E-Mail auf vier Hauptkategorien: Datenqualität, Nachricht und Inhalt, Versandinfrastruktur und Reputation. Detailliertere Informationen zu diesem Thema finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md).
 
-* Wenden Sie die [in diesem Dokument](../../delivery/using/deliverability-key-points.md)beschriebenen Empfehlungen an.
+* Wenden Sie die [in diesem Dokument](../../delivery/using/deliverability-key-points.md) beschriebenen Empfehlungen an.
 
-* Wenden Sie sich zwecks Hilfe an Ihren Kundenbetreuer.
+* Setzen Sie sich mit Ihrem Adobe-Support-Mitarbeiter in Verbindung, wenn Sie Hilfe benötigen.
 
 ## Quarantäneverwaltung {#quarantine-management}
 
 Achten Sie in Ihrem eigenen Interesse auf eine gute Quarantäneverwaltung.
 
-Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie möglicherweise eine Liste mit fehlerhaften Adressen. Wenn Sie Nachrichten an ungültige Adressen oder an Honeypot-Adressen (Postfächer, die ausschließlich der Täuschung von Spammern dienen) senden, mindert dies die Reputation Ihrer Plattform. Good quarantine management processes help to: maintain address quality, avoid block list by internet access providers, and reduce your error rate, speeding up deliveries and throughput.
+Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie möglicherweise eine Liste mit fehlerhaften Adressen. Wenn Sie Nachrichten an ungültige Adressen oder an Honeypot-Adressen (Postfächer, die ausschließlich der Täuschung von Spammern dienen) senden, mindert dies die Reputation Ihrer Plattform. Mit einer guten Quarantäneverwaltung können Sie die Adressqualität pflegen, verhindern, dass Sie von ISPs auf eine Blockierungsliste gesetzt werden, und Ihre Fehlerrate senken, was den Versand beschleunigt und den Durchsatz erhöht.
 
 **Tipps**
 
-* If you have a list of invalid addresses, Adobe recommends importing it to the quarantine table, through **[!UICONTROL Administration]** > **[!UICONTROL Campaign Management]** > **[!UICONTROL Non deliverables Management]** > **[!UICONTROL Non deliverables and addresses]**.
+* Adobe empfiehlt den Import ungültiger Adressen in die Quarantänetabelle über **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Unzustellbarkeitsverwaltung]** > **[!UICONTROL Adressen unzustellbarer Sendungen]**.
 
-* Die Empfänger, deren Adressen unter Quarantäne gestellt werden, werden während der Analyse des Versands standardmäßig ausgeschlossen: sie sind nicht zielgerichtet. Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt. Eine E-Mail-Adresse kann zum Beispiel unter Quarantäne gestellt werden, weil das Postfach voll ist oder die Adresse nicht existiert. [Mehr dazu](#identifying-quarantined-addresses-for-a-delivery)
+* Empfänger, deren Adressen sich in Quarantäne befinden, werden zum Zeitpunkt der Versandanalyse standardmäßig ausgeschlossen und fließen somit nicht in die Berechnung der Zielgruppe ein. Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt. Eine E-Mail-Adresse kann zum Beispiel unter Quarantäne gestellt werden, weil das Postfach voll ist oder die Adresse nicht existiert. [Mehr dazu](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign verwaltet falsche Adressen je nach Typ des zurückgegebenen Fehlers. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md).
+* Adobe Campaign verwaltet fehlerhafte Adressen je nach zurückgegebenem Fehlertyp. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md).
 
 
 * Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Anbietern auf eine Blockierungsliste gesetzt zu werden.
 
-* Die Verwaltung der Quarantänen wird auch dazu beitragen, die Kosten für die SMS-Versendung zu senken, indem falsche Telefonnummern von Versänden ausgeschlossen werden.
+* Die Quarantäneverwaltung hilft Ihnen auch, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden.
 
 ## Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in){#double-opt-in}
 
 Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunikation zu minimieren und die Reputation des Absenders zu schützen, empfiehlt Adobe die doppelte Anmeldung zur Bestätigung eines Abonnements. Damit können Sie sicherstellen, dass sich ein Empfänger absichtlich angemeldet hat.
 
-Einzelheiten zur Implementierung dieses Mechanismus sind in [diesem Abschnitt](../../web/using/use-cases--web-forms.md)beschrieben.
+Einzelheiten zur Implementierung dieses Mechanismus sind in [diesem Abschnitt](../../web/using/use-cases--web-forms.md) beschrieben.
