@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: c96c94fe0b98e298968c329466ee4e2e04b11a35
+source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
 workflow-type: tm+mt
-source-wordcount: '1975'
-ht-degree: 98%
+source-wordcount: '2119'
+ht-degree: 92%
 
 ---
 
@@ -25,7 +25,28 @@ ht-degree: 98%
 
 ![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
+## ![](assets/do-not-localize/blue_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
+
+_11. September 2020_
+
+* Es wurde eine Regression behoben, die dazu führte, dass die Vorbereitung des Versands aufgrund einer einzelnen fehlerhaften Funktion auf dem Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
+
+
+* Es wurde ein Problem nach der Aktualisierung behoben, durch das Apache und der Webserver vor der Webanwendungsveröffentlichung deaktiviert wurden. (NEO-27155)
+
+
+* Korrektur einer Regression bei der Verwaltung von HTML-Vorlagen, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Registerkarten sichtbar wurden. (NEO-25909)
+
+
+* Es wurde ein Problem mit dem Arbeitsablauf für die Datenbankbereinigung behoben, das aufgrund nicht verwalteter Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
+* Der Bereinigungsarbeitsablauf bereinigt abgelaufene Listen nun durch Stapel von 100 anstelle von 1 nach 1.
+* Es wurde eine Regression behoben, durch die Sie den internen Namen eines Externen Kontos nicht ändern konnten. (NEO-27323)
+
+
+* Beheben einer Regression während der Nachrüstung, wodurch ein falscher Beginn von nlserver (Fehlerprotokolle) verursacht wurde.
+* Das Update-Management für freigegebenen Speicher wurde verbessert. Die in 20.2 erforderlichen zusätzlichen Schritte sind nicht mehr erforderlich.
+
+## ![](assets/do-not-localize/orange_2.png) Version 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
 
 _22. Juli 2020_
 
