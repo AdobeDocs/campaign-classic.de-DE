@@ -13,10 +13,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
+source-git-commit: 2bd946fc0e5b206280a7946e0cbc6fa6d1be90f2
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 93%
+source-wordcount: '2161'
+ht-degree: 88%
 
 ---
 
@@ -57,7 +57,7 @@ _22. Juli 2020_
 * Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist. (NEO-26411)
 * Fehlerkorrektur – Nicht signierte Links von personalisierten Domains werden nicht mehr blockiert, wenn sie zulässig sind. (NEO-25210)
 * Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
-* Fehlerkorrektur – Mirrorseiten-URLs in E-Mail-Sendungen werden jetzt korrekt definiert. (NEO-26084)
+* Es wurde ein Fehler behoben, der dazu führte, dass Mirrorseiten-URLs in E-Mail-Versänden falsch definiert wurden (aufgrund einer fehlerhaften ASCII-Zeichensteuerung). (NEO-26084)
 * Fehlerkorrektur – Es wurde ein Problem mit der Kodierungsverwaltung von URLs im Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
@@ -65,9 +65,9 @@ _22. Juli 2020_
 
 
 Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
-* Fehlerkorrektur – Eine Regression, die sich auf berechnete Felder in einem Workflow auswirkte, wurde korrigiert. (NEO-25194)
+* Es wurde eine Regression behoben, die berechnete Felder in einem Workflow beeinflusste und dazu führte, dass der Workflow fehlschlug. (NEO-25194)
 * Fehlerkorrektur – Eine Regression, die verhinderte, dass die spontane Erstellung von Web-Tracking-URLs funktioniert, wurde korrigiert. (NEO-20999)
-* Fehlerkorrektur – Es wurde ein Problem mit nativen Versandberichten behoben, die beim Exportieren in PDF abgeschnitten dargestellt wurden. (NEO-25757)
+* Korrektur eines Regressionsfehlers mit vordefinierten Versandberichten, der beim Exportieren in PDF abgeschnitten erschien. (NEO-25757)
 * Es wurde ein Absturzproblem im Softwareverteilungs-Assistenten behoben.
 * Fehlerkorrektur – Der Angebotsbenachrichtigungs-Workflow funktioniert jetzt nach einem Postupgrade richtig.
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903)
@@ -255,7 +255,7 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Bei Push-Benachrichtigungen, die mit hoher Häufigkeit gesendet werden, tritt jetzt kein Problem mehr auf. (NEO-20516)
 * Fehlerkorrektur – Tracking-Daten enthalten jetzt auch keine Duplikate, wenn die Trackinglogs keine enthalten. (NEO-20040)
 * Fehlerkorrektur – Transaktions-E-Mails werden jetzt nicht mehr doppelt gesendet, nachdem ein Kommunikationsfehler mit dem Trackingserver behoben wurde. (NEO-23640)
-* Fehlerkorrektur – Der Codierungs-Parameterwert wird bei Weiterleitung von einer Tracking-URL nicht mehr gelöscht. (NEO-25637)
+* Es wurde ein Problem behoben, durch das der Wert des Kodierungsparameters bei der Umleitung von einer Tracking-URL gelöscht wurde (Auswirkungen auf japanische Zeichen). (NEO-25637)
 * Fehlerkorrektur – Eine Abfrage funktioniert jetzt beim Vergleich von Fließkommazahlen. (NEO-23243)
 * Fehlerkorrektur – Die Anzeige des Spalteninhalts von **Geändert von** ist jetzt nach dem Neustart eines Workflows möglich. (NEO-23035)
 * Fehlerkorrektur – Der technische Workflow zum Tracking beim Herunterladen von Protokollen aus einem zweiten Container schlägt jetzt nicht mehr fehl. (NEO-23159)
@@ -265,7 +265,7 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Es wurde ein Problem mit zusätzlichen Speicherfeldern behoben, das beim Erstellen von Sendungen mithilfe der Option **Wird durch ein Script erstellt** in der Workflow-Aktivität **Script** auftrat. (NEO-20609)
 * Fehlerkorrektur – Geister-Workflows werden jetzt im Rahmen der Aufgaben zur Datenbankbereinigung gelöscht.
 * Fehlerkorrektur – Der technische Workflow **Abrechnung (aktive Profile)** schläft jetzt nicht mehr fehl. (NEO-19777)
-* Fehlerkorrektur – Beim Testen der Verbindung des externen acsDefaultAccount-Kontos tritt jetzt kein Fehler mehr auf. (NEO-23433)
+* Korrektur des Regressionsfehlers bei Verwendung der ACS Connector-Funktion, der die Verbindung zu einer Campaign Standard-Instanz verhinderte (fehlerhafte Verwaltung der FOH/FOH2-Verbindung). (NEO-23433)
 * Fehlerkorrektur – Das Erstellen einer Schemaerweiterung für einen Primärschlüssel mit mehreren Spalten in einer Hadoop-Tabelle wird jetzt nicht mehr verhindert. (NEO-17390)
 * Fehlerkorrektur – Es wurde ein Fehler in der Aktivität **Laden (SOAP)** behoben, der das Laden von WSDL-Dateien über eine URL verhindern konnte. (NEO-16924)
 * Fehlerkorrektur – Über die Konsole kann jetzt ein **unbedingter Stopp** ausgeführt werden, wenn mehrere aktive Workflow-Server einen Lastenausgleich durchführen. (NEO-19556)
@@ -277,6 +277,9 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Ein Versand in der Versandliste wird nach dem Senden jetzt nicht mehr zweimal angezeigt.
 * Fehlerkorrektur – Bei der Versandvorbereitung tritt jetzt kein Fehler mehr auf, wenn die Routing-Konfiguration so eingerichtet ist, dass der Versand über Mid-Sourcing erfolgt.
 * Fehlerkorrektur – Beim Klicken auf den Link einer Web-Anwendung in einer Line-Nachricht wird jetzt keine Fehlermeldung mehr angezeigt.
-* Fehlerkorrektur – Das Abrufen aller Entitäten durch Microsoft Dynamics CRM wird jetzt nicht mehr verhindert. (NEO-24528)
 * Fehlerkorrektur – Der Verlauf der Aktivität **Inkrementelle Abfrage** nach Ausführung des Bereinigungs-Workflows wird jetzt nicht mehr gelöscht.
-* Fehlerkorrektur – Beim Erstellen eines externen Mid-Sourcing-Kontos tritt jetzt kein Fehler mehr auf, wenn die Option &quot;NmsMidSourcing_LastBroadLog_&lt;InternalName>&quot; fehlt.
+* Fehlerkorrektur – Beim Erstellen eines externen Mid-Sourcing-Kontos tritt jetzt kein Fehler mehr auf, wenn die Option &quot;NmsMidSourcing_LastBroadLog_&lt;InternalName>&quot; fehlt..
+* Korrektur des Regressionsfehlers bei der Datenbankverbindung, der dazu führte, dass der Webserver aufgrund eines Datenbankkodierungsproblems ständig neu gestartet wurde. Dies könnte zu einem Überkonsum führen. (NEO-23264)
+
+
+
