@@ -14,9 +14,9 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 2604df2e6b6a7520e2f2a82f04c75ceb749fde79
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Auf dieser Seite werden die Gold Standard-Versionen aufgeführt.
 
 Weitere Informationen zum Gold Standard-Upgrade finden Sie in diesem [Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
 
-## ![](assets/do-not-localize/limited.png) Gold Standard Version 10{#gs-10}
+## ![](assets/do-not-localize/limited_2.png) Gold Standard Version 10{#gs-10}
 
 _7. Juli 2020_
 
@@ -62,6 +62,8 @@ Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von
 * Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
 * Fehlerkorrektur – Es wurde ein Problem mit dem Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
+
+
 
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 8{#gs-8}
