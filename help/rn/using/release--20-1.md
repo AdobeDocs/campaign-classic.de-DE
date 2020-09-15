@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: e31efa347b42b4ccb532ca5f79e73745b5a7878b
-workflow-type: ht
-source-wordcount: '1331'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
+workflow-type: tm+mt
+source-wordcount: '1344'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ _17. Februar 2020_
 
 * Die Abfrageleistung, die zuvor durch unnötige Datenbankverbindungen beeinträchtigt sein konnte, wurde verbessert.
 
-* Die Leistung des Datenbankaktualisierungs-Assistenten wurde verbessert.
+* Die Leistung des Datenbankaktualisierungsassistenten wurde verbessert, um weniger SQL-Anweisungen auszugeben, um die Reaktionszeit zu optimieren.
 
 * Das Datenbankdatensatz-Management wurde verbessert.
 
@@ -183,7 +183,7 @@ _17. Februar 2020_
 
 * Fehlerkorrektur – Beim Löschen, Einfügen oder Aktualisieren einer großen Datenmenge in einem Workflow mit der Aktivität **Daten-Update**, wobei ein FDA-Schema als Zielgruppendimension verwendet wird, tritt jetzt kein Problem mehr auf. (NEO-13280)
 
-* Fehlerkorrektur – Jetzt werden E-Mails gesendet, wenn die if-Anweisung außerhalb des `body`-Tags verwendet wird. (NEO-18628)
+* Es wurde ein Fehler behoben, der verhinderte, dass E-Mails gesendet werden, wenn außerhalb des HTML-Inhalts-Tags Javascript-Code vorhanden war. (NEO-18628)
 
 * Fehlerkorrektur – Die Mirrorseite kann jetzt in den Versandlogs einer gesendeten Nachricht angezeigt werden. (NEO-17976)
 
