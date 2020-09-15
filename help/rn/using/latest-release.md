@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: f92180f93850d5bc33e74210d17cdd36c0c15e5f
 workflow-type: tm+mt
 source-wordcount: '2119'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -32,15 +32,19 @@ _11. September 2020_
 * Es wurde eine Regression behoben, die dazu führte, dass die Vorbereitung des Versands aufgrund einer einzelnen fehlerhaften Funktion auf dem Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
 
 
+
 * Es wurde ein Problem nach der Aktualisierung behoben, durch das Apache und der Webserver vor der Webanwendungsveröffentlichung deaktiviert wurden. (NEO-27155)
+
 
 
 * Korrektur einer Regression bei der Verwaltung von HTML-Vorlagen, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Registerkarten sichtbar wurden. (NEO-25909)
 
 
+
 * Es wurde ein Problem mit dem Arbeitsablauf für die Datenbankbereinigung behoben, das aufgrund nicht verwalteter Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
 * Der Bereinigungsarbeitsablauf bereinigt abgelaufene Listen nun durch Stapel von 100 anstelle von 1 nach 1.
 * Es wurde eine Regression behoben, durch die Sie den internen Namen eines Externen Kontos nicht ändern konnten. (NEO-27323)
+
 
 
 * Beheben einer Regression während der Nachrüstung, wodurch ein falscher Beginn von nlserver (Fehlerprotokolle) verursacht wurde.
@@ -57,6 +61,7 @@ _22. Juli 2020_
 * Fehlerkorrektur – Es wurde ein Problem mit der Kodierungsverwaltung von URLs im Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
+
 
 
 Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
@@ -116,7 +121,7 @@ _8. Juni 2020_
  <tbody> 
   <tr> 
    <td> <p>Das thailändische Datenschutzgesetz (PDPA) ist ein neues Datenschutzgesetz, mit dem die Datenschutzanforderungen für Thailand harmonisiert und modernisiert werden. </p>
-   <p>Die brasilianische Lei Geral de Proteção de Dados (LGPD) wird Anfang 2021 für alle Firmen, die personenbezogene Daten in Brasilien sammeln oder verarbeiten, in Kraft treten.</p>
+   <p>Das brasilianische Lei Geral de Proteção de Dados (LGPD) wird Anfang 2021 für alle Firmen in Kraft treten, die in Brasilien personenbezogene Daten sammeln oder verarbeiten.</p>
    <p>Die Vorschriften gelten für Adobe Campaign-Kunden, die Daten über in diesen Ländern wohnhafte Datensubjekte besitzen. Zusätzlich zu den bereits in Campaign verfügbaren Datenschutzoptionen (Einverständnisverwaltung, Einstellungen für die Datenbeibehaltung und Benutzerrollen usw.) werden weitere Funktionen bereitgestellt, mit deren Hilfe PDPA- und LGPD-konformes Verhalten sichergestellt werden kann:</p>
    <ul> 
      <li><p>Recht auf Zugriff und Recht auf Löschung: Hierfür werden die Funktionen genutzt, die für die DSGVO und PPDA hinzugefügt wurden. <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html">Mehr dazu</a></p></li> 
