@@ -12,11 +12,11 @@ discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 70efc8a7f1fab68d73e36b4373116c4aaaa0af5d
-workflow-type: ht
-source-wordcount: '7180'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 562f9f5411284cdf763821b0179ae795fa4bc48a
+workflow-type: tm+mt
+source-wordcount: '7200'
+ht-degree: 99%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 100%
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
+
+## September 2020 {#september-2020}
+
+* Es wurde ein Hinweis hinzugefügt, der angibt, dass die Anzahl der aktiven Profil nur für Marketinginstanzen verfügbar ist. [mehr dazu](../../platform/using/about-profiles.md#active-profiles)
 
 ## August 2020 {#aug-2020}
 
