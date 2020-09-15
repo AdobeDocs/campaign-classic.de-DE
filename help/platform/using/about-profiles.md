@@ -14,11 +14,11 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 9a8c3586482d05648de3bdecfdfabcc094c70dbf
-workflow-type: ht
-source-wordcount: '945'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
+workflow-type: tm+mt
+source-wordcount: '974'
+ht-degree: 97%
 
 ---
 
@@ -97,6 +97,12 @@ Das allgemeine Layout von Adobe Campaign-Explorer wird in [Adobe Campaign-Explor
 
 Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt werden.
 
+>[!NOTE]
+>
+>Wenn Sie auf AWS gehostet werden und Campaign Classic aus Build 8931 verwenden, können Sie die Anzahl der in Ihren Instanzen verwendeten aktiven Profile auch direkt im Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>
+>Beachten Sie, dass die Anzahl der aktiven Profil nur für **Marketinginstanzen** verfügbar ist. Es ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (MID) und RT (Message Center/Real-time Messaging) Instanzen.
+
 **Profil** bezeichnet einen Datensatz, der einen Endkunden, einen Prospect oder Lead repräsentiert. Bei diesen Daten kann es sich z. B. um einen Datensatz in der nmsRecipient-Tabelle oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobiltelefons oder andere für einen bestimmten Kanal relevante Informationen enthält.
 
 Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
@@ -109,15 +115,13 @@ Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typolog
 
 Eine Übersicht über die **[!UICONTROL Anzahl der aktiven Profile]** erhalten Sie über das Menü **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]** in Campaign Standard. Die tatsächliche Zählung erfolgt über den [technischen Workflow](../../workflow/using/deliveries.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** (**[!UICONTROL billingActiveContactCount]**), der täglich ausgeführt wird. Dabei werden die neuen Daten für den aktuellen Zeitraum im Menü **[!UICONTROL Kundenmetriken]** zum vorhandenen Bericht hinzugefügt. Jeder Zeitraum hat eine Dauer von 12 Monaten.
 
-Wenn Sie auf AWS gehostet werden und Campaign Classic aus Build 8931 verwenden, können Sie die Anzahl der in Ihren Instanzen verwendeten aktiven Profile auch direkt im Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
-
 ## Erstellen und Verwalten von Profilen {#create-profiles-video}
 
 Erfahren Sie, wie Sie auf Profildaten zugreifen, Profile sortieren und filtern und Profile manuell erstellen und verwalten können.
 
 In diesem Video wird auch die Einhaltung der Datenschutz-Grundverordnung durch Adobe Campaign Classic erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
 **Siehe auch**
 
