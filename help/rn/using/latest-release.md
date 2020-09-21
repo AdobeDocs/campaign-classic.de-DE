@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: ab9d2c2e80ba09b5a2cceadb49c06ff13989da0f
 workflow-type: tm+mt
 source-wordcount: '2161'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,26 +29,14 @@ ht-degree: 88%
 
 _11. September 2020_
 
-* Es wurde eine Regression behoben, die dazu führte, dass die Vorbereitung des Versands aufgrund einer einzelnen fehlerhaften Funktion auf dem Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
-
-
-
-* Es wurde ein Problem nach der Aktualisierung behoben, durch das Apache und der Webserver vor der Webanwendungsveröffentlichung deaktiviert wurden. (NEO-27155)
-
-
-
-* Korrektur einer Regression bei der Verwaltung von HTML-Vorlagen, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Registerkarten sichtbar wurden. (NEO-25909)
-
-
-
-* Es wurde ein Problem mit dem Arbeitsablauf für die Datenbankbereinigung behoben, das aufgrund nicht verwalteter Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
-* Der Bereinigungsarbeitsablauf bereinigt abgelaufene Listen nun durch Stapel von 100 anstelle von 1 nach 1.
-* Es wurde eine Regression behoben, durch die Sie den internen Namen eines Externen Kontos nicht ändern konnten. (NEO-27323)
-
-
-
-* Beheben einer Regression während der Nachrüstung, wodurch ein falscher Beginn von nlserver (Fehlerprotokolle) verursacht wurde.
-* Das Update-Management für freigegebenen Speicher wurde verbessert. Die in 20.2 erforderlichen zusätzlichen Schritte sind nicht mehr erforderlich.
+* Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass die Sendungsvorbereitung aufgrund einer einzigen fehlerhaften Funktion im Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
+* Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Publikation der Web-Applikation deaktiviert wurden. (NEO-27155)
+* Fehlerkorrektur – Es wurde eine Regression bei der Verwaltung von HTML-Vorlagen korrigiert, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Tabs sichtbar wurden. (NEO-25909)
+* Fehlerkorrektur – Es wurde ein Problem mit dem Datenbankbereinigungs-Workflow behoben, der aufgrund einer nicht verwalteten Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
+* Der Bereinigungs-Workflow bereinigt jetzt abgelaufene Listen in Stapeln von 100 anstelle einzeln.
+* Fehlerkorrektur – Es wurde eine Regression korrigiert, die verhinderte, dass Sie den internen Namen eines externen Kontos ändern konnten. (NEO-27323)
+* Fehlerbehebung – Es wurde eine Regression während eines Postupgrades korrigiert, die einen fehlerhaften Start von nlserver verursachte (Fehlerprotokolle).
+* Die Aktualisierungsverwaltung für gemeinsamen Speicher wurde verbessert. Die in Version 20.2 erforderlichen zusätzlichen Schritte werden nicht mehr benötigt.
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
 
@@ -57,17 +45,18 @@ _22. Juli 2020_
 * Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist. (NEO-26411)
 * Fehlerkorrektur – Nicht signierte Links von personalisierten Domains werden nicht mehr blockiert, wenn sie zulässig sind. (NEO-25210)
 * Fehlerkorrektur – Tracking-URLs können geöffnet/geklickt werden, wenn bestimmte veraltete Outlook-Versionen verwendet werden. (NEO-25688)
-* Es wurde ein Fehler behoben, der dazu führte, dass Mirrorseiten-URLs in E-Mail-Versänden falsch definiert wurden (aufgrund einer fehlerhaften ASCII-Zeichensteuerung). (NEO-26084)
+* Fehlerkorrektur – Es wurde ein Problem behoben, das dazu führte, dass Mirrorseiten-URLs in E-Mail-Sendungen fehlerhaft definiert wurden (aufgrund einer falschen ASCII-Zeichensteuerung). (NEO-26084)
 * Fehlerkorrektur – Es wurde ein Problem mit der Kodierungsverwaltung von URLs im Anti-Phishing-Dienst behoben. (NEO-25283)
 * Fehlerkorrektur – Tracking von URLs mithilfe von Fragmenten in Personalisierungsparametern (Anker-Tags mit Rautenzeichen) funktioniert jetzt. (NEO-25774)
 * Fehlerkorrektur – Es wurde ein Problem beim Tracking mit spezifischen benutzerdefinierten Tracking-Formeln behoben. (NEO-25277)
 
 
 
+
 * Fehlerkorrektur – Tracking von &quot;Benachrichtigungsklicks&quot; (iOS- und Android-Push-Benachrichtigungen) funktioniert jetzt. (NEO-25965)
-* Es wurde eine Regression behoben, die berechnete Felder in einem Workflow beeinflusste und dazu führte, dass der Workflow fehlschlug. (NEO-25194)
+* Fehlerkorrektur – Es wurde eine Regression korrigiert, die berechnete Felder in einem Workflow beeinträchtigte und dazu führte, dass der Workflow fehlschlug. (NEO-25194)
 * Fehlerkorrektur – Eine Regression, die verhinderte, dass die spontane Erstellung von Web-Tracking-URLs funktioniert, wurde korrigiert. (NEO-20999)
-* Korrektur eines Regressionsfehlers mit vordefinierten Versandberichten, der beim Exportieren in PDF abgeschnitten erschien. (NEO-25757)
+* Fehlerkorrektur – Es wurde ein Regressionsfehler mit nativen Versandberichten behoben, die beim Exportieren in PDF abgeschnitten dargestellt wurden. (NEO-25757)
 * Es wurde ein Absturzproblem im Softwareverteilungs-Assistenten behoben.
 * Fehlerkorrektur – Der Angebotsbenachrichtigungs-Workflow funktioniert jetzt nach einem Postupgrade richtig.
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903)
@@ -255,7 +244,7 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Bei Push-Benachrichtigungen, die mit hoher Häufigkeit gesendet werden, tritt jetzt kein Problem mehr auf. (NEO-20516)
 * Fehlerkorrektur – Tracking-Daten enthalten jetzt auch keine Duplikate, wenn die Trackinglogs keine enthalten. (NEO-20040)
 * Fehlerkorrektur – Transaktions-E-Mails werden jetzt nicht mehr doppelt gesendet, nachdem ein Kommunikationsfehler mit dem Trackingserver behoben wurde. (NEO-23640)
-* Es wurde ein Problem behoben, durch das der Wert des Kodierungsparameters bei der Umleitung von einer Tracking-URL gelöscht wurde (Auswirkungen auf japanische Zeichen). (NEO-25637)
+* Fehlerkorrektur – Der Codierungs-Parameterwert wird bei Weiterleitung von einer Tracking-URL nicht mehr gelöscht (Auswirkung auf japanische Zeichen). (NEO-25637)
 * Fehlerkorrektur – Eine Abfrage funktioniert jetzt beim Vergleich von Fließkommazahlen. (NEO-23243)
 * Fehlerkorrektur – Die Anzeige des Spalteninhalts von **Geändert von** ist jetzt nach dem Neustart eines Workflows möglich. (NEO-23035)
 * Fehlerkorrektur – Der technische Workflow zum Tracking beim Herunterladen von Protokollen aus einem zweiten Container schlägt jetzt nicht mehr fehl. (NEO-23159)
@@ -265,13 +254,13 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Es wurde ein Problem mit zusätzlichen Speicherfeldern behoben, das beim Erstellen von Sendungen mithilfe der Option **Wird durch ein Script erstellt** in der Workflow-Aktivität **Script** auftrat. (NEO-20609)
 * Fehlerkorrektur – Geister-Workflows werden jetzt im Rahmen der Aufgaben zur Datenbankbereinigung gelöscht.
 * Fehlerkorrektur – Der technische Workflow **Abrechnung (aktive Profile)** schläft jetzt nicht mehr fehl. (NEO-19777)
-* Korrektur des Regressionsfehlers bei Verwendung der ACS Connector-Funktion, der die Verbindung zu einer Campaign Standard-Instanz verhinderte (fehlerhafte Verwaltung der FOH/FOH2-Verbindung). (NEO-23433)
+* Fehlerkorrektur – Es wurde ein Regressionsfehler bei Verwendung der ACS Connector-Funktion behoben, der die Verbindung zu einer Campaign Standard-Instanz verhinderte (fehlerhafte Verwaltung der FOH-/FOH2-Verbindung). (NEO-23433)
 * Fehlerkorrektur – Das Erstellen einer Schemaerweiterung für einen Primärschlüssel mit mehreren Spalten in einer Hadoop-Tabelle wird jetzt nicht mehr verhindert. (NEO-17390)
 * Fehlerkorrektur – Es wurde ein Fehler in der Aktivität **Laden (SOAP)** behoben, der das Laden von WSDL-Dateien über eine URL verhindern konnte. (NEO-16924)
 * Fehlerkorrektur – Über die Konsole kann jetzt ein **unbedingter Stopp** ausgeführt werden, wenn mehrere aktive Workflow-Server einen Lastenausgleich durchführen. (NEO-19556)
 * Fehlerkorrektur – Jetzt tritt kein Regressionsfehler mehr auf, der zum Absturz des Bereinigungs-Workflows führt.
 * Beim Veröffentlichen einer Vorlage in einer Ausführungsinstanz tritt jetzt kein Fehler mehr auf.
-* Fehlerkorrektur – Die Ausführung des technischen Workflows &quot;collectionPrivacyRequests&quot; wird jetzt nicht mehr verhindert. (NEO-20513, NEO-25169)
+* Fehlerkorrektur – Die Ausführung des technischen Workflows &quot;collectPrivacyRequests&quot; wird jetzt nicht mehr verhindert. (NEO-20513, NEO-25169)
 * Fehlerkorrektur – Wenn nach dem Upgrade auf Build 9080 versucht wird, eine Verbindung mit Audience Manager herzustellen, treten jetzt keine Fehler mehr auf. (NEO-20511, NEO-25167)
 * Fehlerkorrektur – Beim Exportieren von Berichten im PDF- oder XLS-Format treten jetzt keine Fehler mehr auf. (NEO-20982, NEO-23493, NEO-23348)
 * Fehlerkorrektur – Ein Versand in der Versandliste wird nach dem Senden jetzt nicht mehr zweimal angezeigt.
@@ -279,7 +268,4 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Beim Klicken auf den Link einer Web-Anwendung in einer Line-Nachricht wird jetzt keine Fehlermeldung mehr angezeigt.
 * Fehlerkorrektur – Der Verlauf der Aktivität **Inkrementelle Abfrage** nach Ausführung des Bereinigungs-Workflows wird jetzt nicht mehr gelöscht.
 * Fehlerkorrektur – Beim Erstellen eines externen Mid-Sourcing-Kontos tritt jetzt kein Fehler mehr auf, wenn die Option &quot;NmsMidSourcing_LastBroadLog_&lt;InternalName>&quot; fehlt..
-* Korrektur des Regressionsfehlers bei der Datenbankverbindung, der dazu führte, dass der Webserver aufgrund eines Datenbankkodierungsproblems ständig neu gestartet wurde. Dies könnte zu einem Überkonsum führen. (NEO-23264)
-
-
-
+* Fehlerkorrektur – Es wurde ein Regressionsfehler bei der Datenbankverbindung behoben, der dazu führte, dass der Webserver aufgrund eines Problems mit der Datenbankkodierung ständig neu gestartet wurde. Dies konnte zu einem übermäßigen Verbrauch führen. (NEO-23264)
