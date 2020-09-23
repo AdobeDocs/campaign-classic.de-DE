@@ -14,11 +14,11 @@ discoiquuid: 5addada8-0185-488f-9825-83f60981c139
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 762a6ba3fdad9c30407bf807f2cd8076796f98c2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -101,7 +101,7 @@ Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt wer
 >
 >Wenn Sie auf AWS gehostet werden und Campaign Classic aus Build 8931 verwenden, können Sie die Anzahl der in Ihren Instanzen verwendeten aktiven Profile auch direkt im Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
 >
->Beachten Sie, dass die Anzahl der aktiven Profil nur für **Marketinginstanzen** verfügbar ist. Es ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (MID) und RT (Message Center/Real-time Messaging) Instanzen.
+>Beachten Sie, dass die Anzahl der aktiven Profile nur für **Marketing-Instanzen** verfügbar ist. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
 
 **Profil** bezeichnet einen Datensatz, der einen Endkunden, einen Prospect oder Lead repräsentiert. Bei diesen Daten kann es sich z. B. um einen Datensatz in der nmsRecipient-Tabelle oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobiltelefons oder andere für einen bestimmten Kanal relevante Informationen enthält.
 
@@ -121,7 +121,7 @@ Erfahren Sie, wie Sie auf Profildaten zugreifen, Profile sortieren und filtern u
 
 In diesem Video wird auch die Einhaltung der Datenschutz-Grundverordnung durch Adobe Campaign Classic erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12&captions=ger)
 
 **Siehe auch**
 
