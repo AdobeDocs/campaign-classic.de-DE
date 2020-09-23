@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac2d993f525eb918ad5e15104eb3ede9eeadfb43
+source-git-commit: 7f7b53f0a7ec0f50bf3a99314606272b8ebdc8d7
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet. Nachfolgend fin
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit**: Neuester verfügbarer stabiler Build. Build in Produktion validiert.
 
-Der **aktuelle stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn/using/gold-standard.md).
+Der **aktuelle stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/gold-standard.md#gs-10).
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit**: Build wird derzeit in Produktion validiert. Implementierung nur auf Anfrage.
 
@@ -49,7 +49,7 @@ Der **aktuelle stabile Build** ist Gold Standard 6. Klicken Sie [hier](../../rn
 
 Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html#gs-6)
+Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html#gs-10)
 
 Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html).
 
