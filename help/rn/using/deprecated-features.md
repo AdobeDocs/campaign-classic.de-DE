@@ -11,7 +11,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 900b5a21172440a385dde6eb137bac2e7129bb9d
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 95%
@@ -132,7 +132,7 @@ Die folgenden Systeme werden für Campaign Classic jetzt nicht mehr unterstützt
 Ab Version 20.2 werden die folgenden Systeme zum Campaign Classic nicht mehr unterstützt. Die Kompatibilität endet in Release 20.3 - Oktober 2020.
 
 * Client Console: Windows 7
-* Legacy-SMS-Connectors (siehe [Veraltete Funktionen)](#deprecated-features)
+* Legacy-SMS-Connectors - siehe [Veraltete Funktionen](#deprecated-features)
 * DB2 UDB 10.5 für Federated Data Access (FDA)
 
 ### Adobe Campaign-Version 19.2  {#compat-19-2-release}
