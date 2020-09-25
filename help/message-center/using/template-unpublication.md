@@ -14,11 +14,11 @@ discoiquuid: 43908738-a71a-49be-ac00-175f57a0555c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 71aeeda3edafc64dbe696ce6f344b8b0ccdc43d1
-workflow-type: ht
-source-wordcount: '226'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 96%
 
 ---
 
@@ -26,6 +26,10 @@ ht-degree: 100%
 # Publikation von Vorlagen rückgängig machen{#template-unpublication}
 
 Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen publiziert wurde, kann sie depubliziert werden.
+
+>[!NOTE]
+>
+>Diese Funktion ist ab Kampagne 20.2 verfügbar.
 
 Eine publizierte Vorlage kann aufgerufen werden. Darum wird empfohlen, eine Nachrichtenvorlage zu depublizieren, wenn Sie sie nicht mehr verwenden. Damit soll verhindert werden, dass versehentlich unerwünschte Transaktionsnachrichten gesendet werden. Gehen wir beispielsweise davon aus, dass Sie eine Nachrichtenvorlage publiziert haben, die Sie nur für Weihnachtskampagnen verwenden. Sie können die Vorlage nach der Weihnachtszeit depublizieren und im nächsten Jahr erneut publizieren.
 
