@@ -1,6 +1,6 @@
 ---
 title: Über Campaign-Integrationen
-description: Hier erfahren Sie mehr über die funktionalen Integrationen der vorliegenden Adobe Campaign-Version mit den verschiedenen Lösungen aus Adobe Experience Cloud.
+description: Verwenden Sie andere Adoben und kombinieren Sie ihre verschiedenen Funktionen mit Kampagne.
 page-status-flag: never-activated
 uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 0c3737b22c7bf4e614c5a2fbe8e8fd954d3ece8a
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '777'
 ht-degree: 97%
 
 ---
@@ -42,7 +42,7 @@ Die vollständige Liste der Adobe-Lösungen und Core Services, die mit Adobe Cam
 
 In Ihrer Arbeitsumgebung verfügen Sie unter Umständen über verschiedene Lösungen der Adobe Experience Cloud. Diese sind miteinander über s. g. Organisationen verbunden. Eine **Organisation** ist die Entität, mit der ein Administrator Gruppen und Benutzer konfigurieren und Anmeldungen in der Experience Cloud steuern kann. Eine Organisation ist wie eine Unternehmensanmeldung bei allen Produkten und Lösungen, die in der Experience Cloud enthalten sind. Normalerweise besitzt eine Organisation den Namen Ihres Unternehmens. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen.
 
-Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe Experience Cloud werden im [Hilfeportal von Adobe Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/manage-users-and-products/organizations.html) erläutert.
+Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe Experience Cloud werden im [Hilfeportal von Adobe Experience Cloud](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/organizations.html) erläutert.
 
 >[!CAUTION]
 >
