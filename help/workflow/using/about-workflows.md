@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
+source-git-commit: 546c8f14006e333bb81aa52a008e9f1dfa79f03b
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 84%
@@ -21,9 +21,9 @@ ht-degree: 84%
 ---
 
 
-# Get started with workflows{#about-workflows}
+# Get started with workflows{#gs-workflows}
 
-## Über Workflows
+## Über Workflows{#about-workflows}
 
 Mit Adobe Campaign verfügen Sie über ein integriertes Workflow-Management-System, welches die zentrale Steuerung aller Prozesse und Vorgänge der Anwendung ermöglicht. Die Workflow-Engine dient der Modellierung und Automatisierung der verschiedenen Aufgaben der Anwendungsserver-Module. Mithilfe der grafischen Oberfläche lassen sich vollständige Arbeitsabläufe zur Segmentierung von Zielgruppen, der Ausführung von Kampagnen, dem Umgang mit Dateien etc. gestalten.
 
@@ -73,7 +73,7 @@ Jeder Workflow besteht aus:
 
    Weiterführende Informationen zu Workflow-Daten und Tabellen finden Sie in [diesem Abschnitt](../../workflow/using/how-to-use-workflow-data.md).
 
-## Wichtige Grundsätze und bewährte Verfahren
+## Wichtige Grundsätze und bewährte Verfahren{#principles-workflows}
 
 In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Automatisierung von Prozessen mit Workflows:
 
