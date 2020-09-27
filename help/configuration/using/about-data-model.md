@@ -1,6 +1,6 @@
 ---
-title: Info zum Adobe Campaign Classic-Datenmodell
-description: In diesem Dokument werden die Grundlagen des Adobe Campaign Classic-Datenmodells beschrieben.
+title: Informationen zum Adobe Campaign Classic-Datenmodell
+description: Erfahren Sie, wie Sie das Datenmodell der Kampagne erweitern, Schema bearbeiten, APIs verwenden und vieles mehr.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 580be39d09bd59770d490945c3ba2b29e12fb3c4
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '976'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 # About the Campaign data model{#about-data-model}
 
-In diesem Abschnitt werden die Grundlagen des Adobe Campaign Classic-Datenmodells beschrieben, um die integrierten Kampagnen und deren Interaktion besser zu verstehen.
+In diesem Abschnitt werden die Grundlagen des Adobe Campaign Classic-Datenmodells beschrieben, um ein besseres Verständnis der integrierten Kampagnen und deren Interaktion zu erhalten.
 
 Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion.
 
