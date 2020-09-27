@@ -1,8 +1,6 @@
 ---
-title: Informationen zum Social Marketing
-seo-title: Informationen zum Social Marketing
-description: Informationen zum Social Marketing
-seo-description: null
+title: Über Social Marketing
+description: Erfahren Sie, wie Sie mit Kampagne über Facebook und Twitter mit Ihren Kunden interagieren können.
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -15,28 +13,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 92%
 
 ---
 
 
-# Informationen zum Social Marketing{#about-social-marketing}
+# Über Social Marketing{#about-social-marketing}
 
-Mit der Anwendung **Verwalten sozialer Netzwerke** (Social Marketing), die für die Verwaltung sozialer Netzwerke entwickelt wurde, können Sie über Facebook und Twitter mit Kunden und Interessenten interagieren.
+Mit der Anwendung **Social Marketing** zur Verwaltung sozialer Netzwerke können Sie über Facebook und Twitter mit Kunden und potenziellen Kunden interagieren.
 
 1. **Nachrichten senden**
 
    Mit Social Marketing können Sie Nachrichten auf Facebook und Twitter senden.
 
-   * Mit Adobe Campaign können Sie Nachrichten direkt auf Ihrer Facebook-Pinnwand und in Ihrem Twitter-Konto veröffentlichen.
+   * Mit Adobe Campaign können Sie Nachrichten direkt auf Ihrer Facebook-Pinnwand und in Ihrem Twitter-Konto veröffentlichen.
    * Sie können auch Direktnachrichten an all Ihre Twitter-Follower senden.
 
-1. **Neue Kontakte erwerben**
+1. **Neue Kontakte gewinnen**
 
-   Mit Adobe Campaign Social Marketing können Sie auch ganz einfach neue Kontakte über Facebook erwerben: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen weitergeben möchten. Wenn sie diese akzeptieren, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie Targeting-Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
+   Mit Adobe Campaign Social Marketing können Sie auch einfach neue Kontakte über Facebook gewinnen: Kontaktieren Sie die Benutzer und fragen Sie sie, ob sie ihre Profilinformationen weitergeben möchten. Wenn sie zustimmen, stellt Adobe Campaign die Daten automatisch wieder her, sodass Sie zielgerichtete Kampagnen durchführen und nach Möglichkeit kanalübergreifende Strategien implementieren können.
 
 >[!IMPORTANT]
 >
 >Facebook und Twitter nehmen regelmäßige Änderungen an ihren Bildschirmen und Prozessen vor. Dieses Dokument wird entsprechend aktualisiert.
 >
->Adobe Campaign fordert Sie auf, die Servicebedingungen von Facebook und Twitter einzuhalten.
+>Adobe Campaign fordert Sie auf, die Nutzungsbedingungen von Facebook und Twitter einzuhalten.
