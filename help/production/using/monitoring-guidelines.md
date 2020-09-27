@@ -1,6 +1,6 @@
 ---
 title: Richtlinien für das Monitoring
-description: Dieser Abschnitt enthält allgemeine Leitlinien für die Überwachung des Campaign Classic.
+description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Kampagnen und Prozessen.
 page-status-flag: never-activated
 uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
 contentOwner: sauviat
@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '713'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 Die Registerkarte **[!UICONTROL Überwachung]** , auf die von der Campaign Classic-Homepage aus zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
 
-It provides a dashboard of what is occuring on your instance: its status (build version, installed packages, etc.), system indicators, logs,  workflows that are currently running, state of last sent deliveries, etc.
+Es bietet ein Dashboard für das, was auf Ihrer Instanz geschieht: seinen Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, aktuell ausgeführte Workflows, Status der zuletzt gesendeten Versand usw.
 
 Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-processes.md).
 
@@ -39,7 +39,7 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Workflows</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Beobachtung von Sendungen</a></p></td>
-<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Monitor the database</a></p></td></tr>
+<td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Datenbank überwachen</a></p></td></tr>
 </table>
 
 Es stehen weitere Möglichkeiten zur Überwachung der verschiedenen Kampagnen zur Verfügung. Sie bieten verschiedene Möglichkeiten zur Überwachung Ihrer Instanzen, um sicherzustellen, dass Ihr System einwandfrei ist, und eventuell Probleme zu beheben, die beim Einrichten von Workflows, Senden von Versänden usw. auftreten können.
@@ -50,15 +50,15 @@ Es stehen weitere Möglichkeiten zur Überwachung der verschiedenen Kampagnen zu
 
 **Automatische Überwachungstools**
 
-Es stehen verschiedene automatische Methoden zur Verfügung. to help you monitor your instance. Sie können beispielsweise E-Mail-Berichte mit erkannten Anomalien einrichten, eine Liste von Indikatoren im XML-Format abrufen usw. [Klicken Sie hier](../../production/using/monitoring-processes.md#automatic-monitoring) für weitere Informationen.
+Es stehen verschiedene automatische Methoden zur Verfügung. , um Sie bei der Überwachung Ihrer Instanz zu unterstützen. Sie können beispielsweise E-Mail-Berichte mit erkannten Anomalien einrichten, eine Liste von Indikatoren im XML-Format abrufen usw. [Klicken Sie hier](../../production/using/monitoring-processes.md#automatic-monitoring) für weitere Informationen.
 
 **Audit-Protokoll**
 
-The Audit trail allows you to visualize the complete history of changes related to options, workflows and schemas within your instance. [Click here](../../production/using/audit-trail.md) for more information.
+Der Prüfpfad ermöglicht Ihnen die Visualisierung des vollständigen Verlaufs der Änderungen in Bezug auf Optionen, Workflows und Schema in Ihrer Instanz. [Klicken Sie hier](../../production/using/audit-trail.md) für weitere Informationen.
 
 **Control Panel**
 
-The Control Panel allows you to manage several settings of your instance: manage URL permissions, check your instance details like your servers&#39; build versions, etc. Außerdem können Sie damit den verfügbaren Speicherplatz auf den SFTP-Servern überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) für weitere Informationen.
+Über die Systemsteuerung können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Instanzdetails wie die Build-Versionen Ihrer Server überprüfen usw. Außerdem können Sie damit den verfügbaren Speicherplatz auf den SFTP-Servern überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) für weitere Informationen.
 
 >[!NOTE]
 >
@@ -70,11 +70,11 @@ The Control Panel allows you to manage several settings of your instance: manage
 
 **Workflow-Heatmap**
 
-The Workflow HeatMap provided a visual representation of all the workflows that are running on your instance. It allows you to easily monitor the load on the instance and plan workflows accordingly. [Klicken Sie hier](../../workflow/using/heatmap.md) für weitere Informationen.
+Die Workflow HeatMap bietet eine visuelle Darstellung aller Workflows, die auf Ihrer Instanz ausgeführt werden. Dadurch können Sie die Belastung der Instanz einfach überwachen und Workflows entsprechend planen. [Klicken Sie hier](../../workflow/using/heatmap.md) für weitere Informationen.
 
 **Audit-Protokoll**
 
-The Audit trail allows you to visualize all the modifications that have been made in workflows, as well as their current states. [Hier klicken](../../production/using/audit-trail.md).
+Der Audit-Pfad ermöglicht Ihnen, alle Änderungen, die in Workflows vorgenommen wurden, sowie deren Status darzustellen. [Hier klicken](../../production/using/audit-trail.md).
 
 **Workflows Fehlerbehebung**
 
@@ -82,7 +82,7 @@ Bei Problemen mit der Ausführung eines Workflows können spezifische Aktionen a
 
 **Workflow-Statusüberwachung**
 
-Additionally to the heatmap, you can create a workflow that will let you monitor the status of a set of workflows and send recurring messages to supervisors. [Click here](../../workflow/using/supervising-workflows.md) for more information.
+Zusätzlich zur Heatmap können Sie einen Workflow erstellen, mit dem Sie den Status einer Workflows überwachen und wiederkehrende Meldungen an die Aufsichtsbehörden senden können. [Klicken Sie hier](../../workflow/using/supervising-workflows.md) für weitere Informationen.
 
 **Allgemeine Leitlinien**
 
@@ -90,23 +90,22 @@ Die Befolgung von Richtlinien und Best Practices bei der Verwendung von Workflow
 * [Bewährte Verfahren bei der Verwendung von Workflows](../../workflow/using/workflow-best-practices.md)
 * [Ausführung des Workflows überwachen](../../workflow/using/monitoring-workflow-execution.md)
 
-### Sendungen beobachten {#monitoring-deliveries}
+### Sendungen überwachen {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
-**SMTP reports**
+**SMTP-Berichte**
 
-SMTP reports display delivery statistics and SMTP errors by domain. [Mehr dazu](../../production/using/monitoring-processes.md)
+SMTP-Berichte zeigen die Statistik des Versands und SMTP-Fehler nach Domäne an. [mehr dazu](../../production/using/monitoring-processes.md)
 
 **Best Practices**
 
-[Best practices for delivery sending and designing](../../delivery/using/delivery-best-practices.md) can help you improve their performances.
+[Best Practices für das Senden und Entwerfen](../../delivery/using/delivery-best-practices.md) von Versänden können Ihnen dabei helfen, ihre Leistung zu verbessern.
 
-**Delivery troubleshooting**
-Specific actions can be performed when encountering issues with deliveries:
-* [Probleme mit der Lieferbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
+**Versand zur Fehlerbehebung** können bei Problemen mit Versänden ausgeführt werden:
+* [Probleme mit der Zustellbarkeit](../../production/using/performance-and-throughput-issues.md#deliverability_issues)
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
-* [Leistungsprobleme bei Versänden](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [Leistungsprobleme beim Versand](../../delivery/using/monitoring-a-delivery.md#performance_issues)
 * [Probleme](../../production/using/temporary-files.md) mit temporären Dateien - nur *bei lokalen Hostingmodellen*
 
 ### Datenbank überwachen {#monitoring-database}
@@ -115,11 +114,11 @@ Specific actions can be performed when encountering issues with deliveries:
 
 **Datenbankbereinigungs-Workflow**
 
-The Database cleanup workflow allows you to delete obsolete data from your database. Es wird empfohlen, exponentielles Wachstum der Datenbank zu vermeiden. [Klicken Sie hier](../../production/using/database-cleanup-workflow.md) für weitere Informationen.
+Mit dem Arbeitsablauf zur Datenbankbereinigung können Sie veraltete Daten aus Ihrer Datenbank löschen. Es wird empfohlen, exponentielles Wachstum der Datenbank zu vermeiden. [Klicken Sie hier](../../production/using/database-cleanup-workflow.md) für weitere Informationen.
 
 **Fehlerbehebung bei der Datenbankleistung**
 
-Specific actions can be performed when encountering issues with database performances. [Klicken Sie hier](../../production/using/database-performances.md) für weitere Informationen.
+Bei Problemen mit Datenbankleistung können spezifische Aktionen ausgeführt werden. [Klicken Sie hier](../../production/using/database-performances.md) für weitere Informationen.
 
 **Wartung der Datenbank**
 
@@ -129,7 +128,7 @@ Es wird empfohlen, dass Sie die Datenbankwartung regelmäßig durchführen, um z
 
 **Sicherung und Wiederherstellung**
 
-*on-premise and hybrid hosting models only*
+*Nur lokale und hybride Hostingmodelle*
 
 Die Sicherung ist unverzichtbar, um zu vermeiden, dass Daten im Ereignis eines Problems (physisch oder systembezogen) auf einem Computer verloren gehen. [Klicken Sie hier](../../production/using/backup.md) für weitere Informationen. Das Wiederherstellungsverfahren wird in [diesem Abschnitt](../../production/using/restoration.md)beschrieben.
 
