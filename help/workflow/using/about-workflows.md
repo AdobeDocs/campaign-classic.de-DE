@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+source-git-commit: 700cd82d87eccf6579afab5c9e8f7945807817da
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 84%
@@ -82,5 +82,5 @@ In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Autom
 * In [diesem Abschnitt](../../workflow/using/importing-data.md)erfahren Sie, wie Workflows Daten in Kampagne importieren.
 * Die Best Practices für den Arbeitsablauf werden auf [dieser Seite](../../workflow/using/workflow-best-practices.md)beschrieben.
 * Hinweise zur Workflow-Ausführung finden Sie in [diesem Abschnitt](../../workflow/using/starting-a-workflow.md).
-* Erfahren Sie, wie Sie Workflows auf [dieser Seite](../../workflow/using/monitoring-workflow-execution)überwachen.
+* Erfahren Sie, wie Sie Workflows auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md)überwachen.
 * Erfahren Sie, wie Sie Benutzern Zugriff auf Workflows auf [dieser Seite](../../workflow/using/managing-rights.md)gewähren.
