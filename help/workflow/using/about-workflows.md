@@ -1,8 +1,6 @@
 ---
 title: Über Workflows
-seo-title: Über Workflows
-description: Über Workflows
-seo-description: null
+description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiencen, senden Sie Nachrichten und vieles mehr.
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -14,13 +12,18 @@ discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: eccf0e9899426c2517748c7a72611ff098291cd2
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 84%
 
 ---
 
 
-# Über Workflows{#about-workflows}
+# Get started with workflows{#about-workflows}
+
+## Über Workflows
 
 Mit Adobe Campaign verfügen Sie über ein integriertes Workflow-Management-System, welches die zentrale Steuerung aller Prozesse und Vorgänge der Anwendung ermöglicht. Die Workflow-Engine dient der Modellierung und Automatisierung der verschiedenen Aufgaben der Anwendungsserver-Module. Mithilfe der grafischen Oberfläche lassen sich vollständige Arbeitsabläufe zur Segmentierung von Zielgruppen, der Ausführung von Kampagnen, dem Umgang mit Dateien etc. gestalten.
 
@@ -70,3 +73,14 @@ Jeder Workflow besteht aus:
 
    Weiterführende Informationen zu Workflow-Daten und Tabellen finden Sie in [diesem Abschnitt](../../workflow/using/how-to-use-workflow-data.md).
 
+## Wichtige Grundsätze und bewährte Verfahren
+
+In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Automatisierung von Prozessen mit Workflows:
+
+* Learn more about workflow activities in [this page](../../workflow/using/how-to-use-workflow-data.md).
+* In [diesem Abschnitt](../../workflow/using/building-a-workflow.md)erfahren Sie, wie Sie einen Workflow erstellen.
+* In [diesem Abschnitt](../../workflow/using/importing-data.md)erfahren Sie, wie Workflows Daten in Kampagne importieren.
+* Die Best Practices für den Arbeitsablauf werden auf [dieser Seite](../../workflow/using/workflow-best-practices.md)beschrieben.
+* Hinweise zur Workflow-Ausführung finden Sie in [diesem Abschnitt](../../workflow/using/starting-a-workflow.md).
+* Erfahren Sie, wie Sie Workflows auf [dieser Seite](../../workflow/using/monitoring-workflow-execution)überwachen.
+* Erfahren Sie, wie Sie Benutzern Zugriff auf Workflows auf [dieser Seite](../../workflow/using/managing-rights.md)gewähren.
