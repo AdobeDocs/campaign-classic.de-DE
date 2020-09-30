@@ -14,8 +14,11 @@ discoiquuid: 6dad49af-4818-471b-9df1-057cc6b9a68a
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 1c86322fa95aee024f6c691b61a10c21a9a22eb7
+translation-type: tm+mt
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 85%
 
 ---
 
@@ -44,7 +47,12 @@ Gehen Sie zur Erstellung von Testadressen wie folgt vor:
    ![](assets/s_ncs_user_seedlist_new_address.png)
 
 1. Geben Sie im **[!UICONTROL Adressfelder]**-Tab die Werte an, die bei der Analysephase in die Versandlogs (Tabelle **[!UICONTROL nms:broadLog]**) geschrieben werden sollen.
-1. Geben Sie im Tab **[!UICONTROL Zusätzliche Daten]** die Personalisierungsdaten an, die in mit Datamanagement-Workflows erstellten Sendungen verwendet werden und die durch einen spezifischen Wert ersetzt werden sollen.
+
+1. In the **[!UICONTROL Additional data]** tab, enter the personalization data used for the deliveries created in the Data management workflows and which you want to assign a specific value to.
+
+   >[!NOTE]
+   >
+   >Vergewissern Sie sich, dass zusätzliche Zielgruppen mit einem Alias definiert wurden, der mit &quot;@&quot;in der Aktivität &quot; **[!UICONTROL Anreicherung]** &quot;beginnt. Andernfalls sind Sie nicht in der Lage, sie mit Ihren Testadressen in Ihrer Versand-Aktivität richtig zu verwenden.
 
 ## Testadressenvorlagen erstellen {#creating-seed-address-templates}
 
