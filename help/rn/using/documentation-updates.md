@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 1b76fb1694545f4be02a63e4c670b81db632c5ee
+source-git-commit: 6483c3e2e9fd3a2951b2bc8bf6d8a3350361e86f
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3720'
 ht-degree: 98%
 
 ---
@@ -32,6 +32,8 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 Es wurde ein Hinweis hinzugefügt, der angibt, dass die Anzahl der aktiven Profil nur für Marketinginstanzen verfügbar ist. [Mehr dazu](../../platform/using/about-profiles.md#active-profiles)
 
 Ein neues Beispiel zur Schema-Edition wurde hinzugefügt, um ein Feld mit einer vorhandenen Referenztabelle zu verknüpfen. [Mehr dazu](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+
+Es wurde ein Hinweis zur Verwendung zusätzlicher Daten mit Testadressen in Versänden hinzugefügt. [Mehr dazu](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## August 2020 {#aug-2020}
 
