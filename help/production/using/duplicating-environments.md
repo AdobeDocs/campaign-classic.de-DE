@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: cb44d439c6866d94f8e1201575ab3d3094d6ad79
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 5%
@@ -31,7 +28,7 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Wenn Sie keinen Zugriff auf den Server und die Datenbank haben (gehostete Umgebung), können Sie die unten beschriebenen Schritte nicht ausführen. Wenden Sie sich an Adobe.
+>Wenn Sie keinen Zugriff auf den Server und die Datenbank haben (gehostete Umgebung), können Sie die unten beschriebenen Schritte nicht ausführen. Bitte kontaktieren Sie die Adobe.
 
 Zur Verwendung von Adobe Campaign müssen eine oder mehrere Umgebung installiert und konfiguriert werden: Entwicklung, Prüfung, Vorproduktion, Produktion usw.
 
@@ -96,7 +93,7 @@ pg_dump mydatabase > mydatabase.sql
 
 ### Schritt 2: Exportieren der Konfiguration der Zielgruppe-Umgebung (dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-Die meisten Konfigurationselemente unterscheiden sich für jede Umgebung: Externe Konti (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.)
+Die meisten Konfigurationselemente unterscheiden sich für jede Umgebung: externe konti (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.)
 
 Vor dem Speichern der Quelldatenbank in der Zielgruppe müssen Sie die Dev-Konfiguration (Zielgruppe Umgebung) exportieren. Exportieren Sie dazu den Inhalt dieser beiden Tabellen: **xtkoption** und **nmsextaccount**.
 
@@ -201,7 +198,7 @@ Stellen Sie auf der Umgebung Zielgruppe einen erneuten Beginn der Adobe Campaign
 
 >[!NOTE]
 >
->Bevor Sie das Adobe Campaign auf der **dev** -Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: Beginn nur im **Webmodul** .
+>Bevor Sie das Adobe Campaign auf der **dev** -Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: beginn nur im **Webmodul** .
 >  
 >Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**) und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot;für jedes Modul (mta, stat usw.) hinzu.
 
@@ -229,7 +226,7 @@ nlserver pdump
 
 So importieren Sie die Konfiguration aus der Zielgruppe Umgebung-Datenbank (dev):
 
-1. Öffnen Sie die Admin-Konsole der Datenbank und löschen Sie die Externe Konti (Tabelle nms:extAccount), deren ID nicht 0 (@id &lt;> 0) ist.
+1. Öffnen Sie die Admin-Konsole der Datenbank und leeren Sie die Externe Konti (Tabelle nms:extAccount), deren ID nicht 0 (@id &lt;> 0) ist.
 1. Importieren Sie in der Adobe Campaign-Konsole das Paket options_dev.xml, das zuvor über die Importpaket-Funktionalität erstellt wurde.
 
    Überprüfen Sie, ob die Optionen im Knoten **[!UICONTROL Administration > Plattform > Optionen]** tatsächlich aktualisiert wurden.
