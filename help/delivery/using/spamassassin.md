@@ -11,11 +11,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: d41658ab-ee79-4a5c-a165-d94b81eb2b33
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 99%
@@ -34,7 +31,7 @@ SpamAssassin nutzt eine Vielzahl von Spam-Erkennungs-Methoden, darunter:
 * Spam-Erkennung auf der Basis des DNS und der unscharfen Prüfsumme
 * Bayes&#39;sche Filtertechnologie
 * Externe Programme
-* Blockierungsliste
+* Blockierungslisten
 * Online-Datenbanken
 
 >[!NOTE]
