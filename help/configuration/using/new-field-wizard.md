@@ -1,7 +1,7 @@
 ---
-title: Neuer Feldassistent
-seo-title: Neuer Feldassistent
-description: Neuer Feldassistent
+title: Assistent für neue Felder
+seo-title: Assistent für neue Felder
+description: Assistent für neue Felder
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c8d35db-042a-47cf-a7a6-3bb63bf40d94
@@ -11,28 +11,28 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6da65fb5-18a1-41a0-96d8-588e383f944b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 5%
 
 ---
 
 
-# Neuer Feldassistent{#new-field-wizard}
+# Assistent für neue Felder{#new-field-wizard}
 
-Mit einem Assistenten, auf den Sie zugreifen können, **[!UICONTROL Tools > Advanced > Add new fields]** können Sie einer Tabelle in der Datenbank ein oder mehrere Felder hinzufügen.
+Mit einem Assistenten, der über **[!UICONTROL Tools > Erweitert > Hinzufügen neuen Felder]** aufgerufen werden kann, können Sie einer Tabelle in der Datenbank ein oder mehrere Felder hinzufügen.
 
-Beim Überprüfen des Assistenten wird das Erweiterungsschema der zu erweiternden Tabelle aktualisiert und das SQL-Skript zum Ändern der physischen Struktur der Datenbank gestartet.
+Beim Überprüfen des Assistenten wird das Erweiterungsschema der zu erweiternden Tabelle aktualisiert und das SQL-Skript zum Ändern der Datenbankstruktur gestartet.
 
-Dieser Assistent hat den Vorteil, dass er schnell ein Feld hinzufügen kann, ohne die Struktur eines Datenschemas kennen zu müssen.
+Diese Assistenzkraft hat den Vorteil, dass Sie schnell ein Schema hinzufügen können, ohne die Struktur eines Datenfelds kennen zu müssen.
 
 Der Hauptnachteil ist die Beschränkung der Daten und der Eigenschaften, die erweitert werden sollen.
 
 Die Bildschirme des Assistenten enthalten die folgenden Schritte:
 
-1. Auf der ersten Seite können Sie den Namen des zu erweiternden Schemas und den Namespace des Erweiterungsschemas eingeben, in dem die Änderungen gespeichert werden:
+1. Auf der ersten Seite können Sie den Namen des zu verlängernden Schemas und den Namensraum des Erweiterungsschemas eingeben, in dem die Änderungen gespeichert werden:
 
    ![](assets/d_ncs_integration_schema_addfield.png)
 
@@ -40,9 +40,9 @@ Die Bildschirme des Assistenten enthalten die folgenden Schritte:
 
    ![](assets/d_ncs_integration_schema_addfield2.png)
 
-1. Um die Änderungen zu bestätigen, klicken Sie auf die **[!UICONTROL Finish]** Schaltfläche.
+1. Um die Änderungen zu bestätigen, klicken Sie auf die Schaltfläche **[!UICONTROL Fertig stellen]** .
 
-In unserem Beispiel wird automatisch eine Erweiterungsdatei mit der Bezeichnung &quot;cus:empfänger&quot;erstellt und das entsprechende SQL-Skript ausgeführt:
+In unserem Beispiel wird automatisch eine Erweiterungsdatei mit dem Namen &quot;cus:Empfänger&quot;erstellt und das entsprechende SQL-Skript ausgeführt:
 
 ```
 <srcSchema extendedSchema="nms:recipient" label="Recipients" name="recipient"  namespace="cus">  
@@ -54,5 +54,5 @@ In unserem Beispiel wird automatisch eine Erweiterungsdatei mit der Bezeichnung 
 
 >[!NOTE]
 >
->Standardmäßig werden die hinzugefügten Felder mit dem **Benutzer** der Eigenschaft deklariert (mit dem Wert &quot;true&quot;). Auf diese Weise können Sie das Feld im Eingabeformular des erweiterten Schemas mit einem Steuerelement vom Typ &quot;treeEdit&quot;anzeigen und bearbeiten (siehe Eingabedatei).
+>Standardmäßig werden die hinzugefügten Felder mit dem **Benutzer** der Eigenschaft deklariert (mit dem Wert &quot;true&quot;). Auf diese Weise können Sie das Feld im Eingabefeld des erweiterten Schemas mit einem Steuerelement vom Typ &quot;treeEdit&quot;anzeigen und bearbeiten (siehe Eingabedatei).
 
