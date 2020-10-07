@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1888'
 ht-degree: 1%
@@ -33,7 +30,7 @@ Adobe Campaign Angebot keine dedizierte Lese-API pro Entität (keine getRecipien
 
 Mit Adobe Campaign können Sie Sammlungen verwalten: Mit Abfragen können Sie eine Reihe von Informationen wiederherstellen, die auf der Grundlage gesammelt wurden. Im Gegensatz zum Zugriff im SQL-Modus geben Adobe Campaign-APIs eine XML-Struktur anstelle von Datenspalten zurück. Adobe Campaign erstellt so zusammengesetzte Dokumente mit allen erfassten Daten.
 
-This operating mode does not offer one-to-one mapping between the attributes and elements of the XML documents and the columns of the tables in the database.
+Dieser Betriebsmodus Angebot keine Eins-zu-Eins-Zuordnung zwischen den Attributen und Elementen der XML-Dokumente und den Tabellenspalten in der Datenbank.
 
 XML-Dokumente werden in den Feldern des MEMO-Typs der Datenbank gespeichert.
 
@@ -45,7 +42,7 @@ Eine Darstellung des Datenmodells finden Sie in der Beschreibung des [Adobe Camp
 
 Informationen zum Generieren der Struktur finden Sie in diesem Artikel: [Generieren eines Datenmodells oder eines Datenwörterbuchs](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
-## Query and Writer {#query-and-writer}
+## Abfrage und Schriftsteller {#query-and-writer}
 
 Im folgenden Einführungs-Schema wird beschrieben, wie auf niedriger Ebene zwischen Datenbank und Kunden (Webseiten oder Adobe Campaign-Client-Konsole) zum Lesen (ExecuteQuery) und Schreiben (Writer) gewechselt wird.
 
@@ -67,7 +64,7 @@ Mit Schreibbefehlen können Sie einfache oder komplexe Dokumente mit Einträgen 
 
 Mit Transaktions-APIs können Sie Abversationen über den Befehl **updateOrInsert** verwalten: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung (**Zusammenführen**) konfigurieren: In diesem Betriebsmodus können Sie Teilaktualisierungen autorisieren.
 
-The XML structure offers a logical view of the data and lets you sidestep the physical structure of the SQL table.
+Die XML-Struktur Angebot eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
 Die Write-Methode wird in [Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-)dargestellt.
 
@@ -91,7 +88,7 @@ Definition der Methode &quot;ExecuteQuery&quot;im Schema &quot;xtk:queryDef&quot
 
 ### Format des XML-Dokuments der Eingabe-Abfrage {#format-of-the-xml-document-of-the-input-query}
 
-Die Struktur des XML-Dokuments der Abfrage wird im Schema &quot;xtk:queryDef&quot;beschrieben. This document describes the clauses of a SQL query: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
+Die Struktur des XML-Dokuments der Abfrage wird im Schema &quot;xtk:queryDef&quot;beschrieben. In diesem Dokument werden die Klauseln einer SQL-Abfrage beschrieben: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
 ```
 <queryDef schema="schema_key" operation="operation_type">
@@ -146,15 +143,15 @@ Eine Abfrage muss auf ein Beginn-Schema aus dem **Schema** -Attribut verweisen.
 Der gewünschte Vorgangstyp wird in das **operation** -Attribut eingegeben und enthält einen der folgenden Werte:
 
 * **get**: ruft einen Datensatz aus der Tabelle ab und gibt einen Fehler zurück, wenn die Daten nicht vorhanden sind,
-* **getIfExists**: retrieves a record from the table and returns an empty document if the data does not exist,
-* **select**: creates a cursor to return several records and returns an empty document if there is no data,
-* **count**: returns a data count.
+* **getIfExists**: ruft einen Datensatz aus der Tabelle ab und gibt ein leeres Dokument zurück, wenn die Daten nicht vorhanden sind.
+* **auswählen**: einen Cursor erstellt, um mehrere Datensätze zurückzugeben, und ein leeres Dokument zurückgibt, wenn keine Daten vorhanden sind,
+* **Anzahl**: gibt eine Datenanzahl zurück.
 
-The **XPath** syntax is used to locate data based on the input schema. For further information about XPaths, refer to [Data schemas](../../configuration/using/data-schemas.md).
+Die **XPath** -Syntax wird verwendet, um Daten basierend auf dem Eingabe-Schema zu suchen. Weitere Informationen zu XPaths finden Sie unter [Data Schemas](../../configuration/using/data-schemas.md).
 
-#### Example with the &#39;get&#39; operation {#example-with-the--get--operation}
+#### Beispiel mit der &quot;get&quot;-Operation {#example-with-the--get--operation}
 
-Retrieves the last name and first name of a recipient (&quot;nms:recipient&quot; schema) with a filter on the e-mail.
+Ruft den Nachnamen und Vornamen eines Empfängers (&quot;nms:Empfänger&quot;-Schema) mit einem Filter in der E-Mail ab.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -171,7 +168,7 @@ Retrieves the last name and first name of a recipient (&quot;nms:recipient&quot;
 </queryDef>
 ```
 
-#### Example with the &#39;select&#39; operation {#example-with-the--select--operation}
+#### Beispiel mit dem Vorgang &quot;Auswählen&quot; {#example-with-the--select--operation}
 
 Gibt die Liste der auf einem Ordner gefilterten Empfänger und die E-Mail-Domäne mit einer Sortierung in absteigender Reihenfolge am Geburtsdatum zurück.
 
@@ -229,7 +226,7 @@ So zählen Sie die Anzahl der Datensätze auf einer Abfrage:
 
 >[!NOTE]
 >
->Again we use the condition from the previous example. Die Klauseln `<select>` und werden nicht verwendet. </select>`
+>Wieder verwenden wir die Bedingung aus dem vorherigen Beispiel. Die Klauseln `<select>` und werden nicht verwendet. </select>`
 
 #### Nach welchen Kriterien werden die Daten gruppiert {#data-grouping}
 
@@ -271,7 +268,7 @@ Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zum z
 
 Im Folgenden finden Sie zwei Beispiele für die Blockierung bei der gleichen Bedingung.
 
-* The simple version in a single expression:
+* Die einfache Version in einem Ausdruck:
 
    ```
    <where>
@@ -344,7 +341,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
 
    Das direkte Abrufen der Felder eines Sammlungslinks aus der `<select>` Klausel wird nicht empfohlen, da die Abfrage ein Kardinalprodukt zurückgibt. Sie wird nur verwendet, wenn die verknüpfte Tabelle nur einen Datensatz enthält (Beispiel `<node expr="">`).
 
-   Example on the &quot;subscription&quot; collection link:
+   Beispiel für den Link zur Sammlung &quot;Abonnement&quot;:
 
    ```
    <select>
@@ -401,21 +398,21 @@ Um eine Bindung eines Parameters zu vermeiden, muss das Attribut &quot;noSqlBind
 
 #### Tipps zum Aufbau von Abfragen: {#query-building-tip-}
 
-To help with the syntax of a query, you can write the query using the generic query editor in the Adobe Campaign client console ( **[!UICONTROL Tools/ Generic query editor...]** menu). Gehen Sie dazu wie folgt vor:
+Um die Syntax einer Abfrage zu unterstützen, können Sie die Abfrage mit dem Generische Abfragetool in der Adobe Campaign-Client-Konsole ( **[!UICONTROL Tools/ Generische Abfragetool...]** ). Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie die abzurufenden Daten aus:
 
    ![](assets/s_ncs_integration_webservices_queyr1.png)
 
-1. Define the filter condition:
+1. Definieren Sie die Filterbedingung:
 
    ![](assets/s_ncs_integration_webservices_queyr2.png)
 
-1. Execute the query and press CTRL+F4 to view the query source code.
+1. Führen Sie die Abfrage aus und drücken Sie STRG+F4, um den Quellcode der Abfrage Ansicht.
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### Output document format {#output-document-format}
+### Ausgabeformat Dokument {#output-document-format}
 
 Der Parameter return ist ein XML-Dokument im Format des mit der Abfrage verknüpften Schemas.
 
@@ -462,7 +459,7 @@ Gibt zurück:
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
 ```
 
-Instead of:
+Statt:
 
 ```
 <recipient firstName="John" lastName="Doe">
@@ -512,17 +509,17 @@ Instead of:
    </SOAP-ENV:Envelope>
    ```
 
-## Write / WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
+## Write/WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
 
-These services are used to insert, update, or delete an entity (&quot;Write&quot; method) or a collection of entities (&quot;WriteCollection&quot; method).
+Diese Dienste werden zum Einfügen, Aktualisieren oder Löschen einer Entität (&quot;Write&quot;-Methode) oder einer Auflistung von Entitäten (&quot;WriteCollection&quot;-Methode) verwendet.
 
-The entities to be updated are associated with a data schema. The input parameters are an authentication string (must be logged in) and an XML document containing the data to be updated.
+Die zu aktualisierenden Entitäten sind mit einem Schema verknüpft. Bei den Eingabeparametern handelt es sich um eine Authentifizierungszeichenfolge (muss angemeldet sein) und ein XML-Dokument, das die zu aktualisierenden Daten enthält.
 
-This document is supplemented by instructions for configuring the write procedures.
+Dieses Dokument wird durch Anweisungen zur Konfiguration der Schreibvorgänge ergänzt.
 
-The call does not return any data, except errors.
+Der Aufruf gibt keine Daten außer Fehler zurück.
 
-Definition of the &quot;Write&quot; and &quot;WriteCollection&quot; methods in the &quot;xtk:session&quot; schema:
+Definition der Methoden &quot;Write&quot;und &quot;WriteCollection&quot;im Schema &quot;xtk:session&quot;:
 
 ```
 <method name="Write" static="true">
@@ -539,7 +536,7 @@ Definition of the &quot;Write&quot; and &quot;WriteCollection&quot; methods in t
 
 >[!NOTE]
 >
->Dies ist eine &quot;statische&quot;Methode. The input parameters are included in an XML document in the format of the schema to be updated.
+>Dies ist eine &quot;statische&quot;Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des zu aktualisierenden Schemas enthalten.
 
 ### Übersicht {#overview}
 
@@ -551,13 +548,13 @@ Der Abstimmschlüssel kann daher mit dem **_key** -Attribut, das die Liste von X
 
 Sie können den Typ des Vorgangs erzwingen, indem Sie das Attribut **_operation** mit den folgenden Werten füllen:
 
-* **insert**: forces the insertion of the record (the reconciliation key is not used),
+* **Einfügen**: erzwingt das Einfügen des Datensatzes (der Abstimmschlüssel wird nicht verwendet),
 * **insertOrUpdate**: aktualisiert oder fügt den Datensatz je nach Abstimmschlüssel ein (Standardmodus),
 * **update**: aktualisiert den Datensatz; nichts tut, wenn die Daten nicht vorhanden sind,
 * **löschen**: löscht die Datensätze,
 * **none**: wird nur für die Linkabstimmung verwendet, ohne Aktualisierung oder Einfügen.
 
-### Example with the &#39;Write&#39; method {#example-with-the--write--method}
+### Beispiel mit der Methode &#39;Write&#39; {#example-with-the--write--method}
 
 Aktualisieren oder Einfügen eines Empfängers (impliziter &quot;insertOrUpdate&quot;-Vorgang) mit E-Mail-Adresse, Geburtsdatum und Ort:
 
@@ -603,15 +600,15 @@ Verknüpfen des Ordners mit einem Empfänger, der auf seinem internen Namen (@na
 
 Die Attribute &quot;_key&quot;und &quot;_operation&quot;können in ein verknüpftes Element eingegeben werden. Das Verhalten bei diesem Schema ist mit dem beim Hauptelement identisch.
 
-The definition of the key of the main entity (&quot;nms:recipient&quot;) consists of a field from a linked table (element `<folder>`  schema &quot;xtk:folder&quot;) and the e-mail.
+Die Definition des Schlüssels der Hauptentität (&quot;nms:Empfänger&quot;) besteht aus einem Feld aus einer verknüpften Tabelle (Element- `<folder>` Schema &quot;xtk:folder&quot;) und der E-Mail.
 
 >[!NOTE]
 >
->The operation &quot;none&quot; entered on the folder element defines a reconciliation on the folder without update or insert.
+>Der im Ordnerelement eingegebene Vorgang &quot;none&quot;definiert einen Abgleich im Ordner ohne Aktualisierung oder Einfügen.
 
 #### Example 2 {#example-2}
 
-Updating the company (linked table in &quot;cus:company&quot; schema) from a recipient:
+Aktualisieren der Firma (verknüpfte Tabelle im Schema &quot;cus:Firma&quot;) von einem Empfänger:
 
 ```
 <recipient _key="[folder/@name], @email" email="john.doe@adobe.net" lastName="Doe" firstName="John" xtkschema="nms:recipient">
@@ -633,13 +630,13 @@ Hinzufügen eines Empfängers zu einer Gruppe mit der Tabelle für die Gruppenbe
 
 >[!NOTE]
 >
->The definition of the key is not entered in the `<rcpgroup>` element because an implicit key based on the group name is defined in the &quot;nms:group&quot; schema.
+>Die Schlüsseldefinition wird nicht in das `<rcpgroup>` Element eingegeben, da ein impliziter Schlüssel, der auf dem Gruppennamen basiert, im Schema &quot;nms:group&quot;definiert ist.
 
-### XML collection elements {#xml-collection-elements}
+### XML-Erfassungselemente {#xml-collection-elements}
 
-By default, all the collection elements must be populated in order to update the XML collection elements. Data from the database will be replaced with data from the input document. If the document contains only the elements to be updated, you must populate the &quot;_operation&quot; attribute on all collection elements to be updated in order to force a merge with the XML data of the database.
+Standardmäßig müssen alle Sammlungselemente ausgefüllt sein, um die XML-Sammlungselemente zu aktualisieren. Daten aus der Datenbank werden durch Daten aus dem Dokument ersetzt. Wenn das Dokument nur die zu aktualisierenden Elemente enthält, müssen Sie das Attribut &quot;_operation&quot;für alle zu aktualisierenden Sammlungselemente ausfüllen, um eine Zusammenführung mit den XML-Daten der Datenbank zu erzwingen.
 
-### Example of SOAP messages {#example-of-soap-messages-1}
+### Beispiel für SOAP-Meldungen {#example-of-soap-messages-1}
 
 * Abfrage:
 
@@ -669,7 +666,7 @@ By default, all the collection elements must be populated in order to update the
    </SOAP-ENV:Envelope>
    ```
 
-   Return with error:
+   Rückgabe mit Fehler:
 
    ```
    <?xml version='1.0'?>
