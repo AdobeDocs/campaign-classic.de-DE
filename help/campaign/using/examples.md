@@ -11,11 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 7b0aef75-345d-45be-b7d0-a9f6944ee678
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: eee744eb5bc7a43fd412ffb01f0546385146a978
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 100%
 
 ---
 
@@ -142,6 +142,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
    * den **[!UICONTROL Wert des Verteilungsfelds]**, der den an der vorgesehenen Kampagne beteiligten Lokalstellen entspricht;
    * den **[!UICONTROL Titel]** der Lokalstelle;
    * die gewählte **[!UICONTROL Größe]** (fest oder in Prozent): Der **Standardwert 0** bewirkt eine Auswahl aller mit der jeweiligen Lokalstelle in Verbindung stehender Empfänger.
+
    ![](assets/mkg_dist_use_case_target_valid4.png)
 
 1. Speichern Sie die neue Datenverteilung.
@@ -158,6 +159,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
    * den Inhalt der Benachrichtigung, die die Lokalstellen erhalten;
    * die Validierungserinnerung;
    * die vorgezogene Bearbeitung der Kampagne nach Validierung..
+
    ![](assets/mkg_dist_use_case_target_valid7.png)
 
 1. Speichern Sie die Kampagne.
@@ -170,6 +172,7 @@ Erstellen Sie nun ausgehend von der Rubrik **Kampagnen** aus ein **Kampagnenkit*
 
    * im Modus **Manuell** nehmen die Lokalstellen an der Kampagne teil, wenn Sie die Einladung der Zentralstelle akzeptieren. Sie können bei Bedarf die vorausgewählten Kontakte löschen. Eine Validierung der Teilnahme durch einen Vorgesetzten ist zwingend erforderlich.
    * im Modus **Automatisch** sind die Lokalstellen verpflichtet, an der Kampagne teilzunehmen, sofern sie sich nicht manuell abmelden. Sie können Kontakte löschen, ohne dass eine weitere Validierung erforderlich ist.
+
    ![](assets/mkg_dist_use_case_target_valid.png)
 
 1. Im Tab **[!UICONTROL Beschreibung]** können Sie eine Beschreibung der Kampagne hinzufügen und Dokumente anhängen, die den Lokalstellen übermittelt werden.
