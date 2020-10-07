@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: 0c33fd79-8fa5-4cc0-8881-c6d6f4ee1648
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '52'
+ht-degree: 40%
 
 ---
 
 
 # Formulare bearbeiten{#editing-forms}
 
-Auf den Bildschirm zum Erstellen und Konfigurieren des Eingabefelds kann über den **[!UICONTROL Administration > Configuration > Input forms]** Ordner der Adobe Campaign-Client-Konsole zugegriffen werden:
+Auf den Bildschirm zum Erstellen und Konfigurieren des Eingabefelds können Sie über den Ordner **[!UICONTROL Administration > Konfiguration > Eingabeformulare]** der Adobe Campaign-Client-Konsole zugreifen:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
@@ -30,7 +30,7 @@ Der XML-Code des Formulars wird im Editor erfasst:
 
 ![](assets/d_ncs_integration_form_edit.png)
 
-Die Vorschau generiert eine Anzeige des Eingabformulars:
+Die Vorschau generiert eine Anzeige des Eingabefelds:
 
 ![](assets/d_ncs_integration_form_preview.png)
 
