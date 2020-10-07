@@ -1,7 +1,7 @@
 ---
-title: Bereitstellung von Mid-Sourcing
-seo-title: Bereitstellung von Mid-Sourcing
-description: Bereitstellung von Mid-Sourcing
+title: Mid-Sourcing-Bereitstellung
+seo-title: Mid-Sourcing-Bereitstellung
+description: Mid-Sourcing-Bereitstellung
 seo-description: null
 page-status-flag: never-activated
 uuid: e359c486-7ee6-4295-80fc-4c371a0ef068
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 19220d8e-9494-46b4-9aa0-4c4a729aea96
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: be590c6d993eecacf51736e3c3e415addae5c6bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '353'
+ht-degree: 3%
 
 ---
 
 
-# Bereitstellung von Mid-Sourcing{#mid-sourcing-deployment}
+# Mid-Sourcing-Bereitstellung{#mid-sourcing-deployment}
 
 Diese Konfiguration ist eine optimale Zwischenlösung zwischen einer gehosteten (ASP) Konfiguration und Internalisierung. Die nach außen gerichteten Ausführungskomponenten werden auf einem &quot;Mid-Sourcing&quot;-Server ausgeführt, der bei Adobe Campaign gehostet wird.
 
@@ -40,15 +40,15 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 ### Vorteile {#advantages}
 
 * Vereinfachte Serverkonfiguration: Es ist nicht erforderlich, dass der Kunde nach außen gerichtete Module (mta und inMail) konfiguriert.
-* Eingeschränkte Nutzung der Bandbreite: Da die Ausführung vom Server mit mittlerer Quelle erfolgt, ist nur eine ausreichende Bandbreite erforderlich, um Personalisierungsdaten an den Server mit mittlerer Quelle zu senden.
-* Hohe Verfügbarkeit ist kein internes Problem mehr: Das Problem wird auf den Server mit mittlerer Quelle (Umleitung, Spiegelseiten, Ausführungsserver usw.) verlagert.
-* Die Datenbank verlässt das Unternehmen nicht: Nur Daten, die zum Zusammenstellen der Nachrichten erforderlich sind, werden an den mid-sourcing-Server gesendet (dazu kann HTTPS verwendet werden).
-* Diese Art der Bereitstellung kann eine Lösung für große Volumen-Architekturen (viele Empfänger in der Datenbank) mit einem erheblichen Bereitstellungsdurchsatz sein.
+* Eingeschränkte Nutzung der Bandbreite: Da die Ausführung vom Mid-Sourcing-Server erfolgt, ist nur eine ausreichende Bandbreite erforderlich, um Personalisierungsdaten an den Mid-Sourcing-Server zu senden.
+* Hohe Verfügbarkeit ist kein internes Problem mehr: Das Problem wird auf den Mid-Sourcing-Server verschoben (Umleitung, Mirrorseiten, Ausführungsserver usw.).
+* Die Firma wird nicht verlassen: Nur Daten, die zum Zusammenführen der Meldungen erforderlich sind, werden an den Mid-Sourcing-Server gesendet (dazu kann HTTPS verwendet werden).
+* Diese Art der Bereitstellung kann eine Lösung für Architekturen mit hohem Volumen (viele Empfänger in der Datenbank) mit einem erheblichen Durchsatz an Versänden sein.
 
 ### Nachteile {#disadvantages}
 
-* Geringfügige Verzögerung bei der Anzeige von Informationen zur Nachrichtenausführung und für die Berichterstellungsfunktion aufgrund der Zeit, die benötigt wird, um Informationen vom mid-sourcing-Server zurückzuerhalten.
-* Umfragen und Webformulare bleiben auf der Client-Plattform erhalten.
+* Leichte Verzögerung bei der Anzeige von Informationen zur Nachrichtenausführung und für die Funktionalität des Berichte aufgrund der Zeit, die benötigt wird, um Informationen vom Mid-Sourcing-Server zurückzuerhalten.
+* Umfragen und Webformulare bleiben auf der Clientplattform erhalten.
 
 ### Empfohlene Ausrüstung {#recommended-equipment}
 
@@ -57,16 +57,16 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 
 >[!NOTE]
 >
->Umleitung und Mid-Sourcing sind separate Elemente, aber der Tracking-Server wird im Allgemeinen für die Mid-Sourcing-Server freigegeben.
+>Umleitung und Mid-Sourcing sind separate Elemente, der Tracking-Server wird jedoch im Allgemeinen für die Mid-Sourcing-Server freigegeben.
 
-## Installation und Konfigurationsschritte {#installation-and-configuration-steps-}
+## Installationsschritte und Konfigurationsschritte {#installation-and-configuration-steps-}
 
 ### Voraussetzungen {#prerequisites}
 
 * JDK auf dem Anwendungsserver.
 * Zugriff auf einen Datenbankserver auf dem Anwendungsserver.
-* Firewall konfiguriert, um HTTP (80)- oder HTTPS (443)-Anschlüsse an den mid-sourcing-Server zu öffnen.
+* Firewall, die zum Öffnen von HTTP (80)- oder HTTPS (443)-Anschlüssen auf dem Mid-Sourcing-Server konfiguriert ist.
 
-### Installieren und Konfigurieren (Bereitstellung mit mittlerer Quelle) {#installing-and-configuring--mid-sourcing-deployment-}
+### Installieren und Konfigurieren (Mid-Sourcing-Bereitstellung) {#installing-and-configuring--mid-sourcing-deployment-}
 
 Siehe [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).
