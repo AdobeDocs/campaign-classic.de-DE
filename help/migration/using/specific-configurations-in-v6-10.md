@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 1b6ce502-0d33-46e4-b52e-124b849de11f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 In Adobe Campaign v7 wurden einige Verbesserungen vorgenommen, um die Sicherheit zu optimieren.
 
-Wenn Sie eine Migration von einer 6.10-Plattform durchführen und Ihre Client-Konsole älter als der 8104-Build ist, müssen Sie sie aktualisieren. Wenn dies nicht vor der Migration erfolgt, werden Sie beim erneuten Verbinden aufgefordert, Ihre Client-Konsole zu aktualisieren. Klicks **[!UICONTROL Yes]**.
+Wenn Sie eine Migration von einer 6.10-Plattform durchführen und Ihre Client-Konsole älter als der 8104-Build ist, müssen Sie sie aktualisieren. Wenn dies nicht vor der Migration erfolgt, werden Sie beim erneuten Verbinden aufgefordert, Ihre Client-Konsole zu aktualisieren. Klicken Sie auf **[!UICONTROL Ja]**.
 
 >[!IMPORTANT]
 >
