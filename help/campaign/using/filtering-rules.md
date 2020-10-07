@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 0d50826e-2211-4c3b-8413-ca1453bba6c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9784e0db6f1bef5abdf93d3517da04fe1ba69e7d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '528'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -96,7 +93,7 @@ Im unteren Bereich des gleichen Tabs können Sie zudem einzelne Filterregeln hin
 
 Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Ausschluss der Adressen]** (**[!UICONTROL addressExclusions]**) und **[!UICONTROL Ausschluss der Domains]** (**[!UICONTROL domainExclusions]**). Während der E-Mail-Analyse werden die E-Mail-Adressen der Empfänger anhand dieser Regeln mit den verbotenen Adressen oder Domain-Namen in einer verschlüsselten globalen in der Versandinstanz verwalteten Unterdrückungsliste verglichen. Wenn es eine Übereinstimmung gibt, wird die Nachricht nicht an den entsprechenden Empfänger gesendet.
 
-Dadurch soll vermieden werden, der blockierungsliste durch bösartige Aktivität hinzugefügt zu werden, insbesondere durch den Einsatz eines Spamtraps. Wenn zum Beispiel ein Spamfilter verwendet wird, um über eines Ihrer Web-Formulare zu abonnieren, wird automatisch eine Bestätigungs-E-Mail an diesen Spamfilter gesendet, was dazu führt, dass Ihre Adresse automatisch zur blockierungsliste hinzugefügt wird.
+Auf diese Weise soll das Hinzufügen zur Blockierungsliste aufgrund von schädlichen Aktivitäten, insbesondere durch die Verwendung von Spamtraps, vermieden werden. Wenn beispielsweise für die Anmeldung über ein Web-Formular eine Spamtrap verwendet wird, wird automatisch eine Bestätigungs-E-Mail an diese Spamtrap gesendet. Als Folge davon wird Ihre Adresse automatisch auf die Blockierungsliste gesetzt.
 
 >[!NOTE]
 >
