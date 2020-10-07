@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: b65e8d27-f427-464e-ad42-51c0a88eee86
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 3%
 
 ---
 
@@ -24,21 +24,21 @@ source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
 
 ## Grundsätze {#principles}
 
-Um die Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf den **[!UICONTROL Administration > Configuration > Data schemas]** Knoten der Adobe Campaign-Client-Konsole.
+Um die Schema zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf den Knoten **[!UICONTROL Administration > Konfiguration > Data Schemas]** in der Adobe Campaign-Client-Konsole.
 
 >[!NOTE]
 >
->Vordefinierte Datenschemata können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole gelöscht werden.
+>Standardmäßig verfügbare Schema können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole gelöscht werden.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
-Das Bearbeitungsfeld zeigt den XML-Inhalt des Quellschemas an:
+Das Bearbeitungsfeld zeigt den XML-Inhalt des Quell-Schemas an:
 
 ![](assets/d_ncs_integration_schema_edition.png)
 
 >[!NOTE]
 >
->Mit dem Bearbeitungssteuerelement &quot;Name&quot;können Sie den Schemaschlüssel aus Name und Namespace eingeben. Die Attribute &quot;name&quot;und &quot;namespace&quot;des Stammelements des Schemas werden automatisch in der XML-Bearbeitungszone des Schemas aktualisiert.
+>Mit dem Bearbeitungssteuerelement &quot;Name&quot;können Sie den Schema-Schlüssel aus Name und Namensraum eingeben. Die Attribute &quot;name&quot;und &quot;Namensraum&quot;des Stammelements des Schemas werden automatisch im XML-Bearbeitungsbereich des Schemas aktualisiert.
 
 Die Vorschau generiert automatisch das erweiterte Schema:
 
@@ -46,9 +46,9 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 
 >[!NOTE]
 >
->Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
+>Beim Speichern des Quelldokuments wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die vollständige Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte &quot;Vorschau&quot;verwenden. Wenn das Schema erweitert wurde, können Sie alle Erweiterungen visualisieren. Ergänzend dazu werden auf der Registerkarte &quot;Dokumentation&quot;alle Schemaattribute und -elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) angezeigt. Die Registerkarte &quot;Dokumentation&quot;gilt nur für erstellte Schemata. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
+Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte &quot;Vorschau&quot;verwenden. Wenn das Schema erweitert wurde, können Sie dann alle Erweiterungen visualisieren. Als Ergänzung werden auf der Registerkarte &quot;Dokumentation&quot;alle Schema-Attribute und -Elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) angezeigt. Die Registerkarte &quot;Dokumentation&quot;gilt nur für generierte Schema. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
 
 ## Beispiel: Erstellen einer Vertragstabelle {#example--creating-a-contract-table}
 
@@ -56,20 +56,20 @@ Im folgenden Beispiel möchten wir eine neue Tabelle für **Verträge** im Daten
 
 Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktualisieren, um die entsprechende Tabelle zu erstellen. Folgende Schritte sind dazu nötig:
 
-1. Bearbeiten Sie den **[!UICONTROL Administration > Configuration > Data schemas]** Knoten der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL New]** .
-1. Wählen Sie die **[!UICONTROL Create a new table in the data model]** Option und klicken Sie auf **[!UICONTROL Next]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL New]** .
+1. Wählen Sie die Option &quot;Neue Tabelle **[!UICONTROL erstellen&quot;in der Option &quot;Datenmodell]** &quot;und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. Geben Sie einen Namen für die Tabelle und einen Namespace an.
+1. Geben Sie einen Tabellennamen und einen Namensraum an.
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >Standardmäßig werden von Benutzern erstellte Schemata im Namespace &quot;cus&quot;gespeichert. Weitere Informationen hierzu finden Sie unter [Identifizierung eines Schemas](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Standardmäßig werden von Benutzern erstellte Schema im Namensraum &quot;cus&quot;gespeichert. Weitere Informationen finden Sie unter [Identifizierung eines Schemas](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Einstiegsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf die **[!UICONTROL Insert]** Schaltfläche und wählen Sie die hinzuzufügende Einstellung aus.
+1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Einstiegsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf die Schaltfläche &quot; **[!UICONTROL Einfügen]** &quot;und wählen Sie die hinzuzufügende Einstellung aus.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -91,7 +91,7 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    </srcSchema>
    ```
 
-   Fügen Sie den Vertragstyp hinzu und fügen Sie einen Index auf die Vertragsnummer ein.
+   hinzufügen die Art des Vertrags und fügen Sie einen Index auf die Vertragsnummer ein.
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
