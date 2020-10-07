@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3522f4f50770dde220610cd5f1c4084292d8f1f5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3047'
 ht-degree: 21%
@@ -31,7 +28,7 @@ Im folgenden Abschnitt erhalten Sie einen Überblick über die Konfiguration, di
 
 >[!NOTE]
 >
->Einige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
+>Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
 
 Weitere Informationen zu den Konzepten und Best Practices im Zusammenhang mit der Lieferbarkeit finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
@@ -58,7 +55,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Die **mta** wählt geeignete Nachrichten aus und weist ihnen eine verfügbare **mtachild** zu.
 1. Das **Mtachild** lädt alle zum Erstellen der Nachricht erforderlichen Informationen (Inhalt, Personalisierungselemente, Anlagen, Bilder usw.) und leitet die Nachricht an den **E-Mail-Traffic-Shaper** weiter.
-1. Sobald der E-Mail-Traffic-Gestalter die Autorisierung des Statistikservers (**SMTP-Status**) erhält, wird die Nachricht an den Empfänger gesendet.
+1. Sobald der E-Mail-Traffic-Gestalter die Autorisierung des Statistikservers (**SMTP STAT**) erhält, wird die Nachricht an den Empfänger gesendet.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
 
@@ -252,10 +249,12 @@ Die folgenden Parameter stehen für jede Regel zur Verfügung:
    * a.mx.yahoo.com
    * b.mx.yahoo.com
    * c.mx.yahoo.com
+
    mit folgenden Masken kompatibel:
 
    * *.yahoo.com
    * ?.mx.yahoo.com
+
    Beispielsweise lautet bei der E-Mail-Adresse foobar@gmail.com die Domain gmail.com und der MX-Eintrag sieht folgendermaßen aus:
 
    ```
@@ -272,6 +271,7 @@ Die folgenden Parameter stehen für jede Regel zur Verfügung:
 
    * Eine Ziffer: Die Regel wird nur für diese publicId angewendet,
    * A range of numbers (**number1-number2**): the rule will apply to all publicIds between these two numbers.
+
    >[!NOTE]
    >
    >Wenn das Feld leer ist, gilt die Regel für alle Bezeichner.
@@ -384,7 +384,7 @@ Die Parameter lauten wie folgt:
 * **heloHost**: dieser Bezeichner stellt die IP-Adresse dar, wie sie vom SMTP-Server angezeigt wird.
 
 * **publicId**: Diese Informationen sind nützlich, wenn eine IP-Adresse von mehreren Adobe Campaign- **mtas** hinter einem NAT-Router freigegeben wird. Der Statistikserver verwendet diesen Bezeichner, um die Verbindungsdaten zu speichern und Statistiken zwischen diesem Startpunkt und dem Zielgruppen-Server zu senden.
-* **Gewichtung**: können Sie die relative Häufigkeit der Verwendung der Adresse definieren. Standardmäßig haben alle Adressen eine Gewichtung von 1.
+* **gewichtung**: können Sie die relative Häufigkeit der Verwendung der Adresse definieren. Standardmäßig haben alle Adressen eine Gewichtung von 1.
 
 >[!NOTE]
 >
@@ -425,4 +425,4 @@ Der Parameter **maxWorkingSetMb** wird empirisch berechnet, indem die maximale A
 
 ### Anpassen der Anzahl der mtachild {#adjust-the-number-of-mtachild}
 
-Die Anzahl der Kinder sollte die Anzahl der Prozessoren in der Maschine nicht überschreiten (ca. 1000 Sitzungen). Es wird empfohlen, 8 **mtachild** nicht zu überschreiten. Anschließend können Sie die Anzahl der Meldungen pro **Kind** (**maxMsgPerChild**) erhöhen, um eine ausreichende Lebensdauer zu erzielen.
+Die Anzahl der Kinder sollte die Anzahl der Prozessoren in der Maschine nicht überschreiten (ca. 1000 Sitzungen). Es wird empfohlen, 8 **mtachild** nicht zu überschreiten. Anschließend können Sie die Anzahl der Meldungen pro **Kind** (**maxMsgPerChild**) erhöhen, um eine ausreichende Lebensdauer zu erreichen.
