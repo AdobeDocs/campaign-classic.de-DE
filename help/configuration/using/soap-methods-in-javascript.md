@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 815d3eb9-ac45-441f-9a5f-0cd505fcf88a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 12%
 
 ---
 
@@ -26,7 +26,7 @@ Dies ist das JavaScript, das auf dem Adobe Campaign-Server ausgeführt wird.
 
 ## Statische Methoden {#static-methods}
 
-Auf statische SOAP-Methoden wird zugegriffen, indem eine Methode für das Objekt aufgerufen wird, das das Schema darstellt. Schemas sind Eigenschaften von &#39;namespace&#39;-Objekten. Diese Namespaces sind globale Variablen, daher stellen z. B. xtk- oder nms-Variablen die entsprechenden Namespaces dar
+Statische SOAP-Methoden werden aufgerufen, indem eine Methode für das Objekt aufgerufen wird, das das Schema darstellt. Schema sind Eigenschaften von &quot;Namensraum&quot;-Objekten. Bei diesen Namensräumen handelt es sich um globale Variablen. Daher stellen z. B. xtk- oder nms-Variablen die entsprechenden Namensraum dar.
 
 Im folgenden Beispiel wird die statische PostEvent-Methode des Schemas xtk:workflow aufgerufen:
 
@@ -36,7 +36,7 @@ xtk.workflow.PostEvent("WKF1", "signal", "", $recipient-id='123', false)
 
 ## Nicht-statische Methoden {#non-static-methods}
 
-Um nicht-statische SOAP-Methoden zu verwenden, muss zunächst eine Entität mit den Methoden &quot;get&quot;oder &quot;create&quot;für die entsprechenden Schemata abgerufen werden.
+Um nicht-statische SOAP-Methoden zu verwenden, muss zunächst eine Entität mit den Methoden &quot;get&quot;oder &quot;create&quot;für die entsprechenden Schema abgerufen werden.
 
 Im folgenden Beispiel wird die ExecuteQuery-Methode des Schemas &quot;xtk:queryDef&quot;aufgerufen:
 
@@ -57,7 +57,7 @@ for each (var w in res.workflow)
 
 ## Beispiele {#examples}
 
-* Abfrage auf der Empfängertabelle mit einer &quot;get&quot;-Operation:
+* Abfrage auf der Empfänger-Tabelle mit einer &quot;get&quot;-Operation:
 
    ```
    var query = xtk.queryDef.create(  
@@ -78,7 +78,7 @@ for each (var w in res.workflow)
    logInfo(recipient.@lastName)
    ```
 
-* Abfrage auf der Empfängertabelle mit einem &quot;Select&quot;-Vorgang:
+* Abfrage auf der Empfänger-Tabelle mit einem &quot;Select&quot;-Vorgang:
 
    ```
    var query = xtk.queryDef.create(  
@@ -103,7 +103,7 @@ for each (var w in res.workflow)
    }
    ```
 
-* Daten in die Empfängertabelle schreiben:
+* Daten in die Empfänger-Tabelle schreiben:
 
    ```
    xtk.session.Write(<recipient _operation="insert" lastName="Martinez" firstName="Peter" xtkschema="nms:recipient"/>);
