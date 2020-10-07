@@ -1,7 +1,7 @@
 ---
-title: Verbindung fehlgeschlagen
-seo-title: Verbindung fehlgeschlagen
-description: Verbindung fehlgeschlagen
+title: Verbindung schlägt fehl
+seo-title: Verbindung schlägt fehl
+description: Verbindung schlägt fehl
 seo-description: null
 page-status-flag: never-activated
 uuid: 5e4cf47d-9699-4b4c-9c45-064fdc17110a
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 493067fb-68f1-48b9-afaa-3127a847db83
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 90813bc2913d56136067b9f64c0e934df3f17473
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 3%
 
 ---
 
 
-# Verbindung fehlgeschlagen{#failure-to-connect}
+# Verbindung schlägt fehl{#failure-to-connect}
 
 Die Gründe dafür können vielfältig sein und von verschiedenen Kontexten abhängen.
 
@@ -38,19 +38,19 @@ Die Gründe dafür können vielfältig sein und von verschiedenen Kontexten abh�
 
       Vergewissern Sie sich, dass Sie eine Verbindung zu Websites im Internet herstellen können (z. B.). Wenn Sie keine Verbindung herstellen können, liegt das Problem auf Ihrem Computer. Wenden Sie sich an Ihren Systemadministrator.
 
-   * Können Sie über einen anderen Dienst eine Verbindung zum Server herstellen, auf dem Adobe Campaign gehostet wird?
+   * Können Sie über einen anderen Dienst eine Verbindung zum Server-Hosting-Adobe Campaign herstellen?
 
-      Stellen Sie eine Verbindung mit dem Server über SSH oder auf andere Weise her. Ist dies nicht möglich, hat Ihr Hostunternehmen ein Problem. Wenden Sie sich an den Systemadministrator.
+      Stellen Sie eine Verbindung mit dem Server über SSH oder auf andere Weise her. Wenn dies nicht möglich ist, liegt ein Problem mit Ihrer Host-Firma vor. Wenden Sie sich an den Systemadministrator.
 
 1. **Überprüfungen auf Webserverseite** (IIS/Apache/etc.)
 
    * Reagiert der Webserver?
 
-      Stellen Sie mithilfe eines Webbrowsers eine Verbindung zur Adobe Campaign-Server-Zugriffs-URL her: **http(s)://`<urlserver>`**. Wenn er nicht reagiert, wird der Webserver auf dem Computer angehalten. Wenden Sie sich an den Systemadministrator Ihres Hostunternehmens, um den Dienst neu zu starten.
+      Stellen Sie mithilfe eines Webbrowsers eine Verbindung mit der Adobe Campaign-Server-Zugriffs-URL her: **http(s)://`<urlserver>`**. Wenn er nicht reagiert, wird der Webserver auf dem Computer angehalten. Wenden Sie sich an den Systemadministrator Ihrer Host-Firma, um den Dienst neu zu starten.
 
    * Wurde Adobe Campaign korrekt integriert?
 
-      Melden Sie sich bei: URL **http(s)://`<urlserver>`/r/test** . Der Server sollte die folgende Art von Meldung zurückgeben
+      Melden Sie sich bei: **http(s)://`<urlserver>`/r/test** -URL. Der Server sollte die folgende Art von Meldung zurückgeben
 
       ```
       <redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='<hostname>' localHost='<server>'/>
@@ -58,7 +58,7 @@ Die Gründe dafür können vielfältig sein und von verschiedenen Kontexten abh�
 
       Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie Ihre Webserverkonfiguration, ob diese Integration berücksichtigt wird.
 
-1. **Überprüfungen auf der Seite &quot;Adobe Campaign&quot;**
+1. **Kontrollen am Adobe Campaign**
 
    * Wurde das Adobe Campaign-Webmodul gestartet?
 
@@ -89,5 +89,5 @@ Die Gründe dafür können vielfältig sein und von verschiedenen Kontexten abh�
          ```
 >[!NOTE]
 >
->Wenn Sie eine Antwort vom folgenden Typ erhalten, wenn Sie die Adobe Campaign-Module auflisten: nlserver **pdump**
+>Wenn Sie bei der Liste der Adobe Campaign-Module eine Antwort vom folgenden Typ erhalten: **nlserver pdump**
 >HH:MM:SS > Anwendungsserver für Adobe Campaign Classic (7.X YY.R Build XXX@SHA1) von TT/MM/JJJJ Keine Aufgaben Sie müssen die gesamte Adobe Campaign-Anwendung neu starten. Verwenden Sie dazu den folgenden Befehl: **nlserver watchdog -svc -noconsole **
