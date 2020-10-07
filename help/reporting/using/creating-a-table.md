@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 74084618-2b35-42c5-8a86-87ce137abb71
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2646'
+ht-degree: 100%
 
 ---
 
@@ -239,6 +239,7 @@ Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Si
    * Indikator der verarbeiteten Sendungen,
    * Fremdschlüssel des Kampagnen-Links,
    * Indikator der Fehlerrate.
+
    ![](assets/s_advuser_report_listgroup_002.png)
 
    Ordnen Sie jedem Feld einen Alias zu: Dies erleichtert die Auswahl der Daten der Tabelle, die in der ersten Seite des Berichts hinzugefügt wird.
@@ -378,6 +379,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
       ![](assets/reporting_quick_start_query-2_count.png)
 
    * Fragen Sie die E-Mail-Domains der Empfänger ab und aktivieren Sie die Gruppierung für dieses Feld. Aktivieren Sie hierzu die Option **[!UICONTROL Gruppieren]** der Spalte des Domain-Namens.
+
    ![](assets/reporting_quick_start_query-2_filter.png)
 
    Ordnen Sie den Feldern die folgenden Alias zu:
@@ -421,6 +423,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
    * Fügen Sie in der zweiten Zelle der Detailzeile den Ausdruck **[!UICONTROL E-Mail-Domain(Empfänger)]** hinzu.
    * Fügen Sie in der dritten Zelle der Detailzeile den Ausdruck **[!UICONTROL count(Primärschlüssel)]** hinzu.
+
    ![](assets/s_advuser_report_listgroup_019.png)
 
 1. Fügen Sie der Seite über das Kontextmenü ein Kreisdiagramm hinzu und geben Sie ihm den Titel **E-Mail-Domains**. Weitere Informationen finden Sie unter [Grafiktypen und ihre Parameter](../../reporting/using/creating-a-chart.md#chart-types-and-variants).
