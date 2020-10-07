@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 1b2ae224-8406-4506-b589-6e5f6631e87f
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 6%
 
 ---
 
@@ -24,12 +24,12 @@ source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
 
 ## Definition von Parametern {#definition-of-parameters}
 
-Ihre Adobe Campaign-Plattform bietet standardmäßig zwei TRANSACTION-artige Web-Tracking-Parameter:
+Ihre Adobe Campaign-Plattform Angebot standardmäßig zwei TRANSACTION-artige Web-Tracking-Parameter:
 
-* **Betrag**: die Höhe einer Transaktion,
+* **Betrag**: den Betrag einer Transaktion darstellt,
 * **Artikel**: stellt die Anzahl der Elemente in einer Transaktion dar.
 
-Diese Parameter werden im Schema **nms:webTrackingLog** definiert und sind einige der in der Berichterstellung angezeigten Indikatoren.
+Diese Parameter werden im Schema **nms:webTrackingLog** definiert und sind einige der in Berichte angezeigten Indikatoren.
 
 Um weitere Parameter zu definieren, müssen Sie dieses Schema erweitern.
 
@@ -47,7 +47,7 @@ Um weitere Parameter zu definieren, müssen Sie dieses Schema erweitern.
 </srcSchema>
 ```
 
-Sie können die Werte dieser Parameter anzeigen, indem Sie die Verfolgungsprotokollliste (einer Lieferung oder eines Empfängers) konfigurieren.
+Sie können die Werte dieser Parameter anzeigen, indem Sie die Verfolgungsprotokoll-Liste (eines Versands oder Empfängers) konfigurieren.
 
 ## Serverkonfiguration umleiten {#redirection-server-configuration}
 
@@ -57,13 +57,13 @@ In der Serverkonfiguration können Sie die maximale Anzahl von Zeichen festlegen
 >
 >Die Erhöhung der maximal zu berücksichtigenden Zeichenanzahl kann sich auf die Webverfolgungsleistung Ihrer Plattform auswirken.
 
-Ändern Sie dazu das Attribut **webTrackingParamSize** des **`<trackinglogd>`** Elements in der Datei &quot; **serverConf.xml** &quot;. Diese Datei wird im **conf** -Unterverzeichnis des Adobe Campaign-Installationsordners gespeichert.
+Ändern Sie dazu das Attribut **webTrackingParamSize** des **`<trackinglogd>`** Elements in der Datei &quot; **serverConf.xml** &quot;. Diese Datei wird im **conf** -Unterverzeichnis des Installationsordners des Adobe Campaigns gespeichert.
 
 **Beispiel**:
 
 Der Standardwert ist 64 Zeichen. Mit diesem Wert können Sie die Standardparameter **für Betrag** und **Artikel** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;) berücksichtigen.
 
-Indem Sie beide Parameter (Größe des Namens und Größe des Werts) berücksichtigen, die im Beispiel des Erweiterungsschemas oben angegeben sind, können Sie die Konfiguration so ändern, dass 100 Zeichen berücksichtigt werden (&quot;Betrag=xxxxxxxxxx&amp;article=xxxxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxxxx&quot;).
+Unter Berücksichtigung der beiden im obigen Erweiterungsschema angegebenen Parameter (Größe und Größe des Namens) können Sie die Konfiguration ändern, um 100 Zeichen zu berücksichtigen (&quot;Betrag=xxxxxxxx&amp;article=xxxxxxxxxx&amp;mode=xxxxxxxxxxxx&amp;code=xxxxxxx&quot;).
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -79,14 +79,14 @@ Nach der Änderung der Konfiguration müssen Sie:
 
    >[!NOTE]
    >
-   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl stop**
+   >Starting 20.1, we recommend using the following command instead (for Linux): **systemctl stop nlserver**
 
 * Löschen Sie unter Linux die freigegebenen Speichersegmente mit dem **Befehl ipcrm** ,
-* Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux,
+* Starten Sie den Adobe Campaign-Server neu: **net Beginn nlserver6** in Windows, **/etc/init.d/nlserver6 Beginn** in Linux,
 
    >[!NOTE]
    >
-   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl start**
+   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
 
 * Starten Sie den Webserver neu.
 
