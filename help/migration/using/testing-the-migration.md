@@ -1,7 +1,7 @@
 ---
-title: Migrieren testen
-seo-title: Migrieren testen
-description: Migrieren testen
+title: Testen der Migration
+seo-title: Testen der Migration
+description: Testen der Migration
 seo-description: null
 page-status-flag: never-activated
 uuid: 3ee6a10b-dea2-41c6-9aef-ee3ac922b459
@@ -11,28 +11,28 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 30e3082f-a367-4c3b-bff2-208ccf97acd4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '670'
+ht-degree: 3%
 
 ---
 
 
-# Migrieren testen{#testing-the-migration}
+# Testen der Migration{#testing-the-migration}
 
 ## Allgemeines Verfahren {#general-procedure}
 
 Je nach Konfiguration gibt es verschiedene Möglichkeiten, Migrationstests durchzuführen.
 
-Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests durchzuführen. Entwicklungsumgebungen unterliegen einer Lizenz: Überprüfen Sie Ihren Lizenzvertrag oder wenden Sie sich an den Vertriebsdienst von Adobe Campaign.
+Sie sollten über eine Test-/Entwicklungs-Umgebung verfügen, um Migrationstests durchzuführen. Entwicklungs-Umgebung unterliegen einer Lizenz: Überprüfen Sie Ihren Lizenzvertrag oder wenden Sie sich an den Vertriebsservice von Adobe Campaign.
 
-1. Beenden Sie alle laufenden Entwicklungen und führen Sie sie in die Produktionsumgebung.
-1. Erstellen Sie eine Sicherung der Datenbank der Entwicklungsumgebung.
-1. Beenden Sie alle Adobe Campaign-Prozesse in der Entwicklungsinstanz.
-1. Erstellen Sie eine Sicherung der Produktionsumgebung-Datenbank und stellen Sie sie als Entwicklungsumgebung wieder her.
-1. Bevor Sie Adobe Campaign-Dienste starten, führen Sie das Warnskript **frizeInstance.js** aus, mit dem Sie die Datenbank aller Objekte löschen können, die beim Starten der Sicherung ausgeführt wurden.
+1. Beenden Sie alle laufenden Entwicklungen und führen Sie sie in die Umgebung der Produktion.
+1. Erstellen Sie eine Sicherung der Development-Umgebung-Datenbank.
+1. Beenden Sie alle Adobe Campaign-Prozesse auf der Entwicklungsinstanz.
+1. Erstellen Sie eine Sicherungskopie der Produktionsdatenbank und stellen Sie sie als Umgebung der Umgebung wieder her.
+1. Führen Sie vor dem Starten der Adobe Campaign-Dienste das Warnskript **frizeInstance.js** aus, mit dem Sie die Datenbank aller Objekte löschen können, die beim Starten der Sicherung ausgeführt wurden.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -40,22 +40,22 @@ Sie sollten über eine Test-/Entwicklungsumgebung verfügen, um Migrationstests 
 
    >[!NOTE]
    >
-   >Der Befehl wird standardmäßig im **trockenen** Modus gestartet und listet alle Anforderungen auf, die von diesem Befehl ausgeführt wurden, ohne sie zu starten. Verwenden Sie zum Ausführen von Warnungsanfragen den Befehl **run** .
+   >Der Befehl wird standardmäßig im **trockenen** Modus gestartet und alle Anforderungen, die von diesem Befehl ausgeführt wurden, werden Liste, ohne sie zu starten. Verwenden Sie zum Ausführen von Warnungsanfragen den Befehl **run** .
 
 1. Stellen Sie sicher, dass Ihre Sicherungen korrekt sind, indem Sie versuchen, sie wiederherzustellen. Stellen Sie sicher, dass Sie auf Ihre Datenbank, Ihre Tabellen, Ihre Daten usw. zugreifen können.
-1. Testen Sie den Migrationsvorgang in der Entwicklungsumgebung.
+1. Testen Sie das Migrationsverfahren in der Development-Umgebung.
 
-   Die vollständigen Verfahren finden Sie im Abschnitt [Voraussetzungen für die Migration zu Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) .
+   Die vollständigen Verfahren sind im Abschnitt [Voraussetzungen für die Migration zu Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) beschrieben.
 
-1. Bei erfolgreicher Migration der Entwicklungsumgebung können Sie die Produktionsumgebung migrieren.
+1. Wenn die Migration der Development-Umgebung erfolgreich ist, können Sie die Umgebung für die Produktion migrieren.
 
 >[!IMPORTANT]
 >
->Aufgrund von Änderungen an der Datenstruktur ist das Importieren und Exportieren von Datenpaketen zwischen einer v5- und einer v7-Plattform nicht möglich.
+>Aufgrund von Änderungen an der Datenstruktur ist das Importieren und Exportieren von Datenpackagen zwischen einer v5- und einer v7-Plattform nicht möglich.
 
 >[!NOTE]
 >
->Mit dem Befehl zum Aktualisieren von Adobe Campaign (**nach der Aktualisierung**) können Sie Ressourcen synchronisieren und Schemata und die Datenbank aktualisieren. Dieser Vorgang kann nur einmal auf dem Anwendungsserver ausgeführt werden. Nach dem Synchronisieren von Ressourcen können Sie mit dem Befehl **nach der Aktualisierung** erkennen, ob die Synchronisierung Fehler oder Warnungen hervorruft.
+>Mit dem Befehl &quot;Adobe Campaign aktualisieren&quot;(**nach der Aktualisierung**) können Sie Ressourcen synchronisieren und Schema und die Datenbank aktualisieren. Dieser Vorgang kann nur einmal und nur auf dem Anwendungsserver ausgeführt werden. Nach dem Synchronisieren von Ressourcen können Sie mit dem Befehl **nach der Aktualisierung** erkennen, ob die Synchronisierung Fehler oder Warnungen hervorruft.
 
 ## Migrationswerkzeuge {#migration-tools}
 
@@ -75,11 +75,11 @@ Mit verschiedenen Optionen können Sie die Auswirkungen einer Migration messen u
 
 >[!NOTE]
 >
->**Sie müssen die`<instanceame>`**-Instanz verwenden: auswählen. Es wird nicht empfohlen, die Option**-allinstances **zu verwenden.
+>Sie müssen die **-Instanz verwenden:`<instanceame>`** auswählen. Es wird nicht empfohlen, die Option **-allinstances** zu verwenden.
 
 ### -showCustomEntities- und -showDeletedEntities-Optionen {#showcustomentities-and--showdeletedentities-options}
 
-* Die Option **-showCustomEntities** zeigt die Liste aller nicht standardmäßigen Objekte an:
+* Die **-showCustomEntities** -Option zeigt die Liste aller nicht standardmäßigen Objekte an:
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -105,9 +105,9 @@ Mit verschiedenen Optionen können Sie die Auswirkungen einer Migration messen u
 
 ### Verification process {#verification-process}
 
-Dieser Prozess, der als Standard in den Befehl nach der Aktualisierung integriert ist, ermöglicht Ihnen die Anzeige von Warnungen und Fehlern, die die Migration zum Fehler machen könnten. **Wenn Fehler angezeigt werden, wurde die Migration nicht ausgeführt.** In diesem Fall sollten Sie alle Fehler beheben und dann die Nachaktualisierung erneut starten.
+Dieser Prozess, der als Standard in den Befehl nach der Aktualisierung integriert ist, ermöglicht Ihnen die Anzeige von Warnungen und Fehlern, die die Migration zum Fehler machen könnten. **Wenn Fehler angezeigt werden, wurde die Migration nicht ausgeführt.** Wenn dies der Fall ist, korrigieren Sie alle Fehler und wiederholen Sie den Beginn nach der Aktualisierung.
 
-Sie können den Verifizierungsprozess mit folgendem Befehl eigenständig (ohne Migration) starten:
+Sie können den Verifizierungsprozess selbst (ohne Migration) mit dem folgenden Befehl Beginn ausführen:
 
 ```
 nlserver.exe config -postupgrade -check -instance:<instanceName>
@@ -117,7 +117,7 @@ nlserver.exe config -postupgrade -check -instance:<instanceName>
 >
 >Bitte ignorieren Sie alle Warnungen und Fehler mit dem JST-310040-Code.
 
-Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
+Nach den folgenden Ausdrücken wird gesucht (Groß-/Kleinschreibung beachten):
 
 <table> 
  <thead> 
@@ -133,7 +133,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
    <td> Warnhinweis<br /> </td> 
-   <td> Diese Syntax wird bei der Personalisierung der Bereitstellung nicht mehr unterstützt. Siehe <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Überprüfen Sie andernfalls, ob der Werttyp korrekt ist.<br /> </td> 
+   <td> Diese Syntaxart wird bei der Personalisierung von Versänden nicht mehr unterstützt. Siehe <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Überprüfen Sie andernfalls, ob der Werttyp korrekt ist.<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
@@ -168,7 +168,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
  </tbody> 
 </table>
 
-Eine Datenbank- und Schemakonsistenz-Prüfung wird ebenfalls durchgeführt.
+Außerdem wird eine Datenbank- und eine Schema-Kohärenzprüfung durchgeführt.
 
 ### Wiederherstellungsoption {#restoration-option}
 
