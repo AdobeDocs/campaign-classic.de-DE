@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 890950463146fe0863d2809759eb142cb4bb1fff
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3930'
 ht-degree: 3%
@@ -688,7 +685,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
     <ul> 
      <li> <p> <span class="uicontrol">Datentyp:</span> Integer</p> </li> 
      <li> <p> <span class="uicontrol">Wert (Text)</span> : 1 </p> </li> 
-    </ul> Diese Option sollte nur verwendet werden, wenn die vordefinierte Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /> Weiterführende Informationen hierzu finden Sie in <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">diesem Abschnitt</a>.<br /> </td> 
+    </ul> Diese Option sollte nur verwendet werden, wenn die vordefinierte Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /><a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure"> Weiterführende Informationen hierzu finden Sie in diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
