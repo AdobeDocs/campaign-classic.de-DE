@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Tabelle "Adobe Campaign Classic Empfänger"
+title: Verwenden der Adobe Campaign Classic Empfänger-Tabelle
 description: Erfahren Sie, wie Sie beim Entwerfen Ihres Datenmodells die vordefinierte Empfänger-Tabelle in Adobe Campaign Classic verwenden.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
@@ -9,11 +9,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 15581517df8d2f397285bbadebd83b7f4539dfd7
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '4014'
 ht-degree: 24%
@@ -53,7 +50,7 @@ The Adobe Campaign default data model is presented in [this document](../../conf
 
 >[!NOTE]
 >
->Mit Adobe Campaign Classic können Sie eine benutzerdefinierte Kundentabelle erstellen. In den meisten Fällen wird jedoch empfohlen, die Standardtabelle für den [Empfänger](../../configuration/using/about-data-model.md#default-recipient-table) zu verwenden, die bereits über vordefinierte zusätzliche Tabellen und Funktionen verfügt.
+>Adobe Campaign Classic ermöglicht den Aufbau einer benutzerdefinierten Kundentabelle. In den meisten Fällen wird jedoch empfohlen, die Standardtabelle für den [Empfänger](../../configuration/using/about-data-model.md#default-recipient-table) zu verwenden, die bereits über vordefinierte zusätzliche Tabellen und Funktionen verfügt.
 
 ### Daten für Adobe Campaign {#data-for-campaign}
 
@@ -79,7 +76,7 @@ Um eine gute Architektur und Systemleistung sicherzustellen, befolgen Sie die fo
 * Mit dem **Attribut &quot;expr** &quot;können Sie ein Schema-Attribut als berechnetes Feld und nicht als physikalischen Tabellensatzwert definieren. Dadurch können Informationen in einem anderen Format (z. B. Alter und Geburtsdatum) aufgerufen werden, ohne dass beide Werte gespeichert werden müssen. Dies ist eine gute Möglichkeit, Felder nicht zu duplizieren. Die Tabelle &quot;Empfänger&quot;verwendet beispielsweise einen Ausdruck für die Domäne, der bereits im E-Mail-Feld vorhanden ist.
 * Wenn die Berechnung des Ausdrucks jedoch komplex ist, wird nicht empfohlen, das **Attribut &quot;expr** &quot;zu verwenden, da die Berechnung im Handumdrehen die Leistung Ihrer Abfragen beeinträchtigen kann.
 * Der **XML** -Typ ist eine gute Möglichkeit, zu viele Felder zu vermeiden. Es nimmt aber auch Speicherplatz auf der Festplatte auf, da es eine CLOB-Spalte in der Datenbank verwendet. Es kann auch zu komplexen SQL-Abfragen führen und die Leistung beeinträchtigen.
-* The length for a **string** field should always be defined with the column. Standardmäßig beträgt die maximale Feldlänge 255. Adobe empfiehlt jedoch, das Adobe Campaign kürzer zu halten, wenn Sie bereits wissen, dass die Feldlänge kürzer ist.
+* The length for a **string** field should always be defined with the column. Standardmäßig ist das Adobe Campaign maximal 255 Zeichen lang. Es wird jedoch empfohlen, das Feld kürzer zu halten, wenn Sie bereits wissen, dass die Feldlänge kürzer ist.
 * Es ist akzeptabel, dass ein Feld in Adobe Campaign kürzer ist als im Quellsystem, wenn Sie sicher sind, dass die Länge im Quellsystem zu groß ist und nicht benötigt wird. Dies könnte eine kürzere Zeichenfolge oder kleinere Ganzzahl in Adobe Campaign bedeuten.
 
 ### Feldauswahl {#choice-of-fields}
@@ -90,7 +87,7 @@ Bei Hybrid- und lokalen Instanzen deckt die FDA (Federated Data Access, eine opt
 
 ### Schlüsselauswahl {#choice-of-keys}
 
-Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten **Autotyp** sollten Sie einige logische oder geschäftliche Schlüssel hinzufügen (Kontonummer, Kundennummer usw.). Sie kann später für Einfuhren/Überleitungszwecke oder Datenpackagen verwendet werden. For more on this, see [Identifiers](#identifiers).
+Zusätzlich zu dem in den meisten Tabellen standardmäßig definierten **Autotyp** sollten Sie einige logische oder geschäftliche Schlüssel hinzufügen (Kontonummer, Kundennummer usw.). Sie kann später für Einfuhren/Überleitungszwecke oder Datenpackagen verwendet werden. Weitere Informationen finden Sie unter [Bezeichner](#identifiers).
 
 Effiziente Schlüssel sind unverzichtbar für die Leistung. Numerische Datentypen sollten immer als Schlüssel für Tabellen bevorzugt werden.
 
@@ -100,7 +97,7 @@ Für die SQLServer-Datenbank können Sie die Verwendung eines &quot;Clusterindex
 
 Mit dem Attribut tablespace im Schema können Sie einen eigenen Tablespace für eine Tabelle angeben.
 
-Mit dem Installationsassistenten können Sie Objekte nach Typ (Daten, temporäre Daten und Index) speichern.
+Mit dem Installationsassistenten können Sie Objekte nach Typ (Daten, temporär und Index) speichern.
 
 Dedizierte Tablespaces eignen sich besser für Partitionierung, Sicherheitsregeln und ermöglichen eine reibungslose und flexible Verwaltung, bessere Optimierung und Leistung.
 
@@ -118,7 +115,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 
 ## Benutzerdefinierte interne Schlüssel {#custom-internal-keys}
 
-Für jede in Adobe Campaign erstellte Tabelle sind Primärschlüssel erforderlich.
+Für jede in Adobe Campaign erstellte Tabelle sind Primär Schlüssel erforderlich.
 
 Die meisten Organisationen importieren Datensätze aus externen Systemen. Während der physische Schlüssel der Empfänger-Tabelle das Attribut &quot;id&quot;ist, kann zusätzlich ein benutzerdefinierter Schlüssel festgelegt werden.
 
@@ -154,7 +151,7 @@ Daher würde einem Kunden, der jährlich 6 Milliarden E-Mails mit einer Retentio
 
 Wenn eine benutzerdefinierte Tabelle in Adobe Campaign mit einem Primärschlüssel als autoPK erstellt wird, sollte dieser Tabelle systematisch eine benutzerdefinierte, dedizierte Sequenz zugeordnet werden.
 
-Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2.1BB. Technisch ist es möglich, eine komplette Reichweite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen übergegangen wird: Der Datensatz 0 wird normalerweise von Adobe Campaign Classic in generierten SQL-Abfragen ignoriert.
+Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2.1BB. Technisch ist es möglich, eine komplette Reichweite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen übergegangen wird: der Datensatz 0 wird normalerweise von Adobe Campaign Classic in generierten SQL-Abfragen ignoriert.
 
 **Verwandte Themen:**
 * Weitere Informationen zur Funktion zur automatischen **Sequenzgenerierung** finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
@@ -162,7 +159,7 @@ Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2
 
 ## Indizes {#indexes}
 
-Indizes sind unverzichtbar für die Leistung. Wenn Sie einen Schlüssel im Schema deklarieren, erstellt Adobe automatisch einen Index für die Schlüsselfelder. Sie können auch weitere Indizes für Abfragen deklarieren, die den Schlüssel nicht verwenden.
+Indizes sind unverzichtbar für die Leistung. Wenn Sie einen Schlüssel im Schema deklarieren, erstellt die Adobe automatisch einen Index für die Schlüsselfelder. Sie können auch weitere Indizes für Abfragen deklarieren, die den Schlüssel nicht verwenden.
 
 Adobe empfiehlt, zusätzliche Indizes zu definieren, da dies die Leistung verbessern kann.
 
@@ -179,7 +176,7 @@ Beachten Sie jedoch Folgendes:
 
 <!--When you are performing an initial import with very high volumes of data insert in Adobe Campaign database, it is recommended to run that import without custom indexes at first. It will allow to accelerate the insertion process. Once you’ve completed this important import, it is possible to enable the index(es).-->
 
-### Beispiel  
+### Beispiel   
 
 Indizes zu verwalten kann sehr komplex werden, daher ist es wichtig zu verstehen, wie sie funktionieren. Um diese Komplexität zu verdeutlichen, lassen Sie uns ein einfaches Beispiel nehmen, wie z. B. die Suche nach Empfängern durch Filterung des Vor- und Nachnamens. Gehen Sie dazu wie folgt vor:
 1. Wechseln Sie zu dem Ordner, in dem alle Empfänger in der Datenbank Liste werden. For more on this, see [Managing profiles](../../platform/using/managing-profiles.md).
@@ -194,7 +191,7 @@ Die beiden entsprechenden Filter werden oben auf dem Bildschirm hinzugefügt.
 
 ![](assets/data-model-index-search.png)
 
-Sie können jetzt Suchfilter für die Felder **[!UICONTROL Vorname]** und **[!UICONTROL Nachname]** gemäß den verschiedenen Filterbedingungen durchführen.
+Sie können jetzt Suchfilter für die Felder **[!UICONTROL Vorname]** und **[!UICONTROL Nachname]** entsprechend den verschiedenen Filterbedingungen durchführen.
 
 Um die Suche auf diesen Filtern zu beschleunigen, können Sie nun Indizes hinzufügen. Aber welche Indizes sollten verwendet werden?
 
