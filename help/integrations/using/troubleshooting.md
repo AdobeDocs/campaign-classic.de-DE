@@ -1,7 +1,7 @@
 ---
-title: Problembehebung
-seo-title: Problembehebung
-description: Problembehebung
+title: Fehlerbehebung
+seo-title: Fehlerbehebung
+description: Fehlerbehebung
 seo-description: null
 page-status-flag: never-activated
 uuid: fb51ad18-221b-4058-b206-ca2ca045c507
@@ -11,16 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: f3ff8c8e-22b0-4d61-9f26-11f5ca3bc0be
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 0745b9c9d72538b8573ad18ff4054ecf788905f2
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '142'
+ht-degree: 100%
 
 ---
 
 
-# Problembehebung{#troubleshooting}
+# Fehlerbehebung{#troubleshooting}
 
 Im Fall von Fehlermeldungen achten Sie darauf, dass die folgenden Elemente richtig konfiguriert sind:
 
