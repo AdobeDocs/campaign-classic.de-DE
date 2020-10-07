@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: c886bd02-c484-443c-93ca-ca244adbf893
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 00351a7a108f74741fa15546d9bd5cf68699e5c1
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '4500'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign erlaubt den Import von Dateien in den Formaten Text, CSV, TAB ode
 >[!NOTE]
 >
 >Um Daten zu importieren, ohne sie mit Daten in der Datenbank zu verknüpfen, steht die Funktion **[!UICONTROL Liste importieren]** zur Verfügung.
-> 
+>
 >Diese Daten können dann ausschließlich in Workflows mit dem Objekt **[!UICONTROL Liste lesen]** verwendet werden. Weiterführende Informationen dazu finden Sie auch auf [dieser Seite](../../workflow/using/read-list.md).
 >
 >Weiterführende Informationen dazu finden Sie im Video [Importing profiles](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/importing-profiles.html).
