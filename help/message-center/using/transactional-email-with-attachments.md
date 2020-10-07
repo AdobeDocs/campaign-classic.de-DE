@@ -9,12 +9,9 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 discoiquuid: 7b8ab9d6-e47e-46d8-99df-da793486654c
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 22d0e70f77eb3759632e05ab1cb0d8ee53adfac9
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '632'
 ht-degree: 100%
 
@@ -49,7 +46,7 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 >
 >Zur Vermeidung von Leistungsproblemen sollten Bilder, die Sie von einer personalisierten URL direkt als Anhang herunterladen, standardmäßig nicht mehr als 100.000 Byte groß sein. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
-## Empfehlungen    {#important-notes}
+## Empfehlungen {#important-notes}
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
 
