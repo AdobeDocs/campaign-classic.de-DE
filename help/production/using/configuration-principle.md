@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: d08ff769-da93-4f86-8802-f0fb5b051ece
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 34cd6e6cf5652c9e2163848c2b1ef32f53ee6ca4
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 5%
 
 ---
 
 
 # Konfigurationsprinzip{#configuration-principle}
 
-Die Adobe Campaign-Plattform basiert auf dem Konzept der Instanzen, ähnlich dem der von Apache verwendeten virtuellen Hosts. In diesem Modus können Sie einen Server freigeben, indem Sie ihm mehrere Instanzen zuweisen. Instanzen sind komplett voneinander getrennt und arbeiten mit ihrer eigenen Datenbank- und Konfigurationsdatei.
+Die Adobe Campaign-Plattform basiert auf dem Konzept der Instanzen, ähnlich wie die von Apache verwendeten virtuellen Hosts. In diesem Modus können Sie einen Server freigeben, indem Sie ihm mehrere Instanzen zuweisen. Instanzen sind komplett voneinander getrennt und arbeiten mit ihrer eigenen Datenbank- und Konfigurationsdatei.
 
 Für einen bestimmten Server gibt es zwei Elemente, die allen Adobe Campaign-Instanzen gemein sind:
 
@@ -43,7 +43,7 @@ Die Konfigurationsdateien werden im **conf** -Ordner des Installationsordners ge
 Eine Instanzkonfiguration wird wie folgt geladen:
 
 * Das Modul lädt die Datei &quot; **serverConf.xml** &quot;, um die von allen Instanzen freigegebenen Parameter abzurufen.
-* Anschließend wird die Datei **config-**`<instance>`**.xml** geladen. Die in dieser Datei gefundenen Werte haben Vorrang vor den Werten in **serverConf.xml**.
+* Anschließend wird die Datei &quot; **config-**`<instance>`**.xml** &quot;geladen. Die in dieser Datei gefundenen Werte haben Vorrang vor den Werten in **serverConf.xml**.
 
    Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz in der Datei **config-`<instance>`.xml** überladen werden.
 
