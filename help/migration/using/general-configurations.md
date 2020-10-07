@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: f4b1c108-7f71-4aa1-8394-a7f660834c9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2882'
 ht-degree: 1%
@@ -46,7 +43,7 @@ Um den TIMESTAMP MIT TIMEZONE-Modus zu verwenden, müssen Sie auch die Option **
 
 >[!NOTE]
 >
->Es ist möglich, die Zeitzone nach der Migration über die Konsole zu ändern (**[!UICONTROL Administration > Platform > Optionen > WdbcTimeZone]** -Knoten).
+>Es ist möglich, die Zeitzone nach der Migration über die Konsole zu ändern (**[!UICONTROL Administration > Plattform > Optionen > WdbcTimeZone]** -Knoten).
 >
 >For more on time zone management, refer to [this section](../../installation/using/time-zone-management.md).
 
@@ -179,7 +176,7 @@ Neuer Link auf der Seite &quot;Verbindung&quot;:
 
 ### SQL-Funktionen {#sql-functions}
 
-Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gesendet. Derzeit müssen alle SQL-Funktionen dem **xtk:funcList** -Schema hinzugefügt werden (weitere Informationen finden Sie in [diesem Abschnitt](../../configuration/using/adding-additional-sql-functions.md)). Bei der Migration wird während der Nachrüstung eine Option hinzugefügt, mit der Sie die Kompatibilität mit alten nicht deklarierten SQL-Funktionen aufrechterhalten können. Wenn Sie diese Funktionen weiterhin verwenden möchten, stellen Sie sicher, dass die Option **XtkPassUnknownSQLFunctionsToRDBMS** tatsächlich auf der Knotenebene **[!UICONTROL Administration > Platform > Optionen]** definiert ist.
+Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gesendet. Derzeit müssen alle SQL-Funktionen dem **xtk:funcList** -Schema hinzugefügt werden (weitere Informationen finden Sie in [diesem Abschnitt](../../configuration/using/adding-additional-sql-functions.md)). Bei der Migration wird während der Nachrüstung eine Option hinzugefügt, mit der Sie die Kompatibilität mit alten nicht deklarierten SQL-Funktionen aufrechterhalten können. Wenn Sie diese Funktionen weiterhin verwenden möchten, stellen Sie sicher, dass die Option **XtkPassUnknownSQLFunctionsToRDBMS** tatsächlich auf der Knotenebene **[!UICONTROL Administration > Plattform > Optionen]** definiert ist.
 
 >[!IMPORTANT]
 >
@@ -206,7 +203,7 @@ Adobe Campaign v7 integriert einen neueren JavaScript-Interpreter. Dieses Update
 
 Das **[!UICONTROL myObject.Die @attribute]** -Syntax ist jetzt nur für XML-Objekte gültig. Diese Syntax kann zur Personalisierung von Versänden und Content-Management verwendet werden. Wenn Sie diesen Syntaxtyp für ein Nicht-XML-Objekt verwendet haben, funktionieren die Personalisierungsfunktionen nicht mehr.
 
-Bei allen anderen Objekttypen lautet die Syntax jetzt **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Beispiel: Ein Nicht-XML-Objekt, das die folgende Syntax verwendet hat:**[!UICONTROL  angestellt.@sn ]**muss jetzt die folgende Syntax verwenden:**[!UICONTROL  employee`[`&quot;sn&quot;`]`]**.
+Bei allen anderen Objekttypen lautet die Syntax jetzt **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Beispiel: Ein Nicht-XML-Objekt, das die folgende Syntax verwendet hat: **[!UICONTROL angestellt.@sn]** muss jetzt die folgende Syntax verwenden: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Frühere Syntax:
 
@@ -624,7 +621,7 @@ Alle Standardberichte verwenden derzeit die Render-Engine v6.x. Wenn Sie diesen 
 
 ### Personalisierte Berichte {#personalized-reports}
 
-Wenn Sie das blaue Banner von v7 verwenden möchten (sodass Sie Zugriff auf die Universen haben), müssen Sie die Berichte erneut veröffentlichen. Wenn Probleme auftreten, können Sie die v6.0-Rendering-Engine erzwingen. Gehen Sie dazu zu **[!UICONTROL Eigenschaften]** im Bericht, klicken Sie auf **[!UICONTROL Rendern]** und wählen Sie die Rendering-Engine der **[!UICONTROL Version 6.0 (Flash &amp; OpenOffice)]** .
+Wenn Sie das blaue Banner von v7 verwenden möchten (sodass Sie Zugriff auf die Universen haben), müssen Sie die Berichte erneut veröffentlichen. Wenn Probleme auftreten, können Sie die v6.0-Rendering-Engine erzwingen. Gehen Sie dazu zu **[!UICONTROL Eigenschaften]** im Bericht, klicken Sie auf **[!UICONTROL Rendering]** und wählen Sie die Rendering-Engine der **[!UICONTROL Version 6.0 (Flash und OpenOffice)]** .
 
 ![](assets/migration_reports_1.png)
 
