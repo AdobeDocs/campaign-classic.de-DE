@@ -1,7 +1,7 @@
 ---
-title: Konfiguration des Kampagnenservers
-seo-title: Konfiguration des Kampagnenservers
-description: Konfiguration des Kampagnenservers
+title: Konfigurieren des Campaign-Servers
+seo-title: Konfigurieren des Campaign-Servers
+description: Konfigurieren des Campaign-Servers
 seo-description: null
 page-status-flag: never-activated
 uuid: a1fadad2-e888-4dd8-bc1f-04df16ba7d46
@@ -11,24 +11,24 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 4869eb41f942a89c48bc213913c44b70ae777bfc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 4%
 
 ---
 
 
-# Campaign server configuration{#campaign-server-configuration}
+# Konfigurieren des Campaign-Servers{#campaign-server-configuration}
 
-In den folgenden Abschnitten werden erforderliche Serverkonfigurationen erläutert, die den effizienten Betrieb von Adobe Campaign für die meisten Setups gewährleisten.
+In den folgenden Abschnitten werden obligatorische Serverkonfigurationen beschrieben, die den effizienten Betrieb von Adobe Campaign für die meisten Setups gewährleisten.
 
-Weitere Konfigurationen finden Sie unter [Konfigurieren des Campaign-Servers](../../installation/using/configuring-campaign-server.md).
+Weitere Konfigurationen finden Sie unter [Konfigurieren des Kampagne-Servers](../../installation/using/configuring-campaign-server.md).
 
 >[!NOTE]
 >
->Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in diesem [Artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Serverseitige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in diesem [Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Interne Kennung {#internal-identifier}
 
@@ -56,12 +56,12 @@ Confirmation: XXXX
 
 ## Konfigurationsdateien {#configuration-files}
 
-Die Konfigurationsdateien werden im **conf** -Ordner des Adobe Campaign-Installationsordners gespeichert. Die Konfiguration erstreckt sich über zwei Dateien:
+Die Konfigurationsdateien werden im Installationsordner des Adobe Campaigns im **conf** -Ordner gespeichert. Die Konfiguration erstreckt sich über zwei Dateien:
 
 * **`config-<instance>.xml`** (wobei **instance** der Name der Instanz ist): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server für mehrere Instanzen freigeben, geben Sie bitte die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
-* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei kombiniert die technischen Parameter des Adobe Campaign-Servers: diese werden von allen Instanzen freigegeben. Die Beschreibung einiger dieser Parameter ist nachfolgend beschrieben. In der Datei selbst finden Sie alle verfügbaren Parameter. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt sind.
+* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei enthält die technischen Parameter des Adobe Campaign-Servers: diese werden von allen Instanzen freigegeben. Die Beschreibung einiger dieser Parameter ist nachfolgend beschrieben. Die Ansicht aller verfügbaren Parameter finden Sie in der Datei selbst. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt sind.
 
-Sie können den Speicherordner (**var** -Ordner) der Adobe Campaign-Daten (Protokolle, Downloads, Umleitungen usw.) konfigurieren. Verwenden Sie dazu die Systemvariable **XTK_VAR_DIR** :
+Sie können den Ordner &quot;Datenspeicherung&quot;(**var** -Verzeichnis) der Adobe Campaign-Daten (Protokolle, Downloads, Umleitungen usw.) konfigurieren. Verwenden Sie dazu die Systemvariable **XTK_VAR_DIR** :
 
 * Geben Sie unter Windows den folgenden Wert in der Systemvariable **XTK_VAR_DIR** an
 
@@ -69,15 +69,15 @@ Sie können den Speicherordner (**var** -Ordner) der Adobe Campaign-Daten (Proto
    D:\log\AdobeCampaign
    ```
 
-* Wechseln Sie unter Linux zur Datei **customer.sh** und geben Sie Folgendes an: XTK_VAR_DIR=/app/log/AdobeCampaign **exportieren**.
+* Wechseln Sie unter Linux zur Datei **customer.sh** und geben Sie Folgendes an: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
    For more on this, refer to [Personalizing parameters](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 ## Aktivieren von Prozessen {#enabling-processes}
 
-Adobe Campaign-Prozesse auf dem Server sind über die Dateien **config-default.xml** aktiviert (und deaktiviert) **`config-<instance>.xml`** .
+Serverprozesse werden über die **Datei &quot;config-default.xml&quot;aktiviert (und deaktiviert) und** aktiviert ( **`config-<instance>.xml`** config-default.xml).
 
-Um die Änderungen auf diese Dateien anzuwenden, müssen Sie beim Starten des Adobe Campaign-Dienstes den Befehl **nlserver config -reload** ausführen.
+Wenn Sie die Änderungen auf diese Adobe Campaigne anwenden möchten, müssen Sie beim Starten des Dateidiensts den Befehl **nlserver config -reload** ausführen.
 
 Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
 
@@ -104,7 +104,7 @@ Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
    config-<instance>.xml
    ```
 
-   Deklarieren eines Servers für die Bereitstellung, Ausführen von Workflow-Instanzen und Wiederherstellen der Absprung-Mail:
+   Deklarieren eines Servers für Versand, Ausführen von Workflow-Instanzen und Wiederherstellen der Absprung-Mail:
 
    ```
    <mta autoStart="true" statServerAddress="localhost"/>
@@ -115,9 +115,9 @@ Es gibt zwei Arten von Prozessen: mehrere Instanzen und eine einzelne Instanz.
 
 ## Versandeinstellungen {#delivery-settings}
 
-Die Bereitstellungsparameter müssen im Ordner &quot; **serverConf.xml** &quot;konfiguriert werden.
+Die Versand-Parameter müssen im Ordner &quot; **serverConf.xml** &quot;konfiguriert werden.
 
-* **DNS-Konfiguration**: Geben Sie die Bereitstellungsdomäne und die IP-Adressen (oder den Host) der DNS-Server an, die zur Beantwortung von MX-Typ-DNS-Anfragen des MTA-Moduls ab **`<dnsconfig>`** der Zeit verwendet werden.
+* **DNS-Konfiguration**: Geben Sie die Domäne des Versands und die IP-Adressen (oder den Host) der DNS-Server an, die verwendet werden, um auf MX-Typ-DNS-Abfragen zu reagieren, die vom MTA-Modul ab **`<dnsconfig>`** dem Zeitpunkt des Antrages vorgenommen werden.
 
    >[!NOTE]
    >
@@ -127,6 +127,6 @@ Die Bereitstellungsparameter müssen im Ordner &quot; **serverConf.xml** &quot;k
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Die anderen in dieser Datei verfügbaren Bereitstellungsparameter werden unter [Bereitstellungsparameter](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters)personalisieren angezeigt.
+Die anderen Versand-Parameter, die in dieser Datei verfügbar sind, finden Sie unter [Personalisieren von Versand-Parametern](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
 Siehe auch [E-Mail-Zustellbarkeit](../../installation/using/email-deliverability.md).
