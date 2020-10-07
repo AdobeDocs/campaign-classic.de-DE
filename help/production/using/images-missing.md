@@ -1,7 +1,7 @@
 ---
-title: Bilder fehlen
-seo-title: Bilder fehlen
-description: Bilder fehlen
+title: Fehlende Bilder
+seo-title: Fehlende Bilder
+description: Fehlende Bilder
 seo-description: null
 page-status-flag: never-activated
 uuid: 0dc73ea0-70bc-476d-bdff-2e62d6929f21
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: e001db7a-7c53-477e-a534-ce4d83d68559
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3801665574d0cdc9c0caf46fb2f0eede38f1b2cc
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 6%
 
 ---
 
 
-# Bilder fehlen{#images-missing}
+# Fehlende Bilder{#images-missing}
 
 In der Version 17.9 wurden mehrere Dateien (insbesondere Symbole) verschoben.
 
@@ -34,6 +34,6 @@ Apache-Benutzer haben keine Auswirkung, wenn sie die bereitgestellte **apache_ne
 
 Bei IIS-Benutzern (unter Windows) werden nach dem Build-Update mehrere Symbole in der Konsole fehlen. Weitere IIS-Aktualisierungsschritte sind erforderlich:
 
-1. Doppelklicken Sie nach dem Build-Update auf **is_neolane_setup.vbs** im Installationsordner von Campaign. Der Standardpfad lautet C:\Program Files (x86)\Adobe\Adobe Campaign v7\tomcat-7\conf
-1. Starten Sie die IIS-Site neu, die im vorherigen Schritt aktualisiert wurde.
+1. Klicken Sie nach dem Build-Update auf **is_neolane_setup.vbs** im Installationsordner der Kampagne. Der Standardpfad lautet C:\Program Files (x86)\Adobe\Adobe Campaign v7\tomcat-7\conf
+1. Starten Sie die IIS-Site neu, die durch den vorherigen Schritt aktualisiert wurde.
 
