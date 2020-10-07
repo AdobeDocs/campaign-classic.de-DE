@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 discoiquuid: d63892b3-260d-45e8-b99a-1e7c78353395
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 963aaa81971a8883b944bfcf4d1a00d729627916
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 100%
 
 ---
 
@@ -386,6 +386,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.
+
 >
 
 
