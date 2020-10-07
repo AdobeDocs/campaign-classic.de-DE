@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3b752b283a14bc75954fe46da5a21970c1e17fa1
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '7859'
 ht-degree: 12%
@@ -1120,7 +1117,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
   </tr> 
   <tr> 
    <td> smtpBccAddress<br /> </td> 
-   <td> Archivierungsziel der Zielgruppe<br /> </td> 
+   <td> Archiving target destination<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1215,7 +1212,7 @@ Hier sind die verschiedenen Parameter des **InMail** -Knotens. Dies ist die Konf
   </tr> 
   <tr> 
    <td> maxBroadLog<br /> </td> 
-   <td> Maximale Anzahl der zu aktualisierenden Protokolle: definiert die maximale Anzahl von Protokollmeldungen, die im Arbeitsspeicher gespeichert werden sollen, bevor die Datenbank aktualisiert wird.<br /> </td> 
+   <td> Maximale Anzahl der zu aktualisierenden Protokolle: definiert die maximale Anzahl von Protokollmeldungen, die im Speicher aufbewahrt werden sollen, bevor die Datenbank aktualisiert wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 20<br /> </td> 
   </tr> 
@@ -1810,7 +1807,7 @@ Konfigurieren Sie im Knoten **mta > child > smtp** die folgenden Parameter. Dies
   </tr> 
   <tr> 
    <td> idleSessionTimeoutSec<br /> </td> 
-   <td> Zeitüberschreitung während der Leerlaufsitzung. Dieser Parameter wird nur verwendet, wenn die Sitzung zur Übertragung mehrerer Nachrichten an eine bestimmte Domäne wiederverwendet wird. Wenn die MTA die Nachrichtenübertragung abgeschlossen hat, wird die verwendete SMTP-Sitzung nicht systematisch geschlossen. Wenn eine Nachricht für dieselbe Domäne gesendet werden kann, wird dieselbe SMTP-Sitzung wiederverwendet, weshalb die Sitzung nicht automatisch geschlossen wird. Mit dem Parameter IdleSessionTimeout können Sie festlegen, wie lange eine SMTP-Sitzung aktiv bleiben kann, um auf eine weitere Nachricht zu warten. Sobald die Dauer abgelaufen ist, wird die Sitzung automatisch geschlossen.<br /> </td> 
+   <td> Zeitüberschreitung während der Leersitzung. Dieser Parameter wird nur verwendet, wenn die Sitzung zur Übertragung mehrerer Nachrichten an eine bestimmte Domäne wiederverwendet wird. Wenn die MTA die Nachrichtenübertragung abgeschlossen hat, wird die verwendete SMTP-Sitzung nicht systematisch geschlossen. Wenn eine Nachricht für dieselbe Domäne gesendet werden kann, wird dieselbe SMTP-Sitzung wiederverwendet, weshalb die Sitzung nicht automatisch geschlossen wird. Mit dem Parameter IdleSessionTimeout können Sie festlegen, wie lange eine SMTP-Sitzung aktiv bleiben kann, um auf eine weitere Nachricht zu warten. Sobald die Dauer abgelaufen ist, wird die Sitzung automatisch geschlossen.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
   </tr> 
