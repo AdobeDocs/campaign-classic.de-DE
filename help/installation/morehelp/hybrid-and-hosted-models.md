@@ -1,6 +1,6 @@
 ---
-title: Hybrid- und gehostete Modelle
-seo-title: Hybrid- und gehostete Modelle
+title: Hybride und gehostete Modelle
+seo-title: Hybride und gehostete Modelle
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -8,14 +8,14 @@ uuid: dd43ffa7-1a09-44d4-9f31-f8df907a14b4
 contentOwner: sauviat
 discoiquuid: 69c44dfb-27c6-4c9b-8824-152ed3588716
 iscontainer: true
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '14'
+ht-degree: 100%
 
 ---
 
 
-# Hybrid- und gehostete Modelle{#hybrid-and-hosted-models}
+# Hybride und gehostete Modelle{#hybrid-and-hosted-models}
 
