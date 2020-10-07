@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 3%
@@ -101,8 +98,9 @@ vacuum full nmsdelivery;
 >* Adobe empfiehlt, mit kleineren Tabellen zu beginnen: auf diese Weise, wenn der Prozess auf großen Tabellen (bei denen das Ausfallrisiko am größten ist) fehlschlägt, wurde mindestens ein Teil der Instandhaltung abgeschlossen.
 >* Adobe empfiehlt, die für Ihr Datenmodell spezifischen Tabellen hinzuzufügen, die erheblich aktualisiert werden können. Dies kann bei **NmsRecipient** der Fall sein, wenn Sie über große Datenreplikationsflüsse pro Tag verfügen.
 >* Die Befehle **Vakuum** und **Neuindizierung** sperren die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
->* Bei sehr großen Tischen (normalerweise über 5 Gb) kann **Vakuum gefüllt** ziemlich ineffizient werden und sehr lange dauern. Adobe rät davon ab, es für die **Tabelle YyyNmsBroadLogXxx** zu verwenden.
+>* Bei sehr großen Tischen (normalerweise über 5 Gb) kann **Vakuum gefüllt** ziemlich ineffizient werden und sehr lange dauern. Es wird nicht empfohlen, sie für die **Tabelle YyyNmsBroadLogXxx** zu verwenden.
 >* Dieser Wartungsvorgang kann mithilfe einer **[!UICONTROL SQL]** -Aktivität von einem Adobe Campaign-Workflow implementiert werden (weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md)). Vergewissern Sie sich, dass Sie die Wartung für eine niedrige Aktivität planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
+
 >
 
 
