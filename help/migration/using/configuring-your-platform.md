@@ -1,7 +1,7 @@
 ---
-title: Plattform konfigurieren
-seo-title: Plattform konfigurieren
-description: Plattform konfigurieren
+title: Konfigurieren der Plattform
+seo-title: Konfigurieren der Plattform
+description: Konfigurieren der Plattform
 seo-description: null
 page-status-flag: never-activated
 uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
@@ -11,26 +11,26 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 40391fbea53757decb48fd937f5e74e8ba6fb207
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
 
-# Plattform konfigurieren{#configuring-your-platform}
+# Konfigurieren der Plattform{#configuring-your-platform}
 
-Bestimmte wichtige Änderungen in Adobe Campaign v7 erfordern eine Konfiguration, um den effektiven Betrieb sicherzustellen. Diese Parameter können vor oder nach der Migration benötigt werden. Die betreffenden Änderungen und ihr Konfigurationsmodus werden in diesem Abschnitt erläutert.
+Bestimmte wichtige Änderungen in Adobe Campaign v7 erfordern eine Konfiguration, um den effektiven Betrieb sicherzustellen. Diese Parameter können vor oder nach der Migration benötigt werden. Die betreffenden Änderungen und ihr Konfigurationsmodus werden in diesem Abschnitt vorgestellt.
 
-Während der Migration wird die Tabelle **NmsRecipient** aus der Schemadefinition neu erstellt. Änderungen, die außerhalb von Adobe Campaign an der SQL-Struktur dieser Tabelle vorgenommen wurden, gehen verloren.
+Während der Migration wird die **NmsRecipient** -Tabelle aus der Definition der Schemas neu erstellt. Änderungen an der SQL-Struktur dieser Tabelle außerhalb von Adobe Campaign gehen verloren.
 
 Zu prüfende Beispielelemente:
 
-* Wenn Sie der **NmsRecipient** -Tabelle eine Spalte (oder einen Index) hinzugefügt haben, diese aber nicht im Schema detailliert angegeben haben, wird dies nicht gespeichert.
+* Wenn Sie eine Spalte (oder einen Index) zur **NmsRecipient** -Tabelle hinzugefügt haben, diese aber nicht im Schema detailliert angegeben haben, wird dies nicht gespeichert.
 * Das Attribut **tablespace** nimmt standardmäßig seine Werte zurück, d. h. die im Bereitstellungsassistenten definierten Werte.
-* Wenn Sie der NmsRecipient-Tabelle eine Referenzansicht hinzugefügt haben, müssen Sie diese vor der Migration löschen.
+* Wenn Sie der NmsRecipient-Tabelle eine Referenz-Ansicht hinzugefügt haben, müssen Sie diese vor der Migration löschen.
 
 Diese Warnung betrifft auch Oracle-Benutzer: Wenn Sie die Option **usetimestamptz:1** während einer Nachrüstung hinzugefügt haben (siehe [Zeitzonen](../../migration/using/general-configurations.md#time-zones)), werden alle Tabellen mit mindestens einem **Datums- und Uhrzeitfeld** neu erstellt.
 
@@ -56,7 +56,7 @@ Bei der Migration zu Adobe Campaign v7 müssen die folgenden Elemente konfigurie
 
    Bestimmte Syntaxen in JavaScript können in den Versionen 5.11 und 6.02 akzeptiert und in der Version 7 nicht mehr akzeptiert werden, da ein neuer Interpreter verwendet wird. For more information, refer to the [JavaScript](../../migration/using/general-configurations.md#javascript) section.
 
-   Gleichermaßen wird in Adobe Campaign v7 eine neue Syntax eingeführt, um die SQLData-basierte Syntax zu ersetzen. Wenn Sie Codeelemente mit dieser Syntax verwenden, müssen Sie diese anpassen. For more information, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
+   Ebenso wird in Adobe Campaign v7 eine neue Syntax eingeführt, um die SQLData-basierte Syntax zu ersetzen. Wenn Sie Codeelemente mit dieser Syntax verwenden, müssen Sie diese anpassen. For more information, refer to the [SQLData](../../migration/using/general-configurations.md#sqldata) section.
 
 * Kennwörter
 
@@ -64,11 +64,11 @@ Bei der Migration zu Adobe Campaign v7 müssen die folgenden Elemente konfigurie
 
 * Baumstruktur
 
-   Bei einer Migration von einer v5.11-Plattform müssen Sie die Strukturordner gemäß den Adobe Campaign v6-Normen neu organisieren. Weitere Informationen finden Sie im Baumstrukturabschnitt von [Adobe Campaign v7](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) .
+   Bei einer Migration von einer v5.11-Plattform müssen Sie die Strukturordner gemäß den Adobe Campaign v6-Normen neu organisieren. Weitere Informationen finden Sie im [Adobe Campaign v7-Strukturabschnitt](../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure) .
 
 * Interaction
 
-   Wenn Sie **Interaktion** verwenden, müssen Sie alle 6.02 Schemaverweise löschen, die nicht mehr in v7 vorhanden sind. For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
+   Wenn Sie **Interaktion** verwenden, müssen Sie alle 6.02-Schema-Verweise löschen, die nicht mehr in v7 vorhanden sind. For more information, refer to the [Interaction](../../migration/using/general-configurations.md#interaction) section.
 
 ## Nach der Migration {#after-the-migration}
 
@@ -76,11 +76,11 @@ Nach der **Aktualisierung** müssen die folgenden Elemente berücksichtigt und d
 
 * Mirrorseiten
 
-   Der Personalisierungsblock für Spiegelseiten wurde mit v6.x geändert. Diese neue Version verbessert die Sicherheit beim Zugriff auf diese Seiten.
+   Der Personalisierungsblock der Mirrorseite wurde mit v6.x geändert. Diese neue Version verbessert die Sicherheit beim Zugriff auf diese Seiten.
 
-   Wenn Sie den v5-Personalisierungsblock in Ihren Nachrichten verwendet haben, schlägt die Anzeige der Spiegelseite fehl. Adobe empfiehlt dringend, den neuen Personalisierungsblock beim Einfügen der Spiegelseite in Ihre Nachrichten zu verwenden.
+   Wenn Sie den v5-Personalisierungsblock in Ihren Nachrichten verwendet haben, schlägt die Anzeige der Mirrorseite fehl. Adobe empfiehlt dringend, den neuen Personalisierungsblock zu verwenden, wenn Sie Mirrorseite in Ihre Nachrichten einfügen.
 
-   Als temporäre Lösung (und da die Spiegelseiten noch live sind) können Sie jedoch zum alten Personalisierungsblock zurückkehren, um dieses Problem zu vermeiden, indem Sie die Option ändern **[!UICONTROL XtkAcceptOldPasswords]** und auf **[!UICONTROL 1]**. Dies hat keine Auswirkungen auf die Verwendung des neuen Personalisierungsblocks v6.x.
+   Als temporäre Lösung (und da die Mirrorseiten noch live sind) können Sie jedoch zum alten Personalisierungsblock zurückkehren, um dieses Problem zu vermeiden, indem Sie die Option **[!UICONTROL XtkAcceptOldPasswords]** ändern und auf **[!UICONTROL 1]** einstellen. Dies hat keine Auswirkungen auf die Verwendung des neuen Personalisierungsblocks v6.x.
 
 * Syntax
 
@@ -118,19 +118,19 @@ Nach der **Aktualisierung** müssen die folgenden Elemente berücksichtigt und d
 
 * Schemas
 
-   In Red Hat können beim Bearbeiten bestimmter Schemata Fehler auftreten. For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
+   In Red Hat treten möglicherweise Fehler auf, wenn Sie bestimmte Schema bearbeiten. For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
 
 * Workflows
 
-   Bei einer Migration von einer v5.11-Plattform müssen Sie den Arbeitsablaufordner steuern. For more on this, refer to the [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) section.
+   Bei einer Migration von einer v5.11-Plattform müssen Sie den Workflows-Laufzeitordner steuern. For more on this, refer to the [Workflows](../../migration/using/specific-configurations-in-v5-11.md#workflows) section.
 
 * Tracking
 
    Bei der Migration von einer v5.11-Plattform müssen Sie den Verfolgungsmodus konfigurieren. For more on this, refer to the [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) section.
 
-* Startseite 
+* Startseite       
 
-   Wenn Sie von einer v6.02-Plattform migrieren, können Sie zusätzliche Parameter definieren, um Ihre alte Homepage von v6.02 zu erhalten. Weitere Informationen finden Sie unter [Benutzerfreundlichkeit: Homepage und Navigationsabschnitt](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) .
+   Wenn Sie von einer v6.02-Plattform migrieren, können Sie zusätzliche Parameter definieren, um Ihre alte Startseite von v6.02 zu erhalten. Weitere Informationen finden Sie unter [Benutzerfreundlichkeit: Startseite und Navigation](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) .
 
 * Interaction
 
