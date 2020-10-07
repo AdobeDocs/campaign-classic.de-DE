@@ -11,25 +11,25 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 9281808b-1c2f-4095-9051-f181f089f205
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '69'
+ht-degree: 11%
 
 ---
 
 
 # Konsolenaktualisierung{#console-update}
 
-Wenn Sie die **[!UICONTROL Do not request console update]** Option ausgewählt haben und die Aktualisierungsanforderung erneut aktivieren möchten, führen Sie folgendes Verfahren aus:
+Wenn Sie die Option **[!UICONTROL Keine Anforderung der Aktualisierung]** der Konsole aktivieren und die Aktualisierungsanforderung erneut aktivieren möchten, führen Sie folgendes Verfahren aus:
 
-1. Öffnen Sie den Editor der Registrierungsdatenbank mit dem Befehl **regedit** im Windows- **[!UICONTROL Start > Execute]** Menü.
+1. Öffnen Sie den Editor der Registrierungsdatenbank mit dem Befehl **regedit** im Menü Windows **[!UICONTROL Beginn > Ausführen]** .
 
    ![](assets/ncs_console_update_1.png)
 
-1. Zeigen Sie in der Struktur die Optionen des **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** Knotens an.
-1. Löschen Sie den **[!UICONTROL confAdvisedUpgrade]** Eintrag und schließen Sie den Registrierungseditor.
+1. Zeigen Sie in der Struktur die Optionen des Knotens **[!UICONTROL HKEY_CURRENT_USERSoftwareneolaneNL_6nlclient]** an.
+1. Löschen Sie den Eintrag **[!UICONTROL confAdvisedUpgrade]** und schließen Sie den Registrierungseditor.
 
    ![](assets/ncs_console_update_2.png)
 
