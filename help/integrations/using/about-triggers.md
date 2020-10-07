@@ -11,12 +11,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 0112d5bd052ad66169225073276d1da4f3c245d8
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 100%
 
@@ -68,7 +65,7 @@ Die Pipeline-Ereignisse werden automatisch heruntergeladen. Diese Ereignisse kö
 
 ![](assets/triggers_3.png)
 
-Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben müssen von erfahrenen Benutzern ausgeführt werden. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../configuration/using/about-navigation-hierarchy.md) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
+Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../configuration/using/about-navigation-hierarchy.md) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
 
 Ein wiederkehrender Kampagnen-Workflow fragt Auslöser ab. Wenn diese den Marketing-Kriterien entsprechen, wird ein Versand gestartet.
 
