@@ -1,7 +1,7 @@
 ---
-title: Unternehmensbereitstellung
-seo-title: Unternehmensbereitstellung
-description: Unternehmensbereitstellung
+title: Enterprise-Bereitstellung
+seo-title: Enterprise-Bereitstellung
+description: Enterprise-Bereitstellung
 seo-description: null
 page-status-flag: never-activated
 uuid: 2c2b5cef-86cb-4cb5-801a-ca6afeae90bb
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 066d0ac1-033c-467b-aa6c-43a97ecd8632
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1265'
+ht-degree: 2%
 
 ---
 
 
-# Unternehmensbereitstellung{#enterprise-deployment}
+# Enterprise-Bereitstellung{#enterprise-deployment}
 
 Dies ist die umfassendste Konfiguration. Er baut auf der Standardkonfiguration auf, um mehr Sicherheit und Verfügbarkeit zu gewährleisten:
 
@@ -53,7 +53,7 @@ Höhere Hardware- und Verwaltungskosten.
 >
 >Es ist möglich, einen vorhandenen Lastenausgleich für Traffic zu den Umleitungsservern wiederzuverwenden.
 
-## Installation und Konfigurationsschritte {#installation-and-configuration-steps}
+## Installationsschritte und Konfigurationsschritte {#installation-and-configuration-steps}
 
 ### Voraussetzungen {#prerequisites}
 
@@ -63,8 +63,8 @@ Höhere Hardware- und Verwaltungskosten.
 * Absprungkasten, der über POP3 erreichbar ist,
 * Erstellen von zwei DNS-Aliasen auf dem Lastenausgleich:
 
-   * die erste, die der Öffentlichkeit zur Verfolgung und zum Verweis auf den Lastenausgleich an einer virtuellen IP-Adresse (VIP) zur Verfügung gestellt wird und die dann an die beiden Frontserver verteilt wird,
-   * die zweite, die den internen Benutzern für den Zugriff über die Konsole offen steht und auf einen Lastenausgleich auf einer virtuellen IP-Adresse (VIP) verweist und die dann an die beiden Anwendungsserver verteilt wird.
+   * die erste öffentlich zugänglich gemacht wird, um den Lastenausgleich zu verfolgen und auf eine virtuelle IP-Adresse (VIP) zu verweisen, und die dann an die beiden Frontserver verteilt wird,
+   * die zweite, die den internen Benutzern für den Zugriff über die Konsole offen steht und auf einen Lastenausgleich auf einer virtuellen IP-Adresse (VIP) zeigt und die dann an die beiden Anwendungsserver verteilt wird.
 
 * Firewall zum Öffnen von STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) Ports. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).
 
@@ -72,7 +72,7 @@ Höhere Hardware- und Verwaltungskosten.
 >
 >Wenn Ihre Anwendungsserver auf eine einzige Datenbankinstanz verweisen, wird nach dem Import eines Standardpakets auf einer Instanz das im Paket enthaltene Schema nicht auf der anderen Instanz geladen.
 >  
->Wenn Ihre Anwendungsserver auf eine einzige Datenbankinstanz verweisen, wird das Schema nach dem Ändern des Schemas auf einer Instanz nicht auf der anderen Instanz geladen.
+>Wenn Ihre Anwendungsserver auf eine einzige Datenbankinstanz verweisen, wird das Schema nach dem Ändern des Schemas auf einer Instanz nicht auf der anderen geladen.
 >
 >Um diese Probleme wiederherzustellen, müssen Sie den Prozess &quot;web@default&quot;in der zweiten Instanz neu starten, in der ein Fehler aufgetreten ist.
 
@@ -81,17 +81,17 @@ Höhere Hardware- und Verwaltungskosten.
 In den folgenden Beispielen sind die Parameter der Instanz:
 
 * Name der Instanz: demo
-* DNS-Maske: tracking.campaign.net*, console.campaign.net* (der Anwendungsserver verarbeitet die URLs für Client-Konsolenverbindungen und Berichte sowie für Spiegelseiten und Abmeldeseiten)
+* DNS-Maske: tracking.Kampagne.net*, console.Kampagne.net* (der Anwendungsserver verarbeitet die URLs für Client-Konsolenverbindungen und -Berichte sowie für Mirrorseiten und Abmeldungen)
 * Sprache: englisch
-* Datenbank: campaign:demo@dbsrv
+* Datenbank: kampagne:demo@dbsrv
 
 Die Schritte zum Installieren des ersten Servers sind:
 
 1. Befolgen Sie die Installationsanweisungen für den Adobe Campaign-Server: **nlserver** -Paket unter Linux oder **setup.exe** unter Windows.
 
-   Weitere Informationen finden Sie unter [Voraussetzungen für die Campaign-Installation unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Campaign-Installation unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Weitere Informationen dazu finden Sie unter [Voraussetzungen für die Installation der Kampagne unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Kampagne unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Nachdem der Adobe Campaign-Server installiert wurde, starten Sie den Anwendungsserver (Web) mit dem Befehl **nlserver web -tomcat** (das Webmodul ermöglicht es Ihnen, Tomcat im eigenständigen Webservermodus zu starten, der auf Port 8080 überwacht) und sicherzustellen, dass Tomcat richtig gestartet wird:
+1. Sobald der Adobe Campaign-Server installiert ist, führen Sie einen Beginn des Anwendungsservers (Web) mit dem Befehl **nlserver web -tomcat** durch (das Webmodul ermöglicht Ihnen, den Beginn von Tomcat im eigenständigen Webservermodus, der auf Port 8080 überwacht, durchzuführen) und stellen Sie sicher, dass die Tomcat-Beginn korrekt sind:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -109,8 +109,8 @@ Die Schritte zum Installieren des ersten Servers sind:
 
    Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: [Erststart des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Windows: [Erststart des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Für Linux: [Erster Beginn des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Windows: [Erster Beginn des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 1. Ändern Sie das **interne** Kennwort mithilfe des Befehls:
 
@@ -120,7 +120,7 @@ Die Schritte zum Installieren des ersten Servers sind:
 
    For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-1. Erstellen Sie die **Demo** -Instanz mit den DNS-Masken zur Verfolgung (in diesem Fall **tracking.campaign.net**) und Zugriff auf Client-Konsolen (in diesem Fall **console.campaign.net**). Es gibt zwei Möglichkeiten:
+1. Erstellen Sie die **Demo** -Instanz mit den DNS-Masken zur Verfolgung (in diesem Fall **tracking.Kampagne.net**) und Zugriff auf Client-Konsolen (in diesem Fall **console.Kampagne.net**). Es gibt zwei Möglichkeiten, dies zu tun:
 
    * Erstellen Sie die Instanz über die Konsole:
 
@@ -128,7 +128,7 @@ Die Schritte zum Installieren des ersten Servers sind:
 
       Weitere Informationen finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      or
+      oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
@@ -138,7 +138,7 @@ Die Schritte zum Installieren des ersten Servers sind:
 
       For more on this, refer to [Creating an instance](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Bearbeiten Sie die Datei &quot; **config-demo.xml** &quot;(die über den vorherigen Befehl erstellt wurde und sich neben der Datei &quot; **config-default.xml** &quot;befindet), überprüfen Sie, ob die Prozesse &quot; **mta** (Bereitstellung)&quot;, &quot; **wfserver** (Workflow)&quot;, &quot; **inMail** &quot;(rebound mails) und &quot;Direktstatistik&quot;(Statistik) aktiviert sind, und konfigurieren Sie dann die Adresse der AppAppAppApp **** **** server:
+1. Bearbeiten Sie die Datei &quot; **config-demo.xml** &quot;(erstellt über den vorherigen Befehl und befindet sich neben der Datei &quot; **config-default.xml** &quot;), überprüfen Sie, ob die Prozesse &quot; **mta** &quot;(Versand), &quot; **wfserver** &quot;(Workflow), &quot; **inMail** **** **** &quot;(rebound mails) und &quot;σ&quot;(Statistik) aktiviert sind, und konfigurieren Sie dann die Adresse der AppAppApp Statistikserver:
 
    ```
    <?xml version='1.0'?>
@@ -158,7 +158,7 @@ Die Schritte zum Installieren des ersten Servers sind:
 
    For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
-1. Bearbeiten Sie die Datei &quot; **serverConf.xml** &quot;und geben Sie die Bereitstellungsdomäne an. Geben Sie dann die IP- (oder Host-)Adressen der DNS-Server an, die vom MTA-Modul zur Beantwortung von DNS-Anfragen vom MX-Typ verwendet werden.
+1. Bearbeiten Sie die **Datei &quot;serverConf.xml** &quot;und geben Sie die Domäne des Versands an. Geben Sie dann die IP- (oder Host-)Adressen der DNS-Server an, die vom MTA-Modul verwendet werden, um die DNS-Abfragen des MX-Typs zu beantworten.
 
    ```
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -170,18 +170,18 @@ Die Schritte zum Installieren des ersten Servers sind:
 
    For more on this, refer to [Campaign server configuration](../../installation/using/campaign-server-configuration.md).
 
-1. Kopieren Sie das Setup-Programm für die Client-Konsole (**setup-client-7.XX**, **YYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in den Ordner **/datakit/nl/eng/jsp** .
+1. Kopieren Sie das Programm zum Einrichten der Clientkonsole (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in den Ordner **/datakit/nl/eng/jsp** .
 
    Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: Verfügbarkeit der [Client-Konsole für Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Windows: Verfügbarkeit der [Client-Konsole für Windows](../../installation/using/client-console-availability-for-windows.md).
+   * Für Linux: [Client-Konsolenverfügbarkeit unter Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Windows: [Client-Konsolenverfügbarkeit für Windows](../../installation/using/client-console-availability-for-windows.md).
 
-1. Starten Sie den Adobe Campaign-Server (**net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux) und führen Sie den Befehl **nlserver pdump** erneut aus, um zu prüfen, ob alle aktivierten Module vorhanden sind.
+1. Beginn des Adobe Campaign-Servers (**net Beginn nlserver6** in Windows, **/etc/init.d/nlserver6 Beginn** in Linux) und führen Sie den Befehl **nlserver pdump** erneut aus, um zu überprüfen, ob alle aktivierten Module vorhanden sind.
 
    >[!NOTE]
    >
-   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): nlserver **systemctl start**
+   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
 
 
    ```
@@ -195,20 +195,20 @@ Die Schritte zum Installieren des ersten Servers sind:
    web@default (28671) - 40.5 MB
    ```
 
-   Mit diesem Befehl können Sie auch die Version und die Build-Nummer des Adobe Campaign-Servers kennen, der auf dem Computer installiert ist.
+   Mit diesem Befehl können Sie auch die Versionsnummer und die Build-Nummer des auf dem Adobe Campaign installierten Servers kennen.
 
 1. Testen Sie das **nlserver-Webmodul** unter Verwendung der URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
-   Mit dieser URL können Sie auf die Download-Seite für das Client-Setup-Programm zugreifen.
+   Mit dieser URL können Sie auf die Downloadseite für das Client-Setup-Programm zugreifen.
 
-   Geben Sie die **interne** Anmeldung und das zugehörige Kennwort ein, wenn Sie die Seite zur Zugriffssteuerung aufrufen.
+   Geben Sie die **interne** Anmeldung und das zugehörige Kennwort ein, wenn Sie die Seite &quot;Zugriffskontrolle&quot;aufrufen.
 
    ![](assets/s_ncs_install_access_client.png)
 
    Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: Verfügbarkeit der [Client-Konsole für Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Windows: Verfügbarkeit der [Client-Konsole für Windows](../../installation/using/client-console-availability-for-windows.md)
+   * Für Linux: [Client-Konsolenverfügbarkeit unter Linux](../../installation/using/client-console-availability-for-linux.md)
+   * Windows: [Client-Konsolenverfügbarkeit für Windows](../../installation/using/client-console-availability-for-windows.md)
 
 ### Installieren und Konfigurieren des Anwendungsservers 2 {#installing-and-configuring-the-application-server-2}
 
@@ -226,7 +226,7 @@ Gehen Sie wie folgt vor:
    nlserver config -setdblogin:PostgreSQL:campaign:demo@dbsrv -instance:demo
    ```
 
-1. Bearbeiten Sie die Datei &quot; **config-demo.xml** &quot;(die über den vorherigen Befehl erstellt wurde und sich neben der Datei &quot; **config-default.xml** &quot;befindet), überprüfen Sie, ob die Prozesse &quot; **mta** (Bereitstellung)&quot;, &quot; **wfserver** (Workflow)&quot;, &quot; **inMail** &quot;(rebound mails) und &quot;Direktstatistik&quot;(Statistik) aktiviert sind, und konfigurieren Sie dann die Adresse der AppAppAppApp **** **** server:
+1. Bearbeiten Sie die Datei &quot; **config-demo.xml** &quot;(erstellt über den vorherigen Befehl und befindet sich neben der Datei &quot; **config-default.xml** &quot;), überprüfen Sie, ob die Prozesse &quot; **mta** &quot;(Versand), &quot; **wfserver** &quot;(Workflow), &quot; **inMail** **** **** &quot;(rebound mails) und &quot;σ&quot;(Statistik) aktiviert sind, und konfigurieren Sie dann die Adresse der AppAppApp Statistikserver:
 
    ```
    <?xml version='1.0'?>
@@ -246,7 +246,7 @@ Gehen Sie wie folgt vor:
 
    For more on this, refer to [Enabling processes](../../installation/using/campaign-server-configuration.md#enabling-processes).
 
-1. Bearbeiten Sie die Datei **serverConf.xml** und füllen Sie die DNS-Konfiguration des MTA-Moduls aus:
+1. Bearbeiten Sie die Datei &quot; **serverConf.xml** &quot;und füllen Sie die DNS-Konfiguration des MTA-Moduls aus:
 
    ```
    <dnsConfig localDomain="campaign.com" nameServers="192.0.0.1, 192.0.0.2"/>
@@ -258,12 +258,12 @@ Gehen Sie wie folgt vor:
 
    For more on this, refer to [Campaign server configuration](../../installation/using/campaign-server-configuration.md).
 
-1. Starten Sie die Adobe Campaign-Server.
+1. Beginn der Adobe Campaign-Server.
 
    Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: [Erststart des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
-   * Windows: [Erststart des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
+   * Für Linux: [Erster Beginn des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server)
+   * Windows: [Erster Beginn des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server)
 
 ### Installieren und Konfigurieren der Frontserver {#installing-and-configuring-the-frontal-servers}
 
@@ -274,18 +274,18 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 1. Installieren Sie den Adobe Campaign-Server,
 1. Befolgen Sie die in den folgenden Abschnitten beschriebenen Webserver-Integrationsschritte (IIS, Apache):
 
-   * Für Linux: [Integration in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
-   * Windows: [Integration in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md),
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md).
 
 1. Kopieren Sie die **Dateien &quot;config-demo.xml** &quot;und &quot; **serverConf.xml** &quot;, die während der Installation erstellt wurden. Aktivieren Sie in der Datei &quot; **demo.xml** &quot;den **trackinglogd** -Prozess und deaktivieren Sie die **Prozesse &quot;mta**&quot;, &quot; **inmail**&quot;, &quot; **wfserver** **** &quot;und &quot;stat&quot;.
-1. Bearbeiten Sie die Datei &quot; **serverConf.xml** &quot;und füllen Sie die redundanten Tracking-Server in die Parameter der Umleitung:
+1. Bearbeiten Sie die Datei &quot; **serverConf.xml** &quot;und füllen Sie die redundanten Tracking-Server in den Parametern der Umleitung aus:
 
    ```
    <spareServer enabledIf="$(hostname)!='front_srv1'" id="1" url="https://front_srv1:8080"/>
    <spareServer enabledIf="$(hostname)!='front_srv2'" id="2" url="https://front_srv2:8080"/>
    ```
 
-1. Starten Sie die Website und testen Sie die Umleitung von der URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
+1. Beginn der Website und Testen der Umleitung von der URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test)
 
    Der Browser sollte die folgenden Meldungen anzeigen (je nach URL, die vom Lastenausgleich umgeleitet wird):
 
@@ -293,7 +293,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
-   or
+   oder
 
    ```
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
@@ -301,8 +301,8 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: Webserver [starten und Konfiguration](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)testen,
-   * Windows: Webserver [starten und die Konfiguration](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)testen.
+   * Für Linux: [Webserver starten und Konfiguration](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)testen,
+   * Windows: [Starten des Webservers und Testen der Konfiguration](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration).
 
-1. Starten Sie den Adobe Campaign-Server.
+1. Beginn des Adobe Campaign-Servers.
 
