@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: 3621d4ec-8839-40c3-a574-486c408f79ba
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
 
 # Befehlszeilen{#command-lines}
 
-Die folgenden Befehlszeilen erfordern die Möglichkeit, auf den Anwendungsserver zuzugreifen. Bei Bereitstellungen, die von Adobe gehostet werden, können diese Befehle nur von Adobe ausgeführt werden.
+Die folgenden Befehlszeilen erfordern die Möglichkeit, auf den Anwendungsserver zuzugreifen. Bei Bereitstellungen, die von der Adobe gehostet werden, können diese Befehle nur von der Adobe ausgeführt werden.
 
 ## Erstellen einer Instanz {#creating-an-instance}
 
@@ -34,7 +34,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 (wobei **eng** und **fra** mögliche Werte für den `[lang]` Parameter sind)
 
-Mit dem Befehl **nlserver config -addinstance:instance1/demo*/eng** können Sie eine Instanz namens **instance1** in englischer Sprache mit der DNS-Maske demo* erstellen.
+Mit dem Befehl **nlserver config -addinstance:instance1/demo*/eng** können Sie eine Instanz mit dem Namen **instance1** in englischer Sprache mit der DNS-Maske demo* erstellen.
 
 ## Datenbank deklarieren {#declaring-a-database}
 
@@ -51,7 +51,7 @@ Folgende Werte sind für den **`[rdbms]`** Parameter möglich:
 * **mssql**: für Microsoft SQL Server,
 * **DB2**: für die DB2-Engine.
 
-Mit dem folgenden Befehl wird die **Demo** -Instanz mit dem SQL-Typ-Server **base6** konfiguriert, der mit dem **Kampagnenkonto** und seinem **Kennwort** auf dem **dbsrv** -Server verknüpft ist:
+Mit dem folgenden Befehl wird die **Demo** -Instanz mit dem SQL-Typserver **base6** konfiguriert, der mit dem **Kampagne** -Konto und dem zugehörigen **Kennwort** auf dem **dbsrv** -Server verknüpft ist:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
