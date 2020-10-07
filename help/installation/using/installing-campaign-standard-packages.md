@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d60389eb735fb50188ddc2f2e3df3788a3213446
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1163'
 ht-degree: 19%
@@ -68,7 +65,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
  <tbody> 
   <tr> 
    <td> Versand<br /> </td> 
-   <td> Überwacht Versand und eventuell aufgetretene Probleme beim Senden von Nachrichten. <a href="../../delivery/using/monitoring-a-delivery.md">Mehr dazu</a><br /> </td> 
+   <td> Überwacht Versand und eventuell aufgetretene Probleme beim Senden von Nachrichten. <a href="../../delivery/using/monitoring-a-delivery.md">mehr dazu</a><br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
@@ -199,7 +196,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
   </tr> 
   <tr> 
    <td> AEM integration<br /> </td> 
-   <td> Ermöglicht die direkte Verwaltung des Inhalts Ihrer E-Mail-Versand sowie Ihrer Formulare in Adobe Experience Manager, um die Funktionen zur Inhaltsbearbeitung von AEM sowie die Kapazitäten von Adobe Campaigns Versänden nutzen zu können. <a href="../../integrations/using/about-adobe-experience-manager.md">Mehr erfahren</a> <br /> </td> 
+   <td> Ermöglicht die direkte Verwaltung des Inhalts Ihrer E-Mail-Versand sowie Ihrer Formulare in Adobe Experience Manager, um AEM Funktionen zur Inhaltsbearbeitung und die Versand-Kapazitäten von Adobe Campaign nutzen zu können. <a href="../../integrations/using/about-adobe-experience-manager.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -229,7 +226,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
-   <td> Bridges Adobe Campaign v7 und Adobe Campaign Standard. Es handelt sich um eine integrierte Funktion in Kampagne v7, die Daten automatisch an Campaign Standard repliziert und die besten beider Anwendungen zusammenführt. Optional. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Mehr erfahren</a> <br /> </td> 
+   <td> Bridges Adobe Campaign v7 und Adobe Campaign Standard Es handelt sich um eine integrierte Funktion in Kampagne v7, die Daten automatisch an Campaign Standard repliziert und die besten beider Anwendungen zusammenführt. Optional. <a href="../../integrations/using/acs-connector-principles-and-data-cycle.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
  </tbody> 
