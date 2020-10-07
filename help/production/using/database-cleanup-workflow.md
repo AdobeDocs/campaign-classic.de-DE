@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c8cfdb67a4be2bc27baa363032c74a4aa8665e2a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2995'
 ht-degree: 1%
@@ -194,7 +191,7 @@ Der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** löscht auch Ve
 
 1. Wenn der Wert des Status **[!UICONTROL Beginn ausstehend]** ist, **[!UICONTROL Wird ausgeführt]** , **[!UICONTROL Wiederherstellung ausstehend]** , **[!UICONTROL Wiederherstellung läuft]** , **[!UICONTROL Pause angefordert]** **** **** ,Pause in progressoderPaused(Werte 51, 55, 61, 62, 71, 72, 75), wird der Versand gestoppt und der Aufgabe bereinigt die verknüpften Informationen.
 
-### Bereinigung abgelaufener Versände {#cleanup-of-expired-deliveries}
+### Bereinigung abgelaufener Versand {#cleanup-of-expired-deliveries}
 
 Diese Aufgabe beendet Versand, deren Gültigkeitsdauer abgelaufen ist.
 
@@ -361,7 +358,7 @@ Diese Aufgabe bereinigt jede Workflow-Instanz mit ihrem Identifer (**lWorkflowId
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
-1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste aktiver Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
+1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste der aktiven Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
 
    ```
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId<>0 AND iState<>20
@@ -485,7 +482,7 @@ Mit dieser Aufgabe können Sie die in verschiedenen Tabellen gespeicherten Versa
 
 ### Bereinigen der NmsEmailErrorStat-Tabelle {#cleanup-of-the-nmsemailerrorstat-table-}
 
-Mit dieser Aufgabe wird die **Tabelle NmsEmailErrorStat** gelöscht. Das wichtigste Programm (**coalesceErrors**) definiert zwei Daten:
+Diese Aufgabe löscht die **Tabelle NmsEmailErrorStat** . Das wichtigste Programm (**coalesceErrors**) definiert zwei Daten:
 
 * **Beginn**: Datum des nächsten Prozesses, der mit der Option **NmsLastErrorStatCoalesce** oder dem neuesten Datum in der Tabelle übereinstimmt.
 * **Enddatum**: aktuelles Serverdatum.
