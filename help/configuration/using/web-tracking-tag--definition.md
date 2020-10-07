@@ -1,7 +1,7 @@
 ---
-title: '"Web-Tracking-Tag: definition"'
-seo-title: '"Web-Tracking-Tag: definition"'
-description: '"Web-Tracking-Tag: definition"'
+title: '"Webtrackingtag: Definition"'
+seo-title: '"Webtrackingtag: Definition"'
+description: '"Webtrackingtag: Definition"'
 seo-description: null
 page-status-flag: never-activated
 uuid: 915ddfd8-ad1b-41ac-96ed-f7fae687c09f
@@ -11,18 +11,18 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: b8996508-7173-4225-95e7-b51209aae1f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 3ad288bc983002da82b564e8ab3f4244c6324573
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 7%
 
 ---
 
 
-# Web-Tracking-Tag: Definition{#web-tracking-tag-definition}
+# Webtrackingtag: Definition{#web-tracking-tag-definition}
 
-Ein Web-Tracking-Tag ist einfach eine URL, die mit den entsprechenden Parametern erstellt und über eine HTTP-Abfrage an den Umleitungsserver gesendet wird.
+Ein Web-Trackingtag ist einfach eine URL, die mit den entsprechenden Parametern erstellt und über eine HTTP-Abfrage an den Umleitungsserver gesendet wird.
 
 ## Format der zu sendenden Daten {#format-of-the-data-to-be-sent}
 
@@ -30,16 +30,16 @@ Das Format einer Web-Tracking-URL lautet wie folgt: **https://`<name_of_redirect
 
 >[!NOTE]
 >
->Die der URL hinzugefügte Zufallszahl verhindert Probleme, die durch das Zwischenspeichern von Webseiten in Browsern verursacht werden.
+>Die der URL hinzugefügte Zufallszahl vermeidet Probleme, die durch das Zwischenspeichern von Webseiten in Browsern verursacht werden.
 
-Die folgende Tabelle enthält eine Liste der vom Umleitungsserver unterstützten speziellen Parameter.
+Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umleitungsserver unterstützt werden.
 
 <table>
                      <thead>
                         <tr>
                            <th>Name</th>
                            <th>Typ</th>
-                           <th>Description</th> 
+                           <th>Beschreibung </th> 
                         </tr> 
                      </thead>
                      <tbody>
@@ -51,7 +51,7 @@ Die folgende Tabelle enthält eine Liste der vom Umleitungsserver unterstützten
                               <p>Sitzungs-Cookie</p> 
                            </td>
                            <td>
-                              <p>Lieferkennung und Empfänger-ID.</p> 
+                              <p>Versand-ID und Empfänger-ID.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -84,7 +84,7 @@ Die folgende Tabelle enthält eine Liste der vom Umleitungsserver unterstützten
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Lieferkennung, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert ist als Hexadezimalwert anzugeben.
+                              <p>Versand-ID, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert ist als Hexadezimalwert anzugeben.
                               </p> 
                            </td> 
                         </tr>
@@ -96,7 +96,7 @@ Die folgende Tabelle enthält eine Liste der vom Umleitungsserver unterstützten
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Parameter zur Identifizierung des Internetbenutzers. Das Format dieses Parameters ist "name=value", wobei der Name ein Feld des Empfängerschemas ist. Dieser Parameter hat Vorrang vor der Kennung im Sitzungs-Cookie.
+                              <p>Parameter zur Identifizierung des Internetbenutzers. Das Format dieses Parameters ist "name=value", wobei der Name ein Schema des Empfängers ist. Dieser Parameter hat Vorrang vor der Kennung im Sitzungs-Cookie.
                               </p> 
                            </td> 
                         </tr> 
@@ -117,22 +117,22 @@ Die folgende Tabelle enthält eine Liste der vom Umleitungsserver unterstützten
 
    **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
-   Ein Empfänger, dessen Kontonummer 10 ist, wird an die Homepage gesendet.
+   Ein Empfänger mit einer Kontonummer von 10 wird an die Startseite gesendet.
 
-* Verwenden einer Standardauslieferung
+* Verwenden eines Standard-Versands
 
    **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Ein Empfänger wird an die Homepage gesendet. Diese Informationen werden in der Bereitstellung mit dem Bezeichner 230 (e6 in Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungs-Cookie mit einem Lieferbezeichner gesendet.
+   Ein Empfänger wird an die Startseite gesendet. Diese Informationen werden im Versand mit dem Bezeichner 230 (e6 in Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungscookie mit einem Versand-Bezeichner gesendet.
 
 >[!NOTE]
 >
->Alle Werte, die über URL-Parameter an den Umleitungsserver gesendet werden, müssen URL-kodiert sein. Beachten Sie in den angegebenen Beispielen, dass die Zeichen &#39;=&#39; und &#39;|&#39; als &#39;%3D&#39; und &#39;%7C&#39; kodiert sind.
+>Alle Werte, die über URL-Parameter an den Umleitungsserver gesendet werden, müssen URL-kodiert sein. Beachten Sie in den angegebenen Beispielen, dass die Zeichen &#39;=&#39; und &#39;|&#39; als &#39;%3D&#39; bzw. &#39;%7C&#39; kodiert sind.
 
 ## Datenübertragungsmethoden {#data-transmission-methods}
 
 Folgende Methoden sind möglich:
 
 * Einfügen der URL in das **&quot;src&quot;** -Attribut eines HTML- **`<img>`** Tags, das in die Webseite eingefügt wurde, die Sie verfolgen möchten.
-* Direktaufruf an den Umleitungsserver, wenn die zu verfolgende Webseite generiert wird.
+* Direktaufruf an den Umleitungsserver, wenn die Webseite, die Sie verfolgen möchten, generiert wird.
 
