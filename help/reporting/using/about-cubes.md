@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 discoiquuid: 42db3be8-ee02-4158-adcd-846420a32460
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '740'
+ht-degree: 100%
 
 ---
 
@@ -41,6 +41,7 @@ Mit dem Marketing-Analytics-Modul bietet Campaign die folgenden Möglichkeiten:
    * Daten zu aggregieren und in einer Arbeitstabelle zu speichern, um Indikatoren im Voraus zu berechnen;
    * auf diese Weise das in den verschiedenen Berechnungen der Berichte und Abfragen bewegte Datenenvolumen zu reduzieren und die Berechnungszeit der Indikatoren deutlich zu optimieren;
    * den Datenzugriff zu erleichtern und Benutzern nach verschiedenen Dimensionen geordnete - unter Umständen voraggregierte - Daten zur Verfügung zu stellen.
+
    Weitere Informationen hierzu finden Sie im Abschnitt [Cubes erstellen](../../reporting/using/creating-indicators.md).
 
 1. Die Erstellung von Pivot-Tabellen, um
@@ -49,6 +50,7 @@ Mit dem Marketing-Analytics-Modul bietet Campaign die folgenden Möglichkeiten:
    * die anzuzeigenden Daten sowie ihren Anzeigemodus auszuwählen,
    * die verwendeten Kennzahlen anzupassen,
    * nicht technischen Benutzern interaktive Analyse-Tools anzubieten.
+
    Weitere Informationen hierzu finden Sie unter [Cubes zur Datenanalyse verwenden](../../reporting/using/using-cubes-to-explore-data.md).
 
 1. Die Erstellung von Abfragen über in einem Cube berechnete und aggregierte Daten.
