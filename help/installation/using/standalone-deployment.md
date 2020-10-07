@@ -11,14 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 9834638f-a8bb-4969-9f8d-99b8d9fdb1ca
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: f8d36b9fca9624500c5273eb73a1702f077dd60c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -55,7 +52,7 @@ Mit zunehmendem Volumen wird der Datenbankserver durch eine Variante dieser Arch
 
 ### Vorteile {#advantages}
 
-* Voll eigenständige und niedrige Konfigurationskosten (keine abrechnungsfähigen Lizenzen erforderlich, wenn die unten aufgeführte Open-Source-Software verwendet wird).
+* Vollständig eigenständige und niedrige Konfigurationskosten (keine abrechnungsfähigen Lizenzen erforderlich, wenn die unten aufgeführte Open-Source-Software verwendet wird).
 * Vereinfachte Installation und Netzwerkkonfiguration.
 
 ### Nachteile {#disadvantages}
@@ -78,23 +75,23 @@ Mit zunehmendem Volumen wird der Datenbankserver durch eine Variante dieser Arch
    * die erstmalige Exposition gegenüber der Öffentlichkeit zur Verfolgung und zum Hinweis auf den Computer über sein öffentliches IP;
    * der zweite Alias, der internen Benutzern für den Konsolenzugriff zur Verfügung steht und auf denselben Computer verweist.
 
-* Firewall zum Öffnen von SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) ports. For further information, refer to [Network configuration](../../installation/using/network-configuration.md).
+* Firewall zum Öffnen von SMTP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) Ports. Weitere Informationen finden Sie unter [Netzwerkkonfiguration](../../installation/using/network-configuration.md).
 
-In the following examples, the parameters of the instance are:
+In den folgenden Beispielen sind die Parameter der Instanz:
 
-* Name of the instance: **demo**
-* DNS mask: **console.campaign.net*** (only for client console connections and for reports)
-* Database: **campaign:demo@dbsrv**
+* Name der Instanz: **demo**
+* DNS-Maske: **console.Kampagne.net*** (nur für Client-Konsolenverbindungen und für Berichte)
+* Datenbank: **kampagne:demo@dbsrv**
 
-### Installing and configuring (single machine) {#installing-and-configuring--single-machine-}
+### Installieren und Konfigurieren (Einzelcomputer) {#installing-and-configuring--single-machine-}
 
 Gehen Sie wie folgt vor:
 
-1. Follow the installation procedure for the Adobe Campaign server: **nlserver** package on Linux or **setup.exe** on Windows.
+1. Befolgen Sie die Installationsanweisungen für den Adobe Campaign-Server: **nlserver** -Paket unter Linux oder **setup.exe** unter Windows.
 
-   For more on this, refer to [Prerequisites of Campaign installation in Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) and [Prerequisites of Campaign installation in Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Weitere Informationen dazu finden Sie unter [Voraussetzungen für die Installation der Kampagne unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Kampagne unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
-1. Once the Adobe Campaign server is installed, start the application server (web) using the command **nlserver web -tomcat** (the Web module enables you to start Tomcat in standalone Web server mode listening on port 8080) and to make sure Tomcat starts correctly:
+1. Sobald der Adobe Campaign-Server installiert ist, führen Sie einen Beginn des Anwendungsservers (Web) mit dem Befehl **nlserver web -tomcat** durch (das Webmodul ermöglicht Ihnen, den Beginn von Tomcat im eigenständigen Webservermodus, der auf Port 8080 überwacht, durchzuführen) und stellen Sie sicher, dass die Tomcat-Beginn korrekt sind:
 
    ```
    12:08:18 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -105,9 +102,9 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >The first time the Web module is executed it creates the **config-default.xml** and **serverConf.xml** files in the **conf** directory under the installation folder. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+   >Beim ersten Ausführen des Webmoduls werden die Dateien &quot; **config-default.xml** &quot;und &quot; **serverConf.xml** &quot;im Ordner &quot; **conf** &quot;im Installationsordner erstellt. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
-   Press **Ctrl+C** to stop the server.
+   Drücken Sie **Strg+C** , um den Server zu beenden.
 
    Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -122,7 +119,7 @@ Gehen Sie wie folgt vor:
 
    For more on this, refer to [Internal identifier](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-1. Erstellen Sie die **Demo** -Instanz mit den DNS-Masken zur Verfolgung (in diesem Fall **tracking.Kampagne.net**) und Zugriff auf Client-Konsolen (in diesem Fall **console.Kampagne.net**). There are two ways of doing this:
+1. Erstellen Sie die **Demo** -Instanz mit den DNS-Masken zur Verfolgung (in diesem Fall **tracking.Kampagne.net**) und Zugriff auf Client-Konsolen (in diesem Fall **console.Kampagne.net**). Es gibt zwei Möglichkeiten, dies zu tun:
 
    * Erstellen Sie die Instanz über die Konsole:
 
@@ -140,7 +137,7 @@ Gehen Sie wie folgt vor:
 
       For more on this, refer to [Creating an instance](../../installation/using/command-lines.md#creating-an-instance).
 
-1. Edit the **config-demo.xml** file (created in the previous step next to **config-default.xml**) and make sure the **mta** (delivery), **wfserver** (workflow), **inMail** (bounce mails) and **stat** (statistics) processes are enabled. Then configure the address of the statistics server:
+1. Bearbeiten Sie die Datei &quot; **config-demo.xml** &quot;(die im vorherigen Schritt neben &quot; **config-default.xml**&quot;erstellt wurde) und stellen Sie sicher, dass die Prozesse &quot; **mta** &quot;(Versand), &quot; **wfserver** &quot;(Workflow), &quot; **inMail&quot;(Absprungmails) und &quot;** InMail **** &quot;aktiviert sind. Konfigurieren Sie dann die Adresse des Statistikservers:
 
    ```
    <?xml version='1.0'?>
@@ -192,7 +189,7 @@ Gehen Sie wie folgt vor:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="localhost"/>
    ```
 
-   For more on this, refer to the following sections:
+   Weitere Informationen finden Sie in den folgenden Abschnitten:
 
    * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
    * Windows: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
@@ -201,7 +198,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemCtl Beginn nlserver**
+   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl Beginn nlserver**
 
    ```
    12:09:54 >   Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
@@ -256,7 +253,7 @@ Gehen Sie wie folgt vor:
 
       ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Weiterleitungsserver verwendet wird, ist die zur Erfassung von Trackinglogs und Transfer-URLs verwendete interne URL eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
+      Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Umleitungsserver verwendet wird, ist die zur Erfassung von Trackinglogs und Transfer-URLs verwendete interne URL eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
 
    * Absprungverwaltung: Geben Sie die Parameter für die Verarbeitung der Absprungmail ein (berücksichtigen Sie nicht den Abschnitt **Unverarbeitete Absprungmeldungen** ).
    * Zugriff von: Geben Sie die beiden URLs für Berichte, Webformulare und Mirrorseiten an.
