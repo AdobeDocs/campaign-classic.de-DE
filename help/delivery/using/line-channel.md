@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 1d3cc650-3c79-4a1d-b2bc-e7eb6d59d2f1
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 0ce6e5277c32bc18c20dca62e5b276f654d1ace5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1164'
+ht-degree: 100%
 
 ---
 
@@ -141,6 +141,7 @@ Dabei können folgende Elemente verwendet werden:
    * 460 px
    * 300 px
    * 240 px
+
    >[!NOTE]
    >
    >Die Größe 1040 x 1040 Pixel ist für LINE-Bilder mit Links zwingend.
