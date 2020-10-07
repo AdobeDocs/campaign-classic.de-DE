@@ -1,7 +1,7 @@
 ---
-title: Stapelablaufverfolgung unter Linux
-seo-title: Stapelablaufverfolgung unter Linux
-description: Stapelablaufverfolgung unter Linux
+title: Stack Trace in Linux
+seo-title: Stack Trace in Linux
+description: Stack Trace in Linux
 seo-description: null
 page-status-flag: never-activated
 uuid: d839df47-902f-4b92-bc78-536fc4fb6c98
@@ -11,28 +11,29 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 60f306ea-4593-4e56-896e-8933277ee26a
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9482a99c3be164651b3428179388cb0a8a75783f
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 14%
 
 ---
 
 
-# Stapelablaufverfolgung unter Linux{#stack-trace-in-linux}
+# Stack Trace in Linux{#stack-trace-in-linux}
 
-Eine **Stapelablaufverfolgung** stellt eine in einer **Core** -Typdatei enthaltene Ablaufverfolgung dar. Diese Datei wird bei einem Computerfehler generiert. Er kann den Ursprung des Fehlers identifizieren.
+Eine **Stapelablaufverfolgung** stellt eine in einer **Core** -Typdatei enthaltene Ablaufverfolgung dar. Diese Datei wird im Ereignis eines Computerfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
 
 >[!NOTE]
 >
 >* Eine **Core** -Datei heißt **core.`<num>`**.
->* **gdb - Der GNU Debugger** muss auf dem Computer installiert sein.
+>* **gdb - Der GNU-Debugger** muss auf dem Computer installiert sein.
+
 >
 
 
 
-Der technische Support von Adobe Campaign kann Sie nach dieser **Stapelablaufverfolgung** fragen. Geben Sie zum Abrufen folgende Befehle in Linux ein:
+Adobe Campaign Technical Support kann Sie nach dieser **Stapelablaufverfolgung** fragen. Geben Sie zum Abrufen folgende Befehle in Linux ein:
 
 ```
 su - neolane
@@ -59,9 +60,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Der technische Support von Adobe Campaign bittet Sie möglicherweise, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
+Adobe Campaign Technical Support bittet Sie, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
 
-In diesem Fall führen Sie einfach den folgenden Befehl aus, indem Sie **nlserver** durch die ausführbare Datei von Adobe Campaign ersetzen:
+Führen Sie in diesem Fall einfach den folgenden Befehl aus, indem Sie **nlserver** durch die ausführbare Datei ersetzen, die von Adobe Campaign bereitgestellt wird:
 
 ```
 gdb nlserver <coreFile>
