@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 24d4875b-81fa-4bf3-8cf0-e6998bec4949
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: b369a17fabc55607fc6751e7909e1a1cb3cd4201
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 4%
@@ -45,7 +42,7 @@ Es sollten auf jeder Instanz weniger als 1000 Ordner vorhanden sein. Wenn mehr O
 
 Bei dieser Methode werden auch Benutzer hervorgehoben, die zu viele Objekte erstellen.
 
-## Deliveries {#deliveries}
+## Sendungen {#deliveries}
 
 Die Instanz sollte immer weniger als 1000 Versand umfassen. Viele Versand verbrauchen Speicherplatz in der Datenbank und verursachen Probleme. Eine Instanz, die mehr als 10 Versand pro Tag erstellt, muss anhand der Geschäftsanforderungen geprüft werden. Erwägen Sie, fortlaufende Versand zu verwenden, um weniger Versand zu erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/continuous-delivery.md).
 
