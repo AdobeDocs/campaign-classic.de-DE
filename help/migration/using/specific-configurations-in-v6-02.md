@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 discoiquuid: 87a6cbda-54a6-4dae-8224-e06dc217f4fc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 4%
 
 ---
 
@@ -36,29 +36,29 @@ Wenn Sie von Version 6.02 migrieren, werden möglicherweise Fehlerprotokolle zu 
 
 Diese Webanwendungen verwendeten SQLData und sind aufgrund erhöhter Sicherheit nicht mit v7 kompatibel. Diese Fehler führen zu einem Migrationsfehler.
 
-Wenn Sie diese Webanwendungen nicht verwendet haben, führen Sie das folgende Bereinigungsskript aus und führen Sie nach der Aktualisierung erneut aus:
+Wenn Sie diese Webanwendungen nicht verwendet haben, führen Sie das folgende Bereinigungsskript aus und führen Sie das Post-Upgrade erneut aus:
 
 ```
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möchten, müssen Sie die Option **allowSQLInject** in den verschiedenen Sicherheitszonen aktivieren und die Nachrüstung neu starten. Weitere Informationen finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata) .
+Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möchten, müssen Sie die Option **allowSQLInject** in den verschiedenen Sicherheitszonen aktivieren und die Nachrüstung erneut Beginn ausführen. Weitere Informationen finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata) .
 
-## Benutzerfreundlichkeit: Homepage und Navigation {#user-friendliness--home-page-and-navigation}
+## Benutzerfreundlichkeit: Startseite und Navigation {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Wenn Sie weiterhin Übersichtswebanwendungen vom Typ v6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** vor der Aktualisierung in den verschiedenen Sicherheitszonen aktivieren. Siehe [Webanwendungen](#web-applications).
+>Wenn Sie weiterhin Übersichtswebanwendungen vom Typ v6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** vor der Aktualisierung in den verschiedenen Sicherheitszonen aktivieren. Refer to [Web applications](#web-applications).
 
-Nach der Migration von Version 6.02 wird die Adobe Campaign v6.02-Homepage nicht mehr angezeigt, sondern ist weiterhin mit Adobe Campaign v7 verfügbar und kompatibel.
+Nach der Migration von Version 6.02 wird die Homepage des Adobe Campaigns v6.02 nicht mehr angezeigt, aber sie ist noch immer verfügbar und mit Adobe Campaign v7 kompatibel.
 
-Um die v6.02-Homepage weiterhin verwenden zu können, müssen Sie nach der Migration ein &quot;Kompatibilitätspaket&quot;installieren.
+Um weiterhin die Homepage v6.02 zu verwenden, müssen Sie nach der Migration ein &quot;Kompatibilitätspaket&quot;installieren.
 
 Importieren Sie dazu das Kompatibilitätspaket:
 
-Klicken Sie auf **[!UICONTROL Tools > Advanced > Import package]** und wählen Sie das Paket **campaignMigration.xml** im **`\nl\datakit\nms\[Your language]\package\optional`**.
+Klicken Sie auf **[!UICONTROL Extras > Erweitert > Paket]** importieren und wählen Sie das Paket **campaignMigration.xml** im **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Um den Zugriff auf die Schnittstellen des Typs &quot;Webanwendung&quot;der Version 6.02 zu ermöglichen, muss die **Konfigurationsoption &quot;sessionTokenOnly** &quot;in der Datei &quot; **serverConf.xml** &quot;aktiviert werden:
+Um Zugriff auf die Schnittstellen des Typs v6.02 Webanwendung zuzulassen, muss die **Option für die Serverkonfiguration sessionTokenOnly** in der Datei **serverConf.xml** aktiviert werden:
 
 ```
 sessionTokenOnly="true"
@@ -66,15 +66,15 @@ sessionTokenOnly="true"
 
 Diese Option ändert die Sicherheitsstufen, um die Kompatibilität der Benutzeroberfläche sicherzustellen.
 
-Nach der Installation des Pakets wird die Adobe Campaign v7-Homepage durch Ihre alte v6.02-Homepage ersetzt, die mit den allgemeinen Konfigurationen von v7 (blaues Homepage-Banner) versehen ist.
+Nachdem das Paket installiert wurde, wird die Adobe Campaign v7-Startseite durch Ihre alte v6.02-Homepage ersetzt, die mit den allgemeinen Konfigurationen von v7 (blaues Startseite-Banner) versehen ist.
 
 ![](assets/dashboards.png)
 
-Alle Links auf dieser Homepage verlinken mit Ausnahme der Listen (**[!UICONTROL operation list]**, **[!UICONTROL delivery tracking in operations]** usw.) , der auf die v6.02-Übersicht verweist (Webanwendungen).
+Alle Links auf dieser Homepage verlinken mit Ausnahme der Listen (**[!UICONTROL Liste]** der Vorgänge, Verfolgung von **[!UICONTROL Versänden in Vorgängen]** usw.) , der auf die v6.02-Übersicht verweist (Webanwendungen).
 
 ![](assets/dashboards2.png)
 
-Wenn Sie eine weitere in Version 6.02 konfigurierte Übersicht hinzufügen möchten, müssen Sie diese der Homepage vom Dashboard hinzufügen. (**[!UICONTROL Administration > Access management > Dashboard]**).
+Wenn Sie eine weitere in Version 6.02 konfigurierte Übersicht hinzufügen möchten, müssen Sie diese der Startseite aus dem Dashboard hinzufügen. (**[!UICONTROL Administration > Zugriffsverwaltung > Dashboard]**).
 
 >[!NOTE]
 >
@@ -82,6 +82,6 @@ Wenn Sie eine weitere in Version 6.02 konfigurierte Übersicht hinzufügen möch
 
 ## Message Center {#message-center}
 
-Nach der Migration der Kontrollinstanzen im Message Center müssen Sie die Transaktionsmeldungsvorlagen erneut veröffentlichen, damit sie funktionieren.
+Nach der Migration einer Message Center-Kontrollinstanz müssen Sie die Transaktionsnachrichtenvorlagen erneut veröffentlichen, damit sie funktionieren.
 
-In v7 haben sich die Namen der Transaktionsnachrichtenvorlagen in Ausführungsinstanzen geändert. Sie werden derzeit vom Operatornamen vorangestellt, der der Kontrollinstanz entspricht, auf der sie erstellt wurden, z. B. **control1_template1_rt** (wobei **control1** der Name des Operators ist). Wenn Sie über eine beträchtliche Menge an Vorlagen verfügen, empfehlen wir das Löschen alter Vorlagen in Steuerungsinstanzen.
+In v7 haben sich die Namen der Transaktionsnachrichtenvorlagen auf Ausführungsinstanzen geändert. Sie werden derzeit vom Operatornamen vorangestellt, der der Kontrollinstanz entspricht, auf der sie erstellt wurden, z. B. **control1_template1_rt** (wobei **control1** der Name des Operators ist). Wenn Sie über eine beträchtliche Menge an Vorlagen verfügen, empfehlen wir das Löschen alter Vorlagen auf Kontrollinstanzen.
