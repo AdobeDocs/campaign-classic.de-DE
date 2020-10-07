@@ -11,23 +11,23 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 9330d4f2-b36d-440d-b56e-b2d4448199b2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 2e18121e4094bc4cb215e5471091810df56b3ef5
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '139'
+ht-degree: 100%
 
 ---
 
 
 # Übersicht{#overview}
 
-Mit Social Marketing können Sie Auslieferungen an Ihre verschiedenen Facebook-Seiten und Twitter-Konten senden, im Gegensatz zu Empfängerprofilen. Auf Facebook werden Bereitstellungsinhalte in Form von Veröffentlichungen auf Seitenwänden angezeigt und erscheinen auch im News-Feed aller Seitenfans. Auf Twitter werden Bereitstellungsinhalte als Tweets angezeigt und erscheinen auf der Homepage der Kontofolger. Sie können auch Direktnachrichten an die von Ihnen erfassten Kontofolger senden.
+Mit Social-Media-Marketing können Sie Sendungen an Ihre verschiedenen Facebook-Seiten und Twitter-Konten vornehmen, im Gegensatz zu Empfängerprofilen. Auf Facebook werden Versandinhalte in Form von Veröffentlichungen auf Pinnwänden angezeigt und erscheinen zudem im Newsfeed aller Seiten-Fans. Auf Twitter werden Versandinhalte als Tweets angezeigt und erscheinen auf der Startseite der Konto-Follower. An die von Ihnen gesammelten Konto-Follower können Sie auch Direktnachrichten senden.
 
 >[!IMPORTANT]
 >
->Adobe Campaign fordert Sie auf, die von Facebook und Twitter bezüglich der Nachrichtenübermittlung übermittelten Servicebestimmungen einzuhalten.
+>Adobe Campaign bittet Sie, sich an die von Facebook und Twitter bezüglich des Nachrichtenversands übermittelten Dienstbedingungen zu halten.
 >
->Bevor Sie Veröffentlichungen senden, müssen Sie die Konfigurationsschritte befolgen, die unter [Arbeitsabläufe](../../social/using/starting-workflows.md)starten beschrieben werden.
+>Bevor Sie Publikationen senden, müssen Sie die Konfigurationsschritte befolgen, die unter [Starten von Workflows](../../social/using/starting-workflows.md) beschrieben werden.
 
-Dieser Abschnitt beschreibt die Elemente, die für eine Facebook- und Twitter-Bereitstellung spezifisch sind. Alle Elemente, die mit E-Mail-Zustellungen identisch sind, werden in [diesem Abschnitt](../../delivery/using/about-email-channel.md)beschrieben.
+In diesem Abschnitt werden die Elemente beschrieben, die für einen Facebook- und Twitter-Versand spezifisch sind. Alle Elemente, die mit dem E-Mail-Versand identisch sind, werden in [diesem Abschnitt](../../delivery/using/about-email-channel.md) beschrieben.
