@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 209ac4d81d2d27c264ee6b288bcb7fcb1900ffc5
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '960'
+ht-degree: 100%
 
 ---
 
@@ -35,6 +35,7 @@ Gehen Sie wie folgt vor, um einen Bericht zu erstellen:
    * Anhand der Vorlage **[!UICONTROL Erweiterter Bericht]** kann ein mithilfe eines Diagramms konfigurierter Bericht erstellt werden.
    * Der Bericht **[!UICONTROL Qualitative Verteilung]** ermöglicht die Erzeugung von Statistiken über alle Datentypen (z. B. Firmennamen, E-Mail-Domains etc.).
    * Der Bericht **[!UICONTROL Quantitative Verteilung]** ermöglicht Statistiken über Daten, die gemessen oder gezählt werden können (Rechnungsbetrag, Alter der Empfänger etc.).
+
    Nähere Informationen über diese Berichtvorlagen erhalten Sie in [diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md).
 
 1. Erfassen Sie den Namen des Berichts und seine Beschreibung in den entsprechenden Feldern. Geben Sie das **[!UICONTROL Schema]** an, auf das sich der Bericht beziehen soll.
