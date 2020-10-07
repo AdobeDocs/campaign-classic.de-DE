@@ -11,21 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 005be008585f75a87fb0029a8a88578cfde5ce51
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 11%
+ht-degree: 15%
 
 ---
 
 
 # Installieren der Kampagne Client Console{#installing-the-client-console}
 
-Kampagne Client Console ist ein Rich-Client, mit dem Sie eine Verbindung zu den Anwendungsservern Ihrer Kampagne herstellen können.
+Die Clientkonsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. 
 
 Bevor Sie beginnen, müssen Sie die [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)der Kampagne überprüfen, die URL des Kampagne-Servers und die Benutzerdaten abrufen.
 
@@ -73,7 +70,7 @@ Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte
 
    Sie können beispielsweise die URL des [`https://<machine>.<domain>.com`](https://machine) Typs verwenden.
 
-1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option **[!UICONTROL Mit Adobe ID verbinden]**
+1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option Mit Adobe ID **[!UICONTROL verbinden]**
 
 1. Klicken Sie auf **[!UICONTROL OK]** , um Ihre Einstellungen zu speichern.
 
