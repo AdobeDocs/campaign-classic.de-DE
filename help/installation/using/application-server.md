@@ -1,7 +1,7 @@
 ---
-title: Anwendungsserver
-seo-title: Anwendungsserver
-description: Anwendungsserver
+title: Anwendungs-Server
+seo-title: Anwendungs-Server
+description: Anwendungs-Server
 seo-description: null
 page-status-flag: never-activated
 uuid: 837c6a5c-53a4-4d1b-a084-9cf77e7a0eee
@@ -11,16 +11,16 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 7a9e028c-255d-4aad-9827-d19f9a7897b2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: de04b5d3ceb883a571ee665f630be931a68a5a3e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 3%
 
 ---
 
 
-# Application server{#application-server}
+# Anwendungs-Server{#application-server}
 
 Die erforderlichen Datenbankzugriffsebenen müssen auf dem Server installiert sein und über das Adobe Campaign-Konto zugänglich sein.
 
@@ -28,11 +28,11 @@ Die erforderlichen Datenbankzugriffsebenen müssen auf dem Server installiert se
 
 Der dynamische Webseiten-Generator verwendet die JSP 1.2-Technologie. Hierfür wird eine Tomcat-Engine (aus dem Apache) in den Antrag aufgenommen. Es ist ein Java Development Kit (JDK) erforderlich, das auf allen Servern installiert ist, auf denen die Adobe Campaign-Anwendung installiert ist.
 
-Sie müssen zuerst ein JDK auf den Computern installieren, auf denen Sie den Adobe Campaign-Anwendungsserver (**nlserver-Webprozess** ) ausführen möchten, da es einen Servlet-Container, Apache Tomcat, enthält, der zum Generieren dynamischer Webseiten (Berichte, Webformulare usw.) verwendet wird.
+Sie müssen zuerst ein JDK auf den Computern installieren, auf denen Sie den Adobe Campaign-Anwendungsserver (**nlserver-Web** -Prozess) ausführen möchten, da es einen Servlet-Container, Apache Tomcat, enthält, der zum Generieren dynamischer Webseiten (Berichte, Webformulare usw.) verwendet wird.
 
-Die Anwendung wurde für das von Oracle entwickelte Java Development Kit (JDK) sowie für **OpenJDK** genehmigt.
+The application has been approved for the Java Development Kit (JDK) developed by Oracle as well as for **OpenJDK**.
 
-The supported versions are detailed in the [Compatibility matrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html).
+The supported versions are detailed in the [Compatibility matrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ The supported versions are detailed in the [Compatibility matrix](https://helpx.
 >  
 >Bei der Installation müssen Sie die Integration nicht mit den Webbrowsern durchführen.
 >
->Auf einem Computer, auf dem nur Auslieferungsagenten (**nlserver-mta** -Prozess) oder der Workflow-Server (**nlserver-wfserver** -Prozess) ausgeführt werden, ist die Installation eines JDK nicht erforderlich.
+>Auf einem Computer, auf dem nur Versand-Agenten (**nlserver-Metadaten** -Prozess) oder Workflow-Server (**nlserver-wfserver** -Prozess) ausgeführt werden, muss kein JDK installiert werden.
 
 So laden Sie Java JDK herunter: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -50,7 +50,7 @@ So laden Sie Java JDK herunter: [https://www.oracle.com/technetwork/java/javase/
 >
 >Um die Leistung des Plattformbetriebs zu erhalten und die Kompatibilität mit der installierten Version sicherzustellen, müssen Sie die automatischen JDK-Aktualisierungsfunktionen in Windows und Linux deaktivieren.
 
-Um JDSL in einer Linux-Umgebung zu installieren, sollten Sie vorzugsweise einen Package Manager verwenden.
+Um die JDSL in einer Linux-Umgebung zu installieren, sollten Sie vorzugsweise einen Package Manager verwenden.
 
 Verwenden Sie in Debian 8 und 9 den folgenden Befehl:
 
@@ -80,9 +80,9 @@ Mit Adobe Campaign können Sie Plattformberichte im Microsoft Excel- und Adobe P
 
 Mit SpamAssassin können Sie E-Mails eine Punktzahl zuweisen, um festzustellen, ob eine Nachricht von den Anti-Spam-Tools, die bei der Rezeption verwendet werden, als unerwünscht eingestuft werden könnte. Die Installation ist optional.
 
-Die Einstufung von E-Mails als unerwünscht durch SpamAssassin basiert ausschließlich auf Filter- und Bewertungsregeln. Diese Regeln müssen daher mindestens einmal täglich aktualisiert werden, damit Ihre SpamAssassin-Installation und ihre Integration in Adobe Campaign voll funktionsfähig sind und die Relevanz der Ergebnisse, die Ihren Auslieferungen zugewiesen wurden, vor dem Versand gewährleistet ist. Für dieses Update ist der Serveradministrator verantwortlich, der SpamAssassin hostet.
+Die Einstufung von E-Mails als unerwünscht durch SpamAssassin basiert ausschließlich auf Filter- und Bewertungsregeln. Diese Regeln müssen daher mindestens einmal täglich aktualisiert werden, damit Ihre SpamAssassin-Installation und ihre Integration in Adobe Campaign voll funktionsfähig sind und die Relevanz der Ergebnisse, die Ihren Versänden zugewiesen wurden, vor dem Versand gewährleistet ist. Für dieses Update ist der Serveradministrator verantwortlich, der SpamAssassin hostet.
 
-Die Mindestversion wird unterstützt: Artikel **3 Absatz 4**
+Die Mindestversion wird unterstützt: **3.4**
 
 SpamAssassin benötigt einen HTTP-Internetzugang (tcp/80).
 
