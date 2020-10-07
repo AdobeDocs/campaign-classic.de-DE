@@ -11,19 +11,19 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 discoiquuid: d2309f41-8356-4d7e-bd84-c08521e0b0d0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 18%
 
 ---
 
 
 # Formulare identifizieren{#identifying-a-form}
 
-Mit einem Eingabefeld können Sie eine mit einem Datenschema verknüpfte Instanz aus der Adobe Campaign-Client-Konsole bearbeiten.
+Mit einem Eingabefeld können Sie eine Instanz bearbeiten, die mit einem Data Schema in der Adobe Campaign-Client-Konsole verknüpft ist.
 
-Das Formular wird durch seinen Namen und seinen Namespace identifiziert.
+Das Formular wird anhand seines Namens und seines Namensraums identifiziert.
 
-Der Identifizierungsschlüssel eines Formulars ist eine Zeichenfolge aus dem Namespace und dem durch einen Doppelpunkt (&#39;:&#39;) getrennten Namen (z. B.: &quot;cus:contact&quot;).
+Der Identifizierungsschlüssel eines Formulars ist eine Zeichenfolge, die aus dem Namensraum und dem durch einen Doppelpunkt (&#39;:&#39;) getrennten Namen besteht (z. B.: &quot;cus:contact&quot;).
