@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 71fc8bfc-40e0-4592-a540-bd6807ded3a0
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7de74feb61cc8f4b386a6ff86fc58b9c9e9ca1d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3211'
 ht-degree: 4%
@@ -27,7 +24,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
+>Serverseitige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
 
 ## Bereitstellungsassistent {#deployment-wizard}
 
@@ -116,7 +113,7 @@ Folgende Optionen stehen zur Verfügung:
 
 * **[!UICONTROL Dauer der Meldungen]** : Nach diesem Zeitpunkt wird der Versand gestoppt (standardmäßig 5 Tage),
 * **[!UICONTROL Gültigkeitsdauer]** der Online-Ressourcen: Zeitraum, für den Informationen aus dem Empfänger-Profil aufbewahrt werden, um Mirrorseiten zu generieren,
-* **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert]** werden möchten: Wenn diese Option aktiviert ist, werden Empfänger auf blockierungsliste nicht kontaktiert.
+* **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert]** werden möchten: Wenn diese Option aktiviert ist, werden Empfänger auf Blockierungsliste nicht kontaktiert.
 * **[!UICONTROL Dubletten]** automatisch ignorieren: Wenn diese Option aktiviert ist, wird kein Versand an Duplikat-Adressen vorgenommen.
 
 ### Wiederholungsparameter {#retry-parameters}
@@ -224,7 +221,7 @@ Klicken Sie auf den Link **Registrierung auf dem/den Tracking-Server(n)** und w�
 
 Es gibt drei mögliche Architekturtypen für die Implementierung der Verfolgung:
 
-1. **Hinzufügen Unterstützung der Verfolgung in einer vorhandenen Instanz**
+1. **hinzufügen Unterstützung der Verfolgung in einer vorhandenen Instanz**
 
    Diese Auswahl trifft zu, wenn die Instanz bereits für andere Anforderungen erstellt wurde (MTA-Server usw.). auf Servern, die als Tracking-Server verwendet werden.
 
@@ -266,7 +263,7 @@ Im vorherigen Fenster wird die Registrierung auf der Ebene des Tracking-Servers 
 
 ![](assets/s_ncs_install_deployment_wiz_tracking_ok.png)
 
-Die mit URL-Suchen verknüpften Parameter **dürfen bei einer Standardinstallation nicht geändert** werden. Für alle anderen Parameter wenden Sie sich bitte an Adobe.
+Die mit URL-Suchen verknüpften Parameter **dürfen bei einer Standardinstallation nicht geändert** werden. Für alle anderen Parameter kontaktieren Sie bitte die Adobe.
 
 ## Parameter für mobile Kanal {#mobile-channel-parameters}
 
@@ -327,7 +324,7 @@ Hier müssen Sie auch die Veröffentlichungsoptionen angeben, die mit Webformula
 
 Verwenden Sie diese Seite, um die Server-URLs für Folgendes zu füllen:
 
-1. Greifen Sie auf den im Internet angezeigten Anwendungsserver zu: Abonnement-/Abmeldung-Formulare, Extranet usw.
+1. Greifen Sie auf den im Internet angezeigten Anwendungsserver zu: abonnement-/Abmeldung-Formulare, Extranet usw.
 1. Greifen Sie auf den Anwendungsserver zu, wenn Ressourcen nicht im Web bereitgestellt werden: Formulare, Intranet, Bestätigungsseiten.
 1. Greifen Sie auf die Mirrorseiten der Versand zu.
 
@@ -459,7 +456,7 @@ Das Statusattribut kann einen von drei Werten haben:
 
 * normal: Vorhandenes Verhalten (ohne Synchronisierung)
 
-* blockierungsliste: Die URL wird der blockierungsliste hinzugefügt, wenn der Fehler &quot;404&quot;zurückgegeben wird. Die Dauer (in Sekunden) der URL im blockierungsliste wird durch ein **Zeitüberschreitungsattribut** mit einem Standardwert von 60 s definiert.
+* blockierungsliste: Die URL wird der Blockierungsliste hinzugefügt, wenn der Fehler &quot;404&quot;zurückgegeben wird. Die Dauer (in Sekunden) der URL in der Blockierungsliste wird durch ein **Zeitüberschreitungsattribut** mit einem Standardwert von 60 s definiert.
 
 Die vordefinierte Konfiguration der Synchronisierung lautet:
 
