@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 7e5605c8-78f2-4011-b317-96a59c699848
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: cf7c90f0ea9fbce3a4fd53f24189617cbd33fc40
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '495'
+ht-degree: 100%
 
 ---
 
@@ -63,6 +63,7 @@ Gehen Sie wie folgt vor:
 
    * Geben Sie bei **[!UICONTROL Quellwert]** in neue Zeilen jeweils die dem Geschlecht entsprechenden Zahlenwerte ein (0, 1 und 2).
    * Geben Sie bei **[!UICONTROL Zielwert]** die den Zahlen entsprechende Bedeutung ein: &quot;Unbestimmt&quot; bei &quot;0&quot;, &quot;Männlich&quot; bei &quot;1&quot; und &quot;Weiblich&quot; bei &quot;2&quot;.
+
    Kreuzen Sie die Option **[!UICONTROL Quellwert]** beibehalten an und
 
    klicken Sie auf **[!UICONTROL OK]**, um die Konfiguration des berechneten Felds abzuschließen.
@@ -77,6 +78,7 @@ Gehen Sie wie folgt vor:
    * 0 für &quot;Unbestimmt&quot;
    * 1 für &quot;Männlich&quot;
    * 2 für &quot;Weiblich&quot;
+
    ![](assets/query_editor_nveau_78.png)
 
    Führen Sie als Abwandlung die Abfrage erneut aus und geben Sie in der **[!UICONTROL Liste der Auflistungswerte]** den Wert &quot;2&quot; nicht an. Kreuzen Sie die Funktion **[!UICONTROL Warnhinweis erzeugen und fortfahren]** des Felds **[!UICONTROL Andernfalls]** an. In diesem Fall wird eine Warnung erzeugt, die besagt, dass der Wert &quot;2&quot; (Weiblich) nicht angegeben wurde. Dieser Hinweis wird im Bereich **[!UICONTROL Beim Export erzeugte Logs]** des Datenvorschaufensters angezeigt.
