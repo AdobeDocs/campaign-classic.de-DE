@@ -1,7 +1,7 @@
 ---
-title: Wechsel zu Unicode
-seo-title: Wechsel zu Unicode
-description: Wechsel zu Unicode
+title: Wechseln zu Unicode
+seo-title: Wechseln zu Unicode
+description: Wechseln zu Unicode
 seo-description: null
 page-status-flag: never-activated
 uuid: 5f15b285-7377-453a-aa98-ca4cf14a4c80
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 0f5399a8-860d-4a1b-86a9-9011b973346b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 9%
 
 ---
 
 
-# Wechsel zu Unicode{#switching-to-unicode}
+# Wechseln zu Unicode{#switching-to-unicode}
 
 Für eine vorhandene **Prod** -Instanz in Linux/PostgreSQL werden die folgenden Schritte zum Wechseln zu Unicode ausgeführt:
 
@@ -65,7 +65,7 @@ Für eine vorhandene **Prod** -Instanz in Linux/PostgreSQL werden die folgenden 
    vi config-prod.xml
    ```
 
-   Fügen Sie das **u** -Zeichen vor dem Wert für die Datenbank-ID (**databaseId**) hinzu:
+   hinzufügen das **u** -Zeichen vor dem Wert für die Datenbank-ID (**databaseId**):
 
    ```
    <web>
@@ -103,5 +103,5 @@ Für eine vorhandene **Prod** -Instanz in Linux/PostgreSQL werden die folgenden 
 1. Überprüfen Sie den Switch. Stellen Sie dazu eine Verbindung über die Adobe Campaign-Konsole her und:
 
    * Überprüfen Sie, ob die Daten korrekt angezeigt werden, insbesondere die Zeichen mit Akzentuierung:
-   * eine Bereitstellung starten und überprüfen, ob der Tracking-Abruf funktioniert.
+   * starten Sie einen Versand und überprüfen Sie, ob der Tracking-Abruf funktioniert.
 
