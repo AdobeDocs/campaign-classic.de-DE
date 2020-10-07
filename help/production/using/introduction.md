@@ -11,11 +11,11 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: 772992bf-588f-42bd-a72a-986a88815264
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 2%
 
 ---
 
@@ -26,8 +26,8 @@ In diesem Abschnitt wird das Verfahren für die Aktualisierung von Adobe Campaig
 
 >[!NOTE]
 >
->Bei gehosteten Instanzen müssen Sie sich mit Ihrem Adobe-Administrator abstimmen.\
->Bei lokalen Instanzen erhalten Sie Unterstützung von Adobe-Beratern.
+>Bei gehosteten Instanzen müssen Sie sich mit Ihrem Adoben-Administrator abstimmen.\
+>Bei lokalen Instanzen können Sie Hilfe von Adobe Consultants erhalten.
 
 Die Aktualisierung muss auf alle Server angewendet werden, auf denen Adobe Campaign installiert ist.
 
@@ -38,7 +38,7 @@ Die Aktualisierung muss auf alle Server angewendet werden, auf denen Adobe Campa
 Adobe Campaign basiert auf verschiedenen serverseitigen Prozessen, die Sie während der Updates bearbeiten müssen, insbesondere:
 
 * Anwendungsserver (nlserver web)
-* Bereitstellungsserver (nlserver-Metadaten)
+* Versand-Server (nlserver-Metadaten)
 * Umleitungsserver (webmdl)
 
 >[!NOTE]
@@ -50,5 +50,5 @@ Wenn die neue Version eine Änderung der Datenbankstruktur beinhaltet, empfehlen
 
 1. Anwendungsserver (nlserver web),
 1. Umleitungsserver (webmdl),
-1. Bereitstellungsserver (nlserver-Metadaten).
+1. Versand-Server (nlserver-Metadaten).
 
