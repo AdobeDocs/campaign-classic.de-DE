@@ -11,32 +11,32 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 64d4c5b8-db0b-4287-8d30-4bf09878a401
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 1%
 
 ---
 
 
 # Filtern von Schemata{#filtering-schemas}
 
-## Systemfilter {#system-filters}
+## System-Filter {#system-filters}
 
-Sie können den Schemazugriff auf bestimmte Benutzer je nach ihren Berechtigungen filtern. Mit Systemfiltern können Sie die Lese- und Schreibberechtigungen von Entitäten, die in Schemas beschrieben sind, mithilfe von **readAccess** - und **writeAccess** -Parametern verwalten.
+Sie können den Zugriff auf Schemas je nach Zugriffsberechtigungen filtern. Mit System-Filtern können Sie die Lese- und Schreibberechtigungen von Entitäten, die in Schemas detailliert sind, mithilfe von **readAccess** - und **writeAccess** -Parametern verwalten.
 
 >[!NOTE]
 >
 >Diese Einschränkung gilt nur für nicht technische Nutzer: ein technischer Benutzer mit entsprechenden Berechtigungen oder mithilfe eines Workflows Daten abrufen und aktualisieren kann.
 
-* **readAccess**: bietet schreibgeschützten Zugriff auf Schemadaten.
+* **readAccess**: bietet schreibgeschützten Zugriff auf Schema-Daten.
 
    **Warnung** : Alle verknüpften Tabellen müssen mit derselben Einschränkung versehen sein. Diese Konfiguration kann sich auf die Leistung auswirken.
 
-* **writeAccess**: bietet Schreibzugriff auf Schemadaten.
+* **writeAccess**: bietet Schreibzugriff auf Schema-Daten.
 
-Diese Filter werden auf der Haupt- **Element** -Ebene der Schemata eingegeben und können, wie in den folgenden Beispielen gezeigt, gebildet werden, um den Zugriff einzuschränken.
+Diese Filter werden auf der Haupt- **Element** -Ebene der Schema eingegeben und können, wie in den folgenden Beispielen dargestellt, gebildet werden, um den Zugriff einzuschränken.
 
 * Schreibberechtigungen einschränken
 
@@ -50,7 +50,7 @@ Diese Filter werden auf der Haupt- **Element** -Ebene der Schemata eingegeben un
 
 * Berechtigungen zum Lesen und Schreiben einschränken:
 
-   Hier wird der Filter verwendet, um sowohl READ- als auch WRITE-Berechtigungen für das Schema für alle Operatoren zu deaktivieren. Nur das **interne** Konto, dargestellt durch den Ausdruck &quot;$(loginId)!=0&quot;, hat diese Berechtigungen.
+   Hier wird der Filter verwendet, um sowohl READ- als auch WRITE-Berechtigungen für das Schema für alle Operatoren zu deaktivieren. Nur das **interne** Konto, vertreten durch den Ausdruck &quot;$(loginId)!=0&quot;, hat diese Berechtigungen.
 
    ```
    <sysFilter name="readAccess"> 
@@ -68,9 +68,9 @@ Diese Filter werden auf der Haupt- **Element** -Ebene der Schemata eingegeben un
 >
 >Wenn kein Filter angegeben ist, verfügen alle Operatoren über Lese- und Schreibberechtigungen für das Schema.
 
-## Schutz integrierter Schemata {#protecting-built-in-schemas}
+## Schutz integrierter Schema {#protecting-built-in-schemas}
 
-Standardmäßig sind integrierte Schemas nur mit WRITE-Berechtigungen für Benutzer mit ADMINISTRATION-Rechten verfügbar:
+Standardmäßig sind integrierte Schema nur mit WRITE-Berechtigungen für Benutzer mit ADMINISTRATION-Rechten verfügbar:
 
 * ncm:veröffentlichen
 * nl:monitoring
@@ -94,7 +94,7 @@ Standardmäßig sind integrierte Schemas nur mit WRITE-Berechtigungen für Benut
 * xtk:queryDef
 * xtk:resourceMenu
 * xtk:rights
-* xtk:schema
+* xtk:Schema
 * xtk:scriptContext
 * xtk:specFile
 * xtk:sql
@@ -105,17 +105,17 @@ Standardmäßig sind integrierte Schemas nur mit WRITE-Berechtigungen für Benut
 
 >[!IMPORTANT]
 >
->READ- und WRITE-Berechtigungen für das **Schema &quot;xtk:sessionInfo** &quot;sind nur für das interne Konto einer Adobe Campaign-Instanz verfügbar.
+>READ- und WRITE-Berechtigungen für das **xtk:sessionInfo** -Schema sind nur für das interne Konto einer Adobe Campaign-Instanz verfügbar.
 
-## Ändern von Systemfiltern integrierter Schemata {#modifying-system-filters-of-built-in-schemas}
+## Ändern der Filter von integrierten Schemas {#modifying-system-filters-of-built-in-schemas}
 
-Sie können die Systemfilter der standardmäßig geschützten vordefinierten Schemata weiterhin ändern, da Kompatibilitätsprobleme mit älteren Versionen auftreten.
+Sie können weiterhin die Filter der vordefinierten Schema ändern, die aufgrund von Kompatibilitätsproblemen mit älteren Versionen standardmäßig geschützt sind.
 
 >[!NOTE]
 >
 >Adobe empfiehlt jedoch, die Standardparameter nicht zu ändern, um eine optimale Sicherheit zu gewährleisten.
 
-1. Erstellen Sie eine Erweiterung für das betreffende Schema oder öffnen Sie eine vorhandene Erweiterung.
-1. Fügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement hinzu, um die Anwendung des Filters unter dem gleichen im Ursprungsschema zu löschen.
+1. Erstellen Sie eine Erweiterung für das betreffende Schema oder öffnen Sie eine bestehende Erweiterung.
+1. hinzufügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement, um die Anwendung des Filters im gleichen Schema der Herkunft zu löschen.
 1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [Systemfilter](#system-filters)beschrieben.
 
