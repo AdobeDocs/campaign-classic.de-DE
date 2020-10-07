@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ Das Betriebssystem des Datenbankservers ist nicht wichtig, solange die Verbindun
 
 Der native Client muss auf den Adobe Campaign-Anwendungsservern installiert sein.
 
-Sie können den systemeigenen Client auf dem Server über das ODBC-Treiberkonfigurationsbedienfeld unter **SQL Server Native Client 10.0** (für Microsoft SQL Server 2008- und 2008 R2-Clients) oder **SQL Server Native Client 11.0** (für Microsoft SQL Server 2012, 2014, 2001012) überprüfen. 6 und 2017).
+Sie können den systemeigenen Client auf dem Server über das ODBC-Treiberkonfigurationsbedienfeld unter **SQL Server Native Client 10.0** (für Microsoft SQL Server 2008- und 2008 R2-Clients) oder **SQL Server Native Client 11.0** (für Microsoft SQL Server 2012, 2014, 200112) überprüfen. 6 und 2017).
 
 Die folgenden Zugriffs-DLLs müssen vorhanden sein:
 
@@ -51,7 +51,7 @@ Die folgenden Zugriffs-DLLs müssen vorhanden sein:
 >
 >Spaltennamen mit Multibyte-Zeichen werden nicht unterstützt.
 
-Die **ParameterNLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** müssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
+Die **Parameter** NLS_NCHAR_CHARACTERSET **und** NLS_CHARACTERSETmüssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
 
 Adobe Campaign verwendet die standardmäßige Oracle-Kodierung. Die Verwendung anderer Kodierungen kann Kompatibilitätsprobleme auslösen: in diesem Fall wenden Sie sich bitte an den technischen Support.
 
@@ -74,7 +74,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Um sich bei **sqlplus** anzumelden, verwenden Sie das Oracle-Benutzerprofil:
+Um sich bei **sqlplus** anzumelden, verwenden Sie das Oracle-Profil:
 
 ```
 su - oracle 
