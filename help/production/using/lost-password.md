@@ -1,7 +1,7 @@
 ---
-title: Verlorenes Kennwort
-seo-title: Verlorenes Kennwort
-description: Verlorenes Kennwort
+title: Vergessenes Passwort
+seo-title: Vergessenes Passwort
+description: Vergessenes Passwort
 seo-description: null
 page-status-flag: never-activated
 uuid: caac68bf-abdc-45da-9697-b689ebd37002
@@ -11,16 +11,16 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: d52eeadc-19c6-4d48-995a-1c1f2ca3b5ec
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5f3ceab5ee82587d9f1829792bdabf2209f793cd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 5%
 
 ---
 
 
-# Verlorenes Kennwort{#lost-password}
+# Vergessenes Passwort{#lost-password}
 
 Sie können ein verlorenes Kennwort ändern oder wiederherstellen.
 
@@ -28,7 +28,7 @@ Es gibt zwei mögliche Szenarien:
 
 * Passwort verloren durch einen Adobe Campaign-Operator.
 
-   In diesem Fall können Sie das Kennwort des Betreibers ändern. Dazu stellen Sie über einen Operator mit Administratorrechten eine Verbindung her, klicken Sie mit der rechten Maustaste auf einen Operator, wählen Sie **[!UICONTROL Actions]** > **[!UICONTROL Reset password]** und legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass Operatoren ihr Kennwort ändern, wenn sie die Verbindung zum ersten Mal wiederherstellen.
+   In diesem Fall können Sie das Kennwort des Betreibers ändern. Dazu stellen Sie über einen Operator mit Administratorrechten eine Verbindung her, klicken Sie mit der rechten Maustaste auf einen Operator, wählen Sie **[!UICONTROL Aktionen]** > Kennwort **[!UICONTROL zurücksetzen]** und legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass Operatoren ihr Kennwort ändern, wenn sie die Verbindung zum ersten Mal wiederherstellen.
 
    ![](assets/operator-passwd.png)
 
@@ -46,7 +46,7 @@ Es gibt zwei mögliche Szenarien:
 
    1. Löschen Sie die Zeichenfolge in Anführungszeichen: **myPassword**
 
-      Sie erhalten daher folgende Zeile:
+      Sie erhalten daher die folgende Zeile:
 
       ```
       !-- XTK authentication mode internalPassword : Password of internal account -->
