@@ -11,36 +11,36 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 8fb9ff23-17a7-4425-9195-738d6fd914dc
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '313'
+ht-degree: 4%
 
 ---
 
 
 # Konfigurieren der Oberfläche{#configuring-the-interface}
 
-Gehen Sie wie folgt vor, um die neue Empfängertabelle in der Adobe Campaign-Oberfläche anzuzeigen und mit ihr zu kommunizieren:
+Gehen Sie wie folgt vor, um die Ansicht und den Dialog mit der neuen Empfänger-Tabelle in der Adobe Campaign-Oberfläche auszuführen:
 
-* Erstellen Sie ein neues Formular, um den Inhalt der neuen Empfängertabelle zu bearbeiten.
+* Erstellen Sie ein neues Formular, um den Inhalt der neuen Tabelle &quot;Empfänger&quot;zu bearbeiten.
 * Geben Sie einen neuen Typ in den Ordner des Explorerbaums ein.
-* Erstellen Sie eine neue Webanwendung, um über die Adobe Campaign-Homepage auf die benutzerdefinierte Tabelle zuzugreifen.
+* Erstellen Sie eine neue Webanwendung, um über die Adobe Campaign-Startseite auf die benutzerdefinierte Tabelle zuzugreifen.
 
-Adobe Campaign verwendet eine globale Variable &quot;Nms_DefaultRcpSchema&quot;, um mit der standardmäßigen Empfängerdatenbank (nms:empfänger) zu kommunizieren. Diese Variable muss daher geändert werden.
+Adobe Campaign verwendet eine globale Variable &quot;Nms_DefaultRcpSchema&quot;, um mit der standardmäßigen Empfänger-Datenbank (nms:Empfänger) zu kommunizieren. Diese Variable muss daher geändert werden.
 
-1. Wechseln Sie zum **[!UICONTROL Administration>Platform>Options]** Knoten des Explorers.
+1. Navigieren Sie zum Knoten **[!UICONTROL Administration>Plattform>Optionen]** des Explorers.
 1. Ändern Sie den Wert der Variablen **Nms_DefaultRcpSchema** mit dem Namen des Schemas, das der Tabelle des externen Empfängers entspricht (in diesem Fall: cus:individuell).
 1. Speichern Sie Ihre Änderungen.
 
 ## Creating a new form {#creating-a-new-form-}
 
-Wenn Sie ein neues Formular erstellen, können Sie die Daten der externen Empfängertabelle anzeigen und bearbeiten.
+Wenn Sie ein neues Formular erstellen, können Sie die Daten der Tabelle für den externen Empfänger Ansicht und bearbeiten.
 
 >[!IMPORTANT]
 >
->Der Name des Formulars muss mit dem Namen des Schemas identisch sein, das es betrifft.
+>Der Name des Formulars muss mit dem Namen des betreffenden Schemas identisch sein.
 
 1. Navigieren Sie zum Knoten **Administration > Konfiguration > Eingabefelder** des Explorers.
 1. Erstellen Sie eine neue **xtk:form** type- **Formulardatei** .
@@ -69,15 +69,15 @@ Wenn Sie ein neues Formular erstellen, können Sie die Daten der externen Empfä
 
 ## Erstellen eines neuen Ordnertyps in der Navigationshierarchie {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Wechseln Sie zum **[!UICONTROL Administration>Configuration>Navigation hierarchies]** Knoten.
-1. Erstellen Sie ein neues **navtree** - **navtree** -Dokument.
+1. Wechseln Sie zum Knoten **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** .
+1. Erstellen Sie ein neues **navtree** -Dokument vom Typ **navtree** .
 1. Beschreiben Sie alle Überwachungen und Felder, die Sie je nach Tabellenvorlage benötigen.
 
    >[!NOTE]
    >
    >Weitere Informationen zu **navtree** -Typdateien finden Sie auf [dieser Seite](../../configuration/using/about-navigation-hierarchy.md).
 
-   Im aktuellen Beispiel muss die **navtree** -Datei auf dem Schema **cus:single** basieren und daher das folgende Formular haben:
+   Im aktuellen Beispiel muss die **navtree** -Datei auf dem **Schema cus:single** basieren und daher das folgende Formular haben:
 
    ```
     <model name="root">
