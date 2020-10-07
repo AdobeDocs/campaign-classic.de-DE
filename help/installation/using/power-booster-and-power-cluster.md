@@ -1,7 +1,7 @@
 ---
-title: Stromverstärker und Stromverteiler
-seo-title: Stromverstärker und Stromverteiler
-description: Stromverstärker und Stromverteiler
+title: Power Booster und Power Cluster
+seo-title: Power Booster und Power Cluster
+description: Power Booster und Power Cluster
 seo-description: null
 page-status-flag: never-activated
 uuid: 4d23ed42-a368-4bd6-afaf-48452e253d19
@@ -11,28 +11,28 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 715d2b69-5b47-4890-8b7d-1dc0a0d4ead8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 8%
 
 ---
 
 
-# Stromverstärker und Stromverteiler{#power-booster-and-power-cluster}
+# Power Booster und Power Cluster{#power-booster-and-power-cluster}
 
 ## Übersicht {#overview}
 
-Adobe Campaign bietet Ihnen zwei vorverpackte Architekturoptionen zur Dimensionierung Ihrer Bereitstellung:
+Adobe Campaign bietet Ihnen zwei vordefinierte Architekturoptionen zur Dimensionierung Ihrer Bereitstellung:
 
 * **Leistungsverstärker**
 
-   Diese Option unterstützt eine einzelne zusätzliche Ausführungsinstanz, die von der primären Adobe Campaign-Anwendungsinstanz entkoppelt ist. Dedizierte Ausführungsinstanzen können remote oder von einem Drittanbieter gehostet werden. Bei Implementierung werden die E-Mail-Ausführung, Verfolgung, Spiegelseiten und Absprungmeldungen unabhängig von den zentralen Anwendungsfunktionen verarbeitet.
+   Diese Option unterstützt eine einzelne zusätzliche Ausführungsinstanz, die von der primären Anwendungsinstanz des Adobe Campaigns entkoppelt ist. Dedizierte Ausführungsinstanzen können remote oder von einem Drittanbieter gehostet werden. Bei Implementierung werden E-Mail-Ausführung, Verfolgung, Mirrorseiten und Absprungmeldungen unabhängig von den zentralen Anwendungsfunktionen verarbeitet.
 
 * **Stromverteiler**
 
-   Diese Option unterstützt zwei bis N Clusterausführungsinstanzen, die von der primären Adobe Campaign-Anwendungsinstanz im Verhältnis zu einer bestimmten Anwendung entkoppelt sind. Cluster können remote, in verteilten Bereitstellungen und von Dritten gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Option Adobe Campaign Power Cluster Redundanz- und Skalierungsstrategien mit Rohstoff-Hardware für eine vereinfachte Entwicklung von SLA oder Performance.
+   Diese Option unterstützt 2 bis N geclusterte Ausführungsinstanzen, die von der primären Anwendungsinstanz des Adobe Campaigns in Bezug auf eine bestimmte Anwendung entkoppelt sind. Cluster können remote, in verteilten Bereitstellungen und von Dritten gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Option Adobe Campaign Power Cluster Redundanz- und Ausmaßstabsstrategien mithilfe von Warenhardware für eine vereinfachte SLA- oder Performance-Entwicklung.
 
 ![](assets/architectural_options_diagram.png)
 
@@ -41,7 +41,7 @@ Adobe Campaign bietet Ihnen zwei vorverpackte Architekturoptionen zur Dimensioni
 Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von folgenden Anwendungen verwendet werden:
 
 * Campaign
-* Delivery
+* Versand
 * Message Center
 
 ## Matrix von Architekturempfehlungen {#matrix-of-architectural-recommendations}
@@ -75,8 +75,8 @@ Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von
   <tr> 
    <td> Sicherheit<br /> </td> 
    <td> Der Zugang zum Datenverkehr ist potenziell über das öffentliche Internet möglich<br /> </td> 
-   <td> Datenstrom wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
-   <td> Datenstrom wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
+   <td> Der Datenstrom wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
+   <td> Der Datenstrom wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
   </tr> 
   <tr> 
    <td> Bereitstellungsvorlage<br /> </td> 
@@ -89,7 +89,7 @@ Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von
 
 ## Empfehlungen {#recommendations}
 
-* Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, den Sie nicht abonniert haben. Wenn Sie beispielsweise die **Power Booster** -Option für den **Message Center** -Dienst abonnieren, dürfen Sie das Paket nur auf der dedizierten Ausführungsinstanz installieren **[!UICONTROL Execution of transactional messages]** . Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+* Eine Ausführungsinstanz muss einem Dienst gewidmet sein. Sie können kein Paket für einen Dienst installieren, den Sie nicht abonniert haben. Wenn Sie z. B. die **Power Booster** -Option für den **Message Center** -Dienst abonnieren, dürfen Sie nur das Paket **[!UICONTROL Execution of Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 * Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind Empfehlungen dieselben wie für eine Hauptinstanz. For more on this, refer to [this document](../../production/using/foreword.md).
-* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz unter dem Gesichtspunkt der Datenbank-/Hardwarekomponenten korrekt zu konfigurieren.
+* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz über einen Datenbankkomponenten-/Hardwarekomponenten-Punkt der Ansicht korrekt zu konfigurieren.
 
