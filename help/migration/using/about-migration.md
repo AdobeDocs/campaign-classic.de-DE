@@ -11,11 +11,8 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 discoiquuid: 0ff9a8a9-2cb7-4b0b-a45e-2431151e59f1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '146'
 ht-degree: 5%
@@ -25,9 +22,9 @@ ht-degree: 5%
 
 # Über die Migration{#about-migration}
 
-This document details the prerequisites to a migration, the steps for a migration to an Adobe Campaign Classic (v7) platform, the additional, necessary and optional settings depending on your configuration.
+In diesem Dokument werden die Voraussetzungen für eine Migration, die Schritte für eine Migration zu einer Adobe Campaign Classic (v7)-Plattform sowie die zusätzlichen, erforderlichen und optionalen Einstellungen je nach Konfiguration beschrieben.
 
-The migration process must be carried out with caution, its impacts must be fully considered beforehand and the procedure must be carried out rigorously. It must only be performed by an expert user. We strongly recommend getting in touch with Adobe Campaign before starting any migration procedure.
+Der Migrationsprozess muss mit Vorsicht durchgeführt werden, seine Auswirkungen müssen im Vorfeld umfassend berücksichtigt werden, und das Verfahren muss rigoros durchgeführt werden. Sie darf nur von einem erfahrenen Benutzer durchgeführt werden. Es wird dringend empfohlen, sich mit Adobe Campaign in Verbindung zu setzen, bevor Sie mit einem Migrationsverfahren beginnen.
 
 Die Migration muss vorab auf der Entwicklungs-Umgebung getestet werden, um sicherzustellen, dass sie reibungslos und fehlerfrei ausgeführt wird. Die Migration der Produktions-Umgebung muss erst erfolgen, nachdem die migrierte Umgebung vollständig genehmigt wurde.
 
