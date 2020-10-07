@@ -14,8 +14,11 @@ discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 18309c190c351cc57f7af24f48b2a772c1840319
+translation-type: tm+mt
+source-git-commit: 3b6cfe05b851843f5d886fcccbe114ff7f0b6611
+workflow-type: tm+mt
+source-wordcount: '2388'
+ht-degree: 98%
 
 ---
 
@@ -308,4 +311,4 @@ Die Zahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E
 
 >[!NOTE]
 >
->Die Namen der Browser und Betriebssysteme werden vom User Agent des Browsers übermittelt, mit dem die E-Mail geöffnet wurde. Ausgehend von diesen Informationen ist Adobe Campaign in der Lage, die Geräteart zu erkennen.
+>Browser- und Betriebssystemnamen stellen einen Teil der Informationen dar, die vom Benutzeragent des Browsers gesendet werden, an den die Nachricht geöffnet wurde. Adobe Campaign zieht den Gerätetyp anhand der Geräteinformationen ab.
