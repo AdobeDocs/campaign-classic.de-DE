@@ -11,11 +11,8 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9357be26b1bc436b19861faa2a43ec6a17cb5b3c
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 95%
@@ -167,8 +164,5 @@ Version 1.0.26 des iOS-SDK ist jetzt verfügbar. In diesem neuen Build wurde Unt
 * Es wurde ein Problem beim Zugriff auf prädiktive Modelle behoben. (NEO-19713)
 * Es wurde ein Problem behoben, das sich auf Stichproben in der **Aufspaltungs**-Aktivität im Workflow mit der Hadoop FDA-Datenbank auswirkte. (NEO-16636)
 * Korrektur einer Regression bei Oracle, die dazu führte, dass einige Funktionen nach der Aktualisierung als ungültig betrachtet wurden. (NEO-12759)
-
-
-
 
 
