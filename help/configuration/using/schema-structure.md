@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: b5c8faf7-d0ae-4d95-b7fe-6ef9674a33d2
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8e4fc977daf9039ee8587bf505d7406fd863e68b
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 12%
@@ -161,7 +158,7 @@ Die folgenden Datentypen werden in Schemas unterstützt:
    >
    >Um ein **uuid** -Feld in anderen Engines als Microsoft SQL Server zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit ihrem Standardwert ausgefüllt werden.
 
-Im Folgenden finden Sie ein Schema mit den eingegebenen Typen:
+Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
 ```
 <srcSchema name="recipient" namespace="cus">
