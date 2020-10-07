@@ -9,21 +9,18 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 537cbdec1ec88da1c759f6ca8eafe383c55a61d3
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
 
 # Verbessern Ihrer Reputation{#improve-reputation}
 
-Löschen Sie Duplikat-E-Mail-Adressen aus Ihrer Zielgruppe, um zu vermeiden, dass Ihre Empfänger erschöpft sind. Dieser Schritt schützt Ihren Ruf und sorgt für eine gute Quarantäne. Adobe Campaign Angebot die erforderlichen Instrumente, um diese Empfehlungen umzusetzen und zu vermeiden, dass der ISP einer blockierungsliste noch mehr hinzufügen könnte.
+Um zu vermeiden, dass sich Ihre Empfänger belästigt fühlen, löschen Sie doppelte E-Mail-Adressen aus Ihrer Zielgruppe. Dies sichert Ihre Reputation als Absender und ermöglicht eine ordnungsgemäße Quarantäneverwaltung. Adobe Campaign Angebot die erforderlichen Instrumente zur Umsetzung dieser Empfehlungen und vermeidet die Gefahr, dass sie einer Blockierungsliste durch den ISP hinzugefügt werden.
 
 Gehen Sie folgendermaßen vor, um Duplikate zu vermeiden:
 
@@ -45,7 +42,7 @@ Das Vorhandensein doppelter E-Mail-Adressen kann unterschiedliche Konsequenzen h
 * Dieselbe Nachricht wird mehrfach gesendet. Selbst wenn Campaign vor dem Versand standardmäßig eine Deduplizierung vornimmt, kann die Nachricht durch unterschiedliche Aktionen dennoch mit demselben Inhalt gesendet werden, beispielsweise bei Verwendung einer Aufspaltung der Zielpopulation.
 * Abmeldungen werden missachtet. Wenn sich ein Empfänger nach dem Erhalt einer Nachricht abmeldet, können an sein dupliziertes Profil weiterhin Nachrichten gesendet werden.
 
-Abgesehen von dieser Nebenwirkung der Opt-in-Verfahren wird diese Situation die Nutzer dazu veranlassen, die Nachrichten als Spam zu betrachten und ein blockierungsliste-Verfahren beim ISP auszulösen.
+Von der Umgehung des Anmeldeverfahrens abgesehen, führt dies wahrscheinlich dazu, dass Benutzer diese Nachrichten als Spam betrachten und der ISP die Adresse auf die Blockierungsliste setzt.
 
 Bei der Bearbeitung der Datenbank muss besonders vorsichtig vorgegangen werden:
 
