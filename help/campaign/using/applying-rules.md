@@ -11,14 +11,11 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: a0e76d27-bedd-4f81-b4d2-1221444e670e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 8c1f284be77447a88748ce97a3524b7035bb5bc0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +84,7 @@ Im Standard-Ausführungsmodus werden die Regeln in der folgenden Reihenfolge aus
 1. Kontrollregeln, wenn sie zu Beginn der Zielgruppenbestimmung angewendet werden
 1. Filterregeln:
 
-   * Native Antragsregeln für Adressqualifikation: definierte Adresse / nicht verifizierte Adresse / Adresse auf der blockierungsliste / Quarantäne Adresse / Adresse Qualität.
+   * Native Anwendungsregeln für die Adressqualifizierung: definierte Adresse / nicht verifizierte Adresse / Adresse auf der Blockierungsliste / Adresse in Quarantäne / Qualität der Adresse.
    * Vom Benutzer definierte Filterregeln
    * Regeln zur Adress- oder Kennungsdeduplizierung (bei Bedarf angewandt);
 
