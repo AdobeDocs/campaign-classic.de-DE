@@ -1,7 +1,7 @@
 ---
-title: Server installieren
-seo-title: Server installieren
-description: Server installieren
+title: Installieren des Servers
+seo-title: Installieren des Servers
+description: Installieren des Servers
 seo-description: null
 page-status-flag: never-activated
 uuid: 02534211-c267-490d-b9c1-78f56f1284e1
@@ -11,18 +11,18 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1510fd9-995b-46c6-8d57-e1fe3999235e
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c25e2a4f2280cdcc61e0522f8235149410b5dacf
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 2%
 
 ---
 
 
-# Server installieren{#installing-the-server}
+# Installieren des Servers{#installing-the-server}
 
-## Ausführen des Installationsprogramms {#executing-the-installation-program}
+## Ausführen des Programms Installation {#executing-the-installation-program}
 
 Installieren Sie für eine Windows 32-Bit-Plattform Adobe Campaign 32 Bit. Installieren Sie für eine Windows 64-Bit-Plattform Adobe Campaign 64 Bit.
 
@@ -38,10 +38,11 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
 
    Es stehen verschiedene Installationstypen zur Verfügung:
 
-   * **[!UICONTROL Installation of an application server]** : Installieren Sie den Adobe Campaign-Anwendungsserver und die Client-Konsole.
-   * **[!UICONTROL Minimal installation (Network)]** : Installation des Client-Computers über das Netzwerk. Falls nötig, wird nur eine begrenzte Anzahl von DLLs auf dem Computer installiert, und alle anderen Komponenten werden von einem Netzlaufwerk verwendet.
-   * **[!UICONTROL Installation of a client]** : Installation der erforderlichen Komponenten für den Adobe Campaign-Client.
-   * **[!UICONTROL Custom installation]** : Der Benutzer wählt die zu installierenden Elemente aus.
+   * **[!UICONTROL Installation eines Anwendungsservers]** : Installieren Sie den Adobe Campaign-Anwendungsserver und die Client-Konsole.
+   * **[!UICONTROL Minimale Installation (Netzwerk)]** : Installation des Client-Computers über das Netzwerk. Falls nötig, wird nur eine begrenzte Anzahl von DLLs auf dem Computer installiert, und alle anderen Komponenten werden von einem Netzlaufwerk verwendet.
+   * **[!UICONTROL Installation eines Clients]** : Installation der erforderlichen Komponenten für den Adobe Campaign-Client.
+   * **[!UICONTROL Benutzerdefinierte Installation]** : Der Benutzer wählt die zu installierenden Elemente aus.
+
    Wählen Sie **Installation eines Anwendungsservers** und gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_install_installer_02.png)
@@ -54,7 +55,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
 
    ![](assets/s_ncs_install_installer_04.png)
 
-   Die Fortschrittsleiste zeigt an, wie weit die Installation geht:
+   Die Fortschrittsleiste zeigt an, wie weit die Installation fortgeschritten ist:
 
    ![](assets/s_ncs_install_installer_05.png)
 
@@ -66,7 +67,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
    >
    >Sobald die Serverinstallation abgeschlossen ist, muss der Server neu gestartet werden, um ein mögliches Netzwerkproblem zu vermeiden.
 
-   Starten Sie nach Abschluss der Installation Adobe Campaign, um die Konfigurationsdateien zu erstellen. Siehe [Erststart des Servers](#first-start-up-of-the-server).
+   Nachdem die Installation abgeschlossen ist, erstellen Sie die Konfigurationsdateien in Beginn Adobe Campaign. Weitere Informationen finden Sie unter [Erster Beginn des Servers](#first-start-up-of-the-server).
 
 ## Übersicht über die Installation {#summary-installation-testing}
 
@@ -76,15 +77,15 @@ Sie können die Erstinstallation mit dem folgenden Befehl testen:
 nlserver pdump
 ```
 
-Wenn Adobe Campaign nicht gestartet wird, lautet die Antwort:
+Wenn das Adobe Campaign nicht gestartet wird, lautet die Antwort:
 
 ```
 No task
 ```
 
-## Erststart des Servers {#first-start-up-of-the-server}
+## Erster Beginn des Servers {#first-start-up-of-the-server}
 
-Nachdem der Installationstest abgeschlossen ist, öffnen Sie über das **[!UICONTROL Start > Programs > Adobe Campaign]** Menü eine Eingabeaufforderung und geben Sie den folgenden Befehl ein:
+Nachdem der Installationstest abgeschlossen ist, öffnen Sie eine Eingabeaufforderung über das Menü **[!UICONTROL Beginn > Programme > Adobe Campaign]** und geben Sie den folgenden Befehl ein:
 
 ```
 nlserver web
@@ -141,13 +142,13 @@ Die folgenden Informationen werden angezeigt:
 
 ## Kennwort für die interne ID {#password-for-the-internal-identifier}
 
-Der Adobe Campaign-Server definiert eine technische Anmeldung, die als **intern** bezeichnet wird und alle Rechte auf allen Instanzen hat. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist obligatorisch, eine zu definieren.
+Der Adobe Campaign-Server definiert eine technische Anmeldung mit der Bezeichnung **internal** , die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist obligatorisch, eine zu definieren.
 
 Siehe Abschnitt [Interne Kennung](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## Starten von Adobe Campaign-Diensten {#starting-adobe-campaign-services}
+## Starting Adobe Campaign services {#starting-adobe-campaign-services}
 
-Um die Adobe Campaign-Dienste zu starten, können Sie den Service Manager verwenden oder in die Befehlszeile (mit den entsprechenden Rechten) Folgendes eingeben:
+Um die Adobe Campaign-Dienste Beginn, können Sie den Service Manager verwenden oder Folgendes an der Befehlszeile eingeben (mit den entsprechenden Rechten):
 
 ```
 net start nlserver6
@@ -163,7 +164,7 @@ net stop nlserver6
 
 Laden Sie LibreOffice herunter, z. B. von [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) , und befolgen Sie die regulären Installationsschritte.
 
-Fügen Sie die folgende Umgebungsvariable hinzu:
+hinzufügen der folgenden Umgebung:
 
 ```
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
