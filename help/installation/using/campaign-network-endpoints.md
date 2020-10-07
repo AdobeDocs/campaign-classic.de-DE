@@ -1,7 +1,7 @@
 ---
-title: Kampagne-Netzwerk-Endpunkte
-seo-title: Kampagne-Netzwerk-Endpunkte
-description: Kampagne-Netzwerk-Endpunkte
+title: Campaign-Netzwerkendpunkte
+seo-title: Campaign-Netzwerkendpunkte
+description: Campaign-Netzwerkendpunkte
 seo-description: null
 page-status-flag: never-activated
 uuid: be21ae4b-ca2a-4952-b256-cd8dc51309cf
@@ -11,25 +11,22 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: ce45473d27a3ed42ef91d4f2d8698f9e2b9cbb2e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '53'
-ht-degree: 7%
+ht-degree: 30%
 
 ---
 
 
-# Campaign network endpoints {#campaign-standard-network-endpoints}
+# Campaign-Netzwerkendpunkte {#campaign-standard-network-endpoints}
 
 Hier sind die verschiedenen Endpunkte, die in Campaign Classic verwendet werden.
 
 | Kontext | URL |
 |--- |--- |
-| Browser-Endpunkte | `https://*.experiencecloud.adobe.com` (SSO-Anbieter)<br>`https://*.campaign.adobe.com` (Kampagne Instance)<br>`https://adobeid-na1.services.adobe.com` (Adobe-Anmeldung) |
+| Browser-Endpunkte | `https://*.experiencecloud.adobe.com` (SSO-Anbieter)<br>`https://*.campaign.adobe.com` (Kampagne Instance)<br>`https://adobeid-na1.services.adobe.com` (Anmeldung bei Adoben) |
 | Zustellberichte | `https://deliverablity.neolane.net` |
 | Inbox-Rendering (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
 | Branding-URL, Mirrorseiten, Verfolgung, Filter (Bereitstellungsassistent) | Überprüfen Sie die für Sie konfigurierten URLs. |
