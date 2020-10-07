@@ -14,11 +14,11 @@ discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 84f06afb36aa6a9fa13db1fda7034389b762eb99
-workflow-type: ht
-source-wordcount: '420'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 28f56534a57e675e42a417acfbf9b1a3053250a8
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 83%
 
 ---
 
@@ -93,11 +93,23 @@ Um die Verbindung zu Adobe Campaign zu unterbrechen, verwenden Sie das erste Sym
 
 Das Menü **[!UICONTROL Hilfe > Versionsinformationen…]** liefert folgende Informationen:
 
-* Nummer der installierten **Software-Version**,
-* **Build**-Nummer,
-* einen Link zum Adobe-Campaign-Support.
+* Nummer der installierten **Software-Version**
+* **Build**-Nummer
+* Link zur Kundenunterstützung der Adobe
+* Links zu den Datenschutzrichtlinien für Adoben, Nutzungsbedingungen und Cookies-Richtlinien
 
-   >[!CAUTION]
-   >
-   >Wenn Sie das Adobe-Support-Team kontaktieren, benötigen Sie die Versionsnummer und die Build-Nummer Ihrer Campaign-Clientkonsole und des Anwendungsservers.
+![](assets/about-acc.png)
 
+Wenn Sie das Adobe-Support-Team kontaktieren, benötigen Sie die Versionsnummer und die Build-Nummer Ihrer Campaign-Clientkonsole und des Anwendungsservers.
+
+Wenn Sie mit der [Kampagne Gold Standard-Version](../../rn/using/gold-standard.md)arbeiten, müssen Sie auch die SHA/1-Zeichen freigeben, die im Feld **[!UICONTROL Info]** angezeigt werden. Beispiel: In Gold **Standard 10-Version** zeigt die Buildnummer den **Build 9032@efd8a94** an, wie nachfolgend gezeigt:
+
+![](assets/about-acc-gs.png)
+
+Learn more about Gold Standard [in this article](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+
+**Verwandte Themen**:
+
+* [Optionen zur Unterstützung von Kampagnen](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
+* [Softwareverteilung](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html)
+* [Experience Cloud- und Expertensitzungen](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
