@@ -1,7 +1,7 @@
 ---
-title: Interaktion - Datenpuffer
-seo-title: Interaktion - Datenpuffer
-description: Interaktion - Datenpuffer
+title: Interaction - Datenpuffer
+seo-title: Interaction - Datenpuffer
+description: Interaction - Datenpuffer
 seo-description: null
 page-status-flag: never-activated
 uuid: 4cb742b5-6bde-43e8-b26b-16f27dd65f72
@@ -11,22 +11,22 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: cbfdeb2f-4f20-45b8-8cc0-89362f9ea9c1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 6b631f8456ad1f61cec1630334d76752f6af9866
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
 
-# Interaktion - Datenpuffer{#interaction-data-buffer}
+# Interaction - Datenpuffer{#interaction-data-buffer}
 
 >[!NOTE]
 >
->Einige Konfigurationen können nur von Adobe für Bereitstellungen ausgeführt werden, die von Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/campaign/kb/acc-on-prem-vs-hosted.html).
+>Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
 
-In Adobe Campaign wurde eine **Datenpufferzone** im Interaktionsmodul eingeführt. Auf diese Weise können Sie die Leistung **der eingehenden Interaktion** steigern, indem Sie Lager- und Angebotsberechnungen deaktivieren.
+In Adobe Campaign wurde eine **Datenpufferzone** im Interaktionsmodul eingeführt. Auf diese Weise können Sie die Leistung **der eingehenden Interaktion** steigern, indem Sie die Angebot- und Bestandsberechnungen deaktivieren.
 
 Es betrifft nur die eingehende Interaktion, ob durch einen Aufruf (mit oder ohne Aufrufdaten) oder durch ein Statusupdate (updateStatus).
 
@@ -36,7 +36,7 @@ Die **Konfiguration** der Datenpufferzone kann in der Konfigurationsdatei der In
 
 >[!NOTE]
 >
->Änderungen an der Konfiguration erfordern einen Neustart des Webservers (Apache:IIS) und der Adobe Campaign-Prozesse.\
+>Änderungen, die an der Konfiguration vorgenommen werden, erfordern einen Neustart des Webservers (Apache:IIS) und der Adobe Campaign-Prozesse.\
 >Stellen Sie nach der Konfiguration der Datenpufferzone sicher, dass eine angepasste Hardwarekonfiguration verfügbar ist. (Speicherkapazität vorhanden).
 
 Stellen Sie nach der Konfiguration der Datenpufferzone sicher, dass eine angepasste Hardwarekonfiguration verfügbar ist. (Speicherkapazität vorhanden).
@@ -49,7 +49,7 @@ maxProcessMemoryWarningMb="1600" maxSharedEntries="25000" nextOffersSize="0"
 processRestartTime="06:00:00" runLevel="10" targetKeySize="16"/>
 ```
 
-Wenn Sie Inbound Interaction verwenden, muss das @autostart-Attribut &quot;true&quot;sein, damit der Prozess beim Starten des Adobe Campaign-Servers automatisch gestartet wird.
+Wenn Sie Inbound Interaction verwenden, muss das @autostart-Attribut &quot;true&quot;sein, damit der Vorgang beim Starten des Adobe Campaign-Servers automatisch gestartet wird.
 
 Argumentdetails:
 
