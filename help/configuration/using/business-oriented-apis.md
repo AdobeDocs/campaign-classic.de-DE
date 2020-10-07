@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 4%
@@ -27,7 +24,7 @@ ht-degree: 4%
 
 Die Business-API ist für jeden Objekttyp spezifisch. Sie wirken sich auf Folgendes aus:
 
-* Deliveries:
+* Sendungen:
 
    * Erstellen einer Versand-Aktion, siehe [SubmitDelivery (nms:Versand)](#submitdelivery--nms-delivery-),
    * Senden einer Kampagne (Beginn, Pause, Stopp, Testversand senden),
@@ -150,7 +147,7 @@ Wenn der Empfänger nicht in der Datenbank vorhanden ist oder nicht für den bet
 
 >[!NOTE]
 >
->Wenn der Dienstname nicht als Parameter angegeben ist, wird der Empfänger automatisch auf blockierungsliste (@blockierungsliste=&quot;1&quot;) gesetzt.
+>Wenn der Dienstname nicht als Parameter angegeben wird, wird der Empfänger automatisch auf der Blockierungsliste (@Blockierungsliste=&quot;1&quot;) angezeigt.
 
 Dieser Aufruf gibt keine Daten außer Fehler zurück.
 
