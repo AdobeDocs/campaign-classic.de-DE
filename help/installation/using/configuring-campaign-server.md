@@ -11,11 +11,8 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3626'
 ht-degree: 5%
@@ -40,25 +37,25 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 * [Campaign Classic-On-Premise- und gehostete Funktionsmatrix](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html)
 * [Konfigurationsschritte](../../installation/using/about-hybrid-and-hosted-models.md) für Hybrid- und gehostete Modelle)
 
-Campaign Classic configuration files are stored in the **conf** folder of the Adobe Campaign installation folder. The configuration is spread over two files:
+Campaign Classic-Konfigurationsdateien werden im Installationsordner des Adobe Campaigns im **conf** -Ordner gespeichert. Die Konfiguration erstreckt sich über zwei Dateien:
 
-* **serverConf.xml**: general configuration for all instances. Diese Datei enthält die technischen Parameter des Adobe Campaign-Servers: diese werden von allen Instanzen freigegeben. The description of some of these parameters is detailed below. The different nodes and parameters and listed in this [section](../../installation/using/the-server-configuration-file.md).
-* **config-`<instance>`.xml** (where **instance** is the name of the instance): specific configuration of the instance. If you share your server among several instances, please enter the parameters specific to each instance in their relevant file.
+* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei enthält die technischen Parameter des Adobe Campaign-Servers: diese werden von allen Instanzen freigegeben. Die Beschreibung einiger dieser Parameter ist nachfolgend beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt sind.
+* **config-`<instance>`.xml** (wobei **instance** der Name der Instanz ist): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server für mehrere Instanzen freigeben, geben Sie bitte die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
 
-## Defining security zones {#defining-security-zones}
+## Definieren von Sicherheitszonen {#defining-security-zones}
 
-### About security zones {#about-security-zones}
+### Sicherheitszonen {#about-security-zones}
 
-Each operator needs to be linked to a zone to log on to an instance and the operator IP must be included in the addresses or address sets defined in the security zone. Die Sicherheitszonenkonfiguration wird in der Konfigurationsdatei des Adobe Campaign-Servers ausgeführt.
+Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anzumelden, und die IP-Adresse des Betreibers muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Sicherheitszonenkonfiguration wird in der Konfigurationsdatei des Adobe Campaign-Servers ausgeführt.
 
-Operators are linked to a security zone from its profile in the console ( **[!UICONTROL Administration > Access management > Operators]** node). Learn how to link zones to Campaign operators in [this section](#linking-a-security-zone-to-an-operator).
+Operatoren werden über ihr Profil in der Konsole (&quot; **[!UICONTROL Administration&quot;> &quot;Zugriffsverwaltung&quot;> &quot;Operatoren]** &quot;) mit einer Sicherheitszone verknüpft. In [diesem Abschnitt erfahren Sie, wie Sie Zonen mit Operatoren der Kampagne verknüpfen](#linking-a-security-zone-to-an-operator).
 
-### Creating security zones {#creating-security-zones}
+### Sicherheitszonen erstellen {#creating-security-zones}
 
-A zone is defined by:
+Eine Zone ist definiert durch:
 
 * einen oder mehrere IP-Adressbereiche (IPv4 und IPv6)
-* a technical name linked to each range of IP addresses
+* einen technischen Namen, der mit jedem IP-Adressenbereich verknüpft ist
 
 Die Sicherheitszonen sind miteinander verbunden, was bedeutet, dass die Definition einer neuen Zone innerhalb einer anderen Zone die Anzahl der Operatoren verringert, die sich bei ihr anmelden können, während die den einzelnen Operatoren zugewiesenen Rechte erhöht werden.
 
@@ -124,7 +121,7 @@ Wenn Sie das Message Center verwenden und mehrere Ausführungsinstanzen vorliege
 
 ### Bewährte Verfahren für Sicherheitszonen {#best-practices-for-security-zones}
 
-In der Definition der **lan** -Sicherheitszone kann eine IP-Adressenmaske hinzugefügt werden, die den technischen Zugriff definiert. This add will enable access to all the instances hosted on the server.
+In der Definition der **lan** -Sicherheitszone kann eine IP-Adressenmaske hinzugefügt werden, die den technischen Zugriff definiert. Dieser Zusatz ermöglicht den Zugriff auf alle Instanzen, die auf dem Server gehostet werden.
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -145,7 +142,7 @@ In der Definition der **lan** -Sicherheitszone kann eine IP-Adressenmaske hinzug
 
 Es wird empfohlen, IP-Adressbereiche direkt in der Konfigurationsdatei zu definieren, die der Instanz zugeordnet ist, damit Operatoren nur auf eine bestimmte Instanz zugreifen können.
 
-In the **`config-<instance>.xml`** file:
+In der **`config-<instance>.xml`** Datei:
 
 ```
   <securityZone name="public">
@@ -154,35 +151,35 @@ In the **`config-<instance>.xml`** file:
       <subNetwork id="cus1" mask="a.b.c.d/xx"/>
 ```
 
-### Sub networks and proxies in a security zone {#sub-networks-and-proxies-in-a-security-zone}
+### Subnetzwerke und Stellvertreter in einer Sicherheitszone {#sub-networks-and-proxies-in-a-security-zone}
 
-The **proxy** parameter can be used in a **subNetwork** element to specify proxy use in a security zone.
+Der **Proxy** -Parameter kann in einem **subNetwork** -Element verwendet werden, um die Verwendung des Proxys in einer Sicherheitszone festzulegen.
 
-When a proxy is referenced and a connection enters via this proxy (visible via the HTTP X-Forwarded-For header), the verified zone is that of the clients of the proxy and not that of the proxy.
+Wenn ein Proxy referenziert wird und eine Verbindung über diesen Proxy eingeht (sichtbar über den HTTP X-Forwarded-For-Header), ist der verifizierte Bereich der Clients des Proxys und nicht der des Proxys.
 
 >[!IMPORTANT]
 >
->If a proxy is configured and it is possible to override it (or it if does not exist), the IP address that will be tested will be able to be falsified.
+>Wenn ein Proxy konfiguriert ist und es möglich ist, ihn zu überschreiben (oder nicht vorhanden), kann die IP-Adresse, die getestet wird, gefälscht werden.
 >
->In addition, relays are now generated like proxies. You can therefore add the IP address 127.0.0.1 to the list of proxies in your security zone configuration.
+>Außerdem werden jetzt Relais wie Stellvertreter generiert. Sie können daher die IP-Adresse 127.0.0.1 zur Liste der Proxys in Ihrer Sicherheitszonenkonfiguration hinzufügen.
 >
 >Beispiel: &quot; `<subnetwork label="Lan 1" mask="192.168.0.0/16" name="lan1" proxy="127.0.0.1,10.100.2.135" />`&quot;.
 
-Various cases can occur:
+Es können verschiedene Fälle auftreten:
 
-* A sub-network is directly referenced in the security zone and no proxy is configured: users of the sub-network can directly connect to the Adobe Campaign server.
+* Ein Unternetzwerk wird direkt in der Sicherheitszone referenziert und es wird kein Proxy konfiguriert: Benutzer des Unternetzes können direkt eine Verbindung zum Adobe Campaign-Server herstellen.
 
    ![](assets/8101_proxy1.png)
 
-* A proxy is specified for a sub-network in the security zone: users from this sub-network can access the Adobe Campaign server via this proxy.
+* Ein Proxy wird für ein Unternetzwerk in der Sicherheitszone angegeben: Benutzer dieses Unternetzes können über diesen Proxy auf den Adobe Campaign-Server zugreifen.
 
    ![](assets/8101_proxy2.png)
 
-* A proxy is included in a security zone sub-network: users that have access through this proxy, regardless of their origin, can access the Adobe Campaign server.
+* Ein Proxy ist in einem Teilnetzwerk einer Sicherheitszone enthalten: Benutzer, die über diesen Proxy Zugriff haben, können unabhängig von ihrer Herkunft auf den Adobe Campaign-Server zugreifen.
 
    ![](assets/8101_proxy3.png)
 
-The IP addresses of proxies that are likely to access the Adobe Campaign server must be entered in both the **`<subnetwork>`** concerned and the first level subnetwork **`<subnetwork name="all"/>`**. For example, here for a proxy whose IP address is 10.131.146.102:
+Die IP-Adressen von Proxys, die auf den Adobe Campaign-Server zugreifen können, müssen sowohl im **`<subnetwork>`** betreffenden als auch im ersten Teilnetzwerk eingegeben werden **`<subnetwork name="all"/>`**. Beispiel: Hier für einen Proxy mit der IP-Adresse 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -209,7 +206,7 @@ The IP addresses of proxies that are likely to access the Adobe Campaign server 
 
 Sobald Zonen definiert sind, muss jeder Operator mit einem von ihnen verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP-Adresse des Betreibers muss in die Adressen oder Adressbereiche, auf die in der Zone verwiesen wird, aufgenommen werden.
 
-The technical configuration of the zones is carried out in the configuration file of the Campaign Server: **serverConf.xml**.
+Die technische Konfiguration der Zonen erfolgt in der Konfigurationsdatei des Kampagne Server: **serverConf.xml**.
 
 Zuvor müssen Sie den Beginn konfigurieren, indem Sie die vordefinierte **[!UICONTROL Sicherheitszone]** -Auflistung so konfigurieren, dass eine Beschriftung mit dem in der Datei &quot; **serverConf.xml** &quot;definierten internen Namen der Zone verknüpft wird.
 
@@ -247,7 +244,7 @@ Sobald die Zonen definiert und die Auflistung der **[!UICONTROL Sicherheitszone]
 
 Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen Anwendung besetzt ist, die für Ihre Konfiguration erforderlich ist, müssen Sie den 8080-Port durch einen kostenlosen ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die **Datei &quot;server.xml** &quot;im Ordner **/tomcat-7/conf** des Installationsordners des Adobe Campaigns.
 
-Ändern Sie dann den Anschluss der JSP-Relaisseiten. Ändern Sie dazu die **Datei &quot;serverConf.xml** &quot;im Ordner **/conf** des Installationsordners des Adobe Campaigns. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+Ändern Sie dann den Anschluss der JSP-Relaisseiten. Ändern Sie dazu die **Datei &quot;serverConf.xml** &quot;im Ordner **/conf** des Installationsordners des Adobe Campaigns. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
 ```
 <serverConf>
@@ -256,33 +253,33 @@ Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen A
    <url ... targetUrl="http://localhost:8090"...
 ```
 
-### Mapping a folder in Tomcat {#mapping-a-folder-in-tomcat}
+### Ordner in Tomcat zuordnen {#mapping-a-folder-in-tomcat}
 
 Um kundenspezifische Einstellungen zu definieren, können Sie eine **Datei &quot;user_Kontexte.xml** &quot;im Ordner &quot; **/tomcat-7/conf** &quot;erstellen, die auch die Datei &quot; **Kontexte.xml** &quot;enthält.
 
-This file will contain the following type of information:
+Diese Datei enthält die folgenden Informationen:
 
 ```
  <Context path='/foo' docBase='../customers/foo'   crossContext='true' debug='0' reloadable='true' trusted='false'/>
 ```
 
-If necessary, this operation can be reproduced on the server-side.
+Bei Bedarf kann dieser Vorgang serverseitig reproduziert werden.
 
-## Personalizing delivery parameters {#personalizing-delivery-parameters}
+## Personalisieren von Versand-Parametern {#personalizing-delivery-parameters}
 
-The delivery parameters are defined in the **serverConf.xml** configuration file. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+Die Versand-Parameter werden in der Konfigurationsdatei &quot; **serverConf.xml** &quot;definiert. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
-General server configuration and commands are detailed in [Campaign server configuration](../../installation/using/campaign-server-configuration.md).
+Allgemeine Serverkonfigurationen und -befehle werden in der [Kampagne-Serverkonfiguration](../../installation/using/campaign-server-configuration.md)ausführlich beschrieben.
 
-You can also carry out the following configurations depending on your needs and settings.
+Je nach Bedarf und Einstellungen können Sie außerdem die folgenden Konfigurationen durchführen.
 
-### SMTP relay {#smtp-relay}
+### SMTP-Relais {#smtp-relay}
 
-The MTA module acts as a native mail transfer agent for SMTP broadcast (port 25).
+Das MTA-Modul fungiert als systemeigener E-Mail-Transfer-Agent für SMTP-Übertragungen (Port 25).
 
-It is, however, possible to replace it by a relay server if your security policy requires it. In that case, the global throughput will be the relay one (provided that the relay server throughput is inferior to the Adobe Campaign one).
+Es ist jedoch möglich, ihn durch einen Server zu ersetzen, wenn Ihre Sicherheitsrichtlinien dies erfordern. In diesem Fall ist der globale Durchsatz der Relaisdurchsatz (vorausgesetzt, dass der Relaisserver-Durchsatz niedriger ist als der Durchsatz des Adobe Campaigns).
 
-In this case, these parameters are set by configuring the SMTP server in the **`<relay>`** section. You must specify the IP address (or host) of the SMTP server used to transfer mail and its associated port (25 by default).
+In diesem Fall werden diese Parameter durch Konfiguration des SMTP-Servers im **`<relay>`** Abschnitt festgelegt. Sie müssen die IP-Adresse (oder den Host) des SMTP-Servers angeben, der zum Übertragen von E-Mails verwendet wird, und den zugehörigen Anschluss (standardmäßig 25).
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -306,15 +303,15 @@ Weitere Informationen finden Sie unter Optimierung des [E-Mail-Versands](../../i
 
 >[!IMPORTANT]
 >
->The affinity configuration needs to be coherent from one server to another. We recommend that you contact Adobe for affinity configuration, as configuration changes should be replicated on all application servers running the MTA.
+>Die Konfiguration der Affinität muss von einem Server zum anderen kohärent sein. Es wird empfohlen, sich für die Konfiguration der Affinität an die Adobe zu wenden, da Konfigurationsänderungen auf allen Anwendungsservern, auf denen die MTA ausgeführt wird, repliziert werden sollten.
 
-You can improve outbound SMTP traffic through affinities with IP addresses.
+Sie können den ausgehenden SMTP-Traffic durch Affinitäten mit IP-Adressen verbessern.
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Enter the affinities in the **`<ipaffinity>`** section of the **serverConf.xml** file.
+1. Geben Sie die Affinitäten im **`<ipaffinity>`** Abschnitt der Datei &quot; **serverConf.xml** &quot;ein.
 
-   One affinity can have several different names: to separate them, use the **;** character.
+   Eine Affinität kann mehrere verschiedene Namen haben: um sie zu trennen, verwenden Sie die **;** Zeichen.
 
    Beispiel:
 
@@ -323,23 +320,23 @@ Gehen Sie hierzu wie folgt vor:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   To view the relevant parameters, refer to the **serverConf.xml** file.
+   Informationen zur Ansicht der entsprechenden Parameter finden Sie in der Datei &quot; **serverConf.xml** &quot;.
 
-1. To enable affinity selection in the drop-down lists, you need to add the affinity name(s) in the **IPAffinity** enumeration.
+1. Um die Auswahl der Affinitäten in den Dropdown-Listen zu aktivieren, müssen Sie die Affinitäten in der **IPAffinity-Auflistung** hinzufügen.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >Enumerations are detailed in [this document](../../platform/using/managing-enumerations.md).
+   >Auflistungen sind in [diesem Dokument](../../platform/using/managing-enumerations.md)detailliert.
 
-   You can then select the affinity to be used, as shown below for typologies:
+   Anschließend können Sie die zu verwendende Affinität auswählen, wie unten für Typologien dargestellt:
 
    ![](assets/ipaffinity_typology.png)
 
    >[!NOTE]
    >
-   >You can also refer to [Delivery server configuration](../../installation/using/email-deliverability.md#delivery-server-configuration).
+   >Sie können auch auf die [Versand-Serverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration)verweisen.
 
 ## URL-Genehmigungen {#url-permissions}
 
@@ -349,18 +346,18 @@ Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URL
 
 Nach dem Hinzufügen einer URL wird sie in der Konfigurationsdatei der Instanz referenziert (serverConf.xml).
 
-They way you can manage URL permissions depends on your hosting model:
+Wie Sie URL-Berechtigungen verwalten können, hängt von Ihrem Hostmodell ab:
 
-* **Hybrid** or **On-premise**: add the URLs to allow into the **serverConf.xml file**. Detailed information is available in the section below.
-* **Hosted**: add the URLs to allow via the **Control Panel**. Weitere Informationen finden Sie in der [entsprechenden Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/url-permissions.html).
+* **Hybrid** oder **Vor-Ort**: fügen Sie die URLs hinzu, die in der Datei **&quot;serverConf.xml&quot;zulässig sind**. Ausführliche Informationen finden Sie im folgenden Abschnitt.
+* **gehostet**: fügen Sie die URLs hinzu, die über die **Systemsteuerung** zulässig sind. Weitere Informationen finden Sie in der [entsprechenden Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/url-permissions.html).
 
-With **Hybrid** and **On-premise** hosting models, the administrator needs to reference a new **urlPermission** in the **serverConf.xml** file. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+Bei **Hybrid** - und **On-Premise** -Hostmodellen muss der Administrator auf eine neue **urlPermission** in der Datei &quot; **serverConf.xml** &quot;verweisen. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
 Es gibt drei Modi für den Verbindungsschutz:
 
 * **Blockierung**: alle URLs, die nicht zur Zulassungsliste gehören, mit einer Fehlermeldung blockiert werden. Dies ist der Standardmodus nach einem Postupgrade.
 * **Zulässig**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig.
-* **Warnung**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig, der JS-Interpreter gibt jedoch eine Warnung aus, sodass der Administrator sie erfassen kann. This mode adds JST-310027 warning messages.
+* **Warnung**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig, der JS-Interpreter gibt jedoch eine Warnung aus, sodass der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen für JST-310027 hinzugefügt.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -372,41 +369,41 @@ Es gibt drei Modi für den Verbindungsschutz:
 
 >[!IMPORTANT]
 >
->By default, new customers&#39; client use the **blocking mode**. Wenn sie eine neue URL zulassen müssen, sollten sie sich an ihren Administrator wenden, um sie der Zulassungsliste hinzuzufügen.
+>Standardmäßig verwendet der Client eines neuen Kunden den **Blockierungsmodus**. Wenn sie eine neue URL zulassen müssen, sollten sie sich an ihren Administrator wenden, um sie der Zulassungsliste hinzuzufügen.
 >
->Existing customers coming from a migration can use the **warning mode** for a while. Meanwhile they need to analyze the outbound traffic before authorizing the URLs. Once the list of authorized URLs defined, they should contact their administrator to add the URLs to the allow list and activate the **blocking mode**.
+>Vorhandene Kunden, die von einer Migration kommen, können den **Warnmodus** eine Weile lang verwenden. In der Zwischenzeit müssen sie den ausgehenden Traffic analysieren, bevor sie die URLs autorisieren. Sobald die Liste autorisierter URLs definiert ist, sollten sie sich an ihren Administrator wenden, um die URLs zur Zulassungsliste hinzuzufügen und den **Blockierungsmodus** zu aktivieren.
 
-## Dynamic page security and relays {#dynamic-page-security-and-relays}
+## Dynamische Seitensicherheit und Relais {#dynamic-page-security-and-relays}
 
-By default, all dynamic pages are automatically related to the **local** Tomcat server of the machine whose Web module has started. This configuration is entered in the **`<url>`** section of the query relay configuration for the **ServerConf.xml** file. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+Standardmäßig sind alle dynamischen Seiten automatisch mit dem **lokalen** Tomcat-Server des Computers verknüpft, dessen Webmodul gestartet wurde. Diese Konfiguration wird in den **`<url>`** Abschnitt der Abfrage-Relaiskonfiguration für die Datei &quot; **ServerConf.xml** &quot;eingegeben. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
-To relay execution of the dynamic page on a **remote** server; if the Web module is not activated on the computer. To do this, you must replace the **localhost** with the name of the remote computer for JSP and JSSP, Web applications, reports and strings.
+die Ausführung der dynamischen Seite auf einem **Remote** -Server weiterleiten; wenn das Webmodul auf dem Computer nicht aktiviert ist. Dazu müssen Sie den **localhost** durch den Namen des Remote-Computers für JSP und JSSP, Webanwendungen, Berichte und Zeichenfolgen ersetzen.
 
-For more on the various parameters available, refer to the **serverConf.xml** configuration file.
+Weitere Informationen zu den verschiedenen verfügbaren Parametern finden Sie in der Konfigurationsdatei &quot; **serverConf.xml** &quot;.
 
-For JSP pages, the default configuration is:
+Für JSP-Seiten lautet die Standardkonfiguration:
 
 ```
 <url relayHost="true" relayPath="true" targetUrl="http://localhost:8080" urlPath="*.jsp"/>
 ```
 
-Adobe Campaign uses the following JSP pages:
+Adobe Campaign verwendet die folgenden JSP-Seiten:
 
-* /nl/jsp/**soaprouter.jsp**: client console and Web services connections (SOAP APIs),
-* /nl/jsp/**m.jsp**: mirror pages,
-* /nl/jsp/**logon.jsp**: Web-based access to reports and to deployment of the client console,
-* /nl/jsp/**s.jsp** : Using viral marketing (sponsoring and social networks).
+* /nl/jsp/**soaprouter.jsp**: Client-Konsolen- und Webdienstverbindungen (SOAP-APIs),
+* /nl/jsp/**m.jsp**: mirrorseiten,
+* /nl/jsp/**logon.jsp**: Webbasierter Zugriff auf Berichte und die Bereitstellung der Client-Konsole,
+* /nl/jsp/**s.jsp** : Einsatz von viralem Marketing (Sponsoring und soziale Netzwerke).
 
-The JSSPs used for the Mobile App Channel are as follows:
+Die für den Mobile App Kanal verwendeten JSSPs lauten wie folgt:
 
 * nms/mobile/1/registerIOS.jssp
 * nms/mobile/1/registerAndroid.jssp
 
 **Beispiel:**
 
-It&#39;s possible to prevent client machine connections from the outside. To do this, simply restrict the execution of **soaprouter.jsp** and only authorize the execution of mirror pages, viral links, web forms and public resources.
+Es ist möglich, Clientmaschinenverbindungen von außen zu verhindern. Dazu beschränken Sie einfach die Ausführung von **soaprouter.jsp** und genehmigen nur die Ausführung von Mirrorseiten, viralen Links, Webformularen und öffentliche Ressourcen.
 
-The parameters are as follows:
+Die Parameter lauten wie folgt:
 
 ```
 <url IPMask="<IP_addresses>" deny=""     hostMask="" relayHost="true"  relayPath="true"  targetUrl="http://localhost:8080" timeout="" urlPath="*.jsp"/>
@@ -422,21 +419,21 @@ The parameters are as follows:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-In this example, the **`<IP_addresses>`** value coincides with the list of IP addresses (separated by comas) authorized to use the relay module for this mask.
+In diesem Beispiel fällt der **`<IP_addresses>`** Wert mit der Liste der IP-Adressen (durch Kommas getrennt) zusammen, die für die Verwendung des Relais-Moduls für diese Maske berechtigt sind.
 
 >[!NOTE]
 >
->Values shall be adapted according to your configuration and your network constraints, especially if specific configurations have been developed for your installation.
+>Die Werte sind entsprechend Ihrer Konfiguration und Ihren Netzwerkeinschränkungen anzupassen, insbesondere wenn für Ihre Installation spezifische Konfigurationen entwickelt wurden.
 
-## Restricting authorized external commands {#restricting-authorized-external-commands}
+## Eingrenzen autorisierter externer Befehle {#restricting-authorized-external-commands}
 
 >[!NOTE]
 >
->The following configuration is only required for on-premise installations.
+>Die folgende Konfiguration ist nur für lokale Installationen erforderlich.
 
-From build 8780, technical administrators can restrict the list of authorized external commands that can be used in Adobe Campaign.
+Ab Build 8780 können technische Administratoren die Liste autorisierter externer Befehle einschränken, die in Adobe Campaign verwendet werden können.
 
-To do that, you need to create a text file with the list of commands that you want to prevent from using, for example:
+Dazu müssen Sie eine Textdatei mit der Liste von Befehlen erstellen, die Sie vermeiden möchten, z. B.:
 
 ```
 ln
@@ -453,15 +450,15 @@ sh
 
 >[!IMPORTANT]
 >
->This list is not exhaustive.
+>Diese Liste ist nicht erschöpfend.
 
-In the **exec** node of the server configuration file, you need to reference the previously created file in the **blocklistFile** attribute.
+Im **exec** -Knoten der Serverkonfigurationsdatei müssen Sie auf die zuvor erstellte Datei im **Attribut blocklistFile** verweisen.
 
-**For Linux only**: in the server configuration file, we recommand that you specify a user dedicated to executing external commands to enhance your security configuration. This user is set in the **exec** node of the configuration file. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+**Nur** für Linux: in der Serverkonfigurationsdatei sollten Sie einen Benutzer angeben, der externe Befehle ausführen soll, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im **exec** -Knoten der Konfigurationsdatei festgelegt. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
 >[!NOTE]
 >
->If no user is specified, all commands are executed in the user context of the Adobe Campaign instance. The user must be different than the user running Adobe Campaign.
+>Wenn kein Benutzer angegeben ist, werden alle Befehle im Benutzerkontext der Adobe Campaign-Instanz ausgeführt. Der Benutzer muss sich von dem Benutzer, der Adobe Campaign ausführt, unterscheiden.
 
 Beispiel:
 
@@ -471,22 +468,22 @@ Beispiel:
 </serverConf>
 ```
 
-This user needs to be added to the sudoer list of the &#39;neolane&#39; Adobe Campaign operator.
+Dieser Benutzer muss zur untergeordneten Liste des Adobe Campaign-Operators &quot;neolane&quot;hinzugefügt werden.
 
 >[!IMPORTANT]
 >
->You should not use a custom sudo. A standard sudo needs to be installed on the system.
+>Sie sollten kein benutzerdefiniertes Sudo verwenden. Ein Standard-Sudo muss auf dem System installiert sein.
 
-## Managing HTTP headers {#managing-http-headers}
+## Verwalten von HTTP-Kopfzeilen {#managing-http-headers}
 
-By default, all HTTP headers are not relayed. You can add specific headers in the replies sent by relay. Gehen Sie dazu wie folgt vor:
+Standardmäßig werden nicht alle HTTP-Header wiedergegeben. Sie können bestimmte Kopfzeilen in den Antworten, die durch Relais gesendet werden, hinzufügen. Gehen Sie dazu wie folgt vor:
 
-1. Go to the **serverConf.xml** file. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
-1. In the **`<relay>`** node, go to the list of relayed HTTP headers.
-1. Add a **`<responseheader>`** element with the following attributes:
+1. Wechseln Sie zur Datei &quot; **serverConf.xml** &quot;. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+1. Wechseln Sie im **`<relay>`** Knoten zur Liste der wiedergegebenen HTTP-Header.
+1. hinzufügen eines **`<responseheader>`** Elements mit den folgenden Attributen:
 
-   * **name**: header name
-   * **value**: value name.
+   * **name**: Kopfzeilenname
+   * **Wert**: Wertname.
 
    Beispiel:
 
@@ -494,15 +491,15 @@ By default, all HTTP headers are not relayed. You can add specific headers in th
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## Redundant tracking {#redundant-tracking}
+## Redundante Verfolgung {#redundant-tracking}
 
-When multiple servers are used for redirection, they must be able to communicate with each other via SOAP calls in order to share information from the URLs to be redirected. At the time of delivery start-up, it is possible that not all the redirection servers will be available; therefore they might not have the same level of information.
+Werden mehrere Server für die Weiterleitung verwendet, müssen sie über SOAP-Aufrufe miteinander kommunizieren können, um Informationen über die zu umgeleitenden URLs freizugeben. Zum Zeitpunkt des Beginns des Versands sind möglicherweise nicht alle Umleitungsserver verfügbar; Sie verfügen daher möglicherweise nicht über den gleichen Informationsstand.
 
 >[!NOTE]
 >
->When using the standard or enterprise architecture, the main application server must be authorized to upload tracking information on each computer.
+>Bei Verwendung der Standard- oder Unternehmensarchitektur muss der Hauptanwendungsserver berechtigt sein, Verfolgungsinformationen auf jedem Computer hochzuladen.
 
-The URLs of the redundant servers must be specified in the redirection configuration, via the **serverConf.xml** file. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+Die URLs der redundanten Server müssen in der Umleitungskonfiguration über die Datei &quot; **serverConf.xml** &quot;angegeben werden. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
 **Beispiel:**
 
@@ -511,19 +508,19 @@ The URLs of the redundant servers must be specified in the redirection configura
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-The **enableIf** property is optional (empty by default) and allows you to enable the connection only if the result is true; This lets you obtain an identical configuration on all redirection servers.
+Die **enableIf** -Eigenschaft ist optional (standardmäßig leer) und ermöglicht es Ihnen, die Verbindung nur zu aktivieren, wenn das Ergebnis true lautet. Auf diese Weise erhalten Sie auf allen Umleitungsservern eine identische Konfiguration.
 
-To obtain the hostname of the computer, run the following command: **hostname -s**.
+Um den Hostnamen des Computers abzurufen, führen Sie den folgenden Befehl aus: **hostname -s**.
 
-## Managing public resources {#managing-public-resources}
+## Verwalten von öffentliche Ressourcen {#managing-public-resources}
 
-Public resources are presented in [Managing public resources](../../installation/using/deploying-an-instance.md#managing-public-resources).
+Öffentliche Ressourcen finden Sie unter [Verwalten von öffentliche Ressourcen](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
-They are stored in the **/var/res/instance** directory of the Adobe Campaign installation directory.
+Sie werden im Ordner **/var/res/instance** des Installationsordners des Adobe Campaigns gespeichert.
 
-The matching URL is: **http://server/res/instance** where **instance** is the name of the tracking instance.
+Die passende URL lautet: **http://server/res/instance** , wobei **instance** der Name der Verfolgungsinstanz ist.
 
-You can specify another directory by adding a node to the **conf-`<instance>`.xml** file to configure storage on the server. This means adding the following lines:
+Sie können einen anderen Ordner angeben, indem Sie der Datei &quot; **conf-`<instance>`.xml** &quot;einen Knoten hinzufügen, um die Datenspeicherung auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
 
 ```
 <serverconf>
@@ -536,21 +533,21 @@ You can specify another directory by adding a node to the **conf-`<instance>`.xm
 </serverconf>
 ```
 
-In this case, the new URL for the public resources given in the upper part of the window of the deployment wizard should point to this folder.
+In diesem Fall sollte die neue URL für die öffentliche Ressourcen im oberen Bereich des Bereitstellungsassistenten auf diesen Ordner verweisen.
 
-## High availability workflows and affinities {#high-availability-workflows-and-affinities}
+## Workflows und Affinitäten mit hoher Verfügbarkeit {#high-availability-workflows-and-affinities}
 
-You can configure several workflow servers (wfserver) and distribute them on two or more machines. If you choose this type of architecture, configure the connection mode of the load balancers according to the Adobe Campaign access.
+Sie können mehrere Workflow-Server (wfserver) konfigurieren und auf zwei oder mehr Computern verteilen. Wenn Sie diesen Architekturtyp auswählen, konfigurieren Sie den Verbindungsmodus der Lastenausgleicher entsprechend dem Adobe Campaign-Zugriff.
 
-For access from the web, select the **load balancer** mode to limit connection times.
+Wählen Sie für den Zugriff über das Internet den **Lastenausgleichsmodus** aus, um die Verbindungszeiten zu begrenzen.
 
-If accessing via the Adobe Campaign console, choose **hash** or **sticky ip** mode. This lets you maintain the connection between the rich client and the server and prevent a user session from being interrupted during an import or export operation, for example.
+Wählen Sie beim Zugriff über die Adobe Campaign-Konsole den **Hash** - oder **sticky** -IP-Modus. Auf diese Weise können Sie die Verbindung zwischen dem Rich-Client und dem Server aufrechterhalten und beispielsweise verhindern, dass eine Benutzersitzung während eines Import- oder Exportvorgangs unterbrochen wird.
 
-You can choose to force the execution of a workflow or a workflow activity on a particular machine. To do this, you must define one or more affinities for the concerned workflow or activity.
+Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf einem bestimmten Computer erzwingen. Dazu müssen Sie eine oder mehrere Affinitäten für den betreffenden Workflow oder die betreffende Aktivität definieren.
 
-1. Create the affinities of the workflow or activity by entering them in the **[!UICONTROL Affinity]** field.
+1. Erstellen Sie die Affinitäten des Workflows oder der Aktivität, indem Sie sie in das Feld &quot; **[!UICONTROL Affinität]** &quot;eingeben.
 
-   You can freely choose the affinity names. Nevertheless, make sure you do not use spaces or punctuation marks. Wenn Sie verschiedene Server verwenden, geben Sie unterschiedliche Namen an.
+   Sie können die Affinitäten frei wählen. Achten Sie jedoch darauf, keine Leerzeichen oder Satzzeichen zu verwenden. Wenn Sie verschiedene Server verwenden, geben Sie unterschiedliche Namen an.
 
    ![](assets/s_ncs_install_server_wf_affinity01.png)
 
@@ -558,7 +555,7 @@ You can choose to force the execution of a workflow or a workflow activity on a 
 
    Die Dropdown-Liste enthält zuvor verwendete Affinitäten. Es wird mit der Zeit mit den verschiedenen eingegebenen Werten abgeschlossen.
 
-1. Open the **nl6/conf/config-`<instance>.xml`**file.
+1. Öffnen Sie die **Datei &quot;nl6/conf/config-`<instance>.xml`** &quot;.
 1. Ändern Sie die Zeile, die mit dem **[!UICONTROL wfserver]** -Modul übereinstimmt, wie folgt:
 
    ```
@@ -571,9 +568,9 @@ You can choose to force the execution of a workflow or a workflow activity on a 
    <wfserver autoStart="true" affinity="XXX,YYY,"/>
    ```
 
-   The comma following the name of the affinity is necessary for the execution of workflows for which no affinity is defined.
+   Das Komma nach dem Namen der Affinität ist erforderlich, um Workflows auszuführen, für die keine Affinität definiert ist.
 
-   If you wish to execute only workflows for which an affinity is defined, do not add a comma at the end of the list of your affinities. For example, modify the line as follows:
+   Wenn Sie nur Workflows ausführen möchten, für die eine Affinität definiert ist, fügen Sie am Ende der Liste Ihrer Affinitäten kein Komma hinzu. Ändern Sie beispielsweise die Zeile wie folgt:
 
    ```
    <wfserver autoStart="true" affinity="XXX"/>
@@ -585,7 +582,7 @@ Standardmäßig werden die verschiedenen Adobe Campaign-Prozesse jeden Tag um 6 
 
 Sie können diese Konfiguration jedoch ändern.
 
-To do this, go to the **serverConf.xml** file, located in the **conf** repository of your installation. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Gehen Sie dazu zur Datei &quot; **serverConf.xml** &quot;im **conf** -Repository Ihrer Installation. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
 Jeder in dieser Datei konfigurierte Prozess verfügt über ein **processRestartTime** -Attribut. Sie können den Wert dieses Attributs ändern, um die Startzeit jedes Prozesses entsprechend Ihren Anforderungen anzupassen.
 
@@ -607,17 +604,17 @@ Beispiel: **uploadAllowList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen
 
 >[!IMPORTANT]
 >
->In Internet Explorer, the complete file path must be verified by the regular expression.
+>In Internet Explorer muss der vollständige Dateipfad vom regulären Ausdruck überprüft werden.
 
-## Proxy connection configuration {#proxy-connection-configuration}
+## Proxy-Verbindungskonfiguration {#proxy-connection-configuration}
 
-If you need to connect the Campaign server to the outside through a proxy (using a file transfer workflow activity for example), you need to configure the proxyConfig section of the serverConf via a command. Die folgenden Proxyverbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. All the parameters available in the **serverConf.xml** are listed in this [section](../../installation/using/the-server-configuration-file.md).
+Wenn Sie den Dateiserver über einen Proxy (z. B. mit einer Dateiübertragungs-Workflow-Aktivität) mit der Kampagne nach außen verbinden müssen, müssen Sie den Bereich &quot;proxyConfig&quot;des &quot;serverConf&quot;über einen Befehl konfigurieren. Die folgenden Proxyverbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
 >[!NOTE]
 >
->Starting 20.2, the HTTP and HTTPS protocol parameters are no longer available. The following information still mentions those parameters as they remain available to previous builds including 9032.
+>Ab 20.2 sind die HTTP- und HTTPS-Protokollparameter nicht mehr verfügbar. In den folgenden Informationen werden diese Parameter immer noch erwähnt, da sie für frühere Builds einschließlich 9032 weiterhin verfügbar sind.
 >
->SOCKS proxies are not supported.
+>SOCKS-Proxys werden nicht unterstützt.
 
 Verwenden Sie den folgenden Befehl:
 
@@ -625,9 +622,9 @@ Verwenden Sie den folgenden Befehl:
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
 ```
 
-protocol parameters can be ‘http’, ‘https’ or ‘ftp’.
+Protokollparameter können &quot;http&quot;, &quot;https&quot;oder &quot;ftp&quot;lauten.
 
-If you are setting FTP on the same port as HTTP/HTTPS traffic, you can use the following:
+Wenn Sie FTP für denselben Anschluss wie HTTP/HTTPS-Traffic festlegen, können Sie Folgendes verwenden:
 
 ```
 nlserver config -setproxy:http/198.51.100.0:8080/user
@@ -635,7 +632,7 @@ nlserver config -setproxy:http/198.51.100.0:8080/user
 
 Die Optionen &quot;http&quot;und &quot;https&quot;werden nur verwendet, wenn der Protokollparameter &quot;ftp&quot;ist, und geben an, ob das Tunneln am angegebenen Port über HTTPS oder über HTTP durchgeführt wird.
 
-If you use a different ports for FTP/SFTP and HTTP/HTTPS traffic over proxy server, you should set the ‘ftp’ protocol parameter.
+Wenn Sie verschiedene Anschlüsse für FTP/SFTP und HTTP/HTTPS-Datenverkehr über den Proxyserver verwenden, sollten Sie den FTP-Protokollparameter festlegen.
 
 
 Beispiel:
@@ -646,7 +643,7 @@ nlserver config -setproxy:ftp/198.51.100.0:8080/user:’http’
 
 Geben Sie dann das Kennwort ein.
 
-HTTP connections are defined in the proxyHTTP parameter:
+HTTP-Verbindungen werden im Parameter proxyHTTP definiert:
 
 ```
 <proxyConfig enabled=“1” override=“localhost*” useSingleProxy=“0”>
@@ -654,7 +651,7 @@ HTTP connections are defined in the proxyHTTP parameter:
 </proxyConfig>
 ```
 
-HTTPS connections are defined in the proxyHTTPS parameter:
+HTTPS-Verbindungen werden im Parameter proxyHTTPS definiert:
 
 ```
 <proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
@@ -662,7 +659,7 @@ HTTPS connections are defined in the proxyHTTPS parameter:
 </proxyConfig>
 ```
 
-FTP/FTPS connections are defined in the proxyFTP parameter:
+FTP-/FTPS-Verbindungen werden im Parameter proxyFTP definiert:
 
 ```
 <proxyConfig enabled=“1" override=“localhost*” useSingleProxy=“0">
@@ -672,6 +669,6 @@ FTP/FTPS connections are defined in the proxyFTP parameter:
 
 Wenn Sie denselben Proxy für mehrere Verbindungstypen verwenden, wird nur das proxyHTTP mit useSingleProxy auf &quot;1&quot;oder &quot;true&quot;festgelegt.
 
-If you have internal connections that should go through the proxy, add them in the override parameter.
+Wenn Sie interne Verbindungen haben, die durch den Proxy gehen sollen, fügen Sie sie im Parameter override hinzu.
 
-If you want to tempararily disable the proxy connection, set the enabled parameter to &quot;false&quot; or &quot;0&quot;.
+Wenn Sie die Proxyverbindung vorübergehend deaktivieren möchten, setzen Sie den Parameter enabled auf &quot;false&quot;oder &quot;0&quot;.
