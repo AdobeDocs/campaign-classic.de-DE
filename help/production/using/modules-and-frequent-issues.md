@@ -11,18 +11,18 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: a44f5e71-3f9b-4d02-8b7a-a9782bb6bdd8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 7%
 
 ---
 
 
 # Module und häufige Probleme{#modules-and-frequent-issues}
 
-Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betroffen sind:
+Im Folgenden finden Sie eine Liste von Modulen, die von häufigen Problemen betroffen sind:
 
 <table> 
  <thead> 
@@ -39,7 +39,7 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
    <td> Der Operator, der diesen Export geplant hat, muss ihn erneut starten. Entweder Delta oder vollständige Neustart.<br /> </td> 
   </tr> 
   <tr> 
-   <td> import </td> 
+   <td> importieren </td> 
    <td> Ausführung eines Importvorgangs<br /> </td> 
    <td> Der Operator, der diesen Export geplant hat, muss ihn erneut starten. Überprüfen Sie die Datenbank auf Duplikate.<br /> </td> 
   </tr> 
@@ -61,22 +61,22 @@ Im Folgenden finden Sie eine Liste der Module, die von häufigen Problemen betro
   <tr> 
    <td> syslogd </td> 
    <td> Schreiben von Protokollen<br /> </td> 
-   <td> Wenn einige Protokolle in den Protokolldateien fehlen, überprüfen Sie, ob das Modul Port 6666 verwendet. Siehe <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Liste der geöffneten Anschlüsse</a>.<br /> </td> 
+   <td> Wenn einige Protokolle in den Protokolldateien fehlen, überprüfen Sie, ob das Modul Port 6666 verwendet. Siehe <a href="../../production/using/general-architecture.md#list-of-open-ports" target="_blank">Liste offener Anschlüsse</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> tracking </td> 
-   <td> Konsolidieren und Abrufen von Verfolgungsprotokollen<br /> </td> 
-   <td> Überprüfen Sie dieses Modul, wenn keine Verfolgungsprotokolle mehr weitergeleitet werden.<br /> </td> 
+   <td> Konsolidieren und Abrufen von Trackinglogs<br /> </td> 
+   <td> Überprüfen Sie dieses Modul, wenn keine Trackinglogs mehr weitergeleitet werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> trackinglogd </td> 
    <td> Verfolgen des Schreibens und Bereinigen von Protokollen<br /> </td> 
-   <td> Überprüfen Sie dieses Modul, wenn Verfolgungsprotokolle nicht mehr weitergeleitet werden und es keine Protokollspuren in den Dateien auf dem Server gibt. Weitere Informationen finden Sie unter Probleme mit <a href="../../production/using/tracking-logs-issues.md" target="_blank">Trackingprotokollen</a>.<br /> </td> 
+   <td> Überprüfen Sie dieses Modul, wenn Trackinglogs nicht mehr weitergeleitet werden und keine Protokollspuren in den Dateien auf dem Server vorhanden sind. Weitere Informationen finden Sie unter <a href="../../production/using/tracking-logs-issues.md" target="_blank">Trackinglogs</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> watchdog </td> 
    <td> Start- und Überwachungsinstanz<br /> </td> 
-   <td> Überprüfen Sie dieses Modul, wenn keine Prozesse starten.<br /> </td> 
+   <td> Überprüfen Sie dieses Modul, wenn kein Process Beginn vorhanden ist.<br /> </td> 
   </tr> 
   <tr> 
    <td> web </td> 
