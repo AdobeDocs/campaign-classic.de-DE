@@ -11,11 +11,11 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 discoiquuid: 8e52f927-dadd-44c8-a51d-f717bc083eef
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 36beb1eca48c698634c7548e0f931ab3fe17c021
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '416'
+ht-degree: 100%
 
 ---
 
@@ -42,6 +42,7 @@ Die wichtigsten Verbesserungen in dieser Version sind:
    * **Konvertierungsrate**: Anzahl der Personen, die alle Schritte eines Vorgangs durchlaufen haben.
    * **Bounce-Rate**: Anzahl der Personen, für die nur der erste Schritt angezeigt wurde.
    * **Konvertierungstunnel:** Verlustrate von einem Schritt zum nächsten.
+
    Zusätzlich wird in einer **Sektorgrafik** die Population entsprechend ihrer Herkunft dargestellt.
 
 ## Traffic-Herkunft identifizieren {#identifying-the-traffic-source}
