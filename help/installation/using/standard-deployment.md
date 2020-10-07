@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 discoiquuid: d714b759-cc08-4656-876c-9820d5c56216
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 2%
 
 ---
 
@@ -24,14 +24,14 @@ source-git-commit: 707352334144df86ae82aa51d595ae6bc751d1f2
 
 Für diese Konfiguration sind drei Computer erforderlich:
 
-* Ein Anwendungsserver im LAN für die Endbenutzer (Vorbereitung von Kampagnen, Berichterstellung usw.),
+* Ein Anwendungsserver im LAN für die Endbenutzer (Vorbereitung von Kampagnen, Berichte usw.),
 * Zwei frontale Server in der DMZ hinter einem Lastenausgleich.
 
-Die beiden Server im DMZ verarbeiten Tracking, Spiegelseiten und Auslieferung und sind für hohe Verfügbarkeit redundant.
+Die beiden Server in der DMZ verarbeiten Tracking, Mirrorseiten und Versand und sind für hohe Verfügbarkeit redundant.
 
 Der Anwendungsserver im LAN dient den Endbenutzern und führt alle wiederkehrenden Prozesse (Workflow-Engine) durch. Wenn also Spitzenlasten auf den Frontservern erreicht werden, sind die Anwendungsbenutzer nicht betroffen.
 
-Der Datenbankserver kann auf einem anderen Computer als diesen drei gehostet werden. Andernfalls ist es Sache des Anwendungsservers und des Datenbankservers, denselben Computer im LAN freizugeben, solange das Betriebssystem von Adobe Campaign (Linux oder Windows) unterstützt wird.
+Der Datenbankserver kann auf einem anderen Computer als diesen drei gehostet werden. Andernfalls ist es für den Anwendungsserver und den Datenbankserver erforderlich, denselben Computer im LAN freizugeben, solange das Betriebssystem von Adobe Campaign (Linux oder Windows) unterstützt wird.
 
 Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem folgenden Schema:
 
@@ -46,7 +46,7 @@ Diese Konfiguration kann eine große Anzahl von Empfängern (500.000 bis 1.000.0
 * Failover-Funktion: die Möglichkeit, Prozesse bei Hardwareproblemen auf einem anderen Computer zu wechseln.
 * Bessere Gesamtleistung, da die MTA- und Umleitungsfunktionen auf beiden Computern hinter einem Lastenausgleich bereitgestellt werden können. Mit zwei aktiven MTAs und ausreichender Bandbreite ist es möglich, Übertragungsraten von etwa 100.000 Mails pro Stunde zu erreichen.
 
-## Installation und Konfigurationsschritte {#installation-and-configuration-steps}
+## Installationsschritte und Konfigurationsschritte {#installation-and-configuration-steps}
 
 ### Voraussetzungen {#prerequisites}
 
@@ -56,23 +56,23 @@ Diese Konfiguration kann eine große Anzahl von Empfängern (500.000 bis 1.000.0
 * Absprungkasten, der über POP3 erreichbar ist,
 * Erstellung von zwei DNS-Aliasen:
 
-   * die erste, die der Öffentlichkeit zur Verfolgung und zum Verweis auf den Lastenausgleich an einer virtuellen IP-Adresse (VIP) zur Verfügung gestellt wird und die dann an die beiden Frontserver verteilt wird,
+   * die erste öffentlich zugänglich gemacht wird, um den Lastenausgleich zu verfolgen und auf eine virtuelle IP-Adresse (VIP) zu verweisen, und die dann an die beiden Frontserver verteilt wird,
    * die zweite Instanz, die internen Benutzern für den Zugriff über die Konsole zur Verfügung steht und auf denselben Anwendungsserver zeigt.
 
 * Firewall zum Öffnen von STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) Ports. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).
 
 ### Anwendungsserver installieren {#installing-the-application-server}
 
-Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver bis zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe [Installieren und Konfigurieren (Einzelcomputer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
+Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver bis zur Erstellung der Datenbank zu installieren (Schritt 12). Weitere Informationen finden Sie unter [Installieren und Konfigurieren (Einzelcomputer)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
 Da der Computer kein Tracking-Server ist, sollten Sie die Integration mit dem Webserver nicht berücksichtigen.
 
 In den folgenden Beispielen sind die Parameter der Instanz:
 
-* Name der Instanz: **Demo**
-* DNS-Maske: **console.campaign.net*** (nur für Client-Konsolenverbindungen und für Berichte)
+* Name der Instanz: **demo**
+* DNS-Maske: **console.Kampagne.net*** (nur für Client-Konsolenverbindungen und für Berichte)
 * Sprache: englisch
-* Datenbank: **Kampagne:demo@dbsrv**
+* Datenbank: **kampagne:demo@dbsrv**
 
 ### Installieren der beiden Frontserver {#installing-the-two-frontal-servers}
 
@@ -82,14 +82,14 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Installieren Sie den Adobe Campaign-Server.
 
-   Weitere Informationen finden Sie unter [Voraussetzungen für die Campaign-Installation unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Campaign-Installation unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
+   Weitere Informationen dazu finden Sie unter [Voraussetzungen für die Installation der Kampagne unter Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md) (Linux) und [Voraussetzungen für die Kampagne unter Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) (Windows).
 
 1. Folgen Sie dem Webserver-Integrationsverfahren (IIS, Apache), das in den folgenden Abschnitten beschrieben wird:
 
-   * Für Linux: Integration [in einen Webserver für Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
-   * Windows: Integration [in einen Webserver für Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
+   * For Linux: [Integration into a Web server for Linux](../../installation/using/integration-into-a-web-server-for-linux.md)
+   * For Windows: [Integration into a Web server for Windows](../../installation/using/integration-into-a-web-server-for-windows.md)
 
-1. Erstellen Sie die **Demo** -Instanz. Es gibt zwei Möglichkeiten:
+1. Erstellen Sie die **Demo** -Instanz. Es gibt zwei Möglichkeiten, dies zu tun:
 
    * Erstellen Sie die Instanz über die Konsole:
 
@@ -97,7 +97,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
       Weitere Informationen finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      or
+      oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
@@ -108,7 +108,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
       For more on this, refer to [Creating an instance](../../installation/using/command-lines.md#creating-an-instance).
    Der Name der Instanz ist identisch mit dem des Anwendungsservers.
 
-   Die Verbindung zum Server mit dem **nlserver-Web** -Modul (Spiegelseiten, Abmeldung) erfolgt über die URL des Lastenausgleichs (tracking.campaign.net).
+   Die Serververbindung mit dem **nlserver-Webmodul** (Mirrorseiten, Abmeldung) erfolgt über die URL des Lastenausgleichers (tracking.Kampagne.net).
 
 1. Ändern Sie die **interne** Einstellung auf die Einstellung des Anwendungsservers.
 
@@ -147,7 +147,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
       For more on this, refer to [Redundant tracking](../../installation/using/configuring-campaign-server.md#redundant-tracking).
 
-1. Starten Sie die Website und testen Sie die Umleitung von der URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
+1. Beginn der Website und Testen der Umleitung von der URL: [https://tracking.campaign.net/r/test](https://tracking.campaign.net/r/test).
 
    Der Browser sollte die folgenden Meldungen anzeigen (je nach URL, die vom Lastenausgleich umgeleitet wird):
 
@@ -155,7 +155,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv1"/>
    ```
 
-   or
+   oder
 
    ```
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
@@ -163,13 +163,13 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-   * Für Linux: Webserver [starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
-   * Windows: Webserver [starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
+   * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
+   * Windows: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
 
-1. Starten Sie den Adobe Campaign-Server.
+1. Beginn des Adobe Campaign-Servers.
 1. Stellen Sie in der Adobe Campaign-Konsole eine Verbindung mit der **Administratoranmeldung** ohne Kennwort her und starten Sie den Bereitstellungsassistenten.
 
-   Weitere Informationen finden Sie unter [Bereitstellen einer Instanz](../../installation/using/deploying-an-instance.md).
+   For more on this, refer to [Deploying an instance](../../installation/using/deploying-an-instance.md).
 
    Die Konfiguration ist mit einer eigenständigen Instanz identisch, abgesehen von der Konfiguration des Verfolgungsmoduls.
 
