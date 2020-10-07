@@ -11,11 +11,11 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '412'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 >[!NOTE]
 >
->In diesem Dokument werden die mit der Datenbank verknüpften Befehle als Beispiel aufgeführt. Diese können je nach Konfiguration variieren. Wenden Sie sich an Ihren Datenbankadministrator.
+>In diesem Dokument werden die mit der Datenbank verknüpften Befehle als Beispiel genannt. Diese können je nach Konfiguration variieren. Wenden Sie sich an Ihren Datenbankadministrator.
 
 ## Warnhinweise {#warnings}
 
@@ -32,7 +32,7 @@ source-git-commit: 9f7cf3d530f141a661df5fcc8cbcf0bb4c8d3e89
 
 Vor der Migration sollten Sie den neuesten Build der aktuellen Version installieren, die Sie verwenden.
 
-Überprüfen Sie die Version auf Ihrem Server, indem Sie das **[!UICONTROL Help> About]** Menü auf der Client-Konsole mit dem **nlserver-Befehl pdump** aufrufen.
+Überprüfen Sie die Version auf Ihrem Server, indem Sie das Menü **[!UICONTROL Hilfe > Info]** auf der Client-Konsole mit dem **nlserver-Befehl pdump** aufrufen.
 
 ### Datensicherung {#data-backup}
 
@@ -41,15 +41,15 @@ Bevor Sie einen Migrationsprozess starten, **müssen** Sie Ihre Daten sichern.
 ### Umgebung {#environment}
 
 * Es ist nicht möglich, den Datenbankmodultyp (DBMS) zu ändern. Sie können beispielsweise nicht von einer PostgreSQL-Engine zu einer Oracle-Engine wechseln. Sie können jedoch von einer Oracle 8-Engine auf eine Oracle 10-Engine umstellen.
-* Es ist nicht möglich, von einer Unicode-Datenbank zu einer Unicode-Datenbank zu wechseln.
+* Es ist nicht möglich, von einer Nicht-Unicode-Datenbank zu einer Unicode-Datenbank zu wechseln.
 
 ### Empfehlung {#recommendation}
 
-Da der Migrationsvorgang besonders sensibel ist, empfehlen wir dringend, dieses Dokument gründlich zu lesen, bevor das Verfahren eingeleitet wird.
+Da der Migrationsvorgang besonders sensibel ist, empfehlen wir dringend, dieses Dokument vor dem Beginn des Verfahrens gründlich zu lesen.
 
 ## Migrationsschritte {#migration-steps}
 
-Das Migrationsverfahren muss auf **allen** Servern in einer bestimmten Reihenfolge durchgeführt werden.
+Das Migrationsverfahren muss auf **allen** Servern und in einer bestimmten Reihenfolge durchgeführt werden.
 
 * Bei einer **eigenständigen Plattform** (Einzelmaschinenmodus) wird die Anwendung vollständig migriert.
 * Bei einer **Standardplattform** (Unternehmen) werden die folgenden Migrationsschritte ausgeführt:
@@ -58,7 +58,7 @@ Das Migrationsverfahren muss auf **allen** Servern in einer bestimmten Reihenfol
    1. Migrieren Sie den Mail-Server (mta).
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
 
-* Bei einer **Cloud Messaging-Plattform** werden die Ausführungsserver bei Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
+* Bei einer **Cloud Messaging-Plattform** werden die Ausführungsserver im Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
 * Bei einer **Power Booster- oder Power Cluster-Plattform** werden die folgenden Migrationsschritte ausgeführt:
 
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
@@ -71,7 +71,7 @@ Das Migrationsverfahren muss auf **allen** Servern in einer bestimmten Reihenfol
 
 ## Benutzerkennwörter {#user-passwords}
 
-In v7 muss die **interne** Verbindung mit dem **Operator** mit einem Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Betreiberkonten **vor der Migration** Passwörter zuzuweisen. Wenn Sie kein Kennwort für **intern** angegeben haben, können Sie keine Verbindung herstellen. Geben Sie den folgenden Befehl ein, um ein Kennwort **intern** zuzuweisen:
+In v7 muss die **interne** Verbindung mit dem **Operator** mit einem Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Operatorkonten **vor der Migration** Passwörter zuzuweisen. Wenn Sie kein Kennwort für **intern** angegeben haben, können Sie keine Verbindung herstellen. Geben Sie den folgenden Befehl ein, um ein Kennwort **intern** zuzuweisen:
 
 ```
 nlserver config -internalpassword
