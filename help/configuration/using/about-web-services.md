@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 65919173-3ce0-4d98-936b-f4581df536ae
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: bc54cef4c44be4c694e062f56685dbb09d2fcf8e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 5%
@@ -41,19 +38,19 @@ Adobe Campaign-APIs werden in JavaScript innerhalb der Anwendung und in SOAP au�
 Bevor Sie die Adobe Campaign-APIs verwenden, müssen Sie sich mit den folgenden Themen vertraut machen:
 
 * Javascript
-* SOAP protocol
+* SOAP-Protokoll
 * Adobe Campaign datamodel
 
 ## Using Adobe Campaign APIs {#using-adobe-campaign-apis}
 
 Adobe Campaign verwendet zwei API-Typen:
 
-* Generic data acces APIs for querying the datamodel data. Refer to [Data oriented APIs](../../configuration/using/data-oriented-apis.md).
-* Business specific APIs that let you act on each object: deliveries, workflows, subscriptions, etc. Refer to [Business oriented APIs](../../configuration/using/business-oriented-apis.md).
+* Generische Daten greifen auf APIs zum Abfragen der Datenmodelldaten zu. Siehe [datenorientierte APIs](../../configuration/using/data-oriented-apis.md).
+* Geschäftsspezifische APIs, mit denen Sie für jedes Objekt handeln können: versand, Workflows, Abonnements usw. Siehe [Geschäftsorientierte APIs](../../configuration/using/business-oriented-apis.md).
 
-In order to develop APIs and interact with Adobe Campaign, you need to be familiar with your datamodel. Adobe Campaign lets you generate a complete description of the base. Refer to [Description of the model](../../configuration/using/data-oriented-apis.md#description-of-the-model).
+Um APIs zu entwickeln und mit Adobe Campaign zu interagieren, müssen Sie mit Ihrem Datenmodell vertraut sein. Mit Adobe Campaign können Sie eine vollständige Beschreibung der Basis erstellen. Siehe [Beschreibung des Modells](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
-## SOAP calls {#soap-calls}
+## SOAP-Aufrufe {#soap-calls}
 
 Mit dem SOAP-Protokoll können Sie API-Methoden über den Rich-Client, Drittanbieteranwendungen, die Webdienste verwenden, oder JSP mit diesen Methoden nativ aufrufen.
 
@@ -61,14 +58,14 @@ Mit dem SOAP-Protokoll können Sie API-Methoden über den Rich-Client, Drittanbi
 
 Die Struktur einer SOAP-Nachricht lautet wie folgt:
 
-* an envelope which defines the structure of the message,
-* an optional header,
-* a body containing the information about the call and the response,
-* error management that defines the error condition.
+* einen Umschlag, der die Struktur der Nachricht definiert,
+* eine optionale Kopfzeile,
+* eine Stelle, die Informationen über den Aufruf und die Antwort enthält,
+* Fehlerverwaltung, die die Fehlerbedingung definiert.
 
 ## Ressourcen und Austausch {#resources-and-exchanges}
 
-The following schema shows the various resources involved in the use of Adobe Campaign APIs:
+Das folgende Schema zeigt die verschiedenen Ressourcen, die für die Verwendung von Adobe Campaign-APIs erforderlich sind:
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
@@ -145,11 +142,11 @@ ODBC error: [Microsoft][ODBC SQL Server Driver][SQL Server]The statement has bee
 
 Das `<soap-env:fault>` Element im Textkörper der SOAP-Meldung wird verwendet, um die Fehlersignale zu vermitteln, die bei der Verarbeitung des Webdiensts auftreten. Dies setzt sich aus den folgenden Unterelementen zusammen:
 
-* `<faultcode>` : indicates the type of error. Die Fehlertypen sind:
+* `<faultcode>` : gibt den Fehlertyp an. Die Fehlertypen sind:
 
    * &quot;VersionMismatch&quot;im Ereignis der Inkompatibilität mit der verwendeten SOAP-Version,
    * &quot;MustUnderstand&quot;im Ereignis eines Problems in der Kopfzeile der Nachricht,
-   * &quot;Client&quot;in dem Ereignis, dass dem Kunden einige Informationen fehlen,
+   * &quot;Client&quot;in dem Ereignis, dass dem Client einige Informationen fehlen,
    * &quot;Server&quot;im Ereignis, dass der Server ein Problem bei der Ausführung der Verarbeitung hat.
 
 * `<faultstring>` : Meldung, die den Fehler beschreibt
