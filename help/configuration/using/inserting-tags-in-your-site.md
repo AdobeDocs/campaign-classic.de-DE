@@ -1,7 +1,7 @@
 ---
-title: Tags in Ihre Site einfügen
-seo-title: Tags in Ihre Site einfügen
-description: Tags in Ihre Site einfügen
+title: Einfügen von Tags in Ihre Site
+seo-title: Einfügen von Tags in Ihre Site
+description: Einfügen von Tags in Ihre Site
 seo-description: null
 page-status-flag: never-activated
 uuid: e5e4a431-2093-4d5a-acd2-0040b6ce3519
@@ -11,16 +11,16 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 discoiquuid: 57988b00-62cc-43d3-a2eb-bfed5bff7dc1
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '324'
+ht-degree: 6%
 
 ---
 
 
-# Tags in Ihre Site einfügen{#inserting-tags-in-your-site}
+# Einfügen von Tags in Ihre Site{#inserting-tags-in-your-site}
 
 ## Einfache Methode {#simple-method}
 
@@ -28,7 +28,7 @@ Diese Methode besteht darin, einen HTTP-Aufruf an den Umleitungsserver zu senden
 
 >[!IMPORTANT]
 >
->Diese Methode verwendet die vom Webbrowser gesendeten Cookies zur Identifizierung des Empfängers und ist nicht zu 100 % zuverlässig.
+>Diese Methode verwendet die vom Webbrowser gesendeten Cookies zur Identifizierung des Empfängers und ist nicht hundertprozentig zuverlässig.
 
 **Beispiel**:
 
@@ -40,15 +40,15 @@ Das eingefügte Tag kontaktiert den Weiterleitungsserver.
 
 ![](assets/d_ncs_integration_webtracking_structure2.png)
 
-Wenn Sie eine Seite definieren, die in der Konsole verfolgt werden soll, können Sie ein Beispiel-Web-Tracking-Tag generieren, das kopiert und in den Quellcode Ihrer Webseite eingefügt wird.
+Wenn Sie eine Seite definieren, die in der Konsole verfolgt werden soll, können Sie einen Beispiel-Web-Trackingtag generieren, der kopiert und in den Quellcode Ihrer Webseite eingefügt wird.
 
-Wenn Sie TRANSACTION-Tags verwenden, müssen Sie das Beispiel-Tag jedoch mit JavaScript ändern, um die Transaktionsinformationen (Menge, Anzahl der Elemente) und alle durch ein Erweiterungsschema definierten Informationen einzufügen.
+Wenn Sie TRANSACTION-Tags verwenden, müssen Sie das Beispiel-Tag jedoch mit JavaScript ändern, um die Transaktionsinformationen (Anzahl, Anzahl der Elemente) und alle von einem Erweiterungsschema definierten Informationen einzufügen.
 
-### Statisches Einfügen von Tags {#static-insertion-of-tags}
+### Statische Einfügung von Tags {#static-insertion-of-tags}
 
 Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole erzeugten oder manuell erstellten Tags in die Quelle Ihrer Webseite.
 
-**Beispiel**: Einfügen eines Web-Tracking-Tags auf einer Seite, auf der ein Formular angezeigt wird.
+**Beispiel**: Einfügen eines Web-Trackingtags auf einer Seite, auf der ein Formular angezeigt wird.
 
 ```
 <html>
@@ -70,7 +70,7 @@ Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole erzeugte
 </html>
 ```
 
-Einfügen eines TRANSACTION-artigen Web-Tracking-Tags in die Bestätigungsseite (&quot;amount.md&quot;).
+Einfügen eines TRANSACTION-Trackingtags in die Bestätigungsseite (&quot;amount.md&quot;).
 
 ```
 <html>
@@ -92,11 +92,11 @@ Einfügen eines TRANSACTION-artigen Web-Tracking-Tags in die Bestätigungsseite 
 </html>
 ```
 
-### Dynamische Erstellung von Web-Tracking-Tags {#dynamic-generation-of-web-tracking-tags}
+### Dynamische Erstellung von Web-Trackingtagen {#dynamic-generation-of-web-tracking-tags}
 
-Wenn Ihre Webseiten dynamisch generiert werden, können Sie das Web-Tracking-Tag zur Seitengenerierung hinzufügen.
+Wenn Ihre Webseiten dynamisch generiert werden, können Sie den Web-Trackingtag zur Seitengenerierung hinzufügen.
 
-**Beispiel**: Zu JSPs hinzugefügte Webverfolgung.
+**Beispiel**: Webtracking zu JSPs hinzugefügt.
 
 ```
 <%@page import="java.util.Random" %>
@@ -133,7 +133,7 @@ Wenn Ihre Webseiten dynamisch generiert werden, können Sie das Web-Tracking-Tag
 
 Wenn Sie die an den Umleitungsserver gesendeten Informationen steuern möchten, ist die zuverlässigste Möglichkeit, die HTTP-Abfrage selbst synchron mit einer Seitenerstellungssprache durchzuführen.
 
-Die URL, die Sie erstellen, muss den im [Web-Tracking-Tag definierten Syntaxregeln entsprechen: Definition](../../configuration/using/web-tracking-tag--definition.md).
+Die URL, die Sie erstellen, muss den in [Webtrackingtag definierten Syntaxregeln entsprechen: Definition](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
