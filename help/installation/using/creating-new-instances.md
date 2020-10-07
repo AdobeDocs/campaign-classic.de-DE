@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 discoiquuid: ba9c8e4c-441b-4422-a465-758771025ee8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 20f835c357d016643ea1f3209ee4dfb6d3239f90
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 13%
 
 ---
 
@@ -28,7 +28,7 @@ Melden Sie sich hierzu bei einer vorhandenen Datenbank an und führen Sie die fo
 
 1. Eine neue Instanz deklarieren
 
-   Gehen Sie **[!UICONTROL Tools > Advanced > Declare a new instance...]** zum Starten des Assistenten.
+   Gehen Sie zu **[!UICONTROL Tools > Erweitert > Eine neue Instanz deklarieren...]** zum Beginn des Assistenten.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
