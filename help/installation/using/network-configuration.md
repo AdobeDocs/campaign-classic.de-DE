@@ -11,11 +11,11 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 639d2f42-e397-4694-942c-b2b8ad94ce9c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 46f5bfb41bfe9c938ac0ffa767ead3e47a32047d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 6%
 
 ---
 
@@ -28,9 +28,9 @@ Bestimmte Prozesse der Anwendung müssen mit anderen kommunizieren oder auf LAN 
 
 Verwenden Sie den eingebetteten Apache Tomcat-Anschluss als Priorität (standardmäßig 8080) für die interne Kommunikation zwischen den verschiedenen Anwendungsservern einer Adobe Campaign-Plattform.
 
-### Auslieferungsserver {#delivery-server}
+### Versand-Server {#delivery-server}
 
-Für den Bereitstellungsserver (**nlserver-Metadaten**) müssen die folgenden Anschlüsse geöffnet sein:
+Für den Versand-Server (**nlserver-Metadaten**) müssen die folgenden Anschlüsse geöffnet sein:
 
 <table> 
  <tbody> 
@@ -86,7 +86,7 @@ Für den Inbound Mail Recovery-Prozess (**nlserver inMail**) müssen die folgend
  </tbody> 
 </table>
 
-### Application server {#application-server}
+### Anwendungs-Server {#application-server}
 
 Für den Anwendungsserver (**nlserver web**) müssen die folgenden Anschlüsse geöffnet sein:
 
@@ -100,16 +100,16 @@ Für den Anwendungsserver (**nlserver web**) müssen die folgenden Anschlüsse g
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> HTTP- oder HTTPS-Traffic (einschließlich des Bereitstellungsangebots).<br /> </td> 
+   <td> HTTP- oder HTTPS-Traffic (einschließlich für das Angebot der Zustellbarkeit).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 Wenn mehrere Anwendungsserver einer Adobe Campaign-Plattform miteinander kommunizieren müssen, empfehlen wir die Verwendung des Apache Tomcat-Servers (standardmäßig: 8080) und nicht der HTTP-Anschluss des Webservers, mit dem die Integration von Umleitungsmodulen durchgeführt wurde. Dies bedeutet, dass der Anschluss zwischen diesen Servern geöffnet sein muss.
 
-### Status der SMS-Zustellung {#sms-delivery-status}
+### Status des SMS-Versands {#sms-delivery-status}
 
-Zur Verfolgung von SMS-Auslieferungen (**nlserver sms**) muss der folgende Anschluss geöffnet sein:
+Zur Verfolgung von SMS-Versänden (**nlserver sms**) muss der folgende Port geöffnet sein:
 
 <table> 
  <tbody> 
@@ -121,14 +121,14 @@ Zur Verfolgung von SMS-Auslieferungen (**nlserver sms**) muss der folgende Ansch
   <tr> 
    <td> 38000/tcp (Standardanschluss)<br /> </td> 
    <td> SMS-Gateway<br /> </td> 
-   <td> Sucht den Status der Bereitstellungswarteschlange, der vom NetSize SMS Gateway verwaltet wird [Option].<br /> </td> 
+   <td> Abfrage des Status der Warteschlange des Versands, der vom NetSize SMS Gateway verwaltet wird [Option].<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### Rich-Client {#rich-client}
 
-Für den Rich-Client von Adobe Campaign (**nlclient**) müssen die folgenden Anschlüsse geöffnet sein:
+Für den Rich-Client des Adobe Campaigns (**nlclient**) müssen die folgenden Anschlüsse geöffnet sein:
 
 <table> 
  <tbody> 
@@ -139,7 +139,7 @@ Für den Rich-Client von Adobe Campaign (**nlclient**) müssen die folgenden Ans
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p>443/tcp (https)</p><br /> </td> 
-   <td> Application server<br /> </td> 
+   <td> Anwendungs-Server<br /> </td> 
    <td> SOAP-Traffic (HTTP).<br /> </td> 
   </tr> 
  </tbody> 
@@ -180,7 +180,7 @@ Die Standardanschlüsse lauten wie folgt:
 
 ## Externer Zugriff {#external-access}
 
-Darüber hinaus müssen bestimmte Komponenten über das öffentliche Internet zugänglich sein, damit E-Mail-Kampagnen, die direkt von Adobe Campaign ausgeführt werden, angezeigt werden können. Dies bedeutet, dass einige Anschlüsse für Komponenten offen sein müssen.
+Darüber hinaus müssen bestimmte Komponenten über das öffentliche Internet zugänglich sein, damit E-Mail-Kampagnen, die direkt aus Adobe Campaign ausgeführt werden, angezeigt werden können. Dies bedeutet, dass einige Anschlüsse für Komponenten offen sein müssen.
 
 ### Weiterleitungsserver {#redirection-server}
 
@@ -199,7 +199,7 @@ Darüber hinaus müssen bestimmte Komponenten über das öffentliche Internet zu
 
 ### Externer Webserver {#external-web-server}
 
-Dieser Server hostet Webformulare, Spiegelseiten usw. Die folgenden Anschlüsse müssen geöffnet sein:
+Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Anschlüsse müssen geöffnet sein:
 
 <table> 
  <tbody> 
@@ -209,7 +209,7 @@ Dieser Server hostet Webformulare, Spiegelseiten usw. Die folgenden Anschlüsse 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Überall. Erforderlich, wenn Webformulare direkt von der Adobe Campaign-Plattform verwaltet werden oder wenn Spiegelseiten verwendet werden.<br /> </td> 
+   <td> Überall. Erforderlich, wenn Webformulare direkt von der Adobe Campaign-Plattform verwaltet werden oder wenn Mirrorseiten verwendet werden.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -231,7 +231,7 @@ Dieser Server hostet Webformulare, Spiegelseiten usw. Die folgenden Anschlüsse 
 
 ## Integration mit Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Zur Integration zwischen Adobe Campaign und Adobe Experience Manager müssen mehrere Anschlüsse geöffnet werden, wenn die Installation &quot;lokal&quot;erfolgt. For more information on configuring this integration, refer to the [detailed documentation](../../integrations/using/about-adobe-experience-manager.md).
+Die Integration zwischen Adobe Campaign und Adobe Experience Manager erfordert das Öffnen mehrerer Anschlüsse, wenn die Installation &quot;lokal&quot;erfolgt. For more information on configuring this integration, refer to the [detailed documentation](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -241,11 +241,11 @@ Zur Integration zwischen Adobe Campaign und Adobe Experience Manager müssen meh
   </tr> 
   <tr> 
    <td> 80<br /> </td> 
-   <td> AEM-Verbindung mit Adobe Campaign<br /> </td> 
+   <td> AEM Verbindung mit Adobe Campaign<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Verbindung von Adobe Campaign mit den Instanzen "Authoring"und "Veröffentlichung"von AEM. Die zu öffnenden Anschlüsse unterscheiden sich je nach AEM-Konfiguration möglicherweise von den Standardanschlüssen.<br /> </td> 
+   <td> Adobe Campaign-Verbindung zu AEM Instanzen "Authoring"und "Publishing". Die zu öffnenden Anschlüsse unterscheiden sich je nach AEM Konfiguration möglicherweise von den Standardanschlüssen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -254,7 +254,7 @@ Zur Integration zwischen Adobe Campaign und Adobe Experience Manager müssen meh
 
 Ein weiterer wichtiger Parameter der Netzwerkkonfiguration, der berücksichtigt werden muss. Es ist fast immer ausgehende und viel in der Nachfrage während E-Mail-Sendungen. Nachfolgend sind einige Beispiele für Konfigurationen aufgeführt, die auf unserer Erfahrung basieren:
 
-* 1 MB/s für 10.000 E-Mails pro Stunde (durchschnittliche Größe 30 KB)
+* 1 MB/s für 10.000 E-Mails pro Stunde (durchschnittliche Größe 30 Kb)
 * 8 bis 10 Mb/s für 100.000 E-Mails pro Stunde (durchschnittliche Größe 30 Kb)
 
-Wenn Sie Beschränkungen hinsichtlich der Bandbreite haben, ist es möglich, Kampagnen so zu planen, dass sie in der Nacht ausgeführt werden, wenn die Nachfrage niedriger ist.
+Wenn Sie Einschränkungen hinsichtlich der Bandbreite haben, ist es möglich, Kampagnen für die Nachtausführung zu planen, wenn die Nachfrage niedriger ist.
