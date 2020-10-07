@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 9ca649b4-2226-4cfe-bae1-4632c421975b
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: c10a0a11c6e9952aa47da1f7a15188c79c62508d
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 100%
 
 ---
 
@@ -60,6 +60,7 @@ Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit
    * Wählen Sie das temporäre Schema des Aggregats aus. Die Daten dieses Schemas werden zur Hauptmenge hinzugefügt.
    * Aktivieren Sie die Option **[!UICONTROL Einfachen Join verwenden]**, um das Ergebnis des Aggregats zu jedem Empfänger der Hauptmenge zuzuordnen.
    * Geben Sie schließlich an, dass es sich bei der Relation um eine **[!UICONTROL 1:1-Relation]** handelt.
+
    ![](assets/datamanagement_usecase_3.png)
 
 Auf diese Weise wird das Ergebnis des Aggregats mit jedem einzelnen der Empfänger verknüpft.
@@ -80,6 +81,7 @@ Nach Erzeugung der Relation sind die Empfänger und das Aggregat Teil desselben 
 
    * **[!UICONTROL Ausdruck]**: `toDate([target/@created])`.
    * **[!UICONTROL Wert`toDate([datemax/expr####])`]**, wobei expr#### dem in der Aggregatabfrage definierten Aggregat entspricht.
+
    ![](assets/datamanagement_usecase_4.png)
 
 Das Ergebnis der Aufspaltung entspricht somit den am selben Tag wie die letzte bekannte Erstellung erstellten Empfängern.
