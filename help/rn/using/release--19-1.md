@@ -11,14 +11,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: edb8f495fff90f51ae00006453b6ec09d84a8f55
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2654'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -33,39 +30,27 @@ _15. September 2020_
 
 * Verbesserte nlsrvmod-Verwendung für Apache 2.4-Thread zur Korrektur von nlsrvmod-Abstürzen.
 * Es wurde ein Problem bei der Verwendung der File Transfer-Aktivität mit einem leeren Externe Konto und einer SSL-Verschlüsselung behoben. Die Verbindung wurde über HTTP statt über HTTPS hergestellt. (NEO-26720)
-
-
-
 * In den Eigenschaften des Versands wurde die Option **[!UICONTROL E-Mails]** archivieren in **[!UICONTROL E-Mail-BCC]** umbenannt, um eine bessere Benutzerfreundlichkeit zu erzielen.
 * Es wurde ein Problem mit dem URL-Cache-Mechanismus behoben, bei dem die Beschriftung oder Kategorie nicht abgerufen wurde.
-* Es wurde ein Fehler behoben, der dazu führte, dass Mirrorseiten-URLs in E-Mail-Versänden falsch definiert wurden (aufgrund einer fehlerhaften ASCII-Zeichensteuerung). (NEO-26084)
+* Fehlerkorrektur – Es wurde ein Problem behoben, das dazu führte, dass Mirrorseiten-URLs in E-Mail-Sendungen fehlerhaft definiert wurden (aufgrund einer falschen ASCII-Zeichensteuerung). (NEO-26084)
 * Die Liste &quot;jarsToSkip&quot; in &quot;catalina.properties&quot; wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).
 * Korrektur des Regressionsfehlers, der nach der Veröffentlichung nach der Aktualisierung verhindert wurde.
 * Korrektur einer Regression mit vordefinierten Versandberichten, die beim Exportieren in PDF abgeschnitten erschienen. (NEO-25757)
-* Es wurde ein Problem behoben, durch das der Wert des Kodierungsparameters bei der Umleitung von einer Tracking-URL gelöscht wurde (Auswirkungen auf japanische Zeichen). (NEO-25637)
+* Fehlerkorrektur – Der Codierungs-Parameterwert wird bei Weiterleitung von einer Tracking-URL nicht mehr gelöscht (Auswirkung auf japanische Zeichen). (NEO-25637)
 * Fehlerkorrektur – Nicht signierte Links von personalisierten Domains werden nicht mehr blockiert, wenn sie zulässig sind. (NEO-25210)
-* Es wurde eine Regression behoben, die berechnete Felder in einem Workflow beeinflusste und dazu führte, dass der Workflow fehlschlug. (NEO-25194)
+* Fehlerkorrektur – Es wurde eine Regression korrigiert, die berechnete Felder in einem Workflow beeinträchtigte und dazu führte, dass der Workflow fehlschlug. (NEO-25194)
 * Es wurde ein Kompatibilitätsproblem mit Microsoft Dynamics (ab Version 8.2) behoben, das die Ausführung einiger API-Aufrufe verhindern konnte (RetrieveAllEntities). (NEO-24528)
-* Korrektur des Regressionsfehlers bei Verwendung der ACS Connector-Funktion, der die Verbindung zu einer Campaign Standard-Instanz verhinderte (fehlerhafte Verwaltung der FOH/FOH2-Verbindung). (NEO-23433)
-* Korrektur des Regressionsfehlers bei der Datenbankverbindung, der dazu führte, dass der Webserver aufgrund eines Datenbankkodierungsproblems ständig neu gestartet wurde. Dies könnte zu einem Überkonsum führen. (NEO-23264)
-
-
-
-* Es wurde ein Problem mit dem Arbeitsablauf für die Datenbankbereinigung behoben, das aufgrund nicht verwalteter Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
-* Der Bereinigungsarbeitsablauf bereinigt abgelaufene Listen nun durch Stapel von 100 anstelle von 1 nach 1.
+* Fehlerkorrektur – Es wurde ein Regressionsfehler bei Verwendung der ACS Connector-Funktion behoben, der die Verbindung zu einer Campaign Standard-Instanz verhinderte (fehlerhafte Verwaltung der FOH-/FOH2-Verbindung). (NEO-23433)
+* Fehlerkorrektur – Es wurde ein Regressionsfehler bei der Datenbankverbindung behoben, der dazu führte, dass der Webserver aufgrund eines Problems mit der Datenbankkodierung ständig neu gestartet wurde. Dies konnte zu einem übermäßigen Verbrauch führen. (NEO-23264)
+* Fehlerkorrektur – Es wurde ein Problem mit dem Datenbankbereinigungs-Workflow behoben, der aufgrund einer nicht verwalteten Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
+* Der Bereinigungs-Workflow bereinigt jetzt abgelaufene Listen in Stapeln von 100 anstelle einzeln.
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde ein Fehler behoben, der verhinderte, dass E-Mails gesendet werden, wenn außerhalb des HTML-Inhalts-Tags Javascript-Code vorhanden war. (NEO-18628)
 * Fehlerkorrektur – Trackingindikatoren für Transaktionsnachrichten werden jetzt vom Tracking-Workflow aktualisiert. (NEO-17770)
 * Die Leistung des Datenbankaktualisierungsassistenten wurde verbessert, um weniger SQL-Anweisungen auszugeben, um die Reaktionszeit zu optimieren.
 * Es wurde ein Problem mit einem Absturz der Konsole behoben, das beim Deaktivieren der Verfolgte URLs in einer E-Mail auf der Registerkarte **Textinhalt** aufgrund einer nicht initialisierten Variablen auftrat. (NEO-13545)
 * Es wurde ein Problem behoben, das das Hochladen von Dateien in einer File Transfer-Aktivität mithilfe eines Azurblauch-Datenspeicherung-Externen Kontos aufgrund einer nicht initialisierten Variable (m_pCurlReader) verhinderte. (NEO-13717)
-
-
-
-* Es wurde ein Problem nach der Aktualisierung behoben, durch das Apache und der Webserver vor der Webanwendungsveröffentlichung deaktiviert wurden. (NEO-27155)
-
-
-
+* Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Publikation der Web-Applikation deaktiviert wurden. (NEO-27155)
 * Korrektur einer Regression, die dazu führte, dass beim Festlegen der Zeit in einer Workflow-Aktivität der **Planung** eine falsche Zeitzone ausgewählt wurde.
 
 ## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
@@ -97,9 +82,6 @@ _13. August 2019_
 * Eine neue Authentifizierungsoption wurde hinzugefügt, die in AC Connector in Verbindung mit Microsoft Dynamics OAuth-Zugangsdaten unterstützt. (NEO-11982)
 * Es wurde ein Problem bei der Verwaltung der UUID (Unique Universal Identifier) behoben, das dazu führte, dass die Aktivitäten für den Arbeitsablauf zum Laden von Abfragen und Daten mit der Hive-FDA fehlschlugen.
 * Korrektur einer Regression bei Oracle, die dazu führte, dass einige Funktionen nach der Aktualisierung als ungültig betrachtet wurden. (NEO-12759)
-
-
-
 * Es wurde eine Regression behoben, die dazu führte, dass beim Festlegen der Planung in einer Workflow-Aktivität eine falsche Zeitzone ausgewählt wurde.
 
 ## ![](assets/do-not-localize/green_2.png) Version 19.1.4 – Build 9032{#release-19-1-4-build-9032}
