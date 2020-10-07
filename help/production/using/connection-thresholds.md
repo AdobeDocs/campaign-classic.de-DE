@@ -1,7 +1,7 @@
 ---
-title: Verbindungsschwellenwerte
-seo-title: Verbindungsschwellenwerte
-description: Verbindungsschwellenwerte
+title: Verbindungsschwellen
+seo-title: Verbindungsschwellen
+description: Verbindungsschwellen
 seo-description: null
 page-status-flag: never-activated
 uuid: a4b6959a-0f5b-41a2-b4c3-d7d6613d1a18
@@ -11,26 +11,26 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 discoiquuid: f3db77db-94cc-4d75-a59b-2dddce776759
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 579329d9194115065dff2c192deb0376c75e67bd
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 5%
 
 ---
 
 
-# Verbindungsschwellenwerte{#connection-thresholds}
+# Verbindungsschwellen{#connection-thresholds}
 
-Bei hochgeladenen Servern kann der Verbindungsschwellenwert überschritten werden. Auf jeden Fall ist es nützlich herauszufinden, warum.
+Bei hochgeladenen Servern kann der Verbindungsschwellenwert überschritten werden. In jedem Ereignis ist es nützlich herauszufinden, warum.
 
 Es gibt drei verschiedene Schwellenwerte:
 
 1. Der Schwellenwert für die Webverbindung, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich zum Ändern an Ihren Systemadministrator.
 1. Der Schwellenwert für die Datenbankverbindung. Wenden Sie sich zum Ändern an Ihren Datenbankadministrator.
-1. Der Adobe Campaign-Verbindungsschwellenwert ist an zwei Stellen verfügbar:
+1. Der Schwellenwert für die Adobe Campaign-Verbindung, der an zwei Stellen verfügbar ist:
 
-   * Tomcat-Seite: alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat-Client eingehen.
+   * Tomcat-Seite: alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat Client ankommen.
 
       Dieser Schwellenwert wird in der Datei **nl6/tomcat-7/conf/server.xml** konfiguriert. Mit dem **Attribut maxThreads** können Sie den Schwellenwert der Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
 
