@@ -11,11 +11,8 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 5ebea30c743ab416ede879c74735e2c7870d3db9
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3029'
 ht-degree: 98%
@@ -567,7 +564,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
   <tr> 
    <td> Beschwerden<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Anzahl der Nachrichten mit dem Status "Fehlgeschlagen"und dem Grund "Zur blockierungsliste hinzugefügt".<br /> </td> 
+   <td> Anzahl der Nachrichten mit dem Status "Fehlgeschlagen"und dem Grund "Adresse zur Blockierungsliste hinzugefügt".<br /> </td> 
    <td> Count(@status=2 und msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
