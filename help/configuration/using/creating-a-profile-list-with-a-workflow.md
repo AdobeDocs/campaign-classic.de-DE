@@ -11,36 +11,36 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 681e6ec5fc9ed8c7e46af04f0ed62927b30e1b2e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 22%
 
 ---
 
 
 # Erstellen einer Profilliste mit einem Workflow{#creating-a-profile-list-with-a-workflow}
 
-Um eine **[!UICONTROL List]** Typliste basierend auf der neuen Empfängertabelle zu erstellen, müssen Sie einen Targeting-Arbeitsablauf erstellen, der die Liste generiert. Weitere Informationen zu Listen in Kampagne finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+Um eine Liste des Typs &quot; **[!UICONTROL Liste]** &quot;basierend auf der neuen Empfänger-Tabelle zu erstellen, müssen Sie einen Targeting-Arbeitsablauf erstellen, der die Liste generiert. Weitere Informationen zu Listen in der Kampagne finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-1. Wechseln Sie zum **[!UICONTROL Profiles and Targets > Jobs > Targeting workflows]** Knoten des Explorers.
+1. Wechseln Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Aufträge > Targeting Workflows]** des Explorers.
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
-1. Platzieren Sie eine **Abfrageaktivität** gefolgt von einer **Listenaktualisierung** .
+1. Platzieren Sie eine **Abfrage** -Aktivität gefolgt von einer **Liste-Update** -Aktivität.
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Doppelklicken Sie auf die **Abfrageaktivität** und klicken Sie dann auf **[!UICONTROL Edit the query]** , um eine Targeting-Dimension basierend auf dem Schema der neuen Empfängertabelle auszuwählen (in unserem Beispiel: **Individuell**). Klicken Sie **[!UICONTROL Finish]** zur Bestätigung.
+1. Klicken Sie bei Dublette auf die Aktivität **Abfrage** und dann auf Abfrage **** bearbeiten, um eine Zielgruppendimension auf Grundlage des Schemas der neuen Empfänger-Tabelle auszuwählen (in unserem Beispiel: **Individuell**). Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
    ![](assets/mapping_create_list_workflow03.png)
 
-1. Doppelklicken Sie auf die Aktualisierungsaktivität für die **Liste** und wählen Sie dann das **[!UICONTROL Create the list if necessary (Computed name)]** Optionsfeld aus.
+1. Klicken Sie mit der Dublette auf die Aktivität zum Aktualisieren **der** Liste und wählen Sie dann bei Bedarf das Optionsfeld Liste **[!UICONTROL erstellen (Berechneter Name)]** .
 
    ![](assets/mapping_create_list_workflow02.png)
 
 1. Wählen Sie den Erstellungsordner für die neue Liste aus.
 1. Führen Sie den Workflow aus, um die Liste zu erstellen.
-1. Zeigen Sie das Ergebnis in der Node der Struktur an, die Sie während der **[!UICONTROL List update]** Aktivität ausgewählt haben.
+1. Ansicht des Ergebnisses in dem Knoten der Struktur, den Sie während der Aktivität zur Aktualisierung der **[!UICONTROL Liste]** ausgewählt haben.
 
    Das Dashboard gibt das Schema an, auf dem die Liste basiert, wie nachfolgend gezeigt:
 
@@ -48,5 +48,5 @@ Um eine **[!UICONTROL List]** Typliste basierend auf der neuen Empfängertabelle
 
 >[!NOTE]
 >
->Sie können auch auf das Video zum [Erstellen einer Liste von Empfängern](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/creating-a-list-of-recipients.html) verweisen.
+>Sie können auch das Video zum [Erstellen einer Liste von Empfängern](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) lesen.
 
