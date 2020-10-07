@@ -11,11 +11,8 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 68d532a9597877f2f265dfc2d16ea31d1ce80858
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3775'
 ht-degree: 1%
@@ -49,7 +46,7 @@ Es ist möglich, das Protokoll-Protokoll für einen Prozess anzuzeigen. Klicken 
 
 ### Systemindikatoren {#system-indicators}
 
-Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über den Rechner, wie z.B. den physischen und virtuellen Speicher, die aktiven Prozesse und den verfügbaren Speicherplatz. Indikatoren unterscheiden sich für Linux- und Windows-Betriebssysteme. Rufen Sie die Seite &quot; **[!UICONTROL Instanzüberwachung]** &quot;auf und klicken Sie auf den Link &quot; **[!UICONTROL Anzeigen]** &quot;, um die Liste der Indikatoren zu öffnen
+Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über den Rechner, wie z.B. den physischen und virtuellen Speicher, die aktiven Prozesse und den verfügbaren Speicherplatz. Die Indikatoren unterscheiden sich für Linux- und Windows-Betriebssysteme. Rufen Sie die Seite &quot; **[!UICONTROL Instanzüberwachung]** &quot;auf und klicken Sie auf den Link &quot; **[!UICONTROL Anzeigen]** &quot;, um die Liste der Indikatoren zu öffnen
 
 #### Windows {#in-windows}
 
@@ -444,7 +441,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring    </th> 
+   <th> Monitoring   </th> 
   </tr> 
  </thead> 
  <tbody> 
