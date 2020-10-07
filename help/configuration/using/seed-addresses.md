@@ -11,24 +11,24 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: 41338d32-b95c-45ae-bee6-17b2af5bd837
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: d5c1732858fd5d079bbd9a755997c04adf5c9d47
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 3%
 
 ---
 
 
 # Testadressen{#seed-addresses}
 
-Wenn es sich bei der Tabelle &quot;Empfänger&quot;um eine benutzerdefinierte Tabelle handelt, sind zusätzliche Konfigurationen erforderlich. Das **[!UICONTROL nms:seedMember]** Schema muss verlängert werden. Zu den Testadressen zur Festlegung der entsprechenden Felder wird eine zusätzliche Registerkarte hinzugefügt, wie nachfolgend gezeigt:
+Wenn es sich bei der Tabelle &quot;Empfänger&quot;um eine benutzerdefinierte Tabelle handelt, sind zusätzliche Konfigurationen erforderlich. Das Schema **[!UICONTROL nms:seedMember]** muss verlängert werden. Zu den Testadressen zur Festlegung der entsprechenden Felder wird eine zusätzliche Registerkarte hinzugefügt, wie nachfolgend gezeigt:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
 Weitere Informationen zur Verwendung von Testadressen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
-## Umsetzung {#implementation}
+## Implementierung{#implementation}
 
 Das **nms:seedMember** -Schema und das verknüpfte Formular, das sofort einsatzbereit ist, sollen für die Kundenkonfiguration erweitert werden, um alle erforderlichen Felder zu referenzieren. Die Schema-Definition enthält Kommentare zum Konfigurationsmodus.
 
@@ -50,13 +50,13 @@ Definition des erweiterten Schemas der Tabelle &quot;Empfänger&quot;:
 Gehen Sie wie folgt vor:
 
 1. Erstellen Sie eine Erweiterung des **nms:seedMember** -Schemas. Weitere Informationen finden Sie unter [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md).
-1. Fügen Sie in dieser neuen Erweiterung im Stammordner von ein neues Element mit **[!UICONTROL seedMember]** den folgenden Parametern hinzu:
+1. Fügen Sie in dieser neuen Erweiterung ein neues Element im Stammverzeichnis von **[!UICONTROL seedMember]** mit den folgenden Parametern hinzu:
 
    ```
    name="custom_customNamespace_customSchema"
    ```
 
-   Dieses Element muss die zum Exportieren der Kampagnen erforderlichen Felder enthalten. Diese Felder sollten denselben Namen haben wie die entsprechenden Felder im externen Schema. Wenn das Schema beispielsweise **[!UICONTROL cus:person]** lautet, sollte das **[!UICONTROL nms:seedMember]** Schema wie folgt erweitert werden:
+   Dieses Element muss die zum Exportieren der Kampagnen erforderlichen Felder enthalten. Diese Felder sollten denselben Namen haben wie die entsprechenden Felder im externen Schema. Wenn das Schema beispielsweise **[!UICONTROL cus:person]** lautet, sollte das Schema **[!UICONTROL nms:seedMember]** wie folgt erweitert werden:
 
    ```
      <srcSchema extendedSchema="nms:seedMember" label="Seed addresses" labelSingular="Seed address" name="seedMember" namespace="cus">
@@ -87,7 +87,7 @@ Gehen Sie wie folgt vor:
    >    * In der Erweiterung **nms:seedMember** muss das Feld mit der E-Mail-Adresse **name=&quot;email&quot;** als Attribut haben. Der SQL-Name muss sich von &#39;sEmail&#39; unterscheiden, das bereits für das Empfänger-Schema verwendet wird. Dieses Attribut muss sofort unter dem **`<element name="custom_cus_person" />`** Element deklariert werden.
 
 
-1. Ändern Sie das **[!UICONTROL seedMember]** Formular entsprechend, um eine neue Registerkarte &quot;Interner Empfänger&quot;im **[!UICONTROL Seed addresses]** Fenster zu definieren. For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
+1. Ändern Sie das Formular **[!UICONTROL sampleMember]** entsprechend, um eine neue Registerkarte &quot;Interner Empfänger&quot;im Fenster **[!UICONTROL Testadressen]** zu definieren. For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
