@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: api
 discoiquuid: 76984d9d-7759-4e0f-a275-09cca27589fa
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: e7ff12260d875b85256c8678fa8d100fd355398e
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 5%
 
 ---
 
@@ -37,15 +37,15 @@ Das Erstellen einer Methodenbibliothek umfasst zwei Schritte:
 
 ### Erklärung {#declaration}
 
-Erklären Sie zunächst die Methoden in den Schemata (weitere Informationen zum Erstellen und Bearbeiten von Schemata finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
+Beginn durch Deklarieren der Methoden in den Schemas (weitere Informationen zum Erstellen und Bearbeiten von Schemas finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
 
 Ihre Deklaration ähnelt der der nativen Methoden, allerdings müssen Sie das Attribut &quot;library&quot;hinzufügen, um den Namen der Methodenbibliothek anzugeben, in der sich die Definition befindet.
 
-Dieser Name fällt mit dem Namen (mit dem Namespace) der Entität des Typs &quot;JavaScript-Code&quot;zusammen.
+Dieser Name fällt mit dem Namen (mit dem Namensraum) der Entität des Typs &quot;JavaScript-Code&quot;zusammen.
 
 Beispiel:
 
-Die Methode testLog(msg) wird in der Erweiterung nms:empfänger deklariert
+Die Methode testLog(msg) wird in der Erweiterung nms:Empfänger deklariert
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -57,7 +57,7 @@ Die Methode testLog(msg) wird in der Erweiterung nms:empfänger deklariert
 
 >[!NOTE]
 >
->Der Namespace und der für die Bibliothek verwendete Name sind unabhängig vom Namespace- und Schemanamen, in dem die Deklaration gefunden wird.
+>Der Namensraum und der Bibliotheksname sind unabhängig vom Namensraum- und Schema-Namen, in dem die Deklaration gefunden wird.
 
 ### Definition {#definition}
 
@@ -65,7 +65,7 @@ SOAP-Methoden werden in Form einer JavaScript-Funktion implementiert, die in ein
 
 >[!NOTE]
 >
->Eine Methodenbibliothek kann Funktionen für verschiedene Schemata gruppieren oder umgekehrt, die Funktionen eines Schemas können in separaten Bibliotheken definiert werden.
+>Eine Methodenbibliothek kann Funktionen für verschiedene Schema gruppieren oder umgekehrt, die Funktionen eines Schemas können in separaten Bibliotheken definiert werden.
 
 Das Skript kann Code enthalten, der beim ersten Laden der Bibliothek ausgeführt wird.
 
@@ -99,7 +99,7 @@ Sonderfälle:
 
 **3. Rückgegebene Werte**
 
-Die Funktion muss einen Wert für jeden Parameter vom Typ &#39;out&#39; oder &#39;inout&#39; zurückgeben. Sonderfall: Wenn die Methode ohne die Attribute &quot;static&quot;, &quot;key only&quot;oder &quot;const&quot;deklariert wird, muss der erste zurückgegebene Wert mit der geänderten Entität übereinstimmen. Es ist möglich, ein neues Objekt zurückzugeben oder den ersten geänderten Parameter zurückzugeben.
+Die Funktion muss einen Wert für jeden Parameter vom Typ &#39;out&#39; oder &#39;inout&#39; zurückgeben. Sonderfall: Wenn die Methode ohne eines der Attribute &quot;static&quot;, &quot;key only&quot;oder &quot;const&quot;deklariert wird, muss der erste zurückgegebene Wert mit der geänderten Entität übereinstimmen. Es ist möglich, ein neues Objekt zurückzugeben oder den ersten geänderten Parameter zurückzugeben.
 
 Beispiel:
 
