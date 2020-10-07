@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 9fd7122e-22c7-4f9a-a2a4-5de3daaa3c2e
-index: y
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: 366d2149933fa68dfec2a732d1014e1875709cff
+translation-type: tm+mt
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '1035'
+ht-degree: 100%
 
 ---
 
@@ -87,6 +87,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
    * **[!UICONTROL Vorbereiten]**: Der Versand wird vollständig analysiert (Zielgruppenberechnung und Inhaltsvorbereitung). Der Versand wird nicht abgeschickt. Diese Aktion entspricht den Optionen **[!UICONTROL Sendungen schnellstmöglich abschicken]** und **[!UICONTROL Analysieren]** in einem klassischen Versand an eine Hauptzielgruppe mit dem **Delivery**-Modul.
    * **[!UICONTROL Testversand]**: Ein Testversand wird ausgelöst. Diese Aktion entspricht einem Klick auf die Schaltfläche **[!UICONTROL Testversand]** in der Symbolleiste eines klassischen Versands mit dem **Delivery**-Modul.
    * **[!UICONTROL Vorbereiten und starten]**: Der Versand wird vollständig analysiert (Zielgruppenberechnung und Inhaltsvorbereitung) und abgeschickt. Diese Aktion entspricht den Optionen **[!UICONTROL Sendungen schnellstmöglich abschicken]**, **[!UICONTROL Analysieren]** und **[!UICONTROL Absendung bestätigen]** in einem klassischen Versand an eine Hauptzielgruppe mit dem **Delivery**-Modul.
+
    Eine im weiteren Verlauf des Workflows platzierte Aktivität des Typs **[!UICONTROL Versand bearbeiten]** erlaubt die Ausführung der für den Versandstart noch fehlenden Etappen (Zielgruppenberechnung, Inhaltsvorbereitung, Versand). Weitere Informationen hierzu finden Sie unter [Versand bearbeiten](../../workflow/using/delivery-control.md).
 
    Darüber hinaus stehen folgende Optionen für die Aktivität zur Verfügung:
