@@ -11,11 +11,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 656b867686dd90f3e921c2adb5e5676fec184803
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1976'
 ht-degree: 1%
@@ -393,7 +390,7 @@ Links folgen den folgenden Regeln:
 * Die Definition eines Links wird in einen **Link**-Typ **`<element>`** mit den folgenden Attributen eingegeben:
 
    * **name**: Name des Links aus der Quelltabelle,
-   * **Zielgruppe**: Name des Schemas der Zielgruppe,
+   * **zielgruppe**: Name des Schemas der Zielgruppe,
    * **label**: Bezeichnung des Links,
    * **revLink** (optional): Name des Rückwärtslinks aus dem Schema Zielgruppe (standardmäßig automatisch abgezogen),
    * **Integrität** (optional): Referenzintegrität des Vorkommens der Quelltabelle zum Vorkommen der Zielgruppe-Tabelle. Mögliche Werte sind:
@@ -477,7 +474,7 @@ Ein umgekehrter Link zur Tabelle &quot;cus:Empfänger&quot;wurde mit folgenden P
 
 * **name**: automatisch vom Namen des Quell-Schemas abgezogen (kann mit dem Attribut &quot;revLink&quot;in der Linkdefinition im Quell-Schema erzwungen werden)
 * **revLink**: Name des umgekehrten Links
-* **Zielgruppe**: Schlüssel des verknüpften Schemas (&quot;cus:Empfänger&quot;-Schema)
+* **zielgruppe**: Schlüssel des verknüpften Schemas (&quot;cus:Empfänger&quot;-Schema)
 * **ungebunden**: Der Link wird als Collection-Element für eine 1-N Kardinalität deklariert (standardmäßig)
 * **Integrität**: &quot;Definieren&quot;standardmäßig (kann mit dem Attribut &quot;revIntegrity&quot;in der Linkdefinition im Quellcode-Schema erzwungen werden).
 
