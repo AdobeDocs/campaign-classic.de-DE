@@ -11,11 +11,11 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 discoiquuid: 6877d94d-d6e5-4080-a537-ef1bb6e6f8cf
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 11%
 
 ---
 
@@ -24,20 +24,20 @@ source-git-commit: 7bcf222f41c0e40368644b76197b07f2ded699f0
 
 ## Übersicht {#overview}
 
-Wenn die Anwendung auf die Daten einer vorhandenen Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie ihr Schema in Adobe Campaign mit den folgenden Daten:
+Wenn die Anwendung auf die Daten einer vorhandenen Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
 
 * Name der Tabelle: Geben Sie den Namen der Tabelle (mit ihrem Alias bei Verwendung eines Datenbanklinks) mit dem Attribut &quot;sqltable&quot;ein,
-* Schemaschlüssel: auf das/die Abgleichfeld/die Abgleichfelder verweisen,
-* Indizes: zum Generieren von Abfragen verwendet werden,
+* schema-Schlüssel: auf das/die Abgleichfeld(e) verweisen,
+* Indizes: zur Erzeugung von Abfragen verwendet werden,
 * Die Felder und ihr Speicherort in der XML-Struktur: nur die im Antrag verwendeten Felder ausfüllen,
 * Links: , wenn es Verbindungen zu den anderen Tabellen der Basis gibt.
 
-## Umsetzung {#implementation}
+## Implementierung{#implementation}
 
-Um das entsprechende Schema zu erstellen, wenden Sie die folgenden Schritte an:
+Um das entsprechende Schema zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. Bearbeiten Sie den **[!UICONTROL Administration>Configuration>Data schemas]** Knoten der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL New]** .
-1. Wählen Sie die **[!UICONTROL Access data from an existing table or an SQL view]** Option aus und klicken Sie auf **[!UICONTROL Next]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration>Configuration>Data Schemas]** im Adobe Campaign und klicken Sie auf **[!UICONTROL New]** .
+1. Wählen Sie die Option **[!UICONTROL Zugriff auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -45,11 +45,11 @@ Um das entsprechende Schema zu erstellen, wenden Sie die folgenden Schritte an:
 
    ![](assets/s_ncs_configuration_select_table.png)
 
-1. Passen Sie den Schemainhalt an Ihre Anforderungen an.
+1. Passen Sie die Schema-Inhalte an Ihre Anforderungen an.
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Das Schema muss mit dem Attribut view=&quot;true&quot; im Stammelement gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert wird. `<srcSchema>`
+   Das Schema muss mit dem Attribut &quot;Ansicht=&quot;true&quot;im Stammelement gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert wird. `<srcSchema>`
 
 **Beispiel** :
 
@@ -68,4 +68,4 @@ Um das entsprechende Schema zu erstellen, wenden Sie die folgenden Schritte an:
 
 Mit der Option **Federated Data Access - FDA** haben Sie Zugriff auf die in einer externen Datenbank gespeicherten Daten.
 
-Die Konfiguration für die Schemata zum Zugriff auf Daten in einer externen Datenbank ist auf [dieser Seite](../../platform/using/creating-data-schema.md)ausführlich beschrieben.
+Die Konfiguration, die auf den Schemas für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, ist auf [dieser Seite](../../platform/using/creating-data-schema.md)ausführlich beschrieben.
