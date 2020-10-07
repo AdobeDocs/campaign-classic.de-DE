@@ -1,6 +1,6 @@
 ---
 title: Beschreibung des Adobe Campaign Classic-Datenmodells
-description: In diesem Dokument wird das Datenmodell von Adobe Campaign Classic beschrieben.
+description: In diesem Dokument wird das Adobe Campaign Classic-Datenmodell beschrieben.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -9,11 +9,8 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: c51a51f175e9f3fe5a55f2b5f57872057f70909d
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2380'
 ht-degree: 1%
@@ -35,7 +32,7 @@ Um die Tabellenbeschreibung aufzurufen, wählen Sie &quot; **[!UICONTROL Admin&q
 
 ## Beschreibung der Haupttabellen {#description-main-tables}
 
-Adobe Campaign setzt auf eine relationale Datenbank, die Tabellen enthält, die miteinander verknüpft sind.
+Adobe Campaign stützt sich auf eine relationale Datenbank, die Tabellen enthält, die miteinander verknüpft sind.
 
 Das folgende Diagramm zeigt die Verbindungen zwischen den wichtigsten Geschäftstabellen des Adobe Campaign-Datenmodells mit den jeweiligen Hauptfeldern.
 
@@ -53,7 +50,7 @@ Dies ist die Standardtabelle für die **Empfänger von Versänden**. Sie enthäl
 
 * sEmail: E-Mail-Adresse.
 * iEmailFormat: bevorzugte Format für E-Mails (1 für Text, 2 für HTML und 0, wenn nicht definiert).
-* sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity werden zum Aufbau der Postanschrift verwendet (gemäß XPZ 10-011 AFNOR Standard ab Mai 1997).
+* sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity werden zur Erstellung der Postanschrift verwendet (gemäß XPZ 10-011 AFNOR Standard ab Mai 1997).
 * sPhone, sMobilePhone, sFax enthalten die Telefon-, Handy- und Faxnummern.
 * iBlockList ist das standardmäßige Ausschluss-Flag, das für die Profil verwendet wird (1 bedeutet &quot;unsubscribed&quot;, andernfalls 0).
 
@@ -87,7 +84,7 @@ Es gibt einen eindeutigen Index im Feld, der den internen Namen des sName-Dienst
 
 Diese Tabelle entspricht dem Schema **nms:Abonnement** .
 
-Es ermöglicht Ihnen die Verwaltung von Empfänger-Abonnements an Informationsdienst.
+Sie können Empfänger-Abonnement für Informationsdienst verwalten.
 
 ### NmsSubHisto {#NmsSubHisto}
 
