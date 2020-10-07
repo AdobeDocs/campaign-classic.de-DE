@@ -11,37 +11,37 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ff7e6f72-7605-41ee-b25a-1e4618e674d7
-index: y
-internal: n
-snippet: y
 translation-type: tm+mt
-source-git-commit: dbff132e3bf88c408838f91e50e4b047947ee32a
+source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+workflow-type: tm+mt
+source-wordcount: '513'
+ht-degree: 3%
 
 ---
 
 
 # Target mapping{#target-mapping}
 
-Die Erstellung der Zielzuordnung ist in zwei Fällen erforderlich:
+Die Erstellung von Zielgruppen-Mappings ist in zwei Fällen erforderlich:
 
-* wenn Sie eine andere als die von Adobe Campaign bereitgestellte Empfängertabelle verwenden,
-* wenn Sie eine Filterdimension konfigurieren, die sich von der standardmäßigen Targeting-Dimension im Anzeigebereich der Zielzuordnung unterscheidet.
+* wenn Sie eine andere als die von Adobe Campaign bereitgestellte Empfänger-Tabelle verwenden,
+* wenn Sie eine Filterdimension konfigurieren, die sich von der standardmäßigen Zielgruppendimension im Bildschirm &quot;Zielgruppen-Mapping&quot;unterscheidet.
 
-Der Assistent zum Erstellen von Zielzuordnungen hilft Ihnen, alle Schemata zu erstellen, die zur Verwendung Ihrer benutzerdefinierten Tabelle erforderlich sind.
+Der Assistent zum Erstellen von Zielgruppen-Mappings hilft Ihnen, alle Schema zu erstellen, die zur Verwendung Ihrer benutzerdefinierten Tabelle erforderlich sind.
 
-## Erstellen und Konfigurieren von mit der benutzerdefinierten Tabelle verknüpften Schemata {#creating-and-configuring-schemas-linked-to-the-custom-table}
+## Erstellen und Konfigurieren von mit der benutzerdefinierten Tabelle verknüpften Schemas {#creating-and-configuring-schemas-linked-to-the-custom-table}
 
-Bevor Sie eine Zielzuordnung erstellen, sind mehrere Konfigurationen erforderlich, damit Adobe Campaign mit einem neuen Empfängerdatenschema arbeiten kann.
+Bevor Sie ein Zielgruppen-Mapping erstellen, sind mehrere Konfigurationen erforderlich, damit Adobe Campaign mit einem neuen Empfänger-Daten-Schema arbeiten kann.
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Erstellen Sie ein neues Datenschema, das die Felder der benutzerdefinierten Tabelle, die Sie verwenden möchten, integriert.
+1. Erstellen Sie ein neues Schema, das die zu verwendenden Felder der benutzerdefinierten Tabelle integriert.
 
-   Weitere Informationen finden Sie in der [Schemareferenz (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   Weitere Informationen finden Sie in der [Schema-Referenz (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   In unserem Beispiel erstellen wir ein Kundenschema, eine sehr einfache Tabelle mit den folgenden Feldern: ID, Vorname, Nachname, E-Mail-Adresse, Handynummer. Ziel ist es, E-Mail- oder SMS-Warnungen an die in dieser Tabelle gespeicherten Personen senden zu können.
+   In unserem Beispiel erstellen wir ein Schema für Kunden, eine sehr einfache Tabelle mit den folgenden Feldern: ID, Vorname, Nachname, E-Mail-Adresse, Handynummer. Ziel ist es, E-Mail- oder SMS-Warnungen an die in dieser Tabelle gespeicherten Personen senden zu können.
 
-   Beispielschema (cus:individuell)
+   Schema (cus:single)
 
    ```
    <srcSchema name="individual" namespace="cus" label="Individuals">
@@ -58,7 +58,7 @@ Gehen Sie hierzu wie folgt vor:
    </srcSchema>
    ```
 
-1. Deklarieren Sie Ihr Schema als externe Ansicht mit dem Attribut =&quot;true&quot;. Siehe [Das Attribut](../../configuration/using/schema-characteristics.md#the-view-attribute)view.
+1. Deklarieren Sie Ihr Schema als externe Ansicht mit dem Attribut =&quot;true&quot;. Siehe [Das Attribut](../../configuration/using/schema-characteristics.md#the-view-attribute)Ansicht.
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -87,44 +87,44 @@ Gehen Sie hierzu wie folgt vor:
       </element>
    ```
 
-1. Klicken Sie auf die **[!UICONTROL Administration > Campaign management > Target mappings]** Node.
-1. Klicken Sie auf die Schaltfläche **Neu** , um den Assistenten zum Erstellen der Zielzuordnung zu öffnen.
-1. Geben Sie das Feld **Bezeichnung** ein und wählen Sie das Schema aus, das Sie soeben im Feld **Targeting-Dimension** erstellt haben.
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Zielgruppen-Mappings]** .
+1. Klicken Sie auf die Schaltfläche **Neu** , um den Assistenten zum Erstellen von Zielgruppen-Mappings zu öffnen.
+1. Geben Sie das **Beschriftungsfeld** ein und wählen Sie das soeben erstellte Schema im Feld &quot; **Zielgruppendimension** &quot;aus.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Wählen Sie im Fenster **Adressformulare** bearbeiten die Felder des Schemas aus, die den verschiedenen Zustelladressen entsprechen. Hier können wir die Felder **@email** und **@mobile** zuordnen.
+1. Wählen Sie im Fenster **Adressformulare** bearbeiten die Felder des Schemas aus, die den verschiedenen Versand-Adressen entsprechen. Hier können wir die Felder **@email** und **@mobile** zuordnen.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Geben Sie im folgenden **Speicherfenster** das **Suffix des Erweiterungsschemas** ein, um die neuen Schemas von den von Adobe Campaign bereitgestellten Standardschemas zu unterscheiden.
+1. Geben Sie im folgenden Fenster **Datenspeicherung** das Feld **Suffix des Erweiterungsschemas** ein, um die neuen Schema von den von Adobe Campaign bereitgestellten vordefinierten Schemas zu unterscheiden.
 
-   Klicken Sie auf **[!UICONTROL Define new additional fields]** , um die Dimension auszuwählen, die Sie in Ihrer Bereitstellung als Ziel auswählen möchten.
+   Klicken Sie auf **[!UICONTROL Neue zusätzliche Felder]** definieren, um die Dimension auszuwählen, die Sie in Ihrem Versand Zielgruppe haben möchten.
 
-   Standardmäßig wird die Ausschlussverwaltung in denselben Tabellen wie Nachrichten gespeichert. Markieren Sie das Feld Speicherschema zur Verfolgung **** erstellen, wenn Sie Speicher für die mit Ihrer Zielzuordnung verknüpfte Verfolgung konfigurieren möchten.
+   Standardmäßig wird die Ausschlussverwaltung in denselben Tabellen wie Nachrichten gespeichert. Markieren Sie das Schema &quot;Datenspeicherung zur Verfolgung **** generieren&quot;, wenn Sie die Datenspeicherung für die mit Ihrem Zielgruppen-Mapping verknüpfte Verfolgung konfigurieren möchten.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign unterstützt nicht mehrere Empfängerschemata, die als Targeting-Schemata bezeichnet werden und mit denselben Broadlog- und/oder Trackinglog-Schemata verknüpft sind. Andernfalls kann dies zu Anomalien bei der Datenabstimmung im Anschluss führen. Weitere Informationen hierzu finden Sie auf der Seite [Empfehlung und Einschränkungen](../../configuration/using/about-custom-recipient-table.md) .
+   >Adobe Campaign unterstützt nicht mehrere Empfänger-Schema, die als Targeting-Schema bezeichnet werden und mit denselben Broadlog- und/oder Trackinglog-Schemas verknüpft sind. Andernfalls kann dies zu Anomalien bei der Datenabstimmung im Anschluss führen. Weitere Informationen hierzu finden Sie auf der Seite [Empfehlung und Einschränkungen](../../configuration/using/about-custom-recipient-table.md) .
 
-1. Wählen Sie im Fenster &quot; **Erweiterungen** &quot;die optionalen Schemata aus, die Sie erstellen möchten (die Liste der verfügbaren Schemata hängt von den auf der Adobe Campaign-Plattform installierten Modulen ab).
+1. Wählen Sie im Fenster &quot; **Erweiterungen** &quot;die optionalen Schema aus, die Sie erstellen möchten (die Liste der verfügbaren Schema hängt von den auf der Adobe Campaign-Plattform installierten Modulen ab).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
 1. Click the **Save** button to close the wizard.
 
-   Der Assistent verwendet das Startschema, um alle anderen Schemata zu erstellen, die erforderlich sind, damit die neue Zielzuordnung funktioniert.
+   Der Assistent verwendet das Beginn-Schema, um alle anderen Schema zu erstellen, die erforderlich sind, damit das neue Zielgruppen-Mapping funktioniert.
 
    ![](assets/mapping_schema_list.png)
 
-## Verwenden der Zielzuordnung {#using-target-mapping}
+## Zielgruppen-Mapping verwenden {#using-target-mapping}
 
-Es gibt zwei Möglichkeiten, das neue Schema als Ziel einer Bereitstellung zu verwenden:
+Es gibt zwei Möglichkeiten, das neue Schema als Zielgruppe eines Versands zu verwenden:
 
-* Erstellen Sie eine oder mehrere Bereitstellungsvorlagen basierend auf der Zuordnung
-* Wählen Sie beim Erstellen einer Bereitstellung die Zuordnung direkt während der Zielauswahl aus, wie unten dargestellt:
+* Erstellen Sie eine oder mehrere Versandvorlagen basierend auf der Zuordnung
+* Wählen Sie beim Erstellen eines Versands die Zuordnung direkt während der Auswahl der Zielgruppe aus, wie nachfolgend gezeigt:
 
 ![](assets/mapping_selection_ciblage.png)
 
