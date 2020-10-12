@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1344'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -104,7 +104,7 @@ _17. Februar 2020_
 
 * Die Abfrageleistung, die zuvor durch unnötige Datenbankverbindungen beeinträchtigt sein konnte, wurde verbessert.
 
-* Die Leistung des Datenbankaktualisierungsassistenten wurde verbessert, um weniger SQL-Anweisungen auszugeben, um die Reaktionszeit zu optimieren.
+* Die Leistung des Datenbankaktualisierungs-Assistenten wurde verbessert, um weniger SQL-Anweisungen auszugeben und die Antwortzeit zu optimieren.
 
 * Das Datenbankdatensatz-Management wurde verbessert.
 
@@ -180,7 +180,7 @@ _17. Februar 2020_
 
 * Fehlerkorrektur – Beim Löschen, Einfügen oder Aktualisieren einer großen Datenmenge in einem Workflow mit der Aktivität **Daten-Update**, wobei ein FDA-Schema als Zielgruppendimension verwendet wird, tritt jetzt kein Problem mehr auf. (NEO-13280)
 
-* Es wurde ein Fehler behoben, der verhinderte, dass E-Mails gesendet werden, wenn außerhalb des HTML-Inhalts-Tags Javascript-Code vorhanden war. (NEO-18628)
+* Fehlerkorrektur – E-Mails werden jetzt auch gesendet, wenn außerhalb des HTML-Inhalts-Tags Javascript-Code vorhanden ist. (NEO-18628)
 
 * Fehlerkorrektur – Die Mirrorseite kann jetzt in den Versandlogs einer gesendeten Nachricht angezeigt werden. (NEO-17976)
 
