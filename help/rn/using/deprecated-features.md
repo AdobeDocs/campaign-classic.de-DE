@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b9577d190f26e21f116d99d48fdf2bca84585d50
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1444'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </tr>
    <tr>
   <td>SMS-Connectoren<br></td>
-  <td><p> Ab Kampagne 20.2 werden die folgenden SMS-Connectors nicht mehr unterstützt.<p>
+  <td><p> Ab Campaign-Version 20.2 werden folgende SMS-Connectoren eingestellt.<p>
    <ul>
    <li>NetSize</li>
    <li>Generic SMPP (SMPP-Version 3.4 mit Unterstützung für Binärmodus)</li>
@@ -66,7 +66,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
  </tr>
   <tr>  
    <td>Fax-Kanal<br></td>
-   <td><p>Ab Version 20.2 von Kampagne 20.2 ist der Fax-Kanal nicht mehr unterstützt.</p> 
+   <td><p>Ab Campaign-Version 20.2 wird der Fax-Kanal nicht mehr unterstützt.</p> 
    <p>Wenn Sie diesen Kanal nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Erfahren Sie mehr</a> über Campaign-Kanäle.</p>
    <p><em>Geplantes Datum für die Entfernung: 2021.</em></p></td>
   </tr>
@@ -129,10 +129,10 @@ Die folgenden Systeme werden für Campaign Classic jetzt nicht mehr unterstützt
 
 ### Adobe Campaign-Version 20.2 {#compat-20-2-release}
 
-Ab Version 20.2 werden die folgenden Systeme zum Campaign Classic nicht mehr unterstützt. Die Kompatibilität endet in Release 20.3 - Oktober 2020.
+Ab Version 20.2 werden die folgenden Systeme für Campaign Classic nicht mehr unterstützt. Die Kompatibilität endet mit Version 20.3 (Oktober 2020).
 
 * Client Console: Windows 7
-* Legacy-SMS-Connectors - siehe [Veraltete Funktionen](#deprecated-features)
+* Alte SMS-Connectoren – siehe [Eingestellte Funktionen](#deprecated-features).
 * DB2 UDB 10.5 für Federated Data Access (FDA)
 
 ### Adobe Campaign-Version 19.2  {#compat-19-2-release}
@@ -187,7 +187,7 @@ Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden To
 
 Adobe unterstützt die folgenden Datenbank-Engines nicht mehr, da sie von ihrem Anbieter eingestellt wurden. Kunden, die mit diesen Versionen arbeiten, müssen auf die neueste Version aktualisieren oder zu einer anderen Engine wechseln.
 
-Refer to [Campaign Compatibility matrix](../../rn/using/compatibility-matrix.md) to access the list of compatible versions.
+Konsultieren Sie die [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md), um sich die Liste kompatibler Versionen anzusehen.
 
 **FEDERATED DATA ACCESS (FDA)**
 
