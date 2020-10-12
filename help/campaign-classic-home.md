@@ -2,9 +2,9 @@
 keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5e765777d79df28ae306d02512851b1b3f49018d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
 ht-degree: 100%
 
@@ -17,7 +17,8 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
-* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Sie können Emoticons jetzt in Nachrichten und die Betreffzeile einfügen
+* **[Emoticons](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
+Sie können Emoticons jetzt in Nachrichten und die Betreffzeile einfügen
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>
 Häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
@@ -28,7 +29,8 @@ Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimm
 * **[Tracking-Funktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/>
 Lernen Sie die Tracking-Funktionen und -Verfahren von Campaign kennen.
 
-* **[Interaktive Inhalte mit AMP](delivery/using/defining-interactive-content.md)**<br/>Erfahren Sie, wie Sie mit dem neuen AMP-Format dynamische E-Mails senden können.
+* **[Interaktive Inhalte mit AMP](delivery/using/defining-interactive-content.md)**<br/>
+Erfahren Sie, wie Sie mit dem neuen AMP-Format dynamische E-Mails senden können.
 
 [Klicken Sie hier für weitere Updates.](/help/rn/using/documentation-updates.md)
 
