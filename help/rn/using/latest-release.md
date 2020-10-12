@@ -1,6 +1,6 @@
 ---
-title: Neueste Version
-description: Neueste Version von Campaign Classic
+title: Aktuelle Version
+description: Aktuelle Version von Campaign Classic
 page-status-flag: never-activated
 uuid: 269d590c-5a6d-40b9-a879-02f5033863fc
 contentOwner: sauviat
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Neueste Version{#latest-release}
+# Aktuelle Version{#latest-release}
 
 ![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
@@ -58,7 +58,7 @@ _22. Juli 2020_
 * Fehlerkorrektur – Der Angebotsbenachrichtigungs-Workflow funktioniert jetzt nach einem Postupgrade richtig.
 * Der iOS-HTTP2-Connector wurde verbessert (Updates von Drittanbietern und Fehlerverwaltung). (NEO-25904, NEO-25903)
 * Die Liste &quot;jarsToSkip&quot; in &quot;catalina.properties&quot; wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).
-* Fehlerkorrektur – Es wurde ein Problem behoben, das die Sendungsvorbereitung nach einem Postupgrade blockierte.
+* Fehlerkorrektur – Es wurde ein Problem behoben, das die Versandvorbereitung nach einem Postupgrade blockierte.
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
