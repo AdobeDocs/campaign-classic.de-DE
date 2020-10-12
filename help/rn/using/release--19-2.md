@@ -127,7 +127,7 @@ Die folgenden Systeme sind jetzt für Campaign Classic-Implementierungen [veralt
 * Apache 2.2
 * Centos 6
 
-Vergewissern Sie sich, dass Sie unterstützte Versionen aller Systeme verwenden, die in der neuesten Campaign-Kompatibilitätsmatrix aufgeführt sind – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
+Vergewissern Sie sich, dass Sie unterstützte Versionen aller Systeme verwenden, die in der aktuellen Campaign-Kompatibilitätsmatrix aufgeführt sind – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 _Campaign Mobile SDK_
 
