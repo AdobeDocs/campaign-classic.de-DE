@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# E-Mail-Versand erstellen{#creating-an-email-delivery}.
+# E-Mail-Versand erstellen.{#creating-an-email-delivery}
 
 Gehen Sie wie folgt vor, um einen neuen E-Mail-Versand zu erstellen:
 
