@@ -1,22 +1,22 @@
 ---
 audience: end-user
-user-guide-title: Adobe Campaign Classic-Handbuch
-breadcrumb-title: Campaign Classic Guide
+user-guide-title: Adobe Campaign Classic – Handbuch
+breadcrumb-title: Campaign Classic-Handbuch
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Design, plan, execute, manage, and optimize cross-channel marketing campaigns that deliver a high return on marketing investment.
+user-guide-description: Entwickeln, planen, ausführen, verwalten und optimieren Sie Kanal-übergreifende Marketing-Kampagnen, die eine hohe Rendite für Marketinginvestitionen erzielen.
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 98%
+source-wordcount: '2139'
+ht-degree: 99%
 
 ---
 
 
-# Adobe Campaign Classic Guide {#using}
+# Adobe Campaign Classic – Handbuch {#using}
 
 + [Produktdokumentation](campaign-classic-home.md)
 + [Neueste Aktualisierungen](rn/using/documentation-updates.md)
@@ -68,7 +68,7 @@ ht-degree: 98%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen      {#creating-queries}
+   + Abfragen erstellen       {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -265,7 +265,7 @@ ht-degree: 98%
       + [Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage erstellen](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Web-Inhalte erstellen {#designing-content}
    + Webanwendungen {#web-applications}
-      + [Erste Schritte mit Webanwendungen](web/using/about-web-applications.md)
+      + [Erste Schritte mit Web-Anwendungen](web/using/about-web-applications.md)
       + [Neue Webanwendung erstellen](web/using/creating-a-new-web-application.md)
       + [Webanwendung konzipieren](web/using/designing-a-web-application.md)
       + [Anwendungsbeispiele: Übersichten erstellen](web/using/use-cases--creating-overviews.md)
@@ -424,7 +424,7 @@ ht-degree: 98%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring   {#monitoring}
+      + Monitoring    {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -477,7 +477,7 @@ ht-degree: 98%
       + [Sendung an Mid-Sourcing-Server](workflow/using/transfer-to-mid-sourcing.md)
       + [Mid-Sourcing-Plattform](workflow/using/mid-sourcing-platform.md)
 + Verwaltung von Angeboten {#managing-offers}
-   + Get started with Interaction {#interaction-overview}
+   + Erste Schritte mit Interaction {#interaction-overview}
       + [Angebote in Interaction](interaction/using/interaction-and-offer-management.md)
       + [Glossar](interaction/using/glossary.md)
       + [Best Practices für Interaction](interaction/using/interaction-best-practices.md)
