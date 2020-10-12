@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Version 1.0.26 des iOS-SDK ist jetzt verfügbar. In diesem neuen Build wurde Unt
 
 **Korrekturen**
 
-* Es wurde ein Absturzfehler behoben, der auftrat, wenn das **Hinzufügen verknüpfte Tabellenfeld** in der Workflow-Aktivität **Data Loading (RDBMS)** leer war. (NEO-12213)
+* Fehlerkorrektur – Es wurde ein Absturzfehler behoben, der auftrat, wenn das Feld **Verknüpfte Tabelle hinzufügen** in der Workflow-Aktivität **Laden (RDBMS)** leer war. (NEO-12213)
 * Es wurde ein Fehler behoben, der dazu führte, dass bestimmte Nachrichten nicht vom Mid-Sourcing-Server verarbeitet wurden. (NEO-12395)
 * Es wurde ein Problem im Datenbankbereinigungs-Workflow behoben, das bei der Verwendung der Query Banding-Option mit Teradata auftrat. (NEO-12399)
 * Es wurde ein Problem behoben, der sich auf die Versandanalyse mit Typologieregel einschließlich der Domäne „ne.jp“ auswirkte. (NEO-12609)
@@ -149,7 +149,7 @@ Version 1.0.26 des iOS-SDK ist jetzt verfügbar. In diesem neuen Build wurde Unt
 * Es wurde ein Problem in den Workflows behoben, wenn die Aktivität **Dateiübertragung** zum Herunterladen von Dateien mit der Option **Quelldateien nach der Übertragung löschen** verwendet wurde, wobei der Name ein Leerzeichen enthielt. (NEO-13411)
 * Es wurde ein Problem mit der Tomcat-Cache-Bereinigung behoben, das zu Speicherproblemen führen konnte. (NEO-13456)
 * Es wurde ein Problem behoben, durch das das native Package **Angebotsmodul-Kontrolle durch die Ausführungsinstanz** auf einer vorhandenen Kontrollinstanz installiert wurde, die in Microsoft SQL 2017 ausgeführt wird. (NEO-13539)
-* Es wurde ein Problem mit einem Absturz der Konsole behoben, das beim Deaktivieren der Verfolgte URLs in einer E-Mail auf der Registerkarte **Textinhalt** aufgrund einer nicht initialisierten Variablen auftrat. (NEO-13545)
+* Fehlerkorrektur – Es wurde ein Absturzproblem der Konsole behoben, das auftreten konnte, wenn die Option &quot;Getrackte URLs&quot; in einer E-Mail im Tab **Textinhalt** aufgrund einer nicht initialisierten Variablen deaktiviert wurde. (NEO-13545)
 * Es wurde ein Codierungsfehler bei chinesischen Absendernamen behoben. (NEO-13837)
 * Es wurde ein Fehler behoben, der bei der Anzeige von Umfrageantwortdaten aus dem Explorer auftreten konnte. (NEO-14590)
 * Es wurde ein Problem behoben, das zu Diskrepanzen zwischen der Klassifizierung des Versandlogs und der Quarantänetabelle führen konnte. (NEO-16547)
@@ -163,6 +163,6 @@ Version 1.0.26 des iOS-SDK ist jetzt verfügbar. In diesem neuen Build wurde Unt
 * Es wurde ein Timeout-Problem beim Importieren von Daten aus einem externen SFTP behoben. (NEO-19723)
 * Es wurde ein Problem beim Zugriff auf prädiktive Modelle behoben. (NEO-19713)
 * Es wurde ein Problem behoben, das sich auf Stichproben in der **Aufspaltungs**-Aktivität im Workflow mit der Hadoop FDA-Datenbank auswirkte. (NEO-16636)
-* Korrektur einer Regression bei Oracle, die dazu führte, dass einige Funktionen nach der Aktualisierung als ungültig betrachtet wurden. (NEO-12759)
+* Fehlerkorrektur – Es wurde eine Regression bei Oracle korrigiert, die dazu führte, dass einige Funktionen nach dem Postupgrade als ungültig angesehen wurden. (NEO-12759)
 
 
