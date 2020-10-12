@@ -24,13 +24,13 @@ Adobe Campaign wird regelmäßig aktualisiert. Im Durchschnitt werden jedes Jahr
 
 Dieser regelmäßige Aktualisierungsrhythmus zielt darauf ab, Ihnen die neuesten und besten Funktionen bereitzustellen, Ihre Umgebung sicher zu halten und Ihre Produkterfahrung zu verbessern.
 
-Deshalb erachten wir es für wichtig, dass Sie die neueste Version von Adobe Campaign verwenden. Dadurch wird auch Ihre Supporterfahrung verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
+Deshalb erachten wir es für wichtig, dass Sie die aktuelle Version von Adobe Campaign verwenden. Dadurch wird auch Ihre Supporterfahrung verbessert, da das Erkennen, Reproduzieren und Beheben eines Problems in einem kürzlich erstellten Build normalerweise viel schneller erfolgt. Außerdem wurden viele potenzielle Probleme bereits in den letzten Builds behoben.
 
 ## Versionsstatus{#rn-statuses}
 
 Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet. Nachfolgend finden Sie die Liste der Status und wie sie zu interpretieren sind.
 
-![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit**: Neuester verfügbarer stabiler Build. Build in Produktion validiert.
+![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit**: Aktueller verfügbarer stabiler Build. Build in Produktion validiert.
 
 Der **aktuelle stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/gold-standard.md#gs-10).
 
