@@ -307,7 +307,7 @@ Eine neue Seite zur Fehlerbehebung wurde zum Tracking in Campaign Classic hinzu
 
 Eine neue Seite mit Best Practices für Adobe Analytics Data Connector wurde hinzugefügt. [Weitere Informationen zu Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
 
-Die ersten Schritte zum Thema Best Practices bei der Zustellung wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
+Die ersten Schritte zum Thema Best Practices beim Versand wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 In der Dokumentation zum SMS-Kanal wurde eine Empfehlung hinzugefügt, um Probleme bei der Verwendung mehrerer externer Konten zu vermeiden, indem der erweiterte allgemeine SMPP-Connector mit demselben Provider-Konto genutzt wird. [Mehr dazu](../../delivery/using/sms-channel.md#automatic-reply)
 
@@ -385,7 +385,8 @@ Der Abschnitt über Analytics Data Connector wurde aktualisiert, um Änderungen 
 
 Es wurden Informationen zum Billing-Bericht hinzugefügt. [Mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/PRO_Production_procedures_Monitoring_processes.html#Billing_report)
 
-Die Dokumentation zur Integration freigegebener Zielgruppen wurde aktualisiert. [Mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
+Die Dokumentation zur Integration freigegebener Audiences wurde aktualisiert.
+[Mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/ITG_Audience_sharing_Configuring_shared_audiences_integration_in_Adobe_Campaign.html)
 
 Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
