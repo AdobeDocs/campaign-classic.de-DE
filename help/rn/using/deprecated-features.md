@@ -152,13 +152,13 @@ Konsultieren Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matri
 
 ### Client Console {#client-console-eol}
 
-Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nicht mehr ausgeführt werden, da sie von ihrem Anbieter eingestellt wurden. Kunden, die die Campaign Client Console in einer dieser Versionen ausführen, müssen vor dem geplanten Entfernungsdatum auf die neueste Version aktualisieren. Siehe [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nicht mehr ausgeführt werden, da sie von ihrem Anbieter eingestellt wurden. Kunden, die die Campaign Client Console in einer dieser Versionen ausführen, müssen vor dem geplanten Entfernungsdatum auf die aktuelle Version aktualisieren. Siehe [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
 * Windows Server 2003, 2008, 2008 R2
 * Windows XP, Vista
 
 >[!NOTE]
->Ab Campaign-Version 20.1 ist Campaign Classic Client Console (32 Bit) nicht mehr mit den neuesten Campaign-Versionen kompatibel. Sie müssen Client Console mit 64 Bit verwenden.
+>Ab Campaign-Version 20.1 ist Campaign Classic Client Console (32 Bit) nicht mehr mit den aktuellen Campaign-Versionen kompatibel. Sie müssen Client Console mit 64 Bit verwenden.
 
 
 ### Betriebssysteme {#o-s-eol}
@@ -185,7 +185,7 @@ Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden To
 
 ### Datenbank-Engines {#dbe-eol}
 
-Adobe unterstützt die folgenden Datenbank-Engines nicht mehr, da sie von ihrem Anbieter eingestellt wurden. Kunden, die mit diesen Versionen arbeiten, müssen auf die neueste Version aktualisieren oder zu einer anderen Engine wechseln.
+Adobe unterstützt die folgenden Datenbank-Engines nicht mehr, da sie von ihrem Anbieter eingestellt wurden. Kunden, die mit diesen Versionen arbeiten, müssen auf die aktuelle Version aktualisieren oder zu einer anderen Engine wechseln.
 
 Konsultieren Sie die [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md), um sich die Liste kompatibler Versionen anzusehen.
 
