@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # Kompatibilitätsmatrix{#compatibility-matrix}
 
-In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für die neueste Version von **Adobe Campaign Classic (v6.11 und v7)** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
+In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für die aktuelle Version von **Adobe Campaign Classic (v6.11 und v7)** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 
 ## Wichtige Hinweise{#important-notes}
 
@@ -347,7 +347,7 @@ Die folgenden RDBMS-Treiber werden unterstützt:
 
 Version 11 von Internet Explorer wird unterstützt.
 
-Bei den folgenden Browsern wird die neueste Version unterstützt:
+Bei den folgenden Browsern wird die aktuelle Version unterstützt:
 
 * Microsoft Edge
 
