@@ -128,7 +128,7 @@ _17. Februar 2020_
 
 * Fehlerkorrektur – Beim Ausführen von Abfragen über den Netezza FDA-Connector tritt jetzt kein Kodierungsproblem mehr auf. (NEO-19594)
 
-* Fehlerkorrektur – Die Verwendung der POST-Methode in der Workflow-Aktivität **HTTP-Übertragung** führt jetzt zu keinem Fehler mehr.
+* Fehlerkorrektur – Die Verwendung der POST-Methode in der Workflow-Ereignisaktivität **HTTP-Übertragung** führt jetzt zu keinem Fehler mehr.
 
 * Fehlerkorrektur – Die Generierung von Angebotsvorschlägen funktioniert jetzt einwandfrei. (NEO-18176)
 
