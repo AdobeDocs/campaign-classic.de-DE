@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '3720'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## September 2020 {#september-2020}
 
-Es wurde ein Hinweis hinzugefügt, der angibt, dass die Anzahl der aktiven Profil nur für Marketinginstanzen verfügbar ist. [Mehr dazu](../../platform/using/about-profiles.md#active-profiles)
+Es wurde ein Hinweis hinzugefügt, dass die Anzahl der aktiven Profile nur für Marketing-Instanzen verfügbar ist – [mehr dazu](../../platform/using/about-profiles.md#active-profiles)
 
-Ein neues Beispiel zur Schema-Edition wurde hinzugefügt, um ein Feld mit einer vorhandenen Referenztabelle zu verknüpfen. [Mehr dazu](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+Es wurde ein neues Beispiel zur Schemabearbeitung hinzugefügt, um ein Feld mit einer vorhandenen Referenztabelle zu verknüpfen – [mehr dazu](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
-Es wurde ein Hinweis zur Verwendung zusätzlicher Daten mit Testadressen in Versänden hinzugefügt. [Mehr dazu](../../delivery/using/creating-seed-addresses.md#defining-addresses)
+Es wurde ein Hinweis zur Verwendung zusätzlicher Daten mit Testadressen in Sendungen hinzugefügt – [mehr dazu](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## August 2020 {#aug-2020}
 
@@ -99,9 +99,9 @@ Die Begriffe &quot;Whitelist&quot; und &quot;Blacklist&quot; wurden aus der Doku
 
 Die Seite über die Integration von Experience Cloud Triggers und Adobe Campaign Classic wurde [hierher](../../integrations/using/about-triggers.md) verschoben.
 
-## july 2020 {#release-20-2}
+## Juli 2020 {#release-20-2}
 
-**Neue Funktionen in Version 20.2**
+**Neue Funktionen in Version 20.2**
 
 Unterstützung für Emoticons – [mehr dazu](../../delivery/using/customizing-emoticon-list.md)
 
@@ -187,7 +187,7 @@ Der Abschnitt zur E-Mail-Archivierung wurde verbessert. [Mehr dazu](../../instal
 
 ## Januar 2020 {#release-20-1}
 
-**Neue Funktionen in Version 20.1**
+**Neue Funktionen in Version 20.1**
 
 Snowflake FDA-Connector – [mehr dazu](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
 
@@ -255,7 +255,7 @@ Die Seite „Zugriffsberechtigungsmatrix“ wurde [hierher](https://docs.adobe.c
 
 Der Abschnitt, der beschreibt, wie man interaktive Inhalte mit AMP definiert, wurde verschoben. [Mehr dazu](../../delivery/using/defining-interactive-content.md)
 
-**Neue Funktionen in Version 19.2**
+**Neue Funktionen in Version 19.2**
 
 California Consumer Privacy Act (CCPA) – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html)
 
@@ -327,7 +327,7 @@ Die Best Practices für die Leistungsverbesserung von Workflows und Sendungen wu
 
 ## Mai 2019 {#release-19-1}
 
-**Neue Funktionen in Version 19.1**
+**Neue Funktionen in Version 19.1**
 
 Control Panel – [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
 
