@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '7859'
+source-wordcount: '7857'
 ht-degree: 12%
 
 ---
@@ -572,7 +572,7 @@ Weitere Informationen finden Sie unter [Eingrenzen von autorisierten externen Be
  </thead> 
  <tbody> 
   <tr> 
-   <td> blocklistFile<br /> </td> 
+   <td> blacklistFile<br /> </td> 
    <td> Pfad zu der Datei, die die Befehle enthält, die der Zulassungsliste hinzugefügt werden sollen. <br /> </td> 
    <td> String <br /> </td> 
   </tr> 
@@ -1469,7 +1469,7 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
   </tr> 
   <tr> 
    <td> maxMemoryMb<br /> </td> 
-   <td> Maximale Speichergröße (in MB), die ein Datenverarbeitungsprozess verwenden kann. Über dieser Grenze hinaus wird der Prozess neu gestartet, sodass der verwendete Speicher an das System freigegeben wird.<br /> </td> 
+   <td> Maximale Speichergröße (in MB), die ein Datenverarbeitungsprozess verwenden kann. Über dieser Grenze hinaus wird der Prozess neu gestartet, sodass der verwendete Speicher auf das System freigegeben wird.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1024<br /> </td> 
   </tr> 
@@ -3076,7 +3076,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit, Relais](../
   </tr> 
   <tr> 
    <td> status<br /> </td> 
-   <td> Synchronisierungsstatus einer öffentliche Ressource (Auflistung). Mögliche Werte sind "normal"(normale Ausführung), "Blockierungsliste"(URL bei Fehler 404 zur Blockierungsliste hinzugefügt) und "reserve"(Datei-Upload auf Reserveserver, falls vorhanden).<br /> </td> 
+   <td> Synchronisierungsstatus einer öffentliche Ressource (Auflistung). Mögliche Werte sind "normal"(normale Ausführung), "Blacklist"(URL wird bei Fehler 404 zur Blockierungsliste hinzugefügt) und "reserve"(Datei-Upload auf Reserveserver, falls vorhanden).<br /> </td> 
    <td> String <br /> </td> 
    <td> normal<br /> </td> 
   </tr> 
@@ -3134,19 +3134,19 @@ Die Standardkonfiguration lautet:
      timeout="" status="normal" httpAllowed="true" urlPath="/nl/jsp/s.jsp"/>
 
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/nms/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/xtk/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/nl/jsp/*.jsp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="*.jssp"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="*.jssp"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="true" urlPath="/webApp/*"/>
+     timeout="" status="blacklist" httpAllowed="true" urlPath="/webApp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/report/*"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/report/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
-     timeout="" status="blocklist" httpAllowed="false" urlPath="/jssp/*"/>
+     timeout="" status="blacklist" httpAllowed="false" urlPath="/jssp/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
      timeout="" status="normal" httpAllowed="false" urlPath="/strings/*"/>
 <url IPMask="" deny="" hostMask="" relayHost="true" relayPath="true" targetUrl="http://localhost:8080"
