@@ -1,6 +1,6 @@
 ---
 title: Über Campaign-Integrationen
-description: Verwenden Sie andere Adoben und kombinieren Sie ihre verschiedenen Funktionen mit Kampagne.
+description: Verwenden Sie andere Lösungen von Adobe und kombinieren Sie deren verschiedenen Funktionen mit Campaign.
 page-status-flag: never-activated
 uuid: 087abdf0-b4b2-45e6-be21-b03bf85ddf83
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe
 >
 >Dadurch wird Empfängern, sobald sie Trackinglogs erzeugen, eine eindeutige Besucherkennung zugeordnet. Diese wird im Feld **[!UICONTROL Anforderer-UUID (@sourceID)]** der **[!UICONTROL nms:trackingLogRcp]**-Tabelle gespeichert. Trackingdaten von Empfängern, die vor der Implementierung des Besucher-ID-Services existierten, sind dann nicht mehr verwendbar.
 >
->Unter der Voraussetzung, dass sie denselben [CNAME](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/cname.html) aufweisen, erkennen die anderen Lösungen der Adobe-Experience-Cloud-Lösungen diese Kennung.
+>Unter der Voraussetzung, dass sie denselben [CNAME](https://docs.adobe.com/content/help/de-DE/id-service/using/reference/analytics-reference/cname.html) aufweisen, erkennen die anderen Lösungen der Adobe-Experience-Cloud-Lösungen diese Kennung.
 
 ## Experience Cloud-Integrationen {#experience-cloud-integrations}
 
