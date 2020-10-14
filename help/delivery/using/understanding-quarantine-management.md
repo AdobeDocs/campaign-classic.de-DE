@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 100%
+source-wordcount: '2665'
+ht-degree: 96%
 
 ---
 
@@ -34,21 +34,21 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 
 Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
-Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Anbietern auf eine Blockierungsliste gesetzt zu werden.
+Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
 
 Zusätzlich helfen Ihnen Quarantänen, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden. Weiterführende Informationen zu Best Practices zur Durchführung und Optimierung von Sendungen finden Sie auf [dieser Seite](../../delivery/using/delivery-best-practices.md) .
 
-### Quarantäne vs. Blockierungsliste {#quarantine-vs-block-list}
+### Quarantäne vs. Blockierungsliste {#quarantine-vs-denylist}
 
 Eine **Quarantäne** bezieht sich immer nur auf die Adresse, nicht aber auf das Profil selbst. Sollten zwei Profile dieselbe E-Mail-Adresse verwenden, sind beide von der Quarantäne betroffen.
 
 Falls jedoch ein Profil mit einer E-Mail-Adresse in Quarantäne eine neue Adresse angibt, kann es erneut in Versandzielgruppen aufgenommen werden.
 
-Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) der Fall. 
+Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
 
 >[!NOTE]
 >
->Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie „STOPP“ antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
+>Wenn ein Benutzer auf eine SMS-Nachricht mit einem Suchbegriff wie &quot;STOP&quot;antwortet, um sich von SMS-Versänden abzumelden, wird sein Profil nicht wie im Abmeldeprozess zur E-Mail-Nachricht hinzugefügt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
 ## In Quarantäne befindliche Adressen identifizieren    {#identifying-quarantined-addresses}
 
@@ -75,7 +75,7 @@ Folgende Informationen stehen für jede Adresse zur Verfügung:
 >Mit zunehmendem Alter der Datenbank steigt auch die Zahl der Adressen in Quarantäne. Wenn man beispielsweise davon ausgeht, dass eine E-Mail-Adresse eine Lebensdauer von etwa drei Jahren hat und dass die Empfängertabelle pro Jahr um 50 % wächst, lässt sich der Quarantänezuwachs wie folgt berechnen:
 >
 >Ende 1. Jahr: (1 x 0,33) / (1 + 0,5) = 22 %.
->Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
+Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 ### In Versandberichten in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -107,9 +107,7 @@ Manuelles Entfernen einer Adresse aus der Quarantäneliste:
 
    ![](assets/tech_quarant_error_status.png)
 
-* Sie können den Status auch auf **[!UICONTROL Auf Zulassungsliste]** ändern. In diesem Fall bleibt die Adresse auf der Quarantäneliste, aber sie wird systematisch als Ziel ausgewählt, selbst wenn ein Fehler auftritt.
-
-<!--Addresses on the block list are not concerned by the quarantine system and are not targeted, even if you change the status of the address.-->
+* Sie können auch ihren Status in **[!UICONTROL Auf die Zulassungsliste gesetzt]**&#x200B;ändern. In diesem Fall bleibt die Adresse auf der Quarantäneliste, aber sie wird systematisch als Ziel ausgewählt, selbst wenn ein Fehler auftritt.
 
 In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
 
@@ -120,8 +118,7 @@ In den folgenden Fällen werden die Adressen automatisch aus der Quarantänelist
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
->
->Empfänger mit einer Adresse in einer **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Recipients with an address in a **[!UICONTROL Quarantine]** or **[!UICONTROL On denylist]** status will never be removed, even if they receive an email.
 
 Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Softwareverteilungs-Assistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
@@ -274,11 +271,10 @@ Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden zur Akt
 Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgeschlossen werden, automatisch zur Tabelle **excludeLogAppSubRcp** hinzugefügt.
 
 >[!NOTE]
->
->Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
->* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
->* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
->* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
+Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
+* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
+* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
+* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
 
 Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der versendeten Nachrichten abzurufen, und aktualisiert die Versandlogs. Wenn eine Nachricht als gesendet gemeldet wird, ändert sich der Status der Nachricht in den Versandlogs in **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** gesetzt.
 
@@ -370,8 +366,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
 Der Quarantänemechanismus für SMS-Nachrichten ist global gesehen mit dem allgemeinen Prozess identisch. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Die Besonderheiten bei SMS-Nachrichten sind unten aufgeführt.
 
 >[!NOTE]
->
->Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
+Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
 
 <table> 
  <tbody> 
@@ -429,9 +424,8 @@ Der SMPP-Connector ruft zum Filtern des Inhalts mithilfe regulärer Ausdrücke (
 Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standardmäßig auf **Abgelehnt** gesetzt.
 
 >[!NOTE]
->
->Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
+Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
 
 Beispiel einer generierten Nachricht:
 
