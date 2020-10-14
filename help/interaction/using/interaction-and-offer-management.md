@@ -1,6 +1,6 @@
 ---
 title: Angebote in Interaction
-description: Schicken Sie die besten Angebot auf Basis von Eignungsregeln an Ihre Ansprechpartner.
+description: Senden Sie Ihren Kontakten anhand von Eignungsregeln die besten Angebote.
 page-status-flag: never-activated
 uuid: 70720baa-e64e-4fb6-8301-fe3920791f79
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
