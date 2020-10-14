@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen publiziert wurde, ka
 
 >[!NOTE]
 >
->Diese Funktion ist ab Kampagne 20.2 verfügbar.
+>Diese Funktion ist ab Campaign-Version 20.2 verfügbar.
 
 Eine publizierte Vorlage kann aufgerufen werden. Darum wird empfohlen, eine Nachrichtenvorlage zu depublizieren, wenn Sie sie nicht mehr verwenden. Damit soll verhindert werden, dass versehentlich unerwünschte Transaktionsnachrichten gesendet werden. Gehen wir beispielsweise davon aus, dass Sie eine Nachrichtenvorlage publiziert haben, die Sie nur für Weihnachtskampagnen verwenden. Sie können die Vorlage nach der Weihnachtszeit depublizieren und im nächsten Jahr erneut publizieren.
 
