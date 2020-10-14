@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: api
 discoiquuid: e7b3ffca-c85f-498d-89b4-23fcff59de49
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 4%
 
 ---
@@ -147,7 +147,7 @@ Wenn der Empfänger nicht in der Datenbank vorhanden ist oder nicht für den bet
 
 >[!NOTE]
 >
->Wenn der Dienstname nicht als Parameter angegeben wird, wird der Empfänger automatisch auf der Blockierungsliste (@Blockierungsliste=&quot;1&quot;) angezeigt.
+>Wenn der Dienstname nicht als Parameter angegeben ist, wird der Empfänger automatisch auf Blockierungsliste(@blackList=&quot;1&quot;) gesetzt.
 
 Dieser Aufruf gibt keine Daten außer Fehler zurück.
 
