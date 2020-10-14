@@ -1,7 +1,7 @@
 ---
 title: Marketingkampagnen entwerfen
 seo-title: Marketingkampagnen entwerfen
-description: Definieren, Optimieren, Ausführen und Analysieren von Marketing-Kampagnen.
+description: Sie können Marketing-Kampagnen entwerfen, optimieren, ausführen und analysieren.
 seo-description: null
 page-status-flag: never-activated
 uuid: e0fd5df6-7516-4ca6-bbdf-243a264d0283
@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
