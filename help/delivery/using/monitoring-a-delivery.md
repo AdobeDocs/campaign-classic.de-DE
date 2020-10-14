@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 3aab3d47-76fd-4c68-add4-9c14240c936e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2644'
-ht-degree: 100%
+source-wordcount: '2639'
+ht-degree: 97%
 
 ---
 
@@ -114,12 +114,12 @@ Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand 
 
 Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
 
-* Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](../../delivery/using/about-deliverability.md).
+* Einige E-Mail-Anbieter haben möglicherweise Ihre IP-Adressen zu einer Blockierungsliste hinzugefügt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](../../delivery/using/about-deliverability.md).
 * Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md).
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
    * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL Kontingent ausgeschöpft]**): Das in Campaign von den MX-Regeln definierte Kontingent ist ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](../../delivery/using/deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie auf [dieser Seite](../../delivery/using/technical-recommendations.md#mx-rules).
-   * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL dynamische Durchsatzkontrolle]**): Vom Campaign MTA wurden beim Sendeversuch an einen ISP Fehler entdeckt, weshalb der Versand verlangsamt wurde, um die Fehlerdichte zu verringern und zu vermeiden, dass die IP-Adresse auf eine Blockierungsliste gesetzt wird.
+   * Messages pended (**[!UICONTROL dynamic flow control]** message): Campaign MTA has encountered errors when trying to deliver messages for a given ISP which causes a slowdown to avoid too big of an error density and thus facing potential denylist.
 
 * Durch einen Systemfehler wird möglicherweise verhindert, dass Server miteinander interagieren. Dadurch kann sich der gesamte Versandvorgang verlangsamen. Überprüfen Sie die Server, um sicherzustellen, dass keine Speicher- oder Ressourcenfehler vorliegen, die Campaign beispielsweise daran hindern können, Personalisierungsdaten abzurufen.
 
@@ -163,7 +163,7 @@ Beim Versand können folgende Status auf dem Versand-Dashboard angezeigt werden:
   </tr> 
   <tr> 
    <td> Ignoriert<br /> </td> 
-   <td> Der Versand wurde aufgrund eines Fehlers in der Adresse des Empfängers nicht an diesen geschickt. Sie wurde entweder zu einer Blockierungsliste hinzugefügt, unter Quarantäne gestellt, nicht bereitgestellt oder war ein Duplikat. <br /> </td> 
+   <td> Der Versand wurde aufgrund eines Fehlers in der Adresse des Empfängers nicht an diesen geschickt. Es war entweder auf Blockierungsliste, unter Quarantäne gestellt, nicht bereitgestellt oder ein Duplikat. <br /> </td> 
   </tr> 
   <tr> 
    <td> Gesendet<br /> </td> 
@@ -241,7 +241,7 @@ Wenn der Status eines E-Mail-Versands **[!UICONTROL Fehlgeschlagen]** lautet, ka
 
 Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen Sendungen, wie z. B.:
 
-* Wenn Empfängernachrichten mit einem Fehler „Nicht erreichbar“ fehlschlagen, der Folgendes angibt: **Fehler beim Kompilieren der Skriptzeile &#39;content htmlContent&#39; Zeile X:`[table]`ist nicht definiert. JavaScript: Fehler beim Auswerten des Inhalts des Skripts htmlContent**. Die Ursache für dieses Problem ist fast immer eine Personalisierung innerhalb des HTML-Codes, die versucht, eine Tabelle oder ein Feld aufzurufen, die bzw. das bei der vorangegangenen Zielgruppenbestimmung oder beim Zielgruppen-Mapping des Versands nicht definiert oder zugeordnet wurde.
+* Wenn Empfängernachrichten mit einem Fehler „Nicht erreichbar“ fehlschlagen, der Folgendes angibt: **Fehler beim Kompilieren der Skriptzeile &#39;content htmlContent&#39; Zeile X: `[table]` ist nicht definiert. JavaScript: Fehler beim Auswerten des Inhalts des Skripts htmlContent**. Die Ursache für dieses Problem ist fast immer eine Personalisierung innerhalb des HTML-Codes, die versucht, eine Tabelle oder ein Feld aufzurufen, die bzw. das bei der vorangegangenen Zielgruppenbestimmung oder beim Zielgruppen-Mapping des Versands nicht definiert oder zugeordnet wurde.
 
    Um dieses Problem zu beheben, müssen der Workflow und der Versandinhalt überprüft werden, um festzustellen, welcher Personalisierungsinhalt konkret die Tabelle aufrufen möchte und ob die Tabelle zugeordnet werden kann. Danach muss entweder der Aufruf dieser Tabelle in der HTML-Datei entfernt oder das Mapping mit dem Versand korrigiert werden.
 
