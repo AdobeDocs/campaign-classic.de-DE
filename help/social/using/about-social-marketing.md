@@ -1,6 +1,6 @@
 ---
 title: Über Social Marketing
-description: Erfahren Sie, wie Sie mit Kampagne über Facebook und Twitter mit Ihren Kunden interagieren können.
+description: Erfahren Sie, wie Sie mit Campaign über Facebook und Twitter mit Ihren Kunden interagieren können.
 page-status-flag: never-activated
 uuid: 64c861e3-b685-44e2-9b5b-4fbf5d70baa9
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
