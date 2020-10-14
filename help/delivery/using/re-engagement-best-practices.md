@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 853f26ad-d373-49a5-952e-4197ffc3d904
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '878'
 ht-degree: 94%
 
 ---
@@ -52,7 +52,7 @@ Laut einer Studie von Return Path erzielten Rückgewinnungskampagnen eine Öffnu
 ### Phase 1 {#phase-1}
 
 * Zunächst müssen die Abonnenten identifiziert werden, die nur sehr geringe oder gar keine Öffnungs- oder Klickaktivität zeigen, und entsprechend einem bestimmten Zeitrahmen aufgeteilt werden. Als Faustregel sollten alle Abonnenten überprüft werden, die innerhalb der letzten 90 Tage keine E-Mails geöffnet oder angeklickt haben. Doch dies variiert je nach Geschäftstätigkeit (z. B. saisonaler Versand).
-* Bei der Festlegung von Zeitrahmen sollten Sie auch bedenken, dass ISPs und Firmen der Blockierungsliste die Interaktion für einen Zeitraum zwischen 1,5 und 1,8 Jahren halten. Darüber hinaus können Sie verhaltensbezogene Aktivitäten wie Einkäufe und Website-Aktivität oder andere Berührungspunkte, wie z. B. Voreinstellungen während der Anmeldungsphase oder beim ersten Kontakt, verwenden.
+* Bei der Festlegung von Zeitrahmen sollten Sie auch bedenken, dass die Firmen der ISPs und der Blockierungslisten eine Interaktion zwischen 1,5 und 1,8 Jahren betrachten. Darüber hinaus können Sie verhaltensbezogene Aktivitäten wie Einkäufe und Website-Aktivität oder andere Berührungspunkte, wie z. B. Voreinstellungen während der Anmeldungsphase oder beim ersten Kontakt, verwenden.
 
 ### Phase 2 {#phase-2}
 
