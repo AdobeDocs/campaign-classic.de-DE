@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '3626'
+source-wordcount: '3620'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ Im folgenden Abschnitt werden serverseitige Konfigurationen beschrieben, die ent
 >
 >Diese Konfigurationen müssen von Administratoren und nur für **lokale** Hostingmodelle durchgeführt werden.
 >
->Bei **gehosteten** Bereitstellungen können serverseitige Einstellungen nur von der Adobe konfiguriert werden. Einige Einstellungen können jedoch in der Systemsteuerung eingerichtet werden (z. B. IP-Zulassungsliste oder URL-Berechtigungen).
+>Bei **gehosteten** Bereitstellungen können serverseitige Einstellungen nur von der Adobe konfiguriert werden. Einige Einstellungen können jedoch in der Systemsteuerung eingerichtet werden (z. B. IP-Zulassungsliste-Management oder URL-Berechtigungen).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -355,7 +355,7 @@ Bei **Hybrid** - und **On-Premise** -Hostmodellen muss der Administrator auf ein
 
 Es gibt drei Modi für den Verbindungsschutz:
 
-* **Blockierung**: alle URLs, die nicht zur Zulassungsliste gehören, mit einer Fehlermeldung blockiert werden. Dies ist der Standardmodus nach einem Postupgrade.
+* **Blockierung**: alle URLs, die nicht zur Zulassungsliste gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
 * **Zulässig**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig.
 * **Warnung**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig, der JS-Interpreter gibt jedoch eine Warnung aus, sodass der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen für JST-310027 hinzugefügt.
 
@@ -452,7 +452,7 @@ sh
 >
 >Diese Liste ist nicht erschöpfend.
 
-Im **exec** -Knoten der Serverkonfigurationsdatei müssen Sie auf die zuvor erstellte Datei im **Attribut blocklistFile** verweisen.
+Im **exec** -Knoten der Serverkonfigurationsdatei müssen Sie auf die zuvor erstellte Datei im **blacklistFile** -Attribut verweisen.
 
 **Nur** für Linux: in der Serverkonfigurationsdatei sollten Sie einen Benutzer angeben, der externe Befehle ausführen soll, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im **exec** -Knoten der Konfigurationsdatei festgelegt. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
@@ -464,7 +464,7 @@ Beispiel:
 
 ```
 <serverConf>
- <exec user="theUnixUser" blocklistFile="/pathtothefile/blocklist"/>
+ <exec user="theUnixUser" blacklistFile="/pathtothefile/blacklist"/>
 </serverConf>
 ```
 
