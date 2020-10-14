@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '857'
+ht-degree: 93%
 
 ---
 
@@ -25,8 +25,6 @@ ht-degree: 100%
 ## Über Listen in Adobe Campaign {#about-lists-in-adobe-campaign}
 
 Eine Liste ist eine statische Gruppe von Profilen, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank gefilterte Population in einer Liste gespeichert werden.
-
-
 
 Listen werden über den Link **[!UICONTROL Listen]** im Tab **[!UICONTROL Profile und Zielgruppen]** erstellt und verwaltet.
 
@@ -41,6 +39,8 @@ In Adobe Campaign sind zwei Arten von Listen verfügbar:
 * **[!UICONTROL Liste]**: Die Listen vom Typ **[!UICONTROL Liste]** ermöglichen zum Erstellen und Verwalten von Listen die Verwendung von Workflows. In diesem Fall handelt es sich um besondere, durch Datenimport erstellte Listen, die mithilfe der Workflow-Aktivität **[!UICONTROL Listen-Update]** automatisch auf den neuesten Stand gebracht werden können.
 
    Im Gegensatz zu Listen vom Typ **[!UICONTROL Gruppe]** können diese Listen automatisch mit der Aktivität **[!UICONTROL Planung]** aktualisiert werden. Ein Beispiel für die Erstellung von Listen vom Typ **[!UICONTROL Liste]** finden Sie auf [dieser Seite](../../workflow/using/list-update.md).
+
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#create-list-video).
 
 ## Profilliste von einer Gruppe erstellen {#creating-a-profile-list-from-a-group}
 
@@ -131,3 +131,22 @@ Listen werden ausgehend vom Adobe-Campaign-Navigationsbaum über den Link **[!UI
 >
 >Die Löschung einer Liste hat außer der Aktualisierung der Profildaten keinen Einfluss auf die der Liste zugeordneten Profile.
 
+## Erstellen einer Liste von Empfängern {#create-list-video}
+
+Eine Liste ist ein statischer Satz von Empfängern, die in Versandaktionen als Zielkontakte dienen oder beim Importieren bzw. bei der Workflow-Ausführung aktualisiert werden können. Eine Liste von Empfängern wird auch als Audience bezeichnet.
+
+Erfahren Sie, wie Sie eine Audience erstellen, indem Sie eine Liste von Empfängern aus dem Explorer konfigurieren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+
+## Erstellen einer Liste von Empfängern mit einem Workflow
+
+Erfahren Sie, wie Sie einen Workflow zur Zielgruppe von Empfängern erstellen und wie Sie ihn vor der Verwendung der Liste in einer E-Mail-Zielgruppe wiederholen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+
+**Siehe auch**
+
+* 
+
+* 
