@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: 2ea2747f-957f-41a9-a03f-20c03fa99116
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 93%
+source-wordcount: '1587'
+ht-degree: 91%
 
 ---
 
@@ -151,6 +151,7 @@ Sie können auch die [Tipps und bekannten Einschränkungen für Gmail](https://d
 Derzeit können Sie das Senden einer AMP-E-Mail in zwei Schritten testen:
 
 1. Mit Adobe Campaign können Sie den Versand einer dynamischen AMP-E-Mail an ausgewählte E-Mail-Adressen, die entsprechend konfiguriert wurden, testen, um deren Inhalt und Verhalten zu überprüfen. Siehe [Testen des AMP-E-Mail-Versands für ausgewählte Adressen](#testing-amp-delivery-for-selected-addresses).
+
 1. Nach dem Test können Sie einen Versand oder eine Kampagne als Teil des AMP für E-Mail-Programm senden, indem Sie sich bei dem/den entsprechenden E-Mail-Anbieter(s) registrieren, damit Ihre Absenderdomäne der Zulassungsliste hinzugefügt wird. Siehe [Senden von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter](#delivering-amp-emails-by-registering).
 
 ### Testen des AMP-E-Mail-Versands für ausgewählte Adressen {#testing-amp-delivery-for-selected-addresses}
@@ -161,7 +162,7 @@ Sie können das Senden dynamischer Nachrichten von Adobe Campaign an ausgewählt
 >
 >Zurzeit unterstützen nur Gmail, Outlook und Mail.ru ein Testen des AMP-Formats.
 
-Für Gmail und Outlook müssen Sie zunächst die Absenderadressen auf die Zulassungsliste setzen, die Sie verwenden, um einen Versand über Adobe Campaign an die gewünschten Gmail- und Outlook-Zielkonten durchzuführen.
+Bei Gmail und Outlook müssen Sie zuerst die Absenderadresse(n) hinzufügen, die Sie zur Bereitstellung aus Adobe Campaign für die Gmail- und Outlook-Konten verwenden, die Sie als Ziel auswählen.
 
 Gehen Sie dazu wie folgt vor:
 1. Stellen Sie sicher, dass die Option zum Aktivieren dynamischer E-Mail bei den entsprechenden E-Mail-Anbietern aktiviert ist.
