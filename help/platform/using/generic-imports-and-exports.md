@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 100%
+source-wordcount: '534'
+ht-degree: 96%
 
 ---
 
@@ -40,11 +40,11 @@ Sie haben folgende Möglichkeiten:
 >
 >Datenimporte in Campaign sollten über Workflows durchgeführt werden, da dies die Konsistenz der Daten sicherstellt und die Effizienz erhöht. Weiterführende Informationen dazu finden Sie in den Abschnitten [Datenimport](../../workflow/using/importing-data.md), [Best Practices beim Datenimport](../../workflow/using/importing-data.md#best-practices-when-importing-data) und [Beispiel für eine Importvorlage](../../workflow/using/importing-data.md#setting-up-a-recurring-import).
 
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](../../platform/using/exporting-and-importing-profiles.md#import-profiles-video).
+
 ## Bearbeitungsvorlage erstellen {#creating-a-job-template}
 
 Import- und Exportvorlagen finden Sie im Adobe-Campaign-Navigationsbaum unter dem Menüpunkt **[!UICONTROL Ressourcen > Vorlagen > Bearbeitungsvorlagen]**.
-
-![](assets/s_ncs_user_export_wizard_template.png)
 
 Standardmäßig sind in diesem Verzeichnis drei Importvorlagen und eine Exportvorlage gespeichert. Diese Vorlagen dürfen nicht verändert werden. Es besteht jedoch die Möglichkeit, sie zu duplizieren, um sie Ihren Bedürfnissen anzupassen. Wählen Sie zur Erstellung einer von Grund auf neuen Vorlage **[!UICONTROL Neu > Importvorlage]** bzw. **[!UICONTROL Exportvorlage]** aus.
 
@@ -54,7 +54,7 @@ Das Verfahren zum Erstellen einer Prozessvorlage wird unter [Export-Assistent](.
 
 >[!NOTE]
 >
->Die native **[!UICONTROL Import-Blockierungsliste]** für Vorlagen ist bereits für den Import einer Liste von E-Mail-Adressen konfiguriert, die der Blockierungsliste hinzugefügt wurden.
+>The native template **[!UICONTROL Import denylist]** is already configured to import a list of email addresses which were added to the denylist.
 > 
 >Mit den Vorlagen **[!UICONTROL Neuer Textimport]** und **[!UICONTROL Neuer Textexport]** können Sie einen völlig neuen Import oder Export konfigurieren.
 
