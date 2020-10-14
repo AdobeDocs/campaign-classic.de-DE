@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2104'
+source-wordcount: '2100'
 ht-degree: 99%
 
 ---
@@ -276,8 +276,8 @@ Folgende vordefinierte Filter stehen standardmäßig zur Verfügung:
    <td> Auswahl der Empfänger, die in den letzten X Monaten mindestens Y Mal geklickt haben.<br /> </td> 
   </tr> 
   <tr> 
- <td> Email address on the block list<br /> </td> 
-    <td> Wählt Empfänger aus, deren E-Mail-Adresse sich auf der Blockierungsliste befindet.<br/> </td>
+ <td> E-Mail-Adresse, die auf die Blockierungsliste gesetzt wurde<br /> </td> 
+    <td> Wählt Empfänger aus, deren E-Mail-Adresse auf der Blockierungsliste liegt.<br/> </td>
   </tr> 
   <tr> 
    <td> E-Mail-Adresse in Quarantäne<br /> </td> 
