@@ -11,11 +11,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '2654'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+workflow-type: tm+mt
+source-wordcount: '2653'
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ _30. Mai 2019_
  <tbody> 
   <tr> 
    <td> Control Panel<br /> </td> 
-   <td> <p>Sie können die Einstellungen Ihrer SFTP-Server mittels Speicherüberwachung verwalten, IP-Adressen auf die Zulassungsliste setzen und für jede Instanz SSH-Schlüssel installieren, um die Effizienz Ihrer Arbeit als Admin-Benutzer zu steigern. Beachten Sie, dass das Control Panel von jetzt an nur für Kunden verfügbar ist, die auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich noch heute über Experience Cloud an</a>).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf das Control Panel ist keine Aktualisierung auf den aktuellen Campaign-Build nötig.</p> </td> 
+   <td> <p>Um die Effizienz Ihrer Arbeit als Admin-Benutzer zu steigern, verwalten Sie die Einstellungen Ihrer SFTP-Server durch Überwachung der Datenspeicherung, fügen Sie IP-Adressen zur Zulassungsliste hinzu und installieren Sie für jede Instanz SSH-Schlüssel. Beachten Sie, dass das Control Panel von jetzt an nur für Kunden verfügbar ist, die auf AWS gehostet werden (<a href="https://experiencecloud.adobe.com/campaign/controlpanel/">melden Sie sich noch heute über Experience Cloud an</a>).</p> <p>Weiterführende Informationen finden Sie in der <a href="https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html">ausführlichen Dokumentation</a> und in <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/administrating/control-panel-acc/control-panel-overview.html">diesem Video</a>. </p><p>Hinweis: Für den Zugriff auf das Control Panel ist keine Aktualisierung auf den aktuellen Campaign-Build nötig.</p> </td> 
   </tr> 
     <tr> 
    <td> Audit-Protokoll<br /> </td> 
