@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 97%
+source-wordcount: '1638'
+ht-degree: 98%
 
 ---
 
@@ -164,7 +164,7 @@ Dieser Bericht zeigt die wichtigsten Informationen zu einem Versand.
 Dieser Bereich zeigt zwei Indikatoren:
 
 * **[!UICONTROL Ursprungspopulation]**: Gesamtzahl der Empfänger, die den Versand erhalten sollen.
-* **[!UICONTROL Von der Regel]** abgelehnte Nachrichten: Anzahl der Adressen, die während der Analyse bei der Anwendung von Typologieregeln ignoriert wurden: Adresse fehlt, unter Quarantäne gestellt, der Blockierungsliste hinzugefügt usw. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
+* **[!UICONTROL Von der Regel]** abgelehnte Nachrichten: Anzahl der Adressen, die während der Analyse bei der Anwendung von Typologieregeln ignoriert wurden: Adresse fehlt, in Quarantäne gestellt, auf Blockierungsliste usw. For more information on typology rules, refer to this [page](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies).
 
 **[!UICONTROL Ausschlussgründe]**
 
