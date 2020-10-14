@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 94%
+source-wordcount: '2463'
+ht-degree: 93%
 
 ---
 
@@ -255,7 +255,7 @@ IP-Zertifizierung ist ein Best Practices-Sendeprogramm, mit dem sichergestellt w
 
 Derzeit bieten zwei Anbieter eine IP-Zertifizierung an: Return Path und Certified Senders Alliance.
 
-Zertifizierte Absender werden E-Mail-Zulassungslisten hinzugefügt, die von globalen E-Mail-Anbietern und E-Mail-Sicherheitsunternehmen verwendet werden. Diese kommerziellen Zulassungslisten basieren auf einem System, das es dem Absender ermöglicht, Anti-Spam-Filter ganz zu umgehen oder inkrementelle Punkte beim Einstieg in das System zuzuweisen.
+Zertifizierte Absender werden zu E-Mail-Zulassungslisten hinzugefügt, die von globalen Postfachanbietern und E-Mail-Firmen verwendet werden. Diese kommerziellen Zulassungslisten basieren auf einem System, das es dem Absender ermöglicht, Anti-Spam-Filter ganz zu umgehen oder inkrementelle Punkte beim Einstieg in das System zuzuweisen.
 
 Das [Zertifizierungsprogramm von Return Path](https://www.validity.com/products/returnpath/certification/) bietet eine Reihe von Vorteilen, darunter die folgenden:
 
