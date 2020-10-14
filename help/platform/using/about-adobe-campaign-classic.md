@@ -1,7 +1,7 @@
 ---
 title: Über Adobe Campaign Classic
 seo-title: Über Adobe Campaign Classic
-description: Entdecken Sie wichtige Funktionen, die Benutzeroberfläche und globale Richtlinien.
+description: Erfahren sie mehr über wichtige Funktionen, die Benutzeroberfläche und globale Richtlinien.
 seo-description: null
 page-status-flag: never-activated
 uuid: 2d0160fa-8328-4ff9-ab91-56e4058f8a99
@@ -15,12 +15,12 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '883'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Get Started with Campaign Classic{#about-adobe-campaign-classic}
+# Erste Schritte mit Campaign Classic{#about-adobe-campaign-classic}
 
 Um ein hohes Maß an Kundeninteraktion und herausragende Erlebnisse zu schaffen, müssen Marken auf allen Kontaktpunkten eine konsistente Customer Journey bereitstellen. Jetzt können Marketer effizient kanalübergreifende Marketing-Kampagnen konzipieren, planen, verwalten und optimieren, die einen hohen ROI bieten und die Kundentreue fördern.
 
@@ -32,7 +32,7 @@ Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dia
 
 ## Wichtigste Funktionen {#key-capabilities}
 
-Adobe Campaign bietet eine Plattform zur Konzeption kanalübergreifender Kundenerlebnisse und stellt dazu eine Umgebung für die Entwicklung visueller Kampagnen, die Verwaltung von Echtzeit-Interaktionen und die kanalübergreifende Umsetzung bereit.
+Adobe Campaign bietet eine Plattform zur Konzeption kanalübergreifender Kundenerlebnisse und stellt dazu eine Umgebung für die Orchestrierung visueller Kampagnen, die Verwaltung von Echtzeit-Interaktionen und die kanalübergreifende Umsetzung bereit.
 
 Die Zyklen einer mit Adobe Campaign gesteuerten Marketingkampagne stellen die Hauptfunktionen der Software dar:
 
@@ -52,7 +52,7 @@ Adobe Campaign enthält leistungsstarke Analyse- und Zielgruppenbestimmungsfunkt
 
 Fortgeschrittene Data-Management-Funktionen erweitern die Datenverarbeitungskapazitäten. Sie vereinfachen und optimieren den Zielgruppenbestimmungsprozess, indem sie nicht modellierte Daten in den Data-Mart einschließen. Diese Funktionen werden auf [dieser Seite](../../workflow/using/targeting-data.md#data-management) genauer erläutert.
 
-### Kanalübergreifende Abstimmung einer Kampagne {#cross-channel-campaign-orchestration}
+### Kanalübergreifende Orchestrierung einer Kampagne {#cross-channel-campaign-orchestration}
 
 Adobe Campaign unterstützt Sie bei der Konzeption und Durchführung von zielgerichteten und personalisierten Kampagnen unter Verwendung verschiedenster Kanäle: E-Mail, Briefpost, SMS und Push-Benachrichtigung. Über nur eine Plattform können Sie alle Ihre Kampagnen und Kommunikationen planen, steuern, konfigurieren, personalisieren, automatisieren, ausführen und messen. Planung und Ausführung von Kampagnen werden auf [dieser Seite](../../campaign/using/setting-up-marketing-campaigns.md) beschrieben.
 
