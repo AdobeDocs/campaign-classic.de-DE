@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: 9c1884f6-1dd8-41ab-b8dc-604c8cc2dc89
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
 workflow-type: tm+mt
 source-wordcount: '3930'
 ht-degree: 3%
@@ -648,7 +648,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TempDbName</span> <br /> </td> 
-   <td> Damit können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren, um Backups und Replizierung zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden, falls angegeben, in diese Datenbank geschrieben. Beispiel: 'tempdb.dbo' (Beachten Sie, dass der Name mit einem Punkt enden muss).</desc> <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Mehr dazu</a> <br /> </td> 
+   <td> Damit können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren, um Backups und Replizierung zu optimieren. Die Option entspricht dem Namen der temporären Datenbank: Arbeitstabellen werden, falls angegeben, in diese Datenbank geschrieben. Beispiel: 'tempdb.dbo' (Beachten Sie, dass der Name mit einem Punkt enden muss). <a href="../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server">Mehr dazu</a> <br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcTimeZone</span> <br /> </td> 
