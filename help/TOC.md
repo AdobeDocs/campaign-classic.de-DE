@@ -1,9 +1,9 @@
 ---
 audience: end-user
 user-guide-title: Adobe Campaign Classic – Handbuch
-breadcrumb-title: Campaign Classic-Handbuch
+breadcrumb-title: Campaign Classic-Anleitung
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Entwickeln, planen, ausführen, verwalten und optimieren Sie Kanal-übergreifende Marketing-Kampagnen, die eine hohe Rendite für Marketinginvestitionen erzielen.
+user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalübergreifende Marketing-Kampagnen, die einen hohen Return on Marketing Investment erzielen.
 product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '2139'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
