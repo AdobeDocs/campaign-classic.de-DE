@@ -1,6 +1,6 @@
 ---
 title: Informationen zum Adobe Campaign Classic-Datenmodell
-description: Erfahren Sie, wie Sie das Datenmodell der Kampagne erweitern, Schema bearbeiten, APIs verwenden und vieles mehr.
+description: Erfahren Sie, wie Sie das Datenmodell der Campaign erweitern, Schemata bearbeiten, APIs verwenden und vieles mehr.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '976'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
