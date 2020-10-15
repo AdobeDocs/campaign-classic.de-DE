@@ -1,6 +1,6 @@
 ---
-title: Über Webanwendungen
-description: Erstellen und teilen Sie dynamische Webanwendungen, Landingpages und Umfragen.
+title: Über Web-Anwendungen
+description: Erstellen und teilen Sie dynamische Web-Anwendungen, Landingpages und Umfragen.
 page-status-flag: never-activated
 uuid: acfa6e5e-b503-4a1a-871e-e70007874f57
 contentOwner: sauviat
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Erste Schritte mit Webanwendungen{#about-web-applications}
+# Erste Schritte mit Web-Anwendungen{#about-web-applications}
 
 Adobe Campaign ermöglicht Ihnen, mit Daten aus der Datenbank dynamische und interaktive Webanwendungen zu erstellen und zu veröffentlichen, wobei die Inhalte auf die jeweiligen Benutzerrechte abgestimmt sind.
 
