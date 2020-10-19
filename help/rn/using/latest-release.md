@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d65e6f48bd84a2342895beca4a4ac184b57bf7c3
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 100%
+source-wordcount: '2188'
+ht-degree: 99%
 
 ---
 
 
 # Aktuelle Version{#latest-release}
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Version** vom Oktober der Systemsteuerung mit Domänenkonfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
 
@@ -61,6 +61,8 @@ _22. Juli 2020_
 * Fehlerkorrektur – Es wurde ein Problem behoben, das die Versandvorbereitung nach einem Postupgrade blockierte.
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
+
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
