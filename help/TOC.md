@@ -55,7 +55,7 @@ ht-degree: 100%
       + [Über Profile](platform/using/about-profiles.md)
       + [Profile bearbeiten](platform/using/editing-a-profile.md)
       + [Profile hinzufügen](platform/using/adding-profiles.md)
-      + [Verwaltung von Profilen](platform/using/managing-profiles.md)
+      + [Profile verwalten](platform/using/managing-profiles.md)
       + [Daten aktualisieren](platform/using/updating-data.md)
       + [Profile im-/exportieren](platform/using/exporting-and-importing-profiles.md)
       + [Listen erstellen und verwalten](platform/using/creating-and-managing-lists.md)
@@ -86,7 +86,7 @@ ht-degree: 100%
       + [Erstellen des Datenschemas](platform/using/creating-data-schema.md)
       + [Definition des Daten-Mappings](platform/using/defining-data-mapping.md)
       + [Zusätzliche Optionen](platform/using/additional-options.md)
-      + [Anlagen](platform/using/appendices-fda.md)
+      + [Anhänge](platform/using/appendices-fda.md)
    + Connectoren {#connectors}
       + [Über Connectoren](platform/using/about-connectors.md)
       + [CRM-Connectoren](platform/using/crm-connectors.md)
@@ -152,8 +152,8 @@ ht-degree: 100%
       + [Über Dienste und Abonnements](delivery/using/about-services-and-subscriptions.md)
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
       + [Virale Marketingstrategien](delivery/using/viral-and-social-marketing.md)
-   + Sendungen beobachten {#monitoring-deliveries}
-      + [Sendungen beobachten](delivery/using/monitoring-a-delivery.md)
+   + Sendungen überwachen {#monitoring-deliveries}
+      + [Sendungen überwachen](delivery/using/monitoring-a-delivery.md)
       + [Ursachen von fehlgeschlagenen Sendungen](delivery/using/understanding-delivery-failures.md)
       + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
    + Nachrichten tracken {#tracking-messages}
@@ -169,7 +169,7 @@ ht-degree: 100%
       + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
       + [Verbessern der Reputation](delivery/using/improve-reputation.md)
       + [Technische Empfehlungen](delivery/using/technical-recommendations.md)
-      + [Überwachen der Zustellbarkeit](delivery/using/monitoring-deliverability.md)
+      + [Zustellbarkeit überwachen](delivery/using/monitoring-deliverability.md)
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best Practices zur Rückgewinnung](delivery/using/re-engagement-best-practices.md)
@@ -625,7 +625,7 @@ ht-degree: 100%
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
       + [Mid-Sourcing-Server](installation/using/mid-sourcing-server.md)
       + [Interaction - Datenpuffer](installation/using/interaction---data-buffer.md)
-   + Anlagen {#appendices}
+   + Anhänge {#appendices}
       + [Die Server-Konfigurationsdatei](installation/using/the-server-configuration-file.md)
       + [Campaign-Netzwerkendpunkte](installation/using/campaign-network-endpoints.md)
       + [Befehlszeilen](installation/using/command-lines.md)
