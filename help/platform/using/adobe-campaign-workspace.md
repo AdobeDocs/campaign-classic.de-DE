@@ -12,17 +12,17 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 100%
+source-wordcount: '2222'
+ht-degree: 98%
 
 ---
 
 
 # Adobe Campaign-Arbeitsbereich{#adobe-campaign-workspace}
 
-## Über die Benutzeroberfläche von Adobe Campaign {#about-adobe-campaign-interface}
+## Exploring Adobe Campaign interface {#about-adobe-campaign-interface}
 
 Nach Herstellung der Datenbankverbindung gelangen Sie auf die Startseite von Adobe Campaign. Diese ist wie ein Dashboard gestaltet und besteht aus Links und Verknüpfungen, die Ihnen je nach Installation den Zugriff auf Funktionen und die allgemeinen Konfigurationselemente der Plattform erlauben.
 
@@ -30,7 +30,7 @@ In der Mitte des Fensters haben Sie die Möglichkeit, auf die Online-Dokumentati
 
 ![](assets/d_ncs_user_interface_home.png)
 
-Der obige Screenshot zeigt ein Beispiel einer Startseite für einen Adobe-Campaign-Benutzer. Weiterführende Informationen dazu finden Sie im Video zur [Benutzeroberfläche von Adobe Campaign](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html).
+![](assets/do-not-localize/how-to-video.png) [Discover Kampagne Workspace in Video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Im Webzugriff hingegen stehen vorwiegend konsultative Optionen zur Verfügung:
 
 ### Sprachen {#languages}
 
-Die Sprache wird bei der Installation der Adobe Campaign Classic-Instanz ausgewählt und kann danach nicht mehr geändert werden. Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
+Die Sprache wird bei der Installation der Adobe Campaign Classic-Instanz ausgewählt.
 
 ![](assets/language.png)
 
@@ -67,6 +67,12 @@ Sie können zwischen fünf verschiedenen Sprachen wählen:
 * Japanisch
 
 Die für Ihre Adobe Campaign Classic-Instanz ausgewählte Sprache kann sich auf Datums- und Uhrzeitformate auswirken. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/adobe-campaign-workspace.md#date-and-time).
+
+Weiterführende Informationen zum Erstellen einer Instanz finden Sie auf dieser [Seite](../../installation/using/creating-an-instance-and-logging-on.md).
+
+>[!CAUTION]
+>
+>Die Sprache kann nach der Instanzerstellung nicht mehr geändert werden.
 
 ## Navigationsprinzipien {#navigation-basics}
 
@@ -174,9 +180,9 @@ Im Listenkonfigurationsfenster können Sie dann durch Klick auf den Link &quot;E
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-### Listen konfigurieren {#configuring-lists}
+## Listen konfigurieren {#configuring-lists}
 
-#### Spalten hinzufügen {#add-columns}
+### Spalten hinzufügen {#add-columns}
 
 Spalten können auf zwei verschiedene Arten zu einer Liste hinzugefügt werden.
 
@@ -222,14 +228,14 @@ Eine weitere Möglichkeit zum Hinzufügen von Spalten besteht im Listenkonfigura
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um die Konfigurationen zu bestätigen und das Ergebnis anzuzeigen.
 
-#### Neue Spalte erstellen {#create-a-new-column}
+### Neue Spalte erstellen {#create-a-new-column}
 
 Sie können neue Spalten erstellen, um zusätzliche Felder in der Liste anzuzeigen. Gehen Sie dazu folgendermaßen vor:
 
 1. Wählen Sie rechts unten von der Liste **[!UICONTROL Liste konfigurieren]** aus.
 1. Wählen Sie **[!UICONTROL Hinzufügen]** aus, um die Ausgabespalten um ein weiteres Feld zu ergänzen.
 
-#### Spalte entfernen {#remove-a-column}
+### Spalte entfernen {#remove-a-column}
 
 Über die Schaltfläche **[!UICONTROL Liste konfigurieren]** im rechten unteren Bereich der Listenansicht haben Sie die Möglichkeit, Spalten aus der Datensatzliste auszublenden.
 
@@ -241,11 +247,11 @@ Wählen Sie im Bereich der **[!UICONTROL Ausgabespalten]** des Listenkonfigurati
 
 Wiederholen Sie dies für jede Spalte, die ausgeblendet werden soll, und klicken Sie auf **[!UICONTROL OK]**, um die Konfigurationen zu bestätigen und das Ergebnis anzuzeigen.
 
-#### Spaltenbreite anpassen {#adjust-column-width}
+### Spaltenbreite anpassen {#adjust-column-width}
 
 Bei aktiven Listen (d. h. mit mindestens einer ausgewählten Zeile) ermöglicht die F9-Taste die Anpassung der Spaltenbreite an die Bildschirmgröße, sodass alle Spalten angezeigt werden.
 
-#### Datensätze in Unterordnern anzeigen {#display-sub-folders-records}
+### Datensätze in Unterordnern anzeigen {#display-sub-folders-records}
 
 Bei Listen stehen zwei verschiedene Anzeigemodi zur Verfügung:
 
@@ -286,7 +292,7 @@ Wählen Sie im Fenster der Ordnereigenschaften **[!UICONTROL Speichern]** aus, u
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-### Listen exportieren {#exporting-a-list}
+## Listen exportieren {#exporting-a-list}
 
 Zum Export von Listendaten steht Ihnen der Export-Assistent zur Verfügung. Markieren Sie die zu exportierenden Datensätze und klicken Sie mit der rechten Maustaste auf die Liste. Wählen Sie dann im Kontextmenü die Option **[!UICONTROL Exportieren...]**.
 
@@ -296,7 +302,7 @@ Die Verwendung der Import- und Exportfunktionen wird unter [Allgemeine Importe u
 >
 >Listenelemente dürfen nicht mithilfe der Kopieren/Einfügen-Funktion exportiert werden.
 
-### Listen sortieren {#sorting-a-list}
+## Listen sortieren {#sorting-a-list}
 
 Listen enthalten oft große Datenmengen, die sortiert und mit einfachen oder erweiterten Filtern eingeschränkt werden können. Während die Sortierung eine Anzeige aller Datensätze in steigender oder fallender Reihenfolge nach sich zieht, wird durch Anwendung von Filtern unter Kombination verschiedener Kriterien die Auswahl der anzuzeigenden Datensätze eingeschränkt.
 
@@ -321,7 +327,7 @@ Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehe
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um die Einstellungen zu bestätigen und das Ergebnis anzuzeigen.
 
-### In Listen suchen {#running-a-search}
+### Elemente suchen {#running-a-search}
 
 In Editoren haben Sie die Möglichkeit, mithilfe des **[!UICONTROL Suchen]**-Feldes die Auswahl der verfügbaren Felder einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt.
 
@@ -388,4 +394,3 @@ In Feldern, die eine Dauer bezeichnen (z. B. Gültigkeit von Versandressourcen, 
 * **[!UICONTROL T]** für Tage.
 
 ![](assets/enter_unit_sample.png)
-
