@@ -1,8 +1,6 @@
 ---
 title: Neue Berichte erstellen
-seo-title: Neue Berichte erstellen
-description: Neue Berichte erstellen
-seo-description: null
+description: Wichtige Schritte zum Erstellen eines neuen Berichts
 page-status-flag: never-activated
 uuid: dcea5c28-da09-4a31-a13c-c8995c6faa63
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 22c92ddf-fbea-49d3-afd4-1ba427be399d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 100%
+source-wordcount: '961'
+ht-degree: 78%
 
 ---
 
@@ -60,29 +58,29 @@ Diese werden untereinander durch Pfeile - sogenannte Transitionen - verbunden.
 
 Um den Bericht entsprechend seiner Art und seines Verwendungskontexts zu konstruieren, müssen zunächst die nützlichen Elemente und ihre logische Aneinanderreihung identifiziert werden.
 
-1. Nutzen Sie die &#39;Beginn&#39;-Aktivität, um den ersten, zur Erstellung des Berichts auszuführenden Vorgang darzustellen. Diese Aktivität kann in jedem Bericht nur einmal verwendet werden.
+1. Use the **[!UICONTROL Start]** activity to materialize the first process to be carried out to build the report. You can only use one of these activities per report.
 
    Wenn das Diagramm eine Schleife enthält, ist die &#39;Beginn&#39;-Aktivität obligatorisch.
 
-1. Fügen Sie eine oder mehrere &#39;Abfrage&#39;-Aktivitäten hinzu, um die für die Erstellung des Berichts nützlichen Daten abzurufen. Die Daten können direkt über eine Abfrage eines Schemas der Datenbank, eine importierte Liste oder einen existierenden Cube abgerufen werden.
+1. Add one or more **[!UICONTROL Query]** activities to collect data that is useful for building the report. Data can be collected either directly via a query on a schema of the database, or via an imported list or an existing Cube.
 
    Weitere Informationen finden Sie unter [Zu analysierende Daten abrufen](../../reporting/using/collecting-data-to-analyze.md).
 
    Diese Daten werden je nach Seitenkonfiguration im Bericht angezeigt oder nicht.
 
-1. Positionieren Sie eine oder mehrere &#39;Seiten&#39;-Aktivitäten im Diagramm, um die grafische Darstellung der abgerufenen Daten zu konfigurieren. Sie können Tabellen, Grafiken sowie Eingabefelder einfügen und die Anzeige einer oder mehrerer Seiten oder bestimmter Seitenelemente an Bedingungen knüpfen. Der angezeigte Inhalt ist vollständig konfigurierbar.
+1. Place one or more **[!UICONTROL Page]** activities to define the graphical representation of the collected data. You can insert tables, charts, input fields, and condition the display of one or more pages, or elements of the page. The displayed content is fully configurable.
 
    Weitere Informationen finden Sie unter [Statische Elemente](#static-elements).
 
-1. Verwenden Sie die &#39;Test&#39;-Aktivität, um Anzeige- oder Zugriffsbedingungen für bestimmte Daten zu definieren.
+1. Use a **[!UICONTROL Test]** activity to define the conditions for displaying or accessing data.
 
    Weitere Informationen finden Sie unter [Bedingungen zur Anzeige von Seiten definieren](../../reporting/using/defining-a-conditional-content.md#conditioning-page-display).
 
-1. Fügen Sie bei Bedarf mithilfe der &#39;Script&#39;-Aktivität benutzerdefinierte Scripts hinzu, beispielsweise um den Namen eines Berichts zu berechnen, die Anzeige der Ergebnisse in einem bestimmten Kontext zu filtern etc.
+1. If necessary, add personalized scripts via the **[!UICONTROL Script]** activity, for instance to calculate the name of a report, to filter the display of the result within a specific context, etc.
 
    Weitere Informationen finden Sie unter [Script-Aktivität](../../reporting/using/advanced-functionalities.md#script-activity).
 
-1. Schließlich haben Sie die Möglichkeit, die Lesbarkeit komplexer Berichte durch das Einfügen einer oder mehrerer &#39;Sprung&#39;-Aktivitäten zu verbessern: Sie ermöglichen den Übergang von einer Aktivität zur anderen, ohne die Transition im Bericht zu materialisieren. Der &#39;Sprung&#39; kann auch dazu dienen, einen anderen Bericht anzuzeigen.
+1. Finally, you for easier reading of complex reports, you can insert one or more **[!UICONTROL Jump]** type activities. This lets you go from one activity to another without materializing the transition on the report. Die **[!UICONTROL Aktivität &quot;Sprung]** &quot;kann auch verwendet werden, um einen anderen Bericht anzuzeigen.
 
    Weitere Informationen finden Sie unter [Sprung-Aktivität](../../reporting/using/advanced-functionalities.md#jump-activity).
 
@@ -167,4 +165,3 @@ Sie können einen oder mehrere erweiterte Dialoge in Ihre Berichte integrieren. 
 Im folgenden Beispiel wird der Bericht dahingehend konfiguriert, dass nur die Daten eines bestimmten Ordners des Navigationsbaums angezeigt werden:
 
 ![](assets/reporting_control_folder.png)
-
