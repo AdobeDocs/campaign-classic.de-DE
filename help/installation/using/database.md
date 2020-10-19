@@ -1,8 +1,6 @@
 ---
-title: Datenbank
-seo-title: Datenbank
-description: Datenbank
-seo-description: null
+title: Empfehlungen zur Campaign Classic-Datenbank
+description: Datenbankempfehlungen
 page-status-flag: never-activated
 uuid: b318365c-8846-4c1d-b5f7-ece55fb8c4af
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: prerequisites-and-recommendations-
 discoiquuid: 1dcf01af-c2f3-4975-ba05-628d52952064
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '277'
+ht-degree: 1%
 
 ---
 
@@ -32,14 +30,11 @@ Das Betriebssystem des Datenbankservers ist nicht wichtig, solange die Verbindun
 
 Der native Client muss auf den Adobe Campaign-Anwendungsservern installiert sein.
 
-Sie können den systemeigenen Client auf dem Server über das ODBC-Treiberkonfigurationsbedienfeld unter **SQL Server Native Client 10.0** (für Microsoft SQL Server 2008- und 2008 R2-Clients) oder **SQL Server Native Client 11.0** (für Microsoft SQL Server 2012, 2014, 200112) überprüfen. 6 und 2017).
+Sie können den nativen Client auf dem Server über das ODBC-Treiberkonfigurationsbedienfeld unter **SQL Server Native Client 11.0** suchen.
 
-Die folgenden Zugriffs-DLLs müssen vorhanden sein:
+Die folgende Zugriffs-DLL muss vorhanden sein: **sqlncli11.dll**.
 
-* **sqlncli10.dll** für Microsoft SQL Server 2008- und 2008 R2-Clients,
-* **sqlncli11.dll** für Microsoft SQL Server 2012-, 2014-, 2016- und 2017-Clients.
-
-   Zugriff auf DLLs finden Sie auf der Microsoft-Website.
+Zugriff auf DLLs finden Sie auf der Microsoft-Website.
 
 >[!NOTE]
 >
