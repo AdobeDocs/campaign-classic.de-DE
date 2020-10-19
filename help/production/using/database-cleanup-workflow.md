@@ -1,8 +1,6 @@
 ---
 title: Datenbankbereinigungs-Workflow
-seo-title: Datenbankbereinigungs-Workflow
-description: Datenbankbereinigungs-Workflow
-seo-description: null
+description: Erfahren Sie, wie veraltete Daten automatisch bereinigt werden.
 page-status-flag: never-activated
 uuid: a7478641-cdf6-4bd4-9dd7-0c84416c9de6
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '2995'
+source-wordcount: '2997'
 ht-degree: 1%
 
 ---
@@ -32,7 +30,7 @@ The **[!UICONTROL Database cleanup]** workflow accessible via the **[!UICONTROL 
 
 Die Datenbankbereinigung wird auf zwei Ebenen konfiguriert: in der Workflow-Planung und im Bereitstellungsassistenten.
 
-### Die Planung {#the-scheduler}
+### Workflow-Planung {#the-scheduler}
 
 >[!NOTE]
 >
@@ -53,7 +51,7 @@ Standardmäßig ist der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigun
 
 ### Bereitstellungsassistent {#deployment-wizard}
 
-Mit dem **[!UICONTROL Bereitstellungsassistenten]** , der über das Menü &quot; **[!UICONTROL Werkzeuge&quot;> &quot;Erweitert]** &quot;aufgerufen wird, können Sie konfigurieren, wie lange Daten gespeichert werden. Die Werte werden in Tagen angegeben. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
+Mit dem **[!UICONTROL Bereitstellungsassistenten]**, der über das Menü &quot; **[!UICONTROL Werkzeuge&quot;> &quot;Erweitert]** &quot;aufgerufen wird, können Sie konfigurieren, wie lange Daten gespeichert werden. Die Werte werden in Tagen angegeben. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
@@ -358,7 +356,7 @@ Diese Aufgabe bereinigt jede Workflow-Instanz mit ihrem Identifer (**lWorkflowId
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
-1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste der aktiven Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
+1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste aktiver Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
 
    ```
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId<>0 AND iState<>20
