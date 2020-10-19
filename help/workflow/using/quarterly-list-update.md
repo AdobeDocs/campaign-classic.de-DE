@@ -1,5 +1,5 @@
 ---
-title: Vierteljährliches Listen-Update unter Verwendung einer inkrementellen Abfrage
+title: Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage
 description: In diesem Anwendungsfall dient eine inkrementelle Abfrage zur automatischen Aktualisierung einer Empfängerliste.
 page-status-flag: never-activated
 uuid: 24d322e8-172c-4faa-8a1f-59085b390a76
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Vierteljährliches Listen-Update unter Verwendung einer inkrementellen Abfrage {#quarterly-list-update}
+# Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage {#quarterly-list-update}
 
 Im folgenden Beispiel wird eine [inkrementelle Abfrage](../../workflow/using/incremental-query.md) verwendet, um eine Empfängerliste automatisch zu aktualisieren. Diese wird regelmäßig im Rahmen saisonaler Marketing-Kampagnen verwendet.
 
