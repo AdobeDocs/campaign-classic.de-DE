@@ -11,10 +11,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 9ef8e05904751cc141403af20582dc850610f6d2
 workflow-type: tm+mt
 source-wordcount: '540'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -67,7 +67,7 @@ Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campa
 
 Die aktuellen Versionshinweise für Campaign Classic finden Sie [auf dieser Seite](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/release-notes/latest-release.html).
 
-## 9. Wie funktioniert das Verfahren der Domain-Delegation? {#what-is-the-procedure-for-domain-delegation-}
+## 9. What is the procedure for domain configuration? {#what-is-the-procedure-for-domain-delegation-}
 
 Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 Adobe nutzt das Domain Name System (DNS) für den E-Mail-Versand. Dadurch kann der Kunde seinen Markenauftritt beibehalten, indem ein DNS-Alias mit seinem Domain-Namen verwendet wird, und Adobe kann autonom alle technischen Best Practices umsetzen, um die Zustellbarkeit von E-Mails zu optimieren.
