@@ -12,15 +12,15 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: d6467875-949b-4b47-940f-620efd4db5e0
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 98%
+source-wordcount: '1314'
+ht-degree: 86%
 
 ---
 
 
-# E-Mail-Archivierung{#email-archiving}
+# E-Mail-BCC {#email-archiving}
 
 Sie können Adobe Campaign so konfigurieren, dass von den von der Plattform gesendeten E-Mails eine Kopie beibehalten wird.
 
@@ -30,15 +30,15 @@ Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Re
 
 ## Empfehlungen und Einschränkungen      {#recommendations-and-limitations}
 
-* Die Funktion zum Archivieren von E-Mails ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die gewünschte BCC-Adresse muss dem Adobe-Team übermittelt werden, das die Adresse für Sie konfigurieren wird.
-* Für **lokale Installationen** folgen Sie den unten stehenden Richtlinien, um sie zu aktivieren - siehe [Aktivieren der E-Mail-Archivierung (vor Ort)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (vor Ort)](#configuring-the-bcc-email-address--on-premise-) .
+* Die BCC-Funktion für E-Mail ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+* Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die BCC-E-Mail-Adresse Ihrer Wahl muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfiguriert.
+* For **on-premise installations**, follow the guidelines below to activate it - see the [Activating email BCC (on premise)](#activating-email-archiving--on-premise-) and [Configuring the BCC email address (on premise)](#configuring-the-bcc-email-address--on-premise-) sections.
 * Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
-* Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option E-Mails **[!UICONTROL archivieren]** aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+* Once email BCC is configured, make sure the feature is enabled in the delivery template or in the delivery through the **[!UICONTROL Email BCC]** option. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
-* Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits mit der E-Mail-Archivierung arbeiten, müssen Sie manuell auf das neue E-Mail-Archivierungssystem (BCC) aktualisieren. Weitere Informationen finden Sie im Abschnitt [Aktualisiertes E-Mail-Archivierungssystem (BCC)](#updated-email-archiving-system--bcc-) .
+* Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits E-Mail-Archivierung verwenden, müssen Sie manuell auf das neue E-Mail-BCC-System aktualisieren. Weitere Informationen finden Sie im Abschnitt [Wechseln zum neuen E-Mail-BCC](#updated-email-archiving-system--bcc-) .
 
-## Aktivieren der E-Mail-Archivierung (vor Ort) {#activating-email-archiving--on-premise-}
+## Activating Email BCC (on premise) {#activating-email-archiving--on-premise-}
 
 Gehen Sie wie unten beschrieben vor, um die BCC-E-Mail-Archivierung zu aktivieren, wenn Adobe Campaign vor Ort installiert ist.
 
@@ -70,7 +70,7 @@ C:\emails\2018-12-02\13h\4012-8040-sent.eml
 
 >[!NOTE]
 >
->In einer Mid-Sourcing-Instanz befindet sich der Ordner für die archivierten E-Mails auf dem Mid-Sourcing-Server.
+>In einer Mid-Sourcing-Instanz befindet sich der Ordner für die BCC-E-Mails auf dem Mid-Sourcing-Server.
 >
 >Die deliveryID und die BroadlogID stammen vom Mid-Sourcing-Server, wenn der Status der E-Mails nicht gesendet wird. Sobald der Status auf **[!UICONTROL Gesendet]** geändert wurde, stammen diese IDs vom Marketing-Server.
 
@@ -128,7 +128,7 @@ Verwenden Sie in der **config-`<instance name>.xml`** -Datei die folgenden Param
 >
 >Darüber hinaus weist der Relais allen E-Mails, einschließlich der nicht gesendeten E-Mails, den Status **[!UICONTROL Gesendet]** zu. Daher werden alle Nachrichten archiviert.
 
-## Aktualisiertes E-Mail-Archivierungssystem (BCC) {#updated-email-archiving-system--bcc-}
+## Wechsel zum neuen E-Mail-BCC {#updated-email-archiving-system--bcc-}
 
 >[!CAUTION]
 >
@@ -140,9 +140,9 @@ Nehmen Sie dazu die folgenden Änderungen an der **`config-<instance>.xml`** Dat
 1. Legen Sie den Parameter **compressionFormat** bei Bedarf auf **1** fest.
 1. Legen Sie den Parameter **archivingType** auf **1** fest.
 
-Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass Sie die Option E-Mails **[!UICONTROL archivieren]** in der Versandvorlage oder im Versand auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+Once email BCC is configured, make sure you select the **[!UICONTROL Email BCC]** option in the delivery template or the delivery. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 
-## Best Practices {#best-practices}
+## Best Practices für E-Mail-BCC {#best-practices}
 
 * **BCC-Adresszeile**: Stellen Sie sicher, dass es über genügend Aufnahmekapazität verfügt, um alle E-Mails zu archivieren, die von der MTA gesendet werden.
 * **MTA-Mutualisierung**: Die BCC-Archivierungsfunktion funktioniert auf MTA-Ebene. Damit können Sie alle E-Mails, die von der MTA gesendet werden, Duplikat werden. Da die MTA über mehrere Instanzen hinweg (z. B. dev, test oder prod) oder sogar über mehrere Clients (in einer Mid-Sourcing-Umgebung) hinweg mutualisiert werden kann, wirkt sich das Einrichten dieser Funktion auf die Sicherheit aus:
