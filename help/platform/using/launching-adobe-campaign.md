@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 83%
@@ -30,7 +30,7 @@ Sie können Adobe Campaign ausgehend vom Menü **[!UICONTROL Start > Alle Progra
 
 Im Clientkonsole-Verbindungsfenster können Sie mithilfe Ihrer Benutzerkennung und Ihres Passworts eine existierende Datenbank auswählen oder konfigurieren und eine Verbindung mit dieser Datenbank herstellen:
 
-![](assets/s_ncs_user_login.png)
+![](assets/acc-logon-screen.png)
 
 ## Verbindung mit Adobe Campaign herstellen {#connecting-to-adobe-campaign}
 
