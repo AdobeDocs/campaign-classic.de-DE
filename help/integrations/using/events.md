@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# Auslöser-Ereignisse {#events}
+# Triggers-Ereignisse {#events}
 
 ## Verarbeiten von Ereignissen in JavaScript {#events-javascript}
 
