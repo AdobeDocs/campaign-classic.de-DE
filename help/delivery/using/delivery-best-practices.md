@@ -43,7 +43,7 @@ Lernen Sie Best Practices im Zusammenhang mit der Versandgestaltung und dem Vers
     </a>
     <div>
       <a href="use-templates.md">
-    <strong>Verwenden von Vorlagen</strong>
+    <strong>Vorlagen verwenden</strong>
     </a>
     </div>
     <p>
@@ -71,7 +71,7 @@ Lernen Sie Best Practices im Zusammenhang mit der Versandgestaltung und dem Vers
     </a>
     <div>
       <a href="define-the-right-audience.md">
-    <strong>Festlegen der richtigen Zielgruppe</strong>
+    <strong>Die richtige Zielgruppe festlegen</strong>
     </a>
     </div>
     <p>
@@ -84,7 +84,7 @@ Lernen Sie Best Practices im Zusammenhang mit der Versandgestaltung und dem Vers
     </a>
     <div>
       <a href="check-before-sending.md">
-    <strong>Prüfen vor dem Senden</strong>
+    <strong>Vor dem Senden prüfen</strong>
     </a>
     </div>
     <p>
@@ -97,7 +97,7 @@ Lernen Sie Best Practices im Zusammenhang mit der Versandgestaltung und dem Vers
     </a>
     <div>
       <a href="track-and-monitor.md">
-    <strong>Tracken und Beobachten</strong>
+    <strong>Tracken und überwachen</strong>
     </a>
     </div>
     <p>
