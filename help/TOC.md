@@ -8,10 +8,10 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 100%
+source-wordcount: '2130'
+ht-degree: 99%
 
 ---
 
@@ -577,17 +577,16 @@ ht-degree: 100%
       + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
 + Installieren von Campaign Classic {#installing-campaign-classic}
-   + Architektur- und Hosting-Modelle {#architecture-and-hosting-models}
-      + [Vor dem Lesen](installation/using/before-reading.md)
+   + Architekturgrundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)
-      + [Hosting-Modelle](installation/using/hosting-models.md)
-   + Hybride und gehostete Modelle {#hybrid-and-hosted-models}
-      + [Über hybride und gehostete Modelle](installation/using/about-hybrid-and-hosted-models.md)
-      + [Hybrides Modell](installation/using/hybrid-model.md)
-      + [Gehostetes Modell](installation/using/hosted-model.md)
-   + Voraussetzungen und Empfehlungen {#prerequisites-and-recommendations-}
-      + [Vor Beginn](installation/using/before-starting.md)
-      + [Datenbank](installation/using/database.md)
+      + Hosting-Modelle{#hosting-models-lp}
+         + [Hosting-Modelle](installation/using/hosting-models.md)
+         + [Hybrides Modell](installation/using/hybrid-model.md)
+         + [Gehostetes Modell](installation/using/hosted-model.md)
+         + [Funktionsmatrix](installation/using/capability-matrix.md)
+   + Implementierungsrichtlinien {#deployment-guidelines}
+      + [Voraussetzungen](installation/using/before-starting.md)
+      + [Datenbankserver](installation/using/database.md)
       + [Anwendungs-Server](installation/using/application-server.md)
       + [Messaging-Server](installation/using/messaging-server.md)
       + [Netzwerkkonfiguration](installation/using/network-configuration.md)
