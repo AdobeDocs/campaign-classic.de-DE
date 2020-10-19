@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 7f471ac1-cd6a-4371-977e-52d60ce8d968
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fc014fe5fcadac680af31e86e258a4df7073e0bd
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ Ausführungsinstanz zu er
 
    >[!NOTE]
    >
-   >Beachten Sie, dass bei Verwendung von FDA über HTTP nur Ausführungsinstanzen mit einer Postgres-Datenbank unterstützt werden. MSSQL- oder Oracle-Datenbanken werden nicht unterstützt.
+   >Beachten Sie, dass bei Verwendung von FDA über HTTP nur Ausführungsinstanzen unterstützt werden, die eine PostgreSQL-Datenbank verwenden. MSSQL- oder Oracle-Datenbanken werden nicht unterstützt.
 
    Letztere Methode wird empfohlen, wenn die Kontrollinstanz direkten Zugriff auf die Datenbanken der Ausführungsinstanzen haben kann. Sollte dies nicht der Fall sein, wählen Sie den Webdienst-Zugriff. Das anzugebene FDA-Konto entspricht der in der Kontrollinstanz erstellten Verbindung zu den Datenbanken der unterschiedlichen Ausführungsinstanzen.
 
