@@ -11,9 +11,9 @@ topic-tags: about-workflows-and-data-management
 discoiquuid: 40503917-7a53-4d99-96a4-57aa9e98ec87
 internal: n
 snippet: y
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 00a9b7def9d0ad0190c389c6bcde431f8e2f2b44
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Verwendung von Aggregaten](../../workflow/using/using-aggregates.md)
 * [Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
-* [Vierteljährliches Listen-Update unter Verwendung einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
+* [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
 
 ## Zielgruppenbestimmung {#designing-queries}
 
