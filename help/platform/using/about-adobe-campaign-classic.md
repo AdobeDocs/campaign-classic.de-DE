@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 100%
+source-wordcount: '899'
+ht-degree: 98%
 
 ---
 
@@ -37,6 +37,8 @@ Adobe Campaign bietet eine Plattform zur Konzeption kanalübergreifender Kundene
 Die Zyklen einer mit Adobe Campaign gesteuerten Marketingkampagne stellen die Hauptfunktionen der Software dar:
 
 ![](assets/d_ncs_user_emarketing.png)
+
+![](assets/do-not-localize/how-to-video.png) [Wichtigste Funktionen und Funktionen in Videos](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### Integriertes Kundenprofil {#integrated-customer-profile}
 
