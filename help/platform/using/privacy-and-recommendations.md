@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '1751'
-ht-degree: 100%
+source-wordcount: '1848'
+ht-degree: 90%
 
 ---
 
@@ -149,10 +149,12 @@ Brazil's Lei Geral de Proteção de Dados (LGPD) will be effective starting Aug,
 
 ### Cookies {#cookies}
 
-Mit den Tracking-Funktionen von Adobe Campaign können Sie das Surfverhalten der Empfänger Ihrer Sendungen mithilfe von zwei Arten von Cookies verfolgen:
+Dank seiner Tracking-Funktionen können Sie mit Adobe Campaign das Browsen Ihrer Versand-Empfänger mit drei Cookie-Typen verfolgen: ein Sitzungs-Cookie und zwei dauerhafte Cookies.
 
-* **Sitzungs-Cookie** (nlid). Er enthält die Kennung der an den Kontakt gesendeten E-Mail (broadlogId) und die Kennung der Nachrichtenvorlage (deliveryId). Er wird gesetzt, sobald der Kontakt eine in einer mit Adobe Campaign gesendeten E-Mail enthaltene URL anklickt, und ermöglicht, das Webverhalten des Kontakts zu verfolgen. Dieser Sitzungs-Cookie wird automatisch mit Schließen des Browsers gelöscht. Der Kontakt hat die Möglichkeit, das Setzen des Cookies zu verbieten, indem er seine Browser-Einstellungen dementsprechend ändert.
-* Von verschiedenen Lösungen in Adobe Experience Cloud gemeinsam genutzter **permanenter Cookie**. Er ermöglicht die Identifizierung eines Internetbenutzers, der mit Experience Cloud-Lösungen bei Website-Besuchen interagiert. Dieser Cookie wird [hier](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-mc.html) beschrieben.
+* Ein **Sitzungs-Cookie**: der **angegebene** Cookie enthält den Bezeichner der an den Kontakt gesendeten E-Mail (**extenlogId**) und den Bezeichner der Nachrichtenvorlage (**deliveryId**). Er wird gesetzt, sobald der Kontakt eine in einer mit Adobe Campaign gesendeten E-Mail enthaltene URL anklickt, und ermöglicht, das Webverhalten des Kontakts zu verfolgen. Dieser Sitzungs-Cookie wird automatisch mit Schließen des Browsers gelöscht. Der Kontakt hat die Möglichkeit, das Setzen des Cookies zu verbieten, indem er seine Browser-Einstellungen dementsprechend ändert.
+* Zwei **dauerhafte Cookies**:
+   * Das **UUID** -Cookie (Universal Unique IDentifier) wird von Adobe Experience Cloud-Lösungen gemeinsam verwendet. Er wird einmal eingestellt, bis er beim Generieren eines neuen Werts aus dem Clientbrowser ausgeblendet wird. Mit diesem Cookie können Sie identifizieren, welche Benutzer mit den Experience Cloud-Lösungen interagieren, wenn sie eine Website besuchen. Es kann von einer Landingpage (um unbekannte Aktivitäten einem Empfänger zuzuordnen) oder von einem Versand hinterlegt werden. Dieses Cookie wird [hier](https://docs.adobe.com/content/help/de-DE/core-services/interface/ec-cookies/cookies-mc.html) beschrieben.
+   * Das **nllastdelid** -Cookie (eingeführt in Campaign Classic 20.3) ist ein permanentes Cookie, das die **deliveryId** des letzten Versands enthält, von dem der Benutzer auf den Link geklickt hat. Dieses Cookie wird - wenn das Sitzungs-Cookie fehlt - zur Identifizierung der zu verwendenden Verfolgungstabelle verwendet.
 
 Vorschriften wie die EU-Datenschutz-Grundverordnung (DSGVO) besagen, dass Unternehmen die Zustimmung der Website-Benutzer benötigen, bevor sie Cookies installieren.
 
