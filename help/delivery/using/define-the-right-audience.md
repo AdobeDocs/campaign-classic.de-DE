@@ -1,6 +1,6 @@
 ---
-title: Festlegen der richtigen Zielgruppe
-seo-title: Festlegen der richtigen Zielgruppe
+title: Die richtige Zielgruppe festlegen
+seo-title: Die richtige Zielgruppe festlegen
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Festlegen der richtigen Zielgruppe {#define-the-right-audience}
+# Die richtige Zielgruppe festlegen {#define-the-right-audience}
 
 Die Bestimmung der Zielgruppen ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Kontaktlisten sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients, Smartphones und Tablets und stellen Sie sicher, dass Ihre Verteilerlisten aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.
 
