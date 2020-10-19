@@ -1,5 +1,5 @@
 ---
-title: Anpassen der Emoticon-Liste
+title: Emoticon-Liste anpassen
 description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe Campaign Classic anpassen können.
 page-status-flag: never-activated
 uuid: ddcc2e3b-e251-4a7a-a22a-28701522839f
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Anpassen der Emoticon-Liste {#customize-emoticons}
+# Emoticon-Liste anpassen {#customize-emoticons}
 
 Die im Popup angezeigten Emoticons werden in einer bestimmten Reihenfolge aufgelistet. Damit können Sie die Emoticons in einer Liste darstellen und deren Auswahl für bestimmte Felder beschränken.
 Die Reihenfolge der Emoticon-Liste kann angepasst werden; außerdem können Sie Ihrer Liste weitere Emoticons hinzufügen.
