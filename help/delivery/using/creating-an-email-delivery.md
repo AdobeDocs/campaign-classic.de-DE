@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Versand erstellen
 seo-title: E-Mail-Versand erstellen
-description: E-Mail-Versand erstellen.
+description: E-Mail-Versand erstellen
 seo-description: null
 page-status-flag: never-activated
 uuid: a0b2fe13-a2a5-4f12-9f7f-ed7309a3e705
@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# E-Mail-Versand erstellen.{#creating-an-email-delivery}
+# E-Mail-Versand erstellen{#creating-an-email-delivery}
 
 Gehen Sie wie folgt vor, um einen neuen E-Mail-Versand zu erstellen:
 
