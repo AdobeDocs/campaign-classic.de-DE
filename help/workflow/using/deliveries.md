@@ -1,7 +1,7 @@
 ---
-title: Deliveries
-seo-title: Deliveries
-description: Deliveries
+title: Sendungen
+seo-title: Sendungen
+description: Sendungen
 seo-description: null
 page-status-flag: never-activated
 uuid: d323eb4d-937b-4b37-8400-942336f0a1b4
@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# Deliveries{#deliveries}
+# Sendungen{#deliveries}
 
 Die folgenden Workflows werden standardmäßig installiert.
 
