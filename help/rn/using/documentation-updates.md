@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: d06cc9c090e2ad8b72ce3192a26108ec213ba549
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '3711'
-ht-degree: 99%
+source-wordcount: '3747'
+ht-degree: 98%
 
 ---
 
@@ -25,6 +25,10 @@ Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
 
 ## Oktober 2020 {#oct-2020}
+
+Der Abschnitt mit den erweiterten Funktionen von Kampagne Berichte wurde verbessert, um detailliert zu veranschaulichen, wie URL-Parameter und Variablen in benutzerspezifischen Berichten verwendet werden. [mehr dazu](../../reporting/using/advanced-functionalities.md)
+
+Die Seite mit den Berichtseigenschaften wurde neu organisiert und erweitert, um die Konfiguration zu erleichtern. [mehr dazu](../../reporting/using/properties-of-the-report.md)
 
 Es wurde eine neue Technote mit Details zur Migration vom Legacy-Binärprotokoll zum HTTP/2-basierten APNs Provider API erstellt. [mehr dazu](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
 
