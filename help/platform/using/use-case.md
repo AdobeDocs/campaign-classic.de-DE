@@ -1,7 +1,7 @@
 ---
-title: Umsetzung
-seo-title: Umsetzung
-description: Umsetzung
+title: Anwendungsbeispiel
+seo-title: Anwendungsbeispiel
+description: Anwendungsbeispiel
 seo-description: null
 page-status-flag: never-activated
 uuid: d4c76fdf-d562-4151-93ec-08b4f6563440
