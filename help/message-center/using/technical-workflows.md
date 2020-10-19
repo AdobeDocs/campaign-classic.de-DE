@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '361'
 ht-degree: 100%
 
 ---
@@ -36,11 +36,11 @@ Wenn ein oder mehrere Ausführungsinstanzen registriert sind, ist in der Kontrol
 
 ![](assets/messagecenter_archiving_002.png)
 
-**Minimale Architektur**
+<!--**Minimal architecture**
 
-Wenn die Kontroll- und Ausführungsmodule auf derselben Instanz installiert sind, ist der Archivierungs-Workflow mithilfe des Softwareverteilungs-Assistenten zu erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
+Once the control and execution modules are installed on the same instance, you must create the archiving workflow using the deployment wizard. Click the **[!UICONTROL Create the archiving workflow]** button to create and start the workflow.
 
-![](assets/messagecenter_archiving_001.png)
+![](assets/messagecenter_archiving_001.png)-->
 
 ## Workflows der Ausführungsinstanz {#execution-instance-workflows}
 
