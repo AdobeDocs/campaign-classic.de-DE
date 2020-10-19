@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
 source-wordcount: '1620'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -50,9 +50,9 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
    >
    >Bei Mid-Sourcing-Installationen ist von der Verwendung dieser Option abzuraten, damit der MTA nicht aufgerufen wird.
    >
-   >Weiterführende Informationen zur Konfiguration eines SMTP-Servers finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >For more information on configuring an SMTP server, refer [to this section](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* **[!UICONTROL E-Mails archivieren]**:In Adobe Campaign können Sie mit der BCC-Option E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. Weitere Informationen hierzu finden Sie unter [E-Mails archivieren](../../delivery/using/sending-messages.md#archiving-emails).
+* **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie E-Mails auf einem externen System über BCC speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Zielgruppe hinzufügen. For more on this, refer [to this section](../../delivery/using/sending-messages.md#archiving-emails).
 
 Nachdem der Versand konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie die [Versandanalyse](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery)ausgeführt haben. Klicken Sie abschließend auf **[!UICONTROL Absendung bestätigen]**, um den Versand der Nachrichten zu starten.
 
@@ -62,7 +62,7 @@ Nun können Sie den Versand-Assistenten schließen und die Durchführung im **[!
 
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
-* [Sendungen beobachten](../../delivery/using/monitoring-a-delivery.md)
+* [Sendungen überwachen](../../delivery/using/monitoring-a-delivery.md)
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Über das Nachrichten-Tracking](../../delivery/using/about-message-tracking.md)
 
