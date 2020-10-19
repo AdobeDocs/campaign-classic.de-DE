@@ -1,6 +1,6 @@
 ---
-title: Verwenden der Adobe Campaign Classic Empfänger-Tabelle
-description: Erfahren Sie, wie Sie beim Entwerfen Ihres Datenmodells die vordefinierte Empfänger-Tabelle in Adobe Campaign Classic verwenden.
+title: Best Practices für Datenmodelle
+description: Erfahren Sie, wie Sie mit dem Campaign Classic-Datenmodell arbeiten.
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
 workflow-type: tm+mt
-source-wordcount: '4014'
+source-wordcount: '4031'
 ht-degree: 24%
 
 ---
@@ -191,7 +191,7 @@ Die beiden entsprechenden Filter werden oben auf dem Bildschirm hinzugefügt.
 
 ![](assets/data-model-index-search.png)
 
-Sie können jetzt Suchfilter für die Felder **[!UICONTROL Vorname]** und **[!UICONTROL Nachname]** entsprechend den verschiedenen Filterbedingungen durchführen.
+Sie können jetzt Suchfilter für die Felder **[!UICONTROL Vorname]** und **[!UICONTROL Nachname]** gemäß den verschiedenen Filterbedingungen durchführen.
 
 Um die Suche auf diesen Filtern zu beschleunigen, können Sie nun Indizes hinzufügen. Aber welche Indizes sollten verwendet werden?
 
@@ -253,6 +253,10 @@ Standardmäßig haben Adobe Campaign-Versand und Trackinglogs eine Retentionsdau
 
 * Wenn Sie die Protokolle länger aufbewahren möchten, sollten Sie diese Entscheidung in Abhängigkeit von der Datenbankgröße und der Menge der gesendeten Nachrichten sorgfältig treffen. Zur Erinnerung: Die Adobe Campaign-Sequenz ist eine 32-Bit-Ganzzahl.
 * Es wird empfohlen, nicht mehr als 1 Milliarde Datensätze gleichzeitig in diesen Tabellen zu haben (etwa 50 % der 2,14 Milliarden verfügbaren IDs), um die Risiken des Verbrauchs aller verfügbaren IDs zu begrenzen. Dies erfordert, dass einige Kunden die Retentionsdauer unter 180 Tage senken.
+
+Weitere Informationen zur Datenspeicherung finden Sie in den Richtlinien [zur Datenschutz- und Sicherheitsrichtlinie](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#consent)der Kampagne.
+
+Weitere Informationen zum Arbeitsablauf für die Kampagne Data Base-Bereinigung [finden Sie in diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
