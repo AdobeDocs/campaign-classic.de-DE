@@ -1,6 +1,6 @@
 ---
-title: Erstellen personalisierter Inhalte
-seo-title: Erstellen personalisierter Inhalte
+title: Personalisierte Inhalte erstellen
+seo-title: Personalisierte Inhalte erstellen
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Erstellen personalisierter Inhalte {#build-personalized-content}
+# Personalisierte Inhalte erstellen {#build-personalized-content}
 
 Versuchen Sie beim Entwerfen Ihres Nachrichteninhalts gängige Probleme zu vermeiden, die den Versand verhindern könnten. Meist betreffen Fehler die [Personalisierung](../../delivery/using/about-personalization.md), die [Formatierung](../../delivery/using/defining-the-email-content.md#message-content) und [Bilder](../../delivery/using/defining-the-email-content.md#adding-images).
 
