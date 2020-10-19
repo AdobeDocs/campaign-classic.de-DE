@@ -18,7 +18,7 @@ ht-degree: 91%
 ---
 
 
-# Monitoring der Zustellbarkeit{#monitoring-deliverability}
+# Zustellbarkeit überwachen{#monitoring-deliverability}
 
 Nachstehend finden Sie Einzelheiten zu den verschiedenen Monitoring-Tools von Adobe Campaign sowie weitere Richtlinien zum Monitoring der Zustellbarkeit.
 
