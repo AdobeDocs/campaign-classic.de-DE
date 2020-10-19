@@ -32,7 +32,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 
 In diesem Abschnitt finden Sie Informationen über technische Workflows, die folgende Packages beinhalten:
 
-* [Deliveries](../../workflow/using/deliveries.md)
+* [Sendungen](../../workflow/using/deliveries.md)
 * [Kampagne](../../workflow/using/campaign.md)
 * [Web Analytics](../../workflow/using/web-analytics.md)
 * [Distributed Marketing](../../workflow/using/distributed-marketing.md)
