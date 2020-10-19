@@ -1,7 +1,7 @@
 ---
-title: A/B Testing
-seo-title: A/B Testing
-description: A/B Testing
+title: A/B-Tests
+seo-title: A/B-Tests
+description: A/B-Tests
 seo-description: null
 page-status-flag: never-activated
 uuid: 8887574e-447b-48a5-afc6-95783ffa7fb3
@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# A/B Testing{#a-b-testing}
+# A/B-Tests{#a-b-testing}
 
 Für einen E-Mail-Versand wurden verschiedene Inhalte erstellt und Sie möchten testen, welcher Inhalt bei der angesprochenen Zielgruppe die größten Erfolgschancen hat. Hierzu werden die verschiedenen Versionen jeweils an einen Teil der Zielgruppe gesendet. Die Version, die die besten Ergebnisse erzielt, wird dann an den Rest der Empfängerzielgruppe gesendet.
 
