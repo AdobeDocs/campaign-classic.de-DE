@@ -1,6 +1,6 @@
 ---
-title: Tracken und Überwachen von Nachrichten
-seo-title: Tracken und Überwachen von Nachrichten
+title: Tracken und überwachen von Nachrichten
+seo-title: Tracken und überwachen von Nachrichten
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Tracken und Überwachen {#track-and-monitor}
+# Tracken und überwachen {#track-and-monitor}
 
 Sie haben auf die Senden-Schaltfläche geklickt? Lassen Sie uns sehen, was dann passiert. Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
 
