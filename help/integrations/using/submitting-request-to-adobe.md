@@ -1,7 +1,7 @@
 ---
-title: Antrag an Adobe übermitteln
-seo-title: Antrag an Adobe übermitteln
-description: Antrag an Adobe übermitteln
+title: Anfrage an Adobe übermitteln
+seo-title: Anfrage an Adobe übermitteln
+description: Anfrage an Adobe übermitteln
 seo-description: null
 page-status-flag: never-activated
 uuid: 8caa1dd6-864d-4101-8b72-c9bd28b8173f
@@ -20,7 +20,7 @@ ht-degree: 100%
 ---
 
 
-# Antrag an Adobe übermitteln{#submitting-request-to-adobe}
+# Anfrage an Adobe übermitteln{#submitting-request-to-adobe}
 
 >[!NOTE]
 >
