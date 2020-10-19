@@ -1,6 +1,6 @@
 ---
 title: E-Mail-Versand mit Adobe Campaign Classic
-description: Erfahren Sie mehr über die Parameter, die speziell für den Versand von E-Mails in Adobe Campaign Classic gelten.
+description: Informationen zu E-Mail-Versand-Parametern
 page-status-flag: never-activated
 uuid: 791f7a54-3225-46ca-ad6f-6c32e9c62d75
 contentOwner: sauviat
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: sending-emails
 discoiquuid: e2dd8161-fe38-48bf-a288-8ec328b2660e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 100%
+source-wordcount: '797'
+ht-degree: 87%
 
 ---
 
@@ -29,25 +29,25 @@ Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finde
 
 In den folgenden Abschnitten werden die Parameter beschrieben, die speziell für den Versand von E-Mails gelten.
 
-## E-Mails archivieren {#archiving-emails}
+## E-Mail-BCC {#archiving-emails}
 
 In Adobe Campaign können Sie mit der BCC-Option E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu ihrer Versandzielgruppe hinzufügen. Durch Aktivierung dieser Option wird eine exakte Kopie aller versandten Nachrichten aufbewahrt.
 
-Weiterführende Informationen zur Konfiguration von E-Mail-BCC finden Sie in [diesem Abschnitt](../../installation/using/email-archiving.md).
+Weitere Informationen zur E-Mail-BCC-Konfiguration und zu Best Practices finden Sie in [diesem Abschnitt](../../installation/using/email-archiving.md).
 
 >[!NOTE]
 >
->Hierbei handelt es sich um eine optionale Funktion. Bitte prüfen Sie Ihren Lizenzvertrag und kontaktieren Sie den Ansprechpartner für Ihr Konto, um diese Funktion zu aktivieren.
+>Email BCC ist eine optionale Funktion. Bitte prüfen Sie Ihren Lizenzvertrag und kontaktieren Sie den Ansprechpartner für Ihr Konto, um diese Funktion zu aktivieren.
 
-Bei der Erstellung eines neuen Versands oder einer Versandvorlage ist die E-Mail-BCC-Option nicht standardmäßig aktiviert, selbst wenn die Option erworben wurde. Sie muss für jeden Versand bzw. jede Vorlage manuell aktiviert werden.
+Beim Erstellen eines neuen Versands oder einer neuen Versandvorlage ist E-Mail-BCC nicht standardmäßig aktiviert. Sie müssen diese auf E-Mail-Versand- oder Versandvorlage-Ebene manuell aktivieren.
 
-Gehen Sie dazu wie folgt vor:
+Gehen Sie wie folgt vor, um E-Mail-BCC für eine E-Mail-Versandvorlage zu aktivieren:
 
 1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]** oder **[!UICONTROL Ressourcen]** > **[!UICONTROL Vorlagen]** > **[!UICONTROL Versandvorlagen]**.
 1. Wählen Sie den gewünschten Versand aus oder duplizieren Sie die Standardvorlage **E-Mail-Versand**, und wählen Sie dann die duplizierte Vorlage aus.
 1. Wählen Sie die **Eigenschaften**-Schaltfläche aus.
 1. Gehen Sie in den **[!UICONTROL Versand]**-Tab.
-1. Aktivieren Sie die Option **E-Mails archivieren**, um eine Kopie aller gesendeten Nachrichten dieses Versands oder aller auf dieser Vorlage basierenden Sendungen aufzubewahren.
+1. Aktivieren Sie die Option **E-Mail-BCC** . Eine Kopie aller gesendeten Nachrichten für jeden Versand, der auf dieser Vorlage basiert, wird an die E-Mail-BCC-Adresse gesendet, die konfiguriert wurde.
 
    ![](assets/s_ncs_user_wizard_archiving.png)
 
