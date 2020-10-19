@@ -1,6 +1,6 @@
 ---
-title: Prüfen vor dem Senden
-seo-title: Prüfen vor dem Senden
+title: Vor dem Senden prüfen
+seo-title: Vor dem Senden prüfen
 page-status-flag: never-activated
 uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
 contentOwner: sauviat
