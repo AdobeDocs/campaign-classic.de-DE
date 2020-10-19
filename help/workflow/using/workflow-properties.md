@@ -66,7 +66,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
 ### Umgang mit Fehlern   {#error-management}
 
-* **[!UICONTROL Problembehebung]**
+* **[!UICONTROL Fehlerbehebung]**
 
    In diesem Feld können Sie angeben, welche Aktion ausgeführt werden soll, wenn eine Workflow-Aufgabe einen Fehler ausgibt. Zwei Optionen stehen zur Verfügung:
 
