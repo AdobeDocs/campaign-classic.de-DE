@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2636'
 ht-degree: 98%
 
 ---
@@ -30,7 +30,6 @@ _15. September 2020_
 
 * Die Verwendung von nlsrvmod für Apache 2.4-Threads wurde verbessert, um nlsrvmod-Abstürze zu beheben.
 * Fehlerkorrektur – Es wurde ein Problem bei der Verwendung der Dateiübertragungsaktivität mit einem externen Azure-Konto und einer SSL-Verschlüsselung behoben. Die Verbindung wurde über HTTP statt über HTTPS hergestellt. (NEO-26720)
-* In den Versandeigenschaften wurde die Option **[!UICONTROL E-Mails archivieren]** in **[!UICONTROL E-Mail-BCC]** umbenannt, um ein besseres Kundenerlebnis zu erzielen.
 * Fehlerkorrektur – Es wurde ein Problem mit dem URL-Cache-Mechanismus behoben, bei dem die Bezeichnung oder Kategorie nicht abgerufen wurde.
 * Fehlerkorrektur – Es wurde ein Problem behoben, das dazu führte, dass Mirrorseiten-URLs in E-Mail-Sendungen fehlerhaft definiert wurden (aufgrund einer falschen ASCII-Zeichensteuerung). (NEO-26084)
 * Die Liste &quot;jarsToSkip&quot; in &quot;catalina.properties&quot; wurde aktualisiert, um den Verweis auf eine nicht mehr verwendete JAR-Datei zu entfernen (iOS-Benachrichtigungen).
