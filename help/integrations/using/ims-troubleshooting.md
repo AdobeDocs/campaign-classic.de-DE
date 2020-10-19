@@ -1,7 +1,7 @@
 ---
-title: Problembehebung bei IMS
-seo-title: Problembehebung bei IMS
-description: Problembehebung bei IMS
+title: Fehlerbehebung bei IMS
+seo-title: Fehlerbehebung bei IMS
+description: Fehlerbehebung bei IMS
 seo-description: null
 page-status-flag: never-activated
 uuid: 5db95afc-8cbf-4ec3-b58f-504486fe4a40
@@ -20,7 +20,7 @@ ht-degree: 96%
 ---
 
 
-# Problembehebung bei IMS{#ims-troubleshooting}
+# Fehlerbehebung bei IMS{#ims-troubleshooting}
 
 Mithilfe der folgenden Problembehebungstipps können **On-Premise**-Kunden die gängigsten Probleme bei Verwendung der IMS-Integration beheben. **Gehostete** Kunden sollten sich an Adobe wenden.
 
