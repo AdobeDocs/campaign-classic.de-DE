@@ -10,15 +10,15 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 582f7ac6-cebe-4b47-8730-bbc16fd6b1bd
 translation-type: tm+mt
-source-git-commit: c2e1b4cf7051b7f1b9d5f2db0d9f51a733ca2abc
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 20%
+source-wordcount: '303'
+ht-degree: 34%
 
 ---
 
 
-# Funktionsmatrix pro Hostmodell {#capability-matrix-per-model}
+# Funktionsmatrix {#capability-matrix-per-model}
 
 Adobe Campaign Classic verfügt über eine Reihe von Modulen und Optionen. Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. In diesem Artikel werden einige Details zu den Hauptunterschieden zwischen vollständig gehosteten Managed Services-Bereitstellungen und lokalen Bereitstellungen erläutert.
 
@@ -26,22 +26,22 @@ Diese Seite zeigt die wichtigsten Unterschiede zwischen gehosteten (Managed Serv
 
 Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt](../../installation/using/hosting-models.md)vorgestellt.
 
-## Funktionsmatrix{#capability-matrix}
+## Verfügbarkeit pro Bereitstellungsmodell {#capability-matrix}
 
 | Funktion | gehostet | Hybrid | Vor-Ort | Details |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kampagne-Server konfigurieren | On-Demand | Verfügbar | Verfügbar | Die[Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md)kann nur für gehostete Kunden durch Adobe geändert werden. |
-| E-Mail-BCC | On-Demand | On-Demand | Verfügbar | Bei gehosteten und hybriden Architekturen wenden Sie sich an Ihren Kundenbetreuer, um E-Mail BCC zu aktivieren. Befolgen Sie bei lokalen Installationen die Richtlinien der Dokumentation. [mehr dazu](../../installation/using/email-archiving.md) |
-| Message Center-Ausführungsinstanz verwalten | On-Demand | On-Demand | Verfügbar | Bei gehosteten Bereitstellungen können bestimmte Einstellungen, z. B. das Erstellen von Benutzern auf Ausführungsinstanz, nur von der Adobe ausgeführt werden. [mehr dazu](../../message-center/using/about-transactional-messaging.md) |
-| Verwalten der Mid-Sourcing-Plattform | On-Demand | On-Demand | Verfügbar | Mid-Sourcing-Plattformen, die von der Adobe gehostet werden, können nur von der Adobe konfiguriert werden. |
-| Inbox-Rendering über Litmus | On-Demand | On-Demand | Verfügbar | Du brauchst ein Litmus-Konto. Sie müssen zur Adobe gehen, um die erforderlichen Details zu erhalten oder die Inbox-Renderingkonfiguration durchzuführen. [mehr dazu](../../delivery/using/inbox-rendering.md) |
-| Integration mit dem IMS (Adobe ID) | On-Demand | On-Demand | On-Demand | Die IMS-Bereitstellung erfolgt durch Adobe. Diese Integration ist eine Voraussetzung für Adobe Experience Cloud-Integrationen. [mehr dazu](../../integrations/using/about-adobe-id.md) |
-| Daten für Dateiübertragungen verschlüsseln/entschlüsseln | On-Demand | Verfügbar | Verfügbar | Um die Dateivorbereitung oder -nachverarbeitung zu aktivieren, muss das erforderliche Dienstprogramm auf dem Adobe Campaign-Server installiert werden. Gehostete Kunden können die Systemsteuerung der Kampagne verwenden. [mehr dazu](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| Dateien komprimieren/entzippen | On-Demand verfügbar | Verfügbar | Um die Dateivorbereitung oder -nachverarbeitung zu aktivieren, muss das erforderliche Dienstprogramm auf dem Adobe Campaign-Server installiert werden. Gehostete Kunden können die Systemsteuerung der Kampagne verwenden. [mehr dazu](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| Kampagne-Server konfigurieren | On-Demand | Verfügbar | Verfügbar | [mehr dazu](../../installation/using/the-server-configuration-file.md) |
+| E-Mail-BCC | On-Demand | On-Demand | Verfügbar | [mehr dazu](../../installation/using/email-archiving.md) |
+| Message Center-Ausführungsinstanz verwalten | On-Demand | On-Demand | Verfügbar | [mehr dazu](../../message-center/using/about-transactional-messaging.md) |
+| Verwalten der Mid-Sourcing-Plattform | On-Demand | On-Demand | Verfügbar | [mehr dazu](../../installation/using/mid-sourcing-server.md) |
+| Inbox-Rendering über Litmus | On-Demand | On-Demand | Verfügbar | [mehr dazu](../../delivery/using/inbox-rendering.md) |
+| Integration mit dem IMS (Adobe ID) | On-Demand | On-Demand | On-Demand | [mehr dazu](../../integrations/using/about-adobe-id.md) |
+| Daten für Dateiübertragungen verschlüsseln/entschlüsseln | On-Demand | Verfügbar | Verfügbar | [mehr dazu](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| Dateien komprimieren/entzippen | On-Demand | Verfügbar | Verfügbar | [mehr dazu](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
 | Domänennamendelegation | On-Demand | On-Demand | Nicht verfügbar | [mehr dazu](https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html) |
-| SpamAssassin installieren | On-Demand | Verfügbar | Verfügbar | Für die Installation von SpamAssassin muss die Serverkonfigurationsdatei bearbeitet werden. [mehr dazu](../../delivery/using/spamassassin.md) |
-| Zugriff auf Bereitstellungsberichte | Verfügbar | On-Demand | Verfügbar | Bei bestimmten Hybrid-Bereitstellungen kann von der Marketing-Instanz aus nicht auf Bereitstellungsberichte zugegriffen werden. |
-| LDAP-Authentifizierung konfigurieren | Nicht verfügbar | Verfügbar | Verfügbar | Die LDAP-Konfiguration ist nur für lokale oder hybride Installationen möglich. [mehr dazu](../../installation/using/connecting-through-ldap.md) |
+| SpamAssassin installieren | On-Demand | Verfügbar | Verfügbar | [mehr dazu](../../delivery/using/spamassassin.md) |
+| Zugriff auf Bereitstellungsberichte | Verfügbar | On-Demand | Verfügbar | [mehr dazu](../../delivery/using/monitoring-deliverability.md) |
+| LDAP-Authentifizierung konfigurieren | Nicht verfügbar | Verfügbar | Verfügbar | [mehr dazu](../../installation/using/connecting-through-ldap.md) |
 
 
 ## Federated Data Access - FDA{#fda}
@@ -60,4 +60,4 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 * [Campaign Classic-Upgrades](../../rn/using/rn-overview.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
 * [Gold Standard-Versionen](../../rn/using/gold-standard.md)
-* [Gold Standard-Programm](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+* [Gold Standard-Programm](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
