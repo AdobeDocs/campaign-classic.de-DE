@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
 workflow-type: tm+mt
-source-wordcount: '3747'
+source-wordcount: '3780'
 ht-degree: 97%
 
 ---
@@ -25,6 +25,10 @@ Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
 
 ## Oktober 2020 {#oct-2020}
+
+Kampagne-On-Premise-, Hosting- und Hybrid-Hostingmodelle werden jetzt in einem eigenen Abschnitt beschrieben. [mehr dazu](../../installation/using/hosting-models.md)
+
+Die Funktionsmatrix für die Kampagne pro Hostingmodell wurde aktualisiert und im Installationshandbuch verschoben. [mehr dazu](../../installation/using/capability-matrix.md)
 
 Der Abschnitt mit den erweiterten Funktionen von Kampagne Berichte wurde verbessert, um detailliert zu veranschaulichen, wie URL-Parameter und Variablen in benutzerspezifischen Berichten verwendet werden. [mehr dazu](../../reporting/using/advanced-functionalities.md)
 
