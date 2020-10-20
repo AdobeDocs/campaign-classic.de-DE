@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 6652b081-66b6-47a8-97e5-383e3251647e
 translation-type: tm+mt
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
+source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 83%
+source-wordcount: '536'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +30,7 @@ Sie können Adobe Campaign ausgehend vom Menü **[!UICONTROL Start > Alle Progra
 
 Im Clientkonsole-Verbindungsfenster können Sie mithilfe Ihrer Benutzerkennung und Ihres Passworts eine existierende Datenbank auswählen oder konfigurieren und eine Verbindung mit dieser Datenbank herstellen:
 
-![](assets/acc-logon-screen.png)
+![](assets/s_ncs_user_login.png)
 
 ## Verbindung mit Adobe Campaign herstellen {#connecting-to-adobe-campaign}
 
@@ -86,18 +86,18 @@ Um die Verbindung zu Adobe Campaign zu unterbrechen, verwenden Sie das erste Sym
 >
 >Alternativ ist es möglich, die Anwendung ohne vorheriges Abmelden direkt zu verlassen.
 
-## Campaign-Version abrufen {#getting-your-campaign-version}
+## Getting your Adobe Campaign version {#getting-your-campaign-version}
 
 Das Menü **[!UICONTROL Hilfe > Versionsinformationen…]** liefert folgende Informationen:
 
-* Nummer der installierten **Software-Version**
-* **Build**-Nummer
+* **Versionsnummer** für Kampagne Client Console und Anwendungsserver
+* **Build** -Nummer für Kampagne Client Console und Anwendungsserver
 * Link zur Kundenunterstützung der Adobe
 * Links zu den Datenschutzrichtlinien für Adoben, Nutzungsbedingungen und Cookies-Richtlinien
 
 ![](assets/about-acc.png)
 
-Wenn Sie das Adobe-Support-Team kontaktieren, benötigen Sie die Versionsnummer und die Build-Nummer Ihrer Campaign-Clientkonsole und des Anwendungsservers.
+Bei jedem Kontakt mit dem Kundenservice-Team der Adobe müssen Sie die Versionsnummer und die Buildnummer Ihrer Kampagne-Client-Konsole und des Anwendungsservers angeben.
 
 Wenn Sie mit der [Kampagne Gold Standard-Version](../../rn/using/gold-standard.md)arbeiten, müssen Sie auch die SHA/1-Zeichen freigeben, die im Feld **[!UICONTROL Info]** angezeigt werden. Beispiel: In Gold **Standard 10-Version** zeigt die Buildnummer den **Build 9032@efd8a94** an, wie nachfolgend gezeigt:
 
