@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 677d631a075f50a80c9379fff0c17d3d06c7e803
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 79%
 
 ---
 
@@ -42,18 +42,18 @@ Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungs
 * [Erstellen von Übersichten](../../web/using/use-cases--creating-overviews.md): Erstellen Sie Übersichts-Webanwendungen, um alle Webanwendungen in Ihrer Datenbank anzuzeigen.
 * [Anwendungsbeispiel für Workflow](../../workflow/using/about-workflow-use-cases.md): Mithilfe dieser Anwendungsbeispiele lernen Sie die verschiedenen Verwendungsmöglichkeiten von Workflows kennen.
 
-## Anleitungsvideos {#how-to-videos}
+## Selbsthilfe {#how-to-videos}
 
-In unseren Anleitungsvideos werden die Hauptfunktionen von Adobe Campaign erklärt.
+Zusätzlich zur Produktdokumentation können Sie auf die nachfolgend aufgelisteten Selbsthilfe-Ressourcen der Kampagne zugreifen.
 
-* [Erstellen einer Zielgruppe](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): Hier erfahren Sie, wie Sie in Adobe Campaign eine Zielgruppe erstellen.
-* [Erstellen von Kampagnen und E-Mails](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html): Hier erfahren Sie, wie Sie in Adobe Campaign eine E-Mail für eine Kampagne erstellen.
-* [Erstellen einer Empfängerliste](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html): Erstellen Sie mithilfe eines Workflows eine Empfängerliste in Adobe Campaign.
-* [Erstellen eines Zielgruppen-Workflows](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-targeting-workflow.html): Erstellen Sie einen Workflow für den Geburtstag der Zielempfänger.
-* [Erstellen eines Workflows in einer Kampagne](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-workflow.html): Hier erfahren Sie, wie Sie einen Workflow in einer Kampagne erstellen.
-* [Importieren von Profilen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/importing-profiles.html): Hier erfahren Sie, wie Sie in Adobe Campaign Profile aus einer Datei importieren.
-* [Übersicht über die Benutzeroberfläche](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/interface-overview.html): Hier erfahren Sie, wie Sie in der Benutzeroberfläche von Adobe Campaign navigieren.
-* [Verwalten von Testadressen und ‑sendungen in einer E-Mail](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/managing-seed-and-proofs.html): Hier erfahren Sie, wie Sie in Adobe Campaign Testadressen und ‑sendungen zu einer vorhandenen E-Mail hinzufügen.
-* [Integration von Adobe Campaign mit Microsoft Dynamics 365](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/integrating/dynamics365-integration.html): Hier erfahren Sie, wie Sie Adobe Campaign mit Microsoft Dynamics über CRM-Connectoren verbinden und synchronisieren.
+### Übungsvideos
 
-Neben diesen Videos finden Sie auf unserer Webseite auch [Schulungskurse](https://learning.adobe.com/catalog.html) und [Präsentationsvideos](https://www.adobe.com/training/video.html).
+Entdecken Sie die wichtigsten Videofunktionen von Adobe Campaign. [mehr dazu](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/overview.html)
+
+### Schulungssitzungen und Videos
+
+Neben diesen kurzen und detaillierten Videos finden Sie [Schulungskurse](https://learning.adobe.com/catalog.html) und [Präsentationsvideos](https://www.adobe.com/training/video.html) zu Funktionen auf Adobe.com.
+
+### Experience League-Kurse
+
+Sie können auch die [empfohlenen Kurse](https://experienceleague.adobe.com/?lang=en#dashboard/learning) für Adobe Campaign Classic besuchen: Kurse sind fachkundige Kurssammlungen, die Ihnen helfen, schnell Fähigkeiten und Kenntnisse zu erwerben.
