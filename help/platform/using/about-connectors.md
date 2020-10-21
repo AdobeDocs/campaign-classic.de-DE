@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 100%
+source-wordcount: '195'
+ht-degree: 87%
 
 ---
 
@@ -38,5 +38,5 @@ Sie können Campaign auch mit vielen anderen Systemen integrieren, z. B.:
 
 >[!NOTE]
 >
->Die Verfügbarkeit dieser Module und ihre Nutzung hängen vom Typ Ihrer Installation ab. Weiterführende Informationen dazu finden Sie in der [Funktionsmatrix für On-Premise-/gehostete Campaign-Versionen](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
+>Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. Weitere Informationen finden Sie in der [Kampagne-On-Premise - gehostete Funktionsmatrix](../../installation/using/capability-matrix.md).
 
