@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 86c18986-1f65-40ff-80dc-1fbff37f406d
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3042'
 ht-degree: 21%
 
 ---
@@ -28,7 +28,7 @@ Im folgenden Abschnitt erhalten Sie einen Überblick über die Konfiguration, di
 
 >[!NOTE]
 >
->Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
+>Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 Weitere Informationen zu den Konzepten und Best Practices im Zusammenhang mit der Lieferbarkeit finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
