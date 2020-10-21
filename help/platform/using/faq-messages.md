@@ -11,9 +11,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '740'
 ht-degree: 100%
 
 ---
@@ -35,7 +35,7 @@ Im Zuge der Versandanalyse wird die Zielpopulation berechnet und der Versandinha
 
 Adobe empfiehlt dringend einen Testversand, um den Versand durch die Validierungsverantwortlichen zu überprüfen, bevor er an die Hauptzielgruppe gesendet wird. Damit können Inhalt, Personalisierung und Versandparameter geprüft werden.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Sie können sich auch [dieses Video](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/getting-started/managing-seed-and-proofs.html) ansehen.
+[Hier erfahren Sie mehr darüber](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ### Wie werden Testadressen in Adobe Campaign verwendet? {#how-to-use-seed-addresses-in-adobe-campaign-}
 
