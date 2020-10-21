@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: deployment-types-
 discoiquuid: 298d9b9f-220f-4862-bc4c-1ad7f8d51049
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 11%
+source-wordcount: '139'
+ht-degree: 8%
 
 ---
 
@@ -32,5 +32,5 @@ Bei einer Konfiguration auf mehreren Computern müssen Sie nicht überall dassel
 >Adobe für Bereitstellungen, die von der Adobe gehostet werden. Beispiel:
 >konfigurieren Sie die Server- und Instanzkonfigurationsdateien.
 >
->Weitere Informationen zu den Hauptunterschieden zwischen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder im Artikel [Funktionsunterschiede bei gehosteten und lokalen Bereitstellungen](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html) .
+>Weitere Informationen zu den Hauptunterschieden zwischen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in den Unterschieden zwischen [Funktionen für gehostete und lokale Bereitstellungen](../../installation/using/capability-matrix.md).
 
