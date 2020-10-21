@@ -1,8 +1,6 @@
 ---
-title: Aktualisieren
-seo-title: Aktualisieren
-description: Aktualisieren
-seo-description: null
+title: Aktualisieren auf einen neuen Build
+description: Erfahren Sie mehr über die technischen Schritte zur Aktualisierung auf einen neuen Build
 page-status-flag: never-activated
 uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
 contentOwner: sauviat
@@ -12,21 +10,21 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1163'
 ht-degree: 10%
 
 ---
 
 
-# Aktualisieren{#upgrading}
+# Aktualisierung auf einen neuen Build (lokal){#upgrading}
 
 Bevor Sie den Aktualisierungsprozess starten, müssen Sie feststellen, auf welche Adobe Campaign-Version aktualisiert werden soll, und die [Versionshinweise](../../rn/using/latest-release.md) lesen.
 
 >[!CAUTION]
 >
->Es wird dringend empfohlen, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. For more information, refer to [Backup](../../production/using/backup.md).\
+>Es wird dringend empfohlen, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. Weitere Informationen finden Sie unter [Sicherung](../../production/using/backup.md).\
 >Um eine Aktualisierung durchzuführen, stellen Sie sicher, dass Sie über die Fähigkeit und die Berechtigungen zum Zugriff auf Instanzen und Protokolle verfügen.
 
 >[!NOTE]
