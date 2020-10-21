@@ -1,8 +1,6 @@
 ---
 title: Erstellen einer Profilliste mit einem Workflow
-seo-title: Erstellen einer Profilliste mit einem Workflow
-description: Erstellen einer Profilliste mit einem Workflow
-seo-description: null
+description: Erfahren Sie, wie Sie eine Profil-Liste in einem Workflow erstellen
 page-status-flag: never-activated
 uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
 contentOwner: sauviat
@@ -12,17 +10,23 @@ content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 22%
+source-wordcount: '203'
+ht-degree: 13%
 
 ---
 
 
 # Erstellen einer Profilliste mit einem Workflow{#creating-a-profile-list-with-a-workflow}
 
-Um eine Liste des Typs &quot; **[!UICONTROL Liste]** &quot;basierend auf der neuen Empfänger-Tabelle zu erstellen, müssen Sie einen Targeting-Arbeitsablauf erstellen, der die Liste generiert. Weitere Informationen zu Listen in der Kampagne finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+Um eine Liste des Typs &quot; **[!UICONTROL Liste]** &quot;basierend auf der neuen Empfänger-Tabelle zu erstellen, müssen Sie einen Targeting-Arbeitsablauf erstellen, der die Liste generiert.
+
+Weitere Informationen zu Listen in der Kampagne finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
+
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video).
+
+Gehen Sie wie folgt vor, um einen Targeting-Arbeitsablauf zu erstellen und Empfänger in einer Tabelle mit benutzerdefiniertem Empfänger zu aktualisieren:
 
 1. Wechseln Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Aufträge > Targeting Workflows]** des Explorers.
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
@@ -46,7 +50,4 @@ Um eine Liste des Typs &quot; **[!UICONTROL Liste]** &quot;basierend auf der neu
 
    ![](assets/mapping_list_view.png)
 
->[!NOTE]
->
->Sie können auch das Video zum [Erstellen einer Liste von Empfängern](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/creating-a-list-of-recipients.html) lesen.
 
