@@ -11,7 +11,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 9ef8e05904751cc141403af20582dc850610f6d2
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 98%
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 # Häufige Fragen{#common-questions}
 
-Benötigen Sie Hilfe bei der Arbeit mit Campaign Classic? Dann lesen Sie im Folgenden die 10 wichtigsten Fragen sowie weitere häufig gestellte Fragen auf dieser Seite. Sie können sich auch [Anleitungsvideos](https://docs.adobe.com/content/help/en/campaign-learn/campaign-classic-tutorials/overview.html) ansehen sowie [Erste Schritte](../../platform/using/tutorials.md#step-by-step-guides) zu Campaign lesen, um die wichtigsten Funktionen kennenzulernen. Sie konnten keine Antwort finden? [Dann fragen Sie die Community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign)!
+Benötigen Sie Hilfe bei der Arbeit mit Campaign Classic? Dann lesen Sie im Folgenden die 10 wichtigsten Fragen sowie weitere häufig gestellte Fragen auf dieser Seite. Sie können sich auch [Anleitungsvideos](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/overview.html) ansehen sowie [Erste Schritte](../../platform/using/tutorials.md#step-by-step-guides) zu Campaign lesen, um die wichtigsten Funktionen kennenzulernen. Sie konnten keine Antwort finden? [Dann fragen Sie die Community](https://forums.adobe.com/community/experience-cloud/marketing-cloud/campaign)!
 
 ## 1. Wie kann ich Campaign auf die neuste Version aktualisieren? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
