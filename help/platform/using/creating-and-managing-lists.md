@@ -1,8 +1,6 @@
 ---
 title: Listen erstellen und verwalten
-seo-title: Listen erstellen und verwalten
-description: Listen erstellen und verwalten
-seo-description: null
+description: Erfahren Sie, wie Sie Listen erstellen und verwalten
 page-status-flag: never-activated
 uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
+source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 93%
+source-wordcount: '856'
+ht-degree: 92%
 
 ---
 
@@ -139,7 +137,7 @@ Erfahren Sie, wie Sie eine Audience erstellen, indem Sie eine Liste von Empfäng
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## Erstellen einer Liste von Empfängern mit einem Workflow
+## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
 
 Erfahren Sie, wie Sie einen Workflow zur Zielgruppe von Empfängern erstellen und wie Sie ihn vor der Verwendung der Liste in einer E-Mail-Zielgruppe wiederholen.
 
