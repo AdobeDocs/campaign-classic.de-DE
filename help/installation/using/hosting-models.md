@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 3175b9ab-e305-4f19-8267-d6172fa07a2a
 translation-type: tm+mt
-source-git-commit: c03e90b2e2f57606749c86cda343ce5756fec122
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 3%
+source-wordcount: '332'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign Angebots verfügt über drei Hostingmodelle, die Flexibilität bi
 
 >[!NOTE]
 >
->Bei Adobe gehosteten Umgebung können Hauptinstallations- und Konfigurationsschritte nur durch Adobe ausgeführt werden, z. B. durch Konfiguration des Servers und Anpassen der Instanzkonfigurationsdateien. Weitere Informationen zu den Hauptunterschieden zwischen den Bereitstellungsmodi finden Sie in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
+>Bei Adobe gehosteten Umgebung können Hauptinstallations- und Konfigurationsschritte nur durch Adobe ausgeführt werden, z. B. durch Konfiguration des Servers und Anpassen der Instanzkonfigurationsdateien. Weitere Informationen zu den Hauptunterschieden zwischen den Bereitstellungsmodi finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 * **Managed Services (gehostet)**
 
