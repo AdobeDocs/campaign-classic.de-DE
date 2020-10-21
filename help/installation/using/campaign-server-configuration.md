@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: f296676e-3bf1-47da-8239-f5ae54e52fc0
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 4%
+source-wordcount: '550'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ Weitere Konfigurationen finden Sie unter [Konfigurieren des Kampagne-Servers](..
 
 >[!NOTE]
 >
->Serverseitige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in diesem [Artikel](https://helpx.adobe.com/de/campaign/kb/acc-on-prem-vs-hosted.html).
+>Serverseitige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in [der Funktionsmatrix](../../installation/using/capability-matrix.md).
 
 ## Interne Kennung {#internal-identifier}
 
