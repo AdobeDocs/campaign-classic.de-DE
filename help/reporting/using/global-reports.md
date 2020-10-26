@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2388'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -308,4 +308,4 @@ Die Zahl der Öffnungen entspricht der Gesamtzahl der geöffneten Nachrichten. E
 
 >[!NOTE]
 >
->Browser- und Betriebssystemnamen stellen einen Teil der Informationen dar, die vom Benutzeragent des Browsers gesendet werden, an den die Nachricht geöffnet wurde. Adobe Campaign zieht den Gerätetyp anhand der Geräteinformationen ab.
+>Browser- und Betriebssystemnamen stellen einen Teil der Informationen dar, die vom Benutzeragent des Browsers gesendet werden, für den die Nachricht geöffnet wurde. Adobe Campaign leitet den Gerätetyp anhand der Geräteinformationen ab.
