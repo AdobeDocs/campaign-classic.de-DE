@@ -11,11 +11,11 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 discoiquuid: cc832666-ad18-49ce-afcc-f9169b683ae8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3023'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -564,7 +564,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
   <tr> 
    <td> Beschwerden<br /> </td> 
    <td> @complaints<br /> </td> 
-   <td> Count of messages with a status equal to "Failed" and a reason equal to "address on denylist".<br /> </td> 
+   <td> Zählung aller Nachrichten mit Status "Fehlgeschlagen" und dem Grund "Adresse auf Blockierungsliste".<br /> </td> 
    <td> Count(@status=2 und msg/@failureReason=8)<br /> </td> 
   </tr> 
   <tr> 
@@ -766,7 +766,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
   <tr> 
    <td> Durch eine Regel zurückgewiesene Nachrichten<br /> </td> 
    <td> @reject<br /> </td> 
-   <td> Number of addresses ignored during the analysis in keeping with typology rules: address not specified, quarantined, on denylist, etc.<br /> </td> 
+   <td> Zahl der im Zuge der Versandanalyse aufgrund einer Typologieregel zurückgewiesenen Adressen (Adresse nicht angegeben, in Quarantäne, auf Blockierungsliste usw.).<br /> </td> 
    <td> sum([properties/@reject])<br /> </td> 
   </tr> 
   <tr> 
