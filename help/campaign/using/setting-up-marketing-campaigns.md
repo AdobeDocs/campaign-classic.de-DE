@@ -11,9 +11,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1268'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 1. Wiederholen Sie die obigen Schritte, um Ihren neuen Programmordner und seinen internen Namen umzubenennen.
 
-## Kampagnen erstellen     {#creating-a-campaign}
+## Kampagnen erstellen      {#creating-a-campaign}
 
 ### Hinzufügen einer Kampagne {#adding-a-campaign}
 
