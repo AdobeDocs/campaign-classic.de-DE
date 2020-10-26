@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 >
 >Dieser Abschnitt gilt für Online-Kanäle: E-Mail, SMS, Push-Benachrichtigungen.
 
-### Zustellbarkeit durch Quarantänen optimieren    {#optimizing-your-delivery-through-quarantines}
+### Zustellbarkeit durch Quarantänen optimieren     {#optimizing-your-delivery-through-quarantines}
 
 Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
@@ -44,21 +44,21 @@ Eine **Quarantäne** bezieht sich immer nur auf die Adresse, nicht aber auf das 
 
 Falls jedoch ein Profil mit einer E-Mail-Adresse in Quarantäne eine neue Adresse angibt, kann es erneut in Versandzielgruppen aufgenommen werden.
 
-Being on the **denylist**, on the other hand, will result in the profile no longer being targeted by any delivery, for example after an unsubscription (opt-out).
+Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil vom Versand ausgeschlossen wird. Dies ist z. B. nach einer Abmeldung (Opt-out) der Fall.
 
 >[!NOTE]
 >
->Wenn ein Benutzer auf eine SMS-Nachricht mit einem Suchbegriff wie &quot;STOP&quot;antwortet, um sich von SMS-Versänden abzumelden, wird sein Profil nicht wie im Abmeldeprozess zur E-Mail-Nachricht hinzugefügt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
+>Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
-## In Quarantäne befindliche Adressen identifizieren    {#identifying-quarantined-addresses}
+## In Quarantäne befindliche Adressen identifizieren     {#identifying-quarantined-addresses}
 
 Die in Quarantäne befindlichen Adressen können für einen bestimmten Versand oder für die gesamte Plattform angezeigt werden.
 
-### Für einen Versand in Quarantäne befindliche Adressen identifizieren    {#identifying-quarantined-addresses-for-a-delivery}
+### Für einen Versand in Quarantäne befindliche Adressen identifizieren     {#identifying-quarantined-addresses-for-a-delivery}
 
 Die für einen bestimmten Versand in Quarantäne befindlichen Adressen werden während der Versandvorbereitung in den Versandlogs des Versand-Dashboards angezeigt (siehe [Protokolle und Versandverlauf](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
 
-### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren    {#identifying-quarantined-addresses-for-the-entire-platform}
+### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren     {#identifying-quarantined-addresses-for-the-entire-platform}
 
 Administratoren können die für die gesamte Plattform in Quarantäne befindlichen Adressen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** anzeigen.
 
@@ -107,7 +107,7 @@ Manuelles Entfernen einer Adresse aus der Quarantäneliste:
 
    ![](assets/tech_quarant_error_status.png)
 
-* Sie können auch ihren Status in **[!UICONTROL Auf die Zulassungsliste gesetzt]**&#x200B;ändern. In diesem Fall bleibt die Adresse auf der Quarantäneliste, aber sie wird systematisch als Ziel ausgewählt, selbst wenn ein Fehler auftritt.
+* Sie können ihren Status auch in **[!UICONTROL Auf die Zulassungsliste gesetzt]**&#x200B;ändern. In diesem Fall bleibt die Adresse auf der Quarantäneliste, aber sie wird systematisch als Ziel ausgewählt, selbst wenn ein Fehler auftritt.
 
 In den folgenden Fällen werden die Adressen automatisch aus der Quarantäneliste entfernt:
 
@@ -118,11 +118,11 @@ In den folgenden Fällen werden die Adressen automatisch aus der Quarantänelist
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
-Recipients with an address in a **[!UICONTROL Quarantine]** or **[!UICONTROL On denylist]** status will never be removed, even if they receive an email.
+Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Softwareverteilungs-Assistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
-## Ursachen für Quarantänen    {#conditions-for-sending-an-address-to-quarantine}
+## Ursachen für Quarantänen     {#conditions-for-sending-an-address-to-quarantine}
 
 Adobe Campaign verwaltet die Quarantäne je nach dem Typ des Versandfehlers und dem Grund, der bei der Qualifizierung von Fehlermeldungen (siehe [Bounce-Message-Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) und [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)) zugewiesen wurde.
 
