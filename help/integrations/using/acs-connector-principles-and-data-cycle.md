@@ -11,9 +11,9 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 64d87bea-2376-4684-ac93-6ca56fe0f262
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2052'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ In diesem Dokument wird ACS Connector beschrieben. In den folgenden Abschnitten 
 * [Synchronisieren von Profilen](../../integrations/using/synchronizing-profiles.md): Anleitung zur Replikation von Profilen und zur Erstellung von Sendungen mit diesen Profilen
 * [Synchronisieren von Zielgruppen](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste als Zielgruppe in Campaign Standard
 * [Synchronisieren von Webanwendungen](../../integrations/using/synchronizing-web-applications.md): Anleitung zur Verknüpfung von Webanwendungen in Campaign v7 mit Campaign Standard
-* [Problembehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md): Antworten auf häufige Probleme.
+* [Fehlerbehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md): Antworten auf häufige Probleme.
 
 >[!NOTE]
 >
