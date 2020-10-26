@@ -1,6 +1,6 @@
 ---
 title: Zugriff auf externe Datenbanken
-description: Erfahren Sie, wie Sie auf Daten in einer externen Datenbank zugreifen und diese verarbeiten können
+description: Erfahren Sie, wie Sie Daten in einer externen Datenbank aufrufen und verarbeiten können
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
