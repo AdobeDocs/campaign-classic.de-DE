@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: fe4e6f64-eb0a-44bc-8221-6c9bfb99871f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    Die Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]** fügt eine weitere Etappe hinzu, die die Filterung des Aggregats ermöglicht (z. B. nach einer bestimmten Art von Bestellung, nach Kunden mit mehr als zehn Bestellungen etc.).
 
-1. If necessary, you can add new columns to the output file, such as computing or processing results for example. To do this, click the **[!UICONTROL Add]** icon.
+1. Bei Bedarf kann die Ausgabedatei um zusätzliche Spalten ergänzt werden, die die Ergebnisse von Berechnungen oder speziellen Vorgängen bezüglich der Daten aufnehmen. Klicken Sie hierzu auf das Symbol **[!UICONTROL Hinzufügen]**.
 
    ![](assets/s_advuser_extract_file_add_col.png)
 
@@ -51,9 +51,9 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
    ![](assets/s_advuser_extract_file_agregate_values.png)
 
-Sie können einen Nachbearbeitungsprozess definieren, der während der Extraktion der Daten ausgeführt werden soll, sodass Sie die Dateien komprimieren oder verschlüsseln können. Dazu muss der gewünschte Befehl auf der Registerkarte &quot; **[!UICONTROL Skript]** &quot;der Aktivität hinzugefügt werden.
+Sie können eine Nachbearbeitung definieren, die während der Datenextraktion ausgeführt werden soll, damit die Dateien komprimiert oder verschlüsselt werden. Dazu muss der gewünschte Befehl auf dem Tab **[!UICONTROL Script]** der Aktivität hinzugefügt werden.
 
-Weitere Informationen finden Sie in diesem Abschnitt: [Komprimieren oder Verschlüsseln einer Datei](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Weiterführende Informationen finden Sie in diesem Abschnitt: [Komprimieren oder Verschlüsseln einer Datei](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 
