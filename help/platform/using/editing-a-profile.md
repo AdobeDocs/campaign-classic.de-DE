@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 93dd29e8-cf0a-4010-a3cc-f68c52c0d9ef
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Prof
 
 >[!NOTE]
 >
->Wenn die Option &quot; **[!UICONTROL Kein Kontakt mehr&quot;(von jedem Kanal)]** aktiviert ist, bedeutet dies, dass das Profil auf der Blockierungsliste steht, d. h. das Profil hat den Wunsch geäußert, nicht kontaktiert zu werden (z. B. durch Klicken auf einen Link in einer Abmeldung in einem Newsletter). Sie werden nicht mehr von Versänden auf einem Kanal (E-Mail, Direktwerbung usw.) angegangen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/understanding-quarantine-management.md).
+>Wenn die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** aktiviert ist, bedeutet dies, dass das Profil auf der Blockierungsliste steht; das Profil hat also den Wunsch geäußert, nicht kontaktiert zu werden (z. B. durch Klicken auf einen Abmelde-Link in einem Newsletter). Das Profil wird keine Sendungen mehr erhalten (auf keinem Kanal: ob E-Mail, Briefpost usw.). Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/understanding-quarantine-management.md).
 
 ## Tab &quot;Kontaktdaten&quot;{#contact-information-tab}
 
