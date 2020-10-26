@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 87ad4d4fc69d75e4367e7467ce27de29f58f9445
 workflow-type: tm+mt
 source-wordcount: '536'
-ht-degree: 75%
+ht-degree: 90%
 
 ---
 
@@ -92,21 +92,21 @@ Das Menü **[!UICONTROL Hilfe > Versionsinformationen…]** liefert folgende Inf
 
 * **Versionsnummer** für Kampagne Client Console und Anwendungsserver
 * **Build** -Nummer für Kampagne Client Console und Anwendungsserver
-* Link zur Kundenunterstützung der Adobe
-* Links zu den Datenschutzrichtlinien für Adoben, Nutzungsbedingungen und Cookies-Richtlinien
+* Link zur Adobe-Kundenunterstützung
+* Links zur Adobe-Datenschutzrichtlinie sowie zu Nutzungsbedingungen und Bestimmungen zu Cookies
 
 ![](assets/about-acc.png)
 
 Bei jedem Kontakt mit dem Kundenservice-Team der Adobe müssen Sie die Versionsnummer und die Buildnummer Ihrer Kampagne-Client-Konsole und des Anwendungsservers angeben.
 
-Wenn Sie mit der [Kampagne Gold Standard-Version](../../rn/using/gold-standard.md)arbeiten, müssen Sie auch die SHA/1-Zeichen freigeben, die im Feld **[!UICONTROL Info]** angezeigt werden. Beispiel: In Gold **Standard 10-Version** zeigt die Buildnummer den **Build 9032@efd8a94** an, wie nachfolgend gezeigt:
+Wenn Sie mit der [Campaign Gold Standard-Version](../../rn/using/gold-standard.md) arbeiten, müssen Sie auch die SHA/1-Zeichen freigeben, die im Feld **[!UICONTROL Versionsinformationen]** angezeigt werden. Beispiel: In der Gold **Standard 10-Version** zeigt die Build-Nummer **build 9032@efd8a94** an, wie nachfolgend gezeigt:
 
 ![](assets/about-acc-gs.png)
 
-Learn more about Gold Standard [in this article](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+Weitere Informationen zu Gold Standard finden Sie [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
 
 **Verwandte Themen**:
 
-* [Optionen zur Unterstützung von Kampagnen](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
-* [Softwareverteilung](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html)
-* [Experience Cloud- und Expertensitzungen](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+* [Support-Optionen für Campaign ](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
+* [Software-Verteilung](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html)
+* [Support für Experience Cloud und Expertensitzungen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
