@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: fc95538b-b54d-44ec-81aa-f51b62982699
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2463'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Recommendations for defining an SPF record:
 
 ## Feedback Loops {#feedback-loop}
 
-Eine Feedback-Schleife funktioniert, indem auf ISP-Ebene eine bestimmte E-Mail-Adresse für eine Reihe von IP-Adressen angegeben wird, die zum Senden von Nachrichten verwendet werden. Der ISP wird die Nachrichten, die von Empfängern als Spam gemeldet werden, in ähnlicher Weise an diesen Posteingang senden wie bei den Absprungmeldungen. Die Plattform sollte so konfiguriert sein, dass zukünftige Versand für Benutzer, die sich beschwert haben, blockiert werden. Es ist wichtig, sich nicht mehr mit ihnen in Verbindung zu setzen, auch wenn sie nicht den richtigen Ausschluss-Link verwendet haben. Auf der Grundlage dieser Beschwerden wird ein ISP seiner Blockierungsliste eine IP-Adresse hinzufügen. Je nach ISP wird eine Beschwerderate von etwa 1 % dazu führen, dass eine IP-Adresse blockiert wird.
+Eine Feedback-Schleife funktioniert, indem auf der ISP-Ebene eine bestimmte E-Mail-Adresse für einen Bereich von IP-Adressen angegeben wird, der zum Senden von Nachrichten verwendet wird. Der ISP wird die Nachrichten, die von Empfängern als Spam gemeldet werden, auf ähnliche Weise an diesen Posteingang senden wie bei Bounce-Nachrichten. Die Plattform sollte so konfiguriert sein, dass zukünftige Sendungen für Benutzer, die sich beschwert haben, blockiert werden. Es ist wichtig, dass sie nicht mehr kontaktiert werden, auch wenn sie nicht den richtigen Ausschluss-Link verwendet haben. Auf Grundlage solcher Beschwerden wird ein ISP eine IP-Adresse seiner Blockierungsliste hinzufügen. Je nach ISP wird eine Beschwerderate von etwa 1 % dazu führen, dass eine IP-Adresse blockiert wird.
 
 Aktuell wird an der Konzeption eines Standards für das Format von Feedback-Loop-Nachrichten gearbeitet: das [Abuse Feedback Reporting Format (ARF)](https://tools.ietf.org/html/rfc6650).
 
@@ -255,7 +255,7 @@ IP-Zertifizierung ist ein Best Practices-Sendeprogramm, mit dem sichergestellt w
 
 Derzeit bieten zwei Anbieter eine IP-Zertifizierung an: Return Path und Certified Senders Alliance.
 
-Zertifizierte Absender werden zu E-Mail-Zulassungslisten hinzugefügt, die von globalen Postfachanbietern und E-Mail-Firmen verwendet werden. Diese kommerziellen Zulassungslisten basieren auf einem System, das es dem Absender ermöglicht, Anti-Spam-Filter ganz zu umgehen oder inkrementelle Punkte beim Einstieg in das System zuzuweisen.
+Zertifizierte Absender werden E-Mail-Zulassungslisten hinzugefügt, die von globalen E-Mail-Anbietern und E-Mail-Sicherheitsunternehmen verwendet werden. Diese kommerziellen Zulassungslisten basieren auf einem System, das es dem Absender erlaubt, beim Eintritt in das System Anti-Spam-Filter ganz zu umgehen oder inkrementelle Punkte zu erhalten.
 
 Das [Zertifizierungsprogramm von Return Path](https://www.validity.com/products/returnpath/certification/) bietet eine Reihe von Vorteilen, darunter die folgenden:
 
