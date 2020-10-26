@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: f449ccd5-3965-4ab8-b5a9-993f3260aba9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Pract
 * Melden Sie sich gelegentlich beim SFTP-Server direkt an, um dessen Inhalt zu prüfen.
 * Beachten Sie bitte, dass die Verwaltung des SFTP-Speichers hauptsächlich Ihre Verantwortung ist.
 * Standardmäßig sind alle von Ihnen erstellten Ordner im Lese-/Schreibmodus ausschließlich für Ihre Kennung verfügbar. Wenn Sie Ordner erstellen, auf die Campaign Zugriff haben soll, konfigurieren Sie sie mit Lese-/Schreibrechten für die gesamte Gruppe. Andernfalls ist es für Workflows unmöglich, Dateien zu erstellen oder zu löschen, da sie aus Sicherheitsgründen innerhalb derselben Gruppe unter einer anderen Kennung ausgeführt werden.
-* Die öffentlichen IPs, von denen Sie versuchen, die SFTP-Verbindung zu starten, müssen der Zulassungsliste in der Kampagne hinzugefügt werden. Adding IP addresses to the allowlist can be requested via a [support ticket](https://support.neolane.net).
+* Die öffentlichen IPs, mit denen Sie die SFTP-Verbindung aufbauen, müssen in der Campaign-Instanz auf der Zulassungsliste stehen. Das Hinzufügen von IP-Adressen zur Zulassungsliste kann über ein [Supportticket](https://support.neolane.net) angefordert werden.
 
 >[!CAUTION]
 >
@@ -87,7 +87,7 @@ Im folgenden Abschnitt finden Sie die Informationen, die Sie dem Adobe-Supportte
 
    Wenn der Port nicht geöffnet ist, stellen Sie sicher, dass Sie ausgehende Verbindungen auf Ihrer Seite öffnen und versuchen Sie es dann erneut. Wenn Sie immer noch Verbindungsprobleme haben, melden Sie das Ergebnis des Befehls dem Adobe-Supportteam.
 
-1. Vergewissern Sie sich, dass die öffentliche IP, von der Sie versuchen, die SFTP-Verbindung zu starten, diejenige ist, die Sie der Adobe Support für die Zulassungsliste bereitgestellt haben.
+1. Überprüfen Sie, ob die öffentliche IP-Adresse, von der Sie versuchen, die SFTP-Verbindung herzustellen, auch tatsächlich diejenige ist, die Sie dem Adobe-Supportteam zur Aufnahme in die Zulassungsliste bereitgestellt haben.
 1. Wenn Sie Passwort-basierte Authentifizierung verwenden, ist Ihr Passwort möglicherweise abgelaufen (die Gültigkeitsdauer von Passwörtern beträgt 90 Tage). Daher empfehlen wir dringend die Verwendung einer schlüsselbasierten Authentifizierung (siehe [Best Practices für die Nutzung von SFTP-Servern](#sftp-server-best-practices)).
 1. Wenn Sie eine schlüsselbasierte Authentifizierung verwenden, überprüfen Sie, ob der von Ihnen verwendete Schlüssel mit dem übereinstimmt, den Sie dem Adobe-Supportteam zur Konfiguration der Instanz bereitgestellt haben.
 1. Wenn Sie FileZilla oder ein ähnliches FTP-Tool verwenden, geben Sie im Supportticket die Verbindungsprotokoll-Details an.
@@ -129,7 +129,7 @@ Dieser Fehler gibt an, dass der Domain-Name des FTP-Servers nicht ordnungsgemä�
 
    1. Wechseln Sie zum Workflow-Audit und überprüfen Sie, ob in den Protokollen der Fehler „Hostname konnte nicht aufgelöst werden“ angezeigt wird.
 
-1. Wenn der SFTP-Server von der Adobe gehostet wird, prüfen Sie, ob der IP zur Zulassungsliste hinzugefügt wird, indem Sie sich an den Kundendienst wenden.
+1. Wenn der SFTP-Server von Adobe gehostet wird, überprüfen Sie, ob die IP-Adresse zur Zulassungsliste hinzugefügt wurde, indem Sie sich an die Kundenunterstützung wenden.
 
    Überprüfen Sie andernfalls:
 
