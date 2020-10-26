@@ -11,18 +11,18 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 2f66152b-4d4a-40b8-a1bb-5b97c5410882
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2222'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Campaign-Arbeitsbereich{#adobe-campaign-workspace}
 
-## Exploring Adobe Campaign interface {#about-adobe-campaign-interface}
+## Über die Benutzeroberfläche von Adobe Campaign {#about-adobe-campaign-interface}
 
 Nach Herstellung der Datenbankverbindung gelangen Sie auf die Startseite von Adobe Campaign. Diese ist wie ein Dashboard gestaltet und besteht aus Links und Verknüpfungen, die Ihnen je nach Installation den Zugriff auf Funktionen und die allgemeinen Konfigurationselemente der Plattform erlauben.
 
@@ -30,7 +30,7 @@ In der Mitte des Fensters haben Sie die Möglichkeit, auf die Online-Dokumentati
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Discover Kampagne Workspace in Video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 >[!NOTE]
 >
@@ -327,7 +327,7 @@ Sie können die Sortierung konfigurieren oder Sortierkriterien kombinieren. Gehe
 
 1. Wählen Sie **[!UICONTROL OK]** aus, um die Einstellungen zu bestätigen und das Ergebnis anzuzeigen.
 
-### Elemente suchen {#running-a-search}
+### Suchen nach Elementen {#running-a-search}
 
 In Editoren haben Sie die Möglichkeit, mithilfe des **[!UICONTROL Suchen]**-Feldes die Auswahl der verfügbaren Felder einzuschränken. Mit der **Enter**-Taste können Sie die Liste durchsuchen. Die Ihrem Suchkriterium entsprechenden Felder erscheinen fettgedruckt.
 
@@ -349,8 +349,8 @@ Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisc
  <thead> 
   <tr> 
    <th> Formate<br /> </th> 
-   <th> English (US)<br /> </th> 
-   <th> English (EN)<br /> </th> 
+   <th> Englisch (US)<br /> </th> 
+   <th> Englisch (EN)<br /> </th> 
   </tr> 
  </thead> 
  <tbody> 
