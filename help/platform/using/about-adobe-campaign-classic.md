@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 26ba32468bce3bbb1c52d225c8195977da4d7d54
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '899'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Die Zyklen einer mit Adobe Campaign gesteuerten Marketingkampagne stellen die Ha
 
 ![](assets/d_ncs_user_emarketing.png)
 
-![](assets/do-not-localize/how-to-video.png) [Wichtigste Funktionen und Funktionen in Videos](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
+![](assets/do-not-localize/how-to-video.png) [Wichtigste Funktionen und Leistungsmerkmale im Video](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/introduction-to-adobe-campaign-classic.html)
 
 ### Integriertes Kundenprofil {#integrated-customer-profile}
 
