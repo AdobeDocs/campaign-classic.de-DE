@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 discoiquuid: a21576c7-e94c-4fe1-9e31-d89116e427f6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '534'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Das Verfahren zum Erstellen einer Prozessvorlage wird unter [Export-Assistent](.
 
 >[!NOTE]
 >
->The native template **[!UICONTROL Import denylist]** is already configured to import a list of email addresses which were added to the denylist.
+>Die native Vorlage **[!UICONTROL Blockierungsliste importieren]** ist bereits für den Import einer Liste von E-Mail-Adressen konfiguriert, die der Blockierungsliste hinzugefügt wurden.
 > 
 >Mit den Vorlagen **[!UICONTROL Neuer Textimport]** und **[!UICONTROL Neuer Textexport]** können Sie einen völlig neuen Import oder Export konfigurieren.
 
