@@ -11,9 +11,9 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 discoiquuid: 4abce633-647f-4ae4-9419-859f6e2e8628
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1203'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
 
-## Beispiele  {#examples}
+## Beispiele   {#examples}
 
 ### Erstellung und Versand eines Inhalts automatisieren {#automating-content-creation-and-delivery}
 
