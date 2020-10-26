@@ -15,7 +15,7 @@ translation-type: tm+mt
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
 source-wordcount: '1891'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -134,7 +134,7 @@ So konfigurieren Sie Azure Synapse unter CentOS:
 
    >[!NOTE]
    >
-   >Um die Kommunikation von der Seite von &quot;Blue Synapse Analytics&quot;zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Um Kommunikation von Azure Synapse Analytics aus zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 1. Führen Sie bei &quot;iptables&quot; den folgenden Befehl aus:
 
@@ -225,7 +225,7 @@ So konfigurieren Sie Azure Synapse unter Debian:
 
    >[!NOTE]
    >
-   >Um die Kommunikation von der Seite von &quot;Blue Synapse Analytics&quot;zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
+   >Um Kommunikation von Azure Synapse Analytics aus zu ermöglichen, müssen Sie eventuell Ihre öffentliche IP zur Zulassungsliste hinzufügen. Lesen Sie dazu die [Azure-Dokumentation](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-firewall-configure#use-the-azure-portal-to-manage-server-level-ip-firewall-rules).
 
 ## Zugriff auf Snowflake konfigurieren {#configure-access-to-snowflake}
 
