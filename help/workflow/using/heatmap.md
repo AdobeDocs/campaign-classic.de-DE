@@ -11,9 +11,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 discoiquuid: 6a71f5ee-c8e0-4ac4-acae-6dffbf799d0c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1397'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Genauer gesagt, hilft sie den Administratoren der Plattform bei Folgendem:
 >
 >Zusätzlich zur **Workflow-Heatmap** können Sie einen Workflow erstellen, mit dem Sie den Status einer Reihe von Workflows überwachen und wiederkehrende Nachrichten an Supervisoren senden können. Weitere Informationen hierzu finden Sie im [entsprechenden Abschnitt](../../workflow/using/supervising-workflows.md).
 
-Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgenden Konzepte: [Workflows](../../workflow/using/about-workflows.md), [Aktivitäten](../../workflow/using/about-activities.md) und [Best Practices für Workflows](../../workflow/using/workflow-best-practices.md).
+Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgenden Konzepte: [Workflows](../../workflow/using/about-workflows.md), [Aktivitäten](../../workflow/using/about-activities.md) und [Best Practices bei Workflows](../../workflow/using/workflow-best-practices.md).
 
 Die Workflow-Heatmap ist ab Version 18.10 standardmäßig in Adobe Campaign verfügbar. Wenn Sie einen Build zwischen 8700 und 8977 (18.10) haben, können Sie ebenfalls von dieser Funktion profitieren. Um das entsprechende Package anzufordern, wenden Sie sich an die [Adobe-Kundenunterstützung](https://support.neolane.net/) und befolgen Sie die Anweisungen auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/install-workflow-heatmap-package.html), um zu erfahren, wie Sie es installieren.
 
