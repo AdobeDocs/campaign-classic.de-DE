@@ -1,6 +1,6 @@
 ---
 title: Berichteigenschaften
-description: Weitere Informationen zu den Berichtseigenschaften
+description: Weiterführende Informationen zu den Einstellungen der Berichteigenschaften
 page-status-flag: never-activated
 uuid: 56163f53-d115-45b8-94a5-c173ac4c6533
 contentOwner: sauviat
@@ -9,51 +9,51 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 5ec88743-be51-438c-9064-dd0196fdd7d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b0b9a0714075474bf52c3eed78d45bcef25b44fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 
 # Berichteigenschaften{#properties-of-the-report}
 
-Sie können Ihren Bericht ganz nach Ihren Bedürfnissen personalisieren und konfigurieren. Bearbeiten Sie dazu die Eigenschaften. Auf Berichteigenschaften wird über die Schaltfläche **[!UICONTROL Eigenschaften]** über dem Diagramm für die Aktivität zugegriffen.
+Sie können Ihren Bericht ganz nach Bedarf personalisieren und konfigurieren. Bearbeiten Sie dazu die Eigenschaften. Auf Berichteigenschaften können Sie mit der Schaltfläche **[!UICONTROL Eigenschaften]** über dem Diagramm für Aktivitätsabfolgen zugreifen.
 
 ![](assets/s_ncs_advuser_report_properties_01.png)
 
-Allgemeine Eigenschaften werden nachfolgend beschrieben. Die erweiterten Funktionen, die auf den Registerkarten **[!UICONTROL Parameter]**, **[!UICONTROL Variablen]** und **[!UICONTROL Skripten]** konfiguriert wurden, werden [in diesem Abschnitt](../../reporting/using/advanced-functionalities.md)beschrieben.
+Allgemeine Eigenschaften werden nachfolgend beschrieben. Erweiterte Funktionen, die sich auf den Tabs **[!UICONTROL Parameter]**, **[!UICONTROL Variablen]** und **[!UICONTROL Scripts]** konfigurieren lassen, werden [in diesem Abschnitt](../../reporting/using/advanced-functionalities.md) beschrieben.
 
 ## Allgemeine Eigenschaften {#overall-properties}
 
-Auf der Registerkarte &quot; **[!UICONTROL Allgemein]** &quot;der Berichtseigenschaften können Sie die unten aufgeführten Einstellungen bearbeiten:
+Auf dem Tab **[!UICONTROL Allgemein]** der Berichteigenschaften können Sie die folgenden Einstellungen bearbeiten:
 
-* Die Bezeichnung und der interne Name des Berichts. Der **[!UICONTROL interne Name]** wird in der endgültigen URL des Berichts verwendet. Sie sollte nach der Berichterstellung nicht mehr geändert werden.
+* Titel und interner Berichtsname. Der **[!UICONTROL interne Name]** wird in der endgültigen URL des Berichts verwendet. Er sollte nach der Berichterstellung nicht mehr geändert werden.
 
-* Der **Berichtsordner** wird bei der Berichterstellung ausgewählt. Es empfiehlt sich, einen eigenen Ordner für benutzerspezifische Berichte zu erstellen, damit diese nicht mit [integrierten Berichten](../../reporting/using/about-campaign-built-in-reports.md)gemischt werden.
+* Der **Ordner** des Berichts wird bei der Berichterstellung ausgewählt. Es empfiehlt sich, für benutzerspezifische Berichte einen eigenen Ordner zu erstellen, damit diese nicht mit [integrierten Berichten](../../reporting/using/about-campaign-built-in-reports.md) vermischt werden.
 
-* Die **Datenspeicherung** wird beim Erstellen des Berichts ausgewählt. Um die Datentabelle des Berichts zu ändern, klicken Sie auf das Symbol Link **** auswählen rechts neben dem Feld **[!UICONTROL Dokument]** .
+* Die **Speicherung** wird beim Erstellen des Berichts ausgewählt. Um die Datentabelle des Berichts zu ändern, klicken Sie auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]** rechts neben dem Feld **[!UICONTROL Dokumenttyp]**.
 
    ![](assets/s_ncs_advuser_report_properties_02.png)
 
-* Die **Zugriffskontrolle** -Parameter. Diese Einstellungen werden nachfolgend beschrieben.
+* Die Parameter der **Zugriffskontrolle**. Diese Einstellungen werden nachfolgend beschrieben.
 
-## Controlling access to the report {#report-accessibility}
+## Zugriff auf den Bericht kontrollieren {#report-accessibility}
 
-Auf einen Bericht kann über die Adobe Campaign-Konsole oder einen Webbrowser zugegriffen werden. In diesem Fall kann es erforderlich sein, die Zugriffskontrolle des Berichts wie unten dargestellt zu konfigurieren.
+Auf einen Bericht kann über die Adobe Campaign-Konsole oder einen Webbrowser zugegriffen werden. In dem Fall kann es erforderlich sein, wie unten dargestellt die Zugriffskontrolle für den Bericht zu konfigurieren.
 
 ![](assets/s_ncs_advuser_report_properties_02b.png)
 
 Mögliche Optionen sind:
 
-* **[!UICONTROL Anonymer Zugriff]**: Diese Option ermöglicht uneingeschränkten Zugriff auf den Bericht. Manipulation ist jedoch nicht möglich.
+* **[!UICONTROL Anonymer Zugriff]**: Diese Option bietet uneingeschränkten Zugriff auf den Bericht. Eine Bearbeitung ist jedoch nicht möglich.
 
-   Die Rechte des technischen Betreibers &quot;webapp&quot;werden zur Anzeige von Berichtselementen verwendet. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../platform/using/access-management.md#default-operators).
+   Die Anzeige der Berichtelemente hängt von den Berechtigungen des technischen &quot;webapp&quot;-Benutzers ab. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../platform/using/access-management.md#default-operators).
 
-* **[!UICONTROL Zugriffskontrolle]**: Diese Option ermöglicht es Adobe Campaign-Operatoren, darauf zuzugreifen, sobald sie angemeldet sind.
-* **[!UICONTROL Spezifisches Konto]**: Mit dieser Option können Sie den Bericht mit den Rechten des Operators ausführen, die im Feld **[!UICONTROL Operator]** ausgewählt sind.
+* **[!UICONTROL Zugriffskontrolle]**: Diese Option bietet Adobe Campaign-Benutzern nach der Anmeldung Zugriff auf den Bericht.
+* **[!UICONTROL Spezifisches Konto nutzen]**: Diese Option ermöglicht die Ausführung des Berichts mit den Berechtigungen des im Feld **[!UICONTROL Benutzer]** ausgewählten Benutzers.
 
 ## Berichtlokalisierung verwalten {#managing-report-localization}
 
@@ -67,7 +67,7 @@ Die Arbeitssprache entspricht der Sprache, in der Sie den Bericht verfassen. Bei
 
 >[!NOTE]
 >
->Weitere Informationen zur lokale Anpassung von Webseiten in der Kampagne finden Sie in [diesem Abschnitt](../../web/using/translating-a-web-form.md).
+>Weiterführende Informationen zur Lokalisierung von Web-Seiten in Campaign finden Sie in [diesem Abschnitt](../../web/using/translating-a-web-form.md).
 
 ## HTML-Rendering anpassen {#personalizing-html-rendering}
 
