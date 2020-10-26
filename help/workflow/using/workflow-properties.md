@@ -11,9 +11,9 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 discoiquuid: 71969b30-cc01-4358-9597-f17939720684
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
    Diese Option darf nur zur Problembehebung verwendet werden und nie im Produktionsalltag. Bei Aktivierung der Option wird der Workflow prioritär. Alle anderen Workflows werden bis zu seinem Abschluss von der Workflow-Engine angehalten.
 
-### Umgang mit Fehlern   {#error-management}
+### Umgang mit Fehlern    {#error-management}
 
 * **[!UICONTROL Fehlerbehebung]**
 
