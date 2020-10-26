@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 discoiquuid: 066e730b-2527-4257-b11f-2e73f746a8a5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2100'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -277,7 +277,7 @@ Folgende vordefinierte Filter stehen standardmäßig zur Verfügung:
   </tr> 
   <tr> 
  <td> E-Mail-Adresse, die auf die Blockierungsliste gesetzt wurde<br /> </td> 
-    <td> Wählt Empfänger aus, deren E-Mail-Adresse auf der Blockierungsliste liegt.<br/> </td>
+    <td> Wählt Empfänger aus, deren E-Mail-Adresse sich auf der Blockierungsliste befindet.<br/> </td>
   </tr> 
   <tr> 
    <td> E-Mail-Adresse in Quarantäne<br /> </td> 
