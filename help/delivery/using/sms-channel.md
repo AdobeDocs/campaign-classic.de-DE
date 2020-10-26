@@ -11,9 +11,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 discoiquuid: 8b101c0b-3611-4f15-813b-7c0bf54fc48a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3272'
 ht-degree: 100%
 
@@ -495,7 +495,7 @@ Folgende Optionen stehen zur Verfügung:
 
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
-* [Sendungen beobachten](../../delivery/using/monitoring-a-delivery.md)
+* [Sendungen überwachen](../../delivery/using/monitoring-a-delivery.md)
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Über das Nachrichten-Tracking](../../delivery/using/about-message-tracking.md)
 
