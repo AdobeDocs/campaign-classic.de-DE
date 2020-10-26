@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Bei der Einrichtung einer neuen Plattform ist die Wahrung der Reputation Ihrer D
 
 * Der Versand von E-Mails ist ein heikler Schritt, da die Plattform keine Nutzungsgeschichte und – wenn die sendenden IPs zu diesem Zweck noch nie verwendet wurden – auch keine Reputation aufweist.
 
-* ISPs sind naturgemäß argwöhnisch gegenüber IP-Adressen, die noch nie zum Senden von E-Mails verwendet wurden und plötzlich große Mengen von E-Mail-Traffic verursachen. Tatsächlich verwenden Spammer in der Regel &quot;unbekannte&quot;IP-Adressen (Adressen, die noch nie auf Blockierungsliste waren), um die größtmögliche Anzahl von Nachrichten vor der Erkennung zu senden.
+* ISPs sind naturgemäß argwöhnisch gegenüber IP-Adressen, die noch nie zum Senden von E-Mails verwendet wurden und plötzlich große Mengen von E-Mail-Traffic verursachen. Tatsächlich nutzen Spammer im Allgemeinen &quot;unbekannte&quot; IP-Adressen (Adressen, die noch nie auf Blockierungslisten standen), um vor der Erkennung eine maximale Anzahl von Nachrichten zu senden.
 
 * Erwarten Sie nicht, dass der Versand gleich zu Beginn der Produktionsphase in der gewünschten Geschwindigkeit durchgeführt werden kann. Sie sollten auch nicht versuchen, Nachrichten in dieser Geschwindigkeit zu versenden, da dies ISPs veranlassen könnte, die Absenderadresse zu blockieren, was die Anfangsphase erheblich beeinträchtigen würde.
 
