@@ -9,18 +9,18 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: 6a394eeb-fbe1-4712-bb13-db5d7965fb73
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Verbessern Ihrer Reputation{#improve-reputation}
 
-Um zu vermeiden, dass sich Ihre Empfänger belästigt fühlen, löschen Sie doppelte E-Mail-Adressen aus Ihrer Zielgruppe. Dies sichert Ihre Reputation als Absender und ermöglicht eine ordnungsgemäße Quarantäneverwaltung. Adobe Campaign Angebot die erforderlichen Instrumente zur Umsetzung dieser Empfehlungen und zur Vermeidung der Gefahr der Hinzufügung von Empfehlungen durch den ISP.
+Um zu vermeiden, dass sich Ihre Empfänger belästigt fühlen, löschen Sie doppelte E-Mail-Adressen aus Ihrer Zielgruppe. Dies sichert Ihre Reputation als Absender und ermöglicht eine ordnungsgemäße Quarantäneverwaltung. Adobe Campaign bietet die nötigen Werkzeuge zur Implementierung dieser Maßnahmen, was verhindert, dass Sie vom Internetdienstanbieter (ISP) auf eine Blockierungsliste gesetzt werden.
 
 Gehen Sie folgendermaßen vor, um Duplikate zu vermeiden:
 
