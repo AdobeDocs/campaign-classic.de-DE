@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Sie müssen die Zustellbarkeitsrate Ihrer Nachrichten steigern, damit Ihre Nachr
 
 Achten Sie in Ihrem eigenen Interesse auf eine gute Quarantäneverwaltung.
 
-Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie möglicherweise eine Liste mit fehlerhaften Adressen. Wenn Sie Nachrichten an ungültige Adressen oder an Honeypot-Adressen (Postfächer, die ausschließlich der Täuschung von Spammern dienen) senden, mindert dies die Reputation Ihrer Plattform. Gute Verwaltungsprozesse für Quarantänen tragen dazu bei, die Adressqualität zu erhalten, Blockierungslisten durch Internetzugangsanbieter zu vermeiden und die Fehlerquote zu reduzieren, wodurch Versand und Durchsatz schneller werden.
+Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie möglicherweise eine Liste mit fehlerhaften Adressen. Wenn Sie Nachrichten an ungültige Adressen oder an Honeypot-Adressen (Postfächer, die ausschließlich der Täuschung von Spammern dienen) senden, mindert dies die Reputation Ihrer Plattform. Mit guten Prozessen für die Quarantäneverwaltung können Sie die Adressqualität pflegen, verhindern, dass Sie von ISPs auf eine Blockierungsliste gesetzt werden, und Ihre Fehlerrate senken, was den Versand beschleunigt und den Durchsatz erhöht.
 
 **Tipps**
 
