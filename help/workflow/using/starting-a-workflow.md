@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 9ac4c60a-b0f6-42fb-a081-74b57820cb16
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die im Menü **[!UICONTROL Aktionen]** und im Kontextmenü verfügbaren Befehle 
 
 >[!IMPORTANT]
 >
->Keep in mind that, when an operator performs an action on a workflow (start, stop, pause, etc.), the action is not executed straightaway, but instead placed in a queue in order to be processed by the [workflow module](../../workflow/using/architecture.md).
+>Beachten Sie: Von Benutzern angeforderte Aktionen (Workflow starten, anhalten, aussetzen usw.) werden nicht sofort ausgeführt, sondern in eine Warteschlange eingereiht, um von einem [Workflow-Modul](../../workflow/using/architecture.md) verarbeitet zu werden.
 
 ## Aktionen-Symbolleiste {#actions-toolbar}
 
