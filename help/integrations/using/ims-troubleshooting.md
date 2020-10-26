@@ -11,11 +11,11 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: e31db11a-ad8e-4fd0-bab7-0df1079231c9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Im externen Campaign-Konto definierte Perimeter müssen eine Teilmenge der von I
 
 **Callback-URL**
 
-The **Callback URL** should be added to the allowlist and start with &quot;https://&quot;. Vergewissern Sie sich, dass die **Callback-URL** mit der entsprechenden Instanz verknüpft ist. Beispielsweise sollte die Produktionsinstanz zur Produktions-URL umgeleitet werden.
+Die **Callback-URL** sollte der Zulassungsliste hinzugefügt werden und mit &quot;https://&quot; beginnen. Vergewissern Sie sich, dass die **Callback-URL** mit der entsprechenden Instanz verknüpft ist. Beispielsweise sollte die Produktionsinstanz zur Produktions-URL umgeleitet werden.
 
 **Clientkennung und Client-Geheimnis**
 
