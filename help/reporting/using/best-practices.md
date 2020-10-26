@@ -1,6 +1,6 @@
 ---
 title: Best Practices für das Reporting
-description: Best Practices für Kampagne Berichte
+description: Best Practices für Kampagnenberichte
 page-status-flag: never-activated
 uuid: 09de6a17-b3a7-4543-b672-b0a21653aa75
 contentOwner: sauviat
@@ -9,16 +9,16 @@ audience: reporting
 content-type: reference
 topic-tags: reporting-in-adobe-campaign
 discoiquuid: 904961e0-7dff-4350-8d5d-e4bdd368b3ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '839'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Best Practices des Berichte{#best-practices-reporting}
+# Best Practices für das Reporting{#best-practices-reporting}
 
 ## Bedarfsanalyse{#analyzing-needs}
 
@@ -34,15 +34,15 @@ Zur Optimierung von Erstellung, Verwendung und Beständigkeit eines Berichts mü
 
    Sie können zum Beispiel:
 
-   * Untersuchen Sie die Daten in der Datenbank und definieren Sie Messungen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-cubes.md)
-   * hinzufügen Indikatoren zu einem vorhandenen Bericht. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
-   * Ansicht der Daten in der Datenbank. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
-   * Erstellen Sie einen neuen Versand-Bericht. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)),
-   * Export data from the Adobe Campaign database (via a workflow, refer to [this section](../../workflow/using/about-workflows.md)
-   * Erstellen Sie eine Pivot-Tabelle. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
-   * Untersuchen Sie aggregierte Daten. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-cubes.md)
-   * Verwenden Sie einen Assistenten, um Daten zu analysieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
-   * Analysieren Sie große Datenmengen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
+   * Daten der Datenbank durchsuchen und Kennzahlen definieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-cubes.md)
+   * Indikatoren einem vorhandenen Bericht hinzufügen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
+   * die Daten in der Datenbank anzeigen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
+   * Einen neuen Versandbericht erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)),
+   * Daten aus der Adobe-Campaign-Datenbank exportieren (mithilfe eines Workflows; siehe [diesen Abschnitt](../../workflow/using/about-workflows.md))
+   * Eine Pivot-Tabelle erstellen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/creating-a-table.md#creating-a-breakdown-or-pivot-table)
+   * Aggregierte Daten untersuchen. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-cubes.md)
+   * Einen Assistenten verwenden, um Daten zu analysieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-descriptive-analysis.md)
+   * Große Datenmengen analysieren. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md)
 
 1. Zielgruppe des Berichts identifizieren
 
@@ -77,7 +77,7 @@ Folgendes ist zu beachten:
 
    Wenn bei kleinen Datenvolumen die Berechnung des Berichts in der Konzeptionsphase 60 Sekunden überschreitet, muss die angewendete Methode überdacht werden.
 
-* Bei Verwendung des Marketing Analytics-Moduls dürfen die Daten des Berichte 10 Millionen Zeilen nicht überschreiten.
+* Bei der Verwendung von Marketing Analytics dürfen die gemeldeten Daten 10 Millionen Zeilen nicht überschreiten.
 
 Zudem wird empfohlen, Aggregate nachts bei wenig beanspruchter Datenbank zu berechnen und die aggregierten Daten direkt in den Berichten zu verwenden. Die Aggregate werden über dedizierte Data-Management-Workflows erstellt (SQL-Abfragen).
 
@@ -101,19 +101,19 @@ Die oben stehenden Empfehlungen erlauben es, die Berechnung der Berichte zu opti
 
 Adobe Campaign empfiehlt Ihnen zusätzlich die folgenden Verbesserungsmöglichkeiten:
 
-* Arbeiten Sie an Ihrem Datenmodell: Indexierte Felder müssen hauptsächlich zur Verbesserung der Berechnungsformeln verwendet werden.
+* Bearbeitung des Datenmodells: Vorrangige Verwendung indexierter Felder, um die Berechnungsleistungen zu verbessern.
 
    Zur einfachen Erkennung von indexierten Feldern ist in Adobe Campaign der Sortierungspfeil neben den Spaltentiteln rot unterstrichen, wenn das Feld indexiert ist.
 
-   For more on indexes, refer to [this section](../../configuration/using/data-model-best-practices.md#indexes).
+   Weiterführende Informationen zu Indizes finden Sie in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#indexes).
 
-* Stellen Sie sicher, dass der Bericht skalierbar ist: kann das Datenvolumen im Laufe der Zeit erheblich ansteigen.
+* Sicherstellung, dass der Bericht skalierbar ist: Das Datenvolumen kann im Laufe der Zeit erheblich wachsen.
 
    Zudem können sich die in den Testphasen bewegten Volumen bedeutend vom tatsächlichen Produktionsvolumen unterscheiden. Testphasen dürfen daher nicht vernachlässigt werden.
 
    Schließlich müssen die Fristen der Datenbereinigung bekannt sein und bei Bedarf angepasst werden, um die Informationsverarbeitung zu erleichtern.
 
-   Weitere Informationen zur Bereinigung und Datenspeicherung finden Sie in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-retention).
+   Weiterführende Informationen zur Bereinigung und Datenspeicherung finden Sie in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-retention).
 
 ### Berichtexport {#exporting-reports}
 
