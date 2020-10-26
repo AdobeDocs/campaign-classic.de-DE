@@ -11,9 +11,9 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 discoiquuid: 42867665-d0ca-486e-9110-91716c0d5c57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2532'
 ht-degree: 100%
 
@@ -354,7 +354,7 @@ Die wichtigsten Punkte sind folgende:
 >
 >Weiterführende Informationen zum Einrichten eines Workflows für das automatische Exportieren von Packages finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/export-packages-automatically.html).
 
-### Empfehlungen    {#data-package-recommendations}
+### Empfehlungen     {#data-package-recommendations}
 
 Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie müssen Ihre Packages zwischen zwei Instanzen bereitstellen, die denselben Build aufweisen. Erzwingen Sie den Import niemals und aktualisieren Sie immer zuerst die Plattform (wenn der Build abweicht).
 
@@ -410,7 +410,7 @@ Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt w
 * Kampagne: von 200 bis 299
 * Aktualisierung: 5000 bis 5999
 
-### Packages    {#data-packages}
+### Packages     {#data-packages}
 
 >[!NOTE]
 >
