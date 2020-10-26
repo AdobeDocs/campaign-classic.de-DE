@@ -11,9 +11,9 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 discoiquuid: 4443b0ca-80c6-467d-a4df-50864aae8496
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '436'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Nach Übermittlung dieses Antrags wird dieser von Adobe bearbeitet. Sie werden e
 1. [Schritt 3: Konfigurieren Sie den Campaign Tracking Server.](#step-3--configure-campaign-tracking-server)
 1. [Schritt 4: Konfigurieren Sie den Visitor-ID-Dienst.](#step-4--configure-the-visitor-id-service)
 
-## Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.   {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.    {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfigurieren bzw. zu überprüfen:
 
@@ -71,7 +71,7 @@ So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
    ![](assets/aam_config_3.png)
 
-## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.  {#step-3--configure-campaign-tracking-server}
+## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.   {#step-3--configure-campaign-tracking-server}
 
 Für die Konfiguration der Integration mit People Core Service oder Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
 
