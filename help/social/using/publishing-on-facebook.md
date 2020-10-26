@@ -11,11 +11,11 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 discoiquuid: 335cf2de-1874-4e48-9538-f0937641cf96
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ Geben Sie die verschiedenen Felder ein:
 
 1. Geben Sie im Feld **[!UICONTROL Status]** den Text ein, der unter dem Namen der Seite angezeigt werden soll.
 1. Geben Sie im Feld **[!UICONTROL Name]** den Titel der Publikation ein.
-1. Geben Sie im Feld **[!UICONTROL Video-Code]** den Code des YouTube-Videos ein. Für den Link &quot;https://www.youtube.com/watch?v=abc123456&#39;&quot;lautet der Videocode beispielsweise &quot;abc123456&quot;.
+1. Geben Sie im Feld **[!UICONTROL Video-Code]** den Code des YouTube-Videos ein. Für den Link &quot;https://www.youtube.com/watch?v=abc123456&quot; lautet der Video-Code beispielsweise &quot;abc123456&quot;.
 1. Geben Sie im Feld **[!UICONTROL Legende]** den Text ein, der am Ende der Publikation angezeigt werden soll.
 1. Gehen Sie zum Feld **[!UICONTROL Beschreibung]** und geben Sie den Text ein, der unter dem Titel angezeigt werden soll.
 
