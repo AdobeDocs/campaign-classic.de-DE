@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1723'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ Folgende Optionen stehen zur Verfügung:
 
       ![](assets/s_ncs_user_wizard_email02j.png)
 
-* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d.h. Empfänger, deren E-Mail-Adressen auf Blockierungsliste (&#39;Opt-out&#39;) stehen. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings und die Gesetze hinsichtlich E-Commerce einzuhalten.
+* **[!UICONTROL Schließen Sie Empfänger aus, die nicht mehr kontaktiert]** werden möchten, d. h. Empfänger, deren E-Mail-Adressen sich auf einer Blockierungsliste (&quot;Opt-out&quot;) befinden. Diese Option muss ausgewählt bleiben, um die Berufsethik des E-Marketings und die Gesetze hinsichtlich E-Commerce einzuhalten.
 * **[!UICONTROL Adressen in Quarantäne ausschließen]**: schließt die Empfänger aus, für die frühere Zustellversuche fehlgeschlagen sind. Es wird dringend empfohlen, diese Option NICHT ABZUWÄHLEN.
 
    >[!NOTE]
@@ -234,7 +234,7 @@ Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können 
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12&captions=ger)
 
 Siehe auch:
 * [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
