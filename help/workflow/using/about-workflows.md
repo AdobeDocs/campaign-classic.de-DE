@@ -1,6 +1,6 @@
 ---
 title: Über Workflows
-description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiencen, senden Sie Nachrichten und vieles mehr.
+description: Automatisieren Sie Prozesse mit Workflows, verwalten Sie Daten und Audiences, senden Sie Nachrichten und vieles mehr.
 page-status-flag: never-activated
 uuid: 19adb0e5-042d-47a0-9f92-24e4b3045dbe
 contentOwner: sauviat
@@ -9,16 +9,16 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# Get started with workflows{#gs-workflows}
+# Erste Schritte mit Workflows{#gs-workflows}
 
 ## Über Workflows{#about-workflows}
 
@@ -70,14 +70,14 @@ Jeder Workflow besteht aus:
 
    Weiterführende Informationen zu Workflow-Daten und Tabellen finden Sie in [diesem Abschnitt](../../workflow/using/how-to-use-workflow-data.md).
 
-## Wichtige Grundsätze und bewährte Verfahren{#principles-workflows}
+## Wichtige Grundsätze und Best Practices{#principles-workflows}
 
 In den folgenden Abschnitten finden Sie Anleitungen und Best Practices zur Automatisierung von Prozessen mit Workflows:
 
-* Learn more about workflow activities in [this page](../../workflow/using/how-to-use-workflow-data.md).
-* In [diesem Abschnitt](../../workflow/using/building-a-workflow.md)erfahren Sie, wie Sie einen Workflow erstellen.
-* In [diesem Abschnitt](../../workflow/using/importing-data.md)erfahren Sie, wie Workflows Daten in Kampagne importieren.
-* Die Best Practices für den Arbeitsablauf werden auf [dieser Seite](../../workflow/using/workflow-best-practices.md)beschrieben.
+* Weiterführende Informationen zu Workflow-Aktivitäten finden Sie auf [dieser Seite](../../workflow/using/how-to-use-workflow-data.md).
+* Informationen zum Erstellen eines Workflows finden Sie in [diesem Abschnitt](../../workflow/using/building-a-workflow.md).
+* In [diesem Abschnitt](../../workflow/using/importing-data.md) erfahren Sie, wie Sie Daten mithilfe von Workflows in Campaign importieren.
+* Die Best Practices bei Workflows werden auf [dieser Seite](../../workflow/using/workflow-best-practices.md) beschrieben.
 * Hinweise zur Workflow-Ausführung finden Sie in [diesem Abschnitt](../../workflow/using/starting-a-workflow.md).
-* Erfahren Sie, wie Sie Workflows auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md)überwachen.
-* Erfahren Sie, wie Sie Benutzern Zugriff auf Workflows auf [dieser Seite](../../workflow/using/managing-rights.md)gewähren.
+* Informationen zum Überwachen von Workflows finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md).
+* Erfahren Sie auf [dieser Seite](../../workflow/using/managing-rights.md), wie Sie Benutzern Zugriff auf Workflows gewähren.
