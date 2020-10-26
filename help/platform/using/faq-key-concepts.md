@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ In [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-ove
 
 Lesen Sie [diesen Abschnitt](../../platform/using/adobe-campaign-workspace.md) , um mehr über die Grundlagen des Adobe Campaign-Arbeitsbereichs zu erfahren.
 
-![](assets/do-not-localize/how-to-video.png) [Discover Kampagne Workspace in Video](https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Wie kann ich die Audience für meine Nachrichten auswählen? {#how-can-i-select-the-target-population-of-my-messages-}
 
