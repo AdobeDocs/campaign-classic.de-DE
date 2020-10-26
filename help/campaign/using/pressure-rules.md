@@ -11,9 +11,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 discoiquuid: 3710768e-ab7f-40a4-9c48-830695adc990
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3430'
 ht-degree: 100%
 
@@ -162,13 +162,13 @@ Eine Druckregel zum Beispiel, die eine Schwelle von 2 Nachrichten pro Woche und 
 >* den Wert **15T** im Feld **[!UICONTROL Betroffener Zeitraum]** eingeben: Die bis zu 15 Tage vor dem Datum des Versands, auf den die Regel angewendet wird, verschickten Sendungen werden in der Berechnung berücksichtigt;
 >
 >  
->oder
+oder
 >
 >* **7T** in das Feld **[!UICONTROL Betroffener Zeitraum]** eingeben UND die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]**\
->prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
+   >prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
 >
 >
->Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
+Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
 Wenn man also auf einem Versand vom 12.11. eine Druckregel über einen Zeitraum von 15 Tagen ohne Gruppierung anwendet, werden Sendungen zwischen dem 27.10. und dem 12.11. berücksichtigt. Wenn die Druckregel Sendungen aus dem Planungskalender miteinberechnet, werden Sendungen zwischen dem 27.10. und dem 27.11. gezählt. Wenn man schließlich in der Regel eine Gruppierung nach Kalendermonat festlegt, werden alle Sendungen der Monate November und Dezember in der Schwellenberechnung miteinbezogen (vom 1.11. bis zum 31.12.).
 
