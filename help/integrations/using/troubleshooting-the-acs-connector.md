@@ -1,7 +1,7 @@
 ---
-title: Problembehebung bei ACS Connector
-seo-title: Problembehebung bei ACS Connector
-description: Problembehebung bei ACS Connector
+title: Fehlerbehebung bei ACS Connector
+seo-title: Fehlerbehebung bei ACS Connector
+description: Fehlerbehebung bei ACS Connector
 seo-description: null
 page-status-flag: never-activated
 uuid: aef85b74-0388-44f8-b864-21db136a692c
@@ -11,16 +11,16 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 discoiquuid: 538d3b48-ff39-463f-878d-ebe085057129
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '816'
 ht-degree: 100%
 
 ---
 
 
-# Problembehebung bei ACS Connector{#troubleshooting-the-acs-connector}
+# Fehlerbehebung bei ACS Connector{#troubleshooting-the-acs-connector}
 
 Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 
