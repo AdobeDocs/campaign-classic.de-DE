@@ -11,9 +11,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: 6d694f5c-1d1f-4686-b3bf-8697d919a0c8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Weitere Informationen finden Sie unter [Partizipative Kampagne erstellen](../../
 
 Um an einer Kampagne teilnehmen zu können, bestellt die Lokalstelle den entsprechenden Kampagnenkit und gibt hierbei sämtliche für die lokale Anpassung erforderlichen Informationen an.
 
-## Arbeitsbereich  {#workspace}
+## Arbeitsbereich   {#workspace}
 
 Die Kampagnenkit-Liste ist über die Rubrik **Kampagnen** zugänglich: Klicken Sie dort auf **[!UICONTROL Kampagnenkits]**.
 
