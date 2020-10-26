@@ -1,7 +1,7 @@
 ---
-title: Blockierungslisten-Datenbanken
-seo-title: Blockierungslisten-Datenbanken
-description: Blockierungslisten-Datenbanken
+title: Datenbanken mit Blockierungslisten
+seo-title: Datenbanken mit Blockierungslisten
+description: Datenbanken mit Blockierungslisten
 seo-description: null
 page-status-flag: never-activated
 uuid: 8a4a69f9-87d5-4044-bc55-76cdcb2e7800
@@ -11,16 +11,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 discoiquuid: eede254d-2b25-46ed-b10f-fa1d54780a75
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Blockierungslisten-Datenbanken{#denylist-databases}
+# Datenbanken mit Blockierungslisten{#denylist-databases}
 
 Mehrere Organisationen unterhalten Datenbanken mit IP-Adressen und Domains, die den Ruf haben, von Spammern verwendet zu werden. Zum besseren Verständnis, warum manche Nachrichten als Spam zurückgewiesen wurden, kann es hilfreich sein, sich diese Seiten anzusehen. Es besteht im Allgemeinen die Möglichkeit, das Entfernen von fälschlich auf diese Listen gesetzten Adressen zu fordern.
 
