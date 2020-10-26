@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
 workflow-type: tm+mt
 source-wordcount: '3768'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -30,11 +30,11 @@ Kampagne-On-Premise-, Hosting- und Hybrid-Hostingmodelle werden jetzt in einem e
 
 Die Funktionsmatrix für die Kampagne pro Hostingmodell wurde aktualisiert und im Installationshandbuch verschoben. [mehr dazu](../../installation/using/capability-matrix.md)
 
-Der Abschnitt mit den erweiterten Funktionen von Kampagne Berichte wurde verbessert, um detailliert zu veranschaulichen, wie URL-Parameter und Variablen in benutzerspezifischen Berichten verwendet werden. [mehr dazu](../../reporting/using/advanced-functionalities.md)
+Der Abschnitt mit den erweiterten Funktionen von Campaign Reporting wurde verbessert, um genau zu zeigen, wie sich URL-Parameter und Variablen in benutzerspezifischen Berichten verwenden lassen – [mehr dazu](../../reporting/using/advanced-functionalities.md)
 
-Die Seite mit den Berichtseigenschaften wurde neu organisiert und erweitert, um die Konfiguration zu erleichtern. [mehr dazu](../../reporting/using/properties-of-the-report.md)
+Die Seite mit den Berichtseigenschaften wurde neu organisiert und erweitert, um die Konfiguration zu erleichtern – [mehr dazu](../../reporting/using/properties-of-the-report.md)
 
-Es wurde eine neue Technote mit Details zur Migration vom Legacy-Binärprotokoll zum HTTP/2-basierten APNs Provider API erstellt. [mehr dazu](https://helpx.adobe.com/campaign/kb/migrate-to-apns-http2.html)
+Es wurde eine neue Technote mit Details zur Migration vom Legacy-Binärprotokoll zur HTTP/2-basierten APNs Provider-API erstellt – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)
 
 ## September 2020 {#september-2020}
 
@@ -379,7 +379,7 @@ Es wurde ein neuer Knowledgebase-Artikel zur Verwendung des Angebotskatalogs in 
 
 Der Abschnitt zur Unter-Workflow-Aktivität wurde um ein Anwendungsbeispiel erweitert. [Mehr dazu](../../workflow/using/sub-workflow.md)
 
-Die [Campaign Classic-On-Premise- und gehostete Funktionsmatrix](../../installation/using/capability-matrix.md) wurde um Informationen zu Email BCC ergänzt.
+The [Campaign Classic On-premise &amp; Hosted capability matrix](../../installation/using/capability-matrix.md) page has been updated with information relating to Email BCC.
 
 Die Dokumentation zu Transaktionsnachrichten wurde mit einem Hinweis zur Vorlagenpublikation aktualisiert. [Mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
