@@ -9,38 +9,38 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 discoiquuid: 0c264783-2775-4ec6-8d49-cd9a45a18d60
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '647'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
 
 # Erweiterte Funktionen{#advanced-functionalities}
 
-Als technischer Benutzer können Sie zusätzlich zu den [allgemeinen Eigenschaften](../../reporting/using/properties-of-the-report.md)erweiterte Funktionen zur Konfiguration Ihrer Berichte nutzen, z. B.:
+Als technischer Benutzer können Sie zusätzlich zu den [allgemeinen Eigenschaften](../../reporting/using/properties-of-the-report.md) erweiterte Funktionen für die Konfiguration Ihrer Berichte nutzen, z. B.:
 
-* Erstellen Sie komplexe Abfragen zur Verarbeitung von Daten in einer **Script** -Aktivität. [mehr dazu](#script-activity)
+* Erstellen Sie komplexe Abfragen zur Verarbeitung von Daten in einer **Script**-Aktivität. [Mehr dazu](#script-activity)
 
-* hinzufügen eines externen Skripts, das auf Server- oder Clientseite ausgeführt wird. [mehr dazu](#external-script)
+* Fügen Sie ein externes Script hinzu, das auf der Server- oder Client-Seite ausgeführt wird. [Mehr dazu](#external-script)
 
-* Rufen Sie einen Bericht mit einer **Sprung** -Aktivität auf. [mehr dazu](#calling-up-another-report)
+* Rufen Sie einen Bericht mit einer **Sprung**-Aktivität auf. [Mehr dazu](#calling-up-another-report)
 
-* hinzufügen einem Bericht einen URL-Parameter, um ihn leichter zugänglich zu machen. [mehr dazu](#calling-up-another-report)
+* Fügen Sie einem Bericht einen URL-Parameter hinzu, um ihn leichter zugänglich zu machen. [Mehr dazu](#calling-up-another-report)
 
-* hinzufügen Variablen, die im Kontext des Berichts verwendet werden. [mehr dazu](#adding-variables)
+* Fügen Sie Variablen hinzu, die im Kontext des Berichts verwendet werden. [Mehr dazu](#adding-variables)
 
-## Arbeiten mit Skripten {#adding-a-script}
+## Arbeiten mit Scripts {#adding-a-script}
 
-### Externe Skripten referenzieren {#external-script}
+### Externe Scripts referenzieren {#external-script}
 
-Sie können auf JavaScript-Codes verweisen, die beim Aufrufen der Berichtsseite auf Client- und/oder Serverseite ausgeführt werden.
+Sie können JavaScript-Codes referenzieren, die beim Aufruf der Berichtseite Client- und/oder Server-seitig ausgeführt werden.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Edit the [report properties](../../reporting/using/properties-of-the-report.md) and click the **[!UICONTROL Scripts]**.
+1. Bearbeiten Sie die [Berichteigenschaften](../../reporting/using/properties-of-the-report.md) und klicken Sie auf den Tab **[!UICONTROL Scripts]**.
 1. Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie das zu referenzierende Script aus.
 1. Bestimmen Sie anschließend den Ausführungsmodus.
 
@@ -48,11 +48,11 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/reporting_custom_js.png)
 
-Für eine normale Ausführung auf Clientseite müssen die referenzierten Skripten in JavaScript geschrieben werden und mit gängigen Browsern kompatibel sein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/web-forms-answers.md).
+Die referenzierten Scripts müssen in JavaScript verfasst und mit gängigen Browsern kompatibel sein, damit sie Client-seitig korrekt ausgeführt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/web-forms-answers.md).
 
-### Adding a Script activity {#script-activity}
+### Script-Aktivität hinzufügen {#script-activity}
 
-Verwenden Sie beim [Entwerfen Ihres Berichts](../../reporting/using/creating-a-new-report.md#modelizing-the-chart)die **[!UICONTROL Script]** -Aktivität, um Daten zu verarbeiten und ganz einfach komplexe Abfragen zu erstellen, die keine SQL-Sprache aktivieren. Sie können Ihre Abfrage direkt im Skriptfenster eingeben.
+Verwenden Sie beim [Entwerfen Ihres Berichts](../../reporting/using/creating-a-new-report.md#modelizing-the-chart) die **[!UICONTROL Script]**-Aktivität, um Daten zu verarbeiten und ganz leicht komplexe Abfragen zu erstellen, die keine SQL-Sprache aktivieren. Sie können Ihre Abfrage direkt im Script-Fenster eingeben.
 
 Auf dem Tab **[!UICONTROL Texte]** können Sie Text-Strings definieren. Diese können dann mit der folgenden Syntax verwendet werden: **$(Identifier)**. Weitere Informationen zur Verwendung von Texten finden Sie unter [Header und Footer hinzufügen](../../reporting/using/element-layout.md#adding-a-header-and-a-footer).
 
@@ -70,7 +70,7 @@ Andernfalls werden nur aktuelle Daten angezeigt.
 
 ## Hinzufügen eines URL-Parameters {#defining-additional-settings}
 
-The **[!UICONTROL Parameters]** tab of the [report properties](../../reporting/using/properties-of-the-report.md) lets you define additional settings for the report: these settings will be passed into the URL during the call up.
+Im Tab **[!UICONTROL Parameter]** der [Berichteigenschaften](../../reporting/using/properties-of-the-report.md) können zusätzliche Parameter für den Bericht angegeben werden; diese werden beim Aufruf der URL übergeben.
 
 >[!CAUTION]
 >
@@ -112,13 +112,13 @@ Um die Parameter einer Variablen einzusehen, markieren Sie sie und klicken Sie a
 
 ![](assets/s_ncs_advuser_report_properties_10.png)
 
-## Verwendungsfall: Variablen und Parameter in einem Bericht verwenden
+## Anwendungsbeispiel: Verwenden von Variablen und Parametern in einem Bericht
 
-Im folgenden Videobeispiel erfahren Sie, wie Sie einen Parameter &quot;_type&quot;hinzufügen, um je nach Attributwert verschiedene Ansichten eines Berichts zu erstellen.
+Im folgenden Videobeispiel erfahren Sie, wie Sie einen &quot;_type&quot;-Parameter hinzufügen, um je nach Wert des Attributs verschiedene Ansichten eines Berichts zu erstellen.
 
-![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](https://helpx.adobe.com/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com).
+![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](https://helpx.adobe.com/de/campaign/classic/how-to/add-url-parameter-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/business-practitioners/explevel/intermediate/applaunch/how-to-4/collection.ccx.js&amp;ref=helpx.adobe.com).
 
 
 ## Andere Berichte aufrufen {#calling-up-another-report}
 
-A **Jump** activity is like a transition without an arrow: it lets you go from one activity to another or access another report.
+Eine **Sprung**-Aktivität ist wie eine Transition ohne Pfeil: Ein Sprung ermöglicht den Übergang von einer Aktivität zur anderen oder den Zugriff auf einen anderen Bericht.
