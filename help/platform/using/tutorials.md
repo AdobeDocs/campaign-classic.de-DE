@@ -48,7 +48,7 @@ Zusätzlich zur Produktdokumentation können Sie auf die nachfolgend aufgelistet
 
 ### Übungsvideos
 
-Entdecken Sie die wichtigsten Videofunktionen von Adobe Campaign. [mehr dazu](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/overview.html)
+Entdecken Sie die wichtigsten Videofunktionen von Adobe Campaign. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/overview.html)
 
 ### Schulungssitzungen und Videos
 
