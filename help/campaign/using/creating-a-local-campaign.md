@@ -11,9 +11,9 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 discoiquuid: bd057441-8524-49e6-b5d5-fbd0ec5bca85
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1702'
 ht-degree: 100%
 
@@ -181,7 +181,7 @@ Gehen Sie wie folgt vor:
 
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen    {#dates}
+### Datum-Funktionen     {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
@@ -315,7 +315,7 @@ Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kam
 >
 >Die Kampagne kann bis zu ihrem Verfügbarkeitsdatum jederzeit bearbeitet und ihre Parameter verändert werden. Die Lokalstelle hat auch die Möglichkeit, die Kampagne über die Schaltfläche **[!UICONTROL Abbrechen]** zu annulieren.
 
-#### Kampagnen erstellen    {#creating-a-campaign}
+#### Kampagnen erstellen     {#creating-a-campaign}
 
 Wenn eine Bestellung validiert wurde, kann es von der Lokalstelle konfiguriert und ausgeführt werden.
 
