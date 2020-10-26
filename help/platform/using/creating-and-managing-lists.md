@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -129,17 +129,17 @@ Listen werden ausgehend vom Adobe-Campaign-Navigationsbaum über den Link **[!UI
 >
 >Die Löschung einer Liste hat außer der Aktualisierung der Profildaten keinen Einfluss auf die der Liste zugeordneten Profile.
 
-## Erstellen einer Liste von Empfängern {#create-list-video}
+## Eine Empfängerliste erstellen {#create-list-video}
 
 Eine Liste ist ein statischer Satz von Empfängern, die in Versandaktionen als Zielkontakte dienen oder beim Importieren bzw. bei der Workflow-Ausführung aktualisiert werden können. Eine Liste von Empfängern wird auch als Audience bezeichnet.
 
-Erfahren Sie, wie Sie eine Audience erstellen, indem Sie eine Liste von Empfängern aus dem Explorer konfigurieren.
+Erfahren Sie mehr über das Erstellen einer Audience durch Konfigurieren einer Empfängerliste aus dem Explorer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-## How to create a list of recipients with a workflow {#create-list-in-a-wf-video}
+## Empfängerliste erstellen mit einem Workflow {#create-list-in-a-wf-video}
 
-Erfahren Sie, wie Sie einen Workflow zur Zielgruppe von Empfängern erstellen und wie Sie ihn vor der Verwendung der Liste in einer E-Mail-Zielgruppe wiederholen.
+Erfahren Sie, wie Sie einen Workflow erstellen, um Empfänger als Zielkontakte auszuwählen, und den Workflow als wiederkehrend einzurichten, bevor die Liste als Zielgruppe für eine E-Mail-Kampagne verwendet wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
 
