@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2491'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Wenn einem Profil eine Nachricht (E-Mail, SMS, Push-Benachrichtigung) nicht zuge
 
 Nachdem eine Nachricht gesendet wurde, können Sie im Versandlogs-Tab den Versandstatus für jedes Profil sowie den damit verbundenen Fehlertyp und die Ursache einsehen.
 
-Nachrichten können während der Vorbereitung des Versands ausgeschlossen werden, wenn eine Adresse unter Quarantäne gestellt wird oder wenn ein Profil auf einer Blockierungsliste steht. Ausgeschlossene Nachrichten werden im Versand-Dashboard aufgeführt.
+Nachrichten können während der Versandvorbereitung auch ausgeschlossen werden, wenn eine Adresse unter Quarantäne gestellt oder ein Profil auf die Blockierungsliste gesetzt wurde. Ausgeschlossene Nachrichten werden im Versand-Dashboard aufgeführt.
 
 **Verwandte Themen:**
 
@@ -40,7 +40,7 @@ Nachrichten können während der Vorbereitung des Versands ausgeschlossen werden
 * [Status Fehlgeschlagen](../../delivery/using/monitoring-a-delivery.md#failed-status)
 * [Typen und Ursachen für fehlgeschlagene Sendungen](#delivery-failure-types-and-reasons)
 
-## Typen und Ursachen für fehlgeschlagene Sendungen    {#delivery-failure-types-and-reasons}
+## Typen und Ursachen für fehlgeschlagene Sendungen     {#delivery-failure-types-and-reasons}
 
 Es gibt drei Typen von fehlgeschlagenen Sendungen. Vom jeweiligen Fehlertyp hängt es ab, ob eine Adresse in Quarantäne kommt. Weitere Informationen hierzu finden Sie unter [Ursachen für Quarantänen](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
@@ -86,7 +86,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
    <td> Adresse, die auf die Blockierungsliste gesetzt wurde </td> 
    <td> Hard </td> 
    <td> 8 </td> 
-   <td> Die Adresse wurde zum Zeitpunkt des Versands der Blockierungsliste hinzugefügt. Dieser Status wird zum Importieren von Daten aus externen Listen und externen Systemen in die Liste der Adobe Campaign-Quarantäne verwendet.<br /> </td> 
+   <td> Die Adresse wurde zum Zeitpunkt des Versands der Blockierungsliste hinzugefügt. Dieser Status wird zum Importieren von Daten aus externen Listen und externen Systemen in die Quarantäneliste von Adobe Campaign verwendet.<br /> </td> 
   </tr> 
   <tr> 
    <td> Kontrollgruppenadresse </td> 
@@ -181,7 +181,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
  </tbody> 
 </table>
 
-## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand    {#retries-after-a-delivery-temporary-failure}
+## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand     {#retries-after-a-delivery-temporary-failure}
 
 Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignorierten Fehlers** fehlschlägt, werden während der Versandlaufzeit erneute Zustellversuche vorgenommen.
 
@@ -193,7 +193,7 @@ Gehen Sie zur Änderung der Versandlaufzeit in die erweiterten Eigenschaften des
 
 Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global geändert werden (kontaktieren Sie Ihren technischen Administrator von Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
-## Synchrone und asynchrone Fehler    {#synchronous-and-asynchronous-errors}
+## Synchrone und asynchrone Fehler     {#synchronous-and-asynchronous-errors}
 
 Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren Zeitpunkt nach dem Versand (asynchroner Fehler).
 
@@ -204,7 +204,7 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
    >
    >Die Konfiguration der Bounce-Adresse wird in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#managing-bounced-emails) beschrieben.
 
-   Die [Feedback-Schleife](../../delivery/using/technical-recommendations.md#feedback-loop) funktioniert wie eine Absprungnachricht. Wenn ein Benutzer eine E-Mail als Spam qualifiziert, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Versand für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an ein speziell zu diesem Zweck erstelltes E-Mail-Feld weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Link Abmeldung geklickt haben. Die Adressen befinden sich in der Blockierungsliste der Quarantäne (**NmsAddress**) und nicht in der Tabelle des Empfängers (**NmsRecipient**).
+   Die [Feedback-Schleife](../../delivery/using/technical-recommendations.md#feedback-loop) funktioniert wie eine Bounce-E-Mail. Wenn ein Benutzer eine E-Mail als Spam einstuft, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an einen speziell dafür erstellten E-Mail-Eingang weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**).
 
    >[!NOTE]
    >
@@ -214,7 +214,7 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
 
 Die Adobe Campaign-Plattform bietet mit der Bounce-Message-Funktion die Möglichkeit, Zustellprobleme zu verwalten. Wenn eine E-Mail nicht zugestellt werden kann, sendet der Remote-E-Mail-Server automatisch eine Fehlermeldung, eine s. g. Bounce Message, an die speziell für diesen Zweck konfigurierte technische E-Mail-Adresse. Adobe Campaign ruft diese Fehlermeldungen ab und qualifiziert sie mithilfe des inMail-Prozesses, um die Liste der E-Mail-Verwaltungsregeln anzureichern.
 
-### Bounce-Message-Qualifizierung    {#bounce-mail-qualification}
+### Bounce-Message-Qualifizierung     {#bounce-mail-qualification}
 
 Wenn eine E-Mail nicht zugestellt werden kann, empfängt der Adobe Campaign-Versandserver eine Fehlermeldung vom Remote-Mail- oder -DNS-Server. Jeder Fehlermeldung wird ein Fehlertyp und -grund zugeordnet.
 
