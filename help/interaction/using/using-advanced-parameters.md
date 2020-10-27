@@ -11,9 +11,9 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 2bb756a2-4aca-4195-9b7a-ec85028a8012
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Dieses Kapitel behandelt die verschiedenen fortgeschrittenen Konfigurationsmöglichkeiten in Interaction.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Die folgenden Ausführungen richten sich vor allem an **technische Administratoren**.
 
@@ -33,4 +33,3 @@ Dieses Kapitel behandelt die verschiedenen fortgeschrittenen Konfigurationsmögl
 * Das Erstellen einer Testumgebung ist im Abschnitt [Erstellung einer Testumgebung](../../interaction/using/creating-a-test-environment.md) ausführlich beschrieben.
 * Sie können das standardmäßige Verhalten der Moduls mithilfe von Erweiterungspunkten ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweiterungspunkte](../../interaction/using/hooks.md)
 * Die Verwendung von Interaction in verteilten Architekturen wird im Abschnitt [Verteilte Architekturmodelle](../../interaction/using/distributed-architectures.md) behandelt.
-
