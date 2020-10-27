@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 010c88f4-9444-448f-bb7b-7191517d2e23
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '838'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
 
    ![](assets/offer_weight_create_006.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Bei Angabe von 0 wird das Angebot als für die Zielgruppe nicht infrage kommend angesehen.
 
@@ -116,7 +116,7 @@ Gehen Sie wie folgt vor, um eine Gewichtung zu konfigurieren:
    >
    >Wenn ein bestimmtes Angebot mit verschiedenen Gewichtungen für einen Kontakt infrage kommt, wählt das Angebotsmodul die höchste Gewichtung aus. Das Angebotsmodul schlägt pro Abfrage einem Kontakt jedes Angebot maximal einmal vor.
 
-### Übersicht der für ein Angebot konfigurierten Eignungsregeln {#a-summary-of-offer-eligibility-rules}
+### Summary of offer eligibility rules {#a-summary-of-offer-eligibility-rules}
 
 Im Dashboard des Angebots können Sie auf die Details der Eignungskonfiguration zugreifen.
 
