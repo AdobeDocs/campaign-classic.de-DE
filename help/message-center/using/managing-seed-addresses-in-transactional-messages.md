@@ -11,10 +11,10 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '221'
+translation-type: tm+mt
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+workflow-type: tm+mt
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
@@ -46,13 +46,12 @@ Testadressen dienen dazu, eine Nachrichtenvorschau zu erzeugen, Testsendungen au
 
    ![](assets/messagecenter_create_custo_001.png)
 
-## Mehrere Testadressen erstellen {#creating-several-seed-addresses}
-
+   <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
 1. Klicken Sie auf den Link **[!UICONTROL Testadressen ergänzen]**, dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
-1. Folgen Sie den Konfigurationsetappen einer Testadresse im Abschnitt [Testadressen erstellen](#creating-a-seed-address).
+   <!--1. Follow the configuration steps for a seed address detailed in the [Creating a seed address](#creating-a-seed-address) section.-->
 1. Wiederholen Sie diesen Vorgang, um beliebig viele weitere Testadressen zu erstellen.
 
    ![](assets/messagecenter_create_seedaddr_008.png)
