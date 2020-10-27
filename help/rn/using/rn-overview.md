@@ -9,11 +9,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
-workflow-type: ht
-source-wordcount: '441'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 877ca2275c9338377da9e435e070c9911314fe51
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 75%
 
 ---
 
@@ -28,27 +28,21 @@ Deshalb erachten wir es für wichtig, dass Sie die aktuelle Version von Adobe Ca
 
 ## Versionsstatus{#rn-statuses}
 
-Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet. Nachfolgend finden Sie die Liste der Status und wie sie zu interpretieren sind.
+Jedem Build wird ein Status zugeordnet. Nachfolgend finden Sie die Liste der Status und wie sie zu interpretieren sind.
 
-![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit**: Aktueller verfügbarer stabiler Build. Build in Produktion validiert.
+![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) - Validiert in der Produktion und empfohlen durch Adobe.
 
-Der **aktuelle stabile Build** ist Gold Standard 10. Klicken Sie [hier](../../rn/using/gold-standard.md#gs-10).
+The **last GA build** is Gold Standard 10. Klicken Sie [hier](../../rn/using/gold-standard.md#gs-10).
 
-![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit**: Build wird derzeit in Produktion validiert. Implementierung nur auf Anfrage.
+![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) - Nur On-Demand-Bereitstellung.
 
-![](assets/do-not-localize/blue3.png) **Veröffentlichungskandidat**: Build von Adobe validiert. Produktionstestversand ist ausstehend.
+![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) - Neueste Version mit neuen Funktionen.
 
-![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar**: Neuerer Build mit Fehlerbehebungen verfügbar. Aktualisierung erforderlich.
+Der **letzte RC-Build** ist Campaign Classic 20.3. Klicken Sie [hier](../../rn/using/latest-release.md)
 
-![](assets/do-not-localize/red3.png) **Veraltet**: Enthält bekannte Regressionen. Aktualisierung ist obligatorisch.
+![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar** - Aktualisierung auf einen neueren Build ist erforderlich.
 
-## Upgrade-Prozess{#process-upgrade}
-
-Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
-
-Als Gold Standard-Benutzer verwenden Sie automatisch die neueste stabile Version des das Gold Standard-Upgrades, ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html#gs-10)
-
-Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html).
+![](assets/do-not-localize/red3.png) **Veraltet** - Aktualisierung auf einen neueren Build ist obligatorisch.
 
 ## Empfehlungen{#recommendations}
 
@@ -56,16 +50,24 @@ Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Bu
 
 Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder neuen Version die Seiten [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md) und [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
-Abonnieren Sie das [Prioritätsprodukt-Update von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html), um über neue Versionen der Experience Cloud-Lösungen informiert zu werden.
+## Upgrade-Prozess{#process-upgrade}
 
-Erfahren Sie mehr über die anderen [Empfehlungen](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html#Recommendations).
+Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
+
+Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
+
+### Gold Standard{#upgrade-for-gold-standard-users}
+
+As a Gold Standard user, you will automatically benefit from the Gold Standard upgrade with the [latest GA build](../../rn/using/gold-standard.md#gs-10) without any action. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+
+>[!NOTE]
+>Die Kompatibilitätsmatrix für Gold Standard ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md)verfügbar.
 
 ## Support und andere nützliche Links{#support}
 
 * [Hilfe und Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
 * [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html)
-* [Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md)
-* [Frühere Versionen](../../rn/using/release--20-1.md)
-* [Eingestellte Funktionen](../../rn/using/deprecated-features.md)
-* [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md)
+* [Neueste Aktualisierungen der Dokumentation](../../rn/using/documentation-updates.md)
+* [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
 
+Abonnieren Sie das [Prioritätsprodukt-Update von Adobe](https://www.adobe.com/de/subscription/priority-product-update.html), um über neue Versionen der Experience Cloud-Lösungen informiert zu werden.
