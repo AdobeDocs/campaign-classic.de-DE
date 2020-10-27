@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: appendices
 discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '7852'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -317,7 +317,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> dbSchema<br /> </td> 
-   <td> Arbeitsbereich <br /> </td> 
+   <td> Arbeitsbereich  <br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -405,22 +405,22 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > pool** die Parameter des 
   <tr> 
    <td> liveTestDelaySec<br /> </td> 
    <td> Verzögerung zwischen Überprüfung der Verbindungs-Gültigkeit.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
   </tr> 
   <tr> 
    <td> freeCnx<br /> </td> 
    <td> Anzahl der kostenlosen Verbindung im Pool.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
   </tr> 
   <tr> 
    <td> maxCnx<br /> </td> 
    <td> Maximale Anzahl der zulässigen Verbindungen, bevor eine neue Verbindung verweigert wird. Siehe diese <a href="https://helpx.adobe.com/campaign/kb/how-to-increase-the-maximum-number-of-database-connections-from-.html">technischen Hinweise</a>.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
   </tr> 
   <tr> 
    <td> maxIdleDelaySec<br /> </td> 
    <td> Maximale Leerlaufzeit der Verbindung. 0 bedeutet Standardwert.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -872,7 +872,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../in
   <tr> 
    <td> port<br /> </td> 
    <td> Proxyserver-Anschluss<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1112,7 +1112,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (loka
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -1273,7 +1273,7 @@ Hier sind die verschiedenen Parameter des **InMail** -Knotens. Dies ist die Konf
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -1381,7 +1381,7 @@ Weitere Informationen finden Sie unter [Interaktion - Datenpuffer](../../install
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -1530,7 +1530,7 @@ Hier sind die verschiedenen Parameter des **mta** -Knotens. Dies ist die Konfigu
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2093,7 +2093,7 @@ Hier sind die verschiedenen Parameter des **pipelinierten** Knotens. Dies ist di
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2346,7 +2346,7 @@ Hier sind die verschiedenen Parameter des **sms** Knotens. Dies ist die Konfigur
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2434,7 +2434,7 @@ Hier sind die verschiedenen Parameter des **STAT** Knotens. Dies ist die Konfigu
   <tr> 
    <td> port<br /> </td> 
    <td> Server-Listening-Anschluss. Siehe diesen <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">Abschnitt</a>.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> <br /> </td> 
   </tr> 
   <tr> 
@@ -2446,7 +2446,7 @@ Hier sind die verschiedenen Parameter des **STAT** Knotens. Dies ist die Konfigu
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2517,7 +2517,7 @@ Hier sind die verschiedenen Parameter des **syslogd** Knotens. Dies ist die Konf
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
@@ -2630,7 +2630,7 @@ Hier sind die verschiedenen Parameter des **Tracking** -Knotens. Dies ist die Ko
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2731,7 +2731,7 @@ Hier sind die verschiedenen Parameter des **Knoten trackinglogd** . Dies ist die
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2792,13 +2792,13 @@ For additional information, refer to this [section](../../installation/using/con
   <tr> 
    <td> controlPort<br /> </td> 
    <td> Überwachungsanschluss für Tomcat: Siehe <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
    <td> Tomcat HTTP-Listening-Anschluss: Siehe <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurieren von Tomcat</a>.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
   <tr> 
@@ -2840,7 +2840,7 @@ For additional information, refer to this [section](../../installation/using/con
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
   <tr> 
@@ -2896,19 +2896,19 @@ Hier sind die verschiedenen Parameter des Knotens **web > jsp** . Dies ist die K
 Der Knoten **web > jsp > classpath** enthält die Liste aller Klassenpfade, die beim Starten von JVM verwendet werden. Die Standardkonfiguration lautet:
 
 ```
-'$(XTK_INSTALL_DIR)/tomcat-7/bin/bootstrap.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/bin/tomcat-juli.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/tomcat-coyote.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/tomcat-util.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/tomcat-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/servlet-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/jsp-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/el-api.jar
+'$(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/bin/tomcat-juli.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-coyote.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-util.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/servlet-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/jsp-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
           $(XTK_INSTALL_DIR)/java/lib/log4j-1.2.11.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/annotations-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/catalina.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/websocket-api.jar
-          $(XTK_INSTALL_DIR)/tomcat-7/lib/tomcat7-websocket.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/annotations-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/catalina.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/websocket-api.jar
+          $(XTK_INSTALL_DIR)/tomcat-8/lib/tomcat7-websocket.jar
           $(XTK_INSTALL_DIR)/java/lib/pdfbox-2.0.4.jar
           $(XTK_INSTALL_DIR)/java/lib/FontBox-0.1.0.jar
           $(XTK_INSTALL_DIR)/java/lib/AGJavaEndpoint.22.jar
@@ -3304,7 +3304,7 @@ Weitere Informationen finden Sie unter [Redundante Verfolgung](../../installatio
    <td> <br /> </td> 
   </tr> 
   <tr> 
-   <td> id<br /> </td> 
+   <td> ID<br /> </td> 
    <td> Name<br /> </td> 
    <td> String <br /> </td> 
    <td> 1<br /> </td> 
@@ -3414,7 +3414,7 @@ Weitere Informationen finden Sie unter Workflows und Affinitäten zur [hohen Ver
   <tr> 
    <td> runLevel<br /> </td> 
    <td> Priorität im Beginn. Module mit niedriger Priorität werden zuerst gestartet und zuletzt beendet. Das syslogd-Modul muss daher die Priorität 0 haben.<br /> </td> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> 10<br /> </td> 
   </tr> 
  </tbody> 
