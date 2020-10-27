@@ -11,9 +11,9 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 discoiquuid: 3c8388d8-1a91-4d16-a8ac-016f643c6009
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
 
@@ -164,7 +164,7 @@ Datenbeispiel:
 
 Beim Empfang eines Ereignisses erzeugt Adobe Campaign eine eindeutige Rückgabe-Kennung. Diese entspricht der Kennung der im Verlauf gespeicherten Ereignisversion.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Beim Empfang von SOAP-Anfragen verifiziert Adobe Campaign das Format der E-Mail-Adresse. Wenn die E-Mail-Adresse falsch formatiert ist, wird ein Fehler zurückgegeben.
 
