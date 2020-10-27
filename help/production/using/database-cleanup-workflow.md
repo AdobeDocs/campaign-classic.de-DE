@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 6b188d78-abb4-4f03-80b9-051ce960f43c
 translation-type: tm+mt
-source-git-commit: 2a82493deada11cb22ef37d215b6eae8274ce890
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '2997'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Standardmäßig ist der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigun
 
 ![](assets/ncs_cleanup_scheduler.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Damit der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** zu dem in der Planung festgelegten Zeitpunkt und Zeitpunkt Beginn werden kann, muss das Workflow-Engine (wfserver) gestartet werden. Ist dies nicht der Fall, erfolgt die Datenbereingung der Datenbank erst nach dem nächsten Starten des Workflow-Engine.
 
@@ -84,7 +84,7 @@ Alle vom **[!UICONTROL Datenbankbereinigungs]** -Workflow ausgeführten Aufgaben
 
 Zu dem in der Workflow-Planung definierten Zeitpunkt (siehe Planung [) wird](#the-scheduler)das Workflow-Engine für den Datenbankbereinigungsprozess Beginn. Die Datenbankbereinigung stellt eine Verbindung zur Datenbank her und führt die Aufgaben in der unten gezeigten Reihenfolge aus.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn eine dieser Aufgaben fehlschlägt, werden die folgenden nicht ausgeführt.\
 >SQL-Abfragen mit einem **LIMIT** -Attribut werden wiederholt ausgeführt, bis alle Informationen verarbeitet sind.
