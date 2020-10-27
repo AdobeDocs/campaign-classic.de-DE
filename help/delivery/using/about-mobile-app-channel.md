@@ -9,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 6b3fe8b9-dae6-4f8e-83e1-3376c0fe72a5
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '725'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 82%
 
 ---
 
@@ -59,14 +59,14 @@ Sie können das Verhalten der Anwendung dahingehend konfigurieren, dass dem Empf
 
 Der Workflow **[!UICONTROL NMAC-Opt-outs]** (mobileAppOptOutMgt) aktualisiert die Abmeldungen von Benachrichtigungen auf Mobile-Geräten. Weiterführende Informationen zu diesem Workflow finden Sie im [Workflows](../../workflow/using/mobile-app-channel.md)-Handbuch.
 
-Adobe Campaign ist sowohl mit binärem als auch HTTP/2-basiertem APNs kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+Adobe Campaign ist mit binären und HTTP/2 APNs kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 ## Datenfluss {#data-path}
 
 Die unten stehenden Schemata verdeutlichen den Austausch von Daten zwischen Mobile Apps und Adobe Campaign. Drei Akteure sind an diesem Prozess beteiligt:
 
 * Mobile App
-* Benachrichtigungsdienst - APNS (Apple Push Notification Service) bei iOS und FCM (Firebase Cloud Messaging) bei Android
+* der Benachrichtigungsdienst: APNs (Apple Push Notification Service) für Apple und FCM (Firebase Cloud Messaging) für Android
 * Adobe Campaign
 
 Der Benachrichtigungsprozess besteht aus drei großen Schritten: Speicherung der App in Adobe Campaign (Abonnement-Erhebung), Versand und Tracking.
@@ -88,10 +88,14 @@ Folgende Informationen werden an Adobe Campaign gemeldet:
 
 ![](assets/nmac_delivery_view.png)
 
-Der Adobe-Campaign-Server muss den APNS auf folgenden Ports kontaktieren können:
+Der Adobe Campaign-Server muss in der Lage sein, den APNs-Server an den folgenden Ports zu kontaktieren:
 
 * 2195 (Sendung) und 2186 (Feedback-Service) für den binären iOS-Connector
 * 443 für den iOS-HTTP/2-Connector
+
+   >[!NOTE]
+   >
+   > Ab Kampagne 20.3 wird der ältere iOS-Binäranschluss nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Mehr dazu](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
 
 Verwenden Sie folgende Befehle, um die korrekte Funktionsweise zu testen:
 
@@ -107,7 +111,7 @@ Verwenden Sie folgende Befehle, um die korrekte Funktionsweise zu testen:
    telnet gateway.push.apple.com
    ```
 
-Wenn ein binärer iOS-Connector verwendet wird, muss der APNS vom MTA und Webserver auf dem Port 2195 (Sendung) und vom Workflow-Server auf dem Port 2196 (Feedback-Service) kontaktiert werden können.
+Wenn ein iOS-Binäranschluss verwendet wird, müssen MTA und Webserver die APNs an Port 2195 (Senden) kontaktieren können, muss der Workflow-Server die APNs an Port 2196 (Feedback-Dienst) kontaktieren können.
 
-Wenn ein iOS-HTTP/2-Connector verwendet wird, muss der APNS vom MTA, Webserver und Workflow-Server auf dem Port 443 kontaktiert werden können.
+Wenn ein iOS-HTTP/2-Connector verwendet wird, müssen MTA, Webserver und Workflow-Server die APNs an Port 443 kontaktieren können.
 
