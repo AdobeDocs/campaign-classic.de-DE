@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 8ec525f400c29b986eadd888d29f1579860871c6
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '2366'
-ht-degree: 46%
+source-wordcount: '2355'
+ht-degree: 47%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 46%
 
 In diesem Abschnitt erhalten Sie eine ausführliche Anleitung zum Aktualisierungsprozess und zu den Schritten zur Ermittlung und Lösung von Konflikten.
 
-Die Bauaufrüstung muss mit Vorsicht durchgeführt werden, ihre Auswirkungen müssen im Vorfeld umfassend berücksichtigt werden, und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um eine erfolgreiche Aktualisierung sicherzustellen, stellen Sie sicher, dass nur sachkundige Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich vor dem Upgrade mit der [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) in Verbindung zu setzen.
+Die Bauaufrüstung muss mit Vorsicht durchgeführt werden, ihre Auswirkungen müssen im Vorfeld umfassend berücksichtigt werden, und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um eine erfolgreiche Aktualisierung sicherzustellen, stellen Sie sicher, dass nur sachkundige Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich vor dem Upgrade mit der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) in Verbindung zu setzen.
 
 Folgende Voraussetzungen müssen gegeben sein:
 
@@ -209,10 +209,10 @@ Die folgenden Dienste müssen wieder gestartet werden:
 
 Laden Sie auf der Maschine, auf der der Adobe Campaign-Anwendungsserver installiert ist (nlserverweb), diese Datei herunter und kopieren Sie sie:
 
+```
+Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
+```
 
-    ```
-    Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
-    ```
 
 Wenn das nächste Mal Clientkonsolen verbunden werden, werden die Benutzer darauf hingewiesen, dass eine neue Aktualisierung verfügbar ist, und erhalten die Möglichkeit, diese herunterzuladen und zu installieren.
 
@@ -248,7 +248,7 @@ Wenn Transactional Messaging (Message Center) auf Ihrer Kampagne-Instanz aktivie
 
 Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
 
-1. Wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) , um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
+1. Wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) , um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
 1. Überprüfen Sie, ob die Version aktualisiert wurde, indem Sie einen Test-Link ausführen. Beispiel:
 
    ```
@@ -344,7 +344,7 @@ Es gibt drei Optionen zur Lösung von Konflikten: **Akzeptieren Sie die neue Ver
 * Das Objekt wird nicht aktualisiert.
 * Langfristige Auswirkungen: Inkompatibilität der Versionen, der Kunde profitiert nicht von Fehlerkorrekturen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >Es wird dringend empfohlen, Konflikte zu lösen.
 
 
@@ -408,7 +408,7 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 1. Führen Sie die Zusammenführung in einer Testumgebung durch.
 
 
->[!CAUTION]
+>[!IMPORTANT]
 >Für komplexe Zusammenführungen sind Entwicklungskenntnisse erforderlich.
 
 
