@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '854'
 ht-degree: 99%
 
 ---
@@ -142,9 +142,3 @@ Erfahren Sie mehr über das Erstellen einer Audience durch Konfigurieren einer E
 Erfahren Sie, wie Sie einen Workflow erstellen, um Empfänger als Zielkontakte auszuwählen, und den Workflow als wiederkehrend einzurichten, bevor die Liste als Zielgruppe für eine E-Mail-Kampagne verwendet wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
-
-**Siehe auch**
-
-* 
-
-* 
