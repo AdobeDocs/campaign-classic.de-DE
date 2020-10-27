@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 7%
+source-wordcount: '2023'
+ht-degree: 8%
 
 ---
 
@@ -169,7 +169,7 @@ Ja. Der Server wird während der Aktualisierung heruntergefahren, um sicherzuste
 
 ## An wen wende ich mich, um das Upgrade-Ticket für Build zu öffnen?
 
-Wenden Sie sich an den Kundendienst der [Adobe, wenn Probleme nach einem Build-Upgrade auftreten](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Der Kundendienst plant die Builddaten und öffnet Tickets zum Erstellen von Upgrades.
+Wenden Sie sich an den Kundendienst der [Adobe, wenn Probleme nach einem Build-Upgrade auftreten](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Der Kundendienst plant die Builddaten und öffnet Tickets zum Erstellen von Upgrades.
 
 Weitere Informationen finden Sie in den [Hilfe- und Unterstützungsoptionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
 
@@ -203,3 +203,10 @@ alle Inhalte angezeigt und vorhanden sind.
    * Versenden von SMS
    * Wenn eine externe FDA verbunden ist, testen Sie, ob die Daten auf beide Arten gesendet werden
    * Wenn Sie Integrationen wie Adobe Campaign-Adobe Experience Manager, Adobe Campaign-Adobe Analytics verwenden, testen Sie, ob sie weiterhin wie zuvor funktionieren
+
+**Siehe auch**
+
+* [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
+* [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
+* [Hilfe- und Supportoptionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Gold Standard-Programm](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
