@@ -198,9 +198,8 @@ Die Kampagne erhält daraufhin den Status **[!UICONTROL Zu validieren]**.
 >[!NOTE]
 >
 >* Um die Prozesse auszuwählen, für die eine Validierung erforderlich ist, ändern Sie die Kampagnenvorlage. Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
-   >
-   >
-* Lesen Sie hierzu auch den Abschnitt [Validierungsprozess](#approval-process).
+>
+>* Lesen Sie hierzu auch den Abschnitt [Validierungsprozess](#approval-process).
 
 
 
@@ -271,7 +270,6 @@ Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearb
 >* Bei Auswahl einer Liste von Validierungsverantwortlichen wird der Vorgang validiert, sobald einer der Benutzer der Liste diesen akzeptiert hat. Der entsprechende Validierungslink wird dann nicht mehr im Dashboard angezeigt. Wenn der Benachrichtigungsversand aktiviert ist und ein anderer Validierer daraufhin auf den Validierungslink in der Benachrichtigung klickt, so wird diesem gemeldet, dass der Vorgang bereits von einem anderen Benutzer validiert wurde.
 >* Im unteren Abschnitt des Fensters der Validierungseinstellungen kann eine Validierungsplanung für die jeweilige Kampagne festgelegt werden. Standardmäßig haben Validierungsverantwortliche nach dem Unterbreitungsdatum 3 Tage Zeit, um einen Vorgang zu validieren.
 >* Es besteht die Möglichkeit, den betreffenden Benutzern vor dem Ende der Validierungsfrist eine automatische Erinnerung zu senden.
-
 >
 
 
