@@ -11,9 +11,9 @@ audience: social
 content-type: reference
 topic-tags: annexes
 discoiquuid: 07be1d3c-b038-48ca-be37-a33adb8e0fc0
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: a0ab8794bdbdfbe627bf33580dc8991793447336
+workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 100%
 
@@ -129,7 +129,7 @@ Für dieses Anwendungsbeispiel haben wir eine Webanwendung erstellt, die folgend
 
 ## Wie lassen sich Fan-Daten erfassen? {#how-to-acquire-fan-data-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Befolgen Sie die Konfigurationsschritte, die unter [Facebook-Anwendung erstellen](../../social/using/creating-a-facebook-application.md) beschrieben sind.
 
@@ -250,7 +250,7 @@ Wenn das Profil nicht in der Datenbank vorhanden ist und die E-Mail-Adresse des 
 
 1. Wählen Sie im Feld **[!UICONTROL Mapping]** das Schema aus, für das Sie die Abstimmung vornehmen möchten.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Vergewissern Sie sich, dass die Felder des Tabs **[!UICONTROL Soziale Netzwerke]** im Versand-Mapping richtig eingegeben wurden. Versand-Mappings lassen sich über den Knoten **[!UICONTROL Administration > Kampagnen > Zielgruppen-Mappings]** aufrufen.
 
