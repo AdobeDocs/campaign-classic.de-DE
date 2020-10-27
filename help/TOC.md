@@ -22,7 +22,7 @@ ht-degree: 98%
 + [Neueste Aktualisierungen](rn/using/documentation-updates.md)
 + Versionshinweise {#release-notes}
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
-   + [Neueste Version](rn/using/latest-release.md)
+   + [Aktuelle Version](rn/using/latest-release.md)
    + [Gold Standard Version](rn/using/gold-standard.md)
    + Frühere Versionen {#previous-releases}
       + [Version 20.1](rn/using/release--20-1.md)
@@ -69,7 +69,7 @@ ht-degree: 98%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen       {#creating-queries}
+   + Abfragen erstellen        {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -425,7 +425,7 @@ ht-degree: 98%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring    {#monitoring}
+      + Monitoring     {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -578,10 +578,10 @@ ht-degree: 98%
       + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
 + Installieren von Campaign Classic {#installing-campaign-classic}
-   + Architekturgrundsätze {#architecture-and-hosting-models}
+   + Architektonische Grundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)
       + Hosting-Modelle{#hosting-models-lp}
-         + [Hosting-Modelle](installation/using/hosting-models.md)
+         + [Über Hosting-Modelle](installation/using/hosting-models.md)
          + [Hybrides Modell](installation/using/hybrid-model.md)
          + [Gehostetes Modell](installation/using/hosted-model.md)
          + [Funktionsmatrix](installation/using/capability-matrix.md)
