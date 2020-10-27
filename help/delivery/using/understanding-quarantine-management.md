@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-translation-type: ht
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: ht
-source-wordcount: '2665'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
+workflow-type: tm+mt
+source-wordcount: '2896'
+ht-degree: 87%
 
 ---
 
@@ -75,7 +75,7 @@ Folgende Informationen stehen für jede Adresse zur Verfügung:
 >Mit zunehmendem Alter der Datenbank steigt auch die Zahl der Adressen in Quarantäne. Wenn man beispielsweise davon ausgeht, dass eine E-Mail-Adresse eine Lebensdauer von etwa drei Jahren hat und dass die Empfängertabelle pro Jahr um 50 % wächst, lässt sich der Quarantänezuwachs wie folgt berechnen:
 >
 >Ende 1. Jahr: (1 x 0,33) / (1 + 0,5) = 22 %.
->Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
+Ende von Jahr 2: ((1,22*0,33)+0,33)/(1,5+0,75)=32,5 %.
 
 ### In Versandberichten in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-in-delivery-reports}
 
@@ -118,8 +118,7 @@ In den folgenden Fällen werden die Adressen automatisch aus der Quarantänelist
 Ihr Status ändert sich dann in **[!UICONTROL Gültig]**.
 
 >[!IMPORTANT]
->
->Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
+Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[!UICONTROL Auf Blockierungsliste]** werden niemals entfernt, auch wenn sie eine E-Mail erhalten.
 
 Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Softwareverteilungs-Assistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
@@ -157,20 +156,23 @@ Bei den unter Quarantäne gestellten Objekten handelt es sich um Device Token.
 
 **Für iOS - binäre Connectoren**
 
-Für jede Benachrichtigung empfängt Adobe Campaign die synchronen und asynchronen Fehler vom APNS-Server. Bei den folgenden synchronen Fehlern erzeugt Adobe Campaign Softbounces:
+>[!NOTE]
+Ab Kampagne 20.3 wird der ältere iOS-Binäranschluss nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Mehr dazu](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+
+Für jede Benachrichtigung empfängt Adobe Campaign die synchronen und asynchronen Fehler vom APNs-Server. Bei den folgenden Synchronfehlern erzeugt Adobe Campaign Softfehler:
 
 * Fehler durch Nutzdatenlänge: kein Neuversuch, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 * Fehler durch Ablauf des Zertifikats: kein Neuversuch, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 * Verbindungsabbruch während der Zustellung: Neuversuch wird unternommen, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 * Fehler bei der Konfiguration des Dienstes (ungültiges Zertifikat, ungültiges Passwort für Zertifikat, kein Zertifikat): kein Neuversuch, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 
-Der APNS-Server benachrichtigt Adobe Campaign asynchron darüber, dass ein Device Token abgemeldet wurde (wenn die Mobile App durch den Empfänger deinstalliert wurde). Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden durchgeführt. Dabei werden die APNS-Feedback-Services aufgefordert, die Tabelle **AppSubscriptionRcp** zu aktualisieren. Für jedes deaktivierte Token wird das Feld **Deaktiviert** auf **Wahr** gesetzt, und das mit diesem Device Token verknüpfte Abonnement wird automatisch von künftigen Sendungen ausgeschlossen.
+The APNs server asynchronously notifies Adobe Campaign that a device token has been unregistered (when the mobile application has been uninstalled by the user). The **[!UICONTROL mobileAppOptOutMgt]** workflow runs every 6 hours to contact the APNs feedback services to update the **AppSubscriptionRcp** table. For all the deactivated tokens, the field **Disabled** is set to **True** and the subscription linked to that device token will be automatically excluded from future deliveries.
 
-**Für iOS - HTTP/2-Connector**
+**Für iOS - HTTP/V2-Anschluss**
 
-Mit dem HTTP/2-Protokoll können Feedback und Status für jeden Push-Versand direkt festgestellt werden. Wenn der HTTP/2-Protokoll-Connector verwendet wird, wird der Feedback-Dienst nicht mehr vom **[!UICONTROL mobileAppOptOutMgt]**-Workflow angerufen. Die abgemeldeten Token werden vom binären iOS-Connector und vom iOS-HTTP/2-Connector unterschiedlich gehandhabt. Ein Token gilt als abgemeldet, wenn eine Mobile App deinstalliert oder erneut installiert wird.
+Das HTTP/V2-Protokoll ermöglicht ein direktes Feedback und Status für jeden Push-Versand. Wenn der HTTP/V2-Protokollanschluss verwendet wird, wird der Feedback-Dienst nicht mehr vom **[!UICONTROL Arbeitsablauf mobileAppOptOutMgt]** aufgerufen. Die nicht registrierten Token werden zwischen dem binären iOS-Connector und dem iOS-HTTP/V2-Connector unterschiedlich verarbeitet. Ein Token gilt als nicht registriert, wenn eine Mobilanwendung deinstalliert oder neu installiert wird.
 
-Wenn das APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt, wird der Target Token sofort in Quarantäne gestellt.
+Wenn die APNs für eine Nachricht den Status &quot;nicht registriert&quot;zurückgeben, wird das Zielgruppen-Token sofort in Quarantäne gesetzt.
 
 <table> 
  <tbody> 
@@ -223,7 +225,7 @@ Wenn das APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Fehler bei Testverbindung mit APNS<br /> </td> 
+   <td> Certificate issue (password, corruption, etc.) and test connection to APNs issue<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Verschiedene Fehlernachrichten je nach Fehler<br /> </td> 
    <td> Soft<br /> </td> 
@@ -239,7 +241,7 @@ Wenn das APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> Zurückweisung von APNS-Nachricht: Abmeldung<br /> Benutzer hat die Anwendung entfernt oder das Token ist abgelaufen<br /> </td> 
+   <td> APNs message rejection: Unregistration<br /> the user has removed the application or the token has expired<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Abgemeldet<br /> </td> 
    <td> Hard<br /> </td> 
@@ -247,7 +249,7 @@ Wenn das APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt,
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Zurückweisung von APNS-Nachricht: alle anderen Fehler<br /> </td> 
+   <td> APNs message rejection: all other errors<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Der Grund für Zurückweisung wird in der Fehlernachricht angegeben<br /> </td> 
    <td> Soft<br /> </td> 
@@ -272,11 +274,10 @@ Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden zur Akt
 Während der Versandanalyse werden alle Geräte, die von der Zielgruppe ausgeschlossen werden, automatisch zur Tabelle **excludeLogAppSubRcp** hinzugefügt.
 
 >[!NOTE]
->
->Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
->* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
->* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
->* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
+Im Folgenden finden Sie die unterschiedlichen Fehlertypen für den Baidu-Connector:
+* Verbindungsproblem zu Beginn des Versands: Fehlertyp **[!UICONTROL Undefiniert]**, Grund **[!UICONTROL Unerreichbar]**, Neuversuch wird unternommen.
+* Verbindung während des Versands unterbrochen: Softbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, Neuversuch wird unternommen.
+* Während des Versands von Baidu synchroner Fehler zurückgegeben: Hardbounce, Grund für den Fehler **[!UICONTROL Abgelehnt]**, es wird kein Neuversuch unternommen.
 
 Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der versendeten Nachrichten abzurufen, und aktualisiert die Versandlogs. Wenn eine Nachricht als gesendet gemeldet wird, ändert sich der Status der Nachricht in den Versandlogs in **[!UICONTROL Erhalten]**. Wenn Baidu einen Fehler meldet, wird der Status auf **[!UICONTROL Fehlgeschlagen]** gesetzt.
 
@@ -358,6 +359,134 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
   </tr> 
+    <tr> 
+   <td> Abweisung der FCM-Nachricht: Ungültiges Argument<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> INVALID_ARGUMENT </td> 
+   <td> Ignoriert</td> 
+   <td> Unbestimmt<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Abweisung der FCM-Nachricht: Authentifizierungsfehler von Drittanbietern<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> THIRD_PARTY_AUTH_ERROR </td> 
+   <td> Ignoriert</td>
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Abweisung der FCM-Nachricht: Absender-ID stimmt nicht überein<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> SENDER_ID_MISMATCH </td> 
+   <td> Soft</td>
+   <td> Unbekannter Nutzer<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Abweisung der FCM-Nachricht: Nicht registriert<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td>
+   <td> UNREGISTRIERT </td> 
+   <td> Hard</td> 
+   <td> Unbekannter Nutzer<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Abweisung der FCM-Nachricht: intern<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> INTERNE </td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Abweisung der FCM-Nachricht: Nicht verfügbar<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> NICHT VERFÜGBAR</td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Abweisung der FCM-Nachricht: unerwarteter Fehlercode<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> unerwarteter Fehlercode</td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+  <tr> 
+   <td> Authentifizierung: Verbindungsproblem<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> Verbindung zum Authentifizierungsserver nicht möglich </td> 
+   <td> Ignoriert</td>
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Ja<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: Nicht autorisierter Client oder Umfang in Anfrage.<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> Ignoriert</td>
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: Der Client ist nicht berechtigt, Zugriffstoken mit dieser Methode abzurufen, oder der Client ist für keinen der angeforderten Bereiche autorisiert.<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> unauthorized_client </td> 
+   <td> Ignoriert</td>
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: Zugriff verweigert<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td>
+   <td> access_verweigert</td> 
+   <td> Ignoriert</td>
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: Nicht gültige E-Mail<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> Invalid_grant </td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: Ungültige JWT<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> Invalid_grant </td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: Ungültige JWT-Signatur<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> Invalid_grant </td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: Ungültige OAuth-Scope- oder ID-Token-Audience angegeben<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> unauthorized_client</td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
+    <tr> 
+   <td> Authentifizierung: OAuth-Client deaktiviert<br /> </td> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> disabled_client</td> 
+   <td> Ignoriert</td> 
+   <td> Zurückgewiesen<br /> </td> 
+   <td> Nein<br /> </td> 
+  </tr>
  </tbody> 
 </table>
 
@@ -368,8 +497,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
 Der Quarantänemechanismus für SMS-Nachrichten ist global gesehen mit dem allgemeinen Prozess identisch. Näheres dazu erfahren Sie unter [Über Quarantänen](#about-quarantines). Die Besonderheiten bei SMS-Nachrichten sind unten aufgeführt.
 
 >[!NOTE]
->
->Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
+Die Tabelle **[!UICONTROL Versandlogqualifizierung]** gilt nicht für den Connector **Erweitertes allgemeines SMPP**.
 
 <table> 
  <tbody> 
@@ -427,9 +555,8 @@ Der SMPP-Connector ruft zum Filtern des Inhalts mithilfe regulärer Ausdrücke (
 Bevor ein neuer Fehlertyp qualifiziert wird, wird der Fehlergrund immer standardmäßig auf **Abgelehnt** gesetzt.
 
 >[!NOTE]
->
->Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
->Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
+Die Typen und Ursachen für Fehlschläge sind dieselben wie für E-Mails. Siehe [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+Erkundigen Sie sich bei Ihrem Provider nach einer Liste mit Status- und Fehlercodes, um in der Versandlogqualifizierungs-Tabelle die korrekten Fehlertypen und -ursachen anzugeben.
 
 Beispiel einer generierten Nachricht:
 
