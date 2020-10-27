@@ -11,9 +11,9 @@ audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
 discoiquuid: 811a42a4-552c-49cb-bffd-7e124ef83735
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Um eine optimale Skalierbarkeit und einen Rund-um-die-Uhr-Betrieb des eingehende
 
 Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsinstanzen werden alle Katalogobjekte durch Voranstellung des Namens des externen Kontos gekennzeichnet. Dies ermöglicht die Unterstützung mehrerer Kontrollinstanzen (z. B. Design- und Live-Instanzen) auf derselben Ausführungsinstanz.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Es wird dringend empfohlen, kurze und ausdrucksstarke interne Namen zu verwenden.
 
@@ -112,7 +112,7 @@ Falls aus Optimierungsgründen nur ein Teil der Marketing-Datenbank in die Ausf�
 
 Folgende Wartungsoptionen stehen für die Kontrollinstanz zur Verfügung:
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Diese Optionen sind nur bei klar definierten Wartungsbedarfen zu nutzen.
 
@@ -128,7 +128,7 @@ Die folgende Option steht für Ausführungsinstanzen zur Verfügung:
 
 Im Zusammenhang mit der Installation der Kontroll- und -Ausführungs-Packages erhöht sich die Größe der Vorschlagskennungen in der Datenbank von 32 auf 64 Bits.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Je nach Anzahl an existierenden Vorschlägen in Ihrer Instanz kann dieser Vorgang sehr zeitintensiv sein.
 
