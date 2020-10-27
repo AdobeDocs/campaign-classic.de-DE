@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: ba5e815dd1576b55d9b3226639680f6358137f13
 workflow-type: tm+mt
-source-wordcount: '3768'
-ht-degree: 98%
+source-wordcount: '3898'
+ht-degree: 96%
 
 ---
 
@@ -26,9 +26,34 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## Oktober 2020 {#oct-2020}
 
-Kampagne-On-Premise-, Hosting- und Hybrid-Hostingmodelle werden jetzt in einem eigenen Abschnitt beschrieben. [mehr dazu](../../installation/using/hosting-models.md)
+**Neue Funktionen in Version 20.3**
 
-Die Funktionsmatrix für die Kampagne pro Hostingmodell wurde aktualisiert und im Installationshandbuch verschoben. [mehr dazu](../../installation/using/capability-matrix.md)
+Verbesserte Push-Benachrichtigungen für iOS - [Weitere Informationen](../../delivery/using/configuring-the-mobile-application.md)
+
+Verbesserte Push-Benachrichtigungen für Android - [Weitere Informationen](../../delivery/using/configuring-the-mobile-application-android.md)
+
+**Weitere Aktualisierungen der Dokumentation zu dieser Version**
+
+Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compatibility-matrix.md)
+
+Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr dazu](../../rn/using/deprecated-features.md)
+
+Versionshinweise und Kompatibilitätsmatrix für die Gold Standard-Version sind jetzt in einem speziellen Abschnitt verfügbar.
+[Mehr dazu](../../rn/using/gold-standard.md#gs-10)
+
+**Weitere Updates**
+
+Dokumentationsseiten wurden aktualisiert, um das Tomcat 8 Update widerzuspiegeln.
+
+Details wurden in der Beschreibung des &quot;Info&quot;-Feldes im Abschnitt &quot;Adobe Campaign-Version&quot; hinzugefügt. [Mehr dazu](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+
+Richtlinien zum Durchführen einer Buildaktualisierung wurden dem Abschnitt &quot;Aktualisieren von Adobe Campaign Classic&quot;hinzugefügt. Mehr [dazu](../../production/using/build-upgrade.md)
+
+Häufig gestellte Fragen zur Kampagne-Build-Aktualisierung wurden der Kampagne häufige Fragen hinzugefügt. Mehr [dazu](../../platform/using/faq-build-upgrade.md)
+
+Kampagne-On-Premise-, Hosting- und Hybrid-Hostingmodelle werden jetzt in einem eigenen Abschnitt beschrieben. [Mehr dazu](../../installation/using/hosting-models.md)
+
+Die Funktionsmatrix für die Kampagne pro Hostingmodell wurde aktualisiert und im Installationshandbuch verschoben. [Mehr dazu](../../installation/using/capability-matrix.md)
 
 Der Abschnitt mit den erweiterten Funktionen von Campaign Reporting wurde verbessert, um genau zu zeigen, wie sich URL-Parameter und Variablen in benutzerspezifischen Berichten verwenden lassen – [mehr dazu](../../reporting/using/advanced-functionalities.md)
 
