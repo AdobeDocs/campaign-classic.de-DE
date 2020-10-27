@@ -12,10 +12,10 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1128'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -369,7 +369,7 @@ Wenden Sie sich an Ihren Datenbankadministrator, um die für Ihre Oracle-Version
 
 >[!NOTE]
 >
->Für Microsoft SQL Server können Sie den [auf dieser Seite](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)beschriebenen Wartungsplan verwenden.
+>Für Microsoft SQL Server können Sie den auf [dieser Seite](https://ola.hallengren.com/sql-server-index-and-statistics-maintenance.html)beschriebenen Wartungsplan verwenden.
 
 Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere Version verwenden, wenden Sie sich an Ihren Datenbankadministrator, um Informationen zu den Wartungsabläufen zu erhalten.
 
@@ -421,7 +421,7 @@ Das folgende Beispiel betrifft Microsoft SQL Server 2005. Wenn Sie eine andere V
 
    Beachten Sie, dass im Ordner **[!UICONTROL SQL Server Agent > Aufträge]** ein Objekt erstellt wurde. Mit diesem Objekt können Sie den Wartungsplan Beginn haben. In unserem Beispiel gibt es nur ein Objekt, da alle Wartungs-Aufgaben Teil desselben Plans sind.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Damit dieses Objekt ausgeführt werden kann, muss der Microsoft SQL Server-Agent aktiviert sein.
 
