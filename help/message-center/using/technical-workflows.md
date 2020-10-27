@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 discoiquuid: 2e648e63-06d2-4e8f-9934-066a41d18eac
-translation-type: ht
-source-git-commit: 76547b8e7ef377a6d2c786e721b16c571e8b7712
-workflow-type: ht
-source-wordcount: '361'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f7527a2d9b76e34fbaa2c9471c44a7a1e7e074d7
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 82%
 
 ---
 
@@ -28,13 +28,11 @@ Vor Freigabe der Transaktionsnachrichten-Vorlagen muss sichergestellt werden, da
 
 ## Workflows der Kontrollinstanz {#control-instance-workflows}
 
-In der Kontrollinstanz ist für jede Ausführungsinstanz ein separater Archivierungs-Workflow zu erstellen. Diese Workflows sind anschließend im Knoten **Administration > Betreibung > Message Center** verfügbar. Nach ihrer Erstellung starten die Archivierungs-Workflows automatisch.
-
-**Verteilte Architektur**
-
-Wenn ein oder mehrere Ausführungsinstanzen registriert sind, ist in der Kontrollinstanz für jedes externe Konto vom Typ **[!UICONTROL Message-Center-Ausführungsinstanz]** ein separater Archivierungs-Workflow zu erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Archivierungs-Workflow erstellen]**, um den Workflow zu erstellen und zu starten.
+Auf der Kontrollinstanz müssen Sie, unabhängig davon, ob Sie eine oder mehrere Ausführungsinstanzen registriert haben, einen Archivierungsarbeitsablauf für jedes **[!UICONTROL Message Center-Ausführungsinstanzen]** -Externe Konto erstellen. Klicken Sie auf die Schaltfläche **[!UICONTROL Create the archiving workflow]** , um den Workflow zu erstellen und Beginn.
 
 ![](assets/messagecenter_archiving_002.png)
+
+Diese Workflows können Sie dann über **Administration > Produktion > Nachrichtencenter** aufrufen. Nach der Erstellung werden die Workflows automatisch gestartet.
 
 <!--**Minimal architecture**
 
