@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 3%
@@ -43,7 +43,7 @@ Die Protokolldateien mit mehreren Instanzen sind in der folgenden Tabelle aufgef
 | web.log | Webmodulprotokolle (Client-Konsole, Berichte, SOAP-API usw.) |
 | webmdl.log | Protokolle vom Umleitungsmodul |
 | watchdog.log | Protokolle vom Adobe Campaign-Prozessüberwachungsmodul |
-| trackinglogd.log | Trackinglogs     |
+| trackinglogd.log | Trackinglogs      |
 
 Die Protokolldateien der einzelnen Instanzen sind in der folgenden Tabelle aufgeführt:
 
@@ -56,7 +56,7 @@ Die Protokolldateien der einzelnen Instanzen sind in der folgenden Tabelle aufge
 | inMail.log | Protokoll des Abspann-E-Mail-Moduls |
 | logins.log | Protokolliert alle Anmeldeversuche zum Adobe Campaign (Erfolg oder nicht) |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Der Ordner **redir** existiert nur auf Umleitungsservern. Der Unterordner **url** enthält die Übereinstimmungen mit den URLs, die umgeleitet werden sollen, und das Unterverzeichnisprotokoll **enthält die Trackinglogs** . Um Trackinglogs zu generieren, muss das **trackinglogd** -Modul ausgeführt werden.
 
@@ -68,4 +68,4 @@ Sie können jedoch größere Dateien beibehalten. Um dies zu aktivieren, ändern
 
 Wenn Sie weitere Detailstufen in den Protokollen beibehalten möchten, können Sie die Adobe Campaign-Module mit dem **-verbose** -Parameter Beginn ausführen:
 
-**nlserver-Beginn`<MODULE>`@`<INSTANCE>`-verbose**
+**nlserver-Beginn `<MODULE>`@`<INSTANCE>` -verbose**
