@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 20894054c09cfc4a388b068f25f990277bc1fc70
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1159'
 ht-degree: 10%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 10%
 
 Bevor Sie den Aktualisierungsprozess starten, müssen Sie feststellen, auf welche Adobe Campaign-Version aktualisiert werden soll, und die [Versionshinweise](../../rn/using/latest-release.md) lesen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Es wird dringend empfohlen, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. Weitere Informationen finden Sie unter [Sicherung](../../production/using/backup.md).\
 >Um eine Aktualisierung durchzuführen, stellen Sie sicher, dass Sie über die Fähigkeit und die Berechtigungen zum Zugriff auf Instanzen und Protokolle verfügen.
@@ -53,7 +53,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
       **iisreset/stop**
 
    * Adobe-Campaign-Dienst: **net stop nlserver6**
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >You also need to make sure the redirection server (webmdl) is stopped, so that the **nlsrvmod.dll** file used by IIS can be replaced with the new version.
 
@@ -111,7 +111,7 @@ Folgende Dienste sollen neu gestartet werden:
 
 * Adobe-Campaign-Dienst: **net start nlserver6**
 
-## Unter Linux {#in-linux}
+## Linux {#in-linux}
 
 Um Adobe Campaign in einer neuen Version zu aktualisieren, wenn ein neuer Build bereitgestellt wird, gilt folgendes Verfahren für Linux:
 
@@ -171,7 +171,7 @@ Führen Sie dazu den folgenden Befehl aus:
 /etc/init.d/apache stop
 ```
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Ihr Skript kann **httpd** anstelle von **apache** heißen.
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
@@ -223,7 +223,7 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 * **[!UICONTROL Die neue Version]** akzeptieren: empfohlen, wenn die mit Adobe Campaign bereitgestellten Ressourcen vom Benutzer nicht geändert wurden.
 * **[!UICONTROL Aktuelle Version]** beibehalten: bedeutet, dass die Aktualisierung abgelehnt wird.
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Wenn Sie diesen Auflösungsmodus auswählen, werden in der neuen Version möglicherweise keine Korrekturen vorgenommen.
 
@@ -262,7 +262,7 @@ Wenn die Client-Konsolen das nächste Mal angeschlossen werden, informiert ein F
 >
 >Vergewissern Sie sich, dass der IIS_XPG-Benutzer über die entsprechenden Leserechte für diese Installationsdatei verfügt, und lesen Sie das [Installationshandbuch](../../installation/using/general-architecture.md) , um weitere Informationen zu erhalten.
 
-### Unter Linux {#in-linux-1}
+### Linux {#in-linux-1}
 
 Rufen Sie auf dem Computer, auf dem der Adobe Campaign-Anwendungsserver (**nlserver web**) installiert ist, das folgende Paket ab:
 
