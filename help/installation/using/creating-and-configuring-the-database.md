@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
 workflow-type: tm+mt
-source-wordcount: '1345'
+source-wordcount: '1351'
 ht-degree: 1%
 
 ---
@@ -64,12 +64,13 @@ Je nach ausgewählter Datenbank-Engine können die Serverkennungsinformationen v
 
 * Geben Sie für eine **Oracle** -Engine den für den Anwendungsserver definierten **TNS-Namen** ein.
 * Bei einer **PostgreSQL** - oder **DB2** -Engine müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver definiert ist, um auf den Datenbankserver zuzugreifen.
-* Für eine **Microsoft SQL Server** -Engine müssen Sie Folgendes definieren:
+* Für eine **Microsoft SQL Server** -Engine müssen Sie Folgendes definieren: der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS`\<instance>`** (Instanzmodus),
 
-   1. der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definierte DNS-Name (oder IP-Adresse): **DNS** oder **DNS`\<instance>`** (Instanzmodus),
-   1. die Authentifizierungsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-Authentifizierung]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
+   >[!CAUTION]
+   >
+   > Ab 20.3 wird die Windows NT-Authentifizierung deaktiviert. **[!UICONTROL Die SQL Server-Authentifizierung]** ist jetzt der einzige für Microsoft SQL Server verfügbare Authentifizierungsmodus. [Mehr dazu](../../rn/using/deprecated-features.md)
 
-      ![](assets/s_ncs_install_db_mssql_creation01.png)
+   ![](assets/s_ncs_install_db_mssql_creation01.png)
 
 ### Schritt 2: Verbindung zum Server herstellen {#step-2---connecting-to-the-server}
 
