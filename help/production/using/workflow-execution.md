@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 7d8828c5-5776-49ca-b4f7-a4a6aaaa9db1
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 13%
@@ -78,7 +78,7 @@ Das Problem kann verschiedene Ursachen haben. Gehen Sie wie folgt vor, um es zu 
 
    Um die Anzahl Workflows Ausführung Ihrer Instanz zu überprüfen, empfehlen wir die Verwendung der vordefinierten Ansichten, die standardmäßig im Ordner **[!UICONTROL Administration]** / **[!UICONTROL Audit]** verfügbar sind. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Das Erhöhen des **[!UICONTROL Optionsschwellenwertes NmsOperation_LimitConcurrency]** kann zu Leistungsproblemen in Ihrer Instanz führen. Führen Sie dies in jedem Fall nicht selbst aus und wenden Sie sich an Ihren Ansprechpartner bei Ihrem Adobe Campaign.
 
