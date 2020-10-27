@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: data-processing
 discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 5%
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 ### Übersicht {#overview}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn Sie keinen Zugriff auf den Server und die Datenbank haben (gehostete Umgebung), können Sie die unten beschriebenen Schritte nicht ausführen. Bitte kontaktieren Sie die Adobe.
 
@@ -49,14 +49,14 @@ Gehen Sie hierzu wie folgt vor:
    >Im Kontext eines Adobe Campaigns kombiniert eine **Vorsicht** Aktionen, mit denen Sie alle Prozesse stoppen können, die mit der Außenseite interagieren: Protokolle, Verfolgung, Versände, Kampagnen-Workflows usw.\
    >Dieser Schritt ist notwendig, um zu vermeiden, dass Nachrichten mehrmals gesendet werden (einmal von der nominalen Umgebung und einmal von der duplizierten Umgebung).
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >Eine Umgebung kann mehrere Instanzen enthalten. Jede Instanz eines Adobe Campaigns unterliegt einem Lizenzvertrag. Prüfen Sie Ihre Lizenzvereinbarung, um zu sehen, wie viele Umgebung Sie haben können.\
    >Mit dem unten stehenden Verfahren können Sie eine Umgebung übertragen, ohne dass sich dies auf die Anzahl der installierten Umgebung und Instanzen auswirkt.
 
 ### Vor dem Beginn {#before-you-start}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Es wird dringend empfohlen, eine vollständige Sicherung der Datenbanken für alle Instanzen der Quell- und Zielgruppe-Umgebung auszuführen, bevor der Transfervorgang gestartet wird. Auf diese Weise können Sie bei einem Problem die Backups wiederherstellen und zu Ihrer ursprünglichen Konfiguration zurückkehren.
 
@@ -70,7 +70,7 @@ In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quell-U
 
 Die folgenden Schritte müssen mit größter Sorgfalt durchgeführt werden: Einige Prozesse werden möglicherweise noch ausgeführt, wenn die Quelldatenbanken der Umgebung kopiert werden. Durch die Vorsicht (Schritt 3 unten) wird verhindert, dass Nachrichten zweimal gesendet werden, und die Datenkonsistenz bleibt erhalten.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Abfrage unterschiedlich ist (z. B. Oracle), müssen die SQL-Einstellungen angepasst werden.
 >* Die folgenden Befehle gelten im Kontext einer **prod** -Instanz und einer **dev** -Instanz unter PostgreSQL.
@@ -218,7 +218,7 @@ nlserver pdump
 
 ### Schritt 8: Importieren von Optionen und Externen Konti in die Zielgruppe-Umgebung (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >In diesem Schritt sollte nur der Webprozess gestartet werden. Ist dies nicht der Fall, beenden Sie andere laufende Prozesse, bevor Sie fortfahren
 
