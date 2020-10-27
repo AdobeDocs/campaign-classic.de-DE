@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: troubleshooting
 discoiquuid: 6358c8fd-2b75-4462-acd1-887ee44d3110
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 8%
@@ -57,7 +57,7 @@ Stellen Sie sicher, dass die Datenbankwartung korrekt geplant und ausgeführt wu
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn Sie eine Mid-Sourcing-Konfiguration verwenden, ist es wichtig, dass Datenbanken regelmäßig gepflegt werden. Beim Analysieren eines Versands auf der Marketing-Plattform sendet die Marketing-Instanz Informationen an die Mid-Sourcing-Instanz. Wenn der Prozess verlangsamt wird, wird die Marketinginstanz beeinträchtigt.
 
@@ -69,7 +69,7 @@ Bitte überprüfen Sie die Anzahl und Größe der Arbeitstische. Wenn sie eine b
 * workflows, die aufgrund eines Fehlers angehalten wurden, beenden oder löschen,
 * alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL End]** -Aktivität enthalten und deren Status daher **[!UICONTROL angehalten]** bleibt, beenden.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Wenn der Vorgang eine lange Zeit in Anspruch nimmt und viel Platz frei macht, bedeutet dies, dass eine gründliche Wartung erforderlich ist (Indexrekonstruktion usw.). Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
