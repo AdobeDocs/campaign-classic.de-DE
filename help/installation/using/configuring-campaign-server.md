@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 1a94c94e-ab6b-45c2-a0f3-6adeec7e2d2d
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 2ff877607641435a2c2806f48f3c5b35d96d39c5
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 5%
@@ -242,7 +242,7 @@ Sobald die Zonen definiert und die Auflistung der **[!UICONTROL Sicherheitszone]
 
 ### Standardanschluss für Tomcat {#default-port-for-tomcat}
 
-Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen Anwendung besetzt ist, die für Ihre Konfiguration erforderlich ist, müssen Sie den 8080-Port durch einen kostenlosen ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die **Datei &quot;server.xml** &quot;im Ordner **/tomcat-7/conf** des Installationsordners des Adobe Campaigns.
+Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen Anwendung besetzt ist, die für Ihre Konfiguration erforderlich ist, müssen Sie den 8080-Port durch einen kostenlosen ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die **Datei &quot;server.xml** &quot;im Ordner **/tomcat-8/conf** des Installationsordners des Adobe Campaigns.
 
 Ändern Sie dann den Anschluss der JSP-Relaisseiten. Ändern Sie dazu die **Datei &quot;serverConf.xml** &quot;im Ordner **/conf** des Installationsordners des Adobe Campaigns. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
 
@@ -255,7 +255,7 @@ Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen A
 
 ### Ordner in Tomcat zuordnen {#mapping-a-folder-in-tomcat}
 
-Um kundenspezifische Einstellungen zu definieren, können Sie eine **Datei &quot;user_Kontexte.xml** &quot;im Ordner &quot; **/tomcat-7/conf** &quot;erstellen, die auch die Datei &quot; **Kontexte.xml** &quot;enthält.
+Um kundenspezifische Einstellungen zu definieren, können Sie eine **Datei &quot;user_Kontexte.xml** &quot;im Ordner &quot; **/tomcat-8/conf** &quot;erstellen, die auch die Datei &quot; **Kontexte.xml** &quot;enthält.
 
 Diese Datei enthält die folgenden Informationen:
 
