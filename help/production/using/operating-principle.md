@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 5e9c17ad-14d2-4173-9fc9-0e48a21426c8
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Die Modulverwaltung wird mithilfe des Befehlszeilenwerkzeugs nlserver **durchgef
 
 Die allgemeine Syntax des **nlserver** -Tools lautet wie folgt:
 
-**nlserver`<command>``<command arguments>`**
+**nlserver `<command>``<command arguments>`**
 
 Für die Liste der verfügbaren Module verwenden Sie den **Befehl nlserver** .
 
@@ -79,11 +79,11 @@ Die verfügbaren Module sind in der folgenden Tabelle aufgeführt:
 | web | Anwendungsserver (HTTP und SOAP) |
 | wfserver | Workflow-Server |
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Es gibt ein letztes Modul: das mit dem Anwendungsserver verknüpfte Tracking- und Relaismodul, das aus Leistungsgründen über native Mechanismen in einen Apache- oder IIS-Webserver über eine dynamische Bibliothek integriert wird. Es gibt keinen Adobe Campaign-Befehl, mit dem Sie dieses Modul verwalten oder Beginn ausführen können. Daher müssen Sie die Befehle des Webservers selbst verwenden.
 
-Die Modulverwendung und die Syntax ihrer Parameter werden mit dem folgenden Befehl angezeigt: **nlserver`[module]`-?**
+Die Modulverwendung und die Syntax ihrer Parameter werden mit dem folgenden Befehl angezeigt: **nlserver `[module]` -?**
 
 Beispiel:
 
