@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: production-procedures
 discoiquuid: 968d0ee3-5efc-46d8-b408-b9cce3e730c4
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3773'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    Wenn der **[!UICONTROL Warnhinweis]** angezeigt wird, kann es sein, dass der betreffende Prozess durch die SQL-Datenbank-Engine gesperrt wird oder dass er in einer unendlichen Schleife feststeckt. Der von Adobe Campaign bereitgestellte **Watchdog** -Prozess führt automatisch zu einem erneuten Beginn aller Prozesse und ermöglicht Ihnen, dieses Problem zu lösen. Sie können jedoch auch den entsprechenden Prozess selbst stoppen, um einen erneuten Beginn zu erzwingen.
 
-#### Unter Linux {#in-linux}
+#### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
@@ -256,7 +256,7 @@ Sie werden unter **Überwachung** > &quot;SMTP-Überwachung&quot;gruppiert.
 
 ![](assets/smtp_reports_access.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >* Informationen zur SMTP-Überwachung sind nur verfügbar, wenn der E-Mail-Kanal aktiviert wurde.
 >* Die **[!UICONTROL SMTP-Versandstatistik]** wird nur angeboten, wenn der Statistikserver auf der Instanz gestartet wird.
@@ -441,7 +441,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring   </th> 
+   <th> Monitoring      </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -484,7 +484,7 @@ Adobe Campaign kann ein Instanzenüberwachungstool (netreport) bereitstellen, mi
 
 ![](assets/pro_netreport.png)
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Dieses Tool kann zur Überwachung Ihrer Instanzen verwendet werden, wird jedoch nicht von Adobe Campaign unterstützt. Weitere Informationen erhalten Sie von Ihrem Kampagne-Administrator.
 
@@ -548,7 +548,7 @@ Im Folgenden finden Sie ein Konfigurationsbeispiel:
 >
 >Sie können verschiedene Konfigurationen angeben, indem Sie der Datei &quot; **netconf.xml** &quot;ein Suffix hinzufügen, z. B. **netconf-dev.xml**, **netconf-prod.xml** usw. Geben Sie dann die Konfiguration für die Ausführung des Berichts netreport in den **netreport.bat** - oder **netreport.sh** -Dateien an, indem Sie **$JAVA_HOME/bin/java netreport dev** oder **@%JAVA_HOME%binjava netreport prod** hinzufügen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Damit der **Überwachungsoperator** funktioniert, muss sich der Computer, auf dem der Netzwerkbericht ausgeführt wird, in einer Sicherheitszone befinden, die sich im **sessionTokenOnly** -Modus befindet. Wenn für diesen Operator keine vertrauenswürdige IP-Maske angegeben wurde, muss sich die Sicherheitszone auch im **allowEmptyPassword** - und **allowUserPassword** -Modus befinden.
 
