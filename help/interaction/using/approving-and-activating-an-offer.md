@@ -11,9 +11,9 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: 7b1c58a0-6fd6-4c9d-b1c4-f3dffda42523
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
+workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Ein Angebotsinhalt hat pro Platzierung eine Darstellung. Da jede Platzierung ihr
 
 Sie haben daher die Möglichkeit, den Inhalt eines Angebots für gewisse Platzierungen zu validieren, ihn für andere jedoch abzulehnen.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Sobald Inhalt und Eignung eines Angebots validiert wurden, startet automatisch der Publikations-Workflow (Angebotsbenachrichtigung), welcher das Angebot in die Live-Umgebung dupliziert und für die aktivierten Platzierungen verfügbar macht.
 
@@ -62,7 +62,7 @@ Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
 Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot konfigurierten oder aus der übergeordneten Kategorie resultierenden Eignungsregeln.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Sobald Inhalt und Eignung eines Angebots validiert wurden, startet automatisch der Publikations-Workflow (Angebotsbenachrichtigung), welcher das Angebot in die Live-Umgebung dupliziert und für die aktivierten Platzierungen verfügbar macht.
 
