@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: database-maintenance
 discoiquuid: 4a436ccf-097c-43e6-9eda-492bada5512a
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Adobe Campaign bietet einen integrierten Arbeitsablauf, mit dem Sie bestimmte Au
 * Löschung verwaister Datensätze und Statusreinitialisierung für abgelaufene Objekte,
 * Aktualisierung der Datenbankstatistiken.
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Bitte beachten Sie, dass die Bereinigungs-Aufgabe hauptsächlich die Pflege auf Anwendungsebene und nicht die Wartung auf RDBMS-Ebene (mit Ausnahme der statistischen Aktualisierung) betrifft. Für die Datenbank sind jedoch Wartungsarbeiten erforderlich. Auch wenn der Arbeitsablauf für die Datenbankbereinigung erfolgreich ausgeführt wird, bedeutet dies nicht, dass die Datenbank optimal eingestellt ist.
 
