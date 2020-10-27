@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 81090be2-3ed4-4f35-948b-e21af6e19999
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
+workflow-type: tm+mt
 source-wordcount: '147'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -26,8 +26,8 @@ Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versa
 
 Dieser erfolgt nach dem gleichen Prinzip wie ein klassischer Versand (siehe diesbezüglich [diesen Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)). Im Rahmen von Message Center erfordert ein Testversand vorab die Erstellung von
 
-* einer oder mehreren Testadressen (siehe [Testadressen in Transaktionsnachrichten verwalten](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) mit Testdaten (siehe [Personalisierungsdaten](../../message-center/using/personalization-data.md)) und
-* Nachrichteninhalt (siehe [Nachrichteninhalt erstellen](../../message-center/using/creating-message-content.md)).
+* Create one or more seed addresses (refer to [Managing seed addresses in transactional messages](../../message-center/using/managing-seed-addresses-in-transactional-messages.md)) with test data (refer to [Personalization data](../../message-center/using/personalization-data.md)).
+* Create the message content (refer to [Creating message content](../../message-center/using/creating-message-content.md)).
 
 Gehen Sie zur Durchführung des Testversands wie folgt vor:
 
