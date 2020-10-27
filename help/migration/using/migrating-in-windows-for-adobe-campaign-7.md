@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 discoiquuid: f459dc07-b7db-4526-b428-852b51c9c00e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: d509dc584cd4ae17c6dda85c09fceee8c6162dba
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1567'
 ht-degree: 1%
 
 ---
@@ -305,10 +305,10 @@ In diesem Stadium muss der IIS-Server beendet werden. Siehe [Dienstunterbrechung
 
 1. Führen Sie das Skript **is_neolane_setup.vbs** aus, um die vom Adobe Campaign-Server für den zuvor erstellten virtuellen Ordner verwendeten Ressourcen automatisch zu konfigurieren.
 
-   * Diese Datei befindet sich im Ordner &quot; **`[Adobe Campaign v7]`\tomcat-7\conf file**&quot;, in dem der Zugriffspfad zum Installationsordner des Adobe Campaigns **`[Adobe Campaign v7]`** angegeben ist. Der Befehl zum Ausführen des Skripts lautet wie folgt (für Administratoren):
+   * Diese Datei befindet sich im Ordner **`[Adobe Campaign v7]`\conf** , wo **`[Adobe Campaign v7]`** sich der Zugriffspfad zum Installationsordner des Adobe Campaigns befindet. Der Befehl zum Ausführen des Skripts lautet wie folgt (für Administratoren):
 
       ```
-      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\tomcat-7\conf
+      cd C:\Program Files (x86)\Adobe Campaign\Adobe Campaign v7\conf
       cscript iis_neolane_setup.vbs
       ```
 
@@ -336,7 +336,7 @@ In diesem Stadium muss der IIS-Server beendet werden. Siehe [Dienstunterbrechung
 
 ## Sicherheitszonen {#security-zones}
 
-Wenn Sie eine Migration von Version 6.02 oder früher durchführen, müssen Sie Ihre Sicherheitszonen konfigurieren, bevor Sie Dienste starten. For more information, refer to [Security](../../migration/using/general-configurations.md#security).
+Wenn Sie eine Migration von Version 6.02 oder früher durchführen, müssen Sie Ihre Sicherheitszonen konfigurieren, bevor Sie Dienste starten. Weitere Informationen finden Sie unter [Sicherheit](../../migration/using/general-configurations.md#security).
 
 ## Neustarten der Dienste {#re-starting-the-services}
 
