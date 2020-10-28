@@ -53,8 +53,8 @@ Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
    >[!NOTE]
    >
    >Wenn Sie **trackingFilter:*** verwenden, werden alle Protokolltypen aktiviert: ncm, rdr, nms, jst, timing, wdbc, ldap, soap, xtk, xtkquery, session, xtkwriter, network, pop3, inmail\
-   Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
-   Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können sie auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:*,!soap**
+   >Die nützlichsten Protokolltypen sind: **wdbc** (zeigt alle SQL-Abfragen an), **soap** (zeigt alle SOAP-Aufrufe an), **ldap** (zeigt alle LDAP-Abfragen nach der Authentifizierung an), **xtkquery** (zeigt die Liste aller Abfragedef an).\
+   >Sie können sie einzeln verwenden (**z. B. trackFilter:soap,wdbc** ). Sie können sie auch alle aktivieren und bestimmte andere ausschließen: **-tracefilter:*,!soap**
 
    Vergewissern Sie sich, dass der Fehler tatsächlich aufgetreten ist, und starten Sie den Prozess auf die normale Weise neu:
 
@@ -63,7 +63,8 @@ Adobe Campaign kann mit zwei Protokollierungsstufen betrieben werden:
    ```
 
 >[!IMPORTANT]
-Die Protokolle dieser Befehle werden in der Protokolldatei des Moduls gespeichert.
+>
+>Die Protokolle dieser Befehle werden in der Protokolldatei des Moduls gespeichert.
 
 Hier ist ein Beispiel speziell für das Webmodul. Die anderen Module funktionieren wie oben angegeben.
 
@@ -86,11 +87,13 @@ nlserver stop mta@<INSTANCE_NAME>; nlserver mta -instance:<INSTANCE_NAME> -trace
 ```
 
 >[!NOTE]
-Im **Tracefile** -Modus können Sie die Protokolle speichern. In den obigen Beispielen werden die Protokolle in den Dateien **var/`<instance-name>`/mta_debug.log** und **var/default/web_debug.log** gespeichert.
+>
+>Im **Tracefile** -Modus können Sie die Protokolle speichern. In den obigen Beispielen werden die Protokolle in den Dateien **var/`<instance-name>`/mta_debug.log** und **var/default/web_debug.log** gespeichert.
 
 >[!IMPORTANT]
-Fügen Sie unter Windows nicht die Option LD_PRELOAD hinzu. Der folgende Befehl reicht aus:\
-nlserver web -tomcat -verbose -tracefilter:*
+>
+>Fügen Sie unter Windows nicht die Option LD_PRELOAD hinzu. Der folgende Befehl reicht aus:\
+>nlserver web -tomcat -verbose -tracefilter:*
 
 Vergewissern Sie sich, dass das Problem erneut auftritt, und starten Sie dann das Modul neu:
 

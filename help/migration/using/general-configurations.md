@@ -461,7 +461,8 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 * **[!UICONTROL Aktuelle Version]** beibehalten: bedeutet, dass die Aktualisierung abgelehnt wird.
 
    >[!IMPORTANT]
-   Wenn Sie diesen Auflösungsmodus auswählen, laufen Sie Gefahr, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur den Betreibern von Fachleuten vorzubehalten.
+   >
+   >Wenn Sie diesen Auflösungsmodus auswählen, laufen Sie Gefahr, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur den Betreibern von Fachleuten vorzubehalten.
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
@@ -507,12 +508,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 In v7 wurde der Angebot-Inhalt verschoben. In Version 6.02 befanden sich die Inhalte in jedem Repräsentations-Schema (**nms:emailOfferView**). In v7 befindet sich der Inhalt jetzt im Angebot-Schema. Nach der Aktualisierung ist der Inhalt daher nicht mehr in der Oberfläche sichtbar. Nach der Aktualisierung müssen Sie den Inhalt des Angebots neu erstellen oder ein Skript entwickeln, das den Inhalt automatisch vom Schema der Darstellung in das Schema des Angebots verschiebt.
 
 >[!IMPORTANT]
-Wenn einige Versand, die konfigurierte Angebot verwenden, nach der Migration gesendet werden sollen, müssen Sie alle diese Versand in v7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der eigentlichen 6.1-Migration abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
+>
+>Wenn einige Versand, die konfigurierte Angebot verwenden, nach der Migration gesendet werden sollen, müssen Sie alle diese Versand in v7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der eigentlichen 6.1-Migration abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
 
 Ein Beispiel für ein Bewegungsskript (**interactionTo610_full_XX.js**) ist im Ordner &quot; **Migration** &quot;im Ordner &quot;Adobe Campaign v7&quot;verfügbar. Diese Datei zeigt ein Skript für einen Client, das eine einzelne E-Mail-Darstellung pro Angebot verwendet (die **[!UICONTROL Felder htmlSource]** und **[!UICONTROL textSource]** ). Der in der **Tabelle &quot;NmsEmailOfferView** &quot;enthaltene Inhalt wurde in die Tabelle &quot;Angebot&quot;verschoben.
 
 >[!NOTE]
-Die Verwendung dieses Skripts erlaubt Ihnen nicht, die Optionen &quot;Content-Management&quot;und &quot;Renderfunktionen&quot;zu nutzen. Um von diesen Funktionen profitieren zu können, müssen Sie die Katalogfunktionen, insbesondere die Angebot zum Angebot und die Konfigurationsräume, überdenken.
+>
+>Die Verwendung dieses Skripts erlaubt Ihnen nicht, die Optionen &quot;Content-Management&quot;und &quot;Renderfunktionen&quot;zu nutzen. Um von diesen Funktionen profitieren zu können, müssen Sie die Katalogfunktionen, insbesondere die Angebot zum Angebot und die Konfigurationsräume, überdenken.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -611,7 +614,8 @@ Im Folgenden finden Sie die Vorgehensweise, nach der Sie den Angebot-Inhalt vers
 1. Durchführen umfassender Tests.
 
    >[!NOTE]
-   Die Namen von Kategorien und Angeboten online werden nach der Live-Übertragung geändert. Aktualisieren Sie auf dem eingehenden Kanal alle Verweise auf Angebot und Kategorien.
+   >
+   >Die Namen von Kategorien und Angeboten online werden nach der Live-Übertragung geändert. Aktualisieren Sie auf dem eingehenden Kanal alle Verweise auf Angebot und Kategorien.
 
 ## Berichte {#reports}
 
@@ -639,7 +643,8 @@ Es gibt zwei Webanwendungsfamilien:
 Genau wie bei Berichten (siehe [Berichte](#reports)) müssen Sie, wenn Sie JavaScript hinzugefügt haben, bei Bedarf prüfen und anpassen. Wenn Sie vom blauen Banner der Version 7 (mit den Universen) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen. Wenn Ihr JavaScript-Code funktioniert, können Sie die Rendering-Engine v6.x auswählen. Ist dies nicht der Fall, können Sie die v6.0-Rendering-Engine verwenden, während Sie Ihren Code anpassen, und dann die v6.x-Rendering-Engine verwenden.
 
 >[!NOTE]
-Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
+>
+>Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
 
 Webanwendung Verbindungsmethoden wurden in v7 geändert. Wenn Sie Verbindungsprobleme in Ihren identifizierten Webanwendungen feststellen, müssen Sie die Optionen **allowUserPassword** und **sessionTokenOnly** in der Datei **serverConf.xml** vorübergehend aktivieren. Ändern Sie nach der Aktualisierung die folgenden Optionswerte:
 
@@ -672,7 +677,8 @@ sessionTokenOnly="false"
 Wenn Probleme auftreten, veröffentlichen Sie die Webanwendung erneut. Wenn das Problem weiterhin besteht, können Sie die v6.0-Rendering-Engine auswählen. Da Sie kein JavaScript hinzugefügt haben, können Sie die v6.x Rendering Engine auswählen und von den neuen Funktionen profitieren.
 
 >[!NOTE]
-Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
+>
+>Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
 
 ## Red-Hat {#red-hat}
 
