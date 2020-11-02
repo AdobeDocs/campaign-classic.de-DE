@@ -9,11 +9,11 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 discoiquuid: c988362b-432e-4f9f-8d36-00b3d0015756
-translation-type: ht
-source-git-commit: b447e316bed8e0e87d608679c147e6bd7b0815eb
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+workflow-type: tm+mt
 source-wordcount: '152'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 * Optimierte Sicherheitsrichtlinien für die Kennwortverwaltung;
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-Adobe IMS (Identity Management System) hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
+Adobe Identity Management System (IMS) hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
 >[!IMPORTANT]
 >
