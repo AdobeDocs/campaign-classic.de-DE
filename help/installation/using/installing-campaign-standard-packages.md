@@ -1,8 +1,6 @@
 ---
-title: Installieren von Campaign Classic-Standardpaketen
-seo-title: Installieren von Campaign Classic-Standardpaketen
-description: Installieren von Campaign Classic-Standardpaketen
-seo-description: null
+title: Integrierte Campaign Classic-Pakete installieren
+description: Erfahren Sie, wie Sie integrierte Kampagne-Pakete installieren
 page-status-flag: never-activated
 uuid: 1cba9487-52fc-442f-ae99-f8a2c157f25e
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: dd8f9adf-208c-42d9-b1a7-bfc8a690687e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1189'
 ht-degree: 19%
 
 ---
@@ -52,7 +50,7 @@ Die Pakete sind jetzt installiert.
 
 ### List of out-of-the-box Packages {#list-of-standard-packages}
 
-In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und dem Instanztyp, auf dem sie installiert werden können (Marketing, Mittel usw.), Liste. und zusätzliche Informationen.
+In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
 
 <table> 
  <thead> 
@@ -65,7 +63,7 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
  <tbody> 
   <tr> 
    <td> Versand<br /> </td> 
-   <td> Überwacht Versand und eventuell aufgetretene Probleme beim Senden von Nachrichten. <a href="../../delivery/using/monitoring-a-delivery.md">mehr dazu</a><br /> </td> 
+   <td> Überwacht Versand und eventuell aufgetretene Probleme beim Senden von Nachrichten. <a href="../../delivery/using/monitoring-a-delivery.md">Mehr dazu</a><br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
@@ -80,17 +78,17 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
   </tr> 
   <tr> 
    <td> Angebot Engine (Interaktion)<br /> </td> 
-   <td> Reagiert in Echtzeit auf eine Interaktion mit einem bestimmten Ansprechpartner (Kunde oder Zielgruppe), indem er diese zu einem oder mehreren angepassten Angeboten macht.  Optional. <a href="../../interaction/using/interaction-and-offer-management.md">Mehr erfahren</a> <br /> </td> 
+   <td> Reagiert in Echtzeit auf eine Interaktion mit einem bestimmten Ansprechpartner (Kunde oder Zielgruppe), indem er diese zu einem oder mehreren angepassten Angeboten macht.  Optional. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
    <td> Steuerung des Angebot-Motors mit Ausführungsinstanz. Optional.<br /> </td> 
-   <td> </td> 
+   <td> Paket, das auf Kontrollinstanz für Angebot Engine installiert werden soll (Interaktion). <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Mehr erfahren</a> </td> 
    <td> Marketing<br /> </td>  
   </tr> 
   <tr> 
    <td> Angebot-Engine für Ausführungsinstanzen. Optional.<br /> </td> 
-   <td> </td> 
+   <td> Paket, das auf Ausführungsinstanzen für die Angebot-Engine installiert werden soll (Interaktion). <a href="../../interaction/using/distributed-architectures.md">Mehr erfahren</a> </td> 
    <td> Mid, Ausführung <br /> </td>  
   </tr> 
   <!--tr> 
@@ -200,13 +198,13 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Adobe Marketing Cloud Shared Audiences Integration<br /> </td> 
+   <td> Integration mit Adobe Experience Cloud Zielgruppen-Freigabe<br /> </td> 
    <td> Ermöglicht den Austausch und die Freigabe von Audiencen/Segmenten mit Adobe Experience Cloud-Lösungen und Hauptdiensten. Erfordert IMS. <a href="../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integration in Adobe Marketing Cloud<br /> </td> 
-   <td> Ermöglicht das Importieren und Exportieren von Audiencen/Segmenten aus verschiedenen Adobe Marketing Cloud-Lösungen in Adobe Campaign. Optional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Mehr erfahren</a> </td> 
+   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> Ermöglicht das Importieren und Exportieren von Audiencen/Segmenten aus verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Optional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Mehr erfahren</a> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -223,6 +221,11 @@ In der folgenden Tabelle werden alle Standardpakete mit ihrer Beschreibung und d
    <td> Mid-Sourcing-Plattform<br /> </td> 
    <td> Diese Konfiguration ist eine optimale Zwischenlösung zwischen einer gehosteten (ASP) Konfiguration und Internalisierung. Die nach außen gerichteten Ausführungskomponenten werden auf einem "Mid-Sourcing"-Server ausgeführt, der bei Adobe Campaign gehostet wird. Optional. <a href="../../installation/using/mid-sourcing-server.md">Mehr erfahren</a> <br /> </td> 
    <td> Mid-Sourcing </td> 
+  </tr> 
+  <tr> 
+   <td> AMP-Unterstützung<br /> </td> 
+   <td> Ermöglicht die Verwendung des neuen interaktiven AMP zum E-Mail-Format und das Senden dynamischer E-Mails. Optional. <a href="../../delivery/using/defining-interactive-content.md">Mehr erfahren</a> <br /> </td> 
+   <td> Alle </td> 
   </tr> 
   <tr> 
    <td> ACS Connector<br /> </td> 
