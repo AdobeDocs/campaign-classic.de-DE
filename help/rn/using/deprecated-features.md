@@ -10,10 +10,10 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 87c2ee675b77be0f24a2028e7dbbf0bd1b91d46e
+source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
 workflow-type: tm+mt
-source-wordcount: '1607'
-ht-degree: 86%
+source-wordcount: '1621'
+ht-degree: 85%
 
 ---
 
@@ -52,6 +52,8 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
    <ul>
    <li>Soap-API – On-Premise: 2007, 2015, 2016</li>
    <li>Soap-API – Online: 2015, 2016</li>
+   <li>Web API - Microsoft Dynamics CRM On-Premise: Aktualisierung 2016, 2016 1</li>
+   <li>Web API - Microsoft Dynamics CRM Online: Aktualisierung 2016, 2016 1</li>
    </ul>
   <p><em>Geplantes Datum für die Entfernung: 2021.</em></p>
   </td>
