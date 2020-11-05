@@ -8,9 +8,9 @@ product: adobe campaign
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2149'
 ht-degree: 96%
 
 ---
@@ -341,7 +341,7 @@ ht-degree: 96%
    + Experience Cloud Triggers {#experience-triggers}
       + [Info [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pipeline konfigurieren](integrations/using/configuring-pipeline.md)
-      + [Konfigurieren der Adobe IO für Adobe Experience Cloud Trigger](integrations/using/configuring-adobe-io.md)
+      + [Konfigurieren der Adobe-E/A für Adobe Experience Cloud-Auslöser](integrations/using/configuring-adobe-io.md)
       + [Konfigurieren von Ereignissen für die benutzerdefinierte Implementierung](integrations/using/events.md)
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
