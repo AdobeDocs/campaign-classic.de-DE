@@ -3,9 +3,9 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
+source-git-commit: 6ac6145a38538f07b8080e503cd7750b19ed9621
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '277'
 ht-degree: 78%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 78%
 
 ## Neue Funktionen
 
-* **[Adobe Experience Cloud Trigger-Integration](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> aktualisieren Der alte Auth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht. Erfahren Sie, wie Sie zu Adobe-I/O migrieren.
+* **[Adobe Experience Cloud Trigger-Integration](integrations/using/configuring-adobe-io.md)aktualisieren))**<br/> Der alte Auth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht. Erfahren Sie, wie Sie zu Adobe-I/O migrieren.
 
 * **[Wechsel zur HTTP/2-basierten APIs des APNs-Providers](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> Erfahren Sie, wie Sie vom Legacy-Binärprotokoll zur HTTP/2-basierten APIs des APNs-Providers migrieren.
 
