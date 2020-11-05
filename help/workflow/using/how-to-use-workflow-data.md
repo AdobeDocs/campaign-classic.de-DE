@@ -11,11 +11,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: ec3844ca-8d80-4ddc-b08c-f18a6919bb28
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
+workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -108,7 +108,7 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel im Control Panel. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-1. Erstellen Sie einen Workflow in Campaign Classic, um die Daten mithilfe des über das Control Panel installierten privaten Schlüssels zu verschlüsseln und zu exportieren. Zu diesem Zweck wird folgender Workflow erstellt:
+1. Erstellen Sie in Campaign Classic einen Workflow, um die Daten zu exportieren und mit dem privaten Schlüssel zu verschlüsseln, der über die Systemsteuerung installiert wurde. Zu diesem Zweck wird folgender Workflow erstellt:
 
    ![](assets/gpg-workflow-encrypt.png)
 
@@ -147,4 +147,3 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 1. Sie können den Workflow jetzt ausführen. Nach der Ausführung werden die über die Abfrage abgerufenen Daten in eine verschlüsselte .gpg-Datei für den SFTP-Server exportiert.
 
-   ![](assets/gpg-sftp-encrypt.png)
