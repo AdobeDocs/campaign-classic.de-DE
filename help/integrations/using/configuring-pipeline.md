@@ -1,8 +1,6 @@
 ---
-title: Integration konfigurieren
-seo-title: Integration konfigurieren
-description: Integration konfigurieren
-seo-description: null
+title: Konfigurieren der Pipeline
+description: Erfahren Sie, wie Sie die Pipeline konfigurieren
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: f3caef21a269cf57624a07bfe1b4bf1e241061a6
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 23%
+source-wordcount: '923'
+ht-degree: 20%
 
 ---
 
@@ -32,17 +30,17 @@ Die Auslöser werden für das Targeting eines Kampagnen-Workflows verwendet, der
 
 ## Voraussetzungen {#prerequisites}
 
-Die Verwendung von [!DNL Experience Cloud Triggers] in Campaign erfordert:
+Bevor Sie diese Konfiguration starten, überprüfen Sie bitte, ob Sie:
 
-* Adobe Campaign 19.1.9 oder 20.3.1. und höher.
-* Analytics Standard-Version.
+* eine aktuelle Version von Adobe Campaign: 19.1.8 oder 20.2.1 Builds und höher,
+* Adobe Analytics Standard-Version
 
-Vorausgesetzte Konfigurationen sind:
+Sie benötigen außerdem:
 
 * Projektauthentifizierung für Adobe-E/A
-* Die IMSOrgId, die ID des Experience Cloud-Kunden mit Adobe Analytics hinzugefügt.
-* Das Bereitstellungsteam muss über Systemadministrator-Berechtigungen für das IMS-Org des Kunden verfügen
-* Konfigurieren der Auslöser in Adobe Analytics.
+* eine gültige IMSOrgID, die Kennung des Experience Cloud-Kunden mit Adobe Analytics hinzugefügt
+* einen Entwicklerzugriff auf das IMS-Org
+* Triggerkonfiguration in Adobe Analytics ausgeführt
 
 ## Authentifizierungs- und Konfigurationsdateien {#authentication-configuration}
 
