@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '463'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Wenn Sie eine ältere Version der Trigger-Integration über JWT-Token oder Auth-Authentifizierung verwenden, müssen **Sie wie unten** beschrieben zur Adobe-E/A wechseln. Die Authentifizierungsmodi JWT und oAuth werden jetzt nicht mehr unterstützt. [Mehr dazu](https://github.com/AdobeDocs/analytics-1.4-apis)
+>Wenn Sie eine ältere Version der Trigger-Integration über die Auth-Authentifizierung verwenden, müssen **Sie wie unten** beschrieben zur Adobe-E/A wechseln. Der alte Auth-Authentifizierungsmodus wird am 30. April 2021 eingestellt. [Mehr dazu](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md)
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
