@@ -13,9 +13,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '461'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,16 @@ ht-degree: 1%
 
 # Konfigurieren der Adobe-E/A für Adobe Experience Cloud-Auslöser {#configuring-adobe-io}
 
+>[!CAUTION]
+>
+>Wenn Sie eine ältere Version der Trigger-Integration über JWT-Token oder Auth-Authentifizierung verwenden, müssen **Sie wie unten** beschrieben zur Adobe-E/A wechseln. Die Authentifizierungsmodi JWT und oAuth werden jetzt nicht mehr unterstützt. [Mehr dazu](https://github.com/AdobeDocs/analytics-1.4-apis)
+
 ## Voraussetzungen {#adobe-io-prerequisites}
 
 Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
 
 * eine aktuelle Version von Adobe Campaign: 19.1.8 oder 20.2.1 Builds und höher,
-* eine gültige IMSOrgID: der Organisationsbezeichner des Identity Management-Systems (IMS) ist die eindeutige Kennung innerhalb des Adobe Experience Cloud, die insbesondere für den VisitorID-Dienst und das IMS-Single-Sign-On (SSO) verwendet wird,
+* eine gültige IMSOrgID: der Organisationsbezeichner des Identity Management-Systems (IMS) ist die eindeutige Kennung innerhalb des Adobe Experience Cloud, die beispielsweise für den VisitorID-Dienst und das IMS-Single-Sign-On (SSO) verwendet wird,
 * ein Entwicklerzugriff auf das IMS-Org.
 
 >[!NOTE]
@@ -105,7 +109,3 @@ Um [!DNL pipelined] Tag zu aktualisieren, müssen Sie den Authentifizierungstyp 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
 ```
-
->[!NOTE]
->
->Wenn Sie die ältere Version der Trigger-Integration mit Legacy-JWT-Token verwenden, sollten Sie auch die Adobe-E/A-API hinzufügen, um im ersten Schritt [!DNL Adobe Analytics] ausführlich zu erfahren, wie Sie automatisch zur neuen Trigger-Authentifizierung migrieren können.
