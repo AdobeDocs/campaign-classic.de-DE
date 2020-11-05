@@ -1,8 +1,6 @@
 ---
-title: Integration konfigurieren
-seo-title: Integration konfigurieren
-description: Integration konfigurieren
-seo-description: null
+title: Konfigurieren von Ereignissen
+description: Erfahren Sie, wie Sie Ereignis für die benutzerdefinierte Implementierung konfigurieren
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 71%
+source-wordcount: '1205'
+ht-degree: 72%
 
 ---
 
@@ -28,9 +26,7 @@ Teile dieser Konfiguration sind eine benutzerdefinierte Entwicklung und erforder
 * Grundkenntnisse der QueryDef- und Writer-APIs.
 * Grundverständnis der Verschlüsselung und Authentifizierung mit privaten Schlüsseln.
 
-Da die Bearbeitung des JS-Codes technische Fähigkeiten erfordert, versuchen Sie es nicht ohne das richtige Verständnis.
-
-Die weitere Verarbeitung von Ereignissen erfolgt im Rahmen des ACX-Pakets, das außerhalb der Standardimplementierung bereitgestellt wird. Empfangenes Ereignis wird sofort mit JavaScript-Code verarbeitet. Er wird ohne weitere Verarbeitung in Echtzeit in einer Datenbanktabelle gespeichert. Die Auslöser werden für das Targeting von einem Kampagnen-Workflow verwendet, der E-Mails sendet. Die Kampagne wird so eingerichtet, dass der Kunde, der das Ereignis ausgelöst hat, eine E-Mail erhält.
+Da die Bearbeitung des Javascript-Codes technische Fähigkeiten erfordert, versuchen Sie es bitte nicht ohne das richtige Verständnis.
 
 ## Verarbeiten von Ereignissen in JavaScript {#events-javascript}
 
@@ -40,7 +36,7 @@ Die Pipeline verwendet eine JavaScript-Funktion, um jede Nachricht zu verarbeite
 
 Sie wird in der Option **[!UICONTROL NmsPipeline_Config]** unter dem Attribut &quot;JSConnector&quot; konfiguriert. Dieses JavaScript wird jedes Mal aufgerufen, wenn ein Ereignis empfangen wird. Es wird vom [!DNL pipelined]-Prozess ausgeführt.
 
-Die JS-Beispieldatei lautet &quot;cus:Trigger.js&quot;.
+Die JavaScript-Beispieldatei lautet &quot;cus:Trigger.js&quot;.
 
 ### JavaScript-Funktion {#function-js}
 
@@ -58,7 +54,7 @@ Sie sollte zurückgegeben werden als
 <undefined/>
 ```
 
-Sie sollten [!DNL pipelined] nach der Bearbeitung des JS neu starten.
+Sie sollten [!DNL pipelined] nach der Bearbeitung des Javascripts neu starten.
 
 ### Datenformat des Auslösers {#trigger-format}
 
@@ -136,7 +132,7 @@ Zu Debuggings- und Überwachungszwecken werden die vollständigen Auslöserdaten
 
 ### Analysieren der Daten {#data-parsing}
 
-Dieser JS-Beispielcode analysiert die eVar01 in den Anreicherungen.
+Dieser JavaScript-Beispielcode analysiert die eVar01 in den Anreicherungen.
 
 ```
 function processPipelineMessage(xmlTrigger)
