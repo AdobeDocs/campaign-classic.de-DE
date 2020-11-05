@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
+source-git-commit: d9ae51c30e2ac538ff29e4ab53fa215d09f3d655
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 86%
+source-wordcount: '283'
+ht-degree: 78%
 
 ---
 
@@ -17,15 +17,14 @@ ht-degree: 86%
 
 ## Neue Funktionen
 
+* **[Adobe Experience Cloud Trigger-Integration](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> aktualisieren Der alte Auth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht. Erfahren Sie, wie Sie zu Adobe-I/O migrieren.
+
 * **[Wechsel zur HTTP/2-basierten APIs des APNs-Providers](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> Erfahren Sie, wie Sie vom Legacy-Binärprotokoll zur HTTP/2-basierten APIs des APNs-Providers migrieren.
 
 * **[hinzufügen Emoticons zu Ihren Nachrichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Sie können nun Emoticons in Nachrichten und Betreffzeile einfügen
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>
 Häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
-
-* **[Gewährleistung des Datenschutzes](https://helpx.adobe.com/de/campaign/kb/campaign-privacy.html)**<br/>
-Erfahren Sie, wie Adobe Campaign Sie bei der Einhaltung Ihrer Datenschutzbestimmungen unterstützen kann.
 
 * **[Tracking-Funktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/>
 Lernen Sie die Tracking-Funktionen und -Verfahren von Campaign kennen.
