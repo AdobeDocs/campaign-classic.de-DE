@@ -1,8 +1,6 @@
 ---
-title: Über Adobe Experience Manager
-seo-title: Über Adobe Experience Manager
-description: Über Adobe Experience Manager
-seo-description: null
+title: Über Adobe Experience Cloud Triggers
+description: Erste Schritte mit der Adobe Experience Cloud Trigger-Implementierung
 page-status-flag: never-activated
 uuid: c523822f-8178-4989-bd88-ab402470e540
 contentOwner: sauviat
@@ -12,17 +10,21 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 0d617f1c-0d0b-489f-9027-a92b1f1eee37
 translation-type: tm+mt
-source-git-commit: d15e953740b0a4dd8073b36fd59b4c4e44906340
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 75%
+source-wordcount: '228'
+ht-degree: 89%
 
 ---
 
 
-# Über Adobe Experience Cloud-Auslöser{#about-adobe-experience-triggers}
+# Erste Schritte mit Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
 
 [!DNL Triggers] ist eine Integration zwischen Adobe Campaign und Adobe Analytics mithilfe der Pipeline. Die Pipeline ruft Aktionen oder Auslöser der Benutzer von Ihrer Website ab. Ein Beispiel für einen Auslöser ist ein Warenkorbabbruch. Auslöser werden in Adobe Campaign verarbeitet, um in nahezu Echtzeit E-Mails zu senden.
+
+>[!CAUTION]
+>
+>Diese Funktion ist im Lieferumfang des Produkts nicht verfügbar. Die Implementierung erfordert die Einbindung von Adobe Consulting. Wenden Sie sich an Ihren Adobe-Support-Mitarbeiter, um weitere Informationen zu erhalten
 
 [!DNL Triggers] führen nach der Aktion eines Benutzers in einem kurzen Zeitraum Marketing-Aktionen aus. Die typische Reaktionszeit beträgt weniger als eine Stunde.
 
@@ -38,7 +40,3 @@ Der [!DNL pipelined]-Prozess wird auf dem Adobe Campaign-Marketing-Server kontin
 Der [!DNL pipelined]-Prozess meldet sich mit einem Authentifizierungsdienst bei Experience Cloud an und sendet einen privaten Schlüssel. Der Authentifizierungsdienst gibt ein Token zurück. Das Token dient beim Abrufen der Ereignisse zum Authentifizieren.
 
 For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
-
->[!NOTE]
->
->Die weitere Verarbeitung von Ereignissen erfolgt im Rahmen des ACX-Pakets, das außerhalb der Standardimplementierung bereitgestellt wird. Empfangenes Ereignis wird sofort mit JavaScript-Code verarbeitet. Er wird ohne weitere Verarbeitung in Echtzeit in einer Datenbanktabelle gespeichert. Die Auslöser werden für das Targeting von einem Kampagnen-Workflow verwendet, der E-Mails sendet. Die Kampagne wird so eingerichtet, dass der Kunde, der das Ereignis ausgelöst hat, eine E-Mail erhält.
