@@ -9,9 +9,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: e53af1c2-b50c-4a8c-b5b8-f23a85bd3211
-translation-type: ht
-source-git-commit: b04d802ce1041aecbb60aeeabbd35b1d78c2451d
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1e6ef4a3924e2cab0e6baf06e0861620e17d240b
+workflow-type: tm+mt
 source-wordcount: '2628'
 ht-degree: 100%
 
@@ -272,8 +272,6 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
    ![](assets/gpg_generate.png)
 
 1. Verwenden Sie im externen System den vom Control Panel heruntergeladenen öffentlichen Schlüssel, um die Daten für den Import in Campaign Classic zu verschlüsseln.
-
-   ![](assets/gpg_external.png)
 
 1. Erstellen Sie einen Workflow in Campaign Classic, um die verschlüsselten Daten zu importieren und mithilfe des über das Control Panel installierten privaten Schlüssels zu entschlüsseln. Zu diesem Zweck wird folgender Workflow erstellt:
 
