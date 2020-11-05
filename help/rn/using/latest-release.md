@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: fe7ce92bde3405fed3429475cdd5681e5837876f
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1824'
 ht-degree: 4%
@@ -90,7 +90,7 @@ Learn more in the [Campaign Compatibility matrix](../../rn/using/compatibility-m
 Die folgenden Funktionen sind in Version 20.3 veraltet:
 
 * Die demdex-Domäne, die zum Importieren und Exportieren von Audiencen in das Adobe Experience Cloud verwendet wird, wird nicht mehr unterstützt. Wenn Sie die demdex-Domäne für Ihre Import/Export-Externe Konti verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Mehr dazu](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-* Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline beruhte, wurde jetzt geändert und in die Adobe I/O verschoben. [Weitere Informationen](../../integrations/using/about-triggers.md)
+* Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline beruhte, wurde jetzt geändert und in die Adobe I/O verschoben. [Weitere Informationen](../../integrations/using/configuring-adobe-io.md)
 
 Weitere Informationen finden Sie auf der Seite [Veraltete und entfernte Funktionen](../../rn/using/deprecated-features.md).
 
