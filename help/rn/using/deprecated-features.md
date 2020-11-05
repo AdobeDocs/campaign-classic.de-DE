@@ -10,7 +10,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 85%
@@ -75,7 +75,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <tr>
   <td>OAuth-Authentifizierung (OAuth und JWT)<br></td>
   <td><p> Ab Kampagne 20.3 wurde die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline basierende Authentifizierung für die Trigger-Integration geändert und in Adobe I/O verschoben. <p>
-  <p>Wenn Sie die Trigger-Integration verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/about-triggers.md">Mehr dazu</a></p> 
+  <p>Wenn Sie die Trigger-Integration verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Mehr dazu</a></p> 
   <p>Weitere Informationen zur Abschreibung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a></p> 
   <p><em>Zielgruppen-Entfernungsdatum: April 2021</em></p>
   </td>
