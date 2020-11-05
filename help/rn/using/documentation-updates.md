@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 54ac5abcc53c41d025238a3c89f9d732c0fb1376
+source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '3921'
 ht-degree: 95%
@@ -41,7 +41,7 @@ Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr daz
 Versionshinweise und Kompatibilitätsmatrix für die Gold Standard-Version sind jetzt in einem speziellen Abschnitt verfügbar.
 [Mehr dazu](../../rn/using/gold-standard.md#gs-10)
 
-Die Triggerintegration, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline beruhte, wurde nun geändert und in die Adobe I/O verschoben. [Mehr dazu](../../integrations/using/about-triggers.md)
+Die Triggerintegration, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline beruhte, wurde nun geändert und in die Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
 
 **Weitere Updates**
 
