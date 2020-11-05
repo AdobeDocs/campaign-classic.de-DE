@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
+source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '919'
 ht-degree: 23%
 
 ---
@@ -39,7 +39,7 @@ Die Verwendung von [!DNL Experience Cloud Triggers] in Campaign erfordert:
 
 Vorausgesetzte Konfigurationen sind:
 
-* Adobe IO-Projektauthentifizierung
+* Projektauthentifizierung für Adobe-E/A
 * Die IMSOrgId, die ID des Experience Cloud-Kunden mit Adobe Analytics hinzugefügt.
 * Das Bereitstellungsteam muss über Systemadministrator-Berechtigungen für das IMS-Org des Kunden verfügen
 * Konfigurieren der Auslöser in Adobe Analytics.
@@ -48,13 +48,13 @@ Vorausgesetzte Konfigurationen sind:
 
 Die Authentifizierung ist erforderlich, da die Pipeline im Adobe Experience Cloud gehostet wird.
 Er verwendet ein Schlüsselpaar aus öffentlichem und privatem Schlüssel. Dieser Prozess hat die gleiche Funktion wie ein Benutzer/Kennwort, ist aber sicherer.
-Authentifizierung wird für das Marketing Cloud über Adobe IO Project unterstützt.
+Authentifizierung wird für das Marketing Cloud über das Adobe-I/O-Projekt unterstützt.
 
-## Schritt 1: Erstellen/Aktualisieren des Adobe-IO-Projekts {#creating-adobe-io-project}
+## Schritt 1: Erstellen/Aktualisieren des Adoben-E/A-Projekts {#creating-adobe-io-project}
 
-Für gehostete Kunden können Sie ein Kundenbetreuungsticket erstellen, um Ihr Unternehmen mit Adobe IO Technical Account Tokens für die Trigger-Integration zu aktivieren.
+Für gehostete Kunden können Sie ein Kundenbetreuungsticket erstellen, um Ihr Unternehmen mit Adobe-E/A-Token für die Triggerintegration zu aktivieren.
 
-Informationen zu On Premise-Kunden finden Sie auf der Seite [Konfigurieren der Adobe-IO für Adobe Experience Cloud-Auslöser](../../integrations/using/configuring-adobe-io.md) . Beachten Sie, dass Sie beim Hinzufügen der API zur Adobe-IO-Berechtigung **[!UICONTROL Adobe Analytics]** auswählen müssen.
+Kunden, die über On Premise verfügen, finden Informationen auf der Seite [Konfigurieren der Adoben-E/A für Adobe Experience Cloud-Auslöser](../../integrations/using/configuring-adobe-io.md) . Beachten Sie, dass Sie beim Hinzufügen der API zur Adobe-E/A-Berechtigung **[!UICONTROL Adobe Analytics]** auswählen müssen.
 
 ## Schritt 2: Konfigurieren der Pipeline-Option &quot;NmsPipeline_Config&quot; {#configuring-nmspipeline}
 
