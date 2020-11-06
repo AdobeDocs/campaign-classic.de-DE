@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '3921'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -28,9 +28,9 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 **Neue Funktionen in Version 20.3**
 
-Verbesserte Push-Benachrichtigungen für iOS - [Weitere Informationen](../../delivery/using/configuring-the-mobile-application.md)
+Verbesserungen bei Push-Benachrichtigungen für iOS – [mehr dazu](../../delivery/using/configuring-the-mobile-application.md)
 
-Verbesserte Push-Benachrichtigungen für Android - [Weitere Informationen](../../delivery/using/configuring-the-mobile-application-android.md)
+Verbesserungen bei Push-Benachrichtigungen für Android – [mehr dazu](../../delivery/using/configuring-the-mobile-application-android.md)
 
 **Weitere Aktualisierungen der Dokumentation zu dieser Version**
 
@@ -41,21 +41,21 @@ Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr daz
 Versionshinweise und Kompatibilitätsmatrix für die Gold Standard-Version sind jetzt in einem speziellen Abschnitt verfügbar.
 [Mehr dazu](../../rn/using/gold-standard.md#gs-10)
 
-Die Triggerintegration, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline beruhte, wurde nun geändert und in die Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
+Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
 
-**Weitere Updates**
+**Weitere Aktualisierungen**
 
-Dokumentationsseiten wurden aktualisiert, um das Tomcat 8 Update widerzuspiegeln.
+Die Dokumentationsseiten wurden aktualisiert, um die Aktualisierung von Tomcat 8 widerzuspiegeln.
 
-Details wurden in der Beschreibung des &quot;Info&quot;-Feldes im Abschnitt &quot;Adobe Campaign-Version&quot; hinzugefügt. [Mehr dazu](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
+In der Beschreibung des Felds &quot;Info&quot; im Abschnitt &quot;Abrufen Ihrer Adobe Campaign-Version&quot; wurden Details hinzugefügt. [Mehr dazu](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version)
 
-Richtlinien zum Durchführen einer Buildaktualisierung wurden dem Abschnitt &quot;Aktualisieren von Adobe Campaign Classic&quot;hinzugefügt. Mehr [dazu](../../production/using/build-upgrade.md)
+Dem Abschnitt &quot;Aktualisieren von Adobe Campaign Classic&quot; wurden Richtlinien zum Durchführen einer Build-Aktualisierung hinzugefügt. Mehr dazu [Mehr dazu](../../production/using/build-upgrade.md)
 
-Häufig gestellte Fragen zur Kampagne-Build-Aktualisierung wurden der Kampagne häufige Fragen hinzugefügt. Mehr [dazu](../../platform/using/faq-build-upgrade.md)
+Den allgemeinen Fragen zu Campaign wurden häufig gestellte Fragen zur Campaign-Build-Aktualisierung hinzugefügt. Mehr dazu [mehr dazu](../../platform/using/faq-build-upgrade.md)
 
-Kampagne-On-Premise-, Hosting- und Hybrid-Hostingmodelle werden jetzt in einem eigenen Abschnitt beschrieben. [Mehr dazu](../../installation/using/hosting-models.md)
+Die On-Premise-, gehosteten und hybriden Hosting-Modelle von Campaign werden jetzt in einem eigenen Abschnitt beschrieben. [Mehr dazu](../../installation/using/hosting-models.md)
 
-Die Funktionsmatrix für die Kampagne pro Hostingmodell wurde aktualisiert und im Installationshandbuch verschoben. [Mehr dazu](../../installation/using/capability-matrix.md)
+Die Funktionsmatrix pro Campaign-Hosting-Modell wurde aktualisiert und in das Installationshandbuch verschoben. [Mehr dazu](../../installation/using/capability-matrix.md)
 
 Der Abschnitt mit den erweiterten Funktionen von Campaign Reporting wurde verbessert, um genau zu zeigen, wie sich URL-Parameter und Variablen in benutzerspezifischen Berichten verwenden lassen – [mehr dazu](../../reporting/using/advanced-functionalities.md)
 
@@ -406,7 +406,7 @@ Es wurde ein neuer Knowledgebase-Artikel zur Verwendung des Angebotskatalogs in 
 
 Der Abschnitt zur Unter-Workflow-Aktivität wurde um ein Anwendungsbeispiel erweitert. [Mehr dazu](../../workflow/using/sub-workflow.md)
 
-The [Campaign Classic On-premise &amp; Hosted capability matrix](../../installation/using/capability-matrix.md) page has been updated with information relating to Email BCC.
+Die Seite [Funktionsmatrix für On-Premise- und gehostete Campaign Classic-Versionen](../../installation/using/capability-matrix.md) wurde um Informationen zu E-Mail-BCC erweitert.
 
 Die Dokumentation zu Transaktionsnachrichten wurde mit einem Hinweis zur Vorlagenpublikation aktualisiert. [Mehr dazu](https://docs.campaign.adobe.com/doc/AC/en/MCE_Template_publication.html)
 
