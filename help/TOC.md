@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '2151'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 96%
 + Versionshinweise {#release-notes}
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
    + [Aktuelle Version](rn/using/latest-release.md)
-   + Gold Standard Release {#gs-release}
+   + Gold Standard-Version {#gs-release}
       + [Versionshinweise zu Gold Standard](rn/using/gold-standard.md)
-      + [Kompatibilitätsmatrix für Gold-Standard](rn/using/compatibility-matrix-gs.md)
+      + [Gold Standard-Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
    + Frühere Versionen {#previous-releases}
       + [Version 20.2](rn/using/release--20-2.md)
       + [Version 20.1](rn/using/release--20-1.md)
@@ -71,7 +71,7 @@ ht-degree: 96%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen        {#creating-queries}
+   + Abfragen erstellen         {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -123,7 +123,7 @@ ht-degree: 96%
    + Push-Benachrichtigungen senden {#sending-push-notifications}
       + [Über den Mobile-App-Kanal](delivery/using/about-mobile-app-channel.md)
       + [Integration des Campaign SDK in Mobile Apps](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
-      + Configuring the mobile application{#configure-the-mobile-app}
+      + Konfigurieren der mobilen App{#configure-the-mobile-app}
          + [Erste Schritte mit der App-Konfiguration](delivery/using/get-started-app-config.md)
          + [Konfigurationsschritte für iOS](delivery/using/configuring-the-mobile-application.md)
          + [Konfigurationsschritte für Android](delivery/using/configuring-the-mobile-application-android.md)
@@ -342,7 +342,7 @@ ht-degree: 96%
       + [Erste Schritte mit [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pipeline konfigurieren](integrations/using/configuring-pipeline.md)
       + [Konfigurieren der Adobe-E/A für Adobe Experience Cloud-Auslöser](integrations/using/configuring-adobe-io.md)
-      + [Konfigurieren von Ereignissen für die benutzerdefinierte Implementierung](integrations/using/events.md)
+      + [Konfigurieren von Ereignissen für benutzerdefinierte Implementierungen](integrations/using/events.md)
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
 + Mit Workflows automatisieren {#automating-with-workflows}
@@ -430,7 +430,7 @@ ht-degree: 96%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring     {#monitoring}
+      + Monitoring      {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -603,14 +603,14 @@ ht-degree: 96%
       + [Enterprise-Bereitstellung](installation/using/enterprise-deployment.md)
       + [Mid-Sourcing-Bereitstellung](installation/using/mid-sourcing-deployment.md)
       + [Power Booster und Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Kampagne unter Windows {#installing-campaign-in-windows-}
-      + [Vor der Installation der Kampagne unter Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
+   + Campaign unter Windows {#installing-campaign-in-windows-}
+      + [Vor der Installation von Campaign unter Windows](installation/using/prerequisites-of-campaign-installation-in-windows.md)
       + [Installieren des Servers](installation/using/installing-the-server.md)
       + [Integration in einen Web-Server für Windows](installation/using/integration-into-a-web-server-for-windows.md)
       + [Client-Konsolenverfügbarkeit unter Windows](installation/using/client-console-availability-for-windows.md)
       + [Installieren der Client-Konsole](installation/using/installing-the-client-console.md)
-   + Kampagne unter Linux  {#installing-campaign-in-linux-}
-      + [Vor der Installation der Kampagne unter Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
+   + Campaign unter Linux {#installing-campaign-in-linux-}
+      + [Vor der Installation von Campaign unter Linux](installation/using/prerequisites-of-campaign-installation-in-linux.md)
       + [Installieren von Paketen mit Linux](installation/using/installing-packages-with-linux.md)
       + [Integration in einen Webserver für Linux](installation/using/integration-into-a-web-server-for-linux.md)
       + [Client-Konsolenverfügbarkeit unter Linux](installation/using/client-console-availability-for-linux.md)
@@ -659,7 +659,7 @@ ht-degree: 96%
    + Adobe Campaign aktualisieren {#updating-adobe-campaign}
       + [Einleitung](production/using/introduction.md)
       + [Durchführen eines Build-Upgrades](production/using/build-upgrade.md)
-      + [Aktualisierungsverfahren (vor Ort)](production/using/upgrading.md)
+      + [Aktualisierungsverfahren (On-Premise)](production/using/upgrading.md)
       + [Wechseln zu Unicode](production/using/switching-to-unicode.md)
       + [Migrationsverfahren](production/using/migration-procedures.md)
    + Bereinigung der Datenbank {#database-maintenance}
@@ -726,7 +726,7 @@ ht-degree: 96%
    + Verwenden einer benutzerdefinierten Empfängertabelle {#use-a-custom-recipient-table}
       + [Über die benutzerdefinierte Empfängertabelle](configuration/using/about-custom-recipient-table.md)
       + [Schemamerkmale](configuration/using/schema-characteristics.md)
-      + [Target mapping](configuration/using/target-mapping.md)
+      + [Zielgruppen-Mapping](configuration/using/target-mapping.md)
       + [Konfigurieren der Oberfläche](configuration/using/configuring-the-interface.md)
       + [Testadressen](configuration/using/seed-addresses.md)
       + [Filter erstellen](configuration/using/creating-filters.md)
@@ -761,4 +761,4 @@ ht-degree: 96%
       + [Spezifische Konfigurationen in v5.11](migration/using/specific-configurations-in-v5-11.md)
       + [Spezifische Konfigurationen in v6.02](migration/using/specific-configurations-in-v6-02.md)
       + [Spezifische Konfigurationen in v6.10](migration/using/specific-configurations-in-v6-10.md)
-   + [Rollback-Verfahren](migration/using/about-rollback.md)
+   + [Zurücksetzungsverfahren](migration/using/about-rollback.md)
