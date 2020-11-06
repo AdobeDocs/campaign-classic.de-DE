@@ -9,18 +9,18 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e615b2420d126cd42ed52257491282b36975f9ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '512'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Gold Standard-Kompatibilitätsmatrix{#compatibility-matrix-gs}
 
-Dieses Dokument Liste alle Systeme und Komponenten, die für **Adobe Campaign Classic Gold Standard** 19.1 Builds unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
+In diesem Dokument sind alle Systeme und Komponenten aufgeführt, die für Builds der **Adobe Campaign Classic Gold Standard**-Version 19.1 unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 
 ## Wichtige Hinweise{#important-notes-gs}
 
@@ -80,7 +80,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 <td>Apache</td>
 <td>
 <p>2.4 für RHEL 7– CentOS 7, Debian 8/9, Windows (64 Bit)</p>
-<p>2.2 nur für RHEL6 - CentOS 6 (64 Bit)</p>
+<p>2.2 nur für RHEL6 – nur CentOS 6 (64 Bit)</p>
 </td>
 </tr>
 </tbody>
@@ -116,7 +116,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 
 >[!NOTE]
 >
->RDBMS-Treiber muss der RDBMS-Serverversion entsprechen.
+>RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
 
 <table>
 <tbody>
@@ -308,7 +308,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 12</p>
+<p>iOS 9 bis 12</p>
 <p>mit Mobile SDK (Build 1.0.25), kompatibel mit 32- und 64-Bit-Versionen.</p>
 </td>
 </tr>
@@ -317,7 +317,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 
 ## Browser{#Browsers-gs}
 
-Für die folgenden Browser wird die neueste Version unterstützt: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+Bei den folgenden Browsern wird die aktuelle Version unterstützt: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
 
 Internet Explorer 11 wird unterstützt.
 
