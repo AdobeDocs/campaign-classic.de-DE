@@ -11,11 +11,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1318'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ _2. Dezember 2019_
   <tr> 
 <td> <p>Mit Adobe Campaign können Sie das neue interaktive <a href="https://amp.dev/about/email/">AMP für E-Mail</a>-Format ausprobieren, das es Marketing-Experten ermöglicht, AMP-Komponenten in Nachrichten einzuschließen, um das E-Mail-Erlebnis mit komplexen, dynamischen und interaktiven Inhalten zu verbessern, die direkt in der Nachricht selbst verarbeitet werden können.</p>
    <p> Diese Funktion ist als öffentliche Betaversion verfügbar.</p>
-   <p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/defining-interactive-content.md">ausführlichen Dokumentation</a> und im <a href="https://docs.adobe.com/content/help/en/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">Tutorial-Video</a>.</p><br /></td> 
+   <p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/defining-interactive-content.md">ausführlichen Dokumentation</a> und im <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">Tutorial-Video</a>.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
@@ -112,7 +112,7 @@ _2. Dezember 2019_
 * Es wurde ein spezieller Schutzmechanismus hinzugefügt, bevor das Hochladen von öffentlichen Ressourcen auf den Server erlaubt wird.
 * Es wurden neue [Campaign-Optionen](../../installation/using/configuring-campaign-options.md) hinzugefügt:
    * Mit der Konfigurationsoption **WdbcKillSessionPolicy** können Sie das Verhalten **Unbedingter Stopp** bei allen Workflows und PostgreSQL-Datenbankabfragen beeinflussen.
-   * Mit der Option **NmsOperation_DeliveryVorbereitungsfenster** können Sie die Anzahl der Tage festlegen, ab denen Sendungen mit inkonsistentem Status von der Zählung laufender Sendungen ausgeschlossen werden.
+   * Mit der Option **NmsOperation_DeliveryPreparationWindow** können Sie die Anzahl der Tage festlegen, ab denen Sendungen mit inkonsistentem Status von der Zählung laufender Sendungen ausgeschlossen werden.
    * Mit der Option **WdbcOptions_TempDbName** können Sie eine separate Datenbank für Tabellen auf Microsoft SQL Server konfigurieren. Dadurch werden Backups und Replikation optimiert – [mehr dazu](../../production/using/rdbms-specific-recommendations.md#microsoft-sql-server)
    * Die Option **XtkCleanup_NoStats** wurde für PostgreSQL erweitert, um das Verhalten des Speicheroptimierungsschritts des Workflows für die Datenbankbereinigung besser zu steuern – [mehr dazu](../../production/using/database-cleanup-workflow.md#statistics-update)
 * Der **logon()**-API wurde ein Mechanismus zur Kontosperrung hinzugefügt. Er verhindert alle weiteren Anmeldeversuche nach einer bestimmten Anzahl aufeinander folgender fehlgeschlagener Anmeldeversuche innerhalb eines bestimmten Zeitraums.
