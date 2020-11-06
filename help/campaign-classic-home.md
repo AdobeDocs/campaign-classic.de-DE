@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 78%
+ht-degree: 91%
 
 ---
 
@@ -19,9 +19,11 @@ ht-degree: 78%
 
 * **[Adobe Experience Cloud Trigger-Integration](integrations/using/configuring-adobe-io.md)**<br/>aktualisieren Der alte Auth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht. Erfahren Sie, wie Sie zu Adobe-I/O migrieren.
 
-* **[Wechsel zur HTTP/2-basierten APIs des APNs-Providers](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> Erfahren Sie, wie Sie vom Legacy-Binärprotokoll zur HTTP/2-basierten APIs des APNs-Providers migrieren.
+* **[Umstellung auf HTTP/2-basierte Anbieter-API für APNs](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/>
+Erfahren Sie, wie Sie vom veralteten Binärprotokoll zur HTTP/2-basierten Anbieter-API für APNs migrieren.
 
-* **[hinzufügen Emoticons zu Ihren Nachrichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>Sie können nun Emoticons in Nachrichten und Betreffzeile einfügen
+* **[Hinzufügen von Emoticons zu Ihren Nachrichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
+Sie können Emoticons jetzt in Nachrichten und die Betreffzeile einfügen.
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>
 Häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
