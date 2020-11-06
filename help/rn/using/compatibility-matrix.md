@@ -13,22 +13,22 @@ translation-type: tm+mt
 source-git-commit: 281eb6b0f84e01d25ac9c3542dc2ee950d4879e7
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 85%
+ht-degree: 98%
 
 ---
 
 
 # Kompatibilitätsmatrix{#compatibility-matrix}
 
-This document lists all systems and components supported for [the latest build](../../rn/using/latest-release.md) of **Adobe Campaign Classic**. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
+In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den [aktuellen Build](../../rn/using/latest-release.md) von **Adobe Campaign Classic** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 
-Wenn Sie Gold Standard-Benutzer sind, lesen Sie die [Gold Standard-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md).
+Wenn Sie ein Gold Standard-Benutzer sind, lesen Sie die [Gold Standard-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md).
 
 ## Wichtige Hinweise{#important-notes}
 
 Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
-In its [latest build](../../rn/using/latest-release.md), Adobe Campaign Classic is compatible with all the systems and tools listed in this page. Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools bei ihren Erstanbietern das Ende des Lebenszyklus (End of Life, EOL) erreichen, ist Adobe Campaign nicht mehr mit ihnen kompatibel. Diese Versionen werden daher mit der nächsten Produktversion aus unserer Kompatibilitätsmatrix entfernt. Verwenden Sie, um Probleme zu vermeiden, ausschließlich unterstützte Versionen von Systemen, die in der Kompatibilitätsmatrix aufgeführt sind.
+Der [aktuelle Build](../../rn/using/latest-release.md) von Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dieser Seite aufgelistet sind. Wenn bestimmte Versionen dieser Drittanbietersysteme und -Tools bei ihren Erstanbietern das Ende des Lebenszyklus (End of Life, EOL) erreichen, ist Adobe Campaign nicht mehr mit ihnen kompatibel. Diese Versionen werden daher mit der nächsten Produktversion aus unserer Kompatibilitätsmatrix entfernt. Verwenden Sie, um Probleme zu vermeiden, ausschließlich unterstützte Versionen von Systemen, die in der Kompatibilitätsmatrix aufgeführt sind.
 
 Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
 
@@ -127,7 +127,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 >[!NOTE]
 >
->RDBMS-Treiber muss der RDBMS-Serverversion entsprechen.
+>RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
 
 <table>
 <tbody>
@@ -153,7 +153,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 </td>
 </tr>
 <tr>
-<td>SQL Server</td>
+<td>SQL-Server</td>
 <td>
 <p>2019</p>
 <p>2017</p>
@@ -233,7 +233,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>9.4.x</p>
 </td>
 </tr>
-<tr><td>SQL Server</td>
+<tr><td>SQL-Server</td>
 <td>
 <p>2019</p>
 <p>2017</p>
@@ -324,7 +324,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 - 14</p>
+<p>iOS 9 bis 14</p>
 <p>mit Mobile SDK (Build 1.0.26), kompatibel mit 32- und 64-Bit-Versionen.</p>
 </td>
 </tr>
@@ -333,7 +333,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## Browser{#Browsers}
 
-Für die folgenden Browser wird die neueste Version unterstützt: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+Bei den folgenden Browsern wird die aktuelle Version unterstützt: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
 
 Internet Explorer 11 wird unterstützt.
 
