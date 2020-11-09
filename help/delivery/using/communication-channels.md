@@ -11,20 +11,20 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: 2e2d1134-9b83-4ada-b74f-c3842a0cf044
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '1190'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e01acc00d0b15df99c009fe29d170ed0fc9fa956
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 92%
 
 ---
 
 
 # Kommunikationskanäle{#communication-channels}
 
-Mit Adobe Campaign können Sie kanalübergreifende Kampagnen erstellen, die E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Briefpost beinhalten, und ihre Wirkung mithilfe diverser [Berichte](../../reporting/using/delivery-reports.md) erfassen. Diese Nachrichten werden erstellt und in Sendungen verteilt und können für jeden Empfänger personalisiert werden.
+Mit Adobe Campaign können Sie Kanal-übergreifende Kampagnen wie E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Direktnachrichten senden und deren Effektivität mithilfe verschiedener dedizierter [Berichte](../../reporting/using/delivery-reports.md)messen. Diese Nachrichten werden von Versänden entworfen und gesendet und können für jeden Empfänger personalisiert werden.
 
-Die Hauptfunktionen ermöglichen eine präzise Abstimmung von Marketing-Kommunikationen auf genauestens definierte Zielgruppen, eine leistungsfähige Ausführung von Sendungen sowie deren Analyse und Zusammenfassung in Berichten. Der Versand-Assistent bildet das funktionale Herzstück. Er wird durch weitere Adobe-Campaign-Funktionen ergänzt.
+Zu den Kernfunktionen zählen Targeting, Definition und Personalisierung von Nachrichten, Ausführung von Mitteilungen und die damit verbundenen operativen Berichte. Der funktionale Hauptzugangspunkt ist der Versand-Assistent. Dieser Zugriffspunkt führt zu mehreren Funktionen, die von Adobe Campaign abgedeckt werden.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 
    >[!NOTE]
    >
-   >Je nach Package können mehrere Kanäle verwendet werden. Prüfen Sie bitte diesbezüglich Ihren Lizenzvertrag.
+   >Die Anzahl der verfügbaren Kanal hängt von Ihrem Vertrag ab. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Sendungen können **online** (per E-Mail, Mobile-Kanal und Push-Benachrichtigungen) und **offline** (Brief-Kanal) durchgeführt werden.
 
