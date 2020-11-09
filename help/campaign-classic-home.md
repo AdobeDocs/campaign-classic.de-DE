@@ -3,10 +3,10 @@ keywords: Campaign Classic;home;popular topics
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: ccd4fe1366fd9ecaca83dbf7aac241524f0af7d6
+source-git-commit: c14d257bb4f206e56a16d45507ee98ccad239fe7
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 91%
+source-wordcount: '274'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 91%
 
 ## Neue Funktionen
 
-* **[Adobe Experience Cloud Trigger-Integration](integrations/using/configuring-adobe-io.md)**<br/>aktualisieren Der alte Auth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht. Erfahren Sie, wie Sie zu Adobe-I/O migrieren.
+* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte Auth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht. Erfahren Sie, wie Sie zu Adobe-I/O migrieren.
 
 * **[Umstellung auf HTTP/2-basierte Anbieter-API für APNs](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/>
 Erfahren Sie, wie Sie vom veralteten Binärprotokoll zur HTTP/2-basierten Anbieter-API für APNs migrieren.
@@ -31,7 +31,7 @@ Häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
 * **[Tracking-Funktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/>
 Lernen Sie die Tracking-Funktionen und -Verfahren von Campaign kennen.
 
-[Klicken Sie hier für weitere Updates.](/help/rn/using/documentation-updates.md)
+[Weitere Updates](/help/rn/using/documentation-updates.md)
 
 ## Wichtigste Seiten
 
