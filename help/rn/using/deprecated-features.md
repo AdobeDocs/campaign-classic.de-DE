@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </tr>
   <tr>
   <td>CRM-Connectoren<br></td>
-   <td><p>Ab Kampagne 20.3 werden die folgenden CRM-Connectors nicht mehr unterstützt:</p>
+   <td><p>Ab Campaign-Version 20.3 werden folgende CRM-Connectoren eingestellt:</p>
    <ul>
    <li>Soap-API – On-Premise: 2007, 2015, 2016</li>
    <li>Soap-API – Online: 2015, 2016</li>
@@ -59,25 +59,25 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </td>
  </tr>
   <tr>
-  <td>iOS-Legacy-Binärdatei<br></td>
-  <td><p>Ab Kampagne 20.3 wird der ältere iOS-Binäranschluss nicht mehr unterstützt.<p>
-  <p> Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung entsprechend anpassen.
-  <a href="https://helpx.adobe.com/campaign/kb/migrate-to-http2.html">Mehr dazu</a></p>
+  <td>Veraltete Version von iOS Binary<br></td>
+  <td><p>Ab Campaign-Version 20.3 wird die veraltete Version des iOS Binary Connectors nicht mehr unterstützt.<p>
+  <p> Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen.
+  <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-http2.html">Mehr dazu</a></p>
   <p><em>Geplantes Datum für die Entfernung: 2021.</em></p>
   </td>
  </tr>
    <tr>
-  <td>Demdex-Domäne<br></td>
-  <td><p> Ab Kampagne 20.3 wird die demdex-Domäne, die zum Importieren und Exportieren von Audiencen in das Adobe Experience Cloud verwendet wird, nicht mehr unterstützt.<p>
-  <p>Wenn Sie die demdex-Domäne für Ihre Import/Export-Externe Konti verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Mehr dazu</a></p> 
+  <td>Demdex-Domain<br></td>
+  <td><p> Ab Campaign-Version 20.3 wird die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, nicht mehr unterstützt.<p>
+  <p>Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Mehr dazu</a></p> 
   <p><em>Geplantes Datum für die Entfernung: 2021.</em></p>
   </td>
   <tr>
   <td>OAuth-Authentifizierung (OAuth und JWT)<br></td>
-  <td><p> Ab Kampagne 20.3 wurde die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline basierende Authentifizierung für die Trigger-Integration geändert und in Adobe I/O verschoben. <p>
-  <p>Wenn Sie die Trigger-Integration verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Mehr dazu</a></p> 
-  <p>Weitere Informationen zur Abschreibung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a></p> 
-  <p><em>Zielgruppen-Entfernungsdatum: April 2021</em></p>
+  <td><p> Ab Campaign-Version 20.3 wurde die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, geändert und in Adobe I/O verschoben <p>
+  <p>Wenn Sie die Triggers-Integration nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Mehr dazu</a></p> 
+  <p>Weitere Informationen zur Einstellung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a>.</p> 
+  <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
   </td>
   </tr>
   <td>SMS-Connectoren<br></td>
@@ -117,7 +117,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr> 
    <tr> 
    <td>Windows NT-Authentifizierung<br></td>
-   <td><p>Ab Kampagne 20.3 wurde die Windows NT-Authentifizierung bei der Konfiguration einer neuen Datenbank mit einem Microsoft SQL Server aus den verfügbaren Authentifizierungsmethoden entfernt. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Mehr dazu</a></p></td>
+   <td><p>Ab Campaign-Version 20.3 wurde die Windows NT-Authentifizierung bei der Konfiguration einer neuen Datenbank mit einem Microsoft SQL Server aus den verfügbaren Authentifizierungsmechanismen entfernt. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Mehr dazu</a></p></td>
   </tr>
    <tr> 
    <td>Dateibasierte E-Mail-Archivierung<br></td>
@@ -165,7 +165,7 @@ Die folgenden Systeme werden für Campaign Classic jetzt nicht mehr unterstützt
 
 ### Adobe Campaign-Version 20.2 {#compat-20-2-release}
 
-Ab Version 20.2 werden ältere SMS-Connectors nicht mehr unterstützt. Siehe Abschnitt [Veraltete Funktionen](#deprecated-features)
+Ab Version 20.2 werden alte SMS-Connectoren eingestellt. Weitere Informationen finden Sie im Abschnitt [Eingestellte Funktionen](#deprecated-features).
 
 ## Ende der Kompatibilität {#end-of-compatibility}
 
@@ -188,7 +188,7 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 
 Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen kompatibel.
 
-* CentOS 6 [Weitere Informationen](https://wiki.centos.org/Download)
+* CentOS 6 [Mehr dazu](https://wiki.centos.org/Download)
 * Debian 7. [Mehr dazu](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Mehr dazu](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/1163)
@@ -198,7 +198,7 @@ Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen
 
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden Webserver kompatibel.
 
-* Apache 2.2. [Weitere Informationen](https://httpd.apache.org/)
+* Apache 2.2. [Mehr dazu](https://httpd.apache.org/)
 * Microsoft IIS 7. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/810)
 
 ### Tools {#tools-eol}
@@ -216,7 +216,7 @@ Konsultieren Sie die [Campaign-Kompatibilitätsmatrix](../../rn/using/compatibil
 
 **FEDERATED DATA ACCESS (FDA)**
 
-Ab Version 20.2 ist Adobe Campaign nicht mehr mit der folgenden FDA Server kompatibel:
+Ab Version 20.2 ist Adobe Campaign nicht mehr mit den folgenden FDA-Servern kompatibel:
 
 * DB2 UDB 10.5
 
