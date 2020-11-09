@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: d1069b23-e08d-43c5-bbfb-3158ac40dc7e
 translation-type: tm+mt
-source-git-commit: bdc09e1b6e037e1b21573b8624a947e30f8ad1fc
+source-git-commit: 48176ebb19689855f3ee5e61fa6492be5a682291
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 13%
@@ -77,7 +77,6 @@ Sie können z. B. so viele Verbindungen wie erforderlich hinzufügen, um eine Ve
 >[!NOTE]
 >
 >Die Schaltfläche **[!UICONTROL Hinzufügen]** erlaubt die Erstellung von **[!UICONTROL Ordnern]**, in die Sie Ihre verschiedenen Verbindungen per Drag&amp;Drop verschieben können.
-
 
 ## Bei Adobe Campaign anmelden
 
