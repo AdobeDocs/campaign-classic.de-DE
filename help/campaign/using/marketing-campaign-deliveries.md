@@ -11,9 +11,9 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+workflow-type: tm+mt
 source-wordcount: '3115'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Sendungen können über das Dashboard einer Kampagne, einen Kampagnenworkflow oder direkt über die Übersicht der Sendungen erstellt werden.
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#create-email-video).
+![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#create-email-video).
 
 ## Sendungen erstellen {#creating-deliveries}
 
@@ -82,7 +82,7 @@ Eine detaillierte Beschreibung der Funktionsweise des Workflow-Moduls erhalten S
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign Classic beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 
 #### Erstellen eines Zielgruppen-Workflows {#creating-a-targeting-workflow}
