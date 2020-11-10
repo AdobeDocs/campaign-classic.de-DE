@@ -13,7 +13,7 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 8486213403bf848f1632aff06f3f1528b199f86d
+source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%
@@ -29,9 +29,10 @@ ht-degree: 3%
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
+Diese Integration gilt nur ab Version **20.3** des Campaign Classic.
+
 Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
 
-* eine aktuelle Version von Adobe Campaign (20.2.1 und höher),
 * eine gültige IMSOrgID: der Organisationsbezeichner des Identity Management-Systems (IMS) ist die eindeutige Kennung innerhalb des Adobe Experience Cloud, die beispielsweise für den VisitorID-Dienst und das IMS-Single-Sign-On (SSO) verwendet wird,
 * ein Entwicklerzugriff auf das IMS-Org.
 
