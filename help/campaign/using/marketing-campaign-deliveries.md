@@ -1,8 +1,6 @@
 ---
 title: Sendungen zur Marketing-Kampagne
-seo-title: Sendungen zur Marketing-Kampagne
-description: Sendungen zur Marketing-Kampagne
-seo-description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
+description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 page-status-flag: never-activated
 uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
 translation-type: tm+mt
-source-git-commit: 2abd9f987967484cc93009d8961ed6b152cdc354
+source-git-commit: f6e820bd05b95e57b395407ed1e17c11b17cbf84
 workflow-type: tm+mt
-source-wordcount: '3115'
-ht-degree: 100%
+source-wordcount: '3076'
+ht-degree: 94%
 
 ---
 
@@ -23,6 +21,8 @@ ht-degree: 100%
 # Sendungen zur Marketing-Kampagne {#marketing-campaign-deliveries}
 
 Sendungen können über das Dashboard einer Kampagne, einen Kampagnenworkflow oder direkt über die Übersicht der Sendungen erstellt werden.
+
+Wenn Versand aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Ebene der Kampagne konsolidiert.
 
 ![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#create-email-video).
 
@@ -32,29 +32,21 @@ Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf d
 
 ![](assets/campaign_op_add_delivery.png)
 
-Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle.
-
->[!NOTE]
->
->Weitere Informationen zur Erstellung und Konfiguration von Sendungen finden Sie unter [Nachrichten senden](../../delivery/using/steps-about-delivery-creation-steps.md).
+Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle. [Mehr dazu](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Zielgruppe bestimmen {#selecting-the-target-population}
 
-Der Kampagnenverantwortliche bestimmt für jeden Versand
+Für jeden Versand können Sie Folgendes definieren:
 
-* die Hauptzielgruppe. Weiterführende Informationen finden Sie unter [Erstellen einer Hauptzielgruppe im Workflow](#building-the-main-target-in-a-workflow) und [Zielgruppe bestimmen](#selecting-the-target-population).
-* die Kontrollgruppe. Weiterführende Informationen finden Sie unter [Bestimmen einer Kontrollgruppe](#defining-a-control-group).
-* die Testadressen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
+* Die Audience - Erfahren Sie mehr über das [Erstellen der Audience in einem Workflow](#building-the-main-target-in-a-workflow) und das [Auswählen der Population](#selecting-the-target-population)der Zielgruppe.
+* Eine Kontrollgruppe - Weitere Informationen zum [Definieren einer Kontrollgruppe](#defining-a-control-group).
+* Testadressen - Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
-Einige dieser Parameter werden bereits durch die Kampagnenvorlage festgelegt.
+Some of this information can be inherited from the [template](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
->[!NOTE]
->
->Kampagnenvorlagen werden in [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates) dargestellt.
+Um die Versand-Zielgruppe zu erstellen, können Sie Filterkriterien für die Empfänger in der Datenbank definieren. Dieser Empfänger-Auswahlmodus wird in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md)angezeigt.
 
-Zur Bestimmung einer Versand-Zielgruppe können Sie die in Ihrer Datenbank enthaltenen Empfänger mithilfe von Kriterien filtern. Dieser Auswahlmodus wird im Abschnitt [Nachrichten senden](../../delivery/using/steps-defining-the-target-population.md) beschrieben.
-
-### Beispiel: Versand an eine Gruppe von Empfängern {#example--delivering-to-a-group-of-recipients}
+**Beispiel: Nachrichten an eine Gruppe senden**
 
 Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und diese Liste als Zielgruppe eines Versands zu verwenden.
 
@@ -68,24 +60,15 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 
 ![](assets/s_user_target_group_next.png)
 
-### Erstellen einer Hauptzielgruppe im Workflow {#building-the-main-target-in-a-workflow}
+### Erstellen der Audience in einem Workflow {#building-the-main-target-in-a-workflow}
 
-Die Hauptzielgruppe eines Versands kann auch über einen Zielgruppen-Workflow bestimmt werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Aktivitäten wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
-
-Eine detaillierte Beschreibung der Funktionsweise des Workflow-Moduls erhalten Sie im Handbuch [Automatisierung mithilfe von Workflows](../../workflow/using/architecture.md).
+Die Hauptzielgruppe eines Versands kann auch über einen Zielgruppen-Workflow bestimmt werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Aktivitäten wie Vereinigungen, Deduplizierungen, Aufspaltungen usw. [Mehr dazu](../../workflow/using/architecture.md).
 
 >[!IMPORTANT]
 >
->Für dieselbe Kampagne können maximal 28 Workflows eingerichtet werden. Zusätzliche Workflows sind in der Benutzeroberfläche nicht sichtbar und können Fehler verursachen.
+>Sie können nicht mehr als 28 Workflows in einer Kampagne erstellen. Vor diesem Grenzwert sind zusätzliche Workflows in der Benutzeroberfläche nicht mehr sichtbar und können Fehler hervorrufen.
 
-### Erstellen einer E-Mail in einer Kampagne {#create-email-video}
-
-In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign Classic beschrieben.
-
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
-
-
-#### Erstellen eines Zielgruppen-Workflows {#creating-a-targeting-workflow}
+#### Workflow erstellen {#creating-a-targeting-workflow}
 
 Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]** der entsprechenden Kampagne.
 
@@ -275,7 +258,7 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. D
 
 ## Starten eines Versands {#starting-a-delivery}
 
-Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der Versandvorgang hängt dann von der Art des Versands ab. Informationen zu E-Mail- oder Mobile-Kanal-Versand finden Sie unter [Starten eines Online-Versands](#starting-an-online-delivery) und zu Briefpost-Versand unter [Starten eines Offline-Versands](#starting-an-offline-delivery).
+Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der Versandvorgang hängt dann von der Art des Versands ab. For email or mobile channel deliveries, see [Starting an online delivery](#starting-an-online-delivery), and for direct mail deliveries, see [Starting an offline delivery](#starting-an-offline-delivery).
 
 ### Starten eines Online-Versands {#starting-an-online-delivery}
 
@@ -476,3 +459,9 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 >[!NOTE]
 >
 >Weitere Informationen zu Exporten finden Sie im Abschnitt [Erste Schritte](../../platform/using/generic-imports-and-exports.md).
+
+#### Erstellen einer E-Mail in einer Kampagne {#create-email-video}
+
+In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign Classic beschrieben.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
