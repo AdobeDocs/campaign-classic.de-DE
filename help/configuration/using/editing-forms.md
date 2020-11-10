@@ -12,7 +12,7 @@ content-type: reference
 topic-tags: input-forms
 discoiquuid: 0c33fd79-8fa5-4cc0-8881-c6d6f4ee1648
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 40%
@@ -22,7 +22,7 @@ ht-degree: 40%
 
 # Formulare bearbeiten{#editing-forms}
 
-Auf den Bildschirm zum Erstellen und Konfigurieren des Eingabefelds können Sie über den Ordner **[!UICONTROL Administration > Konfiguration > Eingabeformulare]** der Adobe Campaign-Client-Konsole zugreifen:
+Auf den Anzeigebereich &quot;Formularerstellung und -konfiguration&quot;können Sie über den Ordner &quot; **[!UICONTROL Administration] &quot;> &quot; [!UICONTROL Konfiguration] &quot;> &quot; [!UICONTROL Eingabeformulare]** &quot;in der Client-Konsole des Adobe Campaigns zugreifen:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
