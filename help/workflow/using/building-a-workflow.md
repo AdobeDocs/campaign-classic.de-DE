@@ -1,8 +1,6 @@
 ---
 title: Workflow erstellen
-seo-title: Workflow erstellen
-description: Workflow erstellen
-seo-description: null
+description: Erfahren Sie, wie Sie einen Workflow erstellen
 page-status-flag: never-activated
 uuid: 55743545-dd4b-4a0a-aeff-8fd638812b9d
 contentOwner: sauviat
@@ -11,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 discoiquuid: 2d4ccf81-cd85-4f4c-8ba8-5b5612af1e16
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '1686'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +26,7 @@ In diesem Abschnitt werden die wichtigsten Grundsätze und Best Practices für d
 * Das Workflow-Diagramm entwerfen, siehe [Aktivitäten hinzufügen und verbinden](#adding-and-linking-activities).
 * Auf Parameter und Eigenschaften von Aktivitäten zugreifen, siehe [Aktivitäten konfigurieren](#configuring-activities).
 * Targeting-Workflows erstellen, siehe [Zielgruppen-Workflows](#targeting-workflows).
-* Mit einem Workflow eine Kampagne ausführen, siehe [Kampagnen-Workflows](#campaign-workflows).
+* Use workflows to execute a campaign, see [Campaign workflows](#campaign-workflows)
 * Technische Workflows aufrufen und anlegen, siehe [Technische Workflows](#technical-workflows).
 * Workflows mit Vorlagen erstellen, siehe [Workflow-Vorlagen](#workflow-templates).
 
@@ -145,13 +143,13 @@ Der Zugriff auf Zielgruppen-Workflows erfolgt im Navigationsbaum über den Knote
 
 Im Gegensatz dazu werden die im Rahmen einer Kampagne erstellten Zielgruppen-Workflows zusammen mit den anderen Kampagnen-Workflows gespeichert.
 
-### Umsetzung {#implementation-steps-}
+### Wichtige Schritte zum Erstellen eines Targeting-Workflows {#implementation-steps-}
 
-Die Konzeption von Zielgruppen geschieht in drei Schritten:
+Die Schritte zum Erstellen eines Targeting-Arbeitsablaufs sind in den folgenden Abschnitten beschrieben:
 
-1. Auswahl der gewünschten Datensätze aus der Datenbank, siehe [Abfragen erstellen](../../workflow/using/targeting-data.md#creating-queries).
-1. Informationen zum Vorbereiten der Daten auf die Versandanforderungen finden Sie unter [Daten anreichern und ändern](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
-1. Verwendung der Daten für Aktualisierungen, Versandaktionen usw., siehe [Datenbank aktualisieren ](../../workflow/using/how-to-use-workflow-data.md#updating-the-database).
+1. **Identifizieren** von Daten in der Datenbank - Siehe [Erstellen von Abfragen](../../workflow/using/targeting-data.md#creating-queries)
+1. **Vorbereiten** von Daten zur Erfüllung von Anforderungen des Versands - Siehe [Anreichern und Ändern von Daten](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **Verwenden** von Daten zum Durchführen von Aktualisierungen oder in einem Versand - Siehe [Aktualisieren der Datenbank](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -179,15 +177,15 @@ Sie können für jede Kampagne Workflows erstellen, die über den Tab **[!UICONT
 
 ![](assets/wf-in-op-edit-delivery-tab.png)
 
-Dieser Tab enthält dieselben Aktivitäten für alle Workflows. Sie werden im Abschnitt [Umsetzung](#implementation-steps-) vorgestellt.
+Dieser Tab enthält dieselben Aktivitäten für alle Workflows. [Mehr dazu](#implementation-steps-)
 
-Neben der Zielgruppenbestimmung ermöglichen Kampagnen-Workflows die Erstellung und Konfiguration aller Sendungen einer Kampagne, unabhängig vom gewählten Kanal. Diese Sendungen sind nach ihrer Erstellung über das Dashboard der Kampagne verfügbar.
+Neben der Zielgruppenbestimmung ermöglichen Kampagnen-Workflows die Erstellung und Konfiguration aller Sendungen einer Kampagne, unabhängig vom gewählten Kanal. Diese Sendungen sind nach ihrer Erstellung über das Dashboard der Kampagne verfügbar. [Mehr dazu](../../campaign/using/marketing-campaign-deliveries.md)
 
 Alle Kampagnen-Workflows werden zentral im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Kampagnen-Workflows]** gespeichert.
 
 ![](assets/campaigns_wf.png)
 
-Weitere Informationen zu Kampagnen-Workflows und entsprechende Anwendungsbeispiele finden Sie auf dieser [Seite](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+Campaign workflows and implementation examples are detailed in [this page](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Technische Workflows {#technical-workflows}
 
@@ -205,7 +203,7 @@ Der Unterordner **[!UICONTROL Kampagnenprozesse]** enthält die für die Ausfüh
 
 Sie haben die Möglichkeit, im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** weitere technische Workflows zu erstellen. Dies sollte jedoch erfahrenen Benutzern vorbehalten bleiben.
 
-Die angebotenen Aktivitäten entsprechen denen für Zielgruppen-Workflows. Weitere Informationen hierzu finden Sie unter [Umsetzung](#implementation-steps-).
+Die angebotenen Aktivitäten entsprechen denen für Zielgruppen-Workflows. [Mehr dazu](#implementation-steps-)
 
 ## Workflow-Vorlagen {#workflow-templates}
 
