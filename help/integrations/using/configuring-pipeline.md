@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
 translation-type: tm+mt
-source-git-commit: 4f949d8db3aa3082acf1765bf66080b270cc6db4
+source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '918'
 ht-degree: 20%
 
 ---
@@ -30,9 +30,9 @@ Die Auslöser werden für das Targeting eines Kampagnen-Workflows verwendet, der
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie diese Konfiguration starten, überprüfen Sie bitte, ob Sie:
+Bevor Sie diese Konfiguration starten, überprüfen Sie, ob Sie Folgendes verwenden:
 
-* eine aktuelle Version von Adobe Campaign (20.2.1 und höher),
+* Adobe Campaign 20.3 - Mindestversion
 * Adobe Analytics Standard-Version
 
 Sie benötigen außerdem:
