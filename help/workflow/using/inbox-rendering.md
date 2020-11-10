@@ -1,6 +1,6 @@
 ---
-title: Technischer Workflow von Inbox Rendering in Adobe Campaign Classic
-description: In diesem Abschnitt wird der technische Workflow beschrieben, der mit dem Inbox Rendering-Paket in Adobe Campaign Classic installiert wird.
+title: Technischer Arbeitsablauf für die Inbox-Wiedergabe
+description: In diesem Abschnitt wird der technische Arbeitsablauf beschrieben, der mit dem Inbox-Renderingpaket installiert wurde.
 page-status-flag: never-activated
 uuid: f60a09f0-47a0-4fc0-b0ac-47178af6ad55
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 discoiquuid: da0779dc-b734-483b-81e9-ff4706a2b6de
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '81'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 78%
 
 ---
 
