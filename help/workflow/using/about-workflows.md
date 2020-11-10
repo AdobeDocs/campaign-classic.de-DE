@@ -9,10 +9,10 @@ audience: workflow
 content-type: reference
 topic-tags: introduction
 discoiquuid: 868940d1-f19d-4e9a-bffa-8654abb4441c
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '673'
+translation-type: tm+mt
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+workflow-type: tm+mt
+source-wordcount: '655'
 ht-degree: 100%
 
 ---
@@ -32,9 +32,9 @@ In Adobe Campaign kommen Workflows in unterschiedlichsten Kontexten und zu versc
 
 Beispielhaft seien folgende Vorgänge genannt:
 
-* Durchführen einer Zielgruppenbestimmung. Weitere Informationen hierzu finden Sie unter [Umsetzung](../../workflow/using/building-a-workflow.md#implementation-steps-).
-* Erstellen von Kampagnen: Auf dem Tab **[!UICONTROL Workflow]** können Sie die Zielgruppe und die Sendungen erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnen-Workflows](../../workflow/using/building-a-workflow.md#campaign-workflows).
-* Durchführen von technischen Prozessen: Bereinigung, Erfassung von Tracking-Informationen oder vorläufige Berechnungen. Weitere Informationen hierzu finden Sie im Abschnitt [Technische Workflows](../../workflow/using/building-a-workflow.md#technical-workflows).
+* Durchführen einer Zielgruppenbestimmung. [Mehr dazu](../../workflow/using/building-a-workflow.md#implementation-steps-)
+* Erstellen von Kampagnen: Auf dem Tab **[!UICONTROL Workflow]** können Sie die Zielgruppe und die Sendungen erstellen. [Mehr dazu](../../workflow/using/building-a-workflow.md#campaign-workflows)
+* Durchführen von technischen Prozessen: Bereinigung, Erfassung von Tracking-Informationen oder vorläufige Berechnungen. [Mehr dazu](../../workflow/using/building-a-workflow.md#technical-workflows)
 
 Der Begriff Workflow bezeichnet einerseits einen Prozess (Workflow-Vorlage: Darstellung eines theoretischen Ablaufs) und andererseits eine Instanz dieses Prozesses (Workflow-Instanz: Darstellung des tatsächlichen Ablaufs).
 
