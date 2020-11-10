@@ -1,8 +1,6 @@
 ---
 title: Wiederkehrender Versand
-seo-title: Wiederkehrender Versand
-description: Wiederkehrender Versand
-seo-description: null
+description: Weitere Informationen zur Aktivität des Arbeitsablaufs für wiederkehrende Versand
 page-status-flag: never-activated
 uuid: 715855df-fe29-46e8-a7ab-d534f010a26e
 contentOwner: sauviat
@@ -11,11 +9,11 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 discoiquuid: 185d3256-a21e-47d7-bee7-7b91762ca1e2
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6be6c353c3464839a74ba857d8d93d0f68bc8865
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 96%
 
 ---
 
@@ -46,7 +44,7 @@ Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versand
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 >[!NOTE]
 >
