@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 56cbf48a-eb32-4617-8f80-efbfd05976ea
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2896'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 >
 >Dieser Abschnitt gilt für Online-Kanäle: E-Mail, SMS, Push-Benachrichtigungen.
 
-### Zustellbarkeit durch Quarantänen optimieren     {#optimizing-your-delivery-through-quarantines}
+### Zustellbarkeit durch Quarantänen optimieren {#optimizing-your-delivery-through-quarantines}
 
 Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
@@ -50,15 +50,15 @@ Die Aufnahme in die **Blockierungsliste** führt dagegen dazu, dass das Profil v
 >
 >Wenn ein Benutzer auf eine SMS-Nachricht mit einem Schlüsselwort wie &quot;STOPP&quot; antwortet, um sich vom SMS-Versand abzumelden, wird sein Profil nicht wie bei einem E-Mail-Abmeldevorgang auf die Blockierungsliste gesetzt. Die Telefonnummer des Profils wird unter Quarantäne gestellt, sodass der Benutzer weiterhin E-Mail-Nachrichten erhält.
 
-## In Quarantäne befindliche Adressen identifizieren     {#identifying-quarantined-addresses}
+## In Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses}
 
 Die in Quarantäne befindlichen Adressen können für einen bestimmten Versand oder für die gesamte Plattform angezeigt werden.
 
-### Für einen Versand in Quarantäne befindliche Adressen identifizieren     {#identifying-quarantined-addresses-for-a-delivery}
+### Für einen Versand in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-a-delivery}
 
 Die für einen bestimmten Versand in Quarantäne befindlichen Adressen werden während der Versandvorbereitung in den Versandlogs des Versand-Dashboards angezeigt (siehe [Protokolle und Versandverlauf](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history)).
 
-### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren     {#identifying-quarantined-addresses-for-the-entire-platform}
+### Für die gesamte Plattform in Quarantäne befindliche Adressen identifizieren {#identifying-quarantined-addresses-for-the-entire-platform}
 
 Administratoren können die für die gesamte Plattform in Quarantäne befindlichen Adressen im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Adressen unzustellbarer Sendungen]** anzeigen.
 
@@ -122,7 +122,7 @@ Empfänger mit einer Adresse in **[!UICONTROL Quarantäne]** oder dem Status **[
 
 Sie können die Anzahl der Fehler und den Zeitraum zwischen zwei Fehlern ändern. Ändern Sie dazu die entsprechenden Einstellungen im Softwareverteilungs-Assistenten (**[!UICONTROL E-Mail-Kanal]** > **[!UICONTROL Erweiterte Parameter]**). Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md).
 
-## Ursachen für Quarantänen     {#conditions-for-sending-an-address-to-quarantine}
+## Ursachen für Quarantänen {#conditions-for-sending-an-address-to-quarantine}
 
 Adobe Campaign verwaltet die Quarantäne je nach dem Typ des Versandfehlers und dem Grund, der bei der Qualifizierung von Fehlermeldungen (siehe [Bounce-Message-Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification) und [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)) zugewiesen wurde.
 
@@ -157,22 +157,22 @@ Bei den unter Quarantäne gestellten Objekten handelt es sich um Device Token.
 **Für iOS - binäre Connectoren**
 
 >[!NOTE]
-Ab Kampagne 20.3 wird der ältere iOS-Binäranschluss nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Mehr dazu](https://helpx.adobe.com/campaign/kb/migrate-to-http2.html)
+Die frühere Version des binären iOS-Connectors wird ab der Campaign-Version 20.3 nicht mehr unterstützt. Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-http2.html)
 
-Für jede Benachrichtigung empfängt Adobe Campaign die synchronen und asynchronen Fehler vom APNs-Server. Bei den folgenden Synchronfehlern erzeugt Adobe Campaign Softfehler:
+Für jede Benachrichtigung empfängt Adobe Campaign die synchronen und asynchronen Fehler vom APNS-Server. Bei den folgenden synchronen Fehlern erzeugt Adobe Campaign Softbounces:
 
 * Fehler durch Nutzdatenlänge: kein Neuversuch, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 * Fehler durch Ablauf des Zertifikats: kein Neuversuch, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 * Verbindungsabbruch während der Zustellung: Neuversuch wird unternommen, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 * Fehler bei der Konfiguration des Dienstes (ungültiges Zertifikat, ungültiges Passwort für Zertifikat, kein Zertifikat): kein Neuversuch, der Grund für den Fehler ist **[!UICONTROL Unerreichbar]**.
 
-The APNs server asynchronously notifies Adobe Campaign that a device token has been unregistered (when the mobile application has been uninstalled by the user). The **[!UICONTROL mobileAppOptOutMgt]** workflow runs every 6 hours to contact the APNs feedback services to update the **AppSubscriptionRcp** table. For all the deactivated tokens, the field **Disabled** is set to **True** and the subscription linked to that device token will be automatically excluded from future deliveries.
+Der APNS-Server benachrichtigt Adobe Campaign asynchron darüber, dass ein Device-Token abgemeldet wurde (wenn die Mobile App durch den Empfänger deinstalliert wurde). Der **[!UICONTROL mobileAppOptOutMgt]**-Workflow wird alle sechs Stunden durchgeführt. Dabei werden die APNS-Feedback-Services aufgefordert, die Tabelle **AppSubscriptionRcp** zu aktualisieren. Für jedes deaktivierte Token wird das Feld **Deaktiviert** auf **Wahr** gesetzt, und das mit diesem Device-Token verknüpfte Abonnement wird automatisch von künftigen Sendungen ausgeschlossen.
 
-**Für iOS - HTTP/V2-Anschluss**
+**Für iOS – HTTP/V2-Connector**
 
-Das HTTP/V2-Protokoll ermöglicht ein direktes Feedback und Status für jeden Push-Versand. Wenn der HTTP/V2-Protokollanschluss verwendet wird, wird der Feedback-Dienst nicht mehr vom **[!UICONTROL Arbeitsablauf mobileAppOptOutMgt]** aufgerufen. Die nicht registrierten Token werden zwischen dem binären iOS-Connector und dem iOS-HTTP/V2-Connector unterschiedlich verarbeitet. Ein Token gilt als nicht registriert, wenn eine Mobilanwendung deinstalliert oder neu installiert wird.
+Das HTTP/V2-Protokoll ermöglicht für jeden Push-Versand ein direktes Feedback zu dessen Status. Bei Verwendung des Connectors für das HTTP/V2-Protokoll wird der Feedback-Dienst des Workflows **[!UICONTROL mobileAppOptOutMgt]** nicht mehr aufgerufen. Die abgemeldeten Token werden beim binären iOS-Connector nicht in gleicher Weise verarbeitet wie beim iOS-HTTP/V2-Connector. Ein Token gilt als abgemeldet, wenn eine Mobile App deinstalliert oder neu installiert wird.
 
-Wenn die APNs für eine Nachricht den Status &quot;nicht registriert&quot;zurückgeben, wird das Zielgruppen-Token sofort in Quarantäne gesetzt.
+Wenn der APNS für eine Nachricht den Status &quot;abgemeldet&quot; zurückgibt, wird der Ziel-Token direkt unter Quarantäne gestellt.
 
 <table> 
  <tbody> 
@@ -225,7 +225,7 @@ Wenn die APNs für eine Nachricht den Status &quot;nicht registriert&quot;zurüc
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> Certificate issue (password, corruption, etc.) and test connection to APNs issue<br /> </td> 
+   <td> Problem mit Zertifikat (Passwort, Beschädigung etc.) und Fehler bei Testverbindung mit APNS<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Verschiedene Fehlernachrichten je nach Fehler<br /> </td> 
    <td> Soft<br /> </td> 
@@ -241,7 +241,7 @@ Wenn die APNs für eine Nachricht den Status &quot;nicht registriert&quot;zurüc
    <td> Ja<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNs message rejection: Unregistration<br /> the user has removed the application or the token has expired<br /> </td> 
+   <td> Zurückweisung von APNS-Nachricht: Abmeldung<br /> Benutzer hat die Mobile App entfernt oder das Token ist abgelaufen<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Abgemeldet<br /> </td> 
    <td> Hard<br /> </td> 
@@ -249,7 +249,7 @@ Wenn die APNs für eine Nachricht den Status &quot;nicht registriert&quot;zurüc
    <td> Nein<br /> </td> 
   </tr> 
   <tr> 
-   <td> APNs message rejection: all other errors<br /> </td> 
+   <td> Zurückweisung von APNS-Nachricht: alle anderen Fehler<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> Der Grund für Zurückweisung wird in der Fehlernachricht angegeben<br /> </td> 
    <td> Soft<br /> </td> 
@@ -360,7 +360,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
    <td> Nein<br /> </td> 
   </tr> 
     <tr> 
-   <td> Abweisung der FCM-Nachricht: Ungültiges Argument<br /> </td> 
+   <td> Zurückweisung von FCM-Nachricht: ungültiges Argument<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> INVALID_ARGUMENT </td> 
    <td> Ignoriert</td> 
@@ -368,7 +368,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Abweisung der FCM-Nachricht: Authentifizierungsfehler von Drittanbietern<br /> </td> 
+   <td> Zurückweisung von FCM-Nachricht: Authentifizierungsfehler bei Drittanbieter<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> THIRD_PARTY_AUTH_ERROR </td> 
    <td> Ignoriert</td>
@@ -376,7 +376,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Abweisung der FCM-Nachricht: Absender-ID stimmt nicht überein<br /> </td> 
+   <td> Zurückweisung von FCM-Nachricht: Sender ID stimmt nicht überein<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> SENDER_ID_MISMATCH </td> 
    <td> Soft</td>
@@ -384,33 +384,33 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Abweisung der FCM-Nachricht: Nicht registriert<br /> </td> 
+   <td> Zurückweisung von FCM-Nachricht: abgemeldet<br /> </td> 
    <td> Fehlgeschlagen<br /> </td>
-   <td> UNREGISTRIERT </td> 
+   <td> UNREGISTERED </td> 
    <td> Hard</td> 
    <td> Unbekannter Nutzer<br /> </td> 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Abweisung der FCM-Nachricht: intern<br /> </td> 
+   <td> Zurückweisung von FCM-Nachricht: intern<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> INTERNE </td> 
+   <td> INTERNAL </td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Abweisung der FCM-Nachricht: Nicht verfügbar<br /> </td> 
+   <td> Zurückweisung von FCM-Nachricht: nicht verfügbar<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> NICHT VERFÜGBAR</td> 
+   <td> UNAVAILABLE</td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Abweisung der FCM-Nachricht: unerwarteter Fehlercode<br /> </td> 
+   <td> Zurückweisung von FCM-Nachricht: unerwarteter Fehlercode<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> unerwarteter Fehlercode</td> 
+   <td> Unerwarteter Fehlercode</td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
@@ -418,13 +418,13 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
   <tr> 
    <td> Authentifizierung: Verbindungsproblem<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Verbindung zum Authentifizierungsserver nicht möglich </td> 
+   <td> Verbindung zum Authentifizierungs-Server nicht möglich </td> 
    <td> Ignoriert</td>
    <td> Zurückgewiesen<br /> </td> 
    <td> Ja<br /> </td> 
   </tr>
     <tr> 
-   <td> Authentifizierung: Nicht autorisierter Client oder Umfang in Anfrage.<br /> </td> 
+   <td> Authentifizierung: Nicht autorisierter Client oder Perimeter in Anfrage.<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> unauthorized_client </td> 
    <td> Ignoriert</td>
@@ -432,7 +432,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Authentifizierung: Der Client ist nicht berechtigt, Zugriffstoken mit dieser Methode abzurufen, oder der Client ist für keinen der angeforderten Bereiche autorisiert.<br /> </td> 
+   <td> Authentifizierung: Der Client ist nicht berechtigt, Zugriffs-Token mit dieser Methode abzurufen, oder der Client ist für keinen der angeforderten Perimeter autorisiert.<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> unauthorized_client </td> 
    <td> Ignoriert</td>
@@ -442,37 +442,37 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
     <tr> 
    <td> Authentifizierung: Zugriff verweigert<br /> </td> 
    <td> Fehlgeschlagen<br /> </td>
-   <td> access_verweigert</td> 
+   <td> access_denied</td> 
    <td> Ignoriert</td>
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Authentifizierung: Nicht gültige E-Mail<br /> </td> 
+   <td> Authentifizierung: ungültige E-Mail-Adresse<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Invalid_grant </td> 
+   <td> invalid_grant </td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Authentifizierung: Ungültige JWT<br /> </td> 
+   <td> Authentifizierung: ungültiger JWT<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Invalid_grant </td> 
+   <td> invalid_grant </td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Authentifizierung: Ungültige JWT-Signatur<br /> </td> 
+   <td> Authentifizierung: ungültige JWT-Signatur<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Invalid_grant </td> 
+   <td> invalid_grant </td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
   </tr>
     <tr> 
-   <td> Authentifizierung: Ungültige OAuth-Scope- oder ID-Token-Audience angegeben<br /> </td> 
+   <td> Authentifizierung: ungültiger OAuth-Perimeter oder ungültige ID-Token-Zielgruppe angegeben<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
    <td> unauthorized_client</td> 
    <td> Ignoriert</td> 
