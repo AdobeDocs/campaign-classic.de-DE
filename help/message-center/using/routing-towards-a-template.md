@@ -11,11 +11,11 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 discoiquuid: 8fa464e6-3c88-441c-8179-0c54960469a7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '125'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -34,6 +34,6 @@ Bestimmung des Ereignistyps in den Vorlageneigenschaften:
 
 Standardmäßig basiert die Weiterleitung auf folgenden Informationen:
 
-* Der Ereignistyp
-* Der zu verwendende Kanal (standardmäßig: email)
-* Die neueste Versandvorlage, basierend auf dem Veröffentlichungsdatum
+* dem Ereignistyp
+* dem verwendeten Kanal (standardmäßig: E-Mail)
+* der auf dem Publikationsdatum basierenden letzten Versandvorlage
