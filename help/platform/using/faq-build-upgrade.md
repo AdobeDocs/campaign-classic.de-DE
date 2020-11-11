@@ -1,6 +1,6 @@
 ---
-title: Häufig gestellte Fragen zur Aktualisierung
-description: Häufige Fragen im Zusammenhang mit Kampagnen-Build-Upgrades
+title: Häufig gestellte Fragen zum Build-Upgrade
+description: Häufige Fragen im Zusammenhang mit Campaign-Build-Upgrades
 page-status-flag: never-activated
 uuid: 3f719ac2-cc26-4fb0-adda-84666c8c38e1
 contentOwner: sauviat
@@ -9,204 +9,204 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2023'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 
-# Häufig gestellte Fragen zur Aktualisierung erstellen {#build-upgrade-faq}
+# Häufig gestellte Fragen zum Build-Upgrade{#build-upgrade-faq}
 
-Adobe Campaign wird regelmäßig aktualisiert. If you are familiar with our published [Release Notes](../../rn/using/rn-overview.md), you are probably aware of the fact that on the average 2/3 minor versions packed with new features, improvements and fixes are released every year. Darüber hinaus veröffentlichen wir regelmäßig Builds nur mit kumulativen Fehlerbehebungen. Diese regelmäßige Aktualisierung zielt darauf ab, das Beste und Beste in Ihren Händen zu halten, Ihre Umgebung vollkommen sicher zu halten und Ihre Erfahrung mit unserem Produkt zu verbessern.
+Adobe Campaign wird regelmäßig aktualisiert. Wenn Sie unsere veröffentlichten [Versionshinweise](../../rn/using/rn-overview.md) kennen, wissen Sie wahrscheinlich, dass jedes Jahr im Schnitt zwei bis drei kleinere Versionen mit neuen Funktionen, Verbesserungen und Korrekturen herausgebracht werden. Zusätzlich veröffentlichen wir regelmäßig Builds, die ausschließlich Fehlerkorrekturen enthalten. Durch diese regelmäßige Bereitstellung von Updates soll sichergestellt werden, dass Sie stets die beste und neueste Version nutzen, sodass Ihre Umgebung sicher ist und Ihre Zufriedenheit bei der Nutzung unserer Produkte laufend steigt.
 
-Es ist äußerst wichtig, dass unsere Kunden die neueste Version von Adobe Campaign ausführen. Es ermöglicht auch Adobe, bei Problemen viel effizienter zu helfen - die Identifizierung, Reproduktion und Behebung eines Problems in einem alten Build dauert normalerweise länger, ganz zu schweigen davon, dass einige Probleme, die Sie möglicherweise bereits in einem kürzlich erstellten Build hatten, sehr wohl behoben wurden.
+Deshalb erachten wir es als entscheidend, dass unsere Kunden stets die neueste Version von Adobe Campaign verwenden. Dadurch sind wir beim Auftreten von Problemen in der Lage, Ihnen effizient zu helfen. Denn es ist normalerweise zeitaufwändiger, einen Fehler in einem alten Build zu identifizieren, zu reproduzieren und zu beheben. Außerdem besteht die Möglichkeit, dass dieser Fehler im aktuellen Build bereits behoben wurde.
 
-Deshalb haben wir mit dem [Gold Standard](https://helpx.adobe.com/de/campaign/kb/gold-standard.html) Programm begonnen, mit unseren Kunden zusammenzuarbeiten, um ihre Umgebung proaktiv und regelmäßig zu aktualisieren.
+Aus diesem Grund haben wir das [Gold Standard](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)-Programm ins Leben gerufen, durch das wir gemeinsam mit unseren Kunden deren Arbeitsumgebungen proaktiv und regelmäßig aktualisieren können. 
 
 ## Was ist ein Build-Upgrade?
 
-Bei einem Build-Upgrade wird die Adobe Campaign Classic-Software auf die neueste sichere Buildnummer aktualisiert, bleibt jedoch im gleichen Hauptaufbau/Nebenaufbau-Level. Beispiel: Campaign Classic v7 Build 9026 auf Campaign v7 Build 9032.
+Bei einem Build-Upgrade wird die Adobe Campaign Classic-Software auf die aktuelle, sichere Build-Nummer aktualisiert, wobei die Versionsnummer unverändert bleibt. Beispiel: Campaign Classic v7 Build 9026 auf Campaign v7 Build 9032.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../rn/using/rn-overview.md).
+Weitere Informationen finden Sie in [diesem Abschnitt](../../rn/using/rn-overview.md).
 
-## Was ist die neueste Version von Adobe Campaign Classic?
+## Was ist die aktuelle Version von Adobe Campaign Classic?
 
-Die neueste Campaign Classic-Version, einschließlich neuer Funktionen und Dokumentation, ist in den neuesten [Versionshinweisen](../../rn/using/latest-release.md)ausführlich beschrieben.
+Die aktuelle Version von Campaign Classic, einschließlich neuer Funktionen und der Dokumentation, wird in den [Versionshinweisen](../../rn/using/latest-release.md) näher beschrieben.
 
-## Woher weiß ich, welche Version ich verwende?
+## Wie finde ich heraus, welche Version ich verwende?
 
-Überprüfen Sie Ihre Version unter **[!UICONTROL Hilfe > Info...]** in der Adobe Campaign Client-Konsole. Das Feld **[!UICONTROL Info]** enthält detaillierte Informationen zur Version und zum Build, die Sie sowohl für die Konsole als auch für den Server ausführen.
+Rufen Sie in der Client-Konsole von Adobe Campaign **[!UICONTROL Hilfe > Versionsinformationen...]** auf. Das Feld **[!UICONTROL Versionsinformationen]** enthält Details zur Version und zum Build der Client-Konsole und des Servers.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
+Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version).
 
 ## Was bedeutet der Build-Status?
 
 Ab Campaign Classic 19.2 wird jedem Build ein Status zugeordnet.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../rn/using/rn-overview.md).
+Weitere Informationen finden Sie in [diesem Abschnitt](../../rn/using/rn-overview.md).
 
-## Entspricht ein Build-Upgrade dem Upgrade einer Version?
+## Ist ein Upgrade des Builds dasselbe wie das Upgrade einer Version?
 
-Nein. Ein Build-Upgrade ist eine inkrementelle Aktualisierung innerhalb einer gegebenen Hauptversion, während ein Versionsupgrade eine Änderung von einer Hauptversion zu einer anderen darstellt. Build-Upgrades sind einfach, da sie in der Regel keine größeren Änderungen an Architekturen, technischen oder Datenmodellen beinhalten.
+Nein. Ein Build-Upgrade ist eine schrittweise Aktualisierung innerhalb einer Version. Ein Upgrade einer Version ist hingegen der Wechsel von einer Version zu einer anderen. Build-Upgrades sind unkompliziert, da sie normalerweise keine Änderungen an der Architektur, den technischen Gegebenheiten oder dem Datenmodell erfordern.
 
-Versionsaktualisierungen werden dagegen in der Regel mit erheblichen technischen Änderungen verbunden und erfordern je nach der Konfigurationstiefe für einen bestimmten Kunden möglicherweise erhebliche Konfigurationsänderungen und/oder eine teilweise Neuimplementierung.
+Upgrades von Versionen dagegen bedeuten normalerweise erhebliche technische Änderungen. Je nach Konfigurationsumfang erfordern sie unter Umständen umfassende Änderungen an der Konfiguration und/oder die teilweise erneute Implementierung.
 
-Verwenden Sie zum Beispiel die Serverinformationen aus dem Screenshot im vorherigen Abschnitt:
+Bezogen auf die Serverinformationen im Screenshot aus dem vorherigen Abschnitt würde dies Folgendes bedeuten:
 
-* Ein Build-Upgrade würde den Übergang von Build 6880 zu jedem Build größer als 6880 beinhalten. Beispiel: Version 6.1.1 Build 8222 bis Version 6.1.1 Build 8666
+* Ein Build-Upgrade würde bedeuten, dass Sie von Build 6880 zu einem Build höher als 6880 wechseln. Beispiel: von v6.1.1 Build 8222 zu v6.1.1 Build 8666.
 
-* Bei einem Upgrade der Version würde von Version 6.0.2 auf eine Version über 6.0.2 umgestellt.  Beispiel: v6.0.1 Build 2222 bis v6.1.1 Build 8666
+* Durch das Upgrade der Version würden Sie von Version 6.0.2 zu einer Version höher als 6.0.2 wechseln. Beispiel: von v6.0.1 Build 2222 zu v6.1.1 Build 8666
 
 ## Sollte ich meine Daten vor diesen Aktualisierungen sichern?
 
-Adobe wird vor jeder Änderung eine Systemsicherung durchführen. Wenn Ihr Nicht-Produktionssystem (Entwicklungs- oder Staging-Server) jedoch eine wichtige Anpassungsarbeit leistet, EMPFIEHLT ES SICH, dass Sie diese Arbeit vor jeder Aktualisierung als Paket exportieren.
+Adobe erstellt vor etwaigen Änderungen ein Backup Ihres Systems. Wenn sich jedoch wichtige Projekte außerhalb Ihres Produktionssystems befinden (Entwicklungs- oder Staging-Server), wird DRINGEND EMPFOHLEN, diese vor dem Upgrade als Package zu exportieren.
 
-Weitere Informationen finden Sie [in diesem Video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+In diesem [Anleitungsvideo](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html) erhalten Sie weitere Informationen.
 
-## Wann werden die Upgrades durchgeführt?
+## Wann werden die Upgrades vorgenommen?
 
-Den Kunden wird ein Datumsbereich zur Auswahl angeboten. Änderungen am Produktionssystem werden nicht an Feiertagen durchgeführt.
+Kunden wird ein Zeitraum angeboten, innerhalb dessen sie einen Termin auswählen können. Änderungen am Produktionssystem werden nur an Werktagen vorgenommen.
 
-Build-Upgrades können von Montag bis Donnerstag durchgeführt werden, und Freitage werden nur für Nicht-Produktionsinstanzen verwendet.
+Build-Upgrades können von Montag bis Donnerstag durchgeführt werden. Freitags werden ausschließlich Nicht-Produktionsinstanzen aktualisiert. 
 
-## Wie lange dauert die Build-Aktualisierung?
+## Wie lange dauert das Build-Upgrade?
 
-Die für die Durchführung einer Buildaktualisierung erforderliche Zeit hängt von verschiedenen Faktoren ab:
+Die Dauer eines Build-Upgrades hängt von mehreren Faktoren ab:
 
-* Die Größe der zu sichernden oder wiederherzustellenden Datenbank (größere Datenbanken benötigen mehr Zeit zum Aktualisieren)
-* Die Größe der Umgebung (viele unserer Kunden verfügen über mehrere verschiedene Server, auf denen jeder bestimmte Funktionen handhat, wobei größere Umgebung mehr Zeit zum Upgrade benötigen)
-* Die Komplexität des Systems (einige Systeme verfügen über abhängigere Dienste und Verbindungen, die überprüft werden müssen, was eine Überprüfung der Stabilität und Leistung dieser Systeme erfordert)
+* Die Größe der Datenbank, die gesichert oder wiederhergestellt werden muss. (Größere Datenbanken erfordern mehr Zeit für das Upgrade.)
+* Die Größe der Umgebungen. (Viele unserer Kunden haben mehrere unterschiedliche Server, von denen jeder spezifische Funktionen ausführt; größere Umgebungen benötigen mehr Zeit für das Upgrade.)
+* Die Komplexität des Systems. (Manche Systeme haben mehrere Dienste und Verbindungen, die überprüft werden müssen und auch die Überprüfung der Systemstabilität und -leistung erfordern.)
 
-Die Build-Aktualisierung erfolgt in zwei Schritten:
+Das Build-Upgrade ist ein zweistufiger Vorgang:
 
-1. Vorbereiten des Systems für die Aktualisierung - Unter Berücksichtigung der Besonderheiten Ihrer Umgebung führt diese Phase im Wesentlichen zu einer vollqualifizierten Aktualisierung auf einer Nicht-Produktionsversion-Umgebung. Sobald die aktualisierte Umgebung aus technischer und funktioneller Sicht neu beleuchtet wurde, kann Phase 2 stattfinden. Diese erste Phase kann je nach den oben genannten Faktoren einige Tage bis ein paar Wochen dauern.
+1. Vorbereitung des Systems auf das Upgrade: Unter Berücksichtigung der Gegebenheiten Ihrer Arbeitsumgebung wird in einer Nicht-Produktionsumgebung ein vollständiges Upgrade durchgeführt. Sobald die aktualisierte Umgebung von einem technischen und funktionellen Standpunkt aus grünes Licht erhalten hat, erfolgt der zweite Schritt. Diese Phase kann abhängig von den zuvor genannten Faktoren von einigen Tagen bis zu mehreren Wochen dauern. 
 
-1. Die Aktualisierung selbst - Die Umgebung der Produktion wird aktualisiert. Diese Phase wird in der Regel nach einigen Stunden durchgeführt. Für sehr komplexe Umgebung sollte eine längere Ausfallzeit erwartet werden. Im Ereignis, dass etwas schiefgeht, wird eine Rollback-Strategie definiert und kann ausgeführt werden.
+1. Das Upgrade selbst: Die Produktionsumgebung wird aktualisiert. Diese Phase dauert normalerweise einige Stunden. Für sehr komplexe Umgebungen muss mit einer längeren Ausfallzeit gerechnet werden. Zur Absicherung gegenüber Fehlern im Prozess wird eine Rollback-Strategie bestimmt, die im Ernstfall angewendet werden kann.
 
-For more information, [refer to this document](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
 
-## Welche Ressourcen sind für die Build-Aktualisierung erforderlich?
+## Welche Ressourcen sind für das Build-Upgrade erforderlich?
 
-Für die Build-Aktualisierung sind die folgenden Ressourcen erforderlch:
+Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
-* Architektur der Adobe - Bei gehosteten oder Cloud Messaging-/Hybrid-Architekturen muss sich der Architekt mit der Kundenunterstützung abstimmen.
-* Projektmanager - Hosted: das Hosting-Team wird mit dem Kundendienst und dem Kunden zusammenarbeiten, um die Aktualisierungszeitschiene für alle Instanzen zu koordinieren.
-* Adobe Campaign-Administrator - Hosted: das Hosting-Team die Aktualisierung durchführt.
-* Adobe Campaign operator\marketing user - Der Operator führt Tests für Entwicklungs-, Test- und Produktionsinstanzen durch.
+* Adobe-Architekt: Im Fall von gehosteten oder Cloud Messaging-/Hybridarchitekturen muss sich der Architekt mit der Adobe-Kundenunterstützung arrangieren.
+* Projekt-Manager: Gehostet: Das Hosting-Team arbeitet mit der Adobe-Kundenunterstützung und dem Kunden zusammen, um für alle Instanzen den Zeitrahmen festzulegen.
+* Adobe Campaign-Administrator – Gehostet: Das Hosting-Team nimmt das Upgrade vor.
+* Benutzer/Marketing-Benutzer von Adobe Campaign: Der Benutzer führt Tests auf Entwicklungs-, Test- und Produktionsinstanzen durch.
 
-## Wie kann ich mich auf die Build-Aktualisierung vorbereiten?
+## Wie bereite ich das Build-Upgrade vor?
 
-Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle wichtigen und zu erhaltenden Arbeiten. Für weitere Informationen [sehen Sie sich bitte dieses Video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html)an.
+Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html).
 
-Aktualisieren Sie Ihr Wissen über den kritischen Pfad, den Workflows und die Versand in Ihren Ausführungsbüchern (oder durch Ihr Beratungsteam/Ihren Partner) entwickelt haben, indem Sie die Dokumentation überprüfen, die Ihrem Team am Ende Ihrer Implementierung zur Verfügung gestellt wird.
+Frischen Sie Ihr Wissen über die wichtigsten Pfad-Workflows und Sendungen auf, die in Ihren Runbooks (oder durch Ihr Beraterteam/Ihren Partner) entwickelt wurden, indem Sie die Dokumentation lesen, die Ihrem Team nach der Implementierung bereitgestellt wird.
 
-Identifizieren Sie niedrige oder niedrige Traffic-Zeiten, die sich ideal für Wartungsfenster eignen, da sie die geringsten geschäftlichen Auswirkungen haben.
+Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für Wartungsfenster eignen, da sie die Geschäftstätigkeit am wenigsten beeinträchtigen.
 
-Überprüfen Sie unsere [Checkliste für die Aktualisierung unten](#check-list) und Ihre Testpläne und stellen Sie sicher, dass die Ressourcen, die diese Tests durchführen können, innerhalb von 24-48 Stunden verfügbar sind. nach Abschluss der Aktualisierung.
+Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-For more information, [refer to this document](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
 
-## Kann man nachts oder außerhalb der Geschäftszeiten Upgrades durchführen?
+## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 
-Upgrades können außerhalb der Arbeitszeit durchgeführt werden. Es wird immer empfohlen, die Umgebung während der Geschäftszeiten zu aktualisieren, wenn keine Geschäftsbenutzer mit der Instanz verbunden sind.
+Upgrades können außerhalb der Geschäftszeiten durchgeführt werden. Es ist generell empfehlenswert, die Umgebung außerhalb der Geschäftszeiten zu aktualisieren, wenn keine Benutzer mit der Instanz verbunden sind.
 
-## Welche Kosten sind mit einer Build-Aktualisierung verbunden?
+## Welche Kosten sind mit einem Build-Upgrade verbunden?
 
-Die Installation des Build-Upgrades für gehostete Kunden ist kostenfrei. Bei kundenspezifischen Entwicklungen im System muss der Kunde die Ressourcen ermitteln, die zum Testen dieser Entwicklungen nach der Aktualisierung erforderlich sind, und alle Probleme, die bei diesen benutzerspezifischen Entwicklungen auftreten, beheben.
+Für gehostete Kunden fallen für die Installation des Build-Upgrades keine Kosten an. Wenn am System benutzerdefinierte Entwicklungen vorgenommen werden, muss der Kunde Ressourcen bereitstellen, die diese Entwicklungen nach dem Upgrade testen und nötigenfalls etwaige Probleme beheben können. 
 
-## Kann während des Aktualisierungsprozesses auf die Instanz zugegriffen werden?
+## Kann während des Upgrade-Prozesses auf die Instanz zugegriffen werden?
 
-Nein. Der Server wird während der Aktualisierung heruntergefahren, um sicherzustellen, dass die Datenintegrität erhalten bleibt, während das Produkt aktualisiert wird. Nach Abschluss wird er neu gestartet und alle Dienste werden fortgesetzt.
+Nein. Der Server wird während des Upgrades deaktiviert, um die Datenintegrität zu schützen. Danach wird er neu gestartet und alle Dienste werden fortgesetzt.
 
-## Werden die E-Mails während des Aktualisierungsprozesses weiterhin vom Message Center gesendet?
+## Werden während des Upgrades weiterhin E-Mails von Message Center gesendet?
 
-Wenn die Aktualisierung für Message Center (RT) erfolgt, werden keine E-Mails von der Instanz gesendet. Beachten Sie, dass alle Prozesse, die beim Herunterfahren eines Kampagne-Systems gestoppt werden, beim Neustart des Systems automatisch fortgesetzt werden. Dazu gehören aktive oder geplante Versand, Verfolgungsmethoden und Metrikberechnungen für zuvor gesendete Versand.
+Wenn Message Center (RT) aktualisiert wird, werden keine E-Mails von dieser Instanz gesendet. Hinweis: Alle Prozesse, die angehalten werden, wenn das Campaign-System abgeschaltet wird, werden automatisch wieder fortgesetzt, wenn das System wieder aktiviert wird. Hierzu zählen auch aktive oder geplante Sendungen, das Tracking und die Berechnung von Metriken für zuvor durchgeführte Sendungen.
 
-## Werden die Workflows und Sendungen weiterhin durchgeführt?
+## Werden Workflows und Sendungen weiterhin durchgeführt?
 
-Nein. Während der Buildaktualisierung werden Workflow- und E-Mail-Dienste gestoppt. Das bedeutet, dass Workflows nicht ausgeführt werden und keine Versand gesendet werden. Sie werden nach dem Neustart des Systems fortgesetzt. Adobe empfiehlt jedoch dringend, dass alle kritischen Pfade nach einer Aktualisierung überprüft Workflows, um sicherzustellen, dass sie ausgeführt und gesund sind.
+Nein. Während des Build-Upgrades werden sowohl Workflows als auch Mail-Dienste angehalten. Das bedeutet, dass weder Workflows noch Sendungen durchgeführt werden. Diese werden fortgesetzt, sobald das System wieder gestartet wurde. Adobe empfiehlt jedoch, dass alle kritischen Pfad-Workflows nach dem Upgrade überprüft werden, um sicherzustellen, dass sie aktiv und fehlerfrei sind.
 
-## Funktionieren meine Tracking-Links während der Aktualisierung?
+## Funktionieren meine Tracking-Links während des Upgrades?
 
-Nachverfolgungslinks funktionieren während der Aktualisierung. Während der Aktualisierung können keine neuen E-Mails gesendet werden, aber Tracking-Links, die in bereits gesendeten E-Mails enthalten sind, funktionieren.
+Tracking-Links funktionieren während des Upgrades. Während des Upgrades können zwar keine neuen E-Mails gesendet werden, aber Tracking-Links in bereits gesendeten E-Mails funktionieren.
 
-## Muss ich während der Build-Aktualisierung verfügbar sein?
+## Muss ich während des Build-Upgrades verfügbar sein?
 
-Ja. Kunden sollten der Adobe einen Ansprechpartner während oder unmittelbar nach der Aktualisierung ihrer Produktionsinstanz zur Verfügung stellen.  Adobe wird diese Person per E-Mail kontaktieren, es sei denn, es werden andere Vorkehrungen getroffen. Dadurch wird eine reibungslose Transition und sofortige Validierung kritischer Aufgaben gewährleistet. Die Adobe wird den Kunden kontaktieren, sobald die Build-Aktualisierung abgeschlossen ist, um eine Bestätigung zu erhalten.
+Ja. Kunden sollten Adobe während oder unmittelbar nach dem Upgrade der Produktionsinstanz eine Kontaktperson zur Verfügung stellen.  Adobe kontaktiert diese Person per E-Mail, außer es wurden andere Vereinbarungen getroffen. Dies ermöglicht eine reibungslose Aktualisierung und eine unmittelbare Überprüfung kritischer Aufgaben. Adobe kontaktiert den Kunden, sobald das Build-Upgrade abgeschlossen ist. 
 
 ## Muss ich die Client-Konsole aktualisieren?
 
-Ja. Die Client-Konsole muss sich auf demselben Build oder neueren Build wie die Serverinstanz befinden. Nachdem die Aktualisierung abgeschlossen ist, sollten Sie von Ihrer Client-Konsole aufgefordert werden, auf den neuesten Build zu aktualisieren, um sicherzustellen, dass dieser weiterhin mit dem Serveraufbau abgestimmt ist.
+Ja. Die Client-Konsole muss denselben oder einen höheren Build haben als die Server-Instanz. Nach dem Upgrade sollten Sie von Ihrer Client-Konsole aufgefordert werden, eine Aktualisierung auf die aktuelle Build-Version durchzuführen, damit sie zum Server-Build passt.
 
-## Wie sieht der Rollback-Plan aus? Werden Sicherungskopien meiner Daten gespeichert?
+## Wie sieht der Rollback-Plan aus? Werden Backups meiner Daten aufbewahrt?
 
-Der Rollback-Plan besteht darin, das System mit der neuesten verfügbaren Sicherung wiederherzustellen. Backups werden für Kunden im Rechenzentrum 7 Tage und für Kunden 14 Tage über den Amazon Web Service (AWS) gespeichert.
+Der Rollback-Plan sieht vor, das System mit der zuletzt verfügbaren Sicherungskopie wiederherzustellen. Sicherungskopien werden für Rechenzentrumskunden sieben Tage lang und für auf Amazon Web Services (AWS) gehostete Kunden 14 Tage lang aufbewahrt. 
 
 ## Wie lange dauert das Rollback?
 
-Es hängt von der Größe der Datenbanksicherung ab. Die durchschnittliche Dauer bis zum Abschluss beträgt 4 Stunden.
+Das hängt von der Größe des Datenbank-Backups ab. Im Schnitt sind dafür 4 Stunden zu veranschlagen.
 
-## Welche Testtypen werden nach der Aktualisierung auf meinem System durchgeführt?
+## Welche Tests werden nach dem Upgrade auf meinem System durchgeführt?
 
-Lesen Sie die Checkliste für die [Build-Aktualisierung weiter unten](#check-list).
+Näheres hierzu finden Sie in der weiter unten aufgeführten [Checkliste für Build-Upgrades](#check-list).
 
-## Welche Art von Test muss ich nach der Aktualisierung durchführen?
+## Welche Tests muss ich nach meinem Upgrade durchführen?
 
-Entwicklungs- und Stage-Umgebung werden entweder nacheinander oder zusammen aktualisiert, es ist jedoch eine Anmeldung erforderlich, bevor die Produktionsinstanz aktualisiert wird. Dadurch kann jeder Kunde gründliche Tests durchführen, bevor er Änderungen an der Produktion abzeichnet.
+Die Entwicklungs- und Staging-Umgebungen werden entweder nacheinander oder gemeinsam aktualisiert. Vor dem Upgrade der Produktionsinstanz muss jedoch deren Korrektheit bestätigt werden. Dadurch können Kunden ausführliche Tests durchführen, bevor etwaige Änderungen an die Produktionsumgebung weitergegeben werden.
 
-Siehe [Checkliste für die Aktualisierung der Liste weiter unten](#check-list). Die Kunden sollten ähnliche Tests durchführen, wie andere, die sie für die Umgebung benötigen.
+Beachten Sie die [Checkliste für Build-Upgrades](#check-list) weiter unten. Kunden sollten solcherlei sowie zusätzliche, für ihre Umgebung benötigte Tests durchführen.
 
-## Wie oft muss ich eine Build-Aktualisierung durchführen?
+## Wie oft muss ich ein Build-Upgrade durchführen?
 
-Um eine optimale Systemleistung, -verfügbarkeit und -sicherheit zu gewährleisten, arbeitet Adobe mit Kunden zusammen, um sicherzustellen, dass die Systeme mindestens einmal jährlich aktualisiert werden.
+Um eine optimale Leistung, Verfügbarkeit und Sicherheit des Systems zu gewährleisten, sorgt Adobe gemeinsam mit seinen Kunden dafür, dass das System zumindest einmal jährlich aktualisiert wird.
 
-## Wird es für eine Buildaktualisierung einen Shutdown geben?
+## Muss das System bei einem Build-Upgrade heruntergefahren werden?
 
-Ja. Der Server wird während der Aktualisierung heruntergefahren, um sicherzustellen, dass die Datenintegrität erhalten bleibt, während das Produkt aktualisiert wird. Nach Abschluss wird er neu gestartet und alle Dienste werden fortgesetzt.
+Ja. Der Server wird während des Upgrades deaktiviert, um die Datenintegrität zu schützen. Danach wird er neu gestartet und alle Dienste werden fortgesetzt.
 
-## An wen wende ich mich, um das Upgrade-Ticket für Build zu öffnen?
+## Wen sollte ich kontaktieren, wenn ich ein Ticket wegen einem Build-Upgrade erstellen möchte?
 
-Wenden Sie sich an den Kundendienst der [Adobe, wenn Probleme nach einem Build-Upgrade auftreten](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Der Kundendienst plant die Builddaten und öffnet Tickets zum Erstellen von Upgrades.
+Wenn nach einem Build-Upgrade Probleme auftreten, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Die Adobe-Kundenunterstützung plant den Vorgang und erstellt das Ticket zum Build-Upgrade.
 
-Weitere Informationen finden Sie in den [Hilfe- und Unterstützungsoptionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support-req).
 
-## Checkliste für die Aktualisierung erstellen {#check-list}
+## Checkliste für Build-Upgrades {#check-list}
 
-### Checkliste für den Cloud Messaging-Server nach der Aktualisierung
+### Checkliste für den Cloud Messaging Server nach dem Upgrade:
 
-1. Senden eines Test-Versands
-   1. Validieren der Versandlogs und des zugehörigen Workflows
-   1. Überprüfen, ob die Trackinglogs aktualisiert wurden
-   1. Mirrorseiten- und Verfolgungslinks überprüfen
-1. Vergewissern Sie sich, dass alle Technischen Workflows gestartet sind
-1. Überprüfen Sie, ob auch alle Prozesse aktiv sind
+1. Führen Sie einen Testversand durch.
+   1. Überprüfen Sie, ob die Versand-Logs und der damit verbundene Workflow korrekt ist.
+   1. Überprüfen Sie, ob die Tracking-Logs aktualisiert werden.
+   1. Überprüfen Sie die Mirror-Seite und die Tracking-Links.
+1. Überprüfen Sie, ob alle technischen Workflows den Status &quot;Gestartet&quot; aufweisen.
+1. Stellen Sie sicher, dass auch alle Prozesse aktiv sind.
 
-### Checkliste für die Aktualisierung des Marketingservers nach der Aktualisierung
+### Checkliste für den Marketing-Server nach dem Upgrade:
 
-* Können Sie sich beim Server anmelden? Überprüfen Sie, ob die Kampagne Client Console ohne Fehler-/Warnmeldungen funktioniert.
-* Achten Sie darauf, nach der Aktualisierung dieselbe Konsolenversion wie die Buildversion zu verwenden.
-* Haben Sie Webanwendungen, die Daten in die Datenbank der Kampagne einfügen? Wenn ja, führen Sie sie aus und vergewissern Sie sich, dass sie neue Datensätze über die API einfügen können.
-* Können Sie eine Test-E-Mail erfolgreich versenden? Erstellen Sie einen neuen Versand mit einer bekannten Vorlage, senden Sie ihn an einen Test-Empfänger, überprüfen Sie die Personalisierung, heben Sie die Verknüpfung auf, Mirrorseite alle Arbeit.
-* Laufen alle Ihre kritischen Pfade Workflows? Überprüfen Sie Workflows, öffnen Sie das Workflow-Protokoll und stellen Sie sicher, dass keine Fehler vorliegen.
-* Sind alle Ordner vorhanden, sichtbar und verfügbar? Durchsuchen Sie verschiedene Ordner und überprüfen Sie sie.
-alle Inhalte angezeigt und vorhanden sind.
-* Werden Ihre Versand mit der richtigen Zeitzone durchkommen?
+* Können Sie sic h beim Server anmelden? Stellen Sie sicher, dass die Client-Konsole fehlerfrei funktioniert bzw. keine Fehlerwarnungen angezeigt werden.
+* Achten Sie darauf, dass die Konsole und der Build nach dem Upgrade dieselbe Version aufweisen.
+* Haben Sie Webanwendungen, die Daten zur Campaign-Datenbank hinzufügen? Wenn ja, führen Sie sie aus und überprüfen Sie, ob neue Datensätze per API hinzugefügt werden können.
+* Können Sie eine Test-E-Mail versenden? Erstellen Sie einen neuen Versand mit einer bekannten Vorlage, senden Sie die Nachricht an einen Testempfänger, überprüfen Sie die Personalisierung und stellen Sie sicher, dass der Abmelde-Link und die Mirror-Seite funktionieren.
+* Werden alle Ihre kritischen Pfad-Workflows ausgeführt? Überprüfen Sie Workflows, öffnen Sie das Workflow-Protokoll und stellen Sie sicher, dass keine Fehler vorliegen.
+* Sind alle Ordner vorhanden, sichtbar und aufrufbar? Durchsuchen Sie unterschiedliche Ordner und stellen Sie sicher,
+dass alle Inhalte vorhanden sind und angezeigt werden.
+* Werden Ihre Sendungen mit der richtigen Zeitzone zugestellt?
 
-   * Erstellungsdatum und Änderungsdatum mit Zeitstempel und Zeitzone überprüfen
-   * Überprüfen Sie, ob die Ausführung der Planung zum angegebenen Zeitpunkt in einem Workflow funktioniert
-   * Rufen Sie die Liste von Workflows ab, die sich im Status PAUSED und FAILED befinden. Beginn und Überwachung
-   * Ausführen von AB-Tests für ein Szenario
-   * Testen von Push-Benachrichtigungen mit ihren Verfolgungsfunktionen für Deep Links
-   * Versenden von SMS
-   * Wenn eine externe FDA verbunden ist, testen Sie, ob die Daten auf beide Arten gesendet werden
-   * Wenn Sie Integrationen wie Adobe Campaign-Adobe Experience Manager, Adobe Campaign-Adobe Analytics verwenden, testen Sie, ob sie weiterhin wie zuvor funktionieren
+   * Überprüfen Sie das Erstellungsdatum und das Änderungsdatum einschließlich Zeitstempel und Zeitzone.
+   * Überprüfen Sie, ob die geplante Ausführung eines Workflows zum angegebenen Zeitpunkt funktioniert.
+   * Rufen Sie die Liste der Workflows ab, die den Status AUSGESETZT und FEHLGESCHLAGEN aufweisen. Starten Sie diese und beobachten Sie sie.
+   * Führen Sie für ein Szenario einen A/B-Test durch.
+   * Testen Sie Push-Benachrichtigungen und ihre Tracking-Funktionen für Deeplinks.
+   * Testen Sie das Versenden von SMS-Nachrichten.
+   * Wenn eine externe FDA-Lösung verbunden ist, testen Sie, ob die Daten in beide Richtungen gesendet werden.
+   * Wenn Sie Integrationen (wie zwischen Adobe Campaign und Adobe Experience Manager oder Adobe Campaign und Adobe Analytics) nutzen, testen Sie, ob diese funktionieren wie bisher.
 
 **Siehe auch**
 
 * [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
-* [Hilfe- und Supportoptionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support-req)
 * [Gold Standard-Programm](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
