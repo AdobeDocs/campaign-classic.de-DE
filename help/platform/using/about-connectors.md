@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: a84a73a9-9930-449f-8b81-007a0e9d5233
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -38,5 +38,5 @@ Sie können Campaign auch mit vielen anderen Systemen integrieren, z. B.:
 
 >[!NOTE]
 >
->Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. Weitere Informationen finden Sie in der [Kampagne-On-Premise - gehostete Funktionsmatrix](../../installation/using/capability-matrix.md).
+>Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. Weitere Informationen hierzu finden Sie in der [Funktionsmatrix zu Campaign-On-Premise-/Hosted-Bereitstellungen](../../installation/using/capability-matrix.md).
 
