@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: tracking-offers
 discoiquuid: 6aae6a10-b03e-41f1-a6e9-29100800bae1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '88'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 
    ![](assets/offer_report_perdate.png)
 
-* Nach Leerzeichen:
+* Nach Platzierung:
 
    ![](assets/offer_report_perspaces.png)
 
-* Nach Versänden:
+* Nach Sendungen:
 
    ![](assets/offer_report_perdeliveries.png)
 
