@@ -1,7 +1,7 @@
 ---
-title: Testadressen in Transaktionsnachrichten verwalten
-seo-title: Testadressen in Transaktionsnachrichten verwalten
-description: Testadressen in Transaktionsnachrichten verwalten
+title: Verwalten von Testadressen in Transaktionsnachrichten
+seo-title: Verwalten von Testadressen in Transaktionsnachrichten
+description: Verwalten von Testadressen in Transaktionsnachrichten
 seo-description: null
 page-status-flag: never-activated
 uuid: 51c4e79d-53bb-4d46-9c7d-e90066f5317d
@@ -11,9 +11,9 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 discoiquuid: 12e7043e-e8b5-48a9-8a2f-99e2e6040c3c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 95dff2f3704e316e9ec9e454a8f3fb9835508ccd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 Testadressen dienen dazu, eine Nachrichtenvorschau zu erzeugen, Testsendungen auszuführen und die Personalisierung der Nachricht vor dem eigentlichen Versand per E-Mail, SMS oder Mobile Apps zu prüfen. Sie werden für jeden Versand separat erstellt und können nicht in mehreren Sendungen verwendet werden.
 
-## Testadressen erstellen {#creating-a-seed-address}
+## Erstellen von Testadressen {#creating-a-seed-address}
 
 1. Gehen Sie in den Tab **[!UICONTROL Testadressen]** der Transaktionsnachrichten-Vorlage.
 
@@ -47,7 +47,7 @@ Testadressen dienen dazu, eine Nachrichtenvorschau zu erzeugen, Testsendungen au
    ![](assets/messagecenter_create_custo_001.png)
 
    <!--## Creating several seed addresses {#creating-several-seed-addresses}-->
-1. Klicken Sie auf den Link **[!UICONTROL Testadressen ergänzen]**, dann auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Klicken Sie auf den Link **[!UICONTROL Testadressen ergänzen]** und anschließend auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
    ![](assets/messagecenter_create_seedaddr_004.png)
 
