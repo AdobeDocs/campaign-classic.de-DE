@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 2d0d2d4eefc67312e1b9a8edc7ae88def2980ef1
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 20%
+ht-degree: 84%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 20%
 
 Authentifizierungsparameter wie die Kunden-ID, der private Schlüssel und der Authentifizierungsendpunkt werden in den Konfigurationsdateien der Instanz konfiguriert.
 Die Liste der zu verarbeitenden Auslöser wird in einer Option im JSON-Format konfiguriert.
-Die Auslöser werden für das Targeting eines Kampagnen-Workflows verwendet, der E-Mails sendet. Die Kampagne ist so eingerichtet, dass ein Kunde, der beide Auslöserereignisse aufweist, eine E-Mail erhält.
+Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows verwendet, der E-Mails sendet. Die Kampagne ist so eingerichtet, dass ein Kunde, der beide Auslöserereignisse aufweist, eine E-Mail erhält.
 
 >[!CAUTION]
 >
->Bei einer Hybrid-Bereitstellung müssen Sie sicherstellen, dass die Pipeline auf einer Mid-Instanz konfiguriert ist.
+>Bei Hybrid-Bereitstellungen muss die Pipeline auf einer Mid-Sourcing-Instanz konfiguriert sein.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -42,28 +42,28 @@ Sie benötigen außerdem:
 * einen Entwicklerzugriff auf das IMS-Org
 * Triggerkonfiguration in Adobe Analytics ausgeführt
 
-## Authentifizierungs- und Konfigurationsdateien {#authentication-configuration}
+## Authentifizierung und Konfigurationsdateien {#authentication-configuration}
 
-Die Authentifizierung ist erforderlich, da die Pipeline im Adobe Experience Cloud gehostet wird.
-Er verwendet ein Schlüsselpaar aus öffentlichem und privatem Schlüssel. Dieser Prozess hat die gleiche Funktion wie ein Benutzer/Kennwort, ist aber sicherer.
+Da das Pipeline-Hosting in Adobe Experience Cloud erfolgt, ist eine Authentifizierung erforderlich.
+Hierfür wird ein Schlüsselpaar aus öffentlichem und privatem Schlüssel verwendet. Der Prozess entspricht der Verwendung einer Kombination aus Benutzer und Passwort, ist aber sicherer.
 Authentifizierung wird für das Marketing Cloud über das Adobe-I/O-Projekt unterstützt.
 
 ## Schritt 1: Erstellen/Aktualisieren des Adoben-E/A-Projekts {#creating-adobe-io-project}
 
 Für gehostete Kunden können Sie ein Kundenbetreuungsticket erstellen, um Ihr Unternehmen mit Adobe-E/A-Token für die Triggerintegration zu aktivieren.
 
-Kunden, die über On Premise verfügen, finden Informationen auf der Seite [Konfigurieren der Adoben-E/A für Adobe Experience Cloud-Auslöser](../../integrations/using/configuring-adobe-io.md) . Beachten Sie, dass Sie beim Hinzufügen der API zur Adobe-E/A-Berechtigung **[!UICONTROL Adobe Analytics]** auswählen müssen.
+For On Premise customers, refer to the [Configuring Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) page. Note that you need to select **[!UICONTROL Adobe Analytics]** while adding API to the Adobe I/O credential.
 
 ## Schritt 2: Konfigurieren der Pipeline-Option &quot;NmsPipeline_Config&quot; {#configuring-nmspipeline}
 
-Sobald die Authentifizierung festgelegt ist, ruft Pipeline die Ereignis ab. Es verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert sind. Der Auslöser muss aus Adobe Analytics generiert und an die Pipeline gesendet worden sein, die nur Auslöser verarbeitet, die in Adobe Campaign konfiguriert sind.
-Die Option kann auch mit einer Platzhalterkarte konfiguriert werden, um alle Auslöser unabhängig vom Namen abzurufen.
+Sobald die Authentifizierung eingerichtet ist, ruft die Pipeline die Ereignisse ab. Sie verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden. Der Auslöser muss in Adobe Analytics generiert und an die Pipeline gesendet worden sein; diese verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden.
+Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
 
-1. Rufen Sie in Adobe Campaign das Menü &quot;Optionen&quot;unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** im **[!UICONTROL Explorer]** auf.
+1. Rufen Sie in Adobe Campaign über **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** das Optionsmenü im **[!UICONTROL Explorer]** auf.
 
-1. Wählen Sie die Option **[!UICONTROL NmsPipeline_Config]** .
+1. Wählen Sie die Option **[!UICONTROL NmsPipeline_Config]** aus.
 
-1. Im Feld **[!UICONTROL Wert (langer Text)]** können Sie den folgenden JSON-Code einfügen, der zwei Auslöser angibt. Sie müssen sicherstellen, dass Kommentare entfernt werden.
+1. Im Feld **[!UICONTROL Wert (Memo)]** können Sie den folgenden JSON-Code einfügen, der zwei Auslöser angibt. Die Kommentare müssen Sie dabei entfernen.
 
    ```
    {
@@ -85,7 +85,7 @@ Die Option kann auch mit einer Platzhalterkarte konfiguriert werden, um alle Aus
    }
    ```
 
-1. Sie können auch den folgenden JSON-Code einfügen, der alle Auslöser erfasst.
+1. Sie können auch folgenden JSON-Code einfügen, der alle Auslöser abdeckt.
 
    ```
    {
@@ -104,53 +104,53 @@ Die Option kann auch mit einer Platzhalterkarte konfiguriert werden, um alle Aus
    }
    ```
 
-### The Consumer parameter {#consumer-parameter}
+### Der Parameter &quot;Consumer&quot; {#consumer-parameter}
 
-Die Pipeline funktioniert wie ein Lieferant- und Verbrauchermodell. Nachrichten werden nur für einen einzelnen Verbraucher verwendet: jeder Verbraucher erhält seine eigene Kopie der Nachrichten.
+Die Pipeline funktioniert wie ein Anbieter-Verbraucher-Modell. Nachrichten werden nur von einem einzelnen Verbraucher &quot;konsumiert&quot;; jeder Verbraucher erhält eine eigene Kopie der Nachrichten.
 
-The **Consumer** parameter identifies the instance as one of these consumers. Die Identität der Instanz nennt die Pipeline. Sie können ihn mit dem Instanznamen füllen, der auf der Überwachungsseite der Client-Konsole angezeigt wird.
+Der Parameter **Consumer** identifiziert die Instanz als einen dieser Verbraucher. Über die Identität der Instanz wird die Pipeline aufgerufen. Sie können für diese den Instanznamen angeben. Sie finden diesen auf der Seite &quot;Monitoring&quot; der Client-Konsole.
 
-Der Pipeline-Dienst verfolgt die von jedem Verbraucher abgerufenen Nachrichten. Durch die Verwendung unterschiedlicher Konsumenten für verschiedene Instanzen können Sie sicherstellen, dass jede Nachricht an jede Instanz gesendet wird.
+Der Pipeline-Dienst dokumentiert die von jedem Verbraucher abgerufenen Nachrichten. Indem Sie für verschiedene Instanzen jeweils unterschiedliche Verbraucher verwenden, stellen Sie sicher, dass jede Nachricht an jede Instanz gesendet wird.
 
-### Empfehlungen für Pipeline-Optionen {#pipeline-option-recommendation}
+### Empfehlungen für die Pipeline-Option {#pipeline-option-recommendation}
 
-Um die Pipeline-Option zu konfigurieren, sollten Sie folgende Empfehlungen befolgen:
+Für die Konfiguration der Pipeline-Option wird Folgendes empfohlen:
 
-* hinzufügen oder bearbeiten Sie Auslöser unter **[!UICONTROL Auslöser]**, sollten Sie den Rest nicht bearbeiten.
-* Vergewissern Sie sich, dass JSON gültig ist. Sie können einen JSON-Validator verwenden, z. B. auf dieser [Website](http://jsonlint.com/) .
-* &quot;name&quot;entspricht der Auslöser-ID. Ein Platzhalter (*) erfasst alle Auslöser.
-* &quot;Consumer&quot;entspricht dem Namen der aufrufenden Instanz oder Anwendung.
-* Pipelinated unterstützt auch das Thema &quot;Aliase&quot;.
-* Sie sollten die Pipeline immer neu starten, nachdem Sie Änderungen vorgenommen haben.
+* Wenn Sie Auslöser bearbeiten oder hinzufügen, tun Sie dies unter **[!UICONTROL Auslöser]**; den Rest sollten Sie nicht bearbeiten.
+* Vergewissern Sie sich, dass die JSON gültig ist. Verwenden Sie einen JSON-Validator, z. B. den auf dieser [Website](http://jsonlint.com/).
+* &quot;name&quot; entspricht der Auslöser-ID. Ein Platzhalter (*) deckt alle Auslöser ab.
+* &quot;Consumer&quot; entspricht dem Namen der aufrufenden Instanz oder Anwendung.
+* Pipelined unterstützt auch das Thema &quot;Aliases&quot;.
+* Starten Sie pipelined grundsätzlich neu, nachdem Sie Änderungen vorgenommen haben.
 
 ## Schritt 3: Optionale Konfiguration {#step-optional}
 
-Sie können einige interne Parameter entsprechend Ihren Ladefehlern ändern, stellen Sie jedoch sicher, dass Sie diese testen, bevor Sie sie in die Produktion übernehmen.
+Sie können einige interne Parameter entsprechend Ihren Lastanforderungen ändern; stellen Sie jedoch sicher, dass Sie diese testen, bevor Sie sie in die Produktion übernehmen.
 
 Die Liste der optionalen Parameter ist nachfolgend aufgeführt:
 
 | Option | Beschreibung  |
 |:-:|:-:|
-| appName(Veraltet) | AppID der OAuth-Anwendung, die in der Legacy Oath-Anwendung registriert ist, in die der öffentliche Schlüssel hochgeladen wurde. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.). |
-| authGatewayEndpoint(Legacy) | URL zum Abrufen von Gateway-Token. Standard: ```https://api.omniture.com``` |
-| authPrivateKey(Legacy) | Der private Schlüssel, öffentlicher Teil, der in die Legacy Oath-Anwendung hochgeladen wurde, AES mit der XtkKey-Option verschlüsselt: ```cryptString("PRIVATE_KEY")``` |
-| disableAuth(Legacy) | Deaktivieren Sie die Authentifizierung, indem Sie eine Verbindung ohne Gateway-Token herstellen, wird nur von einigen Entwicklungs-Pipeline-Endpunkten akzeptiert. |
-| discoverPipelineEndpoint | URL, um den Endpunkt der Pipeline-Dienste zu finden, der für diesen Mieter verwendet werden soll. Standard: ```https://producer-pipeline-pnw.adobe.net``` |
-| dumpStatePeriodSec | Der Zeitraum zwischen zwei Deponien des internen Zustandsprozesses im ```var/INSTANCE/pipelined.json.```<br> Binnenstaat ist auch auf Abruf verfügbar: ```http://INSTANCE:7781/pipelined/status``` |
-| forcedPipelineEndpoint | Deaktivieren Sie die Erkennung des PipelineServicesEndpunkts, um ihn zu erzwingen |
-| monitorServerPort | Der Pipeline-Prozess überwacht diesen Anschluss, um den internen Zustandsprozess hier bereitzustellen: ```http://INSTANCE:PORT/pipelined/status```. <br>Der Standardwert ist 7781. |
-| cursorFlushMessageCount | Wenn diese Anzahl von Nachrichten verarbeitet wird, werden die Offsets in der Datenbank gespeichert. <br>Der Standardwert ist 1000. |
+| appName(Legacy) | AppID der OAuth-Anwendung, die in der Legacy-Oath-Anwendung registriert ist, in die der öffentliche Schlüssel hochgeladen wurde. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.). |
+| authGatewayEndpoint(Legacy) | URL zum Abrufen von Gateway-Tokens. Standard: ```https://api.omniture.com``` |
+| authPrivateKey(Legacy) | Der öffentliche Teil des privaten Schlüssels, der in die Legacy-Oath-Anwendung hochgeladen wurde; AES-verschlüsselt mit der XtkKey-Option: ```cryptString("PRIVATE_KEY")``` |
+| disableAuth(Legacy) | Deaktivieren der Authentifizierung; Verbindungen ohne Gateway-Tokens werden nur von einigen Endpunkten der Entwicklungs-Pipeline akzeptiert. |
+| discoverPipelineEndpoint | URL zum Auffinden des Pipeline-Dienstendpunkts, der für diesen Mandanten verwendet werden soll. Standard: ```https://producer-pipeline-pnw.adobe.net``` |
+| dumpStatePeriodSec | Der Zeitraum zwischen der Speicherung zweier Kopien des internen Statusprozesses im ```var/INSTANCE/pipelined.json.``` <br> Der interne Status ist hier auch auf Abruf verfügbar: ```http://INSTANCE:7781/pipelined/status``` |
+| forcedPipelineEndpoint | Deaktivieren der Erkennung und Erzwingen des PipelineServicesEndpoint |
+| monitorServerPort | Der Pipelined-Prozess überwacht, dass der Port den internen Statusprozess hier bereitstellt: ```http://INSTANCE:PORT/pipelined/status```. <br>Der Standardwert ist 7781. |
+| cursorFlushMessageCount | Sobald diese Anzahl von Nachrichten verarbeitet wurde, werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 1000. |
 | cursorFlushPeriodSec | Nach diesem Zeitraum werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 5 (Sekunden). |
 | processingJSThreads | Anzahl der dedizierten Threads, die Nachrichten mit benutzerdefinierten JS-Connectoren verarbeiten. <br>Der Standardwert ist 4. |
 | processingThreads | Anzahl der dedizierten Threads, die Nachrichten mit nativem Code verarbeiten. <br>Der Standardwert ist 4. |
-| retryPeriodSec | Bei Verarbeitungsfehlern kann es zu Verzögerungen zwischen weiteren Zustellversuchen kommen. <br>Der Standardwert ist 30 (Sekunden). |
+| retryPeriodSec | Verzögerung zwischen weiteren Zustellversuchen im Falle von Verarbeitungsfehlern. <br>Der Standardwert ist 30 (Sekunden). |
 | retryValiditySec | Verwerfen der Nachricht, wenn sie nach diesem Zeitraum nicht erfolgreich verarbeitet wurde (zu viele weitere Zustellversuche). <br>Der Standardwert ist 300 (Sekunden). |
 
 ### Automatischer Start von Pipelined-Prozess {#pipelined-process-autostart}
 
-Der Pipeline-Prozess muss automatisch gestartet werden.
+Der Pipelined-Prozess muss automatisch gestartet werden.
 
-Legen Sie dazu das Element &lt; pipelinated > in der Konfigurationsdatei auf autostart=&quot;true&quot; fest:
+Legen Sie dazu das Element &lt; pipelined > in der Konfigurationsdatei auf autostart=&quot;true&quot; fest:
 
 ```
  <pipelined autoStart="true" ... "/>
@@ -168,6 +168,6 @@ nlserver restart pipelined@instance
 
 Gehen Sie wie folgt vor, um die Pipeline-Einrichtung für die Bereitstellung zu validieren:
 
-* Make sure the [!DNL pipelined] process is running.
-* Überprüfen Sie die Datei &quot;pipelinated.log&quot;auf Protokolle zur Pipeline-Verbindung.
-* Überprüfen Sie die Verbindung und ob Pings empfangen werden. Gehostete Kunden können die Überwachung über die Client-Konsole verwenden.
+* Vergewissern Sie sich, dass der [!DNL pipelined]-Prozess ausgeführt wird.
+* Prüfen Sie die Pipeline-Verbindungsprotokolle in der Datei &quot;pipelined.log&quot;.
+* Überprüfen Sie, ob die Verbindung besteht und Pings empfangen werden. Kunden gehosteter Bereitstellungen können über die Client-Konsole &quot;Monitoring&quot; verwenden.
