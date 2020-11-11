@@ -11,18 +11,18 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: b64c9729-cfe2-4d02-8c59-9e53efd34a96
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '129'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Fehlerbehebung{#troubleshooting}
 
-Wenn Ihr Mobilgerät mit WLAN verbunden ist und Sie keine Benachrichtigungen erhalten, überprüfen Sie, ob die FCM/APNs-Anschlüsse nicht von Ihrer Firewall blockiert werden.
+Wenn Ihr Mobilgerät mit einem WLAN verbunden ist und Sie keine Benachrichtigungen erhalten, stellen Sie sicher, dass die FCM/APNS-Ports nicht von Ihrer Firewall gesperrt werden.
 
 **Android**: Das Mobilgerät verbindet sich mit den FCM-Servern über die Ports 5228 bis 5230. Ihre Firewall muss also dahingehend konfiguriert werden, dass sie die Verbindung mit FCM zulässt. Folgende Ports sind zu öffnen: 5228 (am häufigsten verwendet), 5229 und 5230.
 
