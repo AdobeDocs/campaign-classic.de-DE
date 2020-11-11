@@ -11,9 +11,9 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1891'
 ht-degree: 100%
 
@@ -231,7 +231,7 @@ So konfigurieren Sie Azure Synapse unter Debian:
 
 >[!NOTE]
 >
->Der [!DNL Snowflake]-Connector ist für gehostete und On-Premise-Implementierungen verfügbar. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../installation/using/capability-matrix.md).
+>Der [!DNL Snowflake]-Connector ist für gehostete und On-Premise-Implementierungen verfügbar. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 ![](assets/snowflake_3.png)
 
@@ -387,7 +387,7 @@ Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erforder
 
 Über das externe [!DNL Oracle]-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Hadoop-Datenbank verbinden.
 
-1. Konfigurieren Sie in Campaign Classic Ihr externes [!DNL oracle]-Konto. Klicken Sie im **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Externe Konten]**.
+1. Konfigurieren Sie in Campaign Classic Ihr externes [!DNL oracle]-Konto. Klicken Sie im **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
