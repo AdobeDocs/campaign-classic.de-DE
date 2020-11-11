@@ -1,7 +1,7 @@
 ---
-title: Integration konfigurieren
-seo-title: Integration konfigurieren
-description: Integration konfigurieren
+title: Konfigurieren der Integration
+seo-title: Konfigurieren der Integration
+description: Konfigurieren der Integration
 seo-description: null
 page-status-flag: never-activated
 uuid: e2db7bdb-8630-497c-aacf-242734cc0a72
@@ -11,18 +11,18 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 discoiquuid: 1c20795d-748c-4f5d-b526-579b36666e8f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3e73d7c91fbe7cff7e1e31bdd788acece5806e61
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '587'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Fehlerbehebung bei Pipelines {#pipeline-troubleshooting}
 
-**Pipelined schlägt fehl mit der Fehlermeldung &quot;Keine Aufgabe entspricht der per Pipelined@&lt; Instanz >&quot;**
+**Pipelined schlägt fehl mit der Fehlermeldung &quot;No task corresponds to the mask pipelined@&lt; Instanz >&quot;**
 
 Ihre Version von Adobe Campaign Classic unterstützt die Pipeline nicht.
 
@@ -49,7 +49,7 @@ Der Parameter &quot;@authPrivateKey&quot; der Konfigurationsdatei der Instanz is
 1. Überprüfen Sie, ob &quot;authPrivateKey&quot; festgelegt ist.
 1. Vergewissern Sie sich, dass &quot;authPrivateKey:&quot; mit &quot;@&quot; beginnt, mit &quot;=&quot; endet und etwa 4.000 Zeichen lang ist.
 1. Suchen Sie nach dem Originalschlüssel und stellen Sie sicher, dass er im RSA-Format vorliegt, 4.096 Bit lang ist und mit -----BEGIN RSA PRIVATE KEY----- beginnt.
-   <br> Erstellen Sie den Schlüssel bei Bedarf neu und registrieren Sie ihn bei Adobe Analytics.
+   <br> Erstellen Sie den Schlüssel ggf. neu und registrieren Sie ihn bei Adobe Analytics.
 1. Vergewissern Sie sich, dass der Schlüssel in derselben Instanz kodiert wurde wie [!DNL pipelined]. <br>Wiederholen Sie bei Bedarf die Kodierung mit dem Beispiel-JavaScript oder -Workflow.
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;unable to read the token during authentication&quot;**
