@@ -1,6 +1,6 @@
 ---
-title: Listen erstellen und verwalten
-description: Erfahren Sie, wie Sie Listen erstellen und verwalten
+title: Erstellen und Verwalten von Listen
+description: Erfahren Sie, wie Sie Listen erstellen und verwalten.
 page-status-flag: never-activated
 uuid: 17d1a7d0-a728-490e-a820-19f469fddbcd
 contentOwner: sauviat
@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 9fc243b2-7b7b-4083-83f6-04c12336492d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '854'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ In Adobe Campaign sind zwei Arten von Listen verfügbar:
 
    Im Gegensatz zu Listen vom Typ **[!UICONTROL Gruppe]** können diese Listen automatisch mit der Aktivität **[!UICONTROL Planung]** aktualisiert werden. Ein Beispiel für die Erstellung von Listen vom Typ **[!UICONTROL Liste]** finden Sie auf [dieser Seite](../../workflow/using/list-update.md).
 
-![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#create-list-video).
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#create-list-video).
 
 ## Profilliste von einer Gruppe erstellen {#creating-a-profile-list-from-a-group}
 
@@ -135,10 +135,10 @@ Eine Liste ist ein statischer Satz von Empfängern, die in Versandaktionen als Z
 
 Erfahren Sie mehr über das Erstellen einer Audience durch Konfigurieren einer Empfängerliste aus dem Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12?captions=ger)
 
-## Empfängerliste erstellen mit einem Workflow {#create-list-in-a-wf-video}
+## Empfängerliste erstellen mit einem Workflow  {#create-list-in-a-wf-video}
 
 Erfahren Sie, wie Sie einen Workflow erstellen, um Empfänger als Zielkontakte auszuwählen, und den Workflow als wiederkehrend einzurichten, bevor die Liste als Zielgruppe für eine E-Mail-Kampagne verwendet wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12&captions=ger)
