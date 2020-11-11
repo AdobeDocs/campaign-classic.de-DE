@@ -1,6 +1,6 @@
 ---
-title: Push-Benachrichtigungen erstellen
-description: Erfahren Sie, wie Sie Push-Benachrichtigungen erstellen
+title: Erstellen von Push-Benachrichtigungen
+description: Erfahren Sie, wie Sie Push-Benachrichtigungen erstellen.
 page-status-flag: never-activated
 uuid: fb1862df-e616-4147-a642-dc867bc983b5
 contentOwner: sauviat
@@ -9,16 +9,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 discoiquuid: 345af5c2-c852-4086-8ed0-ff3e7e402e04
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fd75f7f75e8e77d7228233ea311dd922d100417c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Benachrichtigungen erstellen{#creating-notifications}
+# Erstellen von Benachrichtigungen{#creating-notifications}
 
 Dieser Abschnitt beschreibt die spezifischen Elemente eines Benachrichtigungsversands für iOS- oder Android-Geräte. Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
