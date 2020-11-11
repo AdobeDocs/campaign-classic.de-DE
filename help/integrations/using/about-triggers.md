@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -39,4 +39,4 @@ Der [!DNL pipelined]-Prozess wird auf dem Adobe Campaign-Marketing-Server kontin
 
 Der [!DNL pipelined]-Prozess meldet sich mit einem Authentifizierungsdienst bei Experience Cloud an und sendet einen privaten Schlüssel. Der Authentifizierungsdienst gibt ein Token zurück. Das Token dient beim Abrufen der Ereignisse zum Authentifizieren.
 
-For more information on authentication, refer to this [page](../../integrations/using/configuring-adobe-io.md).
+Weitere Informationen zum Thema Authentifizierung finden Sie auf [dieser Seite](../../integrations/using/configuring-adobe-io.md).
