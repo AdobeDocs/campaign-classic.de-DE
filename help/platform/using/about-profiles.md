@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 discoiquuid: 5addada8-0185-488f-9825-83f60981c139
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 208bac758542db8dd514bda80c8c735897fcefec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '974'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -118,11 +118,11 @@ Erfahren Sie, wie Sie auf Profildaten zugreifen, Profile sortieren und filtern u
 
 In diesem Video wird auch die Einhaltung der Datenschutz-Grundverordnung durch Adobe Campaign Classic erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12&captions=ger)
 
 **Siehe auch**
 
-* [Datenschutzmanagement in der Kampagne](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html)
+* [Datenschutzverwaltung in Campaign](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html)
 
 * [Bestimmen der Zielpopulation](../../delivery/using/define-the-right-audience.md)
 
