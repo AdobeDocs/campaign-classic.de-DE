@@ -9,11 +9,11 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 discoiquuid: dd3d14cc-5153-428d-a98a-32b46f0fe811
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 
 >[!CAUTION]
 >
->Zugriff auf eine externe Datenbank über FDA ist nur bei On-Premise- oder hybriden Installationen möglich, es sei denn, es gibt Snowflake-Connectoren. For more on this, refer [to this page](../../installation/using/capability-matrix.md).
+>Zugriff auf eine externe Datenbank über FDA ist nur bei On-Premise- oder hybriden Installationen möglich, es sei denn, es gibt Snowflake-Connectoren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../installation/using/capability-matrix.md).
 
 ## Grundprinzip {#operating-principle}
 
@@ -44,14 +44,14 @@ Nachdem das Schema erstellt wurde, können Daten in Adobe Campaign-Workflows ver
 
 Unten finden Sie die Liste aller externen Datenbanken, die mit dem FDA-Modul von Adobe Campaign kompatibel sind:
 
-* Microsoft Azure Synapse Analytics. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#azure-external).
-* Snowflake. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
-* Hadoop. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3).
-* Oracle. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
-* Netezza. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
-* Sybase IQ. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq).
-* Teradata. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
-* SAP HANA. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../platform/using/specific-configuration-database.md).
+* Microsoft Azure Synapse Analytics. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#azure-external).
+* Snowflake. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake).
+* Hadoop. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3).
+* Oracle. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-oracle).
+* Netezza. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-netezza).
+* Sybase IQ. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-sybase-iq).
+* Teradata. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md#configure-access-to-teradata).
+* SAP HANA. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/specific-configuration-database.md).
 
 ## Best Practices und Empfehlungen {#best-practices-and-recommendations}
 
