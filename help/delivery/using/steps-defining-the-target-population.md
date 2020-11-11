@@ -1,7 +1,7 @@
 ---
-title: Zielpopulation bestimmen
-seo-title: Zielpopulation bestimmen
-description: Zielpopulation bestimmen
+title: Bestimmen der Zielpopulation
+seo-title: Bestimmen der Zielpopulation
+description: Bestimmen der Zielpopulation
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,9 +11,9 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1723'
 ht-degree: 100%
 
@@ -171,7 +171,7 @@ Sie können die Größe der Zielpopulation verringern. Geben Sie dazu die Anzahl
 
 Ein Testversand ist eine spezifische Nachricht, die den eigentlichen Versand prüft, bevor er an die Hauptzielgruppe gesendet wird. Die Testversand-Empfänger sind verantwortlich für die Überprüfung des Inhalts und der Form von Sendungen.
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#seeds-and-proofs-video).
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#seeds-and-proofs-video).
 
 
 Um die Testversand-Zielgruppe auszuwählen, gehen Sie wie folgt vor:
@@ -234,7 +234,7 @@ Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können 
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
->[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12&captions=ger)
 
 Siehe auch:
 * [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
