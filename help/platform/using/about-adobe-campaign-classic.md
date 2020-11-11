@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: a2b43311-737c-4a3b-a6af-1788879f9414
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 84f14b7a8c4ed05b309109c76be8c8c7b7b52d83
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '899'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dia
 
 >[!NOTE]
 >
->Adobe Campaign Classic is available in v6.11 and v7. Except when mentioned, help materials apply to both versions, in the [latest build](../../rn/using/latest-release.md). Screenshots beziehen sich auf die Benutzeroberfläche von Campaign Classic v7.
+>Adobe Campaign Classic ist in v6.11 und v7 verfügbar. Sofern nicht anders angegeben, gelten die Hilfematerialien für beide Versionen in der jeweils [aktuellen Build-Nummer](../../rn/using/latest-release.md). Screenshots beziehen sich auf die Benutzeroberfläche von Campaign Classic v7.
 
 ## Wichtigste Funktionen {#key-capabilities}
 
