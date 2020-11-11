@@ -1,7 +1,7 @@
 ---
-title: Versand validieren
-seo-title: Versand validieren
-description: Versand validieren
+title: Validieren des Versands
+seo-title: Validieren des Versands
+description: Validieren des Versands
 seo-description: null
 page-status-flag: never-activated
 uuid: 8bf70ea4-5f28-4d85-b5ce-0bd3ed3eea55
@@ -11,11 +11,11 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 discoiquuid: df29492f-ed73-4ab8-b075-e76b3b9ebce3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 16985c1ddcd380cfc1ca4960b35bb5e78628f464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. **Versand analysieren** – hier erfolgt die Vorbereitung der zu sendenden Nachrichten. Siehe [Versand analysieren ](#analyzing-the-delivery).
 
-   The rules applied during analysis are presented in [this section](#validation-process-with-typologies). Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](#changing-the-approval-mode) detailliert beschrieben.
+   Die während der Analyse angewendeten Regeln werden in [diesem Abschnitt](#validation-process-with-typologies) erläutert. Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](#changing-the-approval-mode) detailliert beschrieben.
 
 1. **Testsendungen durchführen** – hier erfolgt die Validierung von Inhalt, URLs, Personalisierungsfeldern usw. Siehe [Testversand durchführen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof) und [Spezifische Testversand-Zielgruppe definieren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target).
 
