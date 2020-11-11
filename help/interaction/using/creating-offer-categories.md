@@ -1,7 +1,7 @@
 ---
-title: Angebotskategorien
-seo-title: Angebotskategorien
-description: Angebotskategorien
+title: Erstellen von Angebotskategorien
+seo-title: Erstellen von Angebotskategorien
+description: Erstellen von Angebotskategorien
 seo-description: null
 page-status-flag: never-activated
 uuid: 5ac0ae5e-1731-4699-b4ef-f3867ad0ab58
@@ -11,11 +11,11 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 discoiquuid: a9fad813-3256-4a00-ba74-7dbaba9e8e23
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '292'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    Nun haben Sie je nach Bedarf die Möglichkeit,
 
-   * Assign eligibility dates from the **[!UICONTROL Eligibility]** tab.
+   * im Tab **[!UICONTROL Eignung]** Daten für die Verwendung zuzuweisen.
 
       ![](assets/offer_cat_create_004.png)
 
-   * Enter key words that may be used to select offers from within this category, using the **[!UICONTROL Themes]** field.
+   * im Feld **[!UICONTROL Themen]** Schlüsselwörter anzugeben, die eine spätere Auswahl der in der Kategorie enthaltenen Angebote erleichtern.
 
       ![](assets/offer_cat_create_005.png)
 
@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
       >
       >Bei Abfrage des Angebotsmoduls werden nur die Angebote ausgegeben, deren Themen oder Kategorien mit den in der Abfrage angegebenen Parametern übereinstimmen.
 
-   * Temporarily &quot;boost&quot; the offer weight of a category for a given period via the **[!UICONTROL Multiplier weight]** field.
+   * im Feld **[!UICONTROL Angebotsgewichtung]** können Sie die Gewichtung von einer Kategorie zugehörigen Angeboten für einen von Ihnen festgelegten Zeitraum erhöhen.
 
       ![](assets/offer_cat_create_006.png)
 
