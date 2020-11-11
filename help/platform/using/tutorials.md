@@ -11,11 +11,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: c7c67ee5-ad60-420f-b597-08c388049529
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 677d631a075f50a80c9379fff0c17d3d06c7e803
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -42,18 +42,18 @@ Lernen Sie Adobe Campaign besser kennen, indem Sie sich die folgenden Anwendungs
 * [Erstellen von Übersichten](../../web/using/use-cases--creating-overviews.md): Erstellen Sie Übersichts-Webanwendungen, um alle Webanwendungen in Ihrer Datenbank anzuzeigen.
 * [Anwendungsbeispiel für Workflow](../../workflow/using/about-workflow-use-cases.md): Mithilfe dieser Anwendungsbeispiele lernen Sie die verschiedenen Verwendungsmöglichkeiten von Workflows kennen.
 
-## Selbsthilfe {#how-to-videos}
+## Eigenständig lernen {#how-to-videos}
 
-Zusätzlich zur Produktdokumentation können Sie auf die nachfolgend aufgelisteten Selbsthilfe-Ressourcen der Kampagne zugreifen.
+Zusätzlich zur Produktdokumentation stehen Ihnen nachfolgend verschiedene Ressourcen zur Verfügung, anhand derer Sie sich eigenständig Wissen aneignen können.
 
-### Übungsvideos
+### Anleitungsvideos
 
-Entdecken Sie die wichtigsten Videofunktionen von Adobe Campaign. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/overview.html)
+Diese Videos bringen Ihnen die wichtigsten Funktionen von Adobe Campaign näher. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/overview.html)
 
 ### Schulungssitzungen und Videos
 
-Neben diesen kurzen und detaillierten Videos finden Sie [Schulungskurse](https://learning.adobe.com/catalog.html) und [Präsentationsvideos](https://www.adobe.com/training/video.html) zu Funktionen auf Adobe.com.
+Neben diesen Kurzvideos mit Detailwissen finden Sie auf der Adobe-Website auch [Schulungskurse](https://learning.adobe.com/catalog.html) sowie [Videopräsentationen](https://www.adobe.com/training/video.html) der Funktionen.
 
-### Experience League-Kurse
+### Kurse von Experience League
 
-Sie können auch die [empfohlenen Kurse](https://experienceleague.adobe.com/?lang=en#dashboard/learning) für Adobe Campaign Classic besuchen: Kurse sind fachkundige Kurssammlungen, die Ihnen helfen, schnell Fähigkeiten und Kenntnisse zu erwerben.
+Außerdem stehen Ihnen mit den [Kursempfehlungen](https://experienceleague.adobe.com/?lang=de#dashboard/learning) für Adobe Campaign Classic von Experten kuratierte Lerninhalte offen, die Ihnen auf effiziente Weise Fähigkeiten und Know-how vermitteln.
