@@ -16,7 +16,7 @@ translation-type: tm+mt
 source-git-commit: 160af30e13bb6a81672477f4f801dbd5cc3c767c
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 1%
+ht-degree: 34%
 
 ---
 
@@ -38,7 +38,7 @@ Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
 
 >[!NOTE]
 >
->Wenn Sie die Systemadministrator-Berechtigungen des IMS Org anfordern müssen, befolgen Sie das [in dieser Seite](https://helpx.adobe.com/ca/enterprise/admin-guide.html/ca/enterprise/using/manage-developers.ug.html) beschriebene Verfahren, um diesen Zugriff für alle Product-Profil bereitzustellen.
+>If you need to request the System Administrator privileges of the IMS Org, follow the procedure detailed [in this page](https://helpx.adobe.com/de/enterprise/admin-guide.html/de/enterprise/using/manage-developers.ug.html) to provide this access for the all Product Profiles.
 
 
 ## Schritt 1: I/O-Projekt der Adobe erstellen/aktualisieren {#creating-adobe-io-project}
@@ -47,53 +47,53 @@ Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
 
    >[!NOTE]
    >
-   > Stellen Sie sicher, dass Sie beim richtigen IMSorg Portal angemeldet sind.
+   > Stellen Sie sicher, dass Sie beim richtigen IMSorg-Portal angemeldet sind.
 
-1. Extrahieren Sie die vorhandene Integrations-Client-ID aus der Konfigurationsdatei ims/authIMSTAClientId. Nicht vorhandenes oder leeres Attribut zeigt an, dass die Client-ID nicht konfiguriert ist.
+1. Entnehmen Sie die vorhandene Integrations-Client-ID aus der Konfigurationsdatei &quot;ims/authIMSTAClientId&quot; der Instanz. Nicht vorhandenes oder leeres Attribut zeigt an, dass die Client-ID nicht konfiguriert ist.
 
    >[!NOTE]
    >
-   >Wenn Ihre Client-ID leer ist, können Sie direkt ein neues Projekt **[!UICONTROL in der Adobe I/O]** erstellen.
+   >If your Client ID is empty, you can directly **[!UICONTROL Create a New project]** in Adobe I/O.
 
-1. Identifizieren Sie das vorhandene Projekt mit der extrahierten Client-ID. Suchen Sie nach vorhandenen Projekten mit derselben Client-ID wie die im vorherigen Schritt extrahierte.
+1. Identifizieren Sie das vorhandene Projekt mit der extrahierten Client-ID. Suchen Sie nach bestehenden Projekten, die dieselbe Client-ID aufweisen wie die im vorherigen Schritt entnommene.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
-1. Wählen Sie **[!UICONTROL + Hinzufügen zu Projekt]** und wählen Sie **[!UICONTROL API]**.
+1. Wählen Sie **[!UICONTROL + Add to Project]** (+ Zu Projekt hinzufügen) und dann **[!UICONTROL API]**.
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
-1. Wählen Sie im Fenster **[!UICONTROL Hinzufügen API]** die Option **[!UICONTROL Adobe Analytics]**.
+1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
 
    ![](assets/do-not-localize/adobe_io_2.png)
 
-1. Wählen Sie als Authentifizierungstyp **[!UICONTROL Dienstkonto (JWT)]** .
+1. Wählen Sie als Authentifizierungstyp **[!UICONTROL Service Account (JWT)]** (Dienstkonto (JWT)).
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Wenn Ihre Client-ID leer war, wählen Sie **[!UICONTROL Generate a key pair (Erstellen eines Schlüsselpaars]** ), um einen öffentlichen und privaten Schlüssel zu erstellen.
+1. If your Client ID was empty, select **[!UICONTROL Generate a key pair]** to create a Public and Private keypair.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. Laden Sie den öffentlichen Schlüssel hoch und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Laden Sie den öffentlichen Schlüssel hoch und klicken Sie auf **[!UICONTROL Next]** (Weiter).
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Wählen Sie das Profil **Analytics-&lt; Organisationsname>** und klicken Sie auf Konfigurierte API **[!UICONTROL speichern]**.
+1. Wählen Sie das Produktprofil namens **Analytics-&lt; Organisationsname >** und klicken Sie auf **[!UICONTROL Save configured API]** (Konfigurierte API speichern).
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. Wählen Sie in Ihrem Projekt &quot; **[!UICONTROL Dienstkonto (JWT)]** &quot;und kopieren Sie die folgenden Informationen:
-   * **[!UICONTROL Client-ID]**
-   * **[!UICONTROL geheimer Clientschlüssel]**
-   * **[!UICONTROL Technische Konto-ID]**
-   * **[!UICONTROL Organisationskennung]**
+1. Wählen Sie in Ihrem Projekt **[!UICONTROL Service Account (JWT)]** (Dienstkonto (JWT)) aus und kopieren Sie die folgenden Informationen:
+   * **[!UICONTROL Client ID]** (Client-ID)
+   * **[!UICONTROL Client Secret]** (Client-Geheimnis)
+   * **[!UICONTROL Technical account ID]** (Kennung des technischen Kontos)
+   * **[!UICONTROL Organization ID]** (Organisationskennung)
 
    ![](assets/do-not-localize/adobe_io_7.png)
 
-## Schritt 2: hinzufügen der Projektanmeldeinformationen in Adobe Campaign {#add-credentials-campaign}
+## Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 
-Um die Projektberechtigungen in Adobe Campaign hinzuzufügen, führen Sie den folgenden Befehl als &quot;neolane&quot;Benutzer auf allen Containern der Adobe Campaign-Instanz aus, um die Anmeldeinformationen für das **[!UICONTROL technische Konto]** in die Konfigurationsdatei der Instanz einzufügen.
+To add the project credentials in Adobe Campaign, run the following command as &#39;neolane&#39; user on all the containers of the Adobe Campaign instance to insert the **[!UICONTROL Technical Account]** credentials in the instance configuration file.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -101,11 +101,11 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 >[!NOTE]
 >
->Sie sollten den privaten Schlüssel im Base64 UTF-8-Format kodieren. Denken Sie daran, die neue Zeile vor der Kodierung aus dem Schlüssel zu entfernen, mit Ausnahme des privaten Schlüssels. Der private Schlüssel muss mit dem für die Erstellung der Integration verwendeten identisch sein.
+>Sie sollten den privaten Schlüssel im Base 64-UTF-8-Format kodieren. Achten Sie darauf, vor dem Kodieren die neue Zeile aus dem Schlüssel zu entfernen (mit Ausnahme des privaten Schlüssels). Der private Schlüssel muss mit dem für die Erstellung der Integration verwendeten Schlüssel identisch sein.
 
-## Schritt 3: Pipeline-Tag aktualisieren {#update-pipelined-tag}
+## Schritt 3: Aktualisieren des Pipelined-Tags {#update-pipelined-tag}
 
-Um [!DNL pipelined] Tag zu aktualisieren, müssen Sie den Authentifizierungstyp wie folgt auf Adobe-E/A-Projekt in der Konfigurationsdatei **config-&lt; instance-name >.xml** aktualisieren:
+To update [!DNL pipelined] tag, you need to update the authentication type to Adobe I/O project in the configuration file **config-&lt; instance-name >.xml** as follows:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
