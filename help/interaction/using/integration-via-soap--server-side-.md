@@ -1,7 +1,7 @@
 ---
-title: SOAP-Integration (serverseitig)
-seo-title: SOAP-Integration (serverseitig)
-description: SOAP-Integration (serverseitig)
+title: Integration mittels SOAP (Server-seitig)
+seo-title: Integration mittels SOAP (Server-seitig)
+description: Integration mittels SOAP (Server-seitig)
 seo-description: null
 page-status-flag: never-activated
 uuid: 678371c5-4246-4886-994e-30dbbc70f14a
@@ -11,16 +11,16 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 discoiquuid: 477a2c31-0403-4db1-a372-c75dca58380d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8fc3e793ec544948049fc122b44b6bffdebecba0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '323'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Integration über SOAP (serverseitig){#integration-via-soap-server-side}
+# Integration mittels SOAP (Server-seitig){#integration-via-soap-server-side}
 
 Die für die Angebotsverwaltung verfügbaren SOAP-Webdienste unterscheiden sich von den in Adobe Campaign gewöhnlich verwendeten. Sie sind über die im vorangehenden Kapitel beschriebene Interaction-URL zugänglich und ermöglichen es, ein Angebot für einen spezifischen Kontakt vorzuschlagen oder zu aktualisieren.
 
