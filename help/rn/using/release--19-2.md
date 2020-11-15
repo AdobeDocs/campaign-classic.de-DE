@@ -11,9 +11,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 3d6515ca291715e5e02f9b5404803e9087555284
+workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 100%
 
@@ -107,7 +107,7 @@ _2. Dezember 2019_
 
 * Optimierung des Speicherverbrauchs für Push-Benachrichtigungen.
 * Zur Optimierung der Leistung und des Speicherplatzes wurde die Handhabung der Datei **login.log** verbessert. Die Datei wird nun in mehrere Dateien aufgeteilt, wobei pro Tag maximal 365 Dateien gespeichert werden – [mehr dazu](../../production/using/log-files.md)
-* Das externe Microsoft Dynamics CRM-Konto kann jetzt mit Passwortdaten (Passwort + Benutzername) oder Zertifikat (privater Schlüssel) konfiguriert werden – [mehr dazu](../../platform/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+* Das externe Microsoft Dynamics CRM-Konto kann jetzt mit Passwortdaten (Passwort + Benutzername) oder Zertifikat (privater Schlüssel) konfiguriert werden – [mehr dazu](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
 * Dem Hadoop FDA-Connector wurden einige Verbesserungen hinzugefügt, um die Zuverlässigkeit zu erhöhen
 * Es wurde ein spezieller Schutzmechanismus hinzugefügt, bevor das Hochladen von öffentlichen Ressourcen auf den Server erlaubt wird.
 * Es wurden neue [Campaign-Optionen](../../installation/using/configuring-campaign-options.md) hinzugefügt:
