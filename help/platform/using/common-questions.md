@@ -9,10 +9,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 16dbe423-018f-4666-9901-2120a8dc609a
-translation-type: ht
-source-git-commit: cb96a238f4c8e413377ce6102b065b91badfe6db
-workflow-type: ht
-source-wordcount: '543'
+translation-type: tm+mt
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+workflow-type: tm+mt
+source-wordcount: '529'
 ht-degree: 100%
 
 ---
@@ -66,11 +66,11 @@ Starten Sie die Adobe Campaign-Clientkonsole und geben Sie Ihr Login und Passwor
 
 ## 7. Mit welchen Systemen und Komponenten ist Campaign Classic kompatibel? {#which-systems-and-components-campaign-classic-is-compatible-with-}
 
-Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign Classic](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
+Eine Liste mit allen Systemen und Komponenten, die vom aktuellen Build von Campaign unterstützt werden, finden Sie in der [Kompatibilitätsmatrix von Adobe Campaign Classic](../../rn/using/compatibility-matrix.md).
 
 ## 8. Wo finde ich die Versionshinweise für Campaign Classic? {#where-are-campaign-classic-release-notes-}
 
-Die aktuellen Versionshinweise für Campaign Classic finden Sie [auf dieser Seite](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/release-notes/latest-release.html).
+Die aktuellen Versionshinweise für Campaign Classic finden Sie [auf dieser Seite](../../rn/using/latest-release.md).
 
 ## 9. Wie funktioniert das Verfahren der Domain-Konfiguration? {#what-is-the-procedure-for-domain-delegation-}
 
