@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: architecture-and-hosting-models
 discoiquuid: 7c28c179-eb18-437e-baf2-25829566c766
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 1%
+source-wordcount: '1336'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ Adobe Campaign basiert auf einer serviceorientierten Architektur (SOA) und umfas
 
 >[!CAUTION]
 >
->Sofern nicht ausdrücklich anders angegeben, sind die Installation, Updates und Wartung auf allen Komponenten einer Adobe Campaign-Plattform Sache des bzw. der Computeradministratoren, der bzw. die diese hostet. Dies umfasst die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) zwischen Komponenten.
+>Sofern nicht ausdrücklich anders angegeben, sind die Installation, Updates und Wartung auf allen Komponenten einer Adobe Campaign-Plattform Sache des bzw. der Computeradministratoren, der bzw. die diese hostet. Dies umfasst die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Kampagne- [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
 
 ## Präsentationsebene {#presentation-layer}
 
