@@ -1,6 +1,6 @@
 ---
-title: Informationen zum Adobe Campaign Classic-Datenmodell
-description: Erfahren Sie, wie Sie das Datenmodell der Campaign erweitern, Schemata bearbeiten, APIs verwenden und vieles mehr.
+title: Erste Schritte mit dem Campaign Classic-Datenmodell
+description: Erfahren Sie, wie Sie das Datenmodell der Campaign erweitern, Schemata bearbeiten, APIs verwenden und vieles mehr
 page-status-flag: never-activated
 uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
 contentOwner: sauviat
@@ -10,35 +10,21 @@ content-type: reference
 topic-tags: schema-reference
 discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 8%
+source-wordcount: '988'
+ht-degree: 6%
 
 ---
 
 
-# About the Campaign data model{#about-data-model}
+# Get started with Campaign data model{#about-data-model}
 
-In diesem Abschnitt werden die Grundlagen des Adobe Campaign Classic-Datenmodells beschrieben, um ein besseres Verständnis der integrierten Kampagnen und deren Interaktion zu erhalten.
-
-Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion.
-
-Um die Tabellenbeschreibung aufzurufen, wählen Sie &quot; **[!UICONTROL Admin&quot;> &quot;Konfiguration&quot;> &quot;Schema]**&quot;aus, wählen Sie eine Ressource aus der Liste und klicken Sie auf die Registerkarte &quot; **[!UICONTROL Dokumentation]** &quot;.
-
-![](assets/data-model_documentation-tab.png)
-
-Weitere Informationen zur Beschreibung des Standarddatenmodells für Campaign Classic finden Sie in [diesem Abschnitt](../../configuration/using/data-model-description.md).
-
-Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Reihe integrierter Tabellen und deren Interaktion. Die wichtigsten Tabellen und Konzepte sind auf dieser Seite aufgelistet.
 
 ## Übersicht {#data-model-overview}
 
 Adobe Campaign stützt sich auf eine relationale Datenbank, die Tabellen enthält, die miteinander verknüpft sind. Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben:
-
->[!NOTE]
->
->Weitere Informationen zur Kampagne-Datenmodellarchitektur und entsprechenden Best Practices finden Sie in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-model-architecture).
 
 ### Empfänger {#recipient-table}
 
@@ -100,7 +86,7 @@ Weitere Informationen zum Konfigurieren von Erweiterungsschemas zur Erweiterung 
 
 ## Verwenden einer benutzerdefinierten Empfängertabelle {#custom-recipient-table}
 
-Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [vordefinierte Empfänger-Tabelle](#default-recipient-table)verwenden oder eine nicht standardmäßige Empfänger-Tabelle erstellen, um Ihre Marketing-Profil zu speichern.
+Beim Entwerfen Ihres Adobe Campaign-Datenmodells können Sie die [vordefinierte Empfänger-Tabelle](#default-recipient-table)verwenden oder eine Tabelle mit [benutzerspezifischen Empfängern](../../configuration/using/about-custom-recipient-table.md) erstellen, um Ihre Marketing-Profil zu speichern.
 
 Wenn Ihr Datenmodell nicht in die Empfänger-orientierte Struktur passt, können Sie andere Tabellen als Zielgruppendimension innerhalb von Adobe Campaign einrichten. Dies kann z. B. relevant sein, wenn Sie Haushalte, Konten (wie Mobiltelefone) und Firmen/Sites Zielgruppe benötigen, anstatt einfach nur Empfänger.
 
@@ -112,22 +98,29 @@ Sämtliche bei der Verwendung einer Tabelle mit benutzerdefiniertem Empfänger e
 
 Die Verwendung einer Tabelle mit benutzerdefinierten Empfängern bietet folgende Vorteile:
 
-### Flexibles Datenmodell {#flexible-data-model}
+* **Flexibles Datenmodell** - Die vordefinierte Tabelle für Empfänger ist nutzlos, wenn Sie die meisten Empfänger-Tabellenfelder nicht benötigen oder wenn das Datenmodell nicht auf Empfänger ausgerichtet ist.
 
-Die vordefinierte Empfänger-Tabelle ist nutzlos, wenn Sie die meisten Empfänger-Tabellenfelder nicht benötigen oder wenn das Datenmodell nicht vom Empfänger zentriert ist.
+* **Skalierbarkeit** - Große Volumes erfordern eine optimierte Tabelle mit wenigen Feldern, um ein effizientes Design zu gewährleisten. Die vordefinierte Tabelle mit Empfängern hätte zu viele nutzlose Felder, was sich auf die Leistung und mangelnde Effizienz auswirken könnte.
 
-### Skalierbarkeit {#scalability}
+* **Datenspeicherort** : Wenn sich Daten auf einer externen vorhandenen Marketingdatenbank befinden, ist möglicherweise zu viel Aufwand erforderlich, um die vordefinierte Empfänger-Tabelle zu verwenden. Die Erstellung einer neuen Struktur auf der Grundlage einer vorhandenen Struktur ist einfacher.
 
-Große Volumes erfordern eine optimierte Tabelle mit wenigen Feldern, um ein effizientes Design zu gewährleisten. Die vordefinierte Tabelle mit Empfängern hätte zu viele nutzlose Felder, was sich auf die Leistung und mangelnde Effizienz auswirken könnte.
-
-### Datenposition {#data-location}
-
-Wenn sich Daten auf einer externen, vorhandenen Marketingdatenbank befinden, ist möglicherweise zu viel Aufwand erforderlich, um die vordefinierte Empfänger-Tabelle zu verwenden. Die Erstellung einer neuen Struktur auf der Grundlage einer vorhandenen Struktur ist einfacher.
-
-### Einfache Migration {#easy-migration}
-
-Es ist keine Wartung erforderlich, um zu überprüfen, ob alle Erweiterungen nach der Aktualisierung noch gültig sind.
+* **Einfache Migration** - Es ist keine Wartung erforderlich, um zu überprüfen, ob alle Erweiterungen nach der Aktualisierung noch gültig sind.
 
 >[!IMPORTANT]
 >
 >Die Verwendung einer Tabelle mit benutzerdefiniertem Empfänger ist für fortgeschrittene Benutzer reserviert und unterliegt bestimmten Einschränkungen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
+
+## Verwandte Themen
+
+Weitere Informationen zum Datenmodell der Kampagne finden Sie in den folgenden Abschnitten:
+
+* **Beschreibung der Haupttabellen** - Weitere Informationen zur Beschreibung des Standarddatenmodells des Campaign Classic finden Sie in [diesem Abschnitt](../../configuration/using/data-model-description.md).
+
+* **Vollständige Tabellenbeschreibung** - Um die vollständige Tabellenbeschreibung aufzurufen, gehen Sie zu **[!UICONTROL Admin > Konfiguration > Datenelemente]**, wählen Sie eine Schema aus der Liste und klicken Sie auf die Registerkarte **[!UICONTROL Dokumentation]** .
+
+   ![](assets/data-model_documentation-tab.png)
+
+
+* **Schema** der Kampagne - Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. For more on Adobe Campaign schemas, read out [this section](../../configuration/using/about-schema-reference.md).
+
+* **Best Practices** für Datenmodelle - Erfahren Sie mehr über die Kampagne-Datenmodellarchitektur und zugehörige Best Practices in [diesem Abschnitt](../../configuration/using/data-model-best-practices.md#data-model-architecture).
