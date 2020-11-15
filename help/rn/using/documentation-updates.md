@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: 36fef519be93b33d55a96992c1ce234f2eaea696
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
 workflow-type: tm+mt
 source-wordcount: '3948'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Die Seite über die Integration von Experience Cloud Triggers und Adobe Campaign
 
 Unterstützung für Emoticons – [mehr dazu](../../delivery/using/customizing-emoticon-list.md)
 
-Azure Synapse FDA-Connector – [mehr dazu](../../platform/using/specific-configuration-database.md#configure-access-to-azure-synapse)
+Azure Synapse FDA-Connector – [mehr dazu](../../installation/using/configure-fda-synapse.md)
 
 Datenschutzgesetze in Thailand und Brasilien – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
@@ -188,7 +188,7 @@ Der Abschnitt mit Best Practices für Datenpackages wurde verschoben und überar
 
 ## April 2020 {#april-2020}
 
-Die Tabelle mit den FDA-Berechtigungen wurde in die Dokumentation „Zugriff auf eine externe Datenbank (FDA)“ verschoben. [Mehr dazu](../../platform/using/remote-database-access-rights.md)
+Die Tabelle mit den FDA-Berechtigungen wurde in die Dokumentation „Zugriff auf eine externe Datenbank (FDA)“ verschoben. [Mehr dazu](../../installation/using/remote-database-access-rights.md)
 
 Die FAQs wurden um Tipps zum Löschen von Soft Cache und Hard Cache erweitert. [Mehr dazu](../../platform/using/faq-campaign-config.md#perform-soft-cache-clear)
 
@@ -232,9 +232,9 @@ Der Abschnitt zur E-Mail-Archivierung wurde verbessert. [Mehr dazu](../../instal
 
 **Neue Funktionen in Version 20.1**
 
-Snowflake FDA-Connector – [mehr dazu](../../platform/using/specific-configuration-database.md#configure-access-to-snowflake)
+Snowflake FDA-Connector – [mehr dazu](../../installation/using/configure-fda-snowflake.md)
 
-Hadoop FDA Connector-Erweiterungen – [mehr dazu](../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3)
+Hadoop FDA Connector-Erweiterungen – [mehr dazu](../../installation/using/configure-fda-hadoop.md)
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
@@ -292,7 +292,7 @@ Es wurde ein Beispiel für die Verwendung einer Instanzvariablen in einem Workfl
 
 Die Option „WdbcOptions_TempDbName“ wurde der Liste der Kampagnenoptionen hinzugefügt. [Mehr dazu](../../installation/using/configuring-campaign-options.md)
 
-Die Seite „FDA-Matrix“ wurde [hierher](../../platform/using/remote-database-access-rights.md) verschoben.
+Die Seite „FDA-Matrix“ wurde [hierher](../../installation/using/remote-database-access-rights.md) verschoben.
 
 Die Seite „Zugriffsberechtigungsmatrix“ wurde [hierher](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf) verschoben.
 
