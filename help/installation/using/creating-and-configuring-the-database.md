@@ -12,9 +12,9 @@ content-type: reference
 topic-tags: initial-configuration
 discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 1781648fc17d729f451664204f99a77dfaa8c824
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1347'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Wählen Sie die Datenbank-Engine unter den in der Dropdown-Liste aufgeführten a
 
 ![](assets/s_ncs_install_db_select_engine.png)
 
-Unterstützte Datenbanken werden im Abschnitt [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)dargestellt.
+Unterstützte Datenbanken werden in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md)der Kampagne aufgeführt.
 
 Identifizieren Sie den Server und wählen Sie den Typ des Vorgangs aus, der ausgeführt werden soll. In diesem Fall **[!UICONTROL erstellen oder recyceln Sie eine Datenbank]**.
 
