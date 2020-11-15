@@ -1,8 +1,6 @@
 ---
 title: Migrationswarnungen
-seo-title: Migrationswarnungen
 description: Migrationswarnungen
-seo-description: null
 page-status-flag: never-activated
 uuid: 35361471-881c-4aaf-a57b-ed7e89a97eae
 contentOwner: sauviat
@@ -12,10 +10,10 @@ content-type: reference
 topic-tags: migration-overview
 discoiquuid: 1fa1fe0f-c392-413a-9fa0-d1b4e10e2e5e
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 6%
+source-wordcount: '181'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +21,7 @@ ht-degree: 6%
 # Migrationswarnungen{#migration-warnings}
 
 * Der Migrationsprozess ist für erfahrene Benutzer reserviert. Sie müssen von mindestens einem Datenbankexperten, einem Systemadministrator und einem Anwendungsentwickler aus Adobe Campaign unterstützt werden.
-* Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die verwendeten Systeme und Systemkomponenten tatsächlich mit v7 kompatibel sind. Prüfen Sie die [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
+* Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die verwendeten Systeme und Systemkomponenten tatsächlich mit v7 kompatibel sind. Prüfen Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 * Wenn Sie Adobe Campaign Cloud Messaging (zuvor Mid-Sourcing) verwenden, wenden Sie sich vor Beginn des gesamten Migrationsvorgangs an Adobe Campaign.
 * Bevor Sie einen Migrationsprozess starten, **müssen** Sie Ihre Daten sichern.
 * Der Migrationsvorgang kann mehrere Tage dauern.
