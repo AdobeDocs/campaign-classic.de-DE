@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: installing-campaign-in-linux-
 discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 5%
+source-wordcount: '896'
+ht-degree: 3%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 5%
 
 In diesem Abschnitt werden die Schritte für die Vorkonfiguration beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
 
-Die für die Installation von Adobe Campaign erforderliche technische und Softwarekonfiguration ist in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)beschrieben.
+Die für die Installation von Adobe Campaign erforderliche technische und Softwarekonfiguration ist in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md)beschrieben.
 
 Zur Erinnerung: Die folgenden Komponenten müssen installiert und korrekt konfiguriert sein:
 
-* Apache, siehe [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html),
+* Apache, siehe [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md),
 * Java JDK und OpenJDK, siehe [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotheken, siehe [Bibliotheken](#libraries),
 * Ebenen für den Datenbankzugriff, siehe Ebenen für den [Datenbankzugriff](#database-access-layers),
@@ -169,7 +169,7 @@ Die folgenden Konfigurationen sind mit CentOS erforderlich:
 
 Die Zugriffsebenen für die verwendete Datenbank-Engine müssen auf Ihrem Server installiert sein und über das Adobe Campaign-Konto zugänglich sein. Versionen und Installationsmodi können je nach verwendeter Datenbank-Engine variieren.
 
-Die unterstützte Pilotversion wird in [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) erläutert.
+Die unterstützte Pilotversion wird in [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) erläutert.
 
 Überprüfen Sie auch den Abschnitt &quot;Allgemeine [Datenbank](../../installation/using/database.md) &quot;.
 
