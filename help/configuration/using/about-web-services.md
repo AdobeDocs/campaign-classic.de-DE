@@ -1,8 +1,6 @@
 ---
 title: Über Web-Dienste
-seo-title: Über Web-Dienste
 description: Über Web-Dienste
-seo-description: null
 page-status-flag: never-activated
 uuid: f0b21cb3-aa75-4f54-a9f5-64e880f93e53
 contentOwner: sauviat
@@ -12,9 +10,9 @@ content-type: reference
 topic-tags: api
 discoiquuid: 65919173-3ce0-4d98-936b-f4581df536ae
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 75ab345e3b9360229ecc3ba9529a33e320228fa0
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '658'
 ht-degree: 5%
 
 ---
@@ -30,7 +28,7 @@ Adobe Campaign-APIs werden in JavaScript innerhalb der Anwendung und in SOAP au�
 
 >[!IMPORTANT]
 >
->Die Anzahl der autorisierten Engine-Aufrufe pro Tag hängt von Ihrem Lizenzvertrag ab. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>Die Anzahl der autorisierten Engine-Aufrufe pro Tag hängt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
 >Eine Liste aller APIs mit ihrer vollständigen Beschreibung finden Sie in [dieser Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Voraussetzungen {#prerequisites}
@@ -122,7 +120,7 @@ In SOAP werden die Parameter in der Reihenfolge ihres Erscheinungsbilds erkannt.
 
 Das Ergebnis der Abfrage wird aus dem `<pdomoutput>` Element eingegeben.
 
-## Umgang mit Fehlern      {#error-management}
+## Umgang mit Fehlern       {#error-management}
 
 Beispiel für SOAP-Fehlerantwort:
 
