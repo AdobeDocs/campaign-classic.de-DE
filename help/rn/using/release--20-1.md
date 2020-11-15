@@ -9,9 +9,9 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ _17. Februar 2020_
  <tbody> 
   <tr> 
    <td> <p>Snowflake ist ein vollständig verwaltetes Cloud Data Warehouse, das sowohl auf der Speicher- als auch der Rechenebene skaliert werden kann. Mit dem neuen Connector kann Adobe Campaign jetzt die Leistung von Snowflake nutzen, um Big-Data-Segmentierungen durchzuführen. Dieser Connector steht allen Kunden zur Verfügung, einschließlich jenen, die von Adobe gehostet werden.</p>
-    <p>Weiterführende Informationen finden Sie in der <a href="../../platform/using/specific-configuration-database.md#configure-access-to-snowflake">ausführlichen Dokumentation</a> und im <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">Tutorial-Video</a>.</p>
+    <p>Weiterführende Informationen finden Sie in der <a href="../../installation/using/configure-fda-snowflake.md">ausführlichen Dokumentation</a> und im <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/administrating/fda/big-data-segmentation-on-snowflake.html">Tutorial-Video</a>.</p>
    </td> 
   </tr> 
  </tbody> 
@@ -62,7 +62,7 @@ _17. Februar 2020_
  <tbody> 
   <tr> 
    <td> <p>Der Hadoop FDA-Connector wurde optimiert und unterstützt jetzt sowohl Hadoop 3.0 als auch Cloudera.</p>
-    <p>Weitere Informationen finden Sie im <a href="../../platform/using/specific-configuration-database.md#configure-access-to-hadoop-3">entsprechenden Handbuch</a>.</p>
+    <p>Weitere Informationen finden Sie im <a href="../../installation/using/configure-fda-hadoop.md">entsprechenden Handbuch</a>.</p>
    </td> 
   </tr> 
  </tbody> 
