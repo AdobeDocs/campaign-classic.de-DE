@@ -10,17 +10,17 @@ content-type: reference
 topic-tags: installing-campaign-in-windows-
 discoiquuid: faaecbd6-f707-4307-8921-04d8993c2c47
 translation-type: tm+mt
-source-git-commit: f8539433274e531e34b7512ce1b6385d67e8e332
+source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 19%
+source-wordcount: '141'
+ht-degree: 17%
 
 ---
 
 
 # Voraussetzungen für die Installation von Campaign unter Windows{#prerequisites-of-campaign-installation-in-windows}
 
-Die zur Installation des Adobe Campaigns erforderliche technische Konfiguration und Software wird in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)dargestellt.
+Die zur Installation des Adobe Campaigns erforderliche technische Konfiguration und Software wird in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md)dargestellt.
 
 Der Installationsvorgang für den Adobe Campaign-Server zur Verwendung mehrerer Instanzen wird nachfolgend unter [Installieren des Servers](../../installation/using/installing-the-server.md)beschrieben.
 
