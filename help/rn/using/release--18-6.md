@@ -11,11 +11,11 @@ audience: rn
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 79a6d3cf-2425-49b9-9b92-b56be26438bf
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '829'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+workflow-type: tm+mt
+source-wordcount: '811'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ _22. August 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an den Kundendienst [der](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
 **Neue Funktionen?**
 
@@ -42,7 +42,7 @@ _22. August 2018_
  <tbody> 
   <tr> 
    <td> Query Banding<br /> </td> 
-   <td> <p>Wenn mehrere Campaign-Benutzer auf dasselbe externe FDA-Teradata-Konto zugreifen, können Sie jetzt für jeden Benutzer ein Query Banding (Schlüssel/Wert-Paar) vergeben. Jedes Mal, wenn ein Campaign-Benutzer eine Abfrage für die Teradata-Datenbank durchführt, kann Adobe Campaign nun Metadaten im Zusammenhang mit dem Benutzer senden. Diese Daten, die aus einer Liste von Schlüsseln und Werten bestehen, können dann von Teradata-Administratoren beispielsweise für Audits oder zum Verwalten der Zugriffsberechtigungen verwendet werden.</p><p>Weitere Informationen finden Sie im <a href="https://docs.campaign.adobe.com/doc/AC/en/PTF_Administration_basics_External_accounts.html#Teradata_external_account">entsprechenden Handbuch</a>.</p> </td>
+   <td> <p>Wenn mehrere Campaign-Benutzer auf dasselbe externe FDA-Teradata-Konto zugreifen, können Sie jetzt für jeden Benutzer ein Query Banding (Schlüssel/Wert-Paar) vergeben. Jedes Mal, wenn ein Campaign-Benutzer eine Abfrage für die Teradata-Datenbank durchführt, kann Adobe Campaign nun Metadaten im Zusammenhang mit dem Benutzer senden. Diese Daten, die aus einer Liste von Schlüsseln und Werten bestehen, können dann von Teradata-Administratoren beispielsweise für Audits oder zum Verwalten der Zugriffsberechtigungen verwendet werden.</p><p>Weitere Informationen finden Sie im <a href="../../installation/using/external-accounts.md">entsprechenden Handbuch</a>.</p> </td>
   </tr> 
  </tbody> 
 </table>
@@ -84,7 +84,7 @@ _25. Juni 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](../../production/using/build-upgrade.md) durch oder kontaktieren Sie den [technischen Support](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
