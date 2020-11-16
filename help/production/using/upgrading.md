@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: updating-adobe-campaign
 discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 7e56e4f98ffab752f0b86bb8620fb1b4af6a3dca
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 10%
+source-wordcount: '1185'
+ht-degree: 9%
 
 ---
 
@@ -73,7 +73,7 @@ Um die Aktualisierungsdatei auszuführen, führen Sie die folgenden Schritte aus
 
 1. Führen Sie **setup.exe** aus.
 
-   Um diese Datei herunterzuladen, rufen Sie die Seite &quot;Adobe Campaign-Support&quot;( [https://support.neolane.net/](https://support.neolane.net/)) über den Link &quot; **Download-Center** &quot;auf.
+   Um diese Datei herunterzuladen, stellen Sie eine Verbindung mit dem [Software-Distributionsportal](https://experience.adobe.com/downloads) her und verwenden Sie Ihre Anmeldeinformationen. Learn more about Software distribution in [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Select the installation mode: choose **[!UICONTROL Update or repair]**
 1. Klicken Sie auf **[!UICONTROL Weiter]** .
@@ -127,7 +127,7 @@ Informationen zum Aktualisieren der Client-Konsole finden Sie in [diesem Abschni
 
 ### Aktualisierte Pakete abrufen {#obtain-updated-packages}
 
-Beginn durch Wiederherstellen der beiden aktualisierten Pakete des Adobe Campaigns: Rufen Sie die Seite &quot;Adobe Campaign-Support&quot;( [https://support.neolane.net/](https://support.neolane.net/)) über den Link &quot; **Download-Center** &quot;auf.
+Beginn durch Wiederherstellen der beiden aktualisierten Pakete des Adobe Campaigns: mit Ihren Benutzeranmeldeinformationen eine Verbindung zum [Software-Distributionsportal](https://experience.adobe.com/downloads) herstellen. Learn more about Software distribution in [this page](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Die Datei lautet **nlserver6-v7-XXX.rpm**
 
