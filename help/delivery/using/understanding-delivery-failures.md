@@ -1,8 +1,6 @@
 ---
 title: Ursachen von fehlgeschlagenen Sendungen
-seo-title: Ursachen von fehlgeschlagenen Sendungen
-description: Ursachen von fehlgeschlagenen Sendungen
-seo-description: null
+description: Erfahren Sie, wie Sie Versand-Fehler verstehen.
 page-status-flag: never-activated
 uuid: 03a91f84-77fe-40a9-8be9-a6a35a873ae1
 contentOwner: sauviat
@@ -11,11 +9,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 discoiquuid: 78b58a7a-b387-4d5d-80d5-01c06f83d759
-translation-type: ht
-source-git-commit: 75cbb8d697a95f4cc07768e6cf3585e4e079e171
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+workflow-type: tm+mt
 source-wordcount: '2491'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -247,13 +245,15 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 >Bei gehosteten oder hybriden Installationen, wenn Sie ein Upgrade auf den Enhanced MTA durchgeführt haben:
 >
 >* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
+   >
+   >
+* Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
+   >
+   >
+* Bei Instanzen, die den Enhanced MTA ohne **Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL Eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
 >
->* Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
 >
->* Bei Instanzen, die den Enhanced MTA ohne **Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL Eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
->
->
->Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### E-Mail-Verwaltungsregeln {#email-management-rules}
 
