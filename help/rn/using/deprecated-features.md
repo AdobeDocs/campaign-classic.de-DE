@@ -10,7 +10,7 @@ topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 48acf8cbc52a54a2dd08f0b8f29be57d4e5e006f
+source-git-commit: acb505fac39222e53a3acab6b5c93d10c9d11ba8
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 99%
@@ -62,7 +62,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <td>Veraltete Version von iOS Binary<br></td>
   <td><p>Ab Campaign-Version 20.3 wird die veraltete Version des iOS Binary Connectors nicht mehr unterstützt.<p>
   <p> Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen.
-  <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-http2.html">Mehr dazu</a></p>
+  <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html">Mehr dazu</a></p>
   <p><em>Geplantes Datum für die Entfernung: 2021.</em></p>
   </td>
  </tr>
