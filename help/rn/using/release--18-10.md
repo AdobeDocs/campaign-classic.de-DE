@@ -11,11 +11,11 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+workflow-type: tm+mt
+source-wordcount: '2367'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ _29. Januar 2019_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an den Kundendienst [der](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
 **Neuheiten**
 
@@ -87,7 +87,7 @@ _6. Dezember 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an den Kundendienst [der](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
 **Neuheiten**
 
@@ -109,7 +109,7 @@ _5. November 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](https://docs.campaign.adobe.com/doc/AC/getting_started/DE/buildUpgrade.html) durch oder kontaktieren Sie den [technischen Support](https://support.neolane.net/).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an den Kundendienst [der](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)Adobe.
 
 **Neue Funktionen?**
 
@@ -151,7 +151,7 @@ _5. November 2018_
 
 **Neuheiten**
 
-* Campaign-Classic-APIs sind jetzt auf einer [eigenen Seite](https://docs.campaign.adobe.com/doc/AC/en/jsapi/index.html) verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt die neue Online-Version nutzen.
+* Campaign-Classic-APIs sind jetzt auf einer [eigenen Seite](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt die neue Online-Version nutzen.
 * PostgreSQL 10, Debian 9 und Teradata 16.20 werden jetzt unterstützt. Weiterführende Informationen dazu finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
 * Bei der Erstellung einer SFTP-Verbindung kann jetzt Proxy-Authentifizierung verwendet werden. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration). (NEO-9868)
 * Bei der Erstellung eines einzelnen Versands unter Verwendung der Briefpost-Versandvorlage ist jetzt in den Versandeigenschaften eine Option mit einer **Datumsberechnungsformel** verfügbar. (NEO-9792)
