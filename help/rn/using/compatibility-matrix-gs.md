@@ -9,9 +9,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7p
-translation-type: ht
-source-git-commit: e615b2420d126cd42ed52257491282b36975f9ff
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 7f8b0458f947ae1863c2afb6e67cabf2d23200e1
+workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 100%
 
@@ -308,8 +308,8 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 <tr>
 <td>iOS</td>
 <td>
-<p>iOS 9 bis 12</p>
-<p>mit Mobile SDK (Build 1.0.25), kompatibel mit 32- und 64-Bit-Versionen.</p>
+<p>iOS 9 bis 14</p>
+<p>mit Mobile SDK (Build 1.0.26), kompatibel mit 32- und 64-Bit-Versionen.</p>
 </td>
 </tr>
 </tbody>
