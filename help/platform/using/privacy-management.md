@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: 9240b6e194dbc26fbf37a9ecf88a1ae03f9e7a75
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '897'
 ht-degree: 56%
 
 ---
@@ -24,7 +24,7 @@ Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung der Daten
 
 * This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
-* Es enthält außerdem Informationen zu wichtigen Funktionen zur Verwaltung der Privatsphäre ([Einwilligung, Datenspeicherung und Benutzerrollen](#consent-retention-roles)) sowie Best Practices, die Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen bei der Verwendung von Adobe Campaign helfen.
+* Es enthält außerdem Informationen zu wichtigen Funktionen zur Verwaltung der Privatsphäre ([Zustimmung, Aufbewahrung und Rollen](#consent-retention-roles)) sowie Best Practices, die Ihnen bei der Einhaltung Ihrer Datenschutzbestimmungen bei der Verwendung von Adobe Campaign helfen.
 
 ## Vorschriften über die Verwaltung der Privatsphäre {#privacy-management-regulations}
 
@@ -74,7 +74,7 @@ Die Funktionen, die bei der Verwaltung einiger Aspekte der Zustimmung helfen, si
 
 For more on Consent management, refer to the [detailed documentation](../../delivery/using/managing-subscriptions.md).
 
-Zusätzlich zu den von Adobe Campaign bereitgestellten Tools für die Verwaltung von Zustimmungen haben Sie die Möglichkeit nachzuverfolgen, ob ein Verbraucher sich für den Verkauf von persönlichen Informationen entschieden hat. Siehe [diesen Abschnitt](../../platform/using/privacy-requests.md#sale-of-personal-information).
+Zusätzlich zu den von Adobe Campaign bereitgestellten Tools für die Verwaltung von Zustimmungen haben Sie die Möglichkeit nachzuverfolgen, ob ein Verbraucher sich für den Verkauf von persönlichen Informationen entschieden hat. Siehe [diesen Abschnitt](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
 
 ### Datenbeibehaltung {#data-retention}
 
