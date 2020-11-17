@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: additional-configurations
 discoiquuid: 34ee3d99-4ffb-4279-b994-5ab7abc7cf06
 translation-type: tm+mt
-source-git-commit: 270c86a8a15ebe38907be258aed9d245d2a49b6d
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Dieser Abschnitt beschreibt die Installation und Konfiguration eines Mid-Sourcin
 Die &quot;Mid-Sourcing&quot;-Architektur wird bei der Bereitstellung von [Mid-Sourcing](../../installation/using/mid-sourcing-deployment.md)vorgestellt.
 
 Die Installation eines Mid-Sourcing-Servers erfolgt auf die gleiche Weise wie die Installation eines Servers auf die normale Weise (siehe Standardkonfiguration). Es handelt sich um eine unabhängige Instanz mit einer eigenen Datenbank, die zum Ausführen von Versänden verwendet werden kann. Einfach ausgedrückt enthält es eine zusätzliche Konfiguration, damit Remote-Instanzen Versand im Mid-Sourcing-Modus ausführen können.
+
+>[!CAUTION]
+>
+>Nachdem der Mid-Sourcing-Server eingerichtet und die [Synchronisierung Workflows](../../workflow/using/transfer-to-mid-sourcing.md) zum ersten Mal ausgeführt wurde, sollten Sie sicherstellen, dass der interne Name der Mid-Sourcing-Externe Konti nicht aktualisiert wird.
 
 ## Schritte zum Installieren und Konfigurieren einer Instanz {#steps-for-installing-and-configuring-an-instance}
 
