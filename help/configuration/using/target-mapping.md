@@ -1,8 +1,6 @@
 ---
 title: Target mapping
-seo-title: Target mapping
-description: Target mapping
-seo-description: null
+description: Erfahren Sie, wie Sie ein Zielgruppen-Mapping erstellen
 page-status-flag: never-activated
 uuid: a7dad8eb-c191-4f10-b7d8-63e0699603b7
 contentOwner: sauviat
@@ -12,15 +10,15 @@ content-type: reference
 topic-tags: use-a-custom-recipient-table
 discoiquuid: ff7e6f72-7605-41ee-b25a-1e4618e674d7
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 30eaabba8962c518c734cc4e9ad27065cfe9d467
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 3%
+source-wordcount: '516'
+ht-degree: 2%
 
 ---
 
 
-# Target mapping{#target-mapping}
+# Zielgruppen-Mapping{#target-mapping}
 
 Die Erstellung von Zielgruppen-Mappings ist in zwei Fällen erforderlich:
 
