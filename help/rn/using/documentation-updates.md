@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: latest-documentation-updates
 discoiquuid: 5df34f55-135a-4ea8-afc2-f9427ce5ae7b
 translation-type: tm+mt
-source-git-commit: cb2fb5a338220c54aba96b510a7371e520c2189e
+source-git-commit: 544fa260f9b35239a8fa8fbc141463a7b1898026
 workflow-type: tm+mt
-source-wordcount: '3513'
-ht-degree: 98%
+source-wordcount: '3544'
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,9 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 [Version](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 20.2.3 wurde auf &quot;Allgemeine Verfügbarkeit&quot;(GA) umgestellt.
 
-Der Abschnitt &quot;Datenschutz&quot;wurde um zwei neue Abschnitte erweitert: [Datenschutzverwaltung](../../platform/using/privacy-management.md) und [Verwaltung von Datenschutzanforderungen](../../platform/using/privacy-requests.md).
+Der Abschnitt &quot;Datenschutz&quot;wurde um zwei neue Seiten erweitert: [Datenschutzverwaltung](../../platform/using/privacy-management.md) und [Verwaltung von Datenschutzanforderungen](../../platform/using/privacy-requests.md).
+
+Auf der Seite &quot;Serverkonfiguration&quot;wurde ein Hinweis hinzugefügt, um anzugeben, dass der interne Name des Externen Kontos nach dem Einrichten des Mid-Sourcings nicht aktualisiert werden darf. [Mehr dazu](../../installation/using/mid-sourcing-server.md)
 
 ## Oktober 2020 {#oct-2020}
 
