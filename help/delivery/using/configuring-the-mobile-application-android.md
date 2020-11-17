@@ -12,11 +12,11 @@ discoiquuid: 7b5a1ad6-da5a-4cbd-be51-984c07c8d0b3
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 9844616f417608051bbff2593d6124d8ff83008c
-workflow-type: ht
-source-wordcount: '1731'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: dfa3938433fcd67eb8f38269e82ee1102eda41ce
+workflow-type: tm+mt
+source-wordcount: '1807'
+ht-degree: 94%
 
 ---
 
@@ -29,6 +29,14 @@ Nachdem das Paket installiert ist, können Sie die Einstellungen Ihrer Android-M
 >
 >Informationen dazu, wie Sie Ihre Mobile-App für iOS konfigurieren und einen Versand für iOS erstellen, finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application.md).
 
+Die wichtigsten Schritte sind:
+
+1. [Android-Externe Konto konfigurieren](#configuring-external-account-android)
+1. [Android-Dienst konfigurieren](#configuring-android-service)
+1. [Erstellen der mobilen App in Kampagne](#creating-android-app)
+1. [Erweitern des App-Schemas um zusätzliche Daten](#extend-subscription-schema)
+
+Anschließend können Sie eine Rich-Benachrichtigung [für Android](#creating-android-delivery)erstellen.
 
 ## Konfigurieren eines externen Android-Kontos {#configuring-external-account-android}
 
@@ -94,23 +102,17 @@ Nachdem Sie den Dienst erstellt haben, müssen Sie jetzt Ihre Android-Mobile-App
    >
    > Der **[!UICONTROL Integrationsschlüssel]** kann mit einem Zeichenfolgenwert vollständig angepasst werden, muss jedoch mit dem im SDK angegebenen Schlüssel identisch sein.
 
-1. Wählen Sie eine **[!UICONTROL API-Version]** aus:
-   * HTTP. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http).
-   * HTTP v1. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+1. Select the **[!UICONTROL API version]**:
 
-1. Füllen Sie die Felder **[!UICONTROL Verbindungsparameter für Firebase Cloud Messaging for Android]** aus.
+   * HTTP v1. Die Konfiguration wird in diesem [Abschnitt](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1)beschrieben.
+   * HTTP (frühere Version). Die Konfiguration wird in diesem [Abschnitt](../../delivery/using/configuring-the-mobile-application-android.md#android-service-http)beschrieben.
+
+
+1. Fill in the **[!UICONTROL Firebase Cloud Messaging the Android connection settings]** fields.
 
 1. Klicken Sie auf **[!UICONTROL Beenden]** und danach auf **[!UICONTROL Speichern]**. Ihre Android-Anwendung kann jetzt in Campaign Classic verwendet werden.
 
 Standardmäßig speichert Adobe Campaign in der Tabelle **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** im Feld **[!UICONTROL Nutzerkennung]** (@userKey) einen Schlüssel, der die Relation zwischen einem Empfänger und einem Abonnement herstellt. Gehen Sie wie folgt vor, wenn Sie zusätzliche Daten erheben möchten (beispielsweise einen komplexen Abstimmschlüssel):
-
-1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und konfigurieren Sie die neuen Felder.
-
-1. Geben Sie im Tab **[!UICONTROL Abonnementparameter]** das Mapping an.
-
-   >[!CAUTION]
-   >
-   >Stellen Sie sicher, dass die Parameterbezeichnungen im Tab **[!UICONTROL Abonnementparameter]** mit denen im Anwendungs-Code übereinstimmen. Weiterführende Informationen finden Sie im Abschnitt [Integration des Campaign SDK in Mobile Apps](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
 
 ### API-Version auswählen{#select-api-version}
 
@@ -126,7 +128,7 @@ Gehen Sie wie folgt vor, um die HTTP v1-API-Version zu konfigurieren:
 
 1. Klicken Sie auf **[!UICONTROL Projekt-JSON-Datei zum Extrahieren der Projektdetails laden...]**, um Ihre JSON-Schlüsseldatei direkt zu laden. Weitere Informationen dazu, wie Sie die JSON-Datei extrahieren, finden Sie auf [dieser Seite](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
-1. Sie können auch die folgenden Details manuell eingeben:
+   Sie können auch die folgenden Details manuell eingeben:
    * **[!UICONTROL Projektkennung]**
    * **[!UICONTROL Privater Schlüssel]**
    * **[!UICONTROL Client-E-Mail]**
@@ -179,6 +181,19 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 | Benachrichtigungsinhalt | title, body, android_channel_id, icon, sound, tag, color, click_action <br> | dryRun |
 
 <br>
+
+## Erweitern des appsubscriptionRcp-Schemas {#extend-subscription-schema}
+
+Sie müssen die **appsubscriptionRcp** erweitern, um neue zusätzliche Felder zum Speichern von Parametern aus der App in der Kampagne-Datenbank zu definieren. Diese Felder werden beispielsweise für die Personalisierung verwendet. Gehen Sie dazu wie folgt vor:
+
+1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und konfigurieren Sie die neuen Felder. Learn more about schema extension in [this page](../../configuration/using/about-schema-edition.md)
+
+1. Geben Sie im Tab **[!UICONTROL Abonnementparameter]** das Mapping an.
+
+   >[!CAUTION]
+   >
+   >Stellen Sie sicher, dass die Parameterbezeichnungen im Tab **[!UICONTROL Abonnementparameter]** mit denen im Anwendungs-Code übereinstimmen. Weiterführende Informationen finden Sie im Abschnitt [Integration des Campaign SDK in Mobile Apps](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
+
 
 ## Erstellen einer Rich-Benachrichtigung für Android {#creating-android-delivery}
 
@@ -279,7 +294,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
    ![](assets/nmac_android_9.png)
 
-1. Bei Bedarf können Sie den zuvor konfigurierten **[!UICONTROL Anwendungsvariablen]** Informationen hinzufügen. **[!UICONTROL Anwendungsvariablen]** müssen im Android-Dienst konfiguriert werden und sind Teil der an das Mobilgerät gesendeten Payload.
+1. Bei Bedarf können Sie den zuvor konfigurierten **[!UICONTROL Anwendungsvariablen]** Informationen hinzufügen. **[!UICONTROL Anwendungsvariablen]** müssen im Android-Dienst konfiguriert werden und sind Teil der an das Mobilgerät gesendeten Nachrichten-Payload.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und führen Sie den Versand durch.
 
