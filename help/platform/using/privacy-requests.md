@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 discoiquuid: 14369acf-9149-4649-947a-c16289e35eb6
 translation-type: tm+mt
-source-git-commit: c2c7398c27f1bc7edf9adb0fc07409d2e525b168
+source-git-commit: e0ca252aceb0f2abca4a1324c5e4ece038927533
 workflow-type: tm+mt
-source-wordcount: '2590'
+source-wordcount: '2591'
 ht-degree: 37%
 
 ---
@@ -82,7 +82,7 @@ Bevor Sie Datenschutzanforderungen erstellen, müssen Sie den zu verwendenden Na
 
 Standardmäßig sind drei Namespaces verfügbar: E-Mail, Telefon und Mobiltelefon. If you need a different namespace (a recipient custom field, for example), you can create a new one from **[!UICONTROL Administration]** > **[!UICONTROL Platform]** > **[!UICONTROL Namespaces]**.
 
-## Datenschutzanfrage erstellen {#create-privacy-request-ui}
+## Creating a Privacy request {#create-privacy-request-ui}
 
 Die **Adobe Campaign-Oberfläche** ermöglicht es Ihnen, Ihre Datenschutzanforderungen zu erstellen und deren Entwicklung zu verfolgen. Gehen Sie wie folgt vor, um eine neue Datenschutzanforderung zu erstellen:
 
@@ -129,7 +129,7 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 >Wenn Sie Batch-Anfragen zum Datenschutz mithilfe von Workflows zum Löschen von Profilen durchführen, beachten Sie bitte die folgenden Hinweise:
 >* Beim Löschen von Profilen mit Workflows werden keine untergeordneten Tabellen verarbeitet.
 >* Alle untergeordneten Tabellen müssen manuell gelöscht werden.
->* Adobe empfiehlt, einen ETL-Arbeitsablauf zu erstellen, der die zu löschenden Zeilen in der Tabelle &quot;Zugriffsschutz&quot;hinzufügt und den Löschvorgang durch die Daten **[!UICONTROL der]** Datenschutzanforderungendurchführen lässt. Wir empfehlen, aus Leistungsgründen auf 200 Profil pro Tag zu begrenzen.
+>* Adobe empfiehlt, einen ETL-Arbeitsablauf zu erstellen, der die zu löschenden Zeilen in der Tabelle &quot;Zugriffsschutz&quot;enthält und den Arbeitsablauf zum **[!UICONTROL Löschen von Datenschutzanforderungen]** ausführen lässt. Wir empfehlen, aus Leistungsgründen auf 200 Profil pro Tag zu begrenzen.
 
 
 ### Status von Datenschutzanfragen {#privacy-request-statuses}
@@ -443,14 +443,14 @@ Um die Werte auszufüllen, können mehrere Methoden verwendet werden:
 
 Sie sollten dann sicherstellen, dass Sie niemals personenbezogene Daten von Profilen, die sich gegen diese Regelung entschieden haben, an Dritte verkaufen.
 
-Um den Abmeldestatus zu ändern, gehen Sie zu **[!UICONTROL Profil und Zielgruppe]** > **[!UICONTROL Empfänger]** und wählen Sie einen Empfänger aus. Auf der Registerkarte &quot; **[!UICONTROL Allgemein]** &quot;wird das im vorherigen Abschnitt konfigurierte Feld angezeigt.
+1. Um den Abmeldestatus zu ändern, gehen Sie zu **[!UICONTROL Profil und Zielgruppe]** > **[!UICONTROL Empfänger]** und wählen Sie einen Empfänger aus. Auf der Registerkarte &quot; **[!UICONTROL Allgemein]** &quot;wird das im vorherigen Abschnitt konfigurierte Feld angezeigt.
 
-![](assets/privacy-ccpa-5.png)
+   ![](assets/privacy-ccpa-5.png)
 
-Konfigurieren Sie die Liste &quot;Empfänger&quot;, um die Spalte &quot;Op-out&quot;anzuzeigen. Informationen zum Konfigurieren von Listen finden Sie in der [ausführlichen Dokumentation](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+1. Konfigurieren Sie die Liste &quot;Empfänger&quot;, um die Spalte &quot;Op-out&quot;anzuzeigen. Informationen zum Konfigurieren von Listen finden Sie in der [ausführlichen Dokumentation](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-![](assets/privacy-ccpa-6.png)
+   ![](assets/privacy-ccpa-6.png)
 
-Sie können auf die Spalte klicken, um Empfänger gemäß den Ausschluss-Informationen zu sortieren. Sie können auch einen Filter erstellen, um nur Empfänger anzuzeigen, die sich abgemeldet haben. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
+1. Sie können auf die Spalte klicken, um Empfänger gemäß den Ausschluss-Informationen zu sortieren. Sie können auch einen Filter erstellen, um nur Empfänger anzuzeigen, die sich abgemeldet haben. For more on creating filters, see [this section](../../platform/using/creating-filters.md).
 
-![](assets/privacy-ccpa-7.png)
+   ![](assets/privacy-ccpa-7.png)
