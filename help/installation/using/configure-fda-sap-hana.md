@@ -22,7 +22,7 @@ ht-degree: 71%
 
 Verwenden Sie die Option &quot;Kampagne [Federated Data Access](../../installation/using/about-fda.md) (FDA)&quot;, um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf SAP HANA zu konfigurieren.
 
-1. SAP [HANA-Datenbank konfigurieren](#sap-config)
+1. [SAP HANA-Datenbank konfigurieren](#sap-config)
 1. SAP HANA- [Externe Konto](#sap-external) in Kampagne konfigurieren
 
 ## SAP HANA-Treiber {#sap-config}
@@ -63,9 +63,9 @@ Die Verbindung mit einer externen SAP-HANA-Datenbank über die FDA-Option erford
    * **LD_LIBRARY_PATH**: Diese Variable sollte die Verknüpfung zu Ihrem SAP Hana Client enthalten (standardmäßig /usr/sap/hdbclient/libodbcHDB.so).
    * **ODBCINI**: Pfad der odbc.ini-Datei (z. B. /etc/odbc.ini).
 
-## SAP HANA-Externe Konto{#sap-external}
+## SAP HANA Externe Konto{#sap-external}
 
-Mit dem SAP HANA Externe Konto können Sie Ihre Kampagne an Ihre SAP HANA-externe Datenbank anschließen.
+Mit dem SAP HANA-Externe Konto können Sie die Instanz Ihrer Kampagne mit Ihrer externen SAP HANA-Datenbank verbinden.
 
 1. From Campaign **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
