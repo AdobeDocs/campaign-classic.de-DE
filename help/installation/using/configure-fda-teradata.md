@@ -1,6 +1,6 @@
 ---
 title: Zugriff auf Teradata konfigurieren
-description: Erfahren Sie, wie Sie den Zugriff auf Teradata in der FDA konfigurieren
+description: Erfahren Sie, wie Sie den Zugriff auf Teradata in FDA konfigurieren
 page-status-flag: never-activated
 uuid: b84359b9-c584-431d-80d5-71146d9b6854
 contentOwner: sauviat
@@ -23,8 +23,8 @@ ht-degree: 76%
 Verwenden Sie die Option &quot;Kampagne [Federated Data Access](../../installation/using/about-fda.md) (FDA)&quot;, um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
 
 1. Installieren und Konfigurieren von [Teradata-Treibern](#teradata-config)
-1. Konfigurieren des Teradata- [Externen Kontos](#teradata-external) in der Kampagne
-1. Einrichten [zusätzlicher Konfigurationen](#teradata-additional-configurations) für den Teradata- und Kampagne-Server
+1. Teradata- [Externe Konto](#teradata-external) in Kampagne konfigurieren
+1. Einrichten [zusätzlicher Konfigurationen](#teradata-additional-configurations) für Teradata- und Kampagne-Server
 
 ## Teradata-Konfiguration {#teradata-config}
 
@@ -86,17 +86,17 @@ Sie müssen die Treiber für Teradata installieren, damit eine Verbindung zur Ka
 
 1. Zum Konfigurieren des externen **[!UICONTROL Teradata]**-Kontos müssen Sie Folgendes angeben:
 
-   * **[!UICONTROL Typ]**: Wählen Sie den **[!UICONTROL Teradatatatyp]** .
+   * **[!UICONTROL Typ]**: Wählen Sie den **[!UICONTROL Teradata]** -Typ.
 
    * **[!UICONTROL Server]**: URL oder Name des Teradata-Servers
 
    * **[!UICONTROL Konto]**: Name des Kontos, das für den Zugriff auf die Teradata-Datenbank verwendet wird
 
-   * **[!UICONTROL Kennwort]**: Kennwort für die Verbindung zur Datenbank Teradata
+   * **[!UICONTROL Kennwort]**: Kennwort für die Verbindung zur Teradata-Datenbank
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional)
 
-   * **[!UICONTROL Optionen]**: Optionen, die durch Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine Halbspalte als Trennzeichen zwischen Werten.
+   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine Halbspalte als Trennzeichen zwischen Werten.
 
    * **[!UICONTROL Zeitzone]**: Zeitzone in Teradata eingestellt. [Mehr dazu](#timezone)
 
@@ -106,7 +106,7 @@ Wenn sich mehrere Adobe Campaign-Benutzer mit demselben externen FDA-Teradata-Ko
 
 ![](assets/ext_account_20.png)
 
-Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Kampagne-Benutzer eine Abfrage in der Teradata-Datenbank durchführt, Metadaten, die aus einer Liste von Schlüsseln bestehen, die diesem Benutzer zugeordnet sind. Diese Daten können dann von Teradata-Administratoren zu Prüfzwecken oder zur Verwaltung von Zugriffsrechten verwendet werden.
+Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Kampagnen-Benutzer eine Abfrage in der Teradata-Datenbank ausführt, Metadaten, die aus einer Liste von Schlüsseln bestehen, die diesem Benutzer zugeordnet sind. Diese Daten können dann von Teradata-Administratoren zu Prüfzwecken oder zur Verwaltung von Zugriffsrechten verwendet werden.
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Ka
 
 Gehen Sie wie folgt vor, um die Abfrage zu konfigurieren:
 
-1. Verwenden Sie den **[!UICONTROL Standardwert]** , um ein Standardband für die Abfrage einzugeben, das verwendet wird, wenn ein Benutzer über kein zugehöriges Abfragen-Band verfügt. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrage keine Teradata verwenden.
+1. Verwenden Sie den **[!UICONTROL Standardwert]** , um ein Standardband für die Abfrage einzugeben, das verwendet wird, wenn ein Benutzer über kein zugehöriges Abfragen-Band verfügt. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrage Teradata nicht verwenden.
 
 1. Verwenden Sie das Feld **[!UICONTROL Benutzer]** , um für jeden Benutzer ein Abfrage-Band anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Abfrage-Band zugewiesen ist, wird das Feld &quot; **[!UICONTROL Standard]** &quot;angewendet.
 
@@ -128,7 +128,7 @@ Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquell
 
 * Ab Kampagne 18.10 können Sie ODBCDRiverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des Externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Führen Sie odbcad32.exe aus und gehen Sie zum Treiber-Tab, um den genauen Namen abzurufen.
 
-* Wenn Sie eine ältere Version der Kampagne verwenden, müssen Sie den Abschnitt &quot;Teradata&quot;von odbcinst.ini, der von der Treiberinstallation erstellt wurde, in einen neuen Abschnitt namens Teradata kopieren. In diesem Fall kann Regedit verwendet werden. If your base is in latin1, you will have to add **APICharSize=1** in the options.
+* Wenn Sie eine ältere Version der Kampagne verwenden, müssen Sie den Teradata-Abschnitt von odbcinst.ini, der von der Treiberinstallation erstellt wurde, in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. If your base is in latin1, you will have to add **APICharSize=1** in the options.
 
 ## Ergänzende Konfigurationen {#teradata-additional-configurations}
 
