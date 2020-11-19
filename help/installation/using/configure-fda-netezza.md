@@ -72,9 +72,9 @@ Die Verbindung zu einer externen Netezza-Datenbank über die FDA-Option erforder
    * **ODBCINI**: Pfad der odbc.ini-Datei (z. B. /etc/odbc.ini).
    * **NZ_ODBC_INI_PATH**: Pfad der Datei „odbc.ini“. In Netezza ist auch diese zweite Variable zur Verwendung der odbc.ini-Datei erforderlich.
 
-## Netezza-Externe Konti {#netezza-external}
+## Netezza Externe Konto {#netezza-external}
 
-Mit dem Netezza-Externe Konto können Sie Ihre Kampagne mit Ihrer Netezza-externen Datenbank verbinden.
+Mit dem Netezza-Externe Konto können Sie die Instanz Ihrer Kampagne mit Ihrer externen Netezza-Datenbank verbinden.
 
 1. From Campaign **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
