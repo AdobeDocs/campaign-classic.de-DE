@@ -22,8 +22,8 @@ ht-degree: 82%
 
 Verwenden Sie die Option &quot;Kampagne **Federated Data Access** (FDA)&quot;, um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Hadoop zu konfigurieren.
 
-1. Konfigurieren der [Hadoop-Datenbank](#configuring-hadoop)
-1. Konfigurieren des Hadoop- [Externen Kontos](#hadoop-external) in der Kampagne
+1. [Hadoop-Datenbank konfigurieren](#configuring-hadoop)
+1. Hadoop- [Externe Konto](#hadoop-external) in Kampagne konfigurieren
 
 ## Konfigurieren von Hadoop 3.0 {#configuring-hadoop}
 
