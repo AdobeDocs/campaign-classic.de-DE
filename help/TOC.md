@@ -628,8 +628,8 @@ ht-degree: 97%
       + Konfigurationsrichtlinien {#config-databases}
          + [Konfigurationsschritte](installation/using/configure-fda.md)
          + [Snowflake konfigurieren](installation/using/configure-fda-snowflake.md)
-         + [Azurblase-Synapse konfigurieren](installation/using/configure-fda-synapse.md)
-         + [Konfigurieren von Hadoop](installation/using/configure-fda-hadoop.md)
+         + [Azure synapse konfigurieren](installation/using/configure-fda-synapse.md)
+         + [Hadoop konfigurieren](installation/using/configure-fda-hadoop.md)
          + [Oracle konfigurieren](installation/using/configure-fda-oracle.md)
          + [Netezza konfigurieren](installation/using/configure-fda-netezza.md)
          + [Sybase IQ konfigurieren](installation/using/configure-fda-sybase.md)
