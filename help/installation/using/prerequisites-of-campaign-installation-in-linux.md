@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Voraussetzungen für die Campaign-Installation unter Linux
 description: Voraussetzungen für die Campaign-Installation unter Linux
-page-status-flag: never-activated
-uuid: 65c7af3f-ca1d-4255-b54a-6a3c83af40ae
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 3e2ccb70-6c0c-435f-9c06-f3e5e40367bb
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 3%
@@ -183,7 +180,7 @@ Die Verwendung von PostgreSQL mit Adobe Campaign erfordert auch die Installation
 
 Rufen Sie die Bibliotheksversion für 64-Bit Debian ab, d.h.: **libclntsh.so**, **libclntsh.so.11.1** und **libclntsh.so.10.1**.
 
-Sie können ein Linux RPM-Paket vom Oracle Technology Network abrufen.
+Sie können ein Linux RPM-Paket vom Oracle Technology Network beziehen.
 
 >[!NOTE]
 >
@@ -193,17 +190,17 @@ Sie können ein Linux RPM-Paket vom Oracle Technology Network abrufen.
 
 Probleme können nach einem Oracle-Client oder einem Server-Update, einer Versionsänderung oder der ersten Installation der Instanz auftreten.
 
-Wenn Sie in der Client-Konsole feststellen, dass unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, letzte Verarbeitung des Workflows, nächste Verarbeitung usw. auftreten, kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
+Wenn Sie in der Client-Konsole feststellen, dass die Protokolle unerwartete Zeitverzögerungen (eine oder mehrere Stunden) aufweisen, der Workflow zuletzt verarbeitet wird, die nächste Verarbeitung usw., kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
 
 1. Achten Sie darauf, den **vollständigen Client** zu verwenden.
 
-   Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme identifiziert. Darüber hinaus ist es nicht möglich, die Zeitzonendatei auf einem Instant-Client zu ändern.
+   Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme festgestellt. Darüber hinaus ist es nicht möglich, die Zeitzonendatei auf einem Instant-Client zu ändern.
 
 1. Vergewissern Sie sich, dass die **Clientversion** und die **Datenbankserverversion** **identisch** sind.
 
    Das Mischen von Versionen trotz der Kompatibilitätsmatrix und der Empfehlung von Oracle, Client- und Serverversionen auszurichten, verursacht bekanntermaßen Probleme.
 
-   Überprüfen Sie auch den Wert ORACLE_HOME, um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
+   Überprüfen Sie auch den Wert &quot;ORACLE_HOME&quot;, um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
 
 1. Stellen Sie sicher, dass Client und Server dieselbe **Zeitzonendatei** verwenden.
 
