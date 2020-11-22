@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Erstellen und Konfigurieren der Vorlagen
-seo-title: Erstellen und Konfigurieren der Vorlagen
 description: Erstellen und Konfigurieren der Vorlagen
-seo-description: null
-page-status-flag: never-activated
-uuid: e5143d55-61fa-416a-80db-c29a0caf9a3e
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-discoiquuid: 7dd8a6a5-7cca-4e92-8226-1b9e450dfaf9
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1342'
 ht-degree: 1%
 
 ---
@@ -106,7 +101,7 @@ Sie müssen die folgenden Einstellungen definieren:
 
    >[!NOTE]
    >
-   >Bei einer Oracle-Datenbank können Sie mit der **[!UICONTROL Option &quot;Unicode-Datenspeicherung]** &quot; **NCLOB** - und **NVARCHAR** -Typfelder verwenden.
+   >Bei einer Oracle-Datenbank können Sie mit der **[!UICONTROL Option &quot;Unicode-Datenspeicherung]** &quot;die Felder **NCLOB** und **NVARCHAR** verwenden.
    > 
    >Wenn Sie diese Option nicht auswählen, muss der Zeichensatz (Zeichensatz) der Oracle-Datenbank die Datenspeicherung der Daten in allen Sprachen aktivieren (AL32UTF8 wird empfohlen).
 
@@ -137,7 +132,7 @@ Im Fenster &quot; **[!UICONTROL Erstellungsschritte]** &quot;können Sie das SQL
    * **WdbcOptions_TableSpaceWork**: Arbeitstabellen ohne Schema
    * **WdbcOptions_TableSpaceWorkIndex**: Index der Arbeitstabellen ohne Schema
 
-* Bei einer Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der **oinstall** -Gruppe.
+* Bei einer Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der **Installationsgruppe** .
 * Mit der Option **[!UICONTROL Administratorkennwort]** festlegen oder ändern können Sie das mit dem Adobe Campaign-Operator verknüpfte Kennwort mit Administratorrechten eingeben.
 
    Es wird empfohlen, aus Sicherheitsgründen ein Passwort für den Adobe Campaign-Kontoadministrator zu definieren.
@@ -209,7 +204,7 @@ Sie müssen die folgenden Einstellungen definieren:
    >[!NOTE]
    >
    >Achten Sie darauf, dass sowohl der Name des Schemas als auch der Benutzername übereinstimmen. Es wird empfohlen, eine Datenbank über den Kampagne Console-Client zu erstellen.
-   >Bei einer Oracle-Datenbank müssen Sie nicht den Kontonamen eingeben.
+   >Bei einer Oracle-Datenbank müssen Sie keinen Kontonamen eingeben.
 
 * Geben Sie an, ob die Datenbank Unicode sein soll oder nicht.
 
@@ -228,7 +223,7 @@ Im Fenster &quot; **[!UICONTROL Erstellungsschritte]** &quot;können Sie das SQL
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
 * Bei Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbanken kann der Administrator die **Datenspeicherung-Parameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden.
-* Bei einer Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der **oinstall** -Gruppe.
+* Bei einer Oracle-Datenbank muss der Adobe Campaign-Benutzer Zugriff auf die Oracle-Bibliotheken haben, normalerweise als Mitglied der **Installationsgruppe** .
 * Mit der Option **[!UICONTROL Administratorkennwort]** festlegen oder ändern können Sie das mit dem Adobe Campaign-Operator verknüpfte Kennwort mit Administratorrechten eingeben.
 
    Es wird empfohlen, aus Sicherheitsgründen ein Passwort für den Adobe Campaign-Kontoadministrator zu definieren.
