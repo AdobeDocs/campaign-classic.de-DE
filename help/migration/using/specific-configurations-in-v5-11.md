@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Spezifische Konfigurationen in v5.11
-seo-title: Spezifische Konfigurationen in v5.11
 description: Spezifische Konfigurationen in v5.11
-seo-description: null
-page-status-flag: never-activated
-uuid: d6920beb-a766-4aec-8a8e-d32e47b545a4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: fc280640-528d-44de-87d8-52f443772abd
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1045'
 ht-degree: 5%
 
 ---
@@ -119,7 +114,7 @@ Es wurde eine Option zur Deaktivierung der automatischen Migration der Navigatio
 
 * Interner Name: NlMigration_KeepFolderStructure
 * Datentyp: Integer
-* Wert (Text): 3
+* Wert (Text): 1
 
 Wenn Sie diese Option verwenden, müssen Sie nach der Migration veraltete Ordner löschen, die neuen Ordner hinzufügen und alle erforderlichen Prüfungen durchführen.
 
@@ -160,7 +155,7 @@ Die veralteten Ordner, die nach der Migration gelöscht werden sollen, lauten wi
 | ncmImage | Bilder | Content Manager installiert |
 | ncmJavascript | JavaScript-Codes | Content Manager installiert |
 | ncmJst | JavaScript-Templates | Content Manager installiert |
-| ncmParameters | Konfiguration    | Content Manager installiert |
+| ncmParameters | Konfiguration       | Content Manager installiert |
 | ncmSrcSchema | Datenschemata | Content Manager installiert |
 | ncmStylesheet | XSL-Stildateien | Content Manager installiert |
 | nmsAdminPlan | Administration | Kampagne installiert |
