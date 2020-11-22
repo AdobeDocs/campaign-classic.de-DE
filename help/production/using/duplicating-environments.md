@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Duplizieren von Umgebungen
-seo-title: Duplizieren von Umgebungen
 description: Duplizieren von Umgebungen
-seo-description: null
-page-status-flag: never-activated
-uuid: b8fb8083-e3ec-4b1c-9449-73ac03508d89
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: data-processing
-discoiquuid: 9f7118f4-aef0-469c-bbe1-b62bed674faa
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1296'
 ht-degree: 5%
 
 ---
@@ -72,7 +67,7 @@ Die folgenden Schritte müssen mit größter Sorgfalt durchgeführt werden: Eini
 
 >[!IMPORTANT]
 >
->* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Abfrage unterschiedlich ist (z. B. Oracle), müssen die SQL-Einstellungen angepasst werden.
+>* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Abfrage anders ist (z. B. Oracle), müssen die SQL-Einstellungen angepasst werden.
 >* Die folgenden Befehle gelten im Kontext einer **prod** -Instanz und einer **dev** -Instanz unter PostgreSQL.
 
 >
