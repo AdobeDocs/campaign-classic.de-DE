@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Konfigurieren der Plattform
-seo-title: Konfigurieren der Plattform
 description: Konfigurieren der Plattform
-seo-description: null
-page-status-flag: never-activated
-uuid: e6255e4b-c9c8-4ac9-9ee3-aaa4dc9e5ecf
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: 4d2e765b-750b-457f-ad55-8bd6faaa86af
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '941'
 ht-degree: 2%
 
 ---
@@ -32,7 +27,7 @@ Zu prüfende Beispielelemente:
 * Das Attribut **tablespace** nimmt standardmäßig seine Werte zurück, d. h. die im Bereitstellungsassistenten definierten Werte.
 * Wenn Sie der NmsRecipient-Tabelle eine Referenz-Ansicht hinzugefügt haben, müssen Sie diese vor der Migration löschen.
 
-Diese Warnung betrifft auch Oracle-Benutzer: Wenn Sie die Option **usetimestamptz:1** während einer Nachrüstung hinzugefügt haben (siehe [Zeitzonen](../../migration/using/general-configurations.md#time-zones)), werden alle Tabellen mit mindestens einem **Datums- und Uhrzeitfeld** neu erstellt.
+Diese Warnung betrifft auch Oracle-Nutzer: Wenn Sie die Option **usetimestamptz:1** während einer Nachrüstung hinzugefügt haben (siehe [Zeitzonen](../../migration/using/general-configurations.md#time-zones)), werden alle Tabellen mit mindestens einem **Datums- und Uhrzeitfeld** neu erstellt.
 
 ## Vor der Migration {#before-the-migration}
 
@@ -116,7 +111,7 @@ Nach der **Aktualisierung** müssen die folgenden Elemente berücksichtigt und d
 
    Bevor Sie den Server starten, müssen Sie die Sicherheitszonen konfigurieren. Weitere Informationen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones) und im Abschnitt [Sicherheit](../../migration/using/general-configurations.md#security) .
 
-* Schemas
+* Schemata
 
    In Red Hat treten möglicherweise Fehler auf, wenn Sie bestimmte Schema bearbeiten. For more on this, refer to the [Red-Hat](../../migration/using/general-configurations.md#red-hat) section.
 
@@ -128,7 +123,7 @@ Nach der **Aktualisierung** müssen die folgenden Elemente berücksichtigt und d
 
    Bei der Migration von einer v5.11-Plattform müssen Sie den Verfolgungsmodus konfigurieren. For more on this, refer to the [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) section.
 
-* Startseite       
+* Startseite        
 
    Wenn Sie von einer v6.02-Plattform migrieren, können Sie zusätzliche Parameter definieren, um Ihre alte Startseite von v6.02 zu erhalten. Weitere Informationen finden Sie unter [Benutzerfreundlichkeit: Startseite und Navigation](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation) .
 
