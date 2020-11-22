@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: RDBMS-spezifische Empfehlungen
-seo-title: RDBMS-spezifische Empfehlungen
 description: RDBMS-spezifische Empfehlungen
-seo-description: null
-page-status-flag: never-activated
-uuid: 637c1b5a-0484-4734-a012-eb4ba8036263
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-discoiquuid: b2219912-5570-45d2-8b52-52486e29d008
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 4%
+source-wordcount: '1125'
+ht-degree: 3%
 
 ---
 
@@ -363,7 +358,7 @@ function sqlGetMemo(strSql)
 
 ## Oracle {#oracle}
 
-Wenden Sie sich an Ihren Datenbankadministrator, um die für Ihre Oracle-Version am besten geeigneten Verfahren zu ermitteln.
+Wenden Sie sich an Ihren Datenbankadministrator, um die für Ihre Version von Oracle am besten geeigneten Vorgehensweisen zu erfahren.
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
