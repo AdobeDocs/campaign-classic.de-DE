@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Installieren von Paketen mit Linux
-seo-title: Installieren von Paketen mit Linux
 description: Installieren von Paketen mit Linux
-seo-description: null
-page-status-flag: never-activated
-uuid: d83f00b5-500b-406a-a3d6-ea5639f244f0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
-discoiquuid: 04faa9f3-d160-4060-b26e-44333f2faf71
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1210'
 ht-degree: 1%
 
 ---
@@ -187,7 +182,7 @@ Bestimmte Kombinationen erfordern Änderungen an der Umgebung, die zum Ausführe
 
 Bearbeiten Sie bei Bedarf die Datei &quot; **customer.sh** &quot;mit dem Befehl **vi customer.sh** und passen Sie die Konfiguration an oder fügen Sie fehlende Zeilen hinzu:
 
-* Für den Oracle-Client:
+* Für Oracle-Client:
 
    ```
    export ORACLE_HOME=/usr/local/instantclient_10_2
@@ -195,7 +190,7 @@ Bearbeiten Sie bei Bedarf die Datei &quot; **customer.sh** &quot;mit dem Befehl 
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   Der Inhalt der Variablen ORACLE_HOME Umgebung stimmt mit dem Installationsordner von Oracle überein.
+   Der Inhalt der Variablen &quot;ORACLE_HOME-Umgebung&quot;entspricht dem Oracle-Installationsordner.
 
    Der Inhalt der Variablen &quot;TNS_ADMIN&quot;muss mit dem Speicherort der Datei &quot; **tnsnames.ora** &quot;übereinstimmen.
 
@@ -259,7 +254,7 @@ systemctl start nlserver
 
 ### Oracle Client unter Linux {#oracle-client-in-linux}
 
-Bei Verwendung von Oracle mit Adobe Campaign müssen Sie die Oracle-Clientebenen unter Linux konfigurieren.
+Wenn Sie Oracle mit Adobe Campaign verwenden, müssen Sie die Oracle-Clientebenen unter Linux konfigurieren.
 
 * Vollständiger Client verwenden
 * TNS-Definition
@@ -279,7 +274,7 @@ Bei Verwendung von Oracle mit Adobe Campaign müssen Sie die Oracle-Clientebenen
 
 * Konfiguration für Adobe Campaign
 
-   Um die Installation des Oracle-Client zum Adobe Campaign abzuschließen, müssen Sie einen symbolischen Link für die von Adobe Campaign verwendete **.so** -Datei erstellen.
+   Um die Installation des Oracle-Clients zum Adobe Campaign abzuschließen, müssen Sie einen symbolischen Link für die von Adobe Campaign verwendete **.so** -Datei erstellen.
 
    Verwenden Sie dazu die folgenden Befehle:
 
@@ -288,7 +283,7 @@ Bei Verwendung von Oracle mit Adobe Campaign müssen Sie die Oracle-Clientebenen
    ln -s libclntsh.so.10.1 libclntsh.so
    ```
 
-Wenn ein Problem auftritt, stellen Sie sicher, dass die in der [Oracle-Installationsdokumentation](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) aufgelisteten Pakete ordnungsgemäß installiert sind.
+Wenn ein Problem auftritt, stellen Sie sicher, dass die in der [Oracle-Installationsdokumentation](https://www.oracle.com/pls/db112/portal.portal_db?selected=11) aufgelisteten Pakete korrekt installiert sind.
 
 ## Installationsprüfungen {#installation-checks}
 
