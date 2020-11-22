@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Richtlinien für das Monitoring
 description: Entdecken Sie Richtlinien und Best Practices zur Überwachung von Campaign-instanzen und -prozessen.
-page-status-flag: never-activated
-uuid: cf0d782d-47bf-40ae-ab6f-d1d47fa15792
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: introduction
-discoiquuid: 8b33e6af-15c3-4b30-8ad6-d76a1f33be21
 translation-type: tm+mt
-source-git-commit: 3acf2359c74a3dc4b18c8976fee14dcbaf3fa510
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 10%
+ht-degree: 16%
 
 ---
 
@@ -55,11 +52,11 @@ Der Prüfpfad ermöglicht Ihnen die Visualisierung des vollständigen Verlaufs d
 
 **Control Panel**
 
-Über die Systemsteuerung können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Instanzdetails wie die Build-Versionen Ihrer Server überprüfen usw. Außerdem können Sie damit den verfügbaren Speicherplatz auf den SFTP-Servern überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) für weitere Informationen.
+Über die Systemsteuerung können Sie mehrere Einstellungen Ihrer Instanz verwalten: URL-Berechtigungen verwalten, Instanzdetails wie die Build-Versionen Ihrer Server überprüfen usw. Das Control Panel ermöglicht Ihnen auch, den verfügbaren Speicherplatz auf den SFTP-Servern zu überwachen, die mit Ihrer Instanz verbunden sind. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html) für weitere Informationen.
 
 >[!NOTE]
 >
->Beachten Sie, dass die Systemsteuerung nur für Administratoren zugänglich ist und für alle Kunden mit Adobe Managed Services verfügbar ist.
+>Bitte beachten Sie, dass das Control Panel nur für Admin-Benutzer zugänglich ist und für alle Kunden zur Verfügung steht, die Adobe Managed Services nutzen.
 
 ### Überwachung von Workflows {#monitoring-workflows}
 
@@ -93,7 +90,7 @@ Die Befolgung von Richtlinien und Best Practices bei der Verwendung von Workflow
 
 **SMTP-Berichte**
 
-SMTP-Berichte zeigen die Statistik des Versands und SMTP-Fehler nach Domäne an. [mehr dazu](../../production/using/monitoring-processes.md)
+SMTP-Berichte zeigen die Statistik des Versands und SMTP-Fehler nach Domäne an. [Mehr dazu](../../production/using/monitoring-processes.md)
 
 **Best Practices**
 
