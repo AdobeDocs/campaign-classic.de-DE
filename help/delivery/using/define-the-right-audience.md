@@ -1,30 +1,26 @@
 ---
-title: Die richtige Zielgruppe festlegen
-seo-title: Die richtige Zielgruppe festlegen
-page-status-flag: never-activated
-uuid: a540efc7-105d-4c7f-a2ee-ade4d22b3445
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
+solution: Campaign Classic
+product: campaign
+title: Festlegen der richtigen Audience
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-discoiquuid: 0cbc4e92-482f-4dac-a1fb-b738e7127938
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '478'
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
+source-wordcount: '474'
 ht-degree: 100%
 
 ---
 
 
-# Die richtige Zielgruppe festlegen {#define-the-right-audience}
+# Festlegen der richtigen Audience {#define-the-right-audience}
 
 Die Bestimmung der Zielgruppen ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Kontaktlisten sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients, Smartphones und Tablets und stellen Sie sicher, dass Ihre Verteilerlisten aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.
 
 Weiterführende Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md).
 
-## Ansprechen der richtigen Zielgruppe {#target-the-right-audience}
+## Ansprechen der richtigen Audience {#target-the-right-audience}
 
 Wenn Ihr Inhalt fertiggestellt ist, müssen Sie sorgfältig auswählen, wer Ihre Nachricht erhalten soll.
 
