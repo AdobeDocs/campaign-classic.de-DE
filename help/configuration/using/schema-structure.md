@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Schemastruktur
-seo-title: Schemastruktur
 description: Schemastruktur
-seo-description: null
-page-status-flag: never-activated
-uuid: 9be70907-6154-4890-91e8-fd0fac30ab05
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: b5c8faf7-d0ae-4d95-b7fe-6ef9674a33d2
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1570'
 ht-degree: 12%
 
 ---
@@ -212,7 +207,7 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
    <td> TINYINT<br /> </td> 
   </tr> 
   <tr> 
-   <td> Short<br /> </td> 
+   <td> Kurz<br /> </td> 
    <td> SMALLINT<br /> </td> 
    <td> NUMBER(5)<br /> </td> 
    <td> SMALLINT<br /> </td> 
