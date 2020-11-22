@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Best Practices für Datenmodelle
 description: Erfahren Sie, wie Sie mit dem Campaign Classic-Datenmodell arbeiten.
-page-status-flag: never-activated
-uuid: faddde15-59a1-4d2c-8303-5b3e470a0c51
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: 5957b39e-c2c6-40a2-b81a-656e9ff7989c
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '4031'
 ht-degree: 24%
@@ -191,7 +188,7 @@ Die beiden entsprechenden Filter werden oben auf dem Bildschirm hinzugefügt.
 
 ![](assets/data-model-index-search.png)
 
-Sie können jetzt Suchfilter für die Felder **[!UICONTROL Vorname]** und **[!UICONTROL Nachname]** entsprechend den verschiedenen Filterbedingungen durchführen.
+Sie können jetzt Suchfilter für die Felder **[!UICONTROL Vorname]** und **[!UICONTROL Nachname]** gemäß den verschiedenen Filterbedingungen durchführen.
 
 Um die Suche auf diesen Filtern zu beschleunigen, können Sie nun Indizes hinzufügen. Aber welche Indizes sollten verwendet werden?
 
