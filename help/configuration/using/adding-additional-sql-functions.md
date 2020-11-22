@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Hinzufügen zusätzlicher SQL-Funktionen
-seo-title: Hinzufügen zusätzlicher SQL-Funktionen
 description: Hinzufügen zusätzlicher SQL-Funktionen
-seo-description: null
-page-status-flag: never-activated
-uuid: d66b5ca2-ac7d-4654-9f0e-9bfe56490c19
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: api
-discoiquuid: 728a95f8-46fe-49a8-a645-a0dd6eeb6615
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1024'
 ht-degree: 1%
 
 ---
@@ -132,7 +127,7 @@ Das Feld **@name** verweist auf den Funktionsnamen und &quot;args&quot;ist die L
 * Schließlich stellt das **providerPart** -Element die Funktionsimplementierung bereit.
 
    * Das **provider** -Attribut ist obligatorisch und gibt die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruck-Syntaxen oder zugrunde liegenden Funktionen alternative Implementierungen entsprechend der Datenbank bereitgestellt werden.
-   * Das **@body** -Attribut enthält die Funktionsimplementierung. Bitte beachten Sie: Diese Implementierung muss ein Ausdruck in Datenbanksprache sein (kein Codeblock). Abhängig von den Datenbanken können Ausdruck Unterwerte sein (&quot;(Spalte aus Tabelle auswählen, bei der ...)&quot;), die nur einen Abfrage zurückgeben. Dies ist beispielsweise bei Oracle der Fall (die Abfrage muss in Klammern geschrieben werden).
+   * Das **@body** -Attribut enthält die Funktionsimplementierung. Bitte beachten Sie: Diese Implementierung muss ein Ausdruck in Datenbanksprache sein (kein Codeblock). Abhängig von den Datenbanken können Ausdruck Unterwerte sein (&quot;(Spalte aus Tabelle auswählen, bei der ...)&quot;), die nur einen Abfrage zurückgeben. Dies gilt beispielsweise für Oracle (die Abfrage muss in Klammern stehen).
 
    >[!NOTE]
    >
