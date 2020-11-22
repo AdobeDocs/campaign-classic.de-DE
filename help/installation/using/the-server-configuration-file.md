@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Die Server-Konfigurationsdatei
-seo-title: Die Server-Konfigurationsdatei
 description: Die Server-Konfigurationsdatei
-seo-description: null
-page-status-flag: never-activated
-uuid: 8ef7168b-3543-4830-80b0-65a023158b3f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: installation
 content-type: reference
 topic-tags: appendices
-discoiquuid: da2198a3-7cef-4419-894d-e5bb51bb480c
 translation-type: tm+mt
-source-git-commit: ac922ea93faf7cb3176e9df33467b1492f87a1f0
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '7855'
+source-wordcount: '7851'
 ht-degree: 13%
 
 ---
@@ -317,7 +312,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> dbSchema<br /> </td> 
-   <td> Arbeitsbereich  <br /> </td> 
+   <td> Arbeitsbereich <br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -341,7 +336,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> Anbieter<br /> </td> 
-   <td> Typ (Auflistung). Mögliche Werte sind "Oracle", "MSSQL" (Microsoft SQL Server), "PostgreSQL" (PostgreSQL, Greenplum), "Teradata", "DB2", "MySQL", "Netezza", "AsterData", "SAPHANA" (SAP HANA), "RedShift" (Amazon Redshift), "ODBC" (ODBC) Sybase ASE, Sybase IQ), Relay (HTTP Relay to remote database).<br /> </td> 
+   <td> Typ (Auflistung). Mögliche Werte sind "Oracle", "MSSQL" (Microsoft SQL Server), "PostgreSQL" (PostgreSQL, Greenplum), "Teradata", "DB2", "MySQL", "Netezza", "AsterData", "SAPHANA" (SAP HANA), "RedShift" (Amazon Redshift), "ODBC" (Sybase, Sybase IQ) , 'Relay' (HTTP Relay to Remote Datenbank).<br /> </td> 
    <td> String <br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
