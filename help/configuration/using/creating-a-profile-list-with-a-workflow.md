@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Erstellen einer Profilliste mit einem Workflow
 description: Erfahren Sie, wie Sie eine Profil-Liste in einem Workflow erstellen
-page-status-flag: never-activated
-uuid: a30f7217-fe82-4290-b1e6-e7a126a316c1
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-discoiquuid: ba42c3cf-31fc-4fbc-b230-a2b3982328c5
 translation-type: tm+mt
-source-git-commit: c2c0609619e0cc81444d089850add6dec5de93fd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 13%
@@ -24,7 +21,7 @@ Um eine Liste des Typs &quot; **[!UICONTROL Liste]** &quot;basierend auf der neu
 
 Weitere Informationen zu Listen in der Kampagne finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video).
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video).
 
 Gehen Sie wie folgt vor, um einen Targeting-Arbeitsablauf zu erstellen und Empfänger in einer Tabelle mit benutzerdefiniertem Empfänger zu aktualisieren:
 
