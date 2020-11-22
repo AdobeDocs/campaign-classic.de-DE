@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Validieren von Marketing-Kampagnen
-seo-title: Validieren von Marketing-Kampagnen
 description: Validieren von Marketing-Kampagnen
-seo-description: null
-page-status-flag: never-activated
-uuid: 842b501f-7d65-4450-b7ab-aff3942fb96f
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-discoiquuid: 8d076211-10a6-4a98-b0d2-29dad154158c
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '2648'
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
+source-wordcount: '2645'
 ht-degree: 100%
 
 ---
@@ -198,8 +193,9 @@ Die Kampagne erhält daraufhin den Status **[!UICONTROL Zu validieren]**.
 >[!NOTE]
 >
 >* Um die Prozesse auszuwählen, für die eine Validierung erforderlich ist, ändern Sie die Kampagnenvorlage. Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
->
->* Lesen Sie hierzu auch den Abschnitt [Validierungsprozess](#approval-process).
+   >
+   >
+* Lesen Sie hierzu auch den Abschnitt [Validierungsprozess](#approval-process).
 
 
 
@@ -270,6 +266,7 @@ Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearb
 >* Bei Auswahl einer Liste von Validierungsverantwortlichen wird der Vorgang validiert, sobald einer der Benutzer der Liste diesen akzeptiert hat. Der entsprechende Validierungslink wird dann nicht mehr im Dashboard angezeigt. Wenn der Benachrichtigungsversand aktiviert ist und ein anderer Validierer daraufhin auf den Validierungslink in der Benachrichtigung klickt, so wird diesem gemeldet, dass der Vorgang bereits von einem anderen Benutzer validiert wurde.
 >* Im unteren Abschnitt des Fensters der Validierungseinstellungen kann eine Validierungsplanung für die jeweilige Kampagne festgelegt werden. Standardmäßig haben Validierungsverantwortliche nach dem Unterbreitungsdatum 3 Tage Zeit, um einen Vorgang zu validieren.
 >* Es besteht die Möglichkeit, den betreffenden Benutzern vor dem Ende der Validierungsfrist eine automatische Erinnerung zu senden.
+
 >
 
 
