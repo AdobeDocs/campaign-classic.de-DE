@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Protokolldateien
-seo-title: Protokolldateien
 description: Protokolldateien
-seo-description: null
-page-status-flag: never-activated
-uuid: 266bc067-0218-4b3e-941c-dc5cd0b6a10d
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: production-procedures
-discoiquuid: fac3e3ec-82a7-4087-ba88-2b28b0f69d1c
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '431'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +38,7 @@ Die Protokolldateien mit mehreren Instanzen sind in der folgenden Tabelle aufgef
 | web.log | Webmodulprotokolle (Client-Konsole, Berichte, SOAP-API usw.) |
 | webmdl.log | Protokolle vom Umleitungsmodul |
 | watchdog.log | Protokolle vom Adobe Campaign-Prozessüberwachungsmodul |
-| trackinglogd.log | Trackinglogs      |
+| trackinglogd.log | Trackinglogs     |
 
 Die Protokolldateien der einzelnen Instanzen sind in der folgenden Tabelle aufgeführt:
 
