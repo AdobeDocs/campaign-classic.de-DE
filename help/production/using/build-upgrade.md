@@ -1,19 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Erste Schritte mit Build-Upgrades
 description: Wichtige Schritte zum Aktualisieren auf einen neuen Build
-page-status-flag: never-activated
-uuid: f24552d4-6bdf-411c-a1f2-b8f339c311f4
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-discoiquuid: f8e3633d-7232-44a5-842b-1a70c4f2bca2
 translation-type: tm+mt
-source-git-commit: 849e1ebf14f707d9e86c5a152de978acb6f1cb35
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '2355'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -41,7 +38,7 @@ For hosted and hybrid instances, you must request the build upgrade to Adobe Tec
 Bevor Sie die Build-Aktualisierung starten, müssen Sie eine vollständige Vorbereitung durchführen, wie unten beschrieben.
 Sobald das System für die Aktualisierung bereit ist, dauert die Aktualisierung **mindestens** 2 Stunden.
 
-Für die Build-Aktualisierung sind die folgenden Ressourcen erforderlch:
+Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 * ein Adobe Architect - um die Datenbankstrukturen (vordefinierte Schema und alle hinzugefügten zusätzlichen Schema, Entwürfe von Kampagnen und alle kritischen Pfadfunktionen, die in einer bestimmten Reihenfolge gestartet und getestet werden müssen) zu verstehen.
 * ein Projektmanager - In Fällen, in denen die Build-Aktualisierung viele verschiedene Instanzen (Produktion, Staging, Testen) und andere Drittanbieter-Server und -Anwendungen (Datenbanken, SFTP-Sites, Messaging-Dienstleister) umfasst, wird der Einsatz eines Projektmanagers zur Koordinierung aller Tests als Best Practice erachtet.
@@ -414,7 +411,7 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 
 **Verwandte Themen**
 
-* [Häufig gestellte Fragen zur Aktualisierung](../../platform/using/faq-build-upgrade.md)
+* [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
-* [Hilfe- und Supportoptionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support-req)
 * [Gold Standard-Programm](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
