@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Datenorientierte APIs
-seo-title: Datenorientierte APIs
 description: Datenorientierte APIs
-seo-description: null
-page-status-flag: never-activated
-uuid: f81356b3-8eef-4b65-9510-47c9d4b4e871
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: api
-discoiquuid: fba46d42-0253-425b-bbc2-6702d4140e05
 translation-type: tm+mt
-source-git-commit: 63b208e5607bdcddaef03292d229847c4b7366f8
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1888'
+source-wordcount: '1885'
 ht-degree: 1%
 
 ---
@@ -453,7 +448,7 @@ Mit einem Alias können Sie den Speicherort der Daten im Output-Dokument ändern
 </queryDef>
 ```
 
-Gibt zurück:
+Rückgabe:
 
 ```
 <recipient My_folder="Recipients" First name ="John" lastName="Doe"/>
