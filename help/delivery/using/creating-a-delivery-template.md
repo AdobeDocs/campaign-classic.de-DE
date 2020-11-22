@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Versandvorlage erstellen
-seo-title: Versandvorlage erstellen
 description: Versandvorlage erstellen
-seo-description: null
-page-status-flag: never-activated
-uuid: 8ceae1ec-9e02-4809-aa8b-1e6bd7790950
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-discoiquuid: 0e67d9dd-3ee8-4c06-98a4-3a2c644b6c0a
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '375'
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
+source-wordcount: '371'
 ht-degree: 100%
 
 ---
@@ -77,16 +72,16 @@ Führen Sie zur Konfiguration einer Versandvorlage die folgenden Schritte aus:
 
 Das folgende Video zeigt, wie man eine Vorlage für einen Ad-hoc-Versand konfiguriert.
 
->[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24066?quality=12)
 
 ## Einrichten der Eigenschaften von Versandvorlagen
 
 Das folgende Video zeigt, wie die Eigenschaften der Versandvorlage festgelegt werden, und erklärt die einzelnen Eigenschaften im Detail.
 
->[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24067?quality=12)
 
 ## Bereitstellen einer Ad-hoc-Versandvorlage
 
 In diesem Video wird erläutert, wie man eine Ad-hoc-E-Mail-Versandvorlage bereitstellt. Außerdem wird der Unterschied zwischen einem E-Mail-Versand- und einem Versand-Workflow erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/24065?quality=12)
