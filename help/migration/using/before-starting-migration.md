@@ -1,16 +1,13 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Vor Beginn der Migration
 description: Vor Beginn der Migration
-page-status-flag: never-activated
-uuid: b9325510-2fa5-4be4-9cf0-f37232bbbd8c
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: migration-procedure
-discoiquuid: d8877378-fb43-4f32-91c6-60f2f788f916
 translation-type: tm+mt
-source-git-commit: 99d766cb6234347ea2975f3c08a6ac0496619b41
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 2%
@@ -45,7 +42,7 @@ Bevor Sie einen Migrationsprozess starten, **müssen** Sie Ihre Daten sichern.
 
 ### Umgebung {#environment}
 
-* Es ist nicht möglich, den Datenbankmodultyp (DBMS) zu ändern. Sie können beispielsweise nicht von einer PostgreSQL-Engine zu einer Oracle-Engine wechseln. Sie können jedoch von einer Oracle 8-Engine auf eine Oracle 10-Engine umstellen.
+* Es ist nicht möglich, den Datenbankmodultyp (DBMS) zu ändern. Sie können beispielsweise nicht von einer PostgreSQL-Engine zu einer Oracle-Engine wechseln. Sie können jedoch von einem Oracle 8-Motor auf einen Oracle 10-Motor umstellen.
 * Es ist nicht möglich, von einer Nicht-Unicode-Datenbank zu einer Unicode-Datenbank zu wechseln.
 
 ### Empfehlung {#recommendation}
