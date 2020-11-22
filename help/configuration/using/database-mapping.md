@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Datenbank-Mapping
-seo-title: Datenbank-Mapping
 description: Datenbank-Mapping
-seo-description: null
-page-status-flag: never-activated
-uuid: a51df3eb-cae6-4e8d-8386-d62defc1b610
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-discoiquuid: bc06c00d-f421-452e-bde0-b4ecc12c72c8
 translation-type: tm+mt
-source-git-commit: 9bbde65aea6735e30e95e75c2b6ae5445d4a2bdd
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1974'
 ht-degree: 1%
 
 ---
@@ -310,7 +305,7 @@ Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in de
 
 >[!NOTE]
 >
->Eine Sequenz, auf die in einem Adobe Campaign-Schema verwiesen wird (z. B.**NmsTrackingLogId** ), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt (durch Kommas getrennt). Diese Funktion muss ******GetNewXXXIds** heißen, wobei **XXX** der Name der Sequenz ist (z. B.**GetNewNmsTrackingLogIds** ). Ansicht der **Dateien &quot;postgres-nms.sql**&quot;, &quot; **mssql-nms.sql** &quot;oder &quot; **oracle-nms.sql** &quot;, die mit der Anwendung im Ordner &quot; **datakit/nms/eng/sql/** &quot;bereitgestellt werden, um das Beispiel einer &quot;NmsTrackingLogId&quot;-Sequenzerstellung für jede Datenbank-Engine wiederherzustellen.
+>Eine Sequenz, auf die in einem Adobe Campaign-Schema verwiesen wird (z. B.**NmsTrackingLogId** ), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt (durch Kommas getrennt). Diese Funktion muss ******GetNewXXXIds** heißen, wobei **XXX** der Name der Sequenz ist (z. B.**GetNewNmsTrackingLogIds** ). Ansicht der **Dateien &quot;postgres-nms.sql**&quot;, &quot; **mssql-nms.sql** &quot;oder &quot; **oracle-nms.sql** &quot;, die mit der Anwendung im Ordner &quot; **datakit/nms/eng/sql/** &quot;bereitgestellt werden, um das Beispiel einer &quot;NmsTrackingLogId&quot;-Sequenzerstellung für jede Datenbankmaschine wiederherzustellen.
 
 Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie das **autopk** -Attribut (mit dem Wert &quot;true&quot;) im Hauptelement des data-Schemas aus.
 
