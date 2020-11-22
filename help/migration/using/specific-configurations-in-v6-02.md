@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Spezifische Konfigurationen in v6.02
-seo-title: Spezifische Konfigurationen in v6.02
 description: Spezifische Konfigurationen in v6.02
-seo-description: null
-page-status-flag: never-activated
-uuid: ea072af3-fdc1-4828-ad13-d4327de1eaf8
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: migration
 content-type: reference
 topic-tags: configuration
-discoiquuid: 87a6cbda-54a6-4dae-8224-e06dc217f4fc
 translation-type: tm+mt
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 4%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -50,7 +45,7 @@ Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möc
 >
 >Wenn Sie weiterhin Übersichtswebanwendungen vom Typ v6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** vor der Aktualisierung in den verschiedenen Sicherheitszonen aktivieren. Refer to [Web applications](#web-applications).
 
-Nach der Migration von Version 6.02 wird die Homepage des Adobe Campaigns v6.02 nicht mehr angezeigt, aber sie ist noch immer verfügbar und mit Adobe Campaign v7 kompatibel.
+Nach einer Migration von Version 6.02 wird die Homepage des Adobe Campaigns v6.02 nicht mehr angezeigt, aber sie ist weiterhin verfügbar und mit Adobe Campaign v7 kompatibel.
 
 Um weiterhin die Homepage v6.02 zu verwenden, müssen Sie nach der Migration ein &quot;Kompatibilitätspaket&quot;installieren.
 
