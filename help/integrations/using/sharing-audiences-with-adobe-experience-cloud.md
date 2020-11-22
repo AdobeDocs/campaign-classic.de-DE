@@ -1,21 +1,16 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Zielgruppenfreigabe mit Adobe Marketing Cloud
-seo-title: Zielgruppenfreigabe mit Adobe Marketing Cloud
 description: Zielgruppenfreigabe mit Adobe Marketing Cloud
-seo-description: null
-page-status-flag: never-activated
-uuid: 24ac3463-69ab-48b4-85e0-4fe1948bf5ed
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-discoiquuid: 8f295058-5a78-4512-9bdf-d5f022457e10
 translation-type: tm+mt
-source-git-commit: 4b98c23f4120cbea6dd54cd68b61202e74bee3e1
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 62%
+source-wordcount: '242'
+ht-degree: 61%
 
 ---
 
@@ -28,7 +23,7 @@ ht-degree: 62%
 
 Mit Adobe Campaign können Sie Audiencen und Segmente für Adobe Experience Cloud-Lösungen und Hauptdienste freigeben. Es stehen zwei Optionen zur Verfügung:
 
-1. Senden Sie Adobe Experience Platform-Segmentdaten an Adobe Campaign. Zur Implementierung dieser Integration müssen Sie Ihre Echtzeit-Kundendatenplattform mit der Kampagne (RTCDP) verbinden. [Weiterführende Informationen finden Sie in diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
+1. Senden Sie Adobe Experience Platform-Segmentdaten an Adobe Campaign. Zur Implementierung dieser Integration müssen Sie Ihre Echtzeit-Kundendatenplattform mit der Kampagne (RTCDP) verbinden. [Weitere Informationen finden Sie in diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html).
 
 
 1. Integrate **Adobe Campaign** with **People core service** (also known as **Profiles &amp; Audiences core service**) or Adobe Audience Manager. Anschließend können Sie:
