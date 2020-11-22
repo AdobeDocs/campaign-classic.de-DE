@@ -1,20 +1,15 @@
 ---
+solution: Campaign Classic
+product: campaign
 title: Bearbeiten von Inhalten
-seo-title: Bearbeiten von Inhalten
 description: Bearbeiten von Inhalten
-seo-description: null
-page-status-flag: never-activated
-uuid: 2f51e848-1820-4bec-a0ea-63c9ddff05e0
-contentOwner: sauviat
-products: SG_CAMPAIGN/CLASSIC
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-discoiquuid: da66d640-8504-4dc7-bc4e-1c0ac1d37c37
-translation-type: ht
-source-git-commit: 70b143445b2e77128b9404e35d96b39694d55335
-workflow-type: ht
-source-wordcount: '1261'
+translation-type: tm+mt
+source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+workflow-type: tm+mt
+source-wordcount: '1259'
 ht-degree: 100%
 
 ---
@@ -142,6 +137,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 
@@ -207,8 +203,9 @@ Folgende Optionen sind verfügbar:
 >[!NOTE]
 >
 >* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
->
->* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
+   >
+   >
+* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
 
 ## Bilder und Animationen verwalten {#managing-images-and-animations}
