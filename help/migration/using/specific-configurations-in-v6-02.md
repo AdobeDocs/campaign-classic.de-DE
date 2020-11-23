@@ -45,7 +45,7 @@ Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möc
 >
 >Wenn Sie weiterhin Übersichtswebanwendungen vom Typ v6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** vor der Aktualisierung in den verschiedenen Sicherheitszonen aktivieren. Refer to [Web applications](#web-applications).
 
-Nach einer Migration von Version 6.02 wird die Homepage des Adobe Campaigns v6.02 nicht mehr angezeigt, aber sie ist weiterhin verfügbar und mit Adobe Campaign v7 kompatibel.
+Nach der Migration von Version 6.02 wird die Homepage des Adobe Campaigns v6.02 nicht mehr angezeigt, aber sie ist noch immer verfügbar und mit Adobe Campaign v7 kompatibel.
 
 Um weiterhin die Homepage v6.02 zu verwenden, müssen Sie nach der Migration ein &quot;Kompatibilitätspaket&quot;installieren.
 
