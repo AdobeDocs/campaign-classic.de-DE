@@ -87,7 +87,7 @@ Die Vorgehensweise hängt von der vorherigen Version Ihres Adobe Campaigns ab.
 
    >[!IMPORTANT]
    >
-   >Als Vorsichtsmaßnahme empfehlen wir, den Ordner **nl5.back** zu zippen und ihn an einem anderen sicheren Speicherort als dem Server zu speichern.
+   >Als Vorsichtsmaßnahme empfehlen wir, den Ordner **nl5.back** zu komprimieren und ihn an einem anderen sicheren Speicherort als dem Server zu speichern.
 
 1. Bearbeiten Sie die Datei **config-`<instance name>`.xml** (im Ordner **nl5.back** ), um die **Dateien mta**, **wfserver**, **** statusw. zu verhindern. Dienste automatisch starten. Ersetzen Sie beispielsweise **autoStart** durch **_autoStart** (immer noch als **neolane**).
 
