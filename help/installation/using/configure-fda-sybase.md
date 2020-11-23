@@ -68,7 +68,7 @@ Die Verbindung zu einer externen Sybase IQ-Datenbank über die FDA-Option erford
 
 ## sybase IQ Externe Konto {#sybase-external}
 
-The Sybase IQ external account allows you to connect your Campaign instance to your Sybase IQ external database.
+Mit dem Sybase IQ-Externe Konto können Sie die Instanz Ihrer Kampagne mit Ihrer externen Sybase IQ-Datenbank verbinden.
 
 1. From Campaign **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
 
