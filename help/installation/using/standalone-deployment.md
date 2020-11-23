@@ -47,7 +47,7 @@ Mit zunehmendem Volumen wird der Datenbankserver durch eine Variante dieser Arch
 
 ### Vorteile {#advantages}
 
-* Voll eigenständige und niedrige Konfigurationskosten (keine abrechnungsfähigen Lizenzen erforderlich, wenn die unten aufgeführte Open-Source-Software verwendet wird).
+* Vollständig eigenständige und niedrige Konfigurationskosten (keine abrechnungsfähigen Lizenzen erforderlich, wenn die unten aufgeführte Open-Source-Software verwendet wird).
 * Vereinfachte Installation und Netzwerkkonfiguration.
 
 ### Nachteile {#disadvantages}
