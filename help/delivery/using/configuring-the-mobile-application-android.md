@@ -10,10 +10,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1d7d48f52f69e4902eafa6806c2cd9170c21fe5a
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 92%
+source-wordcount: '1862'
+ht-degree: 90%
 
 ---
 
@@ -61,6 +61,8 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
    * **maxGCMConnectPerChild**: Maximale Anzahl paralleler HTTP-Abfragen bei FCM durch jeden Kindserver (standardmäßig acht).
 
 ## Konfigurieren des Android-Dienstes {#configuring-android-service}
+
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie, wie Sie einen Android-Dienst in Video konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=en#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
 1. Klicken Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** auf die Schaltfläche **[!UICONTROL Neu]**.
 
@@ -178,6 +180,8 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 
 ## Erweitern des appsubscriptionRcp-Schemas {#extend-subscription-schema}
 
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie, wie Sie das appsubscriptionRcp-Schema im Video erweitern](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/extending-the-app-subscription-schema.html?lang=en#extending-the-app-subscription-schema-to-personalize-push-notifications)
+
 Sie müssen die **appsubscriptionRcp** erweitern, um neue zusätzliche Felder zum Speichern von Parametern aus der App in der Kampagne-Datenbank zu definieren. Diese Felder werden beispielsweise für die Personalisierung verwendet. Gehen Sie dazu wie folgt vor:
 
 1. Erweitern Sie das Schema **[!UICONTROL Abonnierte Anwendungen (nms:appsubscriptionRcp)]** und konfigurieren Sie die neuen Felder. Learn more about schema extension in [this page](../../configuration/using/about-schema-edition.md)
@@ -187,7 +191,6 @@ Sie müssen die **appsubscriptionRcp** erweitern, um neue zusätzliche Felder zu
    >[!CAUTION]
    >
    >Stellen Sie sicher, dass die Parameterbezeichnungen im Tab **[!UICONTROL Abonnementparameter]** mit denen im Anwendungs-Code übereinstimmen. Weiterführende Informationen finden Sie im Abschnitt [Integration des Campaign SDK in Mobile Apps](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md).
-
 
 ## Erstellen einer Rich-Benachrichtigung für Android {#creating-android-delivery}
 
@@ -241,6 +244,8 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 >[!NOTE]
 >
 >Zusätzliche Optionen für Benachrichtigungsinhalte sind nur bei der HTTP v1-API-Konfiguration verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie, wie Sie eine Android-Push-Benachrichtigung in Videos erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=en#additional-resources)
 
 1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
 
