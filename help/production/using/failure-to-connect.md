@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 6464a61148fd12738d95953161aea4ac4d19c04b
+source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 2%
+source-wordcount: '343'
+ht-degree: 3%
 
 ---
 
@@ -48,38 +48,31 @@ Sie können die folgenden Tests durchführen. Sollte der Verbindungsfehler weite
    <td>Melden Sie sich bei: <b>http(s):///r/test</b> URL. Der Server sollte die folgende Art von Meldung zurückgeben:
 
     &lt;pre>
-    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&lt;server>&#39;/>
+    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&#39;&lt;server>&#39;/>
     &lt;/pre>
-    
-    Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie Ihre Webserverkonfiguration, dass die Integration berücksichtigt wird.&lt;/td>
+Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie Ihre Webserverkonfiguration, ob diese Integration berücksichtigt wird.</td>
 </tr>
   <tr> 
    <td>Wurde das Adobe Campaign-Webmodul gestartet?</td> 
    <td>Stellen Sie eine Verbindung mit der folgenden URL her: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Wenn Sie einen Tomcat Java-Fehler erhalten:
 
-    Wird die JAVA-Integration korrekt ausgeführt? Adobe Campaign erfordert ein SUN-JDK.
-    
-    Es ist in die Datei [Pfad der Anwendung]/nl6/customer.sh integriert.
+Wird die JAVA-Integration korrekt ausgeführt? Adobe Campaign erfordert ein SUN-JDK.
+
+Es ist in den [Anwendungspfad]/nl6/customer.sh integriert.
 
 * Wenn Sie eine leere Seite erhalten:
+Hat das Adobe Campaign-Webmodul gestartet? Sie sollten Folgendes erhalten:
 
-       Hat das Adobe Campaign-Webmodul gestartet? Sie sollten Folgendes erhalten:
-       
-       &lt;pre>
-     nlserver pdump
-     HH:MM:SS > Application server for Adobe Campaign Classic (7.x YY.R-Build XXX@SHA1) of DD/MM/YYYY
-     [..]
- web@default (27515) - 55.2 Mb     
-     
-     [...]&lt;/pre>
-   
+<pre>
+nlserver pdumpHH:MM:SS &gt; Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY[..]web@default (27515) - 55.2 Mb[...]
+</pre>
 * Andernfalls starten Sie es mit dem folgenden Befehl neu:
 
-       &lt;pre>
-     nlserver Beginn web
-     &lt;/pre>
-     &lt;/td>
-   </tr>
+<pre>        
+nlserver Beginn Web
+</pre>
+</td>
+</tr>
   <tr>
   	<td>Überprüfen Sie die allgemeine Konfiguration der Sicherheitszonen.</td>
   	<td>Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#define-security-zones).</td>
