@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 100%
+source-wordcount: '940'
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 >
 >Bevor Sie die SDK integrieren, ist sicherzustellen, dass die Anwendungen für den Versand von Push-Benachrichtigungen konfiguriert wurden.
 >
->Sollte dies nicht der Fall sein, besuchen Sie [diese Seite](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
+>Sollte dies nicht der Fall sein, besuchen Sie [diese Seite](https://developer.apple.com/documentation/usernotifications).
 
 1. Klicken Sie im Knoten **[!UICONTROL Profile und Zielgruppen > Dienste und Abonnements]** auf die Schaltfläche **[!UICONTROL Neu]**.
 
