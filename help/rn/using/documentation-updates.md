@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
-source-wordcount: '3604'
-ht-degree: 96%
+source-wordcount: '3647'
+ht-degree: 95%
 
 ---
 
@@ -31,11 +31,15 @@ Die Dokumentation zu Kampagne Federated Data Access (FDA) wurde mit Details zu d
 
 [Version](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 20.2.3 wurde auf &quot;Allgemeine Verfügbarkeit&quot;(GA) umgestellt.
 
-Der Abschnitt &quot;Datenschutz&quot;wurde um zwei neue Seiten erweitert: [Datenschutzverwaltung](../../platform/using/privacy-management.md) und [Verwaltung von Datenschutzanforderungen](../../platform/using/privacy-requests.md).
+The Privacy section has been moved and enriched with two new pages: [Privacy management](../../platform/using/privacy-management.md) and [Managing privacy requests](../../platform/using/privacy-requests.md).
 
 Auf der Seite &quot;Serverkonfiguration&quot;wurde ein Hinweis hinzugefügt, um anzugeben, dass der interne Name des Externen Kontos nach dem Einrichten des Mid-Sourcings nicht aktualisiert werden darf. [Mehr dazu](../../installation/using/mid-sourcing-server.md)
 
 Es wurden Informationen zur Syntax hinzugefügt, die beim Festlegen eines Pfades zu einem externen SFTP-Server verwendet werden soll. [Mehr dazu](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+
+Der Abschnitt &quot;Persönliche Daten und Personen&quot;wurde mit einem Verwendungsfallszenario aktualisiert, um zu veranschaulichen, wie die verschiedenen Personen in Bezug auf die Privatsphäre interagieren. [Mehr dazu](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+
+Ein neuer Abschnitt mit häufig gestellten Fragen zum Datenschutz wurde hinzugefügt. [Mehr dazu](../../platform/using/privacy-faq.md)
 
 ## Oktober 2020 {#oct-2020}
 
