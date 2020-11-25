@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -97,7 +97,7 @@ Sie können dann auf der Registerkarte **[!UICONTROL Skript]** der Aktivität od
 
 In diesem Anwendungsfall wird ein Workflow erstellt, um Daten mit einem im Control Panel installierten Schlüssel zu verschlüsseln und zu exportieren.
 
-In [diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/administrating/control-panel-acc/gpg-key-management/using-a-gpg-key-to-encrypt-data.html) finden Sie außerdem ein Video, in dem die Verwendung eines GPG-Schlüssels zum Verschlüsseln von Daten veranschaulicht wird.
+In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/instance-settings/gpg-key-management/using-a-gpg-key-to-encrypt-data.html?lang=en#instance-settings) finden Sie außerdem ein Video, in dem die Verwendung eines GPG-Schlüssels zum Verschlüsseln von Daten veranschaulicht wird.
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
