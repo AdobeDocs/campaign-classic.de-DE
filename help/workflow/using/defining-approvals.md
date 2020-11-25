@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
 workflow-type: tm+mt
-source-wordcount: '872'
-ht-degree: 100%
+source-wordcount: '870'
+ht-degree: 94%
 
 ---
 
@@ -66,7 +66,7 @@ Validierungsverantwortliche Benutzergruppen sollten wie Rollen oder Funktionen k
 
 ## Ablauffristen {#expirations}
 
-Ablauffristen sind besondere, vor allem bei Validierungsaktivitäten auftretende Transitionen. Eine Ablauf-Transition bietet die Möglichkeit, eine Dauer festzulegen, nach deren Verstreichen ein Workflow auch dann weiter ausgeführt wird, wenn niemand auf die Validierungszuweisung geantwortet hat. Die Validierung kann dann z. B. in der nächsten Aktivität einer anderen Gruppe zugewiesen werden.
+Expirations sind spezifische Transitionen, die in verschiedenen Aktivitäten, insbesondere in Genehmigungen, verwendet werden. Sie können einen Ablauf verwenden, um eine Aktion nach einer bestimmten Zeit ohne Antwort auszulösen. Sie kann auch zum Beispiel verwendet werden, um den Arbeitsablauf zu verfolgen und einer anderen Gruppe eine Genehmigung zuzuweisen.
 
 Ablauffristen werden im zweiten Tab der Eigenschaften von Validierungsaktivitäten definiert. Es können verschiedene Ablauffristen konfiguriert werden.
 
