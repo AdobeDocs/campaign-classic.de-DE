@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 2%
@@ -162,7 +162,7 @@ Das **`<nodemodel>`** -Element enthält die Beschreibung des Ordnertyps mit den 
 * **name**: interner Name
 * **label**: -Beschriftung im Menü **[!UICONTROL Hinzufügen neuen Ordners]** und als Standardbeschriftung beim Einfügen eines Ordners verwendet.
 * **img**: Standardbild beim Einfügen des Ordners.
-* **hiddenCommands**: liste der zu maskierenden Befehle (durch Kommas getrennt). Mögliche Werte: &quot;insert&quot;, &quot;delete&quot;, &quot;update&quot; und &quot;Duplikat&quot;.
+* **hiddenCommands**: liste der zu maskierenden Befehle (durch Kommas getrennt). Mögliche Werte: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; und &quot;adbdup&quot;.
 * **newFolderShortCuts**: liste von Tastaturbefehlen auf Modellen (durch Kommas **`<nodemodel>`** getrennt) bei der Ordnererstellung.
 * **insertRight**, **editRight**, **deleteRight**: Rechte zum Einfügen, Bearbeiten und Löschen von Ordnern.
 
