@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 57063c1ed0100b171bda93e273c399c40d8e980a
+source-git-commit: 68fee697b65b2ba69f456803e0a7cebca9be3760
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 3%
+source-wordcount: '337'
+ht-degree: 2%
 
 ---
 
@@ -45,35 +45,17 @@ Sie können die folgenden Tests durchführen. Sollte der Verbindungsfehler weite
   </tr>
   <tr> 
    <td>Wurde Adobe Campaign korrekt integriert?</td> 
-   <td>Melden Sie sich bei: <b>http(s):///r/test</b> URL. Der Server sollte die folgende Art von Meldung zurückgeben:
-
-    &lt;pre>
-    &lt;redir status=&#39;OK&#39; date=&#39;YYYY/MM/DD HH:MM:SS&#39; build=&#39;XXXX&#39; host=&#39;&lt;hostname>&#39; localHost=&#39;&#39;&lt;server>&#39;/>
-    &lt;/pre>
-Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie Ihre Webserverkonfiguration, ob diese Integration berücksichtigt wird.</td>
-</tr>
+   <td>Melden Sie sich bei: <b>http(s):///r/test</b> URL. Der Server sollte die folgende Art von Meldung zurückgeben: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt; Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie Ihre Webserverkonfiguration, dass die Integration berücksichtigt wird.</td>
+  </tr>
   <tr> 
-   <td>Wurde das Adobe Campaign-Webmodul gestartet?</td> 
-   <td>Stellen Sie eine Verbindung mit der folgenden URL her: <b>http(s)://&gt;URLSERVER&lt;/nl/jsp/logon.jsp</b>* Wenn Sie einen Tomcat Java-Fehler erhalten:
-
-Wird die JAVA-Integration korrekt ausgeführt? Adobe Campaign erfordert ein SUN-JDK.
-
-Es ist in den [Anwendungspfad]/nl6/customer.sh integriert.
-
-* Wenn Sie eine leere Seite erhalten:
-Hat das Adobe Campaign-Webmodul gestartet? Sie sollten Folgendes erhalten:
-
-<pre>
-nlserver pdumpHH:MM:SS &gt; Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY[..]web@default (27515) - 55.2 Mb[...]
-</pre>
-* Andernfalls starten Sie es mit dem folgenden Befehl neu:
-
-<pre>        
-nlserver Beginn Web
-</pre>
-</td>
-</tr>
-  <tr>
+   <td>Stellen Sie eine Verbindung mit der folgenden URL her: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+   <td>Wenn Sie einen Tomcat-Java-Fehler erhalten, überprüfen Sie, ob die JAVA-Integration korrekt ausgeführt wurde. Es ist in die Datei [Pfad der Anwendung]/nl6/customer.sh integriert.</td>
+  </tr>
+  <tr> 
+   <td>Stellen Sie eine Verbindung mit der folgenden URL her: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
+   <td>Wenn Sie eine leere Seite erhalten, überprüfen Sie, ob das Adobe Campaign-Webmodul gestartet wurde. Der Befehl nlserver pdump sollte den Anwendungsserver für Adobe Campaign Classic (7.X YY.R Build XXX@SHA1) von TT/MM/JJJJ zurückgeben. Ist dies nicht der Fall, starten Sie das Modul mit dem Befehl nlserver Beginn web neu.</td>
+  </tr>
+   <tr>
   	<td>Überprüfen Sie die allgemeine Konfiguration der Sicherheitszonen.</td>
   	<td>Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#define-security-zones).</td>
   </tr>
