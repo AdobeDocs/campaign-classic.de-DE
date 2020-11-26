@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '173'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -32,5 +32,5 @@ Weitere Informationen zu den Besonderheiten der einzelnen Bibliotheken finden Si
 
 >[!NOTE]
 >
->Im Rahmen einer On-Premise-Umgebung im Adobe Campaign ist eine Integration mit dem Asset-Core-Service und mit AEM Assets nicht möglich, es sei denn, AEM Assets ist auch vor Ort.
+>In einer Adobe Campaign On-Premise-Umgebung ist die Integration mit Assets Core Service und AEM Assets nur unter der Voraussetzung verfügbar, dass AEM Assets ebenfalls On-Premise benutzt wird.
 
