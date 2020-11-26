@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Start und Ende
-description: Weitere Informationen zu den Aktivitäten für den Beginn- und End-Workflow
+description: Erfahren Sie mehr über die Workflow-Aktivitäten "Start" und "Ende".
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '138'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
