@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Konfigurieren der Pipeline
-description: Erfahren Sie, wie Sie die Pipeline konfigurieren
+description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -27,29 +27,29 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie diese Konfiguration starten, überprüfen Sie, ob Sie Folgendes verwenden:
+Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes verwenden:
 
-* Adobe Campaign 20.3 - Mindestversion
+* Mindestens Adobe Campaign-Version 20.3
 * Adobe Analytics Standard-Version
 
 Sie benötigen außerdem:
 
-* Projektauthentifizierung für Adobe-E/A
-* eine gültige IMSOrgID, die Kennung des Experience Cloud-Kunden mit Adobe Analytics hinzugefügt
-* einen Entwicklerzugriff auf das IMS-Org
-* Triggerkonfiguration in Adobe Analytics ausgeführt
+* Projektauthentifizierung für Adobe I/O
+* eine gültige IMSOrgId; die Kennung des Experience Cloud-Kunden, wobei Adobe Analytics hinzugefügt sein muss
+* Entwicklerzugriff auf die IMS-Organisation
+* Trigger-Konfiguration, ausgeführt in Adobe Analytics
 
 ## Authentifizierung und Konfigurationsdateien {#authentication-configuration}
 
 Da das Pipeline-Hosting in Adobe Experience Cloud erfolgt, ist eine Authentifizierung erforderlich.
 Hierfür wird ein Schlüsselpaar aus öffentlichem und privatem Schlüssel verwendet. Der Prozess entspricht der Verwendung einer Kombination aus Benutzer und Passwort, ist aber sicherer.
-Authentifizierung wird für das Marketing Cloud über das Adobe-I/O-Projekt unterstützt.
+Die Authentifizierung für Experience Cloud wird über das Adobe I/O-Projekt umgesetzt.
 
-## Schritt 1: Erstellen/Aktualisieren des Adoben-E/A-Projekts {#creating-adobe-io-project}
+## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
 
-Für gehostete Kunden können Sie ein Kundenbetreuungsticket erstellen, um Ihr Unternehmen mit Adobe-E/A-Token für die Triggerintegration zu aktivieren.
+Kunden gehosteter Bereitstellungen können ein Ticket bei der Adobe-Kundenunterstützung eröffnen, um die Triggers-Integration für ihre Organisation über Adobe I/O-Token für technische Konten zu aktivieren.
 
-For On Premise customers, refer to the [Configuring Adobe I/O for Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) page. Note that you need to select **[!UICONTROL Adobe Analytics]** while adding API to the Adobe I/O credential.
+Kunden von On-Premise-Bereitstellungen finden Informationen hierzu auf der Seite [Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Beachten Sie, dass für die den Adobe I/O-Anmeldedaten hinzugefügte API **[!UICONTROL Adobe Analytics]** ausgewählt sein muss.
 
 ## Schritt 2: Konfigurieren der Pipeline-Option &quot;NmsPipeline_Config&quot; {#configuring-nmspipeline}
 
