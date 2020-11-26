@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Konfigurieren von Ereignissen
-description: Erfahren Sie, wie Sie Ereignis für die benutzerdefinierte Implementierung konfigurieren
+description: Erfahren Sie, wie Sie Ereignisse für eine benutzerdefinierte Implementierung konfigurieren.
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1205'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Diese Konfiguration enthält benutzerspezifische Anpassungen. Sie erfordert:
 * Grundkenntnisse der QueryDef- und Writer-APIs.
 * Grundverständnis der Verschlüsselung und Authentifizierung mit privaten Schlüsseln.
 
-Da die Bearbeitung des Javascript-Codes technische Fähigkeiten erfordert, versuchen Sie es bitte nicht ohne das richtige Verständnis.
+Für das Bearbeiten des JavaScript-Codes sind technische Kenntnisse vonnöten. Daher sollten Sie dies nur vornehmen, wenn Sie über entsprechende Kenntnisse verfügen.
 
 ## Verarbeiten von Ereignissen in JavaScript {#events-javascript}
 
@@ -51,7 +51,7 @@ Sie sollte zurückgegeben werden als
 <undefined/>
 ```
 
-You should restart [!DNL pipelined] after editing the Javascript.
+Nach der Bearbeitung des JavaScript sollten Sie [!DNL pipelined] neu starten.
 
 ### Datenformat des Auslösers {#trigger-format}
 
