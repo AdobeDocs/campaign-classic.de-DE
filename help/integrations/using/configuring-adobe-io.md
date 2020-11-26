@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurieren der Adobe-E/A für Adobe Experience Cloud-Auslöser
-description: Erfahren Sie, wie Sie die Adobe-E/A für Adobe Experience Cloud-Auslöser konfigurieren.
+title: Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers
+description: Erfahren Sie, wie Sie Adobe I/O für Adobe Experience Cloud Triggers konfigurieren.
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -13,44 +13,44 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 
-# Configuring Adobe I/O for Adobe Experience Cloud Triggers {#configuring-adobe-io}
+# Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers {#configuring-adobe-io}
 
 >[!CAUTION]
 >
->Wenn Sie eine ältere Version der Trigger-Integration über die Auth-Authentifizierung verwenden, müssen **Sie wie unten** beschrieben zur Adobe-E/A wechseln. Der alte Auth-Authentifizierungsmodus wird am 30. April 2021 eingestellt. [Mehr dazu](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Die alte oAuth-Authentifizierungsmethode wird am 30. April 2021 eingestellt. [Mehr dazu](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
-Diese Integration gilt nur ab Version **20.3** des Campaign Classic.
+Diese Integration gilt erst ab **Campaign Classic-Version 20.3**.
 
-Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
+Bevor Sie mit der Implementierung beginnen, benötigen Sie Folgendes:
 
-* eine gültige IMSOrgID: der Organisationsbezeichner des Identity Management-Systems (IMS) ist die eindeutige Kennung innerhalb des Adobe Experience Cloud, die beispielsweise für den VisitorID-Dienst und das IMS-Single-Sign-On (SSO) verwendet wird,
-* ein Entwicklerzugriff auf das IMS-Org.
+* Gültige IMS-Organisationskennung (IMSOrgID): Die IMS-Organisationskennung (Identity Management System) ist die eindeutige Kennung innerhalb von Adobe Experience Cloud, die z. B. für den Besucher-ID-Dienst und IMS Single-Sign On (SSO) verwendet wird,
+* Entwicklerzugriff auf die IMS-Organisation.
 
 >[!NOTE]
 >
->If you need to request the System Administrator privileges of the IMS Org, follow the procedure detailed [in this page](https://helpx.adobe.com/de/enterprise/admin-guide.html/de/enterprise/using/manage-developers.ug.html) to provide this access for the all Product Profiles.
+>Sie müssen die Systemadministratorberechtigungen für die IMS-Organisation anfordern, um diesen Zugriff nach dem [auf dieser Seite](https://helpx.adobe.com/de/enterprise/admin-guide.html/de/enterprise/using/manage-developers.ug.html) beschriebenen Verfahren für alle Produktprofile bereitzustellen zu können.
 
 
-## Schritt 1: I/O-Projekt der Adobe erstellen/aktualisieren {#creating-adobe-io-project}
+## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
 
-1. Greifen Sie auf die Adobe I/O zu und melden Sie sich mit der Systemadministrator-Berechtigung für IMSorg an.
+1. Rufen Sie Adobe I/O auf und melden Sie sich mit der Systemadministratorberechtigung für die IMS-Org an.
 
    >[!NOTE]
    >
    > Stellen Sie sicher, dass Sie beim richtigen IMSorg-Portal angemeldet sind.
 
-1. Entnehmen Sie die vorhandene Integrations-Client-ID aus der Konfigurationsdatei &quot;ims/authIMSTAClientId&quot; der Instanz. Nicht vorhandenes oder leeres Attribut zeigt an, dass die Client-ID nicht konfiguriert ist.
+1. Entnehmen Sie die vorhandene Integrations-Client-ID aus der Konfigurationsdatei &quot;ims/authIMSTAClientId&quot; der Instanz. Ist das Attribut nicht vorhanden oder leer, bedeutet dies, dass die Client-ID nicht konfiguriert ist.
 
    >[!NOTE]
    >
-   >If your Client ID is empty, you can directly **[!UICONTROL Create a New project]** in Adobe I/O.
+   >Wenn die Client-ID leer ist, können Sie in Adobe I/O direkt ein **[!UICONTROL neues Projekt erstellen]**.
 
 1. Identifizieren Sie das vorhandene Projekt mit der extrahierten Client-ID. Suchen Sie nach bestehenden Projekten, die dieselbe Client-ID aufweisen wie die im vorherigen Schritt entnommene.
 
@@ -60,7 +60,7 @@ Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
-1. In the **[!UICONTROL Add an API]** window, select **[!UICONTROL Adobe Analytics]**.
+1. Wählen Sie im Fenster **[!UICONTROL Add an API]** (API hinzufügen) **[!UICONTROL Adobe Analytics]** aus.
 
    ![](assets/do-not-localize/adobe_io_2.png)
 
@@ -68,7 +68,7 @@ Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. If your Client ID was empty, select **[!UICONTROL Generate a key pair]** to create a Public and Private keypair.
+1. Wenn Ihre Client-ID leer war, wählen Sie **[!UICONTROL Generate a key pair]** (Schlüsselpaar generieren) aus, um ein Paar aus öffentlichem und privatem Schlüssel zu erstellen.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -90,7 +90,7 @@ Bevor Sie mit der Implementierung beginnen, überprüfen Sie bitte, ob Sie:
 
 ## Schritt 2: Hinzufügen der Projektanmeldedaten in Adobe Campaign {#add-credentials-campaign}
 
-To add the project credentials in Adobe Campaign, run the following command as &#39;neolane&#39; user on all the containers of the Adobe Campaign instance to insert the **[!UICONTROL Technical Account]** credentials in the instance configuration file.
+Um die Projektanmeldedaten in Adobe Campaign hinzuzufügen, führen Sie als neolane-Benutzer folgenden Befehl für alle Container der Adobe Campaign-Instanz aus. Damit werden die Anmeldedaten des **[!UICONTROL technischen Kontos]** in die Konfigurationsdatei der Instanz eingefügt.
 
 ```
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID[/Client_Secret[/Base64_encoded_Private_Key]]
@@ -102,7 +102,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 ## Schritt 3: Aktualisieren des Pipelined-Tags {#update-pipelined-tag}
 
-To update [!DNL pipelined] tag, you need to update the authentication type to Adobe I/O project in the configuration file **config-&lt; instance-name >.xml** as follows:
+Um das [!DNL pipelined]-Tag zu aktualisieren, müssen Sie den Authentifizierungstyp in der Konfigurationsdatei **config-&lt; Name der Instanz >.xml** wie folgt entsprechend dem Adobe I/O-Projekt aktualisieren:
 
 ```
 <pipelined ... authType="imsJwtToken"  ... />
