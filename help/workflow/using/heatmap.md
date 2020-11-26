@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Workflow-Heatmap
-description: Kampagnen-Workflows mit Workflow HeatMap überwachen
+description: Überwachen Sie Ihre Campaign-Workflows mit Workflow-Heatmap.
 audience: workflow
 content-type: reference
 topic-tags: use-cases
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1404'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Workflow-Heatmap {#workflow-heatmap}
 
-Adobe Campaign Workflow HeatMap besteht aus einer farbkodierten grafischen Darstellung aller derzeit ausgeführten Workflows. Sie steht nur Administratoren der Instanz zur Verfügung.
+Adobe Campaign Workflow-Heatmap besteht aus einer farbcodierten grafischen Darstellung aller derzeit ausgeführten Workflows. Sie steht nur Administratoren der Instanz zur Verfügung.
 
 Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
 
