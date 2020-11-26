@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Adobe Experience Manager-Integration konfigurieren
-description: Erfahren Sie, wie Sie die Kampagne-AEM-Integration konfigurieren.
+title: Konfigurieren der Adobe Experience Manager-Integration
+description: Erfahren Sie, wie Sie die Campaign-AEM-Integration konfigurieren.
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
