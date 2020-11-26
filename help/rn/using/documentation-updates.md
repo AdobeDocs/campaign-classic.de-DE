@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '3647'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ Die Konfiguration des Externen Kontos wurde in [diesen Abschnitt](../../installa
 
 Die Dokumentation zu Kampagne Federated Data Access (FDA) wurde mit Details zu den einzelnen externen Datenbankkonfigurationen verbessert und in [diesen Abschnitt](../../installation/using/about-fda.md)verschoben.
 
-[Version](../../rn/using/release--20-2.md#release-20-2-3-build-9182) 20.2.3 wurde auf &quot;Allgemeine Verfügbarkeit&quot;(GA) umgestellt.
+[Campaign-Version 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182) ist jetzt allgemein verfügbar (GA).
 
 The Privacy section has been moved and enriched with two new pages: [Privacy management](../../platform/using/privacy-management.md) and [Managing privacy requests](../../platform/using/privacy-requests.md).
 
@@ -58,7 +58,7 @@ Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr daz
 Versionshinweise und Kompatibilitätsmatrix für die Gold Standard-Version sind jetzt in einem speziellen Abschnitt verfügbar.
 [Mehr dazu](../../rn/using/gold-standard.md#gs-10)
 
-Triggers integration originally based on oAUTH authentication setup to access pipeline has now been changed and moved to Adobe I/O. [Read more](../../integrations/using/configuring-adobe-io.md)
+Die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
 
 **Weitere Aktualisierungen**
 
