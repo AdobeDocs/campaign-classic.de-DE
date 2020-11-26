@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 'Workflow-Eigenschaften    '
-description: Weitere Informationen zu den Eigenschaften des Arbeitsablaufs für Kampagnen
+title: Workflow-Eigenschaften
+description: Erfahren Sie mehr über die Campaign-Workflow-Eigenschaften.
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '617'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
    Diese Option darf nur zur Problembehebung verwendet werden und nie im Produktionsalltag. Bei Aktivierung der Option wird der Workflow prioritär. Alle anderen Workflows werden bis zu seinem Abschluss von der Workflow-Engine angehalten.
 
-### Umgang mit Fehlern    {#error-management}
+### Umgang mit Fehlern     {#error-management}
 
 * **[!UICONTROL Fehlerbehebung]**
 
