@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Versandentwurf
-description: Weitere Informationen zur Aktivität der Versandentwurf-Workflow-
+description: Erfahren Sie mehr über die Workflow-Aktivität "Versandentwurf".
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 
 # Versandentwurf{#delivery-outline}
 
-The **delivery outline** lets you use an outline in a campaign workflow. The outline must have been created in the campaign beforehand.
+Die Aktivität **Versandentwurf** ermöglicht die Verwendung von Entwürfen in Kampagnen-Workflows. Der Versandentwurf ist zuvor in der Kampagne zu konfigurieren.
 
 Weiterführende Informationen zu Versandentwürfen finden Sie in diesem [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
@@ -25,7 +25,7 @@ Wählen Sie zur Konfiguration der Aktivität den gewünschten Versandentwurf aus
 
 ## Anwendungsbeispiel: Einfügung eines Angebots mithilfe eines Versandentwurfs {#example--inserting-an-offer-via-a-delivery-outline}
 
-The **delivery outline** activity, available in the campaign workflows, lets you present offers that are referenced in a delivery outline from the current campaign in progress.
+Die in Kampagnen-Workflows zur Verfügung stehende Aktivität **Versandentwurf** erlaubt es, Angebote zu unterbreiten, die in einem Versandentwurf der aktuellen Kampagne referenziert wurden.
 
 >[!NOTE]
 >
