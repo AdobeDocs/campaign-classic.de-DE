@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern
-description: Erfahren Sie, wie Sie E-Mails mit benutzerdefinierten Datumsfeldern bereichern.
+description: Erfahren Sie, wie Sie E-Mails mit benutzerdefinierten Datumsfeldern anreichern.
 audience: workflow
 content-type: reference
 topic-tags: use-cases
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '631'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
