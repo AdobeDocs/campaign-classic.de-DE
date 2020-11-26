@@ -10,16 +10,16 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Kommunikationskanäle{#communication-channels}
 
-Mit Adobe Campaign können Sie Kanal-übergreifende Kampagnen wie E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Direktnachrichten senden und deren Effektivität mithilfe verschiedener dedizierter [Berichte](../../reporting/using/delivery-reports.md)messen. Diese Nachrichten werden von Versänden entworfen und gesendet und können für jeden Empfänger personalisiert werden.
+Mit Adobe Campaign können Sie kanalübergreifende Kampagnen wie E-Mails, SMS, LINE-Nachrichten, Push-Benachrichtigungen und Briefpost senden und deren Effektivität mithilfe verschiedener dedizierter [Berichte](../../reporting/using/delivery-reports.md) messen. Diese Nachrichten werden mittels Sendungen entworfen und gesendet und können für jeden Empfänger personalisiert werden.
 
-Zu den Kernfunktionen zählen Targeting, Definition und Personalisierung von Nachrichten, Ausführung von Mitteilungen und die damit verbundenen operativen Berichte. Der funktionale Hauptzugangspunkt ist der Versand-Assistent. Dieser Zugriffspunkt führt zu mehreren Funktionen, die von Adobe Campaign abgedeckt werden.
+Zu den Kernfunktionen zählen die Zielgruppenbestimmung, die Definition und Personalisierung von Nachrichten, die Ausführung von Kommunikationen und die damit verbundenen operativen Berichte. Als Hauptzugriffspunkt dient der Versand-Assistent. Dieser Zugriffspunkt führt zu mehreren Funktionen, die von Adobe Campaign abgedeckt werden.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 
    >[!NOTE]
    >
-   >Die Anzahl der verfügbaren Kanal hängt von Ihrem Vertrag ab. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+   >Die Anzahl der verfügbaren Kanäle hängt von Ihrem Vertrag ab. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 
 Sendungen können **online** (per E-Mail, Mobile-Kanal und Push-Benachrichtigungen) und **offline** (Brief-Kanal) durchgeführt werden.
 
