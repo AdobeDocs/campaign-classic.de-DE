@@ -8,7 +8,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 85%
+ht-degree: 95%
 
 ---
 
@@ -19,21 +19,21 @@ ht-degree: 85%
 
 ## Neue Funktionen
 
-* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte Auth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht. Erfahren Sie, wie Sie zu Adobe-I/O migrieren können
+* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsdienst wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln
 
-* **[Umstellung auf HTTP/2-basierte Anbieter-API für APNs](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/>
-Erfahren Sie, wie Sie vom veralteten Binärprotokoll zur HTTP/2-basierten Anbieter-API für APNs migrieren
+* **[Umstellung auf HTTP/2-basierte Provider-API für APNs](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/>
+Erfahren Sie, wie Sie vom veralteten Binärprotokoll zur HTTP/2-basierten Provider-API für APNs migrieren
 
 * **[Hinzufügen von Emoticons zu Ihren Nachrichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
 Sie können Emoticons jetzt in Nachrichten und die Betreffzeile einfügen.
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>
-Häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
+Zugriff auf häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
 
 * **[Tracking-Funktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/>
 Lernen Sie die Tracking-Funktionen und -Verfahren von Campaign kennen.
 
-[Weitere Updates](/help/rn/using/documentation-updates.md)
+[Weitere Aktualisierungen](/help/rn/using/documentation-updates.md)
 
 ## Wichtigste Seiten
 
