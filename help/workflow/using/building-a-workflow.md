@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Workflow erstellen
-description: Erfahren Sie, wie Sie einen Workflow erstellen
+description: Erfahren Sie, wie Sie einen Workflow erstellen.
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1679'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ In diesem Abschnitt werden die wichtigsten Grundsätze und Best Practices für d
 * Das Workflow-Diagramm entwerfen, siehe [Aktivitäten hinzufügen und verbinden](#adding-and-linking-activities).
 * Auf Parameter und Eigenschaften von Aktivitäten zugreifen, siehe [Aktivitäten konfigurieren](#configuring-activities).
 * Targeting-Workflows erstellen, siehe [Zielgruppen-Workflows](#targeting-workflows).
-* Use workflows to execute a campaign, see [Campaign workflows](#campaign-workflows)
+* Workflows zum Ausführen einer Kampagne verwenden, siehe [Kampagnen-Workflows](#campaign-workflows).
 * Technische Workflows aufrufen und anlegen, siehe [Technische Workflows](#technical-workflows).
 * Workflows mit Vorlagen erstellen, siehe [Workflow-Vorlagen](#workflow-templates).
 
@@ -140,13 +140,13 @@ Der Zugriff auf Zielgruppen-Workflows erfolgt im Navigationsbaum über den Knote
 
 Im Gegensatz dazu werden die im Rahmen einer Kampagne erstellten Zielgruppen-Workflows zusammen mit den anderen Kampagnen-Workflows gespeichert.
 
-### Wichtige Schritte zum Erstellen eines Targeting-Workflows {#implementation-steps-}
+### Wichtige Schritte zum Erstellen eines Zielgruppen-Workflows {#implementation-steps-}
 
-Die Schritte zum Erstellen eines Targeting-Arbeitsablaufs sind in den folgenden Abschnitten beschrieben:
+In den folgenden Abschnitten finden Sie Details zum Erstellen eines Zielgruppen-Workflows:
 
-1. **Identifizieren** von Daten in der Datenbank - Siehe [Erstellen von Abfragen](../../workflow/using/targeting-data.md#creating-queries)
-1. **Vorbereiten** von Daten zur Erfüllung von Anforderungen des Versands - Siehe [Anreichern und Ändern von Daten](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **Verwenden** von Daten zum Durchführen von Aktualisierungen oder in einem Versand - Siehe [Aktualisieren der Datenbank](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **Identifizieren** von Daten in der Datenbank, siehe [Abfragen erstellen](../../workflow/using/targeting-data.md#creating-queries)
+1. **Vorbereiten** von Daten auf die Versandanforderungen, siehe [Daten anreichern und ändern](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
+1. **Verwenden** von Daten für Aktualisierungen oder in einem Versand, siehe [Datenbankstruktur aktualisieren](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
 
 Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data)
 
@@ -182,7 +182,7 @@ Alle Kampagnen-Workflows werden zentral im Knoten **[!UICONTROL Administration >
 
 ![](assets/campaigns_wf.png)
 
-Campaign workflows and implementation examples are detailed in [this page](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+Weitere Informationen zu Kampagnen-Workflows und entsprechende Anwendungsbeispiele finden Sie auf [dieser Seite](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
 ## Technische Workflows {#technical-workflows}
 
