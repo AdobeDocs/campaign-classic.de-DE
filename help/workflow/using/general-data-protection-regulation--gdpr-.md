@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Datenschutzverordnung Workflows
-description: Weitere Informationen zur Datenschutzverordnung Workflows
+title: Datenschutzbestimmungs-Workflows
+description: Erfahren Sie mehr über die Workflows für Datenschutzbestimmungen.
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
