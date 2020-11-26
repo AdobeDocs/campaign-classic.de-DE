@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Best Practices bei Workflows
-description: Best Practices zum Arbeitsablauf für Kampagnen
+description: Machen Sie sich mit Best Practices bei Campaign-Workflows vertraut.
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1655'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Kreuzen Sie in den **[!UICONTROL Workflow-Eigenschaften]** im Produktionsmodus n
 
 ![](assets/wf-execute-in-engine.png)
 
-## Workflow-Eigenschaften     {#workflow-properties}
+## Workflow-Eigenschaften      {#workflow-properties}
 
 ### Workflow-Ordner {#workflow-folders}
 
