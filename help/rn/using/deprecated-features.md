@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1621'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -51,8 +51,8 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
    <ul>
    <li>Soap-API – On-Premise: 2007, 2015, 2016</li>
    <li>Soap-API – Online: 2015, 2016</li>
-   <li>Web API - Microsoft Dynamics CRM On-Premise: Aktualisierung 2016, 2016 1</li>
-   <li>Web API - Microsoft Dynamics CRM Online: Aktualisierung 2016, 2016 1</li>
+   <li>Web API – Microsoft Dynamics CRM On-Premise: 2016, Aktualisierung 1 2016</li>
+   <li>Web API – Microsoft Dynamics CRM Online: 2016, Aktualisierung 1 2016</li>
    </ul>
   <p><em>Geplantes Datum für die Entfernung: 2021.</em></p>
   </td>
