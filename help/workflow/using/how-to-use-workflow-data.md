@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Workflow-Daten verwenden
-description: Erfahren Sie, wie Sie Workflow-Daten verwenden
+description: Erfahren Sie, wie Sie die Workflow-Daten verwenden.
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
 workflow-type: tm+mt
 source-wordcount: '945'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -103,7 +103,7 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
 1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel im Control Panel. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/gpg-keys-management.html#encrypting-data).
 
-1. Erstellen Sie in Campaign Classic einen Workflow, um die Daten zu exportieren und mit dem privaten Schlüssel zu verschlüsseln, der über die Systemsteuerung installiert wurde. Zu diesem Zweck wird folgender Workflow erstellt:
+1. Erstellen Sie einen Workflow in Campaign Classic, um die Daten zu exportieren und mithilfe des über das Control Panel installierten privaten Schlüssels zu verschlüsseln. Zu diesem Zweck wird folgender Workflow erstellt:
 
    ![](assets/gpg-workflow-encrypt.png)
 
