@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
 workflow-type: tm+mt
 source-wordcount: '2171'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 97%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen         {#creating-queries}
+   + Abfragen erstellen          {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -335,7 +335,7 @@ ht-degree: 97%
    + Experience Cloud Triggers {#experience-triggers}
       + [Erste Schritte mit [!DNL Adobe Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pipeline konfigurieren](integrations/using/configuring-pipeline.md)
-      + [Konfigurieren der Adobe-E/A für Adobe Experience Cloud-Auslöser](integrations/using/configuring-adobe-io.md)
+      + [Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers](integrations/using/configuring-adobe-io.md)
       + [Konfigurieren von Ereignissen für benutzerdefinierte Implementierungen](integrations/using/events.md)
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
@@ -424,7 +424,7 @@ ht-degree: 97%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring      {#monitoring}
+      + Monitoring       {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
