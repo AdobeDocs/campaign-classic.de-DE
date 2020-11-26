@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Datenschutz und Einverständniserklärung
-description: Weitere Informationen zu Datenschutz und Zustimmung
+description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 83%
+ht-degree: 87%
 
 ---
 
@@ -80,7 +80,7 @@ Bei der Verwaltung des Datenschutzes ist es wichtig zu definieren, welche Daten 
 
 Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Zielgruppen von einem System auf ein anderes übertragen werden können, wie z. B. mit [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager oder People Core Service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) oder mit anderen Lösungen über [CRM-Connectoren](../../platform/using/crm-connectors.md), müssen Sie dem Schutz personenbezogener Daten besondere Aufmerksamkeit widmen.
 
-The [main regulations](#privacy-regulations) refer to the different entities that manage data as follows:
+Die [wichtigsten Verordnungen](#privacy-regulations) beziehen sich auf die verschiedenen Entitäten, die Daten wie folgt verwalten:
 * Ein **Datenverantwortlicher** ist die Autorität, die die Mittel und den Zweck der Erfassung, Verwendung und Weitergabe personenbezogener Daten festlegt.
 * Ein **Auftragsverarbeiter** ist eine natürliche oder juristische Person, die personenbezogene Daten gemäß den Anweisungen des Datenverantwortlichen erfasst, verwendet oder weitergibt.
 * Eine **betroffene Person** ist eine lebende Person, deren personenbezogene Daten erfasst, verwendet oder weitergegeben werden und die direkt oder indirekt anhand dieser personenbezogenen Daten identifiziert werden kann.
@@ -141,7 +141,7 @@ Zunächst bietet Adobe Campaign wichtige Funktionen, die für den Datenschutz un
 * **Datenbeibehaltung**: Alle integrierten standardmäßigen Protokolltabellen in Campaign verfügen über eine vordefinierte Beibehaltungsdauer, die üblicherweise auf maximal sechs Monate begrenzt ist. Mit Workflows können weitere Beibehaltungszeiträume eingerichtet werden. Weitere Informationen hierzu erhalten Sie von den Adobe-Beratern oder technischen Administratoren.
 * **Berechtigungs-Management**: Adobe Campaign bietet Ihnen die Möglichkeit, die den unterschiedlichen Campaign-Benutzern zugewiesenen Rechte mithilfe von vordefinierten oder benutzerdefinierten spezifischen Rollen zu verwalten. Damit können Sie festlegen, wer in Ihrem Unternehmen auf unterschiedliche Arten von Daten zugreifen, diese ändern und exportieren kann. Weitere Informationen hierzu finden Sie unter [Über die Zugriffsverwaltung](../../platform/using/access-management.md).
 
-For more on these features and how to manage them in Adobe Campaign, see [this section](../../platform/using/privacy-management.md#consent-retention-roles).
+Weitere Informationen zu diesen Funktionen und deren Verwaltung in Adobe Campaign finden Sie in [diesem Abschnitt](../../platform/using/privacy-management.md#consent-retention-roles).
 
 ### Datenschutzanfragen {#privacy-requests}
 
@@ -164,7 +164,7 @@ Dank der Tracking-Funktionen können Sie mit Adobe Campaign die Navigation Ihrer
 * Ein **Sitzungs**-Cookie: Das **nlid**-Cookie enthält die Kennung der an den Kontakt gesendeten E-Mail (**broadlogId**) und die Kennung der Nachrichtenvorlage (**deliveryId**). Es wird gesetzt, sobald der Kontakt auf eine in einer mit Adobe Campaign gesendeten E-Mail enthaltene URL klickt, und ermöglicht, das Web-Verhalten des Kontakts zu verfolgen. Dieses Sitzungs-Cookie wird automatisch beim Schließen des Browsers gelöscht. Der Kontakt hat die Möglichkeit, das Setzen des Cookies zu verbieten, indem er seine Browser-Einstellungen dementsprechend ändert.
 
 * Zwei **dauerhafte** Cookies:
-   * Das **UUID**-Cookie (Universal Unique IDentifier) wird von verschiedenen Adobe Experience Cloud-Lösungen verwendet. Es wird einmal eingestellt, bis es aus dem Client-Browser verschwindet, wenn ein neuer Wert generiert wird. Dieses Cookie ermöglicht die Identifizierung eines Benutzers, der bei Website-Besuchen mit Experience Cloud-Lösungen interagiert. Es kann von einer Landingpage (um unbekannte Kundenaktivitäten einem Empfänger zuzuordnen) oder von einem Versand hinterlegt werden. The description of this cookie is available on [this page](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=en#ec-cookies).
+   * Das **UUID**-Cookie (Universal Unique IDentifier) wird von verschiedenen Adobe Experience Cloud-Lösungen verwendet. Es wird einmal gesetzt, bis es beim Generieren eines neuen Werts aus dem Clientbrowser verschwindet. Dieses Cookie ermöglicht die Identifizierung eines Benutzers, der bei Website-Besuchen mit Experience Cloud-Lösungen interagiert. Es kann von einer Landingpage (um unbekannte Kundenaktivitäten einem Empfänger zuzuordnen) oder von einem Versand hinterlegt werden. Eine Beschreibung dieses Cookies finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-mc.html?lang=de#ec-cookies).
    * Das **nllastdelid**-Cookie (eingeführt in Campaign Classic 20.3) ist ein dauerhaftes Cookie, das die **deliveryId** des letzten Versands enthält, von dem aus der Benutzer auf den Link geklickt hat. Dieses Cookie wird (wenn das Sitzungs-Cookie fehlt) zur Identifizierung der zu verwendenden Tracking-Tabelle verwendet.
 
 Vorschriften wie die EU-Datenschutz-Grundverordnung (DSGVO) besagen, dass Unternehmen die Zustimmung der Website-Benutzer benötigen, bevor sie Cookies installieren.
