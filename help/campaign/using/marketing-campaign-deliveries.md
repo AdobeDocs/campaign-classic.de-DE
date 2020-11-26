@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '3076'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 Sendungen können über das Dashboard einer Kampagne, einen Kampagnenworkflow oder direkt über die Übersicht der Sendungen erstellt werden.
 
-Wenn Versand aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Ebene der Kampagne konsolidiert.
+Wenn Sendungen aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Kampagnenebene konsolidiert.
 
 ![](assets/do-not-localize/how-to-video.png)[ Funktion im Video kennenlernen](#create-email-video).
 
@@ -35,13 +35,13 @@ Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen a
 
 Für jeden Versand können Sie Folgendes definieren:
 
-* Die Audience - Erfahren Sie mehr über das [Erstellen der Audience in einem Workflow](#building-the-main-target-in-a-workflow) und das [Auswählen der Population](#selecting-the-target-population)der Zielgruppe.
-* Eine Kontrollgruppe - Weitere Informationen zum [Definieren einer Kontrollgruppe](#defining-a-control-group).
-* Testadressen - Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
+* Die Audience: Erfahren Sie mehr über das [Erstellen der Audience in einem Workflow](#building-the-main-target-in-a-workflow) und das [Auswählen der Zielpopulation](#selecting-the-target-population).
+* Eine Kontrollgruppe: Erfahren Sie mehr über das [Definieren einer Kontrollgruppe](#defining-a-control-group).
+* Testadressen: Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
-Some of this information can be inherited from the [template](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+Einige dieser Informationen werden bereits durch die [Vorlage](../../campaign/using/marketing-campaign-templates.md#campaign-templates) festgelegt.
 
-Um die Versand-Zielgruppe zu erstellen, können Sie Filterkriterien für die Empfänger in der Datenbank definieren. Dieser Empfänger-Auswahlmodus wird in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md)angezeigt.
+Um die Versandzielgruppe zu erstellen, können Sie Filterkriterien für die Empfänger in der Datenbank definieren. Dieser Auswahlmodus für Empfänger wird in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md) vorgestellt.
 
 **Beispiel: Nachrichten an eine Gruppe senden**
 
@@ -53,7 +53,7 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 
 ![](assets/s_user_target_group_add.png)
 
-1. Markieren Sie den Zielgruppentyp **[!UICONTROL Empfängerliste]** und klicken Sie auf **[!UICONTROL Weiter]**, um die Liste auszuwählen, die die gewünschten Emfpänger enthält. Klicken Sie zum Abschluss auf .
+1. Wählen Sie **[!UICONTROL Empfängerliste]** aus und klicken Sie auf **[!UICONTROL Weiter]**, um sie auszuwählen.
 
 ![](assets/s_user_target_group_next.png)
 
@@ -63,9 +63,9 @@ Die Hauptzielgruppe eines Versands kann auch über einen Zielgruppen-Workflow be
 
 >[!IMPORTANT]
 >
->Sie können nicht mehr als 28 Workflows in einer Kampagne erstellen. Vor diesem Grenzwert sind zusätzliche Workflows in der Benutzeroberfläche nicht mehr sichtbar und können Fehler hervorrufen.
+>Sie können nicht mehr als 28 Workflows in einer Kampagne erstellen. Jenseits dieses Grenzwerts werden keine zusätzlichen Workflows mehr in der Benutzeroberfläche angezeigt und können Fehler hervorrufen.
 
-#### Workflow erstellen {#creating-a-targeting-workflow}
+#### Erstellen eines Workflows {#creating-a-targeting-workflow}
 
 Die Zielgruppenbestimmung kann mithilfe einer Kombination von Filterkriterien erfolgen, die in einem Workflow grafisch verdeutlicht wird. So ist es möglich, je nach Bedarf Gruppen oder Untergruppen zu erstellen und als Zielpopulation zu verwenden. Klicken Sie zum Öffnen des Workflow-Editors auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]** der entsprechenden Kampagne.
 
@@ -104,7 +104,7 @@ Es besteht die Möglichkeit, mehrere Zielgruppen-Workflows für eine einzelne Ka
 1. Wählen Sie die Workflow-Vorlage **[!UICONTROL Neuer Workflow]** aus und benennen Sie den Workflow.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Workflow-Erstellung zu bestätigen, und entwerfen Sie das Diagramm des Workflows.
 
-#### Workflow ausführen {#executing-a-workflow}
+#### Ausführen eines Workflows{#executing-a-workflow}
 
 Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell über die Schaltfläche **[!UICONTROL Starten]** in der Symbolleiste ausführen.
 
@@ -255,7 +255,7 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. D
 
 ## Starten eines Versands {#starting-a-delivery}
 
-Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der Versandvorgang hängt dann von der Art des Versands ab. For email or mobile channel deliveries, see [Starting an online delivery](#starting-an-online-delivery), and for direct mail deliveries, see [Starting an offline delivery](#starting-an-offline-delivery).
+Sobald alle Validierungen erteilt wurden, kann der Versand gestartet werden. Der Versandvorgang hängt dann von der Art des Versands ab. Informationen zu E-Mail- oder Mobile-Kanal-Sendungen finden Sie unter [Starten eines Online-Versands](#starting-an-online-delivery) und zu Briefpost-Sendungen unter [Starten eines Offline-Versands](#starting-an-offline-delivery).
 
 ### Starten eines Online-Versands {#starting-an-online-delivery}
 
