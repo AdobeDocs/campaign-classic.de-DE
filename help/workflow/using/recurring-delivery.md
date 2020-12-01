@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '230'
+ht-degree: 92%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 100%
 # Wiederkehrender Versand{#recurring-delivery}
 
 Ein **[!UICONTROL wiederkehrender Versand]** dient der Konfiguration einer Versandvorlageninstanz im Rahmen einer Kampagne.
+
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#recurring-delivery-video).
 
 Diese Aktivität ist nur im Tab **[!UICONTROL Zielbestimmungen und Workflows]** von Kampagnen verfügbar.
 
@@ -39,11 +41,16 @@ Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versand
 
 ![Wiederkehrender Versand](assets/delivery_recurring.jpg)
 
-In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
-
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
-
 >[!NOTE]
 >
 >Die Durchführung von Testsendungen ist in der Aktivität **[!UICONTROL Wiederkehrender Versand]** nicht möglich.\
 >Nutzen Sie zur direkten Erstellung von Sendungen in Kampagnen-Workflows die vorkonfigurierten kanalspezifischen Versandaktionen, wie z. B. **[!UICONTROL E-Mail-Versand]**.
+
+## Tutorial-Video (#repeatring-Versand-video)
+
+In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
+
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
+
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+
