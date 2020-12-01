@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '"Anwendungsfall: E-Mail-Versand erstellen"'
-description: '"Anwendungsfall: E-Mail-Versand erstellen"'
+title: Anwendungsfall - Erstellen eines E-Mail-Versands
+description: Anwendungsfall für E-Mail-Versand erstellen
 audience: web
 content-type: reference
 topic-tags: editing-html-content
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 46aa896929c960abeb501642a5ffbbb56de4802e
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
