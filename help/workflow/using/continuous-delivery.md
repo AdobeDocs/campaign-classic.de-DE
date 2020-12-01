@@ -7,17 +7,21 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 100%
+source-wordcount: '374'
+ht-degree: 73%
 
 ---
 
 
 # Versand (fortlaufend){#continuous-delivery}
 
-Ein **fortlaufender Versand** bietet die Möglichkeit, Empfänger zu existierenden Versandaktionen hinzuzufügen. Auf diese Weise wird das wiederholte Erstellen von identischen Sendungen vermieden. Dies ist insbesondere für Benachrichtigungen, die regelmäßig, aber nicht zu planbaren Zeitpunkten versendet werden, interessant. In der Versandvorlage kann ein Script zur Berechnung des jeweiligen Titels (und des Kampagnenordners) definiert werden, sodass bei Berechnung eines noch nicht existierenden Titels der Versand automatisch erstellt wird.
+Mit der **Aktion &quot;Kontinuierlicher Versand** &quot;können Sie einem vorhandenen Versand neue Empfänger hinzufügen. Mit diesem Versand-Typ müssen Sie nicht jedes Mal einen neuen Versand erstellen: Dieser Modus ist oft effizienter, insbesondere bei Warnungen mit geringem Volumen oder bei Bedarf abgesendeten Benachrichtigungen.
+
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
+
+Auf Versandvorlage können Sie ein Skript zur Berechnung der Beschriftung (und des Ordners &quot;Kampagne&quot;) des zugehörigen Versands angeben. Wenn das Skript einen Versand berechnet, der noch nicht vorhanden ist, wird er sofort erstellt.
 
 ![](assets/edit_diffusion_fil.png)
 
@@ -56,6 +60,10 @@ Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog
 
 ![Versand (fortlaufend)](assets/delivery_continuous.jpg)
 
+## Tutorial-Video {#continuous-delivery-video}
+
 In diesem Video wird gezeigt, wie man einen fortlaufenden Versand mit einer inkrementellen Abfrage konfiguriert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
