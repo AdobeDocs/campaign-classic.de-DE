@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 100%
@@ -25,4 +25,4 @@ Hierbei kommen verschiedene Benutzerprofile zum Einsatz. Stellen Sie zunächst a
 >
 >Die nachfolgend erläuteren Konfigurationen sind von einem **technischen Administrator** durchzuführen.
 
-Sehen Sie sich dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) an, um mehr über die Architektur vom Campaign-Interaktionen zu erfahren und zu sehen, wie das Angebotsmodul funktioniert.
+![](assets/do-not-localize/how-to-video.png) Sehen Sie sich dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/architecture-of-acs-v6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) an, um mehr über die Architektur vom Campaign-Interaktionen zu erfahren und zu sehen, wie das Angebotsmodul funktioniert.
