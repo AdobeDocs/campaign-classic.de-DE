@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '493'
+ht-degree: 97%
 
 ---
 
@@ -109,8 +109,10 @@ Im folgenden Beispiel erfahren Sie, wie Sie eine mehrsprachige E-Mail erstellen.
    >
    >Da Sie für den E-Mail-Inhalt keine andere Version definiert haben, müssen Sie die Zielpopulation vor dem Versand der E-Mail filtern.
 
-## Erstellen eines mehrsprachigen Newsletters mit bedingten Inhalten {#conditionnal-content-video}
+## Tutorial-Video {#conditionnal-content-video}
 
 Erfahren Sie, wie Sie einem Versand bedingte Inhalte hinzufügen können, beispielsweise einen mehrsprachigen Newsletter.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24926?quality=12)
+
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
