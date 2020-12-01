@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2023'
 ht-degree: 100%
@@ -61,7 +61,7 @@ Bezogen auf die Serverinformationen im Screenshot aus dem vorherigen Abschnitt w
 
 Adobe erstellt vor etwaigen Änderungen ein Backup Ihres Systems. Wenn sich jedoch wichtige Projekte außerhalb Ihres Produktionssystems befinden (Entwicklungs- oder Staging-Server), wird DRINGEND EMPFOHLEN, diese vor dem Upgrade als Package zu exportieren.
 
-In diesem [Anleitungsvideo](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html) erhalten Sie weitere Informationen.
+![](assets/do-not-localize/how-to-video.png) In diesem [Anleitungsvideo](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html) erhalten Sie weitere Informationen.
 
 ## Wann werden die Upgrades vorgenommen?
 
