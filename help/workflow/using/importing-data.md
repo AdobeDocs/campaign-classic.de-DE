@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 translation-type: tm+mt
-source-git-commit: e43a14a8be179dd4793176d15e2c30b3e778d3e0
+source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
 workflow-type: tm+mt
-source-wordcount: '2627'
+source-wordcount: '2630'
 ht-degree: 99%
 
 ---
@@ -257,7 +257,7 @@ Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 
 In diesem Anwendungsfall erstellen wir einen Workflow, um Daten, die in einem externen System verschlüsselt wurden, mithilfe eines im Control Panel generierten Schlüssels zu importieren.
 
-In [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-classic-learn/control-panel/instance-settings/gpg-key-management/decrypting-data.html?lang=en#instance-settings) finden Sie außerdem ein Video, in dem gezeigt wird, wie Daten mit einem GPG-Schlüssel entschlüsselt werden können.
+![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#video).
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
@@ -302,3 +302,11 @@ Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 1. Sie können den Workflow jetzt ausführen. Nach der Ausführung können Sie in den Workflow-Logs prüfen, ob die Entschlüsselung ausgeführt wurde und Daten aus der Datei importiert wurden.
 
    ![](assets/gpg_run.png)
+
+### Tutorial-Video {#video}
+
+In diesem Video wird gezeigt, wie Daten mithilfe eines GPG-Schlüssels entschlüsselt werden.
+
+>[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
+
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
