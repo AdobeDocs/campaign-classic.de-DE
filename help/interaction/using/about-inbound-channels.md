@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 100%
@@ -19,9 +19,7 @@ ht-degree: 100%
 
 Angebote können in verschiedenen Platzierungen über eingehende oder ausgehende Kanäle unterbreitet werden. Der folgende Abschnitt behandelt die Besonderheiten von eingehenden Interaktionen.
 
->[!NOTE]
->
->Sie können sich auch dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ansehen, um zu erfahren, wie Sie ein Angebot über einen eingehenden Kanal senden können.
+![](assets/do-not-localize/how-to-video.png) Sie können sich auch dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/deliver-an-offer-on-inbound-channel-in-acv6.html) ansehen, um zu erfahren, wie Sie ein Angebot über einen eingehenden Kanal senden können.
 
 Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor validiert und für die Live-Umgebung freigegeben worden sein. Lesen Sie diesbezüglich den Abschnitt [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
 
