@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Umfrage zusammenstellen
-description: Umfrage zusammenstellen
+title: Entwerfen einer Umfrage
+description: Entwerfen einer Umfrage
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '834'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 
-# Umfrage zusammenstellen{#building-a-survey}
+# Entwerfen einer Umfrage{#building-a-survey}
 
 ## Neue Umfrage erstellen {#creating-a-new-survey}
 
