@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 100%
+source-wordcount: '528'
+ht-degree: 88%
 
 ---
 
@@ -39,9 +39,9 @@ Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
 ## Die Felder auf der Seite positionieren {#positioning-the-fields-on-the-page}
 
-Das Layout jeder Seite des Webformulars ist in jedem Container definiert und kann für jedes Steuerelement überschrieben werden.
+Das Layout des Webformulars wird in jedem Container seitenweise definiert und kann bei Bedarf überladen werden.
 
-Seiten sind in Spalten unterteilt: Jede Seite enthält eine bestimmte Anzahl von Spalten. Jedes Feld der Seite hat **n** Zellen. Container umfassen auch eine gewisse Anzahl von Spalten und die in ihnen enthaltenen Felder haben eine bestimmte Anzahl von Zellen.
+Pages are broken down into columns: each page contains a certain number of columns. Each field of the page occupies **n** cells. Containers also occupy a certain number of columns and the fields they contain occupy a certain number of cells.
 
 Standardmäßig werden Seiten auf einer einzigen Spalte erstellt und jedes Element hat eine einzige Zelle. Das bedeutet, dass Felder untereinander angezeigt werden, wobei jedes wie unten dargestellt eine ganze Zeile umfasst:
 
