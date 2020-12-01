@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -73,7 +73,9 @@ Adobe Campaign stellt verschiedene CRM-Connectoren zur Verfügung, die die Verbi
 
 Dank der Connectoren ist eine schnelle und einfache Datenintegration möglich. Mithilfe eines spezifischen Assistenten lassen sich Daten aus den im CRM-System verfügbaren Tabellen auswählen und sammeln. Die Zwei-Wege-Synchronisation der Informationen gewährleistet einen einheitlichen Datenstand auf den verschiedenen Systemen.
 
-Lesen Sie [CRM-Connectoren konfigurieren](../../platform/using/crm-connectors.md), um zu erfahren, wie Sie das CRM-Tool mit Adobe Campaign synchronisieren. Dieses Video zeigt ein Anwendungsbeispiel zur [Integration von Adobe Campaign mit Microsoft Dynamics 365](https://helpx.adobe.com/de/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html).
+Lesen Sie [CRM-Connectors](../../platform/using/crm-connectors.md) konfigurieren, um zu erfahren, wie Sie Ihr CRM-Tool mit Adobe Campaign synchronisieren.
+
+![](assets/do-not-localize/how-to-video.png) Sehen Sie sich dieses Verwendungsfallvideo zu [Adobe Campaign und Microsoft Dynamics 365-Integration](https://helpx.adobe.com/de/campaign/kt/acc/using/acc-integrate-dynamics365-with-acc-feature-video-set-up.html)an.
 
 ## Wie kann der Soft Cache gelöscht werden, wenn die Probleme gerätespezifisch oder benutzerspezifisch sind? {#perform-soft-cache-clear}
 
