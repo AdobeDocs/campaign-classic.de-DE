@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 97%
 
 ---
 
@@ -63,18 +63,22 @@ Gehen Sie wie folgt vor, um eine Typologie zu erstellen und auf Ihre Sendungen a
 
 Bei der Versandvorbereitung werden diejenigen Empfänger ausgeschlossen, die das jeweilige Kriterium erfüllen. Über die Logs können Sie überprüfen, welche Empfänger vom Versand ausgeschlossen wurden. Anwendungsbeispiele für Typologieregeln vom Typ &quot;Druck&quot; finden Sie auf [dieser Seite](../../campaign/using/pressure-rules.md#use-cases-on-pressure-rules).
 
-## Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln {#typologies-video}
+## Anleitungsvideos {#typologies-video}
+
+### Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln
 
 In diesem Video wird erläutert, wie man die Ermüdungsverwaltung in Adobe Campaign Classic mithilfe von Typologieregeln implementiert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
-## Einrichten der Ermüdungsverwaltung mithilfe von vordefinierten Filtern
+### Einrichten der Ermüdungsverwaltung mithilfe von vordefinierten Filtern
 
 Die Ermüdungsverwaltung steuert die Häufigkeit und Anzahl von Nachrichten, um eine Überforderung von Empfängern zu vermeiden. Wenn Sie das Modul zur Kampagnenoptimierung nicht in Ihrer Kampagneninstanz haben, können Sie einen vordefinierten Filter konfigurieren, der die Zielgruppe nach der Anzahl der empfangenen Nachrichten filtert.
 In diesem Video wird erläutert, wie Sie die Ermüdungsverwaltung in Adobe Campaign Classic mithilfe von Filtern implementieren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
+
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
 
 **Verwandtes Thema**
 
