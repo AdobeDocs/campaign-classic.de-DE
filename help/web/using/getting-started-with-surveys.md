@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Umfragen – Erste Schritte
-description: Umfragen – Erste Schritte
+title: Wichtige Schritte zum Erstellen einer Umfrage
+description: Erste Umfrage mit Kampagne erstellen
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 100%
+source-wordcount: '959'
+ht-degree: 98%
 
 ---
 
 
-# Umfragen – Erste Schritte{#getting-started-with-surveys}
+# Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
 Hier finden Sie einen kurzen Überblick über die wichtigsten Schritte zur Erstellung einer einfachen Umfrage unter Verwendung der folgenden Vorlage:
 
