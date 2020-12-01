@@ -7,17 +7,17 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '739'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
 # Seitenreihenfolge eines Webformulars definieren{#defining-web-forms-page-sequencing}
 
-Ein Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Diagramms erstellt, in dem Sie die Möglichkeit haben, Seiten und Etappen wie Tests, Skriptausführungen, Speicherung und Sprünge aneinanderzureihen. Der Diagrammerstellungsmodus entspricht dem eines Workflows.
+Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Diagramms erstellt, mit dem Sie Seiten sequenzieren, testen, Skriptausführung, Seitensprung und Aufzeichnungsschritte ausführen können. Der Designmodus für globale Diagramme ist identisch mit dem für einen Arbeitsablauf für Kampagnen.
 
 ## Die Schaltflächen &quot;Weiter&quot; und &quot;Zurück&quot;{#about-previous-page-and-next-page}
 
