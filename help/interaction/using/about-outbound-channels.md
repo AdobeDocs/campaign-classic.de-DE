@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 100%
@@ -19,9 +19,7 @@ ht-degree: 100%
 
 Angebote können in verschiedenen Platzierungen über eingehende oder ausgehende Kanäle unterbreitet werden. Das vorliegende Kapitel behandelt die Unterbreitung über ausgehende Kanäle.
 
->[!NOTE]
->
->Sie können sich auch dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ansehen, in dem Sie erfahren, wie ein Angebot über einen Outbound-Kanal bereitgestellt wird.
+![](assets/do-not-localize/how-to-video.png) Sie können sich auch dieses [Video](https://helpx.adobe.com/de/campaign/classic/how-to/deliver-an-offer-on-outbound-channel-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/get-started/collection.ccx.js&amp;ref=helpx.adobe.com) ansehen, in dem Sie erfahren, wie ein Angebot über einen Outbound-Kanal bereitgestellt wird.
 
 Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor validiert und für die Live-Umgebung freigegeben worden sein. Weitere Informationen finden Sie unter [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
 
