@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -99,7 +99,7 @@ Zum Schreiben einer JSSP (JavaScript Server Page) stehen serverseitige APIs zur 
 
 * **NL.ServerWebTracking._displayOptOutBanner()**
 
-   Gibt &quot;true&quot; zurück, wenn das Opt-out-Banner dargestellt werden soll, nachdem es vom Administrator ausgewählt wurde.
+   Gibt &quot;true&quot;zurück, wenn das Ausschluss-Banner angezeigt werden soll, nachdem ein Ausschluss-Banner vom Administrator ausgewählt wurde
 
    Dieser Code wird abgerufen, wenn der Administrator bereits festgelegt hat, das Webtracking-Opt-out-Banner zu verwenden.
 
