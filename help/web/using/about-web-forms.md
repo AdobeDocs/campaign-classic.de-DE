@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Über Webformulare
-description: Über Webformulare
+title: Erste Schritte mit Webformularen
+description: Erste Schritte mit Webformularen in der Kampagne
 audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 93%
 
 ---
 
 
-# Über Webformulare{#about-web-forms}
+# Get started with web forms{#about-web-forms}
 
 Adobe Campaign verfügt über ein grafisches Modul zur Definition und Publikation von Webformularen. Damit können Sie Seiten erstellen, die Eingabe- und Auswahlfelder sowie Daten aus der Datenbank enthalten. Daraus lassen sich wiederum Webseiten zusammenstellen und veröffentlichen, in denen Benutzer Informationen anzeigen oder eingeben können.
 
@@ -53,7 +53,7 @@ Im Tab **[!UICONTROL Bearbeiten]** können Sie den Inhalt erstellen.
 
 Um das Webformular zu definieren und zu konfigurieren, gehen Sie folgendermaßen vor:
 
-* Erstellen Sie zunächst die erforderlichen Seiten und Steuerelemente: Eingabefelder, Dropdown-Listen, HTML-Inhalte etc.
+* Beginn durch Erstellen der erforderlichen Seiten und Steuerelemente: Eingabefelder, Dropdown-Listen, HTML-Inhalte usw.
 
    Dieser Schritt wird weiter unten genauer beschrieben.
 
@@ -80,6 +80,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 >
 >* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
 >* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
+
 >
 
 
