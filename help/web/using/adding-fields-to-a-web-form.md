@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 100%
+source-wordcount: '2550'
+ht-degree: 94%
 
 ---
 
@@ -196,7 +196,7 @@ Mit Radiobuttons können Sie Benutzern eine Reihe von einzelnen Optionen zur Aus
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-Sie können Radiobuttons einzeln erstellen (Einzel-Schaltflächen) oder über eine Multiple-Choice-Liste. Aber weil der Zweck von Radiobuttons die Auswahl einer Option ist, werden immer zumindest zwei Radiobuttons erstellt, und nie nur ein einzelner.
+Sie können Optionsfelder einzeln (einheitliche Schaltflächen) oder über eine Mehrfachauswahl-Liste erstellen. Da die Optionsfelder jedoch darauf ausgerichtet sind, eine Option auszuwählen, erstellen wir immer mindestens ein Optionsfeld, nicht nur ein Optionsfeld.
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ Der Inhalt eines Formularfeldes kann entsprechend den in der Datenbank gespeiche
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-Um Benutzern die Eingabe eines Datums in eine Formularseite zu ermöglichen, wählen Sie in der Symbolleiste oder im Seiteneditor **[!UICONTROL Add input field > Datum...]** aus.
+Um dem Benutzer die Eingabe eines Datums auf einer Formularseite zu ermöglichen, fügen Sie ein Eingabefeld hinzu und wählen Sie den Typ **[!UICONTROL Datum...]**.
 
 Geben Sie einen Titel für das Feld ein und konfigurieren Sie den Datenspeichermodus.
 
@@ -381,17 +381,20 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.
+
 >
 
 
 
 ## Ausgeblendete Konstante einfügen {#inserting-a-hidden-constant}
 
-Sie können einem Feld einen Wert zuweisen, wenn ein Benutzer eine Seite besucht. Platzieren Sie dazu eine Konstante auf die Seite und spezifizieren Sie den Wert und den Speicherort.
+Wenn der Benutzer eine der Seiten des Formulars validiert, können Sie einen bestimmten Wert auf ein Feld seines Profils oder auf eine Variable setzen.
 
 Dieses Feld ist nicht sichtbar für den Benutzer, kann aber für die Anreicherung der Daten im Benutzerprofil verwendet werden.
 
-Im folgenden Beispiel wird die Datei **Herkunft** des Empfängerprofils automatisch ausgefüllt, wenn ein Benutzer diese Seite bestätigt. Die Konstante wird nicht auf der Seite angezeigt.
+Fügen Sie dazu eine **Konstante** auf der Seite ein und geben Sie den Wert und die Position der Datenspeicherung an.
+
+Im folgenden Beispiel wird das Feld &quot; **Herkunft** &quot;des Empfänger-Profils automatisch ausgefüllt, sobald ein Benutzer diese Seite genehmigt. Die Konstante wird nicht auf der Seite angezeigt.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
