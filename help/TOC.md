@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '2171'
-ht-degree: 98%
+source-wordcount: '2179'
+ht-degree: 97%
 
 ---
 
@@ -273,7 +273,7 @@ ht-degree: 98%
       + [Webanwendung tracken](web/using/tracking-a-web-application.md)
       + [Opt-out vom Webanwendungs-Tracking](web/using/web-application-tracking-opt-out.md)
    + HTML-Inhalt bearbeiten {#editing-html-content}
-      + [Über den HTML-Editor von Campaign](web/using/about-campaign-html-editor.md)
+      + [Erste Schritte mit dem HTML-Editor](web/using/about-campaign-html-editor.md)
       + [Vorlagenverwaltung](web/using/template-management.md)
       + [Benutzeroberfläche des Inhaltseditors](web/using/content-editor-interface.md)
       + [Bearbeiten von Inhalten](web/using/editing-content.md)
@@ -281,7 +281,7 @@ ht-degree: 98%
       + [Landingpage erstellen](web/using/creating-a-landing-page.md)
       + [Anwendungsfall: E-Mail-Versand erstellen](web/using/use-case--creating-an-email-delivery.md)
    + Webformulare {#web-forms}
-      + [Über Webformulare](web/using/about-web-forms.md)
+      + [Erste Schritte mit Webformularen](web/using/about-web-forms.md)
       + [Webformularvorlage verwenden](web/using/using-a-web-form-template.md)
       + [Felder zu einem Webformular hinzufügen](web/using/adding-fields-to-a-web-form.md)
       + [Statische Elemente in einem Webformular](web/using/static-elements-in-a-web-form.md)
@@ -294,9 +294,9 @@ ht-degree: 98%
       + [Webformular übersetzen](web/using/translating-a-web-form.md)
       + [Anwendungsbeispiele: Webformulare](web/using/use-cases--web-forms.md)
    + Online-Umfragen {#online-surveys}
-      + [Über Umfragen](web/using/about-surveys.md)
-      + [Umfragen – Erste Schritte](web/using/getting-started-with-surveys.md)
-      + [Umfrage zusammenstellen](web/using/building-a-survey.md)
+      + [Erste Schritte mit Umfragen](web/using/about-surveys.md)
+      + [Wichtige Schritte zum Erstellen einer Umfrage](web/using/getting-started-with-surveys.md)
+      + [Entwerfen einer Umfrage](web/using/building-a-survey.md)
       + [Antworten verwalten](web/using/managing-answers.md)
       + [Erfasste Daten publizieren, tracken und verwenden](web/using/publish--track-and-use-collected-data.md)
       + [Umfragen konfigurieren](web/using/configuring-surveys.md)
