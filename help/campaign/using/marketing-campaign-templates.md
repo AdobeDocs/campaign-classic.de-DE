@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 100%
@@ -69,7 +69,7 @@ Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen 
 
 Die Erstellung und Konfiguration von Kampagnenvorlagen werden im Abschnitt [Kampagnenvorlagen](#campaign-templates) beschrieben.
 
-Weitere Informationen zur Erstellung von Kampagnen finden Sie in [diesem Video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
+![](assets/do-not-localize/how-to-video.png) Weitere Informationen zur Erstellung von Kampagnen finden Sie in [diesem Video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
 ## Konfiguration der verfügbaren Module {#configuration-of-the-available-modules}
 
