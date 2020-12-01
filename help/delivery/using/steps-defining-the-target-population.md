@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '1719'
-ht-degree: 100%
+source-wordcount: '1726'
+ht-degree: 99%
 
 ---
 
@@ -225,15 +225,16 @@ Sie können **[!UICONTROL Testadressen]** als Testversand-Zielgruppe verwenden: 
 
 Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können Sie die Bestimmung einer speziellen Testversand-Zielgruppe und die Verwendung von Testadressen kombinieren. Die entsprechende Konfiguration erfolgt dann in zwei getrennten Tabs.
 
-## Verwalten von Testadressen und Testsendungen in einer E-Mail {#seeds-and-proofs-video}
+Siehe auch:
+
+* [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
+* [Über Testadressen](../../delivery/using/about-seed-addresses.md)
+* [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+
+## Tutorial-Video {#seeds-and-proofs-video}
 
 In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und Testsendungen hinzufügen und diese ausführen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Siehe auch:
-* [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
-
-* [Über Testadressen](../../delivery/using/about-seed-addresses.md)
-
-* [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
