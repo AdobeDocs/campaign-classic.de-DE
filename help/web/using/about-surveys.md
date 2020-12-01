@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Über Umfragen
-description: Über Umfragen
+title: Erste Schritte mit Umfragen
+description: Erste Schritte mit Umfragen zur Kampagne
 audience: web
 content-type: reference
 topic-tags: online-surveys
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '603'
+ht-degree: 97%
 
 ---
 
 
-# Über Umfragen{#about-surveys}
+# Get started with surveys{#about-surveys}
 
 Adobe Campaign beinhaltet ein Grafikmodul zur Definition und Publikation von Webanwendungen. Damit können Seiten erstellt werden, wie etwa Bearbeitungsformulare für das Extranet oder Benachrichtigungsformulare mit Daten von der Datenbank mit Tabellen, Grafiken und Eingabeformularen. Mit dieser Funktion können Webseiten konzipiert und veröffentlicht werden, in denen Benutzer Informationen suchen oder eingeben können.
 
@@ -31,7 +31,7 @@ Weiterführende Informationen zur Verwaltung von Webanwendungen finden Sie in [d
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
-## Campaign-Umfragenbereich {#campaign-surveys-scope}
+## Funktionsumfang {#campaign-surveys-scope}
 
 In Adobe Campaign stehen für Webanwendungen im Allgemeinen die folgenden Funktionen zur Verfügung:
 
