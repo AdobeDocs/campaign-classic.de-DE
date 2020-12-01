@@ -7,17 +7,17 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 100%
+source-wordcount: '1332'
+ht-degree: 87%
 
 ---
 
 
 # Statische Elemente in einem Webformular{#static-elements-in-a-web-form}
 
-Sie können Elemente einfügen, mit denen der Benutzer auf den Formularseiten nicht interagiert. Hierzu zählen statische Elemente wie Bilder, HTML-Inhalte, ein horizontaler Balken oder ein Hypertext-Link. Diese Elemente werden über die erste Schaltfläche der Symbolleiste durch Anklicken des Menüs **[!UICONTROL Add static element]** erstellt.
+Sie können Elemente einschließen, mit denen der Benutzer keine Interaktion auf den Seiten des Formulars hat; Dies sind Statische Elemente wie Bilder, HTML-Inhalte, eine horizontale Leiste oder ein Hyperlink. Diese Elemente werden über die erste Schaltfläche in der Symbolleiste durch Auswahl von **[!UICONTROL Statischen Elementen]** erstellt.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -36,7 +36,7 @@ Folgende Feldtypen sind verfügbar:
 
 Sie können in eine Formularseite HTML-Inhalte einfügen, wie z. B. Hypertext-Links, Bilder, formatierte Absätze, Videos oder Flash-Objekte.
 
-Einfügen können Sie die Inhalte mit dem HTML-Editor. Um den Editor zu öffnen, gehen Sie zu **[!UICONTROL Statische Elemente > HTML]** .
+Mit dem HTML-Editor können Sie den Inhalt eingeben, der in die Formularseite eingefügt werden soll. Um den Editor zu öffnen, klicken Sie auf **[!UICONTROL Statische Elemente]** > **[!UICONTROL HTML]** .
 
 Sie können Inhalte direkt eingeben und formatieren oder das Fenster mit dem Quellcode öffnen, um externen Code einzukopieren. Wählen Sie dazu das erste Symbol in der Symbolleiste aus, um zum Quellcode-Modus zu wechseln.
 
@@ -54,7 +54,7 @@ Um ein Datenbankfeld einzufügen, verwenden Sie die Personalisierungs-Schaltflä
 
 Füllen Sie im Bearbeitungsfenster die Felder wie im folgenden Beispiel gezeigt aus:
 
-Um einen Hypertext-Link hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Elemente > Link]**.
+To add a hypertext link, go to **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte 
 
 >[!NOTE]
 >
->Aus Sicherheitsgründen wird der in der Formel **`<%=`** eingegebene Wert durch Escape-Zeichen ersetzt. Um dies zu verhindern, können Sie bei Bedarf die folgende Syntax verwenden: **`<%=`**.
+>Aus Sicherheitsgründen wird der in die **`<%=`** Formel eingegebene Wert durch Escapezeichen ersetzt.
 
 In unserem Beispiel werden der Vor- und Nachname des Empfängers in einem Feld der Datenbank gespeichert, während das Automodell in einer Variablen gespeichert wird. Die Syntax der personalisierten Nachricht auf Seite 2 sieht folgendermaßen aus:
 
@@ -210,19 +210,19 @@ Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die M
 
    >[!CAUTION]
    >
-   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **>** durch ihre Escape-Zeichen ersetzt. In diesem Fall müssen Sie den Quellcode durch Auswahl des Symbols **[!UICONTROL Quellcode anzeigen]** im HTML-Texteditor korrigieren.
+   >Wenn Sie diese Zeichen im HTML-Editor eingeben, werden die Felder **&lt;** und **>** durch Escape-Zeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie im HTML-Texteditor auf das Symbol Quellcode **[!UICONTROL anzeigen]** klicken.
 
 1. Öffnen Sie den Titel **[!UICONTROL Vorschau]** des Formulars, um den in HTML eingegebenen Wert anzuzeigen:
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-Mit diesem Verfahren können Sie den Text von Webformularen aufgliedern und Übersetzungen mit dem integrierten Übersetzungs-Tool durchführen. Weitere Informationen finden Sie unter [Webformular übersetzen](../../web/using/translating-a-web-form.md).
+In diesem Betriebsmodus können Sie den Text von Webformularen nur einmal definieren und Übersetzungen mithilfe des integrierten Übersetzungstools verwalten. Weitere Informationen finden Sie unter [Webformular übersetzen](../../web/using/translating-a-web-form.md).
 
 ## Bilder einfügen {#inserting-images}
 
 Um in Formulare Bilder einzufügen, müssen diese auf einem Server gespeichert werden, auf den von außen zugegriffen werden kann.
 
-Wählen Sie das Menü **[!UICONTROL Statische Elemente > Bild]** aus.
+Select the **[!UICONTROL Static elements]** > **[!UICONTROL Image]** menu.
 
 Wählen Sie die Quelle des Bildes aus, das eingefügt werden soll: Es kann in einer öffentlichen Ressourcen-Bibliothek oder auf einem externen, von außen zugreifbaren Server gespeichert sein.
 
