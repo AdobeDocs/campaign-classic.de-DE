@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 100%
+source-wordcount: '2232'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ In der Mitte des Fensters haben Sie die Möglichkeit, auf die Online-Dokumentati
 
 ![](assets/d_ncs_user_interface_home.png)
 
-![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png)[ Campaign-Arbeitsbereich im Video kennenlernen](#video)
 
 >[!NOTE]
 >
@@ -389,3 +389,11 @@ In Feldern, die eine Dauer bezeichnen (z. B. Gültigkeit von Versandressourcen, 
 * **[!UICONTROL T]** für Tage.
 
 ![](assets/enter_unit_sample.png)
+
+## Tutorial-Video {#video}
+
+In diesem Video wird der Arbeitsbereich für Campaign Classic vorgestellt.
+
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
