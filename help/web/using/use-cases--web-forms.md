@@ -7,10 +7,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 100%
+source-wordcount: '992'
+ht-degree: 97%
 
 ---
 
@@ -133,7 +133,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Konfigurieren Sie die Aktivität **[!UICONTROL Speicherung]**, um die auf der Formularseite eingegebenen Informationen zu speichern.
 
-   Mit dieser Aktivität können Sie Empfängerprofile in einem speziellen temporären Ordner erstellen. Damit können Sie sie von den Profilen in der Datenbank trennen, denen Nachrichten gesendet werden können.
+   Mit dieser Aktivität können Sie Empfänger-Profile in einem dedizierten temporären Ordner erstellen, um sie von den Profilen in der Datenbank zu unterscheiden, an die die Kommunikation gesendet werden kann.
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_5g.png)
 
