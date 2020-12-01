@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 100%
+source-wordcount: '926'
+ht-degree: 98%
 
 ---
 
@@ -118,8 +118,10 @@ Der Standardwert ist 5 Sekunden.
 
 Wenn Sie diese Option auf 0 setzen, gilt für die Personalisierungsphase keine Zeitbeschränkung.
 
-## Personalisieren von E-Mails mit Personalisierungsfeldern {#personalization-fields-video}
+## Tutorial-Video {#personalization-fields-video}
 
 Erfahren Sie, wie Sie der Betreffzeile und dem Inhalt eines E-Mail-Versands ein Personalisierungsfeld hinzufügen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/24925?quality=12)
+
+Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
