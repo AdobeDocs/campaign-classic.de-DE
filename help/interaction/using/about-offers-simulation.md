@@ -7,7 +7,7 @@ audience: interaction
 content-type: reference
 topic-tags: simulating-offers
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 100%
@@ -21,7 +21,9 @@ Mithilfe von **Simulationen** können Sie die Verteilung der Angebote einer Kate
 
 Bei einer Simulation werden die Kontexte und Eignungsregeln berücksichtigt, die zuvor auf Angebote angewendet wurden (siehe [Angebotskatalog – Übersicht](../../interaction/using/offer-catalog-overview.md)), sowie deren Unterbreitungsregeln (siehe [Angebotsunterbreitung](../../interaction/using/managing-offer-presentation.md)). Auf diese Weise können Sie verschiedene Versionen Ihres Angebotsvorschlags testen und verfeinern, ohne tatsächlich ein Angebot zu verwenden oder eine Zielgruppe zu häufig oder zu wenig anzusprechen, da die Simulation keine Auswirkungen auf die Zielgruppenempfänger hat.
 
-Um zu erfahren, wie Sie ein Angebot simulieren können, lesen Sie die folgenden Schritte. Außerdem können Sie sich dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com) ansehen.
+Um zu erfahren, wie Sie ein Angebot simulieren können, lesen Sie die folgenden Schritte.
+
+![](assets/do-not-localize/how-to-video.png) Außerdem können Sie sich dieses [Video](https://helpx.adobe.com/campaign/classic/how-to/simulate-offer-in-acv6.html?playlist=/ccx/v1/collection/product/campaign/classic/segment/digital-marketers/explevel/intermediate/applaunch/introduction/collection.ccx.js&amp;ref=helpx.adobe.com) ansehen.
 
 ## Simulationen erstellen {#main-steps-for-creating-a-simulation}
 
