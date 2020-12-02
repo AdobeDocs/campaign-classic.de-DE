@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Aktualisierung der Dokumentation für Adobe Campaign Classic
-description: Auf dieser Seite finden Sie eine nach Version geordnete Übersicht neuer Funktionen und aktueller Änderungen in der Dokumentation für Adobe Campaign Classic
+title: Aktualisierungen der Dokumentation für Adobe Campaign Classic
+description: Auf dieser Seite finden Sie eine nach Version geordnete Übersicht neuer Funktionen und Aktualisierungen der Dokumentation für Adobe Campaign Classic
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3647'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,21 +23,21 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 ## November 2020 {#nov-2020}
 
-Die Übersicht über das Datenmodell der Kampagne wurde verbessert und neu organisiert. [Mehr dazu](../../configuration/using/about-data-model.md)
+Die Übersicht über das Datenmodell von Campaign wurde verbessert und neu organisiert. [Mehr dazu](../../configuration/using/about-data-model.md).
 
-Die Konfiguration des Externen Kontos wurde in [diesen Abschnitt](../../installation/using/external-accounts.md)verschoben.
+Die Konfiguration des externen Kontos wurde in [diesen Abschnitt](../../installation/using/external-accounts.md) verschoben.
 
-Die Dokumentation zu Kampagne Federated Data Access (FDA) wurde mit Details zu den einzelnen externen Datenbankkonfigurationen verbessert und in [diesen Abschnitt](../../installation/using/about-fda.md)verschoben.
+Die Dokumentation zum Federated Data Access (FDA) von Campaign wurde mit Details zu den einzelnen externen Datenbankkonfigurationen verbessert und in [diesen Abschnitt](../../installation/using/about-fda.md) verschoben.
 
-[Campaign-Version 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182) ist jetzt allgemein verfügbar (GA).
+Die [Campaign-Version 20.2.3](../../rn/using/release--20-2.md#release-20-2-3-build-9182) ist jetzt allgemein verfügbar (General Availability, GA).
 
-The Privacy section has been moved and enriched with two new pages: [Privacy management](../../platform/using/privacy-management.md) and [Managing privacy requests](../../platform/using/privacy-requests.md).
+Der Abschnitt zum Datenschutz wurde um zwei neue Seiten erweitert: [Datenschutzverwaltung](../../platform/using/privacy-management.md) und [Verwaltung von Datenschutzanfragen](../../platform/using/privacy-requests.md).
 
-Auf der Seite &quot;Serverkonfiguration&quot;wurde ein Hinweis hinzugefügt, um anzugeben, dass der interne Name des Externen Kontos nach dem Einrichten des Mid-Sourcings nicht aktualisiert werden darf. [Mehr dazu](../../installation/using/mid-sourcing-server.md)
+Auf der Seite zur Mid-Sourcing-Server-Konfiguration wurde ein Hinweis hinzugefügt, um zu präzisieren, dass der interne Name des externen Kontos nach dem Einrichten des Servers nicht aktualisiert werden darf. [Mehr dazu](../../installation/using/mid-sourcing-server.md)
 
-Es wurden Informationen zur Syntax hinzugefügt, die beim Festlegen eines Pfades zu einem externen SFTP-Server verwendet werden soll. [Mehr dazu](../../platform/using/sftp-server-usage.md#external-SFTP-server)
+Es wurden Informationen zur Syntax hinzugefügt, die beim Festlegen eines Pfades zu einem externen SFTP-Server verwendet werden muss. [Mehr dazu](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-Der Abschnitt &quot;Persönliche Daten und Personen&quot;wurde mit einem Verwendungsfallszenario aktualisiert, um zu veranschaulichen, wie die verschiedenen Personen in Bezug auf die Privatsphäre interagieren. [Mehr dazu](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+Der Abschnitt über persönliche Daten und Personen wurde um ein Verwendungsfallszenario bereichert, um zu veranschaulichen, wie die verschiedenen Personen in Bezug auf die Privatsphäre interagieren. [Mehr dazu](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
 Ein neuer Abschnitt mit häufig gestellten Fragen zum Datenschutz wurde hinzugefügt. [Mehr dazu](../../platform/using/privacy-faq.md)
 
@@ -353,7 +353,7 @@ Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisier
 
 ## Oktober 2019 {#october-2019}
 
-Die Liste der Fehlermeldungen für Campaign Standard und Campaign Classic wurde aktualisiert. [mehr dazu](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Die Liste der Fehlermeldungen für Campaign Standard und Campaign Classic wurde aktualisiert. [mehr dazu](https://docs.adobe.com/content/help/de/campaign-classic/technicalresources/error_messages/error_codes.html)
 
 Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA. [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
 
@@ -470,7 +470,7 @@ Der Abschnitt [E-Mail-Archivierung](../../installation/using/email-archiving.md)
 
 * Es wurden Best Practices hinsichtlich der Parameter für E-Mails pro Verbindung und BCC-Sende-IPs hinzugefügt.
 
-* Die Schritte zum Aktualisieren auf das neue E-Mail-Archivierungssystem (BCC) wurden aktualisiert, wenn Sie die E-Mail-Archivierung bereits mit einem älteren Build (vor Adobe Campaign 17.2 - Build 8795) verwendet haben. 
+* Die Schritte zum Aktualisieren auf das neue E-Mail-Archivierungssystem (BCC) wurden aktualisiert, falls Sie die E-Mail-Archivierung bereits mit einem älteren Build (vor Adobe Campaign 17.2 – Build 8795) verwendet haben.
 
 Dem Handbuch für die Automatisierung mithilfe von Workflows wurde ein Anwendungsbeispiel hinzugefügt: Benutzern personalisierte Warnungen senden. [Mehr dazu](../../workflow/using/sending-personalized-alerts-to-operators.md)
 
