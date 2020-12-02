@@ -6,9 +6,9 @@ description: Kompatibilitätsmatrix
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Microsoft IIS</td>
 <td>
-<p>8.0 auf Windows-Server 2012 – Windows 8</p>
+<p>8.0 auf Windows Server 2012 – Windows 8</p>
 <p>8.5 auf Windows-Server 2012 R2</p>
 <p>10.0 auf Windows-Server 2016</p>
 </td>
