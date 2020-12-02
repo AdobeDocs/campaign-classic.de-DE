@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
 workflow-type: tm+mt
 source-wordcount: '2179'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 97%
       + [Datenschutz und Einverständnis](platform/using/privacy-and-recommendations.md)
       + [Datenschutzverwaltung](platform/using/privacy-management.md)
       + [Datenschutzanfragen](platform/using/privacy-requests.md)
-      + [Datenschutz FAQ](platform/using/privacy-faq.md)
+      + [Häufig gestellte Fragen zum Datenschutz](platform/using/privacy-faq.md)
    + Profilverwaltung {#profile-management}
       + [Über Profile](platform/using/about-profiles.md)
       + [Profile bearbeiten](platform/using/editing-a-profile.md)
@@ -424,7 +424,7 @@ ht-degree: 97%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring       {#monitoring}
+      + Monitoring        {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -624,20 +624,20 @@ ht-degree: 97%
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
       + [Mid-Sourcing-Server](installation/using/mid-sourcing-server.md)
       + [Interaction - Datenpuffer](installation/using/interaction---data-buffer.md)
-      + [Externe Konten konfigurieren](installation/using/external-accounts.md)
+      + [Konfigurieren externer Konten](installation/using/external-accounts.md)
    + Zugriff auf externe Datenbanken {#accessing-external-database}
-      + [Erste Schritte mit der FDA](installation/using/about-fda.md)
+      + [Erste Schritte mit FDA](installation/using/about-fda.md)
       + Konfigurationsrichtlinien {#config-databases}
          + [Konfigurationsschritte](installation/using/configure-fda.md)
-         + [Snowflake konfigurieren](installation/using/configure-fda-snowflake.md)
-         + [Azure synapse konfigurieren](installation/using/configure-fda-synapse.md)
-         + [Hadoop konfigurieren](installation/using/configure-fda-hadoop.md)
-         + [Oracle konfigurieren](installation/using/configure-fda-oracle.md)
-         + [Netezza konfigurieren](installation/using/configure-fda-netezza.md)
-         + [Sybase IQ konfigurieren](installation/using/configure-fda-sybase.md)
-         + [Teradata konfigurieren](installation/using/configure-fda-teradata.md)
-         + [SAP HANA konfigurieren](installation/using/configure-fda-sap-hana.md)
-      + [Rechte für Remote-Zugriff](installation/using/remote-database-access-rights.md)
+         + [Konfigurieren von Snowflake](installation/using/configure-fda-snowflake.md)
+         + [Konfigurieren von Azure Synapse](installation/using/configure-fda-synapse.md)
+         + [Konfigurieren von Hadoop](installation/using/configure-fda-hadoop.md)
+         + [Konfigurieren von Oracle](installation/using/configure-fda-oracle.md)
+         + [Konfigurieren von Netezza](installation/using/configure-fda-netezza.md)
+         + [Konfigurieren von Sybase IQ](installation/using/configure-fda-sybase.md)
+         + [Konfigurieren von Teradata](installation/using/configure-fda-teradata.md)
+         + [Konfigurieren von SAP HANA](installation/using/configure-fda-sap-hana.md)
+      + [Remote-Zugriffsberechtigungen](installation/using/remote-database-access-rights.md)
       + [Herstellung der Datenbankverbindung](installation/using/connecting-to-database.md)
       + [Erstellen des Datenschemas](installation/using/creating-data-schema.md)
       + [Definition des Daten-Mappings](installation/using/defining-data-mapping.md)
