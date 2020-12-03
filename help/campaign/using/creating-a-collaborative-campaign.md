@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opColla
 
 Gehen Sie in den Tab **[!UICONTROL Bearbeiten]** und klicken Sie auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**, um auf den Tab **Dezentrales Marketing** zuzugreifen.
 
-Wählen Sie den Web-Schnittstellentyp **Standardformular** aus. Dieser Schnittstellentyp ermöglicht die Erstellung von Personalisierungsfeldern, die von den Lokalstellen bei der Kampagnenbestellung genutzt werden können. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+Wählen Sie die Weboberfläche **Nach Formular**. Mit diesem Schnittstellentyp können Sie Personalisierungsfelder erstellen, die von Lokalstellen bei der Bestellung einer Kampagne verwendet werden. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
 Speichern Sie Ihre Kampagne. Sie steht Ihnen nun in der **Kampagnenkit-Liste** in der **Kampagnen**-Rubrik zur Verfügung, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
 
