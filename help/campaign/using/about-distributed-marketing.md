@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1175'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -70,9 +70,9 @@ Siehe [Erstellung einer lokalen Kampagne](../../campaign/using/creating-a-local-
 
 Eine partizipative Kampagne ist eine Kampagne, deren **Ausführungsplanung von der Zentralstelle festgelegt** wird. Die Lokalstellen können frei entscheiden, ob sie teilnehmen oder nicht. Abhängig von der Konfiguration der Kampagne können Zielgruppe und Inhalt von der Lokalstelle angepasst werden. Es gibt verschiedene Arten partizipativer Kampagnen:
 
-* **[!UICONTROL Partizipative Kampagne mit Formular]**: eignet sich für Kampagnen für bis zu 300 Lokalstellen. Die Lokalstelle kann vordefinierte Parameter zu Zielgruppe und Inhaltspersonalisierung in einem Webformular erfassen. Es kann sowohl ein Adobe-Campaign-Formular als auch ein externes Formular (Kunden-Extranet) verwendet werden. Die Definition und Konfiguration des Formulars können von einem funktionellen Administrator auf Basis einer vom Systemintegrator definierten Formularvorlage erfolgen. Zur Bestellung der Kampagne benötigt die Lokalstelle in diesem Fall nur einen Webzugriff.
+* **[!UICONTROL Gemeinschaftliche Kampagne (nach Formular)]**: empfohlen für Kampagnen von bis zu 300 Lokalstellen. Die Lokalstelle kann vordefinierte Parameter für das Targeting und die Personalisierung von Inhalten in einem Webformular eingeben. Das Formular kann ein Adobe Campaign- oder ein externes Formular (Extranet-Client) sein. Ein funktionaler Administrator kann das Formular auf der Grundlage einer vom Integrator definierten Formularvorlage definieren und konfigurieren. Um die Kampagne zu bestellen, benötigt die Lokalstelle nur Web-Zugriff.
 * **[!UICONTROL Partizpative Kampagne mit Kampagnenzugriff]**: eignet sich für Kampagnen für einige Dutzend Lokalstellen. Dieser Kampagnentyp erstellt Kindkampagnen für jede Lokalstelle. Wenn die Bestellung einer **[!UICONTROL Partizipativen Kampagne mit Kampagnenzugriff]** von der Zentralstelle validiert wurde, wird die Kampagne der Lokalstelle zur Verfügung gestellt und kann von dieser angepasst werden. Die Ausführung von Eltern- und Kindkampagnen wird automatisch synchronisiert. Die Lokalstelle benötigt einen Rich-Client-Zugriff, um die Kampagne zu bestellen und ausführen zu können.
-* **[!UICONTROL Partizipative Kampagne mit Zielgruppenvalidierung]**: eignet sich für Kampagnen für mehrere Tausend Lokalstellen. Die Lokalstellen erhalten eine von der Zentralstelle ausgewählte Kontaktliste. Sie haben dank eines Webformulars die Möglichkeit, je nach Inhalt der Kampagne Kontakte herauszustreichen. Die teilnehmenden Lokalstellen werden von der ausgewählten Kontaktliste abgeleitet. Die Lokalstelle benötigt lediglich einen Webzugriff, um an der Kampagne teilnehmen zu können.
+* **[!UICONTROL Gemeinschaftliche Kampagne (nach Genehmigung der Zielgruppe)]**: empfohlen für Kampagnen für mehrere Tausend Lokalstellen. Lokalstelle erhält eine von der Zentralstelle vordefinierte Kontaktaufnahme-Liste. Die Lokalstelle entscheidet, ob bestimmte Kampagnen über ein Webformular auf der Grundlage des Inhalts der  bestehen bleiben sollen. Lokalstellen werden von der Liste der ausgewählten Kontakte abgezogen. Um an der Kampagne teilzunehmen, braucht die Lokalstelle nur Web-Zugriff.
 * **[!UICONTROL Partizipative Kampagne ohne Konfiguration]**: Dieser Modus stellt die Kompatibilität mit dezentralen Kampagnen aus vorhergehenden Versionen sicher.
 
 Weitere Informationen finden Sie unter [Partizipative Kampagne erstellen](../../campaign/using/creating-a-collaborative-campaign.md).
@@ -144,7 +144,7 @@ Die Implementierungsetappen hängen vom gewählten Kittyp und dem Umfang der lok
    * Ausführungsplanung (Kontakt- und Extraktionsdatum), **nur für lokale Kampagnen**;
    * Erweiterung des Schema der Bestellungen mit allen notwendigen zusätzlichen Felder.
 
-1. Erstellen Sie eine Webformular-Vorlage (über Adobe Campaign oder das Kunden-Extranet), die es ermöglicht, die Parameter der lokalen Anpassung anzuzeigen, Zielgruppe und Budget zu evaluieren, den Inhalt in einer Vorschau zu überprüfen und die Bestellung zu validieren.
+1. Erstellen Sie ein Webformular (Adobe oder Extranet), mit dem Sie lokale Anpassungen anzeigen, die Zielgruppe und das Budget auswerten, die Vorschau des Inhalts vornehmen und die Bestellung genehmigen können.
 
    Erstellen Sie für **partizipative Kampagnen mit Zielgruppenvalidierung** die Tabelle, in der die Validierungen für jede Lokalstelle gespeichert werden.
 
