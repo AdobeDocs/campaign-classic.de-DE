@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '3428'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -109,7 +109,7 @@ Der Schwellwert kann konstant sein oder mithilfe einer Formel berechnet werden, 
 
 **Beispiel:**
 
-Beispiel: Die zulässige Anzahl von Nachrichten kann entsprechend dem Segment indexiert werden, zu dem der Empfänger gehört. Ein im Segment &quot;Web&quot; verzeichneter Empfänger kann so beispielsweise mehr Nachrichten als andere Empfänger erhalten. Mit einer Formel vom Typ **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** wäre etwa der Versand von 5 Nachrichten an diese Empfänger zulässig, für die Empfänger aus anderen Segmenten dagegen nur 3. Dies erfordert folgende Konfiguration:
+Sie können die Anzahl autorisierter Nachrichten entsprechend dem Segment, zu dem der Empfänger gehört, indizieren. Dies bedeutet, dass ein Empfänger, der zum Websegment gehört, möglicherweise mehr Nachrichten als andere Empfänger erhält. Eine **[!UICONTROL Iif (@Herkunft=&#39;Web&#39;, 5, 3)]** Typformel autorisiert den Versand von 5 Nachrichten an Empfänger und 3 für andere Segmente. Die Konfiguration lautet wie folgt:
 
 ![](assets/campaign_opt_pressure_sample.png)
 
@@ -157,13 +157,13 @@ Eine Druckregel zum Beispiel, die eine Schwelle von 2 Nachrichten pro Woche und 
 >* den Wert **15T** im Feld **[!UICONTROL Betroffener Zeitraum]** eingeben: Die bis zu 15 Tage vor dem Datum des Versands, auf den die Regel angewendet wird, verschickten Sendungen werden in der Berechnung berücksichtigt;
 >
 >  
->oder
+oder
 >
 >* **7T** in das Feld **[!UICONTROL Betroffener Zeitraum]** eingeben UND die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]**\
->prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
+   >prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
 >
 >
->Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
+Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
 Wenn man also auf einem Versand vom 12.11. eine Druckregel über einen Zeitraum von 15 Tagen ohne Gruppierung anwendet, werden Sendungen zwischen dem 27.10. und dem 12.11. berücksichtigt. Wenn die Druckregel Sendungen aus dem Planungskalender miteinberechnet, werden Sendungen zwischen dem 27.10. und dem 27.11. gezählt. Wenn man schließlich in der Regel eine Gruppierung nach Kalendermonat festlegt, werden alle Sendungen der Monate November und Dezember in der Schwellenberechnung miteinbezogen (vom 1.11. bis zum 31.12.).
 
