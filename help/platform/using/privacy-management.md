@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
+source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 92%
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 # Datenschutzverwaltung {#privacy-management}
 
-Adobe Campaign offers a set of tools to help you comply with [Privacy regulations](#privacy-management-regulations) (including GDPR, CCPA, PDPA, LGPD).
+Adobe Campaign Angebot eine Reihe von Tools, die Ihnen helfen, [Datenschutzbestimmungen](#privacy-management-regulations) einzuhalten (einschließlich GDPR, CCPA, PDPA, LGPD).
 
 Im Folgenden finden Sie die fünf wichtigsten Funktionen, die Adobe Campaign bietet, um die Bereitschaft zu GDPR und anderen Datenschutzbestimmungen sicherzustellen:
 
@@ -27,27 +27,27 @@ Im Folgenden finden Sie die fünf wichtigsten Funktionen, die Adobe Campaign bie
 
 * **Recht auf Löschen**
 
-Weitere Informationen dazu finden Sie unter [Zugriffsrecht und Recht auf Vergessen](#right-access-forgotten).
+Weitere Informationen hierzu finden Sie unter [Zugriffsrecht und Recht auf Vergessen](#right-access-forgotten).
 
 * **Einverständnisverwaltung**
 
 * **Datenbeibehaltung**
 
-* **Berechtigungs-Management**
+* **Rights Management**
 
-Weitere Informationen finden Sie unter [Zustimmung, Treue und Rollen](#consent-retention-roles).
+Weitere Informationen hierzu finden Sie unter [Zustimmung, Treue und Rollen](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
 It also contains information on important features to manage Privacy ([Consent, Retention and Roles](#consent-retention-roles)), as well as best practices to help you with your Privacy compliance when using Adobe Campaign.-->
 
-## Verordnungen zur Datenschutzverwaltung {#privacy-management-regulations}
+## Vorschriften zur Datenschutzverwaltung {#privacy-management-regulations}
 
 Die Funktionen von Adobe Campaign helfen Ihnen bei der Einhaltung der folgenden Verordnungen:
 
 * Die **DSGVO** ([Datenschutz-Grundverordnung](https://ec.europa.eu/info/law/law-topic/data-protection/reform/what-does-general-data-protection-regulation-gdpr-govern_de)) ist das Datenschutzgesetz der Europäischen Union (EU), in dem die Anforderungen an den Datenschutz in den Ländern der EU harmonisiert und neu geregelt werden.
 * Der **CCPA** ([California Consumer Privacy Act](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CIV&amp;division=3.&amp;title=1.81.5.&amp;part=4.&amp;chapter=&amp;article=)) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
-* Der **PDPA** ([Personal Data Protection Act](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/)) ist das neue Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand harmonisiert und neu geregelt werden.
+* Der **PDPA** ([Personal Data Protection Act](https://secureprivacy.ai/thailand-pdpa-summary-what-businesses-need-to-know/)) ist das neue Datenschutzgesetz, in dem die Anforderungen an den Datenschutz in Thailand vereinheitlicht und neu geregelt werden.
 * Das **LGPD** ([Lei Geral de Proteção de Dados](https://iapp.org/media/pdf/resource_center/Brazilian_General_Data_Protection_Law.pdf)) gilt ab Frühjahr 2021 für alle Firmen, die personenbezogene Daten in Brasilien erheben oder verarbeiten.
 
 Alle diese Verordnungen gelten für Adobe Campaign-Kunden, die Daten für betroffene Personen mit Wohnsitz in den oben genannten Regionen oder Ländern (EU, Kalifornien, Thailand, Brasilien) besitzen.
@@ -60,11 +60,11 @@ Alle diese Verordnungen gelten für Adobe Campaign-Kunden, die Daten für betrof
 
 ## Recht auf Zugriff und Recht auf Vergessenwerden {#right-access-forgotten}
 
-Um Sie bei der Einhaltung von Datenschutzvorschriften zu unterstützen, ermöglicht Ihnen Adobe Campaign die Durchführung von **Zugriffs-** und **Löschanfragen**.
+Um Sie bei der Einhaltung der Datenschutzverordnungen zu unterstützen, ermöglicht Ihnen Adobe Campaign jetzt die Durchführung von **Zugriffs-** und **Löschanfragen**.
 
-* Das **Recht auf Zugriff** ist das Recht der betroffenen Person, vom Datenverantwortlichen eine Auskunft darüber zu erhalten, ob seine personenbezogenen Daten verarbeitet werden, wo dies geschieht und zu welchem Zweck. Der Datenverantwortliche muss eine Kopie der personenbezogenen Daten kostenlos in elektronischer Form zur Verfügung stellen.
+* Das **Recht auf Zugriff** ist das Recht der betroffenen Person, vom Datenverantwortlichen eine Auskunft darüber zu erhalten, ob ihre personenbezogenen Daten verarbeitet werden, wo dies geschieht und zu welchem Zweck. Der Datenverantwortliche muss eine Kopie der personenbezogenen Daten kostenlos in elektronischer Form zur Verfügung stellen.
 
-* Das **Recht auf Vergessenwerden** (Löschungsanfrage), auch Datenlöschung genannt, bedeutet, dass die betroffene Person vom Datenverantwortlichen verlangen kann, ihre personenbezogenen Daten zu löschen, ihre Daten nicht weiter zu verbreiten und mögliche Dritte anzuhalten, die Datenverarbeitung einzustellen.
+* Das **Recht auf Vergessenwerden** (Löschanfrage), auch Datenlöschung genannt, bedeutet, dass das Datensubjekt vom Datenverantwortlichen verlangen kann, seine personenbezogenen Daten zu löschen, seine Daten nicht weiterzuverbreiten und mögliche Dritte anzuhalten, die Datenverarbeitung einzustellen.
 
 In den [Implementierungsschritten](../../platform/using/privacy-requests.md) erfahren Sie, wie Sie **Zugriffs-** und **Löschanfragen** erstellen können und diese in Adobe Campaign verarbeitet werden.
 
@@ -73,7 +73,7 @@ https://experienceleague.corp.adobe.com/docs/campaign-standard-learn/tutorials/p
 
 ## Einverständnis, Datenbeibehaltung und Benutzerrollen {#consent-retention-roles}
 
-Zusätzlich zu den neuesten Funktionen für das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** bietet Adobe Campaign weitere Funktionen, die für den Datenschutz wichtig sind:
+Zusätzlich zu den neuen Funktionen für das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** bietet Adobe Campaign weitere für den Datenschutz wichtige Funktionen:
 
 * [Einverständnisverwaltung](#consent-management): Abonnement-Funktion für die Verwaltung von Einstellungen
 * [Datenbeibehaltung](#data-retention): Fristen für die Datenbeibehaltung für alle Standard-Log-Tabellen; zusätzliche Fristen für die Datenbeibehaltung können mit Workflows eingerichtet werden
@@ -81,15 +81,15 @@ Zusätzlich zu den neuesten Funktionen für das **Recht auf Zugriff** und das **
 
 ### Einverständnisverwaltung {#consent-management}
 
-Einverständnis bedeutet die Zustimmung de der betroffenen Person zur Verarbeitung seiner personenbezogenen Daten. Der Datenverantwortliche ist dafür zuständig, das erforderliche Einverständnis für diese Verarbeitung einzuholen. Adobe Campaign stellt zwar Funktionen bereit, die den Kunden bei der Verwaltung der Einverständniserklärungen unterstützen, Adobe ist jedoch nicht für das Einverständnis als solches verantwortlich. Kunden sollten ihre Rechtsabteilung zurate ziehen, um Prozesse und Verfahren für das Einholen des Einverständnisses auszuarbeiten.
+Einverständnis bedeutet die Zustimmung des Datensubjekts zur Verarbeitung seiner personenbezogenen Daten. Der Datenverantwortliche ist dafür zuständig, das erforderliche Einverständnis für diese Verarbeitung einzuholen. Adobe Campaign stellt zwar Funktionen bereit, die den Kunden bei der Verwaltung der Einverständniserklärungen unterstützen, Adobe ist jedoch nicht für das Einverständnis als solches verantwortlich. Kunden sollten ihre Rechtsabteilung zurate ziehen, um Prozesse und Verfahren für das Einholen des Einverständnisses auszuarbeiten.
 
-Funktionen zur Verwaltung von Einverständniserklärungen waren schon immer ein zentrales Anliegen von Adobe Campaign. Mithilfe des Abonnementverwaltungsprozesses können Kunden nachverfolgen, welche Empfänger sich für welche Arten von Abonnements angemeldet haben, ob Newsletter, tägliche oder wöchentliche Promotions oder andere Marketing-Programme.
+Die Funktionen, die bei der Verwaltung bestimmter Aspekte des Einverständnisses helfen, waren bei Adobe Campaign schon immer von zentraler Bedeutung. Mithilfe des Abonnementverwaltungsprozesses können Kunden nachverfolgen, welche Empfänger sich für welche Arten von Abonnements angemeldet haben, ob Newsletter, tägliche oder wöchentliche Promotions oder andere Marketing-Programme.
 
 ![](assets/privacy-consent-management.png)
 
 Weitere Informationen zur Einverständnisverwaltung finden Sie im [entsprechenden Handbuch](../../delivery/using/managing-subscriptions.md).
 
-Zusätzlich zu den von Adobe Campaign bereitgestellten Werkzeugen für die Einverständnisverwaltung können Sie verfolgen, ob ein Benutzer dem Verkauf seiner personenbezogenen Daten widersprochen hat. Siehe [diesen Abschnitt](../../platform/using/privacy-requests.md##sale-of-personal-information-ccpa).
+Zusätzlich zu den von Adobe Campaign bereitgestellten Werkzeugen für die Einverständnisverwaltung können Sie verfolgen, ob ein Benutzer dem Verkauf seiner personenbezogenen Daten widersprochen hat. Siehe [diesen Abschnitt](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 ### Datenbeibehaltung {#data-retention}
 
@@ -113,11 +113,11 @@ Im Folgenden finden Sie die standardmäßige Beibehaltungsdauer für Standardtab
 
 Wenden Sie sich an einen Adobe-Berater oder technischen Administrator, um mehr über die Beibehaltung zu erfahren oder um festzustellen, ob Sie eine Beibehaltung für benutzerdefinierte Tabellen festlegen müssen.
 
-### Berechtigungs-Management {#rights-management}
+### Rights Management {#rights-management}
 
 Adobe Campaign bietet Ihnen die Möglichkeit, die den unterschiedlichen Campaign-Benutzern zugewiesenen Rechte mithilfe von vordefinierten oder benutzerdefinierten spezifischen Rollen zu verwalten.
 
-Damit können Sie festlegen, wer in Ihrem Unternehmen auf unterschiedliche Arten von Daten zugreifen kann. Wenn beispielsweise Marketing-Experten für unterschiedliche geografische Gebiete zuständig sind, könnten Sie die Rollen so vergeben, dass jeder Marketing-Experte nur auf Daten in seinem eigenen Gebiet Zugriff erhält.
+Ein Vorteil ist, dass Sie damit verwalten können, wer in Ihrer Firma auf verschiedene Datentypen zugreifen kann. So können Sie beispielsweise verschiedene Marketing-Experten für verschiedene geografische Gebiete (Geos) verwenden, und jeder Marketing-Experte kann nur auf Daten aus seinem geografischen Gebiet zugreifen.
 
 Analog können Sie mit dieser Funktion für jeden Benutzer bestimmte Funktionen konfigurieren. So können Sie zum Beispiel eingrenzen, wer Sendungen übermitteln darf oder – was für die Verwaltung von Datenschutz relevanter ist – wer Daten verändern oder exportieren darf.
 
