@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 90%
 
 ---
 
@@ -51,27 +51,27 @@ Klicken Sie im Kampagnenfenster auf den Tab **[!UICONTROL Bearbeiten]** und ansc
 
 Im Tab **Dezentrales Marketing** sind der Webschnittstellentyp sowie die Standardwerte und die erweiterten Parameter festzulegen, die bei der Bestellung von den Lokalstellen zu erfassen sind.
 
-Die Webschnittstelle stellt ein Formular dar, dass von der Lokalstelle bei der Kampagnenbestellung auszufüllen ist.
+Die Weboberfläche entspricht einem Formular, das von der Lokalstelle bei der Bestellung der Kampagne ausgefüllt wird.
 
-Wählen Sie den Webschnittstellentyp aus, der für die auf dieser Vorlage basierenden Kampagnen angewandt werden soll:
+Wählen Sie den Typ der Weboberfläche aus, die auf die aus der Vorlage erstellten Kampagnen angewendet werden soll:
 
 ![](assets/mkt_distr_1.png)
 
-Es stehen vier unterschiedliche Webschnittstellentypen zur Verfügung:
+Es stehen vier Arten von Webschnittstellen zur Verfügung:
 
 * **[!UICONTROL Briefing]**: Die Lokalstelle beschreibt die gewünschten Kampagnenparameter bei der Bestellung. Sobald die Bestellung validiert wurde, konfiguriert die Zentralstelle die Kampagne und führt sie aus.
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL Standardformular]**: Die Lokalstelle hat Zugriff auf ein Webformular, in dem sie beispielsweise Inhalt, Zielgruppe, maximale Zielgruppengröße sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Zudem hat die Lokalstelle über dieses Webformular die Möglichkeit, die Zielgruppe zu evaluieren und den Inhalt in einer Vorschau zu überprüfen.
+* **[!UICONTROL Nach Formular]** : lokalstelle hat Zugriff auf ein Webformular, in dem sie je nach verwendeter Vorlage den Inhalt, die Zielgruppe, die Maximalgröße sowie Erstellungs- und Extraktion-Daten mithilfe von Personalisierungsfeldern bearbeiten können. Lokalstelle kann den Inhalt der Zielgruppe und Vorschau aus diesem Webformular auswerten.
 
    ![](assets/mkt_distr_8.png)
 
-   Das angebotene Formular wird in einer Webanwendung definiert, die in der Vorlage unter dem Link **[!UICONTROL Erweiterte Kampagnenparameter...]** in der Dropdown-Liste des Felds **[!UICONTROL Webschnittstelle]** ausgewählt werden muss. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+   Das angebotene Formular wird in einer Webanwendung angegeben, die in einer Dropdown-Liste aus dem Feld **[!UICONTROL Webschnittstelle]** in den Vorlageneinstellungen **[!UICONTROL Erweiterte Kampagne ausgewählt werden muss...]**-Link. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >Bei der verwendeten Webanwendung handelt es sich um ein Beispiel. Um ein Formular zu verwenden, muss vorab eine spezifische Webanwendung erstellt werden. Lesen Sie hierzu den Abschnitt [APIs](../../configuration/using/about-web-services.md).
+   >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Sie müssen eine bestimmte Web-App erstellen, um ein Formular verwenden zu können. Siehe [API](../../configuration/using/about-web-services.md).
 
    ![](assets/mkt_distr_7.png)
 
@@ -240,7 +240,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Webanwendungen werden im [Webfunktionen](../../web/using/about-web-applications.md)-Handbuch näher erläutert.
+   >Webanwendungen werden in [diesem Abschnitt](../../web/using/about-web-applications.md) beschrieben.
 
 1. Geben Sie auf der ersten Seite Informationen wie Bestelltitel und Kommentar ein und klicken Sie auf **[!UICONTROL Weiter]**.
 
@@ -310,7 +310,7 @@ Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kam
 >
 >Die Kampagne kann bis zu ihrem Verfügbarkeitsdatum jederzeit bearbeitet und ihre Parameter verändert werden. Die Lokalstelle hat auch die Möglichkeit, die Kampagne über die Schaltfläche **[!UICONTROL Abbrechen]** zu annulieren.
 
-#### Kampagnen erstellen     {#creating-a-campaign}
+#### Kampagnen erstellen      {#creating-a-campaign}
 
 Wenn eine Bestellung validiert wurde, kann es von der Lokalstelle konfiguriert und ausgeführt werden.
 
