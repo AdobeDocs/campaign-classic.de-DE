@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d0ae3d597f9ee30515437d94901cb034d0ca3d5
 workflow-type: tm+mt
-source-wordcount: '3612'
+source-wordcount: '3633'
 ht-degree: 4%
 
 ---
@@ -21,9 +21,9 @@ Im folgenden Abschnitt werden serverseitige Konfigurationen beschrieben, die ent
 
 >[!IMPORTANT]
 >
->Diese Konfigurationen müssen von Administratoren und nur für **lokale** Hostingmodelle durchgeführt werden.
+>Diese Konfigurationen müssen von Administratoren und nur für Hostingmodelle von **On-Premise** durchgeführt werden.
 >
->Bei **gehosteten** Bereitstellungen können serverseitige Einstellungen nur von der Adobe konfiguriert werden. Einige Einstellungen können jedoch in der Systemsteuerung eingerichtet werden (z. B. IP-Zulassungsliste-Management oder URL-Berechtigungen).
+>Bei **Hosted**-Bereitstellungen können serverseitige Einstellungen nur durch Adobe konfiguriert werden. Einige Einstellungen können jedoch in der Systemsteuerung eingerichtet werden (z. B. IP-Zulassungsliste-Management oder URL-Berechtigungen).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
@@ -32,20 +32,20 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 * [Campaign Classic-On-Premise- und gehostete Funktionsmatrix](../../installation/using/capability-matrix.md)
 * [Konfigurationsschritte für Hybrid- und gehostete Modelle](../../installation/using/hosting-models.md)
 
-Campaign Classic-Konfigurationsdateien werden im Installationsordner des Adobe Campaigns im **conf** -Ordner gespeichert. Die Konfiguration erstreckt sich über zwei Dateien:
+Campaign Classic-Konfigurationsdateien werden im Ordner **conf** des Adobe Campaign-Installationsordners gespeichert. Die Konfiguration erstreckt sich über zwei Dateien:
 
-* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei enthält die technischen Parameter des Adobe Campaign-Servers: diese werden von allen Instanzen freigegeben. Die Beschreibung einiger dieser Parameter ist nachfolgend beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt sind.
-* **config-`<instance>`.xml** (wobei **instance** der Name der Instanz ist): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server für mehrere Instanzen freigeben, geben Sie bitte die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
+* **serverConf.xml**: allgemeine Konfiguration für alle Instanzen. Diese Datei enthält die technischen Parameter des Adobe Campaign-Servers: diese werden von allen Instanzen freigegeben. Die Beschreibung einiger dieser Parameter ist nachfolgend beschrieben. Die verschiedenen Knoten und Parameter, die in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt sind.
+* **config-`<instance>`.xml** (wobei  **** instanceis der Name der Instanz ist): spezifische Konfiguration der Instanz. Wenn Sie Ihren Server für mehrere Instanzen freigeben, geben Sie bitte die für jede Instanz spezifischen Parameter in die entsprechende Datei ein.
 
 ## Definieren von Sicherheitszonen {#defining-security-zones}
 
-### Sicherheitszonen {#about-security-zones}
+### Informationen zu Sicherheitszonen {#about-security-zones}
 
 Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anzumelden, und die IP-Adresse des Betreibers muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Sicherheitszonenkonfiguration wird in der Konfigurationsdatei des Adobe Campaign-Servers ausgeführt.
 
-Operatoren werden über ihr Profil in der Konsole (&quot; **[!UICONTROL Administration&quot;> &quot;Zugriffsverwaltung&quot;> &quot;Operatoren]** &quot;) mit einer Sicherheitszone verknüpft. In [diesem Abschnitt erfahren Sie, wie Sie Zonen mit Operatoren der Kampagne verknüpfen](#linking-a-security-zone-to-an-operator).
+Operatoren werden über ihr Profil in der Konsole ( **[!UICONTROL Administration > Zugriffsverwaltung > Operatoren]**-Knoten) mit einer Sicherheitszone verknüpft. Erfahren Sie, wie Sie Zonen mit Kampagnen-Operatoren in [diesem Abschnitt](#linking-a-security-zone-to-an-operator) verknüpfen.
 
-### Sicherheitszonen erstellen {#creating-security-zones}
+### Erstellen von Sicherheitszonen {#creating-security-zones}
 
 Eine Zone ist definiert durch:
 
@@ -54,7 +54,7 @@ Eine Zone ist definiert durch:
 
 Die Sicherheitszonen sind miteinander verbunden, was bedeutet, dass die Definition einer neuen Zone innerhalb einer anderen Zone die Anzahl der Operatoren verringert, die sich bei ihr anmelden können, während die den einzelnen Operatoren zugewiesenen Rechte erhöht werden.
 
-Zonen müssen während der Serverkonfiguration in der Datei &quot; **serverConf.xml** &quot;definiert werden. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Zonen müssen während der Serverkonfiguration in der Datei **serverConf.xml** definiert werden. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
 Jede Zone definiert Rechte wie:
 
@@ -67,15 +67,15 @@ Jede Zone definiert Rechte wie:
 >[!NOTE]
 >
 >**Jeder Operator muss mit einer Zone** verbunden sein. Wenn die IP-Adresse des Operators zu dem durch die Zone definierten Bereich gehört, kann sich der Operator bei der Instanz anmelden.\
->Die IP-Adresse des Betreibers kann in mehreren Zonen definiert werden. In diesem Fall erhält der Betreiber die für jede Zone verfügbaren **Rechte** .
+>Die IP-Adresse des Betreibers kann in mehreren Zonen definiert werden. In diesem Fall erhält der Operator die verfügbaren Rechte für jede Zone.****
 
-Die vordefinierte **Datei &quot;serverConf.xml** &quot;umfasst drei Bereiche: **public, VPN und LAN**.
+Die vordefinierte **serverConf.xml**-Datei umfasst drei Zonen: **public, VPN und LAN**.
 
 >[!NOTE]
 >
 >**Die vordefinierte Konfiguration ist sicher**. Vor der Migration von einer früheren Version von Adobe Campaign kann es jedoch erforderlich sein, die Sicherheit vorübergehend zu reduzieren, um die neuen Regeln zu migrieren und zu genehmigen.
 
-Beispiel zum Definieren einer Zone in der Datei **serverConf.xml** :
+Beispiel zum Definieren einer Zone in der Datei **serverConf.xml**:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" name="public">
@@ -110,13 +110,13 @@ Alle Rechte, die eine Zone definieren, lauten wie folgt:
 
 >[!IMPORTANT]
 >
->In einer Zonendefinition verringert jedes Attribut mit dem **Wert &quot;true&quot;** die Sicherheit.
+>In einer Zonendefinition verringert jedes Attribut mit dem Wert **true** die Sicherheit.
 
-Wenn Sie das Message Center verwenden und mehrere Ausführungsinstanzen vorliegen, müssen Sie eine zusätzliche Sicherheitszone erstellen, in der das Attribut **sessionTokenOnly** als **true** definiert ist, wobei nur die erforderlichen IP-Adressen hinzugefügt werden müssen. Weitere Informationen zum Konfigurieren von Instanzen finden Sie in [diesem Dokument](../../message-center/using/creating-a-shared-connection.md).
+Bei Verwendung des Message Center müssen Sie bei mehreren Ausführungsinstanzen eine zusätzliche Sicherheitszone mit dem Attribut **sessionTokenOnly** erstellen, das als **true** definiert ist, wobei nur die erforderlichen IP-Adressen hinzugefügt werden müssen. Weitere Informationen zum Konfigurieren von Instanzen finden Sie in [diesem Dokument](../../message-center/using/creating-a-shared-connection.md).
 
 ### Bewährte Verfahren für Sicherheitszonen {#best-practices-for-security-zones}
 
-In der Definition der **lan** -Sicherheitszone kann eine IP-Adressenmaske hinzugefügt werden, die den technischen Zugriff definiert. Dieser Zusatz ermöglicht den Zugriff auf alle Instanzen, die auf dem Server gehostet werden.
+In der Definition der Sicherheitszone **lan** kann eine IP-Adressenmaske hinzugefügt werden, die den technischen Zugriff definiert. Dieser Zusatz ermöglicht den Zugriff auf alle Instanzen, die auf dem Server gehostet werden.
 
 ```
 <securityZone allowDebug="true" allowEmptyPassword="false" allowHTTP="true"
@@ -137,7 +137,7 @@ In der Definition der **lan** -Sicherheitszone kann eine IP-Adressenmaske hinzug
 
 Es wird empfohlen, IP-Adressbereiche direkt in der Konfigurationsdatei zu definieren, die der Instanz zugeordnet ist, damit Operatoren nur auf eine bestimmte Instanz zugreifen können.
 
-In der **`config-<instance>.xml`** Datei:
+In der Datei **`config-<instance>.xml`**:
 
 ```
   <securityZone name="public">
@@ -146,9 +146,9 @@ In der **`config-<instance>.xml`** Datei:
       <subNetwork id="cus1" mask="a.b.c.d/xx"/>
 ```
 
-### Subnetzwerke und Stellvertreter in einer Sicherheitszone {#sub-networks-and-proxies-in-a-security-zone}
+### Subnetzwerke und Proxys in einer Sicherheitszone {#sub-networks-and-proxies-in-a-security-zone}
 
-Der **Proxy** -Parameter kann in einem **subNetwork** -Element verwendet werden, um die Verwendung des Proxys in einer Sicherheitszone festzulegen.
+Der Parameter **proxy** kann in einem **subNetwork**-Element verwendet werden, um die Proxyverwendung in einer Sicherheitszone anzugeben.
 
 Wenn ein Proxy referenziert wird und eine Verbindung über diesen Proxy eingeht (sichtbar über den HTTP X-Forwarded-For-Header), ist der verifizierte Bereich der Clients des Proxys und nicht der des Proxys.
 
@@ -174,7 +174,7 @@ Es können verschiedene Fälle auftreten:
 
    ![](assets/8101_proxy3.png)
 
-Die IP-Adressen von Proxys, die auf den Adobe Campaign-Server zugreifen können, müssen sowohl im **`<subnetwork>`** betreffenden als auch im ersten Teilnetzwerk eingegeben werden **`<subnetwork name="all"/>`**. Beispiel: Hier für einen Proxy mit der IP-Adresse 10.131.146.102:
+Die IP-Adressen von Proxys, die wahrscheinlich auf den Adobe Campaign-Server zugreifen, müssen sowohl im betreffenden **`<subnetwork>`** als auch im ersten Teilnetzwerk **`<subnetwork name="all"/>`** eingegeben werden. Beispiel: Hier für einen Proxy mit der IP-Adresse 10.131.146.102:
 
 ```
 <securityZone allowDebug="false" allowHTTP="false" label="Public Network" 
@@ -203,43 +203,43 @@ Sobald Zonen definiert sind, muss jeder Operator mit einem von ihnen verknüpft 
 
 Die technische Konfiguration der Zonen erfolgt in der Konfigurationsdatei des Kampagne Server: **serverConf.xml**.
 
-Zuvor müssen Sie den Beginn konfigurieren, indem Sie die vordefinierte **[!UICONTROL Sicherheitszone]** -Auflistung so konfigurieren, dass eine Beschriftung mit dem in der Datei &quot; **serverConf.xml** &quot;definierten internen Namen der Zone verknüpft wird.
+Zuvor müssen Sie die vordefinierte Auflistung **[!UICONTROL Sicherheitszone]** konfigurieren, um eine Bezeichnung mit dem in der Datei **serverConf.xml** definierten internen Namen der Beginn zu verknüpfen.
 
 Diese Konfiguration erfolgt im Kampagne Explorer:
 
-1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** .
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Platform > Auflistungen]**.
 1. Wählen Sie die Auflistung **[!UICONTROL Sicherheitszone (securityZone)]** aus.
 
    ![](assets/enum_securityzone.png)
 
-1. Klicken Sie für jede in der Konfigurationsdatei des Servers definierte Sicherheitszone auf die **[!UICONTROL Hinzufügen]** .
-1. Geben Sie im Feld **[!UICONTROL Interner Name]** den Namen der Zone ein, die in der Datei &quot; **serverConf.xml** &quot;definiert ist. Es entspricht dem Attribut **@name** des `<securityzone>` Elements. Geben Sie die mit dem internen Namen verknüpfte Beschriftung in das **** Feld &quot;Beschriftung&quot;ein.
+1. Klicken Sie für jede in der Konfigurationsdatei des Servers definierte Sicherheitszone auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
+1. Geben Sie im Feld **[!UICONTROL Interner Name]** den Namen der in der Datei **serverConf.xml** definierten Zone ein. Es entspricht dem Attribut **@name** des Elements `<securityzone>`. Geben Sie im Feld **Beschriftung** die mit dem internen Namen verknüpfte Beschriftung ein.
 
    ![](assets/enum_addsecurityvalue.png)
 
 1. Klicken Sie auf OK und speichern Sie die Änderungen.
 
-Sobald die Zonen definiert und die Auflistung der **[!UICONTROL Sicherheitszone]** konfiguriert sind, müssen Sie jeden Operator mit einer Sicherheitszone verknüpfen:
+Sobald die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** konfiguriert ist, müssen Sie jeden Operator mit einer Sicherheitszone verknüpfen:
 
-1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Zugriffsverwaltung > Operatoren]** .
-1. Wählen Sie den Operator aus, mit dem Sie eine Sicherheitszone verknüpfen möchten, und klicken Sie auf die Registerkarte &quot; **[!UICONTROL Bearbeiten]** &quot;.
-1. Rufen Sie die Registerkarte **[!UICONTROL Zugriffsrechte]** auf und klicken Sie auf die **[!UICONTROL Zugriffsparameter bearbeiten ...]** Link.
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Zugriffsverwaltung > Operatoren]**.
+1. Wählen Sie den Operator aus, mit dem Sie eine Sicherheitszone verknüpfen möchten, und klicken Sie auf die Registerkarte **[!UICONTROL Bearbeiten]**.
+1. Wechseln Sie zur Registerkarte **[!UICONTROL Zugriffsrechte]** und klicken Sie auf **[!UICONTROL Zugriffsparameter bearbeiten...]**-Link.
 
    ![](assets/zone_operator.png)
 
-1. Wählen Sie einen Bereich aus der Dropdown-Liste &quot; **[!UICONTROL Autorisierte Verbindungszone]** &quot;aus
+1. Wählen Sie einen Bereich aus der Dropdown-Liste **[!UICONTROL Autorisierte Verbindungszone]**
 
    ![](assets/zone_operator_selection.png)
 
 1. Klicken Sie auf **[!UICONTROL OK]** und speichern Sie die Änderungen, um diese Änderungen anzuwenden.
 
-## Tomcat konfigurieren {#configuring-tomcat}
+## Tomcat {#configuring-tomcat} konfigurieren
 
 ### Standardanschluss für Tomcat {#default-port-for-tomcat}
 
-Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen Anwendung besetzt ist, die für Ihre Konfiguration erforderlich ist, müssen Sie den 8080-Port durch einen kostenlosen ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die **Datei &quot;server.xml** &quot;im Ordner **/tomcat-8/conf** des Installationsordners des Adobe Campaigns.
+Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen Anwendung besetzt ist, die für Ihre Konfiguration erforderlich ist, müssen Sie den 8080-Port durch einen kostenlosen ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die Datei **server.xml**, die im Ordner **/tomcat-8/conf** des Installationsordners des Adobe Campaigns gespeichert ist.
 
-Ändern Sie dann den Anschluss der JSP-Relaisseiten. Ändern Sie dazu die **Datei &quot;serverConf.xml** &quot;im Ordner **/conf** des Installationsordners des Adobe Campaigns. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Ändern Sie dann den Anschluss der JSP-Relaisseiten. Ändern Sie dazu die Datei **serverConf.xml**, die im Ordner **/conf** des Installationsordners des Adobe Campaigns gespeichert ist. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
 ```
 <serverConf>
@@ -248,9 +248,9 @@ Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen A
    <url ... targetUrl="http://localhost:8090"...
 ```
 
-### Ordner in Tomcat zuordnen {#mapping-a-folder-in-tomcat}
+### Zuordnen eines Ordners in Tomcat {#mapping-a-folder-in-tomcat}
 
-Um kundenspezifische Einstellungen zu definieren, können Sie eine **Datei &quot;user_Kontexte.xml** &quot;im Ordner &quot; **/tomcat-8/conf** &quot;erstellen, die auch die Datei &quot; **Kontexte.xml** &quot;enthält.
+Um kundenspezifische Einstellungen zu definieren, können Sie eine Datei **user_Kontexte.xml** im Ordner **/tomcat-8/conf** erstellen, die auch die Datei **Kontexte.xml** enthält.
 
 Diese Datei enthält die folgenden Informationen:
 
@@ -262,9 +262,9 @@ Bei Bedarf kann dieser Vorgang serverseitig reproduziert werden.
 
 ## Personalisieren von Versand-Parametern {#personalizing-delivery-parameters}
 
-Die Versand-Parameter werden in der Konfigurationsdatei &quot; **serverConf.xml** &quot;definiert. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Die Versand-Parameter werden in der Konfigurationsdatei **serverConf.xml** definiert. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-Allgemeine Serverkonfigurationen und -befehle werden in der [Kampagne-Serverkonfiguration](../../installation/using/campaign-server-configuration.md)ausführlich beschrieben.
+Allgemeine Serverkonfiguration und -befehle finden Sie unter [Kampagne-Serverkonfiguration](../../installation/using/campaign-server-configuration.md).
 
 Je nach Bedarf und Einstellungen können Sie außerdem die folgenden Konfigurationen durchführen.
 
@@ -274,7 +274,7 @@ Das MTA-Modul fungiert als systemeigener E-Mail-Transfer-Agent für SMTP-Übertr
 
 Es ist jedoch möglich, ihn durch einen Server zu ersetzen, wenn Ihre Sicherheitsrichtlinien dies erfordern. In diesem Fall ist der globale Durchsatz der Relaisdurchsatz (vorausgesetzt, dass der Relaisserver-Durchsatz niedriger ist als der Durchsatz des Adobe Campaigns).
 
-In diesem Fall werden diese Parameter durch Konfiguration des SMTP-Servers im **`<relay>`** Abschnitt festgelegt. Sie müssen die IP-Adresse (oder den Host) des SMTP-Servers angeben, der zum Übertragen von E-Mails verwendet wird, und den zugehörigen Anschluss (standardmäßig 25).
+In diesem Fall werden diese Parameter durch Konfiguration des SMTP-Servers im Abschnitt **`<relay>`** festgelegt. Sie müssen die IP-Adresse (oder den Host) des SMTP-Servers angeben, der zum Übertragen von E-Mails verwendet wird, und den zugehörigen Anschluss (standardmäßig 25).
 
 ```
 <relay address="192.0.0.3" port="25"/>
@@ -286,13 +286,13 @@ In diesem Fall werden diese Parameter durch Konfiguration des SMTP-Servers im **
 
 ### MTA-untergeordnete Prozesse {#mta-child-processes}
 
-Es ist möglich, die Population von untergeordneten Prozessen (maxSpareServers standardmäßig 2) zu steuern, um die Übertragungsleistung entsprechend der CPU-Leistung der Server und der verfügbaren Netzwerkressourcen zu optimieren. Diese Konfiguration ist im Abschnitt der **`<master>`** MTA-Konfiguration auf jedem einzelnen Computer vorzunehmen.
+Es ist möglich, die Population von untergeordneten Prozessen (maxSpareServers standardmäßig 2) zu steuern, um die Übertragungsleistung entsprechend der CPU-Leistung der Server und der verfügbaren Netzwerkressourcen zu optimieren. Diese Konfiguration ist auf jedem einzelnen Computer im Abschnitt **`<master>`** der MTA-Konfiguration vorzunehmen.
 
 ```
 <master dataBasePoolPeriodSec="30" dataBaseRetryDelaySec="60" maxSpareServers="2" minSpareServers="0" startSpareServers="0">
 ```
 
-Weitere Informationen finden Sie unter Optimierung des [E-Mail-Versands](../../installation/using/email-deliverability.md#email-sending-optimization).
+Siehe auch [Optimierung des E-Mail-Versands](../../installation/using/email-deliverability.md#email-sending-optimization).
 
 ### Verwalten des ausgehenden SMTP-Traffics mit Affinitäten {#managing-outbound-smtp-traffic-with-affinities}
 
@@ -304,9 +304,9 @@ Sie können den ausgehenden SMTP-Traffic durch Affinitäten mit IP-Adressen verb
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Geben Sie die Affinitäten im **`<ipaffinity>`** Abschnitt der Datei &quot; **serverConf.xml** &quot;ein.
+1. Geben Sie die Affinitäten im Abschnitt **`<ipaffinity>`** der Datei **serverConf.xml** ein.
 
-   Eine Affinität kann mehrere verschiedene Namen haben: um sie zu trennen, verwenden Sie die **;** Zeichen.
+   Eine Affinität kann mehrere verschiedene Namen haben: zum Trennen verwenden Sie das Zeichen **;**.
 
    Beispiel:
 
@@ -315,15 +315,15 @@ Gehen Sie hierzu wie folgt vor:
              <IP address="XX.XXX.XX.XX" heloHost="myserver.us.campaign.net" publicId="123" excludeDomains="neo.*" weight="5"/
    ```
 
-   Informationen zur Ansicht der entsprechenden Parameter finden Sie in der Datei &quot; **serverConf.xml** &quot;.
+   Informationen zur Ansicht der entsprechenden Parameter finden Sie in der Datei **serverConf.xml**.
 
-1. Um die Auswahl der Affinitäten in den Dropdown-Listen zu aktivieren, müssen Sie die Affinitäten in der **IPAffinity-Auflistung** hinzufügen.
+1. Um die Auswahl der Affinitäten in den Dropdown-Listen zu aktivieren, müssen Sie die Affinitäten in der Auflistung **IPAffinity** hinzufügen.
 
    ![](assets/ipaffinity_enum.png)
 
    >[!NOTE]
    >
-   >Auflistungen sind in [diesem Dokument](../../platform/using/managing-enumerations.md)detailliert.
+   >Die Auflistungen sind in [diesem Dokument](../../platform/using/managing-enumerations.md) detailliert.
 
    Anschließend können Sie die zu verwendende Affinität auswählen, wie unten für Typologien dargestellt:
 
@@ -331,7 +331,7 @@ Gehen Sie hierzu wie folgt vor:
 
    >[!NOTE]
    >
-   >Sie können auch auf die [Versand-Serverkonfiguration](../../installation/using/email-deliverability.md#delivery-server-configuration)verweisen.
+   >Sie können auch auf [Serverkonfiguration des Versands](../../installation/using/email-deliverability.md#delivery-server-configuration) verweisen.
 
 ## URL-Genehmigungen {#url-permissions}
 
@@ -343,10 +343,10 @@ Nach dem Hinzufügen einer URL wird sie in der Konfigurationsdatei der Instanz r
 
 Wie Sie URL-Berechtigungen verwalten können, hängt von Ihrem Hostmodell ab:
 
-* **Hybrid** oder **Vor-Ort**: fügen Sie die URLs hinzu, die in der Datei **&quot;serverConf.xml&quot;zulässig sind**. Ausführliche Informationen finden Sie im folgenden Abschnitt.
-* **gehostet**: fügen Sie die URLs hinzu, die über die **Systemsteuerung** zulässig sind. Weitere Informationen finden Sie in der [entsprechenden Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/url-permissions.html).
+* **** Hybridor  **vor Ort**: fügen Sie die URLs hinzu, die in der Datei  **&quot;serverConf.xml&quot;zulässig sind**. Ausführliche Informationen finden Sie im folgenden Abschnitt.
+* **gehostet**: fügen Sie die URLs hinzu, die über die  **Systemsteuerung** zulässig sind. Weitere Informationen finden Sie in der [entsprechenden Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/url-permissions.html).
 
-Bei **Hybrid** - und **On-Premise** -Hostmodellen muss der Administrator auf eine neue **urlPermission** in der Datei &quot; **serverConf.xml** &quot;verweisen. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Bei den Hostmodellen **Hybrid** und **On-Premise** muss der Administrator auf eine neue **urlPermission** in der Datei **serverConf.xml** verweisen. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
 Es gibt drei Modi für den Verbindungsschutz:
 
@@ -364,17 +364,17 @@ Es gibt drei Modi für den Verbindungsschutz:
 
 >[!IMPORTANT]
 >
->Standardmäßig verwendet der Client eines neuen Kunden den **Blockierungsmodus**. Wenn sie eine neue URL zulassen müssen, sollten sie sich an ihren Administrator wenden, um sie der Zulassungsliste hinzuzufügen.
+>Der Client neuer Kunden verwendet standardmäßig den Blockiermodus **a1/>.** Wenn sie eine neue URL zulassen müssen, sollten sie sich an ihren Administrator wenden, um sie der Zulassungsliste hinzuzufügen.
 >
->Vorhandene Kunden, die von einer Migration kommen, können den **Warnmodus** eine Weile lang verwenden. In der Zwischenzeit müssen sie den ausgehenden Traffic analysieren, bevor sie die URLs autorisieren. Sobald die Liste autorisierter URLs definiert ist, sollten sie sich an ihren Administrator wenden, um die URLs zur Zulassungsliste hinzuzufügen und den **Blockierungsmodus** zu aktivieren.
+>Vorhandene Kunden, die aus einer Migration kommen, können den **Warnungsmodus** für eine Weile verwenden. In der Zwischenzeit müssen sie den ausgehenden Traffic analysieren, bevor sie die URLs autorisieren. Sobald die Liste autorisierter URLs definiert ist, sollten sie sich an ihren Administrator wenden, um die URLs zur Zulassungsliste hinzuzufügen und den **Blockierungsmodus** zu aktivieren.
 
 ## Dynamische Seitensicherheit und Relais {#dynamic-page-security-and-relays}
 
-Standardmäßig sind alle dynamischen Seiten automatisch mit dem **lokalen** Tomcat-Server des Computers verknüpft, dessen Webmodul gestartet wurde. Diese Konfiguration wird in den **`<url>`** Abschnitt der Abfrage-Relaiskonfiguration für die Datei &quot; **ServerConf.xml** &quot;eingegeben. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Standardmäßig sind alle dynamischen Seiten automatisch mit dem **local** Tomcat-Server des Computers verknüpft, dessen Webmodul gestartet wurde. Diese Konfiguration wird im Abschnitt **`<url>`** der Abfrage-Relaiskonfiguration für die Datei **serverConf.xml** eingegeben. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-die Ausführung der dynamischen Seite auf einem **Remote** -Server weiterleiten; wenn das Webmodul auf dem Computer nicht aktiviert ist. Dazu müssen Sie den **localhost** durch den Namen des Remote-Computers für JSP und JSSP, Webanwendungen, Berichte und Zeichenfolgen ersetzen.
+So übertragen Sie die Ausführung der dynamischen Seite auf einem **remote**-Server wenn das Webmodul auf dem Computer nicht aktiviert ist. Dazu müssen Sie **localhost** durch den Namen des Remote-Computers für JSP und JSSP, Webanwendungen, Berichte und Zeichenfolgen ersetzen.
 
-Weitere Informationen zu den verschiedenen verfügbaren Parametern finden Sie in der Konfigurationsdatei &quot; **serverConf.xml** &quot;.
+Weitere Informationen zu den verschiedenen verfügbaren Parametern finden Sie in der Konfigurationsdatei **serverConf.xml**.
 
 Für JSP-Seiten lautet die Standardkonfiguration:
 
@@ -396,7 +396,7 @@ Die für den Mobile App Kanal verwendeten JSSPs lauten wie folgt:
 
 **Beispiel:**
 
-Es ist möglich, Clientmaschinenverbindungen von außen zu verhindern. Dazu beschränken Sie einfach die Ausführung von **soaprouter.jsp** und genehmigen nur die Ausführung von Mirrorseiten, viralen Links, Webformularen und öffentliche Ressourcen.
+Es ist möglich, Clientmaschinenverbindungen von außen zu verhindern. Schränken Sie dazu einfach die Ausführung von **soaprouter.jsp** ein und genehmigen Sie nur die Ausführung von Mirrorseiten, viralen Links, Webformularen und öffentliche Ressourcen.
 
 Die Parameter lauten wie folgt:
 
@@ -414,7 +414,7 @@ Die Parameter lauten wie folgt:
 <url IPMask=""               deny="true" hostMask="" relayHost="false" relayPath="false" targetUrl="http://localhost:8080" timeout="" urlPath="*.jssp"/>
 ```
 
-In diesem Beispiel fällt der **`<IP_addresses>`** Wert mit der Liste der IP-Adressen (durch Kommas getrennt) zusammen, die für die Verwendung des Relais-Moduls für diese Maske berechtigt sind.
+In diesem Beispiel fällt der Wert **`<IP_addresses>`** mit der Liste der IP-Adressen (durch Kommas getrennt) zusammen, die zur Verwendung des Relaismoduls für diese Maske berechtigt sind.
 
 >[!NOTE]
 >
@@ -447,9 +447,9 @@ sh
 >
 >Diese Liste ist nicht erschöpfend.
 
-Im **exec** -Knoten der Serverkonfigurationsdatei müssen Sie auf die zuvor erstellte Datei im **blacklistFile** -Attribut verweisen.
+Im Knoten **exec** der Serverkonfigurationsdatei müssen Sie auf die zuvor erstellte Datei im Attribut **blacklistFile** verweisen.
 
-**Nur** für Linux: in der Serverkonfigurationsdatei sollten Sie einen Benutzer angeben, der externe Befehle ausführen soll, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im **exec** -Knoten der Konfigurationsdatei festgelegt. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+**Nur** für Linux: in der Serverkonfigurationsdatei sollten Sie einen Benutzer angeben, der externe Befehle ausführen soll, um Ihre Sicherheitskonfiguration zu verbessern. Dieser Benutzer wird im Knoten **exec** der Konfigurationsdatei festgelegt. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
 >[!NOTE]
 >
@@ -473,9 +473,9 @@ Dieser Benutzer muss zur untergeordneten Liste des Adobe Campaign-Operators &quo
 
 Standardmäßig werden nicht alle HTTP-Header wiedergegeben. Sie können bestimmte Kopfzeilen in den Antworten, die durch Relais gesendet werden, hinzufügen. Gehen Sie dazu wie folgt vor:
 
-1. Wechseln Sie zur Datei &quot; **serverConf.xml** &quot;. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
-1. Wechseln Sie im **`<relay>`** Knoten zur Liste der wiedergegebenen HTTP-Header.
-1. hinzufügen eines **`<responseheader>`** Elements mit den folgenden Attributen:
+1. Wechseln Sie zur Datei **serverConf.xml**. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+1. Wechseln Sie im Knoten **`<relay>`** zur Liste der weitergeleiteten HTTP-Header.
+1. hinzufügen Sie ein **`<responseheader>`**-Element mit den folgenden Attributen:
 
    * **name**: Kopfzeilenname
    * **Wert**: Wertname.
@@ -494,7 +494,7 @@ Werden mehrere Server für die Weiterleitung verwendet, müssen sie über SOAP-A
 >
 >Bei Verwendung der Standard- oder Unternehmensarchitektur muss der Hauptanwendungsserver berechtigt sein, Verfolgungsinformationen auf jedem Computer hochzuladen.
 
-Die URLs der redundanten Server müssen in der Umleitungskonfiguration über die Datei &quot; **serverConf.xml** &quot;angegeben werden. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Die URLs der redundanten Server müssen in der Umleitungskonfiguration über die Datei **serverConf.xml** angegeben werden. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
 **Beispiel:**
 
@@ -503,7 +503,7 @@ Die URLs der redundanten Server müssen in der Umleitungskonfiguration über die
 <spareserver enabledIf="$(hostname)!='front_srv2'" id="2" url="http://front_srv2:8080" />
 ```
 
-Die **enableIf** -Eigenschaft ist optional (standardmäßig leer) und ermöglicht es Ihnen, die Verbindung nur zu aktivieren, wenn das Ergebnis true lautet. Auf diese Weise erhalten Sie auf allen Umleitungsservern eine identische Konfiguration.
+Die **enableIf**-Eigenschaft ist optional (standardmäßig leer) und ermöglicht es Ihnen, die Verbindung nur zu aktivieren, wenn das Ergebnis true ist. Auf diese Weise erhalten Sie auf allen Umleitungsservern eine identische Konfiguration.
 
 Um den Hostnamen des Computers abzurufen, führen Sie den folgenden Befehl aus: **hostname -s**.
 
@@ -513,9 +513,9 @@ Um den Hostnamen des Computers abzurufen, führen Sie den folgenden Befehl aus: 
 
 Sie werden im Ordner **/var/res/instance** des Installationsordners des Adobe Campaigns gespeichert.
 
-Die passende URL lautet: **http://server/res/instance** , wobei **instance** der Name der Verfolgungsinstanz ist.
+Die passende URL lautet: **http://server/res/instance**, wobei **instance** der Name der Verfolgungsinstanz ist.
 
-Sie können einen anderen Ordner angeben, indem Sie der Datei &quot; **conf-`<instance>`.xml** &quot;einen Knoten hinzufügen, um die Datenspeicherung auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
+Sie können einen anderen Ordner angeben, indem Sie der Datei **conf-`<instance>`.xml** einen Knoten hinzufügen, um die Datenspeicherung auf dem Server zu konfigurieren. Dies bedeutet, dass die folgenden Zeilen hinzugefügt werden:
 
 ```
 <serverconf>
@@ -534,13 +534,13 @@ In diesem Fall sollte die neue URL für die öffentliche Ressourcen im oberen Be
 
 Sie können mehrere Workflow-Server (wfserver) konfigurieren und auf zwei oder mehr Computern verteilen. Wenn Sie diesen Architekturtyp auswählen, konfigurieren Sie den Verbindungsmodus der Lastenausgleicher entsprechend dem Adobe Campaign-Zugriff.
 
-Wählen Sie für den Zugriff über das Internet den **Lastenausgleichsmodus** aus, um die Verbindungszeiten zu begrenzen.
+Für den Zugriff über das Internet wählen Sie den Modus **Lastenausgleich** aus, um die Verbindungszeiten zu begrenzen.
 
-Wählen Sie beim Zugriff über die Adobe Campaign-Konsole den **Hash** - oder **sticky** -IP-Modus. Auf diese Weise können Sie die Verbindung zwischen dem Rich-Client und dem Server aufrechterhalten und beispielsweise verhindern, dass eine Benutzersitzung während eines Import- oder Exportvorgangs unterbrochen wird.
+Wählen Sie beim Zugriff über die Adobe Campaign-Konsole den Modus **hash** oder **sticky ip**. Auf diese Weise können Sie die Verbindung zwischen dem Rich-Client und dem Server aufrechterhalten und beispielsweise verhindern, dass eine Benutzersitzung während eines Import- oder Exportvorgangs unterbrochen wird.
 
 Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf einem bestimmten Computer erzwingen. Dazu müssen Sie eine oder mehrere Affinitäten für den betreffenden Workflow oder die betreffende Aktivität definieren.
 
-1. Erstellen Sie die Affinitäten des Workflows oder der Aktivität, indem Sie sie in das Feld &quot; **[!UICONTROL Affinität]** &quot;eingeben.
+1. Erstellen Sie die Affinitäten des Workflows oder der Aktivität, indem Sie sie in das Feld **[!UICONTROL Affinität]** eingeben.
 
    Sie können die Affinitäten frei wählen. Achten Sie jedoch darauf, keine Leerzeichen oder Satzzeichen zu verwenden. Wenn Sie verschiedene Server verwenden, geben Sie unterschiedliche Namen an.
 
@@ -550,8 +550,8 @@ Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf e
 
    Die Dropdown-Liste enthält zuvor verwendete Affinitäten. Es wird mit der Zeit mit den verschiedenen eingegebenen Werten abgeschlossen.
 
-1. Öffnen Sie die **Datei &quot;nl6/conf/config-`<instance>.xml`** &quot;.
-1. Ändern Sie die Zeile, die mit dem **[!UICONTROL wfserver]** -Modul übereinstimmt, wie folgt:
+1. Öffnen Sie die Datei **nl6/conf/config-`<instance>.xml`**.
+1. Ändern Sie die Zeile, die mit dem Modul **[!UICONTROL wfserver]** übereinstimmt, wie folgt:
 
    ```
    <wfserver autoStart="true" affinity="XXX,"/>
@@ -571,15 +571,15 @@ Sie können die Ausführung eines Workflows oder einer Workflow-Aktivität auf e
    <wfserver autoStart="true" affinity="XXX"/>
    ```
 
-## Automatischer Prozessneustart {#automatic-process-restart}
+## Automatischer Prozess-Neustart {#automatic-process-restart}
 
 Standardmäßig werden die verschiedenen Adobe Campaign-Prozesse jeden Tag um 6 Uhr (Serverzeit) automatisch neu gestartet.
 
 Sie können diese Konfiguration jedoch ändern.
 
-Gehen Sie dazu zur Datei &quot; **serverConf.xml** &quot;im **conf** -Repository Ihrer Installation. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Gehen Sie dazu zur Datei **serverConf.xml**, die sich im **conf**-Repository Ihrer Installation befindet. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-Jeder in dieser Datei konfigurierte Prozess verfügt über ein **processRestartTime** -Attribut. Sie können den Wert dieses Attributs ändern, um die Startzeit jedes Prozesses entsprechend Ihren Anforderungen anzupassen.
+Jeder in dieser Datei konfigurierte Prozess hat das Attribut **processRestartTime**. Sie können den Wert dieses Attributs ändern, um die Startzeit jedes Prozesses entsprechend Ihren Anforderungen anzupassen.
 
 >[!IMPORTANT]
 >
@@ -589,13 +589,13 @@ Jeder in dieser Datei konfigurierte Prozess verfügt über ein **processRestartT
 
 Mit dem neuen Attribut **uploadWhiteList** können Sie die Dateitypen einschränken, die auf dem Adobe Campaign-Server hochgeladen werden können.
 
-Dieses Attribut ist im **dataStore** -Element der Datei &quot; **serverConf.xml** &quot;verfügbar. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Dieses Attribut ist im Element **dataStore** der Datei **serverConf.xml** verfügbar. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-Der Standardwert dieses Attributs ist **.+** und ermöglicht das Hochladen beliebiger Dateitypen.
+Der Standardwert dieses Attributs ist **.+** und es ermöglicht Ihnen, jeden Dateityp hochzuladen.
 
 Um die möglichen Formate einzuschränken, müssen Sie den Attributwert durch einen gültigen regulären Java-Ausdruck ersetzen. Sie können mehrere Werte eingeben, indem Sie sie durch ein Komma trennen.
 
-Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen von PNG- und JPG-Formaten auf den Server. Andere Formate werden nicht akzeptiert.
+Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht Ihnen das Hochladen von PNG- und JPG-Formaten auf dem Server. Andere Formate werden nicht akzeptiert.
 
 >[!IMPORTANT]
 >
@@ -603,15 +603,18 @@ Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen
 
 ## Proxy-Verbindungskonfiguration {#proxy-connection-configuration}
 
-Wenn Sie den Dateiserver über einen Proxy (z. B. mit einer Dateiübertragungs-Workflow-Aktivität) mit der Kampagne nach außen verbinden müssen, müssen Sie den Bereich &quot;proxyConfig&quot;des &quot;serverConf&quot;über einen Befehl konfigurieren. Die folgenden Proxyverbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Alle in der Datei **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md)aufgeführt.
+Sie können den Dateiserver über einen Proxy mit einem externen Kampagne verbinden, indem Sie beispielsweise eine Workflow-Aktivität **Dateiübertragung** verwenden. Um dies zu erreichen, müssen Sie den Abschnitt **proxyConfig** der Datei **serverConf.xml** mithilfe eines bestimmten Befehls konfigurieren. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
->[!NOTE]
+Die folgenden Proxyverbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Bitte beachten Sie, dass die HTTP- und HTTPS-Protokollparameter ab Version 20.2 der Kampagne **nicht mehr verfügbar sind**. Diese Parameter werden weiter unten erwähnt, da sie in früheren Builds - einschließlich 9032 - weiterhin verfügbar sind.
+
+>[!CAUTION]
 >
->Ab 20.2 sind die HTTP- und HTTPS-Protokollparameter nicht mehr verfügbar. In den folgenden Informationen werden diese Parameter immer noch erwähnt, da sie für frühere Builds einschließlich 9032 weiterhin verfügbar sind.
+>Nur der einfache Authentifizierungsmodus wird unterstützt. Die NTLM-Authentifizierung wird nicht unterstützt.
 >
 >SOCKS-Proxys werden nicht unterstützt.
 
-Verwenden Sie den folgenden Befehl:
+
+Sie können den folgenden Befehl verwenden:
 
 ```
 nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'http’]
@@ -619,7 +622,7 @@ nlserver config -setproxy:[protocol]/[serverIP]:[port]/[login][:‘https’|'htt
 
 Protokollparameter können &quot;http&quot;, &quot;https&quot;oder &quot;ftp&quot;lauten.
 
-Wenn Sie FTP für denselben Anschluss wie HTTP/HTTPS-Traffic festlegen, können Sie Folgendes verwenden:
+Wenn Sie FTP für denselben Port wie HTTP/HTTPS-Traffic festlegen, können Sie Folgendes verwenden:
 
 ```
 nlserver config -setproxy:http/198.51.100.0:8080/user
