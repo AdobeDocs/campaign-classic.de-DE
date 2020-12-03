@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Der Navigationsblock der Rubrik **[!UICONTROL Kampagnen]** bietet je nach den in
 * **Kampagnenkalender**: Kalender der Pläne, Marketing-Programme, Sendungen und Kampagnen . Siehe [Kampagnenkalender](#campaign-calendar).
 * **Kampagnen**: Zugriff auf alle in Marketingprogrammen enthaltene Kampagnen;
 * **Sendungen**: Zugriff auf in Kampagnen enthaltene Sendungen;
-* **Webanwendungen**: Zugriff auf Webanwendungen (Formulare, Umfragen etc.).
+* **Webanwendungen**: Zugriff auf Webanwendungen (Formulare, Umfragen usw.).
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe-Campaign-Konsol
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Validierungen (beispielsweise einer Zielgruppe oder des Inhalts eines Versands) können über die Webschnittstelle erfolgen.
+Genehmigungen (z. B. von einer Zielgruppe oder einem Versand) können über den Web-Zugriff erfolgen.
 
 ![](assets/campaign_web_interface_validation.png)
 
