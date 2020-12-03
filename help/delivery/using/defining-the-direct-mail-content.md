@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -33,7 +33,7 @@ Bei einem Briefversand wird der Extraktionsinhalt über den Link **[!UICONTROL E
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Sie haben die Möglichkeit, eine personalisierte URL in die Extraktionsdatei einzufügen. Lesen Sie diesbezüglich das [Webfunktionen](../../web/using/publishing-a-web-form.md)-Handbuch.
+Sie können eine personalisierte URL in die Extraktion einfügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/publishing-a-web-form.md).
 
 >[!NOTE]
 >
