@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Adobe Campaign basiert auf einer serviceorientierten Architektur (SOA) und umfas
 
 >[!CAUTION]
 >
->Sofern nicht ausdrücklich anders angegeben, sind die Installation, Updates und Wartung auf allen Komponenten einer Adobe Campaign-Plattform Sache des bzw. der Computeradministratoren, der bzw. die diese hostet. Dies umfasst die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Kampagne- [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
+>Sofern nicht ausdrücklich anders angegeben, sind die Installation, Updates und Wartung auf allen Komponenten einer Adobe Campaign-Plattform Sache des bzw. der Computeradministratoren, der bzw. die diese hostet. Dies umfasst die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Kampagne [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
 
 ## Präsentationsebene {#presentation-layer}
 
@@ -59,7 +59,7 @@ Adobe Campaign setzt auf eine Reihe serverseitiger Prozesse, die zusammenarbeite
 
 Die wichtigsten Prozesse sind:
 
-**Anwendungsserver** (nlserver web)
+**Anwendungsserver**  (nlserver-Web)
 
 Dieser Vorgang stellt die gesamte Bandbreite der Adobe Campaign-Funktionalität über Web-Services-APIs (SOAP - HTTP + XML) zur Verfügung. Darüber hinaus kann es dynamisch die Webseiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Webformulare usw.). Dazu gehört ein Apache Tomcat JSP-Server. Dies ist der Prozess, mit dem die Konsole verbunden wird.
 
@@ -93,35 +93,35 @@ Auf diese Weise können Sie automatisch E-Mails von Postfächern abrufen, die f�
 
 Alle diese Vorgänge sind vollautomatisch und vorkonfiguriert.
 
-**Status** des SMS-Versands (nlserver sms)
+**Status**  des SMS-Versands (nlserver sms)
 
 Dieser Prozess fragt den SMS-Router ab, um den Statusstatus zu erfassen und die Datenbank zu aktualisieren.
 
-**Schreiben von Protokollmeldungen** (nlserver-syslogd)
+**Schreiben von Protokollmeldungen**  (nlserver-syslogd)
 
 Dieser technische Prozess erfasst Protokollmeldungen und -spuren, die von den anderen Prozessen erzeugt wurden, und schreibt sie auf die Festplatte. Dadurch stehen im Falle von Problemen reichlich Informationen zur Diagnose zur Verfügung.
 
-**Schreiben von Trackinglogs** (nlserver trackinglogd)
+**Schreiben von Trackinglogs**  (nlserver trackinglogd)
 
 Dieser Vorgang speichert die Trackinglogs, die durch die Weiterleitung generiert wurden.
 
-**Schreiben von Inbound-Ereignissen** (nlserver-Interaktion)
+**Schreiben von Inbound-Ereignissen**  (nlserver-Interaktion)
 
 Dieser Vorgang gewährleistet die Aufzeichnung von eingehenden Ereignissen auf der Festplatte im Rahmen der Interaktion.
 
-**Überwachungsmodule** (nlserver watchdog)
+**Überwachungsmodule**  (nlserver watchdog)
 
 Dieser technische Prozess dient als ein primäres Verfahren, das die anderen hervorbringt. Außerdem überwacht es sie und startet sie bei Vorfällen automatisch neu, sodass maximale Systemlaufzeit erhalten bleibt.
 
-**Statistischer Server** (nlserver stat)
+**Statistischer Server**  (nlserver stat)
 
 Dieser Prozess unterhält Statistiken über die Anzahl der Verbindungen, die Nachrichten, die für jeden Mail-Server gesendet werden, an den Nachrichten gesendet werden, sowie deren Einschränkungen (die höchste Anzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde/ und Verbindung). Sie können auch mehrere Instanzen oder Computer zusammenführen, wenn diese dieselben öffentlichen IP-Adressen haben.
 
 >[!NOTE]
 >
->Die vollständige Liste der Adobe Campaign Module ist in [diesem Dokument](../../production/using/operating-principle.md)verfügbar.
+>Die vollständige Liste der Adobe Campaign-Module ist in [diesem Dokument](../../production/using/operating-principle.md) verfügbar.
 
-## Persistenzebene {#persistence-layer}
+## Persistenzschicht {#persistence-layer}
 
 Die Datenbank wird als Persistenzebene verwendet und enthält fast alle von Adobe Campaign verwalteten Informationen. Dazu gehören funktionale Daten (Profile, Abonnements, Inhalte usw.), technische Daten (Versand, Aufträge und Protokolle, Trackinglogs usw.) und Arbeitsdaten (Einkäufe, Interessenten).
 
