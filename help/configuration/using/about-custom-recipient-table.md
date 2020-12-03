@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 2%
@@ -23,9 +23,9 @@ Standardmäßig wird von Adobe Campaign eine Standardtabelle für Empfänger Ang
 
 Wenn diese Erweiterungsmethode eine gute Flexibilität beim Erweitern einer Tabelle Angebot, lässt sie keine Verringerung der Anzahl der Felder oder Links darin zu. Die Verwendung einer nicht standardmäßigen Tabelle oder einer &quot;externen Empfänger-Tabelle&quot;ermöglicht eine größere Flexibilität, erfordert jedoch bei der Implementierung bestimmte Vorsichtsmaßnahmen.
 
-## Abstände {#precisions}
+## Präzisionen {#precisions}
 
-Mit dieser Funktion kann Adobe Campaign Daten aus einer externen Datenbank verarbeiten: Diese Daten werden als eine Reihe von Profilen für Versand verwendet. Die Implementierung dieses Prozesses umfasst mehrere Präzisionen, die je nach Bedarf des Kunden relevant sein können. Beispiel:
+Mit dieser Funktion kann Adobe Campaign Daten aus einer externen Datenbank verarbeiten: Diese Daten werden als eine Reihe von Profilen für Versand verwendet. Die Implementierung dieses Prozesses umfasst mehrere Präzisionen, die je nach Bedarf des Kunden relevant sein können. Wie zum Beispiel:
 
 * Kein Updatestream zur und von der Adobe Campaign-Datenbank: Daten aus dieser Tabelle können direkt über die Datenbank-Engine aktualisiert werden, die sie hostet.
 * Es wurden keine Änderungen an den Prozessen vorgenommen, die auf der vorhandenen Datenbank ausgeführt werden.
@@ -47,16 +47,16 @@ Die Verwendung einer Tabelle mit einem externen Empfänger unterliegt folgenden 
 
    Wir empfehlen:
 
-   * Die **[!UICONTROL nms:BroadLogRcp]** - und **[!UICONTROL nms:TrackingLogRcp]** -Schema werden den vordefinierten **[!UICONTROL nms:Recipientschema]** zugeordnet. Diese beiden Protokolltabellen sollten nicht mit einer zusätzlichen Tabelle mit benutzerdefiniertem Empfänger verknüpft werden.
-   * Definieren dedizierter benutzerdefinierter Broadlog- und Trackinglog-Schema für jedes neue benutzerdefinierte Empfänger-Schema. Dies kann beim Einrichten des Zielgruppen-Mappings automatisch erfolgen (siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md)).
+   * Deaktivieren Sie die Schema **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** in das vordefinierte **[!UICONTROL nms:Recipientschema]**. Diese beiden Protokolltabellen sollten nicht mit einer zusätzlichen Tabelle mit benutzerdefiniertem Empfänger verknüpft werden.
+   * Definieren dedizierter benutzerdefinierter Broadlog- und Trackinglog-Schema für jedes neue benutzerdefinierte Empfänger-Schema. Dies kann beim Einrichten des Zielgruppen-Mappings automatisch erfolgen, siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md).
 
-* Sie können nicht die standardmäßigen **[!UICONTROL Services und Abonnement]** des Produkts verwenden.
+* Sie können nicht den Standard **[!UICONTROL Dienste und Abonnement]** verwenden, der im Produkt angeboten wird.
 
-   Dies bedeutet, dass der in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschriebene Gesamtbetrieb nicht anwendbar ist.
+   Das bedeutet, dass der unter [dieser Abschnitt](../../delivery/using/managing-subscriptions.md) beschriebene Gesamtvorgang nicht anwendbar ist.
 
-* Die Verknüpfung mit der **[!UICONTROL Besucher]** -Tabelle funktioniert nicht.
+* Die Verknüpfung mit der Tabelle **[!UICONTROL Besucher]** funktioniert nicht.
 
-   Um das **[!UICONTROL Social-Marketing]** -Modul zu verwenden, müssen Sie daher den Schritt &quot;Datenspeicherung&quot;so konfigurieren, dass auf die richtige Tabelle verwiesen wird.
+   Um das Modul **[!UICONTROL Social Marketing]** zu verwenden, müssen Sie den Schritt &quot;Datenspeicherung&quot;so konfigurieren, dass auf die richtige Tabelle verwiesen wird.
 
    Bei Verwendung der Verweisfunktionen muss die Standardvorlage für die Erstübermittlung von Nachrichten entsprechend angepasst werden.
 
@@ -72,9 +72,9 @@ Es wird außerdem empfohlen, die Standardwerte zu überprüfen, die in den versc
 
 Beispiel:
 
-* Bestimmte Standardberichte, insbesondere die von **Interaction** und den **Mobilanwendungen** angebotenen, müssen überarbeitet werden. Weitere Informationen finden Sie im Abschnitt [Verwalten von Berichten](../../configuration/using/managing-reports.md) .
-* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten beziehen sich auf die Standardtabelle Empfänger (**[!UICONTROL nms:Empfänger]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine Tabelle mit externen Empfängern verwendet werden. Siehe [Verwalten von Workflows](../../configuration/using/managing-workflows.md) .
-* Der Standard- **[!UICONTROL Abmeldung Link]** Personalisierungsblock muss angepasst werden.
+* Bestimmte Standardberichte, insbesondere die von **Interaktion** und **Mobilanwendungen** angebotenen, müssen neu entwickelt werden. Siehe Abschnitt [Verwalten von Berichten](../../configuration/using/managing-reports.md).
+* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten verweisen auf die Standardtabelle für Empfänger (**[!UICONTROL nms:Empfänger]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine Tabelle mit externen Empfängern verwendet werden. Siehe Abschnitt [Verwalten von Workflows](../../configuration/using/managing-workflows.md).
+* Der standardmäßige Personalisierungsblock **[!UICONTROL Abmeldung]** muss angepasst werden.
 * Das Zielgruppen-Mapping der Standard-Versandvorlagen muss geändert werden.
 * V4-Formulare sind nicht für die Verwendung mit externen Empfängern kompatibel: müssen Sie Webanwendungen verwenden.
 
