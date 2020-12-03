@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '1374'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 100%
 
 ## Erstellung einer lokalen Kampagne (Standardformular) {#creating-a-local-campaign--by-form-}
 
-Der Webschnittstellentyp **Standardformular** impliziert die Nutzung einer **Webanwendung**. Diese kann entsprechend ihrer Konfiguration unterschiedliche anzupassende Elemente enthalten. Beispielsweise besteht die Möglichkeit, der Lokalstelle Links zur Evaluierung von Zielgruppe, Budget und Inhalt über dedizierte APIs zur Verfügung zu stellen.
+Die **Nach Formular**-Weboberfläche umfasst die Verwendung einer **Webanwendung**. Je nach Konfiguration kann diese Webanwendung jeden Typ definierter personalisierter Elemente enthalten. Sie können beispielsweise Links zur Evaluierung der Zielgruppe, des Budgets, des Inhalts usw. über dedizierte APIs vorschlagen.
 
 >[!NOTE]
 >
 >Die diversen APIs werden in einem separaten Dokument beschrieben, auf das je nach Lizenzvertrag Zugriff besteht, siehe [APIs](../../configuration/using/about-web-services.md).
 >
->Die in diesem Beispiel verwendete Webanwendung ist nicht standardmäßig in Adobe Campaign vorhanden. Um in einer Kampagne ein Formular benutzen zu können, muss vorab die entsprechende Webanwendung erstellt werden.
+>Die in diesem Beispiel verwendete Webanwendung ist keine Web-App, die standardmäßig mit Adobe Campaign geliefert wird. Um ein Formular in einer Kampagne zu verwenden, müssen Sie die dedizierte Webanwendung erstellen.
 
-Klicken Sie im **[!UICONTROL Bearbeiten]**-Tab der Kampagnenvorlage auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**. Klicken Sie dann im Tab **[!UICONTROL Dezentrales Marketing]** auf die Lupe neben dem Feld , um auf die Details der Webanwendung zuzugreifen.
+Klicken Sie beim Erstellen der Kampagnenvorlage auf das Symbol **[!UICONTROL Zoom]** in der Option **[!UICONTROL Webschnittstelle]** unter **[!UICONTROL Erweiterte Kampagne...]**-Link, um auf Details der Webanwendung zuzugreifen.
 
 ![](assets/mkg_dist_local_op_form1.png)
 
@@ -106,7 +106,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    ![](assets/mkg_dist_use_case_target_valid8.png)
 
-1. Über den in der Benachrichtigung enthaltenen Link **[!UICONTROL Kontaktliste aufrufen und Zielgruppe validieren]** hat die Lokalstelle per Webschnittstelle Zugriff auf die Liste ihrer für die Kampagne ausgewählten Kontakte.
+1. Durch Klicken auf den Link **[!UICONTROL Zugriff auf Ihre Kontaktseite und Genehmigung von Targeting]** erhält die Lokalstelle Zugriff auf die Liste der für die Kampagne ausgewählten Clients (über den Webbrowser).
 
    ![](assets/mkg_dist_use_case_target_valid9.png)
 
