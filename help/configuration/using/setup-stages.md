@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 2%
@@ -27,10 +27,10 @@ Es gibt zwei Arten von Tags:
 Wenden Sie die folgenden Schritte an, um diese Tags einzurichten:
 
 1. Identifizieren Sie die Seiten, die Sie verfolgen möchten, und bestimmen Sie deren Typ (WEB oder TRANSACTION).
-1. Bestimmen Sie, welche zusätzlichen Informationen Sie erfassen möchten, und erweitern Sie das **nms:webTrackingLog** -Schema mit der Beschreibung dieser Informationen. In diesem Schema können die Transaktionsbeträge und die Anzahl der Elemente pro Transaktion standardmäßig gespeichert werden.
+1. Bestimmen Sie, welche zusätzlichen Informationen Sie erfassen möchten, und erweitern Sie das **nms:webTrackingLog**-Schema mit der Beschreibung dieser Informationen. In diesem Schema können die Transaktionsbeträge und die Anzahl der Elemente pro Transaktion standardmäßig gespeichert werden.
 1. Erstellen der Web-Trackingtag. Es gibt zwei Möglichkeiten, dies zu tun:
 
-   * Fügen Sie die entsprechenden URLs in Ihre Adobe Campaign-Plattform ein, generieren und extrahieren Sie dann die zugehörigen Web-Trackingtag (aus dem Knoten **[!UICONTROL Kampagne-Ausführung > Resources > Webtrackingtags]** der Client-Konsole).
+   * Fügen Sie die URLs, die diesen Seiten entsprechen, in Ihre Adobe Campaign-Plattform ein, erstellen und extrahieren Sie dann die zugehörigen Web-Trackingtag (aus dem Knoten **[!UICONTROL Kampagne-Ausführung>Resources>Webtrackingtags]** der Client-Konsole).
    * Erstellen Sie die Web-Trackingtag selbst im &quot;on-the-fly&quot;-Erstellungsmodus: die URLs, die diesen Seiten entsprechen, werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
 
 1. hinzufügen Sie diese Tags statisch oder dynamisch auf den Seiten, die Sie verfolgen möchten.
