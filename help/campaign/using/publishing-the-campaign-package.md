@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -31,7 +31,7 @@ Um den Validierungsprozess zu starten, klicken Sie auf die Schaltfläche **[!UIC
 
 ![](assets/s_advuser_mkg_dist_valid_process.png)
 
-Der validierungsverantwortliche Benutzer erhält daraufhin eine Benachrichtigung, um die Verfügbarkeit des Kampagnenkits zu bestätigen. Über einen in der Nachricht enthaltenen Link kann er per Webzugriff die Validierung akzeptieren oder ablehnen.
+Anschließend wird eine Benachrichtigung an den Prüfer gesendet, um die Verfügbarkeit dieses Kampagne-Pakets zu bestätigen. Die Nachricht enthält einen Link, über den die Genehmigung über den Web-Zugriff akzeptiert oder abgelehnt werden kann.
 
 ![](assets/s_advuser_mkg_dist_valid_process1.png)
 
