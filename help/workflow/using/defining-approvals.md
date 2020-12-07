@@ -6,11 +6,11 @@ description: Validierungen bieten Benutzern die Gelegenheit, an bestimmten Etapp
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae342f41b9b74159607b313e1c29549b17488db5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Validierungsverantwortliche Benutzergruppen sollten wie Rollen oder Funktionen k
 
 ## Ablauffristen {#expirations}
 
-Expirations sind spezifische Transitionen, die in verschiedenen Aktivitäten, insbesondere in Genehmigungen, verwendet werden. Sie können einen Ablauf verwenden, um eine Aktion nach einer bestimmten Zeit ohne Antwort auszulösen. Sie kann auch zum Beispiel verwendet werden, um den Arbeitsablauf zu verfolgen und einer anderen Gruppe eine Genehmigung zuzuweisen.
+Ein Ablauf ist eine spezifische Transition, die für verschiedene Aktivitätstypen (insbesondere Genehmigungen) verwendet wird. Über einen Ablauf können Sie bestimmen, dass nach dem Verstreichen einer bestimmen Zeit, in der keine Antwort eingeht, eine Aktion ausgelöst wird. So können sie mit seiner Hilfe beispielsweise auch den Workflow durchführen oder einer anderen Gruppe eine Genehmigung zuweisen.
 
 Ablauffristen werden im zweiten Tab der Eigenschaften von Validierungsaktivitäten definiert. Es können verschiedene Ablauffristen konfiguriert werden.
 
