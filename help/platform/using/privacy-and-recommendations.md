@@ -6,11 +6,11 @@ description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2043'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Bei der Verwaltung des Datenschutzes ist es wichtig zu definieren, welche Daten 
 * **Personenbezogene Daten** sind Informationen, die eine lebende Person direkt oder indirekt identifizieren können.
 * **Vertrauliche personenbezogene Daten** sind Informationen zu Rasse, politischen Ansichten, religiösen Überzeugungen, kriminellem Hintergrund, genetischen Informationen, Gesundheitsdaten, sexuellen Vorlieben, biometrischen Informationen sowie zur Gewerkschaftsmitgliedschaft.
 
-Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Zielgruppen von einem System auf ein anderes übertragen werden können, wie z. B. mit [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager oder People Core Service](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) oder mit anderen Lösungen über [CRM-Connectoren](../../platform/using/crm-connectors.md), müssen Sie dem Schutz personenbezogener Daten besondere Aufmerksamkeit widmen.
+Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Audiences von einem System auf ein anderes übertragen werden können, wie z. B. mit [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager oder People Coreservice](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) oder mit anderen Lösungen über [CRM-Connectoren](../../platform/using/crm-connectors.md), müssen Sie dem Schutz personenbezogener Daten besondere Aufmerksamkeit widmen.
 
 Die [wichtigsten Verordnungen](#privacy-regulations) beziehen sich auf die verschiedenen Entitäten, die Daten wie folgt verwalten:
 * Ein **Datenverantwortlicher** ist die Autorität, die die Mittel und den Zweck der Erfassung, Verwendung und Weitergabe personenbezogener Daten festlegt.
@@ -87,31 +87,31 @@ Die [wichtigsten Verordnungen](#privacy-regulations) beziehen sich auf die versc
 
 Als Unternehmen, das personenbezogene Daten erfasst und weitergibt, sind Sie daher der Datenverantwortliche, Ihre Kunden sind die betroffenen Personen und Adobe Campaign fungiert als Auftragsverarbeiter, wenn wir deren personenbezogenen Daten gemäß Ihren Anweisungen verarbeiten. Beachten Sie, dass es in Ihrer Verantwortung als Datenverantwortlicher liegt, die Beziehung zu den betroffenen Personen zu verwalten, z. B. bei der Verwaltung von [Datenschutzanfragen](#privacy-requests).
 
-### Verwendungsfallszenario {#use-case-scenario}
+### Beispiel-Anwendungsfall {#use-case-scenario}
 
-Um zu veranschaulichen, wie die verschiedenen Personen interagieren, hier ein Beispiel für ein GDPR-Kundenerlebnis auf hoher Ebene.
+Hier ein allgemein gehaltenes Beispiel eines DSGVO-Kundenerlebnisses, das veranschaulicht, wie sich die Interaktionen zwischen den Beteiligten gestalten.
 
-In diesem Beispiel ist eine Airline-Firma der Adobe Campaign-Kunde. Diese Firma ist der **Data Controller** und alle Clients der Airline-Firma sind **Datensubjekte**. Laura ist in diesem Fall Kunde der Firma der Fluggesellschaft.
+Der Kunde von Adobe Campaign ist in diesem Beispiel eine Fluggesellschaft. Diese ist der **Datenverantwortliche**, alle ihre Kunden sind **betroffene Personen**. Laura ist in diesem Fall eine Kundin der Fluggesellschaft.
 
 Die Personen in unserem Beispiel haben folgende Rollen:
 
-* **Laura** ist das **Datensubjekt**. Sie ist der Empfänger, der Nachrichten von der Airline-Firma erhält. Laura mag eine Vielfliegerin sein, kann aber irgendwann entscheiden, dass sie keine personalisierten Werbe- oder Marketingbotschaften von der Firma der Fluggesellschaft will. Sie wird die Firma der Fluggesellschaft bitten, ihre Vielfliegernummer zu löschen (je nach Vorgang).
+* **Laura** ist die **betroffene Person**. Sie ist der Empfänger, der Nachrichten von der Fluggesellschaft erhält. Laura ist zwar eine Vielfliegerin, doch womöglich möchte sie irgendwann keine personalisierte Werbung oder Marketing-Kommunikation mehr von der Fluggesellschaft erhalten. Dann wird sie bei der Fluggesellschaft eine Anfrage zur Löschung ihrer Vielfliegernummer einreichen, dies auf Grundlage der dazu vorgesehenen Verfahren.
 
-* **Anne** ist der **Datenkontrolleur** an der Firma der Fluggesellschaft. Sie erhält Lauras Anfrage, ruft brauchbare IDs ab, die zur Identifizierung des Datenbetreibers angefordert werden, und sendet die Anfrage in Adobe Campaign.
+* **Anne** ist die **Datenverantwortliche** bei der Fluggesellschaft. Sie erhält Lauras Anfrage, ruft die erforderlichen Kennungen ab, um die betroffene Person zu identifizieren, und leitet die Anfrage in Adobe Campaign weiter.
 
-* **Adobe Campaign** ist der **Datenprozessor**.
+* **Adobe Campaign** ist der **Auftragsverarbeiter**.
 
 ![](assets/privacy-gdpr-flow.png)
 
-Dies ist das übliche Verfahren für ein derartiges Szenario:
+Dies ist der übliche Fluss für ein derartiges Szenario:
 
-1. The **Data Subject** (Laura) sends a GDPR request to the **Data Controller**, via email, customer care or a web portal.
+1. Die **betroffene Person** (Laura) übermittelt eine DSGVO-Anfrage an die **Datenverantwortliche** per E-Mail, über die Kundenunterstützung oder über ein Webportal.
 
-1. The **Data Controller** (Anne) pushes the GDPR request to Campaign via the interface or using an API.
+1. Die **Datenverantwortliche** (Anne) sendet die DSGVO-Anfrage über die Benutzerschnittstelle oder eine API an Campaign.
 
-1. Once the **Data Processor** (Adobe Campaign) receives the information, it takes action on the GDPR request and sends a response or acknowledgement to the **Data Controller** (Anne).
+1. Nachdem der **Auftragsverarbeiter** (Adobe Campaign) die Informationen erhalten hat, wird er in Bezug auf die DSGVO-Anfrage aktiv und sendet eine Antwort oder eine Bestätigung an die **Datenverantwortliche** (Anne).
 
-1. The **Data Controller** (Anne) then reviews the information and sends it back to the **Data Subject** (Laura).
+1. Die **Datenverantwortliche** (Anne) prüft die Informationen und sendet sie an die **betroffene Person** (Laura) zurück.
 
 ## Datenakquise {#data-acquisition}
 
@@ -151,9 +151,9 @@ Adobe Campaign bietet zusätzliche Funktionen, mit denen Sie sich als Datenveran
 
 * Das **Recht auf Vergessenwerden** (Löschanfrage) berechtigt die betroffene Person dazu, vom Datenverantwortlichen die Löschung ihrer personenbezogenen Daten zu verlangen.
 
-The **Access** and **Delete** requests are presented in [this section](../../platform/using/privacy-management.md#right-access-forgotten).
+Näheres zu Anfragen zum **Zugriff** und zur **Löschung** finden Sie in [diesem Abschnitt](../../platform/using/privacy-management.md#right-access-forgotten).
 
-The implementation steps to create these requests are detailed in [this section](../../platform/using/privacy-requests.md).
+Die Implementierungsschritte zum Erstellen dieser Anfragen werden in [diesem Abschnitt](../../platform/using/privacy-requests.md) beschrieben.
 
 ## Tracking-Funktionen {#tracking-capabilities}
 
