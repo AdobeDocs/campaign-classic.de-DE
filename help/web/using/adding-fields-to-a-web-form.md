@@ -392,9 +392,9 @@ Wenn der Benutzer eine der Seiten des Formulars validiert, können Sie einen bes
 
 Dieses Feld ist nicht sichtbar für den Benutzer, kann aber für die Anreicherung der Daten im Benutzerprofil verwendet werden.
 
-Fügen Sie dazu eine **Konstante** auf der Seite ein und geben Sie den Wert und die Position der Datenspeicherung an.
+Fügen Sie dazu eine **Konstante** auf der Seite ein und geben Sie den Wert und den Speicherort der Datenspeicherung an.
 
-Im folgenden Beispiel wird das Feld &quot; **Herkunft** &quot;des Empfänger-Profils automatisch ausgefüllt, sobald ein Benutzer diese Seite genehmigt. Die Konstante wird nicht auf der Seite angezeigt.
+Im folgenden Beispiel wird das Feld **Herkunft** des Empfänger-Profils automatisch ausgefüllt, sobald ein Benutzer diese Seite genehmigt. Die Konstante wird nicht auf der Seite angezeigt.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
