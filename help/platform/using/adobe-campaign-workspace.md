@@ -396,4 +396,4 @@ In diesem Video wird der Arbeitsbereich für Campaign Classic vorgestellt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
