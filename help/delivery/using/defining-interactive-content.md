@@ -209,4 +209,4 @@ Im folgenden Video wird erläutert, wie Sie AMP in Adobe Campaign Classic aktivi
 
 >[!VIDEO](https://video.tv.adobe.com/v/29940?quality=12&learn=on)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
