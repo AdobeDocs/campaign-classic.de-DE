@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 90%
+ht-degree: 94%
 
 ---
 
@@ -40,4 +40,4 @@ In diesem Video wird erläutert, wie Sie Profile in Adobe Campaign gelegentlich 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
