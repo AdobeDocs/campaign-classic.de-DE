@@ -15,7 +15,7 @@ ht-degree: 93%
 ---
 
 
-# Get started with web forms{#about-web-forms}
+# Erste Schritte mit Webformularen{#about-web-forms}
 
 Adobe Campaign verfügt über ein grafisches Modul zur Definition und Publikation von Webformularen. Damit können Sie Seiten erstellen, die Eingabe- und Auswahlfelder sowie Daten aus der Datenbank enthalten. Daraus lassen sich wiederum Webseiten zusammenstellen und veröffentlichen, in denen Benutzer Informationen anzeigen oder eingeben können.
 
