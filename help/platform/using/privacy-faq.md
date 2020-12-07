@@ -2,114 +2,114 @@
 solution: Campaign Classic
 product: campaign
 title: Datenschutz und Einverständniserklärung
-description: Weitere Informationen zu Datenschutz und Zustimmung
+description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9e31f69fde38dcdc7f4e6d3ba3fb17911f96ded8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '808'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 
-# Datenschutz FAQ {#privacy-faq}
+# Häufig gestellte Fragen zum Datenschutz {#privacy-faq}
 
-Im Folgenden finden Sie einige der häufig gestellten Fragen zum Datenschutz und zur Zustimmung bei der Verwendung von Adobe Campaign.
+Im Folgenden finden Sie einige der häufig gestellten Fragen zum Datenschutz und zum Einverständnis bei der Verwendung von Adobe Campaign.
 
 ## Schlüsselbegriffe {#key-terms}
 
 **Was sind die Schlüsselbegriffe zum Datenschutz?**
 
-Die unten aufgelisteten Elemente verlinken zu den wichtigsten Begriffen und Begriffen im Zusammenhang mit Datenschutz und Zustimmung in Adobe Campaign:
+Die unten aufgelisteten Elemente verlinken zu den wichtigsten Begriffen und Konzepten im Zusammenhang mit Datenschutz und Einverständniserklärungen in Adobe Campaign:
 
-* [Vorschriften zum Datenschutzmanagement](../../platform/using/privacy-management.md#privacy-management-regulations)
+* [Bestimmungen zur Datenschutzverwaltung](../../platform/using/privacy-management.md#privacy-management-regulations)
 * [Persönliche Daten und Personas](../../platform/using/privacy-and-recommendations.md#personal-data)
 * [Recht auf Zugriff und Recht auf Vergessenwerden](../../platform/using/privacy-management.md#right-access-forgotten)
 * [Einverständnis, Datenbeibehaltung und Benutzerrollen](../../platform/using/privacy-management.md#consent-retention-roles)
 
 ## Einhaltung der Datenschutzbestimmungen {#privacy-regulations-readiness}
 
-**Was schlägt Adobe Campaign vor, die neuesten Datenschutzbestimmungen einzuhalten?**
+**Welche Maßnahmen werden empfohlen, um in Adobe Campaign die neuesten Datenschutzbestimmungen einzuhalten?**
 
-Adobe bietet keine Rechtsberatung. Sie sollten mit Ihrem eigenen Rechtsbeistand zusammenarbeiten, um sicherzustellen, dass diese alle notwendigen Schritte in Richtung GDPR, CCPA, PDPA, LGPD oder anderer relevanter Regulierungsbereitschaft unternehmen.
+Adobe bietet keine Rechtsberatung. Sie sollten mit Ihrer eigenen Rechtsabteilung zusammenarbeiten, um sicherzustellen, dass diese alle notwendigen Schritte zur Einhaltung der DSGVO, CCPA, PDPA, LGPD oder anderer jeweils geltender Bestimmungen unternimmt.
 
-**Vorbereiten für Datenzugriffs- und Löschanforderungen**
+**Vorbereitungen für Datenzugriffs- und Löschanfragen**
 
-* Identifizieren Sie einen Prozess, der auf Anfragen zu Data Subject antwortet, einschließlich der Benennung eines Datenschutzbeauftragten.
+* Arbeiten Sie einen Prozess für den Eingang / die Bearbeitung von Anfragen betroffener Personen aus. Benennen Sie dabei auch einen Datenschutzbeauftragten als Ansprechpartner.
 
 * Überprüfen Sie die in Adobe Campaign gespeicherten Kundendaten und vergeben Sie eindeutige Kennungen (wahrscheinlich ist mehr als eine nötig).
 
-* Bestimmen Sie eine Validierungs-/Authentifizierungsrichtlinie und einen Prozess für die Identitätsbestätigung des Datenbetreibers.
+* Bestimmen Sie eine Richtlinie, nach der die Validierung und Authentifizierung geregelt wird, sowie einen Prozess für die Bestätigung der Identität betroffener Personen.
 
-* Achten Sie darauf, dass die Antwort an Datensubjekte einfach verständlich ist.
+* Achten Sie darauf, dass die Antwort an die betroffene Person einfach verständlich ist.
 
-**Zustimmung erwägen**
+**Einverständnis berücksichtigen**
 
-* Liste und erforderlichenfalls Aktualisierung aller Berührungspunkte für die Datenerfassung für GDPR (z. B. Sprach-, Zustimmungs- und Zustimmungsprotokolle).
+* Führen Sie alle für die DSGVO relevanten Kontaktpunkte der Datenerfassung auf und aktualisieren Sie sie nach Bedarf (d. h. berücksichtigen Sie die Sprache, das Verfahren zur Mitteilung des Einverständnisses und die Einverständnisprotokolle).
 
-* Achten Sie darauf, dass alle Marketing-E-Mails Abmelde-Links enthalten.
+* Achten Sie darauf, dass alle Marketing-E-Mails die Links zum Beenden des Abos enthalten.
 
 * Überdenken Sie die globale Strategie für das E-Mail-Marketing, um landesspezifische Implementierungen festzulegen.
 
-**Daten analysieren**
+**Ihre Daten verstehen**
 
-* Überprüfen Sie alle Datenimportquellen und erfassen Sie Quellen, aus denen Daten in Adobe Campaign fließen, sowie Dokument, welche Felder für Ihre Marketingbemühungen verwendet werden.
+* Verschaffen Sie sich ein Bild aller Datenquellen, aus denen via Import oder Erfassung Daten an Adobe Campaign übermittelt werden, und dokumentieren Sie, welche Felder Sie für Ihre Marketing-Maßnahmen verwenden.
 
-* Entfernen Sie nicht genutzte Datenattribute aus der Adobe-Campaign-Datenbank.
+* Entfernen Sie alle nicht genutzten Datenattribute aus Ihrer Adobe Campaign-Datenbank.
 
 * Verwenden Sie die in Adobe Campaign verfügbaren Daten zu dem Zweck, zu dem sie erfasst wurden, und bieten Sie Ihren Kunden stärker personalisierte Erlebnisse.
 
-* Überarbeiten und aktualisieren Sie Datenzugriffsgenehmigungen, um sicherzustellen, dass Benutzer von Adobe Campaign nur die für ihre Kampagnen benötigten Daten verwenden, aber darüber hinaus auf keine weiteren Daten zugreifen können.
+* Überarbeiten und aktualisieren Sie Datenzugriffsgenehmigungen in einer Weise, die sicherstellt, dass Benutzer von Adobe Campaign nur die für ihre Kampagnen benötigten Daten verwenden können, aber darüber hinaus auf keine weiteren Daten zugreifen können.
 
-* Vergewissern Sie sich, dass jeder Benutzer von Adobe Campaign über die entsprechenden Zugriffsrechte verfügt, um die erforderlichen Aufgaben auszuführen, aber keine anderen Rechte zur Durchführung zusätzlicher Aufgaben hat.
+* Stellen Sie sicher, dass jeder Benutzer von Adobe Campaign über seinem jeweiligen Aufgabenbereich entsprechende Zugriffsrechte verfügt, jedoch über keine darüber hinausgehende.
 
-## Benutzerbindung beibehalten {#preserve-user-engagement}
+## Aufrechterhalten der Interaktion mit Benutzern {#preserve-user-engagement}
 
-**Wie können Datenverantwortliche das Einverständnis ihrer Kunden erlangen, ohne die Benutzerinteraktion zu beeinträchtigen?**
+**Wie können Datenverantwortliche das Einverständnis ihrer Kunden erlangen, ohne die Benutzerinteraktion zu sehr zu beeinträchtigen?**
 
-In den Fällen, in denen die Zustimmung für bestimmte Aktivitäten erforderlich sein wird, muss die Zustimmung des Verbrauchers aktiv sein (d. h. keine Schweigepflicht als Zustimmungs- oder Kontrollkästchen), entbündelt werden und darf nicht davon abhängig gemacht werden, dass die Dienstleistungen angeboten werden.
+In Fällen, in denen Marketing-Aktivitäten das Einverständnis des Verbrauchers bedürfen, muss dieser sein Einverständnis aktiv erklären, d. h., weder stillschweigend oder durch vorab aktivierte Kontrollkästchen, noch im Rahmen einer andere Sachverhalte betreffenden Erklärung. Ferner darf das Einverständnis nicht an das Angebot der Services gebunden sein.
 
-Es kann sogar Fälle geben, in denen bestimmte Zustimmungen aktualisiert werden müssen, damit die Daten in Zukunft weiter verwendet werden können.
+Auch gibt es Fälle, in denen eine weitere Nutzung der Daten erst nach erneuter Erteilung des Einverständnisses der betroffenen Person gestattet ist.
 
-Anstatt diese erweiterten Zustimmungsanforderungen als Risiko für das marktfähige Universum zu betrachten, könnten Marketingfachleute sie als echten Indikator für Markenbindung und -loyalität sowie Kundenzufriedenheit und Vertrauen einsetzen.
+Diese verschärften Anforderungen für das Einholen von Einverständnis sollten Marketer jedoch nicht als Risiko in Bezug auf die Kundenansprache ansehen. Denn tatsächlich können sie sie als Mittel verstehen, das ihnen präzise Erkenntnisse zu Interaktionsumfang und Markentreue sowie zu Kundenzufriedenheit und -vertrauen verschafft.
 
-## Zustimmung verwalten {#manage-consent}
+## Verwalten des Einverständnisses {#manage-consent}
 
-**Wie können Datenkontrolleure die Zustimmung in Adobe Campaign verwalten?**
+**Wie können Datenverantwortliche das Einverständnis in Adobe Campaign verwalten?**
 
-Adobe Campaign bietet bereits Funktionen zur Verwaltung von Einwilligungen auf mehr Ebenen als die meisten Marketingexperten über benutzerdefinierte Datenfelder oder über einen oder mehrere Dienste.
+Adobe Campaign bietet Funktionen zur Einverständnisverwaltung, die bereits mehr Ebenen abdecken, als die meisten Marketing-Experten nutzen, die hierfür auf individuell angepasste Datenfelder oder einen oder mehrere Services zurückgreifen.
 
-Marketingexperten sollten sich mit ihrem Rechtsbeistand beraten lassen, wie sie vorgehen, und dann die bereits in Adobe Campaign integrierten Funktionen nutzen.
+Marketer sollten ihr weiteres Vorgehen in Konsultation mit der Rechtsabteilung bestimmen und für die Umsetzung die bereits in Adobe Campaign integrierten Funktionen verwenden.
 
-Beispielsweise die Ausweitung des Datenmodells in Adobe Campaign auf die Verfolgung nicht nur, wenn sich Personen für eine Teilnahme entschieden haben, sondern auch den Zeitstempel des Opt-in und eine Art von Indikator, der den genauen Umfang der Zustimmung erfasst.
+Ein in diesem Zusammenhang mögliches Szenario wäre etwa, das Datenmodell von Adobe Campaign dahingehend zu erweitern, dass nicht nur die Anmeldung einer bestimmten Person erfasst wird, sondern auch der diesem Opt-in zugehörige Zeitstempel sowie bestimmte Messgrößen, die Aufschluss über den genauen Umfang des Einverständnisses geben.
 
-## Löschen von Daten {#data-deletion}
+## Löschung von Daten {#data-deletion}
 
-**Welche Daten können Datenkontrolleure im Adobe Campaign löschen, wenn ein Datenbetreff eine Kundenanfrage stellt?**
+**Inwieweit lassen sich in Adobe Campaign die Daten von Personen löschen, die eine entsprechende Anfrage einreichen?**
 
-Alle mit dem Datenfach verknüpften Daten werden gelöscht, einschließlich vordefinierter und benutzerdefinierter Tabellen.
+Alle Daten, die mit der betroffenen Person verknüpft sind, können gelöscht werden. Dies gilt für vordefinierte ebenso wie für benutzerdefinierte Tabellen.
 
-Technisch gesehen werden alle Daten, die mit dem Datenfach verbunden `integrity="own"` sind, gelöscht.
+Aus technischer Sicht wird die Löschung auf alle Daten angewendet, die der betroffenen Person über `integrity="own"` zugeordnet sind.
 
-Als Data Controller haben Sie die Möglichkeit, diese Einstellung anzupassen, indem Sie die Integrität der in den Data Schemas definierten Links ändern (z. B. wenn Sie eine geschäftliche Begründung haben, um bestimmte Daten nicht zu löschen).
+Als Datenverantwortlicher können Sie dies über die Integrität der in den Datenschemata definierten Verknüpfungen anpassen (z. B. für den Fall, dass Sie aufgrund eines berechtigten geschäftlichen Interesses nicht verpflichtet sind, bestimmte Daten zu löschen).
 
 **Wie wirkt sich die Löschung von Versand- und Trackinglogs auf Berichte aus?**
 
 Berichte in Adobe Campaign basieren auf Indikatoren, die von aggregierten Daten aus Versand- und Trackinglogs berechnet werden. Deshalb sollte das Entfernen von einzelnen Logs keine Auswirkungen auf die in den Berichten dargestellten Metriken haben.
 
-## Daten erneut importieren {#re-import-data}
+## Erneutes Importieren von Daten {#re-import-data}
 
-**Im Adobe Campaign werden Datensätze häufig aus einer externen Datenquelle hochgeladen. Muss ich darauf achten, dass Daten zu einem späteren Zeitpunkt erneut importiert werden?**
+**Adobe Campaign erhält Daten häufig über Uploads aus externer Quelle. Ist Vorsicht dahingehend geboten, dass es zu einem Zeitpunkt zu erneuten Daten-Importen kommen könnte?**
 
-Als Datenverantwortlicher müssen Sie sicherstellen, dass beim Erhalt einer Löschungsanfrage alle entsprechenden Daten des Datensubjekts aus allen Ihren Systemen gelöscht werden.
+Als Datenverantwortlicher müssen Sie sicherstellen, dass beim Erhalt einer Löschungsanfrage alle entsprechenden Daten der betroffenen Person aus allen Ihren Systemen gelöscht werden.
 
-## Opt-in {#opt-in-again}
+## Erneuter Opt-in {#opt-in-again}
 
-**Kann sich ein Datensubjekt, dessen Daten aus Adobe Campaign gelöscht wurde, zu einem späteren Zeitpunkt noch einmal anmelden?**
+**Kann eine betroffene Person, deren Daten aus Adobe Campaign gelöscht wurden, zu einem späteren Zeitpunkt noch einmal ein Opt-In vornehmen?**
 
-Eine betroffene Person kann sich erneut anmelden oder als neuer Empfänger hinzugefügt werden, nachdem ihre Daten aus dem Adobe Campaign gelöscht wurden.
+Eine betroffene Person, deren Daten aus Adobe Campaign gelöscht wurden, kann einen erneuten Opt-in vornehmen oder als neuer Empfänger hinzugefügt werden.
 
-Sie können den Prüfpfad verwenden, in dem Details zum Zeitpunkt des vorherigen Löschens und zum Zeitpunkt der Erstellung des neuen Empfängers aufgeführt sind.
+Im Audit-Protokoll finden Sie Details dazu, zu welchem Zeitpunkt die ursprüngliche Löschung vorgenommen und der neue Empfänger hinzugefügt wurde.
