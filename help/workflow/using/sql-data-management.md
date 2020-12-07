@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "SQL-Daten-Manageme
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '428'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Die Aktivität **SQL Data Management** ermöglicht Ihnen das Schreiben eigener S
 
 Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben sein:
 
-* The activity is available for remote data sources only. The **[!UICONTROL FDA]** (Federated Data Access) package must therefore be installed on your instance. [Mehr dazu](../../installation/using/about-fda.md).
-* Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein. [Mehr dazu](../../configuration/using/about-schema-reference.md).
-* Für den Operator, der den Workflow ausführt, muss die AKTIVITÄT **[!UICONTROL USE SQL DATA MANAGEMENT (useSqlDmActivity)]** richtig benannt sein. [Mehr dazu](../../platform/using/access-management.md#named-rights).
+* Die Aktivität ist nur für Remote-Datenquellen verfügbar. Deshalb muss das **[!UICONTROL FDA]**-Package (Federated Data Access) auf Ihrer Instanz installiert sein. [Weitere Informationen](../../installation/using/about-fda.md).
+* Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein. [Weitere Informationen](../../configuration/using/about-schema-reference.md).
+* Für den Operator, der den Workflow ausführt, muss die **[!UICONTROL ANGEBOTSAKTIVITÄT SQL-DATEN-MANAGEMENT VERWENDEN (useSqlDmActivity)]** richtig benannt sein. [Weitere Informationen](../../platform/using/access-management.md#named-rights).
 
 ## SQL-Data-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}
 
