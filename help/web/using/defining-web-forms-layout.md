@@ -41,7 +41,7 @@ Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
 Das Layout des Webformulars wird in jedem Container seitenweise definiert und kann bei Bedarf überladen werden.
 
-Pages are broken down into columns: each page contains a certain number of columns. Each field of the page occupies **n** cells. Containers also occupy a certain number of columns and the fields they contain occupy a certain number of cells.
+Die Seiten sind in Spalten unterteilt: Jede Seite enthält eine bestimmte Anzahl von Spalten. Jedes Feld der Seite belegt **n** Zellen. Container belegen auch eine bestimmte Spaltenanzahl, und die darin enthaltenen Felder belegen eine bestimmte Anzahl von Zellen.
 
 Standardmäßig werden Seiten auf einer einzigen Spalte erstellt und jedes Element hat eine einzige Zelle. Das bedeutet, dass Felder untereinander angezeigt werden, wobei jedes wie unten dargestellt eine ganze Zeile umfasst:
 
