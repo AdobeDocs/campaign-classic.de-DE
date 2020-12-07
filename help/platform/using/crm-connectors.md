@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '2657'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die Verbindung mit dem CRM erfolgt über spezielle Workflow-Aktivitäten. Diese 
 
 Folgende CRM-Systeme lassen sich in Adobe Campaign integrieren.
 
-Supported versions are detailed in Campaign [Compatibility matrix](../../rn/using/compatibility-matrix.md).
+Die unterstützten Versionen werden in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) von Campaign erläutert.
 
 * **Salesforce.com**
 
@@ -186,7 +186,7 @@ Folgende Schritte sind bei der Konfiguration des Microsoft Dynamics Connectors m
 
    Adobe Campaign Classic unterstützt die Dynamics 365 REST-Schnittstelle mit dem OAuth-Protokoll für die Authentifizierung.
 
-   Wenn der Freigabetyp **[!UICONTROL WebAPI]** ausgewählt wurde, müssen Sie eine App in Azure Directory anmelden und die Clientkennung (**clientId**) von Azure Directory abrufen. Eine Beschreibung dieser Anmeldung finden Sie auf [dieser Seite](https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN).
+   Wenn der Freigabetyp **[!UICONTROL WebAPI]** ausgewählt wurde, müssen Sie eine App in Azure Directory anmelden und die Clientkennung (**clientId**) von Azure Directory abrufen. Eine Beschreibung dieser Anmeldung finden Sie auf [dieser Seite](https://docs.microsoft.com/de-DE/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN).
 
    >[!NOTE]
    >
