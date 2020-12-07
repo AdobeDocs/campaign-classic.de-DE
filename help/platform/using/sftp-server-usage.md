@@ -6,24 +6,24 @@ description: Erfahren Sie mehr über die Best Practices für die Nutzung von SFT
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1097'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
 # Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung {#sftp-server-usage}
 
-## Globale Empfehlungen für den SFTP-Server {#global-recommendations}
+## Allgemeine Empfehlungen zu SFTP-Servern {#global-recommendations}
 
-Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien auf einem von Adobe bereitgestellten gehosteten SFTP-Server gespeichert. Befolgen Sie bei der Verwendung von SFTP-Servern die unten stehenden Empfehlungen.
+Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien auf einem von Adobe bereitgestellten gehosteten SFTP-Server gespeichert. Richten Sie sich bei Verwendung von SFTP-Servern nach den im Folgenden aufgeführten Empfehlungen.
 
 * Verwenden Sie eine schlüsselbasierte Authentifizierung anstelle einer passwortbasierten Authentifizierung, um das Ablaufen von Passwörtern zu vermeiden (Passwörter haben eine Gültigkeitsdauer von 90 Tagen). Außerdem ermöglicht die schlüsselbasierte Authentifizierung die Erstellung mehrerer Schlüssel, wenn beispielsweise mehrere Entitäten verwaltet werden. Im Gegensatz dazu erfordert die passwortbasierte Authentifizierung, dass das Passwort mit allen verwalteten Entitäten geteilt wird.
 
-   Das unterstützte Schlüsselformat ist SSH-2 RSA 2048. Keys can be generated with tools like PyTTY (Windows), or ssh-keygen (Unix).You will have to provide the public key to Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) to have it uploaded on the Campaign server.
+   Das unterstützte Schlüsselformat ist SSH-2 RSA 2048. Schlüssel können mit Tools wie PyTTY (Windows) oder ssh-keygen (Unix) erstellt werden. Sie müssen dazu dem Adobe-Supportteam den öffentlichen Schlüssel über die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bereitstellen, damit er zum Campaign-Server hochgeladen werden kann.
 
 * Verwenden Sie Batch-Prozesse bei SFTP-Uploads und in Workflows.
 
@@ -31,13 +31,13 @@ Wenn Dateien und Daten für ETL-Zwecke verwaltet werden, werden diese Dateien au
 
 * Standardmäßig sind alle von Ihnen erstellten Ordner im Lese-/Schreibmodus ausschließlich für Ihre Kennung verfügbar. Wenn Sie Ordner erstellen, auf die Campaign Zugriff haben soll, konfigurieren Sie sie mit Lese-/Schreibrechten für die gesamte Gruppe. Andernfalls ist es für Workflows unmöglich, Dateien zu erstellen oder zu löschen, da sie aus Sicherheitsgründen innerhalb derselben Gruppe unter einer anderen Kennung ausgeführt werden.
 
-* Die öffentlichen IPs, mit denen Sie die SFTP-Verbindung aufbauen, müssen in der Campaign-Instanz auf der Zulassungsliste stehen. Das Hinzufügen von IP-Adressen zur Zulassungsliste kann über die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)angefordert werden.
+* Die öffentlichen IPs, mit denen Sie die SFTP-Verbindung aufbauen, müssen in der Campaign-Instanz auf der Zulassungsliste stehen. Das Hinzufügen von IP-Adressen zur Zulassungsliste kann über die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) angefordert werden.
 
 ## Best Practices zur Datenbanknutzung {#sftp-server-best-practices}
 
-SFTP-Server sind so konzipiert, dass sie temporäre Datenspeicherung darstellen, auf denen Sie die Aufbewahrung und das Löschen von Dateien steuern können.
+SFTP-Server sind als vorübergehende Datenspeicher konzipiert, auf denen Sie die Aufbewahrung und Löschung von Dateien selbst kontrollieren können.
 
-Wenn diese Leerzeichen nicht ordnungsgemäß verwendet oder überwacht werden, können sie den physischen Speicherplatz auf dem Server schnell füllen und dazu führen, dass Dateien bei nachfolgenden Uploads abgeschnitten werden. Sobald der Speicherplatz gesättigt ist, kann eine automatische Bereinigung älteste Dateien aus der SFTP-Datenspeicherung auslösen und löschen.
+Bei nicht ordnungsgemäßer Nutzung oder unzureichender Überwachung belegen diese schnell den physisch auf dem Server verfügbaren Speicherplatz, was dazu führen kann, dass Dateien bei nachfolgenden Uploads abgeschnitten werden. Bei voller Belegung des Speicherplatzes wird u. U. eine automatische Bereinigung ausgelöst, durch die die ältesten Dateien aus dem SFTP-Datenspeicher gelöscht werden.
 
 Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Practices zu befolgen.
 
@@ -55,18 +55,18 @@ Um solche Probleme zu vermeiden, empfiehlt Adobe, die unten stehenden Best Pract
 
 * Beachten Sie bitte, dass die Verwaltung des SFTP-Speichers hauptsächlich Ihre Verantwortung ist.
 
-## External SFTP server usage {#external-SFTP-server}
+## Verwendung externer SFTP-Server {#external-SFTP-server}
 
-Wenn Sie einen eigenen SFTP-Server verwenden, stellen Sie sicher, dass Sie die oben genannten Empfehlungen so weit wie möglich befolgen.
+Halten Sie sich bei Verwendung eigener SFTP-Server so weit wie möglich an die oben beschriebenen Empfehlungen.
 
-Wenn Sie in Campaign Classic einen Pfad zu einem externen SFTP-Server angeben, unterscheidet sich die Pfadsyntax vom SFTP-Serverbetriebssystem:
+Außerdem ist bei der Angabe eines Pfades zu einem externen SFTP-Server in Campaign Classic zu beachten, dass die Pfadsyntax abhängig vom Betriebssystem des SFTP-Servers jeweils unterschiedlich ist:
 
-* Wenn sich Ihr SFTP-Server unter **Windows** befindet, verwenden Sie immer einen relativen Pfad.
-* Wenn sich Ihr STP-Server unter **Linux** befindet, verwenden Sie immer einen Pfad, der relativ zum Home ist (beginnend mit &quot;~/&quot;), oder einen absoluten Pfad (beginnend mit &quot;/&quot;).
+* Wenn Ihr SFTP-Server unter **Windows** läuft, müssen Sie grundsätzlich einen relativen Pfad verwenden.
+* Läuft Ihr STP-Server unter **Linux**, verwenden Sie immer einen Pfad, der relativ zum Home ist (beginnend mit „~/“), oder einen absoluten Pfad (beginnend mit „/“).
 
 ## Verbindungsprobleme mit einem Adobe-gehosteten SFTP-Server {#sftp-server-troubleshooting}
 
-The section below lists the information to check and provide to the Adobe Support team via [Adobe Customer Care](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) when encountering connection issues with Adobe hosted SFTP servers.
+Im Folgenden finden Sie die Informationen, die Sie prüfen und dem Adobe-Supportteam über die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) zur Verfügung stellen müssen, wenn ein Verbindungsproblem mit von Adobe gehosteten SFTP-Servern auftritt.
 
 1. Überprüfen Sie, ob Ihre Instanz ausgeführt wird. Öffnen Sie dazu Ihren Browser und machen Sie einen **[!UICONTROL GET]**-Aufruf am **[!UICONTROL /r/test]**-Endpunkt der Instanz:
 
