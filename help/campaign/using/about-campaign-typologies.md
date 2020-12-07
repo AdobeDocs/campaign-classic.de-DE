@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '511'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -78,7 +78,7 @@ In diesem Video wird erläutert, wie Sie die Ermüdungsverwaltung in Adobe Campa
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
 
 **Verwandtes Thema**
 
