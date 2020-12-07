@@ -6,11 +6,11 @@ description: Interaction
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: affc541c480ad7e618120fe90270841add06b711
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '153'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Die folgenden Workflows werden standardmäßig mit dem **Angebotsmodul (Interact
    <tr> 
    <td> <span class="uicontrol">Vollständige Message Center-Aggregatberechnung</span> <br /> </td> 
    <td> <span class="uicontrol">agg_messageCenter_full</span> <br /> </td> 
-   <td> Dieser Arbeitsablauf aktualisiert das <strong>vollständige</strong> Aggregat für die Cube des <strong>Nachrichtenzentrums</strong> . Sie wird standardmäßig jeden Tag um 3 Uhr ausgelöst. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Datum, Status und Ereignistyp.<br /> Die <strong>Message Center</strong> -Cube wird dann verwendet, um Berichte auf der Grundlage von Ereignissen zu erstellen. Weitere Informationen zu Cuben finden Sie in <a href="../../reporting/using/about-cubes.md">diesem Abschnitt</a>.<br /> </td> 
+   <td> Dieser Workflow aktualisiert das <strong>vollständige</strong> Aggregat für den <strong>Message Center</strong>-Cube. Es wird standardmäßig jeden Tag um 3 Uhr morgens ausgelöst. Dieses Aggregat erfasst die folgenden Dimensionen: Kanal, Datum, Status und Ereignistyp.<br /> Der <strong>Message Center</strong>-Cube wird dann zur Erstellung von ereignisbasierten Berichten verwendet. Weitere Informationen zu Cubes finden Sie in <a href="../../reporting/using/about-cubes.md">diesem Abschnitt</a>.<br /> </td> 
    <td> <br /> </td> 
   </tr> 
  </tbody> 
