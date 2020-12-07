@@ -463,4 +463,4 @@ In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Camp
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
