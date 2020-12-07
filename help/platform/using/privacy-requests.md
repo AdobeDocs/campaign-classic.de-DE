@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie Datenschutzanfragen verwalten.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2591'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Bevor Sie Datenschutzanfragen erstellen können, müssen Sie den Namespace defin
 
 Standardmäßig sind drei Namespaces verfügbar: E-Mail, Telefon und Mobiltelefon. Wenn Sie einen anderen Namespace benötigen (z. B. ein benutzerdefiniertes Empfängerfeld), können Sie unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Namespaces]** einen neuen erstellen.
 
-## Creating a Privacy request {#create-privacy-request-ui}
+## Erstellen einer Datenschutzanfrage {#create-privacy-request-ui}
 
 Mit der **Adobe Campaign-Oberfläche** können Sie Ihre Datenschutzanfragen erstellen und ihren Fortschritt verfolgen. Gehen Sie wie folgt vor, um eine neue Datenschutzanfrage zu erstellen:
 
@@ -126,7 +126,7 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 >Wenn Sie Datenschutz-Batch-Anfragen mithilfe von Profillöschungs-Workflows ausführen, beachten Sie Folgendes:
 >* Beim Löschen von Profilen mit Workflows werden keine untergeordneten Tabellen verarbeitet.
 >* Alle untergeordneten Tabellen müssen manuell gelöscht werden.
->* Adobe recommends that you create an ETL workflow that add the lines to delete in the Privacy Access table and let the **[!UICONTROL Delete privacy requests data]** workflow perform the deletion. Wir empfehlen, maximal 200 Profile täglich zu löschen, um die Systemleistung nicht zu beeinträchtigen.
+>* Es wird empfohlen, einen ETL-Workflow zu erstellen, mit dem der Datenschutz-Zugriffstabelle die zu löschenden Zeilen hinzugefügt werden, und den Löschvorgang mit dem Workflow **[!UICONTROL Datenschutz-Anfragedaten löschen]** auszuführen Wir empfehlen, maximal 200 Profile täglich zu löschen, um die Systemleistung nicht zu beeinträchtigen.
 
 
 ### Status von Datenschutzanfragen {#privacy-request-statuses}
