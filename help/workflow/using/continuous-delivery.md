@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 73%
+ht-degree: 75%
 
 ---
 
 
 # Versand (fortlaufend){#continuous-delivery}
 
-Mit der **Aktion &quot;Kontinuierlicher Versand** &quot;können Sie einem vorhandenen Versand neue Empfänger hinzufügen. Mit diesem Versand-Typ müssen Sie nicht jedes Mal einen neuen Versand erstellen: Dieser Modus ist oft effizienter, insbesondere bei Warnungen mit geringem Volumen oder bei Bedarf abgesendeten Benachrichtigungen.
+Mit der Typaktion **Kontinuierlicher Versand** können Sie einem vorhandenen Versand neue Empfänger hinzufügen. Mit diesem Versand-Typ müssen Sie nicht jedes Mal einen neuen Versand erstellen: Dieser Modus ist oft effizienter, insbesondere bei Warnungen mit geringem Volumen oder bei Bedarf abgesendeten Benachrichtigungen.
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
 
@@ -66,4 +66,4 @@ In diesem Video wird gezeigt, wie man einen fortlaufenden Versand mit einer inkr
 
 >[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
