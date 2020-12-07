@@ -105,7 +105,7 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
 
 ### Dateien exportieren {#exporting-files}
 
-1. Select the Web application(s) whose strings you want to export, right-click, then select **[!UICONTROL Actions > Export strings for translation...]**
+1. Wählen Sie die Webanwendung aus, deren Zeichenfolgen Sie exportieren möchten, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Zeichenfolgen für Übersetzung exportieren...]**
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
@@ -454,7 +454,7 @@ Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
    ![](assets/s_ncs_admin_survey_trad_system_translation.png)
 
-1. Wählen Sie die Übersetzungssprache aus und geben Sie eine Übersetzung für die Zeichenfolge ein. Sie können die Übersetzung genehmigen, indem Sie die Option &quot; **[!UICONTROL Übersetzung genehmigt]** &quot;aktivieren.
+1. Wählen Sie die Übersetzungssprache aus und geben Sie eine Übersetzung für die Zeichenfolge ein. Sie können die Übersetzung genehmigen, indem Sie die Option **[!UICONTROL Übersetzung genehmigt]** aktivieren.
 
    ![](assets/s_ncs_admin_survey_trad_system_translation2.png)
 
@@ -470,7 +470,7 @@ Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
 Um Webanwendungen in andere Sprachen als die Standardsprachen zu übersetzen (siehe [Anzeigesprache in Formularen ändern](#changing-forms-display-language)), müssen Sie eine neue Übersetzungssprache hinzufügen.
 
-1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** in der Adobe Campaign-Struktur und wählen Sie in der Liste die Option **[!UICONTROL Sprachen, die übersetzt]** werden können. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Platform > Auflistungen]** der Adobe Campaign-Struktur und wählen Sie **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus der Liste. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
