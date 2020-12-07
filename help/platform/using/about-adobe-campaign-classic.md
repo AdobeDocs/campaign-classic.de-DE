@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '911'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -93,4 +93,4 @@ In diesem Video werden die wichtigsten Funktionen und Funktionen des Campaign Cl
 
 >[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
