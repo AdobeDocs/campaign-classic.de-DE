@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '1004'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -160,4 +160,4 @@ Erfahren Sie, wie Sie dynamische Inhaltsblöcke erstellen und wie Sie diese verw
 
 >[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
