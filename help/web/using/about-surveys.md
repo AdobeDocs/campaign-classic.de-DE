@@ -15,7 +15,7 @@ ht-degree: 97%
 ---
 
 
-# Get started with surveys{#about-surveys}
+# Erste Schritte mit Umfragen{#about-surveys}
 
 Adobe Campaign beinhaltet ein Grafikmodul zur Definition und Publikation von Webanwendungen. Damit können Seiten erstellt werden, wie etwa Bearbeitungsformulare für das Extranet oder Benachrichtigungsformulare mit Daten von der Datenbank mit Tabellen, Grafiken und Eingabeformularen. Mit dieser Funktion können Webseiten konzipiert und veröffentlicht werden, in denen Benutzer Informationen suchen oder eingeben können.
 
@@ -31,7 +31,7 @@ Weiterführende Informationen zur Verwaltung von Webanwendungen finden Sie in [d
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
-## Funktionsumfang {#campaign-surveys-scope}
+## Funktionsbereich {#campaign-surveys-scope}
 
 In Adobe Campaign stehen für Webanwendungen im Allgemeinen die folgenden Funktionen zur Verfügung:
 
