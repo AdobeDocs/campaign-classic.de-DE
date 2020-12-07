@@ -63,7 +63,7 @@ Verlassen Sie sich nicht darauf, dass die eingehenden Daten konsistent und korre
 
 Ein Beispiel für eine Importvorlage finden Sie im Abschnitt [Einrichten eines wiederkehrenden Imports](#setting-up-a-recurring-import).
 
-### Dateiformate mit einfach strukturierten Daten verwenden       {#using-flat-file-formats}
+### Dateiformate mit einfach strukturierten Daten verwenden        {#using-flat-file-formats}
 
 Das effizienteste Format für Importe sind flache Dateien, die im Bulk-Modus auf Datenbankebene importiert werden können.
 
@@ -112,7 +112,7 @@ Vollständige Importe sollten nur für das erstmalige Laden verwendet werden.
 
 Für den Datenimport wird empfohlen, anstelle von JavaScript das Data Management zu verwenden.
 
-### Konsistenz gewährleisten       {#maintaining-consistency}
+### Konsistenz gewährleisten        {#maintaining-consistency}
 
 Um die Konsistenz der Adobe-Campaign-Datenbank zu gewährleisten, befolgen Sie die unten stehenden Grundsätze:
 
@@ -261,7 +261,7 @@ In diesem Anwendungsfall erstellen wir einen Workflow, um Daten, die in einem ex
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
-1. Verwenden Sie das Control Panel, um ein Schlüsselpaar (öffentlich/privat) zu generieren. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
+1. Verwenden Sie das Control Panel, um ein Schlüsselpaar (öffentlich/privat) zu generieren. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/en/control-panel/using/instances-settings/gpg-keys-management.html#decrypting-data).
 
    * Der öffentliche Schlüssel wird mit dem externen System geteilt, das ihn zum Verschlüsseln der an Campaign zu sendenden Daten verwendet.
    * Der private Schlüssel wird von Campaign Classic verwendet, um die eingehenden verschlüsselten Daten zu entschlüsseln.
@@ -309,4 +309,4 @@ In diesem Video wird gezeigt, wie Daten mithilfe eines GPG-Schlüssels entschlü
 
 >[!VIDEO](https://video.tv.adobe.com/v/36482?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
