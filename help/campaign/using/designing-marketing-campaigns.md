@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Marketingkampagnen entwerfen
+title: Marketing-Kampagnen entwerfen
 description: Sie können Marketing-Kampagnen entwerfen, optimieren, ausführen und analysieren.
 audience: campaign
 content-type: reference
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '448'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -70,4 +70,4 @@ In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgeste
 
 >[!VIDEO](https://video.tv.adobe.com/v/35131?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
