@@ -6,9 +6,9 @@ description: Erfahren Sie, wie Sie die Emoticon-Liste unter Verwendung von Adobe
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
 ht-degree: 100%
 
