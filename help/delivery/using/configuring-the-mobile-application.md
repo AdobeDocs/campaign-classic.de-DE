@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie Ihre Mobile App für iOS einrichten.
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
