@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '1304'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
 
-![](assets/do-not-localize/how-to-video.png) Entdecken Sie, wie Sie Marketingplan, Programme und Kampagnen [in Videos erstellen](#video)
+![](assets/do-not-localize/how-to-video.png) Entdecken Sie, wie Sie Marketingplan, Programme und Kampagnen  [in Videos erstellen](#video)
 
 So erstellen Sie eine Marketing-Kampagne:
 
@@ -47,7 +47,7 @@ So erstellen Sie eine Marketing-Kampagne:
 
    Lesen Sie diesbezüglich den Abschnitt [Erstellung von Dienstleistern und deren Kostenstrukturen](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Nach Abschluss dieser Schritte können Sie den Versand starten (siehe [Starten eines Versands](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und bei Bedarf die zugehörigen Dokumente verwalten (siehe [Zugeordnete Dokumente verwalten ](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). You can also track the execution of the processing phases of campaigns and deliveries (see [Tracking](../../campaign/using/marketing-campaign-monitoring.md)).
+Nach Abschluss dieser Schritte können Sie den Versand starten (siehe [Starten eines Versands](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und bei Bedarf die zugehörigen Dokumente verwalten (siehe [Zugeordnete Dokumente verwalten ](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Sie können auch die Ausführung der Verarbeitungsphasen von Kampagnen und Versänden verfolgen (siehe [Verfolgung](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Erstellung einer Plan- und Programmhierarchie {#creating-plan-and-program-hierarchy}
 
@@ -239,4 +239,4 @@ In diesem Video wird das Erstellen von Marketingplänen, Programmen und Kampagne
 
 >[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
