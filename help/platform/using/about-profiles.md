@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
 workflow-type: tm+mt
 source-wordcount: '982'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ In diesem Video wird auch die Einhaltung der Datenschutz-Grundverordnung durch A
 
 >[!VIDEO](https://video.tv.adobe.com/v/35611?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
 
 **Siehe auch**
 
