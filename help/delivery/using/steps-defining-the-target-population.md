@@ -237,4 +237,4 @@ In diesem Video erfahren Sie, wie Sie einer vorhandenen E-Mail Testadressen und 
 
 >[!VIDEO](https://video.tv.adobe.com/v/25606?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
