@@ -17,7 +17,7 @@ ht-degree: 87%
 
 # Statische Elemente in einem Webformular{#static-elements-in-a-web-form}
 
-Sie können Elemente einschließen, mit denen der Benutzer keine Interaktion auf den Seiten des Formulars hat; Dies sind Statische Elemente wie Bilder, HTML-Inhalte, eine horizontale Leiste oder ein Hyperlink. Diese Elemente werden über die erste Schaltfläche in der Symbolleiste durch Auswahl von **[!UICONTROL Statischen Elementen]** erstellt.
+Sie können Elemente einschließen, mit denen der Benutzer keine Interaktion auf den Seiten des Formulars hat; Dies sind Statische Elemente wie Bilder, HTML-Inhalte, eine horizontale Leiste oder ein Hyperlink. Diese Elemente werden über die erste Schaltfläche in der Symbolleiste erstellt, indem Sie **[!UICONTROL Statische Element]** auswählen.
 
 ![](assets/s_ncs_admin_survey_add_static_element.png)
 
@@ -54,7 +54,7 @@ Um ein Datenbankfeld einzufügen, verwenden Sie die Personalisierungs-Schaltflä
 
 Füllen Sie im Bearbeitungsfenster die Felder wie im folgenden Beispiel gezeigt aus:
 
-To add a hypertext link, go to **[!UICONTROL Static elements]** > **[!UICONTROL Link]**.
+Um einen Hyperlink hinzuzufügen, gehen Sie zu **[!UICONTROL Statische Element]** > **[!UICONTROL Link]**.
 
 ![](assets/s_ncs_admin_survey_add_link.png)
 
@@ -174,7 +174,7 @@ Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte 
 
 >[!NOTE]
 >
->Aus Sicherheitsgründen wird der in die **`<%=`** Formel eingegebene Wert durch Escapezeichen ersetzt.
+>Aus Sicherheitsgründen wird der in die Formel **`<%=`** eingegebene Wert durch Escape-Zeichen ersetzt.
 
 In unserem Beispiel werden der Vor- und Nachname des Empfängers in einem Feld der Datenbank gespeichert, während das Automodell in einer Variablen gespeichert wird. Die Syntax der personalisierten Nachricht auf Seite 2 sieht folgendermaßen aus:
 
@@ -210,7 +210,7 @@ Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die M
 
    >[!CAUTION]
    >
-   >Wenn Sie diese Zeichen im HTML-Editor eingeben, werden die Felder **&lt;** und **>** durch Escape-Zeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie im HTML-Texteditor auf das Symbol Quellcode **[!UICONTROL anzeigen]** klicken.
+   >Wenn Sie diese Zeichen in den HTML-Editor eingeben, werden die Felder **&lt;** und **** durch Escape-Zeichen ersetzt. In diesem Fall müssen Sie den Quellcode korrigieren, indem Sie auf das Symbol **[!UICONTROL Quellcode anzeigen]** des HTML-Texteditors klicken.
 
 1. Öffnen Sie den Titel **[!UICONTROL Vorschau]** des Formulars, um den in HTML eingegebenen Wert anzuzeigen:
 
@@ -222,7 +222,7 @@ In diesem Betriebsmodus können Sie den Text von Webformularen nur einmal defini
 
 Um in Formulare Bilder einzufügen, müssen diese auf einem Server gespeichert werden, auf den von außen zugegriffen werden kann.
 
-Select the **[!UICONTROL Static elements]** > **[!UICONTROL Image]** menu.
+Wählen Sie das Menü **[!UICONTROL Statische Elemente]** > **[!UICONTROL Bild]**.
 
 Wählen Sie die Quelle des Bildes aus, das eingefügt werden soll: Es kann in einer öffentlichen Ressourcen-Bibliothek oder auf einem externen, von außen zugreifbaren Server gespeichert sein.
 
