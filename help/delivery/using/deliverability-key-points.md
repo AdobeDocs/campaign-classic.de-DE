@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Wichtige Aspekte bei der Zustellbarkeit
-description: Wichtigste Punkte zur Überprüfung der Lieferbarkeit
+title: Wichtige Punkte bei der Zustellbarkeit
+description: Für die Verbesserung der Zustellbarkeit zu beachtende Punkte
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Wichtige Aspekte bei der Zustellbarkeit{#deliverability-key-points}
+# Wichtige Punkte bei der Zustellbarkeit{#deliverability-key-points}
 
 Um die Zustellbarkeit Ihrer E-Mails in Adobe Campaign zu optimieren, empfehlen wir, die unten aufgeführten Best Practices zu befolgen. Zustellbarkeitsprobleme resultieren im Allgemeinen aus Schutzmaßnahmen gegen Spam, die von Internetdienstanbietern und Mail-Server-Administratoren eingerichtet werden.
 
