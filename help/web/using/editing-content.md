@@ -6,9 +6,9 @@ description: Bearbeiten von Inhalten
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
 ht-degree: 100%
 
@@ -137,6 +137,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 
@@ -202,8 +203,9 @@ Folgende Optionen sind verfügbar:
 >[!NOTE]
 >
 >* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
->
->* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
+   >
+   >
+* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
 
 ## Bilder und Animationen verwalten {#managing-images-and-animations}
