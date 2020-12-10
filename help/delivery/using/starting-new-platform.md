@@ -6,9 +6,9 @@ description: Erfahren Sie mehr über die Verwaltung der Zustellbarkeit beim Einr
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Oft werden Plattformen gestartet, wenn eine Adressliste zum ersten Mal verwendet
 * **Begrenzen Sie die Durchsatzrate**, indem Sie die Anzahl der &quot;mtachilds&quot; einschränken. Wenden Sie sich für weitere Informationen zum Anpassen dieser technischen Einstellung an Ihren Adobe Campaign-Administrator.
 * **Erhöhen Sie die gesendeten Volumen schrittweise**, damit diese nicht als Spam gekennzeichnet werden. Senden Sie nicht gleich an die gesamte Datenbank, sondern fügen Sie bei jedem Senden einen weiteren Anteil der Liste hinzu. So sollten Sie das Volumen bei jedem Schritt erhöhen und gleichzeitig die Gesamtrate ungültiger Adressen reduzieren können. Um eine reibungslose Anfangsphase zu gewährleisten, können Sie Schübe verwenden. Weiterführende Informationen finden Sie unter [In mehreren Schüben versenden](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
 * **Senden Sie regelmäßig**. Es ist besser, regelmäßig kleine Sendungen vorzunehmen als selten große Kampagnen durchzuführen.
-* **Beachten Sie dabei die Versandberichte**. Hohe Fehlerindikatoren können darauf hindeuten, dass eine technische Einstellung nicht richtig konfiguriert ist. Weiterführende Informationen dazu finden Sie unter [Sendungen beobachten](../../delivery/using/monitoring-a-delivery.md).
+* **Beachten Sie dabei die Versandberichte**. Hohe Fehlerindikatoren können darauf hindeuten, dass eine technische Einstellung nicht richtig konfiguriert ist. Weiterführende Informationen dazu finden Sie unter [Sendungen beobachten](../../delivery/using/about-delivery-monitoring.md).
 
 **Verwandte Themen**:
 * [E-Mail-Reputation mit IP-Warming verbessern](https://helpx.adobe.com/campaign/kb/increase-email-rep-ip-warming.html)
