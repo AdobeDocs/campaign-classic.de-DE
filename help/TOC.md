@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 13cc481606ffb78f9a755ef8aa8a9d7cbb5d44c2
+source-git-commit: 854d509315f1d8585cb041575908df896468cc77
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2196'
 ht-degree: 98%
 
 ---
@@ -153,7 +153,12 @@ ht-degree: 98%
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
       + [Virale Marketingstrategien](delivery/using/viral-and-social-marketing.md)
    + Sendungen überwachen {#monitoring-deliveries}
-      + [Sendungen überwachen](delivery/using/monitoring-a-delivery.md)
+      + [Erste Schritte mit der Versand-Überwachung](delivery/using/about-delivery-monitoring.md)
+      + [Auf die Versandliste zugreifen](delivery/using/list-of-deliveries.md)
+      + [Versand-Dashboard](delivery/using/delivery-dashboard.md)
+      + [Best Practices des Versands](delivery/using/delivery-performances.md)
+      + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
+      + [Versandstatus](delivery/using/delivery-statuses.md)
       + [Ursachen von fehlgeschlagenen Sendungen](delivery/using/understanding-delivery-failures.md)
       + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
    + Nachrichten tracken {#tracking-messages}
