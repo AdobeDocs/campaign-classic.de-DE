@@ -6,9 +6,9 @@ description: Hier finden Sie die wichtigsten Schritte zur Erstellung von Sendung
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Die Konzeption eines Versands umfasst folgende Schritte:
 
 1. **Versand senden** – [mehr dazu](../../delivery/using/steps-sending-the-delivery.md)
 
-1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weiterführende Informationen dazu finden Sie in den Abschnitten [Sendungen beobachten](../../delivery/using/monitoring-a-delivery.md) und [Versandverfolgung](../../delivery/using/about-message-tracking.md).
+1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weiterführende Informationen dazu finden Sie in den Abschnitten [Sendungen beobachten](../../delivery/using/about-delivery-monitoring.md) und [Versandverfolgung](../../delivery/using/about-message-tracking.md).
 
 >[!NOTE]
 >
