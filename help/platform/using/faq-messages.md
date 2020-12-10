@@ -6,9 +6,9 @@ description: Häufig gestellte Fragen zu Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Sie können das Tracking für jede in der Nachricht enthaltene URL aktivieren od
 
 ### Wo kann ich auf Versand- und Trackinglogs zugreifen? {#where-can-i-access-delivery-and-tracking-logs-}
 
-[Auf dieser Seite](../../delivery/using/monitoring-a-delivery.md) erfahren Sie, wie Sie Ihre Sendungen verfolgen und das Verhalten der Empfänger erfassen.
+[Auf dieser Seite](../../delivery/using/delivery-dashboard.md) erfahren Sie, wie Sie Ihre Sendungen verfolgen und das Verhalten der Empfänger erfassen.
 
 ### Wo finde ich Versandberichte? {#where-can-i-get-delivery-reports-}
 
