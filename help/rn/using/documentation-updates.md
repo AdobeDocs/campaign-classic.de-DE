@@ -6,11 +6,11 @@ description: Auf dieser Seite finden Sie eine nach Version geordnete Übersicht 
 audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
-translation-type: ht
-source-git-commit: 9d595f41dd2b0cbf042ab768ae5897cc5ac240bb
-workflow-type: ht
-source-wordcount: '3647'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+workflow-type: tm+mt
+source-wordcount: '3679'
+ht-degree: 99%
 
 ---
 
@@ -20,6 +20,12 @@ ht-degree: 100%
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
+
+## Dezember 2020 {#dec-2020}
+
+Der Bereich &quot;Überwachung des Versands&quot;wurde in thematische Themen umstrukturiert. [Mehr dazu](../../delivery/using/about-delivery-monitoring.md)
+
+Es wurde ein Anwendungsfall hinzugefügt, in dem erläutert wird, wie die IP-Adressen von Absendern zu den Versandlogs hinzugefügt werden. [mehr dazu](../../delivery/using/delivery-dashboard.md#use-case)
 
 ## November 2020 {#nov-2020}
 
@@ -37,9 +43,9 @@ Auf der Seite zur Mid-Sourcing-Server-Konfiguration wurde ein Hinweis hinzugefü
 
 Es wurden Informationen zur Syntax hinzugefügt, die beim Festlegen eines Pfades zu einem externen SFTP-Server verwendet werden muss. [Mehr dazu](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-Der Abschnitt über persönliche Daten und Personen wurde um ein Verwendungsfallszenario bereichert, um zu veranschaulichen, wie die verschiedenen Personen in Bezug auf die Privatsphäre interagieren. [Mehr dazu](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+Der Abschnitt über persönliche Daten und Personen wurde um ein Verwendungsfallszenario bereichert, um zu veranschaulichen, wie die verschiedenen Personen in Bezug auf die Privatsphäre interagieren. [mehr dazu](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
-Ein neuer Abschnitt mit häufig gestellten Fragen zum Datenschutz wurde hinzugefügt. [Mehr dazu](../../platform/using/privacy-faq.md)
+Ein neuer Abschnitt mit häufig gestellten Fragen zum Datenschutz wurde hinzugefügt – [Mehr dazu](../../platform/using/privacy-faq.md)
 
 ## Oktober 2020 {#oct-2020}
 
@@ -253,7 +259,7 @@ Die Anleitungen für [Installation](../../installation/using/general-architectur
 
 Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neu unterstützte Systeme wurden hinzugefügt. Veraltete Vorfälle und nicht mehr unterstützte Systeme wurden entfernt. [Mehr dazu](../../installation/using/general-architecture.md)
 
-Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
+Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Eine Best Practice zur IP-Affinität wurde dem Installationshandbuch hinzugefügt. [Mehr dazu](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -271,7 +277,7 @@ Der neue Parameter für die URL-Berichtkonfiguration wird [hier](../../reporting
 
 Die **On-Premise- und Hosted-Leistungsmatrix von Campaign Classic** wurde mit den neuen FDA-Connectoren aktualisiert. [Mehr dazu](../../installation/using/capability-matrix.md).
 
-Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
+Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
 Der neue Workflow zur **[!UICONTROL Bereinigung von Nmsaddress]** wird [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) erläutert.
 
@@ -321,7 +327,7 @@ Sicherer SMS-Versand (TLS) – [mehr dazu](https://helpx.adobe.com/de/campaign/k
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
+Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie Fehler in einem Workflow beheben können, der im Status „Schnellstmöglicher Start“ in einer Kampagne verbleibt.  [Mehr dazu](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -377,13 +383,13 @@ Die Informationen zum Workflow-Monitoring wurden in einem neuen Abschnitt zusamm
 
 Eine neue Seite mit allgemeinen Richtlinien für das Tracking in Adobe Campaign Classic wurde hinzugefügt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)
 
-Die Best Practices für die Leistungsverbesserung von Workflows und Sendungen wurden aktualisiert. [Weitere Informationen zu Workflows](../../workflow/using/workflow-best-practices.md) und [Sendungen](../../delivery/using/monitoring-a-delivery.md#best-practices-performance).
+Die Best Practices für die Leistungsverbesserung von Workflows und Sendungen wurden aktualisiert. [Weitere Informationen zu Workflows](../../workflow/using/workflow-best-practices.md) und [Sendungen](../../delivery/using/delivery-performances.md#best-practices-performance).
 
 ## Mai 2019 {#release-19-1}
 
 **Neue Funktionen in Version 19.1**
 
-Control Panel – [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/control-panel-home.html)
+Control Panel – [mehr dazu](https://docs.adobe.com/content/help/en/control-panel/using/control-panel-home.html)
 
 Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
@@ -391,7 +397,7 @@ Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
 Es wurden neue häufig gestellte Fragen zur Build-Aktualisierung erstellt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html)
 
-Die [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme sowie die Android-/iOS-Versionen und die zugehörigen SDKs wurden aktualisiert. Die [Kompatibilitätsmatrix 19.0](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix-19-0.html) wurde aktualisiert.
+Die [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme sowie die Android-/iOS-Versionen und die zugehörigen SDKs wurden aktualisiert. Die [Kompatibilitätsmatrix 19.0](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix-19-0.html) wurde aktualisiert.
 
 Die Seite mit veralteten und entfernten Funktionen in Campaign Classic wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html)
 
@@ -442,7 +448,7 @@ Es wurden Informationen zum Billing-Bericht hinzugefügt. [Mehr dazu](../../prod
 Die Dokumentation zur Integration freigegebener Audiences wurde aktualisiert.
 [Mehr dazu](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Der Abschnitt „Technische Workflows“ wurde aktualisiert. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
