@@ -6,9 +6,9 @@ description: Dieser Abschnitt enthält allgemeine Informationen zum E-Mail-Kanal
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
@@ -31,6 +31,6 @@ Die wichtigsten Schritte zum Senden einer E-Mail sind:
 * [Zielpopulation bestimmen](../../delivery/using/steps-defining-the-target-population.md)
 * [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md)
 * [E-Mail senden](../../delivery/using/sending-messages.md)
-* [Sendung beobachten](../../delivery/using/monitoring-a-delivery.md)
+* [Sendung beobachten](../../delivery/using/about-delivery-monitoring.md)
 
 Die folgenden Abschnitte enthalten Informationen, die speziell für den E-Mail-Kanal gelten. Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
