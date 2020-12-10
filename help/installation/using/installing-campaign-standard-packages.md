@@ -7,15 +7,15 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
 workflow-type: tm+mt
 source-wordcount: '1189'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
 
-# Installing Campaign Classic built-in packages{#installing-campaign-standard-packages}
+# Installieren von integrierten Campaign Classic{#installing-campaign-standard-packages}
 
 ## Integrierte Pakete {#campaign-standard-packages}
 
@@ -45,14 +45,14 @@ So installieren Sie ein integriertes Paket:
 
 Die Pakete sind jetzt installiert.
 
-### List of out-of-the-box Packages {#list-of-standard-packages}
+### Liste von vordefinierten Paketen {#list-of-standard-packages}
 
 In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
 
 <table> 
  <thead> 
   <tr> 
-   <th> Paket </th> 
+   <th> Package </th> 
    <th> Beschreibung  </th> 
    <th> Instanzentyp </th>
   </tr> 
@@ -60,7 +60,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
  <tbody> 
   <tr> 
    <td> Versand<br /> </td> 
-   <td> Überwacht Versand und eventuell aufgetretene Probleme beim Senden von Nachrichten. <a href="../../delivery/using/monitoring-a-delivery.md">Mehr dazu</a><br /> </td> 
+   <td> Überwacht Versand und eventuell aufgetretene Probleme beim Senden von Nachrichten. <a href="../../delivery/using/about-delivery-monitoring.md">Mehr dazu</a><br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
@@ -69,7 +69,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Marketing resources (MRM)<br /> </td> 
+   <td> Marketing-Ressourcen (MRM)<br /> </td> 
    <td> Steuert Marketingaktionen im kollaborativen Modus, indem sie die Verwaltung und Verfolgung der Aufgaben, Budgets und Marketing-Ressourcen bereitstellt. <a href="../../campaign/using/about-marketing-resource-management.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -79,12 +79,12 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
-   <td> Steuerung des Angebot-Motors mit Ausführungsinstanz. Optional.<br /> </td> 
+   <td> Steuerung des Angebotsmoduls durch die Ausführungsinstanz. Optional.<br /> </td> 
    <td> Paket, das auf Kontrollinstanz für Angebot Engine installiert werden soll (Interaktion). <a href="../../interaction/using/distributed-architectures.md#packages-configuration">Mehr erfahren</a> </td> 
    <td> Marketing<br /> </td>  
   </tr> 
   <tr> 
-   <td> Angebot-Engine für Ausführungsinstanzen. Optional.<br /> </td> 
+   <td> Angebotsmodul der Ausführungsinstanzen. Optional.<br /> </td> 
    <td> Paket, das auf Ausführungsinstanzen für die Angebot-Engine installiert werden soll (Interaktion). <a href="../../interaction/using/distributed-architectures.md">Mehr erfahren</a> </td> 
    <td> Mid, Ausführung <br /> </td>  
   </tr> 
@@ -100,12 +100,12 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Alle</td> 
   </tr> 
   <tr> 
-   <td> Kontrolle der Transaktionsnachricht (Message Center - Control)<br /> </td> 
+   <td> Transaktionsnachricht Control (Message Center - Control)<br /> </td> 
    <td> Verwaltet Auslösermeldungen, die aus Ereignissen generiert wurden, die aus Informationssystemen ausgelöst wurden. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ausführung der Transaktionsnachricht (Nachrichtencenter - Ausführung) <br /> </td> 
+   <td> Ausführung der Transaktionsnachricht (Message Center - Execution) <br /> </td> 
    <td> Stellt eine höhere Verfügbarkeit und ein besseres Lastmanagement sicher. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Mehr erfahren</a><br /> </td> 
    <td> Ausführung<br /> </td>
   </tr> 
@@ -115,7 +115,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
-   <td> Direct Mail channel<br /> </td> 
+   <td> Briefpost Kanal<br /> </td> 
    <td> Sendet Versand mit dem Direct Mail-Kanal mit Adobe Campaign. Optional. <a href="../../delivery/using/about-direct-mail-channel.md">Mehr erfahren</a><br /> </td> 
    <td> Alle<br /> </td>
   </tr> 
@@ -135,7 +135,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> </td>
   </tr> 
   <tr> 
-   <td> Online-Umfragen (Umfrage Manager)<br /> </td> 
+   <td> Online-Umfragen (Umfragen-Manager)<br /> </td> 
    <td> Erstellt und verwaltet Online-Formulare zum Hinzufügen oder Ändern von Profil-Informationen, zum Abonnieren, zum Abmelden oder einem Konkurrenzformular. Optional. <a href="../../web/using/about-surveys.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -165,7 +165,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Alle </td> 
   </tr> 
   <tr> 
-   <td> Gutscheinverwaltung<br /> </td> 
+   <td> Coupon-Management<br /> </td> 
    <td> Erstellt eine Reihe von Coupons, die zu kommenden Marketing-Angeboten hinzugefügt werden sollen. Optional. <a href="../../delivery/using/personalized-coupons.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
@@ -181,7 +181,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
   </tr> 
   <tr> 
    <td> CRM-Connectoren<br /> </td> 
-   <td> Bietet verschiedene CRM-Connectors zum Verknüpfen Ihrer Adobe Campaign-Plattform mit Ihren Drittanbietersystemen.  <a href="../../platform/using/crm-connectors.md">Mehr erfahren</a> <br /> </td> 
+   <td> Bietet verschiedene CRM-Connectors zum Verknüpfen Ihrer Adobe Campaign-Plattform mit Drittanbietersystemen.  <a href="../../platform/using/crm-connectors.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -190,7 +190,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Marketing </td> 
   </tr> 
   <tr> 
-   <td> AEM integration<br /> </td> 
+   <td> AEM Integration<br /> </td> 
    <td> Ermöglicht die direkte Verwaltung des Inhalts Ihrer E-Mail-Versand sowie Ihrer Formulare in Adobe Experience Manager, um AEM Funktionen zur Inhaltsbearbeitung und die Versand-Kapazitäten von Adobe Campaign nutzen zu können. <a href="../../integrations/using/about-adobe-experience-manager.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -200,7 +200,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Integration with Adobe Experience Cloud<br /> </td> 
+   <td> Integration mit Adobe Experience Cloud<br /> </td> 
    <td> Ermöglicht das Importieren und Exportieren von Audiencen/Segmenten aus verschiedenen Adobe Experience Cloud-Lösungen in Adobe Campaign. Optional. <a href="../../integrations/using/configuring-ims.md#installing-the-package">Mehr erfahren</a> </td> 
    <td> Marketing</td> 
   </tr> 
@@ -210,7 +210,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Alle</td> 
   </tr> 
   <tr> 
-   <td> Transfer to Mid-Sourcing <br /> </td> 
+   <td> Zu Mid-Sourcing <br /> übertragen </td> 
    <td> Details zur Installation und Konfiguration eines Mid-Sourcing-Servers sowie zur Bereitstellung einer Instanz, die es Dritten ermöglicht, Nachrichten im Mid-Sourcing-Modus zu senden. Optional. <a href="../../installation/using/mid-sourcing-server.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing </td> 
   </tr> 
@@ -236,14 +236,14 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
 
 Sie müssen Versand-Kanal installieren (E-Mail, Mobile Kanal, Mobile App Kanal usw.) vor der Installation von Transaktionsnachrichten (Message Center-Paket). Wenn Sie ein reines E-Mail-Nachrichtencenter-Projekt gestartet haben und anschließend einen neuen Kanal hinzufügen müssen, führen Sie die folgenden Schritte aus:
 
-1. Install the new channel, for example the **Mobile channel**, using the package import wizard ( **[!UICONTROL Tools > Advanced > Import package > Adobe Campaign package]**).
-1. Importieren Sie die Datei (&quot; **[!UICONTROL Extras&quot;> &quot;Erweitert&quot;> &quot;Paket importieren&quot;> &quot;Datei]**&quot;) und wählen Sie:
+1. Installieren Sie den neuen Kanal, z. B. den **Mobile-Kanal**, mit dem Package Import-Assistent ( **[!UICONTROL Tools > Erweitert > Importpaket > Adobe Campaign-Paket]**).
+1. Importieren Sie die Datei ( **[!UICONTROL Werkzeuge > Erweitert > Paket importieren > Datei]**) und wählen Sie:
 
    ```
    \datakit\nms\[Your language]\package\messageCenter.xml
    ```
 
-1. Behalten Sie im zu importierenden **** XML-Dateninhalt nur die Message Center-Versandvorlage bei, die dem zugehörigen Kanal entspricht. Wenn Sie beispielsweise den **Mobile-Kanal** hinzugefügt haben, sollten Sie nur das **Entitätselement** beibehalten, das der Vorlage für die **[!UICONTROL Mobile-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile App Kanal** hinzugefügt haben, sollten Sie nur die **iOS-Transaktionsnachrichten** -Vorlagen (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) beibehalten.
+1. Behalten Sie im zu importierenden **[!UICONTROL XML-Dateninhalt nur die Message Center-Versandvorlage bei, die dem entsprechenden Kanal entspricht.]** Wenn Sie beispielsweise den Kanal **Mobil** hinzugefügt haben, behalten Sie nur das Element **entity** bei, das der Vorlage **[!UICONTROL Mobil-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den Kanal **Mobile App** hinzugefügt haben, behalten Sie nur die Vorlagen **iOS-Transaktionsnachricht** (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
 
    ![](assets/messagecenter_install_channel.png)
 
