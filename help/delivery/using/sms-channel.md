@@ -6,9 +6,9 @@ description: SMS-Kanal
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '3270'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Gehen Sie dazu wie folgt vor:
 
    Bei gewissen Anbietern ist die Verwendung des Vorzeichens &#39;+&#39; jedoch erforderlich, sodass es ratsam ist, mit Ihrem Anbieter Kontakt aufzunehmen, der Sie bei Bedarf dazu auffordern wird, diese Option zu aktivieren.
 
-   Das Kontrollkästchen **[!UICONTROL TLS über SMPP aktivieren]** ermöglicht die Verschlüsselung von SMPP-Traffic. Weitere Informationen hierzu finden Sie in dieser [Technote](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html).
+   Das Kontrollkästchen **[!UICONTROL TLS über SMPP aktivieren]** ermöglicht die Verschlüsselung von SMPP-Traffic. Weitere Informationen hierzu finden Sie in dieser [Technote](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
 
 1. Wenn Sie einen Connector vom Typ **[!UICONTROL Erweitertes allgemeines SMPP]** konfigurieren, können Sie automatische Antworten einrichten.
 
@@ -490,7 +490,7 @@ Folgende Optionen stehen zur Verfügung:
 
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
-* [Sendungen überwachen](../../delivery/using/monitoring-a-delivery.md)
+* [Sendungen überwachen](../../delivery/using/about-delivery-monitoring.md)
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Über das Nachrichten-Tracking](../../delivery/using/about-message-tracking.md)
 
@@ -595,6 +595,6 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 
 >[!IMPORTANT]
 >
->Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) enthalten.
+>Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im [Versand-Dashboard](../../delivery/using/delivery-dashboard.md) enthalten.
 >
 >Sie werden des Weiteren nicht bei der Berechnung des [Werbedrucks](../../campaign/using/pressure-rules.md) berücksichtigt.
