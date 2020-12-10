@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Mit Webdiensten können Sie viele Anwendungen aus einem Drittanbietersystem erst
 
 Die Definition der Webdienste, die auf dem Adobe Campaign-Anwendungsserver implementiert sind, ist in den Data Schemas verfügbar.
 
-Ein Webdienst wird in der Grammatik der Datenelemente beschrieben und ist im **`<methods>`** Schema verfügbar.
+Ein Webdienst wird in der Grammatik der Datenelemente beschrieben und ist im Element **`<methods>`** verfügbar.
 
 ```
 <methods>
@@ -46,15 +46,15 @@ Ein Webdienst wird in der Grammatik der Datenelemente beschrieben und ist im **`
 </methods>
 ```
 
-Hier haben wir ein Beispiel für die Definition der Methode namens **GenerateForm**.
+Hier haben wir ein Beispiel für die Definition der Methode **GenerateForm**.
 
-Die Beschreibung der Beginn des Dienstes mit dem `<method>` Element. Die Liste der Parameter der Methode wird vom `<parameters>` Element abgeschlossen. Jeder Parameter wird durch einen Namen, einen Typ (Boolescher Wert, Zeichenfolge, DOMElement usw.) angegeben. und eine Beschreibung. Mit dem Attribut &quot;inout&quot;mit dem Wert &quot;out&quot;können Sie angeben, dass sich der Parameter &quot;result&quot;in der SOAP-Aufrufausgabe befindet.
+Die Beschreibung der Service-Beginn mit dem `<method>`-Element. Die Liste der Parameter der Methode wird vom `<parameters>`-Element abgeschlossen. Jeder Parameter wird durch einen Namen, einen Typ (Boolescher Wert, Zeichenfolge, DOMElement usw.) angegeben. und eine Beschreibung. Mit dem Attribut &quot;inout&quot;mit dem Wert &quot;out&quot;können Sie angeben, dass sich der Parameter &quot;result&quot;in der SOAP-Aufrufausgabe befindet.
 
 Das Vorhandensein des Attributs &quot;static&quot;(mit dem Wert &quot;true&quot;) beschreibt diese Methode als statisch, d. h. alle Parameter der Methode müssen deklariert werden.
 
 Eine &quot;const&quot;-Methode verfügt implizit über ein XML-Dokument im Format des zugehörigen Schemas als Eingabe.
 
-Eine vollständige Beschreibung des `<method>` Elements eines Adobe Campaign-Schemas finden Sie im Kapitel &quot;Schema-Referenzen&quot;unter  <a href="../../configuration/using/elements-and-attributes.md#method--element" target="_blank">  `<method>`    Element.
+Eine vollständige Beschreibung des `<method>`-Elements eines Adobe Campaign-Schemas finden Sie im Kapitel &quot;Schema-Referenzen&quot; unter <a href="../../configuration/using/schema/method.md)" target="_blank">  `<method>`    Element.
 
 Beispiel für die Methode &quot;const&quot;-type &quot;ExecuteQuery&quot; aus dem Schema &quot;xtk:queryDef&quot;:
 
@@ -130,7 +130,7 @@ Typdefinitionen basieren auf XML-Schemas. In unserem Beispiel nimmt die Methode 
 
 #### Nachrichten {#messages}
 
-Die `<message>` beschreibt die Namen und Typen eines Satzes von Feldern, die gesendet werden sollen. Die Methode verwendet zwei Meldungen, die als Parameter (&quot;ExecuteQueryIn&quot;) und als Rückgabewert (&quot;ExecuteQueryOut&quot;) übergeben werden.
+Das `<message>` beschreibt die Namen und Typen eines Satzes von Feldern, die gesendet werden sollen. Die Methode verwendet zwei Meldungen, die als Parameter (&quot;ExecuteQueryIn&quot;) und als Rückgabewert (&quot;ExecuteQueryOut&quot;) übergeben werden.
 
 ```
 <message name="ExecuteQueryIn">
@@ -144,7 +144,7 @@ Die `<message>` beschreibt die Namen und Typen eines Satzes von Feldern, die ges
 
 #### PortType {#porttype}
 
-Die Meldungen `<porttype>` werden dem Vorgang &quot;ExecuteQuery&quot;zugeordnet, der durch die Abfrage (&quot;input&quot;) ausgelöst wird, die eine Antwort (&quot;output&quot;) generiert.
+Das `<porttype>` verknüpft die Meldungen für den Vorgang &quot;ExecuteQuery&quot;, der durch die Abfrage (&quot;input&quot;) ausgelöst wird, die eine Antwort (&quot;output&quot;) generiert.
 
 ```
 <portType name="queryDefMethodsSoap">
@@ -157,7 +157,7 @@ Die Meldungen `<porttype>` werden dem Vorgang &quot;ExecuteQuery&quot;zugeordnet
 
 #### Bindung {#binding}
 
-Der `<binding>` Teil gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ), den Datentransport in HTTP (Wert des Attributs &quot;transport&quot;) und das Datenformat für den Vorgang &quot;ExecuteQuery&quot; an. Der Hauptteil des SOAP-Umschlags enthält die Meldungssegmente direkt ohne Transformation.
+Der `<binding>`-Teil gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>`), den Datentransport in HTTP (Wert des Attributs &quot;transport&quot;) und das Datenformat für den Vorgang &quot;ExecuteQuery&quot; an. Der Hauptteil des SOAP-Umschlags enthält die Meldungssegmente direkt ohne Transformation.
 
 ```
 <binding name="queryDefMethodsSoap" type="tns:queryDefMethodsSoap">
@@ -176,7 +176,7 @@ Der `<binding>` Teil gibt das SOAP-Kommunikationsprotokoll ( `<soap:binding>` ),
 
 #### Service {#service}
 
-Der `<service>` Teil beschreibt den Dienst &quot;XtkQueryDef&quot;mit seinem URI auf der URL des Adobe Campaign-Anwendungsservers.
+Der `<service>`-Teil beschreibt den Dienst &quot;XtkQueryDef&quot;mit seinem URI auf der URL des Adobe Campaign-Anwendungsservers.
 
 ```
 <service name="XtkQueryDef">
@@ -188,17 +188,17 @@ Der `<service>` Teil beschreibt den Dienst &quot;XtkQueryDef&quot;mit seinem URI
 
 ## Konnektivität {#connectivity}
 
-Adobe Campaign hat die Sicherheit für Authentifizierungsmechanismen erhöht, indem Sicherheitszonen (siehe Kapitel **Definieren von Sicherheitszonen** in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones)) sowie Sitzungsverwaltungseinstellungen eingeführt werden.
+Adobe Campaign hat die Sicherheit für Authentifizierungsmechanismen erhöht, indem Sicherheitszonen (siehe das Kapitel **Sicherheitszonen definieren** in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones)) sowie Sitzungsverwaltungseinstellungen eingeführt wurden.
 
 Es stehen zwei Authentifizierungsmodi zur Verfügung:
 
 * **über einen Aufruf der Anmeldemethode()**. Dieser Modus generiert ein Sitzungstoken und ein Sicherheitstoken. Es ist der sicherste Modus und daher der am meisten empfohlen.
 
-oder
+or
 
-* **über das Adobe Campaign login + password** , das ein Sitzungstoken erstellt. Das Sitzungstoken läuft nach einem bestimmten Zeitraum automatisch ab. Dieser Modus wird nicht empfohlen und erfordert eine Reduzierung der Anwendungssicherheitseinstellungen für einige Zoneneinstellungen (allowUserPassword=&quot;true&quot; und sessionTokenOnly=&quot;true&quot;).
+* **über das Adobe Campaign login +** password, das ein Sitzungstoken erstellt. Das Sitzungstoken läuft nach einem bestimmten Zeitraum automatisch ab. Dieser Modus wird nicht empfohlen und erfordert eine Reduzierung der Anwendungssicherheitseinstellungen für einige Zoneneinstellungen (allowUserPassword=&quot;true&quot; und sessionTokenOnly=&quot;true&quot;).
 
-### Merkmale des Sitzungstokens {#session-token-characteristics}
+### Sitzungstoken-Eigenschaften {#session-token-characteristics}
 
 Das Sitzungstoken weist die folgenden Merkmale auf:
 
@@ -209,7 +209,7 @@ Das Sitzungstoken weist die folgenden Merkmale auf:
    * Wenn das Sitzungs-Token ein permanentes Token wird, wird es nach dem Schließen des Browsers nicht mehr zerstört
    * es wird in einem HTTP-ONLY-Cookie platziert (Cookies müssen für Operatoren aktiviert werden)
 
-### Eigenschaften von Sicherheitstoken {#security-token-characteristics}
+### Sicherheits-Token-Eigenschaften {#security-token-characteristics}
 
 Das Sicherheits-Token weist folgende Merkmale auf:
 
@@ -222,7 +222,7 @@ Das Sicherheits-Token weist folgende Merkmale auf:
    * die Seiten-URLs aktualisiert werden, um das Sicherheitstoken zu aktualisieren
    * die Formulare auch über ein unsichtbares Feld mit dem Token aktualisiert werden
 
-#### Bewegung des Sicherheits-Tokens {#security-token-movement}
+#### Sicherheits-Token-Bewegung {#security-token-movement}
 
 Beim Zugriff über die Konsole ist dies:
 
@@ -238,7 +238,7 @@ Aus einem SOAP-Aufruf:
 
 * hinzugefügt, um Header aufzurufen
 
-### Beispiele {#call-examples}
+### Aufrufbeispiele {#call-examples}
 
 * Verwenden von **HttpSoapConnection/SoapService**:
 
@@ -277,7 +277,7 @@ Aus einem SOAP-Aufruf:
 
 >[!NOTE]
 >
->Die in den folgenden **HttpServletRequest** -Aufrufen verwendeten URLs müssen im Abschnitt &quot;URL-Berechtigungen&quot;der Datei &quot; **serverConf.xml** &quot;in Zulassungsliste sein. Dies gilt auch für die URL des Servers selbst.
+>Die URLs, die in den folgenden **HttpServletRequest**-Aufrufen verwendet werden, müssen im Abschnitt &quot;URL-Berechtigungen&quot;der Datei **serverConf.xml** in Zulassungsliste sein. Dies gilt auch für die URL des Servers selbst.
 
 Anmeldeausführung():
 
