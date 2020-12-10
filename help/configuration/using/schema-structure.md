@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 12%
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 # Schemastruktur{#schema-structure}
 
-Die Grundstruktur eines `<srcschema>` ist wie folgt:
+Die Grundstruktur eines `<srcschema>` lautet wie folgt:
 
 ```
 <srcSchema>
@@ -101,7 +101,7 @@ In unserem Beispiel wird das Hauptelement durch die folgende Zeile dargestellt:
 <element name="recipient">
 ```
 
-Mithilfe der Elemente **`<attribute>`** und **`<element>`** , die dem Hauptelement folgen, können Sie die Speicherorte und Namen der Datenelemente in der XML-Struktur definieren.
+Die Elemente **`<attribute>`** und **`<element>`**, die dem Hauptelement folgen, ermöglichen es Ihnen, die Speicherorte und Namen der Datenelemente in der XML-Struktur zu definieren.
 
 In unserem Beispiel-Schema sind dies:
 
@@ -116,34 +116,34 @@ In unserem Beispiel-Schema sind dies:
 
 Folgende Regeln müssen eingehalten werden:
 
-* Jede **`<element>`** und **`<attribute>`** muss durch den Namen über das **Attribut name** identifiziert werden.
+* Jedes **`<element>`** und **`<attribute>`** müssen mit dem Namen über das **name**-Attribut identifiziert werden.
 
    >[!IMPORTANT]
    >
    >Der Name des Elements sollte kurz sein, vorzugsweise in Englisch, und nur autorisierte Zeichen gemäß den XML-Benennungsregeln einschließen.
 
-* Nur **`<element>`** Elemente können **`<attribute>`** Elemente und **`<element>`** Elemente in der XML-Struktur enthalten.
-* Ein **`<attribute>`** Element muss einen eindeutigen Namen innerhalb eines **`<element>`** Elements haben.
+* Nur **`<element>`**-Elemente können **`<attribute>`**-Elemente und **`<element>`**-Elemente in der XML-Struktur enthalten.
+* Ein **`<attribute>`**-Element muss einen eindeutigen Namen innerhalb eines **`<element>`** haben.
 * Die Verwendung von **`<elements>`** in mehrzeiligen Datenzeichenfolgen wird empfohlen.
 
 ## Datentypen {#data-types}
 
-Der Datentyp wird über das **type** -Attribut in den **`<attribute>`** Elementen und **`<element>`** -Elementen eingegeben.
+Der Datentyp wird über das Attribut **type** in den Elementen **`<attribute>`** und **`<element>`** eingegeben.
 
-Eine detaillierte Liste finden Sie in der Beschreibung des [`<attribute>` Elements](../../configuration/using/elements-and-attributes.md#attribute--element) und des [`<element>` Elements](../../configuration/using/elements-and-attributes.md#element--element).
+Eine detaillierte Liste finden Sie in der Beschreibung des [`<attribute>`-Elements](../../configuration/using/schema/attribute.md) und des [`<element>`-Elements](../../configuration/using/schema/element.md)).
 
-Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Ist dies der Fall, wird es nur dazu verwendet, die Elemente hierarchisch zu strukturieren (**`<location>`** Element in unserem Beispiel).
+Wenn dieses Attribut nicht gefüllt wird, ist **string** der Standarddatentyp, es sei denn, das Element enthält untergeordnete Elemente. Ist dies der Fall, wird es nur zur hierarchischen Struktur der Elemente verwendet (**`<location>`** Element in unserem Beispiel).
 
 Die folgenden Datentypen werden in Schemas unterstützt:
 
 * **Zeichenfolge**: Zeichenfolge. Beispiele: einen Vornamen, eine Stadt usw.
 
-   Die Größe kann über das Attribut **length** angegeben werden (optional, Standardwert &quot;255&quot;).
+   Die Größe kann über das Attribut **length** (optional, Standardwert &quot;255&quot;) angegeben werden.
 
 * **boolean**: Boolesches Feld. Beispiel für mögliche Werte: true/false, 0/1, ja/nein usw.
-* **byte**, **short**, **long**: ganze Zahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl der Punkte usw.
+* **byte**,  **short**,  **long**: ganze Zahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl der Punkte usw.
 * **dublette**: Gleitkommazahl mit Dublette-Präzision. Beispiele: Preis, Preis usw.
-* **Datum**, **Uhrzeit**: Daten und Daten + Uhrzeiten. Beispiele: Geburtsdatum, Kaufdatum usw.
+* **Datum**,  **Uhrzeit**: Daten und Daten + Uhrzeiten. Beispiele: Geburtsdatum, Kaufdatum usw.
 * **datetimenotz**: Datum + Uhrzeit ohne Zeitzonendaten.
 * **timespan**: Dauer. Beispiel: Ranghöhe.
 * **memo**: Lange Textfelder (mehrere Zeilen). Beispiele: eine Beschreibung, einen Kommentar usw.
@@ -151,7 +151,7 @@ Die folgenden Datentypen werden in Schemas unterstützt:
 
    >[!NOTE]
    >
-   >Um ein **uuid** -Feld in anderen Engines als Microsoft SQL Server zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit ihrem Standardwert ausgefüllt werden.
+   >Um ein **uuid**-Feld in anderen Maschinen als Microsoft SQL Server zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit ihrem Standardwert ausgefüllt werden.
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 
@@ -185,8 +185,8 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
   <tr> 
    <td> String <br /> </td> 
    <td> VARCHAR(255)<br /> </td> 
-   <td> VARCHAR2 (NVARCHAR2, wenn Unicode)<br /> </td> 
-   <td> VARCHAR (VARCHAR-ZEICHEN EINSTELLEN VON UNICODE, falls Unicode<br /> </td> 
+   <td> VARCHAR2 (NVARCHAR2 bei Unicode)<br /> </td> 
+   <td> VARCHAR (VARCHAR CHARACTER SET UNICODE if Unicode)<br /> </td> 
    <td> VARCHAR<br /> </td> 
    <td> VARCHAR (NVARCHAR, wenn Unicode)<br /> </td> 
   </tr> 
@@ -216,11 +216,11 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
   </tr> 
   <tr> 
    <td> Doppelt<br /> </td> 
-   <td> PRÄZISIERUNG DER Dublette<br /> </td> 
-   <td> FLUSS<br /> </td> 
-   <td> FLUSS<br /> </td> 
-   <td> DOUBLE<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> PRÄZISION DER Dublette<br /> </td> 
+   <td> FLOAT<br /> </td> 
+   <td> FLOAT<br /> </td> 
+   <td> DUBLETTE<br /> </td> 
+   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Lang<br /> </td> 
@@ -247,12 +247,12 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
    <td> DATETIME<br /> </td> 
   </tr> 
   <tr> 
-   <td> Uhrzeit<br /> </td> 
+   <td> Zeit<br /> </td> 
    <td> UHRZEIT<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> FLOAT<br /> </td> 
    <td> UHRZEIT<br /> </td> 
    <td> UHRZEIT<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Datum/Uhrzeit<br /> </td> 
@@ -272,17 +272,17 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
   </tr> 
   <tr> 
    <td> Zeitspanne<br /> </td> 
-   <td> PRÄZISIERUNG DER Dublette<br /> </td> 
-   <td> FLUSS<br /> </td> 
-   <td> FLUSS<br /> </td> 
-   <td> DOUBLE<br /> </td> 
-   <td> FLUSS<br /> </td> 
+   <td> PRÄZISION DER Dublette<br /> </td> 
+   <td> FLOAT<br /> </td> 
+   <td> FLOAT<br /> </td> 
+   <td> DUBLETTE<br /> </td> 
+   <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
    <td> Memo<br /> </td> 
    <td> TEXT<br /> </td> 
    <td> CLOB (NCLOB, wenn Unicode)<br /> </td> 
-   <td> CLOB (CLOB CHARACTER SET UNICODE, falls Unicode)<br /> </td> 
+   <td> CLOB (CLOB CHARACTER SET UNICODE if Unicode)<br /> </td> 
    <td> CLOB(6M)<br /> </td> 
    <td> TEXT (NTEXT, wenn Unicode)<br /> </td> 
   </tr> 
@@ -292,18 +292,18 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
    <td> BLOB<br /> </td> 
    <td> BLOB<br /> </td> 
    <td> BLOB(4M)<br /> </td> 
-   <td> IMAGE<br /> </td> 
+   <td> BILD<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Eigenschaften {#properties}
 
-Die Elemente **`<elements>`** und **`<attributes>`** Elemente des data-Schemas können mit verschiedenen Eigenschaften bereichert werden. Sie können eine Beschriftung ausfüllen, um das aktuelle Element zu beschreiben.
+Die Elemente **`<elements>`** und **`<attributes>`** des data-Schemas können mit verschiedenen Eigenschaften bereichert werden. Sie können eine Beschriftung ausfüllen, um das aktuelle Element zu beschreiben.
 
 ### Beschriftungen und Beschreibungen {#labels-and-descriptions}
 
-* Mit der **label** -Eigenschaft können Sie eine kurze Beschreibung eingeben.
+* Mit der Eigenschaft **label** können Sie eine kurze Beschreibung eingeben.
 
    >[!NOTE]
    >
@@ -319,7 +319,7 @@ Die Elemente **`<elements>`** und **`<attributes>`** Elemente des data-Schemas k
 
    ![](assets/d_ncs_integration_schema_label.png)
 
-* Mit der **desc** -Eigenschaft können Sie eine lange Beschreibung eingeben.
+* Mit der Eigenschaft **desc** können Sie eine lange Beschreibung eingeben.
 
    Die Beschreibung ist im Eingabefeld in der Statusleiste des Hauptfensters der Adobe Campaign-Client-Konsole zu finden.
 
@@ -335,9 +335,9 @@ Die Elemente **`<elements>`** und **`<attributes>`** Elemente des data-Schemas k
 
 ### Standardwerte {#default-values}
 
-Mit der **default** -Eigenschaft können Sie einen Ausdruck definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
+Mit der Eigenschaft **default** können Sie einen Ausdruck definieren, der bei der Inhaltserstellung einen Standardwert zurückgibt.
 
-Der Wert muss ein mit XPath kompatibler Ausdruck sein. Weitere Informationen finden Sie unter [Verweisen auf XPath](../../configuration/using/schema-structure.md#referencing-with-xpath).
+Der Wert muss ein mit XPath kompatibler Ausdruck sein. Weitere Informationen finden Sie unter [Mit XPath](../../configuration/using/schema-structure.md#referencing-with-xpath) verweisen.
 
 **Beispiel**:
 
@@ -348,7 +348,7 @@ Der Wert muss ein mit XPath kompatibler Ausdruck sein. Weitere Informationen fin
 
    >[!NOTE]
    >
-   >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration>Zähler]** zum Verwalten von Zählern verwendet.
+   >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration>Zähler]** verwendet, um Zähler zu verwalten.
 
 Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<default>  or  <sqldefault>   field.  </sqldefault> </default>`
 
@@ -360,7 +360,7 @@ Um einen Standardwert mit einem Feld zu verknüpfen, können Sie die Variable `<
 
 #### Kostenlose Auflistung {#free-enumeration}
 
-Mit der **userEnum** -Eigenschaft können Sie eine kostenlose Auflistung definieren, um die in diesem Feld eingegebenen Werte zu speichern und anzuzeigen. Die Syntax sieht folgendermaßen aus:
+Mit der Eigenschaft **userEnum** können Sie eine kostenlose Auflistung definieren, um die in diesem Feld eingegebenen Werte zu speichern und anzuzeigen. Die Syntax sieht folgendermaßen aus:
 
 **userEnum=&quot;Name der Auflistung&quot;**
 
@@ -374,11 +374,11 @@ Diese Werte werden in einer Dropdown-Liste aus dem Eingabefeld angezeigt:
 >
 >In der Adobe Campaign-Client-Konsole wird der Knoten **[!UICONTROL Administration > Auflistungen]** zum Verwalten von Auflistungen verwendet.
 
-#### Auflistung festlegen {#set-enumeration}
+#### Auflistung einstellen {#set-enumeration}
 
-Mit der **enum** -Eigenschaft können Sie eine feste Auflistung definieren, die verwendet wird, wenn die Liste der möglichen Werte im Voraus bekannt ist.
+Mit der Eigenschaft **enum** können Sie eine feste Auflistung definieren, die verwendet wird, wenn die Liste der möglichen Werte im Voraus bekannt ist.
 
-Das **enum** -Attribut bezieht sich auf die Definition einer Auflistung-Klasse, die im Schema außerhalb des Hauptelements gefüllt wird.
+Das **enum**-Attribut bezieht sich auf die Definition einer Auflistung-Klasse, die im Schema außerhalb des Hauptelements gefüllt wird.
 
 Auflistungen ermöglichen es dem Benutzer, einen Wert aus einer Dropdown-Liste auszuwählen, anstatt ihn in ein reguläres Eingabefeld einzugeben:
 
@@ -394,7 +394,7 @@ Beispiel für eine Deklaration einer Auflistung im Schema data:
 </enumeration>
 ```
 
-Eine Auflistung wird über das **`<enumeration>`** Element außerhalb des Hauptelements deklariert.
+Eine Auflistung wird über das **`<enumeration>`**-Element außerhalb des Hauptelements deklariert.
 
 Die Eigenschaften der Auflistung lauten wie folgt:
 
@@ -403,16 +403,16 @@ Die Eigenschaften der Auflistung lauten wie folgt:
 * **name**: Name der Auflistung,
 * **Standard**: Standardwert der Auflistung.
 
-Die Werte für die Auflistung werden im **`<value>`** Element mit den folgenden Attributen deklariert:
+Die Werte für die Auflistung werden im Element **`<value>`** mit den folgenden Attributen deklariert:
 
 * **name**: Name des intern gespeicherten Werts,
 * **label**: über die grafische Oberfläche angezeigt.
 
-#### dbenum-Auflistung {#dbenum-enumeration}
+#### dbenum Auflistung {#dbenum-enumeration}
 
-* Mit der **dbenum** -Eigenschaft können Sie eine Auflistung definieren, deren Eigenschaften denen der **enum** -Eigenschaft ähnlich sind.
+* Mit der Eigenschaft **dbenum** können Sie eine Auflistung definieren, deren Eigenschaften denen der Eigenschaft **enum** ähnlich sind.
 
-   Das **name** -Attribut speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
+   Das Attribut **name** speichert den Wert jedoch nicht intern, sondern speichert einen Code, mit dem Sie die betreffenden Tabellen erweitern können, ohne ihr Schema zu ändern.
 
    Die Werte werden über den Knoten **[!UICONTROL Administration>Auflistungen]** definiert.
 
@@ -447,9 +447,9 @@ Beispiel des um diese Eigenschaften ergänzten Schemas:
 
 Eine Kollektion ist eine Liste von Elementen mit gleichem Namen und auf gleicher Hierarchieebene.
 
-Mit dem **ungebundenen** Attribut mit dem Wert &quot;true&quot;können Sie ein Collection-Element füllen.
+Mit dem Attribut **unbound** mit dem Wert &quot;true&quot;können Sie ein Collection-Element füllen.
 
-**Beispiel**: Definition des **`<group>`** Collection-Elements im Schema.
+**Beispiel**: Definition des  **`<group>`** Collection-Elements im Schema.
 
 ```
 <element name="group" unbound="true" label="List of groups">
@@ -464,7 +464,7 @@ Mit Projektion des XML-Inhalts:
 <group label="Group2"/>
 ```
 
-## Mit XPath referenzieren {#referencing-with-xpath}
+## Verweisen mit XPath {#referencing-with-xpath}
 
 Die XPath-Sprache wird in Adobe Campaign verwendet, um ein zu einem Datenschema gehörendes Element oder Attribut zu adressieren.
 
@@ -475,17 +475,17 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 **Beispiel**:
 
 * **@email**: wählt die E-Mail aus,
-* **location/@city**: wählt das Attribut &quot;city&quot;unter dem **`<location>`** Element aus
+* **location/@city**: wählt das Attribut &quot;city&quot;unter dem  **`<location>`** Element aus
 * **../@email**: wählt die E-Mail-Adresse aus dem übergeordneten Element des aktuellen Elements aus
-* **Gruppe`[1]/@label`**: wählt das Attribut &quot;label&quot;aus, das dem ersten **`<group>`** Collection-Element untergeordnet ist
-* **Gruppe`[@label='test1']`**: wählt das Attribut &quot;label&quot;aus, das dem **`<group>`** Element untergeordnet ist und den Wert &quot;test1&quot;enthält
+* **Gruppe`[1]/@label`**: wählt das Attribut &quot;label&quot;aus, das dem ersten  **`<group>`** Collection-Element untergeordnet ist
+* **Gruppe`[@label='test1']`**: wählt das Attribut &quot;label&quot;aus, das dem  **`<group>`** Element untergeordnet ist und den Wert &quot;test1&quot;enthält
 
 >[!NOTE]
 >
 >Eine zusätzliche Einschränkung wird hinzugefügt, wenn der Pfad ein Unterelement passiert. In diesem Fall muss der folgende Ausdruck zwischen Klammern stehen:
 >
->* **location/@city** ist ungültig; verwenden **`[location/@city]`**
->* **`[@email]`** und **@email** entsprechen
+>* **location/@** city ist nicht gültig; verwenden  **`[location/@city]`**
+>* **`[@email]`** und  **@** emailare-Entsprechung
 
 >
 
@@ -493,7 +493,7 @@ Elemente werden mit ihren Namen bezeichnet, während den Namen von Attributen ei
 
 Es ist auch möglich, komplexe Ausdruck wie die folgenden arithmetischen Vorgänge zu definieren:
 
-* **@gender+1**: 1 zum Inhalt des Attributs **gender** hinzufügt,
+* **@gender+1**: 1 zum Inhalt des  **** genderattribute hinzufügt,
 * **@email + &#39;(&#39;+@created+&#39;)&#39;**: erstellt eine Zeichenfolge unter Verwendung des Werts der E-Mail-Adresse, die zum Erstellungsdatum zwischen Klammern hinzugefügt wird (für den Zeichenfolgentyp muss die Konstante in Anführungszeichen gesetzt werden).
 
 Die Ausdrücke wurden um Funktionen auf hoher Ebene erweitert, um das Potenzial dieser Sprache zu erweitern.
@@ -508,11 +508,11 @@ Sie können über einen beliebigen Ausdruck-Editor in der Adobe Campaign-Client-
 * **Jahr(@erstellt)**: gibt das Jahr des Datums zurück, das im Attribut &quot;erstellt&quot;enthalten ist.
 * **GetEmailDomain(@email)**: gibt die Domäne der E-Mail-Adresse zurück.
 
-## Erstellen einer Zeichenfolge über die Zeichenfolge &quot;calculate&quot; {#building-a-string-via-the-compute-string}
+## Erstellen einer Zeichenfolge über die Zeichenfolge {#building-a-string-via-the-compute-string}
 
-Eine **Compute-Zeichenfolge** ist ein XPath-Ausdruck, mit dem eine Zeichenfolge erstellt wird, die einen Datensatz in einer mit dem Schema verknüpften Tabelle darstellt. **Die Rechenzeichenfolge** wird hauptsächlich in der grafischen Oberfläche verwendet, um die Beschriftung eines ausgewählten Datensatzes anzuzeigen.
+Ein **Compute string** ist ein XPath-Ausdruck, mit dem eine Zeichenfolge erstellt wird, die einen Datensatz in einer mit dem Schema verknüpften Tabelle darstellt. **Die** Datenzeichenfolge wird hauptsächlich in der grafischen Oberfläche verwendet, um die Beschriftung eines ausgewählten Datensatzes anzuzeigen.
 
-Die **Compute-Zeichenfolge** wird über das **`<compute-string>`** Element unter dem Hauptelement des data-Schemas definiert. Ein **expr** -Attribut enthält einen XPath-Ausdruck zur Berechnung der Anzeige.
+Die **Compute string** wird über das **`<compute-string>`**-Element unter dem Hauptelement des data-Schemas definiert. Ein **expr**-Attribut enthält einen XPath-Ausdruck zur Berechnung der Anzeige.
 
 **Beispiel**: die Zeichenfolge der Empfänger-Tabelle berechnen.
 
