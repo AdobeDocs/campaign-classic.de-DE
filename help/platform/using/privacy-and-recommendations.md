@@ -6,9 +6,9 @@ description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 97e039e48068e3862bc6640711efe54f21fc0f15
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 100%
 
@@ -80,38 +80,38 @@ Bei der Verwaltung des Datenschutzes ist es wichtig zu definieren, welche Daten 
 
 Bei der Integration von Campaign mit anderen Experience Cloud-Lösungen, bei denen Audiences von einem System auf ein anderes übertragen werden können, wie z. B. mit [Adobe Analytics](../../platform/using/adobe-analytics-data-connector.md), [Audience Manager oder People Coreservice](../../integrations/using/sharing-audiences-with-adobe-experience-cloud.md), [Campaign Standard](../../integrations/using/synchronizing-audiences.md) oder mit anderen Lösungen über [CRM-Connectoren](../../platform/using/crm-connectors.md), müssen Sie dem Schutz personenbezogener Daten besondere Aufmerksamkeit widmen.
 
-Die [wichtigsten Verordnungen](#privacy-regulations) beziehen sich auf die verschiedenen Entitäten, die Daten wie folgt verwalten:
+Die [wichtigsten Rechtsvorschriften](#privacy-regulations) beziehen sich auf die verschiedenen Einheiten, die Daten wie folgt verwalten:
 * Ein **Datenverantwortlicher** ist die Autorität, die die Mittel und den Zweck der Erfassung, Verwendung und Weitergabe personenbezogener Daten festlegt.
 * Ein **Auftragsverarbeiter** ist eine natürliche oder juristische Person, die personenbezogene Daten gemäß den Anweisungen des Datenverantwortlichen erfasst, verwendet oder weitergibt.
 * Eine **betroffene Person** ist eine lebende Person, deren personenbezogene Daten erfasst, verwendet oder weitergegeben werden und die direkt oder indirekt anhand dieser personenbezogenen Daten identifiziert werden kann.
 
 Als Unternehmen, das personenbezogene Daten erfasst und weitergibt, sind Sie daher der Datenverantwortliche, Ihre Kunden sind die betroffenen Personen und Adobe Campaign fungiert als Auftragsverarbeiter, wenn wir deren personenbezogenen Daten gemäß Ihren Anweisungen verarbeiten. Beachten Sie, dass es in Ihrer Verantwortung als Datenverantwortlicher liegt, die Beziehung zu den betroffenen Personen zu verwalten, z. B. bei der Verwaltung von [Datenschutzanfragen](#privacy-requests).
 
-### Beispiel-Anwendungsfall {#use-case-scenario}
+### Anwendungsszenario {#use-case-scenario}
 
-Hier ein allgemein gehaltenes Beispiel eines DSGVO-Kundenerlebnisses, das veranschaulicht, wie sich die Interaktionen zwischen den Beteiligten gestalten.
+Um zu veranschaulichen, wie die verschiedenen Personas interagieren, finden Sie hier ein Beispiel für ein DSGVO-Kundenerlebnis auf hoher Ebene.
 
-Der Kunde von Adobe Campaign ist in diesem Beispiel eine Fluggesellschaft. Diese ist der **Datenverantwortliche**, alle ihre Kunden sind **betroffene Personen**. Laura ist in diesem Fall eine Kundin der Fluggesellschaft.
+In diesem Beispiel ist eine Fluggesellschaft der Kunde von Adobe Campaign. Diese Firma ist der **Datenverantwortliche** und alle Kunden der Fluggesellschaft sind **betroffene Personen**. Laura ist in diesem speziellen Fall eine Kundin der Fluggesellschaft.
 
-Die Personen in unserem Beispiel haben folgende Rollen:
+Die Personas in unserem Beispiel haben folgende Rollen:
 
-* **Laura** ist die **betroffene Person**. Sie ist der Empfänger, der Nachrichten von der Fluggesellschaft erhält. Laura ist zwar eine Vielfliegerin, doch womöglich möchte sie irgendwann keine personalisierte Werbung oder Marketing-Kommunikation mehr von der Fluggesellschaft erhalten. Dann wird sie bei der Fluggesellschaft eine Anfrage zur Löschung ihrer Vielfliegernummer einreichen, dies auf Grundlage der dazu vorgesehenen Verfahren.
+* **Laura** ist die **betroffene Person**. Sie ist die Empfängerin, die Nachrichten von der Fluggesellschaft erhält. Laura mag eine Vielfliegerin sein, kann aber irgendwann entscheiden, dass sie keine personalisierten Werbe- oder Marketing-Botschaften mehr von der Fluggesellschaft wünscht. Sie wird die Fluggesellschaft (anhand des entsprechenden Vorgangs) bitten, ihre Vielfliegernummer zu löschen.
 
-* **Anne** ist die **Datenverantwortliche** bei der Fluggesellschaft. Sie erhält Lauras Anfrage, ruft die erforderlichen Kennungen ab, um die betroffene Person zu identifizieren, und leitet die Anfrage in Adobe Campaign weiter.
+* **Anne** ist die **Datenverantwortliche** der Fluggesellschaft. Sie erhält Lauras Anfrage, ruft nützliche IDs ab, die zur Identifizierung der betroffenen Person erforderlich sind, und sendet die Anfrage in Adobe Campaign.
 
 * **Adobe Campaign** ist der **Auftragsverarbeiter**.
 
 ![](assets/privacy-gdpr-flow.png)
 
-Dies ist der übliche Fluss für ein derartiges Szenario:
+Dies ist das übliche Verfahren für ein derartiges Szenario:
 
-1. Die **betroffene Person** (Laura) übermittelt eine DSGVO-Anfrage an die **Datenverantwortliche** per E-Mail, über die Kundenunterstützung oder über ein Webportal.
+1. Die **betroffene Person** (Laura) übermittelt per E-Mail, über die Kundenunterstützung oder über ein Web-Portal eine DSGVO-Anfrage an die **Datenverantwortliche**.
 
 1. Die **Datenverantwortliche** (Anne) sendet die DSGVO-Anfrage über die Benutzerschnittstelle oder eine API an Campaign.
 
 1. Nachdem der **Auftragsverarbeiter** (Adobe Campaign) die Informationen erhalten hat, wird er in Bezug auf die DSGVO-Anfrage aktiv und sendet eine Antwort oder eine Bestätigung an die **Datenverantwortliche** (Anne).
 
-1. Die **Datenverantwortliche** (Anne) prüft die Informationen und sendet sie an die **betroffene Person** (Laura) zurück.
+1. Die **Datenverantwortliche** (Anne) prüft die Informationen und sendet sie an die **betroffene Person** (Laura).
 
 ## Datenakquise {#data-acquisition}
 
@@ -176,7 +176,7 @@ Vorschriften wie die EU-Datenschutz-Grundverordnung (DSGVO) besagen, dass Untern
 
 Mit Adobe Campaign können Sie die gesendeten E-Mails und das Verhalten der Empfänger Ihrer Sendungen verfolgen: Öffnen, Klicks auf Links, Abmeldungen usw. Weitere Informationen hierzu finden Sie unter [Über das Nachrichten-Tracking](../../delivery/using/about-message-tracking.md).
 
-Fügen Sie zu diesem Zweck [getrackte Links](../../delivery/using/how-to-configure-tracked-links.md) zu Ihren Nachrichten hinzu, um die Wirkung Ihrer Sendungen und des Verhaltens Ihrer Empfänger im Tab [Tracking](../../delivery/using/monitoring-a-delivery.md#tracking-logs) des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht [Trackingindikatoren](../../reporting/using/delivery-reports.md#tracking-indicators) interpretiert.
+Fügen Sie zu diesem Zweck [getrackte Links](../../delivery/using/how-to-configure-tracked-links.md) zu Ihren Nachrichten hinzu, um die Wirkung Ihrer Sendungen und des Verhaltens Ihrer Empfänger im Tab [Tracking](../../delivery/using/delivery-dashboard.md#tracking-logs) des Versand-Dashboards zu messen. Tracking-Daten werden im Bericht [Trackingindikatoren](../../reporting/using/delivery-reports.md#tracking-indicators) interpretiert.
 
 ### Webtracking {#web-tracking}
 
