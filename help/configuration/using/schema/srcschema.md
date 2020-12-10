@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1818bd2aeb60689b2ce0e59cb0bd157f000de513
+source-git-commit: c366326f6a439dabaa42fdd799ec2e55c180a929
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Ohne
 
 ## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-9}
 
-Die Darstellung des Schemas ist unter [Info zum Schema](../../configuration/using/about-schema-reference.md) und [Schema](../../configuration/using/schema-structure.md) verfügbar.
+Die Darstellung des Schemas ist unter [Info zum Schema](../../../configuration/using/about-schema-reference.md) und [Schema](../../../configuration/using/schema-structure.md) verfügbar.
 
 ## Attributbeschreibung {#attribute-description-14}
 
