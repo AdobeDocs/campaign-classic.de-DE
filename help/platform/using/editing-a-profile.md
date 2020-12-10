@@ -6,9 +6,9 @@ description: Profile bearbeiten
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -97,5 +97,5 @@ In der Regel enthält die anpassbare Liste folgende Daten: die geklickte URL, Da
 
 >[!NOTE]
 >
->Auf [dieser Seite](../../delivery/using/monitoring-a-delivery.md) finden Sie weitere Informationen zur Trackingfunktion.
+>Auf [dieser Seite](../../delivery/using/delivery-dashboard.md) finden Sie weitere Informationen zur Trackingfunktion.
 
