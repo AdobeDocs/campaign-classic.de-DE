@@ -6,9 +6,9 @@ description: Erfahren Sie, wie Sie Push-Benachrichtigungen erstellen.
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Ve
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
 * [Quarantäne für Push-Benachrichtigungen](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Sendungen überwachen](../../delivery/using/monitoring-a-delivery.md)
+* [Sendungen überwachen](../../delivery/using/about-delivery-monitoring.md)
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 
 ## Versand von Benachrichtigungen auf Android-Geräte {#sending-notifications-on-android}
@@ -138,5 +138,5 @@ Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finde
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
 * [Quarantäne für Push-Benachrichtigungen](../../delivery/using/understanding-quarantine-management.md#push-notification-quarantines)
-* [Sendungen überwachen](../../delivery/using/monitoring-a-delivery.md)
+* [Sendungen überwachen](../../delivery/using/about-delivery-monitoring.md)
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
