@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
+source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '3676'
 ht-degree: 99%
@@ -339,7 +339,7 @@ Die neue Option **Maximale Laufzeit der Personalisierung** in den Versandeigensc
 
 Die Beispiele für API-Aufrufe mit **HttpServletRequest** mit logon() und query() wurden aktualisiert. [Mehr dazu](../../configuration/using/web-service-calls.md)
 
-In der Schemadefinition wurde eine Empfehlung für das Attribut **sqlDefault** hinzugefügt. [Mehr dazu](../../configuration/using/elements-and-attributes.md#attribute-description)
+In der Schemadefinition wurde eine Empfehlung für das Attribut **sqlDefault** hinzugefügt. [Mehr dazu](../../configuration/using/schema/attribute.md)).
 
 Die Integration zwischen Adobe Campaign und der Adobe Echtzeit-Kundendatenplattform wird jetzt im Handbuch **Integration mit Adobe Experience Cloud** beschrieben. [Mehr dazu](../../integrations/using/about-campaign-integrations.md)
 
