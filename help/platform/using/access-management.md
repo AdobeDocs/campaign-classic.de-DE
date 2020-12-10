@@ -6,11 +6,11 @@ description: Zugriffsverwaltung
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '3143'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 647a872d71d19802d7334a6e8f881f8d7ad94d13
+workflow-type: tm+mt
+source-wordcount: '3140'
+ht-degree: 99%
 
 ---
 
@@ -203,7 +203,7 @@ Der technische Benutzer &#39;webapp&#39; verfügt standardmäßig über die spez
 
 >[!NOTE]
 >
->Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
+>Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://helpx.adobe.com/campaign/kb/acc-security.html).
 
 ## Benutzergruppen {#operator-groups}
 
@@ -349,7 +349,7 @@ Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte O
 
 Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](/help/platform/using/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/do-not-localize/user_management.png)](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/access-rights-matrix.pdf)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)
 
 ## Zugriffsverwaltungsordner {#folder-access-management}
 
