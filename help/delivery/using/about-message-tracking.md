@@ -6,9 +6,9 @@ description: Über das Nachrichten-Tracking
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Im Rahmen eines E-Mail-Versands können Sie mithilfe des Trackings die gesendete
 
 Tracking-Metriken können in den Berichten **[!UICONTROL URLs und Clickstreams]**, **[!UICONTROL Trackingstatistiken]** und **[!UICONTROL Klickposition]** sowie im Tab **[!UICONTROL Tracking]** des Versands angesehen werden.
 
-Im Versand-Dashboard können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/monitoring-a-delivery.md).
+Im Versand-Dashboard können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/delivery-dashboard.md).
 
 **Verwandte Themen**:
 
