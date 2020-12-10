@@ -6,9 +6,9 @@ description: Häufig gestellte Fragen zu Adobe Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Die Konfiguration der VPN-Sicherheitszone in Adobe Campaign Classic erfolgt übe
 
 Adobe Campaign ist mit einer Reihe von Dashboards und Tools zur Überwachung des E-Mail-Versands ausgestattet.
 
-[Hier erfahren Sie](../../delivery/using/monitoring-a-delivery.md), wie Sie Ihre Nachrichten senden, die Durchführung überwachen und Fehler beheben können.
+[Hier erfahren Sie](../../delivery/using/about-delivery-monitoring.md), wie Sie Ihre Nachrichten senden, die Durchführung überwachen und Fehler beheben können.
 
 ## 5. Kann ich die Ausführung von Workflows überwachen? {#can-i-monitor-workflow-execution}
 
