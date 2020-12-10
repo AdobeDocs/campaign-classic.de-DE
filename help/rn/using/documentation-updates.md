@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
+source-git-commit: 5406b1cd6f9cf4f87071a9976be1728ba9d4fcef
 workflow-type: tm+mt
-source-wordcount: '3679'
+source-wordcount: '3676'
 ht-degree: 99%
 
 ---
@@ -311,7 +311,7 @@ Die Option „WdbcOptions_TempDbName“ wurde der Liste der Kampagnenoptionen hi
 
 Die Seite „FDA-Matrix“ wurde [hierher](../../installation/using/remote-database-access-rights.md) verschoben.
 
-Die Seite „Zugriffsberechtigungsmatrix“ wurde [hierher](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/getting-started/administration-basics/assets/accessrights.pdf) verschoben.
+Die Seite „Zugriffsberechtigungsmatrix“ wurde [hierher](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en) verschoben.
 
 Der Abschnitt, der beschreibt, wie man interaktive Inhalte mit AMP definiert, wurde verschoben. [Mehr dazu](../../delivery/using/defining-interactive-content.md)
 
