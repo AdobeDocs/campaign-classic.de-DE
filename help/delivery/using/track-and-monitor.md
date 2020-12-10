@@ -5,9 +5,9 @@ title: Tracken und überwachen von Nachrichten
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Sie haben auf die Senden-Schaltfläche geklickt? Lassen Sie uns sehen, was dann 
 Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ihre Nachricht bei Ihren Empfängern tatsächlich angekommen ist.
 
 Prüfen Sie im Versand-Dashboard von Campaign die verarbeiteten Nachrichten und Versand-Logs.
-In den Versand-Logs können Sie den Status der Nachrichten feststellen. [Mehr dazu](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard).
+In den Versand-Logs können Sie den Status der Nachrichten feststellen. [Mehr dazu](../../delivery/using/about-delivery-monitoring.md).
 
 Was passiert, wenn die Nachrichten nicht gesendet werden und ihr Status weiterhin **Ausstehend** lautet?
 
@@ -65,6 +65,6 @@ Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
 
-* [Leistungsprobleme beim Versand](../../delivery/using/monitoring-a-delivery.md#performance_issues)
+* [Leistungsprobleme beim Versand](../../delivery/using/delivery-performances.md)
 
 * [Probleme mit temporären Dateien](../../production/using/temporary-files.md) – *nur On-Premise-Kunden*
