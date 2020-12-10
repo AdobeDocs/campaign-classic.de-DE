@@ -6,9 +6,9 @@ description: Erfahren Sie mehr über Tools und Richtlinien zum Monitoring der Zu
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 100%
 
@@ -38,10 +38,10 @@ Sie können auch die folgenden Tools verwenden:
    * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
 
    Lesen Sie diesbezüglich auch den Abschnitt [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
-* Allgemein bietet Ihnen das [Versand-Dashboard](../../delivery/using/monitoring-a-delivery.md#delivery-dashboard) Zugriff auf:
-   * die [Versandzusammenfassung](../../delivery/using/monitoring-a-delivery.md#delivery-summary), die die Details des Versands und die [Anzahl der zu sendenden, der verarbeiteten und der erfolgreich gesendeten Nachrichten](../../delivery/using/monitoring-a-delivery.md#number-of-messages-sent) anzeigt;
-   * die [Versandlogs und den Versandverlauf](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history), die zeigen, welche Zielgruppe ausgeschlossen wurde und warum;
-   * die [Trackinglogs](../../delivery/using/monitoring-a-delivery.md#tracking-logs), die Tracking-Daten wie Öffnungen und Klicks anzeigen.
+* Allgemein bietet Ihnen das [Versand-Dashboard](../../delivery/using/about-delivery-monitoring.md) Zugriff auf:
+   * die [Versandzusammenfassung](../../delivery/using/delivery-dashboard.md#delivery-summary), die die Details des Versands und die Anzahl der zu sendenden, der verarbeiteten und der erfolgreich gesendeten Nachrichten anzeigt;
+   * die [Versandlogs und den Versandverlauf](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history), die zeigen, welche Zielgruppe ausgeschlossen wurde und warum;
+   * die [Trackinglogs](../../delivery/using/delivery-dashboard.md#tracking-logs), die Tracking-Daten wie Öffnungen und Klicks anzeigen.
 
 ## Richtlinien für das Monitoring {#monitoring-guidelines}
 
@@ -53,7 +53,7 @@ Im Folgenden finden Sie einige zusätzliche Richtlinien zum Zustellbarkeits-Moni
 * Prüfen Sie, ob die einzelnen Versanddurchsätze der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 * Wenn der Versand in [Schüben](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
 * Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](../../delivery/using/understanding-quarantine-management.md) der anderer Sendungen entspricht.
-* Prüfen Sie in den [Versandlogs](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
+* Prüfen Sie in den [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
 
 ## Signal Spam {#signal-spam}
 
