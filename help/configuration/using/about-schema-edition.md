@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1014'
 ht-degree: 10%
 
 ---
@@ -146,12 +146,13 @@ Beispiel für die Definition eines Standardwert:
 
 ```
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
-`
+```
 
-Example of using a common attribute as a template for a field also marked as mandatory:
+Beispiel für die Verwendung eines allgemeinen Attributs als Vorlage für ein Feld, das ebenfalls als obligatorisch gekennzeichnet ist:
+
 ```
 <attribute name="mobile" label="Mobile" template="nms:common:phone" required="true" />
-"
+```
 
 Beispiel eines berechneten Felds, das mit dem Attribut **@advanced** ausgeblendet wird:
 
