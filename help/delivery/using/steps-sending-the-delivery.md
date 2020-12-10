@@ -6,9 +6,9 @@ description: Versand konfigurieren und senden
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Nun können Sie den Versand-Assistenten schließen und die Durchführung im **[!
 
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
-* [Sendungen überwachen](../../delivery/using/monitoring-a-delivery.md)
+* [Sendungen überwachen](../../delivery/using/about-delivery-monitoring.md)
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Über das Nachrichten-Tracking](../../delivery/using/about-message-tracking.md)
 
@@ -139,7 +139,7 @@ Um eine gleichmäßige Auslastung der Kapazitäten zu gewährleisten, können Si
    >
    >Planen Sie bei der Konfiguration der letzten Schübe auch genügend Zeit für zusätzliche Versuche ein. Siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries).
 
-1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Näheres hierzu finden Sie auf [dieser Seite](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+1. Gehen Sie zur Überwachung Ihrer Sendungen zu den Versandlogs. Näheres hierzu finden Sie auf [dieser Seite](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
    Die Versandlogs enthalten die bereits in den verarbeiteten Schüben durchgeführten Sendungen (Status **[!UICONTROL Gesendet]**) sowie die in den restlichen Schüben durchzuführenden Sendungen (Status **[!UICONTROL Ausstehend]**).
 
