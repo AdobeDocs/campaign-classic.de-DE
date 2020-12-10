@@ -6,11 +6,11 @@ description: Versandberichte
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1636'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empf
 * **[!UICONTROL Unique Opens der erreichten Population]**: Schätzung der Anzahl unterschiedlicher Zielgruppenempfänger, die mindestens einmal die betreffende Nachricht geöffnet haben. Klicks auf Abmelde- und Mirrorseite-Links werden berücksichtigt.
 * **[!UICONTROL Summe der Öffnungen in Bezug auf die erreichte Population]**: Schätzung der Gesamt-Öffnungszahl durch Zielgruppenempfänger.
 * **[!UICONTROL Klicks auf den Abmelde-Link]**: Anzahl der Klicks auf den Abmelde-Link.
-* **[!UICONTROL Klicks auf den Mirrorseite-Link]**: Anzahl der Klicks auf den Mirrorseite-Link. Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert worden sein (getrackte URLs). Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../delivery/using/monitoring-a-delivery.md).
+* **[!UICONTROL Klicks auf den Mirrorseite-Link]**: Anzahl der Klicks auf den Mirrorseite-Link. Um berücksichtigt zu werden, muss der Link im Versand-Assistenten als solcher definiert worden sein (getrackte URLs). Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../delivery/using/about-delivery-monitoring.md).
 * **[!UICONTROL Schätzung der Weiterleitungen]**: Schätzung der Anzahl der E-Mails, die von Zielgruppenempfängern an andere Personen weitergeleitet wurden. Dieser Wert ist die Differenz aus den Unique Opens allgemein und den Unique Opens der Zielgruppenempfänger.
 
    >[!NOTE]
@@ -124,7 +124,7 @@ Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Webseite
 
 ![](assets/s_ncs_user_url_report.png)
 
-Sie haben die Möglichkeit, den Bericht in Bezug auf verschiedene Kriterien anzupassen: Anzahl der anzuzeigenden Ränge, Zeitraum (seit dem Start der Werbeaktion, über die ersten sechs Stunden nach dem Start usw.) oder auch Anzeigemodi der Daten (nach Titel, nach URL, nach Kategorie – lesen Sie diesbezüglich auch [diese Seite](../../delivery/using/monitoring-a-delivery.md)). Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
+Sie können den Inhalt dieses Berichts konfigurieren, indem Sie: das anzuzeigende Ergebnisdiagramm, der Zeitfilter (seit dem Aktionsstart, während der ersten 6 Stunden nach dem Start usw.) und der Datenanzeigemodus (nach Bezeichnung, nach URL, nach Kategorie). Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
 Im oberen Bereich des Berichts werden folgende Indikatoren angezeigt:
 
