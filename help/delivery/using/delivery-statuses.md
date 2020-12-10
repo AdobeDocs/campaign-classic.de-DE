@@ -1,0 +1,143 @@
+---
+solution: Campaign Classic
+product: campaign
+title: Versandstatus
+description: Erfahren Sie mehr über die Statusoptionen, die auf Ihrem Versand-Dashboard verfügbar sind.
+audience: delivery
+content-type: reference
+topic-tags: monitoring-deliveries
+translation-type: tm+mt
+source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 79%
+
+---
+
+
+# Versandstatus {#delivery-statuses}
+
+<!--ajouter intro 
+
+ajouter screenshot -->
+
+Nachdem ein Versand gesendet wurde, zeigt das Versand-Dashboard einen Status an, mit dem Sie überwachen können, ob der Versand erfolgreich war. Mögliche Status sind im folgenden Abschnitt beschrieben.
+
+![](assets/delivery-status.png)
+
+Weitere Informationen zu den verschiedenen Versänden, auf die Sie stoßen können, und zu ihrer Behebung finden Sie auf [dieser Seite](../../delivery/using/understanding-delivery-failures.md).
+
+**Verwandte Themen:**
+
+* [Versand-Dashboard](../../delivery/using/delivery-dashboard.md)
+* [Fehlerbehebung beim Versand](../../delivery/using/delivery-troubleshooting.md)
+* [Über die Zustellbarkeit](../../delivery/using/about-deliverability.md)
+
+## Liste des Versand-Status {#list-delivery-statuses}
+
+<table> 
+ <thead> 
+  <tr> 
+   <th> Status<br /> </th> 
+   <th> Definitionen und Lösungen<br /> </th> 
+  </tr> 
+ </thead> 
+ <tbody> 
+  <tr> 
+   <td> Gesendet<br /> </td> 
+   <td> Gesendet: Der Versand wurde korrekt an den E-Mail-Provider durchgeführt (aber der Empfänger hat sie nicht unbedingt erhalten).<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Ignoriert<br /> </td> 
+   <td> Der Versand wurde aufgrund eines Fehlers in der Adresse des Empfängers nicht an diesen geschickt. Sie war entweder in einer Blockierungsliste, unter Quarantäne gestellt, nicht angegeben oder ein Duplikat. <br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Fehlgeschlagen<br /> </td> 
+   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Siehe <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Verstehen der Versand-Fehler</a><br /> </td> 
+  </tr>
+  <tr> 
+   <td> Ausstehend<br /> </td> 
+   <td> Die Nachrichten sind versandbereit und werden vom Versand-Server (MTA) verarbeitet. Siehe <a href="#pending-status" target="_blank">Status „Ausstehend“</a>.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Nicht anwendbar<br /> </td> 
+   <td> Der Versandserver (MTA) hat den Versand zwar berücksichtigt, aber nicht verarbeitet.<br /> </td> 
+  </tr>  
+  <tr> 
+   <td> Versand abgebrochen<br /> </td> 
+   <td> Ein Benutzer hat den Vorgang abgebrochen.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Vom Dienstleister berücksichtigt<br /> </td> 
+   <td> Der SMS-Dienstleister hat den Versand erhalten.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> Auf Mobiltelefon erhalten<br /> </td> 
+   <td> Der Empfänger hat die SMS auf seinem Mobilgerät erhalten.<br /> </td> 
+  </tr>
+  <tr> 
+   <td> Dem Dienstleister übermittelt<br /> </td> 
+   <td> Der Versand wurde dem SMS-Dienstleister übermittelt, aber noch nicht von ihm empfangen.<br />
+   </td> 
+  </tr> 
+  <tr> 
+   <td> Vorbereitet<br /> </td> 
+   <td> Hierbei handelt es sich um einen Zwischenstatus, der ausschließlich für externe Connectoren (z. B. Mobile-Kanal) verwendet wird. Er folgt auf den 'Ausstehend'-Status, wobei der Folgestatus vom externen Connector bestimmt wird.<br /> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Weiterführende Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](../../delivery/using/deliverability-key-points.md) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
+
+## Status Ausstehend {#pending-status}
+
+Nach der Bestätigung des Versands ist dessen Status **[!UICONTROL Ausstehend]**. Das bedeutet, dass im Ausführungsprozess auf die Verfügbarkeit von Ressourcen gewartet wird.
+
+Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminiert wurde und bis zum entsprechenden Datum in der Warteschlange bleibt. Weitere Informationen hierzu finden Sie im Abschnitt [Versandauslösung](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+
+Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehend]** bleibt, kann dies folgende Gründe haben:
+
+* Der MTA (Message Transfer Agent), der für die Durchführung von Modulen und Prozessen am Versandserver und die Verwaltung des E-Mail-Versands verantwortlich ist, wurde möglicherweise noch nicht gestartet oder muss neu gestartet werden.
+
+   Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
+
+   >[!NOTE]
+   >
+   >Dieser Vorgang kann mit einem **lokalen**- oder **Hybrid**-Hostmodell ausgeführt werden, das auf den Kampagne-Server zugreift (siehe [Hostmodelle](../../installation/using/hosting-models.md)).
+
+   1. Überprüfen Sie, ob Ihre `mta@<instance>`-Module auf den MTA-Servern ausgeführt werden.
+
+      ```
+      nlserver pdump
+      HH:MM:SS > Application server for Adobe Campaign Classic (X.Y.Z YY.R build nnnn@SHA1) of DD/MM/YYYY
+      [...]
+      mta@<INSTANCENAME> (9268) - 23.0 Mb
+      [...]
+      ```
+
+   1. Wenn der MTA nicht aufgelistet ist, starten Sie ihn mit folgendem Befehl:
+
+      ```
+      nlserver start mta@<INSTANCENAME>
+      ```
+
+      >[!NOTE]
+      >
+      >Ersetzen Sie `<INSTANCENAME>` durch den Namen Ihrer Instanz (Produktion, Entwicklung usw.). Der Instanzname wird über die Konfigurationsdateien identifiziert: `[path of application]nl6/conf/config-<INSTANCENAME>.xml`
+
+* Möglicherweise wird für den Versand eine Affinität verwendet, die auf dem sendenden Server nicht konfiguriert wurde.
+
+   Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]**, um die Sendungen mit dem MTA zu verknüpfen, der die Affinität verwaltet. Weiterführende Informationen zu Affinitäten finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+
+* Wenn zu viele Kampagnen ausgeführt werden, bleibt der Status des Versands im Status &quot;Ausstehend&quot;.
+
+   Die Begrenzung der gleichzeitigen Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
+
+   Erfahren Sie mehr über die Optionen in [dieser Seite](../../installation/using/configuring-campaign-options.md).
+
+
+**Verwandte Themen:**
+
+* [Protokolle und Versandverlauf](#delivery-logs-and-history)
+* [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
+* [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
