@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
 workflow-type: tm+mt
 source-wordcount: '2216'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 98%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen          {#creating-queries}
+   + Abfragen erstellen           {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -286,7 +286,7 @@ ht-degree: 98%
       + [Landingpage erstellen](web/using/creating-a-landing-page.md)
       + [Anwendungsfall: E-Mail-Versand erstellen](web/using/use-case--creating-an-email-delivery.md)
    + Webformulare {#web-forms}
-      + [Erste Schritte mit Webformularen](web/using/about-web-forms.md)
+      + [Erste Schritte mit Web-Formularen](web/using/about-web-forms.md)
       + [Webformularvorlage verwenden](web/using/using-a-web-form-template.md)
       + [Felder zu einem Webformular hinzufügen](web/using/adding-fields-to-a-web-form.md)
       + [Statische Elemente in einem Webformular](web/using/static-elements-in-a-web-form.md)
@@ -303,7 +303,7 @@ ht-degree: 98%
       + [Wichtige Schritte zum Erstellen einer Umfrage](web/using/getting-started-with-surveys.md)
       + [Entwerfen einer Umfrage](web/using/building-a-survey.md)
       + [Antworten verwalten](web/using/managing-answers.md)
-      + [Erfasste Daten publizieren, tracken und verwenden](web/using/publish--track-and-use-collected-data.md)
+      + [Erfasste Daten veröffentlichen, tracken und verwenden](web/using/publish--track-and-use-collected-data.md)
       + [Umfragen konfigurieren](web/using/configuring-surveys.md)
       + [Anwendungsbeispiel: ein Freunde-Werben-Formular erstellen](web/using/use-case--creating-a-refer-a-friend-form.md)
 + Integration mit Adobe Experience Cloud {#integrating-with-adobe-experience-cloud}
@@ -429,7 +429,7 @@ ht-degree: 98%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring        {#monitoring}
+      + Monitoring         {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
