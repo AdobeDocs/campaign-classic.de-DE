@@ -359,7 +359,7 @@ Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisier
 
 ## Oktober 2019 {#october-2019}
 
-Die Liste der Fehlermeldungen für Campaign Standard und Campaign Classic wurde aktualisiert. [mehr dazu](https://docs.adobe.com/content/help/de/campaign-classic/technicalresources/error_messages/error_codes.html)
+Die Liste der Fehlermeldungen für Campaign Standard und Campaign Classic wurde aktualisiert. [mehr dazu](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
 Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA. [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
 
