@@ -6,11 +6,11 @@ description: Version 20.2
 audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9cf995fe58b6afd89ee54724c97681f39994eba9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2206'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ _22. Juli 2020_
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [mehr dazu](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/orange_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
@@ -140,7 +140,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Verbesserungen**
 
-* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Publikation einer Transaktionsnachrichten-Vorlage jetzt rückgängig machen, womit sie aus den Ausführungsinstanzen gelöscht wird. [Mehr dazu](../../message-center/using/template-unpublication.md).
+* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Veröffentlichung einer Transaktionsnachrichten-Vorlage jetzt aufheben, womit sie aus den Ausführungsinstanzen gelöscht wird. [Mehr dazu](../../message-center/using/template-unpublication.md).
 
 * Es gibt neue Optionen zum Festlegen von Einschränkungen beim Senden von E-Mails, die Bilder oder Anhänge enthalten. Damit lassen sich Leistungsprobleme verhindern, was besonders bei Transaktionsnachrichten nützlich ist. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -160,7 +160,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 * Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
-* Neue Option in den Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]**, um die Ausführung nach einer Beschränkung zu beenden. Der Standardwert ist 1 Stunde. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
+* Neue Option in den Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]**, um die Ausführung nach einer Begrenzung zu beenden. Der Standardwert ist 1 Stunde. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
 **Sonstige Änderungen**
 
