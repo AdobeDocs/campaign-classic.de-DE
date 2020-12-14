@@ -146,7 +146,7 @@ _5. November 2018_
 
 **Neuheiten**
 
-* Campaign-Classic-APIs sind jetzt auf einer [eigenen Seite](https://docs.adobe.com/content/help/de/campaign-classic/technicalresources/api/index.html) verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt die neue Online-Version nutzen.
+* Campaign-Classic-APIs sind jetzt auf einer [eigenen Seite](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) verfügbar. Wenn Sie die Jsapi.chm-Datei verwendet haben, sollten Sie jetzt die neue Online-Version nutzen.
 * PostgreSQL 10, Debian 9 und Teradata 16.20 werden jetzt unterstützt. Weiterführende Informationen dazu finden Sie in der [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html).
 * Bei der Erstellung einer SFTP-Verbindung kann jetzt Proxy-Authentifizierung verwendet werden. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration). (NEO-9868)
 * Bei der Erstellung eines einzelnen Versands unter Verwendung der Briefpost-Versandvorlage ist jetzt in den Versandeigenschaften eine Option mit einer **Datumsberechnungsformel** verfügbar. (NEO-9792)
