@@ -6,11 +6,11 @@ description: Webformular publizieren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1056'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Folgende Identifizierungsmöglichkeiten gibt es:
    > 
    >Diese Funktion ist besonders nützlich für Webanwendungen, aber nicht empfohlen für öffentliche Formulare. Als Zugriffskontrolloption muss &quot;Zugriffskontrolle aktivieren&quot; ausgewählt werden.
 
-Wenn Sie keine Profil aktualisieren möchten, müssen Sie die Option **[!UICONTROL Vorausladen überspringen auswählen, wenn keine ID]** ausgewählt werden muss. In diesem Fall wird jedes eingegebene Profil nach Genehmigung des Formulars der Datenbank hinzugefügt. Diese Option wird beispielsweise verwendet, wenn das Formular auf einer Website veröffentlicht wird.
+Wenn Sie keine Profile aktualisieren möchten, muss die Option **[!UICONTROL Bei nicht angegebener Identifizierung vorausgefüllte Informationen ignorieren]** ausgewählt werden. In diesem Fall wird jedes eingegebene Profil nach Genehmigung des Formulars der Datenbank hinzugefügt. Diese Option wird beispielsweise verwendet, wenn das Formular auf einer Website veröffentlicht wird.
 
 Mit der Option **[!UICONTROL Referenzierte Daten werden automatisch in das Formular geladen]** können Sie automatisch Daten, die den Eingabe- und Verbindungsfeldern des Formulars entsprechen, vorausfüllen. Dies betrifft aber keine Daten, die in den Aktivitäten **[!UICONTROL Script]** und **[!UICONTROL Test]** referenziert werden. Ist diese Option nicht ausgewählt, müssen Sie die Felder mit der Option **[!UICONTROL Ladung zusätzlicher Daten]** definieren.
 
