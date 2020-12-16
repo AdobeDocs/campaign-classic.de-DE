@@ -6,18 +6,50 @@ description: Version 19.1
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '2633'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: dc345681e8d0085b4366be0afa2d8207170c716f
+workflow-type: tm+mt
+source-wordcount: '3072'
+ht-degree: 93%
 
 ---
 
 
 # Version 19.1{#release-19-1}
 
-## ![](assets/do-not-localize/limited_2.png) Version 19.1.7 – Build 9036 {#release-19-1-7-build-9036}
+## ![](assets/do-not-localize/limited_2.png) Version 19.1.8 – Build 9039 {#release-19-1-8-build-9039}
+
+_16. Dezember 2020_
+
+>[!CAUTION]
+>
+>Diese Version enthält ein neues Verbindungsprotokoll:  Die Aktualisierung ist sowohl für den Server als auch für die Client-Konsole erforderlich, damit nach dem 21. März 2020 eine Verbindung zur Kampagne hergestellt werden kann.
+
+**Verbesserungen**
+
+* Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
+* Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline basiert, wurde geändert und nach Adobe I/O verschoben. [Weitere Informationen](../../integrations/using/configuring-adobe-io.md)
+* Nach dem Ende der Unterstützung für das Legacy-Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während der Nachrüstung auf das HTTP/2-Protokoll aktualisiert.
+* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
+* Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, wodurch verhindert wurde, dass andere SMS-Versand gesendet wurden und Leistungsprobleme auftraten.
+* Fehlerkorrektur – Beim Generieren eines Berichts mithilfe einer Workflow-Aktivität werden jetzt korrekte Prozentwerte angezeigt. (NEO-14314)
+* Es wurde ein Problem bei der Vorbereitung des Versands behoben, das auftrat, wenn die Option **Adresse des Duplikats während des Versands** ausschließen deaktiviert wurde. (NEO-13240)
+* Fehlerkorrektur – Workflows schlagen beim Ausführen einer Aktivität vom Typ **Anreicherung** jetzt nicht mehr fehl. (NEO-17338)
+* Fehlerkorrektur – Es wurde ein Fehler in Workflows behoben, der auftrat, wenn Datensätze aus einer externen Datenbank abgerufen und in die Campaign-Datenbank eingefügt wurden. (NEO-26359)
+* Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des Servers führte, indem eine Speicherbeschädigung beim Bereinigen des Ausdrucks-Parsers verhindert wurde.
+* Es wurde ein Fehler behoben, der verhinderte, dass die Funktion **NoNull** nach der Aktualisierung auf Version 9032 in Oracle-Datenbanken funktionierte. (NEO-26488)
+* Fehlerkorrektur – Es wurde ein Fehler behoben, der beim Bearbeiten der Beschreibung einer Kampagnenvorlage dazu führte, dass die Schaltfläche **Speichern** beim Einfügen von Symbolen wie beispielsweise japanischen Zeichen nicht angezeigt wurde. (NEO-27071)
+* Fehlerkorrektur – Es wurde ein Fehler behoben, durch den die Beschreibung einer Kampagne oder Kampagnenvorlage nicht gespeichert werden konnte, wenn vor dem Klicken auf die Schaltfläche **Speichern** außerhalb des Fensters geklickt wurde. (NEO-27449)
+* Fehlerkorrektur – Es wurde ein Problem auf Proxy-Konfigurationsebene behoben, durch das Sie sich nach dem letzten Windows 10-Update nicht mehr bei Adobe Campaign anmelden konnten. (NEO-27813)
+* Es wurde ein Problem behoben, das bei der Verwaltung leerer Zeilen in Protokolldateien zu Fehlern im MTA-Prozessverhalten und zu Leistungseinbußen beim Senden von Versänden führte.
+
+**Technische Entwicklungen**
+
+Tomcat wurde von Version 7 (7.0.103) auf Version 8 (8.5.57) aktualisiert. Der `tomcat-7`-Verzeichnis wird durch einen `tomcat-8`-Verzeichnis ersetzt. Unter Windows werden _is_neolane_setup.vbs_ und _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert (anstatt wie bisher in `tomcat-7/conf`). Unter Linux wird _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert.
+
+Unter Linux verwendet der Start des nlserver-Dienstes jetzt eine systemd-Einheit anstelle des Scripts /etc/init.d/nlserver6. Die Migration zum neuen Startschema wird automatisch ausgeführt, wenn Sie das Package 19.1.8 installieren. Der Befehl /etc/init.d/nlserver6 ist weiterhin verfügbar, dient aber zum Interagieren mit dem nlserver-Dienst (Start, Neustart, Anhalten usw.). Wir empfehlen, direkt den Befehl systemctl zu verwenden.
+
+## ![](assets/do-not-localize/red_2.png) Version 19.1.7 – Build 9036 {#release-19-1-7-build-9036}
 
 _15. September 2020_
 
@@ -47,7 +79,7 @@ _15. September 2020_
 * Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Publikation der Web-Applikation deaktiviert wurden. (NEO-27155)
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass bei der Zeiteinstellung in einer Workflow-Aktivität **Planung** eine falsche Zeitzone ausgewählt wurde.
 
-## ![](assets/do-not-localize/orange_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
+## ![](assets/do-not-localize/red_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
 
 >[!CAUTION]
 >
@@ -159,7 +191,7 @@ _30. Mai 2019_
 
 **Verbesserungen bei Schutzmechanismen, Stabilität und Skalierbarkeit**
 
-* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA über HTTP v2: Das FDA über HTTP-Protokoll wird häufig bei hybriden Implementierungen verwendet, insbesondere für den Abruf von Broadlogs und die Versandvorbereitung. Die Stabilität wurde verbessert, um Netzwerkprobleme und mögliche Fehler beim Abrufen oder Senden von Daten zu vermeiden. Dies setzt voraus, dass die Builds an beiden Enden der Verbindung auf dem neuesten Stand sind, da ansonsten das alte Protokoll weiterhin verwendet wird.
 * Tracking-Workflow: Die Stabilität des Tracking-Workflows wurde verbessert. Mehrere Probleme im Zusammenhang mit Trackinglog-Einfügungen/-Aktualisierungen und der individuellen URL-Tracking-Anpassung wurden behoben. Darüber hinaus erkennt der Tracking-Workflow jetzt Trackinglog-Probleme, die zu Fehlern führen könnten, und stoppt den Workflow. Diese Probleme werden jetzt verworfen und nicht mehr verarbeitet.
 * Bereinigungs-Workflow: Der Bereinigungs-Workflow wurde verbessert, um mögliche Fehler und Unterbrechungen zu vermeiden. Dadurch wird auch die Größe und Leistungsfähigkeit der Datenbank optimiert.
