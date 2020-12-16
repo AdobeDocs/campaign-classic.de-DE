@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Umfragen
-description: Erste Schritte mit Umfragen zur Kampagne
+description: Erste Schritte mit Campaign-Umfragen
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '603'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Weiterführende Informationen zur Verwaltung von Webanwendungen finden Sie in [d
 >
 >Aus Datenschutzgründen empfehlen wir die Verwendung von HTTPS für alle externen Ressourcen.
 
-## Funktionsbereich {#campaign-surveys-scope}
+## Funktionsumfang {#campaign-surveys-scope}
 
 In Adobe Campaign stehen für Webanwendungen im Allgemeinen die folgenden Funktionen zur Verfügung:
 
