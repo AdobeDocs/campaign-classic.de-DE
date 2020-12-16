@@ -6,11 +6,11 @@ description: Lokale Kampagnen
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1696'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -51,27 +51,27 @@ Klicken Sie im Kampagnenfenster auf den Tab **[!UICONTROL Bearbeiten]** und ansc
 
 Im Tab **Dezentrales Marketing** sind der Webschnittstellentyp sowie die Standardwerte und die erweiterten Parameter festzulegen, die bei der Bestellung von den Lokalstellen zu erfassen sind.
 
-Die Weboberfläche entspricht einem Formular, das von der Lokalstelle bei der Bestellung der Kampagne ausgefüllt wird.
+Die Web-Schnittstelle stellt ein Formular dar, dass von der Lokalstelle bei der Kampagnenbestellung auszufüllen ist.
 
-Wählen Sie den Typ der Weboberfläche aus, die auf die aus der Vorlage erstellten Kampagnen angewendet werden soll:
+Wählen Sie den Web-Schnittstellentyp aus, der für die auf dieser Vorlage basierenden Kampagnen angewandt werden soll:
 
 ![](assets/mkt_distr_1.png)
 
-Es stehen vier Arten von Webschnittstellen zur Verfügung:
+Es stehen vier unterschiedliche Web-Schnittstellentypen zur Verfügung:
 
 * **[!UICONTROL Briefing]**: Die Lokalstelle beschreibt die gewünschten Kampagnenparameter bei der Bestellung. Sobald die Bestellung validiert wurde, konfiguriert die Zentralstelle die Kampagne und führt sie aus.
 
    ![](assets/mkt_distr_6.png)
 
-* **[!UICONTROL Nach Formular]** : lokalstelle hat Zugriff auf ein Webformular, in dem sie je nach verwendeter Vorlage den Inhalt, die Zielgruppe, die Maximalgröße sowie Erstellungs- und Extraktion-Daten mithilfe von Personalisierungsfeldern bearbeiten können. Lokalstelle kann den Inhalt der Zielgruppe und Vorschau aus diesem Webformular auswerten.
+* **[!UICONTROL Standardformular]**: Die Lokalstelle hat Zugriff auf ein Web-Formular, in dem sie beispielsweise Inhalt, Zielgruppe, maximale Zielgruppengröße sowie Erstellungs- und Extraktionsdaten mithilfe von Personalisierungsfeldern bearbeiten kann. Zudem hat die Lokalstelle über dieses Web-Formular die Möglichkeit, die Zielgruppe zu evaluieren und den Inhalt in einer Vorschau zu überprüfen.
 
    ![](assets/mkt_distr_8.png)
 
-   Das angebotene Formular wird in einer Webanwendung angegeben, die in einer Dropdown-Liste aus dem Feld **[!UICONTROL Webschnittstelle]** in den Vorlageneinstellungen **[!UICONTROL Erweiterte Kampagne ausgewählt werden muss...]**-Link. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+   Das angebotene Formular wird in einer Web-Anwendung definiert, die in einer Dropdown-Liste des Felds **[!UICONTROL Webschnittstelle]** im Link **[!UICONTROL Erweiterte Kampagnenparameter...]** der Vorlage ausgewählt werden muss. Siehe [Lokale Kampagne erstellen (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
    >[!NOTE]
    >
-   >Die in diesem Beispiel verwendete Webanwendung ist ein Beispiel. Sie müssen eine bestimmte Web-App erstellen, um ein Formular verwenden zu können. Siehe [API](../../configuration/using/about-web-services.md).
+   >Bei der verwendeten Web-Anwendung handelt es sich um ein Beispiel. Um ein Formular zu verwenden, muss vorab eine spezifische Web-Anwendung erstellt werden. Lesen Sie hierzu den Abschnitt [APIs](../../configuration/using/about-web-services.md).
 
    ![](assets/mkt_distr_7.png)
 
@@ -176,7 +176,7 @@ Gehen Sie wie folgt vor:
 
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen     {#dates}
+### Datum-Funktionen      {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
@@ -240,7 +240,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Webanwendungen werden in [diesem Abschnitt](../../web/using/about-web-applications.md) beschrieben.
+   >Web-Anwendungen werden in [diesem Abschnitt](../../web/using/about-web-applications.md) beschrieben.
 
 1. Geben Sie auf der ersten Seite Informationen wie Bestelltitel und Kommentar ein und klicken Sie auf **[!UICONTROL Weiter]**.
 
