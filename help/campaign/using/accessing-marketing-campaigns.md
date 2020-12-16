@@ -6,11 +6,11 @@ description: Auf Marketing-Kampagnen zugreifen
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1063'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analys
 
 ## Grundlagen zum Arbeitsbereich {#workspace-basics}
 
-### Startseite     {#home-page}
+### Startseite      {#home-page}
 
 Unmittelbar nach der Herstellung der Verbindung mit Adobe Campaign gelangen Sie auf die Startseite.
 
@@ -36,7 +36,7 @@ Der Navigationsblock der Rubrik **[!UICONTROL Kampagnen]** bietet je nach den in
 * **Kampagnenkalender**: Kalender der Pläne, Marketing-Programme, Sendungen und Kampagnen . Siehe [Kampagnenkalender](#campaign-calendar).
 * **Kampagnen**: Zugriff auf alle in Marketingprogrammen enthaltene Kampagnen;
 * **Sendungen**: Zugriff auf in Kampagnen enthaltene Sendungen;
-* **Webanwendungen**: Zugriff auf Webanwendungen (Formulare, Umfragen usw.).
+* **Web-Anwendungen**: Zugriff auf Web-Anwendungen (Formulare, Umfragen etc.).
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe-Campaign-Konsol
 
    ![](assets/s_ncs_user_interface_web_campaign_01.png)
 
-Genehmigungen (z. B. von einer Zielgruppe oder einem Versand) können über den Web-Zugriff erfolgen.
+Validierungen (beispielsweise einer Zielgruppe oder des Inhalts eines Versands) können über die Web-Schnittstelle erfolgen.
 
 ![](assets/campaign_web_interface_validation.png)
 
