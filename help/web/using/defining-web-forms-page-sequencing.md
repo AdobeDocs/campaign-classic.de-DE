@@ -6,18 +6,18 @@ description: Seitenreihenfolge eines Webformulars definieren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
 # Seitenreihenfolge eines Webformulars definieren{#defining-web-forms-page-sequencing}
 
-Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Diagramms erstellt, mit dem Sie Seiten sequenzieren, testen, Skriptausführung, Seitensprung und Aufzeichnungsschritte ausführen können. Der Designmodus für globale Diagramme ist identisch mit dem für einen Arbeitsablauf für Kampagnen.
+Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Diagramms erstellt, das die Abfolge von Seiten, Tests, Skriptausführung, Sprüngen zu Seiten und Aufzeichnungsschritten ermöglicht. Der globale Designmodus für Diagramme ist identisch mit dem für einen Campaign-Workflow.
 
 ## Die Schaltflächen &quot;Weiter&quot; und &quot;Zurück&quot;{#about-previous-page-and-next-page}
 
