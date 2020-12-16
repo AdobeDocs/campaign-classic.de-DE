@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über die Workflow-Aktivitäten für SQL- und Jav
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '254'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Aktivitäten mit **[!UICONTROL JavaScript-Code]** und **[!UICONTROL erweitertem 
 
 ### Ausführungsverzögerung {#exec-delay}
 
-Ab Version 20.2 wurde eine Ausführungsverzögerung zu den Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]** hinzugefügt. Standardmäßig darf die Ausführungsphase nicht länger als eine Stunde sein. Nach diesem Zeitraum wird der Vorgang mit einer Fehlernachricht abgebrochen und die Ausführung der Aktivität schlägt fehl.
+Ab Version 20.2 wurde eine Ausführungsverzögerung zu den Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]** hinzugefügt. Standardmäßig darf die Ausführungsphase nicht länger als eine Stunde sein. Nach dieser Verzögerung wird der Vorgang mit einer Fehlermeldung abgebrochen und die Ausführung der Aktivität schlägt fehl.
 
-Sie können diese Verzögerung im Feld **[!UICONTROL Ausführung nach]** beenden ändern, das in diesen Aktivitäten verfügbar ist.
+Sie können diese Verzögerung im Feld **[!UICONTROL Ausführung stoppen nach]** in diesen Aktivitäten ändern.
 
-Um diese Beschränkung zu ignorieren, müssen Sie den Wert auf **0** setzen.
+Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 ### JavaScript-Code {#js-code-desc}
 
@@ -49,7 +49,7 @@ Um diese Beschränkung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 * **[!UICONTROL Script]**: Das auszuführende Skript wird in den zentralen Bereich des Editors eingefügt.
 
-* **[!UICONTROL Prozessfehler]**: Siehe  [Verarbeitungsfehler](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Fehler verarbeiten]**: Siehe [Fehler verarbeiten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
 
 ### Erweiterter JavaScript-Code {#adv-js-code-desc}
 
