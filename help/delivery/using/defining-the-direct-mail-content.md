@@ -6,11 +6,11 @@ description: Briefpost-Inhalt definieren
 audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '180'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Bei einem Briefversand wird der Extraktionsinhalt über den Link **[!UICONTROL E
 
 ![](assets/s_ncs_user_mail_delivery_format_wz.png)
 
-Sie können eine personalisierte URL in die Extraktion einfügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/publishing-a-web-form.md).
+Sie können eine personalisierte URL in die Extraktionsdatei einfügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../web/using/publishing-a-web-form.md).
 
 >[!NOTE]
 >
