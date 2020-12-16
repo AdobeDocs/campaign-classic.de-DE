@@ -6,9 +6,9 @@ description: Erfahren Sie mehr über die Datenschutzverwaltung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
 ht-degree: 100%
 
@@ -17,23 +17,23 @@ ht-degree: 100%
 
 # Datenschutzverwaltung {#privacy-management}
 
-Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von [Datenschutzbestimmungen](#privacy-management-regulations) (einschließlich DSGVO, CCPA, PDPA, LGPD) unterstützen.
+Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung der [Datenschutzverordnungen](#privacy-management-regulations) (einschließlich DSGVO, CCPA, PDPA, LGPD) unterstützen.
 
-Im Folgenden finden Sie die fünf wichtigsten Funktionen von Adobe Campaign für die Erfüllung der Bestimmungen der DSGVO und anderen Datenschutzverordnungen:
+Hier sind die fünf Hauptfunktionen von Adobe Campaign, um die Unterstützung der DSGVO und anderen Datenschutzbestimmungen sicherzustellen:
 
 ![](assets/privacy-gdpr-use-cases.png)
 
 * **Recht auf Zugriff**
 
-* **Recht auf Löschung**
+* **Recht auf Löschen**
 
-Weitere Informationen finden Sie unter [Recht auf Zugriff und Recht auf Vergessenwerden](#right-access-forgotten).
+Weitere Informationen hierzu finden Sie unter [Recht auf Zugriff und Recht auf Vergessenwerden](#right-access-forgotten).
 
 * **Einverständnisverwaltung**
 
 * **Datenbeibehaltung**
 
-* **Rights management**
+* **Rights Management**
 
 Weitere Informationen finden Sie unter [Einverständnis, Datenaufbewahrung und Benutzerrollen](#consent-retention-roles).
 
