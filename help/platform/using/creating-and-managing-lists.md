@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie Listen erstellen und verwalten.
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ Listen werden ausgehend vom Adobe-Campaign-Navigationsbaum über den Link **[!UI
 >
 >Die Löschung einer Liste hat außer der Aktualisierung der Profildaten keinen Einfluss auf die der Liste zugeordneten Profile.
 
-## Tutorial-Video {#create-list-video}
+## Anleitungsvideo {#create-list-video}
 
 ### Eine Empfängerliste erstellen
 
@@ -134,12 +134,12 @@ Eine Liste ist ein statischer Satz von Empfängern, die in Versandaktionen als Z
 
 Erfahren Sie mehr über das Erstellen einer Audience durch Konfigurieren einer Empfängerliste aus dem Explorer.
 
->[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12?captions=ger)
 
-### Empfängerliste erstellen mit einem Workflow  {#create-list-in-a-wf-video}
+### Empfängerliste erstellen mit einem Workflow   {#create-list-in-a-wf-video}
 
 Erfahren Sie, wie Sie einen Workflow erstellen, um Empfänger als Zielkontakte auszuwählen, und den Workflow als wiederkehrend einzurichten, bevor die Liste als Zielgruppe für eine E-Mail-Kampagne verwendet wird.
 
->[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25603?quality=12&captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
