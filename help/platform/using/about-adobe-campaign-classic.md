@@ -6,11 +6,11 @@ description: Erfahren sie mehr über wichtige Funktionen, die Benutzeroberfläch
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Sie können die Funktionen des Versands und der erweiterten Kampagnenverwaltung 
 
 ## Kernfunktionen und Add-ons {#core-capabilities-and-add-ons}
 
-Adobe Campaign bietet je nach Ihren Anforderungen und Ihrer Architektur eine Reihe von Funktionen zur Implementierung und Optimierung kommunikativer Marketing-Funktionen. Bei manchen handelt es sich um Kernfunktionen, andere wiederum erfordern die Installation eines Packages und dessen Konfiguration. Eine detaillierte Produktbeschreibung erhalten Sie hier: [Produktbeschreibung von Adobe Campaign](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).
+Adobe Campaign bietet je nach Ihren Anforderungen und Ihrer Architektur eine Reihe von Funktionen zur Implementierung und Optimierung kommunikativer Marketing-Funktionen. Bei manchen handelt es sich um Kernfunktionen, andere wiederum erfordern die Installation eines Packages und dessen Konfiguration. Eine detaillierte Produktbeschreibung erhalten Sie hier: [Produktbeschreibung von Adobe Campaign](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).
 
 Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hängt von Ihrem Lizenzvertrag ab.
 
@@ -87,10 +87,10 @@ Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hän
 * [Webdienste](../../configuration/using/about-web-services.md): Verwendung von Campaign über APIs/Webdienst
 * [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md): Zugriff auf integrierte Berichte, Datenanalyse und Erstellung eigener Berichte
 
-## Tutorial-Video {#video}
+## Anleitungsvideo {#video}
 
-In diesem Video werden die wichtigsten Funktionen und Funktionen des Campaign Classic vorgestellt.
+In diesem Video werden die wichtigsten Funktionen und Leistungsmerkmale von Campaign Classic vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12&captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
