@@ -1,56 +1,56 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Erste Schritte mit dem Kampagne-HTML-Editor
-description: Erste Schritte mit der DCE
+title: Erste Schritte mit dem Campaign-HTML-Editor
+description: Erste Schritte mit Campaign DCE
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Erste Schritte mit dem Kampagne-HTML-Editor{#about-campaign-html-editor}
+# Erste Schritte mit dem Campaign-HTML-Editor{#about-campaign-html-editor}
 
-Der **Digital Content Editor (DCE)** ist ein HTML-Inhaltseditor, mit dem Sie mühelos Inhalte und Vorlagen im HTML-Format in Adobe Campaign erstellen können.
+Der **Digital Content Editor (DCE)** ist ein HTML-Inhaltseditor, mit dem Sie Inhalte oder Vorlagen im HTML-Format in Adobe Campaign einfach erstellen können.
 
-Mit dem Digital Content Editor können Sie Seitenelemente einfügen und formatieren und Datenbankfelder Elementen einer HTML-Seite zuordnen. Dieser Editor ist verfügbar, wenn Sie eine Seite für eine Webanwendung erstellen oder wenn Sie Versand basierend auf einer DCE erstellen.
+Mit dem Digital Content Editor können Sie Seitenelemente einfügen und formatieren und Datenbankfelder Elementen einer HTML-Seite zuordnen. Dieser Editor ist verfügbar, wenn Sie eine Seite für eine Web-Anwendung oder Sendungen anhand einer DCE-Vorlage erstellen.
 
 >[!NOTE]
->>Wenn Sie serverseitigen JavaScript-Code hinzufügen müssen, verwenden Sie Gestaltungsbaustein. [Weitere Informationen](../../delivery/using/personalization-blocks.md).
+>>Wenn Sie Server-seitigen JavaScript-Code hinzufügen müssen, verwenden Sie Gestaltungsbausteine. [Weitere Informationen](../../delivery/using/personalization-blocks.md).
 >
 >[!CAUTION]
 Alle externen Ressourcen müssen mit einer HTTPS-URL referenziert werden.
 
 ## Wichtige Schritte zur Verwendung des Digital Content Editors {#content-editor-general-operation}
 
-In diesem Abschnitt werden die wichtigsten Schritte zum Bearbeiten und Hochladen von Inhalten beschrieben, die mit dem DCE im Kontext einer Webanwendung und eines Versand-Designs bearbeitet wurden.
+In diesem Abschnitt werden die wichtigsten Schritte zum Bearbeiten und Hochladen von mit dem DCE bearbeiteten Inhalten im Kontext einer Web-Anwendung und des Versand-Designs beschrieben.
 
 Allgemein gilt:
 
 ![](assets/dce_schema.png)
 
-Um eine einfache **Webanwendung** zu erstellen, müssen Sie:
+Um eine einfache **Web-Anwendung** zu erstellen, müssen Sie folgende Schritte ausführen:
 
-1. Webanwendung erstellen - [Weitere Informationen](../../web/using/creating-a-landing-page.md)
-1. Wählen Sie vorhandenen Inhalt oder erstellen Sie Inhalte aus einer Standardvorlage - [Weitere Informationen](../../web/using/template-management.md)
-1. Inhalt bearbeiten und konfigurieren - [Weitere Informationen](../../web/using/editing-content.md)
-1. Veröffentlichen Sie die Webanwendung - [Weitere Informationen](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
-
->[!NOTE]
-Ein vollständiges Implementierungsbeispiel im Kontext einer Webanwendung finden Sie in [diesem Abschnitt](../../web/using/creating-a-landing-page.md).
-
-Um einen **E-Mail-Versand** zu erstellen, müssen Sie:
-
-1. Erstellen Sie einen Versand aus einer DCE Vorlage - [Weitere Informationen](../../web/using/use-case--creating-an-email-delivery.md)
-1. Wählen Sie einen vorhandenen Inhalt oder erstellen Sie Inhalte aus einer [Standardvorlage](../../web/using/template-management.md)
-1. Bearbeiten und Konfigurieren von Onlineinhalten
-1. Versand senden - [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md)
+1. Web-Anwendung erstellen – [Weitere Informationen](../../web/using/creating-a-landing-page.md)
+1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer Standardvorlage – [Weitere Informationen](../../web/using/template-management.md).
+1. Inhalt bearbeiten und konfigurieren – [Weitere Informationen](../../web/using/editing-content.md)
+1. Web-Anwendung veröffentlichen – [Weitere Informationen](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
-Ein vollständiges Implementierungsbeispiel im Kontext eines E-Mail-Versands finden Sie unter [this use case](../../web/using/use-case--creating-an-email-delivery.md).
+Ein vollständiges Implementierungsbeispiel im Kontext einer Web-Anwendung finden Sie in [diesem Abschnitt](../../web/using/creating-a-landing-page.md).
+
+Um einen **E-Mail-Versand** zu erstellen, müssen Sie folgende Schritte ausführen:
+
+1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](../../web/using/use-case--creating-an-email-delivery.md)
+1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer [Standardvorlage](../../web/using/template-management.md).
+1. Bearbeiten und konfigurieren Sie den Online-Inhalt.
+1. Versand senden – [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md)
+
+>[!NOTE]
+Ein vollständiges Implementierungsbeispiel im Kontext eines E-Mail-Versands finden Sie in [diesem Anwendungsfall](../../web/using/use-case--creating-an-email-delivery.md).
