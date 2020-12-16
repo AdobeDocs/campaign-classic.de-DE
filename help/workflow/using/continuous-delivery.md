@@ -6,22 +6,22 @@ description: Versand (fortlaufend)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # Versand (fortlaufend){#continuous-delivery}
 
-Mit der Typaktion **Kontinuierlicher Versand** können Sie einem vorhandenen Versand neue Empfänger hinzufügen. Mit diesem Versand-Typ müssen Sie nicht jedes Mal einen neuen Versand erstellen: Dieser Modus ist oft effizienter, insbesondere bei Warnungen mit geringem Volumen oder bei Bedarf abgesendeten Benachrichtigungen.
+Mit einer Aktion vom Typ **Versand (fortlaufend)** können Sie einem bestehenden Versand Empfänger hinzufügen. Dieser Versandtyp vermeidet, dass Sie jedes Mal einen neuen Versand erstellen müssen: Dieser Modus ist oft effizienter, insbesondere bei Warnungen und Benachrichtigungen mit geringen Volumen, die nach Bedarf gesendet werden.
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#continuous-delivery-video).
 
-Auf Versandvorlage können Sie ein Skript zur Berechnung der Beschriftung (und des Ordners &quot;Kampagne&quot;) des zugehörigen Versands angeben. Wenn das Skript einen Versand berechnet, der noch nicht vorhanden ist, wird er sofort erstellt.
+Auf der Ebene der Versandvorlagen können Sie ein Skript zur Berechnung der Beschriftung (und des Kampagnenordners) des zugehörigen Versands angeben. Wenn das Skript einen Versand berechnet, der noch nicht vorhanden ist, wird er sofort erstellt.
 
 ![](assets/edit_diffusion_fil.png)
 
@@ -60,10 +60,10 @@ Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog
 
 ![Versand (fortlaufend)](assets/delivery_continuous.jpg)
 
-## Tutorial-Video {#continuous-delivery-video}
+## Anleitungsvideo {#continuous-delivery-video}
 
 In diesem Video wird gezeigt, wie man einen fortlaufenden Versand mit einer inkrementellen Abfrage konfiguriert.
 
->[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12&captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
