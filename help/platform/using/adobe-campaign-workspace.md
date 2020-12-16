@@ -6,11 +6,11 @@ description: Adobe Campaign-Arbeitsbereich
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2232'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -390,10 +390,10 @@ In Feldern, die eine Dauer bezeichnen (z. B. Gültigkeit von Versandressourcen, 
 
 ![](assets/enter_unit_sample.png)
 
-## Tutorial-Video {#video}
+## Anleitungsvideo {#video}
 
-In diesem Video wird der Arbeitsbereich für Campaign Classic vorgestellt.
+In diesem Video wird der Campaign Classic-Workspace vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12&captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
