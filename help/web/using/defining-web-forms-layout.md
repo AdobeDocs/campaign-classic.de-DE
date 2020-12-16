@@ -6,11 +6,11 @@ description: Layout eines Webformulars definieren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '528'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ Im obigen Beispiel wird das Rendering wie folgt ausgeführt:
 
 ## Die Felder auf der Seite positionieren {#positioning-the-fields-on-the-page}
 
-Das Layout des Webformulars wird in jedem Container seitenweise definiert und kann bei Bedarf überladen werden.
+Das Layout des Web-Formulars wird in jedem Container Seite für Seite definiert und kann bei Bedarf überschrieben werden.
 
-Die Seiten sind in Spalten unterteilt: Jede Seite enthält eine bestimmte Anzahl von Spalten. Jedes Feld der Seite belegt **n** Zellen. Container belegen auch eine bestimmte Spaltenanzahl, und die darin enthaltenen Felder belegen eine bestimmte Anzahl von Zellen.
+Seiten sind in Spalten unterteilt: Jede Seite enthält eine bestimmte Anzahl von Spalten. Jedes Feld der Seite hat **n** Zellen. Container umfassen auch eine gewisse Anzahl von Spalten und die in ihnen enthaltenen Felder haben eine bestimmte Anzahl von Zellen.
 
 Standardmäßig werden Seiten auf einer einzigen Spalte erstellt und jedes Element hat eine einzige Zelle. Das bedeutet, dass Felder untereinander angezeigt werden, wobei jedes wie unten dargestellt eine ganze Zeile umfasst:
 
