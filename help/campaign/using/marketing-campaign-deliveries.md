@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3084'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -457,10 +457,10 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 >
 >Weitere Informationen zu Exporten finden Sie im Abschnitt [Erste Schritte](../../platform/using/generic-imports-and-exports.md).
 
-#### Tutorial-Video {#create-email-video}
+#### Anleitungsvideo {#create-email-video}
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign Classic beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12&captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
