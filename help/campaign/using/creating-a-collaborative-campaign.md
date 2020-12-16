@@ -6,11 +6,11 @@ description: Partizipative Kampagne erstellen
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Formular) (opColla
 
 Gehen Sie in den Tab **[!UICONTROL Bearbeiten]** und klicken Sie auf den Link **[!UICONTROL Erweiterte Kampagnenparameter...]**, um auf den Tab **Dezentrales Marketing** zuzugreifen.
 
-Wählen Sie die Weboberfläche **Nach Formular**. Mit diesem Schnittstellentyp können Sie Personalisierungsfelder erstellen, die von Lokalstellen bei der Bestellung einer Kampagne verwendet werden. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
+Wählen Sie den Web-Schnittstellentyp **Standardformular** aus. Dieser Schnittstellentyp ermöglicht die Erstellung von Personalisierungsfeldern, die von den Lokalstellen bei der Kampagnenbestellung genutzt werden können. Siehe [Erstellung einer lokalen Kampagne (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
 Speichern Sie Ihre Kampagne. Sie steht Ihnen nun in der **Kampagnenkit-Liste** in der **Kampagnen**-Rubrik zur Verfügung, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
 
@@ -117,7 +117,7 @@ Gehen Sie wie folgt vor:
 1. Geben Sie die Referenzkampagne an.
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen     {#dates}
+### Datum-Funktionen      {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
