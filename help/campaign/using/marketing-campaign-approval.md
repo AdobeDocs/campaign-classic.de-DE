@@ -6,11 +6,11 @@ description: Validieren von Marketing-Kampagnen
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2645'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -176,7 +176,7 @@ Adobe Campaign ermöglicht den Einsatz von partizipativen Validierungsprozessen 
 
 Bei Briefpost-Versand können Adobe Campaign-Benutzer die Extraktionsdatei vor der Übermittlung an den Router einsehen. Bei Bedarf haben sie die Möglichkeit, das Format zu verändern und die Extraktion erneut zu starten. Lesen Sie diesbezüglich den Abschnitt [Extraktionsdatei validieren](#approving-an-extraction-file).
 
-Für jede Kampagne können Sie die Versandzielgruppe, den Inhalt (siehe [Inhalt validieren](#approving-content)) und die Kosten validieren. Die für die Genehmigung zuständigen Adobe Campaign-Betreiber können per E-Mail benachrichtigt werden und die Genehmigung von der Konsole oder über eine Internetverbindung annehmen oder ablehnen. Lesen Sie diesbezüglich den Abschnitt [Vorgänge validieren](#approving-processes).
+Für jede Kampagne können Sie die Versandzielgruppe, den Inhalt (siehe [Inhalt validieren](#approving-content)) und die Kosten validieren. Die für die Validierung zuständigen Adobe Campaign-Benutzer können per E-Mail benachrichtigt werden und eine Validierung über die Konsole oder eine Web-Verbindung annehmen oder ablehnen. Lesen Sie diesbezüglich den Abschnitt [Vorgänge validieren](#approving-processes).
 
 Sobald diese Validierungsphasen beendet sind, kann der Versand gestartet werden. Lesen Sie diesbezüglich den Abschnitt [Starten eines Versands](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery).
 
