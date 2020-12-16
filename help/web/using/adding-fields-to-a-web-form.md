@@ -6,11 +6,11 @@ description: Felder zu einem Webformular hinzufügen
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -196,7 +196,7 @@ Mit Radiobuttons können Sie Benutzern eine Reihe von einzelnen Optionen zur Aus
 
 ![](assets/s_ncs_admin_survey_radio_button.png)
 
-Sie können Optionsfelder einzeln (einheitliche Schaltflächen) oder über eine Mehrfachauswahl-Liste erstellen. Da die Optionsfelder jedoch darauf ausgerichtet sind, eine Option auszuwählen, erstellen wir immer mindestens ein Optionsfeld, nicht nur ein Optionsfeld.
+Sie können Radiobuttons einzeln erstellen (Einzel-Schaltflächen) oder über eine Multiple-Choice-Liste. Aber weil der Zweck von Radiobuttons die Auswahl einer Option ist, werden immer zumindest zwei Radiobuttons erstellt, und nie nur ein einzelner.
 
 >[!CAUTION]
 >
@@ -251,7 +251,7 @@ Der Inhalt eines Formularfeldes kann entsprechend den in der Datenbank gespeiche
 
 ![](assets/s_ncs_admin_survey_date_calendar.png)
 
-Um dem Benutzer die Eingabe eines Datums auf einer Formularseite zu ermöglichen, fügen Sie ein Eingabefeld hinzu und wählen Sie den Typ **[!UICONTROL Datum...]**.
+Um dem Benutzer die Eingabe eines Datums auf einer Formularseite zu ermöglichen, fügen Sie ein Eingabefeld hinzu und wählen Sie den Typ **[!UICONTROL Datum...]** aus.
 
 Geben Sie einen Titel für das Feld ein und konfigurieren Sie den Datenspeichermodus.
 
@@ -388,13 +388,13 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 
 ## Ausgeblendete Konstante einfügen {#inserting-a-hidden-constant}
 
-Wenn der Benutzer eine der Seiten des Formulars validiert, können Sie einen bestimmten Wert auf ein Feld seines Profils oder auf eine Variable setzen.
+Wenn der Benutzer eine der Seiten des Formulars validiert, können Sie einen bestimmten Wert in einem Feld seines Profils oder in einer Variable setzen.
 
 Dieses Feld ist nicht sichtbar für den Benutzer, kann aber für die Anreicherung der Daten im Benutzerprofil verwendet werden.
 
-Fügen Sie dazu eine **Konstante** auf der Seite ein und geben Sie den Wert und den Speicherort der Datenspeicherung an.
+Fügen Sie dazu eine **Konstante** auf der Seite hinzu und geben Sie den Wert und den Speicherort an.
 
-Im folgenden Beispiel wird das Feld **Herkunft** des Empfänger-Profils automatisch ausgefüllt, sobald ein Benutzer diese Seite genehmigt. Die Konstante wird nicht auf der Seite angezeigt.
+Im folgenden Beispiel wird das Feld **Herkunft** des Empfängerprofils automatisch ausgefüllt, sobald ein Benutzer diese Seite genehmigt. Die Konstante wird auf der Seite nicht angezeigt.
 
 ![](assets/s_ncs_admin_survey_constante.png)
 
