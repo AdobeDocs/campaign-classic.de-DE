@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Erste Schritte mit Webformularen
-description: Erste Schritte mit Webformularen in der Kampagne
+title: Erste Schritte mit Web-Formularen
+description: Erste Schritte mit Web-Formularen in Campaign
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '511'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Erste Schritte mit Webformularen{#about-web-forms}
+# Erste Schritte mit Web-Formularen{#about-web-forms}
 
 Adobe Campaign verfügt über ein grafisches Modul zur Definition und Publikation von Webformularen. Damit können Sie Seiten erstellen, die Eingabe- und Auswahlfelder sowie Daten aus der Datenbank enthalten. Daraus lassen sich wiederum Webseiten zusammenstellen und veröffentlichen, in denen Benutzer Informationen anzeigen oder eingeben können.
 
@@ -53,7 +53,7 @@ Im Tab **[!UICONTROL Bearbeiten]** können Sie den Inhalt erstellen.
 
 Um das Webformular zu definieren und zu konfigurieren, gehen Sie folgendermaßen vor:
 
-* Beginn durch Erstellen der erforderlichen Seiten und Steuerelemente: Eingabefelder, Dropdown-Listen, HTML-Inhalte usw.
+* Erstellen Sie zunächst die erforderlichen Seiten und Steuerelemente: Eingabefelder, Dropdown-Listen, HTML-Inhalte usw.
 
    Dieser Schritt wird weiter unten genauer beschrieben.
 
