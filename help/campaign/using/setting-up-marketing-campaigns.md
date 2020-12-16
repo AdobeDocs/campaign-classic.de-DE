@@ -6,11 +6,11 @@ description: Marketingkampagnen erstellen
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 Kampagnen umfassen Aktionen (Sendungen) und Prozesse (Import oder Extraktion von Dateien) sowie Ressourcen (Marketing-Dokumente, Versandentwürfe). Sie werden in Marketing-Kampagnen verwendet. Kampagnen sind Teil eines Programms und Programme Teil eines Kampagnenplans.
 
-![](assets/do-not-localize/how-to-video.png) Entdecken Sie, wie Sie Marketingplan, Programme und Kampagnen  [in Videos erstellen](#video)
+![](assets/do-not-localize/how-to-video.png) [Im Video](#video) erfahren Sie, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
 So erstellen Sie eine Marketing-Kampagne:
 
@@ -47,7 +47,7 @@ So erstellen Sie eine Marketing-Kampagne:
 
    Lesen Sie diesbezüglich den Abschnitt [Erstellung von Dienstleistern und deren Kostenstrukturen](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Nach Abschluss dieser Schritte können Sie den Versand starten (siehe [Starten eines Versands](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und bei Bedarf die zugehörigen Dokumente verwalten (siehe [Zugeordnete Dokumente verwalten ](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Sie können auch die Ausführung der Verarbeitungsphasen von Kampagnen und Versänden verfolgen (siehe [Verfolgung](../../campaign/using/marketing-campaign-monitoring.md)).
+Nach Abschluss dieser Schritte können Sie den Versand starten (siehe [Starten eines Versands](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und bei Bedarf die zugehörigen Dokumente verwalten (siehe [Zugeordnete Dokumente verwalten ](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Außerdem können Sie die Ausführung der Verarbeitungsphasen von Kampagnen und Sendungen verfolgen (siehe [Tracking](../../campaign/using/marketing-campaign-monitoring.md)).
 
 ## Erstellung einer Plan- und Programmhierarchie {#creating-plan-and-program-hierarchy}
 
@@ -69,7 +69,7 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 1. Wiederholen Sie die obigen Schritte, um Ihren neuen Programmordner und seinen internen Namen umzubenennen.
 
-## Kampagnen erstellen      {#creating-a-campaign}
+## Kampagnen erstellen       {#creating-a-campaign}
 
 ### Hinzufügen einer Kampagne {#adding-a-campaign}
 
@@ -233,10 +233,10 @@ Eine periodische Kampagne ist eine spezifische Vorlage, die die automatische Ers
 
 Jede periodische Kampagne enthält die gleichen Elemente und wird nach der Erstellung wie eine Standardkampagne verwaltet.
 
-## Tutorial-Video {#video}
+## Anleitungsvideo {#video}
 
-In diesem Video wird das Erstellen von Marketingplänen, Programmen und Kampagnen erläutert.
+In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12&captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
