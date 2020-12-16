@@ -6,11 +6,11 @@ description: Druckregeln
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3428'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Der Schwellwert kann konstant sein oder mithilfe einer Formel berechnet werden, 
 
 **Beispiel:**
 
-Sie können die Anzahl autorisierter Nachrichten entsprechend dem Segment, zu dem der Empfänger gehört, indizieren. Dies bedeutet, dass ein Empfänger, der zum Websegment gehört, möglicherweise mehr Nachrichten als andere Empfänger erhält. Eine **[!UICONTROL Iif (@Herkunft=&#39;Web&#39;, 5, 3)]** Typformel autorisiert den Versand von 5 Nachrichten an Empfänger und 3 für andere Segmente. Die Konfiguration lautet wie folgt:
+Beispiel: Die zulässige Anzahl von Nachrichten kann entsprechend dem Segment indexiert werden, zu dem der Empfänger gehört. Ein im Segment &quot;Web&quot; verzeichneter Empfänger kann so beispielsweise mehr Nachrichten als andere Empfänger erhalten. Mit einer Formel vom Typ **[!UICONTROL Iif (@origin=&#39;Web&#39;, 5, 3)]** wäre etwa der Versand von 5 Nachrichten an diese Empfänger zulässig, für die Empfänger aus anderen Segmenten dagegen nur 3. Dies erfordert folgende Konfiguration:
 
 ![](assets/campaign_opt_pressure_sample.png)
 
