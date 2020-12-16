@@ -6,11 +6,11 @@ description: Webformular übersetzen
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1662'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Zeichenfolgen können exportiert und dann wieder importiert werden, um sie mit e
 
 ### Dateien exportieren {#exporting-files}
 
-1. Wählen Sie die Webanwendung aus, deren Zeichenfolgen Sie exportieren möchten, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Zeichenfolgen für Übersetzung exportieren...]**
+1. Wählen Sie die Web-Anwendung(en) aus, deren Strings Sie exportieren möchten. Führen Sie dann einen Rechtsklick darauf aus und wählen Sie **[!UICONTROL Aktionen > Strings zur Übersetzung exportieren...]** aus.
 
    ![](assets/s_ncs_admin_survey_trad_export.png)
 
@@ -470,7 +470,7 @@ Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
 Um Webanwendungen in andere Sprachen als die Standardsprachen zu übersetzen (siehe [Anzeigesprache in Formularen ändern](#changing-forms-display-language)), müssen Sie eine neue Übersetzungssprache hinzufügen.
 
-1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Platform > Auflistungen]** der Adobe Campaign-Struktur und wählen Sie **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus der Liste. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** der Adobe Campaign-Baumstruktur und wählen Sie **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus der Liste aus. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_1.png)
 
