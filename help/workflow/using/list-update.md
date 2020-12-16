@@ -6,11 +6,11 @@ description: Listen-Update
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 49f3c123cb8e91b3a2a2a1eb6bd593a242b8bbfe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '542'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ In diesem Fall müssen die entsprechenden Tabellen zuvor in der Adobe-Campaign-I
 
 Im Allgemeinen stellt die Speicherung einer Zielgruppe in einer Liste das Ende eines Workflows dar. Standardmäßig bietet die **[!UICONTROL Listen-Update]**-Aktivität daher keine ausgehende Transition. Dies kann durch Ankreuzen der Option **[!UICONTROL Ausgehende Transition erzeugen]** umgangen werden.
 
-![](assets/do-not-localize/how-to-video.png) [Entdecken Sie, wie Sie eine Liste von Empfängern aus dem Explorer im Video erstellen](#video)
+![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie vom Explorer aus eine Liste von Empfängern erstellen](#video)
 
 ## Anwendungsbeispiel Listen-Update {#example--list-update}
 
@@ -69,10 +69,10 @@ Identifiziert die in der Gruppe zu speichernde Population.
 
 * groupId: Kennung der Gruppe.
 
-## Tutorial-Video {#video}
+## Anleitungsvideo {#video}
 
-In diesem Video wird gezeigt, wie eine Liste von Empfängern aus dem Explorer erstellt wird.
+In diesem Video wird gezeigt, wie man vom Explorer aus eine Liste von Empfängern erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12?captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
