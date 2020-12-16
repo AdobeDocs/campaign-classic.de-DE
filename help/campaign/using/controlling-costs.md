@@ -6,11 +6,11 @@ description: Verwaltung von Budgets
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2539'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -93,7 +93,7 @@ In Kampagnen können je nach Verbindlichkeitsniveau Kosten für eine zukünftige
 >   
 >Die Option **[!UICONTROL Verbindlichkeitsniveau]** stellt eine Schätzung der zukünftigen Kosten dar, bevor diese dem Budget angerechnet werden. Entsprechend dem Fortschritt einer Kampagne, einer Aufgabe oder eines Versands kann mithilfe der Dropdown-Liste ein höheres oder niedrigeres Niveau zugewiesen werden (1. Geplant, 2. Reserviert, 3. Eingesetzt).
 
-Die geschätzten Kosten einer Web-Kampagne betragen beispielsweise 45 000 Euro.
+Beispiel: Die Kosten einer Web-Kampagne werden auf 45 000 Euro geschätzt.
 
 ![](assets/s_user_edit_budget_node_impact_0.png)
 
