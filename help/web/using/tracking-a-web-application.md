@@ -6,11 +6,11 @@ description: Webanwendung tracken
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Die wichtigsten Verbesserungen in dieser Version sind:
 
    * **Konvertierungsrate**: Anzahl der Personen, die alle Schritte eines Vorgangs durchlaufen haben.
    * **Bounce-Rate**: Anzahl der Personen, für die nur der erste Schritt angezeigt wurde.
-   * **Konversionstrichter**: Verlustrate zwischen den einzelnen Schritten.
+   * **Konversionstrichter**: Verlustrate von einem Schritt zum nächsten.
 
    Zusätzlich wird in einer **Sektorgrafik** die Population entsprechend ihrer Herkunft dargestellt.
 
