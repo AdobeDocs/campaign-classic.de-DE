@@ -6,11 +6,11 @@ description: Gestaltungsbausteine
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1004'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -154,10 +154,10 @@ Gehen Sie wie folgt vor, um Gestaltungsbausteine zu erstellen:
 
    * Geben Sie den Inhalt der Gestaltungsbausteine (in HTML, Text, JavaScript usw.) ein und klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Tutorial-Video {#personalization-blocks-video}
+## Anleitungsvideo {#personalization-blocks-video}
 
-Erfahren Sie, wie Sie dynamische Inhaltsblöcke erstellen und wie Sie diese verwenden, um den Inhalt Ihres E-Mail-Versands zu personalisieren.
+Erfahren Sie, wie Sie dynamische Inhaltsbausteine erstellen und diese zur Personalisierung des Inhalts Ihres E-Mail-Versands verwenden.
 
->[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/24924?quality=12&captions=ger)
 
-Weitere Campaign Classic-Anleitungen sind [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) verfügbar.
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
