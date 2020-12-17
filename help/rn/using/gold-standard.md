@@ -6,11 +6,11 @@ description: Versionshinweise zu Campaign Classic Gold Standard
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 494be84478f652dd5e1473dd98272056514f31c8
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 90%
 
 ---
 
@@ -25,6 +25,24 @@ Auf dieser Seite werden die Gold Standard-Versionen aufgeführt.
 
 Weitere Informationen zum Campaign Gold Standard-Programm finden Sie in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
 
+## ![](assets/do-not-localize/limited_2.png) Gold Standard Version 11{#gs-11}
+
+_15. Dezember 2020_
+
+>[!CAUTION]
+>
+>Diese Version enthält ein neues Verbindungsprotokoll: Die Aktualisierung ist sowohl für den Server als auch für die Client-Konsole erforderlich, damit nach dem 21. März 2020 eine Verbindung zur Kampagne hergestellt werden kann.
+
+Der Build 9032@2a2a028 umfasst die folgenden Verbesserungen und Fehlerbehebungen:
+
+* Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
+
+* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
+
+* Nach dem Ende der Unterstützung für das Legacy-Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während der Nachrüstung auf das HTTP/2-Protokoll aktualisiert.
+
+* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
+
 ## ![](assets/do-not-localize/green_2.png) Gold Standard Version 10{#gs-10}
 
 _7. Juli 2020_
@@ -35,7 +53,7 @@ Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deakt
 
 >[!CAUTION]
 >
->Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md).
+>Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 9{#gs-9}
 
@@ -63,11 +81,11 @@ _29. April 2020_
 
 Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 
-* Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism).
+* Verbesserte Sicherheit bei Tracking-Links in E-Mails. Dies ist für alle Kunden standardmäßig aktiviert. Es gibt eine zusätzliche, erweiterte Sicherheitsfunktion, die Sie aktivieren können, indem Sie sich an die Kundenunterstützung wenden. Weiterführende Informationen zu der Funktion und den Schritten zur Aktivierung für nicht gehostete Kunden finden Sie in der [Prüfliste für Sicherheit und Datenschutz](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism).
 
 >[!CAUTION]
 >
->Wenn Sie Probleme mit Push-Benachrichtigungen unter Verwendung von Tracking-Links oder mit dem Versand mittels Anker-Tags haben, wird empfohlen, den neuen Signaturmechanismus für Trackinglinks zu deaktivieren. Das Verfahren wird auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/acc-security.html#signature-mechanism) beschrieben.
+>Wenn Sie Probleme mit Push-Benachrichtigungen unter Verwendung von Tracking-Links oder mit dem Versand mittels Anker-Tags haben, wird empfohlen, den neuen Signaturmechanismus für Trackinglinks zu deaktivieren. Das Verfahren wird auf [dieser Seite](https://helpx.adobe.com/campaign/kb/acc-security.html#signature-mechanism) beschrieben.
 
 * Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
 * Fehlerkorrektur – Bei der Aktivität **Dateiübertragung** funktioniert jetzt die SFTP-Schlüssel-basierte Authentifizierung bei Debian 9. (NEO-23183)
