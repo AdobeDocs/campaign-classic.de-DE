@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 48%
+source-wordcount: '2368'
+ht-degree: 47%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 48%
 
 In diesem Abschnitt erhalten Sie eine ausführliche Anleitung zum Aktualisierungsprozess und zu den Schritten zur Ermittlung und Lösung von Konflikten.
 
-Die Bauaufrüstung muss mit Vorsicht durchgeführt werden, ihre Auswirkungen müssen im Vorfeld umfassend berücksichtigt werden, und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um eine erfolgreiche Aktualisierung sicherzustellen, stellen Sie sicher, dass nur sachkundige Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich vor dem Upgrade mit der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) in Verbindung zu setzen.
+Die Bauaufrüstung muss mit Vorsicht durchgeführt werden, ihre Auswirkungen müssen im Vorfeld umfassend berücksichtigt werden, und das Verfahren muss mit einem hohen Maß an Disziplin abgeschlossen werden. Um eine erfolgreiche Aktualisierung sicherzustellen, stellen Sie sicher, dass nur sachkundige Benutzer die unten beschriebenen Schritte ausführen. Darüber hinaus empfehlen wir dringend, sich vor dem Starten eines Upgrades mit dem [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) in Verbindung zu setzen.
 
 Folgende Voraussetzungen müssen gegeben sein:
 
@@ -29,14 +29,14 @@ Folgende Voraussetzungen müssen gegeben sein:
 
 Weitere Informationen finden Sie in den folgenden Abschnitten: [Aktualisieren von Adobe Campaign](../../production/using/upgrading.md), [Migration zu einer neuen Version](../../migration/using/about-migration.md).
 
-For hosted and hybrid instances, you must request the build upgrade to Adobe Technical Operations team. For more on this, refer to the Frequently Asked Questions section at the bottom if this page. Also consult the [build upgrade FAQ](../../platform/using/faq-build-upgrade.md).
+Bei gehosteten und hybriden Instanzen müssen Sie die Build-Aktualisierung beim Adobe Technical Operations-Team anfordern. Weitere Informationen dazu finden Sie im Abschnitt Häufig gestellte Fragen unten auf dieser Seite. Lesen Sie auch die FAQ [Build Upgrade FAQ](../../platform/using/faq-build-upgrade.md).
 
 ## Aktualisierung vorbereiten
 
 ![](assets/do-not-localize/icon_planification.png)
 
 Bevor Sie die Build-Aktualisierung starten, müssen Sie eine vollständige Vorbereitung durchführen, wie unten beschrieben.
-Sobald das System für die Aktualisierung bereit ist, dauert die Aktualisierung **mindestens** 2 Stunden.
+Sobald das System für die Aktualisierung bereit ist, dauert eine Build-Aktualisierung **mindestens** 2 Stunden.
 
 Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
@@ -53,7 +53,7 @@ Dies sind die wichtigsten Schritte zur Planung eines Build-Upgrades:
 1. Stellen Sie Kontaktdetails für Adobe- und Kundenmitarbeiter bereit.
 1. Für gehostete Instanzen: die Adobe- und Kundenmitarbeiter bestimmen den Zeitpunkt des Upgrades sowie die Person, die ihn durchführt.
 1. Für On-Premise-Instanzen: die Kundenmitarbeiter führen den gesamten Prozess aus. Wenn Hilfe beim Testen benutzerdefinierter Workflows und Sendungen benötigt wird, sollten Beratungsdienste in Anspruch genommen werden.
-1. Determine and confirm which version of Adobe Campaign you want to upgrade to - consult the [Adobe Campaign Classic release notes](../../rn/using/rn-overview.md).
+1. Bestimmen und bestätigen Sie, auf welche Version des Adobe Campaigns Sie aktualisieren möchten - lesen Sie die [Adobe Campaign Classic Versionshinweise](../../rn/using/rn-overview.md).
 1. Bestätigen Sie das Vorhandensein ausführbarer Upgrade-Dateien.
 
 ### Wichtigste Mitarbeiter
@@ -82,11 +82,11 @@ Vor Beginn der Build-Aktualisierung müssen lokale Kunden die folgende Vorbereit
 
 1. Führen Sie eine vollständige Sicherung der Datenbanken für alle Instanzen der Quell- und Zielgruppe-Umgebung durch.
 
-1. Rufen Sie die neueste Version Ihrer [Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md)ab.
+1. Rufen Sie die neueste Version Ihrer [Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) ab.
 
 1. Laden Sie die neueste Version herunter. [Erfahren Sie mehr über das Download-Center](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html).
 
-You also need to know all the [useful command lines](../../installation/using/command-lines.md) before starting a build upgrade:
+Sie müssen auch alle [nützlichen Befehlszeilen](../../installation/using/command-lines.md) kennen, bevor Sie eine Buildaktualisierung starten:
 
 * **nlserver pdump**: listet aktuelle Prozesse auf
 * **nlserver pdump -who**: listet aktive Client-Sitzungen auf
@@ -101,7 +101,7 @@ You also need to know all the [useful command lines](../../installation/using/co
 
 ![](assets/do-not-localize/icon_process.png)
 
-Nachstehende Verfahren werden nur von **Kunden vor Ort** durchgeführt. Für gehostete Kunden wird dies vom Hosting-Team übernommen. Um Adobe Campaign auf einen neuen Build zu aktualisieren, wird das detaillierte Verfahren unten beschrieben.
+Die folgenden Verfahren werden nur von **lokalen** Kunden durchgeführt. Für gehostete Kunden wird dies vom Hosting-Team übernommen. Um Adobe Campaign auf einen neuen Build zu aktualisieren, wird das detaillierte Verfahren unten beschrieben.
 
 ### Duplikat der Umgebung
 
@@ -121,7 +121,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Überprüfen Sie die Vorsicht wie folgt:
 
-   * Check that the only delivery part is the one which ID is set to **0**:
+   * Vergewissern Sie sich, dass der einzige Versand, für den die ID auf **0** eingestellt ist, der folgende Wert hat:
 
       ```
       SELECT * FROM neolane.nmsdeliverypart;
@@ -153,7 +153,7 @@ Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nl
    >
    >Stellen Sie sicher, dass der Umleitungsserver (webmdl) gestoppt wird, damit die von IIS verwendete Datei &quot;nlsrvmod.dll&quot;durch die neue Version ersetzt werden kann.
 
-1. Validate that no tasks are active by running the **nlserver pdump** command. If there are no tasks, then the output should resemble the following:
+1. Überprüfen Sie, ob keine Aufgaben aktiv sind, indem Sie den Befehl **nlserver pdump** ausführen. Wenn keine Aufgaben vorhanden sind, sollte die Ausgabe wie folgt aussehen:
 
    ```
    C:\<installation path>\bin>nlserverpdump HH:MM:SS > Application Server for Adobe Campaign version x.x (build xxx) dated xx/xx/xxxx No tasks
@@ -163,9 +163,9 @@ Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nl
 
 ### Aktualisieren der Adobe Campaign Server-Anwendung
 
-1. Führen Sie die Datei **Setup.exe** aus. Wenn Sie diese Datei herunterladen müssen, rufen Sie [das Download-Center](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html)auf.
+1. Führen Sie die Datei **Setup.exe** aus. Wenn Sie diese Datei herunterladen müssen, rufen Sie [das Download-Center](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) auf.
 
-1. Select the installation mode: **Update** or **Repair**.
+1. Wählen Sie den Installationsmodus aus: **Aktualisieren** oder **Reparieren**.
 
 1. Klicken Sie auf **Weiter**.
 
@@ -204,12 +204,13 @@ Die folgenden Dienste müssen wieder gestartet werden:
 
 ### Aktualisierung der Client-Konsolen
 
+Die Client-Konsole muss sich auf demselben Build wie die Serverinstanz befinden.
+
 Laden Sie auf der Maschine, auf der der Adobe Campaign-Anwendungsserver installiert ist (nlserverweb), diese Datei herunter und kopieren Sie sie:
 
 ```
 Setup-client-7.xxxx.exe in [path of the application]\datakit\nl\en\jsp
 ```
-
 
 Wenn das nächste Mal Clientkonsolen verbunden werden, werden die Benutzer darauf hingewiesen, dass eine neue Aktualisierung verfügbar ist, und erhalten die Möglichkeit, diese herunterzuladen und zu installieren.
 
@@ -245,7 +246,7 @@ Wenn Transactional Messaging (Message Center) auf Ihrer Kampagne-Instanz aktivie
 
 Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen Schritte ausführen, um eine Aktualisierung durchzuführen:
 
-1. Wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) , um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
+1. Wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um die Aktualisierung des Mid-Sourcing-Servers zu koordinieren.
 1. Überprüfen Sie, ob die Version aktualisiert wurde, indem Sie einen Test-Link ausführen. Beispiel:
 
    ```
@@ -315,7 +316,7 @@ Gehen Sie wie folgt vor, um einen Konflikt zu lösen:
 1. Gehen Sie im Adobe-Campaign-Explorer zu **Administration > Konfiguration > Packageverwaltung > Konflikte bearbeiten**.
 
 1. Wählen Sie in der Liste den Konflikt aus, den Sie lösen möchten.
-Es gibt drei Optionen zur Lösung von Konflikten: **Akzeptieren Sie die neue Version**, **behalten Sie die aktuelle Version**, **Merge the code (und deklarieren Sie als aufgelöst)**, **ignorieren Sie den Konflikt (nicht empfohlen)**.
+Es gibt drei Optionen zur Lösung von Konflikten: **Akzeptieren Sie die neue Version**, **Behalten Sie die aktuelle Version**, **Merge the code (and deklaration as resolved)**, **Ignore the konflikt (not recommendations)**.
 
 **Wann kann ich die neue Version akzeptieren?**
 
@@ -333,7 +334,7 @@ Es gibt drei Optionen zur Lösung von Konflikten: **Akzeptieren Sie die neue Ver
 * Nur Formulare, Berichte und Webanwendungen können zusammengeführt werden.
 * Einige geringfügige Zusammenführungen können durchgeführt werden, ohne den Code zu verstehen.
 * Kompliziertere Zusammenführungen sollten jedoch von einer Fachkraft durchgeführt werden.
-* Siehe [Durchführen einer Zusammenführung](#perform-a-merge).
+* Siehe [Führen Sie eine Zusammenführung durch](#perform-a-merge).
 
 **Was passiert, wenn ich Konflikte ignoriere?**
 
@@ -345,7 +346,7 @@ Es gibt drei Optionen zur Lösung von Konflikten: **Akzeptieren Sie die neue Ver
 >Es wird dringend empfohlen, Konflikte zu lösen.
 
 
-### Zusammenführen{#perform-a-merge}
+### Führen Sie eine Zusammenführung durch{#perform-a-merge}
 
 Es gibt verschiedene Arten von Zusammenführungen:
 
@@ -364,8 +365,8 @@ Es gibt verschiedene Arten von Zusammenführungen:
 #### Wo finden Sie den Code?
 
 1. Integrierter Code wird in XML-Dateien im Ordner &quot;datakit&quot;gespeichert. Suchen Sie die XML-Datei, die mit dem Objekt übereinstimmt, das den Konflikt verursacht. Beispiel: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Die Originalversion abrufen: über das [Download-Center](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html) oder eine andere nicht aktualisierte Installation des Produkts.
-1. Die neue Version abrufen: über das [Download-Center](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html) oder die vom Kunden installierten Dateien.
+1. Die Originalversion abrufen: über die [Download-Center](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) oder eine andere nicht aktualisierte Installation des Produkts.
+1. Die neue Version abrufen: über das [Download-Center](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) oder die vom Kunden installierten Dateien.
 1. Rufen Sie die benutzerdefinierte Version ab: Rufen Sie den Quellcode des Objekts vom Campaign-Client ab.
 
 ### Wie erstelle ich eine Diff-Datei?
@@ -384,8 +385,8 @@ Es gibt verschiedene Arten von Zusammenführungen:
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie folgendermaßen vor:
 
-1. In the lower section of the window, search for the **_conflict_string_** to locate the entities with conflicts. The entity installed with the new version contains the new argument, the entity that matches the previous version contains the custom argument.
-1. Delete the version you don&#39;t want to keep. Delete the **_conflict_argument_** string of the entity you are keeping.
+1. Suchen Sie im unteren Bereich des Fensters nach der **_konfliktzeichenfolge_**, um die Entitäten mit Konflikten zu suchen. Die mit der neuen Version installierte Entität enthält das neue Argument. Die Entität, die mit der vorherigen Version übereinstimmt, enthält das benutzerdefinierte Argument.
+1. Löschen Sie die Version, die Sie nicht behalten möchten. Löschen Sie die Zeichenfolge **_column_argument_** der Entität, die Sie behalten möchten.
 1. Gehen Sie zum gelösten Konflikt. Klicken Sie auf das Symbol **Aktionen** und wählen Sie **Als gelöst deklarieren** aus.
 1. Speichern Sie Ihre Änderungen: Der Konflikt ist jetzt gelöst.
 
