@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+source-git-commit: fa8e63051b4c8bbcfd4000a1e59fa6d91422149d
 workflow-type: tm+mt
-source-wordcount: '3676'
-ht-degree: 99%
+source-wordcount: '3684'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,9 @@ Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/
 
 Der Bereich &quot;Überwachung des Versands&quot;wurde in thematische Themen umstrukturiert. [Mehr dazu](../../delivery/using/about-delivery-monitoring.md)
 
-Es wurde ein Anwendungsfall hinzugefügt, in dem erläutert wird, wie die IP-Adressen von Absendern zu den Versandlogs hinzugefügt werden. [mehr dazu](../../delivery/using/delivery-dashboard.md#use-case)
+Es wurde ein Anwendungsfall hinzugefügt, in dem erläutert wird, wie die IP-Adressen von Absendern zu den Versandlogs hinzugefügt werden. [Mehr dazu](../../delivery/using/delivery-dashboard.md#use-case)
+
+Die Datenschutzhäufig gestellten Fragen wurden nach [diesem Abschnitt](../../platform/using/privacy-faq.md) verschoben.
 
 ## November 2020 {#nov-2020}
 
