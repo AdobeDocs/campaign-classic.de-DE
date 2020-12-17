@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5b35d2ffdd0f591e2fe31dc98a54be9ea0c0c18d
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '191'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,13 @@ Adobe Campaign basiert auf verschiedenen serverseitigen Prozessen, die Sie währ
 * Versand-Server (nlserver-Metadaten)
 * Umleitungsserver (webmdl)
 
+>[!CAUTION]
+>
+>Die Client-Konsole sollte sich auf demselben Build wie die Serverinstanz befinden.
+
 >[!NOTE]
 >
->For more on the various Adobe Campaign processes, refer to [this section](../../installation/using/general-architecture.md#logical-application-layer).\
+>Weitere Informationen zu den verschiedenen Adobe Campaign-Prozessen finden Sie in [diesem Abschnitt](../../installation/using/general-architecture.md#logical-application-layer).\
 >Bei Verwendung der Power Booster- oder Power Cluster-Architektur müssen Sie diesen Prozess auf alle Power Booster/Cluster-Server anwenden.
 
 Wenn die neue Version eine Änderung der Datenbankstruktur beinhaltet, empfehlen wir, die Server in der folgenden Reihenfolge neu zu starten:
