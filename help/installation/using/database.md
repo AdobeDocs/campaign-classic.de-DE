@@ -21,7 +21,7 @@ Der Datenbankserver kann auf einem beliebigen Betriebssystem ausgeführt werden,
 
 Das Betriebssystem des Datenbankservers ist nicht wichtig, solange die Verbindung mit den verschiedenen Komponenten von Adobe Campaign verfügbar ist.
 
-Überprüfen Sie auch den Abschnitt [Datenbankzugriffsebenen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) .
+Überprüfen Sie auch den Abschnitt [Ebenen für den Datenbankzugriff](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
@@ -43,11 +43,11 @@ Zugriff auf DLLs finden Sie auf der Microsoft-Website.
 >
 >Spaltennamen mit Multibyte-Zeichen werden nicht unterstützt.
 
-Die **Parameter** NLS_NCHAR_CHARACTERSET **und** NLS_CHARACTERSETmüssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
+Die Parameter **NLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** müssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
 
 Adobe Campaign verwendet die Oracle-Standardkodierung. Die Verwendung anderer Kodierungen kann Kompatibilitätsprobleme auslösen: in diesem Fall wenden Sie sich bitte an den technischen Support.
 
-Um mehr über Ihre Kodierung zu erfahren, verwenden Sie den folgenden **Befehl sqlplus** :
+Um mehr über Ihre Kodierung zu erfahren, verwenden Sie den folgenden Befehl **sqlplus**:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -74,7 +74,7 @@ sqlplus
 [login] [password]
 ```
 
-Sie können auch auf [Oracle Client in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux)verweisen.
+Sie können auch auf [Oracle Client in Linux](../../installation/using/installing-packages-with-linux.md#oracle-client-in-linux) verweisen.
 
 ## PostgresSQL {#postgressql}
 
