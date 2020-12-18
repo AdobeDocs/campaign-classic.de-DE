@@ -29,7 +29,7 @@ The webApp ids have been modified during the migration process. Please make sure
 
 Einige Komponenten von Webanwendungen, z. B. die verschiedenen Formelfelder, haben @id-Attribute. Diese werden im XML-Code von Webanwendungen verwendet und nicht mehr auf dieselbe Weise generiert. Sie sind auf der Oberfläche nicht sichtbar und dürfen normalerweise nicht verwendet werden. In einigen Fällen wurden @id-Attribute jedoch möglicherweise verwendet, um die Darstellung von Webanwendungen zu personalisieren, z. B. über ein Stylesheet oder mit JavaScript-Code.
 
-Während der Migration **müssen** Sie den in der Warnung angegebenen Pfad der Protokolldatei überprüfen:
+Während der Migration müssen Sie den in der Warnung angegebenen Pfad der Protokolldatei überprüfen:****
 
 * **Die Datei ist nicht leer**: Er enthält Warnungen, die Inkonsistenzen betreffen, die vor der Migration festgestellt wurden und die noch bestehen. Dies kann JavaScript-Code in einer Webanwendung sein, der auf eine nicht vorhandene ID verweist. Jeder Fehler muss überprüft und korrigiert werden.
 * **Die Datei ist leer**: Dies bedeutet, dass Adobe Campaign keine Probleme erkannt hat.
@@ -38,7 +38,7 @@ Unabhängig davon, ob die Datei leer ist oder nicht, müssen Sie überprüfen, o
 
 ## Workflows {#workflows}
 
-Da sich der Name des Installationsordners des Adobe Campaigns geändert hat, funktionieren einige Workflows nach der Migration möglicherweise nicht mehr. Wenn ein Workflow in einer seiner Aktivitäten auf den Ordner &quot;nl5&quot;verweist, wird ein Fehler ausgegeben. Ersetzen Sie diese Referenz durch **Build**. Sie können eine SQL-Abfrage ausführen, um folgende Workflows zu identifizieren (PostgreSQL-Beispiel):
+Da sich der Name des Installationsordners des Adobe Campaigns geändert hat, funktionieren einige Workflows nach der Migration möglicherweise nicht mehr. Wenn ein Workflow in einer seiner Aktivitäten auf den Ordner &quot;nl5&quot;verweist, wird ein Fehler ausgegeben. Ersetzen Sie diese Referenz durch **build**. Sie können eine SQL-Abfrage ausführen, um folgende Workflows zu identifizieren (PostgreSQL-Beispiel):
 
 ```
 SELECT   iWorkflowId, sInternalName, sLabel 
@@ -66,9 +66,9 @@ mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie auf der [Seite https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html) .
+>Weitere Informationen finden Sie auf der Seite [https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html](https://dev.mysql.com/doc/refman/8.0/en/time-zone-support.html).
 
-Wenn Änderungen an der Datenbankstruktur vorgenommen wurden, z. B. während der Konfiguration (Erstellung spezifischer Indizes, Erstellung von SQL-Ansichten usw.), sollten bei der Migration bestimmte Vorsichtsmaßnahmen getroffen werden. Tatsächlich können bestimmte Änderungen aus Inkompatibilitäten mit dem Migrationsverfahren herrühren. Das Erstellen von SQL-Ansichten mit **Zeitstempelfeldern** ist beispielsweise nicht mit der **Option usetimestamptz** kompatibel. Wir empfehlen Ihnen daher, die folgenden Empfehlungen zu befolgen:
+Wenn Änderungen an der Datenbankstruktur vorgenommen wurden, z. B. während der Konfiguration (Erstellung spezifischer Indizes, Erstellung von SQL-Ansichten usw.), sollten bei der Migration bestimmte Vorsichtsmaßnahmen getroffen werden. Tatsächlich können bestimmte Änderungen aus Inkompatibilitäten mit dem Migrationsverfahren herrühren. Das Erstellen von SQL-Ansichten mit den Feldern **Zeitstempel** ist beispielsweise nicht mit der Option **usetimestamptz** kompatibel. Wir empfehlen Ihnen daher, die folgenden Empfehlungen zu befolgen:
 
 1. Sichern Sie die Datenbank, bevor Sie die Migration starten.
 1. Löschen Sie SQL-Änderungen.
@@ -78,7 +78,7 @@ Wenn Änderungen an der Datenbankstruktur vorgenommen wurden, z. B. während der
    >Sie müssen unbedingt die Migrationsschritte ausführen, die im Abschnitt [Voraussetzungen für die Migration zu Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) beschrieben werden.
 1. SQL-Änderungen neu integrieren.
 
-In diesem Beispiel wurde eine **NmcTrackingLogMessages** -Ansicht erstellt, die ein **Zeitstempelfeld** mit dem Namen **tslog** enthält. In diesem Fall schlägt der Migrationsvorgang fehl und die folgende Fehlermeldung wird angezeigt:
+In diesem Beispiel wurde eine **NmcTrackingLogMessages**-Ansicht erstellt, die ein **Zeitstempel**-Feld mit dem Namen **tslog** enthält. In diesem Fall schlägt der Migrationsvorgang fehl und die folgende Fehlermeldung wird angezeigt:
 
 ```
 2011-10-04 11:57:51.804Z B67B28C0 1 info log Updating table 'NmcTrackingLogMessages'
@@ -90,7 +90,7 @@ Um sicherzustellen, dass die Nachrüstung funktioniert, müssen Sie die Ansicht 
 
 ## Tracking {#tracking}
 
-Die Verfolgungsformel wurde geändert. Bei der Migration wird die alte Formel (v5) durch die neue (v7) ersetzt. Wenn Sie eine personalisierte Formel in Adobe Campaign v5 verwenden, muss diese Konfiguration in Adobe Campaign v7 angepasst werden (Optionen **NmsTracking_ClickFormel** und **NmsTracking_OpenFormel** ).
+Die Verfolgungsformel wurde geändert. Bei der Migration wird die alte Formel (v5) durch die neue (v7) ersetzt. Wenn Sie eine personalisierte Formel in Adobe Campaign v5 verwenden, muss diese Konfiguration in Adobe Campaign v7 angepasst werden (**NmsTracking_ClickFormel** und **NmsTracking_OpenFormel** Optionen).
 
 Das Webtracking-Management wurde ebenfalls geändert. Nachdem die Migration zu v7 durchgeführt wurde, müssen Sie den Bereitstellungsassistenten Beginn haben, um die Konfiguration der Web-Verfolgung abzuschließen.
 
@@ -98,19 +98,19 @@ Das Webtracking-Management wurde ebenfalls geändert. Nachdem die Migration zu v
 
 Drei Modi sind verfügbar:
 
-* **Sitzungs-Webverfolgung**: Wenn das **[!UICONTROL Leads]** -Paket nicht installiert wurde, ist diese Option standardmäßig aktiviert. Diese Option ist hinsichtlich der Leistung am besten geeignet und ermöglicht es Ihnen, die Größe der Trackinglogs zu beschränken.
+* **Sitzungs-Webverfolgung**: Wenn das  **** Leadspaket nicht installiert wurde, ist diese Option standardmäßig aktiviert. Diese Option ist hinsichtlich der Leistung am besten geeignet und ermöglicht es Ihnen, die Größe der Trackinglogs zu beschränken.
 * **Ständiges Webtracking**
-* **Anonymes Webtracking**: Wenn das **[!UICONTROL Leads]** -Paket installiert ist, ist diese Option standardmäßig aktiviert. Es ist die ressourcenintensivste Option. Wie oben beschrieben, muss die Spalte **sSourceId** indiziert werden (in der Verfolgungstabelle und der **Tabelle CrmIncomeLead** ).
+* **Anonymes Webtracking**: Wenn das  **** Leadspaket installiert ist, ist diese Option standardmäßig aktiviert. Es ist die ressourcenintensivste Option. Wie oben beschrieben, muss die Spalte **sSourceId** indiziert werden (in der Verfolgungstabelle und der Tabelle **CrmIncomeLead**).
 
 >[!NOTE]
 >
->For more information on these three modes, refer to [this section](../../configuration/using/about-web-tracking.md).
+>Weitere Informationen zu diesen drei Modi finden Sie in [diesem Abschnitt](../../configuration/using/about-web-tracking.md).
 
-## Baumstruktur des Adobe Campaigns v7 {#campaign-vseven-tree-structure}
+## Adobe Campaign v7-Baumstruktur {#campaign-vseven-tree-structure}
 
 Während der Migration wird die Baumstruktur automatisch entsprechend den v7-Standards neu organisiert. Die neuen Ordner werden hinzugefügt, die veralteten Ordner gelöscht und ihr Inhalt wird im Ordner &quot;Zu verschieben&quot;abgelegt. Alle Elemente in diesem Ordner müssen nach der Migration überprüft werden, und der Berater muss entscheiden, sie entweder zu behalten oder sie zu löschen. Die zu pflegenden Gegenstände müssen dann an den richtigen Ort verschoben werden.
 
-Es wurde eine Option zur Deaktivierung der automatischen Migration der Navigationsstruktur hinzugefügt. Dieser Vorgang ist jetzt manuell. Veraltete Ordner werden nicht gelöscht und neue Ordner werden nicht hinzugefügt. Diese Option sollte nur verwendet werden, wenn die vordefinierte v5-Navigationsstruktur zu vielen Änderungen unterzogen wurde. hinzufügen Sie die Option vor der Migration im Knoten **[!UICONTROL Administration > Optionen]** in die Konsole:
+Es wurde eine Option zur Deaktivierung der automatischen Migration der Navigationsstruktur hinzugefügt. Dieser Vorgang ist jetzt manuell. Veraltete Ordner werden nicht gelöscht und neue Ordner werden nicht hinzugefügt. Diese Option sollte nur verwendet werden, wenn die vordefinierte v5-Navigationsstruktur zu vielen Änderungen unterzogen wurde. hinzufügen Sie die Option vor der Migration im Knoten **[!UICONTROL Administration > Options]** in die Konsole:
 
 * Interner Name: NlMigration_KeepFolderStructure
 * Datentyp: Integer
@@ -151,11 +151,11 @@ Die veralteten Ordner, die nach der Migration gelöscht werden sollen, lauten wi
 | nmsAdministration | Administration | - |
 | nmsDeliveryMgt | Kampagnenausführung | - |
 | ncmContent | Content Management | Content Manager installiert |
-| ncmForm | Eingabeformular | Content Manager installiert |
+| ncmForm | Formular | Content Manager installiert |
 | ncmImage | Bilder | Content Manager installiert |
 | ncmJavascript | JavaScript-Codes | Content Manager installiert |
 | ncmJst | JavaScript-Templates | Content Manager installiert |
-| ncmParameters | Konfiguration       | Content Manager installiert |
+| ncmParameters | Konfiguration        | Content Manager installiert |
 | ncmSrcSchema | Datenschemata | Content Manager installiert |
 | ncmStylesheet | XSL-Stildateien | Content Manager installiert |
 | nmsAdminPlan | Administration | Kampagne installiert |
