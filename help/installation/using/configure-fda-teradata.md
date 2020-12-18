@@ -19,9 +19,9 @@ ht-degree: 76%
 
 Verwenden Sie die Option &quot;Kampagne [Federated Data Access](../../installation/using/about-fda.md) (FDA)&quot;, um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
 
-1. Installieren und Konfigurieren von [Teradata-Treibern](#teradata-config)
-1. Teradata- [Externe Konto](#teradata-external) in Kampagne konfigurieren
-1. Einrichten [zusätzlicher Konfigurationen](#teradata-additional-configurations) für Teradata- und Kampagne-Server
+1. [Teradata-Treiber](#teradata-config) installieren und konfigurieren
+1. Konfigurieren Sie das Teradata [Externe Konto](#teradata-external) in der Kampagne
+1. [Zusätzliche Konfiguration](#teradata-additional-configurations) für Teradata- und Kampagne-Server einrichten
 
 ## Teradata-Konfiguration {#teradata-config}
 
@@ -68,14 +68,14 @@ Sie müssen die Treiber für Teradata installieren, damit eine Verbindung zur Ka
 
 >[!NOTE]
 >
->Die Verbindung zu einer externen Teradata-Datenbank in FDA erfordert zusätzliche Konfigurationsschritte auf dem Adobe Campaign-Server. [Mehr dazu](#teradata-additional-configurations).
+>Die Verbindung zu einer externen Teradata-Datenbank in FDA erfordert zusätzliche Konfigurationsschritte auf dem Adobe Campaign-Server. [Weitere Informationen](#teradata-additional-configurations).
 
 
 ## Externes Teradata-Konto{#teradata-external}
 
 Über das externe Teradata-Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden.
 
-1. From Campaign **[!UICONTROL Explorer]**, click **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL External accounts]**.
+1. Klicken Sie in Kampagne **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Externe Konti]**.
 
 1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** aus.
 
@@ -83,7 +83,7 @@ Sie müssen die Treiber für Teradata installieren, damit eine Verbindung zur Ka
 
 1. Zum Konfigurieren des externen **[!UICONTROL Teradata]**-Kontos müssen Sie Folgendes angeben:
 
-   * **[!UICONTROL Typ]**: Wählen Sie den **[!UICONTROL Teradata]** -Typ.
+   * **[!UICONTROL Typ]**: Wählen Sie den  **** Teratatatatyp.
 
    * **[!UICONTROL Server]**: URL oder Name des Teradata-Servers
 
@@ -111,9 +111,9 @@ Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Ka
 
 Gehen Sie wie folgt vor, um die Abfrage zu konfigurieren:
 
-1. Verwenden Sie den **[!UICONTROL Standardwert]** , um ein Standardband für die Abfrage einzugeben, das verwendet wird, wenn ein Benutzer über kein zugehöriges Abfragen-Band verfügt. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrage Teradata nicht verwenden.
+1. Verwenden Sie **[!UICONTROL Default]**, um ein Standardband für die Abfrage einzugeben, das verwendet wird, wenn ein Benutzer über kein zugehöriges Abfragen-Band verfügt. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrage Teradata nicht verwenden.
 
-1. Verwenden Sie das Feld **[!UICONTROL Benutzer]** , um für jeden Benutzer ein Abfrage-Band anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Abfrage-Band zugewiesen ist, wird das Feld &quot; **[!UICONTROL Standard]** &quot;angewendet.
+1. Verwenden Sie das Feld **[!UICONTROL Users]**, um ein Abfragen-Band für jeden Benutzer anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Abfrage-Band zugewiesen ist, wird das Feld **[!UICONTROL Default]** angewendet.
 
 1. Markieren Sie die Option **[!UICONTROL Aktiv]**, um diese Funktion zu aktivieren.
 
@@ -125,7 +125,7 @@ Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquell
 
 * Ab Kampagne 18.10 können Sie ODBCDRiverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des Externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Führen Sie odbcad32.exe aus und gehen Sie zum Treiber-Tab, um den genauen Namen abzurufen.
 
-* Wenn Sie eine ältere Version der Kampagne verwenden, müssen Sie den Teradata-Abschnitt von odbcinst.ini, der von der Treiberinstallation erstellt wurde, in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. If your base is in latin1, you will have to add **APICharSize=1** in the options.
+* Wenn Sie eine ältere Version der Kampagne verwenden, müssen Sie den Teradata-Abschnitt von odbcinst.ini, der von der Treiberinstallation erstellt wurde, in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 liegt, müssen Sie **APICharSize=1** in die Optionen einfügen.
 
 ## Ergänzende Konfigurationen {#teradata-additional-configurations}
 
