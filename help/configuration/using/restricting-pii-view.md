@@ -23,7 +23,7 @@ Einige Kunden benötigen Marketingbenutzer, die auf Datendatensätze zugreifen k
 
 ## Implementierung{#implementation}
 
-Zu den Schemas wurde ein neues Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es ergänzt das vorhandene Attribut **[!UICONTROL visibleIf]** . Dieses Attribut ist: **[!UICONTROL accessibleIf]** . Wenn ein XTK-Ausdruck im Zusammenhang mit dem aktuellen Benutzerkontext enthalten ist, kann er beispielsweise **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** nutzen.
+Zu den Schemas wurde ein neues Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es ergänzt das vorhandene Attribut **[!UICONTROL visibleIf]** . Dieses Attribut ist: **[!UICONTROL accessibleIf]** . Wenn ein XTK-Ausdruck im Zusammenhang mit dem aktuellen Benutzerkontext enthalten ist, kann er z. B. **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** verwenden.
 
 Nachfolgend finden Sie ein Beispiel für eine Empfänger Schema Extension, die diese Nutzung zeigt:
 
@@ -58,7 +58,7 @@ Die Verwendung dieses Attributs in der Kampagne hat folgende Folgen:
 
 ## Empfehlungen {#recommendations}
 
-In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL wideLog]** und **[!UICONTROL foreLog]** kopiert: Daher müssen diese Felder auch geschützt werden.
+In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL foreLog]** kopiert: Daher müssen diese Felder auch geschützt werden.
 
 Nachfolgend finden Sie ein Beispiel für die Protokolltabellenerweiterung, um Folgendes zu implementieren:
 
