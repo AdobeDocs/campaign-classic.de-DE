@@ -37,13 +37,13 @@ Wenn Sie diese Webanwendungen nicht verwendet haben, führen Sie das folgende Be
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möchten, müssen Sie die Option **allowSQLInject** in den verschiedenen Sicherheitszonen aktivieren und die Nachrüstung erneut Beginn ausführen. Weitere Informationen finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata) .
+Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möchten, müssen Sie die Option **allowSQLInject** in den verschiedenen Sicherheitszonen aktivieren und die Nachrüstung erneut Beginn vornehmen. Weitere Informationen finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata).
 
 ## Benutzerfreundlichkeit: Startseite und Navigation {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Wenn Sie weiterhin Übersichtswebanwendungen vom Typ v6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** vor der Aktualisierung in den verschiedenen Sicherheitszonen aktivieren. Refer to [Web applications](#web-applications).
+>Wenn Sie weiterhin Übersichtswebanwendungen der Version 6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** in den verschiedenen Sicherheitszonen vor der Aktualisierung aktivieren. Siehe [Webanwendungen](#web-applications).
 
 Nach der Migration von Version 6.02 wird die Homepage des Adobe Campaigns v6.02 nicht mehr angezeigt, aber sie ist noch immer verfügbar und mit Adobe Campaign v7 kompatibel.
 
@@ -51,9 +51,9 @@ Um weiterhin die Homepage v6.02 zu verwenden, müssen Sie nach der Migration ein
 
 Importieren Sie dazu das Kompatibilitätspaket:
 
-Klicken Sie auf **[!UICONTROL Extras > Erweitert > Paket]** importieren und wählen Sie das Paket **campaignMigration.xml** im **`\nl\datakit\nms\[Your language]\package\optional`**.
+Klicken Sie auf **[!UICONTROL Werkzeuge > Erweitert > Paket importieren]** und wählen Sie das **campaignMigration.xml**-Paket in **`\nl\datakit\nms\[Your language]\package\optional`**.
 
-Um Zugriff auf die Schnittstellen des Typs v6.02 Webanwendung zuzulassen, muss die **Option für die Serverkonfiguration sessionTokenOnly** in der Datei **serverConf.xml** aktiviert werden:
+Um Zugriff auf die Schnittstellen des Webanwendung Typs v6.02 zuzulassen, muss die Serverkonfigurationsoption **sessionTokenOnly** in der Datei **serverConf.xml** aktiviert werden:
 
 ```
 sessionTokenOnly="true"
@@ -65,7 +65,7 @@ Nachdem das Paket installiert wurde, wird die Adobe Campaign v7-Startseite durch
 
 ![](assets/dashboards.png)
 
-Alle Links auf dieser Homepage verlinken mit Ausnahme der Listen (**[!UICONTROL Liste]** der Vorgänge, Verfolgung von **[!UICONTROL Versänden in Vorgängen]** usw.) , der auf die v6.02-Übersicht verweist (Webanwendungen).
+Alle Links auf dieser Homepage verlinken mit Ausnahme der Listen (**[!UICONTROL operation Liste]**, **[!UICONTROL Versand-Verfolgung in Vorgängen]** usw.) , der auf die v6.02-Übersicht verweist (Webanwendungen).
 
 ![](assets/dashboards2.png)
 
