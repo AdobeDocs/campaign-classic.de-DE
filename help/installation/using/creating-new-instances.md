@@ -23,7 +23,7 @@ Melden Sie sich hierzu bei einer vorhandenen Datenbank an und führen Sie die fo
 
 1. Eine neue Instanz deklarieren
 
-   Gehen Sie zu **[!UICONTROL Tools > Erweitert > Eine neue Instanz deklarieren...]** zum Beginn des Assistenten.
+   Gehen Sie zu **[!UICONTROL Tools > Erweitert > Eine neue Instanz deklarieren...]**, um den Assistenten Beginn.
 
    ![](assets/s_ncs_install_declare_instance_menu.png)
 
