@@ -31,7 +31,7 @@ Jeder Modus hat bestimmte Eigenschaften. Der &quot;permanente&quot; Webtracking-
 >
 >Der Standardmodus kann jederzeit im Instanzbereitstellungsassistenten geändert werden.
 
-Beachten Sie, dass Sie bei Verwendung des **permanenten Web** - oder **anonymen** Verfolgungsmodus der Spalte &quot;sourceID&quot;(uuid230) in den Verfolgungstabellen (trackingLogXXX) einen Index hinzufügen müssen:
+Beachten Sie, dass Sie bei Verwendung des Verfolgungsmodus **permanente Web** oder **Anonymous** der Spalte &quot;sourceID&quot;(uuid230) in den Verfolgungstabellen (trackingLogXXX) einen Index hinzufügen müssen:
 
 1. Identifizieren Sie die Verfolgungstabelle(n), die von der permanenten Verfolgung betroffen sind.
 1. Erweitern Sie die Schemas, die mit diesen Tabellen übereinstimmen, um die folgenden Zeilen hinzuzufügen:
@@ -42,11 +42,11 @@ Beachten Sie, dass Sie bei Verwendung des **permanenten Web** - oder **anonymen*
 </dbindex>
 ```
 
-**Die Modi &quot;Dauerhaft** &quot;und &quot; **Anonym** &quot;umfassen zwei Optionen: **Erzwungener Versand** und **letzter Versand**.
+**Die** Tracking-Modi &quot;Dauerhaft&quot;und &quot; **** AnonymousWeb&quot;umfassen zwei Optionen:  **Erzwungene** Auslieferung und  **Letzter Versand**.
 
-Mit der Option &quot; **Erzwungener Versand** &quot;können Sie die Kennung des Versands (@jobid) während der Verfolgung angeben.
+Mit der Option **Erzwungener Versand** können Sie die Kennung des Versands (@jobid) während der Verfolgung angeben.
 
-Mit der Option &quot; **Letzter Versand** &quot;können Sie das aktuelle Verfolgungsprotokoll mit dem zuletzt verfolgten Versand verknüpfen.
+Mit der Option **Letzter Versand** können Sie das aktuelle Verfolgungsprotokoll mit dem zuletzt verfolgten Versand verknüpfen.
 
 **Merkmale des Webtrackings:**
 
@@ -81,7 +81,7 @@ Dieser Modus ist hinsichtlich Berechnung und Volumen am teuersten.
 
 >[!NOTE]
 >
->Wenn das **[!UICONTROL Interessentenpaket]** installiert ist, müssen Sie dasselbe für die Aktivität tun (**crm:eingehendesLead**)
+>Wenn das **[!UICONTROL Interessenten]**-Paket installiert ist, müssen Sie dasselbe für die Aktivität tun (**crm:eingehendesLead**)
 
 Im folgenden Schema werden die Funktionalitäten aller drei Webtracking zusammengefasst:
 
