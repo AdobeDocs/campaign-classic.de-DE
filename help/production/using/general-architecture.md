@@ -45,9 +45,9 @@ Die Verteilung von Modulen auf mehrere Maschinen bietet große Flexibilität bei
 
 >[!NOTE]
 >
->For more on the various architectures, refer to [this section](../../installation/using/general-architecture.md).
+>Weitere Informationen zu den verschiedenen Architekturen finden Sie in [diesem Abschnitt](../../installation/using/general-architecture.md).
 
-## Liste offener Häfen {#list-of-open-ports}
+## Liste offener Anschlüsse {#list-of-open-ports}
 
 | Anschlussnummer | Betroffenes Adobe Campaign-Modul oder -Anwendung | Konfigurierbar |
 |---|---|---|
