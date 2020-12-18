@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -63,7 +63,7 @@ Die folgende Liste enthält nur die Tabellen, die am häufigsten fragmentiert we
   <tr> 
    <td> NmsAddress<br /> </td> 
    <td> Mittel<br /> </td> 
-   <td> Aktualisierungen, Einfügungen<br /> </td> 
+   <td> Updates, Einfügungen<br /> </td> 
    <td> Diese Tabelle enthält Informationen zu E-Mail-Adressen. Es wird häufig im Rahmen der Quarantäne aktualisiert (Datensätze werden beim ersten Versand-Fehler erstellt, aktualisiert, wenn sich die Zähler ändern und gelöscht, sobald der Versand erfolgreich ist). <br /> </td> 
   </tr> 
   <tr> 
@@ -88,11 +88,11 @@ Die folgende Liste enthält nur die Tabellen, die am häufigsten fragmentiert we
    <td> XtkWorkflowJob<br /> </td> 
    <td> Sehr klein <br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> Diese Tabelle ist spezifisch für das Workflow-Engine. Es ermöglicht das Senden von Befehlen an Workflows (z. B. Beginn, Stopp, Pause). Obwohl es klein ist, wird diese Tabelle bei der Bereinigung von mit Workflows verknüpften Transaktionstabellen berücksichtigt.<br /> </td> 
+   <td> Diese Tabelle ist spezifisch für das Workflow-Engine. Es ermöglicht das Senden von Befehlen an Workflows (z. B. Beginn, Stopp, Pause). Diese Tabelle ist zwar klein, wird aber bei der Bereinigung der mit Workflows verknüpften Transaktionstabellen berücksichtigt.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsBroadLog<br /> </td> 
-   <td> Größter<br /> </td> 
+   <td> Größte<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
    <td> Das ist der größte Tisch im System. Pro gesendeter Nachricht wird ein Datensatz gesendet. Diese Datensätze werden eingefügt, aktualisiert, um den Status des Versands zu verfolgen, und gelöscht, wenn der Verlauf bereinigt wird. <br /> </td> 
   </tr> 
@@ -139,7 +139,7 @@ Die folgende Liste enthält nur die Tabellen, die am häufigsten fragmentiert we
    <td> Trackinglogs werden beim Bereinigen des Verlaufs eingefügt und gelöscht, jedoch nicht aktualisiert. Das Volumen hängt von der Länge der Datenspeicherung ab. <br /> </td> 
   </tr> 
   <tr> 
-   <td> YyyTrackingLogXxx (wenn die externe Empfänger-Tabelle verwendet wird)<br /> </td> 
+   <td> YyyTrackingLogXxx (wenn die Tabelle des externen Empfängers verwendet wird)<br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügen, Löschen<br /> </td> 
    <td> Wie NmsTrackingLogRcp, aber mit einer externen Empfänger-Tabelle. Bitte passen Sie YYY und XXXX an die Werte an, die in Ihrer Versand-Zuordnung verwendet werden. <br /> </td> 
@@ -148,7 +148,7 @@ Die folgende Liste enthält nur die Tabellen, die am häufigsten fragmentiert we
    <td> NmsBroadLogRtEvent (Message Center-Ausführungsinstanz)<br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügen, Aktualisieren, Löschen<br /> </td> 
-   <td> Ähnlich wie die anderen Breitlog-Tabellen, aber mit dem NmsRtEvent anstelle von NmsRecipient.<br /> </td> 
+   <td> Ähnlich wie bei anderen Broadlog-Tabellen, jedoch mit dem NmsRtEvent anstelle von NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> NmsTrackingLogRtEvent( Message Center-Ausführungsinstanz)<br /> </td> 
@@ -177,7 +177,7 @@ Die folgende Liste enthält nur die Tabellen, die am häufigsten fragmentiert we
   <tr> 
    <td> NmsAppSubscriptionRcp<br /> </td> 
    <td> Groß<br /> </td> 
-   <td> Einfügungen, Aktualisierungen<br /> </td> 
+   <td> Einfügen, Aktualisieren<br /> </td> 
    <td> Tabelle mit den IDs von Mobilgeräten (Adressen), die zum Senden der Benachrichtigung verwendet werden (ähnlich wie bei einer Empfänger-Tabelle).<br /> </td> 
   </tr> 
   <tr> 
@@ -190,7 +190,7 @@ Die folgende Liste enthält nur die Tabellen, die am häufigsten fragmentiert we
    <td> NmsTrackingLogAppSubRcp<br /> </td> 
    <td> Groß<br /> </td> 
    <td> Einfügen, Löschen<br /> </td> 
-   <td> Ähnlich wie bei anderen trackingLog-Tabellen, jedoch mit der NmsappSubscriptionRcp-Tabelle anstelle von NmsRecipient.<br /> </td> 
+   <td> Ähnlich wie die anderen trackingLog-Tabellen, jedoch mit der NmsappSubscriptionRcp-Tabelle anstelle von NmsRecipient.<br /> </td> 
   </tr> 
   <tr> 
    <td> XtkSessionInfo<br /> </td> 
