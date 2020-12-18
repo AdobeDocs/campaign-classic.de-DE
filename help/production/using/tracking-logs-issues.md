@@ -19,9 +19,9 @@ ht-degree: 13%
 
 Es kann mehrere Gründe dafür geben, dass Trackinglogs nicht weitergeleitet werden. Es wird empfohlen, die folgenden Informationen zu überprüfen:
 
-* Hat der **Tracking** -Arbeitsablauf Fehler?
+* Hat der **Tracking**-Workflow Fehler?
 
-   Siehe [Technischen Workflows](../../workflow/using/monitoring-technical-workflows.md)zur Überwachung.
+   Weitere Informationen finden Sie unter [Überwachte Technischen Workflows](../../workflow/using/monitoring-technical-workflows.md).
 
    ![](assets/tracking_scheduled_task.png)
 
