@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '667'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ Sie sollten über eine Test-/Entwicklungs-Umgebung verfügen, um Migrationstests
 1. Erstellen Sie eine Sicherung der Development-Umgebung-Datenbank.
 1. Beenden Sie alle Adobe Campaign-Prozesse auf der Entwicklungsinstanz.
 1. Erstellen Sie eine Sicherungskopie der Produktionsdatenbank und stellen Sie sie als Umgebung der Umgebung wieder her.
-1. Führen Sie vor dem Starten der Adobe Campaign-Dienste das Warnskript **frizeInstance.js** aus, mit dem Sie die Datenbank aller Objekte löschen können, die beim Starten der Sicherung ausgeführt wurden.
+1. Bevor Sie die Adobe Campaign-Dienste starten, führen Sie das Warnskript **frizeInstance.js** aus, mit dem Sie die Datenbank aller Objekte löschen können, die beim Starten der Sicherung ausgeführt wurden.
 
    ```
    nlserver javascript nms:freezeInstance.js -instance:<instance> -arg:<run|dry>
@@ -35,12 +35,12 @@ Sie sollten über eine Test-/Entwicklungs-Umgebung verfügen, um Migrationstests
 
    >[!NOTE]
    >
-   >Der Befehl wird standardmäßig im **trockenen** Modus gestartet und alle Anforderungen, die von diesem Befehl ausgeführt wurden, werden Liste, ohne sie zu starten. Verwenden Sie zum Ausführen von Warnungsanfragen den Befehl **run** .
+   >Der Befehl startet standardmäßig im Modus **dry** und Liste alle Anforderungen, die von diesem Befehl ausgeführt wurden, ohne sie zu starten. Um Warnanforderungen auszuführen, verwenden Sie **run** im Befehl.
 
 1. Stellen Sie sicher, dass Ihre Sicherungen korrekt sind, indem Sie versuchen, sie wiederherzustellen. Stellen Sie sicher, dass Sie auf Ihre Datenbank, Ihre Tabellen, Ihre Daten usw. zugreifen können.
 1. Testen Sie das Migrationsverfahren in der Development-Umgebung.
 
-   Die vollständigen Verfahren sind im Abschnitt [Voraussetzungen für die Migration zu Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md) beschrieben.
+   Die vollständigen Verfahren finden Sie im Abschnitt [Voraussetzungen für die Migration zu Adobe Campaign 7](../../migration/using/prerequisites-for-migration-to-adobe-campaign-7.md).
 
 1. Wenn die Migration der Development-Umgebung erfolgreich ist, können Sie die Umgebung für die Produktion migrieren.
 
@@ -50,13 +50,13 @@ Sie sollten über eine Test-/Entwicklungs-Umgebung verfügen, um Migrationstests
 
 >[!NOTE]
 >
->Mit dem Befehl &quot;Adobe Campaign aktualisieren&quot;(**nach der Aktualisierung**) können Sie Ressourcen synchronisieren und Schema und die Datenbank aktualisieren. Dieser Vorgang kann nur einmal und nur auf dem Anwendungsserver ausgeführt werden. Nach dem Synchronisieren von Ressourcen können Sie mit dem Befehl **nach der Aktualisierung** erkennen, ob die Synchronisierung Fehler oder Warnungen hervorruft.
+>Mit dem Adobe Campaign-Aktualisierungsbefehl (**postupgrade**) können Sie Ressourcen synchronisieren und Schema und die Datenbank aktualisieren. Dieser Vorgang kann nur einmal und nur auf dem Anwendungsserver ausgeführt werden. Nach dem Synchronisieren von Ressourcen können Sie mit dem Befehl **postupgrade** erkennen, ob die Synchronisierung Fehler oder Warnungen hervorruft.
 
-## Migrationswerkzeuge {#migration-tools}
+## Migrationstools {#migration-tools}
 
 Mit verschiedenen Optionen können Sie die Auswirkungen einer Migration messen und potenzielle Probleme identifizieren. Diese Optionen sind auszuführen:
 
-* im Befehl **config** :
+* im Befehl **config**:
 
    ```
    nlserver.exe config <option> -instance:<instanceName>
@@ -70,11 +70,11 @@ Mit verschiedenen Optionen können Sie die Auswirkungen einer Migration messen u
 
 >[!NOTE]
 >
->Sie müssen die **-Instanz verwenden:`<instanceame>`** auswählen. Es wird nicht empfohlen, die Option **-allinstances** zu verwenden.
+>Sie müssen die Option **-instance:`<instanceame>`** verwenden. Es wird nicht empfohlen, die Option **-allinstances** zu verwenden.
 
 ### -showCustomEntities- und -showDeletedEntities-Optionen {#showcustomentities-and--showdeletedentities-options}
 
-* Die **-showCustomEntities** -Option zeigt die Liste aller nicht standardmäßigen Objekte an:
+* Die Option **-showCustomEntities** zeigt die Liste aller nicht standardmäßigen Objekte an:
 
    ```
    nlserver.exe config -showCustomEntities -instance:<instanceName>
@@ -98,7 +98,7 @@ Mit verschiedenen Optionen können Sie die Auswirkungen einer Migration messen u
    Out of the box object 'nms:deliveryCustomizationMdl' belonging to the 'xtk:srcSchema' schema has not been found in the file system.
    ```
 
-### Verification process {#verification-process}
+### Überprüfungsprozess {#verification-process}
 
 Dieser Prozess, der als Standard in den Befehl nach der Aktualisierung integriert ist, ermöglicht Ihnen die Anzeige von Warnungen und Fehlern, die die Migration zum Fehler machen könnten. **Wenn Fehler angezeigt werden, wurde die Migration nicht ausgeführt.** Wenn dies der Fall ist, korrigieren Sie alle Fehler und wiederholen Sie den Beginn nach der Aktualisierung.
 
@@ -119,7 +119,7 @@ Nach den folgenden Ausdrücken wird gesucht (Groß-/Kleinschreibung beachten):
   <tr> 
    <th> Ausdruck<br /> </th> 
    <th> Fehlercode<br /> </th> 
-   <th> Protokolltyp<br /> </th> 
+   <th> Logtyp<br /> </th> 
    <th> Erklärung<br /> </th> 
   </tr> 
  </thead> 
@@ -146,7 +146,7 @@ Nach den folgenden Ausdrücken wird gesucht (Groß-/Kleinschreibung beachten):
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
    <td> Warnhinweis<br /> </td> 
-   <td> Diese Funktion wird nur unterstützt, wenn sie im JavaScript-Code verwendet wird, der aus einer Sicherheitszone ausgeführt wird, die sich im <strong>sessionTokenOnly</strong> -Modus befindet.<br /> </td> 
+   <td> Diese Funktion wird nur unterstützt, wenn sie im JavaScript-Code verwendet wird, der aus einer Sicherheitszone ausgeführt wird, die sich im Modus <strong>sessionTokenOnly</strong> befindet.<br /> </td> 
   </tr> 
   <tr> 
    <td> sql=<br /> </td> 
@@ -158,14 +158,14 @@ Nach den folgenden Ausdrücken wird gesucht (Groß-/Kleinschreibung beachten):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Wenn Sie Übersichtsfehler-Fehlerprotokolle für Webanwendungen erhalten (Migration von Version 6.02), lesen Sie <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Webanwendungen</a>.<br /> </td> 
+   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Wenn Sie Übersichtsfehler-Fehlerprotokolle für Webanwendungen erhalten (Migration von v6.02), lesen Sie <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Webanwendungen</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 Außerdem wird eine Datenbank- und eine Schema-Kohärenzprüfung durchgeführt.
 
-### Wiederherstellungsoption {#restoration-option}
+### Wiederherstellungs-Option {#restoration-option}
 
 Mit dieser Option können Sie vordefinierte Objekte wiederherstellen, wenn sie geändert wurden. Für jedes wiederhergestellte Objekt wird eine Sicherungskopie der Änderungen im ausgewählten Ordner gespeichert:
 
