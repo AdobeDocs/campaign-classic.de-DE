@@ -19,8 +19,8 @@ ht-degree: 73%
 
 Verwenden Sie die Option &quot;Kampagne [Federated Data Access](../../installation/using/about-fda.md) (FDA)&quot;, um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Oracle zu konfigurieren.
 
-1. Oracle unter [Linux](#oracle-linux) oder [Windows konfigurieren](#azure-windows)
-1. Oracle- [Externe Konto](#oracle-external) in Kampagne konfigurieren
+1. Oracle unter [Linux](#oracle-linux) oder [Windows](#azure-windows) konfigurieren
+1. Konfigurieren Sie das Oracle [Externe Konto](#oracle-external) in der Kampagne
 
 ## Oracle unter Linux {#oracle-linux}
 
@@ -62,7 +62,7 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
       yum install libaio1
       ```
 
-1. In Campaign Classic können Sie dann Ihr externes [!DNL Oracle]-Konto konfigurieren. For more on how to configure your external account, refer to [this section](#oracle-external).
+1. In Campaign Classic können Sie dann Ihr externes [!DNL Oracle]-Konto konfigurieren. Weitere Informationen zum Konfigurieren Ihres Externen Kontos finden Sie in [diesem Abschnitt](#oracle-external).
 
 ## Oracle unter Windows {#oracle-windows}
 
@@ -74,13 +74,13 @@ Die Verbindung zu einer externen Oracle-Datenbank über die FDA-Option erfordert
 
 1. Fügen Sie eine TNS_ADMIN-Umgebungsvariable mit C:\Oracle als Wert hinzu und starten Sie das Gerät neu.
 
-1. In Campaign Classic können Sie dann Ihr externes [!DNL Oracle]-Konto konfigurieren. For more on how to configure your external account, refer to [this section](#oracle-external).
+1. In Campaign Classic können Sie dann Ihr externes [!DNL Oracle]-Konto konfigurieren. Weitere Informationen zum Konfigurieren Ihres Externen Kontos finden Sie in [diesem Abschnitt](#oracle-external).
 
 ## Externes Oracle-Konto {#oracle-external}
 
-The [!DNL Oracle] external account allows you to connect your Campaign instance to your Oracle external database.
+Mit dem Externe Konto [!DNL Oracle] können Sie Ihre Kampagne mit Ihrer externen Oracle-Datenbank verbinden.
 
-1. From Campaign **[!UICONTROL Explorer]**, select **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Wählen Sie in Kampagne **[!UICONTROL Explorer]** **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL Externe Konti]**.
 
 1. Wählen Sie **[!UICONTROL Neu]**.
 
