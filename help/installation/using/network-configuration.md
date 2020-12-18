@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -25,12 +25,12 @@ Verwenden Sie den eingebetteten Apache Tomcat-Anschluss als Priorität (standard
 
 ### Versand-Server {#delivery-server}
 
-Für den Versand-Server (**nlserver-Metadaten**) müssen die folgenden Anschlüsse geöffnet sein:
+Für den Versand-Server (**nlserver-mta**) müssen die folgenden Anschlüsse geöffnet sein:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Ports<br /> </td> 
+   <td> Anschlüsse<br /> </td> 
    <td> Ziel<br /> </td> 
    <td> Erklärung<br /> </td> 
   </tr> 
@@ -46,7 +46,7 @@ Für den Versand-Server (**nlserver-Metadaten**) müssen die folgenden Anschlüs
   </tr> 
   <tr> 
    <td> 38000/tcp (Standardanschluss)<br /> </td> 
-   <td> SMS-Gateway<br /> </td> 
+   <td> SMS Gateway<br /> </td> 
    <td> Dient zum Senden von SMS-Traffic an den NetSize-SMS-Router [Option].<br /> </td> 
   </tr> 
   <tr> 
@@ -57,14 +57,14 @@ Für den Versand-Server (**nlserver-Metadaten**) müssen die folgenden Anschlüs
  </tbody> 
 </table>
 
-### Inbound Mail {#inbound-mail}
+### Inbound mail {#inbound-mail}
 
-Für den Inbound Mail Recovery-Prozess (**nlserver inMail**) müssen die folgenden Anschlüsse geöffnet sein:
+Für den Wiederherstellungsprozess der eingehenden E-Mail (**nlserver inMail**) müssen die folgenden Anschlüsse geöffnet sein:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Ports<br /> </td> 
+   <td> Anschlüsse<br /> </td> 
    <td> Ziel<br /> </td> 
    <td> Erklärung<br /> </td> 
   </tr> 
@@ -88,14 +88,14 @@ Für den Anwendungsserver (**nlserver web**) müssen die folgenden Anschlüsse g
 <table> 
  <tbody> 
   <tr> 
-   <td> Ports<br /> </td> 
+   <td> Anschlüsse<br /> </td> 
    <td> Ziel<br /> </td> 
    <td> Erklärung<br /> </td> 
   </tr> 
   <tr> 
    <td> 80/tcp (http)<br /> 443/tcp (https)<br /> </td> 
    <td> Anywhere<br /> </td> 
-   <td> HTTP- oder HTTPS-Traffic (einschließlich für das Angebot der Zustellbarkeit).<br /> </td> 
+   <td> HTTP- oder HTTPS-Traffic (auch für das Angebot der Zustellbarkeit).<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -104,19 +104,19 @@ Wenn mehrere Anwendungsserver einer Adobe Campaign-Plattform miteinander kommuni
 
 ### Status des SMS-Versands {#sms-delivery-status}
 
-Zur Verfolgung von SMS-Versänden (**nlserver sms**) muss der folgende Port geöffnet sein:
+Zur Verfolgung von SMS-Versänden (**nlserver sms**) muss der folgende Anschluss geöffnet sein:
 
 <table> 
  <tbody> 
   <tr> 
-   <td> Ports<br /> </td> 
+   <td> Anschlüsse<br /> </td> 
    <td> Ziel<br /> </td> 
    <td> Erklärung<br /> </td> 
   </tr> 
   <tr> 
    <td> 38000/tcp (Standardanschluss)<br /> </td> 
-   <td> SMS-Gateway<br /> </td> 
-   <td> Abfrage des Status der Warteschlange des Versands, der vom NetSize SMS Gateway verwaltet wird [Option].<br /> </td> 
+   <td> SMS Gateway<br /> </td> 
+   <td> Abfrage des vom NetSize SMS Gateway verwalteten Versand-Warteschlange-Status.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -128,7 +128,7 @@ Für den Rich-Client des Adobe Campaigns (**nlclient**) müssen die folgenden An
 <table> 
  <tbody> 
   <tr> 
-   <td> Ports<br /> </td> 
+   <td> Anschlüsse<br /> </td> 
    <td> Ziel<br /> </td> 
    <td> Erklärung<br /> </td> 
   </tr> 
@@ -200,7 +200,7 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Anschlüsse m
  <tbody> 
   <tr> 
    <td> Überwachungsanschluss<br /> </td> 
-   <td> Location<br /> </td> 
+   <td> Ort<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
@@ -215,18 +215,18 @@ Dieser Server hostet Webformulare, Mirrorseiten usw. Die folgenden Anschlüsse m
  <tbody> 
   <tr> 
    <td> Überwachungsanschluss<br /> </td> 
-   <td> Location<br /> </td> 
+   <td> Ort<br /> </td> 
   </tr> 
   <tr> 
    <td><p> 80/tcp (http)</p><p> 443/tcp (https)</p><br /> </td> 
-   <td> Alle Computer, die den Thin Client oder Rich Client ausführen.<br /> </td> 
+   <td> Alle Computer, die den Thin-Client oder Rich-Client ausführen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Integration mit Adobe Experience Manager {#integration-with-adobe-experience-manager}
 
-Die Integration zwischen Adobe Campaign und Adobe Experience Manager erfordert das Öffnen mehrerer Anschlüsse, wenn die Installation &quot;lokal&quot;erfolgt. For more information on configuring this integration, refer to the [detailed documentation](../../integrations/using/about-adobe-experience-manager.md).
+Die Integration zwischen Adobe Campaign und Adobe Experience Manager erfordert das Öffnen mehrerer Anschlüsse, wenn die Installation &quot;lokal&quot;erfolgt. Weitere Informationen zum Konfigurieren dieser Integration finden Sie in der [ausführlichen Dokumentation](../../integrations/using/about-adobe-experience-manager.md).
 
 <table> 
  <tbody> 
@@ -240,7 +240,7 @@ Die Integration zwischen Adobe Campaign und Adobe Experience Manager erfordert d
   </tr> 
   <tr> 
    <td><p> 4502</p><p> 4503</p><br /> </td> 
-   <td> Adobe Campaign-Verbindung zu AEM Instanzen "Authoring"und "Publishing". Die zu öffnenden Anschlüsse unterscheiden sich je nach AEM Konfiguration möglicherweise von den Standardanschlüssen.<br /> </td> 
+   <td> Adobe Campaign-Verbindung zu AEM Instanzen "Authoring"und "Publishing". Die zu öffnenden Anschlüsse unterscheiden sich je nach Ihrer AEM möglicherweise von den Standardanschlüssen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
