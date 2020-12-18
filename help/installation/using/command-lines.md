@@ -27,11 +27,11 @@ Die Instanzerstellung kann mithilfe von Befehlszeilen mit der folgenden Syntax a
 nlserver config -addinstance:instance/masques DNS[/lang]
 ```
 
-(wobei **eng** und **fra** mögliche Werte für den `[lang]` Parameter sind)
+(wobei **eng** und **fra** mögliche Werte für den Parameter `[lang]` sind)
 
-Mit dem Befehl **nlserver config -addinstance:instance1/demo*/eng** können Sie eine Instanz mit dem Namen **instance1** in englischer Sprache mit der DNS-Maske demo* erstellen.
+Mit dem Befehl **nlserver config -addinstance:instance1/demo*/eng** können Sie eine Instanz namens **instance1** in englischer Sprache mit der DNS-Maske demo* erstellen.
 
-## Datenbank deklarieren {#declaring-a-database}
+## Deklarieren einer Datenbank {#declaring-a-database}
 
 Sie können eine vorhandene Datenbank mit einer Instanz über die Befehlszeile verknüpfen, indem Sie die folgende Syntax verwenden:
 
@@ -39,14 +39,14 @@ Sie können eine vorhandene Datenbank mit einer Instanz über die Befehlszeile v
 nlserver config -setdblogin:[rbdms:]account[:database][/password]@server
 ```
 
-Folgende Werte sind für den **`[rdbms]`** Parameter möglich:
+Folgende Werte sind für den Parameter **`[rdbms]`** möglich:
 
 * **postgresql**: für PostgreSQL,
 * **oracle**: für Oracle,
 * **mssql**: für Microsoft SQL Server,
 * **DB2**: für die DB2-Engine.
 
-Mit dem folgenden Befehl wird die **Demo** -Instanz mit dem SQL-Typserver **base6** konfiguriert, der mit dem **Kampagne** -Konto und dem zugehörigen **Kennwort** auf dem **dbsrv** -Server verknüpft ist:
+Mit dem folgenden Befehl wird die **demo**-Instanz mit dem SQL-Typserver namens **base6** konfiguriert, der mit dem **Kampagne**-Konto und dem **password** auf dem **dbsrv**-Server verknüpft ist:
 
 ```
  nlserver config -setdblogin:db:campaign:myBase/password@dbServer -instance:demo
