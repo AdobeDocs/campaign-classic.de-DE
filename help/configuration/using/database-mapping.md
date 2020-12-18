@@ -40,7 +40,7 @@ Die SQL-Zuordnung unseres Beispiels Schema enthält das folgende XML-Dokument:
 
 ## Beschreibung {#description}
 
-Das Stammelement des Schemas ist nicht mehr **`<srcschema>`** sondern **`<schema>`**.
+Das Stammelement des Schemas ist nicht mehr **`<srcschema>`**, sondern **`<schema>`**.
 
 Dies führt uns zu einem anderen Dokument, das automatisch aus dem Quellcode-Schema generiert wird, das einfach als Schema bezeichnet wird. Dieses Schema wird von der Adobe Campaign-Anwendung verwendet.
 
@@ -50,7 +50,7 @@ Die SQL-Benennungsregeln lauten wie folgt:
 
 * Tabelle: Verkettung des Schema-Namensraums und -Namens
 
-   In unserem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut &quot; **sqltable** &quot;eingegeben:
+   In unserem Beispiel wird der Tabellenname über das Hauptelement des Schemas im Attribut **sqltable** eingegeben:
 
    ```
    <element name="recipient" sqltable="CusRecipient">
@@ -58,7 +58,7 @@ Die SQL-Benennungsregeln lauten wie folgt:
 
 * Feld: Name des Elements, dem ein Präfix vorangestellt wird, der nach Typ (&#39;i&#39; für Ganzzahl, &#39;d&#39; für Dublette, &#39;s&#39; für Zeichenfolge, &#39;ts&#39; für Datumsangaben usw.) definiert ist
 
-   Der Feldname wird über das Attribut **sqlname** für jede Eingabe **`<attribute>`** und **`<element>`**:
+   Der Feldname wird über das **sqlname**-Attribut für jede Eingabe von **`<attribute>`** und **`<element>`** eingegeben:
 
    ```
    <attribute desc="E-mail address of recipient" label="Email" length="80" name="email" sqlname="sEmail" type="string"/> 
@@ -85,9 +85,9 @@ Die SQL-Feldbeschränkungen lauten wie folgt:
 
 ## XML-Felder {#xml-fields}
 
-Standardmäßig werden alle typisierten **`<attribute>`** und **`<element>`** eingegebenen Elemente einem SQL-Feld der Datentabelle zugeordnet. Sie können dieses Feld jedoch in XML anstatt in SQL referenzieren. Das bedeutet, dass die Daten in einem Memofeld (&quot;mData&quot;) der Tabelle gespeichert werden, das die Werte aller XML-Felder enthält. Die Datenspeicherung dieser Daten ist ein XML-Dokument, das die Schema-Struktur einhält.
+Standardmäßig werden alle eingegebenen **`<attribute>`**- und **`<element>`**-Elemente einem SQL-Schema der Datentabelle zugeordnet. Sie können dieses Feld jedoch in XML anstatt in SQL referenzieren. Das bedeutet, dass die Daten in einem Memofeld (&quot;mData&quot;) der Tabelle gespeichert werden, das die Werte aller XML-Felder enthält. Die Datenspeicherung dieser Daten ist ein XML-Dokument, das die Schema-Struktur einhält.
 
-Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das **XML** -Attribut mit dem Wert &quot;true&quot;hinzufügen.
+Um ein Feld in XML auszufüllen, müssen Sie dem betreffenden Element das Attribut **xml** mit dem Wert &quot;true&quot;hinzufügen.
 
 **Beispiel**: Es gibt zwei Beispiele für die Verwendung von XML-Feldern.
 
@@ -109,7 +109,7 @@ Mithilfe von XML-Feldern können Sie Felder hinzufügen, ohne die physische Stru
 
 Der Hauptnachteil ist, dass es unmöglich ist, ein XML-Feld zu indizieren oder zu filtern.
 
-## Indexierte Felder {#indexed-fields}
+## Indizierte Felder {#indexed-fields}
 
 Mithilfe von Indizes können Sie die Leistung der in der Anwendung verwendeten SQL-Abfragen optimieren.
 
@@ -126,7 +126,7 @@ Ein Index wird aus dem Hauptelement des data-Schemas deklariert.
 Indizes folgen den folgenden Regeln:
 
 * Ein Index kann auf ein oder mehrere Felder in der Tabelle verweisen.
-* Ein Index kann in allen Feldern eindeutig sein (um Duplikat zu vermeiden), wenn das **Attribut unique** den Wert &quot;true&quot;enthält.
+* Ein Index kann in allen Feldern eindeutig sein (um Duplikat zu vermeiden), wenn das Attribut **unique** den Wert &quot;true&quot;enthält.
 * Der SQL-Name des Indexes wird anhand des SQL-Namens der Tabelle und des Indexnamens bestimmt.
 
 >[!NOTE]
@@ -176,7 +176,7 @@ Indizes folgen den folgenden Regeln:
    </srcSchema>
    ```
 
-## Verwaltung von Schlüsseln {#management-of-keys}
+## Verwaltung der Schlüssel {#management-of-keys}
 
 Eine Tabelle muss über mindestens einen Schlüssel zur Identifizierung eines Datensatzes in der Tabelle verfügen.
 
@@ -193,8 +193,8 @@ Ein Schlüssel wird aus dem Hauptelement des data-Schemas deklariert.
 Schlüssel beachten die folgenden Regeln:
 
 * Ein Schlüssel kann auf ein oder mehrere Felder in der Tabelle verweisen.
-* Ein Schlüssel wird als &quot;primär&quot;(oder &quot;Priorität&quot;) bezeichnet, wenn er der erste im auszufüllenden Schema ist oder wenn er das **interne** Attribut mit dem Wert &quot;true&quot;enthält.
-* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Indexes auf dem Schlüssel kann verhindert werden, indem das Attribut **noDbIndex** mit dem Wert &quot;true&quot;hinzugefügt wird.
+* Ein Schlüssel wird als &quot;primär&quot;(oder &quot;Priorität&quot;) bezeichnet, wenn er der erste im auszufüllenden Schema ist oder wenn er das Attribut **internal** mit dem Wert &quot;true&quot;enthält.
+* Für jede Schlüsseldefinition wird implizit ein eindeutiger Index deklariert. Die Erstellung eines Index für den Schlüssel kann verhindert werden, indem das Attribut **noDbIndex** mit dem Wert &quot;true&quot;hinzugefügt wird.
 
 >[!NOTE]
 >
@@ -291,11 +291,11 @@ Schlüssel beachten die folgenden Regeln:
 
 ### Auto-Inkrementalschlüssel {#auto-incremental-key}
 
-Der Hauptschlüssel der meisten Adobe Campaign-Tabellen ist eine 32-Bit-Ganzzahl, die automatisch von der Datenbank-Engine generiert wird. Die Berechnung des Schlüsselwerts hängt von einer Sequenz ab (standardmäßig die SQL-Funktion **XtkNewId** ), die eine eindeutige Zahl in der gesamten Datenbank generiert. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch eingegeben.
+Der Hauptschlüssel der meisten Adobe Campaign-Tabellen ist eine 32-Bit-Ganzzahl, die automatisch von der Datenbank-Engine generiert wird. Die Berechnung des Schlüsselwerts hängt von einer Sequenz ab (standardmäßig die SQL-Funktion **XtkNewId**), die eine eindeutige Zahl in der gesamten Datenbank generiert. Der Inhalt des Schlüssels wird beim Einfügen des Datensatzes automatisch eingegeben.
 
 Der Vorteil eines inkrementellen Schlüssels besteht darin, dass er einen nicht-modifizierbaren technischen Schlüssel für die Verbindungen zwischen Tabellen bereitstellt. Darüber hinaus belegt dieser Schlüssel nicht viel Arbeitsspeicher, da er eine Dublette-Byte-Ganzzahl verwendet.
 
-Sie können im Quellattribut den Namen der Sequenz angeben, die mit dem **pkSequence** -Attribut verwendet werden soll. Wenn dieses Attribut nicht im source-Schema angegeben ist, wird die **XtkNewId** -Standardsequenz verwendet. Die Anwendung verwendet dedizierte Sequenzen für die **nms:wideLog** - und **nms:trackingLog** -Schema (**NmsBroadLogId** bzw. **NmsTrackingLogId** ), da diese Tabellen die meisten Datensätze enthalten.
+Sie können im Quellattribut den Namen der Sequenz angeben, die mit dem Schema **pkSequence** verwendet werden soll. Wenn dieses Attribut nicht im source-Schema angegeben ist, wird die Standardsequenz **XtkNewId** verwendet. Die Anwendung verwendet dedizierte Sequenzen für die Schema **nms:wideLog** und **nms:trackingLog** (**NmsBroadLogId** bzw. **NmsTrackingLogId**), da diese die Tabellen die meisten Datensätze enthalten.
 
 Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in den vordefinierten Schemas. Sie können jetzt Schema erstellen oder bestehende Schemas mit einer eigenen Sequenz erweitern.
 
@@ -305,9 +305,9 @@ Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in de
 
 >[!NOTE]
 >
->Eine Sequenz, auf die in einem Adobe Campaign-Schema verwiesen wird (z. B.**NmsTrackingLogId** ), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt (durch Kommas getrennt). Diese Funktion muss ******GetNewXXXIds** heißen, wobei **XXX** der Name der Sequenz ist (z. B.**GetNewNmsTrackingLogIds** ). Ansicht der **Dateien &quot;postgres-nms.sql**&quot;, &quot; **mssql-nms.sql** &quot;oder &quot; **oracle-nms.sql** &quot;, die mit der Anwendung im Ordner &quot; **datakit/nms/eng/sql/** &quot;bereitgestellt werden, um das Beispiel einer &quot;NmsTrackingLogId&quot;-Sequenzerstellung für jede Datenbankmaschine wiederherzustellen.
+>Eine Sequenz, auf die in einem Adobe Campaign-Schema verwiesen wird (**NmsTrackingLogId**), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern, durch Kommas getrennt, zurückgibt. Diese Funktion muss als **GetNew** XXX **Ids** bezeichnet werden, wobei **XXX** der Name der Sequenz ist (**GetNewNmsTrackingLogIds** zum Beispiel). Ansicht der Dateien **postgres-nms.sql**, **mssql-nms.sql** oder **oracle-nms.sql**, die mit der Anwendung im Ordner **datakit/nms/eng/sql/** bereitgestellt werden, um das Beispiel von a wiederherzustellen NmsTrackingLogId&#39; Sequenzerstellung für jede Datenbank-Engine.
 
-Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie das **autopk** -Attribut (mit dem Wert &quot;true&quot;) im Hauptelement des data-Schemas aus.
+Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie das Attribut **autopk** (mit dem Wert &quot;true&quot;) im Hauptelement des Schemas data aus.
 
 **Beispiel**:
 
@@ -345,7 +345,7 @@ Zusätzlich zur Definition des Schlüssels und seines Indexes wurde dem erweiter
 >
 >Ein Datensatz mit einem Primärschlüssel auf 0 wird bei der Tabellenerstellung automatisch eingefügt. Dieser Datensatz wird verwendet, um äußere Verbindungen zu vermeiden, die bei Volumentabellen nicht wirksam sind. Standardmäßig werden alle Fremdschlüssel mit dem Wert 0 initialisiert, sodass ein Ergebnis immer bei der Verknüpfung zurückgegeben werden kann, wenn das Datenelement nicht gefüllt wird.
 
-## Links: Verhältnis zwischen Tabellen {#links--relation-between-tables}
+## Links: Beziehung zwischen Tabellen {#links--relation-between-tables}
 
 Eine Verknüpfung beschreibt die Verbindung zwischen einer Tabelle und einer anderen.
 
@@ -368,7 +368,7 @@ Für Verbindungsbeziehungen mit Federated Database Access:
 * ![](assets/join_fda_11.png) : Kardinalität 1-1
 * ![](assets/join_fda_1m.png) : Kardinalität 1-N
 
-For more information on FDA tables, refer to [Accessing an external database](../../installation/using/about-fda.md).
+Weitere Informationen zu FDA finden Sie unter [Zugriff auf eine externe Datenbank](../../installation/using/about-fda.md).
 
 In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Hauptelement ein Link angegeben werden:
 
@@ -382,35 +382,35 @@ In dem Schema, das den Fremdschlüssel der Tabelle enthält, muss über das Haup
 
 Links folgen den folgenden Regeln:
 
-* Die Definition eines Links wird in einen **Link**-Typ **`<element>`** mit den folgenden Attributen eingegeben:
+* Die Definition eines Links wird auf einem **link**-Typ **`<element>`** mit den folgenden Attributen eingegeben:
 
    * **name**: Name des Links aus der Quelltabelle,
    * **zielgruppe**: Name des Schemas der Zielgruppe,
    * **label**: Bezeichnung des Links,
-   * **revLink** (optional): Name des Rückwärtslinks aus dem Schema Zielgruppe (standardmäßig automatisch abgezogen),
-   * **Integrität** (optional): Referenzintegrität des Vorkommens der Quelltabelle zum Vorkommen der Zielgruppe-Tabelle. Mögliche Werte sind:
+   * **revLink**  (optional): Name des Rückwärtslinks aus dem Schema Zielgruppe (standardmäßig automatisch abgezogen),
+   * **Integrität**  (optional): Referenzintegrität des Vorkommens der Quelltabelle zum Vorkommen der Zielgruppe-Tabelle. Mögliche Werte sind:
 
       * **definieren**: das Quellvorkommen gelöscht werden kann, wenn es nicht mehr durch ein Vorkommen einer Zielgruppe referenziert wird,
       * **normal**: Wenn Sie das Quellvorkommen löschen, werden die Schlüssel des Links zum Vorkommen der Zielgruppe (Standardmodus) initialisiert. Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert,
       * **eigene**: Das Löschen des Quellvorkommens führt zum Löschen des Vorkommens der Zielgruppe,
-      * **Copyright**: dieselben wie **eigene** (im Falle der Löschung) oder Duplikat die Vorkommnisse (im Falle der Vervielfältigung),
+      * **Copyright**: dieselben wie  **eigene**  (im Falle der Löschung) oder Duplikat die Vorkommnisse (im Falle der Vervielfältigung),
       * **neutral**: tut nichts.
    * **revIntegrity** (optional): Integrität im Schema Zielgruppe (optional, standardmäßig &quot;normal&quot;),
-   * **revKardinalität** (optional): mit dem Wert &quot;single&quot;wird die Kardinalität mit dem Typ 1-1 ausgefüllt (standardmäßig 1-N).
-   * **externalJoin** (optional): erzwingt die äußere Verbindung
+   * **revCardinality**  (optional): mit dem Wert &quot;single&quot;wird die Kardinalität mit dem Typ 1-1 ausgefüllt (standardmäßig 1-N).
+   * **externalJoin**  (optional): erzwingt die äußere Verbindung
    * **revExternalJoin** (optional): erzwingt die äußere Verbindung am Rückwärtslink
 
 
-* Ein Link verweist auf ein oder mehrere Felder aus der Quelltabelle zur Zieltabelle. Die Felder, aus denen die Verknüpfung ( `<join>` Element) besteht, müssen nicht ausgefüllt werden, da sie standardmäßig mit dem internen Schlüssel des Zielgruppe-Schemas abgezogen werden.
+* Ein Link verweist auf ein oder mehrere Felder aus der Quelltabelle zur Zieltabelle. Die Felder, aus denen die Verknüpfung besteht ( `<join>`), müssen nicht ausgefüllt werden, da sie standardmäßig mit dem internen Schlüssel des Zielgruppe-Schemas abgezogen werden.
 * Dem Fremdschlüssel des Links im erweiterten Schema wird automatisch ein Index hinzugefügt.
 * Ein Link besteht aus zwei Halblinks, wobei der erste aus dem Quellcode-Schema deklariert und der zweite automatisch im erweiterten Schema des Zielgruppe-Schemas erstellt wird.
-* Ein Join kann ein Außenverbindung sein, wenn das Attribut **externalJoin** mit dem Wert &quot;true&quot;hinzugefügt wird (unterstützt in PostgreSQL).
+* Ein Join kann ein externer Join sein, wenn das Attribut **externalJoin** mit dem Wert &quot;true&quot;(unterstützt in PostgreSQL) hinzugefügt wird.
 
 >[!NOTE]
 >
 >Standardmäßig sind Links die am Ende des Schemas deklarierten Elemente.
 
-### Example 1 {#example-1}
+### Beispiel 1 {#example-1}
 
 1-N Bezug zur Tabelle &quot;cus:Firma&quot;-Schema:
 
@@ -473,7 +473,7 @@ Ein umgekehrter Link zur Tabelle &quot;cus:Empfänger&quot;wurde mit folgenden P
 * **ungebunden**: Der Link wird als Collection-Element für eine 1-N Kardinalität deklariert (standardmäßig)
 * **Integrität**: &quot;Definieren&quot;standardmäßig (kann mit dem Attribut &quot;revIntegrity&quot;in der Linkdefinition im Quellcode-Schema erzwungen werden).
 
-### Example 2 {#example-2}
+### Beispiel 2 {#example-2}
 
 In diesem Beispiel werden wir einen Link zum Schema &quot;nms:address&quot;angeben. Der Join ist ein externer Join und wird explizit mit der E-Mail-Adresse des Empfängers und dem Feld &quot;@address&quot;der verknüpften Tabelle (&quot;nms:address&quot;) ausgefüllt.
 
@@ -488,7 +488,7 @@ In diesem Beispiel werden wir einen Link zum Schema &quot;nms:address&quot;angeb
 </srcSchema>
 ```
 
-### Example 3 {#example-3}
+### Beispiel 3 {#example-3}
 
 1-1 Bezug zur Tabelle mit dem Schema &quot;cus:extension&quot;:
 
@@ -496,7 +496,7 @@ In diesem Beispiel werden wir einen Link zum Schema &quot;nms:address&quot;angeb
 <element integrity="own" label="Extension" name="extension" revCardinality="single" revLink="recipient" target="cus:extension" type="link"/>
 ```
 
-### Example 4 {#example-4}
+### Beispiel 4 {#example-4}
 
 Verknüpfen mit einem Ordner (&quot;xtk:folder&quot;-Schema):
 
@@ -506,9 +506,9 @@ Verknüpfen mit einem Ordner (&quot;xtk:folder&quot;-Schema):
 
 Der Standardwert gibt den Bezeichner der ersten zulässigen Parametertypdatei zurück, die in der Funktion &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;eingegeben wurde.
 
-### Example 5 {#example-5}
+### Beispiel 5 {#example-5}
 
-In diesem Beispiel möchten wir einen Schlüssel für einen Link (&quot;Firma&quot; zu &quot;cus:Firma&quot;-Schema) mit dem **xlink** -Attribut und einem Feld der Tabelle (&quot;E-Mail&quot;) erstellen:
+In diesem Beispiel möchten wir einen Schlüssel für einen Link (&quot;Firma&quot; zu &quot;cus:Firma&quot;-Schema) mit dem **xlink**-Attribut und einem Feld der Tabelle (&quot;email&quot;) erstellen:
 
 ```
 <srcSchema name="recipient" namespace="cus">
