@@ -41,7 +41,7 @@ Gehen Sie hierzu wie folgt vor:
 
    >[!NOTE]
    >
-   >Im Kontext eines Adobe Campaigns kombiniert eine **Vorsicht** Aktionen, mit denen Sie alle Prozesse stoppen können, die mit der Außenseite interagieren: Protokolle, Verfolgung, Versände, Kampagnen-Workflows usw.\
+   >Im Kontext des Adobe Campaigns kombiniert eine **Warnung** Aktionen, mit denen Sie alle Prozesse stoppen können, die mit der Außenseite interagieren: Protokolle, Verfolgung, Versände, Kampagnen-Workflows usw.\
    >Dieser Schritt ist notwendig, um zu vermeiden, dass Nachrichten mehrmals gesendet werden (einmal von der nominalen Umgebung und einmal von der duplizierten Umgebung).
 
    >[!IMPORTANT]
@@ -61,20 +61,20 @@ Damit dieser Vorgang ausgeführt werden kann, müssen die Quell- und Zielgruppe-
 
 ### Transferverfahren {#transfer-procedure}
 
-In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quell-Umgebung in eine Zielgruppe-Umgebung übertragen können: Unser Ziel ist es hier, eine Produktions-Umgebung (**prod** Instanz) zu einer Umgebung (**dev** Instanz) wiederherzustellen, um in einem Kontext zu arbeiten, der der &quot;live&quot; Plattform so nahe wie möglich ist.
+In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quell-Umgebung in eine Zielgruppe-Umgebung übertragen können: Unser Ziel ist es hier, eine Produktions-Umgebung (**prod** Instanz) zu einer Development-Umgebung (**dev** Instanz) wiederherzustellen, um in einem Kontext zu arbeiten, der der Live-Plattform möglichst nahe kommt.
 
 Die folgenden Schritte müssen mit größter Sorgfalt durchgeführt werden: Einige Prozesse werden möglicherweise noch ausgeführt, wenn die Quelldatenbanken der Umgebung kopiert werden. Durch die Vorsicht (Schritt 3 unten) wird verhindert, dass Nachrichten zweimal gesendet werden, und die Datenkonsistenz bleibt erhalten.
 
 >[!IMPORTANT]
 >
 >* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Abfrage anders ist (z. B. Oracle), müssen die SQL-Einstellungen angepasst werden.
->* Die folgenden Befehle gelten im Kontext einer **prod** -Instanz und einer **dev** -Instanz unter PostgreSQL.
+>* Die folgenden Befehle gelten im Kontext einer **prod**-Instanz und einer **dev**-Instanz unter PostgreSQL.
 
 >
 
 
 
-### Schritt 1 - Erstellen einer Sicherung der Quelldaten (Prod) der Umgebung {#step-1---make-a-backup-of-the-source-environment--prod--data}
+### Schritt 1: Erstellen Sie eine Sicherung der Quelldaten für die Umgebung (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 Datenbanken kopieren
 
@@ -96,7 +96,7 @@ Mit diesem Export können Sie die Dev-Konfiguration beibehalten und nur die Dev-
 
 Führen Sie dazu einen Paketexport für die folgenden beiden Elemente durch:
 
-* Exportieren Sie die Tabelle &quot; **xtk:option** &quot;in eine Datei &quot;options_dev.xml&quot;ohne die Datensätze mit den folgenden internen Namen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; und &#39;NmsBroadcast_RegexRules&#39;.
+* Exportieren Sie die Tabelle **xtk:option** in eine Datei &#39;options_dev.xml&#39;, ohne die Datensätze mit den folgenden internen Namen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; und &#39;NmsBroadcast_RegexRules&#39;.
 * Exportieren Sie in einer Datei &quot;extaccount_dev.xml&quot;die Tabelle **nms:extAccount** für alle Datensätze, deren ID nicht 0 (@id &lt;> 0) ist.
 
 Überprüfen Sie, ob die Anzahl der exportierten Optionen/Konten der Anzahl der Zeilen entspricht, die in jeder Datei exportiert werden sollen.
@@ -111,7 +111,7 @@ Führen Sie dazu einen Paketexport für die folgenden beiden Elemente durch:
 >
 >Beim Exportieren der nmsextaccount-Tabelle werden Kennwörter zu den Externen Konti (z. B. Kennwörter zum Mid-Sourcing, zur Ausführung des Nachrichtencenters, zu SMPP, IMS und anderen Externen Konti) nicht exportiert. Vergewissern Sie sich bitte, dass Sie im Voraus Zugriff auf die richtigen Passwörter haben, da diese ggf. erneut eingegeben werden müssen, nachdem die Externe Konti wieder in die Umgebung importiert wurden.
 
-### Schritt 3: Beenden der Zielgruppe-Umgebung (dev) {#step-3---stop-the-target-environment--dev-}
+### Schritt 3 - Beenden der Umgebung der Zielgruppe (dev) {#step-3---stop-the-target-environment--dev-}
 
 Sie müssen Adobe Campaign-Prozesse auf allen Zielgruppe Umgebung-Servern beenden. Dieser Vorgang ist vom Betriebssystem abhängig.
 
@@ -139,16 +139,16 @@ nlserver pdump
 
 >[!NOTE]
 >
->Unter Windows kann der **webmdl** -Prozess weiterhin aktiv sein, ohne andere Vorgänge zu beeinträchtigen.
+>Unter Windows kann der Prozess **webmdl** weiterhin aktiv sein, ohne andere Vorgänge zu beeinträchtigen.
 
 Sie können auch überprüfen, ob noch keine Systemprozesse ausgeführt werden.
 
 Gehen Sie dazu wie folgt vor:
 
-* Windows: Öffnen Sie den **Aufgabe Manager** und überprüfen Sie, ob es keine **nlserver.exe** -Prozesse gibt.
-* Unter Linux: Führen Sie die **ps aux aus | grep nlserver** Befehl und überprüfen Sie, ob es keine **nlserver** -Prozesse gibt.
+* Windows: Öffnen Sie den **Aufgabe-Manager** und überprüfen Sie, ob keine **nlserver.exe**-Prozesse vorhanden sind.
+* Unter Linux: Führen Sie die aux **ps aus | grep nlserver** Befehl und prüfen Sie, ob keine **nlserver**-Prozesse vorhanden sind.
 
-### Schritt 4: Wiederherstellen der Datenbanken in der Umgebung Zielgruppe (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
+### Schritt 4: Wiederherstellen der Datenbanken in der Zielgruppe Umgebung (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
 Um die Quelldatenbanken in der Umgebung Zielgruppe wiederherzustellen, verwenden Sie den folgenden Befehl:
 
@@ -156,7 +156,7 @@ Um die Quelldatenbanken in der Umgebung Zielgruppe wiederherzustellen, verwenden
 psql mydatabase < mydatabase.sql
 ```
 
-### Schritt 5: Umgebung der Zielgruppe (dev) {#step-5---cauterize-the-target-environment--dev-}
+### Schritt 5: Vorsicht bei der Umgebung der Zielgruppe (dev) {#step-5---cauterize-the-target-environment--dev-}
 
 Um Funktionsstörungen zu vermeiden, dürfen die mit dem Senden des Versands und der Ausführung des Workflows verknüpften Vorgänge nicht automatisch ausgeführt werden, wenn die Umgebung der Zielgruppe aktiviert wird.
 
@@ -166,7 +166,7 @@ Führen Sie dazu den folgenden Befehl aus:
 nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 ```
 
-### Schritt 6: Vorsicht überprüfen {#step-6---check-cauterization}
+### Schritt 6: Warnung überprüfen{#step-6---check-cauterization}
 
 1. Vergewissern Sie sich, dass der einzige Auslieferungsabschnitt derjenige ist, dessen ID auf 0 gesetzt ist:
 
@@ -187,13 +187,13 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Schritt 7: Zielgruppe Umgebung Web Process (dev) neu starten {#step-7---restart-the-target-environment-web-process--dev-}
+### Schritt 7: Zielgruppe Umgebung Web Process (dev) {#step-7---restart-the-target-environment-web-process--dev-} neu starten
 
 Stellen Sie auf der Umgebung Zielgruppe einen erneuten Beginn der Adobe Campaign-Prozesse für alle Server bereit.
 
 >[!NOTE]
 >
->Bevor Sie das Adobe Campaign auf der **dev** -Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: beginn nur im **Webmodul** .
+>Bevor Sie das Adobe Campaign auf der **dev**-Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: beginn nur das Modul **web**.
 >  
 >Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**) und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot;für jedes Modul (mta, stat usw.) hinzu.
 
@@ -224,13 +224,13 @@ So importieren Sie die Konfiguration aus der Zielgruppe Umgebung-Datenbank (dev)
 1. Öffnen Sie die Admin-Konsole der Datenbank und leeren Sie die Externe Konti (Tabelle nms:extAccount), deren ID nicht 0 (@id &lt;> 0) ist.
 1. Importieren Sie in der Adobe Campaign-Konsole das Paket options_dev.xml, das zuvor über die Importpaket-Funktionalität erstellt wurde.
 
-   Überprüfen Sie, ob die Optionen im Knoten **[!UICONTROL Administration > Plattform > Optionen]** tatsächlich aktualisiert wurden.
+   Überprüfen Sie, ob die Optionen tatsächlich im Knoten **[!UICONTROL Administration > Plattform > Optionen]** aktualisiert wurden.
 
 1. Importieren Sie in die Adobe Campaign-Konsole die Datei &quot;extaccount_dev.xml&quot;, die Sie zuvor über die Funktion des Importpakets erstellt haben.
 
    Vergewissern Sie sich, dass externe Datenbanken tatsächlich in **[!UICONTROL Administration > Plattform > Externe Konti]** importiert wurden.
 
-### Schritt 9: Alle Prozesse neu starten und Benutzer ändern (dev) {#step-9---restart-all-processes-and-change-users--dev-}
+### Schritt 9 - Alle Prozesse neu starten und Benutzer ändern (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
 Um die Adobe Campaign-Prozesse Beginn, verwenden Sie die folgenden Befehle:
 
