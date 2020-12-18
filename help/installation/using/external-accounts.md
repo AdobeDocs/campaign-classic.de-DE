@@ -41,7 +41,7 @@ Die folgenden externen Konten können eingerichtet werden:
 
 Gehen Sie wie folgt vor, um ein neues Externe Konto zu erstellen. Detaillierte Einstellungen hängen vom Typ des Externen Kontos ab.
 
-1. From Campaign **[!UICONTROL Explorer]**, select **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL External accounts]**.
+1. Wählen Sie in Kampagne **[!UICONTROL Explorer]** **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL Externe Konti]**.
 
    ![](assets/ext_account_1.png)
 
@@ -49,13 +49,13 @@ Gehen Sie wie folgt vor, um ein neues Externe Konto zu erstellen. Detaillierte E
 
    ![](assets/ext_account_2.png)
 
-1. Enter a **[!UICONTROL Label]** and an **[!UICONTROL Internal Name]**.
+1. Geben Sie eine **[!UICONTROL Beschriftung]** und eine **[!UICONTROL Interne Bezeichnung]** ein.
 1. Wählen Sie den **[!UICONTROL Typ]** des externen Kontos aus, den Sie erstellen möchten.
 1. Konfigurieren Sie den Zugriff auf das Konto, indem Sie die Anmeldeinformationen entsprechend dem gewählten externen Kontotyp angeben.
 
    Die nötigen Informationen werden normalerweise vom Anbieter des Servers bereitgestellt, mit dem Sie eine Verbindung herstellen möchten.
 
-1. Aktivieren Sie die Option **[!UICONTROL Aktiviert]** , um die Verbindung zu aktivieren.
+1. Aktivieren Sie die Option **[!UICONTROL Aktiviert]**, um die Verbindung zu aktivieren.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 
 Das Externe Konto wird erstellt und der Liste &quot;Externe Konti&quot;hinzugefügt.
@@ -140,22 +140,22 @@ Informationen zu diesen Zugangsdaten finden Sie auf dieser [Seite](https://help.
 
 ## Externes Konto für eine externe Datenbank {#external-database-external-account}
 
-Verwenden Sie das Externe Konto **Externe Datenbank** , um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option &quot;Federated Data Access (FDA)&quot;in [diesem Abschnitt](../../installation/using/about-fda.md).
+Verwenden Sie das Externe Konto **Externe Datenbank**, um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option &quot;Federated Data Access (FDA)&quot;in [diesem Abschnitt](../../installation/using/about-fda.md).
 
-External databases compatible with Campaign are listed in the [Compatibility matrix](../../rn/using/compatibility-matrix.md)
+Die mit der Kampagne kompatiblen externen Datenbanken werden in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) aufgeführt.
 
 ![](assets/ext_account_11.png)
 
 Die Konfigurationseinstellungen des Externen Kontos hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* Configure access to [Azure Synapse](../../installation/using/configure-fda-synapse.md)
-* Configure access to [Hadoop](../../installation/using/configure-fda-hadoop.md)
-* Configure access to [Oracle](../../installation/using/configure-fda-oracle.md)
-* Configure access to [Netezza](../../installation/using/configure-fda-netezza.md)
-* Configure access to [SAP HANA](../../installation/using/configure-fda-sap-hana.md)
-* Configure access to [Snowflake](../../installation/using/configure-fda-snowflake.md)
-* Configure access to [Sybase IQ](../../installation/using/configure-fda-sybase.md)
-* Configure access to [Teradata](../../installation/using/configure-fda-teradata.md)
+* Zugriff auf [Azure synapse](../../installation/using/configure-fda-synapse.md) konfigurieren
+* Zugriff auf [Hadoop](../../installation/using/configure-fda-hadoop.md) konfigurieren
+* Zugriff auf [Oracle](../../installation/using/configure-fda-oracle.md) konfigurieren
+* Zugriff auf [Netezza](../../installation/using/configure-fda-netezza.md) konfigurieren
+* Zugriff auf [SAP HANA](../../installation/using/configure-fda-sap-hana.md) konfigurieren
+* Zugriff auf [Snowflake](../../installation/using/configure-fda-snowflake.md) konfigurieren
+* Zugriff auf [Sybase IQ](../../installation/using/configure-fda-sybase.md) konfigurieren
+* Zugriff auf [Teradata](../../installation/using/configure-fda-teradata.md) konfigurieren
 
 ## Externes Web Analytics-Konto {#web-analytics-external-account}
 
