@@ -31,7 +31,7 @@ Adobe Campaign bietet Ihnen zwei vordefinierte Architekturoptionen zur Dimension
 
 ![](assets/architectural_options_diagram.png)
 
-## Förderfähige Anträge {#eligible-applications}
+## Förderfähige Anwendungen {#eligible-applications}
 
 Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von folgenden Anwendungen verwendet werden:
 
@@ -39,7 +39,7 @@ Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von
 * Versand
 * Message Center
 
-## Matrix von Architekturempfehlungen {#matrix-of-architectural-recommendations}
+## Matrix der architektonischen Empfehlungen {#matrix-of-architectural-recommendations}
 
 <table> 
  <tbody> 
@@ -65,26 +65,26 @@ Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von
    <td> Verfügbarkeit<br /> </td> 
    <td> Die primäre Datenbank<br /> </td> 
    <td> 24/7 außer Wartungsfenster und Ausfallzeiten für die Ausführungsinstanz<br /> </td> 
-   <td> 24/7/365 Service möglich<br /> </td> 
+   <td> 24/7/365 Dienst möglich<br /> </td> 
   </tr> 
   <tr> 
    <td> Sicherheit<br /> </td> 
-   <td> Der Zugang zum Datenverkehr ist potenziell über das öffentliche Internet möglich<br /> </td> 
-   <td> Der Datenstrom wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
-   <td> Der Datenstrom wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
+   <td> Data Mart ist potenziell über das öffentliche Internet zugänglich<br /> </td> 
+   <td> Data Mart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
+   <td> Data Mart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
   </tr> 
   <tr> 
    <td> Bereitstellungsvorlage<br /> </td> 
    <td> Alle auf einer Site (lokal oder in der Cloud)<br /> </td> 
    <td> Marketing vor Ort mit Ausführung in der Cloud möglich<br /> </td> 
-   <td> Marketing vor Ort mit Ausführung in der Cloud; Ausführung in verschiedenen Gebieten möglich<br /> </td> 
+   <td> Marketing vor Ort mit Ausführung in der Cloud; Ausführung in verschiedenen Geos möglich<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Empfehlungen {#recommendations}
 
-* Eine Ausführungsinstanz muss einem Dienst gewidmet sein. Sie können kein Paket für einen Dienst installieren, den Sie nicht abonniert haben. Wenn Sie z. B. die **Power Booster** -Option für den **Message Center** -Dienst abonnieren, dürfen Sie nur das Paket **[!UICONTROL Execution of Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind Empfehlungen dieselben wie für eine Hauptinstanz. For more on this, refer to [this document](../../production/using/foreword.md).
+* Eine Ausführungsinstanz muss einem Dienst gewidmet sein. Sie können kein Paket für einen Dienst installieren, den Sie nicht abonniert haben. Wenn Sie z. B. die Option **Power Booster** für den **Message Center**-Dienst abonnieren, dürfen Sie nur das **[!UICONTROL Execution of Transaktionsnachrichten]**-Paket auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind Empfehlungen dieselben wie für eine Hauptinstanz. Weitere Informationen hierzu finden Sie in [diesem Dokument](../../production/using/foreword.md).
 * Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz über einen Datenbankkomponenten-/Hardwarekomponenten-Punkt der Ansicht korrekt zu konfigurieren.
 
