@@ -23,11 +23,11 @@ Die erforderlichen Datenbankzugriffsebenen müssen auf dem Server installiert se
 
 Der dynamische Webseiten-Generator verwendet die JSP 1.2-Technologie. Hierfür wird eine Tomcat-Engine (aus dem Apache) in den Antrag aufgenommen. Es ist ein Java Development Kit (JDK) erforderlich, das auf allen Servern installiert ist, auf denen die Adobe Campaign-Anwendung installiert ist.
 
-Sie müssen zuerst ein JDK auf den Computern installieren, auf denen Sie den Adobe Campaign-Anwendungsserver (**nlserver-Web** -Prozess) ausführen möchten, da es einen Servlet-Container, Apache Tomcat, enthält, der zum Generieren dynamischer Webseiten (Berichte, Webformulare usw.) verwendet wird.
+Sie müssen zuerst ein JDK auf den Computern installieren, auf denen Sie den Adobe Campaign-Anwendungsserver ausführen möchten (**nlserver web**), da dieser einen Servlet-Container, Apache Tomcat, enthält, der zum Generieren dynamischer Webseiten (Berichte, Webformulare usw.) verwendet wird.
 
-The application has been approved for the Java Development Kit (JDK) developed by Oracle as well as for **OpenJDK**.
+Der Antrag wurde für das von Oracle entwickelte Java Development Kit (JDK) sowie für **OpenJDK** genehmigt.
 
-The supported versions are detailed in Campaign [Compatibility matrix](../../rn/using/compatibility-matrix.md).
+Die unterstützten Versionen sind in Kampagne [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) aufgeführt.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ The supported versions are detailed in Campaign [Compatibility matrix](../../rn/
 >  
 >Bei der Installation müssen Sie die Integration nicht mit den Webbrowsern durchführen.
 >
->Auf einem Computer, auf dem nur Versand-Agenten (**nlserver-Metadaten** -Prozess) oder Workflow-Server (**nlserver-wfserver** -Prozess) ausgeführt werden, muss kein JDK installiert werden.
+>Auf einem Computer, auf dem nur Versand-Agenten (**nlserver-mta**-Prozess) oder der Workflow-Server (**nlserver-wfserver**-Prozess) ausgeführt werden, muss kein JDK installiert werden.
 
 So laden Sie Java JDK herunter: [https://www.oracle.com/technetwork/java/javase/downloads/index.html](https://www.oracle.com/technetwork/java/javase/downloads/index.html).
 
@@ -65,11 +65,11 @@ Unter Linux muss OpenSSL installiert werden. Die von Adobe Campaign unterstützt
 
 ## Berichtexport {#exporting-reports}
 
-Mit Adobe Campaign können Sie Plattformberichte im Microsoft Excel- und Adobe PDF-Format exportieren. Für das Microsoft Excel-Format verwendet Adobe Campaign **LibreOffice**. Für das Adobe PDF-Format verwendet Adobe Campaign den **PhantomJS** -Konverter. PhantomJs ist im Factory-Paket enthalten, und LibreOffice muss auf den Computern installiert sein, auf denen der Adobe Campaign-Anwendungsserver ausgeführt wird (**nlserver-Webprozess** ).
+Mit Adobe Campaign können Sie Plattformberichte im Microsoft Excel- und Adobe PDF-Format exportieren. Für das Microsoft Excel-Format verwendet Adobe Campaign **LibreOffice**. Für das Adobe PDF-Format verwendet Adobe Campaign den Konverter **PhantomJS**. PhantomJs ist im Factory-Paket enthalten, und LibreOffice muss auf den Computern installiert sein, auf denen der Adobe Campaign-Anwendungsserver ausgeführt wird (**nlserver web**).
 
 >[!NOTE]
 >
->Unter Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen dazu finden Sie in den [Schriftarten für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
+>Unter Linux müssen Sie Schriftarten hinzufügen. Weitere Informationen finden Sie unter [Schriftarten für MTA-Statistiken](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#fonts-for-mta-statistics).
 
 ## SpamAssassin {#spamassassin}
 
@@ -81,4 +81,4 @@ Die Mindestversion wird unterstützt: **3.4**
 
 SpamAssassin benötigt einen HTTP-Internetzugang (tcp/80).
 
-Installations- und Konfigurationsschritte für SpamAssassin finden Sie unter SpamAssassin [konfigurieren](../../installation/using/configuring-spamassassin.md).
+Installations- und Konfigurationsschritte für SpamAssassin finden Sie unter [SpamAssassin konfigurieren](../../installation/using/configuring-spamassassin.md).
