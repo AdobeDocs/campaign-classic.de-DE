@@ -25,9 +25,9 @@ Mit der FDA-Option können Sie Ihr Datenmodell in einer Drittanbieterdatenbank e
 
 Um diese Funktion nutzen zu können, sind die Voraussetzungen unten aufgeführt:
 
-* **Konfiguration**: außer zum Snowflake benötigen Sie ein **On-Premise** - oder **Hybrid** -Hostmodell, um Federated Data Access einzurichten. [Mehr dazu](../../installation/using/hosting-models.md)
-* **Externe Datenbankversion**: Sie benötigen eine externe Datenbank, die mit dem Adobe Campaign FDA Modul kompatibel ist. Die Liste von Datenbanksystemen und kompatiblen Versionen wird in der Kampagne [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA)beschrieben.
-* **Berechtigungen**: Die Benutzer müssen auch über die [erforderlichen Berechtigungen](../../installation/using/remote-database-access-rights.md) in Adobe Campaign und in der externen Datenbank verfügen.
+* **Konfiguration**: außer zum Snowflake, benötigen Sie ein  **On-** Premise- oder  **** Hybridhosting-Modell, um Federated Data Access einzurichten. [Mehr dazu](../../installation/using/hosting-models.md)
+* **Externe Datenbankversion**: Sie benötigen eine externe Datenbank, die mit dem Adobe Campaign FDA Modul kompatibel ist. Die Liste von Datenbanksystemen und kompatiblen Versionen ist in Kampagne [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#FederatedDataAccessFDA) beschrieben.
+* **Berechtigungen**: Die Benutzer müssen auch über die  [erforderlichen ](../../installation/using/remote-database-access-rights.md) Berechtigungen in Adobe Campaign und in der externen Datenbank verfügen.
 
 ## Einschränkungen {#limitations}
 
@@ -45,7 +45,7 @@ Die Option &quot;FDA&quot;unterliegt den Einschränkungen des von Ihnen verwende
 
 ## Empfehlungen {#recommendations}
 
-### Erstellen von temporären Schemas {#create-temporary-schemas}
+### Erstellen Sie temporäre Schema {#create-temporary-schemas}
 
 Sie können mehrere Zugriffe auf die externe Greenplum-Datenbank über FDA verwalten. Mit einer dedizierten Option können Sie ein funktionierendes Schema direkt beim Konfigurieren des Externen Kontos erstellen.
 
@@ -55,22 +55,22 @@ Sie können mehrere Zugriffe auf die externe Greenplum-Datenbank über FDA verwa
 >
 >Diese Option ist nur mit PostgreSQL Greenplum verfügbar.
 
-### Optimize email personalization with external data {#optimizing-email-personalization-with-external-data}
+### Optimieren Sie die E-Mail-Personalisierung mit externen Daten {#optimizing-email-personalization-with-external-data}.
 
-Sie können die Personalisierung von Nachrichten in einem dedizierten Arbeitsablauf vorbereiten. Verwenden Sie dazu die Option **[!UICONTROL Personalisierungsdaten mit einer Workflow]** -Option vorbereiten, die auf der Registerkarte &quot; **[!UICONTROL Analyse]** &quot;der Eigenschaften des Versands verfügbar ist.
+Sie können die Personalisierung von Nachrichten in einem dedizierten Arbeitsablauf vorbereiten. Verwenden Sie dazu die Option **[!UICONTROL Personalisierungsdaten mit einer Workflow]**-Option vorbereiten, die auf der Registerkarte **[!UICONTROL Analyse]** der Eigenschaften des Versands verfügbar ist.
 
 Während der Analyse des Versands wird mit dieser Option automatisch ein Workflow erstellt und ausgeführt, in dem alle mit der Zielgruppe verknüpften Daten in einer temporären Tabelle gespeichert werden, einschließlich der Daten aus Tabellen, die in einer externen Datenbank verknüpft sind.
 
 Diese Option verbessert die Leistung beim Ausführen des Personalisierungsschritts erheblich.
 
-### Use data from an external database in a workflow {#using-data-from-an-external-database-in-a-workflow}
+### Daten aus einer externen Datenbank in einem Workflow {#using-data-from-an-external-database-in-a-workflow} verwenden
 
 In mehreren Adobe Campaign-Workflow-Aktivitäten können Sie die in einer externen Datenbank gespeicherten Daten verwenden.
 
-* **Nach externen Daten** filtern - Mit der Aktivität &quot; [Abfrage](../../workflow/using/targeting-data.md#selecting-data) &quot;können Sie externe Daten hinzufügen und in den definierten Filterkonfigurationen verwenden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/targeting-data.md#selecting-data).
+* **Nach externen Daten**  filtern - Die  [](../../workflow/using/targeting-data.md#selecting-data) Queryactivity ermöglicht es Ihnen, externe Daten hinzuzufügen und sie in den definierten Filterkonfigurationen zu verwenden. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/targeting-data.md#selecting-data).
 
-* **Untergruppen** erstellen - Mit der Aktivität &quot; [Teilen](../../workflow/using/split.md) &quot;können Sie Untergruppen erstellen. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/split.md).
+* **Untergruppen**  erstellen - Mit der  [](../../workflow/using/split.md) Splitactivity können Sie Untergruppen erstellen. Sie können externe Daten verwenden, um die zu verwendenden Filterkriterien zu definieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/split.md).
 
-* **Externe Datenbank** laden: Sie können die externen Daten in der Aktivität [Datenladevorgang](../../workflow/using/data-loading--rdbms-.md) (RDBMS) verwenden. Weiterführende Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading--rdbms-.md).
+* **Externe Datenbank**  laden: Sie können die externen Daten in der Aktivität  [Data loading](../../workflow/using/data-loading--rdbms-.md) (RDBMS) verwenden. Weiterführende Informationen finden Sie auf [dieser Seite](../../workflow/using/data-loading--rdbms-.md).
 
-* **Hinzufügen von Informationen und Links** - Mit der Aktivität &quot; [Anreicherung](../../workflow/using/enrichment.md) &quot;können Sie zusätzliche Daten zur Arbeitstabelle des Workflows hinzufügen und Links zu einer externen Tabelle erstellen. In diesem Zusammenhang kann es Daten aus einer externen Datenbank verwenden. Weiterführende Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
+* **Hinzufügen von Informationen und Links**  - Mit der  [](../../workflow/using/enrichment.md) Anreicherungsaktivität können Sie der Arbeitstabelle des Workflows zusätzliche Daten hinzufügen und Links zu einer externen Tabelle erstellen. In diesem Zusammenhang kann es Daten aus einer externen Datenbank verwenden. Weiterführende Informationen finden Sie auf [dieser Seite](../../workflow/using/enrichment.md).
