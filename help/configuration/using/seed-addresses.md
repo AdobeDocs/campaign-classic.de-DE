@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Testadressen{#seed-addresses}
 
-Wenn es sich bei der Tabelle &quot;Empfänger&quot;um eine benutzerdefinierte Tabelle handelt, sind zusätzliche Konfigurationen erforderlich. Das Schema **[!UICONTROL nms:seedMember]** muss verlängert werden. Zu den Testadressen zur Festlegung der entsprechenden Felder wird eine zusätzliche Registerkarte hinzugefügt, wie nachfolgend gezeigt:
+Wenn es sich bei der Tabelle &quot;Empfänger&quot;um eine benutzerdefinierte Tabelle handelt, sind zusätzliche Konfigurationen erforderlich. Das Schema **[!UICONTROL nms:seedMember]** muss erweitert werden. Zu den Testadressen zur Festlegung der entsprechenden Felder wird eine zusätzliche Registerkarte hinzugefügt, wie nachfolgend gezeigt:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
@@ -25,7 +25,7 @@ Weitere Informationen zur Verwendung von Testadressen finden Sie in [diesem Absc
 
 ## Implementierung{#implementation}
 
-Das **nms:seedMember** -Schema und das verknüpfte Formular, das sofort einsatzbereit ist, sollen für die Kundenkonfiguration erweitert werden, um alle erforderlichen Felder zu referenzieren. Die Schema-Definition enthält Kommentare zum Konfigurationsmodus.
+Das **nms:seedMember**-Schema und das verknüpfte Formular, das standardmäßig angezeigt wird, sollen für die Kundenkonfiguration erweitert werden, um alle erforderlichen Felder zu referenzieren. Die Schema-Definition enthält Kommentare zum Konfigurationsmodus.
 
 Definition des erweiterten Schemas der Tabelle &quot;Empfänger&quot;:
 
@@ -44,8 +44,8 @@ Definition des erweiterten Schemas der Tabelle &quot;Empfänger&quot;:
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie eine Erweiterung des **nms:seedMember** -Schemas. Weitere Informationen finden Sie unter [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md).
-1. Fügen Sie in dieser neuen Erweiterung ein neues Element im Stammverzeichnis von **[!UICONTROL seedMember]** mit den folgenden Parametern hinzu:
+1. Erstellen Sie eine Erweiterung des Schemas **nms:seedMember**. Weitere Informationen finden Sie unter [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md).
+1. Fügen Sie in dieser neuen Erweiterung am Stammordner von **[!UICONTROL seedMember]** ein neues Element mit den folgenden Parametern hinzu:
 
    ```
    name="custom_customNamespace_customSchema"
@@ -70,7 +70,7 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Die Verlängerung des **nms:seedMember** -Schemas muss den Strukturen einer Kampagne und eines Versands in Adobe Campaign entsprechen.
+   >Die Erweiterung des Schemas **nms:seedMember** muss den Strukturen einer Kampagne und eines Versands in Adobe Campaign entsprechen.
 
    >[!IMPORTANT]
    >
@@ -79,10 +79,10 @@ Gehen Sie wie folgt vor:
    >    
    >    * Während der Erweiterung müssen Sie einen **SQL-Namen (@sqlname)** für das Feld &#39;email&#39; angeben. Der SQL-Name muss sich von der sEmail unterscheiden, die für das Empfänger-Schema reserviert ist.
    >    * Sie müssen die Datenbankstruktur mit dem Schema aktualisieren, das beim Erweitern von **nms:seedMember** erstellt wurde.
-   >    * In der Erweiterung **nms:seedMember** muss das Feld mit der E-Mail-Adresse **name=&quot;email&quot;** als Attribut haben. Der SQL-Name muss sich von &#39;sEmail&#39; unterscheiden, das bereits für das Empfänger-Schema verwendet wird. Dieses Attribut muss sofort unter dem **`<element name="custom_cus_person" />`** Element deklariert werden.
+   >    * In der Erweiterung **nms:seedMember** muss das Feld mit der E-Mail-Adresse **name=&quot;email&quot;** als Attribut haben. Der SQL-Name muss sich von &#39;sEmail&#39; unterscheiden, das bereits für das Empfänger-Schema verwendet wird. Dieses Attribut muss sofort unter dem Element **`<element name="custom_cus_person" />`** deklariert werden.
 
 
-1. Ändern Sie das Formular **[!UICONTROL sampleMember]** entsprechend, um eine neue Registerkarte &quot;Interner Empfänger&quot;im Fenster **[!UICONTROL Testadressen]** zu definieren. For more on this, refer to [Form structure](../../configuration/using/form-structure.md).
+1. Ändern Sie das Formular **[!UICONTROL seedMember]** entsprechend, um eine neue Registerkarte &quot;Interner Empfänger&quot;im Fenster **[!UICONTROL Testadressen]** zu definieren. Weitere Informationen finden Sie unter [Formularstruktur](../../configuration/using/form-structure.md).
 
    ```
    <container colcount="2" label="Internal recipient" name="internal"
