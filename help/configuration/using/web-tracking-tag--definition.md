@@ -79,7 +79,8 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Versand-ID, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert ist als Hexadezimalwert anzugeben.
+                              <p>Versand-ID, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert ist
+                                 ausgedrückt in Hexadezimal.
                               </p> 
                            </td> 
                         </tr>
@@ -91,7 +92,9 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Parameter zur Identifizierung des Internetbenutzers. Das Format dieses Parameters ist "name=value", wobei der Name ein Schema des Empfängers ist. Dieser Parameter hat Vorrang vor der Kennung im Sitzungs-Cookie.
+                              <p>Parameter zur Identifizierung des Internetbenutzers. Das Format dieses Parameters ist "name=value",
+                                 wobei der Name ein Feld des Empfänger-Schemas ist. Dieser Parameter hat Priorität vor
+                                 die Kennung, die im Sitzungs-Cookie enthalten ist.
                               </p> 
                            </td> 
                         </tr> 
@@ -128,6 +131,6 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
 
 Folgende Methoden sind möglich:
 
-* Einfügen der URL in das **&quot;src&quot;** -Attribut eines HTML- **`<img>`** Tags, das in die Webseite eingefügt wurde, die Sie verfolgen möchten.
+* Einfügen der URL in das Attribut **&quot;src&quot;** eines HTML **`<img>`**-Tags, das in der Webseite enthalten ist, die Sie verfolgen möchten.
 * Direktaufruf an den Umleitungsserver, wenn die Webseite, die Sie verfolgen möchten, generiert wird.
 
