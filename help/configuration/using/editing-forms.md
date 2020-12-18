@@ -17,7 +17,7 @@ ht-degree: 38%
 
 # Formulare bearbeiten{#editing-forms}
 
-Auf den Anzeigebereich &quot;Formularerstellung und -konfiguration&quot;können Sie über den Ordner &quot; **[!UICONTROL Administration] &quot;> &quot; [!UICONTROL Konfiguration] &quot;> &quot; [!UICONTROL Eingabeformulare]** &quot;in der Client-Konsole des Adobe Campaigns zugreifen:
+Auf den Bildschirm zum Erstellen und Konfigurieren des Eingabformulars können Sie im Ordner **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Input forms]** der Adobe Campaign-Client-Konsole zugreifen:
 
 ![](assets/d_ncs_integration_form_arbo.png)
 
