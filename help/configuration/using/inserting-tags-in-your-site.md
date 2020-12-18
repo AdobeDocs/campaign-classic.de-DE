@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Einfache Methode {#simple-method}
 
-Diese Methode besteht darin, einen HTTP-Aufruf an den Umleitungsserver zu senden, indem ein **`<img>`** HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die Sie verfolgen möchten.
+Diese Methode besteht darin, einen HTTP-Aufruf an den Umleitungsserver zu senden, indem ein **`<img>`**-HTML-Tag in den HTML-Quellcode der Webseite eingefügt wird, die Sie verfolgen möchten.
 
 >[!IMPORTANT]
 >
@@ -39,7 +39,7 @@ Wenn Sie eine Seite definieren, die in der Konsole verfolgt werden soll, können
 
 Wenn Sie TRANSACTION-Tags verwenden, müssen Sie das Beispiel-Tag jedoch mit JavaScript ändern, um die Transaktionsinformationen (Anzahl, Anzahl der Elemente) und alle von einem Erweiterungsschema definierten Informationen einzufügen.
 
-### Statische Einfügung von Tags {#static-insertion-of-tags}
+### Statisches Einfügen von Tags {#static-insertion-of-tags}
 
 Um statische Tags einzufügen, kopieren Sie einfach die von der Konsole erzeugten oder manuell erstellten Tags in die Quelle Ihrer Webseite.
 
@@ -87,7 +87,7 @@ Einfügen eines TRANSACTION-Trackingtags in die Bestätigungsseite (&quot;amount
 </html>
 ```
 
-### Dynamische Erstellung von Web-Trackingtagen {#dynamic-generation-of-web-tracking-tags}
+### Dynamische Generierung von Web-Trackingtagen {#dynamic-generation-of-web-tracking-tags}
 
 Wenn Ihre Webseiten dynamisch generiert werden, können Sie den Web-Trackingtag zur Seitengenerierung hinzufügen.
 
@@ -128,7 +128,7 @@ Wenn Ihre Webseiten dynamisch generiert werden, können Sie den Web-Trackingtag 
 
 Wenn Sie die an den Umleitungsserver gesendeten Informationen steuern möchten, ist die zuverlässigste Möglichkeit, die HTTP-Abfrage selbst synchron mit einer Seitenerstellungssprache durchzuführen.
 
-Die URL, die Sie erstellen, muss den in [Webtrackingtag definierten Syntaxregeln entsprechen: Definition](../../configuration/using/web-tracking-tag--definition.md).
+Die URL, die Sie erstellen, muss den in [Webtrackingtag definierten Syntaxregeln entsprechen: definition](../../configuration/using/web-tracking-tag--definition.md).
 
 ![](assets/d_ncs_integration_webtracking_structure3.png)
 
