@@ -17,7 +17,7 @@ ht-degree: 16%
 
 # JSP-Verhalten{#jsp-behavior}
 
-Wenn bestimmte **jsp** -Aufträge nicht erfolgreich ausgeführt werden, müssen Sie sie zur Neukompilierung zwingen.
+Wenn bestimmte **jsp**-Aufträge nicht erfolgreich ausgeführt werden, müssen Sie sie zur Neukompilierung zwingen.
 
 Geben Sie dazu die folgenden Befehle ein:
 
@@ -28,4 +28,4 @@ rm -r work/
 nlserver start web
 ```
 
-Die **JSP** -Aufträge werden beim nächsten Verbinden neu generiert.
+Die Aufträge **jsp** werden beim nächsten Verbinden neu generiert.
