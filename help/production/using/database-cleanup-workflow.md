@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Einleitung {#introduction}
 
-The **[!UICONTROL Database cleanup]** workflow accessible via the **[!UICONTROL Administration > Production > Technical workflows]** node, lets you delete obsolete data to avoid exponential growth of the database. The workflow is triggered automatically without user intervention.
+Mit dem Arbeitsablauf **[!UICONTROL Datenbankbereinigung]**, auf den über den Knoten **[!UICONTROL Administration > Produktion > Technischen Workflows]** zugegriffen werden kann, können Sie veraltete Daten löschen, um ein exponentielles Datenbankwachstum zu vermeiden. Der Workflow wird automatisch ohne Benutzereingriff ausgelöst.
 
 ![](assets/ncs_cleanup_workflow.png)
 
@@ -33,9 +33,9 @@ Die Datenbankbereinigung wird auf zwei Ebenen konfiguriert: in der Workflow-Plan
 >
 >Weiterführende Informationen zur Planung finden Sie in [diesem Abschnitt](../../workflow/using/scheduler.md).
 
-Standardmäßig ist der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** so konfiguriert, dass er täglich um 4 Uhr Beginn wird. Mit der Planung können Sie den Workflow ändern, der die Häufigkeit auslöst. Die folgenden Frequenzen stehen zur Verfügung:
+Standardmäßig ist der Arbeitsablauf **[!UICONTROL Datenbankbereinigung]** für den täglichen Beginn um 4AM konfiguriert. Mit der Planung können Sie den Workflow ändern, der die Häufigkeit auslöst. Die folgenden Frequenzen stehen zur Verfügung:
 
-* **[!UICONTROL Mehrmals täglich]**
+* **[!UICONTROL Mehrmals pro Tag]**
 * **[!UICONTROL Täglich]**
 * **[!UICONTROL Wöchentlich]**
 * **[!UICONTROL Einmal]**
@@ -44,47 +44,47 @@ Standardmäßig ist der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigun
 
 >[!IMPORTANT]
 >
->Damit der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** zu dem in der Planung festgelegten Zeitpunkt und Zeitpunkt Beginn werden kann, muss das Workflow-Engine (wfserver) gestartet werden. Ist dies nicht der Fall, erfolgt die Datenbereingung der Datenbank erst nach dem nächsten Starten des Workflow-Engine.
+>Damit der Arbeitsablauf **[!UICONTROL Datenbankbereinigung]** zu dem in der Planung definierten Zeitpunkt zum Beginn führt, muss das Workflow-Engine (wfserver) gestartet werden. Ist dies nicht der Fall, erfolgt die Datenbereingung der Datenbank erst nach dem nächsten Starten des Workflow-Engine.
 
 ### Bereitstellungsassistent {#deployment-wizard}
 
-Mit dem **[!UICONTROL Bereitstellungsassistenten]**, der über das Menü &quot; **[!UICONTROL Werkzeuge&quot;> &quot;Erweitert]** &quot;aufgerufen wird, können Sie konfigurieren, wie lange Daten gespeichert werden. Die Werte werden in Tagen angegeben. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
+Mit dem **[!UICONTROL Implementierungsassistenten]**, der über das Menü **[!UICONTROL Tools > Erweitert]** aufgerufen wird, können Sie konfigurieren, wie lange Daten gespeichert werden. Die Werte werden in Tagen angegeben. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
 ![](assets/ncs_cleanup_deployment-wizard.png)
 
-Die Felder im Fenster **[!UICONTROL Datenbereinigung]** stimmen mit den folgenden Optionen überein. Diese werden von einigen der Aufgaben verwendet, die vom **[!UICONTROL Datenbankbereinigungs]** -Arbeitsablauf ausgeführt werden:
+Die Felder im Fenster **[!UICONTROL Datenbereinigung]** stimmen mit den folgenden Optionen überein. Diese werden von einigen der Aufgaben verwendet, die vom **[!UICONTROL Datenbankbereinigung]**-Arbeitsablauf ausgeführt werden:
 
 * Konsolidierte Verfolgung: **NmsCleanup_TrackingStatPurgeDelay** (siehe [Bereinigen von Trackinglogs](#cleanup-of-tracking-logs))
 * Versandlogs: **NmsCleanup_BroadLogPurgeDelay** (siehe [Bereinigen von Versandlogs](#cleanup-of-delivery-logs))
 * Trackinglogs: **NmsCleanup_TrackingLogPurgeDelay** (siehe [Bereinigen von Trackinglogs](#cleanup-of-tracking-logs))
-* Gelöschte Versand: **NmsCleanup_RecycledDeliveryPurgeDelay** (siehe [Bereinigen von Versänden, die gelöscht oder recycelt](#cleanup-of-deliveries-to-be-deleted-or-recycled)werden sollen)
-* Ablehnungen importieren: **NmsCleanup_RejectsPurgeDelay** (siehe [Bereinigung von durch Importe](#cleanup-of-rejects-generated-by-imports-)generierten Ablehnungen)
+* Gelöschte Versand: **NmsCleanup_RecycledDeliveryPurgeDelay** (siehe [Bereinigen von zu löschenden oder zu recyclierenden Versänden](#cleanup-of-deliveries-to-be-deleted-or-recycled))
+* Ablehnungen importieren: **NmsCleanup_RejectsPurgeDelay** (siehe [Bereinigen von durch Importe generierten Ablehnungen](#cleanup-of-rejects-generated-by-imports-))
 * Besucher-Profil: **NmsCleanup_VisitorPurgeDelay** (siehe [Bereinigen von Besuchern](#cleanup-of-visitors))
-* Angebotsvorschlag: **NmsCleanup_PropositionPurgeDelay** (siehe [Bereinigen von Vorschlägen](#cleanup-of-propositions))
+* Angebotsvorschlag: **NmsCleanup_PropositionPurgeDelay** (siehe [Bereinigen von Propositionen](#cleanup-of-propositions))
 
    >[!NOTE]
    >
-   >Das Feld **[!UICONTROL Angebotsvorschlag]** ist nur verfügbar, wenn das **Interaktionsmodul** installiert ist.
+   >Das Feld **[!UICONTROL Angebotsvorschlag]** ist nur verfügbar, wenn das Modul **Interaktion** installiert ist.
 
 * Ereignisse: **NmsCleanup_EventPurgeDelay** (siehe [Datenbereingung abgelaufene Ereignis](#cleansing-expired-events))
-* Archivierte Ereignis: **NmsCleanup_EventHistoPurgeDelay** (siehe abgelaufene [Datenbereingung-Ereignis](#cleansing-expired-events))
+* Archivierte Ereignis: **NmsCleanup_EventHistoPurgeDelay** (siehe [Datenbereingung abgelaufene Ereignis](#cleansing-expired-events))
 
    >[!NOTE]
    >
-   >Die **[!UICONTROL Felder &quot;Ereignisse]** &quot;und &quot; **[!UICONTROL Archivierte Ereignis]** &quot;stehen nur zur Verfügung, wenn das **Message Center** -Modul installiert ist.
+   >Die Felder **[!UICONTROL Ereignis]** und **[!UICONTROL Archivierte Ereignis]** sind nur verfügbar, wenn das Modul **Nachrichtencenter** installiert ist.
 
-* Prüfpfad: **XtkCleanup_AuditTrailPurgeDelay** (siehe [Bereinigung des Prüfpfads](#cleanup-of-audit-trail))
+* Prüfpfad: **XtkCleanup_AuditTrailPurgeDelay** (siehe [Bereinigung des Audit-Trackers](#cleanup-of-audit-trail))
 
-Alle vom **[!UICONTROL Datenbankbereinigungs]** -Workflow ausgeführten Aufgaben werden im folgenden Abschnitt beschrieben.
+Alle Aufgaben, die vom **[!UICONTROL Datenbankbereinigung]**-Arbeitsablauf ausgeführt werden, werden im folgenden Abschnitt beschrieben.
 
-## Aufgaben des Arbeitsablaufs für die Datenbankbereinigung {#tasks-carried-out-by-the-database-cleanup-workflow}
+## Aufgaben, die vom Datenbankbereinigungs-Workflow {#tasks-carried-out-by-the-database-cleanup-workflow} durchgeführt werden
 
-Zu dem in der Workflow-Planung definierten Zeitpunkt (siehe Planung [) wird](#the-scheduler)das Workflow-Engine für den Datenbankbereinigungsprozess Beginn. Die Datenbankbereinigung stellt eine Verbindung zur Datenbank her und führt die Aufgaben in der unten gezeigten Reihenfolge aus.
+Zu dem in der Workflow-Planung definierten Zeitpunkt (siehe [Die Planung](#the-scheduler)) Beginn das Workflow-Engine den Datenbankbereinigungsprozess. Die Datenbankbereinigung stellt eine Verbindung zur Datenbank her und führt die Aufgaben in der unten gezeigten Reihenfolge aus.
 
 >[!IMPORTANT]
 >
 >Wenn eine dieser Aufgaben fehlschlägt, werden die folgenden nicht ausgeführt.\
->SQL-Abfragen mit einem **LIMIT** -Attribut werden wiederholt ausgeführt, bis alle Informationen verarbeitet sind.
+>SQL-Abfragen mit dem Attribut **LIMIT** werden wiederholt ausgeführt, bis alle Informationen verarbeitet sind.
 
 >[!NOTE]
 >
@@ -92,7 +92,7 @@ Zu dem in der Workflow-Planung definierten Zeitpunkt (siehe Planung [) wird](#th
 
 ### Listen zum Löschen der Bereinigung {#lists-to-delete-cleanup}
 
-Die erste vom **[!UICONTROL Datenbank-Bereinigungs]** -Arbeitsablauf ausgeführte Aufgabe löscht alle Gruppen mit **deleteStatus != 0** Attribut aus der **NmsGroup**. Die mit diesen Gruppen verknüpften und in anderen Tabellen vorhandenen Datensätze werden ebenfalls gelöscht.
+Die erste Aufgabe, die vom **[!UICONTROL Datenbank-Bereinigung]**-Arbeitsablauf ausgeführt wird, löscht alle Gruppen mit dem **deleteStatus != 0** Attribut von **NmsGroup**. Die mit diesen Gruppen verknüpften und in anderen Tabellen vorhandenen Datensätze werden ebenfalls gelöscht.
 
 1. Zu löschende Listen werden mithilfe der folgenden SQL-Abfrage wiederhergestellt:
 
@@ -106,7 +106,7 @@ Die erste vom **[!UICONTROL Datenbank-Bereinigungs]** -Arbeitsablauf ausgeführt
    DELETE FROM $(relatedTable) WHERE iGroupId=$(l) IN (SELECT iGroupId FROM $(relatedTable) WHERE iGroupId=$(l) LIMIT 5000) 
    ```
 
-   wobei **$(relatedTable)** eine Tabelle ist, die sich auf **NmsGroup** bezieht, und **$(l)** die Liste-ID.
+   wobei **$(relatedTable)** eine Tabelle ist, die mit **NmsGroup** und **$(l)** mit der Liste-ID in Verbindung steht.
 
 1. Wenn es sich bei der Liste um eine Liste vom Typ &quot;Liste&quot;handelt, wird die zugehörige Tabelle mit der folgenden Abfrage gelöscht:
 
@@ -114,21 +114,21 @@ Die erste vom **[!UICONTROL Datenbank-Bereinigungs]** -Arbeitsablauf ausgeführt
    DROP TABLE grp$(l)
    ```
 
-1. Jede durch den Vorgang wiederhergestellte **Select** Type-Liste wird mit der folgenden Abfrage gelöscht:
+1. Jede **Select**-Liste, die durch den Vorgang wiederhergestellt wurde, wird mit der folgenden Abfrage gelöscht:
 
    ```
    DELETE FROM NmsGroup WHERE iGroupId=$(l) 
    ```
 
-   wobei **$(l)** die Kennung der Liste ist
+   wobei **$(l)** der Identifikator der Liste ist
 
-### Bereinigung der zu löschenden oder zu recycelenden Versand {#cleanup-of-deliveries-to-be-deleted-or-recycled}
+### Bereinigung der zu löschenden oder zu recycelnden Versand {#cleanup-of-deliveries-to-be-deleted-or-recycled}
 
 Mit dieser Aufgabe werden alle zu löschenden oder zu recycelnden Versand bereinigt.
 
-1. Der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** wählt alle Versand aus, für die das Feld &quot; **deleteStatus** &quot;den Wert &quot; **[!UICONTROL Yes]** &quot;oder &quot; **[!UICONTROL Recycled]** &quot;hat und deren Löschtermin älter ist als der im Feld **[!UICONTROL Gelöschte Versand]******(NmsCleanup_RecycledDeliveryPurgeDelay) des Bereitstellungsassistenten definierte Zeitraum. For more on this, refer to [Deployment wizard](#deployment-wizard). Dieser Zeitraum wird im Verhältnis zum aktuellen Serverdatum berechnet.
+1. Der Arbeitsablauf **[!UICONTROL Datenbankbereinigung]** wählt alle Versand aus, für die das Feld **deleteStatus** den Wert **[!UICONTROL Ja]** oder **[!UICONTROL Recycled]** hat und deren Löschdatum älter ist als der in **[!UICONTROL Gelöschte Versand]** (**Nr) definierte Zeitraum msCleanup_RecycledDeliveryPurgeDelay**)-Feld des Bereitstellungsassistenten. Weitere Informationen finden Sie unter [Bereitstellungsassistent](#deployment-wizard). Dieser Zeitraum wird im Verhältnis zum aktuellen Serverdatum berechnet.
 1. Für jeden Mid-Sourcing-Server wählt die Aufgabe die Liste der zu löschenden Versand aus.
-1. Der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** löscht Versandlogs, Anlagen, Informationen zur Mirrorseite und alle anderen damit zusammenhängenden Daten.
+1. Der Arbeitsablauf **[!UICONTROL Datenbankbereinigung]** löscht Versandlogs, Anlagen, Informationen zur Mirrorseite und alle anderen zugehörigen Daten.
 1. Bevor Sie den Versand endgültig löschen, werden die verknüpften Informationen aus den folgenden Tabellen entfernt:
 
    * In der Ausschlusstabelle des Versands (**NmsDlvExclusion**) wird die folgende Abfrage verwendet:
@@ -137,7 +137,7 @@ Mit dieser Aufgabe werden alle zu löschenden oder zu recycelnden Versand berein
       DELETE FROM NmsDlvExclusion WHERE iDeliveryId=$(l)
       ```
 
-      wobei **$(l)** die Kennung des Versands ist.
+      wobei **$(l)** der Bezeichner des Versands ist.
 
    * In der Coupon-Tabelle (**NmsCouponValue**) wird die folgende Abfrage verwendet (mit Massenlöschungen):
 
@@ -145,22 +145,22 @@ Mit dieser Aufgabe werden alle zu löschenden oder zu recycelnden Versand berein
       DELETE FROM NmsCouponValue WHERE iMessageId IN (SELECT iMessageId FROM NmsCouponValue WHERE EXISTS (SELECT B.iBroadLogId FROM $(BroadLogTableName) B WHERE B.iDeliveryId = $(l) AND B.iBroadLogId = iMessageId ) LIMIT 5000)
       ```
 
-      wobei **$(l)** die Kennung des Versands ist.
+      wobei **$(l)** der Bezeichner des Versands ist.
 
-   * In den Versand-Protokolltabellen (**NmsBroadlogXxx**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt.
+   * In den Protokolltabellen des Versands (**NmsBroadlogXxx**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt.
    * In den Angebotsvorschlag-Tabellen (**NmsPropositionXxx**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt.
    * In den Verfolgungsprotokolltabellen (**NmsTrackinglogXxx**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt.
    * In der Fragment-Tabelle des Versands (**NmsDeliveryPart**) werden Massenlöschungen in Stapeln von 500.000 Datensätzen ausgeführt. Diese Tabelle enthält Personalisierungsinformationen zu den verbleibenden zu liefernden Nachrichten.
    * In der Datenfragmenttabelle der Mirrorseite (**NmsMirrorPageInfo**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen für abgelaufene Versand und für fertige oder abgebrochene Teile ausgeführt. Diese Tabelle enthält Personalisierungsinformationen zu allen Nachrichten, die zum Generieren von Mirrorseiten verwendet werden.
    * In der Suchtabelle der Mirrorseite (**NmsMirrorPageSearch**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt. Diese Tabelle ist ein Suchindex, der Zugriff auf Personalisierungsinformationen bietet, die in der Tabelle **NmsMirrorPageInfo** gespeichert sind.
    * In der Stapelverarbeitungsprotokolltabelle (**XtkJobLog**) werden Massenlöschungen in Stapeln von 20.000 Datensätzen ausgeführt. Diese Tabelle enthält das Protokoll der zu löschenden Versand.
-   * In der Versand-URL-Verfolgungstabelle (**NmsTrackingUrl**) wird die folgende Abfrage verwendet:
+   * In der Verfolgungstabelle für Versand-URL (**NmsTrackingUrl**) wird die folgende Abfrage verwendet:
 
       ```
       DELETE FROM NmsTrackingUrl WHERE iDeliveryId=$(l)
       ```
 
-      wobei **$(l)** die Kennung des Versands ist.
+      wobei **$(l)** der Bezeichner des Versands ist.
 
       Diese Tabelle enthält die URLs in den zu löschenden Versänden, um deren Verfolgung zu aktivieren.
 
@@ -170,11 +170,11 @@ Mit dieser Aufgabe werden alle zu löschenden oder zu recycelnden Versand berein
    DELETE FROM NmsDelivery WHERE iDeliveryId = $(l)
    ```
 
-   wobei **$(l)** die Kennung des Versands ist.
+   wobei **$(l)** der Bezeichner des Versands ist.
 
-#### Versand mit Mid-Sourcing {#deliveries-using-mid-sourcing}
+#### Versand, die Mid-Sourcing {#deliveries-using-mid-sourcing} verwenden
 
-Der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** löscht auch Versand auf den Mid-Sourcing-Servern.
+Der Arbeitsablauf **[!UICONTROL Datenbankbereinigung]** löscht auch Versand auf dem/den Mid-Sourcing-Server(n).
 
 1. Dazu prüft der Workflow, ob jeder Versand inaktiv ist (je nach Status). Wenn ein Versand aktiv ist, wird er vor dem Löschen beendet. Die Kontrolle wird wie folgt durchgeführt:
 
@@ -182,21 +182,21 @@ Der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** löscht auch Ve
    SELECT iState FROM NmsDelivery WHERE iDeliveryId = $(l) AND iState <> 100;
    ```
 
-   wobei **$(l)** die Kennung des Versands ist.
+   wobei **$(l)** der Bezeichner des Versands ist.
 
-1. Wenn der Wert des Status **[!UICONTROL Beginn ausstehend]** ist, **[!UICONTROL Wird ausgeführt]** , **[!UICONTROL Wiederherstellung ausstehend]** , **[!UICONTROL Wiederherstellung läuft]** , **[!UICONTROL Pause angefordert]** **** **** ,Pause in progressoderPaused(Werte 51, 55, 61, 62, 71, 72, 75), wird der Versand gestoppt und der Aufgabe bereinigt die verknüpften Informationen.
+1. Wenn der Statuswert **[!UICONTROL Beginn ausstehend]** , **[!UICONTROL Wird ausgeführt]** , **[!UICONTROL Wiederherstellung ausstehend]** , **[!UICONTROL Wiederherstellung läuft]** , **[!UICONTROL Angeforderte Pause]** , **[!UICONTROL Anhalten in Bearbeitung]** oder &lt;a111/> ist 12/>Paused ]**(Werte 51, 55, 61, 62, 71, 72, 75), wird der Versand gestoppt und die Aufgabe löscht die verknüpften Informationen.**[!UICONTROL 
 
 ### Bereinigung abgelaufener Versand {#cleanup-of-expired-deliveries}
 
 Diese Aufgabe beendet Versand, deren Gültigkeitsdauer abgelaufen ist.
 
-1. Der Arbeitsablauf für die **[!UICONTROL Datenbankbereinigung]** erstellt die Liste der Versand, die abgelaufen sind. Diese Liste umfasst alle abgelaufenen Versand mit einem anderen Status als &quot; **[!UICONTROL Fertig]** &quot;sowie Versand, die kürzlich beendet wurden und über 10.000 nicht verarbeitete Nachrichten enthalten. Die folgende Abfrage wird verwendet:
+1. Der Arbeitsablauf **[!UICONTROL Datenbankbereinigung]** erstellt die Liste der Versand, die abgelaufen sind. Diese Liste umfasst alle abgelaufenen Versand mit einem anderen Status als **[!UICONTROL Fertig]** sowie kürzlich angehaltene Versand mit über 10.000 nicht verarbeiteten Nachrichten. Die folgende Abfrage wird verwendet:
 
    ```
    SELECT iDeliveryId, iState FROM NmsDelivery WHERE iDeleteStatus=0 AND iIsModel=0 AND iDeliveryMode=1 AND ( (iState >= 51 AND iState < 85 AND tsValidity IS NOT NULL AND tsValidity < $(currentDate) ) OR (iState = 85 AND DateMinusDays(15) < tsLastModified AND iToDeliver - iProcessed >= 10000 ))
    ```
 
-   Wenn **Versand-Modus 1** mit dem **[!UICONTROL Massenmodus]** übereinstimmt, stimmt **state 51** mit dem Status &quot; **[!UICONTROL Beginn ausstehend]** &quot;überein, **state 85** **** stimmt mit dem Status &quot;VersandStopped&quot;überein, und die höchste Anzahl an Versandlogs, die auf dem Versand-Server serienmäßig aktualisiert wurden, entspricht 10.000000.
+   wobei **Versand mode 1** mit dem **[!UICONTROL Mass Versand]**-Modus übereinstimmt, **state 51** mit dem Status **[!UICONTROL Beginn ausstehend]** übereinstimmt, **state 85** mit dem Status **[!UICONTROL Angehalten]** übereinstimmt, und die höchste Anzahl von Versandlogs, die auf dem Versand-Server gezählt werden, gleich 10.000.
 
 1. Der Workflow umfasst dann die Liste der zuletzt abgelaufenen Versand, die Mid-Sourcing verwenden. Versand, für die noch keine Versandlogs über den Mid-Sourcing-Server wiederhergestellt wurden, werden ausgeschlossen.
 
@@ -212,7 +212,7 @@ Diese Aufgabe beendet Versand, deren Gültigkeitsdauer abgelaufen ist.
    SELECT iExtAccountId FROM NmsExtAccount WHERE iActive<>0 AND sName=$(providerName)
    ```
 
-1. In Liste abgelaufener Versand wechseln Versandlogs, deren Status **[!UICONTROL Ausstehend]** lautet, zu **[!UICONTROL Versand abgebrochen]** , und alle Versand in dieser Liste zu **[!UICONTROL Fertig]** .
+1. In Liste abgelaufener Versand wechseln Versandlogs, deren Status **[!UICONTROL Ausstehend]** lautet, zu **[!UICONTROL Versand abgebrochen]** und alle Versand in dieser Liste wechseln zu **[!UICONTROL Fertig]**.
 
    Die folgenden Abfragen werden verwendet:
 
@@ -220,15 +220,15 @@ Diese Aufgabe beendet Versand, deren Gültigkeitsdauer abgelaufen ist.
    UPDATE $(BroadLogTableName) SET tsLastModified=$(curdate), iStatus=7, iMsgId=$(bl) WHERE iDeliveryId=$(dl) AND iStatus=6
    ```
 
-   wobei **$(curdate)** das aktuelle Datum des Datenbankservers, **$(bl)** der Bezeichner der Meldung &quot;Versandlogs&quot;ist, **$(dl)** der Versand-Bezeichner, **Versand-Status 6** den Status &quot; **[!UICONTROL Ausstehend]** **** **** &quot;und der Status &quot; Versand 7canceledVersand&quot;erfüllt.
+   wobei **$(curdate)** das aktuelle Datum des Datenbankservers ist, **$(bl)** der Bezeichner der Meldung &quot;Versandlogs&quot;, **$(dl)** ist der Bezeichner des Versands, **Versand status 6** mit dem Status **[!UICONTROL Ausstehend]** übereinstimmt **Versand status 7** stimmt mit dem Status **[!UICONTROL Abgebrochener Versand]** überein.
 
    ```
    UPDATE NmsDelivery SET iState = 95, tsLastModified = $(curdate), tsBroadEnd = tsValidity WHERE iDeliveryId = $(dl)
    ```
 
-   wobei der **Versand-Status 95** mit dem Status &quot; **[!UICONTROL Fertig]** &quot;übereinstimmt und **$(dl)** der Bezeichner des Versands.
+   wobei **Versand state 95** mit dem Status **[!UICONTROL Fertig]** und **$(dl)** mit dem Bezeichner des Versands übereinstimmt.
 
-1. Alle Fragmente (**DeliveryParts**) veralteter Versand werden gelöscht und alle veralteten Fragmente der in Bearbeitung befindlichen Benachrichtigungs-Versand werden gelöscht. Massenlöschung wird für beide Aufgaben verwendet.
+1. Alle Fragmente (**deliveryParts**) veralteter Versand werden gelöscht und alle veralteten Fragmente der in Bearbeitung befindlichen Benachrichtigungselemente werden gelöscht. Massenlöschung wird für beide Aufgaben verwendet.
 
    Die folgenden Abfragen werden verwendet:
 
@@ -240,9 +240,9 @@ Diese Aufgabe beendet Versand, deren Gültigkeitsdauer abgelaufen ist.
    DELETE FROM NmsDeliveryPart WHERE iDeliveryPartId IN (SELECT iDeliveryPartId FROM NmsDeliveryPart WHERE tsValidity < $(curDate) LIMIT 500000)
    ```
 
-   wobei der **Versand-Status 95** mit dem Status &quot; **[!UICONTROL Fertig]** &quot;übereinstimmt, stimmt der Status &quot; **Versand&quot;85** mit dem Status &quot; **[!UICONTROL Angehalten]** &quot;überein und **$(curDate)** ist das aktuelle Serverdatum.
+   wobei **Versand state 95** mit dem Status **[!UICONTROL Fertig]**, **Versand state 85** mit dem Status **[!UICONTROL Angehalten]** und **$(curDate)** mit dem aktuellen Serverdatum übereinstimmt.
 
-### Beseitigung von Mirrorseiten {#cleanup-of-mirror-pages}
+### Bereinigung von Mirrorseiten {#cleanup-of-mirror-pages}
 
 Diese Aufgabe löscht die von Versänden verwendeten Webressourcen (Mirrorseiten).
 
@@ -254,7 +254,7 @@ Diese Aufgabe löscht die von Versänden verwendeten Webressourcen (Mirrorseiten
 
    wobei **$(curDate)** das aktuelle Serverdatum ist.
 
-1. Die Tabelle **NmsMirrorPageInfo** wird dann bereinigt, gegebenenfalls unter Verwendung der Kennung des zuvor wiederhergestellten Versands. Massenlöschung wird verwendet, um die folgenden Abfragen zu generieren:
+1. Anschließend wird die Tabelle **NmsMirrorPageInfo** bereinigt, gegebenenfalls unter Verwendung der Kennung des zuvor wiederhergestellten Versands. Massenlöschung wird verwendet, um die folgenden Abfragen zu generieren:
 
    ```
    DELETE FROM NmsMirrorPageInfo WHERE iMirrorPageInfoId IN (SELECT iMirrorPageInfoId FROM NmsMirrorPageInfo WHERE iDeliveryId = $(dl)) LIMIT 5000)
@@ -264,7 +264,7 @@ Diese Aufgabe löscht die von Versänden verwendeten Webressourcen (Mirrorseiten
    DELETE FROM NmsMirrorPageSearch WHERE iMessageId IN (SELECT iMessageId FROM NmsMirrorPageSearch WHERE iDeliveryId = $(dl)) LIMIT 5000)
    ```
 
-   wobei **$(dl)** die Kennung des Versands ist.
+   wobei **$(dl)** der Bezeichner des Versands ist.
 
 1. Dem Versand-Protokoll wird dann ein Eintrag hinzugefügt.
 1. Gereinigte Versand werden dann identifiziert, um zu vermeiden, dass sie später erneut verarbeitet werden müssen. Die folgende Abfrage wird ausgeführt:
@@ -275,11 +275,11 @@ Diese Aufgabe löscht die von Versänden verwendeten Webressourcen (Mirrorseiten
 
    wobei **$(strIn)** die Liste der Versand-IDs ist.
 
-### Aufräumen von Arbeitstischen {#cleanup-of-work-tables}
+### Bereinigen von Arbeitstabellen {#cleanup-of-work-tables}
 
-Diese Aufgabe löscht alle Arbeitstabellen, die Versänden entsprechen, deren Status **[!UICONTROL bearbeitet]** , **[!UICONTROL angehalten]** oder **[!UICONTROL gelöscht]** wird.
+Diese Aufgabe löscht aus der Datenbank alle Arbeitstabellen, die Versänden entsprechen, deren Status **[!UICONTROL bearbeitet werden]** , **[!UICONTROL Gestoppt]** oder **[!UICONTROL Gelöscht]**.
 
-1. Die Liste von Tabellen, deren Namen mit **wkDlv_** beginnen, wird zuerst mit der folgenden Abfrage (postgresql) wiederhergestellt:
+1. Die Liste von Tabellen mit Namen, die mit **wkDlv_** beginnen, wird zuerst mit der folgenden Abfrage (postgresql) wiederhergestellt:
 
    ```
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkDlv_') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
@@ -291,7 +291,7 @@ Diese Aufgabe löscht alle Arbeitstabellen, die Versänden entsprechen, deren St
    SELECT iDeliveryId FROM NmsDelivery WHERE iDeliveryId<>0 AND iDeleteStatus=0 AND iState NOT IN (0,85,100);
    ```
 
-   wobei 0 der Wert ist, der mit dem Status **[!UICONTROL Bearbeitung]** des Versands übereinstimmt, 85 mit dem Status **[!UICONTROL Gestoppt]** und 100 mit dem Status **[!UICONTROL Gelöscht]** übereinstimmt.
+   wobei 0 der Wert ist, der mit dem Status **[!UICONTROL Wird bearbeitet]** Versand übereinstimmt, entspricht 85 dem Status **[!UICONTROL Gestoppt]** und 100 dem Status **[!UICONTROL Gelöscht]**.
 
 1. Nicht mehr verwendete Tabellen werden mit der folgenden Abfrage gelöscht:
 
@@ -299,17 +299,17 @@ Diese Aufgabe löscht alle Arbeitstabellen, die Versänden entsprechen, deren St
    DROP TABLE wkDlv_15487_1;
    ```
 
-### Aufräumung der durch Importe entstandenen Ablehnungen {#cleanup-of-rejects-generated-by-imports-}
+### Bereinigung von durch Importe generierten Ablehnungen{#cleanup-of-rejects-generated-by-imports-}
 
 Mit diesem Schritt können Sie Datensätze löschen, für die während des Imports nicht alle Daten verarbeitet wurden.
 
-1. Massenlöschung erfolgt auf der **XtkReject** -Tabelle mit der folgenden Abfrage:
+1. Massenlöschung erfolgt auf der **xtkReject**-Tabelle mit der folgenden Abfrage:
 
    ```
    DELETE FROM XtkReject WHERE iRejectId IN (SELECT iRejectId FROM XtkReject WHERE tsLog < $(curDate)) LIMIT $(l))
    ```
 
-   wobei **$(curDate)** das aktuelle Serverdatum ist, ab dem der für die Option **NmsCleanup_RejectsPurgeDelay** definierte Zeitraum abgezogen wird (siehe [Bereitstellungsassistent](#deployment-wizard)), und **$(l)** die maximale Anzahl der zu löschenden Datensätze ist.
+   wobei **$(curDate)** das aktuelle Serverdatum ist, ab dem der für die Option **NmsCleanup_RejectsPurgeDelay** definierte Zeitraum abgezogen wird (siehe [Bereitstellungsassistent](#deployment-wizard)) und **$(l)** die maximale Anzahl der zu löschenden Datensätze ist.
 
 1. Alle verwaisten Ablehnungen werden dann mit der folgenden Abfrage gelöscht:
 
@@ -319,11 +319,11 @@ Mit diesem Schritt können Sie Datensätze löschen, für die während des Impor
 
 ### Bereinigen von Workflow-Instanzen {#cleanup-of-workflow-instances}
 
-Diese Aufgabe bereinigt jede Workflow-Instanz mit ihrem Identifer (**lWorkflowId**) und dem Verlauf (**lHistory**). Dadurch werden inaktive Tabellen gelöscht, indem die Aufgabe zur Bereinigung der Tabelle erneut ausgeführt wird. Die Bereinigung löscht auch alle verwaisten Arbeitstische (wkf% und wkfhisto%) der gelöschten Workflows.
+Diese Aufgabe löscht jede Workflow-Instanz mit ihrem Identifer (**lWorkflowId**) und dem Verlauf (**lHistory**). Dadurch werden inaktive Tabellen gelöscht, indem die Aufgabe zur Bereinigung der Tabelle erneut ausgeführt wird. Die Bereinigung löscht auch alle verwaisten Arbeitstische (wkf% und wkfhisto%) der gelöschten Workflows.
 
 >[!NOTE]
 >
->Die Bereinigungshäufigkeit des Verlaufs wird für jeden Workflow im Feld **Verlauf in Tagen** angegeben (Standardwert 30 Tage). Dieses Feld finden Sie in den Workflow-Eigenschaften auf der Registerkarte &quot; **Ausführung** &quot;. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/workflow-properties.md#execution).
+>Die Bereinigungshäufigkeit des Verlaufs wird für jeden Workflow im Feld **Verlauf in Tagen** (Standardwert 30 Tage) angegeben. Dieses Feld finden Sie auf der Registerkarte **Ausführung** der Workflow-Eigenschaften. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/workflow-properties.md#execution).
 
 1. Um die Liste der zu löschenden Workflows wiederherzustellen, wird die folgende Abfrage verwendet:
 
@@ -345,15 +345,15 @@ Diese Aufgabe bereinigt jede Workflow-Instanz mit ihrem Identifer (**lWorkflowId
    DELETE FROM XtkWorkflowEvent WHERE iWorkflowId=$(l) AND iStatus>2 AND tsProcessing < DateMinusDays($(lHistory))
    ```
 
-   wobei **$(lworkflow)** die Kennung des Workflows und **$(history)** die Kennung des Verlaufs ist.
+   wobei **$(lworkflow)** der Bezeichner des Workflows und **$(log)** der Bezeichner des Verlaufs ist.
 
-1. Alle nicht verwendeten Tabellen werden gelöscht. Zu diesem Zweck werden alle Tabellen mithilfe einer **wkf%** -Typmaske mit der folgenden Abfrage (postgresql) erfasst:
+1. Alle nicht verwendeten Tabellen werden gelöscht. Zu diesem Zweck werden alle Tabellen mithilfe einer Typmaske von **wkf%** mithilfe der folgenden Abfrage (postgresql) erfasst:
 
    ```
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
-1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste aktiver Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
+1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste der aktiven Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
 
    ```
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId<>0 AND iState<>20
@@ -370,7 +370,7 @@ Diese Aufgabe bereinigt jede Workflow-Instanz mit ihrem Identifer (**lWorkflowId
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId IN ($(strCondition))
    ```
 
-   wobei **$(strbedingung)** die Liste von Tabellen ist, die mit der **wkfhisto%** -Maske übereinstimmen.
+   wobei **$(strbedingung)** die Liste von Tabellen ist, die mit der **wkfhisto%**-Maske übereinstimmen.
 
 1. Die übrigen Tabellen werden mit der folgenden Abfrage gelöscht:
 
@@ -386,7 +386,7 @@ Diese Aufgabe löscht Workflow-Anmeldungen mit der folgenden Abfrage:
 DELETE FROM XtkWorkflowLogin WHERE iWorkflowId NOT IN (SELECT iWorkflowId FROM XtkWorkflow)
 ```
 
-### Aufräumen verwaister Arbeitstische {#cleanup-of-orphan-work-tables}
+### Bereinigung verwaister Arbeitstabellen {#cleanup-of-orphan-work-tables}
 
 Diese Aufgabe löscht verwaiste Arbeitstabellen, die mit Gruppen verknüpft sind. Die Tabelle **NmsGroup** speichert die zu bereinigenden Gruppen (mit einem anderen Typ als 0). Das Präfix der Tabellennamen ist **grp**. Zur Identifizierung der zu reinigenden Gruppen wird folgende Abfrage verwendet:
 
@@ -394,9 +394,9 @@ Diese Aufgabe löscht verwaiste Arbeitstabellen, die mit Gruppen verknüpft sind
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
 ```
 
-### Aufräumarbeiten von Besuchern {#cleanup-of-visitors}
+### Bereinigung von Besuchern {#cleanup-of-visitors}
 
-Diese Aufgabe löscht veraltete Datensätze mithilfe des Massenlöschens aus der Besucher-Tabelle. Veraltete Datensätze sind solche, deren letzte Änderung vor dem im Bereitstellungsassistenten festgelegten Erhaltungszeitraum liegt (siehe [Bereitstellungsassistent](#deployment-wizard)). Die folgende Abfrage wird verwendet:
+Diese Aufgabe löscht veraltete Datensätze mithilfe des Massenlöschens aus der Besucher-Tabelle. Veraltete Datensätze sind solche, deren letzte Änderung vor dem im Bereitstellungsassistenten definierten Erhaltungszeitraum liegt (siehe [Bereitstellungsassistent](#deployment-wizard)). Die folgende Abfrage wird verwendet:
 
 ```
 DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WHERE iRecipientId = 0 AND tsLastModified < AddDays(GetDate(), -30) AND iOrigin = 0 LIMIT 20000)
@@ -404,27 +404,27 @@ DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WH
 
 wobei **$(tsDate)** das aktuelle Serverdatum ist, von dem der für die Option **NmsCleanup_VisitorPurgeDelay** definierte Zeitraum abgezogen wird.
 
-### Säuberung von NPAI {#cleanup-of-npai}
+### Bereinigung von NPAI {#cleanup-of-npai}
 
-Mit dieser Aufgabe können Sie Datensätze, die gültige Adressen enthalten, aus der **NmsAddress** -Tabelle löschen. Die folgende Abfrage dient zum Durchführen des Massenlöschens:
+Mit dieser Aufgabe können Sie Datensätze löschen, die gültige Adressen enthalten, aus der Tabelle **NmsAddress**. Die folgende Abfrage dient zum Durchführen des Massenlöschens:
 
 ```
 DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WHERE iStatus=2 AND tsLastModified < $(tsDate1) AND tsLastModified >= $(tsDate2) LIMIT 5000)
 ```
 
-wobei **Status 2** mit dem **[!UICONTROL Gültigen]** -Status übereinstimmt, ist **$(tsDate1)** das aktuelle Serverdatum und **$(tsDate2)** mit der Option **NmsCleanup_LastCleanup** übereinstimmt.
+wobei **status 2** mit dem Status **[!UICONTROL Valid]**, **$(tsDate1)** mit dem aktuellen Serverdatum übereinstimmt und **$(tsDate2)** mit der Option **NmsCleanup_LastCleanup** übereinstimmt.
 
-### Säuberung von Abonnements {#cleanup-of-subscriptions-}
+### Bereinigung von Abonnements {#cleanup-of-subscriptions-}
 
-Mit dieser Aufgabe werden alle vom Benutzer aus der **NmsSubscription** -Tabelle gelöschten Abonnement entfernt, indem eine Massenlöschung erfolgt. Die folgende Abfrage wird verwendet:
+Mit dieser Aufgabe werden alle vom Benutzer gelöschten Abonnement aus der Tabelle **NmsSubscription** entfernt, indem Massenlöschungen vorgenommen werden. Die folgende Abfrage wird verwendet:
 
 ```
 DELETE FROM NmsSubscription WHERE iDeleteStatus <>0
 ```
 
-### Säuberung von Trackinglogs {#cleanup-of-tracking-logs}
+### Bereinigung von Trackinglogs {#cleanup-of-tracking-logs}
 
-Diese Aufgabe löscht veraltete Datensätze aus den Protokolltabellen für Verfolgung und Webtracking. Veraltete Datensätze sind solche, die vor dem im Bereitstellungsassistenten festgelegten Erhaltungszeitraum liegen (siehe [Bereitstellungsassistent](#deployment-wizard)).
+Diese Aufgabe löscht veraltete Datensätze aus den Protokolltabellen für Verfolgung und Webtracking. Veraltete Datensätze sind solche, die vor dem im Bereitstellungsassistenten definierten Erhaltungszeitraum liegen (siehe [Bereitstellungsassistent](#deployment-wizard)).
 
 1. Erstens wird die Liste der Verfolgungstabellen mithilfe der folgenden Abfrage wiederhergestellt:
 
@@ -448,7 +448,7 @@ Diese Aufgabe löscht veraltete Datensätze aus den Protokolltabellen für Verfo
 
    wobei **$(tsDate)** das aktuelle Serverdatum ist, ab dem der für die Option **NmsCleanup_TrackingStatPurgeDelay** definierte Zeitraum abgezogen wird.
 
-### Säuberung von Versandlogs {#cleanup-of-delivery-logs}
+### Bereinigung von Versandlogs {#cleanup-of-delivery-logs}
 
 Mit dieser Aufgabe können Sie die in verschiedenen Tabellen gespeicherten Versandlogs bereinigen.
 
@@ -458,41 +458,41 @@ Mit dieser Aufgabe können Sie die in verschiedenen Tabellen gespeicherten Versa
    SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL UNION SELECT distinct(sBroadLogExclSchema) FROM NmsDeliveryMapping WHERE sBroadLogExclSchema IS NOT NULL
    ```
 
-1. Bei der Verwendung von Mid-Sourcing wird in Versand-Zuordnungen nicht auf die **NmsBroadLogMid** -Tabelle verwiesen. Das **nms:wideLogMid** -Schema wird zur Liste hinzugefügt, die von der vorherigen Abfrage wiederhergestellt wurde.
-1. Der Arbeitsablauf für die **Datenbankbereinigung** bereinigt dann veraltete Daten aus zuvor wiederhergestellten Tabellen. Die folgende Abfrage wird verwendet:
+1. Bei der Verwendung von Mid-Sourcing wird in der Tabelle **NmsBroadLogMid** nicht auf die Versand-Zuordnung verwiesen. Das Schema **nms:wideLogMid** wird der durch die vorherige Abfrage wiederhergestellten Liste hinzugefügt.
+1. Der Arbeitsablauf **Datenbankbereinigung** bereinigt dann veraltete Daten aus zuvor wiederhergestellten Tabellen. Die folgende Abfrage wird verwendet:
 
    ```
    DELETE FROM $(tableName) WHERE iBroadLogId IN (SELECT iBroadLogId FROM $(tableName) WHERE tsLastModified < $(option) LIMIT 5000) 
    ```
 
-   wobei **$(tableName)** der Name der einzelnen Tabellen in der Liste der Schema und **$(option)** das für die Option **NmsCleanup_BroadLogPurgeDelay** definierte Datum ist (siehe [Bereitstellungsassistent](#deployment-wizard)).
+   wobei **$(tableName)** der Tabellenname in der Liste der Schema und **$(option)** das für die Option **NmsCleanup_BroadLogPurgeDelay** definierte Datum ist (siehe [Bereitstellungsassistent](#deployment-wizard)).
 
-1. Schließlich prüft der Workflow, ob die Tabelle **NmsProviderMsgId** vorhanden ist. Wenn ja, werden alle veralteten Daten mit der folgenden Abfrage gelöscht:
+1. Der Workflow überprüft schließlich, ob die Tabelle **NmsProviderMsgId** vorhanden ist. Wenn ja, werden alle veralteten Daten mit der folgenden Abfrage gelöscht:
 
    ```
    DELETE FROM NmsProviderMsgId WHERE iBroadLogId IN (SELECT iBroadLogId FROM NmsProviderMsgId WHERE tsCreated < $(option) LIMIT 5000)
    ```
 
-   wobei **$(Option)** mit dem für die Option **NmsCleanup_BroadLogPurgeDelay** definierten Datum übereinstimmt (siehe [Bereitstellungsassistent](#deployment-wizard)).
+   wobei **$(option)** mit dem für die Option **NmsCleanup_BroadLogPurgeDelay** definierten Datum übereinstimmt (siehe [Bereitstellungsassistent](#deployment-wizard)).
 
 ### Bereinigen der NmsEmailErrorStat-Tabelle {#cleanup-of-the-nmsemailerrorstat-table-}
 
-Diese Aufgabe löscht die **Tabelle NmsEmailErrorStat** . Das wichtigste Programm (**coalesceErrors**) definiert zwei Daten:
+Diese Aufgabe löscht die **NmsEmailErrorStat**-Tabelle. Das Hauptdatum (**coalesceErrors**) definiert zwei Programm:
 
-* **Beginn**: Datum des nächsten Prozesses, der mit der Option **NmsLastErrorStatCoalesce** oder dem neuesten Datum in der Tabelle übereinstimmt.
+* **Beginn**: Datum des nächsten Prozesses, der mit der Option  **** NmsLastErrorStatColor oder dem neuesten Datum in der Tabelle übereinstimmt.
 * **Enddatum**: aktuelles Serverdatum.
 
-Wenn das Enddatum des Beginns größer oder gleich dem Enddatum ist, findet kein Prozess statt. In diesem Fall wird die **Meldung &quot;BildungUpToDate** &quot;angezeigt.
+Wenn das Enddatum des Beginns größer oder gleich dem Enddatum ist, findet kein Prozess statt. In diesem Fall wird die Meldung **coalesceUpToDate** angezeigt.
 
-Wenn das Enddatum des Beginns vor dem Enddatum liegt, wird die **NmsEmailErrorStat** -Tabelle bereinigt.
+Wenn das Enddatum des Beginns vor dem Enddatum liegt, wird die **NmsEmailErrorStat**-Tabelle bereinigt.
 
-Die Gesamtzahl der Fehler in der **NmsEmailErrorStat** -Tabelle zwischen Beginns- und Enddatum wird mithilfe der folgenden Abfrage wiederhergestellt:
+Die Gesamtzahl der Fehler in der Tabelle **NmsEmailErrorStat** zwischen dem Beginn- und dem Enddatum wird mithilfe der folgenden Abfrage wiederhergestellt:
 
 ```
 "SELECT COUNT(*) FROM NmsEmailErrorStat WHERE tsDate>= $(start) AND tsDate< $(end)"
 ```
 
-Dabei sind **$end** und **$Beginn** die zuvor definierten Beginns- und Enddaten.
+wobei **$end** und **$Beginn** die zuvor definierten Beginns- und Enddaten sind.
 
 Wenn die Summe größer als 0 ist:
 
@@ -509,7 +509,7 @@ Wenn die Summe größer als 0 ist:
    "DELETE FROM NmsEmailErrorStat WHERE tsDate>=$(start) AND tsDate<$(end)"
    ```
 
-1. Jeder Fehler wird mithilfe der folgenden Abfrage in der **Tabelle NmsEmailErrorStat** gespeichert:
+1. Jeder Fehler wird mithilfe der folgenden Abfrage in der Tabelle **NmsEmailErrorStat** gespeichert:
 
    ```
    "INSERT INTO NmsEmailErrorStat(iMXIP, iPublicId, tsDate, iTotalConnections, iTotalErrors, iTimeoutConnections, iRefusedConnections, iAbortedConnections, iFailedConnections, iMessageErrors) VALUES($(lmxip ), $(lpublicId ), $(tsstart ), $(lconnections ), $(lconnectionErrors ),$(ltimeoutConnections ), $(lrefusedConnections ), $(labortedConnections ), $(lfailedConnections ), $(lmessageErrors))"
@@ -517,13 +517,13 @@ Wenn die Summe größer als 0 ist:
 
    wobei jede Variable mit einem durch die vorherige Abfrage wiederhergestellten Wert übereinstimmt.
 
-1. Die Variable &quot; **Beginn** &quot;wird mit den Werten des vorherigen Prozesses aktualisiert, um die Schleife zu beenden.
+1. Die Variable **Beginn** wird mit den Werten des vorherigen Prozesses aktualisiert, um die Schleife zu beenden.
 
 Die Schleife und die Aufgabe halten an.
 
 Bereinigungen werden auf den Tabellen **NmsEmailError** und **cleanupNmsMxDomain** ausgeführt.
 
-### Bereinigen der NmsEmailError-Tabelle {#cleanup-of-the-nmsemailerror-table-}
+### Bereinigung der NmsEmailError-Tabelle {#cleanup-of-the-nmsemailerror-table-}
 
 Die folgende Abfrage wird verwendet:
 
@@ -531,9 +531,9 @@ Die folgende Abfrage wird verwendet:
 DELETE FROM NmsEmailError WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
-Diese Abfrage löscht alle Zeilen ohne verknüpfte Datensätze in der **NmsEmailErrorStat** -Tabelle **NmsEmailError** .
+Diese Abfrage löscht alle Zeilen ohne verknüpfte Datensätze in der **NmsEmailErrorStat**-Tabelle **NmsEmailError**.
 
-### Bereinigen der NmsMxDomain-Tabelle {#cleanup-of-the-nmsmxdomain-table-}
+### Bereinigung der NmsMxDomain-Tabelle {#cleanup-of-the-nmsmxdomain-table-}
 
 Die folgende Abfrage wird verwendet:
 
@@ -541,11 +541,11 @@ Die folgende Abfrage wird verwendet:
 DELETE FROM NmsMxDomain WHERE iMXIP NOT IN (SELECT DISTINCT iMXIP FROM NmsEmailErrorStat)
 ```
 
-Diese Abfrage löscht alle Zeilen ohne verknüpften Datensatz in der Tabelle **NmsEmailErrorStat** aus der Tabelle **NmsMxDomain** .
+Diese Abfrage löscht alle Zeilen ohne verknüpften Datensatz in der Tabelle **NmsEmailErrorStat** aus der Tabelle **NmsMxDomain**.
 
-### Bereinigung der Vorschläge {#cleanup-of-propositions}
+### Bereinigung von Vorschlägen {#cleanup-of-propositions}
 
-Wenn das **Interaktionsmodul** installiert ist, wird diese Aufgabe ausgeführt, um die **NmsPropositionXxx** -Tabellen zu bereinigen.
+Wenn das Modul **Interaktion** installiert ist, wird diese Aufgabe ausgeführt, um die Tabellen **NmsPropositionXxx** zu bereinigen.
 
 Die Liste der Propositionstabellen wird wiederhergestellt, und die Massenlöschung erfolgt auf jeder der folgenden Abfragen:
 
@@ -553,9 +553,9 @@ Die Liste der Propositionstabellen wird wiederhergestellt, und die Massenlöschu
 DELETE FROM NmsPropositionXxx WHERE iPropositionId IN (SELECT iPropositionId FROM NmsPropositionXxx WHERE tsLastModified < $(option) LIMIT 5000) 
 ```
 
-wobei **$(Option)** das für die Option **NmsCleanup_PropositionPurgeDelay** definierte Datum ist (siehe [Bereitstellungsassistent](#deployment-wizard)).
+wobei **$(option)** das für die Option **NmsCleanup_PropositionPurgeDelay** definierte Datum ist (siehe [Bereitstellungsassistent](#deployment-wizard)).
 
-### Bereinigen von Simulationen {#cleanup-of-simulation-tables}
+### Bereinigen von Simulationen-Tabellen {#cleanup-of-simulation-tables}
 
 Diese Aufgabe bereinigt verwaiste Simulationen (die nicht mehr mit einer Angebot-Simulation oder einer Versand-Simulation verknüpft sind).
 
@@ -565,7 +565,7 @@ Diese Aufgabe bereinigt verwaiste Simulationen (die nicht mehr mit einer Angebot
    SELECT iSimulationId FROM NmsSimulation WHERE iSimulationId<>0
    ```
 
-1. Der Name der zu löschenden Tabellen besteht aus dem **wkSimu_** -Präfix, gefolgt vom Bezeichner der Simulation (z. B.: **wkSimu_456831_aggr**):
+1. Der Name der zu löschenden Tabellen besteht aus dem Präfix **wkSimu_** gefolgt vom Bezeichner der Simulation (z. B.: **wkSimu_456831_aggr**):
 
    ```
    DROP TABLE wkSimu_456831_aggr
@@ -591,11 +591,11 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 Diese Abfrage löscht alle Einträge im Zusammenhang mit iOS und Android.
 
-### Aktualisierung und Datenspeicherung von Statistiken {#statistics-update}
+### Statistische Aktualisierung und Optimierung der Datenspeicherung {#statistics-update}
 
-Mit der **Option &quot;XtkCleanup_NoStats** &quot;können Sie das Verhalten des Datenspeicherung-Optimierungsschritts des Bereinigungs-Workflows steuern.
+Mit der Option **XtkCleanup_NoStats** können Sie das Verhalten des Datenspeicherung-Optimierungsschritts des Bereinigungs-Workflows steuern.
 
-Wenn die Option **XtkCleanup_NoStats** nicht vorhanden ist oder der Wert 0 ist, wird die Datenspeicherung-Optimierung im Ausführlichen Modus (VACUUM VERBOSE ANALYZE) auf PostgreSQL ausgeführt und die Statistik für alle anderen Datenbanken aktualisiert. Um sicherzustellen, dass dieser Befehl ausgeführt wird, überprüfen Sie die PostgreSQL-Protokolle. VACUUM gibt Zeilen im Format aus: `INFO: vacuuming "public.nmsactivecontact"` und ANALYZE gibt Zeilen im Format aus: `INFO: analyzing "public.nmsactivecontact"`.
+Wenn die Option **XtkCleanup_NoStats** nicht vorhanden ist oder der Wert 0 ist, wird die Datenspeicherung-Optimierung im ausführlichen Modus (VACUUM VERBOSE ANALYZE) auf PostgreSQL ausgeführt und die Statistik für alle anderen Datenbanken aktualisiert. Um sicherzustellen, dass dieser Befehl ausgeführt wird, überprüfen Sie die PostgreSQL-Protokolle. VACUUM gibt Zeilen im Format aus: `INFO: vacuuming "public.nmsactivecontact"` und ANALYZE geben Zeilen im Format aus: `INFO: analyzing "public.nmsactivecontact"`.
 
 Wenn der Wert der Option 1 ist, werden keine statistischen Aktualisierungen in einer Datenbank durchgeführt. Die folgende Protokollzeile wird in den Workflow-Protokollen angezeigt: `Option 'XtkCleanup_NoStats' is set to '1'`.
 
@@ -611,22 +611,22 @@ Zur Wiederherstellung der Liste von Broadlog-Schemas wird folgende Abfrage verwe
 SELECT distinct(sBroadLogSchema) FROM NmsDeliveryMapping WHERE sBroadLogSchema IS NOT NULL
 ```
 
-Die Aufgabe stellt dann die mit dem **appSubscription** -Link verknüpften Tabellennamen wieder her und löscht diese.
+Die Aufgabe stellt dann die mit dem Link **appSubscription** verknüpften Tabellennamen wieder her und löscht diese Tabellen.
 
 Dieser Bereinigungsarbeitsablauf löscht auch alle Einträge, bei denen deaktiviert = 1 ist und die seit dem in der Option **NmsCleanup_AppSubscriptionRcpPurgeDelay** festgelegten Zeitraum nicht aktualisiert wurden.
 
-### Sitzungsinformationen der Datenbereingung {#cleansing-session-information}
+### Informationen zur Datenbereingung-Sitzung {#cleansing-session-information}
 
-Diese Aufgabe löscht Informationen aus der **Tabelle sessionInfo** . Es wird folgende Abfrage verwendet:
+Diese Aufgabe löscht Informationen aus der **sessionInfo**-Tabelle. Es wird folgende Abfrage verwendet:
 
 ```
  DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
 ```
 
-### Datenbereingung abgelaufen Ereignis {#cleansing-expired-events}
+### Datenbereingung abgelaufene Ereignis {#cleansing-expired-events}
 
 Mit dieser Aufgabe werden die auf den Ausführungsinstanzen und auf einer Kontrollinstanz archivierten Ereignis gereinigt.
 
-### Datenbereingungen {#cleansing-reactions}
+### Datenbereingung Reaktionen {#cleansing-reactions}
 
-Diese Aufgabe bereinigt die Reaktionen (Tabelle **NmsRemaMatchRcp**), in denen die Hypothesen selbst gelöscht wurden.
+Diese Aufgabe löscht die Reaktionen (Tabelle **NmsRemaMatchRcp**), in denen die Hypothesen selbst gelöscht wurden.
