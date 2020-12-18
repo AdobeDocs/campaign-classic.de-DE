@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -23,17 +23,17 @@ Es gibt viele Adobe Campaign-Module. Einige werden kontinuierlich ausgeführt, w
 
 Es gibt drei Typen von Adobe Campaign-Modulen:
 
-* Module mit mehreren Instanzen: für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **web**, **syslogd**, **trackinglogd** und **watchdog** (Aktivitäten aus der Datei **config-default.xml** ).
-* Instanzmodule: pro Instanz ein Prozess ausgeführt wird. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Aktivitäten aus der **`<instance>`** Datei &quot;config-.xml&quot;).
-* Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge durchzuführen (**Bereinigung**, **Konfiguration**, Herunterladen von Trackinglogs usw.).
+* Module mit mehreren Instanzen: für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **web**, **syslogd**, **trackinglogd** und **watchdog** (Aktivitäten aus der Datei **config-default.xml**).
+* Instanzmodule: pro Instanz ein Prozess ausgeführt wird. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Aktivitäten aus der **config-`<instance>`.xml**-Datei ).
+* Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge auszuführen (**Bereinigung**, **config**, Herunterladen von Trackinglogs usw.).
 
-Die Modulverwaltung wird mithilfe des Befehlszeilenwerkzeugs nlserver **durchgeführt, der im Ordner &quot;** bin **** &quot;des Installationsordners installiert ist.
+Die Modulverwaltung wird mithilfe des Befehlszeilenwerkzeugs **nlserver** durchgeführt, das im Ordner **bin** des Installationsordners installiert ist.
 
-Die allgemeine Syntax des **nlserver** -Tools lautet wie folgt:
+Die allgemeine Syntax des Tools **nlserver** lautet wie folgt:
 
-**nlserver `<command>``<command arguments>`**
+**nlserver  `<command>``<command arguments>`**
 
-Für die Liste der verfügbaren Module verwenden Sie den **Befehl nlserver** .
+Verwenden Sie für die Liste der verfügbaren Module den Befehl **nlserver**.
 
 Die verfügbaren Module sind in der folgenden Tabelle aufgeführt:
 
@@ -62,9 +62,9 @@ Die verfügbaren Module sind in der folgenden Tabelle aufgeführt:
 | runwf | Ausführung einer Workflow-Instanz |
 | shutdown | Vollständiger Systemausfall |
 | sms | Verarbeitung von SMS-Benachrichtigungen |
-| sql | SQL-Skriptausführung |
+| sql | Ausführung von SQL-Scripts |
 | start | Zusätzliche Beginn |
-| stat | Pflege der MTA-Verbindungsstatistiken |
+| stat | Führt Statistiken über MTA-Verbindungen |
 | stop | Teilweise Systemabschaltung |
 | submitda | Übermitteln einer Versand-Aktion |
 | syslogd | Schreibserver protokollieren und verfolgen |
