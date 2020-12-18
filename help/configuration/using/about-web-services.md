@@ -25,8 +25,8 @@ Adobe Campaign-APIs werden in JavaScript innerhalb der Anwendung und in SOAP au�
 
 >[!IMPORTANT]
 >
->Die Anzahl der autorisierten Engine-Aufrufe pro Tag h채ngt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
->Eine Liste aller APIs mit ihrer vollst채ndigen Beschreibung finden Sie in [dieser speziellen Dokumentation](https://docs.adobe.com/content/help/de/campaign-classic/technicalresources/api/index.html).
+>Die Anzahl der autorisierten Engine-Aufrufe pro Tag h채ngt von Ihrem Lizenzvertrag ab. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://helpx.adobe.com/de/legal/product-descriptions/adobe-campaign-classic---product-description.html).\
+>Eine Liste aller APIs mit ihrer vollst채ndigen Beschreibung finden Sie in [dieser speziellen Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -117,7 +117,7 @@ In SOAP werden die Parameter in der Reihenfolge ihres Erscheinungsbilds erkannt.
 
 Das Ergebnis der Abfrage wird aus dem Element `<pdomoutput>` eingegeben.
 
-## Umgang mit Fehlern     {#error-management}
+## Umgang mit Fehlern        {#error-management}
 
 Beispiel f체r SOAP-Fehlerantwort:
 
