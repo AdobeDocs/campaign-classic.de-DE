@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Zusätzliche Parameter{#additional-parameters}
 
-## Definition von Parametern {#definition-of-parameters}
+## Definition der Parameter {#definition-of-parameters}
 
 Ihre Adobe Campaign-Plattform Angebot standardmäßig zwei TRANSACTION-artige Web-Tracking-Parameter:
 
@@ -44,7 +44,7 @@ Um weitere Parameter zu definieren, müssen Sie dieses Schema erweitern.
 
 Sie können die Werte dieser Parameter anzeigen, indem Sie die Verfolgungsprotokoll-Liste (eines Versands oder Empfängers) konfigurieren.
 
-## Serverkonfiguration umleiten {#redirection-server-configuration}
+## Umleitungs-Serverkonfiguration {#redirection-server-configuration}
 
 In der Serverkonfiguration können Sie die maximale Anzahl von Zeichen festlegen, die für Ihre Webverfolgungsparameter berücksichtigt werden sollen.
 
@@ -52,11 +52,11 @@ In der Serverkonfiguration können Sie die maximale Anzahl von Zeichen festlegen
 >
 >Die Erhöhung der maximal zu berücksichtigenden Zeichenanzahl kann sich auf die Webverfolgungsleistung Ihrer Plattform auswirken.
 
-Ändern Sie dazu das Attribut **webTrackingParamSize** des **`<trackinglogd>`** Elements in der Datei &quot; **serverConf.xml** &quot;. Diese Datei wird im **conf** -Unterverzeichnis des Installationsordners des Adobe Campaigns gespeichert.
+Ändern Sie dazu das Attribut **webTrackingParamSize** des Elements **`<trackinglogd>`** in der Datei **serverConf.xml**. Diese Datei wird im Unterverzeichnis **conf** des Installationsordners des Adobe Campaigns gespeichert.
 
 **Beispiel**:
 
-Der Standardwert ist 64 Zeichen. Mit diesem Wert können Sie die Standardparameter **für Betrag** und **Artikel** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxx&quot;) berücksichtigen.
+Der Standardwert ist 64 Zeichen. Mit diesem Wert können Sie die Standardparameter **amount** und **article** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxxxx&quot;) berücksichtigen.
 
 Unter Berücksichtigung der beiden im obigen Erweiterungsschema angegebenen Parameter (Größe und Größe des Namens) können Sie die Konfiguration ändern, um 100 Zeichen zu berücksichtigen (&quot;Betrag=xxxxxxxx&amp;article=xxxxxxxxxx&amp;mode=xxxxxxxxxxxx&amp;code=xxxxxxx&quot;).
 
@@ -74,9 +74,9 @@ Nach der Änderung der Konfiguration müssen Sie:
 
    >[!NOTE]
    >
-   >Starting 20.1, we recommend using the following command instead (for Linux): **systemctl stop nlserver**
+   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
 
-* Löschen Sie unter Linux die freigegebenen Speichersegmente mit dem **Befehl ipcrm** ,
+* Löschen Sie unter Linux die freigegebenen Speichersegmente mit dem Befehl **ipcrm**,
 * Starten Sie den Adobe Campaign-Server neu: **net Beginn nlserver6** in Windows, **/etc/init.d/nlserver6 Beginn** in Linux,
 
    >[!NOTE]
