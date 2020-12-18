@@ -21,15 +21,15 @@ ht-degree: 3%
 
 In diesem Abschnitt werden die Schritte für die Vorkonfiguration beschrieben, die vor der Installation von Adobe Campaign erforderlich sind.
 
-Die für die Installation von Adobe Campaign erforderliche technische und Softwarekonfiguration ist in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md)beschrieben.
+Die für die Installation des Adobe Campaigns erforderliche technische und Softwarekonfiguration ist in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) beschrieben.
 
 Zur Erinnerung: Die folgenden Komponenten müssen installiert und korrekt konfiguriert sein:
 
 * Apache, siehe [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md),
 * Java JDK und OpenJDK, siehe [Java Development Kit - JDK](../../installation/using/application-server.md#java-development-kit---jdk),
 * Bibliotheken, siehe [Bibliotheken](#libraries),
-* Ebenen für den Datenbankzugriff, siehe Ebenen für den [Datenbankzugriff](#database-access-layers),
-* LibreOffice, siehe [Installing LibreOffice for Debian](#installing-libreoffice-for-debian) and [Installing LibreOffice for CentOS](#installing-libreoffice-for-centos),
+* Ebenen für den Datenbankzugriff, siehe [Ebenen für den Datenbankzugriff](#database-access-layers),
+* LibreOffice, siehe [Installing LibreOffice for Debian](#installing-libreoffice-for-debian) und [Installing LibreOffice for CentOS](#installing-libreoffice-for-centos),
 * Schriftarten finden Sie unter [Schriftarten für MTA-Statistiken](#fonts-for-mta-statistics) und [Schriftarten für japanische Instanzen](#fonts-for-japanese-instances).
 
 >[!NOTE]
@@ -42,17 +42,17 @@ Um Adobe Campaign unter Linux zu installieren, stellen Sie bitte sicher, dass Si
 
 * Bibliothek C muss den TLS-Modus (Thread Local Datenspeicherung) unterstützen können. Dieser Modus ist in den meisten Fällen aktiv, außer bei einigen Kerneln, für die die Xen-Unterstützung deaktiviert wurde.
 
-   Um dies zu überprüfen, können Sie den **unamen -a | grep xen** Befehl zum Beispiel.
+   Um dies zu überprüfen, können Sie den Befehl **uname -a | grep xen** Befehl, z. B.
 
    Wenn der Befehl nichts zurückgibt (leere Zeile), bedeutet dies, dass die Konfiguration korrekt ist.
 
-* Sie müssen über die **Version 0.9.8** oder **1.0** von OpenSSL verfügen.
+* Sie müssen über **Version 0.9.8** oder **1.0** von OpenSSL verfügen.
 
    Für RHEL 7-Distributionen ist Version 1.0 von OpenSSL erforderlich.
 
-* Um Adobe Campaign zu verwenden, müssen Sie die **libicu** -Bibliothek installieren.
+* Zur Verwendung von Adobe Campaign müssen Sie die Bibliothek **libicu** installiert haben.
 
-   Die folgenden Versionen von **libicu** werden unterstützt (32 Bit oder 64 Bit):
+   Die folgenden Versionen von **libicu** werden unterstützt (32bit oder 64bit):
 
    * RHEL 7, CentOS 7: libicu50
    * Debian 8: libicu52
@@ -90,7 +90,7 @@ In RHEL und CentOS wurden Kompatibilitätsprobleme mit den Client-Ebenen von Dat
 
 **Wenden Sie den folgenden Vorgang an:**
 
-* Datei bearbeiten **/etc/selinux/config**
+* Bearbeiten Sie die Datei **/etc/selinux/config**
 
 * Ändern Sie die SELINUX-Zeile wie folgt:
 
@@ -162,19 +162,19 @@ Die folgenden Konfigurationen sind mit CentOS erforderlich:
    yum install ipa-gothic-fonts ipa-mincho-fonts
    ```
 
-## Ebenen für den Datenbankzugriff {#database-access-layers}
+## Datenbankzugriffsebenen {#database-access-layers}
 
 Die Zugriffsebenen für die verwendete Datenbank-Engine müssen auf Ihrem Server installiert sein und über das Adobe Campaign-Konto zugänglich sein. Versionen und Installationsmodi können je nach verwendeter Datenbank-Engine variieren.
 
 Die unterstützte Pilotversion wird in [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) erläutert.
 
-Überprüfen Sie auch den Abschnitt &quot;Allgemeine [Datenbank](../../installation/using/database.md) &quot;.
+Überprüfen Sie auch den Abschnitt Allgemein [Datenbank](../../installation/using/database.md).
 
 ### PostgreSQL {#postgresql}
 
 Adobe Campaign unterstützt alle Versionen der PostgreSQL-Clientbibliotheken ab Version 7.2: (**libpq.so.5**, **libpq.so.4**, **libpq.so.3.2** und **libpq.so.3.1**).
 
-Die Verwendung von PostgreSQL mit Adobe Campaign erfordert auch die Installation der entsprechenden **pgcrypto** -Bibliotheken.
+Für die Verwendung von PostgreSQL mit Adobe Campaign müssen auch die entsprechenden Bibliotheken **pgcrypto** installiert werden.
 
 ### Oracle {#oracle}
 
@@ -184,7 +184,7 @@ Sie können ein Linux RPM-Paket vom Oracle Technology Network beziehen.
 
 >[!NOTE]
 >
->Wenn Sie den Oracle-Client bereits installiert haben, jedoch die globale Umgebung (z. B.: /etc/Profil) nicht richtig konfiguriert ist, können Sie fehlende Informationen zum **nl6/customer.sh** -Skript hinzufügen. Weitere Informationen finden Sie unter [Umgebung](../../installation/using/installing-packages-with-linux.md#environment-variables).
+>Wenn Sie den Oracle-Client bereits installiert haben, jedoch die globale Umgebung (z. B.: /etc/Profil) nicht richtig konfiguriert ist, können Sie fehlende Informationen zum Skript **nl6/customer.sh** hinzufügen. Weitere Informationen finden Sie unter [Umgebung &lt; a3/>.](../../installation/using/installing-packages-with-linux.md#environment-variables)
 
 **Fehlerbehebung und Best Practices**
 
@@ -192,17 +192,17 @@ Probleme können nach einem Oracle-Client oder einem Server-Update, einer Versio
 
 Wenn Sie in der Client-Konsole feststellen, dass die Protokolle unerwartete Zeitverzögerungen (eine oder mehrere Stunden) aufweisen, der Workflow zuletzt verarbeitet wird, die nächste Verarbeitung usw., kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
 
-1. Achten Sie darauf, den **vollständigen Client** zu verwenden.
+1. Stellen Sie sicher, dass Sie den **vollständigen Client** verwenden.
 
    Bei der Verwendung der Oracle Instant Client-Version wurden verschiedene Probleme festgestellt. Darüber hinaus ist es nicht möglich, die Zeitzonendatei auf einem Instant-Client zu ändern.
 
-1. Vergewissern Sie sich, dass die **Clientversion** und die **Datenbankserverversion** **identisch** sind.
+1. Stellen Sie sicher, dass die **Clientversion** und die **Datenbankserverversion** die **gleiche** sind.
 
    Das Mischen von Versionen trotz der Kompatibilitätsmatrix und der Empfehlung von Oracle, Client- und Serverversionen auszurichten, verursacht bekanntermaßen Probleme.
 
    Überprüfen Sie auch den Wert &quot;ORACLE_HOME&quot;, um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
 
-1. Stellen Sie sicher, dass Client und Server dieselbe **Zeitzonendatei** verwenden.
+1. Stellen Sie sicher, dass Client und Server dieselbe **timezone-Datei** verwenden.
 
 ### DB2 {#db2}
 
@@ -217,4 +217,4 @@ Der Installationsprozess wird in diesem Kapitel beschrieben. Die Installationssc
 * Schritt 1: Informationen zum Installieren des Anwendungsservers finden Sie unter [Installieren von Paketen mit Linux](../../installation/using/installing-packages-with-linux.md).
 * Schritt 2: Integration mit einem Webserver (optional, je nach bereitgestellter Komponenten).
 
-Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. For more on this, refer to [About initial configuration](../../installation/using/about-initial-configuration.md).
+Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen finden Sie unter [Informationen zur Erstkonfiguration](../../installation/using/about-initial-configuration.md).
