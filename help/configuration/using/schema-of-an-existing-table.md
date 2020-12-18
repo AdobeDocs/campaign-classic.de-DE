@@ -31,8 +31,8 @@ Wenn die Anwendung auf die Daten einer vorhandenen Tabelle, einer SQL-Ansicht od
 
 Um das entsprechende Schema zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration>Configuration>Data Schemas]** im Adobe Campaign und klicken Sie auf **[!UICONTROL New]** .
-1. Wählen Sie die Option **[!UICONTROL Zugriff auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** und klicken Sie auf **[!UICONTROL Weiter]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration>Configuration>Data Schemas]** der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
+1. Wählen Sie die Option **[!UICONTROL Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -44,7 +44,7 @@ Um das entsprechende Schema zu erstellen, führen Sie die folgenden Schritte aus
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Das Schema muss mit dem Attribut &quot;Ansicht=&quot;true&quot;im Stammelement gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert wird. `<srcSchema>`
+   Das Schema muss mit dem Attribut &quot;Ansicht=&quot;true&quot;im Stammelement `<srcSchema>` gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert wird.
 
 **Beispiel** :
 
@@ -61,6 +61,6 @@ Um das entsprechende Schema zu erstellen, führen Sie die folgenden Schritte aus
 
 ## Zugriff auf externe Datenbanken {#accessing-an-external-database}
 
-Mit der Option **Federated Data Access - FDA** haben Sie Zugriff auf die in einer externen Datenbank gespeicherten Daten.
+Mit der Option **Federated Data Access - FDA** können Sie auf die in einer externen Datenbank gespeicherten Daten zugreifen.
 
-Die Konfiguration, die auf den Schemas für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, ist auf [dieser Seite](../../installation/using/creating-data-schema.md)ausführlich beschrieben.
+Die Konfiguration, die auf den Schemas für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, ist in [dieser Seite](../../installation/using/creating-data-schema.md) beschrieben.
