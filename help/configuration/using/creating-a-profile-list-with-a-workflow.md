@@ -17,7 +17,7 @@ ht-degree: 13%
 
 # Erstellen einer Profilliste mit einem Workflow{#creating-a-profile-list-with-a-workflow}
 
-Um eine Liste des Typs &quot; **[!UICONTROL Liste]** &quot;basierend auf der neuen Empfänger-Tabelle zu erstellen, müssen Sie einen Targeting-Arbeitsablauf erstellen, der die Liste generiert.
+Um eine Liste des Typs **[!UICONTROL Liste]** basierend auf der neuen Empfänger-Tabelle zu erstellen, müssen Sie einen Targeting-Arbeitsablauf erstellen, der die Liste generiert.
 
 Weitere Informationen zu Listen in der Kampagne finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
@@ -27,21 +27,21 @@ Gehen Sie wie folgt vor, um einen Targeting-Arbeitsablauf zu erstellen und Empf�
 
 1. Wechseln Sie zum Knoten **[!UICONTROL Profile und Zielgruppen > Aufträge > Targeting Workflows]** des Explorers.
 1. Erstellen Sie einen neuen Zielgruppen-Workflow.
-1. Platzieren Sie eine **Abfrage** -Aktivität gefolgt von einer **Liste-Update** -Aktivität.
+1. Platzieren Sie eine **Abfrage**-Aktivität gefolgt von einer **Liste-Aktualisierung**-Aktivität.
 
    ![](assets/mapping_create_list_workflow01.png)
 
-1. Klicken Sie bei Dublette auf die Aktivität **Abfrage** und dann auf Abfrage **** bearbeiten, um eine Zielgruppendimension auf Grundlage des Schemas der neuen Empfänger-Tabelle auszuwählen (in unserem Beispiel: **Individuell**). Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
+1. Dublette-klicken Sie auf die Aktivität **Abfrage** und klicken Sie dann auf **[!UICONTROL Bearbeiten Sie die Abfrage]**, um eine Zielgruppendimension basierend auf dem Schema der Tabelle des neuen Empfängers auszuwählen (in unserem Beispiel: **Individual**). Klicken Sie zur Bestätigung auf **[!UICONTROL Beenden]**.
 
    ![](assets/mapping_create_list_workflow03.png)
 
-1. Klicken Sie mit der Dublette auf die Aktivität zum Aktualisieren **der** Liste und wählen Sie dann bei Bedarf das Optionsfeld Liste **[!UICONTROL erstellen (Berechneter Name)]** .
+1. Klicken Sie bei gedrückter Dublette auf die Aktivität **Liste-Update** und wählen Sie dann ggf. das Optionsfeld **[!UICONTROL Liste erstellen (Berechneter Name)]**.
 
    ![](assets/mapping_create_list_workflow02.png)
 
 1. Wählen Sie den Erstellungsordner für die neue Liste aus.
 1. Führen Sie den Workflow aus, um die Liste zu erstellen.
-1. Ansicht des Ergebnisses in dem Knoten der Struktur, den Sie während der Aktivität zur Aktualisierung der **[!UICONTROL Liste]** ausgewählt haben.
+1. Ansicht des Ergebnisses in dem Knoten der Struktur, den Sie während der **[!UICONTROL Liste-Aktualisierung]**-Aktivität ausgewählt haben.
 
    Das Dashboard gibt das Schema an, auf dem die Liste basiert, wie nachfolgend gezeigt:
 
