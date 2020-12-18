@@ -23,7 +23,7 @@ Wenn Fehlermeldungen wie die folgenden angezeigt werden (insbesondere in Versand
 
 Die Ursache lautet:
 
-Adobe Campaign generiert temporäre Dateien unter **/tmp** und benennt sie dann um, um sie in **/usr/local/neolane/nl6/var** zu verschieben. Dieser Fehler tritt auf, wenn beide Ordner (**/tmp** und **/usr/local/neolane/nl6/var**, die eigentlich eine symbolische Verknüpfung zu **/var/nl6** ist) unterschiedlichen Geräten entsprechen. Der **Befehl &quot;df** &quot;wird zur Überprüfung verwendet.
+Adobe Campaign generiert temporäre Dateien unter **/tmp** und benennt sie dann um, um sie in **/usr/local/neolane/nl6/var** zu verschieben. Dieser Fehler tritt auf, wenn beide Ordner (**/tmp** und **/usr/local/neolane/nl6/var**, die in Wirklichkeit eine symbolische Verknüpfung zu **/var/nl6** ist, unterschiedlichen Geräten entsprechen. Der Befehl **df** wird zur Überprüfung verwendet.
 
 Um dieses Problem zu beheben, müssen die temporären Dateien auf demselben Gerät wie das Ziel generiert werden. Beispielsweise durch Ausführung:
 
