@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Bearbeitung{#edition}
 
-Auf den Bildschirm zum Erstellen und Konfigurieren der Konfigurationshierarchie-Dokumente kann über den Knoten **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** zugegriffen werden:
+Der Bildschirm zum Erstellen und Konfigurieren der Konfigurationshierarchie-Dokumente ist über den Knoten **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** verfügbar:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
@@ -29,7 +29,7 @@ Das Bearbeitungsfeld enthält den Inhalt des XML-Dokuments:
 
 >[!NOTE]
 >
->Mit dem Bearbeitungssteuerelement &quot;Name&quot;können Sie den Dokument-Schlüssel eingeben, der aus Name und Namensraum besteht. Die Attribute &quot;name&quot;und &quot;Namensraum&quot;des **`<navtree>`** Elements werden automatisch im XML-Bearbeitungsfeld des Schemas aktualisiert.
+>Mit dem Bearbeitungssteuerelement &quot;Name&quot;können Sie den Dokument-Schlüssel eingeben, der aus Name und Namensraum besteht. Die Attribute &quot;name&quot;und &quot;Namensraum&quot;des Elements **`<navtree>`** werden automatisch im XML-Bearbeitungsfeld des Schemas aktualisiert.
 
 Die Vorschau generiert automatisch das zusammengeführte Dokument mit der vollständigen Konfiguration:
 
