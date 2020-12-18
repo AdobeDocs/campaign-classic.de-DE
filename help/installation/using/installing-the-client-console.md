@@ -10,24 +10,24 @@ translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
 workflow-type: tm+mt
 source-wordcount: '505'
-ht-degree: 13%
+ht-degree: 16%
 
 ---
 
 
-# Installieren der Kampagne Client Console{#installing-the-client-console}
+# Installieren der Client-Konsole der Kampagne{#installing-the-client-console}
 
 Die Clientkonsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. 
 
-Bevor Sie beginnen, müssen Sie die [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)der Kampagne überprüfen, die URL des Kampagne-Servers und die Benutzerdaten abrufen.
+Bevor Sie beginnen, müssen Sie die Kampagne [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) überprüfen, um Ihre Kampagnen-Server-URL und Ihre Benutzeranmeldeinformationen abzurufen.
 
 >[!CAUTION]
 >
 >Kampagne Client-Konsole und Anwendungsserver der Kampagne müssen mit derselben Produktversion ausgeführt werden. Adobe empfiehlt auch, denselben Produktaufbau zu verwenden.
 
-![](assets/do-not-localize/how-to-video.png) Erfahren Sie, wie Sie den Adobe Campaign-Client in [Video installieren und einrichten](#video)
+![](assets/do-not-localize/how-to-video.png) Erfahren Sie, wie Sie den Adobe Campaign-Client in  [Video installieren und einrichten](#video)
 
-## Konsole herunterladen{#download-the-client-console}
+## Laden Sie die Konsole herunter.{#download-the-client-console}
 
 Gehen Sie wie folgt vor, um die Adobe Campaign-Client-Konsole herunterzuladen und zu installieren:
 
@@ -41,35 +41,35 @@ Gehen Sie wie folgt vor, um die Adobe Campaign-Client-Konsole herunterzuladen un
 
    Verwenden Sie bei Bedarf die Anmeldeinformationen des beim Erstellen der Instanz definierten internen Kontos.
 
-1. Klicken Sie auf der Installationsseite auf den Link **[!UICONTROL Herunterladen]** .
+1. Klicken Sie auf der Installationsseite auf den Link **[!UICONTROL Download]**.
 1. Laden Sie die Client-Setupdatei herunter und speichern Sie sie.
 1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation wird Beginn. Der Standardinstallationspfad der Client-Konsole ist **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;entsprechend Ihrer Adobe Campaign-Version &quot;6&quot;oder &quot;7&quot;ist.
 
 >[!NOTE]
 >
->Unter Windows können Sie die Datei &quot; **nlclient.exe** &quot;direkt aus dem `[INSTALL]/bin` Ordner auf einem Windows-Server starten, wobei `[INSTALL]` der Zugriffspfad für den Installationsordner des Adobe Campaigns angegeben ist.
+>Unter Windows können Sie die Datei **nlclient.exe** direkt aus dem Ordner `[INSTALL]/bin` auf einem Windows-Server starten, wobei `[INSTALL]` der Zugriffspfad für den Installationsordner des Adobe Campaigns ist.
 
-## Verbindung erstellen{#create-the-connection}
+## Erstellen Sie die Verbindung{#create-the-connection}
 
 Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungsserver herzustellen:
 
-1. Beginn der Konsole über das Menü &quot;Windows- **[!UICONTROL Beginn]** &quot;in der Gruppe &quot; **Adobe Campaign** -Programm&quot;.
+1. Beginn Sie die Konsole aus dem Menü Windows **[!UICONTROL Beginn]** in der Programm-Gruppe **Adobe Campaign**.
 
 1. Klicken Sie auf den Link in der oberen rechten Ecke der Felder mit den Anmeldeinformationen, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
    ![](assets/s_ncs_install_define_connection_01.png)
 
-1. Klicken Sie auf **[!UICONTROL Hinzufügen > Verbindung]** und geben Sie die Bezeichnung und die URL des Adobe Campaign-Anwendungsservers ein.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen > Verbindung]** und geben Sie die Bezeichnung und URL des Adobe Campaign-Anwendungsservers ein.
 
    ![](assets/s_ncs_install_define_connection_02.png)
 
 1. Geben Sie über eine URL eine Verbindung zum Adobe Campaign-Anwendungsserver an. Verwenden Sie entweder ein DNS oder einen Alias des Computers oder Ihre IP-Adresse.
 
-   Sie können beispielsweise die URL des [`https://<machine>.<domain>.com`](https://myserver.adobe.com) Typs verwenden.
+   Sie können beispielsweise die URL [`https://<machine>.<domain>.com`](https://myserver.adobe.com) eingeben.
 
-1. Wenn Adobe IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option Mit Adobe ID **[!UICONTROL verbinden]**
+1. Wenn Adobe-IMS für Ihr Unternehmen konfiguriert ist, aktivieren Sie die Option **[!UICONTROL Verbindung mit einem Adobe ID]**
 
-1. Klicken Sie auf **[!UICONTROL OK]** , um Ihre Einstellungen zu speichern.
+1. Klicken Sie auf **[!UICONTROL OK]**, um Ihre Einstellungen zu speichern.
 
 Sie können z. B. so viele Verbindungen wie erforderlich hinzufügen, um eine Verbindung zu Ihren Test-, Stage- und Produktionsfunktionen herzustellen.
 
@@ -81,7 +81,7 @@ Sie können z. B. so viele Verbindungen wie erforderlich hinzufügen, um eine Ve
 
 Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
-1. Beginn der Konsole über das Menü &quot;Windows- **[!UICONTROL Beginn]** &quot;in der Gruppe &quot; **Adobe Campaign** -Programm&quot;.
+1. Beginn Sie die Konsole aus dem Menü Windows **[!UICONTROL Beginn]** in der Programm-Gruppe **Adobe Campaign**.
 
 1. Klicken Sie auf den Link in der oberen rechten Ecke der Felder mit den Anmeldeinformationen, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
@@ -94,12 +94,12 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 **Verwandte Themen**
 
 * [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
-* [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
+* [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-## Tutorial-Video
+## Anleitungsvideo
 
 In diesem Video wird gezeigt, wie der Adobe Campaign-Client installiert und eingerichtet wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35124?quality=12)
 
-Weitere Anleitungen zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html).
+Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
