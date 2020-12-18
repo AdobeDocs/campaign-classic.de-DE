@@ -33,11 +33,11 @@ XML-Dokumente werden in den Feldern des MEMO-Typs der Datenbank gespeichert.
 
 Sie müssen mit dem Adobe Campaign-Datenmodell vertraut sein, um die Datenbankfelder in Ihren Skripten bearbeiten zu können.
 
-Eine Darstellung des Datenmodells finden Sie in der Beschreibung des [Adobe Campaign-Datenmodells](../../configuration/using/data-model-description.md).
+Eine Darstellung des Datenmodells finden Sie unter [Beschreibung des Adobe Campaign-Datenmodells](../../configuration/using/data-model-description.md).
 
-Informationen zum Generieren der Struktur finden Sie in diesem Artikel: [Generieren eines Datenmodells oder eines Datenwörterbuchs](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
+Informationen zum Generieren der Struktur finden Sie in diesem Artikel: [So generieren Sie ein Datenmodell oder ein Datenwörterbuch](https://helpx.adobe.com/campaign/kb/generate-data-model.html).
 
-## Abfrage und Schriftsteller {#query-and-writer}
+## Abfrage und Autor {#query-and-writer}
 
 Im folgenden Einführungs-Schema wird beschrieben, wie auf niedriger Ebene zwischen Datenbank und Kunden (Webseiten oder Adobe Campaign-Client-Konsole) zum Lesen (ExecuteQuery) und Schreiben (Writer) gewechselt wird.
 
@@ -49,19 +49,19 @@ Für Spalten und Bedingungen können Sie Abfragen verwenden.
 
 Dadurch können Sie die zugrunde liegende SQL isolieren. Die Sprache der Abfrage hängt nicht von der zugrunde liegenden Engine ab: Einige Funktionen werden neu zugeordnet, was mehrere SELECT SQL-Bestellungen generieren kann.
 
-Weitere Informationen dazu finden Sie unter [Beispiel zur Methode &#39;ExecuteQuery&#39; des Schemas &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
+Weitere Informationen hierzu finden Sie unter [Beispiel zur Methode &#39;ExecuteQuery&#39; des Schemas &#39;xtk:queryDef&#39;](../../configuration/using/web-service-calls.md#example-on-the--executequery--method-of-schema--xtk-querydef-).
 
-Die **ExecuteQuery** -Methode wird in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-)dargestellt.
+Die **ExecuteQuery**-Methode wird in [ExecuteQuery (xtk:queryDef)](#executequery--xtk-querydef-) dargestellt.
 
-### schreiben {#write}
+### Schreiben {#write}
 
 Mit Schreibbefehlen können Sie einfache oder komplexe Dokumente mit Einträgen in einer oder mehreren Tabellen der Basis schreiben.
 
-Mit Transaktions-APIs können Sie Abversationen über den Befehl **updateOrInsert** verwalten: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung (**Zusammenführen**) konfigurieren: In diesem Betriebsmodus können Sie Teilaktualisierungen autorisieren.
+Mit Transaktions-APIs können Sie Aussöhnungen über den Befehl **updateOrInsert** verwalten: Mit einem Befehl können Sie Daten erstellen oder aktualisieren. Sie können auch die Änderungszusammenführung (**merge**) konfigurieren: In diesem Betriebsmodus können Sie Teilaktualisierungen autorisieren.
 
 Die XML-Struktur Angebot eine logische Ansicht der Daten und ermöglicht es Ihnen, die physische Struktur der SQL-Tabelle zu umgehen.
 
-Die Write-Methode wird in [Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-)dargestellt.
+Die Write-Methode wird in [Write / WriteCollection (xtk:session)](#write---writecollection--xtk-session-) dargestellt.
 
 ## ExecuteQuery (xtk:queryDef) {#executequery--xtk-querydef-}
 
@@ -81,7 +81,7 @@ Definition der Methode &quot;ExecuteQuery&quot;im Schema &quot;xtk:queryDef&quot
 >
 >Dies ist eine &quot;const&quot;-Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des Schemas &quot;xtk:queryDef&quot;enthalten.
 
-### Format des XML-Dokuments der Eingabe-Abfrage {#format-of-the-xml-document-of-the-input-query}
+### Format des XML-Dokuments der Abfrage {#format-of-the-xml-document-of-the-input-query}
 
 Die Struktur des XML-Dokuments der Abfrage wird im Schema &quot;xtk:queryDef&quot;beschrieben. In diesem Dokument werden die Klauseln einer SQL-Abfrage beschrieben: &quot;select&quot;, &quot;where&quot;, &quot;order by&quot;, &quot;group by&quot;, &quot;having&quot;.
 
@@ -115,9 +115,9 @@ Die Struktur des XML-Dokuments der Abfrage wird im Schema &quot;xtk:queryDef&quo
 </queryDef>
 ```
 
-Eine Unter-Abfrage ( `<subquery>` ) kann in einem `<condition> ` Element definiert werden. Die Syntax für ein `<subquery> ` Element basiert auf der Syntax eines `<querydef>`.
+Eine Unter-Abfrage ( `<subquery>`) kann in einem `<condition> `-Element definiert werden. Die Syntax für eine   `<subquery> `   -Element auf der Syntax eines    `<querydef>`.
 
-Example of a `<subquery>  : </subquery>`
+Beispiel eines `<subquery>  : </subquery>`
 
 ```
 <condition setOperator="NOT IN" expr="@id" enabledIf="$(/ignored/@ownerType)=1">
@@ -133,16 +133,16 @@ Example of a `<subquery>  : </subquery>`
   
 ```
 
-Eine Abfrage muss auf ein Beginn-Schema aus dem **Schema** -Attribut verweisen.
+Eine Abfrage muss auf ein Beginn-Schema aus dem **Schema**-Attribut verweisen.
 
-Der gewünschte Vorgangstyp wird in das **operation** -Attribut eingegeben und enthält einen der folgenden Werte:
+Der gewünschte Vorgangstyp wird im Attribut **operation** eingegeben und enthält einen der folgenden Werte:
 
 * **get**: ruft einen Datensatz aus der Tabelle ab und gibt einen Fehler zurück, wenn die Daten nicht vorhanden sind,
 * **getIfExists**: ruft einen Datensatz aus der Tabelle ab und gibt ein leeres Dokument zurück, wenn die Daten nicht vorhanden sind.
 * **auswählen**: einen Cursor erstellt, um mehrere Datensätze zurückzugeben, und ein leeres Dokument zurückgibt, wenn keine Daten vorhanden sind,
 * **Anzahl**: gibt eine Datenanzahl zurück.
 
-Die **XPath** -Syntax wird verwendet, um Daten basierend auf dem Eingabe-Schema zu suchen. Weitere Informationen zu XPaths finden Sie unter [Data Schemas](../../configuration/using/data-schemas.md).
+Die **XPath**-Syntax wird verwendet, um Daten basierend auf dem Eingabe-Schema zu suchen. Weitere Informationen zu XPaths finden Sie unter [Data Schemas](../../configuration/using/data-schemas.md).
 
 #### Beispiel mit der &quot;get&quot;-Operation {#example-with-the--get--operation}
 
@@ -163,7 +163,7 @@ Ruft den Nachnamen und Vornamen eines Empfängers (&quot;nms:Empfänger&quot;-Sc
 </queryDef>
 ```
 
-#### Beispiel mit dem Vorgang &quot;Auswählen&quot; {#example-with-the--select--operation}
+#### Beispiel mit dem Vorgang &quot;Select&quot; {#example-with-the--select--operation}
 
 Gibt die Liste der auf einem Ordner gefilterten Empfänger und die E-Mail-Domäne mit einer Sortierung in absteigender Reihenfolge am Geburtsdatum zurück.
 
@@ -190,7 +190,7 @@ Gibt die Liste der auf einem Ordner gefilterten Empfänger und die E-Mail-Domän
 
 Ausdruck können einfache Felder oder komplexe Ausdruck wie Arithmetik-Vorgänge oder die Verkettung von Zeichenfolgen sein.
 
-Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie dem Element das Attribut **lineCount** hinzu `<querydef>` .
+Um die Anzahl der zurückzugebenden Datensätze zu begrenzen, fügen Sie das Attribut **lineCount** dem Element `<querydef>` hinzu.
 
 So begrenzen Sie die Anzahl der von der Abfrage zurückgegebenen Datensätze auf 100:
 
@@ -206,7 +206,7 @@ Um die nächsten 100 Datensätze abzurufen, führen Sie die gleiche Abfrage erne
 ...
 ```
 
-#### Beispiel mit dem Vorgang &quot;count&quot; {#example-with-the--count--operation}
+#### Beispiel mit dem Vorgang &#39;count&#39; {#example-with-the--count--operation}
 
 So zählen Sie die Anzahl der Datensätze auf einer Abfrage:
 
@@ -221,7 +221,7 @@ So zählen Sie die Anzahl der Datensätze auf einer Abfrage:
 
 >[!NOTE]
 >
->Wieder verwenden wir die Bedingung aus dem vorherigen Beispiel. Die Klauseln `<select>` und werden nicht verwendet. `</select>`
+>Wieder verwenden wir die Bedingung aus dem vorherigen Beispiel. Die `<select>`- und -Klauseln werden nicht verwendet. `</select>`
 
 #### Nach welchen Kriterien werden die Daten gruppiert {#data-grouping}
 
@@ -257,7 +257,7 @@ Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zum z
 
 >[!NOTE]
 >
->Es ist nicht mehr erforderlich, das `<groupby>` Element zu füllen.
+>Das `<groupby>`-Element muss nicht mehr gefüllt werden.
 
 #### Bremsung unter Bedingungen {#bracketing-in-conditions}
 
@@ -271,7 +271,7 @@ Im Folgenden finden Sie zwei Beispiele für die Blockierung bei der gleichen Bed
    </where>
    ```
 
-* Die strukturierte Version mit `<condition>` Elementen:
+* Die strukturierte Version mit `<condition>`-Elementen:
 
    ```
    <where>
@@ -322,7 +322,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </select>
    ```
 
-* Sammlungslinks (1N): Die Filterung der Felder einer Sammlungstabelle muss über den **EXISTS** - oder **NOT EXISTS** -Operator erfolgen.
+* Sammlungslinks (1N): Die Filterung der Felder einer Sammlungstabelle muss über den Operator **EXISTS** oder **NOT EXISTS** durchgeführt werden.
 
    So filtern Sie die Empfänger, die den Informationsdienst &quot;Newsletter&quot;abonniert haben:
 
@@ -334,7 +334,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </where>
    ```
 
-   Das direkte Abrufen der Felder eines Sammlungslinks aus der `<select>` Klausel wird nicht empfohlen, da die Abfrage ein Kardinalprodukt zurückgibt. Sie wird nur verwendet, wenn die verknüpfte Tabelle nur einen Datensatz enthält (Beispiel `<node expr="">`).
+   Das direkte Abrufen der Felder eines Sammlungslinks aus der `<select>`-Klausel wird nicht empfohlen, da die Abfrage ein Kardinalprodukt zurückgibt. Sie wird nur verwendet, wenn die verknüpfte Tabelle nur einen Datensatz enthält (Beispiel: `<node expr="">`).
 
    Beispiel für den Link zur Sammlung &quot;Abonnement&quot;:
 
@@ -344,9 +344,9 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </select>
    ```
 
-   Es ist möglich, eine Unter-Liste abzurufen, die die Elemente eines Sammlungslinks in der `<select>` Klausel enthält. Die XPaths der referenzierten Felder sind kontextuell vom Collection-Element.
+   Es ist möglich, eine Unter-Liste abzurufen, die die Elemente eines Sammlungslinks in der `<select>`-Klausel enthält. Die XPaths der referenzierten Felder sind kontextuell vom Collection-Element.
 
-   Die Filter- ( `<orderby>` ) und Beschränkungselemente ( `<where>` ) können dem Collection-Element hinzugefügt werden.
+   Die Elemente zum Filtern ( `<orderby>` ) und zur Einschränkung ( `<where>` ) können dem Collection-Element hinzugefügt werden.
 
    In diesem Beispiel gibt die Abfrage für jeden Empfänger die E-Mail und die Liste der Informationsdienst zurück, die der Empfänger abonniert:
 
@@ -370,11 +370,11 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </queryDef>
    ```
 
-#### Binden der Parameter der Klausel &quot;where&quot;und &quot;select&quot; {#binding-the-parameters-of-the--where--and--select--clause}
+#### Binden der Parameter der &quot;where&quot;- und &quot;select&quot;-Klausel {#binding-the-parameters-of-the--where--and--select--clause}
 
 Durch die Parameterbindung kann die Engine die Werte der in der Abfrage verwendeten Parameter festlegen. Dies ist sehr nützlich, da die Engine für die Escape-Funktion von Werten verantwortlich ist und es den zusätzlichen Vorteil gibt, dass ein Cache für die Parameter abgerufen werden kann.
 
-Wenn eine Abfrage erstellt wird, werden die &quot;gebundenen&quot; Werte durch ein Zeichen (? in ODBC, `#[index]#` in postgres...) im Körper der SQL-Abfrage.
+Wenn eine Abfrage erstellt wird, werden die &quot;gebundenen&quot; Werte durch ein Zeichen (? in ODBC, `#[index]#` in postgres...) im Hauptteil der SQL-Abfrage.
 
 ```
 <select>
@@ -393,7 +393,7 @@ Um eine Bindung eines Parameters zu vermeiden, muss das Attribut &quot;noSqlBind
 
 #### Tipps zum Aufbau von Abfragen: {#query-building-tip-}
 
-Um die Syntax einer Abfrage zu unterstützen, können Sie die Abfrage mit dem Generische Abfragetool in der Adobe Campaign-Client-Konsole ( **[!UICONTROL Tools/ Generische Abfragetool...]** ). Gehen Sie dazu wie folgt vor:
+Um die Syntax einer Abfrage zu unterstützen, können Sie die Abfrage mit dem Generische Abfragetool in der Adobe Campaign-Client-Konsole ( **[!UICONTROL Tools/ Generische Abfragetool...]**). Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie die abzurufenden Daten aus:
 
@@ -407,7 +407,7 @@ Um die Syntax einer Abfrage zu unterstützen, können Sie die Abfrage mit dem Ge
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### Ausgabeformat Dokument {#output-document-format}
+### Output Dokument format {#output-document-format}
 
 Der Parameter return ist ein XML-Dokument im Format des mit der Abfrage verknüpften Schemas.
 
@@ -436,7 +436,7 @@ Beispiel eines Dokuments, das für den Vorgang &quot;count&quot; zurückgegeben 
 
 #### Alias {#alias}
 
-Mit einem Alias können Sie den Speicherort der Daten im Output-Dokument ändern. Das **Alias** -Attribut muss einen XPath für das entsprechende Feld angeben.
+Mit einem Alias können Sie den Speicherort der Daten im Output-Dokument ändern. Das **alias**-Attribut muss einen XPath im entsprechenden Feld angeben.
 
 ```
 <queryDef schema="nms:recipient" operation="get">
@@ -504,7 +504,7 @@ Statt:
    </SOAP-ENV:Envelope>
    ```
 
-## Write/WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
+## Write / WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
 
 Diese Dienste werden zum Einfügen, Aktualisieren oder Löschen einer Entität (&quot;Write&quot;-Methode) oder einer Auflistung von Entitäten (&quot;WriteCollection&quot;-Methode) verwendet.
 
@@ -537,9 +537,9 @@ Definition der Methoden &quot;Write&quot;und &quot;WriteCollection&quot;im Schem
 
 Der Datenabgleich basiert auf der Definition der Schlüssel, die im zugehörigen Schema eingegeben werden. Beim Schreiben wird anhand der im Eingabe-Dokument eingegebenen Daten nach dem ersten zulässigen Schlüssel gesucht. Die Entität wird je nach ihrer Existenz in der Datenbank eingefügt oder aktualisiert.
 
-Der Schlüssel des Schemas der Entität, die aktualisiert werden soll, wird basierend auf dem **xtkschema** -Attribut abgeschlossen.
+Der Schlüssel des Schemas der Entität, die aktualisiert werden soll, wird basierend auf dem Attribut **xtkschema** abgeschlossen.
 
-Der Abstimmschlüssel kann daher mit dem **_key** -Attribut, das die Liste von XPaths enthält, aus denen der Schlüssel besteht (durch Kommas getrennt), gezwungen werden.
+Der Abstimmschlüssel kann daher mit dem Attribut **_key** erzwungen werden, das die Liste von XPaths enthält, aus denen der Schlüssel besteht (durch Kommas getrennt).
 
 Sie können den Typ des Vorgangs erzwingen, indem Sie das Attribut **_operation** mit den folgenden Werten füllen:
 
@@ -583,7 +583,7 @@ Aktualisieren oder Einfügen für mehrere Empfänger:
 
 ### Beispiel für Links {#example-on-links}
 
-#### Example 1 {#example-1}
+#### Beispiel 1 {#example-1}
 
 Verknüpfen des Ordners mit einem Empfänger, der auf seinem internen Namen (@name) basiert.
 
@@ -595,13 +595,13 @@ Verknüpfen des Ordners mit einem Empfänger, der auf seinem internen Namen (@na
 
 Die Attribute &quot;_key&quot;und &quot;_operation&quot;können in ein verknüpftes Element eingegeben werden. Das Verhalten bei diesem Schema ist mit dem beim Hauptelement identisch.
 
-Die Definition des Schlüssels der Hauptentität (&quot;nms:Empfänger&quot;) besteht aus einem Feld aus einer verknüpften Tabelle (Element- `<folder>` Schema &quot;xtk:folder&quot;) und der E-Mail.
+Die Definition des Schlüssels der Hauptentität (&quot;nms:Empfänger&quot;) besteht aus einem Feld aus einer verknüpften Tabelle (Element `<folder>` Schema &quot;xtk:folder&quot;) und der E-Mail.
 
 >[!NOTE]
 >
 >Der im Ordnerelement eingegebene Vorgang &quot;none&quot;definiert einen Abgleich im Ordner ohne Aktualisierung oder Einfügen.
 
-#### Example 2 {#example-2}
+#### Beispiel 2 {#example-2}
 
 Aktualisieren der Firma (verknüpfte Tabelle im Schema &quot;cus:Firma&quot;) von einem Empfänger:
 
@@ -611,7 +611,7 @@ Aktualisieren der Firma (verknüpfte Tabelle im Schema &quot;cus:Firma&quot;) vo
 </recipient>
 ```
 
-#### Example 3 {#example-3}
+#### Beispiel 3 {#example-3}
 
 Hinzufügen eines Empfängers zu einer Gruppe mit der Tabelle für die Gruppenbeziehung (&quot;nms:rcpGrpRel&quot;):
 
@@ -625,7 +625,7 @@ Hinzufügen eines Empfängers zu einer Gruppe mit der Tabelle für die Gruppenbe
 
 >[!NOTE]
 >
->Die Schlüsseldefinition wird nicht in das `<rcpgroup>` Element eingegeben, da ein impliziter Schlüssel, der auf dem Gruppennamen basiert, im Schema &quot;nms:group&quot;definiert ist.
+>Die Schlüsseldefinition wird nicht im Element `<rcpgroup>` eingegeben, da ein impliziter Schlüssel, der auf dem Gruppennamen basiert, im Schema &quot;nms:group&quot;definiert ist.
 
 ### XML-Erfassungselemente {#xml-collection-elements}
 
