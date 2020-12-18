@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Einleitung {#introduction}
 
-Adobe Campaign ermöglicht es dem Anwender, **eigene Funktionen** zu definieren, die auf SQL-Funktionen zugreifen können, sowohl auf Datenbankfunktionen als auch auf Funktionen, die nicht bereits in der Konsole verfügbar sind. Dies ist beispielsweise bei Aggregat-Funktionen (Durchschnitt, Maximum, Summe) nützlich, die nur auf dem Server berechnet werden können oder wenn die Datenbank eine einfachere Möglichkeit zur Implementierung bestimmter Funktionen bietet, anstatt den Ausdruck manuell in die Konsole zu schreiben (z. B. Datumsverwaltung).
+Mit Adobe Campaign kann der Benutzer **seine eigenen Funktionen** definieren, die auf SQL-Funktionen zugreifen können, sowohl auf Datenbankfunktionen als auch auf solche, die nicht bereits in der Konsole verfügbar sind. Dies ist beispielsweise bei Aggregat-Funktionen (Durchschnitt, Maximum, Summe) nützlich, die nur auf dem Server berechnet werden können oder wenn die Datenbank eine einfachere Möglichkeit zur Implementierung bestimmter Funktionen bietet, anstatt den Ausdruck manuell in die Konsole zu schreiben (z. B. Datumsverwaltung).
 
 Dieser Mechanismus kann auch verwendet werden, wenn Sie eine kürzlich verwendete oder ungewöhnliche Datenbank-Engine-SQL-Funktion verwenden möchten, die noch nicht von der Adobe Campaign-Konsole angeboten wird.
 
@@ -27,13 +27,13 @@ Nachdem diese Funktionen hinzugefügt wurden, werden sie wie andere vordefiniert
 
 >[!IMPORTANT]
 >
->SQL-Funktionsaufrufe in der Konsole werden nicht mehr automatisch an den Server gesendet. Der hier beschriebene Mechanismus wird daher **die einzige Möglichkeit, den ungeplanten SQL-Funktionsserver aufzurufen** .
+>SQL-Funktionsaufrufe in der Konsole werden nicht mehr automatisch an den Server gesendet. Der hier beschriebene Mechanismus wird daher **die einzige Möglichkeit,** auf dem ungeplanten SQL-Funktionsserver aufzurufen.
 
 ## Installation {#installation}
 
-Die hinzuzufügenden Funktionen befinden sich in einer **&quot;Paket&quot;-Datei im XML-Format**, deren Struktur im folgenden Absatz beschrieben wird.
+Die hinzuzufügenden Funktionen befinden sich in einer **&quot;package&quot;-Datei im XML-Format**, deren Struktur im folgenden Absatz beschrieben wird.
 
-Um das Paket über die Konsole zu installieren, wählen Sie im Menü die **Optionen &quot;Extras&quot;/&quot;Erweitert&quot;/&quot;Paket** importieren&quot;aus, klicken Sie dann auf &quot;Aus Datei **[!UICONTROL installieren&quot;]** und befolgen Sie die Anweisungen im Import-Assistent.
+Um es in der Konsole zu installieren, wählen Sie im Menü die Optionen **Tools/Advanced/Import package** und dann **[!UICONTROL Aus Datei]** installieren und befolgen Sie die Anweisungen im Import-Assistent.
 
 >[!IMPORTANT]
 >
@@ -41,7 +41,7 @@ Um das Paket über die Konsole zu installieren, wählen Sie im Menü die **Optio
 
 ## Allgemeine Struktur des zu importierenden Pakets {#general-structure-of-package-to-import}
 
-Die hinzuzufügende(n) Funktion(en) befindet/befinden sich in der Datei **&quot;** package&quot;im XML-Format. Hier ein Beispiel:
+Die hinzuzufügenden Funktionen befinden sich im XML-Format in der Datei **&quot;package&quot;**. Hier ein Beispiel:
 
 ```
 <?xml version="1.0" encoding='ISO-8859-1' ?>
@@ -68,14 +68,14 @@ Die hinzuzufügende(n) Funktion(en) befindet/befinden sich in der Datei **&quot;
 </package>
 ```
 
-* Der **Name**, der **Namensraum** und das **Etikett** dienen lediglich Informationszwecken. Sie ermöglichen die Ansicht einer Zusammenfassung des Pakets in der Liste der installierten Pakete (Explorer/Administration/Paketverwaltung/Installierte Pakete).
+* Die Variablen **name**, **Namensraum** und **label** dienen nur zu Informationszwecken. Sie ermöglichen die Ansicht einer Zusammenfassung des Pakets in der Liste der installierten Pakete (Explorer/Administration/Paketverwaltung/Installierte Pakete).
 * Die Felder **buildVersion** und **buildNumber** sind obligatorisch. Sie müssen der Servernummer entsprechen, mit der die Konsole verbunden ist. Diese Informationen finden Sie im Feld &quot;Hilfe/Info&quot;.
-* Die folgenden Blöcke, **Entitäten** und **Funktionslisten** sind obligatorisch. In funcList sind die Felder &quot;name&quot;und &quot;Namensraum&quot;obligatorisch, ihr Name bleibt jedoch dem Benutzer überlassen, der die Liste der Funktion eindeutig bestimmen kann.
+* Die folgenden Blöcke, **Entitäten** und **funklist** sind obligatorisch. In funcList sind die Felder &quot;name&quot;und &quot;Namensraum&quot;obligatorisch, ihr Name bleibt jedoch dem Benutzer überlassen, der die Liste der Funktion eindeutig bestimmen kann.
 
    Das bedeutet, dass beim Importieren einer anderen Liste von Funktionen mit demselben Namensraum-/Namenspaar (hier &quot;cus::myList&quot;) die zuvor importierten Funktionen gelöscht werden. Wenn Sie dagegen dieses Namensraum-/Namenspaar ändern, wird die neue Reihe importierter Funktionen der vorherigen hinzugefügt.
 
-* Mit dem **group** -Element können Sie die Funktionsgruppe angeben, in der die importierten Funktionen im Funktionseditor angezeigt werden. Das Attribut &quot;@name&quot;kann entweder ein bereits vorhandener Name sein (in diesem Fall werden die Funktionen der betreffenden Gruppe hinzugefügt) oder ein neuer Name (in diesem Fall wird er in einer neuen Gruppe angezeigt).
-* Erinnerung: Mögliche Werte für das Attribut &quot;@name&quot;im `<group>` Element sind:
+* Mit dem Element **group** können Sie die Funktionsgruppe angeben, in der die importierten Funktionen im Funktionseditor angezeigt werden. Das Attribut &quot;@name&quot;kann entweder ein bereits vorhandener Name sein (in diesem Fall werden die Funktionen der betreffenden Gruppe hinzugefügt) oder ein neuer Name (in diesem Fall wird er in einer neuen Gruppe angezeigt).
+* Erinnerung: Mögliche Werte für das @name-Attribut im `<group>`-Element sind:
 
    ```
      name="aggregate"      ( label="Aggregates"         )
@@ -91,13 +91,13 @@ Die hinzuzufügende(n) Funktion(en) befindet/befinden sich in der Datei **&quot;
 >
 >Vergewissern Sie sich, dass Sie das Attribut &quot;@label&quot;abgeschlossen haben: dies ist der Name, der in der Liste der verfügbaren Funktionen angezeigt wird. Wenn Sie nichts eingeben, hat die Gruppe keinen Namen. Wenn Sie jedoch einen anderen Namen als den vorhandenen eingeben, ändert sich der Name der gesamten Gruppe.
 
-Wenn Sie Funktionen zu mehreren verschiedenen Gruppen hinzufügen möchten, können Sie mehrere `<group>` Elemente auf dieselbe Liste verfolgen.
+Wenn Sie Funktionen zu verschiedenen Gruppen hinzufügen möchten, können Sie mehrere `<group>`-Elemente auf dieselbe Liste verfolgen.
 
-Schließlich kann ein `<group>` Element die Definition einer oder mehrerer Funktionen enthalten, d. h. den Zweck der Paketdatei. Das `<function>` Element ist im folgenden Absatz beschrieben.
+Schließlich kann ein `<group>`-Element die Definition einer oder mehrerer Funktionen enthalten, d. h. den Zweck der Paketdatei. `<function>`   -Element im folgenden Absatz beschrieben.
 
-## Funktionsdeskriptor &lt;function>&lt;/function> {#function-descriptor--function-}
+## Funktionsbeschreibung &lt;function>&lt;/function> {#function-descriptor--function-}
 
-Der hier vorgestellte Fall ist ein allgemeiner Fall, bei dem wir die **Funktionsdurchführung** bereitstellen wollen.
+Der hier vorgestellte Fall ist ein allgemeiner Fall, bei dem wir die **Funktionsimplementierung** bereitstellen möchten.
 
 Nachstehend finden Sie ein Beispiel für eine Funktion der &quot;relativen Reife&quot;, die anhand eines Alters anzeigt, wie viele Jahre die Person als reif gilt.
 
@@ -111,8 +111,8 @@ Nachstehend finden Sie ein Beispiel für eine Funktion der &quot;relativen Reife
 
 Das Feld **@name** verweist auf den Funktionsnamen und &quot;args&quot;ist die Liste der Parameter, die in der Beschreibung angezeigt werden. In diesem Fall wird die Funktion im Funktionsauswahlfenster als &quot;relativeMaturity ( `<age>` )&quot;angezeigt.
 
-* **help** ist das Feld, das unten im Editor-Fenster des Ausdrucks angezeigt wird.
-* **@display** ist eine informative Nachricht.
+* **Hilft** das am unteren Rand des Ausdruck-Editor-Fensters angezeigte Feld.
+* **@** display ist eine informative Nachricht.
 
    >[!NOTE]
    >
@@ -122,20 +122,20 @@ Das Feld **@name** verweist auf den Funktionsnamen und &quot;args&quot;ist die L
    >
    >Die Beschreibung muss eine Zeichenfolge mit gültigen XML-Zeichen sein: Beachten Sie bitte die Verwendung von &#39;&lt;&#39; und &#39;>&#39; anstelle von &lt; und >.
 
-* **@type** ist der Rückgabetyp der Funktion und ist ein Standardwert (lang, string, byte, datetime...). Wird sie weggelassen, bestimmt der Server den besten Typ unter den verfügbaren Typen innerhalb des Ausdrucks, der die Funktion implementiert.
-* **@minArgs** und **maxArgs** geben die Anzahl der Parameter (Minimum und Maximum) für einen Parameter an. Beispiel: Für eine Funktion mit 2 Parametern sind minArgs und maxArgs 2 und 2. Bei 3 Parametern plus 1 optional sind es 3 bzw. 4.
-* Schließlich stellt das **providerPart** -Element die Funktionsimplementierung bereit.
+* **&quot;@** typeis&quot;ist der Rückgabetyp der Funktion und ein Standardwert (long, string, byte, datetime...). Wird sie weggelassen, bestimmt der Server den besten Typ unter den verfügbaren Typen innerhalb des Ausdrucks, der die Funktion implementiert.
+* **@** minArgsand  **** maxArgsgibt die Anzahl der Parameter (Minimum und Maximum) für einen Parameter an. Beispiel: Für eine Funktion mit 2 Parametern sind minArgs und maxArgs 2 und 2. Bei 3 Parametern plus 1 optional sind es 3 bzw. 4.
+* Schließlich stellt das **providerPart**-Element die Funktionsimplementierung bereit.
 
-   * Das **provider** -Attribut ist obligatorisch und gibt die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruck-Syntaxen oder zugrunde liegenden Funktionen alternative Implementierungen entsprechend der Datenbank bereitgestellt werden.
-   * Das **@body** -Attribut enthält die Funktionsimplementierung. Bitte beachten Sie: Diese Implementierung muss ein Ausdruck in Datenbanksprache sein (kein Codeblock). Abhängig von den Datenbanken können Ausdruck Unterwerte sein (&quot;(Spalte aus Tabelle auswählen, bei der ...)&quot;), die nur einen Abfrage zurückgeben. Dies gilt beispielsweise für Oracle (die Abfrage muss in Klammern stehen).
+   * Das Attribut **provider** ist obligatorisch und gibt die Datenbanksysteme an, für die die Implementierung bereitgestellt wird. Wie im Beispiel gezeigt, können bei unterschiedlichen Ausdruck-Syntaxen oder zugrunde liegenden Funktionen alternative Implementierungen entsprechend der Datenbank bereitgestellt werden.
+   * Das Attribut **@body** enthält die Funktionsimplementierung. Bitte beachten Sie: Diese Implementierung muss ein Ausdruck in Datenbanksprache sein (kein Codeblock). Abhängig von den Datenbanken können Ausdruck Unterwerte sein (&quot;(Spalte aus Tabelle auswählen, bei der ...)&quot;), die nur einen Abfrage zurückgeben. Dies gilt beispielsweise für Oracle (die Abfrage muss in Klammern stehen).
 
    >[!NOTE]
    >
    >Wenn nur eine oder zwei Datenbanken von der definierten Funktion abgefragt werden können, können wir immer nur die Definitionen angeben, die diesen Datenbanken entsprechen.
 
-## Funktionsbeschreibung für &quot;Pass-through&quot; {#pass-through--function-descriptor}
+## Funktionsdeskriptor {#pass-through--function-descriptor}
 
-Ein spezieller Funktionsdeskriptor ist der **&quot;Pass-Through&quot;** -Block mit einem nicht spezifizierten &quot;Provider&quot;-Datenbanksystem. In diesem Fall kann &quot;body&quot;-Implementierungen nur einen einzelnen Funktionsaufruf mit einer Syntax enthalten, die nicht von der verwendeten Datenbank abhängt. In der Zwischenzeit ist der Block &quot;ProviderPart&quot;eindeutig.
+Ein spezieller Funktionsdeskriptor ist der Block **&quot;pass-through&quot;** mit einem nicht angegebenen &quot;provider&quot;-Datenbanksystem. In diesem Fall kann &quot;body&quot;-Implementierungen nur einen einzelnen Funktionsaufruf mit einer Syntax enthalten, die nicht von der verwendeten Datenbank abhängt. In der Zwischenzeit ist der Block &quot;ProviderPart&quot;eindeutig.
 
 ```
     <function name="CountAll" args="()" help="Counts the values returned (all fields together)"
