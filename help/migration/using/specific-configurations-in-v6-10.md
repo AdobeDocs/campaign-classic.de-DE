@@ -25,4 +25,4 @@ Wenn Sie eine Migration von einer 6.10-Plattform durchführen und Ihre Client-Ko
 >
 >Wenn Sie das Update ablehnen, können Sie keine Verbindung herstellen.
 
-Wenn Sie eine Migration von einer Plattform der Version 6.10 durchführen, die älter als der 8104-Build ist, müssen Sie auch die [neuen Funktionen im Abschnitt v7](../../migration/using/general-configurations.md#new-features-in-v7) lesen.
+Wenn Sie von einer älteren Plattform als dem 8104-Build migrieren, müssen Sie auch den Abschnitt [Neue Funktionen in v7](../../migration/using/general-configurations.md#new-features-in-v7) lesen.
