@@ -26,8 +26,8 @@ Mit Adobe Campaign können Sie erfasste Webtracking-Informationen mit einem Empf
 
 Um das anonyme Webtracking auf Ihrer Instanz zu aktivieren, müssen die folgenden Elemente konfiguriert werden:
 
-* Der Parameter **trackWebVisitors** des **redirect** -Elements der Datei &quot; **serverConf.xml** &quot;des Tracking-Servers muss auf &quot;**true**&quot;gesetzt werden, damit ein permanentes Cookie (**uuid230**) in den Browsern unbekannter Internetbenutzer platziert wird, die die Site besuchen.
-* Der **Anonyme Webtracking** -Modus muss im Anzeigebereich &quot;Verfolgungskonfiguration&quot;des Bereitstellungsassistenten ausgewählt werden.
+* Der Parameter **trackWebVisitors** des Elements **redirect** der **serverConf.xml**-Datei des Tracking-Servers muss auf &#39;**true**&#39; gesetzt werden, um ein permanentes Cookie (**uuid230**) zu setzen.>) in den Browsern unbekannter Internetbenutzer, die die Site besuchen.
+* Der Modus **Anonymes Webtracking** muss im Bildschirm &quot;Verfolgungskonfiguration&quot;des Bereitstellungsassistenten ausgewählt werden.
 
    ![](assets/webtracking_anonymous_set.png)
 
