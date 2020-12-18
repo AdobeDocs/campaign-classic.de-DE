@@ -19,9 +19,9 @@ ht-degree: 2%
 
 ## Erweitern einer Tabelle {#extending-a-table}
 
-Um die Tabelle **nms:Empfänger** Schema Empfänger zu erweitern, gehen Sie wie folgt vor:
+Um die Tabelle **nms:Empfänger** Schema-Empfänger zu erweitern, führen Sie das folgende Verfahren aus:
 
-1. Erstellen Sie das Erweiterungsschema (**cus:extension**) mit den folgenden Daten:
+1. Erstellen Sie das Erweiterungsschema (**cus:extension**) mithilfe der folgenden Daten:
 
    ```
    <srcSchema mappingType="sql" name="extension" namespace="cus" xtkschema="xtk:srcSchema" extendedSchema="nms:recipient">  
@@ -42,7 +42,7 @@ Um die Tabelle **nms:Empfänger** Schema Empfänger zu erweitern, gehen Sie wie 
    </srcSchema>
    ```
 
-   In diesem Beispiel wird ein indiziertes Feld (**Treue**) hinzugefügt, und das **location** -Element (das bereits im Schema **nms:Empfänger** vorhanden war) wird durch ein aufgezähltes Feld (**Bereich**) ergänzt.
+   In diesem Beispiel wird ein indiziertes Feld (**fidelity**) hinzugefügt, und das **location**-Element (das bereits im Schema **nms:Empfänger** vorhanden ist) wird durch ein nummeriertes Feld (**area**) ergänzt.
 
    >[!IMPORTANT]
    >
@@ -103,7 +103,7 @@ Schema der Tabellenquelle ordnen:
 </srcSchema>
 ```
 
-Der Tabellentyp wird **automatisch** erstellt, um einen automatisch generierten Primärschlüssel zu erstellen, der vom Verbinden des Links zur Empfänger-Tabelle verwendet wird.
+Der Tabellentyp ist **autopk**, um einen automatisch generierten Primärschlüssel zu erstellen, der vom Verbindungselement des Links zur Empfänger-Tabelle verwendet wird.
 
 Schema generiert:
 
@@ -155,7 +155,7 @@ Mit einer Erweiterungstabelle können Sie den Inhalt einer vorhandenen Tabelle i
 
 Eine Erweiterungstabelle soll Beschränkungen der Anzahl der in einer Tabelle unterstützten Felder vermeiden oder den von den Daten belegten Platz optimieren, der bei Bedarf genutzt wird.
 
-Erstellen des Schemas für die Erweiterungstabelle (**cus:feature**):
+Erstellen des Schemas der Erweiterungstabelle (**cus:feature**):
 
 ```
 <srcSchema mappingType="sql" name="feature" namespace="cus" xtkschema="xtk:srcSchema">  
@@ -333,7 +333,7 @@ Die Benutzeroberfläche zeigt keinen Link, sondern ein Feld an. Wenn der Benutze
 
 * Damit sie automatisch ausgefüllt werden kann, müssen Sie eine Zeichenfolge in der Referenztabelle definieren.
 
-* hinzufügen das **Attribut noDbIndex=&quot;true&quot;** in der Linkdefinition, um zu verhindern, dass Adobe Campaign einen Index für die in der Quelltabelle des Links gespeicherten Werte erstellt.
+* hinzufügen Sie das Attribut **noDbIndex=&quot;true&quot;** in der Linkdefinition, um zu verhindern, dass Adobe Campaign einen Index für die in der Quelltabelle des Links gespeicherten Werte erstellt.
 
 ## Verwandte Themen
 
