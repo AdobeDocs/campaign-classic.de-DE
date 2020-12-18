@@ -27,7 +27,7 @@ Der Parameter **`<command>`** entspricht dem Modul.
 
 >[!NOTE]
 >
->* In jedem Fall können Sie das **-noconsole** -Argument hinzufügen, um die nach dem Starten der Module angezeigten Kommentare zu löschen.
+>* In jedem Fall können Sie das Argument **-noconsole** hinzufügen, um die nach dem Starten der Module angezeigten Kommentare zu löschen.
 >* Umgekehrt können Sie das Argument **-verbose** hinzufügen, um weitere Informationen anzuzeigen.
 
 >
@@ -38,7 +38,7 @@ Der Parameter **`<command>`** entspricht dem Modul.
 
 >[!NOTE]
 >
->Um alle Module Liste, müssen Sie den **nlserver-Befehl pdump** verwenden.
+>Zur Liste aller Module müssen Sie den Befehl **nlserver pdump** verwenden.
 
 Sie können den Parameter **-who** zur Liste der ausgeführten Verbindungen (Datenbank und Anwendung) hinzufügen.
 
@@ -62,9 +62,9 @@ Datasource Server Provider Login
 default xxxxx myserver myprovider test400
 ```
 
-Ein weiterer nützlicher Befehl ist **nlserver monitor**. Die XML-Überwachungsdatei wird Liste (im Adobe Campaign-Client oder über die Webseite **monitor.jsp** ).
+Ein weiterer nützlicher Befehl ist **nlserver monitor**. Die XML-Überwachungsdatei wird Liste (im Adobe Campaign oder über die Webseite **monitor.jsp** abgerufen).
 
-Sie können den Parameter &quot; **Fehlend** &quot;zur Liste der fehlenden Module hinzufügen (Fehler in Modulen, Herunterfahren von Modulen usw.)
+Sie können den Parameter **-misst** zur Liste der fehlenden Module hinzufügen (Fehler in Modulen, Herunterfahren von Modulen usw.)
 
 ```
 nlserver monitor -missing
@@ -76,7 +76,7 @@ wfserver@test
 
 Dies entspricht den Modulen mit automatischem Start, die jedoch nicht gestartet wurden.
 
-## Module, Befehle zum Starten {#module-launch-commands}
+## Module - Startbefehle {#module-launch-commands}
 
 Die Syntax zum Starten von Modulen hat weiterhin das folgende Format:
 
@@ -90,7 +90,7 @@ nlserver stop <module>@<INSTANCE>
 
 >[!NOTE]
 >
->**`<instance>`** entspricht dem Namen der Instanz, die in den Konfigurationsdateien eingegeben wurde, oder **Standard** für Module mit nur einer Instanz.
+>**`<instance>`** entspricht dem Namen der Instanz, wie er in den Konfigurationsdateien eingegeben wurde, oder  **** Standard für Module mit nur einer Instanz.
 
 ## Dienste beenden {#shut-down-services}
 
@@ -106,7 +106,7 @@ Um Adobe Campaign-Dienste zu beenden, verwenden Sie einen der folgenden Befehle:
 
       >[!NOTE]
       >
-      >Starting 20.1, we recommend using the following command instead (for Linux): **systemctl stop nlserver**
+      >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
 
    * Windows:
 
@@ -136,11 +136,11 @@ Ebenso können Sie zum Neustart von Adobe Campaign einen der folgenden Befehle v
 
 * Andernfalls im Adobe Campaign-Konto: **nlserver watchdog -svc -noconsole**
 
-## Befehl &quot;config&quot; {#the-config-command}
+## Der config-Befehl {#the-config-command}
 
-Mit dem Befehl &quot; **config** &quot;können Sie die Serverkonfiguration einschließlich der Neukonfiguration der Datenbankverbindung verwalten.
+Mit dem Befehl **config** können Sie die Serverkonfiguration einschließlich der Neukonfiguration der Datenbankverbindung verwalten.
 
-Verwenden Sie den Befehl **config** der ausführbaren Datei **nlserver** mit dem Parameter **-setdblogin** .
+Verwenden Sie den Befehl **config** der ausführbaren Datei **nlserver** mit dem Parameter **-setdblogin**.
 
 ```
 nlserver config -setdblogin:<[dbms:]account[:database][/password]@server>
@@ -152,16 +152,16 @@ nlserver config -setdblogin:PostgreSQL:<accountName>:test6@dbserver
 
 Geben Sie das Kennwort ein.
 
-So ändern Sie das **interne** Kennwort: **nlserver config -internalpassword**
+So ändern Sie das **interne**-Kennwort: **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->Um sich mit der **internen** Kennung anzumelden, müssen Sie vorher ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Um sich mit dem Bezeichner **Internal** anzumelden, müssen Sie vorher ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
 >[!NOTE]
 >
 >* Im Allgemeinen können Sie den Befehl **config** verwenden, anstatt die Konfigurationsdateien manuell zu ändern
->* Um die Liste der Parameter zu erhalten, verwenden Sie das **-?** Parameter: **nlserver config -?**
+>* Verwenden Sie zum Abrufen der Liste von Parametern das **-?** Parameter:  **nlserver config -?**
 >* Bei einer Oracle-Datenbank dürfen Sie das Konto nicht angeben. Die Syntax lautet wie folgt:
 
 >
