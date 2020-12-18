@@ -20,15 +20,15 @@ ht-degree: 6%
 Wenn Sie ein Schema ändern und die Änderungen speichern, wird automatisch ein erweitertes Schema generiert. Möglicherweise müssen Sie Schema jedoch manuell neu generieren, um Änderungen anzuwenden. Gehen Sie dazu wie folgt vor:
 
 1. Wählen Sie die zu regenerierenden Schema aus.
-1. Klicken Sie mit der rechten Maustaste und wählen Sie &quot; **[!UICONTROL Aktionen&quot;> &quot;Ausgewählte Schema neu generieren&quot;...]** .
-1. Klicken Sie auf **[!UICONTROL OK]** , um den Prozess zu bestätigen und zu starten.
+1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schema neu generieren...]** .
+1. Klicken Sie auf **[!UICONTROL OK]**, um den Prozess zu bestätigen und zu starten.
 
-Anschließend können Sie die Struktur des generierten Schemas auf den Registerkarten &quot;Vorschau&quot;und &quot;Dokumentation&quot;überprüfen. For more on this, refer to the [Principles](../../configuration/using/data-schemas.md#principles) section.
+Anschließend können Sie die Struktur des generierten Schemas auf den Registerkarten &quot;Vorschau&quot;und &quot;Dokumentation&quot;überprüfen. Weitere Informationen finden Sie im Abschnitt [Prinzipien](../../configuration/using/data-schemas.md#principles).
 
 >[!NOTE]
 >
 >Wenn Sie die Wiederherstellung des gesamten Schemas erzwingen müssen, um beispielsweise bestimmte Abhängigkeitsprobleme in den Reverse-Links zu lösen, können Sie den folgenden Befehl vom Adobe Campaign-Anwendungsserver starten:
 >
->**nlserver config -postupgrade -instance:` &lt;instance_name>&#39; -force**
+>**nlserver config -postupgrade -instance:`&lt;instance_name>&#39; -force**
 >
 >Anschließend müssen Sie den Adobe Campaign-Anwendungsserver neu starten und die Verbindung zur Client-Konsole trennen/wiederherstellen.
