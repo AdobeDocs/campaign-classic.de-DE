@@ -40,7 +40,7 @@ In diesem Abschnitt wird die Verwendung der Dienste &quot;Abonnieren&quot;, &quo
 
 >[!IMPORTANT]
 >
->[Die JSAPI-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) der Kampagne enthält zusätzliche Informationen zu SOAP-Aufrufen und zum Einsatz von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.
+>[Die JSAPI-](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) Dokumentation der Kampagne enthält zusätzliche Informationen zu SOAP-Aufrufen und zum Einsatz von JavaScript in Adobe Campaign sowie einen vollständigen Verweis auf alle in der Anwendung verwendeten Methoden und Funktionen.
 
 ## Abonnieren (nms:Abonnement) {#subscribe--nms-subscription-}
 
@@ -65,7 +65,7 @@ Beschreibung der Methode &quot;subscribe&quot;im Schema &quot;nms:Abonnement&quo
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut &quot;_**key** &quot;im `<recipient>` Element des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _**key** im Element `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
 Dieser Aufruf gibt keine Daten außer Fehler zurück.
 
@@ -136,7 +136,7 @@ Beschreibung der Methode &quot;Unsubscribe&quot;im Schema &quot;nms:Abonnement&q
 </method>
 ```
 
-Die Definition des Abstimmschlüssels muss über das Attribut &quot;_key&quot;im `<recipient>` Element des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
+Die Definition des Abstimmschlüssels muss über das Attribut _key im Element `<recipient>` des XML-Dokuments eingegeben werden. Der Inhalt dieses Attributs ist eine kommagetrennte XPath-Liste.
 
 Wenn der Empfänger nicht in der Datenbank vorhanden ist oder nicht für den betreffenden Informationsdienst abonniert wird, führt der Dienst keine Aktion durch und verursacht keinen Fehler.
 
@@ -207,7 +207,7 @@ Dieser Aufruf gibt keine Daten außer Fehler zurück.
 
 ### XML-Dokument-Beispiel {#xml-document-example}
 
-Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer externen Datenquelle (in diesem Fall einer Datei). Die Konfiguration wird in der Versandvorlage vollständig beschrieben, sodass beim Aufruf nur der Dateiinhalt des `<externalsource>` Elements gesendet werden muss.
+Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer externen Datenquelle (in diesem Fall einer Datei). Die Konfiguration wird in der Versandvorlage vollständig beschrieben, sodass beim Aufruf nur der Dateiinhalt des Elements `<externalsource>` gesendet werden muss.
 
 ```
 <delivery>
