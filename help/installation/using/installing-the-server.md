@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Installieren des Servers{#installing-the-server}
 
-## Ausführen des Programms Installation {#executing-the-installation-program}
+## Ausführen des Programms {#executing-the-installation-program}
 
 Installieren Sie für eine Windows 32-Bit-Plattform Adobe Campaign 32 Bit. Installieren Sie für eine Windows 64-Bit-Plattform Adobe Campaign 64 Bit.
 
@@ -46,7 +46,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
 
    ![](assets/s_ncs_install_installer_03.png)
 
-1. Click **[!UICONTROL Finish]** to start the installation:
+1. Klicken Sie auf **[!UICONTROL Fertigstellen]**, um die Installation Beginn:
 
    ![](assets/s_ncs_install_installer_04.png)
 
@@ -64,7 +64,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
 
    Nachdem die Installation abgeschlossen ist, erstellen Sie die Konfigurationsdateien in Beginn Adobe Campaign. Weitere Informationen finden Sie unter [Erster Beginn des Servers](#first-start-up-of-the-server).
 
-## Übersicht über die Installation {#summary-installation-testing}
+## Zusammenfassung der Installationstests {#summary-installation-testing}
 
 Sie können die Erstinstallation mit dem folgenden Befehl testen:
 
@@ -102,7 +102,7 @@ Die folgenden Informationen werden angezeigt:
 15:30:12 >   Web server stop (pid=664, tid=4188)...
 ```
 
-Drücken Sie **Strg+C** , um den Prozess zu beenden, und geben Sie dann den folgenden Befehl ein:
+Drücken Sie **Strg+C**, um den Prozess zu beenden, und geben Sie dann den folgenden Befehl ein:
 
 ```
 nlserver start web
@@ -135,13 +135,13 @@ Die folgenden Informationen werden angezeigt:
 12:18:31 >   Web server stopped (pid=29188, tid=-1224824320)...
 ```
 
-## Kennwort für die interne ID {#password-for-the-internal-identifier}
+## Kennwort für die interne Kennung {#password-for-the-internal-identifier}
 
-Der Adobe Campaign-Server definiert eine technische Anmeldung mit der Bezeichnung **internal** , die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist obligatorisch, eine zu definieren.
+Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **internal**, die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist obligatorisch, eine zu definieren.
 
 Siehe Abschnitt [Interne Kennung](../../installation/using/campaign-server-configuration.md#internal-identifier).
 
-## Starting Adobe Campaign services {#starting-adobe-campaign-services}
+## Starten von Adobe Campaign-Diensten {#starting-adobe-campaign-services}
 
 Um die Adobe Campaign-Dienste Beginn, können Sie den Service Manager verwenden oder Folgendes an der Befehlszeile eingeben (mit den entsprechenden Rechten):
 
@@ -157,7 +157,7 @@ net stop nlserver6
 
 ## Installieren von LibreOffice {#installing-libreoffice}
 
-Laden Sie LibreOffice herunter, z. B. von [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) , und befolgen Sie die regulären Installationsschritte.
+Laden Sie LibreOffice herunter, z. B. von [https://www.libreoffice.org/download/libreoffice-fresh/](https://www.libreoffice.org/download/libreoffice-fresh/) und befolgen Sie die regulären Installationsschritte.
 
 hinzufügen der folgenden Umgebung:
 
