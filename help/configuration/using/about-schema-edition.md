@@ -127,7 +127,7 @@ Die vollständige Liste der Attribute ist im Abschnitt [`<attribute>` element](.
 * **@desc**
 * **@enum**
 * **@expr**
-* **@Label**
+* **@label**
 * **@length**
 * **@name**
 * **@notNull**
