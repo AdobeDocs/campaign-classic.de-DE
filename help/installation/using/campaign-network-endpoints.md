@@ -21,7 +21,7 @@ Hier sind die verschiedenen Endpunkte, die in Campaign Classic verwendet werden.
 
 | Kontext | URL |
 |--- |--- |
-| Browser-Endpunkte | `https://*.experiencecloud.adobe.com` (SSO-Anbieter)<br>`https://*.campaign.adobe.com` (Kampagne Instance)<br>`https://adobeid-na1.services.adobe.com` (Anmeldung bei Adoben) |
+| Browser-Endpunkte | `https://*.experiencecloud.adobe.com` (SSO-Anbieter)<br>`https://*.campaign.adobe.com` (Kampagne-Instanz)<br>`https://adobeid-na1.services.adobe.com` (Adobe-Login) |
 | Zustellberichte | `https://deliverablity.neolane.net` |
 | Inbox-Rendering (Litmus) | `https://deliverability-app.neolane.net/deliverability` |
 | Branding-URL, Mirrorseiten, Verfolgung, Filter (Bereitstellungsassistent) | Überprüfen Sie die für Sie konfigurierten URLs. |
