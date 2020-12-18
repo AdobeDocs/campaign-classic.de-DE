@@ -17,9 +17,9 @@ ht-degree: 4%
 
 # Formularstruktur{#form-structure}
 
-The description of a form is a structured XML document that observes the grammar of the form schema **xtk:form**.
+Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Schemas **xtk:form** beachtet.
 
-The XML document of the input form must contain the `<form>` root element with the  **name** and  **namespace** attributes to populate the form name and namespace.
+Das XML-Dokument des Eingabefelds muss das `<form>`-Stammelement mit den Attributen **name** und **Namensraum** enthalten, um den Formularnamen und den Namensraum auszufüllen.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -27,7 +27,7 @@ The XML document of the input form must contain the `<form>` root element with t
 </form>
 ```
 
-Standardmäßig ist ein Formular mit dem Schema data mit demselben Namen und demselben Namensraum verknüpft. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das **entity-Schema** -Attribut des `<form>` Elements auf den Namen des Schema-Schlüssels. Um die Struktur eines Eingabefformulars zu veranschaulichen, beschreiben wir eine Schnittstelle mit dem Schema &quot;cus:Empfänger&quot;:
+Standardmäßig ist ein Formular mit dem Schema data mit demselben Namen und demselben Namensraum verknüpft. Um ein Formular mit einem anderen Namen zu verknüpfen, setzen Sie das **entity-Schema**-Attribut des `<form>`-Elements auf den Namen des Schema-Schlüssels. Um die Struktur eines Eingabefformulars zu veranschaulichen, beschreiben wir eine Schnittstelle mit dem Schema &quot;cus:Empfänger&quot;:
 
 ```
 <srcSchema name="recipient" namespace="cus">
@@ -57,13 +57,13 @@ Das Eingabedatum basiert auf dem Schema example:
 </form>
 ```
 
-Die Beschreibung der Bearbeitungssteuerelemente enthält Beginn aus dem `<form>` Stammelement. Ein Eingabefeld wird in einem **`<input>`**-Element mit seinem **xpath**-Attribut notiert, welches den Pfad des Felds in seinem Schema enthält.
+Die Beschreibung der Bearbeitungssteuerelemente enthält Beginn aus dem Stammelement `<form>`. Ein Eingabefeld wird in einem **`<input>`**-Element mit seinem **xpath**-Attribut notiert, welches den Pfad des Felds in seinem Schema enthält.
 
 Das Eingabefeld passt sich automatisch dem gewählten Datentyp an und verwendet den im Schema angegebenen Titel.
 
 >[!NOTE]
 >
->Sie können die im Schema data definierte Beschriftung überladen, indem Sie das Attribut **label** zum `<input>` Element hinzufügen:\
+>Sie können die im Schema data definierte Beschriftung überladen, indem Sie das Attribut **label** zum Element `<input>` hinzufügen:\
 >`<input label="E-mail address" xpath="@name" />`
 
 Standardmäßig wird jedes Feld in einer einzelnen Zeile angezeigt und nimmt je nach Datentyp den gesamten verfügbaren Platz ein.
@@ -86,9 +86,9 @@ So zeigen Sie die Steuerelemente des obigen Beispiels in zwei Spalten an:
 </form>
 ```
 
-Mit dem **`<container>`** Element mit dem Attribut &quot; **colcount** &quot;können Sie die Anzeige von untergeordneten Steuerelementen auf zwei Spalten erzwingen.
+Mit dem **`<container>`**-Element mit dem Attribut **colcount** können Sie die Anzeige von untergeordneten Steuerelementen auf zwei Spalten erzwingen.
 
-Das Attribut **colspan** eines Steuerelements erweitert das Steuerelement um die Anzahl der Spalten, die in seinen Wert eingegeben werden:
+Das **colspan**-Attribut eines Steuerelements erweitert das Steuerelement um die Anzahl der Spalten, die in seinem Wert eingegeben werden:
 
 ![](assets/d_ncs_integration_form_exemple3.png)
 
@@ -102,7 +102,7 @@ Das Attribut **colspan** eines Steuerelements erweitert das Steuerelement um die
 </form> 
 ```
 
-Durch das Füllen des Attributs **type=&quot;frame&quot;** fügt der Container ein Bild um die untergeordneten Steuerelemente mit der Beschriftung im **label** -Attribut hinzu:
+Durch das Füllen des Attributs **type=&quot;frame&quot;** fügt der Container ein Bild um die untergeordneten Steuerelemente mit der Beschriftung im Attribut **label** hinzu:
 
 ![](assets/d_ncs_integration_form_exemple4.png)
 
@@ -116,7 +116,7 @@ Durch das Füllen des Attributs **type=&quot;frame&quot;** fügt der Container e
 </form>
 ```
 
-Ein **`<static>`** Element kann zum Formatieren des Eingabefelds verwendet werden:
+Ein **`<static>`**-Element kann zum Formatieren des Eingabefelds verwendet werden:
 
 ![](assets/d_ncs_integration_form_exemple5.png)
 
@@ -130,15 +130,15 @@ Ein **`<static>`** Element kann zum Formatieren des Eingabefelds verwendet werde
 </form>
 ```
 
-Mit dem **`<static>`** Tag mit dem **Trennzeichentyp** können Sie eine Trennleiste mit einer im **label** -Attribut enthaltenen Beschriftung hinzufügen.
+Mit dem **`<static>`**-Tag mit dem Typ **separator** können Sie eine Trennleiste mit einer Beschriftung hinzufügen, die im Attribut **label** enthalten ist.
 
-Ein Hilfetext wurde mithilfe des `<static>` Tags mit dem Hilfetyp hinzugefügt. Der Inhalt des Textes wird in das **label** -Attribut eingegeben.
+Mithilfe des Tags `<static>` mit dem Hilfetyp wurde ein Hilfetext hinzugefügt. Der Inhalt des Textes wird im Attribut **label** eingegeben.
 
 ## Container {#containers}
 
-Mit Containern können Sie einen Satz von Steuerelementen gruppieren. Sie werden durch das **`<container>`** Element dargestellt. Sie wurden oben verwendet, um Steuerelemente über mehrere Spalten zu formatieren.
+Mit Containern können Sie einen Satz von Steuerelementen gruppieren. Sie werden durch das **`<container>`**-Element dargestellt. Sie wurden oben verwendet, um Steuerelemente über mehrere Spalten zu formatieren.
 
-Mit dem **xpath** -Attribut auf einem `<container>` können Sie die Referenz von untergeordneten Steuerelementen vereinfachen. Die Referenzierung von Steuerelementen ist dann relativ zum übergeordneten `<container>` Element.
+Mit dem **xpath**-Attribut auf einem `<container>` können Sie den Verweis auf untergeordnete Steuerelemente vereinfachen. Die Referenzierung von Steuerelementen ist dann relativ zum übergeordneten Element `<container>`.
 
 Beispiel eines Containers ohne &quot;xpath&quot;:
 
@@ -181,11 +181,11 @@ Ein Tabulator-Container formatiert Daten auf Seiten, auf die über Registerkarte
 </container>
 ```
 
-Der Hauptparameter wird durch das **Attribut type=&quot;notebook&quot;** definiert. Tabs werden in den untergeordneten Containern deklariert und die Beschriftung der Registerkarten wird aus dem **label** -Attribut gefüllt.
+Der Hauptattribut wird durch das Attribut **type=&quot;Notebook&quot;** definiert. Tabs werden in den untergeordneten Containern deklariert und die Beschriftung der Registerkarten wird aus dem **label**-Attribut gefüllt.
 
 >[!NOTE]
 >
->Eine **style=&quot;down|up**(standardmäßig)**&quot;** -Funktion erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
+>Eine **style=&quot;down|up**(standardmäßig)**&quot;**-Funktion erzwingt die vertikale Positionierung von Registerkartenbeschriftungen unter oder über dem Steuerelement. Hierbei handelt es sich um eine optionale Funktion.
 >![](assets/d_ncs_integration_form_exemple7.png)
 >`<container style="down" type="notebook">  ... </container>`
 
@@ -208,13 +208,13 @@ In diesem Container wird eine vertikale Symbolleiste angezeigt, mit der Sie die 
 </container>
 ```
 
-Der Container main wird durch das Attribut **type=&quot;iconbox&quot;** definiert. Die mit den Symbolen verknüpften Seiten werden in den untergeordneten Containern deklariert. Die Beschriftung der Symbole wird aus dem **label** -Attribut gefüllt.
+Der Hauptattribut wird durch das Attribut **type=&quot;iconbox&quot;** definiert. Die mit den Symbolen verknüpften Seiten werden in den untergeordneten Containern deklariert. Die Beschriftung der Symbole wird aus dem **label**-Attribut gefüllt.
 
-Das Seitensymbol wird aus dem `img="<image>"` Attribut gefüllt, wobei `<image>` der Bildname der zugehörigen Taste aus Name und Namensraum (z. B. &quot;xtk:properties.png&quot;) entspricht.
+Das Seitensymbol wird aus dem Attribut `img="<image>"` gefüllt, wobei `<image>` der Bildname ist, der dem zugehörigen Bildschlüssel entspricht, der aus dem Namensraum und dem Namen besteht (z. B. &quot;xtk:properties.png&quot;).
 
-Die Bilder stehen unter **[!UICONTROL Administration > Konfiguration > Bilder]** zur Verfügung.
+Die Bilder sind im Knoten **[!UICONTROL Administration > Konfiguration > Bilder]** verfügbar.
 
-#### Container der Sichtbarkeit {#visibility-container}
+#### Container für die Sichtbarkeit {#visibility-container}
 
 Sie können eine Gruppe von Steuerelementen über eine dynamische Bedingung maskieren.
 
@@ -229,7 +229,7 @@ Dieses Beispiel veranschaulicht die Sichtbarkeit der Steuerelemente für den Wer
 </container>
 ```
 
-Ein Container für die Sichtbarkeit wird durch das Attribut **type=&quot;visibleGroup&quot;** definiert. Das **Attribut visibleIf** enthält die Sichtbarkeitsbedingung.
+Ein Container für die Sichtbarkeit wird durch das Attribut **type=&quot;visibleGroup&quot;** definiert. Das Attribut **visibleIf** enthält die Sichtbarkeitsbedingung.
 
 Beispiele für Bedingungssyntax:
 
@@ -250,7 +250,7 @@ Mit diesem Container können Sie einen Datensatz aus einer dynamischen Bedingung
 </container>
 ```
 
-Ein aktivierender Container wird durch das **Attribut type=&quot;enabledGroup&quot;** definiert. Das **Attribut enabledIf** enthält die Bedingung für die Aktivierung.
+Ein aktivierender Container wird durch das Attribut **type=&quot;enabledGroup&quot;** definiert. Das **enabledIf**-Attribut enthält die Bedingung für die Aktivierung.
 
 ## Bearbeiten eines Links {#editing-a-link}
 
@@ -268,17 +268,17 @@ Das Bearbeiten-Steuerelement des Links im Eingabedateiformular lautet wie folgt:
 <input xpath="company"/>
 ```
 
-Die Auswahl der Zielgruppe ist über das Bearbeitungsfeld verfügbar. Die Eingabe wird durch type-ahead unterstützt, damit ein Zielgruppe-Element aus den ersten eingegebenen Zeichen leicht zu finden ist. Die Suche basiert dann auf der **berechneten Zeichenfolge** , die im Targeting-Schema definiert ist. Wenn das Schema nach der Überprüfung im Steuerelement nicht vorhanden ist, wird eine Bestätigungsmeldung über die Erstellung der Zielgruppe im Handumdrehen angezeigt. Mit der Bestätigung wird ein neuer Datensatz in der Tabelle &quot;Zielgruppe&quot;erstellt und mit dem Link verknüpft.
+Die Auswahl der Zielgruppe ist über das Bearbeitungsfeld verfügbar. Die Eingabe wird durch type-ahead unterstützt, damit ein Zielgruppe-Element aus den ersten eingegebenen Zeichen leicht zu finden ist. Die Suche basiert dann auf der **Berechnen Sie die Zeichenfolge**, die im Targeting-Schema definiert ist. Wenn das Schema nach der Überprüfung im Steuerelement nicht vorhanden ist, wird eine Bestätigungsmeldung über die Erstellung der Zielgruppe im Handumdrehen angezeigt. Mit der Bestätigung wird ein neuer Datensatz in der Tabelle &quot;Zielgruppe&quot;erstellt und mit dem Link verknüpft.
 
 Eine Dropdown-Liste wird verwendet, um ein Element der Zielgruppe aus der Liste der bereits erstellten Datensätze auszuwählen.
 
-Mit dem Symbol &quot;Link **** ändern&quot;wird ein Auswahlformular mit der Liste der Zielelemente und einer Filterzone gestartet:
+Mit dem Symbol **[!UICONTROL Link]** ändern (folder) wird ein Auswahlformular mit der Liste der Zielelemente und einer Filterzone gestartet:
 
 ![](assets/d_ncs_integration_form_exemple10.png)
 
-Mit dem Symbol **[!UICONTROL Link]** bearbeiten (Vergrößerung) wird das Bearbeitungsformular des verknüpften Elements gestartet. Das verwendete Formular wird standardmäßig auf den Schlüssel des zielgerichteten Schemas abgezogen. Mit dem **form** -Attribut können Sie den Namen des Bearbeitungsformulars erzwingen (z. &quot;cus:Firma2&quot;).
+Das Symbol **[!UICONTROL Link bearbeiten]** (Vergrößerung) startet das Bearbeitungsformular des verknüpften Elements. Das verwendete Formular wird standardmäßig auf den Schlüssel des zielgerichteten Schemas abgezogen. Mit dem Attribut **form** können Sie den Namen des Bearbeitungsformulars erzwingen (z.B. &quot;cus:Firma2&quot;).
 
-You can restrict the choice of target elements by adding the **`<sysfilter>`** element from the link definition in the input form:
+Sie können die Auswahl der Zielgruppen einschränken, indem Sie das **`<sysfilter>`**-Element aus der Linkdefinition im Eingabefeld hinzufügen:
 
 ```
 <input xpath="company">
@@ -288,7 +288,7 @@ You can restrict the choice of target elements by adding the **`<sysfilter>`** e
 </input>
 ```
 
-Sie können die Liste auch nach dem **`<orderby>`** Element sortieren:
+Sie können die Liste auch mit dem Element **`<orderby>`** sortieren:
 
 ```
 <input xpath="company">
@@ -335,9 +335,9 @@ Die Liste in ihrem Eingabeformular:
 </input>
 ```
 
-Die Steuerung der Liste wird durch das **Attribut type=&quot;linklist&quot;** definiert. Der Pfad der Liste muss auf den Link der Sammlung verweisen.
+Die Steuerung der Liste wird durch das Attribut **type=&quot;linklist&quot;** definiert. Der Pfad der Liste muss auf den Link der Sammlung verweisen.
 
-The columns are declared via the **`<input>`** elements of the list. Das **xpath** -Attribut bezieht sich auf den Feldpfad im Schema Zielgruppe.
+Die Spalten werden über die **`<input>`**-Elemente der Liste deklariert. Das Attribut **xpath** bezieht sich auf den Feldpfad im Schema &quot;Zielgruppe&quot;.
 
 Eine Symbolleiste mit einer Beschriftung (definiert auf dem Link im Schema) wird automatisch über der Liste platziert.
 
@@ -345,7 +345,7 @@ Die Liste kann über die Schaltfläche **[!UICONTROL Filter]** gefiltert und so 
 
 Mit den Schaltflächen **[!UICONTROL Hinzufügen]** und **[!UICONTROL Löschen]** können Sie Sammlungselemente zum Link hinzufügen und löschen. Beim Hinzufügen eines Elements wird standardmäßig das Bearbeitungsformular des Zielgruppe-Schemas gestartet.
 
-Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das **Attribut zoom=&quot;true&quot;** im **`<input>`** Tag der Liste abgeschlossen ist: Dadurch können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** am **`<input>`**-Tag der Liste abgeschlossen ist: Dadurch können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
 Filtern und Sortieren können beim Laden der Liste angewendet werden:
 
@@ -388,11 +388,11 @@ In unserem Beispiel wird mit dem Eingabedatum des Schemas &quot;cus:Empfänger&q
 </input>
 ```
 
-Mit dem **Attribut xpathChoiceTarget** können Sie ein Auswahlformular aus dem eingegebenen Link starten. Durch Erstellen des Beziehungstabellendatensatzes wird der Link zum aktuellen Empfänger und zum ausgewählten Dienst automatisch aktualisiert.
+Mit dem Attribut **xpathChoiceTarget** können Sie ein Auswahlformular aus dem eingegebenen Link starten. Durch Erstellen des Beziehungstabellendatensatzes wird der Link zum aktuellen Empfänger und zum ausgewählten Dienst automatisch aktualisiert.
 
 >[!NOTE]
 >
->Mit dem **Attribut xpathEditTarget** können Sie die Bearbeitung der ausgewählten Zeile des eingegebenen Links erzwingen.
+>Mit dem Attribut **xpathEditTarget** können Sie die Bearbeitung der ausgewählten Zeile des eingegebenen Links erzwingen.
 
 ### Eigenschaften der Liste {#list-properties}
 
@@ -401,7 +401,7 @@ Mit dem **Attribut xpathChoiceTarget** können Sie ein Auswahlformular aus dem e
 * **toolbarAlign**: ändert die vertikale oder horizontale Geometrie der Symbolleiste (mögliche Werte: &quot;vertical&quot;|&quot;horizontal&quot;)
 * **img**: zeigt das Bild an, das der Liste zugeordnet ist
 * **form**: überschreibt das Bearbeitungsformular des Zielelements
-* **zoom**: fügt die Schaltfläche &quot; **[!UICONTROL Zoom]** &quot;hinzu, um das Zielelement zu bearbeiten
+* **zoom**: fügt die  **** Zoomschaltfläche hinzu, um das zielgerichtete Element zu bearbeiten
 * **xpathEditTarget**: legt die Bearbeitung auf dem eingegebenen Link fest
 * **xpathChoiceTarget**: startet außerdem das Auswahlformular auf dem eingegebenen Link
 
@@ -426,11 +426,11 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 
 Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Kollektionselement verweisen.
 
-The columns are declared in the child **`<input>`** tags of the list. Spaltenbeschriftung und -größe können mit den **Attributen label** und **colSize** erzwungen werden.
+Die Spalten werden im untergeordneten **`<input>`**-Tag der Liste deklariert. Spaltenbeschriftung und -größe können mit den Attributen **label** und **colSize** erzwungen werden.
 
 >[!NOTE]
 >
->Pfeile nach Sortierreihenfolge werden automatisch hinzugefügt, wenn das **Attribut ordered=&quot;** dem Collection-Element im data-Schema hinzugefügt wird.
+>Pfeile nach Sortierreihenfolge werden automatisch hinzugefügt, wenn dem Collection-Element im Schema data das Attribut **ordered=&quot;true&quot;** hinzugefügt wird.
 
 Die Symbolleistenschaltflächen können horizontal ausgerichtet werden:
 
@@ -443,7 +443,7 @@ Die Symbolleistenschaltflächen können horizontal ausgerichtet werden:
 </input>
 ```
 
-The **toolbarCaption** attribute forces the horizontal alignment of the toolbar and enters the title above the list.
+Das Attribut **toolbarCaption** erzwingt die horizontale Ausrichtung der Symbolleiste und gibt den Titel über der Liste ein.
 
 #### In Listen zoomen {#zoom-in-a-list}
 
@@ -463,11 +463,11 @@ Das Einfügen und Bearbeiten der Daten in einer Liste kann in einem separaten Be
 </input>
 ```
 
-Das Bearbeitungsformular wird aus dem `<form>` Element unter Liste-Definition ausgefüllt. Die Struktur des Formulars ist identisch mit der eines Eingabefelds. Die **[!UICONTROL Detailschaltfläche]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im Tag der Liste abgeschlossen ist **`<input>`** . Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
+Das Bearbeitungsformular wird aus dem Element `<form>` unter &quot;Liste Definition&quot;ausgefüllt. Die Struktur des Formulars ist identisch mit der eines Eingabefelds. Die Schaltfläche **[!UICONTROL Detail]** wird automatisch hinzugefügt, wenn das Attribut **zoom=&quot;true&quot;** im **`<input>`**-Tag der Liste abgeschlossen ist. Mit diesem Attribut können Sie das Bearbeitungsformular der ausgewählten Zeile starten.
 
 >[!NOTE]
 >
->Durch Hinzufügen des Attributs **zoomOnAdd=&quot;true&quot;** wird das Bearbeitungsformular beim Einfügen eines Liste-Elements aufgerufen.
+>Durch Hinzufügen des Attributs **zoomOnAdd=&quot;true&quot;** wird das Bearbeitungsformular aufgerufen, wenn ein Liste-Element eingefügt wird.
 
 ### Eigenschaften der Liste {#list-properties-1}
 
@@ -476,13 +476,13 @@ Das Bearbeitungsformular wird aus dem `<form>` Element unter Liste-Definition au
 * **toolbarAlign**: ändert die Positionierung der Symbolleiste (mögliche Werte: &quot;vertical&quot;|&quot;horizontal&quot;)
 * **img**: zeigt das Bild an, das der Liste zugeordnet ist
 * **form**: überschreibt das Bearbeitungsformular des Zielelements
-* **zoom**: fügt die Schaltfläche &quot; **[!UICONTROL Zoom]** &quot;hinzu, um das Zielelement zu bearbeiten
+* **zoom**: fügt die  **** Zoomschaltfläche hinzu, um das zielgerichtete Element zu bearbeiten
 * **zoomOnAdd**: startet das Bearbeitungsformular auf dem Zusatz
 * **xpathChoiceTarget**: startet außerdem das Auswahlformular auf dem eingegebenen Link
 
 ## Nicht bearbeitbare Felder {#non-editable-fields}
 
-Um ein Feld anzuzeigen und zu verhindern, dass es bearbeitet wird, verwenden Sie das **`<value>`** Tag oder füllen Sie das Attribut **readOnly=&quot;true&quot;** auf dem **`<input>`** Tag aus.
+Um ein Feld anzuzeigen und zu verhindern, dass es bearbeitet wird, verwenden Sie das **`<value>`**-Tag oder füllen Sie das **readOnly=&quot;true&quot;**-Attribut im **`<input>`**-Tag aus.
 
 Beispiel für das Feld &quot;Geschlecht&quot;:
 
@@ -493,9 +493,9 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 <input xpath="@gender" readOnly="true"/>
 ```
 
-## Optionsfeld {#radio-button}
+## Radiobutton {#radio-button}
 
-Mit einem Optionsfeld können Sie aus verschiedenen Optionen wählen. Die **`<input>`** Tags werden zur Liste der möglichen Optionen verwendet, und das Attribut **checkValue** gibt den Wert an, der der Auswahl zugeordnet ist.
+Mit einem Optionsfeld können Sie aus verschiedenen Optionen wählen. Die **`<input>`**-Tags werden zur Liste der möglichen Optionen verwendet, und das **checkValue**-Attribut gibt den Wert an, der der Auswahl zugeordnet ist.
 
 Beispiel für das Feld &quot;Geschlecht&quot;:
 
@@ -507,7 +507,7 @@ Beispiel für das Feld &quot;Geschlecht&quot;:
 
 ![](assets/d_ncs_integration_form_exemple17.png)
 
-## Kontrollkästchen {#checkbox}
+## Checkbox {#checkbox}
 
 Ein Kontrollkästchen gibt den booleschen Status an (ausgewählt oder nicht). Standardmäßig wird dieses Steuerelement von den Feldern &quot;Boolescher Wert&quot;(true/false) verwendet. Eine Variable, die den Standardwert 0 oder 1 hat, kann mit dieser Schaltfläche verknüpft werden. Dieser Wert kann über die Attribute **checkValue** überladen werden.
 
@@ -522,7 +522,7 @@ Ein Kontrollkästchen gibt den booleschen Status an (ausgewählt oder nicht). St
 
 Dieses Steuerelement erstellt eine Struktur auf einem Satz zu bearbeitender Felder.
 
-Die zu bearbeitenden Steuerelemente werden in einer **`<container>`** Datei gruppiert, die unter dem Tag des **`<input>`** Struktursteuerelements eingegeben wird:
+Die zu bearbeitenden Steuerelemente sind in einem **`<container>`** gruppiert, das unter dem **`<input>`**-Tag des Tree-Steuerelements eingegeben wird:
 
 ```
 <input nolabel="true" type="treeEdit">
@@ -539,9 +539,9 @@ Die zu bearbeitenden Steuerelemente werden in einer **`<container>`** Datei grup
 
 ![](assets/d_ncs_integration_form_exemple18.png)
 
-## Feld &quot;Ausdruck&quot; {#expression-field}
+## Ausdruck {#expression-field}
 
-Ein Feld &quot;Ausdruck&quot;aktualisiert ein Feld dynamisch von einem Ausdruck aus. das **`<input>`** -Tag mit einem **xpath** -Attribut verwendet wird, um den Pfad des zu aktualisierenden Felds und ein **expr** -Attribut mit dem update-Ausdruck einzugeben.
+Ein Feld &quot;Ausdruck&quot;aktualisiert ein Feld dynamisch von einem Ausdruck aus. Das **`<input>`**-Tag wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und ein **expr**-Attribut mit dem Ausdruck update einzugeben.
 
 ```
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->
@@ -549,15 +549,15 @@ Ein Feld &quot;Ausdruck&quot;aktualisiert ein Feld dynamisch von einem Ausdruck 
 <input expr="[/ignored/@action] == 'FCP'" type="expr" xpath="@launchFCP"/>
 ```
 
-## Kontext von Formularen {#context-of-forms}
+## Kontext der Formulare {#context-of-forms}
 
 Die Ausführung eines Eingabefelds initialisiert ein XML-Dokument, das die Daten der Entität enthält, die bearbeitet wird. Dieses Dokument stellt den Kontext des Formulars dar und kann als Arbeitsbereich verwendet werden.
 
 ### Aktualisieren des Kontexts {#updating-the-context}
 
-Um den Kontext des Formulars zu ändern, verwenden Sie das **`<set expr="<value>" xpath="<field>"/>`** -Tag, wobei **`<field>`** das Zielfeld und der Aktualisierungswert der Ausdruck oder Wert **`<value>`** ist.
+Um den Kontext des Formulars zu ändern, verwenden Sie das Tag **`<set expr="<value>" xpath="<field>"/>`**, wobei **`<field>`** das Zielfeld und **`<value>`** der Ausdruck oder Wert für die Aktualisierung ist.
 
-Beispiele für die Verwendung des **`<set>`** -Tags:
+Beispiele für die Verwendung des Tags **`<set>`**:
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**: positioniert den Wert &#39;Test&#39; an der temporären Position /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: aktualisiert die Entität des Attributs &quot;lastName&quot;mit dem Wert &quot;Test&quot;
@@ -580,13 +580,13 @@ Der Kontext des Formulars kann beim Initialisieren und Schließen des Formulars 
 
 >[!NOTE]
 >
->Die Tags `<enter>` und `<leave>` Tags können auf den Seiten (&quot;Notebook&quot;- und &quot;iconbox&quot;-Typen) verwendet `<container>` werden.
+>`<enter>` und `<leave>`   -Tags können auf den `<container>`-Seiten (&quot;Notebook&quot;- und &quot;iconbox&quot;-Typen) verwendet werden.
 
-### Ausdruck {#expression-language-}
+### Ausdruck-Sprache {#expression-language-}
 
 In der Formulardefinition kann eine Makrosprache verwendet werden, um bedingte Tests durchzuführen.
 
-Das **`<if expr="<expression>" />`** -Tag führt die unter dem Tag angegebenen Anweisungen aus, wenn der Ausdruck überprüft wird:
+Das **`<if expr="<expression>" />`**-Tag führt die unter dem Tag angegebenen Anweisungen aus, wenn der Ausdruck überprüft wird:
 
 ```
 <if expr="([/tmp/@test] == 'Test' or @lastName != 'Doe') and @boolean2 == true">
@@ -594,7 +594,7 @@ Das **`<if expr="<expression>" />`** -Tag führt die unter dem Tag angegebenen A
 </if>
 ```
 
-Das **`<check expr="<condition>" />`** Tag in Kombination mit dem **`<error>`** Tag verhindert die Überprüfung des Formulars und zeigt eine Fehlermeldung an, wenn die Bedingung nicht erfüllt ist:
+Das **`<check expr="<condition>" />`**-Tag in Kombination mit dem **`<error>`**-Tag verhindert die Überprüfung des Formulars und zeigt eine Fehlermeldung an, wenn die Bedingung nicht erfüllt ist:
 
 ```
 <leave>
@@ -625,15 +625,15 @@ Ein Assistent hat folgende Struktur:
 
 ![](assets/d_ncs_integration_form_exemple19.png)
 
-Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** auf dem `<form>` Element können Sie den Assistentenmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>` Elementen abgeschlossen, die untergeordnete Elemente des `<form>` Elements sind. Das `<container>` Element einer Seite wird mit den Titelattributen für den Titel und desc gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen &quot; **[!UICONTROL Zurück]** &quot;und &quot; **[!UICONTROL Weiter]** &quot;werden automatisch hinzugefügt, um das Durchsuchen zwischen Seiten zu ermöglichen.
+Durch das Vorhandensein des Attributs **type=&quot;wizard&quot;** im Element `<form>` können Sie den Assistentenmodus beim Aufbau des Formulars definieren. Die Seiten werden aus `<container>`-Elementen abgeschlossen, die dem `<form>`-Element untergeordnet sind. Das `<container>`-Element einer Seite wird mit den Titelattributen für den Titel und desc gefüllt, um die Beschreibung unter dem Seitentitel anzuzeigen. Die Schaltflächen **[!UICONTROL Previous]** und **[!UICONTROL Next]** werden automatisch hinzugefügt, um das Durchsuchen zwischen Seiten zu ermöglichen.
 
-Über die Schaltfläche &quot; **[!UICONTROL Fertig stellen]** &quot;werden die eingegebenen Daten gespeichert und das Formular geschlossen.
+Mit der Schaltfläche **[!UICONTROL Fertig]** speichern Sie die eingegebenen Daten und schließen das Formular.
 
 ### SOAP-Methoden {#soap-methods}
 
-Die Ausführung der SOAP-Methode kann von einem ausgefüllten **`<leave>`** -Tag am Ende einer Seite gestartet werden.
+Die Ausführung der SOAP-Methode kann von einem ausgefüllten **`<leave>`**-Tag am Ende einer Seite gestartet werden.
 
-Das **`<soapcall>`** -Tag enthält den Aufruf für die Methode mit den folgenden Eingabeparametern:
+Das **`<soapcall>`**-Tag enthält den Aufruf der Methode mit den folgenden Eingabeparametern:
 
 ```
 <soapCall name="<name>" service="<schema>">
@@ -642,11 +642,11 @@ Das **`<soapcall>`** -Tag enthält den Aufruf für die Methode mit den folgenden
 </soapCall>
 ```
 
-Der Name des Dienstes und das zugehörige Implementierungsattribut werden über die **Namens** - und **Dienstattribute** des **`<soapcall>`** Tags eingegeben.
+Der Name des Dienstes und sein Implementierungsattribut werden über die Attribute **name** und **service** des **`<soapcall>`**-Tags eingegeben.
 
-Die Eingabeparameter werden in den **`<param>`** Elementen unter dem **`<soapcall>`** -Tag beschrieben.
+Die Eingabeparameter werden in den **`<param>`**-Elementen unter dem **`<soapcall>`**-Tag beschrieben.
 
-Der Parametertyp muss über das **type** -Attribut angegeben werden. Folgende Typen sind möglich:
+Der Parametertyp muss über das Attribut **type** angegeben werden. Folgende Typen sind möglich:
 
 * **Zeichenfolge**: Zeichenfolge
 * **boolean**: Boolesch
