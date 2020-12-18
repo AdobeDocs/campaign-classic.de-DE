@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor:
     a2enmod nlsrv
    ```
 
-   Wenn Sie das Modul **mod_rewrite** für Adobe Campaign-Seiten verwenden, müssen Sie die Dateien **nlsrv.load** und **nlsrv.conf** in **zz-nlsrv.load** und **zz-nlsrv.conf** umbenennen. Führen Sie zum Aktivieren des Moduls den folgenden Befehl aus:
+   Wenn Sie das Modul **mod_rewrite** für Adobe Campaign-Seiten verwenden, müssen Sie die Dateien **nlsrv.load** und **nlsrv.conf in** zz-nlsrv.load **und** zz-nlsrv umbenennen..conf **.** Führen Sie zum Aktivieren des Moduls den folgenden Befehl aus:
 
    ```
    a2enmod zz-nlsrv
@@ -113,7 +113,7 @@ Dieses Verfahren gilt, wenn Sie Apache unter einem RPM (RHEL, CentOS und Suse)-b
 
 Gehen Sie wie folgt vor:
 
-1. Aktivieren Sie in der `httpd.conf` Datei die folgenden Apache-Module:
+1. Aktivieren Sie in der Datei `httpd.conf` die folgenden Apache-Module:
 
    ```
    alias
@@ -152,7 +152,7 @@ Gehen Sie wie folgt vor:
    ForceLanguagePriority
    ```
 
-1. Erstellen Sie eine Adobe Campaign-spezifische Konfigurationsdatei im `/etc/httpd/conf.d/` Ordner. Beispiel `CampaignApache.conf`
+1. Erstellen Sie eine Adobe Campaign-spezifische Konfigurationsdatei im Ordner `/etc/httpd/conf.d/`. Beispiel `CampaignApache.conf`
 
 1. Fügen Sie für **RHEL7** die folgenden Anweisungen in die Datei ein:
 
@@ -163,7 +163,7 @@ Gehen Sie wie folgt vor:
 
 1. Für **RHEL7**:
 
-   hinzufügen die `/etc/systemd/system/httpd.service` Datei mit folgendem Inhalt:
+   hinzufügen Sie die Datei `/etc/systemd/system/httpd.service` mit folgendem Inhalt:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -196,7 +196,7 @@ Gehen Sie wie folgt vor:
    systemctl start nlserver
    ```
 
-## Webserver starten und Konfiguration testen{#launching-the-web-server-and-testing-the-configuration}
+## Webserver starten und die Konfiguration testen{#launching-the-web-server-and-testing-the-configuration}
 
 Sie können die Konfiguration jetzt testen, indem Sie Apache starten. Das Adobe Campaign-Modul sollte nun sein Banner auf der Konsole anzeigen (zwei Banner auf bestimmten Betriebssystemen):
 
@@ -244,4 +244,4 @@ Die folgenden Informationen werden angezeigt:
 Connection closed by foreign host.
 ```
 
-Sie können die URL auch [`https://<computer>`](https://myserver.adobe.com/r/test) über einen Webbrowser anfordern.
+Sie können die URL [`https://<computer>`](https://myserver.adobe.com/r/test) auch über einen Webbrowser anfordern.
