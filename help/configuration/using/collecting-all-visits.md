@@ -29,11 +29,11 @@ Ein Plattformbenutzer ist ein Empfänger, der bereits ein Targeting durch einen 
 
 ## Serverkonfiguration {#server-configuration}
 
-Die Server werden durch Überladen bestimmter Elemente der Datei &quot; **serverConf.xml** &quot;konfiguriert. Diese Dateien werden im **conf** -Unterverzeichnis des Installationsordners des Adobe Campaigns gespeichert.
+Die Server werden durch Überladen bestimmter Elemente der Datei **serverConf.xml** konfiguriert. Diese Dateien werden im Unterverzeichnis **conf** des Installationsordners des Adobe Campaigns gespeichert.
 
 ### Weiterleitungsserver {#redirection-server}
 
-Legen Sie für den Umleitungsserver das Attribut **trackWebVisitors** des **Umleitungselements** auf **true** fest.
+Legen Sie für den Umleitungsserver das Attribut **trackWebVisitors** des Elements **redirect** auf **true** fest.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -46,7 +46,7 @@ trackingPassword=""
 
 Zur Ansicht von Verfolgungsinformationen über Ihre Client-Konsole müssen Sie:
 
-* Erstellen eines **Dummy-Versands** (die Zuordnung des Versands muss mit der Zuordnung des Zielgruppe-Schemas identisch sein),
-* Geben Sie den **internen Namen** dieses Versands in der Option **NmsTracking_WebTrackingDelivery** ein.
+* Erstellen Sie einen **Dummy-Versand** (die Zuordnung des Versands muss mit der Zuordnung des Zielgruppe-Schemas identisch sein),
+* Geben Sie in der Option **NmsTracking_WebTrackingDelivery** den internen Versand **ein.**
 
 Alle Site-Verfolgungsinformationen, die nicht direkt nach einem Klick in einer E-Mail erfolgen, können in dem erstellten Platzhalter-Versand angezeigt werden.
