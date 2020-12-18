@@ -17,18 +17,18 @@ ht-degree: 11%
 
 # Stack Trace in Linux{#stack-trace-in-linux}
 
-Eine **Stapelablaufverfolgung** stellt eine in einer **Core** -Typdatei enthaltene Ablaufverfolgung dar. Diese Datei wird im Ereignis eines Computerfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
+Eine **Stapelablaufverfolgung** stellt eine Ablaufverfolgung dar, die in einer **core**-Typdatei enthalten ist. Diese Datei wird im Ereignis eines Computerfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
 
 >[!NOTE]
 >
->* Eine **Core** -Datei heißt **core.`<num>`**.
->* **gdb - Der GNU-Debugger** muss auf dem Computer installiert sein.
+>* Eine **core**-Datei heißt **core.`<num>`**.
+>* **gdb - Der GNU** Debugger muss auf dem Computer installiert sein.
 
 >
 
 
 
-Adobe Campaign Technical Support kann Sie nach dieser **Stapelablaufverfolgung** fragen. Geben Sie zum Abrufen folgende Befehle in Linux ein:
+Der technische Support von Adobe Campaign kann Sie nach diesem **Stack-Trace** fragen. Geben Sie zum Abrufen folgende Befehle in Linux ein:
 
 ```
 su - neolane
@@ -57,7 +57,7 @@ gdb nlserver <coreFile>
 
 Adobe Campaign Technical Support bittet Sie, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
 
-Führen Sie in diesem Fall einfach den folgenden Befehl aus, indem Sie **nlserver** durch die ausführbare Datei ersetzen, die von Adobe Campaign bereitgestellt wird:
+In diesem Fall führen Sie einfach den folgenden Befehl aus, indem Sie **nlserver** durch die ausführbare Datei ersetzen, die von Adobe Campaign bereitgestellt wird:
 
 ```
 gdb nlserver <coreFile>
