@@ -27,9 +27,9 @@ Die Eigenschaften eines Schemas, das auf eine vorhandene Tabelle verweist, sind 
 >
 >Löschen Sie keine Empfänger in der Standardtabelle, auch wenn sie nutzlos sind. Dies kann zu Verhaltensfehlern in der Adobe Campaign-Datenbank führen.
 
-## Das Attribut &quot;Ansicht&quot; {#the-view-attribute}
+## Das Ansicht-Attribut {#the-view-attribute}
 
-Source-Schema akzeptieren das **Ansicht** -Attribut für das **srcSchema** -Stammelement. Es muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen manipuliert wird. Das **Ansicht=&quot;true&quot;** -Attribut weist den Updateassistenten für die Datenbankstruktur an, dieses Schema zu ignorieren. Daher ist es dem Antrag untersagt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
+Source-Schema akzeptieren das **Ansicht**-Attribut für das **srcSchema**-Stammelement. Es muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen manipuliert wird. Das Attribut **Ansicht=&quot;true&quot;** weist den Assistenten zum Aktualisieren der Datenbankstruktur an, dieses Schema zu ignorieren. Daher ist es dem Antrag untersagt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
 
 Wenn dieses Attribut auf **true** gesetzt ist, wird das Schema nur zum Generieren von SQL-Abfragen verwendet, um auf die Daten dieser Tabelle zuzugreifen.
 
@@ -37,8 +37,8 @@ Wenn dieses Attribut auf **true** gesetzt ist, wird das Schema nur zum Generiere
 
 Wenn Tabellen vom Tabellenaktualisierungsassistenten erstellt werden, werden die Tabellen- und Spaltennamen automatisch anhand der jeweiligen Schema- und Attributnamen generiert. Es ist jedoch möglich, die Verwendung der SQL-Namen durch Eingabe der folgenden Attribute zu erzwingen:
 
-* **sqltable** innerhalb des Hauptelements des Schemas, um die Tabelle anzugeben,
-* **sqlname** innerhalb jedes Attributs, um die Spalten anzugeben.
+* **** sqltableinnerhalb des Hauptelements des Schemas, um die Tabelle anzugeben,
+* **&quot;** sqlname&quot;innerhalb jedes Attributs, um die Spalten anzugeben.
 
 **Beispiel**:
 
@@ -59,7 +59,7 @@ Wenn in diesem Beispiel die Namen der Tabellen und Spalten nicht explizit angege
 
 In einem Schema ist es möglich, nur einen Teil der Spalten einer vorhandenen Tabelle auszufüllen. Nicht ausgefüllte Spalten können nicht vom Benutzer aufgerufen werden.
 
-## Indexierte Felder {#indexed-fields}
+## Indizierte Felder {#indexed-fields}
 
 Beim Sortieren der Datensätze einer Liste aus der Client-Konsole wird eine bessere Leistung durch Sortieren nach indizierten Feldern erzielt. Wenn Sie einen Index in einem Schema deklarieren, zeigt die Konsole die indizierten Felder mit einer roten Linie unter dem Sortierungspfeil links neben der Spaltenbeschriftung an, wie unten dargestellt:
 
