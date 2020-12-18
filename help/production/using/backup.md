@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Backup
-description: Backup
+description: Sicherung
 audience: production
 content-type: reference
 topic-tags: data-processing
@@ -34,7 +34,7 @@ Die Dateien sind in mehrere Kategorien unterteilt:
 
    Dadurch können Sie Adobe Campaign sehr schnell neu konfigurieren.
 
-* Weiterleitungsdateien ** nl6/var/`<instancename>`/redir**
+* Umleitungsdateien ** nl6/var/`<instancename>`/redir**
 
    Diese befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot;bezeichnet) und beinhalten alle vorherigen Kampagnen-Umleitungen. Sie werden weiterhin von vorherigen Kampagnen verwendet.
 
