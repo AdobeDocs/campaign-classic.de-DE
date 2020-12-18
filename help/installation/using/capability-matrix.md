@@ -21,7 +21,7 @@ Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarke
 
 Diese Seite zeigt die wichtigsten Unterschiede zwischen gehosteten (Managed Services) und lokalen Bereitstellungen. Spezifische Merkmale für Hybridbereitstellungen hängen von den Elementen ab, die von der Adobe gehostet und in Ihren Räumlichkeiten gehostet werden.
 
-Die verschiedenen Hosting-Modelle werden [in diesem Abschnitt](../../installation/using/hosting-models.md)vorgestellt.
+Die verschiedenen Hostingmodelle werden in [in diesem Abschnitt](../../installation/using/hosting-models.md) eingeführt.
 
 ## Verfügbarkeit pro Bereitstellungsmodell {#capability-matrix}
 
@@ -47,7 +47,7 @@ Adobe Campaign bietet die Option **Federated Data Access** (FDA), um in externen
 
 >[!CAUTION]
 >
->Accessing an external database via FDA is only possible for on-premise or hybrid installations, except with the [Snowflake connector](../../installation/using/configure-fda-snowflake.md).
+>Der Zugriff auf eine externe Datenbank über FDA ist nur bei lokalen oder hybriden Installationen möglich, mit Ausnahme des [Snowflake Connector](../../installation/using/configure-fda-snowflake.md).
 
 
 **Siehe auch**
