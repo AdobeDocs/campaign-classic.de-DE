@@ -25,5 +25,5 @@ Bei einer Konfiguration auf mehreren Computern müssen Sie nicht überall dassel
 >
 >Hauptinstallationskonfigurationsschritte können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden, um beispielsweise die Server- und Instanzkonfigurationsdateien zu konfigurieren.
 >
->Weitere Informationen zu den Hauptunterschieden zwischen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder in den Unterschieden zwischen [Funktionen für gehostete und lokale Bereitstellungen](../../installation/using/capability-matrix.md).
+>Weitere Informationen zu den Hauptunterschieden zwischen Bereitstellungen finden Sie im Abschnitt [Hostmodelle](../../installation/using/hosting-models.md) oder im Abschnitt [Funktionsunterschiede für gehostete und lokale Bereitstellungen](../../installation/using/capability-matrix.md).
 
