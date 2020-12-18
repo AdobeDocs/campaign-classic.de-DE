@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Grundsätze {#principles}
 
-Um die Schema zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf den Knoten **[!UICONTROL Administration > Konfiguration > Data Schemas]** in der Adobe Campaign-Client-Konsole.
+Um die Schema zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** der Adobe Campaign-Client-Konsole.
 
 >[!NOTE]
 >
@@ -43,16 +43,16 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 >
 >Beim Speichern des Quelldokuments wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte &quot;Vorschau&quot;verwenden. Wenn das Schema erweitert wurde, können Sie dann alle Erweiterungen visualisieren. Als Ergänzung werden auf der Registerkarte &quot;Dokumentation&quot;alle Schema-Attribute und -Elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) angezeigt. Die Registerkarte &quot;Dokumentation&quot;gilt nur für generierte Schema. For more on this, refer to the [Regenerating schemas](../../configuration/using/regenerating-schemas.md) section.
+Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte &quot;Vorschau&quot;verwenden. Wenn das Schema erweitert wurde, können Sie dann alle Erweiterungen visualisieren. Als Ergänzung werden auf der Registerkarte &quot;Dokumentation&quot;alle Schema-Attribute und -Elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) angezeigt. Die Registerkarte &quot;Dokumentation&quot;gilt nur für generierte Schema. Weitere Informationen finden Sie im Abschnitt [Regenerierende Schema](../../configuration/using/regenerating-schemas.md).
 
 ## Beispiel: Erstellen einer Vertragstabelle {#example--creating-a-contract-table}
 
-Im folgenden Beispiel möchten wir eine neue Tabelle für **Verträge** im Datenbankmodell der Adobe Campaign-Datenbank erstellen. In dieser Tabelle können Sie für jeden Vertrag Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern speichern.
+Im folgenden Beispiel möchten wir eine neue Tabelle für **verträge** im Datenbankmodell der Adobe Campaign-Datenbank erstellen. In dieser Tabelle können Sie für jeden Vertrag Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern speichern.
 
 Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktualisieren, um die entsprechende Tabelle zu erstellen. Folgende Schritte sind dazu nötig:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL New]** .
-1. Wählen Sie die Option &quot;Neue Tabelle **[!UICONTROL erstellen&quot;in der Option &quot;Datenmodell]** &quot;und klicken Sie auf **[!UICONTROL Weiter]** .
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL New]** .
+1. Wählen Sie die Option **[!UICONTROL Neue Tabelle im Datenmodell]** erstellen und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
@@ -62,9 +62,9 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
 
    >[!NOTE]
    >
-   >Standardmäßig werden von Benutzern erstellte Schema im Namensraum &quot;cus&quot;gespeichert. Weitere Informationen finden Sie unter [Identifizierung eines Schemas](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Standardmäßig werden von Benutzern erstellte Schema im Namensraum &quot;cus&quot;gespeichert. Weitere Informationen hierzu finden Sie unter [Identifizierung eines Schemas](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Einstiegsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf die Schaltfläche &quot; **[!UICONTROL Einfügen]** &quot;und wählen Sie die hinzuzufügende Einstellung aus.
+1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Einstiegsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Einfügen]** und wählen Sie den hinzuzufügenden Einstellungstyp.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
@@ -120,5 +120,5 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. For more on this, refer to [Updating the database structure](../../configuration/using/updating-the-database-structure.md).
+1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. Weitere Informationen finden Sie unter [Aktualisieren der Datenbankstruktur](../../configuration/using/updating-the-database-structure.md).
 
