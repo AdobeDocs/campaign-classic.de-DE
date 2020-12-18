@@ -30,7 +30,7 @@ Das Erstellen einer Methodenbibliothek umfasst zwei Schritte:
 * die SOAP-Methodendeklaration,
 * Definition (oder Implementierung) in JavaScript.
 
-### Erklärung {#declaration}
+### Deklaration {#declaration}
 
 Beginn durch Deklarieren der Methoden in den Schemas (weitere Informationen zum Erstellen und Bearbeiten von Schemas finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
 
@@ -90,7 +90,7 @@ Die Signatur der Funktion muss ein Argument für jeden &#39;in&#39;- oder &#39;i
 Sonderfälle:
 
 * **nichtstatische Methoden**: Die Funktion muss zuerst ein zusätzliches Argument enthalten, das mit der XML-Entität zusammenfällt, die in Form eines E4X-Objekts (XML) übergeben wird.
-* **Typmethoden**&quot;nur Schlüssel&quot;: Die Funktion muss zuerst ein zusätzliches Argument enthalten, das mit dem in Form von Zeichenfolgen übergebenen Schlüssel übereinstimmt.
+* **Typmethoden** &quot;nur Schlüssel&quot;: Die Funktion muss zuerst ein zusätzliches Argument enthalten, das mit dem in Form von Zeichenfolgen übergebenen Schlüssel übereinstimmt.
 
 **3. Rückgegebene Werte**
 
