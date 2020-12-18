@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## Anwendungswartung {#application-maintenance}
 
-Adobe Campaign bietet einen integrierten Arbeitsablauf, mit dem Sie bestimmte Aufgaben der Datenbankwartung planen können: den **Datenbankbereinigungs-Workflow**. Dieser Arbeitsablauf führt die folgenden Aufgaben aus:
+Adobe Campaign bietet einen integrierten Arbeitsablauf, mit dem Sie bestimmte Aufgaben der Datenbankwartung planen können: der **Datenbank-Bereinigungs-Workflow**. Dieser Arbeitsablauf führt die folgenden Aufgaben aus:
 
 * Löschung abgelaufener Datensätze,
 * Löschung verwaister Datensätze und Statusreinitialisierung für abgelaufene Objekte,
@@ -67,17 +67,17 @@ Es stehen verschiedene Strategien zur Verfügung:
    <td> Online-Defragmentierung<br /> </td> 
    <td> Die meisten Datenbankmaschinen bieten Defragmentierungsmethoden.<br /> </td> 
    <td> Verwenden Sie einfach die Datenbankdefragmentierungsmethode. Diese Methoden kümmern sich in der Regel um Integritätsprobleme, indem sie die Daten während der Defragmentierung sperren.<br /> </td> 
-   <td> Abhängig von der Datenbank können diese Defragmentierungsmethoden als RDBMS-Option (Oracle) bereitgestellt werden und sind nicht immer die effizienteste Art, mit größeren Tabellen umzugehen.<br /> </td> 
+   <td> Abhängig von der Datenbank können diese Defragmentierungsmethoden als RDBMS-Option (Oracle) bereitgestellt werden und sind nicht immer die effizienteste Möglichkeit, mit größeren Tabellen umzugehen.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Berühren und Wiederherstellen<br /> </td> 
-   <td> Ziehen Sie die Tabelle in eine Datei, löschen Sie die Tabelle in der Datenbank und stellen Sie sie wieder aus der Deponie her.<br /> </td> 
+   <td> Sprung und Wiederherstellung<br /> </td> 
+   <td> Ziehen Sie die Tabelle in eine Datei, löschen Sie die Tabelle in der Datenbank und stellen Sie sie aus dem Dump wieder her.<br /> </td> 
    <td> Auf diese Weise lässt sich eine Tabelle am einfachsten defragmentieren. Auch die einzige Lösung, wenn die Datenbank fast voll ist.<br /> </td> 
    <td> Da die Tabelle gelöscht und neu erstellt wird, kann die Anwendung nicht online gelassen werden, auch nicht im schreibgeschützten Modus (die Tabelle ist während der Wiederherstellungsphase nicht verfügbar).<br /> </td> 
   </tr> 
   <tr> 
    <td> Duplikat, umbenennen und ablegen<br /> </td> 
-   <td> Dadurch wird eine Kopie einer Tabelle und ihrer Indizes erstellt, dann wird die vorhandene Tabelle gelöscht und die Kopie wird umbenannt, um sie zu ersetzen.<br /> </td> 
+   <td> Dadurch wird eine Kopie einer Tabelle und deren Indizes erstellt, dann wird die vorhandene gelöscht und die Kopie wird umbenannt, um sie zu ersetzen.<br /> </td> 
    <td> Diese Methode ist schneller als der erste Ansatz, da sie weniger IOs generiert (keine Kopie als Datei und Lesen aus dieser Datei).<br /> </td> 
    <td> Erfordert doppelt so viel Platz.<br /> Alle aktiven Prozesse, die während des Prozesses in die Tabelle geschrieben werden, müssen beendet werden. Leseprozesse sind jedoch nicht betroffen, da die Tabelle im letzten Moment nach der Wiederherstellung ausgetauscht wird. <br /> </td> 
   </tr> 
