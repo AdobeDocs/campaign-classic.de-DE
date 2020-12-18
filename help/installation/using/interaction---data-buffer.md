@@ -19,15 +19,15 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
+>Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. So können Sie beispielsweise auf die Konfigurationsdateien des Servers und der Instanz zugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting models](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
-In Adobe Campaign wurde eine **Datenpufferzone** im Interaktionsmodul eingeführt. Auf diese Weise können Sie die Leistung **der eingehenden Interaktion** steigern, indem Sie die Angebot- und Bestandsberechnungen deaktivieren.
+In Adobe Campaign wurde eine Datenpufferzone **im Interaktionsmodul eingeführt.** Auf diese Weise können Sie **die Leistung** der eingehenden Interaktion durch Desynchronisierung der Bestand- und Angebot-Berechnungen erhöhen.
 
 Es betrifft nur die eingehende Interaktion, ob durch einen Aufruf (mit oder ohne Aufrufdaten) oder durch ein Statusupdate (updateStatus).
 
-Um eine Warteschlange beim Schreiben von Vorschlägen für einen Empfänger zu vermeiden, erzeugt ein neuer w-Prozess eine **Datenpufferzone** , die das asynchrone **Schreiben von Vorschlägen** ermöglicht. Diese Datenpufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum liegt bei etwa einer Sekunde. Daher ist das Schreiben von Vorschlägen gruppiert.
+Um eine Warteschlange beim Schreiben von Vorschlägen für einen Empfänger zu vermeiden, generiert ein neuer w-Prozess eine **Datenpufferzone**, die es erlaubt, Vorschläge asynchron zu schreiben **und zu schreiben.** Diese Datenpufferzone wird regelmäßig gelesen und geleert. Der Standardzeitraum liegt bei etwa einer Sekunde. Daher ist das Schreiben von Vorschlägen gruppiert.
 
-Die **Konfiguration** der Datenpufferzone kann in der Konfigurationsdatei der Instanz (config-Instance.xml) vorgenommen werden.
+Die Datenpufferzone **configuration** kann in der Konfigurationsdatei der Instanz vorgenommen werden (config-Instance.xml).
 
 >[!NOTE]
 >
