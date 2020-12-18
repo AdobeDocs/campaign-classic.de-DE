@@ -17,19 +17,19 @@ ht-degree: 3%
 
 # Verwalten von Berichten{#managing-reports}
 
-Berichte, die auf einem Schema basieren, das für die standardmäßigen Adobe Campaign-Empfänger spezifisch ist (nm:Empfänger oder verknüpftes Schema), müssen neu entwickelt werden, um die Daten aus der benutzerspezifischen Tabelle und deren über das Zielgruppen-Mapping verknüpften Tabellen zu berücksichtigen (siehe Abschnitt [Zielgruppen-Mapping](../../configuration/using/target-mapping.md) ).
+Berichte, die auf einem Schema basieren, das für die standardmäßigen Adobe Campaign-Empfänger spezifisch ist (nm:Empfänger oder verknüpftes Schema), müssen neu entwickelt werden, um die Daten aus der benutzerdefinierten Tabelle und deren über das Zielgruppen-Mapping verknüpften Tabellen zu berücksichtigen (siehe Abschnitt [Zielgruppen-Mapping](../../configuration/using/target-mapping.md)).
 
 Informationen zum Erstellen neuer Berichte finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In einigen Fällen müssen Sie auch neue Cuben einführen, die sich speziell auf diese Tabellen beziehen. Cubes are detailed in [this section](../../reporting/using/about-cubes.md).
+In einigen Fällen müssen Sie auch neue Cuben einführen, die sich speziell auf diese Tabellen beziehen. Die Cuben sind in [diesem Abschnitt](../../reporting/using/about-cubes.md) aufgeführt.
 
 Folgende Berichte sind betroffen:
 
-* **[!UICONTROL Nachverfolgung]** aktueller Vorschläge (jüngste Vorschläge): Echtzeitpropositionserfassung.
-* **[!UICONTROL Aufschlüsselung von &quot;openByUserAgent&quot;]** : wird nach Benutzersoftware aufgeschlüsselt angezeigt.
-* **[!UICONTROL Statistik der Freigabeaktivitäten]** (forwardActivities): analyse der Freigabe von Aktivitäten, Öffnen und Abonnements pro Zeitraum.
-* **[!UICONTROL Rückverfolgungsindikatoren]** (mobileAppDeliveryFeedback): Tracking-Indikatoren für einen Versand in einer Mobilanwendung.
+* **[!UICONTROL Nachverfolgung]**  aktueller Vorschläge (jüngste Vorschläge): Echtzeitpropositionserfassung.
+* **[!UICONTROL Aufschlüsselung von open]** (openByUserAgent): wird nach Benutzersoftware aufgeschlüsselt angezeigt.
+* **[!UICONTROL Statistik der Freigabeaktivitäten]**  (forwardActivities): analyse der Freigabe von Aktivitäten, Öffnen und Abonnements pro Zeitraum.
+* **[!UICONTROL Tracking-Indikatoren]** (mobileAppDeliveryFeedback): Tracking-Indikatoren für einen Versand in einer Mobilanwendung.
 * **[!UICONTROL Angebot-Analyse]** (offerAnalysis): analyse des Angebots nach Datum und Kanal.
 * **[!UICONTROL Reaktivitätsrate]** (mobileAppDistribution): Reaktivitätsrate für die neuesten Versand.
-* **[!UICONTROL Aufschlüsselung von Abonnements]** (mobileAppDistribution): Aufschlüsselung aktiver Abonnement nach Mobilanwendung.
+* **[!UICONTROL Aufschlüsselung von Abonnements]**  (mobileAppDistribution): Aufschlüsselung aktiver Abonnement nach Mobilanwendung.
 
