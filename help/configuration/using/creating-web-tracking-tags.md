@@ -33,13 +33,13 @@ So generieren Sie den HTML-Code, der in die Seite eingefügt werden soll:
 * Geben Sie die Beschriftung des Tags ein: es wird in den Trackinglogs angezeigt,
 * Quell-URL angeben: dieses Feld dient Informationszwecken und ermöglicht die Angabe der verfolgten Seite (optional),
 * Geben Sie bei Bedarf eine Gültigkeitsdauer ein,
-* Klicken Sie auf HTML-Code **[!UICONTROL generieren]** .
+* Klicken Sie auf **[!UICONTROL HTML-Code generieren]**.
 
 Kopieren Sie dann den generierten Code und fügen Sie ihn in die zu verfolgende Seite ein.
 
-## On-the-fly-Erstellung von zu verfolgenden URLs {#on-the-fly-creation-of-urls-to-be-tracked}
+## On-the-fly-Erstellung von URLs, die verfolgt werden sollen{#on-the-fly-creation-of-urls-to-be-tracked}
 
-Sie können die Web-Tracking-URLs spontan erstellen, indem Sie dem Wert des **tagid** -Parameters Informationen hinzufügen:
+Sie können die Web-Tracking-URLs spontan erstellen, indem Sie dem Wert des Parameters **tagid** Informationen hinzufügen:
 
 * Typ der verfolgten Seite: &#39;w&#39; für WEB oder &#39;t&#39; für TRANSACTION,
 * Der interne Name des Ordners, in dem die URL erstellt werden muss.
