@@ -26,7 +26,7 @@ Achten Sie außerdem auf Folgendes:
 
 ## Zeitzonen {#time-zones}
 
-### Zeitzonenmodus {#multi-time-zone-mode}
+### Zeitzonenmodus für mehrere Zeiträume {#multi-time-zone-mode}
 
 In Version 6.02 war der &quot;Zeitzonenmodus&quot;nur für PostgreSQL-Datenbankmaschinen verfügbar. Es wird nun unabhängig vom verwendeten Datenbanktyp angeboten. Wir empfehlen dringend, dass Sie Ihre Basis in eine &quot;Multi-Zeitzone&quot;-Basis umwandeln.
 
@@ -38,13 +38,13 @@ Um den TIMESTAMP MIT TIMEZONE-Modus zu verwenden, müssen Sie auch die Option **
 
 >[!NOTE]
 >
->Es ist möglich, die Zeitzone nach der Migration über die Konsole zu ändern (**[!UICONTROL Administration > Plattform > Optionen > WdbcTimeZone]** -Knoten).
+>Es ist möglich, die Zeitzone nach der Migration über die Konsole zu ändern (**[!UICONTROL Administration > Plattform > Optionen > WdbcTimeZone]**-Knoten).
 >
->For more on time zone management, refer to [this section](../../installation/using/time-zone-management.md).
+>Weitere Informationen zum Zeitzonenmanagement finden Sie in [diesem Abschnitt](../../installation/using/time-zone-management.md).
 
 ### Oracle {#oracle}
 
-Wenn Sie während der Aktualisierung einen **ORA 01805** -Fehler erhalten, bedeutet dies, dass die Oracle-Zeitzonendateien zwischen dem Anwendungsserver und dem Datenbankserver nicht synchronisiert sind. Um sie erneut zu synchronisieren, führen Sie die folgenden Schritte aus:
+Wenn Sie einen **ORA 01805**-Fehler nach der Aktualisierung erhalten, bedeutet dies, dass die Oracle-Zeitzonendateien zwischen dem Anwendungsserver und dem Datenbankserver nicht synchronisiert sind. Um sie erneut zu synchronisieren, führen Sie die folgenden Schritte aus:
 
 1. Führen Sie den folgenden Befehl aus, um die verwendete Zeitzonendatei zu identifizieren:
 
@@ -52,7 +52,7 @@ Wenn Sie während der Aktualisierung einen **ORA 01805** -Fehler erhalten, bedeu
    select * from v$timezone_file
    ```
 
-   Zeitzonendateien befinden sich normalerweise im Ordner **ORACLE_HOME/oracore/zoneinfo/** .
+   Zeitzonendateien befinden sich normalerweise im Ordner **ORACLE_HOME/oracore/zoneinfo/**.
 
 1. Stellen Sie sicher, dass die Zeitzonendateien auf beiden Servern identisch sind.
 
@@ -68,7 +68,7 @@ So prüfen Sie, ob sich beide Seiten in denselben Zeitzonen befinden:
    genezi -v
    ```
 
-   genezi ist eine Binärdatei im **$ORACLE_HOME/bin** Repository.
+   genezi ist eine Binärdatei, die im Repository **$ORACLE_HOME/bin** gefunden wird.
 
 1. Überprüfen Sie die Version der Zeitzonendatei auf dem Server, indem Sie den folgenden Befehl ausführen:
 
@@ -76,7 +76,7 @@ So prüfen Sie, ob sich beide Seiten in denselben Zeitzonen befinden:
    select * from v$timezone_file
    ```
 
-1. Um die Zeitzonendatei auf Clientseite zu ändern, verwenden Sie die Variable **ORA_TZFILE** -Umgebung.
+1. Um die Zeitzonendatei auf Clientseite zu ändern, verwenden Sie die Variable **ORA_TZFILE** Umgebung.
 
 ## Sicherheit {#security}
 
@@ -90,13 +90,13 @@ Adobe Campaign v7 umfasst das Konzept der **Sicherheitszonen**. Jeder Benutzer m
 
 **Bitten Sie vor der Migration** Ihren Netzwerkadministrator, die Sicherheitszonen zu definieren, die nach der Migration aktiviert werden sollen.
 
-**Nach der Aktualisierung** (vor dem Neustart des Servers) müssen Sie die Sicherheitszonen konfigurieren.
+**Nach der Aktualisierung**  (vor dem Neustart des Servers) müssen Sie die Sicherheitszonen konfigurieren.
 
-Die Konfiguration der Sicherheitszone finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Sicherheitszonenkonfiguration finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
 ### Benutzerkennwörter {#user-passwords}
 
-In v7 muss die **interne** Verbindung mit dem **Operator** mit einem Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Operatorkonten **vor der Migration** Passwörter zuzuweisen. Wenn Sie kein Kennwort für **intern** angegeben haben, können Sie keine Verbindung herstellen. Geben Sie den folgenden Befehl ein, um ein Kennwort **intern** zuzuweisen:
+In v7 müssen die Operatorverbindungen **internal** und **admin** durch ein Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Operatorkonten vor Migration **Kennwörter zuzuweisen.** Wenn Sie kein Kennwort für **internal** angegeben haben, können Sie keine Verbindung herstellen. Um **internal** ein Kennwort zuzuweisen, geben Sie den folgenden Befehl ein:
 
 ```
 nlserver config -internalpassword
@@ -104,19 +104,19 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Das **interne** Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier) und in [diesem Abschnitt](../../platform/using/access-management.md#about-permissions).
+>Das **internal**-Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier) und [diesem Abschnitt](../../platform/using/access-management.md#about-permissions).
 
 ### Neue Funktionen in v7 {#new-features-in-v7}
 
-* Benutzer ohne Berechtigungen können keine Verbindung mehr mit Adobe Campaign herstellen. Ihre Berechtigungen müssen manuell hinzugefügt werden, z. B. durch die Erstellung einer Berechtigung namens **connect**.
+* Benutzer ohne Berechtigungen können keine Verbindung mehr mit Adobe Campaign herstellen. Ihre Berechtigungen müssen manuell hinzugefügt werden, z. B. durch Erstellen einer Berechtigung mit dem Namen **connect**.
 
    Benutzer, die von dieser Änderung betroffen sind, werden nach der Aktualisierung identifiziert und aufgelistet.
 
 * Die Verfolgung funktioniert nicht mehr, wenn das Kennwort leer ist. Ist dies der Fall, wird eine Fehlermeldung angezeigt, die Sie darüber informiert und Sie auffordert, sie neu zu konfigurieren.
-* Benutzerkennwörter werden nicht mehr im **xtk:sessionInfo** -Schema gespeichert.
-* Administratorberechtigungen sind jetzt erforderlich, um die **Funktionen xtk:builder:EvaluateJavaScript** und **xtk:builder:EvaluateJavaScriptTemplate** zu verwenden.
+* Benutzerkennwörter werden nicht mehr im Schema **xtk:sessionInfo** gespeichert.
+* Administratorberechtigungen sind jetzt erforderlich, um die Funktionen **xtk:builder:EvaluateJavaScript** und **xtk:builder:EvaluateJavaScriptTemplate** zu verwenden.
 
-Einige vordefinierte Schema wurden geändert und sind jetzt standardmäßig nur mit Schreibzugriff für Operatoren mit **Administratorberechtigung** verfügbar:
+Einige vordefinierte Schema wurden geändert und sind jetzt standardmäßig nur mit Schreibzugriff für Operatoren mit der Berechtigung **admin** verfügbar:
 
 * ncm:veröffentlichen
 * nl:monitoring
@@ -167,11 +167,11 @@ Neuer Link auf der Seite &quot;Verbindung&quot;:
 
 >[!IMPORTANT]
 >
->Wenn Sie einen Operator verwenden, der mit einer vertrauenswürdigen IP-Maske verknüpft ist, überprüfen Sie, ob er über die Mindestrechte verfügt und sich im **sessionTokenOnly** -Modus in einer Sicherheitszone befindet.
+>Wenn Sie einen Operator verwenden, der mit einer vertrauenswürdigen IP-Maske verknüpft ist, überprüfen Sie, ob er über die Mindestrechte verfügt und sich im Modus **sessionTokenOnly** in einer Sicherheitszone befindet.
 
 ### SQL-Funktionen {#sql-functions}
 
-Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gesendet. Derzeit müssen alle SQL-Funktionen dem **xtk:funcList** -Schema hinzugefügt werden (weitere Informationen finden Sie in [diesem Abschnitt](../../configuration/using/adding-additional-sql-functions.md)). Bei der Migration wird während der Nachrüstung eine Option hinzugefügt, mit der Sie die Kompatibilität mit alten nicht deklarierten SQL-Funktionen aufrechterhalten können. Wenn Sie diese Funktionen weiterhin verwenden möchten, stellen Sie sicher, dass die Option **XtkPassUnknownSQLFunctionsToRDBMS** tatsächlich auf der Knotenebene **[!UICONTROL Administration > Plattform > Optionen]** definiert ist.
+Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gesendet. Derzeit müssen alle SQL-Funktionen dem Schema **xtk:funcList** hinzugefügt werden (weitere Informationen dazu finden Sie in [diesem Abschnitt](../../configuration/using/adding-additional-sql-functions.md)). Bei der Migration wird während der Nachrüstung eine Option hinzugefügt, mit der Sie die Kompatibilität mit alten nicht deklarierten SQL-Funktionen aufrechterhalten können. Wenn Sie diese Funktionen weiterhin verwenden möchten, überprüfen Sie, ob die Option **XtkPassUnknownSQLFunctionsToRDBMS** tatsächlich auf der Node-Ebene **[!UICONTROL Administration > Plattform > Optionen]** definiert ist.
 
 >[!IMPORTANT]
 >
@@ -179,9 +179,9 @@ Unbekannte SQL-Funktionsaufrufe werden nicht mehr automatisch an den Server gese
 
 ### JSSP {#jssp}
 
-Wenn Sie den Zugriff auf bestimmte Seiten über das HTTP-Protokoll (nicht über HTTPS) genehmigen möchten, müssen Sie beispielsweise in Ihren Web-Apps unabhängig von der in den Sicherheitszonen ausgeführten Konfiguration den Parameter **httpAllowed=&quot;true&quot;** in der entsprechenden Relaisregel angeben.
+Wenn Sie beispielsweise den Zugriff auf bestimmte Seiten über das HTTP-Protokoll (nicht HTTPS) genehmigen möchten, müssen Sie in Ihren Web-Apps unabhängig von der in den Sicherheitszonen ausgeführten Konfiguration den Parameter **httpAllowed=&quot;true&quot;** in der entsprechenden Relaisregel angeben.
 
-Wenn Sie anonyme JSSPs verwenden, müssen Sie den **Parameter httpAllowed=&quot;true&quot;** in eine Relaisregel für Ihre JSSP-Datei (**[!UICONTROL serverConf.xml]** -Datei) einfügen:
+Wenn Sie anonyme JSSPs verwenden, müssen Sie den Parameter **httpAllowed=&quot;true&quot;** in einer Relaisregel für Ihre JSSP-Datei (**[!UICONTROL serverConf.xml]**) hinzufügen:
 
 Beispiel:
 
@@ -192,13 +192,13 @@ Beispiel:
 
 ## Syntax {#syntax}
 
-### JavaScript {#javascript}
+### Javascript {#javascript}
 
 Adobe Campaign v7 integriert einen neueren JavaScript-Interpreter. Dieses Update kann jedoch zu Fehlfunktionen bei bestimmten Skripten führen. Da der vorherige Motor eher permissiv war, würden bestimmte Syntaxen funktionieren, was bei der neuen Version des Motors nicht mehr der Fall ist.
 
-Das **[!UICONTROL myObject.Die @attribute]** -Syntax ist jetzt nur für XML-Objekte gültig. Diese Syntax kann zur Personalisierung von Versänden und Content-Management verwendet werden. Wenn Sie diesen Syntaxtyp für ein Nicht-XML-Objekt verwendet haben, funktionieren die Personalisierungsfunktionen nicht mehr.
+Das **[!UICONTROL myObject.Die Syntax &quot;@attribute]**&quot;ist jetzt nur für XML-Objekte gültig. Diese Syntax kann zur Personalisierung von Versänden und Content-Management verwendet werden. Wenn Sie diesen Syntaxtyp für ein Nicht-XML-Objekt verwendet haben, funktionieren die Personalisierungsfunktionen nicht mehr.
 
-Bei allen anderen Objekttypen lautet die Syntax jetzt **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Beispiel: Ein Nicht-XML-Objekt, das die folgende Syntax verwendet hat: **[!UICONTROL angestellt.@sn]** muss jetzt die folgende Syntax verwenden: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
+Bei allen anderen Objekttypen lautet die Syntax nun **[!UICONTROL myObject`[`&quot;attribute&quot;`]`]**. Beispiel: Ein Nicht-XML-Objekt, das die folgende Syntax verwendet hat: **[!UICONTROL Angestellter.@sn]** muss jetzt die folgende Syntax verwenden: **[!UICONTROL employee`[`&quot;sn&quot;`]`]**.
 
 * Frühere Syntax:
 
@@ -248,21 +248,21 @@ Sie können kein XML-Attribut mehr als Tabellenschlüssel verwenden.
 
 Um die Instanzsicherheit zu erhöhen, wurde in Adobe Campaign v7 eine neue Syntax eingeführt, die die Syntax auf der Grundlage von SQLData ersetzt. Wenn Sie diese Codeelemente mit dieser Syntax verwenden, müssen Sie sie ändern. Die wichtigsten Punkte sind:
 
-* Filtern nach Untergruppen-Abfragen: Die neue Syntax basiert auf dem `<subQuery>` Element, um eine Unter-Abfrage zu definieren.
+* Filtern nach Untergruppen-Abfragen: Die neue Syntax basiert auf dem `<subQuery>`-Element, um eine Unter-Abfrage zu definieren.
 * Aggregate: die neue Syntax lautet &quot;Aggregat function(collection)&quot;
-* Filtern nach Verbindung: die neue Syntax `[schemaName:alias:xPath]`
+* Filtern nach Verbindung: die neue Syntax ist `[schemaName:alias:xPath]`
 
 Das Schema queryDef (xtk:queryDef) wurde geändert:
 
-* Es steht ein neues `<subQuery>` Element zur Verfügung, um die in SQLData enthaltene SELECT-Anweisung zu ersetzen.
+* ein neues `<subQuery>`-Element verfügbar ist, um die in SQLData enthaltene SELECT-Anweisung zu ersetzen.
 * Es werden zwei neue Werte, &quot;IN&quot;und &quot;NOT IN&quot;für das Attribut &quot;@setOperator&quot;eingeführt
-* ein neues `<where>` Element, das dem `<node>` Element untergeordnet ist: Dadurch können Sie &quot;Unter-Selektionen&quot;in SELECT vornehmen
+* ein neues `<where>`-Element, das dem `<node>`-Element untergeordnet ist: Dadurch können Sie &quot;Unter-Selektionen&quot;in SELECT vornehmen
 
 Wenn ein Attribut &quot;@expr&quot;verwendet wird, ist die SQLData möglicherweise vorhanden. Eine Suche nach den folgenden Begriffen kann durchgeführt werden: &quot;SQLData&quot;, &quot;aliasSqlTable&quot;, &quot;sql&quot;.
 
-Adobe Campaign v7-Instanzen sind standardmäßig gesichert. Sicherheit wird in Form von Definitionen der Sicherheitszonen in der Datei &quot; **[!UICONTROL serverConf.xml]** &quot;bereitgestellt: Das **Attribut allowSQLInject** verwaltet die SQL-Syntaxsicherheit.
+Adobe Campaign v7-Instanzen sind standardmäßig gesichert. Sicherheit wird in Form von Definitionen der Sicherheitszonen in der Datei **[!UICONTROL serverConf.xml]** bereitgestellt: Das **allowSQLInject**-Attribut verwaltet die SQL-Syntaxsicherheit.
 
-Tritt während der Ausführung nach der Aktualisierung ein &quot;SQLData&quot;-Fehler auf, müssen Sie dieses Attribut ändern, um vorübergehend die Verwendung von &quot;SQLData&quot;-basierten Syntaxen zuzulassen, sodass Sie den Code umschreiben können. Dazu muss die folgende Option in der Datei &quot; **serverConf.xml** &quot;geändert werden:
+Tritt während der Ausführung nach der Aktualisierung ein &quot;SQLData&quot;-Fehler auf, müssen Sie dieses Attribut ändern, um vorübergehend die Verwendung von &quot;SQLData&quot;-basierten Syntaxen zuzulassen, sodass Sie den Code umschreiben können. Dazu muss die folgende Option in der Datei **serverConf.xml** geändert werden:
 
 ```
 allowSQLInjection="true"
@@ -274,7 +274,7 @@ Starten Sie daher die Nachaktualisierung mit dem folgenden Befehl neu:
 nlserver config -postupgrade -instance:<instance_name> -force
 ```
 
-Sie müssen die Sicherheitszonen konfigurieren (siehe [Sicherheit](#security)) und dann die Sicherheit erneut aktivieren, indem Sie die Option ändern:
+Sie müssen die Sicherheitszonen konfigurieren (siehe [Sicherheit](#security)) und dann die Sicherheit durch Ändern der Option erneut aktivieren:
 
 ```
 allowSQLInjection="false"
@@ -390,7 +390,7 @@ Der Alias ist optional
 
 **Tipps und Tricks**
 
-Verwenden Sie in einem `<subQuery>` Element die folgende Syntax, um auf ein Feld &quot;field&quot;des `<queryDef>` Hauptelements zu verweisen: `[../@field]`
+In einem `<subQuery>`-Element, um auf ein &quot;field&quot;-Feld der Hauptseite `<queryDef>` zu verweisen   -Element verwenden Sie die folgende Syntax: `[../@field]`
 
 Beispiel:
 
@@ -419,13 +419,13 @@ Beispiel:
 
 Die Migration wird nach der Aktualisierung durchgeführt und Konflikte können in Berichten, Formularen oder Webanwendungen auftreten. Diese Konflikte können über die Konsole gelöst werden.
 
-Nach der Ressourcensynchronisierung können Sie mit dem Befehl **nach der Aktualisierung** erkennen, ob die Synchronisierung Fehler oder Warnungen hervorruft.
+Nach der Ressourcensynchronisierung können Sie mit dem Befehl **postupgrade** erkennen, ob die Synchronisierung Fehler oder Warnungen hervorruft.
 
 ### Ansicht des Synchronisierungsergebnisses {#view-the-synchronization-result}
 
 Das Synchronisierungsergebnis kann auf zwei Arten angezeigt werden:
 
-* In the command-line interface, errors are materialized by a triple chevron **>>>** and synchronization is stopped automatically. Warnings are materialized by a double chevron **>>** and must be resolved once synchronization is complete. At the end of the postupgrade, a summary is displayed in the command prompt. Beispiel:
+* In der Befehlszeilenschnittstelle werden Fehler durch ein dreifaches chevron **>>** angezeigt und die Synchronisierung wird automatisch beendet. Warnungen werden durch eine Dublette chevron **>** erzeugt und müssen nach Abschluss der Synchronisierung aufgelöst werden. Am Ende der Aktualisierung wird an der Eingabeaufforderung eine Zusammenfassung angezeigt. Beispiel:
 
    ```
    2013-04-09 07:48:39.749Z        00002E7A          1     info    log     =========Summary of the update==========
@@ -438,7 +438,7 @@ Das Synchronisierungsergebnis kann auf zwei Arten angezeigt werden:
 
    Wenn es sich bei der Warnung um einen Ressourcenkonflikt handelt, muss der Operator darauf achten, ihn zu beheben.
 
-* Die Datei &quot; **postupgrade_`<server version number>`_time&quot;der Datei &quot;postupgrade`>`.log** &quot;enthält das Synchronisierungsergebnis. Er ist standardmäßig im folgenden Verzeichnis verfügbar: **Installationsordner/var/`<instance>`postupgrade**. Fehler und Warnungen werden durch die **Attribute &quot;error** &quot;und &quot; **warning** &quot;angezeigt.
+* Die Datei **postupgrade_`<server version number>`_time of postupgrade`>`.log** enthält das Synchronisierungsergebnis. Er ist standardmäßig im folgenden Verzeichnis verfügbar: **Installationsordner/var/`<instance>`postupgrade**. Fehler und Warnungen werden durch die Attribute **error** und **warning** angezeigt.
 
 ### Beheben eines Konflikts {#resolve-a-conflict}
 
@@ -446,7 +446,7 @@ Die Behebung von Konflikten darf nur von fortgeschrittenen Operatoren und solche
 
 Um einen Konflikt zu lösen, wenden Sie den folgenden Prozess an:
 
-1. Platzieren Sie den Cursor in der Baumstruktur des Adobe Campaigns über **[!UICONTROL Administration > Konfiguration > Paketverwaltung > Konflikte]** bearbeiten.
+1. Platzieren Sie den Cursor in der Baum-Struktur des Adobe Campaigns auf **[!UICONTROL Administration > Konfiguration > Paketverwaltung > Konflikte bearbeiten]**.
 1. Wählen Sie den Konflikt aus, den Sie in der Liste lösen möchten.
 
 Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
@@ -460,20 +460,20 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
-1. Suchen Sie im unteren Bereich des Fensters nach der **`_conflict_ string`** zum Auffinden der Entitäten mit Konflikten. Die mit der neuen Version installierte Entität enthält das **neue** Argument. Die Entität, die mit der vorherigen Version übereinstimmt, enthält das **cus** -Argument.
+1. Suchen Sie im unteren Bereich des Fensters nach dem **`_conflict_ string`**, um die Entitäten mit Konflikten zu suchen. Die mit der neuen Version installierte Entität enthält das Argument **new**. Die Entität, die der vorherigen Version entspricht, enthält das Argument **cus**.
 
    ![](assets/s_ncs_production_conflict002.png)
 
-1. Löschen Sie die Version, die Sie nicht behalten möchten. Löschen Sie die **`_conflict_argument_ string`** Entität, die Sie behalten möchten.
+1. Löschen Sie die Version, die Sie nicht behalten möchten. Löschen Sie die **`_conflict_argument_ string`** der Entität, die Sie behalten möchten.
 
    ![](assets/s_ncs_production_conflict003.png)
 
-1. Gehen Sie zu dem Konflikt, den Sie gelöst hätten. Klicken Sie auf das Symbol **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Als aufgelöst]** deklarieren.
+1. Gehen Sie zu dem Konflikt, den Sie gelöst hätten. Klicken Sie auf das Symbol **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Als aufgelöst erklären]**.
 1. Speichern Sie Ihre Änderungen: Der Konflikt ist jetzt gelöst.
 
 ## Tomcat {#tomcat}
 
-Der integrierte Tomcat-Server in Adobe Campaign v7 hat die Version geändert (Tomcat 7). Sein Installationsordner (tomcat-6) hat sich daher ebenfalls geändert (tomcat 7). Vergewissern Sie sich nach der Aktualisierung, dass die Pfade mit dem aktualisierten Ordner verknüpft sind (in der Datei &quot; **[!UICONTROL serverConf.xml]** &quot;):
+Der integrierte Tomcat-Server in Adobe Campaign v7 hat die Version geändert (Tomcat 7). Sein Installationsordner (tomcat-6) hat sich daher ebenfalls geändert (tomcat 7). Vergewissern Sie sich nach der Aktualisierung, dass die Pfade mit dem aktualisierten Ordner verknüpft sind (in der Datei **[!UICONTROL serverConf.xml]**):
 
 ```
 $(XTK_INSTALL_DIR)/tomcat-8/bin/bootstrap.jar 
@@ -497,14 +497,14 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 * nms:mobileOfferView
 * nms:paperOfferView
 
-### Angebot {#offer-content}
+### Angebot-Inhalt {#offer-content}
 
 In v7 wurde der Angebot-Inhalt verschoben. In Version 6.02 befanden sich die Inhalte in jedem Repräsentations-Schema (**nms:emailOfferView**). In v7 befindet sich der Inhalt jetzt im Angebot-Schema. Nach der Aktualisierung ist der Inhalt daher nicht mehr in der Oberfläche sichtbar. Nach der Aktualisierung müssen Sie den Inhalt des Angebots neu erstellen oder ein Skript entwickeln, das den Inhalt automatisch vom Schema der Darstellung in das Schema des Angebots verschiebt.
 
 >[!IMPORTANT]
 Wenn einige Versand, die konfigurierte Angebot verwenden, nach der Migration gesendet werden sollen, müssen Sie alle diese Versand in v7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der eigentlichen 6.1-Migration abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
 
-Ein Beispiel für ein Bewegungsskript (**interactionTo610_full_XX.js**) ist im Ordner &quot; **Migration** &quot;im Ordner &quot;Adobe Campaign v7&quot;verfügbar. Diese Datei zeigt ein Skript für einen Client, das eine einzelne E-Mail-Darstellung pro Angebot verwendet (die **[!UICONTROL Felder htmlSource]** und **[!UICONTROL textSource]** ). Der in der **Tabelle &quot;NmsEmailOfferView** &quot;enthaltene Inhalt wurde in die Tabelle &quot;Angebot&quot;verschoben.
+Ein Beispiel für ein Bewegungsskript (**interactionTo610_full_XX.js**) ist im Ordner **migration** im Adobe Campaign v7 verfügbar. Diese Datei zeigt ein Beispiel eines Skripts für einen Client, das eine einzelne E-Mail-Darstellung pro Angebot verwendet (die Felder **[!UICONTROL htmlSource]** und **[!UICONTROL textSource]**). Der in der Tabelle **NmsEmailOfferView** enthaltene Inhalt wurde in die Tabelle &quot;Angebot&quot;verschoben.
 
 >[!NOTE]
 Die Verwendung dieses Skripts erlaubt Ihnen nicht, die Optionen &quot;Content-Management&quot;und &quot;Renderfunktionen&quot;zu nutzen. Um von diesen Funktionen profitieren zu können, müssen Sie die Katalogfunktionen, insbesondere die Angebot zum Angebot und die Konfigurationsräume, überdenken.
@@ -581,11 +581,11 @@ logInfo("Done");
 
 Im Folgenden finden Sie die Vorgehensweise, nach der Sie den Angebot-Inhalt verschoben haben, wenn Sie nur eine Umgebung haben. Nehmen wir in diesem Fall &quot;ENV&quot; als Beispiel.
 
-1. Aktualisieren Sie in allen Platzierungen der &quot;ENV&quot;-Umgebung die Liste der verwendeten Felder. Für eine Platzierung, die nur **[!UICONTROL htmlSource]** verwendet, müssen Sie beispielsweise die **[!UICONTROL Ansicht/htmlSource]** hinzufügen.
+1. Aktualisieren Sie in allen Platzierungen der &quot;ENV&quot;-Umgebung die Liste der verwendeten Felder. Bei einer Platzierung, die nur **[!UICONTROL htmlSource]** verwendet, müssen Sie beispielsweise **[!UICONTROL Ansicht/htmlSource]** hinzufügen.
 
    ![](assets/migration_interaction_2.png)
 
-1. Wählen Sie auf der Registerkarte &quot; **[!UICONTROL Allgemein]** &quot;im Feld &quot; **[!UICONTROL Typ der Umgebung]** &quot;die Option &quot; **[!UICONTROL Live]**&quot;aus.
+1. Wählen Sie im Feld **[!UICONTROL Typ der Umgebung]** auf der Registerkarte **[!UICONTROL Allgemein]** die Option **[!UICONTROL Live]**.
 
    ![](assets/migration_interaction_3.png)
 
@@ -593,13 +593,13 @@ Im Folgenden finden Sie die Vorgehensweise, nach der Sie den Angebot-Inhalt vers
 
    ![](assets/migration_interaction_4.png)
 
-1. Stellen Sie alle Platzierungen der Umgebung &quot;ENV&quot;bereit (klicken Sie mit der rechten Maustaste > **[!UICONTROL Aktionen > Bereitstellen]**) und wählen Sie die Umgebung &quot;ENV_DESIGN&quot;aus.
+1. Stellen Sie alle Platzierungen der &quot;ENV&quot;-Umgebung bereit (klicken Sie mit der rechten Maustaste > **[!UICONTROL Aktionen > Bereitstellen]**) und wählen Sie die Umgebung &quot;ENV_DESIGN&quot;.
 
    ![](assets/migration_interaction_5.png)
 
 1. Führen Sie das gleiche für alle Angebot der &quot;ENV&quot;-Umgebung aus.
 1. Aktivieren Sie alle Umgebung-Angebot &quot;ENV_DESIGN&quot;auf den entsprechenden Kanälen.
-1. Testen Sie, wie Sie ein Angebot live machen. Wenn keine Probleme auftreten, führen Sie ausstehende Aufgaben in der neuesten Benachrichtigung **[!UICONTROL zum Workflow-Aufgabe-]** Angebot (offerMgt) aus, um alle Angebot zu aktivieren.
+1. Testen Sie, wie Sie ein Angebot live machen. Wenn keine Probleme auftreten, führen Sie ausstehende Aufgaben auf der neuesten Workflow-Aufgabe **[!UICONTROL Angebot-Benachrichtigung]** (offerMgt) aus, um alle Angebot zu aktivieren.
 
    ![](assets/migration_interaction_6.png)
 
@@ -616,7 +616,7 @@ Alle Standardberichte verwenden derzeit die Render-Engine v6.x. Wenn Sie diesen 
 
 ### Personalisierte Berichte {#personalized-reports}
 
-Wenn Sie das blaue Banner von v7 verwenden möchten (sodass Sie Zugriff auf die Universen haben), müssen Sie die Berichte erneut veröffentlichen. Wenn Probleme auftreten, können Sie die v6.0-Rendering-Engine erzwingen. Gehen Sie dazu zu **[!UICONTROL Eigenschaften]** im Bericht, klicken Sie auf **[!UICONTROL Rendering]** und wählen Sie die Rendering-Engine der **[!UICONTROL Version 6.0 (Flash und OpenOffice)]** .
+Wenn Sie das blaue Banner von v7 verwenden möchten (sodass Sie Zugriff auf die Universen haben), müssen Sie die Berichte erneut veröffentlichen. Wenn Probleme auftreten, können Sie die v6.0-Rendering-Engine erzwingen. Gehen Sie dazu innerhalb des Berichts zu **[!UICONTROL Eigenschaften]**, klicken Sie auf **[!UICONTROL Rendern]** und wählen Sie die Rendering-Engine **[!UICONTROL Version 6.0 (Flash &amp; OpenOffice)]**.
 
 ![](assets/migration_reports_1.png)
 
@@ -631,12 +631,12 @@ Es gibt zwei Webanwendungsfamilien:
 
 ### Identifizierte Webanwendungen {#identified-web-applications}
 
-Genau wie bei Berichten (siehe [Berichte](#reports)) müssen Sie, wenn Sie JavaScript hinzugefügt haben, bei Bedarf prüfen und anpassen. Wenn Sie vom blauen Banner der Version 7 (mit den Universen) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen. Wenn Ihr JavaScript-Code funktioniert, können Sie die Rendering-Engine v6.x auswählen. Ist dies nicht der Fall, können Sie die v6.0-Rendering-Engine verwenden, während Sie Ihren Code anpassen, und dann die v6.x-Rendering-Engine verwenden.
+Genau wie bei Berichten (siehe [Berichte](#reports)) müssen Sie JavaScript bei Bedarf überprüfen und anpassen. Wenn Sie vom blauen Banner der Version 7 (mit den Universen) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen. Wenn Ihr JavaScript-Code funktioniert, können Sie die Rendering-Engine v6.x auswählen. Ist dies nicht der Fall, können Sie die v6.0-Rendering-Engine verwenden, während Sie Ihren Code anpassen, und dann die v6.x-Rendering-Engine verwenden.
 
 >[!NOTE]
 Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
 
-Webanwendung Verbindungsmethoden wurden in v7 geändert. Wenn Sie Verbindungsprobleme in Ihren identifizierten Webanwendungen feststellen, müssen Sie die Optionen **allowUserPassword** und **sessionTokenOnly** in der Datei **serverConf.xml** vorübergehend aktivieren. Ändern Sie nach der Aktualisierung die folgenden Optionswerte:
+Webanwendung Verbindungsmethoden wurden in v7 geändert. Wenn in Ihren identifizierten Webanwendungen Verbindungsprobleme auftreten, müssen Sie die Optionen **allowUserPassword** und **sessionTokenOnly** in der Datei **serverConf.xml** vorübergehend aktivieren. Ändern Sie nach der Aktualisierung die folgenden Optionswerte:
 
 ```
 allowUserPassword="true"
