@@ -19,13 +19,13 @@ ht-degree: 4%
 
 Integrierte Objekte sollten überwacht werden, und es ist wichtig zu verhindern, dass sie zu viel wachsen.
 
-## Sequenz von IDs {#sequence-of-ids}
+## Sequenz der IDs {#sequence-of-ids}
 
 Adobe Campaign verwendet eine ID-Sequenz, die entsprechend verwendet werden muss: **xtkNewId**. Wenn die Sequenz sehr schnell genutzt wird (d. h. ab 100.000 pro Tag), müssen Sie sicherstellen, dass sie mit Ihren Geschäftsanforderungen übereinstimmt, z. B. das Versenden von Millionen E-Mails pro Tag. Es ist möglich, eine eigene Sequenz für bestimmte Tabellen zu definieren. Sie können einen Workflow zur Überwachung der ID-Nutzung einrichten.
 
 Wenn die Sequenz mehr als 2 Milliarden erreicht (2.147.483.648 ist die exakte Zahl), geht sie zurück auf Null. Es muss vermieden und Probleme geschaffen werden, weshalb diese Sequenz überwacht werden muss.
 
-Um dies bei großen Tabellen zu verhindern, sollten Sie eine bestimmte Sequenz verwenden. Dies kann mit dem **pkSequence** -Attribut im Schema erfolgen.
+Um dies bei großen Tabellen zu verhindern, sollten Sie eine bestimmte Sequenz verwenden. Dies kann mit dem Attribut **pkSequence** im Schema erfolgen.
 
 Hochfrequente Workflows, die viele Protokolle erzeugen, benötigen viele IDs. Es wird daher dringend empfohlen, zu viele Protokolle und hohe Frequenzen in Workflows zu vermeiden.
 
@@ -47,13 +47,13 @@ Versände, die älter als zwei Jahre sind, sollten aus dem Vorfall entfernt werd
 
 Die Anzahl der Dateien auf dem Anwendungsserver sollte nicht unbegrenzt steigen.
 
-Importieren Sie Workflows erstellen Sie Dateien und verursachen Sie dadurch eine Festplattenerweiterung. Dies kann mithilfe der standardmäßigen [Datei-Wächter](../../workflow/using/file-collector.md) -Aktivität verhindert werden. Der Dateisammler verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
+Importieren Sie Workflows erstellen Sie Dateien und verursachen Sie dadurch eine Festplattenerweiterung. Dies kann mithilfe der standardmäßigen Aktivität [Datei-Wächter](../../workflow/using/file-collector.md) verhindert werden. Der Dateisammler verschiebt Dateien in einen temporären Ordner und löscht sie automatisch.
 
 Wenn ein Workflow Dateien importiert und nicht die Standardfunktionen nutzt, muss er bereinigt werden, damit der Speicherplatz auf der Festplatte auf ein Minimum beschränkt bleibt.
 
-## Transaktionsdaten und -protokolle {#transactional-data-and-logs}
+## Transaktionsdaten und Protokolle {#transactional-data-and-logs}
 
-Jeder [Workflow](../../workflow/using/data-life-cycle.md#work-table) , der Daten in Adobe Campaign importiert, sorgt für eine größere Datenbankgröße.
+Jeder [Workflow](../../workflow/using/data-life-cycle.md#work-table), der Daten in Adobe Campaign importiert, führt zu einer Vergrößerung der Datenbankgröße.
 
 Vergewissern Sie sich, dass Workflows bereinigt oder bereinigt werden, und löschen Sie die Datensätze effektiv. Alle Transaktionsdaten und Protokolle müssen bereinigt werden. Die Bereinigungstabellen werden nur von der Aufgabe bereinigt: Tracking und breite Protokolle. Spezifische Tabellen müssen durch bestimmte Workflows bereinigt werden. Siehe [diesen Abschnitt](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
 
