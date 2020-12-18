@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## System-Filter {#system-filters}
 
-Sie können den Zugriff auf Schemas je nach Zugriffsberechtigungen filtern. Mit System-Filtern können Sie die Lese- und Schreibberechtigungen von Entitäten, die in Schemas detailliert sind, mithilfe von **readAccess** - und **writeAccess** -Parametern verwalten.
+Sie können den Zugriff auf Schemas je nach Zugriffsberechtigungen filtern. Mit den Systemparametern können Sie die Lese- und Schreibberechtigungen von Entitäten verwalten, die in den Schemas beschrieben sind. Dazu verwenden Sie die Parameter **readAccess** und **writeAccess**.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Sie können den Zugriff auf Schemas je nach Zugriffsberechtigungen filtern. Mit 
 
 * **writeAccess**: bietet Schreibzugriff auf Schema-Daten.
 
-Diese Filter werden auf der Haupt- **Element** -Ebene der Schema eingegeben und können, wie in den folgenden Beispielen dargestellt, gebildet werden, um den Zugriff einzuschränken.
+Diese Filter werden auf der Haupt-**element**-Ebene der Schema eingegeben und können, wie in den folgenden Beispielen gezeigt, gebildet werden, um den Zugriff einzuschränken.
 
 * Schreibberechtigungen einschränken
 
@@ -45,7 +45,7 @@ Diese Filter werden auf der Haupt- **Element** -Ebene der Schema eingegeben und 
 
 * Berechtigungen zum Lesen und Schreiben einschränken:
 
-   Hier wird der Filter verwendet, um sowohl READ- als auch WRITE-Berechtigungen für das Schema für alle Operatoren zu deaktivieren. Nur das **interne** Konto, vertreten durch den Ausdruck &quot;$(loginId)!=0&quot;, hat diese Berechtigungen.
+   Hier wird der Filter verwendet, um sowohl READ- als auch WRITE-Berechtigungen für das Schema für alle Operatoren zu deaktivieren. Nur das **internal**-Konto, vertreten durch den Ausdruck &quot;$(loginId)!=0&quot;, hat diese Berechtigungen.
 
    ```
    <sysFilter name="readAccess"> 
@@ -57,13 +57,13 @@ Diese Filter werden auf der Haupt- **Element** -Ebene der Schema eingegeben und 
    </sysFilter>
    ```
 
-   Mögliche **expr** -Attributwerte, die zur Definition der Bedingung verwendet werden, sind TRUE oder FALSE.
+   Mögliche **expr**-Attributwerte, die zur Definition der Bedingung verwendet werden, sind TRUE oder FALSE.
 
 >[!NOTE]
 >
 >Wenn kein Filter angegeben ist, verfügen alle Operatoren über Lese- und Schreibberechtigungen für das Schema.
 
-## Schutz integrierter Schema {#protecting-built-in-schemas}
+## Integrierte Schemas schützen {#protecting-built-in-schemas}
 
 Standardmäßig sind integrierte Schema nur mit WRITE-Berechtigungen für Benutzer mit ADMINISTRATION-Rechten verfügbar:
 
@@ -100,7 +100,7 @@ Standardmäßig sind integrierte Schema nur mit WRITE-Berechtigungen für Benutz
 
 >[!IMPORTANT]
 >
->READ- und WRITE-Berechtigungen für das **xtk:sessionInfo** -Schema sind nur für das interne Konto einer Adobe Campaign-Instanz verfügbar.
+>READ- und WRITE-Berechtigungen für das **xtk:sessionInfo**-Schema sind nur für das interne Konto einer Adobe Campaign-Instanz verfügbar.
 
 ## Ändern der Filter von integrierten Schemas {#modifying-system-filters-of-built-in-schemas}
 
@@ -112,5 +112,5 @@ Sie können weiterhin die Filter der vordefinierten Schema ändern, die aufgrund
 
 1. Erstellen Sie eine Erweiterung für das betreffende Schema oder öffnen Sie eine bestehende Erweiterung.
 1. hinzufügen Sie ein untergeordnetes Element **`<sysfilter name="<filter name>" _operation="delete"/>`** im Hauptelement, um die Anwendung des Filters im gleichen Schema der Herkunft zu löschen.
-1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [Systemfilter](#system-filters)beschrieben.
+1. Wenn Sie möchten, können Sie einen neuen Filter hinzufügen, wie unter [Systemfilter](#system-filters) beschrieben.
 
