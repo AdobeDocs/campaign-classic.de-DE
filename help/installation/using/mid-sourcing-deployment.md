@@ -54,7 +54,7 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 >
 >Umleitung und Mid-Sourcing sind separate Elemente, der Tracking-Server wird jedoch im Allgemeinen für die Mid-Sourcing-Server freigegeben.
 
-## Installationsschritte und Konfigurationsschritte {#installation-and-configuration-steps-}
+## Installations- und Konfigurationsschritte {#installation-and-configuration-steps-}
 
 ### Voraussetzungen {#prerequisites}
 
@@ -64,4 +64,4 @@ Die allgemeine Kommunikation zwischen Servern und Prozessen erfolgt gemäß dem 
 
 ### Installieren und Konfigurieren (Mid-Sourcing-Bereitstellung) {#installing-and-configuring--mid-sourcing-deployment-}
 
-Siehe [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md).
+Siehe [Mid-Sourcing server](../../installation/using/mid-sourcing-server.md).
