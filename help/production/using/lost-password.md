@@ -23,16 +23,16 @@ Es gibt zwei mögliche Szenarien:
 
 * Passwort verloren durch einen Adobe Campaign-Operator.
 
-   In diesem Fall können Sie das Kennwort des Betreibers ändern. Dazu stellen Sie über einen Operator mit Administratorrechten eine Verbindung her, klicken Sie mit der rechten Maustaste auf einen Operator, wählen Sie **[!UICONTROL Aktionen]** > Kennwort **[!UICONTROL zurücksetzen]** und legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass Operatoren ihr Kennwort ändern, wenn sie die Verbindung zum ersten Mal wiederherstellen.
+   In diesem Fall können Sie das Kennwort des Betreibers ändern. Dazu stellen Sie über einen Operator mit Administratorrechten eine Verbindung her, klicken Sie mit der rechten Maustaste auf einen Operator, wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Kennwort zurücksetzen]** und legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass Operatoren ihr Kennwort ändern, wenn sie die Verbindung zum ersten Mal wiederherstellen.
 
    ![](assets/operator-passwd.png)
 
-* **Interner** Passwortverlust (nur lokale Kunden).
+* **** Interner Passwortverlust (nur lokale Kunden).
 
-   Wenn das **interne** Kennwort verloren geht, müssen Sie es erneut initialisieren. Gehen Sie dazu wie folgt vor:
+   Wenn das **internal**-Kennwort verloren geht, müssen Sie es erneut initialisieren. Gehen Sie dazu wie folgt vor:
 
-   1. Bearbeiten Sie die **Datei /usr/local/neolane/nl6/conf/serverConf.xml** .
-   1. Gehen Sie zur Zeile **internalPassword** .
+   1. Bearbeiten Sie die Datei **/usr/local/neolane/nl6/conf/serverConf.xml**.
+   1. Gehen Sie zur Zeile **internalPassword**.
 
       ```
       <!-- XTK authentication mode internalPassword : Password of internal account -->
@@ -61,5 +61,5 @@ Es gibt zwei mögliche Szenarien:
       Confirmation 
       ```
 
-   1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung im **internen** Modus herzustellen.
+   1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung im Modus **Internal** herzustellen.
 
