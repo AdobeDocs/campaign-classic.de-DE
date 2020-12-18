@@ -25,11 +25,11 @@ Gehen Sie wie folgt vor, um die Ansicht und den Dialog mit der neuen Empfänger-
 
 Adobe Campaign verwendet eine globale Variable &quot;Nms_DefaultRcpSchema&quot;, um mit der standardmäßigen Empfänger-Datenbank (nms:Empfänger) zu kommunizieren. Diese Variable muss daher geändert werden.
 
-1. Navigieren Sie zum Knoten **[!UICONTROL Administration>Plattform>Optionen]** des Explorers.
+1. Wechseln Sie zum Knoten **[!UICONTROL Administration>Plattform>Optionen]** des Explorers.
 1. Ändern Sie den Wert der Variablen **Nms_DefaultRcpSchema** mit dem Namen des Schemas, das der Tabelle des externen Empfängers entspricht (in diesem Fall: cus:individuell).
 1. Speichern Sie Ihre Änderungen.
 
-## Creating a new form {#creating-a-new-form-}
+## Erstellen eines neuen Formulars {#creating-a-new-form-}
 
 Wenn Sie ein neues Formular erstellen, können Sie die Daten der Tabelle für den externen Empfänger Ansicht und bearbeiten.
 
@@ -37,15 +37,15 @@ Wenn Sie ein neues Formular erstellen, können Sie die Daten der Tabelle für de
 >
 >Der Name des Formulars muss mit dem Namen des betreffenden Schemas identisch sein.
 
-1. Navigieren Sie zum Knoten **Administration > Konfiguration > Eingabefelder** des Explorers.
-1. Erstellen Sie eine neue **xtk:form** type- **Formulardatei** .
+1. Wechseln Sie zum Knoten **Administration > Configuration > Input forms** des Explorers.
+1. Erstellen Sie eine neue Datei **xtk:form** type **form**.
 1. Beschreiben Sie alle Überwachungen und Felder, die Sie je nach Tabellenvorlage benötigen.
 
    >[!NOTE]
    >
-   >Weitere Informationen zu **Formulartypdateien** finden Sie auf [dieser Seite](../../configuration/using/identifying-a-form.md).
+   >Weitere Informationen zu den Typdateien für **Formulare** finden Sie auf [dieser Seite](../../configuration/using/identifying-a-form.md).
 
-   In unserem aktuellen Beispiel muss die **Formulardatei** auf dem Schema **cus:single** basieren und daher das folgende Layout aufweisen:
+   In unserem aktuellen Beispiel muss die Datei **form** auf dem **cus:single**-Schema basieren und daher das folgende Layout aufweisen:
 
    ```
    <container colspan="2">
@@ -64,15 +64,15 @@ Wenn Sie ein neues Formular erstellen, können Sie die Daten der Tabelle für de
 
 ## Erstellen eines neuen Ordnertyps in der Navigationshierarchie {#creating-a-new-type-of-folder-in-the-navigation-hierarchy}
 
-1. Wechseln Sie zum Knoten **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** .
-1. Erstellen Sie ein neues **navtree** -Dokument vom Typ **navtree** .
+1. Wechseln Sie zum Knoten **[!UICONTROL Administration>Configuration>Navigationshierarchien]**.
+1. Erstellen Sie ein neues **xtk:navtree**-Dokument **navtree**.
 1. Beschreiben Sie alle Überwachungen und Felder, die Sie je nach Tabellenvorlage benötigen.
 
    >[!NOTE]
    >
-   >Weitere Informationen zu **navtree** -Typdateien finden Sie auf [dieser Seite](../../configuration/using/about-navigation-hierarchy.md).
+   >Weitere Informationen zu den Typdateien **navtree** finden Sie auf [dieser Seite](../../configuration/using/about-navigation-hierarchy.md).
 
-   Im aktuellen Beispiel muss die **navtree** -Datei auf dem **Schema cus:single** basieren und daher das folgende Formular haben:
+   Im aktuellen Beispiel muss die Datei **navtree** auf dem Schema **cus:single** basieren und daher das folgende Formular haben:
 
    ```
     <model name="root">
