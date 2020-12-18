@@ -27,7 +27,7 @@ Es gibt drei verschiedene Schwellenwerte:
 
    * Tomcat-Seite: alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat Client ankommen.
 
-      Dieser Schwellenwert wird in der Datei **nl6/tomcat-8/conf/server.xml** konfiguriert. Mit dem **Attribut maxThreads** können Sie den Schwellenwert der Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
+      Dieser Schwellenwert wird in der Datei **nl6/tomcat-8/conf/server.xml** konfiguriert. Mit dem Attribut **maxThreads** können Sie den Schwellenwert der Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,7 +43,7 @@ Es gibt drei verschiedene Schwellenwerte:
 
    * Datenbank: alle Verbindungen, die gleichzeitig in der Datenbank geöffnet werden, durch einen Prozess.
 
-      Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem **Attribut maxCnx** im **Datenquellenpool** können Sie den Schwellenwert für gleichzeitig verarbeitete Abfragen erhöhen.
+      Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem Attribut **maxCnx**, das sich in **Datenquellenpool** befindet, können Sie den Schwellenwert der gleichzeitig verarbeiteten Abfragen erhöhen.
 
       ```
           <!-- Data source
