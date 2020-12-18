@@ -10,18 +10,18 @@ translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
 workflow-type: tm+mt
 source-wordcount: '3775'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
 # Überwachungsverfahren{#monitoring-processes}
 
-Der Anwendungsserver und der Weiterleitungsserver (**Tracking**) können manuell oder automatisch überwacht werden.
+Der Anwendungsserver und der Weiterleitungsserver (**tracking**) können manuell oder automatisch überwacht werden.
 
 ## Manuelle Überwachung {#manual-monitoring}
 
-Go to **[!UICONTROL Monitoring]** and click the **[!UICONTROL Overview]** link to display the Adobe Campaign process monitoring page.
+Gehen Sie zu **[!UICONTROL Überwachung]** und klicken Sie auf den Link **[!UICONTROL Übersicht]**, um die Seite zur Überwachung des Adobe Campaigns anzuzeigen.
 
 ![](assets/d_ncs_monitoring.png)
 
@@ -33,19 +33,19 @@ Auf der angezeigten Seite können Sie den Status der verbundenen Instanz, d. h.:
 
 Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
 
-### Protokoll protokollieren {#log-journal}
+### Log-Protokoll {#log-journal}
 
-Es ist möglich, das Protokoll-Protokoll für einen Prozess anzuzeigen. Klicken Sie dazu auf den Prozess, z. B. **mta** , und klicken Sie dann auf das Protokoll-Protokoll **** öffnen.
+Es ist möglich, das Protokoll-Protokoll für einen Prozess anzuzeigen. Klicken Sie dazu beispielsweise auf den Prozess **mta** und dann auf **[!UICONTROL Öffnen Sie das Protokoll]** .
 
 ![](assets/d_ncs_monitoring2.png)
 
-### Systemindikatoren {#system-indicators}
+### Systemindikator {#system-indicators}
 
-Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über den Rechner, wie z.B. den physischen und virtuellen Speicher, die aktiven Prozesse und den verfügbaren Speicherplatz. Die Indikatoren unterscheiden sich für Linux- und Windows-Betriebssysteme. Rufen Sie die Seite &quot; **[!UICONTROL Instanzüberwachung]** &quot;auf und klicken Sie auf den Link &quot; **[!UICONTROL Anzeigen]** &quot;, um die Liste der Indikatoren zu öffnen
+Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über den Rechner, wie z.B. den physischen und virtuellen Speicher, die aktiven Prozesse und den verfügbaren Speicherplatz. Die Indikatoren unterscheiden sich für Linux- und Windows-Betriebssysteme. Gehen Sie zur Seite **[!UICONTROL Instanzüberwachung]** und klicken Sie auf den Link **[!UICONTROL Anzeigen]**, um die Liste der Indikatoren zu öffnen.
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : für das **Nachrichtencenter**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/monitoring-thresholds.md).
+* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : für das  **Nachrichtencenter**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/monitoring-thresholds.md).
 * **[!UICONTROL Speicher]** : Informationen zum physischen Speicher (RAM).
 
    **[!UICONTROL Aktueller Wert]** : tatsächlicher Speicherverbrauch.
@@ -58,9 +58,9 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtbetrags erreicht.
 
-   Wenn die **[!UICONTROL Warnungs]** - und **[!UICONTROL Warnhinweisanzeigen]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
+   Wenn die Indikatoren **[!UICONTROL Warnung]** und **[!UICONTROL Warnung]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
 
-* **[!UICONTROL Speicher]** austauschen: Informationen zum virtuellen Speicher, der mit einer Paging-Datei übereinstimmt: ein Bereich auf der Festplatte, den Windows verwendet, als wäre es RAM.
+* **[!UICONTROL Speicher]**  austauschen: Informationen zum virtuellen Speicher, der mit einer Paging-Datei übereinstimmt: ein Bereich auf der Festplatte, den Windows verwendet, als wäre es RAM.
 
    **[!UICONTROL Aktueller Wert]** : tatsächlicher Speicherverbrauch.
 
@@ -72,7 +72,7 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtbetrags erreicht.
 
-   Wenn die **[!UICONTROL Warn]** - und **[!UICONTROL Warnhinweisindikatoren]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Austauschdatei in den erweiterten Windows-Einstellungen erhöhen.
+   Wenn die Indikatoren **[!UICONTROL Warnung]** und **[!UICONTROL Warnung]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Austauschdatei in den erweiterten Windows-Einstellungen erhöhen.
 
 * **[!UICONTROL Datenträger XXX]** : Informationen über die Lesegeräte.
 
@@ -96,13 +96,13 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn die Anzahl der Prozesse gleich 1 ist.
 
-   Wenn der **[!UICONTROL Warnhinweis]** angezeigt wird, kann es sein, dass der betreffende Prozess durch die SQL-Datenbank-Engine gesperrt wird oder dass er in einer unendlichen Schleife feststeckt. Der von Adobe Campaign bereitgestellte **Watchdog** -Prozess führt automatisch zu einem erneuten Beginn aller Prozesse und ermöglicht Ihnen, dieses Problem zu lösen. Sie können jedoch auch den entsprechenden Prozess selbst stoppen, um einen erneuten Beginn zu erzwingen.
+   Wenn der Indikator **[!UICONTROL Alert]** angezeigt wird, kann es sein, dass der betreffende Prozess durch die SQL-Datenbank-Engine gesperrt wird oder dass er in einer Endlosschleife feststeckt. Der von Adobe Campaign bereitgestellte Vorgang **watchdog** führt automatisch einen täglichen erneuten Beginn aller Prozesse durch und ermöglicht es Ihnen, dieses Problem zu lösen. Sie können jedoch auch den entsprechenden Prozess selbst stoppen, um einen erneuten Beginn zu erzwingen.
 
 #### Linux {#in-linux}
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : für das **Nachrichtencenter**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/monitoring-thresholds.md).
+* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : für das  **Nachrichtencenter**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/monitoring-thresholds.md).
 * **[!UICONTROL Lastdurchschnitt (1/5/15 Minuten)]** : Informationen zur Last, d. h. der Nutzgeschwindigkeit des Prozessors durch die Prozesse, die auf dem Computer während der letzten Minute, fünf Minuten oder fünfzehn Minuten ausgeführt werden
 
    **[!UICONTROL Aktueller Wert]** : tatsächliche Belastung der Maschine.
@@ -125,9 +125,9 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtbetrags erreicht.
 
-   Wenn die **[!UICONTROL Warnungs]** - und **[!UICONTROL Warnhinweisanzeigen]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
+   Wenn die Indikatoren **[!UICONTROL Warnung]** und **[!UICONTROL Warnung]** angezeigt werden, können Sie das Problem lösen, indem Sie dem Computer, auf dem der Adobe Campaign-Server installiert ist, RAM hinzufügen. Sie können sich auch entscheiden, den Adobe Campaign-Server auf einem dedizierten Computer zu installieren.
 
-* **[!UICONTROL Speicher]** austauschen: Informationen zum virtuellen Speicher, der mit einer Paging-Datei übereinstimmt: ein Bereich auf der Festplatte, den Windows verwendet, als wäre es RAM.
+* **[!UICONTROL Speicher]**  austauschen: Informationen zum virtuellen Speicher, der mit einer Paging-Datei übereinstimmt: ein Bereich auf der Festplatte, den Windows verwendet, als wäre es RAM.
 
    **[!UICONTROL Aktueller Wert]** : tatsächlicher Speicherverbrauch.
 
@@ -139,7 +139,7 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn der Speicherverbrauch 90 % des Gesamtbetrags erreicht.
 
-   Wenn die **[!UICONTROL Warn]** - und **[!UICONTROL Warnhinweisindikatoren]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Austauschdatei erhöhen.
+   Wenn die Indikatoren **[!UICONTROL Warnung]** und **[!UICONTROL Warnung]** angezeigt werden, können Sie das Problem lösen, indem Sie die Größe der Austauschdatei erhöhen.
 
 * **[!UICONTROL Core-Dateien]** : Informationen zu den Dateien, die nach dem Absturz eines Adobe Campaigns generiert wurden. Mit diesen Dateien können Sie die Ursachen des Absturzes ermitteln.
 
@@ -151,9 +151,9 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn die Anzahl der Dateien gleich 1 ist.
 
-   Wenn ein Prozess aufgrund eines Absturzes fehlt, wird er auf der Liste von Prozessen rot angezeigt und automatisch durch den von Adobe Campaign bereitgestellten **Watchdog** -Prozess neu gestartet.
+   Wenn ein Prozess aufgrund eines Absturzes fehlt, wird er auf der Liste von Prozessen in roter Farbe angezeigt und automatisch durch den von Adobe Campaign bereitgestellten Vorgang **watchdog** neu gestartet.
 
-* **[!UICONTROL Anzahl der gemeinsamen Speichersegmente]** : Informationen zu den Speichersegmenten, die von allen Adobe Campaign-Prozessen gemeinsam genutzt werden.
+* **[!UICONTROL Anzahl der freigegebenen Speichersegmente]** : Informationen zu den Speichersegmenten, die von allen Adobe Campaign-Prozessen gemeinsam genutzt werden.
 
    **[!UICONTROL Aktueller Wert]** : Anzahl der derzeit verwendeten Speichersegmente.
 
@@ -205,13 +205,13 @@ Die Liste von Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn die Anzahl der Zombie-Prozesse näher an 2 liegt.
 
-   **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn die Anzahl der Zombie-Prozesse 2 erreicht.
+   **[!UICONTROL Warnhinweis]** wird angezeigt, wenn die Anzahl der Zombie-Prozesse 2 erreicht.
 
 #### Benutzerdefinierte Indikatoren {#customized-indicators}
 
 Mit Adobe Campaign können Sie Indikatoren anpassen. Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie eine **.sh** -Datei und benennen Sie sie **[!UICONTROL cust_indicator.sh]** .
+1. Erstellen Sie eine Datei **.sh** und geben Sie ihr den Namen **[!UICONTROL cust_indicator.sh]**.
 1. hinzufügen Sie Ihre benutzerdefinierten Indikatoren in diese Datei ein. Beispiel:
 
    ```
@@ -223,7 +223,7 @@ Mit Adobe Campaign können Sie Indikatoren anpassen. Gehen Sie dazu wie folgt vo
    </indicator>"
    ```
 
-   oder
+   or
 
    ```
    #!/bin/bash 
@@ -247,7 +247,7 @@ Diese Berichte zeigen die Statistiken zu SMTP-Versänden und SMTP-Fehler nach Do
 
 Um darauf zugreifen zu können, muss der Operator über Administratorrechte verfügen.
 
-Sie werden unter **Überwachung** > &quot;SMTP-Überwachung&quot;gruppiert.
+Sie werden unter **Monitoring** > &#39;SMTP-Überwachung&#39; gruppiert.
 
 ![](assets/smtp_reports_access.png)
 
@@ -260,21 +260,21 @@ Sie werden unter **Überwachung** > &quot;SMTP-Überwachung&quot;gruppiert.
 
 
 
-### SMTP-Entsendungsstatistik {#smtp-sending-statistics}
+### SMTP-Versandstatistiken {#smtp-sending-statistics}
 
-Mit dem **[!UICONTROL SMTP-Bericht zur]** Datenübertragung können Sie die Aktivität des Servers steuern. Es zeigt eine Synthese der einzelnen Mtachilds an.
+Mit dem Bericht **[!UICONTROL SMTP-Senden von Statistiken]** können Sie die Aktivität des Servers steuern. Es zeigt eine Synthese der einzelnen Mtachilds an.
 
 ![](assets/smtp_stats_report.png)
 
 Die Liste der Indikatoren für diesen Bericht ist im Diagramm dargestellt.
 
-1. Gesamtzahl der gesendeten Nachrichten.
+1. Anzahl gesendeter Nachrichten insgesamt
 1. 
    * Blaue Linie: Nachrichten, die zum Senden bereit sind, die in den Shaper eintrafen, d.h. die letzte Phase vor dem Senden SMTP (fällt mit den eingehenden Daten zusammen).
 
    * Grüne Linie: erfolgreich gesendete Nachrichten (zeitgleich mit den ausgehenden Daten).
 
-   * Rote Linie: Meldungen, die vom Shaper abgebrochen und an die **mta** zurückgegeben wurden (zeitgleich mit den bei dieser Wiederherstellung abgelehnten Daten).
+   * Rote Linie: Meldungen, die vom Shaper abgebrochen und an **mta** zurückgegeben wurden (zeitgleich mit den bei dieser Wiederherstellung abgelehnten Daten).
 
    Diese Werte werden in Anzahl der Meldungen pro Stunde ausgedrückt.
 
@@ -282,39 +282,39 @@ Die Liste der Indikatoren für diesen Bericht ist im Diagramm dargestellt.
 
    * Blaue Kurve: Warteschlange aktiver Nachrichten. Diese Nachrichten werden so bald wie möglich gesendet.
 
-   * Kaki-Kurve: die Warteschlange &quot;aufgeschoben&quot;. Diese Meldungen können aufgrund von Einschränkungen oder weil keine Verbindung zur Zielgruppe verfügbar ist, momentan nicht zurückgegeben werden. Weitere Zustellversuche finden alle 5, 10, 20, 40, 2 Min. usw. statt. für die definierte **MaxAgeSec** -Zeit vor dem Abbrechen.
+   * Kaki-Kurve: die Warteschlange &quot;aufgeschoben&quot;. Diese Meldungen können aufgrund von Einschränkungen oder weil keine Verbindung zur Zielgruppe verfügbar ist, momentan nicht zurückgegeben werden. Weitere Zustellversuche finden alle 5, 10, 20, 40, 2 Min. usw. statt. für die definierte Zeit **MaxAgeSec** vor dem Abbrechen.
 
 1. Diese Diagramme zeigen eine Detailansicht der abgebrochenen Meldungen (rote Kurve auf der zweiten Grafik): es zeigt den Anteil der Nachrichten ohne weitere Zustellversuche (mauve) verlassen, verglichen mit Nachrichten, deren Senden fehlgeschlagen (rot). Auf diese Weise können Sie den Anteil der Nachrichten, die nicht innerhalb des angegebenen Zeitraums verarbeitet werden, aufgrund von Einschränkungen durch den Statistikserver (Einschränken) oder aufgrund der Nichtverfügbarkeit des Remote-Servers Ansicht werden.
-1. SMTP-Verbindungen werden geöffnet oder geöffnet.
-1. Schätzen der Anzahl der **mtachild**.
+1. SMTP-Verbindungen, die offen sind oder geöffnet werden
+1. Schätzen Sie die Anzahl der **mtachild**.
 
 >[!NOTE]
 >
 >Dieser Bericht bezieht sich auf den Status der Komponente &quot;E-Mail-Traffic-Shaper&quot;.
 
-### SMTP-Fehler pro Domäne {#smtp-errors-per-domain}
+### SMTP-Fehler nach Domain {#smtp-errors-per-domain}
 
 Mit diesem Bericht können Sie die Versand-Fehler über einen bestimmten Zeitraum nach Domäne aufschlüsseln.
 
 >[!NOTE]
 >
->Die **Optionen minConnectionsToLog**, **minErrorsToLog** und **minMessagesToLog** der Datei **serverConf.xml** definieren die Schwellenwerte, oberhalb derer Verbindungsstatistiken berücksichtigt werden.
+>Die **minConnectionsToLog**-, **minErrorsToLog**- und **minMessagesToLog**-Optionen der **serverConf.xml**-Datei definieren die Schwellenwerte, oberhalb deren Verbindungsstatistiken berücksichtigt werden.
 
 ![](assets/smtp_error_report.png)
 
 Die Liste der Indikatoren für diesen Bericht ist nachstehend aufgeführt.
 
 * Die Spalte **Domäne** enthält den Namen der Domäne, an die die Nachrichten gesendet werden (oder den tatsächlichen Domänennamen, z. B. yahoo.com für yahoo.fr),
-* In der **Spalte &quot;Anhang** &quot;wird die Anzahl der für diese Domäne geöffneten SMTP-Verbindungen angezeigt.
+* Die Spalte **Cnx** zeigt die Anzahl der für diese Domäne geöffneten SMTP-Verbindungen an,
 * Die Spalte **Gesendet** entspricht der Anzahl der an diese Domäne gesendeten Nachrichten,
-* In der Spalte &quot; **Lautstärke** &quot;wird das Volumen der Meldungen angezeigt, die an diese Domäne gesendet werden sollen (Näherungswert),
-* In der Spalte &quot; **Fehler** &quot;wird ein Volumenindikator für Fehler in dieser Domäne im Zeitraum angezeigt.
-* In der Spalte **Letzte Antwort** wird die letzte SMTP-Antwortmeldung angezeigt, die für diese Domäne empfangen wurde.
-* In der Spalte &quot; **Datum** &quot;wird das Datum der letzten SMTP-Antwort angezeigt, die für diese Domäne eingegangen ist.
+* Die Spalte **Volume** zeigt das Volumen der Meldungen an, die an diese Domäne gesendet wurden (ungefährer Wert),
+* Die Spalte **Fehler** zeigt einen Volumenindikator für Fehler in dieser Domäne über den Zeitraum an,
+* Die Spalte **Letzte Antwort** zeigt die letzte SMTP-Antwortmeldung an, die für diese Domäne empfangen wurde.
+* In der Spalte **Datum** wird das Datum der letzten SMTP-Antwort angezeigt, die für diese Domäne eingegangen ist.
 
 >[!NOTE]
 >
->Die in den Spalten **Anhang**, **Gesendet** und **Volumen** angezeigten Werte werden anhand des im Feld **[!UICONTROL Zeitraum]** ausgewählten Zeitraums berechnet.
+>Die in den Spalten **Cnx**, **Gesendet** und **Volume** angezeigten Werte werden im Hinblick auf den im Feld **[!UICONTROL Zeitraum]** ausgewählten Zeitraum berechnet.
 
 Klicken Sie auf einen Domänennamen, um dessen Fehler Ansicht.
 
@@ -338,7 +338,7 @@ Klicken Sie auf einen PublicId-Bezeichner, um weitere Ansichten anzuzeigen.
 
 ## Rechnungsstellungsbericht {#billing-report}
 
-Der technische Arbeitsablauf für die **[!UICONTROL Rechnungsstellung]** sendet den Systembericht per E-Mail an den Rechnungs-Aktivität-Operator. Er wird standardmäßig am 25. jedes Monats ausgelöst.
+Der technische Arbeitsablauf **[!UICONTROL Rechnungsstellung]** sendet den Systembericht per E-Mail an den Aktivität-Operator. Er wird standardmäßig am 25. jedes Monats ausgelöst.
 
 Der technische Arbeitsablauf befindet sich in einem Unterordner des folgenden Knotens: **Administration** > **Produktion** > **Technischen Workflows**.
 
@@ -351,9 +351,9 @@ Sobald der Workflow alle 25 Monate gestartet wird, erhält Ihr Rechnungsführer 
 Die folgenden Metriken stehen zur Verfolgung Ihrer Versand zur Verfügung:
 
 * **[!UICONTROL Beginn]** : Beginn des Versands. Beachten Sie, dass es früher als das &quot;Von&quot;-Datum des Berichts sein kann.
-* **[!UICONTROL Beschriftung]** : Etikett des Versands. Versand mit weniger als 100 zu sendenden Meldungen gelten als zu klein und werden daher nach dem Datum des Beginns aggregiert. In diesem Fall zeigt das Etikett die Anzahl der Aggregat an, z. B. die [Aggregation von 3 kleinen Versänden].
+* **[!UICONTROL Beschriftung]** : Etikett des Versands. Versand mit weniger als 100 zu sendenden Meldungen gelten als zu klein und werden daher nach dem Beginn aggregiert. In diesem Fall zeigt das Etikett die Anzahl der Aggregat an, z. [Aggregation von 3 kleinen Versänden].
 * **[!UICONTROL Gesamtvolumen]** : Gesamtvolumen der für den Versand übertragenen Bytes.
-* **[!UICONTROL Durchschn. Volumen]** : Durchschnittliches Volumen der übertragenen Bytes. Dies ist das Ergebnis der folgenden Formel **(Gesamtvolumen/Meldungen)**, die die Berechnungsgrundlage der **[!UICONTROL Multiplikator]** -Metrik darstellt.
+* **[!UICONTROL Durchschn. Volumen]** : Durchschnittliches Volumen der übertragenen Bytes. Dies ist das Ergebnis der folgenden Formel **(total volume / messages)**, die die Berechnungsgrundlage der **[!UICONTROL Multiplier]**-Metrik darstellt.
 * **[!UICONTROL Nachrichten]** : Anzahl der gesendeten Nachrichten. Dazu gehören sowohl Nachrichten, die erfolgreich gesendet wurden, als auch weitere Zustellversuche (nach dem Empfang einer Absprungmeldung vom kontaktierten Server).
 * **[!UICONTROL Multiplikator (x)]** : Der Wert des Multiplikators wird vom durchschnittlichen Volumen der Nachrichten abgezogen.
 * **[!UICONTROL Anzahl]** : Ergebnis der Multiplikation der Nachrichten und der Multiplikator.
@@ -372,7 +372,7 @@ Ermöglicht die Liste einer Reihe von Indikatoren auf den Adobe Campaign- und Sy
 
 Die Ausgabe wird in einem einfach zu verarbeitenden XML-Format generiert.
 
-Dieser Befehl kann auch mit dem **fehlenden** Parameter ausgeführt werden, der die in dieser Instanz fehlenden Prozesse Liste, wenn die Konfigurationsdateien angeben, dass sie ausgeführt werden sollen.
+Dieser Befehl kann auch mit dem Parameter **-misst** ausgeführt werden, der die in dieser Instanz fehlenden Prozesse Liste, wenn die Konfigurationsdateien angeben, dass sie ausgeführt werden sollen.
 
 ```
 nlserver monitor -missing
@@ -382,7 +382,7 @@ stat@prod
 wfserver@prod
 ```
 
-### Vom Server veröffentlichte Informationen {#information-published-by-the-server}
+### Vom Server veröffentlichte Informationen{#information-published-by-the-server}
 
 #### /r/test {#r-test}
 
@@ -398,9 +398,9 @@ Es wird eine Zeile wie die folgende im XML-Format angezeigt:
 
 #### /nl/jsp/ping.jsp {#nl-jsp-ping-jsp}
 
-Diese **Seite http(s)://`<Application server url>`/nl/jsp/ping.jsp** funktioniert genauso wie das entsprechende Netzwerkunternehmen: Es testet eine komplette Abfrage, die durch apache/tomcat/web module/database läuft und auf den Client hochgeladen wird. Wenn alles korrekt funktioniert, wird &quot;OK&quot;zurückgegeben. Wir empfehlen, diesen Test auf Computern mit Zugriff auf die Datenbanken (z.B. mtas und Umfragen) durchzuführen.
+Diese **http(s)://`<Application server url>`/nl/jsp/ping.jsp**-Seite funktioniert auf dieselbe Weise wie das zugehörige NetzwerkGegenstück: Es testet eine komplette Abfrage, die durch apache/tomcat/web module/database läuft und auf den Client hochgeladen wird. Wenn alles korrekt funktioniert, wird &quot;OK&quot;zurückgegeben. Wir empfehlen, diesen Test auf Computern mit Zugriff auf die Datenbanken (z.B. mtas und Umfragen) durchzuführen.
 
-**Nutzung**: Ein Sitzungstoken, das mit einer Operatoranmeldung verknüpft ist, muss als Argument übergeben werden, um sich remote anmelden zu können (siehe Tipp in [Automatische Überwachung über Adobe Campaign-Skripte](#automatic-monitoring-via-adobe-campaign-scripts)).
+**Nutzung**: Ein Sitzungstoken, das mit einer Operatoranmeldung verknüpft ist, muss als Argument übergeben werden, um sich remote anmelden zu können (siehe Tipp in  [Automatische Überwachung über Adobe Campaign-Skripte](#automatic-monitoring-via-adobe-campaign-scripts)).
 
 Beispiel:
 
@@ -418,7 +418,7 @@ Dies ist ein Test, um zu überprüfen, ob ein Operator über eine Webseite auf d
 
 ![](assets/ncs_monitoring_web.png)
 
-**Nutzung**: Ein Sitzungstoken, das mit einer Operatoranmeldung verknüpft ist, mit der Sie eine Verbindung zur Instanz herstellen können, muss als Argument verwendet werden (siehe die Tipps in [Automatische Überwachung über Adobe Campaign-Skripte](#automatic-monitoring-via-adobe-campaign-scripts)).
+**Nutzung**: Ein Sitzungstoken, das mit einer Operatoranmeldung verknüpft ist, mit der Sie eine Verbindung zur Instanz herstellen können, muss als Argument verwendet werden (siehe die Tipps in  [Automatische Überwachung über Adobe Campaign-Skripte](#automatic-monitoring-via-adobe-campaign-scripts)).
 
 Der Operator und seine Anmeldung müssen zuvor in der Adobe Campaign-Client-Konsole mit den entsprechenden Datenbankrechten und -beschränkungen konfiguriert werden.
 
@@ -426,17 +426,17 @@ Der Operator und seine Anmeldung müssen zuvor in der Adobe Campaign-Client-Kons
 
 #### /nl/jsp/soaprouter.jsp {#nl-jsp-soaprouter-jsp}
 
-Diese **jsp** -Datei stellt den Einstiegspunkt der Adobe Campaign-Anwendungs-APIs dar. Sie kann daher eine detaillierte Überwachung des Antrags vornehmen. Es kann auch zur Überwachung von Adobe Campaign-Webdiensten verwendet werden. Es wird in unseren Überwachungs-Skripten verwendet, aber beachten Sie, dass es nur für Strombenutzer gilt.
+Diese **jsp** stellt den Einstiegspunkt der Adobe Campaign-Anwendungs-APIs dar. Sie kann daher eine detaillierte Überwachung des Antrags vornehmen. Es kann auch zur Überwachung von Adobe Campaign-Webdiensten verwendet werden. Es wird in unseren Überwachungs-Skripten verwendet, aber beachten Sie, dass es nur für Strombenutzer gilt.
 
-### Überwachung anhand von Bereitstellungstypen {#monitoring-based-on-deployment-types}
+### Überwachung auf Basis der Bereitstellungstypen {#monitoring-based-on-deployment-types}
 
-Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere Informationen finden Sie in [diesem Abschnitt](../../installation/using/hosting-models.md)). In diesem Abschnitt werden die verschiedenen automatischen Überwachungstechniken beschrieben, die je nach Installationstyp anzuwenden sind.
+Adobe Campaign aktiviert verschiedene Bereitstellungskonfigurationen (weitere Informationen dazu finden Sie in [diesem Abschnitt](../../installation/using/hosting-models.md)). In diesem Abschnitt werden die verschiedenen automatischen Überwachungstechniken beschrieben, die je nach Installationstyp anzuwenden sind.
 
 <table> 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring      </th> 
+   <th> Monitoring        </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -444,30 +444,30 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
    <td> Eigenständig </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/test</span> und <span class="uicontrol">/nl/jsp/monitor.jsp</span> auf dem Adobe Campaign-Server</p> </li> 
+     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/monitor.</span> jspon des Adobe Campaign-Servers</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> Standard </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/test</span> und <span class="uicontrol">/nl/jsp/ping.jsp</span> auf den Frontservern</p> </li> 
-     <li><p> <span class="uicontrol">/nl/jsp/monitor.jsp</span> auf dem Anwendungsserver</p> </li> 
+     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/ping.</span> jspon der Frontserver</p> </li> 
+     <li><p> <span class="uicontrol">/nl/jsp/monitor.</span> jspon des Anwendungsservers</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> Unternehmen </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/r/test</span> und <span class="uicontrol">/nl/jsp/ping.jsp</span> auf den Frontservern</p> </li> 
-     <li><p> <span class="uicontrol">/r/test</span> und <span class="uicontrol">/nl/jsp/monitor.jsp</span> auf dem Anwendungsserver</p> </li> 
+     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/ping.</span> jspon der Frontserver</p> </li> 
+     <li><p> <span class="uicontrol">/r/</span> testand  <span class="uicontrol">/nl/jsp/monitor.</span> jspon des Anwendungsservers</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td> Mid-Sourcing </td> 
    <td> 
     <ul> 
-     <li><p> <span class="uicontrol">/nl/jsp/monitor.jsp</span> auf dem Anwendungsserver</p> </li> 
+     <li><p> <span class="uicontrol">/nl/jsp/monitor.</span> jspon des Anwendungsservers</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -487,10 +487,10 @@ Adobe Campaign kann ein Instanzenüberwachungstool (netreport) bereitstellen, mi
 
 Für die automatische Überwachung sind folgende Vorsichtsmaßnahmen vor der Installation erforderlich:
 
-* Sie müssen über die Dateien **netreport.tgz** (Linux-Installation) oder **netreport.zip** (Windows-Installation) verfügen,
+* Sie müssen über die Dateien **netreport.tgz** (Linux-Installation) oder **netreport.zip** (Windows-Installation) verfügen.
 * Wir empfehlen Ihnen dringend, keine Überwachung auf dem zu überwachenden Rechner zu installieren.
 * Es muss auf einem Computer mit JRE oder JDK installiert sein,
-* unter Linux muss der zu überwachende Rechner das **bc** -Paket haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
+* unter Linux muss der zu überwachende Computer das **bc**-Paket haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/installing-packages-with-linux.md#distribution-based-on-rpm--packages).
 
 ### Installationsverfahren {#installation-procedure}
 
@@ -498,8 +498,8 @@ Das Installationsverfahren sieht wie folgt aus:
 
 1. Erstellen Sie in der Konsole bei Bedarf einen neuen Operator (der &quot;Überwachungsbenutzer&quot;ist bereits vorhanden), weisen Sie jedoch keine Rechte zu.
 1. Führen Sie Archiv-Extraktion aus.
-1. Lesen Sie die **Readme** -Datei.
-1. Aktualisieren Sie die Konfigurationsdatei &quot; **netconf.xml** &quot;.
+1. Lesen Sie die Datei **readme**.
+1. Aktualisieren Sie die Konfigurationsdatei **netconf.xml**.
 1. Aktualisieren Sie die Datei **netreport.bat** (Windows) oder **netreport.sh** (Linux).
 
 ### Konfigurieren der Datei &quot;netconf.xml&quot; {#configuring-the-netconf-xml-file}
@@ -541,33 +541,33 @@ Im Folgenden finden Sie ein Konfigurationsbeispiel:
 
 >[!NOTE]
 >
->Sie können verschiedene Konfigurationen angeben, indem Sie der Datei &quot; **netconf.xml** &quot;ein Suffix hinzufügen, z. B. **netconf-dev.xml**, **netconf-prod.xml** usw. Geben Sie dann die Konfiguration für die Ausführung des Berichts netreport in den **netreport.bat** - oder **netreport.sh** -Dateien an, indem Sie **$JAVA_HOME/bin/java netreport dev** oder **@%JAVA_HOME%binjava netreport prod** hinzufügen.
+>Sie können verschiedene Konfigurationen angeben, indem Sie der Datei **netconf.xml** ein Suffix hinzufügen, z. B. **netconf-dev.xml**, **netconf-prod.xml** usw. Geben Sie dann die Konfiguration für die Ausführung des Netreport in den Dateien **netreport.bat** oder **netreport.sh** an, indem Sie **$JAVA_HOME/bin/java netreport dev** oder **@%JAVA_HOME%binjava netreport prod** hinzufügen zum Beispiel.
 
 >[!IMPORTANT]
 >
->Damit der **Überwachungsoperator** funktioniert, muss sich der Computer, auf dem der Netzwerkbericht ausgeführt wird, in einer Sicherheitszone befinden, die sich im **sessionTokenOnly** -Modus befindet. Wenn für diesen Operator keine vertrauenswürdige IP-Maske angegeben wurde, muss sich die Sicherheitszone auch im **allowEmptyPassword** - und **allowUserPassword** -Modus befinden.
+>Damit der Operator **monitoring** funktioniert, muss sich der Computer, auf dem der Netzwerkbericht ausgeführt wird, in einer Sicherheitszone befinden, die sich im Modus **sessionTokenOnly** befindet. Wenn für diesen Operator keine vertrauenswürdige IP-Maske angegeben wurde, muss sich die Sicherheitszone auch im Modus **allowEmptyPassword** und **allowUserPassword** befinden.
 
-#### Element &quot;Eigenschaften&quot; {#properties--element}
+#### &#39;Properties&#39; element {#properties--element}
 
 Dieses Element wird verwendet, um die Konfiguration von E-Mails, d.h.
 
 * **mailServer**: SMTP-Server zum Senden von E-Mails (z. B.: smtp.domain.net).
 * **mailFrom**: E-Mail-Adresse des Berichtssenders (z. B.: monitoring@domain.net).
 * **empfängerList**: die Liste der E-Mail-Adressen der Empfänger zur Überwachung. Die Adressen müssen durch Kommas getrennt werden (keine Leerzeichen).
-* Der Modus &quot;**Nacht**&quot;(optional) wird verwendet, um das Senden von E-Mails zwischen dem angegebenen Zeitraum zu vermeiden. Stattdessen werden die Daten konsolidiert, und nach Ablauf der Aktivität wird eine E-Mail zur Nachtzeit gesendet (standardmäßig 7:00 Uhr).
-* Mit dem **BuildRange** -Unterelement (optional) können Sie eine Mindest- und eine Höchstaufbaunummer angeben. Für alle Computer, deren Build-Nummer nicht in diesen Bereich fällt, wird ein Fehler generiert.
+* Der Modus &quot;**night**&quot;wird verwendet (optional), um das Senden von E-Mails zwischen dem angegebenen Zeitraum zu vermeiden. Stattdessen werden die Daten konsolidiert, und nach Ablauf der Aktivität wird eine E-Mail zur Nachtzeit gesendet (standardmäßig 7:00 Uhr).
+* Mit dem Unterelement **buildRange** (optional) können Sie eine Mindest- und eine Höchstaufbaunummer angeben. Für alle Computer, deren Build-Nummer nicht in diesen Bereich fällt, wird ein Fehler generiert.
 
    ```
    <buildRange minimum="0000" maximum="9999"/>
    ```
 
-* Sie können ein **`<sla>`** (optionales) Unterelement zum **properties** -Element hinzufügen. Eine Protokolldatei wird jedes Mal generiert, wenn der netreport ausgeführt wird. Der Name der Datei enthält den Konfigurationsnamen sowie Datum und Uhrzeit, z. B. **dev_06_12_13_16_47_05.tmp**. Die Datei enthält die folgenden Informationen: Instanzname, Computername, Schweregrad, (0 bis 3, vom kritischsten zum kritischsten), Datum (Zeitstempelformat), Zeitraum (in Millisekunden) zwischen der Abfrage und der Antwort, Dienst verwendet (http, ncs, ncsex, redir). Diese Informationen werden am Ende jedes Dienstes durch Tabulatorzeichen und Zeilenumbrüche getrennt.
+* Sie können dem Element **`<sla>`** properties **ein (optionales) Unterelement hinzufügen.** Eine Protokolldatei wird jedes Mal generiert, wenn der netreport ausgeführt wird. Der Name der Datei enthält den Konfigurationsnamen sowie Datum und Uhrzeit, z. B. **dev_06_12_13_16_47_05.tmp**. Die Datei enthält die folgenden Informationen: Instanzname, Computername, Schweregrad, (0 bis 3, vom kritischsten zum kritischsten), Datum (Zeitstempelformat), Zeitraum (in Millisekunden) zwischen der Abfrage und der Antwort, Dienst verwendet (http, ncs, ncsex, redir). Diese Informationen werden am Ende jedes Dienstes durch Tabulatorzeichen und Zeilenumbrüche getrennt.
 
 >[!NOTE]
 >
->Das **Attribut persistHtmlFile** mit dem Wert &quot;true&quot;im **`<property>`** -Element wird verwendet, um den neuesten Überwachungsstatus in der Datei **netreport.md** aufzuzeichnen. Diese Datei wird im Installationsverzeichnis gespeichert.
+>Das **persistHtmlFile**-Attribut mit dem Wert &quot;true&quot;im **`<property>`**-Element wird verwendet, um den neuesten Überwachungsstatus in der Datei **netreport.md** aufzuzeichnen. Diese Datei wird im Installationsverzeichnis gespeichert.
 
-#### &#39;Instance&#39;-Element {#instance--element}
+#### &#39;Instance&#39; element {#instance--element}
 
 Mit diesem Element können Sie mehrere Computer (Hosts) in derselben Instanz gruppieren. Die Instanznamen werden im ersten Teil der Überwachungs-E-Mail angezeigt. Sie können auf den Namen einer Instanz klicken, um Details zu den einzelnen Computern aufzurufen.
 
@@ -593,31 +593,31 @@ Dieses Element konfiguriert die Überwachung eines bestimmten Servers auf dem Ho
 * **alias** (optional): Name des überwachten Computers, wie er im Bericht angezeigt wird.
 * **sessionToken**: stellt die Authentifizierung über ein autorisiertes Sitzungstoken bereit.
 
-   Um das Sitzungstoken zu konfigurieren, wählen Sie den **Überwachungs** -Operator in der Adobe Campaign-Konsole aus. Geben Sie auf der Registerkarte &quot; **Zugriffsrechte** &quot;die IP-Adressen der Computer an, die berechtigt sind, diese Instanz zu überwachen. Anschließend können Sie mit dem **Überwachungsbezeichner und ohne Angabe eines Kennworts eine Verbindung zur Überwachungsseite herstellen** .
+   Um das Sitzungstoken zu konfigurieren, wählen Sie den Operator **monitoring** in der Adobe Campaign-Konsole aus. Geben Sie auf der Registerkarte **Zugriffsrechte** die IP-Adressen der Computer an, die berechtigt sind, diese Instanz zu überwachen. Sie können dann mit dem **monitoring**-Bezeichner eine Verbindung zur Überwachungsseite herstellen, ohne ein Kennwort angeben zu müssen.
 
    ![](assets/ncs_operators_rights_02.png)
 
-* **criticalLevel** (optional): können Sie Fehler sortieren, die nach der Schwere angezeigt werden sollen. Mögliche Werte sind &quot;0&quot;(alle Ebenen werden angezeigt), &quot;1&quot;(nur hohe und kritische Fehler) und &quot;2&quot;(nur kritische Fehler angezeigt). Wenn dieses Attribut nicht angegeben ist, werden alle Fehlerebenen angezeigt.
-* **filter** (optional): können Sie bestimmte Workflow-Fehler ausschließen, z. B. **filter=&quot;wkf;wkf1&quot;**. Workflow-Beschriftungen müssen durch Semikolons getrennt werden.
+* **criticalLevel**  (optional): können Sie Fehler sortieren, die nach der Schwere angezeigt werden sollen. Mögliche Werte sind &quot;0&quot;(alle Ebenen werden angezeigt), &quot;1&quot;(nur hohe und kritische Fehler) und &quot;2&quot;(nur kritische Fehler angezeigt). Wenn dieses Attribut nicht angegeben ist, werden alle Fehlerebenen angezeigt.
+* **filter**  (optional): können Sie bestimmte Workflow-Fehler ausschließen, z. B.  **filter=&quot;wkf;wkf1&quot;**. Workflow-Beschriftungen müssen durch Semikolons getrennt werden.
 
 #### Unterelemente {#sub-elements}
 
 * **tcp**: überprüft, ob der Server ausfällt oder nicht. Sie müssen eine Anschlussnummer eingeben.
 * **http**: überprüft, ob der Webserver vorhanden ist (Anwendungsserver betriebsbereit).
-* **ncs**: prüft die Prozesse für die Instanz, die im Attribut &quot;instance&quot;eingegeben wurde (Workflow-Fehler, Speicherbelegung usw.). Mit dem Attribut **include** (mandatory) können Sie tote Prozesse anzeigen (&quot;true&quot;- oder &quot;false&quot;-Werte).
+* **ncs**: prüft die Prozesse für die Instanz, die im Attribut &quot;instance&quot;eingegeben wurde (Workflow-Fehler, Speicherbelegung usw.). Das **einschließlich** (obligatorisch)-Attribut gibt Ihnen die Möglichkeit, tote Prozesse anzuzeigen (&quot;true&quot;- oder &quot;false&quot;-Werte).
 * **redir**: überprüft die Verfolgung.
 
 In den meisten Fällen können nur die Unterelemente **ncs** und **redir** beibehalten werden.
 
-In jedem Fall können bestimmte Knoten in den Unterelementen überladen werden (z. B. der Knoten **port=75** , um den für die Verbindung http, ncs oder redir verwendeten Anschluss zu überladen):
+In jedem Fall können bestimmte Knoten in den Unterelementen überladen werden (z. B. der Knoten **port=75**, um den für die Verbindung http, ncs oder redir verwendeten Anschluss zu überladen):
 
 ```
 <ncs instance="clap40" url="/nl/jsp/soaprouter.jsp" includeDead="false" port="80"/>
 ```
 
-In den **Unterelementen ncs**, **redir** und **http** können Sie das Attribut **isSecure** (optional) hinzufügen, um zu entscheiden, ob das HTTPS-Protokoll (&quot;true&quot;- oder &quot;false&quot;-Werte) verwendet werden soll oder nicht. Wenn dieses Attribut nicht angegeben ist, wird das HTTP-Protokoll verwendet.
+In den Unterelementen **ncs**, **redir** und **http** können Sie das Attribut **isSecure** (optional) hinzufügen, um festzulegen, ob das HTTPS-Protokoll (&quot;true&quot;- oder &quot;false&quot;-Werte) verwendet werden soll oder nicht. Wenn dieses Attribut nicht angegeben ist, wird das HTTP-Protokoll verwendet.
 
-### Konfigurieren der Datei &quot;netreport.bat&quot;oder &quot;netreport.sh&quot; {#configuring-the-netreport-bat-or-netreport-sh--file}
+### Konfigurieren der Datei netreport.bat oder netreport.sh {#configuring-the-netreport-bat-or-netreport-sh--file}
 
 Um sie zu konfigurieren, bearbeiten Sie diese Datei und geben Sie an, in welchem Ordner JRE oder JDK installiert ist.
 
@@ -625,8 +625,8 @@ Um sie zu konfigurieren, bearbeiten Sie diese Datei und geben Sie an, in welchem
 
 Um die Überwachung zu starten, führen Sie die Datei **netreport.bat** oder **netreport.sh** in regelmäßigen Abständen über ein Skript aus. Ein Bericht wird nach der ersten Ausführung und dann nur im Ereignis einer Statusänderung gesendet.
 
-### Überwachung testen {#testing-monitoring}
+### Testen der Überwachung {#testing-monitoring}
 
-Führen Sie zum Testen der Überwachung die Datei **netreport.bat** oder **netreport.sh** aus.
+Um die Überwachung zu testen, führen Sie die Datei **netreport.bat** oder **netreport.sh** aus.
 
-Eine E-Mail wird an die Empfänger gesendet, die in der **Datei** netconf.xml **in der Datei** empfängerListangegeben sind.
+Eine E-Mail wird an die Empfänger gesendet, die in der Datei **empfängerList** der Datei **netconf.xml** angegeben sind.
