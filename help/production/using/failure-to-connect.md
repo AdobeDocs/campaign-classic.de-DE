@@ -19,14 +19,14 @@ ht-degree: 2%
 
 Die Gründe für ein Verbindungsproblem können mehrere sein und von verschiedenen Kontexten abhängen.
 
-Sie können die folgenden Tests durchführen. Sollte der Verbindungsfehler weiterhin auftreten, wenden Sie sich bitte an den **Adobe Campaign-Support**.
+Sie können die folgenden Tests durchführen. Wenn der Verbindungsfehler weiterhin auftritt, wenden Sie sich an den **Support für Adobe Campaigne**.
 
 
 
 <table> 
 <thead> 
 <tr> 
-<th>Kontrollen<br /> </th> 
+<th>Prüfungen<br /> </th> 
 <th>Lösung<br /> </th> 
 </tr> 
 </thead> 
@@ -45,7 +45,8 @@ Sie können die folgenden Tests durchführen. Sollte der Verbindungsfehler weite
 </tr>
 <tr> 
 <td>Wurde Adobe Campaign korrekt integriert?</td> 
-<td>Melden Sie sich bei: <b>http(s):///r/test</b> URL. Der Server sollte die folgende Art von Meldung zurückgeben: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie Ihre Webserverkonfiguration, dass die Integration berücksichtigt wird.</td>
+<td>Melden Sie sich bei: <b>http(s):///r/test</b> URL. Der Server sollte die folgende Art von Meldung zurückgeben: &lt;redir status='OK' date='YYYY/MM/DD HH:MM:SS' build='XXXX' host='&lt;hostname&gt;' localHost='&lt;server&gt;'/&gt;
+Wenn Sie dieses Ergebnis nicht erhalten, überprüfen Sie Ihre Webserverkonfiguration, ob diese Integration berücksichtigt wird.</td>
 </tr>
 <tr> 
 <td>Stellen Sie eine Verbindung mit der folgenden URL her: <b>http(s)://&lt;URLSERVER&gt;/nl/jsp/logon.jsp</b></td>
@@ -57,10 +58,10 @@ Sie können die folgenden Tests durchführen. Sollte der Verbindungsfehler weite
 </tr>
 <tr>
 <td>Überprüfen Sie die allgemeine Konfiguration der Sicherheitszonen.</td>
-<td>Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in <a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/>diesem Abschnitt.</a></td>
+<td>Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in diesem Abschnitt.<a href="https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/configuring-campaign-server.html?lang=en#configuring-campaign-server"/></a></td>
 </tr>
 <tr>
-<td>Der Befehl nlserver pdump gibt <b>keine Aufgaben zurück</b></td>
+<td>Der Befehl nlserver pdump gibt <b>Keine Aufgaben</b> zurück</td>
 <td>Sie müssen die gesamte Adobe Campaign-Anwendung neu starten. Verwenden Sie dazu den folgenden Befehl: <b>nlserver watchdog -svc -noconsole</b></td>
 </tr>
 </tbody> 
