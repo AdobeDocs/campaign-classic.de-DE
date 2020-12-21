@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 100%
+source-wordcount: '809'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Im Folgenden finden Sie einige häufig gestellte Fragen zu Datenschutz und Einve
 
 ## Schlüsselbegriffe {#key-terms}
 
-**Was sind die Schlüsselbegriffe zum Datenschutz?**
+### Was sind die Schlüsselbegriffe zum Datenschutz?
 
 Die unten aufgelisteten Elemente verlinken zu den wichtigsten Begriffen und Konzepten im Zusammenhang mit Datenschutz und Einverständniserklärung in Adobe Campaign:
 
@@ -32,7 +32,7 @@ Die unten aufgelisteten Elemente verlinken zu den wichtigsten Begriffen und Konz
 
 ## Vorbereitung auf Datenschutzverordnungen{#privacy-regulations-readiness}
 
-**Was empfiehlt Adobe Campaign, um die neuesten Datenschutzverordnungen einzuhalten?**
+### Was empfiehlt Adobe Campaign, um die neuesten Datenschutzverordnungen einzuhalten?
 
 Adobe bietet keine Rechtsberatung. Sie sollten mit Ihrer eigenen Rechtsabteilung zusammenarbeiten, um sicherzustellen, dass alle notwendigen Schritte für DSGVO, CCPA, PDPA, LGPD oder andere relevante Vorschriften unternommen werden.
 
@@ -68,7 +68,7 @@ Adobe bietet keine Rechtsberatung. Sie sollten mit Ihrer eigenen Rechtsabteilung
 
 ## Benutzerinteraktion aufrecht erhalten{#preserve-user-engagement}
 
-**Wie können Datenverantwortliche das Einverständnis ihrer Kunden erlangen, ohne die Benutzerinteraktion zu beeinträchtigen?**
+### Wie können Datenverantwortliche das Einverständnis ihrer Kunden erlangen, ohne die Benutzerinteraktion zu beeinträchtigen?
 
 In den Fällen, in denen das Einverständnis für bestimmte Marketing-Aktivitäten erforderlich ist, muss eine aktive Einverständniserklärung vom Verbraucher gegeben werden (d. h. kein Schweigen als Einverständnis oder vorab markierte Kontrollkästchen). Diese Einverständniserklärung muss außerdem ungebündelt erfolgen und darf nicht davon abhängig gemacht werden, dass Dienstleistungen angeboten werden.
 
@@ -78,7 +78,7 @@ Anstatt diese zusätzlichen Anforderungen als Gefahr für die Werbewirtschaft zu
 
 ## Einverständnis verwalten{#manage-consent}
 
-**Wie können Datenverantwortliche das Einverständnis in Adobe Campaign verwalten?**
+### Wie können Datenverantwortliche das Einverständnis in Adobe Campaign verwalten?
 
 Adobe Campaign bietet bereits Funktionen zur Einverständnisverwaltung auf mehr Ebenen, als die meisten Marketing-Experten nutzen: über benutzerdefinierte Datenfelder oder über einen oder mehrere Dienste.
 
@@ -88,7 +88,7 @@ So kann zum Beispiel das Datenmodell in Adobe Campaign erweitert werden, um nich
 
 ## Datenlöschung {#data-deletion}
 
-**Welche Daten werden von Datenverantwortlichen in Adobe Campaign gelöscht, wenn sie eine Kundenanfrage einer betroffenen Person erhalten?**
+### Welche Daten werden von Datenverantwortlichen in Adobe Campaign gelöscht, wenn sie eine Kundenanfrage einer betroffenen Person erhalten?
 
 Alle mit der betroffenen Person verknüpften Daten werden gelöscht, einschließlich vordefinierter und benutzerdefinierter Tabellen.
 
@@ -96,19 +96,21 @@ Technisch gesehen werden alle Daten gelöscht, die mit der betroffenen Person mi
 
 Als Datenverantwortlicher haben Sie die Möglichkeit, diese Einstellung anzupassen, indem Sie die Integrität der in den Datenschemata definierten Links ändern (z. B. wenn Sie einen geschäftlichen Grund haben, bestimmte Daten nicht zu löschen).
 
-**Wie wirkt sich die Löschung von Versand- und Trackinglogs auf Berichte aus?**
+### Wie wirkt sich die Löschung von Versand- und Trackinglogs auf Berichte aus?
 
 Berichte in Adobe Campaign basieren auf Indikatoren, die von aggregierten Daten aus Versand- und Trackinglogs berechnet werden. Deshalb sollte das Entfernen von einzelnen Logs keine Auswirkungen auf die in den Berichten dargestellten Metriken haben.
 
 ## Daten erneut importieren {#re-import-data}
 
-**In Adobe Campaign werden Datensätze häufig aus einer externen Datenquelle hochgeladen. Muss ich darauf achten, dass Daten zu einem späteren Zeitpunkt möglicherweise erneut importiert werden?**
+### Muss ich darauf achten, dass Daten zu einem späteren Zeitpunkt möglicherweise erneut importiert werden?
+
+In Adobe Campaign werden Datensätze häufig aus einer externen Datenquelle hochgeladen.
 
 Als Datenverantwortlicher müssen Sie sicherstellen, dass beim Erhalt einer Löschanfrage alle entsprechenden Daten der betroffenen Person aus allen Ihren Systemen gelöscht werden.
 
 ## Erneuter Opt-in {#opt-in-again}
 
-**Kann sich eine betroffene Person, deren Daten aus Adobe Campaign gelöscht wurde, zu einem späteren Zeitpunkt erneut anmelden?**
+**Kann ein Datensubjekt, dessen Daten aus Adobe Campaign gelöscht wurden, später Opt-in?**
 
 Eine betroffene Person kann sich erneut anmelden oder als neuer Empfänger hinzugefügt werden, nachdem ihre Daten aus Adobe Campaign gelöscht wurden.
 
