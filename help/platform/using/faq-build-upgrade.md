@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '2023'
-ht-degree: 100%
+source-wordcount: '2020'
+ht-degree: 99%
 
 ---
 
@@ -136,7 +136,7 @@ Ja. Kunden sollten Adobe während oder unmittelbar nach dem Upgrade der Produkti
 
 ## Muss ich die Client-Konsole aktualisieren?
 
-Ja. Die Client-Konsole muss denselben oder einen höheren Build haben als die Server-Instanz. Nach dem Upgrade sollten Sie von Ihrer Client-Konsole aufgefordert werden, eine Aktualisierung auf die aktuelle Build-Version durchzuführen, damit sie zum Server-Build passt.
+Ja. Die Client-Konsole muss sich auf demselben Build wie die Serverinstanz befinden. Nach dem Upgrade sollten Sie von Ihrer Client-Konsole aufgefordert werden, eine Aktualisierung auf die aktuelle Build-Version durchzuführen, damit sie zum Server-Build passt.
 
 ## Wie sieht der Rollback-Plan aus? Werden Backups meiner Daten aufbewahrt?
 
