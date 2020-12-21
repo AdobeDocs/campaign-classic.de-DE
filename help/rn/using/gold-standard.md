@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: f9584342d81b53ad5854b30b7c4970b0aba6d4ff
+source-git-commit: e4cdeddaeb19f3ab7d601343d2a2c91f1c27822b
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
@@ -35,7 +35,7 @@ Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deakt
 
 >[!CAUTION]
 >
->Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md).
+>Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 9{#gs-9}
 
@@ -82,7 +82,7 @@ Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 * Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.
 * Fehlerkorrektur – Es wurde ein geringfügiger Regressionsfehler in den Bereinigungs-Workflow-Logs behoben.
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard Version 6{#gs-6}
+## ![](assets/do-not-localize/red_2.png) Gold Standard Version 6{#gs-6}
 
 _9. März 2020_
 
@@ -90,7 +90,7 @@ Build 9032@19f73c5 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard Version 5{#gs-5}
+## ![](assets/do-not-localize/red_2.png) Gold Standard Version 5{#gs-5}
 
 _17. Dezember 2019_
 
@@ -98,7 +98,7 @@ Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Tracking-Fehler bei folgenden Kommunikationskanälen tritt nicht mehr auf: Mobile (SMS, MMS), Push (iOS, Android) und soziale Netzwerke (Facebook, Twitter). (NEO-19595)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard Version 4{#gs-4}
+## ![](assets/do-not-localize/red_2.png) Gold Standard Version 4{#gs-4}
 
 _11. Dezember 2019_
 
@@ -106,7 +106,7 @@ Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Keine Leistungsprobleme mehr beim Senden von Nachrichten mit einer MSSQL-Datenbank. (NEO-17558)
 
-## ![](assets/do-not-localize/orange_2.png) Gold Standard Version 3{#gs-3}
+## ![](assets/do-not-localize/red_2.png) Gold Standard Version 3{#gs-3}
 
 _20. November 2019_
 
