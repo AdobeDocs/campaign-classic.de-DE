@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 0abdbbc33350cf6ec85488483dadb177e685818b
+source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 100%
+source-wordcount: '921'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 
 Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes verwenden:
 
-* Mindestens Adobe Campaign-Version 20.3
+* Mindestens Adobe Campaign 20.3 oder Gold Standard 11
 * Adobe Analytics Standard-Version
 
 Sie benötigen außerdem:
