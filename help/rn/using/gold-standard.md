@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 2725767f826a9ee041555bb49e8bfd0964d41736
+source-git-commit: f9584342d81b53ad5854b30b7c4970b0aba6d4ff
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 90%
+source-wordcount: '820'
+ht-degree: 100%
 
 ---
 
@@ -24,24 +24,6 @@ Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upg
 Auf dieser Seite werden die Gold Standard-Versionen aufgeführt.
 
 Weitere Informationen zum Campaign Gold Standard-Programm finden Sie in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
-
-## ![](assets/do-not-localize/limited_2.png) Gold Standard Version 11{#gs-11}
-
-_21. Dezember 2020_
-
->[!CAUTION]
->
->Diese Version enthält ein neues Verbindungsprotokoll: Die Aktualisierung ist sowohl für den Server als auch für die Client-Konsole erforderlich, damit nach dem 21. März 2020 eine Verbindung zur Kampagne hergestellt werden kann.
-
-Der Build 9032@2a2a028 umfasst die folgenden Verbesserungen und Fehlerbehebungen:
-
-* Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
-
-* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
-
-* Nach dem Ende der Unterstützung für das Legacy-Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während der Nachrüstung auf das HTTP/2-Protokoll aktualisiert.
-
-* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard Version 10{#gs-10}
 
