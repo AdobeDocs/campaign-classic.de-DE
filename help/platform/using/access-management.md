@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 647a872d71d19802d7334a6e8f881f8d7ad94d13
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
 workflow-type: tm+mt
-source-wordcount: '3140'
-ht-degree: 99%
+source-wordcount: '3179'
+ht-degree: 98%
 
 ---
 
@@ -451,3 +451,7 @@ Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzu
 werden folgende Sendungen in der Ansicht angezeigt:
 
 ![](assets/s_ncs_user_add_folder_exple02.png)
+
+>[!NOTE]
+>
+>Bei der Verwaltung der Ereignis [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md) dürfen die Ordner **[!UICONTROL Echtzeit-Ereignis]** oder **[!UICONTROL Batch-Ereignis]** nicht als Ansichten auf den Ausführungsinstanzen festgelegt werden, da dies zu Problemen mit den Rechten führen kann. Weitere Informationen zur Ereignis-Sammlung finden Sie in [diesem Abschnitt](../../message-center/using/event-collection.md).
