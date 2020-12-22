@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: ht
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
-source-wordcount: '3084'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+workflow-type: tm+mt
+source-wordcount: '3085'
+ht-degree: 99%
 
 ---
 
@@ -281,7 +281,7 @@ Wenn alle Validierungen akzeptiert wurden, erhält der Versand den Status **[!UI
 
 >[!NOTE]
 >
->Die technischen Workflows für Kampagnenprozesse werden in der [Liste der Kampagnenprozesse](../../workflow/using/campaign.md) dargestellt.
+>Die Technischen Workflows zum Kampagne-Paket finden Sie unter [Liste der Technischen Workflows](../../workflow/using/about-technical-workflows.md).
 
 **1. Schritt - Datei validieren**
 
@@ -461,6 +461,6 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 
 In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign Classic beschrieben.
 
->[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
