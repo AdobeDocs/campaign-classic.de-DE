@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 13%
@@ -32,7 +32,7 @@ In einigen Fällen werden Workflows, die von einer Kampagne ausgeführt werden, 
 
 Das Problem kann verschiedene Ursachen haben. Gehen Sie wie folgt vor, um es zu beheben:
 
-1. Überprüfen Sie den Status des technischen Workflows. [****](../../workflow/using/campaign.md) Dieser Workflow verwaltet Aufträge oder Workflows in einer Kampagne. Wenn es fehlschlägt, führt dies dazu, dass Workflows nicht Beginn/Stopp. Starten Sie es neu, um die Kampagnen-Workflows fortzusetzen.
+1. Überprüfen Sie den Status des technischen Workflows. [****](../../workflow/using/about-technical-workflows.md) Dieser Workflow verwaltet Aufträge oder Workflows in einer Kampagne. Wenn es fehlschlägt, führt dies dazu, dass Workflows nicht Beginn/Stopp. Starten Sie es neu, um die Kampagnen-Workflows fortzusetzen.
 
    Weitere Informationen zur Überwachung von Technischen Workflows finden Sie auf [dieser Seite](../../workflow/using/monitoring-technical-workflows.md).
 
