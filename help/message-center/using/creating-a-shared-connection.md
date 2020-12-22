@@ -6,11 +6,11 @@ description: Geteilte Verbindung erstellen
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 100%
 >
 >* Erweiterungen von Schemata, die von [technischen Workflows des Message-Center-Moduls](../../message-center/using/technical-workflows.md) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 >* Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
+
 >
 
 
@@ -90,7 +91,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ Ausführungsinstanz zu er
 
 ## Ausführungsinstanz konfigurieren {#execution-instance}
 
-Damit die Kontrollinstanz eine Verbindung zur Ausführungsinstanz herstellen kann, ohne ein Passwort angeben zu müssen, geben Sie einfach die IP-Adresse der Kontrollinstanz im Abschnitt „Zugriffsberechtigungen“ von **Message Center** ein. Leere Passwörter sind jedoch standardmäßig nicht erlaubt.
+Damit die Kontrollinstanz eine Verbindung zur Ausführungsinstanz herstellen kann, ohne ein Kennwort angeben zu müssen, geben Sie einfach die IP-Adresse der Kontrollinstanz im Abschnitt **Nachrichtencenter** Zugriffsrechte ein. Leere Kennwörter sind jedoch standardmäßig verboten.
 
 Um ein leeres Passwort zu verwenden, wechseln Sie zu den Ausführungsinstanzen und definieren Sie eine Sicherheitszone, die auf die IP-Adresse des Informationssystems beschränkt ist, das die Ereignisse bereitstellt. Diese Sicherheitszone muss leere Passwörter zulassen und `<identifier> / <password>`-Typverbindungen akzeptieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
