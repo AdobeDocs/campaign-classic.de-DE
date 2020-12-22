@@ -6,30 +6,32 @@ description: Vorlagenpublikation
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 02dee9c4cc03784ccc20f147f816798248bd10f2
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 64%
 
 ---
 
 
 # Publikation von Vorlagen rückgängig machen{#template-unpublication}
 
-Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen publiziert wurde, kann sie depubliziert werden.
+Sobald eine Nachrichtenvorlage in den Ausführungsinstanzen publiziert wurde, kann sie depubliziert werden. Weitere Informationen zum Veröffentlichungsprozess für Vorlagen finden Sie in diesem Abschnitt [unter](../../message-center/using/template-publication.md).
+
+* Tatsächlich kann eine veröffentlichte Vorlage weiterhin aufgerufen werden, wenn das entsprechende Ereignis ausgelöst wird: Wenn Sie keine Nachrichtenvorlage mehr verwenden, wird empfohlen, die Veröffentlichung rückgängig zu machen. Damit soll verhindert werden, dass versehentlich unerwünschte Transaktionsnachrichten gesendet werden.
+
+   Gehen wir beispielsweise davon aus, dass Sie eine Nachrichtenvorlage publiziert haben, die Sie nur für Weihnachtskampagnen verwenden. Sie können die Vorlage nach der Weihnachtszeit depublizieren und im nächsten Jahr erneut publizieren.
+
+* Zudem können Sie keine Transaktionsnachrichten-Vorlagen löschen, die den Status **[!UICONTROL Publiziert]** aufweisen. In diesem Fall müssen Sie die Vorlage zuerst depublizieren.
 
 >[!NOTE]
 >
 >Diese Funktion ist ab Campaign-Version 20.2 verfügbar.
 
-Eine publizierte Vorlage kann aufgerufen werden. Darum wird empfohlen, eine Nachrichtenvorlage zu depublizieren, wenn Sie sie nicht mehr verwenden. Damit soll verhindert werden, dass versehentlich unerwünschte Transaktionsnachrichten gesendet werden. Gehen wir beispielsweise davon aus, dass Sie eine Nachrichtenvorlage publiziert haben, die Sie nur für Weihnachtskampagnen verwenden. Sie können die Vorlage nach der Weihnachtszeit depublizieren und im nächsten Jahr erneut publizieren.
-
-Zudem können Sie keine Transaktionsnachrichten-Vorlagen löschen, die den Status **[!UICONTROL Publiziert]** aufweisen. In diesem Fall müssen Sie die Vorlage zuerst depublizieren.
-
 Gehen Sie wie folgt vor, um eine Transaktionsnachrichten-Vorlage zu depublizieren.
 
-1. Gehen Sie in der Kontrollinstanz in den Knoten **[!UICONTROL Message Center > Transaktionsnachrichten-Vorlagen]** des Navigationsbaums.
+1. Wechseln Sie auf der Kontrollinstanz zum Ordner **[!UICONTROL Nachrichtencenter > Transaktionsnachrichtenvorlagen]** des Baums.
 1. Wählen Sie die Vorlage aus, die Sie depublizieren möchten.
 1. Klicken Sie auf **[!UICONTROL Depublizieren]**.
 
@@ -43,6 +45,10 @@ Der Status der Transaktionsnachrichten-Vorlage ändert sich von **[!UICONTROL Pu
 
 Nach Abschluss der Depublikation:
 
-* Beide Nachrichtenvorlagen (auf Batch- und Echtzeit-Ereignisse angewendet) werden aus jeder Ausführungsinstanz gelöscht. Sie werden im Ordner **[!UICONTROL Administration > Betreibung > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** nicht mehr angezeigt.
+* Beide Nachrichtenvorlagen (auf Batch- und Echtzeit-Ereignisse angewendet) werden aus jeder Ausführungsinstanz gelöscht.
 
-* Sobald eine Vorlage depubliziert wurde, können Sie sie bei Bedarf aus der Kontrollinstanz löschen. Wählen Sie dazu die gewünschte Vorlage aus der Liste aus und klicken Sie oben rechts im Bildschirm auf die Schaltfläche **[!UICONTROL Löschen]**.
+   Sie werden nicht mehr im Ordner **[!UICONTROL Administration > Produktion > Message Center-Ausführung > Standard > Transaktionsnachrichtenvorlagen]** angezeigt (siehe [diesen Abschnitt](../../message-center/using/template-publication.md)).
+
+* Nachdem die Veröffentlichung einer Vorlage rückgängig gemacht wurde, können Sie sie aus der Kontrollinstanz löschen.
+
+   Wählen Sie dazu die gewünschte Vorlage aus der Liste aus und klicken Sie oben rechts im Bildschirm auf die Schaltfläche **[!UICONTROL Löschen]**.
