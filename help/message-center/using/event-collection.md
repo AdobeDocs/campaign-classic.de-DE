@@ -6,11 +6,11 @@ description: Ereignisabruf
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '104'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+workflow-type: tm+mt
+source-wordcount: '142'
+ht-degree: 73%
 
 ---
 
@@ -25,3 +25,7 @@ Die vom Informationssystem erzeugten Ereignisse können auf zwei Weisen abgerufe
 Nach dem Abruf werden die Ereignisse von den technischen Workflows auf die Echtzeit- und Batch-Warteschlangen der Instanzen verteilt, bis sie einer Nachrichtenvorlage zugeordnet werden.
 
 ![](assets/messagecenter_events_queues_001.png)
+
+>[!NOTE]
+>
+>Auf den Ausführungsinstanzen dürfen die Ordner **[!UICONTROL Echtzeit-Ereignis]** oder **[!UICONTROL Batch-Ereignis]** nicht als Ansichten festgelegt werden, da dies zu Problemen mit [Zugriffsrechten](../../platform/using/access-management.md#about-permissions) führen könnte. Weitere Informationen zum Festlegen eines Ordners als Ansicht finden Sie unter [Info zu Ansichten](../../platform/using/access-management.md#about-views).
