@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
 workflow-type: tm+mt
-source-wordcount: '3684'
-ht-degree: 98%
+source-wordcount: '3745'
+ht-degree: 97%
 
 ---
 
@@ -28,6 +28,12 @@ Der Bereich &quot;Überwachung des Versands&quot;wurde in thematische Themen ums
 Es wurde ein Anwendungsfall hinzugefügt, in dem erläutert wird, wie die IP-Adressen von Absendern zu den Versandlogs hinzugefügt werden. [Mehr dazu](../../delivery/using/delivery-dashboard.md#use-case)
 
 Die Datenschutzhäufig gestellten Fragen wurden nach [diesem Abschnitt](../../platform/using/privacy-faq.md) verschoben.
+
+Es wurde ein Anwendungsfall zur Verwendung der Merge-Funktion der Deduplizierung-Duplikate-Aktivität hinzugefügt. [Mehr dazu](../../workflow/using/deduplication-merge.md)
+
+Die Seite für das SMS-Connector-Protokoll und die Einstellungen wurde [hier](../../delivery/using/sms-protocol.md) verschoben.
+
+Dem Abschnitt &quot;Transaktionsnachrichten&quot;wurde ein Hinweis hinzugefügt, der darauf hinweist, dass die Ereignis-Ordner nicht als Ansichten auf den Ausführungsinstanzen festgelegt werden dürfen, um Probleme mit den Zugriffsrechten zu vermeiden. [mehr dazu](../../message-center/using/event-collection.md)
 
 ## November 2020 {#nov-2020}
 
