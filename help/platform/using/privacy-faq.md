@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 98%
@@ -110,7 +110,7 @@ Als Datenverantwortlicher müssen Sie sicherstellen, dass beim Erhalt einer Lös
 
 ## Erneuter Opt-in {#opt-in-again}
 
-**Kann ein Datensubjekt, dessen Daten aus Adobe Campaign gelöscht wurden, später Opt-in?**
+### Kann ein Datensubjekt, dessen Daten aus Adobe Campaign gelöscht wurden, später Opt-in?
 
 Eine betroffene Person kann sich erneut anmelden oder als neuer Empfänger hinzugefügt werden, nachdem ihre Daten aus Adobe Campaign gelöscht wurden.
 
