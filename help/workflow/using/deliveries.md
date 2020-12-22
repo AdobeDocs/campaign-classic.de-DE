@@ -6,18 +6,18 @@ description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendun
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '436'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 97%
 
 ---
 
 
 # Sendungen{#deliveries}
 
-Die folgenden Workflows werden standardmäßig installiert.
+Die unten aufgeführten Workflows werden standardmäßig mit dem Modul **Versand** installiert.
 
 <table> 
  <tbody> 
@@ -37,7 +37,7 @@ Die folgenden Workflows werden standardmäßig installiert.
    <td> Übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer ('billing'). Wird standardmäßig an jedem 25. des Monats gestartet.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Zählung aktiver Profile (Billing)</span><br /> </td> 
+   <td> <span class="uicontrol">Abrechnung (aktive Profile)</span> <br /> </td> 
    <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
    <td> <p>Mit diesem Workflow wird die Anzahl der aktiven Profile gezählt. Er wird standardmäßig jede Nacht um 1 Uhr ausgelöst.</p> <p><strong>Profile</strong> bezeichnet einen Datensatz, der einen Endkunden, einen Prospect oder Lead repräsentiert. Bei diesen Daten kann es sich z. B. um einen Datensatz in der nmsRecipient-Tabelle oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobiltelefons oder andere für einen bestimmten Kanal relevante Informationen enthält. Für die Fakturierung werden nur aktive Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.</p> <p>Die Kanäle Facebook und Twitter werden nicht berücksichtigt.</p> <p>Eine Übersicht über die <span class="uicontrol">Anzahl der aktiven Profile</span> erhalten Sie über das Menü <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Kampagnenverwaltung</span> &gt; <span class="uicontrol">Kundenmetriken</span>.</p> </td> 
   </tr> 
@@ -67,7 +67,7 @@ Die folgenden Workflows werden standardmäßig installiert.
    <td> Gibt stündlich validierte Angebote sowie im Angebotskatalog erstellte Kategorien in die Live-Umgebung frei.<br /> </td> 
   </tr> 
   <tr> 
-   <td> <span class="uicontrol">Vorschau</span> <br /> </td> 
+   <td> <span class="uicontrol">Planungen</span> <br /> </td> 
    <td> <span class="uicontrol">forecasting</span> <br /> </td> 
    <td> Analysiert die im Planungskalender verzeichneten Sendungen (Erstellung von Planungslogs). Wird standardmäßig täglich um 1 Uhr gestartet.<br /> </td> 
   </tr> 
