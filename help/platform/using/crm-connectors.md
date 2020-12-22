@@ -6,11 +6,11 @@ description: CRM-Connectoren
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: ht
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: c511c1ac4b9fccff30f73fcfd0db650d860514d2
+workflow-type: tm+mt
 source-wordcount: '2657'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -186,13 +186,13 @@ Folgende Schritte sind bei der Konfiguration des Microsoft Dynamics Connectors m
 
    Adobe Campaign Classic unterstützt die Dynamics 365 REST-Schnittstelle mit dem OAuth-Protokoll für die Authentifizierung.
 
-   Wenn der Freigabetyp **[!UICONTROL WebAPI]** ausgewählt wurde, müssen Sie eine App in Azure Directory anmelden und die Clientkennung (**clientId**) von Azure Directory abrufen. Eine Beschreibung dieser Anmeldung finden Sie auf [dieser Seite](https://docs.microsoft.com/de-DE/previous-versions/dynamicscrm-2016/developers-guide/mt622431(v=crm.8)?redirectedfrom=MSDN).
+   Wenn der Freigabetyp **[!UICONTROL WebAPI]** ausgewählt wurde, müssen Sie eine App in Azure Directory anmelden und die Clientkennung (**clientId**) von Azure Directory abrufen. Eine Beschreibung dieser Anmeldung finden Sie auf [dieser Seite](https://docs.microsoft.com/en-us/powerapps/developer/common-data-service/walkthrough-register-app-azure-active-directory).
 
    >[!NOTE]
    >
    >Der Parameter &quot;redirectURL&quot; ist für Adobe Campaign Classic nicht erforderlich.
 
-   Der Wert **clientId** wird zusammen mit dem Benutzernamen/Passwort verwendet, um das Bearer-Token mithilfe des Passworts für Grant Type abzurufen. Dies wird als **Resource Owner Password Credentials Grant** bezeichnet. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://blogs.msdn.microsoft.com/wushuai/2016/09/25/resource-owner-password-credentials-grant-in-azure-ad-oauth/).
+   Der Wert **clientId** wird zusammen mit dem Benutzernamen/Passwort verwendet, um das Bearer-Token mithilfe des Passworts für Grant Type abzurufen. Dies wird als **Resource Owner Password Credentials Grant** bezeichnet. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc).
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
