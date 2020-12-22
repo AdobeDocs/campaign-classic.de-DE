@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: cf4dbb59f7fb2df31ec3e034bb687e9a070c63bc
+source-git-commit: 26f232fafbcc39eb710135a1fc937e40a76ad0bd
 workflow-type: tm+mt
-source-wordcount: '2206'
-ht-degree: 100%
+source-wordcount: '2488'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +19,30 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
+## ![](assets/do-not-localize/green_2.png) Version 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
+
+_22. Dezember 2020_
+
+>[!CAUTION]
+>
+>Diese Version enthält ein neues Verbindungsprotokoll:  Die Aktualisierung ist sowohl für den Server als auch für die Client-Konsole erforderlich, damit nach dem 21. März 2020 eine Verbindung zur Kampagne hergestellt werden kann.
+
+**Verbesserungen**
+
+* Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
+* Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline basiert, wurde geändert und nach Adobe I/O verschoben. [Weitere Informationen](../../integrations/using/configuring-adobe-io.md)
+* Nach dem Ende der Unterstützung für das Legacy-Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während der Nachrüstung auf das HTTP/2-Protokoll aktualisiert.
+* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
+* Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, wodurch verhindert wurde, dass andere SMS-Versand gesendet wurden und Leistungsprobleme auftraten. (NEO-28609)
+* Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des Servers führte, indem eine Speicherbeschädigung beim Bereinigen des Ausdrucks-Parsers verhindert wurde. (NEO-26856)
+* Fehlerkorrektur – Es wurde ein Fehler behoben, der dazu führte, dass der Server abstürzte, wenn die Zieldaten des Rests einer **Aufspaltungsaktivität** in einem Workflow angezeigt wurden.
+* Fehlerkorrektur – Es wurde ein Fehler behoben, durch den eine Fehlermeldung angezeigt werden konnte, wenn versucht wurde, SMS-Nachrichten nach einer Abfrage in einem anderen Schema als **Empfänger** (nms:recipient) in der Vorschau anzuzeigen. (NEO-27517)
+* Es wurde ein Problem behoben, bei dem der Aufruf bei einer HTTPS-Verbindungsanforderung mit der explizit im Hostnamen definierten Anschlussnummer mit einem Zertifikatfehler fehlgeschlagen ist. (NEO-29146)
+* Es wurde ein Problem im POSIX-Thread-Management behoben, durch das große Core-Dump-Dateien in der Marketing-Instanz generiert wurden. (NEO-28117, NEO-29281)
+* Es wurden Probleme behoben, die zum Absturz des Webprozesses beim Vorbereiten von Versänden oder bei wiederholter Vorschau von Versänden führten. (NEO-27790, NEO-27517)
+* Es wurde ein Fehler behoben, der dazu führte, dass das Senden von Versänden oder Testversänden fehlschlug, wenn diese von einem Operator ausgelöst wurden, der keine Administratoren war. (NEO-28597)
+
+## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
 
 _11. September 2020_
 
