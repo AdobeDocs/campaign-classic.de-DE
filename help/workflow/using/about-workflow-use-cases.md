@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 97%
 
 ---
 
@@ -55,6 +55,7 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
 * [Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
+* [Verwenden der Zusammenführungsfunktion der Deduplizierung-Duplikate-Aktivität](../../workflow/using/deduplication-merge.md)
 
 ## Zielgruppenbestimmung {#designing-queries}
 
