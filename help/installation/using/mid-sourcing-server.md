@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Die Installation eines Mid-Sourcing-Servers erfolgt auf die gleiche Weise wie di
 
 >[!CAUTION]
 >
->Nachdem der Mid-Sourcing-Server eingerichtet wurde und die [Workflows](../../workflow/using/transfer-to-mid-sourcing.md) zum ersten Mal ausgeführt wurden, stellen Sie sicher, dass Sie den internen Namen der Mid-Sourcing-Externe Konti nicht aktualisieren.
+>Nachdem der Mid-Sourcing-Server eingerichtet wurde und die [Workflows](../../workflow/using/about-technical-workflows.md) zum ersten Mal ausgeführt wurden, stellen Sie sicher, dass Sie den internen Namen der Mid-Sourcing-Externe Konti nicht aktualisieren.
 
 ## Schritte zum Installieren und Konfigurieren einer Instanz {#steps-for-installing-and-configuring-an-instance}
 
