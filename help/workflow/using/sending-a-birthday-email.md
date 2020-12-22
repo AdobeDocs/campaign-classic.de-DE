@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie eine Geburtstags-E-Mail mit einem Workflow se
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: ht
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
-source-wordcount: '937'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 97%
 
 ---
 
@@ -204,7 +204,7 @@ Fügen Sie für die gewünschte Geburtstags-E-Mail-Vorlage einen **wiederkehrend
 
 >[!CAUTION]
 >
->Damit die Workflows ausgeführt werden, müssen die mit dem Kampagnenprozess verbundenen technischen Workflows gestartet werden. Lesen Sie diesbezüglich den Abschnitt [Liste der Kampagnenprozess-Workflows](../../workflow/using/campaign.md).
+>Damit die Workflows ausgeführt werden kann, müssen die Technischen Workflows zum Kampagne-Paket gestartet werden. Weitere Informationen hierzu finden Sie im Abschnitt [Liste der Technischen Workflows](../../workflow/using/about-technical-workflows.md).
 >
 >Wenn die Validierungsschritte für die Kampagne aktiviert sind, werden die Sendungen erst ausgeführt, nachdem diese Schritte bestätigt wurden. Weitere Informationen hierzu finden Sie im Abschnitt [Zu verifizierende Prozesse auswählen](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 
