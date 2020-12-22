@@ -4,11 +4,11 @@ solution: Campaign Classic
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 92%
 
 ---
 
@@ -19,6 +19,8 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
+* **[Falsche feste ](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Absprünge entfernenInformieren Sie sich, wie Sie falsche Absprünge nach einem Gmail-Ausfall aktualisieren
+
 * **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsdienst wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln
 
 * **[Umstellung auf HTTP/2-basierte Provider-API für APNs](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> Erfahren Sie, wie Sie vom veralteten Binärprotokoll zur HTTP/2-basierten Provider-API für APNs migrieren
@@ -28,9 +30,6 @@ Sie können Emoticons jetzt in Nachrichten und die Betreffzeile einfügen.
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>
 Zugriff auf häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
-
-* **[Tracking-Funktionen](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html)**<br/>
-Lernen Sie die Tracking-Funktionen und -Verfahren von Campaign kennen.
 
 [Weitere Aktualisierungen](/help/rn/using/documentation-updates.md)
 
@@ -88,6 +87,6 @@ Lernen Sie die Tracking-Funktionen und -Verfahren von Campaign kennen.
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [Erste Schritte mit Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementierungshandbuch](https://helpx.adobe.com/de/campaign/kb/acc-implementation.html) |
-| [Gold Standard-Upgrade ](https://helpx.adobe.com/de/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
+| [Gold Standard-Upgrade ](https://helpx.adobe.com/de/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/campaign/kb/acc-tracking.html) |
 | [Eingestellte Funktionen](rn/using/deprecated-features.md) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
 | [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) | [Richtlinien für das Monitoring](production/using/monitoring-guidelines.md) |
