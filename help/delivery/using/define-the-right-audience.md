@@ -5,11 +5,11 @@ title: Festlegen der richtigen Audience
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '474'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,10 @@ Vermeiden Sie doppelte E-Mail-Adressen, da sich dies auf Ihre Zielgruppe auswirk
 
 Die Deduplizierung von Adressen schützt Ihre Reputation und gewährleistet eine gute Quarantäneverwaltung.
 
-Weitere Informationen finden Sie [in diesem Anwendungsbeispiel](../../workflow/using/deduplication.md#example--identify-the-duplicates-before-a-delivery).
+**Verwandte Themen:**
+
+* [Aktivität](../../workflow/using/deduplication.md) des Deduplizierung-Duplikate.
+* [Verwendungsfall: Verwenden der Zusammenführungsfunktion der Deduplizierung-Duplikate-Aktivität](../../workflow/using/deduplication-merge.md)
 
 ## Indizieren von E-Mail-Adressen {#index-addresses}
 
