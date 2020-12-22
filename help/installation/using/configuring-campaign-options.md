@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
 workflow-type: tm+mt
 source-wordcount: '3930'
 ht-degree: 12%
@@ -204,7 +204,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_DeliveryVorbereitungsfenster</span> <br /> </td> 
-   <td><p>Diese Option wird vom technischen Arbeitsablauf <span class="uicontrol"><a href="../../workflow/using/campaign.md">operationMgt</a></span> beim Zählen der Anzahl der ausgeführten Versand verwendet.</p>Damit können Sie festlegen, nach wie vielen Tagen Versand mit inkonsistentem Status von der Anzahl laufender Versand ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf "7"gesetzt, d. h. inkonsistente Versand, die älter als 7 Tage sind, werden ausgeschlossen.</p></td> 
+   <td><p>Diese Option wird vom technischen Arbeitsablauf <span class="uicontrol"><a href="../../workflow/using/about-technical-workflows.md">operationMgt</a></span> beim Zählen der Anzahl der ausgeführten Versand verwendet.</p>Damit können Sie festlegen, nach wie vielen Tagen Versand mit inkonsistentem Status von der Anzahl laufender Versand ausgeschlossen werden.</p><p>Standardmäßig ist der Wert auf "7"gesetzt, d. h. inkonsistente Versand, die älter als 7 Tage sind, werden ausgeschlossen.</p></td> 
   </tr>
   <tr> 
    <td> <span class="uicontrol">NmsPaper_SenderLine1</span> <br /> </td> 
@@ -360,7 +360,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_OperationMgtDebug</span> <br /> </td> 
-   <td> Ermöglicht die Überwachung der Ausführung des technischen Workflows <a href="../../workflow/using/campaign.md">operationMgt</a>. Bei Aktivierung (Wert "1") werden die Ausführungsinformationen in den Workflow-Prüfprotokollen protokolliert.<br /> </td> 
+   <td> Ermöglicht die Überwachung der Ausführung des technischen Workflows <a href="../../workflow/using/about-technical-workflows.md">operationMgt</a>. Bei Aktivierung (Wert "1") werden die Ausführungsinformationen in den Workflow-Prüfprotokollen protokolliert.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsOperation_TimeRange</span> <br /> </td> 
@@ -682,7 +682,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
    <td> Während der Migration wird die Baumstruktur automatisch auf der Grundlage der neuen Versionsstandards neu organisiert.<br /> Mit dieser Option können Sie die automatische Migration der Navigationsstruktur deaktivieren. Wenn Sie es verwenden, müssen Sie nach der Migration veraltete Ordner löschen, die neuen Ordner hinzufügen und alle erforderlichen Prüfungen ausführen.<br /> 
     <ul> 
      <li> <p> <span class="uicontrol">Datentyp:</span> Integer</p> </li> 
-     <li> <p> <span class="uicontrol">Wert (Text)</span> : 3 </p> </li> 
+     <li> <p> <span class="uicontrol">Wert (Text)</span> : 1 </p> </li> 
     </ul> Diese Option sollte nur verwendet werden, wenn die vordefinierte Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /> Weiterführende Informationen hierzu finden Sie in <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
