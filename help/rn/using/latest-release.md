@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
 workflow-type: tm+mt
 source-wordcount: '1856'
 ht-degree: 98%
@@ -148,7 +148,7 @@ Unter Linux wird _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert.
 * Fehlerkorrektur – Es wurde ein Problem bei der Verwendung des Snowflake FDA Connectors behoben. Ein Benutzer mit Zugriffsrechten auf Snowflake FDA konnte für ein Snowflake-Schema keine Abfrage ausführen. In den Logs wurde ein Fehler vom Typ &quot;Kennwort nicht gefunden&quot; angezeigt. (NEO-23851)
 * Fehlerkorrektur – Es wurde ein Problem bei der Verwendung eines FDA Connectors behoben, das auftrat, wenn der Name des verknüpften FDA-Schemas eine Teilzeichenfolge des Elementnamens des aktuellen Schemas war. Dies trat beispielsweise auf, wenn das FDA-Schema &quot;cust&quot; und eines der Elemente innerhalb des Empfängerschemas &quot;customer&quot; war. Beim Abrufen der Spalte innerhalb des Elements &quot;customer&quot; und Hinzufügen einer Spalte aus dem FDA-Schema &quot;cust&quot; fehlte der Wert für die lokale Spalte. (NEO-20193)
 * Fehlerkorrektur – Es wurde ein Fehler in Workflows behoben, der auftrat, wenn Datensätze aus einer externen Datenbank abgerufen und in die Campaign-Datenbank eingefügt wurden. (NEO-26359)
-* Fehlerkorrektur – Es wurde ein Problem im technischen Workflow **Ereignisstatus-Update** behoben: Um die Größe der entsprechenden eingehenden Felder in der Aktivität **Versandstatistiken** anzupassen, wurde die Größe von drei Zielfeldern in der Aktivität **Versandstatistiken aktualisieren** von 32 auf 64 Bit geändert. (NEO-11557) Weitere Informationen zum Workflow **Ereignisstatus-Update** finden Sie in [diesem Abschnitt](../../workflow/using/message-center--execution-.md).
+* Fehlerkorrektur – Es wurde ein Problem im technischen Workflow **Ereignisstatus-Update** behoben: Um die Größe der entsprechenden eingehenden Felder in der Aktivität **Versandstatistiken** anzupassen, wurde die Größe von drei Zielfeldern in der Aktivität **Versandstatistiken aktualisieren** von 32 auf 64 Bit geändert. (NEO-11557) Weitere Informationen zum Workflow **Ereignisstatus-Update** finden Sie in [diesem Abschnitt](../../workflow/using/about-technical-workflows.md).
 * Fehlerkorrektur – Es wurde ein Fehler im Bericht **Message Center-Ereignisverlauf** behoben, der beim Anwenden von Filtern zu Skriptfehlern führte und das Filtern nach einem Datumsbereich unmöglich machte. (NEO-23365)
 * Fehlerkorrektur – Es wurde ein Interferenzfehler zwischen den technischen Workflows für **Campaign-Vorgänge** (operationMgt) und **Vorschau** (forceasting) behoben. Dieser trat auf, wenn geplante Sendungen im Status &quot;Zielgruppenbestimmung abgeschlossen&quot; oder &quot;Versandbereit&quot; verblieben. (NEO-20819)
 * Fehlerkorrektur – Es wurde ein XML-Parsing-Problem behoben, das auftrat, wenn die XML-Kennung nicht im Feld &quot;mdata&quot; in xtkOperator vorhanden war. Dadurch wurden Postupgrade-Fehler verursacht. (NEO-26113)
