@@ -6,9 +6,9 @@ description: Technische Workflows überwachen
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 100%
 
@@ -58,7 +58,7 @@ Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (
 
 **[!UICONTROL Kampagnenprozesse (&#39;operationMgt&#39;, &#39;deliveryMgt‘ etc.)]**:
 
-1. Sehen Sie sich die Workflows im Ordner **[!UICONTROL Kampagnenprozesse]** an. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../workflow/using/campaign.md).
+1. Sehen Sie sich die Workflows im Ordner **[!UICONTROL Kampagnenprozesse]** an. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../workflow/using/about-technical-workflows.md).
 1. Vergewissern Sie sich, dass die Workflows plangemäß ausgeführt werden und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden.
 
 ## Workflow-Supervision {#workflow-supervision}
