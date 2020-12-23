@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: b6f0a3afd6e41f41730009c576ae77fa0a9897cb
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1376'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ _23. Dezember 2020_
 
 >[!CAUTION]
 >
->Diese Version enthält ein neues Verbindungsprotokoll:  Die Aktualisierung ist sowohl für den Server als auch für die Client-Konsole erforderlich, damit nach dem 21. März 2020 eine Verbindung zur Kampagne hergestellt werden kann.
+>Diese Version enthält ein neues Verbindungsprotokoll:  Die Aktualisierung ist erforderlich, damit sowohl der Server als auch die Client-Konsole nach dem 21. März 2021 eine Verbindung zur Kampagne herstellen können.
 
 * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
 * Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
