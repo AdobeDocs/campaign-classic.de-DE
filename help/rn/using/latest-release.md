@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 787beef89325340cc1d46faa03e9cfae7f1c705c
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
-source-wordcount: '1856'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,6 +65,10 @@ _27. Oktober 2020_
 </tbody> 
 </table>
 
+>[!CAUTION]
+>
+>Diese Version enthält ein neues Verbindungsprotokoll: Die Aktualisierung ist erforderlich, damit sowohl der Server als auch die Client-Konsole nach dem 21. März 2021 eine Verbindung zur Kampagne herstellen können.
+
 **Verbesserungen bei der Sicherheit**
 
 * Sicheres Laden von Bibliotheken: Zum Schutz vor DLL-Vorladeangriffen lädt Campaign jetzt beim Laden des Campaign-Clients (nlclient) Windows-DLLs nur aus dem Windows-Standard-System-DLL-Pfad. [Mehr dazu](https://support.microsoft.com/de-de/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
@@ -94,11 +98,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 **Verbesserungen**
 
 * An der **Client-Konsole** wurden verschiedene Verbesserungen vorgenommen:
-   * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
-
-      >[!CAUTION]
-      >
-      >Nach der Aktualisierung des Verbindungsprotokolls ist eine Aktualisierung erforderlich (Server und Konsole), damit ab dem 21. März 2020 eine Verbindung hergestellt werden kann.
+   * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen. Die Aktualisierung der Server- und Client-Konsole ist obligatorisch, damit nach dem 21. März 2021 eine Verbindung hergestellt werden kann.
    * Um eine Inkompatibilität mit einigen Einschränkungen der Internet-Sicherheitsrichtlinien für Gruppenrichtlinienobjekte zu vermeiden, wurde der Anmeldebildschirm der Campaign-Client-Konsole durch ein integriertes Standard-Windows-Formular ersetzt.
    * Fehlerkorrektur – Es wurde ein Problem beim Kopieren/Einfügen von Aktivitäten in einem Workflow mit der 64-Bit-Client-Konsole behoben. (NEO-27635)
    * Im Menü **Info** wurden Informationen hinzugefügt, um 64- und 32-Bit-Konsolen zu unterscheiden.
