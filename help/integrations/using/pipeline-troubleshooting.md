@@ -6,11 +6,11 @@ description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '584'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 Ihre Version von Adobe Campaign Classic unterstützt die Pipeline nicht.
 
 1. Vergewissern Sie sich, dass das [!DNL pipelined]-Element in der Konfigurationsdatei vorhanden ist. Wenn nicht, bedeutet das, dass es nicht unterstützt wird.
-1. Aktualisieren Sie auf Version 6.11 Build 8705 oder höher.
+1. Upgrade auf Kampagne 20.3 oder Gold Standard 11.
 
 **Pipeline schlägt fehl mit der Fehlermeldung &quot;aurait dû kommencer par `[` ou `{` (iRc=16384)&quot;**
 
@@ -31,7 +31,7 @@ Legen Sie in der Option **NmsPipeline_Config** die JSON-Konfiguration fest. Sieh
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;the subject must be a valid organization or client&quot;**
 
-Die IMSOrgId-Konfiguration ist ungültig.
+Die Konfiguration der Organisationskennung ist ungültig.
 
 1. Überprüfen Sie, ob die IMSOrgId in der Datei &quot;serverConf.xml&quot; festgelegt ist.
 1. Suchen Sie in der Konfigurationsdatei der Instanz nach einer leeren IMSOrgId, die den Standard überschreiben kann. Wenn vorhanden, entfernen Sie den Standard.
@@ -85,4 +85,3 @@ Im Allgemeinen kann es 15–90 Minuten dauern, bis eine Marketing-Kampagne gesta
 1. Suchen Sie in &quot;pipelined.log&quot; nach Fehlern, die weitere Zustellversuche verursachen können. Beheben Sie die Fehler, falls zutreffend.
 1. Prüfen Sie die [!DNL pipelined]-Statusseite auf die Warteschlangengröße. Wenn der Warteschlangenumfang groß ist, optimieren Sie die Leistung des JS.
 1. Da die Verzögerung mit zunehmendem Volumen zu wachsen scheint, konfigurieren Sie die Auslöser in Analytics mit weniger Nachrichten.
-Anhänge
