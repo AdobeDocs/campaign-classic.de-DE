@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9c78d8f469bade41717eb854e8cec00859c1d4e3
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 100%
@@ -76,19 +76,23 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
 
    >[!NOTE]
    >
-   > 
-   >    * Wenn die Instanz nicht angegeben ist, wird die Standardinstanz verwendet.
-   >    * Im Ereignis eines Notfalls verwenden Sie die **-sofortige** Option, um einen sofortigen Stopp des Vorgangs zu erzwingen (entspricht Unix Befehl **töten -9**).
-   >    * Verwenden Sie die Option **-noconsole** , um sicherzustellen, dass das gestartete Modul nichts in der Konsole anzeigt. Seine Protokolle werden über das **syslogd** Modul auf die Festplatte geschrieben.
-   >    * Verwenden Sie die Option **-verbose** , um weitere Informationen zu Prozessaktionen anzuzeigen.
-   >    
-   >      Beispiel:
-   >    
-   >      **nlserver Neustart web -verbose**
-   >    
-   >      **nlserver-Beginn mta@myinstance -verbose**
-   >    
-   >      Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
+   >* Wenn die Instanz nicht angegeben ist, wird die Standardinstanz verwendet.
+   >* Im Ereignis eines Notfalls verwenden Sie die **-sofortige** Option, um einen sofortigen Stopp des Vorgangs zu erzwingen (entspricht Unix Befehl **töten -9**).
+   >* Verwenden Sie die Option **-noconsole** , um sicherzustellen, dass das gestartete Modul nichts in der Konsole anzeigt. Seine Protokolle werden über das **syslogd** Modul auf die Festplatte geschrieben.
+   >* Verwenden Sie die Option **-verbose** , um weitere Informationen zu Prozessaktionen anzuzeigen.
+
+      >
+      >   
+      Beispiel:
+      >
+      >   
+      **nlserver Neustart web -verbose**
+      >
+      >   
+      **nlserver-Beginn mta@myinstance -verbose**
+      >
+      >   
+      Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
 
 
 * Beginn aller Adobe Campaign-Prozesse (entspricht dem Starten des **nlserver6** -Dienstes):
