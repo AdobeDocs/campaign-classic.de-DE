@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -21,11 +21,13 @@ Bei hochgeladenen Servern kann der Verbindungsschwellenwert überschritten werde
 
 Es gibt drei verschiedene Schwellenwerte:
 
-1. Der Schwellenwert für die Webverbindung, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich zum Ändern an Ihren Systemadministrator.
-1. Der Schwellenwert für die Datenbankverbindung. Wenden Sie sich zum Ändern an Ihren Datenbankadministrator.
-1. Der Schwellenwert für die Adobe Campaign-Verbindung, der an zwei Stellen verfügbar ist:
+* Der **Webverbindungsschwellenwert**, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich zum Ändern an Ihren Systemadministrator.
 
-   * Tomcat-Seite: alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat Client ankommen.
+* Der **Datenbankverbindungsschwellenwert**. Wenden Sie sich zum Ändern an Ihren Datenbankadministrator.
+
+* Der **Adobe Campaign-Verbindungsschwellenwert** ist an zwei Stellen verfügbar:
+
+   * **** Tomcatside: alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat Client ankommen.
 
       Dieser Schwellenwert wird in der Datei **nl6/tomcat-8/conf/server.xml** konfiguriert. Mit dem Attribut **maxThreads** können Sie den Schwellenwert der Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
 
@@ -41,7 +43,7 @@ Es gibt drei verschiedene Schwellenwerte:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * Datenbank: alle Verbindungen, die gleichzeitig in der Datenbank geöffnet werden, durch einen Prozess.
+   * **Datenbank**: alle Verbindungen, die gleichzeitig in der Datenbank geöffnet werden, durch einen Prozess.
 
       Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem Attribut **maxCnx**, das sich in **Datenquellenpool** befindet, können Sie den Schwellenwert der gleichzeitig verarbeiteten Abfragen erhöhen.
 
