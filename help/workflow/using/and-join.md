@@ -6,11 +6,11 @@ description: Und-Verknüpfung
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '172'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 90%
 
 ---
 
@@ -22,6 +22,10 @@ Bei einer Und-Verknüpfung wird die ausgehende Transition erst aktiviert, wenn a
 Beispielsweise können Sie eine Und-Verknüpfungsaktivität bei der Inhaltserstellung und Automatisierung des Versand verwenden, um sicherzustellen, dass ein Versand erst gestartet wird, wenn die Zielgruppe abgefragt und die Schritte zur Inhaltsaktualisierung abgeschlossen sind. Ein spezielles Anwendungsbeispiel ist in [diesem Abschnitt](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) verfügbar.
 
 ![](assets/and-join-usage.png)
+
+>[!NOTE]
+>
+>Beachten Sie, dass eingehende Transitionen, die mit verschiedenen Zielgruppendimensionen konfiguriert sind, nicht mit einer **[!UICONTROL AND-join]**-Aktivität zusammengeführt werden können.
 
 Die an die ausgehende Transition übermittelte Population entspricht der Hauptmenge, die zuvor aus den eingehenden Transitionen der Aktivität bestimmt wurde.
 
