@@ -6,11 +6,11 @@ description: In diesem Abschnitt wird die Transaktionsnachrichten-Architektur vo
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1114'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d45f393083ec540025a9e001b089a8b1241a8c99
+workflow-type: tm+mt
+source-wordcount: '1151'
+ht-degree: 92%
 
 ---
 
@@ -64,7 +64,15 @@ Wenn Sie mehrere Kanäle benötigen, müssen Sie die entsprechenden Packages ins
 
 ## Hinzufügen von Versandkanälen {#adding-a-delivery-channel}
 
-Versandkanäle (Mobile (SMS), Mobile App etc.) müssen unbedingt vor der Installation der Transaktionsnachrichten-Packages hinzugefügt werden. Falls Sie bereits ein Transaktionsnachrichten-Projekt über den E-Mail-Kanal begonnen haben und im Laufe des Projekts einen weiteren Kanal hinzufügen möchten, gehen Sie wie folgt vor:
+Das Hinzufügen eines Versand-Kanals (mobiler Kanal, mobiler App-Kanal usw.) muss vor der Installation des Transaktionsnachricht-Pakets durchgeführt werden.
+
+Adobe empfiehlt, dass Sie immer das Versand Kanal-Paket hinzufügen, bevor Sie das Transaktionsnachricht-Paket installieren.
+
+Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestartet haben und dann während des Projekts entscheiden, einen neuen Kanal hinzuzufügen, können Sie die folgenden Schritte ausführen.
+
+>[!NOTE]
+>
+>Dieses Verfahren gilt nur für Kunden, die einen Windows NLServer verwenden, der auf demselben Computer installiert ist, auf dem sie arbeiten.
 
 1. Installieren Sie den benötigten Kanal, zum Beispiel den **Mobile-Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Werkzeuge > Erweitert > Package importieren... > Adobe-Campaign-Package]** ).
 1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packaageCenter.xml** aus.
