@@ -6,11 +6,11 @@ description: Automatisierung mit Workflows
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1200'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 98%
 
 ---
 
@@ -200,7 +200,7 @@ Der folgende Workflow entspricht dem ersten Beispiel, beginnt jedoch mit der Ers
 
 In der ersten **Versanderstellung**-Aktivität wird der Versand konfiguriert.
 
-Die Verzweigung ermöglicht das parallele Ablaufen der Zielgruppenberechnung und der Erstellung der Inhaltsinstanz.
+Mit der Gabel-Aktivität können Sie die Berechnung der Zielgruppe und die Erstellung der Inhaltsinstanz parallel starten.
 
 Nach Abschluss dieser beiden Aktivitäten aktiviert die Und-Verknüpfung die **Versand**-Aktivität mit dem Inhalt und der Zielgruppe, die zuvor definiert wurden.
 
