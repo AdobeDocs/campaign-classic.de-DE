@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 9%
@@ -17,13 +17,13 @@ ht-degree: 9%
 
 # Leistungs- und Durchsatzprobleme{#performance-and-throughput-issues}
 
->[!NOTE]
->
->Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerbehebungen verfügen. Weitere Informationen zum Inhalt der einzelnen Versionen finden Sie in den [Versionshinweisen](../../rn/using/latest-release.md).
+Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerbehebungen verfügen.
+
+Weitere Informationen zum Inhalt der einzelnen Versionen finden Sie in den [Versionshinweisen](../../rn/using/latest-release.md).
 
 ## Hardware und Infrastruktur {#hardware-and-infrastructure}
 
-Die allgemeinen Richtlinien für Hardwareanforderungen für das lokale Campaign Classic finden Sie in diesem [Artikel](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
+Allgemeine Richtlinien für Hardwareanforderungen für lokale Campaign Classic finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
 
 Das Beratungsteam kann gehosteten Kunden ein Tool zur Verfügung stellen, mit dem Sie ganz einfach Ansichten darüber vornehmen können, wie viel Platz die verschiedenen Datenbanktypen und der auf der SFTP-Site genutzte Platz einnehmen. Darüber hinaus bietet es Tools, mit denen Sie unnötige Daten bereinigen können. Wenden Sie sich an das Beratungs- oder Supportteam, wenn dieses Tool implementiert werden muss. Hier einige wichtige Punkte, die Sie mit diesem Tool überprüfen müssen:
 
@@ -33,7 +33,7 @@ Das Beratungsteam kann gehosteten Kunden ein Tool zur Verfügung stellen, mit de
 
 Adobe Campaign bietet auch ein [Tool](../../production/using/monitoring-processes.md#manual-monitoring), um die CPU- und RAM-Nutzung zu überprüfen. Verwenden Sie dieses Tool und prüfen Sie spezifische Indikatoren wie: **Arbeitsspeicher**, **Arbeitsspeicher austauschen**, **Datenträger**, **Aktive Prozesse**. Wenn die Werte zu hoch sind, können Sie versuchen, die Anzahl der Workflows zu reduzieren oder die Workflows zu verschiedenen Zeitpunkten auf den Beginn zu planen.
 
-## Datenbankleistung {#database-performances}
+## Datenbanküberprüfung {#database-performances}
 
 In den meisten Fällen sind Leistungsprobleme mit der Datenbankwartung verbunden. Im Folgenden werden die wichtigsten Elemente aufgeführt:
 
@@ -44,7 +44,7 @@ In den meisten Fällen sind Leistungsprobleme mit der Datenbankwartung verbunden
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in diesem Abschnitt: [Datenbankleistungen](../../production/using/database-performances.md).
+>Weitere Informationen finden Sie in diesem Abschnitt: [Datenbankleistung](../../production/using/database-performances.md).
 
 ## Anwendungskonfiguration {#application-configuration}
 
@@ -68,4 +68,3 @@ Im Folgenden finden Sie eine Liste bewährter Verfahren und Artikel zur Lieferba
 >[!NOTE]
 >
 >Siehe auch Abschnitt [Auslieferungsschlüssel-Punkte](../../delivery/using/deliverability-key-points.md).
-
