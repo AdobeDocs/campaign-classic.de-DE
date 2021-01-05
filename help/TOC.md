@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: c55897a4daf184b886d4e626d9216a4d43581ea1
+source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 98%
+source-wordcount: '2202'
+ht-degree: 97%
 
 ---
 
@@ -669,23 +669,31 @@ ht-degree: 98%
       + [Arten der Pflege](production/using/types-of-maintenance.md)
       + [RDBMS-spezifische Empfehlungen](production/using/rdbms-specific-recommendations.md)
       + [Anwendungsobjekte](production/using/application-objects.md)
-   + Fehlerbehebung {#troubleshooting}
-      + [Leistungs- und Durchsatzprobleme](production/using/performance-and-throughput-issues.md)
-      + [Fehlende Bilder](production/using/images-missing.md)
-      + [Probleme mit der Bildanzeige](production/using/image-display-issues.md)
-      + [Temporäre Dateien](production/using/temporary-files.md)
-      + [Datenbankleistung](production/using/database-performances.md)
-      + [Module und häufige Probleme](production/using/modules-and-frequent-issues.md)
-      + [Protokollgenauigkeit](production/using/log-precision.md)
-      + [Probleme mit Trackinglogs](production/using/tracking-logs-issues.md)
-      + [Workflow-Ausführung](production/using/workflow-execution.md)
-      + [Verbindung schlägt fehl](production/using/failure-to-connect.md)
-      + [Verbindungsschwellen](production/using/connection-thresholds.md)
-      + [Stack Trace in Linux](production/using/stack-trace-in-linux.md)
-      + [Codierung der Oracle-Datenbank](production/using/encoding-of-the-oracle-database.md)
-      + [Konsolenaktualisierung](production/using/console-update.md)
-      + [Vergessenes Passwort](production/using/lost-password.md)
-      + [JSP-Verhalten](production/using/jsp-behavior.md)
+   + Fehlerbehebung {#troubleshooting-toc}
+      + [Überblick über die Fehlerbehebung in der Produktion](production/using/troubleshooting.md)
+      + Allgemeine Probleme {#common-general-issues-toc}
+         + [Module und häufige Probleme](production/using/modules-and-frequent-issues.md)
+         + [Workflow-Ausführung](production/using/workflow-execution.md)
+         + [Vergessenes Passwort](production/using/lost-password.md)
+         + [Konsolenaktualisierung](production/using/console-update.md)
+      + Fehlerbehebung beim Versand {#delivery-troubleshooting-toc}
+         + [Leistungs- und Durchsatzprobleme](production/using/performance-and-throughput-issues.md)
+         + [Probleme mit der Bildanzeige](production/using/image-display-issues.md)
+         + [Fehlende Bilder](production/using/images-missing.md)
+         + [Temporäre Dateien](production/using/temporary-files.md)
+      + Arbeiten mit Protokollen {#working-with-log-toc}
+         + [Protokollgenauigkeit](production/using/log-precision.md)
+         + [Probleme mit Trackinglogs](production/using/tracking-logs-issues.md)
+      + Datenbankprobleme {#database-issues-toc}
+         + [Datenbankleistung](production/using/database-performances.md)
+         + [Codierung der Oracle-Datenbank](production/using/encoding-of-the-oracle-database.md)
+      + Verbindungsverbesserungen {#connection-improvements-toc}
+         + [Verbindung schlägt fehl](production/using/failure-to-connect.md)
+         + [Verbindungsschwellen](production/using/connection-thresholds.md)
+      + Technische Fehlerbehebung {#technical-troubleshooting-toc}
+         + [Stack Trace in Linux](production/using/stack-trace-in-linux.md)
+         + [JSP-Verhalten](production/using/jsp-behavior.md)
+         + [Tomcat-Version suchen](production/using/locate-tomcat-version.md)
 + Entwicklerhandbuch {#configuring-campaign-classic}
    + Datenmodell {#data-model}
       + [Über das Datenmodell](configuration/using/about-data-model.md)
