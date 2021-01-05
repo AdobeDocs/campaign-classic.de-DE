@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
+source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 97%
+source-wordcount: '246'
+ht-degree: 55%
 
 ---
 
@@ -37,11 +37,17 @@ Sie werden standardmäßig in Unterordnern nach Versandmonat gruppiert. Diese Gr
 >
 >Bei gehosteten oder hybriden Installationen können nach einem Upgrade auf den Enhanced MTA auch alle Transaktionsmeldungen mit dem Adobe Campaign Enhanced MTA gesendet werden, um die Zustellbarkeit, den Durchsatz und die Bearbeitung von Bounces zu verbessern. Alle Folgen sind dieselben wie bei standardmäßigen Marketing-Nachrichten und werden im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) beschrieben.
 
-<!--## Transactional message monitoring {#transactional-message-monitoring}
+## Überwachung der Transaktionsnachricht {#transactional-message-monitoring}
 
-To monitor your transactional messages, check the delivery logs. Accessing the delivery logs is presented in [this section](../../delivery/using/monitoring-a-delivery.md#delivery-logs-and-history).
+Um Ihre Transaktionsnachrichten zu überwachen, überprüfen Sie die Versandlogs. Der Zugriff auf die Versandlogs wird in [diesem Abschnitt](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) angezeigt.
 
-The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
+Die von der Ausführungsinstanz gesendeten transaktionalen Versand werden durch einen technischen Arbeitsablauf (**[!UICONTROL Message Center-Ausführungsinstanz]**), der stündlich ausgeführt wird, wieder in die Kontrollinstanz synchronisiert.
+
+>[!NOTE]
+>
+>Die Versand sammeln die Ereignis wöchentlich auf der Grundlage der neuesten Ereignis-Aktualisierung und nicht am Erstellungsdatum des Ereignisses. Daher kann sich beim Extrahieren von transaktionalen Messaging-Versandlogs aus der Kontrollinstanz die mit jeder Versand-Protokoll-ID verknüpfte Versand-ID im Laufe der Zeit ändern, wenn das Protokoll aktualisiert wird (z. B. wenn ein eingehender Absprung für das Ereignis empfangen wird).
+
+<!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
 Let's take a [delivery template](../../message-center/using/introduction.md) labelled *Template_1*.
 
