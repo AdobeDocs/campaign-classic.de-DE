@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -19,10 +19,10 @@ ht-degree: 8%
 
 Die meisten Leistungsprobleme sind mit der Datenbankwartung verbunden. Hier sind vier wichtige Hinweise, die Ihnen bei der Suche nach der Ursache für eine langsame Leistung helfen:
 
-* Konfiguration,
-* Installation und Konfiguration der Adobe Campaign-Plattform,
-* Wartung der Datenbank,
-* Echtzeitdiagnose.
+* Konfiguration       
+* Installation und Konfiguration der Adobe Campaign-Plattform
+* Wartung der Datenbank
+* Echtzeitdiagnose
 
 ## Konfiguration {#configuration}
 
