@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b7f44f4c18bef4cc412af878846b2c4305a17787
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 3%
+source-wordcount: '158'
+ht-degree: 8%
 
 ---
 
@@ -18,48 +18,56 @@ ht-degree: 3%
 # Vergessenes Passwort{#lost-password}
 
 Sie können ein verlorenes Kennwort ändern oder wiederherstellen.
-
 Es gibt zwei mögliche Szenarien:
 
-* Passwort verloren durch einen Adobe Campaign-Operator.
+* **Passwort verloren durch Adobe Campaign-Operator**
 
-   In diesem Fall können Sie das Kennwort des Betreibers ändern. Dazu stellen Sie über einen Operator mit Administratorrechten eine Verbindung her, klicken Sie mit der rechten Maustaste auf einen Operator, wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Kennwort zurücksetzen]** und legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass Operatoren ihr Kennwort ändern, wenn sie die Verbindung zum ersten Mal wiederherstellen.
+In diesem Fall können Sie das Kennwort des Betreibers ändern.
+Gehen Sie dazu wie folgt vor:
+
+1. Verbinden Sie sich über einen Operator mit Administratorrechten.
+1. Klicken Sie mit der rechten Maustaste auf einen Operator.
+1. Wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Kennwort zurücksetzen]**.
 
    ![](assets/operator-passwd.png)
 
-* **** Interner Passwortverlust (nur lokale Kunden).
+1. Legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass die Operatoren beim ersten erneuten Verbinden ihr Kennwort ändern.
 
-   Wenn das **internal**-Kennwort verloren geht, müssen Sie es erneut initialisieren. Gehen Sie dazu wie folgt vor:
+* **Interner Passwortverlust (nur lokale Kunden)**
 
-   1. Bearbeiten Sie die Datei **/usr/local/neolane/nl6/conf/serverConf.xml**.
-   1. Gehen Sie zur Zeile **internalPassword**.
+Wenn das interne Kennwort verloren geht, müssen Sie es erneut initialisieren.
+Gehen Sie dazu wie folgt vor:
 
-      ```
-      <!-- XTK authentication mode internalPassword : Password of internal account -->
-       <xtk internalPassword="myPassword"/>
-      ```
+1. Bearbeiten Sie die Datei **/usr/local/neolane/nl6/conf/serverConf.xml**.
 
-   1. Löschen Sie die Zeichenfolge in Anführungszeichen: **myPassword**
+1. Gehen Sie zur Zeile **internalPassword**.
 
-      Sie erhalten daher die folgende Zeile:
+   ```
+   <!-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword="myPassword"/>
+   ```
 
-      ```
-      !-- XTK authentication mode internalPassword : Password of internal account -->
-      <xtk internalPassword=""/
-      ```
+1. Löschen Sie die Zeichenfolge in Anführungszeichen: **myPassword**
 
-   1. Speichern Sie die Änderungen und schließen Sie die Datei.
-   1. Konfigurieren Sie das neue Kennwort. Geben Sie dazu die folgenden Befehle ein:
+   Sie erhalten daher die folgende Zeile:
 
-      ```
-      nlserver config -internalpassword
-      HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
-      Enter current password.
-      Password: (empty)
-      Enter the new password.
-      Password: 
-      Confirmation 
-      ```
+   ```
+   !-- XTK authentication mode internalPassword : Password of internal account -->
+   <xtk internalPassword=""/
+   ```
 
-   1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung im Modus **Internal** herzustellen.
+1. Speichern Sie die Änderungen und schließen Sie die Datei.
 
+1. Konfigurieren Sie das neue Kennwort. Geben Sie dazu die folgenden Befehle ein:
+
+   ```
+   nlserver config -internalpassword
+   HH:MM:SS > Application server for Adobe Campaign Classic (7.X YY.R build XXX@SHA1) of DD/MM/YYYY
+   Enter current password.
+   Password: (empty)
+   Enter the new password.
+   Password: 
+   Confirmation 
+   ```
+
+1. Sie können jetzt Ihr neues Kennwort verwenden, um eine Verbindung im Modus **Internal** herzustellen.
