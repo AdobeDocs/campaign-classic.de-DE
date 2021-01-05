@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: b1d75ff748bab08b45c55621b63e7565564e113d
+source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
 workflow-type: tm+mt
-source-wordcount: '3745'
-ht-degree: 97%
+source-wordcount: '3831'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,16 @@ ht-degree: 97%
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Sie können auch die [Adobe Campaign Classic-Versionshinweise](../../rn/using/latest-release.md) konsultieren, um aktuelle Informationen zu erhalten.
+
+## Januar 2021 {#jan,2021}
+
+Der Abschnitt **[!UICONTROL Gabel]** Aktivität wurde um zusätzliche Informationen erweitert. Es wurde ein Vermerk hinzugefügt, der festlegt, dass die ausgehenden Transitionen nicht gleichzeitig ausgeführt werden und dass die Aktivität daher nicht zur Verbesserung der Leistung von Workflows verwendet werden sollte. [Mehr dazu](../../workflow/using/fork.md)
+
+Der Abschnitt zur Position der Tomcat-Version wurde [hier](../../production/using/locate-tomcat-version.md) verschoben.
+
+Die Liste der Technischen Workflows mit den zugehörigen Paketen wurde auf eine Seite umstrukturiert. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
+
+Der Abschnitt zur Fehlerbehebung im Überwachungshandbuch wurde umstrukturiert und mit einer Landingpage erweitert. [Mehr dazu](../../production/using/troubleshooting.md).
 
 ## Dezember 2020 {#dec-2020}
 
@@ -167,7 +177,7 @@ Es wurden Anwendungsfälle zum [Verschlüsseln](../../workflow/using/how-to-use-
 
 Die Seite über die Integration von Experience Cloud Triggers und Adobe Campaign Classic wurde [hierher](../../integrations/using/about-triggers.md) verschoben.
 
-## Juli 2020 {#release-20-2}
+## Juli 2020 {#release-20-2}
 
 **Neue Funktionen in Version 20.2**
 
