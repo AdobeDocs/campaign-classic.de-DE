@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 4%
@@ -17,9 +17,9 @@ ht-degree: 4%
 
 # Temporäre Dateien{#temporary-files}
 
-Wenn Fehlermeldungen wie die folgenden angezeigt werden (insbesondere in Versandlogs), wenn das System in Produktion genommen wird:
+Fehlermeldungen wie die folgenden werden ggf. angezeigt (insbesondere in Versandlogs), wenn das System in Betrieb genommen wird:
 
-**Datei &quot;/tmp/tmp0000.tmp&quot;kann nicht in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml umbenannt werden;(errno=18, Ungültiger Link über mehrere Geräte) (iRc=-52)**
+*Datei &quot;/tmp/tmp0000.tmp&quot;kann nicht in /usr/local/neolane/nl6/bin/..//var/XXX/mta/86510470.xml umbenannt werden;(errno=18, Ungültiger Link über mehrere Geräte) (iRc=-52)*
 
 Die Ursache lautet:
 
