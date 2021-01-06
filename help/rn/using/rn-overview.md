@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 802818fcd27e0dc40cc640092da1ef70ff21a191
+source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 89%
@@ -29,7 +29,7 @@ Jedem Build wird ein Status zugeordnet. Nachfolgend finden Sie die Liste der Sta
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – In der Produktion validiert und von Adobe empfohlen.
 
-Die **aktuellen GA-Builds** sind: [Gold Standard-Version 10](../../rn/using/gold-standard.md#gs-10) und [Campaign-Version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187).
+Die **aktuellen GA-Builds** sind: [Gold Standard-Version 11](../../rn/using/gold-standard.md#gs-11) und [Campaign-Version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187).
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
 
