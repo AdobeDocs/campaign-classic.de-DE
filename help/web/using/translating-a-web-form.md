@@ -414,7 +414,7 @@ Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind u
 
 ## Beispiel: eine Webanwendung in mehreren Sprachen anzeigen {#example--displaying-a-web-application-in-several-languages}
 
-Das folgende Webformular ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Spanisch. Die Zeichenfolgen wurden alle über den Tab **[!UICONTROL Übersetzung]** des Webformulars übersetzt. Da die Standardsprache Englisch ist, verwenden Sie bei der Publikation der Umfrage die Standard-URL, um den Inhalt auf Englisch anzuzeigen.
+Das folgende Webformular ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Spanisch. Die Zeichenfolgen wurden alle über den Tab **[!UICONTROL Übersetzung]** des Webformulars übersetzt. Da die Standardsprache Englisch ist, verwenden Sie bei der Veröffentlichung der Umfrage die Standard-URL, um den Inhalt auf Englisch anzuzeigen.
 
 ![](assets/s_ncs_admin_survey_trad_sample_fr.png)
 
