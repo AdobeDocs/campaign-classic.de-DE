@@ -293,7 +293,7 @@ Abhängig vom Feld, in dem Daten in der Datenbank gespeichert werden, kann eine 
 
 ![](assets/s_ncs_admin_survey_number_edit.png)
 
-Der Standardwert ist der in dem Feld angezeigte Wert, wenn das Formular publiziert wird. Er kann vom Benutzer geändert werden.
+Der Standardwert ist der in dem Feld angezeigte Wert, wenn das Formular veröffentlicht wird. Er kann vom Benutzer geändert werden.
 
 Sie können zum numerischen Feld über den Tab **[!UICONTROL Erweitert]** wie unten gezeigt ein Präfix und/oder Suffix hinzufügen:
 
@@ -381,6 +381,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.
+
 >
 
 
