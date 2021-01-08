@@ -23,7 +23,7 @@ Lokale Kampagnen sind Kampagneninstanzen, die bei jeder Bestellung basierend auf
 
 1. Erstellen Sie eine Vorlage für eine lokale Kampagne.
 1. Erstellen Sie anhand dieser ein Kampagnenkit.
-1. Publizieren Sie das Kampagnenkit.
+1. Veröffentlichen Sie das Kampagnenkit.
 1. Validieren Sie die Bestellungen.
 
 **Lokalstellenseitig**
@@ -176,7 +176,7 @@ Gehen Sie wie folgt vor:
 
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen      {#dates}
+### Datum-Funktionen       {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
@@ -310,7 +310,7 @@ Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kam
 >
 >Die Kampagne kann bis zu ihrem Verfügbarkeitsdatum jederzeit bearbeitet und ihre Parameter verändert werden. Die Lokalstelle hat auch die Möglichkeit, die Kampagne über die Schaltfläche **[!UICONTROL Abbrechen]** zu annulieren.
 
-#### Kampagnen erstellen      {#creating-a-campaign}
+#### Kampagnen erstellen       {#creating-a-campaign}
 
 Wenn eine Bestellung validiert wurde, kann es von der Lokalstelle konfiguriert und ausgeführt werden.
 
