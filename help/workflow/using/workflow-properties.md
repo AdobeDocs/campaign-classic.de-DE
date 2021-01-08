@@ -59,7 +59,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
    Diese Option darf nur zur Problembehebung verwendet werden und nie im Produktionsalltag. Bei Aktivierung der Option wird der Workflow prioritär. Alle anderen Workflows werden bis zu seinem Abschluss von der Workflow-Engine angehalten.
 
-### Umgang mit Fehlern     {#error-management}
+### Umgang mit Fehlern      {#error-management}
 
 * **[!UICONTROL Fehlerbehebung]**
 
