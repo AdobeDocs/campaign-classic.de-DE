@@ -51,9 +51,9 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
       ![](assets/content_mgmt_script.png)
 
-   * **[!UICONTROL Neu, basierend auf einer Publikationsvorlage erstellt]**
+   * **[!UICONTROL Neu, basierend auf einer Veröffentlichungsvorlage erstellt]**
 
-      Wählen Sie diese Option, wenn ein neuer, auf einer Vorlage beruhender Inhalt erstellt werden soll. Geben Sie im Feld **[!UICONTROL Inhaltskanal]** den Ordner an, in dem der neue Inhalt gespeichert werden soll und im Feld **[!UICONTROL Vorlage]** die zu verwendende Publikationsvorlage.
+      Wählen Sie diese Option, wenn ein neuer, auf einer Vorlage beruhender Inhalt erstellt werden soll. Geben Sie im Feld **[!UICONTROL Inhaltskanal]** den Ordner an, in dem der neue Inhalt gespeichert werden soll und im Feld **[!UICONTROL Vorlage]** die zu verwendende Veröffentlichungsvorlage.
 
       ![](assets/content_mgmt_new.png)
 
@@ -79,7 +79,7 @@ Die Konfiguration der Aktivität gliedert sich in drei Schritte:
 
    * **[!UICONTROL Erzeugen]**
 
-      Der Inhalt wird gespeichert und die Ausgabedateien für alle Umwandlungsvorlagen mit dem Publikationstyp &#39;Datei&#39; werden erzeugt.
+      Der Inhalt wird gespeichert und die Ausgabedateien für alle Umwandlungsvorlagen mit dem Veröffentlichungstyp &#39;Datei&#39; werden erzeugt.
 
       ![](assets/content_mgmt_generate.png)
 
@@ -101,6 +101,6 @@ Kennung des zu verwendenden Inhalts, wenn die Option **[!UICONTROL Wird durch di
 
    Vollständiger Name der erzeugten Datei, wenn die Aktion **[!UICONTROL Erzeugen]** ausgewählt wurde.
 
-## Beispiele   {#examples}
+## Beispiele    {#examples}
 
 Beispiele werden in diesem [Abschnitt](../../delivery/using/automating-via-workflows.md#examples) bereitgestellt.
