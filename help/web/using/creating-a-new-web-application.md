@@ -39,7 +39,7 @@ Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen
 
 1. Landingpages 
 
-   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website bereitsteht und über die Benutzer Informationen eingeben können, die im Datenbankprofil von Adobe Campaign gespeichert werden. Der Inhalt einer solchen Seite wird normalerweise von einer spezialisierten Webagentur erstellt und danach in Adobe Campaign zur Publikation, Verwaltung und Nachverfolgung importiert. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/creating-a-landing-page.md).
+   Eine Landingpage ist eine HTML-Seite, deren Inhalt auf einer Website bereitsteht und über die Benutzer Informationen eingeben können, die im Datenbankprofil von Adobe Campaign gespeichert werden. Der Inhalt einer solchen Seite wird normalerweise von einer spezialisierten Webagentur erstellt und danach in Adobe Campaign zur Veröffentlichung, Verwaltung und Nachverfolgung importiert. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/creating-a-landing-page.md).
 
 1. Umfragen
 
@@ -51,7 +51,7 @@ Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen
 
 1. Facebook-Anwendungen
 
-   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung publizieren. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../social/using/about-social-marketing.md).
+   Dank der Option **Social Marketing** können Sie mit Adobe Campaign personalisierte Inhalte in einer Facebook-Anwendung veröffentlichen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../social/using/about-social-marketing.md).
 
    >[!CAUTION]
    >
