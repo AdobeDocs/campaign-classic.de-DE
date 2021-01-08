@@ -29,6 +29,6 @@ Um einen Analysebericht Ihrer Daten zu erstellen, zu veröffentlichen und zu ver
 1. Abruf der zu analysierenden Daten (siehe [Zu analysierende Daten abrufen](../../reporting/using/collecting-data-to-analyze.md) und [Kontext verwenden](../../reporting/using/using-the-context.md));
 1. Definieren des Inhalts des Berichts mit den Aktivitäten und ihren Containern (siehe [Tabellen erstellen](../../reporting/using/creating-a-table.md), [Grafiken erstellen](../../reporting/using/creating-a-chart.md) und [Elemente anordnen](../../reporting/using/element-layout.md));
 1. Konfigurieren der Anzeigeoptionen: Anzeigetyp, geteilte Berichte (siehe [Anzeigekontext von Berichten](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Bedingte Inhalte erstellen](../../reporting/using/defining-a-conditional-content.md) und [Berichtanzeige konfigurieren](../../reporting/using/configuring-access-to-the-report.md)),
-1. Publizieren des Berichts (Publikationsassistent; siehe [Berichtpublikation](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)),
+1. Veröffentlichen des Berichts (Veröffentlichungsassistent; siehe [Berichtveröffentlichung](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)),
 1. Umwandlung des Berichts durch Export, Verlaufserstellung oder Anzeige im Browser (siehe [Mit Berichten arbeiten](../../reporting/using/actions-on-reports.md)).
 
