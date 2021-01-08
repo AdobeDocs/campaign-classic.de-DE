@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_content_folder_properties.png)
 
-1. Wählen Sie die gewünschten Publikationsvorlagen aus.
+1. Wählen Sie die gewünschten Veröffentlichungsvorlagen aus.
 
    ![](assets/s_ncs_content_folder_templates.png)
 
@@ -71,15 +71,15 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Sie haben auch die Möglichkeit, die Erzeugung nicht validierter Inhalte zuzulassen. Ändern Sie in diesem Fall die entsprechende Option in der Publikationsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
+   >Sie haben auch die Möglichkeit, die Erzeugung nicht validierter Inhalte zuzulassen. Ändern Sie in diesem Fall die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
 
    HTML- und Text-Inhalte werden standardmäßig im **Publishing**-Ordner der Adobe-Campaign-Instanz erzeugt. Ausgehend von der Option **NcmPublishingDir** können Sie einen anderen Ordner wählen.
 
 ## Versand einer Inhaltsinstanz {#delivering-a-content-instance}
 
-Damit eine Inhaltsinstanz automatisch erstellt und versendet werden kann, muss in der Publikationsvorlage, die für die Inhaltserzeugung verwendet wird, eine Versandvorlage angegeben sein. Weitere Informationen hierzu finden Sie im Abschnitt [Versand](../../delivery/using/publication-templates.md#delivery).
+Damit eine Inhaltsinstanz automatisch erstellt und versendet werden kann, muss in der Veröffentlichungsvorlage, die für die Inhaltserzeugung verwendet wird, eine Versandvorlage angegeben sein. Weitere Informationen hierzu finden Sie im Abschnitt [Versand](../../delivery/using/publication-templates.md#delivery).
 
-Des Weiteren muss der Ordner, in dem der Inhalt gespeichert wird, den aus dieser Publikationsvorlage stammenden Inhalten vorbehalten sein. Ein Inhaltsordner, der die Erzeugung verschiedener Inhaltstypen erlaubt, ist nicht für die automatische Versanderstellung geeignet.
+Des Weiteren muss der Ordner, in dem der Inhalt gespeichert wird, den aus dieser Veröffentlichungsvorlage stammenden Inhalten vorbehalten sein. Ein Inhaltsordner, der die Erzeugung verschiedener Inhaltstypen erlaubt, ist nicht für die automatische Versanderstellung geeignet.
 
 Klicken Sie zur automatischen Erstellung eines Versands mit dem ausgewählten Inhalt auf das **[!UICONTROL Versand]**-Symbol und wählen Sie die Vorlage aus.
 
