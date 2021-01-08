@@ -153,7 +153,7 @@ Dabei können folgende Elemente verwendet werden:
 >
 >Die Syntax &lt;%@ include option=&#39;NmsServer_URL&#39; %>/webApp/APP3?id=&lt;%=escapeUrl(cryptString(visitor.id))%> ermöglicht es, einen WebApp-Link in eine LINE-Nachricht einzuschließen.
 
-### Empfehlungen   {#recommendations}
+### Empfehlungen    {#recommendations}
 
 * Wenn Sie einen LINE-Versand erstmals an einen neuen Empfänger senden, sind Sie verpflichtet, die offizielle LINE-Mitteilung hinzuzufügen, in der die Nutzungsbedingungen sowie die Einverständniserklärung enthalten sind. Der offizielle Text ist unter folgendem Link verfügbar: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
 
