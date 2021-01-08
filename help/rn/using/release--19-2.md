@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '1376'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 95%
 
 ## ![](assets/do-not-localize/limited_2.png) Version 19.2.4 – Build 9082 {#release-19-2-4-build-9082}
 
-_23. Dezember 2020_
+_23. Dezember 2020_
 
 >[!CAUTION]
 >
 >Diese Version enthält ein neues Verbindungsprotokoll:  Die Aktualisierung ist erforderlich, damit sowohl der Server als auch die Client-Konsole nach dem 21. März 2021 eine Verbindung zur Kampagne herstellen können.
 
 * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
-* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
+* Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.2.3 – Build 9081 {#release-19-2-3-build-9081}
 
