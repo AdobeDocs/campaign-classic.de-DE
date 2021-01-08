@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '2488'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 ## ![](assets/do-not-localize/green_2.png) Version 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
 
-_22. Dezember 2020_
+_22. Dezember 2020_
 
 >[!CAUTION]
 >
@@ -30,24 +30,24 @@ _22. Dezember 2020_
 **Verbesserungen**
 
 * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
-* Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline basiert, wurde geändert und nach Adobe I/O verschoben. [Weitere Informationen](../../integrations/using/configuring-adobe-io.md)
-* Nach dem Ende der Unterstützung für das Legacy-Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während der Nachrüstung auf das HTTP/2-Protokoll aktualisiert.
-* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
-* Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, wodurch verhindert wurde, dass andere SMS-Versand gesendet wurden und Leistungsprobleme auftraten. (NEO-28609)
+* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
+* Nach dem Ende der Unterstützung für das ältere Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während des Postupgrades auf das HTTP/2-Protokoll aktualisiert.
+* Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
+* Fehlerkorrektur – Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, was die Ausführung weiterer SMS-Sendungen verhinderte und zu Leistungsproblemen führte. (NEO-28609)
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des Servers führte, indem eine Speicherbeschädigung beim Bereinigen des Ausdrucks-Parsers verhindert wurde. (NEO-26856)
 * Fehlerkorrektur – Es wurde ein Fehler behoben, der dazu führte, dass der Server abstürzte, wenn die Zieldaten des Rests einer **Aufspaltungsaktivität** in einem Workflow angezeigt wurden.
 * Fehlerkorrektur – Es wurde ein Fehler behoben, durch den eine Fehlermeldung angezeigt werden konnte, wenn versucht wurde, SMS-Nachrichten nach einer Abfrage in einem anderen Schema als **Empfänger** (nms:recipient) in der Vorschau anzuzeigen. (NEO-27517)
-* Es wurde ein Problem behoben, bei dem der Aufruf bei einer HTTPS-Verbindungsanforderung mit der explizit im Hostnamen definierten Anschlussnummer mit einem Zertifikatfehler fehlgeschlagen ist. (NEO-29146)
-* Es wurde ein Problem im POSIX-Thread-Management behoben, durch das große Core-Dump-Dateien in der Marketing-Instanz generiert wurden. (NEO-28117, NEO-29281)
-* Es wurden Probleme behoben, die zum Absturz des Webprozesses beim Vorbereiten von Versänden oder bei wiederholter Vorschau von Versänden führten. (NEO-27790, NEO-27517)
-* Es wurde ein Fehler behoben, der dazu führte, dass das Senden von Versänden oder Testversänden fehlschlug, wenn diese von einem Operator ausgelöst wurden, der keine Administratoren war. (NEO-28597)
+* Fehlerkorrektur – Es wurde ein Problem behoben, wenn eine HTTPS-Verbindungsanforderung mit der im Hostnamen explizit definierten Port-Nummer gestellt wurde. Der Aufruf schlug wegen eines Zertifikatfehlers fehl. (NEO-29146)
+* Fehlerkorrektur – Es wurde ein Problem im POSIX-Thread-Management behoben, durch das große Core-Dump-Dateien in der Marketing-Instanz generiert wurden. (NEO-28117, NEO-29281)
+* Fehlerkorrektur – Es wurden Probleme behoben, die bei der Sendungsvorbereitung oder der Vorschau eines wiederkehrenden Versands zum Absturz des Web-Prozesses führten. (NEO-27790, NEO-27517)
+* Fehlerkorrektur – Es wurde ein Fehler behoben, der zum Fehlschlagen von Sendungen oder Testsendungen führte, wenn diese von einem Benutzer ohne Administratorrechte ausgelöst wurden. (NEO-28597)
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
 
 _11. September 2020_
 
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass die Sendungsvorbereitung aufgrund einer einzigen fehlerhaften Funktion im Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
-* Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Publikation der Web-Applikation deaktiviert wurden. (NEO-27155)
+* Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Veröffentlichung der Web-Applikation deaktiviert wurden. (NEO-27155)
 * Fehlerkorrektur – Es wurde eine Regression bei der Verwaltung von HTML-Vorlagen korrigiert, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Tabs sichtbar wurden. (NEO-25909)
 * Fehlerkorrektur – Es wurde ein Problem mit dem Datenbankbereinigungs-Workflow behoben, der aufgrund einer nicht verwalteten Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
 * Der Bereinigungs-Workflow bereinigt jetzt abgelaufene Listen in Stapeln von 100 anstelle einzeln.
@@ -260,7 +260,7 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Die Zeitzonenkonvertierung beim Snowflake-Connector funktioniert jetzt fehlerfrei (NEO-20105)
 * Fehlerkorrektur – Es gibt kein Problem mehr mit externen Konten, die FTP über SSL verwenden. (NEO-20498)
 * Fehlerkorrektur – Die Anzeige von Bildern in Line-Sendungen wird jetzt nicht mehr verhindert. (NEO-23207)
-* Fehlerkorrektur – Das Publizieren eines Angebots führt jetzt nicht mehr zu einem Fehler. (NEO-23312)
+* Fehlerkorrektur – Das Veröffentlichen eines Angebots führt jetzt nicht mehr zu einem Fehler. (NEO-23312)
 * Fehlerkorrektur – Bei Push-Benachrichtigungen funktionieren Testverbindungen in Mobile Apps jetzt nicht mehr, wenn das Zertifikat bereits abgelaufen ist. (NEO-22991)
 * Fehlerkorrektur – Bei Push-Benachrichtigungen, die mit hoher Häufigkeit gesendet werden, tritt jetzt kein Problem mehr auf. (NEO-20516)
 * Fehlerkorrektur – Tracking-Daten enthalten jetzt auch keine Duplikate, wenn die Trackinglogs keine enthalten. (NEO-20040)
