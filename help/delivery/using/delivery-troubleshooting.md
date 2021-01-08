@@ -2,24 +2,24 @@
 solution: Campaign Classic
 product: campaign
 title: Fehlerbehebung
-description: Erfahren Sie mehr über die Leistung von Versänden und wie Sie Probleme bei der Überwachung von Versänden beheben können.
+description: Erfahren Sie mehr über die Versandleistung und wie Sie Probleme beim Versand-Monitoring beheben können.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f3ba836bbb5a5f82d6a7868dcb15edc8e61b9a5b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 
-# Versand senden Fehlerbehebung {#delivery-troubleshooting}
+# Fehlerbehebung beim Versand {#delivery-troubleshooting}
 
-In diesem Abschnitt werden häufig auftretende Probleme beim Senden von Versänden und die Behebung von Fehlern Liste.
+In diesem Abschnitt werden häufig auftretende Probleme beim Versand sowie deren Fehlerbehebung aufgeführt.
 
-Vergewissern Sie sich außerdem, dass Sie die Best Practices und Checklisten befolgen, die in [dieser Seite](../../delivery/using/delivery-performances.md) beschrieben sind, um sicherzustellen, dass Ihre Versand eine gute Leistung erbringen.
+Befolgen Sie außerdem die auf [dieser Seite beschriebenen](../../delivery/using/delivery-performances.md) Best Practices und die Checkliste, um sicherzustellen, dass Ihre Sendungen gut funktionieren.
 
 **Verwandte Themen:**
 
@@ -55,17 +55,17 @@ Wenn der Status eines E-Mail-Versands **[!UICONTROL Fehlgeschlagen]** lautet, ka
 
 Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen Sendungen, wie z. B.:
 
-* Empfänger-Meldungen schlagen mit einem &quot;Unerreichbar&quot;-Fehler fehl:
+* Bei Empfängernachrichten wird eine &quot;Unerreichbar&quot;-Fehlermeldung mit folgenden Informationen angezeigt:
 
    ```
    Error while compiling script 'content htmlContent' line X: `[table]` is not defined. JavaScript: error while evaluating script 'content htmlContent
    ```
 
-   Ursache dieses Problems ist fast immer eine Personalisierung im HTML-Code, die versucht, eine Tabelle oder ein Feld aufzurufen, die bzw. das nicht im Upstream-Targeting oder im Zielgruppen-Mapping des Versands definiert oder zugeordnet wurde.
+   Die Ursache für dieses Problem ist fast immer eine Personalisierung innerhalb des HTML-Codes, die versucht, eine Tabelle oder ein Feld aufzurufen, die bzw. das bei der vorangegangenen Zielgruppenbestimmung oder beim Zielgruppen-Mapping des Versands nicht definiert oder zugeordnet wurde.
 
    Um dieses Problem zu beheben, müssen der Workflow und der Versandinhalt überprüft werden, um festzustellen, welcher Personalisierungsinhalt konkret die Tabelle aufrufen möchte und ob die Tabelle zugeordnet werden kann. Danach muss entweder der Aufruf dieser Tabelle in der HTML-Datei entfernt oder das Mapping mit dem Versand korrigiert werden.
 
-* Im Mid-Sourcing-Bereitstellungsmodell kann die folgende Meldung in den Versandlogs angezeigt werden:
+* Beim Mid-Sourcing-Bereitstellungsmodell kann die folgende Meldung in den Versandlogs angezeigt werden:
 
    ```
    Error during the call of method 'AppendDeliveryPart' on the mid sourcing server: 'Communication error with the server: please check this one is correctly configured. Code HTTP 408 'Service temporarily unavailable'.
@@ -87,12 +87,12 @@ Versandlogs liefern wichtige Informationen über den Grund von fehlgeschlagenen 
 
    Um dieses Problem zu beheben, überprüfen Sie die verwendeten Personalisierungsdaten und danach den Zieldatensatz für die Empfänger, für deren Feld mehr als ein Eintrag vorhanden ist. Sie können vor der Versandaktivität auch die Aktivität **[!UICONTROL Deduplizierung]** im Zielgruppen-Workflow auswählen, damit immer nur ein einziges Personalisierungsfeld verwendet wird. Weitere Informationen zur Deduplizierung finden Sie auf [dieser Seite](../../workflow/using/deduplication.md).
 
-* Einige Versand können mit der Fehlermeldung &quot;Unerreichbar&quot;fehlschlagen:
+* Manche Sendungen können fehlschlagen und eine &quot;Unerreichbar&quot;-Fehlermeldung mit folgenden Informationen anzeigen:
 
    ```
    Inbound email bounce (rule 'Auto_replies' has matched this bounce).
    ```
 
-   Das bedeutet, dass der Versand zwar erfolgreich war, Adobe Campaign aber eine automatische Antwort vom Empfänger erhalten hat (z. B. eine &quot;Abwesenheitsantwort&quot;), die mit den &quot;Auto_response&quot;-eingehenden E-Mail-Regeln übereinstimmte.
+   Das bedeutet, dass der Versand zwar erfolgreich war, Adobe Campaign aber eine automatische Antwort vom Empfänger erhalten hat (z. B. eine &quot;Abwesend&quot;-Antwort), die den Regeln für eingehende E-Mails &quot;Auto_replies&quot; entspricht.
 
-   Die E-Mail mit automatischer Antwort wird von Adobe Campaign ignoriert und die Adresse des Empfängers wird nicht an Quarantänen gesendet.
+   Die automatische Antwort-E-Mail wird von Adobe Campaign ignoriert und die Adresse des Empfängers wird nicht unter Quarantäne gestellt.
