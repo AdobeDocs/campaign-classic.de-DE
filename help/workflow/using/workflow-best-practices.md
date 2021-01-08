@@ -76,7 +76,7 @@ Kreuzen Sie in den **[!UICONTROL Workflow-Eigenschaften]** im Produktionsmodus n
 
 ![](assets/wf-execute-in-engine.png)
 
-## Workflow-Eigenschaften      {#workflow-properties}
+## Workflow-Eigenschaften       {#workflow-properties}
 
 ### Workflow-Ordner {#workflow-folders}
 
