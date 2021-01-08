@@ -6,11 +6,11 @@ description: Versandberichte
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1628'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -124,7 +124,7 @@ Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Webseite
 
 ![](assets/s_ncs_user_url_report.png)
 
-Sie können den Inhalt dieses Berichts konfigurieren, indem Sie: das anzuzeigende Ergebnisdiagramm, der Zeitfilter (seit dem Aktionsstart, während der ersten 6 Stunden nach dem Start usw.) und der Datenanzeigemodus (nach Bezeichnung, nach URL, nach Kategorie). Klicken Sie auf **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
+Sie haben die Möglichkeit, den Bericht in Bezug auf verschiedene Kriterien anzupassen: Anzahl der anzuzeigenden Ränge, Zeitraum (seit dem Start der Werbeaktion, in den ersten sechs Stunden nach dem Start usw.) oder auch Anzeigemodi der Daten (nach Titel, nach URL, nach Kategorie). Klicken Sie auf die Schaltfläche **[!UICONTROL Aktualisieren]**, um Ihre Auswahl zu bestätigen.
 
 Im oberen Bereich des Berichts werden folgende Indikatoren angezeigt:
 
