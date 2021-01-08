@@ -81,7 +81,7 @@ Weitere Informationen finden Sie unter [Partizipative Kampagne erstellen](../../
 
 Um an einer Kampagne teilnehmen zu können, bestellt die Lokalstelle den entsprechenden Kampagnenkit und gibt hierbei sämtliche für die lokale Anpassung erforderlichen Informationen an.
 
-## Arbeitsbereich    {#workspace}
+## Arbeitsbereich     {#workspace}
 
 Die Kampagnenkit-Liste ist über die Rubrik **Kampagnen** zugänglich: Klicken Sie dort auf **[!UICONTROL Kampagnenkits]**.
 
@@ -125,7 +125,7 @@ Jede Organisationseinheit enthält Identifikationsdaten (Titel, interner Name, A
 
 ## Umsetzung {#implementation}
 
-Dezentrale Marketingkampagnen werden von der Zentralstelle erstellt und publiziert. Anschließend können sie je nach Bedarf von Zentral- und Lokalstellen genutzt werden.
+Dezentrale Marketingkampagnen werden von der Zentralstelle erstellt und veröffentlicht. Anschließend können sie je nach Bedarf von Zentral- und Lokalstellen genutzt werden.
 
 Die Implementierungsetappen hängen vom gewählten Kittyp und dem Umfang der lokalen Verantwortung ab.
 
