@@ -46,7 +46,7 @@ Adobe Campaign bietet Datenverantwortlichen zwei Möglichkeiten zur Durchführun
 
 ### Voraussetzungen {#prerequesites}
 
-Adobe Campaign bietet Datenverantwortlichen Werkzeuge zur Erstellung und Bearbeitung von Datenschutzanfragen für in Adobe Campaign gespeicherte Daten. Für den Kontakt mit den betroffenen Personen ist jedoch der Datenverantwortliche allein zuständig (über E-Mail, Kundenunterstützung oder ein Web-Portal).
+Adobe Campaign bietet Datenverantwortlichen Tools zum Erstellen und Verarbeiten von Datenschutzanfragen für in Adobe Campaign gespeicherte Daten. Für den Kontakt mit den betroffenen Personen ist jedoch der Datenverantwortliche allein zuständig (über E-Mail, Kundenunterstützung oder ein Web-Portal).
 
 Als Datenverantwortlicher sind Sie daher außerdem verpflichtet, die Identität der betroffenen Person zu überprüfen, die die Anfrage stellt, und sicherzustellen, dass die dem Anfragenden übermittelten Daten zur betroffenen Person gehören.
 
@@ -131,11 +131,11 @@ Wenn Sie benutzerdefinierte Tabellen erstellt haben, für die eine Relation zur 
 
 ### Status von Datenschutzanfragen {#privacy-request-statuses}
 
-Dies sind die verschiedenen Status einer Datenschutzanfrage:
+Dies sind die unterschiedlichen Status einer Datenschutzanfrage:
 
-* **[!UICONTROL Neu]** / **[!UICONTROL Weitere Versuche ausstehend]**: Durchführung läuft, der Workflow hat die Anfrage noch nicht verarbeitet.
-* **[!UICONTROL Weitere Versuche in Gang]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.
-* **[!UICONTROL Ausstehende löschen]**: Der Workflow hat alle zu löschenden Empfängerdaten identifiziert.
+* **[!UICONTROL Neu]** / **[!UICONTROL Erneuter Versuch steht aus]**: Durchführung läuft, der Workflow hat die Anfrage noch nicht verarbeitet.
+* **[!UICONTROL Verarbeitungsvorgang läuft]** / **[!UICONTROL Erneuter Versuch läuft]**: Der Workflow verarbeitet gerade die Anfrage.
+* **[!UICONTROL Löschen steht aus]**: Der Workflow hat alle zu löschenden Empfängerdaten identifiziert.
 * **[!UICONTROL Löschvorgang läuft]**: Der Workflow führt gerade die Löschung durch.
 * **[!UICONTROL Löschbestätigung steht aus]**: (Löschanfrage im zweistufigen Prozessmodus) Der Workflow hat die Zugriffsanfrage verarbeitet. Für die Löschung ist eine manuelle Bestätigung erforderlich. Die Schaltfläche ist 15 Tage lang verfügbar.
 * **[!UICONTROL Beendet]**: Die Verarbeitung der Anfrage wurde ohne Fehler abgeschlossen.
@@ -382,7 +382,7 @@ Hier ist ein Beispiel dafür, wie Sie die API innerhalb von Campaign Classic üb
 
 Der **California Consumer Privacy Act** (CCPA) gibt in Kalifornien ansässigen Personen neue Rechte in Bezug auf ihre personenbezogenen Daten und verpflichtet bestimmte in Kalifornien tätige Unternehmen zur Einhaltung von Datenschutzvorschriften.
 
-Die Konfiguration und Verwendung von Zugriffs- und Löschanfragen für DSGVO und CCPA sind gleich. In diesem Abschnitt geht es um den Opt-out aus dem Verkauf von personenbezogenen Daten, der spezifisch für den CCPA ist.
+Die Konfiguration und Verwendung von Zugriffs- und Löschanfragen sind für DSGVO (GDPR) und CCPA identisch. In diesem Abschnitt geht es um den Opt-out aus dem Verkauf von personenbezogenen Daten, der spezifisch für den CCPA ist.
 
 Zusätzlich zu den von Adobe Campaign bereitgestellten Werkzeugen für die [Einverständnisverwaltung](../../platform/using/privacy-management.md#consent-management) können Sie verfolgen, ob ein Benutzer dem Verkauf seiner personenbezogenen Daten widersprochen hat.
 
@@ -392,7 +392,7 @@ Erweitern Sie dazu die Profiltabelle und fügen Sie ein Feld mit der Bezeichnung
 
 >[!IMPORTANT]
 >
->Es liegt in Ihrer Verantwortung als Datenverantwortlicher, die Anfrage der betroffenen Person zu erhalten und die Anfragedaten für CCPA zu verfolgen. Als Technologieanbieter stellen wir nur eine Möglichkeit zum Opt-out zur Verfügung. Weitere Informationen zu Ihrer Rolle als Datenverantwortlicher finden Sie unter [Personenbezogene Daten und Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
+>Es liegt in Ihrer Verantwortung als Datenverantwortlicher, die Anfrage der betroffenen Person zu erhalten und die Anfragedaten für CCPA zu verfolgen. Als Technologieanbieter bieten wir nur eine Opt-out-Möglichkeit. Weitere Informationen zu Ihrer Rolle als Datenverantwortlicher finden Sie unter [Personenbezogene Daten und Personas](../../platform/using/privacy-and-recommendations.md#personal-data).
 
 ### Voraussetzung {#ccpa-prerequisite}
 
