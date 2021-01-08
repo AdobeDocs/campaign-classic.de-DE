@@ -23,7 +23,7 @@ Für jede im Zusammenhang mit der Angebotsverwaltung verwendete Zieldimension ex
 
 * eine Design-Umgebung, in der der Angebotsverantwortliche Angebote erstellt, ändert und kategorisiert sowie ihren Validierungsprozess auslöst, damit sie zum Einsatz kommen können. In dieser Umgebung werden darüber hinaus die für eine Kategorie geltenden Regeln, die Platzierungen, in denen die Angebote unterbreitet werden können und die für die Eignungsprüfung zu verwendenden Filter definiert.
 
-   Kategorien können automatisch durch die Validierung oder manuell in der Live-Umgebung publiziert werden.
+   Kategorien können automatisch durch die Validierung oder manuell in der Live-Umgebung veröffentlicht werden.
 
    Die Vorgehensweise zum Validieren von Angeboten wird im Abschnitt [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md) beschrieben.
 
