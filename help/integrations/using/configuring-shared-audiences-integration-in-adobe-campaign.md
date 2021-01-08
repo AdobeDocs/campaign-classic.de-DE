@@ -28,7 +28,7 @@ Nach Übermittlung dieses Antrags wird dieser von Adobe bearbeitet. Sie werden e
 >
 >Wenn Sie die demdex-Domain verwenden und die Syntax **ftp-out.demdex.com** für das externe Importkonto und **ftp-in.demdex.com** für das externe Exportkonto befolgen, müssen Sie Ihre Implementierung entsprechend anpassen und zum Amazon S3-Connector (Simple Storage Service) wechseln, um Daten zu importieren oder zu exportieren. Weitere Informationen zur Konfiguration von externen Konten mit Amazon S3 finden Sie in [diesem Abschnitt](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md#step-1--configure-or-check-the-external-accounts-in-adobe-campaign).
 
-## Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.     {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
+## Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.      {#step-1--configure-or-check-the-external-accounts-in-adobe-campaign}
 
 Gehen Sie folgendermaßen vor, um die externen Konten in Adobe Campaign zu konfigurieren bzw. zu überprüfen:
 
@@ -79,7 +79,7 @@ So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
    ![](assets/aam_config_3.png)
 
-## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.    {#step-3--configure-campaign-tracking-server}
+## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.     {#step-3--configure-campaign-tracking-server}
 
 Für die Konfiguration der Integration mit People Core Service oder Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
 
