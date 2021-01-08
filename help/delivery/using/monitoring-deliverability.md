@@ -6,9 +6,9 @@ description: Erfahren Sie mehr über Tools und Richtlinien zum Monitoring der Zu
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
 ht-degree: 100%
 
