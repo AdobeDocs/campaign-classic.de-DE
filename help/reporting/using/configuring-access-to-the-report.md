@@ -102,7 +102,7 @@ Als Beispiel wird im Folgenden eine Verknüpfung eines Berichts zu einer Empfän
 
    ![](assets/s_ncs_advuser_report_wizard_link_04.png)
 
-1. Publizieren Sie Ihren Bericht.
+1. Veröffentlichen Sie Ihren Bericht.
 1. Öffnen Sie eine Ihrer Listen und klicken Sie auf den Tab **[!UICONTROL Berichte]**: Der zuvor erstellte Bericht ist nun verfügbar.
 
    ![](assets/s_ncs_advuser_report_wizard_link_05.png)
@@ -123,15 +123,15 @@ Es stehen zudem Parameter zur Verfügung, die eine Kontrolle der Fehler ermögli
 
 Die Funktionsweise dieser Parameter wird im Abschnitt zur Definition von **Webformular-Eigenschaften** des Kapitels [Webformulare](../../web/using/about-web-forms.md) beschrieben.
 
-## Berichtpublikation {#publishing-the-report}
+## Berichtveröffentlichung {#publishing-the-report}
 
-Das Publizieren des Berichts ist obligatorisch, wenn Sie ihn mit anderen Benutzern teilen und in der Liste der verfügbaren Berichte anzeigen möchten (siehe auch [Anzeigekontext von Berichten](#report-display-context)). Dieser Vorgang muss bei jeder Änderung des Berichts erneut durchgeführt werden.
+Das Veröffentlichen des Berichts ist obligatorisch, wenn Sie ihn mit anderen Benutzern teilen und in der Liste der verfügbaren Berichte anzeigen möchten (siehe auch [Anzeigekontext von Berichten](#report-display-context)). Dieser Vorgang muss bei jeder Änderung des Berichts erneut durchgeführt werden.
 
-1. Öffnen Sie den Publikationsassistenten durch Klick auf **[!UICONTROL Publizieren]** in der Symbolleiste.
+1. Öffnen Sie den Veröffentlichungsassistenten durch Klick auf **[!UICONTROL Veröffentlichen]** in der Symbolleiste.
 
    ![](assets/s_ncs_advuser_report_publish_01.png)
 
-1. Klicken Sie auf **[!UICONTROL Starten]**, um die Publikation zu beginnen.
+1. Klicken Sie auf **[!UICONTROL Starten]**, um die Veröffentlichung zu beginnen.
 
    ![](assets/s_ncs_advuser_report_publish_02.png)
 
