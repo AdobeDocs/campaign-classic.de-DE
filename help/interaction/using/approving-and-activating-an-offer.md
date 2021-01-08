@@ -33,7 +33,7 @@ Sie haben daher die Möglichkeit, den Inhalt eines Angebots für gewisse Platzie
 
 >[!IMPORTANT]
 >
->Sobald Inhalt und Eignung eines Angebots validiert wurden, startet automatisch der Publikations-Workflow (Angebotsbenachrichtigung), welcher das Angebot in die Live-Umgebung dupliziert und für die aktivierten Platzierungen verfügbar macht.
+>Sobald Inhalt und Eignung eines Angebots validiert wurden, startet automatisch der Veröffentlichungs-Workflow (Angebotsbenachrichtigung), welcher das Angebot in die Live-Umgebung dupliziert und für die aktivierten Platzierungen verfügbar macht.
 
 Gehen Sie wie folgt vor, um den Inhalt eines Angebots zu validieren:
 
@@ -59,7 +59,7 @@ Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot
 
 >[!IMPORTANT]
 >
->Sobald Inhalt und Eignung eines Angebots validiert wurden, startet automatisch der Publikations-Workflow (Angebotsbenachrichtigung), welcher das Angebot in die Live-Umgebung dupliziert und für die aktivierten Platzierungen verfügbar macht.
+>Sobald Inhalt und Eignung eines Angebots validiert wurden, startet automatisch der Veröffentlichungs-Workflow (Angebotsbenachrichtigung), welcher das Angebot in die Live-Umgebung dupliziert und für die aktivierten Platzierungen verfügbar macht.
 
 * Um eine Übersicht aller konfigurierten Regeln zu erhalten, klicken Sie auf **[!UICONTROL Planung und Eignungsregeln des Angebots]**.
 
