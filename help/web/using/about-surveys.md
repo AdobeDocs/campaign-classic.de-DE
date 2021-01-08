@@ -17,7 +17,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Umfragen{#about-surveys}
 
-Adobe Campaign beinhaltet ein Grafikmodul zur Definition und Publikation von Webanwendungen. Damit können Seiten erstellt werden, wie etwa Bearbeitungsformulare für das Extranet oder Benachrichtigungsformulare mit Daten von der Datenbank mit Tabellen, Grafiken und Eingabeformularen. Mit dieser Funktion können Webseiten konzipiert und veröffentlicht werden, in denen Benutzer Informationen suchen oder eingeben können.
+Adobe Campaign beinhaltet ein Grafikmodul zur Definition und Veröffentlichung von Webanwendungen. Damit können Seiten erstellt werden, wie etwa Bearbeitungsformulare für das Extranet oder Benachrichtigungsformulare mit Daten von der Datenbank mit Tabellen, Grafiken und Eingabeformularen. Mit dieser Funktion können Webseiten konzipiert und veröffentlicht werden, in denen Benutzer Informationen suchen oder eingeben können.
 
 Mit dem optionalen **Umfragemodul** können Sie spezielle Webanwendungen erstellen. Beispielsweise können Sie damit Online-Umfragen mithilfe von Formularen erstellen und verwalten, Profilinformationen hinzufügen oder ändern oder eine An- und Abmeldemöglichkeit für Informationsdienste bereitstellen. Die erfassten Antworten werden in der Datenbank oder in lokalen Variablen gespeichert. Anhand der Antworten kann das Datenmodell dynamisch erweitert werden. Außerdem können Sie die Ergebnisse in Echtzeit einsehen, die Antworten filtern und mithilfe spezieller Grafiken analysieren.
 
@@ -69,7 +69,7 @@ Führen Sie die folgenden Schritte aus, um eine Umfrage zu erstellen und bereitz
 
    Ein Zwischenschritt zum Vorausfüllen der Daten kann eingerichtet werden, damit das Formular mit Daten ausgefüllt wird, die sich bereits in der Datenbank befinden. Sie können auch eine Testbox hinzufügen.
 
-1. Publizieren Sie die Umfrage und senden Sie sie dann an Empfänger (schließen Sie z. B. den Link in eine Sendung oder auf einer Website ein).
+1. Veröffentlichen Sie die Umfrage und senden Sie sie dann an Empfänger (schließen Sie z. B. den Link in eine Sendung oder auf einer Website ein).
 1. Überwachen Sie die Antworten und prüfen Sie die entsprechenden Berichte.
 
 Weitere Informationen zum Konfigurieren und Sequenzieren dieser Schritte finden Sie in [diesem Abschnitt](../../web/using/about-web-forms.md). In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
