@@ -19,7 +19,7 @@ ht-degree: 98%
 
 ## Inhaltsverwaltungsaktivitäten {#content-management-activity}
 
-Die Erstellung, Bearbeitung und Publikation von Inhalten kann mithilfe eines in der Adobe-Campaign-Clientkonsole konfigurierten Workflows automatisiert werden.
+Die Erstellung, Bearbeitung und Veröffentlichung von Inhalten kann mithilfe eines in der Adobe-Campaign-Clientkonsole konfigurierten Workflows automatisiert werden.
 
 Die Aktivität **Content Management** ist in der **[!UICONTROL Werkzeug]**-Symbolleiste des Workflow-Diagramms enthalten.
 
@@ -46,15 +46,15 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
    Wählt eine Inhaltsinstanz ausgehend von einem JavaScript-Template aus. Der auszuwertende Code ermöglicht den Abruf der Inhaltskennung.
 
-* **Neu, basierend auf einer Publikationsvorlage erstellt**
+* **Neu, basierend auf einer Veröffentlichungsvorlage erstellt**
 
-   Erstellt einen neuen Inhalt ausgehend von einer Publikationsvorlage. Die Inhaltsinstanz wird im angegebenen &quot;Inhaltskanal&quot;-Ordner gespeichert.
+   Erstellt einen neuen Inhalt ausgehend von einer Veröffentlichungsvorlage. Die Inhaltsinstanz wird im angegebenen &quot;Inhaltskanal&quot;-Ordner gespeichert.
 
 ### Inhalt aktualisieren {#update-the-content}
 
 * **Betreff**
 
-   Ermöglicht bei der Publikation die Anpassung des Versandbetreffs.
+   Ermöglicht bei der Veröffentlichung die Anpassung des Versandbetreffs.
 
 * **Zugriff auf Daten eines XML-Streams**
 
@@ -70,13 +70,13 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 * **Erzeugen**
 
-   Erzeugt die Ausgabedateien für jede Publikationsvorlage mit Typ &quot;Datei&quot;. Die ausgehende Transition wird für jede erzeugte Datei aktiviert, wobei die in der Variablen &quot;contentID&quot; gespeicherte Inhaltskennung und der in der Variable &quot;filename&quot; gespeicherte Dateiname als Parameter übergeben werden.
+   Erzeugt die Ausgabedateien für jede Veröffentlichungsvorlage mit Typ &quot;Datei&quot;. Die ausgehende Transition wird für jede erzeugte Datei aktiviert, wobei die in der Variablen &quot;contentID&quot; gespeicherte Inhaltskennung und der in der Variable &quot;filename&quot; gespeicherte Dateiname als Parameter übergeben werden.
 
 ### Transition {#transition}
 
 Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
 
-## Beispiele   {#examples}
+## Beispiele    {#examples}
 
 ### Erstellung und Versand eines Inhalts automatisieren {#automating-content-creation-and-delivery}
 
@@ -88,7 +88,7 @@ Der Inhalt wird in der Aktivität &quot;Content Management&quot; konfiguriert:
 
 ![](assets/d_ncs_content_workflow3.png)
 
-Ausgehend von der Publikationsvorlage wird im Inhaltskanal-Ordner eine neue Inhaltsinstanz erstellt.
+Ausgehend von der Veröffentlichungsvorlage wird im Inhaltskanal-Ordner eine neue Inhaltsinstanz erstellt.
 
 Im vorliegenden Beispiel wurde der Versandbetreff überschrieben. Er ersetzt den in der Versandvorlage der **[!UICONTROL Versand]**-Aktivität angegebenen Betreff.
 
@@ -103,7 +103,7 @@ Der Inhalt wird automatisch durch den von der angegebenen URL heruntergeladenen 
 </book>
 ```
 
-Das Datenformat stimmt nicht mit dem Datenschema überein, das in der Publikationsvorlage eingegeben wurde (**cus:book** in unserem Beispiel); das **`<section>`**-Element muss durch das **`<chapter>`** Element ersetzt werden. Sie müssen das Stylesheet „cus:book-workflow.xsl“ anwenden, um die notwendigen Änderungen vorzunehmen.
+Das Datenformat stimmt nicht mit dem Datenschema überein, das in der Veröffentlichungsvorlage eingegeben wurde (**cus:book** in unserem Beispiel); das **`<section>`**-Element muss durch das **`<chapter>`** Element ersetzt werden. Sie müssen das Stylesheet „cus:book-workflow.xsl“ anwenden, um die notwendigen Änderungen vorzunehmen.
 
 Quellcode des verwendeten XSLT-Stylesheets:
 
@@ -152,7 +152,7 @@ Die Konfiguration des Versands erfolgt in der **Versand**-Aktion:
 
 Bei Erstellung eines neuen Versands ist die Angabe der Vorlage erforderlich.
 
-Hier werden die Umwandlungsvorlagen aus der Publikationsvorlage als Versandvorlage verwendet. Bei der Inhaltserzeugung werden die HTML- und Text-Vorlagen genutzt, wenn sie keine verknüpfte Versandvorlage haben oder mit derselben Vorlage wie der in der Aktivität angegebenen referenziert sind.
+Hier werden die Umwandlungsvorlagen aus der Veröffentlichungsvorlage als Versandvorlage verwendet. Bei der Inhaltserzeugung werden die HTML- und Text-Vorlagen genutzt, wenn sie keine verknüpfte Versandvorlage haben oder mit derselben Vorlage wie der in der Aktivität angegebenen referenziert sind.
 
 Empfänger und Inhalt des Versands
 
@@ -162,7 +162,7 @@ Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
 ### Inhalt erstellen und später versenden {#creating-content-and-publishing-it-later}
 
-Dieser Workflow erstellt einen Inhalt, die Datei-Publikation erfolgt jedoch zu einem späteren Zeitpunkt.
+Dieser Workflow erstellt einen Inhalt, die Datei-Veröffentlichung erfolgt jedoch zu einem späteren Zeitpunkt.
 
 ![](assets/d_ncs_content_workflow5.png)
 
@@ -172,7 +172,7 @@ Die erste **Content-Management**-Aktivität erstellt eine Inhaltsinstanz.
 
 >[!NOTE]
 >
->Im **[!UICONTROL Publikation]**-Tab der Umwandlungsvorlagen ist der Speicherort der zu erzeugenden Zielgruppe anzugeben.
+>Im **[!UICONTROL Veröffentlichung]**-Tab der Umwandlungsvorlagen ist der Speicherort der zu erzeugenden Zielgruppe anzugeben.
 
 Eine Warte-Aktivität setzt die nachfolgende Transition für die Dauer einer Woche aus.
 
@@ -184,9 +184,9 @@ Die nachfolgende Aktivität startet die Inhaltserzeugung.
 
 ![](assets/d_ncs_content_workflow8.png)
 
-Der zu publizierende Inhalt wird in der eingehenden Transition angegeben.
+Der zu veröffentlichende Inhalt wird in der eingehenden Transition angegeben.
 
-Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebenen Publikationsverzeichnisses.
+Die Aktivität endet mit der Erzeugung des Inhalts unter Verwendung des angegebenen Veröffentlichungsverzeichnisses.
 
 Die Aktivität **JavaScript-Code** speichert den kompletten Namen jeder erzeugten Datei.
 
