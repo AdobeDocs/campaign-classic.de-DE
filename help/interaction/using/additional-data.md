@@ -90,7 +90,7 @@ Sie können beispielsweise die Unterbreitung eines Angebots auf Kontakte beschr�
 >
 >Die Regel muss sich auf die Kanäle beziehen, für die die Daten definiert wurden. Im vorliegenden Beispiel wurde die Regel auf den eingehenden Web-Kanal begrenzt (Feld **[!UICONTROL Berücksichtigt wenn]**).
 
-### Personalisierung    {#personalization}
+### Personalisierung     {#personalization}
 
 Zusätzliche Daten können des Weiteren bei der Angebotspersonalisierung zum Einsatz kommen. Sie können beispielsweise eine Bedingung bezüglich der Browsersprache des Besuchers formulieren.
 
