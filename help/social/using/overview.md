@@ -23,6 +23,6 @@ Mit Social-Media-Marketing können Sie Sendungen an Ihre verschiedenen Facebook-
 >
 >Adobe Campaign bittet Sie, sich an die von Facebook und Twitter bezüglich des Nachrichtenversands übermittelten Dienstbedingungen zu halten.
 >
->Bevor Sie Publikationen senden, müssen Sie die Konfigurationsschritte befolgen, die unter [Starten von Workflows](../../social/using/starting-workflows.md) beschrieben werden.
+>Bevor Sie Veröffentlichungen senden, müssen Sie die Konfigurationsschritte befolgen, die unter [Starten von Workflows](../../social/using/starting-workflows.md) beschrieben werden.
 
 In diesem Abschnitt werden die Elemente beschrieben, die für einen Facebook- und Twitter-Versand spezifisch sind. Alle Elemente, die mit dem E-Mail-Versand identisch sind, werden in [diesem Abschnitt](../../delivery/using/about-email-channel.md) beschrieben.
