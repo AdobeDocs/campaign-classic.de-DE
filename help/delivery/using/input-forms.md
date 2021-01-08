@@ -23,7 +23,7 @@ Weiterführende Informationen zu Formularen finden Sie in [diesem Abschnitt](../
 
 ## Formularstruktur {#form-structure}
 
-Das XML-Dokument eines Formulars muss die Wurzel **`<form>`** mit den Attributen **name** und **namespace** zur Angabe des Formularnamens und des Namensraums enthalten.
+Das XML-Dokument eines Formulars muss die Wurzel **`<form>`** mit den Attributen **name** und **namespace** zur Angabe des Formularnamens und des Namespace enthalten.
 
 ```
 <form name="form_name" namespace="name_space">
@@ -31,7 +31,7 @@ Das XML-Dokument eines Formulars muss die Wurzel **`<form>`** mit den Attributen
 </form>
 ```
 
-Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namensraum aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, geben Sie den Schemaschlüssel im Attribut **entity-schema** des **`<form>`**-Elements ein.
+Standardmäßig ist ein Formular mit dem Datenschema verknüpft, das denselben Namen und denselben Namespace aufweist. Um ein Formular mit einem anderen Namen zu verknüpfen, geben Sie den Schemaschlüssel im Attribut **entity-schema** des **`<form>`**-Elements ein.
 
 Nachfolgend wird die Struktur eines Formulars anhand des Datenschemas &quot;cus:Buch&quot; verdeutlicht:
 
