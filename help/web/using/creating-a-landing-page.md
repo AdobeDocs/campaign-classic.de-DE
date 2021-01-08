@@ -155,18 +155,18 @@ Das Personalisierungsfeld ist im Editor durch einen gelben Hintergrund gekennzei
 
 ![](assets/dce_uc1_edit_champperso.png)
 
-## Schritt 3: Publizieren des Inhalts {#step-3---publishing-content}
+## Schritt 3: Veröffentlichen des Inhalts {#step-3---publishing-content}
 
-Inhalte werden über das Dashboard der Webanwendung publiziert. Klicken Sie auf die Schaltfläche **[!UICONTROL Publizieren]**, um sie auszuführen.
+Inhalte werden über das Dashboard der Webanwendung veröffentlicht. Klicken Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]**, um sie auszuführen.
 
 ![](assets/dce_uc1_pub_dashboard.png)
 
-Während der Publikation wird ein Protokoll angezeigt. Das Publikationssystem analysiert den gesamten Inhalt in der Webanwendung.
+Während der Veröffentlichung wird ein Protokoll angezeigt. Das Veröffentlichungssystem analysiert den gesamten Inhalt in der Webanwendung.
 
 ![](assets/dce_uc1_pub_dashboard_journal.png)
 
 >[!NOTE]
 >
->Im Publikationsprotokoll sind Warnhinweise und Fehler nach der jeweiligen Aktivität sortiert.
+>Im Veröffentlichungsprotokoll sind Warnhinweise und Fehler nach der jeweiligen Aktivität sortiert.
 
 Das Formular ist jetzt verfügbar: Seine URL kann im Dashboard der Anwendung geöffnet und an Empfänger gesendet werden.
