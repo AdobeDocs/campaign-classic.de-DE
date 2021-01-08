@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 
 Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes verwenden:
 
-* Mindestens Adobe Campaign 20.3 oder Gold Standard 11
+* Mindestens Adobe Campaign-Version 20.3 oder Gold Standard-Version 11
 * Adobe Analytics Standard-Version
 
 Sie benötigen außerdem:
@@ -113,7 +113,7 @@ Der Pipeline-Dienst dokumentiert die von jedem Verbraucher abgerufenen Nachricht
 
 Für die Konfiguration der Pipeline-Option wird Folgendes empfohlen:
 
-* Wenn Sie Auslöser bearbeiten oder hinzufügen, tun Sie dies unter **[!UICONTROL Auslöser]**; den Rest sollten Sie nicht bearbeiten.
+* Wenn Sie Trigger bearbeiten oder hinzufügen, tun Sie dies unter **[!UICONTROL Triggers]**; den Rest sollten Sie nicht bearbeiten.
 * Vergewissern Sie sich, dass die JSON gültig ist. Verwenden Sie einen JSON-Validator, z. B. den auf dieser [Website](http://jsonlint.com/).
 * &quot;name&quot; entspricht der Auslöser-ID. Ein Platzhalter (*) deckt alle Auslöser ab.
 * &quot;Consumer&quot; entspricht dem Namen der aufrufenden Instanz oder Anwendung.
