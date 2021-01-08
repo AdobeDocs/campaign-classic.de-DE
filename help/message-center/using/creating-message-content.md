@@ -31,7 +31,7 @@ Integrieren Sie nach der Erstellung des Inhalts die Ereignisinformationen in den
 ![](assets/messagecenter_create_content_001.png)
 
 * Alle Personalisierungsfelder stammen aus den Nutzdaten.
-* Es ist möglich, in einer Transaktionsnachricht auf einen oder mehrere Gestaltungsbausteine zu verweisen. Der Bausteininhalt wird während der Publikation in der Ausführungsinstanz zum Versandinhalt hinzugefügt.
+* Es ist möglich, in einer Transaktionsnachricht auf einen oder mehrere Gestaltungsbausteine zu verweisen. Der Bausteininhalt wird während der Veröffentlichung in der Ausführungsinstanz zum Versandinhalt hinzugefügt.
 
 Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteninhalt einzufügen:
 
