@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Best Practices des Versands
-description: Erfahren Sie mehr über Versand-Performance und Best Practices.
+title: Best Practices für die Versandleistung
+description: Erfahren Sie mehr über die Versandleistung und die entsprechenden Best Practices.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5b43412286762977c416665d296908a9bfc9b20a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Best Practices für Versand {#delivery-performances}
+# Best Practices für die Versandleistung {#delivery-performances}
 
-Es wird empfohlen, die unten stehenden Richtlinien zu befolgen, um sicherzustellen, dass Ihre Versand gute Leistungen erbringen, sowie die Leistungsüberprüfungen, wenn Versand auftreten.
+Wir empfehlen, die folgenden Richtlinien zu befolgen, um sicherzustellen, dass Ihre Sendungen gut funktionieren, sowie die angegebenen Prüfungen durchzuführen, wenn Sie auf Versandprobleme stoßen.
 
 **Verwandte Themen:**
 
@@ -47,7 +47,7 @@ Es wird empfohlen, die unten stehenden Richtlinien zu befolgen, um sicherzustell
 >
 >ISPs würden Adressen nach einer Inaktivitätsphase deaktivieren. Bounce-Nachrichten werden an den Absender gesendet, um sie über diesen neuen Status zu informieren.
 
-## Checkliste für Leistungsprobleme {#performance-issues}
+## Checkliste bei Versandproblemen {#performance-issues}
 
 Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
 
