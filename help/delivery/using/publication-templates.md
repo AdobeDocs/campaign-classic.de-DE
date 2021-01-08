@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Publikationsvorlagen
-description: Publikationsvorlagen
+title: Veröffentlichungsvorlagen
+description: Veröffentlichungsvorlagen
 audience: delivery
 content-type: reference
 topic-tags: content-management
@@ -15,43 +15,43 @@ ht-degree: 100%
 ---
 
 
-# Publikationsvorlagen{#publication-templates}
+# Veröffentlichungsvorlagen{#publication-templates}
 
-## Über Publikationsvorlagen {#about-publication-templates}
+## Über Veröffentlichungsvorlagen {#about-publication-templates}
 
-Die Publikationsvorlage stellt den Steckbrief des zu publizierenden Inhalts dar. Sie verweist auf alle für die Publikation erforderlichen Ressourcen:
+Die Veröffentlichungsvorlage stellt den Steckbrief des zu veröffentlichenden Inhalts dar. Sie verweist auf alle für die Veröffentlichung erforderlichen Ressourcen:
 
 * das Datenschema,
 * das Formular,
 * die Umwandlungsvorlagen für jedes Ausgabedokument.
 
-## Identifizierung von Publikationsvorlagen {#identification-of-a-publication-template}
+## Identifizierung von Veröffentlichungsvorlagen {#identification-of-a-publication-template}
 
-Eine Publikationsvorlage wird über ihren Namen und Namensraum identifiziert.
+Eine Veröffentlichungsvorlage wird über ihren Namen und Namespace identifiziert.
 
-Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den Namensraum und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:newsletter**).
+Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:newsletter**).
 
 >[!NOTE]
 >
->Es wird empfohlen, für Schema, Formular und Publikationsvorlage den gleichen Schlüssel zu verwenden.
+>Es wird empfohlen, für Schema, Formular und Veröffentlichungsvorlage den gleichen Schlüssel zu verwenden.
 
 ## Erstellung und Konfiguration der Vorlagen {#creating-and-configuring-the-template}
 
-Standardmäßig werden Publikationsvorlagen im Knoten **[!UICONTROL Administration > Konfiguration > Publikationsvorlagen]** gespeichert. Klicken Sie dort zur Erstellung einer neuen Vorlage auf die Schaltfläche **[!UICONTROL Neu]**.
+Standardmäßig werden Veröffentlichungsvorlagen im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** gespeichert. Klicken Sie dort zur Erstellung einer neuen Vorlage auf die Schaltfläche **[!UICONTROL Neu]**.
 
-Geben Sie den Namen der Vorlage (d. h. den aus Namensraum und Namen bestehenden Identifikationsschlüssel), den Titel, das zugeordnete Datenschema sowie das entsprechende Formular an.
+Geben Sie den Namen der Vorlage (d. h. den aus Namespace und Namen bestehenden Identifikationsschlüssel), den Titel, das zugeordnete Datenschema sowie das entsprechende Formular an.
 
 ![](assets/d_ncs_content_model.png)
 
 >[!NOTE]
 >
->Bei Erstellung eines auf dieser Publikationsvorlage beruhenden Inhalts wird der hier vergebene Titel angezeigt.
+>Bei Erstellung eines auf dieser Veröffentlichungsvorlage beruhenden Inhalts wird der hier vergebene Titel angezeigt.
 
-Die Option **Zur Erstellung des Inhalts Status prüfen** stellt sicher, dass die Inhaltsinstanzen den Status „Validiert“ aufweisen, bevor die Datei erzeugt wird. Weitere Informationen hierzu finden Sie im Abschnitt [Publikation](#publication).
+Die Option **Zur Erstellung des Inhalts Status prüfen** stellt sicher, dass die Inhaltsinstanzen den Status „Validiert“ aufweisen, bevor die Datei erzeugt wird. Weitere Informationen hierzu finden Sie im Abschnitt [Veröffentlichung](#publication).
 
 Für jedes Ausgabeformat muss eine Umwandlungsvorlage hinzugefügt werden. Es können so viele Umwandlungsvorlagen wie nötig erstellt werden.
 
-Im Feld **[!UICONTROL Vorlagenname]** ist ein frei wählbarer Titel anzugeben, der das Rendering des Ausgabedokuments beschreibt. Die verschiedenen Publikationsparameter sind für jede Umwandlungsvorlage separat in den einzelnen Tabs zu erfassen.
+Im Feld **[!UICONTROL Vorlagenname]** ist ein frei wählbarer Titel anzugeben, der das Rendering des Ausgabedokuments beschreibt. Die verschiedenen Veröffentlichungsparameter sind für jede Umwandlungsvorlage separat in den einzelnen Tabs zu erfassen.
 
 ### Rendering {#rendering}
 
@@ -61,19 +61,19 @@ Konfigurieren Sie im **[!UICONTROL Rendering]**-Tab folgende Parameter:
 * das Format des Ausgabedokuments: HTML, Text, XML oder RTF;
 * den Namen der Vorlage, die die Umwandlungsinformationen enthält, d. h. des Stylesheets oder des JavaScript-Templates.
 
-### Publikation {#publication}
+### Veröffentlichung {#publication}
 
-Publikation bezeichnet den Vorgang der Erzeugung des Ausgabedokuments in Form einer Datei. Wählen Sie hierzu im gleichnamigen Tab im Feld Typ die Option **[!UICONTROL Datei]**.
+Veröffentlichung bezeichnet den Vorgang der Erzeugung des Ausgabedokuments in Form einer Datei. Wählen Sie hierzu im gleichnamigen Tab im Feld Typ die Option **[!UICONTROL Datei]**.
 
 ![](assets/d_ncs_content_model2.png)
 
-Des Weiteren können folgende Publikationsparameter konfiguriert werden:
+Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
 * **[!UICONTROL Zeichenkodierung]** der Ausgabedatei. Standardmäßig wird die Zeichensatztabelle Latin 1 (1252) verwendet.
 * **[!UICONTROL Multidatei-Erzeugung]** fügt zu Beginn jeder neuen Seite des Ausgabedokuments ein Trennzeichen ein. Bei der Inhaltserzeugung werden so viele Dateien erstellt, wie Trennzeichen angegeben wurden. Dieser Modus wird für die Erstellung von Minisites verwendet. Weitere Informationen hierzu finden Sie im Abschnitt [Multidatei-Erzeugung](#multi-file-generation).
 * Das Eingabefeld **[!UICONTROL Speicherort]** enthält den Namen der Ausgabedatei. Wenn dieser aus Variablen besteht, wird er automatisch erzeugt.
 
-   Die Variablen sind wie folgt anzugeben: **`$(<xpath>)`**, wobei **`<xpath>`** den Pfad eines Felds des der Publikationsvorlage zugrunde liegenden Datenschemas bezeichnet.
+   Die Variablen sind wie folgt anzugeben: **`$(<xpath>)`**, wobei **`<xpath>`** den Pfad eines Felds des der Veröffentlichungsvorlage zugrunde liegenden Datenschemas bezeichnet.
 
    Beispielsweise kann der Dateiname auf ein Datumsfeld verweisen. In diesem Fall ist die Funktion **$date-format** zu verwenden und Feldpfad sowie Ausgabeformat sind anzugeben.
 
@@ -105,7 +105,7 @@ Sie können das XML-Ausgabedokument durch die Aggregation von Daten mithilfe ein
 
 ### Multidatei-Erzeugung {#multi-file-generation}
 
-Zur Verwendung dieser Option ist das Feld **[!UICONTROL Multidatei-Erzeugung]** in der Publikationsvorlage anzukreuzen. Auf diese Weise können im Stylesheet Trennzeichen zu Beginn jeder neuen Seite des Ausgabedokuments eingefügt werden. Bei der Inhaltserzeugung werden so viele Dateien erstellt, wie Trennzeichen angegeben wurden.
+Zur Verwendung dieser Option ist das Feld **[!UICONTROL Multidatei-Erzeugung]** in der Veröffentlichungsvorlage anzukreuzen. Auf diese Weise können im Stylesheet Trennzeichen zu Beginn jeder neuen Seite des Ausgabedokuments eingefügt werden. Bei der Inhaltserzeugung werden so viele Dateien erstellt, wie Trennzeichen angegeben wurden.
 
 Das zu verwendende Trennzeichen stellt sich wie folgt dar:
 
@@ -173,9 +173,9 @@ Das Trennzeichen wird zu Beginn jeder Seite angegeben, die in die zu erzeugende 
 <xsl:comment> #nl:output_replace($(path)/<xsl:value-of select="@id"/>.htm)</xsl:comment>
 ```
 
-Der Dateiname wird mit der Variable **$(path)** konstruiert, welche den Publikationspfad bezeichnet, ergänzt durch **`<xsl:value-of select="@id" />`**, was der Kennung des Kapitels im Quelldokument entspricht.
+Der Dateiname wird mit der Variable **$(path)** konstruiert, welche den Veröffentlichungspfad bezeichnet, ergänzt durch **`<xsl:value-of select="@id" />`**, was der Kennung des Kapitels im Quelldokument entspricht.
 
-In der Publikationsvorlage müssen beide Stylesheets &quot;cus:Buch.xsl&quot; und &quot;cus:Kapitel.xsl&quot; angegeben werden.
+In der Veröffentlichungsvorlage müssen beide Stylesheets &quot;cus:Buch.xsl&quot; und &quot;cus:Kapitel.xsl&quot; angegeben werden.
 
 In der Umwandlungsvorlage der Kapitel ist die Option **[!UICONTROL Multidatei-Erzeugung]** anzukreuzen:
 
