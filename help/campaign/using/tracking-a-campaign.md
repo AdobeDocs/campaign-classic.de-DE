@@ -99,7 +99,7 @@ Das Zurücksetzen eines Kampagnenkits dient dazu, dieses zu bearbeiten und ansch
 
    ![](assets/mkg_dist_mutual_op_reinit2.png)
 
-1. Das Kit erhält den Status **[!UICONTROL In Bearbeitung]**. Es kann nun bearbeitet, validiert und neu in der Kampagnenkit-Liste publiziert werden.
+1. Das Kit erhält den Status **[!UICONTROL In Bearbeitung]**. Es kann nun bearbeitet, validiert und neu in der Kampagnenkit-Liste veröffentlicht werden.
 
 >[!NOTE]
 >
