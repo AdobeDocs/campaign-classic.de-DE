@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Auf Twitter publizieren
-description: Auf Twitter publizieren
+title: Auf Twitter veröffentlichen
+description: Auf Twitter veröffentlichen
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
 ht-degree: 100%
 
 ---
 
 
-# Auf Twitter publizieren{#publishing-on-twitter}
+# Auf Twitter veröffentlichen{#publishing-on-twitter}
 
-## In Ihren Twitter-Konten publizieren {#publishing-on-your-twitter-accounts}
+## In Ihren Twitter-Konten veröffentlichen {#publishing-on-your-twitter-accounts}
 
 Nach Abschluss der Konfiguration können Sie mit Social Marketing Tweets an Ihre Twitter-Konten senden.
 
@@ -101,7 +101,7 @@ Die Tracking-Konfiguration ist dieselbe wie bei einem E-Mail-Versand. Weiterfüh
 
 ### Testversand durchführen {#sending-the-proof}
 
-Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand Ihrer Publikation durchzuführen, um das genaue Rendering der Publikation einer privaten Twitter-Testseite anzuzeigen. Weitere Informationen zum Erstellen eines privaten Twitter-Kontos finden Sie unter [Testkonto in Twitter erstellen](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Die Schritte zur Auswahl der Zielgruppe für den Testversand werden unter [Testversand-Zielgruppe auswählen](#selecting-the-target-of-the-proof) beschrieben.
+Es wird dringend empfohlen, vor dem endgültigen Versand einen Testversand Ihrer Veröffentlichung durchzuführen, um das genaue Rendering der Veröffentlichung einer privaten Twitter-Testseite anzuzeigen. Weitere Informationen zum Erstellen eines privaten Twitter-Kontos finden Sie unter [Testkonto in Twitter erstellen](../../social/using/configuring-publishing-on-twitter.md#creating-a-test-account-on-twitter). Die Schritte zur Auswahl der Zielgruppe für den Testversand werden unter [Testversand-Zielgruppe auswählen](#selecting-the-target-of-the-proof) beschrieben.
 
 Der Testversand ist mit dem E-Mail-Versand identisch. Siehe [diesen Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
@@ -204,4 +204,4 @@ Personalisierungsfelder können auf dieselbe Weise wie für E-Mail-Sendungen ver
 
 ![](assets/social_twitter_delivery_021.png)
 
-Die folgenden Schritte sind identisch mit dem Senden eines Tweets an ein Twitter-Konto. Siehe [In Ihren Twitter-Konten publizieren](#publishing-on-your-twitter-accounts).
+Die folgenden Schritte sind identisch mit dem Senden eines Tweets an ein Twitter-Konto. Siehe [In Ihren Twitter-Konten veröffentlichen](#publishing-on-your-twitter-accounts).
