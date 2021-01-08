@@ -120,7 +120,7 @@ Eine Fehlermeldung wird in einer Fremdsprache angezeigt? Alle Fehlermeldungen un
 
 ## Kann ich in Campaign ein Webformular erstellen und Antworten sammeln? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
-Hier erfahren Sie, wie Sie ein [Webformular erstellen](../../web/using/about-web-forms.md) können: Entwerfen, testen und publizieren Sie ein Web-Formular und sammeln Sie Antworten.
+Hier erfahren Sie, wie Sie ein [Webformular erstellen](../../web/using/about-web-forms.md) können: Entwerfen, testen und veröffentlichen Sie ein Web-Formular und sammeln Sie Antworten.
 
 ## Gibt es eine Auflistung von veralteten Funktionen und Versionen? {#is-there-a-list-of-deprecated-features-and-versions-}
 
