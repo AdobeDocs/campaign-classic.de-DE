@@ -117,7 +117,7 @@ Gehen Sie wie folgt vor:
 1. Geben Sie die Referenzkampagne an.
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen      {#dates}
+### Datum-Funktionen       {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
