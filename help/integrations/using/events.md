@@ -239,7 +239,7 @@ Ist jedoch kein Index für &quot;shopper_id&quot; festgelegt, lässt sich dies n
 
 ### Workflow bereinigen {#purge-workflow}
 
-Auslöser werden innerhalb der jeweiligen Stunde verarbeitet. Das Volumen kann etwa 1 Million Auslöser pro Stunde betragen. Aus diesem Grund muss ein Bereinigungs-Workflow eingerichtet werden. Die Bereinigung wird einmal pro Tag ausgeführt und löscht alle Auslöser, die älter als drei Tage sind.
+Trigger werden innerhalb der jeweiligen Stunde verarbeitet. Das Volumen kann etwa 1 Million Auslöser pro Stunde betragen. Aus diesem Grund muss ein Bereinigungs-Workflow eingerichtet werden. Die Bereinigung wird einmal pro Tag ausgeführt und löscht alle Auslöser, die älter als drei Tage sind.
 
 ### Kampagnen-Workflow {#campaign-workflow}
 
