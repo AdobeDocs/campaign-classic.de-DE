@@ -82,8 +82,8 @@ Im oberen Bereich des Editors werden Nachrichten zum Status des Inhalts angezeig
 ### Liste der Nachrichten beim Bearbeiten einer Webanwendung {#list-of-messages-when-editing-a-web-application}
 
 * Der HTML-Inhalt ist funktionsfähig.
-* Webanwendung wurde nicht publiziert. Es besteht kein Online-Zugriff.
-* Die Webanwendung ist online. Änderungen werden nur durch eine erneute Publikation übernommen.
+* Webanwendung wurde nicht veröffentlicht. Es besteht kein Online-Zugriff.
+* Die Webanwendung ist online. Änderungen werden nur durch eine erneute Veröffentlichung übernommen.
 * Der Seiteninhalt ist nicht funktionsfähig. Er muss ein HTML-Formular enthalten (`<form>`)
 * Noch n Eingabefelder oder Schaltflächen zu konfigurieren.
 * Um das Weiterblättern zu ermöglichen, ist die Verbindung der Aktion &quot;Folgende Seite&quot; mit einer Schaltfläche oder einem Link der aktuellen Seite erforderlich.
