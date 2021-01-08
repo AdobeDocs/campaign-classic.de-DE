@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: '"Anwendungsbeispiele: Verwenden des Content Managements"'
+title: '"Anwendungsbeispiele: Verwenden des Content Managements“'
 description: '"Anwendungsbeispiele: Verwenden des Content Managements"'
 audience: delivery
 content-type: reference
@@ -23,7 +23,7 @@ Folgende Schritte sind zur Verwendung des Content Managements zu durchlaufen:
 * [2. Schritt - Erstellung des Datenschemas](#step-2---creating-the-data-schema),
 * [3. Schritt - Erstellung des Formulars](#step-3---creating-the-input-form),
 * [4. Schritt - Erstellung der Umwandlungsvorlagen](#step-4---creating-the-construction-template),
-* [5. Schritt - Erstellung der Publikationsvorlage](#step-5---creating-the-publication-template),
+* [5. Schritt - Erstellung der Veröffentlichungsvorlage](#step-5---creating-the-publication-template),
 * [6. Schritt - Erstellung des Inhalts](#step-6---creating-contents).
 
 ## 1. Schritt - Anforderungsanalyse bezüglich des zu erstellenden Inhalts {#step-1---analyzing-the-content-to-be-produced}
@@ -349,17 +349,17 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 
    ![](assets/contentmgt_jscode_perso_sample.png)
 
-## 5. Schritt - Erstellung der Publikationsvorlage {#step-5---creating-the-publication-template}
+## 5. Schritt - Erstellung der Veröffentlichungsvorlage {#step-5---creating-the-publication-template}
 
-In diesem Schritt wird die Vorlage erstellt, die die Relation zwischen Schema, Formular und Umwandlungsvorlage herstellt. In der Publikationsvorlage können Sie zwischen verschiedenen Ausgabeformaten wählen.
+In diesem Schritt wird die Vorlage erstellt, die die Relation zwischen Schema, Formular und Umwandlungsvorlage herstellt. In der Veröffentlichungsvorlage können Sie zwischen verschiedenen Ausgabeformaten wählen.
 
 >[!NOTE]
 >
->Weiterführende Informationen finden Sie im Abschnitt [Publikationsvorlagen](../../delivery/using/publication-templates.md).
+>Weiterführende Informationen finden Sie im Abschnitt [Veröffentlichungsvorlagen](../../delivery/using/publication-templates.md).
 
 Gehen Sie wie folgt vor:
 
-1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Publikationsvorlagen]** eine neue Vorlage.
+1. Erstellen Sie im Knoten **[!UICONTROL Administration > Konfiguration > Veröffentlichungsvorlagen]** eine neue Vorlage.
 1. Geben Sie Namen und Titel an und wählen Sie das jeweils zu verwendende Schema und Formular aus.
 1. Füllen Sie das Feld **[!UICONTROL Vorlagenname]** aus und wählen Sie im Tab den gewünschten Typ aus. Im vorliegenden Beispiel handelt es sich gemäß der zuvor erstellten Vorlage um JavaScript.
 
@@ -377,7 +377,7 @@ Gehen Sie wie folgt vor:
 
 ## 6. Schritt - Erstellung des Inhalts {#step-6---creating-contents}
 
-Nun können Sie auf der zuvor erstellten Publikationsvorlage beruhende Inhalte erstellen.
+Nun können Sie auf der zuvor erstellten Veröffentlichungsvorlage beruhende Inhalte erstellen.
 
 >[!NOTE]
 >
@@ -387,7 +387,7 @@ Nun können Sie auf der zuvor erstellten Publikationsvorlage beruhende Inhalte e
 
 Gehen Sie wie folgt vor, um direkt im Versand einen Inhalt zu erstellen:
 
-1. Geben Sie im **[!UICONTROL Erweitert]**-Tab der Versandeigenschaften die Publikationsvorlage an.
+1. Geben Sie im **[!UICONTROL Erweitert]**-Tab der Versandeigenschaften die Veröffentlichungsvorlage an.
 
    ![](assets/s_ncs_content_in_delivery.png)
 
