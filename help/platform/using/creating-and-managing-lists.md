@@ -136,7 +136,7 @@ Erfahren Sie mehr über das Erstellen einer Audience durch Konfigurieren einer E
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12?captions=ger)
 
-### Empfängerliste erstellen mit einem Workflow   {#create-list-in-a-wf-video}
+### Empfängerliste erstellen mit einem Workflow    {#create-list-in-a-wf-video}
 
 Erfahren Sie, wie Sie einen Workflow erstellen, um Empfänger als Zielkontakte auszuwählen, und den Workflow als wiederkehrend einzurichten, bevor die Liste als Zielgruppe für eine E-Mail-Kampagne verwendet wird.
 
