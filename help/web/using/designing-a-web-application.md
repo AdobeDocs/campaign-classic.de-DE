@@ -29,7 +29,7 @@ Es gibt jedoch folgende funktionelle Unterschiede:
 >
 >Es wird dringend empfohlen, die angewendeten Konfigurationen laufend zu überprüfen, um etwaige Fehler in einer frühen Phase des Erstellungsprozesses einer Webanwendung zu erkennen. Um das Rendering einer Änderung zu überprüfen, speichern Sie die Anwendung und wählen Sie dann den Untertab **[!UICONTROL Vorschau]** aus.
 >
->Die Änderungen sind erst dann für den Endbenutzer sichtbar, wenn die Webanwendung publiziert wurde.
+>Die Änderungen sind erst dann für den Endbenutzer sichtbar, wenn die Webanwendung veröffentlicht wurde.
 
 ## Grafiken in eine Webanwendung einfügen {#inserting-charts-in-a-web-application}
 
