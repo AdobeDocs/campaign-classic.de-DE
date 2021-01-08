@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Vorlagenpublikation
-description: Publikation von Transaktionsnachrichtenvorlagen
+title: Vorlagenveröffentlichung
+description: Veröffentlichung von Transaktionsnachrichtenvorlagen
 audience: message-center
 content-type: reference
 topic-tags: message-templates
@@ -15,7 +15,7 @@ ht-degree: 22%
 ---
 
 
-# Vorlagenpublikation{#template-publication}
+# Vorlagenveröffentlichung{#template-publication}
 
 Wenn die auf der Kontrollinstanz erstellte Nachrichtenvorlage abgeschlossen ist, können Sie sie veröffentlichen. Dieser Vorgang wird auch auf allen Ausführungsinstanzen veröffentlicht.
 
@@ -30,12 +30,12 @@ Mit der Veröffentlichung können Sie automatisch zwei Meldungsvorlagen auf den 
 >Wenn Sie Änderungen an einer Vorlage vornehmen, stellen Sie sicher, dass Sie sie erneut veröffentlichen, damit diese Änderungen während des Versands der Transaktionsnachricht wirksam werden.
 
 1. Wechseln Sie auf der Kontrollinstanz zum Ordner **[!UICONTROL Nachrichtencenter > Transaktionsnachrichtenvorlagen]** des Baums.
-1. Wählen Sie die auf den Ausführungsinstanzen zu publizierende Vorlage aus.
-1. Klicken Sie auf **[!UICONTROL Publizieren]**.
+1. Wählen Sie die auf den Ausführungsinstanzen zu veröffentlichende Vorlage aus.
+1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
    ![](assets/messagecenter_publish_model_008.png)
 
-Nach Abschluss der Publikation werden die beiden Vorlagen, die auf die Echtzeit- und Batch-Ereignisse angewendet werden, im Navigationsbaum der Ausführungsinstanz im Ordner **[!UICONTROL Administration > Betreibung > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** erstellt.
+Nach Abschluss der Veröffentlichung werden die beiden Vorlagen, die auf die Echtzeit- und Batch-Ereignisse angewendet werden, im Navigationsbaum der Ausführungsinstanz im Ordner **[!UICONTROL Administration > Betreibung > Message Center > Standard > Transaktionsnachrichten-Vorlagen]** erstellt.
 
 ![](assets/messagecenter_deployed_model_001.png)
 
