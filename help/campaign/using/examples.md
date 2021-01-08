@@ -174,7 +174,7 @@ Erstellen Sie nun ausgehend von der Rubrik **Kampagnen** aus ein **Kampagnenkit*
 
    ![](assets/mkg_dist_use_case_target_valid1.png)
 
-1. Validieren Sie das Kit und starten Sie den Workflow, um das Kit zu publizieren und es für die Lokalstellen in der Kampagnenkit-Liste zur Verfügung zu stellen.
+1. Validieren Sie das Kit und starten Sie den Workflow, um das Kit zu veröffentlichen und es für die Lokalstellen in der Kampagnenkit-Liste zur Verfügung zu stellen.
 
    ![](assets/mkg_dist_use_case_target_valid2.png)
 
@@ -245,7 +245,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
    ![](assets/mkg_dist_use_case_form_4.png)
 
-1. Erfassen Sie bei Bedarf im Tab **[!UICONTROL Beschreibung]** nähere Hinweise zu der geplanten Kampagne. Diese Beschreibung ist in der Benachrichtigung enthalten, die die Lokalstellen bei der Publikation des Kits erhalten. An dieser Stelle können dem Kit zudem relevante Dokumente angehängt werden.
+1. Erfassen Sie bei Bedarf im Tab **[!UICONTROL Beschreibung]** nähere Hinweise zu der geplanten Kampagne. Diese Beschreibung ist in der Benachrichtigung enthalten, die die Lokalstellen bei der Veröffentlichung des Kits erhalten. An dieser Stelle können dem Kit zudem relevante Dokumente angehängt werden.
 
    ![](assets/mkg_dist_use_case_form_5.png)
 
