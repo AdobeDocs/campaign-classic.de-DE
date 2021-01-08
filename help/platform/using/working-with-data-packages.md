@@ -296,7 +296,7 @@ Die Package-Erzeugung kann über den Tab **[!UICONTROL Inhalt]** der Package-Def
 Gehen Sie wie folgt vor, um ein Package über eine Package-Definition zu exportieren:
 
 1. Wählen Sie die zu exportierende Package-Definition aus. Klicken Sie dann auf die Schaltfläche **[!UICONTROL Aktionen]** und wählen Sie **[!UICONTROL Package exportieren]** aus.
-1. Standardmäßig wird eine dem exportierten Package entsprechende XML-Datei ausgewählt. Ihr Name entspricht dem Namensraum und dem Namen der Package-Definition.
+1. Standardmäßig wird eine dem exportierten Package entsprechende XML-Datei ausgewählt. Ihr Name entspricht dem Namespace und dem Namen der Package-Definition.
 1. Nachdem der Package-Name und der Speicherort definiert wurden, klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um den Export zu starten.
 
    ![](assets/packagedefinition_packageexport.png)
@@ -349,7 +349,7 @@ Die wichtigsten Punkte sind folgende:
 >
 >Weiterführende Informationen zum Einrichten eines Workflows für das automatische Exportieren von Packages finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/export-packages-automatically.html).
 
-### Empfehlungen     {#data-package-recommendations}
+### Empfehlungen      {#data-package-recommendations}
 
 Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie müssen Ihre Packages zwischen zwei Instanzen bereitstellen, die denselben Build aufweisen. Erzwingen Sie den Import niemals und aktualisieren Sie immer zuerst die Plattform (wenn der Build abweicht).
 
@@ -405,7 +405,7 @@ Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt w
 * Kampagne: von 200 bis 299
 * Aktualisierung: 5000 bis 5999
 
-### Packages     {#data-packages}
+### Packages      {#data-packages}
 
 >[!NOTE]
 >
