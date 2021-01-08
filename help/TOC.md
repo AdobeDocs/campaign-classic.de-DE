@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
 workflow-type: tm+mt
 source-wordcount: '2202'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 97%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen           {#creating-queries}
+   + Abfragen erstellen            {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -155,10 +155,10 @@ ht-degree: 97%
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
       + [Virale Marketingstrategien](delivery/using/viral-and-social-marketing.md)
    + Sendungen überwachen {#monitoring-deliveries}
-      + [Erste Schritte mit der Versand-Überwachung](delivery/using/about-delivery-monitoring.md)
+      + [Erste Schritte mit dem Versand-Monitoring](delivery/using/about-delivery-monitoring.md)
       + [Auf die Versandliste zugreifen](delivery/using/list-of-deliveries.md)
       + [Versand-Dashboard](delivery/using/delivery-dashboard.md)
-      + [Best Practices des Versands](delivery/using/delivery-performances.md)
+      + [Best Practices für die Versandleistung](delivery/using/delivery-performances.md)
       + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
       + [Versandstatus](delivery/using/delivery-statuses.md)
       + [Ursachen von fehlgeschlagenen Sendungen](delivery/using/understanding-delivery-failures.md)
@@ -189,7 +189,7 @@ ht-degree: 97%
       + [Datenschemata](delivery/using/data-schemas.md)
       + [Formulare](delivery/using/input-forms.md)
       + [Layout](delivery/using/formatting.md)
-      + [Publikationsvorlagen](delivery/using/publication-templates.md)
+      + [Veröffentlichungsvorlagen](delivery/using/publication-templates.md)
       + [Verwendung von Inhaltsvorlagen](delivery/using/using-a-content-template.md)
       + [Anreicherung von Inhalten](delivery/using/enriching-content.md)
       + [Automatisierung mit Workflows](delivery/using/automating-via-workflows.md)
@@ -222,7 +222,7 @@ ht-degree: 97%
       + [Über dezentrales Marketing](campaign/using/about-distributed-marketing.md)
       + [Lokale Kampagnen](campaign/using/creating-a-local-campaign.md)
       + [Partizipative Kampagne erstellen](campaign/using/creating-a-collaborative-campaign.md)
-      + [Kampagnenkits publizieren](campaign/using/publishing-the-campaign-package.md)
+      + [Kampagnenkits veröffentlichen](campaign/using/publishing-the-campaign-package.md)
       + [Auf Kampagnen zugreifen](campaign/using/accessing-campaigns.md)
       + [Kampagnen verfolgen](campaign/using/tracking-a-campaign.md)
       + [Beispiele](campaign/using/examples.md)
@@ -296,7 +296,7 @@ ht-degree: 97%
       + [Formular-Rendering](web/using/form-rendering.md)
       + [Seitenreihenfolge eines Webformulars definieren](web/using/defining-web-forms-page-sequencing.md)
       + [Antworten in Webformularen](web/using/web-forms-answers.md)
-      + [Webformular publizieren](web/using/publishing-a-web-form.md)
+      + [Webformular veröffentlichen](web/using/publishing-a-web-form.md)
       + [Eigenschaften eines Webformulars definieren](web/using/defining-web-forms-properties.md)
       + [Webformular übersetzen](web/using/translating-a-web-form.md)
       + [Anwendungsbeispiele: Webformulare](web/using/use-cases--web-forms.md)
@@ -431,7 +431,7 @@ ht-degree: 97%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring         {#monitoring}
+      + Monitoring          {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -538,8 +538,8 @@ ht-degree: 97%
       + [Personalisierungsdaten](message-center/using/personalization-data.md)
       + [Transaktionsnachrichten-Vorschau](message-center/using/transactional-message-preview.md)
       + [Testversand durchführen](message-center/using/sending-a-proof.md)
-      + [Vorlagenpublikation](message-center/using/template-publication.md)
-      + [Publikation von Vorlagen rückgängig machen](message-center/using/template-unpublication.md)
+      + [Vorlagenveröffentlichung](message-center/using/template-publication.md)
+      + [Veröffentlichung von Vorlagen aufheben](message-center/using/template-unpublication.md)
    + Ereignisverarbeitung {#event-processing}
       + [Über die Ereignisverarbeitung](message-center/using/about-event-processing.md)
       + [Ereignisabruf](message-center/using/event-collection.md)
@@ -556,13 +556,13 @@ ht-degree: 97%
    + [Über Social Marketing](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
       + [Workflows starten](social/using/starting-workflows.md)
-      + [Auf Facebook-Pinnwänden publizieren](social/using/publishing-on-facebook-walls.md)
+      + [Auf Facebook-Pinnwänden veröffentlichen](social/using/publishing-on-facebook-walls.md)
       + [Erstellen einer Facebook-Anwendung](social/using/creating-a-facebook-application.md)
       + [Konfigurieren der Veröffentlichung auf Twitter](social/using/configuring-publishing-on-twitter.md)
-   + Publishing auf Facebook/Twitter {#publishing-on-facebook-twitter}
+   + Veröffentlichen auf Facebook/Twitter {#publishing-on-facebook-twitter}
       + [Übersicht](social/using/overview.md)
-      + [Auf Facebook publizieren](social/using/publishing-on-facebook.md)
-      + [Auf Twitter publizieren](social/using/publishing-on-twitter.md)
+      + [Auf Facebook veröffentlichen](social/using/publishing-on-facebook.md)
+      + [Auf Twitter veröffentlichen](social/using/publishing-on-twitter.md)
    + Anhänge {#annexes}
       + [Beispiele für Facebook-Anwendungen](social/using/examples-of-facebook-apps.md)
       + [Tracking](social/using/tracking.md)
@@ -715,12 +715,12 @@ ht-degree: 97%
          + [Join](configuration/using/schema/join.md)
          + [Schlüssel](configuration/using/schema/key.md)
          + [Schlüsselfeld](configuration/using/schema/keyfield.md)
-         + [Vorgehensweise](configuration/using/schema/method.md)
+         + [Methode](configuration/using/schema/method.md)
          + [Methoden](configuration/using/schema/methods.md)
-         + [Param](configuration/using/schema/param.md)
+         + [Parameter](configuration/using/schema/param.md)
          + [Parameter](configuration/using/schema/parameters.md)
          + [SrcSchema](configuration/using/schema/srcschema.md)
-         + [Sysfilter](configuration/using/schema/sysfilter.md)
+         + [Systemfilter](configuration/using/schema/sysfilter.md)
          + [Wert](configuration/using/schema/value.md)
    + Schemabearbeitung {#editing-schemas}
       + [Über die Schemabearbeitung](configuration/using/about-schema-edition.md)
