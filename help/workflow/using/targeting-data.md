@@ -17,7 +17,7 @@ ht-degree: 100%
 
 # Zielgruppendaten{#targeting-data}
 
-## Abfragen erstellen     {#creating-queries}
+## Abfragen erstellen      {#creating-queries}
 
 ### Datenauswahl {#selecting-data}
 
