@@ -66,7 +66,7 @@ Die Tabelle der Antwort-Logs eines **[!UICONTROL nms:remaMatchRcp]**-Empfängers
 
    ![](assets/delivery_mapping1.png)
 
-1. Passen Sie gegebenenfalls in dem sich öffnenden Fenster den **[!UICONTROL Erweiterungsnamensraum]** an und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Passen Sie gegebenenfalls in dem sich öffnenden Fenster den **[!UICONTROL Erweiterungs-Namespace]** an und klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/delivery_mapping2.png)
 
