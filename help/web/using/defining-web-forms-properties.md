@@ -93,7 +93,7 @@ Dort können Sie auch Übersetzungen verwalten. Siehe [Webformular übersetzen](
 
 ## Zugriff auf das Formular {#accessibility-of-the-form}
 
-Ein Webformular ist für Benutzer verfügbar, wenn es **[!UICONTROL online]** ist und das aktuelle Datum innerhalb der Gültigkeitsdauer liegt. Der Status des Formulars ändert sich in der Publikationsphase (siehe [Formular publizieren](../../web/using/publishing-a-web-form.md#publishing-a-form)). Der Status wird im Bereich **Projekt** im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters angezeigt.
+Ein Webformular ist für Benutzer verfügbar, wenn es **[!UICONTROL online]** ist und das aktuelle Datum innerhalb der Gültigkeitsdauer liegt. Der Status des Formulars ändert sich in der Veröffentlichungsphase (siehe [Formular veröffentlichen](../../web/using/publishing-a-web-form.md#publishing-a-form)). Der Status wird im Bereich **Projekt** im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters angezeigt.
 
 Der Gültigkeitszeitraum erstreckt sich vom **[!UICONTROL Startdatum]** bis zum **[!UICONTROL Enddatum]**. Wenn keine Daten in diesen Feldern eingetragen sind, hat das Formular permanente Gültigkeit.
 
@@ -134,13 +134,13 @@ Standardmäßig sind die folgenden Parameter verfügbar:
 * **id** zur Darstellung der verschlüsselten Kennung
 * **lang** zur Änderung der Anzeigesprache
 * **origin** zur Spezifizierung der Herkunft des reagierenden Kontakts
-* **_uuid** ermöglicht die Ansicht des Formulars vor der Publikation sowie die Fehlerprüfung. Dieser Parameter ist nur für die interne Nutzung vorgesehen (Erstellung und Fehlerkorrektur): Wenn Sie ein Webformular über diese URL aufrufen, werden beim Tracking (Berichte) die erzeugten Datensätze nicht berücksichtigt. Der Wert für die Herkunft lautet stets **[!UICONTROL Adobe Campaign]**.
+* **_uuid** ermöglicht die Ansicht des Formulars vor der Veröffentlichung sowie die Fehlerprüfung. Dieser Parameter ist nur für die interne Nutzung vorgesehen (Erstellung und Fehlerkorrektur): Wenn Sie ein Webformular über diese URL aufrufen, werden beim Tracking (Berichte) die erzeugten Datensätze nicht berücksichtigt. Der Wert für die Herkunft lautet stets **[!UICONTROL Adobe Campaign]**.
 
    Dieser Parameter wird gemeinsam mit den Parametern **_preview** und/oder **_debug** verwendet:
 
    **_preview** zur Anzeige der zuletzt gespeicherten Version. Dieser Parameter darf nur in der Testphase verwendet werden.
 
-   **_debug** zur Anzeige der Spur der eingegebenen oder auf den Formularseiten berechneten Daten. Damit können zusätzliche Informationen zu Fehlern erfasst werden, einschließlich jenen nach der Publikation des Formulars.
+   **_debug** zur Anzeige der Spur der eingegebenen oder auf den Formularseiten berechneten Daten. Damit können zusätzliche Informationen zu Fehlern erfasst werden, einschließlich jenen nach der Veröffentlichung des Formulars.
 
    >[!CAUTION]
    >
