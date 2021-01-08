@@ -349,7 +349,7 @@ Standardgruppen und spezifische Berechtigungen legen den Zugriff auf bestimmte O
 
 Die Matrix der Zugriffsberechtigungen von Adobe Campaign ist [hier](/help/platform/using/assets/access-rights-matrix.pdf) verfügbar.
 
-[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en)
+[![image](assets/do-not-localize/user_management.png)](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=de)
 
 ## Zugriffsverwaltungsordner {#folder-access-management}
 
