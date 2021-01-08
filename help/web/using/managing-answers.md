@@ -114,7 +114,7 @@ Gehen Sie dazu wie folgt vor:
 
 ![](assets/s_ncs_admin_survey_xml_archive_option.png)
 
-Sie können diese Option standardmäßig für alle Umfragen aktivieren (diese Option wird bei der Publikation der Umfrage angewendet). Erstellen Sie dazu die Option **[!UICONTROL NmsWebApp_XmlBackup]** und weisen Sie ihr den Wert **[!UICONTROL 1]** wie unten dargestellt zu:
+Sie können diese Option standardmäßig für alle Umfragen aktivieren (diese Option wird bei der Veröffentlichung der Umfrage angewendet). Erstellen Sie dazu die Option **[!UICONTROL NmsWebApp_XmlBackup]** und weisen Sie ihr den Wert **[!UICONTROL 1]** wie unten dargestellt zu:
 
 ![](assets/s_ncs_admin_survey_xml_global_option.png)
 
