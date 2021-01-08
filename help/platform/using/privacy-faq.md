@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 450889f845b7c5adad1085d7eba70e23030e6609
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ So kann zum Beispiel das Datenmodell in Adobe Campaign erweitert werden, um nich
 
 ## Datenlöschung {#data-deletion}
 
-### Welche Daten werden von Datenverantwortlichen in Adobe Campaign gelöscht, wenn sie eine Kundenanfrage einer betroffenen Person erhalten?
+### Welche Daten können von Datenverantwortlichen in Adobe Campaign gelöscht werden, wenn sie eine Kundenanfrage einer betroffenen Person erhalten?
 
 Alle mit der betroffenen Person verknüpften Daten werden gelöscht, einschließlich vordefinierter und benutzerdefinierter Tabellen.
 
@@ -110,7 +110,7 @@ Als Datenverantwortlicher müssen Sie sicherstellen, dass beim Erhalt einer Lös
 
 ## Erneuter Opt-in {#opt-in-again}
 
-### Kann ein Datensubjekt, dessen Daten aus Adobe Campaign gelöscht wurden, später Opt-in?
+### Kann sich eine betroffene Person, deren Daten aus Adobe Campaign gelöscht wurden, zu einem späteren Zeitpunkt erneut anmelden?
 
 Eine betroffene Person kann sich erneut anmelden oder als neuer Empfänger hinzugefügt werden, nachdem ihre Daten aus Adobe Campaign gelöscht wurden.
 
