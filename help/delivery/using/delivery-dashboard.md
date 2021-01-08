@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Versand-Dashboard
-description: Erfahren Sie mehr darüber, wie Sie mit dem Versand-Dashboard Ihre Versand überwachen können.
+description: Erfahren Sie mehr darüber, wie Sie Ihre Sendungen mit dem Versand-Dashboard überwachen können.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3c82e30cdc1057be6357d48170b959fb89c79528
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1242'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 45%
 
 Im **Versand-Dashboard** können Sie Sendungen beobachten und etwaige Probleme beim Nachrichtenversand erkennen.
 
-Sie können Informationen zu einem Versand abrufen und bei Bedarf bearbeiten. Beachten Sie, dass Tabulatorinhalte nach dem Senden des Versands möglicherweise nicht mehr geändert werden.
+Sie können Informationen zu einem Versand abrufen und bei Bedarf bearbeiten. Beachten Sie, dass nach Abschluss des Versands der Inhalt der einzelnen Tabs nicht mehr verändert werden kann und nur zur Ansicht zur Verfügung steht.
 
-Hier sind die Informationen, die Sie mit den verschiedenen Registerkarten im Dashboard überwachen können:
+Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard überwachen:
 
 * [Versandzusammenfassung](#delivery-summary)
 * [Versandberichte](#delivery-reports)
-* [Versandlogs, Mirrorseiten, Ausnahmen](#delivery-logs-and-history)
-* [Versand-Trackinglogs und Geschichte](#tracking-logs)
+* [Versandlogs, Mirrorseiten, Ausschlüsse](#delivery-logs-and-history)
+* [Versandverfolgungslogs und -verlauf](#tracking-logs)
 * [Versand-Rendering](#delivery-rendering)
 * [Versandverfolgung](#delivery-audit-)
 
@@ -45,31 +45,31 @@ Der Tab **[!UICONTROL Zusammenfassung]** enthält die Merkmale des Versands: Ver
 
 ## Versandberichte {#delivery-reports}
 
-Über den Link **[!UICONTROL Berichte]**, auf den Sie über die Registerkarte **[!UICONTROL Zusammenfassung]** zugreifen können, können Sie eine Reihe von Berichten zu der Aktion &quot;Versand&quot;anzeigen: Bericht des Versands, detaillierter Bericht, Bericht des Versands, Verteilung von Meldungen mit Fehlern, Öffnungsrate, Klicks und Transaktionen usw.
+Über den Link **[!UICONTROL Berichte]**, auf den Sie über den Tab **[!UICONTROL Zusammenfassung]** zugreifen können, können Sie eine Berichtserie zur Versandaktion anzeigen: allgemeiner Versandbericht, detaillierter Bericht, Versandbericht, Verteilung von fehlgeschlagenen Nachrichten, Öffnungsrate, Klicks und Transaktionen usw.
 
-Der Inhalt dieser Registerkarte kann entsprechend Ihren Anforderungen konfiguriert werden. Weitere Informationen zu Versandberichten finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
+Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden. Weitere Informationen zu Versandberichten finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
 ![](assets/delivery-report.png)
 
-## Versandlogs, Verlauf und Ausschlüsse {#delivery-logs-and-history}
+## Versandlogs, -verlauf und -ausschlüsse {#delivery-logs-and-history}
 
-Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands an.
+Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands sowie die entsprechenden Nachrichten an.
 
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Unterschiedliche Status werden auf [dieser Seite](../../delivery/using/delivery-statuses.md) beschrieben.
+Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Auf [dieser Seite](../../delivery/using/delivery-statuses.md) werden die unterschiedlichen Status beschrieben.
 
 >[!NOTE]
 >
->Die Liste mit den Versandlogs kann wie jede beliebige Liste im Campaign Classic angepasst werden. Sie können beispielsweise eine Spalte hinzufügen, um zu ermitteln, welche IP-Adresse in einem Versand an jede E-Mail gesendet wurde. Weitere Informationen hierzu finden Sie im Verwendungsfall, der in [diesem Abschnitt](#use-case) beschrieben ist.
+>Die Liste mit den Versandlogs kann wie jede beliebige Liste im Campaign Classic angepasst werden. Sie können beispielsweise eine Spalte hinzufügen, um zu erfahren, welche IP-Adresse die einzelnen E-Mails in einem Versand gesendet hat. Weitere Informationen hierzu finden Sie im Anwendungsfall in [diesem Abschnitt](#use-case).
 
 ![](assets/s_ncs_user_delivery_delivery_tab.png)
 
-Die **[!UICONTROL Mirrorseite für diese Meldung anzeigen...Über den]**-Link können Sie die Mirrorseite für den Inhalt des aus der Liste ausgewählten Versands in einem neuen Fenster Ansicht haben.
+Mit dem Link **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** können Sie die Mirrorseite für den Inhalt des aus der Liste ausgewählten Versands in einem neuen Fenster anzeigen.
 
-Die Mirrorseite steht nur für Versand zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen finden Sie unter [Mirrorseite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen finden Sie unter [Mirrorseite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
-## Versand-Trackinglogs und -Verlauf {#tracking-logs}
+## Versandverfolgungslogs und -verlauf {#tracking-logs}
 
 Im **[!UICONTROL Tracking]**-Tab wird der Tracking-Verlauf des Versands angezeigt. Hier werden die Tracking-Informationen bezüglich aller von Adobe Campaign gesendeten Nachrichten, d. h. alle getrackten URLs gelistet. Tracking-Informationen werden stündlich aktualisiert.
 
@@ -85,17 +85,17 @@ Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandber
 
 ## Inbox Rendering {#delivery-rendering}
 
-Die Registerkarte **[!UICONTROL Inbox-Rendering]** ermöglicht es Ihnen, die Meldung in den verschiedenen Kontexten, in denen sie empfangen werden kann, Vorschau und die Kompatibilität in wichtigen Desktops und Anwendungen zu überprüfen.
+Der Tab **[!UICONTROL Inbox Rendering]** ermöglicht es Ihnen, eine Vorschau der Nachricht in den verschiedenen Kontexten anzuzeigen, in denen sie empfangen werden kann, und die Kompatibilität mit gängigen Desktops und Anwendungen zu überprüfen.
 
-Auf diese Weise können Sie sicherstellen, dass Ihre Nachricht den Empfängern auf einer Vielzahl von Web-Clients, Web-Mails und Geräten optimal angezeigt wird.
+So können Sie sicherstellen, dass Ihre Nachricht den Empfängern in unterschiedlichen Webclients, Webmails und Geräten optimal dargestellt wird.
 
-Weitere Informationen zum Rendering im Posteingang finden Sie auf [dieser Seite](../../delivery/using/inbox-rendering.md)
+Weitere Informationen zum Inbox Rendering finden Sie auf [dieser Seite](../../delivery/using/inbox-rendering.md).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
 ## Versandverfolgung {#delivery-audit-}
 
-Die Registerkarte **[!UICONTROL Audit]** enthält das Versand-Protokoll und alle Meldungen zu den Testversänden.
+Der Tab **[!UICONTROL Audit]** enthält das Versandlog und alle Meldungen zu den Testsendungen.
 
 Mit der Schaltfläche **[!UICONTROL Aktualisieren]** können Sie die Daten aktualisieren. Verwenden Sie die Schaltfläche **[!UICONTROL Filter]**, um einen Filter für die Daten zu definieren.
 
@@ -123,37 +123,37 @@ Manche Indikatoren oder Status können falsch oder nicht aktuell sein. Gehen Sie
 
 Sie können Ihre Sendungen auch mithilfe unterschiedlicher Berichte über das Versand-Dashboard nachverfolgen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
-## Verwendungsfall: Hinzufügen der IP-Adressen von Absendern zu den Protokollen {#use-case}
+## Anwendungsfall: Hinzufügen der IP-Adressen der Absender zu den Logs {#use-case}
 
-In diesem Abschnitt erfahren Sie, wie Sie den Versandlogs Informationen über die IP-Adresse hinzufügen, die jede E-Mail in einem Versand gesendet hat.
+In diesem Abschnitt erfahren Sie, wie Sie den Versandlogs Informationen über die IP-Adresse hinzufügen, die die entsprechende E-Mail in einem Versand gesendet hat.
 
 >[!NOTE]
 >
->Diese Änderung unterscheidet sich, wenn Sie eine Instanz oder eine Mid-Sourcing-Instanz verwenden. Stellen Sie vor der Änderung sicher, dass Sie mit der E-Mail-Sendeinstanz verbunden sind.
+>Diese Änderung wird unterschiedlich ausgeführt, je nachdem, ob Sie eine einzelne Instanz oder eine Mid-Sourcing-Instanz verwenden. Stellen Sie vor der Änderung sicher, dass Sie mit der E-Mail sendenden Instanz verbunden sind.
 
 ### Schritt 1: Schema erweitern
 
-Um **publicID** zu Ihren Versandlogs hinzuzufügen, müssen Sie das Schema zuerst erweitern. Sie können wie folgt fortfahren.
+Um **publicID** zu Ihren Versandlogs hinzuzufügen, müssen Sie das Schema zuerst erweitern. Sie können wie folgt vorgehen.
 
-1. Erstellen Sie eine Schema-Erweiterung unter **[!UICONTROL Administration]** > **[!UICONTROL Configuration]** > **[!UICONTROL Data Schemas]** > **[!UICONTROL New]**.
+1. Erstellen Sie eine Schemaerweiterung unter **[!UICONTROL Administration]** > **[!UICONTROL Konfiguration]** > **[!UICONTROL Datenschemata]** > **[!UICONTROL Neu]**.
 
-   Weitere Informationen zu Schema-Erweiterungen finden Sie auf [dieser Seite](../../configuration/using/extending-a-schema.md).
+   Weitere Informationen zu Schemaerweiterungen finden Sie auf [dieser Seite](../../configuration/using/extending-a-schema.md).
 
-1. Wählen Sie **[!UICONTROL wideLogRcp]** aus, um die Empfänger-Versandlogs (nms) zu erweitern und einen benutzerdefinierten Namensraum zu definieren. In diesem Fall ist es &quot;cus&quot;:
+1. Wählen Sie **[!UICONTROL wideLogRcp]** aus, um die Versandlogs des Empfängers (nms) zu erweitern und einen benutzerdefinierten Namespace anzugeben. In diesem Fall ist es &quot;cus&quot;:
 
    ![](assets/schema-parameters.png)
 
    >[!NOTE]
    >
-   >Wenn sich Ihre Instanz im Mid-Sourcing befindet, müssen Sie mit dem Schema wideLogMid arbeiten.
+   >Wenn sich Ihre Instanz im Mid-Sourcing befindet, müssen Sie mit dem wideLogMid-Schema arbeiten.
 
-1. hinzufügen Sie das neue Feld in Ihrer Erweiterung. In diesem Beispiel müssen Sie Folgendes ersetzen:
+1. Fügen Sie das neue Feld in Ihre Erweiterung ein. In diesem Beispiel müssen Sie Folgendes ersetzen:
 
    ```
    <element img="nms:broadLog.png" label="Recipient delivery logs" labelSingular="Recipient delivery log" name="broadLogRcp"/>
    ```
 
-   von:
+   mit:
 
    ```
    <element img="nms:broadLog.png" label="Recipient delivery logs" labelSingular="Recipient delivery log" name="broadLogRcp">
@@ -166,39 +166,39 @@ Um **publicID** zu Ihren Versandlogs hinzuzufügen, müssen Sie das Schema zuers
 
 ### Schritt 2: Datenbankstruktur aktualisieren
 
-Nachdem Sie die Änderungen vorgenommen haben, müssen Sie die Datenbankstruktur so aktualisieren, dass sie der logischen Beschreibung entspricht.
+Nachdem Sie die Änderungen vorgenommen haben, müssen Sie die Datenbankstruktur so aktualisieren, dass sie mit ihrer logischen Beschreibung übereinstimmt.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Datenbankstruktur aktualisieren...]**-Menü.
+1. Klicken Sie auf das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Datenbankstruktur aktualisieren...]**.
 
    ![](assets/update-database-structure.png)
 
-1. Im Fenster **[!UICONTROL Tabellen bearbeiten]** wird die Tabelle **[!UICONTROL NmsBroadLogRcp]** (bzw. die Tabelle **[!UICONTROL wideLogMid]**, wenn Sie sich in einer Mid-Sourcing-Umgebung befinden) wie folgt markiert:
+1. Im Fenster **[!UICONTROL Tabellen bearbeiten]** wird die Tabelle **[!UICONTROL NmsBroadLogRcp]** (bzw. die Tabelle **[!UICONTROL wideLogMid]**, wenn Sie sich in einer Mid-Sourcing-Umgebung befinden) wie folgt aktiviert:
 
    ![](assets/edit-tables.png)
 
    >[!IMPORTANT]
    >
-   >Vergewissern Sie sich stets, dass keine andere Änderung erfolgt, außer der Tabelle **[!UICONTROL NmsBroadLoGRcp]** (oder der Tabelle **[!UICONTROL wideLogMid]**, wenn Sie sich in einer Mid-Sourcing-Umgebung befinden). Wenn ja, heben Sie die Markierung für andere Tabellen auf.
+   >Vergewissern Sie sich stets, dass außer der Tabelle **[!UICONTROL NmsBroadLoGRcp]** (oder der Tabelle **[!UICONTROL wideLogMid]**, wenn Sie sich in einer Mid-Sourcing-Umgebung befinden) keine anderen Änderungen vorgenommen wurden. Wenn ja, heben Sie die Aktivierung der anderen Tabellen auf.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um die Eingaben zu bestätigen. Der folgende Bildschirm wird angezeigt:
 
    ![](assets/update-script.png)
 
-1. Klicken Sie auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Beginn]**, um die Datenbankstruktur zu aktualisieren. Die Indexerstellung beginnt. Dieser Schritt kann lang sein, je nach der Anzahl der Zeilen in der Tabelle **[!UICONTROL NmsBroadLogRcp]**.
+1. Klicken Sie auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL Starten]**, um die Datenbankstruktur zu aktualisieren. Die Indexerstellung beginnt. Dieser Schritt kann je nach der Anzahl der Zeilen in der Tabelle **[!UICONTROL NmsBroadLogRcp]** lange dauern.
 
    ![](assets/start-database-update.png)
 
 >[!NOTE]
 >
->Sobald die Aktualisierung der physischen Struktur der Datenbank erfolgreich abgeschlossen ist, müssen Sie die Verbindung trennen und neu verbinden, damit Ihre Änderungen berücksichtigt werden.
+>Sobald die Aktualisierung der physischen Struktur der Datenbank erfolgreich abgeschlossen wurde, müssen Sie sich vom Server abmelden und wieder anmelden, damit die Änderungen berücksichtigt werden.
 
 ### Schritt 3: Änderung überprüfen
 
-Um zu bestätigen, dass alles korrekt funktioniert hat, müssen Sie den Bildschirm &quot;Versandlogs&quot;aktualisieren.
+Um zu bestätigen, dass alles korrekt funktioniert hat, müssen Sie den Bildschirm &quot;Versandlogs&quot; aktualisieren.
 
-Greifen Sie dazu auf die Versandlogs zu und fügen Sie die Spalte &quot;IP-ID&quot;hinzu.
+Rufen Sie dazu die Versandlogs auf und fügen Sie die Spalte &quot;IP-Kennung&quot; hinzu.
 
 ![](assets/list-config.png)
 
@@ -206,6 +206,6 @@ Greifen Sie dazu auf die Versandlogs zu und fügen Sie die Spalte &quot;IP-ID&qu
 >
 >Informationen zum Konfigurieren von Listen in der Campaign Classic-Oberfläche finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-workspace.md).
 
-Auf der Registerkarte **[!UICONTROL Versand]** sollten Sie nach Änderungen Folgendes sehen:
+Im Tab **[!UICONTROL Versand]** sollten Sie nach den Änderungen Folgendes sehen:
 
 ![](assets/logs-with-ip.png)
