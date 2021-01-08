@@ -117,7 +117,7 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
     </delivery>)
    ```
 
-1. Publizieren Sie das Gewinnspielformular und senden Sie den Kontakten der ursprünglichen Zielgruppe eine Einladung. Wenn einer davon einen Freund einlädt, wird ein Versand auf der Basis der **Freunde-Werben**-Vorlage erstellt.
+1. Veröffentlichen Sie das Gewinnspielformular und senden Sie den Kontakten der ursprünglichen Zielgruppe eine Einladung. Wenn einer davon einen Freund einlädt, wird ein Versand auf der Basis der **Freunde-Werben**-Vorlage erstellt.
 
    ![](assets/s_ncs_admin_survey_viral_sample_8.png)
 
