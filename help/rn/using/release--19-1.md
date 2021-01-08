@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
 workflow-type: tm+mt
 source-wordcount: '3072'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 93%
 
 ## ![](assets/do-not-localize/limited_2.png) Version 19.1.8 – Build 9039 {#release-19-1-8-build-9039}
 
-_16. Dezember 2020_
+_16. Dezember 2020_
 
 >[!CAUTION]
 >
@@ -28,26 +28,26 @@ _16. Dezember 2020_
 **Verbesserungen**
 
 * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
-* Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf die Pipeline basiert, wurde geändert und nach Adobe I/O verschoben. [Weitere Informationen](../../integrations/using/configuring-adobe-io.md)
-* Nach dem Ende der Unterstützung für das Legacy-Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während der Nachrüstung auf das HTTP/2-Protokoll aktualisiert.
-* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
-* Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, wodurch verhindert wurde, dass andere SMS-Versand gesendet wurden und Leistungsprobleme auftraten.
+* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
+* Nach dem Ende der Unterstützung für das ältere Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während des Postupgrades auf das HTTP/2-Protokoll aktualisiert.
+* Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
+* Fehlerkorrektur – Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, was die Ausführung weiterer SMS-Sendungen verhinderte und zu Leistungsproblemen führte.
 * Fehlerkorrektur – Beim Generieren eines Berichts mithilfe einer Workflow-Aktivität werden jetzt korrekte Prozentwerte angezeigt. (NEO-14314)
-* Es wurde ein Problem bei der Vorbereitung des Versands behoben, das auftrat, wenn die Option **Adresse des Duplikats während des Versands** ausschließen deaktiviert wurde. (NEO-13240)
+* Fehlerkorrektur – Es wurde ein Problem bei der Sendungsvorbereitung behoben, das auftrat, wenn die Option **Doppelte Adressen vom Versand ausschließen** nicht ausgewählt wurde. (NEO-13240)
 * Fehlerkorrektur – Workflows schlagen beim Ausführen einer Aktivität vom Typ **Anreicherung** jetzt nicht mehr fehl. (NEO-17338)
 * Fehlerkorrektur – Es wurde ein Fehler in Workflows behoben, der auftrat, wenn Datensätze aus einer externen Datenbank abgerufen und in die Campaign-Datenbank eingefügt wurden. (NEO-26359)
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des Servers führte, indem eine Speicherbeschädigung beim Bereinigen des Ausdrucks-Parsers verhindert wurde.
-* Es wurde ein Fehler behoben, der verhinderte, dass die Funktion **NoNull** nach der Aktualisierung auf Version 9032 in Oracle-Datenbanken funktionierte. (NEO-26488)
+* Fehlerkorrektur – Es wurde ein Problem behoben, durch das die Funktion **NoNull** nach der Aktualisierung auf Build 9032 in Oracle-Datenbanken nicht mehr funktionierte. (NEO-26488)
 * Fehlerkorrektur – Es wurde ein Fehler behoben, der beim Bearbeiten der Beschreibung einer Kampagnenvorlage dazu führte, dass die Schaltfläche **Speichern** beim Einfügen von Symbolen wie beispielsweise japanischen Zeichen nicht angezeigt wurde. (NEO-27071)
 * Fehlerkorrektur – Es wurde ein Fehler behoben, durch den die Beschreibung einer Kampagne oder Kampagnenvorlage nicht gespeichert werden konnte, wenn vor dem Klicken auf die Schaltfläche **Speichern** außerhalb des Fensters geklickt wurde. (NEO-27449)
 * Fehlerkorrektur – Es wurde ein Problem auf Proxy-Konfigurationsebene behoben, durch das Sie sich nach dem letzten Windows 10-Update nicht mehr bei Adobe Campaign anmelden konnten. (NEO-27813)
-* Es wurde ein Problem behoben, das bei der Verwaltung leerer Zeilen in Protokolldateien zu Fehlern im MTA-Prozessverhalten und zu Leistungseinbußen beim Senden von Versänden führte.
+* Fehlerkorrektur – Es wurde ein Problem im Zusammenhang mit der Verwaltung von Leerzeilen in Protokolldateien behoben, das zu Fehlern im MTA-Prozessverhalten und zu Leistungseinbußen beim Versand führte.
 
 **Technische Entwicklungen**
 
-Tomcat wurde von Version 7 (7.0.103) auf Version 8 (8.5.57) aktualisiert. Der `tomcat-7`-Verzeichnis wird durch einen `tomcat-8`-Verzeichnis ersetzt. Unter Windows werden _is_neolane_setup.vbs_ und _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert (anstatt wie bisher in `tomcat-7/conf`). Unter Linux wird _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert.
+Tomcat wurde von Version 7 (7.0.103) auf Version 8 (8.5.57) aktualisiert. Das `tomcat-7`-Verzeichnis wird durch ein `tomcat-8`-Verzeichnis ersetzt. Unter Windows werden _is_neolane_setup.vbs_ und _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert (anstatt wie bisher in `tomcat-7/conf`). Unter Linux wird _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert.
 
-Unter Linux verwendet der Start des nlserver-Dienstes jetzt eine systemd-Einheit anstelle des Scripts /etc/init.d/nlserver6. Die Migration zum neuen Startschema wird automatisch ausgeführt, wenn Sie das Package 19.1.8 installieren. Der Befehl /etc/init.d/nlserver6 ist weiterhin verfügbar, dient aber zum Interagieren mit dem nlserver-Dienst (Start, Neustart, Anhalten usw.). Wir empfehlen, direkt den Befehl systemctl zu verwenden.
+Unter Linux verwendet der Start des nlserver-Dienstes jetzt eine systemd-Einheit anstelle des Scripts /etc/init.d/nlserver6. Die Migration zum neuen Startschema wird automatisch ausgeführt, wenn Sie das Package 19.1.8 installieren. Der Befehl /etc/init.d/nlserver6 ist weiterhin verfügbar, dient aber zum Interagieren mit dem nlserver-Dienst (Start, Neustart, Stopp, usw.). Wir empfehlen, direkt den Befehl systemctl zu verwenden.
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.7 – Build 9036 {#release-19-1-7-build-9036}
 
@@ -76,7 +76,7 @@ _15. September 2020_
 * Die Leistung des Datenbankaktualisierungs-Assistenten wurde verbessert, um weniger SQL-Anweisungen auszugeben und die Antwortzeit zu optimieren.
 * Fehlerkorrektur – Es wurde ein Absturzproblem der Konsole behoben, das auftreten konnte, wenn die Option &quot;Getrackte URLs&quot; in einer E-Mail im Tab **Textinhalt** aufgrund einer nicht initialisierten Variablen deaktiviert wurde. (NEO-13545)
 * Fehlerkorrektur – Es wurde ein Problem behoben, das das Hochladen von Dateien in einer Dateiübertragungsaktivität mit einem externen Azure Blob Storage-Konto aufgrund einer nicht initialisierten Variablen (m_pCurlReader) verhinderte. (NEO-13717)
-* Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Publikation der Web-Applikation deaktiviert wurden. (NEO-27155)
+* Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Veröffentlichung der Web-Applikation deaktiviert wurden. (NEO-27155)
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass bei der Zeiteinstellung in einer Workflow-Aktivität **Planung** eine falsche Zeitzone ausgewählt wurde.
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.6 – Build 9035 {#release-19-1-6-build-9035}
@@ -206,7 +206,7 @@ _30. Mai 2019_
 
 * Push-Benachrichtigungen: Die die Thread-ID-Option für iOS Push wird jetzt unterstützt.
 * Die Verwaltung langer Indexnamen wurde verbessert, was andernfalls Probleme mit dem Postupgrade verursachen könnte.
-* Wenn während der Analyse eines Deco-mail-Versands der Publikationsmodus im Softwareverteilungs-Assistenten auf **[!UICONTROL Keine]** gesetzt ist, wird ein Fehler angezeigt und die Analyse wird angehalten: &quot;Für den Publikationsmodus ist Keiner ausgewählt: Bild kann nicht eingebettet werden. Bilder werden nicht auf Feature Phone angezeigt.&quot; (NEO-12208)
+* Wenn während der Analyse eines Deco-mail-Versands der Veröffentlichungsmodus im Softwareverteilungs-Assistenten auf **[!UICONTROL Keine]** gesetzt ist, wird ein Fehler angezeigt und die Analyse wird angehalten: &quot;Für den Veröffentlichungsmodus ist Keiner ausgewählt: Bild kann nicht eingebettet werden. Bilder werden nicht auf Feature Phone angezeigt.&quot; (NEO-12208)
 * Die Broadlog-Verwaltung für Transaktionsnachrichten wurde verbessert. Wenn Broadlogs von der Ausführungsinstanz mit der Kontrollinstanz synchronisiert werden, wird das Feld @lastModified auf das aktuelle Systemdatum aktualisiert. Für Kontrollinstanzen wurde die Option MC_Update_BlLastModified hinzugefügt. &quot;True&quot; bedeutet, dass das aktuelle Datum in der Kontrollinstanz verwendet wird (Standardverhalten). &quot;False&quot; bedeutet, dass das @lastModified-Datum des Broadlogs der Ausführungsinstanz verwendet wird. (NEO-12579)
 * In den temporären Coupon-Tabellen wurden Indizes hinzugefügt, um den Versand zu optimieren. (NEO-12437)
 * In der Analytics-Integration ist nun das Abrufen von AAM-Segmentdaten mit %-Zeichen erlaubt. (NEO-12025)
