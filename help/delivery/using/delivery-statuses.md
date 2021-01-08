@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Versandstatus
-description: Erfahren Sie mehr über die Statusoptionen, die auf Ihrem Versand-Dashboard verfügbar sind.
+description: Erfahren Sie mehr über die Status, die in Ihrem Versand-Dashboard verfügbar sind.
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 79%
 
 ajouter screenshot -->
 
-Nachdem ein Versand gesendet wurde, zeigt das Versand-Dashboard einen Status an, mit dem Sie überwachen können, ob der Versand erfolgreich war. Mögliche Status sind im folgenden Abschnitt beschrieben.
+Nachdem ein Versand ausgeführt wurde, zeigt das Versand-Dashboard einen Status an, mit dem Sie überwachen können, ob der Versand erfolgreich war. Die möglichen Status werden im folgenden Abschnitt beschrieben.
 
 ![](assets/delivery-status.png)
 
-Weitere Informationen zu den verschiedenen Versänden, auf die Sie stoßen können, und zu ihrer Behebung finden Sie auf [dieser Seite](../../delivery/using/understanding-delivery-failures.md).
+Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren Behebung finden Sie auf [dieser Seite](../../delivery/using/understanding-delivery-failures.md).
 
 **Verwandte Themen:**
 
@@ -33,7 +33,7 @@ Weitere Informationen zu den verschiedenen Versänden, auf die Sie stoßen könn
 * [Fehlerbehebung beim Versand](../../delivery/using/delivery-troubleshooting.md)
 * [Über die Zustellbarkeit](../../delivery/using/about-deliverability.md)
 
-## Liste des Versand-Status {#list-delivery-statuses}
+## Liste der Versandstatus {#list-delivery-statuses}
 
 <table> 
  <thead> 
@@ -53,7 +53,7 @@ Weitere Informationen zu den verschiedenen Versänden, auf die Sie stoßen könn
   </tr> 
   <tr> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Siehe <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Verstehen der Versand-Fehler</a><br /> </td> 
+   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Weitere Informationen finden Sie unter <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Ursachen von fehlgeschlagenen Sendungen</a><br /> </td> 
   </tr>
   <tr> 
    <td> Ausstehend<br /> </td> 
@@ -97,13 +97,13 @@ Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminier
 
 Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehend]** bleibt, kann dies folgende Gründe haben:
 
-* Der MTA (Message Transfer Agent), der für die Durchführung von Modulen und Prozessen am Versandserver und die Verwaltung des E-Mail-Versands verantwortlich ist, wurde möglicherweise noch nicht gestartet oder muss neu gestartet werden.
+* Der MTA (Message Transfer Agent), der für die Durchführung von Modulen und Prozessen am Versand-Server und die Verwaltung des E-Mail-Versands verantwortlich ist, wurde möglicherweise noch nicht gestartet oder muss neu gestartet werden.
 
    Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Dieser Vorgang kann mit einem **lokalen**- oder **Hybrid**-Hostmodell ausgeführt werden, das auf den Kampagne-Server zugreift (siehe [Hostmodelle](../../installation/using/hosting-models.md)).
+   >Dieser Vorgang kann mit einem **On-Premise**- oder **Hybrid**-Hosting-Modell mit Zugriff auf den Campaign-Server ausgeführt werden (siehe [Hosting-Modelle](../../installation/using/hosting-models.md)).
 
    1. Überprüfen Sie, ob Ihre `mta@<instance>`-Module auf den MTA-Servern ausgeführt werden.
 
@@ -129,11 +129,11 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
    Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]**, um die Sendungen mit dem MTA zu verknüpfen, der die Affinität verwaltet. Weiterführende Informationen zu Affinitäten finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* Wenn zu viele Kampagnen ausgeführt werden, bleibt der Status des Versands im Status &quot;Ausstehend&quot;.
+* Wenn zu viele Kampagnen ausgeführt werden, bleibt der Versandstatus im Status &quot;Ausstehend&quot;.
 
-   Die Begrenzung der gleichzeitigen Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
+   Die Begrenzung für gleichzeitige Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
 
-   Erfahren Sie mehr über die Optionen in [dieser Seite](../../installation/using/configuring-campaign-options.md).
+   Weitere Informationen zu den Optionen finden Sie auf [dieser Seite](../../installation/using/configuring-campaign-options.md).
 
 
 **Verwandte Themen:**
