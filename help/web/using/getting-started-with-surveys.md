@@ -28,7 +28,7 @@ Die einzelnen Schritte sind:
 1. [Schritt 3: Zusammenstellen der Umfrage](#step-3---building-the-survey),
 1. [Schritt 4: Erstellen des Seiteninhalts](#step-4---creating-the-page-content),
 1. [Schritt 5: Speichern der Umfragedaten](#step-5---storing-the-survey-data-),
-1. [Schritt 6: Publizieren der Seiten](#step-6---publishing-the-pages),
+1. [Schritt 6: Veröffentlichen der Seiten](#step-6---publishing-the-pages),
 1. [Schritt 7: Freigeben Ihrer Online-Umfrage](#step-7---sharing-your-online-survey).
 
 ## Schritt 1: Erstellen einer Umfrage {#step-1---creating-a-survey}
@@ -124,12 +124,12 @@ Im unten stehenden Beispiel passiert Folgendes bei der Speicherung (Bestätigung
 
 Wählen Sie zum Bestätigen **[!UICONTROL OK]** und danach **[!UICONTROL Speichern]** aus, um die Umfrage zu speichern.
 
-## Schritt 6: Publizieren der Seiten {#step-6---publishing-the-pages}
+## Schritt 6: Veröffentlichen der Seiten {#step-6---publishing-the-pages}
 
-Damit die Benutzer auf die HTML-Seiten zugreifen können, muss die Anwendung verfügbar gemacht werden. Dazu müssen Sie vom Bearbeitungsstatus in den Produktionsstatus wechseln, d. h. die Umfrage publizieren. Gehen Sie dazu wie folgt vor:
+Damit die Benutzer auf die HTML-Seiten zugreifen können, muss die Anwendung verfügbar gemacht werden. Dazu müssen Sie vom Bearbeitungsstatus in den Produktionsstatus wechseln, d. h. die Umfrage veröffentlichen. Gehen Sie dazu wie folgt vor:
 
-* Klicken Sie auf die Schaltfläche **[!UICONTROL Publizieren]** oberhalb des Umfrage-Dashboards.
-* Wählen Sie **[!UICONTROL Start]** aus, um die Publikation zu starten und den Assistenten zu schließen.
+* Klicken Sie auf die Schaltfläche **[!UICONTROL Veröffentlichen]** oberhalb des Umfrage-Dashboards.
+* Wählen Sie **[!UICONTROL Start]** aus, um die Veröffentlichung zu starten und den Assistenten zu schließen.
 
    ![](assets/s_ncs_admin_survey_start_publ.png)
 
