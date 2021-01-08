@@ -31,4 +31,4 @@ Standardmäßig basiert die Weiterleitung auf folgenden Informationen:
 
 * dem Ereignistyp
 * dem verwendeten Kanal (standardmäßig: E-Mail)
-* der auf dem Publikationsdatum basierenden letzten Versandvorlage
+* der auf dem Veröffentlichungsdatum basierenden letzten Versandvorlage
