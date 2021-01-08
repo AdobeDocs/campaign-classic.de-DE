@@ -339,7 +339,7 @@ Nachfolgend werden die **[!UICONTROL Formeltypen]** detailliert dargestellt:
    * **[!UICONTROL Minimaler Wert]**: gibt beispielsweise die Kunden aus, die zuletzt ein Angebot angenommen haben.
    * **[!UICONTROL Durchschnitt]**: berechnet beispielsweise das durchschnittliche Alter der Empfänger.
 
-      Das Feld **[!UICONTROL Unterschiedlich]** gibt die unterschiedlichen Werte aus, die ungleich Null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für einen Empfänger abfragen und auf 1 setzen, da es sich um nur einen Empfänger handelt.
+      Das Feld **[!UICONTROL Unterschiedlich]** gibt die eindeutige Werte aus, die ungleich Null sind. Auf diese Weise lassen sich z. B. alle Trackinglogs für einen Empfänger abfragen und auf 1 setzen, da es sich um nur einen Empfänger handelt.
 
 1. **[!UICONTROL Ausdruck]**: öffnet das Fenster **[!UICONTROL Ausdruck bearbeiten]**. Ein Ausdruck kann beispielsweise Postleitzahlen mit mehr als 4 bzw. 5 Ziffern filtern, um eventuelle Eingabefehler zu korrigieren.
 
