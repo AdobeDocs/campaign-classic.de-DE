@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 88172a79aad37e6a311b144f4ea685bb4846825b
 workflow-type: tm+mt
 source-wordcount: '3831'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -33,11 +33,11 @@ Der Abschnitt zur Fehlerbehebung im Überwachungshandbuch wurde umstrukturiert u
 
 ## Dezember 2020 {#dec-2020}
 
-Der Bereich &quot;Überwachung des Versands&quot;wurde in thematische Themen umstrukturiert. [Mehr dazu](../../delivery/using/about-delivery-monitoring.md)
+Der Bereich &quot;Versand-Monitoring&quot; wurde in Themenbereiche umstrukturiert. [Mehr dazu](../../delivery/using/about-delivery-monitoring.md)
 
-Es wurde ein Anwendungsfall hinzugefügt, in dem erläutert wird, wie die IP-Adressen von Absendern zu den Versandlogs hinzugefügt werden. [Mehr dazu](../../delivery/using/delivery-dashboard.md#use-case)
+Ein neuer Anwendungsfall zeigt, wie die IP-Adressen von Absendern zu den Versandlogs hinzugefügt werden können. [Mehr dazu](../../delivery/using/delivery-dashboard.md#use-case)
 
-Die Datenschutzhäufig gestellten Fragen wurden nach [diesem Abschnitt](../../platform/using/privacy-faq.md) verschoben.
+Die häufig gestellten Fragen zum Datenschutz wurden in [diesen Abschnitt](../../platform/using/privacy-faq.md) verschoben.
 
 Es wurde ein Anwendungsfall zur Verwendung der Merge-Funktion der Deduplizierung-Duplikate-Aktivität hinzugefügt. [Mehr dazu](../../workflow/using/deduplication-merge.md)
 
@@ -329,7 +329,7 @@ Die Option „WdbcOptions_TempDbName“ wurde der Liste der Kampagnenoptionen hi
 
 Die Seite „FDA-Matrix“ wurde [hierher](../../installation/using/remote-database-access-rights.md) verschoben.
 
-Die Seite „Zugriffsberechtigungsmatrix“ wurde [hierher](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=en) verschoben.
+Die Seite „Zugriffsberechtigungsmatrix“ wurde [hierher](https://experienceleague.adobe.com/docs/campaign-classic/assets/access-rights-matrix.pdf?lang=de) verschoben.
 
 Der Abschnitt, der beschreibt, wie man interaktive Inhalte mit AMP definiert, wurde verschoben. [Mehr dazu](../../delivery/using/defining-interactive-content.md)
 
@@ -449,7 +449,7 @@ Der Abschnitt zur Unter-Workflow-Aktivität wurde um ein Anwendungsbeispiel erwe
 
 Die Seite [Funktionsmatrix für On-Premise- und gehostete Campaign Classic-Versionen](../../installation/using/capability-matrix.md) wurde um Informationen zu E-Mail-BCC erweitert.
 
-Die Dokumentation zu Transaktionsnachrichten wurde mit einem Hinweis zur Vorlagenpublikation aktualisiert. [Mehr dazu](../../message-center/using/template-publication.md)
+Die Dokumentation zu Transaktionsnachrichten wurde mit einem Hinweis zur Vorlagenveröffentlichung aktualisiert. [Mehr dazu](../../message-center/using/template-publication.md)
 
 Der Abschnitt über nicht verarbeitete Bounce Messages wurde um weitere Details zu den Feldern „Weiterleitungsadresse“ und „Fehleradresse“ erweitert. [Mehr dazu](../../installation/using/deploying-an-instance.md)
 
