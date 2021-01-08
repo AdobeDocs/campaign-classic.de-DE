@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Kampagnenkits publizieren
-description: Kampagnenkits publizieren
+title: Kampagnenkits veröffentlichen
+description: Kampagnenkits veröffentlichen
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# Kampagnenkits publizieren{#publishing-the-campaign-package}
+# Kampagnenkits veröffentlichen{#publishing-the-campaign-package}
 
 Die Benutzer der Zentralstelle veröffentlichen in der **[!UICONTROL Kampagnenkit-Liste]** die Kits, die den Lokalstellen zur Verfügung gestellt werden sollen.
 
@@ -63,4 +63,4 @@ Wenn kein Validierungsverantwortlicher bestimmt wurde oder keiner der benachrich
 
 ![](assets/s_advuser_mkg_dist_valid_button.png)
 
-Sobald die Kampagne validiert ist wird sie automatisch publiziert, d. h. sie wird der Liste der Kampagnenkits hinzugefügt. Ab ihrem Verfügbarkeitsdatum kann sie von den Lokalstellen genutzt werden. Sofern bei der Kampagnenerstellung teilnehmende Lokalstellen bestimmt wurden, werden die Benutzer der Gruppe „Benachrichtigung bezüglich Kampagnenkits“ über die Verfügbarkeit der Kampagne benachrichtigt. Ist dies nicht der Fall, ist die Kampagne standardmäßig für alle Lokalstellen zugänglich. Weitere Informationen hierzu finden Sie unter [Organisationseinheiten](../../campaign/using/about-distributed-marketing.md#organizational-entities).
+Sobald die Kampagne validiert ist wird sie automatisch veröffentlicht, d. h. sie wird der Liste der Kampagnenkits hinzugefügt. Ab ihrem Verfügbarkeitsdatum kann sie von den Lokalstellen genutzt werden. Sofern bei der Kampagnenerstellung teilnehmende Lokalstellen bestimmt wurden, werden die Benutzer der Gruppe „Benachrichtigung bezüglich Kampagnenkits“ über die Verfügbarkeit der Kampagne benachrichtigt. Ist dies nicht der Fall, ist die Kampagne standardmäßig für alle Lokalstellen zugänglich. Weitere Informationen hierzu finden Sie unter [Organisationseinheiten](../../campaign/using/about-distributed-marketing.md#organizational-entities).
