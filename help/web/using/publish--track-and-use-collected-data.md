@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Erfasste Daten publizieren, tracken und verwenden
-description: Erfasste Daten publizieren, tracken und verwenden
+title: Erfasste Daten veröffentlichen, tracken und verwenden
+description: Erfasste Daten veröffentlichen, tracken und verwenden
 audience: web
 content-type: reference
 topic-tags: online-surveys
@@ -15,13 +15,13 @@ ht-degree: 100%
 ---
 
 
-# Erfasste Daten publizieren, tracken und verwenden{#publish-track-and-use-collected-data}
+# Erfasste Daten veröffentlichen, tracken und verwenden{#publish-track-and-use-collected-data}
 
-Nachdem das Formular erstellt, konfiguriert und publiziert wurde, können Sie den Link mit Ihrer Zielgruppe teilen und die Antworten tracken.
+Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können Sie den Link mit Ihrer Zielgruppe teilen und die Antworten tracken.
 
 >[!NOTE]
 >
->Der Lebenszyklus einer Umfrage in Adobe Campaign sowie ihre Publikations- und Versandmodi sind ähnlich jenen von Webformularen: Diese werden in [diesem Abschnitt](../../web/using/about-web-forms.md) beschrieben.
+>Der Lebenszyklus einer Umfrage in Adobe Campaign sowie ihre Veröffentlichungs- und Versandmodi sind ähnlich jenen von Webformularen: Diese werden in [diesem Abschnitt](../../web/using/about-web-forms.md) beschrieben.
 
 ## Umfrage-Dashboard {#survey-dashboard}
 
