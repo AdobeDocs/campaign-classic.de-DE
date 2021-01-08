@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: dcef36c3ce14c45cb08a79180938ad8d26fa6549
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 84%
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ Weitere Informationen zum Campaign Gold Standard-Programm finden Sie in [diesem 
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard Version 11{#gs-11}
 
-_22. Dezember 2020_
+_22. Dezember 2020_
 
 >[!CAUTION]
 >
@@ -39,9 +39,9 @@ Der Build 9032@d3b452f umfasst die folgenden Verbesserungen und Fehlerbehebungen
 
 * Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
 
-* Nach dem Ende der Unterstützung für das Legacy-Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während der Nachrüstung auf das HTTP/2-Protokoll aktualisiert.
+* Nach dem Ende der Unterstützung für das ältere Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während des Postupgrades auf das HTTP/2-Protokoll aktualisiert.
 
-* Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) zu verstärken. (NEO-27777)
+* Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 10{#gs-10}
 
@@ -53,7 +53,7 @@ Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deakt
 
 >[!CAUTION]
 >
->Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md)
+>Es wird empfohlen, die Clientkonsole mit der in dieser Version verfügbaren zu aktualisieren. Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/installing-the-client-console.md).
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 9{#gs-9}
 
@@ -96,7 +96,7 @@ Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 * Die LibreOffice-Verwaltung wurde verbessert, um Fehler bei der E-Mail-Vorschau mit .odt-Dateien zu verhindern.
 * Die Verwaltung der Apache-Verbindung wurde verbessert, um Latenzzeiten beim Web-Dienst zu vermeiden.
 * Die Anzeige des Version-Tags (siebenstellig) im Menü **Versionsinformationen** wurde verbessert.
-* Fehlerkorrektur – Es wurde ein Regressionsfehler bei der Listenverwaltung behoben, der die Publizierung von Angeboten verhinderte.
+* Fehlerkorrektur – Es wurde ein Regressionsfehler bei der Listenverwaltung behoben, der die Veröffentlichung von Angeboten verhinderte.
 * Fehlerkorrektur – Es wurde ein Regressionsfehler behoben, der zum Absturz des Bereinigungs-Workflows führte.
 * Fehlerkorrektur – Es wurde ein geringfügiger Regressionsfehler in den Bereinigungs-Workflow-Logs behoben.
 
