@@ -38,7 +38,7 @@ Die Synchronisation von Vorschlägen erfolgt in Packages. In den Ausführungsins
 >
 >Es wird dringend empfohlen, kurze und ausdrucksstarke interne Namen zu verwenden.
 
-Die Freigabe und Publikation der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
+Die Freigabe und Veröffentlichung der Angebote in den Ausführungs- und Kontrollinstanzen erfolgt automatisch.
 
 In der Design-Umgebung gelöschte Angebote werden in allen Live-Instanzen deaktiviert. Obsolete Vorschläge und Angebote werden nach Ablauf der durch die Bereinigungsparameter im Softwareverteilungs-Assistenten aller Instanzen definierten Frist und des in den Typologieregeln definierten beweglichen Zeitraums automatisch gelöscht.
 
