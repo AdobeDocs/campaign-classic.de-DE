@@ -54,7 +54,7 @@ Im Folgenden werden die Etappen zur Erstellung einer Tabelle vom Typ &quot;Liste
    Diese Etappe ist zwingend erforderlich, um die Felder der Quelltabelle zu finden und sie in die Zellen der Tabelle einzufügen.
 
 1. Erstellen Sie die Tabelle und Ihren Inhalt.
-1. Überprüfen Sie im Tab **[!UICONTROL Vorschau]** den erstellten Bericht. Er kann nun publiziert und bei Bedarf in einem anderen Format exportiert werden. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
+1. Überprüfen Sie im Tab **[!UICONTROL Vorschau]** den erstellten Bericht. Er kann nun veröffentlicht und bei Bedarf in einem anderen Format exportiert werden. Weitere Informationen finden Sie unter [Berichtexport](../../reporting/using/actions-on-reports.md#exporting-a-report).
 
 ### Zeilen und Spalten hinzufügen {#adding-lines-and-columns}
 
