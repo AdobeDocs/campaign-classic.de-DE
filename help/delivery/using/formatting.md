@@ -23,7 +23,7 @@ Ein JavaScript-Template ist ein HTML- oder Text-Dokument, welches JavaScript-Cod
 
 ### Identifizierung von JavaScript-Templates {#identification-of-a-javascript-template}
 
-Ein JavaScript-Template wird wie Schemata oder Formulare über seinen Namen und Namensraum identifiziert. Es wird jedoch empfohlen, den Namen mit **.js** zu ergänzen.
+Ein JavaScript-Template wird wie Schemata oder Formulare über seinen Namen und Namespace identifiziert. Es wird jedoch empfohlen, den Namen mit **.js** zu ergänzen.
 
 ### Struktur von JavaScript-Templates {#structure-of-a-javascript-template}
 
@@ -354,7 +354,7 @@ Gehen Sie wie folgt vor:
       %>
       ```
 
-1. Erstellen Sie dann die Publikationsvorlagen für beide Formate:
+1. Erstellen Sie dann die Veröffentlichungsvorlagen für beide Formate:
 
    * Für das HTML-Format:
 
@@ -376,9 +376,9 @@ Diese Umwandlung wird in einem Stylesheet genannten XML-Dokument beschrieben.
 
 ### Identifizierung von Stylesheets {#identifying-a-stylesheet}
 
-Ein Stylesheet wird wie Schemata oder Formulare über seinen Namen und Namensraum identifiziert. Es wird jedoch empfohlen den Namen mit **.xsl** zu ergänzen.
+Ein Stylesheet wird wie Schemata oder Formulare über seinen Namen und Namespace identifiziert. Es wird jedoch empfohlen den Namen mit **.xsl** zu ergänzen.
 
-Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den Namensraum und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:Buch.xsl**).
+Der Identifikationsschlüssel eines Stylesheets ist eine Zeichenkette, die den Namespace und den Namen enthält, getrennt durch das Zeichen &#39;:&#39; (z. B. **cus:Buch.xsl**).
 
 ### Struktur eines Stylesheets {#structure-of-a-stylesheet}
 
@@ -411,9 +411,9 @@ Ein Stylesheet ist ein XML-Dokument, das folgenden Regeln entspricht:
 * Werte von Attributen stehen zwischen Anführungszeichen,
 * Elemente weisen einen öffnenden und einen schließenden Tag auf,
 * die Zeichen &#39;&lt;&#39; oder &#39;&amp;&#39; werden durch **&#39;&lt;&#39;** oder **&#39;&amp;&#39;** ersetzt,
-* jedes XSL-Element verwendet den Namensraum **xsl**.
+* jedes XSL-Element verwendet den Namespace **xsl**.
 
-Ein Stylesheet muss mit der XSL-Stammelement-Markierung **`<xsl:stylesheet>`** beginnen und mit der **`</xsl:stylesheet>`**-Markierung enden. Der XSL-Namensraum muss wie folgt in der öffnenden Markierung definiert werden:
+Ein Stylesheet muss mit der XSL-Stammelement-Markierung **`<xsl:stylesheet>`** beginnen und mit der **`</xsl:stylesheet>`**-Markierung enden. Der XSL-Namespace muss wie folgt in der öffnenden Markierung definiert werden:
 
 ```
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -497,7 +497,7 @@ Die Anweisung **`<xsl:include>`** verweist auf den Namen des in das Dokument ein
 
 >[!NOTE]
 >
->In der Stylesheet-Referenz wird kein Namensraum angegeben. Standardmäßig wird das Stylesheet mit dem Namensraum des Benutzers angelegt.
+>In der Stylesheet-Referenz wird kein Namespace angegeben. Standardmäßig wird das Stylesheet mit dem Namespace des Benutzers angelegt.
 
 ### Bearbeitung eines Stylesheets {#editing-a-stylesheet}
 
@@ -519,7 +519,7 @@ Sie können jederzeit eine Vorschau des Ausgabedokuments erzeugen, indem Sie ein
 
 Die im HTML-Ausgabedokument angegebenen Bilder können mit relativen oder absoluten Pfadangaben adressiert werden.
 
-Bei der relativen Adressierung kann in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** die URL des Servers, auf dem die Bilder gespeichert sind, angegeben werden. Die Optionen enthalten den Speicherort der Bilder in der Adobe-Campaign-Clientkonsole für die Publikation und die Vorschau.
+Bei der relativen Adressierung kann in den Optionen **NcmRessourcesDir** und **NcmRessourcesDirPreview** die URL des Servers, auf dem die Bilder gespeichert sind, angegeben werden. Die Optionen enthalten den Speicherort der Bilder in der Adobe-Campaign-Clientkonsole für die Veröffentlichung und die Vorschau.
 
 Auf beide Optionen kann im Explorer über den Knoten **[!UICONTROL Administration > Plattform > Optionen]** zugegriffen werden.
 
@@ -528,7 +528,7 @@ Auf beide Optionen kann im Explorer über den Knoten **[!UICONTROL Administratio
 * NcmResourcesDir = &quot;https://server/images/&quot;
 * NcmResourcesDirPreview = &quot;x:/images/&quot;
 
-Bei der Verarbeitung des Stylesheets wird je nach Kontext - Vorschau oder Publikation - das Attribut **_resPath** des Hauptelements des zugrunde liegenden XML-Dokuments automatisch mit einer der beiden Optionen ergänzt.
+Bei der Verarbeitung des Stylesheets wird je nach Kontext - Vorschau oder Veröffentlichung - das Attribut **_resPath** des Hauptelements des zugrunde liegenden XML-Dokuments automatisch mit einer der beiden Optionen ergänzt.
 
 Beispiel für die Adressierung eines Bilds mit Pfadangabe:
 
