@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Webformular publizieren
-description: Webformular publizieren
+title: Webformular veröffentlichen
+description: Webformular veröffentlichen
 audience: web
 content-type: reference
 topic-tags: web-forms
@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# Webformular publizieren{#publishing-a-web-form}
+# Webformular veröffentlichen{#publishing-a-web-form}
 
 ## Formulardaten vorausfüllen {#pre-loading-the-form-data}
 
@@ -91,7 +91,7 @@ Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
 1. **Das Formular ist online**
 
-   Nach Abschluss der Konzeptionsphase kann das Formular versendet werden. Zuerst muss es publiziert werden. Weitere Informationen finden Sie unter [Formular publizieren ](#publishing-a-form).
+   Nach Abschluss der Konzeptionsphase kann das Formular versendet werden. Zuerst muss es veröffentlicht werden. Weitere Informationen finden Sie unter [Formular veröffentlichen](#publishing-a-form).
 
    Das Formular ist so lange **[!UICONTROL Live]**, bis seine Gültigkeit erlischt.
 
@@ -105,13 +105,13 @@ Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
    Das Ablaufdatum kann im Fenster mit den Formulareigenschaften definiert werden. Weitere Informationen hierzu finden Sie unter [Formular online verfügbar machen](#making-a-form-available-online).
 
-Der Publikationsstatus eines Formulars wird in der Formularliste angezeigt.
+Der Veröffentlichungsstatus eines Formulars wird in der Formularliste angezeigt.
 
 ![](assets/s_ncs_admin_survey_status.png)
 
-### Formular publizieren {#publishing-a-form}
+### Formular veröffentlichen{#publishing-a-form}
 
-Um den Status eines Formulars zu ändern, müssen Sie es publizieren. Klicken Sie dazu oberhalb der Liste der Webformulare auf die Schaltfläche **[!UICONTROL Publikation]** und wählen Sie in der Dropdown-Liste den Status aus.
+Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu oberhalb der Liste der Webformulare auf die Schaltfläche **[!UICONTROL Veröffentlichung]** und wählen Sie in der Dropdown-Liste den Status aus.
 
 ![](assets/webapp_publish_webform.png)
 
