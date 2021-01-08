@@ -21,7 +21,7 @@ Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analys
 
 ## Grundlagen zum Arbeitsbereich {#workspace-basics}
 
-### Startseite      {#home-page}
+### Startseite       {#home-page}
 
 Unmittelbar nach der Herstellung der Verbindung mit Adobe Campaign gelangen Sie auf die Startseite.
 
