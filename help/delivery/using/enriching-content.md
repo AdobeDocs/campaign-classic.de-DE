@@ -21,7 +21,7 @@ Aggregatoren ermöglichen die Anreicherung von Inhalten mit externen Daten. Letz
 
 ## Generische Abfragen {#generic-queries}
 
-Die Abfragen werden im **[!UICONTROL Aggregator]**-Tab der Publikationsvorlagen konfiguriert.
+Die Abfragen werden im **[!UICONTROL Aggregator]**-Tab der Veröffentlichungsvorlagen konfiguriert.
 
 Die auf diese Weise abgerufenen Daten ergänzen das XML-Ausgabedokument in seinem Hauptelement.
 
@@ -257,7 +257,7 @@ Nach Ausführung des Scripts erhalten Sie folgendes Ergebnis:
 <contact id="11504982510" lastName="Martinez" recipient-cs="Martinez Peter (peter.martinez@adobe.com)" recipient-id="3013"/> 
 ```
 
-Der Inhalt des JavaScript-Codes wird im Ordner **[!UICONTROL Administration > Konfiguration > Content Management > JavaScript-Codes]** gespeichert und muss in der Publikationsvorlage für jede Umwandlung angegeben werden.
+Der Inhalt des JavaScript-Codes wird im Ordner **[!UICONTROL Administration > Konfiguration > Content Management > JavaScript-Codes]** gespeichert und muss in der Veröffentlichungsvorlage für jede Umwandlung angegeben werden.
 
 ![](assets/d_ncs_content_link5.png)
 
