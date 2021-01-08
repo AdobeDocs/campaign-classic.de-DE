@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
 workflow-type: tm+mt
 source-wordcount: '437'
-ht-degree: 89%
+ht-degree: 94%
 
 ---
 
@@ -37,13 +37,13 @@ Die **aktuellen GA-Builds** sind: [Gold Standard-Version 11](../../rn/using/gol
 
 Der **aktuelle RC-Build** ist [Campaign Classic-Version 20.3](../../rn/using/latest-release.md).
 
-![](assets/do-not-localize/red3.png) **Veraltet**  - Keine Bereitstellung. Bestehende Implementierungen müssen aktualisiert werden.
+![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Bestehende Implementierungen müssen aktualisiert werden.
 
 ## Empfehlungen{#recommendations}
 
 Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Build auf allen Servern installieren, die mit derselben Client-Konfiguration ausgeführt werden.
 
-Darüber hinaus sollte sich die Client-Konsole auf demselben Build befinden wie die Serverinstanz.
+Darüber hinaus sollte die Client-Konsole denselben Build haben wie die Server-Instanz.
 
 Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder neuen Version die Seiten [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md) und [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
