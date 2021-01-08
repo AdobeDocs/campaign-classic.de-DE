@@ -54,7 +54,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
    >[!NOTE]
    >
-   >Dieser Parameter wird bei der Vorschau verwendet und verhindert die Publikation der Platzierungen, falls eines der Pflichtfelder nicht ausgefüllt wurde. Wenn ein Angebot jedoch bereits für eine Platzierung freigegeben wurde, wird diese Bedingung nicht berücksichtigt.
+   >Dieser Parameter wird bei der Vorschau verwendet und verhindert die Veröffentlichung der Platzierungen, falls eines der Pflichtfelder nicht ausgefüllt wurde. Wenn ein Angebot jedoch bereits für eine Platzierung freigegeben wurde, wird diese Bedingung nicht berücksichtigt.
 
    ![](assets/offer_space_create_005.png)
 
