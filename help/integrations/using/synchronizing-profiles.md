@@ -67,7 +67,7 @@ Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen 
 
    Standardmäßig wird für den ACS Connector alle 15 Minuten eine Replikation durchgeführt. Weitere Informationen finden Sie unter [Datenreplikation](../../integrations/using/acs-connector-principles-and-data-cycle.md#data-replication).
 
-## Workflow erstellen     {#creating-a-workflow}
+## Workflow erstellen      {#creating-a-workflow}
 
 Marketer können die umfassenden von Campaign v7 replizierten Profile und Dienste in Campaign Standard nutzen. Die folgende Anleitung zeigt, wie eine Abfrage zu einem Campaign-Standard-Workflow hinzugefügt wird und mit der replizierten Datenbank genutzt wird.
 
