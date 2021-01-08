@@ -43,7 +43,7 @@ Die hier aufgeführten Beispiele für Webanwendungen vom Typ „Facebook“ sind
 >
 >Diese einfachen Anwendungsfälle dienen als Beispiele für die Veranschaulichung der Funktionen von Webanwendungen des Typs „Facebook“.
 
-## Empfehlungen    {#recommendations}
+## Empfehlungen     {#recommendations}
 
 Die folgenden Einschränkungen gelten direkt für Facebook:
 
