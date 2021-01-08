@@ -293,13 +293,13 @@ Von hier aus kann die Aufgabe konfiguriert und bearbeitet werden.
 
 ### Aufgaben zur Erstellung von Marketing-Ressourcen {#marketing-resource-creation-task}
 
-Aufgaben zur Erstellung von Marketing-Ressourcen dienen der Erstellung und Publikation von Marketing-Ressourcen. Wenn eine Ressource über eine Aufgabe und nicht nur über die Ressource selbst verwaltet wird, können Sie:
+Aufgaben zur Erstellung von Marketing-Ressourcen dienen der Erstellung und Veröffentlichung von Marketing-Ressourcen. Wenn eine Ressource über eine Aufgabe und nicht nur über die Ressource selbst verwaltet wird, können Sie:
 
 * den Erstellungsprozess der Ressource von einer Kampagne aus steuern;
 * den Erstellungsprozess der Ressource in einem Kalender verfolgen;
 * die Erstellungsplanung der Ressource verwalten (Erinnungen, Benachrichtigungen);
 * die mit der Erarbeitung der Ressource verbundenen Kosten erfassen und kontrollieren;
-* die Ressource über die Aufgabe validieren und publizieren (sofern die entsprechende Option aktiviert ist).
+* die Ressource über die Aufgabe validieren und veröffentlichen (sofern die entsprechende Option aktiviert ist).
 
 #### Zusammenspiel von Aufgaben und ihnen zugeordneten Ressourcen {#interaction-between-the-task-and-its-linked-resource}
 
@@ -307,16 +307,16 @@ Aufgaben zur Erstellung einer Marketing-Ressource interagieren mit denen ihnen z
 
 * Die Erarbeitungsplanung einer Ressource und die mit ihr verbundenen Kosten werden über die Aufgabe verwaltet, der sie zugordnet ist.
 * Die Benutzer können wie gewohnt mit der Ressource weiterarbeiten (sie down- und uploaden, sperren und entsperren), ohne dass sich dies auf die Aufgabe auswirkt.
-* Die Validierung und Publikation der Ressource können über die Aufgabe erfolgen: Wenn die Option **[!UICONTROL Marketing-Ressource publizieren]** aktiv ist, wird die Ressource mit Abschluss der Aufgabe automatisch validiert und publiziert. Wenn die Option nicht aktiv ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
+* Die Validierung und Veröffentlichung der Ressource können über die Aufgabe erfolgen: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiv ist, wird die Ressource mit Abschluss der Aufgabe automatisch validiert und veröffentlicht. Wenn die Option nicht aktiv ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
 
-   Sie können eine Reihe von miteinander verbundenen Aufgaben erstellen, um einen vollständigen Validierungszyklus festzulegen. Aktivieren Sie die Option **[!UICONTROL Marketing-Ressource publizieren]** nur für die letzte Aufgabe: Alle Aufgaben müssen demnach abgeschlossen sein, um die Ressource zu publizieren. Untergeordnete Aufgaben übernehmen automatisch die in der übergeordneten Aufgabe ausgewählte Ressource.
+   Sie können eine Reihe von miteinander verbundenen Aufgaben erstellen, um einen vollständigen Validierungszyklus festzulegen. Aktivieren Sie die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** nur für die letzte Aufgabe: Alle Aufgaben müssen demnach abgeschlossen sein, um die Ressource zu veröffentlichen. Untergeordnete Aufgaben übernehmen automatisch die in der übergeordneten Aufgabe ausgewählte Ressource.
 
    * **Über die Ressource**: Wenn die Ressource validiert oder zur Validierung unterbreitet wird, hat dies keinerlei Auswirkung auf die Aufgabe.
-   * **Über die Aufgabe**: Wenn die Option **[!UICONTROL Marketing-Ressource publizieren]** in der Aufgabe aktiviert wird, wird die Ressource bei Abschluss der Aufgabe automatisch validiert und publiziert (siehe unten). Wenn die Option nicht aktiviert ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
+   * **Über die Aufgabe**: Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** in der Aufgabe aktiviert wird, wird die Ressource bei Abschluss der Aufgabe automatisch validiert und veröffentlicht (siehe unten). Wenn die Option nicht aktiviert ist, findet keine Interaktion zwischen Aufgabe und Ressource statt: Die Bearbeitung einer von beiden wirkt sich in keiner Weise auf die andere aus.
 
 #### Aufgabe zur Erstellung einer Marketing-Ressource konfigurieren {#configuring-a-marketing-resource-creation-task}
 
-Die Validierung der Aufgabe und die des Inhalts der Ressource müssen nicht vom gleichen Benutzer erfolgen. Wenn die Option **[!UICONTROL Marketing-Ressource publizieren]** aktiviert wurde (siehe unten), ist der Aufgabenvalidierer berechtigt, auch den Inhalt der Ressource zu validieren, da der Abschluss der Aufgabe automatisch die Ressource validiert. Wenn kein Validerer bestimmt ist, fällt die Validierung dem Verantwortlichen der Aufgabe zu.
+Die Validierung der Aufgabe und die des Inhalts der Ressource müssen nicht vom gleichen Benutzer erfolgen. Wenn die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** aktiviert wurde (siehe unten), ist der Aufgabenvalidierer berechtigt, auch den Inhalt der Ressource zu validieren, da der Abschluss der Aufgabe automatisch die Ressource validiert. Wenn kein Validerer bestimmt ist, fällt die Validierung dem Verantwortlichen der Aufgabe zu.
 
 ![](assets/mrm_task_asset_creation.png)
 
@@ -325,9 +325,9 @@ Bestimmen Sie im Feld **[!UICONTROL Marketing-Ressource]** die Ressource, die Si
 * eine bereits existierende Ressource auszuwählen. Die Dropdown-Liste schlägt alle Ressourcen mit dem Status **[!UICONTROL In Bearbeitung]** vor.
 * eine Ressource zu erstellen. Klicken Sie hierzu auf das Symbol **[!UICONTROL Verknüpftes Element auswählen]** und anschließend auf das Symbol **[!UICONTROL Erstellen]**.
 
-Die Option **[!UICONTROL Marketing-Ressource publizieren]** ermöglicht die automatische Publikation einer Ressource: Wenn die Aufgabe **[!UICONTROL Abgeschlossen]** ist, ändert sich der Status der Ressource automatisch in **[!UICONTROL Publiziert]**, auch wenn diese weder validiert noch zur Validierung unterbreitet wurde. Dies gilt auch dann, wenn der Validierer der Aufgabe nicht dem Validierer des Ressourceninhalts entspricht.
+Die Option **[!UICONTROL Marketing-Ressource veröffentlichen]** ermöglicht die automatische Veröffentlichung einer Ressource: Wenn die Aufgabe **[!UICONTROL Abgeschlossen]** ist, ändert sich der Status der Ressource automatisch in **[!UICONTROL Veröffentlicht]**, auch wenn diese weder validiert noch zur Validierung unterbreitet wurde. Dies gilt auch dann, wenn der Validierer der Aufgabe nicht dem Validierer des Ressourceninhalts entspricht.
 
-Die Schaltfläche **[!UICONTROL Ressource publizieren]** wird verfügbar und der Validierer der Publikation der Kampagne wird per E-Mail benachrichtigt, dass die Ressource zur Publikation bereitsteht. Im Tab **[!UICONTROL Bearbeiten > Verfolgung]** der Ressource erscheinen die Validierung und die Publikation durch den Validierer. Wenn ein Post-Prozess-Workflow bestimmt wurde, wird dieser nun ausgeführt.
+Die Schaltfläche **[!UICONTROL Ressource veröffentlichen]** wird verfügbar und der Validierer der Veröffentlichung der Kampagne wird per E-Mail benachrichtigt, dass die Ressource zur Veröffentlichung bereitsteht. Im Tab **[!UICONTROL Bearbeiten > Verfolgung]** der Ressource erscheinen die Validierung und die Veröffentlichung durch den Validierer. Wenn ein Post-Prozess-Workflow bestimmt wurde, wird dieser nun ausgeführt.
 
 ![](assets/mrm_resource_audit_tab.png)
 
@@ -436,6 +436,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
