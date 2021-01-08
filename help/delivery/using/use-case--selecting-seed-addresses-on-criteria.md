@@ -51,7 +51,7 @@ Weiterführende Informationen zur Schemaerweiterung entnehmen Sie bitte dem [Kon
 
    ![](assets/dlv_seeds_usecase_09.png)
 
-1. Wählen Sie das Quellschema **[!UICONTROL Testadressen]** aus, klicken Sie auf **[!UICONTROL OK]** und geben Sie als **[!UICONTROL Namensraum]** beispielsweise **doc** an.
+1. Wählen Sie das Quellschema **[!UICONTROL Testadressen]** aus, klicken Sie auf **[!UICONTROL OK]** und geben Sie als **[!UICONTROL Namespace]** beispielsweise **doc** an.
 
    ![](assets/dlv_seeds_usecase_10.png)
 
