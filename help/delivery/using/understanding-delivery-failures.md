@@ -6,9 +6,9 @@ description: Erfahren Sie, wie Sie die Ursachen von fehlgeschlagenen Sendungen e
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2491'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Nachrichten können während der Versandvorbereitung auch ausgeschlossen werden,
 * [Status Fehlgeschlagen](../../delivery/using/delivery-performances.md#failed-status)
 * [Typen und Ursachen für fehlgeschlagene Sendungen](#delivery-failure-types-and-reasons)
 
-## Typen und Ursachen für fehlgeschlagene Sendungen     {#delivery-failure-types-and-reasons}
+## Typen und Ursachen für fehlgeschlagene Sendungen {#delivery-failure-types-and-reasons}
 
 Es gibt drei Typen von fehlgeschlagenen Sendungen. Vom jeweiligen Fehlertyp hängt es ab, ob eine Adresse in Quarantäne kommt. Weitere Informationen hierzu finden Sie unter [Ursachen für Quarantänen](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
@@ -67,7 +67,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Adresse nicht angegeben </td> 
-   <td> hart </td> 
+   <td> Hard </td> 
    <td> 7 </td> 
    <td> Empfängeradresse fehlt.<br /> </td> 
   </tr> 
@@ -79,7 +79,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Adresse, die auf die Blockierungsliste gesetzt wurde </td> 
-   <td> hart </td> 
+   <td> Hard </td> 
    <td> 8 </td> 
    <td> Die Adresse wurde zum Zeitpunkt des Versands der Blockierungsliste hinzugefügt. Dieser Status wird zum Importieren von Daten aus externen Listen und externen Systemen in die Quarantäneliste von Adobe Campaign verwendet.<br /> </td> 
   </tr> 
@@ -121,7 +121,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Postfach voll </td> 
-   <td> Weich </td> 
+   <td> Soft </td> 
    <td> 5 </td> 
    <td> Das Postfach des Benutzers ist voll und kann keine Nachrichten mehr aufnehmen. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> Dieser Fehlertyp wird von einem Bereinigungsprozess verwaltet. Die Adresse erhält nach 30 Tagen wieder einen gültigen Status.<br /> Achtung: Damit die Adresse automatisch aus der Quarantäne genommen werden kann, muss der technische Workflow Datenbankbereinigung (Cleanup) gestartet sein.<br /> </td> 
   </tr> 
@@ -169,14 +169,14 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Unbekannter Nutzer </td> 
-   <td> hart </td> 
+   <td> Hard </td> 
    <td> 1 </td> 
    <td> Die Adresse existiert nicht. An dieses Profil werden keine weiteren Zustellversuche unternommen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand      {#retries-after-a-delivery-temporary-failure}
+## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand {#retries-after-a-delivery-temporary-failure}
 
 Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignorierten Fehlers** fehlschlägt, werden während der Versandlaufzeit erneute Zustellversuche vorgenommen.
 
@@ -188,7 +188,7 @@ Gehen Sie zur Änderung der Versandlaufzeit in die erweiterten Eigenschaften des
 
 Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global geändert werden (kontaktieren Sie Ihren technischen Administrator von Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
-## Synchrone und asynchrone Fehler      {#synchronous-and-asynchronous-errors}
+## Synchrone und asynchrone Fehler {#synchronous-and-asynchronous-errors}
 
 Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren Zeitpunkt nach dem Versand (asynchroner Fehler).
 
@@ -209,7 +209,7 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
 
 Die Adobe Campaign-Plattform bietet mit der Bounce-Message-Funktion die Möglichkeit, Zustellprobleme zu verwalten. Wenn eine E-Mail nicht zugestellt werden kann, sendet der Remote-E-Mail-Server automatisch eine Fehlermeldung, eine s. g. Bounce Message, an die speziell für diesen Zweck konfigurierte technische E-Mail-Adresse. Adobe Campaign ruft diese Fehlermeldungen ab und qualifiziert sie mithilfe des inMail-Prozesses, um die Liste der E-Mail-Verwaltungsregeln anzureichern.
 
-### Bounce-Message-Qualifizierung      {#bounce-mail-qualification}
+### Bounce-Message-Qualifizierung {#bounce-mail-qualification}
 
 Wenn eine E-Mail nicht zugestellt werden kann, empfängt der Adobe Campaign-Versandserver eine Fehlermeldung vom Remote-Mail- oder -DNS-Server. Jeder Fehlermeldung wird ein Fehlertyp und -grund zugeordnet.
 
@@ -242,12 +242,15 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 >Bei gehosteten oder hybriden Installationen, wenn Sie ein Upgrade auf den Enhanced MTA durchgeführt haben:
 >
 >* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
+   >
+   >
+* Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
+   >
+   >
+* Bei Instanzen, die den Enhanced MTA ohne **Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL Eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
 >
->* Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
 >
->* Bei Instanzen, die den Enhanced MTA ohne **Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL Eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
->
->Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### E-Mail-Verwaltungsregeln {#email-management-rules}
 
