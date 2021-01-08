@@ -26,7 +26,7 @@ Wenn Sie über zahlreiche Dienste und Webanwendungen in Campaign v7 verfügen, i
 Dazu ist Folgendes erforderlich:
 
 * Empfänger, die in der Campaign v7-Datenbank gespeichert und mit Campaign Standard synchronisiert werden. Siehe Abschnitt [Profile synchronisieren](../../integrations/using/synchronizing-profiles.md).
-* Ein Dienst und eine Webanwendung, die in Campaign v7 erstellt und publiziert wurden.
+* Ein Dienst und eine Webanwendung, die in Campaign v7 erstellt und veröffentlicht wurden.
 * Die Webanwendung muss die Aktivität **[!UICONTROL Vorausfüllen]** enthalten, die die Verschlüsselungsmethode **[!UICONTROL Adobe-Campaign-Verschlüsselung]** verwendet.
 
 ## Webanwendung und Dienst erstellen {#creating-the-web-application-and-service}
