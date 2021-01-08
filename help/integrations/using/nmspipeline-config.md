@@ -67,7 +67,7 @@ In diesem zweiten Beispiel werden alle Auslöser erfasst.
 
 >[!NOTE]
 >
->Der [!DNL Trigger]-UID-Wert für einen bestimmten Auslösernamen in der Analytics-Oberfläche wird als Teil der URL-Abfragezeichenfolgen-Parameter in der Auslöser-Oberfläche angezeigt. Die UID &quot;triggerType&quot; wird im Pipeline-Datenstrom weitergeleitet. Außerdem kann Code in die Datei &quot;pipeline.JS&quot; geschrieben werden, um die Auslöser-UID einer anwenderfreundlichen Bezeichnung zuzuordnen, die in einer Spalte namens &quot;Auslösername&quot; im Schema &quot;pipelineEvents&quot; gespeichert werden kann.
+>Der [!DNL Trigger]-UID-Wert für einen bestimmten Trigger-Namen in der Analytics-Oberfläche wird als Teil der URL-Abfragezeichenfolgen-Parameter in der Triggers-Oberfläche angezeigt. Die UID &quot;triggerType&quot; wird im Pipeline-Datenstrom weitergeleitet. Außerdem kann Code in die Datei &quot;pipeline.JS&quot; geschrieben werden, um die Auslöser-UID einer anwenderfreundlichen Bezeichnung zuzuordnen, die in einer Spalte namens &quot;Auslösername&quot; im Schema &quot;pipelineEvents&quot; gespeichert werden kann.
 
 ## Der Parameter &quot;consumer&quot; {#consumer-parameter}
 
