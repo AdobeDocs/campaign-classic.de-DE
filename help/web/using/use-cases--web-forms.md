@@ -151,9 +151,9 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_admin_survey_double-opt-in_sample_7b.png)
 
-### Schritt 4: Publikation und Testen des Formulars {#step-4---publishing-and-testing-the-form}
+### Schritt 4: Veröffentlichung und Testen des Formulars {#step-4---publishing-and-testing-the-form}
 
-Sie können jetzt das Formular publizieren, damit die Benutzer darauf zugreifen können.
+Sie können jetzt das Formular veröffentlichen, damit die Benutzer darauf zugreifen können.
 
 ![](assets/s_ncs_admin_survey_double-opt-in_sample_8b.png)
 
