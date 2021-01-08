@@ -192,7 +192,7 @@ Folgende Schritte sind bei der Konfiguration des Microsoft Dynamics Connectors m
    >
    >Der Parameter &quot;redirectURL&quot; ist für Adobe Campaign Classic nicht erforderlich.
 
-   Der Wert **clientId** wird zusammen mit dem Benutzernamen/Passwort verwendet, um das Bearer-Token mithilfe des Passworts für Grant Type abzurufen. Dies wird als **Resource Owner Password Credentials Grant** bezeichnet. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc).
+   Der Wert **clientId** wird zusammen mit dem Benutzernamen/Passwort verwendet, um das Bearer-Token mithilfe des Passworts für den Grant-Typ abzurufen. Dies wird als **Resource Owner Password Credentials Grant** bezeichnet. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc).
 
    ![](assets/crm_connectors_msdynamics_01_3.png)
 
