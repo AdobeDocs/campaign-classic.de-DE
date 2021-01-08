@@ -29,7 +29,7 @@ Folgende Mappings sind vorhanden:
 | Besucher | Versand richtet sich an Profile, die beispielsweise durch das Weiterleiten von Nachrichten (Virales Marketing) oder durch soziale Netzwerke (Facebook, Twitter) akquiriert wurden. | mns:visitor |
 | Abonnements  | Versand richtet sich an Abonnenten eines Informationsdienstes wie z. B. einen Newsletter | nms:subscription |
 | Besucher-Abonnements | Versand richtet sich an Besucher, die einen Informationsdienst beziehen | nms:visitorSub |
-| Service | Publikationen auf Twitter oder Facebook | nms:service |
+| Service | Veröffentlichungen auf Twitter oder Facebook | nms:service |
 | Benutzer | Versand richtet sich an Adobe-Campaign-Benutzer | nms:operator |
 | Externe Datei | Versand basiert auf einer Datei, die alle notwendigen Informationen enthält | Ohne Schema oder Zielgruppe |
 
