@@ -6,9 +6,9 @@ description: SMS-Kanal
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3270'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Gehen Sie dazu wie folgt vor:
 
    Bei gewissen Anbietern ist die Verwendung des Vorzeichens &#39;+&#39; jedoch erforderlich, sodass es ratsam ist, mit Ihrem Anbieter Kontakt aufzunehmen, der Sie bei Bedarf dazu auffordern wird, diese Option zu aktivieren.
 
-   Das Kontrollkästchen **[!UICONTROL TLS über SMPP aktivieren]** ermöglicht die Verschlüsselung von SMPP-Traffic. Weitere Informationen hierzu finden Sie in dieser [Technote](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
+   Das Kontrollkästchen **[!UICONTROL TLS über SMPP aktivieren]** ermöglicht die Verschlüsselung von SMPP-Traffic. Weitere Informationen hierzu finden Sie in dieser [Technote](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html).
 
 1. Wenn Sie einen Connector vom Typ **[!UICONTROL Erweitertes allgemeines SMPP]** konfigurieren, können Sie automatische Antworten einrichten.
 
