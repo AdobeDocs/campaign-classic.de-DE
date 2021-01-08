@@ -135,7 +135,7 @@ Mit der Facebook-Anwendung von Adobe Campaign können Sie personalisierte Inhalt
 
    ![](assets/social_webapp_003.png)
 
-1. Nachdem die Webanwendung abgeschlossen ist, wählen Sie den Tab **[!UICONTROL Dashboard]** aus und klicken Sie dann auf **[!UICONTROL Publizieren]**, um online zu publizieren.
+1. Nachdem die Webanwendung abgeschlossen ist, wählen Sie den Tab **[!UICONTROL Dashboard]** aus und klicken Sie dann auf **[!UICONTROL Veröffentlichen]**, um online zu veröffentlichen.
 
    ![](assets/social_webapp_004.png)
 
