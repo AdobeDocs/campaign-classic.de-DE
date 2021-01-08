@@ -17,7 +17,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
 
-[!DNL Triggers] ist eine Integration zwischen Adobe Campaign und Adobe Analytics mithilfe der Pipeline. Die Pipeline ruft Aktionen oder Auslöser der Benutzer von Ihrer Website ab. Ein Beispiel für einen Auslöser ist ein Warenkorbabbruch. Auslöser werden in Adobe Campaign verarbeitet, um in nahezu Echtzeit E-Mails zu senden.
+[!DNL Triggers] ist eine Integration zwischen Adobe Campaign und Adobe Analytics mithilfe der Pipeline. Die Pipeline ruft Aktionen oder Auslöser der Benutzer von Ihrer Website ab. Ein Beispiel für einen Auslöser ist ein Warenkorbabbruch. Trigger werden in Adobe Campaign verarbeitet, um in nahezu Echtzeit E-Mails zu senden.
 
 >[!CAUTION]
 >
