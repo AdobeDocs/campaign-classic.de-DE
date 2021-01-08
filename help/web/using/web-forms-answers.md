@@ -119,7 +119,7 @@ Sie haben zwei Möglichkeiten, diese Komponente zu verwenden:
 
 * Wenn auf das Webformular über einen in einer E-Mail gesendeten Link zugegriffen wird und der Benutzer, der auf die Anwendung zugreift, bereits in der Datenbank gespeichert ist, können Sie die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weitere Informationen hierzu finden Sie unter [Formular per E-Mail versenden](../../web/using/publishing-a-web-form.md#delivering-a-form-via-email).
 
-   In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine einmalige Kennung, die von Adobe Campaign jedem Profil zugewiesen wird. Konfigurieren Sie die Informationen so, dass sie über die Vorausfüllen-Komponente geladen werden. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
+   In diesem Fall verwendet Adobe Campaign den verschlüsselten Primärschlüssel des Benutzerprofils. Das ist eine eindeutige Kennung, die von Adobe Campaign jedem Profil zugewiesen wird. Konfigurieren Sie die Informationen so, dass sie über die Vorausfüllen-Komponente geladen werden. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](../../web/using/publishing-a-web-form.md#pre-loading-the-form-data).
 
    >[!CAUTION]
    >
