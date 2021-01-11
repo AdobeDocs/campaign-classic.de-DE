@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
+source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 97%
+source-wordcount: '1915'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,14 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 Die Informationen für die Campaign Classic Gold Standard-Version (aktueller allgemein verfügbarer Build) [finden Sie auf dieser Seite](../../rn/using/gold-standard.md).
 
-## ![](assets/do-not-localize/blue_2.png) Version 20.3.1 – Build 9228 {#release-20-3-1-build-9228}
+## ![](assets/do-not-localize/blue_2.png) Version 20.3.3 – Build 9234 {#release-20-3-3-build-9234}
+
+_11. Januar 2021_
+
+* Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
+* Es wurde ein Regressionsproblem im Zusammenhang mit der Generierung von Broadlogs behoben, das zum Absturz des MTA-Prozesses führen konnte.
+
+## ![](assets/do-not-localize/red_2.png) Version 20.3.1 – Build 9228 {#release-20-3-1-build-9228}
 
 _27. Oktober 2020_
 
@@ -67,7 +74,7 @@ _27. Oktober 2020_
 
 >[!CAUTION]
 >
->Diese Version enthält ein neues Verbindungsprotokoll: Die Aktualisierung ist erforderlich, damit sowohl der Server als auch die Client-Konsole nach dem 21. März 2021 eine Verbindung zur Kampagne herstellen können.
+>Diese Version enthält ein neues Verbindungsprotokoll: Der Campaign-Server sowie die Client-Konsole müssen aktualisiert werden, damit nach dem 21. März 2021 eine Verbindung zu Campaign hergestellt werden kann.
 
 **Verbesserungen bei der Sicherheit**
 
