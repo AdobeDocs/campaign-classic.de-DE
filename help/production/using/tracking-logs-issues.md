@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 13%
@@ -21,14 +21,14 @@ Es kann mehrere Gründe dafür geben, dass Trackinglogs nicht weitergeleitet wer
 
 * **Hat der****Tracking-Workflow Fehler?**
 
-Weitere Informationen finden Sie unter [Überwachte Technischen Workflows](../../workflow/using/monitoring-technical-workflows.md).
+   Weitere Informationen finden Sie unter [Überwachte Technischen Workflows](../../workflow/using/monitoring-technical-workflows.md).
 
-![](assets/tracking_scheduled_task.png)
+   ![](assets/tracking_scheduled_task.png)
 
 * **Ist das Modul****trackinglogdrunning auf dem Server?**
 
-Siehe [Protokolldateien](../../production/using/log-files.md).
+   Siehe [Protokolldateien](../../production/using/log-files.md).
 
 * **Wurden Änderungen vorgenommen?**
 
-Sie können mithilfe des Verfolgungsalias einen Verlust der Verbindung zu den Servern auslösen.
+   Mit dem Tracking-Alias kann ein Serververbindungsverlust Trigger werden.
