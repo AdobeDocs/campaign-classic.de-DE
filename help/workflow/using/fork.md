@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 16%
@@ -26,7 +26,7 @@ Beispielsweise können Sie die Aktivität nach einer Abfrage verwenden, um zwei 
 
 Sie können die Aktivität auch im Zusammenhang mit der Inhaltserstellung und der Automatisierung des Versands zum Senden verwenden, um die Zielgruppe und Inhaltserstellung parallel zu starten. Ein spezielles Anwendungsbeispiel ist in [diesem Abschnitt](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) verfügbar.
 
->[!WARNING]
+>[!IMPORTANT]
 >
 >Beachten Sie, dass die ausgehenden Transitionen, die nach einer Fork-Aktivität hinzugefügt wurden, nicht gleichzeitig ausgeführt werden.
 >
