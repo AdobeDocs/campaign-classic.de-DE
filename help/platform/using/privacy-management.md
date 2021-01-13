@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über die Datenschutzverwaltung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 8ff5450cc35153e61048c2671f6d52fbc5ffc5b9
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
+workflow-type: tm+mt
+source-wordcount: '887'
+ht-degree: 97%
 
 ---
 
@@ -20,22 +20,15 @@ ht-degree: 100%
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung der [Datenschutzverordnungen](#privacy-management-regulations) (einschließlich DSGVO, CCPA, PDPA, LGPD) unterstützen.
 
 Hier sind die fünf Hauptfunktionen von Adobe Campaign, um die Unterstützung der DSGVO und anderen Datenschutzbestimmungen sicherzustellen:
+* **Recht auf Zugriff**
+* **Recht auf Löschen**
+* **Einverständnisverwaltung**
+* **Datenbeibehaltung**
+* **Rights Management**
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-* **Recht auf Zugriff**
-
-* **Recht auf Löschen**
-
-Weitere Informationen hierzu finden Sie unter [Recht auf Zugriff und Recht auf Vergessenwerden](#right-access-forgotten).
-
-* **Einverständnisverwaltung**
-
-* **Datenbeibehaltung**
-
-* **Rights Management**
-
-Weitere Informationen finden Sie unter [Einverständnis, Datenaufbewahrung und Benutzerrollen](#consent-retention-roles).
+Weitere Informationen hierzu finden Sie unter [Recht auf Zugriff und Recht auf Vergessen](#right-access-forgotten) und [Einverstanden, Bestehen und Rollen](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
