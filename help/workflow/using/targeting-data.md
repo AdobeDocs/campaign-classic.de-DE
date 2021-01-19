@@ -6,9 +6,9 @@ description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+workflow-type: tm+mt
 source-wordcount: '2011'
 ht-degree: 100%
 
@@ -135,7 +135,7 @@ Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](../../workflow/usin
 
 Bei Bedarf können die eingehenden Tabellen angepasst werden. Dies ist beispielsweise erforderlich, wenn eine Population einer anderen Dimension ausgeschlossen werden soll. In diesem Fall muss sie in die Dimension der Hauptmenge überführt werden. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und geben Sie die Bedingungen des Dimensionswechsels an.
 
-Die Abstimmung der Daten kann über die Kennungen, eine Achsenänderung oder einen Join erfolgen. Ein Beispiel finden Sie unter [Verwendung von Daten aus einer Liste: Liste lesen](../../workflow/using/importing-data.md#using-data-from-a-list--read-list).
+Die Abstimmung der Daten kann über die Kennungen, eine Achsenänderung oder einen Join erfolgen. Ein Beispiel finden Sie unter [Verwendung von Daten aus einer Liste: Liste lesen](../../platform/using/import-export-workflows.md#using-data-from-a-list--read-list).
 
 ![](assets/exclusion_edit_add_rule_01.png)
 
