@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 82c5f4f4c37f295a6c206eb33616ae9223740f36
-workflow-type: ht
-source-wordcount: '1626'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+workflow-type: tm+mt
+source-wordcount: '1632'
+ht-degree: 99%
 
 ---
 
@@ -47,12 +47,13 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </tr>
   <tr>
   <td>CRM-Connectoren<br></td>
-   <td><p>Ab Campaign-Version 20.3 werden folgende CRM-Connectoren eingestellt:</p>
+   <td><p>Ab Kampagne 20.3 werden die folgenden CRM-Connectors mit Kampagne nicht mehr unterstützt:</p>
    <ul>
    <li>Soap-API – On-Premise: 2007, 2015, 2016</li>
    <li>Soap-API – Online: 2015, 2016</li>
    <li>Web API – Microsoft Dynamics CRM On-Premise: 2016, Aktualisierung 1 2016</li>
    <li>Web API – Microsoft Dynamics CRM Online: 2016, Aktualisierung 1 2016</li>
+   <li>Oracle On Demand-API</li>
    </ul>
   <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
   </td>
