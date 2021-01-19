@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Die gängigsten Methoden der Profilerstellung sind:
 
 >[!NOTE]
 >
->Dateiimport und Webformulare werden im Abschnitt [Allgemeine Importe und Exporte](../../platform/using/generic-imports-and-exports.md) vorgestellt.
+>Dateiimport und Webformulare werden im Abschnitt [Allgemeine Importe und Exporte](../../platform/using/get-started-data-import-export.md) vorgestellt.
 
 ## Profile und Zielgruppen {#profiles-and-targets}
 
@@ -58,7 +58,7 @@ Außerdem haben Sie an dieser Stelle Zugriff auf:
 * Listen; siehe [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md),
 * Anmeldedienste; siehe [diese Seite](../../delivery/using/managing-subscriptions.md),
 * Webanwendungen; siehe [diese Seite](../../web/using/about-web-applications.md),
-* Importe und Exporte (Vorgänge); siehe [Allgemeine Importe und Exporte](../../platform/using/generic-imports-and-exports.md),
+* Importe und Exporte (Vorgänge); siehe [Allgemeine Importe und Exporte](../../platform/using/about-generic-imports-exports.md),
 * Zielgruppen-Workflow; siehe [diese Seite](../../workflow/using/building-a-workflow.md#implementation-steps-),
 
 Über die Empfängerseite sind die gängigsten Aktionen möglich. Sie können Profile bearbeiten, aktualisieren, sortieren, löschen oder neue Profile erstellen.
