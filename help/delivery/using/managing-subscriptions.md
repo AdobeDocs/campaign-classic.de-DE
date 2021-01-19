@@ -6,9 +6,9 @@ description: Abonnements verwalten
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 * Gruppe von Empfängern gebündelt für einen Dienst anmelden. Bei den Empfängern kann es sich beispielsweise um eine bestehende Gruppe, das Ergebnis einer Filterung bzw. eines Imports oder um in einem bestimmten Ordner enthaltene Profile handeln. Markieren Sie die Empfänger, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Auswahl für einen Dienst anmelden...]**. Markieren Sie den gewünschten Dienst und starten Sie den Vorgang.
 * Empfänger im Zuge eines Imports für einen Dienst anmelden. Geben Sie im letzten Schritt des Import-Assistenten den gewünschten Dienst an.
 
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/importing-data.md#import-wizard).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md).
 
 * Empfänger melden sich persönlich über ein Webformular an.
 
