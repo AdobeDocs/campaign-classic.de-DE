@@ -6,11 +6,11 @@ description: Erstellen Sie Sendungen, um personalisierte Nachrichten über versc
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1190'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+workflow-type: tm+mt
+source-wordcount: '1217'
+ht-degree: 94%
 
 ---
 
@@ -88,7 +88,11 @@ Sie können mit Adobe Campaign über spezielle Apps personalisierte und zielgrup
 
 ## Sonstige Kanäle {#other-channels}
 
-Adobe Campaign stellt auch Agentur- oder Telefonversandvorlagen zur Verfügung, mit denen externe Sendungen erstellt werden können. Die Verwendung dieser Kanäle setzt voraus, dass Sie spezielle Methoden zur Verarbeitung von Ausgabedateien einsetzen. Die Schritte zur Konfiguration sind dieselben wie für den [Brief-Kanal](../../delivery/using/about-direct-mail-channel.md).
+Adobe Campaign Angebots Telefonische Versandvorlage, die zur Erstellung von Externen Versänden verwendet wird. Die Verwendung dieses Kanals bedeutet, dass Sie dedizierte Methoden zur Verarbeitung von Ausgabedateien einrichten. Die Konfigurationsschritte sind mit denen von [Briefpost Kanal](../../delivery/using/about-direct-mail-channel.md) identisch.
+
+>[!NOTE]
+>
+>Der Kanal &quot;Telefon&quot;ist nicht standardmäßig verfügbar. Die Implementierung erfordert die Einbindung von Adobe Consulting oder einem Adobe Partner. Wenden Sie sich für weitere Informationen an Ihren Kundenbetreuer.
 
 Zusätzlich verwenden Sendungen vom Typ &quot;Sonstige&quot; eine spezifische technische Vorlage, die keinen Vorgang auslöst. Dies erlaubt beispielsweise die Verwaltung von außerhalb der Plattform durchgeführten Marketingaktionen.
 
