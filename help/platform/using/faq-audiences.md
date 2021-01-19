@@ -6,9 +6,9 @@ description: Häufig gestellte Fragen zu Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Sie können Empfänger importieren oder manuell unter Verwendung der Campaign-Cl
 
 ## Wie importiere ich Profile? {#how-to-import-profiles-}
 
-Einfache Anwendungsfälle für das Importieren von Profilen finden Sie [hier](../../platform/using/importing-data.md#generic-import-samples).
+Einfache Anwendungsfälle für das Importieren von Profilen finden Sie [hier](../../platform/using/import-operations-samples.md).
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/importing-profiles.html).
 
