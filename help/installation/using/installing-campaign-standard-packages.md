@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Integrierte Campaign Classic-Pakete installieren
+title: Installieren von Campaign Classic-Standardpaketen
 description: Erfahren Sie, wie Sie integrierte Kampagne-Pakete installieren
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 20%
+source-wordcount: '1208'
+ht-degree: 24%
 
 ---
 
 
-# Installieren von integrierten Campaign Classic{#installing-campaign-standard-packages}
+# Installieren von Campaign Classic-Standardpaketen{#installing-campaign-standard-packages}
 
 ## Integrierte Pakete {#campaign-standard-packages}
 
@@ -64,7 +64,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Alle</td> 
   </tr> 
   <tr> 
-   <td> Marketing-Kampagnen (Kampagne)<br /> </td> 
+   <td> Marketing-Kampagnen (Campaign)<br /> </td> 
    <td> Definiert, optimiert, führt und analysiert Kommunikations- und Marketing-Kampagnen. <a href="../../campaign/using/designing-marketing-campaigns.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing</td>
   </tr> 
@@ -74,7 +74,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Angebot Engine (Interaktion)<br /> </td> 
+   <td> Angebotsmodul (interaction)<br /> </td> 
    <td> Reagiert in Echtzeit auf eine Interaktion mit einem bestimmten Ansprechpartner (Kunde oder Zielgruppe), indem er diese zu einem oder mehreren angepassten Angeboten macht.  Optional. <a href="../../interaction/using/interaction-and-offer-management.md#packages-configuration">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
@@ -100,12 +100,12 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Alle</td> 
   </tr> 
   <tr> 
-   <td> Transaktionsnachricht Control (Message Center - Control)<br /> </td> 
-   <td> Verwaltet Auslösermeldungen, die aus Ereignissen generiert wurden, die aus Informationssystemen ausgelöst wurden. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Mehr erfahren</a> <br /> </td> 
+   <td> Kontrolle der Transaktionsnachrichten (Message Center – Kontrolle)<br /> </td> 
+   <td> Verwaltet Trigger-Meldungen, die aus Ereignissen generiert wurden, die aus Informationssystemen ausgelöst wurden. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Ausführung der Transaktionsnachricht (Message Center - Execution) <br /> </td> 
+   <td> Ausführung einer Transaktionsnachricht (Message Center – Ausführung) <br /> </td> 
    <td> Stellt eine höhere Verfügbarkeit und ein besseres Lastmanagement sicher. Optional. <a href="../../message-center/using/about-transactional-messaging.md">Mehr erfahren</a><br /> </td> 
    <td> Ausführung<br /> </td>
   </tr> 
@@ -122,6 +122,11 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
   <tr> 
    <td> Mobile-Kanal (SMS) <br /> </td> 
    <td> Sendet Versand mit dem Mobile/SMS Kanal mit Adobe Campaign. Optional. <a href="../../delivery/using/sms-channel.md">Mehr erfahren</a> <br /> </td> 
+   <td> Alle<br /> </td> 
+  </tr> 
+   <tr> 
+   <td> Telefon-Kanal<br /> </td> 
+   <td> Sendet Versand mit dem telefonischen Kanal mit Adobe Campaign. Wird für Call Center verwendet. Optional. <a href="../../delivery/using/communication-channels.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle<br /> </td> 
   </tr> 
   <tr> 
@@ -170,22 +175,22 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Inbox Rendering (IR)<br /> </td> 
+   <td> Rendering des Posteingangs (Inbox Rendering, IR)<br /> </td> 
    <td> Ermöglicht die Vorschau der Nachricht, die in den verschiedenen Kontexten gesendet wird, in denen sie empfangen werden kann, und die Überprüfung der Kompatibilität von Desktop-PCs und Anwendungen. Optional. <a href="../../delivery/using/inbox-rendering.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
-   <td> Zentrales/lokales Marketing (Dezentrale Marketing)<br /> </td> 
+   <td> Zentrales/lokales Marketing (verteiltes Marketing)<br /> </td> 
    <td> Implementiert kooperative Kampagnen zwischen Zentralstellen (Hauptsitz, Marketingabteilungen usw.) und Lokalstellen (Verkaufsstellen, Regionalbüros usw.). Optional. <a href="../../campaign/using/about-distributed-marketing.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
   <tr> 
    <td> CRM-Connectoren<br /> </td> 
-   <td> Bietet verschiedene CRM-Connectors zum Verknüpfen Ihrer Adobe Campaign-Plattform mit Drittanbietersystemen.  <a href="../../platform/using/crm-connectors.md">Mehr erfahren</a> <br /> </td> 
+   <td> Bietet verschiedene CRM-Connectors zum Verknüpfen Ihrer Adobe Campaign-Plattform mit Ihren Drittanbietersystemen.  <a href="../../platform/using/crm-connectors.md">Mehr erfahren</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
-   <td> Web-Analytics-Connectoren<br /> </td> 
+   <td> Web Analytics-Connectoren<br /> </td> 
    <td> Ermöglicht Adobe Campaign und Adobe Analytics die Interaktion über das Web Analytics Connectors-Paket. Nicht kompatibel mit Transaktionsnachrichten (Message Center-Paket). <a href="../../platform/using/adobe-analytics-data-connector.md">Mehr erfahren</a><br /> </td> 
    <td> Marketing </td> 
   </tr> 
