@@ -6,9 +6,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Sie können eine Vorab-Bearbeitung definieren, die beim Dateiimport ausgeführt 
 
 ![](assets/preprocessing-dataloading.png)
 
-Weiterführende Informationen hierzu finden Sie in diesem Abschnitt: [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing).
+Weiterführende Informationen hierzu finden Sie in diesem Abschnitt: [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](../../platform/using/unzip-decrypt.md).
 
 ## Datei formatieren {#defining-the-file-format}
 
@@ -113,7 +113,7 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
    * Die erste Spalte enthält einen dem Ereignis entsprechenden Code: Kauf (Transaktionsbetrag kleiner oder größer als 3000 Euro), Kein Kauf oder Rückgabe eines oder mehrerer Artikel.
    * Die anderen Spalten enthalten jeweils die Vornamen, Nachnamen und E-Mail-Adressen der Kunden sowie die Kundennummern.
 
-   Die Formatierung der Daten geschieht auf die gleiche Weise wie bei einem Datenimport in Adobe Campaign. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../platform/using/importing-data.md#step-2---source-file-selection).
+   Die Formatierung der Daten geschieht auf die gleiche Weise wie bei einem Datenimport in Adobe Campaign. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../platform/using/executing-import-jobs.md#step-2---source-file-selection).
 
 1. Positionieren Sie im Anschluss eine Aufspaltungsaktivität und geben Sie je nach Wert in der **Ereignis**-Spalte die zu erstellenden Teilmengen an.
 
