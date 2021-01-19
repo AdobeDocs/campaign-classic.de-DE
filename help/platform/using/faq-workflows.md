@@ -6,11 +6,11 @@ description: Häufig gestellte Fragen zu Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Hier erfahren Sie, wie Sie Prozesse und Aufgaben mit Adobe Campaign-Workflows au
 
 ## Wie kann ich Daten in Campaign importieren? {#how-can-i-import-data-in-campaign-}
 
-[In diesem Abschnitt](../../workflow/using/importing-data.md) erfahren Sie Best Practices für den Import mit einem Campaign-Workflow.
+Hier lernen Sie bewährte Verfahren zum Importieren von Daten in [diesem Abschnitt](../../platform/using/import-export-best-practices.md) kennen.
 
 ## Kann ich die Ausführung von Workflows überwachen? {#can-i-monitor-workflow-execution-}
 
@@ -59,7 +59,7 @@ Lesen Sie [dieses Anwendungsbeispiel](../../workflow/using/enriching-data.md) zu
 
 Sie können bestimmte Felder in einer Campaign-Tabelle mit Werten aus einer externen Textdatei aktualisieren.
 
-[Hier erfahren Sie mehr darüber](../../platform/using/importing-data.md#example--enrich-the-values-with-those-of-an-external-file).
+[Hier erfahren Sie mehr darüber](../../platform/using/import-operations-samples.md#example--enrich-the-values-with-those-of-an-external-file).
 
 ## Wie kann ich neue Empfänger identifizieren und ansprechen? {#how-can-i-identify-and-target-new-recipients-}
 
