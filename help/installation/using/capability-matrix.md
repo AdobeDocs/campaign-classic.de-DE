@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -33,8 +33,8 @@ Die verschiedenen Hostingmodelle werden in [in diesem Abschnitt](../../installat
 | Verwalten der Mid-Sourcing-Plattform | On-Demand | On-Demand | Verfügbar | [Mehr dazu](../../installation/using/mid-sourcing-server.md) |
 | Inbox-Rendering über Litmus | On-Demand | On-Demand | Verfügbar | [Mehr dazu](../../delivery/using/inbox-rendering.md) |
 | Integration mit dem IMS (Adobe ID) | On-Demand | On-Demand | On-Demand | [Mehr dazu](../../integrations/using/about-adobe-id.md) |
-| Daten für Dateiübertragungen verschlüsseln/entschlüsseln | On-Demand | Verfügbar | Verfügbar | [Mehr dazu](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
-| Dateien komprimieren/entzippen | On-Demand | Verfügbar | Verfügbar | [Mehr dazu](../../workflow/using/importing-data.md#unzipping-or-decrypting-a-file-before-processing) |
+| Daten für Dateiübertragungen verschlüsseln/entschlüsseln | On-Demand | Verfügbar | Verfügbar | [Mehr dazu](../../platform/using/unzip-decrypt.md) |
+| Dateien komprimieren/entzippen | On-Demand | Verfügbar | Verfügbar | [Mehr dazu](../../platform/using/unzip-decrypt.md) |
 | Domänennamendelegation | On-Demand | On-Demand | Nicht verfügbar | [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html) |
 | SpamAssassin installieren | On-Demand | Verfügbar | Verfügbar | [Mehr dazu](../../delivery/using/spamassassin.md) |
 | Zugriff auf Bereitstellungsberichte | Verfügbar | On-Demand | Verfügbar | [Mehr dazu](../../delivery/using/monitoring-deliverability.md) |
