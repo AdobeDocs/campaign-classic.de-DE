@@ -6,11 +6,11 @@ description: Version 19.1
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3072'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ _16. Dezember 2020_
 
 >[!CAUTION]
 >
->Diese Version enthält ein neues Verbindungsprotokoll:  Die Aktualisierung ist erforderlich, damit sowohl der Server als auch die Client-Konsole nach dem 21. März 2021 eine Verbindung zur Kampagne herstellen können.
+>Diese Version enthält ein neues Verbindungsprotokoll: Sowohl der Campaign-Server als auch die Client-Konsole müssen aktualisiert werden, damit nach dem 21. März 2021 eine Verbindung zu Campaign hergestellt werden kann.
 
 **Verbesserungen**
 
@@ -191,7 +191,7 @@ _30. Mai 2019_
 
 **Verbesserungen bei Schutzmechanismen, Stabilität und Skalierbarkeit**
 
-* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA über HTTP v2: Das FDA über HTTP-Protokoll wird häufig bei hybriden Implementierungen verwendet, insbesondere für den Abruf von Broadlogs und die Versandvorbereitung. Die Stabilität wurde verbessert, um Netzwerkprobleme und mögliche Fehler beim Abrufen oder Senden von Daten zu vermeiden. Dies setzt voraus, dass die Builds an beiden Enden der Verbindung auf dem neuesten Stand sind, da ansonsten das alte Protokoll weiterhin verwendet wird.
 * Tracking-Workflow: Die Stabilität des Tracking-Workflows wurde verbessert. Mehrere Probleme im Zusammenhang mit Trackinglog-Einfügungen/-Aktualisierungen und der individuellen URL-Tracking-Anpassung wurden behoben. Darüber hinaus erkennt der Tracking-Workflow jetzt Trackinglog-Probleme, die zu Fehlern führen könnten, und stoppt den Workflow. Diese Probleme werden jetzt verworfen und nicht mehr verarbeitet.
 * Bereinigungs-Workflow: Der Bereinigungs-Workflow wurde verbessert, um mögliche Fehler und Unterbrechungen zu vermeiden. Dadurch wird auch die Größe und Leistungsfähigkeit der Datenbank optimiert.
