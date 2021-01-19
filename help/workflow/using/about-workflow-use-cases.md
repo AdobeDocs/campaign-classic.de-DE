@@ -9,9 +9,9 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '207'
 ht-degree: 97%
 
 ---
@@ -52,10 +52,11 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Erstellung einer zusammenfassenden Liste.](../../workflow/using/creating-a-summary-list.md)
 * [Daten anreichern](../../workflow/using/enriching-data.md)
 * [Verwendung von Aggregaten](../../workflow/using/using-aggregates.md)
-* [Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden](../../workflow/using/importing-data.md#use-case-gpg-decrypt)
+* [Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden](../../platform/using/unzip-decrypt.md)
 * [Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
-* [Verwenden der Zusammenführungsfunktion der Deduplizierung-Duplikate-Aktivität](../../workflow/using/deduplication-merge.md)
+* [Verwendung der Zusammenführungsfunktion der Deduplizierungsaktivität](../../workflow/using/deduplication-merge.md)
+* [Einrichten eines wiederkehrenden Importarbeitsablaufs](../../workflow/using/recurring-import-workflow.md)
 
 ## Zielgruppenbestimmung {#designing-queries}
 
