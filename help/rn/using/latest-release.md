@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
-description: Aktuelle Version von Campaign Classic     Anmerkungen
+description: Aktuelle Version von Campaign Classic Anmerkungen
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Die Informationen für die Campaign Classic Gold Standard-Version (aktueller all
 _11. Januar 2021_
 
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
-* Es wurde ein Regressionsproblem im Zusammenhang mit der Generierung von Broadlogs behoben, das zum Absturz des MTA-Prozesses führen konnte.
+* Es wurde ein Regressionsproblem im Zusammenhang mit der Broadlog-Generierung behoben, das zum Absturz des MTA-Prozesses führen konnte.
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.3.1 – Build 9228 {#release-20-3-1-build-9228}
 
@@ -74,7 +74,7 @@ _27. Oktober 2020_
 
 >[!CAUTION]
 >
->Diese Version enthält ein neues Verbindungsprotokoll: Der Campaign-Server sowie die Client-Konsole müssen aktualisiert werden, damit nach dem 21. März 2021 eine Verbindung zu Campaign hergestellt werden kann.
+>Diese Version enthält ein neues Verbindungsprotokoll: Sowohl der Campaign-Server als auch die Client-Konsole müssen aktualisiert werden, damit nach dem 21. März 2021 eine Verbindung zu Campaign hergestellt werden kann.
 
 **Verbesserungen bei der Sicherheit**
 
@@ -105,7 +105,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 **Verbesserungen**
 
 * An der **Client-Konsole** wurden verschiedene Verbesserungen vorgenommen:
-   * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen. Die Aktualisierung der Server- und Client-Konsole ist obligatorisch, damit nach dem 21. März 2021 eine Verbindung hergestellt werden kann.
+   * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht. Die Aktualisierung von Server- und Client-Konsole ist obligatorisch, damit nach dem 21. März 2021 eine Verbindung hergestellt werden kann.
    * Um eine Inkompatibilität mit einigen Einschränkungen der Internet-Sicherheitsrichtlinien für Gruppenrichtlinienobjekte zu vermeiden, wurde der Anmeldebildschirm der Campaign-Client-Konsole durch ein integriertes Standard-Windows-Formular ersetzt.
    * Fehlerkorrektur – Es wurde ein Problem beim Kopieren/Einfügen von Aktivitäten in einem Workflow mit der 64-Bit-Client-Konsole behoben. (NEO-27635)
    * Im Menü **Info** wurden Informationen hinzugefügt, um 64- und 32-Bit-Konsolen zu unterscheiden.
