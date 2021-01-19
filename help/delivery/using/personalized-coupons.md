@@ -6,9 +6,9 @@ description: Personalisierte Gutscheine
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Durch das Hinzufügen von Gutscheinen können Sie Ihren Empfängern Produkte und
 >
 >Die Couponverwaltung ist ein Package, das installiert werden muss. Um festzustellen, ob Sie dieses Package installiert haben, gehen Sie zu **[!UICONTROL Administration > Konfiguration > Packageverwaltung > Installierte Packages.]**
 >
->Gutscheindaten können im CSV- und XML-Format importiert und exportiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/generic-imports-and-exports.md).
+>Gutscheindaten können im CSV- und XML-Format importiert und exportiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
 
 ## Gutscheine erstellen {#creating-a-coupon}
 
@@ -58,7 +58,7 @@ Bevor Sie die folgenden Schritte ausführen, entscheiden Sie sich für einen Gut
 
    >[!NOTE]
    >
-   >Individuelle Gutscheine können gesammelt importiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/generic-imports-and-exports.md).
+   >Individuelle Gutscheine können gesammelt importiert werden. Weiterführende Informationen zum Importieren und Exportieren finden Sie in [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
 
 ### Individuelle Gutscheine konfigurieren {#configuring-individual-coupons}
 
