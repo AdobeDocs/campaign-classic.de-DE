@@ -6,9 +6,9 @@ description: Erfasste Daten veröffentlichen, tracken und verwenden
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 100%
 
@@ -111,7 +111,7 @@ Antworten auf Umfragen können zur späteren Verarbeitung in eine externe Datei 
 
    >[!NOTE]
    >
-   >Der Datenexport und die Konfigurationsschritte werden in [diesem Abschnitt](../../platform/using/generic-imports-and-exports.md) beschrieben.
+   >Der Datenexport und die Konfigurationsschritte werden in [diesem Abschnitt](../../platform/using/about-generic-imports-exports.md) beschrieben.
 
 ## Die erfassten Daten nutzen {#using-the-collected-data}
 
