@@ -6,11 +6,11 @@ description: Statische Elemente in einem Webformular
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: ht
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: ht
-source-wordcount: '1332'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+workflow-type: tm+mt
+source-wordcount: '1329'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Folgende Feldtypen sind verfügbar:
 
 ## HTML-Inhalt einfügen {#inserting-html-content}
 
-Sie können in eine Formularseite HTML-Inhalte einfügen, wie z. B. Hypertext-Links, Bilder, formatierte Absätze, Videos oder Flash-Objekte.
+Sie können HTML-Inhalte in eine Formularseite einschließen: Hypertext-Links, Bilder, formatierte Absätze, Videos usw.
 
 Mit dem HTML-Editor können Sie den Inhalt eingeben, der in die Formularseite eingefügt werden soll. Um den Editor zu öffnen, klicken Sie auf **[!UICONTROL Statische Elemente]** > **[!UICONTROL HTML]**.
 
