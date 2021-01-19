@@ -7,33 +7,31 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 translation-type: tm+mt
-source-git-commit: d35b22386bd2681ba02e4379c627821b35a7d04e
+source-git-commit: e5f718908d0bb6893e54c51700865ecda09c80db
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 16%
+source-wordcount: '200'
+ht-degree: 54%
 
 ---
 
 
 # Verzweigung{#fork}
 
-Mit der Aktivität **[!UICONTROL Gabel]** können Sie mehrere ausgehende Transitionen erstellen, um mehrere Aktivitäten unabhängig im selben Arbeitsablauf durchzuführen.
+Mit der **[!UICONTROL Verzweigungsaktivität]** können Sie mehrfache ausgehende Transitionen erstellen, um mehrere Aktivitäten unabhängig im selben Workflow durchzuführen.
 
 Beispielsweise können Sie die Aktivität nach einer Abfrage verwenden, um zwei parallele Aktionen auszuführen:
 
 * Speichern Sie das Ergebnis der Abfrage in einer Audience,
-* Führen Sie eine Segmentierung für das Ergebnis aus, um mehrere Versand zu senden.
+* Führen Sie eine Segmentierung für das Ergebnis aus, um mehrere Lieferungen zu zu senden.
 
-Sie können die Aktivität auch im Zusammenhang mit der Inhaltserstellung und der Automatisierung des Versands zum Senden verwenden, um die Zielgruppe und Inhaltserstellung parallel zu starten. Ein spezielles Anwendungsbeispiel ist in [diesem Abschnitt](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) verfügbar.
+Beispielsweise können Sie die Aktivität im Rahmen der Automatisierung der Inhaltserstellung und des Versands verwenden, um die Zielgruppenberechnung und Inhaltserstellung gleichzeitig zu starten. Ein spezielles Anwendungsbeispiel wird in [diesem Abschnitt](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) gegeben.
 
 >[!IMPORTANT]
 >
->Beachten Sie, dass die ausgehenden Transitionen, die nach einer Fork-Aktivität hinzugefügt wurden, nicht gleichzeitig ausgeführt werden.
->
->Die Aktivität sollte daher nicht verwendet werden, um die Leistung des Workflows zu verbessern, sondern um mehrere Aktivitäten unabhängig auszuführen und sie gegebenenfalls zu verbinden, bevor der Rest des Workflows ausgeführt wird.
+>Ausgehende Transitionen, die nach einer **[!UICONTROL Fork]**-Aktivität **hinzugefügt wurden, werden nicht gleichzeitig ausgeführt.** Dieses Verhalten kann sich auf die Leistung des Workflows auswirken. Verwenden Sie diese Aktivität, wenn Sie mehrere Aktivitäten unabhängig ausführen müssen und sie dann zusammenführen müssen, bevor Sie den Rest des Workflows ausführen.
 
-Um die Aktivität zu konfigurieren, öffnen Sie sie und definieren Sie die Anzahl und Beschriftung der gewünschten ausgehenden Transitionen.
+Um die Aktivität **[!UICONTROL Gabel]** zu konfigurieren, öffnen Sie sie, um die Nummer und die Beschriftung der ausgehenden Transitionen zu definieren.
 
 ![](assets/s_user_segmentation_fork.png)
 
-Anschließend können Sie jede ausgehende Transition konfigurieren und sie dann gegebenenfalls mit einer [AND-join](../../workflow/using/and-join.md)-Aktivität verbinden. Auf diese Weise wird der Rest des Workflows erst ausgeführt, nachdem die ausgehenden Transitionen der **[!UICONTROL Gabel]**-Aktivität abgeschlossen sind.
+Anschließend können Sie jede ausgehende Transition konfigurieren und sie dann gegebenenfalls mit einer [AND-join](../../workflow/using/and-join.md)-Aktivität verbinden. Auf diese Weise wird der Rest des Workflows erst ausgeführt, wenn die ausgehenden Transitionen der **[!UICONTROL Gabel]**-Aktivität abgeschlossen sind.
