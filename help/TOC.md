@@ -88,7 +88,7 @@ ht-degree: 96%
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen            {#creating-queries}
+   + Abfragen erstellen {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
