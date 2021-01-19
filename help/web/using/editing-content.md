@@ -6,10 +6,10 @@ description: Bearbeiten von Inhalten
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '1259'
+translation-type: tm+mt
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+workflow-type: tm+mt
+source-wordcount: '1239'
 ht-degree: 100%
 
 ---
@@ -137,6 +137,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 
@@ -202,24 +203,14 @@ Folgende Optionen sind verfügbar:
 >[!NOTE]
 >
 >* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
->
->* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
+   >
+   >
+* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
 
 ## Bilder und Animationen verwalten {#managing-images-and-animations}
 
 Mit dem Digital Content Editor können Sie **alle Arten von Bilder** bearbeiten, die mit Browsern kompatibel sind.
-
-Um mit dem DCE kompatibel zu sein, sind **Flash-Animationen** wie folgt in HTML-Seiten einzufügen:
-
-```
-<object type="application/x-shockwave-flash" data="https://www.mydomain.com/flash/your_animation.swf" width="200" height="400">
- <param name="movie" value="https://www.mydomain.com/flash/your_animation.swf" />
- <param name="quality" value="high" />
- <param name="play" value="true"/>
- <param name="loop" value="true"/> 
-</object>
-```
 
 >[!CAUTION]
 >
