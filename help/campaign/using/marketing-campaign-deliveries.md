@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
 workflow-type: tm+mt
 source-wordcount: '3085'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -281,7 +281,7 @@ Wenn alle Validierungen akzeptiert wurden, erhält der Versand den Status **[!UI
 
 >[!NOTE]
 >
->Die Technischen Workflows zum Kampagne-Paket finden Sie unter [Liste der Technischen Workflows](../../workflow/using/about-technical-workflows.md).
+>Die Technischen Workflows zum Campaign-Paket finden Sie unter [Liste der Technischen Workflows](../../workflow/using/about-technical-workflows.md).
 
 **1. Schritt - Datei validieren**
 
@@ -455,7 +455,7 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 
 >[!NOTE]
 >
->Weitere Informationen zu Exporten finden Sie im Abschnitt [Erste Schritte](../../platform/using/generic-imports-and-exports.md).
+>Weitere Informationen zu Exporten finden Sie im Abschnitt [Erste Schritte](../../platform/using/get-started-data-import-export.md).
 
 #### Anleitungsvideo {#create-email-video}
 
