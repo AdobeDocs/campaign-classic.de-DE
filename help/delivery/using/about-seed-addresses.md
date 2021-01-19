@@ -6,9 +6,9 @@ description: Über Testadressen
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 
@@ -46,7 +46,8 @@ Für den Briefpost-Versand werden Testadressen während der Extraktion hinzugef�
 >Bei Briefsendungen muss das Format der Extraktionsdatei folgende Bedingungen erfüllen:
 >
 >* Keine Verwendung der Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]**.
->* Bei Extraktion von Kollektionselementen bleiben die entsprechenden Felder für Testadressen leer, es sei denn, die Option **[!UICONTROL Nur eine Zeile (Expertenmodus)]** wurde ausgewählt. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../platform/using/exporting-data.md#step-7---data-formatting).
+>* Bei Extraktion von Kollektionselementen bleiben die entsprechenden Felder für Testadressen leer, es sei denn, die Option **[!UICONTROL Nur eine Zeile (Expertenmodus)]** wurde ausgewählt. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
+
 >
 
 
