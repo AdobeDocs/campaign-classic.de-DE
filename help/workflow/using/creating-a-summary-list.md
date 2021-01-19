@@ -6,9 +6,9 @@ description: Erstellung einer zusammenfassenden Liste.
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Die Daten stammen aus der Datei &quot;Verkauf.txt&quot;
 
    Die Aktivität **Laden (Datei)** lädt die gesammelten Daten in die Arbeitstabelle des Workflows.
 
-   Weitere Informationen zu dieser Aktivität finden Sie unter [Daten aus einer Datei laden](../../workflow/using/importing-data.md#loading-data-from-a-file).
+   Weitere Informationen zu dieser Aktivität finden Sie unter [Daten aus einer Datei laden](../../platform/using/import-export-workflows.md#loading-data-from-a-file).
 
 1. Konfigurieren Sie den **Datei-Wächter** dahingehend, dass er Textdateien (.txt) im angegebenen Verzeichnis abruft.
 
