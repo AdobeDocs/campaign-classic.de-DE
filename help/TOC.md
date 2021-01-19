@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 404ff67207f8c126e44736fe565cf57afcc6397e
+source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
 workflow-type: tm+mt
-source-wordcount: '2202'
-ht-degree: 98%
+source-wordcount: '2293'
+ht-degree: 96%
 
 ---
 
@@ -68,10 +68,22 @@ ht-degree: 98%
       + [Profile im-/exportieren](platform/using/exporting-and-importing-profiles.md)
       + [Listen erstellen und verwalten](platform/using/creating-and-managing-lists.md)
    + Datenimport und -export {#importing-and-exporting-data}
-      + [Allgemeine Importe und Exporte](platform/using/generic-imports-and-exports.md)
-      + [Export von Daten](platform/using/exporting-data.md)
-      + [Daten importieren](platform/using/importing-data.md)
-      + [Nutzung von SFTP-Servern](platform/using/sftp-server-usage.md)
+      + [Erste Schritte mit Datenimport und -export](platform/using/get-started-data-import-export.md)
+      + [Importieren und Exportieren von Daten mit Workflows](platform/using/import-export-workflows.md)
+      + Arbeiten mit Generika-Importen und -Exporten {generic-importing-exports}
+         + [Erste Schritte mit generischen Importen und Exporten](platform/using/about-generic-imports-exports.md)
+         + [Erstellen von Import- und Exportvorlagen](platform/using/creating-import-export-templates.md)
+         + [Erstellen von Import- und Exportaufträgen](platform/using/creating-import-export-jobs.md)
+         + [Konfigurieren von Importaufträgen](platform/using/executing-import-jobs.md)
+         + [Konfigurieren von Exportaufträgen](platform/using/executing-export-jobs.md)
+         + [Überwachung der Auftragsausführung](platform/using/monitoring-jobs-execution.md)
+         + [Allgemeine Beispiele für den Import](platform/using/import-operations-samples.md)
+      + Verwalten der Datenverschlüsselung und -komprimierung {managing-data-crypting-compression}
+         + [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](platform/using/unzip-decrypt.md)
+         + [Komprimieren oder Verschlüsseln einer Datei vor der Verarbeitung](platform/using/zip-encrypt.md)
+      + Best Practices und Fehlerbehebung {Best Practices}
+         + [Best Practices importieren und exportieren](platform/using/import-export-best-practices.md)
+         + [Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung](platform/using/sftp-server-usage.md)
    + Datenfilter {#filtering-data}
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
@@ -86,7 +98,10 @@ ht-degree: 98%
       + [Auflistungen verwalten](platform/using/managing-enumerations.md)
    + Connectoren {#connectors}
       + [Über Connectoren](platform/using/about-connectors.md)
-      + [CRM-Connectoren](platform/using/crm-connectors.md)
+      + CRM-Connectoren{#crm-connectors}
+         + [Erste Schritte mit CRM Connectors](platform/using/crm-connectors.md)
+         + [Verbindung mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Synchronisieren von Daten mit dem CRM](platform/using/crm-data-sync.md)
       + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Nachrichten senden {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
@@ -114,7 +129,7 @@ ht-degree: 98%
    + Nachrichten an Mobiltelefone senden {#sending-messages-on-mobiles}
       + [SMS-Kanal](delivery/using/sms-channel.md)
       + [LINE-Kanal](delivery/using/line-channel.md)
-      + [Protokoll und Einstellungen für den SMS-Anschluss](delivery/using/sms-protocol.md)
+      + [Protokoll und Einstellungen des SMS-Connectors](delivery/using/sms-protocol.md)
       + [SMS-Fehlerbehebung](delivery/using/troubleshooting-sms.md)
    + Push-Benachrichtigungen senden {#sending-push-notifications}
       + [Über den Mobile-App-Kanal](delivery/using/about-mobile-app-channel.md)
@@ -347,13 +362,11 @@ ht-degree: 98%
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
 + Mit Workflows automatisieren {#automating-with-workflows}
-   + Einleitung {#introduction}
-      + [Erste Schritte mit Workflows](workflow/using/about-workflows.md)
+   + Erste Schritte mit Workflows {#introduction}
+      + [Über Workflows](workflow/using/about-workflows.md)
       + [Über Aktivitäten](workflow/using/about-activities.md)
-   + Allgemeine Funktionsweise {#general-operation}
       + [Workflow erstellen](workflow/using/building-a-workflow.md)
       + [Zielgruppendaten](workflow/using/targeting-data.md)
-      + [Daten importieren](workflow/using/importing-data.md)
       + [Workflow-Daten verwenden](workflow/using/how-to-use-workflow-data.md)
       + [Best Practices bei Workflows](workflow/using/workflow-best-practices.md)
    + Workflow ausführen {#executing-a-workflow}
@@ -440,8 +453,9 @@ ht-degree: 98%
          + [Erstellung einer zusammenfassenden Liste.](workflow/using/creating-a-summary-list.md)
          + [Daten anreichern](workflow/using/enriching-data.md)
          + [Verwendung von Aggregaten](workflow/using/using-aggregates.md)
-         + [Verwenden der Zusammenführungsfunktion der Deduplizierung-Duplikate-Aktivität](workflow/using/deduplication-merge.md)
-      + Abfragen erstellen {#designing-queries}
+         + [Verwenden der Zusammenführungsfunktion der Deduplizierungs-Aktivität](workflow/using/deduplication-merge.md)
+         + [Einrichten eines wiederkehrenden Importarbeitsablaufs](workflow/using/recurring-import-workflow.md)
+      + Entwerfen von Abfragen {#designing-queries}
          + [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](workflow/using/quarterly-list-update.md)
       + Zielgruppenbestimmung {#designing-queries}
          + [Abfrage zur Empfängertabelle](workflow/using/querying-recipient-table.md)
@@ -604,7 +618,7 @@ ht-degree: 98%
       + [Erstellen und Konfigurieren der Vorlagen](installation/using/creating-and-configuring-the-database.md)
       + [Konfigurieren des Campaign-Servers](installation/using/campaign-server-configuration.md)
       + [Bereitstellen einer Instanz](installation/using/deploying-an-instance.md)
-      + [Integrierte Campaign Classic-Pakete installieren](installation/using/installing-campaign-standard-packages.md)
+      + [Installieren von Campaign Classic-Standardpaketen](installation/using/installing-campaign-standard-packages.md)
    + Ergänzende Konfigurationen {#additional-configurations}
       + [Campaign-Server konfigurieren](installation/using/configuring-campaign-server.md)
       + [Über LDAP verbinden](installation/using/connecting-through-ldap.md)
