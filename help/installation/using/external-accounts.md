@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
 workflow-type: tm+mt
-source-wordcount: '1879'
-ht-degree: 91%
+source-wordcount: '1706'
+ht-degree: 89%
 
 ---
 
@@ -34,7 +34,6 @@ Die folgenden externen Konten können eingerichtet werden:
 * [Externes Adobe-Experience-Manager-Konto](#adobe-experience-manager-external-account)
 * [Externes Amazon Simple Storage Service-Konto (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Externes Microsoft Dynamics CRM-Konto](#microsoft-dynamics-crm-external-account)
-* [Externes Oracle On Demand-Konto](#oracle-on-demand-external-account)
 * [Externes Salesforce CRM-Konto](#salesforce-crm-external-account)
 
 ## Externes Konto erstellen {#creating-an-external-account}
@@ -331,35 +330,11 @@ Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den gehei
 
 Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
 
-Wie Sie den Microsoft Dynamics Connector zur Verwendung mit Adobe Campaign konfigurieren müssen, hängt von Ihrem Bereitstellungstyp ab.
-Bei den Bereitstellungstypen **[!UICONTROL On-Premise]** und **[!UICONTROL Office 365]** müssen Sie folgende Details angeben:
+Erfahren Sie mehr über Kampagne - Microsoft Dynamics CRM Connector in dieser [Seite](../../platform/using/crm-ms-dynamics.md).
 
-![](assets/ext_account_21.png)
-
-* **[!UICONTROL Konto]**
-
-   Konto, mit dem die Anmeldung bei Microsoft CRM erfolgt
-
-* **[!UICONTROL Server]**
-
-   URL Ihres Microsoft CRM-Servers
-
-* **[!UICONTROL Passwort]**
-
-   Passwort, mit dem die Anmeldung bei Microsoft CRM erfolgt
-
-* **[!UICONTROL Firmenname]** für On-Premise- und Office 365-Implementierung
-
-   Der Name Ihres Unternehmens.
-
-* **[!UICONTROL Organisationsname]** für die On-Premise-Implementierung
-
-   Name Ihrer Organisation
-Organisationsname, der im Dashboard für Entwicklerressourcen in Microsoft Dynamics im Feld **[!UICONTROL Eindeutiger Name]** zu finden ist.
-
-* **[!UICONTROL CRM-Version]** bei On-Premise
-
-   Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
+>[!NOTE]
+>
+> **[!UICONTROL Die Bereitstellungstypen]** für  **[!UICONTROL Office 365]** undOffice werden jetzt nicht mehr unterstützt. [Weitere Informationen](../../rn/using/deprecated-features.md).
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
 
@@ -405,29 +380,7 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
    Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
 
-Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md#example-for-microsoft-dynamics).
-
-## Externes Oracle On Demand-Konto {#oracle-on-demand-external-account}
-
-Das externe **[!UICONTROL Oracle On Demand]**-Konto ermöglicht den Import und Export von Oracle-Daten in Adobe Campaign.
-
-![](assets/ext_account_18.png)
-
-Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
-
-* **[!UICONTROL Konto]**
-
-   Konto, mit dem die Anmeldung bei Oracle CRM On Demand erfolgt
-
-* **[!UICONTROL Server]**
-
-   URL Ihres Oracle CRM On Demand-Servers
-
-* **[!UICONTROL Passwort]**
-
-   Passwort, mit dem die Anmeldung bei Oracle CRM On Demand erfolgt
-
-Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md#example-for-oracle-on-demand).
+Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
 
 ## Externes Salesforce CRM-Konto {#salesforce-crm-external-account}
 
@@ -459,4 +412,4 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
 
-Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md#example-for-salesforce-com).
+Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
