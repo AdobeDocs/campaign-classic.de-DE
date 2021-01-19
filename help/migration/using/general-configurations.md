@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2843'
 ht-degree: 1%
 
 ---
@@ -616,11 +616,11 @@ Alle Standardberichte verwenden derzeit die Render-Engine v6.x. Wenn Sie diesen 
 
 ### Personalisierte Berichte {#personalized-reports}
 
-Wenn Sie das blaue Banner von v7 verwenden möchten (sodass Sie Zugriff auf die Universen haben), müssen Sie die Berichte erneut veröffentlichen. Wenn Probleme auftreten, können Sie die v6.0-Rendering-Engine erzwingen. Gehen Sie dazu innerhalb des Berichts zu **[!UICONTROL Eigenschaften]**, klicken Sie auf **[!UICONTROL Rendern]** und wählen Sie die Rendering-Engine **[!UICONTROL Version 6.0 (Flash &amp; OpenOffice)]**.
+<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
-
-Wenn Sie von den neuen Berichtfunktionen profitieren möchten, müssen Sie die v.6.x-Rendering-Engine auswählen. Überprüfen Sie in diesem Fall alle Skripten und ändern Sie sie bei Bedarf. Wenn Sie für den PDF-Export ein bestimmtes Skript für OpenOffice hinzugefügt haben, funktioniert dies nicht mehr mit der neuen PDF Export Engine (PhantomJS).
+-->
+Wenn Sie von den neuen Berichtfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Bearbeiten Sie dazu den Bericht **[!UICONTROL Eigenschaften]**, klicken Sie auf **[!UICONTROL Rendering]** und wählen Sie die v.6.x Rendering Engine. Überprüfen Sie in diesem Fall alle Skripten und ändern Sie sie bei Bedarf. Wenn Sie für den PDF-Export ein bestimmtes Skript für Open Office hinzugefügt haben, funktioniert dies nicht mehr mit der neuen PDF Export Engine (PhantomJS).
 
 ## Webanwendungen {#web-applications}
 
