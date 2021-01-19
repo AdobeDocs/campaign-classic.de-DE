@@ -6,11 +6,11 @@ description: Profile im-/exportieren
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: ht
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
-source-wordcount: '154'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 77%
 
 ---
 
@@ -23,13 +23,13 @@ Mithilfe von [Workflows](#use-workflows) können Sie Empfängerprofile in die Ad
 
 ## Verwenden von Workflows{#use-workflows}
 
-Exporte und Importe werden in dedizierten Vorlagen konfiguriert, die durch Workflows über **[!UICONTROL Import]**- und **[!UICONTROL Export]**-Aktivitäten ausgeführt werden. Sie können automatisch nach einem Zeitplan wiederholt werden, um beispielsweise den Datenaustausch zwischen verschiedenen Informationssystemen zu automatisieren – [mehr dazu](../../workflow/using/importing-data.md#best-practices-when-importing-data)
+Exporte und Importe werden in dedizierten Vorlagen konfiguriert, die über Import- und Export-Aktivitäten Workflows ausgeführt werden. Sie können automatisch nach einem Zeitplan wiederholt werden, um beispielsweise den Datenaustausch zwischen verschiedenen Informationssystemen zu automatisieren. [mehr dazu](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Bei Bedarf können Sie einen gelegentlichen Import- oder Exportvorgang über die unten beschriebene Funktion **[!UICONTROL Allgemeine Importe und Exporte]** erstellen.
 
 ## Erstellen von Vorgängen{#create-jobs}
 
-Zur Konfiguration derartiger Import- oder Exportvorgänge klicken Sie auf der Registerkarte **[!UICONTROL Profile und Zielgruppen]** auf den Link **[!UICONTROL Vorgänge]** – [mehr dazu](../../platform/using/generic-imports-and-exports.md)
+Zur Konfiguration derartiger Import- oder Exportvorgänge klicken Sie auf der Registerkarte **[!UICONTROL Profile und Zielgruppen]** auf den Link **[!UICONTROL Vorgänge]** – [mehr dazu](../../platform/using/about-generic-imports-exports.md)
 
 ![](assets/s_ncs_user_interface_import_link.png)
 
@@ -38,6 +38,6 @@ Zur Konfiguration derartiger Import- oder Exportvorgänge klicken Sie auf der Re
 
 In diesem Video wird erläutert, wie Sie Profile in Adobe Campaign gelegentlich importieren können.
 
->[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25608?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
