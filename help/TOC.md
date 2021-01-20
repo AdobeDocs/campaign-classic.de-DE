@@ -81,7 +81,7 @@ ht-degree: 96%
       + Verwalten der Datenverschlüsselung und -komprimierung {managing-data-crypting-compression}
          + [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](platform/using/unzip-decrypt.md)
          + [Komprimieren oder Verschlüsseln einer Datei vor der Verarbeitung](platform/using/zip-encrypt.md)
-      + Best Practices und Fehlerbehebung {Best Practices}
+      + Best Practices und Fehlerbehebung {#best-practices}
          + [Best Practices importieren und exportieren](platform/using/import-export-best-practices.md)
          + [Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung](platform/using/sftp-server-usage.md)
    + Datenfilter {#filtering-data}
