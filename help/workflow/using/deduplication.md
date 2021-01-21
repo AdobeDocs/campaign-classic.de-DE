@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Deduplizierung".
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 55e2297c5c60a48be230d06a3c1880d79b8ea5f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -19,28 +19,28 @@ ht-degree: 67%
 
 Die Deduplizierung dient der Identifizierung von Dubletten in der oder den eingehenden Aktivitäten. Zur Identifizierung können beispielsweise die E-Mail-Adresse, eine Telefonnummer oder andere Felder herangezogen werden.
 
-Die Aktivität **[!UICONTROL Deduplizierung-Duplikate]** wird zum Entfernen von Duplikat-Zeilen aus einem Datensatz verwendet. Die folgenden Datensätze können beispielsweise als Duplikat betrachtet werden, da sie dieselbe E-Mail-Adresse und dasselbe Handy und/oder Mobiltelefon haben.
+Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Zeilen aus einem Datensatz verwendet. Die folgenden Datensätze können beispielsweise als Duplikate betrachtet werden, da sie dieselbe E-Mail-Adresse und dieselbe Mobil- und/oder Festnetztelefonnummer haben.
 
-| Datum der letzten Änderung | Vorname | Nachname | E-Mail | Mobiltelefon | Phone |
+| Datum der letzten Änderung | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
 -----|------------|-----------|-------|--------------|------
-| 03.02.2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
-| 19.05.2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 22.07.2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 3.2.2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 19.5.2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 22.7.2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
-Die Aktivität **[!UICONTROL Deduplizierung-Duplikate]** kann eine ganze Zeile als eindeutigen Datensatz speichern, nachdem Duplikat identifiziert wurden. Wenn die Aktivität beispielsweise im oben genannten Anwendungsfall so konfiguriert ist, dass nur der Datensatz mit dem ältesten **[!UICONTROL Datum]** beibehalten wird, lautet das Ergebnis:
+Die Aktivität **[!UICONTROL Deduplizierung]** kann eine ganze Zeile als den einzigen Datensatz speichern, nachdem Duplikate identifiziert wurden. Wenn die Aktivität beispielsweise im oben genannten Anwendungsfall so konfiguriert ist, dass nur der Datensatz mit dem ältesten **[!UICONTROL Datum]** beibehalten wird, lautet das Ergebnis:
 
 | Datum | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
 -----|----------|------------|-------|--------------|------
-| 03.02.2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
+| 3.2.2020 | Bob | Tisner | bob@mycompany.com | 444-444-4444 | 888-888-8888 |
 
-Der Übergeordnet ausgewählte Datensatz leitet die Daten weiter, ohne dass Felddaten mit anderen relevanten Daten in den Duplikat-Zeilen zusammengeführt werden.
+Der ausgewählte übergeordnete Datensatz leitet die Daten weiter, ohne dass Felddaten mit anderen relevanten Daten in den Duplikat-Zeilen zusammengeführt werden.
 
 Komplement:
 
 | Datum | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
 -----|------------|-----------|-------|--------------|------
-| 19.05.2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
-| 22.07.2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 19.5.2020 | Robert | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
+| 22.7.2020 | Bobby | Tisner | bob@mycompany.com | 444-444-4444 | 777-777-7777 |
 
 ## Best Practices {#best-practices}
 
@@ -61,17 +61,17 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
    ![](assets/s_user_segmentation_dedup_param.png)
 
-1. Wählen Sie den Typ der Zielgruppe für diese Aktivität (Deduplizierung-Duplikate ist standardmäßig mit Empfängern verknüpft) und das zu verwendende Kriterium aus, d. h. das Feld, in dem Sie mit identischen Werten Duplikat identifizieren können.
+1. Wählen Sie den Typ der Zielgruppe für diese Aktivität (Deduplizierung ist standardmäßig mit Empfängern verknüpft) und das zu verwendende Kriterium aus, d. h. das Feld, in dem Sie durch identische Werte Duplikate identifizieren können.
 
    >[!NOTE]
    >
    >Wenn Sie externe Daten als Eingabe verwenden möchten (z. B. Daten aus einer externen Datei), müssen Sie die Option **[!UICONTROL Temporäres Schema]** markieren.
    >
-   >Die Option **[!UICONTROL Sonstige]** ermöglicht im nächsten Schritt die Auswahl anderer Felder:
+   >Die Option **[!UICONTROL Andere]** ermöglicht im nächsten Schritt die Auswahl der zu verwendenden Kriterien:
 
    ![](assets/s_user_segmentation_dedup_param2.png)
 
-1. Im nächsten Schritt können Sie mit der Option **[!UICONTROL Andere]** das Kriterium oder die Kriterien auswählen, die bei identischen Werten verwendet werden sollen.
+1. Die Option **[!UICONTROL Andere]** ermöglicht im nächsten Schritt die Auswahl der zu verwendenden Kriterien im Fall von identischen Werten.
 
    ![](assets/s_user_segmentation_dedup_param3.png)
 
@@ -95,7 +95,7 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
       ![](assets/s_user_segmentation_dedup_param7.png)
    >[!NOTE]
    >
-   >Mit der Funktion **[!UICONTROL Zusammenführen]**, die über den Link **[!UICONTROL Erweiterte Parameter]** aufgerufen werden kann, können Sie einen Regelsatz konfigurieren, um ein Feld oder eine Gruppe von Feldern zu einem einzigen Ergebnisdatensatz zusammenzuführen. Weitere Informationen hierzu finden Sie unter [Zusammenführen von Feldern in einem einzelnen Datensatz](#merging-fields-into-single-record).
+   >Mit der Funktion **[!UICONTROL Zusammenführen]**, die über den Link **[!UICONTROL Erweiterte Parameter]** aufgerufen werden kann, können Sie einen Regelsatz konfigurieren, um ein Feld oder eine Gruppe von Feldern zu einem einzigen Ergebnisdatensatz zusammenzuführen. Weitere Informationen hierzu finden Sie unter [Zusammenführen von Feldern zu einem einzigen Datensatz](#merging-fields-into-single-record).
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**, um die Auswahl der Deduplizierungsmethode zu bestätigen.
 
@@ -137,27 +137,27 @@ Bei Ausführung des Workflows werden die als Dubletten identifizierten Empfänge
 
 ## Zusammenführen von Feldern zu einem einzigen Datensatz {#merging-fields-into-single-record}
 
-Mit der Funktion **[!UICONTROL Zusammenführen]** können Sie einen Regelsatz für das Deduplizierung-Duplikate konfigurieren, um ein Feld oder eine Feldgruppe zu definieren, die bzw. die in einem einzigen Ergebnisdatensatz zusammengeführt werden soll.
+Mit der Funktion **[!UICONTROL Zusammenführen]** können Sie einen Regelsatz für die Deduplizierung konfigurieren, um ein Feld oder eine Feldgruppe zu definieren, das bzw. die zu einem einzigen Ergebnisdatensatz zusammengeführt werden soll.
 
-Bei einer Reihe von Duplikat-Datensätzen können Sie beispielsweise die älteste Telefonnummer oder den neuesten Namen beibehalten.
+Bei einer Reihe von Duplikat-Datensätzen können Sie beispielsweise entscheiden, jeweils die älteste Telefonnummer oder den neuesten Namen beizubehalten.
 
 Ein Anwendungsfall, der diese Funktion nutzt, ist in [diesem Abschnitt](../../workflow/using/deduplication-merge.md) verfügbar.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Klicken Sie im Auswahlschritt **[!UICONTROL Deduplizierung-Duplikate method]** auf den Link **[!UICONTROL Advanced Parameters]**.
+1. Klicken Sie im Auswahlschritt **[!UICONTROL Deduplizierungsmethode]** auf den Link **[!UICONTROL Erweiterte Parameter]**.
 
    ![](assets/dedup1.png)
 
-1. Wählen Sie die Option **[!UICONTROL Datensätze zusammenführen]**, um die Funktion zu aktivieren.
+1. Wählen Sie die Option **[!UICONTROL Datensätze zusammenführen]** aus, um die Funktion zu aktivieren.
 
-   Wenn Sie mehrere Datenfelder in jeder Zusammenführungsbedingung gruppieren möchten, aktivieren Sie die Option **[!UICONTROL Verwenden Sie mehrere zusammenführende Kriterien für Datensätze]**.
+   Wenn Sie mehrere Datenfelder in jeder Zusammenführungsbedingung gruppieren möchten, aktivieren Sie die Option **[!UICONTROL Mehrere Kriterien für die Zusammenführung von Datensätzen verwenden]**.
 
    ![](assets/dedup2.png)
 
-1. Nach Aktivierung der Funktion wird der Aktivität **[!UICONTROL Deduplizierung-Duplikate]** die Registerkarte **[!UICONTROL Zusammenführen]** hinzugefügt. Damit können Sie Gruppen von Feldern definieren, die zusammengeführt werden sollen, und die zugehörigen Regeln.
+1. Nach Aktivierung der Funktion wird der Aktivität **[!UICONTROL Deduplizierung]** die Registerkarte **[!UICONTROL Zusammenführen]** hinzugefügt. Damit können Sie Gruppen von Feldern definieren, die zusammengeführt werden sollen, sowie die zugehörigen Regeln.
 
-   Weitere Informationen hierzu finden Sie im speziellen Anwendungsfall unter [dieser Abschnitt](../../workflow/using/deduplication-merge.md).
+   Weitere Informationen hierzu finden Sie im Anwendungsfall in [diesem Abschnitt](../../workflow/using/deduplication-merge.md).
 
    ![](assets/dedup3.png)
 
