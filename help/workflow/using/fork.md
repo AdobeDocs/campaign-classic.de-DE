@@ -17,14 +17,14 @@ ht-degree: 54%
 
 # Verzweigung{#fork}
 
-Mit der **[!UICONTROL Verzweigungsaktivität]** können Sie mehrfache ausgehende Transitionen erstellen, um mehrere Aktivitäten unabhängig im selben Workflow durchzuführen.
+Mit der **[!UICONTROL Verzweigungsaktivität]** können Sie mehrfache ausgehende Transitionen erstellen, um mehrere Aktivitäten unabhängig voneinander im selben Workflow durchzuführen.
 
 Beispielsweise können Sie die Aktivität nach einer Abfrage verwenden, um zwei parallele Aktionen auszuführen:
 
 * Speichern Sie das Ergebnis der Abfrage in einer Audience,
-* Führen Sie eine Segmentierung für das Ergebnis aus, um mehrere Lieferungen zu zu senden.
+* Führen Sie eine Segmentierung für das Ergebnis aus, um mehrere Sendungen durchzuführen.
 
-Beispielsweise können Sie die Aktivität im Rahmen der Automatisierung der Inhaltserstellung und des Versands verwenden, um die Zielgruppenberechnung und Inhaltserstellung gleichzeitig zu starten. Ein spezielles Anwendungsbeispiel wird in [diesem Abschnitt](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) gegeben.
+Sie können die Aktivität auch im Rahmen der Automatisierung der Inhaltserstellung und des Versands verwenden, um die Zielgruppenberechnung und Inhaltserstellung gleichzeitig zu starten. Ein spezielles Anwendungsbeispiel wird in [diesem Abschnitt](../../delivery/using/automating-via-workflows.md#creating-the-delivery-and-its-content) beschrieben.
 
 >[!IMPORTANT]
 >
