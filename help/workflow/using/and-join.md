@@ -6,11 +6,11 @@ description: Und-Verknüpfung
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Beispielsweise können Sie eine Und-Verknüpfungsaktivität bei der Inhaltserste
 
 >[!NOTE]
 >
->Beachten Sie, dass eingehende Transitionen, die mit verschiedenen Zielgruppendimensionen konfiguriert sind, nicht mit einer **[!UICONTROL AND-join]**-Aktivität zusammengeführt werden können.
+>Beachten Sie, dass eingehende Transitionen, die mit verschiedenen Zielgruppenbestimmungsdimensionen konfiguriert sind, nicht mit der Aktivität **[!UICONTROL Und-Verknüpfung]** zusammengeführt werden können.
 
 Die an die ausgehende Transition übermittelte Population entspricht der Hauptmenge, die zuvor aus den eingehenden Transitionen der Aktivität bestimmt wurde.
 
