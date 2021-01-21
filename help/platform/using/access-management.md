@@ -6,11 +6,11 @@ description: Zugriffsverwaltung
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3179'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Der technische Benutzer &#39;webapp&#39; verfügt standardmäßig über die spez
 
 >[!NOTE]
 >
->Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://helpx.adobe.com/campaign/kb/acc-security.html).
+>Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
 
 ## Benutzergruppen {#operator-groups}
 
@@ -454,4 +454,4 @@ werden folgende Sendungen in der Ansicht angezeigt:
 
 >[!NOTE]
 >
->Bei der Verwaltung der Ereignis [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md) dürfen die Ordner **[!UICONTROL Echtzeit-Ereignis]** oder **[!UICONTROL Batch-Ereignis]** nicht als Ansichten auf den Ausführungsinstanzen festgelegt werden, da dies zu Problemen mit den Rechten führen kann. Weitere Informationen zur Ereignis-Sammlung finden Sie in [diesem Abschnitt](../../message-center/using/event-collection.md).
+>Bei der Verwaltung von Ereignissen des Typs [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md) dürfen die Ordner **[!UICONTROL Echtzeitereignis]** oder **[!UICONTROL Batch-Ereignis]** auf den Ausführungsinstanzen nicht als Ansichten festgelegt werden, da dies zu Problemen mit den Zugriffsrechten führen kann. Weiterführende Informationen zum Sammeln von Ereignissen finden Sie in [diesem Abschnitt](../../message-center/using/event-collection.md).
