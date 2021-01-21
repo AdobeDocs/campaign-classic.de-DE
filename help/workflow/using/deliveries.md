@@ -6,18 +6,18 @@ description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendun
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7cd76b5a31ed9fc0e64a650316ea29293c628233
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Sendungen{#deliveries}
 
-Die unten aufgeführten Workflows werden standardmäßig mit dem Modul **Versand** installiert.
+Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** installiert.
 
 <table> 
  <tbody> 
