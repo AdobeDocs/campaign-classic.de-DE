@@ -5,11 +5,11 @@ title: Festlegen der richtigen Audience
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe7ff64d24113e026a47aa1c9f08daacce2b383e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '480'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,8 +65,8 @@ Die Deduplizierung von Adressen schützt Ihre Reputation und gewährleistet eine
 
 **Verwandte Themen:**
 
-* [Aktivität](../../workflow/using/deduplication.md) des Deduplizierung-Duplikate.
-* [Verwendungsfall: Verwenden der Zusammenführungsfunktion der Deduplizierung-Duplikate-Aktivität](../../workflow/using/deduplication-merge.md)
+* [Aktivität „Deduplizierung“](../../workflow/using/deduplication.md).
+* [Anwendungsfall: Verwenden der Zusammenführungsfunktion der Aktivität „Deduplizierung“](../../workflow/using/deduplication-merge.md)
 
 ## Indizieren von E-Mail-Adressen {#index-addresses}
 
