@@ -6,11 +6,11 @@ description: Zugriff auf Assets konfigurieren
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d5d4b87bae44ce0a93458f79179434a5bf315c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Der folgende Abschnitt beschreibt die in Adobe Campaign erforderlichen Konfigura
 
 >[!NOTE]
 >
->Wenn beide Packages (**[!UICONTROL Integration mit Adobe Experience Manager]** und **[!UICONTROL Integration mit Adobe Experience Cloud]**) installiert sind, können standardmäßig nur die Assets aus der Adobe Experience Cloud-Bibliothek verwendet werden. Um dennoch Zugriff zur AEM-Assets-Bibliothek zu erhalten, ist die Synchronisation von AEM Assets mit Adobe Experience Cloud zu konfigurieren. Auf diese Weise werden die AEM-Assets in der Adobe Experience Cloud-Bibliothek zugänglich. Weiterführende Hinweise bezüglich der Synchronisation von AEM Assets mit Adobe Experience Cloud finden Sie im [entsprechenden Handbuch](https://docs.adobe.com/docs/en/aod/overview/collaborating/aem-assets-aod-sync.html).
+>Wenn beide Packages (**[!UICONTROL Integration mit Adobe Experience Manager]** und **[!UICONTROL Integration mit Adobe Experience Cloud]**) installiert sind, können standardmäßig nur die Assets aus der Adobe Experience Cloud-Bibliothek verwendet werden. Um dennoch Zugriff zur AEM-Assets-Bibliothek zu erhalten, ist die Synchronisation von AEM Assets mit Adobe Experience Cloud zu konfigurieren. Auf diese Weise werden die AEM-Assets in der Adobe Experience Cloud-Bibliothek zugänglich. Weiterführende Hinweise bezüglich der Synchronisation von AEM Assets mit Adobe Experience Cloud finden Sie im [entsprechenden Handbuch](https://docs.adobe.com/docs/de/aod/overview/collaborating/aem-assets-aod-sync.html).
 
 ## Integration mit Experience Cloud Assets {#integrating-with-experience-cloud-assets}
 
@@ -68,6 +68,6 @@ Beim Einfügen von Bildern in Versandinhalte auf der Basis dieser Vorlage haben 
 
 >[!NOTE]
 >
->Wenn das Package **[!UICONTROL Integration mit Adobe Experience Cloud]** installiert ist, können standardmäßig nur die Assets aus der Adobe Experience Cloud-Bibliothek verwendet werden. Um dennoch Zugriff zur AEM-Assets-Bibliothek zu erhalten, ist die Synchronisation von AEM Assets mit Adobe Experience Cloud zu konfigurieren. Auf diese Weise werden die AEM-Assets in der Adobe Experience Cloud-Bibliothek zugänglich. In diesem besonderen Fall ist die Erstellung einer spezifischen Versandvorlage nicht erforderlich. Weiterführende Hinweise bezüglich der Synchronisation von AEM Assets mit Adobe Experience Cloud finden Sie im [entsprechenden Handbuch](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/configure-assets-cc-integration.html#integration).
+>Wenn das Package **[!UICONTROL Integration mit Adobe Experience Cloud]** installiert ist, können standardmäßig nur die Assets aus der Adobe Experience Cloud-Bibliothek verwendet werden. Um dennoch Zugriff zur AEM-Assets-Bibliothek zu erhalten, ist die Synchronisation von AEM Assets mit Adobe Experience Cloud zu konfigurieren. Auf diese Weise werden die AEM-Assets in der Adobe Experience Cloud-Bibliothek zugänglich. In diesem besonderen Fall ist die Erstellung einer spezifischen Versandvorlage nicht erforderlich. Weiterführende Hinweise bezüglich der Synchronisation von AEM Assets mit Adobe Experience Cloud finden Sie im [entsprechenden Handbuch](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/configure-assets-cc-integration.html?lang=de#integration).
 
 
