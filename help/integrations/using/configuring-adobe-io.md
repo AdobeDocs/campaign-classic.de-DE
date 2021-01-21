@@ -9,11 +9,11 @@ topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 55ca41bfcacbd75846901474ae6f012dfdc8d1a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '469'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -26,32 +26,32 @@ ht-degree: 69%
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
-Diese Integration gilt nur ab den Versionen **Campaign Classic 20.3, 20.2.4, 19.1.8 und Gold Standard 11**.
+Diese Integration gilt nur ab **Campaign Classic-Version 20.3, 20.2.4, 19.1.8 und Gold Standard-Version 11**.
 
-Bevor Sie mit der Implementierung beginnen, benötigen Sie Folgendes:
+Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vorhanden ist:
 
-* eine gültige **Organisationskennung**: Die Organisations-ID des Identity Management Systems (IMS) ist die eindeutige Kennung innerhalb des Adobe Experience Cloud, die beispielsweise für den VisitorID-Dienst und das IMS Single-Sign-On (SSO) verwendet wird. [Mehr dazu](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html)
-* a **Entwicklerzugriff** auf Ihr Unternehmen.  Sie müssen die Systemadministratorberechtigungen für die IMS-Organisation anfordern, um diesen Zugriff nach dem [auf dieser Seite](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) beschriebenen Verfahren für alle Produktprofile bereitzustellen zu können.
+* eine gültige **Organisationskennung**: Die IMS-Organisationskennung (Identity Management System) ist die eindeutige Kennung innerhalb von Adobe Experience Cloud, die z. B. für den Besucher-ID-Dienst und die einfache Anmeldung (Single Sign-on, SSO) verwendet wird, [Mehr dazu](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de)
+* ein **Entwicklerzugriff** auf Ihr Unternehmen. Sie müssen die Systemadministratorberechtigungen für die IMS-Organisation anfordern, um diesen Zugriff nach dem [auf dieser Seite](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) beschriebenen Verfahren für alle Produktprofile bereitzustellen zu können.
 >
 ## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
 
-1. Greifen Sie auf Adobe I/O zu und melden Sie sich mit der Systemverwaltungsrechten für die IMS-Organisation an.
+1. Rufen Sie Adobe I/O auf und melden Sie sich mit der Systemadministratorberechtigung für die IMS-Organisation an.
 
    >[!NOTE]
    >
-   > Vergewissern Sie sich, dass Sie beim richtigen Organisationsportal angemeldet sind.
+   > Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
 
-1. Entnehmen Sie die vorhandene Integrations-Client-ID aus der Konfigurationsdatei &quot;ims/authIMSTAClientId&quot; der Instanz. Nicht vorhandenes oder leeres Attribut zeigt an, dass die Client-ID nicht konfiguriert ist.
+1. Entnehmen Sie die vorhandene Integrations-Client-ID aus der Konfigurationsdatei „ims/authIMSTAClientId“ der Instanz. Ist das Attribut nicht vorhanden oder leer, bedeutet dies, dass die Client-Kennung nicht konfiguriert ist.
 
    >[!NOTE]
    >
-   >Wenn Ihre Client-ID leer ist, können Sie direkt **[!UICONTROL Neues Projekt]** in Adobe I/O erstellen.
+   >Wenn die Client-Kennung leer ist, können Sie in Adobe I/O direkt ein **[!UICONTROL neues Projekt erstellen]**.
 
-1. Identifizieren Sie das vorhandene Projekt mithilfe der extrahierten Client-ID. Suchen Sie nach vorhandenen Projekten mit derselben Client-ID wie im vorherigen Schritt extrahiert.
+1. Identifizieren Sie das vorhandene Projekt mit der gefundenen Client-ID. Suchen Sie nach bestehenden Projekten, die dieselbe Client-Kennung aufweisen wie die im vorherigen Schritt entnommene.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
-1. Wählen Sie **[!UICONTROL + Add to Project]** (+ Zu Projekt hinzufügen) und dann **[!UICONTROL API]**.
+1. Wählen Sie **[!UICONTROL + Zu Projekt hinzufügen]** und dann **[!UICONTROL API]**.
 
    ![](assets/do-not-localize/adobe_io_1.png)
 
