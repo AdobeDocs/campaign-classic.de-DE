@@ -6,11 +6,11 @@ description: Dieser Abschnitt enthält allgemeine Informationen zum Mobile-App-K
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '758'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,10 +51,10 @@ Sie können das Verhalten der Anwendung dahingehend konfigurieren, dass dem Empf
 >[!CAUTION]
 >
 >* Stellen Sie sicher, dass die an Mobile Apps gesendeten Benachrichtigungen den von Apple (Apple Push Notification Service) bzw. Google (Firebase Cloud Messaging) gestellten Anforderungen entsprechen.
->* In manchen Ländern ist es gesetzlich vorgeschrieben, die Benutzer Ihrer Mobile Apps über die Natur und den Zweck der erhobenen Daten zu unterrichten. Prüfen Sie die jeweiligen gesetzlichen Regelungen.
+>* Warnung: In manchen Ländern ist es gesetzlich vorgeschrieben, die Benutzer Ihrer Mobile Apps über die Art der erhobenen Daten und den Zweck der Erhebung zu informieren. Prüfen Sie die jeweiligen gesetzlichen Regelungen.
 
 
-Der Arbeitsablauf **[!UICONTROL NMAC Opt-out Management]** (mobileAppOptOutMgt) aktualisiert Benachrichtigungs-Abmeldungen auf Mobilgeräten. Weitere Informationen zu diesem Arbeitsablauf finden Sie in der [Liste der Technischen Workflows](../../workflow/using/about-technical-workflows.md).
+Der Workflow **[!UICONTROL NMAC Opt-out Management]** (mobileAppOptOutMgt) aktualisiert das Abmelden von Benachrichtigungen auf Smartphones und Tablets. Weitere Informationen zu diesem Workflow finden Sie in der [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
 
 Adobe Campaign ist sowohl mit binärem als auch HTTP/2-basiertem APNS kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
