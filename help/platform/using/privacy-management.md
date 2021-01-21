@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über die Datenschutzverwaltung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86b2d377c66e79cf4f10053f588796b95e6877e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Hier sind die fünf Hauptfunktionen von Adobe Campaign, um die Unterstützung de
 
 ![](assets/privacy-gdpr-use-cases.png)
 
-Weitere Informationen hierzu finden Sie unter [Recht auf Zugriff und Recht auf Vergessen](#right-access-forgotten) und [Einverstanden, Bestehen und Rollen](#consent-retention-roles).
+Weitere Informationen hierzu finden Sie unter [Recht auf Zugriff und Recht auf Vergessenwerden](#right-access-forgotten) und unter [Einverständnis, Datenbeibehaltung und Benutzerrollen](#consent-retention-roles).
 
 <!--This section presents general information on what Privacy management is and the features provided by Adobe Campaign to manage the [Right to Access and Right to be Forgotten](#right-access-forgotten).
 
