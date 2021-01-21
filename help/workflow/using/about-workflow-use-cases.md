@@ -35,7 +35,7 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](../../workflow/using/email-enrichment-with-custom-date-fields.md)
 * [Automatisieren der Inhaltserstellung, -bearbeitung und -veröffentlichung](../../delivery/using/automating-via-workflows.md#examples)
 
-## Monitoring      {#monitoring}
+## Monitoring       {#monitoring}
 
 <img src="assets/do-not-localize/icon_monitoring.svg" width="60px">
 
