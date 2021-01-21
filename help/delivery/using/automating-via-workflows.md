@@ -6,11 +6,11 @@ description: Automatisierung mit Workflows
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1198'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
 
-## Beispiele    {#examples}
+## Beispiele     {#examples}
 
 ### Erstellung und Versand eines Inhalts automatisieren {#automating-content-creation-and-delivery}
 
@@ -200,7 +200,7 @@ Der folgende Workflow entspricht dem ersten Beispiel, beginnt jedoch mit der Ers
 
 In der ersten **Versanderstellung**-Aktivität wird der Versand konfiguriert.
 
-Mit der Gabel-Aktivität können Sie die Berechnung der Zielgruppe und die Erstellung der Inhaltsinstanz parallel starten.
+Die Verzweigung ermöglicht die parallele Ausführung der Zielgruppenberechnung und der Erstellung der Inhaltsinstanz.
 
 Nach Abschluss dieser beiden Aktivitäten aktiviert die Und-Verknüpfung die **Versand**-Aktivität mit dem Inhalt und der Zielgruppe, die zuvor definiert wurden.
 
