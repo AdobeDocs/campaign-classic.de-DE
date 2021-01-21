@@ -6,20 +6,20 @@ description: Transaktionsnachrichten-Versand
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1788346f7dfe2c18c490363c90358fcb737f1646
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 
 # Transaktionsnachrichten-Versand{#delivery-execution}
 
-## Transaktionsnachricht senden {#transactional-message-send}
+## Senden von Transaktionsnachrichten {#transactional-message-send}
 
-Sobald die Anreicherung abgeschlossen ist und eine Versandvorlage mit dem Ereignis verknüpft wurde, erfolgt der Versand in der Ausführungsinstanz.
+Sobald der Schritt der Anreicherung abgeschlossen ist und eine Versandvorlage mit dem Ereignis verknüpft wurde, erfolgt der Versand in der Ausführungsinstanz.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Alle Sendungen werden im Ordner **[!UICONTROL Administration > Betreibung > Mess
 
 ![](assets/messagecenter_deliveries_execinstances_001.png)
 
-Sie werden standardmäßig in Unterordnern nach Versandmonat gruppiert. Diese Gruppierung kann in den Eigenschaften der jeweiligen Nachrichtenvorlage wie im folgenden Beispiel geändert werden:
+Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Diese Gruppierung kann in den Eigenschaften der jeweiligen Nachrichtenvorlage wie im folgenden Beispiel geändert werden:
 
 ![](assets/messagecenter_deliveries_properties_001.png)
 
@@ -37,15 +37,15 @@ Sie werden standardmäßig in Unterordnern nach Versandmonat gruppiert. Diese Gr
 >
 >Bei gehosteten oder hybriden Installationen können nach einem Upgrade auf den Enhanced MTA auch alle Transaktionsmeldungen mit dem Adobe Campaign Enhanced MTA gesendet werden, um die Zustellbarkeit, den Durchsatz und die Bearbeitung von Bounces zu verbessern. Alle Folgen sind dieselben wie bei standardmäßigen Marketing-Nachrichten und werden im Dokument [Adobe Campaign Enhanced MTA](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html) beschrieben.
 
-## Überwachung der Transaktionsnachricht {#transactional-message-monitoring}
+## Überwachung der Transaktionsnachrichten {#transactional-message-monitoring}
 
-Um Ihre Transaktionsnachrichten zu überwachen, überprüfen Sie die Versandlogs. Der Zugriff auf die Versandlogs wird in [diesem Abschnitt](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) angezeigt.
+Um Ihre Transaktionsnachrichten zu überwachen, überprüfen Sie die Versandlogs. Der Zugriff auf die Versandlogs wird in [diesem Abschnitt](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) beschrieben.
 
-Die von der Ausführungsinstanz gesendeten transaktionalen Versand werden durch einen technischen Arbeitsablauf (**[!UICONTROL Message Center-Ausführungsinstanz]**), der stündlich ausgeführt wird, wieder in die Kontrollinstanz synchronisiert.
+Die von der Ausführungsinstanz gesendeten Transaktionsnachrichten werden durch einen technischen Workflow (**[!UICONTROL Message Center-Ausführungsinstanz]**), der stündlich ausgeführt wird, wieder synchronisiert und in die Kontrollinstanz transferiert.
 
 >[!NOTE]
 >
->Die Versand sammeln die Ereignis wöchentlich auf der Grundlage der neuesten Ereignis-Aktualisierung und nicht am Erstellungsdatum des Ereignisses. Daher kann sich beim Extrahieren von transaktionalen Messaging-Versandlogs aus der Kontrollinstanz die mit jeder Versand-Protokoll-ID verknüpfte Versand-ID im Laufe der Zeit ändern, wenn das Protokoll aktualisiert wird (z. B. wenn ein eingehender Absprung für das Ereignis empfangen wird).
+>Die Sendungen sammeln die Ereignisse wöchentlich auf der Grundlage der neuesten Ereignisaktualisierung, und nicht am Erstellungsdatum des Ereignisses. Daher kann sich beim Extrahieren von Transaktionsnachrichten-Versandlogs in der Kontrollinstanz die mit jeder Versandlog-Kennung verknüpfte Versandkennung im Laufe der Zeit ändern, wenn das Log aktualisiert wird (z. B. wenn für das Ereignis ein eingehender Bounce empfangen wird).
 
 <!--The transactional deliveries sent from the execution instance are synchronized back to the control instance as follows.
 
