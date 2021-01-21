@@ -6,30 +6,30 @@ description: Veröffentlichung von Transaktionsnachrichtenvorlagen
 audience: message-center
 content-type: reference
 topic-tags: message-templates
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 02dee9c4cc03784ccc20f147f816798248bd10f2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
 
 # Vorlagenveröffentlichung{#template-publication}
 
-Wenn die auf der Kontrollinstanz erstellte Nachrichtenvorlage abgeschlossen ist, können Sie sie veröffentlichen. Dieser Vorgang wird auch auf allen Ausführungsinstanzen veröffentlicht.
+Wenn die auf der Kontrollinstanz erstellte Nachrichtenvorlage vollständig ist, können Sie sie veröffentlichen. Dieser Vorgang wird auch auf allen Ausführungsinstanzen veröffentlicht.
 
-Mit der Veröffentlichung können Sie automatisch zwei Meldungsvorlagen auf den Ausführungsinstanzen erstellen, mit denen Sie Nachrichten senden können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
+Bei der Veröffentlichung können Sie in den Ausführungsinstanzen automatisch zwei Nachrichtenvorlagen erstellen, um Nachrichten senden zu können, die mit Echtzeit- und Batch-Ereignissen verknüpft sind.
 
 >[!NOTE]
 >
->Beim Veröffentlichen von Transaktionsnachrichtenvorlagen werden Typologieregeln automatisch auch auf den Ausführungsinstanzen veröffentlicht.
+>Bei der Veröffentlichung der Transaktionsnachrichtenvorlagen werden auch die Typologieregeln automatisch auf den Ausführungsinstanzen veröffentlicht.
 
 >[!IMPORTANT]
 >
->Wenn Sie Änderungen an einer Vorlage vornehmen, stellen Sie sicher, dass Sie sie erneut veröffentlichen, damit diese Änderungen während des Versands der Transaktionsnachricht wirksam werden.
+>Wenn Sie an einer Vorlage Änderungen vornehmen, stellen Sie sicher, dass Sie sie erneut veröffentlichen, damit diese Änderungen während des Versands der Transaktionsnachricht wirksam werden.
 
-1. Wechseln Sie auf der Kontrollinstanz zum Ordner **[!UICONTROL Nachrichtencenter > Transaktionsnachrichtenvorlagen]** des Baums.
+1. Gehen Sie in der Kontrollinstanz im Navigationsbaum zu dem Ordner **[!UICONTROL Message Center > Transaktionsnachrichtenvorlagen]**.
 1. Wählen Sie die auf den Ausführungsinstanzen zu veröffentlichende Vorlage aus.
 1. Klicken Sie auf **[!UICONTROL Veröffentlichen]**.
 
@@ -43,6 +43,6 @@ Sobald eine Vorlage veröffentlicht wurde und das entsprechende Ereignis ausgel�
 
 >[!NOTE]
 >
->Wenn Sie ein vorhandenes Feld der Transaktionsnachrichtenvorlage, z. B. die Absenderadresse, durch einen leeren Wert ersetzen, wird das entsprechende Feld auf der/den Ausführungsinstanz(n) nicht aktualisiert, sobald die Transaktionsnachricht erneut veröffentlicht wurde. Es enthält weiterhin den vorherigen Wert.
+>Wenn Sie ein vorhandenes Feld der Transaktionsnachrichtenvorlage, z. B. die Absenderadresse, durch einen leeren Wert ersetzen, wird das entsprechende Feld auf der/den Ausführungsinstanz(en) nicht aktualisiert, sobald die Transaktionsnachricht erneut veröffentlicht wird. Es enthält weiterhin den vorherigen Wert.
 >
 >Wenn Sie jedoch einen nicht leeren Wert hinzufügen, wird das entsprechende Feld wie gewohnt nach der nächsten Veröffentlichung aktualisiert.
