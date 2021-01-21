@@ -7,9 +7,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: ht
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 531eb23ff8fe1b77c37a51e7f99921b0bc071f0f
 workflow-type: ht
-source-wordcount: '921'
+source-wordcount: '920'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 
 Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes verwenden:
 
-* Mindestens Adobe Campaign-Version 20.3 oder Gold Standard-Version 11
+* Mindestens Adobe Campaign-Version 20.3, 20.2.4, 19.1.8 oder Gold Standard-Version 11
 * Adobe Analytics Standard-Version
 
 Sie benötigen außerdem:
@@ -136,8 +136,8 @@ Die Liste der optionalen Parameter ist nachfolgend aufgeführt:
 | dumpStatePeriodSec | Der Zeitraum zwischen der Speicherung zweier Kopien des internen Statusprozesses im ```var/INSTANCE/pipelined.json.``` <br> Der interne Status ist hier auch auf Abruf verfügbar: ```http://INSTANCE:7781/pipelined/status``` |
 | forcedPipelineEndpoint | Deaktivieren der Erkennung und Erzwingen des PipelineServicesEndpoint |
 | monitorServerPort | Der Pipelined-Prozess überwacht, dass der Port den internen Statusprozess hier bereitstellt: ```http://INSTANCE:PORT/pipelined/status```. <br>Der Standardwert ist 7781. |
-| cursorFlushMessageCount | Sobald diese Anzahl von Nachrichten verarbeitet wurde, werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 1000. |
-| cursorFlushPeriodSec | Nach diesem Zeitraum werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 5 (Sekunden). |
+| pointerFlushMessageCount | Sobald diese Anzahl von Nachrichten verarbeitet wurde, werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 1000. |
+| pointerFlushPeriodSec | Nach diesem Zeitraum werden die Versätze in der Datenbank gespeichert. <br>Der Standardwert ist 5 (Sekunden). |
 | processingJSThreads | Anzahl der dedizierten Threads, die Nachrichten mit benutzerdefinierten JS-Connectoren verarbeiten. <br>Der Standardwert ist 4. |
 | processingThreads | Anzahl der dedizierten Threads, die Nachrichten mit nativem Code verarbeiten. <br>Der Standardwert ist 4. |
 | retryPeriodSec | Verzögerung zwischen weiteren Zustellversuchen im Falle von Verarbeitungsfehlern. <br>Der Standardwert ist 30 (Sekunden). |
