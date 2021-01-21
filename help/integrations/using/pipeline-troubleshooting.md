@@ -6,11 +6,11 @@ description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 57093a687534ed1e7f77738ca233d4cc86cf40cf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '584'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 97%
 Ihre Version von Adobe Campaign Classic unterstützt die Pipeline nicht.
 
 1. Vergewissern Sie sich, dass das [!DNL pipelined]-Element in der Konfigurationsdatei vorhanden ist. Wenn nicht, bedeutet das, dass es nicht unterstützt wird.
-1. Upgrade auf Kampagne 20.3 oder Gold Standard 11.
+1. Upgrade auf Campaign 20.3 oder Gold Standard 11.
 
 **Pipeline schlägt fehl mit der Fehlermeldung &quot;aurait dû kommencer par `[` ou `{` (iRc=16384)&quot;**
 
@@ -84,4 +84,4 @@ Im Allgemeinen kann es 15–90 Minuten dauern, bis eine Marketing-Kampagne gesta
 1. Überprüfen Sie, ob der [!DNL pipelined]-Prozess ausgeführt wird.
 1. Suchen Sie in &quot;pipelined.log&quot; nach Fehlern, die weitere Zustellversuche verursachen können. Beheben Sie die Fehler, falls zutreffend.
 1. Prüfen Sie die [!DNL pipelined]-Statusseite auf die Warteschlangengröße. Wenn der Warteschlangenumfang groß ist, optimieren Sie die Leistung des JS.
-1. Da die Verzögerung mit zunehmendem Volumen zu wachsen scheint, konfigurieren Sie die Auslöser in Analytics mit weniger Nachrichten.
+1. Da die Verzögerung mit zunehmender Anzahl wächst, konfigurieren Sie die Trigger in Analytics mit weniger Nachrichten.
