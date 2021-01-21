@@ -6,11 +6,11 @@ description: In diesem Abschnitt wird die Transaktionsnachrichten-Architektur vo
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2d30a70f8fbfb7a916638697c0f7a5060c2458ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1151'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -64,9 +64,9 @@ Wenn Sie mehrere Kanäle benötigen, müssen Sie die entsprechenden Packages ins
 
 ## Hinzufügen von Versandkanälen {#adding-a-delivery-channel}
 
-Das Hinzufügen eines Versand-Kanals (mobiler Kanal, mobiler App-Kanal usw.) muss vor der Installation des Transaktionsnachricht-Pakets durchgeführt werden.
+Das Hinzufügen eines Versandkanals (mobiler Kanal, mobiler App-Kanal usw.) muss vor der Installation des Transaktionsnachrichten-Packages durchgeführt werden.
 
-Adobe empfiehlt, dass Sie immer das Versand Kanal-Paket hinzufügen, bevor Sie das Transaktionsnachricht-Paket installieren.
+Adobe empfiehlt, immer das Versandkanal-Package hinzuzufügen, bevor Sie das Transaktionsnachrichten-Package installieren.
 
 Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestartet haben und dann während des Projekts entscheiden, einen neuen Kanal hinzuzufügen, können Sie die folgenden Schritte ausführen.
 
@@ -74,9 +74,9 @@ Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestarte
 >
 >Dieses Verfahren gilt nur für Kunden, die einen Windows NLServer verwenden, der auf demselben Computer installiert ist, auf dem sie arbeiten.
 
-1. Installieren Sie den benötigten Kanal, zum Beispiel den **Mobile-Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Werkzeuge > Erweitert > Package importieren... > Adobe-Campaign-Package]**).
-1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packaageCenter.xml** aus.
-1. Behalten Sie im Bereich **[!UICONTROL XML-Inhalt der zu importierenden Daten]** nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **Mobile-Kanal** gewählt haben, behalten Sie nur das Element **Entitäten** bei, das der Vorlage **[!UICONTROL Mobiltelefon-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile-App-Kanal** hinzugefügt haben, behalten Sie nur die Vorlagen **iOS-Transaktionsnachricht** (iosTriggerMessage) und **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
+1. Installieren Sie den benötigten Kanal, zum Beispiel den **mobilen Kanal**, mithilfe des Package-Import-Assistenten (**[!UICONTROL Tools > Erweitert > Package importieren... > Adobe Campaign-Package]**).
+1. Führen Sie einen Dateiimport durch (**[!UICONTROL Tools > Erweitert > Package-Import... > Datei]**) und wählen Sie die Datei **datakitnms **`[Your language]`**packagemessageCenter.xml** aus.
+1. Behalten Sie im Bereich **[!UICONTROL XML-Inhalt der zu importierenden Daten]** nur die Versandvorlage bei, die dem hinzugefügten Kanal entspricht. Wenn Sie beispielsweise den **mobilen Kanal** gewählt haben, behalten Sie nur das Element **Entitäten** bei, das der Vorlage **[!UICONTROL Mobil-Transaktionsnachricht]** (smsTriggerMessage) entspricht. Wenn Sie den **Mobile App-Kanal** hinzugefügt haben, behalten Sie nur die **iOS-Transaktionsnachricht** (iosTriggerMessage) und die **Android-Transaktionsnachricht** (androidTriggerMessage) bei.
 
    ![](assets/messagecenter_install_channel.png)
 
