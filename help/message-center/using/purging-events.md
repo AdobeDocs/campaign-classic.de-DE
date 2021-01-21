@@ -6,20 +6,20 @@ description: Ereignislöschung
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 
 # Ereignislöschung{#purging-events}
 
-Sie können den [Bereitstellungsassistenten](../../production/using/database-cleanup-workflow.md#deployment-wizard) verwenden, um zu konfigurieren, wie lange die Daten in der Datenbank gespeichert werden sollen.
+Die Dauer der Speicherung der Ereignisse in der Datenbank kann über den [Implementierungsassistenten](../../production/using/database-cleanup-workflow.md#deployment-wizard) konfiguriert werden.
 
-Die Bereinigung der Ereignisse wird automatisch vom Workflow [](../../production/using/database-cleanup-workflow.md)Datenbankbereinigung durchgeführt. Es handelt sich dabei um die in den Ausführungsinstanzen empfangenen und gespeicherten sowie die in der Kontrollinstanz mit Verlauf gespeicherten Ereignisse.
+Die Bereinigung der Ereignisse wird automatisch vom [Datenbankbereinigungs-Workflow](../../production/using/database-cleanup-workflow.md) durchgeführt. Gelöscht werden dabei die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in der Kontrollinstanz archivierten Ereignisse.
 
 Um die Bereinigungsparameter zu ändern, nutzen Sie die aufsteigenden und absteigenden Pfeile.
 
