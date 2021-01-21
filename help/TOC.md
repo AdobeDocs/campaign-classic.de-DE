@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ef502c023918baa1ae56b9619c7ab488ddf909e3
+source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2290'
 ht-degree: 96%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 96%
    + Datenimport und -export {#importing-and-exporting-data}
       + [Erste Schritte mit Datenimport und -export](platform/using/get-started-data-import-export.md)
       + [Importieren und Exportieren von Daten mit Workflows](platform/using/import-export-workflows.md)
-      + Arbeiten mit Generika-Importen und -Exporten {generic-importing-exports}
+      + Arbeiten mit generischen Importen und Exporten {#generic-imports-exports}
          + [Erste Schritte mit generischen Importen und Exporten](platform/using/about-generic-imports-exports.md)
          + [Erstellen von Import- und Exportvorlagen](platform/using/creating-import-export-templates.md)
          + [Erstellen von Import- und Exportaufträgen](platform/using/creating-import-export-jobs.md)
@@ -78,10 +78,10 @@ ht-degree: 96%
          + [Konfigurieren von Exportaufträgen](platform/using/executing-export-jobs.md)
          + [Überwachung der Auftragsausführung](platform/using/monitoring-jobs-execution.md)
          + [Allgemeine Beispiele für den Import](platform/using/import-operations-samples.md)
-      + Verwalten der Datenverschlüsselung und -komprimierung {managing-data-crypting-compression}
+      + Verwalten der Datenverschlüsselung und -komprimierung {#managing-data-encryption-compression}
          + [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](platform/using/unzip-decrypt.md)
          + [Komprimieren oder Verschlüsseln einer Datei vor der Verarbeitung](platform/using/zip-encrypt.md)
-      + Best Practices und Fehlerbehebung {#best-practices}
+      + Best Practices und Fehlerbehebung für {#best-practices}
          + [Best Practices importieren und exportieren](platform/using/import-export-best-practices.md)
          + [Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung](platform/using/sftp-server-usage.md)
    + Datenfilter {#filtering-data}
