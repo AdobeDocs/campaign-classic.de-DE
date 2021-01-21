@@ -281,7 +281,7 @@ Wenn alle Validierungen akzeptiert wurden, erhält der Versand den Status **[!UI
 
 >[!NOTE]
 >
->Die Technischen Workflows zum Campaign-Paket finden Sie unter [Liste der Technischen Workflows](../../workflow/using/about-technical-workflows.md).
+>Die technischen Workflows zum Campaign-Package finden Sie in der [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
 
 **1. Schritt - Datei validieren**
 
