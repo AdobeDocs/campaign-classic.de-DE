@@ -6,11 +6,11 @@ description: Geteilte Verbindung erstellen
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1047'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ Ausführungsinstanz zu er
 
 ## Ausführungsinstanz konfigurieren {#execution-instance}
 
-Damit die Kontrollinstanz eine Verbindung zur Ausführungsinstanz herstellen kann, ohne ein Kennwort angeben zu müssen, geben Sie einfach die IP-Adresse der Kontrollinstanz im Abschnitt **Nachrichtencenter** Zugriffsrechte ein. Leere Kennwörter sind jedoch standardmäßig verboten.
+Damit die Kontrollinstanz eine Verbindung zur Ausführungsinstanz herstellen kann, ohne ein Passwort angeben zu müssen, geben Sie einfach die IP-Adresse der Kontrollinstanz im Abschnitt &quot;Zugriffsberechtigungen&quot; im **Message Center** ein. Leere Passwörter sind jedoch standardmäßig nicht erlaubt.
 
 Um ein leeres Passwort zu verwenden, wechseln Sie zu den Ausführungsinstanzen und definieren Sie eine Sicherheitszone, die auf die IP-Adresse des Informationssystems beschränkt ist, das die Ereignisse bereitstellt. Diese Sicherheitszone muss leere Passwörter zulassen und `<identifier> / <password>`-Typverbindungen akzeptieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
