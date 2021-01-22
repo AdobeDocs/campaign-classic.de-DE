@@ -6,18 +6,18 @@ description: Campaign Classic-Kompatibilitätsmatrix für die Gold Standard-Vers
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: aabab5367ea4a26837fa3dc94a36fbbfa48d59e3
-workflow-type: ht
-source-wordcount: '509'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d25210f7f5c9378565ddacd39e4b1662d8204001
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 96%
 
 ---
 
 
 # Gold Standard-Kompatibilitätsmatrix{#compatibility-matrix-gs}
 
-In diesem Dokument sind alle Systeme und Komponenten aufgeführt, die für Builds der **Adobe Campaign Classic Gold Standard**-Version 19.1 unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
+In diesem Dokument sind alle Systeme und Komponenten aufgeführt, die für Builds der **Adobe Campaign Classic Gold Standard**-Version 19.1 unterstützt werden. Produkte und Versionen, die nicht zu dieser Liste gehören, sind nicht mit dieser Version von Adobe Campaign kompatibel.
 
 ## Wichtige Hinweise{#important-notes-gs}
 
@@ -118,6 +118,11 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 <table>
 <tbody>
 <tr>
+<td>Amazon Redshift</td>
+<td><p> </p>
+</td>
+</tr>
+<tr>
 <td>Oracle</td>
 <td>
 <p>18c</p>
@@ -202,7 +207,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 <tr>
 <td>Oracle</td>
 <td>
-<p>12c</p>
+<p>12 Cups</p>
 <p>11g</p>
 </td>
 </tr>
