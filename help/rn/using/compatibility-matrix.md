@@ -6,9 +6,9 @@ description: Campaign Classic – Kompatibilitätsmatrix
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
 ht-degree: 100%
 
@@ -178,7 +178,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 </td>
 </tr>
 <tr>
-<td>Microsoft Dynamics Connector</td>
+<td>Microsoft Dynamics-Connector</td>
 <td>
 <p>Web-API: Dynamics 365 On-Premise und Online</p>
 </td>
@@ -202,9 +202,9 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 Cups</p>
-<p>18 Cups</p>
-<p>12 Cups</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
