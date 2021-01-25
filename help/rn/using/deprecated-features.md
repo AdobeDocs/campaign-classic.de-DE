@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1632'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </tr>
   <tr>
   <td>CRM-Connectoren<br></td>
-   <td><p>Ab Kampagne 20.3 werden die folgenden CRM-Connectors mit Kampagne nicht mehr unterstützt:</p>
+   <td><p>Ab Campaign-Version 20.3 werden folgende CRM-Connectoren eingestellt.</p>
    <ul>
    <li>Soap-API – On-Premise: 2007, 2015, 2016</li>
    <li>Soap-API – Online: 2015, 2016</li>
