@@ -23,7 +23,7 @@ _23. Dezember 2020_
 
 >[!CAUTION]
 >
->Diese Version enthält ein neues Verbindungsprotokoll: Sowohl der Campaign-Server als auch die Client-Konsole müssen aktualisiert werden, damit nach dem 21. März 2021 eine Verbindung zu Campaign hergestellt werden kann.
+>Diese Version enthält ein neues Verbindungsprotokoll: Der Campaign-Server sowie die Client-Konsole müssen aktualisiert werden, damit nach dem 21. März 2021 eine Verbindung zu Campaign hergestellt werden kann.
 
 * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht.
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
