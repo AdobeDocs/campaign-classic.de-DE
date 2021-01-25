@@ -8,11 +8,11 @@ user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalü
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2290'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -68,27 +68,27 @@ ht-degree: 96%
       + [Profile im-/exportieren](platform/using/exporting-and-importing-profiles.md)
       + [Listen erstellen und verwalten](platform/using/creating-and-managing-lists.md)
    + Datenimport und -export {#importing-and-exporting-data}
-      + [Erste Schritte mit Datenimport und -export](platform/using/get-started-data-import-export.md)
+      + [Erste Schritte mit dem Datenimport und -export](platform/using/get-started-data-import-export.md)
       + [Importieren und Exportieren von Daten mit Workflows](platform/using/import-export-workflows.md)
-      + Arbeiten mit generischen Importen und Exporten {#generic-imports-exports}
-         + [Erste Schritte mit generischen Importen und Exporten](platform/using/about-generic-imports-exports.md)
+      + Arbeiten mit allgemeinen Importen und Exporten {#generic-imports-exports}
+         + [Erste Schritte mit allgemeinen Importen und Exporten](platform/using/about-generic-imports-exports.md)
          + [Erstellen von Import- und Exportvorlagen](platform/using/creating-import-export-templates.md)
-         + [Erstellen von Import- und Exportaufträgen](platform/using/creating-import-export-jobs.md)
-         + [Konfigurieren von Importaufträgen](platform/using/executing-import-jobs.md)
-         + [Konfigurieren von Exportaufträgen](platform/using/executing-export-jobs.md)
-         + [Überwachung der Auftragsausführung](platform/using/monitoring-jobs-execution.md)
+         + [Erstellen von Import- und Exportvorgängen](platform/using/creating-import-export-jobs.md)
+         + [Konfigurieren von Importvorgängen](platform/using/executing-import-jobs.md)
+         + [Konfigurieren von Exportvorgängen](platform/using/executing-export-jobs.md)
+         + [Überwachung der Vorgangsausführung](platform/using/monitoring-jobs-execution.md)
          + [Allgemeine Beispiele für den Import](platform/using/import-operations-samples.md)
-      + Verwalten der Datenverschlüsselung und -komprimierung {#managing-data-encryption-compression}
-         + [Datei vor der Verarbeitung dekomprimieren oder entschlüsseln](platform/using/unzip-decrypt.md)
+      + Verwalten von Datenverschlüsselung und -komprimierung {#managing-data-encryption-compression}
+         + [Dekomprimieren oder Entschlüsseln einer Datei vor der Verarbeitung](platform/using/unzip-decrypt.md)
          + [Komprimieren oder Verschlüsseln einer Datei vor der Verarbeitung](platform/using/zip-encrypt.md)
-      + Best Practices und Fehlerbehebung für {#best-practices}
-         + [Best Practices importieren und exportieren](platform/using/import-export-best-practices.md)
+      + Best Practices und Fehlerbehebung {#best-practices}
+         + [Best Practices beim Import und Export](platform/using/import-export-best-practices.md)
          + [Best Practices für die Nutzung von SFTP-Servern und die Fehlerbehebung](platform/using/sftp-server-usage.md)
    + Datenfilter {#filtering-data}
       + [Filteroptionen](platform/using/filtering-options.md)
       + [Filter erstellen](platform/using/creating-filters.md)
       + [Anwendungsbeispiel](platform/using/use-case.md)
-   + Abfragen erstellen {#creating-queries}
+   + Abfragen erstellen  {#creating-queries}
       + [Über Abfragen in Adobe Campaign](platform/using/about-queries-in-campaign.md)
       + [Schritte zum Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
       + [Filterbedingungen definieren](platform/using/defining-filter-conditions.md)
@@ -99,9 +99,9 @@ ht-degree: 96%
    + Connectoren {#connectors}
       + [Über Connectoren](platform/using/about-connectors.md)
       + CRM-Connectoren{#crm-connectors}
-         + [Erste Schritte mit CRM Connectors](platform/using/crm-connectors.md)
-         + [Verbindung mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-         + [Synchronisieren von Daten mit dem CRM](platform/using/crm-data-sync.md)
+         + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
+         + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
       + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
 + Nachrichten senden {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
@@ -361,7 +361,7 @@ ht-degree: 96%
       + [Konfigurieren von Ereignissen für benutzerdefinierte Implementierungen](integrations/using/events.md)
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
-+ Mit Workflows automatisieren {#automating-with-workflows}
++ Automatisierung mittels Workflows {#automating-with-workflows}
    + Erste Schritte mit Workflows {#introduction}
       + [Über Workflows](workflow/using/about-workflows.md)
       + [Über Aktivitäten](workflow/using/about-activities.md)
@@ -454,7 +454,7 @@ ht-degree: 96%
          + [Daten anreichern](workflow/using/enriching-data.md)
          + [Verwendung von Aggregaten](workflow/using/using-aggregates.md)
          + [Verwenden der Zusammenführungsfunktion der Deduplizierungs-Aktivität](workflow/using/deduplication-merge.md)
-         + [Einrichten eines wiederkehrenden Importarbeitsablaufs](workflow/using/recurring-import-workflow.md)
+         + [Einrichten eines Workflows für den wiederkehrenden Import](workflow/using/recurring-import-workflow.md)
       + Entwerfen von Abfragen {#designing-queries}
          + [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](workflow/using/quarterly-list-update.md)
       + Zielgruppenbestimmung {#designing-queries}
