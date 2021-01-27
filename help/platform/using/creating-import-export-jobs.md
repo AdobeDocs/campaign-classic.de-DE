@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Erstellen von Import- und Exportaufträgen
+title: Erstellen von Import- und Exportvorgängen
 description: Erfahren Sie, wie Sie Import- und Exportaufträge in Campaign Classic erstellen.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 28%
+ht-degree: 35%
 
 ---
 
 
-# Erstellen von Import- und Exportaufträgen {#creating-import-export-jobs}
+# Erstellen von Import- und Exportvorgängen {#creating-import-export-jobs}
 
 Nachdem die Vorlagen konfiguriert wurden, können Import- und Exportvorgänge in mehreren Kontexten in Adobe Campaign gestartet werden.
 
