@@ -5,10 +5,10 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 588e1e465eb5ba06f3a7310f70fe958ec2ec334f
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 100%
+source-wordcount: '291'
+ht-degree: 82%
 
 ---
 
@@ -19,14 +19,15 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
-* **[Entfernen falscher Hardbounces](https://helpx.adobe.com/de/campaign/kb/update-bounce-qualification.html)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Gmail-Ausfall aktualisieren können
+* **[Über IMS/Adobe ID verbinden? Aktualisieren Sie auf die neuesten Builds](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS verwenden, um eine Verbindung zur Kampagne herzustellen, müssen Sie ein Upgrade durchführen, um nach dem 21. März 2021** 2021 eine Verbindung zur Kampagne herstellen zu können.**
 
-* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsservice wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln
+* **[Kampagne Security ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> BulletinAktualisieren Sie auf die neuesten Builds, um Ihre Kampagne-Plattform zu sichern.
+
+* **[Entfernen falscher Hardbounces](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Gmail-Ausfall aktualisieren können
+
+* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsservice wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln.
 
 * **[Umstellung auf HTTP/2-basierte Provider-API für APNs](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> Erfahren Sie, wie Sie vom veralteten Binärprotokoll zur HTTP/2-basierten Provider-API für APNs migrieren
-
-* **[Hinzufügen von Emoticons zu Ihren Nachrichten](delivery/using/defining-the-email-content.md#inserting-emoticons)**<br/>
-Sie können Emoticons jetzt in Nachrichten und die Betreffzeile einfügen.
 
 * **[Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)**<br/>
 Zugriff auf häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuchen um Hilfe.
