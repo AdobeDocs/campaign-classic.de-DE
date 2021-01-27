@@ -6,9 +6,9 @@ description: Verwaltung von Aufgaben
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3901'
 ht-degree: 100%
 
@@ -436,6 +436,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
