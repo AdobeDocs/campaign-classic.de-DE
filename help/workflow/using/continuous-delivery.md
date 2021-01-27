@@ -6,9 +6,9 @@ description: Versand (fortlaufend)
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 
@@ -64,6 +64,6 @@ Bei einem fortlaufenden Versand wird EIN Versand erstellt. Versandlogs (Broadlog
 
 In diesem Video wird gezeigt, wie man einen fortlaufenden Versand mit einer inkrementellen Abfrage konfiguriert.
 
->[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25039?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
