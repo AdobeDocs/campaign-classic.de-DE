@@ -6,9 +6,9 @@ description: Datenpackages
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2528'
 ht-degree: 100%
 
@@ -405,7 +405,7 @@ Da die Typen jetzt definiert sind, sollte nun eine Namenskonvention festgelegt w
 * Kampagne: von 200 bis 299
 * Aktualisierung: 5000 bis 5999
 
-### Packages      {#data-packages}
+### Packages       {#data-packages}
 
 >[!NOTE]
 >
