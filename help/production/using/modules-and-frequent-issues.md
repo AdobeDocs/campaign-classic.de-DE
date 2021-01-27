@@ -76,7 +76,7 @@ Im Folgenden finden Sie eine Liste von Modulen, die von häufigen Problemen betr
   <tr> 
    <td> web </td> 
    <td> Anwendungsserver (HTTP und SOAP)<br /> </td> 
-   <td> Aktivieren Sie dieses Modul, wenn die Konsolen- und Webverbindungen nicht funktionieren, und lösen Sie einen <strong>xtk:session</strong>-Typfehler<br /> aus. </td> 
+   <td> Überprüfen Sie dieses Modul, wenn die Konsolen- und Webverbindungen nicht funktionieren und Trigger eines <strong>xtk:session</strong>-Typfehler<br /> </td> 
   </tr> 
   <tr> 
    <td> wfserver </td> 
