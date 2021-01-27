@@ -118,7 +118,7 @@ Es gibt vier Elementtypen im Adobe Campaign:`<element>`
 
    * &quot;definieren&quot;: Adobe Campaign löscht die Entität nicht, wenn sie über den Link referenziert wird
    * &quot;normal&quot;: Wenn Sie das Quellvorkommen löschen, werden die Schlüssel des Links beim Auftreten der Zielgruppe initialisiert (Standardmodus). Bei diesem Integritätsmodus werden alle Fremdschlüssel initialisiert
-   * &quot;own&quot;: Löschen des Quellvorkommens löscht das Löschen des Vorkommens der Zielgruppe
+   * &quot;own&quot;: Wenn Sie das Quellvorkommen löschen, wird das Löschen des Vorkommens der Zielgruppe Trigger
    * &quot;Kopie&quot;: ähnlich wie &quot;eigene&quot;(bei Löschung) oder Duplikate (bei Vervielfältigung)
    * &quot;neutral&quot;: tut nichts
 
