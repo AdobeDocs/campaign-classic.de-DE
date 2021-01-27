@@ -71,7 +71,7 @@ Das Problem kann verschiedene Ursachen haben. Gehen Sie wie folgt vor, um es zu 
 
    Um dieses Problem zu lösen, beenden Sie unerwünschte Workflows und löschen Sie fehlgeschlagene Versand. Wenn der Schwellenwert erreicht wurde, können neue Prozesse ausgeführt werden.
 
-   Um die Anzahl der Workflows zu überprüfen, die Ihre Instanz ausführt, sollten Sie die vordefinierten Ansichten verwenden, die standardmäßig im Ordner **[!UICONTROL Administration]** / **[!UICONTROL Audit]** verfügbar sind. Weitere Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
+   Um die Anzahl der Workflows zu überprüfen, die Ihre Instanz ausführt, sollten Sie die vordefinierten Ansichten verwenden, die standardmäßig im Ordner **[!UICONTROL Administration]** / **[!UICONTROL Audit]** verfügbar sind. Weitere Informationen dazu finden Sie auf [dieser Seite](../../workflow/using/monitoring-workflow-execution.md#filtering-workflows-status).
 
    >[!IMPORTANT]
    >
