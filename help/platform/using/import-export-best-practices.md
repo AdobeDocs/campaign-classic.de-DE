@@ -1,7 +1,7 @@
 ---
 solution: Campaign Standard
 product: campaign
-title: Best Practices importieren und exportieren
+title: Best Practices beim Import und Export
 description: Erfahren Sie mehr über die Best Practices, die beim Importieren oder Exportieren von Daten befolgt werden sollten.
 audience: automating
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
 
-# Best Practices für den Import und Export {#import-export-best-practices}
+# Best Practices beim Import und Export {#import-export-best-practices}
 
 Eine sorgfältige Arbeitsweise und die Befolgung der unten stehenden einfachen Regeln helfen Ihnen, die Datenbank konsistent zu halten und gängige Fehler bei der Datenbankaktualisierung oder beim Datenexport zu vermeiden.
 
