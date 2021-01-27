@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurieren von Exportaufträgen
+title: Konfigurieren von Exportvorgängen
 description: Erfahren Sie, wie Sie Exportaufträge in Campaign Classic konfigurieren und ausführen.
 audience: platform
 content-type: reference
@@ -15,7 +15,7 @@ ht-degree: 87%
 ---
 
 
-# Konfigurieren von Exportaufträgen {#executing-export-jobs}
+# Konfigurieren von Exportvorgängen {#executing-export-jobs}
 
 Mit den Exportaufträgen können Sie auf Daten aus der Datenbank zugreifen und diese extrahieren: Kontakte, Kunden, Listen, Segmente usw.
 
