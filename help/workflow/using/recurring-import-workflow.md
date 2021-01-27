@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
 
-# Einrichten eines wiederkehrenden Importarbeitsablaufs {#setting-up-a-recurring-import}
+# Einrichten eines Workflows für den wiederkehrenden Import {#setting-up-a-recurring-import}
 
 Die Verwendung einer Workflow-Vorlage ist eine Best Practice, wenn Sie regelmäßig Dateien mit derselben Struktur importieren müssen.
 
