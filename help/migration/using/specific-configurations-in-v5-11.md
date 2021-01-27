@@ -155,7 +155,7 @@ Die veralteten Ordner, die nach der Migration gelöscht werden sollen, lauten wi
 | ncmImage | Bilder | Content Manager installiert |
 | ncmJavascript | JavaScript-Codes | Content Manager installiert |
 | ncmJst | JavaScript-Templates | Content Manager installiert |
-| ncmParameters | Konfiguration        | Content Manager installiert |
+| ncmParameters | Konfiguration     | Content Manager installiert |
 | ncmSrcSchema | Datenschemata | Content Manager installiert |
 | ncmStylesheet | XSL-Stildateien | Content Manager installiert |
 | nmsAdminPlan | Administration | Kampagne installiert |
