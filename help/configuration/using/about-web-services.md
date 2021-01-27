@@ -117,7 +117,7 @@ In SOAP werden die Parameter in der Reihenfolge ihres Erscheinungsbilds erkannt.
 
 Das Ergebnis der Abfrage wird aus dem Element `<pdomoutput>` eingegeben.
 
-## Umgang mit Fehlern        {#error-management}
+## Umgang mit Fehlern      {#error-management}
 
 Beispiel für SOAP-Fehlerantwort:
 
