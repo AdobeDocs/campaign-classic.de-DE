@@ -8,9 +8,9 @@ user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalü
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2290'
 ht-degree: 100%
 
@@ -444,7 +444,7 @@ ht-degree: 100%
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring          {#monitoring}
+      + Monitoring           {#monitoring}
          + [Bericht-Versand an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Monitoring-Workflow](workflow/using/supervising-workflows.md)
          + [Benutzern personalisierte Warnungen senden](workflow/using/sending-personalized-alerts-to-operators.md)
