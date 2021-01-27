@@ -6,9 +6,9 @@ description: Layout
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 100%
 
@@ -69,7 +69,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
-* **content.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
+* **Inhalt.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
 * **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
 * **content.chapter`[0]`.@name**: gibt den Namen des ersten Elements von `<chapter>` aus
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
