@@ -312,7 +312,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> dbSchema<br /> </td> 
-   <td> Arbeitsbereich   <br /> </td> 
+   <td> Arbeitsbereich    <br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -2048,13 +2048,13 @@ Hier sind die verschiedenen Parameter des Knotens **pipelined**. Dies ist die Ko
    <td> 7781<br /> </td> 
   </tr> 
   <tr> 
-   <td> cursorFlushMessageCount<br /> </td> 
+   <td> pointerFlushMessageCount<br /> </td> 
    <td> Der Zeiger wird jedes Mal, wenn diese Anzahl von Nachrichten verarbeitet wird, in der Datenbank gespeichert.<br /> </td> 
    <td> <br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
   <tr> 
-   <td> cursorFlushPeriodSec<br /> </td> 
+   <td> pointerFlushPeriodSec<br /> </td> 
    <td> Verzögerung vor der Speicherung des Zeigers: Der Zeiger wird während dieser Zeit mindestens einmal in der Datenbank gespeichert (bei niedriger Aktivität nützlich).<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5<br /> </td> 
