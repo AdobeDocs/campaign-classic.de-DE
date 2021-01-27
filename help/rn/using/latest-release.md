@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 5b7639e7e64d4cb42d3ae77b04ba90a45fb58159
+source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
 workflow-type: tm+mt
-source-wordcount: '1915'
-ht-degree: 100%
+source-wordcount: '1941'
+ht-degree: 97%
 
 ---
 
@@ -31,6 +31,17 @@ _11. Januar 2021_
 ## ![](assets/do-not-localize/red_2.png) Version 20.3.1 – Build 9228 {#release-20-3-1-build-9228}
 
 _27. Oktober 2020_
+
+>[!CAUTION]
+>
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 21. März 2021 **eine Verbindung zur Kampagne herstellen können.**
+   >
+   > 
+* Diese Version enthält eine Sicherheitskorrektur: ein Upgrade erforderlich ist, um die Sicherheit Ihrer Umgebung zu erhöhen.
+
+>
+
+
 
 **Neue Funktionen**
 
@@ -71,10 +82,6 @@ _27. Oktober 2020_
 </tr> 
 </tbody> 
 </table>
-
->[!CAUTION]
->
->Diese Version enthält ein neues Verbindungsprotokoll: Sowohl der Campaign-Server als auch die Client-Konsole müssen aktualisiert werden, damit nach dem 21. März 2021 eine Verbindung zu Campaign hergestellt werden kann.
 
 **Verbesserungen bei der Sicherheit**
 
