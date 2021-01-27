@@ -6,9 +6,9 @@ description: Marketingkampagnen erstellen
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 100%
 
@@ -237,6 +237,6 @@ Jede periodische Kampagne enthält die gleichen Elemente und wird nach der Erste
 
 In diesem Video wird erklärt, wie man einen Marketing-Plan, Programme und Kampagnen erstellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35132?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
