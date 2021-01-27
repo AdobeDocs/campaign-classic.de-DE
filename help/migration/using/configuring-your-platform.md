@@ -123,7 +123,7 @@ Nach der Ausführung von **postupgrade** müssen die folgenden Elemente berücks
 
    Bei der Migration von einer v5.11-Plattform müssen Sie den Verfolgungsmodus konfigurieren. Weitere Informationen finden Sie im Abschnitt [Verfolgung](../../migration/using/specific-configurations-in-v5-11.md#tracking).
 
-* Startseite     
+* Startseite      
 
    Wenn Sie von einer v6.02-Plattform migrieren, können Sie zusätzliche Parameter definieren, um Ihre alte Startseite von v6.02 zu erhalten. Weitere Informationen finden Sie unter [Benutzerfreundlichkeit: Startseite und Navigation.](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation)
 
