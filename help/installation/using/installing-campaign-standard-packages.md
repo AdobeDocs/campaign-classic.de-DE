@@ -95,7 +95,7 @@ In der folgenden Tabelle werden alle in der Kampagne integrierten Pakete Liste.
    <td> Optional, <a href="https://helpx.adobe.com/campaign/kb/deprecated-and-removed-features.html">Learn More</a> </td> 
   </tr--> 
   <tr> 
-   <td> Soziale Netzwerke (Social Marketing) <br /> </td> 
+   <td> Social Media (Social Marketing) <br /> </td> 
    <td> Synchronisiert Adobe Campaign mit Twitter und Facebook. <a href="../../social/using/about-social-marketing.md">Mehr erfahren</a> <br /> </td> 
    <td> Alle</td> 
   </tr> 
