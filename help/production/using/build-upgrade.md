@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
 workflow-type: tm+mt
 source-wordcount: '2368'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -204,7 +204,7 @@ Die folgenden Dienste müssen wieder gestartet werden:
 
 ### Aktualisierung der Client-Konsolen
 
-Die Client-Konsole muss sich auf demselben Build wie die Serverinstanz befinden.
+Die Client-Konsole muss denselben Build haben wie die Server-Instanz.
 
 Laden Sie auf der Maschine, auf der der Adobe Campaign-Anwendungsserver installiert ist (nlserverweb), diese Datei herunter und kopieren Sie sie:
 
