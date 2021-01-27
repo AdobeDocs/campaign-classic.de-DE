@@ -21,7 +21,7 @@ Mit Adobe Campaign können Sie erfasste Webtracking-Informationen mit einem Empf
 
 >[!IMPORTANT]
 >
->Das Einrichten eines Anonym-Trackings auf einer Website kann die Erfassung einer erheblichen Anzahl von Trackinglogs auslösen und dadurch den Datenbankvorgang beeinträchtigen. Konfigurieren Sie es mit Vorsicht.\
+>Die Einrichtung eines Anonym-Trackings auf einer Website kann die Erfassung einer beträchtlichen Anzahl von Trackinglogs Trigger haben und somit den Datenbankvorgang beeinträchtigen. Konfigurieren Sie es mit Vorsicht.\
 >Trackinglogs werden bis zum Bereinigen der Verfolgungsdaten in der Datenbank gespeichert. Konfigurieren Sie die Bereinigungshäufigkeit mithilfe des Bereitstellungsassistenten. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#purging-data).
 
 Um das anonyme Webtracking auf Ihrer Instanz zu aktivieren, müssen die folgenden Elemente konfiguriert werden:
