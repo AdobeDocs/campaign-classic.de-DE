@@ -23,7 +23,7 @@ Adobe Campaign selbst ermöglicht zwar nicht die Verwaltung von archivierten Dat
 
 Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Remote-Server, z. B. einen SMTP-E-Mail-Server, übertragen. Das Archivierungsziel ist eine BCC-E-Mail-Adresse (für die Versand-Empfänger unsichtbar), die Sie angeben müssen.
 
-## Empfehlungen und Einschränkungen        {#recommendations-and-limitations}
+## Empfehlungen und Einschränkungen         {#recommendations-and-limitations}
 
 * Die BCC-Funktion für E-Mail ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 * Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die BCC-E-Mail-Adresse Ihrer Wahl muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfiguriert.
