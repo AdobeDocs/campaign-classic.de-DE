@@ -436,7 +436,7 @@ Adobe Campaign aktiviert verschiedene Bereitstellungskonfigurationen (weitere In
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring        </th> 
+   <th> Monitoring          </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -561,7 +561,7 @@ Dieses Element wird verwendet, um die Konfiguration von E-Mails, d.h.
    <buildRange minimum="0000" maximum="9999"/>
    ```
 
-* Sie können dem Element **`<sla>`** properties **ein (optionales) Unterelement hinzufügen.** Eine Protokolldatei wird jedes Mal generiert, wenn der netreport ausgeführt wird. Der Name der Datei enthält den Konfigurationsnamen sowie Datum und Uhrzeit, z. B. **dev_06_12_13_16_47_05.tmp**. Die Datei enthält die folgenden Informationen: Instanzname, Computername, Schweregrad, (0 bis 3, vom kritischsten zum kritischsten), Datum (Zeitstempelformat), Zeitraum (in Millisekunden) zwischen der Abfrage und der Antwort, Dienst verwendet (http, ncs, ncsex, redir). Diese Informationen werden am Ende jedes Dienstes durch Tabulatorzeichen und Zeilenumbrüche getrennt.
+* Sie können dem Element **properties** ein (optionales) Unterelement hinzufügen. **`<sla>`** Eine Protokolldatei wird jedes Mal generiert, wenn der netreport ausgeführt wird. Der Name der Datei enthält den Konfigurationsnamen sowie Datum und Uhrzeit, z. B. **dev_06_12_13_16_47_05.tmp**. Die Datei enthält die folgenden Informationen: Instanzname, Computername, Schweregrad, (0 bis 3, vom kritischsten zum kritischsten), Datum (Zeitstempelformat), Zeitraum (in Millisekunden) zwischen der Abfrage und der Antwort, Dienst verwendet (http, ncs, ncsex, redir). Diese Informationen werden am Ende jedes Dienstes durch Tabulatorzeichen und Zeilenumbrüche getrennt.
 
 >[!NOTE]
 >
