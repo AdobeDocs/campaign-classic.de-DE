@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Protokoll und Einstellungen für den SMS-Anschluss
+title: Protokoll und Einstellungen des SMS-Connectors
 description: Erfahren Sie mehr über den SMS-Connector und dessen Konfiguration.
 audience: delivery
 content-type: reference
@@ -10,49 +10,49 @@ translation-type: tm+mt
 source-git-commit: 96ad3208c792efb47097768bc779bec59d9ca313
 workflow-type: tm+mt
 source-wordcount: '2745'
-ht-degree: 0%
+ht-degree: 89%
 
 ---
 
 
 # SMS-Fehlerbehebung {#troubleshooting-sms}
 
-## Konflikt zwischen verschiedenen Externen Konti {#external-account-conflict}
+## Konflikt zwischen verschiedenen externen Konten {#external-account-conflict}
 
-Wenn die Instanz über mehrere SMS-Externe Konti verfügt, müssen Sie überprüfen, ob Probleme nicht durch einen Konflikt zwischen Externen Konti verursacht werden.
+Wenn die Instanz über mehrere externe SMS-Konten verfügt, müssen Sie sicherstellen, dass Probleme nicht durch einen Konflikt zwischen externen Konten verursacht werden.
 
-Adobe Campaign behandelt Externe Konti als nicht verbundene Entitäten.
+Adobe Campaign behandelt externe Konten als nicht verwandte Entitäten.
 
-Wenn Sie mehrere Konten haben, führen Sie dieses Verfahren aus, um das Externe Konto zu isolieren, das Probleme verursacht:
+Wenn Sie mehrere Konten haben, gehen Sie wie folgt vor, um das externe Konto zu isolieren, das Probleme verursacht:
 
-1. Deaktivieren Sie alle Externe Konti.
-1. Aktivieren Sie ein Externe Konto.
-1. Versuch, das Problem zu reproduzieren.
-1. Wenn das ursprüngliche Problem nicht immer auftritt, versuchen Sie es mit einer angemessenen Anzahl von Versuchen, bevor Sie abschließen.
-1. Wenn das Problem bei diesem einzelnen Konto nicht auftritt, deaktivieren Sie es und starten Sie beim nächsten Konto mit Schritt 2 neu.
+1. Deaktivieren Sie alle externen Konten.
+1. Aktivieren Sie ein externes Konto.
+1. Versuchen Sie, das Problem zu reproduzieren.
+1. Wenn das anfängliche Problem nicht immer auftritt, führen Sie eine angemessene Anzahl von Versuchen durch, bevor Sie Ihre Schlussfolgerung ziehen.
+1. Wenn das Problem bei diesem einen Konto nicht auftritt, deaktivieren Sie es und beginnen Sie erneut mit Schritt 2 beim nächsten Konto.
 
 Nachdem Sie jedes Konto einzeln geprüft haben, gibt es zwei mögliche Szenarien:
 
-* **Das Problem trat auf einem oder mehreren Konten auf**
+* **Das Problem trat bei einem oder mehreren Konten auf**
 
-   In diesem Fall können Sie für jedes Konto andere Verfahren zur Fehlerbehebung anwenden. Es ist am besten, andere Konten während der Diagnose eines Kontos zu deaktivieren, um den Netzwerkverkehr und die Anzahl der Protokolle zu reduzieren.
+   In diesem Fall können Sie für jedes Konto andere Verfahren zur Fehlerbehebung anwenden. Es ist am besten, andere Konten zu deaktivieren, während Sie ein Konto diagnostizieren, um den Netzwerk-Traffic und die Anzahl der Logs zu reduzieren.
 
-* **Das Problem wurde nicht angezeigt, wenn immer nur ein Konto aktiv war**
+* **Das Problem trat nicht auf, wenn jeweils nur ein Konto aktiv war**
 
-   Sie haben einen Konflikt zwischen Konten. Wie bereits erwähnt, behandelt Adobe Campaign Konten einzeln, aber der Anbieter kann sie als ein einziges Konto behandeln.
+   Es gibt einen Konflikt zwischen den Konten. Wie bereits erwähnt, behandelt Adobe Campaign die Konten einzeln, aber der Provider behandelt sie möglicherweise als ein einziges Konto.
 
-   * Sie verwenden verschiedene Kombinationen aus Login/Passwort zwischen all Ihren Konten.
-Sie müssen den Anbieter kontaktieren, um potenzielle Konflikte auf ihrer Seite zu diagnostizieren.
+   * Sie verwenden unterschiedliche Anmelde-/Kennwortkombinationen für alle Ihre Konten.
+Sie müssen den Provider kontaktieren, um potenzielle Konflikte auf dessen Seite zu diagnostizieren.
 
-   * Einige der Externe Konti verwenden dieselbe Kombination aus Benutzername und Kennwort.
-Der Anbieter kann nicht sagen, von welchem Externe Konto das `BIND PDU` kommt, daher behandeln sie alle Verbindungen aus mehreren Konten als ein einziges. Möglicherweise haben sie MO und SR zufällig über die beiden Konten geleitet, was Probleme verursacht hat.
-Wenn der Anbieter mehrere Kurzcodes für dieselbe Login-/Passwortkombination unterstützt, müssen Sie ihn fragen, wo er diesen Kurzcode in `BIND PDU` einfügen soll. Beachten Sie, dass diese Information in das `BIND PDU` und nicht in `SUBMIT_SM` eingefügt werden muss, da `BIND PDU` der einzige Ort ist, an dem Routing-MOs korrekt zulässig sind.
-Siehe den Abschnitt [Informationen in jeder Art von PDU](../../delivery/using/sms-protocol.md#information-pdu) weiter oben, um zu erfahren, welches Feld in `BIND PDU` verfügbar ist. Normalerweise fügen Sie den Kurzcode in `address_range` hinzu, was jedoch besondere Unterstützung vom Anbieter erfordert. Kontaktieren Sie sie, um zu erfahren, wie sie erwarten, mehrere Kurzcodes unabhängig zu routen.
-Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzcodes auf demselben Externe Konto.
+   * Einige der externen Konten verwenden dieselbe Anmelde-/Kennwortkombination.
+Der Anbieter kann nicht feststellen, von welchem externen Konto die `BIND PDU` stammt, also behandelt er alle Verbindungen von mehreren Konten als eine einzige. Möglicherweise wurden MO und SR wahllos über die beiden Konten geleitet, was zu Problemen führt.
+Wenn der Provider mehrere Kurzwahlnummern für dieselbe Anmelde-/Kennwortkombination unterstützt, müssen Sie ihn fragen, wo diese Kurzwahlnummer in die `BIND PDU` eingefügt werden soll. Beachten Sie, dass diese Information in die `BIND PDU` und nicht in `SUBMIT_SM` eingefügt werden muss, da nur in der `BIND PDU` eine korrekte Weiterleitung von MOs möglich ist.
+Siehe den Abschnitt [Informationen in den verschiedenen PDU-Arten](../../delivery/using/sms-protocol.md#information-pdu) weiter oben, um zu erfahren, welches Feld in `BIND PDU` verfügbar ist. Normalerweise fügen Sie die Kurzwahlnummer in `address_range` hinzu. Dies erfordert jedoch besondere Unterstützung durch den Provider. Wenden Sie sich an diesen, um zu erfahren, wie er mehrere Kurzwahlnummern unabhängig voneinander weiterleiten wird.
+Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselben externen Konto.
 
-## Problem mit Externe Konto im Allgemeinen {#external-account-issues}
+## Problem mit dem externen Konto im Allgemeinen {#external-account-issues}
 
-* Untersuchen Sie, ob der Connector kürzlich geändert wurde und von wem (prüfen Sie die Externe Konti als Gruppe).
+* Untersuchen Sie, ob und von wem der Connector kürzlich geändert wurde (überprüfen Sie die externen Konten als Gruppe).
 
    ```
    select saccount, (sserver ||':'||sport) as serverPort, iextaccountid, CASE WHEN N0.iactive=1 THEN 'Yes' ELSE 'No' END as "(x) Enabled",
@@ -66,8 +66,8 @@ Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzcodes auf demselben Ex
    from nmsextaccount N0 LEFT JOIN xtkoperator X0 ON (N0.icreatedbyid=X0.ioperatorid) order by 8 DESC LIMIT 50;
    ```
 
-* Untersuchen Sie (im Verzeichnis /nach der Aktualisierung), ob und wann das System aktualisiert wurde
-* Untersuchen Sie, ob möglicherweise kürzlich aktualisierte Pakete mit SMS-Unterstützung (/var/log/dpkg.log) installiert wurden.
+* Untersuchen Sie (im Verzeichnis &quot;/postupgrade&quot;), ob und wann das System aktualisiert wurde.
+* Untersuchen Sie, ob Pakete, die sich auf SMS auswirken, kürzlich aktualisiert wurden (/var/log/dpkg.log).
 
 ## Problem mit Mid-Sourcing (gehostet){#issue-mid-sourcing}
 
@@ -75,205 +75,205 @@ Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzcodes auf demselben Ex
 
 * Wenn alles auf dem Mid-Server funktioniert und SMS ordnungsgemäß gesendet werden, die Marketing-Instanz jedoch nicht ordnungsgemäß aktualisiert wurde, kann es zu einem Mid-Synchronisierungsproblem kommen.
 
-## Problem beim Herstellen einer Verbindung mit dem Anbieter {#issue-provider}
+## Problem beim Herstellen einer Verbindung zum Provider {#issue-provider}
 
-* Wenn `BIND PDU` einen Nicht-Null-`command_status`-Code zurückgibt, fragen Sie den Anbieter nach weiteren Informationen.
+* Wenn die `BIND PDU` einen `command_status`-Code ungleich Null zurückgibt, fragen Sie den Provider nach weiteren Informationen.
 
-* Vergewissern Sie sich, dass das Netzwerk ordnungsgemäß konfiguriert ist, damit die TCP-Verbindung mit dem Anbieter hergestellt werden kann.
+* Überprüfen Sie, ob das Netzwerk ordnungsgemäß konfiguriert ist, damit die TCP-Verbindung zum Provider hergestellt werden kann.
 
-* Bitten Sie den Anbieter, zu überprüfen, ob die IPs der Zulassungsliste der Adobe Campaign-Instanz ordnungsgemäß hinzugefügt wurden.
+* Bitten Sie den Provider, zu überprüfen, ob die IP-Adressen ordnungsgemäß zur Zulassungsliste der Adobe Campaign-Instanz hinzugefügt wurden.
 
-* Überprüfen Sie die Einstellungen für **Externe Konto**. Fragen Sie den Anbieter nach dem Wert der Felder.
+* Überprüfen Sie die Einstellungen für **externe Konten**. Fragen Sie den Provider nach dem Wert der Felder.
 
-* Wenn die Verbindung erfolgreich, aber instabil ist, überprüfen Sie den Abschnitt [Problem mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Wenn die Verbindung erfolgreich, aber instabil ist, lesen Sie den Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
 
-* Wenn Verbindungsprobleme schwer zu diagnostizieren sind, kann eine Netzwerkerfassung Informationen liefern. Stellen Sie sicher, dass die Netzwerkerfassung gleichzeitig ausgeführt wird, während das Problem angezeigt wird, damit es effizient analysiert werden kann. Beachten Sie auch den genauen Zeitpunkt, zu dem das Problem auftritt.
+* Wenn Verbindungsprobleme schwer zu diagnostizieren sind, kann eine Netzwerkaufzeichnung Informationen liefern. Achten Sie darauf, dass die Netzwerkaufzeichnung läuft, während das Problem auftritt, damit es effizient analysiert werden kann. Sie sollten auch den genauen Zeitpunkt notieren, zu dem das Problem auftritt.
 
-## Probleme mit der instabilen Verbindung {#issues-unstable-connection}
+## Probleme mit instabilen Verbindungen {#issues-unstable-connection}
 
-Eine Verbindung gilt als instabil, wenn einer der folgenden Ereignisse eintritt:
+Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen eintritt:
 
 * Die Verbindung dauert weniger als eine Stunde. Adobe Campaign Classic Transmitterverbindungen sind eine Ausnahme aufgrund der Funktionsweise der Adobe Campaign Classic MTA.
 
-* Der Anbieter sendet `UNBIND PDU`s.
+* Der Provider sendet `UNBIND PDU`s.
 
-* `enquire_link` Zeitüberschreitung, entweder auf der Adobe Campaign- oder auf der Anbieterseite. In diesem Fall wird `ENQUIRE_LINK_RESP` mit einem Fehlercode ungleich null angezeigt.
+* Das `enquire_link`-Zeitlimit wird entweder auf der Adobe Campaign-Seite oder auf der Provider-Seite überschritten. In diesem Fall wird möglicherweise `ENQUIRE_LINK_RESP` mit einem Fehler-Code ungleich Null angezeigt.
 
-* Es gibt viele `BIND PDU`s. Je nach Anzahl der Verbindungen sollte es pro Tag nicht mehr als einige geben. Mehr als 1 BIND PDU pro Stunde sollte alarmiert werden.
+* Es gibt viele `BIND PDU`s. Abhängig von der Anzahl der Verbindungen sollten an einem Tag nicht mehr als ein paar vorhanden sein. Mehr als 1 BIND PDU pro Stunde ist alarmierend.
 
 Beheben von Problemen mit der Verbindungsstabilität:
 
-* Unstable-Verbindungen sind selten die Ursache, es ist oft das Ergebnis eines anderen Problems, das eine Trennung auslöst. Die Suche nach der Ursache ist die Priorität.
+* Instabile Verbindungen sind selten die eigentliche Ursache. Sie sind häufig das Ergebnis eines anderen Problems, das einen Verbindungsabbruch auslöst. Die Suche nach der eigentlichen Ursache hat Priorität.
 
-* Aktivieren Sie ausführliche SMPP-Spuren. Sie werden sie benötigen, um zu sehen, was passiert, wenn die Verbindung neu gestartet wird.
+* Aktivieren Sie die ausführliche SMPP-Verfolgung. Sie benötigen diese, um zu sehen, was passiert, wenn die Verbindung neu gestartet wird.
 
-* Wenn der Anbieter `BIND PDU`s sendet, kann etwas nicht stimmen. Fragen Sie Ihren Anbieter, warum `UNBING` gesendet wird.
+* Wenn der Provider `BIND PDU`s sendet, stimmt möglicherweise etwas nicht. Fragen Sie Ihren Provider, warum `UNBING` gesendet wird.
 
-* Eine Netzwerkerfassung ist manchmal die einzige Möglichkeit, zu sehen, wie die Verbindung geschlossen wird.
+* Eine Netzwerkaufzeichnung ist manchmal die einzige Möglichkeit, um zu sehen, wie die Verbindung geschlossen wird.
 
 * Wenn der Anbieter die Verbindungen schließt, indem er entweder ein `TCP FIN` oder ein `TCP RST packet` sendet, fragen Sie Ihren Anbieter nach weiteren Informationen.
 
-* Wenn der Anbieter die Verbindung schließt, nachdem er einen sauberen Fehler wie `DELIVER_SM_RESP` mit einem Fehlercode gesendet hat, muss er den Connector reparieren. Andernfalls wird verhindert, dass andere Arten von Nachrichten übertragen werden, und MTA-Einschränkungen ausgelöst. Dies ist besonders im Transceiver-Modus wichtig, wo das Schließen der Verbindung sowohl MT als auch SR beeinflusst.
+* Wenn der Provider die Verbindung schließt, nachdem er einen ordnungsgemäßen Fehler wie `DELIVER_SM_RESP` mit einem Fehler-Code gesendet hat, muss er seinen Connector reparieren. Andernfalls wird verhindert, dass andere Arten von Nachrichten übertragen werden, und die MTA-Drosselung wird ausgelöst. Dies ist besonders im Transceiver-Modus wichtig, wo sich das Schließen der Verbindung sowohl auf MT als auch auf SR auswirkt.
 
-## Problem beim Senden eines MT (normales SMS an einen Endbenutzer){#issue-MT}
+## Problem beim Senden von MT (reguläre SMS an einen Endbenutzer){#issue-MT}
 
-* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde ununterbrochen in Betrieb bleiben, außer bei Sendern auf Adobe Campaign Classic. Siehe Abschnitt [Problem mit instabilen Verbindungen](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde ununterbrochen in Betrieb bleiben, außer bei Sendern auf Adobe Campaign Classic. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/sms-protocol.md#issues-unstable-connection).
 
-* Wenn der Neustart des MTA dazu führt, dass das Senden von MT für eine kurze Zeit wieder funktioniert, haben Sie wahrscheinlich Einschränkungen wegen einer instabilen Verbindung. Siehe Abschnitt [Problem mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Wenn durch einen Neustart des MTA das Senden von MT für einen kurzen Zeitraum wieder funktioniert, besteht wahrscheinlich eine Drosselung aufgrund einer instabilen Verbindung. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
 
-* Überprüfen Sie, ob das breite Protokoll vorhanden ist und im richtigen Status mit den richtigen Daten. Ist dies nicht der Fall, könnte es sich um ein Problem mit der Vorbereitung des Versands oder Versands handeln.
+* Überprüfen Sie, ob das Broadlog vorhanden ist und den richtigen Status mit den richtigen Daten aufweist. Ist dies nicht der Fall, könnte es sich um ein Problem beim Versand oder bei der Versandvorbereitung handeln.
 
-* Vergewissern Sie sich, dass die Nachricht tatsächlich vom MTA verarbeitet wird. Ist dies nicht der Fall, ist dies möglicherweise keine SMS-Ausgabe.
+* Prüfen Sie, ob der MTA die Nachricht tatsächlich verarbeitet. Ist dies nicht der Fall, handelt es sich möglicherweise nicht um ein SMS-Problem.
 
-* Vergewissern Sie sich, dass der SMS-Anschluss tatsächlich an das Gerät des Anbieters angeschlossen ist. Bitten Sie den Anbieter um Feedback, um sicherzustellen, dass alle Systeme ordnungsgemäß kommunizieren. Informationen zum Bindungsprozess finden Sie unter `BIND_TRANSMITTER` und `BIND_TRANSCEIVER PDU`s. Möglicherweise müssen Sie SMPP-Traces aktivieren, um eine ordnungsgemäße Fehlerbehebung zu ermöglichen.
+* Prüfen Sie, ob der SMS-Connector tatsächlich mit den Geräten des Providers verbunden ist. Bitten Sie den Provider um Rückmeldung, um sicherzustellen, dass alle Systeme richtig kommunizieren. Informationen zum Bindungsprozess finden Sie unter `BIND_TRANSMITTER` und `BIND_TRANSCEIVER PDU`s. Möglicherweise müssen Sie SMPP-Traces aktivieren, um eine ordnungsgemäße Fehlerbehebung zu ermöglichen.
 
 * Überprüfen Sie bei aktivierten SMPP-Traces, ob `SUBMIT_SM PDU` die richtigen Informationen enthält.
 
-* Stellen Sie sicher, dass der Anbieter mit einem `SUBMIT_SM_RESP PDU`-Wert mit dem Wert &quot;OK&quot;(Code 0) antwortet. Stellen Sie sicher, dass die PDU mit einer angemessenen Verzögerung eintrifft: Alles, was länger als 1 Sekunde dauert, muss mit dem Anbieter besprochen werden, es kommt in der Regel in weniger als 100 ms.
+* Stellen Sie sicher, dass der Provider mit einem `SUBMIT_SM_RESP PDU` mit dem Wert &quot;OK&quot; (Code 0) antwortet. Stellen Sie sicher, dass die PDU mit einer angemessenen Verzögerung eintrifft: Alles, was länger als 1 Sekunde ist, muss mit dem Provider besprochen werden. Sie kommt normalerweise in weniger als 100 ms an.
 
-* Wenn alle diese Schritte funktionieren, können Sie darauf vertrauen, dass das Problem auf der Anbieterseite auftritt. Sie müssen die Fehlerbehebung auf ihrer Plattform durchführen.
+* Wenn alle diese Schritte funktionieren, können Sie sicher sein, dass das Problem auf der Seite des Providers liegt. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
 
-* Wenn es funktioniert, aber der Durchsatz inkonsistent ist, versuchen Sie, das sendende Fenster anzupassen und den MT-Durchsatz zu senken. Sie müssen mit dem Anbieter zusammenarbeiten, um dies anzupassen. Adobe Campaign kann sehr schnell Nachrichten senden, sodass Leistungsprobleme auf dem Gerät des Anbieters auftreten können.
+* Wenn es funktioniert, der Durchsatz jedoch inkonsistent ist, versuchen Sie, das Übertragungsfenster anzupassen und den MT-Durchsatz zu verringern. Für diese Anpassung müssen Sie mit dem Provider zusammenarbeiten. Adobe Campaign kann Nachrichten sehr schnell senden, so dass Leistungsprobleme auf den Geräten des Providers auftreten können.
 
-## MT werden dupliziert (dieselbe SMS wird mehrere Male in einer Zeile gesendet){#duplicated-MT}
+## MT wird dupliziert (dieselbe SMS wird mehrmals hintereinander gesendet){#duplicated-MT}
 
-Duplikat werden oft von weiteren Zustellversuchen verursacht. Es ist normal, Duplikate beim erneuten Testen von Nachrichten zu haben, sollten Sie versuchen, stattdessen die Wurzel-Ursache von weiteren Zustellversuchen zu entfernen.
+Duplikate werden häufig durch Wiederholungsversuche verursacht. Es ist normal, dass Duplikate auftreten, wenn Nachrichten wiederholt gesendet werden. Sie sollten stattdessen versuchen, die Ursache für die Wiederholungen zu beseitigen.
 
-* Wenn Sie Duplikat sehen, die genau 60 Sekunden auseinander geschickt wurden, ist es wahrscheinlich ein Problem auf der Anbieterseite, sie senden nicht schnell genug ein `SUBMIT_SM_RESP`.
+* Wenn Sie sehen, dass Duplikate im Abstand von genau 60 Sekunden gesendet werden, ist dies wahrscheinlich ein Problem auf der Seite des Providers, der die `SUBMIT_SM_RESP` nicht schnell genug sendet.
 
-* Wenn Sie viele `BIND/UNBIND` sehen, haben Sie eine instabile Verbindung. Im Abschnitt [Problem mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection) finden Sie Lösungen, bevor Sie versuchen, Probleme mit Duplikat-Meldungen zu lösen.
+* Wenn Sie viele `BIND/UNBIND` sehen, haben Sie eine instabile Verbindung. Suchen Sie zuerst Lösungen im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection), bevor Sie versuchen, Probleme mit doppelten Nachrichten zu lösen.
 
-Verringerung der Anzahl von Duplikaten bei Wiederholung:
+Verringerung der Anzahl von Duplikaten bei einer Wiederholung:
 
-* Reduzieren Sie das sendende Fenster. Das sendende Fenster sollte groß genug sein, um für `SUBMIT_SM_RESP` Latenz abzudecken. Der Wert stellt die maximale Anzahl von Meldungen dar, die dupliziert werden können, wenn ein Fehler auftritt, während das Fenster voll ist.
+* Reduzieren Sie das Übertragungsfenster. Das Übertragungsfenster sollte groß genug sein, um die Latenz der `SUBMIT_SM_RESP` abzudecken. Sein Wert stellt die maximale Anzahl von Nachrichten dar, die dupliziert werden können, wenn ein Fehler auftritt, während das Fenster voll ist.
 
-## Problem bei der Verarbeitung von SR (Versand-Empfangsbestätigungen) {#issue-process-SR}
+## Problem bei der Verarbeitung von SR (Empfangsbestätigungen) {#issue-process-SR}
 
-* Sie benötigen SMPP-Traces, die für jede SR-Fehlerbehebung aktiviert sind.
+* Sie müssen SMPP-Traces aktivieren, um jegliche Art von SR-Fehlerbehebung durchzuführen.
 
-* Überprüfen Sie, ob das `DELIVER_SM PDU` vom Anbieter kommt und ob es gut geformt ist.
+* Überprüfen Sie, ob die `DELIVER_SM PDU` vom Provider kommt und korrekt formuliert ist.
 
-* Überprüfen Sie, ob das Adobe Campaign rechtzeitig mit einem erfolgreichen `DELIVER_SM_RESP PDU` antwortet. Unter Adobe Campaign Classic garantiert dies, dass der SR in die Tabelle `providerMsgId` für die verzögerte Verarbeitung durch den SMS-Prozess eingefügt wurde.
+* Überprüfen Sie, ob Adobe Campaign rechtzeitig mit einer erfolgreichen `DELIVER_SM_RESP PDU` antwortet. Unter Adobe Campaign Classic garantiert dies, dass der SR in die Tabelle `providerMsgId` für die verzögerte Verarbeitung durch den SMS-Prozess eingefügt wurde.
 
-Wenn `DELIVER_SM PDU` nicht erfolgreich bestätigt wurde, sollten Sie Folgendes überprüfen:
+Wenn die `DELIVER_SM PDU` nicht erfolgreich quittiert wurde, sollten Sie Folgendes überprüfen:
 
-* Überprüfen Sie den Regex in Bezug auf die ID-Extraktion und die Fehlerverarbeitung im **Externe Konto**. Möglicherweise müssen Sie sie gegen den Inhalt von `DELIVER_SM PDU` validieren.
+* Überprüfen Sie den Regex für die ID-Extraktion und die Fehlerverarbeitung im **externen Konto**. Möglicherweise müssen Sie diese anhand des Inhalts von `DELIVER_SM PDU` validieren.
 
 * Überprüfen Sie, ob die Fehler in der Tabelle `broadLogMsg` richtig bereitgestellt wurden.
 
 Wenn das `DELIVER_SM PDU` vom Adobe Campaign Classic Extended SMPP Connector bestätigt wurde, das &quot;wideLog&quot;jedoch nicht ordnungsgemäß aktualisiert wurde, überprüfen Sie den im Abschnitt [Matching MT, SR und Broadlog Einträge](../../delivery/using/sms-protocol.md#matching-mt) beschriebenen ID-Abgleichungsprozess.
 
-Wenn Sie alle Fehler behoben haben, aber einige ungültige SR-Regeln noch in den Puffern des Anbieters vorhanden sind, können Sie sie mit der Option &quot;Anzahl der ungültigen ID-Bestätigung&quot;überspringen. Dies sollte mit Vorsicht verwendet werden und so schnell wie möglich auf 0 zurückgesetzt werden, nachdem die Puffer sauber sind.
+Wenn Sie alle Fehler behoben haben, aber einige ungültige SR-Regeln noch in den Puffern des Anbieters vorhanden sind, können Sie sie mit der Option &quot;Anzahl der ungültigen ID-Bestätigung&quot;überspringen. Dies sollte mit Vorsicht verwendet und so schnell wie möglich auf 0 zurückgesetzt werden, nachdem die Puffer bereinigt wurden.
 
-## Problem bei der Verarbeitung von MO (und Blacklisting/automatische Antwort){#issue-process-MO}
+## Problem bei der Verarbeitung von MO (und Blockierungsauflistung/automatische Antwort){#issue-process-MO}
 
-* Aktivieren Sie SMPP-Spuren während Tests. Wenn Sie TLS nicht aktivieren, sollten Sie bei der Fehlerbehebung von MO eine Netzwerkerfassung durchführen, um zu überprüfen, ob PDUs die richtigen Informationen enthalten und korrekt formatiert sind.
+* Aktivieren Sie SMPP-Traces während der Tests. Wenn Sie TLS nicht aktivieren, sollten Sie bei der Fehlerbehebung bei MO eine Netzwerkaufzeichnung durchführen, um zu überprüfen, ob die PDUs die richtigen Informationen enthalten und ordnungsgemäß formatiert sind.
 
-* Wenn Sie Netzwerkverkehr erfassen oder SMPP-Spuren analysieren, stellen Sie sicher, dass Sie die gesamte Konversation mit dem MO und seiner Antwort MT erfassen, wenn eine Antwort konfiguriert ist.
+* Wenn Sie Netzwerk-Traffic aufzeichnen oder SMPP-Traces analysieren, stellen Sie sicher, dass Sie die gesamte Konversation mit dem MO und seiner Antwort-MT erfassen, wenn eine Antwort konfiguriert ist.
 
-* Wenn das MO (`DELIVER_SM PDU`) nicht in den Spuren angezeigt wird, liegt das Problem auf der Anbieterseite. Sie müssen die Fehlerbehebung auf ihrer Plattform durchführen.
+* Wenn MO (`DELIVER_SM PDU`) nicht in Traces angezeigt wird, liegt das Problem auf der Seite des Providers. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
 
-* Wenn `DELIVER_SM PDU` angezeigt wird, überprüfen Sie, ob es durch Adobe Campaign mit einem erfolgreichen `DELIVER_SM_RESP PDU` (Code 0) bestätigt wird. Diese RESP garantiert, dass die gesamte Verarbeitungslogik von Adobe Campaign angewendet wurde (automatische Antwort und Zulassen/Blockierungsliste). Wenn dies nicht der Fall ist, suchen Sie in den SMS-Prozessprotokollen nach einer Fehlermeldung.
+* Wenn `DELIVER_SM PDU` angezeigt wird, überprüfen Sie, ob sie von Adobe Campaign mit einer erfolgreichen `DELIVER_SM_RESP PDU` (Code 0) quittiert wird. Diese RESP garantiert, dass die gesamte Verarbeitungslogik von Adobe Campaign angewendet wurde (automatische Antwort und Zulassungs-/Blockierungsliste). Wenn dies nicht der Fall ist, suchen Sie in den SMS-Prozessprotokollen nach einer Fehlermeldung.
 
-* Wenn automatische Antworten aktiviert sind, überprüfen Sie, ob `SUBMIT_SM` an den Anbieter gesendet wurde. Ist dies nicht der Fall, wird garantiert, dass eine Fehlermeldung in den SMS-Prozessprotokollen gefunden wird.
+* Wenn automatische Antworten aktiviert sind, überprüfen Sie, ob `SUBMIT_SM` an den Provider gesendet wurde. Ist dies nicht der Fall, wird garantiert, dass eine Fehlermeldung in den SMS-Prozessprotokollen gefunden wird.
 
-* Wenn die `SUBMIT_SM MT PDU`, die die Antwort enthalten, in den Spuren gefunden wird, die SMS aber nicht zum Handy kommt, müssen Sie sich an den Anbieter wenden, um Hilfe bei der Fehlerbehebung zu erhalten.
+* Wenn die `SUBMIT_SM MT PDU`, die die Antwort enthält, in Traces gefunden wird, die SMS aber nicht auf dem Mobiltelefon ankommt, müssen Sie sich an den Provider wenden, um Unterstützung bei der Fehlerbehebung zu erhalten.
 
-## Problem bei der Vorbereitung des Versands ohne Ausschluss von isolierten Empfängern (durch die Funktion für die automatische Antwort isoliert) {#issue-delivery-preparation}
+## Problem bei der Versandvorbereitung, die Empfänger unter Quarantäne nicht ausschließt (durch die automatische Antwortfunktion in Quarantäne gestellt) {#issue-delivery-preparation}
 
-* Überprüfen Sie, ob das Telefonnummernformat in der Tabelle &quot;Quarantäne&quot;und im Versand-Protokoll identisch ist. Ist dies nicht der Fall, lesen Sie den Abschnitt [Abschnitt](../../delivery/using/sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem Präfix plus des internationalen Telefonnummernformats haben.
+* Überprüfen Sie, ob das Telefonnummernformat in der Quarantänetabelle und im Versandlog genau identisch sind. Ist dies nicht der Fall, gehen Sie zu diesem [Abschnitt](../../delivery/using/sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem &quot;+&quot;-Präfix des internationalen Telefonnummernformats haben.
 
-* Prüfen Sie die Kurzcodes. Ausnahmen können auftreten, wenn der Kurzcode des Empfängers entweder mit dem im Externe Konto definierten oder mit leerem Code identisch ist (leer = beliebiger Kurzcode). Wenn nur ein Kurzcode für die gesamte Adobe Campaign-Instanz verwendet wird, ist es einfacher, alle **Kurzcode**-Felder leer zu lassen.
+* Prüfen Sie die Kurzwahlnummern. Es kann zu Ausschlüssen kommen, wenn die Kurzwahlnummer des Empfängers entweder dieselbe ist, wie im externen Konto definiert, oder wenn sie leer ist (leer = beliebige Kurzwahlnummer). Wenn nur eine Kurzwahlnummer für die gesamte Adobe Campaign-Instanz verwendet wird, ist es einfacher, alle Felder mit **Kurzwahlnummern** leer zu lassen.
 
 ## Kodierungsprobleme {#encoding-issues}
 
-**Schritt 1: Kontakt zum Anbieter**
+**Schritt 1: Kontaktaufnahme mit dem Provider**
 
-Kontaktieren Sie sie und sehen Sie, was sie haben. Sie sollten Ihnen sagen können, ob das Problem auf ihrer Seite oder auf der Adobe Campaign-Seite liegt. Wenn das Problem im Adobe Campaign liegt, sollten sie Ihnen genau sagen können, welches Feld falsch ist.
+Nehmen Sie Kontakt mit ihm auf und fragen Sie nach, ob es ein Problem gibt. Er sollte Ihnen mitteilen können, ob das Problem auf seiner Seite oder auf der Seite von Adobe Campaign liegt. Wenn das Problem in Adobe Campaign auftritt, sollte er Ihnen genau mitteilen können, welches Feld falsch ist.
 
-**Schritt 2: Was in Ihrer Nachricht enthalten ist**
+**Schritt 2: Inhalt Ihrer Nachricht überprüfen**
 
-Unicode erlaubt viele Varianten für aussehende Zeichen und Adobe Campaign kann nicht alle umgehen.
+Unicode erlaubt viele Varianten für ähnliche Zeichen, und Adobe Campaign kann nicht alle verarbeiten.
 
-Die häufigste Ursache für Probleme ist eine Kopieren-Einfügen aus einem Textverarbeitungsprogramm, das die üblichen Zeichen in typografisch korrekte Versionen ändert: Leerzeichen wurden zu geschützten Leerzeichen, Dubletten-Anführungszeichen zu öffnenden und schließenden Anführungszeichen, Minuszeichen zu verschiedenen Trennstrichen usw. geändert.
+Die häufigste Ursache für Probleme ist das Kopieren und Einfügen aus einem Textverarbeitungsprogramm, bei dem übliche Zeichen in typografisch korrekte Versionen geändert werden: Leerzeichen in feste Leerzeichen, doppelte Anführungszeichen in öffnende und schließende Anführungszeichen, Minuszeichen in verschiedene Arten von Bindestrichen usw.
 
 Kopieren Sie Ihre Nachricht beim Testen nicht, sondern geben Sie sie immer direkt in die Benutzeroberfläche ein.
 
-Mit hexadezimalen Zeichen können Sie den Unterschied zwischen ähnlichen Zeichen erkennen. Ein Kleinbuchstabe L, ein Großbuchstabe I, O, 0, alle verschiedenen Arten von Anführungszeichen, Nicht-Lateinkodierungen oder sogar verschiedene Arten von Leerzeichen können alle gleich aussehen oder gar nicht angezeigt werden.
+Bei hexadezimalen Zeichen können Sie den Unterschied zwischen ähnlichen Zeichen erkennen. Ein kleines L, ein großes I, O, 0, alle verschiedenen Arten von Anführungszeichen, nicht-lateinische Kodierungen oder sogar verschiedene Arten von Leerzeichen können alle gleich aussehen oder gar nicht angezeigt werden.
 
-Um Unicode in Hexadezimal zu konvertieren, können Sie Online-Tools wie die Website [Unicode-Codekonverter](https://r12a.github.io/app-conversion/) verwenden. Geben Sie Ihren Text ein, vergewissern Sie sich, dass keine PII wie Telefonnummern vorhanden sind, und klicken Sie auf **Konvertieren**. Die Hexadezimalwerte werden unten angezeigt (UTF-32-Zone).
+Um Unicode in hexadezimale Werte zu konvertieren, können Sie Online-Tools wie die Website [Unicode-Codekonverter](https://r12a.github.io/app-conversion/) verwenden. Geben Sie Ihren Text ein, vergewissern Sie sich, dass keine persönlichen Informationen wie Telefonnummern vorhanden sind, und klicken Sie auf **Konvertieren**. Die hexadezimalen Werte werden unten angezeigt (UTF-32-Zone).
 
-Wenn Sie Tickets zu Kodierungsproblemen öffnen, egal ob mit dem Anbieter oder dem Adobe Campaign, fügen Sie immer eine Hexadezimalversion des von Ihnen eingegebenen und angezeigten Artikels bei.
+Geben Sie beim Öffnen von Tickets für Kodierungsprobleme, sei es beim Provider oder beim Adobe Campaign-Support, immer eine hexadezimale Version Ihrer Eingabe und Ihrer Anzeige an.
 
-**Schritt 3: Was Sie senden sollten**
+**Schritt 3: Überprüfen, was Sie senden sollten**
 
-Legen Sie die Kodierung fest, die Sie erwarten, und suchen Sie online nach der entsprechenden Zeichentabelle. Vergewissern Sie sich, dass die Zeichen, die Sie senden möchten, tatsächlich auf der Codepage der Zielgruppe verfügbar sind. Überprüfen Sie, ob das Feld `data_coding` korrekt ist und mit dem übereinstimmt, was Sie und der Anbieter erwarten.
+Legen Sie die Kodierung fest, die Sie voraussichtlich verwenden werden, und suchen Sie online nach der Zeichentabelle. Vergewissern Sie sich, dass die Zeichen, die Sie senden möchten, tatsächlich in dieser Zeichenumsetztabelle verfügbar sind. Überprüfen Sie, ob das Feld `data_coding` korrekt ist und mit dem übereinstimmt, was Sie und der Provider erwarten.
 
-**Schritt 4: Wissen, was Sie tatsächlich gesendet haben**
+**Schritt 4: Überprüfen, was Sie tatsächlich gesendet haben**
 
-Sie benötigen die Debug-Ausgabe des Connectors, um genau zu sehen, welche Bytes Sie an den Provider senden. Kodierungsprobleme werden in `SUBMIT_SM PDU`s angezeigt. Achten Sie daher darauf, sie zu erfassen. Senden Sie sehr unterschiedliche Nachrichten, die im Protokoll leicht zu finden sind.
+Sie benötigen die Debug-Ausgabe des Connectors, um genau zu sehen, welche Bytes Sie an den Provider senden. Kodierungsprobleme werden in `SUBMIT_SM PDU`s angezeigt. Zeichnen Sie sie daher unbedingt auf. Senden Sie gut erkennbare Nachrichten, die im Log leicht zu finden sind.
 
-Senden Sie beim Testen verschiedene Sonderzeichen. Beispielsweise enthält die GSM7-Kodierung erweiterte Zeichen, die sich in ihrer hexadezimalen Form sehr unterscheiden. Sie sind leicht zu erkennen, da sie in keiner anderen Kodierung angezeigt werden.
+Senden Sie beim Testen verschiedene Sonderzeichen. Zum Beispiel enthält die GSM7-Kodierung erweiterte Zeichen, deren hexadezimale Form sich von anderen sehr unterscheidet. Sie sind leicht zu erkennen, da sie in keiner anderen Kodierung vorkommen.
 
-## Zu berücksichtigende Elemente bei der Kommunikation über ein SMS-Problem {#element-include}
+## Elemente, die bei der Kommunikation über ein SMS-Problem berücksichtigt werden müssen {#element-include}
 
-Wenn Sie Hilfe bei einer SMS-Frage suchen, ob es ein Support-Ticket für Adobe Campaign, den SMS-Provider oder eine andere Art der Kommunikation zu diesem Problem öffnet, müssen Sie die folgenden Informationen eintragen, um sicherzustellen, dass es ordnungsgemäß qualifiziert ist. Richtig qualifizierte Probleme sind der Schlüssel zur schnelleren Lösung von Problemen.
+Wann immer Sie um Unterstützung bei einem SMS-Problem bitten, sei es beim Öffnen eines Support-Tickets bei Adobe Campaign, beim SMS-Provider oder bei jeder Art von Kommunikation über das Problem, müssen Sie die folgenden Informationen angeben, um sicherzustellen, dass das Problem richtig qualifiziert wird. Richtig qualifizierte Probleme sind der Schlüssel zur schnelleren Lösung von Problemen.
 
-* **Aktivieren Sie ausführliche SMPP-** Meldungen, wenn das Problem angezeigt wird. Die meisten SMS-Probleme lassen sich ohne diese nicht lösen.
+* **Aktivieren Sie ausführliche SMPP-Meldungen**, wenn das Problem auftritt. Die meisten SMS-Probleme lassen sich nur damit lösen.
 
-* Wenn das Problem mit dem SMS-Traffic zusammenhängt, wenden Sie sich zuerst an den Anbieter. Ihre Plattform eignet sich am besten zur effizienten Diagnose von SMS-Verkehrsproblemen in Echtzeit.
+* Wenn das Problem mit dem SMS-Traffic zusammenhängt, wenden Sie sich zuerst an den Provider. Deren Plattform ist für eine effiziente Diagnose von SMS-Traffic-Problemen in Echtzeit am besten geeignet.
 
-* Schließen Sie eine kurze, aber sachliche Beschreibung des Problems ein.
+* Fügen Sie eine kurze, sachliche Beschreibung des Problems bei.
 
-* Geben Sie eine Beschreibung des erwarteten Ergebnisses ein.
+* Fügen Sie eine Beschreibung des erwarteten Ergebnisses bei.
 
-* Schließen Sie das Feedback des Anbieters ein.
+* Fügen Sie die Rückmeldung des Providers bei.
 
-* Schließen Sie relevante Protokolle und/oder Netzwerkaufnahmen ein. Achten Sie bei der Erfassung darauf, das Problem während der Erfassung zu reproduzieren.
+* Fügen Sie relevante Logs und/oder Netzwerkaufzeichnungen bei. Achten Sie bei der Aufzeichnung darauf, das Problem während der Aufzeichnung zu reproduzieren.
 
-* Wenn Sie Protokolle, Spuren oder Aufnahmen einschließen, bestimmen Sie den genauen Speicherort in der Datei, wenn das Problem auftritt.
+* Wenn Sie Logs, Traces oder Aufzeichnungen beifügen, geben Sie die genaue Stelle in der Datei an, an der das Problem auftritt.
 
-* Wenn Sie auf Nachrichten, PDUs oder Protokolle verweisen, geben Sie deren Zeitstempel deutlich an, um sie leichter zu finden.
+* Wenn Sie auf Nachrichten, PDUs oder Logs verweisen, geben Sie deren Zeitstempel an, damit sie leichter zu finden sind.
 
-* Versuchen Sie, das Problem auf einer Umgebung zu reproduzieren. Wenn Sie sich bezüglich einer Einstellung nicht sicher sind, probieren Sie sie in der Test-Umgebung aus und überprüfen Sie das Ergebnis mit den SMPP-Spuren. Normalerweise ist es besser, Probleme zu melden, die auf Umgebung des Tests repliziert wurden, als Probleme mit dem Berichte auf Umgebung der Produktion.
+* Versuchen Sie, das Problem in einer Testumgebung zu reproduzieren. Wenn Sie sich bei einer Einstellung nicht sicher sind, versuchen Sie sie in der Testumgebung und überprüfen Sie das Ergebnis mit SMPP-Traces. In der Regel ist es besser, in Testumgebungen replizierte Probleme zu melden, als Probleme in Produktionsumgebungen direkt zu melden.
 
-* Schließen Sie alle Änderungen oder Änderungen ein, die auf der Plattform vorgenommen wurden. Schließen Sie außerdem alle Änderungen ein, die der Anbieter möglicherweise auf seiner Seite vorgenommen hat.
+* Fügen Sie alle Änderungen oder Optimierungen hinzu, die auf der Plattform vorgenommen wurden. Schließen Sie auch alle Änderungen ein, die der Provider möglicherweise auf seiner Seite vorgenommen hat.
 
-### Netzwerkerfassung {#network-capture}
+### Netzwerkaufzeichnung {#network-capture}
 
-Eine Netzwerkerfassung ist nicht immer erforderlich, meist sind ausführliche SMPP-Nachrichten ausreichend. Im Folgenden finden Sie einige Richtlinien, die Ihnen dabei helfen, festzustellen, ob eine Netzwerkerfassung erforderlich ist:
+Eine Netzwerkaufzeichnung ist nicht immer erforderlich. In der Regel reichen ausführliche SMPP-Meldungen aus. Im Folgenden finden Sie einige Richtlinien, anhand derer Sie feststellen können, ob eine Netzwerkaufzeichnung erforderlich ist:
 
-* Verbindungsprobleme, aber die ausführlichen Meldungen zeigen kein `BIND_RESP PDU` an.
+* Verbindungsprobleme, aber in den ausführlichen Meldungen werden keine `BIND_RESP PDU` angezeigt.
 
-* Unerklärtes Trennen von Verbindungen ohne Fehlermeldung, das übliche Verhalten des Connectors bei der Erkennung eines Protokollfehlers auf niedriger Ebene.
+* Ungeklärte Verbindungsabbrüche ohne Fehlermeldung, das übliche Verhalten des Connectors, wenn er einen Protokollfehler auf niedriger Ebene erkennt.
 
-* Der Anbieter beklagt sich über den Prozess der Aufhebung/Trennung der Verbindung.
+* Der Provider beschwert sich über Verbindungsabbrüche.
 
 * Kodierungsprobleme in optionalen TLV-Feldern.
 
-* Es wird vermutet, dass der Traffic zwischen verschiedenen Verbindungen gemischt wird.
+* Es wird vermutet, dass der Traffic zwischen verschiedenen Verbindungen vermischt ist.
 
 In allen anderen Situationen sollten Sie zunächst ausführliche SMPP-Meldungen analysieren und nur dann eine Netzwerkerfassung anfordern, wenn Informationen in den ausführlichen Protokollen fehlen.
 
-In einigen Fällen ist die Erfassung des Netzwerkverkehrs nicht erforderlich. Die häufigsten Situationen sind:
+In einigen Fällen ist die Aufzeichnung des Netzwerk-Traffic nicht erforderlich. Die häufigsten Situationen sind:
 
-* TLS aktiviert: Der TLS-Traffic ist per Definition verschlüsselt, sodass er nicht erfasst werden kann.
+* TLS aktiviert: Der TLS-Traffic ist von vornherein verschlüsselt, sodass er nicht aufgezeichnet werden kann.
 
-* Leistungsprobleme: Protokolle enthalten alle erforderlichen Informationen zur Verfolgung von Leistungsproblemen.
+* Leistungsprobleme: Die Logs enthalten alle erforderlichen Informationen zum Verfolgen von Leistungsproblemen.
 
-* Timing-Probleme (`retry timing`, `enquire_link` Punkt, Durchsatzbegrenzung usw.)
+* Timing-Probleme (`retry timing`, `enquire_link`-Zeitraum, Durchsatzbegrenzung usw.)
 
-* SR-Analyse und -Verarbeitung: Ausführliche Protokolle geben viel mehr Kontext und eine bessere Präsentation.
+* SR-Analyse und -Verarbeitung: Ausführliche Logs bieten viel mehr Kontext und eine bessere Darstellung.
 
 * MO-Verarbeitung (automatische Antworten, Quarantäne).
 
-* Fehler ohne SMPP-Traffic: Vorbereitung des Versands, Probleme mit der Message Center-API, Workflow-Probleme usw.
+* Fehler, die nicht den eigentlichen SMPP-Traffic betreffen: Versandvorbereitung, Probleme mit der Message Center-API, Workflow-Probleme usw.
 
-## Aktivieren von SMPP-Spuren {#enabling-smpp-traces}
+## Aktivieren von SMPP-Traces{#enabling-smpp-traces}
 
-Neuer Connector unterstützt erweiterte Protokollierung durch Spuren: SMPP. Traces werden im MTA-Protokoll und nicht in der Standardausgabe ausgegeben.
+Der neue Connector unterstützt die erweiterte Protokollierung durch Traces: SMPP. Trace-Ergebnisse werden im MTA-Log und nicht in der Standardausgabe ausgegeben.
 
-**Aktivieren pro Externe Konto (bevorzugte Methode)**
+**Aktivieren pro externem Konto (bevorzugte Methode)**
 
 1. Aktivieren Sie im Externe Konto **die Option** Ausführliche SMPP-Spuren in der Protokolldatei **aktivieren.**
 1. Warten Sie 10 Minuten, damit der Server die Externe Konti neu laden kann.
@@ -282,7 +282,7 @@ Sie sollte jetzt aktiv sein.
 
 **Aktivieren in der Konfiguration**
 
-Legen Sie in der Datei `config-instance.xml` die folgenden Parameter fest:
+Legen Sie in der `config-instance.xml`-Datei die folgenden Parameter fest:
 
 ```
 <mta>
@@ -291,15 +291,15 @@ Legen Sie in der Datei `config-instance.xml` die folgenden Parameter fest:
 <sms args="-tracefilter:SMPP"/>
 ```
 
-## Überprüfen der Anzahl offener Verbindungen auf einem Container {#open-connections}
+## Überprüfen der Anzahl offener Verbindungen eines Containers {#open-connections}
 
-Um die Anzahl der geöffneten Verbindungen auf einem Container zu überprüfen, können Sie den folgenden Befehl verwenden:
+Mit dem folgenden Befehl können Sie die Anzahl der offenen Verbindungen eines Containers überprüfen:
 
 ```
 (for pid in $(ss -neopts  | sed -n ‘s/^.*:3600[ \t].*users:(([0-9A-Za-z”]*,pid=\([0-9]*\),.*$/\1/p’ | sort ); do  cat /proc/$pid/cmdline; echo  ” $pid” ;done;) | uniq --count
 ```
 
-Dadurch wird die Anzahl der Verbindungen, die für einen bestimmten Port geöffnet werden, Liste. Hier benutzen wir den Port 3600.
+Damit wird die Anzahl der offenen Verbindungen für einen bestimmten Port aufgelistet. Hier verwenden wir den Port 3600.
 
 Das Ergebnis sollte wie folgt lauten:
 
@@ -312,4 +312,4 @@ Das Ergebnis sollte wie folgt lauten:
 2 nlservermtachild -tracefile:mtachild@INSTANCE_NAME -instance:INSTANCE_NAME -detach 30390
 ```
 
-4 offene Verbindungen für den sms Prozess und 2 pro mta Kind mit 5 Kindern.
+Vier geöffnete Verbindungen für den SMS-Prozess und zwei pro untergeordnetem MTA-Element mit fünf untergeordneten Elementen.
