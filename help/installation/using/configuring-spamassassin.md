@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
        "<root>\perl\site\bin\spamassassin" "C:\TestSpamMail.txt"
       ```
 
-      Der Inhalt dieser Test-E-Mail löst eine Punktzahl von 1.000 Punkten von SpamAssassin aus. Dies bedeutet, dass es als unerwünscht erkannt wurde und dass die Installation erfolgreich war und voll funktionsfähig ist.
+      Der Inhalt dieser Test-E-Mail Trigger eine Punktzahl von 1.000 Punkten von SpamAssassin. Dies bedeutet, dass es als unerwünscht erkannt wurde und dass die Installation erfolgreich war und voll funktionsfähig ist.
 
 ### Integrieren von SpamAssassin in Adobe Campaign {#integrating-spamassassin-into-adobe-campaign}
 
@@ -114,13 +114,13 @@ Gehen Sie wie folgt vor, um SpamAssassin unter Windows zu installieren und zu ko
 
 1. Um die Integration von SpamAssassin in Adobe Campaign zu überprüfen, verwenden Sie einen GTBUE-Test (Generischer Test für nicht angeforderte Massen-E-Mail):
 
-   Klicken Sie mit der Dublette auf die Datei **portableshell.bat**. Dadurch wird die Anzeige einer Windows-Shell ausgelöst. Führen Sie dann den folgenden Befehl aus:
+   Klicken Sie mit der Dublette auf die Datei **portableshell.bat**. Dies Trigger die Anzeige einer Windows Shell. Führen Sie dann den folgenden Befehl aus:
 
    ```
    perl "[INSTALL]\bin\spamcheck.pl" "C:\TestSpamMail.txt"
    ```
 
-   Der Inhalt dieser Test-E-Mail löst 1.000 von SpamAssassin zugewiesene Punkte aus. Dies bedeutet, dass sie als unerwünscht erkannt wurde und dass die Integration in Adobe Campaign erfolgreich war und voll funktionsfähig ist.
+   Der Inhalt dieser Test-E-Mail-Trigger 1.000 von SpamAssassin zugewiesene Punkte. Dies bedeutet, dass sie als unerwünscht erkannt wurde und dass die Integration in Adobe Campaign erfolgreich war und voll funktionsfähig ist.
 
 1. SpamAssassin-Filter- und Bewertungsregeln aktualisieren
 
