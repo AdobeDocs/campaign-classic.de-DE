@@ -47,6 +47,7 @@ F체r den Briefpost-Versand werden Testadressen w채hrend der Extraktion hinzugef�
 >
 >* Keine Verwendung der Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]**.
 >* Bei Extraktion von Kollektionselementen bleiben die entsprechenden Felder f체r Testadressen leer, es sei denn, die Option **[!UICONTROL Nur eine Zeile (Expertenmodus)]** wurde ausgew채hlt. Lesen Sie diesbez체glich auch [diesen Abschnitt](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
+
 >
 
 
