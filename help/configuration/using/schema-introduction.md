@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 19%
+ht-degree: 27%
 
 ---
 
@@ -33,10 +33,10 @@ Referenz-Liste:
 * [Join](schema/join.md)
 * [Schlüssel](schema/key.md)
 * [Schlüsselfeld](schema/keyfield.md)
-* [Vorgehensweise](schema/method.md)
+* [Methode](schema/method.md)
 * [Methoden](schema/methods.md)
-* [Param](schema/param.md)
+* [Parameter](schema/param.md)
 * [Parameter](schema/parameters.md)
 * [SrcSchema](schema/srcschema.md)
-* [Sysfilter](schema/sysfilter.md)
+* [Systemfilter](schema/sysfilter.md)
 * [Wert](schema/value.md)
