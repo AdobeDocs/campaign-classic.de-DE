@@ -6,9 +6,9 @@ description: Felder zu einem Webformular hinzufügen
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -381,6 +381,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.
+
 >
 
 
