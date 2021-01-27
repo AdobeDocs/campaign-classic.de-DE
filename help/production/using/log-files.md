@@ -38,7 +38,7 @@ Die Protokolldateien mit mehreren Instanzen sind in der folgenden Tabelle aufgef
 | web.log | Webmodulprotokolle (Client-Konsole, Berichte, SOAP-API usw.) |
 | webmdl.log | Protokolle vom Umleitungsmodul |
 | watchdog.log | Protokolle vom Adobe Campaign-Prozessüberwachungsmodul |
-| trackinglogd.log | Trackinglogs       |
+| trackinglogd.log | Trackinglogs        |
 
 Die Protokolldateien der einzelnen Instanzen sind in der folgenden Tabelle aufgeführt:
 
