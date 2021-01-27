@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Überwachung der Auftragsausführung
+title: Überwachung der Vorgangsausführung
 description: Erfahren Sie, wie Sie die Ausführung von Import- und Exportaufträgen überwachen.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
 
-# Überwachung der Auftragsausführung {#monitoring-job-execution}
+# Überwachung der Vorgangsausführung {#monitoring-job-execution}
 
 Sie können die Ausführung Ihrer Import- und Exportaufträge direkt von der Liste der Import-/Exportaufträge aus verfolgen.
 
