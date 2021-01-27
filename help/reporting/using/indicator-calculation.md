@@ -6,9 +6,9 @@ description: Indikatorberechnung
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3021'
 ht-degree: 100%
 
@@ -397,7 +397,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms
    <td> Besucher<br /> </td> 
    <td> @totalVisitors / @days<br /> </td> 
    <td> Durchschnittliche tägliche Anzahl von Zielgruppenempfängern nach Betriebssystem, die mindestens einmal im betreffenden Versand geklickt haben.<br /> </td> 
-   <td> Sum(@visitors)<br /> </td> 
+   <td> Sum(@Besucher)<br /> </td> 
   </tr> 
   <tr> 
    <td> Angesehene Seiten<br /> </td> 
@@ -428,7 +428,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Browser-Statistiken]** (nms
  <tbody> 
   <tr> 
    <td> Nutzungsrate<br /> </td> 
-   <td> @visitors<br /> </td> 
+   <td> @Besucher<br /> </td> 
    <td> Tägliche Besucherrate mit diesem Betriebssystem in Bezug auf die höchste gemessene Besucherzahl.<br /> </td> 
    <td> percent(sum(@visitors), max(@visitorsOfTheDay))<br /> </td> 
   </tr> 
@@ -518,7 +518,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
    <td> Erfolg<br /> </td> 
    <td> @successWithoutSeeds<br /> </td> 
    <td> Zählung aller Nachrichten mit Feld "Testadresse" gleich "Nein" und Status "Vom Dienstleister berücksichtigt" oder "Gesendet" oder "Auf Mobiltelefon erhalten".<br /> </td> 
-   <td> sum([indicators/@success])<br /> </td> 
+   <td> sum([Indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> Unique Opens der erreichten Population<br /> </td> 
@@ -554,7 +554,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
    <td> Sendungen<br /> </td> 
    <td> @successWithoutSeeds<br /> </td> 
    <td> Zählung aller Nachrichten mit Feld "Testadresse" gleich "Nein" und Status "Vom Dienstleister berücksichtigt" oder "Gesendet" oder "Auf Mobiltelefon erhalten".<br /> </td> 
-   <td> sum([indicators/@success])<br /> </td> 
+   <td> sum([Indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> Beschwerden<br /> </td> 
@@ -594,9 +594,9 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
   </tr> 
   <tr> 
    <td> Empfänger-Klicks<br /> </td> 
-   <td> @recipientClick<br /> </td> 
+   <td> @empfängerClick<br /> </td> 
    <td> Zählung aller unterschiedlichen @broadLog-id mit URL-Typ "E-Mail-Klick".<br /> </td> 
-   <td> Countdistinct(Iif([url/@type]=1, @broadLog-id, 0))<br /> </td> 
+   <td> CountSeparate(Iif([url/@type]=1, @wideLog-id, 0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Geschätzte Reaktionsrate<br /> </td> 
@@ -611,7 +611,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
    <td> count(Iif([url/@type]=4 oder [url/@type]=5, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Transactions<br /> </td> 
+   <td> Transaktionen<br /> </td> 
    <td> @transaction<br /> </td> 
    <td> Zählung aller @id mit URL-Typ "Transaktion".<br /> </td> 
    <td> count(Iif([url/@type]=5, @id, 0))<br /> </td> 
@@ -650,43 +650,43 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
    <td> E-Mail<br /> </td> 
    <td> @email<br /> </td> 
    <td> Summe aller @totalClicks mit URL-Kategorie "E-Mail".<br /> </td> 
-   <td> Sum(iIf([url/@category]='email',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@Kategorie]='email',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Facebook<br /> </td> 
    <td> @facebook<br /> </td> 
    <td> Summe aller @totalClicks mit URL-Kategorie "Facebook".<br /> </td> 
-   <td> Sum(iIf([url/@category]='facebook',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@Kategorie]='facebook',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Twitter<br /> </td> 
    <td> @twitter<br /> </td> 
    <td> Summe aller @totalClicks mit URL-Kategorie "Twitter".<br /> </td> 
-   <td> Sum(iIf([url/@category]='twitter',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@Kategorie]='twitter',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Delicious<br /> </td> 
    <td> @delicious<br /> </td> 
    <td> Summe aller @totalClicks mit URL-Kategorie "Delicious".<br /> </td> 
-   <td> Sum(iIf([url/@category]='delicious',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@Kategorie]='delicious',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Digg<br /> </td> 
    <td> @digg<br /> </td> 
    <td> Summe aller @totalClicks mit URL-Kategorie "Digg".<br /> </td> 
-   <td> Sum(iIf([url/@category]='digg',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@Kategorie]='digg',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> Google<br /> </td> 
    <td> @google<br /> </td> 
    <td> Summe aller @totalClicks mit URL-Kategorie "Google".<br /> </td> 
-   <td> Sum(iIf([url/@category]='google',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@Kategorie]='google',@totalClicks,0))<br /> </td> 
   </tr> 
   <tr> 
    <td> LinkedIn<br /> </td> 
    <td> @linkedin<br /> </td> 
    <td> Summe aller @totalClicks mit URL-Kategorie "LinkedIn" ist.<br /> </td> 
-   <td> Sum(iIf([url/@category]='linkedin',@totalClicks,0))<br /> </td> 
+   <td> Sum(iIf([url/@Kategorie]='linkedin',@totalClicks,0))<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -774,7 +774,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
    <td> Erfolg<br /> </td> 
    <td> @success<br /> </td> 
    <td> Anzahl erfolgreich verarbeiteter Nachrichten.<br /> </td> 
-   <td> sum([indicators/@success])<br /> </td> 
+   <td> sum([Indicators/@success])<br /> </td> 
   </tr> 
   <tr> 
    <td> Fehler<br /> </td> 
@@ -812,8 +812,8 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
  </thead> 
  <tbody> 
   <tr> 
-   <td> Transactions<br /> </td> 
-   <td> @transactions<br /> </td> 
+   <td> Transaktionen<br /> </td> 
+   <td> @transaktionen<br /> </td> 
    <td> Summe aller @totalClicks, deren URL-Typ gleich "Transaktion" ist.<br /> </td> 
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -825,7 +825,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
   </tr> 
   <tr> 
    <td> Öffnungen<br /> </td> 
-   <td> @opens<br /> </td> 
+   <td> @öffnet<br /> </td> 
    <td> Summe aller @totalClicks, deren URL-Primärschlüssel gleich 1 ist.<br /> </td> 
    <td> sum(Iif([@url-id] = 1, @totalClicks, 0))<br /> </td> 
   </tr> 
@@ -850,7 +850,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
    <td> Verarbeitete E-Mails<br /> </td> 
    <td> @processed<br /> </td> 
    <td> Summe aller Nachrichten, deren Status gleich "Vorbereitet", "Gesendet" oder "Fehlgeschlagen" ist.<br /> </td> 
-   <td> @prepared + @error + @success<br /> </td> 
+   <td> @prepare + @error + @success<br /> </td> 
   </tr> 
   <tr> 
    <td> Zugestellt<br /> </td> 
@@ -872,9 +872,9 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
   </tr> 
   <tr> 
    <td> Öffnungen<br /> </td> 
-   <td> @recipientOpen<br /> </td> 
+   <td> @empfängerOpen<br /> </td> 
    <td> Zählung aller @broadLog-id in allen Trackinglogs.<br /> </td> 
-   <td> Countdistinct ([@broadLog-id])<br /> </td> 
+   <td> Countdeutlich ([@wideLog-id])<br /> </td> 
   </tr> 
   <tr> 
    <td> Klicks<br /> </td> 
@@ -886,7 +886,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand- und Trackingstatis
    <td> Abmeldungen<br /> </td> 
    <td> @optOut<br /> </td> 
    <td> Zählung aller @id mit URL-Kategorie "Opt-out".<br /> </td> 
-   <td> count(Iif([url/@type]=3, @id, 0))<br /> </td> 
+   <td> count(Iif([url/@type]=3, @id, 0)<br /> </td> 
   </tr> 
  </tbody> 
 </table>
