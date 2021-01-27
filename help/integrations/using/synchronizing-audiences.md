@@ -6,9 +6,9 @@ description: Zielgruppen synchronisieren
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 100%
 
@@ -139,7 +139,7 @@ Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie da
 
 ## Versand durchführen und überwachen {#send-and-monitor-your-delivery}
 
-Sobald der Versand und sein Inhalt fertig sind, führen Sie den Versand laut Beschreibung in [diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html) durch:
+Sobald der Versand und sein Inhalt fertig sind, führen Sie den Versand laut Beschreibung in [diesem Abschnitt](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html) durch:
 
 1. Führen Sie den Versand-Workflow aus. In diesem Schritt werden die E-Mails für den Versand vorbereitet.
 1. Bestätigen Sie manuell im Versand-Dashboard, dass der Versand durchgeführt werden kann.
