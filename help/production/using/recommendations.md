@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 'Empfehlungen   '
-description: 'Empfehlungen   '
+title: 'Empfehlungen    '
+description: 'Empfehlungen    '
 audience: production
 content-type: reference
 topic-tags: database-maintenance
