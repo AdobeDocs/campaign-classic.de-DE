@@ -6,9 +6,9 @@ description: Häufige Fragen im Zusammenhang mit Campaign-Build-Upgrades
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2020'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 ## Wie bereite ich das Build-Upgrade vor?
 
-Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
 
 Frischen Sie Ihr Wissen über die wichtigsten Pfad-Workflows und Sendungen auf, die in Ihren Runbooks (oder durch Ihr Beraterteam/Ihren Partner) entwickelt wurden, indem Sie die Dokumentation lesen, die Ihrem Team nach der Implementierung bereitgestellt wird.
 
@@ -104,7 +104,7 @@ Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für
 
 Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 
@@ -205,5 +205,5 @@ dass alle Inhalte vorhanden sind und angezeigt werden.
 
 * [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
-* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support-req)
-* [Gold Standard-Programm](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
+* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Gold Standard-Programm](https://helpx.adobe.com/campaign/kb/gold-standard.html)
