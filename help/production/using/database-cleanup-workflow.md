@@ -184,7 +184,7 @@ Der Arbeitsablauf **[!UICONTROL Datenbankbereinigung]** löscht auch Versand auf
 
    wobei **$(l)** der Bezeichner des Versands ist.
 
-1. Wenn der Statuswert **[!UICONTROL Beginn ausstehend]** , **[!UICONTROL Wird ausgeführt]** , **[!UICONTROL Wiederherstellung ausstehend]** , **[!UICONTROL Wiederherstellung läuft]** , **[!UICONTROL Angeforderte Pause]** , **[!UICONTROL Anhalten in Bearbeitung]** oder &lt;a111/> ist 12/>Paused ]**(Werte 51, 55, 61, 62, 71, 72, 75), wird der Versand gestoppt und die Aufgabe löscht die verknüpften Informationen.**[!UICONTROL 
+1. Wenn der Statuswert **[!UICONTROL Beginn ausstehend]** , **[!UICONTROL Wird ausgeführt]** , **[!UICONTROL Wiederherstellung ausstehend]** , **[!UICONTROL Wiederherstellung läuft]** , **[!UICONTROL Angeforderte Pause]** , **[!UICONTROL Anhalten in Bearbeitung]** oder **[!UICONTROL ist 12/>Paused]** (Werte 51, 55, 61, 62, 71, 72, 75), wird der Versand gestoppt und die Aufgabe löscht die verknüpften Informationen.
 
 ### Bereinigung abgelaufener Versand {#cleanup-of-expired-deliveries}
 
