@@ -6,9 +6,9 @@ description: Erfahren sie mehr über wichtige Funktionen, die Benutzeroberfläch
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 100%
 
@@ -91,6 +91,6 @@ Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hän
 
 In diesem Video werden die wichtigsten Funktionen und Leistungsmerkmale von Campaign Classic vorgestellt.
 
->[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/35129?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
