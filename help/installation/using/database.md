@@ -45,7 +45,7 @@ Zugriff auf DLLs finden Sie auf der Microsoft-Website.
 
 Die Parameter **NLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** müssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
 
-Adobe Campaign verwendet die Oracle-Standardkodierung. Die Verwendung anderer Kodierungen kann Kompatibilitätsprobleme auslösen: in diesem Fall wenden Sie sich bitte an den technischen Support.
+Adobe Campaign verwendet die Oracle-Standardkodierung. Die Verwendung anderer Kodierungen kann Probleme mit der Kompatibilität mit Triggern verursachen: in diesem Fall wenden Sie sich bitte an den technischen Support.
 
 Um mehr über Ihre Kodierung zu erfahren, verwenden Sie den folgenden Befehl **sqlplus**:
 
