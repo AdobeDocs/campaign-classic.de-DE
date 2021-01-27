@@ -6,9 +6,9 @@ description: Lokale Kampagnen
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 100%
 
@@ -310,7 +310,7 @@ Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kam
 >
 >Die Kampagne kann bis zu ihrem Verfügbarkeitsdatum jederzeit bearbeitet und ihre Parameter verändert werden. Die Lokalstelle hat auch die Möglichkeit, die Kampagne über die Schaltfläche **[!UICONTROL Abbrechen]** zu annulieren.
 
-#### Kampagnen erstellen       {#creating-a-campaign}
+#### Kampagnen erstellen        {#creating-a-campaign}
 
 Wenn eine Bestellung validiert wurde, kann es von der Lokalstelle konfiguriert und ausgeführt werden.
 
