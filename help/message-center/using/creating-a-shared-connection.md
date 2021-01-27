@@ -6,9 +6,9 @@ description: Geteilte Verbindung erstellen
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 5bc6c8a824929c6a61cf562fc961e5bdd1867837
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 100%
 
@@ -21,6 +21,7 @@ ht-degree: 100%
 >
 >* Erweiterungen von Schemata, die von [technischen Workflows des Message-Center-Moduls](../../message-center/using/technical-workflows.md) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 >* Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
+
 >
 
 
