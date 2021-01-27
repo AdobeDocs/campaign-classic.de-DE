@@ -70,7 +70,7 @@ Der Name des Indexes in der Datenbank wird durch Verkettung des Namens der Tabel
 
 ## Beispiele {#examples-3}
 
-Erstellen eines Indexes im Feld &quot;id&quot;. (Das Attribut &quot;@unique&quot;im Element `<dbindex>` löst das Hinzufügen des SQL-Schlüsselworts &quot;UNIQUE&quot;aus, wenn der Index in der Abfrage erstellt wird).
+Erstellen eines Indexes im Feld &quot;id&quot;. (das Attribut &quot;@unique&quot;auf den Triggern `<dbindex>`, die das SQL-Schlüsselwort &quot;UNIQUE&quot;hinzufügen, wenn der Index in der Abfrage erstellt wird).
 
 ```
 <element label="Sample" name="Sample">
