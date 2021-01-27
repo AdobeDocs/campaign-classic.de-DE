@@ -6,9 +6,9 @@ description: Erfahren Sie, wie Sie E-Mail-Renderings erfassen und in einem spezi
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
 
@@ -84,6 +84,7 @@ Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]
 >
 >* Das bedeutet, dass jedes Mal, wenn ein Inbox-Rendering-Bericht erstellt wird, pro E-Mail-Client ein Token abgezogen wird: ein Token für das Rendering in Outlook 2000, einer für das Rendering in Outlook 2010, einer für das Rendering in Apple Mail 9 usw.
 >* Wenn Sie für denselben Versand das Inbox Rendering wiederholen, wird die Anzahl der verfügbaren Token nochmals um die Anzahl der erzeugten Renderings reduziert.
+
 >
 
 
