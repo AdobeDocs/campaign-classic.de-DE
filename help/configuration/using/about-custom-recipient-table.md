@@ -36,7 +36,7 @@ Mit dieser Funktion kann Adobe Campaign Daten aus einer externen Datenbank verar
 
 In diesem Abschnitt werden die Schlüsselpunkte beschrieben, mit denen Sie vorhandene Tabellen in Adobe Campaign zuordnen können, sowie die Konfiguration, die für die Ausführung von Versänden auf der Grundlage einer beliebigen Tabelle gelten soll. Schließlich wird beschrieben, wie Sie Benutzern so praktische Abfrageschnittstellen wie in der Standardtabelle für Empfänger zur Verfügung stellen. Um das in diesem Abschnitt dargestellte Material zu verstehen, ist eine gute Kenntnis der Prinzipien der Bildschirm- und Schema-Design erforderlich.
 
-## Empfehlungen und Einschränkungen        {#recommendations-and-limitations}
+## Empfehlungen und Einschränkungen         {#recommendations-and-limitations}
 
 Die Verwendung einer Tabelle mit einem externen Empfänger unterliegt folgenden Einschränkungen:
 
