@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurieren von Importaufträgen
+title: Konfigurieren von Importvorgängen
 description: Erfahren Sie, wie Sie Importaufträge in Campaign Classic konfigurieren und ausführen.
 audience: platform
 content-type: reference
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '3204'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
 
-# Konfigurieren von Importaufträgen {#executing-import-jobs}
+# Konfigurieren von Importvorgängen {#executing-import-jobs}
 
 Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, CSV-, TAB- oder XML-Format in die Datenbank importieren. Diese Dateien sind mit einer Tabelle (Hauptdatei oder verknüpft) verknüpft und jedes Feld der Quelldatei(en) ist mit einem Feld der Datenbank verknüpft.
 
