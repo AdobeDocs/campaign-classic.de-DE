@@ -6,9 +6,9 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Wiederkehrender Ve
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ Ein **wiederkehrender Versand** erstellt bei jeder Ausführung eine neue Versand
 
 In diesem Video wird das Konfigurieren eines wiederkehrenden Versands und einer Planungsaktivität erläutert.
 
->[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/25040?quality=12)
 
 Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 
