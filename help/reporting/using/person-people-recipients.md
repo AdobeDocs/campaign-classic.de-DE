@@ -6,9 +6,9 @@ description: Versandberichte
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 100%
 
@@ -120,7 +120,7 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florian | +1 | +1 | +1 |
+| Florianisch | +1 | +1 | +1 |
 | Unbekannte Person | - | +1 | - |
 | Zwischenergebnis | 1 | 2 | 2 |
 
@@ -144,7 +144,7 @@ Henrys Handlungen (eine Öffnung, vier Klicks) erscheinen in folgenden Logs:
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florian | +1 | +1 | +1 |
+| Florianisch | +1 | +1 | +1 |
 | Unbekannte Person | - | +1 | - |
 | Henry | +1 | +4 | +1 |
 | Zwischenergebnis | 2 | 6 | 3 |
