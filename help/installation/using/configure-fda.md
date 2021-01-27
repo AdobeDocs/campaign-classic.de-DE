@@ -33,7 +33,7 @@ So richten Sie den Zugriff auf eine externe Datenbank mit FDA ein:
 1. Installieren Sie die entsprechenden Treiber für Ihre Datenbank auf dem Adobe-Campaign-Server. Treiber werden auf den datenbankspezifischen Seiten [aufgelistet, die unten](#fda-specific-configuration) aufgeführt sind.
 1. [Erstellen und konfigurieren Sie ein externes Konto](../../installation/using/connecting-to-database.md), über das Sie die Verbindung zwischen Adobe Campaign und der externen Datenbank herstellen können. Weitere Informationen zu Externen Konti in der Kampagne finden Sie auf [dieser Seite](../../installation/using/external-accounts.md).
 1. [Erstellen Sie das Schema](../../installation/using/creating-data-schema.md) der externen Datenbank in Adobe Campaign. Auf diese Weise können Sie die Datenstruktur der externen Datenbank identifizieren.
-1. Erstellen Sie bei Bedarf ein neues Zielgruppen-Mapping[ aus dem zuvor erstellten Schema. ](../../installation/using/defining-data-mapping.md) Dies ist erforderlich, wenn die Empfänger Ihrer Versand aus der externen Datenbank stammen. Diese Implementierung weist Einschränkungen bei der Personalisierung von Nachrichten auf.
+1. Erstellen Sie bei Bedarf ein neues Zielgruppen-Mapping](../../installation/using/defining-data-mapping.md) aus dem zuvor erstellten Schema. [ Dies ist erforderlich, wenn die Empfänger Ihrer Versand aus der externen Datenbank stammen. Diese Implementierung weist Einschränkungen bei der Personalisierung von Nachrichten auf.
 
 Nachdem das Schema erstellt wurde, können Daten in Adobe Campaign-Workflows verarbeitet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/accessing-an-external-database--fda-.md).
 
