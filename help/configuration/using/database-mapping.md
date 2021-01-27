@@ -506,7 +506,7 @@ Verknüpfen mit einem Ordner (&quot;xtk:folder&quot;-Schema):
 
 Der Standardwert gibt den Bezeichner der ersten zulässigen Parametertypdatei zurück, die in der Funktion &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;eingegeben wurde.
 
-### Beispiel 5 {#example-5}
+### Beispiel 4 {#example-5}
 
 In diesem Beispiel möchten wir einen Schlüssel für einen Link (&quot;Firma&quot; zu &quot;cus:Firma&quot;-Schema) mit dem **xlink**-Attribut und einem Feld der Tabelle (&quot;email&quot;) erstellen:
 
