@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 * [Verschlüsseln und Exportieren von Daten mit einem im Control Panel installierten Schlüssel](../../workflow/using/how-to-use-workflow-data.md#use-case-gpg-encrypt)
 * [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
 * [Verwendung der Zusammenführungsfunktion der Deduplizierungsaktivität](../../workflow/using/deduplication-merge.md)
-* [Einrichten eines wiederkehrenden Importarbeitsablaufs](../../workflow/using/recurring-import-workflow.md)
+* [Einrichten eines Workflows für den wiederkehrenden Import](../../workflow/using/recurring-import-workflow.md)
 
 ## Zielgruppenbestimmung {#designing-queries}
 
