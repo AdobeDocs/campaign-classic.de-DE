@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
 workflow-type: tm+mt
 source-wordcount: '1217'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -88,11 +88,11 @@ Sie können mit Adobe Campaign über spezielle Apps personalisierte und zielgrup
 
 ## Sonstige Kanäle {#other-channels}
 
-Adobe Campaign Angebots Telefonische Versandvorlage, die zur Erstellung von Externen Versänden verwendet wird. Die Verwendung dieses Kanals bedeutet, dass Sie dedizierte Methoden zur Verarbeitung von Ausgabedateien einrichten. Die Konfigurationsschritte sind mit denen von [Briefpost Kanal](../../delivery/using/about-direct-mail-channel.md) identisch.
+Adobe Campaign bietet eine Vorlage für den Festnetztelefon-Versand, die zur Erstellung von externen Sendungen dient. Eine Verwendung dieses Kanals setzt voraus, dass Sie spezielle Methoden zur Verarbeitung von Ausgabedateien eingerichtet haben. Die Konfigurationsschritte sind mit denen des [Brief-Kanals](../../delivery/using/about-direct-mail-channel.md) identisch.
 
 >[!NOTE]
 >
->Der Kanal &quot;Telefon&quot;ist nicht standardmäßig verfügbar. Die Implementierung erfordert die Einbindung von Adobe Consulting oder einem Adobe Partner. Wenden Sie sich für weitere Informationen an Ihren Kundenbetreuer.
+>Der Festnetztelefon-Kanal ist nicht nativ verfügbar. Seine Implementierung erfordert die Einbindung von Adobe Consulting oder einem Adobe-Partner. Wenden Sie sich für weitere Informationen an Ihren Adobe-Support-Mitarbeiter.
 
 Zusätzlich verwenden Sendungen vom Typ &quot;Sonstige&quot; eine spezifische technische Vorlage, die keinen Vorgang auslöst. Dies erlaubt beispielsweise die Verwaltung von außerhalb der Plattform durchgeführten Marketingaktionen.
 
