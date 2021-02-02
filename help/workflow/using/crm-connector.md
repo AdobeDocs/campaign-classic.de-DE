@@ -10,28 +10,28 @@ translation-type: tm+mt
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
 workflow-type: tm+mt
 source-wordcount: '113'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 
 # CRM-Connector{#crm-connector}
 
-Mit der Aktivität **CRM Connector** können Sie die Datensynchronisierung zwischen Adobe Campaign und einem CRM-System konfigurieren.
+Die Aktivität **CRM-Connector** dient der Konfiguration einer Datensynchronisation zwischen Adobe Campaign und einem CRM-System.
 
 Weiterführende Informationen zu CRM-Connectoren finden Sie in diesem [Abschnitt](../../platform/using/crm-connectors.md).
 
-Mit dieser Aktivität können Sie:
+Mit dieser Aktivität können Sie folgende Aufgaben erledigen:
 
-* Aus CRM importieren
-* Export in CRM
-* Objekte importieren, die im CRM gelöscht wurden
-* Objekte im CRM löschen
+* Import aus dem CRM
+* Export in das CRM
+* Import der im CRM gelöschten Objekte
+* Löschung von Objekten im CRM
 
 ![](assets/crm_task_select_op.png)
 
-Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit dem Sie eine Synchronisation konfigurieren möchten, und anschließend das zu synchronisierende Objekt (Konto, Opportunities, Kontakte etc.).
+Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit dem Sie eine Synchronisation konfigurieren möchten, und anschließend das zu synchronisierende Objekt (Konten, Opportunities, Kontakte etc.).
 
 ![](assets/crm_task_select_obj.png)
 
-Die Konfiguration dieser Aktivität hängt von dem durchzuführenden Prozess ab. Verschiedene Konfigurationen werden auf dieser Seite [detailliert beschrieben.](../../platform/using/crm-data-sync.md)
+Die Konfiguration dieser Aktivität hängt von dem auszuführenden Prozess ab. Verschiedene Konfigurationen werden [auf dieser Seite](../../platform/using/crm-data-sync.md) detailliert beschrieben.
