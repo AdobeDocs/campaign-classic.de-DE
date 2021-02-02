@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '3098'
-ht-degree: 98%
+source-wordcount: '3138'
+ht-degree: 97%
 
 ---
 
@@ -24,12 +24,8 @@ _16. Dezember 2020_
 >[!CAUTION]
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 21. März 2021 **eine Verbindung zur Kampagne herstellen können.**
-   >
-   > 
-* Diese Version enthält eine Sicherheitskorrektur: ein Upgrade erforderlich ist, um die Sicherheit Ihrer Umgebung zu erhöhen.
-
->
-
+> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): ein Upgrade erforderlich ist, um die Sicherheit Ihrer Umgebung zu erhöhen.
+> * Wenn Sie die Experience Cloug-Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie nach Adobe I/O wechseln, wie auf dieser Seite [beschrieben. ](../../integrations/using/configuring-adobe-io.md) Der ältere Authentifizierungsmodus von Auth wird am 30. April 2021 **eingestellt.**
 
 
 
