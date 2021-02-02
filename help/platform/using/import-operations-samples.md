@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Allgemeine Beispiele für den Import
-description: Erfahren Sie mehr über allgemeine Importe, die Sie mit Importaufträgen durchführen können.
+description: Erfahren Sie mehr über allgemeine Importe, die Sie mit Importvorgängen durchführen können.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 37cc6cd8b71ec82cd4e6a910d6664a51ed5c091e
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
 # Allgemeine Beispiele für den Import {#import-operations-samples}
 
-## Aus einer Liste von Empfängern {#example--import-from-a-list-of-recipients} importieren
+## Import aus einer Empfängerliste {#example--import-from-a-list-of-recipients}
 
 Gehen Sie wie folgt vor, um eine Empfängerliste aus der Listenübersicht zu erstellen und anzureichern:
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor, um eine Empfängerliste aus der Listenübersicht zu ers
 
    ![](assets/s_ncs_user_import_example00_03.png)
 
-## Neue Datensätze aus einer Textdatei {#example--import-new-records-from-a-text-file-} importieren
+## Import neuer Datensätze aus einer Textdatei {#example--import-new-records-from-a-text-file-}
 
 Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in die Adobe-Campaign-Datenbank zu importieren:
 
@@ -100,7 +100,7 @@ Gehen Sie wie folgt vor, um eine als Textdatei vorliegende Empfängerliste in di
 
          ![](assets/s_ncs_user_import_example07_02.png)
 
-## Aktualisieren und Einfügen von Empfängern {#example--update-and-insert-recipients}
+## Aktualisieren und Hinzufügen von Empfängern {#example--update-and-insert-recipients}
 
 Gehen Sie wie folgt vor, um ausgehend von einer Textdatei existierende Datensätze zu aktualisieren und neue Datensätze in der Datenbank zu erstellen:
 
@@ -140,7 +140,7 @@ Gehen Sie wie folgt vor, um ausgehend von einer Textdatei existierende Datensät
 
       ![](assets/s_ncs_user_import_example06_03.png)
 
-## Richten Sie die Werte mit denen einer externen Datei {#example--enrich-the-values-with-those-of-an-external-file} ein.
+## Anreicherung vorhandener Daten durch externe Dateien {#example--enrich-the-values-with-those-of-an-external-file}
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei jedoch die bereits in der Datenbank enthaltenen Werte Vorrang haben sollen.
 
@@ -191,7 +191,7 @@ Gehen Sie wie folgt vor:
 
    Nur leere Felder wurden mit den Daten der Textdatei aktualisiert, bereits in der Datenbank vorhandene Werte wurden beibehalten.
 
-## Aktualisieren und bereichern Sie die Werte der Werte in einer externen Datei {#example--update-and-enrich-the-values-from-those-in-an-external-file}
+## Aktualisierung und Anreicherung der Werte durch externe Dateien {#example--update-and-enrich-the-values-from-those-in-an-external-file}
 
 Ziel ist es, vereinzelte Felder einer Datenbanktabelle durch in einer Textdatei enthaltene Daten anzureichern, wobei die in der Textdatei enthaltenen Werte Vorrang vor bereits in der Datenbank enthaltenen Werten haben sollen.
 
