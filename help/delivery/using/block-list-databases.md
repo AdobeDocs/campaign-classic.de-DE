@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 100%
+source-wordcount: '392'
+ht-degree: 74%
 
 ---
 
@@ -31,7 +31,7 @@ Im Folgenden finden Sie eine Liste der am häufigsten verwendeten RBLs. Eine umf
 
    Weiterführende Informationen finden Sie unter [https://www.spamhaus.org/](https://www.spamhaus.org/),
 
-   wobei es sich um die wichtigste Datenbank handelt. In diese Liste aufgenommen zu werden, ist eine ernst zu nehmende Situation. In diesem Fall müssen Sie UNVERZÜGLICH reagieren und Geschäftsabteilungen, Verantwortliche für Zustellbarkeit und den Adobe-Campaign-Support informieren.
+   Die Datenbank ist wichtiger. Die Einstufung in diese Liste ist im Allgemeinen eine ernste Situation. In diesem Fall müssen Sie SOFORT handeln und kommerzielle Dienstleistungen, Lieferbarkeit und [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) warnen.
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ Im Folgenden finden Sie eine Liste der am häufigsten verwendeten RBLs. Eine umf
 
    Weiterführende Informationen finden Sie unter [https://www.uribl.com/](https://www.uribl.com/),
 
-   wobei es sich um eine Liste handelt, in der Domains identifiziert sind, die regelmäßig in als Spam deklarierten Nachrichten auftauchen. Sollte Ihre Domain auf dieser Liste stehen, kann das einen starken Einfluss auf Ihre Zustellbarkeit haben. In diesem Fall sollten Sie unverzüglich die für Zustellbarkeit zuständigen Abteilungen sowie den Adobe-Campaign-Support informieren.
+   Diese Liste identifiziert die Domänen, die regelmäßig in als Spam deklarierten Nachrichten erscheinen. Wenn Ihre Domäne auf dieser Liste angezeigt wird, kann dies Ihre Zustellbarkeit erheblich beeinträchtigen. Sie sollten die Bereitstellungsdienste und die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) sofort informieren.
 
 * **SURBL**
 
    Besuchen Sie die Seite [http://www.surbl.org/](http://www.surbl.org/),
 
-   auf der Webseiten identifiziert werden, die regelmäßig in Spam auftauchen. Sollte Ihre Domain auf dieser Liste stehen, kann das einen starken Einfluss auf Ihre Zustellbarkeit haben. In diesem Fall sollten Sie unverzüglich die für Zustellbarkeit zuständigen Abteilungen sowie den Adobe-Campaign-Support informieren.
+   SURBL identifiziert die Websites, die regelmäßig in Spam erscheinen. Wenn Ihre Domäne auf dieser Liste angezeigt wird, kann dies Ihre Zustellbarkeit erheblich beeinträchtigen. Sie sollten die Bereitstellungsdienste und die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) sofort informieren.
 
 * **iX Manitu**
 
