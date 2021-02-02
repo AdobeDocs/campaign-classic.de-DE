@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: CRM-Connectoren
-description: Erste Schritte mit CRM Connectors in Kampagne
+description: Erste Schritte mit CRM-Connectoren in Campaign
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 
 # CRM-Connectoren{#crm-connectors}
 
-## Erste Schritte mit CRM-Connectors {#about-crm-connectors}
+## Erste Schritte mit CRM-Connectoren {#about-crm-connectors}
 
 Adobe Campaign stellt verschiedene CRM-Connectoren zur Verfügung, die die Verbindung der Adobe Campaign-Plattform mit Drittsystemen ermöglichen. So erlauben die CRM-Connectoren z. B. das Synchronisieren von Kontakten, Konten und Bestellungen. Zudem vereinfachen sie die Integration der Anwendung in bestehende Systeme.
 
@@ -30,7 +30,7 @@ Dank der Connectoren ist eine schnelle und einfache Datenintegration möglich. M
 
 ### Kompatible Systeme {#compatible-crm-systems-and-limitations}
 
-Unterstützte CRM-Versionen und Versionen sind in Kampagne [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) beschrieben.
+Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) von Campaign erläutert.
 
 >[!NOTE]
 >
@@ -38,14 +38,14 @@ Unterstützte CRM-Versionen und Versionen sind in Kampagne [Kompatibilitätsmatr
 
 ### Umsetzung {#crm-implementation-steps}
 
-Hier lernen Sie Schritt-für-Schritt-Anleitung zum Verbinden von Kampagne und Microsoft Dynamics [in diesem Abschnitt kennen.](../../platform/using/crm-ms-dynamics.md)
+Eine schrittweise Anleitung zum Verbinden von Campaign und Microsoft Dynamics finden Sie [in diesem Abschnitt](../../platform/using/crm-ms-dynamics.md).
 
-Um CRM-Connectors in Adobe Campaign zu verwenden, führen Sie im Allgemeinen folgende Schritte aus:
+Zur Verwendung von CRM-Connectoren in Adobe Campaign führen Sie generell folgende Schritte aus:
 
-1. Erstellen Sie ein neues externes Konto ausgehend vom Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** im Adobe-Campaign-Navigationsbaum.
-1. Wählen Sie das CRM-System aus, mit dem Sie die Kampagne verbinden möchten.
-1. Geben Sie die Einstellungen zum Aktivieren der Verbindung ein.
-1. Führen Sie den Konfigurationsassistenten aus, um die verfügbare CRM-Tabelle zu generieren: Mit dem Konfigurationsassistenten können Sie Tabellen erfassen und das passende Schema erstellen.
+1. Erstellen Sie ein neues externes Konto ausgehend vom Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** im Adobe Campaign-Navigationsbaum.
+1. Wählen Sie das CRM-System aus, mit dem Sie Campaign verbinden möchten.
+1. Geben Sie Einstellungen zum Aktivieren der Verbindung ein.
+1. Führen Sie den Konfigurationsassistenten aus, um die Tabelle mit verfügbaren CRMs zu generieren: Mit dem Konfigurationsassistenten können Sie Tabellen erfassen und das passende Schema erstellen.
 
    Beispiel für den Konfigurationsassistenten **Salesforce**:
 
@@ -69,7 +69,7 @@ Um CRM-Connectors in Adobe Campaign zu verwenden, führen Sie im Allgemeinen fol
    >
    >Sie können alle Werte einer Adobe-Campaign-Auflistung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
 
-   Beispiel für die Auflistungen **Salesforce**:
+   Beispiel für Auflistungen in **Salesforce**:
 
    ![](assets/crm_connectors_sfdc_enum.png)
 
@@ -81,10 +81,10 @@ Um CRM-Connectors in Adobe Campaign zu verwenden, führen Sie im Allgemeinen fol
 
    >[!NOTE]
    >
-   > Mehrere Auflistungen in Salesforce werden nicht unterstützt.
+   > Auflistungen mit Mehrfachauswahl in Salesforce werden nicht unterstützt.
 
-1. Um Daten zwischen den Daten des Adobe Campaigns und dem CRM-System zu synchronisieren, müssen Sie einen Workflow erstellen und die Aktivität **[!UICONTROL CRM Connector]** verwenden.
+1. Um Daten zwischen Adobe Campaign und dem CRM-System zu synchronisieren, müssen Sie einen Workflow erstellen und die Aktivität **[!UICONTROL CRM-Connector]** verwenden.
 
    ![](assets/crm_connectors_sfdc_wf.png)
 
-   Weitere Informationen zur Datensynchronisierung [auf dieser Seite ](../../platform/using/crm-data-sync.md).
+   Weitere Informationen zur Datensynchronisation finden Sie [auf dieser Seite ](../../platform/using/crm-data-sync.md).
