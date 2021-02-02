@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
 source-wordcount: '1981'
 ht-degree: 95%
@@ -34,7 +34,7 @@ _27. Oktober 2020_
 
 >[!CAUTION]
 >
-> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 21. März 2021 **eine Verbindung zur Kampagne herstellen können.**
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 31. März 2021 **eine Verbindung zur Kampagne herstellen können.**
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): ein Upgrade erforderlich ist, um die Sicherheit Ihrer Umgebung zu erhöhen.
 > * Wenn Sie die Experience Cloug-Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie nach Adobe I/O wechseln, wie auf dieser Seite [beschrieben. ](../../integrations/using/configuring-adobe-io.md) Der ältere Authentifizierungsmodus von Auth wird am 30. April 2021 **eingestellt.**
 
@@ -108,7 +108,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 **Verbesserungen**
 
 * An der **Client-Konsole** wurden verschiedene Verbesserungen vorgenommen:
-   * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht. Die Aktualisierung der Server- und Client-Konsole ist obligatorisch, damit nach dem 21. März 2021 eine Verbindung hergestellt werden kann.
+   * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht. Die Aktualisierung der Server- und Client-Konsole ist obligatorisch, damit nach dem 31. März 2021 eine Verbindung hergestellt werden kann.
    * Um eine Inkompatibilität mit einigen Einschränkungen der Internet-Sicherheitsrichtlinien für Gruppenrichtlinienobjekte zu vermeiden, wurde der Anmeldebildschirm der Campaign-Client-Konsole durch ein integriertes Standard-Windows-Formular ersetzt.
    * Fehlerkorrektur – Es wurde ein Problem beim Kopieren/Einfügen von Aktivitäten in einem Workflow mit der 64-Bit-Client-Konsole behoben. (NEO-27635)
    * Im Menü **Info** wurden Informationen hinzugefügt, um 64- und 32-Bit-Konsolen zu unterscheiden.
