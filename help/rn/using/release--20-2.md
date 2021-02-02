@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: db595e59f4725ba5d125e688e7bfc6d1c1a03d9f
+source-git-commit: 075bb4f97899053a664576c447605f17a033d5d9
 workflow-type: tm+mt
-source-wordcount: '2514'
-ht-degree: 97%
+source-wordcount: '2561'
+ht-degree: 95%
 
 ---
 
@@ -26,12 +26,8 @@ _22. Dezember 2020_
 >[!CAUTION]
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 21. März 2021 **eine Verbindung zur Kampagne herstellen können.**
-   >
-   > 
-* Diese Version enthält eine Sicherheitskorrektur: ein Upgrade erforderlich ist, um die Sicherheit Ihrer Umgebung zu erhöhen.
-
->
-
+> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): ein Upgrade erforderlich ist, um die Sicherheit Ihrer Umgebung zu erhöhen.
+> * Wenn Sie die Experience Cloug-Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie nach Adobe I/O wechseln, wie auf dieser Seite [beschrieben. ](../../integrations/using/configuring-adobe-io.md) Der ältere Authentifizierungsmodus von Auth wird am 30. April 2021 **eingestellt.**
 
 
 
@@ -39,7 +35,7 @@ _22. Dezember 2020_
 
 * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
 * Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
-* Nach dem Ende der Unterstützung für das ältere Binärprotokoll von iOS-APN werden alle Instanzen, die dieses Protokoll verwenden, während des Postupgrades auf das HTTP/2-Protokoll aktualisiert.
+* Nach dem Ende der Unterstützung für iOS-APNs Legacy-Binärprotokoll](https://developer.apple.com/news/?id=c88acm2b) werden alle Instanzen, die dieses Protokoll verwenden, nach der Aktualisierung auf das HTTP/2-Protokoll aktualisiert.[
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, was die Ausführung weiterer SMS-Sendungen verhinderte und zu Leistungsproblemen führte. (NEO-28609)
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des Servers führte, indem eine Speicherbeschädigung beim Bereinigen des Ausdrucks-Parsers verhindert wurde. (NEO-26856)
