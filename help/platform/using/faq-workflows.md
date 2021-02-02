@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Hier erfahren Sie, wie Sie Prozesse und Aufgaben mit Adobe Campaign-Workflows au
 
 ## Wie kann ich Daten in Campaign importieren? {#how-can-i-import-data-in-campaign-}
 
-Hier lernen Sie bewährte Verfahren zum Importieren von Daten in [diesem Abschnitt](../../platform/using/import-export-best-practices.md) kennen.
+Best Practices zum Importieren von Daten finden Sie in [diesem Abschnitt](../../platform/using/import-export-best-practices.md).
 
 ## Kann ich die Ausführung von Workflows überwachen? {#can-i-monitor-workflow-execution-}
 
