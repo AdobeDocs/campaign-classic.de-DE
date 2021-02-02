@@ -618,7 +618,7 @@ ht-degree: 100%
       + [Erstellen und Konfigurieren der Vorlagen](installation/using/creating-and-configuring-the-database.md)
       + [Konfigurieren des Campaign-Servers](installation/using/campaign-server-configuration.md)
       + [Bereitstellen einer Instanz](installation/using/deploying-an-instance.md)
-      + [Installieren von Campaign Classic-Standardpaketen](installation/using/installing-campaign-standard-packages.md)
+      + [Installieren von nativen Campaign Classic-Packages](installation/using/installing-campaign-standard-packages.md)
    + Ergänzende Konfigurationen {#additional-configurations}
       + [Campaign-Server konfigurieren](installation/using/configuring-campaign-server.md)
       + [Über LDAP verbinden](installation/using/connecting-through-ldap.md)
@@ -684,7 +684,7 @@ ht-degree: 100%
       + [RDBMS-spezifische Empfehlungen](production/using/rdbms-specific-recommendations.md)
       + [Anwendungsobjekte](production/using/application-objects.md)
    + Fehlerbehebung {#troubleshooting-toc}
-      + [Überblick über die Fehlerbehebung in der Produktion](production/using/troubleshooting.md)
+      + [Fehlerbehebung in der Produktion – Übersicht](production/using/troubleshooting.md)
       + Allgemeine Probleme {#common-general-issues-toc}
          + [Module und häufige Probleme](production/using/modules-and-frequent-issues.md)
          + [Workflow-Ausführung](production/using/workflow-execution.md)
@@ -698,16 +698,16 @@ ht-degree: 100%
       + Arbeiten mit Protokollen {#working-with-log-toc}
          + [Protokollgenauigkeit](production/using/log-precision.md)
          + [Probleme mit Trackinglogs](production/using/tracking-logs-issues.md)
-      + Datenbankprobleme {#database-issues-toc}
+      + Probleme in Bezug auf die Datenbank {#database-issues-toc}
          + [Datenbankleistung](production/using/database-performances.md)
          + [Codierung der Oracle-Datenbank](production/using/encoding-of-the-oracle-database.md)
       + Verbindungsverbesserungen {#connection-improvements-toc}
          + [Verbindung schlägt fehl](production/using/failure-to-connect.md)
          + [Verbindungsschwellen](production/using/connection-thresholds.md)
-      + Technische Fehlerbehebung {#technical-troubleshooting-toc}
+      + Behebung technischer Probleme {#technical-troubleshooting-toc}
          + [Stack Trace in Linux](production/using/stack-trace-in-linux.md)
          + [JSP-Verhalten](production/using/jsp-behavior.md)
-         + [Tomcat-Version suchen](production/using/locate-tomcat-version.md)
+         + [Speicherort der Tomcat-Version](production/using/locate-tomcat-version.md)
 + Entwicklerhandbuch {#configuring-campaign-classic}
    + Datenmodell {#data-model}
       + [Über das Datenmodell](configuration/using/about-data-model.md)
