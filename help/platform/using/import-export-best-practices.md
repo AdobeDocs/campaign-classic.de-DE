@@ -2,7 +2,7 @@
 solution: Campaign Standard
 product: campaign
 title: Best Practices beim Import und Export
-description: Erfahren Sie mehr über die Best Practices, die beim Importieren oder Exportieren von Daten befolgt werden sollten.
+description: Erfahren Sie mehr über Best Practices, die beim Importieren oder Exportieren von Daten befolgt werden sollten.
 audience: automating
 content-type: reference
 topic-tags: workflow-general-operation
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: a2a99135bdd74d87c04262b53e074b6aa05e7915
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,17 +21,17 @@ Eine sorgfältige Arbeitsweise und die Befolgung der unten stehenden einfachen R
 
 ## Verwenden von Workflow-Vorlagen {#using-import-templates}
 
-Die meisten Workflows zum Import von Daten sollten die folgenden Aktivitäten enthalten: **[!UICONTROL Datei laden]**, **[!UICONTROL Versöhnung]**, **[!UICONTROL Segmentierung]**, **[!UICONTROL Deduplizierung-Duplikate]**, **[!UICONTROL Daten aktualisieren]**.
+Die meisten Workflows für den Import von Daten sollten folgende Aktivitäten beinhalten: **[!UICONTROL Datei laden]**, **[!UICONTROL Abstimmung]**, **[!UICONTROL Segmentierung]**, **[!UICONTROL Deduplizierung]**, **[!UICONTROL Daten-Update]**.
 
-Die Verwendung von Workflow-Vorlagen macht es sehr einfach, ähnliche Importe vorzubereiten und die Datenkonsistenz innerhalb der Datenbank sicherzustellen.
+Workflow-Vorlagen vereinfachen die Durchführung ähnlicher Importe und halten die Datenbank konsistent.
 
 In vielen Projekten werden Importe ohne **[!UICONTROL Deduplizierung]** erstellt, da die im Projekt verwendeten Dateien ohnehin keine Duplikate aufweisen. Beim Import verschiedener Dateien können jedoch Duplikate entstehen. Dann ist eine Deduplizierung schwierig. Deshalb ist eine Deduplizierung eine gute Vorsichtsmaßnahme bei jedem Import-Workflow.
 
 Verlassen Sie sich nicht darauf, dass die eingehenden Daten konsistent und korrekt sind oder dass sich die IT-Abteilung oder der Adobe-Campaign-Verantwortliche darum kümmert. Führen Sie stattdessen während des Projekts die Datenbereinigung durch. Achten Sie beim Datenimport auf die Deduplizierung, die Abstimmung und die Gewährleistung der Konsistenz.
 
-Ein Beispiel für eine generische Workflow-Vorlage zum Importieren von Daten finden Sie im [Beispiel: Workflow-Vorlage zum Importieren von Daten](../../platform/using/creating-import-export-templates.md).
+Ein Beispiel für eine allgemeine Workflow-Vorlage zum Datenimport finden Sie unter [Beispiel: Workflow-Vorlage zum Importieren von Daten](../../platform/using/creating-import-export-templates.md).
 
-## Dateiformate mit einfach strukturierten Daten verwenden         {#using-flat-file-formats}
+## Dateiformate mit einfach strukturierten Daten verwenden          {#using-flat-file-formats}
 
 Das effizienteste Format für Importe sind flache Dateien, die im Bulk-Modus auf Datenbankebene importiert werden können.
 
@@ -52,7 +52,7 @@ Smith;Clara;08/02/1989;hayden.smith@example.com;124567
 Durance;Allison;15/12/1978;allison.durance@example.com;120987
 ```
 
-## Komprimierung verwenden          {#using-compression}
+## Komprimierung verwenden           {#using-compression}
 
 Verwenden Sie für Importe und Exporte möglichst ZIP-Dateien. GZIP wird standardmäßig unterstützt. Beim Import von Dateien können Sie über die Workflow-Aktivität **[!UICONTROL Datei laden]** eine Vorbearbeitung hinzufügen. Bei der Datenextraktion können Sie über die Workflow-Aktivität **[!UICONTROL Dateiextraktion]** eine Nachbearbeitung hinzufügen.
 
@@ -67,7 +67,7 @@ Regelmäßige Importe müssen im Deltamodus durchgeführt werden. Damit wird gew
 
 Vollständige Importe sollten nur für das erstmalige Laden verwendet werden.
 
-## Konsistenz gewährleisten          {#maintaining-consistency}
+## Konsistenz gewährleisten           {#maintaining-consistency}
 
 Um die Konsistenz der Adobe-Campaign-Datenbank zu gewährleisten, befolgen Sie die unten stehenden Grundsätze:
 
