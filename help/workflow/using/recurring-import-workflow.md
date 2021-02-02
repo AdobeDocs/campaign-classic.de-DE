@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
 workflow-type: tm+mt
 source-wordcount: '1139'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # Einrichten eines Workflows für den wiederkehrenden Import {#setting-up-a-recurring-import}
 
-Die Verwendung einer Workflow-Vorlage ist eine Best Practice, wenn Sie regelmäßig Dateien mit derselben Struktur importieren müssen.
+Für den regelmäßigen Import von Dateien derselben Struktur empfiehlt sich die Verwendung einer Workflow-Vorlage.
 
 In diesem Beispiel wird gezeigt, wie ein Workflow für den wiederholten Import von Profilen aus einer CRM-Lösung in der Adobe Campaign-Datenbank erstellt wird. Weiterführende Informationen zu jeder Aktivität finden Sie in diesem [Abschnitt](../../workflow/using/about-activities.md).
 
