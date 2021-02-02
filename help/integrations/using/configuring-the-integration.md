@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-experience-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 100%
+source-wordcount: '607'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Sie müssen für diesen Operator eine Sicherheitszone konfigurieren, um über Ad
 >
 >Wir empfehlen dringend die Erstellung einer Sicherheitszone für AEM, um Sicherheitsprobleme zu vermeiden. Weiterführende Informationen dazu finden Sie im [Installationshandbuch](../../installation/using/configuring-campaign-server.md#defining-security-zones).
 
-Wenn Ihre Campaign-Instanz von Adobe gehostet wird, kontaktieren Sie das Adobe-Supportteam. Wenn Sie Adobe Campaign On-Premise benutzen, gehen Sie folgendermaßen vor:
+Wenn Ihre Kampagne von Adobe gehostet wird, wenden Sie sich an das [Adobe-Kundenservice](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-Team. Gehen Sie wie folgt vor, wenn Sie Kampagne vor Ort verwenden:
 
 1. Öffnen Sie die Konfigurationsdatei **serverConf.xml**.
 1. Gehen Sie zum Attribut **allowUserPassword** der ausgewählten Sicherheitszone und setzen Sie es auf **true**.
