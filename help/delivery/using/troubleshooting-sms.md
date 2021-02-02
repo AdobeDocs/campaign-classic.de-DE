@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 96ad3208c792efb47097768bc779bec59d9ca313
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2745'
-ht-degree: 89%
+source-wordcount: '2751'
+ht-degree: 88%
 
 ---
 
@@ -203,7 +203,7 @@ Bei hexadezimalen Zeichen können Sie den Unterschied zwischen ähnlichen Zeiche
 
 Um Unicode in hexadezimale Werte zu konvertieren, können Sie Online-Tools wie die Website [Unicode-Codekonverter](https://r12a.github.io/app-conversion/) verwenden. Geben Sie Ihren Text ein, vergewissern Sie sich, dass keine persönlichen Informationen wie Telefonnummern vorhanden sind, und klicken Sie auf **Konvertieren**. Die hexadezimalen Werte werden unten angezeigt (UTF-32-Zone).
 
-Geben Sie beim Öffnen von Tickets für Kodierungsprobleme, sei es beim Provider oder beim Adobe Campaign-Support, immer eine hexadezimale Version Ihrer Eingabe und Ihrer Anzeige an.
+Wenn Sie Tickets zu Kodierungsproblemen öffnen, egal ob mit dem Anbieter oder der [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), fügen Sie immer eine Hexadezimalversion Ihres Typs und Ihrer Anzeige bei.
 
 **Schritt 3: Überprüfen, was Sie senden sollten**
 
