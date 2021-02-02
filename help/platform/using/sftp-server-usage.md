@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 100%
+source-wordcount: '1113'
+ht-degree: 94%
 
 ---
 
@@ -98,11 +98,11 @@ Im Folgenden finden Sie die Informationen, die Sie prüfen und dem Adobe-Support
    >
    >Mithilfe des Netcat Tools können Sie mühelos Netzwerkverbindungen auf verschiedenen Betriebssystemen verwalten (siehe [https://eternallybored.org/misc/netcat/](https://eternallybored.org/misc/netcat/)).
 
-   Wenn der Port nicht geöffnet ist, stellen Sie sicher, dass Sie ausgehende Verbindungen auf Ihrer Seite öffnen und versuchen Sie es dann erneut. Wenn Sie immer noch Verbindungsprobleme haben, melden Sie das Ergebnis des Befehls dem Adobe-Supportteam.
+   Wenn der Anschluss nicht geöffnet ist, stellen Sie sicher, dass Sie die ausgehenden Verbindungen an Ihrer Seite öffnen, und versuchen Sie es erneut. Wenn weiterhin Verbindungsprobleme auftreten, teilen Sie die Ausgabe des Befehls mit dem [Adobe-Kundendienst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-Team.
 
 1. Überprüfen Sie, ob die öffentliche IP-Adresse, von der Sie versuchen, die SFTP-Verbindung herzustellen, auch tatsächlich diejenige ist, die Sie dem Adobe-Supportteam zur Aufnahme in die Zulassungsliste bereitgestellt haben.
 1. Wenn Sie Passwort-basierte Authentifizierung verwenden, ist Ihr Passwort möglicherweise abgelaufen (die Gültigkeitsdauer von Passwörtern beträgt 90 Tage). Daher empfehlen wir dringend die Verwendung einer schlüsselbasierten Authentifizierung (siehe [Best Practices für die Nutzung von SFTP-Servern](#sftp-server-best-practices)).
-1. Wenn Sie eine schlüsselbasierte Authentifizierung verwenden, überprüfen Sie, ob der von Ihnen verwendete Schlüssel mit dem übereinstimmt, den Sie dem Adobe-Supportteam zur Konfiguration der Instanz bereitgestellt haben.
+1. Wenn Sie eine schlüsselbasierte Authentifizierung verwenden, überprüfen Sie, ob der Schlüssel, den Sie verwenden, mit dem übereinstimmt, den Sie dem [Adobe Kundendienst](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-Team für die Instanzkonfiguration angegeben haben.
 1. Wenn Sie FileZilla oder ein ähnliches FTP-Tool verwenden, geben Sie im Supportticket die Verbindungsprotokoll-Details an.
 
 ## „Hostname konnte nicht aufgelöst werden“
