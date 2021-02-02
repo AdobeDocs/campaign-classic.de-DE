@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Die Arbeitssprache entspricht der Sprache, in der Sie den Bericht verfassen. Bei
 
 Im Tab **[!UICONTROL Rendering]** haben Sie die Möglichkeit, den Anzeigemodus der Daten auf der Seite anzupassen. Folgende Elemente können ausgewählt werden:
 
-* Die Diagrammwiedergabeengine: Die Rendering-Engine ist standardmäßig HTML 5.
+* Die Rendering-Engine für Grafiken: Die Rendering-Engine ist standardmäßig HTML 5.
 * Die Navigation im Bericht: über Schaltflächen oder Links.
 * Die Standardposition der Titel der Berichtelemente. Die Position kann auf Ebene jedes Elements überschrieben werden.
 * Die Vorlage oder das Thema, das zur Erzeugung der Berichtseiten verwendet wird.
