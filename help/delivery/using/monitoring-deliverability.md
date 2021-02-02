@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
 workflow-type: tm+mt
-source-wordcount: '809'
-ht-degree: 100%
+source-wordcount: '791'
+ht-degree: 93%
 
 ---
 
@@ -71,17 +71,12 @@ Die bereitgestellten Werte sind in Echtzeit verfügbar, wodurch proaktive Unters
 
 ## Bericht zum technischen Zustellbarkeits-Monitoring {#technical-deliverability-monitoring}
 
-Der Bericht zum technischen Zustellbarkeits-Monitoring wird täglich aktualisiert und ist aufrufbar, indem Sie zu **[!UICONTROL Monitoring]** > **[!UICONTROL Übersicht]** navigieren und auf den Link **[!UICONTROL Technisches Monitoring]** auf dem Tab **[!UICONTROL Startseite]** von Adobe Campaign klicken. Er enthält eine Reihe von Indikatoren zur Zustellungsqualität Ihrer Plattform.
+Der Bericht **Überwachung der technischen Lieferbarkeit** enthält eine Reihe von Qualitätsindikatoren für die Bereitstellung Ihrer Plattform. Sie können diesen täglichen Bericht per E-Mail erhalten. Öffnen Sie zum Anfordern einen bestimmten [Unterstützungsfall](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und geben Sie Folgendes an:
 
-Diese Indikatoren werden täglich um 9 Uhr aktualisiert.
+* der Name der Instanz
+* die E-Mail-Adressen, an die der Bericht gesendet werden soll
 
->[!NOTE]
->
->Darüber hinaus besteht die Möglichkeit, den Bericht täglich per E-Mail zu beziehen. Teilen Sie uns hierzu bitte Ihre Adresse per E-Mail oder über das Adobe Campaign-Extranet mit.
-
-![](assets/s_tn_del_monitoring.png)
-
-Folgende Indikatoren werden im Bericht dargestellt:
+Dieser Bericht enthält die folgenden Indikatoren:
 
 * **[!UICONTROL Reverse DNS]**: Adobe Campaign prüft, ob für eine IP-Adresse ein Reverse-DNS angegeben ist und ob dieses wirklich auf die IP zurückverweist.
 
@@ -92,6 +87,9 @@ Folgende Indikatoren werden im Bericht dargestellt:
 * **[!UICONTROL IP und RBL-Domain]** (Real-time Blackhole List): Eine Liste der IP-Adressen und Domains, die von Blockierungsliste-Organisationen aufgrund schlechter Reputation markiert wurden. Diese Listen werden von speziellen Organisationen wie Spamhaus, Spamcop, SURBL/URIBL etc. geführt. Adobe Campaign verarbeitet derzeit Prüfungen für RBLs, die erhebliche Auswirkungen auf die Zustellbarkeit haben. Diese RBLs spiegeln die Reputation des Absenders wider und können von ISPs referenziert werden, bevor sie den Empfang Ihrer E-Mails akzeptieren.
 
 * **[!UICONTROL SNDS]** (Smart Network Data Services): Ein [Windows Live Hotmail Service](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx) zur Spam-Bekämpfung. Hotmail ist der einzige ISP, der diese Informationen bereitstellt. Benchmark-Ergebnisse sind ein grünes Filterergebnis, eine Beschwerderate von weniger als 0,1 % und keine Spam-Fallen.
+
+Diese Indikatoren werden täglich um 9 Uhr aktualisiert.
+
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
