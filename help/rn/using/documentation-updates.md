@@ -197,7 +197,7 @@ Datenschutzgesetze in Thailand und Brasilien – [mehr dazu](https://helpx.adobe
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichten-Vorlage wird in [diesem Abschnitt](../../message-center/using/template-unpublication.md) beschrieben.
+Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichtenvorlage wird in [diesem Abschnitt](../../message-center/using/template-unpublication.md) beschrieben.
 
 Neue Optionen wurden zur Liste der Campaign Classic-Optionen hinzugefügt. Mit diesen Optionen können Einschränkungen beim Versand von E-Mails festgelegt werden, die von einer personalisierten URL und Anhängen heruntergeladene Bilder enthalten. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
