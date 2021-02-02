@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Mithilfe von [Workflows](#use-workflows) können Sie Empfängerprofile in die Ad
 
 ## Verwenden von Workflows{#use-workflows}
 
-Exporte und Importe werden in dedizierten Vorlagen konfiguriert, die über Import- und Export-Aktivitäten Workflows ausgeführt werden. Sie können automatisch nach einem Zeitplan wiederholt werden, um beispielsweise den Datenaustausch zwischen verschiedenen Informationssystemen zu automatisieren. [mehr dazu](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
+Exporte und Importe werden in speziellen Vorlagen konfiguriert, die durch Workflows über Import- und Exportaktivitäten ausgeführt werden. Sie können automatisch anhand eines Zeitplans wiederholt werden, um beispielsweise den Datenaustausch zwischen verschiedenen Informationssystemen zu automatisieren. [mehr dazu](../../platform/using/import-export-workflows.md#best-practices-when-importing-data)
 
 Bei Bedarf können Sie einen gelegentlichen Import- oder Exportvorgang über die unten beschriebene Funktion **[!UICONTROL Allgemeine Importe und Exporte]** erstellen.
 
