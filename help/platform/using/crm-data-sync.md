@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: CRM Connectors-Datensynchronisierung
-description: Daten zwischen Kampagne und CRM verwalten
+title: Datensynchronisierung über CRM-Connectoren
+description: Daten zwischen Campaign und Ihrem CRM verwalten
 audience: platform
 content-type: reference
 topic-tags: connectors
@@ -10,35 +10,35 @@ translation-type: tm+mt
 source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Datensynchronisierung zwischen Kampagne und CRM {#data-synchronization}
+# Datensynchronisation zwischen Campaign und dem CRM-System {#data-synchronization}
 
-Die Datensynchronisierung zwischen Adobe Campaign und CRM erfolgt über eine dedizierte Workflow-Aktivität: [CRM Connector](../../workflow/using/crm-connector.md).
+Die Datensynchronisation zwischen Adobe Campaign und dem CRM-System erfolgt über die spezifische Workflow-Aktivität [CRM-Connector](../../workflow/using/crm-connector.md).
 
-Um beispielsweise die Microsoft Dynamics-Daten in Adobe Campaign zu importieren, erstellen Sie den folgenden Workflow:
+Erstellen Sie zum Importieren der Daten aus Microsoft Dynamics in Adobe Campaign beispielsweise folgenden Workflow:
 
 ![](assets/crm_connectors_msdynamics_07.png)
 
-Dieser Workflow importiert die Kontakte aus Microsoft Dynamics, synchronisiert sie und stimmt sie mit den in Adobe Campaign vorhandenen Daten ab und aktualisiert die Adobe-Campaign-Datenbank.
+Dieser Workflow importiert die Kontakte über Microsoft Dynamics, synchronisiert sie mit den in Adobe Campaign vorhandenen Daten, löscht doppelte Kontakte und aktualisiert die Adobe Campaign-Datenbank.
 
-Die **[!UICONTROL CRM Connector]**-Aktivität muss für die Synchronisierung der Daten konfiguriert werden.
+Die Aktivität **[!UICONTROL CRM-Connector]** muss für die Synchronisation der Daten konfiguriert werden.
 
 ![](assets/crm_connectors_msdynamics_08.png)
 
 Mit dieser Aktivität können Sie:
 
-* Aus CRM importieren - [Weitere Informationen](#importing-from-the-crm)
-* In CRM exportieren - [Weitere Informationen](#exporting-to-the-crm)
-* Objekte importieren, die in CRM gelöscht wurden - [Weitere Informationen](#importing-objects-deleted-in-the-crm)
-* Objekte in CRM löschen - [Weitere Informationen](#deleting-objects-in-the-crm)
+* Aus dem CRM-System importieren – [Weitere Informationen](#importing-from-the-crm)
+* In das CRM-System exportieren – [Weitere Informationen](#exporting-to-the-crm)
+* Objekte importieren, die im CRM gelöscht wurden – [Weitere Informationen](#importing-objects-deleted-in-the-crm)
+* Objekte im CRM löschen – [Weitere Informationen](#deleting-objects-in-the-crm)
 
 ![](assets/crm_task_select_op.png)
 
-Wählen Sie das Externe Konto aus, das mit dem CRM-Modul übereinstimmt, mit dem Sie die Synchronisierung konfigurieren möchten, und wählen Sie dann das zu synchronisierende Objekt aus: Konten, Möglichkeiten, Kontakte usw.
+Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit dem Sie eine Synchronisation konfigurieren möchten, und anschließend das zu synchronisierende Objekt: Konto, Opportunities, Leads, Kontakte etc.
 
 ![](assets/crm_task_select_obj.png)
 
@@ -126,10 +126,10 @@ Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen,
 * Vergleiche vom Typ JOIN werden nicht unterstützt.
 * Der Ausdruck (linke Spalte) muss zwingend ein Feld sein. Er darf weder eine Kombination aus mehreren Ausdrücken, noch eine Ziffer usw. sein.
 
-Beispielsweise sind die folgenden Filterbedingungen NICHT für einen CRM-Import gültig, da der ODER-Operator auf derselben Ebene wie die UND-Operatoren platziert wird:
+So wären z. B. folgende Filterbedingungen im Rahmen eines CRM-Imports UNGÜLTIG, da der ODER-Operator auf demselben Niveau wie die UND-Operatoren verwendet wird:
 
-* der ODER-Operator sich auf dem gleichen Niveau wie die UND-Operatoren befinden;
-* die Vergleiche sich auf Zeichenketten beziehen
+* Der ODER-Operator befindet sich auf dem gleichen Niveau wie die UND-Operatoren.
+* Die Vergleiche beziehen sich auf Zeichenketten.
 
 ![](assets/crm_import_wrong_filter.png)
 
@@ -168,7 +168,7 @@ Gehen Sie bei der Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wi
 
    >[!IMPORTANT]
    >
-   >Die Exportfunktion der Aktivität **[!UICONTROL CRM Connector]** kann Felder auf der CRM-Seite einfügen oder aktualisieren. Um Feldaktualisierungen in CRM zu aktivieren, müssen Sie den primären Schlüssel der Remote-Tabelle angeben. Wenn der Schlüssel fehlt, werden Daten eingefügt (anstatt aktualisiert zu werden).
+   >Die Exportfunktion der Aktivität **[!UICONTROL CRM-Connector]** kann Felder auf der CRM-Seite einfügen oder aktualisieren. Um Feldaktualisierungen im CRM zu aktivieren, müssen Sie den Primärschlüssel der Remote-Tabelle angeben. Wenn der Schlüssel fehlt, werden Daten eingefügt (anstatt dass sie aktualisiert werden).
 
 1. Geben Sie im Abschnitt **[!UICONTROL Mapping]** die zu exportierenden Adobe-Campaign-Felder und die entsprechenden CRM-Felder an.
 
@@ -224,7 +224,7 @@ Zurückweisungen werden mit dem Fehlercode und der entsprechenden Nachricht erfa
 >
 >Auch wenn die Option **[!UICONTROL Zurückweisungen in einer Datei speichern]** nicht aktiviert wurde, werden für jede zurückgewiesene Spalte ein Fehlercode und die entsprechende Nachricht erzeugt.
 
-Mit der Output-Transition **[!UICONTROL Ablehnen]** können Sie auf das Output-Schema zugreifen, das die für Fehlermeldungen und -codes relevanten Spalten enthält. Bei Salesforce.com lautet diese Spalte **errorSymbol** (Fehlersymbol, abweichend vom Fehlercode), **errorMessage** (Beschreibung des Fehlerkontexts).
+Die ausgehende Transition **[!UICONTROL Zurückweisung]** verleiht Ihnen Zugang zum Ausgabeschema, welches die Spalten für Fehlermeldungen und -Codes und enthält. Bei Salesforce.com lautet die Spalte **errorSymbol** (Fehlersymbol, unterscheidet sich vom Fehler-Code), **errorMessage** (Beschreibung des Fehlerkontexts).
 
 ## Import der im CRM gelöschten Objekte {#importing-objects-deleted-in-the-crm}
 
