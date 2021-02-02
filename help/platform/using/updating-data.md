@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,7 +92,7 @@ Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren un
 
    ![](assets/s_ncs_user_export_list_start.png)
 
-   Weitere Informationen zum Konfigurieren des Export-Assistenten finden Sie in [diesem Abschnitt](../../platform/using/executing-export-jobs.md).
+   Weitere Informationen zur Konfiguration des Export-Assistenten finden Sie [in diesem Abschnitt](../../platform/using/executing-export-jobs.md).
 
 ## Anmeldung für einen Dienst {#subscribing-to-a-service}
 
