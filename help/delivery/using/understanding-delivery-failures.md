@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 9ee7ef1faf06c31ec6659734582caac099a01bc1
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '2491'
-ht-degree: 100%
+source-wordcount: '2497'
+ht-degree: 99%
 
 ---
 
@@ -242,12 +242,15 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 >Bei gehosteten oder hybriden Installationen, wenn Sie ein Upgrade auf den Enhanced MTA durchgeführt haben:
 >
 >* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
+   >
+   >
+* Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
+   >
+   >
+* Bei Instanzen, die den Enhanced MTA ohne **Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL Eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
 >
->* Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
 >
->* Bei Instanzen, die den Enhanced MTA ohne **Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL Eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
->
->Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 ### E-Mail-Verwaltungsregeln {#email-management-rules}
 
@@ -294,7 +297,7 @@ Der Adobe Campaign-Messaging-Server wendet eine einzige **Domain-Verwaltungsrege
 * Sie haben die Möglichkeit, gewisse Authentifizierungsnormen und Verschlüsselungsschlüssel zu aktivieren, um den Domain-Namen zu prüfen: **Sender ID**, **DomainKeys**, **DKIM**, **S/MIME**.
 * Mit den **SMTP-Relais**-Parametern können Sie die IP-Adresse und den Relais-Server-Port für eine bestimmte Domain konfigurieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Wenn Ihre Nachrichten in Outlook mit **[!UICONTROL im Namen von]** in der Absenderadresse angezeigt werden, vergewissern Sie sich, dass Sie Ihre E-Mails nicht mit der **Sender ID** signieren, dem veralteten proprietären Authentifizierungsstandard für E-Mails von Microsoft. Wenn die Option **[!UICONTROL Sender ID]** aktiviert ist, deaktivieren Sie das entsprechende Feld und wenden Sie sich an den Support von Adobe Campaign. Ihre Zustellbarkeit wird nicht beeinträchtigt.
+Wenn Ihre Nachrichten in Outlook mit **[!UICONTROL im Namen von]** in der Absenderadresse angezeigt werden, vergewissern Sie sich, dass Sie Ihre E-Mails nicht mit der **Sender ID** signieren, dem veralteten proprietären Authentifizierungsstandard für E-Mails von Microsoft. Wenn die Option **[!UICONTROL Sender-ID]** aktiviert ist, deaktivieren Sie das entsprechende Feld und wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Ihre Zustellbarkeit wird nicht beeinträchtigt.
 
 >[!IMPORTANT]
 >
