@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Konfigurieren von Importvorgängen
-description: Erfahren Sie, wie Sie Importaufträge in Campaign Classic konfigurieren und ausführen.
+description: Erfahren Sie, wie Sie Importvorgänge in Campaign Classic konfigurieren und ausführen.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -10,30 +10,30 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '3204'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Konfigurieren von Importvorgängen {#executing-import-jobs}
 
-Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, CSV-, TAB- oder XML-Format in die Datenbank importieren. Diese Dateien sind mit einer Tabelle (Hauptdatei oder verknüpft) verknüpft und jedes Feld der Quelldatei(en) ist mit einem Feld der Datenbank verknüpft.
+Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, CSV-, TAB- oder XML-Format in die Datenbank importieren. Diese Dateien sind mit einer Tabelle (Haupttabelle oder verknüpfte Tabelle) verbunden; jedes Feld der Quelldateien ist mit einem Feld der Datenbank verknüpft.
 
 >[!NOTE]
 >
->Um Daten zu importieren, ohne sie mit Daten in der Datenbank zu verknüpfen, steht die Funktion **[!UICONTROL Liste importieren]** zur Verfügung. Diese Daten können dann ausschließlich in Workflows mit dem Objekt **[!UICONTROL Liste lesen]** verwendet werden. Weiterführende Informationen dazu finden Sie auch auf [dieser Seite](../../workflow/using/read-list.md).
+>Um Daten zu importieren, ohne sie mit Daten in der Datenbank zu mappen, steht die Funktion **[!UICONTROL Liste importieren]** zur Verfügung. Diese Daten können dann ausschließlich in Workflows mit dem Objekt **[!UICONTROL Liste lesen]** verwendet werden. Weiterführende Informationen dazu finden Sie auch auf [dieser Seite](../../workflow/using/read-list.md).
 
-Mit dem Import-Assistent können Sie einen Import konfigurieren, seine Optionen definieren (z. B. Datenumwandlung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder vielfältig) und den Rechten des Operators abhängt.
+Mit dem Import-Assistenten können Sie einen Import konfigurieren, seine Optionen definieren (z. B. Formatierung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
-Der Import-Assistent wird angezeigt, nachdem ein neuer Importauftrag erstellt wurde (siehe [Erstellen von Import- und Exportaufträgen](../../platform/using/creating-import-export-jobs.md).
+Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezeigt (siehe [Erstellen von Import- und Exportvorgängen](../../platform/using/creating-import-export-jobs.md)).
 
 >[!NOTE]
 >
->Bei Verwendung eines IIS-Web-Servers ist u. U. eine zusätzliche Konfiguration erforderlich, um das Hochladen großer Dateien (> 28 MB) zu ermöglichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit).
+>Bei Verwendung eines IIS-Webservers ist u. U. eine zusätzliche Konfiguration erforderlich, um das Hochladen großer Dateien (> 28 MB) zu ermöglichen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/integration-into-a-web-server-for-windows.md#changing-the-upload-file-size-limit).
 
 ## Quelldatei {#source-file}
 
-Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten importiert und jede Spalte wird einer Datenbankspalte zugeordnet.
+Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten importiert und jede Spalte wird einem Datenbankfeld zugeordnet.
 
 ## 1. Schritt - Importvorlage auswählen {#step-1---choosing-the-import-template}
 
@@ -335,4 +335,4 @@ Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie 
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Sie können dann die Ausführung des Importauftrags überwachen (siehe [Auftragsausführung überwachen](../../platform/using/monitoring-jobs-execution.md)).
+Anschließend können Sie die Ausführung des Importvorgangs überwachen (siehe [Überwachung der Vorgangsausführung](../../platform/using/monitoring-jobs-execution.md)).
