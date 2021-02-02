@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 98a2c5aa01b4d45ceeb14fb1ad7a607b236c2817
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 100%
+source-wordcount: '1424'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,7 @@ Gehen Sie zur Erstellung des A/B-Tests wie folgt vor:
 * [3. Schritt: Erstellung von zwei Versandvorlagen](#step-3--creating-two-delivery-templates)
 * [4. Schritt: Konfiguration der Sendungen im Workflow](#step-4--configuring-the-deliveries-in-the-workflow)
 * [5. Schritt: Erstellung des Scripts](#step-5--creating-the-script)
+* [6. Schritt - Ausgabeformat bestimmen](#step-6--defining-the-final-delivery)
 * [7. Schritt: Start des Workflows](#step-7--starting-the-workflow)
 * [8. Schritt: Ergebnisanalyse](#step-8--analyzing-the-result).
 
@@ -49,7 +50,7 @@ Zielgruppen-Workflows werden im Rahmen von Kampagnen im Tab **[!UICONTROL Zielbe
 
    ![](assets/use_case_abtesting_targetwkfl_002.png)
 
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen neuen Workflow zu erstellen oder verwenden Sie den Standard-Workflow und benennen Sie ihn. Lesen Sie diesbezüglich auch diesen [Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
+1. Ändern Sie die Beschriftung des vorhandenen Workflows oder klicken Sie auf **[!UICONTROL Hinzufügen]**, um einen neuen Workflow zu erstellen.
 
    ![](assets/use_case_abtesting_targetwkfl_003.png)
 
@@ -183,7 +184,7 @@ Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird
 
 ### Script-Beispiel {#example-of-a-script}
 
-Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden. Weitere Informationen hierzu finden Sie im Abschnitt [Implementierung](#implementation).
+Das folgende Skript kann wie im Targeting-Arbeitsablauf verwendet werden (siehe [Konfigurieren des Skripts](../../workflow/using/a-b-testing.md#configuring-script)).
 
 ```
  // query the database to find the winner (best open rate)
@@ -229,12 +230,12 @@ Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden
    vars.deliveryId = delivery.id
 ```
 
-Eine ausführliche Erläuterung des Scripts finden Sie unter [Script-Details](#details-of-the-script).
+Eine ausführliche Erläuterung des Skripts finden Sie in [diesem Abschnitt](../../workflow/using/a-b-testing.md#details-of-the-script).
 
-### Umsetzung {#implementation}
+### Konfigurieren des Skripts {#configuring-script}
 
 1. Öffnen Sie die **[!UICONTROL JavaScript-Code]**-Aktivität.
-1. Kopieren Sie das in [Script-Beispiel](#example-of-a-script) angebotene Script in das Fenster **[!UICONTROL JavaScript-Code]**.
+1. Kopieren Sie das vorgestellte Skript [zuvor](../../workflow/using/a-b-testing.md#example-of-a-script) in das Fenster **[!UICONTROL JavaScript-Code]**.
 
    ![](assets/use_case_abtesting_configscript_002.png)
 
