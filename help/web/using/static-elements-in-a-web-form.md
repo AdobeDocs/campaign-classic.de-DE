@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
 workflow-type: tm+mt
 source-wordcount: '1329'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Folgende Feldtypen sind verfügbar:
 
 ## HTML-Inhalt einfügen {#inserting-html-content}
 
-Sie können HTML-Inhalte in eine Formularseite einschließen: Hypertext-Links, Bilder, formatierte Absätze, Videos usw.
+Sie können in eine Formularseite HTML-Inhalte einfügen, wie z. B. Hypertext-Links, Bilder, formatierte Absätze, Videos usw.
 
 Mit dem HTML-Editor können Sie den Inhalt eingeben, der in die Formularseite eingefügt werden soll. Um den Editor zu öffnen, klicken Sie auf **[!UICONTROL Statische Elemente]** > **[!UICONTROL HTML]**.
 
