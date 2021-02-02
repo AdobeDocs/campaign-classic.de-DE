@@ -7,9 +7,9 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1240'
 ht-degree: 100%
 
 ---
@@ -41,23 +41,6 @@ Genauer gesagt, hilft sie den Administratoren der Plattform bei Folgendem:
 Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgenden Konzepte: [Workflows](../../workflow/using/about-workflows.md), [Aktivitäten](../../workflow/using/about-activities.md) und [Best Practices bei Workflows](../../workflow/using/workflow-best-practices.md).
 
 Die Workflow-Heatmap ist ab Version 18.10 standardmäßig in Adobe Campaign verfügbar. Wenn Sie einen Build zwischen 8700 und 8977 (18.10) haben, können Sie ebenfalls von dieser Funktion profitieren. Um das entsprechende Package anzufordern, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und befolgen Sie die Anweisungen auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/install-workflow-heatmap-package.html), um zu erfahren, wie Sie es installieren.
-
-Wenn Sie zum ersten Mal auf die Workflow-Heatmap zugreifen, wird das folgende Popup-Fenster angezeigt. Diese Vereinbarung erlaubt die Übertragung und Speicherung in den USA und ermöglicht Adobe Campaign Folgendes:
-
-* Instanzen überwachen, um etwaige Leistungsprobleme zu untersuchen.
-* Daten zur Anomalieerkennung erfassen.
-
-Beachten Sie, dass die Übertragung Ihrer Daten nur für Benutzer verfügbar ist, die mit ihrer Adobe ID eine Verbindung zu Adobe Campaign herstellen.
-
-![](assets/wf_monitoring_agreement.png)
-
-Drei Optionen stehen zur Wahl:
-
-* **[!UICONTROL Akzeptieren]**: Durch das Akzeptieren dieser Vereinbarung ermächtigen Sie Adobe Campaign, Ihre Daten zu sammeln und in die USA zu übertragen, um Ihnen bei der Anomalieerkennung helfen zu können.
-* **[!UICONTROL Ablehnen]**: Wenn Sie die Vereinbarung ablehnen, werden Ihre Daten nicht übertragen, Sie können jedoch weiterhin die Workflow-Heatmap verwenden.
-* **[!UICONTROL Diese Nachricht nicht wieder anzeigen]**: Wenn Sie auf **[!UICONTROL Diese Nachricht nicht wieder anzeigen]** klicken, wird das Popup-Fenster beim Zugriff auf die Workflow-Heatmap nicht mehr angezeigt. Es steht jedoch weiterhin über die Schaltfläche **[!UICONTROL Nutzungsbedingungen]** zur Verfügung.
-
-Diese Auswahl ist nicht endgültig, Sie können sie jederzeit ändern, indem Sie auf die Schaltfläche **[!UICONTROL Nutzungsbedingungen]** klicken.
 
 ## HeatMap verwenden {#using-the-heatmap}
 
