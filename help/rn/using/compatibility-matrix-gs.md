@@ -10,14 +10,14 @@ translation-type: tm+mt
 source-git-commit: 9d1f5561098bb867b8a62e8bcdb14f60829be1ea
 workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
 # Gold Standard-Kompatibilitätsmatrix{#compatibility-matrix-gs}
 
-In diesem Dokument sind alle Systeme und Komponenten aufgeführt, die für Builds der **Adobe Campaign Classic Gold Standard**-Version 19.1 unterstützt werden. Produkte und Versionen, die nicht zu dieser Liste gehören, sind nicht mit dieser Version von Adobe Campaign kompatibel.
+In diesem Dokument sind alle Systeme und Komponenten aufgeführt, die für Builds der **Adobe Campaign Classic Gold Standard**-Version 19.1 unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit dieser Version von Adobe Campaign kompatibel.
 
 ## Wichtige Hinweise{#important-notes-gs}
 
