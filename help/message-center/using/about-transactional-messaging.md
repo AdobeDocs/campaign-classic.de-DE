@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 100%
+source-wordcount: '171'
+ht-degree: 78%
 
 ---
 
@@ -29,4 +29,4 @@ In der hier angewendeten Architektur sind Ausführungsinstanz und Kontrollinstan
 
 >[!NOTE]
 >
->Um neue Benutzer für in Adobe Cloud gehostete Message-Center-Ausführungsinstanzen zu erstellen, kontaktieren Sie die Adobe-Kundenunterstützung. Message-Center-Benutzer benötigen für den Zugriff auf die Ordner &#39;Echtzeit-Ereignisse&#39; (nmsRtEvent) spezifische Berechtigungen.
+>Um neue Benutzer für auf der Adobe Cloud gehostete Message Center-Ausführungsinstanzen zu erstellen, müssen Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden. Message Center-Benutzer sind bestimmte Operatoren, die dedizierte Berechtigungen für den Zugriff auf die Ordner &quot;Echtzeit-Ereignisses&quot;(nmsRtEvent) benötigen.
