@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Entzippen oder Entschlüsseln einer Datei
-description: Erfahren Sie, wie Sie eine Datei im Campaign Classic vor der Verarbeitung entzippen oder entschlüsseln.
+title: Dekomprimieren oder Entschlüsseln einer Datei
+description: Erfahren Sie, wie Sie eine Datei in Campaign Classic vor der Verarbeitung dekomprimieren oder entschlüsseln.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -10,12 +10,12 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
 
-# Entzippen oder Entschlüsseln einer Datei {#unzipping-or-decrypting-a-file-before-processing}
+# Dekomprimieren oder Entschlüsseln einer Datei {#unzipping-or-decrypting-a-file-before-processing}
 
 Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Damit sie in der Aktivität [Laden (Datei)](../../workflow/using/data-loading--file-.md) gelesen werden können, definieren Sie eine Vorab-Bearbeitung, um die Datei zu dekomprimieren oder zu entschlüsseln.
 
