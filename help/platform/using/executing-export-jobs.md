@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Konfigurieren von Exportvorgängen
-description: Erfahren Sie, wie Sie Exportaufträge in Campaign Classic konfigurieren und ausführen.
+description: Erfahren Sie, wie Sie Exportvorgänge in Campaign Classic konfigurieren und ausführen.
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
@@ -10,20 +10,20 @@ translation-type: tm+mt
 source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Konfigurieren von Exportvorgängen {#executing-export-jobs}
 
-Mit den Exportaufträgen können Sie auf Daten aus der Datenbank zugreifen und diese extrahieren: Kontakte, Kunden, Listen, Segmente usw.
+Mit Exportvorgängen können Sie Daten aus der Datenbank aufrufen und extrahieren: Kontakte, Kunden, Listen, Segmente usw.
 
-Beispielsweise kann es sinnvoll sein, Kampagnen-Verfolgungsdaten (Verfolgungsverlauf usw.) zu verwenden. in einer Tabelle. Die Ausgabedaten können im Format &quot;txt&quot;, &quot;CSV&quot;, &quot;TAB&quot;oder &quot;XML&quot;vorliegen.
+So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) in einer Tabelle zu verwenden. Die Ausgabedaten können in den Formaten &quot;txt&quot;, &quot;CSV&quot;, &quot;TAB&quot; oder &quot;XML&quot; vorliegen.
 
-Mit dem Export-Assistent können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrmals) und den Rechten des Bedieners abhängt.
+Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
-Der Export-Assistent wird angezeigt, nachdem ein neuer Exportauftrag erstellt wurde (siehe [Erstellen von Import- und Exportaufträgen](../../platform/using/creating-import-export-jobs.md).
+Der Export-Assistent wird nach der Erstellung eines neuen Exportvorgangs angezeigt (siehe [Erstellen von Import- und Exportvorgängen](../../platform/using/creating-import-export-jobs.md).
 
 ## 1. Schritt - Exportvorlage auswählen {#step-1---choosing-the-export-template}
 
@@ -131,4 +131,4 @@ Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um den Exportprozess
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Sie können dann die Ausführung des Importauftrags überwachen (siehe [Auftragsausführung überwachen](../../platform/using/monitoring-jobs-execution.md)).
+Anschließend können Sie die Ausführung des Importvorgangs überwachen (siehe [Überwachung der Vorgangsausführung](../../platform/using/monitoring-jobs-execution.md)).
