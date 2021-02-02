@@ -1,14 +1,14 @@
 ---
-keywords: Campaign Classic;home;popular topics
+keywords: Campaign Classic;Home;beliebte Themen
 solution: Campaign Classic
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: f6099fa9c8d1df7bc82dd9be0b575ca7f20b6645
+source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 82%
+source-wordcount: '296'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 82%
 
 ## Neue Funktionen
 
-* **[Über IMS/Adobe ID verbinden? Aktualisieren Sie auf die neuesten Builds](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS verwenden, um eine Verbindung zur Kampagne herzustellen, müssen Sie ein Upgrade durchführen, um nach dem 21. März 2021** 2021 eine Verbindung zur Kampagne herstellen zu können.**
+* **[Über IMS/Adobe ID verbinden? Aktualisieren Sie auf die neuesten Builds](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS verwenden, um eine Verbindung zur Kampagne herzustellen, müssen Sie ein Upgrade durchführen, um nach dem 31. März 2021** eine Verbindung zur Kampagne herstellen zu können.**
 
 * **[Sichern Sie Ihre Kampagne ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> InstanzenAktualisieren Sie auf die neuesten Builds, um Ihre Kampagne-Plattform zu sichern.
 
