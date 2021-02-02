@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 97%
+source-wordcount: '560'
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Gehen Sie dazu folgendermaßen vor:
    >
    >Das Control Panel steht allen auf AWS gehosteten Kunden zur Verfügung (mit Ausnahme von Kunden, die ihre Marketing-Instanzen auf einer lokalen Plattform hosten).
 
-1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird: Wenden Sie sich an die Kundenunterstützung von Adobe, damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
+1. Wenn Ihre Installation von Adobe Campaign durch Adobe gehostet wird, wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um die erforderlichen Hilfsprogramme auf dem Server zu installieren.
 1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben, installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
 
 Sie können dann auf der Registerkarte **[!UICONTROL Skript]** der Aktivität oder in einer **[!UICONTROL JavaScript-Code]**-Aktivität Befehle bzw. Code verwenden. Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
