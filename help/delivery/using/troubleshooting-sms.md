@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
 workflow-type: tm+mt
 source-wordcount: '2751'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -71,9 +71,9 @@ Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselb
 
 ## Problem mit Mid-Sourcing (gehostet){#issue-mid-sourcing}
 
-* Wenn das Problem auf einer Mid-Sourcing-Umgebung auftritt, stellen Sie sicher, dass der Versand und die allgemeinen Protokolle ordnungsgemäß erstellt und auf dem Mid-Sourcing-Server aktualisiert werden. Wenn das nicht der Fall ist, ist dies keine SMS-Ausgabe.
+* Wenn das Problem in einer Mid-Sourcing-Umgebung auftritt, stellen Sie sicher, dass die Versand-Logs und die broadLogs ordnungsgemäß auf dem Mid-Sourcing-Server erstellt und aktualisiert werden. Wenn das nicht der Fall ist, liegt kein SMS-Problem vor.
 
-* Wenn alles auf dem Mid-Server funktioniert und SMS ordnungsgemäß gesendet werden, die Marketing-Instanz jedoch nicht ordnungsgemäß aktualisiert wurde, kann es zu einem Mid-Synchronisierungsproblem kommen.
+* Wenn auf dem Mid-Sourcing-Server alles funktioniert und SMS ordnungsgemäß gesendet werden, die Marketing-Instanz jedoch nicht ordnungsgemäß aktualisiert wird, liegt möglicherweise ein Problem mit der Mid-Synchronisation vor.
 
 ## Problem beim Herstellen einer Verbindung zum Provider {#issue-provider}
 
@@ -93,7 +93,7 @@ Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselb
 
 Eine Verbindung wird als instabil angesehen, wenn eine der folgenden Situationen eintritt:
 
-* Die Verbindung dauert weniger als eine Stunde. Adobe Campaign Classic Transmitterverbindungen sind eine Ausnahme aufgrund der Funktionsweise der Adobe Campaign Classic MTA.
+* Die Verbindung besteht für weniger als eine Stunde. Dies gilt jedoch nicht für Transmitter-Verbindungen, was mit der Funktionsweise des MTA von Adobe Campaign Classic zusammenhängt.
 
 * Der Provider sendet `UNBIND PDU`s.
 
@@ -111,13 +111,13 @@ Beheben von Problemen mit der Verbindungsstabilität:
 
 * Eine Netzwerkaufzeichnung ist manchmal die einzige Möglichkeit, um zu sehen, wie die Verbindung geschlossen wird.
 
-* Wenn der Anbieter die Verbindungen schließt, indem er entweder ein `TCP FIN` oder ein `TCP RST packet` sendet, fragen Sie Ihren Anbieter nach weiteren Informationen.
+* Wird die Verbindung vonseiten des Providers durch Versenden von `TCP FIN` oder `TCP RST packet` geschlossen, wenden Sie sich an diesen, um weitere Informationen zu erhalten.
 
 * Wenn der Provider die Verbindung schließt, nachdem er einen ordnungsgemäßen Fehler wie `DELIVER_SM_RESP` mit einem Fehler-Code gesendet hat, muss er seinen Connector reparieren. Andernfalls wird verhindert, dass andere Arten von Nachrichten übertragen werden, und die MTA-Drosselung wird ausgelöst. Dies ist besonders im Transceiver-Modus wichtig, wo sich das Schließen der Verbindung sowohl auf MT als auch auf SR auswirkt.
 
 ## Problem beim Senden von MT (reguläre SMS an einen Endbenutzer){#issue-MT}
 
-* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde ununterbrochen in Betrieb bleiben, außer bei Sendern auf Adobe Campaign Classic. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde durchgängig bestehen (außer bei Transmittern in Adobe Campaign Classic). Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/sms-protocol.md#issues-unstable-connection).
 
 * Wenn durch einen Neustart des MTA das Senden von MT für einen kurzen Zeitraum wieder funktioniert, besteht wahrscheinlich eine Drosselung aufgrund einer instabilen Verbindung. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
 
@@ -153,7 +153,7 @@ Verringerung der Anzahl von Duplikaten bei einer Wiederholung:
 
 * Überprüfen Sie, ob die `DELIVER_SM PDU` vom Provider kommt und korrekt formuliert ist.
 
-* Überprüfen Sie, ob Adobe Campaign rechtzeitig mit einer erfolgreichen `DELIVER_SM_RESP PDU` antwortet. Unter Adobe Campaign Classic garantiert dies, dass der SR in die Tabelle `providerMsgId` für die verzögerte Verarbeitung durch den SMS-Prozess eingefügt wurde.
+* Überprüfen Sie, ob Adobe Campaign rechtzeitig mit einer erfolgreichen `DELIVER_SM_RESP PDU` antwortet. Diese gewährleistet in Adobe Campaign Classic, dass der SR in die Tabelle `providerMsgId` eingefügt wurde, um die verzögerte Verarbeitung durch den SMS-Prozess zu ermöglichen.
 
 Wenn die `DELIVER_SM PDU` nicht erfolgreich quittiert wurde, sollten Sie Folgendes überprüfen:
 
@@ -161,9 +161,9 @@ Wenn die `DELIVER_SM PDU` nicht erfolgreich quittiert wurde, sollten Sie Folgend
 
 * Überprüfen Sie, ob die Fehler in der Tabelle `broadLogMsg` richtig bereitgestellt wurden.
 
-Wenn das `DELIVER_SM PDU` vom Adobe Campaign Classic Extended SMPP Connector bestätigt wurde, das &quot;wideLog&quot;jedoch nicht ordnungsgemäß aktualisiert wurde, überprüfen Sie den im Abschnitt [Matching MT, SR und Broadlog Einträge](../../delivery/using/sms-protocol.md#matching-mt) beschriebenen ID-Abgleichungsprozess.
+Wenn die `DELIVER_SM PDU` vom erweiterten SMPP-Connector in Adobe Campaign Classic quittiert wurde, das broadLog jedoch nicht ordnungsgemäß aktualisiert wird, überprüfen Sie den im Abschnitt [Abgleichen von MT-, SR- und broadLog-Einträgen](../../delivery/using/sms-protocol.md#matching-mt) beschriebenen Prozess zur ID-Abstimmung.
 
-Wenn Sie alle Fehler behoben haben, aber einige ungültige SR-Regeln noch in den Puffern des Anbieters vorhanden sind, können Sie sie mit der Option &quot;Anzahl der ungültigen ID-Bestätigung&quot;überspringen. Dies sollte mit Vorsicht verwendet und so schnell wie möglich auf 0 zurückgesetzt werden, nachdem die Puffer bereinigt wurden.
+Wenn Sie alle Probleme behoben haben, die Puffer des Providers jedoch noch einige ungültige SR enthalten, können Sie diese mit der Option &quot;Zählung der &#39;ungültige ID&#39; Antworten&quot; überspringen. Dies sollte mit Vorsicht verwendet und so schnell wie möglich auf 0 zurückgesetzt werden, nachdem die Puffer bereinigt wurden.
 
 ## Problem bei der Verarbeitung von MO (und Blockierungsauflistung/automatische Antwort){#issue-process-MO}
 
@@ -173,15 +173,15 @@ Wenn Sie alle Fehler behoben haben, aber einige ungültige SR-Regeln noch in den
 
 * Wenn MO (`DELIVER_SM PDU`) nicht in Traces angezeigt wird, liegt das Problem auf der Seite des Providers. Er muss dann die Fehlersuche auf seiner Plattform durchführen.
 
-* Wenn `DELIVER_SM PDU` angezeigt wird, überprüfen Sie, ob sie von Adobe Campaign mit einer erfolgreichen `DELIVER_SM_RESP PDU` (Code 0) quittiert wird. Diese RESP garantiert, dass die gesamte Verarbeitungslogik von Adobe Campaign angewendet wurde (automatische Antwort und Zulassungs-/Blockierungsliste). Wenn dies nicht der Fall ist, suchen Sie in den SMS-Prozessprotokollen nach einer Fehlermeldung.
+* Wenn `DELIVER_SM PDU` angezeigt wird, überprüfen Sie, ob sie von Adobe Campaign mit einer erfolgreichen `DELIVER_SM_RESP PDU` (Code 0) quittiert wird. Diese RESP garantiert, dass die gesamte Verarbeitungslogik von Adobe Campaign angewendet wurde (automatische Antwort und Zulassungs-/Blockierungsliste). Wenn dies nicht der Fall ist, überprüfen Sie die Logs des SMS-Prozesses auf eine Fehlermeldung.
 
-* Wenn automatische Antworten aktiviert sind, überprüfen Sie, ob `SUBMIT_SM` an den Provider gesendet wurde. Ist dies nicht der Fall, wird garantiert, dass eine Fehlermeldung in den SMS-Prozessprotokollen gefunden wird.
+* Wenn automatische Antworten aktiviert sind, überprüfen Sie, ob `SUBMIT_SM` an den Provider gesendet wurde. Ist das nicht der Fall, können Sie davon ausgehen, dass die Logs des SMS-Prozesses eine Fehlermeldung enthalten.
 
 * Wenn die `SUBMIT_SM MT PDU`, die die Antwort enthält, in Traces gefunden wird, die SMS aber nicht auf dem Mobiltelefon ankommt, müssen Sie sich an den Provider wenden, um Unterstützung bei der Fehlerbehebung zu erhalten.
 
 ## Problem bei der Versandvorbereitung, die Empfänger unter Quarantäne nicht ausschließt (durch die automatische Antwortfunktion in Quarantäne gestellt) {#issue-delivery-preparation}
 
-* Überprüfen Sie, ob das Telefonnummernformat in der Quarantänetabelle und im Versandlog genau identisch sind. Ist dies nicht der Fall, gehen Sie zu diesem [Abschnitt](../../delivery/using/sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem &quot;+&quot;-Präfix des internationalen Telefonnummernformats haben.
+* Überprüfen Sie, ob die Telefonnummern in der Quarantänetabelle und im Versand-Log im exakt gleichen Format vorliegen. Ist dies nicht der Fall, gehen Sie zu diesem [Abschnitt](../../delivery/using/sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem &quot;+&quot;-Präfix des internationalen Telefonnummernformats haben.
 
 * Prüfen Sie die Kurzwahlnummern. Es kann zu Ausschlüssen kommen, wenn die Kurzwahlnummer des Empfängers entweder dieselbe ist, wie im externen Konto definiert, oder wenn sie leer ist (leer = beliebige Kurzwahlnummer). Wenn nur eine Kurzwahlnummer für die gesamte Adobe Campaign-Instanz verwendet wird, ist es einfacher, alle Felder mit **Kurzwahlnummern** leer zu lassen.
 
@@ -195,7 +195,7 @@ Nehmen Sie Kontakt mit ihm auf und fragen Sie nach, ob es ein Problem gibt. Er s
 
 Unicode erlaubt viele Varianten für ähnliche Zeichen, und Adobe Campaign kann nicht alle verarbeiten.
 
-Die häufigste Ursache für Probleme ist das Kopieren und Einfügen aus einem Textverarbeitungsprogramm, bei dem übliche Zeichen in typografisch korrekte Versionen geändert werden: Leerzeichen in feste Leerzeichen, doppelte Anführungszeichen in öffnende und schließende Anführungszeichen, Minuszeichen in verschiedene Arten von Bindestrichen usw.
+Die häufigste Ursache für Probleme ist das Kopieren und Einfügen aus einem Textverarbeitungsprogramm, das gängige Zeichen in typografisch korrekte Versionen umwandelt, z. B. Leerzeichen in feste Leerzeichen, doppelte Anführungszeichen in öffnende und schließende Anführungszeichen, Minuszeichen in verschiedene Arten von Bindestrichen usw.
 
 Kopieren Sie Ihre Nachricht beim Testen nicht, sondern geben Sie sie immer direkt in die Benutzeroberfläche ein.
 
@@ -253,7 +253,7 @@ Eine Netzwerkaufzeichnung ist nicht immer erforderlich. In der Regel reichen aus
 
 * Es wird vermutet, dass der Traffic zwischen verschiedenen Verbindungen vermischt ist.
 
-In allen anderen Situationen sollten Sie zunächst ausführliche SMPP-Meldungen analysieren und nur dann eine Netzwerkerfassung anfordern, wenn Informationen in den ausführlichen Protokollen fehlen.
+Überprüfen Sie in allen anderen Situationen zunächst die ausführlichen SMPP-Meldungen. Eine Netzwerkaufzeichnung sollten Sie nur anfordern, wenn die ausführlichen Logs keinen Aufschluss geben.
 
 In einigen Fällen ist die Aufzeichnung des Netzwerk-Traffic nicht erforderlich. Die häufigsten Situationen sind:
 
@@ -275,10 +275,10 @@ Der neue Connector unterstützt die erweiterte Protokollierung durch Traces: SMP
 
 **Aktivieren pro externem Konto (bevorzugte Methode)**
 
-1. Aktivieren Sie im Externe Konto **die Option** Ausführliche SMPP-Spuren in der Protokolldatei **aktivieren.**
-1. Warten Sie 10 Minuten, damit der Server die Externe Konti neu laden kann.
+1. Aktivieren Sie im **externen Konto** die Option **Ausführliche SMPP-Protokolle in der Log-Datei aktivieren**.
+1. Warten Sie zehn Minuten, bis der Server die externen Konten neu geladen hat.
 
-Sie sollte jetzt aktiv sein.
+Jetzt sollten sie aktiv sein.
 
 **Aktivieren in der Konfiguration**
 
