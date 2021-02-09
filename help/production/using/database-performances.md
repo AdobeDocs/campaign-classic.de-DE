@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 8%
@@ -46,9 +46,9 @@ Stellen Sie sicher, dass die Aufgabe zur Datenbankbereinigung betriebsbereit ist
 
 Stellen Sie sicher, dass die Datenbankwartung korrekt geplant und ausgeführt wurde. Wenden Sie sich hierfür an Ihren Datenbankadministrator, um mehr über Folgendes zu erfahren:
 
-* ihre Instandhaltungspläne,
-* zuvor ausgeführte Instandhaltungspläne,
-* ansicht der Skriptprotokolle.
+* Instandhaltungsplan
+* Zuvor ausgeführte Instandhaltungspläne
+* Skriptprotokolle anzeigen
 
 Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/recommendations.md).
 
@@ -60,9 +60,9 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../prod
 
 Bitte überprüfen Sie die Anzahl und Größe der Arbeitstische. Wenn sie eine bestimmte Größe überschreiten, wirkt sich dies auf die Datenbankleistung aus. Diese Tabellen werden von Workflows und Versänden erstellt. Sie bleiben in der Datenbank, während Workflows und Versand aktiv sind. Um die Größe von Arbeitstabellen zu begrenzen, können Sie die folgenden Vorgänge ausführen:
 
-* versand mit den folgenden Status beenden oder löschen: **[!UICONTROL Fehlgeschlagen]** , **[!UICONTROL Wird ausgeführt]** , **[!UICONTROL Bereit für Versand]** oder **[!UICONTROL Angehalten]**.
-* workflows, die aufgrund eines Fehlers angehalten wurden, beenden oder löschen,
-* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL End]**-Aktivität enthalten und deren Status daher **[!UICONTROL Paused]** bleibt.
+* Beenden oder Löschen von Versänden mit den folgenden Status: **[!UICONTROL Fehlgeschlagen]**, **[!UICONTROL Wird ausgeführt]**, **[!UICONTROL Bereit für Versand]** oder **[!UICONTROL Angehalten]**.
+* Beenden oder löschen Sie Workflows, die aufgrund eines Fehlers angehalten werden.
+* Beenden Sie alle Workflows, die für Tests verwendet werden, die keine **[!UICONTROL End]**-Aktivität enthalten und deren Status deshalb **[!UICONTROL Paused]** bleibt.
 
 >[!IMPORTANT]
 >
@@ -72,14 +72,13 @@ Bitte überprüfen Sie die Anzahl und Größe der Arbeitstische. Wenn sie eine b
 
 Abhängig von den Installationseinstellungen des Adobe Campaigns können zwei Tools zur Plattformüberwachung verwendet werden:
 
-* die Produktionsseite der Instanz. Weitere Informationen finden Sie unter [Manuelle Überwachung](../../production/using/monitoring-processes.md#manual-monitoring).
-* das Skript netreport. Weitere Informationen finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
+* Die Produktionsseite der Instanz. Weitere Informationen finden Sie unter [Manuelle Überwachung](../../production/using/monitoring-processes.md#manual-monitoring).
+* Das Skript *netreport*. Weitere Informationen finden Sie unter [Automatische Überwachung über Adobe Campaign-Skripte](../../production/using/monitoring-processes.md#automatic-monitoring-via-adobe-campaign-scripts).
 
 ## Specifics {#specifics}
 
 Es kann erforderlich werden, eine Echtzeitdiagnose durchzuführen, um die Ursache des Problems zu identifizieren. Beginn überprüfen Sie die Prozess- und Plattformprotokolldateien und überwachen Sie dann die Aktivität der Datenbank, während Sie die Ausgabe erneut erstellen. Achten Sie insbesondere auf Folgendes:
 
-* den Instandhaltungsplan,
-* SQL-Abfragen, die ausgeführt werden,
-* unabhängig davon, ob externe Prozesse gleichzeitig ausgeführt werden (Datenbereingung, Importe, Aggregat usw.).
-
+* Der Instandhaltungsplan
+* SQL-Abfragen werden ausgeführt
+* Gibt an, ob externe Prozesse gleichzeitig ausgeführt werden (Datenbereingung, Importe, Aggregat usw.).
