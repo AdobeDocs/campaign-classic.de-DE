@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
+source-git-commit: a341980e9d940857388bb2755e5eaa74824cf6ea
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Workflow zum Durchführen vo
 
 1. hinzufügen Sie eine Aktivität [Teilen](../../workflow/using/split.md), um die Zielgruppe in mehrere Untergruppen zu unterteilen.
 
-1. Öffnen Sie die Aktivität und konfigurieren Sie dann die einzelnen Untergruppen entsprechend Ihren Anforderungen. Weitere Informationen zum Konfigurieren einer **[!UICONTROL Split]**-Aktivität finden Sie in diesem Abschnitt.
+1. Öffnen Sie die Aktivität und konfigurieren Sie dann die einzelnen Untergruppen entsprechend Ihren Anforderungen. Weitere Informationen zum Konfigurieren einer **[!UICONTROL Split]**-Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/split.md).
 
    In diesem Beispiel möchten wir zwei neue Themen für einen Newsletter testen, indem wir sie jeweils 10 % der Zielgruppe präsentieren.
 
