@@ -9,7 +9,7 @@ topic-tags: about-workflows-and-data-management
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Sie helfen Ihnen dabei, die verschiedenen Kontexte zu verstehen, in denen Workfl
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 * [Lokale Validierung verwenden](../../workflow/using/using-the-local-approval-activity.md)
-* [A/B Tests](../../workflow/using/a-b-testing.md)
+* [A/B Tests](../../delivery/using/a-b-testing-use-case.md)
 * [Geburtstags-E-Mail senden](../../workflow/using/sending-a-birthday-email.md)
 * [Versandinhalt laden](../../workflow/using/loading-delivery-content.md)
 * [Workflow für einen kanalübergreifenden Versand](../../workflow/using/cross-channel-delivery-workflow.md)
