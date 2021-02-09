@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
 workflow-type: tm+mt
 source-wordcount: '3040'
-ht-degree: 21%
+ht-degree: 20%
 
 ---
 
@@ -131,15 +131,15 @@ Standardmäßig überwacht der Statistikserver den Anschluss 7777. Dieser Anschl
 
 ## MX-Konfiguration {#mx-configuration}
 
+>[!IMPORTANT]
+>
+>Bei gehosteten oder hybriden Installationen werden die **[!UICONTROL MX-Verwaltungsregeln]** für Versand nicht mehr verwendet, wenn Sie auf [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
+
+Die folgenden Abschnitte gelten nur für lokale Installationen und gehostete/hybride Installationen mit der Legacy-Kampagne MTA.
+
 ### Über MX-Regeln {#about-mx-rules}
 
 MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sender- und einem Empfangs-Server.
-
->[!IMPORTANT]
->
->Bei gehosteten oder hybriden Installationen werden die Versanddurchsatzregeln der **[!UICONTROL MX-Verwaltung]** nicht mehr verwendet, wenn Sie auf den Enhanced MTA aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
->
->Weitere Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
 
 Diese Regeln werden jeden Morgen um 6 Uhr (Serverzeit) automatisch neu geladen, um die Client-Instanz regelmäßig bereitzustellen.
 
