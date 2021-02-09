@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
+source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
 workflow-type: tm+mt
 source-wordcount: '1427'
 ht-degree: 6%
@@ -147,7 +147,7 @@ Daher sollten Sie bis zum Ende der Gültigkeitsdauer warten, um die finale **[!U
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-## Versanddurchsatz
+### Versanddurchsatz
 
 Das Durchsatzdiagramm für Kampagnen-Versand zeigt den Durchsatz Ihrer E-Mail-Empfänger nicht mehr an. Dieses Diagramm zeigt nun die Durchsatzgeschwindigkeit für die Weiterleitung Ihrer Nachrichten von der Kampagne zur erweiterten MTA.
 
@@ -163,7 +163,7 @@ Sobald eine Nachricht 3,5 Tage lang in der Warteschlange des erweiterten MTA war
 
 Weitere Informationen zur Gültigkeitsdauer finden Sie in [diesem Abschnitt](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
 
-## DKIM-Signatur
+### DKIM-Signatur
 
 Die Signierung der DKIM-E-Mail-Authentifizierung (DomainKeys Identified Mail) erfolgt über die erweiterte MTA. Das DKIM-Signieren durch den nativen Campaign-MTA wird im Rahmen des Enhanced MTA-Upgrades in der Tabelle Domain-Verwaltung deaktiviert.
 Weitere Informationen zu DKIM finden Sie in [diesem Abschnitt](../../delivery/using/technical-recommendations.md#dkim).
