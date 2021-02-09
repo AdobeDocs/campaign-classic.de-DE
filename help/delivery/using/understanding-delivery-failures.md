@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 99%
+source-wordcount: '2623'
+ht-degree: 80%
 
 ---
 
@@ -23,7 +23,9 @@ Wenn einem Profil eine Nachricht (E-Mail, SMS, Push-Benachrichtigung) nicht zuge
 
 >[!NOTE]
 >
->E-Mail-Fehlermeldungen (auch &quot;Bounces&quot; genannt) werden vom inMail-Prozess qualifiziert. SMS-Fehlermeldungen (auch &quot;SR&quot; für &quot;Status Report&quot; genannt) werden vom MTA-Prozess qualifiziert.
+>**E-Mail**-Fehlermeldungen (oder &quot;Bounces&quot;) werden vom erweiterten MTA (synchrone Bounces) oder InMail-Prozess (asynchrone Bounces) qualifiziert.
+>
+>**SMS**-Fehlermeldungen (auch &quot;SR&quot; für &quot;Status Report&quot; genannt) werden vom MTA-Prozess qualifiziert.
 
 Nachdem eine Nachricht gesendet wurde, können Sie im Versandlogs-Tab den Versandstatus für jedes Profil sowie den damit verbundenen Fehlertyp und die Ursache einsehen.
 
@@ -184,9 +186,13 @@ Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignor
 >
 >Vorübergehend unzustellbare Nachrichten können als Ursache nur einen **Softbounce** oder einen **ignorierten** Fehler haben, nicht aber einen **Hardbounce** (siehe [Typen und Ursachen für fehlgeschlagene Sendungen](#delivery-failure-types-and-reasons)).
 
-Gehen Sie zur Änderung der Versandlaufzeit in die erweiterten Eigenschaften des Versands oder seiner Vorlage und geben Sie im entsprechenden Feld die gewünschte Dauer ein. Weiterführende Informationen zu den erweiterten Versandeigenschaften finden Sie in [diesem Abschnitt](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+>[!IMPORTANT]
+>
+>Bei gehosteten oder hybriden Installationen werden die Wiederholungseinstellungen im Versand nicht mehr von der Kampagne verwendet, wenn Sie auf [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Versuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global geändert werden (kontaktieren Sie Ihren technischen Administrator von Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [diesen Abschnitt](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
+Für Installationen vor Ort und gehostete/hybride Installationen mit der Legacy-Kampagne MTA, um die Dauer eines Versands zu ändern, gehen Sie zu den erweiterten Parametern des Versands oder der Versandvorlage und geben Sie die gewünschte Dauer im entsprechenden Feld an. Siehe [Definieren der Gültigkeitsdauer](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period).
+
+Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl der weitere Zustellversuche kann global geändert werden (wenden Sie sich an den technischen Administrator Ihrer Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [weitere Zustellversuche konfigurieren](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
 ## Synchrone und asynchrone Fehler  {#synchronous-and-asynchronous-errors}
 
@@ -207,17 +213,38 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
 
 ## Bounce-Message-Verwaltung {#bounce-mail-management}
 
-Die Adobe Campaign-Plattform bietet mit der Bounce-Message-Funktion die Möglichkeit, Zustellprobleme zu verwalten. Wenn eine E-Mail nicht zugestellt werden kann, sendet der Remote-E-Mail-Server automatisch eine Fehlermeldung, eine s. g. Bounce Message, an die speziell für diesen Zweck konfigurierte technische E-Mail-Adresse. Adobe Campaign ruft diese Fehlermeldungen ab und qualifiziert sie mithilfe des inMail-Prozesses, um die Liste der E-Mail-Verwaltungsregeln anzureichern.
+Die Adobe Campaign-Plattform ermöglicht Ihnen die Verwaltung von E-Mail-Versand-Fehlern über die Funktion &quot;Absprung-Mail&quot;.
+
+Wenn eine E-Mail nicht an einen Empfänger gesendet werden kann, gibt der Remoteserver automatisch eine Fehlermeldung (Absprungmail) an einen dafür vorgesehenen technischen Posteingang zurück.
+
+Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy-Kampagne MTA werden Fehlermeldungen von der Adobe Campaign-Plattform erfasst und durch den InMail-Prozess qualifiziert, um die Liste der E-Mail-Verwaltungsregeln zu verbessern.
+
+>[!IMPORTANT]
+>
+>Bei gehosteten oder hybriden Installationen werden die meisten E-Mail-Verwaltungsregeln nicht mehr verwendet, wenn Sie auf [Erweiterte MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#email-management-rules).
 
 ### Bounce-Message-Qualifizierung  {#bounce-mail-qualification}
 
-Wenn eine E-Mail nicht zugestellt werden kann, empfängt der Adobe Campaign-Versandserver eine Fehlermeldung vom Remote-Mail- oder -DNS-Server. Jeder Fehlermeldung wird ein Fehlertyp und -grund zugeordnet.
+>[!IMPORTANT]
+>
+>Bei gehosteten oder Hybridinstallationen, wenn Sie auf [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben:
+>
+>* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. **** Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
+   >
+   >
+* **** Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
+   >
+   >
+* Bei Instanzen, die die erweiterte MTA **ohne Webhooks/EFS** verwenden, werden die **[!UICONTROL Inbound email]**-Regeln auch verwendet, um die synchronen Absprungs-E-Mails aus der erweiterten MTA zu verarbeiten, wobei dieselbe E-Mail-Adresse wie für asynchrone Absprungmeldungen verwendet wird.
+
+
+Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy-Kampagne MTA erhält der Adobe Campaign-Versand eine Fehlermeldung vom Meldungsserver oder vom Remote-DNS-Server, wenn der Versand einer E-Mail fehlschlägt. Die Liste von Fehlern besteht aus Zeichenfolgen, die in der vom Remote-Server zurückgegebenen Meldung enthalten sind. Fehlermeldungen und Fehlerursachen werden jeder Fehlermeldung zugewiesen.
 
 Auf die entsprechende Liste kann im Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > Versandlogqualifizierung]** zugegriffen werden. Sie enthält alle von Adobe Campaign für die Qualifizierung von fehlgeschlagenen Sendungen verwendeten Regeln. Die Liste erhebt keinen Anspruch auf Vollständigkeit. Sie wird jedoch regelmäßig von Adobe Campaign angereichert und kann auch vom Benutzer ergänzt werden.
 
 ![](assets/tech_quarant_rules_qualif.png)
 
-* Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Nachricht wird in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** angezeigt. Wird diese Spalte nicht angezeigt, wählen Sie in der Liste rechts unten die Schaltfläche **[!UICONTROL Liste konfigurieren]**, um die Spalte auszuwählen.
+Die vom Remote-Server beim ersten Auftreten dieses Fehlertyps zurückgegebene Nachricht wird in der Spalte **[!UICONTROL Erster Text]** der Tabelle **[!UICONTROL Versandlogqualifizierung]** angezeigt. Wird diese Spalte nicht angezeigt, wählen Sie in der Liste rechts unten die Schaltfläche **[!UICONTROL Liste konfigurieren]**, um die Spalte auszuwählen.
 
 ![](assets/tech_quarant_rules_qualif_text.png)
 
@@ -237,22 +264,11 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 
 ![](assets/deliverability_qualif_status.png)
 
+### E-Mail-Verwaltungsregeln {#email-management-rules}
+
 >[!IMPORTANT]
 >
->Bei gehosteten oder hybriden Installationen, wenn Sie ein Upgrade auf den Enhanced MTA durchgeführt haben:
->
->* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
-   >
-   >
-* Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
-   >
-   >
-* Bei Instanzen, die den Enhanced MTA ohne **Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL Eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
->
->
-Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
-
-### E-Mail-Verwaltungsregeln {#email-management-rules}
+>Bei gehosteten oder hybriden Installationen werden die meisten E-Mail-Verwaltungsregeln nicht mehr verwendet, wenn Sie auf [Erweiterte MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 Auf E-Mail-Regeln kann im Knoten **[!UICONTROL Administration > Kampagnen > Unzustellbarkeitsverwaltung]** zugegriffen werden. Im unteren Teil des Fensters können Sie die Details der Regeln ansehen.
 
@@ -272,7 +288,11 @@ Folgende Regeln sind in der Standardkonfiguration vorgesehen.
 
 #### Eingehende E-Mails {#inbound-email}
 
-In den Regeln sind die von Remote-Servern potenziell zurückgegebenen Strings enthalten, die die Qualifizierung der Fehler in **Hardbounce**, **Softbounce** oder **Ignoriert** erlauben.
+>[!IMPORTANT]
+>
+>Bei gehosteten oder hybriden Installationen werden die [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md)-Regeln nicht mehr für Fehlermeldungen bei synchronen Versänden verwendet, wenn Sie ein Upgrade auf **[!UICONTROL Enhanced MTA]** durchgeführt haben und Ihre Instanz über **Webhooks/EFS** verfügt. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
+
+Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy-Kampagne MTA enthalten diese Regeln die Liste von Zeichenfolgen, die von Remoteservern zurückgegeben werden können und mit denen Sie die Fehlerkennzeichnung (**Hard**, **Soft** oder **Ignored**) vornehmen können.
 
 Wenn die Zustellung einer E-Mail fehlschlägt, gibt der Remote-Server eine Bounce-Meldung an die in der Plattformkonfiguration angegebene Adresse zurück. Adobe Campaign vergleicht den Inhalt jeder Bounce Message mit den in der Regelliste verzeichneten Strings und ordnet ihn einem der drei [Fehlertypen](#delivery-failure-types-and-reasons) zu.
 
@@ -282,15 +302,13 @@ Wenn die Zustellung einer E-Mail fehlschlägt, gibt der Remote-Server eine Bounc
 
 Weiterführende Informationen zur Bounce-Message-Qualifizierung finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
 
->[!IMPORTANT]
->
->Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf den Enhanced MTA durchgeführt haben und Ihre Instanz über die Funktion **Webhooks/EFS** verfügt, werden die Regeln für **[!UICONTROL Eingehende E-Mails]** nicht mehr für Fehlernachrichten bei synchronem Versand verwendet. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#bounce-mail-qualification).
->
->Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
-
 #### Domain-Verwaltung {#domain-management}
 
-Der Adobe Campaign-Messaging-Server wendet eine einzige **Domain-Verwaltungsregel** auf alle Domains an.
+>[!IMPORTANT]
+>
+>Bei gehosteten oder hybriden Installationen werden die **[!UICONTROL Domänenverwaltung]**-Regeln nicht mehr verwendet, wenn Sie auf [Erweiterte MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Die Signierung zur E-Mail-Authentifizierung mit **DKIM (DomainKeys Identified Mail)** erfolgt durch den Enhanced MTA für alle Nachrichten mit allen Domains. Die Signierung erfolgt nicht mit **Sender ID**, **DomainKeys** oder **S/MIME**, es sei denn, auf der Ebene des Enhanced MTA ist etwas anderes angegeben.
+
+Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy-Kampagne MTA wendet der Adobe Campaign Messaging-Server eine einzige **Domänenverwaltung**-Regel auf alle Domänen an.
 
 <!--![](assets/tech_quarant_domain_rules_02.png)-->
 
@@ -299,13 +317,13 @@ Der Adobe Campaign-Messaging-Server wendet eine einzige **Domain-Verwaltungsrege
 
 Wenn Ihre Nachrichten in Outlook mit **[!UICONTROL im Namen von]** in der Absenderadresse angezeigt werden, vergewissern Sie sich, dass Sie Ihre E-Mails nicht mit der **Sender ID** signieren, dem veralteten proprietären Authentifizierungsstandard für E-Mails von Microsoft. Wenn die Option **[!UICONTROL Sender-ID]** aktiviert ist, deaktivieren Sie das entsprechende Feld und wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Ihre Zustellbarkeit wird nicht beeinträchtigt.
 
+#### MX-Verwaltung {#mx-management}
+
 >[!IMPORTANT]
 >
->Bei gehosteten oder hybriden Installationen werden die Regeln für die **[!UICONTROL Domain-Verwaltung]** nicht mehr verwendet, wenn Sie ein Upgrade auf den Enhanced MTA durchgeführt haben. Die Signierung zur E-Mail-Authentifizierung mit **DKIM (DomainKeys Identified Mail)** erfolgt durch den Enhanced MTA für alle Nachrichten mit allen Domains. Die Signierung erfolgt nicht mit **Sender ID**, **DomainKeys** oder **S/MIME**, es sei denn, auf der Ebene des Enhanced MTA ist etwas anderes angegeben.
->
->Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
+>Bei gehosteten oder hybriden Installationen werden die **[!UICONTROL MX-Verwaltungsregeln]** für Versand nicht mehr verwendet, wenn Sie auf [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
 
-#### MX-Verwaltung {#mx-management}
+Für Vor-Ort-Installationen und gehostete/hybride Installationen mit der Legacy-Kampagne MTA:
 
 * MX-Verwaltungsregeln ermöglichen die Regulierung des Volumens der ausgehenden E-Mails nach Domains. Sie analysieren die Bounce Messages und blockieren falls nötig den Versand.
 
@@ -314,9 +332,3 @@ Wenn Ihre Nachrichten in Outlook mit **[!UICONTROL im Namen von]** in der Absend
 * Um eigene MX-Verwaltungsregeln zu erstellen, sind die Angabe einer Schwelle und die Auswahl gewisser SMTP-Parameter erforderlich. Die **Schwelle** entspricht einem Prozentsatz an Fehlern, der bei Überschreiten den Versand an die betroffene Domain unterbricht. So wird beispielsweise der Versand drei Stunden lang unterbrochen, wenn bei einem Volumen von mindestens 300 Nachrichten die Fehlerquote 90 % erreicht.
 
 Weiterführende Informationen zur MX-Verwaltung erfahren Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#mx-configuration).
-
->[!IMPORTANT]
->
->Bei gehosteten oder hybriden Installationen werden die Versanddurchsatzregeln der **[!UICONTROL MX-Verwaltung]** nicht mehr verwendet, wenn Sie auf den Enhanced MTA aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
->
->Weiterführende Informationen zum Adobe Campaign Enhanced MTA finden Sie in diesem [Dokument](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html).
