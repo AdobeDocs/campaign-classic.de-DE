@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
 workflow-type: tm+mt
-source-wordcount: '8433'
+source-wordcount: '8432'
 ht-degree: 99%
 
 ---
@@ -483,7 +483,7 @@ Die Angabe von Kurzwahlnummern ist für zwei Funktionen hilfreich:
 
 * Die Vorschau zeigt die Kurzwahlnummer an, wenn keine Anrufernummer angegeben wurde. Es wird das tatsächliche Verhalten auf dem Mobiltelefon widergespiegelt.
 
-* Die Blockierungslisten-Einstellung der automatischen Antwortfunktion stellt Benutzer nur für die jeweilige Kurzwahlnummer unter Quarantäne.
+* Die Einstellung &quot;Blockierungsliste&quot;der Funktion für die automatische Antwort sendet nur für einen bestimmten Kurzcode an die Quarantäne des Benutzers.
 
 #### Anrufer-TON/NPI, Empfänger-TON/NPI {#ton-npi}
 
@@ -713,7 +713,7 @@ Diese Einstellung erlaubt nur das Hinzufügen einer TLV-Option pro Nachricht.
 >
 >In Adobe Campaign Classic sowie in Hybrid-Architekturen benötigt der Mid-Operator Schreibrechte für den Ordner **Externes Konto**, wenn für den SMPP-Connector automatische Antworten eingerichtet werden sollen.
 
-Mit dieser Funktion können Sie schnell einen Antworttext an ein MO senden und das Senden pro Kurzwahlnummer an die Blockierungsliste handhaben.
+Diese Funktion ermöglicht eine schnelle Antwort auf Text an MO und das Versenden von Code per Kurzcode an Blockierungsliste.
 
 Die Spalten **Schlüsselwort** und **Kurzwahlnummer** definieren Bedingungen, um die automatische Antwort auszulösen. Wenn beide Felder übereinstimmen, wird der MO gesendet und die zusätzliche Aktion ausgelöst. Um einen Platzhalter festzulegen, sollten Sie das Feld leer lassen. Das Schlüsselwort wird mit dem ersten alphanumerischen Wort im MO-Text abgeglichen, wobei Interpunktion und führende Leerzeichen ignoriert werden. Das bedeutet, dass das Feld **Schlüsselwort** keine Leerzeichen enthalten darf und ein einzelnes Wort sein muss.
 
