@@ -1,6 +1,6 @@
 ---
 audience: end-user
-breadcrumb-title: Campaign Classic
+breadcrumb-title: Hilfe
 product: campaign
 title: Campaign Classic-Anleitung
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 048ceef9e4498b557601f3eb2db839e415d6e8c5
+source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 100%
+source-wordcount: '2347'
+ht-degree: 98%
 
 ---
 
@@ -124,7 +124,11 @@ ht-degree: 100%
       + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
       + [E-Mail-Inhalt erstellen](delivery/using/defining-the-email-content.md)
       + [Interaktive Inhalte definieren](delivery/using/defining-interactive-content.md)
-      + [Nachrichten senden](delivery/using/sending-messages.md)
+      + E-Mail-Versand {#sending-an-email}
+         + [Bestätigung des E-Mail-Versands](delivery/using/sending-messages.md)
+         + [E-Mail-Parameter](delivery/using/email-parameters.md)
+         + [Senden mit der erweiterten MTA](delivery/using/sending-with-enhanced-mta.md)
+         + [Versand auf japanische Mobiltelefone](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Anhänge erstellen](delivery/using/attaching-files.md)
    + Nachrichten an Mobiltelefone senden {#sending-messages-on-mobiles}
       + [SMS-Kanal](delivery/using/sms-channel.md)
@@ -165,6 +169,19 @@ ht-degree: 100%
       + [Externe Empfängertabelle verwenden](delivery/using/using-an-external-recipient-table.md)
       + [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
       + [Anwendungsbeispiel: Wertersetzung konfigurieren](delivery/using/use-case--configuring-the-field-substitution.md)
+   + A/B-Tests {#a-b-testing}
+      + [Erste Schritte mit A/B-Tests](delivery/using/get-started-a-b-testing.md)
+      + [Konfigurieren von A/B-Tests](delivery/using/configuring-a-b-testing.md)
+      + Anwendungsbeispiel {#use-case}
+         + [Über diesen Verwendungsfall](delivery/using/a-b-testing-use-case.md)
+         + [Erstellen eines Zielgruppen-Workflows](delivery/using/a-b-testing-uc-targeting-workflow.md)
+         + [Populationsmuster konfigurieren](delivery/using/a-b-testing-uc-population-samples.md)
+         + [Erstellen der Versandvorlagen](delivery/using/a-b-testing-uc-delivery-templates.md)
+         + [Konfigurieren der Versand](delivery/using/a-b-testing-uc-configuring-deliveries.md)
+         + [Skript erstellen](delivery/using/a-b-testing-uc-script.md)
+         + [Definieren des endgültigen Versands](delivery/using/a-b-testing-uc-final-delivery.md)
+         + [Workflow starten](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [Analysieren des Ergebnisses](delivery/using/a-b-testing-uc-analyzing.md)
    + Abos und Viralmarketing {#subscriptions-and-referrals}
       + [Über Dienste und Abonnements](delivery/using/about-services-and-subscriptions.md)
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
@@ -195,7 +212,7 @@ ht-degree: 100%
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Best Practices zur Rückgewinnung](delivery/using/re-engagement-best-practices.md)
-      + [Blockierungslisten-Datenbanken](delivery/using/block-list-databases.md)
+      + [Datenbanken mit Blockierungslisten](delivery/using/block-list-databases.md)
       + [Fehlerbehebung](delivery/using/deliverability-faq.md)
    + Content-Management-Modul {#content-management}
       + [Über Content Management](delivery/using/about-content-management.md)
@@ -439,7 +456,6 @@ ht-degree: 100%
       + [Über Workflow-Anwendungsfälle](workflow/using/about-workflow-use-cases.md)
       + Sendungen {#deliveries}
          + [Lokale Validierung verwenden](workflow/using/using-the-local-approval-activity.md)
-         + [A/B Tests](workflow/using/a-b-testing.md)
          + [Geburtstags-E-Mail senden](workflow/using/sending-a-birthday-email.md)
          + [Versandinhalt laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
