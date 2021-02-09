@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: f24642223a2ec9f3d8e78e2f7e71a55bf14b80c7
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 8%
+source-wordcount: '174'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +20,12 @@ ht-degree: 8%
 Sie können ein verlorenes Kennwort ändern oder wiederherstellen.
 Es gibt zwei mögliche Szenarien:
 
-**Passwort verloren durch Adobe Campaign-Operator**
+* [Passwort verloren durch Adobe Campaign-Operator](#password-lost-by-campaign-operator)
+* [Internes Passwort verloren](#internal-password-lost)  (nur lokale Kunden)
 
-In diesem Fall können Sie das Kennwort des Betreibers ändern.
+## Passwort verloren durch den Operator {#password-lost-by-campaign-operator} einer Kampagne
+
+Wenn ein Adobe Campaign-Operator sein Kennwort verliert, können Sie es ändern.
 Gehen Sie dazu wie folgt vor:
 
 1. Verbinden Sie sich über einen Operator mit Administratorrechten.
@@ -31,9 +34,13 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/operator-passwd.png)
 
-1. Legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass die Operatoren beim ersten erneuten Verbinden ihr Kennwort ändern.
+1. Legen Sie das neue Kennwort des Operators fest. Es wird empfohlen, dass der Bediener beim ersten erneuten Verbinden das Kennwort ändert.
 
-**Interner Passwortverlust (nur lokale Kunden)**
+## Internes Kennwort verloren {#internal-password-lost}
+
+>[!NOTE]
+>
+>Dieser Abschnitt gilt nur für lokale Kunden.
 
 Wenn das interne Kennwort verloren geht, müssen Sie es erneut initialisieren.
 Gehen Sie dazu wie folgt vor:
