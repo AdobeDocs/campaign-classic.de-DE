@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 86%
@@ -102,7 +102,7 @@ Stellen Sie sicher, dass Sie diese Parameter an den E-Mail-Versand-Durchsatz anp
 
 ## BCC-E-Mail-Adresse konfigurieren (vor Ort) {#configuring-the-bcc-email-address--on-premise-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Aus Datenschutzgründen müssen BCC-E-Mails von einem Archivierungssystem bearbeitet werden, in dem personenbezogene Daten (PII, Personally Identifiable Information) sicher aufbewahrt werden.
 
@@ -125,7 +125,7 @@ Verwenden Sie in der **config-`<instance name>.xml`** -Datei die folgenden Param
 
 ## Wechsel zum neuen E-Mail-BCC {#updated-email-archiving-system--bcc-}
 
->[!CAUTION]
+>[!IMPORTANT]
 >
 >Das E-Mail-Archivierungssystem (BCC) wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie von einem älteren Build aktualisieren und bereits E-Mail-Archivierungsfunktionen verwenden, müssen Sie manuell auf das neue E-Mail-Archivierungssystem (BCC) aktualisieren.
 
