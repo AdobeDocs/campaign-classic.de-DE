@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
 workflow-type: tm+mt
 source-wordcount: '4031'
 ht-degree: 24%
@@ -106,7 +106,7 @@ Die folgende Tabelle beschreibt diese Kennungen und ihren Zweck.
 
 | Kennung | Beschreibung | Best Practices |
 |--- |--- |--- |
-| Kennung | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei vordefinierten Tabellen handelt es sich um eine generierte 32-Bit-Zahl aus einer Sequenz</li><li>Diese Kennung ist in der Regel für eine bestimmte Adobe Campaign-Instanz eindeutig. </li><li>Eine automatisch generierte ID kann in einer Schema-Definition sichtbar sein. Suchen Sie das Attribut *autopk=&quot;true&quot;*.</li></ul> | <ul><li>Automatisch generierte IDs sollten nicht als Referenz in einem Workflow oder in einer Paketdefinition verwendet werden.</li><li>Es sollte nicht angenommen werden, dass die ID immer eine steigende Zahl ist.</li><li>Die ID in einer vordefinierten Tabelle ist eine 32-Bit-Zahl und dieser Typ sollte nicht geändert werden. Diese Zahl stammt aus einer Sequenz, die im Abschnitt mit demselben Namen behandelt wird.</li></ul> |
+| ID | <ul><li>Die ID ist der physische Primärschlüssel einer Adobe Campaign-Tabelle. Bei vordefinierten Tabellen handelt es sich um eine generierte 32-Bit-Zahl aus einer Sequenz</li><li>Diese Kennung ist in der Regel für eine bestimmte Adobe Campaign-Instanz eindeutig. </li><li>Eine automatisch generierte ID kann in einer Schema-Definition sichtbar sein. Suchen Sie das Attribut *autopk=&quot;true&quot;*.</li></ul> | <ul><li>Automatisch generierte IDs sollten nicht als Referenz in einem Workflow oder in einer Paketdefinition verwendet werden.</li><li>Es sollte nicht angenommen werden, dass die ID immer eine steigende Zahl ist.</li><li>Die ID in einer vordefinierten Tabelle ist eine 32-Bit-Zahl und dieser Typ sollte nicht geändert werden. Diese Zahl stammt aus einer Sequenz, die im Abschnitt mit demselben Namen behandelt wird.</li></ul> |
 | Name (oder interner Name) | <ul><li>Diese Information ist eine eindeutige Kennung eines Datensatzes in einer Tabelle. Dieser Wert kann manuell aktualisiert werden, üblicherweise mit einem generierten Namen.</li><li>Dieser Bezeichner behält seinen Wert bei, wenn er in einer anderen Instanz von Adobe Campaign bereitgestellt wird, und sollte nicht leer sein.</li></ul> | <ul><li>Benennen Sie den von Adobe Campaign generierten Datensatznamen um, wenn das Objekt von einer Umgebung in eine andere bereitgestellt werden soll.</li><li>Wenn ein Objekt beispielsweise über ein Namensraum-Attribut verfügt (*Schema*), wird dieser allgemeine Namensraum für alle erstellten benutzerdefinierten Objekte genutzt. Einige reservierte Namensraum sollten nicht verwendet werden: *nms*, *xtk*.</li><li>Wenn ein Objekt keinen Namensraum hat (*workflow* oder *Versand*), wird dieser Namensraum-Begriff als Präfix eines internen Namensobjekts hinzugefügt: *namespaceMyObjectName*.</li><li>Verwenden Sie keine Sonderzeichen wie Leerzeichen &quot; &quot;, Doppelpunkt &quot;:&quot; oder Bindestrich &quot;-&quot;. Alle diese Zeichen würden durch einen Unterstrich (_) ersetzt werden. Beispielsweise würden &quot;abc-def&quot; und &quot;abc:def&quot; als &quot;abc_def&quot; gespeichert werden und sich gegenseitig überschreiben.</li></ul> |
 | Titel | <ul><li>Der Titel ist die Unternehmenskennung eines Objekts oder Datensatzes in Adobe Campaign.</li><li>Dieses Objekt erlaubt Leerzeichen und Sonderzeichen.</li><li>Der Titel garantiert nicht die Einzigartigkeit eines Datensatzes.</li></ul> | <ul><li>Es wird empfohlen, eine Struktur für die Objekttitel festzulegen.</li><li>Dies ist die benutzerfreundlichste Lösung, um einen Datensatz oder ein Objekt für einen Adobe Campaign-Benutzer zu identifizieren.</li></ul> |
 
@@ -253,7 +253,7 @@ Standardmäßig haben Adobe Campaign-Versand und Trackinglogs eine Retentionsdau
 
 Weitere Informationen zur Datenspeicherung finden Sie in den [Richtlinien zum Datenschutz und zur Kampagne](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#consent).
 
-Weitere Informationen zum Kampagne Data Base-Bereinigungs-Workflow [in diesem Abschnitt ](../../production/using/database-cleanup-workflow.md)...
+Weitere Informationen zum Kampagne Data Base-Bereinigungs-Workflow [in diesem Abschnitt ](../../production/using/database-cleanup-workflow.md).
 
 >[!IMPORTANT]
 >
