@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f39a84108c1f3327a469d5a230518652647ed63e
 workflow-type: tm+mt
-source-wordcount: '7851'
+source-wordcount: '7846'
 ht-degree: 27%
 
 ---
@@ -1561,7 +1561,7 @@ Hier sind die verschiedenen Parameter des Knotens **mta**. Dies ist die Konfigur
   </tr> 
   <tr> 
    <td> useMomentum<br /> </td> 
-   <td> Wenn "true"festgelegt ist, verwendet Ihre Instanz die <a href="https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html" target="_blank">Erweiterte MTA</a>.<br /> </td> 
+   <td> Wenn "true"festgelegt ist, verwendet Ihre Instanz die <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Erweiterte MTA</a>.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> <br /> </td>b 
   </tr>
@@ -1818,7 +1818,7 @@ Konfigurieren Sie im Knoten **mta > child > smtp** die folgenden Parameter. Dies
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Maximale Anzahl an SMTP-Sitzungen pro Kindserver Um eine Nachricht zu senden, initialisiert das MTA eine SMTP-Verbindung mit dem Empfänger-MTA. Die maximale Anzahl gleichzeitiger und aktiver SMTP-Sitzungen für einen bestimmten untergeordneten Server ist durch diesen Wert begrenzt. Wenn Sie diesen Wert mit maxSpareServers multiplizieren, erhalten Sie die maximale Anzahl von Meldungen, die gleichzeitig von einem bestimmten untergeordneten Server verarbeitet werden können.<br /> </td> 
+   <td> Maximale Anzahl an SMTP-Sitzungen pro untergeordnetem Server Um eine Nachricht zu senden, initialisiert das MTA eine SMTP-Verbindung mit dem Empfänger-MTA. Die maximale Anzahl gleichzeitiger und aktiver SMTP-Sitzungen für einen bestimmten untergeordneten Server ist durch diesen Wert begrenzt. Wenn Sie diesen Wert mit maxSpareServers multiplizieren, erhalten Sie die maximale Anzahl von Meldungen, die gleichzeitig von einem bestimmten untergeordneten Server verarbeitet werden können.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
