@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 1330d4658d039f27a98535bf9885bffbfa0be3c9
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 100%
@@ -56,7 +56,7 @@ Wenn mehrere Versionen von Inhalten für den E-Mail-Versand vorhanden sind, kön
 
 * Wählen Sie die Version mit der höchsten Erfolgsquote aus und senden Sie sie an die restliche Zielgruppe.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../workflow/using/a-b-testing.md).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/get-started-a-b-testing.md).
 
 ## Nachrichtenzustellung überprüfen {#make-sure-your-message-is-delivered}
 
