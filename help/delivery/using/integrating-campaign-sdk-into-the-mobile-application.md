@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie das Campaign SDK in Ihre Mobile App integrier
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '957'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Die Campaign SDKs für iOS und Android sind im Mobile App Channel-Modul enthalte
 
 >[!NOTE]
 >
->Um Kampagne SDK (früher Neolane SDK) zu erhalten, wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Um das Campaign SDK (früher bekannt als Neolane SDK) zu erhalten, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 Ziel eines SDK ist es, die Integration einer Mobile App in die Adobe-Campaign-Plattform zu erleichtern.
 
