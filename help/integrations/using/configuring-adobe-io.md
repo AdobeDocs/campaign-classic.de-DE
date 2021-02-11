@@ -9,11 +9,11 @@ topic-tags: adobe-experience-manager
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec03e5bfdacc16ce148b24e200b517d73fae00b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 79%
 
 >[!CAUTION]
 >
->Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Der alte Auth-Authentifizierungsmodus wird am 30. April 2021 eingestellt. [Mehr dazu](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Die alte OAuth-Authentifizierungsmethode wird am 30. April 2021 eingestellt. [Mehr dazu](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->Beachten Sie, dass bei diesem Umzug nach Adobe I/O einige eingehende Trigger verloren gehen können.
+>Beachten Sie, dass während dieser Umstellung auf Adobe I/O einige eingehende Trigger verloren gehen können.
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
@@ -43,7 +43,7 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
    >
    > Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
 
-1. Extrahieren Sie die vorhandene Integrations-Client-ID (Client-ID) aus der Konfigurationsdatei ims/authIMSTAClientId. Ist das Attribut nicht vorhanden oder leer, bedeutet dies, dass die Client-Kennung nicht konfiguriert ist.
+1. Entnehmen Sie die vorhandene Integrations-Clientkennung (Client-ID) aus der Konfigurationsdatei &quot;ims/authIMSTAClientId&quot; der Instanz. Ist das Attribut nicht vorhanden oder leer, bedeutet dies, dass die Client-Kennung nicht konfiguriert ist.
 
    >[!NOTE]
    >
@@ -65,7 +65,7 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 
    ![](assets/do-not-localize/adobe_io_3.png)
 
-1. Wenn Ihre Client-ID leer war, wählen Sie **[!UICONTROL Generate a key pair]**, um ein öffentliches und privates Schlüsselpaar zu erstellen.
+1. Wenn Ihre Client-ID leer war, wählen Sie **[!UICONTROL Generate a key pair]** (Schlüsselpaar generieren) aus, um ein Paar aus öffentlichem und privatem Schlüssel zu erstellen.
 
    ![](assets/do-not-localize/adobe_io_4.png)
 
@@ -99,7 +99,7 @@ nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_
 
 >[!NOTE]
 >
->Sie sollten den privaten Schlüssel im Base 64-UTF-8-Format kodieren. Denken Sie daran, die neue Zeile vor der Kodierung aus dem Schlüssel zu entfernen, mit Ausnahme des privaten Schlüssels. Der private Schlüssel muss mit dem für die Erstellung der Integration verwendeten Schlüssel identisch sein. Zum Testen der base64-Kodierung des privaten Schlüssels können Sie [diese Website](https://www.base64encode.org/) verwenden.
+>Sie sollten den privaten Schlüssel im Base64-UTF-8-Format kodieren. Achten Sie darauf, vor dem Kodieren die neue Zeile aus dem Schlüssel zu entfernen (mit Ausnahme des privaten Schlüssels). Der private Schlüssel muss mit dem für die Erstellung der Integration verwendeten Schlüssel identisch sein. Sie können [diese Website](https://www.base64encode.org/) verwenden, um die Base64-Kodierung des privaten Schlüssels zu testen.
 
 ## Schritt 3: Aktualisieren des Pipelined-Tags {#update-pipelined-tag}
 
