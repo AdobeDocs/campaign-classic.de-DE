@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über Tools und Richtlinien zum Monitoring der Zu
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '791'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -71,10 +71,10 @@ Die bereitgestellten Werte sind in Echtzeit verfügbar, wodurch proaktive Unters
 
 ## Bericht zum technischen Zustellbarkeits-Monitoring {#technical-deliverability-monitoring}
 
-Der Bericht **Überwachung der technischen Lieferbarkeit** enthält eine Reihe von Qualitätsindikatoren für die Bereitstellung Ihrer Plattform. Sie können diesen täglichen Bericht per E-Mail erhalten. Öffnen Sie zum Anfordern einen bestimmten [Unterstützungsfall](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und geben Sie Folgendes an:
+Der **Bericht zum technischen Zustellbarkeits-Monitoring** enthält eine Reihe von Qualitätsindikatoren zur Zustellbarkeit für Ihre Plattform. Sie können diesen täglichen Bericht per E-Mail erhalten. Öffnen Sie zum Anfordern einen speziellen [Support-Fall](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und geben Sie Folgendes an:
 
-* der Name der Instanz
-* die E-Mail-Adressen, an die der Bericht gesendet werden soll
+* den Namen der Instanz,
+* die E-Mail-Adressen, an die der Bericht gesendet werden soll.
 
 Dieser Bericht enthält die folgenden Indikatoren:
 
