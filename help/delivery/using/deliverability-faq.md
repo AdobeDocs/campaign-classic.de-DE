@@ -6,11 +6,11 @@ description: Welche Hauptaspekte sind bei der Verwaltung der Zustellbarkeit in A
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1357'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Wenn Sie bei einem ISP immer dieselbe Fehlermeldung erhalten, hat der ISP mögli
 * Aktualisieren Sie Ihre Anmeldeformulare und achten Sie auf etwaige Fehler im Domain-Namen (z. B. gmaul.com oder yaho.com).
 * Wenn Fehlermeldungen auftreten, die Ihre E-Mails als Spam einstufen, oder wenn Ihre E-Mails blockiert werden, versuchen Sie, alle Empfänger auszuschließen, die innerhalb von 12 Monaten ab dem Versand ihre E-Mail nicht geöffnet oder darauf geklickt haben.
 
-Wenn das Problem weiterhin besteht, wenden Sie sich an den kommerziellen oder den Bereitstellungsdienst, [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Wenn das Problem fortbesteht, kontaktieren Sie die entsprechenden kommerziellen Dienstleister, Zustellbarkeitsdienste oder die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Blockierungsliste versus Quarantäne {#denylist-versus-quarantine}
 
