@@ -1,14 +1,14 @@
 ---
-keywords: Campaign Classic;Home;beliebte Themen
+keywords: Campaign Standard;Startseite;beliebte Themen
 solution: Campaign Classic
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 81%
 
 ## Neue Funktionen
 
-* **[Über IMS/Adobe ID verbinden? Aktualisieren Sie auf die neuesten Builds](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS verwenden, um eine Verbindung zur Kampagne herzustellen, müssen Sie ein Upgrade durchführen, um nach dem 31. März 2021** eine Verbindung zur Kampagne herstellen zu können.**
+* **[Stellen Sie Verbindungen über IMS/Adobe ID her? Führen Sie ein Upgrade auf die neuesten Builds aus](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS zur Verbindung mit Campaign verwenden, müssen Sie ein Upgrade durchführen, um nach dem** 31. März 2021 **eine Verbindung zu Campaign herstellen zu können.
 
-* **[Sichern Sie Ihre Kampagne ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html)**<br/> InstanzenAktualisieren Sie auf die neuesten Builds, um Ihre Kampagne-Plattform zu sichern.
+* **[Sichern Ihrer Campaign-Instanzen](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html)**<br/> Aktualisieren Sie auf die neuesten Builds, um Ihre Campaign-Plattform zu sichern.
 
-* **[Entfernen falscher Hardbounces](https://helpx.adobe.com/campaign/kb/update-bounce-qualification.html)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Gmail-Ausfall aktualisieren können
+* **[Entfernen falscher Hardbounces](https://helpx.adobe.com/de/campaign/kb/update-bounce-qualification.html)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Gmail-Ausfall aktualisieren können
 
 * **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsservice wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln.
 
