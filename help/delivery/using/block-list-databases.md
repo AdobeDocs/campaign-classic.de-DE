@@ -6,11 +6,11 @@ description: Datenbanken mit Blockierungslisten
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Im Folgenden finden Sie eine Liste der am häufigsten verwendeten RBLs. Eine umf
 
    Weiterführende Informationen finden Sie unter [https://www.spamhaus.org/](https://www.spamhaus.org/),
 
-   Die Datenbank ist wichtiger. Die Einstufung in diese Liste ist im Allgemeinen eine ernste Situation. In diesem Fall müssen Sie SOFORT handeln und kommerzielle Dienstleistungen, Lieferbarkeit und [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) warnen.
+   Die Datenbank ist wichtiger. Die Nennung in dieser Liste stellt im Allgemeinen eine ernste Situation dar. In diesem Fall müssen Sie SOFORT handeln und kommerzielle Dienste, Zustellbarkeitsdienste und die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) warnen.
 
 * **SpamCop**
 
@@ -43,13 +43,13 @@ Im Folgenden finden Sie eine Liste der am häufigsten verwendeten RBLs. Eine umf
 
    Weiterführende Informationen finden Sie unter [https://www.uribl.com/](https://www.uribl.com/),
 
-   Diese Liste identifiziert die Domänen, die regelmäßig in als Spam deklarierten Nachrichten erscheinen. Wenn Ihre Domäne auf dieser Liste angezeigt wird, kann dies Ihre Zustellbarkeit erheblich beeinträchtigen. Sie sollten die Bereitstellungsdienste und die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) sofort informieren.
+   Diese Liste identifiziert die Domains, die regelmäßig in als Spam deklarierten Nachrichten erscheinen. Wenn Ihre Domain auf dieser Liste erscheint, kann dies Ihre Zustellbarkeit erheblich beeinträchtigen. Sie sollten die Zustellbarkeitsdienste und die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) sofort informieren.
 
 * **SURBL**
 
    Besuchen Sie die Seite [http://www.surbl.org/](http://www.surbl.org/),
 
-   SURBL identifiziert die Websites, die regelmäßig in Spam erscheinen. Wenn Ihre Domäne auf dieser Liste angezeigt wird, kann dies Ihre Zustellbarkeit erheblich beeinträchtigen. Sie sollten die Bereitstellungsdienste und die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) sofort informieren.
+   SURBL identifiziert die Websites, die regelmäßig in Spam erscheinen. Wenn Ihre Domain auf dieser Liste erscheint, kann dies Ihre Zustellbarkeit erheblich beeinträchtigen. Sie sollten die Zustellbarkeitsdienste und die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) sofort informieren.
 
 * **iX Manitu**
 
