@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über den SMS-Connector und dessen Konfiguration.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2751'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -203,7 +203,7 @@ Bei hexadezimalen Zeichen können Sie den Unterschied zwischen ähnlichen Zeiche
 
 Um Unicode in hexadezimale Werte zu konvertieren, können Sie Online-Tools wie die Website [Unicode-Codekonverter](https://r12a.github.io/app-conversion/) verwenden. Geben Sie Ihren Text ein, vergewissern Sie sich, dass keine persönlichen Informationen wie Telefonnummern vorhanden sind, und klicken Sie auf **Konvertieren**. Die hexadezimalen Werte werden unten angezeigt (UTF-32-Zone).
 
-Wenn Sie Tickets zu Kodierungsproblemen öffnen, egal ob mit dem Anbieter oder der [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), fügen Sie immer eine Hexadezimalversion Ihres Typs und Ihrer Anzeige bei.
+Geben Sie beim Öffnen von Tickets für Kodierungsprobleme, sei es beim Provider oder bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), immer eine hexadezimale Version Ihrer Eingabe und Ihrer Anzeige an.
 
 **Schritt 3: Überprüfen, was Sie senden sollten**
 
