@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
-description: Aktuelle Version von Campaign Classic Anmerkungen
+description: Aktuelle Version von Campaign Classic  Anmerkungen
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1981'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ _27. Oktober 2020_
 
 >[!CAUTION]
 >
-> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 31. März 2021 **eine Verbindung zur Kampagne herstellen können.**
-> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): ein Upgrade erforderlich ist, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloug-Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie nach Adobe I/O wechseln, wie auf dieser Seite [beschrieben. ](../../integrations/using/configuring-adobe-io.md) Der ältere Authentifizierungsmodus von Auth wird am 30. April 2021 **eingestellt.**
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um nach dem **31. März 2021** eine Verbindung zu Campaign herstellen zu können.
+> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt.
 
 
 **Neue Funktionen**
