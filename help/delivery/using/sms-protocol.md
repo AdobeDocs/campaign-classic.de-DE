@@ -818,7 +818,7 @@ Wenn Sie mehrere Konten in derselben Adobe Campaign-Instanz haben, die eine Verb
 ### Aktivieren der ausführlichen SMPP-Verfolgung während der Prüfungen {#enable-verbose}
 
 Sie sollten während der Prüfungen immer die ausführliche SMPP-Verfolgung aktivieren.
-Auch wenn Sie die Protokolle nicht selbst überprüfen können, ist es für [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) einfacher, Ihnen zu helfen.
+Auch wenn Sie die Logs nicht selbst überprüfen können, kann die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) Ihnen leichter helfen.
 
 ### Testen Ihrer SMS {#test}
 
