@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
 workflow-type: tm+mt
 source-wordcount: '2623'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -37,7 +37,7 @@ Nachrichten können während der Versandvorbereitung auch ausgeschlossen werden,
 * [Status Fehlgeschlagen](../../delivery/using/delivery-performances.md#failed-status)
 * [Typen und Ursachen für fehlgeschlagene Sendungen](#delivery-failure-types-and-reasons)
 
-## Typen und Ursachen für fehlgeschlagene Sendungen {#delivery-failure-types-and-reasons}
+## Typen und Ursachen für fehlgeschlagene Sendungen  {#delivery-failure-types-and-reasons}
 
 Es gibt drei Typen von fehlgeschlagenen Sendungen. Vom jeweiligen Fehlertyp hängt es ab, ob eine Adresse in Quarantäne kommt. Weitere Informationen hierzu finden Sie unter [Ursachen für Quarantänen](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
@@ -178,7 +178,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
  </tbody> 
 </table>
 
-## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand  {#retries-after-a-delivery-temporary-failure}
+## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand   {#retries-after-a-delivery-temporary-failure}
 
 Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignorierten Fehlers** fehlschlägt, werden während der Versandlaufzeit erneute Zustellversuche vorgenommen.
 
@@ -194,7 +194,7 @@ Für Installationen vor Ort und gehostete/hybride Installationen mit der Legacy-
 
 Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl der weitere Zustellversuche kann global geändert werden (wenden Sie sich an den technischen Administrator Ihrer Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [weitere Zustellversuche konfigurieren](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
-## Synchrone und asynchrone Fehler  {#synchronous-and-asynchronous-errors}
+## Synchrone und asynchrone Fehler   {#synchronous-and-asynchronous-errors}
 
 Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren Zeitpunkt nach dem Versand (asynchroner Fehler).
 
@@ -223,7 +223,7 @@ Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy
 >
 >Bei gehosteten oder hybriden Installationen werden die meisten E-Mail-Verwaltungsregeln nicht mehr verwendet, wenn Sie auf [Erweiterte MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#email-management-rules).
 
-### Bounce-Message-Qualifizierung  {#bounce-mail-qualification}
+### Bounce-Message-Qualifizierung   {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
@@ -315,7 +315,7 @@ Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy
 * Sie haben die Möglichkeit, gewisse Authentifizierungsnormen und Verschlüsselungsschlüssel zu aktivieren, um den Domain-Namen zu prüfen: **Sender ID**, **DomainKeys**, **DKIM**, **S/MIME**.
 * Mit den **SMTP-Relais**-Parametern können Sie die IP-Adresse und den Relais-Server-Port für eine bestimmte Domain konfigurieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
-Wenn Ihre Nachrichten in Outlook mit **[!UICONTROL im Namen von]** in der Absenderadresse angezeigt werden, vergewissern Sie sich, dass Sie Ihre E-Mails nicht mit der **Sender ID** signieren, dem veralteten proprietären Authentifizierungsstandard für E-Mails von Microsoft. Wenn die Option **[!UICONTROL Sender-ID]** aktiviert ist, deaktivieren Sie das entsprechende Feld und wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Ihre Zustellbarkeit wird nicht beeinträchtigt.
+Wenn Ihre Nachrichten in Outlook mit **[!UICONTROL im Namen von]** in der Absenderadresse angezeigt werden, vergewissern Sie sich, dass Sie Ihre E-Mails nicht mit der **Sender ID** signieren, dem veralteten proprietären Authentifizierungsstandard für E-Mails von Microsoft. Wenn die Option **[!UICONTROL Sender ID]** aktiviert ist, deaktivieren Sie das entsprechende Feld und wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Ihre Zustellbarkeit wird nicht beeinträchtigt.
 
 #### MX-Verwaltung {#mx-management}
 
