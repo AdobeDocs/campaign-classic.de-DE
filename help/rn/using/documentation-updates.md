@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 7473a64a7f3865d1e1eefde9607c539c2f632138
+source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3965'
 ht-degree: 98%
 
 ---
@@ -26,6 +26,10 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 Es wurde ein neuer Abschnitt mit detaillierten Informationen zur Durchführung von A/B-Tests mit Workflows hinzugefügt. [Mehr dazu](../../delivery/using/get-started-a-b-testing.md)
 
 Der Bereich für erweiterte MTA für Adobe Campaigne wurde [hier](../../delivery/using/sending-with-enhanced-mta.md) verschoben.
+
+Eine neue Seite wurde hinzugefügt, um einen Überblick über die Verfolgungsfunktionen in [!DNL Campaign Classic] zu erhalten. [Mehr dazu](../../delivery/using/about-message-tracking.md)
+
+Es wurde ein Abschnitt zur Fehlerbehebung hinzugefügt, der Ihnen bei der Lösung häufiger Probleme im Zusammenhang mit der Verfolgung hilft. [Mehr dazu](../../delivery/using/tracking-troubleshooting.md)
 
 Der Abschnitt **Senden einer E-Mail** wurde neu organisiert und mit neuen Unterabschnitten geklärt. [Mehr dazu](../../delivery/using/sending-messages.md)
 
