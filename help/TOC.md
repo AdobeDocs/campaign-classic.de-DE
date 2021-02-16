@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 7351912ed34525479401ef4983a0bc8a78de85f8
+source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
 workflow-type: tm+mt
-source-wordcount: '2347'
+source-wordcount: '2349'
 ht-degree: 98%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 98%
       + [Versand optimieren](delivery/using/optimize-delivery.md)
       + [Vorlagen verwenden](delivery/using/use-templates.md)
       + [Personalisierte Inhalte erstellen](delivery/using/design-and-personalize.md)
-      + [Die richtige Zielgruppe festlegen](delivery/using/define-the-right-audience.md)
+      + [Die richtige Audience festlegen](delivery/using/define-the-right-audience.md)
       + [Vor dem Senden prüfen](delivery/using/check-before-sending.md)
       + [Tracken und überwachen](delivery/using/track-and-monitor.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
@@ -193,7 +193,7 @@ ht-degree: 98%
       + [Best Practices für die Versandleistung](delivery/using/delivery-performances.md)
       + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
       + [Versandstatus](delivery/using/delivery-statuses.md)
-      + [Ursachen von fehlgeschlagenen Sendungen](delivery/using/understanding-delivery-failures.md)
+      + [Ursachen für Fehler beim Versand](delivery/using/understanding-delivery-failures.md)
       + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
    + Nachrichten tracken {#tracking-messages}
       + [Über das Nachrichten-Tracking](delivery/using/about-message-tracking.md)
@@ -201,6 +201,7 @@ ht-degree: 98%
       + [URL-Tracking personalisieren](delivery/using/personalizing-url-tracking.md)
       + [Auf Trackinglogs zugreifen](delivery/using/accessing-the-tracking-logs.md)
       + [Tracking testen](delivery/using/testing-tracking.md)
+      + [Fehlerbehebung bei der Verfolgung](delivery/using/tracking-troubleshooting.md)
    + Verwaltung der Zustellbarkeit {#deliverability-management}
       + [Über die Zustellbarkeit](delivery/using/about-deliverability.md)
       + [Wichtigste zu prüfende Punkte](delivery/using/deliverability-key-points.md)
