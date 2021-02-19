@@ -25,7 +25,7 @@ Weitere Informationen zum Inhalt der einzelnen Versionen finden Sie in den [Vers
 
 Allgemeine Richtlinien für Hardwareanforderungen für lokale Campaign Classic finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
 
-Das Beratungsteam kann gehosteten Kunden ein Tool zur Verfügung stellen, mit dem Sie ganz einfach Ansichten darüber vornehmen können, wie viel Platz die verschiedenen Datenbanktypen und der auf der SFTP-Site genutzte Platz einnehmen. Darüber hinaus bietet es Tools, mit denen Sie unnötige Daten bereinigen können. Wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), wenn dieses Tool implementiert werden muss. Hier einige wichtige Punkte, die Sie mit diesem Tool überprüfen müssen:
+Das Beratungsteam kann gehosteten Kunden ein Tool zur Verfügung stellen, mit dem Sie ganz einfach Ansichten darüber vornehmen können, wie viel Platz die verschiedenen Datenbanktypen sowie der auf der SFTP-Site verwendete Speicherplatz nutzen. Darüber hinaus bietet es Tools, mit denen Sie unnötige Daten bereinigen können. Wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), wenn dieses Tool implementiert werden muss. Hier einige wichtige Punkte, die Sie mit diesem Tool überprüfen müssen:
 
 * Wenn die Indexgröße größer als die Tabellengröße ist, ist ein Vakuum erforderlich.
 * Überprüfen Sie die Tabellen mit der maximalen Aufblähung. Wenn diese Tabellen häufig verwendet werden, müssen sie evakuiert werden.
