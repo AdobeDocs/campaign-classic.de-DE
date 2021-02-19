@@ -21,7 +21,7 @@ Das konzeptionelle Datenmodell der Adobe Campaign-Datenbank besteht aus einer Re
 
 ## Übersicht {#data-model-overview}
 
-Adobe Campaign stützt sich auf eine relationale Datenbank, die Tabellen enthält, die miteinander verknüpft sind. Die Grundstruktur des Adobe Campaign-Datenmodells lässt sich wie folgt beschreiben:
+Adobe Campaign stützt sich auf eine relationale Datenbank, die Tabellen enthält, die miteinander verknüpft sind. Die Grundstruktur des Adobe Campaign-Datenmodells kann wie folgt beschrieben werden.
 
 ### Empfänger table {#recipient-table}
 
