@@ -23,7 +23,7 @@ sysFilter:==Bedingung
 
 ## Attribute {#attributes-15}
 
-Ohne
+Kein
 
 ## Eltern {#parents-15}
 
