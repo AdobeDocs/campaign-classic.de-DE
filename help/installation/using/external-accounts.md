@@ -40,7 +40,7 @@ Die folgenden externen Konten können eingerichtet werden:
 
 Gehen Sie wie folgt vor, um ein neues Externe Konto zu erstellen. Detaillierte Einstellungen hängen vom Typ des Externen Kontos ab.
 
-1. Wählen Sie in Kampagne **[!UICONTROL Explorer]** **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL Externe Konti]**.
+1. Wählen Sie in der Kampagne **[!UICONTROL Explorer]** **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL Externe Konti]**.
 
    ![](assets/ext_account_1.png)
 
