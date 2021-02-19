@@ -68,7 +68,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
    * date
    * DOMDocument
    * DOMElement
-   * dublette
+   * Dublette
    * enum
    * float
    * html
