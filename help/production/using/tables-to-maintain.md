@@ -40,7 +40,7 @@ Die folgende Liste enthält nur die Tabellen, die am häufigsten fragmentiert we
    <td> NmsDelivery<br /> </td> 
    <td> Klein<br /> </td> 
    <td> Aktualisierungen<br /> </td> 
-   <td> Pro Versand-Aktion ist ein Datensatz vorhanden. Ein einzelner Datensatz kann mehrere Male aktualisiert werden, um den Fortschritt des Versands widerzuspiegeln, sodass Indizes in dieser Tabelle häufig schnell fragmentiert werden. <br /> </td> 
+   <td> Pro Versand-Aktion ist ein Datensatz vorhanden. Ein einzelner Datensatz kann mehrmals aktualisiert werden, um den Fortschritt des Versands widerzuspiegeln. Daher neigen Indizes auf dieser Tabelle dazu, schnell zu fragmentieren. <br /> </td> 
   </tr> 
   <tr> 
    <td> NmsDeliveryPart<br /> </td> 
