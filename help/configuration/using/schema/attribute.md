@@ -140,7 +140,7 @@ Die Sequenz, in der `<attribute>`-Elemente in einem `<srcschema>` definiert sind
    * datetimetz
    * datetimenotz
    * date
-   * dublette
+   * Dublette
    * enum
    * float
    * html
