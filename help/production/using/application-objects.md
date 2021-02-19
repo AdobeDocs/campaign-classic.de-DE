@@ -21,7 +21,7 @@ Integrierte Objekte sollten überwacht werden, und es ist wichtig zu verhindern,
 
 ## Sequenz der IDs {#sequence-of-ids}
 
-Adobe Campaign verwendet eine ID-Sequenz, die entsprechend verwendet werden muss: **xtkNewId**. Wenn die Sequenz sehr schnell genutzt wird (d. h. ab 100.000 pro Tag), müssen Sie sicherstellen, dass sie mit Ihren Geschäftsanforderungen übereinstimmt, z. B. das Versenden von Millionen E-Mails pro Tag. Es ist möglich, eine eigene Sequenz für bestimmte Tabellen zu definieren. Sie können einen Workflow zur Überwachung der ID-Nutzung einrichten.
+Adobe Campaign verwendet eine ID-Sequenz, die entsprechend verwendet werden muss: **xtkNewId**. Wenn die Sequenz sehr schnell genutzt wird (d. h. ab 100.000 pro Tag), müssen Sie sicherstellen, dass sie mit Ihren Geschäftsanforderungen übereinstimmt, z. B. das Senden von Millionen E-Mails pro Tag. Es ist möglich, eine eigene Sequenz für bestimmte Tabellen zu definieren. Sie können einen Workflow zur Überwachung der ID-Nutzung einrichten.
 
 Wenn die Sequenz mehr als 2 Milliarden erreicht (2.147.483.648 ist die exakte Zahl), geht sie zurück auf Null. Es muss vermieden und Probleme geschaffen werden, weshalb diese Sequenz überwacht werden muss.
 
