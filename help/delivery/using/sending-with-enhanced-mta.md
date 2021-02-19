@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
 workflow-type: tm+mt
 source-wordcount: '1427'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -133,11 +133,11 @@ Weitere Informationen zur Absprungqualifizierung finden Sie in [diesem Abschnitt
 
 In der **[!UICONTROL Zusammenfassungs]**-Ansicht eines E-Mail-Versands [Dashboard](../../delivery/using/delivery-dashboard.md) gehen die **[!UICONTROL Beginn]** um 100% aus und gehen dann im gesamten Versand [Gültigkeitsdauer](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) schrittweise zurück, da die weichen und festen Absprünge von der erweiterten MTA-Kampagne aus gemeldet werden.
 
-Tatsächlich werden alle Meldungen in den [Versandprotokollen](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) als **[!UICONTROL Gesendet]** angezeigt, sobald sie erfolgreich von der Kampagne auf die erweiterte MTA übertragen wurden. Sie bleiben in diesem Status, es sei denn, oder bis ein [bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) für diese Meldung von der erweiterten MTA an die Kampagne zurückgesendet wird.
+Tatsächlich werden alle Meldungen in den [Versandprotokollen](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) als **[!UICONTROL Gesendet]** angezeigt, sobald sie erfolgreich von der Kampagne auf die erweiterte MTA übertragen wurden. Sie bleiben in diesem Status, es sei denn, ein [Bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) wird für diese Nachricht vom erweiterten MTA an Campaign zurückgemeldet.
 
 Wenn Meldungen mit festem Absprung aus der erweiterten MTA zurückgesendet werden, ändert sich ihr Status von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert.
 
-Wenn Meldungen mit weichem Zeilensprung aus der erweiterten MTA zurückgegeben werden, werden sie weiterhin als **[!UICONTROL Gesendet]** angezeigt und der **[!UICONTROL Erfolgsprozentsatz]** wird noch nicht aktualisiert. Soft-bouncing-Meldungen werden dann [erneut versucht](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) während der Gültigkeitsdauer des Versands:
+Wenn Meldungen mit weichem Zeilensprung aus der erweiterten MTA zurückgegeben werden, werden sie weiterhin als **[!UICONTROL Gesendet]** angezeigt und der **[!UICONTROL Erfolgsprozentsatz]** wird noch nicht aktualisiert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des Gültigkeitszeitraums des Versands [einen erneuten Zustellversuch](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):
 
 * Wenn ein erneuter Versuch vor Ende der Gültigkeitsdauer erfolgreich war, bleibt der Meldungsstatus weiterhin **[!UICONTROL Gesendet]** und der **[!UICONTROL Erfolg]**-Prozentsatz bleibt unverändert.
 
