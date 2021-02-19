@@ -142,7 +142,7 @@ Die folgenden Datentypen werden in Schemas unterstützt:
 
 * **boolean**: Boolesches Feld. Beispiel für mögliche Werte: true/false, 0/1, ja/nein usw.
 * **byte**,  **short**,  **long**: ganze Zahlen (1 Byte, 2 Byte, 4 Byte). Beispiele: Alter, Kontonummer, Anzahl der Punkte usw.
-* **dublette**: Gleitkommazahl mit Dublette-Präzision. Beispiele: Preis, Preis usw.
+* **Dublette**: Gleitkommazahl mit Dublette-Präzision. Beispiele: Preis, Preis usw.
 * **Datum**,  **Uhrzeit**: Daten und Daten + Uhrzeiten. Beispiele: Geburtsdatum, Kaufdatum usw.
 * **datetimenotz**: Datum + Uhrzeit ohne Zeitzonendaten.
 * **timespan**: Dauer. Beispiel: Ranghöhe.
@@ -219,7 +219,7 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
    <td> PRÄZISION DER Dublette<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DUBLETTE<br /> </td> 
+   <td> Dublette<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
@@ -275,7 +275,7 @@ In der folgenden Tabelle werden die Zuordnungen für die Datentypen Liste, die v
    <td> PRÄZISION DER Dublette<br /> </td> 
    <td> FLOAT<br /> </td> 
    <td> FLOAT<br /> </td> 
-   <td> DUBLETTE<br /> </td> 
+   <td> Dublette<br /> </td> 
    <td> FLOAT<br /> </td> 
   </tr> 
   <tr> 
