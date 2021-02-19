@@ -31,7 +31,7 @@ compute-string:==EMPTY
 
 ## Kinder {#children-1}
 
-Ohne
+Kein
 
 ## Beschreibung {#description-1}
 
