@@ -33,7 +33,7 @@ Bedingung:==EMPTY
 
 ## Kinder {#children-2}
 
-Ohne
+Kein
 
 ## Beschreibung {#description-2}
 
@@ -46,7 +46,7 @@ Ein `<sysfiler>`-Element kann mehrere Filterbedingungen enthalten.
 ## Attributbeschreibung {#attribute-description-2}
 
 * **boolOperator (Zeichenfolge)**: Wenn mehrere Elemente innerhalb desselben  `<conditions>` Elements definiert   `<sysfilter>` sind, können Sie sie mit diesem Attribut kombinieren. Standardmäßig ist die logische Verknüpfung zwischen `<condition>`-Elementen &quot;AND&quot;. Mit dem Attribut &quot;@boolOperator&quot;können Sie Links vom Typ &quot;OR&quot;und &quot;AND&quot;kombinieren.
-* **enabledIf (Zeichenfolge)**: aktivierung der Bedingung.
+* **enabledIf (Zeichenfolge)**: Aktivierung der Bedingung.
 * **expr (Zeichenfolge)**: ein XTK-Ausdruck.
 
 ## Beispiele {#examples-2}
