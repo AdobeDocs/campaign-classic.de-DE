@@ -316,7 +316,7 @@ Mit dem Parameter **MIME structure** (Mehrzweck-Internet-Mail-Erweiterungen) kö
 
 * **Mehrteilig**: Die Nachricht wird im Text- oder HTML-Format gesendet. Wenn das HTML-Format nicht akzeptiert wird, kann die Nachricht weiterhin im Textformat angezeigt werden.
 
-   Standardmäßig ist die mehrteilige Struktur **multipart/alternative**, aber sie wird automatisch **multipart/related**, wenn ein Bild zur Nachricht hinzugefügt wird. Bestimmte Anbieter erwarten standardmäßig das Format **multipart/related**. Die Option **[!UICONTROL Erzwingen Sie, dass dieses Format mehrteilig/verwandt]** verwendet wird, auch wenn kein Bild angehängt ist.
+   Standardmäßig ist die mehrteilige Struktur **multipart/alternative**, aber sie wird automatisch **multipart/related**, wenn ein Bild zur Nachricht hinzugefügt wird. Bestimmte Anbieter erwarten standardmäßig das Format **multipart/related**. Die Option **[!UICONTROL Erzwingen Sie, dass dieses Format mehrteilig/verwandt]** verwendet wird, auch wenn kein Bild angehängt wird.
 
 * **HTML**: Es wird eine Nur-HTML-Nachricht gesendet. Wenn das HTML-Format nicht akzeptiert wird, wird die Meldung nicht angezeigt.
 * **Text**: Es wird eine Meldung im Format &quot;Nur Text&quot;gesendet. Der Vorteil von Textformatmeldungen ist ihre sehr geringe Größe.
@@ -379,7 +379,7 @@ Die Parameter lauten wie folgt:
 * **heloHost**: dieser Bezeichner stellt die IP-Adresse dar, wie sie vom SMTP-Server angezeigt wird.
 
 * **publicId**: Diese Informationen sind nützlich, wenn eine IP-Adresse von mehreren Adobe Campaign- **** Mtasbehind einem NAT-Router freigegeben wird. Der Statistikserver verwendet diesen Bezeichner, um die Verbindungsdaten zu speichern und Statistiken zwischen diesem Startpunkt und dem Zielgruppen-Server zu senden.
-* **gewichtung**: können Sie die relative Häufigkeit der Verwendung der Adresse definieren. Standardmäßig haben alle Adressen eine Gewichtung von 1.
+* **Gewichtung**: können Sie die relative Häufigkeit der Verwendung der Adresse definieren. Standardmäßig haben alle Adressen eine Gewichtung von 1.
 
 >[!NOTE]
 >
