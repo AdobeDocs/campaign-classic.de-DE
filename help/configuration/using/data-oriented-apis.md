@@ -163,7 +163,7 @@ Ruft den Nachnamen und Vornamen eines Empfängers (&quot;nms:Empfänger&quot;-Sc
 </queryDef>
 ```
 
-#### Beispiel mit dem Vorgang &quot;Select&quot; {#example-with-the--select--operation}
+#### Beispiel mit dem Vorgang &#39;select&#39; {#example-with-the--select--operation}
 
 Gibt die Liste der auf einem Ordner gefilterten Empfänger und die E-Mail-Domäne mit einer Sortierung in absteigender Reihenfolge am Geburtsdatum zurück.
 
