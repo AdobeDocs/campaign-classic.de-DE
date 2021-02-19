@@ -60,7 +60,7 @@ Die ersten Parameter befinden sich im Knoten **shared**. Diese beziehen sich auf
 * [web](#web)
 * [wfserver](#wfserver)
 
-## authentication {#authentication}
+## Authentifizierung {#authentication}
 
 Nachfolgend sind die verschiedenen Parameter des Knotens **authentication** aufgeführt:
 
@@ -176,7 +176,7 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore**. Hier werden die
   </tr> 
   <tr> 
    <td> hosts<br /> </td> 
-   <td> DNS-Masken: liste der DNS-Masken, die diese Instanz bereitstellt (durch Kommas getrennt, kann * und ? Muster).<br /> </td> 
+   <td> DNS-Masken: Liste der DNS-Masken, die diese Instanz bereitstellt (durch Kommas getrennt, kann * und ? Muster).<br /> </td> 
    <td> String <br /> </td> 
    <td> '*'<br /> </td> 
   </tr> 
@@ -619,7 +619,7 @@ Hier sind die verschiedenen Parameter des Knotens **htmlToPdf**. Dies ist die Ko
   </tr> 
   <tr> 
    <td> verbose<br /> </td> 
-   <td> Funktionsmodus: beginn im ausführlichen Modus zur Fehlerdiagnose.<br /> </td> 
+   <td> Funktionsmodus: Beginn im ausführlichen Modus zur Fehlerdiagnose.<br /> </td> 
    <td> Boolesch<br /> </td> 
    <td> false<br /> </td> 
   </tr> 
@@ -821,7 +821,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../in
   </tr> 
   <tr> 
    <td> override<br /> </td> 
-   <td> Ausnahmen: liste von Adressen, für die Proxy-Parameter ignoriert werden sollen.<br /> </td> 
+   <td> Ausnahmen: Liste von Adressen, für die Proxy-Parameter ignoriert werden sollen.<br /> </td> 
    <td> String <br /> </td> 
    <td> 'localhost*' <br /> </td> 
   </tr> 
@@ -1652,7 +1652,7 @@ Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/co
  </tbody> 
 </table>
 
-### übergeordnet {#master}
+### Übergeordnet {#master}
 
 Konfigurieren Sie im Knoten **mta > Übergeordnet** die folgenden Parameter. Dies ist die Konfiguration des Hauptservers.
 
@@ -2986,19 +2986,19 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
   </tr> 
   <tr> 
    <td> forbiddenCharsInAuthority<br /> </td> 
-   <td> Verbotene Zeichen (Domäne): liste von verbotenen Zeichen im Abschnitt 'Autorität' eines URI.<br /> </td> 
+   <td> Verbotene Zeichen (Domäne): Liste von verbotenen Zeichen im Abschnitt 'Autorität' eines URI.<br /> </td> 
    <td> String <br /> </td> 
    <td> '.?#@/:' <br /> </td> 
   </tr> 
   <tr> 
    <td> forbiddenCharsInPath<br /> </td> 
-   <td> Verbotene Zeichen (Pfad): liste von verbotenen Zeichen im Abschnitt 'Pfad' eines URI.<br /> </td> 
+   <td> Verbotene Zeichen (Pfad): Liste von verbotenen Zeichen im Abschnitt 'Pfad' eines URI.<br /> </td> 
    <td> String <br /> </td> 
    <td> '?#/'<br /> </td> 
   </tr> 
   <tr> 
    <td> modDir<br /> </td> 
-   <td> Wert der Moduloption "mod_dir": liste der Dateien, die während einer Abfrage in einem Ordner verwendet werden sollen.<br /> </td> 
+   <td> Wert der Moduloption "mod_dir": Liste der Dateien, die während einer Abfrage in einem Ordner verwendet werden sollen.<br /> </td> 
    <td> String <br /> </td> 
    <td> 'index.md' <br /> </td> 
   </tr> 
@@ -3357,7 +3357,7 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
  </thead> 
  <tbody> 
   <tr> 
-   <td> affinität<br /> </td> 
+   <td> Affinität<br /> </td> 
    <td> Affinität<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
