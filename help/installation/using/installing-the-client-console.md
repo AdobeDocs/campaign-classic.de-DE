@@ -53,7 +53,7 @@ Gehen Sie wie folgt vor, um die Adobe Campaign-Client-Konsole herunterzuladen un
 
 Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungsserver herzustellen:
 
-1. Beginn Sie die Konsole aus dem Menü Windows **[!UICONTROL Beginn]** in der Programm-Gruppe **Adobe Campaign**.
+1. Beginn Sie die Konsole aus dem Menü Windows **[!UICONTROL Beginn]** in der Gruppe **Adobe Campaign** Programm.
 
 1. Klicken Sie auf den Link in der oberen rechten Ecke der Felder mit den Anmeldeinformationen, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
@@ -81,7 +81,7 @@ Sie können z. B. so viele Verbindungen wie erforderlich hinzufügen, um eine Ve
 
 Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 
-1. Beginn Sie die Konsole aus dem Menü Windows **[!UICONTROL Beginn]** in der Programm-Gruppe **Adobe Campaign**.
+1. Beginn Sie die Konsole aus dem Menü Windows **[!UICONTROL Beginn]** in der Gruppe **Adobe Campaign** Programm.
 
 1. Klicken Sie auf den Link in der oberen rechten Ecke der Felder mit den Anmeldeinformationen, um das Fenster für die Verbindungskonfiguration aufzurufen.
 
@@ -96,7 +96,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 * [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
-## Anleitungsvideo
+## Tutorial
 
 In diesem Video wird gezeigt, wie der Adobe Campaign-Client installiert und eingerichtet wird.
 
