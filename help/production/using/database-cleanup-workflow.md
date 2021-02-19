@@ -353,7 +353,7 @@ Diese Aufgabe löscht jede Workflow-Instanz mit ihrem Identifer (**lWorkflowId**
    SELECT relname FROM pg_class WHERE relname LIKE Lower('wkf%') ESCAPE E'\\' AND relkind IN ('r','v') AND pg_get_userbyid(relowner)<>'postgres'
    ```
 
-1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste der aktiven Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
+1. Anschließend werden alle Tabellen, die von einer ausstehenden Workflow-Instanz verwendet werden, ausgeschlossen. Die Liste aktiver Workflows wird mithilfe der folgenden Abfrage wiederhergestellt:
 
    ```
    SELECT iWorkflowId FROM XtkWorkflow WHERE iWorkflowId<>0 AND iState<>20
