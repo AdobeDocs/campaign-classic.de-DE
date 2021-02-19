@@ -86,8 +86,8 @@ Bestimmte Namensräume sind für Beschreibungen der Systementitäten reserviert,
 
 * **xtk**: Plattformsystemdaten,
 * **nl**: über die Verwendung des Antrags insgesamt,
-* **nms**: versand (Empfänger, Versand, Verfolgung usw.),
-* **ncm**: content-management,
+* **nms**: Versand (Empfänger, Versand, Verfolgung usw.),
+* **ncm**: Content-Management,
 * **temp**: für vorübergehende Schemas reserviert.
 
 Der Identifizierungsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namensraums und des durch einen Doppelpunkt getrennten Namens erstellt wird. Beispiel: **cus:Empfänger**.
