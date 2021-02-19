@@ -23,7 +23,7 @@ parameters:==param
 
 ## Attribute {#attributes-13}
 
-Ohne
+Kein
 
 ## Eltern {#parents-13}
 
@@ -43,7 +43,7 @@ Dieses Element ist obligatorisch, auch für ein einzelnes `<param>` untergeordne
 
 ## Attributbeschreibung {#attribute-description-13}
 
-Ohne
+Kein
 
 ## Beispiele {#examples-10}
 
