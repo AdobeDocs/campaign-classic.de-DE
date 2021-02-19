@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Tomcat-Version suchen{#locate-tomcat-version}
+# Speicherort der Tomcat-Version{#locate-tomcat-version}
 
 Adobe Campaign verwendet ein eingebettetes **Webservlet mit dem Namen Apache Tomcat**, um HTTP/HTTPS-Anforderungen zwischen der Anwendung und jeder externen Schnittstelle (einschließlich Client-Konsole, verfolgte URL-Links, SOAP-Aufrufe und andere) zu verarbeiten. Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
