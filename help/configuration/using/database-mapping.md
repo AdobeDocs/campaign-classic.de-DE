@@ -385,7 +385,7 @@ Links folgen den folgenden Regeln:
 * Die Definition eines Links wird auf einem **link**-Typ **`<element>`** mit den folgenden Attributen eingegeben:
 
    * **name**: Name des Links aus der Quelltabelle,
-   * **zielgruppe**: Name des Schemas der Zielgruppe,
+   * **Zielgruppe**: Name des Schemas der Zielgruppe,
    * **label**: Bezeichnung des Links,
    * **revLink**  (optional): Name des Rückwärtslinks aus dem Schema Zielgruppe (standardmäßig automatisch abgezogen),
    * **Integrität**  (optional): Referenzintegrität des Vorkommens der Quelltabelle zum Vorkommen der Zielgruppe-Tabelle. Mögliche Werte sind:
@@ -469,7 +469,7 @@ Ein umgekehrter Link zur Tabelle &quot;cus:Empfänger&quot;wurde mit folgenden P
 
 * **name**: automatisch vom Namen des Quell-Schemas abgezogen (kann mit dem Attribut &quot;revLink&quot;in der Linkdefinition im Quell-Schema erzwungen werden)
 * **revLink**: Name des umgekehrten Links
-* **zielgruppe**: Schlüssel des verknüpften Schemas (&quot;cus:Empfänger&quot;-Schema)
+* **Zielgruppe**: Schlüssel des verknüpften Schemas (&quot;cus:Empfänger&quot;-Schema)
 * **ungebunden**: Der Link wird als Collection-Element für eine 1-N Kardinalität deklariert (standardmäßig)
 * **Integrität**: &quot;Definieren&quot;standardmäßig (kann mit dem Attribut &quot;revIntegrity&quot;in der Linkdefinition im Quellcode-Schema erzwungen werden).
 
@@ -506,7 +506,7 @@ Verknüpfen mit einem Ordner (&quot;xtk:folder&quot;-Schema):
 
 Der Standardwert gibt den Bezeichner der ersten zulässigen Parametertypdatei zurück, die in der Funktion &quot;DefaultFolder(&#39;nmsFolder&#39;)&quot;eingegeben wurde.
 
-### Beispiel 4 {#example-5}
+### Beispiel 5 {#example-5}
 
 In diesem Beispiel möchten wir einen Schlüssel für einen Link (&quot;Firma&quot; zu &quot;cus:Firma&quot;-Schema) mit dem **xlink**-Attribut und einem Feld der Tabelle (&quot;email&quot;) erstellen:
 
