@@ -22,7 +22,7 @@ ht-degree: 9%
 Wenn die Anwendung auf die Daten einer vorhandenen Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
 
 * Name der Tabelle: Geben Sie den Namen der Tabelle (mit ihrem Alias bei Verwendung eines Datenbanklinks) mit dem Attribut &quot;sqltable&quot;ein,
-* schema-Schlüssel: auf das/die Abgleichfeld(e) verweisen,
+* Schema-Schlüssel: auf das/die Abgleichfeld(e) verweisen,
 * Indizes: zur Erzeugung von Abfragen verwendet werden,
 * Die Felder und ihr Speicherort in der XML-Struktur: nur die im Antrag verwendeten Felder ausfüllen,
 * Links: , wenn es Verbindungen zu den anderen Tabellen der Basis gibt.
