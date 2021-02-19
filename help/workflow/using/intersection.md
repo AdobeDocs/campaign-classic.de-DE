@@ -57,7 +57,7 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 ## Ausgabeparameter {#output-parameters}
 
 * tableName
-* schema
+* Schema
 * recCount
 
 Anhand der drei Werte lässt sich die durch die Schnittmenge ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. **[!UICONTROL nms:recipient]**) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
