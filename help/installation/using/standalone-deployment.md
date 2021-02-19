@@ -20,7 +20,7 @@ ht-degree: 2%
 Diese Konfiguration umfasst alle Komponenten auf demselben Computer:
 
 * Antragsprozess (Web),
-* versand (Metadaten),
+* Versand (Metadaten),
 * Umleitungsprozess (Verfolgung),
 * Workflow-Prozess und geplante Aufgaben (wfserver),
 * Absprung-Mail-Prozess (inMail),
@@ -47,7 +47,7 @@ Mit zunehmendem Volumen wird der Datenbankserver durch eine Variante dieser Arch
 
 ### Vorteile {#advantages}
 
-* Vollständig eigenständige und niedrige Konfigurationskosten (keine abrechnungsfähigen Lizenzen erforderlich, wenn die unten aufgeführte Open-Source-Software verwendet wird).
+* Voll eigenständige und niedrige Konfigurationskosten (keine abrechnungsfähigen Lizenzen erforderlich, wenn die unten aufgeführte Open-Source-Software verwendet wird).
 * Vereinfachte Installation und Netzwerkkonfiguration.
 
 ### Nachteile {#disadvantages}
@@ -235,7 +235,7 @@ Gehen Sie wie folgt vor:
 
    Sobald die Datenbank erstellt wurde, melden Sie sich ab.
 
-1. Melden Sie sich mit der **admin**-Anmeldung ohne Kennwort erneut bei der Client-Konsole an und Beginn Sie den Bereitstellungsassistenten ( **[!UICONTROL Extras > Erweitert]**-Menü) an, um die Konfiguration der Instanz abzuschließen.
+1. Melden Sie sich mit der **admin**-Anmeldung ohne Kennwort erneut bei der Client-Konsole an, und führen Sie den Bereitstellungsassistenten ( **[!UICONTROL Extras > Erweitert]**-Menü) durch, um die Konfiguration der Instanz abzuschließen.
 
    Weitere Informationen finden Sie unter [Bereitstellen einer Instanz](../../installation/using/deploying-an-instance.md).
 
@@ -248,7 +248,7 @@ Gehen Sie wie folgt vor:
 
       ![](assets/s_ncs_install_deployment_wiz_09.png)
 
-      Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Weiterleitungsserver verwendet wird, ist die zur Erfassung von Trackinglogs und Transfer-URLs verwendete interne URL eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
+      Da der Adobe Campaign-Server sowohl als Anwendungsserver als auch als Umleitungsserver verwendet wird, ist die zur Erfassung von Trackinglogs und Transfer-URLs verwendete interne URL eine direkte interne Verbindung zu Tomcat (https://localhost:8080).
 
    * Absprungverwaltung: Geben Sie die Parameter für die Verarbeitung der Absprungnachricht ein (berücksichtigen Sie nicht den Abschnitt **Nicht verarbeitete Absprungmeldungen**).
    * Zugriff von: Geben Sie die beiden URLs für Berichte, Webformulare und Mirrorseiten an.
