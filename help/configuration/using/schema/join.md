@@ -33,7 +33,7 @@ join:==EMPTY
 
 ## Kinder {#children-7}
 
-Ohne
+Kein
 
 ## Beschreibung {#description-7}
 
