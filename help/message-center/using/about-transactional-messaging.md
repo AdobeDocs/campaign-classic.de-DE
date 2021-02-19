@@ -6,9 +6,9 @@ description: 'Senden Sie Auslösernachrichten basierend auf Ereignissen, die von
 audience: message-center
 content-type: reference
 topic-tags: introduction
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
 
