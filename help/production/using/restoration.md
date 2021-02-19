@@ -21,10 +21,10 @@ Auf einem sauberen Server erfolgt die Wiederherstellung wie folgt:
 
 * auf einem installierten und konfigurierten Betriebssystem (Netzwerken),
 * Drittanbieteranwendungen installieren: Webserver, JDK (falls erforderlich),
-* adobe campaign-Binärdateien mit demselben Build wie das Quellsystem installieren,
+* Adobe Campaign-Binärdateien mit demselben Build wie das Quellsystem installieren,
 * Konfigurationsdateien, Trackinglogs und Umleitungsdateien kopieren,
 * die Datenbank erstellen und neu erstellen,
-* beginn Adobe Campaign.
+* Beginn Adobe Campaign.
 
 Weitere Informationen finden Sie im **Installationshandbuch**.
 
