@@ -45,7 +45,7 @@ Im Folgenden finden Sie einige Tipps, wie Sie Ihre Erfahrung mit Protokollen ver
 * [Protokollgenauigkeit](../../production/using/log-precision.md)
 * [Probleme mit Trackingprotokollen](../../production/using/tracking-logs-issues.md)
 
-## Datenbankprobleme {#database-issues}
+## Probleme in Bezug auf die Datenbank {#database-issues}
 
 Erfahren Sie, wie Sie Leistungsprobleme lösen können, indem Sie die folgenden Abschnitte lesen:
 
@@ -59,10 +59,10 @@ Falls Verbindungsprobleme auftreten, können Sie diese auf verschiedene Weise be
 * [Verbindung schlägt fehl](../../production/using/failure-to-connect.md)
 * [Verbindungsschwellen](../../production/using/connection-thresholds.md)
 
-## Technische Fehlerbehebung {#technical-troubleshooting}
+## Behebung technischer Probleme {#technical-troubleshooting}
 
 Gehen Sie zu den folgenden Abschnitten, um mehr über spezifische Probleme zu erfahren:
 
 * [Stack Trace in Linux](../../production/using/stack-trace-in-linux.md)
 * [JSP-Verhalten](../../production/using/jsp-behavior.md)
-* [Tomcat-Version suchen](../../production/using/locate-tomcat-version.md)
+* [Speicherort der Tomcat-Version](../../production/using/locate-tomcat-version.md)
