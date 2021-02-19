@@ -160,7 +160,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsEmail_RetryPeriod</span> <br /> </td> 
-   <td> Weitere Zustellversuche für E-Mail-Nachrichten.<br /> </td> 
+   <td> weitere Zustellversuche für E-Mail-Nachrichten.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsForecast_MsgWeightFormel</span> <br /> </td> 
@@ -376,7 +376,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsServer_PausedWorkflowPeriod</span> <br /> </td> 
-   <td> Anzahl der Tage, die zwischen den Prüfungen auf angehaltene Workflows gewartet werden sollen.<br /> </td> 
+   <td> Anzahl der Tage, die zwischen den Prüfungen auf angehaltene Workflows gewartet werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsCampaign_Activate_OwnerConfirmation</span> <br /> </td> 
@@ -683,7 +683,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
     <ul> 
      <li> <p> <span class="uicontrol">Datentyp:</span> Integer</p> </li> 
      <li> <p> <span class="uicontrol">Wert (Text)</span> : 1 </p> </li> 
-    </ul> Diese Option sollte nur verwendet werden, wenn die vordefinierte Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /> Weiterführende Informationen hierzu finden Sie in <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">diesem Abschnitt</a>.<br /> </td> 
+    </ul> Diese Option sollte nur verwendet werden, wenn die vordefinierte Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /><a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure"> Weitere Informationen hierzu finden Sie in diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -695,7 +695,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
-   <td> Geben Sie den Wert "1"ein, damit die Aktualisierung der Statistiken nicht über den Bereinigungsarbeitsablauf durchgeführt wird.<br /> </td> 
+   <td> Geben Sie den Wert "1"ein, damit die Aktualisierung der Statistik nicht über den Bereinigungsarbeitsablauf durchgeführt wird.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -728,11 +728,11 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Adobe Target-Server, der für die Integration verwendet wird. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Target-Domänenserver, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
+   <td> Adobe Target-Server, der für die Integration verwendet wird. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Target-Domänenserver, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Siehe diesen Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /> Siehe <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesen Abschnitt</a>.<br /> </td> 
+   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Siehe diesen Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
