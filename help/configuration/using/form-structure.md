@@ -654,7 +654,7 @@ Der Parametertyp muss über das Attribut **type** angegeben werden. Folgende Typ
 * **short**: 16-Bit-Ganzzahl
 * **long**: 32-Bit-Ganzzahl
 * **short**: 16-Bit-Ganzzahl
-* **dublette**: Gleitkommazahl mit Dublette
+* **Dublette**: Gleitkommazahl mit Dublette
 * **DOMElement**: element-type-Knoten
 
 Das Attribut **exprIn** enthält den Speicherort der Daten, die als Parameter übergeben werden sollen.
