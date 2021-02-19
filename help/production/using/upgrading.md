@@ -26,7 +26,7 @@ Bevor Sie den Aktualisierungsprozess starten, müssen Sie feststellen, auf welch
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie unter [Installationshandbuch](../../installation/using/general-architecture.md) und unter [Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
+>Weitere Informationen finden Sie unter [Installationsanleitung](../../installation/using/general-architecture.md) und unter [Build-Aktualisierung](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
 
 ## Windows {#in-windows}
 
@@ -89,7 +89,7 @@ Verwenden Sie die folgende Befehlszeile:
 Auf diese Weise können Sie die folgenden Vorgänge durchführen:
 
 * Ressourcen synchronisieren,
-* schemas aktualisieren,
+* Schemas aktualisieren,
 * die Datenbank aktualisieren.
 
 >[!NOTE]
@@ -160,7 +160,7 @@ Die Datei ist **nlserver6-v7-XXX.rpm**
 
 ### Webserver neu starten {#reboot-the-web-server}
 
-Sie müssen den Apache herunterfahren, damit die neue Bibliothek anwendbar wird.
+Sie müssen den Apache herunterfahren, damit die neue Bibliothek angewendet werden kann.
 
 Führen Sie dazu den folgenden Befehl aus:
 
