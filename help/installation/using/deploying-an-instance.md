@@ -319,7 +319,7 @@ Hier müssen Sie auch die Veröffentlichungsoptionen angeben, die mit Webformula
 
 Verwenden Sie diese Seite, um die Server-URLs für Folgendes zu füllen:
 
-1. Greifen Sie auf den im Internet angezeigten Anwendungsserver zu: abonnement-/Abmeldung-Formulare, Extranet usw.
+1. Greifen Sie auf den im Internet angezeigten Anwendungsserver zu: Abonnement-/Abmeldung-Formulare, Extranet usw.
 1. Greifen Sie auf den Anwendungsserver zu, wenn Ressourcen nicht im Web bereitgestellt werden: Formulare, Intranet, Bestätigungsseiten.
 1. Greifen Sie auf die Mirrorseiten der Versand zu.
 
@@ -343,11 +343,11 @@ Für diesen Schritt müssen Sie Folgendes eingeben:
 1. Der Bilderkennungsmodus in einem Versand. Weitere Informationen finden Sie im Abschnitt [Versand-Bilderkennung](#delivery-image-detection).
 1. Veröffentlichungsoptionen. Weitere Informationen finden Sie im Abschnitt [Veröffentlichungsmodi](#publication-modes).
 
-Öffentliche Ressourcen können über den Knoten **Administration > Resources > Online > Öffentliche Ressourcen** der Adobe Campaign-Struktur aufgerufen werden. Sie werden in einer Bibliothek gesammelt und können in E-Mails eingeschlossen, aber auch in Kampagnen oder Aufgaben und in Content-Management verwendet werden.
+öffentliche Ressourcen können über den Knoten **Administration > Resources > Online > Öffentliche Ressourcen** der Adobe Campaign-Struktur aufgerufen werden. Sie werden in einer Bibliothek gesammelt und können in E-Mails eingeschlossen, aber auch in Kampagnen oder Aufgaben und in Content-Management verwendet werden.
 
 ![](assets/install_pub_resources_view.png)
 
-### Öffentliche Ressourcen-URL {#public-resources-url}
+### öffentliche Ressourcen-URL {#public-resources-url}
 
 Im ersten Feld können Sie den Beginn der URL angeben, die nach dem Hochladen für die Ressourcen verwendet wird. Nach dem Hochladen sind die Ressourcen über diese neue URL verfügbar.
 
