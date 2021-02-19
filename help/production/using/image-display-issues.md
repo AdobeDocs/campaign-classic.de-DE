@@ -27,4 +27,4 @@ Fehlerbehebung:
 
 1. Senden Sie einen Testversand, der die Bilder anzeigt.
 1. Überprüfen Sie, ob die Ressourcenkonfiguration in der Instanzeinrichtung korrekt ist.
-1. Überprüfen Sie den Ordner &quot;öffentliche Ressourcen&quot;oder, falls nicht, den Ordner &quot;öffentliche Ressourcen&quot;, den im Versand referenzierten Ordner.
+1. Überprüfen Sie den Ordner &quot;öffentliche Ressourcen&quot;oder, falls sich dieser nicht im Ordner &quot;öffentliche Ressourcen&quot;befindet, den Ordner, auf den im Versand verwiesen wird.
