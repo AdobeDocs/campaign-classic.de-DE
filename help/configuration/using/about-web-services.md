@@ -41,7 +41,7 @@ Bevor Sie die Adobe Campaign-APIs verwenden, müssen Sie sich mit den folgenden 
 Adobe Campaign verwendet zwei API-Typen:
 
 * Generische Daten greifen auf APIs zum Abfragen der Datenmodelldaten zu. Siehe [Datenorientierte APIs](../../configuration/using/data-oriented-apis.md).
-* Geschäftsspezifische APIs, mit denen Sie für jedes Objekt handeln können: versand, Workflows, Abonnements usw. Siehe [Geschäftsorientierte APIs](../../configuration/using/business-oriented-apis.md).
+* Geschäftsspezifische APIs, mit denen Sie für jedes Objekt handeln können: Versand, Workflows, Abonnements usw. Siehe [Geschäftsorientierte APIs](../../configuration/using/business-oriented-apis.md).
 
 Um APIs zu entwickeln und mit Adobe Campaign zu interagieren, müssen Sie mit Ihrem Datenmodell vertraut sein. Mit Adobe Campaign können Sie eine vollständige Beschreibung der Basis erstellen. Siehe [Beschreibung des Modells](../../configuration/using/data-oriented-apis.md#description-of-the-model).
 
