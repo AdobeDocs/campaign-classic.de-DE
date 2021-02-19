@@ -23,7 +23,7 @@ Methoden:==Methode
 
 ## Attribute {#attributes-11}
 
-Ohne
+Kein
 
 ## Eltern {#parents-11}
 
