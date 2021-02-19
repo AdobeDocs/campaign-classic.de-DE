@@ -23,11 +23,11 @@ Adobe Campaign selbst ermöglicht zwar nicht die Verwaltung von archivierten Dat
 
 Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Remote-Server, z. B. einen SMTP-E-Mail-Server, übertragen. Das Archivierungsziel ist eine BCC-E-Mail-Adresse (für die Versand-Empfänger unsichtbar), die Sie angeben müssen.
 
-## Empfehlungen und Einschränkungen         {#recommendations-and-limitations}
+## Empfehlungen und Einschränkungen          {#recommendations-and-limitations}
 
 * Die BCC-Funktion für E-Mail ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 * Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die BCC-E-Mail-Adresse Ihrer Wahl muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfiguriert.
-* Folgen Sie für **lokale Installationen** den unten stehenden Richtlinien, um sie zu aktivieren - siehe die Abschnitte [Aktivieren des E-Mail-BCC (auf der Grundlage)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (auf der Site)](#configuring-the-bcc-email-address--on-premise-).
+* Gehen Sie für **lokale Installationen** wie folgt vor, um sie zu aktivieren - siehe die Abschnitte [Aktivieren des E-Mail-BCC (auf der Grundlage)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (auf der Site)](#configuring-the-bcc-email-address--on-premise-).
 * Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
 * Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **[!UICONTROL E-Mail-BCC]** aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
