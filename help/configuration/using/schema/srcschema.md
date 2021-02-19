@@ -27,7 +27,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), e
 
 ## Eltern {#parents-14}
 
-Ohne
+Kein
 
 ## Kinder {#children-14}
 
@@ -70,9 +70,9 @@ Die Darstellung des Schemas ist unter [Info zum Schema](../../../configuration/u
 
 * **modifyBy-id (long)**: entspricht der Kennung des Operators, der das Schema geändert hat.
 * **name (Zeichenfolge)**: eindeutiger Name des Schemas.
-* **namensraum (Zeichenfolge)**: namensraum des Schemas (Standard: nms, xtk, nl). Beim Erstellen eines neuen Schemas für ein Projekt wird empfohlen, einen eigenen Namensraum zu verwenden.
+* **Namensraum (Zeichenfolge)**: Namensraum des Schemas (Standard: nms, xtk, nl). Beim Erstellen eines neuen Schemas für ein Projekt wird empfohlen, einen eigenen Namensraum zu verwenden.
 * **useRecycleBin (boolean)**: Aktiviert die Funktion &quot;Papierkorb&quot;in der Anwendung. Gelöschte Datensätze werden vor der endgültigen Löschung in den Papierkorb gelegt. Diese Funktion ist nur im Versand-Modus verfügbar.
-* **ansicht (boolean)**: Wenn es aktiviert ist (@Ansicht=&quot;true&quot;), wird das Schema als Ansicht verwendet. Der Assistent zum Aktualisieren der Datenbankstruktur berücksichtigt das Schema nicht. Diese Option wird hauptsächlich für den Verweis auf externe Tabellen verwendet.
+* **Ansicht (boolean)**: Wenn es aktiviert ist (@Ansicht=&quot;true&quot;), wird das Schema als Ansicht verwendet. Der Assistent zum Aktualisieren der Datenbankstruktur berücksichtigt das Schema nicht. Diese Option wird hauptsächlich für den Verweis auf externe Tabellen verwendet.
 * **xtkschema (Zeichenfolge)**: Name des Schemas, das die Schema-Grammatik definiert (standardmäßig xtk:srcSchema).
 
 ## Beispiele {#examples-11}
