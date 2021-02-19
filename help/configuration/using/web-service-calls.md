@@ -81,8 +81,8 @@ https://`<server>`/nl/jsp/schemawsdl.jsp?Schema=`<schema>`
 
 Mit:
 
-* **`<server>`**: adobe campaign Application Server (nlserver web)
-* **`<schema>`**: schema-Identifizierungsschlüssel (Namensraum:Schema_Name)
+* **`<server>`**: Adobe Campaign Application Server (nlserver web)
+* **`<schema>`**: Schema-Identifizierungsschlüssel (Namensraum:Schema_Name)
 
 ### Beispiel für die Methode &#39;ExecuteQuery&#39; des Schemas &#39;xtk:queryDef&#39; {#example-on-the--executequery--method-of-schema--xtk-querydef-}
 
