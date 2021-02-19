@@ -82,7 +82,7 @@ Die Beschreibung eines globalen Befehls wird im Element **`<command>`** mit den 
 * **label**: Beschriftung des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms angezeigt wird.
 * **form**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifizierungsschlüssel des Eingabedrucks (z. &quot;cus:Empfänger&quot;)
-* **Rechte**: liste von Spezifische Berechtigungen (durch Kommas getrennt), die Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Rechte ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** verfügbar.
+* **Rechte**: Liste von Spezifische Berechtigungen (durch Kommas getrennt), die Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Rechte ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** verfügbar.
 * **promptLabel**: zeigt ein Bestätigungsfeld vor Ausführung des Befehls an.
 
 Ein **`<command>`**-Element kann **`<command>`**-Unterelemente enthalten. In diesem Fall können Sie mit dem übergeordneten Element ein Untermenü anzeigen, das aus diesen untergeordneten Elementen besteht.
@@ -162,8 +162,8 @@ Das **`<nodemodel>`**-Element enthält die Beschreibung des Ordnertyps mit den f
 * **name**: interner Name
 * **label**: -Beschriftung im  **[!UICONTROL Hinzufügen neuen]** Ordnermenü und als Standardbeschriftung beim Einfügen eines Ordners verwendet.
 * **img**: Standardbild beim Einfügen des Ordners.
-* **hiddenCommands**: liste der zu maskierenden Befehle (durch Kommas getrennt). Mögliche Werte: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; und &quot;adbdup&quot;.
-* **newFolderShortCuts**: liste von Tastaturbefehlen auf Modellen (durch Kommas **`<nodemodel>`** getrennt) bei der Ordnererstellung.
+* **hiddenCommands**: Liste der zu maskierenden Befehle (durch Kommas getrennt). Mögliche Werte: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; und &quot;adbdup&quot;.
+* **newFolderShortCuts**: Liste von Tastaturbefehlen auf Modellen (durch Kommas **`<nodemodel>`** getrennt) bei der Ordnererstellung.
 * **insertRight**,  **editRight**,  **deleteRight**: Rechte zum Einfügen, Bearbeiten und Löschen von Ordnern.
 
 Das Element **`<view>`** unter dem Element **`<nodemodel>`** enthält die Konfiguration der mit der Ansicht verknüpften Liste. Das Schema der Liste wird im Attribut **Schema** des Elements **`<view>`** eingetragen.
@@ -171,7 +171,7 @@ Das Element **`<view>`** unter dem Element **`<nodemodel>`** enthält die Konfig
 Zur Bearbeitung der Datensätze der Liste wird implizit das Eingabedatum mit demselben Namen wie das Liste-Schema verwendet. Das **type**-Attribut des **`<view>`**-Elements wirkt sich auf die Anzeige des Formulars aus. Mögliche Werte:
 
 * **listdet**: zeigt das Formular unten in der Liste an.
-* **liste**: zeigt nur die Liste an. Das Formular wird durch Dublette-Klick oder über die &quot;Öffnen&quot; im Menü zur Auswahl der Liste gestartet.
+* **Liste**: zeigt nur die Liste an. Das Formular wird durch Dublette-Klick oder über die &quot;Öffnen&quot; im Menü zur Auswahl der Liste gestartet.
 * **form**: zeigt ein schreibgeschütztes Formular an.
 * **editForm**: zeigt ein Formular im Bearbeitungsmodus an.
 
@@ -251,7 +251,7 @@ Die Beschreibung eines Befehls wird im Element **`<command>`** mit den folgenden
 * **label**: Beschriftung des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms angezeigt wird.
 * **form**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifizierungsschlüssel des Eingabedrucks (z. &quot;cus:Empfänger&quot;).
-* **Rechte**: liste von Spezifische Berechtigungen (durch Kommas getrennt), die Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Rechte ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** verfügbar.
+* **Rechte**: Liste von Spezifische Berechtigungen (durch Kommas getrennt), die Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Rechte ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** verfügbar.
 * **promptLabel**: zeigt ein Bestätigungsfeld vor Ausführung des Befehls an
 * **monoSelection**: erzwingt die Mono-Auswahl (standardmäßig mehrere Auswahlen).
 * **refreshView**: erzwingt das erneute Laden der Liste nach Ausführung des Befehls.
