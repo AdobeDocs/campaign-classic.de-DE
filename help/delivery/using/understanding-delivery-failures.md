@@ -223,7 +223,7 @@ Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy
 >
 >Bei gehosteten oder hybriden Installationen werden die meisten E-Mail-Verwaltungsregeln nicht mehr verwendet, wenn Sie auf [Erweiterte MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#email-management-rules).
 
-### Bounce-Message-Qualifizierung   {#bounce-mail-qualification}
+### Bounce-Message-Qualifizierung           {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
