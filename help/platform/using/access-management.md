@@ -6,9 +6,9 @@ description: Zugriffsverwaltung
 audience: platform
 content-type: reference
 topic-tags: administration-basics
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c24cdd21c2426ea12a1cbd76d78154256bc814c8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 100%
 
@@ -208,7 +208,7 @@ Der technische Benutzer &#39;webapp&#39; verfügt standardmäßig über die spez
 
 >[!NOTE]
 >
->Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html).
+>Weiterführende Informationen zu den Sicherheitsrichtlinien finden Sie unter [Checkliste von Adobe Campaign zur Sicherheitskonfiguration](https://helpx.adobe.com/campaign/kb/acc-security.html).
 
 ## Benutzergruppen {#operator-groups}
 
