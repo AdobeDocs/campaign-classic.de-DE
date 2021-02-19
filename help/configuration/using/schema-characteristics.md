@@ -29,7 +29,7 @@ Die Eigenschaften eines Schemas, das auf eine vorhandene Tabelle verweist, sind 
 
 ## Das Ansicht-Attribut {#the-view-attribute}
 
-Source-Schema akzeptieren das **Ansicht**-Attribut für das **srcSchema**-Stammelement. Es muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen manipuliert wird. Das Attribut **Ansicht=&quot;true&quot;** weist den Assistenten zum Aktualisieren der Datenbankstruktur an, dieses Schema zu ignorieren. Daher ist es dem Antrag untersagt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
+Source-Schema akzeptieren das **Ansicht**-Attribut für das **srcSchema**-Stammelement. Es muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen manipuliert wird. Das Attribut **Ansicht=&quot;true&quot;** weist den Assistenten zum Aktualisieren der Datenbankstruktur an, dieses Schema zu ignorieren. Die Anwendung ist daher nicht berechtigt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
 
 Wenn dieses Attribut auf **true** gesetzt ist, wird das Schema nur zum Generieren von SQL-Abfragen verwendet, um auf die Daten dieser Tabelle zuzugreifen.
 
