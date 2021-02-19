@@ -68,7 +68,7 @@ Es gibt vier Elementtypen im Adobe Campaign:`<element>`
    * &quot;delete&quot;: löschen. Das bedeutet, dass Adobe Campaign Elemente wiederherstellt und löscht.
 
 * **advanced (boolean)**: Wenn diese Option aktiviert ist (@advanced=&quot;true&quot;), können Sie das Attribut auf der Liste der verfügbaren Felder ausblenden, auf die Sie zur Konfiguration einer Liste in einem Formular zugreifen können.
-* **aggregat (Zeichenfolge)**: können Sie die Definition eines Begriffs  `<element>`  über ein anderes Schema kopieren. Dieses Attribut erhält eine Schema-Deklaration in Form eines &quot;Namensraum:name&quot;.
+* **Aggregat (Zeichenfolge)**: können Sie die Definition eines Begriffs  `<element>`  über ein anderes Schema kopieren. Dieses Attribut erhält eine Schema-Deklaration in Form eines &quot;Namensraum:name&quot;.
 * **applyIf (Zeichenfolge)**: Bedingung für die Anwendung des Indexes. Dieses Attribut erhält einen XTK-Ausdruck.
 * **autopk (boolean)**: Wenn diese Option aktiviert ist (autopk=&quot;true&quot;), wird automatisch ein eindeutiger Schlüssel definiert. Diese Option kann nur für das Hauptelement des Schemas verwendet werden. Warnung: Adobe Campaign garantiert nur, dass der generierte Schlüssel eindeutig ist. Es ist nicht garantiert, dass die Schlüsselwerte nacheinander und inkrementell sind.
 * **dataPolicy (Zeichenfolge)**: ermöglicht Ihnen die Angabe von Genehmigungsbeschränkungen für die im SQL-Feld zulässigen Werte. Die Werte für dieses Attribut lauten:
@@ -117,7 +117,7 @@ Es gibt vier Elementtypen im Adobe Campaign:`<element>`
    Barrierefreie Werte sind:
 
    * &quot;definieren&quot;: Adobe Campaign löscht die Entität nicht, wenn sie über den Link referenziert wird
-   * &quot;normal&quot;: Wenn Sie das Quellvorkommen löschen, werden die Schlüssel des Links beim Auftreten der Zielgruppe initialisiert (Standardmodus). Bei diesem Integritätsmodus werden alle Fremdschlüssel initialisiert
+   * &quot;normal&quot;: Wenn Sie das Quellvorkommen löschen, werden die Schlüssel des Links beim Auftreten der Zielgruppe initialisiert (Standardmodus). Bei diesem Integritätstyp werden alle Fremdschlüssel initialisiert
    * &quot;own&quot;: Wenn Sie das Quellvorkommen löschen, wird das Löschen des Vorkommens der Zielgruppe Trigger
    * &quot;Kopie&quot;: ähnlich wie &quot;eigene&quot;(bei Löschung) oder Duplikate (bei Vervielfältigung)
    * &quot;neutral&quot;: tut nichts
@@ -163,13 +163,13 @@ Es gibt vier Elementtypen im Adobe Campaign:`<element>`
 * **revIntegrity (Zeichenfolge)**: Dieses Attribut definiert die Integrität des Schemas Zielgruppe. Es werden dieselben Werte wie das Attribut &quot;@integer&quot;autorisiert. Standardmäßig gibt Adobe Campaign diesem Attribut den &quot;normalen&quot;Wert zu.
 * **revLabel (Zeichenfolge)**: Beschriftung des Gegenlinks.
 * **revLink (Zeichenfolge)**: Name des anderen Links. Lautet der Wert &quot;_KEINE_&quot;, wird im Ziel-Schema kein entgegengesetzten Link erstellt.
-* **revTarget (Zeichenfolge)**: zielgruppe des gegenteiligen Links.
+* **revTarget (Zeichenfolge)**: Zielgruppe des gegenteiligen Links.
 * **sql (boolean)**: Wenn dieses Attribut aktiviert ist (@sql=&quot;true&quot;), erzwingt es die Datenspeicherung des SQL-Elements, auch wenn das Element die Eigenschaft xml=&quot;true&quot; hat.
 * **sqlname (Zeichenfolge)**: Name des Felds bei der Tabellenerstellung. Wenn &quot;@sqlname&quot;nicht angegeben ist, wird der Wert des Attributs &quot;@name&quot;standardmäßig verwendet. Beim Schreiben des Schemas in die Tabelle werden je nach Feldtyp automatisch Präfixe hinzugefügt.
-* **sqltable (Zeichenfolge)**: für das Hauptelement des Schemas, überschreibt dieses Attribut den standardmäßig generierten Namen der SQL-Tabelle. Wenn &quot;@sqltable&quot;nicht angegeben ist, wird der Standardname wie folgt strukturiert: namensraum (Groß-/Kleinschreibung des ersten Buchstabens) gefolgt vom Wert des SrcSchema &quot;@name&quot;.
+* **sqltable (Zeichenfolge)**: für das Hauptelement des Schemas, überschreibt dieses Attribut den standardmäßig generierten Namen der SQL-Tabelle. Wenn &quot;@sqltable&quot;nicht angegeben ist, wird der Standardname wie folgt strukturiert: Namensraum (Groß-/Kleinschreibung des ersten Buchstabens) gefolgt vom Wert des SrcSchema &quot;@name&quot;.
 * **tableSpace (Zeichenfolge)**: Mit diesem Attribut können Sie eine neue Datenspeicherung für Tablespace für eine Tabelle angeben (gültig im Stammverzeichnis  `<element>`).
 * **tableSpaceIndex (Zeichenfolge)**: Mit diesem Attribut können Sie einen neuen Tabellenraum für die Index-Datenspeicherung angeben (gültig im Stammverzeichnis  `<element>`).
-* **zielgruppe (MNTOKEN)**: erhält beim Erstellen einer Verknüpfung zwischen Tabellen den Namen des Schemas Zielgruppe. Dieses Attribut ist nur für Elemente des Typs &quot;Link&quot;aktiv.
+* **Zielgruppe (MNTOKEN)**: erhält beim Erstellen einer Verknüpfung zwischen Tabellen den Namen des Schemas Zielgruppe. Dieses Attribut ist nur für Elemente des Typs &quot;Link&quot;aktiv.
 * **template (string)**: Dieses Attribut definiert einen Verweis auf ein  `<element>` Element, das von mehreren Schemas gemeinsam verwendet wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 * **translateDefault (Zeichenfolge)**: Wenn ein Attribut &quot;@default&quot;gefunden wird, können Sie mit &quot;@translatedDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten übereinstimmt und vom Übersetzungstool erfasst wird (interner Einsatz).
 * **translationExpr (Zeichenfolge)**: Wenn ein Attribut &quot;@expr&quot;gefunden wird, können Sie mit dem Attribut &quot;@translatedExpr&quot;einen Ausdruck neu definieren, der mit dem in &quot;@expr&quot;definierten übereinstimmt und vom Übersetzungstool erfasst wird (interne Verwendung).
@@ -187,7 +187,7 @@ Es gibt vier Elementtypen im Adobe Campaign:`<element>`
    * datetimetz
    * datetimenotz
    * date
-   * dublette
+   * Dublette
    * enum
    * float
    * html
