@@ -100,7 +100,7 @@ Personen: Dank der Cookies lässt sich beobachten, dass allen Klick-Logs dieselb
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Zwischenergebnis | 1 | 1 | 2 |
+| Zwischenergebnis | 1 | 3 | 2 |
 
 Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Florian die E-Mail weitergeleitet hat:
 
@@ -122,7 +122,7 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 | Marie | - | - | +1 |
 | Florianisch | +1 | +1 | +1 |
 | Unbekannte Person | - | +1 | - |
-| Zwischenergebnis | 1 | 2 | 2 |
+| Zwischenergebnis | 3 | 2 | 2 |
 
 ## 4. Schritt: Henry {#step-4--henry}
 
