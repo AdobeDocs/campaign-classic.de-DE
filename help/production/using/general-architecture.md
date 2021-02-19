@@ -21,7 +21,7 @@ ht-degree: 4%
 
 In einer Mindestkonfiguration funktioniert Adobe Campaign mit:
 
-* adobe campaign-Anwendungsserver,
+* Adobe Campaign-Anwendungsserver,
 * die Datenbank.
 
    ![](assets/formation_exploitation.png)
