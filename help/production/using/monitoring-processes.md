@@ -28,7 +28,7 @@ Gehen Sie zu **[!UICONTROL Überwachung]** und klicken Sie auf den Link **[!UICO
 Auf der angezeigten Seite können Sie den Status der verbundenen Instanz, d. h.:
 
 * Informationen zum Exemplar: Version, Name, Datenbank-Engine, installierte Pakete, Serversystemindikatoren,
-* liste fehlender Prozesse und Ausführungsinformationen (Beginn, PID usw.),
+* Liste fehlender Prozesse und Ausführungsinformationen (Beginn, PID usw.),
 * eine Ansicht von Workflows und Versänden.
 
 Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
@@ -282,7 +282,7 @@ Die Liste der Indikatoren für diesen Bericht ist im Diagramm dargestellt.
 
    * Blaue Kurve: Warteschlange aktiver Nachrichten. Diese Nachrichten werden so bald wie möglich gesendet.
 
-   * Kaki-Kurve: die Warteschlange &quot;aufgeschoben&quot;. Diese Meldungen können aufgrund von Einschränkungen oder weil keine Verbindung zur Zielgruppe verfügbar ist, momentan nicht zurückgegeben werden. Weitere Zustellversuche finden alle 5, 10, 20, 40, 2 Min. usw. statt. für die definierte Zeit **MaxAgeSec** vor dem Abbrechen.
+   * Kaki-Kurve: die Warteschlange &quot;aufgeschoben&quot;. Diese Meldungen können aufgrund von Einschränkungen oder weil keine Verbindung zur Zielgruppe verfügbar ist, momentan nicht zurückgegeben werden. weitere Zustellversuche finden alle 5, 10, 20, 40, 2 Min. usw. statt. für die definierte Zeit **MaxAgeSec** vor dem Abbrechen.
 
 1. Diese Diagramme zeigen eine Detailansicht der abgebrochenen Meldungen (rote Kurve auf der zweiten Grafik): es zeigt den Anteil der Nachrichten ohne weitere Zustellversuche (mauve) verlassen, verglichen mit Nachrichten, deren Senden fehlgeschlagen (rot). Auf diese Weise können Sie den Anteil der Nachrichten, die nicht innerhalb des angegebenen Zeitraums verarbeitet werden, aufgrund von Einschränkungen durch den Statistikserver (Einschränken) oder aufgrund der Nichtverfügbarkeit des Remote-Servers Ansicht werden.
 1. SMTP-Verbindungen, die offen sind oder geöffnet werden
@@ -597,7 +597,7 @@ Dieses Element konfiguriert die Überwachung eines bestimmten Servers auf dem Ho
 
    ![](assets/ncs_operators_rights_02.png)
 
-* **criticalLevel**  (optional): können Sie Fehler sortieren, die nach der Schwere angezeigt werden sollen. Mögliche Werte sind &quot;0&quot;(alle Ebenen werden angezeigt), &quot;1&quot;(nur hohe und kritische Fehler) und &quot;2&quot;(nur kritische Fehler angezeigt). Wenn dieses Attribut nicht angegeben ist, werden alle Fehlerebenen angezeigt.
+* **criticalLevel**  (optional): können Sie Fehler sortieren, die nach der Schwere angezeigt werden sollen. Mögliche Werte sind &#39;0&#39; (alle Ebenen werden angezeigt), &#39;1&#39; (nur hohe und kritische Fehler) und &#39;2&#39; (nur kritische Fehler angezeigt). Wenn dieses Attribut nicht angegeben ist, werden alle Fehlerebenen angezeigt.
 * **filter**  (optional): können Sie bestimmte Workflow-Fehler ausschließen, z. B.  **filter=&quot;wkf;wkf1&quot;**. Workflow-Beschriftungen müssen durch Semikolons getrennt werden.
 
 #### Unterelemente {#sub-elements}
