@@ -54,7 +54,7 @@ Dieser Modus erstellt ein Verfolgungsprotokoll für Personen mit einem Sitzungs-
 
 * Versandkennung
 * Kontakt-ID
-* versand-Protokoll
+* Versand-Protokoll
 * ständiges Cookie (uuid230)
 * Tracking-URL
 * Datum des Verfolgungsprotokolls
