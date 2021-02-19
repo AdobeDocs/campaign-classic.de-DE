@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Die meisten Leistungsprobleme sind mit der Datenbankwartung verbunden. Hier sind vier wichtige Hinweise, die Ihnen bei der Suche nach der Ursache für eine langsame Leistung helfen:
 
-* Konfiguration    
+* Konfiguration     
 * Installation und Konfiguration der Adobe Campaign-Plattform
 * Wartung der Datenbank
 * Echtzeitdiagnose
