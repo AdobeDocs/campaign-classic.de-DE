@@ -27,7 +27,7 @@ Adobe Campaign bietet Ihnen zwei vordefinierte Architekturoptionen zur Dimension
 
 * **Stromverteiler**
 
-   Diese Option unterstützt 2 bis N geclusterte Ausführungsinstanzen, die von der primären Anwendungsinstanz des Adobe Campaigns in Bezug auf eine bestimmte Anwendung entkoppelt sind. Cluster können remote, in verteilten Bereitstellungen und von Dritten gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Option Adobe Campaign Power Cluster Redundanz- und Ausmaßstabsstrategien mithilfe von Warenhardware für eine vereinfachte SLA- oder Performance-Entwicklung.
+   Diese Option unterstützt 2 bis N geclusterte Ausführungsinstanzen, die von der primären Anwendungsinstanz des Adobe Campaigns in Bezug auf eine bestimmte Anwendung entkoppelt sind. Cluster können remote, in verteilten Bereitstellungen und von Dritten gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Adobe Campaign Power Cluster-Option Redundanz- und Ausbaustrategien mithilfe von Warenhardware für eine vereinfachte SLA- oder Performance-Entwicklung.
 
 ![](assets/architectural_options_diagram.png)
 
@@ -85,6 +85,6 @@ Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von
 ## Empfehlungen {#recommendations}
 
 * Eine Ausführungsinstanz muss einem Dienst gewidmet sein. Sie können kein Paket für einen Dienst installieren, den Sie nicht abonniert haben. Wenn Sie z. B. die Option **Power Booster** für den **Message Center**-Dienst abonnieren, dürfen Sie nur das **[!UICONTROL Execution of Transaktionsnachrichten]**-Paket auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind Empfehlungen dieselben wie für eine Hauptinstanz. Weitere Informationen hierzu finden Sie in [diesem Dokument](../../production/using/foreword.md).
+* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind Empfehlungen dieselben wie für eine Hauptinstanz. Weitere Informationen finden Sie in [diesem Dokument](../../production/using/foreword.md).
 * Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz über einen Datenbankkomponenten-/Hardwarekomponenten-Punkt der Ansicht korrekt zu konfigurieren.
 
