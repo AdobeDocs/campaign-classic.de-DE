@@ -15,11 +15,11 @@ ht-degree: 9%
 ---
 
 
-# auflistung element {#enumeration--element}
+# Auflistung element {#enumeration--element}
 
 ## Inhaltsmodell {#content-model-5}
 
-auflistung:==(help| value)
+Auflistung:==(help| value)
 
 ## Attribute {#attributes-5}
 
@@ -65,7 +65,7 @@ Auflistungen werden am Beginn eines Schemas definiert (bevor das Hauptelement de
    * date
    * DOMDocument
    * DOMElement
-   * dublette
+   * Dublette
    * enum
    * float
    * html
