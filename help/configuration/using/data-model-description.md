@@ -47,7 +47,7 @@ Dies ist die Standardtabelle, die für die **Empfänger von Versänden** verwend
 
 * sEmail: E-Mail-Adresse.
 * iEmailFormat: bevorzugte Format für E-Mails (1 für Text, 2 für HTML und 0, wenn nicht definiert).
-* sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity werden zur Erstellung der Postanschrift verwendet (gemäß XPZ 10-011 AFNOR Standard ab Mai 1997).
+* sAddress1, sAddress2, sAddress3, sAddress4, sZipCode, sCity werden zum Aufbau der Postanschrift verwendet (gemäß XPZ 10-011 AFNOR Standard ab Mai 1997).
 * sPhone, sMobilePhone, sFax enthalten die Telefon-, Handy- und Faxnummern.
 * iBlackList ist das standardmäßige Ausschluss-Flag, das für die Profil verwendet wird (1 bedeutet &quot;unsubscribed&quot;, 0 ansonsten).
 
@@ -115,7 +115,7 @@ Dieser Tabellensatz ist mit dem Modul **Versand** verknüpft, mit dem Versand un
 
 ## Kampagnenverwaltung {#campaign-management}
 
-Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, mit dem Kommunikations- und Marketing-Kampagnen definiert, optimiert, ausgeführt und analysiert werden können. Weitere Informationen finden Sie unter [Informationen zu Marketing-Kampagnen](../../campaign/using/designing-marketing-campaigns.md).
+Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, das die Definition, Optimierung, Ausführung und Analyse von Kommunikations- und Marketing-Kampagnen ermöglicht. Weitere Informationen finden Sie unter [Informationen zu Marketing-Kampagnen](../../campaign/using/designing-marketing-campaigns.md).
 
 ![](assets/data-model_campaign.png)
 
