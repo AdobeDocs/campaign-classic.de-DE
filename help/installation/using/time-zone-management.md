@@ -33,7 +33,7 @@ Die wichtigsten Plattformfunktionalitäten im Zeitzonenmanagement sind: Import-/
 >
 >Wenn die Datenbank nicht mehrere Zeitzonen verwaltet, müssen für alle Datenfiltermanipulationen SQL-Abfragen in der Zeitzone des Datenbankservers ausgeführt werden.
 
-Jeder Adobe Campaign-Operator ist mit einer Zeitzone verknüpft: diese Informationen in ihrem Profil konfiguriert sind. Weitere Informationen hierzu finden Sie in [diesem Dokument](../../platform/using/access-management.md).
+Jeder Adobe Campaign-Operator ist mit einer Zeitzone verknüpft: diese Informationen in ihrem Profil konfiguriert sind. Weitere Informationen finden Sie in [diesem Dokument](../../platform/using/access-management.md).
 
 Wenn die Zeitzonenverwaltung für die Adobe Campaign-Plattform nicht erforderlich ist, können Sie einen Datenspeicherung-Modus im lokalen Format mit einer bestimmten verknüpften Zeitzone beibehalten.
 
