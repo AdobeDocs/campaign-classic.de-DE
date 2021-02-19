@@ -135,6 +135,7 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 >
 >* Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](../../delivery/using/steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
 >* Die Konfiguration der Testversand-Zielgruppe wird unter [Spezifische Testversand-Zielgruppe definieren](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben.
+
 >
 
 
