@@ -91,7 +91,7 @@ Sie müssen auch alle [nützlichen Befehlszeilen](../../installation/using/comma
 * **nlserver pdump**: listet aktuelle Prozesse auf
 * **nlserver pdump -who**: listet aktive Client-Sitzungen auf
 * **nlserver monitor -missing**: listet fehlende Eigenschaften auf
-* **nlserver-Beginn process@instanceName**: beginn eines Prozesses
+* **nlserver-Beginn process@instanceName**: Beginn eines Prozesses
 * **nlserver stop process@instanceName**: stoppt einen Prozess
 * **nlserver-Neustart process@instanceName**: einen Prozess neu starten
 * **nlserver herunterfahren**: stoppt alle Kampagnen
