@@ -6,9 +6,9 @@ description: Weitere Informationen zur Integration von Adobe IMS
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 100%
 
@@ -37,6 +37,7 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 > * [Campaign-Version 20.1.4](../../rn/using/release--20-1.md)
 > * [Campaign-Version 19.2.4](../../rn/using/release--19-2.md)
 > * [Campaign-Version 19.1.8](../../rn/using/release--19-1.md)
+
 >
 
 
