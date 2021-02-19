@@ -118,7 +118,7 @@ Nach den folgenden Ausdrücken wird gesucht (Groß-/Kleinschreibung beachten):
  <thead> 
   <tr> 
    <th> Ausdruck<br /> </th> 
-   <th> Fehlercode<br /> </th> 
+   <th> Fehler-code<br /> </th> 
    <th> Logtyp<br /> </th> 
    <th> Erklärung<br /> </th> 
   </tr> 
@@ -127,25 +127,25 @@ Nach den folgenden Ausdrücken wird gesucht (Groß-/Kleinschreibung beachten):
   <tr> 
    <td> .@<br /> </td> 
    <td> PU-0001<br /> </td> 
-   <td> Warnhinweis<br /> </td> 
+   <td> Warnung<br /> </td> 
    <td> Diese Syntaxart wird bei der Personalisierung von Versänden nicht mehr unterstützt. Siehe <a href="../../migration/using/general-configurations.md#javascript" target="_blank">JavaScript</a>. Überprüfen Sie andernfalls, ob der Werttyp korrekt ist.<br /> </td> 
   </tr> 
   <tr> 
    <td> common.js<br /> </td> 
    <td> PU-0002<br /> </td> 
-   <td> Warnhinweis<br /> </td> 
+   <td> Warnung<br /> </td> 
    <td> Diese Bibliothek darf nicht verwendet werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> logon(<br /> </td> 
    <td> PU-0003<br /> </td> 
-   <td> Warnhinweis<br /> </td> 
+   <td> Warnung<br /> </td> 
    <td> Diese Verbindungsmethode darf nicht mehr verwendet werden. Siehe <a href="../../migration/using/general-configurations.md#identified-web-applications" target="_blank">Identifizierte Webanwendungen</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> new SoapMethodCall(<br /> </td> 
    <td> PU-0004<br /> </td> 
-   <td> Warnhinweis<br /> </td> 
+   <td> Warnung<br /> </td> 
    <td> Diese Funktion wird nur unterstützt, wenn sie im JavaScript-Code verwendet wird, der aus einer Sicherheitszone ausgeführt wird, die sich im Modus <strong>sessionTokenOnly</strong> befindet.<br /> </td> 
   </tr> 
   <tr> 
