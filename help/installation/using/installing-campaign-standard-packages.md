@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Installieren von Campaign Classic-Standardpaketen
+title: Installieren von nativen Campaign Classic-Packages
 description: Erfahren Sie, wie Sie integrierte Kampagne-Pakete installieren
 audience: installation
 content-type: reference
@@ -15,7 +15,7 @@ ht-degree: 24%
 ---
 
 
-# Installieren von Campaign Classic-Standardpaketen{#installing-campaign-standard-packages}
+# Installieren von nativen Campaign Classic-Packages{#installing-campaign-standard-packages}
 
 ## Integrierte Pakete {#campaign-standard-packages}
 
