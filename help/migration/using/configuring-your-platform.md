@@ -79,7 +79,7 @@ Nach der Ausführung von **postupgrade** müssen die folgenden Elemente berücks
 
 * Syntax
 
-   Wenn bei der Syntax nach der Aktualisierung Fehler auftreten, müssen Sie die Option **allowSQLInject** in der Datei **serverConf.xml** vorübergehend aktivieren, da Sie so Zeit haben, den Code neu zu schreiben. Nachdem der Code angepasst wurde, stellen Sie sicher, dass Sie die Sicherheit reaktivieren. Weitere Informationen finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata).
+   Wenn Sie während der Aktualisierung auf Syntaxfehler stoßen, müssen Sie die Option **allowSQLInject** in der Datei **serverConf.xml** vorübergehend aktivieren, da Sie dadurch Zeit zum Umschreiben des Codes haben. Nachdem der Code angepasst wurde, stellen Sie sicher, dass Sie die Sicherheit reaktivieren. Weitere Informationen finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata).
 
 * Konflikte
 
@@ -123,7 +123,7 @@ Nach der Ausführung von **postupgrade** müssen die folgenden Elemente berücks
 
    Bei der Migration von einer v5.11-Plattform müssen Sie den Verfolgungsmodus konfigurieren. Weitere Informationen finden Sie im Abschnitt [Verfolgung](../../migration/using/specific-configurations-in-v5-11.md#tracking).
 
-* Startseite      
+* Startseite           
 
    Wenn Sie von einer v6.02-Plattform migrieren, können Sie zusätzliche Parameter definieren, um Ihre alte Startseite von v6.02 zu erhalten. Weitere Informationen finden Sie unter [Benutzerfreundlichkeit: Startseite und Navigation.](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation)
 
