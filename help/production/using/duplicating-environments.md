@@ -88,7 +88,7 @@ pg_dump mydatabase > mydatabase.sql
 
 ### Schritt 2: Exportieren der Konfiguration der Zielgruppe-Umgebung (dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-Die meisten Konfigurationselemente unterscheiden sich für jede Umgebung: externe konti (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.)
+Die meisten Konfigurationselemente unterscheiden sich für jede Umgebung: Externe Konti (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.)
 
 Vor dem Speichern der Quelldatenbank in der Zielgruppe müssen Sie die Dev-Konfiguration (Zielgruppe Umgebung) exportieren. Exportieren Sie dazu den Inhalt dieser beiden Tabellen: **xtkoption** und **nmsextaccount**.
 
@@ -193,7 +193,7 @@ Stellen Sie auf der Umgebung Zielgruppe einen erneuten Beginn der Adobe Campaign
 
 >[!NOTE]
 >
->Bevor Sie das Adobe Campaign auf der **dev**-Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: beginn nur das Modul **web**.
+>Bevor Sie das Adobe Campaign auf der **dev**-Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: Beginn nur das Modul **web**.
 >  
 >Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**) und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot;für jedes Modul (mta, stat usw.) hinzu.
 
@@ -221,7 +221,7 @@ nlserver pdump
 
 So importieren Sie die Konfiguration aus der Zielgruppe Umgebung-Datenbank (dev):
 
-1. Öffnen Sie die Admin-Konsole der Datenbank und leeren Sie die Externe Konti (Tabelle nms:extAccount), deren ID nicht 0 (@id &lt;> 0) ist.
+1. Öffnen Sie die Admin-Konsole der Datenbank und löschen Sie die Externe Konti (Tabelle nms:extAccount), deren ID nicht 0 (@id &lt;> 0) ist.
 1. Importieren Sie in der Adobe Campaign-Konsole das Paket options_dev.xml, das zuvor über die Importpaket-Funktionalität erstellt wurde.
 
    Überprüfen Sie, ob die Optionen tatsächlich im Knoten **[!UICONTROL Administration > Plattform > Optionen]** aktualisiert wurden.
