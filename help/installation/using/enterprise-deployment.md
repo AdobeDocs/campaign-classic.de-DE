@@ -78,7 +78,7 @@ In den folgenden Beispielen sind die Parameter der Instanz:
 * Name der Instanz: demo
 * DNS-Maske: tracking.Kampagne.net*, console.Kampagne.net* (der Anwendungsserver verarbeitet die URLs für Client-Konsolenverbindungen und -Berichte sowie für Mirrorseiten und Abmeldungen)
 * Sprache: englisch
-* Datenbank: kampagne:demo@dbsrv
+* Datenbank: Kampagne:demo@dbsrv
 
 Die Schritte zum Installieren des ersten Servers sind:
 
