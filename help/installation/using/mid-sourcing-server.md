@@ -133,7 +133,7 @@ Sie müssen die Einstellung für den Mid-Sourcing-Server in der Datei &quot;serv
 
 Das Attribut &quot;@name&quot;muss die folgenden Regeln beachten:
 
-**&#39;marketing_account_operator_name&#39;.affinität_Name&#39;.&#39;affinität_Gruppe&#39;**
+**&#39;marketing_account_operator_name&#39;.Affinität_Name&#39;.&#39;Affinität_Gruppe&#39;**
 
 &quot;marketing_account_operator_name&quot;bezieht sich auf den internen Namen des in der Mid-Sourcing-Instanz deklarierten Mid-Sourcing-Kontos.
 
