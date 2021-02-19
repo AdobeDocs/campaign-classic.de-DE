@@ -32,7 +32,7 @@ keyfield:==EMPTY
 
 ## Kinder {#children-9}
 
-Ohne
+Kein
 
 ## Beschreibung {#description-9}
 
