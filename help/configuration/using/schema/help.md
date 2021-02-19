@@ -23,7 +23,7 @@ help:==EMPTY
 
 ## Attribute {#attributes-6}
 
-Ohne
+Kein
 
 ## Eltern {#parents-6}
 
@@ -31,7 +31,7 @@ Ohne
 
 ## Kinder {#children-6}
 
-Ohne
+Kein
 
 ## Beschreibung {#description-6}
 
