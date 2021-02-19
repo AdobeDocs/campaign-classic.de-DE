@@ -385,7 +385,7 @@ Für JSP-Seiten lautet die Standardkonfiguration:
 Adobe Campaign verwendet die folgenden JSP-Seiten:
 
 * /nl/jsp/**soaprouter.jsp**: Client-Konsolen- und Webdienstverbindungen (SOAP-APIs),
-* /nl/jsp/**m.jsp**: mirrorseiten,
+* /nl/jsp/**m.jsp**: Mirrorseiten,
 * /nl/jsp/**logon.jsp**: Webbasierter Zugriff auf Berichte und die Bereitstellung der Client-Konsole,
 * /nl/jsp/**s.jsp** : Einsatz von viralem Marketing (Sponsoring und soziale Netzwerke).
 
@@ -418,7 +418,7 @@ In diesem Beispiel fällt der Wert **`<IP_addresses>`** mit der Liste der IP-Adr
 
 >[!NOTE]
 >
->Die Werte sind entsprechend Ihrer Konfiguration und Ihren Netzwerkeinschränkungen anzupassen, insbesondere wenn für Ihre Installation spezifische Konfigurationen entwickelt wurden.
+>Die Werte werden entsprechend Ihrer Konfiguration und Ihren Netzwerkeinschränkungen angepasst, insbesondere, wenn für Ihre Installation spezifische Konfigurationen entwickelt wurden.
 
 ## Eingrenzen autorisierter externer Befehle {#restricting-authorized-external-commands}
 
@@ -475,7 +475,7 @@ Standardmäßig werden nicht alle HTTP-Header wiedergegeben. Sie können bestimm
 
 1. Wechseln Sie zur Datei **serverConf.xml**. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 1. Wechseln Sie im Knoten **`<relay>`** zur Liste der weitergeleiteten HTTP-Header.
-1. hinzufügen Sie ein **`<responseheader>`**-Element mit den folgenden Attributen:
+1. hinzufügen ein **`<responseheader>`**-Element mit den folgenden Attributen:
 
    * **name**: Kopfzeilenname
    * **Wert**: Wertname.
@@ -488,7 +488,7 @@ Standardmäßig werden nicht alle HTTP-Header wiedergegeben. Sie können bestimm
 
 ## Redundante Verfolgung {#redundant-tracking}
 
-Werden mehrere Server für die Weiterleitung verwendet, müssen sie über SOAP-Aufrufe miteinander kommunizieren können, um Informationen über die zu umgeleitenden URLs freizugeben. Zum Zeitpunkt des Beginns des Versands sind möglicherweise nicht alle Umleitungsserver verfügbar; Sie verfügen daher möglicherweise nicht über den gleichen Informationsstand.
+Werden mehrere Server für die Weiterleitung verwendet, müssen sie über SOAP-Aufrufe miteinander kommunizieren können, um Informationen aus den zu umgeleitenden URLs freizugeben. Zum Zeitpunkt des Beginns des Versands sind möglicherweise nicht alle Umleitungsserver verfügbar; Sie verfügen daher möglicherweise nicht über den gleichen Informationsstand.
 
 >[!NOTE]
 >
@@ -509,7 +509,7 @@ Um den Hostnamen des Computers abzurufen, führen Sie den folgenden Befehl aus: 
 
 ## Verwalten von öffentliche Ressourcen {#managing-public-resources}
 
-Öffentliche Ressourcen finden Sie unter [Verwalten von öffentliche Ressourcen](../../installation/using/deploying-an-instance.md#managing-public-resources).
+öffentliche Ressourcen finden Sie unter [Verwalten von öffentliche Ressourcen](../../installation/using/deploying-an-instance.md#managing-public-resources).
 
 Sie werden im Ordner **/var/res/instance** des Installationsordners des Adobe Campaigns gespeichert.
 
