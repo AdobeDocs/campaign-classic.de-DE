@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: de0e4555d3e2c5dff8d86a22ff4db85953105db1
+source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '627'
+ht-degree: 94%
 
 ---
 
@@ -69,7 +69,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr> 
   <tr> 
    <td> Vom Dienstleister berücksichtigt<br /> </td> 
-   <td> Der SMS-Dienstleister hat den Versand erhalten.<br /> </td> 
+   <td> Der SMS-Dienstleister hat den Versand erhalten.<br /> Bei gehosteten oder hybriden Installationen wurde die Meldung bei einem Upgrade auf die  <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">erweiterte MTA</a> erfolgreich von der Kampagne auf die erweiterte MTA weitergeleitet.</td> 
   </tr> 
   <tr> 
    <td> Auf Mobiltelefon erhalten<br /> </td> 
@@ -129,7 +129,7 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
    Überprüfen Sie in diesem Fall die Konfiguration des Traffic-Managements (IP-Affinität) und verwenden Sie das Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]**, um die Sendungen mit dem MTA zu verknüpfen, der die Affinität verwaltet. Weiterführende Informationen zu Affinitäten finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
-* Wenn zu viele Kampagnen ausgeführt werden, bleibt der Versandstatus im Status &quot;Ausstehend&quot;.
+* Wenn zu viele Kampagnen ausgeführt werden, bleibt der Status des Versands im Status &quot;Ausstehend&quot;.
 
    Die Begrenzung für gleichzeitige Kampagnen wird in der Option **[!UICONTROL NmsOperation_LimitConcurrency]** definiert. Der Standardwert ist 10.
 
