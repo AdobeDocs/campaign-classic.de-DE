@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 07ed17a093cb6fb2d7aae376325a127c61b1dcc2
+source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 8%
+source-wordcount: '1950'
+ht-degree: 17%
 
 ---
 
@@ -28,6 +28,10 @@ Es wurde implementiert, um die Skalierbarkeit zu verbessern, den Durchsatz von V
 Wenn Sie nach September 2018 eine Campaign Classic-Instanz bereitgestellt haben, verwenden Sie die erweiterte MTA. Für alle anderen Campaign Classic-Kunden finden Sie unter [Häufig gestellte Fragen](#enhanced-mta-faq) weitere Informationen.
 
 Die erweiterte MTA-Implementierung kann sich auf einige der bestehenden Funktionen der Kampagne auswirken. Weitere Informationen finden Sie unter [Erweiterte MTA-Eigenschaften](#enhanced-mta-impacts).
+
+>[!NOTE]
+>
+>Wenn Sie Endbenutzer von Adobe Campaign sind und wissen möchten, ob Ihre Instanz auf die erweiterte MTA aktualisiert wurde, wenden Sie sich an Ihren Administrator für interne Kampagnen.
 
 ## Häufig gestellte Fragen {#enhanced-mta-faq}
 
@@ -129,24 +133,6 @@ Die Absprungqualifikationen in der Kampagne **[!UICONTROL Versand-Protokollquali
 
 Weitere Informationen zur Absprungqualifizierung finden Sie in [diesem Abschnitt](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification).
 
-### Status mit verbesserter MTA gesendet
-
-In der **[!UICONTROL Zusammenfassungs]**-Ansicht eines E-Mail-Versands [Dashboard](../../delivery/using/delivery-dashboard.md) gehen die **[!UICONTROL Beginn]** um 100% aus und gehen dann im gesamten Versand [Gültigkeitsdauer](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) schrittweise zurück, da die weichen und festen Absprünge von der erweiterten MTA-Kampagne aus gemeldet werden.
-
-Tatsächlich werden alle Meldungen in den [Versandprotokollen](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) als **[!UICONTROL Gesendet]** angezeigt, sobald sie erfolgreich von der Kampagne auf die erweiterte MTA übertragen wurden. Sie bleiben in diesem Status, es sei denn, ein [Bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) wird für diese Nachricht vom erweiterten MTA an Campaign zurückgemeldet.
-
-Wenn Meldungen mit festem Absprung aus der erweiterten MTA zurückgesendet werden, ändert sich ihr Status von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert.
-
-Wenn Meldungen mit weichem Zeilensprung aus der erweiterten MTA zurückgegeben werden, werden sie weiterhin als **[!UICONTROL Gesendet]** angezeigt und der **[!UICONTROL Erfolgsprozentsatz]** wird noch nicht aktualisiert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des Gültigkeitszeitraums des Versands [einen erneuten Zustellversuch](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):
-
-* Wenn ein erneuter Versuch vor Ende der Gültigkeitsdauer erfolgreich war, bleibt der Meldungsstatus weiterhin **[!UICONTROL Gesendet]** und der **[!UICONTROL Erfolg]**-Prozentsatz bleibt unverändert.
-
-* Andernfalls ändert sich der Status in **[!UICONTROL Fehlgeschlagen]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert.
-
-Daher sollten Sie bis zum Ende der Gültigkeitsdauer warten, um die finale **[!UICONTROL Erfolgsrate]** und die endgültige Anzahl der tatsächlich gesendeten **[!UICONTROL und]** Fehlgeschlagenen ]**Meldungen anzuzeigen.**[!UICONTROL 
-
-<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
-
 ### Versanddurchsatz
 
 Das Durchsatzdiagramm für Kampagnen-Versand zeigt den Durchsatz Ihrer E-Mail-Empfänger nicht mehr an. Dieses Diagramm zeigt nun die Durchsatzgeschwindigkeit für die Weiterleitung Ihrer Nachrichten von der Kampagne zur erweiterten MTA.
@@ -167,3 +153,78 @@ Weitere Informationen zur Gültigkeitsdauer finden Sie in [diesem Abschnitt](../
 
 Die Signierung der DKIM-E-Mail-Authentifizierung (DomainKeys Identified Mail) erfolgt über die erweiterte MTA. Das DKIM-Signieren durch den nativen Campaign-MTA wird im Rahmen des Enhanced MTA-Upgrades in der Tabelle Domain-Verwaltung deaktiviert.
 Weitere Informationen zu DKIM finden Sie in [diesem Abschnitt](../../delivery/using/technical-recommendations.md#dkim).
+
+### Berichte zum Versanderfolg
+
+In der **[!UICONTROL Zusammenfassungs]**-Ansicht eines E-Mail-Versands [Dashboard](../../delivery/using/delivery-dashboard.md) gehen die **[!UICONTROL Beginn]** um 100% aus und gehen dann im gesamten Versand [Gültigkeitsdauer](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) schrittweise zurück, da die weichen und festen Absprünge von der erweiterten MTA-Kampagne aus gemeldet werden.
+
+Tatsächlich werden alle Meldungen in den [Versandprotokollen](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) als **[!UICONTROL Gesendet]** angezeigt, sobald sie erfolgreich von der Kampagne auf die erweiterte MTA übertragen wurden. Sie bleiben in diesem Status, es sei denn, ein [Bounce](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) wird für diese Nachricht vom erweiterten MTA an Campaign zurückgemeldet.
+
+Wenn Meldungen mit festem Absprung aus der erweiterten MTA zurückgesendet werden, ändert sich ihr Status von **[!UICONTROL Gesendet]** in **[!UICONTROL Fehlgeschlagen]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert.
+
+Wenn Meldungen mit weichem Zeilensprung aus der erweiterten MTA zurückgegeben werden, werden sie weiterhin als **[!UICONTROL Gesendet]** angezeigt und der **[!UICONTROL Erfolgsprozentsatz]** wird noch nicht aktualisiert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des Gültigkeitszeitraums des Versands [einen erneuten Zustellversuch](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure):
+
+* Wenn ein erneuter Versuch vor Ende der Gültigkeitsdauer erfolgreich war, bleibt der Meldungsstatus weiterhin **[!UICONTROL Gesendet]** und der **[!UICONTROL Erfolg]**-Prozentsatz bleibt unverändert.
+
+* Andernfalls ändert sich der Status in **[!UICONTROL Fehlgeschlagen]** und der **[!UICONTROL Erfolgsprozentsatz]** wird entsprechend verringert.
+
+Daher sollten Sie bis zum Ende der Gültigkeitsdauer warten, um die finale **[!UICONTROL Erfolgsrate]** und die endgültige Anzahl der tatsächlich gesendeten **[!UICONTROL und]** Fehlgeschlagenen ]**Meldungen anzuzeigen.**[!UICONTROL 
+
+<!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
+
+### Email Feedback Service (Beta) {#email-feedback-service}
+
+Mit der EFS-Funktion (Email Feedback Service) wird der Status jeder E-Mail genau gemeldet, da Feedback direkt vom erweiterten MTA (Message Transfer Agent) erfasst wird.
+
+>[!IMPORTANT]
+>
+>Der Email Feedback Service ist derzeit als Betafunktion verfügbar.
+>
+>Wenn Sie Interesse an der Teilnahme an diesem Beta-Programm haben, füllen Sie [dieses Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus und wir melden uns bei Ihnen.
+
+Nachdem der Versand gestartet wurde, ändert sich der Prozentsatz für **[!UICONTROL Erfolg]** nicht mehr, wenn die Nachricht erfolgreich von der Kampagne auf die erweiterte MTA übertragen wurde.
+
+<!--![](assets/efs-sending.png)-->
+
+Die Versandlogs zeigen den Status **[!UICONTROL Wird vom Dienstleister]** für jede Zieladresse berücksichtigt.
+
+<!--![](assets/efs-pending.png)-->
+
+Wenn die Nachricht tatsächlich den Zielgruppenprofilen zugestellt wird und diese Informationen in Echtzeit vom erweiterten MTA gemeldet werden, zeigen die Versandlogs für jede Adresse, die die Nachricht erfolgreich erhalten hat, den Status **[!UICONTROL Gesendet]** an. Der Prozentsatz von **[!UICONTROL Erfolg]** wird bei jedem erfolgreichen Versand entsprechend erhöht.
+
+Wenn Meldungen mit festem Absprung aus der erweiterten MTA zurückgegeben werden, ändert sich ihr Protokollstatus von **[!UICONTROL Vom Dienstleister berücksichtigt]** in **[!UICONTROL Fehlgeschlagen]**<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->.
+
+Wenn Meldungen mit weichen Absprüngen aus der erweiterten MTA zurückgesendet werden, bleibt ihr Protokollstatus unverändert (**[!UICONTROL Wird vom Dienstleister]** berücksichtigt): Nur der [Fehlergrund](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons) wird aktualisiert<!-- and the **[!UICONTROL Bounces + errors]** percentage is increased accordingly-->. Der Prozentsatz **[!UICONTROL Erfolg]** bleibt unverändert. Nachrichten, bei denen ein Softbounce aufgetreten ist, erhalten dann während des [Gültigkeitszeitraums](../../delivery/using/steps-sending-the-delivery.md#defining-validity-period) des Versands einen erneuten Zustellversuch:
+
+* Wenn ein erneuter Versuch vor Ende der Gültigkeitsdauer erfolgreich war, wird der Meldungsstatus in **[!UICONTROL Gesendet]** und der **[!UICONTROL Erfolg]**-Prozentsatz entsprechend erhöht.
+
+* Andernfalls ändert sich der Status in **[!UICONTROL Fehlgeschlagen]**. Der Prozentsatz **[!UICONTROL Erfolg]** <!--and **[!UICONTROL Bounces + errors]** -->bleibt unverändert.
+
+>[!NOTE]
+>
+>Weitere Informationen zu Hard- und Softbounces finden Sie in [diesem Abschnitt](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>
+>Weitere Informationen zu zusätzlichen Zustellversuchen nach einem vorübergehend fehlgeschlagenen Versand finden Sie in [diesem Abschnitt](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure).
+
+
+Die folgenden Tabellen zeigen die Änderungen in den KPIs und das Senden von Protokollstatus, die durch die EFS-Funktion eingeführt wurden.
+
+**Mit E-Mail-Feedback-Dienst**
+
+| Schritt imVersandprozess | KPI-Zusammenfassung | Status von Protokollen senden |
+|--- |--- |--- |
+| Nachricht wird erfolgreich von Campaign an den erweiterten MTA weitergeleitet | **[!UICONTROL Erfolgssperre]** wird nicht angezeigt (Beginn bei 0 %) | Vom Dienstleister berücksichtigt |
+| Hardbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung in **[!UICONTROL Prozentsatz für Erfolg]** | Fehlgeschlagen |
+| Softbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung in **[!UICONTROL Prozentsatz für Erfolg]** | Vom Dienstleister berücksichtigt |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | **[!UICONTROL Der]** Erfolgsfaktor wird entsprechend erhöht | Gesendet |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | Keine Änderung in **[!UICONTROL Prozentsatz für Erfolg]** | Fehlgeschlagen |
+
+**Ohne E-Mail-Feedback-Dienst**
+
+| Schritt imVersandprozess | KPI-Zusammenfassung | Status von Protokollen senden |
+|--- |--- |--- |
+| Nachricht wird erfolgreich von Campaign an den erweiterten MTA weitergeleitet | **[!UICONTROL 100 %]** Erfolgspersonal-Beginn | Gesendet |
+| Hardbounces werden vom erweiterten MTA zurückgemeldet. | **[!UICONTROL Der]** Erfolgsfaktor wird entsprechend verringert | Fehlgeschlagen |
+| Softbounces werden vom erweiterten MTA zurückgemeldet. | Keine Änderung in **[!UICONTROL Prozentsatz für Erfolg]** | Gesendet |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, sind erfolgreich | Keine Änderung in **[!UICONTROL Prozentsatz für Erfolg]** | Gesendet | **[!UICONTROL Der]** Erfolgsfaktor wird entsprechend erhöht | Gesendet |
+| Weitere Zustellversuche von Nachrichten, bei denen ein Softbounce aufgetreten ist, schlagen fehl | **[!UICONTROL Der]** Erfolgsfaktor wird entsprechend verringert | Fehlgeschlagen |
