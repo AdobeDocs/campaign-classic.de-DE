@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
+source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 100%
@@ -48,7 +48,7 @@ _22. Dezember 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
 
-_11. September 2020_
+_11. September 2020_
 
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass die Sendungsvorbereitung aufgrund einer einzigen fehlerhaften Funktion im Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
 * Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Veröffentlichung der Web-Applikation deaktiviert wurden. (NEO-27155)
@@ -61,7 +61,7 @@ _11. September 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
 
-_22. Juli 2020_
+_22. Juli 2020_
 
 * Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist. (NEO-26411)
 * Fehlerkorrektur – Nicht signierte Links von personalisierten Domains werden nicht mehr blockiert, wenn sie zulässig sind. (NEO-25210)
@@ -90,7 +90,7 @@ _22. Juli 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
-_8. Juni 2020_
+_8. Juni 2020_
 
 **Neue Funktionen**
 
