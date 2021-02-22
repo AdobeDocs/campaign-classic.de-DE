@@ -7,11 +7,11 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalübergreifende Marketing-Kampagnen, die einen hohen Return on Marketing Investment erzielen.
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
-type: Documentation
+type: Dokumentation
 translation-type: tm+mt
-source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
+source-git-commit: 4030eb1cf9aa78a10daffe9ea849aa205660e359
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2351'
 ht-degree: 98%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 98%
       + [Versionshinweise zu Gold Standard](rn/using/gold-standard.md)
       + [Gold Standard-Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
    + Frühere Versionen {#previous-releases}
+      + [Version 20.3](rn/using/release--20-3.md)
       + [Version 20.2](rn/using/release--20-2.md)
       + [Version 20.1](rn/using/release--20-1.md)
       + [Version 19.2](rn/using/release--19-2.md)
