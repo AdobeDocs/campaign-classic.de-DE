@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '98'
 ht-degree: 100%
 
 ---
@@ -22,8 +22,6 @@ Wenn Ihr Mobilgerät mit einem WLAN verbunden ist und Sie keine Benachrichtigung
 **Android**: Das Mobilgerät verbindet sich mit den FCM-Servern über die Ports 5228 bis 5230. Ihre Firewall muss also dahingehend konfiguriert werden, dass sie die Verbindung mit FCM zulässt. Folgende Ports sind zu öffnen: 5228 (am häufigsten verwendet), 5229 und 5230.
 
 **iOS**:
-
-Binärer Connector: Um Benachrichtigungen zu versenden, muss der ein- und ausgehende TCP-Verkehr über den Port 2195 zugelassen werden. Die mit dem Push-Dienst verbundenen Geräte müssen den ein- und ausgehenden TCP-Verkehr über den Port 5223 zulassen.
 
 HTTP/2-Connector: Erlauben Sie die Kommunikation zu und von den folgenden Servern:
 
