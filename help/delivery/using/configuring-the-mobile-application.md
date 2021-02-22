@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 translation-type: tm+mt
-source-git-commit: a1bd8dc2b5946b74cb880eff934e3b35cadfb2d2
+source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '909'
 ht-degree: 100%
 
 ---
@@ -32,10 +32,6 @@ Gehen Sie wie folgt vor, um diesen Connector zu konfigurieren:
 1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Externe Konten]**.
 1. Wählen Sie das externe Konto **[!UICONTROL iOS-Routing]** aus.
 1. Füllen Sie im Tab **[!UICONTROL Connector]** das Feld **[!UICONTROL Zugriffs-URL auf den Connector]** mit der folgenden URL aus: ```http://localhost:8080/nms/jsp/iosHTTP2.jsp```
-
-   >[!NOTE]
-   >
-   > Die frühere Version des binären iOS-Connectors wird ab der Campaign-Version 20.3 nicht mehr unterstützt. Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)
 
    ![](assets/nmac_connectors.png)
 
