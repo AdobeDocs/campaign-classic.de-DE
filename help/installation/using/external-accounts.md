@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 4efe5f8a9130e7925194e56e088b3745c0cbd11a
+source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
 workflow-type: tm+mt
-source-wordcount: '1706'
-ht-degree: 89%
+source-wordcount: '1707'
+ht-degree: 88%
 
 ---
 
@@ -147,14 +147,14 @@ Die mit der Kampagne kompatiblen externen Datenbanken werden in der [Kompatibili
 
 Die Konfigurationseinstellungen des Externen Kontos hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* Zugriff auf [Azure synapse](../../installation/using/configure-fda-synapse.md) konfigurieren
+* Zugriff auf [Azure Synapse](../../installation/using/configure-fda-synapse.md) konfigurieren
 * Zugriff auf [Hadoop](../../installation/using/configure-fda-hadoop.md) konfigurieren
 * Zugriff auf [Oracle](../../installation/using/configure-fda-oracle.md) konfigurieren
 * Zugriff auf [Netezza](../../installation/using/configure-fda-netezza.md) konfigurieren
 * Zugriff auf [SAP HANA](../../installation/using/configure-fda-sap-hana.md) konfigurieren
 * Zugriff auf [Snowflake](../../installation/using/configure-fda-snowflake.md) konfigurieren
 * Zugriff auf [Sybase IQ](../../installation/using/configure-fda-sybase.md) konfigurieren
-* Zugriff auf [Teradata](../../installation/using/configure-fda-teradata.md) konfigurieren
+* Zugriff auf [Teradaten](../../installation/using/configure-fda-teradata.md) konfigurieren
 
 ## Externes Web Analytics-Konto {#web-analytics-external-account}
 
@@ -408,7 +408,7 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 
 * **[!UICONTROL API-Version]**
 
-   Version der API: **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** oder **[!UICONTROL Version 15]**
+   Version der API zwischen **[!UICONTROL Version 49]**, **[!UICONTROL Version 37]**, **[!UICONTROL Version 21]** oder **[!UICONTROL Version 15]**.
 
 Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
 
