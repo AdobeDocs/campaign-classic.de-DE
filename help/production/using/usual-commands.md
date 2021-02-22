@@ -29,7 +29,6 @@ Der Parameter **`<command>`** entspricht dem Modul.
 >
 >* In jedem Fall können Sie das Argument **-noconsole** hinzufügen, um die nach dem Starten der Module angezeigten Kommentare zu löschen.
 >* Umgekehrt können Sie das Argument **-verbose** hinzufügen, um weitere Informationen anzuzeigen.
-
 >
 
 
@@ -163,8 +162,6 @@ So ändern Sie das **interne**-Kennwort: **nlserver config -internalpassword**
 >* Im Allgemeinen können Sie den Befehl **config** verwenden, anstatt die Konfigurationsdateien manuell zu ändern
 >* Verwenden Sie zum Abrufen der Liste von Parametern das **-?** Parameter:  **nlserver config -?**
 >* Bei einer Oracle-Datenbank dürfen Sie das Konto nicht angeben. Die Syntax lautet wie folgt:
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
+>  nlserver config -setdblogin:Oracle:test6@dbserver
 

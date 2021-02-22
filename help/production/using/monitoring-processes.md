@@ -255,7 +255,6 @@ Sie werden unter **Monitoring** > &#39;SMTP-Überwachung&#39; gruppiert.
 >
 >* Informationen zur SMTP-Überwachung sind nur verfügbar, wenn der E-Mail-Kanal aktiviert wurde.
 >* Die **[!UICONTROL SMTP-Versandstatistik]** wird nur angeboten, wenn der Statistikserver auf der Instanz gestartet wird.
-
 >
 
 

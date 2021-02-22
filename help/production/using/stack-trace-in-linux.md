@@ -23,7 +23,6 @@ Eine **Stapelablaufverfolgung** stellt eine Ablaufverfolgung dar, die in einer *
 >
 >* Eine **core**-Datei heißt **core.`<num>`**.
 >* **gdb - Der GNU** Debugger muss auf dem Computer installiert sein.
-
 >
 
 

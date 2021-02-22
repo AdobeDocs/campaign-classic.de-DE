@@ -69,7 +69,6 @@ Die folgenden Schritte müssen mit größter Sorgfalt durchgeführt werden: Eini
 >
 >* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Abfrage anders ist (z. B. Oracle), müssen die SQL-Einstellungen angepasst werden.
 >* Die folgenden Befehle gelten im Kontext einer **prod**-Instanz und einer **dev**-Instanz unter PostgreSQL.
-
 >
 
 
@@ -187,7 +186,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Schritt 7: Zielgruppe Umgebung Web Process (dev) {#step-7---restart-the-target-environment-web-process--dev-} neu starten
+### Schritt 7: Zielgruppe Umgebung Web Process (dev)neu starten {#step-7---restart-the-target-environment-web-process--dev-}
 
 Stellen Sie auf der Umgebung Zielgruppe einen erneuten Beginn der Adobe Campaign-Prozesse für alle Server bereit.
 

@@ -80,19 +80,14 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
    >* Im Ereignis eines Notfalls verwenden Sie die **-sofortige** Option, um einen sofortigen Stopp des Vorgangs zu erzwingen (entspricht Unix Befehl **töten -9**).
    >* Verwenden Sie die Option **-noconsole** , um sicherzustellen, dass das gestartete Modul nichts in der Konsole anzeigt. Seine Protokolle werden über das **syslogd** Modul auf die Festplatte geschrieben.
    >* Verwenden Sie die Option **-verbose** , um weitere Informationen zu Prozessaktionen anzuzeigen.
-
-      >
-      >   
-      Beispiel:
-      >
-      >   
-      **nlserver Neustart web -verbose**
-      >
-      >   
-      **nlserver-Beginn mta@myinstance -verbose**
-      >
-      >   
-      Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
+   >
+   >   Beispiel:
+   >
+   >   **nlserver Neustart web -verbose**
+   >
+   >   **nlserver-Beginn mta@myinstance -verbose**
+   >
+   >   Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
 
 
 * Beginn aller Adobe Campaign-Prozesse (entspricht dem Starten des **nlserver6** -Dienstes):
