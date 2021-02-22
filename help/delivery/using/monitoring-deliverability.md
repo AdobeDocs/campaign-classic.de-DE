@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 translation-type: tm+mt
-source-git-commit: 11377b0218e20da9b1a5398539ebaa192801b283
+source-git-commit: fa5679d91808edb8e3916d5f0e0f54c73198e934
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '485'
 ht-degree: 100%
 
 ---
@@ -25,14 +25,12 @@ Verwenden Sie die von Adobe Campaign bereitgestellten Funktionen zum Monitoring 
 
 Das Zustellbarkeits-Package ermöglicht Ihnen Zugriff auf:
 
-* Einen Bericht bezüglich der täglichen Zustell-Leistungen (Technisches Monitoring). Dieser auf Anfrage verfügbare Bericht ermöglicht es Ihnen, an einer bestimmten Adresse einen täglichen Bericht per E-Mail zu erhalten. Weiterführende Informationen erhalten Sie vom Adobe-Kundenunterstützungs-Team.
 * Den [Inbox Rendering-Bericht](../../delivery/using/inbox-rendering.md), mit dem Sie Ihre Nachrichten auf gängigen E-Mail-Clients als Vorschau anzeigen können, um Inhalte und Reputation zu überprüfen.
 * Übersicht über die Nachrichtenqualität (Zustellung in der Inbox, Spam).
 
 Sie können auch die folgenden Tools verwenden:
 
 * Der **[!UICONTROL Versanddurchsatz]**-Bericht bietet einen Überblick über den Durchsatz der gesamten Plattform für einen bestimmten Zeitraum. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../reporting/using/global-reports.md#delivery-throughput).
-* Der **[!UICONTROL Bericht zum technischen Zustellbarkeits-Monitoring]** enthält eine Reihe von Qualitätsindikatoren zur Zustellbarkeit für Ihre Plattform. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#technical-deliverability-monitoring).
 * Bei jedem Versand wird ein Bericht mit Versandstatistiken für die verschiedenen Internet-Dienstanbieter (ISPs) erstellt. Es werden verschiedene Datenqualitäts- und Reputationsmetriken angezeigt, die sich auf die Zustellbarkeit auswirken können, einschließlich der folgenden Zahlen:
    * **[!UICONTROL Hardbounces]** geben Auskunft über die Datenqualität. Diese Zahl sollte unter 2 % liegen.
    * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
@@ -68,28 +66,6 @@ Signal Spam ist ein französischer Dienst, der anonymisiertes Feedback-Schleifen
 [250ok](https://250ok.com/) ist eine ergänzende Monitoring-Lösung für die internen Adobe-Zustellbarkeits-Tools, die IP- und Domain-Blockierungslisten und Reputationsindikatoren bereitstellen.
 
 Die bereitgestellten Werte sind in Echtzeit verfügbar, wodurch proaktive Unterstützung gewährleistet ist.
-
-## Bericht zum technischen Zustellbarkeits-Monitoring {#technical-deliverability-monitoring}
-
-Der **Bericht zum technischen Zustellbarkeits-Monitoring** enthält eine Reihe von Qualitätsindikatoren zur Zustellbarkeit für Ihre Plattform. Sie können diesen täglichen Bericht per E-Mail erhalten. Öffnen Sie zum Anfordern einen speziellen [Support-Fall](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und geben Sie Folgendes an:
-
-* den Namen der Instanz,
-* die E-Mail-Adressen, an die der Bericht gesendet werden soll.
-
-Dieser Bericht enthält die folgenden Indikatoren:
-
-* **[!UICONTROL Reverse DNS]**: Adobe Campaign prüft, ob für eine IP-Adresse ein Reverse-DNS angegeben ist und ob dieses wirklich auf die IP zurückverweist.
-
-* **[!UICONTROL SPF]** (Sender Policy Framework): Ein Authentifizierungsmechanismus, der es ISPs und Postfachanbietern ermöglicht zu prüfen, ob der E-Mail-Absender in der sendenden Domain autorisiert ist.
-
-* **[!UICONTROL DomainKeys]**: Von Yahoo entwickelter Service zur Zertifizierung der Identität eines E-Mail-Absenders.
-
-* **[!UICONTROL IP und RBL-Domain]** (Real-time Blackhole List): Eine Liste der IP-Adressen und Domains, die von Blockierungsliste-Organisationen aufgrund schlechter Reputation markiert wurden. Diese Listen werden von speziellen Organisationen wie Spamhaus, Spamcop, SURBL/URIBL etc. geführt. Adobe Campaign verarbeitet derzeit Prüfungen für RBLs, die erhebliche Auswirkungen auf die Zustellbarkeit haben. Diese RBLs spiegeln die Reputation des Absenders wider und können von ISPs referenziert werden, bevor sie den Empfang Ihrer E-Mails akzeptieren.
-
-* **[!UICONTROL SNDS]** (Smart Network Data Services): Ein [Windows Live Hotmail Service](https://sendersupport.olc.protection.outlook.com/snds/FAQ.aspx) zur Spam-Bekämpfung. Hotmail ist der einzige ISP, der diese Informationen bereitstellt. Benchmark-Ergebnisse sind ein grünes Filterergebnis, eine Beschwerderate von weniger als 0,1 % und keine Spam-Fallen.
-
-Diese Indikatoren werden täglich um 9 Uhr aktualisiert.
-
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
