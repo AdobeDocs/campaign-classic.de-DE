@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 9%
+source-wordcount: '1193'
+ht-degree: 10%
 
 ---
 
@@ -50,7 +50,6 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
       **iisreset/stop**
 
    * Adobe-Campaign-Dienst: **net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >Sie müssen auch sicherstellen, dass der Umleitungsserver (webmdl) gestoppt wird, damit die **nlsrvmod.dll**-Datei, die von IIS verwendet wird, durch die neue Version ersetzt werden kann.
@@ -71,7 +70,7 @@ Um die Aktualisierungsdatei auszuführen, führen Sie die folgenden Schritte aus
 
 1. Führen Sie **setup.exe** aus.
 
-   Um diese Datei herunterzuladen, stellen Sie eine Verbindung zum [Software-Distributionsportal](https://experience.adobe.com/downloads) mit Ihren Benutzeranmeldeinformationen her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Um diese Datei herunterzuladen, stellen Sie eine Verbindung zum [Software-Distributionsportal](https://experience.adobe.com/de/#/downloads/content/software-distribution/de/campaign.html) mit Ihren Benutzeranmeldeinformationen her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Wählen Sie den Installationsmodus aus: **[!UICONTROL Aktualisieren oder Reparieren]**
 1. Klicken Sie auf **[!UICONTROL Weiter]** .
@@ -125,7 +124,7 @@ Informationen zum Aktualisieren der Client-Konsole finden Sie in [diesem Abschni
 
 ### Abrufen aktualisierter Pakete {#obtain-updated-packages}
 
-Beginn durch Wiederherstellen der beiden aktualisierten Pakete des Adobe Campaigns: Verbinden Sie sich mit dem [Software Distribution Portal](https://experience.adobe.com/downloads) mit Ihren Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+Beginn durch Wiederherstellen der beiden aktualisierten Pakete des Adobe Campaigns: Verbinden Sie sich mit dem [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) mit Ihren Benutzeranmeldeinformationen. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 Die Datei ist **nlserver6-v7-XXX.rpm**
 
@@ -173,8 +172,10 @@ Führen Sie dazu den folgenden Befehl aus:
 >
 >* Ihr Skript kann anstelle von **apache** **httpd heißen.**
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
->
->   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwenden kann.
+
+   >
+   >   
+   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwenden kann.
 
 
 Starten Sie dann Apache neu:
