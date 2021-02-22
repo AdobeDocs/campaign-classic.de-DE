@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 51993e6f606132e425553da67687aca76e166dbd
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 100%
@@ -55,7 +55,7 @@ Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie d
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Als Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit dem [aktuellen GA Gold Standard-Build](../../rn/using/gold-standard.md#gs-10), ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+Als Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit dem [aktuellen GA Gold Standard-Build](../../rn/using/gold-standard.md#gs-11), ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
 
 >[!NOTE]
 >Die Kompatibilitätsmatrix für Gold Standard ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
