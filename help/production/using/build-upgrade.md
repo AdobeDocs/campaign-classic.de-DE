@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
 source-wordcount: '2368'
 ht-degree: 48%
@@ -84,7 +84,7 @@ Vor Beginn der Build-Aktualisierung müssen lokale Kunden die folgende Vorbereit
 
 1. Rufen Sie die neueste Version Ihrer [Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) ab.
 
-1. Laden Sie die neueste Version herunter. [Erfahren Sie mehr über das Download-Center](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html).
+1. [Laden Sie den neuesten Build](https://experience.adobe.com/de/#/downloads/content/software-distribution/de/campaign.html) herunter. [Weitere Informationen](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html).
 
 Sie müssen auch alle [nützlichen Befehlszeilen](../../installation/using/command-lines.md) kennen, bevor Sie eine Buildaktualisierung starten:
 
@@ -163,7 +163,7 @@ Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nl
 
 ### Aktualisieren der Adobe Campaign Server-Anwendung
 
-1. Führen Sie die Datei **Setup.exe** aus. Wenn Sie diese Datei herunterladen müssen, rufen Sie [das Download-Center](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) auf.
+1. Führen Sie die Datei **Setup.exe** aus. Wenn Sie diese Datei herunterladen müssen, rufen Sie [das Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) auf.
 
 1. Wählen Sie den Installationsmodus aus: **Aktualisieren** oder **Reparieren**.
 
@@ -365,8 +365,8 @@ Es gibt verschiedene Arten von Zusammenführungen:
 #### Wo finden Sie den Code?
 
 1. Integrierter Code wird in XML-Dateien im Ordner &quot;datakit&quot;gespeichert. Suchen Sie die XML-Datei, die mit dem Objekt übereinstimmt, das den Konflikt verursacht. Beispiel: installationDirectory\datakit\nms\fra\form\recipient.xml
-1. Die Originalversion abrufen: über die [Download-Center](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) oder eine andere nicht aktualisierte Installation des Produkts.
-1. Die neue Version abrufen: über das [Download-Center](https://docs.adobe.com/content/help/en/experience-cloud/software-distribution/home.html) oder die vom Kunden installierten Dateien.
+1. Die Originalversion abrufen: über die [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) oder eine andere nicht aktualisierte Installation des Produkts.
+1. Die neue Version abrufen: über das [Download-Center](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) oder die vom Kunden installierten Dateien.
 1. Rufen Sie die benutzerdefinierte Version ab: Rufen Sie den Quellcode des Objekts vom Campaign-Client ab.
 
 ### Wie erstelle ich eine Diff-Datei?
