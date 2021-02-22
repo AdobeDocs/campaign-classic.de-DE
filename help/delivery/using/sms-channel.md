@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
 workflow-type: tm+mt
-source-wordcount: '3270'
-ht-degree: 100%
+source-wordcount: '3269'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 
 1. ein externes Konto mit Angabe des Connectors und des Nachrichtentyps;
 
-   Beachten Sie, dass folgende Connectoren ab Version 20.2 nicht mehr unterstützt werden: NetSize, Generic SMPP (SMPP Version 3.4 mit Unterstützung für Binärmodus), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und iOS. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
+   Beachten Sie, dass folgende Connectors ab Version 20.2 nicht mehr unterstützt werden: Generisches SMPP (SMPP Version 3.4 unterstützt Binärmodus), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und iOS. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
 
 1. Eine Versandvorlage, die auf das externe Konto Bezug nimmt.
 
