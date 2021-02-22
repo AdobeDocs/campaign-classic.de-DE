@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: 32db73de8308670dfd74d974072bd96b3a22fc31
+source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
 workflow-type: tm+mt
-source-wordcount: '8432'
+source-wordcount: '8458'
 ht-degree: 99%
 
 ---
@@ -596,6 +596,12 @@ Wenn TLS aktiviert ist, werden alle Zertifikatsprüfungen übersprungen.
 Wenn diese Option aktiviert ist, ist die Verbindung nicht mehr sicher. Sie sollte nicht in der Produktion aktiviert werden.
 
 Dies kann für Debugging- oder Testzwecke nützlich sein.
+
+Sie können zwischen drei verschiedenen Werten für die Zertifikatüberprüfung wählen:
+
+* Vollständige Zertifizierungsprüfung (einschließlich Hostname), Standard.
+* Hostnamen-Prüfung überspringen.
+* Zertifikatsprüfung überspringen.
 
 #### Bind TON/NPI {#bind-ton-npi}
 
