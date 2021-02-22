@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '598'
+ht-degree: 87%
 
 ---
 
@@ -33,7 +33,7 @@ Sie können über ihre Adobe ID eine Verbindung mit Adobe Campaign herstellen. W
 
 Die Verbindung kann auch mit einem spezifischen Login/Passwort hergestellt werden:
 
-1. Geben Sie im Feld **[!UICONTROL Login]** die Benutzerkennung ein.
+1. Geben Sie die Kennung des Operatorkontos in das Feld **[!UICONTROL Anmelden]** ein.
 
    Diese wird vom Administrator der Adobe-Campaign-Plattform vergeben.
 
@@ -41,9 +41,14 @@ Die Verbindung kann auch mit einem spezifischen Login/Passwort hergestellt werde
 
    Beim ersten Zugriff auf die Datenbank ist das vom Administrator festgelegte Passwort zu verwenden. Anschließend kann es über das Menü **[!UICONTROL Werkzeuge > Passwort ändern...]** angepasst werden. Details zu Benutzern und Verbindungen finden Sie unter [Zugriffsverwaltung](../../platform/using/access-management.md).
 
-1. Klicken Sie zum Bestätigen auf **[!UICONTROL ANMELDEN]**.
+1. Klicken Sie zum Bestätigen auf **[!UICONTROL ANMELDEN]**.<!--You can also press the **Enter** key to launch connection.-->
 
 Jetzt haben Sie Zugriff auf den [Adobe-Campaign-Arbeitsbereich](../../platform/using/adobe-campaign-workspace.md).
+
+Einige Tastaturbefehle stehen im Bildschirm **[!UICONTROL Anmelden]** zur Verfügung:
+* Alle umsetzbaren Elemente können über die Taste **Tab** (oben nach unten) oder die Taste **Tab** + **Umschalt** (unten nach oben) ausgewählt werden.
+* Um die Verbindung zu starten, können Sie auch die Taste **Eingabetaste** drücken.
+* Sie können die Felder **Escape** verwenden, um die Felder **[!UICONTROL Anmeldung]** und **[!UICONTROL Kennwort]** auf die letzten erfolgreichen Verbindungswerte zurückzusetzen.
 
 ## Verbindungen einrichten {#setting-up-connections}
 
@@ -101,5 +106,5 @@ Weitere Informationen zu Gold Standard finden Sie [in diesem Artikel](https://he
 **Verwandte Themen**:
 
 * [Hilfe- und Support-Optionen für Adobe Campaign](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
-* [Adobe-Software-Verteilung](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html)
+* [Adobe Campaign-Softwareverteilung](https://experience.adobe.com/de/#/downloads/content/software-distribution/de/campaign.html)
 * [Support für Adobe Experience Cloud und Expertensitzungen](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
