@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '4084'
 ht-degree: 95%
@@ -45,6 +45,8 @@ Es wurde ein Abschnitt zur Fehlerbehebung hinzugefügt, der Ihnen bei der Lösun
 
 Der Abschnitt **Senden einer E-Mail** wurde neu organisiert und mit neuen Unterabschnitten geklärt. [Mehr dazu](../../delivery/using/sending-messages.md)
 
+Es wurden Informationen zum Hinzufügen von Links in E-Mails hinzugefügt, die personalisiert werden können und die Verfolgung unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md).
+
 ## Januar 2021 {#jan-2021}
 
 Der Abschnitt zur **[!UICONTROL Verzweigungsaktivität]** wurde um Best Practices erweitert. [Mehr dazu](../../workflow/using/fork.md)
@@ -62,8 +64,6 @@ Die Liste der technischen Workflows und den ihnen zugehörigen Paketen wurde erw
 Der Abschnitt zur Fehlerbehebung im **Überwachungshandbuch** wurde neu strukturiert und durch eine Landingpage erweitert. [Mehr dazu](../../production/using/troubleshooting.md).
 
 Es wurde ein neuer Abschnitt zum **Datenimport und -export** einschließlich neuer Seiten mit Best Practices für Workflows, Datenkomprimierung, Verschlüsselung und Import ergänzt. [Mehr dazu](../../platform/using/get-started-data-import-export.md)
-
-Es wurden Informationen zum Hinzufügen von Links in E-Mails hinzugefügt, die personalisiert werden können und die Verfolgung unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md).
 
 ## Dezember 2020 {#dec-2020}
 
