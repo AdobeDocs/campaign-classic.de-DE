@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 92%
+source-wordcount: '166'
+ht-degree: 85%
 
 ---
 
@@ -34,3 +34,5 @@ Zielgruppen-Workflows werden im Rahmen von Kampagnen im Tab **[!UICONTROL Zielbe
 1. Ziehen Sie mit der Maus die Aktivitäten in das Workflow-Diagramm und zwar aus dem Tab **[!UICONTROL Zielgruppenbestimmung]** eine **[!UICONTROL Abfrage]** und eine **[!UICONTROL Aufspaltung]**, aus dem Tab **[!UICONTROL Sendungen]** zwei **[!UICONTROL E-Mail-Versand]**-Aktivitäten, aus dem Tab **[!UICONTROL Steuerung]** eine **[!UICONTROL Warten]**-Aktivität und aus dem Tab **[!UICONTROL Aktionen]** eine **[!UICONTROL JavaScript-Code]**-Aktivität sowie einen **[!UICONTROL Versand]**.********
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
+
+Sie können jetzt die Populationsmuster konfigurieren (siehe [Schritt 2: Populationsbeispiele konfigurieren](../../delivery/using/a-b-testing-uc-population-samples.md)).
