@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 92%
 
 ---
 
@@ -19,11 +19,14 @@ ht-degree: 100%
 
 Sie haben die Möglichkeit, für jeden Versand die Zustellung und Klicks auf enthaltene Links zu verfolgen. Auf diese Weise kann das Verhalten der Nachrichtenempfänger analysiert werden.
 
+Der Begriff Tracking bezieht sich auf den Umgang der Empfänger mit Nachrichten, während Webtracking das Surf-Verhalten von Empfängern dokumentiert (besuchte Seiten, Bestellungen usw.). Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) beschrieben.
+
 >[!NOTE]
 >
->Der Begriff Tracking bezieht sich auf den Umgang der Empfänger mit Nachrichten, während Webtracking das Surf-Verhalten von Empfängern dokumentiert (besuchte Seiten, Bestellungen usw.).
->
->Die Konfiguration des Webtrackings wird in [diesem Abschnitt](../../configuration/using/about-web-tracking.md) beschrieben.
+>Die Links in E-Mail-Inhalten, die Personalisierung enthalten, müssen eine bestimmte Syntax verfolgen. Weitere Informationen zum Hinzufügen von Links in E-Mails, die personalisiert werden können und die Support-Verfolgung unterstützen, finden Sie in [diesem Abschnitt](../../delivery/using/tracking-personalized-links.md).
+
+
+
 
 Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von URLs zu personalisieren, gehen Sie folgendermaßen vor:
 
