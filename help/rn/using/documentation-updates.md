@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '4063'
-ht-degree: 96%
+source-wordcount: '4084'
+ht-degree: 95%
 
 ---
 
@@ -62,6 +62,8 @@ Die Liste der technischen Workflows und den ihnen zugehörigen Paketen wurde erw
 Der Abschnitt zur Fehlerbehebung im **Überwachungshandbuch** wurde neu strukturiert und durch eine Landingpage erweitert. [Mehr dazu](../../production/using/troubleshooting.md).
 
 Es wurde ein neuer Abschnitt zum **Datenimport und -export** einschließlich neuer Seiten mit Best Practices für Workflows, Datenkomprimierung, Verschlüsselung und Import ergänzt. [Mehr dazu](../../platform/using/get-started-data-import-export.md)
+
+Es wurden Informationen zum Hinzufügen von Links in E-Mails hinzugefügt, die personalisiert werden können und die Verfolgung unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md).
 
 ## Dezember 2020 {#dec-2020}
 
