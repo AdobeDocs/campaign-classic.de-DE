@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 75%
+source-wordcount: '99'
+ht-degree: 62%
 
 ---
 
@@ -31,3 +31,5 @@ Erstellen Sie nun zwei Versandvorlagen, die jeweils in einem an die **[!UICONTRO
 1. Wiederholen Sie den Vorgang zur Erstellung des Versands B.
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
+
+Sie können jetzt die Versand im Workflow konfigurieren (siehe [Schritt 4: Konfigurieren Sie die Versand im Workflow](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)).
