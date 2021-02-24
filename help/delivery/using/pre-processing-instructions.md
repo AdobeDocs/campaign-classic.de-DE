@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 151667637a12667f5eda1590e64e01de493be9ce
+source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Verwenden Sie die Personalisierungsschaltfläche im Versand-Assistent, um die ri
 
 ## &lt;%@ value {#<%@-value}
 
-Diese Anweisung ermöglicht den Zugriff auf die Parameter der Lieferung, die für alle Empfänger konstant sind.
+Diese Anweisung gibt Zugriff auf Parameter des Versands, die für alle Empfänger gleich sind.
 
 Syntax:
 
@@ -53,38 +53,38 @@ Syntax:
 
 Dabei gilt:
 
-* &quot;object&quot;: Name des Objekts (Beispiel: Lieferung, Anbieter usw.).
+* &quot;object&quot;: Name des Objekts (Beispiel: Versand, Anbieter usw.).
 * &quot;xpath&quot;: xpath des Felds.
-* &quot;index&quot; (optional): Wenn &quot;object&quot;ein Array ist (für zusätzliche Skriptobjekte), wird der Elementindex im Array (beginnt bei 0).
+* &quot;index&quot; (optional): Wenn &quot;object&quot;ein Array ist (für zusätzliche Skriptobjekte), Elementindex im Array (Beginn bei 0).
 
-Objekt kann:
+Objekt kann sein:
 
-* *&quot;Lieferung&quot;: für die aktuelle Lieferung (siehe Details und Einschränkungen im Unterabschnitt unten).
-* &quot;Anbieter&quot;: für den aktuellen Zustellanbieter/Routing (nms:externalAccount).
-* Ein zusätzliches Skriptobjekt: wenn ein Objekt im Kontext über Folgendes geladen wird: **Properties** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
-* Element der foreach-Schleife: Siehe Abschnitt [Foreach](#<%@-foreach) unten.
+* &quot;Versand&quot;: für den aktuellen Versand (siehe Einzelheiten und Einschränkungen im Unterabschnitt unten).
+* &quot;provider&quot;: für den aktuellen Versand-Provider/Routing (nms:externalAccount).
+* Ein zusätzliches Skriptobjekt: wenn ein Objekt im Kontext geladen wird über: **Eigenschaften** > **Personalisierung** > **Hinzufügen Objekte im Ausführungskontext**.
+* Element der foreach-Schleife: siehe Abschnitt [Vorhersage](#<%@-foreach) weiter unten.
 
-### &quot;delivery&quot;-Objekt {#delivery-object}
+### &quot;Versand&quot;-Objekt {#delivery-object}
 
-Für die E-Mail-Personalisierung ist das Bereitstellungsobjekt auf zwei Arten verfügbar:
+Für die Personalisierung per E-Mail ist das Versand-Objekt auf zwei Arten verfügbar:
 
 * In JavaScript. Beispiel: `<%= delivery.myField %>`.
 
-   Im JavaScript-Objekt werden benutzerdefinierte Felder nicht unterstützt. Sie funktionieren in der Vorschau, aber nicht in der MTA, da die MTA nur auf das vordefinierte Bereitstellungsschema zugreifen kann.
+   Im JavaScript-Objekt-Versand werden benutzerdefinierte Felder nicht unterstützt. Sie funktionieren in der Vorschau, aber nicht in der MTA, weil die MTA nur auf das vordefinierte Versand-Schema zugreifen kann.
 
-* Durch die Vorverarbeitung `<%@ value object="delivery"`.
+* Durch die Vorverarbeitung von `<%@ value object="delivery"`.
 
-Für die `<%@ value object="delivery" xpath="@myCustomField" %>`-Anweisung gibt es eine weitere Einschränkung für Lieferungen, die über die Mitte-Sourcing gesendet werden. Das benutzerdefinierte Feld &quot;@myCustomField&quot;muss dem Schema &quot;nms:delivery&quot;auf Marketing- und Midsourcing-Plattformen hinzugefügt werden.
+Für die Anweisung `<%@ value object="delivery" xpath="@myCustomField" %>` gibt es eine weitere Einschränkung für Versand, die über Mid-Sourcing gesendet werden. Das benutzerdefinierte Feld &quot;@myCustomField&quot;muss dem Schema &quot;nms:Versand&quot;auf Marketing- und Mid-Sourcing-Plattformen hinzugefügt werden.
 
 >[!NOTE]
 >
->Verwenden Sie für Bereitstellungsparameter/Variablen die folgende Syntax (mithilfe des Bereitstellungsobjekts):
+>Verwenden Sie für Versand-Parameter/Variablen die folgende Syntax (unter Verwendung des Versand-Objekts):
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
 ### &lt;>{#<%@-value-in-javascript}
 
-Damit &lt;%@-Wert in Skriptabschnitten verwendet werden kann, werden zwei spezielle Objekte durch &lt;% und %> ersetzt:
+Damit der Wert &lt;%@ in Skriptabschnitten verwendet werden kann, werden zwei Sonderobjekte durch &lt;% und %> ersetzt:
 
 * `<%@ value object='startScript' %>`
 * `<%@ value object='endScript' %>`
@@ -98,7 +98,7 @@ Beispiel:
 
 ## &lt;>{#<%@-foreach}
 
-Diese Anweisung ermöglicht die Iteration für ein Array von Objekten, die in die Bereitstellung geladen wurden, um einzelne Verknüpfungen zu den Objekten zu verfolgen.
+Diese Anweisung ermöglicht die Iteration in einem Array von Objekten, die im Versand geladen werden, um einzelne Links zu den Objekten zu verfolgen.
 
 Syntax:
 
@@ -106,16 +106,16 @@ Syntax:
 
 Dabei gilt:
 
-* &quot;object&quot;: Name des Objekts, von dem aus gestartet werden soll, normalerweise ein zusätzliches Skriptobjekt, kann aber eine Bereitstellung sein.
-* &quot;xpath&quot;(optional): xpath der Sammlung, um sie zu wiederholen. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, das wiederholt werden soll.
-* &quot;index&quot; (optional): wenn xpath nicht &quot;.&quot;ist. und object ist ein Array selbst, item index of object (beginnt bei 0).
-* &quot;item&quot; (optional): Name eines neuen Objekts, auf das innerhalb der foreach-Schleife mit dem &lt;%@-Wert zugegriffen werden kann. Standard mit dem Verknüpfungsnamen im Schema.
+* &quot;object&quot;: Name des Objekts, von dem aus Beginn ausgeführt werden soll, normalerweise ein zusätzliches Skriptobjekt, das jedoch ein Versand sein kann.
+* &quot;xpath&quot;(optional): xpath der Sammlung, die als Schleife verwendet werden soll. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, auf dem eine Schleife ausgeführt werden soll.
+* &quot;index&quot; (optional): wenn xpath nicht &quot;.&quot; und object ist ein Array selbst, Elementindex des Objekts (Beginn bei 0).
+* &quot;item&quot; (optional): Name eines neuen Objekts, auf das innerhalb der foreach-Schleife ein &lt;%@-Wert zugegriffen werden kann. Standardeinstellung mit dem Linknamen im Schema.
 
 Beispiel:
 
-Laden Sie in den Bereitstellungseigenschaften/Personalisierung ein Array von Artikeln und eine Beziehungstabelle zwischen Empfänger und Artikeln.
+Laden Sie in den Eigenschaften/Personalisierung des Versands ein Artikelarray und eine Beziehungstabelle zwischen Empfänger und Artikeln.
 
-Die Anzeige von Links zu diesen Artikeln kann einfach mit einem Javascript wie folgt erfolgen:
+Die Anzeige von Links zu diesen Artikeln kann mit einem Javascript wie folgt erfolgen:
 
 ```
 <%
@@ -126,11 +126,11 @@ Die Anzeige von Links zu diesen Artikeln kann einfach mit einem Javascript wie f
 %>
 ```
 
-Mit dieser Lösung werden die Links zu allen Artikeln ohne Unterschied verfolgt. Sie können wissen, dass ein Empfänger auf einen Artikel-Link geklickt hat, aber Sie können nicht wissen, zu welchem Artikel.
+Mit dieser Lösung werden die Links zu allen Artikeln unterschiedslos verfolgt. Sie können wissen, dass ein Empfänger auf einen Artikel-Link geklickt hat, aber Sie können nicht wissen, zu welchem Artikel.
 
 Die Lösung lautet:
 
-1. Laden Sie alle möglichen Artikel in ein zusätzliches Skript-Array der Lieferung - articleList[] -, was bedeutet, dass es eine begrenzte Anzahl von möglichen Artikeln geben muss.
+1. Laden Sie alle möglichen Artikel in einem zusätzlichen Skriptarray des Versands - articleList[] - vorab, d. h. es muss eine endliche Anzahl möglicher Artikel vorhanden sein.
 1. Schreiben Sie eine JavaScript-Funktion am Anfang des Inhalts.
 
    ```
@@ -148,7 +148,7 @@ Die Lösung lautet:
    }
    <%@ value object='endScript' %>
    ```
-1. Zeigen Sie den Artikel an, indem Sie die Funktion aufrufen.
+1. Zeigen Sie den Artikel durch Aufruf der Funktion an.
 
    ```
    <%
