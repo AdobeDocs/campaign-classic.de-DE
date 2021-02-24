@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 31%
+source-wordcount: '244'
+ht-degree: 30%
 
 ---
 
@@ -29,13 +29,14 @@ Darüber hinaus betraf der in diesem Anwendungsfall beschriebene Test nur zwei V
 
 Die wichtigsten Schritte zur Durchführung dieses Anwendungsfalls sind:
 
-* [Schritt 1: Erstellen eines Targeting-Workflows](#step-1--creating-a-targeting-workflow)
-* [Schritt 2: Populationsmuster konfigurieren](#step-2--configuring-population-samples)
-* [Schritt 3: Zwei Versandvorlagen erstellen](#step-3--creating-two-delivery-templates)
-* [Schritt 4: Versand im Workflow konfigurieren](#step-4--configuring-the-deliveries-in-the-workflow)
-* [Schritt 5: Skript erstellen](#step-5--creating-the-script)
-* [Schritt 7: Beginn des Workflows](#step-7--starting-the-workflow)
-* [Schritt 8: Analysieren Sie das Ergebnis](#step-8--analyzing-the-result).
+* [Schritt 1: Erstellen eines Targeting-Workflows](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
+* [Schritt 2: Populationsmuster konfigurieren](../../delivery/using/a-b-testing-uc-population-samples.md)
+* [Schritt 3: Zwei Versandvorlagen erstellen](../../delivery/using/a-b-testing-uc-delivery-templates.md)
+* [Schritt 4: Versand im Workflow konfigurieren](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
+* [Schritt 5: Skript erstellen](../../delivery/using/a-b-testing-uc-script.md)
+* [Schritt 6: Definieren des endgültigen Versands](../../delivery/using/a-b-testing-uc-final-delivery.md)
+* [Schritt 7: Beginn des Workflows](../../delivery/using/a-b-testing-uc-start-workflow.md)
+* [Schritt 8: Ergebnis analysieren](../../delivery/using/a-b-testing-uc-analyzing.md)
 
 **Verwandte Themen:**
 
