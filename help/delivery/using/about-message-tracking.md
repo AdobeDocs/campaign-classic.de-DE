@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 55cc09c0446e389029890e45b790bb5ec6ffdc27
+source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '686'
 ht-degree: 11%
 
 ---
@@ -57,7 +57,7 @@ Verfolgungsoptionen können durch Aktivieren oder Deaktivieren von verfolgten UR
 
 **Personalisierung nachverfolgter Links**
 
-Mit den Campaign Classic-Verfolgungsfunktionen können Sie Links in E-Mails hinzufügen, die personalisiert werden können und die Verfolgung unterstützen. [Mehr dazu](https://helpx.adobe.com/campaign/kb/tracking-personnalized-links.html)
+Mit den Campaign Classic-Verfolgungsfunktionen können Sie Links in E-Mails hinzufügen, die personalisiert werden können und die Verfolgung unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md)
 
 **Trackinglogs**
 
