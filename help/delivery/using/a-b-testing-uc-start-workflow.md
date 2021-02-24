@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 84%
+source-wordcount: '89'
+ht-degree: 74%
 
 ---
 
@@ -30,3 +30,5 @@ ht-degree: 84%
    Im vorliegenden Beispiel handelt es sich um die Version A.
 
 1. Validieren Sie Zielgruppe und Inhalt der endgültigen Version und bestätigen Sie die Absendung.
+
+Sie können jetzt das Ergebnis analysieren (siehe Schritt 8: Analysieren Sie das Ergebnis](../../delivery/using/a-b-testing-uc-analyzing.md)).[
