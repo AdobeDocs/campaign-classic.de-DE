@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 translation-type: tm+mt
-source-git-commit: 177b4e74c75e4fcca70dc90b5ff2c0406181e0f7
+source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 94%
+source-wordcount: '342'
+ht-degree: 90%
 
 ---
 
@@ -169,3 +169,5 @@ Im zuvor dargestellten Beispiel wird die endgültige Version anhand der Öffnung
 * Höchste Anzahl an besuchten Webseiten nach Erhalt der Nachricht: `[indicators/@totalWebPage]`,
 * Niedrigste Abmelderate: `[indicators/@optOutRatio]`,
 * Höchster Gesamtumsatz infolge des Erhalts der Nachricht: `[indicators/@amount]`.
+
+Sie können jetzt den endgültigen Versand definieren (siehe [Schritt 6: Definieren Sie den endgültigen Versand](../../delivery/using/a-b-testing-uc-final-delivery.md)).
