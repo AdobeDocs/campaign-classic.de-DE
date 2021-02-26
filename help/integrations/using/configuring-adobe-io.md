@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 333d2221d4f86fe18232473385653ed8409adf54
+source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 81%
+source-wordcount: '522'
+ht-degree: 98%
 
 ---
 
@@ -96,19 +96,9 @@ Um die Projektanmeldedaten in Adobe Campaign hinzuzufügen, führen Sie als neol
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
-Der private Schlüssel sollte im Base64 UTF-8-Format kodiert werden. Gehen Sie dabei folgendermaßen vor:
-
-1. Verwenden Sie den privaten Schlüssel, der in Schritt 1 generiert wurde: Erstellen/aktualisieren Sie den Projektabschnitt der Adobe I/O](#creating-adobe-io-project). [ Der private Schlüssel muss mit dem zum Erstellen der Integration verwendeten identisch sein.
-
-1. Kopieren Sie mithilfe dieses [dieser Website](https://www.base64encode.org/) Ihren privaten Schlüssel in das entsprechende Feld.
-
-   >[!NOTE]
-   >
-   >Manchmal kann beim Kopieren/Einfügen des privaten Schlüssels automatisch eine zusätzliche Zeile hinzugefügt werden. Vergessen Sie nicht, ihn zu entfernen, bevor Sie Ihren privaten Schlüssel kodieren.
-
-1. Klicken Sie auf **[!UICONTROL Encode]**.
-
-1. Verwenden Sie Ihren neu generierten privaten Schlüssel, der im Base64 UTF-8-Format kodiert wurde, um den oben beschriebenen Befehl auszuführen.
+>[!NOTE]
+>
+>Sie sollten den privaten Schlüssel im Base64-UTF-8-Format kodieren. Achten Sie darauf, vor dem Kodieren die neue Zeile aus dem Schlüssel zu entfernen (mit Ausnahme des privaten Schlüssels). Der private Schlüssel muss mit dem für die Erstellung der Integration verwendeten Schlüssel identisch sein. Sie können [diese Website](https://www.base64encode.org/) verwenden, um die Base64-Kodierung des privaten Schlüssels zu testen.
 
 ## Schritt 3: Aktualisieren des Pipelined-Tags {#update-pipelined-tag}
 
