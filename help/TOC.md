@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 6dbf77c29dddc4b718910835520e4480e01d0d4a
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2372'
 ht-degree: 97%
 
 ---
@@ -125,8 +125,8 @@ ht-degree: 97%
       + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
       + [E-Mail-Inhalt erstellen](delivery/using/defining-the-email-content.md)
       + [Interaktive Inhalte definieren](delivery/using/defining-interactive-content.md)
-      + E-Mail-Versand {#sending-an-email}
-         + [Bestätigung des E-Mail-Versands](delivery/using/sending-messages.md)
+      + Senden des E-Mail-Versands {#sending-an-email}
+         + [Wichtigste Schritte zum Senden einer E-Mail](delivery/using/sending-messages.md)
          + [E-Mail-Parameter](delivery/using/email-parameters.md)
          + [Senden mit der erweiterten MTA](delivery/using/sending-with-enhanced-mta.md)
          + [Versand auf japanische Mobiltelefone](delivery/using/sending-emails-on-japanese-mobiles.md)
