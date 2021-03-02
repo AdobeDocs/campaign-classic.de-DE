@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 translation-type: tm+mt
-source-git-commit: 8bcfc8826a66517e6a648dbc57b681778718c33c
+source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '291'
+ht-degree: 87%
 
 ---
 
@@ -59,3 +59,12 @@ Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 * **[!UICONTROL Nächste Aufrufe]**: Das bei allen weiteren Aufrufen auszuführende Skript wird im unteren Bereich des Editors eingefügt.
 * **[!UICONTROL Transitionen]**: Es ist möglich, mehrere aus dieser Aktivität ausgehende Transitionen zu definieren.
 * **[!UICONTROL Zeitplan]** Im Tab **[!UICONTROL Planung]** können der Ausführungszeitpunkt und -rhythmus der Aktivität definiert werden.
+
+Erweitertes JavaScript ist eine persistente Aufgabe und wird in regelmäßigen Abständen zurückgerufen, wenn es nicht als abgeschlossen markiert wurde. Um die Aufgabe zu beenden und künftige Rückrufe zu verhindern, müssen Sie die **Aufgabe.setComplete()**-Methode im Abschnitt **[!UICONTROL Nächste Aufrufe]** verwenden:
+
+```
+task.postEvent(task.transitionByName("ok")); // to transition to Ok branch
+task.setCompleted();
+
+return 0;
+```
