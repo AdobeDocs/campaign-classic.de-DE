@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 6e0741d13aa954e81fe6416663399ffd1a81012f
+source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
 workflow-type: tm+mt
 source-wordcount: '1182'
 ht-degree: 2%
@@ -297,7 +297,7 @@ Bei einem verknüpften Ordner muss das **folderLink**-Attribut des **`<nodemodel
 Beispiel für die Deklaration eines verknüpften Ordners im Schema data:
 
 ```
-<element default="DefaultFolder('nmsFolder')" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="own" revLabel="Recipients" target="xtk:folder" type="link"/>
+<element default="DefaultFolder('nmsFolder', [@_folder-id])" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="define" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
 Die Konfiguration von **`<nodemodel>`** auf dem Link des Ordners &quot;folder&quot; lautet wie folgt:
