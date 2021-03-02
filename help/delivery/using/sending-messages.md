@@ -7,17 +7,17 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: e2dfc34b35e6ce03715bd5723cff578a1aacd559
+source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '219'
 ht-degree: 6%
 
 ---
 
 
-# Bestätigen des E-Mail-Versands {#confirming-email-delivery}
+# Hauptschritte zum Senden einer E-Mail {#confirming-email-delivery}
 
-Nachdem Sie Ihre E-Mail erstellt und konfiguriert haben, können Sie sie an die Haupt-Zielgruppe senden. In diesem Abschnitt werden die wichtigsten Schritte zur Bestätigung des Versand einer E-Mail beschrieben.
+Nachdem Sie Ihre E-Mail erstellt und konfiguriert haben, können Sie sie an die Haupt-Zielgruppe senden. In diesem Abschnitt werden die wichtigsten Schritte zur Überprüfung und Bestätigung des Versand einer E-Mail beschrieben.
 
 1. Stellen Sie sicher, dass Sie alle Einstellungen konfiguriert haben, die spezifisch für E-Mail-Versand sind. Weitere Informationen finden Sie unter [E-Mail-Parameter](../../delivery/using/email-parameters.md).
 1. Wenn die E-Mail fertig ist, wird empfohlen, vor dem Senden an die Haupt-Zielgruppe potenzielle Fehler zu erkennen, indem Testversand gesendet werden. Weitere Informationen finden Sie unter [Senden eines Testversands](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
