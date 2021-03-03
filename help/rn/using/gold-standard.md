@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: 3105372bc020057727e28d26e7969c31ac290115
+source-git-commit: 23ba4091a1ffaa0245c58e8d346c60b54f79b4a2
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 100%
+source-wordcount: '1112'
+ht-degree: 91%
 
 ---
 
@@ -27,15 +27,30 @@ Weitere Informationen zum Campaign Gold Standard-Programm finden Sie in [diesem 
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard Version 11{#gs-11}
 
-_22. Dezember 2020_
+_2. März 2021_
+
+Build 9032@10c2709 umfasst die folgende Fehlerkorrektur:
+
+* Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Versänden verhinderte. (NEO-31453, NEO-31454)
+
+**Nur eine Konsolenaktualisierung ist obligatorisch. Es ist keine Serveraktualisierung erforderlich.**
+
+>[!NOTE]
+>
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie, wie Sie das Konsolenupdate allen Endbenutzern [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md) vorschlagen.
+
+
+_22. Dezember 2020_
 
 >[!CAUTION]
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um nach dem **31. März 2021** eine Verbindung zu Campaign herstellen zu können.
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt.
+> * Wenn Sie die Experience Cloud-Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie zur Adobe I/O wechseln, wie auf dieser Seite [beschrieben. ](../../integrations/using/configuring-adobe-io.md) Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt.
+
 >
->Weitere Informationen finden Sie in den [häufig gestellten Fragen zum Upgrade auf Gold Standard 11](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html).
+>
+Weitere Informationen finden Sie in den [häufig gestellten Fragen zum Upgrade auf Gold Standard 11](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html).
 
 Der Build 9032@d3b452f umfasst die folgenden Verbesserungen und Fehlerbehebungen:
 
@@ -51,7 +66,7 @@ Der Build 9032@d3b452f umfasst die folgenden Verbesserungen und Fehlerbehebungen
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 10{#gs-10}
 
-_7. Juli 2020_
+_7. Juli 2020_
 
 Build 9032@efd8a94 umfasst die folgende Fehlerkorrektur:
 
@@ -83,7 +98,7 @@ Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 8{#gs-8}
 
-_29. April 2020_
+_29. April 2020_
 
 Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 
@@ -108,7 +123,7 @@ Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 6{#gs-6}
 
-_9. März 2020_
+_Freitag, 9. März 2020_
 
 Build 9032@19f73c5 umfasst die folgende Fehlerkorrektur:
 
@@ -116,7 +131,7 @@ Build 9032@19f73c5 umfasst die folgende Fehlerkorrektur:
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 5{#gs-5}
 
-_17. Dezember 2019_
+_17. Dezember 2019_
 
 Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
@@ -124,7 +139,7 @@ Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 4{#gs-4}
 
-_11. Dezember 2019_
+_11. Dezember 2019_
 
 Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
@@ -132,7 +147,7 @@ Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 3{#gs-3}
 
-_20. November 2019_
+_20. November 2019_
 
 Build 9032@3468c7b umfasst die folgenden Fehlerkorrekturen:
 
@@ -142,7 +157,7 @@ Build 9032@3468c7b umfasst die folgenden Fehlerkorrekturen:
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 2{#gs-2}
 
-_19. September 2019_
+_19. September 2019_
 
 Build 9032@cee805c umfasst die folgenden Fehlerkorrekturen:
 
