@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 97546a5a49880c5af51754fb5d7b02359f3d556c
+source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
 workflow-type: tm+mt
 source-wordcount: '1435'
 ht-degree: 99%
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 ## ![](assets/do-not-localize/limited_2.png) Version 20.1.4 – Build 9126 {#release-20-1-4-build-9126}
 
-_23. Dezember 2020_
+_23. Dezember 2020_
 
 >[!CAUTION]
 >
@@ -36,11 +36,11 @@ _23. Dezember 2020_
 
 _6. Mai 2020_
 
-* Fehlerkorrektur – Bei der Aktivität **Dateiübertragung** funktioniert jetzt die SFTP-Schlüssel-basierte Authentifizierung bei Debian 9. (NEO-23183)
+* Es wurde ein Problem mit der Aktivität **Dateiübertragung** behoben, das bei Debian 9 eine SFTP-Schlüssel-basierte Authentifizierung verhinderte. (NEO-23183)
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.1.2 – Build 9123{#release-20-1-2-build-9123}
 
-_13. März 2020_
+_Freitag, 13. März 2020_
 
 * Die Bereitstellung von Versionen auf Red Hat 7-Servern funktioniert jetzt problemlos. (NEO-23332)
 
