@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 
-# Webformularvorlage verwenden{#using-a-web-form-template}
+# Webformularvorlage{#using-a-web-form-template} verwenden
 
 Formularvorlagen sind wiederverwendbare Konfigurationen, mit denen Sie neue Formulare erstellen können. Standardmäßig werden Formularvorlagen gemeinsam mit Webanwendungsvorlagen im Knoten **[!UICONTROL Ressourcen > Vorlagen > Webanwendungsvorlagen]** gespeichert.
 
