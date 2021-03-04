@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 100%
+source-wordcount: '1163'
+ht-degree: 99%
 
 ---
 
 
-# LINE-Kanal{#line-channel}
+# LINE-Versand erstellen{#line-channel}
 
 LINE ist ein kostenfreier Dienst für Instant Messaging, VoIP und Video, der auf Smartphones (iPhone, Android, Windows Phone, BlackBerry, Nokia) und auf PC genutzt werden kann. Adobe Campaign ermöglicht Ihnen den Versand von LINE-Nachrichten.
 
