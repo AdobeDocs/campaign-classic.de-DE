@@ -7,15 +7,15 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 
-# Webanwendung konzipieren{#designing-a-web-application}
+# Entwerfen einer Webanwendung{#designing-a-web-application}
 
 Webanwendungen werden nach demselben Prinzip erstellt und verwaltet wie [Online-Umfragen](../../web/using/about-surveys.md).
 
