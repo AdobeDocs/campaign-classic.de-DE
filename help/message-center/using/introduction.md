@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Einleitung
-description: Einleitung
+title: Info zu Transaktionsnachrichtenvorlagen
+description: Erste Schritte mit Transaktionsnachrichtenvorlagen
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 100%
+source-wordcount: '103'
+ht-degree: 86%
 
 ---
 
 
-# Einleitung{#introduction}
+# Info zu Transaktionsnachrichtenvorlagen{#introduction}
 
 Damit auf jedes Ereignis mit einer personalisierten Nachricht reagiert werden kann, muss zunächst für jeden Ereignistyp eine passende Nachrichtenvorlage erstellt werden. Die Vorlage enthält die für die Personalisierung der Transaktionsnachricht erforderlichen Informationen. Über die Vorlage können zudem die Nachrichtenvorschau überprüft und Testsendungen vor dem eigentlichen Versand durchgeführt werden.
 
