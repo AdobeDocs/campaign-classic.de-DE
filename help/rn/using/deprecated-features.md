@@ -8,11 +8,11 @@ content-type: reference
 topic-tags: campaign-classic-deprecated-features
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 425b2e5748703a8349b6f70968d1ef4c71f72b21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1717'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -47,10 +47,10 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </tr>
     <tr>
   <td>Bericht zum technischen Zustellbarkeits-Monitoring<br></td>
-   <td><p>Ab Kampagne 21.1 wird der Bericht zur Überwachung der technischen Lieferbarkeit nicht mehr unterstützt.</p>
-   <p>Bei Bedarf können Sie diesen Bericht täglich bis zum Datum der Entfernung der Funktion per E-Mail erhalten. Öffnen Sie zum Anfordern einen bestimmten <a href="https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Unterstützungsfall</a> und geben Sie den Namen der Instanz und die E-Mail-Adresse(n) an, an die der Bericht gesendet werden soll.</p> 
-   <p>Adobe empfiehlt Ihnen, sich mit dem Bereitstellungs-Team in Verbindung zu setzen, um die besten Tools zur Überwachung der Leistung Ihrer Instanzbereitstellung zu definieren.</p>
-  <p><em>Zielgruppen-Entfernungsdatum: Ende 2021</em></p>
+   <td><p>Ab Campaign-Version 21.1 wird der Bericht zum technischen Zustellbarkeits-Monitoring nicht mehr unterstützt.</p>
+   <p>Bei Bedarf können Sie diesen Bericht bis zum Datum der Entfernung der Funktion täglich per E-Mail erhalten. Erstellen Sie zum Anfordern ein entsprechendes <a href="https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support-Ticket</a> und geben Sie den Namen der Instanz und die E-Mail-Adresse(n) an, an die der Bericht gesendet werden soll.</p> 
+   <p>Adobe empfiehlt Ihnen, sich mit dem Zustellbarkeits-Team in Verbindung zu setzen, um die besten Tools zur Überwachung der Zustellbarkeit Ihrer Instanz zu finden.</p>
+  <p><em>Geplantes Datum für die Entfernung: Ende 2021</em></p>
   </td>
  </tr>
   <tr>
