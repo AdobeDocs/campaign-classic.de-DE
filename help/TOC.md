@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
 workflow-type: tm+mt
 source-wordcount: '2381'
-ht-degree: 61%
+ht-degree: 62%
 
 ---
 
@@ -175,7 +175,7 @@ ht-degree: 61%
       + [Erste Schritte mit A/B-Tests](delivery/using/get-started-a-b-testing.md)
       + [A/B-Tests konfigurieren](delivery/using/configuring-a-b-testing.md)
       + Anwendungsbeispiel {#use-case}
-         + [Über diesen Verwendungsfall](delivery/using/a-b-testing-use-case.md)
+         + [Über diesen Anwendungsfall](delivery/using/a-b-testing-use-case.md)
          + [Erstellen eines Targeting-Workflows](delivery/using/a-b-testing-uc-targeting-workflow.md)
          + [Populationsmuster konfigurieren](delivery/using/a-b-testing-uc-population-samples.md)
          + [Versandvorlagen erstellen](delivery/using/a-b-testing-uc-delivery-templates.md)
@@ -201,13 +201,13 @@ ht-degree: 61%
       + [Über das Nachrichten-Tracking](delivery/using/about-message-tracking.md)
       + [Getrackte Links konfigurieren](delivery/using/how-to-configure-tracked-links.md)
       + Verfolgen von personalisierten Links {#tracking-personalized-links}
-         + [Erste Schritte mit der Verfolgung von personalisierten Links](delivery/using/tracking-personalized-links.md)
+         + [Erste Schritte mit dem Tracking personalisierter Links](delivery/using/tracking-personalized-links.md)
          + [Tracking-URLs erkennen](delivery/using/detecting-tracking-urls.md)
-         + [Vorverarbeitungsanweisungen für die Verfolgung](delivery/using/pre-processing-instructions.md)
+         + [Anweisungen zur Vorab-Bearbeitung für das Tracking](delivery/using/pre-processing-instructions.md)
       + [URL-Verfolgungsoptionen konfigurieren](delivery/using/personalizing-url-tracking.md)
       + [Zugriff auf die Trackinglogs](delivery/using/accessing-the-tracking-logs.md)
       + [Testverfolgung](delivery/using/testing-tracking.md)
-      + [Fehlerbehebung bei der Verfolgung](delivery/using/tracking-troubleshooting.md)
+      + [Fehlerbehebung beim Tracking](delivery/using/tracking-troubleshooting.md)
    + Verwaltung der Zustellbarkeit {#deliverability-management}
       + [Über die Zustellbarkeit](delivery/using/about-deliverability.md)
       + [Wichtigste zu prüfende Punkte](delivery/using/deliverability-key-points.md)
@@ -467,7 +467,7 @@ ht-degree: 61%
          + [Versand laden](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring          {#monitoring}
+      + Monitoring           {#monitoring}
          + [Bericht an eine Liste senden](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachung Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnhinweise an Operatoren](workflow/using/sending-personalized-alerts-to-operators.md)
