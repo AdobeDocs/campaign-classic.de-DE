@@ -77,7 +77,7 @@ _27. Oktober 2020_
 
 **Verbesserungen bei der Sicherheit**
 
-* Sicheres Laden von Bibliotheken: Zum Schutz vor DLL-Vorladeangriffen lädt Campaign jetzt beim Laden des Campaign-Clients (nlclient) Windows-DLLs nur aus dem Windows-Standard-System-DLL-Pfad. [Mehr dazu](https://support.microsoft.com/de-de/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
+* Sicheres Laden von Bibliotheken: Zum Schutz vor DLL-Vorladeangriffen lädt Campaign jetzt beim Laden des Campaign-Clients (nlclient) Windows-DLLs nur aus dem Windows-Standard-System-DLL-Pfad. [Mehr dazu](https://support.microsoft.com/de-DE/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Angriffen (Server Side Request Forgery) zu verbessern. (NEO-25661)
 * Fehlerkorrektur – Es wurde ein Fehler behoben, der beim Bearbeiten von DSGVO-Datenschutzanfragen auftrat und verhinderte, dass Datensätze aus benutzerdefinierten Tabellen mit einer Beziehung zweiter Ebene zur Empfängertabelle gelöscht wurden. (NEO-25967)
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem mit API-Aufrufen behoben, die von Benutzern ohne Administratorrechte beim Synchronisieren von Adobe Experience Manager-Vorlagen ausgeführt wurden. (NEO-23487)
