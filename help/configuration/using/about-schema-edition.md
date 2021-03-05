@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 4c3a2184ab09b1e1ed91d0127adc636a51808aec
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1011'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign verwendet Data Schemas für:
 * Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in der Campaign-Anwendung
 * Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
 
-Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie im [Campaign Classic-Datenmodell](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
+Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie in [diesem Abschnitt](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
 
 ## Erweitern oder Erstellen von Schemas {#extending-or-creating-schemas}
 
