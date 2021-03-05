@@ -7,17 +7,17 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 100%
+source-wordcount: '258'
+ht-degree: 93%
 
 ---
 
 
-# Überwachen von Marketing-Kampagnen {#monitoring-marketing-campaigns}
+# Überwachung der Marketing-Kampagnen {#monitoring-marketing-campaigns}
 
-## Kampagnen verfolgen {#tracking-a-campaign}
+## Verfolgen einer Kampagne {#tracking-a-campaign}
 
 In jeder Kampagne können über den Tab **[!UICONTROL Verfolgung]** die ausgeführten Prozesse sowie ihre Status eingesehen werden. Die Informationen sind in diverse Untertabs eingeteilt.
 
@@ -29,7 +29,7 @@ In jeder Kampagne können über den Tab **[!UICONTROL Verfolgung]** die ausgefü
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* Im Unter-Tab **[!UICONTROL Aufgaben]** werden alle mit dieser Kampagne verbundenen Aufgaben aufgelistet. Sie können aus dieser Übersicht heraus geöffnet oder gelöscht werden. Aufgaben sind nur mit der Anwendung MRM verfügbar. Sie werden unter [Verwaltung von Aufgaben](../../campaign/using/creating-and-managing-tasks.md) genauer beschrieben.
+* Im Unter-Tab **[!UICONTROL Aufgaben]** werden alle mit dieser Kampagne verbundenen Aufgaben aufgelistet. Sie können aus dieser Übersicht heraus geöffnet oder gelöscht werden. Aufgaben sind nur mit der Anwendung MRM verfügbar. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../campaign/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
@@ -49,10 +49,10 @@ Um den Status eines Versands zu überprüfen, öffnen Sie diesen. Im Dashboard u
 
 >[!NOTE]
 >
->Sendungen und ihre Details werden im Abschnitt [Nachrichten senden](../../delivery/using/about-message-tracking.md) beschrieben.
+>Informationen zu den Details zum Versand finden Sie im Abschnitt [dieses Abschnitts](../../delivery/using/about-message-tracking.md).
 
 ## Verarbeitung verfolgen {#execution-tracking}
 
 Sie können den Status der Sendungen einsehen, indem Sie auf die Schaltfläche **[!UICONTROL Sendungen]** in der Rubrik „Kampagnen“ der Adobe Campaign-Startseite klicken. Siehe [Versandverfolgung](#delivery-tracking).
 
-Informationen bezüglich der in einer Kampagne ausgeführten Prozesse werden im Tab **[!UICONTROL Bearbeiten > Verfolgung]** der jeweiligen Kampagne zusammengefasst. Siehe [Kampagnen verfolgen](#tracking-a-campaign).
+Informationen bezüglich der in einer Kampagne ausgeführten Prozesse werden im Tab **[!UICONTROL Bearbeiten > Verfolgung]** der jeweiligen Kampagne zusammengefasst. [Weitere Informationen](#tracking-a-campaign).
