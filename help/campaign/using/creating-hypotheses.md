@@ -2,20 +2,20 @@
 solution: Campaign Classic
 product: campaign
 title: Hypothesenerstellung
-description: Hypothesenerstellung
+description: Erfahren Sie, wie Sie Hypothesen in der Kampagne Reaktionsverwaltung
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '1125'
-ht-degree: 100%
+source-wordcount: '1115'
+ht-degree: 86%
 
 ---
 
 
-# Hypothesenerstellung{#creating-hypotheses}
+# Erstellen von Hypothesen{#creating-hypotheses}
 
 Es gibt folgende Möglichkeiten, Hypothesen einem Angebot oder einem Kampagnenversand zuzuordnen:
 
@@ -25,7 +25,7 @@ Es gibt folgende Möglichkeiten, Hypothesen einem Angebot oder einem Kampagnenve
 
 Die Berechnung von Hypothesen erfolgt erst, wenn die entsprechende Marketing-Kampagne gestartet wurde und die Empfänger den Versand erhalten haben. Wenn die Hypothese einen Angebotsvorschlag betrifft, muss dieser bereits präsentiert worden und immer noch aktiv sein. Angebots- und Versandhypothesen werden über den Ordner **[!UICONTROL Messhypothesen]** erstellt und basieren auf einer Hypothesenvorlage. Sie haben des Weiteren die Möglichkeit, eine Hypothese direkt in einem Versand oder einer Kampagne zu referenzieren, bevor die Kampagne gestartet wird. In diesem Fall werden die Hypothesen nach dem Start der Marketing-Kampagne unter Berücksichtigung der Ausführungsparameter automatisch berechnet (Weitere Informationen hierzu finden Sie unter [Ausführungsparameter einer Hypothesenvorlage](../../campaign/using/hypothesis-templates.md#hypothesis-template-execution-settings)).
 
-## Erstellen einer Hypothese direkt in einem Versand {#creating-a-hypothesis-on-the-fly-on-a-delivery}
+## Erstellen einer Hypothese auf einem Versand {#creating-a-hypothesis-on-the-fly-on-a-delivery}
 
 Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie folgt vor:
 
@@ -76,11 +76,11 @@ Um eine Hypothese für einen bestehenden Versand zu erstellen, gehen Sie wie fol
 
 1. Ändern Sie bei Bedarf die Parameter und starten Sie die Hypothese erneut.
 
-## Referenzieren einer Hypothese im Versand einer Kampagne {#referencing-a-hypothesis-in-a-campaign-delivery}
+## Verweisen auf eine Hypothese in einem Kampagne-Versand {#referencing-a-hypothesis-in-a-campaign-delivery}
 
 Sie haben die Möglichkeit, eine Hypothese in einer Marketingkampagne zu referenzieren, bevor diese gestartet wird. Die Hypothese wird in diesem Fall automatisch nach dem Versand gestartet, entsprechend der in der Hypothesenvorlage festgelegten Ausführungsparameter. Um eine Hypothese in einem Kampagnenversand zu erstellen, gehen Sie wie folgt vor:
 
-1. Erstellen Sie je nach Bedarf eine oder mehrere Vorlagen vom Typ **[!UICONTROL Versand]** anhand der im Abschnitt [Hypothesenvorlage erstellen](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model) beschriebenen Vorgehensweise.
+1. Je nach Bedarf können Sie eine oder mehrere **[!UICONTROL Versand]**-Typvorlagen erstellen, wie in [dieser Abschnitt](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model) beschrieben.
 1. Erstellen Sie Ihre Marketingkampagne und die entsprechenden Zielgruppen-Workflows.
 1. Klicken Sie im Versandfenster auf das Symbol **[!UICONTROL Versandmessung]**.
 1. Wählen Sie die Hypothesenvorlage aus. Die in der Vorlage konfigurierte Abfrage wird im Hypothesenfenster angezeigt.
@@ -89,7 +89,7 @@ Sie haben die Möglichkeit, eine Hypothese in einer Marketingkampagne zu referen
 
    ![](assets/response_hypothesis_instance_creation_008.png)
 
-## Referenzieren einer Hypothese in allen Sendungen einer Kampagne {#adding-a-default-hypothesis-to-deliveries-for-a-campaign}
+## hinzufügen einer standardmäßigen Hypothese auf Versand für eine Kampagne {#adding-a-default-hypothesis-to-deliveries-for-a-campaign}
 
 Sie haben die Möglichkeit, eine Hypothese auf Kampagnenebene zu referenzieren. Die Hypothese wird in diesem Fall allen in der jeweiligen Kampagne enthaltenen Sendungen zugeordnet. Gehen Sie hierzu wie folgt vor:
 
@@ -108,13 +108,13 @@ Sie haben die Möglichkeit, eine Hypothese auf Kampagnenebene zu referenzieren. 
 
 Sie können die Ergebnisse der Berechnung in den Tabs **[!UICONTROL Allgemein]** und **[!UICONTROL Reaktionen]** der Hypothese einsehen (siehe [Hypothesenverfolgung](../../campaign/using/hypothesis-tracking.md)).
 
-Weiterführende Informationen finden Sie unter [Beispiel: Erstellen einer einem Versand zugeordneten Hypothese](#example--creating-a-hypothesis-linked-to-a-delivery).
+Weitere Informationen finden Sie unter [dieses Beispiel](#example--creating-a-hypothesis-linked-to-a-delivery).
 
-## Angebotshypothese erstellen {#creating-a-hypothesis-on-an-offer}
+## Erstellen einer Hypothese auf einem Angebot {#creating-a-hypothesis-on-an-offer}
 
 Die Erstellung einer Hypothese zu einem Angebotsvorschlag ähnelt dem Erstellen einer unmittelbaren Versandhypothese. Die Hypothese kann ausgeführt werden, solange das Angebot aktiv ist. Der Berechnungszeitraum basiert auf dem Datum des Angebotsvorschlags. Wenn es Ihnen die Hypothese erlaubt, einen Empfänger mit einem Kauf zu verknüpfen, kann der Status jenes Angebotsvorschlags, der wahrscheinlich angenommen wird, automatisch geändert werden (Weitere Informationen hierzu finden Sie unter [Transaktionen](../../campaign/using/hypothesis-templates.md#transactions)).
 
-1. Erstellen Sie eine oder mehrere Vorlagen vom Typ **[!UICONTROL Angebot]**, wie unter [Hypothesenvorlage erstellen](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model) beschrieben.
+1. Erstellen Sie eines oder mehrere **[!UICONTROL Angebot]**-Typmodelle, wie in [dieser Abschnitt](../../campaign/using/hypothesis-templates.md#creating-a-hypothesis-model) beschrieben.
 1. Gehen Sie in den Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]**.
 1. Erstellen Sie eine Hypothese vom Typ **[!UICONTROL Angebote]**, indem Sie die zuvor erstellte Vorlage auswählen.
 
@@ -138,11 +138,11 @@ Die Erstellung einer Hypothese zu einem Angebotsvorschlag ähnelt dem Erstellen 
 
    Wenn die Option **[!UICONTROL Vorschlagsstatus aktualisieren]** in der Hypothesenvorlage aktiviert wurde, wird der Status des Angebotsvorschlags automatisch geändert und informiert über die Auswirkungen der Kampagnen (siehe diesbezüglich [Transaktionen](../../campaign/using/hypothesis-templates.md#transactions)).
 
-## Beispiel: Erstellen einer einem Versand zugeordneten Hypothese {#example--creating-a-hypothesis-linked-to-a-delivery}
+## Beispiel: eine Hypothese erstellen, die mit einem Versand {#example--creating-a-hypothesis-linked-to-a-delivery} verknüpft ist
 
-In diesem Beispiel möchten wir eine Hypothese erstellen, die mit einem Versand verknüpft ist. Die Hypothese basiert auf der zuvor erstellten Vorlage (siehe [Beispiel: Erstellen einer Hypothesenvorlage für einen Versand](../../campaign/using/hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)). Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine Hypothese zu einem bestimmten Artikel in der Bestelltabelle zu erstellen.
+In diesem Beispiel möchten wir eine Hypothese erstellen, die mit einem Versand verknüpft ist. Diese Hypothese basiert auf dem zuvor erstellten Modell (siehe [dieses Beispiel](../../campaign/using/hypothesis-templates.md#example--creating-a-hypothesis-template-on-a-delivery)). Anschließend werden wir die von der Vorlage geerbte Abfrage verfeinern, um eine Hypothese zu einem bestimmten Artikel in der Bestelltabelle zu erstellen.
 
-1. Erstellen Sie eine Kampagne und einen Versand (siehe hierzu [Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
+1. Erstellen Sie eine Kampagne und einen Versand (Weitere Informationen finden Sie unter [Erstellen von Marketing-Kampagnen](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign)).
 
    In vorliegenden Beispiel handelt es sich um einen Briefpost-Versand.
 
@@ -152,7 +152,7 @@ In diesem Beispiel möchten wir eine Hypothese erstellen, die mit einem Versand 
 
    >[!NOTE]
    >
-   >Weiterführende Informationen finden Sie unter [Kontrollgruppe definieren](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   >Weitere Informationen finden Sie unter [Kontrollgruppe](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) definieren.
 
 1. Öffnen Sie den zuvor erstellten Versand Ihrer Kampagne, klicken Sie auf das Symbol **[!UICONTROL Versandmessung]** und anschließend auf **[!UICONTROL Hinzufügen]****[!UICONTROL .]**
 
@@ -174,7 +174,7 @@ In diesem Beispiel möchten wir eine Hypothese erstellen, die mit einem Versand 
 
    ![](assets/response_hypothesis_delivery_example_008.png)
 
-1. Starten Sie Ihren Zielgruppen-Workflow und führen Sie die erforderlichen Validierungen aus, bis die Kampagne abgeschlossen ist (lesen Sie diesbezüglich den Abschnitt [Starten eines Versands ](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)).
+1. Starten Sie Ihren Targeting-Arbeitsablauf und führen Sie die erforderlichen Prüfungen aus, bis die Kampagne abgeschlossen ist (weitere Informationen dazu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)).
 
    ![](assets/response_hypothesis_delivery_example_009.png)
 
