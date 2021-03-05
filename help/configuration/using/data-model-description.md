@@ -2,14 +2,14 @@
 solution: Campaign Classic
 product: campaign
 title: Beschreibung des Adobe Campaign Classic-Datenmodells
-description: In diesem Dokument wird das Adobe Campaign Classic-Datenmodell beschrieben.
+description: In diesem Dokument wird das Adobe Campaign-Datenmodell beschrieben.
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2379'
 ht-degree: 1%
 
 ---
