@@ -1,29 +1,29 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Marketing-Kampagnen entwerfen
+title: Entwerfen und Ausführen von Marketing-Kampagnen
 description: Sie können Marketing-Kampagnen entwerfen, optimieren, ausführen und analysieren.
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: cea4a26935312b1cb119a3fa671af7bf00788fe9
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 100%
+source-wordcount: '443'
+ht-degree: 86%
 
 ---
 
 
-# Marketingkampagnen entwerfen{#designing-marketing-campaigns}
+# Entwerfen und Ausführen von Marketing-Kampagnen{#designing-marketing-campaigns}
 
-Adobe Campaign bietet Ihnen die Möglichkeit zur Definition, Optimierung, Ausführung und Analyse von Kommunikations- und Marketing-Kampagnen. Campaign ist somit gleichzeitig Steuerungs- und Ausführungszentrale Ihrer Marketingstrategie. Weiterführende Informationen dazu finden Sie in den Abschnitten [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md) und [Marketingkampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
+Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert als einheitliches Orders- und Ausführungszentrum für Marketingstrategien. Weitere Informationen finden Sie unter [Kampagnen aufrufen](../../campaign/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
 Zusätzlich ergänzt das Modul **Marketing Resource Management (MRM)** diese Anwendung mit einer vollständigen Verwaltung und Echtzeitverfolgung von Aufgaben, Budgets und Marketing-Ressourcen. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung des Managements von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Lesen Sie diesbezüglich diesen [Abschnitt](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Weitere Informationen zu den Adobe-Campaign-Core-Funktionalitäten finden Sie im Abschnitt [Erste Schritte](../../platform/using/about-adobe-campaign-classic.md).\
+>Weitere Informationen zu den Kernfunktionen des Adobe Campaigns finden Sie im Abschnitt [dieser Abschnitt](../../platform/using/about-adobe-campaign-classic.md).\
 >Die Bestimmung von Zielgruppen sowie die Personalisierung und der Versand über verschiedene Kanäle werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) beschrieben.
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie die wichtigsten Konzepte von Marketing-Kampagnen im Video](#video)
@@ -62,7 +62,7 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
    Ein Versandentwurf ist eine strukturierte Beschreibung eines Versands. Jeder Versand kann einen Entwurf referenzieren, der zum Beispiel passende Angebote, anzuhängende Dokumente oder Links zu Verkaufsstellen enthält. Entsprechend dem ausgewählten Versandentwurf werden die jeweiligen enthaltenen Angebote im Versand verzeichnet.
 
-   Weitere Informationen hierzu finden Sie unter [Ressourcen in einem Versandentwurf verknüpfen](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 ## Tutorial {#video}
 
