@@ -7,9 +7,9 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '509'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ Bei der Versandvorbereitung werden diejenigen Empfänger ausgeschlossen, die das
 
 ### Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln
 
-In diesem Video wird erläutert, wie man die Ermüdungsverwaltung in Adobe Campaign Classic mithilfe von Typologieregeln implementiert.
+In diesem Video wird erläutert, wie man die Ermüdungsverwaltung in Adobe Campaign mithilfe von Typologieregeln implementiert.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
@@ -78,7 +78,7 @@ In diesem Video wird erläutert, wie Sie die Ermüdungsverwaltung in Adobe Campa
 
 >[!VIDEO](https://video.tv.adobe.com/v/25091?quality=12)
 
-Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
+Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de).
 
 **Verwandtes Thema**
 
