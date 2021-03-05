@@ -4,10 +4,10 @@ solution: Campaign Classic
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: tm+mt
-source-wordcount: '296'
+workflow-type: ht
+source-wordcount: '297'
 ht-degree: 100%
 
 ---
