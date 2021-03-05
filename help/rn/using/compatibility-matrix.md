@@ -6,9 +6,9 @@ description: Campaign Classic – Kompatibilitätsmatrix
 audience: rns
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 07a13f206ada24dbfe54be754afe4f97834a23e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
 ht-degree: 100%
 
@@ -202,9 +202,9 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 Cups</p>
-<p>18 Cups</p>
-<p>12 Cups</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
