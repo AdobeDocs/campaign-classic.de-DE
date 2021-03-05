@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: add0efb4efd5a37129c649b942799622947f3143
 workflow-type: tm+mt
 source-wordcount: '4112'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -27,13 +27,13 @@ Im Abschnitt **[!UICONTROL Erweiterte JavaScript]**-Aktivität finden Sie Inform
 
 ## Februar 2021 {#release-21.1}
 
-**Aktualisierungen der Dokumentation mit Version 21.1**
+**Dokumentationsaktualisierungen zu Version 21.1**
 
-Die neue Funktion **E-Mail-Feedback-Dienst** (private Beta-Version) wird hier [dokumentiert.](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service)
+Die neue Funktion **Email Feedback Service** (private Beta-Version) ist [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) dokumentiert.
 
-Der Abschnitt **Serverkonfigurationsdatei** wurde mit den Konfigurationsparametern aktualisiert, die erforderlich sind, damit die Kampagne mit IMS eine Verbindung zu einem anderen Dienst herstellen kann. [Mehr dazu](../../installation/using/the-server-configuration-file.md#ims)
+Der Abschnitt **Server-Konfigurationsdatei** wurde mit den Konfigurationsparametern aktualisiert, die für die Verbindung von Campaign mit einem anderen Service über IMS erforderlich sind. [Mehr dazu](../../installation/using/the-server-configuration-file.md#ims)
 
-In der Liste der Statusangaben des Versands wurde die Beschreibung für **Wird vom Dienstleister** berücksichtigt: Dieser Status wird jetzt auch für E-Mail-Versand verwendet, die mit dem [E-Mail-Feedback-Dienst](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) gesendet werden. [Mehr dazu](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
+In der Liste der Versandstatus wurde die Beschreibung für **Vom Dienstleister berücksichtigt** aktualisiert: Dieser Status wird nun auch für E-Mail-Sendungen verwendet, die über den [Email Feedback Service](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) versendet werden. [Mehr dazu](../../delivery/using/delivery-statuses.md#list-delivery-statuses)
 
 Die Tastaturkürzel, die auf dem neuen Anmeldebildschirm zur Verbindung mit Adobe Campaign verfügbar sind, sind jetzt dokumentiert. [Mehr dazu](../../platform/using/launching-adobe-campaign.md#connecting-to-adobe-campaign)
 
@@ -41,15 +41,15 @@ Die Tastaturkürzel, die auf dem neuen Anmeldebildschirm zur Verbindung mit Adob
 
 Es wurde ein neuer Abschnitt mit detaillierten Informationen zur Durchführung von A/B-Tests mit Workflows hinzugefügt. [Mehr dazu](../../delivery/using/get-started-a-b-testing.md)
 
-Der Bereich für erweiterte MTA für Adobe Campaigne wurde [hier](../../delivery/using/sending-with-enhanced-mta.md) verschoben.
+Der Bereich zum Adobe Campaign Enhanced MTA wurde [hierher](../../delivery/using/sending-with-enhanced-mta.md) verschoben.
 
-Eine neue Seite wurde hinzugefügt, um einen Überblick über die Verfolgungsfunktionen in [!DNL Campaign Classic] zu erhalten. [Mehr dazu](../../delivery/using/about-message-tracking.md)
+Es wurde eine neue Seite hinzugefügt, die einen Überblick über die Tracking-Funktionen in [!DNL Campaign Classic] bietet. [Mehr dazu](../../delivery/using/about-message-tracking.md)
 
-Es wurde ein Abschnitt zur Fehlerbehebung hinzugefügt, der Ihnen bei der Lösung häufiger Probleme im Zusammenhang mit der Verfolgung hilft. [Mehr dazu](../../delivery/using/tracking-troubleshooting.md)
+Es wurde ein Abschnitt zur Fehlerbehebung hinzugefügt, der Ihnen bei der Behebung häufiger Probleme im Zusammenhang mit dem Tracking hilft. [Mehr dazu](../../delivery/using/tracking-troubleshooting.md)
 
-Der Abschnitt **Senden einer E-Mail** wurde neu organisiert und mit neuen Unterabschnitten geklärt. [Mehr dazu](../../delivery/using/sending-messages.md)
+Der Abschnitt **E-Mail-Versand** wurde in neue Unterabschnitte umorganisiert und präzisiert. [Mehr dazu](../../delivery/using/sending-messages.md)
 
-Es wurden Informationen zum Hinzufügen von Links in E-Mails hinzugefügt, die personalisiert werden können und die Verfolgung unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md).
+Es wurden Informationen zum Hinzufügen von Links in E-Mails hinzugefügt, die personalisiert werden können und das Tracking unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md).
 
 ## Januar 2021 {#jan-2021}
 
