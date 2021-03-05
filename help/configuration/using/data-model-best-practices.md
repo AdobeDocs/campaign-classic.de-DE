@@ -7,9 +7,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 translation-type: tm+mt
-source-git-commit: 1fdee02e98ce66ec184d8587d0838557f027cf75
+source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
 workflow-type: tm+mt
-source-wordcount: '4031'
+source-wordcount: '4027'
 ht-degree: 24%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 24%
 
 In diesem Dokument werden die wichtigsten Empfehlungen beim Entwerfen Ihres Adobe Campaign-Datenmodells erläutert.
 
-Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie im Abschnitt [Campaign Classic-Datenmodell](../../configuration/using/about-data-model.md).
+Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie im Abschnitt [dieser Abschnitt](../../configuration/using/about-data-model.md).
 
 Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md), um mit Kampagne-Schemas zu beginnen. Erfahren Sie, wie Sie Erweiterungsschema konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank in [diesem Dokument](../../configuration/using/about-schema-edition.md) zu erweitern.
 
@@ -148,7 +148,7 @@ Daher würde einem Kunden, der jährlich 6 Milliarden E-Mails mit einer Retentio
 
 Wenn eine benutzerdefinierte Tabelle in Adobe Campaign mit einem Primärschlüssel als autoPK erstellt wird, sollte dieser Tabelle systematisch eine benutzerdefinierte, dedizierte Sequenz zugeordnet werden.
 
-Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2.1BB. Technisch ist es möglich, eine komplette Reichweite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen übergegangen wird: der Datensatz 0 wird normalerweise von Adobe Campaign Classic in generierten SQL-Abfragen ignoriert.
+Standardmäßig hat eine benutzerdefinierte Sequenz Werte zwischen +1.000 und +2.1BB. Technisch ist es möglich, eine komplette Reichweite von 4BB zu erhalten, indem negative IDs aktiviert werden. Dies sollte mit Vorsicht verwendet werden und eine ID geht verloren, wenn von negativen zu positiven Zahlen übergegangen wird: Der Datensatz 0 wird normalerweise von Adobe Campaign in generierten SQL-Abfragen ignoriert.
 
 **Verwandte Themen:**
 * Weitere Informationen zur Funktion **Automatische Sequenzgenerierung** finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html).
