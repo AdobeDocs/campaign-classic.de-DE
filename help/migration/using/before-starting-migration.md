@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 2%
 
 ---
@@ -77,5 +77,5 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Das **internal**-Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in den Abschnitten [Interne Kennung](../../installation/using/campaign-server-configuration.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md#about-permissions).
+>Das **internal**-Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in den Abschnitten [Interne Kennung](../../installation/using/campaign-server-configuration.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md).
 
