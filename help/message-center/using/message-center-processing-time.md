@@ -7,17 +7,17 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 
 # Verarbeitungsdauer{#message-center-processing-time}
 
-Dieser Bericht zeigt die wichtigsten Kennzahlen für die Echtzeit-Warteschlange. Der für erfahrene Benutzer bestimmte Bericht ist auch über die Rubrik **[!UICONTROL Monitoring]** der Kontrollinstanz zugänglich.
+Dieser Bericht zeigt die wichtigsten Indikatoren für die Echtzeitwarteschlange an. Auf diesen Bericht, der sich an technische Administratoren richtet, kann auch über das Register **[!UICONTROL Monitoring]** in der Kontrollinstanz zugegriffen werden.
 
 ![](assets/mc_reports_2.png)
 
