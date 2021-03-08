@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
 ## 1. Schritt: Erstellung der Empfängerliste {#step-1--creating-the-recipient-list}
 
-Gehen Sie in die Rubrik **[!UICONTROL Profile und Zielgruppen]** der Startseite. Klicken Sie auf die Schaltfläche **[!UICONTROL Listen]** und anschließend auf **[!UICONTROL Erstellen]**. Wählen Sie die Option **[!UICONTROL Neue Liste]** und fügen Sie die gewünschten Empfänger hinzu.
+Wechseln Sie zur Registerkarte **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf den Link **[!UICONTROL Listen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neue Liste]** und erstellen Sie eine neue Empfänger-Liste, an die der Bericht gesendet werden soll.
 
 ![](assets/use_case_report_1.png)
 
