@@ -7,10 +7,10 @@ audience: social
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Dieser Schritt erfordert gleichzeitigen Zugriff auf Ihre Adobe Campaign-Konsole 
 
    ![](assets/social_twitter_service_002.png)
 
-* **Adobe Campaign**: Wechseln Sie zur Rubrik **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf den Link **[!UICONTROL Dienste und Abonnements]** und klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
+* **Adobe Campaign**: Wechseln Sie zur  **[!UICONTROL Profile- und]** Zielungstabelle, klicken Sie auf den Link  **[!UICONTROL Dienste und]** Abonnements und dann auf die Schaltfläche  **** Erstellen.
 
    ![](assets/social_twitter_service_007.png)
 
