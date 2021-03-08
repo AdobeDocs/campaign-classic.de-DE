@@ -7,10 +7,10 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 translation-type: tm+mt
-source-git-commit: d1130691e40c0cac183db37a4c0b410d00bb696a
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 100%
+source-wordcount: '143'
+ht-degree: 90%
 
 ---
 
@@ -28,4 +28,4 @@ Nach dem Abruf werden die Ereignisse von den technischen Workflows auf die Echtz
 
 >[!NOTE]
 >
->Auf den Ausführungsinstanzen dürfen die Ordner **[!UICONTROL Echtzeitereignisse]** oder **[!UICONTROL Batch-Ereignisse]** nicht als Ansichten festgelegt werden, da dies zu Problemen mit [Zugriffsrechten](../../platform/using/access-management.md#about-permissions) führen könnte. Weitere Informationen zum Festlegen eines Ordners als Ansicht finden Sie unter dem Abschnitt [Über Ansichten](../../platform/using/access-management.md#about-views).
+>Auf den Ausführungsinstanzen dürfen die Ordner **[!UICONTROL Echtzeitereignisse]** oder **[!UICONTROL Batch-Ereignisse]** nicht als Ansichten festgelegt werden, da dies zu Problemen mit Zugriffsrechten führen könnte. Weitere Informationen zum Festlegen eines Ordners als Ansicht finden Sie in [diesem Abschnitt](../../platform/using/access-management-folders.md).
