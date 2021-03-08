@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# Filtern von Schemata{#filtering-schemas}
+# Schema filtern{#filtering-schemas}
 
 ## System-Filter {#system-filters}
 
@@ -63,7 +63,7 @@ Diese Filter werden auf der Haupt-**element**-Ebene der Schema eingegeben und k�
 >
 >Wenn kein Filter angegeben ist, verfügen alle Operatoren über Lese- und Schreibberechtigungen für das Schema.
 
-## Integrierte Schemas schützen {#protecting-built-in-schemas}
+## Integrierte Protect-Schema {#protecting-built-in-schemas}
 
 Standardmäßig sind integrierte Schema nur mit WRITE-Berechtigungen für Benutzer mit ADMINISTRATION-Rechten verfügbar:
 
@@ -102,7 +102,7 @@ Standardmäßig sind integrierte Schema nur mit WRITE-Berechtigungen für Benutz
 >
 >READ- und WRITE-Berechtigungen für das **xtk:sessionInfo**-Schema sind nur für das interne Konto einer Adobe Campaign-Instanz verfügbar.
 
-## Ändern der Filter von integrierten Schemas {#modifying-system-filters-of-built-in-schemas}
+## Ändern Sie die Filter der integrierten Schema {#modifying-system-filters-of-built-in-schemas}
 
 Sie können weiterhin die Filter der vordefinierten Schema ändern, die aufgrund von Kompatibilitätsproblemen mit älteren Versionen standardmäßig geschützt sind.
 
