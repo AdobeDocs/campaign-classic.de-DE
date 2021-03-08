@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werd
 
 ## Instanz-Monitoring-Dashboard {#instance-monitoring-dashboard}
 
-Auf das Instanz-Monitoring-Dashboard können Sie über die Rubrik **[!UICONTROL Monitoring]** zugreifen.
+Das Dashboard zur Instanzüberwachung kann über die Registerkarte **[!UICONTROL Monitoring]** aufgerufen werden.
 
 ![](assets/monitoring_technical_workflows1.png)
 
