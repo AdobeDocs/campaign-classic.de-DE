@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 100%
@@ -83,7 +83,7 @@ Das allgemeine Layout von Adobe Campaign-Explorer wird in [Adobe Campaign-Explor
 >
 >Durch Klick auf **[!UICONTROL Profile und Zielgruppen > Empfänger]** haben Sie Zugriff auf eine erweiterte Ansicht der Empfängerliste. Es besteht die Möglichkeit, sie Ihren Bedürfnissen entsprechend anzupassen. Sie können beispielsweise Spalten hinzufügen oder löschen und ihre Reihenfolge festlegen, Daten sortieren etc. Die Konfiguration der Listenanzeige wird unter [Adobe Campaign-Explorer verwenden](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) beschrieben.
 >
->Sie können auch Empfängeransichten definieren. Weitere Informationen zu dieser Funktion finden Sie unter [Ordner und Ansichten](../../platform/using/access-management.md#folders-and-views).
+>Sie können auch Empfängeransichten definieren. Weitere Informationen zu dieser Funktion finden Sie unter [Ordner und Ansichten](../../platform/using/access-management-folders.md).
 
 ## Aktive Profile {#active-profiles}
 
