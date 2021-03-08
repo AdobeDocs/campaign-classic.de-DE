@@ -7,7 +7,7 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
@@ -95,7 +95,7 @@ Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und 
 
    ![](assets/platform_dashboard_operator_subscr_forums.png)
 
-   Weitere Informationen zu persönlichen Dashboards finden Sie in [diesem Abschnitt](../../platform/using/access-management.md#operators).
+   Weitere Informationen zu persönlichen Dashboards finden Sie in [diesem Abschnitt](../../platform/using/access-management-operators.md).
 
 * Um die Abonnenten eines Forums anzuzeigen, klicken Sie auf **[!UICONTROL Abonnentenliste für dieses Forum]** oberhalb der Nachrichtenliste.
 
