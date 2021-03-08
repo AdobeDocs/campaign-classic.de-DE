@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 43037b2b6b4e3b42f4b666d85a664b9fb117a015
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2843'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Um den TIMESTAMP MIT TIMEZONE-Modus zu verwenden, müssen Sie auch die Option **
 
 ### Oracle {#oracle}
 
-Wenn Sie einen **ORA 01805**-Fehler nach der Aktualisierung erhalten, bedeutet dies, dass die Oracle-Zeitzonendateien zwischen dem Anwendungsserver und dem Datenbankserver nicht synchronisiert sind. Um sie erneut zu synchronisieren, führen Sie die folgenden Schritte aus:
+Wenn Sie während der Aktualisierung den Fehler **ORA 01805** erhalten, bedeutet dies, dass die Oracle-Zeitzonendateien zwischen dem Anwendungsserver und dem Datenbankserver nicht synchronisiert sind. Um sie erneut zu synchronisieren, führen Sie die folgenden Schritte aus:
 
 1. Führen Sie den folgenden Befehl aus, um die verwendete Zeitzonendatei zu identifizieren:
 
@@ -58,7 +58,7 @@ Wenn Sie einen **ORA 01805**-Fehler nach der Aktualisierung erhalten, bedeutet d
 
 Weitere Informationen finden Sie unter: [https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004](https://docs.oracle.com/cd/E11882_01/server.112/e10729/ch4datetime.htm#NLSPG004).
 
-Eine Fehlausrichtung der Zeitzone zwischen Client und Server kann ebenfalls zu Verzögerungen führen. Daher empfehlen wir, dieselbe Version der Oracle-Bibliothek auf Client- und Serverseite zu verwenden. Beide Zeitzonen müssen gleich sein.
+Eine Fehlausrichtung der Zeitzone zwischen Client und Server kann ebenfalls zu Verzögerungen führen. Deshalb empfehlen wir, dieselbe Oracle-Bibliothek auf Client- und Serverseite zu verwenden. Beide Zeitzonen müssen gleich sein.
 
 So prüfen Sie, ob sich beide Seiten in denselben Zeitzonen befinden:
 
@@ -104,7 +104,7 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Das **internal**-Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier) und [diesem Abschnitt](../../platform/using/access-management.md#about-permissions).
+>Das **internal**-Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier) und [diesem Abschnitt](../../platform/using/access-management.md).
 
 ### Neue Funktionen in v7 {#new-features-in-v7}
 
@@ -456,8 +456,7 @@ Es gibt drei Möglichkeiten, einen Konflikt zu lösen:
 * **[!UICONTROL Aktuelle Version]** beibehalten: bedeutet, dass die Aktualisierung abgelehnt wird.
 
    >[!IMPORTANT]
-   >
-   >Wenn Sie diesen Auflösungsmodus auswählen, laufen Sie Gefahr, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur den Betreibern von Fachleuten vorzubehalten.
+   Wenn Sie diesen Auflösungsmodus auswählen, laufen Sie Gefahr, Patches in der neuen Version zu verlieren. Es wird daher dringend empfohlen, diese Option nicht zu verwenden oder nur den Betreibern von Fachleuten vorzubehalten.
 
 Wenn Sie den Konflikt manuell lösen möchten, gehen Sie wie folgt vor:
 
@@ -503,14 +502,12 @@ $(XTK_INSTALL_DIR)/tomcat-8/lib/el-api.jar
 In v7 wurde der Angebot-Inhalt verschoben. In Version 6.02 befanden sich die Inhalte in jedem Repräsentations-Schema (**nms:emailOfferView**). In v7 befindet sich der Inhalt jetzt im Angebot-Schema. Nach der Aktualisierung ist der Inhalt daher nicht mehr in der Oberfläche sichtbar. Nach der Aktualisierung müssen Sie den Inhalt des Angebots neu erstellen oder ein Skript entwickeln, das den Inhalt automatisch vom Schema der Darstellung in das Schema des Angebots verschiebt.
 
 >[!IMPORTANT]
->
->Wenn einige Versand, die konfigurierte Angebot verwenden, nach der Migration gesendet werden sollen, müssen Sie alle diese Versand in v7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der eigentlichen 6.1-Migration abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
+Wenn einige Versand, die konfigurierte Angebot verwenden, nach der Migration gesendet werden sollen, müssen Sie alle diese Versand in v7 löschen und neu erstellen. Wenn dies nicht möglich ist, wird ein &quot;Kompatibilitätsmodus&quot;angeboten. Dieser Modus wird nicht empfohlen, da Sie nicht von allen neuen Funktionen in Interaction v7 profitieren werden. Dies ist ein Übergangsmodus, mit dem Sie laufende Kampagnen vor der eigentlichen 6.1-Migration abschließen können. Für weitere Informationen zu diesem Modus kontaktieren Sie uns bitte.
 
 Ein Beispiel für ein Bewegungsskript (**interactionTo610_full_XX.js**) ist im Ordner **migration** im Adobe Campaign v7 verfügbar. Diese Datei zeigt ein Beispiel eines Skripts für einen Client, das eine einzelne E-Mail-Darstellung pro Angebot verwendet (die Felder **[!UICONTROL htmlSource]** und **[!UICONTROL textSource]**). Der in der Tabelle **NmsEmailOfferView** enthaltene Inhalt wurde in die Tabelle &quot;Angebot&quot;verschoben.
 
 >[!NOTE]
->
->Die Verwendung dieses Skripts erlaubt Ihnen nicht, die Optionen &quot;Content-Management&quot;und &quot;Renderfunktionen&quot;zu nutzen. Um von diesen Funktionen profitieren zu können, müssen Sie die Katalogfunktionen, insbesondere die Angebot zum Angebot und die Konfigurationsräume, überdenken.
+Die Verwendung dieses Skripts erlaubt Ihnen nicht, die Optionen &quot;Content-Management&quot;und &quot;Renderfunktionen&quot;zu nutzen. Um von diesen Funktionen profitieren zu können, müssen Sie die Katalogfunktionen, insbesondere die Angebot zum Angebot und die Konfigurationsräume, überdenken.
 
 ```
 loadLibrary("/nl/core/shared/nl.js");
@@ -609,8 +606,7 @@ Im Folgenden finden Sie die Vorgehensweise, nach der Sie den Angebot-Inhalt vers
 1. Durchführen umfassender Tests.
 
    >[!NOTE]
-   >
-   >Die Namen von Kategorien und Angeboten online werden nach der Live-Übertragung geändert. Aktualisieren Sie auf dem eingehenden Kanal alle Verweise auf Angebot und Kategorien.
+   Die Namen von Kategorien und Angeboten online werden nach der Live-Übertragung geändert. Aktualisieren Sie auf dem eingehenden Kanal alle Verweise auf Angebot und Kategorien.
 
 ## Berichte {#reports}
 
@@ -638,8 +634,7 @@ Es gibt zwei Webanwendungsfamilien:
 Genau wie bei Berichten (siehe [Berichte](#reports)) müssen Sie JavaScript bei Bedarf überprüfen und anpassen. Wenn Sie vom blauen Banner der Version 7 (mit den Universen) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen. Wenn Ihr JavaScript-Code funktioniert, können Sie die Rendering-Engine v6.x auswählen. Ist dies nicht der Fall, können Sie die v6.0-Rendering-Engine verwenden, während Sie Ihren Code anpassen, und dann die v6.x-Rendering-Engine verwenden.
 
 >[!NOTE]
->
->Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
+Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
 
 Webanwendung Verbindungsmethoden wurden in v7 geändert. Wenn in Ihren identifizierten Webanwendungen Verbindungsprobleme auftreten, müssen Sie die Optionen **allowUserPassword** und **sessionTokenOnly** in der Datei **serverConf.xml** vorübergehend aktivieren. Ändern Sie nach der Aktualisierung die folgenden Optionswerte:
 
@@ -672,8 +667,7 @@ sessionTokenOnly="false"
 Wenn Probleme auftreten, veröffentlichen Sie die Webanwendung erneut. Wenn das Problem weiterhin besteht, können Sie die v6.0-Rendering-Engine auswählen. Da Sie kein JavaScript hinzugefügt haben, können Sie die v6.x Rendering Engine auswählen und von den neuen Funktionen profitieren.
 
 >[!NOTE]
->
->Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
+Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
 
 ## Red-Hat {#red-hat}
 
