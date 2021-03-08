@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '3901'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Die Aufgaben können in der Aufgabenliste und über das Dashboard einer Kampagne
 
 Aufgaben werden Kampagnen zugeordnet und können von anderen Aufgaben abhängig sein. Jede Aufgabe weist einen Status, eine Priorität, einen geplanten Zeitaufwand sowie eventuell verbundene Kosten auf.
 
-Alle Aufgaben sind in einer Liste gruppiert, auf die über die Rubrik **Kampagnen** zugegriffen werden kann. Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
+Alle Aufgaben sind in einer Liste gruppiert, auf die über die Registerkarte **Kampagnen** zugegriffen werden kann. Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
 
 Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden.
 
@@ -35,7 +35,7 @@ Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden
 
 ### Aufgaben anzeigen {#displaying-tasks}
 
-Eine Liste der Aufgaben kann über die Rubrik **[!UICONTROL Kampagnen]** angezeigt werden.
+Die Aufgaben werden in der Liste Aufgabe angezeigt, auf die über die Registerkarte **[!UICONTROL Kampagnen]** zugegriffen werden kann.
 
 ![](assets/s_ncs_user_task_edit_view.png)
 
@@ -57,7 +57,7 @@ Klicken Sie auf eine Aufgabe, um sie zu bearbeiten.
 
 ## Aufgabenerstellung {#creating-a-new-task}
 
-Um eine Aufgabe zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Aufgaben]** der Kampagnen-Rubrik und wählen Sie **[!UICONTROL Erstellen]**.
+Um eine Aufgabe zu erstellen, klicken Sie auf der Registerkarte **[!UICONTROL Aufgaben]** auf den Link **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Erstellen]**.
 
 ![](assets/s_ncs_user_task_create_new.png)
 
@@ -436,6 +436,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
