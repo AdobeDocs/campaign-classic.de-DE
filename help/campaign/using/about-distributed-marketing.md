@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1175'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -83,7 +83,7 @@ Um an einer Kampagne teilnehmen zu können, bestellt die Lokalstelle den entspre
 
 ## Arbeitsbereich     {#workspace}
 
-Die Kampagnenkit-Liste ist über die Rubrik **Kampagnen** zugänglich: Klicken Sie dort auf **[!UICONTROL Kampagnenkits]**.
+Die Liste von Kampagne-Paketen kann über die Registerkarte **Kampagnen** aufgerufen werden: Klicken Sie auf den Link **[!UICONTROL Kampagne packages]**.
 
 ![](assets/mkg_dist_home_local_op.png)
 
