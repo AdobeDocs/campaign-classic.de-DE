@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '834'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Gehen Sie wie folgt vor, um ein Angebot zu erstellen:
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Angebote]** in der Rubrik **[!UICONTROL Kampagnen]**.
+1. Wechseln Sie zur Registerkarte **[!UICONTROL Kampagnen]** und klicken Sie auf den Link **[!UICONTROL Angebot]**.
 
    ![](assets/offer_create_001.png)
 
