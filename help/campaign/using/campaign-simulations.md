@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 100%
+source-wordcount: '1373'
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Mithilfe der Simulation können die voraussichtlichen Auswirkungen von Sendungen
 
 Folgen Sie den nachstehenden Etappen, um eine Simulation zu erstellen:
 
-1. Klicken Sie in der Rubrik **[!UICONTROL Kampagnen]** im Abschnitt **[!UICONTROL Erstellen]** auf den Link **[!UICONTROL Andere Optionen]** und wählen Sie **[!UICONTROL Simulation]** aus.
+1. Öffnen Sie die Registerkarte **[!UICONTROL Kampagnen]**, klicken Sie auf den Link **[!UICONTROL Mehr]** im Abschnitt **[!UICONTROL Erstellen]** und wählen Sie die Option **[!UICONTROL Simulation]**.
 
    ![](assets/simu_campaign_opti_01.png)
 
