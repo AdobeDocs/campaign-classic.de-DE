@@ -7,7 +7,7 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 translation-type: tm+mt
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 96%
@@ -25,7 +25,7 @@ Des Weiteren müssen Sie über die spezifischen Berechtigungen verfügen, die de
 
 Die Verwaltung der Benutzer sowie ihrer Rechte wird in diesem [Abschnitt](../../platform/using/access-management.md) erläutert.
 
-## Benutzergruppen {#operator-groups}
+## Benutzergruppen {#operator-groups-wf}
 
 Folgende Benutzergruppen sind im Zusammenhang mit Workflows von Bedeutung:
 
