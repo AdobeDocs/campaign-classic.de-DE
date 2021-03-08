@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: add0efb4efd5a37129c649b942799622947f3143
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '4112'
 ht-degree: 99%
@@ -287,7 +287,7 @@ Es wurde ein Anwendungsfall hinzugefügt, der beschreibt, wie ein dynamisches An
 
 Ein neuer Abschnitt mit den verschiedenen Sprachen, die in Adobe Campaign verfügbar sind, ist jetzt verfügbar. [Mehr dazu](../../platform/using/adobe-campaign-workspace.md#languages)
 
-Die Seite zu Richtlinien für die Zugriffsverwaltung enthält jetzt zusätzliche Informationen zu spezifischen Berechtigungen. [Mehr dazu](../../platform/using/access-management.md#named-rights)
+Die Seite zu Richtlinien für die Zugriffsverwaltung enthält jetzt zusätzliche Informationen zu spezifischen Berechtigungen. [Mehr dazu](../../platform/using/access-management-named-rights.md)
 
 ## Februar 2020 {#february-2020}
 
@@ -405,7 +405,7 @@ Den Abschnitten [Multiplexing des Mid-Sourcing-Servers](../../installation/using
 
 Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie die beim Senden einer E-Mail verwendete Zeichencodierung erzwungen wird. [Mehr dazu](../../delivery/using/sending-messages.md#character-encoding)
 
-Der Abschnitt „Zugriffsverwaltung“ wurde mit dem **Datenschutzrecht** aktualisiert. [Mehr dazu](../../platform/using/access-management.md#named-rights)
+Der Abschnitt „Zugriffsverwaltung“ wurde mit dem **Datenschutzrecht** aktualisiert. [Mehr dazu](../../platform/using/access-management-named-rights.md)
 
 Es wurden Informationen hinzugefügt, die festlegen, dass der Inhalt von Personalisierungsfeldern 1024 Zeichen nicht überschreiten darf. [Mehr dazu](../../delivery/using/personalization-fields.md)
 
