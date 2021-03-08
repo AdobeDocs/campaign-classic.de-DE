@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -27,11 +27,11 @@ Unmittelbar nach der Herstellung der Verbindung mit Adobe Campaign gelangen Sie 
 
 ![](assets/campaign_global_view.png)
 
-Klicken Sie auf die Links in der Navigationsleiste, um auf die verschiedenen Rubriken zuzugreifen.
+Klicken Sie auf die Links in der Navigationsleiste, um auf die verschiedenen Funktionen zuzugreifen.
 
-Kampagnenelemente befinden sich in der Rubrik **[!UICONTROL Kampagnen]**: Hier können Sie einen Überblick über die Marketing-Programme und Kampagnen sowie deren Untergruppen sehen. Ein Marketing-Programm besteht aus Kampagnen, die aus Sendungen, Aufgaben, verknüpften Ressourcen usw. bestehen. Im Zusammenhang mit dem Management von Marketing-Kampagnen mithilfe von Campaign sind die Informationen über Sendungen, Budgets, Validierungsverantwortliche und verlinkte Dokumente in den Kampagnen zu finden.
+Kampagnen finden Sie auf der Registerkarte **[!UICONTROL Kampagnen]**: hier können Sie einen Überblick über die Marketing-Programm und -Kampagnen sowie deren Untergruppen erhalten. Ein Marketing-Programm besteht aus Kampagnen, die aus Sendungen, Aufgaben, verknüpften Ressourcen usw. bestehen. Im Zusammenhang mit dem Management von Marketing-Kampagnen mithilfe von Campaign sind die Informationen über Sendungen, Budgets, Validierungsverantwortliche und verlinkte Dokumente in den Kampagnen zu finden.
 
-Der Navigationsblock der Rubrik **[!UICONTROL Kampagnen]** bietet je nach den in der Instanz installierten Modulen unterschiedliche Schnellzugriffe. Beispiele für Zugriffsmöglichkeiten:
+Der **[!UICONTROL Browsing]**-Block der Registerkarte **[!UICONTROL Kampagnen]** enthält je nach installierten Instanzmodulen verschiedene Einträge. Sie können beispielsweise auf Folgendes zugreifen:
 
 * **Kampagnenkalender**: Kalender der Pläne, Marketing-Programme, Sendungen und Kampagnen . Siehe [Kampagnenkalender](#campaign-calendar).
 * **Kampagnen**: Zugriff auf alle in Marketingprogrammen enthaltene Kampagnen;
@@ -46,7 +46,7 @@ Der Navigationsblock der Rubrik **[!UICONTROL Kampagnen]** bietet je nach den in
 
 ### Kampagnenkalender {#campaign-calendar}
 
-Jede Kampagne gehört zu einem Programm, das wiederum Teil eines Plans ist. Pläne, Programme und ihre Kampagnen sind über den Menüpunkt **[!UICONTROL Kampagnenkalender]** der Rubrik **Kampagnen** zugänglich.
+Jede Kampagne gehört zu einem Programm, das wiederum zu einem Plan gehört. Der Zugriff auf Pläne, Programme und Kampagnen erfolgt über das Menü **[!UICONTROL Kampagne]** auf der Registerkarte **Kampagnen**.
 
 Um einen Plan, ein Programm, eine Kampagne oder einen Versand zu bearbeiten, klicken Sie auf den jeweiligen Titel im Kalender und anschließend auf den Link **[!UICONTROL Öffnen...]**. Das gewünschte Element öffnet sich in einem neuen Tab:
 
@@ -95,7 +95,7 @@ Kampagnen sind über den Kampagnenkalender, über den Tab **[!UICONTROL Planung]
    ![](assets/campaign_op_edit.png)
 
 1. Über den Tab **[!UICONTROL Planung]** des Programms kann die Kampagne auf die gleiche Weise wie im Kalender geöffnet werden.
-1. Über den Link **[!UICONTROL Kampagnen]** in der gleichnamigen Rubrik wird eine Liste aller Kampagnen aufgerufen. Klicken Sie auf den Namen einer Kampagne, um diese zu öffnen.****
+1. Klicken Sie über den Link **[!UICONTROL Kampagnen]** der Registerkarte **[!UICONTROL Kampagnen]** auf den Namen der Kampagne, die Sie bearbeiten möchten.
 
    ![](assets/campaign_edit_from_list.png)
 
