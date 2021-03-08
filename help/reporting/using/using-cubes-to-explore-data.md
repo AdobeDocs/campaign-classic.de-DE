@@ -7,10 +7,10 @@ audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '991'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen
 
 ### 1. Schritt - Erstellung eines Cube-basierten Berichts {#step-1---creating-a-report-based-on-a-cube}
 
-Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]** der **[!UICONTROL Berichte]**-Rubrik und wählen Sie den zu verwendenden Cube.
+Um einen Bericht auf der Grundlage einer Cube zu erstellen, klicken Sie auf der Registerkarte **[!UICONTROL Berichte]** auf die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie die gewünschte Cube aus.
 
 Der Prozess wird hier detailliert beschrieben: [Cube-basierten Bericht erstellen](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
@@ -152,7 +152,7 @@ Gehen Sie wie folgt vor, um eine Population in einer Liste zusammenzufassen:
 
    Sie können den Inhalt des Warenkorbs beibehalten oder löschen.
 
-   Die entsprechende Liste ist über die Rubrik **[!UICONTROL Profile und Zielgruppen]** zugänglich.
+   Der Zugriff auf die entsprechende Liste erfolgt über die Registerkarte **[!UICONTROL Profil und Zielgruppen]**.
 
    ![](assets/s_advuser_cube_in_report_config_02g.png)
 
