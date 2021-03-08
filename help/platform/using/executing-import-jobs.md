@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '3204'
-ht-degree: 100%
+source-wordcount: '3206'
+ht-degree: 99%
 
 ---
 
@@ -291,7 +291,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
       >[!NOTE]
       >
-      >Der Standardordner des Benutzers entspricht dem ersten Ordner, für den der Benutzer Schreibzugriff hat. Siehe [Zugriffsverwaltungsordner](../../platform/using/access-management.md#folder-access-management).
+      >Der Standardordner des Benutzers entspricht dem ersten Ordner, für den der Benutzer Schreibzugriff hat. Weitere Informationen finden Sie unter [Ordnerzugriffsverwaltung](../../platform/using/access-management-folders.md).
 
       Klicken Sie zur Auswahl des Importordners auf den Pfeil rechts des **[!UICONTROL Ordner]**-Feldes und wählen Sie den gewünschten Ordner aus. Über das Symbol **[!UICONTROL Verknüpftes Element auswählen]** können Sie den Navigationsbaum in einem neuen Fenster anzeigen und einen neuen Ordner erstellen.
 
