@@ -7,10 +7,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Der Zugriff auf den Bericht kann auf einen bestimmten Kontext oder eine Platzier
 
 * **[!UICONTROL Einfach-Auswahl]**: Der Bericht ist nur bei Auswahl einer bestimmten Entität zugänglich.
 * **[!UICONTROL Mehrfach-Auswahl]**: Der Bericht ist bei Auswahl mehrerer Entitäten zugänglich.
-* **[!UICONTROL Allgemein]**: Der Bericht ist über die Liste der verfügbaren Berichte in der Berichte-Rubrik zugänglich.
+* **[!UICONTROL Global]** : Der Zugriff auf den Bericht erfolgt über die Liste der verfügbaren Berichte in der  **** Reportstab.
 
 ### Anzeigereihenfolge {#display-sequence}
 
@@ -63,7 +63,7 @@ Der Bericht kann auch mit bestimmten Benutzern oder Benutzergruppen geteilt werd
 
 ### Filteroptionen definieren {#defining-the-filtering-options}
 
-In der Rubrik **[!UICONTROL Berichte]** der Startseite werden alle in der Plattform verfügbaren Berichte anzeigt, auf die der angemeldete Benutzer Zugriff hat.
+Auf der Registerkarte **[!UICONTROL Berichte]** werden alle verfügbaren Berichte auf der Plattform angezeigt, für die der verbundene Operator über eine Zugriffsberechtigung verfügt.
 
 Sie werden standardmäßig nach Relevanz sortiert, es stehen jedoch andere Filtertypen zur Verfügung: nach Alphabet, Alter etc.
 
