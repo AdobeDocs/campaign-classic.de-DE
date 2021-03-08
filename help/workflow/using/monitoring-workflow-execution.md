@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 100%
+source-wordcount: '2082'
+ht-degree: 97%
 
 ---
 
@@ -111,7 +111,7 @@ Die Arbeitstabellen des Workflows werden automatisch gelöscht, wenn der Workflo
 
 ## Fehler beheben {#managing-errors}
 
-Wenn ein Fehler auftritt, wird der Workflow ausgesetzt und die bei Fehlerauftritt ausgeführte Aktivität blinkt rot. Wie unten dargestellt, ist es in der Workflow-Übersicht (Rubrik **[!UICONTROL Monitoring]** > Schaltfläche **[!UICONTROL Workflows]**) möglich, nur fehlgeschlagene Workflows anzuzeigen.
+Wenn ein Fehler auftritt, wird der Workflow angehalten und die Aktivität, die beim Auftreten des Fehlers ausgeführt wird, wird rot angezeigt. In der Workflow-Übersicht können Sie unter dem Link **[!UICONTROL Überwachung]** - **[!UICONTROL Workflows]** nur Workflows mit Fehlern anzeigen, wie unten dargestellt.
 
 ![](assets/wf-global-view_filter_only_errors.png)
 
@@ -169,7 +169,7 @@ Es wird daher empfohlen, die Workflow-Ausführung nach Änderungen komplett neu 
 
 Die Seite **[!UICONTROL Monitoring der Instanz]** bietet die Möglichkeit, den Adobe-Campaign-Server zu überwachen. Sie enthält die Liste fehlgeschlagener Workflows und Sendungen.
 
-Auf diese Seite können Sie ausgehend von der Startseite über die Rubrik **[!UICONTROL Monitoring]** zugreifen. Klicken Sie auf die Schaltfläche **[!UICONTROL Übersicht]**, um sowohl Sendungen als auch Workflows anzuzeigen.
+Um auf diese Seite zuzugreifen, gehen Sie zur Registerkarte **[!UICONTROL Überwachung]** und klicken Sie auf den Link **[!UICONTROL Allgemeine Ansicht]**.
 
 ![](assets/wf-monitoring_from-homepage.png)
 
