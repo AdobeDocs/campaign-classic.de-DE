@@ -7,15 +7,15 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 
-# Einschränken der PII-Ansicht{#restricting-pii-view}
+# PI-Ansicht{#restricting-pii-view} einschränken
 
 ## Übersicht {#overview}
 
