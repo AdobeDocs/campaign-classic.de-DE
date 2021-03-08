@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 translation-type: tm+mt
-source-git-commit: 67364f80ddc51d4792e73bbf39d388bdf4297005
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -199,7 +199,7 @@ Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebot
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Ressourcen sind Marketing-Ressourcen, auf die Sie über die Startseite durch Klick auf die Schaltfläche **[!UICONTROL Ressourcen]** in der Rubrik **[!UICONTROL Kampagnen]** zugreifen können.
+* Die Ressourcen sind Marketing-Ressourcen, die im Dashboard Marketing-Ressource generiert werden, auf das über den Link **[!UICONTROL Resources]** der Registerkarte **[!UICONTROL Kampagnen]** zugegriffen wird.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
