@@ -7,10 +7,10 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -64,7 +64,7 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 
 ## Angebote simulieren {#perform-an-offer-simulation}
 
-1. Klicken Sie in der Rubrik **[!UICONTROL Profile und Zielgruppen]** auf die Schaltfläche **[!UICONTROL Simulationen]** und anschließend auf **[!UICONTROL Erstellen]**.
+1. Klicken Sie auf der Registerkarte **[!UICONTROL Profile und Zielgruppen]** auf den Link **[!UICONTROL Simulationen]** und klicken Sie dann auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
    ![](assets/offer_simulation_001.png)
 
