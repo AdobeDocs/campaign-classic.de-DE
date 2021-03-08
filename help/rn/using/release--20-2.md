@@ -7,7 +7,7 @@ audience: rns
 content-type: reference
 topic-tags: campaign-release-notes, latest-release-notes
 translation-type: tm+mt
-source-git-commit: 571821ce775a7c354d01404d14faee8d2a21c170
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 98%
@@ -195,7 +195,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 * Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [Mehr dazu](../../delivery/using/inbox-rendering.md).
 
-* Zur leichteren Unterscheidung von Ansichten und Ordnern wurde die Farbe der Ansichtnamen von dunkelblau in dunkeltürkis geändert. [Mehr dazu](../../platform/using/access-management.md#about-views)
+* Zur leichteren Unterscheidung von Ansichten und Ordnern wurde die Farbe der Ansichtnamen von dunkelblau in dunkeltürkis geändert. [Mehr dazu](../../platform/using/access-management-folders.md)
 
 * Campaign Classic kann nun mit Microsoft Dynamics CRM-Konten verbunden werden, die in Großbritannien, Indien und Kanada gehostet werden. Dies gilt für die Bereitstellungstypen &quot;Office 365&quot; und &quot;On-Premise&quot; (Dynamics 2015).
 
