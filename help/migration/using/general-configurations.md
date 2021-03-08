@@ -7,9 +7,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2844'
 ht-degree: 1%
 
 ---
@@ -616,7 +616,7 @@ Alle Standardberichte verwenden derzeit die Render-Engine v6.x. Wenn Sie diesen 
 
 ### Personalisierte Berichte {#personalized-reports}
 
-<!--If you want to have the blue banner from v7 (allowing you access to the universes), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
+<!--If you want to have the blue banner from v7 (allowing you access to the tabs), you must republish reports. If you encounter problems, you can force the v6.0 rendering engine. To do this, go to **[!UICONTROL Properties]** within the report, click **[!UICONTROL Rendering]** and choose the **[!UICONTROL Version 6.0 (Flash & OpenOffice)]** rendering engine.
 
 ![](assets/migration_reports_1.png)
 -->
@@ -631,7 +631,7 @@ Es gibt zwei Webanwendungsfamilien:
 
 ### Identifizierte Webanwendungen {#identified-web-applications}
 
-Genau wie bei Berichten (siehe [Berichte](#reports)) müssen Sie JavaScript bei Bedarf überprüfen und anpassen. Wenn Sie vom blauen Banner der Version 7 (mit den Universen) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen. Wenn Ihr JavaScript-Code funktioniert, können Sie die Rendering-Engine v6.x auswählen. Ist dies nicht der Fall, können Sie die v6.0-Rendering-Engine verwenden, während Sie Ihren Code anpassen, und dann die v6.x-Rendering-Engine verwenden.
+Ebenso wie bei Berichten ([Weitere Informationen](#reports)) müssen Sie, wenn Sie JavaScript hinzugefügt haben, bei Bedarf überprüfen und anpassen. Wenn Sie vom blauen Banner der Version 7 (mit den blauen Registerkarten) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen. Wenn Ihr JavaScript-Code funktioniert, können Sie die Rendering-Engine v6.x auswählen. Ist dies nicht der Fall, können Sie die v6.0-Rendering-Engine verwenden, während Sie Ihren Code anpassen, und dann die v6.x-Rendering-Engine verwenden.
 
 >[!NOTE]
 Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
