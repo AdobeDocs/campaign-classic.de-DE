@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 100%
+source-wordcount: '239'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich a
 
 >[!NOTE]
 >
->Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Siehe [Ordner und Ansichten](../../platform/using/access-management.md#folders-and-views).
+>Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Weitere Informationen finden Sie unter [Ordner und Ansichten](../../platform/using/access-management-folders.md).
 
 ## Empfänger verschieben {#moving-recipients}
 
