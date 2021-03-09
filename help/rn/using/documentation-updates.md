@@ -7,10 +7,10 @@ audience: rns
 content-type: reference
 topic-tags: latest-documentation-updates
 translation-type: tm+mt
-source-git-commit: af2707c6d86215ff94911e670a1eb080572de23c
+source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
 workflow-type: tm+mt
-source-wordcount: '4171'
-ht-degree: 98%
+source-wordcount: '4190'
+ht-degree: 97%
 
 ---
 
@@ -22,6 +22,8 @@ Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
 
 ## März 2021 {#march-2021}
+
+Es wurde ein neuer Abschnitt mit Best Practices und Überprüfungen für Sicherheit und Datenschutz hinzugefügt. [Mehr dazu](../../installation/using/get-started-security-privacy.md)
 
 Das [Kapitel zur Verwaltung von Berechtigungen](../../platform/using/access-management.md) wurde verbessert und in verschiedene Abschnitte unterteilt, einschließlich Details zu [Operatoren](../../platform/using/access-management-operators.md) , [Benutzergruppen](../../platform/using/access-management-groups.md) , [Spezifische Berechtigungen](../../platform/using/access-management-named-rights.md) und [Ordnerverwaltung](../../platform/using/access-management-folders.md).
 
