@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
+source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -41,7 +41,7 @@ Zur Konfiguration der Verfolgung muss Ihre Instanz deklariert und bei den Tracki
 
 **Speichern der Verfolgung**
 
-Sobald die Verfolgung konfiguriert und die URLs ausgefüllt sind, muss der Tracking-Server registriert werden. [Mehr dazu](../../installation/using/deploying-an-instance.md#tracking-configuration#saving-tracking)
+Sobald die Verfolgung konfiguriert und die URLs ausgefüllt sind, muss der Tracking-Server registriert werden. [Mehr dazu](../../installation/using/deploying-an-instance.md#saving-tracking)
 
 ## Nachrichten-Tracking {#message-tracking}
 
@@ -103,7 +103,7 @@ Dieser Bericht kombiniert die Schlüsselindikatoren zur Verfolgung des Verhalten
 
 Die verschiedenen Tabellen geben Ihnen die Liste der in den verschiedenen Berichten verwendeten Indikatoren und ihre Berechnungsformel je nach Versand-Typ. [Mehr dazu](../../reporting/using/indicator-calculation.md)
 
-## Tracking-Fehlerbehebung {#tracking-troubleshooting}
+## Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
