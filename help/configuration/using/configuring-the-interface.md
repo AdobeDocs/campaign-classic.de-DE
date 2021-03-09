@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 3%
@@ -70,7 +70,7 @@ Wenn Sie ein neues Formular erstellen, können Sie die Daten der Tabelle für de
 
    >[!NOTE]
    >
-   >Weitere Informationen zu den Typdateien **navtree** finden Sie auf [dieser Seite](../../configuration/using/about-navigation-hierarchy.md).
+   >Weitere Informationen zu den Typdateien **navtree** finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
    Im aktuellen Beispiel muss die Datei **navtree** auf dem Schema **cus:single** basieren und daher das folgende Formular haben:
 
