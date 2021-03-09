@@ -7,15 +7,19 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 translation-type: tm+mt
-source-git-commit: 04b8287dba00adbc391d611cbaf63b36a4bc3d10
+source-git-commit: 4a17b25516bd9cec409a16cff1e336c13f0df5a4
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1212'
 ht-degree: 2%
 
 ---
 
 
-# Konfiguration{#configuration}
+# Kampagne Explorer-Navigationsstruktur konfigurieren{#configuration}
+
+Als Expertenbenutzer können Sie Ordner in der Explorer-Struktur hinzufügen und anpassen.
+
+Weitere Informationen zu Kampagne Explorer und Navigationshierarchie [finden Sie in diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
 
 Die von der Navigations-Liste verwendeten Ordnertypen werden in einem XML-Dokument beschrieben, das der Grammatik des **xtk:navtree**-Schemas folgt.
 
