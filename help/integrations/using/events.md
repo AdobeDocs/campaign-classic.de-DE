@@ -6,10 +6,10 @@ description: Erfahren Sie, wie Sie Ereignisse für eine benutzerdefinierte Imple
 audience: integrations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
 workflow-type: tm+mt
 source-wordcount: '1205'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -217,7 +217,7 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 >[!NOTE]
 >
->Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../configuration/using/about-navigation-hierarchy.md) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
+>Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationshierarchie](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy). und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
