@@ -9,7 +9,7 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: c256899e9b04c42df1b5938b5b0513079319cd6b
+source-git-commit: 60b4565ec6dc3e7ffc4ffcff69fbcca9fa870614
 workflow-type: tm+mt
 source-wordcount: '2457'
 ht-degree: 60%
@@ -45,18 +45,18 @@ ht-degree: 60%
       + Adobe Campaign-Arbeitsbereich{#campaign-workspace}
          + [Erste Schritte mit der Benutzeroberfläche der Kampagne](platform/using/adobe-campaign-workspace.md)
          + [Listen durchsuchen und anpassen](platform/using/adobe-campaign-ui-lists.md)
-         + Häufig gestellte Fragen {#faq}
-            + [Häufigste Fragen](platform/using/common-questions.md)
-            + [Globale Konzepte](platform/using/faq-key-concepts.md)
-            + [Build-Aktualisierung](platform/using/faq-build-upgrade.md)
-            + [Datenschutz](platform/using/privacy-faq.md)
-            + [Audiences](platform/using/faq-audiences.md)
-            + [Erstellen von Nachrichten](platform/using/faq-designing.md)
-            + [Nachrichten senden](platform/using/faq-messages.md)
-            + [Workflows](platform/using/faq-workflows.md)
-            + [Konfiguration](platform/using/faq-campaign-config.md)
-            + [Berichte](platform/using/faq-reporting.md)
-            + [Entwicklung](platform/using/faq-developers.md)
+      + Häufig gestellte Fragen {#faq}
+         + [Häufigste Fragen](platform/using/common-questions.md)
+         + [Globale Konzepte](platform/using/faq-key-concepts.md)
+         + [Build-Aktualisierung](platform/using/faq-build-upgrade.md)
+         + [Datenschutz](platform/using/privacy-faq.md)
+         + [Audiences](platform/using/faq-audiences.md)
+         + [Erstellen von Nachrichten](platform/using/faq-designing.md)
+         + [Nachrichten senden](platform/using/faq-messages.md)
+         + [Workflows](platform/using/faq-workflows.md)
+         + [Konfiguration](platform/using/faq-campaign-config.md)
+         + [Berichte](platform/using/faq-reporting.md)
+         + [Entwicklung](platform/using/faq-developers.md)
          + [Tutorials](platform/using/tutorials.md)
    + Datenschutz {#privacy}
       + [Datenschutz und Einverständnis](platform/using/privacy-and-recommendations.md)
