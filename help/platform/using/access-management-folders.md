@@ -7,17 +7,17 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 96%
+source-wordcount: '771'
+ht-degree: 90%
 
 ---
 
 
 # Verwalten des Zugriffs auf Ordner{#folder-access-management}
 
-Jedem Ordner des Navigationsbaums sind Schreib-, Lese- und Lösch-Zugriffseigenschaften zugeordnet. Um auf einen Ordner zugreifen zu können, müssen ein Benutzer oder eine Benutzergruppe mindestens über einen Lesezugriff verfügen.
+Jeder Ordner der Explorer-Navigationsstruktur hat Lese-, Schreib- und Löschzugriffsrechte. Um auf eine Datei zugreifen zu können, muss ein Operator oder eine Benutzergruppe zumindest über Lesezugriff verfügen.
 
 ## Berechtigungen in einem Ordner
 
@@ -71,7 +71,7 @@ Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der recht
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-Berechtigungen bezüglich dieser Ordner werden auf die gleiche Weise wie über alle anderen Ordner des Navigationsbaums eingeräumt. Siehe [Zugriffsverwaltungsordner](#folder-access-management).
+Sie können die Navigationsstruktur des Explorers anpassen. Erfahren Sie mehr über Konfigurationsschritte und Best Practices [in diesem Abschnitt](adobe-campaign-workspace.md).
 
 ### Über Ansichten {#about-views}
 
