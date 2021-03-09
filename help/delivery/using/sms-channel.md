@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
+source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
-source-wordcount: '3269'
-ht-degree: 99%
+source-wordcount: '3252'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 ### Erstellen eines externen SMPP-Kontos {#creating-an-smpp-external-account}
 
 Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr externes SMPP-Konto erstellen.
-Weitere Informationen zum SMS-Protokoll und zu den Einstellungen finden Sie in dieser [Technote](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html).
+Weitere Informationen zum SMS-Protokoll und zu den Einstellungen finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -56,7 +56,7 @@ Gehen Sie dazu wie folgt vor:
 
    >[!CAUTION]
    >
-   > Ab Version 20.2 werden ältere Connectoren eingestellt und nicht mehr unterstützt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden. Weiterführende Informationen über das Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/sms-connector.html).
+   > Ab Version 20.2 werden ältere Connectoren eingestellt und nicht mehr unterstützt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden. Weiterführende Informationen über das Migrieren zum empfohlenen Connector finden Sie auf dieser [Seite](../../delivery/using/unsupported-connector-migration.md).
 
 1. Mit der Option **[!UICONTROL Ausführliche SMPP-Protokolle in der Protokolldatei aktivieren]** können Sie den gesamten SMPP-Traffic in Logdateien speichern. Diese Option muss aktiviert sein, um eine Fehlerbehebung beim Connector durchzuführen und einen Vergleich mit dem vom Provider aufgezeichneten Traffic anzustellen.
 
@@ -94,7 +94,7 @@ Gehen Sie dazu wie folgt vor:
 
    Bei gewissen Anbietern ist die Verwendung des Vorzeichens &#39;+&#39; jedoch erforderlich, sodass es ratsam ist, mit Ihrem Anbieter Kontakt aufzunehmen, der Sie bei Bedarf dazu auffordern wird, diese Option zu aktivieren.
 
-   Das Kontrollkästchen **[!UICONTROL TLS über SMPP aktivieren]** ermöglicht die Verschlüsselung von SMPP-Traffic. Weitere Informationen hierzu finden Sie in dieser [Technote](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html).
+   Mit dem Kontrollkästchen **[!UICONTROL TLS über SMPP]** aktivieren können Sie SMPP-Traffic verschlüsseln. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
 
 1. Wenn Sie einen Connector vom Typ **[!UICONTROL Erweitertes allgemeines SMPP]** konfigurieren, können Sie automatische Antworten einrichten.
 
