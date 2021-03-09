@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 9f898e28b981ea4257c9f4b73a579d322ddbba89
+source-git-commit: 3454af2faffacd43fa1ad852529dad175340a237
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Es gibt drei Arten von Anweisungen:
 
 Sie können direkt vom Versand-Assistent getestet werden. Sie gelten für die Content-Vorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
 
-## &lt;>{#<%@-include}
+## &lt;>{#include}
 
 Die folgenden Beispiele gehören zu den am häufigsten verwendeten:
 
@@ -43,7 +43,7 @@ Die folgenden Beispiele gehören zu den am häufigsten verwendeten:
 
 Verwenden Sie die Personalisierungsschaltfläche im Versand-Assistent, um die richtige Syntax zu erhalten.
 
-## &lt;%@ value {#<%@-value}
+## &lt;%@ value {#value}
 
 Diese Anweisung gibt Zugriff auf Parameter des Versands, die für alle Empfänger gleich sind.
 
@@ -62,7 +62,7 @@ Objekt kann sein:
 * &quot;Versand&quot;: für den aktuellen Versand (siehe Einzelheiten und Einschränkungen im Unterabschnitt unten).
 * &quot;provider&quot;: für den aktuellen Versand-Provider/Routing (nms:externalAccount).
 * Ein zusätzliches Skriptobjekt: wenn ein Objekt im Kontext geladen wird über: **Eigenschaften** > **Personalisierung** > **Hinzufügen Objekte im Ausführungskontext**.
-* Element der foreach-Schleife: siehe Abschnitt [Vorhersage](#<%@-foreach) weiter unten.
+* Element der foreach-Schleife: siehe Abschnitt [Vorhersage](#foreach) weiter unten.
 
 ### &quot;Versand&quot;-Objekt {#delivery-object}
 
@@ -82,7 +82,7 @@ Für die Anweisung `<%@ value object="delivery" xpath="@myCustomField" %>` gibt 
 >
 >`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
-### &lt;>{#<%@-value-in-javascript}
+### &lt;>{#value-in-javascript}
 
 Damit der Wert &lt;%@ in Skriptabschnitten verwendet werden kann, werden zwei Sonderobjekte durch &lt;% und %> ersetzt:
 
@@ -96,7 +96,7 @@ Beispiel:
 `<%@ value object='endScript' %> is expanded in something like <% var iMode = 1 if(iMode == 1) { ... } else { ... } %>.
 ```
 
-## &lt;>{#<%@-foreach}
+## &lt;>{#foreach}
 
 Diese Anweisung ermöglicht die Iteration in einem Array von Objekten, die im Versand geladen werden, um einzelne Links zu den Objekten zu verfolgen.
 
