@@ -4,11 +4,11 @@ solution: Campaign Classic
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
-translation-type: ht
-source-git-commit: b5b9e42eca25193cf4d69f654e74a02afd8adca9
-workflow-type: ht
-source-wordcount: '297'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 832d81c02c590afbe933f9ba63accbc0ba82f180
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 100%
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
 ## Neue Funktionen
+
+* **[Aktualisierung des APNs-](technotes/ios-certificate-update.md)**<br/> ZertifikatsAm 29. März 2021 wirkt sich ein APNs-Update auf den iOS-Kanal der Kampagne aus. Sie müssen Ihre Konfiguration aktualisieren, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
 * **[Stellen Sie Verbindungen über IMS/Adobe ID her? Führen Sie ein Upgrade auf die neuesten Builds aus](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS zur Verbindung mit Campaign verwenden, müssen Sie ein Upgrade durchführen, um nach dem** 31. März 2021 **eine Verbindung zu Campaign herstellen zu können.
 
@@ -87,7 +89,6 @@ Zugriff auf häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuch
 | [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Erste Schritte mit Campaign](platform/using/about-adobe-campaign-classic.md) | [Implementierungshandbuch](https://helpx.adobe.com/de/campaign/kb/acc-implementation.html) |
 | [Gold Standard-Upgrade ](https://helpx.adobe.com/de/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
 | [Eingestellte Funktionen](rn/using/deprecated-features.md) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
 | [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) | [Richtlinien für das Monitoring](production/using/monitoring-guidelines.md) |
