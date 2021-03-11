@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 93dc5a16ce4880c132f4f91c72794892b00e7259
+source-git-commit: 87844fae046dff69193d3462c802057499f406ef
 workflow-type: tm+mt
 source-wordcount: '772'
 ht-degree: 11%
@@ -38,16 +38,17 @@ Als Kunde vor Ort/Hybrid müssen Sie auf eine der oben aufgeführten Versionen a
 
 Neueste Versionen der Kampagne enthalten eine Sicherheitskorrektur, die den Schutz vor Problemen mit der serverseitigen Anforderungsfälschung (SSRF) verstärkt. Weiterführende Informationen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html).
 
-### Sind Sie betroffen?
+**Sind Sie betroffen?**
 
 Wenn sich Ihre Umgebung auf einem niedrigeren Build befindet als Kampagne 21.1, werden Sie davon betroffen sein.
 
-## Wie lässt sich das Update durchführen?
+**Wie lässt sich das Update durchführen?**
 
 Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind.
 
 * Als Hybridkunde wird die Adobe die Mid-Sourcing-Instanz auf die neue Version aktualisieren, und es wird dringend empfohlen, auch deren Marketinginstanz zu aktualisieren.
-Der neue Build ist mit mindestens Campaign Classic 17.9 kompatibel. Um Sicherheitslücken zu vermeiden, empfiehlt Adobe jedoch dringend, alle Instanzen auf einen neuen Build zu aktualisieren. 
+
+   Der neue Build ist mit mindestens Campaign Classic 17.9 kompatibel. Um Sicherheitslücken zu vermeiden, empfiehlt Adobe jedoch dringend, alle Instanzen auf einen neuen Build zu aktualisieren. 
 
 * Als lokaler Kunde werden Sie aufgefordert, die Marketing- und Mid-Sourcing-Instanzen auf einen neuen Build zu aktualisieren.
 
@@ -64,13 +65,13 @@ Der neueste Build aus Gold Standard 11 behebt eine Regression, die die Verwendun
 
 ## Verbindung zur Kampagne über das IMS
 
-Adobe Identity Service (IMS) wird ab dem 31. März 2021 keine alten Internet Explorer-Versionen mehr unterstützen. [Mehr dazu](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Kampagne Console wurde aktualisiert, um die Kompatibilität mit IMS sicherzustellen.
+Adobe Identity Service (IMS) wird ab dem 30. Juni 2021 keine alten Internet Explorer-Versionen mehr unterstützen. [Mehr dazu](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Kampagne Console wurde aktualisiert, um die Kompatibilität mit IMS sicherzustellen.
 
-### Sind Sie betroffen?
+**Sind Sie betroffen?**
 
-Wenn Sie über einen Adobe ID](../integrations/using/about-adobe-id.md) über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne [herstellen, ist eine Aktualisierung auf eine der oben aufgeführten neuen Versionen erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 31. März 2021 **eine Verbindung zur Kampagne herstellen können.**
+Wenn Sie über einen Adobe ID](../integrations/using/about-adobe-id.md) über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne [herstellen, ist eine Aktualisierung auf eine der oben aufgeführten neuen Versionen erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
 
-### Wie lässt sich das Update durchführen?
+**Wie lässt sich das Update durchführen?**
 
 Als gehosteter Kunde ist keine Aktion erforderlich: Adobe hat Ihre Instanz(en) bereits auf eine neuere Version aktualisiert.
 
@@ -78,13 +79,13 @@ Als On-Premise-/Hybrid-Kunde müssen Sie auf eine der neueren Versionen aktualis
 
 ## Integration mit Experience Cloud-Triggern
 
-Der veraltete Auth-Authentifizierungsdienst hat das Lebensende erreicht und wird am 30. April 2021 eingestellt. [Weitere Informationen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+Der veraltete Auth-Authentifizierungsdienst hat das Lebensende erreicht und wird am 30. Juni 2021 eingestellt. [Weitere Informationen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
-### Sind Sie betroffen?
+**Sind Sie betroffen?**
 
 Wenn Sie eine ältere Version der Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie **zu Adobe I/O** wechseln.
 
-### Wie lässt sich das Update durchführen?
+**Wie lässt sich das Update durchführen?**
 
 [Erfahren Sie, wie Sie zu Adobe I/O wechseln](../integrations/using/configuring-adobe-io.md).
 
@@ -92,11 +93,11 @@ Wenn Sie eine ältere Version der Trigger-Integration über die Auth-Authentifiz
 
 Ab dem 31. März 2021 wird die ältere Version des Binärprotokolls nicht mehr vom Apple Push Notification Service (APNs) unterstützt. [Mehr dazu](https://developer.apple.com/news/?id=c88acm2b).
 
-### Sind Sie betroffen?
+**Sind Sie betroffen?**
 
 Wenn Ihre Instanzen auf einer älteren Version als Kampagne 21.1 ausgeführt werden und Push-Benachrichtigungen mit dem alten Apple-Binärprotokoll gesendet werden, müssen Sie auf die HTTP/2-basierte API des APNs-Anbieters aktualisieren.
 
-### Wie lässt sich das Update durchführen?
+**Wie lässt sich das Update durchführen?**
 
 Als gehosteter Kunde ist keine Aktion erforderlich: Adobe hat Ihre Instanz(en) bereits auf die HTTP/2-basierte API aktualisiert.
 
@@ -108,11 +109,11 @@ Am 29. März 2021 wirkt sich ein Infrastrukturupdate des Apple Push Notification
 
 Erfahren Sie mehr über die APNs-Änderungen [auf dieser Seite](https://developer.apple.com/news/?id=7gx0a2lp).
 
-### Sind Sie betroffen?
+**Sind Sie betroffen?**
 
 Wenn Sie Kampagne zum Senden von Push-Benachrichtigungen auf iOS-Geräten verwenden, sind Sie davon betroffen.
 
-### Wie lässt sich das Update durchführen?
+**Wie lässt sich das Update durchführen?**
 
 Als gehosteter Kunde ist keine Aktion erforderlich: Adobe hat das neue Stammzertifikat bereits in Ihre Umgebung integriert.
 
