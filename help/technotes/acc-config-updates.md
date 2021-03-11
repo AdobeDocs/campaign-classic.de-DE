@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 248c74485e8e5889ca630c8f60ac2fa085204c51
+source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 15%
@@ -50,7 +50,7 @@ Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind
 
    Der neue Build ist mit mindestens Campaign Classic 17.9 kompatibel. Um Sicherheitslücken zu vermeiden, empfiehlt Adobe jedoch dringend, alle Instanzen auf einen neuen Build zu aktualisieren. 
 
-* Als lokaler Kunde werden Sie aufgefordert, die Marketing- und Mid-Sourcing-Instanzen auf einen neuen Build zu aktualisieren.
+* Als lokaler Kunde werden Sie aufgefordert, die Marketing- und Mid-Sourcing-Instanzen auf einen neueren Build zu aktualisieren.
 
 >[!CAUTION]
 >
