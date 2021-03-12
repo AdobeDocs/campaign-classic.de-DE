@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 087abb5765b089aa707f3d3a6d33ad0949b26bc8
+source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 15%
@@ -85,7 +85,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 ## Integration mit Experience Cloud-Triggern
 
-Der veraltete Auth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf Pipeline basiert, wurde in die Adobe I/O verschoben. Es wird am 30. Juni 2021 eingestellt. [Weitere Informationen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
+Der veraltete Auth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf Pipeline basiert, wurde in die Adobe I/O verschoben. Sie wird am 30. April 2021 **eingestellt.** [Weitere Informationen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411).
 
 **Sind Sie betroffen?**
 
