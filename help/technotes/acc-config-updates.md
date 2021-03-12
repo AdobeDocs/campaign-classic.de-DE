@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: df04057716726a74196add3fbc400fffaca26fc9
+source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '905'
 ht-degree: 15%
 
 ---
@@ -30,9 +30,9 @@ Kampagne Anwender müssen auf eine der folgenden Versionen aktualisieren:
 
 Diese Gebäude gewährleisten die Kontinuität bestimmter Kampagnen: Integration von Experience Cloud-Triggern, APNs-Authentifizierung und das neue Verbindungsprotokoll, das sich auf den Authentifizierungsmechanismus des Adobe Identity Management Service (IMS) auswirkt.
 
-Als gehosteter Kunde ist keine Aktion erforderlich: Adobe besitzt die Build-Aktualisierung und Konfigurationsaktualisierungen für Sie.
+Als gehosteter Kunde informiert Sie die Adobe in regelmäßigen Abständen über erforderliche Buildaktualisierungen. Sie müssen ein Upgrade gemäß den Empfehlungen durchführen, um die Einhaltung der Vorschriften sicherzustellen.
 
-Als Kunde vor Ort/Hybrid müssen Sie auf eine der oben aufgeführten Versionen aktualisieren. Darüber hinaus müssen Sie einige manuelle Aufgaben durchführen, um sicherzustellen, dass Ihre Umgebung sicher ist und auf zukünftige Änderungen von Adobe- oder Drittanbietersystemen vorbereitet ist.
+Als Kunde vor Ort/Hybrid müssen Sie auf eine der oben aufgeführten Versionen aktualisieren. Darüber hinaus müssen einige manuelle Aufgaben durchgeführt werden, um sicherzustellen, dass Ihre Umgebung sicher ist und auf zukünftige Änderungen von Adobe- oder Drittanbietersystemen vorbereitet ist.
 
 ## Sicherheitsaktualisierungen
 
