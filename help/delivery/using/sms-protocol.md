@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 translation-type: tm+mt
-source-git-commit: a157082070b22e3621cb81411a5ddde387fd5fcf
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
 source-wordcount: '8458'
 ht-degree: 99%
@@ -483,7 +483,7 @@ Die Angabe von Kurzwahlnummern ist für zwei Funktionen hilfreich:
 
 * Die Vorschau zeigt die Kurzwahlnummer an, wenn keine Anrufernummer angegeben wurde. Es wird das tatsächliche Verhalten auf dem Mobiltelefon widergespiegelt.
 
-* Die Einstellung &quot;Blockierungsliste&quot;der Funktion für die automatische Antwort sendet nur für einen bestimmten Kurzcode an die Quarantäne des Benutzers.
+* Die Blockierungslisten-Einstellung der automatischen Antwortfunktion stellt Benutzer nur für die jeweilige Kurzwahlnummer unter Quarantäne.
 
 #### Anrufer-TON/NPI, Empfänger-TON/NPI {#ton-npi}
 
@@ -597,10 +597,10 @@ Wenn diese Option aktiviert ist, ist die Verbindung nicht mehr sicher. Sie sollt
 
 Dies kann für Debugging- oder Testzwecke nützlich sein.
 
-Sie können zwischen drei verschiedenen Werten für die Zertifikatüberprüfung wählen:
+Sie können zwischen drei verschiedenen Werten für die Zertifikatsprüfung wählen:
 
-* Vollständige Zertifizierungsprüfung (einschließlich Hostname), Standard.
-* Hostnamen-Prüfung überspringen.
+* Vollständige Zertifikatsprüfung (einschließlich Host-Name), Standard.
+* Host-Namen-Prüfung überspringen.
 * Zertifikatsprüfung überspringen.
 
 #### Bind TON/NPI {#bind-ton-npi}
@@ -713,13 +713,13 @@ Ermöglicht das Hinzufügen eines benutzerdefinierten TLV. Dieses Feld legt den 
 
 Diese Einstellung erlaubt nur das Hinzufügen einer TLV-Option pro Nachricht.
 
-### Automatische Antwort auf MO        {#automatic-reply}
+### Automatische Antwort auf MO         {#automatic-reply}
 
 >[!IMPORTANT]
 >
->In Adobe Campaign Classic sowie in Hybrid-Architekturen benötigt der Mid-Operator Schreibrechte für den Ordner **Externes Konto**, wenn für den SMPP-Connector automatische Antworten eingerichtet werden sollen.
+>In Adobe Campaign Classic und in einer Hybridarchitektur erfordert die Anwendung der automatischen Antwort für den erweiterten SMPP-Connector Schreibzugriff für den mid-Operator im Ordner **Externe Konto**.
 
-Diese Funktion ermöglicht eine schnelle Antwort auf Text an MO und das Versenden von Code per Kurzcode an Blockierungsliste.
+Mit dieser Funktion können Sie schnell einen Antworttext an ein MO senden und das Senden pro Kurzwahlnummer an die Blockierungsliste handhaben.
 
 Die Spalten **Schlüsselwort** und **Kurzwahlnummer** definieren Bedingungen, um die automatische Antwort auszulösen. Wenn beide Felder übereinstimmen, wird der MO gesendet und die zusätzliche Aktion ausgelöst. Um einen Platzhalter festzulegen, sollten Sie das Feld leer lassen. Das Schlüsselwort wird mit dem ersten alphanumerischen Wort im MO-Text abgeglichen, wobei Interpunktion und führende Leerzeichen ignoriert werden. Das bedeutet, dass das Feld **Schlüsselwort** keine Leerzeichen enthalten darf und ein einzelnes Wort sein muss.
 
