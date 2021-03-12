@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 26d6e52a03d6123092c811a93612c8d05f75f6fb
+source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '918'
 ht-degree: 15%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 Sie müssen Ihre Infrastruktur und Einstellungen mit den neuesten Builds und Produktverbesserungen aktualisieren. Diese Korrekturen sind obligatorisch, um die Dienstkontinuität und Sicherheit zu gewährleisten.
 
-Kampagne Anwender müssen auf eine der folgenden Versionen aktualisieren:
+Kampagne-Anwender müssen auf eine der folgenden Versionen aktualisieren:
 
 * Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
 * Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
@@ -33,6 +33,10 @@ Diese Gebäude gewährleisten die Kontinuität bestimmter Kampagnen: Integration
 Als gehosteter Kunde informiert Sie die Adobe in regelmäßigen Abständen über erforderliche Buildaktualisierungen. Sie müssen ein Upgrade gemäß den Empfehlungen durchführen, um die Einhaltung der Vorschriften sicherzustellen.
 
 Als Kunde vor Ort/Hybrid müssen Sie auf eine der oben aufgeführten Versionen aktualisieren. Darüber hinaus müssen einige manuelle Aufgaben durchgeführt werden, um sicherzustellen, dass Ihre Umgebung sicher ist und auf zukünftige Änderungen von Adobe- oder Drittanbietersystemen vorbereitet ist.
+
+>[!NOTE]
+>
+>Wenden Sie sich bei Fragen zu diesen Änderungen an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Sicherheitsaktualisierungen
 
@@ -54,7 +58,7 @@ Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind
 
 >[!CAUTION]
 >
->Wenn Sie noch kein Upgrade durchführen können, müssen Sie sich an das Kundendienstteam von Adobe wenden, um eine Sicherheitskorrektur für Ihre Instanzen vorzunehmen.****
+>Wenn Sie noch kein Upgrade durchführen können, müssen Sie sich an das Kundenservice-Team von Adobe wenden, um eine Sicherheitskorrektur für Ihre Instanzen durchzuführen.****
 
 
 ## Aktualisierung der Kampagne Client Console
@@ -69,7 +73,7 @@ Adobe Identity Service (IMS) wird ab dem 30. Juni 2021 keine alten Internet Expl
 
 **Sind Sie betroffen?**
 
-Wenn Sie eine Verbindung zur Kampagne [über ein Adobe ID](../integrations/using/about-adobe-id.md) über den Adobe Identity Service (IMS) herstellen, ist ein Upgrade auf eine der oben aufgeführten neuen Versionen obligatorisch. Diese Version enthält ein neues Verbindungsprotokoll: Aktualisierung ist erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
+Wenn Sie eine Verbindung zur Kampagne [über ein Adobe ID](../integrations/using/about-adobe-id.md) über den Adobe Identity Service (IMS) herstellen, ist ein Upgrade auf eine der oben aufgeführten neuen Versionen obligatorisch. Diese Versionen enthalten ein neues Verbindungsprotokoll: Aktualisierung ist erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
 
 **Wie lässt sich das Update durchführen?**
 
