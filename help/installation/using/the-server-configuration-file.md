@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 2de8261feda6e64a84bd82e9fb71bc1fddf77113
+source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
 workflow-type: tm+mt
-source-wordcount: '7929'
+source-wordcount: '7970'
 ht-degree: 27%
 
 ---
@@ -337,7 +337,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> Provider<br /> </td> 
-   <td> Typ (Auflistung). Mögliche Werte sind 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase) , Sybase IQ), 'Relay' (HTTP-Relais zu Remote-Datenbank).<br /> </td> 
+   <td> Typ (Auflistung). Mögliche Werte sind 'Oracle', 'MSSQL' (Microsoft SQL Server), 'PostgreSQL' (PostgreSQL, Greenplum), 'Teradata', 'DB2', 'MySQL', 'Netezza', 'AsterData', 'SAPHANA' (SAP HANA), 'RedShift' (Amazon Redshift), 'ODBC' (ODBC (Sybase, Sybase IQ), 'Relay' (HTTP-Relay zur Remote-Datenbank).<br /> </td> 
    <td> String <br /> </td> 
    <td> 'Oracle'<br /> </td> 
   </tr> 
@@ -1690,6 +1690,8 @@ Konfigurieren Sie im Knoten **cache** die folgenden Parameter. Dies ist die loka
 ### Relais {#relay}
 
 Konfigurieren Sie im Knoten **mta > relais** die folgenden Parameter. Dies ist die Konfiguration des E-Mail-Servers für den message-Versand.
+
+Die Liste wird auf dieselbe Weise wie eine MX-Liste von einer MX-DNS-Abfrage verarbeitet, üblicherweise wird der erste MX verwendet, solange er verfügbar ist, dann wird der nächste verwendet usw.
 
 Weitere Informationen finden Sie unter [SMTP-Relais](../../installation/using/configuring-campaign-server.md#smtp-relay).
 
