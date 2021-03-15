@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '782'
 ht-degree: 47%
 
 ---
@@ -23,7 +23,7 @@ Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von Daten
 
 Auf [dieser Seite](../../platform/using/privacy-management.md) finden Sie allgemeine Informationen zu den Schritten in Adobe Campaign zum Datenschutzmanagement. Darüber hinaus finden Sie Best Practices und einen Überblick über den Benutzerprozess und die Personas.
 
-## URL-Personalisierung
+## URL-Personalisierung {#url-personalization}
 
 Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich mögliche Sicherheitslücken verhindern. Die folgenden Beispiele sollten niemals in allen URL-Attributen &lt;`a href="">` oder `<img src="">` verwendet werden:
 
@@ -57,7 +57,7 @@ Um die Sicherheit zu verbessern, wurde in Build 19.1.4 (9032@3a9dc9c) ein neuer 
 >
 >Wenn auf eine fehlerhafte signierte URL geklickt wird, wird der folgende Fehler zurückgegeben: „Angeforderte URL &#39;... &#39; wurde nicht gefunden.“
 
-Darüber hinaus können gehostete und hybride Kunden auf Build 19.1.4 (9032@3a9dc9c und 9032@800be2e) und auf Kampagne 20.2 eine Verbesserung verwenden, um URLs zu deaktivieren, die aus vorherigen Builds generiert wurden. Standardmäßig ist diese Option deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
+Zusätzlich können gehostete und hybride Kunden ab der Kampagne 20.2 und der Gold Standard-Version eine Verbesserung verwenden, um URLs zu deaktivieren, die aus vorherigen Builds generiert wurden. Standardmäßig ist diese Option deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
 
 Um diesen neuen Mechanismus zu aktivieren, müssen On-Premise-Kunden auf allen Campaign-Servern die folgenden Schritte ausführen:
 
@@ -65,7 +65,7 @@ Um diesen neuen Mechanismus zu aktivieren, müssen On-Premise-Kunden auf allen C
 1. Starten Sie den **nlserver**-Dienst neu.
 1. Starten Sie auf dem Tracking-Server den Webserver neu (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
-Bei Kunden, die auf Build 19.1.4 (9032@3a9dc9c) ausgeführt werden, kann es zu Problemen mit Push-Benachrichtigungs-Versänden mit einem Verfolgungslink oder Versänden mit Anker-Tags kommen. In diesem Fall empfiehlt Adobe, den neuen Signaturmechanismus für die Verfolgung von Links zu deaktivieren:
+Kunden, die mit Gold Standard 19.1.4 arbeiten, können Probleme mit Push-Benachrichtigungs-Versänden mit einem Tracking-Link oder Versänden mit Anker-Tags haben. In diesem Fall empfiehlt Adobe, den neuen Signaturmechanismus für die Verfolgung von Links zu deaktivieren:
 
 **Hosted- und Hybrid-** Kunden müssen sich an die  [Kundenbetreuung wenden, damit dieser Mechanismus deaktiviert ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) wird.
 
