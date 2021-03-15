@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 74610fa197dd9ef27342e08dd0ba3403c1a9acc0
+source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '941'
 ht-degree: 15%
 
 ---
@@ -44,7 +44,7 @@ Neueste Versionen der Kampagne enthalten eine Sicherheitskorrektur, die den Schu
 
 **Sind Sie betroffen?**
 
-Wenn sich Ihre Umgebung auf einem niedrigeren Build befindet als Kampagne 21.1, werden Sie davon betroffen sein.
+Wenn sich Ihre Umgebung auf einem niedrigeren Build befindet als die Kampagnen 19.1.8, 19.2.4, 20.1.4, 20.2.4, 20.3.3 oder Gold Standard 11, sind Sie davon betroffen.
 
 **Wie lässt sich das Update durchführen?**
 
@@ -66,6 +66,11 @@ Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind
 Der neueste Build aus Gold Standard 11 behebt eine Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Versänden verhinderte. Die Konsolenaktualisierung ist obligatorisch.
 
 [Weitere Informationen](../rn/using/gold-standard.md).
+
+
+>[!NOTE]
+>
+>Updates für andere Versionen werden demnächst verfügbar sein.
 
 ## Verbindung zur Kampagne über das IMS
 
@@ -93,7 +98,7 @@ Der veraltete Auth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. T
 
 **Sind Sie betroffen?**
 
-Wenn Sie eine ältere Version der Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie **zu Adobe I/O** wechseln.
+Wenn sich Ihre Umgebung auf einem niedrigeren Build befindet als die Kampagne 19.1.8, 20.2.4, Gold Standard 11, verwenden Sie eine ältere Version der Trigger-Integration über die Auth-Authentifizierung: **Sie müssen zu Adobe I/O** wechseln.
 
 **Wie lässt sich das Update durchführen?**
 
