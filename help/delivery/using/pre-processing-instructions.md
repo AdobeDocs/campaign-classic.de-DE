@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
+source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
 workflow-type: tm+mt
 source-wordcount: '642'
-ht-degree: 80%
+ht-degree: 75%
 
 ---
 
@@ -24,8 +24,8 @@ Sie gelten nur im Zusammenhang mit dem Versandinhalt. Dies ist die einzige Mögl
 Es gibt drei Arten von Anweisungen:
 
 * **[!DNL include]**: hauptsächlich um Code in Optionen, Gestaltungsbausteinen, externen Dateien oder Seiten hervorzuheben. [Mehr dazu](#include)
-* &quot;**[!DNL value]**&quot;: , um Zugriff auf die Felder des Versands, Versand- und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden. [Mehr dazu](#value)
-* &quot;**[!DNL foreach]**&quot;: um ein Array zu wiederholen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
+* **[!DNL value]**: , um Zugriff auf die Felder des Versands, Versand- und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden. [Mehr dazu](#value)
+* **[!DNL foreach]**: um ein Array zu wiederholen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
 
 Sie können direkt vom Versand-Assistenten aus getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
 
@@ -75,8 +75,8 @@ Wobei:
 
 * **[!DNL object]**: Name des Objekts (Beispiel: Versand, Anbieter usw.).
 Objekt kann sein:
-   * &quot;delivery&quot;: für den aktuellen Versand (siehe Details und Einschränkungen im Unterabschnitt unten).
-   * &quot;provider&quot;: für den aktuellen Versand-Provider/Routing (nms:externalAccount).
+   * **[!DNL delivery]**: für den aktuellen Versand (siehe Details und Einschränkungen im Unterabschnitt unten).
+   * **[!DNL provider]**: für den aktuellen Versand-Provider/Routing (nms:externalAccount).
    * Ein zusätzliches Skriptobjekt: wenn ein Objekt im Kontext geladen wird: **Eigenschaften** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
    * Element der foreach-Schleife: siehe Abschnitt [Foreach](#foreach) weiter unten.
 * **[!DNL xpath]**: xpath des Felds.
@@ -101,22 +101,28 @@ Für die E-Mail-Personalisierung kann auf zwei Arten auf das &quot;delivery&quot
    ```
 
 
->[!NOTE]
->
->* Bei der Anweisung `<%@ value object="delivery" xpath="@myCustomField" %>` gibt es eine weitere Einschränkung für Sendungen, die über Mid-Sourcing gesendet werden. Das benutzerdefinierte Feld &quot;@myCustomField&quot; muss dem Schema &quot;nms:delivery&quot; auf Marketing- und Mid-Sourcing-Plattformen hinzugefügt werden.
-   >
-   >
-* Verwenden Sie für Versandparameter/-variablen die folgende Syntax (unter Verwendung des &quot;delivery&quot;-Objekts):
->
->
-`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+**Vorsicht**
+
+Wenn Sie die folgende Anweisung für per Mid-Sourcing gesendete Versand verwenden, muss das benutzerdefinierte Feld **@myCustomField** auf Marketing- und Mid-Sourcing-Plattformen dem Schema nms:Versand hinzugefügt werden:
+
+```
+<%@ value object="delivery" xpath="@myCustomField" %>
+```
+
+Verwenden Sie für Versandparameter/-variablen die folgende Syntax (unter Verwendung des &quot;delivery&quot;-Objekts):
+
+```
+<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
+```
 
 ### [!DNL value] in einem Javascript-Abschnitt  {#value-in-javascript}
 
 Damit der Wert &lt;%@ in Javascript-Abschnitten verwendet werden kann, werden zwei Sonderobjekte durch &lt;% und %> ersetzt:
 
-* `<%@ value object='startScript' %>`
-* `<%@ value object='endScript' %>`
+```
+<%@ value object='startScript' %>
+<%@ value object='endScript' %>
+```
 
 Beispiel:
 
