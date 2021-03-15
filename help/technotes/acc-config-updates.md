@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: c9e3d12f8975b2c87f6f4aaf306fae71803786ad
+source-git-commit: 1a7ec4899bc0fab3935c25918c586a20afb88d1a
 workflow-type: tm+mt
-source-wordcount: '941'
-ht-degree: 15%
+source-wordcount: '974'
+ht-degree: 11%
 
 ---
 
@@ -63,18 +63,17 @@ Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind
 
 ## Aktualisierung der Kampagne Client Console
 
-Der neueste Build aus Gold Standard 11 behebt eine Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Versänden verhinderte. Die Konsolenaktualisierung ist obligatorisch.
+Der neueste Gold Standard 11-Build behebt eine Regression, die die Verwendung einiger Komponenten der Client-Konsole verhinderte, z. B. die Datumsauswahl und die Bildverwaltung in Versänden. Die Konsolenaktualisierung ist obligatorisch.
 
 [Weitere Informationen](../rn/using/gold-standard.md).
 
-
 >[!NOTE]
 >
->Updates für andere Versionen werden demnächst verfügbar sein.
+>Die neue Client-Konsole für andere Versionen wird demnächst verfügbar sein.
 
 ## Verbindung zur Kampagne über das IMS
 
-Adobe Identity Service (IMS) wird ab dem 30. Juni 2021 keine alten Internet Explorer-Versionen mehr unterstützen. [Mehr dazu](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Kampagne Console wurde aktualisiert, um die Kompatibilität mit IMS sicherzustellen.
+Adobe Identity Service (IMS) beendet die Unterstützung alter Internet Explorer Versionen ab dem 30. Juni 2021 **.** [Mehr dazu](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html). Kampagne Client Console wurde aktualisiert, um die Kompatibilität mit Adobe IMS sicherzustellen.
 
 **Sind Sie betroffen?**
 
@@ -90,7 +89,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 * Näheres zum Zugriff auf die Adobe Softwareverteilung finden Sie [hier](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
-* [Näheres zur Installation der Campaign Client-Konsole finden Sie hier](../installation/using/installing-the-client-console.md).
+* [Erfahren Sie, wie Sie Kampagne Client Console](../installation/using/installing-the-client-console.md) installieren.
 
 ## Integration mit Experience Cloud-Triggern
 
@@ -110,7 +109,7 @@ Kunden mit Hybrid-Umgebungen müssen darüber hinaus sicherstellen, dass Pipelin
 
 ## API für HTTP/2-basierte APNs-Provider
 
-Ab dem 31. März 2021 wird die ältere Version des Binärprotokolls nicht mehr vom Apple Push Notification Service (APNs) unterstützt. [Mehr dazu](https://developer.apple.com/news/?id=c88acm2b).
+Der Apple Push Notification Service (APNs) unterstützt das Legacy-Binärprotokoll ab dem 31. März 2021 **nicht mehr.** [Mehr dazu](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sind Sie betroffen?**
 
@@ -139,3 +138,11 @@ Als gehosteter Kunde ist keine Aktion erforderlich: Adobe hat das neue Stammzert
 Als Vor-Ort-/Hybridkunde müssen Sie Ihre Konfiguration aktualisieren, um eine nahtlose Transition **vor dem 29. März 2021** sicherzustellen.
 
 [Erfahren Sie, wie Sie das neue Zertifikat](ios-certificate-update.md) integrieren.
+
+
+## Nützliche Links
+
+* [Umgebung aktualisieren](../production/using/build-upgrade.md)
+* [Häufig gestellte Fragen zum Build-Upgrade](../platform/using/faq-build-upgrade.md)
+* [Campaign Classic-Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html)
+* [Neue Client-Konsole für Benutzer verfügbar machen](../installation/using/client-console-availability-for-windows.md)
