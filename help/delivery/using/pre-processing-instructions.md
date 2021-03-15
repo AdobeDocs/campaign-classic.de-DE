@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: 7a58da8fd20abbff9dcf8361536310de49a7905f
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 85%
+source-wordcount: '642'
+ht-degree: 80%
 
 ---
 
@@ -23,9 +23,9 @@ Sie gelten nur im Zusammenhang mit dem Versandinhalt. Dies ist die einzige Mögl
 
 Es gibt drei Arten von Anweisungen:
 
-* &quot;**include**&quot;: hauptsächlich zum factorisieren von Code in Optionen, Gestaltungsbausteinen, externen Dateien oder Seiten
-* &quot;**value**&quot;: um Zugriff auf die Felder des Versands, Versandvariablen und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden.
-* &quot;**foreach**&quot;: um ein Array zu wiederholen, das als benutzerdefiniertes Objekt geladen wird.
+* **[!DNL include]**: hauptsächlich um Code in Optionen, Gestaltungsbausteinen, externen Dateien oder Seiten hervorzuheben. [Mehr dazu](#include)
+* &quot;**[!DNL value]**&quot;: , um Zugriff auf die Felder des Versands, Versand- und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden. [Mehr dazu](#value)
+* &quot;**[!DNL foreach]**&quot;: um ein Array zu wiederholen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
 
 Sie können direkt vom Versand-Assistenten aus getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
 
@@ -33,15 +33,33 @@ Sie können direkt vom Versand-Assistenten aus getestet werden. Sie gelten in de
 
 Die folgenden Beispiele gehören zu den am häufigsten verwendeten:
 
-* Link zur Mirror-Seite einschließen: `<%@ include view="MirrorPage" %>`
-* Mirror-Seiten-URL: &quot;Anzeigen als `<a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page"`
-* Vordefinierte Abmelde-URL: `<%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>`
-* Weitere Beispiele:
-   * `<%@ include file='http://www.google.com' %>`
-   * `<%@ include file='file:///X:/france/service/test.html' %>`
-   * `<%@ include option='NmsServer_URL' %>`
+* Link zur Mirror-Seite einschließen:
 
-Verwenden Sie die Personalisierungsschaltfläche im Versand-Assistenten, um die richtige Syntax zu erhalten.
+   ```
+   <%@ include view="MirrorPage" %>  
+   ```
+
+* URL der Mirrorseite:
+
+   ```
+   View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
+   ```
+
+* Vordefinierte Abmelde-URL:
+
+   ```
+   <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
+   ```
+
+* Weitere Beispiele:
+
+   ```
+   <%@ include file='http://www.google.com' %>
+   <%@ include file='file:///X:/france/service/test.html' %>
+   <%@ include option='NmsServer_URL' %>
+   ```
+
+   Verwenden Sie die Personalisierungsschaltfläche im Versand-Assistenten, um die richtige Syntax zu erhalten.
 
 ## [!DNL value] {#value}
 
@@ -49,7 +67,9 @@ Diese Anweisung ermöglicht den Zugriff auf die Parameter des Versands, die für
 
 Syntax:
 
-`<%@ value object="myObject" xpath="@myField" index="1" %>`
+```
+<%@ value object="myObject" xpath="@myField" index="1" %>
+```
 
 Wobei:
 
@@ -66,19 +86,30 @@ Objekt kann sein:
 
 Für die E-Mail-Personalisierung kann auf zwei Arten auf das &quot;delivery&quot;-Objekt zugegriffen werden:
 
-* In JavaScript. Beispiel: `<%= delivery.myField %>`.
+* JavaScript verwenden:
+
+   ```
+   <%= delivery.myField %>`.
+   ```
 
    Im Objektversand in JavaScript werden benutzerdefinierte Felder nicht unterstützt. Sie funktionieren in der Vorschau, jedoch nicht im MTA, da der MTA nur auf das vorkonfigurierte Versandschema zugreifen kann.
 
-* Durch die Vorab-Bearbeitung von `<%@ value object="delivery"`.
+* Vorverarbeitung:
 
-Bei der Anweisung `<%@ value object="delivery" xpath="@myCustomField" %>` gibt es eine weitere Einschränkung für Sendungen, die über Mid-Sourcing gesendet werden. Das benutzerdefinierte Feld &quot;@myCustomField&quot; muss dem Schema &quot;nms:delivery&quot; auf Marketing- und Mid-Sourcing-Plattformen hinzugefügt werden.
+   ```
+   <%@ value object="delivery"
+   ```
+
 
 >[!NOTE]
 >
->Verwenden Sie für Versandparameter/-variablen die folgende Syntax (unter Verwendung des &quot;delivery&quot;-Objekts):
+>* Bei der Anweisung `<%@ value object="delivery" xpath="@myCustomField" %>` gibt es eine weitere Einschränkung für Sendungen, die über Mid-Sourcing gesendet werden. Das benutzerdefinierte Feld &quot;@myCustomField&quot; muss dem Schema &quot;nms:delivery&quot; auf Marketing- und Mid-Sourcing-Plattformen hinzugefügt werden.
+   >
+   >
+* Verwenden Sie für Versandparameter/-variablen die folgende Syntax (unter Verwendung des &quot;delivery&quot;-Objekts):
 >
->`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
+>
+`<%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>`
 
 ### [!DNL value] in einem Javascript-Abschnitt  {#value-in-javascript}
 
@@ -100,14 +131,16 @@ Diese Anweisung ermöglicht die Iteration eines Arrays von Objekten, die im Vers
 
 Syntax:
 
-`<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>`
+```
+<%@ foreach object="myObject" xpath="myLink" index="3" item="myItem" %> <%@ end %>
+```
 
 Wobei:
 
-* &quot;object&quot;: Name des Objekts, von dem aus gestartet werden soll, normalerweise ein zusätzliches Skriptobjekt, es kann sich jedoch auch um einen Versand handeln.
-* &quot;xpath&quot;(optional): Pfad (XPath) der Kollektion, über die eine Schleife ausgeführt werden soll. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, über das eine Schleife ausgeführt werden soll.
-* &quot;index&quot; (optional): wenn &quot;xpath&quot; nicht &quot;.&quot; und &quot;object&quot; selbst ein Array ist, Elementindex des Objekts (beginnt bei 0).
-* &quot;item&quot; (optional): Name eines neuen Objekts, auf das mit dem Wert &quot;&lt;%@&quot; innerhalb der foreach-Schleife zugegriffen werden kann. Standardeinstellung mit dem Link-Namen im Schema.
+* **[!DNL object]**: Name des Objekts, von dem aus gestartet werden soll, normalerweise ein zusätzliches Skriptobjekt, es kann sich jedoch auch um einen Versand handeln.
+* **[!DNL xpath]** (optional): xpath der Sammlung, die als Schleife verwendet werden soll. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, über das eine Schleife ausgeführt werden soll.
+* **[!DNL index]** (optional): wenn &quot;xpath&quot; nicht &quot;.&quot; und &quot;object&quot; selbst ein Array ist, Elementindex des Objekts (beginnt bei 0).
+* **[!DNL item]** (optional): Name eines neuen Objekts, auf das mit dem Wert &quot;&lt;%@&quot; innerhalb der foreach-Schleife zugegriffen werden kann. Standardeinstellung mit dem Link-Namen im Schema.
 
 Beispiel:
 
