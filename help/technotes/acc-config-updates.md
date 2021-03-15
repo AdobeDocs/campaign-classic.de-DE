@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 504a948daa60155b7c4970be24bd6d2049e5395b
+source-git-commit: 1233eef1d7b454daea021e1e3077890284813d9a
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 14%
+source-wordcount: '1026'
+ht-degree: 15%
 
 ---
 
@@ -105,7 +105,15 @@ Der veraltete Auth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. T
 
 **Sind Sie betroffen?**
 
-Wenn Ihre Instanzen mit einer **älteren Version als Kampagne 19.1.8, 20.2.4, Gold Standard 11** ausgeführt werden, verwenden Sie eine ältere Version der Trigger-Integration mithilfe der Auth-Authentifizierung: **Sie müssen zu Adobe I/O** wechseln.
+Wenn Ihre Instanzen mit einer **älteren Version als Kampagne 19.1.8, 20.2.4, Gold Standard 11** ausgeführt werden, verwenden Sie eine ältere Version der Trigger-Integration mithilfe der Auth-Authentifizierung: **Sie müssen auf eine neuere Version aktualisieren und zu Adobe I/O** wechseln.
+
+Die Aktualisierung auf eine der folgenden neuen Versionen ist obligatorisch:
+
+* Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
+* Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
+* Campaign-Version 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
+* Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
+* Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
 **Wie lässt sich das Update durchführen?**
 
