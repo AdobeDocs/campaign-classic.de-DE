@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 72%
+source-wordcount: '135'
+ht-degree: 65%
 
 ---
 
@@ -28,9 +28,9 @@ Verwenden Sie möglichst eine sichere Verbindung: POP3S statt POP3 (oder POP3 ü
 
 ## Datenbank
 
-Beachten Sie unbedingt die Sicherheitsvorschriften für Ihre Datenbank-Engine.
+Sie müssen die Best Practices für die Sicherheit Ihrer Datenbank-Engine anwenden.
 
-### SSL/TLS-Konfiguration*
+## SSL/TLS-Konfiguration
 
 Das Zertifikat können Sie mit openssl überprüfen. Die aktive Cipher Suite können Sie mit nmap überprüfen:
 
