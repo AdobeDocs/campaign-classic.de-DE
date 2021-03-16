@@ -5,11 +5,11 @@ title: Personalisierte Inhalte erstellen
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1277'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -158,6 +158,6 @@ Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und ö
 
 Adobe empfiehlt eine Vorschau Ihrer Nachricht, um die Personalisierung zu überprüfen und festzustellen, wie Ihre Empfänger den Versand sehen werden.
 
-* Im Versand-Assistent können Sie mit der Unterregisterkarte **[!UICONTROL Vorschau]** die Wiedergabe der einzelnen Inhalte für einen Empfänger Ansicht werden. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt – [mehr dazu](../../delivery/using/defining-the-email-content.md#message-content)
+* Im Versand-Assistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt – [mehr dazu](../../delivery/using/defining-the-email-content.md#message-content)
 
 * Die Vorschauerzeugung löst automatisch die Durchführung einer Anti-Spam-Prüfung aus. Überprüfen Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** die Spam-Bewertung von [SpamAssassin](../../delivery/using/spamassassin.md). Klicken Sie auf **[!UICONTROL Details...]**, um mehr über die Warnung zu erfahren. Stellen Sie zuvor sicher, dass SpamAssassin auf dem Adobe Campaign-Anwendungs-Server ordnungsgemäß installiert und konfiguriert ist – [mehr dazu](../../installation/using/configuring-spamassassin.md)
