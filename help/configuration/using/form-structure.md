@@ -7,7 +7,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f82f71f4eed44f4f12ab7a65188d25ff6c552d35
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 4%
@@ -235,7 +235,7 @@ Beispiele für Bedingungssyntax:
 
 * **visibleIf=&quot;@email=&#39;peter.martinezATneeolane.net&#39;&quot;**: prüft Gleichheit bei Zeichenfolgendaten. Der Vergleichswert muss in Anführungszeichen gesetzt werden.
 * **visibleIf=&quot;@gender >= 1 und @gender != 2&quot;**: -Bedingung auf einen numerischen Wert.
-* **visibleIf=&quot;@boolean1==true oder @boolean2==false&quot;**: Testen von booleschen Feldern.
+* **visibleIf=&quot;@boolean1=true oder @boolean2=false&quot;**: Testen von booleschen Feldern.
 
 #### Aktivieren von Container {#enabling-container}
 
@@ -555,9 +555,9 @@ Die Ausführung eines Eingabefelds initialisiert ein XML-Dokument, das die Daten
 
 ### Aktualisieren des Kontexts {#updating-the-context}
 
-Um den Kontext des Formulars zu ändern, verwenden Sie das Tag **`<set expr="<value>" xpath="<field>"/>`**, wobei **`<field>`** das Zielfeld und **`<value>`** der Ausdruck oder Wert für die Aktualisierung ist.
+Um den Kontext des Formulars zu ändern, verwenden Sie das Tag `<set expr="<value>" xpath="<field>"/>`, wobei `<field>` das Zielfeld und `<value>` der Ausdruck oder Wert für die Aktualisierung ist.
 
-Beispiele für die Verwendung des Tags **`<set>`**:
+Beispiele für die Verwendung des Tags `<set>`:
 
 * **`<set expr="'Test'" xpath="/tmp/@test" />`**: positioniert den Wert &#39;Test&#39; an der temporären Position /tmp/@test1
 * **`<set expr="'Test'" xpath="@lastName" />`**: aktualisiert die Entität des Attributs &quot;lastName&quot;mit dem Wert &quot;Test&quot;
