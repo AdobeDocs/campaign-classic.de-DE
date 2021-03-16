@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 2a82c1f67d8bc6d8499383a600a003480e82510f
+source-git-commit: 4552b8c73f0d547a9bb2dc7d8489927ea687f575
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2467'
 ht-degree: 60%
 
 ---
@@ -114,6 +114,7 @@ ht-degree: 60%
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
       + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+   + [Hilfe- und Supportoptionen](support.md)
 + Erstellen und Senden von Nachrichten {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
@@ -329,7 +330,7 @@ ht-degree: 60%
       + [Anwendungsfälle: Übersichten erstellen](web/using/use-cases--creating-overviews.md)
       + [Übersetzen einer Webanwendung](web/using/translating-a-web-application.md)
       + [Verfolgen von Besuchen in einer Webanwendung](web/using/tracking-a-web-application.md)
-      + [Opt-out vom Webanwendungs-Tracking](web/using/web-application-tracking-opt-out.md)
+      + [Opt-out vom Web-Anwendungs-Tracking](web/using/web-application-tracking-opt-out.md)
    + Bearbeiten von HTML-Inhalten {#editing-html-content}
       + [Erste Schritte mit dem HTML-Editor](web/using/about-campaign-html-editor.md)
       + [Vorlagenverwaltung](web/using/template-management.md)
