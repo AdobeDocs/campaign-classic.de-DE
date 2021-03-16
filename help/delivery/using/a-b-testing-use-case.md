@@ -1,44 +1,44 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Über diesen Verwendungsfall
-description: Erfahren Sie, wie Sie A/B-Tests mit einem speziellen Anwendungsfall durchführen.
+title: Über dieses Anwendungsbeispiel
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '244'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 
-# Über diesen Verwendungsfall {#about-use-case}
+# Über dieses Anwendungsbeispiel {#about-use-case}
 
 Im vorliegenden Anwendungsbeispiel wird ein Zielgruppen-Workflow verwendet, um zwei Inhaltsversionen zu vergleichen. Der Text ist jeweils derselbe, nur die Aufmachung unterscheidet sich.
 
-Die Zielgruppe ist in drei Gruppen unterteilt: zwei Testgruppen und die übrige Population. An jede Testgruppe wird eine andere Version des Versands gesendet.
+Die Zielpopulation wird in drei Gruppen aufgeteilt: zwei Testgruppen und die restliche Population. An jede Testgruppe wird eine andere Version des Versands gesendet.
 
-Nach dem Versand wird eine Wartezeit von 5 Tagen konfiguriert, bevor die Ergebnisse der besten offenen Tarife erfasst werden. Der Inhalt des Versands mit dem höchsten Ergebnis wird dann durch ein Skript wiederhergestellt und an die Population gesendet, die nicht als Testgruppe verwendet wurde.
+Nach dem Versand ist eine 5-tägige Wartezeit konfiguriert, bevor die Ergebnisse der besten Öffnungsraten gesammelt werden. Der Inhalt des Versands mit der höchsten Punktzahl wird dann von einem Skript wiederhergestellt und an die Population gesendet, die nicht als Testgruppe verwendet wurde.
 
-Die Auswahl der Siegerversion kann je nach Bedarf nach verschiedenen Kriterien erfolgen. Hierbei kann es sich beispielsweise um die Öffnungsrate, Klickrate, Anmelderate oder die Reaktivität handeln.
+Die Auswahl der Siegerversion kann je nach Bedarf nach verschiedenen Kriterien erfolgen. Hierbei kann es sich beispielsweise um die Öffnungsrate, Klickrate, Anmelderate oder Reaktivität handeln.
 
-Darüber hinaus betraf der in diesem Anwendungsfall beschriebene Test nur zwei Versand, aber Sie können so viele Versionen wie nötig testen. Fügen Sie dem Workflow einfach Aktivitäten hinzu.
+Darüber hinaus betrifft der in diesem Anwendungsfall beschriebene Test nur zwei Sendungen, Sie können aber so viele Versionen wie nötig testen. Fügen Sie dem Workflow einfach Aktivitäten hinzu.
 
-Die wichtigsten Schritte zur Durchführung dieses Anwendungsfalls sind:
+Die wichtigsten Schritte zur Durchführung dieses Anwendungsbeispiels sind:
 
-* [Schritt 1: Erstellen eines Targeting-Workflows](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
-* [Schritt 2: Populationsmuster konfigurieren](../../delivery/using/a-b-testing-uc-population-samples.md)
+* [Schritt 1: Zielgruppen-Workflow erstellen](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
+* [Schritt 2: Testpopulation konfigurieren](../../delivery/using/a-b-testing-uc-population-samples.md)
 * [Schritt 3: Zwei Versandvorlagen erstellen](../../delivery/using/a-b-testing-uc-delivery-templates.md)
-* [Schritt 4: Versand im Workflow konfigurieren](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
+* [Schritt 4: Sendungen im Workflow konfigurieren](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
 * [Schritt 5: Skript erstellen](../../delivery/using/a-b-testing-uc-script.md)
-* [Schritt 6: Definieren des endgültigen Versands](../../delivery/using/a-b-testing-uc-final-delivery.md)
-* [Schritt 7: Beginn des Workflows](../../delivery/using/a-b-testing-uc-start-workflow.md)
+* [Schritt 6: Endgültigen Versand festlegen](../../delivery/using/a-b-testing-uc-final-delivery.md)
+* [Schritt 7: Workflow starten](../../delivery/using/a-b-testing-uc-start-workflow.md)
 * [Schritt 8: Ergebnis analysieren](../../delivery/using/a-b-testing-uc-analyzing.md)
 
 **Verwandte Themen:**
 
 * [Erste Schritte mit A/B-Tests](../../delivery/using/get-started-a-b-testing.md)
-* [Konfigurieren von A/B-Tests](../../delivery/using/configuring-a-b-testing.md)
+* [A/B-Tests konfigurieren](../../delivery/using/configuring-a-b-testing.md)
