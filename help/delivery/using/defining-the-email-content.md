@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie den E-Mail-Inhalt mit Adobe Campaign Classi
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2064'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ Ein zusätzlicher Tab erlaubt nun die Erstellung eines Inhalts, der automatisch 
 >
 >Weitere Informationen zum Content Management in Adobe Campaign finden Sie in [diesem Abschnitt](../../delivery/using/about-content-management.md).
 
-## Einfügen von Emoticons {#inserting-emoticons}
+## Emoticons einfügen {#inserting-emoticons}
 
 Sie können Emoticons in Ihren E-Mail-Inhalt einfügen.
 
