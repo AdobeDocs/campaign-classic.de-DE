@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Populationsmuster konfigurieren
-description: Erfahren Sie, wie Sie A/B-Tests mit einem speziellen Anwendungsfall durchführen.
+title: Testpopulation konfigurieren
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
-# Populationsmuster konfigurieren {#step-2--configuring-population-samples}
+# Testpopulation konfigurieren {#step-2--configuring-population-samples}
 
 ## Konfiguration der Abfrage {#configuring-the-query-activity}
 
@@ -81,4 +81,4 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-Sie können jetzt die beiden Versandvorlagen erstellen (siehe Schritt 3: Erstellen Sie zwei Versandvorlagen](../../delivery/using/a-b-testing-uc-delivery-templates.md)).[
+Sie können jetzt die beiden Versandvorlagen erstellen (siehe [Schritt 3: Zwei Versandvorlagen erstellen](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
