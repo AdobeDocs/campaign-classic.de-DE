@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2367'
 ht-degree: 48%
 
 ---
@@ -84,7 +84,7 @@ Vor Beginn der Build-Aktualisierung müssen lokale Kunden die folgende Vorbereit
 
 1. Rufen Sie die neueste Version Ihrer [Serverkonfigurationsdatei](../../installation/using/the-server-configuration-file.md) ab.
 
-1. [Laden Sie den neuesten Build](https://experience.adobe.com/de/#/downloads/content/software-distribution/de/campaign.html) herunter. [Weitere Informationen](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html).
+1. [Laden Sie den neuesten Build](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) herunter. [Weitere Informationen](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html).
 
 Sie müssen auch alle [nützlichen Befehlszeilen](../../installation/using/command-lines.md) kennen, bevor Sie eine Buildaktualisierung starten:
 
@@ -414,5 +414,5 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
-* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support-req)
+* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
 * [Gold Standard-Programm](https://helpx.adobe.com/de/campaign/kb/gold-standard.html)
