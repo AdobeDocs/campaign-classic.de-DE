@@ -7,9 +7,9 @@ audience: rns
 content-type: reference
 topic-tags: latest-release-notes
 translation-type: tm+mt
-source-git-commit: e6f6cfe1c1aa0d896fb6400d63b6023a983c6192
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '436'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,7 @@ Als Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade
 
 ## Support und andere nützliche Links{#support}
 
-* [Hilfe und Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
+* [Hilfe und Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
 * [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html)
 * [Aktuelle Dokumentationsaktualisierungen](../../rn/using/documentation-updates.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
