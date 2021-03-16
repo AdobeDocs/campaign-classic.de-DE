@@ -6,11 +6,11 @@ description: Dieser Abschnitt enthält allgemeine Informationen zum Mobile-App-K
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '677'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Sie können das Verhalten der Anwendung dahingehend konfigurieren, dass dem Empf
 
 Der Workflow **[!UICONTROL NMAC Opt-out Management]** (mobileAppOptOutMgt) aktualisiert das Abmelden von Benachrichtigungen auf Smartphones und Tablets. Weitere Informationen zu diesem Workflow finden Sie in der [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign ist mit HTTP/2 APNs kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+Adobe Campaign ist mit HTTP/2-APNs kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
 
 ## Datenfluss {#data-path}
 
@@ -85,7 +85,7 @@ Folgende Informationen werden an Adobe Campaign gemeldet:
 
 ![](assets/nmac_delivery_view.png)
 
-Der Adobe Campaign-Server muss mit dem APNs-Server am 443-Port des iOS-HTTP/2-Connectors in Verbindung treten können.
+Der Adobe Campaign-Server muss in der Lage sein, den APN-Server über Port 443 für den iOS HTTP/2-Connector zu kontaktieren. 
 
 Verwenden Sie folgende Befehle, um die korrekte Funktionsweise zu testen:
 
@@ -101,5 +101,5 @@ Verwenden Sie folgende Befehle, um die korrekte Funktionsweise zu testen:
    telnet gateway.push.apple.com
    ```
 
-Mit dem iOS-HTTP/2-Connector müssen MTA, Webserver und Workflow-Server die APNs an Port 443 kontaktieren können.
+Mit dem iOS HTTP/2-Connector müssen der MTA, der Webserver und der Workflow-Server in der Lage sein, die APNs über Port 443 zu kontaktieren.
 
