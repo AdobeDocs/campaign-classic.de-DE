@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 6d5dbc16ed6c6e5a2e62ceb522e2ccd64b142825
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '528'
 ht-degree: 100%
 
 ---
@@ -23,7 +23,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign Classic? Dann lesen Sie im Folg
 * [Angebote zur Selbsthilfe nutzen](../../platform/using/tutorials.md#how-to-videos)
 * [Erste Schritte und Anwendungsfälle durchgehen](../../platform/using/tutorials.md#step-by-step-guides)
 * Sie konnten keine Antwort finden? [Experten konsultieren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
-* Sie benötigen Support? [Hilfe- und Support-Angebote für Campaign aufrufen](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support)
+* Sie benötigen Support? [Hilfe- und Support-Angebote für Campaign aufrufen](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
 
 ## 1. Wie kann ich Campaign auf die neuste Version aktualisieren? {#how-can-i-upgrade-campaign-to-the-latest-version-}
 
