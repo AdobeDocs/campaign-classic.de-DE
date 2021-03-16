@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie die Mobile App konfigurieren.
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 965aee2e310dd7e35d7a65bf9a1bda5dc8eb0959
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -37,13 +37,13 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 Wenn Sie Campaign als Hybrid- oder gehostete Bereitstellung nutzen, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), um Zugriff auf den Kanal für Push-Benachrichtigungen in Campaign zu erhalten.
 
-Als lokaler Kunde müssen Sie ein integriertes Paket installieren.
+Wenn Sie Campaign als On-Premise-Bereitstellung nutzen, müssen Sie ein integriertes Paket installieren.
 
 >[!CAUTION]
 >
->Weitere Informationen zu integrierten Kampagnen, Best Practices und Empfehlungen finden Sie auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md).
+>Weitere Informationen zu integrierten Campaign-Paketen, Best Practices und Empfehlungen finden Sie auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md).
 
-Installationsschritte sind:
+Die Installationsschritte sind:
 
 1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package-Import...]** in der Adobe-Campaign-Clientkonsole auf den Package-Import-Assistenten zu.
 
