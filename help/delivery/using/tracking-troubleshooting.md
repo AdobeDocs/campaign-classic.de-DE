@@ -1,55 +1,55 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Fehlerbehebung bei der Verfolgung
-description: Dieser Abschnitt enthält allgemeine Fragen zur Tracking-Konfiguration und -Implementierung in Adobe Campaign Classic.
+title: Fehlerbehebung beim Tracking
+description: In diesem Abschnitt finden Sie häufige Fragen zur Konfiguration und Implementierung von Tracking in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: efa36dc08ce4dd59805bb9eba63a4249e14609d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Tracking-Fehlerbehebung {#tracking-troubleshooting}
+# Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 
-In diesem Abschnitt finden Sie allgemeine Fragen zur Tracking-Konfiguration und -Implementierung in Adobe Campaign Classic.
+In diesem Abschnitt finden Sie häufige Fragen zur Konfiguration und Implementierung von Tracking in Adobe Campaign Classic.
 
-## Der Tracking-Workflow schlägt fehl.{#tracking-workflow-failing}
+## Der Tracking-Workflow schlägt fehl. {#tracking-workflow-failing}
 
-Mein Tracking-Workflow schlägt fehl. Wie kann ich die beschädigten Zeilen in der Verfolgungsdatei erkennen?
+Mein Tracking-Workflow schlägt fehl. Wie kann ich die beschädigten Zeilen in der Tracking-Datei erkennen?
 
 >[!NOTE]
 >
 >Nur für Windows verfügbar
 
-Die beschädigte Verfolgungsprotokolldatei .../nl6/var//redir/log/0x000 log kann den Tracking-Workflow stoppen. Um beschädigte Zeilen einfach zu erkennen und sie zu entfernen, um den Verfolgungsarbeitsablauf wiederaufzunehmen, können Sie die folgenden Befehle verwenden.
+Die beschädigte Trackinglog-Datei .../nl6/var/&lt;Instanzname>/redir/log/0x0000 log kann den Tracking-Workflow stoppen. Mit den folgenden Befehlen können Sie beschädigte Zeilen leicht erkennen und entfernen, um den Tracking-Workflow fortzusetzen. 
 
 ### Ich weiß, in welcher Datei die beschädigte Zeile enthalten ist
 
-In diesem Fall sind beschädigte Zeilen in der Datei &quot;0x000000000000A0000.log&quot;zu finden, aber derselbe Prozess kann auf mehrere Dateien angewendet werden - eine nach der anderen.
+In diesem Fall können Sie die beschädigten Zeilen in der Datei 0x00000000000A0000.log finden. Der gleiche Vorgang kann jedoch nacheinander auf eine Reihe von Dateien angewendet werden.
 
 ```
 $ cd {install directory}/var/{instance name}/redir/log
 $ cat 0x00000000000A0000.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
 ```
 
-Anschließend können Sie den Tracking-Workflow beenden, die beschädigten Zeilen löschen und den Workflow neu starten.
+Anschließend können Sie den Tracking-Workflow stoppen, die beschädigten Zeilen löschen und den Workflow neu starten.
 
 ### Ich weiß nicht, in welcher Datei die beschädigte Zeile enthalten ist
 
-1. Verwenden Sie die folgende Befehlszeile, um alle Verfolgungsdateien einzuchecken.
+1. Verwenden Sie die folgende Befehlszeile, um alle Tracking-Dateien zu prüfen.
 
    ```
    $ cd {install directory}/var/{instance name}/redir/log
    $ cat *.log | sed -nE '/^[[:alnum:]]{2}x[[:alnum:]]*\t[0-9T:\.-]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[0-9a-fA-F]*\t[[:alnum:]]*\t[[:alnum:]-]*\t[[:print:]]*\t[[:print:]]*\t[[:print:]]*\t([0-9a-fA-F\.:]*|[0-9a-fA-F\.:]*\t[[:print:]]*|[0-9a-fA-F\.:]*,[[:print:]]*)$/!p'
    ```
 
-1. Der Befehl Liste alle beschädigten Zeilen. Beispiel:
+1. Der Befehl listet alle beschädigten Zeilen auf. Beispiel:
 
    ```
    50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -58,9 +58,9 @@ Anschließend können Sie den Tracking-Workflow beenden, die beschädigten Zeile
 
    >[!NOTE]
    >
-   >Der Wagenrücklauf wurde vor dem Benutzeragent hinzugefügt, um eine bessere Lesbarkeit zu ermöglichen, und spiegelt nicht die effektive Wiedergabe wider.
+   >Der Zeilenumbruch wurde vor dem Benutzeragenten hinzugefügt, um bessere Lesbarkeit zu ermöglichen, und spiegelt nicht das effektive Rendering wider.
 
-1. Führen Sie einen grep-Befehl aus, um die entsprechende Datei zu suchen.
+1. Führen Sie einen grep-Befehl aus, um die entsprechende Datei zu finden.
 
 ```
 $ grep -Rn <Log Id>
@@ -68,7 +68,7 @@ $ grep -Rn <Log Id>
 $ grep -Rn 50x000000000FD7EC86
 ```
 
-1. Suchen Sie das fehlerhafte Protokoll mit dem Dateinamen und der Zeilennummer. Beispiel:
+1. Suchen Sie nach dem fehlerhaften Log mit dem Dateinamen und der Zeilennummer. Beispiel:
 
    ```
    ./0x000000000FD7E000.log:3207:50x000000000FD7EC86 2017-06-24T21:00:50.96 1f506d71 1aeab4b6 1af77020 0 e5155671-4ab7-4ce4-a763-3b82dda6d881 h
@@ -77,19 +77,19 @@ $ grep -Rn 50x000000000FD7EC86
 
    >[!NOTE]
    >
-   >Vor dem Benutzeragent wurde ein Wagenrücklauf hinzugefügt, um eine bessere Lesbarkeit zu ermöglichen, und spiegelt kein effektives Rendering wider.
+   >Ein Zeilenumbruch wurde vor dem Benutzeragenten hinzugefügt, um bessere Lesbarkeit zu ermöglichen, und spiegelt nicht das effektive Rendering wider.
 
-Anschließend können Sie den Tracking-Workflow beenden, die beschädigten Zeilen löschen und den Workflow neu starten.
+Anschließend können Sie den Tracking-Workflow stoppen, die beschädigten Zeilen löschen und den Workflow neu starten.
 
-## Nachverfolgungslinks schlagen gelegentlich fehl{#tracking-links-fail-intermittently}
+## Trackinglinks schlagen gelegentlich fehl {#tracking-links-fail-intermittently}
 
-Beim Versuch, auf die Tracking-Links zuzugreifen, wird folgende Meldung angezeigt:
+Beim Versuch, auf die Trackinglinks zuzugreifen, wird folgende Meldung angezeigt:
 
 `Requested URL '/r/ id=h787bc0,281a4d8,281a4da&amp;p1=1' cannot be found`
 
-1. Greifen Sie auf die URL &lt;redirect_server>/r/test zu und überprüfen Sie, ob die Buildnummer und der localhost von der Anforderung zurückgegeben wurden.
+1. Greifen Sie auf die URL &lt;redirect_server>/r/test zu und überprüfen Sie, ob die Build-Nummer und localhost von der Anfrage zurückgegeben wurden.
 
-1. Überprüfen Sie die &quot;reserveServer&quot;-Konfiguration in der Datei &quot;serverConf.xml&quot;auf den Tracking-Server. Diese Konfiguration sollte sich im Umleitungsmodus befinden.
+1. Überprüfen Sie die spareServer-Konfiguration in der Datei serverConf.xml auf den Tracking-Server. Diese Konfiguration sollte sich im Weiterleitungsmodus befinden.
 
    ```
    <redirection>
@@ -104,37 +104,37 @@ Beim Versuch, auf die Tracking-Links zuzugreifen, wird folgende Meldung angezeig
    </redirection>
    ```
 
-1. Überprüfen Sie manuell, ob die Datei &lt;deliveryID>.xml auf dem Computer in .../nl6/var//redir/url/&lt;YYYY> Verzeichnis (YYYY steht für Versand).
+1. Prüfen Sie manuell, ob die XML-Datei &lt;deliveryID>.xml auf dem Computer im Verzeichnis &quot;... / nl6 / var / &lt;Instanzname> / redir / url / &lt;JJJJ>&quot; vorhanden ist (JJJJ steht für das Versandjahr).
 
-1. Überprüfen Sie manuell, ob &lt;trackingUrlId> in der Datei &lt;deliveryID>.xml enthalten ist.
+1. Prüfen Sie manuell, ob &lt;trackingUrlId> in der Datei &lt;deliveryID>.xml gefunden werden kann.
 
-1. Überprüfen Sie manuell, ob eine BroadlogID im entsprechenden DeliveryID-Versand vorhanden ist.
+1. Prüfen Sie manuell, ob broadlogID im zugehörigen deliveryID-Versand vorhanden ist.
 
-1. Überprüfen Sie die Zugriffsrechte für .xml-Dateien in .../nl6/var//redir/url/year.
+1. Prüfen Sie die Berechtigungen der &lt;deliveryID>.xml-Dateien im Verzeichnis &quot;.../nl6/var/&lt;Instanzname>/redir/url/year&quot;.
 
-   Sie sollten über mindestens 644 Berechtigungen verfügen, damit Apache Tracking-URLs lesen kann, um den angeforderten Link umzuleiten.
+   Sie sollten mindestens die Berechtigung &quot;644&quot; haben, damit Apache die Tracking-URLs lesen kann, um den angeforderten Link weiterzuleiten.
 
-## Aktualisieren der Option NmsTracking_Zeiger? {#updating-option}
+## Aktualisieren der Option &quot;NmsTracking_Pointer&quot;? {#updating-option}
 
-Führen Sie beim Aktualisieren der Option NmsTracking_Zeiger die folgenden Schritte aus:
+Gehen Sie beim Aktualisieren der Option &quot;NmsTracking_Pointer&quot; wie folgt vor:
 
-1. Beenden Sie den Verfolgungsarbeitsablauf.
+1. Stoppen Sie den Tracking-Workflow an.
 
-1. Beenden Sie den TrackingLogd-Dienst.
+1. Stoppen Sie den trackinglogd-Service an.
 
-1. Aktualisieren Sie die Option NmsTracking_Pointer auf den gewünschten Wert.
+1. Aktualisieren Sie die Option &quot;NmsTracking_Pointer&quot; auf den gewünschten Wert.
 
-1. Starten Sie den TrackingLogd-Dienst neu.
+1. Starten Sie den trackinglogd-Service neu.
 
 1. Starten Sie den Tracking-Workflow neu.
 
-## Die Verfolgung funktioniert offenbar nicht mit einigen WebMail {#webmail}
+## Tracking scheint bei einigen WebMail-Services nicht zu funktionieren {#webmail}
 
-Sie können die Klick-Tracking-Formel anpassen und eine benutzerdefinierte Adobe Analytics-Verfolgungsformel angeben.
+Sie können die Klick-Tracking-Formel anpassen und eine benutzerdefinierte Adobe Analytics-Tracking-Formel angeben.
 
-Diese Art der Anpassung muss mit Vorsicht erfolgen, um zu vermeiden, dass zusätzliche Zeilenvorschubzeichen hinzugefügt werden. Alle Linefeed-Zeichen, die außerhalb des JavaScript-Ausdrucks vorhanden sind, werden in der endgültigen Formel angezeigt.
+Diese Art der Anpassung muss mit Vorsicht erfolgen, um zu vermeiden, dass zusätzliche Zeilenvorschubzeichen hinzugefügt werden. Alle Zeilenvorschubzeichen, die außerhalb des JavaScript-Ausdrucks vorhanden sind, sind in der endgültigen Formel enthalten.
 
-Diese Art zusätzlicher Zeilenvorschubzeichen in der Tracking-URL führt in einigen webMail (AOL, GMail usw.) zu Problemen.
+Diese Art von zusätzlichem Zeilenvorschubzeichen in der Tracking-URL führt bei einigen WebMail-Services (AOL, GMail usw.) zu Problemen.
 
 **Erstes Beispiel:**
 
@@ -159,7 +159,7 @@ Diese Art zusätzlicher Zeilenvorschubzeichen in der Tracking-URL führt in eini
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-Um zu verstehen, wo der zusätzliche Zeilenvorschub ist, können Sie JavaScript-Ausdruck durch eine feste Zeichenfolge STRING ersetzen.
+Um zu verstehen, wo sich der zusätzliche Zeilenvorschub befindet, können Sie den JavaScript-Ausdruck durch eine unveränderliche STRING-Zeichenkette ersetzen.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-Um zu verstehen, wo der zusätzliche Zeilenvorschub ist, können Sie JavaScript-Ausdruck durch eine feste Zeichenfolge STRING ersetzen.
+Um zu verstehen, wo sich der zusätzliche Zeilenvorschub befindet, können Sie den JavaScript-Ausdruck durch eine unveränderliche STRING-Zeichenkette ersetzen.
 
 ```
 // Incorrect
@@ -205,24 +205,24 @@ STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 STRING1&cid=STRING2&bid=STRING3&SHPID=STRING4
 ```
 
-## Trackinglogs werden zu langsam {#slow-retrieval} abgerufen
+## Trackinglogs werden zu langsam abgerufen {#slow-retrieval}
 
-Wenn die Instanz nicht direkt Trackinglogs abruft, sondern von einem entfernten Adobe Campaign Classic-Server, werden die Protokolle über den SOAP-Aufruf GetTrackingLogs abgerufen, der im remoteTracking-Schema definiert ist.
+Wenn die Instanz die Trackinglogs nicht direkt abruft, sondern von einem entfernten Adobe Campaign Classic-Server, werden die Logs über den SOAP-Aufruf &quot;GetTrackingLogs&quot; abgerufen, der im remoteTracking-Schema definiert ist.
 
-Mit einer Option in der Datei &quot;serverConf.xml&quot;können Sie die Anzahl der Protokolle festlegen, die mit dieser Methode gleichzeitig abgerufen werden: logCountPerRequest.
+Mit einer Option in der Datei serverConf.xml können Sie die Anzahl der Logs festlegen, die mit dieser Methode gleichzeitig abgerufen werden: logCountPerRequest.
 
-Der Standardwert von logCountPerRequest ist 1000, er kann sich in einigen Fällen als zu klein erweisen. Die zulässigen Werte müssen zwischen 0 und 10.000 liegen.
+Der Standardwert von &quot;logCountPerRequest&quot; ist 1000, was sich in einigen Fällen als zu klein erweisen kann. Die zulässigen Werte müssen zwischen 0 und 10.000 liegen.
 
-## Trackinglogs konnten nicht mit Empfängern {#link-recipients} verknüpft werden
+## Trackinglogs konnten nicht mit Empfängern verknüpft werden {#link-recipients}
 
-In Adobe Campaign Classic soll ein Zielgruppen-Mapping im Hinblick auf Empfänger Schema im Vergleich zu Broadlog-/Trackinglog-Schemas einzigartig sein.
+In Adobe Campaign Classic soll ein Zielgruppen-Mapping hinsichtlich des Empfängerschemas im Vergleich zu Broadlog-/Trackinglog-Schemas eindeutig sein.
 
 ![](assets/tracking-troubleshooting.png)
 
-Es ist nicht möglich, mehrere Targeting-Schema mit demselben Verfolgungsprotokoll-Schema zu verwenden, da der Verfolgungsarbeitsablauf keine Daten mit der Targeting-ID abgleichen kann.
+Es ist nicht möglich, mehrere Zielgruppenschemas mit demselben Trackinglog-Schema zu verwenden, da der Tracking-Workflow keine Daten mit der Zielgruppenbestimmungs-ID abgleichen kann.
 
-Wenn Sie das vordefinierte Zielgruppen-Mapping nicht mit nms:Empfänger verwenden möchten, empfehlen wir die folgenden Vorgehensweisen:
+Wenn Sie das vorkonfigurierte Zielgruppen-Mapping nicht mit &quot;nms:recipient&quot; verwenden möchten, empfehlen wir die folgenden Vorgehensweisen:
 
-* Wenn Sie die benutzerdefinierte Zielgruppendimension verwenden möchten, müssen Sie ein benutzerdefiniertes Schema &quot;wideLog/trackingLog&quot;mit nms:extenlog als Vorlage erstellen (z. B. nms:wideLogRcp, nms:wideLogSvc usw.).
+* Wenn Sie die benutzerdefinierte Zielgruppendimension verwenden möchten, müssen Sie ein benutzerdefiniertes Schema &quot;broadLog/trackingLog&quot; mit &quot;nms:extenlog&quot; als Vorlage erstellen (z. B. &quot;nms:broadLogRcp&quot;, &quot;nms:broadLogSvc&quot; usw.).
 
-* Wenn Sie OOB trackingLogRcp/wideLogRcp verwenden möchten, muss die Zielgruppendimension nms:Empfänger lauten, und die Filterdimension könnte ein benutzerdefiniertes Schema sein.
+* Wenn Sie die vorkonfigurierten trackingLogRcp/broadLogRcp verwenden möchten, muss die Zielgruppendimension &quot;nms:recipient&quot; lauten, und die Filterdimension könnte ein benutzerdefiniertes Schema sein.
