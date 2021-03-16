@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Erstellen eines Zielgruppen-Workflows
-description: Erfahren Sie, wie Sie A/B-Tests mit einem speziellen Anwendungsfall durchführen.
+title: Zielgruppen-Workflow erstellen
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 
-# Erstellen eines Zielgruppen-Workflows {#step-1--creating-a-targeting-workflow}
+# Zielgruppen-Workflow erstellen {#step-1--creating-a-targeting-workflow}
 
 Zielgruppen-Workflows werden im Rahmen von Kampagnen im Tab **[!UICONTROL Zielbestimmungen und Workflows]** erstellt. Im vorliegenden Beispiel enthält der Workflow eine **[!UICONTROL Abfrage]**, eine **[!UICONTROL Aufspaltung]** mit je einem angeschlossenen **[!UICONTROL E-Mail-Versand]**, eine **[!UICONTROL Warten]**-Aktivität, eine **[!UICONTROL JavaScript-Code]**-Aktivität und einen **[!UICONTROL Versand]**.
 
@@ -35,4 +35,4 @@ Zielgruppen-Workflows werden im Rahmen von Kampagnen im Tab **[!UICONTROL Zielbe
 
 ![](assets/use_case_abtesting_targetwkfl_004.png)
 
-Sie können jetzt die Populationsmuster konfigurieren (siehe [Schritt 2: Populationsbeispiele konfigurieren](../../delivery/using/a-b-testing-uc-population-samples.md)).
+Sie können jetzt die Testpopulation konfigurieren (siehe [Schritt 2: Testpopulation konfigurieren](../../delivery/using/a-b-testing-uc-population-samples.md)).
