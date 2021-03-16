@@ -9,10 +9,10 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 25673f33c626edd5b7f4c7ba240364b3ea8d616a
+source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 98%
+source-wordcount: '626'
+ht-degree: 74%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Die alte OAuth-Authentifizierungsmethode wird am 30. April 2021 eingestellt. [Mehr dazu](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt. [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 >
->Beachten Sie, dass während dieser Umstellung auf Adobe I/O einige eingehende Trigger verloren gehen können.
+>Beachten Sie, dass bei diesem Wechsel zu [!DNL Adobe I/O] einige eingehende Trigger verloren gehen können.
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
@@ -36,7 +36,7 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 
 ## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
 
-1. Rufen Sie Adobe I/O auf und melden Sie sich mit der Systemadministratorberechtigung für die IMS-Organisation an.
+1. Greifen Sie auf [!DNL Adobe I/O] zu und melden Sie sich mit der Systemadministrator-Berechtigung für die IMS-Organisation an.
 
    >[!NOTE]
    >
@@ -66,17 +66,22 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 
 1. Wenn Ihre Client-ID leer war, wählen Sie **[!UICONTROL Generate a key pair]** (Schlüsselpaar generieren) aus, um ein Paar aus öffentlichem und privatem Schlüssel zu erstellen.
 
+   Die Schlüssel werden dann automatisch mit einem Standardablaufdatum von 365 Tagen heruntergeladen. Nach dem Ablauf müssen Sie ein neues Schlüsselpaar erstellen und die Integration in der Konfigurationsdatei aktualisieren. Mit Option 2 können Sie Ihren **[!UICONTROL Öffentlichen Schlüssel]** mit einem längeren Ablaufdatum manuell erstellen und hochladen.
+
    ![](assets/do-not-localize/adobe_io_4.png)
 
-1. Laden Sie den öffentlichen Schlüssel hoch und klicken Sie auf **[!UICONTROL Next]** (Weiter).
+1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Wählen Sie das Produktprofil namens **Analytics-&lt; Organisationsname >** und klicken Sie auf **[!UICONTROL Save configured API]** (Konfigurierte API speichern).
+1. Wählen Sie ein vorhandenes **[!UICONTROL Produkt-Profil]** oder erstellen Sie bei Bedarf ein neues. Klicken Sie anschließend auf **[!UICONTROL Konfigurierte API speichern]**.
+
+   Weitere Informationen zu [!DNL Analytics] **[!UICONTROL Produktdokumentationen]** finden Sie in der [Adobe Analytics-Profil](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console).
 
    ![](assets/do-not-localize/adobe_io_6.png)
 
-1. Wählen Sie in Ihrem Projekt **[!UICONTROL Service Account (JWT)]** (Dienstkonto (JWT)) aus und kopieren Sie die folgenden Informationen:
+1. Wählen Sie in Ihrem Projekt **[!UICONTROL Adobe Analytics]** und kopieren Sie die folgenden Informationen unter **[!UICONTROL Dienstkonto (JWT)]**:
+
    * **[!UICONTROL Client ID]** (Client-ID)
    * **[!UICONTROL Client Secret]** (Client-Geheimnis)
    * **[!UICONTROL Technical account ID]** (Kennung des technischen Kontos)
@@ -96,9 +101,17 @@ Um die Projektanmeldedaten in Adobe Campaign hinzuzufügen, führen Sie als neol
 nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
 ```
 
->[!NOTE]
->
->Sie sollten den privaten Schlüssel im Base64-UTF-8-Format kodieren. Achten Sie darauf, vor dem Kodieren die neue Zeile aus dem Schlüssel zu entfernen (mit Ausnahme des privaten Schlüssels). Der private Schlüssel muss mit dem für die Erstellung der Integration verwendeten Schlüssel identisch sein. Sie können [diese Website](https://www.base64encode.org/) verwenden, um die Base64-Kodierung des privaten Schlüssels zu testen.
+Der private Schlüssel sollte im Base64-UTF-8-Format kodiert werden. Gehen Sie dabei folgendermaßen vor:
+
+1. Verwenden Sie den privaten Schlüssel, der im Abschnitt [Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts](#creating-adobe-io-project) generiert wurde. Der private Schlüssel muss mit dem für die Erstellung der Integration verwendeten Schlüssel identisch sein.
+
+1. Kodieren Sie den privaten Schlüssel mit dem folgenden Befehl: ```base64 ./private.key```.
+
+   >[!NOTE]
+   >
+   >Zusätzliche Zeilen können manchmal automatisch hinzugefügt werden, wenn der private Schlüssel kopiert/eingefügt wird. Vergessen Sie nicht, diese zu entfernen, bevor Sie Ihren privaten Schlüssel kodieren.
+
+1. Verwenden Sie Ihren neu generierten privaten Schlüssel, der im Base64-UTF-8-Format kodiert ist, um den oben beschriebenen Befehl auszuführen. 
 
 ## Schritt 3: Aktualisieren des Pipelined-Tags {#update-pipelined-tag}
 
