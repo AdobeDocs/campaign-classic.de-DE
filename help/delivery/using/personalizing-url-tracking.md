@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: URL-Verfolgungsoptionen konfigurieren
-description: URL-Verfolgungsoptionen konfigurieren
+title: URL-Tracking-Optionen konfigurieren
+description: URL-Tracking-Optionen konfigurieren
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 019c982dcf040fb2dc2a1c82d4a2ff5a964ec5fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# Konfigurieren von URL-Verfolgungsoptionen{#personalizing-url-tracking}
+# URL-Tracking-Optionen konfigurieren{#personalizing-url-tracking}
 
 Erweiterte Tracking-Parameter können im Versand-Assistenten konfiguriert werden. Klicken Sie hierfür in der Symbolleiste auf die Schaltfläche **[!UICONTROL Tracking &amp; Bilder]**.
 
