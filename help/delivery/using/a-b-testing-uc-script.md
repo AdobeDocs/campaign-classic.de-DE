@@ -2,20 +2,20 @@
 solution: Campaign Classic
 product: campaign
 title: Skript erstellen
-description: Erfahren Sie, wie Sie A/B-Tests mit einem speziellen Anwendungsfall durchführen.
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Erstellen des Skripts {#step-5--creating-the-script}
+# Skript erstellen {#step-5--creating-the-script}
 
 Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Scripts. Das Script ruft die Information bezüglich der höchsten Öffnungsrate ab und kopiert den Inhalt der Siegerversion in den endgültigen Versand.
 
@@ -170,4 +170,4 @@ Im zuvor dargestellten Beispiel wird die endgültige Version anhand der Öffnung
 * Niedrigste Abmelderate: `[indicators/@optOutRatio]`,
 * Höchster Gesamtumsatz infolge des Erhalts der Nachricht: `[indicators/@amount]`.
 
-Sie können jetzt den endgültigen Versand definieren (siehe [Schritt 6: Definieren Sie den endgültigen Versand](../../delivery/using/a-b-testing-uc-final-delivery.md)).
+Sie können jetzt den endgültigen Versand festlegen (siehe [Schritt 6: Endgültigen Versand festlegen](../../delivery/using/a-b-testing-uc-final-delivery.md)).
