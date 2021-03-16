@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
 source-wordcount: '4213'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -25,18 +25,18 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 Eine neue Seite mit Richtlinien und Verweisen wurde hinzugefügt, um Unterstützung für Campaign Classic zu erhalten. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
 
-Es wurde ein neuer Abschnitt mit Best Practices und Überprüfungen für Sicherheit und Datenschutz hinzugefügt. [Mehr dazu](../../installation/using/get-started-security-privacy.md)
+Es wurde ein neuer Abschnitt zu Best Practices und Überprüfungen für Sicherheit und Datenschutz hinzugefügt. [Mehr dazu](../../installation/using/get-started-security-privacy.md)
 
-Das [Kapitel zur Verwaltung von Berechtigungen](../../platform/using/access-management.md) wurde verbessert und in verschiedene Abschnitte unterteilt, einschließlich Details zu [Operatoren](../../platform/using/access-management-operators.md) , [Benutzergruppen](../../platform/using/access-management-groups.md) , [Spezifische Berechtigungen](../../platform/using/access-management-named-rights.md) und [Ordnerverwaltung](../../platform/using/access-management-folders.md).
+Das [Kapitel zur Verwaltung von Berechtigungen](../../platform/using/access-management.md) wurde überarbeitet und in verschiedene Abschnitte unterteilt, einschließlich Details zu [Operatoren](../../platform/using/access-management-operators.md) , [Benutzergruppen](../../platform/using/access-management-groups.md), [spezifischen Berechtigungen](../../platform/using/access-management-named-rights.md) und [Ordnerverwaltung](../../platform/using/access-management-folders.md).
 
-Erfahren Sie, wie Sie Ihre Kampagnen auf diesen neuen Seiten erstellen und verwalten:
-* [Kampagnenvorlagen erstellen und konfigurieren](../../campaign/using/marketing-campaign-templates.md)
-* [Sendungen zur Marketing-Kampagne](../../campaign/using/marketing-campaign-deliveries.md)
-* [Wählen Sie die Audience Ihrer Kampagnen](../../campaign/using/marketing-campaign-target.md)
-* [Zugehörige Dokumente verwalten](../../campaign/using/marketing-campaign-assets.md)
+Näheres zur Erstellung und Verwaltung von Kampagnen finden Sie auf den folgenden Seiten:
+* [Erstellen und Konfigurieren von Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md)
+* [Sendungen zu einer Marketing-Kampagne](../../campaign/using/marketing-campaign-deliveries.md)
+* [Wählen der Audience Ihrer Kampagnen](../../campaign/using/marketing-campaign-target.md)
+* [Verwalten der zugehörigen Dokumente](../../campaign/using/marketing-campaign-assets.md)
 * [Einrichten und Verwalten des Genehmigungsprozesses](../../campaign/using/marketing-campaign-approval.md)
 
-Im Abschnitt **[!UICONTROL Erweiterte JavaScript]**-Aktivität finden Sie Informationen dazu, wie Sie die Aufgabe.setCompleted()-Methode verwenden, um die Aufgabe zu beenden und künftige Rückrufe zu verhindern. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+Im Abschnitt zur Aktivität **[!UICONTROL Erweitertes JavaScript]** finden Sie Informationen dazu, wie Sie die Methode „task.setCompleted()“ verwenden können, um die Aufgabe zu beenden und künftige Rückrufe zu verhindern. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
 ## Februar 2021 {#release-21.1}
 
