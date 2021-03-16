@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurieren der Versand
-description: Erfahren Sie, wie Sie A/B-Tests mit einem speziellen Anwendungsfall durchführen.
+title: Sendungen konfigurieren
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '251'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# Konfigurieren der Versand im Workflow {#step-4--configuring-the-deliveries-in-the-workflow}
+# Sendungen im Workflow konfigurieren {#step-4--configuring-the-deliveries-in-the-workflow}
 
 Der nächste Schritt besteht aus der Konfiguration der Sendungen. Sie sind für die drei Populationen bestimmt, die im vorherigen Schritt [Schritt 2: Konfiguration der Testpopulation](#step-2--configuring-population-samples) erstellt wurden. Die ersten beiden Sendungen ermöglichen es Ihnen, verschiedene Inhalte an Population A und B zu senden. Die dritte Sendung ist für jene Population bestimmt, die weder A noch B erhalten hat. Der Inhalt wird durch ein Skript berechnet und ist entweder mit A oder B identisch, je nachdem, welcher Versand die höchste Öffnungsrate erzielt hat. Wir müssen eine Wartezeit für die dritte Sendung konfigurieren, um das Ergebnis der Sendungen A und B zu ermitteln. Aus diesem Grund beinhaltet die dritte Sendung eine Aktivität vom Typ **[!UICONTROL Warten]**.
 
@@ -52,4 +52,4 @@ Der nächste Schritt besteht aus der Konfiguration der Sendungen. Sie sind für 
 
    ![](assets/use_case_abtesting_createdeliveries_008.png)
 
-Sie können jetzt das Skript erstellen (siehe Schritt 5: Erstellen Sie das Skript](../../delivery/using/a-b-testing-uc-script.md)).[
+Sie können jetzt das Skript erstellen (siehe [Schritt 5: Skript erstellen](../../delivery/using/a-b-testing-uc-script.md)).
