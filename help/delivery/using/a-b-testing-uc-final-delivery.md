@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Definieren des endgültigen Versands
-description: Erfahren Sie, wie Sie A/B-Tests mit einem speziellen Anwendungsfall durchführen.
+title: Endgültigen Versand festlegen
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '121'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 
-# Definieren des endgültigen Versands {#step-6--defining-the-final-delivery}
+# Endgültigen Versand festlegen {#step-6--defining-the-final-delivery}
 
 Nachdem das Script zur Ermittlung des Gewinners des A/B-Tests erstellt wurde, können Sie die Parameter des endgültigen Versands definieren.
 
@@ -28,4 +28,4 @@ Nachdem das Script zur Ermittlung des Gewinners des A/B-Tests erstellt wurde, k�
 
 Durch die Vorbereitung des in der Transition spezifizierten Versands (definiert durch die **[!UICONTROL Javascript-Code]**-Aktivität), können Sie sie im Anschluss validieren und den Versand starten, wie im nächsten Schritt beschrieben wird.
 
-Sie können jetzt den Workflow Beginn haben (siehe [Schritt 7: Beginn des Workflows](../../delivery/using/a-b-testing-uc-start-workflow.md)).
+Sie können jetzt den Workflow starten (siehe [Schritt 7: Workflow starten](../../delivery/using/a-b-testing-uc-start-workflow.md)).
