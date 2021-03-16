@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 5639f08ad709597d5f5c9e6bbd6932cffcbde40f
+source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2018'
 ht-degree: 100%
 
 ---
@@ -168,7 +168,7 @@ Ja. Der Server wird während des Upgrades deaktiviert, um die Datenintegrität z
 
 Wenn nach einem Build-Upgrade Probleme auftreten, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Die Adobe-Kundenunterstützung plant den Vorgang und erstellt das Ticket zum Build-Upgrade.
 
-Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html#acc-support-req).
+Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html).
 
 ## Checkliste für Build-Upgrades {#check-list}
 
@@ -205,5 +205,5 @@ dass alle Inhalte vorhanden sind und angezeigt werden.
 
 * [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
-* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html#acc-support-req)
+* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
 * [Gold Standard-Programm](https://helpx.adobe.com/campaign/kb/gold-standard.html)
