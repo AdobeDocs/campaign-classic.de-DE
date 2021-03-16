@@ -6,11 +6,11 @@ description: Getrackte Links konfigurieren
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5e6a30cd70c6eb21398fda4ac0572fcefa780e0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '497'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Der Begriff Tracking bezieht sich auf den Umgang der Empfänger mit Nachrichten,
 
 >[!NOTE]
 >
->Die Links in E-Mail-Inhalten, die Personalisierung enthalten, müssen eine bestimmte Syntax verfolgen. Weitere Informationen zum Hinzufügen von Links in E-Mails, die personalisiert werden können und die Support-Verfolgung unterstützen, finden Sie in [diesem Abschnitt](../../delivery/using/tracking-personalized-links.md).
+>Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen eine bestimmte Syntax, um nachverfolgt zu werden. Weitere Informationen zum Hinzufügen von Links in E-Mails, die personalisiert werden können und Tracking unterstützen, finden Sie in [diesem Abschnitt](../../delivery/using/tracking-personalized-links.md).
 
 
 
