@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 translation-type: tm+mt
-source-git-commit: 54ba9d2ee05b1bd7de7616142e8ad6bcbac5f8eb
+source-git-commit: bc35a95d7deed1f0fd432ef8639f307ecf4d8e1f
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
@@ -38,8 +38,8 @@ Für jeden Versand steht ein eigenes Dashboard zur Verfügung. Sie können damit
 
 Sie sollten einige Richtlinien befolgen, um sicherzustellen, dass Ihre Sendungen gut funktionieren. Informationen zu häufigen Problemen, die bei Sendungen auftreten können, sind ebenfalls verfügbar, damit Sie Ihre Sendungen effizient ausführen können.
 
-* [Versandleistung und Best Practices](../../delivery/using/list-of-deliveries.md)
-* [Fehlerbehebung beim Versand ](../../delivery/using/delivery-dashboard.md)
+* [Versandleistung und Best Practices](../../delivery/using/delivery-performances.md)
+* [Fehlerbehebung beim Versand ](../../delivery/using/delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
