@@ -6,11 +6,11 @@ description: Versand konfigurieren und senden
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1617'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->Standardmäßig kann nur der für den Versand verantwortliche Benutzer den Start desselben auslösen. Damit andere Benutzer (oder Benutzergruppen) einen Versand starten können, müssen diese im Feld **[!UICONTROL Versand-Start:]** als Validierungsverantwortliche hinzugefügt werden. Weiterführende Informationen erfahren Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+>Standardmäßig kann nur der für den Versand verantwortliche Benutzer den Start desselben auslösen. Damit andere Benutzer (oder Benutzergruppen) einen Versand starten können, müssen diese im Feld **[!UICONTROL Versand-Start:]** als Validierungsverantwortliche hinzugefügt werden. Weiterführende Informationen erhalten Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
 ## Zusätzliche Versandparameter {#delivery-additiona-parameters}
 
@@ -35,21 +35,21 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
    >
    >Bei Duplizierung eines Versands wird dieser Parameter automatisch auf 0 zurückgesetzt.
 
-* **[!UICONTROL Senden mit mehreren Schüben]**: Weitere Informationen finden Sie unter  [Senden mit mehreren Schüben](#sending-using-multiple-waves).
+* **[!UICONTROL In mehreren Schüben versenden]**: Weitere Informationen hierzu finden Sie unter [In mehreren Schüben versenden](#sending-using-multiple-waves).
 
 * **[!UICONTROL SMTP-Versand testen]**: Mit dieser Option können Sie das Senden über SMTP testen. Der Versand wird bis zur Verbindung mit dem SMTP-Server verarbeitet, jedoch nicht gesendet.
 
    >[!NOTE]
    >
-   >Bei Mid-Sourcing-Installationen ist von der Verwendung dieser Option abzuraten, damit der MTA nicht aufgerufen wird. Weitere Informationen zum Konfigurieren eines SMTP-Servers finden Sie unter [in diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >Bei Mid-Sourcing-Installationen ist von der Verwendung dieser Option abzuraten, damit der MTA nicht aufgerufen wird. Weitere Informationen zur Konfiguration eines SMTP-Servers finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
 * **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 
 ## Versand bestätigen {#confirming-delivery}
 
-Wenn der Versand konfiguriert ist und gesendet werden kann, stellen Sie sicher, dass Sie die Versand-Analyse ausgeführt haben.
+Wenn der Versand konfiguriert wurde und versandbereit ist, stellen Sie sicher, dass Sie die Versandanalyse ausgeführt haben.
 
-Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analyze]**. Weitere Informationen hierzu finden Sie unter [Starten der Analyse](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Klicken Sie dazu auf **[!UICONTROL Senden]**, wählen Sie die gewünschte Aktion aus und klicken Sie auf **[!UICONTROL Analysieren]**. Weitere Informationen dazu finden Sie unter [Analyse starten](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
 
 ![](assets/s_ncs_user_email_del_send.png)
 
@@ -173,9 +173,9 @@ Vorübergehend nicht zustellbare Nachrichten aufgrund eines **Softbounce** oder 
 
 >[!IMPORTANT]
 >
->Bei gehosteten oder hybriden Installationen werden die Wiederholungseinstellungen im Versand nicht mehr von der Kampagne verwendet, wenn Sie auf [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Versuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
+>Bei gehosteten oder hybriden Installationen werden die Einstellungen für den erneuten Versuch im Versand nicht mehr von Campaign verwendet, wenn Sie auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Weitere Versuche aufgrund von Softbounces und die Zeitdauer zwischen ihnen werden durch den Enhanced MTA bestimmt, basierend auf Typ und Prioritätsstufe der Bounce-Antworten, die von der E-Mail-Domain der Nachricht zurückgegeben werden.
 
-Bei lokalen Installationen und gehosteten/hybriden Installationen mit der Legacy-Kampagne MTA zeigt der zentrale Bereich des Registers **[!UICONTROL Versand]** für Versand-Parameter an, wie viele weitere Zustellversuche am Tag nach dem Versand ausgeführt werden sollen und wie lange der Zeitraum zwischen den weiteren Zustellversuchen mindestens dauert.
+Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, gibt der zentrale Abschnitt der Registerkarte **[!UICONTROL Versand]** für die Versandparameter an, wie viele weitere Versuche am Tag nach dem Versand durchgeführt werden sollen, und den Mindestzeitabstand zwischen den Versuchen. 
 
 ![](assets/s_ncs_user_wizard_retry_param.png)
 
@@ -193,7 +193,7 @@ Der Nachrichtenversand inklusive aller Neuversuche erfolgt innerhalb eines besti
 
    >[!IMPORTANT]
    >
-   >Bei gehosteten oder hybriden Installationen wird die **[!UICONTROL Dauer des Versands]** in den E-Mail-Versänden Ihrer Kampagne nur verwendet, wenn sie auf **3,5 Tage oder weniger** eingestellt ist. [](../../delivery/using/sending-with-enhanced-mta.md) Wenn Sie einen Wert von mehr als 3,5 Tagen definieren, wird dieser nicht berücksichtigt.
+   >Wenn Sie auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben, wird bei gehosteten oder hybriden Installationen die Einstellung **[!UICONTROL Versandlaufzeit]** in Ihren Campaign-E-Mail-Sendungen nur verwendet, wenn sie auf **3,5 Tage oder weniger** festgelegt ist. Wenn Sie einen Wert von mehr als 3,5 Tagen definieren, wird dieser nicht berücksichtigt.
 
 * **Gültigkeit von Ressourcen**: Das Feld **[!UICONTROL Gültigkeit]** wird für hochgeladene Ressourcen verwendet, hauptsächlich für die Mirrorseite und Bilder. Die Gültigkeitsdauer der Ressourcen auf dieser Seite ist begrenzt, um Speicherkapazität zu sparen.
 
