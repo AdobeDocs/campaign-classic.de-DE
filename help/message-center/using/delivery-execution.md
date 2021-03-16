@@ -6,11 +6,11 @@ description: Transaktionsnachrichten-Versand
 audience: message-center
 content-type: reference
 topic-tags: event-processing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '230'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Diese Gr
 
 >[!NOTE]
 >
->Bei gehosteten oder hybriden Installationen können, wenn Sie auf [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben, alle Transaktionsnachrichten auch mit dem Adobe Campaign Enhanced MTA gesendet werden, um die Auslieferbarkeit, den Durchsatz und die Absprungbehandlung zu verbessern. Alle Auswirkungen sind dieselben wie bei standardmäßigen Marketing-Nachrichten.
+>Bei gehosteten oder hybriden Installationen können nach einem Upgrade auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) auch alle Transaktionsmeldungen mit dem Adobe Campaign Enhanced MTA gesendet werden, um die Zustellbarkeit, den Durchsatz und die Bearbeitung von Bounces zu verbessern. Alle Auswirkungen sind dieselben wie bei standardmäßigen Marketing-Nachrichten.
 
 ## Überwachung der Transaktionsnachrichten {#transactional-message-monitoring}
 
