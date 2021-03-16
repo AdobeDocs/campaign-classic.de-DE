@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
 workflow-type: tm+mt
 source-wordcount: '1112'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -31,13 +31,13 @@ _2. März 2021_
 
 Build 9032@10c2709 umfasst die folgende Fehlerkorrektur:
 
-* Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Versänden verhinderte. (NEO-31453, NEO-31454)
+* Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Sendungen verhinderte. (NEO-31453, NEO-31454)
 
-**Nur eine Konsolenaktualisierung ist obligatorisch. Es ist keine Serveraktualisierung erforderlich.**
+**Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie, wie Sie das Konsolenupdate allen Endbenutzern [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md) vorschlagen.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
 
 _22. Dezember 2020_
@@ -46,7 +46,7 @@ _22. Dezember 2020_
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Trigger-Integration über die Auth-Authentifizierung verwenden, müssen Sie zur Adobe I/O wechseln, wie auf dieser Seite [beschrieben. ](../../integrations/using/configuring-adobe-io.md) Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt.
 
 >
 >
@@ -123,7 +123,7 @@ Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 6{#gs-6}
 
-_Freitag, 9. März 2020_
+_9. März 2020_
 
 Build 9032@19f73c5 umfasst die folgende Fehlerkorrektur:
 
@@ -139,7 +139,7 @@ Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
 ## ![](assets/do-not-localize/red_2.png) Gold Standard Version 4{#gs-4}
 
-_11. Dezember 2019_
+_11. Dezember 2019_
 
 Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
