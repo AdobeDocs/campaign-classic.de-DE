@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Workflow starten
-description: Erfahren Sie, wie Sie A/B-Tests mit einem speziellen Anwendungsfall durchführen.
+description: Erfahren Sie anhand eines speziellen Anwendungsbeispiels, wie Sie A/B-Tests durchführen.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 50a10e16f320a67cb4ad0e31c1cbe8a9365b7887
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '89'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -31,4 +31,4 @@ ht-degree: 74%
 
 1. Validieren Sie Zielgruppe und Inhalt der endgültigen Version und bestätigen Sie die Absendung.
 
-Sie können jetzt das Ergebnis analysieren (siehe Schritt 8: Analysieren Sie das Ergebnis](../../delivery/using/a-b-testing-uc-analyzing.md)).[
+Sie können jetzt das Ergebnis analysieren (siehe [Schritt 8: Ergebnis analysieren](../../delivery/using/a-b-testing-uc-analyzing.md)).
