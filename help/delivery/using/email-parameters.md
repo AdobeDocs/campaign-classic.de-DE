@@ -2,28 +2,28 @@
 solution: Campaign Classic
 product: campaign
 title: E-Mail-Parameter in Adobe Campaign Classic konfigurieren
-description: Erfahren Sie mehr zu den Optionen und Einstellungen, die spezifisch für E-Mail-Versand sind.
+description: Erfahren Sie mehr zu den Optionen und Einstellungen, die spezifisch für den E-Mail-Versand sind.
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e84387c7c396c60c429c3f625870a97a7fdaef5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '966'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # E-Mail-Parameter {#email-parameters}
 
-Dieser Abschnitt enthält die Optionen und Parameter, die spezifisch für E-Mail-Versand sind.
+In diesem Abschnitt finden Sie die Optionen und Parameter, die spezifisch für den E-Mail-Versand sind.
 
 ## E-Mail-BCC {#email-bcc}
 
-In Adobe Campaign können Sie mit der BCC-Option E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu ihrer Versandzielgruppe hinzufügen.
+In Adobe Campaign können Sie mit der BCC-Option E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen.
 
-Sobald die Option aktiviert ist, wird eine genaue Kopie aller gesendeten Nachrichten für diesen Versand aufbewahrt.
+Sobald die Option aktiviert ist, wird eine exakte Kopie aller gesendeten Nachrichten für diesen Versand aufbewahrt.
 
 Weiterführende Informationen zur E-Mail-BCC-Konfiguration und zu Best Practices finden Sie in [diesem Abschnitt](../../installation/using/email-archiving.md).
 
@@ -31,7 +31,7 @@ Weiterführende Informationen zur E-Mail-BCC-Konfiguration und zu Best Practices
 >
 >E-Mail-BCC ist eine optionale Funktion. Bitte prüfen Sie Ihren Lizenzvertrag und kontaktieren Sie den Ansprechpartner für Ihr Konto, um diese Funktion zu aktivieren.
 
-Beim Erstellen eines neuen Versands oder einer neuen Versandvorlage ist E-Mail-BCC nicht standardmäßig aktiviert. Sie müssen sie manuell auf der Ebene des E-Mail-Versands oder der Versandvorlage aktivieren.
+Beim Erstellen eines neuen Versands oder einer neuen Versandvorlage ist E-Mail-BCC nicht standardmäßig aktiviert. Sie müssen die Funktion auf der E-Mail-Versand- oder Versandvorlagenebene manuell aktivieren.
 
 Gehen Sie wie folgt vor, um E-Mail-BCC für eine E-Mail-Versandvorlage zu aktivieren:
 
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um E-Mail-BCC für eine E-Mail-Versandvorlage zu aktivi
 
 >[!NOTE]
 >
->Wenn die an eine BCC-Adresse gesendeten E-Mails geöffnet und angeklickt werden, wird dies in **[!UICONTROL Gesamtöffnungen]** und **[!UICONTROL Klicks]** der Versandanalyse berücksichtigt, was zu falschen Berechnungen führen könnte.
+>Wenn die an eine BCC-Adresse gesendeten E-Mails geöffnet und angeklickt werden, wird dies in der Versandanalyse in **[!UICONTROL Gesamtöffnungen]** und **[!UICONTROL Klicks]** berücksichtigt, was zu falschen Berechnungen führen könnte.
 
 ## Wahl des Nachrichtenformats {#selecting-message-formats}
 
@@ -91,9 +91,9 @@ In den Versandeigenschaften kann die Erzeugung der Seite über das Feld **[!UICO
 
 Außerdem stehen die folgenden Modi zur Verfügung:
 
-* **[!UICONTROL Mirrorseitenerzeugung forcieren]**: Erstellt eine Mirrorseite, selbst wenn im Versandinhalt kein entsprechender Link enthalten ist.
-* **[!UICONTROL Keine Mirrorseite erzeugen]**: Erstellt keine Mirrorseite, selbst wenn im Versandinhalt der entsprechende Link enthalten ist.
-* **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Diese Option ermöglicht den Zugriff auf den Inhalt der Mirrorseite einschließlich aller Personalisierungsinformationen von den Versandlogs aus. Klicken Sie hierfür nach Durchführung des Versands auf den Tab **[!UICONTROL Versand]** und wählen Sie die Zeile des Empfängers aus, dessen Mirrorseite Sie ansehen möchten. Klicken Sie dann auf den Link **[!UICONTROL Mirrorseite dieser Nachricht anzeigen...]**.
+* **[!UICONTROL Mirrorseitenerzeugung forcieren]**: Erstellt eine Mirror-Seite, selbst wenn im Versandinhalt kein entsprechender Link enthalten ist.
+* **[!UICONTROL Keine Mirrorseite erzeugen]**: Erstellt keine Mirror-Seite, selbst wenn im Versandinhalt der entsprechende Link enthalten ist.
+* **[!UICONTROL Von der Nachrichtenkennung aus zugängliche Mirrorseite erzeugen]**: Diese Option ermöglicht den Zugriff auf den Inhalt der Mirror-Seite einschließlich aller Personalisierungsinformationen von den Versand-Logs aus. Klicken Sie hierfür nach Durchführung des Versands auf den Tab **[!UICONTROL Versand]** und wählen Sie die Zeile des Empfängers aus, dessen Mirror-Seite Sie ansehen möchten. Klicken Sie dann auf den Link **[!UICONTROL Mirrorseite dieser Nachricht anzeigen...]**.
 
    ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -115,11 +115,11 @@ Im Tab **[!UICONTROL SMTP]** der Versandeigenschaften lässt sich der Umgang mit
 
 Standardmäßig werden Bounce Messages an die im Softwareverteilungs-Assitenten der Plattform angegebene Fehleradresse gesendet. Es besteht jedoch die Möglichkeit, für einen Versand durch Abwählen der Standardoption eine spezifische Fehleradresse anzugeben.
 
-Sie können auch eine bestimmte Adresse in diesem Bildschirm definieren, um die Gründe für Absprungmeldungen zu untersuchen, wenn diese nicht automatisch durch die Anwendung qualifiziert werden konnten. Mit dem Symbol **Hinzufügen personalisierten Feldern** können Sie für jedes dieser Felder Personalisierungsparameter hinzufügen.
+Sie können eine weitere Adresse angeben, die es ermöglicht, die Unzustellbarkeitsursache derjenigen E-Mails zu untersuchen, bei denen das Programm sie nicht automatisch erkannt hat. Bei beiden Feldern können Sie durch Klick auf das entsprechende Symbol **Personalisierungsfelder hinzufügen**.
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Weitere Informationen zur Absprung-Mail-Verwaltung finden Sie in [diesem Abschnitt](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschnitt](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
 
 ## SMTP-Header hinzufügen {#adding-smtp-headers}
 
