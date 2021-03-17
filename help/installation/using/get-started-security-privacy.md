@@ -7,17 +7,17 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 45a77d3fc143ab9c6f9f17ab6118f8816254f6fd
+source-git-commit: 922603492d2c98d751683d3aa481e9ab19bca70c
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 65%
+source-wordcount: '450'
+ht-degree: 58%
 
 ---
 
 
 # Erste Schritte mit Sicherheit und Datenschutz {#get-started-security-privacy}
 
-In diesem Abschnitt erfahren Sie mehr über die wichtigsten Aspekte der Sicherheit und des Datenschutzes.
+In diesem Abschnitt erfahren Sie mehr über die wichtigsten Aspekte der Sicherheit und des Datenschutzes. Einige Konfigurationen können nur von Kunden vor Ort durchgeführt werden.
 
 ## Datenschutz
 
@@ -44,7 +44,7 @@ Zugriffsverwaltung ist ein wichtiger Teil der Sicherheitshärtung. Im Folgenden 
 
 [Mehr dazu](../../installation/using/access-management.md)
 
-## Richtlinien für Skripterstellung und Kodierung
+## Richtlinien für Skripterstellung und Codierung
 
 <img src="assets/do-not-localize/icon_scripting.svg" width="60px">
 
@@ -52,9 +52,9 @@ Beachten Sie bei der Entwicklung in Adobe Campaign (Workflows, Javascript, JSSP 
 
 * **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
 
-* **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
+* **Sichern Sie das Datenmodell**: Verwenden Sie Spezifische Berechtigungen, um Operatoraktionen zu begrenzen, Systemkomponenten hinzuzufügen (sysFilter).
 
-* **Hinzufügen von Captchas in Webanwendungen**: Hier erfahren Sie, wie Sie Captchas in Ihren öffentlichen Landingpages und Anmeldeseiten hinzufügen können.
+* **hinzufügen captchas in Webanwendungen**: Erfahren Sie, wie Sie auf Ihren öffentlichen Landingpages und Abonnement-Seiten captchas hinzufügen.
 
 [Mehr dazu](../../installation/using/scripting-coding-guidelines.md)
 
@@ -68,7 +68,7 @@ Sie müssen außerdem die Sicherheit Ihrer Datenbank-Engine beachten.
 
 [Mehr dazu](../../installation/using/network-database.md)
 
-## Serverkonfiguration
+## Konfiguration des Servers
 
 <img src="assets/do-not-localize/icon_server.svg" width="60px">
 
@@ -92,9 +92,9 @@ Alle Server müssen konfiguriert werden. Die Konfigurationsdateien sind vom Typ 
 
 Beim Konfigurieren des Webservers (Apache/IIS) sollten verschiedene Best Practices befolgt werden:
 
-* Alte SSL-Version und -Ziffern deaktivieren:
-* Entfernen Sie die TRACE-Methode:
-* Entfernen Sie das Banner:
-* Begrenzen Sie die Größe der Abfrage, um zu verhindern, dass wichtige Dateien hochgeladen werden.
+* Deaktivieren Sie die alte SSL-Version und -Ziffern.
+* Entfernen Sie die TRACE-Methode
+* Entfernen Sie das Banner
+* Abfrage begrenzen, um das Hochladen wichtiger Dateien zu verhindern
 
 [Mehr dazu](../../installation/using/web-server-configuration.md)
