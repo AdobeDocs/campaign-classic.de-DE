@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 4%
@@ -45,4 +45,4 @@ Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz an
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+>Weitere Informationen zum Konfigurieren von Sicherheitszonen finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
