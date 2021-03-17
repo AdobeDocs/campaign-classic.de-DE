@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 2%
+source-wordcount: '1221'
+ht-degree: 3%
 
 ---
 
@@ -165,12 +165,7 @@ Die Schritte zum Installieren des ersten Servers sind:
 
    Weitere Informationen finden Sie unter [Serverkonfiguration für Kampagnen](../../installation/using/campaign-server-configuration.md).
 
-1. Kopieren Sie das Programm zum Einrichten der Clientkonsole (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in **/datakit/nl /eng/jsp** Ordner.
-
-   Weitere Informationen finden Sie in den folgenden Abschnitten:
-
-   * Für Linux: [Client-Konsolenverfügbarkeit für Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Windows: [Client-Konsolenverfügbarkeit für Windows](../../installation/using/client-console-availability-for-windows.md).
+1. Kopieren Sie das Programm zum Einrichten der Clientkonsole (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in **/datakit/nl /eng/jsp** Ordner. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
 
 1. Beginn Sie den Adobe Campaign-Server (**net-Beginn nlserver6** in Windows, **/etc/init.d/nlserver6-Beginn** in Linux) und führen Sie den Befehl **nlserver pdump** erneut aus, um zu prüfen, ob alle aktivierten Module vorhanden sind.
 
@@ -194,16 +189,11 @@ Die Schritte zum Installieren des ersten Servers sind:
 
 1. Testen Sie das Modul **nlserver web** mithilfe der URL: [https://console.campaign.net/nl/jsp/logon.jsp](https://tracking.campaign.net/r/test).
 
-   Mit dieser URL können Sie auf die Downloadseite für das Client-Setup-Programm zugreifen.
+   Mit dieser URL können Sie auf die Downloadseite für das Client-Setup-Programm zugreifen. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
 
    Geben Sie die **internal**-Anmeldung und das zugehörige Kennwort ein, wenn Sie die Seite &quot;Zugriffskontrolle&quot;aufrufen.
 
    ![](assets/s_ncs_install_access_client.png)
-
-   Weitere Informationen finden Sie in den folgenden Abschnitten:
-
-   * Für Linux: [Client-Konsolenverfügbarkeit für Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Windows: [Client-Konsolenverfügbarkeit für Windows](../../installation/using/client-console-availability-for-windows.md)
 
 ### Installieren und Konfigurieren des Anwendungsservers 2 {#installing-and-configuring-the-application-server-2}
 
