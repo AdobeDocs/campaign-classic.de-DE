@@ -7,9 +7,9 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 33debcd6e399d2780277644103a620d46c22022e
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1186'
 ht-degree: 10%
 
 ---
@@ -50,7 +50,6 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
       **iisreset/stop**
 
    * Adobe-Campaign-Dienst: **net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >Sie müssen auch sicherstellen, dass der Umleitungsserver (webmdl) gestoppt wird, damit die **nlsrvmod.dll**-Datei, die von IIS verwendet wird, durch die neue Version ersetzt werden kann.
@@ -71,7 +70,7 @@ Um die Aktualisierungsdatei auszuführen, führen Sie die folgenden Schritte aus
 
 1. Führen Sie **setup.exe** aus.
 
-   Um diese Datei herunterzuladen, stellen Sie eine Verbindung zum [Software-Distributionsportal](https://experience.adobe.com/de/#/downloads/content/software-distribution/de/campaign.html) mit Ihren Benutzeranmeldeinformationen her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
+   Um diese Datei herunterzuladen, stellen Sie eine Verbindung zum [Software-Distributionsportal](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) mit Ihren Benutzeranmeldeinformationen her. Weitere Informationen zur Softwareverteilung finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=en).
 
 1. Wählen Sie den Installationsmodus aus: **[!UICONTROL Aktualisieren oder Reparieren]**
 1. Klicken Sie auf **[!UICONTROL Weiter]** .
@@ -117,7 +116,7 @@ Um Adobe Campaign in einer neuen Version zu aktualisieren, wenn ein neuer Build 
 * [Führen Sie eine Aktualisierung](#perform-an-update) durch,
 * [Starten Sie den Webserver](#reboot-the-web-server) neu.
 
-Informationen zum Aktualisieren der Client-Konsole finden Sie in [diesem Abschnitt](../../installation/using/client-console-availability-for-linux.md).
+[Erfahren Sie mehr über die Verfügbarkeit](../../installation/using/client-console-availability-for-windows.md) der Client-Konsole.
 
 >[!NOTE]
 >
@@ -173,8 +172,10 @@ Führen Sie dazu den folgenden Befehl aus:
 >
 >* Ihr Skript kann anstelle von **apache** **httpd heißen.**
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
->
->   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwenden kann.
+
+   >
+   >   
+   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwenden kann.
 
 
 Starten Sie dann Apache neu:
