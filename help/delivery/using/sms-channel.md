@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
 workflow-type: tm+mt
 source-wordcount: '3252'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Campaign ermöglicht die Zustellung großer Mengen personalisierter SMS-Na
 > 
 >Weiterführende Informationen finden Sie im Abschnitt [Über den Mobile-App-Kanal](../../delivery/using/about-mobile-app-channel.md).
 
-Die folgenden Abschnitte enthalten Informationen, die speziell für den SMS-Kanal gelten. Allgemeine Informationen zum Erstellen einer Sendung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+Die folgenden Abschnitte enthalten Informationen, die speziell für den SMS-Kanal gelten. Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## SMS-Kanal einrichten {#setting-up-sms-channel}
 
@@ -33,7 +33,7 @@ Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone ric
 
 1. ein externes Konto mit Angabe des Connectors und des Nachrichtentyps;
 
-   Beachten Sie, dass folgende Connectors ab Version 20.2 nicht mehr unterstützt werden: Generisches SMPP (SMPP Version 3.4 unterstützt Binärmodus), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und iOS. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
+   Beachten Sie, dass folgende Connectoren ab Version 20.2 nicht mehr unterstützt werden: Generic SMPP (SMPP Version 3.4 mit Unterstützung für Binärmodus), Sybase365 (SAP SMS 365), CLX Communications, Tele2, O2 und iOS. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
 
 1. Eine Versandvorlage, die auf das externe Konto Bezug nimmt.
 
