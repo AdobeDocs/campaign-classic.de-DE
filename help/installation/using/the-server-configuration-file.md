@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 1bd40c6acaceb1bb4839807ae89c6956bc2b8d69
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 27%
@@ -21,7 +21,7 @@ Die Gesamtkonfiguration des Adobe Campaigns wird in der Datei **serverConf.xml**
 
 >[!NOTE]
 >
->Serverseitige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting models](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und hybride Modelle werden in diesem [Abschnitt](../../installation/using/hosted-model.md) beschrieben.
+>Serverseitige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting models](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md). Die Installations- und Konfigurationsschritte für gehostete und hybride Modelle werden in diesem [Abschnitt](../../installation/using/hosting-models.md) beschrieben.
 
 Die ersten Parameter befinden sich im Knoten **shared**. Diese beziehen sich auf die Instanz. Sie werden potenziell von allen nlserver-Befehlen (nlserver web, nlserver wfserver usw.) verwendet. Die anderen Abschnitte beziehen sich auf einen bestimmten nlserver-Unterbefehl.
 
@@ -2193,7 +2193,7 @@ Hier sind die verschiedenen Parameter des Knotens **restore**. Dies ist die Konf
 
 Hier sind die verschiedenen Parameter des Knotens **securityZone**.
 
-Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2291,7 +2291,7 @@ Die Standardkonfiguration lautet:
 
 Hier sind die verschiedenen Parameter des Knotens **securityZone > subNetwork**.
 
-Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
