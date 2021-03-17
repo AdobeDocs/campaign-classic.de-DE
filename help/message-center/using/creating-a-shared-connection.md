@@ -7,7 +7,7 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 97%
@@ -93,7 +93,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ Ausführungsinstanz zu er
 
 Damit die Kontrollinstanz eine Verbindung zur Ausführungsinstanz herstellen kann, ohne ein Passwort angeben zu müssen, geben Sie einfach die IP-Adresse der Kontrollinstanz im Abschnitt &quot;Zugriffsberechtigungen&quot; im **Message Center** ein. Leere Passwörter sind jedoch standardmäßig nicht erlaubt.
 
-Um ein leeres Passwort zu verwenden, wechseln Sie zu den Ausführungsinstanzen und definieren Sie eine Sicherheitszone, die auf die IP-Adresse des Informationssystems beschränkt ist, das die Ereignisse bereitstellt. Diese Sicherheitszone muss leere Passwörter zulassen und `<identifier> / <password>`-Typverbindungen akzeptieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Um ein leeres Passwort zu verwenden, wechseln Sie zu den Ausführungsinstanzen und definieren Sie eine Sicherheitszone, die auf die IP-Adresse des Informationssystems beschränkt ist, das die Ereignisse bereitstellt. Diese Sicherheitszone muss leere Passwörter zulassen und `<identifier> / <password>`-Typverbindungen akzeptieren. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfigurati
 
    >[!NOTE]
    >
-   >Die Benutzer **mc1** und **mc2** müssen über die Berechtigung **[!UICONTROL Message Center Ausführung]** verfügen. Sie dürfen jedoch keinen Zugriff auf die Adobe-Campaign-Clientkonsole haben. Ein Benutzer muss stets einer Sicherheitszone zugeordnet werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+   >Die Benutzer **mc1** und **mc2** müssen über die Berechtigung **[!UICONTROL Message Center Ausführung]** verfügen. Sie dürfen jedoch keinen Zugriff auf die Adobe-Campaign-Clientkonsole haben. Ein Benutzer muss stets einer Sicherheitszone zugeordnet werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
 
 1. Kreuzen Sie für jeden Benutzer die Option **[!UICONTROL Beschränken auf Daten in den Unterordnern von]** an und wählen Sie den dem jeweiligen Benutzer entsprechenden Ordner aus (**Ordner 1** für den Benutzer **mc1** und **Order 2** für den Benutzer **mc2**).
 
