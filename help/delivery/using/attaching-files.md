@@ -7,9 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1032'
 ht-degree: 100%
 
 ---
@@ -101,11 +101,6 @@ Mit der Option **[!UICONTROL Dateiinhalt wird zum Zeitpunkt der Absendung für j
 Gehen Sie wie folgt vor, um diese Art von Anhang zu konfigurieren:
 
 1. Wählen Sie die hochzuladende Datei aus.
-
-   >[!NOTE]
-   >
-   >Bitte beachten Sie, dass nur in LibreOffice erstellte Quelldateien unterstützt werden und dass die Konfiguration der Instanz wie in [diesem Abschnitt](../../installation/using/before-starting.md) beschrieben vorgenommen werden muss.
-
 1. Vergeben Sie gegebenenfalls einen Titel.
 1. Wählen Sie die Option **[!UICONTROL Datei auf den Server laden]**, klicken Sie auf den Link **[!UICONTROL Auf dem Server aktualisieren]** und starten Sie den Upload in dem sich öffnenden Fenster.
 1. Sie können eine Vorschau erstellen, indem Sie auf einen Empfänger klicken.
