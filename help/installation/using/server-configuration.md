@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Serverkonfiguration
+title: Konfiguration des Servers
 description: Weitere Informationen zu Best Practices für die Serverkonfiguration.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '1189'
-ht-degree: 61%
+source-wordcount: '1159'
+ht-degree: 62%
 
 ---
 
@@ -29,8 +29,6 @@ ht-degree: 61%
 >
 >
 Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
-
-Weitere Informationen zur Verwendung der Benutzeroberfläche der Sicherheitszonen-Selbstbedienung zur Verwaltung von Einträgen in der VPN-Sicherheitszonenkonfiguration finden Sie in [dieser technischen Anmerkung](https://helpx.adobe.com/de/campaign/kb/configuring-security-zones-self-service.html).
 
 * Stellen Sie sicher, dass Ihr Reverse-Proxy in subNetwork nicht erlaubt ist. Ist dies der Fall, wird der **gesamte** Datenverkehr als von dieser lokalen IP-Adresse kommend und daher als vertrauenswürdig eingestuft.
 
@@ -127,6 +125,6 @@ Mit Adobe Campaign können Sie ein einfaches Kennwort im Element `<dbcnx .../>` 
 
 Standardmäßig bindet Adobe Campaign eine Sitzung nicht an eine bestimmte IP, aber Sie können sie aktivieren, um zu verhindern, dass die Sitzung gestohlen wird. Legen Sie dazu in der Datei [serverConf.xml](../../installation/using/the-server-configuration-file.md) das Attribut checkIPConsistent auf **true** im Knoten `<authentication>` fest.
 
-Standardmäßig verwendet das MTA des Adobe Campaigns keine gesicherte Verbindung, um Inhalte an den SMTP-Server zu senden. Sie müssen diese Funktion aktivieren (kann die Geschwindigkeit des Versands verringern). Setzen Sie hierzu enableTLS auf tr**ue im Knoten `<smtp ...>`.
+Standardmäßig verwendet das MTA des Adobe Campaigns keine gesicherte Verbindung, um Inhalte an den SMTP-Server zu senden. Sie müssen diese Funktion aktivieren (kann die Geschwindigkeit des Versands verringern). Setzen Sie dazu **enableTLS** auf **true** im Knoten `<smtp ...>`.
 
 Sie können die Dauer einer Sitzung im Authentifizierungsknoten beschränken (Attribut sessionTimeOutSec).
