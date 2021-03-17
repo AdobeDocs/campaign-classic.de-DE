@@ -7,15 +7,15 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 translation-type: tm+mt
-source-git-commit: 1cde12d33551206da12e03a7e8deb198d427ab3a
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '305'
 ht-degree: 46%
 
 ---
 
 
-# Funktionsmatrix {#capability-matrix-per-model}
+# Funktionsmatrix pro Modell{#capability-matrix-per-model}
 
 Adobe Campaign Classic bietet verschiedene Module und Optionen. Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. In diesem Artikel werden einige Details zu den Hauptunterschieden zwischen vollständig gehosteten Managed Services-Bereitstellungen und lokalen Bereitstellungen erläutert.
 
@@ -27,7 +27,7 @@ Die verschiedenen Hostingmodelle werden in [in diesem Abschnitt](../../installat
 
 | Funktion | gehostet | Hybrid | On-Premise | Details |
 |-----------------------------------------------|------------------|-----------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kampagne-Server konfigurieren | On-Demand | Verfügbar | Verfügbar | [Mehr dazu](../../installation/using/the-server-configuration-file.md) |
+| Campaign-Server konfigurieren | On-Demand | Verfügbar | Verfügbar | [Mehr dazu](../../installation/using/the-server-configuration-file.md) |
 | E-Mail-BCC | On-Demand | On-Demand | Verfügbar | [Mehr dazu](../../installation/using/email-archiving.md) |
 | Message Center-Ausführungsinstanz verwalten | On-Demand | On-Demand | Verfügbar | [Mehr dazu](../../message-center/using/about-transactional-messaging.md) |
 | Verwalten der Mid-Sourcing-Plattform | On-Demand | On-Demand | Verfügbar | [Mehr dazu](../../installation/using/mid-sourcing-server.md) |
