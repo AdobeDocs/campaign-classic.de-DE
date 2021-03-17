@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 100%
@@ -41,7 +41,7 @@ Dieser technische Workflow ermöglicht das Löschen veralteter Daten, um das exp
 
 ## 3. Wie kann ich Sicherheitszonen konfigurieren? {#how-can-i-configure-security-zones-}
 
-Die Konfiguration der VPN-Sicherheitszone in Adobe Campaign Classic erfolgt über die Sicherheitszonen-Benutzeroberfläche durch den Administrator. Lesen Sie [diesen Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones), um mehr über Sicherheitszonen in Campaign zu erfahren.
+Die Konfiguration der VPN-Sicherheitszone in Adobe Campaign Classic erfolgt über die Sicherheitszonen-Benutzeroberfläche durch den Administrator. Lesen Sie [diesen Abschnitt](../../installation/using/security-zones.md), um mehr über Sicherheitszonen in Campaign zu erfahren.
 
 [Hier erfahren Sie mehr](https://helpx.adobe.com/de/campaign/kb/configuring-security-zones-self-service.html) über die Sicherheitszonen-Benutzeroberfläche.
 
