@@ -1,8 +1,8 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Erste Schritte mit der Verfolgung
-description: Weitere Informationen finden Sie in den allgemeinen Richtlinien für die Verfolgung in Adobe Campaign Classic.
+title: Erste Schritte mit dem Tracking
+description: Weitere Informationen finden Sie in den allgemeinen Richtlinien zum Tracking in Adobe Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
@@ -10,113 +10,113 @@ translation-type: tm+mt
 source-git-commit: e52d1963b72593c5dab8ced9e459d25b05044022
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 12%
+ht-degree: 100%
 
 ---
 
 
-# Erste Schritte mit der Meldungsverfolgung {#get-started-tracking}
+# Erste Schritte mit dem Tracking von Nachrichten {#get-started-tracking}
 
-Dank der Tracking-Funktionen ermöglicht Ihnen Adobe Campaign, die gesendeten Nachrichten zu verfolgen und das Verhalten von Empfängern zu überprüfen: Öffnen, Klicks auf Links, Abmeldung usw.
+Dank der Tracking-Funktionen können Sie mit Adobe Campaign die versendeten Nachrichten verfolgen und das Verhalten der Empfänger überprüfen: Öffnung, Klicks auf Links, Abmeldung usw.
 
-Diese Informationen werden auf der Registerkarte **[!UICONTROL Verfolgung]** des Profils jedes Empfängers des Versands abgerufen. Auf dieser Registerkarte werden alle URL-Links angezeigt, die vom Empfänger verfolgt und angeklickt wurden, der in der Liste ausgewählt wurde. Dies ist die Akkumulation aller URLs, die in den Versänden verfolgt werden, die noch im Bildschirm &quot;Versand&quot;vorhanden sind. Die Liste kann konfiguriert werden und enthält in der Regel Folgendes: die angeklickte URL, das Datum und die Uhrzeit des Klicks und das Dokument, in dem die URL gefunden wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
+Diese Informationen werden auf der Registerkarte **[!UICONTROL Tracking]** des Profils jedes Versandempfängers abgerufen. Auf dieser Registerkarte werden alle verfolgten URL-Links angezeigt, auf die der in der Liste ausgewählte Empfänger geklickt hat. Dies ist die Akkumulation aller URLs, die in den Sendungen verfolgt werden, die noch im Versandbildschirm vorhanden sind. Die Liste kann konfiguriert werden und enthält normalerweise die angeklickte URL, das Datum und die Uhrzeit des Klicks sowie das Dokument, in dem die URL gefunden wurde. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/editing-a-profile.md#tracking-tab).
 
-Das **Versand-Dashboard** ist ebenfalls wichtig, um Ihre Versand und eventuelle Probleme beim Senden von Nachrichten zu überwachen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/delivery-dashboard.md).
+Im **Versand-Dashboard** können Sie Sendungen überwachen und etwaige Probleme beim Nachrichtenversand erkennen. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/delivery-dashboard.md).
 
 Das folgende Diagramm zeigt die Phasen des Dialogs zwischen dem Benutzer und den verschiedenen Servern.
 
 ![](assets/tracking-diagram.png)
 
-## Konfigurieren der Verfolgung {#configure-tracking}
+## Tracking konfigurieren {#configure-tracking}
 
 <img src="assets/do-not-localize/icon-configure.svg" width="60px">
 
 **Grundprinzip**
 
-Bevor Sie die Verfolgung verwenden, müssen Sie sie zunächst für Ihre Instanz konfigurieren. [Mehr dazu](../../installation/using/deploying-an-instance.md#operating-principle)
+Bevor Sie das Tracking verwenden, müssen Sie es zunächst für Ihre Instanz konfigurieren. [Mehr dazu](../../installation/using/deploying-an-instance.md#operating-principle)
 
-**Trackingserver**
+**Tracking-Server**
 
-Zur Konfiguration der Verfolgung muss Ihre Instanz deklariert und bei den Tracking-Servern registriert sein. [Mehr dazu](../../installation/using/deploying-an-instance.md#tracking-server)
+Für die Konfiguration von Tracking muss Ihre Instanz deklariert und bei dem/den Tracking-Server(n) registriert werden. [Mehr dazu](../../installation/using/deploying-an-instance.md#tracking-server)
 
-**Speichern der Verfolgung**
+**Tracking speichern**
 
-Sobald die Verfolgung konfiguriert und die URLs ausgefüllt sind, muss der Tracking-Server registriert werden. [Mehr dazu](../../installation/using/deploying-an-instance.md#saving-tracking)
+Sobald das Tracking konfiguriert und Ihre URLs ausgefüllt sind, muss der Tracking-Server registriert werden. [Mehr dazu](../../installation/using/deploying-an-instance.md#saving-tracking)
 
 ## Nachrichten-Tracking {#message-tracking}
 
 <img src="assets/do-not-localize/icon-message-tracking.svg" width="60px">
 
-**Verfolgte Links**
+**Getrackte Links**
 
-Sie können den Empfang von Nachrichten und die Aktivierung der Links verfolgen, die in den Inhalt der Nachricht eingefügt wurden, um das Verhalten der Empfänger besser zu verstehen. [Mehr dazu](../../delivery/using/how-to-configure-tracked-links.md)
+Sie können den Empfang von Nachrichten und die Aktivierung der im Nachrichteninhalt eingefügten Links verfolgen, um das Verhalten der Empfänger besser zu verstehen. [Mehr dazu](../../delivery/using/how-to-configure-tracked-links.md)
 
-**URL-Verfolgung**
+**URL-Tracking**
 
-Verfolgungsoptionen können durch Aktivieren oder Deaktivieren von verfolgten URLs konfiguriert werden. [Mehr dazu](../../delivery/using/personalizing-url-tracking.md)
+Tracking-Optionen können durch Aktivieren oder Deaktivieren von Tracking-URLs konfiguriert werden. [Mehr dazu](../../delivery/using/personalizing-url-tracking.md)
 
-**Personalisierung nachverfolgter Links**
+**Personalisierung getrackter Links**
 
-Mit den Campaign Classic-Verfolgungsfunktionen können Sie Links in E-Mails hinzufügen, die personalisiert werden können und die Verfolgung unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md)
+Mit den Tracking-Funktionen von Campaign Classic können Sie Links in E-Mails einfügen, die personalisiert werden können und das Tracking unterstützen. [Mehr dazu](../../delivery/using/tracking-personalized-links.md)
 
 **Trackinglogs**
 
-Der technische Arbeitsablauf zur Verfolgung ruft die Verfolgungsdaten ab, sobald der Versand gesendet und die Verfolgung aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Verfolgung&quot;Ihres Versands. [Mehr dazu](../../delivery/using/accessing-the-tracking-logs.md)
+Der technische Tracking-Workflow verfolgt die Tracking-Daten, sobald der Versand ausgeführt und das Tracking aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. [Mehr dazu](../../delivery/using/accessing-the-tracking-logs.md)
 
 **Tracking testen**
 
-Bevor Sie Ihre Nachrichten mit Ihrer Verfolgung senden, können Sie die Verfolgung auf Ihrer Mirrorseite, in Ihren E-Mail-Protokollen und Links testen. [Mehr dazu](../../delivery/using/testing-tracking.md)
+Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirror-Seite, in Ihren E-Mail-Protokollen und Links testen. [Mehr dazu](../../delivery/using/testing-tracking.md)
 
-## Webanwendung Verfolgung {#web-application-tracking}
+## Web-Anwendungs-Tracking {#web-application-tracking}
 
 <img src="assets/do-not-localize/icon-web-app.svg" width="60px">
 
-**Webanwendung tracken**
+**Web-Anwendung tracken**
 
-Sie können Besuche auf Webanwendung Seiten mit Trackingtagen auch verfolgen und messen. Diese Funktion kann für alle Webanwendung Typen wie Formulare und Online-Umfragen verwendet werden. [Mehr dazu](../../web/using/tracking-a-web-application.md)
+Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und messen. Diese Funktionalität kann für alle Web-Anwendungstypen wie Formulare und Online-Umfragen verwendet werden. [Mehr dazu](../../web/using/tracking-a-web-application.md)
 
-**Opt-out vom Webanwendungs-Tracking**
+**Opt-out vom Web-Anwendungs-Tracking**
 
-Mit der Webanwendung Rückverfolgungs-Abmeldung können Sie das Verfolgen von Webverhalten von Endbenutzern, die die verhaltensbasierte Verfolgung abwählen, beenden. Sie können die Möglichkeit einschließen, ein Banner in Webanwendungen oder Landingpages anzuzeigen, um Benutzern das Abwählen zu ermöglichen. [Mehr dazu](../../web/using/web-application-tracking-opt-out.md)
+Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern beenden, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Zielseiten anzuzeigen, damit Benutzer sich abmelden können. [Mehr dazu](../../web/using/web-application-tracking-opt-out.md)
 
-## Verfolgungsberichte {#tracking-reports}
+## Tracking-Berichte {#tracking-reports}
 
 <img src="assets/do-not-localize/icon_monitor.svg" width="60px">
 
-**Trackingstatistiken**
+**Tracking-Statistiken**
 
-Dieser Bericht enthält Statistiken zu Öffnen, Klicks und Transaktionen und ermöglicht Ihnen die Verfolgung der Marketingauswirkungen des Versands. [Mehr dazu](../../reporting/using/delivery-reports.md#tracking-statistics)
+Dieser Bericht enthält Statistiken zu Öffnungen, Klicks und Transaktionen und ermöglicht es Ihnen, die Marketing-Wirkung des Versands zu verfolgen. [Mehr dazu](../../reporting/using/delivery-reports.md#tracking-statistics)
 
 **URLs und Clickstreams**
 
-Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Webseiten. [Mehr dazu](../../reporting/using/delivery-reports.md#urls-and-click-streams)
+Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Web-Seiten. [Mehr dazu](../../reporting/using/delivery-reports.md#urls-and-click-streams)
 
 **Personen und Empfänger**
 
-Verstehen Sie den Unterschied zwischen einer Person/Person und einem Empfänger im Adobe Campaign mit diesem Beispiel besser. [Mehr dazu](../../reporting/using/person-people-recipients.md)
+Anhand dieses Beispiels können Sie den Unterschied beim Tracking zwischen einer Person/Personen und einem Empfänger in Adobe Campaign besser verstehen. [Mehr dazu](../../reporting/using/person-people-recipients.md)
 
-**Trackingindikatoren**
+**Tracking-Indikatoren**
 
-Dieser Bericht kombiniert die Schlüsselindikatoren zur Verfolgung des Verhaltens von Empfängern beim Empfang des Versands, z. B. offene Clickthrough-Raten und Clickstreams. [Mehr dazu](../../reporting/using/delivery-reports.md#tracking-indicators)
+In diesem Bericht werden die Schlüsselindikatoren zum Tracking des Verhaltens der Empfänger beim Empfang der Sendung zusammengefasst, z. B. Öffnungsraten, Clickthrough-Raten und Clickstreams. [Mehr dazu](../../reporting/using/delivery-reports.md#tracking-indicators)
 
 **Indikatorberechnung**
 
-Die verschiedenen Tabellen geben Ihnen die Liste der in den verschiedenen Berichten verwendeten Indikatoren und ihre Berechnungsformel je nach Versand-Typ. [Mehr dazu](../../reporting/using/indicator-calculation.md)
+In den verschiedenen Tabellen finden Sie nach Versandtyp geordnet die Liste der Indikatoren, die in Berichten verwendet werden, sowie ihre Berechnungsformeln. [Mehr dazu](../../reporting/using/indicator-calculation.md)
 
 ## Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 
 <img src="assets/do-not-localize/icon-troubleshooting.svg" width="60px">
 
-Die folgenden Tipps zur Fehlerbehebung helfen Ihnen bei der Lösung der häufigsten Probleme, die bei der Verwendung der Verfolgung in Adobe Campaign Classic auftreten. Eine weiter gehende Fehlerbehebung finden Sie in [diesem Abschnitt](../../delivery/using/tracking-troubleshooting.md).
+Die folgenden Tipps zur Fehlerbehebung helfen Ihnen, die häufigsten Probleme zu lösen, die bei der Verwendung von Tracking in Adobe Campaign Classic auftreten. Informationen zur erweiterten Fehlerbehebung finden Sie in [diesem Abschnitt](../../delivery/using/tracking-troubleshooting.md).
 
-* Überprüfen Sie, ob der TrackingLogd-Prozess ausgeführt wird
+* Überprüfen, ob der trackinglogd-Prozess ausgeführt wird
 
-   Dieser Prozess liest aus dem gemeinsamen Arbeitsspeicher des IIS/Webservers und schreibt die Umleitungsprotokolle.
+   Dieser Prozess liest aus dem gemeinsam genutzten IIS/Webserver-Speicher und schreibt die Weiterleitungsprotokolle.
 
-   Sie können von der Homepage aus darauf zugreifen, indem Sie die Registerkarte Überwachung in Ihrer Instanz auswählen. Sie können auch den folgenden Befehl für die Instanz ausführen: `<user>@<instance>:~$ nlserver pdump`
+   Sie können von der Startseite aus darauf zugreifen, indem Sie in Ihrer Instanz die Registerkarte &quot;Tracking&quot; auswählen. Sie können auch den folgenden Befehl für die Instanz ausführen: `<user>@<instance>:~$ nlserver pdump`
 
-   Wenn der TrackingLogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl in der Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
+   Wenn der trackinglogd-Prozess nicht in der Liste angezeigt wird, starten Sie ihn mit dem folgenden Befehl für die Instanz: `<user>@<instance>:~$ nlserver start trackinglogd`
 
-* Vergewissern Sie sich, dass der technische Arbeitsablauf zur Verfolgung kürzlich ausgeführt wurde.
+* Überprüfen Sie, ob der technische Tracking-Workflow kürzlich ausgeführt wurde.
 
-   Den technischen Arbeitsablauf zur Verfolgung finden Sie in den Ordnern Administration > Produktion > Technischen Workflows.
+   Sie finden den technischen Tracking-Workflow in den Ordnern &quot;Administration&quot; > &quot;Produktion&quot; > &quot;Technische Workflows&quot;. 
