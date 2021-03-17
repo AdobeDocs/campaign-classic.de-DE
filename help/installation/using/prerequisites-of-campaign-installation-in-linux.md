@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 ---
 
 
-# Voraussetzungen für die Campaign-Installation unter Linux{#prerequisites-of-campaign-installation-in-linux}
+# Voraussetzungen für die Installation der Kampagne unter Linux{#prerequisites-of-campaign-installation-in-linux}
 
 ## Softwarevoraussetzungen {#software-prerequisites}
 
@@ -180,7 +180,7 @@ Für die Verwendung von PostgreSQL mit Adobe Campaign müssen auch die entsprech
 
 Rufen Sie die Bibliotheksversion für 64-Bit Debian ab, d.h.: **libclntsh.so**, **libclntsh.so.11.1** und **libclntsh.so.10.1**.
 
-Sie können ein Linux RPM-Paket vom Oracle Technology Network beziehen.
+Sie können ein Linux RPM-Paket vom Oracle Technology Network abrufen.
 
 >[!NOTE]
 >
@@ -188,9 +188,9 @@ Sie können ein Linux RPM-Paket vom Oracle Technology Network beziehen.
 
 **Fehlerbehebung und Best Practices**
 
-Probleme können nach einem Oracle-Client oder einem Server-Update, einer Versionsänderung oder der ersten Installation der Instanz auftreten.
+Probleme können nach einem Oracle-Client oder einem Serverupdate, einer Versionsänderung oder der ersten Installation der Instanz auftreten.
 
-Wenn Sie in der Client-Konsole feststellen, dass die Protokolle unerwartete Zeitverzögerungen (eine oder mehrere Stunden) aufweisen, der Workflow zuletzt verarbeitet wird, die nächste Verarbeitung usw., kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
+Wenn Sie in der Client-Konsole feststellen, dass unerwartete Zeitverzögerungen (eine oder mehrere Stunden) in den Protokollen, letzte Verarbeitung des Workflows, nächste Verarbeitung usw. auftreten, kann es zu einem Problem zwischen der Bibliothek des Oracle-Clients und dem Oracle-Server kommen. Um solche Probleme zu vermeiden
 
 1. Stellen Sie sicher, dass Sie den **vollständigen Client** verwenden.
 
@@ -198,9 +198,9 @@ Wenn Sie in der Client-Konsole feststellen, dass die Protokolle unerwartete Zeit
 
 1. Stellen Sie sicher, dass die **Clientversion** und die **Datenbankserverversion** die **gleiche** sind.
 
-   Das Mischen von Versionen trotz der Kompatibilitätsmatrix und der Empfehlung von Oracle, Client- und Serverversionen auszurichten, verursacht bekanntermaßen Probleme.
+   Es ist bekannt, dass das Mischen von Oracle trotz Kompatibilitätsmatrix und Empfehlung zum Ausrichten von Client- und Serverversionen Probleme verursacht.
 
-   Überprüfen Sie auch den Wert &quot;ORACLE_HOME&quot;, um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
+   Überprüfen Sie auch den Wert ORACLE_HOME, um sicherzustellen, dass er auf die erwartete Clientversion verweist (falls mehrere Versionen auf dem Computer installiert sind).
 
 1. Stellen Sie sicher, dass Client und Server dieselbe **timezone-Datei** verwenden.
 
