@@ -7,7 +7,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 translation-type: tm+mt
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 1%
@@ -92,7 +92,7 @@ Adobe Campaign v7 umfasst das Konzept der **Sicherheitszonen**. Jeder Benutzer m
 
 **Nach der Aktualisierung**  (vor dem Neustart des Servers) müssen Sie die Sicherheitszonen konfigurieren.
 
-Sicherheitszonenkonfiguration finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Sicherheitszonenkonfiguration finden Sie in [diesem Abschnitt](../../installation/using/security-zones.md).
 
 ### Benutzerkennwörter {#user-passwords}
 
@@ -622,7 +622,7 @@ Alle Standardberichte verwenden derzeit die Render-Engine v6.x. Wenn Sie diesen 
 -->
 Wenn Sie von den neuen Berichtfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Bearbeiten Sie dazu den Bericht **[!UICONTROL Eigenschaften]**, klicken Sie auf **[!UICONTROL Rendering]** und wählen Sie die v.6.x Rendering Engine. Überprüfen Sie in diesem Fall alle Skripten und ändern Sie sie bei Bedarf. Wenn Sie für den PDF-Export ein bestimmtes Skript für Open Office hinzugefügt haben, funktioniert dies nicht mehr mit der neuen PDF Export Engine (PhantomJS).
 
-## Webanwendungen {#web-applications}
+## Web-Anwendungen {#web-applications}
 
 Es gibt zwei Webanwendungsfamilien:
 
