@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
 workflow-type: tm+mt
-source-wordcount: '1134'
-ht-degree: 2%
+source-wordcount: '1092'
+ht-degree: 3%
 
 ---
 
@@ -164,12 +164,7 @@ Gehen Sie wie folgt vor:
 
    Weitere Informationen finden Sie unter [Serverkonfiguration für Kampagnen](../../installation/using/campaign-server-configuration.md).
 
-1. Kopieren Sie das Programm zum Einrichten der Clientkonsole (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in **/datakit/nl /eng/jsp** Ordner.
-
-   Weitere Informationen finden Sie in den folgenden Abschnitten:
-
-   * Für Linux: [Client-Konsolenverfügbarkeit für Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Windows: [Client-Konsolenverfügbarkeit für Windows](../../installation/using/client-console-availability-for-windows.md)
+1. Kopieren Sie das Programm zum Einrichten der Clientkonsole (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in **/datakit/nl /eng/jsp** Ordner. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
 
 1. Folgen Sie dem Webserver-Integrationsverfahren (IIS, Apache), das in den folgenden Abschnitten beschrieben wird:
 
@@ -212,14 +207,9 @@ Gehen Sie wie folgt vor:
 
    Mit dieser URL können Sie auf die Downloadseite für das Client-Setup-Programm zugreifen.
 
-   Geben Sie die **internal**-Anmeldung und das zugehörige Kennwort ein, wenn Sie die Seite &quot;Zugriffskontrolle&quot;aufrufen.
+   Geben Sie die **internal**-Anmeldung und das zugehörige Kennwort ein, wenn Sie die Seite &quot;Zugriffskontrolle&quot;aufrufen. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
 
    ![](assets/s_ncs_install_access_client.png)
-
-   Weitere Informationen finden Sie in den folgenden Abschnitten:
-
-   * Für Linux: [Client-Konsolenverfügbarkeit für Linux](../../installation/using/client-console-availability-for-linux.md)
-   * Windows: [Client-Konsolenverfügbarkeit für Windows](../../installation/using/client-console-availability-for-windows.md)
 
 1. Beginn der Adobe Campaign-Client-Konsole (von der vorherigen Downloadseite oder bei einer Windows-Installation direkt auf dem Server gestartet), stellen Sie die Server-Verbindungs-URL auf https://console.campaign.net ein und verbinden Sie sich mit der **internal**-Anmeldung.
 
