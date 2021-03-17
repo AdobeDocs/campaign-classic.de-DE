@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f7e4f129a96e80ec169428057f661165d8b967c9
+source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Campaign ermöglicht es, die den unterschiedlichen Benutzern zugeteilten R
 
 Die Rechte können sowohl für einzelne Benutzerprofile als auch Benutzergruppen gelten.
 
-Sie werden durch Sicherheitsparameter ergänzt, die mit dem Verbindungsmodus des Betreibers mit dem Adobe Campaign verbunden sind. Weitere Informationen zu Sicherheitszonen in [dieser Seite](../../installation/using/configuring-campaign-server.md#defining-security-zones).
+Sie werden durch Sicherheitsparameter ergänzt, die mit dem Verbindungsmodus des Betreibers mit dem Adobe Campaign verbunden sind. Weitere Informationen zu Sicherheitszonen in [dieser Seite](../../installation/using/security-zones.md).
 
 Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können:
 
