@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 849a95c718f9dc58aeabc8a49d3bf8290ea79b86
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 14%
@@ -25,6 +25,7 @@ Als Kunde vor Ort/Hybrid müssen Sie aus Sicherheitsgründen auf eine der auf di
 >[!NOTE]
 >
 >Wenden Sie sich bei Fragen zu diesen Änderungen an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+
 
 ## Sicherheitsaktualisierungen
 
@@ -101,7 +102,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 ## Integration mit Experience Cloud-Triggern
 
-Der veraltete Auth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der Auth-Authentifizierung für den Zugriff auf die Pipeline basiert, wurde in die Adobe I/O verschoben. Sie wird am 30. April 2021 **eingestellt.** [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+Der veraltete Auth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung der AUTH-Authentifizierung für den Zugriff auf Pipeline basiert, wurde in die Adobe I/O verschoben. Sie wird am 30. November 2021 **eingestellt.** [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Sind Sie betroffen?**
 
