@@ -9,9 +9,9 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 42166334d361ffdac13842cd9d07ca7c9859bbb2
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 74%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 74%
 
 >[!CAUTION]
 >
->Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt. [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+>Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Der alte Auth-Authentifizierungsmodus mit Kampagne mit Kampagne wird am 30. November 2021 eingestellt. [Mehr dazu](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >Beachten Sie, dass bei diesem Wechsel zu [!DNL Adobe I/O] einige eingehende Trigger verloren gehen können.
 
