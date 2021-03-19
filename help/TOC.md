@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2473'
 ht-degree: 96%
 
 ---
@@ -651,7 +651,7 @@ ht-degree: 96%
       + [Zeitzonen](installation/using/time-zone-management.md)
       + [Installieren eines Mid-Sourcing-Servers](installation/using/mid-sourcing-server.md)
    + Kampagne bereitstellen (lokal) {#initial-configuration}
-      + [Über die Erstkonfiguration](installation/using/about-initial-configuration.md)
+      + [Die wichtigsten Schritte](installation/using/about-initial-configuration.md)
       + [Instanz erstellen und anmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [Datenbank erstellen und konfigurieren](installation/using/creating-and-configuring-the-database.md)
       + [Campaign-Server konfigurieren](installation/using/campaign-server-configuration.md)
