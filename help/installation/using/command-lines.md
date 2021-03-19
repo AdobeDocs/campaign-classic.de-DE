@@ -7,7 +7,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 Die folgenden Befehlszeilen erfordern die Möglichkeit, auf den Anwendungsserver zuzugreifen. Bei Bereitstellungen, die von der Adobe gehostet werden, können diese Befehle nur von der Adobe ausgeführt werden.
 
-## Erstellen einer Instanz {#creating-an-instance}
+## Instanz {#creating-an-instance} erstellen
 
 Die Instanzerstellung kann mithilfe von Befehlszeilen mit der folgenden Syntax ausgeführt werden:
 
@@ -31,7 +31,7 @@ nlserver config -addinstance:instance/masques DNS[/lang]
 
 Mit dem Befehl **nlserver config -addinstance:instance1/demo*/eng** können Sie eine Instanz namens **instance1** in englischer Sprache mit der DNS-Maske demo* erstellen.
 
-## Deklarieren einer Datenbank {#declaring-a-database}
+## Datenbank {#declaring-a-database} deklarieren
 
 Sie können eine vorhandene Datenbank mit einer Instanz über die Befehlszeile verknüpfen, indem Sie die folgende Syntax verwenden:
 
