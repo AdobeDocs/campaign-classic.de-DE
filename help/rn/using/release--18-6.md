@@ -1,16 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Version 18.6
-description: Version 18.6
+title: Versionshinweise zu Kampagne 18.6
+description: Versionshinweise für Kampagne 18.6
 audience: rn
 content-type: reference
 topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: ht
-source-wordcount: '810'
-ht-degree: 100%
+feature: 'Übersicht  '
+role: Business Practitioner
+level: Anfänger
+translation-type: tm+mt
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +82,7 @@ _25. Juni 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](../../production/using/build-upgrade.md) durch oder kontaktieren Sie den [technischen Support](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte führen Sie eine [Aktualisierung auf den aktuellen Build](../../production/using/build-upgrade.md) durch oder kontaktieren Sie den [technischen Support](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -97,7 +100,7 @@ _25. Juni 2018_
   </tr> 
   <tr> 
    <td> Unterstützung von Windows Server 2016<br /> </td> 
-   <td> Adobe Campaign ist jetzt mit Windows Server 2016 kompatibel. Weiterführende Informationen dazu finden Sie in der <a href="https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix von Campaign Classic</a>.<br /> </td> 
+   <td> Adobe Campaign ist jetzt mit Windows Server 2016 kompatibel. Weiterführende Informationen dazu finden Sie in der <a href="https://helpx.adobe.com/campaign/kb/compatibility-matrix.html">Kompatibilitätsmatrix von Campaign Classic</a>.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
