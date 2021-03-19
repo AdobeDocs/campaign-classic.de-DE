@@ -2,17 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Eingestellte und entfernte Funktionen von Campaign Classic
-description: Auf dieser Seite finden Sie eingestellte und entfernte Funktionen von Adobe Campaign Classic
-audience: rn
-content-type: reference
-topic-tags: campaign-classic-deprecated-features
-internal: n
-snippet: y
-translation-type: ht
-source-git-commit: f78fa94fb4fb9236222886a167a46d252497b2aa
-workflow-type: ht
-source-wordcount: '1712'
-ht-degree: 100%
+description: Diese Liste wurde in Adobe Campaign Classic eingestellt und entfernt
+feature: 'Übersicht  '
+role: Business Practitioner
+level: Anfänger
+translation-type: tm+mt
+source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+workflow-type: tm+mt
+source-wordcount: '1716'
+ht-degree: 99%
 
 ---
 
