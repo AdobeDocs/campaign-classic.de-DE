@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
 description: Aktuelle Version von Campaign Classic   Anmerkungen
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
-translation-type: ht
-source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+feature: 'Übersicht  '
+role: Business Practitioner
+level: Anfänger
+translation-type: tm+mt
+source-git-commit: d1796224df95663c39fa5975e88c03a923c94878
+workflow-type: tm+mt
+source-wordcount: '908'
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Wenn Sie an dieser privaten Beta teilnehmen möchten, füllen Sie dieses [Formul
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* Fehlerkorrektur – Jetzt können neue Sendungen mit personalisierten Zielgruppendaten durchgeführt wurden.
+* Es wurde ein Fehler behoben, der verhinderte, dass neue Versand mit Zielgruppe-Datenpersonalisierung gesendet wurden (NEO-30323).
 * Fehlerkorrektur – In der Marketing-Instanz treten keine Abstürze mehr auf, die Core-Dateien erzeugen.
 * Fehlerkorrektur – Der **Tracking**-Workflow schlägt nicht mehr fehl. Zuvor wurde folgender Fehler angezeigt (NEO-25206):
 
