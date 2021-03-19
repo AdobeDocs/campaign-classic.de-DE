@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Upgrades
 description: Weiterführende Informationen zu Campaign Classic-Upgrades
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: 'Übersicht  '
+role: Business Practitioner
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '435'
 ht-degree: 100%
 
 ---
@@ -51,11 +51,11 @@ Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder ne
 
 Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/de/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
+Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
 ### Gold Standard{#upgrade-for-gold-standard-users}
 
-Als Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit dem [aktuellen GA Gold Standard-Build](../../rn/using/gold-standard.md#gs-11), ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+Als Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit dem [aktuellen GA Gold Standard-Build](../../rn/using/gold-standard.md#gs-11), ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >Die Kompatibilitätsmatrix für Gold Standard ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
