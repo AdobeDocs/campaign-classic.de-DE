@@ -6,7 +6,7 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 587daebd8a779bb9d0917fd2dfab4144494809e3
+source-git-commit: cac3e22dd9aa8220f6980bef0d57c11d47c91163
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 14%
@@ -47,7 +47,7 @@ Wenn sich Ihre Umgebung auf einem niedrigeren Build befindet als die unten aufge
 
 Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind.
 
-* Als Hybridkunde wird die Adobe die Mid-Sourcing-Instanz auf die neue Version aktualisieren, und es wird dringend empfohlen, auch deren Marketinginstanz zu aktualisieren.
+* Als Hybridkunde wird die Adobe die Marketinginstanz auf die neue Version aktualisieren, und es wird dringend empfohlen, auch deren Marketinginstanz zu aktualisieren.
 
    Der neue Build ist mit mindestens Campaign Classic 17.9 kompatibel. Um Sicherheitslücken zu vermeiden, empfiehlt Adobe jedoch dringend, alle Instanzen auf einen neuen Build zu aktualisieren. 
 
