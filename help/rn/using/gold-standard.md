@@ -1,29 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Gold Standard Version
+title: Versionshinweise zu Gold Standard 
 description: Versionshinweise zu Campaign Classic Gold Standard
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
+feature: 'Übersicht  '
+role: Business Practitioner
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
 workflow-type: tm+mt
-source-wordcount: '1112'
-ht-degree: 96%
+source-wordcount: '1055'
+ht-degree: 93%
 
 ---
 
 
 # Gold Standard-Versionen{#gold-standard}
 
-Gold Standard ist die langfristig unterstützte Version von Campaign Classic. Als gehosteter Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit der neuesten stabilen Version, ohne aktiv werden zu müssen. On-Premise- und Hybrid-Kunden können ebenfalls von den Gold Standard-Versionen profitieren.
-
-Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen.
-
-Diese Seite enthält eine Liste der Gold Standard-Versionen.
-
-Weitere Informationen zum Campaign Gold Standard-Programm finden Sie in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+Diese Seite enthält eine Liste der Gold Standard-Versionen. Erfahren Sie mehr über die Kampagne Gold Standard [auf dieser Seite](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Gold Standard Version 11{#gs-11}
 
@@ -46,7 +40,7 @@ _22. Dezember 2020_
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Die alte OAuth-Authentifizierungsmethode wird am **30. April 2021** eingestellt.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte Auth-Authentifizierungsmodus mit Kampagne wird am **30. November 2021** eingestellt.
 
 >
 >
