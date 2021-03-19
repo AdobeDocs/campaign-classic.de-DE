@@ -1,13 +1,13 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfigurieren des Campaign-Servers
-description: Konfigurieren des Campaign-Servers
+title: Campaign-Server konfigurieren
+description: Campaign-Server konfigurieren
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 ---
 
 
-# Konfigurieren des Campaign-Servers{#campaign-server-configuration}
+# Campaign-Server konfigurieren{#campaign-server-configuration}
 
 In den folgenden Abschnitten werden obligatorische Serverkonfigurationen beschrieben, die den effizienten Betrieb von Adobe Campaign für die meisten Setups gewährleisten.
 
@@ -66,7 +66,7 @@ Sie können den Ordner &quot;Datenspeicherung&quot;(**var**) der Adobe Campaign-
 
 * Wechseln Sie unter Linux zur Datei **customer.sh** und geben Sie Folgendes an: **export XTK_VAR_DIR=/app/log/AdobeCampaign**.
 
-   Weitere Informationen finden Sie unter [Personalisieren von Parametern](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
+   Weitere Informationen finden Sie unter [Parameter personalisieren](../../installation/using/installing-packages-with-linux.md#personalizing-parameters).
 
 ## Aktivieren von Prozessen {#enabling-processes}
 
@@ -122,6 +122,6 @@ Die Versand-Parameter müssen im Ordner **serverConf.xml** konfiguriert werden.
    <dnsConfig localDomain="domain.com" nameServers="192.0.0.1,192.0.0.2"/>
    ```
 
-Die anderen in dieser Datei verfügbaren Versand-Parameter werden unter [Personalisieren von Versand-Parametern](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters) angezeigt.
+Die anderen in dieser Datei verfügbaren Versand-Parameter finden Sie unter [Versand personalisieren](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
 
 Siehe auch [E-Mail-Zustellbarkeit](../../installation/using/email-deliverability.md).
