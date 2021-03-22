@@ -6,10 +6,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
+source-git-commit: b036dccc012b1948837549492d9a1b0726af459d
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 14%
+source-wordcount: '1068'
+ht-degree: 15%
 
 ---
 
@@ -43,6 +43,8 @@ Wenn sich Ihre Umgebung auf einem niedrigeren Build befindet als die unten aufge
 * Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
 * Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
+Erfahren Sie, wie Sie Ihre Version [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
+
 **Wie lässt sich das Update durchführen?**
 
 Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind.
@@ -60,13 +62,12 @@ Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind
 
 ## Aktualisierung der Kampagne Client Console
 
-Der neueste Gold Standard 11 Build behebt eine Regression, die die Verwendung einiger Komponenten der Client-Konsole verhinderte, z. B. die Datumsauswahl und die Bildverwaltung in Versänden. Die Konsolenaktualisierung ist obligatorisch.
+Die folgenden Versionen beheben eine Regression, die die Verwendung einiger Komponenten der Client-Konsole, wie z. B. der Datumsauswahl und der Bildverwaltung in Versänden, verhinderte. **Konsolen-** Upgrades sind obligatorisch.
 
-[Weitere Informationen](../rn/using/gold-standard.md).
-
->[!NOTE]
->
->Diese Fehlerbehebung ist auch in den neuesten [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) und [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126) verfügbar.
+* Neueste Gold Standard 11 Build 9032@10c2709. [Mehr dazu](../rn/using/gold-standard.md)
+* Campaign-Version 20.1.4. [Mehr dazu](../rn/using/release--20-1.md)
+* Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
+* Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
 ## Adobe Identity Management System (IMS)-Update
 
@@ -87,6 +88,8 @@ Wenn Sie über ein Adobe ID](../integrations/using/about-adobe-id.md) über Adob
 * Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
 Diese Versionen enthalten ein neues Verbindungsprotokoll: Aktualisierung ist erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
+
+Erfahren Sie, wie Sie Ihre Version [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
 
 **Wie lässt sich das Update durchführen?**
 
@@ -116,6 +119,8 @@ Die Aktualisierung auf eine der folgenden neuen Versionen ist obligatorisch:
 * Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
 * Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
+Erfahren Sie, wie Sie Ihre Version [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
+
 **Wie lässt sich das Update durchführen?**
 
 Sobald die Instanzen auf eine neuere Version aktualisiert wurden, müssen alle Kunden dem [Verfahren folgen und in den neuen Authentifizierungsmodus wechseln. ](../integrations/using/configuring-adobe-io.md) Hierfür muss das neue Adoben I/O-Token generiert und in der Implementierung verwendet werden.  
@@ -133,6 +138,8 @@ Der Apple Push Notification Service (APNs) unterstützt das Legacy-Binärprotoko
 **Sind Sie betroffen?**
 
 Wenn Ihre Instanzen auf einer **älteren Version als Kampagne 21.1,** ausgeführt werden und Push-Benachrichtigungen mit dem alten Apple-Binärprotokoll gesendet werden, müssen Sie auf die HTTP/2-basierte API des APNs-Providers aktualisieren.
+
+Erfahren Sie, wie Sie Ihre Version [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
 
 **Wie lässt sich das Update durchführen?**
 
@@ -157,7 +164,6 @@ Als gehosteter Kunde ist keine Aktion erforderlich: Adobe hat das neue Stammzert
 Als Vor-Ort-/Hybridkunde müssen Sie Ihre Konfiguration aktualisieren, um eine nahtlose Transition **vor dem 29. März 2021** sicherzustellen.
 
 [Erfahren Sie, wie Sie das neue Zertifikat](ios-certificate-update.md) integrieren.
-
 
 ## Nützliche Links
 
