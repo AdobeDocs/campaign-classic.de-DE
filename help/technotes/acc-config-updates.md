@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: 9b4b1bb5d016df8a7933ac0b96c6f110b0c4d7ac
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1025'
 ht-degree: 14%
 
 ---
@@ -60,13 +60,13 @@ Sie müssen auf eine der neueren Builds aktualisieren, die oben aufgeführt sind
 
 ## Aktualisierung der Kampagne Client Console
 
-Der neueste Gold Standard 11-Build behebt eine Regression, die die Verwendung einiger Komponenten der Client-Konsole verhinderte, z. B. die Datumsauswahl und die Bildverwaltung in Versänden. Die Konsolenaktualisierung ist obligatorisch.
+Der neueste Gold Standard 11 Build behebt eine Regression, die die Verwendung einiger Komponenten der Client-Konsole verhinderte, z. B. die Datumsauswahl und die Bildverwaltung in Versänden. Die Konsolenaktualisierung ist obligatorisch.
 
 [Weitere Informationen](../rn/using/gold-standard.md).
 
 >[!NOTE]
 >
->Diese Fehlerbehebung erfolgt auch in den neuesten [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) und [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126). Die neue Client-Konsole für andere Versionen wird demnächst verfügbar sein.
+>Diese Fehlerbehebung ist auch in den neuesten [19.1.8](../rn/using/release--19-1.md#release-19-1-8-build-9039), [19.2.4](../rn/using/release--19-2.md#release-19-2-4-build-9082) und [20.1.4](../rn/using/release--20-1.md#release-20-1-4-build-9126) verfügbar.
 
 ## Adobe Identity Management System (IMS)-Update
 
