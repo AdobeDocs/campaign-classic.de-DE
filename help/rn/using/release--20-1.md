@@ -7,9 +7,9 @@ feature: 'Übersicht  '
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1505'
 ht-degree: 97%
 
 ---
@@ -18,6 +18,16 @@ ht-degree: 97%
 # Version 20.1{#release-20-1}
 
 ## ![](assets/do-not-localize/limited_2.png) Version 20.1.4 – Build 9126 {#release-20-1-4-build-9126}
+
+_22. März 2021_
+
+* Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Sendungen verhinderte. (NEO-31453, NEO-31454)
+
+**Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
+
+>[!NOTE]
+>
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
 _23. Dezember 2020_
 
