@@ -7,9 +7,9 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 translation-type: tm+mt
-source-git-commit: fd6195ca447fa0345189f3153f44ad2f9a067210
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '3040'
+source-wordcount: '3060'
 ht-degree: 20%
 
 ---
@@ -25,9 +25,9 @@ Im folgenden Abschnitt erhalten Sie einen Überblick über die Konfiguration, di
 >
 >Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting models](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
-Weitere Informationen zu den Konzepten und Best Practices im Zusammenhang mit der Lieferbarkeit finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
+Weitere Informationen zu den Konzepten und Best Practices im Zusammenhang mit der Lieferbarkeit mit Adobe Campaign finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
-Alle technischen Empfehlungen zum effizienten Versenden und Empfangen von E-Mails durch ein Adobe Campaign sind in diesem [Abschnitt](../../delivery/using/technical-recommendations.md) verfügbar.
+Einen tieferen Einblick in die Lieferbarkeit, einschließlich aller technischen Empfehlungen zum effizienten Versenden und Empfangen von E-Mails durch eine Adobe, finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Adobe-Auslieferung.
 
 ## Grundprinzip {#operating-principle}
 
@@ -133,7 +133,7 @@ Standardmäßig überwacht der Statistikserver den Anschluss 7777. Dieser Anschl
 
 >[!IMPORTANT]
 >
->Bei gehosteten oder hybriden Installationen werden die **[!UICONTROL MX-Verwaltungsregeln]** für Versand nicht mehr verwendet, wenn Sie auf [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domänen stammt, von denen Sie E-Mails senden, angepasst werden.
+>Bei gehosteten oder hybriden Installationen werden die Versanddurchsatzregeln der **[!UICONTROL MX-Verwaltung]** nicht mehr verwendet, wenn Sie auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domains stammt, von denen Sie E-Mails senden, angepasst werden.
 
 Die folgenden Abschnitte gelten nur für lokale Installationen und gehostete/hybride Installationen mit der Legacy-Kampagne MTA.
 
