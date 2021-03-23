@@ -1,35 +1,35 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: 'Gold Standard-Upgrade '
-description: 'Erfahren Sie, was Campaign Classic Gold Standard ist '
-feature: 'Übersicht  '
+title: '[!DNL Gold Standard] upgrade'
+description: Erfahren Sie, was Campaign Classic [!DNL Gold Standard]  ist
+feature: Übersicht
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 80%
+source-wordcount: '559'
+ht-degree: 74%
 
 ---
 
 
-# Gold Standard-Versionen {#gs-overviews}
+# [!DNL Gold Standard] Versionen  {#gs-overviews}
 
-## Was ist Gold Standard?
+## Was ist [!DNL Gold Standard]?
 
 Adobe und Adobe Campaign sind bestrebt, Ihnen mit unseren Softwarelösungen das bestmögliche Erlebnis und den optimalen Nutzen zu bieten. Adobe stellt sicher, dass Sie Zugriff auf die aktuellen Versionen der in unseren Lösungen verwendeten Technologien haben.
 
 Adobe Campaign Classic verwendet spezielle Technologien, um Mehrwert zu erzielen. Diese Kombination von Technologien erfordert eine regelmäßige Aktualisierung Ihrer Campaign Classic-Instanzen, um sicherzustellen, dass Sie die aktuellsten Versionen verwenden und über maximale Sicherheit, Stabilität und Leistung verfügen.
 
-Gold Standard ist die langfristig unterstützte Version von Campaign Classic. Als gehosteter Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit der neuesten stabilen Version, ohne aktiv werden zu müssen. On-Premise- und Hybrid-Kunden können ebenfalls von den Gold Standard-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen.
+[!DNL Gold Standard] ist Campaign Classic Long-Term Support Release. Als gehosteter [!DNL Gold Standard] Benutzer profitieren Sie automatisch von der [!DNL Gold Standard] Aktualisierung mit der neuesten stabilen Version ohne Aktion. Auch lokale und Hybrid-Kunden können von [!DNL Gold Standard]-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen.
 
 ## Warum benötigt meine Organisation dieses Upgrade?
 
 Als gehosteter Kunde werden Sie direkt nach Adobe benachrichtigt, wenn festgestellt wurde, dass Ihr Konto eine oder mehrere der mit Campaign Classic verbundenen Technologien aktualisieren und der aktuelle Build und/oder die aktuelle Version aktualisiert werden muss.
 
-Als On-Premise- oder Hybridkunde, die auf einer älteren Version ausgeführt wird, empfiehlt Ihnen Adobe, auf die neueste Gold-Standard-Version umzustellen.
+Als On-Premise- oder Hybridkunde, die auf einer älteren Version ausgeführt wird, empfiehlt Ihnen die Adobe, zum neuesten [!DNL Gold Standard] zu wechseln.
 
 Dadurch wird sichergestellt, dass Ihr Konto vor Sicherheitslücken geschützt ist und die aktuelle Technologie verwendet wird. Außerdem wird Ihr Konto durch dieses Upgrade in Zukunft auf einfachere, regelmäßige Upgrades vorbereitet, die weniger manuelle Arbeit und Eingriffe erfordern.
 
@@ -100,6 +100,6 @@ Wir werden dafür sorgen, dass Sie über alle nötigen Projekt- und Kontaktinfor
 
 ## Zusätzliche Ressourcen
 
-* [Versionshinweise zu Gold Standard ](gold-standard.md)
+* [[!DNL Gold Standard] In den Versionshinweisen](gold-standard.md)
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
-* [Gold Standard-Kompatibilitätsmatrix](compatibility-matrix-gs.md)
+* [[!DNL Gold Standard] Kompatibilitätsmatrix](compatibility-matrix-gs.md)
