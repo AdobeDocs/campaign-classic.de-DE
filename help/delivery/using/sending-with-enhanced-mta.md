@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über den Umfang und die Besonderheiten des E-Mai
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: ht
-source-git-commit: c64b6eccd0ad45ebcf4ecc18150f4409f5c66bc2
-workflow-type: ht
-source-wordcount: '1950'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+workflow-type: tm+mt
+source-wordcount: '1962'
+ht-degree: 99%
 
 ---
 
@@ -152,7 +152,7 @@ Weitere Informationen zum Gültigkeitszeitraum finden Sie in [diesem Abschnitt](
 ### DKIM-Signierung
 
 Die Signierung der DKIM-E-Mail-Authentifizierung (DomainKeys Identified Mail) erfolgt durch den Enhanced MTA. Das DKIM-Signieren durch den nativen Campaign-MTA wird im Rahmen des Enhanced MTA-Upgrades in der Tabelle &quot;Domain-Verwaltung&quot; deaktiviert.
-Weitere Informationen zu DKIM finden Sie in [diesem Abschnitt](../../delivery/using/technical-recommendations.md#dkim).
+Weitere Informationen zu DKIM finden Sie im Best Practice Guide [Adobe Deliverability Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ### Berichte zum Versanderfolg
 
