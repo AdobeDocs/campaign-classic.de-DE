@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 3a65bc08fd3b6cedfd7ef05a51fd8378f19daa85
+source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 64%
+source-wordcount: '686'
+ht-degree: 67%
 
 ---
 
@@ -38,50 +38,58 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
 
 Wie aktualisieren Sie auf einen neuen Build? Wie lässt sich die Workflow-Ausführung überwachen? Was ist der Datenbankbereinigungs-Workflow? [Lesen Sie die zehn am häufigsten gestellten Fragen](platform/using/common-questions.md).
 
-### Themen Fragen und Antworten
-
-Eine Reihe spezifischer Fragen und Antworten nach Themen:
-
-* [Schlüsselkonzepte](platform/using/faq-key-concepts.md)
-* [Campaign-Einstellungen](platform/using/faq-campaign-config.md)
-* [Reporting](platform/using/faq-reporting.md)
-* [Build-Aktualisierung](platform/using/faq-build-upgrade.md)
-* [Testen, Versand und Tracking von Nachrichten](platform/using/faq-messages.md)
-* [Workflows](platform/using/faq-workflows.md)
-* [Entwickler](platform/using/faq-developers.md)
-* [Zustellbarkeit](delivery/using/monitoring-deliverability.md)
-
-### Allgemeine Probleme
-
-* [Leistungs- und Durchsatzprobleme](production/using/performance-and-throughput-issues.md)
-* [Versandleistung](delivery/using/delivery-performances.md)
-* [Optimieren der Workflow-Leistung](workflow/using/workflow-best-practices.md)
-* [Fehlerbehebung bei der Workflow-Ausführung](workflow/using/monitoring-workflow-execution.md)
-* [Nutzung von SFTP-Servern](platform/using/sftp-server-usage.md)
-* [Fehlgeschlagene Sendungen](delivery/using/understanding-delivery-failures.md)
-
-### Best Practices
-
-* [Best Practices bei Workflows](workflow/using/workflow-best-practices.md)
-* [Überwachen technischer Workflows](workflow/using/monitoring-technical-workflows.md)
-* [Tracking-Verwaltung](delivery/using/about-message-tracking.md)
-* [Überwachungstools](production/using/monitoring-guidelines.md)
-* [Importieren von Daten mit Workflows](platform/using/import-export-workflows.md)
-* [Senden von Nachrichten in mehreren Schüben  ](delivery/using/steps-sending-the-delivery.md)
-* [Gestalten von E-Mail-Inhalten](delivery/using/defining-the-email-content.md)
-* [Best Practices beim Versand](delivery/using/delivery-best-practices.md)
-
-### Anleitung
-
-* [Aktualisierung auf den aktuellen Build](production/using/build-upgrade.md)
-* [Häufig gestellte Fragen zum Build-Upgrade](platform/using/faq-build-upgrade.md)
-* [Überwachen von Sendungen](delivery/using/about-delivery-monitoring.md)
-* [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
-* [Checkliste für Sicherheit und Datenschutz](installation/using/get-started-security-privacy.md)
-* [Verwaltung von Datenschutz und Einverständniserklärungen](platform/using/privacy-management.md)
-* [Erstellen einer Abfrage](platform/using/steps-to-create-a-query.md)
-* [Beispiele für Abfragen ](workflow/using/querying-recipient-table.md)
-* [Erstellen eines Workflows](workflow/using/building-a-workflow.md)
+<table>
+    <tr><td><strong>Themen Fragen und Antworten</strong></td><td><strong>Allgemeine Probleme</strong></td><td><strong>Best Practices</strong></td><td><strong>Anleitung</strong></td></tr>
+    <tr>
+    <td valign="top">
+        <ul>
+        <li><a href="platform/using/faq-key-concepts.md">Schlüsselkonzepte</a></li>
+        <li><a href="platform/using/faq-campaign-config.md">Campaign-Einstellungen</a></li>
+        <li><a href="platform/using/faq-reporting.md">Reporting </a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Build-Upgrade</a></li>
+        <li><a href="platform/using/faq-messages.md">Testen, Versand und Tracking von Nachrichten</a></li>
+        <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
+        <li><a href="platform/using/faq-developers.md">Entwickler</a></li>
+        <li><a href="delivery/using/monitoring-deliverability.md">Zustellbarkeit</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/performance-and-throughput-issues.md">Leistungs- und Durchsatzprobleme</a></li>
+        <li><a href="delivery/using/delivery-performances.md">Versandleistung</a></li>
+        <li><a href="workflow/using/workflow-best-practices.md">Optimieren der Workflow-Leistung</a></li>
+        <li><a href="workflow/using/monitoring-workflow-execution.md">Fehlerbehebung bei der Workflow-Ausführung</a></li>
+        <li><a href="platform/using/sftp-server-usage.md">Nutzung von SFTP-Servern</a></li>
+        <li><a href="delivery/using/understanding-delivery-failures.md">Ursachen für das Fehlschlagen von Sendungen</a></li>
+        </ul>
+    </td>
+   <td valign="top">
+        <ul>
+        <li><a href="workflow/using/workflow-best-practices.md">Best Practices bei Workflows</a></li>
+        <li><a href="workflow/using/monitoring-technical-workflows.md">Überwachen technischer Workflows</a></li>
+        <li><a href="delivery/using/about-message-tracking.md">Tracking-Verwaltung</a></li>
+        <li><a href="production/using/monitoring-guidelines.md">Überwachungstools</a></li>
+        <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
+        <li><a href="delivery/using/steps-sending-the-delivery.md">Senden von Nachrichten in mehreren Schüben</a></li>
+        <li><a href="delivery/using/defining-the-email-content.md">Gestalten von E-Mail-Inhalten</a></li>
+        <li><a href="delivery/using/delivery-best-practices.md">Best Practices beim Versand</a></li>
+        </ul>
+    </td>
+    <td valign="top">
+        <ul>
+        <li><a href="production/using/build-upgrade.md">Aktualisierung auf den aktuellen Build</a></li>
+        <li><a href="platform/using/faq-build-upgrade.md">Häufig gestellte Fragen zum Build-Upgrade</a></li>
+        <li><a href="delivery/using/about-delivery-monitoring.md">Überwachen von Sendungen</a></li>
+        <li><a href="delivery/using/understanding-quarantine-management.md">Funktionsweise der Quarantäneverwaltung</a></li>
+        <li><a href="installation/using/get-started-security-privacy.md">Checkliste für Sicherheit und Datenschutz</a></li>
+        <li><a href="platform/using/privacy-management.md">Verwaltung von Datenschutz und Einverständniserklärungen</a></li>
+        <li><a href="platform/using/steps-to-create-a-query.md">Erstellen einer Abfrage</a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">Beispiele für Abfragen     </a></li>
+        <li><a href="workflow/using/building-a-workflow.md">Workflow erstellen</a></li>
+        </ul>
+    </td>
+    </tr>
+</table>
 
 ## Campaign Control Panel {#control-panel}
 
@@ -130,17 +138,11 @@ Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorh
 
 ### Aufrufen des Campaign-Download-Centers
 
-Ab Juni 2020 ersetzt die Experience Cloud-Lösung „Softwareverteilung“ das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen.
-
-[](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html)Klicken Sie hier, um auf die Softwareverteilung von Experience Cloud zuzugreifen.
+Ab Juni 2020 ersetzt die Experience Cloud-Lösung „Softwareverteilung“ das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html)Klicken Sie hier, um auf die Softwareverteilung von Experience Cloud zuzugreifen.
 Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](https://docs.adobe.com/content/heexperience-cloud/software-distribution/home.html).
 
 ### Erstellen Sie ein Ticket oder starten Sie einen Chat
 
-Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten.
+Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-Um Probleme zu beheben oder zu beheben, ermöglicht Ihnen das Adobe Admin Console den Chat mit dem [Adobe Kundensupport](https://adminconsole.adobe.com/overview).
-
-Um ein Problem zu protokollieren oder eine Chat-Sitzung in diesem neuen System zu Beginn zu führen, stellen Sie eine Verbindung zu [Adobe Admin Console](https://adminconsole.adobe.com/overview) her.
-
-Befolgen Sie das detaillierte Verfahren, das unter [diese Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschrieben wird.
+Um ein Problem zu protokollieren oder eine Chat-Sitzung in diesem neuen System zu Beginn zu führen, stellen Sie eine Verbindung zu [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das detaillierte Verfahren, das unter [diese Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschrieben wird.
