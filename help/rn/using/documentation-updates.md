@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Aktualisierungen der Dokumentation für Adobe Campaign Classic
 description: Auf dieser Seite werden alle neuen Funktionen und Updates in der Adobe Campaign Classic-Dokumentation Liste.
-feature: 'Übersicht  '
+feature: Übersicht
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
 workflow-type: tm+mt
-source-wordcount: '4214'
-ht-degree: 99%
+source-wordcount: '4270'
+ht-degree: 96%
 
 ---
 
@@ -37,6 +37,8 @@ Näheres zur Erstellung und Verwaltung von Kampagnen finden Sie auf den folgende
 * [Einrichten und Verwalten des Genehmigungsprozesses](../../campaign/using/marketing-campaign-approval.md)
 
 Im Abschnitt zur Aktivität **[!UICONTROL Erweitertes JavaScript]** finden Sie Informationen dazu, wie Sie die Methode „task.setCompleted()“ verwenden können, um die Aufgabe zu beenden und künftige Rückrufe zu verhindern. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
+
+Der Abschnitt [Auslieferbarkeit](../../delivery/using/about-deliverability.md) wurde aktualisiert und enthält nun Links zum neuen Leitfaden [Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Auslieferung von Adoben. Alle generischen Informationen zur Lieferbarkeit, die für verschiedene Adoben gelten können, wurden in den [Best Practice Guide Anhang](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources) verschoben.
 
 ## Februar 2021 {#release-21.1}
 
@@ -130,8 +132,8 @@ Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compat
 
 Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr dazu](../../rn/using/deprecated-features.md)
 
-Versionshinweise und Kompatibilitätsmatrix für die Gold Standard-Version sind jetzt in einem speziellen Abschnitt verfügbar.
-[Mehr dazu](../../rn/using/gold-standard.md#gs-11)
+Versionshinweise und Kompatibilitätsmatrix für [!DNL Gold Standard] sind jetzt in einem speziellen Abschnitt verfügbar.
+[Mehr dazu](../../rn/using/gold-standard.md#gs-11).
 
 Die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
 
@@ -167,7 +169,7 @@ Es wurde ein Hinweis zur Verwendung zusätzlicher Daten mit Testadressen in Send
 
 Informationen zu Best Practices im Zusammenhang mit der Versandgestaltung und dem Versand mit Campaign finden Sie in einem eigenen Abschnitt – [mehr dazu](../../delivery/using/delivery-best-practices.md)
 
-Die Landingpage für die Best Practices für die Zustellbarkeit wurde verbessert, um den Zugriff auf Unterabschnitte zu erleichtern – [mehr dazu](../../delivery/using/deliverability-key-points.md)
+Die Landingpage für die Best Practices für die Zustellbarkeit wurde verbessert, um den Zugriff auf Unterabschnitte zu erleichtern – [mehr dazu](../../delivery/using/about-deliverability.md)
 
 Zu den folgenden Themen sind jetzt Anleitungsvideos verfügbar:
 
@@ -206,7 +208,7 @@ Der Abschnitt über die **[!UICONTROL Und-Verknüpfungsaktivität]** wurde um zu
 
 Den Workflow-Anwendungsfällen wurde ein Anwendungsfall zum automatischen Aktualisieren einer Liste mithilfe einer inkrementellen Abfrage hinzugefügt. [Mehr dazu](../../workflow/using/about-workflow-use-cases.md)
 
-Die [Versionshinweise](../../rn/using/latest-release.md) wurden neu organisiert: Es wurde eine [Übersichtsseite](../../rn/using/latest-release.md) mit Informationen zu Build-Status, Upgrade-Prozess, Empfehlungen und wichtigen Links hinzugefügt. Eine spezielle Seite für [Gold Standard-Versionen](../../rn/using/gold-standard.md) wurde ebenfalls hinzugefügt und die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) wurde integriert.
+Die [Versionshinweise](../../rn/using/latest-release.md) wurden neu organisiert: Es wurde eine [Übersichtsseite](../../rn/using/latest-release.md) mit Informationen zu Build-Status, Upgrade-Prozess, Empfehlungen und wichtigen Links hinzugefügt. Eine dedizierte Seite für [[!DNL Gold Standard] Releases](../../rn/using/gold-standard.md) wurde hinzugefügt und die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) wurde integriert.
 
 Es wurde ein neuer Abschnitt mit Richtlinien für die Überwachung in Campaign Classic hinzugefügt. [Mehr dazu](../../production/using/monitoring-guidelines.md)
 
@@ -266,7 +268,7 @@ Der Abschnitt zum Monitoring der Zustellbarkeit wurde an eine andere Stelle vers
 
 Der Abschnitt zur Behebung von Problemen mit der Zustellbarkeit wurde verschoben und überarbeitet. [Mehr dazu](../../delivery/using/deliverability-faq.md)
 
-Der Abschnitt zu Zustellbarkeitsrichtlinien beim Start einer neuen Plattform wurde überarbeitet. [Mehr dazu](../../delivery/using/starting-new-platform.md)
+Die Richtlinien zur Lieferbarkeit beim Start einer neuen Plattform wurden verbessert. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
 
 Der Abschnitt zum Senden von Transaktions-E-Mails mit Anhängen wurde an eine andere Stelle verschoben und aktualisiert. [Mehr dazu](../../message-center/using/transactional-email-with-attachments.md)
 
@@ -476,7 +478,7 @@ Es wurde ein Abschnitt hinzugefügt, in dem die Installations- und Konfiguration
 
 Es wurde ein Abschnitt hinzugefügt, der die Deinstallationsschritte des Campaign-Servers beschreibt. [Mehr dazu](../../installation/using/uninstalling-campaign.md)
 
-Die ersten Schritte zum Thema [Sicherheit](https://helpx.adobe.com/de/campaign/kb/acc-security.html), [Zustellbarkeit](../../delivery/using/deliverability-key-points.md) und [Datenschutz](../../platform/using/privacy-management.md) wurden aktualisiert.
+Die ersten Schritte zum Thema [Sicherheit](https://helpx.adobe.com/de/campaign/kb/acc-security.html), [Zustellbarkeit](../../delivery/using/about-deliverability.md) und [Datenschutz](../../platform/using/privacy-management.md) wurden aktualisiert.
 
 Die Beschreibung der Workflow-Option für die Vorab-Bearbeitung wurde aktualisiert, um Produktänderungen widerzuspiegeln. [Mehr dazu](../../workflow/using/data-loading--file-.md)
 
