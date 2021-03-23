@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie die Ursachen von fehlgeschlagenen Sendungen e
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: ht
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
-workflow-type: ht
-source-wordcount: '2623'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+workflow-type: tm+mt
+source-wordcount: '2631'
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Adresse nicht angegeben </td> 
-   <td> Hard </td> 
+   <td> hart </td> 
    <td> 7 </td> 
    <td> Empfängeradresse fehlt.<br /> </td> 
   </tr> 
@@ -81,7 +81,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Adresse, die auf die Blockierungsliste gesetzt wurde </td> 
-   <td> Hard </td> 
+   <td> hart </td> 
    <td> 8 </td> 
    <td> Die Adresse wurde zum Zeitpunkt des Versands der Blockierungsliste hinzugefügt. Dieser Status wird zum Importieren von Daten aus externen Listen und externen Systemen in die Quarantäneliste von Adobe Campaign verwendet.<br /> </td> 
   </tr> 
@@ -123,7 +123,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Postfach voll </td> 
-   <td> Soft </td> 
+   <td> Weich </td> 
    <td> 5 </td> 
    <td> Das Postfach des Benutzers ist voll und kann keine Nachrichten mehr aufnehmen. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> Dieser Fehlertyp wird von einem Bereinigungsprozess verwaltet. Die Adresse erhält nach 30 Tagen wieder einen gültigen Status.<br /> Achtung: Damit die Adresse automatisch aus der Quarantäne genommen werden kann, muss der technische Workflow Datenbankbereinigung (Cleanup) gestartet sein.<br /> </td> 
   </tr> 
@@ -171,14 +171,14 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Unbekannter Nutzer </td> 
-   <td> Hard </td> 
+   <td> hart </td> 
    <td> 1 </td> 
    <td> Die Adresse existiert nicht. An dieses Profil werden keine weiteren Zustellversuche unternommen.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand   {#retries-after-a-delivery-temporary-failure}
+## Weitere Zustellversuche nach einem vorübergehend fehlgeschlagenen Versand    {#retries-after-a-delivery-temporary-failure}
 
 Wenn die Zustellung vorübergehend wegen eines **Softbounce** oder eines **ignorierten Fehlers** fehlschlägt, werden während der Versandlaufzeit erneute Zustellversuche vorgenommen.
 
@@ -194,7 +194,7 @@ Gehen Sie bei On-Premise-Installationen und gehosteten/hybriden Installationen m
 
 Standardmäßig sind innerhalb der ersten 24 Stunden fünf Versuche im Abstand von mindestens einer Stunde vorgesehen, an den vier folgenden Tagen je ein Versuch. Die Anzahl weiterer Versuche kann global geändert werden (kontaktieren Sie Ihren technischen Administrator von Adobe) oder für jeden Versand oder jede Versandvorlage (siehe [Konfiguration weiterer Zustellversuche](../../delivery/using/steps-sending-the-delivery.md#configuring-retries)).
 
-## Synchrone und asynchrone Fehler   {#synchronous-and-asynchronous-errors}
+## Synchrone und asynchrone Fehler    {#synchronous-and-asynchronous-errors}
 
 Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren Zeitpunkt nach dem Versand (asynchroner Fehler).
 
@@ -205,7 +205,7 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
    >
    >Die Konfiguration der Bounce-Adresse wird in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#managing-bounced-emails) beschrieben.
 
-   Die [Feedback-Schleife](../../delivery/using/technical-recommendations.md#feedback-loop) funktioniert wie eine Bounce-E-Mail. Wenn ein Benutzer eine E-Mail als Spam einstuft, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an einen speziell dafür erstellten E-Mail-Eingang weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**).
+   Die [Feedback-Schleife](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) funktioniert wie eine Bounce-E-Mail. Wenn ein Benutzer eine E-Mail als Spam einstuft, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an einen speziell dafür erstellten E-Mail-Eingang weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**).
 
    >[!NOTE]
    >
@@ -223,17 +223,19 @@ Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den be
 >
 >Bei gehosteten oder hybriden Installationen werden die meisten E-Mail-Verwaltungsregeln nicht mehr verwendet, wenn Sie ein Upgrade auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) durchgeführt haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#email-management-rules).
 
-### Bounce-Message-Qualifizierung           {#bounce-mail-qualification}
+### Bounce-Message-Qualifizierung            {#bounce-mail-qualification}
 
 >[!IMPORTANT]
 >
 >Bei gehosteten oder hybriden Installationen, wenn Sie ein Upgrade auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) durchgeführt haben:
 >
 >* Die Bounce-Qualifizierungen in der Tabelle **[!UICONTROL Versandlogqualifizierung]** werden nicht mehr für Fehlernachrichten bei synchronen Sendungen verwendet. **** Der Enhanced MTA bestimmt den Bounce-Typ und die Qualifizierung und sendet diese Informationen an Campaign zurück.
->
->* **** Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
->
->* Bei Instanzen, die den Enhanced MTA **ohne Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
+   >
+   >
+* **** Asynchrone Bounces werden weiterhin vom InMail-Prozess über die Regeln für **[!UICONTROL Eingehende E-Mails]** qualifiziert. Weiterführende Informationen dazu finden Sie im Abschnitt [E-Mail-Verwaltungsregeln](#email-management-rules).
+   >
+   >
+* Bei Instanzen, die den Enhanced MTA **ohne Webhooks/EFS** verwenden, dienen die Regeln für **[!UICONTROL eingehende E-Mails]** auch zur Verarbeitung der synchronen Bounce-E-Mails, die aus dem Enhanced MTA kommen, wobei dieselbe E-Mail-Adresse wie bei asynchronen Bounce-E-Mails genutzt wird.
 
 
 Bei On-Premise-Installationen und gehosteten/hybriden Installationen, die den bestehenden Campaign-MTA verwenden, erhält der Adobe Campaign-Versand-Server eine Fehlermeldung vom Messaging-Server oder dem Remote-DNS-Server, wenn der Versand einer E-Mail fehlschlägt. Die Liste der Fehler besteht aus Zeichenfolgen, die in der vom Remote-Server zurückgegebenen Nachricht enthalten sind. Jeder Fehlermeldung sind Fehlertypen und Gründe zugeordnet.
