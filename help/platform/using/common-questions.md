@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: baa41d876b889d2746f593e97f6b624dfffa5911
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 100%
+source-wordcount: '521'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign Classic? Dann lesen Sie im Folg
 
 Adobe Campaign Classic verwendet spezielle Technologien, um Mehrwert zu erzielen. Diese Kombination von Technologien erfordert eine regelmäßige Aktualisierung Ihrer Campaign Classic-Instanzen, um sicherzustellen, dass Sie die aktuellsten Versionen verwenden und über maximale Sicherheit, Stabilität und Leistung verfügen.
 
-Wenn Sie Adobe Managed Services verwenden, können Sie von einer Aktualisierung auf Campaign Gold Standard profitieren. Weiterführende Informationen hierzu finden Sie in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+Wenn Sie Adobe Managed Services verwenden, können Sie von der Kampagne [!DNL Gold Standard] profitieren. Weiterführende Informationen hierzu finden Sie in [diesem Artikel](../../rn/using/gs-overview.md).
 
 [Lesen Sie diesen Abschnitt](../../production/using/build-upgrade.md), um zu erfahren, wie Sie Ihre Umgebung aktualisieren können, und konsultieren Sie die [häufigen Fragen](../../platform/using/faq-build-upgrade.md) zu diesem Thema.
 
