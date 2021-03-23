@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 44f2aed49a12d51bb3b38f304e6b922f0faf68cc
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 100%
+source-wordcount: '1211'
+ht-degree: 98%
 
 ---
 
@@ -23,7 +23,7 @@ Zu den Kernfunktionen zählen die Zielgruppenbestimmung, die Definition und Pers
 
 >[!NOTE]
 >
->Adobe Campaign bietet Tools zur Überwachung der Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie unter [Zustellbarkeit, erste Schritte](../../delivery/using/deliverability-key-points.md) und [Verwaltung der Zustellbarkeit](../../delivery/using/about-deliverability.md).
+>Adobe Campaign Angebot eine Reihe von Tools zur Überwachung Ihrer Zustellbarkeit und Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
 Sendungen können automatisiert werden, indem ein Versand vorbereitet und/oder über einen Workflow gesendet wird. Weiterführende Informationen zu Versandaktivitäten in Workflows finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
 
