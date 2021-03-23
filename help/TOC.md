@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 95d0686c4ddeb4e25eb918ca92cbd6a0b1aa1f3c
+source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 96%
+source-wordcount: '2448'
+ht-degree: 97%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 96%
 + Versionshinweise {#release-notes}
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
    + [Aktuelle Version](rn/using/latest-release.md)
-   + Gold Standard-Version {#gs-release}
-      + [Was ist Gold Standard](rn/using/gs-overview.md)
-      + [Versionshinweise zu Gold Standard ](rn/using/gold-standard.md)
-      + [Gold Standard-Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard] release  {#gs-release}
+      + [Was ist [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [[!DNL Gold Standard] In den Versionshinweisen](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
    + Frühere Versionen {#previous-releases}
       + [Version 20.3](rn/using/release--20-3.md)
       + [Version 20.2](rn/using/release--20-2.md)
@@ -115,7 +115,7 @@ ht-degree: 96%
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
-   + [Hilfe- und Supportoptionen](support.md)
+   + [Hilfe- und Support-Optionen](support.md)
 + Nachrichten erstellen und senden {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
    + Die wichtigsten Schritte beim Erstellen eines Versands {#key-steps-when-creating-a-delivery}
@@ -221,17 +221,11 @@ ht-degree: 96%
       + [Tracking testen](delivery/using/testing-tracking.md)
       + [Fehlerbehebung beim Tracking](delivery/using/tracking-troubleshooting.md)
    + Verwaltung der Zustellbarkeit {#deliverability-management}
-      + [Über die Zustellbarkeit](delivery/using/about-deliverability.md)
-      + [Wichtigste zu prüfende Punkte](delivery/using/deliverability-key-points.md)
-      + [Einrichten einer neuen Plattform](delivery/using/starting-new-platform.md)
+      + [Was ist Zustellbarkeit](delivery/using/about-deliverability.md)
       + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
-      + [Verbessern der Reputation](delivery/using/improve-reputation.md)
-      + [Technische Empfehlungen](delivery/using/technical-recommendations.md)
       + [Zustellbarkeit überwachen](delivery/using/monitoring-deliverability.md)
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
-      + [Best Practices zur Rückgewinnung](delivery/using/re-engagement-best-practices.md)
-      + [Datenbanken mit Blockierungslisten](delivery/using/block-list-databases.md)
       + [Fehlerbehebung](delivery/using/deliverability-faq.md)
    + Content-Management-Modul {#content-management}
       + [Über Content Management](delivery/using/about-content-management.md)
