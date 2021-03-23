@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über die Status, die in Ihrem Versand-Dashboard 
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: ht
-source-git-commit: 29801740c10dc182bdb5f00114298d04385a3e1b
-workflow-type: ht
-source-wordcount: '627'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 94%
 
 ---
 
@@ -87,7 +87,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
  </tbody> 
 </table>
 
-Weiterführende Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie im Adobe Campaign-Handbuch zu [Best Practices für die Optimierung der Zustellbarkeit](../../delivery/using/deliverability-key-points.md) und auf [dieser Seite](../../delivery/using/about-deliverability.md).
+Informationen zur Optimierung der Auslieferbarkeit Ihrer Adobe Campaign-E-Mails finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md). Einen tieferen Einstieg in die Lieferbarkeit finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Adobe-Lieferbarkeit.
 
 ## Status Ausstehend {#pending-status}
 
