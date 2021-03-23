@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Hosting-Modelle
 description: Hosting-Modelle für Discover-Kampagnen
-feature: 'Übersicht  '
+feature: Übersicht
 role: Architekt
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 09bd634142f643206c38ac5f881302a5d489ecaf
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 2%
+source-wordcount: '626'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +33,7 @@ Als gehosteter Kunde werden die meisten Installations- und Konfigurationsschritt
 
 * Konfigurieren Sie die Tracking- und Mirrorseite-URLs pro Marke. Transaktionsnachrichten finden Sie in [diesem Abschnitt](../../message-center/using/configuring-multibranding.md).
 * Installieren Sie die Client-Konsole: verweisen Sie auf [diesen Abschnitt](../../installation/using/installing-the-client-console.md).
-* Weitere Informationen zu den Werkzeugen und Best Practices für die Bereitstellung finden Sie im Handbuch [Erste Schritte](../../delivery/using/deliverability-key-points.md) und in der [detaillierten Dokumentation](../../delivery/using/about-deliverability.md).
+* Weitere Informationen zu den Werkzeugen und Best Practices für die Bereitstellung finden Sie in der [detaillierten Dokumentation](../../delivery/using/about-deliverability.md).
 * Optionen für die Kampagne konfigurieren: verweisen Sie auf [diesen Abschnitt](../../installation/using/configuring-campaign-options.md).
 * CRM-Connectors konfigurieren: verweisen Sie auf [diesen Abschnitt](../../platform/using/crm-connectors.md).
 
@@ -65,7 +65,7 @@ Als Hybridkunde werden die meisten Installations- und Konfigurationsschritte von
 * Konfigurieren Sie die Tracking- und Mirrorseite-URLs pro Marke. Transaktionsnachrichten finden Sie in [diesem Abschnitt](../../message-center/using/configuring-multibranding.md).
 * Installieren Sie die Client-Konsole: verweisen Sie auf [diesen Abschnitt](../../installation/using/installing-the-client-console.md).
 * Integrierte Pakete installieren: verweisen Sie auf [diesen Abschnitt](../../installation/using/installing-campaign-standard-packages.md).
-* Lieferbarkeit: configure [MX rules](../../installation/using/email-deliverability.md#mx-configuration) und [E-Mail-Formats](../../installation/using/email-deliverability.md#managing-email-formats). Weitere Informationen zu den Werkzeugen und Best Practices für die Bereitstellung finden Sie im Handbuch [Erste Schritte](../../delivery/using/deliverability-key-points.md) und in der [detaillierten Dokumentation](../../delivery/using/about-deliverability.md).
+* Lieferbarkeit: configure [MX rules](../../installation/using/email-deliverability.md#mx-configuration) und [E-Mail-Formats](../../installation/using/email-deliverability.md#managing-email-formats). Weitere Informationen zu den Werkzeugen und Best Practices für die Bereitstellung finden Sie in der [detaillierten Dokumentation](../../delivery/using/about-deliverability.md).
 * Optionen für die Kampagne konfigurieren: verweisen Sie auf [diesen Abschnitt](../../installation/using/configuring-campaign-options.md).
 * Externe Datenbank konfigurieren (Federated Data Access): verweisen Sie auf [diesen Abschnitt](../../installation/using/about-fda.md).
 * CRM-Connectors konfigurieren: verweisen Sie auf [diesen Abschnitt](../../platform/using/crm-connectors.md).
