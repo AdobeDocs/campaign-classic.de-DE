@@ -5,11 +5,11 @@ title: Konfigurieren der Integration
 description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
-translation-type: ht
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
-workflow-type: ht
-source-wordcount: '584'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+workflow-type: tm+mt
+source-wordcount: '582'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 Ihre Version von Adobe Campaign Classic unterstützt die Pipeline nicht.
 
 1. Vergewissern Sie sich, dass das [!DNL pipelined]-Element in der Konfigurationsdatei vorhanden ist. Wenn nicht, bedeutet das, dass es nicht unterstützt wird.
-1. Upgrade auf Campaign 20.3 oder Gold Standard 11.
+1. Aktualisieren Sie auf Kampagne 20.3 oder [!DNL Gold Standard] 11.
 
 **Pipeline schlägt fehl mit der Fehlermeldung &quot;aurait dû kommencer par `[` ou `{` (iRc=16384)&quot;**
 
