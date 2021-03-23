@@ -7,7 +7,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Unsere intuitiven Handbücher bieten Ihnen einen einfachen Einstieg in Adobe Cam
 * [Bearbeiten von E-Mail-Inhalt mit Adobe Experience Manager](https://helpx.adobe.com/de/campaign/kb/acc-aem.html): Machen Sie Sie sich mit den Grundlagen zur Integration zwischen Adobe Campaign und Experience Manager vertraut.
 * [Datenschutzverwaltung](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html): Hier erfahren Sie, wie Ihnen Adobe Campaign Classic hilft, die Datenschutzbestimmungen bei der Nutzung unseres Dienstes gesetzeskonform umzusetzen.
 * [Integrieren dynamischer Inhalte in einer E-Mail](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
-* [Verwalten der Zustellbarkeit](../../delivery/using/deliverability-key-points.md): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
+* [Verwalten der Zustellbarkeit](../../delivery/using/about-deliverability.md): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
 * [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md): Hier erfahren Sie über Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign Classic.
 * [Build-Aktualisierung durchführen](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html): In diesem Dokument erfahren Sie die wichtigsten Schritte und Best Practices zur Durchführung einer Build-Aktualisierung bei Campaign Classic.
 * [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html): Hier erfahren Sie, welche Schlüsselelemente geprüft werden müssen, um eine sichere Konfiguration für On-Premise-Anwendungen zu gewährleisten.
