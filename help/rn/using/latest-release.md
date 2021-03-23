@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
 description: Aktuelle Version von Campaign Classic   Anmerkungen
-feature: 'Übersicht  '
+feature: Übersicht
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: d1796224df95663c39fa5975e88c03a923c94878
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 98%
+source-wordcount: '906'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 98%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign Classic Release Candidate-Version** aufgelistet.
 
-Die Informationen für die Campaign Classic Gold Standard-Version (aktueller allgemein verfügbarer Build) [finden Sie auf dieser Seite](../../rn/using/gold-standard.md).
+Campaign Classic [!DNL Gold Standard] (neuester GA-Build): [verweisen Sie auf diese Seite](../../rn/using/gold-standard.md).
 
 ## ![](assets/do-not-localize/blue_2.png) Version 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
 
