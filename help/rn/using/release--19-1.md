@@ -7,9 +7,9 @@ feature: null
 role: null
 level: null
 translation-type: tm+mt
-source-git-commit: 96f5709b4c67d1979286cc1f71069a64435c5c70
+source-git-commit: 631e7a0f89a365626401a6157ef84442fa0fd59f
 workflow-type: tm+mt
-source-wordcount: '3211'
+source-wordcount: '3209'
 ht-degree: 98%
 
 ---
@@ -128,7 +128,7 @@ _13. August 2019_
 
 >[!NOTE]
 >
->Gold Standard Version 19.1.4 ist auf dieser [Seite](../../rn/using/gold-standard.md) aufgeführt.
+>19.1.4 [!DNL Gold Standard] Versionen sind in dieser [Seite](../../rn/using/gold-standard.md) aufgeführt.
 
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
