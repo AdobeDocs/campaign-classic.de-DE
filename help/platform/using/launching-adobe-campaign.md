@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 4d5d14565726c5c6e7c4e2e8a82cfa8cef87be0f
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 95%
 
 ---
 
@@ -97,11 +97,11 @@ Das Menü **[!UICONTROL Hilfe > Versionsinformationen…]** liefert folgende Inf
 
 Wenn Sie mit dem Team der Adobe-Kundenunterstützung Kontakt aufnehmen, müssen Sie die Versionsnummer und die Build-Nummer Ihrer Adobe Campaign-Client-Konsole und des Anwendungs-Servers angeben.
 
-Wenn Sie mit der [Campaign Gold Standard-Version](../../rn/using/gold-standard.md) arbeiten, müssen Sie auch die SHA/1-Zeichen freigeben, die im Feld **[!UICONTROL Versionsinformationen]** angezeigt werden. Beispiel: In der Gold **Standard 10-Version** zeigt die Build-Nummer **build 9032@efd8a94** an, wie nachfolgend gezeigt:
+Wenn Sie mit [Kampagne [!DNL Gold Standard] Version](../../rn/using/gold-standard.md) arbeiten, müssen Sie auch die SHA/1-Zeichen freigeben, die im Feld **[!UICONTROL Info]** angezeigt werden. Beispiel: In der Gold **Standard 10-Version** zeigt die Build-Nummer **build 9032@efd8a94** an, wie nachfolgend gezeigt:
 
 ![](assets/about-acc-gs.png)
 
-Weitere Informationen zu Gold Standard finden Sie [in diesem Artikel](https://helpx.adobe.com/de/campaign/kb/gold-standard.html).
+Weitere Informationen zu [!DNL Gold Standard] [in diesem Artikel](../../rn/using/gs-overview.md)).
 
 **Verwandte Themen**:
 
