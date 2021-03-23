@@ -5,10 +5,10 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 translation-type: tm+mt
-source-git-commit: 91313fdc7aed6597d8d54d65b747c835e0cd9ccb
+source-git-commit: 5097eea4cf842b93af77ee828693f76a7182a8fe
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 83%
+source-wordcount: '300'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 83%
 
 * **[Stellen Sie Verbindungen über IMS/Adobe ID her? Aktualisieren Sie auf die neuesten Builds](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS verwenden, um eine Verbindung zur Kampagne herzustellen, müssen Sie ein Upgrade durchführen, um nach dem 30. Juni 2021** eine Verbindung zur Kampagne herstellen zu können.**
 
-* **[Sichern Ihrer Campaign-Instanzen](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html)**<br/> Aktualisieren Sie auf die neuesten Builds, um Ihre Campaign-Plattform zu sichern.
+* **[Sichern Ihrer Campaign-Instanzen](technotes/acc-config-updates.md)**<br/> Aktualisieren Sie auf die neuesten Builds, um Ihre Campaign-Plattform zu sichern.
 
 * **[Entfernen falscher Hardbounces](https://helpx.adobe.com/de/campaign/kb/update-bounce-qualification.html)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Gmail-Ausfall aktualisieren können
 
@@ -89,6 +89,6 @@ Zugriff auf häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuch
 | [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [Gold Standard-Upgrade ](https://helpx.adobe.com/de/campaign/kb/gold-standard.html) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
+| [[!DNL Gold Standard] upgrade](rn/using/gs-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
 | [Eingestellte Funktionen](rn/using/deprecated-features.md) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
 | [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) | [Richtlinien für das Monitoring](production/using/monitoring-guidelines.md) |
