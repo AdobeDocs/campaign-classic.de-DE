@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 95%
 
 ---
 
@@ -41,9 +41,9 @@ Erfahrene Benutzer können die Tracking-Funktionen in der Campaign-Instanz konfi
 
 ## Wie kann ich den E-Mail-Versand konfigurieren? {#how-to-configure-email-deliverability-}
 
-Lesen Sie zusätzlich zum Abschnitt [Zustellbarkeitskonfiguration](../../delivery/using/about-deliverability.md#configuration) die technischen Empfehlungen zur Zustellbarkeit, um zu verstehen, wie Sie Ihre Instanz so konfigurieren, dass die Kampagnenversandfunktionen optimal eingerichtet sind.
+Lesen Sie zusätzlich zum Leitfaden [Best Practice für die Bereitstellung von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) die technischen Empfehlungen zur Lieferbarkeit, um zu verstehen, wie Sie Ihre Instanz konfigurieren, um die Kampagne zu maximieren und Funktionen bereitzustellen.
 
-[Hier erfahren Sie mehr darüber](../../delivery/using/technical-recommendations.md).
+[Hier erfahren Sie mehr darüber](../../delivery/using/about-deliverability.md).
 
 ## Wie kann ich die Inhaltsvalidierung implementieren? {#how-can-i-implement-content-approval-}
 
