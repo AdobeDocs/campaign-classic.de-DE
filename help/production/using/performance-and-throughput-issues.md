@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 10%
+source-wordcount: '711'
+ht-degree: 9%
 
 ---
 
@@ -52,7 +52,7 @@ Im Folgenden finden Sie eine Liste von Artikeln zu Best Practices für die Anwen
 
 * MTA- und MTAChild-Prozesse und -Speicher: Das **mta**-Modul verteilt Nachrichten an seine untergeordneten Module **mtachild**. Jeder **mtachild** bereitet Nachrichten vor, bevor eine Autorisierung vom Statistikserver angefordert und gesendet wird. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
 * TLS-Konfiguration: Die globale Aktivierung von TLS wird nicht empfohlen, da dies den Durchsatz reduzieren kann. Stattdessen sollten die vom Bereitstellungsteam verwalteten TLS-Einstellungen pro Domäne je nach Bedarf angepasst werden. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md#mx-configuration)
-* DKIM: zur Gewährleistung der Sicherheitsstufe des DKIM ist 1024b die empfohlene Verschlüsselungsgröße. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Siehe [Seite](../../delivery/using/technical-recommendations.md#dkim) und [Technote](https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html).
+* DKIM: zur Gewährleistung der Sicherheit des DKIM ist 1024b die empfohlene Verschlüsselungsgröße. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Mehr dazu erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
 
 ## Probleme mit der Zustellbarkeit {#deliverability-issues}
 
@@ -67,4 +67,4 @@ Im Folgenden finden Sie eine Liste bewährter Verfahren und Artikel zur Lieferba
 
 >[!NOTE]
 >
->Siehe auch Abschnitt [Auslieferungsschlüssel-Punkte](../../delivery/using/deliverability-key-points.md).
+>Siehe auch Abschnitt [Lieferbarkeit](../../delivery/using/about-deliverability.md). Einen tieferen Einstieg in die Lieferbarkeit finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Adobe-Lieferbarkeit.
