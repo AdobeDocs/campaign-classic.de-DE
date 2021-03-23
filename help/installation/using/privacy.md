@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 47%
+source-wordcount: '778'
+ht-degree: 48%
 
 ---
 
@@ -57,7 +57,7 @@ Um die Sicherheit zu verbessern, wurde in Build 19.1.4 (9032@3a9dc9c) ein neuer 
 >
 >Wenn auf eine fehlerhafte signierte URL geklickt wird, wird der folgende Fehler zurückgegeben: „Angeforderte URL &#39;... &#39; wurde nicht gefunden.“
 
-Zusätzlich können gehostete und hybride Kunden ab der Kampagne 20.2 und der Gold Standard-Version eine Verbesserung verwenden, um URLs zu deaktivieren, die aus vorherigen Builds generiert wurden. Standardmäßig ist diese Option deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
+Zusätzlich können gehostete und hybride Kunden ab der Kampagne 20.2 und [!DNL Gold Standard] eine Verbesserung verwenden, um URLs zu deaktivieren, die aus vorherigen Builds generiert wurden. Standardmäßig ist diese Option deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
 
 Um diesen neuen Mechanismus zu aktivieren, müssen On-Premise-Kunden auf allen Campaign-Servern die folgenden Schritte ausführen:
 
@@ -65,7 +65,7 @@ Um diesen neuen Mechanismus zu aktivieren, müssen On-Premise-Kunden auf allen C
 1. Starten Sie den **nlserver**-Dienst neu.
 1. Starten Sie auf dem Tracking-Server den Webserver neu (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
 
-Kunden, die mit Gold Standard 19.1.4 arbeiten, können Probleme mit Push-Benachrichtigungs-Versänden mit einem Tracking-Link oder Versänden mit Anker-Tags haben. In diesem Fall empfiehlt Adobe, den neuen Signaturmechanismus für die Verfolgung von Links zu deaktivieren:
+Bei Kunden, die mit [!DNL Gold Standard] 19.1.4 arbeiten, können Probleme mit Push-Benachrichtigungs-Versänden auftreten, die einen Verfolgungslink verwenden, oder Versand, die Anker-Tags verwenden. In diesem Fall empfiehlt Adobe, den neuen Signaturmechanismus für die Verfolgung von Links zu deaktivieren:
 
 **Hosted- und Hybrid-** Kunden müssen sich an die  [Kundenbetreuung wenden, damit dieser Mechanismus deaktiviert ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) wird.
 
