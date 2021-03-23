@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Upgrades
 description: Weiterführende Informationen zu Campaign Classic-Upgrades
-feature: 'Übersicht  '
+feature: Übersicht
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: 3fe7cc4863fe512d433c3f0b0f25e912999b1876
+source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '423'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Jedem Build wird ein Status zugeordnet. Nachfolgend finden Sie die Liste der Sta
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – In der Produktion validiert und von Adobe empfohlen.
 
-Die **aktuellen GA-Builds** sind: [Gold Standard-Version 11](../../rn/using/gold-standard.md#gs-11) und [Campaign-Version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187).
+Die **letzten GA-Builds** sind: [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md#gs-11) und [Version 20.2.4 der Kampagne](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
 
@@ -53,12 +53,12 @@ Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team
 
 Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
-### Gold Standard{#upgrade-for-gold-standard-users}
+### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Als Gold Standard-Benutzer profitieren Sie automatisch vom Gold Standard-Upgrade mit dem [aktuellen GA Gold Standard-Build](../../rn/using/gold-standard.md#gs-11), ohne Maßnahmen ergreifen zu müssen. [Mehr dazu](../../rn/using/gs-overview.md).
+Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch von der [!DNL Gold Standard]-Aktualisierung mit der [neuesten GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) ohne Aktion. [Weitere Informationen](../../rn/using/gs-overview.md).
 
 >[!NOTE]
->Die Kompatibilitätsmatrix für Gold Standard ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
+>Kompatibilitätsmatrix für [!DNL Gold Standard] ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
 
 ## Support und andere nützliche Links{#support}
 
