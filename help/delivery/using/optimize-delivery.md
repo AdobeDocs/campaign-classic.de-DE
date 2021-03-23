@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 100%
@@ -50,7 +50,7 @@ Sie müssen die Zustellbarkeitsrate Ihrer Nachrichten steigern, damit Ihre Nachr
 
    * Konzentrieren Sie sich bei der Zustellbarkeit Ihrer E-Mail auf vier Hauptkategorien: Datenqualität, Nachricht und Inhalt, Versandinfrastruktur und Reputation. Detailliertere Informationen zu diesem Thema finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md).
 
-* Wenden Sie die [in diesem Dokument](../../delivery/using/deliverability-key-points.md) beschriebenen Empfehlungen an.
+* Wenden Sie die [in diesem Dokument](../../delivery/using/about-deliverability.md) beschriebenen Empfehlungen an.
 
 * Setzen Sie sich mit Ihrem Adobe-Support-Mitarbeiter in Verbindung, wenn Sie Hilfe benötigen.
 
