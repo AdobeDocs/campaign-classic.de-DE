@@ -5,11 +5,11 @@ title: Personalisierte Inhalte erstellen
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: ht
-source-git-commit: 2aa1a1c5da7b552cae916885c011aa4aaf9b61db
-workflow-type: ht
-source-wordcount: '1277'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+workflow-type: tm+mt
+source-wordcount: '1289'
+ht-degree: 98%
 
 ---
 
@@ -114,7 +114,7 @@ Um häufige Formatierungsfehler zu vermeiden, prüfen Sie folgende Elemente:
 
 * Verwendung **autorisierter Zeichen** in E-Mails: Eine Liste gültiger Zeichen für E-Mail-Adressen finden Sie in der Option „XtkEmail_Characters“. Informationen zum Zugriff auf Campaign-Optionen finden Sie [in diesem Abschnitt](../../installation/using/configuring-campaign-options.md). Um Sonderzeichen richtig zu handhaben, muss Adobe Campaign in Unicode installiert sein.
 
-* Konfiguration der **E-Mail-Authentifizierung**: Achten Sie darauf, dass die E-Mail-Header die DKIM-Signatur enthalten. Durch Authentifizierung per DKIM (Domain Keys Identified Mail) kann der E-Mail-Empfangsserver überprüfen, ob eine Nachricht tatsächlich von der angegebenen Person oder der angegebenen Entität gesendet wurde. Ferner kann festgestellt werden, ob der Nachrichteninhalt zwischen dem Versandzeitpunkt („signiert“ mit DKIM) und dem Empfangszeitpunkt verändert wurde. Bei diesem Standard wird in der Regel die Domain im „Von“- oder „Absender“-Header angegeben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/technical-recommendations.md#dkim).
+* Konfiguration der **E-Mail-Authentifizierung**: Achten Sie darauf, dass die E-Mail-Header die DKIM-Signatur enthalten. Durch Authentifizierung per DKIM (Domain Keys Identified Mail) kann der E-Mail-Empfangsserver überprüfen, ob eine Nachricht tatsächlich von der angegebenen Person oder der angegebenen Entität gesendet wurde. Ferner kann festgestellt werden, ob der Nachrichteninhalt zwischen dem Versandzeitpunkt („signiert“ mit DKIM) und dem Empfangszeitpunkt verändert wurde. Bei diesem Standard wird in der Regel die Domain im „Von“- oder „Absender“-Header angegeben. Weitere Informationen finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication) zur Adobe-Bereitstellung.
 
 ### Responsives E-Mail-Design
 
