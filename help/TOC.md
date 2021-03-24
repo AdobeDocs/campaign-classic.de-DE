@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
 workflow-type: tm+mt
 source-wordcount: '2448'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 97%
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
    + [Technische Hinweise](technotes/technote.md)
    + [Aktualisierung des iOS-Zertifikats](technotes/ios-certificate-update.md)
-   + [Aktualisierungen der Kampagne-Konfiguration](technotes/acc-config-updates.md)
+   + [Aktualisierungen der Campaign-Konfiguration](technotes/acc-config-updates.md)
 + Erste Schritte {#getting-started}
    + Einstieg in Adobe Campaign {#starting-with-adobe-campaign}
       + [Erste Schritte mit Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -470,7 +470,7 @@ ht-degree: 97%
          + [Laden des Versandinhalts](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring           {#monitoring}
+      + Monitoring            {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -610,7 +610,7 @@ ht-degree: 97%
    + Architektonische Grundsätze {#architecture-and-hosting-models}
       + [Allgemeine Architektur](installation/using/general-architecture.md)
       + Hosting-Modelle{#hosting-models-lp}
-         + [Hosting-Modelle für Kampagnen](installation/using/hosting-models.md)
+         + [Hosting-Modelle für Campaign](installation/using/hosting-models.md)
          + [Funktionsmatrix](installation/using/capability-matrix.md)
    + Bereitstellungstypen {#deployment-types-}
       + [Über Bereitstellungstypen](installation/using/about-deployment-types.md)
@@ -622,12 +622,12 @@ ht-degree: 97%
    + Checkliste für Sicherheit und Datenschutz {#security-privacy}
       + [Erste Schritte mit Sicherheit und Datenschutz](installation/using/get-started-security-privacy.md)
       + [Personalisierung und Datenschutz](installation/using/privacy.md)
-      + [Sicheres Zugriffsmanagement](installation/using/access-management.md)
+      + [Sichere Zugriffsverwaltung](installation/using/access-management.md)
       + [Richtlinien für Skripterstellung und Codierung](installation/using/scripting-coding-guidelines.md)
       + [Netzwerk, Datenbank und SSL/TLS](installation/using/network-database.md)
       + [Sicherheitseinstellungen des Servers](installation/using/server-configuration.md)
-      + [Webserver-Sicherheitseinstellungen](installation/using/web-server-configuration.md)
-   + Kampagne (lokal){#install-campaign-on-prem} installieren
+      + [Sicherheitseinstellungen des Webservers](installation/using/web-server-configuration.md)
+   + Campaign installieren (On-Premise){#install-campaign-on-prem}
       + Implementierungsrichtlinien {#deployment-guidelines}
          + [Datenbankserver](installation/using/database.md)
          + [Anwendungs-Server](installation/using/application-server.md)
@@ -643,21 +643,21 @@ ht-degree: 97%
          + [Packages installieren](installation/using/installing-packages-with-linux.md)
          + [In einen Webserver integrieren](installation/using/integration-into-a-web-server-for-linux.md)
       + [Zeitzonen](installation/using/time-zone-management.md)
-      + [Installieren eines Mid-Sourcing-Servers](installation/using/mid-sourcing-server.md)
-   + Kampagne bereitstellen (lokal) {#initial-configuration}
+      + [Mid-Sourcing-Server installieren](installation/using/mid-sourcing-server.md)
+   + Campaign bereitstellen (On-Premise) {#initial-configuration}
       + [Die wichtigsten Schritte](installation/using/about-initial-configuration.md)
       + [Instanz erstellen und anmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [Datenbank erstellen und konfigurieren](installation/using/creating-and-configuring-the-database.md)
       + [Campaign-Server konfigurieren](installation/using/campaign-server-configuration.md)
       + [Instanz bereitstellen](installation/using/deploying-an-instance.md)
-      + [Integrierte Pakete installieren](installation/using/installing-campaign-standard-packages.md)
+      + [Integrierte Packages installieren](installation/using/installing-campaign-standard-packages.md)
    + Campaign konfigurieren {#additional-configurations}
-      + [Einstellungen des Kampagne-Servers](installation/using/configuring-campaign-server.md)
+      + [Einstellungen des Campaign-Servers](installation/using/configuring-campaign-server.md)
       + [Sicherheitszonen definieren](installation/using/security-zones.md)
       + [Technische E-Mail-Konfigurationen](installation/using/email-deliverability.md)
       + [E-Mail-BCC konfigurieren](installation/using/email-archiving.md)
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
-   + Verbindung zu Kampagne{#connect-to-campaign}
+   + Verbindung zu Campaign herstellen{#connect-to-campaign}
       + [Client-Konsole installieren](installation/using/installing-the-client-console.md)
       + Über eine Adobe ID verbinden {#connecting-via-an-adobe-id}
          + [Über [!DNL Adobe ID]](integrations/using/about-adobe-id.md)
@@ -665,9 +665,9 @@ ht-degree: 97%
          + [Implementieren von Adobe [!DNL IMS]](integrations/using/implementing-ims.md)
          + [Fehlerbehebung bei IMS](integrations/using/ims-troubleshooting.md)
       + [Über LDAP verbinden](installation/using/connecting-through-ldap.md)
-   + Kampagne mit externen Systemen verbinden {#accessing-external-database}
+   + Campaign mit externen Systemen verbinden {#accessing-external-database}
       + [Externe Konten konfigurieren](installation/using/external-accounts.md)
-      + Federated Data Access{#configure-fda} konfigurieren
+      + Federated Data Access konfigurieren{#configure-fda}
          + [Erste Schritte mit Federated Data Access](installation/using/about-fda.md)
          + Konfigurationsrichtlinien {#config-databases}
             + [Konfigurationsschritte](installation/using/configure-fda.md)
