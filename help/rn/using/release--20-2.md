@@ -3,21 +3,21 @@ solution: Campaign Classic
 product: campaign
 title: Version 20.2
 description: Version 20.2
-feature: 'Übersicht  '
+feature: Übersicht
 role: Business Practitioner
 level: Anfänger
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2567'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
 # Version 20.2{#release-20-2}
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Mehr dazu](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/green_2.png) Version 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
 
@@ -25,16 +25,16 @@ _22. Dezember 2020_
 
 >[!CAUTION]
 >
-> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
-> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte Auth-Authentifizierungsmodus mit Kampagne wird am **30. November 2021** eingestellt.
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole ein Upgrade zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
+> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Das Upgrade ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte OAuth-Authentifizierungsmodus mit Campaign wird am **30. November 2021** eingestellt.
 
 
 
 **Verbesserungen**
 
 * Das Verbindungsprotokoll wurde aktualisiert, um dem neuen IMS-Authentifizierungsmechanismus zu folgen.
-* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
+* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Weitere Infos](../../integrations/using/configuring-adobe-io.md)
 * Nach dem [Ende der Unterstützung für das ältere Binärprotokoll von iOS-APNs](https://developer.apple.com/news/?id=c88acm2b) werden alle Instanzen, die dieses Protokoll verwenden, während des Postupgrades auf das HTTP/2-Protokoll aktualisiert.
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Problemen (Server Side Request Forgery) zu verbessern. (NEO-27777)
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zur Deaktivierung des SMPP-Connectors nach einem Verbindungsfehler führte, was die Ausführung weiterer SMS-Sendungen verhinderte und zu Leistungsproblemen führte. (NEO-28609)
@@ -86,7 +86,7 @@ _22. Juli 2020_
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [mehr dazu](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
@@ -167,11 +167,11 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Verbesserungen**
 
-* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Veröffentlichung einer Transaktionsnachrichten-Vorlage jetzt aufheben, womit sie aus den Ausführungsinstanzen gelöscht wird. [Mehr dazu](../../message-center/using/template-unpublication.md).
+* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Veröffentlichung einer Transaktionsnachrichten-Vorlage jetzt aufheben, womit sie aus den Ausführungsinstanzen gelöscht wird. [Weitere Infos](../../message-center/using/template-unpublication.md).
 
 * Es gibt neue Optionen zum Festlegen von Einschränkungen beim Senden von E-Mails, die Bilder oder Anhänge enthalten. Damit lassen sich Leistungsprobleme verhindern, was besonders bei Transaktionsnachrichten nützlich ist. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Mit der neuen Option **Versandteile in der Datenbank vorbereiten** kann die Versandvorbereitung direkt in der Datenbank vorgenommen werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur bei bestimmten Konfigurationen zur Verfügung. [Mehr dazu](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
+* Mit der neuen Option **Versandteile in der Datenbank vorbereiten** kann die Versandvorbereitung direkt in der Datenbank vorgenommen werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur bei bestimmten Konfigurationen zur Verfügung. [Weitere Infos](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * Die Leistung der [CRM Connector-Aktivität](../../workflow/using/crm-connector.md) für Microsoft Dynamics wurde verbessert. (NEO-13303, NEO-12710)
 
@@ -181,19 +181,19 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
    >
    >Die Optimierung setzt einen zusätzlichen Schritt nach dem Upgrade voraus. Lesen Sie diesbezüglich den Abschnitt **Technische Entwicklungen** weiter unten.
 
-* Der Bereinigungs-Workflow wurde verbessert. Verwaiste Arbeitstabellen aller gelöschten Workflows werden vom Bereinigungs-Workflow jetzt auch automatisch gelöscht. [Mehr dazu](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
+* Der Bereinigungs-Workflow wurde verbessert. Verwaiste Arbeitstabellen aller gelöschten Workflows werden vom Bereinigungs-Workflow jetzt auch automatisch gelöscht. [Weitere Infos](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * Zertifikate für iOS-Mobile Apps mit dem iOS-HTTP2-Connector werden jetzt vor dem Senden von Push-Benachrichtigungen validiert, was verhindert, dass Sendungen aufgrund abgelaufener Zertifikate fehlschlagen.
 
-* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Mehr dazu](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Weitere Infos](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
 
-* Neue Option in den Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]**, um die Ausführung nach einer Begrenzung zu beenden. Der Standardwert ist 1 Stunde. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
+* Neue Option in den Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]**, um die Ausführung nach einer Begrenzung zu beenden. Der Standardwert ist 1 Stunde. [Weitere Infos](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
 **Sonstige Änderungen**
 
 * Alte SMS-Connectoren werden jetzt nicht mehr unterstützt. Weiterführende Informationen finden Sie auf der [Seite zu eingestellten Funktionen](../../rn/using/deprecated-features.md).
 
-* Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [Mehr dazu](../../delivery/using/inbox-rendering.md).
+* Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [Weitere Infos](../../delivery/using/inbox-rendering.md).
 
 * Zur leichteren Unterscheidung von Ansichten und Ordnern wurde die Farbe der Ansichtnamen von dunkelblau in dunkeltürkis geändert. [Mehr dazu](../../platform/using/access-management-folders.md)
 
