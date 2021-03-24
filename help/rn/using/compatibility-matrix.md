@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -157,7 +157,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Mehr dazu</a>.</p>
+<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Weitere Infos</a>.</p>
 </td>
 </tr>
 </tbody>
