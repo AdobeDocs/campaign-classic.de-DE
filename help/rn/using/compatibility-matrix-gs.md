@@ -1,7 +1,7 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Kompatibilitätsmatrix für Kampagne [!DNL Gold Standard]
+title: Kompatibilitätsmatrix für Campaign [!DNL Gold Standard]
 description: Campaign Classic-Kompatibilitätsmatrix für  [!DNL Gold Standard] Version
 feature: Übersicht
 role: Business Practitioner
@@ -144,7 +144,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Mehr dazu</a>.</p>
+<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Weitere Infos</a>.</p>
 </td>
 </tr>
 <tr>
