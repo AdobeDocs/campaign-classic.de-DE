@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Versionshinweise zu Kampagne 20.3
-description: Versionshinweise für Kampagne 20.3
-feature: 'Übersicht  '
+title: Versionshinweise zu Campaign 20.3
+description: Versionshinweise zu Campaign 20.3
+feature: Übersicht
 role: Business Practitioner
 level: Anfänger
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1956'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ _27. Oktober 2020_
 
 >[!CAUTION]
 >
-> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
-> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte Auth-Authentifizierungsmodus mit Kampagne wird am **30. November 2021** eingestellt.
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole ein Upgrade zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
+> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Das Upgrade ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte OAuth-Authentifizierungsmodus mit Campaign wird am **30. November 2021** eingestellt.
 
 
 **Neue Funktionen**
@@ -50,8 +50,8 @@ _27. Oktober 2020_
 <p>Diese beiden Authentifizierungsmodi sind jetzt für mobile iOS-Apps in Campaign Classic verfügbar:
 </p>
 <ul> 
-<li><p>Token-basierte Authentifizierung (empfohlen): dieser Authentifizierungsmodus basiert auf einer .p8-Datei. Dieser Authentifizierungsmodus ist schneller, da jede Anfrage an APNs das Token enthält. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns">Mehr dazu</a></p></li>
-<li><p>Zertifikatbasierte Authentifizierung: dieser Authentifizierungsmodus basiert auf einer .p12-Datei. Für jede App ist ein separates Zertifikat erforderlich. Dieses Zertifikat wird von Apple über Ihr Entwicklerkonto bereitgestellt. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns">Mehr dazu</a></p></li> 
+<li><p>Token-basierte Authentifizierung (empfohlen): dieser Authentifizierungsmodus basiert auf einer .p8-Datei. Dieser Authentifizierungsmodus ist schneller, da jede Anfrage an APNs das Token enthält. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns">Weitere Infos</a></p></li>
+<li><p>Zertifikatbasierte Authentifizierung: dieser Authentifizierungsmodus basiert auf einer .p12-Datei. Für jede App ist ein separates Zertifikat erforderlich. Dieses Zertifikat wird von Apple über Ihr Entwicklerkonto bereitgestellt. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns">Weitere Infos</a></p></li> 
 </ul>
 <p>In der <a href="../../delivery/using/configuring-the-mobile-application.md">entsprechenden Dokumentation</a> erfahren Sie, wie Sie den Authentifizierungsmodus in Campaign auswählen.</p>
 </td> 
@@ -68,7 +68,7 @@ _27. Oktober 2020_
 <tbody> 
 <tr> 
 <td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">Android-Push-Benachrichtigungen wurden verbessert, um die Version 1 der FCM HTTP-API für die Authentifizierung von Android-Push-Kanälen zu unterstützen.</a> </p>
-<p>Mit der neuen unterstützten API-Version können Sie jetzt FCM-Benachrichtigungsinhalte senden, die erweiterte Funktionen für Push-Nachrichten bieten. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Mehr dazu</a></p> 
+<p>Mit der neuen unterstützten API-Version können Sie jetzt FCM-Benachrichtigungsinhalte senden, die erweiterte Funktionen für Push-Nachrichten bieten. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Weitere Infos</a></p> 
 <p>Informationen zum Konfigurieren der Version 1 der FCM HTTP-API für Android in Adobe Campaign finden Sie in <a href="../../delivery/using/configuring-the-mobile-application-android.md">diesem Abschnitt</a>.</p>
 </td> 
 </tr> 
@@ -77,7 +77,7 @@ _27. Oktober 2020_
 
 **Verbesserungen bei der Sicherheit**
 
-* Sicheres Laden von Bibliotheken: Zum Schutz vor DLL-Vorladeangriffen lädt Campaign jetzt beim Laden des Campaign-Clients (nlclient) Windows-DLLs nur aus dem Windows-Standard-System-DLL-Pfad. [Mehr dazu](https://support.microsoft.com/de-DE/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
+* Sicheres Laden von Bibliotheken: Zum Schutz vor DLL-Vorladeangriffen lädt Campaign jetzt beim Laden des Campaign-Clients (nlclient) Windows-DLLs nur aus dem Windows-Standard-System-DLL-Pfad. [Weitere Infos](https://support.microsoft.com/de-DE/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks) (NEO-24147)
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem behoben, um den Schutz vor SSRF-Angriffen (Server Side Request Forgery) zu verbessern. (NEO-25661)
 * Fehlerkorrektur – Es wurde ein Fehler behoben, der beim Bearbeiten von DSGVO-Datenschutzanfragen auftrat und verhinderte, dass Datensätze aus benutzerdefinierten Tabellen mit einer Beziehung zweiter Ebene zur Empfängertabelle gelöscht wurden. (NEO-25967)
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem mit API-Aufrufen behoben, die von Benutzern ohne Administratorrechte beim Synchronisieren von Adobe Experience Manager-Vorlagen ausgeführt wurden. (NEO-23487)
@@ -96,15 +96,15 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 Die folgenden Funktionen werden in Version 20.3 eingestellt:
 
-* Die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, wird nicht mehr unterstützt. Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Mehr dazu](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
-* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
+* Die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, wird nicht mehr unterstützt. Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Weitere Infos](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+* Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Weitere Infos](../../integrations/using/configuring-adobe-io.md)
 
 Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
 * An der **Client-Konsole** wurden verschiedene Verbesserungen vorgenommen:
-   * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht. Die Aktualisierung der Server- und Client-Konsole ist obligatorisch, damit nach dem 30. Juni 2021 eine Verbindung hergestellt werden kann.
+   * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht. Das Upgrade der Server- und Client-Konsole ist obligatorisch, damit auch nach dem 30. Juni 2021 eine Verbindung hergestellt werden kann.
    * Um eine Inkompatibilität mit einigen Einschränkungen der Internet-Sicherheitsrichtlinien für Gruppenrichtlinienobjekte zu vermeiden, wurde der Anmeldebildschirm der Campaign-Client-Konsole durch ein integriertes Standard-Windows-Formular ersetzt.
    * Fehlerkorrektur – Es wurde ein Problem beim Kopieren/Einfügen von Aktivitäten in einem Workflow mit der 64-Bit-Client-Konsole behoben. (NEO-27635)
    * Im Menü **Info** wurden Informationen hinzugefügt, um 64- und 32-Bit-Konsolen zu unterscheiden.
