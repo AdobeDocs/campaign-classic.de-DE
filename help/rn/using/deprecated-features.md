@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Eingestellte und entfernte Funktionen von Campaign Classic
-description: Diese Liste wurde in Adobe Campaign Classic eingestellt und entfernt
-feature: 'Übersicht  '
+description: Auf dieser Seite finden Sie eine Liste eingestellter und entfernter Funktionen von Adobe Campaign Classic
+feature: Übersicht
 role: Business Practitioner
 level: Anfänger
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1716'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,20 +68,20 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <td>Veraltete Version von iOS Binary<br></td>
   <td><p>Ab Campaign-Version 20.3 wird die veraltete Version des iOS Binary Connectors nicht mehr unterstützt.<p>
   <p> Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen.
-  <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html">Mehr dazu</a></p>
+  <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html">Weitere Infos</a></p>
   <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex-Domain<br></td>
   <td><p> Ab Campaign-Version 20.3 wird die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, nicht mehr unterstützt.<p>
-  <p>Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Mehr dazu</a></p> 
+  <p>Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Weitere Infos</a></p> 
   <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
   </td>
   <tr>
   <td>OAuth-Authentifizierung (OAuth und JWT)<br></td>
   <td><p> Ab Campaign-Version 20.3 wurde die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, geändert und in Adobe I/O verschoben <p>
-  <p>Wenn Sie die Triggers-Integration nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Mehr dazu</a></p> 
+  <p>Wenn Sie die Triggers-Integration nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Weitere Infos</a></p> 
   <p>Weitere Informationen zur Einstellung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a>.</p> 
   <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
   </td>
@@ -96,7 +96,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
    <li>O2</li>
    <li>iOS</li>
    </ul>
-  <p>Wenn Sie einen dieser Connectoren verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/sms-channel.md">Mehr dazu</a></p> 
+  <p>Wenn Sie einen dieser Connectoren verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/sms-channel.md">Weitere Infos</a></p> 
   <p>Erfahren Sie in <a href="../../delivery/using/unsupported-connector-migration.md">diesem technischen Hinweis</a>, wie Sie frühere Versionen von Connectoren migrieren können.</p>
   <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
   </td> 
@@ -122,11 +122,11 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr> 
    <tr> 
    <td>Windows NT-Authentifizierung<br></td>
-   <td><p>Ab Campaign-Version 20.3 wurde die Windows NT-Authentifizierung bei der Konfiguration einer neuen Datenbank mit einem Microsoft SQL Server aus den verfügbaren Authentifizierungsmechanismen entfernt. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Mehr dazu</a></p></td>
+   <td><p>Ab Campaign-Version 20.3 wurde die Windows NT-Authentifizierung bei der Konfiguration einer neuen Datenbank mit einem Microsoft SQL Server aus den verfügbaren Authentifizierungsmechanismen entfernt. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Weitere Infos</a></p></td>
   </tr>
    <tr> 
    <td>Dateibasierte E-Mail-Archivierung<br></td>
-   <td><p>Ab Campaign-Version 20.2 ist dateibasierte E-Mail-Archivierung nicht mehr verfügbar. E-Mail-Archivierung ist jetzt über eine dedizierte BCC-E-Mail-Adresse verfügbar. <a href="../../installation/using/email-archiving.md">Mehr dazu</a></p></td>
+   <td><p>Ab Campaign-Version 20.2 ist dateibasierte E-Mail-Archivierung nicht mehr verfügbar. E-Mail-Archivierung ist jetzt über eine dedizierte BCC-E-Mail-Adresse verfügbar. <a href="../../installation/using/email-archiving.md">Weitere Infos</a></p></td>
   </tr> 
    <tr> 
    <td>Leadmanagement</td>
@@ -142,7 +142,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr> 
   <tr> 
    <td>Web-Anwendungen – Microsites</td>
-   <td>Ab Campaign-Version 18.10 sind Microsites nicht mehr verfügbar. Sie können die Sicherheit erhöhen, indem Sie den Zugriff auf dedizierte Domains in Adobe Campaign-Konfigurationsdateien beschränken und in Campaign unter Verwendung von DNS-Aliassen personalisierte URLs verwenden. <a href="https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html">Mehr dazu</a></td>
+   <td>Ab Campaign-Version 18.10 sind Microsites nicht mehr verfügbar. Sie können die Sicherheit erhöhen, indem Sie den Zugriff auf dedizierte Domains in Adobe Campaign-Konfigurationsdateien beschränken und in Campaign unter Verwendung von DNS-Aliassen personalisierte URLs verwenden. <a href="https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html">Weitere Infos</a></td>
   </tr> 
   <tr> 
    <td>Push-Benachrichtigungen – iOS Binary Connector</td>
@@ -151,7 +151,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   <tr> 
    <td>decryptString-API</td>
    <td><p>Ab Campaign-Version 18.6 ist die <em>decryptString</em>-API bei neuen Installationen aus Sicherheitsgründen standardmäßig nicht mehr verfügbar.</p> 
-   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">Mehr dazu</a></p></td>
+   <p>Im Zusammenhang mit einem Postupgrade auf Version 18.6 (und höher) ist diese API nicht mehr aktiv; sie wurde durch die <em>decryptPassword</em>-Funktion ersetzt. <a href="https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/f-decryptPassword.html?hl=decrypt">Weitere Infos</a></p></td>
   </tr> 
    <tr> 
    <td>Mobiler Kanal – MMS- und WAP-Push-Benachrichtigungen</td>
@@ -159,7 +159,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr> 
    <tr> 
    <td>Mobiler Kanal – LINE v1</td>
-   <td>Ab Campaign-Version 18.4 ist das LINE Connect-Package nicht mehr verfügbar. Adobe empfiehlt, das neue LINE Channel-Package als Ersatz zu verwenden. <a href="../../delivery/using/line-channel.md">Mehr dazu</a></td>
+   <td>Ab Campaign-Version 18.4 ist das LINE Connect-Package nicht mehr verfügbar. Adobe empfiehlt, das neue LINE Channel-Package als Ersatz zu verwenden. <a href="../../delivery/using/line-channel.md">Weitere Infos</a></td>
   </tr> 
  </tbody> 
 </table>
@@ -193,25 +193,25 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 
 Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen kompatibel.
 
-* CentOS 6 [Mehr dazu](https://wiki.centos.org/Download)
-* Debian 7. [Mehr dazu](https://wiki.debian.org/DebianReleases)
-* RHEL 6.x. [Mehr dazu](https://access.redhat.com/support/policy/updates/errata)
-* Windows Server 2008. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/1163)
-* SLES 11. [Mehr dazu](ttps://www.suse.com/lifecycle)
+* CentOS 6 [Weitere Infos](https://wiki.centos.org/Download)
+* Debian 7. [Weitere Infos](https://wiki.debian.org/DebianReleases)
+* RHEL 6.x. [Weitere Infos](https://access.redhat.com/support/policy/updates/errata)
+* Windows Server 2008. [Weitere Infos](https://support.microsoft.com/en-us/lifecycle/search/1163)
+* SLES 11. [Weitere Infos](ttps://www.suse.com/lifecycle)
 
 ### Webserver {#web-server-eol}
 
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden Webserver kompatibel.
 
-* Apache 2.2. [Mehr dazu](https://httpd.apache.org/)
-* Microsoft IIS 7. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/810)
+* Apache 2.2. [Weitere Infos](https://httpd.apache.org/)
+* Microsoft IIS 7. [Weitere Infos](https://support.microsoft.com/en-us/lifecycle/search/810)
 
 ### Tools {#tools-eol}
 
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden Tools kompatibel.
 
-* Java JDK 7. [Mehr dazu](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x, außer wenn in ein anderes Tool eingebettet. [Mehr dazu](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Java JDK 7. [Weitere Infos](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Libre Office 3.5 / 4.3 / 5.x, außer wenn in ein anderes Tool eingebettet. [Weitere Infos](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Datenbank-Engines {#dbe-eol}
 
@@ -227,23 +227,23 @@ Ab Version 20.2 ist Adobe Campaign nicht mehr mit den folgenden FDA-Servern komp
 
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden FDA-Servern kompatibel:
 
-* PostgreSQL 9.3. [Mehr dazu](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Mehr dazu](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Mehr dazu](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Teradata 14 – 14.1. [Mehr dazu](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
+* PostgreSQL 9.3. [Weitere Infos](https://www.postgresql.org/support/versioning)
+* MySQL 5.5. [Weitere Infos](http://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5. [Weitere Infos](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Teradata 14 – 14.1. [Weitere Infos](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 Campaign Classic ist mit den folgenden Servern in Federated Data Access (FDA) nicht mehr kompatibel.
 
-* DB2 UDB 9.5, 9.7. Neuere Versionen von DB2 werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Neuere Versionen von Oracle werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
-* PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Neuere Versionen von PostgreSQL werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://www.postgresql.org/support/versioning)
-* MSSQL 2000, 2005, 2008 R2. Neuere Versionen von SQL Server werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://support.microsoft.com/en-us/lifecycle/search/1044)
-* MySQL 5.1. Neuere Versionen von MySQL werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://en.wikipedia.org/wiki/InfiniDB)
-* InfiniDB hat das Ende des Lebenszyklus erreicht. [Mehr dazu](https://www.mysql.com/support)
-* Teradata 13, 13.1. Neuere Versionen von Teradata werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://www.info.teradata.com/download.cfm?ItemID=1007255)
-* Netezza 6.02, 7.0. Netezza hat das Ende des Lebenszyklus erreicht. [Mehr dazu](https://en.wikipedia.org/wiki/Netezza)
-* AsterData 5.0. AsterData hat das Ende des Lebenszyklus erreicht. [Mehr dazu](https://en.wikipedia.org/wiki/Aster_Data_Systems)
-* Sybase IQ 15.2, 15.4, 15.5 und Sybase ASE 15.0. Neuere Versionen von Sybase werden über Federated Data Access (FDA) unterstützt. [Mehr dazu](https://sites.google.com/site/dbatipsandtricks/time-tracker)
+* DB2 UDB 9.5, 9.7. Neuere Versionen von DB2 werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i, 10G R2. Neuere Versionen von Oracle werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Neuere Versionen von PostgreSQL werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](https://www.postgresql.org/support/versioning)
+* MSSQL 2000, 2005, 2008 R2. Neuere Versionen von SQL Server werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](https://support.microsoft.com/en-us/lifecycle/search/1044)
+* MySQL 5.1. Neuere Versionen von MySQL werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](https://en.wikipedia.org/wiki/InfiniDB)
+* InfiniDB hat das Ende des Lebenszyklus erreicht. [Weitere Infos](https://www.mysql.com/support)
+* Teradata 13, 13.1. Neuere Versionen von Teradata werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](https://www.info.teradata.com/download.cfm?ItemID=1007255)
+* Netezza 6.02, 7.0. Netezza hat das Ende des Lebenszyklus erreicht. [Weitere Infos](https://en.wikipedia.org/wiki/Netezza)
+* AsterData 5.0. AsterData hat das Ende des Lebenszyklus erreicht. [Weitere Infos](https://en.wikipedia.org/wiki/Aster_Data_Systems)
+* Sybase IQ 15.2, 15.4, 15.5 und Sybase ASE 15.0. Neuere Versionen von Sybase werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic wird die aufgelisteten Versionen von Hadoop via HiveSQL über Federated Data Access (FDA) weiter unterstützen, die Versionen werden jedoch zusammengeführt mit: HortonWorks (HDP 2.4.x, 2.5.x, 2.6.x) und HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6).
 
 **RDBMS-SERVER**
