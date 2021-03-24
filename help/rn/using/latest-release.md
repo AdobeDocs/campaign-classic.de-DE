@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
-description: Aktuelle Version von Campaign Classic   Anmerkungen
+description: Aktuelle Version von Campaign Classic    Anmerkungen
 feature: Übersicht
 role: Business Practitioner
 level: Anfänger
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
 source-wordcount: '906'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -59,7 +59,7 @@ Wenn Sie an dieser privaten Beta teilnehmen möchten, füllen Sie dieses [Formul
 * Workflow-Heatmap wurde verbessert, um Zeitüberschreitungen zu vermeiden, wenn Workflows mit mehreren Aktivitäten ausgeführt werden. (NEO-27423).
 * Es wurde ein Problem behoben, durch das ein Angebot auch dann präsentiert werden konnte, wenn das Enddatum überschritten wurde. Campaign Classic berücksichtigt nun den gesamten Zeitstempel des Enddatums und nicht nur das Datum. (NEO-27590)
 * Der Google+-Link wurde aus dem Gestaltungsbaustein **Teilen-Links der sozialen Netzwerke** entfernt.
-* Es wurde ein Problem behoben, das nach der Implementierung einer Fehlerbehebung in der letzten Version auftrat. Beim Verbinden mit SSL/TLS wurde eine Prüfung des Host-Namens hinzugefügt, die dazu führte, dass SMS-Sendungen fehlschlugen. Die Überprüfung des Host-Namens wurde für die meisten Protokolle wie POP3, SMS und HTTP mit Proxy deaktiviert, und die Zertifikatsprüfung für das externe SMS-Konto wurde mithilfe von drei Werten verbessert (NEO-29581). [Mehr dazu](../../delivery/using/sms-protocol.md#skip-tls)
+* Es wurde ein Problem behoben, das nach der Implementierung einer Fehlerbehebung in der letzten Version auftrat. Beim Verbinden mit SSL/TLS wurde eine Prüfung des Host-Namens hinzugefügt, die dazu führte, dass SMS-Sendungen fehlschlugen. Die Überprüfung des Host-Namens wurde für die meisten Protokolle wie POP3, SMS und HTTP mit Proxy deaktiviert, und die Zertifikatsprüfung für das externe SMS-Konto wurde mithilfe von drei Werten verbessert (NEO-29581). [Weitere Infos](../../delivery/using/sms-protocol.md#skip-tls)
 
 **Korrekturen**
 
@@ -82,7 +82,7 @@ Wenn Sie an dieser privaten Beta teilnehmen möchten, füllen Sie dieses [Formul
 IOB-090020 Error in SSL library: 'IOB-090013 error:14090086:SSL routines:ssl3_get_server_certificate:certificate verify failed (code 336134278)'
 ```
 
-* Es wurde ein Fehler behoben, der verhinderte, dass neue Versand mit Zielgruppe-Datenpersonalisierung gesendet wurden (NEO-30323).
+* Fehlerkorrektur – Jetzt können neue Sendungen mit personalisierten Zielgruppendaten durchgeführt wurden (NEO-30323).
 * Fehlerkorrektur – In der Marketing-Instanz treten keine Abstürze mehr auf, die Core-Dateien erzeugen.
 * Fehlerkorrektur – Der **Tracking**-Workflow schlägt nicht mehr fehl. Zuvor wurde folgender Fehler angezeigt (NEO-25206):
 
