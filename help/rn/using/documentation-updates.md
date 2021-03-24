@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Aktualisierungen der Dokumentation für Adobe Campaign Classic
-description: Auf dieser Seite werden alle neuen Funktionen und Updates in der Adobe Campaign Classic-Dokumentation Liste.
+description: Auf dieser Seite werden alle neuen Funktionen und Updates in der Adobe Campaign Classic-Dokumentation aufgelistet.
 feature: Übersicht
 role: Business Practitioner
 level: Anfänger
@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
 workflow-type: tm+mt
 source-wordcount: '4270'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ## März 2021 {#march-2021}
 
-Eine neue Seite mit Richtlinien und Verweisen wurde hinzugefügt, um Unterstützung für Campaign Classic zu erhalten. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
+Eine neue Seite mit Richtlinien und Verweisen, um Support für Campaign Classic zu erhalten, wurde hinzugefügt. [Weitere Infos](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
 
 Es wurde ein neuer Abschnitt zu Best Practices und Überprüfungen für Sicherheit und Datenschutz hinzugefügt. [Mehr dazu](../../installation/using/get-started-security-privacy.md)
 
@@ -133,7 +133,7 @@ Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compat
 Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr dazu](../../rn/using/deprecated-features.md)
 
 Versionshinweise und Kompatibilitätsmatrix für [!DNL Gold Standard] sind jetzt in einem speziellen Abschnitt verfügbar.
-[Mehr dazu](../../rn/using/gold-standard.md#gs-11).
+[Weitere Infos](../../rn/using/gold-standard.md#gs-11).
 
 Die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
 
@@ -254,13 +254,13 @@ Die Parameter für den neuen Trackinglink-Signaturmechanismus wurden dem Abschni
 
 Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-Der Abschnitt zum Bereinigungs-Workflow wurde aktualisiert. [Mehr dazu](../../production/using/database-cleanup-workflow.md)
+Der Abschnitt zum Bereinigungs-Workflow wurde aktualisiert. [Weitere Infos](../../production/using/database-cleanup-workflow.md)
 
 Die Campaign-Netzwerkendpunkte wurden in diesen [Abschnitt](../../installation/using/campaign-network-endpoints.md) verschoben.
 
-Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Mehr dazu](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Weitere Infos](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
-Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Mehr dazu](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
+Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Weitere Infos](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 ## Mai 2020 {#may-2020}
 
