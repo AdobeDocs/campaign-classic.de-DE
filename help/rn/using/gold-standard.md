@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -38,9 +38,9 @@ _22. Dezember 2020_
 
 >[!CAUTION]
 >
-> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über den Adobe Identity Service (IMS) eine Verbindung zur Kampagne herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Kampagne- als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zur Kampagne herstellen können.**
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte Auth-Authentifizierungsmodus mit Kampagne wird am **30. November 2021** eingestellt.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte OAuth-Authentifizierungsmodus mit Campaign wird am **30. November 2021** eingestellt.
 
 >
 >
@@ -50,7 +50,7 @@ Der Build 9032@d3b452f umfasst die folgenden Verbesserungen und Fehlerbehebungen
 
 * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht.
 
-* Die Authentifizierung der Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
+* Die Authentifizierung der Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Weitere Infos](../../integrations/using/configuring-adobe-io.md)
 
 * Nach dem [Ende der Unterstützung für das ältere Binärprotokoll von iOS-APNs](https://developer.apple.com/news/?id=c88acm2b) werden alle Instanzen, die dieses Protokoll verwenden, während des Postupgrades auf das HTTP/2-Protokoll aktualisiert.
 
