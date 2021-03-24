@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 74%
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Campaign Classic verwendet spezielle Technologien, um Mehrwert zu erzielen
 
 ## Warum benötigt meine Organisation dieses Upgrade?
 
-Als gehosteter Kunde werden Sie direkt nach Adobe benachrichtigt, wenn festgestellt wurde, dass Ihr Konto eine oder mehrere der mit Campaign Classic verbundenen Technologien aktualisieren und der aktuelle Build und/oder die aktuelle Version aktualisiert werden muss.
+Als gehosteter Kunde werden Sie von Adobe direkt benachrichtigt, wenn für Ihr Konto ein Upgrade einer oder mehrerer Technologien im Zusammenhang mit Campaign Classic sowie eine Aktualisierung des aktuellen Builds und/oder der Version erforderlich ist.
 
 Als On-Premise- oder Hybridkunde, die auf einer älteren Version ausgeführt wird, empfiehlt Ihnen die Adobe, zum neuesten [!DNL Gold Standard] zu wechseln.
 
@@ -53,7 +53,7 @@ Wir werden dafür sorgen, dass Sie über alle nötigen Projekt- und Kontaktinfor
     <li>Eine Kombination von Technologien, die bei Adobe Campaign Classic zum Einsatz kommen, sorgen gemeinsam für einen Mehrwert.</li>
     <li>Alle Instanzen müssen aktualisiert werden, um die nötige Sicherheit zu gewährleisten.</li>
     <li>Sicherheit erfordert ständige Überwachung und vorausschauende Wartung.</li>
-    <li>Sicherheitsrisiken sind allgegenwärtig und können nicht ignoriert werden: Jede Aktualisierung für Campaign Classic verbessert die Sicherheit.</li>
+    <li>Sicherheitsrisiken sind allgegenwärtig und können nicht ignoriert werden. Jedes Upgrade von Campaign Classic verbessert die Sicherheit.</li>
     </ul>
   </td>
 
@@ -63,7 +63,7 @@ Wir werden dafür sorgen, dass Sie über alle nötigen Projekt- und Kontaktinfor
     <strong>Verbesserter Support</strong>
     </div>
     <ul>
-    <li>Die meisten kritischen Probleme werden mit Aktualisierungen gelöst und können vermieden werden.</li>
+    <li>Die meisten kritischen Probleme werden mit Upgrades behoben und können so vermieden werden.</li>
     <li>Regelmäßige Upgrades tragen dazu bei, Schwierigkeiten zu beseitigen und dadurch die Effizienz zu steigern.</li>
     <li>Der Bedarf an Kundenunterstützung wird reduziert, was schnellere Lösungen und mehr Aufmerksamkeit für Ihre Probleme ermöglicht, die nicht mit Upgrades in Verbindung stehen.</li>
     </ul>
@@ -84,7 +84,7 @@ Wir werden dafür sorgen, dass Sie über alle nötigen Projekt- und Kontaktinfor
   </td>
 
 <td>
-      <img alt="Build-Aktualisierung" src="assets/do-not-localize/upgrades.png" />
+      <img alt="Build-Upgrade" src="assets/do-not-localize/upgrades.png" />
     <div>
     <strong>Einfachere Upgrades</strong>
     </a>
