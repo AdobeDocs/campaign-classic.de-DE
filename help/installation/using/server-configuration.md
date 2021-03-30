@@ -7,10 +7,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 62%
+source-wordcount: '1209'
+ht-degree: 59%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 62%
 
 ## Konfigurieren von Sicherheitszonen
 
->[!IMPORTANT]
->
->Ab Build 8977 ist die Benutzeroberfläche der Sicherheitszonen nicht mehr verfügbar.
->
->* Wenn Sie auf AWS gehostet werden, muss das Hinzufügen von IP zur Zulassungsliste in der Systemsteuerung durchgeführt werden. Weitere Informationen finden Sie in der [entsprechenden Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
->* Wenn Sie nicht auf AWS gehostet werden, kontaktieren Sie das Adobe-Supportteam, um IPs auf die Zulassungsliste zu setzen.
+Ab Build 8977 ist die Benutzeroberfläche der Sicherheitszonen nicht mehr verfügbar. Wenn Sie nicht auf AWS gehostet werden, kontaktieren Sie das Adobe-Supportteam, um IPs auf die Zulassungsliste zu setzen. Andernfalls muss der Zulassungsliste IP hinzugefügt werden unter [Systemsteuerung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
 
+Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
+
+>[!NOTE]
+> 
+>Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->
-Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/faq.html).
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
+
 
 * Stellen Sie sicher, dass Ihr Reverse-Proxy in subNetwork nicht erlaubt ist. Ist dies der Fall, wird der **gesamte** Datenverkehr als von dieser lokalen IP-Adresse kommend und daher als vertrauenswürdig eingestuft.
 
