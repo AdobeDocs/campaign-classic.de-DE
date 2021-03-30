@@ -7,10 +7,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: d41119e61ee2088e1b8cab65354547420f8e7737
+source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
 workflow-type: tm+mt
-source-wordcount: '4270'
-ht-degree: 97%
+source-wordcount: '4295'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,9 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ## März 2021 {#march-2021}
 
-Eine neue Seite mit Richtlinien und Verweisen, um Support für Campaign Classic zu erhalten, wurde hinzugefügt. [Weitere Infos](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
+Der Abschnitt [Erste Schritte mit SMS](../../delivery/using/sms-channel.md) wurde neu organisiert und verbessert. Sie können jetzt lernen, wie [den SMS-Kanal](../../delivery/using/sms-set-up.md), [eine SMS](../../delivery/using/sms-create.md), [Senden und Verfolgen von SMS](../../delivery/using/sms-send.md) in dedizierten Abschnitten konfiguriert werden kann.
+
+Die Seite &quot;Hilfe und Support-Optionen&quot; für Campaign Classic wurde in die Kerndokumentation integriert. [Mehr dazu](../../support.md)
 
 Es wurde ein neuer Abschnitt zu Best Practices und Überprüfungen für Sicherheit und Datenschutz hinzugefügt. [Mehr dazu](../../installation/using/get-started-security-privacy.md)
 
@@ -440,7 +442,7 @@ Eine neue Seite mit Best Practices für Adobe Analytics Data Connector wurde 
 
 Die ersten Schritte zum Thema Best Practices beim Versand wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
-In der Dokumentation zum SMS-Kanal wurde eine Empfehlung hinzugefügt, um Probleme bei der Verwendung mehrerer externer Konten zu vermeiden, indem der erweiterte allgemeine SMPP-Connector mit demselben Provider-Konto genutzt wird. [Mehr dazu](../../delivery/using/sms-channel.md#automatic-reply)
+In der Dokumentation zum SMS-Kanal wurde eine Empfehlung hinzugefügt, um Probleme bei der Verwendung mehrerer externer Konten zu vermeiden, indem der erweiterte allgemeine SMPP-Connector mit demselben Provider-Konto genutzt wird. [Mehr dazu](../../delivery/using/sms-set-up.md#automatic-reply)
 
 In der Dokumentation zur Planungsaktivität wurden Informationen darüber hinzugefügt, wie mehrere gleichzeitige Ausführungen eines Workflows verhindert werden können. [Mehr dazu](../../workflow/using/scheduler.md)
 
