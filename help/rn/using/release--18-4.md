@@ -6,9 +6,9 @@ description: Versionshinweise zu Campaign 18.4
 feature: null
 role: null
 level: null
-translation-type: ht
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 100%
 
@@ -144,7 +144,7 @@ _24. April 2018_
 * Administratoren haben jetzt wieder die Möglichkeit, das Passwort von Benutzern festzulegen oder zurückzusetzen. Klicken Sie dazu mit der rechten Maustaste auf einen Benutzer, wählen Sie **[!UICONTROL Aktionen]** > **[!UICONTROL Passwort zurücksetzen]** und geben Sie das neue Passwort des Benutzers ein. Wir empfehlen Benutzern, ihr Passwort bei der ersten Anmeldung zu ändern. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../production/using/lost-password.md).
 * Um die neue Mandantenfähigkeit in Adobe Target zu unterstützen, kann jetzt ein neuer &quot;at_property&quot;-Parameter zu URLs hinzugefügt werden, wenn Optionen und externe Konten für die Integration mit Target konfiguriert werden. Der für diesen Parameter zu verwendende Wert kann Adobe Target entnommen werden und wird von Campaign bei Abrufen in Target verwendet. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../integrations/using/inserting-a-dynamic-image.md).
 * Jetzt kann eine Standard-Landingpage spezifiziert werden, die sich öffnet, wenn auf ein von Adobe Target ausgegebenes Bild geklickt wird. Zuvor wurde bei Klick nur zum bei der E-Mail-Erstellung eingefügten Standard-Bild weitergeleitet. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../integrations/using/inserting-a-dynamic-image.md).
-* Im externen Konto wurde das Kästchen **Enable SMPP traces** hinzugefügt, um die Spurenausgabe zu erzwingen. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+* Im externen Konto wurde das Kästchen **Enable SMPP traces** hinzugefügt, um die Spurenausgabe zu erzwingen. Weiterführende Informationen dazu finden Sie im [entsprechenden Handbuch](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Technische Entwicklungen**
 
