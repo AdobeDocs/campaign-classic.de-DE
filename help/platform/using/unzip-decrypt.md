@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 3139a9bf5036086831e23acef21af937fcfda740
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 100%
+source-wordcount: '749'
+ht-degree: 85%
 
 ---
 
 
-# Dekomprimieren oder Entschlüsseln einer Datei {#unzipping-or-decrypting-a-file-before-processing}
+# Entpacken oder entschlüsseln Sie eine Datei {#unzipping-or-decrypting-a-file-before-processing}
 
 Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien importieren. Damit sie in der Aktivität [Laden (Datei)](../../workflow/using/data-loading--file-.md) gelesen werden können, definieren Sie eine Vorab-Bearbeitung, um die Datei zu dekomprimieren oder zu entschlüsseln.
 
@@ -25,7 +25,9 @@ Gehen Sie dazu folgendermaßen vor:
 
    >[!NOTE]
    >
-   >Das Control Panel steht allen auf AWS gehosteten Kunden zur Verfügung (mit Ausnahme von Kunden, die ihre Marketing-Instanzen auf einer lokalen Plattform hosten).
+   >Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte zum Gewähren des Administratorzugriffs für einen Benutzer sind in [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel) beschrieben.
+   >
+   >Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
 
 1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
 1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben: Installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
@@ -44,9 +46,9 @@ Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 **Verwandte Themen:**
 
 * [Aktivität &quot;Laden (Datei)&quot;](../../workflow/using/data-loading--file-.md).
-* [Datei komprimieren oder verschlüsseln](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+* [Komprimieren oder verschlüsseln Sie eine Datei](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
-## Anwendungsfall: Importieren von Daten, die mit einem vom Control Panel generierten Schlüssel verschlüsselt wurden {#use-case-gpg-decrypt}
+## Verwendungsfall: Importieren von Daten, die mit einem von der Systemsteuerung generierten Schlüssel verschlüsselt sind {#use-case-gpg-decrypt}
 
 In diesem Anwendungsfall erstellen wir einen Workflow, um Daten, die in einem externen System verschlüsselt wurden, mithilfe eines im Control Panel generierten Schlüssels zu importieren.
 
