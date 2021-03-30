@@ -9,9 +9,9 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 0b3bc9547d756352f4af5dac713f85666c96c425
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2462'
 ht-degree: 99%
 
 ---
@@ -144,13 +144,16 @@ ht-degree: 99%
          + [Auf japanische Mobiltelefone senden](delivery/using/sending-emails-on-japanese-mobiles.md)
       + [Dateien anhängen](delivery/using/attaching-files.md)
    + SMS senden {#sending-messages-on-mobiles}
-      + [SMS-Kanal](delivery/using/sms-channel.md)
+      + [Erste Schritte mit SMS](delivery/using/sms-channel.md)
+      + [SMS-Kanal konfigurieren](delivery/using/sms-set-up.md)
+      + [SMS erstellen](delivery/using/sms-create.md)
+      + [SMS senden und verfolgen](delivery/using/sms-send.md)
       + [Protokoll und Einstellungen des SMS-Connectors](delivery/using/sms-protocol.md)
       + [SMS-Fehlerbehebung](delivery/using/troubleshooting-sms.md)
       + [Zum erweiterten allgemeinen SMPP-Connector migrieren](delivery/using/unsupported-connector-migration.md)
    + [LINE-Nachrichten senden](delivery/using/line-channel.md)
    + Push-Benachrichtigungen senden {#sending-push-notifications}
-      + [Über den Mobile-App-Kanal (Mobile App Channel)](delivery/using/about-mobile-app-channel.md)
+      + [Erste Schritte mit dem App-Kanal](delivery/using/about-mobile-app-channel.md)
       + [Campaign-SDK in die Mobile App integrieren](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Mobile App konfigurieren{#configure-the-mobile-app}
          + [Erste Schritte mit der App-Konfiguration](delivery/using/get-started-app-config.md)
