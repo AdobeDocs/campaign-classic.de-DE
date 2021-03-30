@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 100%
+source-wordcount: '1746'
+ht-degree: 96%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 100%
 
 ## Über Zielpopulationen {#about-target-populations}
 
-Für jeden Versand können verschiedene Zielpopulationen bestimmt werden. Im folgenden Abschnitt finden Sie weitere Informationen zur Auswahl von:
+Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
 
-* Hauptempfängern des Versands – [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* Empfängern von Testversandnachrichten, um einen Validierungszyklus einzurichten – [mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-
-Wenn der Versand außerdem in einer Marketing-Kampagne enthalten ist, können Sie auch [Testadressen](../../delivery/using/about-seed-addresses.md) und [Kontrollgruppen](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) definieren.
+* **Wichtigste Audience**: Profil, die Nachrichten erhalten. [Weitere Infos](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **Testversand**: Empfänger von Testversand-Meldungen, die am Überprüfungszyklus beteiligt sind. [Weitere Infos](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Weitere Infos](../../delivery/using/about-seed-addresses.md)
+* **Kontrollgruppen**: Population, die den Versand nicht erhält, zur Nachverfolgung von Verhaltens- und Kampagnen-Auswirkungen (nur im Zusammenhang mit einer Marketing-Kampagne). [Weitere Infos](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
 
