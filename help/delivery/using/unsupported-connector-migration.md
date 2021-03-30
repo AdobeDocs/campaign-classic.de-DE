@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 584c11cc46d3a0cea3dcbbaef2700200fbdb8201
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 11%
@@ -47,7 +47,7 @@ Alte SMS-Connectors verwenden den Java SMS-Connector, der den Webprozess überl�
 >
 >Auch wenn Sie die Parameter implementieren können, müssen Sie bei der Konfiguration des Connectors **[!UICONTROL Erweitertes generisches SMPP]** mit Ihrem Provider sprechen, der Ihnen die Informationen gibt, die zum Ausfüllen der übrigen Parameter erforderlich sind. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
 
-Zunächst müssen Sie ein neues generisches **[!UICONTROL Extended SMPP]**-Externe Konto erstellen und dann möglicherweise einige der Parameter implementieren. Die detaillierten Schritte finden Sie auf dieser [Seite](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Zunächst müssen Sie ein neues generisches **[!UICONTROL Extended SMPP]**-Externe Konto erstellen und dann möglicherweise einige der Parameter implementieren. Die detaillierten Schritte finden Sie auf dieser [Seite](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 Sie müssen nun die Parameter aus dem Register **[!UICONTROL Mobil]** Ihres neu erstellten **[!UICONTROL Erweiterten generischen SMPP]**-Externen Kontos entsprechend Ihrem vorherigen Connector ausfüllen.
 
