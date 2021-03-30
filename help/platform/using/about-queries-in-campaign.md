@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: Über Abfragen in Adobe Campaign
 description: Über Abfragen in Adobe Campaign
-audience: platform
-content-type: reference
-topic-tags: creating-queries
+feature: Abfragen-Editor
+role: Geschäftspraktiker, Datenarchitektin
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 100%
+source-wordcount: '188'
+ht-degree: 94%
 
 ---
 
 
-# Über Abfragen in Adobe Campaign{#about-queries-in-campaign}
+# Erste Schritte mit Abfragen{#about-queries-in-campaign}
 
 Die Adobe-Campaign-Plattform bietet ein leistungsstarkes Abfragetool, das bei der Erfüllung verschiedener Funktionen wie Zielgruppenbestimmung, Segmentation des Kundenstamms, Extraktion und Filterung von Trackinglogs sowie Erstellung von Filtern zur Anwendung kommt.
 
