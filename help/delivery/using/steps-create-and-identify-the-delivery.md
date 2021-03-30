@@ -7,7 +7,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
@@ -52,7 +52,7 @@ Zunächst muss der Versand durch Angabe der Parameter identifiziert werden. Gehe
 Der Versandinhalt ist bereit zur Konfiguration. Die Definition des Versandinhalts erfolgt für jeden Kanal einzeln. Weiterführende Informationen dazu finden Sie im entsprechenden Abschnitt:
 
 * [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md)
-* [SMS-Inhalt erstellen](../../delivery/using/sms-channel.md#defining-the-sms-content)
+* [SMS-Inhalt erstellen](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [Briefpost-Inhalt definieren](../../delivery/using/defining-the-direct-mail-content.md)
 * [Push-Benachrichtigungen ](../../delivery/using/about-mobile-app-channel.md)
 
