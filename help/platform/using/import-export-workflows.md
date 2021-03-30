@@ -7,21 +7,21 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '268'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 
-# Importieren und Exportieren von Daten mit Workflows {#import-export-workflows}
+# Daten mit Workflows {#import-export-workflows} importieren und exportieren
 
 ## Daten erheben {#collecting-data-workflows}
 
 Workflows sind eine nützliche Methode, um Importverfahren zu automatisieren. Sie helfen Ihnen bei der Standardisierung Ihrer Datenverwaltungsaufgaben, egal ob Sie Daten von einer lokalen Datei oder von einem SFTP-Server importieren.
 
-### Verwendung von Daten aus einer Liste: Liste lesen {#using-data-from-a-list--read-list}
+### Daten aus einer Liste verwenden: Liste lesen {#using-data-from-a-list--read-list}
 
 In Workflows genutzte Daten können aus Listen stammen, deren Daten zuvor aufbereitet und strukturiert wurden.
 
@@ -29,7 +29,7 @@ Dabei kann es sich um Listen aus Adobe Campaign oder über die Option **[!UICONT
 
 Weitere Informationen zum Gebrauch der Aktivität &quot;Liste lesen&quot; in Workflows finden Sie auf [dieser Seite](../../workflow/using/read-list.md).
 
-### Laden von Daten aus einer Datei: Laden (Datei){#loading-data-from-a-file}
+### Daten aus einer Datei {#loading-data-from-a-file} laden
 
 Die im Workflow verarbeiteten Daten können aus einer strukturierten Datei stammen, die in Adobe Campaign importiert wird.
 
@@ -47,7 +47,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Nachdem die Daten erfasst wurden, können Sie sie in Ihren Workflows verwenden, um beispielsweise einen Versand anzureichern oder die Datenbank zu aktualisieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/how-to-use-workflow-data.md).
 
-## Export von Daten {#exporting-data-via-a-workflow}
+## Exportieren von Daten {#exporting-data-via-a-workflow}
 
 Workflows sind eine nützliche Methode, einige Ihrer Exportverfahren zu automatisieren oder spezifische Datensätze zu exportieren, nachdem die verfügbaren Datenverwaltungsaktivitäten zur Transformation Ihrer Daten angewendet wurden.
 
