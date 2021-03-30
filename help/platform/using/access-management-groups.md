@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Erstellen und Verwalten von Operatorgruppen
 description: Erfahren Sie, wie Sie Operatorgruppen Zugriff gewähren
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Zugriffsverwaltung
+role: Geschäftspraktiker, Administrator
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 95%
 
 ---
@@ -68,7 +68,6 @@ Es existieren folgende Standardgruppen:
 
    * **[!UICONTROL EINFÜGEN VON ORDNERN]**: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);
    * **[!UICONTROL WORKFLOW]**: Berechtigt zur Nutzung von Workflows.
-
    >[!NOTE]
    >
    >Benutzer dieser Gruppe können keine Sendungen starten.
@@ -100,6 +99,3 @@ Die Gruppe beinhaltet folgende spezifische Berechtigungen:
 
    * **[!UICONTROL EINFÜGEN VON ORDNERN]**: Berechtigt zum Einfügen von Ordnern in den Adobe Campaign-Navigationsbaum (erfordert Schreibzugriff für betroffene Zweige);
    * **[!UICONTROL BEARBEITUNG VON ORDNERN]**: Berechtigt zum Ändern von Ordnereigenschaften wie interner Name, Titel, verknüpftes Bild, Reihenfolge der Unterordner usw.
-
-
-
