@@ -7,10 +7,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 100%
+source-wordcount: '354'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Drei Einfügemodi stehen zur Verfügung:
 
 1. Import von Adressenvorlagen, die je nach Bedarf angepasst werden können.
 
-   Klicken Sie auf den Link **[!UICONTROL Testadressenvorlagen importieren...]** und wählen Sie den die Vorlagen enthaltenden Ordner. Weitere Informationen hierzu finden Sie unter [Testadressenvorlagen erstellen](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
+   Klicken Sie auf den Link **[!UICONTROL Testadressenvorlagen importieren...]** und wählen Sie den die Vorlagen enthaltenden Ordner. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/creating-seed-addresses.md#creating-seed-address-templates).
 
    Bei Bedarf können Sie nun die Adressfelder anpassen, indem Sie entweder darauf doppelklicken oder **[!UICONTROL Details...]** auswählen.
 
@@ -39,13 +39,13 @@ Drei Einfügemodi stehen zur Verfügung:
 
    Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Adressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
 
-   Ein Beispiel hierfür finden Sie im Abschnitt [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Ein Beispiel hierfür finden Sie in diesem Abschnitt: [Anwendungsfall: Wählen Sie Testadressen für Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
 >Diese Option wird insbesondere dann verwendet, wenn dem Versand eine andere als die Standard-Empfängertabelle **nms:recipient** zugrunde liegt und die Inbox-Rendering-Funktion des Moduls **[!UICONTROL Zustellbarkeit]** von Adobe Campaign genutzt werden soll.
 >
->Weitere Informationen hierzu finden Sie im Abschnitt [Externe Empfängertabelle verwenden](../../delivery/using/using-an-external-recipient-table.md) und in der Dokumentation zum [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+>Weitere Informationen finden Sie unter [Verwenden Sie eine externe Empfänger-Tabelle](../../delivery/using/using-an-external-recipient-table.md) und in der Dokumentation zu [Inbox-Rendering](../../delivery/using/inbox-rendering.md).
 
 Bei Briefsendungen können Sie die Art der Adresseneinfügung in die Extraktionsdatei anpassen. Standardmäßig werden sie der Sortierreihenfolge der Ausgabedatei entsprechend eingeordnet. Sie haben jedoch die Möglichkeit, sie am Anfang oder am Ende der Datei bzw. zufällig inmitten der Empfänger der Hauptzielgruppe einzufügen.
 
