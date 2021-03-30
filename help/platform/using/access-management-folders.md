@@ -3,21 +3,82 @@ solution: Campaign Classic
 product: campaign
 title: Zugriff auf Kampagnen-Ordner verwalten
 description: Erfahren Sie, wie Sie Zugriff auf Kampagnen-Ordner gewähren und Ansichten erstellen
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Anwendungseinstellungen
+role: Geschäftspraktiker, Administrator
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 90%
+source-wordcount: '781'
+ht-degree: 88%
 
 ---
 
 
-# Verwalten des Zugriffs auf Ordner{#folder-access-management}
+# Zugriff auf Ordner verwalten{#folder-access-management}
 
 Jeder Ordner der Explorer-Navigationsstruktur hat Lese-, Schreib- und Löschzugriffsrechte. Um auf eine Datei zugreifen zu können, muss ein Operator oder eine Benutzergruppe zumindest über Lesezugriff verfügen.
+
+## Ordner und Ansichten {#folders-and-views}
+
+### Was ist ein Ordner {#about-folders}
+
+Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der rechten Maustaste über das Menü **[!UICONTROL Ordner hinzufügen]** im Verzeichnis erstellt. Anschließend kann der zu erstellende Ordnertyp ausgewählt werden. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
+
+![](assets/s_ncs_user_add_folder_in_tree.png)
+
+Sie können die Navigationsstruktur des Explorers anpassen. Erfahren Sie mehr über Konfigurationsschritte und Best Practices [in diesem Abschnitt](adobe-campaign-workspace.md).
+
+### Was ist eine Ansicht {#about-views}
+
+Es besteht außerdem die Möglichkeit, Ansichten zu erstellen, um den Datenzugriff einzuschränken und den Inhalt des Navigationsbaums Ihren Bedürfnissen entsprechend zu organisieren. Es ist darüber hinaus möglich, den jeweiligen Ansichten Berechtigungen zuzuordnen.
+
+Eine Ansicht ist ein Ordner, der in einem oder mehreren anderen Ordnern des gleichen Typs gespeicherte Datensätze anzeigt. Wenn Sie beispielsweise einen Kampagnen-Ordner erstellen, der eine Ansicht ist, zeigt dieser standardmäßig alle in der Datenbank vorhandenen Kampagnen an, unabhängig von ihrer Herkunft. Ansichten bieten zudem die Möglichkeit, die enthaltenen Daten zu filtern.
+
+Wenn ein Ordner zu einer Ansicht gemacht wird, werden alle dem Ordnertyp entsprechenden Daten, die in der Datenbank vorhanden sind, unabhängig von ihrer tatsächlichen Ordnerzuordnung angezeigt. Anschließend können sie gefiltert werden, um die Liste der angezeigten Daten einzuschränken.
+
+>[!IMPORTANT]
+>
+>Ansichten fassen Daten zusammen und verleihen Zugriff auf sie. Die Daten sind jedoch nicht physisch im Ordner der Ansicht gespeichert. Der Benutzer muss über die der gewünschten Aktion entsprechenden Berechtigungen über den oder die Herkunftsordner der Daten verfügen (mindestens Lesezugriff).
+>
+>Um Zugriff auf eine Ansicht ohne Zugriff auf den Herkunftsordner zu verleihen, darf kein Lesezugriff auf den Elternknoten des Herkunftsordners gegeben werden.
+
+Zur Unterscheidung zwischen Ansichten und Ordnern wird der Name der Ansichten in einer anderen Farbe angezeigt (dunkeltürkis).
+
+![](assets/s_ncs_user_view_name_color.png)
+
+### hinzufügen von Ordnern und Erstellen von Ansichten {#adding-folders-and-creating-views}
+
+Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzustellen:
+
+1. Erstellen Sie einen neuen Ordner vom Typ **[!UICONTROL Sendungen]** und nennen Sie ihn **Sendungen Deutschland**.
+1. Klicken Sie mit der rechten Maustaste auf diesen Ordner und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
+
+   ![](assets/s_ncs_user_add_folder_exple.png)
+
+1. Wählen Sie im Tab **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
+
+   ![](assets/s_ncs_user_add_folder_exple01.png)
+
+1. Bestimmen Sie mithilfe des Abfragetools im mittleren Abschnitt des Fensters die Bedingungen, nach denen die Sendungen gefiltert werden sollen: Es werden nur die dem Filter entsprechenden Sendungen angezeigt.
+
+   >[!NOTE]
+   >
+   >Der Abfrageeditor wird in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md) beschrieben.
+
+   Mit den folgenden Filterbedingungen:
+
+![](assets/s_ncs_user_add_folder_exple00.png)
+
+werden folgende Sendungen in der Ansicht angezeigt:
+
+![](assets/s_ncs_user_add_folder_exple02.png)
+
+>[!NOTE]
+>
+>Bei der Verwaltung von Ereignissen des Typs [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md) dürfen die Ordner **[!UICONTROL Echtzeitereignis]** oder **[!UICONTROL Batch-Ereignis]** auf den Ausführungsinstanzen nicht als Ansichten festgelegt werden, da dies zu Problemen mit den Zugriffsrechten führen kann. Weiterführende Informationen zum Sammeln von Ereignissen finden Sie in [diesem Abschnitt](../../message-center/using/event-collection.md).
+
+
 
 ## Berechtigungen in einem Ordner
 
@@ -62,62 +123,3 @@ Die in diesem Fenster festgelegten Berechtigungen werden dadurch auf alle Untero
 Wenn im Tab **[!UICONTROL Sicherheit]** die Option **[!UICONTROL Systemordner]** angekreuzt ist, haben alle Benutzer ungeachtet ihrer Berechtigungen Zugriff auf die Daten des Ordners. Wenn die Option nicht angekreuzt ist, muss ein Benutzer (oder seine Gruppe) der Liste ausdrücklich hinzugefügt werden, um Zugriff zu erhalten.
 
 ![](assets/s_ncs_user_folder_properties_security03b.png)
-
-## Ordner und Ansichten {#folders-and-views}
-
-### Über Ordner {#about-folders}
-
-Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der rechten Maustaste über das Menü **[!UICONTROL Ordner hinzufügen]** im Verzeichnis erstellt. Anschließend kann der zu erstellende Ordnertyp ausgewählt werden. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
-
-![](assets/s_ncs_user_add_folder_in_tree.png)
-
-Sie können die Navigationsstruktur des Explorers anpassen. Erfahren Sie mehr über Konfigurationsschritte und Best Practices [in diesem Abschnitt](adobe-campaign-workspace.md).
-
-### Über Ansichten {#about-views}
-
-Es besteht außerdem die Möglichkeit, Ansichten zu erstellen, um den Datenzugriff einzuschränken und den Inhalt des Navigationsbaums Ihren Bedürfnissen entsprechend zu organisieren. Es ist darüber hinaus möglich, den jeweiligen Ansichten Berechtigungen zuzuordnen.
-
-Eine Ansicht ist ein Ordner, der in einem oder mehreren anderen Ordnern des gleichen Typs gespeicherte Datensätze anzeigt. Wenn Sie beispielsweise einen Kampagnen-Ordner erstellen, der eine Ansicht ist, zeigt dieser standardmäßig alle in der Datenbank vorhandenen Kampagnen an, unabhängig von ihrer Herkunft. Ansichten bieten zudem die Möglichkeit, die enthaltenen Daten zu filtern.
-
-Wenn ein Ordner zu einer Ansicht gemacht wird, werden alle dem Ordnertyp entsprechenden Daten, die in der Datenbank vorhanden sind, unabhängig von ihrer tatsächlichen Ordnerzuordnung angezeigt. Anschließend können sie gefiltert werden, um die Liste der angezeigten Daten einzuschränken.
-
->[!IMPORTANT]
->
->Ansichten fassen Daten zusammen und verleihen Zugriff auf sie. Die Daten sind jedoch nicht physisch im Ordner der Ansicht gespeichert. Der Benutzer muss über die der gewünschten Aktion entsprechenden Berechtigungen über den oder die Herkunftsordner der Daten verfügen (mindestens Lesezugriff).
->
->Um Zugriff auf eine Ansicht ohne Zugriff auf den Herkunftsordner zu verleihen, darf kein Lesezugriff auf den Elternknoten des Herkunftsordners gegeben werden.
-
-Zur Unterscheidung zwischen Ansichten und Ordnern wird der Name der Ansichten in einer anderen Farbe angezeigt (dunkeltürkis).
-
-![](assets/s_ncs_user_view_name_color.png)
-
-### Hinzufügung von Ordnern und Erstellung von Ansichten {#adding-folders-and-creating-views}
-
-Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzustellen:
-
-1. Erstellen Sie einen neuen Ordner vom Typ **[!UICONTROL Sendungen]** und nennen Sie ihn **Sendungen Deutschland**.
-1. Klicken Sie mit der rechten Maustaste auf diesen Ordner und wählen Sie **[!UICONTROL Eigenschaften...]** aus.
-
-   ![](assets/s_ncs_user_add_folder_exple.png)
-
-1. Wählen Sie im Tab **[!UICONTROL Einschränkung]** die Option **[!UICONTROL Dieser Ordner ist eine Ansicht]**: Nun werden alle Sendungen der Datenbank in diesem Ordner angezeigt.
-
-   ![](assets/s_ncs_user_add_folder_exple01.png)
-
-1. Bestimmen Sie mithilfe des Abfragetools im mittleren Abschnitt des Fensters die Bedingungen, nach denen die Sendungen gefiltert werden sollen: Es werden nur die dem Filter entsprechenden Sendungen angezeigt.
-
-   >[!NOTE]
-   >
-   >Der Abfrageeditor wird in [diesem Abschnitt](../../platform/using/about-queries-in-campaign.md) beschrieben.
-
-   Mit den folgenden Filterbedingungen:
-
-![](assets/s_ncs_user_add_folder_exple00.png)
-
-werden folgende Sendungen in der Ansicht angezeigt:
-
-![](assets/s_ncs_user_add_folder_exple02.png)
-
->[!NOTE]
->
->Bei der Verwaltung von Ereignissen des Typs [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md) dürfen die Ordner **[!UICONTROL Echtzeitereignis]** oder **[!UICONTROL Batch-Ereignis]** auf den Ausführungsinstanzen nicht als Ansichten festgelegt werden, da dies zu Problemen mit den Zugriffsrechten führen kann. Weiterführende Informationen zum Sammeln von Ereignissen finden Sie in [diesem Abschnitt](../../message-center/using/event-collection.md).
