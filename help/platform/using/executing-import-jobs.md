@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '3206'
-ht-degree: 99%
+source-wordcount: '3201'
+ht-degree: 98%
 
 ---
 
@@ -25,7 +25,7 @@ Mit Adobe Campaign können Sie Daten aus einer oder mehreren Dateien im Text-, C
 
 Mit dem Import-Assistenten können Sie einen Import konfigurieren, seine Optionen definieren (z. B. Formatierung) und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Imports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
-Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezeigt (siehe [Erstellen von Import- und Exportvorgängen](../../platform/using/creating-import-export-jobs.md)).
+Der Import-Assistent wird angezeigt, nachdem ein neuer Importauftrag erstellt wurde (siehe [Import- und Exportaufträge erstellen](../../platform/using/creating-import-export-jobs.md)).
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezei
 
 Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten importiert und jede Spalte wird einem Datenbankfeld zugeordnet.
 
-## 1. Schritt - Importvorlage auswählen {#step-1---choosing-the-import-template}
+## Schritt 1: Wählen Sie die Importvorlage {#step-1---choosing-the-import-template}
 
 Beim Start des Import-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Import von Empfängern zu konfigurieren, die einen Newsletter erhalten haben, gehen Sie folgendermaßen vor:
 
@@ -115,7 +115,7 @@ Verschiedene Optionen stehen zur Konfiguration des Imports zur Verfügung. Die h
 * Die Option **[!UICONTROL Automatische Formaterkennung]** stellt das ursprüngliche Format von durch die Option **[!UICONTROL Zur Formatänderung hier klicken...]** formatierten Daten wieder her.
 * Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Filtermöglichkeiten der Quelldaten und weitere Optionen. So haben Sie beispielsweise die Möglichkeit, nur einen Teil einer Datei zu importieren oder nur bestimmte Kriterien erfüllende Datensätze (Empfänger vom Typ &#39;Interessent&#39; oder &#39;Kunde&#39;). Die Verwendung dieser Optionen ist in JavaScript bewanderten Benutzern vorbehalten.
 
-### Dateiformat ändern {#changing-the-file-format}
+### Dateiformat {#changing-the-file-format} ändern
 
 Mithilfe der Option **[!UICONTROL Zur Formatänderung hier klicken...]** können die Quelldaten formatiert sowie Spalten-Trennzeichen und der Datentyp für jedes Feld angegeben werden. Diese Konfigurationen werden in folgendem Fenster vorgenommen:
 
@@ -244,7 +244,7 @@ Die Deduplizierung in Bezug auf Duplikata, d. h. Datensätze, die sowohl in der 
 
 Die Optionen **[!UICONTROL Zurückweisen]** und **[!UICONTROL Ignorieren]** arbeiten auf die gleiche Weise wie zuvor beschrieben.
 
-### Verhalten bei Fehlern {#behavior-in-the-event-of-an-error}
+### Bei Fehler {#behavior-in-the-event-of-an-error}
 
 Beim Datentransfer treten häufig Fehler auf, die von verschiedener Natur sein können (inkohärentes Zeilenformat, ungültige E-Mail-Adresse usw.). Alle von der Import-Engine erzeugten Fehler und Warnhinweise werden gespeichert und der Importinstanz zugewiesen.
 
@@ -311,7 +311,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
       ![](assets/s_ncs_user_import_wizard05_5.png)
 
-      Sie können eine neue Liste für diese Empfänger erstellen, indem Sie auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken. Das Erstellen und Verwalten von Listen wird unter [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md) genauer beschrieben.
+      Sie können eine neue Liste für diese Empfänger erstellen, indem Sie auf **[!UICONTROL Verknüpftes Element auswählen]** und dann auf **[!UICONTROL Erstellen]** klicken. Die Erstellung und Verwaltung von Listen finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md).
 
       ![](assets/s_ncs_user_import_wizard05_6.png)
 
@@ -329,10 +329,10 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um die in diesem Schritt vorgenommenen Konfigurationen zu bestätigen.
 
-## 6. Schritt - Import starten {#step-6---launching-the-import}
+## Schritt 6 - Import starten{#step-6---launching-the-import}
 
 Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Starten]**.
 
 ![](assets/s_ncs_user_import_wizard06_1.png)
 
-Anschließend können Sie die Ausführung des Importvorgangs überwachen (siehe [Überwachung der Vorgangsausführung](../../platform/using/monitoring-jobs-execution.md)).
+Sie können dann die Ausführung des Importauftrags überwachen (siehe [Auftragsausführung überwachen](../../platform/using/monitoring-jobs-execution.md)).
