@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
 
-# Profile verwalten{#managing-profiles}
+# Verwalten von Profilen{#managing-profiles}
 
 ## Empfängerknoten im Navigationsbaum {#recipient-tree}
 
@@ -29,15 +29,15 @@ Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich a
 >
 >Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Weitere Informationen finden Sie unter [Ordner und Ansichten](../../platform/using/access-management-folders.md).
 
-## Empfänger verschieben {#moving-recipients}
+## Empfänger {#moving-recipients} verschieben
 
 Sie können einen oder eine Gruppe von Empfängern markieren und sie durch Drag&amp;Drop aus der Liste in einen anderen Ordner verschieben. Vor der endgültigen Verschiebung ist eine Bestätigung Ihrerseits erforderlich.
 
-## Empfänger duplizieren {#copying-a-recipient}
+## Kopieren eines Empfängers {#copying-a-recipient}
 
 Es besteht die Möglichkeit, einen Empfänger im selben Ordner zu duplizieren. Klicken Sie hierzu mit der rechten Maustaste auf den entsprechenden Empfänger und wählen Sie **[!UICONTROL Duplizieren]**.
 
-## Empfänger löschen {#deleting-recipients}
+## Empfänger {#deleting-recipients} löschen
 
 Zu löschende Empfänger sind zunächst in einen spezifischen Ordner zu verschieben, welcher im Anschluss daran bereinigt wird. Es wird **dringend davon abgeraten**, in diesem Zusammenhang die Option **[!UICONTROL Löschen]** zu verwenden.
 
