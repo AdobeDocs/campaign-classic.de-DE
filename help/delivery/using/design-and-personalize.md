@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 98%
@@ -96,7 +96,7 @@ Testen Sie alle Änderungen vor dem endgültigen Senden.
 Standardmäßig kommt in Bezug auf die maximal zulässige Zeichenanzahl einer SMS der Mobilfunkstandard GSM (Global System for Mobile Communications) zur Anwendung. SMS, die das GSM-Alphabet verwenden, sind auf 160 Zeichen begrenzt oder auf 153 Zeichen pro SMS bei Nachrichten, die in mehreren Teilen gesendet werden.
 
 Transliteration bezeichnet in einer SMS die Ersetzung eines Zeichens durch ein anderes, wenn das ursprüngliche Zeichen nicht von GSM unterstützt wird. Die Verwendung von Personalisierungsfeldern im SMS-Inhalt führt u. U. dazu, dass nicht von GSM unterstützte Zeichen eingefügt werden. Sie können die Transliteration von Zeichen zulassen, indem Sie die entsprechende Option im Tab mit den Parametern des SMPP-Kanals des entsprechenden **[!UICONTROL externen Kontos]** aktivieren.
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/sms-channel.md#creating-an-smpp-external-account).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
 **Tipps**:
 
@@ -104,7 +104,7 @@ Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/us
 
 * Sollte Ihre SMS jedoch eine hohe Anzahl an Zeichen enthalten, die vom GSM-Standard nicht unterstützt werden, aktivieren Sie die Transliteration, um Ihre Versandkosten zu begrenzen.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/sms-channel.md#about-character-transliteration).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/sms-set-up.md#about-character-transliteration).
 
 ## Überprüfen der Formatierung {#formatting}
 
