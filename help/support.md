@@ -3,15 +3,12 @@ solution: Campaign Classic
 product: campaign
 title: 'Hilfe- und Supportoptionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
-audience: rns
-content-type: reference
-topic-tags: latest-release-notes
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: 1d9c96d1cd8ba2a8099271165a1671d5589230fb
+source-git-commit: 108f6cf912bb855fd34263d9e069260769a3ef6a
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 67%
+source-wordcount: '771'
+ht-degree: 58%
 
 ---
 
@@ -45,7 +42,7 @@ Wie aktualisieren Sie auf einen neuen Build? Wie lässt sich die Workflow-Ausfü
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">Schlüsselkonzepte</a></li>
         <li><a href="platform/using/faq-campaign-config.md">Campaign-Einstellungen</a></li>
-        <li><a href="platform/using/faq-reporting.md">Reporting </a></li>
+        <li><a href="platform/using/faq-reporting.md">Reporting</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Build-Upgrade</a></li>
         <li><a href="platform/using/faq-messages.md">Testen, Versand und Tracking von Nachrichten</a></li>
         <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
@@ -97,8 +94,14 @@ Wie aktualisieren Sie auf einen neuen Build? Wie lässt sich die Workflow-Ausfü
 
 ### Was ist das Control Panel?
 
-Das Control Panel ermöglicht Produktadministratoren von Adobe Campaign Classic effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen.
+Mit der Systemsteuerung von Kampagne können Sie die Effizienz Ihrer Arbeit als Produktadministrator von Campaign Classic steigern, indem Sie die Einstellungen verwalten und Nutzungen für jede Ihrer Instanzen verfolgen können.
 [Klicken Sie ](https://docs.adobe.com/content/hecontrol-panel/using/discover-control-panel/key-features.html) hier für weitere Informationen.
+
+>[!NOTE]
+>
+>Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
 
 ### Zugriff auf das Control Panel
 
@@ -130,7 +133,7 @@ Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Cont
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Das neue Ticketing-System wurde über [Adobe Admin Console](https://adminconsole.adobe.com/overview) gestartet. Das neue System erfordert für jeden Benutzer neue individuelle Konten mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Mehr dazu](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)
+Das neue Ticketing-System wurde über [Adobe Admin Console](https://adminconsole.adobe.com/overview) gestartet. Das neue System erfordert für jeden Benutzer neue individuelle Konten mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Weitere Infos](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)
 
 ### Fragen an Experten
 
