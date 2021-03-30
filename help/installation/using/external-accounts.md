@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: f00c0bda0ab3f2e07c015f4cfe5e3942f5620841
+source-git-commit: bfe2e29ed904b6a04bab28455301437c63ab8118
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 88%
+source-wordcount: '1807'
+ht-degree: 85%
 
 ---
 
@@ -35,6 +35,7 @@ Die folgenden externen Konten können eingerichtet werden:
 * [Externes Amazon Simple Storage Service-Konto (S3)](#amazon-simple-storage-service--s3--external-account)
 * [Externes Microsoft Dynamics CRM-Konto](#microsoft-dynamics-crm-external-account)
 * [Externes Salesforce CRM-Konto](#salesforce-crm-external-account)
+* [Externes Azure Blob Storage-Konto ](#azure-blob-external-account)
 
 ## Externes Konto erstellen {#creating-an-external-account}
 
@@ -98,7 +99,7 @@ Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campa
 Die folgenden Kanäle können konfiguriert werden:
 
 * [Email](../../installation/using/deploying-an-instance.md#email-channel-parameters)
-* [Mobiltelefon (SMS)](../../delivery/using/sms-channel.md#creating-an-smpp-external-account)
+* [Mobiltelefon (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
 * [Phone](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Briefpost](../../delivery/using/about-direct-mail-channel.md)
 * [Agentur](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
@@ -147,14 +148,14 @@ Die mit der Kampagne kompatiblen externen Datenbanken werden in der [Kompatibili
 
 Die Konfigurationseinstellungen des Externen Kontos hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* Zugriff auf [Azure Synapse](../../installation/using/configure-fda-synapse.md) konfigurieren
+* Zugriff auf [Azure synapse](../../installation/using/configure-fda-synapse.md) konfigurieren
 * Zugriff auf [Hadoop](../../installation/using/configure-fda-hadoop.md) konfigurieren
 * Zugriff auf [Oracle](../../installation/using/configure-fda-oracle.md) konfigurieren
 * Zugriff auf [Netezza](../../installation/using/configure-fda-netezza.md) konfigurieren
 * Zugriff auf [SAP HANA](../../installation/using/configure-fda-sap-hana.md) konfigurieren
 * Zugriff auf [Snowflake](../../installation/using/configure-fda-snowflake.md) konfigurieren
 * Zugriff auf [Sybase IQ](../../installation/using/configure-fda-sybase.md) konfigurieren
-* Zugriff auf [Teradaten](../../installation/using/configure-fda-teradata.md) konfigurieren
+* Zugriff auf [Teradata](../../installation/using/configure-fda-teradata.md) konfigurieren
 
 ## Externes Web Analytics-Konto {#web-analytics-external-account}
 
@@ -334,7 +335,7 @@ Erfahren Sie mehr über Kampagne - Microsoft Dynamics CRM Connector in dieser [S
 
 >[!NOTE]
 >
-> **[!UICONTROL Die Bereitstellungstypen]** für  **[!UICONTROL Office 365]** undOffice werden jetzt nicht mehr unterstützt. [Weitere Informationen](../../rn/using/deprecated-features.md).
+> **[!UICONTROL Die Bereitstellungstypen]** für  **[!UICONTROL Office 365]** undOffice werden jetzt nicht mehr unterstützt. [Weitere Infos](../../rn/using/deprecated-features.md).
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
 
@@ -413,3 +414,23 @@ Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu kon
 Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassistenten konfigurieren.
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
+
+## Externe Konto zur Datenspeicherung von Azurblut (#azure-blob-external-account)
+
+Das Externe Konto **Blaue Datenspeicherung** kann zum Importieren oder Exportieren von Daten in Adobe Campaign mithilfe einer Workflow-Aktivität **[!UICONTROL Übertragungsdatei]** verwendet werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
+
+![](assets/ext_account_23.png)
+
+Um das **[!UICONTROL Blaue Externe Konto]** für die Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen angeben:
+
+* **[!UICONTROL Server]**
+
+   URL Ihres Azurblauch-Datenspeicherung-Servers.
+
+* **[!UICONTROL Verschlüsselung]**
+
+   Typ der gewählten Verschlüsselung: **[!UICONTROL Keine]** oder **[!UICONTROL SSL]**.
+
+* **[!UICONTROL Zugriffsschlüssel]**
+
+   Um zu wissen, wo Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden, lesen Sie diese [Seite](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
