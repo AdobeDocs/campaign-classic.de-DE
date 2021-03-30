@@ -6,26 +6,24 @@ description: Dieser Abschnitt enthält allgemeine Informationen zum Mobile-App-K
 audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
-translation-type: ht
-source-git-commit: 22f44f5723ab35e95caa438583fe06314c763ba1
-workflow-type: ht
-source-wordcount: '677'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+workflow-type: tm+mt
+source-wordcount: '662'
+ht-degree: 92%
 
 ---
 
 
-# Über den Mobile-App-Kanal{#about-mobile-app-channel}
+# Erste Schritte mit dem mobilen App-Kanal{#about-mobile-app-channel}
+
+Mit dem **Mobile App Kanal** können Sie die Adobe Campaign-Plattform verwenden, um personalisierte Push-Benachrichtigungen über Apps an iOS- und Android-Terminals zu senden.
 
 >[!CAUTION]
 >
 >In diesem Dokument wird beschrieben, wie Sie Ihre Mobile App mit der Adobe Campaign-Plattform integrieren können. Es enthält weder Informationen zum Erstellen der Mobile App noch zum Konfigurieren der Anwendung für die Verwaltung von Benachrichtigungen. Weitere Informationen finden Sie in der offiziellen Apple-[Dokumentation](https://developer.apple.com/) sowie der offiziellen Android-[Dokumentation](https://developer.android.com/index.html).
 
-Die folgenden Abschnitte enthalten Informationen, die sich speziell auf den Mobile-App-Kanal beziehen.
-
-Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
-
-Der Mobile-Kanal (**Mobile App Channel**) bietet die Möglichkeit, mithilfe von Apps aus Adobe Campaign personalisierte Benachrichtigungen auf iOS- und Android-Geräte zu senden. Zwei Kanäle stehen zur Auswahl:
+Es stehen zwei Versand Kanal zur Verfügung:
 
 * iOS-Kanal zum Versand von Mitteilungen an Mobilgeräte mit Apple--Betriebssystem.
 
@@ -38,6 +36,7 @@ Der Mobile-Kanal (**Mobile App Channel**) bietet die Möglichkeit, mithilfe von 
 Diesen Kanälen entsprechen zwei Versandaktivitäten in den Kampagnen-Workflows:
 
 ![](assets/nmac_intro_3.png)
+
 
 >[!NOTE]
 >
@@ -56,7 +55,9 @@ Sie können das Verhalten der Anwendung dahingehend konfigurieren, dass dem Empf
 
 Der Workflow **[!UICONTROL NMAC Opt-out Management]** (mobileAppOptOutMgt) aktualisiert das Abmelden von Benachrichtigungen auf Smartphones und Tablets. Weitere Informationen zu diesem Workflow finden Sie in der [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
 
-Adobe Campaign ist mit HTTP/2-APNs kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+Adobe Campaign ist mit HTTP/2-APNs kompatibel. Weitere Informationen zu den Konfigurationsschritten finden Sie im Abschnitt [dieser Abschnitt](../../delivery/using/configuring-the-mobile-application.md).
+
+Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Datenfluss {#data-path}
 
