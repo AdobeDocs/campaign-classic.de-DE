@@ -7,10 +7,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 91%
+source-wordcount: '418'
+ht-degree: 90%
 
 ---
 
@@ -51,18 +51,18 @@ Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder ne
 
 Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
+Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distributsion/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch von der [!DNL Gold Standard]-Aktualisierung mit der [neuesten GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) ohne Aktion. [Weitere Informationen](../../rn/using/gs-overview.md).
+Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch von der [!DNL Gold Standard]-Aktualisierung mit der [neuesten GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) ohne Aktion. [Weitere Infos](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >Kompatibilitätsmatrix für [!DNL Gold Standard] ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
 
 ## Support und andere nützliche Links{#support}
 
-* [Hilfe und Support](https://helpx.adobe.com/de/campaign/kb/ac-support.html)
+* [Hilfe und Support](../../support.md)
 * [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html)
 * [Aktuelle Dokumentationsaktualisierungen](../../rn/using/documentation-updates.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
