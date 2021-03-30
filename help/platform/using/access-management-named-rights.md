@@ -3,14 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Spezifische Berechtigungen zum Einrichten von Berechtigungen verwenden
 description: Erfahren Sie, wie Sie mit Spezifische Berechtigungen Berechtigungen einrichten
-audience: platform
-content-type: reference
-topic-tags: administration-basics
+feature: Zugriffsverwaltung
+role: Geschäftspraktiker, Administrator
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 95%
+source-wordcount: '568'
+ht-degree: 97%
 
 ---
 
