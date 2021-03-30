@@ -7,9 +7,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
 workflow-type: tm+mt
-source-wordcount: '2037'
+source-wordcount: '2027'
 ht-degree: 98%
 
 ---
@@ -21,7 +21,7 @@ Adobe Campaign wird regelmäßig aktualisiert. Wenn Sie unsere veröffentlichten
 
 Deshalb erachten wir es als entscheidend, dass unsere Kunden stets die neueste Version von Adobe Campaign verwenden. Dadurch sind wir beim Auftreten von Problemen in der Lage, Ihnen effizient zu helfen. Denn es ist normalerweise zeitaufwändiger, einen Fehler in einem alten Build zu identifizieren, zu reproduzieren und zu beheben. Außerdem besteht die Möglichkeit, dass dieser Fehler im aktuellen Build bereits behoben wurde.
 
-[!DNL Gold Standard] ist Campaign Classic Long-Term Support Release. Als gehosteter [!DNL Gold Standard] Benutzer profitieren Sie automatisch von der [!DNL Gold Standard] Aktualisierung mit der neuesten stabilen Version ohne Aktion. Auch lokale und Hybrid-Kunden können von [!DNL Gold Standard]-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen. [Weitere Informationen](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] ist Campaign Classic Long-Term Support Release. Als gehosteter [!DNL Gold Standard] Benutzer profitieren Sie automatisch von der [!DNL Gold Standard] Aktualisierung mit der neuesten stabilen Version ohne Aktion. Auch lokale und Hybrid-Kunden können von [!DNL Gold Standard]-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen. [Weitere Infos](../../rn/using/gs-overview.md).
 
 ## Was ist ein Build-Upgrade?
 
@@ -168,7 +168,7 @@ Ja. Der Server wird während des Upgrades deaktiviert, um die Datenintegrität z
 
 Wenn nach einem Build-Upgrade Probleme auftreten, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). Die Adobe-Kundenunterstützung plant den Vorgang und erstellt das Ticket zum Build-Upgrade.
 
-Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/de/campaign/kb/ac-support.html).
+Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campaign Classic](../../support.md).
 
 ## Checkliste für Build-Upgrades {#check-list}
 
@@ -205,5 +205,5 @@ dass alle Inhalte vorhanden sind und angezeigt werden.
 
 * [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
-* [Hilfe- und Support-Optionen für Campaign Classic](https://helpx.adobe.com/campaign/kb/ac-support.html)
+* [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
 * [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
