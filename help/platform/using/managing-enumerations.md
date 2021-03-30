@@ -7,17 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 100%
+source-wordcount: '935'
+ht-degree: 96%
 
 ---
 
 
-# Auflistungen verwalten{#managing-enumerations}
-
-## Über Auflistungen {#about-enumerations}
+# Auflistungen{#managing-enumerations} verwalten
 
 Eine Auflistung ist eine Liste mit vom System vorgeschlagenen Werten für das Ausfüllen bestimmter Felder. Mithilfe von Auflistungen können Sie die Werte dieser Felder vereinheitlichen und die Dateneingabe und Nutzung in Abfragen vereinfachen.
 
@@ -46,7 +44,7 @@ Die Bestimmung der Werte für Auflistungsfelder und ihre Verwaltung (Hinzufügen
 
 * Wenn der Typ **[!UICONTROL Geschlossen]** ausgewählt wird, können die Benutzer keine neuen Werte erstellen, sondern nur unter den vorgeschlagenen Werten auswählen.
 
-## Daten vereinheitlichen {#standardizing-data}
+## Daten standardisieren {#standardizing-data}
 
 ### Über die Alias-Verwaltung {#about-alias-cleansing}
 
@@ -72,7 +70,7 @@ Die Option **[!UICONTROL Alias-Verwaltung]** ermöglicht es, die Alias für die 
 
 ![](assets/s_ncs_user_itemized_list_alias_option.png)
 
-#### Alias-Erstellung {#creating-an-alias}
+#### Alias erstellen {#creating-an-alias}
 
 Um einen Alias zu erstellen, klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**.
 
@@ -90,7 +88,7 @@ Geben Sie den zu konvertierenden Alias und den anzuwendenden Wert an und klicken
 
 ![](assets/s_ncs_user_itemized_list_alias_create_3.png)
 
-Wenn der Benutzer also z. B. den Wert **Buch Berlin** im Feld „Firma“ (in der Adobe Campaign-Konsole oder in einem Formular) eingibt, wird dieser durch den Wert **Buchverlag Berlin** ersetzt. Die Werteersetzung wird vom Workflow **Alias-Verwaltung** durchgeführt. Siehe [Datenbereinigung durchführen](#running-data-cleansing).
+Wenn der Benutzer also z. B. den Wert **Buch Berlin** im Feld „Firma“ (in der Adobe Campaign-Konsole oder in einem Formular) eingibt, wird dieser durch den Wert **Buchverlag Berlin** ersetzt. Die Werteersetzung wird vom Workflow **Alias-Verwaltung** durchgeführt. Weitere Informationen finden Sie unter [Datenbereingung zum Ausführen von Daten](#running-data-cleansing).
 
 ![](assets/s_ncs_user_itemized_list_alias_use.png)
 
@@ -112,15 +110,15 @@ Nach erfolgreicher Konvertierung wird der Alias der Alias-Liste hinzugefügt.
 
 ![](assets/s_ncs_user_itemized_list_alias_detail2.png)
 
-#### Alias abrufen {#retrieving-alias-hits}
+#### Abrufen von Aliastreffern {#retrieving-alias-hits}
 
 Die von den Benutzern eingegebenen Werte können in Alias konvertiert werden. Wenn der Benutzer einen Wert eingibt, der sich nicht in den Auflistungswerten befindet, wird dieser im Tab **[!UICONTROL Alias]** gespeichert.
 
-Der technische Workflow **Alias-Verwaltung** (aliasCleansing) ruft diese Werte jede Nacht ab, um die Auflistungen zu aktualisieren. Siehe [Datenbereinigung durchführen](#running-data-cleansing).
+Der technische Workflow **Alias-Verwaltung** (aliasCleansing) ruft diese Werte jede Nacht ab, um die Auflistungen zu aktualisieren. Siehe [Datenbereingung zum Ausführen von Daten](#running-data-cleansing)
 
-Wenn gewünscht, kann in der **[!UICONTROL Treffer]**-Spalte die Anzahl der Eingaben dieses Werts angezeigt werden. Die Berechnung dieses Werts kann jedoch lang und speicherintensiv sein. Weitere Informationen hierzu finden Sie unter [Berechnung der Eingabeanzahl](#calculating-entry-occurrences).
+Wenn gewünscht, kann in der **[!UICONTROL Treffer]**-Spalte die Anzahl der Eingaben dieses Werts angezeigt werden. Die Berechnung dieses Werts kann jedoch lang und speicherintensiv sein. Weitere Informationen hierzu finden Sie unter [Errechnen Sie die Einstiegsereignisse](#calculating-entry-occurrences).
 
-### Datenbereinigung durchführen {#running-data-cleansing}
+### Datenausführung - Datenbereingung {#running-data-cleansing}
 
 Die Datenbereinigung wird von dem technischen Workflow **[!UICONTROL Alias-Verwaltung]** (aliasCleansing) durchgeführt. Die für die Auflistungen festgelegten Konfigurationen werden während der Ausführung des Workflows berücksichtigt. Siehe [Workflow Alias-Verwaltung](#alias-cleansing-workflow).
 
@@ -134,7 +132,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** ermöglicht die Festlegung des
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um die Datenbereinigung zu beginnen.
 
-#### Berechnung der Eingabeanzahl {#calculating-entry-occurrences}
+#### Errechnen Sie die Einstiegsereignisse {#calculating-entry-occurrences}
 
 Der Untertab **[!UICONTROL Alias]** einer Auflistung kann die Anzahl der Erscheinungen eines Alias unter allen eingegebenen Werten anzeigen. Es handelt sich bei dieser Information um eine Schätzung. Sie wird in der Spalte **[!UICONTROL Treffer]** angezeigt.
 
