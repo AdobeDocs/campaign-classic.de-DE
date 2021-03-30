@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '1016'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,9 +23,9 @@ So kann es sinnvoll sein, Tracking-Daten von Kampagnen (Tracking-Verlauf usw.) i
 
 Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optionen definieren und die Ausführung starten. Es handelt sich dabei um eine Reihe von Bildschirmen, deren Inhalt von der Art des Exports (einfach oder mehrfach) und den Rechten des Benutzers abhängt.
 
-Der Export-Assistent wird nach der Erstellung eines neuen Exportvorgangs angezeigt (siehe [Erstellen von Import- und Exportvorgängen](../../platform/using/creating-import-export-jobs.md).
+Der Export-Assistent wird angezeigt, nachdem ein neuer Exportauftrag erstellt wurde (siehe [Import- und Exportaufträge erstellen](../../platform/using/creating-import-export-jobs.md)).
 
-## 1. Schritt - Exportvorlage auswählen {#step-1---choosing-the-export-template}
+## Schritt 1: Wählen Sie die Exportvorlage {#step-1---choosing-the-export-template}
 
 Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Export von Empfängern zu konfigurieren, die sich kürzlich angemeldet haben, gehen Sie folgendermaßen vor:
 
@@ -63,7 +63,7 @@ Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standard
 
    Hier ist die Angabe des Datums der letzten Änderung erforderlich. Dies geschieht durch Auswahl des entsprechenden Tabellenfelds.
 
-## 3. Schritt - Ausgabeformat bestimmen {#step-3---defining-the-output-format}
+## Schritt 3 - Definieren des Ausgabeformats {#step-3---defining-the-output-format}
 
 Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Text, Text in festen Spalten, CSV und XML.
 
@@ -85,7 +85,7 @@ Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. Weitere Informationen hierzu finden Sie unter [Funktionsliste](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
-## 5. Schritt - Spalten sortieren {#step-5---sorting-columns}
+## Schritt 5: Spalten sortieren {#step-5---sorting-columns}
 
 An dieser Stelle kann die Sortierreihenfolge der einzelnen Spalten festgelegt werden.
 
@@ -125,10 +125,10 @@ Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden d
 
 Durch Klick auf die Tabs unten im Fenster können Sie von der Ergebnisansicht in Spalten zur XML-Anzeige und zur SQL-Entsprechung der Abfrage wechseln.
 
-## 9. Schritt - Export starten {#step-9---launching-the-export}
+## Schritt 9 - Export starten{#step-9---launching-the-export}
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um den Exportprozess zu beginnen.
 
 ![](assets/s_ncs_user_export_wizard08.png)
 
-Anschließend können Sie die Ausführung des Importvorgangs überwachen (siehe [Überwachung der Vorgangsausführung](../../platform/using/monitoring-jobs-execution.md)).
+Sie können dann die Ausführung des Importauftrags überwachen (siehe [Auftragsausführung überwachen](../../platform/using/monitoring-jobs-execution.md)).
