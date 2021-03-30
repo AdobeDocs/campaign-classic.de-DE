@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: Profile hinzufügen
 description: Profile hinzufügen
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Profile
+role: Business Practitioner
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '76'
+source-wordcount: '80'
 ht-degree: 100%
 
 ---
 
 
-# Profile hinzufügen{#adding-profiles}
+# Hinzufügen von Profilen{#adding-profiles}
 
 Meist werden Profile [über einen Workflow in Campaign importiert](../../platform/using/import-export-workflows.md). Es besteht aber auch die Möglichkeit, neue Profile direkt über die Benutzeroberfläche hinzuzufügen. Wählen Sie hierzu die Schaltfläche **[!UICONTROL Erstellen]** aus.
 
