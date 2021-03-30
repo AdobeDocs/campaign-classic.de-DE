@@ -7,10 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 40abbf1f981331b8a19d3607c57624aac22c91f2
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 100%
+source-wordcount: '308'
+ht-degree: 78%
 
 ---
 
@@ -36,3 +36,9 @@ Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-Kennungen:
 
 * **Visitor ID**: Dieser Kennungstyp ermöglicht die Abstimmung der Adobe-Experience-Cloud-Besucher mit den Adobe-Campaign-Empfängern.
 * **Declared ID**: Dieser Kennungstyp ermöglicht die Abstimmung beliebiger Datentypen mit Elementen der Adobe-Campaign-Datenbank. In Adobe Campaign nimmt er die Form eines zuvor definierten Abstimmschlüssels an.
+
+   >[!NOTE]
+   >
+   > Deklarierte ID-Datenquelle kann jetzt auch mit der Integration des Hauptdienstes People verwendet werden.
+   >
+   >Wenn Sie die Integration des Hauptdiensts People verwenden und die Integration des Audience Managers hinzufügen möchten, benötigen Sie die Hilfe eines Adobe Audience Manager-Beraters, um zu vermeiden, dass alle beim Übergang zur Verwendung dieser deklarierten ID-Datenquelle in einem Adobe Audience Manager-Kontext erfassten ID-Synchronisierungen verloren gehen.
