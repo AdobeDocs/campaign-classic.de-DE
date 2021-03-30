@@ -7,17 +7,17 @@ audience: platform
 content-type: reference
 topic-tags: filtering-data
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '276'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
 
 # Anwendungsbeispiel{#use-case}
 
-## Erstellung eines auf das E-Mail-Format bezogenen Filters {#creating-a-filter-on-the-email-format-of-subscribers}
+## Erstellen Sie einen Filter für das E-Mail-Format der Abonnenten {#creating-a-filter-on-the-email-format-of-subscribers}
 
 In diesem Anwendungsbeispiel wird die Erstellung eines Filters beschrieben, der Newsletter-Abonnements entsprechend des von den Empfängern angegebenen E-Mail-Formats filtert.
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   Diese Felder werden für die Bestimmung der Filterbedingungen im Filtereditor zugänglich sein. Die Bestimmung eines Anwendungsfilters erfolgt auf die gleiche Weise wie die eines erweiterten Filters. Siehe [Erweiterte Filter erstellen](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   Diese Felder werden für die Bestimmung der Filterbedingungen im Filtereditor zugänglich sein. Die Bestimmung eines Anwendungsfilters erfolgt auf die gleiche Weise wie die eines erweiterten Filters. Siehe [Einen erweiterten Filter erstellen](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 1. Erstellen Sie einen neuen Abonnementfilter, um nur solche Abonnements anzuzeigen, für die kein E-Mail-Format bestimmt wurde:
 
