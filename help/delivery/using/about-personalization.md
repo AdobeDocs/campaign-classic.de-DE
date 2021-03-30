@@ -1,21 +1,21 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Über die Personalisierung
-description: Über die Personalisierung
+title: Erste Schritte mit der Personalisierung
+description: Erfahren Sie, wie Sie Nachrichten personalisieren und bedingten Inhalt in der Kampagne verwenden können
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 100%
+source-wordcount: '139'
+ht-degree: 86%
 
 ---
 
 
-# Über die Personalisierung{#about-personalization}
+# Erste Schritte mit der Personalisierung{#about-personalization}
 
 Die mit Adobe Campaign versendeten Nachrichten können in verschiedener Hinsicht personalisiert werden. Sowohl Inhalt als auch Rendering der Mitteilungen können dem Empfängerprofil entsprechend angepasst werden. Bei E-Mail-Sendungen haben Sie die Möglichkeit, Personalisierungselemente und -bedingungen direkt in JavaScript über den **[!UICONTROL Quelle]**-Tab der Nachricht zu definieren. Im Allgemeinen ermöglicht es Ihnen Adobe Campaign:
 
