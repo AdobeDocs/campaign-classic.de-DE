@@ -7,10 +7,10 @@ audience: production
 content-type: reference
 topic-tags: introduction
 translation-type: tm+mt
-source-git-commit: 9aa0ecd423bfbf1082e9ce5bdb36aaf1611dea54
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 16%
+source-wordcount: '772'
+ht-degree: 12%
 
 ---
 
@@ -31,7 +31,7 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Workflows</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Überwachen von Workflows</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Beobachtung von Sendungen</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Datenbank überwachen</a></p></td></tr>
 </table>
@@ -56,7 +56,9 @@ Der Prüfpfad ermöglicht Ihnen die Visualisierung des vollständigen Verlaufs d
 
 >[!NOTE]
 >
->Bitte beachten Sie, dass das Control Panel nur für Admin-Benutzer zugänglich ist und für alle Kunden zur Verfügung steht, die Adobe Managed Services nutzen.
+>Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte zum Gewähren des Administratorzugriffs für einen Benutzer sind in [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel) beschrieben.
+>
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
 
 ### Überwachung von Workflows {#monitoring-workflows}
 
@@ -90,7 +92,7 @@ Die Befolgung von Richtlinien und Best Practices bei der Verwendung von Workflow
 
 **SMTP-Berichte**
 
-SMTP-Berichte zeigen die Statistik des Versands und SMTP-Fehler nach Domäne an. [Mehr dazu](../../production/using/monitoring-processes.md)
+SMTP-Berichte zeigen die Statistik des Versands und SMTP-Fehler nach Domäne an. [Weitere Infos](../../production/using/monitoring-processes.md)
 
 **Best Practices**
 
@@ -136,7 +138,7 @@ Technische Ressourcen finden Sie in der Dokumentation zum Campaign Classic. Wir 
 * [Campaign Classic-Hosting-Modelle](../../installation/using/hosting-models.md)
 * [Hosting-Modellfunktionen](../../installation/using/capability-matrix.md)
 
-**Serverkonfiguration**
+**Konfiguration des Servers**
 
 *Nur lokale und hybride Hostingmodelle*
 
