@@ -7,10 +7,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Anfänger
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 98%
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,15 @@ ht-degree: 98%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign Classic Release Candidate-Version** aufgelistet.
 
-Campaign Classic [!DNL Gold Standard] (neuester GA-Build): [verweisen Sie auf diese Seite](../../rn/using/gold-standard.md).
+>[!NOTE]
+>
+>Kampagne **GA builds** sind:
+>* [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md#gs-11)
+>* [Campaign-Version 20.2.4](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+
+>
+
+
 
 ## ![](assets/do-not-localize/blue_2.png) Version 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
 
