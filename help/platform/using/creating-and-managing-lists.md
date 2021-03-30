@@ -3,21 +3,21 @@ solution: Campaign Classic
 product: campaign
 title: Erstellen und Verwalten von Listen
 description: Erfahren Sie, wie Sie Listen erstellen und verwalten.
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Profile
+role: Business Practitioner
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: 20dcdd91d71158bc373db68c3f61f6808b240bd2
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '870'
-ht-degree: 100%
+source-wordcount: '873'
+ht-degree: 95%
 
 ---
 
 
-# Listen erstellen und verwalten{#creating-and-managing-lists}
+# Erstellen und Verwalten von Listen{#creating-and-managing-lists}
 
-## Über Listen in Adobe Campaign {#about-lists-in-adobe-campaign}
+## Was ist eine Liste? {#about-lists-in-adobe-campaign}
 
 Eine Liste ist eine statische Gruppe von Profilen, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank gefilterte Population in einer Liste gespeichert werden.
 
@@ -37,7 +37,7 @@ In Adobe Campaign sind zwei Arten von Listen verfügbar:
 
 ![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#create-list-video).
 
-## Profilliste von einer Gruppe erstellen {#creating-a-profile-list-from-a-group}
+## Erstellen einer Profil-Liste aus einer Gruppe {#creating-a-profile-list-from-a-group}
 
 Listen vom Typ **[!UICONTROL Gruppe]**, die über den Link **[!UICONTROL Profile und Zielgruppen]** erstellt wurden, basieren ausschließlich auf der Standard-Profiltabelle (nms:recipient).
 
@@ -69,9 +69,9 @@ Es ist auch möglich, neue Profile direkt im Hinzufügefenster anzulegen, indem 
 
 ![](assets/s_ncs_user_new_recipient_from_group.png)
 
-Die Darstellung der Empfängerliste kann wie andere Listen auch Ihren Bedürfnissen entsprechend angepasst werden. Siehe [Listen konfigurieren ](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
+Die Darstellung der Empfängerliste kann wie andere Listen auch Ihren Bedürfnissen entsprechend angepasst werden. Siehe [diesen Abschnitt](../../platform/using/adobe-campaign-workspace.md#configuring-lists).
 
-## Daten einer Liste zuordnen {#linking-data-to-a-list}
+## Daten mit einer Liste {#linking-data-to-a-list} verknüpfen
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Sie können Listen auch von der Adobe-Campaign-Startseite aus bearbeiten. Klicke
 
 ![](assets/s_ncs_user_add_selection_to_group_5.png)
 
-## Profil aus einer Liste entfernen {#removing-a-profile-from-a-list}
+## Entfernen eines Profils aus einer Liste {#removing-a-profile-from-a-list}
 
 Sie haben verschiedene Möglichkeiten, Profile aus einer Liste zu entfernen. Sie können:
 
@@ -118,7 +118,7 @@ Sie haben verschiedene Möglichkeiten, Profile aus einer Liste zu entfernen. Sie
 
    ![](assets/recipient_remove_a_list.png)
 
-## Profilliste löschen {#deleting-a-list-of-profiles}
+## Eine Liste von Profilen {#deleting-a-list-of-profiles} löschen
 
 Listen werden ausgehend vom Adobe-Campaign-Navigationsbaum über den Link **[!UICONTROL Erweitert > Explorer]** der Adobe-Campaign-Startseite gelöscht. Wählen Sie die gewünschten Gruppen aus und klicken Sie mit der rechten Maustaste. Wählen Sie nun **[!UICONTROL Löschen]**. Vor der endgültigen Löschung ist eine Bestätigung erforderlich.
 
@@ -136,7 +136,7 @@ Erfahren Sie mehr über das Erstellen einer Audience durch Konfigurieren einer E
 
 >[!VIDEO](https://video.tv.adobe.com/v/25602/quality=12)
 
-### Empfängerliste erstellen mit einem Workflow    {#create-list-in-a-wf-video}
+### So erstellen Sie mit einem Workflow eine Liste von Empfängern {#create-list-in-a-wf-video}
 
 Erfahren Sie, wie Sie einen Workflow erstellen, um Empfänger als Zielkontakte auszuwählen, und den Workflow als wiederkehrend einzurichten, bevor die Liste als Zielgruppe für eine E-Mail-Kampagne verwendet wird.
 
