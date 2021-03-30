@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 translation-type: tm+mt
-source-git-commit: 3eecc16442a11849c12819cf83392f60c5b82a13
+source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 100%
+source-wordcount: '1197'
+ht-degree: 97%
 
 ---
 
 
-# Automatisierung mit Workflows{#automating-via-workflows}
+# Mit Workflows automatisieren{#automating-via-workflows}
 
 ## Inhaltsverwaltungsaktivitäten {#content-management-activity}
 
@@ -78,7 +78,7 @@ Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL
 
 ## Beispiele     {#examples}
 
-### Erstellung und Versand eines Inhalts automatisieren {#automating-content-creation-and-delivery}
+### Automatisieren der Inhaltserstellung und des Versands {#automating-content-creation-and-delivery}
 
 Folgender Workflow automatisiert die Erstellung und den Versand eines Inhalts:
 
@@ -160,7 +160,7 @@ werden im eingehenden Ereignis angegeben.
 
 Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
-### Inhalt erstellen und später versenden {#creating-content-and-publishing-it-later}
+### Erstellen von Inhalten für spätere Veröffentlichungen {#creating-content-and-publishing-it-later}
 
 Dieser Workflow erstellt einen Inhalt, die Datei-Veröffentlichung erfolgt jedoch zu einem späteren Zeitpunkt.
 
@@ -192,7 +192,7 @@ Die Aktivität **JavaScript-Code** speichert den kompletten Namen jeder erzeugte
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### Versand und Inhalt erstellen {#creating-the-delivery-and-its-content}
+### Erstellen Sie den Versand und dessen Inhalt {#creating-the-delivery-and-its-content}
 
 Der folgende Workflow entspricht dem ersten Beispiel, beginnt jedoch mit der Erstellung des Versands.
 
@@ -214,11 +214,11 @@ werden im eingehenden Ereignis angegeben.
 
 Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
-### Import von Inhalt von FTP-Servern {#importing-content-from-ftp}
+### Importieren von Inhalten aus FTP {#importing-content-from-ftp}
 
 Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe-Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
 
-### Import von Inhalt von Amazon Simple Storage Service (S3) Connector {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Importieren von Inhalten aus Amazon Simple Datenspeicherung Service (S3) Connector {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
 Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar ist, können Sie diesen Inhalt einfach in Adobe-Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
 
