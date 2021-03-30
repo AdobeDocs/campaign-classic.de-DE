@@ -3,23 +3,25 @@ solution: Campaign Classic
 product: campaign
 title: Über Profile
 description: Über Profile
-audience: platform
-content-type: reference
-topic-tags: profile-management
+feature: Profile, Audiencen
+role: Geschäftspraktiker, Datenarchitektin
+level: Anfänger
 translation-type: tm+mt
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 100%
+source-wordcount: '1029'
+ht-degree: 69%
 
 ---
 
 
-# Über Profile{#about-profiles}
+# Erste Schritte mit Profilen{#about-profiles}
 
-Alle Profile (Kunden, Interessenten, Newsletter-Abonnenten usw.) werden in der Adobe Campaign-Datenbank zentral gespeichert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen geschehen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PI-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
+Profil werden in der Adobe Campaign-Datenbank zentralisiert. Es gibt viele Möglichkeiten, Profile zu erwerben und diese Datenbank aufzubauen: Online-Erfassung über Web-Formulare, manueller oder automatischer Import von Textdateien, Replikation mit Firma-Datenbanken oder anderen Informationssystemen. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PI-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
 
-In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS etc.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie das Ziel filtern, das eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
+**Profil** bezeichnet einen Datensatz, der einen Endkunden, einen Prospect oder Lead repräsentiert. Bei diesen Daten kann es sich z. B. um einen Datensatz in der nmsRecipient-Tabelle oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobiltelefons oder andere für einen bestimmten Kanal relevante Informationen enthält.
+
+In Adobe Campaign sind Empfänger die standardmäßigen Profil, die zum Senden von Versänden (E-Mails, SMS usw.) bestimmt sind. Mit den in der Datenbank gespeicherten Empfänger-Daten können Sie die Zielgruppe filtern, die einen bestimmten Versand erhalten soll, und Personalisierungsdaten in den Inhalt Ihres Versands einfügen. Es gibt andere Arten von Profilen in der Datenbank. Sie sind für unterschiedliche Verwendungen konzipiert. So werden beispielsweise Seed-Profil erstellt, um Ihre Versand zu testen, bevor sie an die endgültige Zielgruppe gesendet werden.
 
 ![](assets/do-not-localize/how-to-video.png) [Informationen zum Profilkonzept finden Sie in diesem Video](#create-profiles-video)
 
@@ -55,11 +57,11 @@ Die gängigsten Methoden der Profilerstellung sind:
 
 Außerdem haben Sie an dieser Stelle Zugriff auf:
 
-* Listen; siehe [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md),
-* Anmeldedienste; siehe [diese Seite](../../delivery/using/managing-subscriptions.md),
-* Webanwendungen; siehe [diese Seite](../../web/using/about-web-applications.md),
-* Importe und Exporte (Vorgänge); siehe [Allgemeine Importe und Exporte](../../platform/using/about-generic-imports-exports.md),
-* Zielgruppen-Workflow; siehe [diese Seite](../../workflow/using/building-a-workflow.md#implementation-steps-),
+* Listen - [Weitere Informationen](../../platform/using/creating-and-managing-lists.md)
+* Anmeldedienst - [Weitere Informationen](../../delivery/using/managing-subscriptions.md)
+* Webanwendungen - [Weitere Informationen](../../web/using/about-web-applications.md)
+* Importe und Exporte (Aufträge) - [Weitere Informationen](../../platform/using/about-generic-imports-exports.md)
+* Targeting-Workflows - [Weitere Informationen](../../workflow/using/building-a-workflow.md#implementation-steps-)
 
 Über die Empfängerseite sind die gängigsten Aktionen möglich. Sie können Profile bearbeiten, aktualisieren, sortieren, löschen oder neue Profile erstellen.
 
@@ -67,35 +69,37 @@ Erweiterte Funktionalitäten stehen über den Navigationsbaum zur Verfügung. Kl
 
 Standardmäßig sind die Empfänger im Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Empfänger]** gespeichert. Sie haben an dieser Stelle nicht nur die Möglichkeit, Empfänger zu erstellen, sondern auch
 
-* Profile der Datenbank sortieren und filtern; siehe [Filteroptionen](../../platform/using/filtering-options.md),
-* Profile der Datenbank verschieben, kopieren oder löschen; siehe [Profile verwalten](../../platform/using/managing-profiles.md),
-* Profile aktualisieren; siehe [Daten-Update](../../platform/using/updating-data.md),
-* Exportempfänger; siehe [Profile im-/exportieren](../../platform/using/exporting-and-importing-profiles.md),
-* Empfängergruppen erstellen; siehe [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md).
+* Sortieren und filtern Sie die Profil der Datenbank - [Weitere Informationen](../../platform/using/filtering-options.md)
+* Profile verschieben, kopieren oder löschen - [Weitere Informationen](../../platform/using/managing-profiles.md),
+* Profile aktualisieren - [Weitere Informationen](../../platform/using/updating-data.md)
+* export-Empfänger - [Weitere Informationen](../../platform/using/exporting-and-importing-profiles.md)
+* Erstellen von Empfänger-Gruppen - [Weitere Informationen](../../platform/using/creating-and-managing-lists.md)
 
 Erweiterte Funktionen und Konfigurationsmöglichkeiten stehen ausschließlich über den **[!UICONTROL Explorer]** zur Verfügung.
 
 ![](assets/d_ncs_user_interface01.png)
 
-Das allgemeine Layout von Adobe Campaign-Explorer wird in [Adobe Campaign-Explorer verwenden](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) beschrieben.
+Das allgemeine Layout des Adobe Campaign Explorer wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) dargestellt.
 
 >[!NOTE]
 >
->Durch Klick auf **[!UICONTROL Profile und Zielgruppen > Empfänger]** haben Sie Zugriff auf eine erweiterte Ansicht der Empfängerliste. Es besteht die Möglichkeit, sie Ihren Bedürfnissen entsprechend anzupassen. Sie können beispielsweise Spalten hinzufügen oder löschen und ihre Reihenfolge festlegen, Daten sortieren etc. Die Konfiguration der Listenanzeige wird unter [Adobe Campaign-Explorer verwenden](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) beschrieben.
+>Durch Klick auf **[!UICONTROL Profile und Zielgruppen > Empfänger]** haben Sie Zugriff auf eine erweiterte Ansicht der Empfängerliste. Es besteht die Möglichkeit, sie Ihren Bedürfnissen entsprechend anzupassen. Sie können beispielsweise Spalten hinzufügen oder löschen und ihre Reihenfolge festlegen, Daten sortieren etc. Die Anzeigekonfiguration der Liste wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) beschrieben.
 >
->Sie können auch Empfängeransichten definieren. Weitere Informationen zu dieser Funktion finden Sie unter [Ordner und Ansichten](../../platform/using/access-management-folders.md).
+>Sie können auch Empfängeransichten definieren. Weitere Informationen zu dieser Funktion finden Sie in [diesem Abschnitt](../../platform/using/access-management-folders.md).
 
 ## Aktive Profile {#active-profiles}
 
 Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt werden.
 
+Die Anzahl der aktiven Profil ist nur für **Marketinginstanzen** verfügbar. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
+
+Wenn Sie auf AWS gehostet werden, können Sie auch die Anzahl der aktiven Profil, die auf Ihren Instanzen verwendet werden, direkt über die Systemsteuerung überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+
 >[!NOTE]
 >
->Wenn Sie auf AWS gehostet werden und Campaign Classic aus Build 8931 verwenden, können Sie die Anzahl der in Ihren Instanzen verwendeten aktiven Profile auch direkt im Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/active-profiles-monitoring.html).
+>Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
 >
->Beachten Sie, dass die Anzahl der aktiven Profile nur für **Marketing-Instanzen** verfügbar ist. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
-
-**Profil** bezeichnet einen Datensatz, der einen Endkunden, einen Prospect oder Lead repräsentiert. Bei diesen Daten kann es sich z. B. um einen Datensatz in der nmsRecipient-Tabelle oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobiltelefons oder andere für einen bestimmten Kanal relevante Informationen enthält.
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
 
 Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
 
