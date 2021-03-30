@@ -7,15 +7,15 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 translation-type: tm+mt
-source-git-commit: 64f5b108173806aff53f7240e8c9d499cc332d72
+source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1781'
 ht-degree: 95%
 
 ---
 
 
-# SMS-Kanal {#setting-up-sms-channel} einrichten
+# SMS-Kanal {#setting-up-sms-channel} konfigurieren
 
 Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone richten zu können:
 
@@ -286,7 +286,7 @@ CR: Wagenrücklauf
 
 ^ { } `[ ~ ]` | €
 
-## Über Textkodierungen {#about-text-encodings}
+## Textkodierungen {#about-text-encodings}
 
 Beim SMS-Versand kann Adobe Campaign eine oder mehrere Textkodierungen verwenden. Je nach Kodierung kommen unterschiedliche Zeichensätze zur Anwendung und variiert die Anzahl an zulässigen Zeichen pro SMS.
 
