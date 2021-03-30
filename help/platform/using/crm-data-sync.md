@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
-source-wordcount: '1618'
-ht-degree: 100%
+source-wordcount: '1617'
+ht-degree: 98%
 
 ---
 
 
-# Datensynchronisation zwischen Campaign und dem CRM-System {#data-synchronization}
+# Daten zwischen Kampagne und CRM {#data-synchronization} synchronisieren
 
 Die Datensynchronisation zwischen Adobe Campaign und dem CRM-System erfolgt über die spezifische Workflow-Aktivität [CRM-Connector](../../workflow/using/crm-connector.md).
 
@@ -44,7 +44,7 @@ Wählen Sie zunächst das externe Konto aus, das dem CRM-System entspricht, mit 
 
 Die Konfiguration der Aktivität hängt von der gewählten Option ab und wird im Folgenden dargestellt:
 
-## Import aus CRM {#importing-from-the-crm}
+## Import aus dem CRM {#importing-from-the-crm}
 
 Zum Import von CRM-Daten in Adobe Campaign ist ein Workflow nach folgendem Muster zu erstellen:
 
@@ -82,9 +82,9 @@ Gehen Sie zur Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie fo
 
    Weitere Informationen hierzu finden Sie im Abschnitt [Variablenverwaltung](#variable-management).
 
-### Variablenverwaltung {#variable-management}
+### Verwalten von Variablen {#variable-management}
 
-Durch Aktivierung der Option **[!UICONTROL Automatischer Index]** ist es möglich, nur die seit dem letzten Import geänderten Objekte abzurufen.
+Aktivieren Sie die Option **[!UICONTROL Automatischer Index]**, um nur Objekte zu erfassen, die seit dem letzten Import geändert wurden.
 
 ![](assets/crm_task_import_option.png)
 
@@ -115,7 +115,7 @@ Die Aktivierung der Option **[!UICONTROL Automatischer Index]** erzeugt drei Var
    >
    >Die Daten werden im Format **yyyy/MM/dd hh:mm:ss** ausgedrückt.
 
-### Datenfilter {#filtering-data}
+### Filtern von Daten {#filtering-data}
 
 Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen, sind bei der Filtererstellung folgende Regeln zu beachten:
 
