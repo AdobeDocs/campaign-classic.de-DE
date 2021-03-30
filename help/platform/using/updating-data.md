@@ -7,10 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
+source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
 source-wordcount: '764'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 Empfängerprofildaten können manuell oder automatisch aktualisiert werden.
 
-## Automatische Aktualisierung einrichten {#setting-up-an-automatic-update}
+## Einrichten eines automatischen Updates {#setting-up-an-automatic-update}
 
 Automatische Aktualisierungen lassen sich unter Verwendung von Workflows durchführen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../workflow/using/update-data.md).
 
-## Gebündeltes Update durchführen {#performing-a-mass-update}
+## Durchführen einer Massenaktualisierung {#performing-a-mass-update}
 
 Für eine manuelle Aktualisierung können Sie entweder das Kontextmenü **[!UICONTROL Aktionen]** verwenden (klicken Sie mit der rechten Maustaste auf den oder die ausgewählten Empfänger) oder auf das **[!UICONTROL Aktionen]**-Symbol oben rechts klicken.
 
@@ -79,7 +79,7 @@ Durch Klick auf die Schaltfläche **[!UICONTROL Berechnen]** wird das Ihrer Wahl
 
 Prüfen Sie die **[!UICONTROL Ergebnis]**-Spalte im oberen und unteren Abschnitt des Fensters und klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**, um die Zusammenführung zu starten.
 
-## Export von Daten {#exporting-data}
+## Exportieren von Daten {#exporting-data}
 
 Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren und zu starten, gehen Sie folgendermaßen vor:
 
@@ -94,7 +94,7 @@ Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren un
 
    Weitere Informationen zur Konfiguration des Export-Assistenten finden Sie [in diesem Abschnitt](../../platform/using/executing-export-jobs.md).
 
-## Anmeldung für einen Dienst {#subscribing-to-a-service}
+## Abonnieren eines Dienstes {#subscribing-to-a-service}
 
 Normalerweise melden sich Empfänger über eine spezielle Landingpage für einen Newsletter an, wie in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschrieben. Empfängerprofile können aber auch manuell für einen Dienst (z. B. Newsletter oder viraler Dienst) angemeldet werden. Gehen Sie dazu folgendermaßen vor:
 
