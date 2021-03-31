@@ -6,11 +6,11 @@ description: Version 20.2
 feature: Übersicht
 role: Business Practitioner
 level: Anfänger
-translation-type: ht
-source-git-commit: 1f718e26aeaa5ed5a58dfd0e3bc29d2dd9e995ee
-workflow-type: ht
-source-wordcount: '2567'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: a25f9464a762defa5d9a3b45bb60a387c65b7c97
+workflow-type: tm+mt
+source-wordcount: '2838'
+ht-degree: 92%
 
 ---
 
@@ -19,16 +19,34 @@ ht-degree: 100%
 
 ![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
 
-## ![](assets/do-not-localize/green_2.png) Version 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
+## ![](assets/do-not-localize/green_2.png) Version 20.2.5 – Build 9188 {#release-20-2-5-build-9188}
+
+_31. März 2020_
+
+**Verbesserungen**
+
+* Es wurde eine Verbesserung vorgenommen, um Abstürze bei ungültigen Seifenaufrufen zu verhindern. Dies kann dazu führen, dass die Instanz beim Versuch, bestimmte komplexe Abfragen auszuführen, nicht mehr funktioniert. (NEO-28796, NEO-30553)
+* Korrektur einer Regression, die dazu führte, dass SMS-Versand mit TLS aufgrund der Hostnamenüberprüfung nicht gesendet wurden. (NEO-29581)
+* Es wurde ein Fehler behoben, der verhinderte, dass Links zur signierten Verfolgung auf einigen E-Mail-Clients funktionierten. (NEO-28414, NEO-29615)
+* Eine Verfolgungs-ID-Sequenz bei der Verwendung von WebApp-Trackingtagen wurde behoben, die Konflikte mit Duplikat-IDs verursachen konnte. (NEO-27931)
+* Es wurde ein Fehler behoben, der dazu führte, dass die Workflows beim täglichen Neustart des Webservers angehalten wurden. (NEO-30047)
+* Fehlerkorrektur – Es wurde ein Sicherheitsproblem mit API-Aufrufen behoben, die von Benutzern ohne Administratorrechte beim Synchronisieren von Adobe Experience Manager-Vorlagen ausgeführt wurden. (NEO-32389, NEO-23487)
+* Es wurde ein Fehler behoben, der dazu führte, dass die Konsole abstürzte, wenn ein Dialogfeld mit einem Versand für einen Versand geschlossen wurde, der mit einer Vorlage erstellt wurde. (NEO-31547)
+* Es wurde ein Fehler behoben, der beim Erstellen und Speichern eines Versands auf der Registerkarte **Targeting und Workflow** einer Kampagne auftrat: die Vorschau mit dem folgenden Fehler fehlschlug. (NEO-29440)
+* Es wurde ein Problem behoben, durch das Tomcat 8.5 ungültige Antworten sendete, die in Transaktionsprotokollen Fehler verursachten. (NEO-30858)
+* Korrektur des Regressionsproblems, das Speicherkorruption in der externen Thread-Verwaltung verursachte und die Leistung beeinträchtigte.
+* Es wurde ein Fehler behoben, der dazu führte, dass der Rechnungsarbeitsablauf bei der Verwendung eines benutzerdefinierten Zielgruppen-Mappings fehlschlug. Der Hauptschlüssel des benutzerdefinierten Schemas wird in der Spalte &quot;sourceId&quot;gespeichert, in der nur ganzzahlige Werte zulässig sind. Es können nun sowohl Ganzzahl- als auch Zeichenfolgenwerte verwendet werden. (NEO-25914, NEO-28146)
+* Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Sendungen verhinderte. (NEO-31453)
+
+## ![](assets/do-not-localize/red_2.png) Version 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
 
 _22. Dezember 2020_
 
 >[!CAUTION]
 >
-> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole ein Upgrade zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
-> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Das Upgrade ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
+> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
 > * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte OAuth-Authentifizierungsmodus mit Campaign wird am **30. November 2021** eingestellt.
-
 
 
 **Verbesserungen**
@@ -86,7 +104,7 @@ _22. Juli 2020_
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
