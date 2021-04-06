@@ -1,19 +1,19 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Email Deliverability
-description: Email Deliverability
+title: Technische E-Mail-Konfiguration
+description: Erfahren Sie, wie Sie die Kampagne konfigurieren, um die Ausgabe Ihrer Instanzen bei der Bereitstellung von E-Mails zu steuern.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 515adad2-6129-450a-bb9e-fc80127835af
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
 workflow-type: tm+mt
-source-wordcount: '3060'
+source-wordcount: '3089'
 ht-degree: 20%
 
 ---
-
 
 # Technische E-Mail-Konfigurationen{#email-deliverability}
 
@@ -27,7 +27,7 @@ Im folgenden Abschnitt erhalten Sie einen Überblick über die Konfiguration, di
 
 Weitere Informationen zu den Konzepten und Best Practices im Zusammenhang mit der Lieferbarkeit mit Adobe Campaign finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
-Einen tieferen Einblick in die Lieferbarkeit, einschließlich aller technischen Empfehlungen zum effizienten Versenden und Empfangen von E-Mails durch eine Adobe, finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Adobe-Auslieferung.
+Einen tieferen Einblick in die Lieferbarkeit, einschließlich aller technischen Empfehlungen zum effizienten Versenden und Empfangen von E-Mails durch eine Adobe, finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) zur Adobe-Auslieferung.
 
 ## Grundprinzip {#operating-principle}
 
@@ -135,9 +135,11 @@ Standardmäßig überwacht der Statistikserver den Anschluss 7777. Dieser Anschl
 >
 >Bei gehosteten oder hybriden Installationen werden die Versanddurchsatzregeln der **[!UICONTROL MX-Verwaltung]** nicht mehr verwendet, wenn Sie auf den [Enhanced MTA](../../delivery/using/sending-with-enhanced-mta.md) aktualisiert haben. Der Enhanced MTA verwendet seine eigenen MX-Regeln. Mit diesen kann Ihr Durchsatz anhand Ihrer historischen E-Mail-Reputation und dem Echtzeit-Feedback, das von den Domains stammt, von denen Sie E-Mails senden, angepasst werden.
 
-Die folgenden Abschnitte gelten nur für lokale Installationen und gehostete/hybride Installationen mit der Legacy-Kampagne MTA.
-
 ### Über MX-Regeln {#about-mx-rules}
+
+>[!NOTE]
+>
+>Dieser Abschnitt und die folgenden Abschnitte gelten nur für Installationen vor Ort und gehostete/hybride Installationen mit der Legacy-Kampagne MTA.
 
 MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sender- und einem Empfangs-Server.
 
@@ -301,6 +303,10 @@ Die folgenden Parameter stehen für jede Regel zur Verfügung:
 Konfigurationsbeispiel:
 
 ![](assets/s_ncs_install_mx_mgt_rule_details.png)
+
+>[!NOTE]
+>
+>Weitere Informationen zur Verwendung von MX-Servern mit Adobe Campaign finden Sie unter [dieser Abschnitt](../../installation/using/using-mx-servers.md).
 
 ### Verwalten von E-Mail-Formaten {#managing-email-formats}
 
