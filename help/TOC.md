@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Dokumentation
 translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 99%
+source-wordcount: '2481'
+ht-degree: 98%
 
 ---
 
@@ -113,6 +113,7 @@ ht-degree: 99%
       + CRM-Connectoren{#crm-connectors}
          + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
+         + [Verbindung mit Salesforce.com](platform/using/crm-sfdc.md)
          + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
    + [Hilfe- und Support-Optionen](support.md)
@@ -211,6 +212,7 @@ ht-degree: 99%
       + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
       + [Versandstatus](delivery/using/delivery-statuses.md)
       + [Ursachen für das Fehlschlagen von Sendungen](delivery/using/understanding-delivery-failures.md)
+      + [Aktualisierung der Absprungqualifikation nach einem ISP-Ausfall](delivery/using/update-bounce-qualification.md)
       + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
    + Nachrichten tracken {#tracking-messages}
       + [Über das Nachrichten-Tracking](delivery/using/about-message-tracking.md)
@@ -658,6 +660,7 @@ ht-degree: 99%
       + [Einstellungen des Campaign-Servers](installation/using/configuring-campaign-server.md)
       + [Sicherheitszonen definieren](installation/using/security-zones.md)
       + [Technische E-Mail-Konfigurationen](installation/using/email-deliverability.md)
+      + [Verwenden von MX-Servern mit Kampagne](installation/using/using-mx-servers.md)
       + [E-Mail-BCC konfigurieren](installation/using/email-archiving.md)
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
    + Verbindung zu Campaign herstellen{#connect-to-campaign}
@@ -672,6 +675,7 @@ ht-degree: 99%
       + [Externe Konten konfigurieren](installation/using/external-accounts.md)
       + Federated Data Access konfigurieren{#configure-fda}
          + [Erste Schritte mit Federated Data Access](installation/using/about-fda.md)
+         + [Best Practices und Einschränkungen](installation/using/fda-best-practices.md)
          + Konfigurationsrichtlinien {#config-databases}
             + [Konfigurationsschritte](installation/using/configure-fda.md)
             + [Konfigurieren von Snowflake](installation/using/configure-fda-snowflake.md)
