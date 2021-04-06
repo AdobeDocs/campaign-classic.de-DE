@@ -6,14 +6,14 @@ description: Bewährte Verfahren und Einschränkungen beim Arbeiten mit einer ex
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
 translation-type: tm+mt
-source-git-commit: 0a92ebd6c9400f8caf43da8f633c7755a3fb77ce
+source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 30%
 
 ---
-
 
 # Best Practices und Einschränkungen
 
@@ -60,4 +60,3 @@ Vermeiden Sie möglichst Vorgänge, bei denen sowohl Adobe Campaign als auch die
 Wenn Sie Ihre Sendungen unter Verwendung von Daten aus der externen Datenbank personalisieren möchten, rufen Sie die entsprechenden Daten über einen Workflow ab und stellen Sie sie in einer temporären Tabelle bereit. Personalisieren Sie dann Ihren Versand mit den Daten aus der temporären Tabelle.
 
 Die Option &quot;FDA&quot;unterliegt den Einschränkungen des von Ihnen verwendeten externen Datenbanksystems.
-
