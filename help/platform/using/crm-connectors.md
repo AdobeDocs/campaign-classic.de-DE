@@ -6,14 +6,14 @@ description: Erste Schritte mit CRM-Connectoren in Campaign
 audience: platform
 content-type: reference
 topic-tags: connectors
+exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 translation-type: tm+mt
-source-git-commit: 2838ced5f5d562914c0791e6a0b8f02dd61006b4
+source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '158'
+ht-degree: 93%
 
 ---
-
 
 # CRM-Connectoren{#crm-connectors}
 
@@ -40,51 +40,5 @@ Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](.
 
 Eine schrittweise Anleitung zum Verbinden von Campaign und Microsoft Dynamics finden Sie [in diesem Abschnitt](../../platform/using/crm-ms-dynamics.md).
 
-Zur Verwendung von CRM-Connectoren in Adobe Campaign führen Sie generell folgende Schritte aus:
 
-1. Erstellen Sie ein neues externes Konto ausgehend vom Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** im Adobe Campaign-Navigationsbaum.
-1. Wählen Sie das CRM-System aus, mit dem Sie Campaign verbinden möchten.
-1. Geben Sie Einstellungen zum Aktivieren der Verbindung ein.
-1. Führen Sie den Konfigurationsassistenten aus, um die Tabelle mit verfügbaren CRMs zu generieren: Mit dem Konfigurationsassistenten können Sie Tabellen erfassen und das passende Schema erstellen.
-
-   Beispiel für den Konfigurationsassistenten **Salesforce**:
-
-   ![](assets/crm_connectors_sfdc_launch.png)
-
-   >[!NOTE]
-   >
-   >Zur Übernahme der Konfiguration müssen Sie sich von der Konsole ab- und wieder anmelden.
-
-1. Prüfen Sie unter dem Knoten **[!UICONTROL Administration > Konfiguration > Datenschema]** das in Adobe Campaign erzeugte Schema.
-
-   Beispiel für das Schema **Salesforce**:
-
-   ![](assets/crm_connectors_sfdc_table.png)
-
-1. Anschließend können Sie automatisch die Auflistungen aus dem CRM-System mit Adobe Campaign synchronisieren.
-
-   Klicken Sie hierzu auf den Link **[!UICONTROL Auflistungen synchronisieren...]** und wählen Sie die der Auflistung des CRM-Systems entsprechende Adobe-Campaign-Auflistung aus.
-
-   >[!NOTE]
-   >
-   >Sie können alle Werte einer Adobe-Campaign-Auflistung durch die des CRM-Systems ersetzen: Wählen Sie hierzu in der Spalte **[!UICONTROL Ersetzen]** die Option **[!UICONTROL Ja]**.
-
-   Beispiel für Auflistungen in **Salesforce**:
-
-   ![](assets/crm_connectors_sfdc_enum.png)
-
-   Klicken Sie abschließend auf **[!UICONTROL Weiter]** und **[!UICONTROL Starten]**, um mit dem Listenimport zu beginnen.
-
-1. Prüfen Sie die importierten Werte im Menü **[!UICONTROL Administration > Plattform > Auflistungen]**.
-
-   ![](assets/crm_connectors_sfdc_exe.png)
-
-   >[!NOTE]
-   >
-   > Auflistungen mit Mehrfachauswahl in Salesforce werden nicht unterstützt.
-
-1. Um Daten zwischen Adobe Campaign und dem CRM-System zu synchronisieren, müssen Sie einen Workflow erstellen und die Aktivität **[!UICONTROL CRM-Connector]** verwenden.
-
-   ![](assets/crm_connectors_sfdc_wf.png)
-
-   Weitere Informationen zur Datensynchronisation finden Sie [auf dieser Seite ](../../platform/using/crm-data-sync.md).
+Hier lernen Sie Schritt-für-Schritt-Anleitung zum Verbinden von Kampagne und Salesforce [in diesem Abschnitt kennen.](../../platform/using/crm-sfdc.md)
