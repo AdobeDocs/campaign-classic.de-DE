@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie die Ursachen von fehlgeschlagenen Sendungen e
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
+exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
 translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
 workflow-type: tm+mt
-source-wordcount: '2631'
-ht-degree: 99%
+source-wordcount: '2665'
+ht-degree: 98%
 
 ---
-
 
 # Ursachen von fehlgeschlagenen Sendungen{#understanding-delivery-failures}
 
@@ -263,6 +263,10 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 * **[!UICONTROL Ignorieren]**: Die Bounce Message wird vom Campaign MTA ignoriert, was bedeutet, dass diese Bounce Message nie dazu führt, dass die Adresse des Empfängers unter Quarantäne gestellt wird. Sie wird vom Workflow **Zustellbarkeit** nicht verwendet und auch nicht an Client-Instanzen gesendet.
 
 ![](assets/deliverability_qualif_status.png)
+
+>[!NOTE]
+>
+>Bei Ausfall eines ISP werden per Kampagne gesendete E-Mails fälschlicherweise als Absprünge gekennzeichnet. Um dies zu korrigieren, müssen Sie die Absprungqualifikation aktualisieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../delivery/using/update-bounce-qualification.md).
 
 ### E-Mail-Verwaltungsregeln {#email-management-rules}
 
