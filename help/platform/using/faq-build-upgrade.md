@@ -6,14 +6,14 @@ description: Häufige Fragen im Zusammenhang mit Campaign-Build-Upgrades
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 98%
 
 ---
-
 
 # Häufig gestellte Fragen zum Build-Upgrade{#build-upgrade-faq}
 
@@ -21,7 +21,7 @@ Adobe Campaign wird regelmäßig aktualisiert. Wenn Sie unsere veröffentlichten
 
 Deshalb erachten wir es als entscheidend, dass unsere Kunden stets die neueste Version von Adobe Campaign verwenden. Dadurch sind wir beim Auftreten von Problemen in der Lage, Ihnen effizient zu helfen. Denn es ist normalerweise zeitaufwändiger, einen Fehler in einem alten Build zu identifizieren, zu reproduzieren und zu beheben. Außerdem besteht die Möglichkeit, dass dieser Fehler im aktuellen Build bereits behoben wurde.
 
-[!DNL Gold Standard] ist Campaign Classic Long-Term Support Release. Als gehosteter [!DNL Gold Standard] Benutzer profitieren Sie automatisch von der [!DNL Gold Standard] Aktualisierung mit der neuesten stabilen Version ohne Aktion. Auch lokale und Hybrid-Kunden können von [!DNL Gold Standard]-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen. [Weitere Infos](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] ist Campaign Classic Long-Term Support Release. Als gehosteter [!DNL Gold Standard] Benutzer profitieren Sie automatisch von der [!DNL Gold Standard] Aktualisierung mit der neuesten stabilen Version ohne Aktion. Auch lokale und Hybrid-Kunden können von [!DNL Gold Standard]-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen. [Weitere Informationen](../../rn/using/gs-overview.md).
 
 ## Was ist ein Build-Upgrade?
 
