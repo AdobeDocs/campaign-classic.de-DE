@@ -6,18 +6,18 @@ description: Verarbeitungsdauer
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '248'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Verarbeitungsdauer{#message-center-processing-time}
 
-Dieser Bericht zeigt die wichtigsten Indikatoren für die Echtzeitwarteschlange an. Auf diesen Bericht, der sich an technische Administratoren richtet, kann auch über das Register **[!UICONTROL Monitoring]** in der Kontrollinstanz zugegriffen werden.
+Dieser Bericht zeigt die wichtigsten Indikatoren für die Echtzeit-Warteschlange an. Auf diesen Bericht, der sich an technische Administratoren richtet, kann auch über den Tab **[!UICONTROL Monitoring]** in der Kontrollinstanz zugegriffen werden.
 
 ![](assets/mc_reports_2.png)
 
