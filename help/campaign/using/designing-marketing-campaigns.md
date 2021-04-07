@@ -6,25 +6,25 @@ description: Sie können Marketing-Kampagnen entwerfen, optimieren, ausführen u
 audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '443'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Entwerfen und Ausführen von Marketing-Kampagnen{#designing-marketing-campaigns}
 
-Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert als einheitliches Orders- und Ausführungszentrum für Marketingstrategien. Weitere Informationen finden Sie unter [Kampagnen aufrufen](../../campaign/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
+Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert dabei als zentrales Befehls- und Ausführungszentrum für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Zusätzlich ergänzt das Modul **Marketing Resource Management (MRM)** diese Anwendung mit einer vollständigen Verwaltung und Echtzeitverfolgung von Aufgaben, Budgets und Marketing-Ressourcen. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung des Managements von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Lesen Sie diesbezüglich diesen [Abschnitt](../../campaign/using/about-marketing-resource-management.md).
+Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die Steuerung von Marketing-Aktionen in einem kollaborativen Modus, indem es eine vollständige Verwaltung und Echtzeitverfolgung der betreffenden Aufgaben, Budgets und Marketing-Ressourcen erlaubt. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung der Verwaltung von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Lesen Sie diesbezüglich [diesen Abschnitt](../../campaign/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
->Weitere Informationen zu den Kernfunktionen des Adobe Campaigns finden Sie im Abschnitt [dieser Abschnitt](../../platform/using/about-adobe-campaign-classic.md).\
->Die Bestimmung von Zielgruppen sowie die Personalisierung und der Versand über verschiedene Kanäle werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) beschrieben.
+>Weitere Informationen zu den Kernfunktionen von Adobe Campaign finden Sie in [diesem Abschnitt](../../platform/using/about-adobe-campaign-classic.md).\
+>Die Bestimmung von Zielgruppen sowie die Personalisierung von Nachrichten und der Versand über verschiedene Kanäle werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) beschrieben.
 
 ![](assets/do-not-localize/how-to-video.png) [Entdecken Sie die wichtigsten Konzepte von Marketing-Kampagnen im Video](#video)
 
