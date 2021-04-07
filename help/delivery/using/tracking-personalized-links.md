@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie Links in E-Mails schreiben, die personalisier
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6b81d0ea22bf9d8f33e486535b4ce02fbae7b9ae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen ei
 Durch die Verwendung von JavaScript in E-Mail-Inhalten (HTML oder Text) können Sie dynamische Inhalte mit zwei Einschränkungen generieren und an die Empfänger senden:
 
 * Das Skript kann nicht direkt auf die Datenbank zugreifen (SQL-Funktion und API-Funktionen sind nicht verfügbar),
-* Adobe Campaign muss URLs erkennen können, damit Links verfolgt werden können. [Mehr dazu](detecting-tracking-urls.md)
+* Adobe Campaign muss zum Tracken von Links URLs erkennen können. [Mehr dazu](detecting-tracking-urls.md)
 
-Sie können spezifische Anweisungen zur Vorverarbeitung hinzufügen, um die URL zu skripten und zu verfolgen. [Mehr dazu](pre-processing-instructions.md)
+Sie können spezifische Anweisungen zur Vorab-Bearbeitung hinzufügen, um die URL zu skripten und zu tracken. [Mehr dazu](pre-processing-instructions.md)
 
 Zur Tracking-Erkennung bettet Adobe Campaign [Tidy](http://www.html-tidy.org/) ein, um die HTML-Quelle zu analysieren und das Muster zu erkennen. Es werden alle URLs des Inhalts aufgelistet, damit sie einzeln verfolgt werden können. Adobe Campaign verwendet wiederum Tidy, um die URL (`http://myurl.com`) durch eine URL zu ersetzen, die auf den Weiterleitungs-Server von Adobe Campaign verweist.
 
