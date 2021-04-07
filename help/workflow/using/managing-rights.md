@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Verwalten von Workflow-Berechtigungen
-description: Erfahren Sie, wie Sie Workflow-Berechtigungen verwalten
+description: Erfahren Sie, wie Sie Workflow-Berechtigungen verwalten.
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
