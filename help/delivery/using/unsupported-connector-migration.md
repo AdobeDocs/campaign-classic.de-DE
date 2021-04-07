@@ -1,80 +1,80 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Nicht unterstützte SMS-Connector-Migration
-description: Migrieren von nicht unterstützten SMS-Connectors zum Extended Generic SMPP-Connector
+title: Migration nicht unterstützter SMS-Connectoren
+description: Migration eines nicht unterstützten SMS-Connectors zum erweiterten allgemeinen SMPP-Connector
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
+exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
 translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
+# Migration eines nicht unterstützten SMS-Connectors zum erweiterten allgemeinen SMPP-Connector{#unsupported-connector-migration}
 
-# Migrieren von nicht unterstützten SMS-Connectors zum erweiterten generischen SMPP-Connector{#unsupported-connector-migration}
-
-Ab Version 20.2 werden ältere Connectors nicht mehr unterstützt. Mit diesem Dokument können Sie Connectors migrieren, die weiterhin auf dem alten System ausgeführt werden, und den empfohlenen SMPP-Anschluss verwenden.
+Ab Version 20.2 werden alte Connectoren nicht mehr unterstützt. Mithilfe dieses Dokuments können Sie noch auf dem alten System laufende Connectoren zum empfohlenen SMPP-Connector migrieren.
 
 >[!CAUTION]
 >
->Diese Migration ist nicht obligatorisch, wird jedoch von der Adobe empfohlen und stellt sicher, dass Sie mit der neuesten unterstützten Softwareversion arbeiten.
+>Diese Migration ist nicht obligatorisch, wird aber von Adobe empfohlen und stellt sicher, dass Sie mit der neuesten unterstützten Software-Version arbeiten.
 
-## Info zu SMS-Connectors {#about-sms-connectors}
+## Über SMS-Connectoren {#about-sms-connectors}
 
-Die folgenden Connectors werden ab Version 20.2 nicht mehr unterstützt:
+Die folgenden Connectoren werden ab Version 20.2 nicht mehr unterstützt:
 
-* **[!UICONTROL Generisches SMPP]**  (SMPP Version 3.4 unterstützt Binärmodus)
+* **[!UICONTROL Allgemeines SMPP]** (SMPP-Version 3.4 mit Unterstützung für Binärmodus)
 * **[!UICONTROL Sybase365]** (SAP SMS 365)
 * **[!UICONTROL CLX Communications]**
 * **[!UICONTROL Tele2]**
 * **[!UICONTROL O2]**
 * **[!UICONTROL iOS]**
 
-Veraltete Funktionen sind weiterhin verfügbar und werden unterstützt, sie werden jedoch nicht weiter verbessert. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden.
+Veraltete Funktionen sind weiterhin verfügbar und werden unterstützt, sie werden jedoch nicht weiterentwickelt. Es wird empfohlen, den Connector **[!UICONTROL Erweitertes allgemeines SMPP]** zu verwenden.
 
-Weitere Informationen zu veralteten und entfernten Funktionen finden Sie auf dieser [Seite](../../rn/using/deprecated-features.md).
+Weiterführende Informationen zu veralteten und entfernten Funktionen finden Sie auf dieser [Seite](../../rn/using/deprecated-features.md).
 
-Alte SMS-Connectors verwenden den Java SMS-Connector, der den Webprozess überlädt. Durch die Migration auf den neuen Connector **[!UICONTROL Erweitertes generisches SMPP]** wird diese Last auf das MTA verschoben, das sie unterstützen kann.
+Alte SMS-Connectoren verwenden den Java-SMS-Connector und überlasten damit den Web-Prozess. Durch die Migration auf den neuen Connector **[!UICONTROL Erweitertes allgemeines SMPP]** wird diese Last auf den MTA verschoben, der dafür ausgelegt ist.
 
-## Migration zum Extended Generic SMPP Connector {#migrating-extended-generic-smpp}
+## Migration zum erweiterten allgemeinen SMPP-Connector {#migrating-extended-generic-smpp}
 
 >[!CAUTION]
 >
->Auch wenn Sie die Parameter implementieren können, müssen Sie bei der Konfiguration des Connectors **[!UICONTROL Erweitertes generisches SMPP]** mit Ihrem Provider sprechen, der Ihnen die Informationen gibt, die zum Ausfüllen der übrigen Parameter erforderlich sind. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
+>Sie können zwar möglicherweise Parameter übertragen, benötigen aber zur Konfiguration des Connectors **[!UICONTROL Erweitertes allgemeines SMPP]** weitere Informationen von Ihrem Provider zum Einrichten der übrigen Parameter. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
 
-Zunächst müssen Sie ein neues generisches **[!UICONTROL Extended SMPP]**-Externe Konto erstellen und dann möglicherweise einige der Parameter implementieren. Die detaillierten Schritte finden Sie auf dieser [Seite](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Zunächst müssen Sie das neue externe Konto **[!UICONTROL Erweitertes allgemeines SMPP]** erstellen. Anschließend können Sie möglicherweise einige der Parameter übertragen. Eine Anleitung mit detaillierten Schritten finden Sie auf dieser [Seite](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
 
-Sie müssen nun die Parameter aus dem Register **[!UICONTROL Mobil]** Ihres neu erstellten **[!UICONTROL Erweiterten generischen SMPP]**-Externen Kontos entsprechend Ihrem vorherigen Connector ausfüllen.
+Sie müssen nun die Parameter im Tab **[!UICONTROL Mobile]** Ihres neu erstellten externen Kontos **[!UICONTROL Erweitertes allgemeines SMPP]** entsprechend Ihrem vorherigen Connector einrichten.
 
-### Über den generischen Connector {#from-generic-connector}
+### Vom allgemeinen Connector {#from-generic-connector}
 
-Bei Auswahl des Connectors **[!UICONTROL Generisch]** sollten Sie über einen benutzerdefinierten JavaScript-Connector verfügen, der sich an jede Situation anpasst.
+Bei Auswahl des **[!UICONTROL allgemeinen]** Connectors sollten Sie über einen benutzerdefinierten JavaScript-Connector verfügen, der sich an die jeweilige Situation anpasst.
 
-Wenn Sie wissen, dass dieser Connector bereits das SMPP-Protokoll verwendet, können Sie zum **[!UICONTROL Extended Generic SMPP]** Connector migrieren. Falls nicht, fragen Sie Ihren Anbieter, ob er das SMPP-Protokoll unterstützt, und richten Sie mithilfe eines Beraters einen neuen Connector ein.
+Wenn Sie wissen, dass dieser Connector bereits das SMPP-Protokoll verwendet, können Sie zum **[!UICONTROL erweiterten allgemeinen SMPP]**-Connector migrieren. Falls nicht, erkundigen Sie sich bei Ihrem Provider, ob er das SMPP-Protokoll unterstützt, und richten Sie mithilfe eines Beraters einen neuen Connector ein.
 
-Von Ihrem **[!UICONTROL Generic]** Connector können Sie in Ihr neu erstelltes **[!UICONTROL Extended SMPP]**-Konto übertragen:
+Von Ihrem **[!UICONTROL allgemeinen]** Connector können Sie Folgendes auf Ihr neu erstelltes **[!UICONTROL erweitertes SMPP]**-Konto übertragen:
 
 ![](assets/smpp_generic.png)
 
-Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
+Im Tab **[!UICONTROL Verbindungsparameter]**:
 
 * **[!UICONTROL Konto]**
 * **[!UICONTROL Passwort]**
 * **[!UICONTROL Server]**
 * **[!UICONTROL Port]**
 
-### Aus dem generischen SMPP-Anschluss {#from-generic-smpp-connector}
+### Vom allgemeinen SMPP-Connector {#from-generic-smpp-connector}
 
-Sie können aus Ihrem **[!UICONTROL Generic SMPP]**-Connector in Ihr neu erstelltes **[!UICONTROL Extended SMPP]**-Konto übertragen:
+Von Ihrem **[!UICONTROL allgemeinen SMPP]**-Connector können Sie Folgendes auf Ihr neu erstelltes **[!UICONTROL erweitertes SMPP]**-Konto übertragen:
 
 ![](assets/smpp_generic_2.png)
 
-Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
+Im Tab **[!UICONTROL Verbindungsparameter]**:
 
 * **[!UICONTROL Konto]**
 * **[!UICONTROL Passwort]**
@@ -82,7 +82,7 @@ Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL Systemtyp]**
 
-Auf der Registerkarte **[!UICONTROL SMPP Kanal Settings]**:
+Im Tab **[!UICONTROL SMPP-Kanaleinstellungen]**:
 
 * **[!UICONTROL Anrufernummer]**
 * **[!UICONTROL Anrufer-NPI]**
@@ -90,22 +90,22 @@ Auf der Registerkarte **[!UICONTROL SMPP Kanal Settings]**:
 * **[!UICONTROL Anrufer-TON]**
 * **[!UICONTROL Empfänger-TON]**
 
-Auf der Registerkarte **[!UICONTROL Zuordnung der Kodierung]**:
+Im Tab **[!UICONTROL Kodierungs-Mapping]**:
 
-* **[!UICONTROL Ausgehende SMS-Kodierung]**
+* **[!UICONTROL Kodierung ausgehender SMS]**
 
-Auf der Registerkarte **[!UICONTROL SMSC-Eigenschaften]**:
+Im Tab **[!UICONTROL SMSC-Besonderheiten]**:
 
-* **[!UICONTROL Code beim]** Senden entspricht dem  **[!UICONTROL ID-Format in MT-Bestätigung]**
-* **[!UICONTROL Code beim]** Empfang entspricht dem  **[!UICONTROL ID-Format im SR]**
+* **[!UICONTROL Kodierung bei Versand]** entspricht dem **[!UICONTROL ID-Format in der MT-Quittierung (resp)]**
+* **[!UICONTROL Kodierung bei Versand]** entspricht dem **[!UICONTROL ID-Format im SR]**
 
 ### Vom Sybase365-Connector {#from-sybase}
 
-Von Ihrem **[!UICONTROL Sybase365]**-Connector aus können Sie das neu erstellte **[!UICONTROL Extended SMPP]**-Konto in Ihr neu erstelltes  übertragen:
+Von Ihrem **[!UICONTROL Sybase365]**-Connector können Sie Folgendes auf Ihr neu erstelltes **[!UICONTROL erweitertes SMPP]**-Konto übertragen:
 
 ![](assets/smpp_3.png)
 
-Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
+Im Tab **[!UICONTROL Verbindungsparameter]**:
 
 * **[!UICONTROL Konto]**
 * **[!UICONTROL Passwort]**
@@ -113,13 +113,13 @@ Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL Systemtyp]**
 
-### Von CLX Connector {#from-clx}
+### Vom CLX-Connector {#from-clx}
 
-Vom **[!UICONTROL CLX]**-Connector aus können Sie das neu erstellte **[!UICONTROL Extended SMPP]**-Konto in Ihr neu erstelltes -Konto übertragen:
+Von Ihrem **[!UICONTROL CLX]**-Connector können Sie Folgendes auf Ihr neu erstelltes **[!UICONTROL erweitertes SMPP]**-Konto übertragen:
 
 ![](assets/smpp_4.png)
 
-Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
+Im Tab **[!UICONTROL Verbindungsparameter]**:
 
 * **[!UICONTROL Konto]**
 * **[!UICONTROL Passwort]**
@@ -127,22 +127,22 @@ Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL Systemtyp]**
 
-Auf der Registerkarte **[!UICONTROL SMPP Kanal Settings]**:
+Im Tab **[!UICONTROL SMPP-Kanaleinstellungen]**:
 
 * **[!UICONTROL Anrufernummer]**
 
-Auf der Registerkarte **[!UICONTROL SMSC-Eigenschaften]**:
+Im Tab **[!UICONTROL SMSC-Besonderheiten]**:
 
-* **[!UICONTROL Code beim]** Senden entspricht dem  **[!UICONTROL ID-Format in MT-Bestätigung]**
-* **[!UICONTROL Code beim]** Empfang entspricht dem  **[!UICONTROL ID-Format im SR]**
+* **[!UICONTROL Kodierung bei Versand]** entspricht dem **[!UICONTROL ID-Format in der MT-Quittierung (resp)]**
+* **[!UICONTROL Kodierung bei Versand]** entspricht dem **[!UICONTROL ID-Format im SR]**
 
-### Über den Tele2-Anschluss {#from-tele2}
+### Vom Tele2-Connector {#from-tele2}
 
-Von Ihrem **[!UICONTROL Tele2]**-Connector können Sie auf Ihr neu erstelltes **[!UICONTROL Extended SMPP]**-Konto übertragen:
+Von Ihrem **[!UICONTROL Tele2]**-Connector können Sie Folgendes auf Ihr neu erstelltes **[!UICONTROL erweitertes SMPP]**-Konto übertragen:
 
 ![](assets/smpp_6.png)
 
-Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
+Im Tab **[!UICONTROL Verbindungsparameter]**:
 
 * **[!UICONTROL Konto]**
 * **[!UICONTROL Passwort]**
@@ -150,24 +150,24 @@ Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL Systemtyp]**
 
-Auf der Registerkarte **[!UICONTROL SMPP Kanal Settings]**:
+Im Tab **[!UICONTROL SMPP-Kanaleinstellungen]**:
 
 * **[!UICONTROL Anrufernummer]**
 * **[!UICONTROL Anrufer-NPI]**
 * **[!UICONTROL Empfänger-NPI]**
 * **[!UICONTROL Anrufer-TON]**
 
-Auf der Registerkarte **[!UICONTROL Zuordnung der Kodierung]**:
+Im Tab **[!UICONTROL Kodierungs-Mapping]**:
 
-* **[!UICONTROL Ausgehende SMS-Kodierung]**
+* **[!UICONTROL Kodierung ausgehender SMS]**
 
-### Vom O2-Anschluss {#from-O2}
+### Vom O2-Connector {#from-O2}
 
-Von Ihrem **[!UICONTROL O2]**-Connector können Sie in Ihr neu erstelltes **[!UICONTROL Extended SMPP]**-Konto übertragen:
+Von Ihrem **[!UICONTROL O2]**-Connector können Sie Folgendes auf Ihr neu erstelltes **[!UICONTROL erweitertes SMPP]**-Konto übertragen:
 
 ![](assets/smpp_5.png)
 
-Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
+Im Tab **[!UICONTROL Verbindungsparameter]**:
 
 * **[!UICONTROL Konto]**
 * **[!UICONTROL Passwort]**
@@ -175,7 +175,7 @@ Auf der Registerkarte **[!UICONTROL Verbindungseinstellungen]**:
 * **[!UICONTROL Port]**
 * **[!UICONTROL Systemtyp]**
 
-Auf der Registerkarte **[!UICONTROL SMPP Kanal Settings]**:
+Im Tab **[!UICONTROL SMPP-Kanaleinstellungen]**:
 
 * **[!UICONTROL Anrufernummer]**
 * **[!UICONTROL Anrufer-NPI]**
