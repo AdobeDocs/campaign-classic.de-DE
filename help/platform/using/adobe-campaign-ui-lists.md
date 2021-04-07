@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Listen verwalten und anpassen
-description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren
+title: Verwalten und Anpassen von Listen
+description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1198'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Verwalten und Anpassen von Listen{#manage-and-customize-lists}
 
-Sie können mit dem Explorer auf die Listen von Datensätzen in der Kampagnen-Datenbank zugreifen. Sie können diese Listen filtern, Suchvorgänge ausführen, Informationen hinzufügen, Daten filtern und sortieren.
+Sie können mit dem Explorer auf die Listen von Datensätzen in der Campaign-Datenbank zugreifen. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 
-## Datensätze zählen {#counting-records}
+## Zählen von Datensätzen {#counting-records}
 
 Standardmäßig lädt Adobe Campaign die 200 ersten Datensätze einer Liste in den Arbeitsspeicher. Dies bedeutet, dass eventuell nicht alle Datensätze einer Tabelle angezeigt werden. Sie haben die Möglichkeit, die Anzahl an Datensätzen einer Liste zu zählen und zusätzliche Datensätze in den Arbeitsspeicher zu laden.
 
@@ -29,7 +29,7 @@ Im rechten unteren Bereich der Listenanzeige zeigt ein **[!UICONTROL Zähler]** 
 
 Wenn anstelle der Gesamtzahl ein &quot;**?**&quot; angezeigt wird, können Sie durch Klick auf das Feld die Gesamtzahl abrufen.
 
-### Weitere Datensätze {#loading-more-records} laden
+### Laden von weiteren Datensätzen {#loading-more-records}
 
 Verwenden Sie die Schaltfläche **[!UICONTROL Weiter laden]**, um mehr als die standardmäßigen 200 Datensätze zu laden (und anzuzeigen).
 
@@ -47,11 +47,11 @@ Verwenden Sie zur Änderung der Anzahl standardmäßig geladener Datensätze die
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Klicken Sie im Konfigurationsfenster der Liste auf **[!UICONTROL Erweiterte Parameter]** (unten links) und ändern Sie die Anzahl der abzurufenden Zeilen.
+Im Listenkonfigurationsfenster können Sie dann durch Klicken auf **[!UICONTROL Erweiterte Parameter]** (unten links) die Anzahl der abzurufenden Zeilen ändern.
 
 ![](assets/s_ncs_user_configurelist_advancedparam.png)
 
-## Listen {#configuring-lists} konfigurieren
+## Konfigurieren von Listen {#configuring-lists}
 
 ### Spalten hinzufügen {#add-columns}
 
@@ -82,7 +82,7 @@ Eine weitere Möglichkeit zum Hinzufügen von Spalten besteht im Listenkonfigura
    >
    >Die Titel werden nach Tabellen geordnet und innerhalb der Tabellen in alphabetischer Reihenfolge angezeigt.
    >
-   >Mithilfe des Feldes **Suchen** können Sie die Auswahl der verfügbaren Felder einschränken. Weiterführende Informationen erfahren Sie in [diesem Abschnitt](#sorting-a-list).
+   >Mithilfe des Feldes **Suchen** können Sie die Auswahl der verfügbaren Felder einschränken. Weiterführende Informationen erhalten Sie in [diesem Abschnitt](#sorting-a-list).
    >
    >Die Art der Felder (SQL-Felder, verknüpfte Tabellen, berechnete Felder usw.) wird durch verschiedene Symbole verdeutlicht. Für das jeweils ausgewählte Feld wird unter der Liste der verfügbaren Felder die entsprechende Beschreibung angezeigt. [Weitere Informationen](#configuring-lists).
    >
@@ -122,7 +122,7 @@ Wiederholen Sie dies für jede Spalte, die ausgeblendet werden soll, und klicken
 
 Bei aktiven Listen (d. h. mit mindestens einer ausgewählten Zeile) ermöglicht die F9-Taste die Anpassung der Spaltenbreite an die Bildschirmgröße, sodass alle Spalten angezeigt werden.
 
-### Daten in Unterordnern {#display-sub-folders-records} anzeigen
+### Anzeigen von Daten in Unterordnern {#display-sub-folders-records}
 
 Bei Listen stehen zwei verschiedene Anzeigemodi zur Verfügung:
 
@@ -133,7 +133,7 @@ Klicken Sie auf **[!UICONTROL Unterordner anzeigen]** in der Symbolleiste, um zw
 
 ![](assets/s_ncs_user_display_children_icon.png)
 
-## Speichern einer Liste-Konfiguration {#saving-a-list-configuration}
+## Speichern einer Listenkonfiguration {#saving-a-list-configuration}
 
 Die Konfigurationen von Listen werden lokal auf Arbeitsplatzebene definiert. Wenn der lokale Cache geleert wird, werden die lokalen Konfigurationen deaktiviert.
 
@@ -163,7 +163,7 @@ Wählen Sie im Fenster der Ordnereigenschaften **[!UICONTROL Speichern]** aus, u
 
 ![](assets/s_ncs_user_folder_save_config_5.png)
 
-## Eine Liste {#exporting-a-list} exportieren
+## Exportieren einer Liste {#exporting-a-list}
 
 Zum Export von Listendaten steht Ihnen der Export-Assistent zur Verfügung. Markieren Sie die zu exportierenden Datensätze und klicken Sie mit der rechten Maustaste auf die Liste. Wählen Sie dann im Kontextmenü die Option **[!UICONTROL Exportieren...]**.
 
