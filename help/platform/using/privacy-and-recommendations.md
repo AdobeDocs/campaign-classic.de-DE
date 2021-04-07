@@ -6,9 +6,9 @@ description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 660b9ad4351fe611d99962f2b163858b1f70bc84
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2038'
 ht-degree: 100%
 
