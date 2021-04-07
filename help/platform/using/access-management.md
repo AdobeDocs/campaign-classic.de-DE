@@ -2,18 +2,18 @@
 solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Berechtigungen
-description: Erfahren Sie, wie Sie den Zugriff auf die Funktionen der Kampagne gewähren
+description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
 feature: Zugriffsverwaltung
-role: Geschäftspraktiker, Administrator
-level: Anfänger
+role: Business Practitioner, Administrator
+level: Beginner
+exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 63%
+source-wordcount: '255'
+ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit Berechtigungen{#access-management}
 
@@ -25,13 +25,13 @@ Adobe Campaign ermöglicht es, die den unterschiedlichen Benutzern zugeteilten R
 
 Die Rechte können sowohl für einzelne Benutzerprofile als auch Benutzergruppen gelten.
 
-Sie werden durch Sicherheitsparameter ergänzt, die mit dem Verbindungsmodus des Betreibers mit dem Adobe Campaign verbunden sind. Weitere Informationen zu Sicherheitszonen in [dieser Seite](../../installation/using/security-zones.md).
+Sie werden durch Sicherheitsparameter ergänzt, die mit dem vom Benutzer zur Verbindung mit Adobe Campaign verwendeten Modus verknüpft sind. Weitere Informationen zu Sicherheitszonen finden Sie auf [dieser Seite](../../installation/using/security-zones.md).
 
 Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können:
 
-* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen und Benutzer zuordnen. Diese Vorgehensweise ermöglicht eine gemeinsame Nutzung der Rechte und eine Vereinheitlichung der Benutzerprofile. Zudem wird auf diese Weise die Verwaltung der Profile vereinfacht. Gruppenerstellung und -verwaltung werden in [diesem Abschnitt](access-management-groups.md) vorgestellt.
+* Sie können Benutzergruppen bestimmen, denen Sie Berechtigungen einräumen und Benutzer zuordnen. Diese Vorgehensweise ermöglicht eine gemeinsame Nutzung der Rechte und eine Vereinheitlichung der Benutzerprofile. Zudem wird auf diese Weise die Verwaltung der Profile vereinfacht. Die Erstellung und Verwaltung von Gruppen wird in [diesem Abschnitt](access-management-groups.md) näher beschrieben.
 
-* Sie können den Benutzern direkt spezifische Berechtigungen einräumen, gegebenenfalls, um über Gruppen eingeräumte Berechtigungen zu überschreiben. Diese Rechte werden in [dieser Seite](access-management-named-rights.md) angezeigt.
+* Sie können den Benutzern direkt spezifische Berechtigungen einräumen, gegebenenfalls, um über Gruppen eingeräumte Berechtigungen zu überschreiben. Diese Rechte werden auf [dieser Seite](access-management-named-rights.md) näher beschrieben.
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Es gibt zwei Arten von Berechtigungen, die einem Benutzer erteilt werden können
 
 In den folgenden Abschnitten erfahren Sie, wie Sie Zugriff gewähren und Berechtigungen einrichten:
 
-* [Operatoren erstellen](access-management-operators.md)
+* [Benutzer erstellen](access-management-operators.md)
 
 * [Gruppen definieren](access-management-groups.md)
 
-* [hinzufügen Spezifische Berechtigungen](access-management-named-rights.md)
+* [Spezifische Berechtigungen hinzufügen](access-management-named-rights.md)
 
-* [Zugriff auf Kampagnen verwalten](access-management-folders.md)
+* [Zugriff auf Campaign-Ordner verwalten](access-management-folders.md)
 
 * [Matrix der Zugriffsberechtigungen](access-management-named-rights.md#access-rights-matrix)
 
@@ -55,5 +55,5 @@ Siehe auch:
 * [Berechtigungen für Workflows verwalten](../../workflow/using/managing-rights.md)
 * [Berechtigungen für verteiltes Marketing verwalten](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
 * [Berechtigungen für das Interaktionsmodul verwalten](../../interaction/using/operator-profiles.md)
-* [Filterzugriff auf Schema](../../configuration/using/filtering-schemas.md)
+* [Filterzugriff auf Schemata](../../configuration/using/filtering-schemas.md)
 * [Einschränkung der PI-Ansicht](../../configuration/using/restricting-pii-view.md)
