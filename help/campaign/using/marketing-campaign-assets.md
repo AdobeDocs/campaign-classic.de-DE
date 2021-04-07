@@ -1,35 +1,35 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Dokumente und Versandentwurf der Marketing-Kampagne
-description: Weitere Informationen zu Dokumenten und Versandentwürfen von Marketing-Kampagnen
+title: Dokumente und Versandentwürfe für Marketing-Kampagnen
+description: Weitere Informationen zu Dokumenten und Versandentwürfen für Marketing-Kampagnen
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 
-# Zugehörige Dokumente {#managing-associated-documents} verwalten
+# Verwalten der zugehörigen Dokumente {#managing-associated-documents}
 
 Sie können einer Kampagne verschiedene Dokumente zuordnen: Berichte, Fotos, Webseiten, Diagramme usw. Diese Dokumente können in jedem beliebigen Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.).
 
 >[!IMPORTANT]
 >
->Diese Funktion ist für kleine Assets und Dokumente reserviert.
+>Diese Funktion ist für kleine Assets und Dokumente vorgesehen.
 
-In einer Kampagne können Sie auch auf andere Artikel, wie z.B. Promo-Gutscheine, besondere Angebote in Bezug auf eine bestimmte Marke oder ein Geschäft, usw. verweisen. Wenn diese Elemente in einer Umrisslinie enthalten sind, können sie mit einem Versand für Direktwerbung verknüpft werden. Siehe [Verknüpfen und Strukturieren von Ressourcen, die über einen Versandentwurf](#associating-and-structuring-resources-linked-via-a-delivery-outline) verknüpft sind.
+In einer Kampagne können Sie auch auf andere Elemente verweisen, wie z. B. Werbegutscheine oder Sonderangebote in Bezug auf eine bestimmte Marke oder ein bestimmtes Geschäft usw. Wenn diese Elemente in einem Entwurf enthalten sind, können sie einem Briefpost-Versand zugeordnet werden. Lesen Sie diesbezüglich [Ressourcen in einem Versandentwurf verknüpfen](#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
 >[!NOTE]
 >
->Wenn Sie das Kampagne Marketing-Ressource Management-Modul verwenden, können Sie auch eine Bibliothek mit Marketing-Ressourcen verwalten, die mehreren Benutzern für die Zusammenarbeit zur Verfügung stehen. [Weitere Informationen](../../campaign/using/managing-marketing-resources.md).
+>Das Marketing Resource Management-Modul von Campaign ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer zusammenarbeiten können. [Weitere Informationen](../../campaign/using/managing-marketing-resources.md).
 
-## hinzufügen Dokumente {#adding-documents}
+## Dokumente hinzufügen {#adding-documents}
 
 Dokumente können einer Kampagne (kontextrelevante Dokumente) oder einem Programm (allgemeine Dokumente) zugeordnet werden.
 
@@ -56,19 +56,19 @@ Im Abschnitt **[!UICONTROL Dokument(e)]** des Kampagnen-Dashboards werden alle d
 
 Über die Links können die Dokumente geöffnet und bearbeitet werden.
 
-## Verknüpfen und Strukturieren von Ressourcen, die über einen Versandentwurf {#associating-and-structuring-resources-linked-via-a-delivery-outline} verknüpft sind
+## Ressourcen in einem Versandentwurf verknüpfen {#associating-and-structuring-resources-linked-via-a-delivery-outline}
 
 >[!NOTE]
 >
->Versandentwürfe werden ausschließlich im Rahmen von Briefversand-Kampagnen verwendet.
+>Versandentwürfe werden ausschließlich im Rahmen von Briefpost-Kampagnen verwendet.
 
-Ein Versandentwurf bezeichnet einen strukturierten Elementsatz (Dokumente, Geschäfte, Werbecoupons usw.) erstellt von der Firma und für eine bestimmte Kampagne.
+Ein Versandentwurf kennzeichnet einen strukturierten Satz von Elementen (Dokumente, Geschäfte, Werbegutscheine usw.), der vom Unternehmen für eine bestimmte Kampagne erstellt wurde.
 
-Diese Elemente sind in Versandentwurf gruppiert und jeder Versandentwurf wird mit einem Versand verknüpft. Es wird in der an den **Dienstleister** gesendeten Extraktion referenziert, um an den Versand angehängt zu werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Verzweigung und die verwendeten Marketingbroschüren bezieht.
+Diese Elemente sind in Versandentwürfen gruppiert und jedem Versandentwurf wird ein Versand zugeordnet. Auf diesen Versand wird in der an den **Dienstleister** gesendeten Extraktionsdatei verwiesen, um an den Versand angehängt zu werden. Sie können beispielsweise einen Versandentwurf erstellen, der sich auf eine Filiale und die von ihr verwendeten Marketing-Prospekte bezieht.
 
-Versandentwürfe ermöglichen es, in Kampagnen externe Elemente zu strukturieren, die einem Versand nach bestimmten Kriterien hinzugefügt werden: bewilligtes Sonderangebot, Einladung zu einem lokalen Event etc.
+Versandentwürfe ermöglichen es, in Kampagnen externe Elemente zu strukturieren, die einem Versand nach bestimmten Kriterien hinzugefügt werden: zugehörige Filiale, bewilligtes Sonderangebot, Einladung zu einem lokalen Event usw.
 
-### Erstellen eines Umrisses {#creating-an-outline}
+### Erstellen eines Versandentwurfs {#creating-an-outline}
 
 Um einen Versandentwurf zu erstellen, klicken Sie auf den Untertab **[!UICONTROL Versandentwürfe]** im Tab **[!UICONTROL Bearbeiten > Dokumente]** der betreffenden Kampagne.
 
@@ -76,7 +76,7 @@ Um einen Versandentwurf zu erstellen, klicken Sie auf den Untertab **[!UICONTROL
 >
 >Sollte dieser Tab nicht vorhanden sein, ist die Funktionalität für diese Kampagne nicht verfügbar. Überprüfen Sie in diesem Fall die Konfiguration der Kampagnenvorlage.
 >   
->Weitere Informationen zu Vorlagen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
+>Weiterführende Informationen zu Vorlagen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
 ![](assets/s_ncs_user_op_composition_link.png)
 
@@ -98,15 +98,15 @@ Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebot
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Die Ressourcen sind Marketing-Ressourcen, die im Dashboard Marketing-Ressource generiert werden, auf das über den Link **[!UICONTROL Resources]** der Registerkarte **[!UICONTROL Kampagnen]** zugegriffen wird.
+* Ressourcen sind Marketing-Ressourcen, auf die Sie über die Startseite durch Klicken auf die Schaltfläche **[!UICONTROL Ressourcen]** im Tab **[!UICONTROL Kampagnen]** zugreifen können.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
    >[!NOTE]
    >
-   >Weitere Informationen zu Marketing-Ressourcen finden Sie in [diesem Abschnitt](../../campaign/using/managing-marketing-resources.md).
+   >Weiterführende Informationen zu Marketing-Ressourcen finden Sie in [diesem Abschnitt](../../campaign/using/managing-marketing-resources.md).
 
-### Auswählen eines Umrisses {#selecting-an-outline}
+### Auswählen eines Versandentwurfs {#selecting-an-outline}
 
 Sie können für jeden Versand über den Bereich der Extraktionskonfiguration einen Entwurf auswählen, wie im folgenden Beispiel:
 
@@ -132,4 +132,4 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 
 >[!NOTE]
 >
->Weitere Informationen zu Exporten finden Sie im Abschnitt [dieser Abschnitt](../../platform/using/get-started-data-import-export.md).
+>Weiterführende Informationen zu Exporten finden Sie in [diesem Abschnitt](../../platform/using/get-started-data-import-export.md).
