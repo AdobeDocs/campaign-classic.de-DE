@@ -6,16 +6,16 @@ description: '"Anwendungsbeispiele: Übersichten erstellen"'
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Anwendungsfälle: Übersichtsseiten erstellen{#use-cases-creating-overviews}
+# Anwendungsfälle: Übersichtsseiten erstellen {#use-cases-creating-overviews}
 
 Im folgenden Beispiel werden Webanwendungen vom Typ &quot;Übersicht&quot; erstellt, in denen alle Webanwendungen in Ihrer Datenbank angezeigt werden. Konfigurieren Sie dazu die folgenden Elemente:
 
