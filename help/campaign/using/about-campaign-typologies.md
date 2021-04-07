@@ -6,9 +6,9 @@ description: Über Kampagnentypologien
 audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '509'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Bei der Versandvorbereitung werden diejenigen Empfänger ausgeschlossen, die das
 
 ### Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln
 
-In diesem Video wird erläutert, wie man die Ermüdungsverwaltung in Adobe Campaign mithilfe von Typologieregeln implementiert.
+In diesem Video wird erläutert, wie die Ermüdungsverwaltung in Adobe Campaign mithilfe von Typologieregeln implementiert wird.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25090?quality=12)
 
