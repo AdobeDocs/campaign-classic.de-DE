@@ -6,30 +6,30 @@ description: Marketing-Kampagnenvorlagen
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1168'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 
 # Erstellen und Konfigurieren von Kampagnenvorlagen {#campaign-templates}
 
-Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und Funktionen gespeichert werden. Kampagnenvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Kampagnenvorlagen]** zentralisiert. Eine leere Vorlage ist standardmäßig vorhanden. Sie ermöglicht die Erstellung einer neuen Kampagne, die alle verfügbaren Module enthält (Dokumente, Aufgaben, Testadressen usw.). Die vorgeschlagenen Module hängen von den Berechtigungen und Konfigurationen Ihrer Adobe-Campaign-Plattform ab.
+Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und -funktionen gespeichert sind. Kampagnenvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Kampagnenvorlagen]** gespeichert. Hierbei handelt es sich um Standardvorlagen. Sie ermöglichen die Erstellung einer neuen Kampagne unter Verwendung aller verfügbarer Module (Dokumente, Aufgaben, Testadressen usw.). Die vorgeschlagenen Module hängen von Ihren Berechtigungen und der Konfiguration Ihrer Adobe Campaign-Plattform ab.
 
 ![](assets/s_ncs_user_campaign_op_template_node.png)
 
 >[!NOTE]
 >
->Um den Navigationsbaum anzuzeigen, klicken Sie auf das Symbol **[!UICONTROL Explorer]** oberhalb der Startseite.
+>Um den Navigationsbaum anzuzeigen, klicken Sie auf das Symbol **[!UICONTROL Explorer]** auf der Startseite.
 
-Es wird eine integrierte Vorlage bereitgestellt, um eine Kampagne zu erstellen, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
+Es wird eine native Vorlage bereitgestellt, mit der Sie eine Kampagne erstellen können, für die keine bestimmte Konfiguration definiert wurde. Sie können Ihre Kampagnenvorlagen erstellen und konfigurieren und dann Kampagnen aus diesen Vorlagen erstellen.
 
 ![](assets/do-not-localize/how-to-video.png) Weitere Informationen zur Erstellung von Kampagnen finden Sie in [diesem Video](../../campaign/using/marketing-campaign-deliveries.md#create-email-video).
 
-## Eine Kampagnenvorlage {#creating-or-duplicating-a-campaign-template} erstellen
+## Erstellen einer Kampagnenvorlage {#creating-or-duplicating-a-campaign-template}
 
 Gehen Sie wie folgt vor, um eine Kampagnenvorlage zu erstellen:
 
@@ -57,19 +57,19 @@ Gehen Sie wie folgt vor, um eine Kampagnenvorlage zu erstellen:
 1. Erstellen Sie Ihren Workflow entsprechend Ihren Anforderungen.
 1. Klicken Sie auf **Speicher** n. Ihre Vorlage kann jetzt in einer Kampagne verwendet werden.
 
-Sie können die Standardvorlage auch **Duplikat** verwenden, um sie erneut zu verwenden und ihre Konfiguration anzupassen.
+Es besteht auch die Möglichkeit, die Standardvorlage zu **duplizieren** und ihre Konfiguration zu verwenden und anzupassen.
 
 Die unterschiedlichen Tabs und Unter-Tabs der Kampagnenvorlage ermöglichen den Zugriff auf die Einstellungen. Sie werden im Abschnitt [Allgemeine Konfiguration](#general-configuration) beschrieben.
 
 ![](assets/s_ncs_user_new_op_template_duplicate.png)
 
-## Module {#select-modules} auswählen
+## Auswählen von Modulen {#select-modules}
 
-Die Einstellungen für die erweiterte Kampagne...Über den ]**-Link können Sie Aufträge für die Kampagnen aktivieren und deaktivieren, die auf dieser Vorlage basieren.**[!UICONTROL  Wählen Sie die Funktionen aus, die Sie in den auf der Grundlage dieser Vorlage erstellten Kampagnen aktivieren möchten.
+Über den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** können Sie Vorgänge für die auf dieser Vorlage basierenden Kampagnen aktivieren und deaktivieren. Wählen Sie die Funktionen aus, die Sie in den über diese Vorlage erstellten Kampagnen aktivieren möchten.
 
 ![](assets/s_ncs_user_op_template_tab1.3.png)
 
-Wenn keine Funktion ausgewählt ist, beziehen sich die Elemente auf den Prozess (Menüs, Symbole, Optionen, Registerkarten, Unterregisterkarten usw.) wird nicht in der Benutzeroberfläche der Vorlage oder in Kampagnen angezeigt, die auf dieser Vorlage basieren. Die Registerkarten links neben den Details zur Kampagne entsprechen in der Regel den in der Vorlage ausgewählten Prozessen. Wenn beispielsweise **Ausgaben und Ziele** nicht ausgewählt ist, wird die entsprechende Registerkarte **[!UICONTROL Budget]** nicht in Kampagnen angezeigt, die auf dieser Vorlage basieren.
+Wenn eine Funktion nicht ausgewählt ist, werden die den Prozess betreffenden Elemente (Menüs, Symbole, Optionen, Tabs, Unter-Tabs usw.) nicht auf der Benutzeroberfläche der Vorlage oder in den auf dieser Vorlage basierenden Kampagnen angezeigt. Die Tabs links von den Kampagnendetails entsprechen in der Regel den in der Vorlage ausgewählten Prozessen. Wenn beispielsweise **Ausgaben und Budget** nicht ausgewählt ist, wird der entsprechende Tab **[!UICONTROL Budget]** nicht in Kampagnen angezeigt, die auf dieser Vorlage basieren.
 
 Im Dashboard der Kampagne werden zudem Verknüpfungen zu den Konfigurationsfenstern hinzugefügt: Wenn eine Funktionalität aktiviert ist, besteht über einen Link im Dashboard direkter Zugriff auf diese.
 
@@ -93,7 +93,7 @@ werden diese Links und Tabs angezeigt:
 
 ![](assets/s_ncs_user_op_template_tab2.3ex.png)
 
-## Typologie der Module {#typology-of-enabled-modules}
+## Typologie von Modulen {#typology-of-enabled-modules}
 
 * **Kontrollgruppe**
 
@@ -109,19 +109,19 @@ werden diese Links und Tabs angezeigt:
 
 * **Dokumente**
 
-   Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab im Tab **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Dokumente können über die Vorlage oder direkt in den einzelnen Kampagnen hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
+   Wenn dieses Modul ausgewählt wird, wird ein zusätzlicher Tab im Tab **[!UICONTROL Bearbeiten]** der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt. Angehängte Dokumente können über die Vorlage oder direkt in den einzelnen Kampagnen hinzugefügt werden. Weitere Informationen zu Dokumenten finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents).
 
    ![](assets/s_ncs_user_op_template_activate_3.png)
 
 * **Versandentwurf**
 
-   Wenn dieses Modul ausgewählt wird, wird dem Tab **[!UICONTROL Dokumente]** ein Untertab **[!UICONTROL Versandentwürfe]** hinzugefügt, um für die Kampagne unterschiedliche Entwürfe zu erstellen. Weitere Informationen zu Versandentwürfen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
+   Wenn dieses Modul ausgewählt wird, wird dem Tab **[!UICONTROL Dokumente]** der Unter-Tab **[!UICONTROL Versandentwürfe]** hinzugefügt, um für die Kampagne unterschiedliche Versandentwürfe zu erstellen. Weitere Informationen zu Versandentwürfen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
    ![](assets/s_ncs_user_op_template_activate_4.png)
 
-* **Zielbestimmungen und Workflows**
+* **Zielgruppenbestimmungen und Workflows**
 
-   Wenn Sie das Modul **[!UICONTROL Targeting und Workflows]** auswählen, wird eine Registerkarte hinzugefügt, mit der Sie eine oder mehrere Workflows für Kampagnen erstellen können, die auf dieser Vorlage basieren. Workflows können auch einzeln für jede Kampagne auf Grundlage dieser Vorlage konfiguriert werden.Weitere Informationen zu Kampagnen-Workflows finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
+   Wenn das Modul **[!UICONTROL Zielgruppenbestimmungen und Workflows]** ausgewählt wird, wird ein Tab zum Erstellen eines oder mehrerer Workflows für Kampagnen hinzugefügt, die auf dieser Vorlage basieren. Workflows können auch auf Basis dieser Vorlage einzeln für jede Kampagne konfiguriert werden. Weitere Informationen zu Kampagnen-Workflows finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
    ![](assets/s_ncs_user_op_template_activate_5.png)
 
@@ -131,7 +131,7 @@ werden diese Links und Tabs angezeigt:
 
 * **Validierung**
 
-   Wenn das Modul **[!UICONTROL Validierung]** ausgewählt wird, können Sie zu validierende Prozesse sowie validierungsverantwortliche Benutzer bestimmen. Weitere Informationen zu Genehmigungen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
+   Wenn das Modul **[!UICONTROL Validierung]** ausgewählt wird, können Sie zu validierende Prozesse sowie validierungsverantwortliche Benutzer bestimmen. Weitere Informationen zu Validierungen finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-approval.md#selecting-reviewers).
 
    ![](assets/s_ncs_user_op_template_activate_5b.png)
 
@@ -139,9 +139,9 @@ werden diese Links und Tabs angezeigt:
 
    Jeder aktivierten Validierung muss ein validierender Benutzer oder eine validierende Benutzergruppe zugewiesen werden.
 
-* **Ausgaben und Ziele**
+* **Ausgaben und Budget**
 
-   Wenn dieses Modul ausgewählt wird, wird der Tab **[!UICONTROL Budget]** den Details der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt, um das übergeordnete Budget auszuwählen.
+   Wenn dieses Modul ausgewählt wird, wird der Tab **[!UICONTROL Budget]** den Details der Vorlage und der auf dieser Vorlage basierenden Kampagnen hinzugefügt, damit das zugehörige Budget ausgewählt werden kann.
 
    ![](assets/s_ncs_user_op_template_activate_7.png)
 
@@ -173,9 +173,9 @@ Bei der Erstellung einer Kampagnenvorlage ist die Angabe folgender Informationen
 
 ![](assets/s_ncs_user_op_template_tab1.2.png)
 
-## Ausführung der Kampagne verfolgen{#campaign-reverse-scheduling}
+## Tracken der Kampagnenausführung{#campaign-reverse-scheduling}
 
-Sie können einen Zeitplan für eine Kampagne erstellen und Errungenschaften verfolgen, um beispielsweise einen Zeitplan für ein bestimmtes Ereignis vorzubereiten. Mit Kampagnenvorlagen können Sie jetzt das Datum des Beginns einer Aufgabe basierend auf dem Enddatum einer Kampagne berechnen.
+Sie können einen Zeitplan für eine Kampagne erstellen und Ergebnisse tracken, um beispielsweise ein gewisses Ereignis für ein bestimmtes Datum zu planen. Mit Kampagnenvorlagen können Sie jetzt das Anfangsdatum einer Aufgabe anhand des Enddatums einer Kampagne berechnen.
 
 Aktivieren Sie hierzu im Konfigurationsfenster der Aufgabe im Abschnitt **[!UICONTROL Erfüllungsplanung]** die Option **[!UICONTROL Das Startdatum wird vom Enddatum der Kampagne aus berechnet]** (&quot;Startdatum&quot; meint hier den Zeitpunkt, an dem mit der Bearbeitung der Aufgabe begonnen werden soll). Geben Sie im Feld **[!UICONTROL Start]** ein Intervall ein: Die Aufgabe beginnt entsprechend lange vor dem Enddatum der Kampagne. Wenn Sie einen längeren Zeitraum als die Dauer der Kampagne angeben, liegt der Aufgabenanfang vor dem Kampagnenbeginn.
 
