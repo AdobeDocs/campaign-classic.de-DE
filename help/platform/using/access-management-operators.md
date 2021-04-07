@@ -1,23 +1,23 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Erste Schritte mit Kampagnen-Operatoren
-description: Erfahren Sie, wie Sie Kampagnen erstellen und verwalten
+title: Erste Schritte mit Campaign-Benutzern
+description: Erfahren Sie, wie Sie Campaign-Benutzer erstellen und verwalten.
 feature: Zugriffsverwaltung
-role: Geschäftspraktiker, Administrator
-level: Anfänger
+role: Business Practitioner, Administrator
+level: Beginner
+exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 97%
+source-wordcount: '1213'
+ht-degree: 100%
 
 ---
 
+# Erstellen und Verwalten von Benutzern {#operators}
 
-# Operatoren erstellen und verwalten {#operators}
-
-## Erste Schritte mit den Kampagnen-Operatoren {#about-operators}
+## Erste Schritte mit Campaign-Benutzern {#about-operators}
 
 Ein Benutzer ist ein Benutzer von Adobe Campaign, der die Berechtigung besitzt, sich anzumelden und Aktionen durchzuführen.
 
@@ -37,7 +37,7 @@ Auf [dieser Seite](../../installation/using/connecting-through-ldap.md) finden S
 
 Benutzer können auch über ihre Adobe ID eine direkt Verbindung mit Adobe Campaign herstellen. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../integrations/using/about-adobe-id.md).
 
-## Erstellen eines Operators {#creating-an-operator}
+## Erstellen eines Benutzers {#creating-an-operator}
 
 Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen zu erteilen:
 
@@ -77,7 +77,7 @@ Wenn das Benutzerprofil erstellt wurde, können darin enthaltende Informationen 
 >
 >Im Feld **[!UICONTROL Sitzungs-Timeout]** können Sie die Verzögerung vor dem Timeout der FDA-Sitzung anpassen. Weitere Informationen finden Sie unter [Über Federated Data Access - FDA](../../installation/using/about-fda.md).
 
-## Definieren der Zeitzone des Operators {#time-zone-of-the-operator}
+## Definieren der Zeitzone des Benutzers {#time-zone-of-the-operator}
 
 Im Tab **[!UICONTROL Allgemein]** können Sie die Zeitzone des Benutzers auswählen. Standardmäßig arbeiten die Benutzer in der Zeitzone des Servers. Es ist jedoch möglich, über die Dropdown-Liste eine andere Zeitzone auszuwählen.
 
@@ -91,7 +91,7 @@ Die Konfiguration der Zeitzonen wird auf [dieser Seite](../../installation/using
 
 Zusätzlich können Sie aus der Dropdown-Liste **[!UICONTROL Regionale Parameter]** das Format auswählen, in dem das Datum und Zahlen dargestellt werden sollen.
 
-## hinzufügen Berechtigungen {#access-rights-options}
+## Hinzufügen von Berechtigungen {#access-rights-options}
 
 Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordneten Gruppen und spezifischen Berechtigungen aktualisiert werden.
 
@@ -127,7 +127,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
    >
    >Es handelt sich um eine die Anzeige betreffende Einschränkung, die mit Vorsicht angewandt werden sollte. Der mit dieser Art von Berechtigung angemeldete Benutzer sieht tatsächlich NUR den Inhalt des angegebenen Ordners und kann auf keinen anderen Verzeichnisknoten zugreifen. Je nach Funktionen, auf die er Zugriff hat (z. B. Workflows), kann es jedoch möglich sein, dass Daten angezeigt werden, die in Knoten enthalten sind, die normalerweise für ihn nicht verfügbar sind.
 
-### Prüfeinstellungen {#check-settings}
+### Überprüfen von Einstellungen {#check-settings}
 
 Im Tab **[!UICONTROL Verfolgung]** können detaillierte Informationen über den Benutzer eingesehen werden. Die unterschiedlichen Tabs werden automatisch entsprechend den festgelegten Einstellungen und den Einsatzbereichen des Benutzers angereichert.
 
