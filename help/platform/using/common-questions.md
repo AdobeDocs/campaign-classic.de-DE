@@ -6,14 +6,14 @@ description: Häufig gestellte Fragen zu Adobe Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
+exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 97%
 
 ---
-
 
 # Häufige Fragen{#common-questions}
 
@@ -75,4 +75,3 @@ Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschi
 Adobe nutzt das Domain Name System (DNS) für den E-Mail-Versand. Dadurch kann der Kunde seinen Markenauftritt beibehalten, indem ein DNS-Alias mit seinem Domain-Namen verwendet wird, und Adobe kann autonom alle technischen Best Practices umsetzen, um die Zustellbarkeit von E-Mails zu optimieren.
 
 [Hier erfahren Sie mehr darüber](https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html).
-
