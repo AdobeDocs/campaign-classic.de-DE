@@ -6,11 +6,11 @@ description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1552'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ Die Dateiextraktion startet zwei Vorgänge: die Berechnung der Budgets und die B
 
 ## Zugeordnete Dokumente verwalten {#managing-associated-documents}
 
-Sie können einer Kampagne unterschiedliche Dokumente zuordnen: Berichte, Fotos, Web-Seiten, Schemata etc. Die Dokumente können beliebigen Formats sein (Microsoft Word, PowerPoint, PNG, JPEG, Acrobat PDF etc.). Erfahren Sie, wie Sie Dokumente mit einer Kampagne [in diesem Abschnitt](../../campaign/using/marketing-campaign-assets.md) verknüpfen.
+Sie können einer Kampagne unterschiedliche Dokumente zuordnen: Berichte, Fotos, Web-Seiten, Schemata etc. Die Dokumente können beliebigen Formats sein (Microsoft Word, PowerPoint, PNG, JPEG, Acrobat PDF etc.). [In diesem Abschnitt](../../campaign/using/marketing-campaign-assets.md) erfahren Sie, wie Sie Dokumente mit einer Kampagne verknüpfen.
 
 >[!IMPORTANT]
 >
@@ -199,7 +199,7 @@ Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebot
 
    ![](assets/s_ncs_user_op_add_composition_field_button.png)
 
-* Die Ressourcen sind Marketing-Ressourcen, die im Dashboard Marketing-Ressource generiert werden, auf das über den Link **[!UICONTROL Resources]** der Registerkarte **[!UICONTROL Kampagnen]** zugegriffen wird.
+* Ressourcen sind Marketing-Ressourcen, auf die Sie über die Startseite durch Klicken auf die Schaltfläche **[!UICONTROL Ressourcen]** im Tab **[!UICONTROL Kampagnen]** zugreifen können.
 
    ![](assets/s_ncs_user_mkg_resource_ovv.png)
 
@@ -237,7 +237,7 @@ Die Exportvorlage muss dem gewählten Dienstleister für den betreffenden Versan
 
 #### Anleitungsvideo {#create-email-video}
 
-In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign erläutert.
+In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
