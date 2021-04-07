@@ -6,16 +6,16 @@ description: '"Anwendungsbeispiel: ein Freunde-Werben-Formular erstellen"'
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '624'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Verwendungsfall: Erstellen eines Verweisformulars{#use-case-creating-a-refer-a-friend-form}
+# Anwendungsfall: Erstellen eines Empfehlungsformulars{#use-case-creating-a-refer-a-friend-form}
 
 In diesem Beispiel soll den in der Datenbank befindlichen Empfängern ein Gewinnspiel angeboten werden. Das Webformular soll einen Bereich zur Eingabe der Antworten besitzen und einen anderen zur Eingabe der E-Mail-Adresse eines Freundes.
 
