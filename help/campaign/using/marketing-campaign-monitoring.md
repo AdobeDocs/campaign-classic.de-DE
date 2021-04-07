@@ -6,18 +6,18 @@ description: Überwachen von Marketing-Kampagnen
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# Überwachung der Marketing-Kampagnen {#monitoring-marketing-campaigns}
+# Überwachen von Marketing-Kampagnen {#monitoring-marketing-campaigns}
 
-## Verfolgen einer Kampagne {#tracking-a-campaign}
+## Tracken einer Kampagne {#tracking-a-campaign}
 
 In jeder Kampagne können über den Tab **[!UICONTROL Verfolgung]** die ausgeführten Prozesse sowie ihre Status eingesehen werden. Die Informationen sind in diverse Untertabs eingeteilt.
 
@@ -49,7 +49,7 @@ Um den Status eines Versands zu überprüfen, öffnen Sie diesen. Im Dashboard u
 
 >[!NOTE]
 >
->Informationen zu den Details zum Versand finden Sie im Abschnitt [dieses Abschnitts](../../delivery/using/about-message-tracking.md).
+>Informationen zu Versanddetails finden Sie in [diesem Abschnitt](../../delivery/using/about-message-tracking.md).
 
 ## Verarbeitung verfolgen {#execution-tracking}
 
