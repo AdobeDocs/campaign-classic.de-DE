@@ -6,11 +6,11 @@ description: Berichtanzeige konfigurieren
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Der Zugriff auf den Bericht kann auf einen bestimmten Kontext oder eine Platzier
 
 * **[!UICONTROL Einfach-Auswahl]**: Der Bericht ist nur bei Auswahl einer bestimmten Entität zugänglich.
 * **[!UICONTROL Mehrfach-Auswahl]**: Der Bericht ist bei Auswahl mehrerer Entitäten zugänglich.
-* **[!UICONTROL Global]** : Der Zugriff auf den Bericht erfolgt über die Liste der verfügbaren Berichte in der  **** Reportstab.
+* **[!UICONTROL Allgemein]**: Der Bericht ist über die Liste der verfügbaren Berichte im Tab **[!UICONTROL Berichte]** zugänglich.
 
 ### Anzeigereihenfolge {#display-sequence}
 
@@ -63,7 +63,7 @@ Der Bericht kann auch mit bestimmten Benutzern oder Benutzergruppen geteilt werd
 
 ### Filteroptionen definieren {#defining-the-filtering-options}
 
-Auf der Registerkarte **[!UICONTROL Berichte]** werden alle verfügbaren Berichte auf der Plattform angezeigt, für die der verbundene Operator über eine Zugriffsberechtigung verfügt.
+Im Tab **[!UICONTROL Berichte]** werden alle in der Plattform verfügbaren Berichte anzeigt, auf die der angemeldete Benutzer Zugriff hat.
 
 Sie werden standardmäßig nach Relevanz sortiert, es stehen jedoch andere Filtertypen zur Verfügung: nach Alphabet, Alter etc.
 
