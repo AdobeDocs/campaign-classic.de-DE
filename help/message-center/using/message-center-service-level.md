@@ -6,18 +6,18 @@ description: Dienstqualität
 audience: message-center
 content-type: reference
 topic-tags: reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
 # Dienstqualität{#message-center-service-level}
 
-Dieser Bericht zeigt die Versand-Statistiken zu Transaktionsnachrichten sowie die Fehleraufschlüsselung an. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen. Auf diesen Bericht, der sich an technische Administratoren richtet, kann auch über das Register **[!UICONTROL Monitoring]** in der Kontrollinstanz zugegriffen werden.
+Dieser Bericht enthält die Versandstatistiken zu Transaktionsnachrichten sowie die Fehleraufschlüsselung. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen. Auf diesen Bericht, der sich an technische Administratoren richtet, kann auch über den Tab **[!UICONTROL Monitoring]** in der Kontrollinstanz zugegriffen werden.
 
 ![](assets/mc_reports_1.png)
 
