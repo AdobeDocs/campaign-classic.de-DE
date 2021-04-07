@@ -6,26 +6,26 @@ description: Erfahren Sie mehr über Anweisungen zur Vorab-Bearbeitung, mit dene
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8aab4bc23d688aa225cfc636936cf2835840e410
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '642'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # Anweisungen zur Vorab-Bearbeitung {#pre-processing-instructions}
 
-Sie können eine bestimmte Syntax im Inhalt des Versands verwenden, um Anweisungen hinzuzufügen und die URL der verfolgten E-Mail zu skripten. Die &lt;%@-Anweisungen sind nicht JavaScript: Diese Syntax ist spezifisch für Adobe Campaign.
+Sie können eine bestimmte Syntax im Versandinhalt verwenden, um Anweisungen hinzuzufügen und die URL der getrackten E-Mail zu skripten. Die Anweisungen &quot;&lt;%@&quot; sind keine JavaScript-Anweisungen. Diese Syntax ist spezifisch für Adobe Campaign.
 
 Sie gelten nur im Zusammenhang mit dem Versandinhalt. Dies ist die einzige Möglichkeit, die URL einer E-Mail zu skripten und dennoch zu tracken (neben URL-Parametern). Sie können als ein automatisches Kopieren/Einfügen betrachtet werden, das während der Versandanalyse angewendet wird, bevor die zu trackenden Links erkannt werden.
 
 Es gibt drei Arten von Anweisungen:
 
-* **[!DNL include]**: hauptsächlich um Code in Optionen, Gestaltungsbausteinen, externen Dateien oder Seiten hervorzuheben. [Mehr dazu](#include)
-* **[!DNL value]**: , um Zugriff auf die Felder des Versands, Versand- und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden. [Mehr dazu](#value)
-* **[!DNL foreach]**: um ein Array zu wiederholen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
+* **[!DNL include]**: hauptsächlich zur Strukturierung von Code-Abschnitten nach Optionen, Gestaltungsbausteinen, externen Dateien oder Seiten. [Mehr dazu](#include)
+* **[!DNL value]**: um Zugriff auf die Felder des Versands, Versandvariablen und benutzerdefinierte Objekte zu gewähren, die im Versand geladen werden. [Mehr dazu](#value)
+* **[!DNL foreach]**: um eine Schleife über das Array auszuführen, das als benutzerdefiniertes Objekt geladen wird. [Mehr dazu](#foreach)
 
 Sie können direkt vom Versand-Assistenten aus getestet werden. Sie gelten in der Inhaltsvorschau und wenn Sie auf die Tracking-Schaltfläche klicken, um die Liste der URLs anzuzeigen.
 
@@ -33,7 +33,7 @@ Sie können direkt vom Versand-Assistenten aus getestet werden. Sie gelten in de
 
 Die folgenden Beispiele gehören zu den am häufigsten verwendeten:
 
-* Link zur Mirror-Seite einschließen:
+* Link zur Mirrorseite einbinden:
 
    ```
    <%@ include view="MirrorPage" %>  
@@ -45,7 +45,7 @@ Die folgenden Beispiele gehören zu den am häufigsten verwendeten:
    View as a <a href="<%@ include view='MirrorPageUrl' %>" _label="Mirror Page" _type="mirrorPage">web page.
    ```
 
-* Vordefinierte Abmelde-URL:
+* Native Abmelde-URL:
 
    ```
    <%@ include option='NmsServer_URL' %>/webApp/unsub?id=<%= escapeUrl(recipient.cryptedId)%>
@@ -73,20 +73,20 @@ Syntax:
 
 Wobei:
 
-* **[!DNL object]**: Name des Objekts (Beispiel: Versand, Anbieter usw.).
+* **[!DNL object]**: Name des Objekts (Beispiel: &quot;delivery&quot;, &quot;provider&quot; usw.).
 Objekt kann sein:
    * **[!DNL delivery]**: für den aktuellen Versand (siehe Details und Einschränkungen im Unterabschnitt unten).
-   * **[!DNL provider]**: für den aktuellen Versand-Provider/Routing (nms:externalAccount).
+   * **[!DNL provider]**: für den aktuellen Versand-Provider bzw. das aktuelle Versand-Routing (nms:externalAccount).
    * Ein zusätzliches Skriptobjekt: wenn ein Objekt im Kontext geladen wird: **Eigenschaften** > **Personalisierung** > **Objekte im Ausführungskontext hinzufügen**.
    * Element der foreach-Schleife: siehe Abschnitt [Foreach](#foreach) weiter unten.
-* **[!DNL xpath]**: xpath des Felds.
-* **[!DNL index]** (optional): Wenn  **[!DNL object]** es sich um ein Array handelt (für zusätzliche Skriptobjekte), Elementindex im Array (Beginn bei 0).
+* **[!DNL xpath]**: Pfad (XPath) des Felds.
+* **[!DNL index]** (optional): wenn **[!DNL object]** ein Array ist (für zusätzliche Skriptobjekte), Elementindex im Array (beginnt bei 0).
 
-### [!DNL delivery] object {#delivery-object}
+### [!DNL delivery] Objekt {#delivery-object}
 
 Für die E-Mail-Personalisierung kann auf zwei Arten auf das &quot;delivery&quot;-Objekt zugegriffen werden:
 
-* JavaScript verwenden:
+* Mittels JavaScript:
 
    ```
    <%= delivery.myField %>`.
@@ -94,7 +94,7 @@ Für die E-Mail-Personalisierung kann auf zwei Arten auf das &quot;delivery&quot
 
    Im Objektversand in JavaScript werden benutzerdefinierte Felder nicht unterstützt. Sie funktionieren in der Vorschau, jedoch nicht im MTA, da der MTA nur auf das vorkonfigurierte Versandschema zugreifen kann.
 
-* Vorverarbeitung:
+* Mittels Vorab-Bearbeitung:
 
    ```
    <%@ value object="delivery"
@@ -103,7 +103,7 @@ Für die E-Mail-Personalisierung kann auf zwei Arten auf das &quot;delivery&quot
 
 **Vorsicht**
 
-Wenn Sie die folgende Anweisung für per Mid-Sourcing gesendete Versand verwenden, muss das benutzerdefinierte Feld **@myCustomField** auf Marketing- und Mid-Sourcing-Plattformen dem Schema nms:Versand hinzugefügt werden:
+Wenn Sie die folgende Anweisung für den Versand per Mid-Sourcing verwenden, muss das benutzerdefinierte Feld **@myCustomField** auf Marketing- und Mid-Sourcing-Plattformen dem Schema &quot;nms:delivery&quot; hinzugefügt werden:
 
 ```
 <%@ value object="delivery" xpath="@myCustomField" %>
@@ -115,9 +115,9 @@ Verwenden Sie für Versandparameter/-variablen die folgende Syntax (unter Verwen
 <%@ value object="delivery" xpath="variables/var[@name='myVar']/@stringValue" %>
 ```
 
-### [!DNL value] in einem Javascript-Abschnitt  {#value-in-javascript}
+### [!DNL value] in einem JavaScript-Abschnitt {#value-in-javascript}
 
-Damit der Wert &lt;%@ in Javascript-Abschnitten verwendet werden kann, werden zwei Sonderobjekte durch &lt;% und %> ersetzt:
+Damit der Wert &quot;&lt;%@&quot; in JavaScript-Abschnitten verwendet werden kann, werden zwei Sonderobjekte durch &quot;&lt;%&quot; und &quot;%>&quot; ersetzt:
 
 ```
 <%@ value object='startScript' %>
@@ -144,7 +144,7 @@ Syntax:
 Wobei:
 
 * **[!DNL object]**: Name des Objekts, von dem aus gestartet werden soll, normalerweise ein zusätzliches Skriptobjekt, es kann sich jedoch auch um einen Versand handeln.
-* **[!DNL xpath]** (optional): xpath der Sammlung, die als Schleife verwendet werden soll. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, über das eine Schleife ausgeführt werden soll.
+* **[!DNL xpath]** (optional): Pfad (XPath) der Kollektion, über die eine Schleife ausgeführt werden soll. Der Standardwert ist &quot;.&quot;, d. h., das Objekt ist das Array, über das eine Schleife ausgeführt werden soll.
 * **[!DNL index]** (optional): wenn &quot;xpath&quot; nicht &quot;.&quot; und &quot;object&quot; selbst ein Array ist, Elementindex des Objekts (beginnt bei 0).
 * **[!DNL item]** (optional): Name eines neuen Objekts, auf das mit dem Wert &quot;&lt;%@&quot; innerhalb der foreach-Schleife zugegriffen werden kann. Standardeinstellung mit dem Link-Namen im Schema.
 
