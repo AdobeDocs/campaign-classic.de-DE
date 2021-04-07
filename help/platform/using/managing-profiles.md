@@ -6,14 +6,14 @@ description: Profile verwalten
 audience: platform
 content-type: reference
 topic-tags: profile-management
+exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
-
 
 # Verwalten von Profilen{#managing-profiles}
 
@@ -48,4 +48,3 @@ Löschen Sie den Ordnerinhalt, indem Sie mit der rechten Maustaste auf den entsp
 Klicken Sie auf **[!UICONTROL Starten]**, um den Vorgang zu beginnen. Eine Statusleiste zeigt den Bearbeitungsfortschritt an:
 
 ![](assets/s_ncs_user_purge_folder_start.png)
-
