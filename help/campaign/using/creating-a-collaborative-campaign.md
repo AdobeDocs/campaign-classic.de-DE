@@ -6,11 +6,11 @@ description: Partizipative Kampagne erstellen
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Gehen Sie in den Tab **[!UICONTROL Bearbeiten]** und klicken Sie auf den Link **
 
 Wählen Sie den Web-Schnittstellentyp **Standardformular** aus. Dieser Schnittstellentyp ermöglicht die Erstellung von Personalisierungsfeldern, die von den Lokalstellen bei der Kampagnenbestellung genutzt werden können. Siehe [Lokale Kampagne erstellen (Standardformular)](../../campaign/using/examples.md#creating-a-local-campaign--by-form-).
 
-Speichern Sie Ihre Kampagne. Sie können sie jetzt über die Ansicht **Kampagne packages** auf der Registerkarte **Kampagne** verwenden, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
+Speichern Sie Ihre Kampagne. Sie steht Ihnen nun in der Ansicht **Kampagnenkits** im Tab **Kampagnen** zur Verfügung, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
 
 Die **[!UICONTROL Kampagnenkit]**-Liste ermöglicht Ihnen die Verwendung von lokalen Kampagnenvorlagen (native oder duplizierte) sowie Referenzkampagnen für partizipative Kampagnen. So können Sie Kampagnen für unterschiedliche Unternehmenseinheiten erstellen.
 
@@ -117,7 +117,7 @@ Gehen Sie wie folgt vor:
 1. Geben Sie die Referenzkampagne an.
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen       {#dates}
+### Datum-Funktionen        {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
