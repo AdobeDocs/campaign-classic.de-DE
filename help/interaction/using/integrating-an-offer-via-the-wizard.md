@@ -6,11 +6,11 @@ description: Integration über den Assistenten
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Die Einbindung von Angeboten in Marketingkampagnen geschieht innerhalb von klass
 
 ![](assets/offer_delivery_009.png)
 
-Weitere Informationen zu den Versänden für Direktwerbung [finden Sie in diesem Abschnitt](../../delivery/using/about-direct-mail-channel.md). Weitere Informationen zu Marketing-Kampagnen [finden Sie in diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md).
+Weitere Informationen zum Briefpost-Versand finden Sie [in diesem Abschnitt](../../delivery/using/about-direct-mail-channel.md). Weiterführende Informationen zu Marketing-Kampagnen finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md).
 
 ### Angebote in Sendungen einschließen {#main-steps-for-inserting-an-offer-into-a-delivery}
 
