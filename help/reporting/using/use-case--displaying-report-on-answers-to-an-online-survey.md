@@ -6,16 +6,16 @@ description: '"Anwendungsbeispiel: Bericht zu Antworten auf eine Online-Umfrage 
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Verwendungsfall: Bericht zu Antworten auf eine Online-Umfrage anzeigen{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Anwendungsfall: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 Die Antworten auf Adobe-Campaign-Fragebögen können abgerufen und in dedizierten Berichten analysiert werden.
 
