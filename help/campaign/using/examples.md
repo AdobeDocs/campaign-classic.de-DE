@@ -6,11 +6,11 @@ description: Beispiele
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1374'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -161,7 +161,7 @@ Nach den Validierungen kann die Kampagne automatisch beginnen.
 
 #### Kampagne veröffentlichen {#publishing-the-campaign}
 
-Sie können jetzt ein **Kampagne-Paket** aus der Registerkarte **[!UICONTROL Kampagnen]** hinzufügen.
+Fügen Sie nun über den Tab **[!UICONTROL Kampagnen]** ein **Kampagnenkit** hinzu.
 
 1. Wählen Sie Ihre **[!UICONTROL Referenzkampagne]** aus. Im Tab **[!UICONTROL Bearbeiten]** des Kits können Sie den **[!UICONTROL Validierungsmodus]** für Ihre Kampagne wählen:
 
