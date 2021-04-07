@@ -6,16 +6,16 @@ description: Über die Berichterstellung in Campaign
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Wichtige Schritte zum Erstellen eines Berichts{#about-reports-creation-in-campaign}
+# Wichtige Schritte zur Erstellung eines Berichts{#about-reports-creation-in-campaign}
 
 Um Statistiken über Daten Ihrer Campaign-Datenbank zu erzeugen, können Sie Berichte erstellen und ihren Inhalt sowie ihre Darstellung nach Bedarf anpassen. Die Berichte können gegebenenfalls mit anderen Benutzern geteilt werden.
 
