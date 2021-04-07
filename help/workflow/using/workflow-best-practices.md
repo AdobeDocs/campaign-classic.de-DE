@@ -6,11 +6,11 @@ description: Machen Sie sich mit Best Practices bei Campaign-Workflows vertraut.
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1655'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Kreuzen Sie in den **[!UICONTROL Workflow-Eigenschaften]** im Produktionsmodus n
 
 ![](assets/wf-execute-in-engine.png)
 
-## Workflow-Eigenschaften       {#workflow-properties}
+## Workflow-Eigenschaften        {#workflow-properties}
 
 ### Workflow-Ordner {#workflow-folders}
 
@@ -120,7 +120,7 @@ Wählen Sie dazu in den Workflow-Eigenschaften eine Gruppe von Supervisoren. Die
 
 Bestimmen Sie zu Beginn der Workflow-Erstellung Workflow-Supervisoren. Diese werden bei Fehlern per E-Mail informiert. Weitere Informationen hierzu finden Sie unter [Fehler beheben](../../workflow/using/monitoring-workflow-execution.md#managing-errors).
 
-Überprüfen Sie regelmäßig die Registerkarte **[!UICONTROL Überwachung]**, um den Gesamtstatus des aktiven Workflows Ansicht. Weitere Informationen hierzu finden Sie unter [Instanz-Monitoring](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
+Überprüfen Sie regelmäßig den Tab **[!UICONTROL Monitoring]**, um den Gesamtstatus der aktiven Workflows anzuzeigen. Weitere Informationen hierzu finden Sie unter [Instanz-Monitoring](../../workflow/using/monitoring-workflow-execution.md#instance-supervision).
 
 Die Workflow-Heatmap ermöglicht den Administratoren der Adobe Campaign-Plattform, die Auslastung der Instanz zu überwachen und Workflows entsprechend zu planen. Weitere Informationen dazu finden Sie unter [Workflow-Monitoring](../../workflow/using/heatmap.md).
 
