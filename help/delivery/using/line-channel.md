@@ -6,16 +6,16 @@ description: LINE-Kanal
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 14513d5ecbfdd5637b764c8f19bc01358e63c130
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1163'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# LINE-Versand erstellen{#line-channel}
+# Erstellung eines LINE-Versands{#line-channel}
 
 LINE ist ein kostenfreier Dienst für Instant Messaging, VoIP und Video, der auf Smartphones (iPhone, Android, Windows Phone, BlackBerry, Nokia) und auf PC genutzt werden kann. Adobe Campaign ermöglicht Ihnen den Versand von LINE-Nachrichten.
 
@@ -153,7 +153,7 @@ Dabei können folgende Elemente verwendet werden:
 >
 >Die Syntax &lt;%@ include option=&#39;NmsServer_URL&#39; %>/webApp/APP3?id=&lt;%=escapeUrl(cryptString(visitor.id))%> ermöglicht es, einen WebApp-Link in eine LINE-Nachricht einzuschließen.
 
-### Empfehlungen    {#recommendations}
+### Empfehlungen     {#recommendations}
 
 * Wenn Sie einen LINE-Versand erstmals an einen neuen Empfänger senden, sind Sie verpflichtet, die offizielle LINE-Mitteilung hinzuzufügen, in der die Nutzungsbedingungen sowie die Einverständniserklärung enthalten sind. Der offizielle Text ist unter folgendem Link verfügbar: [https://terms.line.me/OA_privacy/](https://terms.line.me/OA_privacy/sp?lang=fr).
 
