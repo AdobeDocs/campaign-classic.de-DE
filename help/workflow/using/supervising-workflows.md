@@ -6,16 +6,16 @@ description: Erfahren Sie, wie Sie Campaign-Workflows überwachen.
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '647'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Verwendungsfall: überwachen Sie Ihre Workflows{#supervising-workflows}
+# Anwendungsfall: Überwachen Ihrer Workflows{#supervising-workflows}
 
 Dieses Anwendungsbeispiel zeigt die Erstellung eines Workflows zur Überwachung einer Reihe von Workflows. Abgefragt werden Workflows mit den Status &quot;ausgesetzt&quot;, &quot;angehalten&quot; und &quot;fehlgeschlagen&quot;.
 
