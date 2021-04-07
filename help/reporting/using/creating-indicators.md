@@ -6,11 +6,11 @@ description: Cubes erstellen
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '751'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Nach der Konfiguration des Cubes kann er als Vorlage für einen neuen Bericht ve
 
 Gehen Sie dazu wie folgt vor:
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]** der Registerkarte **[!UICONTROL Berichte]** und wählen Sie die soeben erstellte Cube aus.
+1. Klicken Sie im Tab **[!UICONTROL Berichte]** auf die Schaltfläche **[!UICONTROL Erstellen]** und wählen Sie den zuvor erstellten Cube aus.
 
    ![](assets/s_advuser_cube_wz_14.png)
 
