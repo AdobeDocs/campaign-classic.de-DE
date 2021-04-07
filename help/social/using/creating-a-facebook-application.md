@@ -6,11 +6,11 @@ description: Erstellen einer Facebook-Anwendung
 audience: social
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Die Konfiguration stellt sich wie folgt dar:
 
 Mit der Facebook-Anwendung von Adobe Campaign können Sie personalisierte Inhalte in Ihrer Facebook-Anwendung anzeigen. Für jede Facebook-Anwendung müssen Sie eine Webanwendung in Adobe Campaign erstellen. Erstellen einer Facebook-Webanwendung:
 
-1. Wechseln Sie zur Registerkarte **[!UICONTROL Soziale Netzwerke]**, klicken Sie auf den Link **[!UICONTROL Anwendungen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]**.
+1. Wechseln Sie zum Tab **[!UICONTROL Soziale Netzwerke]**, klicken Sie auf den Link **[!UICONTROL Anwendungen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
    ![](assets/social_webapp_001.png)
 
