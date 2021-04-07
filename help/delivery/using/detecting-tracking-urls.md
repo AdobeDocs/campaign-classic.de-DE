@@ -1,16 +1,16 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Tracking-URLs erkennen
-description: Erfahren Sie mehr über die empfohlenen Muster zum Tracking von URLs
+title: Erkennen von Tracking-URLs
+description: Erfahren Sie mehr über die empfohlenen Muster zum Tracken von URLs.
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 768fe62db4efd1217c22973c7e5dc31097d67bae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Nach der Verarbeitung der `<%@`-Anweisungen hat die zu verfolgende URL die folge
 
 ## Ungesichertes Muster
 
-Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich mögliche Sicherheitslücken verhindern. Weiterführende Informationen finden Sie auf [dieser Seite](../../installation/using/privacy.md#url-personalization).
+Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich potenzielle Sicherheitslücken verhindern. Weiterführende Informationen finden Sie auf [dieser Seite](../../installation/using/privacy.md#url-personalization).
 
-Die `<a href="http://<%=myURL%>">`-Syntax lautet beispielsweise **nicht secure** und muss vermieden werden.
+Die Syntax `<a href="http://<%=myURL%>">` ist beispielsweise **nicht sicher** und muss vermieden werden.
 
 * Die Verwendung dieser Syntax kann zu Sicherheitsproblemen führen, wenn der von Adobe Campaign generierte Link einen oder mehrere Parameter enthält.
 * Tidy kann einige der Links fälschlicherweise patchen, was zufällig passieren kann. Das typische Symptom ist ein HTML-Element, das in den E-Mail-Testsendungen sichtbar ist, nicht jedoch in der Vorschau.
