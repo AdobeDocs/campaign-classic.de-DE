@@ -6,11 +6,11 @@ description: Über die Angebotssimulation
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Um zu erfahren, wie Sie ein Angebot simulieren können, lesen Sie die folgenden 
 
 Gehen Sie wie folgt vor, um eine Angebotssimulation zu erstellen:
 
-1. Klicken Sie auf der Registerkarte **[!UICONTROL Profile und Zielgruppen]** auf den Link **[!UICONTROL Simulationen]** und klicken Sie dann auf die Schaltfläche **[!UICONTROL Erstellen]**.
+1. Klicken Sie im Tab **[!UICONTROL Profile und Zielgruppen]** auf die Schaltfläche **[!UICONTROL Simulationen]** und anschließend auf **[!UICONTROL Erstellen]**.
 
    ![](assets/offer_simulation_001.png)
 
