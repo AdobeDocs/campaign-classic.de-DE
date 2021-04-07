@@ -6,11 +6,11 @@ description: Abonnements verwalten
 audience: delivery
 content-type: reference
 topic-tags: subscriptions-and-referrals
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Drei verschiedene Anmelde- bzw. Abmeldemodi stehen zur Auswahl:
 
 Sie haben die Möglichkeit, Abonnements für Informationsdienste zu erstellen und zu verwalten und ihnen Bestätigungsnachrichten oder andere automatische Mitteilungen zuzuordnen.
 
-Um auf die Zuordnung von Informationsdiensten zuzugreifen, öffnen Sie die Registerkarte **[!UICONTROL Profile und Zielgruppen]** und klicken Sie auf den Link **[!UICONTROL Dienste und Abonnement]**.
+Der Tab **[!UICONTROL Profile und Zielgruppen]** bietet unter dem Link **[!UICONTROL Dienste und Abonnements]** eine Übersicht über alle existierenden Informationsdienste.
 
 ![](assets/s_ncs_user_services_new.png)
 
