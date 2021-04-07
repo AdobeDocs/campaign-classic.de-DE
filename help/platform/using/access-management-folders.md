@@ -1,33 +1,33 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Zugriff auf Kampagnen-Ordner verwalten
-description: Erfahren Sie, wie Sie Zugriff auf Kampagnen-Ordner gewähren und Ansichten erstellen
+title: Zugriff auf Campaign-Ordner verwalten
+description: Erfahren Sie, wie Sie Zugriff auf Campaign-Ordner gewähren und Ansichten erstellen.
 feature: Anwendungseinstellungen
-role: Geschäftspraktiker, Administrator
-level: Anfänger
+role: Business Practitioner, Administrator
+level: Beginner
+exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
 translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 88%
+source-wordcount: '777'
+ht-degree: 98%
 
 ---
 
-
 # Zugriff auf Ordner verwalten{#folder-access-management}
 
-Jeder Ordner der Explorer-Navigationsstruktur hat Lese-, Schreib- und Löschzugriffsrechte. Um auf eine Datei zugreifen zu können, muss ein Operator oder eine Benutzergruppe zumindest über Lesezugriff verfügen.
+Jeder Ordner des Explorer-Navigationsbaums verfügt über Lese-, Schreib- und Löschzugriffsrechte. Um auf eine Datei zugreifen zu können, muss ein Benutzer oder eine Benutzergruppe zumindest über Lesezugriff verfügen.
 
 ## Ordner und Ansichten {#folders-and-views}
 
 ### Was ist ein Ordner {#about-folders}
 
-Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit der rechten Maustaste über das Menü **[!UICONTROL Ordner hinzufügen]** im Verzeichnis erstellt. Anschließend kann der zu erstellende Ordnertyp ausgewählt werden. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
+Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit einem Klick der rechten Maustaste auf den Baum über das Menü **[!UICONTROL Ordner hinzufügen]** erstellt. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
 
 ![](assets/s_ncs_user_add_folder_in_tree.png)
 
-Sie können die Navigationsstruktur des Explorers anpassen. Erfahren Sie mehr über Konfigurationsschritte und Best Practices [in diesem Abschnitt](adobe-campaign-workspace.md).
+Sie können den Navigationsbaum des Explorers anpassen. Erfahren Sie [in diesem Abschnitt](adobe-campaign-workspace.md) mehr über Konfigurationsschritte und Best Practices.
 
 ### Was ist eine Ansicht {#about-views}
 
@@ -80,7 +80,7 @@ werden folgende Sendungen in der Ansicht angezeigt:
 
 
 
-## Berechtigungen in einem Ordner
+## Berechtigungen für einen Ordner
 
 ### Berechtigungen für einen Ordner bearbeiten {#edit-permissions-on-a-folder}
 
