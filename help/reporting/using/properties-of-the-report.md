@@ -6,11 +6,11 @@ description: Weiterführende Informationen zu den Einstellungen der Berichteigen
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '462'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Mögliche Optionen sind:
 
 * **[!UICONTROL Anonymer Zugriff]**: Diese Option bietet uneingeschränkten Zugriff auf den Bericht. Eine Bearbeitung ist jedoch nicht möglich.
 
-   Die Berechtigungen des technischen Betreibers &quot;webapp&quot;werden zur Anzeige von Berichtselementen verwendet. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../platform/using/access-management-operators.md).
+   Die Anzeige der Berichtelemente hängt von den Berechtigungen des technischen &quot;webapp&quot;-Benutzers ab. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../platform/using/access-management-operators.md).
 
 * **[!UICONTROL Zugriffskontrolle]**: Diese Option bietet Adobe Campaign-Benutzern nach der Anmeldung Zugriff auf den Bericht.
 * **[!UICONTROL Spezifisches Konto nutzen]**: Diese Option ermöglicht die Ausführung des Berichts mit den Berechtigungen des im Feld **[!UICONTROL Benutzer]** ausgewählten Benutzers.
