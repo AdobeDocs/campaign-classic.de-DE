@@ -6,11 +6,11 @@ description: Verwaltung von Ressourcen
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1442'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Status, Verlauf und aktuelle Version der über Adobe Campaign verwalteten Market
 
 ## Hinzufügung von Marketing-Ressourcen {#adding-a-marketing-resource}
 
-Der Zugriff auf Marketing-Ressourcen erfolgt über die Registerkarte **[!UICONTROL Kampagnen]**.
+Marketing-Ressourcen sind über den Tab **[!UICONTROL Kampagnen]** zugänglich.
 
 Um eine Ressource hinzuzufügen, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**.
 
