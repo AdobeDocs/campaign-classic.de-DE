@@ -6,11 +6,11 @@ description: Verwaltung von Aufgaben
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Die Aufgaben können in der Aufgabenliste und über das Dashboard einer Kampagne
 
 Aufgaben werden Kampagnen zugeordnet und können von anderen Aufgaben abhängig sein. Jede Aufgabe weist einen Status, eine Priorität, einen geplanten Zeitaufwand sowie eventuell verbundene Kosten auf.
 
-Alle Aufgaben sind in einer Liste gruppiert, auf die über die Registerkarte **Kampagnen** zugegriffen werden kann. Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
+Alle Aufgaben sind in einer Liste gruppiert, auf die über den Tab **Kampagnen** zugegriffen werden kann. Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben ](#accessing-tasks).
 
 Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden.
 
@@ -35,7 +35,7 @@ Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden
 
 ### Aufgaben anzeigen {#displaying-tasks}
 
-Die Aufgaben werden in der Liste Aufgabe angezeigt, auf die über die Registerkarte **[!UICONTROL Kampagnen]** zugegriffen werden kann.
+Eine Liste der Aufgaben kann über den Tab **[!UICONTROL Kampagnen]** angezeigt werden.
 
 ![](assets/s_ncs_user_task_edit_view.png)
 
@@ -57,7 +57,7 @@ Klicken Sie auf eine Aufgabe, um sie zu bearbeiten.
 
 ## Aufgabenerstellung {#creating-a-new-task}
 
-Um eine Aufgabe zu erstellen, klicken Sie auf der Registerkarte **[!UICONTROL Aufgaben]** auf den Link **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Erstellen]**.
+Um eine Aufgabe zu erstellen, klicken Sie auf den Link **[!UICONTROL Aufgaben]** im Tab **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Erstellen]** aus.
 
 ![](assets/s_ncs_user_task_create_new.png)
 
