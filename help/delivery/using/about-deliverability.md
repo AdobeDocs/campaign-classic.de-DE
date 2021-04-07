@@ -6,14 +6,14 @@ description: Lernen Sie Best Practices zur Zustellbarkeit kennen.
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
+exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 translation-type: tm+mt
-source-git-commit: 0420de856d1506ab92d8f0e0824bf439e0ac7dc7
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
-
 
 # Was ist Zustellbarkeit{#about-deliverability}
 
@@ -21,7 +21,7 @@ Die Lieferbarkeit ermöglicht es Ihnen, den Erfolg Ihrer Kampagnen zu messen, di
 
 Genauer gesagt bezieht sich die E-Mail-Zustellbarkeit auf den Satz von Merkmalen, die bestimmen, ob eine Nachricht ihr Ziel erreichen kann, über eine persönliche E-Mail-Adresse, innerhalb kurzer Zeit und mit der erwarteten Qualität in Bezug auf Inhalt und Format.
 
-Einen tieferen Einstieg in die Lieferbarkeit und weitere Informationen zu den wichtigsten Lieferbedingungen, -konzepten und -ansätzen finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Lieferbarkeit von Adoben.
+Einen tieferen Einstieg in die Lieferbarkeit und weitere Informationen zu den wichtigsten Lieferbedingungen, -konzepten und -ansätzen finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) zur Lieferbarkeit von Adoben.
 
 ## Verbesserung der Zustellbarkeit {#deliverability-key-points}
 
