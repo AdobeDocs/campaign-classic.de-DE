@@ -6,16 +6,16 @@ description: Webanwendung tracken
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Verfolgen von Besuchen in einer Webanwendung{#tracking-a-web-application}
+# Besuche auf einer Web-Anwendung tracken{#tracking-a-web-application}
 
 Mit Adobe Campaign können Sie Besuche auf Seiten von Webanwendungen verfolgen und messen, indem Sie Tracking-Tags einfügen. Diese Funktion kann für alle Webanwendungstypen verwendet werden (Formulare, Online-Umfragen, mit DCE erstellte Webseiten usw.).
 
