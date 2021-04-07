@@ -6,11 +6,11 @@ description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -74,9 +74,9 @@ In den Fällen, in denen das Einverständnis für bestimmte Marketing-Aktivität
 
 Es kann sogar Fälle geben, in denen bestimmte Einverständniserklärungen aktualisiert werden müssen, damit die Daten in Zukunft weiterverwendet werden können.
 
-Marketingexperten sollten diese erweiterten Zustimmungsanforderungen als echten Indikator für Markenbindung und -loyalität sowie für Kundenzufriedenheit und Vertrauen einsetzen.
+Marketer sollten diese erweiterten Einverständnisanforderungen als echten Indikator für Markeninteraktion und -loyalität sowie für Kundenzufriedenheit und -vertrauen nutzen.
 
-## Einverständnis verwalten{#manage-consent}
+## Einverständnisverwaltung {#manage-consent}
 
 ### Wie können Datenverantwortliche das Einverständnis in Adobe Campaign verwalten?
 
