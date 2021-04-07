@@ -6,11 +6,11 @@ description: Über dezentrales Marketing
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1175'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -81,9 +81,9 @@ Weitere Informationen finden Sie unter [Partizipative Kampagne erstellen](../../
 
 Um an einer Kampagne teilnehmen zu können, bestellt die Lokalstelle den entsprechenden Kampagnenkit und gibt hierbei sämtliche für die lokale Anpassung erforderlichen Informationen an.
 
-## Arbeitsbereich     {#workspace}
+## Arbeitsbereich      {#workspace}
 
-Die Liste von Kampagne-Paketen kann über die Registerkarte **Kampagnen** aufgerufen werden: Klicken Sie auf den Link **[!UICONTROL Kampagne packages]**.
+Die Kampagnenkit-Liste ist über den Tab **Kampagnen** zugänglich: Klicken Sie dort auf **[!UICONTROL Kampagnenkits]**.
 
 ![](assets/mkg_dist_home_local_op.png)
 
