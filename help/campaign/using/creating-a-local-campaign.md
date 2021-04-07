@@ -6,11 +6,11 @@ description: Lokale Kampagnen
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1696'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ Passen Sie nun die HTML-Version des Versands den lokalen Bedürfnissen an. Gehen
 
 ![](assets/mkt_dist_local_campaign_localize_html.png)
 
-Speichern Sie Ihre Kampagnenvorlage. Sie können sie jetzt über die Ansicht **[!UICONTROL Kampagne packages]** auf der Registerkarte **[!UICONTROL Kampagnen]** verwenden, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
+Speichern Sie Ihre Kampagnenvorlage. Sie steht Ihnen nun in der Ansicht **[!UICONTROL Kampagnenkits]** im Tab **[!UICONTROL Kampagnen]** zur Verfügung, indem Sie auf die Schaltfläche **[!UICONTROL Erstellen]** klicken.
 
 ![](assets/mkt_distr_9.png)
 
@@ -176,7 +176,7 @@ Gehen Sie wie folgt vor:
 
 1. Bestimmen Sie Titel und Speicherort des Kampagnenkits und legen Sie die Ausführungsplanung fest.
 
-### Datum-Funktionen       {#dates}
+### Datum-Funktionen        {#dates}
 
 Beginn- und Enddatum bestimmen die Dauer der Sichtbarkeit der Kampagne in der Kampagnenkit-Liste.
 
@@ -270,7 +270,7 @@ Gehen Sie wie folgt vor:
 
    Weitere Informationen hierzu finden Sie im Abschnitt [Validierungsprozess](#approval-process).
 
-1. Der örtliche Betreiber wird dann darüber informiert, dass die Kampagne verfügbar ist: Die Verfügbarkeit von Kampagnen befindet sich in der Liste von Kampagnen-Paketen innerhalb der Registerkarte **Kampagnen**. Die Kampagne kann dann verwendet werden. Weitere Informationen hierzu finden Sie unter [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md).
+1. Der lokale Benutzer wird daraufhin über die Verfügbarkeit der Kampagne informiert: Sie ist über die Liste der Kampagnenkits im Tab **Kampagnen** zugänglich. Die Kampagne kann dann verwendet werden. Weitere Informationen hierzu finden Sie unter [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md).
 
    Die Option **[!UICONTROL Zielgruppenbestimmung bei Bestellvalidierung starten]** ermöglicht es der Lokalstelle, die Kampagne auszuführen, sobald die Bestellung validiert wurde.
 
@@ -280,7 +280,7 @@ Gehen Sie wie folgt vor:
 
 Um die Bestellung einer Kampagne zu bestätigen, muss die Zentralstelle diese validieren.
 
-Mit der **[!UICONTROL Übersicht über Bestellungen von Kampagnen]**, die über die Registerkarte **Kampagnen** aufgerufen werden, können Sie den Status von Bestellungen von Kampagnen Ansicht und genehmigen.
+Die über den entsprechenden Link im Tab **Kampagnen** zugängliche Übersicht **[!UICONTROL Kampagnenbestellungen]** informiert über den Status der Bestellungen und ermöglicht deren Validierung.
 
 >[!NOTE]
 >
