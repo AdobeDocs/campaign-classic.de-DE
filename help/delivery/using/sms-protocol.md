@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über den SMS-Connector und dessen Konfiguration.
 audience: delivery
 content-type: reference
 topic-tags: configuring-channels
+exl-id: fded088a-11a2-4b87-a368-7b197334aca4
 translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: tm+mt
 source-wordcount: '8433'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
-
 
 # Protokoll und Einstellungen des SMS-Connectors {#sms-connector-protocol}
 
@@ -713,11 +713,11 @@ Ermöglicht das Hinzufügen eines benutzerdefinierten TLV. Dieses Feld legt den 
 
 Diese Einstellung erlaubt nur das Hinzufügen einer TLV-Option pro Nachricht.
 
-### Automatische Antwort auf MO         {#automatic-reply}
+### Automatische Antwort auf MO          {#automatic-reply}
 
 >[!IMPORTANT]
 >
->In Adobe Campaign Classic und in einer Hybridarchitektur erfordert die Anwendung der automatischen Antwort für den erweiterten SMPP-Connector Schreibzugriff für den mid-Operator im Ordner **Externe Konto**.
+>In Adobe Campaign Classic sowie in Hybrid-Architekturen benötigt der Mid-Operator Schreibrechte für den Ordner **Externes Konto**, wenn für den SMPP-Connector automatische Antworten eingerichtet werden sollen.
 
 Mit dieser Funktion können Sie schnell einen Antworttext an ein MO senden und das Senden pro Kurzwahlnummer an die Blockierungsliste handhaben.
 
