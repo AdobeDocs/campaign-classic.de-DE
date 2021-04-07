@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie den Versand einer E-Mail bestätigen können,
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4a56feac374506bb33ae6770aa247a197f1669fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
