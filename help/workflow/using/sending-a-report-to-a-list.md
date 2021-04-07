@@ -6,11 +6,11 @@ description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine List
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '719'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die Umsetzung des Anwendungsbeispiels gliedert sich in folgende Schritte:
 
 ## 1. Schritt: Erstellung der Empfängerliste {#step-1--creating-the-recipient-list}
 
-Wechseln Sie zur Registerkarte **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf den Link **[!UICONTROL Listen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neue Liste]** und erstellen Sie eine neue Empfänger-Liste, an die der Bericht gesendet werden soll.
+Wechseln Sie zum Tab **[!UICONTROL Profile und Zielgruppen]**, klicken Sie auf den Link **[!UICONTROL Listen]** und dann auf die Schaltfläche **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neue Liste]** aus und erstellen Sie eine neue Empfängerliste, an die der Bericht gesendet werden soll.
 
 ![](assets/use_case_report_1.png)
 
