@@ -1,37 +1,37 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Audience der Marketing-Kampagne-Zielgruppe
+title: Ziel-Audience der Marketing-Kampagne
 description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen definieren.
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1579'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# Wählen Sie die Audience Ihrer Kampagnen {#marketing-campaign-deliveries}
+# Audience für Ihre Kampagnen auswählen {#marketing-campaign-deliveries}
 
 In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
 * Die Audience: Erfahren Sie mehr über das [Erstellen der Audience in einem Workflow](#building-the-main-target-in-a-workflow) und das [Auswählen der Zielpopulation](#selecting-the-target-population).
-* Eine Kontrollgruppe - Weitere Informationen finden Sie in [diesem Abschnitt](#defining-a-control-group).
+* Eine Kontrollgruppe: Weitere Informationen finden Sie in [diesem Abschnitt](#defining-a-control-group).
 * Testadressen: Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
-Einige dieser Informationen können von der [Kampagnenvorlage](../../campaign/using/marketing-campaign-templates.md#campaign-templates) übernommen werden.
+Einige dieser Informationen werden von der [Kampagnenvorlage](../../campaign/using/marketing-campaign-templates.md#campaign-templates) übernommen.
 
 Um die Versandzielgruppe zu erstellen, können Sie Filterkriterien für die Empfänger in der Datenbank definieren. Dieser Auswahlmodus für Empfänger wird in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md) vorgestellt.
 
-## An eine Gruppe senden
+## Versand an eine Gruppe
 
 Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und diese Liste als Zielgruppe eines Versands zu verwenden. Gehen Sie dazu wie folgt vor:
 
-1. Bearbeiten Sie den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL Bis]**, um die Zielgruppe zu ändern.
+1. Bearbeiten Sie hierzu den betreffenden Versand und klicken Sie auf den Link **[!UICONTROL An]**, um die Zielpopulation zu ändern.
 
 1. Markieren Sie im Tab **[!UICONTROL Hauptzielgruppe]** die Option **[!UICONTROL Von der Datenbank ausgehend bestimmt]** und klicken Sie auf **[!UICONTROL Hinzufügen]**, um Empfänger auszuwählen.
 
@@ -41,13 +41,13 @@ Sie haben die Möglichkeit, eine Population in eine Liste zu importieren und die
 
 ![](assets/s_user_target_group_next.png)
 
-## Erstellen Sie die Audience in einem Kampagne-Workflow {#building-the-main-target-in-a-workflow}
+## Erstellen der Audience in einem Campaign-Workflow {#building-the-main-target-in-a-workflow}
 
-Die wichtigste Zielgruppe eines Versands kann auch im Arbeitsablauf für die Kampagne definiert werden: Mit dieser grafischen Umgebung können Sie eine Zielgruppe mithilfe von Abfragen, Tests und Operatoren erstellen: Vereinigung, Deduplizierung-Duplikate, Freigabe usw.
+Die Hauptzielgruppe eines Versands kann auch über einen Campaign-Workflow definiert werden: Die grafische Umgebung ermöglicht die Erstellung einer Zielgruppe mithilfe von Abfragen, Tests und Funktionen wie Vereinigungen, Deduplizierungen, Aufspaltungen usw.
 
 >[!IMPORTANT]
 >
->Sie dürfen einer Kampagne nicht mehr als 28 Workflows hinzufügen. Jenseits dieses Grenzwerts werden keine zusätzlichen Workflows mehr in der Benutzeroberfläche angezeigt und können Fehler hervorrufen.
+>Sie können einer Kampagne nicht mehr als 28 Workflows hinzufügen. Jenseits dieses Grenzwerts werden keine zusätzlichen Workflows mehr in der Benutzeroberfläche angezeigt und können Fehler hervorrufen.
 
 ### Erstellen eines Workflows {#creating-a-targeting-workflow}
 
@@ -169,7 +169,7 @@ Bei Aktionen bezüglich der Ausführung des Zielgruppen-Workflows (Start, Stopp,
 
    ![](assets/s_user_segmentation_stop_unconditional.png)
 
-## hinzufügen einer Kontrollgruppe {#defining-a-control-group}
+## Hinzufügen einer Kontrollgruppe {#defining-a-control-group}
 
 Bei der Kontrollgruppe handelt es sich um eine Population, die den Versand nicht erhält. Sie erlaubt es, Verhaltensunterschiede im Vergleich zu den Empfängern der Zielgruppe, die den Versand erhält, und somit die Auswirkungen einer Kampagne zu messen.
 
@@ -210,7 +210,7 @@ Die in einer Kampagne vorgenommene Konfiguration einer Kontrollgruppe gilt stand
 
 Das Konfigurationsverfahren wird unter [Extraktion der Kontrollgruppe aus der Hauptzielgruppe](#extracting-the-control-group-from-the-main-target) und [Hinzufügen einer Kontrollgruppe ](#adding-a-population) beschrieben.
 
-### Extrahieren Sie die Kontrollgruppe aus der Haupt-Zielgruppe {#extracting-the-control-group-from-the-main-target}
+### Extrahieren der Kontrollgruppe aus der Hauptzielgruppe {#extracting-the-control-group-from-the-main-target}
 
 Sie haben die Möglichkeit, Empfänger der Hauptzielgruppe eines Versands zu extrahieren: Die Empfänger werden in diesem Fall von der Zielgruppe der von dieser Konfiguration betroffenen Versandaktionen abgezogen. Diese Extraktion kann zufällig oder durch Sortierung der Empfänger erfolgen.
 
@@ -227,7 +227,7 @@ Klicken Sie auf **[!UICONTROL Weiter]**, um (bei Bedarf) die Sortierreihenfolge 
 
 Diese Konfiguration entspricht der einer Aufspaltungsaktivität im Workflow, die die Unterteilung einer Zielgruppe in mehrere Teilmengen ermöglicht. Die Kontrollgruppe entspricht einer dieser Teilmengen. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md).
 
-### Neue Population als Kontrollgruppe {#adding-a-population} verwenden
+### Verwenden einer neuen Population als Kontrollgruppe {#adding-a-population}
 
 Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. Diese Population kann aus einer Gruppe von Empfängern oder aus einer spezifischen Abfrage hervorgehen.
 
@@ -238,9 +238,9 @@ Sie können eine neue, als Kontrollgruppe zu verwendende Population bestimmen. D
 >Der Abfrageeditor von Adobe Campaign wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
 
 
-#### Tutorial {#create-email-video}
+#### Anleitungsvideo {#create-email-video}
 
-In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign erläutert.
+In diesem Video wird das Erstellen einer Kampagne und einer E-Mail in Adobe Campaign beschrieben.
 
 >[!VIDEO](https://video.tv.adobe.com/v/25604?quality=12)
 
