@@ -5,17 +5,17 @@ title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a50f094ae2f00060cfeb19dbc94534906728a28f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Technote {#about}
 
-[Herunterladen der technischen Anmerkung](guidelines.pdf)
+[Technote herunterladen](guidelines.pdf)
 
 
