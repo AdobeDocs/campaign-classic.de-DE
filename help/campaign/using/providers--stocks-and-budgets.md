@@ -6,11 +6,11 @@ description: Dienstleister, Lager und Budgets
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1994'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -206,7 +206,7 @@ Um die Verwaltung von Lagern und Lagerergänzungen in Adobe Campaign einzusetzen
 
 ### Lagerverwaltung {#stock-management}
 
-Adobe Campaign kann eine Benutzergruppe warnen, wenn der Bestand abgelaufen ist oder einen Mindestschwellenwert erreicht hat. Die Lagerbestände sind über den Link **[!UICONTROL Lagerbestände]** des Registers **[!UICONTROL Kampagnen]** über den Link **[!UICONTROL Andere Auswahlmöglichkeiten]** des Navigationsbereichs verfügbar.
+Adobe Campaign kann eine Benutzergruppe benachrichtigen, wenn das Lager leer ist oder einen Mindestbestand erreicht hat. Auf die Lagerbestände kann über den Link **[!UICONTROL Lager]** im Tab **[!UICONTROL Kampagnen]** über den Link **[!UICONTROL Andere Auswahlmöglichkeiten]** des Navigationsbereichs zugegriffen werden.
 
 ![](assets/s_ncs_user_stocks_view.png)
 
