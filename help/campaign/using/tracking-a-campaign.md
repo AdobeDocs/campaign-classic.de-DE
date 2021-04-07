@@ -6,11 +6,11 @@ description: Kampagnen verfolgen
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '433'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Folgende Funktionen stehen ihnen hierzu zur Verfügung:
 
 ## Filtern von Kits {#filter-packages}
 
-Auf der Registerkarte **[!UICONTROL Kampagnen]** können Sie die Liste von **[!UICONTROL Kampagnen-Paketen]** anzeigen, die alle vorhandenen Dezentrale Marketing-Kampagnen gruppiert. Sie können diese Liste so filtern, dass nur Kampagnen angezeigt werden, die entweder veröffentlicht wurden, verspätet, noch nicht genehmigt wurden usw. Klicken Sie dazu auf die Links im oberen Bereich dieser Ansicht, oder verwenden Sie den Link **[!UICONTROL Liste filtern]** und wählen Sie den anzuzeigenden Kampagne-Paketstatus aus.
+Im Tab **[!UICONTROL Kampagnen]** können Sie die Liste der **[!UICONTROL Kampagnenkits]** anzeigen, in der alle vorhandenen dezentralen Marketing-Kampagnen neu gruppiert werden können. Sie können diese Liste so filtern, dass nur Kampagnen angezeigt werden, die entweder veröffentlicht, überfällig, zur Validierung ausstehend usw. sind. Klicken Sie dazu auf die Links im oberen Bereich dieser Ansicht oder verwenden Sie den Link **[!UICONTROL Liste filtern]** und wählen Sie den Kampagnenkit-Status aus, der angezeigt werden soll.
 
 ![](assets/mkg_dist_catalog_filter.png)
 
