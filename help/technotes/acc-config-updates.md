@@ -97,11 +97,11 @@ Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md
 
 Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um Ihre Instanz(en) auf die neuere Version zu aktualisieren.
 
-Als On-Premise/Hybrid-Kunde müssen Sie ein Upgrade auf eine der neueren Versionen durchführen, um von der neuen Client-Konsole zu profitieren und eine reibungslose Transition **vor dem 30. Juni 2021** sicherzustellen.
+Als On-Premise-/Hybrid-Kunde müssen Sie ein Upgrade auf eine der neueren Versionen durchführen, um von der neuen Client-Konsole zu profitieren und einen reibungslosen Umstieg **vor dem 30. Juni 2021** sicherzustellen.
 
 Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf diese Version aktualisiert werden.
 
-* Erfahren Sie, wie Sie auf die [Adobe-Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) zugreifen.
+* Erfahren Sie, wie Sie auf die [Adobe-Software-Verteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de) zugreifen.
 
 * [Erfahren Sie, wie Sie die Campaign-Client-Konsole installieren](../installation/using/installing-the-client-console.md).
 
@@ -125,7 +125,7 @@ Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md
 
 **Wie wird die Aktualisierung durchgeführt?**
 
-Sobald die Instanzen auf eine neuere Version aktualisiert wurden, müssen alle Kunden das [Verfahren befolgen, um in den neuen Authentifizierungsmodus zu wechseln](../integrations/using/configuring-adobe-io.md). Hierfür muss das neue Adobe I/O-Token generiert und in der Implementierung verwendet werden. 
+Sobald die Instanzen auf eine neuere Version aktualisiert wurden, müssen alle Kunden das [Verfahren zum Wechsel in den neuen Authentifizierungsmodus](../integrations/using/configuring-adobe-io.md) befolgen. Hierfür muss das neue Adobe I/O-Token generiert und in der Implementierung verwendet werden. 
 
 Kunden mit Hybrid-Umgebungen müssen darüber hinaus sicherstellen, dass Pipeline auf einer Mid-Sourcing-Instanz konfiguriert ist. [Weitere Informationen](../integrations/using/configuring-pipeline.md).
 
@@ -147,11 +147,11 @@ Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md
 
 Wenn Sie als gehosteter Kunde ein Upgrade auf den neuen Build durchgeführt haben, hat Adobe Ihre Instanz(en) bereits auf die HTTP/2-basierte API aktualisiert.
 
-Als On-Premise/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren. [Erfahren Sie, wie Sie zu HTTP/2 migrieren](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html).
+Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren. [Erfahren Sie, wie Sie zu HTTP/2 migrieren](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html).
 
 ### Aktualisierungen des APNs-Stammzertifikats
 
-Am 29. März 2021 wirkt sich eine Infrastrukturaktualisierung des Push-Benachrichtigungsdienstes von Apple (Apple Push Notification service, APNs) auf den iOS-Kanal von Adobe Campaign Classic aus. Eine Anpassung der OS-Konfiguration ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
+Am 29. März 2021 wirkt sich eine Infrastrukturaktualisierung des Push-Benachrichtigungsdienstes von Apple (Apple Push Notification service, APNs) auf den iOS-Kanal von Adobe Campaign Classic aus. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
 Weitere Informationen zu den APNs-Änderungen finden Sie [auf dieser Seite](https://developer.apple.com/news/?id=7gx0a2lp).
 
@@ -163,7 +163,7 @@ Wenn Sie Campaign zum Senden von Push-Benachrichtigungen an iOS-Geräte verwende
 
 Als gehosteter Kunde besteht kein Handlungsbedarf: Adobe hat das neue Stammzertifikat bereits in Ihre Umgebung integriert.
 
-Als On-Premise/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren, um eine reibungslose Transition **vor dem 29. März 2021** sicherzustellen.
+Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren, um einen nahtlosen Übergang **vor dem 29. März 2021** zu gewährleisten.
 
 [Erfahren Sie, wie Sie das neue Zertifikat integrieren](ios-certificate-update.md).
 
