@@ -2,15 +2,15 @@
 solution: Campaign Classic
 product: campaign
 title: Erstellen von Marketing-Kampagnen
-description: Erfahren Sie, wie Sie Marketing-Kampagnen erstellen und ausführen
+description: Erfahren Sie, wie Sie Marketing-Kampagnen erstellen und ausführen.
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1294'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,17 +27,17 @@ So erstellen Sie eine Marketing-Kampagne:
 
 1. Bestimmung der Zielpopulation(en): Erstellung eines Workflows mit Zielgruppenbestimmungs-Abfragen. [Weitere Informationen](../../campaign/using/marketing-campaign-deliveries.md#selecting-the-target-population).
 
-1. Erstellung von Sendungen: Auswahl von Kanälen und Konfigurieren des zu sendenden Inhalts. [Weitere Informationen](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
+1. Erstellen von Sendungen: Auswahl von Kanälen und Definition des zu sendenden Inhalts. [Weitere Informationen](../../campaign/using/marketing-campaign-deliveries.md#creating-deliveries).
 
-1. Validierung von Sendungen. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md).
+1. Validieren von Sendungen. [Weitere Informationen](../../campaign/using/marketing-campaign-approval.md).
 
-1. Beobachtung von Sendungen. [Weitere Informationen](../../campaign/using/marketing-campaign-monitoring.md).
+1. Überwachen von Sendungen. [Weitere Informationen](../../campaign/using/marketing-campaign-monitoring.md).
 
-1. Planung der Kampagne und verbundener Kosten. [Weitere Informationen](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
+1. Planen von Kampagnen und der damit verbundenen Kosten. [Weitere Informationen](../../campaign/using/providers--stocks-and-budgets.md#creating-service-providers-and-their-cost-structures).
 
-Nach Abschluss dieser Schritte können Sie die Versand (siehe [diesen Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)) Beginn, die Daten, Prozesse und Informationen zu den Versänden überprüfen und gegebenenfalls die zugehörigen Dokumente verwalten (siehe [diesen Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Sie können auch die Ausführung der Verarbeitungsphasen von Kampagnen und Versänden verfolgen (siehe [diesen Abschnitt](../../campaign/using/marketing-campaign-monitoring.md)).
+Nach Abschluss dieser Schritte können Sie den Versand starten (siehe [diesen Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#starting-a-delivery)), die Daten, Prozesse und Informationen zu den Sendungen überprüfen und bei Bedarf die zugehörigen Dokumente verwalten (siehe [diesen Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#managing-associated-documents)). Außerdem können Sie die Ausführung der Verarbeitungsphasen von Kampagnen und Sendungen verfolgen (siehe [diesen Abschnitt](../../campaign/using/marketing-campaign-monitoring.md)).
 
-## Plan- und Programm-Hierarchie {#creating-plan-and-program-hierarchy} erstellen
+## Erstellung einer Plan- und Programmhierarchie {#creating-plan-and-program-hierarchy}
 
 Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, gehen Sie folgendermaßen vor:
 
@@ -57,9 +57,9 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 1. Wiederholen Sie die obigen Schritte, um Ihren neuen Programmordner und seinen internen Namen umzubenennen.
 
-## Kampagne erstellen {#creating-a-campaign}
+## Erstellen einer Kampagne {#creating-a-campaign}
 
-### hinzufügen einer Kampagne {#adding-a-campaign}
+### Hinzufügen einer Kampagne {#adding-a-campaign}
 
 Eine neue Kampagne kann von der Liste der Kampagnen aus erstellt werden. Klicken Sie auf den Link **[!UICONTROL Kampagnen]** in der gleichnamigen Rubrik, um zu dieser Übersicht zu gelangen.****
 
@@ -103,9 +103,9 @@ Eine wiederkehrende Kampagne basiert auf einer spezifischen Vorlage. Ihre Workfl
 
 Eine periodische Kampagne erstellt sich automatisch entsprechend der Ausführungsplanung ihrer Vorlage.
 
-### Eine wiederkehrende Kampagne {#creating-a-recurring-campaign} erstellen
+### Erstellen einer wiederkehrenden Kampagne {#creating-a-recurring-campaign}
 
-Vor der Erstellung der eigentlichen Kampagne ist die Konfiguration einer spezifischen Vorlage erforderlich, in der die Ausführungsplanung sowie die benötigten Workflow-Vorlagen bestimmt werden. Gehen Sie wie folgt vor:
+Wiederkehrende Kampagnen werden anhand einer bestimmten Vorlage erstellt, die die auszuführende Workflow-Vorlage und die Ausführungsplanung definiert.
 
 #### Erstellen einer Vorlage für wiederkehrende Kampagnen {#creating-the-campaign-template}
 
@@ -181,11 +181,11 @@ Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten
    >Das Anfangsdatum der dem Workflow zugeordneten Planungszeile ist über eine Variable des Workflows mit der folgenden Syntax verfügbar:\
    >`$date(instance/vars/@startPlanningDate)`
 
-### Periodische Kampagne {#creating-a-periodic-campaign} erstellen
+### Erstellen einer periodischen Kampagne {#creating-a-periodic-campaign}
 
-Eine periodische Kampagne ist eine spezifische Vorlage, die die automatische Erstellung von Kampagneninstanzen entsprechend einer in der Ausführungsplanung der Vorlage festgelegten Frequenz ermöglicht. Gehen Sie wie folgt vor:
+Eine periodische Kampagne ist eine auf einer bestimmten Vorlage basierende Kampagne, mit der Sie Kampagneninstanzen auf der Grundlage einer Ausführungsplanung erstellen können. Kampagneninstanzen werden automatisch auf Basis einer Vorlage für periodische Kampagnen und abhängig von der in der Vorlagenplanung definierten Häufigkeit erstellt.
 
-#### Kampagnenvorlage {#creating-the-campaign-template-1} erstellen
+#### Erstellen der Kampagnenvorlage {#creating-the-campaign-template-1}
 
 1. Wählen Sie den Kampagnentyp **[!UICONTROL Periodisch]**
 
