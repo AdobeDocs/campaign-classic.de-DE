@@ -6,11 +6,11 @@ description: Vorlagenverwaltung
 audience: web
 content-type: reference
 topic-tags: editing-html-content
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Weiterführende Informationen zum Hinzufügen einer Vorlage finden Sie im Abschn
 
 Nach der Konfiguration eines Versands können Sie diesen als Vorlage für künftige Aktionen speichern.
 
-Öffnen Sie auf der Registerkarte **Kampagnen** den ausgewählten Versand. Klicken Sie auf die Schaltfläche **Als Vorlage speichern**, geben Sie der Vorlage einen Namen und speichern Sie sie.
+Öffnen Sie im Tab **Kampagnen** den ausgewählten Versand. Klicken Sie auf die Schaltfläche **Als Vorlage speichern**, geben Sie der Vorlage einen Namen und speichern Sie sie.
 
 ![](assets/dce_save_model.png)
 
