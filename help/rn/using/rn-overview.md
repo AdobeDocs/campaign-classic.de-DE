@@ -5,15 +5,15 @@ title: Erste Schritte mit Upgrades
 description: Weiterführende Informationen zu Campaign Classic-Upgrades
 feature: Übersicht
 role: Business Practitioner
-level: Anfänger
+level: Beginner
+exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 translation-type: tm+mt
-source-git-commit: 7b1e6dd00943e10dff693d78b3aa7cf2ad3e6727
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '415'
 ht-degree: 90%
 
 ---
-
 
 # Erste Schritte mit Upgrades{#rn-overview}
 
@@ -29,7 +29,7 @@ Jedem Build wird ein Status zugeordnet. Nachfolgend finden Sie die Liste der Sta
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – In der Produktion validiert und von Adobe empfohlen.
 
-Die **letzten GA-Builds** sind: [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md#gs-11) und [Version 20.2.4 der Kampagne](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
+Die **letzten GA-Builds** sind: [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md#gs-11) und [Version 20.2.5 der Kampagne](../../rn/using/release--20-2.md#release-20-2-4-build-9187)
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
 
@@ -51,11 +51,11 @@ Um Ihre Implementierung auf dem neuesten Stand zu halten, lesen Sie bei jeder ne
 
 Als gehosteter Kunde (Managed Services oder Hybrid) müssen Sie sich an das Team der Kundenunterstützung wenden, um Ihre Umgebung aktualisieren zu lassen.
 
-Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distributsion/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
+Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie den [neuesten stabilen Build herunterladen](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) und alle Ihre Umgebungen aktualisieren. Erfahren Sie mehr über den [Upgrade-Prozess](../../production/using/build-upgrade.md) und lesen Sie die [häufig gestellte Fragen zu Build-Upgrades](../../platform/using/faq-build-upgrade.md).
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch von der [!DNL Gold Standard]-Aktualisierung mit der [neuesten GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) ohne Aktion. [Weitere Infos](../../rn/using/gs-overview.md).
+Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch von der [!DNL Gold Standard]-Aktualisierung mit der [neuesten GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) ohne Aktion. [Weitere Informationen](../../rn/using/gs-overview.md).
 
 >[!NOTE]
 >Kompatibilitätsmatrix für [!DNL Gold Standard] ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
