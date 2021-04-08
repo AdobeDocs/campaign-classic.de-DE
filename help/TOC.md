@@ -7,11 +7,11 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalübergreifende Marketing-Kampagnen, die einen hohen Return on Marketing Investment erzielen.
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
-type: Dokumentation
+type: Documentation
 translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2483'
 ht-degree: 98%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 98%
       + [Starten von Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign-Arbeitsbereich{#campaign-workspace}
          + [Erste Schritte mit der Campaign-Benutzeroberfläche](platform/using/adobe-campaign-workspace.md)
+         + [Kampagne Explorer verwenden](platform/using/adobe-campaign-explorer.md)
          + [Durchsuchen und Anpassen von Listen](platform/using/adobe-campaign-ui-lists.md)
       + Häufig gestellte Fragen {#faq}
          + [Die häufigsten Fragen](platform/using/common-questions.md)
@@ -226,7 +227,7 @@ ht-degree: 98%
       + [Tracking testen](delivery/using/testing-tracking.md)
       + [Fehlerbehebung beim Tracking](delivery/using/tracking-troubleshooting.md)
    + Verwaltung der Zustellbarkeit {#deliverability-management}
-      + [Was ist Zustellbarkeit](delivery/using/about-deliverability.md)
+      + [Was ist Zustellbarkeit?](delivery/using/about-deliverability.md)
       + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
       + [Zustellbarkeit überwachen](delivery/using/monitoring-deliverability.md)
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
