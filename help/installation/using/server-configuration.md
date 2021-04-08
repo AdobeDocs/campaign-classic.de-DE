@@ -6,58 +6,16 @@ description: Weitere Informationen zu Best Practices für die Serverkonfiguratio
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: 564eaedb09282c85593f638617baded0a63494a0
+source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
 workflow-type: tm+mt
-source-wordcount: '1209'
-ht-degree: 59%
+source-wordcount: '623'
+ht-degree: 46%
 
 ---
 
-
 # Serverkonfiguration {#server-configuration}
-
-## Konfigurieren von Sicherheitszonen
-
-Ab Build 8977 ist die Benutzeroberfläche der Sicherheitszonen nicht mehr verfügbar. Wenn Sie nicht auf AWS gehostet werden, kontaktieren Sie das Adobe-Supportteam, um IPs auf die Zulassungsliste zu setzen. Andernfalls muss der Zulassungsliste IP hinzugefügt werden unter [Systemsteuerung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
-
-Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
-
->[!NOTE]
-> 
->Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
->
->Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
-
-
-* Stellen Sie sicher, dass Ihr Reverse-Proxy in subNetwork nicht erlaubt ist. Ist dies der Fall, wird der **gesamte** Datenverkehr als von dieser lokalen IP-Adresse kommend und daher als vertrauenswürdig eingestuft.
-
-* Minimieren Sie den Einsatz von sessionTokenOnly=&quot;true&quot;:
-
-   * Achtung: Wenn dieses Attribut auf true gesetzt wird, ist der Benutzer durch **CRSF-Attacken** (Cross-Site Request Forgery) angreifbar.
-   * Zusätzlich ist das sessionToken-Cookie nicht mit einem httpOnly-Flag versehen, weshalb es von einem Client-seitigen Javascript-Code gelesen werden kann.
-   * Bei Verwendung von Message Center mit mehreren Ausführungsinstanzen ist jedoch der Einsatz von sessionTokenOnly unumgänglich: Erstellen Sie eine neue Sicherheitszone, setzen Sie sessionTokenOnly auf &quot;true&quot;, und fügen Sie dieser Zone **nur die benötigten IP-Adressen** hinzu.
-
-* Setzen Sie möglichst alle allowHTTP, showErrors auf &quot;false&quot; (nicht für localhost), und prüfen Sie sie.
-
-   * allowHTTP = &quot;false&quot;: zwingt Benutzer, HTTPS zu verwenden.
-   * showErrors = &quot;false&quot;: verbirgt technische Fehler (einschließlich SQL-Fehler). Dies verhindert die Anzeige übermäßig vieler Informationen, schränkt aber auch die Fähigkeit des Benutzers ein, Probleme zu lösen (ohne vom Administrator zusätzliche Informationen einzuholen).
-
-* Setzen Sie allowDebug nur für IP-Adressen auf true, die von Benutzern/Administratoren verwendet werden, die Fragebögen, WebApps und Berichte erstellen müssen (diese aber nicht in der Vorschau ansehen können). Durch dieses Flag werden in diesen IP-Adressen Relais-Regeln dargestellt, was eine Fehlerbehebung ermöglicht.
-
-* Setzen Sie niemals allowEmptyPassword, allowUserPassword, allowSQLInjection auf true. Diese Attribute dienen nur der problemlosen Migration von v5 und v6.0:
-
-   * **allowEmptyPassword** ermöglicht Benutzern, ein leeres Passwort zu haben. Ist dies bei Ihnen der Fall, weisen Sie alle Benutzer an, bis zu einer bestimmten Deadline ein Passwort zu erstellen. Sobald diese Frist abgelaufen ist, ändern Sie dieses Attribut auf &quot;false&quot;.
-
-   * **allowUserPassword** ermöglicht es Benutzern, ihre Zugangsdaten als Parameter zu senden (sodass sie via Apache/IIS/Proxy gespeichert werden). Diese Funktion diente in der Vergangenheit zur Vereinfachung der API-Nutzung. In Ihrem Cookbook (oder in der Spezifikation) können Sie nachsehen, ob die Funktion von Drittanwendungen genutzt wird. Ist dies der Fall, weisen Sie den Administrator dieser Drittanwendungen an, die Verwendung unserer API zu ändern und die Funktion nicht mehr zu nutzen.
-
-   * **** allowSQLInjectionermöglicht dem Benutzer die Durchführung von SQL-Injektionen mit einer alten Syntax. Führen Sie so bald wie möglich die unter [Diese Seite](../../migration/using/general-configurations.md) beschriebenen Korrekturen durch, um dieses Attribut auf &quot;false&quot;setzen zu können. Mit /nl/jsp/ping.jsp?zones=true können Sie die Konfiguration Ihrer Sicherheitszone überprüfen. Auf dieser Seite wird der aktive Status von Sicherheitsmaßnahmen (mit diesen Sicherheits-Flags berechnet) für die aktuelle IP-Adresse angezeigt.
-
-* HttpOnly cookie/useSecurityToken: siehe Flag **sessionTokenOnly**.
-
-* Minimieren Sie die Anzahl der IP-Adressen auf der Zulassungsliste: Standardmäßig wurden für Sicherheitszonen die drei Bereiche für private Netzwerke hinzugefügt. Es ist unwahrscheinlich, dass Sie alle diese IP-Adressen verwenden werden. Behalten Sie also nur die, die Sie brauchen.
-
-* Aktualisieren Sie den WebApp-/internen Benutzer, damit er nur über localhost zugänglich sind.
 
 ## Schutz vor Datei-Upload
 
