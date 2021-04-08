@@ -6,20 +6,30 @@ description: Erfahren Sie, wie Sie Sicherheitszonen konfigurieren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 830ec0ed80fdc6e27a8cc782b0e4b79abf033450
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 0%
+source-wordcount: '1044'
+ht-degree: 1%
 
 ---
 
 
-# Sicherheitszonen {#defining-security-zones} definieren
+# Sicherheitszonen definieren {#defining-security-zones}
 
 Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anzumelden, und die IP-Adresse des Betreibers muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Sicherheitszonenkonfiguration wird in der Konfigurationsdatei des Adobe Campaign-Servers ausgeführt.
 
-Operatoren werden über ihr Profil in der Konsole ( **[!UICONTROL Administration > Zugriffsverwaltung > Operatoren]**-Knoten) mit einer Sicherheitszone verknüpft. Erfahren Sie, wie Sie Zonen mit Kampagnen-Operatoren in [diesem Abschnitt](#linking-a-security-zone-to-an-operator) verknüpfen.
+Operatoren sind über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft. Zugriff auf diese Bereiche erhalten Sie unter **[!UICONTROL Administration > Zugriffsverwaltung > Operatoren]**. [Weitere Informationen](#linking-a-security-zone-to-an-operator).
+
+>[!NOTE]
+>
+>Dieses Verfahren ist auf **lokale** Bereitstellungen beschränkt.
+>
+>Wenn Sie als Kunde **gehostet** auf [Kampagne Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, können Sie die Selbstbedienungsoberfläche der Sicherheitszone verwenden. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html)
+>
+>Andere **hybride/gehostete**-Kunden müssen sich an die Adobe wenden, um Sicherheitszonen für ihre Instanz einzurichten.
+
 
 ## Sicherheitszonen {#creating-security-zones} erstellen
 
