@@ -199,7 +199,7 @@ Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen
 * Debian 7. [Weitere Infos](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Weitere Infos](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Weitere Infos](https://support.microsoft.com/en-us/lifecycle/search/1163)
-* SLES 11. [Weitere Infos] (ttps://www.suse.com/lifecycle)
+* SLES 11. [Weitere Infos](https://www.suse.com/lifecycle)
 
 ### Webserver {#web-server-eol}
 
