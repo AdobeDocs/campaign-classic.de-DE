@@ -5,14 +5,14 @@ title: Konfigurieren von Ereignissen
 description: Erfahren Sie, wie Sie Ereignisse für eine benutzerdefinierte Implementierung konfigurieren.
 audience: integrations
 content-type: reference
-translation-type: ht
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
-workflow-type: ht
+exl-id: 13717b3b-d34a-40bc-9c9e-dcf578fc516e
+translation-type: tm+mt
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 100%
 
 ---
-
 
 # Konfigurieren von Ereignissen für eine benutzerdefinierte Implementierung {#events}
 
@@ -217,7 +217,7 @@ Die Ereignisse können mit einem einfachen Formular, das auf dem Ereignisschema 
 
 >[!NOTE]
 >
->Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationsbaum](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
+>Der Knoten &quot;Pipeline Event&quot; ist nicht nativ und muss hinzugefügt werden. Außerdem muss in Campaign das zugehörige Formular erstellt werden. Diese Aufgaben sind erfahrenen Benutzern vorbehalten. Weitere Informationen finden Sie in den folgenden Abschnitten: [Navigationsbaum](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy) und [Bearbeiten von Formularen](../../configuration/using/editing-forms.md).
 
 ![](assets/triggers_7.png)
 
