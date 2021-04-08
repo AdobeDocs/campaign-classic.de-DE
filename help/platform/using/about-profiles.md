@@ -8,10 +8,10 @@ role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 69%
+ht-degree: 71%
 
 ---
 
@@ -79,11 +79,11 @@ Erweiterte Funktionen und Konfigurationsmöglichkeiten stehen ausschließlich ü
 
 ![](assets/d_ncs_user_interface01.png)
 
-Das allgemeine Layout des Adobe Campaign Explorer wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) dargestellt.
+Das allgemeine Layout des Adobe Campaign Explorer wird in [dieser Seite](../../platform/using/adobe-campaign-explorer.md) dargestellt.
 
 >[!NOTE]
 >
->Durch Klick auf **[!UICONTROL Profile und Zielgruppen > Empfänger]** haben Sie Zugriff auf eine erweiterte Ansicht der Empfängerliste. Es besteht die Möglichkeit, sie Ihren Bedürfnissen entsprechend anzupassen. Sie können beispielsweise Spalten hinzufügen oder löschen und ihre Reihenfolge festlegen, Daten sortieren etc. Die Anzeigekonfiguration der Liste wird in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md#using-adobe-campaign-explorer) beschrieben.
+>Durch Klick auf **[!UICONTROL Profile und Zielgruppen > Empfänger]** haben Sie Zugriff auf eine erweiterte Ansicht der Empfängerliste. Es besteht die Möglichkeit, sie Ihren Bedürfnissen entsprechend anzupassen. Sie können beispielsweise Spalten hinzufügen oder löschen und ihre Reihenfolge festlegen, Daten sortieren etc. Die Anzeigekonfiguration der Liste wird unter [Diese Seite](../../platform/using/adobe-campaign-ui-lists.md) beschrieben.
 >
 >Sie können auch Empfängeransichten definieren. Weitere Informationen zu dieser Funktion finden Sie in [diesem Abschnitt](../../platform/using/access-management-folders.md).
 
@@ -97,7 +97,7 @@ Wenn Sie auf AWS gehostet werden, können Sie auch die Anzahl der aktiven Profil
 
 >[!NOTE]
 >
->Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
 >
 >Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
 
