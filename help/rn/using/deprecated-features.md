@@ -5,15 +5,15 @@ title: Eingestellte und entfernte Funktionen von Campaign Classic
 description: Auf dieser Seite finden Sie eine Liste eingestellter und entfernter Funktionen von Adobe Campaign Classic
 feature: Übersicht
 role: Business Practitioner
-level: Anfänger
-translation-type: ht
-source-git-commit: ce60b2bd0a9d75ca429af2f740832b408ce3c48b
-workflow-type: ht
-source-wordcount: '1716'
-ht-degree: 100%
+level: Beginner
+exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
+translation-type: tm+mt
+source-git-commit: 01daff5d95f4635182041b949a21c80cae5e4473
+workflow-type: tm+mt
+source-wordcount: '1713'
+ht-degree: 98%
 
 ---
-
 
 # Eingestellte und entfernte Funktionen {#deprecated-and-removed-features}
 
@@ -61,7 +61,7 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
    <li>Web API – Microsoft Dynamics CRM Online: 2016, Aktualisierung 1 2016</li>
    <li>Oracle On Demand-API</li>
    </ul>
-  <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
+  <p><em>Zielgruppen-Entfernungsdatum: Mai 2021</em></p>
   </td>
  </tr>
   <tr>
@@ -69,21 +69,21 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   <td><p>Ab Campaign-Version 20.3 wird die veraltete Version des iOS Binary Connectors nicht mehr unterstützt.<p>
   <p> Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen.
   <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html">Weitere Infos</a></p>
-  <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
+  <p><em>Zielgruppen-Entfernungsdatum: Mai 2021</em></p>
   </td>
  </tr>
    <tr>
   <td>Demdex-Domain<br></td>
   <td><p> Ab Campaign-Version 20.3 wird die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, nicht mehr unterstützt.<p>
   <p>Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Weitere Infos</a></p> 
-  <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
+  <p><em>Zielgruppen-Entfernungsdatum: Mai 2021</em></p>
   </td>
   <tr>
   <td>OAuth-Authentifizierung (OAuth und JWT)<br></td>
   <td><p> Ab Campaign-Version 20.3 wurde die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, geändert und in Adobe I/O verschoben <p>
   <p>Wenn Sie die Triggers-Integration nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Weitere Infos</a></p> 
   <p>Weitere Informationen zur Einstellung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a>.</p> 
-  <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
+  <p><em>Zielgruppen-Entfernungsdatum: Nov. 2021</em></p>
   </td>
   </tr>
   <td>SMS-Connectoren<br></td>
@@ -98,14 +98,14 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
    </ul>
   <p>Wenn Sie einen dieser Connectoren verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/sms-channel.md">Weitere Infos</a></p> 
   <p>Erfahren Sie in <a href="../../delivery/using/unsupported-connector-migration.md">diesem technischen Hinweis</a>, wie Sie frühere Versionen von Connectoren migrieren können.</p>
-  <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p>
+  <p><em>Zielgruppen-Entfernungsdatum: Mai 2021</em></p>
   </td> 
  </tr>
   <tr>  
    <td>Fax-Kanal<br></td>
    <td><p>Ab Campaign-Version 20.2 wird der Fax-Kanal nicht mehr unterstützt.</p> 
    <p>Wenn Sie diesen Kanal nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Erfahren Sie mehr</a> über Campaign-Kanäle.</p>
-   <p><em>Geplantes Datum für die Entfernung: April 2021.</em></p></td>
+   <p><em>Zielgruppen-Entfernungsdatum: Mai 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
