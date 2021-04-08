@@ -6,14 +6,14 @@ description: Überwachen Sie Ihre Campaign-Workflows mit Workflow-Heatmap.
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
 translation-type: tm+mt
-source-git-commit: d34435b0b8714a87add6a5e3f82e4f94376f205b
+source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1179'
 ht-degree: 100%
 
 ---
-
 
 # Workflow-Heatmap {#workflow-heatmap}
 
@@ -40,7 +40,7 @@ Genauer gesagt, hilft sie den Administratoren der Plattform bei Folgendem:
 
 Die Verwendung der Workflow-Heatmap erfordert ein gutes Verständnis der folgenden Konzepte: [Workflows](../../workflow/using/about-workflows.md), [Aktivitäten](../../workflow/using/about-activities.md) und [Best Practices bei Workflows](../../workflow/using/workflow-best-practices.md).
 
-Die Workflow-Heatmap ist ab Version 18.10 standardmäßig in Adobe Campaign verfügbar. Wenn Sie einen Build zwischen 8700 und 8977 (18.10) haben, können Sie ebenfalls von dieser Funktion profitieren. Um das entsprechende Package anzufordern, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und befolgen Sie die Anweisungen auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/install-workflow-heatmap-package.html), um zu erfahren, wie Sie es installieren.
+<!--The Workflow HeatMap is available by default in Adobe Campaign starting 18.10 release. If you have a build between 8700 and 8977 (18.10), you can also benefit from this capability. To request the corresponding package, contact the [Adobe Customer Care](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and follow the instructions from [this page](https://helpx.adobe.com/campaign/kb/install-workflow-heatmap-package.html) to understand how to install it.-->
 
 ## HeatMap verwenden {#using-the-heatmap}
 
