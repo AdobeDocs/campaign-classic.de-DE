@@ -6,14 +6,14 @@ description: Die Server-Konfigurationsdatei
 audience: installation
 content-type: reference
 topic-tags: appendices
+exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
 workflow-type: tm+mt
 source-wordcount: '7970'
-ht-degree: 27%
+ht-degree: 31%
 
 ---
-
 
 # Die Server-Konfigurationsdatei{#the-server-configuration-file}
 
@@ -313,7 +313,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > dbcnx** die Verbindungsei
   </tr> 
   <tr> 
    <td> dbSchema<br /> </td> 
-   <td> Arbeitsbereich    <br /> </td> 
+   <td> Arbeitsbereich     <br /> </td> 
    <td> String <br /> </td> 
    <td> </td> 
   </tr> 
@@ -1738,7 +1738,7 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
  <tbody> 
   <tr> 
    <td> dataBasePoolPeriodSec<br /> </td> 
-   <td> Intervall, in der die zu sendenden Vorgänge aus der Datenbank abgerufen werden Dieser Wert gibt die Abrufhäufigkeit der Datenbank (in Sekunden) an. Um die Liste von auf Versand wartenden Aufträgen zu erhalten, fragt die MTA die Datenbank regelmäßig ab. Wenn kein Auftrag abgewartet wird, wird der Abrufezeitraum durch diesen Wert definiert. Andernfalls, wenn ein Auftrag auf einen untergeordneten Server übertragen wurde, wird diese Abruffrist automatisch auf eine Sekunde reduziert, sodass ein neuer Auftrag so bald wie möglich erneut verarbeitet werden kann, d. h. sobald ein untergeordneter Server wieder verfügbar ist. Dies bedeutet nicht, dass die Datenbanküberprüfung jede Sekunde durchgeführt wird, bis ein untergeordneter Server wieder verfügbar ist. Ein Datenbankzugriff erfolgt nur dann, wenn mindestens ein untergeordneter Server verfügbar ist.<br /> </td> 
+   <td> Intervall, in der die zu sendenden Vorgänge aus der Datenbank abgerufen werden Intervall in Sekunden zwischen zwei Datenbankabfragen durch den MTA. Der MTA ruft in regelmäßigen Abständen die ausstehenden Sendungen ab. Der Wert kommt nur zum Tragen, wenn kein Vorgang zur Verarbeitung ansteht. Sollte bei der vorhergehenden Abfrage für einen Vorgang kein untergeordneter Server zur Verfügung gestanden haben, wird das Intervall automatisch auf 1 Sekunde gesetzt, um den ausstehenden Vorgang so schnell wie möglich verarbeiten zu können, d. h. sobald ein untergeordneter Server zur Verfügung steht. Dies bedeutet nicht, dass jede Sekunde eine Datenbankabfrage durchgeführt wird. Dies geschieht nur, wenn mindestens ein untergeordneter Server verfügbar ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 30<br /> </td> 
   </tr> 
@@ -1756,19 +1756,19 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
   </tr> 
   <tr> 
    <td> maxSpareServers<br /> </td> 
-   <td> Maximale Anzahl der untergeordneten Server. Stellt die maximale Anzahl der ausgeführten Server dar. Es wird empfohlen, diese Zahl auf ein optimales Maß zu beschränken, das mit den Serverspeicherressourcen kompatibel ist. Dies kann während eines Versands überprüft werden. Der verwendete Speicher sollte nicht mehr als ein Drittel des verfügbaren physischen Speichers betragen, da andernfalls der Swap verwendet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">untergeordnete MTA-Prozesse</a>.<br /> </td> 
+   <td> Maximale Anzahl an untergeordneten Servern Stellt die maximale Anzahl der ausgeführten Server dar. Es wird empfohlen, diese Zahl auf ein optimales Maß zu beschränken, das mit den Serverspeicherressourcen kompatibel ist. Dies kann während eines Versands überprüft werden. Der verwendete Speicher sollte nicht mehr als ein Drittel des verfügbaren physischen Speichers betragen, da andernfalls der Swap verwendet wird. Siehe <a href="../../installation/using/configuring-campaign-server.md#mta-child-processes" target="_blank">untergeordnete MTA-Prozesse</a>.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 2<br /> </td> 
   </tr> 
   <tr> 
    <td> minSpareServers<br /> </td> 
-   <td> Mindestanzahl der untergeordneten Server. Die MTA versucht, mindestens diese Anzahl von Servern auszuführen. Wenn weniger vorhanden ist, werden neue Server jede Sekunde neu gestartet, bis dieser Wert erreicht ist.<br /> </td> 
+   <td> Minimale Anzahl an untergeordneten Servern Die MTA versucht, mindestens diese Anzahl von Servern auszuführen. Wenn weniger vorhanden ist, werden neue Server jede Sekunde neu gestartet, bis dieser Wert erreicht ist.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
   <tr> 
    <td> startSpareServers<br /> </td> 
-   <td> Anzahl der untergeordneten Server beim Beginn. Die Anzahl der untergeordneten Server wird dynamisch überwacht. bei MTA-Beginn so viele untergeordnete Server wie durch diesen Wert angegeben erstellt werden. Normalerweise können untergeordnete Server nicht schneller als ein Server pro Sekunde gestartet werden, um Hostressourcen zu sparen. Bei MTA-Beginn wird diese Einschränkung jedoch außer Kraft gesetzt, sodass untergeordnete Server so bald wie möglich verfügbar sind.<br /> </td> 
+   <td> Anzahl an untergeordneten Servern beim Start Die Anzahl an untergeordneten Servern wird dynamisch kontrolliert. Beim Start des MTAs erstellt dieser die hier bestimmte Anzahl an untergeordneten Servern. Normalerweise werden untergeordnete Server maximal im Rhythmus von einem Server pro Sekunde gestartet, um das System nicht zu überlasten. Beim Start des MTAs kommt diese Beschränkung jedoch nicht zum Tragen und die untergeordneten Server werden so schnell wie möglich hinzugeschaltet.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 0<br /> </td> 
   </tr> 
@@ -1799,7 +1799,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> idleChildTimeoutSec<br /> </td> 
-   <td> Zeitüberschreitung, bis leere untergeordnete Server beendet wurden. Wenn ein untergeordneter Server eine Leerlaufzeit hat, die größer als dieser Parameter ist, wird er automatisch abgeschaltet, um Hostressourcen freizugeben.<br /> </td> 
+   <td> Timeout inaktiver untergeordneter Sitzungen Sollte ein untergeordneter Server länger als für diesen Parameter definiert inaktiv bleiben, wird er automatisch beendet, um unnötige Ressourcenbeanspruchung zu vermeiden.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 60<br /> </td> 
   </tr> 
@@ -1811,13 +1811,13 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> maxGCMConnectPerChild<br /> </td> 
-   <td> Maximale Anzahl paralleler Http-Anfragen an FCM von jedem Kindserver initiiert.<br /> </td> 
+   <td> Maximale Anzahl paralleler HTTP-Anfragen an FCM von jedem untergeordneten Server initiiert.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 8<br /> </td> 
   </tr> 
   <tr> 
    <td> maxMsgPerChild<br /> </td> 
-   <td> Maximale Anzahl der Nachrichten pro untergeordneter Server. Jedes untergeordnete MTA-Objekt verarbeitet diese Anzahl von Nachrichten und stirbt. Es ist wichtig, eine Zahl anzugeben, mit der Speicher- oder Ressourcenlecks im MTA harmlos sind (normalerweise einige Tausend). Auch wenn im MTA-Code keine Speicherlecks bekannt sind, sind die eingebetteten JavaScript- und XSL-Engines nicht vollständig zuverlässig.<br /> </td> 
+   <td> Maximale Nachrichtenanzahl pro untergeordnetem Server Jedes untergeordnete MTA-Exemplar verarbeitet diese Anzahl an Nachrichten und stirbt. Die angegebene Anzahl muss gewährleisten, dass auch eine nachlässige Speicherverwaltung keine negativen Konsequenzen verursachen kann. Selbst wenn im MTA keine bekannten Lecks vorhanden sind, können XSL-Stylesheets oder JavaScript-Codes der Nachrichten hiervon betroffen sein.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 5000000<br /> </td> 
   </tr> 
@@ -1829,7 +1829,7 @@ Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../i
   </tr> 
   <tr> 
    <td> maxWorkingSetMb<br /> </td> 
-   <td> Maximale Speichergröße (in MB), die ein untergeordneter Prozess verwenden kann. Über dieser Grenze hinaus wird der Prozess gestoppt, sodass der verwendete Speicher an das System freigegeben wird. <br /> </td> 
+   <td> Maximale Speicherkapazität in Megabyte, die ein untergeordneter Server verbrauchen darf. Bei Überschreiten muss der Vorgang gestoppt werden, um die Speicherkapazität freizugeben. <br /> </td> 
    <td> Lang<br /> </td> 
    <td> 128<br /> </td> 
   </tr> 
@@ -1886,7 +1886,7 @@ Konfigurieren Sie im Knoten **mta > child > smtp** die folgenden Parameter. Dies
   </tr> 
   <tr> 
    <td> maxSessionsPerChild<br /> </td> 
-   <td> Maximale Anzahl an SMTP-Sitzungen pro untergeordnetem Server Um eine Nachricht zu senden, initialisiert das MTA eine SMTP-Verbindung mit dem Empfänger-MTA. Die maximale Anzahl gleichzeitiger und aktiver SMTP-Sitzungen für einen bestimmten untergeordneten Server ist durch diesen Wert begrenzt. Wenn Sie diesen Wert mit maxSpareServers multiplizieren, erhalten Sie die maximale Anzahl von Meldungen, die gleichzeitig von einem bestimmten untergeordneten Server verarbeitet werden können.<br /> </td> 
+   <td> Maximale Anzahl an SMTP-Sitzungen pro untergeordnetem Server Um eine Nachricht zuzustellen, initiiert der MTA eine SMTP-Verbindung zum Empfänger-MTA. Die maximale Anzahl an simultan auf demselben untergeordneten Server aktiven SMTP-Sitzungen ist durch diesen Wert begrenzt. Das Produkt aus diesem Wert und maxSpareServers entspricht der maximalen Anzahl an parallel auf einen untergeordneten Server gesendeten Nachrichten.<br /> </td> 
    <td> Lang<br /> </td> 
    <td> 1000<br /> </td> 
   </tr> 
@@ -1939,7 +1939,7 @@ Weitere Informationen finden Sie unter [Liste der zu verwendenden IP-Adressen](.
   </tr> 
   <tr> 
    <td> publicId<br /> </td> 
-   <td> Kennung der zugeordneten öffentlichen Adresse. Wird vom Statistikserver als Schlüssel verwendet. Muss numerisch sein. Siehe diesen <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">Abschnitt</a>.<br /> </td> 
+   <td> Kennung der zugeordneten öffentlichen Adresse. Wird vom Statistikserver als Schlüssel verwendet. Muss numerisch sein. Weitere Informationen finden Sie in diesem <a href="../../installation/using/email-deliverability.md#managing-ip-addresses">Abschnitt</a>.<br /> </td> 
    <td> Lang<br /> </td> 
   </tr> 
   <tr> 
@@ -2193,7 +2193,7 @@ Hier sind die verschiedenen Parameter des Knotens **restore**. Dies ist die Konf
 
 Hier sind die verschiedenen Parameter des Knotens **securityZone**.
 
-Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../installation/using/security-zones.md).
+Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2291,7 +2291,7 @@ Die Standardkonfiguration lautet:
 
 Hier sind die verschiedenen Parameter des Knotens **securityZone > subNetwork**.
 
-Weitere Informationen finden Sie unter [Definieren von Sicherheitszonen](../../installation/using/security-zones.md).
+Weitere Informationen finden Sie unter [Sicherheitszonen definieren](../../installation/using/security-zones.md).
 
 <table> 
  <thead> 
@@ -2500,7 +2500,7 @@ Hier sind die verschiedenen Parameter des Knotens **stat**. Dies ist die Konfigu
   </tr> 
   <tr> 
    <td> Port<br /> </td> 
-   <td> Server-Listen-Port. Siehe diesen <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">Abschnitt</a>.<br /> </td> 
+   <td> Server-Listen-Port. Weitere Informationen finden Sie in diesem <a href="../../installation/using/email-deliverability.md#definition-of-the-server-port">Abschnitt</a>.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -3486,4 +3486,3 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
   </tr> 
  </tbody> 
 </table>
-
