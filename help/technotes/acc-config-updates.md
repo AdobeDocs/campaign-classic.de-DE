@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -118,7 +118,7 @@ Das Upgrade auf eine der folgenden neuen Versionen ist obligatorisch:
 * Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
 * Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
 * Campaign-Version 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
-* Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
+* Campaign-Version 20.2.5. [Mehr dazu](../rn/using/release--20-2.md)
 * Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
 Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen.
@@ -147,7 +147,7 @@ Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md
 
 Wenn Sie als gehosteter Kunde ein Upgrade auf den neuen Build durchgeführt haben, hat Adobe Ihre Instanz(en) bereits auf die HTTP/2-basierte API aktualisiert.
 
-Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren. [Erfahren Sie, wie Sie zu HTTP/2 migrieren](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html).
+Als Kunde vor Ort/Hybrid müssen Sie Ihre Konfiguration aktualisieren. [Erfahren Sie, wie Sie zu HTTP/2 migrieren](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html).
 
 ### Aktualisierungen des APNs-Stammzertifikats
 
