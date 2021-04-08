@@ -27,6 +27,7 @@ Bei der Mitteilung einer bevorstehenden Entfernung/Ersetzung von Campaign Classi
 Durch dieses Vorgehen erhält der Kunde mindestens einen Versionszyklus Zeit, um seine Implementierung an eine neue Version oder einen Nachfolger einer eingestellten Funktion anzupassen, bevor sie tatsächlich entfernt wird.
 
 >[!NOTE]
+>
 >Die Versionen und neuen Funktionen von Adobe Campaign sind in den [Versionshinweisen](../../rn/using/latest-release.md) aufgeführt.
 
 ## Eingestellte Funktionen{#deprecated-features}
@@ -186,6 +187,7 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 * Windows 7, XP, Vista
 
 >[!NOTE]
+>
 >Ab Campaign-Version 20.1 ist Campaign Classic Client Console (32 Bit) nicht mehr mit den aktuellen Campaign-Versionen kompatibel. Sie müssen Client Console mit 64 Bit verwenden.
 
 
@@ -197,7 +199,7 @@ Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen
 * Debian 7. [Weitere Infos](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Weitere Infos](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Weitere Infos](https://support.microsoft.com/en-us/lifecycle/search/1163)
-* SLES 11. [Weitere Infos](ttps://www.suse.com/lifecycle)
+* SLES 11. [Weitere Infos] (ttps://www.suse.com/lifecycle)
 
 ### Webserver {#web-server-eol}
 
