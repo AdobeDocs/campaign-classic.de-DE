@@ -6,14 +6,14 @@ description: Konfigurieren der Oberfläche
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
+exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
 translation-type: tm+mt
-source-git-commit: d6327cb5307ab5d37c15afa45dfd180ef04cb5a2
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 3%
 
 ---
-
 
 # Konfigurieren der Oberfläche{#configuring-the-interface}
 
@@ -70,7 +70,7 @@ Wenn Sie ein neues Formular erstellen, können Sie die Daten der Tabelle für de
 
    >[!NOTE]
    >
-   >Weitere Informationen zu den Typdateien **navtree** finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-workspace.md#about-navigation-hierarchy).
+   >Weitere Informationen zu den Typdateien **navtree** finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
    Im aktuellen Beispiel muss die Datei **navtree** auf dem Schema **cus:single** basieren und daher das folgende Formular haben:
 
@@ -91,4 +91,3 @@ Wenn Sie ein neues Formular erstellen, können Sie die Daten der Tabelle für de
    ```
 
 1. Speichern Sie die Erstellung.
-
