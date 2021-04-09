@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -509,7 +509,6 @@ ht-degree: 98%
       + [Zugriff auf externe Datenbanken](workflow/using/accessing-an-external-database--fda-.md)
       + [Verwalten von Berechtigungen](workflow/using/managing-rights.md)
       + [Verwalten von Aktivitätsbildern](workflow/using/managing-activity-images.md)
-      + [Verwalten von Neigungen](workflow/using/managing-propensity.md)
       + [Verwalten von Zeitzonen](workflow/using/managing-time-zones.md)
       + [Technische Workflows](workflow/using/about-technical-workflows.md)
 + Verwalten von Angeboten {#managing-offers}
@@ -625,7 +624,7 @@ ht-degree: 98%
       + [Enterprise-Bereitstellung](installation/using/enterprise-deployment.md)
       + [Mid-Sourcing-Bereitstellung](installation/using/mid-sourcing-deployment.md)
       + [Power Booster und Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Checkliste für Sicherheit und Datenschutz {#security-privacy}
+   + Sicherheits- und Datenschutzeinstellungen {#security-privacy}
       + [Erste Schritte mit Sicherheit und Datenschutz](installation/using/get-started-security-privacy.md)
       + [Personalisierung und Datenschutz](installation/using/privacy.md)
       + [Sichere Zugriffsverwaltung](installation/using/access-management.md)
@@ -654,12 +653,13 @@ ht-degree: 98%
       + [Die wichtigsten Schritte](installation/using/about-initial-configuration.md)
       + [Instanz erstellen und anmelden](installation/using/creating-an-instance-and-logging-on.md)
       + [Datenbank erstellen und konfigurieren](installation/using/creating-and-configuring-the-database.md)
-      + [Campaign-Server konfigurieren](installation/using/campaign-server-configuration.md)
       + [Instanz bereitstellen](installation/using/deploying-an-instance.md)
       + [Integrierte Packages installieren](installation/using/installing-campaign-standard-packages.md)
    + Campaign konfigurieren {#additional-configurations}
-      + [Einstellungen des Campaign-Servers](installation/using/configuring-campaign-server.md)
+      + [Campaign-Server konfigurieren](installation/using/configuring-campaign-server.md)
       + [Sicherheitszonen definieren](installation/using/security-zones.md)
+      + [URL-Berechtigungen festlegen](installation/using/url-permissions.md)
+      + [Tomcat konfigurieren](installation/using/configure-tomcat.md)
       + [Technische E-Mail-Konfigurationen](installation/using/email-deliverability.md)
       + [Verwenden von MX-Servern mit Kampagne](installation/using/using-mx-servers.md)
       + [E-Mail-BCC konfigurieren](installation/using/email-archiving.md)
