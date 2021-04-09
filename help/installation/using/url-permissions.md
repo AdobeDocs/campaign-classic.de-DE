@@ -8,21 +8,31 @@ content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
 translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 8ab0aab42accbd1253d53e8133f5af0a38c724ea
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 36%
+source-wordcount: '338'
+ht-degree: 32%
 
 ---
 
 
-# URL-Berechtigungen {#url-permissions} konfigurieren
+# URL-Berechtigungen konfigurieren (lokal){#url-permissions}
 
 Die Liste der URLs, die standardmäßig von JavaScript-Codes (Workflows usw.) über Ihre Campaign Classic-Instanzen aufgerufen werden können, ist begrenzt. Diese URLs ermöglichen das ordnungsgemäße Funktionieren der Instanzen.
 
 Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URLs herzustellen. Es ist jedoch möglich, einige externe URLs zur Liste autorisierter URLs hinzuzufügen, damit Ihre Instanz eine Verbindung zu ihnen herstellen kann. Dadurch können Sie zwischen Ihren Campaign-Instanzen und externen Systemen, wie z. B. SFTP-Servern oder Websites, eine Verbindung herstellen, um den Datei- und/oder Datentransfer zu ermöglichen.
 
+>[!NOTE]
+>
+>Dieses Verfahren ist auf **lokale** Bereitstellungen beschränkt.
+>
+>Wenn Sie als Kunde **gehostet** auf [Kampagne Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, können Sie die Benutzeroberfläche für die Selbstbedienung der URL-Zugriffsberechtigungen verwenden. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+>
+>Andere **hybride/gehostete**-Kunden müssen sich an das Supportteam der Adobe wenden, um der Zulassungsliste IP hinzuzufügen.
+
+
 Bei Implementierungen von **Hybrid** und **On-Premise** muss der Administrator auf eine neue **urlPermission** in der Datei **serverConf.xml** verweisen.
+
 
 Es stehen drei Verbindungsschutzmodi zur Verfügung:
 
@@ -46,7 +56,7 @@ Es stehen drei Verbindungsschutzmodi zur Verfügung:
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
+* [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 * [Hosting-Modelle](hosting-models.md)
 * [Campaign-Server konfigurieren](configuring-campaign-server.md)
 * [Parameter der Konfigurationsdatei des Kampagne-Servers](the-server-configuration-file.md)
