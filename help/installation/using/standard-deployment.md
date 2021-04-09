@@ -6,14 +6,14 @@ description: Standardbereitstellung
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
-
 
 # Standardbereitstellung{#standard-deployment}
 
@@ -107,7 +107,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Ändern Sie **internal** in die Einstellung des Anwendungsservers.
 
-   Weitere Informationen finden Sie unter [Interner Bezeichner](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 1. Verknüpfen Sie die Datenbank mit der Instanz:
 
@@ -117,7 +117,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
 1. Aktivieren Sie in den Modulen **config-default.xml** und **config-demo.xml** die Module **web**, **trackinglogd** und **mta**.
 
-   Weitere Informationen finden Sie unter [Aktivieren von Prozessen](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 1. Bearbeiten Sie die Datei **serverConf.xml** und füllen Sie Folgendes aus:
 
@@ -131,7 +131,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
       >
       >Der Parameter **nameServers** wird nur unter Windows verwendet.
 
-      Weitere Informationen finden Sie unter [Versand settings](../../installation/using/campaign-server-configuration.md#delivery-settings).
+      Weitere Informationen finden Sie unter [Versand settings](configuring-campaign-server.md#delivery-settings).
 
    * die redundanten Tracking-Server in den Umleitungsparametern:
 
@@ -156,7 +156,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="front_srv2"/>
    ```
 
-   Weitere Informationen finden Sie in den folgenden Abschnitten:
+   Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
    * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
    * Windows: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
@@ -177,4 +177,3 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
    >[!NOTE]
    >
    >Wir verwenden die vorhandene Instanz der beiden zuvor erstellten Tracking-Server und verwenden die Anmeldung **internal**.
-
