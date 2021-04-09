@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: 0c83c989c7e3718a989a4943f5cde7ad4717fddc
+source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 31%
@@ -2814,7 +2814,7 @@ Hier sind die verschiedenen Parameter des Knotens **trackinglogd**. Dies ist die
 
 Hier sind die verschiedenen Parameter des Knotens **web**. Dies ist die Konfiguration des Webmoduls.
 
-Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#default-port-for-tomcat).
+Weitere Informationen finden Sie in diesem [Abschnitt](configuring-campaign-server.md#default-port-for-tomcat).
 
 <table> 
  <thead> 
@@ -2858,13 +2858,13 @@ Weitere Informationen finden Sie in diesem [Abschnitt](../../installation/using/
   </tr> 
   <tr> 
    <td> controlPort<br /> </td> 
-   <td> Überwachungsanschluss für Tomcat: Siehe <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurieren von Tomcat</a>.<br />. </td> 
+   <td> Überwachungsanschluss für Tomcat: Siehe <a href="configure-tomcat.md" target="_blank">Tomcat</a> konfigurieren.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> 8005<br /> </td> 
   </tr> 
   <tr> 
    <td> httpPort<br /> </td> 
-   <td> Tomcat HTTP-Listening-Anschluss: Siehe <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurieren von Tomcat</a>.<br />. </td> 
+   <td> Tomcat HTTP-Listening-Anschluss: Siehe <a href="configure-tomcat.md" target="_blank">Tomcat</a> konfigurieren.<br /> </td> 
    <td> Kurz<br /> </td> 
    <td> 8080<br /> </td> 
   </tr> 
@@ -3149,7 +3149,7 @@ Weitere Informationen finden Sie unter [Dynamische Seitensicherheit und Relais](
   </tr> 
   <tr> 
    <td> targetUrl<br /> </td> 
-   <td> URL der Seite "Zielgruppe": Siehe <a href="../../installation/using/configuring-campaign-server.md#configuring-tomcat" target="_blank">Konfigurieren von Tomcat</a>.<br />. </td> 
+   <td> URL der Seite "Zielgruppe": Siehe <a href="configure-tomcat.md" target="_blank">Tomcat</a> konfigurieren.<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
