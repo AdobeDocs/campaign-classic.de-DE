@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
 translation-type: tm+mt
-source-git-commit: e165af411d2580d69694f1730116cb198418bfe2
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '7970'
 ht-degree: 31%
@@ -201,7 +201,7 @@ Hier sind die verschiedenen Parameter des Knotens **dataStore**. Hier werden die
   </tr> 
   <tr> 
    <td> uploadAllowlist<br /> </td> 
-   <td> Dateien, die hochgeladen werden dürfen, durch ',' getrennt. String muss ein gültiger regulärer Java-Ausdruck sein. Siehe <a href="../../installation/using/configuring-campaign-server.md#limiting-uploadable-files" target="_blank">Eingrenzen hochladbarer Dateien</a>.<br /> </td> 
+   <td> Dateien, die hochgeladen werden dürfen, durch ',' getrennt. String muss ein gültiger regulärer Java-Ausdruck sein. Siehe <a href="file-res-management.md" target="_blank">Eingrenzen hochladbarer Dateien</a>.<br /> </td> 
    <td> String <br /> </td> 
    <td> '.+' <br /> </td> 
   </tr> 
@@ -425,7 +425,7 @@ Konfigurieren Sie im Knoten **dataStore > dataSource > pool** die Parameter des 
 
 Hier sind die verschiedenen Parameter des Knotens **dataStore > virtualDir**. Dies ist die Konfiguration des virtuellen Ordners zu einer echten Ordnerzuordnung.
 
-Weitere Informationen finden Sie unter [Verwalten von öffentliche Ressourcen](../../installation/using/configuring-campaign-server.md#managing-public-resources).
+Weitere Informationen finden Sie unter [Verwalten von öffentliche Ressourcen](file-res-management.md).
 
 <table> 
  <thead> 
@@ -867,7 +867,7 @@ Hier sind die verschiedenen Parameter des Knotens **ooconv**. Dies ist die Konfi
 
 Hier sind die verschiedenen Parameter des Knotens **proxyConfig**. Dies ist die Konfiguration von Proxyparametern.
 
-Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res-management.md).
 
 <table> 
  <thead> 
@@ -904,7 +904,7 @@ Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../in
 
 Konfigurieren Sie im Knoten **proxyConfig > HTTP Proxy / Secure proxy** die folgenden Parameter.
 
-Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+Weitere Informationen finden Sie unter [Proxy-Verbindungskonfiguration](file-res-management.md).
 
 <table> 
  <thead> 
