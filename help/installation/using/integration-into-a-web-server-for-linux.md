@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie Kampagne in einen Webserver integrieren könn
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 4%
 
 ---
-
 
 # Integration in einen Webserver für Linux{#integration-into-a-web-server-for-linux}
 
@@ -23,7 +23,7 @@ Sie können diesen integrierten Tomcat-Server verwenden, um HTTP-Anforderungen z
 
 In diesem Fall:
 
-* Der standardmäßige Listening-Anschluss ist 8080. Informationen zum Ändern finden Sie unter [Konfigurieren von Tomcat](../../installation/using/configuring-campaign-server.md#configuring-tomcat).
+* Der standardmäßige Listening-Anschluss ist 8080. Um sie zu ändern, lesen Sie [diesen Abschnitt](configure-tomcat.md).
 * Der Client Konsolen verbindet sich dann mit einer URL wie:
 
    ```
