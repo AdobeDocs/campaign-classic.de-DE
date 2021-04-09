@@ -8,7 +8,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 translation-type: tm+mt
-source-git-commit: 65662a49aefdd6b5f85b39677908696f093779e8
+source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
 workflow-type: tm+mt
 source-wordcount: '2835'
 ht-degree: 92%
@@ -203,7 +203,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 * Zertifikate für iOS-Mobile Apps mit dem iOS-HTTP2-Connector werden jetzt vor dem Senden von Push-Benachrichtigungen validiert, was verhindert, dass Sendungen aufgrund abgelaufener Zertifikate fehlschlagen.
 
-* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Weitere Infos](../../installation/using/configuring-campaign-server.md#proxy-connection-configuration).
+* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Weitere Infos](../../installation/using/file-res-management.md).
 
 * Neue Option in den Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]**, um die Ausführung nach einer Begrenzung zu beenden. Der Standardwert ist 1 Stunde. [Weitere Infos](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
