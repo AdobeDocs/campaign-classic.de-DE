@@ -1,25 +1,25 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Konfiguration des Servers
-description: Weitere Informationen zu Best Practices für die Serverkonfiguration.
+title: Serversicherheitskonfiguration
+description: Weitere Informationen zu Best Practices bei der Serverkonfiguration
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
 translation-type: tm+mt
-source-git-commit: e31d386af4def80cdf258457fc74205b1ca823b3
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 46%
+source-wordcount: '628'
+ht-degree: 42%
 
 ---
 
-# Serverkonfiguration {#server-configuration}
+# Sicherheitseinstellungen des Servers {#server-configuration}
 
 ## Schutz vor Datei-Upload
 
-Erkundigen Sie sich bei den Benutzern, welche Arten von Dateien sie über die Schnittstelle nlclient/web zum Server hochladen. In Unternehmen sind die folgenden Dateien gebräuchlich:
+Überprüfen Sie mithilfe der Kampagne Client Console oder der Weboberfläche, welche Dateien auf den Server hochgeladen werden. Zur Erinnerung:
 
 * Bilder (jpg, gif, png, ...)
 * Inhalte (zip, html, css, ...)
