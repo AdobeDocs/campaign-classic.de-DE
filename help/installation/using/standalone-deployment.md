@@ -6,14 +6,14 @@ description: Eigenständige Bereitstellung
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
+exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
 translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 3%
+source-wordcount: '1088'
+ht-degree: 6%
 
 ---
-
 
 # Eigenständige Bereitstellung{#standalone-deployment}
 
@@ -101,7 +101,7 @@ Gehen Sie wie folgt vor:
 
    Drücken Sie **Strg+C**, um den Server zu beenden.
 
-   Weitere Informationen finden Sie in den folgenden Abschnitten:
+   Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
    * Für Linux: [Erster Beginn des Servers](../../installation/using/installing-packages-with-linux.md#first-start-up-of-the-server),
    * Windows: [Erster Beginn des Servers](../../installation/using/installing-the-server.md#first-start-up-of-the-server).
@@ -112,7 +112,7 @@ Gehen Sie wie folgt vor:
    nlserver config -internalpassword
    ```
 
-   Weitere Informationen finden Sie unter [Interner Bezeichner](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 1. Erstellen Sie die Instanz **demo** mit den DNS-Masken für die Verfolgung (in diesem Fall **tracking.Kampagne.net**) und den Zugriff auf Client-Konsolen (in diesem Fall **console.Kampagne.net**). Es gibt zwei Möglichkeiten, dies zu tun:
 
@@ -120,7 +120,7 @@ Gehen Sie wie folgt vor:
 
       ![](assets/install_create_new_connexion.png)
 
-      Weitere Informationen finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
+      Weitere Informationen finden Sie unter [Erstellen Sie eine Instanz und melden Sie sich bei](../../installation/using/creating-an-instance-and-logging-on.md) an.
 
       or
 
@@ -150,7 +150,7 @@ Gehen Sie wie folgt vor:
    </serverconf>
    ```
 
-   Weitere Informationen finden Sie unter [Aktivieren von Prozessen](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 1. Bearbeiten Sie die Datei **serverConf.xml** und geben Sie die Domäne des Versands an. Geben Sie dann die IP- (oder Host-)Adressen der DNS-Server an, die vom MTA-Modul verwendet werden, um die DNS-Abfragen des MX-Typs zu beantworten.
 
@@ -162,7 +162,7 @@ Gehen Sie wie folgt vor:
    >
    >Der Parameter **nameServers** wird nur unter Windows verwendet.
 
-   Weitere Informationen finden Sie unter [Serverkonfiguration für Kampagnen](../../installation/using/campaign-server-configuration.md).
+   Weitere Informationen finden Sie unter [Serverkonfiguration für Kampagnen](../../installation/using/configuring-campaign-server.md).
 
 1. Kopieren Sie das Programm zum Einrichten der Clientkonsole (**setup-client-7.XX**, **YYYY.exe** für v7 oder **setup-client-6.XX**, **YYYY.exe** für v6.1) in **/datakit/nl /eng/jsp** Ordner. [Weitere Informationen](../../installation/using/client-console-availability-for-windows.md).
 
@@ -179,7 +179,7 @@ Gehen Sie wie folgt vor:
    <redir status="OK" date="AAAA/MM/JJ HH:MM:SS" build="XXXX" host="tracking.campaign.net" localHost="localhost"/>
    ```
 
-   Weitere Informationen finden Sie in den folgenden Abschnitten:
+   Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
    * Für Linux: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-linux.md#launching-the-web-server-and-testing-the-configuration)
    * Windows: [Webserver starten und Konfiguration testen](../../installation/using/integration-into-a-web-server-for-windows.md#launching-the-web-server-and-testing-the-configuration)
@@ -213,7 +213,7 @@ Gehen Sie wie folgt vor:
 
 1. Beginn der Adobe Campaign-Client-Konsole (von der vorherigen Downloadseite oder bei einer Windows-Installation direkt auf dem Server gestartet), stellen Sie die Server-Verbindungs-URL auf https://console.campaign.net ein und verbinden Sie sich mit der **internal**-Anmeldung.
 
-   Weitere Informationen finden Sie unter [Erstellen einer Instanz und Anmelden bei](../../installation/using/creating-an-instance-and-logging-on.md) und [Interner Bezeichner](../../installation/using/campaign-server-configuration.md#internal-identifier).
+   Siehe [diese Seite](../../installation/using/creating-an-instance-and-logging-on.md) und [diesen Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
    Der Assistent zum Erstellen der Datenbank wird angezeigt, wenn Sie sich zum ersten Mal anmelden:
 
@@ -244,4 +244,3 @@ Gehen Sie wie folgt vor:
    * Zugriff von: Geben Sie die beiden URLs für Berichte, Webformulare und Mirrorseiten an.
 
       ![](assets/d_ncs_install_web_url.png)
-
