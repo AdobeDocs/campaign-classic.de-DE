@@ -6,14 +6,14 @@ description: In diesem Abschnitt finden Sie Informationen zur Installation und K
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
+exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1055'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Mid-Sourcing-Server{#mid-sourcing-server}
 
@@ -61,7 +61,7 @@ Sie müssen jedoch Folgendes anwenden:
    </serverconf>
    ```
 
-   Weitere Informationen finden Sie unter [Aktivieren von Prozessen](../../installation/using/campaign-server-configuration.md#enabling-processes).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#enabling-processes).
 
 * Die Schritte **6**, **9** und **10** sind nicht erforderlich.
 * Bei den Schritten **12** und **13** müssen Sie den 8080-Port in der Verbindungs-URL angeben (da die Konsole direkt mit Tomcat kommuniziert, nicht über den Webserver). Die URL wird zu [http://console.campaign.net:8080](http://console.campaign.net). Wählen Sie im Schritt **13** das **[!UICONTROL Problem mit dem Mid-Sourcing]**-Paket sowie die zu installierenden Pakete aus.
@@ -180,4 +180,3 @@ Sie müssen den Server beenden und dann neu starten, damit die Änderung berück
 Wenn der Versand von Nachrichten von mehreren Mid-Sourcing-Servern verwaltet werden soll, wählen Sie die Option **[!UICONTROL Routing mit abwechselnden Mid-Sourcing-Konten]** und geben Sie die verschiedenen Server an.
 
 ![](assets/s_ncs_install_midsourcing_tracking04.png)
-
