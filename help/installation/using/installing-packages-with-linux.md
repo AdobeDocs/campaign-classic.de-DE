@@ -6,14 +6,14 @@ description: Installieren von Paketen mit Linux
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
+exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1211'
 ht-degree: 1%
 
 ---
-
 
 # Installieren von Paketen mit Linux{#installing-packages-with-linux}
 
@@ -182,7 +182,7 @@ Bestimmte Kombinationen erfordern Änderungen an der Umgebung, die zum Ausführe
 
 Bearbeiten Sie bei Bedarf die Datei **customer.sh** mit dem Befehl **vi customer.sh** und passen Sie die Konfiguration an oder fügen Sie fehlende Zeilen hinzu:
 
-* Für Oracle-Client:
+* Für den Oracle-Client:
 
    ```
    export ORACLE_HOME=/usr/local/instantclient_10_2
@@ -190,7 +190,7 @@ Bearbeiten Sie bei Bedarf die Datei **customer.sh** mit dem Befehl **vi customer
    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH 
    ```
 
-   Der Inhalt der Variablen &quot;ORACLE_HOME-Umgebung&quot;entspricht dem Oracle-Installationsordner.
+   Der Inhalt der Variablen &quot;ORACLE_HOME-Umgebung&quot;entspricht dem Installationsordner der Oracle.
 
    Der Inhalt der Variablen TNS_ADMIN muss mit dem Speicherort der Datei **tnsnames.ora** übereinstimmen.
 
@@ -252,9 +252,9 @@ systemctl stop nlserver
 systemctl start nlserver
 ```
 
-### Oracle Client in Linux {#oracle-client-in-linux}
+### Oracle Client unter Linux {#oracle-client-in-linux}
 
-Wenn Sie Oracle mit Adobe Campaign verwenden, müssen Sie die Oracle-Clientebenen unter Linux konfigurieren.
+Bei Verwendung von Oracle mit Adobe Campaign müssen Sie die Oracle-Client-Ebenen in Linux konfigurieren.
 
 * Vollständiger Client verwenden
 * TNS-Definition
@@ -359,4 +359,4 @@ Anschließend werden die folgenden Informationen angezeigt:
 
 Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **internal**, die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist obligatorisch, eine zu definieren.
 
-Siehe Abschnitt [Interne Kennung](../../installation/using/campaign-server-configuration.md#internal-identifier).
+Weiterführende Informationen finden Sie in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
