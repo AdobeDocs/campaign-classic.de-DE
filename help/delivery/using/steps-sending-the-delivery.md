@@ -6,14 +6,14 @@ description: Versand konfigurieren und senden
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: ht
-source-git-commit: 72fdac4afba6c786cfbd31f4a916b0539ad833e3
-workflow-type: ht
+exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
+translation-type: tm+mt
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 100%
 
 ---
-
 
 # Versand konfigurieren und senden {#configuring-and-sending-the-delivery}
 
@@ -41,7 +41,7 @@ Vor der Durchführung des Versands können Sie im Tab **[!UICONTROL Versand]** d
 
    >[!NOTE]
    >
-   >Bei Mid-Sourcing-Installationen ist von der Verwendung dieser Option abzuraten, damit der MTA nicht aufgerufen wird. Weitere Informationen zur Konfiguration eines SMTP-Servers finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#personalizing-delivery-parameters).
+   >Bei Mid-Sourcing-Installationen ist von der Verwendung dieser Option abzuraten, damit der MTA nicht aufgerufen wird. Weitere Informationen zur Konfiguration eines SMTP-Servers finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#delivery-settings).
 
 * **[!UICONTROL E-Mail-BCC]**: Mit dieser Option können Sie E-Mails in einem externen System speichern, indem Sie einfach eine BCC-E-Mail-Adresse zu Ihrer Versandzielgruppe hinzufügen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 
