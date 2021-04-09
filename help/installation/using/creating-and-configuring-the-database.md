@@ -6,14 +6,14 @@ description: Erstellen und Konfigurieren der Vorlagen
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 1%
 
 ---
-
 
 # Erstellen und Konfigurieren der Vorlagen{#creating-and-configuring-the-database}
 
@@ -28,7 +28,7 @@ Die Konfigurationsschritte werden nachfolgend beschrieben.
 >
 >Die Namen von Datenbanken, Benutzern und Schemas dürfen nicht mit einer Nummer oder Sonderzeichen Beginn werden.
 >
->Diese Vorgänge können nur vom Bezeichner **internal** ausgeführt werden. Weitere Informationen finden Sie unter [Interner Bezeichner](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Diese Vorgänge können nur vom Bezeichner **internal** ausgeführt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Fall 1: Erstellen/Recycling einer Datenbank {#case-1--creating-recycling-a-database}
 
@@ -75,7 +75,7 @@ Definieren Sie im Fenster **[!UICONTROL Serverzugriff]** den Datenbankserverzugr
 
 Geben Sie dazu den Namen und das Kennwort eines **Administratorsystemkontos** ein, das Zugriff auf die Datenbanken hat, d.h.:
 
-* **ein** System für eine Oracle-Datenbank,
+* **eine** Oracle-Datenbank,
 * **Microsoft SQL Server-Datenbank** verwenden,
 * **** Postgression für eine PostgreSQL-Datenbank,
 * **db2inst1**  für eine DB2-Datenbank.
@@ -123,7 +123,7 @@ Im Fenster **[!UICONTROL Erstellungsschritte]** können Sie das SQL-Skript, das 
 
 ![](assets/s_ncs_install_db_oracle_creation04.png)
 
-* Bei einer Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenbank kann der Administrator auch die **Datenspeicherung Parameter** definieren, die beim Erstellen von Datenbankobjekten verwendet werden.
+* Bei einer Oracle-, Microsoft SQL Server- oder PostgreSQL-Datenspeicherung kann der Administrator auch die **Parameter der** definieren, die beim Erstellen von Datenbankobjekten verwendet werden.
 
    Diese Parameter erhalten die genauen Tablespace-Namen (Warnung: Groß-/Kleinschreibung beachten). Sie werden jeweils im Knoten **[!UICONTROL Administration > Plattform > Optionen]** der folgenden Optionen gespeichert (siehe [diesen Abschnitt](../../installation/using/configuring-campaign-options.md#database)):
 
@@ -204,7 +204,7 @@ Sie müssen die folgenden Einstellungen definieren:
    >[!NOTE]
    >
    >Achten Sie darauf, dass sowohl der Name des Schemas als auch der Benutzername übereinstimmen. Es wird empfohlen, eine Datenbank über den Kampagne Console-Client zu erstellen.
-   >Bei einer Oracle-Datenbank müssen Sie keinen Kontonamen eingeben.
+   >Bei einer Oracle-Datenbank müssen Sie nicht den Kontonamen eingeben.
 
 * Geben Sie an, ob die Datenbank Unicode sein soll oder nicht.
 
@@ -245,4 +245,3 @@ Beispiel für eine Microsoft SQL Server-Konfiguration auf der Base61-Datenbank, 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
-
