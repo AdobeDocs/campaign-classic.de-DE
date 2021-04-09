@@ -6,14 +6,14 @@ description: Installieren des Servers
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 2%
+source-wordcount: '421'
+ht-degree: 3%
 
 ---
-
 
 # Installieren des Servers{#installing-the-server}
 
@@ -139,7 +139,7 @@ Die folgenden Informationen werden angezeigt:
 
 Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **internal**, die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist obligatorisch, eine zu definieren.
 
-Siehe Abschnitt [Interne Kennung](../../installation/using/campaign-server-configuration.md#internal-identifier).
+Weiterführende Informationen finden Sie in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Starten von Adobe Campaign-Diensten {#starting-adobe-campaign-services}
 
@@ -164,4 +164,3 @@ hinzufügen der folgenden Umgebung:
 ```
 OOO_BASIS_INSTALL_DIR="C:\Program Files (x86)\LibreOffice 6\"
 ```
-
