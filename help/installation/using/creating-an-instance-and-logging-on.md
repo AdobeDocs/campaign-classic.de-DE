@@ -6,14 +6,14 @@ description: Erstellen einer Instanz und Anmelden
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
+exl-id: a025026e-688e-4ec1-abc4-40ee040d2b3b
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
-
 
 # Erstellen einer Instanz und Anmelden{#creating-an-instance-and-logging-on}
 
@@ -21,11 +21,11 @@ Um eine neue Instanz und eine neue Adobe Campaign-Datenbank zu erstellen, führe
 
 1. Erstellen Sie die Verbindung.
 1. Melden Sie sich an, um die zugehörige Instanz zu erstellen.
-1. Erstellen und konfigurieren Sie die Datenbank.
+1. Datenbank erstellen und konfigurieren.
 
 >[!NOTE]
 >
->Diese Vorgänge können nur vom Bezeichner **internal** ausgeführt werden. Weitere Informationen finden Sie unter [Interner Bezeichner](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Diese Vorgänge können nur vom Bezeichner **internal** ausgeführt werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 Beim Starten der Adobe Campaign-Konsole greifen Sie auf eine Anmeldeseite zu.
 
@@ -82,4 +82,3 @@ Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
    >[!NOTE]
    >
    >Die Instanz kann über die Befehlszeile erstellt werden. Weitere Informationen finden Sie unter [Befehlszeilen](../../installation/using/command-lines.md).
-
