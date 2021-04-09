@@ -6,14 +6,14 @@ description: Übliche Befehle
 audience: production
 content-type: reference
 topic-tags: production-procedures
+exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 8%
 
 ---
-
 
 # Übliche Befehle{#usual-commands}
 
@@ -29,6 +29,7 @@ Der Parameter **`<command>`** entspricht dem Modul.
 >
 >* In jedem Fall können Sie das Argument **-noconsole** hinzufügen, um die nach dem Starten der Module angezeigten Kommentare zu löschen.
 >* Umgekehrt können Sie das Argument **-verbose** hinzufügen, um weitere Informationen anzuzeigen.
+
 >
 
 
@@ -155,13 +156,15 @@ So ändern Sie das **interne**-Kennwort: **nlserver config -internalpassword**
 
 >[!IMPORTANT]
 >
->Um sich mit dem Bezeichner **Internal** anzumelden, müssen Sie vorher ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/campaign-server-configuration.md#internal-identifier).
+>Um sich mit dem Bezeichner **Internal** anzumelden, müssen Sie vorher ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 >[!NOTE]
 >
 >* Im Allgemeinen können Sie den Befehl **config** verwenden, anstatt die Konfigurationsdateien manuell zu ändern
 >* Verwenden Sie zum Abrufen der Liste von Parametern das **-?** Parameter:  **nlserver config -?**
 >* Bei einer Oracle-Datenbank dürfen Sie das Konto nicht angeben. Die Syntax lautet wie folgt:
+
 >
->  nlserver config -setdblogin:Oracle:test6@dbserver
+>  
+nlserver config -setdblogin:Oracle:test6@dbserver
 
