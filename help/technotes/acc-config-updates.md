@@ -7,10 +7,10 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 translation-type: tm+mt
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
+source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 99%
+source-wordcount: '1107'
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,6 @@ Das Upgrade auf eine der folgenden neuen Versionen ist obligatorisch:
 
 * Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
 * Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
-* Campaign-Version 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
 * Campaign-Version 20.2.5. [Mehr dazu](../rn/using/release--20-2.md)
 * Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
@@ -135,7 +134,7 @@ Kunden mit Hybrid-Umgebungen müssen darüber hinaus sicherstellen, dass Pipelin
 
 ### HTTP/2-basierte APNs-Provider-API
 
-Ab dem **31. März 2021** wird die ältere Version des Binärprotokolls nicht mehr vom Push-Benachrichtigungsdienst von Apple (Apple Push Notification service, APNs) unterstützt. [Mehr dazu](https://developer.apple.com/news/?id=c88acm2b).
+Seit dem 31. März 2021 **unterstützt der Apple Push Notification Service (APNs) nicht mehr das Legacy-Binärprotokoll.** [Mehr dazu](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sind Sie betroffen?**
 
@@ -151,7 +150,7 @@ Als Kunde vor Ort/Hybrid müssen Sie Ihre Konfiguration aktualisieren. [Erfahren
 
 ### Aktualisierungen des APNs-Stammzertifikats
 
-Am 29. März 2021 wirkt sich eine Infrastrukturaktualisierung des Push-Benachrichtigungsdienstes von Apple (Apple Push Notification service, APNs) auf den iOS-Kanal von Adobe Campaign Classic aus. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
+Am 29. März 2021 wirkte sich eine Infrastruktur-Aktualisierung des Apple Push Notification Service (APNs) auf den Adobe Campaign Classic iOS-Kanal aus. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
 Weitere Informationen zu den APNs-Änderungen finden Sie [auf dieser Seite](https://developer.apple.com/news/?id=7gx0a2lp).
 
