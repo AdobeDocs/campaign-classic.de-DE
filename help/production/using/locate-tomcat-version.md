@@ -6,16 +6,16 @@ description: Erfahren Sie, wie Sie die aktuelle Version des eingebetteten Tomcat
 audience: production
 content-type: reference
 topic-tags: troubleshooting
+exl-id: 76411b29-d300-4aaa-8d3b-d8ff74c3ce93
 translation-type: tm+mt
-source-git-commit: 49e49d5e35d14a31236cc4f78188cdf77353fbbf
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
-# Speicherort der Tomcat-Version{#locate-tomcat-version}
+# Tomcat-Version suchen{#locate-tomcat-version}
 
 Adobe Campaign verwendet ein eingebettetes **Webservlet mit dem Namen Apache Tomcat**, um HTTP/HTTPS-Anforderungen zwischen der Anwendung und jeder externen Schnittstelle (einschließlich Client-Konsole, verfolgte URL-Links, SOAP-Aufrufe und andere) zu verarbeiten. Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
