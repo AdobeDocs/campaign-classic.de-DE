@@ -6,14 +6,14 @@ description: Erweiterte Parameter
 audience: workflow
 content-type: reference
 topic-tags: advanced-management
+exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '524'
 ht-degree: 100%
 
 ---
-
 
 # Erweiterte Parameter{#advanced-parameters}
 
@@ -49,7 +49,10 @@ In der Regel werden diese Optionen im Diagramm durch Rechtsklick auf die Aktivit
 
 ## Affinität {#affinity}
 
-Mit diesem Feld können Sie die Ausführung einer Aktivität auf einem bestimmten Gerät erzwingen. Weitere Informationen hierzu finden Sie im Abschnitt [Die Neigung verwalten](../../workflow/using/managing-propensity.md).
+Es besteht die Möglichkeit, die Ausführung eines Workflows oder einer Workflow-Aktivität an eine bestimmte Engine zu binden. Hierzu müssen eine oder mehrere Affinitäten auf Workflow- oder Aktivitätsniveau definiert werden.
+
+Die Konfiguration von Workflows mit hoher Disponibilität wird in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities) erläutert.
+
 
 ## Max. Ausführungsdauer {#max--execution-period}
 
