@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Best Practices zur Konfiguration von We
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
+exl-id: fc0d3f16-5f62-473d-a1de-aab574eff734
 translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 32%
+source-wordcount: '325'
+ht-degree: 34%
 
 ---
-
 
 # Konfiguration des Webservers {#web-server-configuration}
 
@@ -58,7 +58,7 @@ Nachstehend finden Sie einige der wichtigsten Best Practices für die Konfigurat
    * ServerSignature auf **Off**
    * ServerTokens auf **Prod**
 
-   **Führen Sie auf IIS**  (siehe  [Dokumentation](https://www.iis.net/configreference/system.webserver/security/requestfiltering/verbs)) die folgende Konfiguration durch:
+   **Führen Sie auf IIS** die folgende Konfiguration durch:
 
    * Installieren Sie **URLScan**.
    * Ändern Sie die Datei **Urlscan.ini** in **RemoveServerHeader=1**.
@@ -66,7 +66,7 @@ Nachstehend finden Sie einige der wichtigsten Best Practices für die Konfigurat
 
 * Begrenzen Sie die Größe der Abfrage, um zu verhindern, dass wichtige Dateien hochgeladen werden.
 
-   **Fügen Sie auf Apache**  (siehe  [Dokumentation](http://httpd.apache.org/docs/2.2/mod/core.html#limitrequestbody)) die  **** LimitRequestBodydirektive (Größe in Byte) in / Verzeichnis hinzu.
+   **Fügen Sie auf Apache** die  **** LimitRequestBodydirektive (Größe in Byte) in / Verzeichnis hinzu.
 
    ```
    <Directory />
