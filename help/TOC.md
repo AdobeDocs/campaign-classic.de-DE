@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
-source-wordcount: '2489'
-ht-degree: 97%
+source-wordcount: '2516'
+ht-degree: 96%
 
 ---
 
@@ -213,7 +213,7 @@ ht-degree: 97%
       + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
       + [Versandstatus](delivery/using/delivery-statuses.md)
       + [Ursachen für das Fehlschlagen von Sendungen](delivery/using/understanding-delivery-failures.md)
-      + [Aktualisierung der Absprungqualifikation nach einem ISP-Ausfall](delivery/using/update-bounce-qualification.md)
+      + [Bounce-Qualifizierung nach einem ISP-Ausfall aktualisieren](delivery/using/update-bounce-qualification.md)
       + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
    + Nachrichten tracken {#tracking-messages}
       + [Über das Nachrichten-Tracking](delivery/using/about-message-tracking.md)
@@ -394,6 +394,10 @@ ht-degree: 97%
       + [Ereignisse für benutzerdefinierte Implementierungen konfigurieren](integrations/using/events.md)
       + [Pipeline-Überwachung](integrations/using/pipeline-monitoring.md)
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
+   + Adobe Experience Platform-Quellen und -Ziele {#aep-sources-destinations}
+      + [Erste Schritte mit Quellen und Zielen](integrations/using/get-started-sources-destinations.md)
+      + [Adobe Experience Platform-Audiencen in die Kampagne integrieren](integrations/using/ingest-aep-data.md)
+      + [Exportieren von Daten aus der Kampagne nach Adobe Experience Platform](integrations/using/export-campaign-data.md)
 + Mit Workflows automatisieren {#automating-with-workflows}
    + Erste Schritte mit Workflows {#introduction}
       + [Über Workflows](workflow/using/about-workflows.md)
