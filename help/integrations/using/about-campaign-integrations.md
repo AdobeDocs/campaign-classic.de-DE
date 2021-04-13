@@ -6,14 +6,14 @@ description: Verwenden Sie andere Lösungen von Adobe und kombinieren Sie deren 
 audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
+exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
 translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '777'
 ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit Adobe Campaign-Integrationen {#about-campaign-integrations}
 
@@ -60,7 +60,7 @@ Unter der Voraussetzung, dass sie denselben [CNAME](https://docs.adobe.com/conte
  <tbody> 
   <tr> 
    <td> <strong>Adobe Echtzeit-Kundendatenplattform (RTCDP)</strong><br /> </td> 
-   <td> Die Integration zwischen Adobe Campaign und Adobe Echtzeit-Kundendatenplattform (RTCDP) ermöglicht das Freigeben von Segmentdaten und das Importieren von Audiences in Adobe Campaign.<br /> <p><a href="https://docs.adobe.com/content/help/de-DE/experience-platform/rtcdp/destinations/destinations-cat/adobe-destinations/adobe-campaign-destination.html">Erfahren Sie mehr</a> über die Integration zwischen Campaign und Adobe Echtzeit-Kundendatenplattform.</p><br /> </td> 
+   <td> Die Integration zwischen Adobe Campaign und Adobe Echtzeit-Kundendatenplattform (RTCDP) ermöglicht das Freigeben von Segmentdaten und das Importieren von Audiences in Adobe Campaign.<br /> <p><a href="../../integrations/using/get-started-sources-destinations.md">Erfahren Sie mehr</a> über die Integration zwischen Campaign und Adobe Echtzeit-Kundendatenplattform.</p><br /> </td> 
   </tr> 
   <tr> 
    <td> <strong>Adobe Identity Management System (IMS) – Adobe ID</strong><br /> </td> 
@@ -96,4 +96,3 @@ Unter der Voraussetzung, dass sie denselben [CNAME](https://docs.adobe.com/conte
   </tr> 
  </tbody> 
 </table>
-
