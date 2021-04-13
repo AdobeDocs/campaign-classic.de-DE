@@ -5,21 +5,25 @@ title: Aktualisierungen der Dokumentation für Adobe Campaign Classic
 description: Auf dieser Seite werden alle neuen Funktionen und Updates in der Adobe Campaign Classic-Dokumentation aufgelistet.
 feature: Übersicht
 role: Business Practitioner
-level: Anfänger
+level: Beginner
+exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 translation-type: tm+mt
-source-git-commit: 57c1ca827beac9a3c95e63ca17fdb43be237eb28
+source-git-commit: 815648f97d2f5e15c1d5ddc340d384d440d0d6b2
 workflow-type: tm+mt
-source-wordcount: '4295'
-ht-degree: 96%
+source-wordcount: '4324'
+ht-degree: 97%
 
 ---
-
 
 # Aktualisierungen der Dokumentation{#documentation-updates}
 
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## April 2°21 {#april-2021}
+
+Ein neuer Abschnitt beschreibt die Zusammenarbeit mit Adobe Experience Platform Sources and Destination, um Daten zwischen Campaign Classic und Adobe Echtzeit-Kundendatenplattform (RTCDP) freizugeben. [Mehr dazu](../../integrations/using/get-started-sources-destinations.md)
 
 ## März 2021 {#march-2021}
 
@@ -40,7 +44,7 @@ Näheres zur Erstellung und Verwaltung von Kampagnen finden Sie auf den folgende
 
 Im Abschnitt zur Aktivität **[!UICONTROL Erweitertes JavaScript]** finden Sie Informationen dazu, wie Sie die Methode „task.setCompleted()“ verwenden können, um die Aufgabe zu beenden und künftige Rückrufe zu verhindern. [Mehr dazu](../../workflow/using/sql-code-and-javascript-code.md#adv-js-code-desc)
 
-Der Abschnitt [Auslieferbarkeit](../../delivery/using/about-deliverability.md) wurde aktualisiert und enthält nun Links zum neuen Leitfaden [Best Practice Guide](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Auslieferung von Adoben. Alle generischen Informationen zur Lieferbarkeit, die für verschiedene Adoben gelten können, wurden in den [Best Practice Guide Anhang](https://experienceleague.corp.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html#additional-resources) verschoben.
+Der Abschnitt [Zustellbarkeit](../../delivery/using/about-deliverability.md) wurde aktualisiert und enthält nun Links zum neuen [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de). Alle allgemeinen Informationen zur Zustellbarkeit, die für verschiedene Adobe-Lösungen gelten können, wurden in den [Anhang des Handbuchs mit Best Practices](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/general-resources.html?lang=de#additional-resources) verschoben.
 
 ## Februar 2021 {#release-21.1}
 
@@ -135,7 +139,7 @@ Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compat
 Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr dazu](../../rn/using/deprecated-features.md)
 
 Versionshinweise und Kompatibilitätsmatrix für [!DNL Gold Standard] sind jetzt in einem speziellen Abschnitt verfügbar.
-[Weitere Infos](../../rn/using/gold-standard.md#gs-11).
+[Mehr dazu](../../rn/using/gold-standard.md#gs-11)
 
 Die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
 
