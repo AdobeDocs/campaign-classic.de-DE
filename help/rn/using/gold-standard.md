@@ -5,21 +5,29 @@ title: '[!DNL Gold Standard] In den Versionshinweisen'
 description: Versionshinweise für Campaign Classic [!DNL Gold Standard]
 feature: Übersicht
 role: Business Practitioner
-level: Anfänger
+level: Beginner
+exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
 translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
+source-git-commit: ac01b3c064209362cc6142a716d2892c27753d76
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 96%
+source-wordcount: '1058'
+ht-degree: 94%
 
 ---
-
 
 # [!DNL Gold Standard] In den Versionshinweisen{#gold-standard}
 
 Diese Seite Liste [!DNL Gold Standard] Versionen. Weitere Informationen zur Kampagne [!DNL Gold Standard] [auf dieser Seite](gs-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard] Version 11{#gs-11}
+
+_14. April 2021_
+
+Der Build 9032@d030c36 beinhaltet die folgende Fehlerbehebung:
+
+* Korrektur der Client-Konsolenregression, die im IMS-Verbindungsbildschirm dauerhafte Fehlermeldungen verursachte. (NEO-34821)
+
+**Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
 
 _2. März 2021_
 
