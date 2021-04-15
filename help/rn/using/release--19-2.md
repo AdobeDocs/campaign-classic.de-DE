@@ -8,16 +8,26 @@ role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 translation-type: tm+mt
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
+source-git-commit: 6f5a536a5ac1286cdf6f1c9f53377fe8d0f55bed
 workflow-type: tm+mt
-source-wordcount: '1484'
-ht-degree: 100%
+source-wordcount: '1542'
+ht-degree: 98%
 
 ---
 
 # Version 19.2{#release-19-2}
 
 ## ![](assets/do-not-localize/limited_2.png) Version 19.2.4 – Build 9082 {#release-19-2-4-build-9082}
+
+_15. April 2021_
+
+* Korrektur der Client-Konsolenregression, die im IMS-Verbindungsbildschirm dauerhafte Fehlermeldungen verursachte. (NEO-34821)
+
+**Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
+
+>[!NOTE]
+>
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
 _22. März 2021_
 
@@ -27,15 +37,16 @@ _22. März 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
 _23. Dezember 2020_
 
 >[!CAUTION]
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
->
-> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
+   >
+   > 
+* Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
 
 
 
