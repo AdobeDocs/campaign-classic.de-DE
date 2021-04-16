@@ -138,7 +138,7 @@ _13. August 2019_
 
 >[!NOTE]
 >
->19.1.4 [!DNL Gold Standard] Versionen sind in dieser [Seite](../../rn/using/gold-standard.md) aufgeführt.
+>[!DNL Gold Standard]-Versionen von 19.1.4 sind auf dieser [Seite](../../rn/using/gold-standard.md) aufgeführt.
 
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
