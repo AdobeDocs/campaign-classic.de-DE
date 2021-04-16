@@ -7,9 +7,9 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 01daff5d95f4635182041b949a21c80cae5e4473
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 100%
 
@@ -197,7 +197,7 @@ Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen
 * Debian 7. [Weitere Infos](https://wiki.debian.org/DebianReleases)
 * RHEL 6.x. [Weitere Infos](https://access.redhat.com/support/policy/updates/errata)
 * Windows Server 2008. [Weitere Infos](https://support.microsoft.com/en-us/lifecycle/search/1163)
-* SLES 11. [Weitere Infos](ttps://www.suse.com/lifecycle)
+* SLES 11. [Weitere Infos](https://www.suse.com/lifecycle)
 
 ### Webserver {#web-server-eol}
 
