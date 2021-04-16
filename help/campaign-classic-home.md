@@ -5,11 +5,11 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 topic: Premium
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 ## Neue Funktionen
 
-* **[Aktualisieren des APNs-](technotes/ios-certificate-update.md)**<br/> ZertifikatsAm 29. März 2021 wirkte sich ein APNs-Update auf den iOS-Kanal der Kampagne aus. Sie müssen Ihre Konfiguration aktualisieren, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
+* **[Aktualisierung des APNs-Zertifikats](technotes/ios-certificate-update.md)**<br/> Am 29. März 2021 hat sich ein APNs-Update auf den iOS-Kanal von Campaign ausgewirkt. Sie müssen Ihre Konfiguration aktualisieren, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
 * **[Stellen Sie Verbindungen über IMS/Adobe ID her? Führen Sie ein Upgrade auf die neuesten Builds aus](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS zur Verbindung mit Campaign verwenden, müssen Sie ein Upgrade durchführen, um auch nach dem** 30. Juni 2021 **eine Verbindung zu Campaign herstellen zu können.
 
@@ -89,6 +89,6 @@ Zugriff auf häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuch
 | [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [[!DNL Gold Standard] upgrade](rn/using/gs-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
+| [[!DNL Gold Standard] -Upgrade](rn/using/gs-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
 | [Eingestellte Funktionen](rn/using/deprecated-features.md) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
 | [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) | [Richtlinien für das Monitoring](production/using/monitoring-guidelines.md) |
