@@ -7,11 +7,11 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Jedem Build wird ein Status zugeordnet. Nachfolgend finden Sie die Liste der Sta
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – In der Produktion validiert und von Adobe empfohlen.
 
-Die **letzten GA-Builds** sind: [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md) und [Version 20.2.5 der Kampagne](../../rn/using/release--20-2.md)
+Die **aktuellen GA-Builds** sind: [[!DNL Gold Standard] -Version 11](../../rn/using/gold-standard.md) und [Campaign-Version 20.2.5](../../rn/using/release--20-2.md).
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
 
@@ -55,10 +55,10 @@ Als On-Premise-Benutzer können Sie das Upgrade durchführen. Dazu müssen Sie d
 
 ### [!DNL Gold Standard]{#upgrade-for-gold-standard-users}
 
-Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch von der [!DNL Gold Standard]-Aktualisierung mit der [neuesten GA [!DNL Gold Standard] build](../../rn/using/gold-standard.md#gs-11) ohne Aktion. [Weitere Informationen](../../rn/using/gs-overview.md).
+Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch vom [!DNL Gold Standard]-Upgrade mit dem [aktuellen GA- [!DNL Gold Standard] -Build](../../rn/using/gold-standard.md#gs-11), ohne dass Sie aktiv werden müssen. [Weitere Informationen](../../rn/using/gs-overview.md).
 
 >[!NOTE]
->Kompatibilitätsmatrix für [!DNL Gold Standard] ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
+>Die Kompatibilitätsmatrix für [!DNL Gold Standard] ist in der [GA-Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) verfügbar.
 
 ## Support und andere nützliche Links{#support}
 
