@@ -5,21 +5,21 @@ title: Kompatibilitätsmatrix für Campaign Classic
 description: Campaign Classic – Kompatibilitätsmatrix
 feature: Übersicht
 role: Business Practitioner
-level: Anfänger
-translation-type: tm+mt
-source-git-commit: b77a56a97e499f60c092fae45c7809f7bfd9f2ea
-workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 98%
+level: Beginner
+exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '524'
+ht-degree: 100%
 
 ---
-
 
 # Kompatibilitätsmatrix{#compatibility-matrix}
 
 In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den [aktuellen Build](../../rn/using/latest-release.md) von **Adobe Campaign Classic** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 
-Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, lesen Sie die [[!DNL Gold Standard] Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md).
+Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, sehen Sie in der [[!DNL Gold Standard] -Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) nach.
 
 ## Wichtige Hinweise{#important-notes}
 
@@ -202,9 +202,9 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 Cups</p>
-<p>18 Cups</p>
-<p>12 Cups</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
