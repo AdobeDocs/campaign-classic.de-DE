@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
 workflow-type: tm+mt
 source-wordcount: '2516'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 96%
 + Versionshinweise {#release-notes}
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
    + [Aktuelle Version](rn/using/latest-release.md)
-   + [!DNL Gold Standard] release  {#gs-release}
-      + [Was ist [!DNL Gold Standard]](rn/using/gs-overview.md)
-      + [[!DNL Gold Standard] In den Versionshinweisen](rn/using/gold-standard.md)
-      + [[!DNL Gold Standard] Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
+   + [!DNL Gold Standard]-Version {#gs-release}
+      + [Was ist  [!DNL Gold Standard]](rn/using/gs-overview.md)?
+      + [[!DNL Gold Standard] -Versionshinweise](rn/using/gold-standard.md)
+      + [[!DNL Gold Standard] -Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
    + Frühere Versionen {#previous-releases}
       + [Version 20.3](rn/using/release--20-3.md)
       + [Version 20.2](rn/using/release--20-2.md)
@@ -48,7 +48,7 @@ ht-degree: 96%
       + [Starten von Adobe Campaign](platform/using/launching-adobe-campaign.md)
       + Adobe Campaign-Arbeitsbereich{#campaign-workspace}
          + [Erste Schritte mit der Campaign-Benutzeroberfläche](platform/using/adobe-campaign-workspace.md)
-         + [Kampagne Explorer verwenden](platform/using/adobe-campaign-explorer.md)
+         + [Campaign-Explorer verwenden](platform/using/adobe-campaign-explorer.md)
          + [Durchsuchen und Anpassen von Listen](platform/using/adobe-campaign-ui-lists.md)
       + Häufig gestellte Fragen {#faq}
          + [Die häufigsten Fragen](platform/using/common-questions.md)
@@ -114,7 +114,7 @@ ht-degree: 96%
       + CRM-Connectoren{#crm-connectors}
          + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
-         + [Verbindung mit Salesforce.com](platform/using/crm-sfdc.md)
+         + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
          + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
       + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
    + [Hilfe- und Support-Optionen](support.md)
@@ -155,7 +155,7 @@ ht-degree: 96%
       + [Zum erweiterten allgemeinen SMPP-Connector migrieren](delivery/using/unsupported-connector-migration.md)
    + [LINE-Nachrichten senden](delivery/using/line-channel.md)
    + Push-Benachrichtigungen senden {#sending-push-notifications}
-      + [Erste Schritte mit dem App-Kanal](delivery/using/about-mobile-app-channel.md)
+      + [Erste Schritte mit dem Mobile-App-Kanal](delivery/using/about-mobile-app-channel.md)
       + [Campaign-SDK in die Mobile App integrieren](delivery/using/integrating-campaign-sdk-into-the-mobile-application.md)
       + Mobile App konfigurieren{#configure-the-mobile-app}
          + [Erste Schritte mit der App-Konfiguration](delivery/using/get-started-app-config.md)
@@ -213,7 +213,7 @@ ht-degree: 96%
       + [Fehlerbehebung beim Versand](delivery/using/delivery-troubleshooting.md)
       + [Versandstatus](delivery/using/delivery-statuses.md)
       + [Ursachen für das Fehlschlagen von Sendungen](delivery/using/understanding-delivery-failures.md)
-      + [Bounce-Qualifizierung nach einem ISP-Ausfall aktualisieren](delivery/using/update-bounce-qualification.md)
+      + [Aktualisieren der Bounce-Qualifizierung nach einem ISP-Ausfall](delivery/using/update-bounce-qualification.md)
       + [Funktionsweise der Quarantäneverwaltung](delivery/using/understanding-quarantine-management.md)
    + Nachrichten tracken {#tracking-messages}
       + [Über das Nachrichten-Tracking](delivery/using/about-message-tracking.md)
@@ -229,7 +229,7 @@ ht-degree: 96%
    + Verwaltung der Zustellbarkeit {#deliverability-management}
       + [Was ist Zustellbarkeit?](delivery/using/about-deliverability.md)
       + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
-      + [Zustellbarkeit überwachen](delivery/using/monitoring-deliverability.md)
+      + [Überwachen der Zustellbarkeit](delivery/using/monitoring-deliverability.md)
       + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Fehlerbehebung](delivery/using/deliverability-faq.md)
@@ -480,7 +480,7 @@ ht-degree: 96%
          + [Laden des Versandinhalts](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring            {#monitoring}
+      + Monitoring             {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -628,7 +628,7 @@ ht-degree: 96%
       + [Enterprise-Bereitstellung](installation/using/enterprise-deployment.md)
       + [Mid-Sourcing-Bereitstellung](installation/using/mid-sourcing-deployment.md)
       + [Power Booster und Power Cluster](installation/using/power-booster-and-power-cluster.md)
-   + Sicherheits- und Datenschutzeinstellungen {#security-privacy}
+   + Einstellungen für Sicherheit und Datenschutz {#security-privacy}
       + [Erste Schritte mit Sicherheit und Datenschutz](installation/using/get-started-security-privacy.md)
       + [Personalisierung und Datenschutz](installation/using/privacy.md)
       + [Sichere Zugriffsverwaltung](installation/using/access-management.md)
@@ -665,9 +665,9 @@ ht-degree: 96%
       + [URL-Berechtigungen festlegen](installation/using/url-permissions.md)
       + [Dateien und Ressourcen](installation/using/file-res-management.md)
       + [Tomcat konfigurieren](installation/using/configure-tomcat.md)
-      + [Einstellungen für Versand konfigurieren](installation/using/configure-delivery-settings.md)
+      + [Versandeinstellungen konfigurieren](installation/using/configure-delivery-settings.md)
       + [Technische E-Mail-Konfigurationen](installation/using/email-deliverability.md)
-      + [Verwenden von MX-Servern mit Kampagne](installation/using/using-mx-servers.md)
+      + [MX-Server mit Campaign verwenden](installation/using/using-mx-servers.md)
       + [E-Mail-BCC konfigurieren](installation/using/email-archiving.md)
       + [SpamAssassin konfigurieren](installation/using/configuring-spamassassin.md)
    + Verbindung zu Campaign herstellen{#connect-to-campaign}
