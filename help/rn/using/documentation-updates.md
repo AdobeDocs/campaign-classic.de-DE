@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 69630f1450241e15d385dc03a3a2b02f6f7c850b
 workflow-type: tm+mt
 source-wordcount: '4324'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -27,9 +27,9 @@ Ein neuer Abschnitt beschreibt die Zusammenarbeit mit Adobe Experience Platform 
 
 ## März 2021 {#march-2021}
 
-Der Abschnitt [Erste Schritte mit SMS](../../delivery/using/sms-channel.md) wurde neu organisiert und verbessert. Sie können jetzt lernen, wie [den SMS-Kanal](../../delivery/using/sms-set-up.md), [eine SMS](../../delivery/using/sms-create.md), [Senden und Verfolgen von SMS](../../delivery/using/sms-send.md) in dedizierten Abschnitten konfiguriert werden kann.
+Der Abschnitt [Erste Schritte mit SMS](../../delivery/using/sms-channel.md) wurde neu organisiert und verbessert. In speziellen Abschnitten erfahren Sie nun, wie Sie [den SMS-Kanal konfigurieren](../../delivery/using/sms-set-up.md), [eine SMS erstellen](../../delivery/using/sms-create.md) sowie [SMS senden und verfolgen](../../delivery/using/sms-send.md) können.
 
-Die Seite &quot;Hilfe und Support-Optionen&quot; für Campaign Classic wurde in die Kerndokumentation integriert. [Mehr dazu](../../support.md)
+Die Seite &quot;Hilfe und Support-Optionen&quot; für Campaign Standard wurde in die Hauptdokumentation integriert. [Mehr dazu](../../support.md)
 
 Es wurde ein neuer Abschnitt zu Best Practices und Überprüfungen für Sicherheit und Datenschutz hinzugefügt. [Mehr dazu](../../installation/using/get-started-security-privacy.md)
 
@@ -138,7 +138,7 @@ Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compat
 
 Die Seite mit veralteten und entfernten Funktionen wurde aktualisiert. [Mehr dazu](../../rn/using/deprecated-features.md)
 
-Versionshinweise und Kompatibilitätsmatrix für [!DNL Gold Standard] sind jetzt in einem speziellen Abschnitt verfügbar.
+Versionshinweise und Kompatibilitätsmatrix für die [!DNL Gold Standard]-Version sind jetzt in einem speziellen Abschnitt verfügbar.
 [Mehr dazu](../../rn/using/gold-standard.md#gs-11)
 
 Die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Mehr dazu](../../integrations/using/configuring-adobe-io.md)
@@ -214,7 +214,7 @@ Der Abschnitt über die **[!UICONTROL Und-Verknüpfungsaktivität]** wurde um zu
 
 Den Workflow-Anwendungsfällen wurde ein Anwendungsfall zum automatischen Aktualisieren einer Liste mithilfe einer inkrementellen Abfrage hinzugefügt. [Mehr dazu](../../workflow/using/about-workflow-use-cases.md)
 
-Die [Versionshinweise](../../rn/using/latest-release.md) wurden neu organisiert: Es wurde eine [Übersichtsseite](../../rn/using/latest-release.md) mit Informationen zu Build-Status, Upgrade-Prozess, Empfehlungen und wichtigen Links hinzugefügt. Eine dedizierte Seite für [[!DNL Gold Standard] Releases](../../rn/using/gold-standard.md) wurde hinzugefügt und die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) wurde integriert.
+Die [Versionshinweise](../../rn/using/latest-release.md) wurden neu organisiert: Es wurde eine [Übersichtsseite](../../rn/using/latest-release.md) mit Informationen zu Build-Status, Upgrade-Prozess, Empfehlungen und wichtigen Links hinzugefügt. Eine spezielle Seite für [[!DNL Gold Standard] Versionen](../../rn/using/gold-standard.md) wurde ebenfalls hinzugefügt und die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) wurde integriert.
 
 Es wurde ein neuer Abschnitt mit Richtlinien für die Überwachung in Campaign Classic hinzugefügt. [Mehr dazu](../../production/using/monitoring-guidelines.md)
 
@@ -274,7 +274,7 @@ Der Abschnitt zum Monitoring der Zustellbarkeit wurde an eine andere Stelle vers
 
 Der Abschnitt zur Behebung von Problemen mit der Zustellbarkeit wurde verschoben und überarbeitet. [Mehr dazu](../../delivery/using/deliverability-faq.md)
 
-Die Richtlinien zur Lieferbarkeit beim Start einer neuen Plattform wurden verbessert. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html#transition-process)
+Die Zustellbarkeitsrichtlinien beim Start einer neuen Plattform wurden überarbeitet. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de#transition-process)
 
 Der Abschnitt zum Senden von Transaktions-E-Mails mit Anhängen wurde an eine andere Stelle verschoben und aktualisiert. [Mehr dazu](../../message-center/using/transactional-email-with-attachments.md)
 
