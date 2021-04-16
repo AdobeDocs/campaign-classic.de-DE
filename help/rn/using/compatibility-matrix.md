@@ -7,9 +7,9 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
 
@@ -202,9 +202,9 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Oracle</td>
 <td>
-<p>19c</p>
-<p>18c</p>
-<p>12c</p>
+<p>19 Cups</p>
+<p>18 Cups</p>
+<p>12 Cups</p>
 <p>11g</p>
 </td>
 </tr>
