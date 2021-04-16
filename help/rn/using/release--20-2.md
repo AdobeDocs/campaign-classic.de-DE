@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
 workflow-type: tm+mt
 source-wordcount: '2975'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -33,17 +33,17 @@ _31. März 2021_
 
 **Verbesserungen**
 
-* Es wurde eine Verbesserung vorgenommen, um Abstürze bei ungültigen Seifenaufrufen zu verhindern. Dies kann dazu führen, dass die Instanz beim Versuch, bestimmte komplexe Abfragen auszuführen, nicht mehr funktioniert. (NEO-28796, NEO-30553)
-* Korrektur einer Regression, die dazu führte, dass SMS-Versand mit TLS aufgrund der Hostnamenüberprüfung nicht gesendet wurden. (NEO-29581)
-* Es wurde ein Fehler behoben, der verhinderte, dass Links zur signierten Verfolgung auf einigen E-Mail-Clients funktionierten. (NEO-28414, NEO-29615)
-* Eine Verfolgungs-ID-Sequenz bei der Verwendung von WebApp-Trackingtagen wurde behoben, die Konflikte mit Duplikat-IDs verursachen konnte. (NEO-27931)
-* Es wurde ein Fehler behoben, der dazu führte, dass die Workflows beim täglichen Neustart des Webservers angehalten wurden. (NEO-30047)
+* Es wurde eine Verbesserung vorgenommen, um Abstürze bei ungültigen SOAP-Aufrufen zu verhindern. Dies kann dazu führen, dass die Instanz beim Versuch, bestimmte komplexe Abfragen auszuführen, nicht mehr funktioniert. (NEO-28796, NEO-30553)
+* Korrektur einer Regression, die dazu führte, dass SMS-Sendungen mit TLS aufgrund der Host-Namenüberprüfung nicht ausgeführt wurden. (NEO-29581)
+* Fehlerkorrektur – Signierte Tracking-Links funktionieren jetzt auf allen E-Mail-Clients. (NEO-28414, NEO-29615)
+* Fehlerkorrektur – Eine Tracking-Kennung-Sequenz bei der Verwendung von webApp-Tracking-Tags wurde korrigiert, die zu Konflikten mit doppelten IDs führen konnte. (NEO-27931)
+* Fehlerkorrektur – Laufende Workflows werden jetzt nicht mehr durch den täglichen Neustart des wfserver gestoppt. (NEO-30047)
 * Fehlerkorrektur – Es wurde ein Sicherheitsproblem mit API-Aufrufen behoben, die von Benutzern ohne Administratorrechte beim Synchronisieren von Adobe Experience Manager-Vorlagen ausgeführt wurden. (NEO-32389, NEO-23487)
-* Es wurde ein Fehler behoben, der dazu führte, dass die Konsole abstürzte, wenn ein Dialogfeld mit einem Versand für einen Versand geschlossen wurde, der mit einer Vorlage erstellt wurde. (NEO-31547)
-* Es wurde ein Fehler behoben, der beim Erstellen und Speichern eines Versands auf der Registerkarte **Targeting und Workflow** einer Kampagne auftrat: die Vorschau mit dem folgenden Fehler fehlschlug. (NEO-29440)
-* Es wurde ein Problem behoben, durch das Tomcat 8.5 ungültige Antworten sendete, die in Transaktionsprotokollen Fehler verursachten. (NEO-30858)
-* Korrektur des Regressionsproblems, das Speicherkorruption in der externen Thread-Verwaltung verursachte und die Leistung beeinträchtigte.
-* Es wurde ein Fehler behoben, der dazu führte, dass der Rechnungsarbeitsablauf bei der Verwendung eines benutzerdefinierten Zielgruppen-Mappings fehlschlug. Der Hauptschlüssel des benutzerdefinierten Schemas wird in der Spalte &quot;sourceId&quot;gespeichert, in der nur ganzzahlige Werte zulässig sind. Es können nun sowohl Ganzzahl- als auch Zeichenfolgenwerte verwendet werden. (NEO-25914, NEO-28146)
+* Fehlerkorrektur – Die Konsole stürzt jetzt nicht mehr ab, wenn ein Versanddialog für einen Versand geschlossen wurde, der mit einer Vorlage erstellt wurde. (NEO-31547)
+* Fehlerkorrektur – Beim Erstellen und Speichern eines Versands in der Registerkarte **Targeting und Workflows** einer Kampagne tritt jetzt kein Fehler mehr auf. Zuvor schlug die Vorschau fehl und folgender Fehler wurde angezeigt.(NEO-29440)
+* Fehlerkorrektur – Tomcat 8.5 sendet jetzt keine ungültigen Antworten mehr. Zuvor führte dies zu Fehlern in den Transaktionsnachrichten-Protokollen. (NEO-30858)
+* Fehlerkorrektur – Jetzt tritt kein Regressionsproblem mehr auf. Zuvor führte dies zu einer Speicherbeschädigung in der externen Thread-Verwaltung und beeinträchtigte die Leistung.
+* Fehlerkorrektur – Jetzt schlägt der Fakturierungs-Workflow bei der Verwendung eines benutzerdefinierten Zielgruppen-Mappings nicht mehr fehl. Der Primärschlüssel des benutzerdefinierten Schemas wird in der Spalte &quot;sourceId&quot; gespeichert, in der nur ganzzahlige Werte zulässig sind. Jetzt sind sowohl Ganzzahl- als auch Zeichenfolgenwerte zulässig. (NEO-25914, NEO-28146)
 * Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Sendungen verhinderte. (NEO-31453)
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
