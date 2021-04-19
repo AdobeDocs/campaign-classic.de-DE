@@ -88,6 +88,6 @@ Zugriff auf häufig gestellte Fragen, Best Practices, Hilferessourcen und Ersuch
 | [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html) |
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
-| [[!DNL Gold Standard] -Upgrade](rn/using/gs-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
+| [[!DNL Gold Standard] Upgrade](rn/using/gs-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
 | [Eingestellte Funktionen](rn/using/deprecated-features.md) | [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html) |
 | [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) | [Richtlinien für das Monitoring](production/using/monitoring-guidelines.md) |
