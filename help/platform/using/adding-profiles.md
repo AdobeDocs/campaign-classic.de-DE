@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Profile hinzufügen
 description: Profile hinzufügen
-feature: Profile
+feature: Profiles
 role: Business Practitioner
-level: Anfänger
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Adobe Campaign-Arbeitsbereich
 description: Erfahren Sie, wie Sie den Campaign-Arbeitsbereich verwenden und anpassen.
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13

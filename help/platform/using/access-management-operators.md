@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Campaign-Benutzern
 description: Erfahren Sie, wie Sie Campaign-Benutzer erstellen und verwalten.
-feature: Zugriffsverwaltung
+feature: Access Management
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39

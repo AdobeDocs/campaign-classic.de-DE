@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Über Abfragen in Adobe Campaign
 description: Über Abfragen in Adobe Campaign
-feature: Abfragen-Editor
-role: Geschäftspraktiker, Datenarchitektin
-level: Anfänger
+feature: Query Editor
+role: Business Practitioner, Data Architect
+level: Beginner
 translation-type: tm+mt
 source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
 workflow-type: tm+mt

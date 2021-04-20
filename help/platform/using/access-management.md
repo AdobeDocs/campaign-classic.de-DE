@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Berechtigungen
 description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
-feature: Zugriffsverwaltung
+feature: Access Management
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e

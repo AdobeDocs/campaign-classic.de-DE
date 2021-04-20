@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard]-Upgrade'
 description: 'Erfahren Sie, was Campaign Classic ist [!DNL Gold Standard] '
-feature: Übersicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Zugriff auf Campaign-Ordner verwalten
 description: Erfahren Sie, wie Sie Zugriff auf Campaign-Ordner gewähren und Ansichten erstellen.
-feature: Anwendungseinstellungen
+feature: Application Settings
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Benutzergruppen erstellen und verwalten
 description: Erfahren Sie, wie Sie Benutzergruppen Zugriff gewähren.
-feature: Zugriffsverwaltung
+feature: Access Management
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525

@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Kompatibilitätsmatrix für Campaign Classic
 description: Campaign Classic – Kompatibilitätsmatrix
-feature: Übersicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2

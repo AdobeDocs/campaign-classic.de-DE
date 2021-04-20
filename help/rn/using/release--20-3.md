@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Versionshinweise zu Campaign 20.3
 description: Versionshinweise zu Campaign 20.3
-feature: Übersicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265

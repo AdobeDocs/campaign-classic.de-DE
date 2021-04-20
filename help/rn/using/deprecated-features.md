@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Eingestellte und entfernte Funktionen von Campaign Classic
 description: Auf dieser Seite finden Sie eine Liste eingestellter und entfernter Funktionen von Adobe Campaign Classic
-feature: Übersicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645

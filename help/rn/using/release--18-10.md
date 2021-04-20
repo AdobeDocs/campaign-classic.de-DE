@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Versionshinweise zu Campaign 18.10
 description: Versionshinweise zu Campaign 18.10
-feature: Übersicht
+feature: Overview
 role: Business Practitioner
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb

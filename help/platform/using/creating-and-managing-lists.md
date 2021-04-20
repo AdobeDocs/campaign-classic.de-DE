@@ -3,9 +3,9 @@ solution: Campaign Classic
 product: campaign
 title: Erstellen und Verwalten von Listen
 description: Erfahren Sie, wie Sie Listen erstellen und verwalten.
-feature: Profile
+feature: Profiles
 role: Business Practitioner
-level: Anfänger
+level: Beginner
 translation-type: tm+mt
 source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
 workflow-type: tm+mt
