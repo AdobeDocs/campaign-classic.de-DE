@@ -9,10 +9,10 @@ solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
 translation-type: tm+mt
-source-git-commit: 60ab99d006599edfcb997829ea0c452a2daea219
+source-git-commit: b741b10fd1d3a94a3e6c71e95ff43cc0ee54ebc7
 workflow-type: tm+mt
-source-wordcount: '2516'
-ht-degree: 98%
+source-wordcount: '2519'
+ht-degree: 99%
 
 ---
 
@@ -42,6 +42,7 @@ ht-degree: 98%
    + [Technische Hinweise](technotes/technote.md)
    + [Aktualisierung des iOS-Zertifikats](technotes/ios-certificate-update.md)
    + [Aktualisierungen der Campaign-Konfiguration](technotes/acc-config-updates.md)
+   + [Aktualisierung der verfolgten URLs](technotes/tracked-urls.md)
 + Erste Schritte {#getting-started}
    + Einstieg in Adobe Campaign {#starting-with-adobe-campaign}
       + [Erste Schritte mit Adobe Campaign Classic](platform/using/about-adobe-campaign-classic.md)
@@ -396,8 +397,8 @@ ht-degree: 98%
       + [Fehlerbehebung bei Pipelines](integrations/using/pipeline-troubleshooting.md)
    + Adobe Experience Platform-Quellen und -Ziele {#aep-sources-destinations}
       + [Erste Schritte mit Quellen und Zielen](integrations/using/get-started-sources-destinations.md)
-      + [Adobe Experience Platform-Audiencen in die Kampagne integrieren](integrations/using/ingest-aep-data.md)
-      + [Exportieren von Daten aus der Kampagne nach Adobe Experience Platform](integrations/using/export-campaign-data.md)
+      + [Adobe Experience Platform-Zielgruppen in Campaign aufnehmen](integrations/using/ingest-aep-data.md)
+      + [Daten von Campaign nach Adobe Experience Platform exportieren](integrations/using/export-campaign-data.md)
 + Mit Workflows automatisieren {#automating-with-workflows}
    + Erste Schritte mit Workflows {#introduction}
       + [Über Workflows](workflow/using/about-workflows.md)
