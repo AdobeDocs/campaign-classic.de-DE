@@ -6,9 +6,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: f47b0ecfd3e35d15a78779fd9f38cc93c798d5d2
+source-git-commit: 65ff09dd8ded029178c4c85489bf01ef80d16e8d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '343'
 ht-degree: 15%
 
 ---
@@ -27,13 +27,13 @@ Zur Verbesserung der Sicherheit wurde der Signaturmechanismus für Links in E-Ma
 
 Wenn Ihre Umgebung mit einer der folgenden Versionen ausgeführt wird, können Sie betroffen sein:
 
-* Gold Standard 7 - 11. [Mehr dazu](../rn/using/gold-standard.md)
-* Kampagne 21.1.1 - Version 21.1.2 [Mehr dazu](../rn/using/latest-release.md)
-* Kampagne 20.3.1 - 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
-* Kampagne 20.2.1 - 20.2.3. [Mehr dazu](../rn/using/release--20-2.md)
-* Kampagne 20.1.1 - Version 21.1.3 [Mehr dazu](../rn/using/release--20-1.md)
-* Kampagne 19.2.2 - 19.2.3. [Mehr dazu](../rn/using/release--19-2.md)
-* Kampagne 19.1.5 - 19.1.7. [Mehr dazu](../rn/using/release--19-1.md)
+* Gold Standard 7 bis 11. [Mehr dazu](../rn/using/gold-standard.md)
+* Kampagnen 21.1.1 bis 21.1.2. [Mehr dazu](../rn/using/latest-release.md)
+* Kampagnen 20.3.1 bis 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
+* Kampagnen 20.2.1 bis 20.2.3. [Mehr dazu](../rn/using/release--20-2.md)
+* Kampagnen 20.1.1 bis 21.1.3. [Mehr dazu](../rn/using/release--20-1.md)
+* Kampagnen 19.2.2 bis 19.2.3. [Mehr dazu](../rn/using/release--19-2.md)
+* Kampagnen 19.1.5 bis 19.1.7. [Mehr dazu](../rn/using/release--19-1.md)
 
 Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen.
 
