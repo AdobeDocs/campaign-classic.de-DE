@@ -7,11 +7,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '583'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 91%
 
 Die Clientkonsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. Auf [dieser Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie die Clientkonsole herunterladen und konfigurieren.
 
-## Beginn-Adobe Campaign {#starting-adobe-campaign}
+## Adobe Campaign starten {#starting-adobe-campaign}
 
 Sie können Adobe Campaign ausgehend vom Menü **[!UICONTROL Start > Alle Programme > Adobe Campaign v.X > Adobe Campaign Clientkonsole]** starten.
 
@@ -27,7 +27,7 @@ Im Clientkonsole-Verbindungsfenster können Sie mithilfe Ihrer Benutzerkennung u
 
 ![](assets/acc-logon.png)
 
-## Verbinden mit Adobe Campaign {#connecting-to-adobe-campaign}
+## Verbindung mit Adobe Campaign herstellen {#connecting-to-adobe-campaign}
 
 Sie können über ihre Adobe ID eine Verbindung mit Adobe Campaign herstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
 
@@ -50,7 +50,7 @@ Auf dem **[!UICONTROL Anmeldebildschirm]** sind einige Tastaturbefehle verfügba
 * Um die Verbindung zu starten, können Sie auch die **Eingabetaste** drücken.
 * Mit der **Escape**-Taste können Sie die Felder **[!UICONTROL Login]** und **[!UICONTROL Kennwort]** auf die letzten erfolgreichen Verbindungswerte zurücksetzen.
 
-## Einrichten von Verbindungen {#setting-up-connections}
+## Verbindungen einrichten {#setting-up-connections}
 
 Auf die Verbindungseinstellungen des Servers können Sie über den Link über dem Eingabefeld zugreifen.
 
@@ -74,7 +74,7 @@ Kennungen, Passwörter und Zugriffsberechtigungen werden vom Adobe-Campaign-Syst
 
 Diese Funktionen werden im Abschnitt [Zugriffsverwaltung](../../platform/using/access-management.md) beschrieben.
 
-## Trennen von Adobe Campaign {#disconnecting-from-adobe-campaign}
+## Verbindung zu Adobe Campaign unterbrechen {#disconnecting-from-adobe-campaign}
 
 Um die Verbindung zu Adobe Campaign zu unterbrechen, verwenden Sie das erste Symbol in der Symbolleiste.
 
@@ -84,7 +84,7 @@ Um die Verbindung zu Adobe Campaign zu unterbrechen, verwenden Sie das erste Sym
 >
 >Alternativ ist es möglich, die Anwendung ohne vorheriges Abmelden direkt zu verlassen.
 
-## Adobe Campaign-Version {#getting-your-campaign-version} abrufen
+## Adobe Campaign-Version abrufen {#getting-your-campaign-version}
 
 Das Menü **[!UICONTROL Hilfe > Versionsinformationen…]** liefert folgende Informationen:
 
@@ -97,11 +97,11 @@ Das Menü **[!UICONTROL Hilfe > Versionsinformationen…]** liefert folgende Inf
 
 Wenn Sie mit dem Team der Adobe-Kundenunterstützung Kontakt aufnehmen, müssen Sie die Versionsnummer und die Build-Nummer Ihrer Adobe Campaign-Client-Konsole und des Anwendungs-Servers angeben.
 
-Wenn Sie mit [Kampagne [!DNL Gold Standard] Version](../../rn/using/gold-standard.md) arbeiten, müssen Sie auch die SHA/1-Zeichen freigeben, die im Feld **[!UICONTROL Info]** angezeigt werden. Beispiel: In der Gold **Standard 10-Version** zeigt die Build-Nummer **build 9032@efd8a94** an, wie nachfolgend gezeigt:
+Wenn Sie mit der [Campaign  [!DNL Gold Standard] -Version](../../rn/using/gold-standard.md) arbeiten, müssen Sie auch die SHA/1-Zeichen angeben, die im Feld **[!UICONTROL Versionsinformationen]** angezeigt werden. Beispiel: In der Gold **Standard-Version 10** zeigt die Build-Nummer **build 9032@efd8a94** an, wie nachfolgend gezeigt:
 
 ![](assets/about-acc-gs.png)
 
-Weitere Informationen zu [!DNL Gold Standard] [in diesem Artikel](../../rn/using/gs-overview.md)).
+Weitere Informationen zum [!DNL Gold Standard] finden Sie [in diesem Artikel](../../rn/using/gs-overview.md)).
 
 **Verwandte Themen**:
 
