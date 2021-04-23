@@ -6,14 +6,14 @@ description: Über Vorlagen
 audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: d943898c-06fe-451d-aa28-8a95665f4112
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '279'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # Über Vorlagen{#about-templates}
 
@@ -35,4 +35,4 @@ Es gibt zwei Arten von Vorlagen:
 
 >[!NOTE]
 >
->Welche Vorlagen Ihnen zur Verfügung stehen, hängt von Ihren Benutzerrechten, der Konfiguration Ihrer Instanz und dem jeweiligen Anwendungskontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Vorlage zum Versand von Bestätigungsnachrichten verwenden. In diesem Kontext werden nur Vorlagen mit dem Zielgruppen-Mapping „Abonnements“ angezeigt. Weitere Informationen finden Sie unter [Zielgruppen-Mapping](../../delivery/using/selecting-a-target-mapping.md) und [Info zu Diensten und Abonnements](../../delivery/using/about-services-and-subscriptions.md) auswählen.
+>Welche Vorlagen Ihnen zur Verfügung stehen, hängt von Ihren Benutzerrechten, der Konfiguration Ihrer Instanz und dem jeweiligen Anwendungskontext ab. Wenn Sie beispielsweise einen Informationsdienst erstellen, können Sie eine Vorlage zum Versand von Bestätigungsnachrichten verwenden. In diesem Kontext werden nur Vorlagen mit dem Zielgruppen-Mapping „Abonnements“ angezeigt. Weitere Informationen hierzu finden Sie unter [Zielgruppen-Mapping auswählen](../../delivery/using/selecting-a-target-mapping.md) und [Über Dienste und Abonnements](../../delivery/using/about-services-and-subscriptions.md).
