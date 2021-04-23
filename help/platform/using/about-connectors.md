@@ -3,23 +3,23 @@ solution: Campaign Classic
 product: campaign
 title: Über Connectoren
 description: Über Connectoren
-feature: Overview
+feature: Übersicht
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
-workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 93%
+exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '198'
+ht-degree: 100%
 
 ---
 
-
-# Erste Schritte mit Connectors{#about-connectors}
+# Erste Schritte mit Connectoren{#about-connectors}
 
 Adobe Campaign bietet Ihnen mehrere Connectoren, mit deren Hilfe Sie mit externen Anwendungen kommunizieren, eine Verbindung zu Datenbank-Engines herstellen und Adobe Campaign mit Adobe Analytics zum Datenaustausch integrieren können.
 
-Die verfügbaren Connectors sind unten aufgeführt:
+Die verfügbaren Connectoren sind unten aufgeführt:
 
 * FDA Connector (**Federated Data Access**) ermöglicht Ihnen, Campaign mit einer oder mehreren externen Datenbanken zu verbinden und darauf gespeicherte Daten zu verarbeiten, ohne die Datenstruktur in Adobe Campaign zu verändern – [mehr dazu](../../installation/using/about-fda.md).
 * CRM-Connectoren ermöglichen Ihnen, Daten zwischen Adobe Campaign und Ihrer CRM-Lösung mithilfe spezifischer Workflow-Aktivitäten auszutauschen – [mehr dazu](../../platform/using/crm-connectors.md).
@@ -34,4 +34,3 @@ Sie können Campaign auch mit vielen anderen Systemen integrieren, z. B.:
 >[!NOTE]
 >
 >Die Verfügbarkeit dieser Module und ihre Verwendung können von der Art der Bereitstellung Ihrer Installation abhängen. Weitere Informationen hierzu finden Sie in der [Funktionsmatrix zu Campaign-On-Premise-/Hosted-Bereitstellungen](../../installation/using/capability-matrix.md).
-
