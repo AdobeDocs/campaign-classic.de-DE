@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (Datei)".
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: ba460d8347c987291681641a1be208027acf1d2f
-workflow-type: tm+mt
+exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1161'
 ht-degree: 100%
 
 ---
-
 
 # Laden (Datei){#data-loading-file}
 
@@ -132,4 +132,3 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 1. Definieren Sie nun für jeden Populationstyp den Anschlussvorgang. Im vorliegenden Beispiel wird die Datenbank aktualisiert. Dies erfolgt im Zuge von **[!UICONTROL Daten-Update]**-Aktivitäten, die jeweils an eine der ausgehenden Transitionen der **[!UICONTROL Aufspaltung]** angeschlossen werden.
 
    Die Aktivität **[!UICONTROL Daten-Update]** wird im Abschnitt [Daten-Update](../../workflow/using/update-data.md) genauer beschrieben.
-
