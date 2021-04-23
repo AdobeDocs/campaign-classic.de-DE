@@ -6,14 +6,14 @@ description: Über Content Management
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 87434cc2-1636-4558-ab60-255b7f873c0c
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '245'
 ht-degree: 100%
 
 ---
-
 
 # Über Content Management{#about-content-management}
 
@@ -45,4 +45,3 @@ Trotz allem bringt diese Art der Inhaltserstellung gewisse Einschränkungen mit 
 
 * Weniger Freiheit bei der Gestaltung der Dokumente,
 * Notwendigkeit einer genauen Anforderungsanalyse, um Endanwender nicht durch das Fehlen benötigter Funktionen zu behindern.
-
