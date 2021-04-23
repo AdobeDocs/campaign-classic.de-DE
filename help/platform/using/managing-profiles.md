@@ -7,11 +7,11 @@ audience: platform
 content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,15 +29,15 @@ Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich a
 >
 >Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Weitere Informationen finden Sie unter [Ordner und Ansichten](../../platform/using/access-management-folders.md).
 
-## Empfänger {#moving-recipients} verschieben
+## Empfänger verschieben {#moving-recipients} 
 
-Sie können einen oder eine Gruppe von Empfängern markieren und sie durch Drag&amp;Drop aus der Liste in einen anderen Ordner verschieben. Vor der endgültigen Verschiebung ist eine Bestätigung Ihrerseits erforderlich.
+Sie können einen Empfänger oder eine Gruppe von Empfängern markieren und per Drag-and-drop aus der Liste in einen anderen Ordner verschieben. Vor der endgültigen Verschiebung ist eine Bestätigung Ihrerseits erforderlich.
 
-## Kopieren eines Empfängers {#copying-a-recipient}
+## Empfänger kopieren {#copying-a-recipient}
 
-Es besteht die Möglichkeit, einen Empfänger im selben Ordner zu duplizieren. Klicken Sie hierzu mit der rechten Maustaste auf den entsprechenden Empfänger und wählen Sie **[!UICONTROL Duplizieren]**.
+Es besteht die Möglichkeit, einen Empfänger im selben Ordner zu duplizieren. Klicken Sie hierzu mit der rechten Maustaste auf den entsprechenden Empfänger und wählen Sie **[!UICONTROL Kopieren]**.
 
-## Empfänger {#deleting-recipients} löschen
+## Empfänger löschen {#deleting-recipients}
 
 Zu löschende Empfänger sind zunächst in einen spezifischen Ordner zu verschieben, welcher im Anschluss daran bereinigt wird. Es wird **dringend davon abgeraten**, in diesem Zusammenhang die Option **[!UICONTROL Löschen]** zu verwenden.
 
