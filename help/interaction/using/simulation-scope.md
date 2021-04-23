@@ -6,14 +6,14 @@ description: Simulationsperimeter
 audience: interaction
 content-type: reference
 topic-tags: simulating-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 4f6b3de2-3fdf-441d-925d-476e20e75c6f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '239'
 ht-degree: 100%
 
 ---
-
 
 # Simulationsperimeter{#simulation-scope}
 
@@ -51,4 +51,3 @@ Im Tab **[!UICONTROL Berechnungen]** können Sie auf die Zielgruppe oder direkt 
 Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Hinzufügen]** und wählen Sie in der Spalte die Felder aus, die die gewünschten Werte enthalten. Die neuen Achsen werden zur Berechnung der Simulation herangezogen und erscheinen im Analysebericht. Weitere Informationen hierzu finden Sie im Abschnitt [Verfolgung](../../interaction/using/simulation-tracking.md).
 
 ![](assets/offer_simulation_011.png)
-
