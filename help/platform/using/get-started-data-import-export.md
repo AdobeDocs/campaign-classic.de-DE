@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über den Datenimport und -export in Campaign Cla
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: d6055d97-75fc-4ed7-89bd-8336157454eb
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit dem Datenimport und -export {#get-started-data-import-export}
 
@@ -56,8 +56,8 @@ Diese Vorgänge erfolgen innerhalb von Workflows, indem die Daten, die Sie nutze
 
 Lesen Sie diesbezüglich auch diese Abschnitte:
 
-* [Entpacken oder Entschlüsseln einer Datei](../../platform/using/unzip-decrypt.md)
-* [Eine Datei komprimieren oder verschlüsseln](../../platform/using/zip-encrypt.md)
+* [Entpacken oder Entschlüsseln von Dateien](../../platform/using/unzip-decrypt.md)
+* [Komprimieren oder Verschlüsseln von Dateien](../../platform/using/zip-encrypt.md)
 
 ## Best Practices und Fehlerbehebung {#best-practices-troubleshooting}
 
