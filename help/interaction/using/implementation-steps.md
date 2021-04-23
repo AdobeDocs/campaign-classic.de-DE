@@ -6,14 +6,14 @@ description: Umsetzung
 audience: interaction
 content-type: reference
 topic-tags: general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 82b88ab7-6a95-4bb3-b8b3-abea0fdd4ca0
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '284'
 ht-degree: 100%
 
 ---
-
 
 # Umsetzung{#implementation-steps}
 
@@ -58,4 +58,3 @@ ht-degree: 100%
 
 1. Kampagnen erstellen.
 1. Verweis auf ein Angebot in einer Kampagne oder im gebündelten Versand einer Kampagne. Weitere Informationen hierzu finden Sie im Abschnitt [Über ausgehende Kanäle](../../interaction/using/about-outbound-channels.md).
-
