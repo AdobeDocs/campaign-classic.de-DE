@@ -6,14 +6,14 @@ description: Felder zu einem Webformular hinzufügen
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2550'
 ht-degree: 100%
 
 ---
-
 
 # Felder zu einem Webformular hinzufügen{#adding-fields-to-a-web-form}
 
@@ -381,6 +381,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.
+
 >
 
 
@@ -396,4 +397,3 @@ Fügen Sie dazu eine **Konstante** auf der Seite hinzu und geben Sie den Wert un
 Im folgenden Beispiel wird das Feld **Herkunft** des Empfängerprofils automatisch ausgefüllt, sobald ein Benutzer diese Seite genehmigt. Die Konstante wird auf der Seite nicht angezeigt.
 
 ![](assets/s_ncs_admin_survey_constante.png)
-
