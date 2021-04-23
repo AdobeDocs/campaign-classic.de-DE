@@ -6,11 +6,11 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1107'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 * [Erfahren Sie, wie Sie die Campaign-Client-Konsole installieren](../installation/using/installing-the-client-console.md).
 
-## Integration mit Experience Cloud-Triggern  {#acc-triggers-updates}
+## Integration mit Experience Cloud-Triggern   {#acc-triggers-updates}
 
 Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung einer OAuth-Authentifizierung für den Pipeline-Zugriff basierte, wurde in Adobe I/O verschoben. Sie wird am **30. November 2021** eingestellt. [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -134,7 +134,7 @@ Kunden mit Hybrid-Umgebungen müssen darüber hinaus sicherstellen, dass Pipelin
 
 ### HTTP/2-basierte APNs-Provider-API
 
-Seit dem 31. März 2021 **unterstützt der Apple Push Notification Service (APNs) nicht mehr das Legacy-Binärprotokoll.** [Mehr dazu](https://developer.apple.com/news/?id=c88acm2b).
+Seit dem **31. März 2021** unterstützt der Push-Benachrichtigungsdienst von Apple (Apple Push Notification service, APNs) das alte Binärprotokoll nicht mehr. [Mehr dazu](https://developer.apple.com/news/?id=c88acm2b).
 
 **Sind Sie betroffen?**
 
@@ -146,11 +146,11 @@ Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md
 
 Wenn Sie als gehosteter Kunde ein Upgrade auf den neuen Build durchgeführt haben, hat Adobe Ihre Instanz(en) bereits auf die HTTP/2-basierte API aktualisiert.
 
-Als Kunde vor Ort/Hybrid müssen Sie Ihre Konfiguration aktualisieren. [Erfahren Sie, wie Sie zu HTTP/2 migrieren](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html).
+Als On-Premise-/Hybrid-Kunde müssen Sie Ihre Konfiguration aktualisieren. [Erfahren Sie, wie Sie zu HTTP/2 migrieren](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html).
 
 ### Aktualisierungen des APNs-Stammzertifikats
 
-Am 29. März 2021 wirkte sich eine Infrastruktur-Aktualisierung des Apple Push Notification Service (APNs) auf den Adobe Campaign Classic iOS-Kanal aus. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
+Am 29. März 2021 wirkte sich eine Infrastrukturaktualisierung des Push-Benachrichtigungsdienstes von Apple (Apple Push Notification service, APNs) auf den iOS-Kanal von Adobe Campaign Classic aus. Eine Anpassung der Konfiguration des Betriebssystems ist **obligatorisch**, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
 Weitere Informationen zu den APNs-Änderungen finden Sie [auf dieser Seite](https://developer.apple.com/news/?id=7gx0a2lp).
 
