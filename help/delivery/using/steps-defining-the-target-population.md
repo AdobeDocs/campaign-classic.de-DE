@@ -6,14 +6,14 @@ description: Bestimmen der Zielpopulation
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8e0c6951be9d2f9fb0e58af213cb8db4079f2225
-workflow-type: tm+mt
+exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1746'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
-
 
 # Zielpopulation bestimmen {#defining-the-target-population}
 
@@ -21,10 +21,10 @@ ht-degree: 96%
 
 Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
 
-* **Wichtigste Audience**: Profil, die Nachrichten erhalten. [Weitere Infos](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* **Testversand**: Empfänger von Testversand-Meldungen, die am Überprüfungszyklus beteiligt sind. [Weitere Infos](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-* **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Weitere Infos](../../delivery/using/about-seed-addresses.md)
-* **Kontrollgruppen**: Population, die den Versand nicht erhält, zur Nachverfolgung von Verhaltens- und Kampagnen-Auswirkungen (nur im Zusammenhang mit einer Marketing-Kampagne). [Weitere Infos](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
+* **Haupt-Audience**: Profile, die Nachrichten empfangen. [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
+* **Testversand**: Empfänger von Nachrichten in Testsendungen, die am Validierungszyklus beteiligt sind. [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Mehr dazu](../../delivery/using/about-seed-addresses.md)
+* **Kontrollgruppen**: Population, die den Versand nicht erhält und verwendet wird, um das Verhalten und die Auswirkungen der Kampagne zu verfolgen (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
 
