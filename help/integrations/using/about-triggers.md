@@ -5,14 +5,14 @@ title: Über Adobe Experience Cloud Triggers
 description: Erste Schritte mit der Implementierung von Adobe Experience Cloud Triggers.
 audience: integrations
 content-type: reference
+exl-id: 0e337620-a49f-4e14-8c67-9279d74736f1
 translation-type: ht
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit Adobe Experience Cloud Triggers{#about-adobe-experience-triggers}
 
