@@ -6,14 +6,14 @@ description: Entwerfen einer Umfrage
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
 ---
-
 
 # Entwerfen einer Umfrage{#building-a-survey}
 
@@ -137,4 +137,3 @@ Wenn die Seite aktualisiert wird, ändert sich die Anzeige der Fragen.
 >[!CAUTION]
 >
 >Achten Sie bei der zufälligen Anzeige von Fragen darauf (die Option **[!UICONTROL Zufällige Anzeige]** ist auf der Seite aktiviert), dass Sie keine Multiple-Choice-Fragen verwenden, für die mindestens eine Auswahl zwingend erforderlich ist.
-
