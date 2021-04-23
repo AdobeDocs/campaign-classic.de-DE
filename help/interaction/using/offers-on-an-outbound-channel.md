@@ -6,14 +6,14 @@ description: Ausgehender Kanal
 audience: interaction
 content-type: reference
 topic-tags: case-study
+exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '465'
 ht-degree: 100%
 
 ---
-
 
 # Ausgehender Kanal{#offers-on-an-outbound-channel}
 
@@ -126,4 +126,3 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 1. Sie haben mithilfe der Verlaufs- und Exportfunktionen des Berichts die Möglichkeit, die Simulationsdaten zu speichern.
 
    ![](assets/offer_simulation_example_013.png)
-
