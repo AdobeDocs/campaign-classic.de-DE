@@ -7,11 +7,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
  </tbody> 
 </table>
 
-Informationen zur Optimierung der Auslieferbarkeit Ihrer Adobe Campaign-E-Mails finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md). Einen tieferen Einstieg in die Lieferbarkeit finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) zur Adobe-Lieferbarkeit.
+Weitere Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md). Weitere Informationen zur Zustellbarkeit finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 ## Status Ausstehend {#pending-status}
 
