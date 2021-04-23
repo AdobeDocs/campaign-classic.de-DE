@@ -5,17 +5,15 @@ title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
+exl-id: d288fe86-0564-45f2-8777-606abdea531f
 translation-type: ht
-source-git-commit: a50f094ae2f00060cfeb19dbc94534906728a28f
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '6'
 ht-degree: 100%
 
 ---
 
-
 # Technote {#about}
 
 [Technote herunterladen](guidelines.pdf)
-
-
