@@ -6,14 +6,14 @@ description: Erste Umfrage mit Campaign erstellen
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '959'
 ht-degree: 100%
 
 ---
-
 
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
@@ -152,4 +152,3 @@ Sie können die Antworten der Benutzer dann mit Berichten und Logs überwachen. 
 >Die öffentliche URL beinhaltet den internen Namen der Umfrage. Wenn dieser geändert wird, wird die URL automatisch aktualisiert. Auch alle Links zur Umfrage müssen dann aktualisiert werden.
 >
 >Wenn Nachrichten mit dem Link zur Umfrage bereits versendet wurden, funktioniert dieser Link nicht mehr.
-
