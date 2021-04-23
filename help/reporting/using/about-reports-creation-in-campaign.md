@@ -6,14 +6,14 @@ description: Über die Berichterstellung in Campaign
 audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
+exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
 translation-type: ht
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '167'
 ht-degree: 100%
 
 ---
-
 
 # Wichtige Schritte zur Erstellung eines Berichts{#about-reports-creation-in-campaign}
 
@@ -31,4 +31,3 @@ Um einen Analysebericht Ihrer Daten zu erstellen, zu veröffentlichen und zu ver
 1. Konfigurieren der Anzeigeoptionen: Anzeigetyp, geteilte Berichte (siehe [Anzeigekontext von Berichten](../../reporting/using/configuring-access-to-the-report.md#report-display-context), [Bedingte Inhalte erstellen](../../reporting/using/defining-a-conditional-content.md) und [Berichtanzeige konfigurieren](../../reporting/using/configuring-access-to-the-report.md)),
 1. Veröffentlichen des Berichts (Veröffentlichungsassistent; siehe [Berichtveröffentlichung](../../reporting/using/configuring-access-to-the-report.md#publishing-the-report)),
 1. Umwandlung des Berichts durch Export, Verlaufserstellung oder Anzeige im Browser (siehe [Mit Berichten arbeiten](../../reporting/using/actions-on-reports.md)).
-
