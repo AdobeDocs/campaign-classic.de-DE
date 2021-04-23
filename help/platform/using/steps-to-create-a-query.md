@@ -6,14 +6,14 @@ description: Schritte zum Erstellen einer Abfrage
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '928'
 ht-degree: 100%
 
 ---
-
 
 # Schritte zum Erstellen einer Abfrage{#steps-to-create-a-query}
 
@@ -138,4 +138,3 @@ Im vorliegenden Beispiel wurden die Daten nach dem Alter der ausgewählten Empf�
 >[!NOTE]
 >
 >Standardmäßig werden in der **[!UICONTROL Datenvorschau]** die 200 ersten Zeilen des Abfrageergebnisses angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen. Klicken Sie anschließend auf **[!UICONTROL Datenvorschau starten]**, um die Ergebnisse anzusehen.
-
