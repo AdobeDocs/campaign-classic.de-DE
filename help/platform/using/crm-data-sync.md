@@ -6,16 +6,16 @@ description: Daten zwischen Campaign und Ihrem CRM verwalten
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1617'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-
-# Daten zwischen Kampagne und CRM {#data-synchronization} synchronisieren
+# Daten zwischen Campaign und dem CRM-System synchronisieren {#data-synchronization}
 
 Die Datensynchronisation zwischen Adobe Campaign und dem CRM-System erfolgt über die spezifische Workflow-Aktivität [CRM-Connector](../../workflow/using/crm-connector.md).
 
@@ -82,9 +82,9 @@ Gehen Sie zur Konfiguration der **[!UICONTROL CRM-Connector]**-Aktivität wie fo
 
    Weitere Informationen hierzu finden Sie im Abschnitt [Variablenverwaltung](#variable-management).
 
-### Verwalten von Variablen {#variable-management}
+### Variablen verwalten {#variable-management}
 
-Aktivieren Sie die Option **[!UICONTROL Automatischer Index]**, um nur Objekte zu erfassen, die seit dem letzten Import geändert wurden.
+Aktiviere die Option **[!UICONTROL Automatischer Index]**, um nur die seit dem letzten Import geänderten Objekte abzurufen.
 
 ![](assets/crm_task_import_option.png)
 
