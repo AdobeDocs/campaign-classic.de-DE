@@ -6,22 +6,22 @@ description: Filter erstellen
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 58e54f67-dc87-42f1-8426-6f801e8e4fb6
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2087'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
 # Erstellen von Filtern{#creating-filters}
 
-Beim Navigieren im Adobe-Campaign-**[!UICONTROL Explorer]** (zugänglich über die entsprechende Schaltfläche auf der Startseite) werden die Informationen der Datenbank in Form von Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die dem Benutzer nützlichen Elemente angezeigt werden. Auf den gefilterten Daten können dann Aktionen gestartet werden. Die Filterkonfiguration ermöglicht eine **[!UICONTROL dynamische]** Auswahl von Daten einer Liste. Bei Datenänderungen werden die gefilterten Daten automatisch aktualisiert.
+Beim Navigieren im Adobe Campaign-**[!UICONTROL Explorer]** (zugänglich über die entsprechende Schaltfläche auf der Startseite) werden die Informationen der Datenbank in Form von Listen angezeigt. Diese Listen können so konfiguriert werden, dass nur die dem Benutzer nützlichen Elemente angezeigt werden. Auf den gefilterten Daten können dann Aktionen gestartet werden. Die Filterkonfiguration ermöglicht eine **[!UICONTROL dynamische]** Auswahl von Daten einer Liste. Bei Datenänderungen werden die gefilterten Daten automatisch aktualisiert.
 
 >[!NOTE]
 >
->Die Konfigurationseinstellungen der Benutzeroberfläche werden lokal auf Geräteebene definiert. Manchmal kann es notwendig sein, diese Daten zu bereinigen, insbesondere wenn beim Aktualisieren der Daten Probleme auftreten. Verwenden Sie dazu das Menü **[!UICONTROL Datei > Lokalen Cache löschen]**.
+>Die Konfigurationseinstellungen der Benutzeroberfläche werden lokal auf Geräteebene definiert. Manchmal kann es notwendig sein, diese Daten zu bereinigen, insbesondere wenn Probleme beim Aktualisieren von Daten auftreten. Verwenden Sie dazu das Menü **[!UICONTROL Datei > Lokalen Cache löschen]**.
 
 ## Typologie verfügbarer Filter {#typology-of-available-filters}
 
@@ -41,7 +41,7 @@ Folgende Filtertypen sind in Adobe Campaign verfügbar:
   >
   >The **%** character replaces any character string. For example, the string `%@yahoo.com` lets you display all the profiles with an e-mail address in the domain "yahoo.com".
 -->
-Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden Sie unter [Standardfilter](#altering-the-default-filter) ändern.
+Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden Sie unter [Standardfilter ändern](#altering-the-default-filter).
 
 * **Einfache Filter**
 
@@ -51,15 +51,15 @@ Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden
 
    ![](assets/filters_recipient_simple_filter.png)
 
-   Einfache Filter werden unter [Einen einfachen Filter erstellen](#creating-a-simple-filter) beschrieben.
+   Einfache Filter werden unter [Einfache Filter erstellen](#creating-a-simple-filter) ausführlich beschrieben.
 
 * **Erweiterte Filter**
 
    **Erweiterte Filter** werden basierend auf einer Abfrage oder einer Kombination von Abfragen über die Daten erstellt.
 
-   Weitere Informationen zum Erstellen eines erweiterten Filters finden Sie unter [Einen erweiterten Filter erstellen](#creating-an-advanced-filter).
+   Weitere Informationen zum Erstellen eines erweiterten Filters finden Sie unter [Erweiterte Filter erstellen](#creating-an-advanced-filter).
 
-   Sie können Funktionen verwenden, um den Inhalt des Filters zu definieren. Weitere Informationen finden Sie unter [Einen erweiterten Filter mit Funktionen](#creating-an-advanced-filter-with-functions) erstellen.
+   Sie können Funktionen verwenden, um den Inhalt des Filters zu definieren. Weitere Informationen finden Sie unter [Erweiterte Filter mit Funktionen erstellen](#creating-an-advanced-filter-with-functions).
 
    >[!NOTE]
    >
@@ -69,9 +69,9 @@ Sie können den Standardfilter einer Liste ändern. Weitere Informationen finden
 
    Ein **Anwendungsfilter** ist ein erweiterter Filter, dessen Konfiguration zur wiederholten und gemeinsamen Nutzung mit anderen Benutzern gespeichert wird.
 
-   Die Schaltfläche **[!UICONTROL Filter]** oberhalb der Listen enthält eine Reihe von Anwendungsfiltern, die kombiniert werden können, um die Filterung zu verfeinern. Die Methode zum Erstellen dieser Filter finden Sie unter [Filter speichern](#saving-a-filter).
+   Die Schaltfläche **[!UICONTROL Filter]** oberhalb der Listen enthält eine Reihe von Anwendungsfiltern, die kombiniert werden können, um die Filterung zu verfeinern. Die Methode zum Erstellen dieser Filter wird unter [Filter speichern](#saving-a-filter) beschrieben.
 
-## Standardfilter {#altering-the-default-filter} ändern
+## Standardfilter ändern {#altering-the-default-filter}
 
 Um den Standardfilter für eine Empfängerliste zu ändern, klicken Sie auf den Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]**.
 
@@ -92,9 +92,9 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Das Fenster für die Filterdefinition wird unter [Einen erweiterten Filter erstellen](#creating-an-advanced-filter) und [Einen Filter speichern](#saving-a-filter) beschrieben.
+   >Das Fenster zur Filterdefinition wird unter [Erweiterte Filter erstellen](#creating-an-advanced-filter) und [Filter speichern](#saving-a-filter) ausführlich beschrieben.
 
-## Erstellen eines einfachen Filters {#creating-a-simple-filter}
+## Einfache Filter erstellen {#creating-a-simple-filter}
 
 Gehen Sie wie folgt vor, um einen **einfachen Filter** zu erstellen:
 
@@ -128,7 +128,7 @@ Wenn das Feld, nach dem die Daten gefiltert werden sollen, nicht im Profilformul
 
    ![](assets/s_ncs_user_delete_filter.png)
 
-## Einen erweiterten Filter {#creating-an-advanced-filter} erstellen
+## Erweiterte Filter erstellen {#creating-an-advanced-filter}
 
 Gehen Sie wie folgt vor, um einen **erweiterten Filter** zu erstellen.
 
@@ -170,7 +170,7 @@ Um den Filter aufzuheben, klicken Sie auf das Symbol **[!UICONTROL Filter entfer
 
 Sie können einen erweiterten Filter speichern, um ihn für die zukünftige Verwendung aufzubewahren. Weitere Informationen zu diesem Filtertyp finden Sie unter [Filter speichern](#saving-a-filter).
 
-### Einen erweiterten Filter mit Funktionen {#creating-an-advanced-filter-with-functions} erstellen
+### Erweiterte Filter mit Funktionen erstellen {#creating-an-advanced-filter-with-functions}
 
 Erweiterte Filter können Funktionen verwenden: **Filter mit Funktionen** werden über einen Ausdruckseditor erstellt, der es ermöglicht, anhand von Daten aus der Datenbank und erweiterten Funktionen Formeln zu definieren. Befolgen Sie die Schritte 1, 2 und 3 der Erstellung von erweiterten Filtern und gehen Sie anschließend wie folgt vor:
 
@@ -183,7 +183,7 @@ Erweiterte Filter können Funktionen verwenden: **Filter mit Funktionen** werden
 
    * **[!UICONTROL Einfaches Feld]**: Standardmodus.
    * **[!UICONTROL Aggregat]**: Auswahl der Aggregatformel (Zählung, Summe, Durchschnitt, minimaler Wert, maximaler Wert).
-   * **[!UICONTROL Benutzerfilter]** zur Auswahl eines der vorhandenen Benutzerfilter. Die Benutzerdefinierte Filter finden Sie unter [Filter speichern](#saving-a-filter).
+   * **[!UICONTROL Benutzerfilter]** zur Auswahl eines der vorhandenen Benutzerfilter. Benutzerfilter werden unter [Filter speichern](#saving-a-filter) ausführlich beschrieben.
    * **[!UICONTROL Ausdruck]**: Erstellung mithilfe des Ausdruckseditors.
 
       Der Ausdruckseditor dient der Erstellung erweiterter Filter. Er gestaltet sich wie folgt:
@@ -194,9 +194,9 @@ Erweiterte Filter können Funktionen verwenden: **Filter mit Funktionen** werden
 
       >[!NOTE]
       >
-      >Ein Beispiel für die Filtererstellung basierend auf einem Ausdruck finden Sie in [diesem Abschnitt](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is).
+      >In [diesem Abschnitt](../../workflow/using/sending-a-birthday-email.md#identifying-recipients-whose-birthday-it-is) wird ein Beispiel eines auf einem Ausdruck basierenden Filters dargestellt.
 
-## Filter {#saving-a-filter} speichern
+## Filter speichern {#saving-a-filter}
 
 Filter sind jedem Benutzer spezifisch und werden bei jeder Cache-Leerung der Clientkonsole zurückgesetzt.
 
@@ -220,9 +220,9 @@ Sie haben die Möglichkeit, Filter über die Schaltfläche **[!UICONTROL Filter]
 
 ![](assets/s_ncs_user_filter_combination.png)
 
-## Filter-Empfänger {#filtering-recipients}
+## Empfänger filtern {#filtering-recipients}
 
-Mit Vordefinierte Filtern (siehe [Filter](#saving-a-filter) speichern) können Sie die Profil der in der Datenbank enthaltenen Empfänger filtern. Sie können Filter über den Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** des Baums bearbeiten. Die Filter werden über die Schaltfläche **[!UICONTROL Filter]** im oberen Bereich des Arbeitsbereichs angezeigt.
+Vordefinierte Filter (siehe [Filter speichern](#saving-a-filter)) ermöglichen es Ihnen, die Profile der in der Datenbank enthaltenen Empfänger zu filtern. Sie können Filter über den Knoten **[!UICONTROL Profile und Zielgruppen > Vordefinierte Filter]** des Baums bearbeiten. Die Filter werden über die Schaltfläche **[!UICONTROL Filter]** im oberen Bereich des Arbeitsbereichs angezeigt.
 
 Wählen Sie einen Filter aus, um seine Parameter anzuzeigen und eine Vorschau der gefilterten Daten zu erhalten.
 
@@ -377,4 +377,3 @@ Klicken Sie auf den Tab **[!UICONTROL Parameter]**, um auf folgende Optionen zuz
    Diese Option ist zum Beispiel für die im Versand-Assistenten angebotenen Filter &quot;Versandempfänger&quot; und &quot;Zu einem Ordner gehörende Versandempfänger&quot; aktiv, die nicht überschrieben werden können.
 
    ![](assets/s_ncs_user_filter_advanced_param.png)
-
