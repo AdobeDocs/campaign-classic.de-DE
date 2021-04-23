@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie Hypothesen in Campaign Response Manager erste
 audience: campaign
 content-type: reference
 topic-tags: response-manager
+exl-id: e0b3bc9f-5e81-463f-a59e-cd972a47109b
 translation-type: ht
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1115'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen von Hypothesen{#creating-hypotheses}
 
@@ -181,4 +181,3 @@ In diesem Beispiel möchten wir eine Hypothese erstellen, die mit einem Versand 
 1. Positionieren Sie sich im Knoten **[!UICONTROL Kampagnenverwaltung > Messhypothesen]** des Adobe Campaign-Navigationsbaums, um die von der Hypothese berechneten Indikatoren zu überprüfen.
 
    ![](assets/response_hypothesis_delivery_example_010.png)
-
