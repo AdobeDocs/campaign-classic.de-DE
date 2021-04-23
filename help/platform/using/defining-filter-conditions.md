@@ -6,18 +6,18 @@ description: Filterbedingungen definieren
 audience: platform
 content-type: reference
 topic-tags: creating-queries
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: b62e23e5-f1b7-44c4-82d9-95c6b3240352
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '3394'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-
 # Filterbedingungen definieren{#defining-filter-conditions}
 
-## Wählen Sie den Operator {#choosing-the-operator}
+## Operator auswählen {#choosing-the-operator}
 
 In einer Filterbedingung werden zwei Werte durch einen Operator zueinander in Beziehung gesetzt.
 
@@ -117,7 +117,7 @@ Die folgende Liste beschreibt alle verfügbaren Operatoren:
  </tbody> 
 </table>
 
-## Verwenden Sie AND, OR, AUSGENOMMEN {#using-and--or--except}
+## UND, ODER, AUSSER verwenden {#using-and--or--except}
 
 In Abfragen, die mehr als eine Bedingung enthalten, müssen die Bedingungen miteinander verknüpft werden. Mögliche Verknüpfungen sind:
 
@@ -146,7 +146,7 @@ Folgendes Beispiel zeigt einen Filter zur Anzeige aller Empfänger spanischer Sp
 
 ![](assets/query_editor_nveau_31.png)
 
-## Priorisieren von Bedingungen {#prioritizing-conditions}
+## Bedingungen priorisieren {#prioritizing-conditions}
 
 In diesem Kapitel wird erläutert, wie anhand der blauen Pfeile in der Symbolleiste Filterbedingungen hierarchisiert werden können.
 
@@ -165,7 +165,7 @@ Platzieren Sie den Cursor auf der Filterbedingung **[!UICONTROL Geschlecht (@gen
 
 Die Bedingung **[!UICONTROL Geschlecht (@gender) gleich Männlich]** wurde aus der Klammer entfernt. Sie befindet sich nun auf der gleichen Ebene wie die Bedingung &quot;Ort gleich Hamburg&quot;. Die entsprechenden Bedingungen sind jetzt durch **[!UICONTROL Und]** verknüpft.
 
-## Daten auswählen, die extrahiert werden sollen{#selecting-data-to-extract}
+## Zu extrahierende Daten auswählen {#selecting-data-to-extract}
 
 Je nach Tabelle stehen verschiedene Felder zur Verfügung. Alle Felder sind in einem **[!UICONTROL Hauptelement]** genannten Knoten gespeichert. Die Felder in unten stehendem Beispiel stammen aus der Empfängertabelle (nms:recipient). Die Anzeige erfolgt jeweils in alphabetischer Reihenfolge.
 
@@ -265,7 +265,7 @@ Relationen zu einer Tabelle oder zu Kollektionselementen:
 >* Verwenden Sie die Schaltfläche **[!UICONTROL Werteverteilung]**, um die im ausgewählten Feld enthaltenen Werte anzuzeigen (z. B. das anteilige Vorkommen von Städten oder Sprachen).
 
 
-## Erstellen Sie berechnete Felder {#creating-calculated-fields}
+## Berechnete Felder erstellen {#creating-calculated-fields}
 
 Sie haben die Möglichkeit, im Schritt der Datenformatierung ein berechnetes Feld hinzuzufügen. Dieses wird bei der Datenvorschau in Form einer zusätzlichen Spalte angezeigt. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Berechnetes Feld hinzufügen]**.
 
@@ -306,7 +306,7 @@ Klicken Sie zum Entfernen des Felds auf das rote Kreuz (**[!UICONTROL Berechnete
 
 ![](assets/query_editor_nveau_58.png)
 
-## Erstellen von Ausdrücken {#building-expressions}
+## Ausdrücke erstellen {#building-expressions}
 
 Der Ausdruckseditor dient der Berechnung von Aggregaten, der Erstellung von Funktionen oder der Bearbeitung von Formeln von einem Ausdruck ausgehend.
 
