@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie mit einem Workflow einen Bericht an eine List
 audience: workflow
 content-type: reference
 topic-tags: use-cases
+exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '719'
 ht-degree: 100%
 
 ---
-
 
 # Bericht-Versand an eine Liste{#sending-a-report-to-a-list}
 
@@ -128,6 +128,4 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
    * In den Bereichen **[!UICONTROL Empfänger]** und **[!UICONTROL Inhalt]**: Aktivieren Sie **[!UICONTROL Werden bzw. Wird im Versand angegeben]**.
    * Im Bereich **[!UICONTROL Auszuführende Aktion]**: Aktivieren Sie **[!UICONTROL Vorbereiten und starten]**.
    * Deaktivieren Sie die Optionen **[!UICONTROL Ausgehende Transition erzeugen]** und **[!UICONTROL Fehler verarbeiten]**.
-
    ![](assets/use_case_report_11.png)
-
