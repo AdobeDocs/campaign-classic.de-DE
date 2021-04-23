@@ -6,14 +6,14 @@ description: Liste von Berichten
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1007'
 ht-degree: 100%
 
 ---
-
 
 # Liste von Berichten{#list-of-reports}
 
@@ -38,22 +38,22 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   <tr> 
    <td> Versanddurchsatz (throughput)<br /> </td> 
    <td> Grafiken zum Versanddurchsatz in Nachrichten/Stunde und Bits/Sekunde<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Fehler und Bounces (errors)<br /> </td> 
    <td> Verteilung von Fehlern und Bounces nach Ursache und Domain<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Trackingindikatoren (deliveryFeedback)<br /> </td> 
    <td> Zusammenfassung der Schlüsselindikatoren, die die Verfolgung des Empfängerverhaltens ermöglichen<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Trackingindikatoren (mobileAppDeliveryFeedback)<br /> </td> 
    <td> Trackingindikatoren eines Mobile-App-Versands<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Browser (browserStatistics)<br /> </td> 
@@ -63,42 +63,42 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   <tr> 
    <td> Teilen über soziale Netzwerke (deliveryForward)<br /> </td> 
    <td> Statistiken über Teilungen und Öffnungen<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Klickposition (hoturls)<br /> </td> 
    <td> Zeigt den Nachrichteninhalt mit dem prozentualen Klickanteil für jeden Link<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Hypothesenbericht (deliveryHypothesis)<br /> </td> 
    <td> Fasst die Berechnungen der Versandhypothesen zusammen<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Versandstatistiken (statisticsPerDelivery)<br /> </td> 
    <td> Statistiken (verarbeitete Nachrichten, zugestellte Nachrichten, Hardbounces, Softbounces, Öffnungen, Klicks, Abmeldungen) nach E-Mail-Domain<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Statistiken zu Teilungsaktivitäten (forwardActivities)<br /> </td> 
    <td> Zeitliche Entwicklung von Teilungen, Öffnungen und Anmeldungen<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Trackingstatistiken (trackingStatistics)<br /> </td> 
    <td> Statistiken über Öffnungen, Klicks und Transaktionen über einen Zeitraum hinweg<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Versandzusammenfassung (deliverySending)<br /> </td> 
    <td> Zusammenfassung der Versandindikatoren: Zielgruppe, Ausschlüsse und versandte Nachrichten<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Versandzusammenfassung (deliveryStatistics)<br /> </td> 
    <td> Zusammenfassung der ausgewählten Sendungen: Zielgruppe, Ausschlüsse und versandte Nachrichten<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> Betriebssysteme (osStatistics)<br /> </td> 
@@ -108,12 +108,12 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   <tr> 
    <td> Reaktionsrate (deliveryFeedbackSocial)<br /> </td> 
    <td> Feedback-Rate eines Versands und Feedback-Verteilung<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
   <tr> 
    <td> URLs und Clickstreams (topUrlDelivery)<br /> </td> 
    <td> Reaktionsstärkste URLs und entsprechende Clickstreams<br /> </td> 
-   <td> nms:Versand<br /> </td> 
+   <td> nms:delivery<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -262,7 +262,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in diesem [Abschni
   <tr> 
    <td> Kostenzeilenanalyse (budgetExplorerProgram)<br /> </td> 
    <td> Deskriptive Kostenzeilenanalyse<br /> </td> 
-   <td> nms:Programm<br /> </td> 
+   <td> nms:program<br /> </td> 
   </tr> 
   <tr> 
    <td> Budget-Zusammenfassung (budget)<br /> </td> 
@@ -371,4 +371,3 @@ Nachfolgende Berichte stehen ebenfalls nativ zur Verfügung. Weitere Information
   </tr> 
  </tbody> 
 </table>
-
