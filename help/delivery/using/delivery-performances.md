@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Versandleistung und die entsprechenden 
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
-workflow-type: tm+mt
+exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '458'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
-
 
 # Best Practices für die Versandleistung {#delivery-performances}
 
@@ -53,6 +53,6 @@ Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
 
 * **Die Versandgröße**: Größere Sendungen benötigen zur Ausführung länger. MTA-Kindprozesse werden für Standard-Bündelgrößen konfiguriert. Diese sind für die meisten Instanzen ausreichend, müssen jedoch überprüft werden, wenn Sendungen immer zu langsam durchgeführt werden.
 * **Die Zielgruppe des Versands**: Die Versandleistung kann durch Softbounce-Fehler beeinträchtigt werden, die entsprechend der Konfiguration der Neuversuche gehandhabt werden. Je größer die Anzahl der Fehler ist, desto mehr Neuversuche sind nötig.
-* **Die gesamte Plattformlast**: Wenn mehrere große Versand gesendet werden, kann die gesamte Plattform betroffen sein. Sie können auch Fragen zum IP-Ruf und zur Lieferbarkeit prüfen. Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md) und im [Best Practice Guide ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Adobe-Bereitstellung.
+* **Die Gesamtlast der Plattform**: Wenn mehrere große Sendungen ausgeführt werden, kann die gesamte Plattform beeinträchtigt sein. Sie können auch die IP-Reputation und Probleme mit der Zustellbarkeit überprüfen. Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md) und im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand beeinträchtigen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-performances.md).
