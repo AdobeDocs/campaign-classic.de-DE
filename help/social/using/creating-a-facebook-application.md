@@ -6,14 +6,14 @@ description: Erstellen einer Facebook-Anwendung
 audience: social
 content-type: reference
 topic-tags: configuration
+exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1103'
 ht-degree: 100%
 
 ---
-
 
 # Erstellen einer Facebook-Anwendung {#creating-a-facebook-application}
 
@@ -166,4 +166,3 @@ Sie können Ihre Facebook-Anwendungen so konfigurieren, dass sie als Tabs auf Ih
 1. Wählen Sie die Facebook-Seite aus, der Sie den Tab hinzufügen möchten, und klicken Sie auf **[!UICONTROL Seitentab hinzufügen]**.
 
    ![](assets/social_webapp_fb_0011.png)
-
