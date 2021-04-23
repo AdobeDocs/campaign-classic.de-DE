@@ -6,14 +6,14 @@ description: Webanwendung tracken
 audience: web
 content-type: reference
 topic-tags: web-applications
+exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 translation-type: ht
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '414'
 ht-degree: 100%
 
 ---
-
 
 # Besuche auf einer Web-Anwendung tracken{#tracking-a-web-application}
 
@@ -74,4 +74,3 @@ Bei der Verwendung der Webschnittstelle werden Trackingtags über die Seiteneige
 Mit dem Symbol **[!UICONTROL Bausteine anzeigen]** können Sie die Anzahl der für die Seite definierten Trackingtags anzeigen.
 
 ![](assets/trackers_4.png)
-
