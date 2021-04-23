@@ -6,14 +6,14 @@ description: Funktionsweise der Quarantäneverwaltung
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
-workflow-type: tm+mt
+exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2702'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Funktionsweise der Quarantäneverwaltung{#understanding-quarantine-management}
 
@@ -25,7 +25,7 @@ Adobe Campaign erlaubt die Verwaltung von Quarantäne-Adressen. Empfänger, dere
 >
 >Dieser Abschnitt gilt für Online-Kanäle: E-Mail, SMS, Push-Benachrichtigungen.
 
-### Zustellbarkeit durch Quarantänen optimieren  {#optimizing-your-delivery-through-quarantines}
+### Zustellbarkeit durch Quarantänen optimieren   {#optimizing-your-delivery-through-quarantines}
 
 Die Profile, deren E-Mail-Adressen oder Telefonnummern unter Quarantäne sind, werden während der Nachrichtenvorbereitung automatisch ausgeschlossen (siehe [Für einen Versand in Quarantäne befindliche Adressen identifizieren](#identifying-quarantined-addresses-for-a-delivery)). Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt.
 
@@ -125,7 +125,7 @@ Adobe Campaign verwaltet die Quarantäne je nach dem Typ des Versandfehlers und
 * **Hardbounce**: Die E-Mail-Adresse kommt sofort in Quarantäne.
 * **Softbounce**: In diesem Fall wird die Adresse nicht sofort unter Quarantäne gestellt, sondern der Fehlerzähler nur hinaufgesetzt. Weitere Informationen hierzu finden Sie unter [Verwaltung von Softbounces](#soft-error-management).
 
-Wenn ein Benutzer eine E-Mail als Spam-Mail ([Feedback-Schleife](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops)) qualifiziert, wird die Nachricht automatisch in eine technische Mailbox umgeleitet, die von der Adobe verwaltet wird. Die E-Mail-Adresse des Benutzers wird dann automatisch an die Quarantäne gesendet.
+Wenn ein Benutzer eine E-Mail als Spam kennzeichnet ([Feedback Loop](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops)), wird die Nachricht automatisch an ein von Adobe verwaltetes technisches Postfach weitergeleitet. Die E-Mail-Adresse des Benutzers wird dann automatisch unter Quarantäne gestellt.
 
 Bei Adressen in Quarantäne zeigt das Feld **[!UICONTROL Fehlerursache]** an, was die Quarantäne ausgelöst hat. Bei der Quarantänefunktion in Adobe Campaign wird die Groß-/Kleinschreibung beachtet. Achten Sie darauf, E-Mail-Adressen in Kleinbuchstaben zu importieren, damit sie später nicht erneut verwendet werden.
 
@@ -437,7 +437,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
     <tr> 
    <td> Authentifizierung: ungültiger JWT<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Invalid_grant </td> 
+   <td> invalid_grant </td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
@@ -445,7 +445,7 @@ Das Quarantäneverfahren für Android V2 ist identisch mit dem für Android V1. 
     <tr> 
    <td> Authentifizierung: ungültige JWT-Signatur<br /> </td> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Invalid_grant </td> 
+   <td> invalid_grant </td> 
    <td> Ignoriert</td> 
    <td> Zurückgewiesen<br /> </td> 
    <td> Nein<br /> </td> 
