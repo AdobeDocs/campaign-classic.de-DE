@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie die Ausführung von Import- und Exportvorgän
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 415c5137-2eb0-4581-a46e-26e8e3d264fa
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '192'
 ht-degree: 100%
 
 ---
-
 
 # Überwachen der Ausführung von Vorgängen {#monitoring-job-execution}
 
@@ -22,7 +22,7 @@ Sie können die Ausführung von Import- und Exportvorgängen direkt über die Li
 ![](assets/s_ncs_user_export_list_and_details.png)
 
 * Im Tab **[!UICONTROL Journal]** können Sie die zur Exportdurchführung gehörigen Protokollnachrichten einsehen.
-* Der Tab **[!UICONTROL Zurückweisungen]** listet die Datensätze auf, die nicht verarbeitet werden konnten. Siehe [diesen Abschnitt](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
+* Der Tab **[!UICONTROL Zurückweisungen]** listet die Datensätze auf, die nicht verarbeitet werden konnten. Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/executing-import-jobs.md#behavior-in-the-event-of-an-error).
 
 Im Tab **[!UICONTROL Allgemein]** gibt das Feld **[!UICONTROL Status]** den aktuellen Status eines Vorgangs an.
 
