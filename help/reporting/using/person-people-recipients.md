@@ -6,14 +6,14 @@ description: Versandberichte
 audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 69b810f3-aa8b-4ab5-95c1-831257d7fcb9
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '768'
 ht-degree: 100%
 
 ---
-
 
 # Personen und Empfänger {#person-people-and-recipients}
 
@@ -100,7 +100,7 @@ Personen: Dank der Cookies lässt sich beobachten, dass allen Klick-Logs dieselb
 | John | - | - | - |
 | Marie | - | - | +1 |
 | Florian | +1 | +1 | +1 |
-| Zwischenergebnis | 1 | 3 | 2 |
+| Zwischenergebnis | 1 | 1 | 2 |
 
 Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Florian die E-Mail weitergeleitet hat:
 
@@ -120,9 +120,9 @@ Folgende Logs entsprechen der Öffnung und den zwei Klicks der Person, an die Fl
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florianisch | +1 | +1 | +1 |
+| Florian | +1 | +1 | +1 |
 | Unbekannte Person | - | +1 | - |
-| Zwischenergebnis | 3 | 2 | 2 |
+| Zwischenergebnis | 1 | 2 | 2 |
 
 ## 4. Schritt: Henry {#step-4--henry}
 
@@ -144,7 +144,7 @@ Henrys Handlungen (eine Öffnung, vier Klicks) erscheinen in folgenden Logs:
 |---|---|---|---|
 | John | - | - | - |
 | Marie | - | - | +1 |
-| Florianisch | +1 | +1 | +1 |
+| Florian | +1 | +1 | +1 |
 | Unbekannte Person | - | +1 | - |
 | Henry | +1 | +4 | +1 |
 | Zwischenergebnis | 2 | 6 | 3 |
@@ -173,3 +173,4 @@ Die Brutto-Reaktionsrate und die Weiterleitungen werden wie folgt berechnet:
 >* A den Indikator **[!UICONTROL Klicks]** (Empfänger, die geklickt haben).
 >* B den Indikator **[!UICONTROL Unique Clicks der erreichten Population]** (Personen, die geklickt haben).
 >* C den Indikator **[!UICONTROL Unique Opens der erreichten Population]** (Empfänger, die geöffnet haben).
+
