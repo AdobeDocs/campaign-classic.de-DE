@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Zugriff auf Campaign-Ordner verwalten
 description: Erfahren Sie, wie Sie Zugriff auf Campaign-Ordner gewähren und Ansichten erstellen.
-feature: Application Settings
+feature: Anwendungskonfiguration
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 0ba8a3d0-36d7-42f3-b281-0255e49b5fa3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '777'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Jeder Ordner des Explorer-Navigationsbaums verfügt über Lese-, Schreib- und L�
 
 ## Ordner und Ansichten {#folders-and-views}
 
-### Was ist ein Ordner {#about-folders}
+### Definition eines Ordners {#about-folders}
 
 Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit einem Klick der rechten Maustaste auf den Baum über das Menü **[!UICONTROL Ordner hinzufügen]** erstellt. Das erste Menü ermöglicht standardmäßig die Erstellung eines dem aktuellen Kontext entsprechenden Ordners.
 
@@ -29,7 +29,7 @@ Ordner sind Knoten im Adobe Campaign-Navigationsbaum. Diese werden mit einem Kli
 
 Sie können den Navigationsbaum des Explorers anpassen. Erfahren Sie [in diesem Abschnitt](adobe-campaign-workspace.md) mehr über Konfigurationsschritte und Best Practices.
 
-### Was ist eine Ansicht {#about-views}
+### Definition einer Ansicht {#about-views}
 
 Es besteht außerdem die Möglichkeit, Ansichten zu erstellen, um den Datenzugriff einzuschränken und den Inhalt des Navigationsbaums Ihren Bedürfnissen entsprechend zu organisieren. Es ist darüber hinaus möglich, den jeweiligen Ansichten Berechtigungen zuzuordnen.
 
@@ -47,7 +47,7 @@ Zur Unterscheidung zwischen Ansichten und Ordnern wird der Name der Ansichten in
 
 ![](assets/s_ncs_user_view_name_color.png)
 
-### hinzufügen von Ordnern und Erstellen von Ansichten {#adding-folders-and-creating-views}
+### Ordner hinzufügen und Ansichten erstellen {#adding-folders-and-creating-views}
 
 Im folgenden Beispiel werden wir neue Ordner erstellen, um bestimmte Daten darzustellen:
 
