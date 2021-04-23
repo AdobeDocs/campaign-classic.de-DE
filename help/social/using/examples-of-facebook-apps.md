@@ -6,14 +6,14 @@ description: Beispiele für Facebook-Anwendungen
 audience: social
 content-type: reference
 topic-tags: annexes
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2125'
 ht-degree: 100%
 
 ---
-
 
 # Beispiele für Facebook-Anwendungen{#examples-of-facebook-apps}
 
@@ -308,4 +308,3 @@ Mit der **[!UICONTROL Social Marketing]**-Anwendung können Sie einem Formular a
 >[!NOTE]
 >
 >Bevor Sie diese Funktion verwenden, müssen Sie eine Facebook-Anwendung und ein externes **[!UICONTROL Facebook Connect]**-Konto erstellen. Weitere Informationen finden Sie unter [Externe Konten konfigurieren](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
