@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Aufspaltung".
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2133'
 ht-degree: 100%
 
 ---
-
 
 # Aufspaltung{#split}
 
@@ -124,7 +124,7 @@ Wenn Sie beispielsweise das Feld **[!UICONTROL Sprache]** als Gruppierungsfeld a
 
 ## Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen {#limiting-the-number-of-subset-records-per-data-distribution}
 
-Wenn Ihre Gruppierungsfelder zu viele Werte enthalten oder Sie vermeiden möchten, dass Werte für jede neue Split-Aktivität zurückgesetzt werden, können Sie mit Adobe Campaign eine Beschränkung für die Datenverteilung erstellen. Wählen Sie bei der Auswahl von Datenbegrenzungswerten (weitere Informationen zu diesem Thema finden Sie im Abschnitt [Teilmengen erstellen](#creating-subsets)) die Option **[!UICONTROL Durch Datenverteilung]** und anschließend eine Vorlage aus dem Dropdown-Menü aus. Die Erstellung einer Datenverteilungsvorlage wird nachfolgend erläutert.
+Wenn Ihre Gruppierungsfelder zu viele Werte enthalten oder Sie vermeiden möchten, dass Werte für jede neue Aufspaltungsaktivität zurückgesetzt werden, können Sie mit Adobe Campaign eine Beschränkung für die Datenverteilung erstellen. Wählen Sie bei der Auswahl von Datenbegrenzungswerten (weitere Informationen zu diesem Thema finden Sie im Abschnitt [Teilmengen erstellen](#creating-subsets)) die Option **[!UICONTROL Durch Datenverteilung]** und anschließend eine Vorlage aus dem Dropdown-Menü aus. Die Erstellung einer Datenverteilungsvorlage wird nachfolgend erläutert.
 
 Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie unter [Lokale Validierung verwenden](../../workflow/using/using-the-local-approval-activity.md).
 
@@ -232,7 +232,7 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 ## Ausgabeparameter {#output-parameters}
 
 * tableName
-* Schema
+* schema
 * recCount
 
 Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
