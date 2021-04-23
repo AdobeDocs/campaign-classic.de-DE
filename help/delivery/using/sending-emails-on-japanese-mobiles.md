@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie E-Mails konfigurieren, entwerfen und versende
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
+exl-id: 44634227-2340-49c4-b330-740c739ea551
 translation-type: ht
-source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '799'
 ht-degree: 100%
 
 ---
-
 
 # E-Mail-Versand auf japanische Mobiltelefone {#sending-emails-on-japanese-mobiles}
 
