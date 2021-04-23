@@ -6,14 +6,14 @@ description: Tracking testen
 audience: delivery
 content-type: reference
 topic-tags: tracking-messages
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 16ad36b7-c13e-4b77-86ca-41c9ef174172
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '254'
 ht-degree: 100%
 
 ---
-
 
 # Tracking testen{#testing-tracking}
 
@@ -39,4 +39,3 @@ Sie können Tracking auf Mirrorseiten, E-Mail-Protokolle und Links testen. Gehen
    Um das E-Mail-Logtracking zu überprüfen, sehen Sie sich in der Spalte **Typ** die Werte **Öffnen** und **[!UICONTROL E-Mail-Klick]** an.
 
    Wenn die Öffnen-Logs nicht angezeigt werden, gehen Sie zum Versand und überprüfen Sie in seinen **Eigenschaften**, ob sowohl die Optionen **Tracking aktivieren** als auch **[!UICONTROL Öffnungstracking]** angekreuzt sind.
-
