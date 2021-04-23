@@ -6,14 +6,14 @@ description: Über Testadressen
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '388'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
-
 
 # Über Testadressen{#about-seed-addresses}
 
@@ -21,13 +21,13 @@ Testadressen ermöglichen den Versand an Empfänger, die nicht den vorliegenden 
 
 Einer der Hauptgründe für die Verwendung von Testadressen ist **der Schutz Ihrer Mailingliste**. Wenn Sie Testadressen in Ihre Mailingliste einfügen, erfahren Sie, wenn diese von einer Drittpartei verwendet wird, da auch die Testadressen die Sendungen an Ihre Mailingliste erhalten.
 
-Darüber hinaus können Sie **Vorschau und die Personalisierung und Wiedergabe der Versand vor dem Versenden durch Testadressen testen, indem Sie ihnen Testversand senden (siehe [Testadressen als Testversand](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof) verwenden.**
+Zusätzlich können Sie durch die Durchführung von Testsendungen an Testadressen die **Personalisierung und das Rendering Ihrer Sendungen vor dem Versand in der Vorschau ansehen und testen** (siehe [Testadressen als Zielgruppe verwenden](../../delivery/using/steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
 
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](../../delivery/using/steps-defining-the-target-population.md#seeds-and-proofs-video).
 
 Die Verwendung von Testadressen bietet die folgenden Vorteile:
 
-* Zufällige Ersetzung von Feldern durch Daten aus Empfänger-Profilen: Auf diese Weise können Sie nur die E-Mail-Adresse eingeben, z. B. im Bereich &quot;Seed-Adresse&quot;, und die Kampagne kann die anderen Felder des Profils automatisch ausfüllen (siehe [Anwendungsfall: konfigurieren Sie das Feld Ersetzen](../../delivery/using/use-case--configuring-the-field-substitution.md)).
+* Ersetzen fehlender Werte durch Empfängerdaten aus der Zielgruppe (Zufallsauswahl). So ist es beispielsweise möglich, in Testadressen nur die E-Mail-Adresse anzugeben und die anderen Felder automatisch von Campaign aus dem Profil ausfüllen zu lassen (siehe [Anwendungsbeispiel: Konfigurieren der Feldersetzung](../../delivery/using/use-case--configuring-the-field-substitution.md)).
 * Bei Workflows mit Datamanagement-Funktionen können die im Versand genutzten zusätzlichen Daten auf Ebene der Testadressen angegeben werden, um den entsprechenden Wert zu erzwingen. Auf diese Weise umgeht man die zufällige Wertersetzung.
 * Testadressen werden in den folgenden Versandstatistikberichten grundsätzlich nicht berücksichtigt: **[!UICONTROL Klicks]**, **[!UICONTROL Öffnungen]**, **[!UICONTROL Abmeldungen]**.
 
@@ -37,7 +37,7 @@ Testadressen werden entweder durch Importieren zur Versandzielgruppe hinzugefüg
 >
 >Testadressen gehören nicht zur Empfängertabelle, sondern werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle mit neuen Daten erweitern, muss die Testadressen-Tabelle ebenfalls mit denselben Daten erweitert werden. Andernfalls werden diese Daten nicht für Testadressen berücksichtigt.
 >
->Ein Beispiel zum Erweitern der Tabelle &quot;Testadressen&quot;finden Sie in diesem Abschnitt: [Anwendungsfall: Testadressen für Kriterien auswählen](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+>In diesem Abschnitt wird ein Beispiel für die Erweiterung der Tabelle mit Testadressen dargestellt: [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
 Für den Briefpost-Versand werden Testadressen während der Extraktion hinzugefügt und im Ausgabedokument unter die restlichen Informationen gemischt.
 
