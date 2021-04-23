@@ -7,92 +7,92 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 13%
+ht-degree: 100%
 
 ---
 
-# Was ist Zustellbarkeit{#about-deliverability}
+# Was ist Zustellbarkeit?{#about-deliverability}
 
-Die Lieferbarkeit ermöglicht es Ihnen, den Erfolg Ihrer Kampagnen zu messen, die den Posteingang Ihrer Empfänger erreichen, ohne zu springen oder als Spam gekennzeichnet zu werden. [Erfahren Sie, warum Lieferbarkeit wichtig ist](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html#why-deliverability-matters).
+Die Zustellbarkeit misst, wie viele Ihrer Nachrichten erfolgreich den Posteingang Ihrer Empfänger erreichen und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden. [Hier erfahren Sie, warum Zustellbarkeit wichtig ist](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=de#why-deliverability-matters).
 
-Genauer gesagt bezieht sich die E-Mail-Zustellbarkeit auf den Satz von Merkmalen, die bestimmen, ob eine Nachricht ihr Ziel erreichen kann, über eine persönliche E-Mail-Adresse, innerhalb kurzer Zeit und mit der erwarteten Qualität in Bezug auf Inhalt und Format.
+Genauer gesagt bezieht sich die E-Mail-Zustellbarkeit auf die Menge der Merkmale, die die Fähigkeit einer Nachricht bestimmen, über eine persönliche E-Mail-Adresse innerhalb kurzer Zeit und mit der erwarteten Qualität in Bezug auf Inhalt und Format ihr Ziel zu erreichen.
 
-Einen tieferen Einstieg in die Lieferbarkeit und weitere Informationen zu den wichtigsten Lieferbedingungen, -konzepten und -ansätzen finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) zur Lieferbarkeit von Adoben.
+Einen tieferen Einblick in das Thema der Zustellbarkeit und weitere Informationen zu den wichtigsten Bedingungen, Konzepten und Ansätzen zur Zustellbarkeit erhalten Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
-## Verbesserung der Zustellbarkeit {#deliverability-key-points}
+## Verbessern der Zustellbarkeit {#deliverability-key-points}
 
-Probleme mit der Lieferbarkeit sind in der Regel mit Maßnahmen zum Schutz vor Spam verknüpft, die von Internet-Dienstleistern und Mailserveradministratoren implementiert werden.
+Probleme mit der Zustellbarkeit hängen in der Regel mit Maßnahmen zum Schutz vor Spam zusammen, die von Internet-Anbietern und Mailserver-Administratoren implementiert werden.
 
-* Allgemeine Empfehlungen zum Entwerfen erfolgreicher E-Mail-Marketing-Kampagnen finden Sie unter [Auslieferungsstrategie und -definition](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html).
+* Allgemeine Empfehlungen zum Entwerfen erfolgreicher E-Mail-Marketing-Kampagnen finden Sie unter [Strategie und Definition der Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=de).
 
 * Für spezifischere Empfehlungen zur Optimierung der Zustellbarkeit Ihrer Adobe Campaign-E-Mails empfiehlt Adobe die Verwendung der in diesem Abschnitt aufgeführten Best Practices.
 
 >[!NOTE]
 >
->Da ISPs verpflichtet sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammer zu schützen, ist die Zustellbarkeit von E-Mails durch ständig wechselnde Kriterien und Regeln gekennzeichnet. Vergewissern Sie sich, dass Sie den Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Adobe-Bereitstellung lesen, der regelmäßig aktualisiert wird.
+>Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de), das regelmäßig aktualisiert wird.
 
-### Auslieferungsrate
+### Zustellrate
 
-Die Auslieferungsrate ist die Anzahl der Nachrichten, die die Postfächer der Empfänger im Vergleich zur Anzahl der ausgelieferten Nachrichten erreicht haben. Um die Lieferbarkeit zu verbessern, können Sie diese Rate erhöhen.
+Die Zustellrate ist der Anteil der Nachrichten, die die Postfächer der Empfänger im Vergleich zur gesamten Anzahl der versendeten Nachrichten erreicht haben. Um die Zustellbarkeit zu verbessern, können Sie versuchen, diese Rate zu erhöhen.
 
-Bei Adobe Campaign hängt die Lieferquote von zahlreichen Faktoren ab, insbesondere von:
+Bei Adobe Campaign hängt die Zustellrate von zahlreichen Faktoren ab, insbesondere von:
 
-* Korrekte Konfiguration der Instanzen: Wenden Sie sich zwecks Hilfe an Ihren Kundenbetreuer.
-* Legitime Netzwerkkonfiguration: siehe [diesen Abschnitt](../../delivery/using/optimize-delivery.md#network-config) und [Domäneneinrichtung und -strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy).
-* Ihre IP-Adresse: Name: siehe [IP-Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#ip-strategy).
+* Korrekte Konfiguration der Instanzen: Wenden Sie sich zwecks Hilfe an Ihren Adobe-Support-Mitarbeiter.
+* Legitime Netzwerkkonfiguration: siehe [diesen Abschnitt](../../delivery/using/optimize-delivery.md#network-config) und [Einrichtung von Domains und Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy?lang=de).
+* Reputation Ihrer IP-Adresse: siehe [IP-Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#ip-strategy).
 * Qualität der Zieladressen: siehe [Quarantäne-Management](../../delivery/using/optimize-delivery.md#quarantine-management).
-* niedrige Raten [Beschwerden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html) und [harte Absprungrate](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html#hard-bounces).
-* Inhalt Ihrer Nachricht: Siehe [Steuern des E-Mail-Inhalts](../../delivery/using/control-message-content.md).
-* Nachrichtenauthentifizierung (SPF, DKIM, DMARC): siehe [diesen Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
-* Name des Absenders: Informationen darüber, wie die wichtigsten ISPs den Ruf eines Absenders bewerten, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html).
+* Ein niedriger Anteil von [Beschwerden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=de) und [Hardbounces](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=de#hard-bounces).
+* Inhalt Ihrer Nachricht: Siehe [Kontrollieren von E-Mail-Inhalten](../../delivery/using/control-message-content.md).
+* Nachrichtenauthentifizierung (SPF, DKIM, DMARC): siehe [diesen Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
+* Reputation des Absenders: Informationen darüber, wie die wichtigsten Internet-Anbieter die Reputation eines Absenders bewerten, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=de).
 
-## Kampagne-Bereitstellungs-Tools {#deliverability-tools}
+## Campaign-Tools für die Zustellbarkeit {#deliverability-tools}
 
 <!--Adobe Campaign provides a number of tools designed to ensure optimal deliverability.-->
-Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Bereitstellungsleistung Ihrer Plattform. Auf dieser Seite werden auch die wichtigsten Grundsätze hervorgehoben, die Sie beachten sollten, um die Lieferbarkeit bei der Verwendung der Kampagne zu optimieren.
+Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zustellbarkeitsleistung Ihrer Plattform. Auf dieser Seite finden Sie auch die wichtigsten Grundsätze, die Sie beachten sollten, um bei der Verwendung von Campaign die Zustellbarkeit zu optimieren.
 
-### Erstellen Sie Ihre Nachricht sorgfältig
+### Sorgfältiges Erstellen Ihrer Nachricht
 
-Vergewissern Sie sich beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht, dass Sie die in den unten aufgeführten Abschnitten beschriebenen Best Practices befolgen. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Lieferbarkeit zu verbessern.
+Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den folgenden Abschnitten aufgeführten Best Practices. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Zustellbarkeit zu verbessern.
 
 * [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md)
-* [Kontrollieren von E-Mail-Inhalten](../../delivery/using/control-message-content.md)
+* [E-Mail-Inhalte kontrollieren](../../delivery/using/control-message-content.md)
 * [Inbox Rendering](../../delivery/using/inbox-rendering.md)
 * [Testversand durchführen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
 
-### Einwilligung durch Dublette-Teilnahme überprüfen{#double-opt-in}
+### Einverständnis durch doppelten Opt-in überprüfen{#double-opt-in}
 
-Um das Senden von Nachrichten an ungültige Adressen zu vermeiden, unsachgemäße Kommunikation zu begrenzen und den Ruf des Absenders zu verbessern, empfiehlt Adobe die Implementierung eines Dublette-Ausschluss-Mechanismus. Auf diese Weise können Sie sicherstellen, dass Ihre Empfänger absichtlich abonniert haben.
+Um das Senden von Nachrichten an ungültige Adressen zu vermeiden, unsachgemäße Kommunikation zu minimieren und die Reputation des Absenders zu verbessern, empfiehlt Adobe die Implementierung eines Mechanismus zum doppelten Opt-in. Mit dieser Methode können Sie sicherstellen, dass sich Ihre Empfänger absichtlich angemeldet haben.
 
 Weitere Informationen hierzu finden Sie unter [Abonnement-Formular mit zweifacher Bestätigung erstellen](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
 
-Weitere Informationen zu Best Practices bei der Erfassung von Kundendaten finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html#data-quality-and-hygiene) zur Adobe-Bereitstellung.
+Weitere Informationen zu Best Practices bei der Erfassung von Kundendaten finden Sie im [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/first-impressions/address-collection-and-list-growth.html?lang=de#data-quality-and-hygiene).
 
 ### Quarantäne-Management nutzen
 
-Adobe Campaign verwaltet eine Liste, bei der Spam-Beschwerden, harte Absprünge und weiche Absprünge, die konsistent ablaufen, erfasst werden.
+Adobe Campaign verwaltet eine Liste, in der Spam-Beschwerden, Hardbounces und Softbounces, die immer wieder auftreten, erfasst werden.
 
-Zum Schutz Ihrer Zustellbarkeit werden die Empfänger, deren Adressen auf dieser Liste liegen, standardmäßig von allen zukünftigen Versänden ausgeschlossen, da das Senden an diese Kontakte Ihren Ruf beschädigen könnte.
+Zum Schutz Ihrer Zustellbarkeit werden die Empfänger, deren Adressen auf dieser Liste stehen, standardmäßig von allen zukünftigen Sendungen ausgeschlossen, da das Senden an diese Kontakte Ihre Reputation beschädigen könnte.
 
 Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
 
-Weitere Informationen finden Sie in den folgenden Abschnitten:
+Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
 * [Ursachen für Fehler beim Versand](../../delivery/using/understanding-delivery-failures.md)
 * [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md)
 * [Quarantäne vs. Blockierungsliste](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
 
-### Überwachungs- und Berichte-Tools verwenden
+### Verwenden von Tools zum Monitoring und Reporting
 
-Nutzen Sie die von Adobe Campaign angebotenen Funktionen, um Ihre Lieferbarkeit zu überwachen.
+Verwenden Sie die von Adobe Campaign bereitgestellten Funktionen zur Überwachung der Zustellbarkeit.
 
-Mit Adobe Campaign können Sie die Leistung Ihrer Versand anhand einer Reihe integrierter Echtzeitindikatoren und -berichte überprüfen, um einen besseren Einblick in Ihre Versand zu erhalten.
+Mit Adobe Campaign können Sie die Leistung Ihrer Sendungen anhand einer Reihe integrierter Echtzeitindikatoren und -berichte überprüfen, um einen besseren Einblick in Ihre Sendungen zu erhalten.
 
-Weitere Informationen finden Sie in den folgenden Abschnitten:
+Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
 * [Zustellbarkeit überwachen](../../delivery/using/monitoring-deliverability.md)
 * [Über die Versandverfolgung](../../delivery/using/about-delivery-monitoring.md)
