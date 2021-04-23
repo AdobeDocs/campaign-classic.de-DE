@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Versandentwurf".
 audience: workflow
 content-type: reference
 topic-tags: targeting-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: b4dee085-ccc4-43fd-850d-1501a99272aa
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '273'
 ht-degree: 100%
 
 ---
-
 
 # Versandentwurf{#delivery-outline}
 
@@ -48,4 +48,3 @@ Die in Kampagnen-Workflows zur Verfügung stehende Aktivität **Versandentwurf**
    Die Vorschau berücksichtigt die im Versand konfigurierte Anzahl an Angeboten. Bei Ausführung des Workflows hingegen wird die im Versandentwurf konfigurierte Anzahl verwendet.
 
    ![](assets/int_compo_offre_wf1.png)
-
