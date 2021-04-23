@@ -7,11 +7,11 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 86c7169a-2c71-4c43-8a1a-f39871b29856
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b7a3046600845781a7393a9d1e9659550d9bfcdd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2665'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Nachrichten können während der Versandvorbereitung auch ausgeschlossen werden,
 * [Status Fehlgeschlagen](../../delivery/using/delivery-performances.md#failed-status)
 * [Typen und Ursachen für fehlgeschlagene Sendungen](#delivery-failure-types-and-reasons)
 
-## Typen und Ursachen für fehlgeschlagene Sendungen   {#delivery-failure-types-and-reasons}
+## Typen und Ursachen für fehlgeschlagene Sendungen    {#delivery-failure-types-and-reasons}
 
 Es gibt drei Typen von fehlgeschlagenen Sendungen. Vom jeweiligen Fehlertyp hängt es ab, ob eine Adresse in Quarantäne kommt. Weitere Informationen hierzu finden Sie unter [Ursachen für Quarantänen](../../delivery/using/understanding-quarantine-management.md#conditions-for-sending-an-address-to-quarantine)
 
@@ -69,7 +69,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Adresse nicht angegeben </td> 
-   <td> hart </td> 
+   <td> Hard </td> 
    <td> 7 </td> 
    <td> Empfängeradresse fehlt.<br /> </td> 
   </tr> 
@@ -81,7 +81,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Adresse, die auf die Blockierungsliste gesetzt wurde </td> 
-   <td> hart </td> 
+   <td> Hard </td> 
    <td> 8 </td> 
    <td> Die Adresse wurde zum Zeitpunkt des Versands der Blockierungsliste hinzugefügt. Dieser Status wird zum Importieren von Daten aus externen Listen und externen Systemen in die Quarantäneliste von Adobe Campaign verwendet.<br /> </td> 
   </tr> 
@@ -123,7 +123,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Postfach voll </td> 
-   <td> Weich </td> 
+   <td> Soft </td> 
    <td> 5 </td> 
    <td> Das Postfach des Benutzers ist voll und kann keine Nachrichten mehr aufnehmen. An dieses Profil werden wiederholte Zustellversuche unternommen, bis die Fehleranzahl 5 erreicht. Danach wird der Datensatz in den Quarantänestatus versetzt und die Zustellversuche werden eingestellt.<br /> Dieser Fehlertyp wird von einem Bereinigungsprozess verwaltet. Die Adresse erhält nach 30 Tagen wieder einen gültigen Status.<br /> Achtung: Damit die Adresse automatisch aus der Quarantäne genommen werden kann, muss der technische Workflow Datenbankbereinigung (Cleanup) gestartet sein.<br /> </td> 
   </tr> 
@@ -171,7 +171,7 @@ Mögliche Ursachen für fehlgeschlagene Sendungen sind:
   </tr> 
   <tr> 
    <td> Unbekannter Nutzer </td> 
-   <td> hart </td> 
+   <td> Hard </td> 
    <td> 1 </td> 
    <td> Die Adresse existiert nicht. An dieses Profil werden keine weiteren Zustellversuche unternommen.<br /> </td> 
   </tr> 
@@ -205,7 +205,7 @@ Ein Versand kann sofort fehlschlagen (synchroner Fehler) oder zu einem späteren
    >
    >Die Konfiguration der Bounce-Adresse wird in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#managing-bounced-emails) beschrieben.
 
-   Die [Feedback-Schleife](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#feedback-loops) funktioniert wie eine Bounce-E-Mail. Wenn ein Benutzer eine E-Mail als Spam einstuft, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an einen speziell dafür erstellten E-Mail-Eingang weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**).
+   Die [Feedback-Schleife](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#feedback-loops) funktioniert wie eine Bounce-E-Mail. Wenn ein Benutzer eine E-Mail als Spam einstuft, können Sie E-Mail-Regeln in Adobe Campaign so konfigurieren, dass alle Sendungen für diesen Benutzer blockiert werden. Nachrichten, die an Benutzer gesendet werden, die eine E-Mail als Spam eingestuft haben, werden automatisch an einen speziell dafür erstellten E-Mail-Eingang weitergeleitet. Die Adressen dieser Benutzer befinden sich auf der Blockierungsliste, obwohl sie nicht auf den Abmelde-Link geklickt haben. Adressen befinden sich in der Blockierungsliste der Quarantänetabelle (**NmsAddress**) und nicht der Empfängertabelle (**NmsRecipient**).
 
    >[!NOTE]
    >
@@ -266,7 +266,7 @@ Folgende Qualifikationsstatus von Bounce Messages treten auf:
 
 >[!NOTE]
 >
->Bei Ausfall eines ISP werden per Kampagne gesendete E-Mails fälschlicherweise als Absprünge gekennzeichnet. Um dies zu korrigieren, müssen Sie die Absprungqualifikation aktualisieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../delivery/using/update-bounce-qualification.md).
+>Bei Ausfall eines ISP werden über Campaign gesendete E-Mails fälschlicherweise als Bounces gekennzeichnet. Um dies zu korrigieren, müssen Sie die Bounce-Qualifizierung aktualisieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../delivery/using/update-bounce-qualification.md).
 
 ### E-Mail-Verwaltungsregeln {#email-management-rules}
 
