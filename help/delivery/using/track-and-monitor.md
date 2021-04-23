@@ -5,18 +5,18 @@ title: Tracken und überwachen von Nachrichten
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 53e239c04f9c4239a5c32e4f25549cbc5f6ece50
-workflow-type: tm+mt
+exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '444'
 ht-degree: 100%
 
 ---
 
-
 # Tracken und überwachen {#track-and-monitor}
 
-Sie haben auf die **Senden**-Schaltfläche geklickt? Lassen Sie uns sehen, was dann passiert. Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
+Sie haben auf die Schaltfläche **Senden** geklickt? Lassen Sie uns sehen, was dann passiert. Nach dem Versand der Nachrichten ermöglicht es Ihnen Adobe Campaign die gesendeten Nachrichten zu verfolgen und festzustellen, wie Ihre Empfänger darauf reagieren. Dadurch können Sie den zukünftigen Versand verbessern und Ihre nächsten Kampagnen optimieren.
 
 ## Sendungen überwachen {#monitoring-deliveries}
 
