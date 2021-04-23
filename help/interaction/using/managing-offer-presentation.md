@@ -6,14 +6,14 @@ description: Angebotsunterbreitung
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1084'
 ht-degree: 100%
 
 ---
-
 
 # Angebotsunterbreitung{#managing-offer-presentation}
 
@@ -157,4 +157,3 @@ Um die zu zählenden Vorschläge über eine Abfrage zu definieren, klicken Sie a
 In unten stehendem Beispiel werden ab der zweiten Unterbreitung die Angebote der Kategorie **Spezialangebote** in der Platzierung **Callcenter** mit einer Gewichtung von unter **20** gezählt.
 
 ![](assets/offer_typology_013.png)
-
