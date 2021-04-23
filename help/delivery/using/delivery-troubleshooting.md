@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Versandleistung und wie Sie Probleme be
 audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
-workflow-type: tm+mt
+exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '797'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
-
 
 # Fehlerbehebung beim Versand {#delivery-troubleshooting}
 
@@ -37,7 +37,7 @@ Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand 
 
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
-   * Ausgegebene Meldungen (**[!UICONTROL Quote erfüllt]** Meldung): die in den in der Kampagne festgelegten deklarativen MX-Regeln angegebenen Quoten eingehalten wurden. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](../../delivery/using/deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Nachricht in die Warteschlange gestellt (Meldung **[!UICONTROL Kontingente ausgeschöpft]**): Kontingente, die durch die in Campaign festgelegten deklarativen MX-Regeln angegebenen wurden, wurden ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](../../delivery/using/deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL dynamische Durchsatzkontrolle]**): Vom Campaign MTA wurden beim Sendeversuch an einen ISP Fehler entdeckt, weshalb der Versand verlangsamt wurde, um die Fehlerdichte zu verringern und zu vermeiden, dass die IP-Adresse auf eine Blockierungsliste gesetzt wird.
 
