@@ -3,17 +3,17 @@ solution: Campaign Classic
 product: campaign
 title: Über Abfragen in Adobe Campaign
 description: Über Abfragen in Adobe Campaign
-feature: Query Editor
+feature: Abfrage-Tool
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
-workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 94%
+exl-id: 2db1034d-cad6-4fb0-8646-dd9099080ab0
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '183'
+ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit Abfragen{#about-queries-in-campaign}
 
