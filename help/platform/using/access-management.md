@@ -3,13 +3,13 @@ solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Berechtigungen
 description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
-feature: Access Management
+feature: Zugriffsverwaltung
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
 ht-degree: 100%
 
