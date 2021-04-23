@@ -6,14 +6,14 @@ description: Layout eines Webformulars definieren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 23ca17f8-de1a-4f9c-8357-3965dc3329b1
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '528'
 ht-degree: 100%
 
 ---
-
 
 # Layout eines Webformulars definieren{#defining-web-forms-layout}
 
@@ -91,4 +91,3 @@ Folgende Ausrichtungen werden unterstützt:
 * Links/rechts: Der Titel wird rechts oder links neben dem Feld positioniert.
 * Oberhalb/unterhalb: Der Titel wird ober- oder unterhalb des Felds positioniert.
 * Ausgeblendet: Der Titel wird nicht angezeigt.
-
