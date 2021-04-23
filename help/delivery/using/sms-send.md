@@ -2,20 +2,20 @@
 solution: Campaign Classic
 product: campaign
 title: SMS senden, überwachen und verfolgen
-description: Erfahren Sie, wie Sie SMS in Kampagne senden, überwachen und verfolgen
+description: Erfahren Sie, wie Sie SMS in Campaign senden, überwachen und verfolgen.
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
-workflow-type: tm+mt
+exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '967'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-
-# SMS-Versand senden, überwachen und verfolgen{#sms-properties}
+# SMS-Sendungen ausführen, überwachen und verfolgen{#sms-properties}
 
 ## SMS-Nachrichten senden {#sending-sms-messages}
 
@@ -58,7 +58,7 @@ Folgende Optionen stehen zur Verfügung:
 
 * **Maximale Anzahl an SMS pro Nachricht**: ermöglicht die Angabe der maximalen SMS-Anzahl pro Nachricht, wobei 0 für eine SMS steht. Wenn die Nachricht mehr als die angegebene Anzahl an SMS benötigt, wird sie nicht gesendet.
 
-## Überwachung und Verfolgung von SMS {#monitoring-and-tracking-sms-deliveries}
+## SMS überwachen und verfolgen {#monitoring-and-tracking-sms-deliveries}
 
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
@@ -66,7 +66,7 @@ Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, 
 * [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Über das Nachrichten-Tracking](../../delivery/using/about-message-tracking.md)
 
-## eingehende Nachrichten verarbeiten {#processing-inbound-messages}
+## Eingehende Nachrichten verarbeiten {#processing-inbound-messages}
 
 Das Modul **nlserver sms** ruft in regelmäßigen Abständen den Verarbeitungsfortschritt der Sendungen, Empfangsbestätigungen und Empfängerabmeldungen ab.
 
@@ -110,7 +110,7 @@ Das InSMS-Schema enthält Informationen zu eingehenden SMS. Die Beschreibung die
 * **operatorCode**: Netzwerkcode des Betreiber.
 * **linkedSmsId**: Adobe-Campaign-Kennung (broadlogId) der ausgehenden SMS, auf die diese SMS antwortet.
 
-## Automatische Antworten verwalten (amerikanische Regelung) {#managing-automatic-replies--american-regulation-}
+## Automatische Antworten verwalten (US-amerikanische Gesetzgebung) {#managing-automatic-replies--american-regulation-}
 
 Wenn ein Abonnent auf eine durch Adobe Campaign versendete SMS mit einer die Schlüsselwörter STOP, HELP oder YES enthaltenden Nachricht antwortet, ist für den US-amerikanischen Markt eine Konfiguration der automatischen Benachrichtigungen an den Absender gesetzlich vorgeschrieben.
 
@@ -120,7 +120,7 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 
 >[!IMPORTANT]
 >
->Das folgende detaillierte Verfahren gilt nur für SMPP-Connectoren, mit Ausnahme des Connectors „Erweitertes allgemeines SMPP“. Weitere Informationen finden Sie im Abschnitt [SMPP-Externe Konto erstellen](sms-set-up.md#creating-an-smpp-external-account).
+>Das folgende detaillierte Verfahren gilt nur für SMPP-Connectoren, mit Ausnahme des Connectors „Erweitertes allgemeines SMPP“. Weitere Informationen hierzu finden Sie im Abschnitt [Externes SMPP-Konto erstellen](sms-set-up.md#creating-an-smpp-external-account).
 >
 >Sie betrifft die Zertifizierung durch amerikanische Provider bezüglich in den USA zu versendender Marketingkampagnen. Insbesondere müssen diese SMS dem Abonnenten, der ein entsprechendes Schlüsselwort gesendet hat, unverzüglich zugestellt werden.
 
@@ -167,6 +167,6 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 
 >[!IMPORTANT]
 >
->Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im Versand-Dashboard enthalten. [Weitere Infos](../../delivery/using/delivery-dashboard.md).
+>Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im Versand-Dashboard enthalten. [Weitere Informationen](../../delivery/using/delivery-dashboard.md).
 >
->Diese Meldungen werden in den kommerziellen Druckvorschriften nicht berücksichtigt. [Weitere Infos](../../campaign/using/pressure-rules.md).
+>Diese Nachrichten werden in den kommerziellen Druckregeln nicht berücksichtigt. [Weitere Informationen](../../campaign/using/pressure-rules.md).
