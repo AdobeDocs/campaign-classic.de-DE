@@ -3,19 +3,19 @@ solution: Campaign Classic
 product: campaign
 title: Über allgemeine Importe und Exporte
 description: Erfahren Sie mehr über allgemeine Importe und Exporte.
-feature: Overview
+feature: Übersicht
 role: Business Practitioner, Data Architect
 level: Beginner
-translation-type: tm+mt
-source-git-commit: f2bd093d3a010e079b7f5adf3371e21d07a4f3ae
-workflow-type: tm+mt
-source-wordcount: '131'
-ht-degree: 91%
+exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
+source-wordcount: '126'
+ht-degree: 100%
 
 ---
 
-
-# Erste Schritte mit Import- und Exportaufträgen {#about-generic-imports-exports}
+# Erste Schritte mit Import- und Exportvorgängen {#about-generic-imports-exports}
 
 Adobe Campaign Classic bietet allgemeine Importe und Exporte. So können Sie beispielsweise eine Liste von Kunden oder potenziellen Kunden extrahieren, die dann Teil einer Zielpopulation werden, oder Ihre Datenbank mit Daten aus externen Dateien versorgen.
 
@@ -29,5 +29,3 @@ Die Schritte zum Ausführen allgemeiner Import- und Exportvorgänge sehen wie fo
 1. [Erstellen Sie einen Import- oder Exportvorgang](../../platform/using/creating-import-export-jobs.md).
 1. [Konfigurieren Sie den Import-](../../platform/using/executing-import-jobs.md) oder [Exportvorgang](../../platform/using/executing-export-jobs.md) und führen Sie ihn aus.
 1. [Überwachen](../../platform/using/monitoring-jobs-execution.md) Sie die Ausführung des Vorgangs.
-
-
