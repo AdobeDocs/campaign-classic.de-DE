@@ -5,14 +5,14 @@ title: Personalisierte Inhalte erstellen
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
-translation-type: tm+mt
-source-git-commit: 40edacce1812a1722e5a23e5db7da11687c44ac8
-workflow-type: tm+mt
+exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1289'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Personalisierte Inhalte erstellen {#build-personalized-content}
 
@@ -114,7 +114,7 @@ Um häufige Formatierungsfehler zu vermeiden, prüfen Sie folgende Elemente:
 
 * Verwendung **autorisierter Zeichen** in E-Mails: Eine Liste gültiger Zeichen für E-Mail-Adressen finden Sie in der Option „XtkEmail_Characters“. Informationen zum Zugriff auf Campaign-Optionen finden Sie [in diesem Abschnitt](../../installation/using/configuring-campaign-options.md). Um Sonderzeichen richtig zu handhaben, muss Adobe Campaign in Unicode installiert sein.
 
-* Konfiguration der **E-Mail-Authentifizierung**: Achten Sie darauf, dass die E-Mail-Header die DKIM-Signatur enthalten. Durch Authentifizierung per DKIM (Domain Keys Identified Mail) kann der E-Mail-Empfangsserver überprüfen, ob eine Nachricht tatsächlich von der angegebenen Person oder der angegebenen Entität gesendet wurde. Ferner kann festgestellt werden, ob der Nachrichteninhalt zwischen dem Versandzeitpunkt („signiert“ mit DKIM) und dem Empfangszeitpunkt verändert wurde. Bei diesem Standard wird in der Regel die Domain im „Von“- oder „Absender“-Header angegeben. Weitere Informationen finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication) zur Adobe-Bereitstellung.
+* Konfiguration der **E-Mail-Authentifizierung**: Achten Sie darauf, dass die E-Mail-Header die DKIM-Signatur enthalten. Durch Authentifizierung per DKIM (Domain Keys Identified Mail) kann der E-Mail-Empfangsserver überprüfen, ob eine Nachricht tatsächlich von der angegebenen Person oder der angegebenen Entität gesendet wurde. Ferner kann festgestellt werden, ob der Nachrichteninhalt zwischen dem Versandzeitpunkt („signiert“ mit DKIM) und dem Empfangszeitpunkt verändert wurde. Bei diesem Standard wird in der Regel die Domain im „Von“- oder „Absender“-Header angegeben. Weitere Informationen finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 
 ### Responsives E-Mail-Design
 
