@@ -6,14 +6,14 @@ description: Grundprinzipien
 audience: interaction
 content-type: reference
 topic-tags: general-operation
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: b13ecfc9-1723-42b2-ab30-d5637cc3d0dd
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
 ---
-
 
 # Grundprinzipien{#fundamental-principles}
 
@@ -42,4 +42,3 @@ Beide Interaktionstypen können entweder im Einzelmodus (das Angebot wird für e
 Wenn ein Angebot unterbreitet werden kann oder soll (je nach Konfiguration), spielt das Angebotsmodul eine zentrale Rolle: Es ermittelt automatisch aus einer Reihe von möglichen Angeboten das für den Kontakt am besten geeignete Angebot, indem es die für ihn vorliegenden Daten und die in der Anwendung definierten Regeln kombiniert und abgleicht.
 
 ![](assets/architecture_interaction2.png)
-
