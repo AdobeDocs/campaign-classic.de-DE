@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Warten".
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 4872f756-14d7-4e37-a9cf-b929c77e34ca
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
 ---
-
 
 # Warten{#wait}
 
@@ -32,4 +32,3 @@ Im Feld **[!UICONTROL Dauer]** können, wenn in den regionalen Parametern des Be
 * Wenn die regionalen Parameter für Deutschland definiert wurden, sind folgende Einheiten zu verwenden: **s** für Sekunden, **min** für Minuten, **h** für Stunden, **T** für Tage, **M** für Monate und **J** für Jahre. Sobald die Eingabe validiert wird, wird der Wert in die am besten lesbare Einheit umgewandelt. So wurde in oben stehender Abbildung die Eingabe **90s** in **1 min 30 s** umgewandelt.
 
    Die Standardeinheit ist **T** für Tag.
-
