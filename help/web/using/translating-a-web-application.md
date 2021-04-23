@@ -6,14 +6,14 @@ description: Webanwendung übersetzen
 audience: web
 content-type: reference
 topic-tags: web-applications
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 82c5c610-8161-4686-aa79-1b690e763765
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '374'
 ht-degree: 100%
 
 ---
-
 
 # Webanwendung übersetzen{#translating-a-web-application}
 
@@ -61,4 +61,3 @@ So kennzeichnen Sie die zu übersetzenden Strings:
 1. Übersetzen und validieren Sie die Strings.
 
    Sie können die Übersetzungen in der Vorschau betrachten, indem Sie die gewünschte Sprache in der Webanwendung im Tab **[!UICONTROL Vorschau]** auswählen.
-
