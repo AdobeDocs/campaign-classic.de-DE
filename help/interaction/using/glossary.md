@@ -6,14 +6,14 @@ description: Glossar
 audience: interaction
 content-type: reference
 topic-tags: interaction-overview
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1113'
 ht-degree: 100%
 
 ---
-
 
 # Glossar{#glossary}
 
@@ -78,4 +78,3 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 * **Vordefinierte Filter**: Zur Wiederverwendung bei der Angebotserstellung bestimmte Filter, die Angebotsparameter (z. B. den Angebotscode) berücksichtigen können.
 * **Darstellung eines Angebots**: Informationen, die vom jeweiligen Kanal abgerufen werden, um das Angebot anzuzeigen. Die Darstellung kann mithilfe der Rendering-Funktion einer Platzierung konstruiert oder direkt in der Schnittstelle (z. B. im HTML-Block) erfasst werden. Ein Angebot kann je nach Platzierung unterschiedliche Darstellungen aufweisen.
 * **Platzierungswechsel**: Option in einer identifizierten Platzierung, die den Wechsel zu einer anonymen Platzierung auslöst, wenn ein Kontakt weder ex- noch implizit identifiziert werden konnte.
-
