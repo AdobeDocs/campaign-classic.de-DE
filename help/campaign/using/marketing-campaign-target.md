@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie die Audience Ihrer Marketing-Kampagnen defini
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
+exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
 translation-type: ht
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1579'
 ht-degree: 100%
 
 ---
-
 
 # Audience für Ihre Kampagnen auswählen {#marketing-campaign-deliveries}
 
