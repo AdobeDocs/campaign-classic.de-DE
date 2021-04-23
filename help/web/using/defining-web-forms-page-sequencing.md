@@ -6,14 +6,14 @@ description: Seitenreihenfolge eines Webformulars definieren
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '739'
 ht-degree: 100%
 
 ---
-
 
 # Seitenreihenfolge eines Webformulars definieren{#defining-web-forms-page-sequencing}
 
@@ -125,4 +125,3 @@ Um diese Seite anzupassen, führen Sie einen Doppelklick auf die **[!UICONTROL E
 
 * Sie können vorhandenen HTML-Inhalt kopieren und einfügen. Wählen Sie dazu **[!UICONTROL Quellcode anzeigen]** aus und geben Sie den HTML-Code ein.
 * Sie können eine externe URL verwenden. Wählen Sie dazu die entsprechende Option aus und geben Sie die URL der anzuzeigenden Seite ein.
-
