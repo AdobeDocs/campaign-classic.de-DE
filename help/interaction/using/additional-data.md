@@ -2,18 +2,18 @@
 solution: Campaign Classic
 product: campaign
 title: Additional data
-description: Zusätzliche Daten
+description: Additional data
 audience: interaction
 content-type: reference
 topic-tags: advanced-parameters
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 01adb584-5308-4d41-a6f1-223a97efa10f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '739'
 ht-degree: 100%
 
 ---
-
 
 # Additional data{#additional-data}
 
@@ -123,4 +123,3 @@ Wählen Sie in der Spalte **[!UICONTROL Speicherpfad]** das Feld aus der Vorschl
 Die Aufrufdaten können entweder zum Zeitpunkt der Vorschlagserzeugung oder zum Zeitpunkt seiner Annahme (durch Klick des Kontakts auf das Angebot) abgerufen werden.
 
 ![](assets/ita_calldata_storage.png)
-
