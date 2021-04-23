@@ -6,24 +6,24 @@ description: Daten aktualisieren
 audience: platform
 content-type: reference
 topic-tags: profile-management
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: f7dfbc22-4ac3-4b61-927f-34ecc4e35154
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Daten aktualisieren{#updating-data}
 
 Empfängerprofildaten können manuell oder automatisch aktualisiert werden.
 
-## Einrichten eines automatischen Updates {#setting-up-an-automatic-update}
+## Automatische Aktualisierung einrichten {#setting-up-an-automatic-update}
 
 Automatische Aktualisierungen lassen sich unter Verwendung von Workflows durchführen. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../workflow/using/update-data.md).
 
-## Durchführen einer Massenaktualisierung {#performing-a-mass-update}
+## Gebündeltes Update durchführen {#performing-a-mass-update}
 
 Für eine manuelle Aktualisierung können Sie entweder das Kontextmenü **[!UICONTROL Aktionen]** verwenden (klicken Sie mit der rechten Maustaste auf den oder die ausgewählten Empfänger) oder auf das **[!UICONTROL Aktionen]**-Symbol oben rechts klicken.
 
@@ -79,7 +79,7 @@ Durch Klick auf die Schaltfläche **[!UICONTROL Berechnen]** wird das Ihrer Wahl
 
 Prüfen Sie die **[!UICONTROL Ergebnis]**-Spalte im oberen und unteren Abschnitt des Fensters und klicken Sie auf die Schaltfläche **[!UICONTROL Beenden]**, um die Zusammenführung zu starten.
 
-## Exportieren von Daten {#exporting-data}
+## Daten exportieren {#exporting-data}
 
 Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren und zu starten, gehen Sie folgendermaßen vor:
 
@@ -94,7 +94,7 @@ Der Inhalt einer Liste kann exportiert werden. Um den Export zu konfigurieren un
 
    Weitere Informationen zur Konfiguration des Export-Assistenten finden Sie [in diesem Abschnitt](../../platform/using/executing-export-jobs.md).
 
-## Abonnieren eines Dienstes {#subscribing-to-a-service}
+## Für einen Service anmelden {#subscribing-to-a-service}
 
 Normalerweise melden sich Empfänger über eine spezielle Landingpage für einen Newsletter an, wie in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschrieben. Empfängerprofile können aber auch manuell für einen Dienst (z. B. Newsletter oder viraler Dienst) angemeldet werden. Gehen Sie dazu folgendermaßen vor:
 
@@ -127,4 +127,3 @@ Im Tab **[!UICONTROL Abonnements]******, zugänglich über die vom Vorgang betro
 >[!NOTE]
 >
 >Näheres zur Konfiguration der Informationsdienste wird auf [dieser Seite](../../delivery/using/managing-subscriptions.md) erläutert.
-
