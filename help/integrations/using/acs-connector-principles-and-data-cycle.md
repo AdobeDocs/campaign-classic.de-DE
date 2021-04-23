@@ -6,14 +6,14 @@ description: Grundlagen und Datenzyklus von ACS Connector
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2046'
 ht-degree: 100%
 
 ---
-
 
 # Grundlagen und Datenzyklus von ACS Connector{#acs-connector-principles-and-data-cycle}
 
@@ -327,4 +327,3 @@ Mit der einfachen Implementierung wird die vordefinierte Empfängertabelle repli
 
 1. Wenn Ihr Berechtigungs-Management ordnerbasiert ist, gehen Sie zu **[!UICONTROL Administration > ACS Connector > Berechtigungs-Management > Ordner-Mapping]** und definieren Sie eine Sicherheitsgruppe für die mit Ihren benutzerdefinierten Tabellen verknüpften Ordner. Siehe [Konvertierung der Berechtigungen](#rights-conversion).
 1. Verwenden Sie den Workflow **[!UICONTROL Neue Replikation]** (nicht die Vorlage, sondern die Workflow-Instanz selbst), um die benutzerdefinierte Tabelle und die zu replizierenden Felder einzuschließen. Siehe [Technische und Replikations-Workflows](#technical-and-replication-workflows).
-
