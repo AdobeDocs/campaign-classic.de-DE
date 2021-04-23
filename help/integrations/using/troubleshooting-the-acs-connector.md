@@ -6,14 +6,14 @@ description: Fehlerbehebung bei ACS Connector
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 4693dca1-ee55-43f0-b3dc-62a5b67a8058
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '812'
 ht-degree: 100%
 
 ---
-
 
 # Fehlerbehebung bei ACS Connector{#troubleshooting-the-acs-connector}
 
@@ -112,4 +112,3 @@ Je nach der Art der Implementierung können verschiedene Probleme auftreten.
 * **Ich kann in Campaign Standard weder ein Profil, noch eine Zielgruppe oder Landingpage bearbeiten. Warum?**
 
    Alle von Campaign v7 synchronisierten Ressourcen sind in Campaign Standard im schreibgeschützten Modus vorhanden, um eine homogene Datenbasis sicherzustellen. Wenn Sie eines dieser Elemente bearbeiten müssen, tun Sie das in Campaign v7 und replizieren Sie dann die Änderung nach Campaign Standard.
-
