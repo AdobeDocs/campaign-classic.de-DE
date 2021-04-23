@@ -6,18 +6,18 @@ description: Erfahren Sie mehr über Tools und Richtlinien zum Monitoring der Zu
 audience: delivery
 content-type: reference
 topic-tags: deliverability-management
-translation-type: tm+mt
-source-git-commit: 5d1a653a9a164c34bb70efcc86ff2d7bdf1130a2
-workflow-type: tm+mt
+exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-
 # Zustellbarkeit überwachen{#monitoring-deliverability}
 
-Im Folgenden finden Sie Informationen zu den verschiedenen Überwachungswerkzeugen von Adobe Campaign sowie einige zusätzliche Richtlinien zur Nutzung der von Adobe Campaign angebotenen Funktionen zur Überwachung der Lieferbarkeit Ihrer Plattform.
+Im Folgenden finden Sie Details zu den verschiedenen Monitoring-Tools, die Adobe Campaign zur Verfügung stellt, sowie einige zusätzliche Richtlinien zur Nutzung der von Adobe Campaign angebotenen Funktionen zur Überwachung der Zustellbarkeit Ihrer Plattform.
 
 ## Zustellbarkeits-Monitoring {#configuration}
 
@@ -55,7 +55,7 @@ Im Folgenden finden Sie einige zusätzliche Richtlinien zum Zustellbarkeits-Moni
 * Prüfen Sie regelmäßig den [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) für die gesamte Plattform, um festzustellen, ob er der ursprünglichen Einstellung entspricht.
 * Achten Sie darauf, dass [weitere Zustellversuche](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
 * Prüfen Sie regelmäßig, ob das [Bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
-* Überprüfen Sie den Durchsatz jedes Versands, der über das [Versand-Dashboard](../../delivery/using/delivery-dashboard.md) erreichbar ist, um sicherzustellen, dass er mit der Gültigkeit des Versand-Inhalts (z. B. &#39;Flash-Verkäufe&#39; sollten in Minuten und nicht in Tagen ausgeliefert werden.
+* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](../../delivery/using/delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
 * Wenn der Versand in [Schüben](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
 * Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](../../delivery/using/understanding-quarantine-management.md) der anderer Sendungen entspricht.
 * Prüfen Sie in den [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
