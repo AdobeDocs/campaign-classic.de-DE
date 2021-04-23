@@ -1,32 +1,32 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Kampagne - Salesforce CRM Connector
-description: Connect Kampagne und Salesforce.com
+title: Campaign-Salesforce CRM-Connector
+description: Campaign und Salesforce.com verbinden
 audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
-# Campaign und Microsoft Dynamics 365 verbinden {#connect-to-msdyn}
+# Campaign und Microsoft Dynamics 365 verbinden{#connect-to-msdyn}
 
 Auf dieser Seite erfahren Sie, wie Sie Campaign Classic mit **Salesforce** verbinden.
 
 Die Datensynchronisation erfolgt über eine eigene Workflow-Aktivität. [Weitere Informationen](../../platform/using/crm-data-sync.md).
 
 
-Das externe --Konto ermöglicht den Import und Export von Salesforce-Daten in Adobe Campaign.
-Gehen Sie wie folgt vor, um CRM Connector für Salesforce zu konfigurieren:
+Das externe Konto ermöglicht den Import und Export von Salesforce-Daten in Adobe Campaign.
+Gehen Sie wie folgt vor, um CRM-Connector für Salesforce zu konfigurieren:
 
 1. Erstellen Sie ein neues externes Konto ausgehend vom Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** im Adobe Campaign-Navigationsbaum.
-1. Wählen Sie **[!UICONTROL Salesforce.com]**.
+1. Wählen Sie **[!UICONTROL Salesforce.com]** aus.
 1. Geben Sie Einstellungen zum Aktivieren der Verbindung ein.
 
    ![](assets/ext_account_17.png)
@@ -34,19 +34,20 @@ Gehen Sie wie folgt vor, um CRM Connector für Salesforce zu konfigurieren:
    Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
    * **[!UICONTROL Konto]**
+
 Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
-   * ****
-PasswordPassword, mit dem Sie sich bei Salesforce CRM anmelden.
+   * **[!UICONTROL Passwort]**
+Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
 
-   * **[!UICONTROL Client-]**
-IDsAuf dieser  [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1) finden Sie Informationen dazu, wo Sie die Client-ID finden.
+   * **[!UICONTROL Clientkennung]**
+Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
-   * **[!UICONTROL Sicherheits-]**
-TokenAuf dieser  [Seite finden Sie Informationen zum Auffinden Ihres Sicherheitstokens](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+   * **[!UICONTROL Sicherheits-Token]**
+Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
-   * **[!UICONTROL API-]**
-VersionWählen Sie die Version der API aus.
+   * **[!UICONTROL API-Version]**
+Wählen Sie die Version der API aus.
 1. Führen Sie den Konfigurationsassistenten aus, um die Tabelle mit verfügbaren CRMs zu generieren: Mit dem Konfigurationsassistenten können Sie Tabellen erfassen und das passende Schema erstellen.
 
    ![](assets/crm_connectors_sfdc_launch.png)
@@ -61,9 +62,9 @@ VersionWählen Sie die Version der API aus.
 
    ![](assets/crm_connectors_sfdc_table.png)
 
-1. Nachdem das Schema erstellt wurde, können Sie Auflistungen automatisch von Salesforce auf Adobe Campaign synchronisieren.
+1. Sobald das Schema erstellt ist, können Sie Aufzählungen in Salesforce automatisch mit Adobe Campaign synchronisieren.
 
-   Klicken Sie dazu auf die Auflistungen **[!UICONTROL Synchronisieren...]** verknüpfen und die Adobe Campaign-Auflistung auswählen, die der Salesforce-Auflistung entspricht.
+   Klicken Sie hierzu auf den Link **[!UICONTROL Auflistungssynchronisation...]** und wählen Sie die der Salesforce-Auflistung entsprechende Adobe Campaign-Auflistung aus.
 
 
 
@@ -82,12 +83,12 @@ VersionWählen Sie die Version der API aus.
 
    >[!NOTE]
    >
-   > Mehrere Auflistungen werden nicht unterstützt.
+   > Auflistungen mit Mehrfachauswahl werden nicht unterstützt.
 
-Kampagne und Salesforce.com sind jetzt verbunden. Sie können eine Datensynchronisation zwischen den beiden Systemen einrichten.
+Campaign und Salesforce.com sind jetzt verbunden. Sie können eine Datensynchronisation zwischen den beiden Systemen einrichten.
 
-Um Daten zwischen den Adobe Campaign-Daten und dem SFDC zu synchronisieren, müssen Sie einen Workflow erstellen und die Aktivität **[!UICONTROL CRM Connector]** verwenden.
+Um Daten zwischen Adobe Campaign und SFDC zu synchronisieren, müssen Sie einen Workflow erstellen und die Aktivität **[!UICONTROL CRM-Connector]** verwenden.
 
 ![](assets/crm_connectors_sfdc_wf.png)
 
-Weitere Informationen zur Datensynchronisation finden Sie [auf dieser Seite ](../../platform/using/crm-data-sync.md).
+Weitere Informationen zur Datensynchronisation finden Sie [auf dieser Seite](../../platform/using/crm-data-sync.md).
