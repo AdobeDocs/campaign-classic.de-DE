@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Unter-Workflow-Aktivität.
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: bc64ca11-2c50-4896-b6c6-ae42c0315924
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '439'
 ht-degree: 100%
 
 ---
-
 
 # Unter-Workflow{#sub-workflow}
 
@@ -71,7 +71,7 @@ Jedes eingehende Ereignis muss eine durch diese Parameter definierte Zielgruppe 
 ## Ausgabeparameter {#output-parameters}
 
 * tableName
-* Schema
+* schema
 * recCount
 
 Anhand der drei Werte lässt sich die durch den Ausschluss ermittelte Zielgruppe identifizieren. **[!UICONTROL tableName]** ist der Name der Tabelle, welche die Kennungen der Zielgruppenempfänger enthält, **[!UICONTROL schema]** ist das Schema der Population, (i. d. R. nms:recipient) und **[!UICONTROL recCount]** ist die Anzahl an Elementen in der Tabelle.
