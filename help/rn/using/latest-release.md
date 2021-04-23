@@ -3,7 +3,7 @@ solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
 description: Aktuelle Version von Campaign Classic     Anmerkungen
-feature: Overview
+feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
