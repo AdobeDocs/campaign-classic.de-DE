@@ -6,14 +6,14 @@ description: Geteilte Verbindung erstellen
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
+exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 translation-type: ht
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1048'
 ht-degree: 100%
 
 ---
-
 
 # Geteilte Verbindung erstellen{#creating-a-shared-connection}
 
@@ -21,6 +21,7 @@ ht-degree: 100%
 >
 >* Erweiterungen von Schemata, die von [technischen Workflows des Message-Center-Moduls](../../message-center/using/technical-workflows.md) in Kontroll- oder Ausführungsinstanzen verwendet werden, müssen in den anderen vom Transaktionsnachrichten-Modul von Adobe Campaign verwendeten Instanzen dupliziert werden.
 >* Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
+
 >
 
 
@@ -156,4 +157,3 @@ Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfigurati
 1. Ordnen Sie jedem Benutzer die Lese- und Schreibberechtigungen für seinen Ordner zu. Klicken Sie hierzu mit der rechten Maustaste auf den Ordner und wählen Sie **[!UICONTROL Eigenschaften]** aus. Gehen Sie anschließend in den Tab **[!UICONTROL Sicherheit]** und fügen Sie den entsprechenden Benutzer hinzu (**mc1** für den **Ordner 1** und **mc2** für den **Ordner 2**). Stellen Sie sicher, dass die Zugriffsberechtigungen **[!UICONTROL Daten lesen/speichern]** angekreuzt sind.
 
    ![](assets/messagecenter_multi_control_6.png)
-
