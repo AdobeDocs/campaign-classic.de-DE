@@ -6,14 +6,14 @@ description: Ausführungsinstanzen identifizieren
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: bf81a058-8715-4da2-a2d5-4362c433c549
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 
 ---
-
 
 # Ausführungsinstanzen identifizieren{#identifying-execution-instances}
 
@@ -22,4 +22,3 @@ Jeder Instanz muss eine eindeutige Kennung zugewiesen werden, um den Verlauf der
 Um die Kennung manuell zuzuordnen, starten Sie den Softwareverteilungs-Assistenten in jeder Ausführungsinstanz und tragen Sie im Fenster **[!UICONTROL Message Center]** der Instanz eine Kennung Ihrer Wahl ein.
 
 ![](assets/messagecenter_id_execinstance_001.png)
-
