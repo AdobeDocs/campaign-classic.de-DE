@@ -6,14 +6,14 @@ description: Zielgruppen synchronisieren
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1228'
 ht-degree: 100%
 
 ---
-
 
 # Zielgruppen synchronisieren{#synchronizing-audiences}
 
@@ -139,7 +139,7 @@ Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie da
 
 ## Versand durchführen und überwachen {#send-and-monitor-your-delivery}
 
-Sobald der Versand und sein Inhalt fertig sind, führen Sie den Versand laut Beschreibung in [diesem Abschnitt](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html) durch:
+Sobald der Versand und sein Inhalt fertig sind, führen Sie den Versand laut Beschreibung in [diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html) durch:
 
 1. Führen Sie den Versand-Workflow aus. In diesem Schritt werden die E-Mails für den Versand vorbereitet.
 1. Bestätigen Sie manuell im Versand-Dashboard, dass der Versand durchgeführt werden kann.
@@ -151,4 +151,3 @@ Sobald der Versand und sein Inhalt fertig sind, führen Sie den Versand laut Bes
       Quarantänen werden automatisch nach Campaign v7 zurücksynchronisiert. Dadurch können Unzustellbarkeitsinformationen bei der nächsten Zielgruppenbestimmung in Campaign v7 berücksichtigt werden.
 
       Mehr Informationen zur Quarantäneverwaltung in Campaign Standard finden Sie in [diesem Abschnitt](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
-
