@@ -6,14 +6,14 @@ description: Über die Reaktionsverwaltung
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '439'
 ht-degree: 100%
 
 ---
-
 
 # Über die Reaktionsverwaltung{#about-response-manager}
 
@@ -58,4 +58,3 @@ Um Messhypothesen zu definieren und zu messen, gehen Sie also wie folgt vor:
 
 1. Überprüfen Sie die Ergebnisse der Hypothesen. Siehe [Hypothesenverfolgung](../../campaign/using/hypothesis-tracking.md).
 1. Starten Sie Hypothesen bei Bedarf neu. Siehe [Erstellen einer Hypothese direkt in einem Versand](../../campaign/using/creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
-
