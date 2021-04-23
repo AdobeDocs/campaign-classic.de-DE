@@ -6,14 +6,14 @@ description: Erste Schritte mit Campaign-Umfragen
 audience: web
 content-type: reference
 topic-tags: online-surveys
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '603'
 ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit Umfragen{#about-surveys}
 
@@ -84,4 +84,3 @@ Die Speicherung von Umfragen erfolgt im Knoten **[!UICONTROL Ressourcen > Online
 >[!NOTE]
 >
 >Informationen zur Konfiguration finden Sie in [diesem Abschnitt](../../web/using/about-web-forms.md).
-
