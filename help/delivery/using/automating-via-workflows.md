@@ -6,14 +6,14 @@ description: Automatisierung mit Workflows
 audience: delivery
 content-type: reference
 topic-tags: content-management
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1197'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Mit Workflows automatisieren{#automating-via-workflows}
 
@@ -76,9 +76,9 @@ Vier Aktivitätseigenschaften sind zu konfigurieren:
 
 Die Option **Ausgehende Transition erzeugen** fügt der Aktivität **[!UICONTROL Content Management]** eine Transition hinzu, damit der Workflow mit einer neuen Aktivität fortgesetzt werden kann. Wenn Sie diese Option ankreuzen, ist die Angabe eines Titels für die Transition erforderlich.
 
-## Beispiele     {#examples}
+## Beispiele      {#examples}
 
-### Automatisieren der Inhaltserstellung und des Versands {#automating-content-creation-and-delivery}
+### Inhaltserstellung und -versand automatisieren {#automating-content-creation-and-delivery}
 
 Folgender Workflow automatisiert die Erstellung und den Versand eines Inhalts:
 
@@ -160,7 +160,7 @@ werden im eingehenden Ereignis angegeben.
 
 Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
-### Erstellen von Inhalten für spätere Veröffentlichungen {#creating-content-and-publishing-it-later}
+### Inhalte für spätere Veröffentlichungen erstellen {#creating-content-and-publishing-it-later}
 
 Dieser Workflow erstellt einen Inhalt, die Datei-Veröffentlichung erfolgt jedoch zu einem späteren Zeitpunkt.
 
@@ -192,7 +192,7 @@ Die Aktivität **JavaScript-Code** speichert den kompletten Namen jeder erzeugte
 
 ![](assets/d_ncs_content_workflow9.png)
 
-### Erstellen Sie den Versand und dessen Inhalt {#creating-the-delivery-and-its-content}
+### Versand und Inhalt erstellen {#creating-the-delivery-and-its-content}
 
 Der folgende Workflow entspricht dem ersten Beispiel, beginnt jedoch mit der Erstellung des Versands.
 
@@ -214,11 +214,11 @@ werden im eingehenden Ereignis angegeben.
 
 Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
-### Importieren von Inhalten aus FTP {#importing-content-from-ftp}
+### Inhalt von FTP importieren{#importing-content-from-ftp}
 
-Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe-Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
+Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
 
-### Importieren von Inhalten aus Amazon Simple Datenspeicherung Service (S3) Connector {#importing-content-from-amazon-simple-storage-service--s3--connector}
+### Inhalt von Amazon Simple Storage Service-Connector (S3) importieren {#importing-content-from-amazon-simple-storage-service--s3--connector}
 
 Wenn Ihr Versandinhalt in Amazon Simple Storage Service (S3) Buckets verfügbar ist, können Sie diesen Inhalt einfach in Adobe-Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
 
