@@ -6,14 +6,14 @@ description: Assets mit Adobe Marketing Cloud freigeben
 audience: integrations
 content-type: reference
 topic-tags: asset-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '173'
 ht-degree: 100%
 
 ---
-
 
 # Assets mit Adobe Marketing Cloud freigeben{#sharing-assets-with-adobe-experience-cloud}
 
@@ -33,4 +33,3 @@ Weitere Informationen zu den Besonderheiten der einzelnen Bibliotheken finden Si
 >[!NOTE]
 >
 >In einer Adobe Campaign On-Premise-Umgebung ist die Integration mit Assets Core Service und AEM Assets nur unter der Voraussetzung verfügbar, dass AEM Assets ebenfalls On-Premise benutzt wird.
-
