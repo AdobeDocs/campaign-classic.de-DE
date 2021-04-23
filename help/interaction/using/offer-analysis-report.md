@@ -6,14 +6,14 @@ description: Angebotsanalyse-Bericht
 audience: interaction
 content-type: reference
 topic-tags: tracking-offers
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 44c57b0c-3561-4943-812f-945f5fcbb142
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '85'
 ht-degree: 100%
 
 ---
-
 
 # Angebotsanalyse-Bericht{#offer-analysis-report}
 
@@ -40,4 +40,3 @@ Die Statistiken gliedern sich nach drei Merkmalen:
 Im Berichtskopf können Sie die angezeigten Daten mithilfe bestimmter Kriterien einschränken. Wählen Sie z. B. einen Zeitraum aus und klicken Sie abschließend auf **[!UICONTROL Aktualisieren]**, um die Filter auf den Bericht anzuwenden.
 
 ![](assets/offer_report_criteria.png)
-
