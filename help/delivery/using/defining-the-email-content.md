@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie den E-Mail-Inhalt mit Adobe Campaign Classi
 audience: delivery
 content-type: reference
 topic-tags: sending-emails
+exl-id: 46212929-fd2d-44a2-897e-35f98e88af36
 translation-type: ht
-source-git-commit: fe4262a1da011cb155651c5e786f19188139cff1
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '2064'
 ht-degree: 100%
 
 ---
-
 
 # E-Mail-Inhalt erstellen {#defining-the-email-content}
 
