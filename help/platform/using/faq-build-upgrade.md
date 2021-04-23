@@ -7,11 +7,11 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2027'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign wird regelmäßig aktualisiert. Wenn Sie unsere veröffentlichten
 
 Deshalb erachten wir es als entscheidend, dass unsere Kunden stets die neueste Version von Adobe Campaign verwenden. Dadurch sind wir beim Auftreten von Problemen in der Lage, Ihnen effizient zu helfen. Denn es ist normalerweise zeitaufwändiger, einen Fehler in einem alten Build zu identifizieren, zu reproduzieren und zu beheben. Außerdem besteht die Möglichkeit, dass dieser Fehler im aktuellen Build bereits behoben wurde.
 
-[!DNL Gold Standard] ist Campaign Classic Long-Term Support Release. Als gehosteter [!DNL Gold Standard] Benutzer profitieren Sie automatisch von der [!DNL Gold Standard] Aktualisierung mit der neuesten stabilen Version ohne Aktion. Auch lokale und Hybrid-Kunden können von [!DNL Gold Standard]-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen. [Weitere Informationen](../../rn/using/gs-overview.md).
+[!DNL Gold Standard] ist die langfristig unterstützte Version von Campaign Classic. Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch vom [!DNL Gold Standard]-Upgrade mit der neuesten stabilen Version, ohne aktiv werden zu müssen. On-Premise- und Hybrid-Kunden können ebenfalls von den [!DNL Gold Standard]-Versionen profitieren. Wenn Sie von einem alten Build migrieren, empfehlen wir Ihnen, zunächst ein Upgrade auf diese Version durchzuführen. [Weitere Informationen](../../rn/using/gs-overview.md).
 
 ## Was ist ein Build-Upgrade?
 
@@ -96,7 +96,7 @@ Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 ## Wie bereite ich das Build-Upgrade vor?
 
-Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html).
 
 Frischen Sie Ihr Wissen über die wichtigsten Pfad-Workflows und Sendungen auf, die in Ihren Runbooks (oder durch Ihr Beraterteam/Ihren Partner) entwickelt wurden, indem Sie die Dokumentation lesen, die Ihrem Team nach der Implementierung bereitgestellt wird.
 
@@ -104,7 +104,7 @@ Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für
 
 Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
 
 ## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 
@@ -206,4 +206,4 @@ dass alle Inhalte vorhanden sind und angezeigt werden.
 * [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
 * [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
-* [[!DNL Gold Standard] program](../../rn/using/gs-overview.md)
+* [[!DNL Gold Standard] -Programm](../../rn/using/gs-overview.md)
