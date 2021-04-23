@@ -6,14 +6,14 @@ description: Hypothesenvorlagen
 audience: campaign
 content-type: reference
 topic-tags: response-manager
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1564'
 ht-degree: 100%
 
 ---
-
 
 # Hypothesenvorlagen{#hypothesis-templates}
 
@@ -235,4 +235,3 @@ Im folgenden Beispiel wird eine Hypothesenvorlage für einen Briefpost-Versand e
    Die auf diese Weise erstellte Vorlage ermöglicht es Ihnen, Hypothesen für in Ihrer Bestellungen-Tabelle enthaltene Produkte zu erstellen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, um die Erstellung der Vorlage zu beenden.
-
