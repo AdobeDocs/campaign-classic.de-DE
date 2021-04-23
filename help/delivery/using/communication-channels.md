@@ -6,14 +6,14 @@ description: Erstellen Sie Sendungen, um personalisierte Nachrichten über versc
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 8bf1b5b1a6763cf933d86f2af61b2bb68e870222
-workflow-type: tm+mt
+exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1211'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Kommunikationskanäle{#communication-channels}
 
@@ -23,7 +23,7 @@ Zu den Kernfunktionen zählen die Zielgruppenbestimmung, die Definition und Pers
 
 >[!NOTE]
 >
->Adobe Campaign Angebot eine Reihe von Tools zur Überwachung Ihrer Zustellbarkeit und Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
+>Adobe Campaign bietet eine Reihe von Tools zur Überwachung Ihrer Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
 
 Sendungen können automatisiert werden, indem ein Versand vorbereitet und/oder über einen Workflow gesendet wird. Weiterführende Informationen zu Versandaktivitäten in Workflows finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
 
