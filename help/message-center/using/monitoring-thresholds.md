@@ -6,14 +6,14 @@ description: Überwachungsschwellen
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '97'
 ht-degree: 100%
 
 ---
-
 
 # Überwachungsschwellen{#monitoring-thresholds}
 
@@ -24,4 +24,3 @@ Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange 
 >[!NOTE]
 >
 >Die Anzahl der Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
-
