@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie die lokale Validierungsaktivität verwenden.
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1430'
 ht-degree: 100%
 
 ---
-
 
 # Lokale Validierung verwenden{#using-the-local-approval-activity}
 
@@ -219,4 +219,3 @@ Folgende Informationen stehen zur Verfügung:
 Im Tab **[!UICONTROL Zielkontakte]** des Validierungslogs wird die Liste der potenziellen Empfänger und ihr Validierungsstatus angezeigt. Der Status kann an dieser Stelle geändert werden.
 
 ![](assets/local_validation_admin_6.png)
-
