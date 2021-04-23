@@ -6,14 +6,14 @@ description: Dienstleister, Lager und Budgets
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
+exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1994'
 ht-degree: 100%
 
 ---
-
 
 # Dienstleister, Lager und Budgets{#providers-stocks-and-budgets}
 
@@ -292,4 +292,3 @@ Wenn Sie in einer Kampagne ein Budget auswählen, müssen Sie den Ausgangsbetrag
 >[!NOTE]
 >
 >Das Verfahren zum Erstellen von Budgets finden Sie unter [Erstellung von Budgets](../../campaign/using/controlling-costs.md#creating-a-budget).
-
