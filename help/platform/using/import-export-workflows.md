@@ -6,16 +6,16 @@ description: Erfahren Sie, wie Sie Daten mit Workflows in Campaign Classic impor
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 266ecd49-7101-4ff1-941f-1f9b39b44955
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '268'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-
-# Daten mit Workflows {#import-export-workflows} importieren und exportieren
+# Daten mit Workflows importieren und exportieren {#import-export-workflows}
 
 ## Daten erheben {#collecting-data-workflows}
 
@@ -29,7 +29,7 @@ Dabei kann es sich um Listen aus Adobe Campaign oder über die Option **[!UICONT
 
 Weitere Informationen zum Gebrauch der Aktivität &quot;Liste lesen&quot; in Workflows finden Sie auf [dieser Seite](../../workflow/using/read-list.md).
 
-### Daten aus einer Datei {#loading-data-from-a-file} laden
+### Daten aus einer Datei laden {#loading-data-from-a-file}
 
 Die im Workflow verarbeiteten Daten können aus einer strukturierten Datei stammen, die in Adobe Campaign importiert wird.
 
@@ -47,7 +47,7 @@ Durance;Allison;15/12/1978;allison.durance@example.com;120987
 
 Nachdem die Daten erfasst wurden, können Sie sie in Ihren Workflows verwenden, um beispielsweise einen Versand anzureichern oder die Datenbank zu aktualisieren. Weitere Informationen hierzu finden Sie auf [dieser Seite](../../workflow/using/how-to-use-workflow-data.md).
 
-## Exportieren von Daten {#exporting-data-via-a-workflow}
+## Daten exportieren {#exporting-data-via-a-workflow}
 
 Workflows sind eine nützliche Methode, einige Ihrer Exportverfahren zu automatisieren oder spezifische Datensätze zu exportieren, nachdem die verfügbaren Datenverwaltungsaktivitäten zur Transformation Ihrer Daten angewendet wurden.
 
