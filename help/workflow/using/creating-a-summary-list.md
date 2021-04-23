@@ -6,14 +6,14 @@ description: Erstellung einer zusammenfassenden Liste.
 audience: workflow
 content-type: reference
 topic-tags: use-cases
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
-workflow-type: tm+mt
+exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1060'
 ht-degree: 100%
 
 ---
-
 
 # Erstellung einer zusammenfassenden Liste.{#creating-a-summary-list}
 
@@ -188,4 +188,3 @@ Nach Ausführung des Workflows enthält die Liste folgende Informationen:
 * eine Spalte mit der Referenz-Postleitzahl für die Geschäfte, die im Referenzschema der Geschäfte enthalten sind.
 
 ![](assets/uc2_enrich_listfinal.png)
-
