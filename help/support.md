@@ -5,11 +5,11 @@ title: 'Hilfe- und Support-Optionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -36,13 +36,13 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
 Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Workflow-Ausführung überwachen? Was ist der Datenbankbereinigungs-Workflow? [Lesen Sie die zehn am häufigsten gestellten Fragen](platform/using/common-questions.md).
 
 <table>
-    <tr><td><strong>Fragen und Antworten nach Themen</strong></td><td><strong>Häufige Probleme</strong></td><td><strong>Best Practices</strong></td><td><strong>Anleitungen</strong></td></tr>
+    <tr><td><strong>Fragen und Antworten nach Themen</strong></td><td><strong>Häufige Probleme</strong></td><td><strong>Best Practices</strong></td><td><strong>Anleitung</strong></td></tr>
     <tr>
     <td valign="top">
         <ul>
         <li><a href="platform/using/faq-key-concepts.md">Schlüsselkonzepte</a></li>
         <li><a href="platform/using/faq-campaign-config.md">Campaign-Einstellungen</a></li>
-        <li><a href="platform/using/faq-reporting.md">Berichte</a></li>
+        <li><a href="platform/using/faq-reporting.md">Reporting</a></li>
         <li><a href="platform/using/faq-build-upgrade.md">Buildupgrade</a></li>
         <li><a href="platform/using/faq-messages.md">Testen, Versand und Tracking von Nachrichten</a></li>
         <li><a href="platform/using/faq-workflows.md">Workflows</a></li>
@@ -64,7 +64,7 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
         <ul>
         <li><a href="workflow/using/workflow-best-practices.md">Best Practices bei Workflows</a></li>
         <li><a href="workflow/using/monitoring-technical-workflows.md">Überwachen technischer Workflows</a></li>
-        <li><a href="delivery/using/about-message-tracking.md">Tracking-Verwaltung</a></li>
+        <li><a href="delivery/using/about-message-tracking.md">Funktionsweise der Tracking-Verwaltung</a></li>
         <li><a href="production/using/monitoring-guidelines.md">Monitoring-Tools</a></li>
         <li><a href="platform/using/import-export-workflows.md">Importieren von Daten mit Workflows</a></li>
         <li><a href="delivery/using/steps-sending-the-delivery.md">Senden von Nachrichten in mehreren Schüben</a></li>
@@ -79,9 +79,9 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
         <li><a href="delivery/using/about-delivery-monitoring.md">Überwachen von Sendungen</a></li>
         <li><a href="delivery/using/understanding-quarantine-management.md">Funktionsweise der Quarantäneverwaltung</a></li>
         <li><a href="installation/using/get-started-security-privacy.md">Checkliste für Sicherheit und Datenschutz</a></li>
-        <li><a href="platform/using/privacy-management.md">Verwaltung von Datenschutz und Einverständniserklärungen</a></li>
+        <li><a href="platform/using/privacy-management.md">Datenschutz- und Einverständnisverwaltung</a></li>
         <li><a href="platform/using/steps-to-create-a-query.md">Erstellen einer Abfrage</a></li>
-        <li><a href="workflow/using/querying-recipient-table.md">Beispiele für Abfragen      </a></li>
+        <li><a href="workflow/using/querying-recipient-table.md">Beispiele für Abfragen</a></li>
         <li><a href="workflow/using/building-a-workflow.md">Erstellen eines Workflows</a></li>
         </ul>
     </td>
@@ -94,14 +94,14 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
 
 ### Was ist das Control Panel?
 
-Mit der Systemsteuerung von Kampagne können Sie die Effizienz Ihrer Arbeit als Produktadministrator von Campaign Classic steigern, indem Sie die Einstellungen verwalten und Nutzungen für jede Ihrer Instanzen verfolgen können.
+Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign Classic effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen.
 [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/discover-control-panel/key-features.html), um weitere Informationen zu erhalten.
 
 >[!NOTE]
 >
->Die Systemsteuerung steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=en#discover-control-panel).
+>Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
 >
->Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](rn/using/gs-overview.md) Build oder dem [neuesten GA-Build (21.1)](rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie, wie Sie Ihre Version in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, führen Sie die unter [Diese Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html) beschriebenen Schritte aus.
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](rn/using/gs-overview.md)-Build oder dem [neuesten allgemein verfügbaren Build (21.1)](rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 
 ### Zugriff auf das Control Panel
 
@@ -133,7 +133,7 @@ Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Cont
 
 <img src="platform/using/assets/do-not-localize/icon-support.svg" width="60px">
 
-Das neue Ticketing-System wurde über [Adobe Admin Console](https://adminconsole.adobe.com/overview) gestartet. Das neue System erfordert für jeden Benutzer neue individuelle Konten mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Mehr dazu](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)
+Das neue Ticket-System ist über die [Adobe Admin Console](https://adminconsole.adobe.com/overview) verfügbar. Das neue System erfordert für jeden Benutzer neue individuelle Konten mit den entsprechenden Berechtigungen. Wenn Sie feststellen, dass Sie sich nicht mit Ihrer Adobe ID anmelden können, fordern Sie über Experience League Zugriff an. Das Team der Kundenunterstützung wird den Zugriff so schnell wie möglich einrichten. [Mehr dazu](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html)
 
 ### Fragen an Experten
 
@@ -141,11 +141,11 @@ Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorh
 
 ### Aufrufen des Campaign-Download-Centers
 
-Ab Juni 2020 ersetzt die Experience Cloud-Lösung &quot;Softwareverteilung&quot; das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html), um auf die Softwareverteilung von Experience Cloud zuzugreifen.
+Ab Juni 2020 ersetzt die Experience Cloud-Lösung &quot;Software-Verteilung&quot; das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html), um auf die Softwareverteilung von Experience Cloud zuzugreifen.
 Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html).
 
 ### Erstellen Sie ein Ticket oder starten Sie einen Chat
 
 Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
+Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
