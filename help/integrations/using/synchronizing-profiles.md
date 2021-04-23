@@ -6,14 +6,14 @@ description: Profile synchronisieren
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 27970a6f-fb22-4418-b29c-c687fd62a78e
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1264'
 ht-degree: 100%
 
 ---
-
 
 # Profile synchronisieren{#synchronizing-profiles}
 
@@ -61,7 +61,7 @@ Die folgenden Schritte zum Ändern eines einzelnen Datenpunkts veranschaulichen 
 
    ![](assets/acs_connect_profile_sync_03.png)
 
-1. Vergewissern Sie sich, dass der Name des Empfängers in Campaign Standard aktualisiert wurde. Um zu erfahren, wo Sie die Profile in Campaign Standard finden, lesen Sie den Abschnitt [Navigationsprinzipien](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Vergewissern Sie sich, dass der Name des Empfängers in Campaign Standard aktualisiert wurde. Um zu erfahren, wo Sie die Profile in Campaign Standard finden, lesen Sie den Abschnitt [Navigationsprinzipien](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_04.png)
 
@@ -174,7 +174,6 @@ Befolgen Sie die Anweisungen unter [Workflow erstellen](#creating-a-workflow) un
 
    ![](assets/acs_connect_profile_sync_22.png)
 
-1. Gehen Sie zu Campaign Standard und öffnen Sie die Profildetails des Empfängers. Vergewissern Sie sich, dass **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** ein Häkchen aufweist. Informationen darüber, wo Sie sich in Campaign Standard Profile ansehen können, finden Sie in [Navigationsprinzipien](https://docs.adobe.com/content/help/en/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
+1. Gehen Sie zu Campaign Standard und öffnen Sie die Profildetails des Empfängers. Vergewissern Sie sich, dass **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** ein Häkchen aufweist. Informationen darüber, wo Sie sich in Campaign Standard Profile ansehen können, finden Sie in [Navigationsprinzipien](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/getting-started/discovering-the-interface/interface-description.html).
 
    ![](assets/acs_connect_profile_sync_23.png)
-
