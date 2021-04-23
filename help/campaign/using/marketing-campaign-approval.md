@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie Validierungen von Marketing-Kampagnen verwalt
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
+exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
 translation-type: ht
-source-git-commit: 67364f80ddc51d4792e73bbf39d388bdf4297005
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '2603'
 ht-degree: 100%
 
 ---
-
 
 # Einrichten und Verwalten des Validierungsprozesses {#approving-marketing-campaigns}
 
@@ -253,6 +253,7 @@ Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearb
 >* Wenn eine Liste von Validierungsverantwortlichen definiert ist, wird ein Vorgang validiert, sobald ein Validierungsverantwortlicher ihn akzeptiert hat. Der entsprechende Validierungs-Link wird dann nicht mehr im Dashboard angezeigt. Wenn das Senden von Benachrichtigungen aktiviert ist und ein anderer Validierungsverantwortlicher auf den Validierungs-Link in der Benachrichtigung klickt, wird ihm mitgeteilt, dass ein anderer Validierungsverantwortlicher den Vorgang bereits validiert hat.
 >* Im unteren Abschnitt des Fensters der Validierungseinstellungen kann eine Validierungsplanung für die jeweilige Kampagne festgelegt werden. Standardmäßig haben Validierungsverantwortliche nach dem Unterbreitungsdatum 3 Tage Zeit, um einen Vorgang zu validieren.
 >* Es besteht die Möglichkeit, den betreffenden Benutzern vor dem Ende der Validierungsfrist eine automatische Erinnerung zu senden.
+
 >
 
 
