@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie Import- und Exportvorlagen in Campaign Classi
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 1180e664-5ead-4d5d-b1c3-6fe397c1f3a2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # Erstellen von Import- und Exportvorlagen {#creating-import-export-templates}
 
@@ -31,5 +31,5 @@ Sie können vorhandene Vorlagen zum Erstellen eigener Vorlagen oder zum Erstelle
 
 Der Prozess zum Konfigurieren einer Vorlage entspricht den in diesen Abschnitten beschriebenen Schritten:
 
-* [Konfigurieren eines Importauftrags](../../platform/using/executing-import-jobs.md)
-* [Konfigurieren eines Exportauftrags](../../platform/using/executing-export-jobs.md)
+* [Importvorgang konfigurieren](../../platform/using/executing-import-jobs.md)
+* [Exportvorgang konfigurieren](../../platform/using/executing-export-jobs.md)
