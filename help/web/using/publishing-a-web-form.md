@@ -6,14 +6,14 @@ description: Webformular veröffentlichen
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1056'
 ht-degree: 100%
 
 ---
-
 
 # Webformular veröffentlichen{#publishing-a-web-form}
 
@@ -160,4 +160,3 @@ Sie können die Antwortprotokolle zu den Fragen verwenden, um beispielsweise Eri
 >[!NOTE]
 >
 >Für ein vollständiges Tracking der bereitgestellten Antworten exportieren Sie die Antworten und erstellen Sie spezielle Berichte. Verwenden Sie dazu das optionale **Umfragemodul**. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../web/using/about-surveys.md).
-
