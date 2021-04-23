@@ -6,14 +6,14 @@ description: Weitere Informationen zu Zielgruppendaten in einem Workflow.
 audience: workflow
 content-type: reference
 topic-tags: -general-operation
-translation-type: tm+mt
-source-git-commit: bb7e3ce726e2c589c033686cf3ab2960de140d91
-workflow-type: tm+mt
+exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '2011'
 ht-degree: 100%
 
 ---
-
 
 # Zielgruppendaten{#targeting-data}
 
@@ -256,4 +256,3 @@ Identifizierte und abgerufene Daten können angereichert, zusammengefasst und be
 * Mit der Aktivität **[!UICONTROL Anreicherung]** können Sie vorübergehend Spalten zu einem Schema sowie Informationen zu bestimmten Elementen hinzufügen. Weitere Informationen hierzu finden Sie im Abschnitt [Anreicherung](../../workflow/using/enrichment.md) des Aktivitäten-Repositorys.
 * Mit der Aktivität **[!UICONTROL Schema-Bearbeitung]** können Sie die Struktur eines Schemas ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Schema-Bearbeitung](../../workflow/using/edit-schema.md) des Aktivitäten-Repositorys.
 * Mit der Aktivität **[!UICONTROL Dimensionsänderung]** können Sie die Zielgruppendimension beim Erstellen der Zielgruppe ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Dimensionsänderung](../../workflow/using/change-dimension.md).
-
