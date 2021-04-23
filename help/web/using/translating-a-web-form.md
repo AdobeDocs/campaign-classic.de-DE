@@ -6,14 +6,14 @@ description: Webformular übersetzen
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: 21219f4a85a0caec4531acda33ab8bba5c7605d6
-workflow-type: tm+mt
+exl-id: 72959141-ca18-4512-80c7-239efd31f711
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1662'
 ht-degree: 100%
 
 ---
-
 
 # Webformular übersetzen{#translating-a-web-form}
 
@@ -477,4 +477,3 @@ Um Webanwendungen in andere Sprachen als die Standardsprachen zu übersetzen (si
 1. Wählen Sie die Schaltfläche **[!UICONTROL Hinzufügen]** aus und geben Sie dann den **[!UICONTROL internen Namen]**, den **[!UICONTROL Titel]** und die Kennung des Bildes (Kennzeichnung) ein. Wenn Sie ein neues Bild hinzufügen möchten, wenden Sie sich an Ihren Administrator.
 
    ![](assets/s_ncs_admin_survey_trad_new_itemized_list_2.png)
-
