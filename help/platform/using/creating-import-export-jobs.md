@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie Import- und Exportvorgänge in Campaign Class
 audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 85c48712-3704-41db-a255-a07ca8d02ec4
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '139'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
-
 
 # Erstellen von Import- und Exportvorgängen {#creating-import-export-jobs}
 
@@ -36,5 +36,5 @@ Import- und Exportvorgänge können nach erfolgter Vorlagenkonfiguration in vers
 
 Bei all diesen Optionen öffnen sich Datenimport- oder -export-Assistenten. Sie werden in den folgenden Abschnitten beschrieben:
 
-* [Konfigurieren eines Importauftrags](../../platform/using/executing-import-jobs.md)
-* [Konfigurieren eines Exportauftrags](../../platform/using/executing-export-jobs.md)
+* [Importvorgang konfigurieren](../../platform/using/executing-import-jobs.md)
+* [Exportvorgang konfigurieren](../../platform/using/executing-export-jobs.md)
