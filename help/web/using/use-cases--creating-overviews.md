@@ -6,14 +6,14 @@ description: '"Anwendungsbeispiele: Übersichten erstellen"'
 audience: web
 content-type: reference
 topic-tags: web-applications
+exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 translation-type: ht
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '1032'
 ht-degree: 100%
 
 ---
-
 
 # Anwendungsfälle: Übersichtsseiten erstellen {#use-cases-creating-overviews}
 
@@ -224,4 +224,3 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 Die Webanwendung ist jetzt konfiguriert. Wählen Sie den Tab **[!UICONTROL Vorschau]** aus, um sie in der Vorschau anzuzeigen.
 
 ![](assets/s_ncs_configuration_webapp_result.png)
-
