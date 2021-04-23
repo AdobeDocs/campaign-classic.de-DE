@@ -2,7 +2,7 @@
 solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit der Personalisierung
-description: Erfahren Sie, wie Sie Nachrichten personalisieren und bedingten Inhalt in der Kampagne verwenden können
+description: Erfahren Sie, wie Sie Nachrichten personalisieren und bedingten Inhalt in Campaign verwenden können.
 audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: d3ef2783409a3a36badbd3f8248ba1bdf6acae7e
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
