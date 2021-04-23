@@ -6,14 +6,14 @@ description: Zielgruppenimport und -export
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '661'
 ht-degree: 100%
 
 ---
-
 
 # Zielgruppenimport und -export{#importing-and-exporting-audiences}
 
@@ -82,4 +82,3 @@ Die Synchronisation von Adobe Campaign und People Core Service dauert 24 bis 36 
 >[!NOTE]
 >
 >Um abgestimmt werden zu können, müssen die Datensätze eine Adobe-Experience-Cloud-Kennung (&#39;visitor ID&#39; oder &#39;declared ID&#39;) aufweisen. Datensätze, die keine Adobe-Experience-Cloud-Kennung aufweisen, werden beim Import und Export der Zielgruppen ignoriert.
-
