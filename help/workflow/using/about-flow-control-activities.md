@@ -6,14 +6,14 @@ description: Über Steuerungsaktivitäten
 audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 3810cbd0-159c-4161-b568-1f61dcea0300
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
-
 
 # Über Steuerungsaktivitäten{#about-flow-control-activities}
 
@@ -32,4 +32,3 @@ Folgende Aktivitäten dienen in erster Linie der Koordination anderer Aktivität
 * **Validierung**: sendet eine E-Mail an einen Benutzer oder eine Benutzergruppe und wartet auf die Validierung, bevor die Ausführung fortgesetzt wird. Siehe Abschnitt [Validierung](../../workflow/using/approval.md).
 * **Warnung**: sendet eine Benachrichtigung an einen Benutzer oder eine Benutzergruppe. Siehe Abschnitt [Warnung](../../workflow/using/alert.md).
 * **Aufgabe**: ermöglicht die Konfiguration der Ausführung von Aufgaben. Siehe Abschnitt [Aufgabe](../../workflow/using/task.md).
-
