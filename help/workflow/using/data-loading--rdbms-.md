@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über die Workflow-Aktivität "Laden (DBMS)".
 audience: workflow
 content-type: reference
 topic-tags: action-activities
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 6e24d5fe-4830-49b4-a0fe-624c5644c920
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '203'
 ht-degree: 100%
 
 ---
-
 
 # Laden (DBMS){#data-loading-rdbms}
 
@@ -27,7 +27,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_advuser_wf_sgbd_sample_1.png)
 
-   Der Name der Tabelle dient als Vorlage zum Abruf der externen Daten. Der Name der Tabelle, die tatsächlich vom Workflow verarbeitet wird, kann berechnet oder von einer eingehenden Transition übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf **[!UICONTROL Erweitert...]**. und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
+   Der Name der Tabelle dient als Vorlage zum Abruf der externen Daten. Der Name der Tabelle, die tatsächlich vom Workflow verarbeitet wird, kann berechnet oder von einer eingehenden Transition übermittelt werden. Um die zu verwendende Tabelle auszuwählen, klicken Sie auf **[!UICONTROL Erweitert...]** und wählen Sie die Option **[!UICONTROL Wird durch die Transition angegeben]** oder **[!UICONTROL Explizit]**.
 
    ![](assets/s_advuser_wf_sgbd_sample_5.png)
 
@@ -38,4 +38,3 @@ Gehen Sie wie folgt vor:
 1. Durch Klick auf **[!UICONTROL Abfrage bearbeiten...]** können die Daten gefiltert werden.
 
    Derart abgerufene Daten sind im weiteren Verlauf des Workflows verwendbar.
-
