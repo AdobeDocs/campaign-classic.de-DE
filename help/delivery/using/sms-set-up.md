@@ -1,34 +1,34 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Kampagne SMS Kanal einrichten
-description: Erfahren Sie, wie Sie den SMS-Kanal in Kampagne konfigurieren
+title: Campaign-SMS-Kanal einrichten
+description: Erfahren Sie, wie Sie den SMS-Kanal in Campaign konfigurieren.
 audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
-translation-type: tm+mt
-source-git-commit: 5a084ebe5295d19de24cf92c721d4692f0f5deb8
-workflow-type: tm+mt
+exl-id: a2783a5e-6d38-41a1-b5c6-24ab489116f8
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1781'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-
-# SMS-Kanal {#setting-up-sms-channel} konfigurieren
+# SMS-Kanal konfigurieren {#setting-up-sms-channel}
 
 Folgende Voraussetzungen müssen gegeben sein, um Sendungen an Mobiltelefone richten zu können:
 
 1. ein externes Konto mit Angabe des Connectors und des Nachrichtentyps;
 
-   Beachten Sie, dass ältere Connectors jetzt nicht mehr unterstützt werden. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weitere Infos finden Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
+   Beachten Sie, dass ältere Connectoren jetzt nicht mehr unterstützt werden. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
 
 1. Eine Versandvorlage, die auf das externe Konto Bezug nimmt.
 
-## Erstellen eines SMPP-Externen Kontos {#creating-an-smpp-external-account}
+## Externes SMPP-Konto erstellen {#creating-an-smpp-external-account}
 
 Um eine SMS an ein Mobiltelefon zu senden, müssen Sie zunächst Ihr externes SMPP-Konto erstellen.
-Weitere Informationen zum SMS-Protokoll und zu den Einstellungen finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
+Weiterführende Informationen zum SMS-Protokoll und dessen Einstellungen finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -82,13 +82,13 @@ Gehen Sie dazu wie folgt vor:
 
    Bei gewissen Anbietern ist die Verwendung des Vorzeichens &#39;+&#39; jedoch erforderlich, sodass es ratsam ist, mit Ihrem Anbieter Kontakt aufzunehmen, der Sie bei Bedarf dazu auffordern wird, diese Option zu aktivieren.
 
-   Mit dem Kontrollkästchen **[!UICONTROL TLS über SMPP]** aktivieren können Sie SMPP-Traffic verschlüsseln. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
+   Die Checkbox **[!UICONTROL TLS über SMPP aktivieren]** ermöglicht die Verschlüsselung des SMPP-Traffics. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
 
 1. Wenn Sie einen Connector vom Typ **[!UICONTROL Erweitertes allgemeines SMPP]** konfigurieren, können Sie automatische Antworten einrichten.
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#automatic-reply).
 
-## SMS-Zeichentransliteration {#about-character-transliteration}
+## Transliteration von SMS-Zeichen {#about-character-transliteration}
 
 Die Transliteration von Zeichen kann in einem externen Konto für den SMPP-Mobiltelefon-Versand im Tab **[!UICONTROL Mobile]** eingerichtet werden.
 
@@ -286,7 +286,7 @@ CR: Wagenrücklauf
 
 ^ { } `[ ~ ]` | €
 
-## Textkodierungen {#about-text-encodings}
+## Textcodierungen {#about-text-encodings}
 
 Beim SMS-Versand kann Adobe Campaign eine oder mehrere Textkodierungen verwenden. Je nach Kodierung kommen unterschiedliche Zeichensätze zur Anwendung und variiert die Anzahl an zulässigen Zeichen pro SMS.
 
@@ -343,9 +343,9 @@ Um dies zu vermeiden, wenden Sie je nach verwendetem Provider eine der folgenden
 
    ![](assets/extended_smpp_system-type.png)
 
-Die Schritte zum Einrichten eines Externen Kontos mithilfe des erweiterten generischen SMPP-Connectors sind im Abschnitt [Erstellen eines SMPP-Externen Kontos](#creating-an-smpp-external-account) beschrieben.
+Die Schritte zum Einrichten eines externen Kontos mithilfe des Connectors „Erweitertes allgemeines SMPP“ sind im Abschnitt [Externes SMPP-Konto erstellen](#creating-an-smpp-external-account) beschrieben.
 
-## Versandvorlage {#changing-the-delivery-template} ändern
+## Versandvorlage ändern {#changing-the-delivery-template}
 
 Adobe Campaign enthält eine vorkonfigurierte Vorlage für Sendungen auf Mobiltelefone. Auf diese Vorlage können Sie im Knoten **[!UICONTROL Ressourcen > Vorlagen > Versandvorlagen]** zugreifen. Weiterführende Informationen finden Sie im Abschnitt [Über Vorlagen](../../delivery/using/about-templates.md).
 
