@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie die Freigabe von Zielgruppen konfigurieren.
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '542'
 ht-degree: 100%
 
 ---
-
 
 # Integration mit freigegebenen Zielgruppen in Adobe Campaign konfigurieren{#configuring-shared-audiences-integration-in-adobe-campaign}
 
@@ -79,7 +79,7 @@ So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
    ![](assets/aam_config_3.png)
 
-## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.      {#step-3--configure-campaign-tracking-server}
+## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.     {#step-3--configure-campaign-tracking-server}
 
 Für die Konfiguration der Integration mit People Core Service oder Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
 
