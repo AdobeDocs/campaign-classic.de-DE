@@ -6,14 +6,14 @@ description: '"Anwendungsbeispiel: ein Freunde-Werben-Formular erstellen"'
 audience: web
 content-type: reference
 topic-tags: online-surveys
+exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 translation-type: ht
-source-git-commit: 11ff62238a8fb73658f2263c25dbeb27d2e0fb23
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '624'
 ht-degree: 100%
 
 ---
-
 
 # Anwendungsfall: Erstellen eines Empfehlungsformulars{#use-case-creating-a-refer-a-friend-form}
 
@@ -126,4 +126,3 @@ Um den Freunde-Werben-Bereich zu konfigurieren und zu erstellen, gehen Sie folge
    ![](assets/s_ncs_admin_survey_viral_sample_9.png)
 
    Sein Profil enthält die vom Werber eingegebenen Informationen. Diese werden entsprechend den Konfigurationen des Formularskripts gespeichert. Wenn der Angeworbene den Newsletter abonniert, werden seine Informationen in der Empfängertabelle gespeichert.
-
