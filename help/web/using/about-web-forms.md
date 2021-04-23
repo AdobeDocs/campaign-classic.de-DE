@@ -6,14 +6,14 @@ description: Erste Schritte mit Web-Formularen in Campaign
 audience: web
 content-type: reference
 topic-tags: web-forms
-translation-type: tm+mt
-source-git-commit: e76eb171aac1f7088ff8647f99c928ec349b24fc
-workflow-type: tm+mt
+exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '511'
 ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit Web-Formularen{#about-web-forms}
 
@@ -80,6 +80,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 >
 >* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
 >* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
+
 >
 
 
@@ -97,4 +98,3 @@ Wählen Sie in diesem Fall den Typ des hinzuzufügenden Feldes und den Antwort-S
 Klicken Sie auf **[!UICONTROL OK]**, um die Auswahl zu bestätigen.
 
 ![](assets/s_ncs_admin_webform_confirm_storage.png)
-
