@@ -6,14 +6,14 @@ description: Testadressen hinzufügen
 audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
-translation-type: tm+mt
-source-git-commit: 9237e11edec4114b2bd0932e6128775f36aad27c
-workflow-type: tm+mt
+exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '354'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
-
 
 # Testadressen hinzufügen{#adding-seed-addresses}
 
@@ -39,13 +39,13 @@ Drei Einfügemodi stehen zur Verfügung:
 
    Klicken Sie auf den Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** und geben Sie dann die Auswahlkriterien für die Testadressen an. Sie können beispielsweise alle in einem bestimmten Ordner enthaltenen Adressen oder die zu einer bestimmten Abteilung Ihres Unternehmens gehörigen Testadressen auswählen.
 
-   Ein Beispiel hierfür finden Sie in diesem Abschnitt: [Anwendungsfall: Wählen Sie Testadressen für Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   Ein Beispiel hierfür finden Sie im Abschnitt [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
 
 >[!NOTE]
 >
 >Diese Option wird insbesondere dann verwendet, wenn dem Versand eine andere als die Standard-Empfängertabelle **nms:recipient** zugrunde liegt und die Inbox-Rendering-Funktion des Moduls **[!UICONTROL Zustellbarkeit]** von Adobe Campaign genutzt werden soll.
 >
->Weitere Informationen finden Sie unter [Verwenden Sie eine externe Empfänger-Tabelle](../../delivery/using/using-an-external-recipient-table.md) und in der Dokumentation zu [Inbox-Rendering](../../delivery/using/inbox-rendering.md).
+>Weitere Informationen hierzu finden Sie im Abschnitt [Externe Empfängertabelle verwenden](../../delivery/using/using-an-external-recipient-table.md) und in der Dokumentation zum [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
 Bei Briefsendungen können Sie die Art der Adresseneinfügung in die Extraktionsdatei anpassen. Standardmäßig werden sie der Sortierreihenfolge der Ausgabedatei entsprechend eingeordnet. Sie haben jedoch die Möglichkeit, sie am Anfang oder am Ende der Datei bzw. zufällig inmitten der Empfänger der Hauptzielgruppe einzufügen.
 
