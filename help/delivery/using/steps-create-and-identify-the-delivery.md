@@ -6,14 +6,14 @@ description: Versand erstellen und identifizieren
 audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
-translation-type: tm+mt
-source-git-commit: 6a856c95f21b52c66a9b7359133227394fae05a5
-workflow-type: tm+mt
+exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '279'
 ht-degree: 100%
 
 ---
-
 
 # Versand erstellen und identifizieren {#create-and-identify-the-delivery}
 
@@ -55,4 +55,3 @@ Der Versandinhalt ist bereit zur Konfiguration. Die Definition des Versandinhalt
 * [SMS-Inhalt erstellen](../../delivery/using/sms-create.md#defining-the-sms-content)
 * [Briefpost-Inhalt definieren](../../delivery/using/defining-the-direct-mail-content.md)
 * [Push-Benachrichtigungen ](../../delivery/using/about-mobile-app-channel.md)
-
