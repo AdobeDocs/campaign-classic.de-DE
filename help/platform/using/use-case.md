@@ -6,18 +6,18 @@ description: Anwendungsbeispiel
 audience: platform
 content-type: reference
 topic-tags: filtering-data
-translation-type: tm+mt
-source-git-commit: b05b8daad449aeb1f5226fdd76744776c6553b63
-workflow-type: tm+mt
+exl-id: 85ded096-7d27-41b3-8ef2-93f5ca8def82
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '276'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-
 # Anwendungsbeispiel{#use-case}
 
-## Erstellen Sie einen Filter für das E-Mail-Format der Abonnenten {#creating-a-filter-on-the-email-format-of-subscribers}
+## Filter für das E-Mail-Format von Abonnenten erstellen {#creating-a-filter-on-the-email-format-of-subscribers}
 
 In diesem Anwendungsbeispiel wird die Erstellung eines Filters beschrieben, der Newsletter-Abonnements entsprechend des von den Empfängern angegebenen E-Mail-Formats filtert.
 
@@ -44,7 +44,7 @@ Gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_filter_view_schema.png)
 
-   Diese Felder werden für die Bestimmung der Filterbedingungen im Filtereditor zugänglich sein. Die Bestimmung eines Anwendungsfilters erfolgt auf die gleiche Weise wie die eines erweiterten Filters. Siehe [Einen erweiterten Filter erstellen](../../platform/using/creating-filters.md#creating-an-advanced-filter).
+   Diese Felder werden für die Bestimmung der Filterbedingungen im Filtereditor zugänglich sein. Die Bestimmung eines Anwendungsfilters erfolgt auf die gleiche Weise wie die eines erweiterten Filters. Weitere Informationen finden Sie unter [Erweiterte Filter erstellen](../../platform/using/creating-filters.md#creating-an-advanced-filter).
 
 1. Erstellen Sie einen neuen Abonnementfilter, um nur solche Abonnements anzuzeigen, für die kein E-Mail-Format bestimmt wurde:
 
@@ -58,4 +58,3 @@ Gehen Sie wie folgt vor:
    Der Name des aktuellen Filters wird oberhalb der Liste angezeigt. Um den Filter aufzuheben, klicken Sie auf das Symbol **[!UICONTROL Filter entfernen]**.
 
    ![](assets/s_ncs_user_filter_on_subscriptions.png)
-
