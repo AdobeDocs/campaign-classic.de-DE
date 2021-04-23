@@ -6,14 +6,14 @@ description: Integration mit Adobe Target konfigurieren
 audience: integrations
 content-type: reference
 topic-tags: adobe-target
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '191'
 ht-degree: 100%
 
 ---
-
 
 # Integration mit Adobe Target konfigurieren{#configuring-the-integration-with-adobe-target}
 
@@ -34,6 +34,4 @@ Gehen Sie wie folgt vor:
 
    * **[!UICONTROL TNT_EdgeServer]** - für die Integration verwendeter Adobe-Target-Server. Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht der Adobe-Target-**[!UICONTROL Server-Domain]** und wird vom Wert **/m2** gefolgt. Zum Beispiel: **tt.omtrdc.net/m2**.
    * **[!UICONTROL TNT_TenantName]** - Name der Adobe-Target-Organisation. Dieser Wert entspricht dem Adobe-Target-**[!UICONTROL Client]**-Namen.
-
    ![](assets/tar_options.png)
-
