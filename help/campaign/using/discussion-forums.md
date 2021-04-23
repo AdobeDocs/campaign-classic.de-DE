@@ -6,14 +6,14 @@ description: Diskussionsforen
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
+exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 translation-type: ht
-source-git-commit: 693e38477b318ee44e0373a04d8524ddf128fe36
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '799'
 ht-degree: 100%
 
 ---
-
 
 # Diskussionsforen{#discussion-forums}
 
@@ -111,6 +111,4 @@ Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, 
 
    * Gehen Sie von der Adobe-Campaign-Startseite aus zu **[!UICONTROL Kampagnen > Navigation > Sendungen]** und öffnen Sie den Versand **[!UICONTROL Benachrichtigungen bezüglich Diskussionforen]**.
    * Gehen Sie im Explorer zum Knoten **[!UICONTROL Administration > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** und klicken Sie auf **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]**.
-
    Im Fenster **[!UICONTROL Benachrichtigungen bezüglich Diskussionsforen]** befinden sich die Versandlogs im Tab **[!UICONTROL Bearbeiten > Versand]**. Überprüfen Sie ebenfalls die Tabs **[!UICONTROL Verfolgung > Protokoll]** und **[!UICONTROL Ausschlussgründe]**.
-
