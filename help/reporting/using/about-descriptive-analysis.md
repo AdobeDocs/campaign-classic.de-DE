@@ -6,14 +6,14 @@ description: Über die deskriptive Analyse
 audience: reporting
 content-type: reference
 topic-tags: analyzing-populations
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 19920058-e8e8-4e17-9cc3-24ddf9f96d04
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '195'
 ht-degree: 100%
 
 ---
-
 
 # Über die deskriptive Analyse{#about-descriptive-analysis}
 
@@ -46,4 +46,3 @@ Berichte der deskriptiven Analyse sind weniger leistungsfähig als Adobe-Campaig
 >[!CAUTION]
 >
 >Die deskriptive Analyse ist nicht für die Exploration großer Datenvolumen geeignet.
-
