@@ -6,14 +6,14 @@ description: Integration über Workflows
 audience: interaction
 content-type: reference
 topic-tags: delivering-an-offer
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 33d318f3-1eb4-4c74-8c20-8b9f0442c7c3
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '1094'
 ht-degree: 100%
 
 ---
-
 
 # Integration über Workflows{#integrating-an-offer-via-a-workflow}
 
@@ -173,4 +173,3 @@ Gehen Sie dazu wie folgt vor:
       ![](assets/int_offer_per_cell1.png)
 
 1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Weitere Informationen hierzu finden Sie im Abschnitt [Angebotsvorschläge in einen Versand einfügen](../../interaction/using/integrating-an-offer-via-the-wizard.md#inserting-an-offer-proposition-into-a-delivery).
-
