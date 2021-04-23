@@ -2,18 +2,18 @@
 solution: Campaign Classic
 product: campaign
 title: Tracking
-description: Verfolgung
+description: Tracking
 audience: social
 content-type: reference
 topic-tags: annexes
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: 83883ba3-e4dc-428c-a377-1986cfd1fe55
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '76'
 ht-degree: 100%
 
 ---
-
 
 # Tracking{#tracking}
 
@@ -30,4 +30,3 @@ Social Marketing bietet Berichte, mit denen Sie die Reaktionsrate von Facebook- 
 * Bericht zur **[!UICONTROL Fan-Akquise]**, der über den Tab **[!UICONTROL Dashboard]** eines Facebook-Dienstes verfügbar ist.
 
    ![](assets/social_report_1.png)
-
