@@ -6,14 +6,14 @@ description: Verwaltung von Aufgaben
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
+exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '3901'
 ht-degree: 100%
 
 ---
-
 
 # Verwaltung von Aufgaben{#creating-and-managing-tasks}
 
@@ -436,6 +436,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
@@ -510,4 +511,3 @@ Im Folgenden werden die Etappen des vollständigen Zyklus einer Aufgabe dargeste
    >[!NOTE]
    >
    >Der Verantwortliche kann den Lebenszyklus einer Aufgabe nach ihrem Abschluss neu starten. Öffnen Sie hierzu die Aufgabe und klicken Sie auf den Link **[!UICONTROL Aufgabe zurücksetzen, um sie erneut auszuführen]** im unteren Abschnitt ihres Dashboards.
-
