@@ -6,14 +6,14 @@ description: Cubes zur Datenanalyse verwenden
 audience: reporting
 content-type: reference
 topic-tags: designing-reports-with-cubes
+exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 translation-type: ht
-source-git-commit: 278dec636373b5ccd3b631bd29607ebe894d53c3
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '991'
 ht-degree: 100%
 
 ---
-
 
 # Cubes zur Datenanalyse verwenden{#using-cubes-to-explore-data}
 
@@ -169,4 +169,3 @@ Gehen Sie wie folgt vor:
    ![](assets/s_advuser_cube_in_report_02.png)
 
    Auf diese Weise können Sie den anzuzeigenden Bericht erstellen. Weitere Informationen finden Sie unter [2. Schritt - Auswahl der Zeilen und Spalten](#step-2---selecting-lines-and-columns).
-
