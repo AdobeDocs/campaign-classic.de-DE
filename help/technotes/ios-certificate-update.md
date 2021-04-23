@@ -6,11 +6,11 @@ description: Technote
 hide: false
 hidefromtoc: true
 exl-id: 263fb4b5-ca62-4b92-a82d-8820ee998296
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -28,9 +28,9 @@ Gehen Sie wie folgt vor, um das neue Zertifikat zu integrieren:
 
 1. Laden Sie das Stammzertifikat **AAACertificateServices 5/12/2020** [von dieser Seite](https://support.sectigo.com/Com_KnowledgeDetailPage?Id=kA03l00000117cL) herunter.
 
-1. Überprüfen Sie, ob das AAA-Zertifikat sowohl in Ihrem Betriebssystem als auch in JAVA-Trusts vorhanden ist. Ist dies nicht der Fall, fügen Sie es hinzu.
+1. Überprüfen Sie, ob das AAA-Zertifikat sowohl in Ihrem Betriebssystem als auch in den JAVA-TrustStores vorhanden ist. Ist dies nicht der Fall, fügen Sie es hinzu.
 
-1. Starten Sie den Adobe Campaign-Web-Dienst neu:
+1. Starten Sie den Adobe Campaign-Webdienst neu:
 
    ```
    nlserver restart web
