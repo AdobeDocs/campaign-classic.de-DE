@@ -6,14 +6,14 @@ description: Erstellen von Angebotskategorien
 audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '289'
 ht-degree: 100%
 
 ---
-
 
 # Angebotskategorien{#creating-offer-categories}
 
@@ -60,4 +60,3 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 Über den Link **[!UICONTROL Planung und Eignungsregeln des Angebots]** im Dashboard der in der Kategorie enthaltenen Angebote können Sie auf die Details der Eignungskonfiguration zugreifen.
 
 ![](assets/offer_create_006.png)
-
