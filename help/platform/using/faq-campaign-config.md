@@ -6,14 +6,14 @@ description: Häufig gestellte Fragen zu Campaign Classic
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
-workflow-type: tm+mt
+exl-id: 50bed489-2a0f-4123-a326-3d68c8295662
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
-
 
 # Häufig gestellte Fragen zu Campaign-Einstellungen {#settings-faq}
 
@@ -41,7 +41,7 @@ Erfahrene Benutzer können die Tracking-Funktionen in der Campaign-Instanz konfi
 
 ## Wie kann ich den E-Mail-Versand konfigurieren? {#how-to-configure-email-deliverability-}
 
-Lesen Sie zusätzlich zum Leitfaden [Best Practice für die Bereitstellung von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) die technischen Empfehlungen zur Lieferbarkeit, um zu verstehen, wie Sie Ihre Instanz konfigurieren, um die Kampagne zu maximieren und Funktionen bereitzustellen.
+Lesen Sie zusätzlich zum [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) die technischen Empfehlungen zur Zustellbarkeit, um zu verstehen, wie Sie Ihre Instanz so konfigurieren, dass die Versandfunktionen in Campaign optimal eingerichtet sind.
 
 [Hier erfahren Sie mehr darüber](../../delivery/using/about-deliverability.md).
 
