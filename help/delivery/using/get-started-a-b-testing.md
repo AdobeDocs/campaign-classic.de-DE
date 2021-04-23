@@ -6,14 +6,14 @@ description: Erfahren Sie mehr über A/B-Tests in Campaign Classic.
 audience: delivery
 content-type: reference
 topic-tags: a-b-testing
+exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
 translation-type: ht
-source-git-commit: 346b72d522c947b2a2552176b910ded8d622f3ab
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
 workflow-type: ht
 source-wordcount: '350'
 ht-degree: 100%
 
 ---
-
 
 # Erste Schritte mit A/B-Tests {#get-started-a-b-testing}
 
