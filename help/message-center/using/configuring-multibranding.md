@@ -6,14 +6,14 @@ description: Multibranding konfigurieren
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
-workflow-type: tm+mt
+exl-id: aa2e7ef7-fe69-41c8-9c90-bfb1533031a5
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '235'
 ht-degree: 100%
 
 ---
-
 
 # Multibranding konfigurieren{#configuring-multibranding}
 
@@ -81,4 +81,3 @@ In der Kontrollinstanz müssen Versandvorlagen und externe Konten verknüpft wer
 1. Erstellen Sie für jede Marke ein externes Konto mit demselben internen Namen wie in Schritt 1 definiert.
 1. Erstellen Sie für jede Marke eine Standard-Versandvorlage.
 1. Konfigurieren Sie in den **[!UICONTROL Eigenschaften]** der Versandvorlage das Routing zum externen Konto der Marke.
-
