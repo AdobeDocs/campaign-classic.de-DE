@@ -6,14 +6,14 @@ description: Zielgruppenfreigabe mit Adobe Marketing Cloud
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
-translation-type: tm+mt
-source-git-commit: 40abbf1f981331b8a19d3607c57624aac22c91f2
-workflow-type: tm+mt
+exl-id: 1c90e913-3375-476c-ab60-89f20239eb0d
+translation-type: ht
+source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+workflow-type: ht
 source-wordcount: '308'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
-
 
 # Zielgruppenfreigabe mit Adobe Marketing Cloud{#sharing-audiences-with-adobe-experience-cloud}
 
@@ -39,6 +39,6 @@ Diese Integration unterstützt zwei Arten von Adobe Experience Cloud-Kennungen:
 
    >[!NOTE]
    >
-   > Deklarierte ID-Datenquelle kann jetzt auch mit der Integration des Hauptdienstes People verwendet werden.
+   > Eine Declared ID-Datenquelle kann jetzt auch mit der Integration des People Core Service verwendet werden.
    >
-   >Wenn Sie die Integration des Hauptdiensts People verwenden und die Integration des Audience Managers hinzufügen möchten, benötigen Sie die Hilfe eines Adobe Audience Manager-Beraters, um zu vermeiden, dass alle beim Übergang zur Verwendung dieser deklarierten ID-Datenquelle in einem Adobe Audience Manager-Kontext erfassten ID-Synchronisierungen verloren gehen.
+   >Wenn Sie die People Core Service-Integration verwenden und die Audience Manager-Integration hinzufügen möchten, benötigen Sie die Hilfe eines Adobe Audience Manager-Beraters, um zu vermeiden, dass alle ID-Synchronisationen verloren gehen, die beim Wechsel zu dieser Declared ID-Datenquelle in einem Adobe Audience Manager-Kontext erfasst wurden.
