@@ -2,16 +2,16 @@
 solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
-description: Aktuelle Version von Campaign Classic     Anmerkungen
+description: Aktuelle Version von Campaign Classic      Anmerkungen
 feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '921'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 _15. April 2021_
 
-* Die Kennwortverwaltung wurde verbessert, um die Sicherheit zu optimieren.
-* Es wurde ein Problem behoben, das MTA-Abstürze verursachen konnte.
+* Die Verwaltung von Passwörtern wurde verbessert, um die Sicherheit zu optimieren.
+* Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des MTA führen konnte.
 
 ## ![](assets/do-not-localize/red_2.png) Version 21.1.1 – Build 9277 {#release-21-1-1-build-9277}
 
