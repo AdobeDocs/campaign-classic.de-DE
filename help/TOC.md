@@ -25,7 +25,7 @@ ht-degree: 100%
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
    + [Aktuelle Version](rn/using/latest-release.md)
    + [!DNL Gold Standard]-Version {#gs-release}
-      + [Was ist  [!DNL Gold Standard]](rn/using/gs-overview.md)?
+      + [Was ist  [!DNL Gold Standard]?](rn/using/gs-overview.md)
       + [[!DNL Gold Standard] -Versionshinweise](rn/using/gold-standard.md)
       + [[!DNL Gold Standard] -Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
    + Frühere Versionen {#previous-releases}
