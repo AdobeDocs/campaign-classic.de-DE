@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 51%
@@ -24,11 +24,11 @@ Am 26. April 2021 führte ein weltweites Problem bei Apple dazu, dass einige E-M
 
 Dieses Problem trat am 26.04.2010 auf und dauerte von 7.00 - 13.00 Uhr EST.
 
-Bei Ausfall eines ISP können über Campaign versendete E-Mails nicht erfolgreich an ihren Empfänger zugestellt werden: Diese E-Mails werden fälschlicherweise als Bounces markiert.
-
 >[!NOTE]
 >
 >Sie können das Apple-Systemstatus-Dashboard auf [dieser Seite](https://www.apple.com/support/systemstatus/) überprüfen.
+
+Bei Ausfall eines ISP können über Campaign versendete E-Mails nicht erfolgreich an ihren Empfänger zugestellt werden: Diese E-Mails werden fälschlicherweise als Bounces markiert.
 
 Gemäß der Standardlogik für die Behandlung von Bounces hat Adobe Campaign diese Empfänger automatisch der Quarantäneliste mit dem **[!UICONTROL Status]** **[!UICONTROL Quarantäne]** hinzugefügt. Um dies zu korrigieren, müssen Sie Ihre Quarantänetabelle in Campaign aktualisieren, indem Sie diese Empfänger finden und entfernen oder ihren **[!UICONTROL Status]** auf **[!UICONTROL Gültig]** ändern, damit der nächtliche Bereinigungs-Workflow sie entfernt.
 
