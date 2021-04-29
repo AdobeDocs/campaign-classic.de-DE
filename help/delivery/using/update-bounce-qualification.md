@@ -9,9 +9,9 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 7c161862a4ce2e86e7968fd61af6b8ca28d6623f
+source-git-commit: 378be6d4ef4ff69818d45c608a61b9a3506398be
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 51%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 51%
 
 ## Kontext
 
-Am 26. April 2021 führte ein weltweites Problem bei Apple dazu, dass einige E-Mail-Nachrichten, die an gültige Apple-E-Mail-Adressen gesendet wurden, fälschlicherweise als ungültige E-Mail-Adressen von Apple-Servern abgeschnitten wurden, wobei die folgende Antwort lautet:  &quot;550 5.1.1 <email address>: Sucherfolg des Benutzers, aber kein Benutzerdatensatz gefunden.&quot;
+Am 26. April 2021 führte ein weltweites Problem bei Apple dazu, dass einige E-Mail-Nachrichten, die an gültige Apple-E-Mail-Adressen gesendet wurden, fälschlicherweise als ungültige E-Mail-Adressen von Apple-Servern abgeschnitten wurden, wobei die folgende Antwort lautet:  &quot;550 5.1.1 &quot;E-Mail-Adresse&quot;: Sucherfolg des Benutzers, aber kein Benutzerdatensatz gefunden.&quot;
 
 Dieses Problem trat am 26.04.2010 auf und dauerte von 7.00 - 13.00 Uhr EST.
 
