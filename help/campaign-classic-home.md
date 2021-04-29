@@ -4,11 +4,11 @@ solution: Campaign Classic
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-translation-type: ht
-source-git-commit: bd6f77606517a0d3ceaa3c2b398733521af3ae43
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,15 +18,15 @@ ht-degree: 100%
 
 ## Neue Funktionen
 
+* **[Falsche feste ](https://helpx.adobe.com/de/campaign/kb/update-bounce-qualification.html)**<br/> Absprünge entfernenInformieren Sie sich, wie Sie falsche Absprünge nach einem Apple-Ausfall aktualisieren
+
 * **[Aktualisierung des APNs-Zertifikats](technotes/ios-certificate-update.md)**<br/> Am 29. März 2021 hat sich ein APNs-Update auf den iOS-Kanal von Campaign ausgewirkt. Sie müssen Ihre Konfiguration aktualisieren, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
 * **[Stellen Sie Verbindungen über IMS/Adobe ID her? Führen Sie ein Upgrade auf die neuesten Builds aus](integrations/using/about-adobe-id.md)**<br/> Wenn Sie IMS zur Verbindung mit Campaign verwenden, müssen Sie ein Upgrade durchführen, um auch nach dem** 30. Juni 2021 **eine Verbindung zu Campaign herstellen zu können.
 
 * **[Sichern Ihrer Campaign-Instanzen](technotes/acc-config-updates.md)**<br/> Aktualisieren Sie auf die neuesten Builds, um Ihre Campaign-Plattform zu sichern.
 
-* **[Entfernen falscher Hardbounces](https://helpx.adobe.com/de/campaign/kb/update-bounce-qualification.html)**<br/> Erfahren Sie, wie Sie falsche Hardbounces nach einem Gmail-Ausfall aktualisieren können
-
-* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsservice wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln.
+* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsdienst wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln.
 
 * **[Umstellung auf HTTP/2-basierte Provider-API für APNs](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)**<br/> Erfahren Sie, wie Sie vom veralteten Binärprotokoll zur HTTP/2-basierten Provider-API für APNs migrieren
 
