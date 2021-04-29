@@ -9,10 +9,10 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: ad7f0725a5ce1dea9b5b3ab236c839a816b29382
+source-git-commit: 98f55ee27a1172ce4a0590f46affe8947fd58d0f
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 53%
+source-wordcount: '428'
+ht-degree: 54%
 
 ---
 
@@ -22,7 +22,14 @@ ht-degree: 53%
 
 Bei Ausfall eines ISP können über Campaign versendete E-Mails nicht erfolgreich an ihren Empfänger zugestellt werden: Diese E-Mails werden fälschlicherweise als Bounces markiert.
 
-Am 26. April 2021 führte ein weltweites Problem bei Apple dazu, dass einige E-Mail-Nachrichten, die an gültige Apple-E-Mail-Adressen gesendet wurden, fälschlicherweise als ungültige E-Mail-Adressen von Apple-Servern abgeschnitten wurden, wobei die folgende Antwort lautet: *&quot;550 5.1.1 <email address>: Sucherfolg des Benutzers, aber kein Benutzerdatensatz gefunden.&quot;*Dieses Problem trat am 26.04.2010 auf und dauerte von 7.00 - 13.00 Uhr EST.
+Am 26. April 2021 führte ein weltweites Problem bei Apple dazu, dass einige E-Mail-Nachrichten, die an gültige Apple-E-Mail-Adressen gesendet wurden, fälschlicherweise als ungültige E-Mail-Adressen von Apple-Servern abgeschnitten wurden, wobei die folgende Antwort lautet:
+
+
+```
+“550 5.1.1 <email address>: user lookup success but no user record found.”
+```
+
+Dieses Problem trat am 26.04.2010 auf und dauerte von 7.00 - 13.00 Uhr EST.
 
 >[!NOTE]
 >
@@ -44,7 +51,7 @@ Auf der Grundlage des Zeitrahmens des Vorfalls werden im Folgenden die Richtlini
 
 * Für Campaign-Instanzen mit SMTP-Bounce-Antwortinformationen im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
-   * **Fehlertext (Quarantäne)** enthält &quot;Benutzersuche erfolgreich, aber kein Benutzerdatensatz gefunden&quot; UND  **Fehlertext (Quarantäne)** enthält &quot;support.apple.com&quot; **
+   * **Fehlertext (Quarantäne)** enthält &quot;Benutzersuche erfolgreich, aber kein Benutzerdatensatz gefunden&quot; UND  **Fehlertext (Quarantäne)** enthält &quot;support.apple.com&quot;
    * **Status aktualisieren (@lastModified)** am oder nach dem 26.04.2021 07:00:00 AM
    * **Status aktualisieren (@lastModified)** am oder vor dem 26.04.2021 01:00:00 PM
 
