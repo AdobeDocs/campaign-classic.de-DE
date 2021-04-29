@@ -9,23 +9,23 @@ translation-type: tm+mt
 source-git-commit: e1b09767a8eed3a7dc90e4db0429238d86d39570
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 14%
+ht-degree: 91%
 
 ---
 
-# Signaturproblem für verfolgte URLs {#tracked-urls}
+# Problem mit Signaturen getrackter URLs {#tracked-urls}
 
-Nach den letzten Änderungen können verfolgte URLs fehlschlagen, wenn die URL-Signatur in der Kampagne aktiv ist. Einige Postfächer können stärker betroffen sein als andere, da einige Firmen über spezielle Sicherheitstools verfügen, die sich auf Links auswirken und den URL-Signaturmechanismus ändern können.
+Im Zuge der jüngsten Änderungen kann bei getrackten URLs ein Fehler auftreten, wenn die Signatur für diese URLs in Campaign aktiv ist. Postfächer, bei denen spezielle Sicherheits-Tools verwendet werden, die sich auf Links auswirken und den Mechanismus für URL-Signaturen verändern, können hiervon stärker betroffen sein.
 
-Daher empfiehlt Adobe, den Signaturmechanismus für Verfolgungslinks zu deaktivieren. Mit diesem Verfahren werden alte Tracking-Links mit Ausnahme der Links behoben, die mit einem Escape der Dublette empfangen wurden.
+Es wird daher empfohlen, den Signaturmechanismus für Tracking-Links zu deaktivieren. Auf diese Weise wird das Problem bei alten Tracking-Links behoben (mit Ausnahme von empfangenden Links, die ein doppeltes Escape-Zeichen enthalten).
 
-Beachten Sie, dass Links zu Abmeldungen wie alle anderen Links fehlschlagen können. Die Häufigkeit ist von Host zu Host unterschiedlich, beträgt jedoch weniger als 1 %.
+Es gilt zu beachten, dass der Fehler bei Abmelde-Links ebenso auftreten kann wie bei allen anderen Links. Die Auftrittshäufigkeit ist dabei von Host zu Host unterschiedlich, beträgt jedoch weniger als 1 %.
 
 **Sind Sie betroffen?**
 
-Zur Verbesserung der Sicherheit wurde der Signaturmechanismus für Links in E-Mails in [Kampagne Gold Standard 8](../rn/using/gold-standard.md#gs8) - April 2020 eingeführt - und ist standardmäßig für alle Kunden aktiviert, die Build 19.1.4 (9032@3a9dc9c) und Kampagne 20.2 starten.
+Im April 2020 wurde [Campaign Gold Standard 8](../rn/using/gold-standard.md#gs8) zur Verbesserung der Sicherheit um den Signaturmechanismus für Tracking-Links in E-Mails erweitert. Für Kunden, die Build 19.1.4 (9032@3a9dc9c) oder höher bzw. Campaign 20.2 verwenden, ist der Mechanismus standardmäßig aktiviert.
 
-Wenn Ihre Umgebung mit einer der folgenden Versionen ausgeführt wird, können Sie betroffen sein:
+Kunden, deren Umgebung auf einer der folgenden Versionen basiert, sind möglicherweise betroffen:
 
 * Gold Standard 8 bis 11. [Mehr dazu](../rn/using/gold-standard.md#gs-8)
 * Kampagne 21.1.1 (Build 9277) bis Version 21.1.2 (Build 9282). [Mehr dazu](../rn/using/latest-release.md)
@@ -39,15 +39,15 @@ Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md
 
 **Wie wird die Aktualisierung durchgeführt?**
 
-Als **gehosteter Kunde** arbeitet die Adobe mit Ihnen zusammen, um Ihre Konfiguration in Kürze zu aktualisieren.
+Mit **gehosteten Kunden** arbeitet Adobe direkt zusammen, um die Aktualisierung ihrer Konfiguration zeitnah abzuschließen.
 
-Als **Vor-Ort-/Hybrid-Kunde** müssen Sie Ihre Konfiguration aktualisieren.
+Als **On-Premise-/Hybrid-Kunde** müssen Sie Ihre Konfiguration eigenständig aktualisieren.
 
-Gehen Sie wie folgt vor:
+Gehen Sie dazu wie folgt vor:
 
-1. Ändern Sie in der Konfigurationsdatei [server](../installation/using/the-server-configuration-file.md) (serverConf.xml) **signEmailLinks** in **false**.
-1. Starten Sie den **nlserver**-Dienst neu.
-1. Starten Sie auf dem Tracking-Server den Webserver neu (Apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows).
+1. Ändern Sie in der [Server-Konfigurationsdatei](../installation/using/the-server-configuration-file.md) (serverConf.xml) den Eintrag für **signEmailLinks** in **false**.
+1. Starten Sie den **nlserver**-Service neu.
+1. Starten Sie den Webserver (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows) auf dem Trackingserver neu.
 
    ```
    nlserver restart web
@@ -55,14 +55,14 @@ Gehen Sie wie folgt vor:
 
 >[!NOTE]
 >
->Die Datei **config-`<instance>`.xml** setzt die **serverConf.xml**-Einstellungen außer Kraft. Wenn **signEmailLinks** in **config-`<instance>`.xml** vorhanden ist (wobei **instance** der Name Ihrer Instanz ist), muss es auch in **false** umgewandelt werden.
+>Mit der Datei **config-`<instance>`.xml** werden die in **serverConf.xml** enthaltenen Einstellungen überschrieben. Sofern der Eintrag **signEmailLinks** in **config-`<instance>`.xml** vorhanden ist (wobei **instance** den Namen Ihrer Instanz angibt), muss dieser ebenfalls in **false** geändert werden.
 
 
 **Wie wirkt sich das aus?**
 
-Die Wartungsarbeiten erfordern eine Ausfallzeit von maximal 25 Minuten. Während dieses Zeitraums funktionieren nicht alle Versand, Verfolgungslinks und API-Aufrufe.
+Für den Wartungsvorgang ist eine Stillstandszeit von maximal 25 Minuten einzuplanen. Während dieser funktionieren Versand, Tracking-Links und API-Aufrufe nicht.
 
-Nach Abschluss der Aktualisierung funktionieren alle Links erwartungsgemäß.
+Nach Abschluss der Aktualisierung funktionieren alle Links wieder ordnungsgemäß.
 
 >[!NOTE]
 >
