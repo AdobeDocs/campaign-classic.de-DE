@@ -5,9 +5,9 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 translation-type: tm+mt
-source-git-commit: 52341396fd85e470257e37a1d9404eae775acda8
+source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '288'
 ht-degree: 95%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 ## Neue Funktionen
 
-* **[Falsche feste ](https://helpx.adobe.com/de/campaign/kb/update-bounce-qualification.html)**<br/> Absprünge entfernenInformieren Sie sich, wie Sie falsche Absprünge nach einem Apple-Ausfall aktualisieren
+* **[Falsche feste ](delivery/using/update-bounce-qualification.md)**<br/> Absprünge entfernenInformieren Sie sich, wie Sie falsche Absprünge nach einem Apple-Ausfall aktualisieren
 
 * **[Aktualisierung des APNs-Zertifikats](technotes/ios-certificate-update.md)**<br/> Am 29. März 2021 hat sich ein APNs-Update auf den iOS-Kanal von Campaign ausgewirkt. Sie müssen Ihre Konfiguration aktualisieren, um einen Ausfall des iOS-Push-Kanals zu vermeiden.
 
