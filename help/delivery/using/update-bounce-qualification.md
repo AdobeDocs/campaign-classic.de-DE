@@ -9,7 +9,7 @@ topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
 translation-type: tm+mt
-source-git-commit: 9260b467119475e9e0352b6e521d6f2ca426165c
+source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 51%
@@ -53,7 +53,7 @@ Auf der Grundlage des Zeitrahmens des Vorfalls werden im Folgenden die Richtlini
 * Für Campaign-Instanzen mit Regelinformationen für eingehende E-Mails im Feld **[!UICONTROL Fehlertext]** der Quarantäneliste:
 
    * **Fehlertext (Quarantänetext)** enthält &quot;Momen_Code10_InvalidRecipient&quot;
-   * **E-Mail-Domäne (@Domäne)**  gleich icloud.com&quot; ODER E-Mail-Domäne (@Domäne) gleich me.com&quot; ODER E-Mail-Domäne (@Domäne) gleich mac.com&quot;
+   * **E-Mail-Domäne (@Domäne)** gleich icloud.com ODER  **E-Mail-Domäne (@Domäne)** gleich me.com ODER  **E-Mail-Domäne (@Domäne)** gleich mac.com
    * **Status aktualisieren (@lastModified)** am oder nach dem 26.04.2021 07:00:00 AM
    * **Status aktualisieren (@lastModified)** am oder vor dem 26.04.2021 01:00:00 PM
 
