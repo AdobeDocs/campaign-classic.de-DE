@@ -7,15 +7,15 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 94a1f00d-e952-4edd-9012-f71c87b897ca
-translation-type: ht
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
-workflow-type: ht
-source-wordcount: '355'
+translation-type: tm+mt
+source-git-commit: 3e3a5250f165677026557a4e2249fc683aa23d57
+workflow-type: tm+mt
+source-wordcount: '354'
 ht-degree: 100%
 
 ---
 
-# Campaign und Microsoft Dynamics 365 verbinden{#connect-to-msdyn}
+# Campaign und Salesforce.com verbinden{#connect-to-sfdc}
 
 Auf dieser Seite erfahren Sie, wie Sie Campaign Classic mit **Salesforce** verbinden.
 
@@ -34,19 +34,20 @@ Gehen Sie wie folgt vor, um CRM-Connector für Salesforce zu konfigurieren:
    Um dieses externe Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
    * **[!UICONTROL Konto]**
-   Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
+
+Konto, mit dem die Anmeldung bei Salesforce CRM erfolgt
 
    * **[!UICONTROL Passwort]**
-   Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
+Passwort, mit dem die Anmeldung bei Salesforce CRM erfolgt.
 
    * **[!UICONTROL Clientkennung]**
-   Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Informationen darüber, wo Sie Ihre Client-Kennung finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL Sicherheits-Token]**
-   Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
+Informationen darüber, wo Sie Ihr Security-Token finden, erfahren Sie auf dieser [Seite](https://help.salesforce.com/articleView?id=000205876&amp;type=1).
 
    * **[!UICONTROL API-Version]**
-   Wählen Sie die Version der API aus.
+Wählen Sie die Version der API aus.
 1. Führen Sie den Konfigurationsassistenten aus, um die Tabelle mit verfügbaren CRMs zu generieren: Mit dem Konfigurationsassistenten können Sie Tabellen erfassen und das passende Schema erstellen.
 
    ![](assets/crm_connectors_sfdc_launch.png)
