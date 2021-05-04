@@ -7,11 +7,11 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -115,7 +115,7 @@ Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterf�
 
       ![](assets/deliv_coup_11.png)
 
-      Der Gutschein wird in die Nachricht als Code eingef체gt und nicht mit dem von Ihnen zugewiesenen Namen. Der Code wird innerhalb des Campaign-Standard-Datenmodells verwendet.
+      Der Coupon wird als Code und nicht als Name in die Nachricht eingef체gt. Der Code wird im Datenmodell der Kampagne verwendet.
    ![](assets/deliv_coup_12.png)
 
 1. F체hren Sie einen Test durch, um den von Ihnen dem Gutschein zugewiesenen Namen zu 체berpr체fen. W채hlen Sie dazu im Tab **[!UICONTROL Vorschau]** die Option **[!UICONTROL Personalisierung testen]** und danach einen Empf채nger f체r den Test aus.
