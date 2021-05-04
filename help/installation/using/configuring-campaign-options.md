@@ -6,14 +6,14 @@ description: Erfahren Sie, wie Sie die Optionen für die Kampagne konfigurieren
 audience: installation
 content-type: reference
 topic-tags: appendices
+exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
 translation-type: tm+mt
-source-git-commit: a9d58e25ab17baaabf4ff8c109b53e83c7d93218
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
 workflow-type: tm+mt
 source-wordcount: '3930'
-ht-degree: 12%
+ht-degree: 11%
 
 ---
-
 
 # Liste der Optionen von Campaign Classic{#configuring-campaign-options}
 
@@ -53,7 +53,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
-   <td><p> Ermöglicht es dem für den Versand zuständigen Operator, den Senden zu bestätigen, wenn ein bestimmter Operator oder eine bestimmte Benutzergruppe zum Starten eines Versands in den Eigenschaften des Versands vorgesehen ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1"als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0"ein.</p><p> Der Prozess zur Bestätigung des Sendevorgangs funktioniert dann standardmäßig: Nur der für den Versand bestimmte Operator oder die Benutzergruppe in den Eigenschaften des Versands (oder ein Administrator) kann den Versand bestätigen und durchführen. Siehe <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesen Abschnitt</a>.</p> </td> 
+   <td><p> Ermöglicht es dem für den Versand zuständigen Operator, den Senden zu bestätigen, wenn ein bestimmter Operator oder eine bestimmte Benutzergruppe zum Starten eines Versands in den Eigenschaften des Versands vorgesehen ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1"als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0"ein.</p><p> Der Prozess zur Bestätigung des Sendevorgangs funktioniert dann standardmäßig: Nur der für den Versand bestimmte Operator oder die Benutzergruppe in den Eigenschaften des Versands (oder ein Administrator) kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie in <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesem Abschnitt</a>.</p> </td> 
    <tr> 
    <td> <span class="uicontrol">Nms_DefaultRcpSchema</span> <br /> </td> 
    <td> Adobe Campaign verwendet eine globale Variable "Nms_DefaultRcpSchema", um mit der standardmäßigen Empfänger-Datenbank (nms:Empfänger) zu kommunizieren.<br /> Der Optionswert muss mit dem Namen des Schemas übereinstimmen, der der Tabelle des externen Empfängers entspricht.<br /> </td> 
@@ -283,11 +283,11 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  <tbody> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDir</span> <br /> </td> 
-   <td> Speicherort der Veröffentlichungsressourcen in der Adobe Campaign-Client-Konsole. Siehe <a href="../../delivery/using/formatting.md#image-referencing">diesen Abschnitt</a>.<br /> </td> 
+   <td> Speicherort der Veröffentlichungsressourcen in der Adobe Campaign-Client-Konsole. Weitere Informationen finden Sie in <a href="../../delivery/using/formatting.md#image-referencing">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NcmRessourcesDirPreview</span> <br /> </td> 
-   <td> Speicherort der Ressourcen für die Vorschau in der Adobe Campaign-Client-Konsole. Siehe <a href="../../delivery/using/formatting.md#image-referencing">diesen Abschnitt</a>.<br /> </td> 
+   <td> Speicherort der Ressourcen für die Vorschau in der Adobe Campaign-Client-Konsole. Weitere Informationen finden Sie in <a href="../../delivery/using/formatting.md#image-referencing">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsDelivery_DefaultIgnoredImage</span> <br /> </td> 
@@ -627,11 +627,11 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr>  
     <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceUser</span> <br /> </td> 
-   <td> Name des Tablespace, der die Daten der Adobe Campaign-Standardtabellen enthalten soll.<br />Siehe  <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
+   <td> Name des Tablespace, der die Daten der Adobe Campaign-OOTB-Tabellen enthalten soll.<br />Siehe  <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceIndex</span> <br /> </td> 
-   <td> Tablespace-Name für die Standardtabellen-Indexe in Adobe Campaign.<br />Siehe  <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
+   <td> Name des Tablespace, der die Indizes der Adobe Campaign-OOTB-Tabellen enthalten soll.<br />Siehe  <a href="../../installation/using/creating-and-configuring-the-database.md">Erstellen und Konfigurieren der Datenbank</a>.</td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">WdbcOptions_TableSpaceWork</span> <br /> </td> 
@@ -683,7 +683,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
     <ul> 
      <li> <p> <span class="uicontrol">Datentyp:</span> Integer</p> </li> 
      <li> <p> <span class="uicontrol">Wert (Text)</span> : 1 </p> </li> 
-    </ul> Diese Option sollte nur verwendet werden, wenn die vordefinierte Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /><a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure"> Weitere Informationen hierzu finden Sie in diesem Abschnitt</a>.<br /> </td> 
+    </ul> Diese Option sollte nur verwendet werden, wenn die vordefinierte Navigationsstruktur zu vielen Änderungen unterzogen wurde.<br /> Weiterführende Informationen hierzu finden Sie in <a href="../../migration/using/specific-configurations-in-v5-11.md#campaign-vseven-tree-structure">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">NmsLastErrorStatCoalesce</span> <br /> </td> 
@@ -728,11 +728,11 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_EdgeServer</span> <br /> </td> 
-   <td> Adobe Target-Server, der für die Integration verwendet wird. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Target-Domänenserver, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Siehe diesen Abschnitt</a>.<br /> </td> 
+   <td> Adobe Target-Server, der für die Integration verwendet wird. Diese Option ist bereits standardmäßig ausgewählt. Dieser Wert entspricht dem Adobe Target-Domänenserver, gefolgt vom Wert /m2. Beispiel: tt.omtrdc.net/m2.<br /> Weitere Informationen finden Sie in <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">TNT_TenantName</span> <br /> </td> 
-   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /><a href="../../integrations/using/configuring-the-integration-with-adobe-target.md"> Siehe diesen Abschnitt</a>.<br /> </td> 
+   <td> Name der Adobe Target-Organisation. Dieser Wert entspricht dem Adobe-Target-Client-Namen.<br /> Weitere Informationen finden Sie in <a href="../../integrations/using/configuring-the-integration-with-adobe-target.md">diesem Abschnitt</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">AAM_DataSourceId</span> <br /> </td> 
@@ -1010,7 +1010,7 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
  </tbody> 
 </table>
 
-## Webformulare {#web-forms}
+## Web-Formulare {#web-forms}
 
 <table> 
  <thead> 
@@ -1042,4 +1042,3 @@ Einige von ihnen sind bei der Installation der Kampagne integriert, andere könn
   </tr> 
  </tbody> 
 </table>
-
