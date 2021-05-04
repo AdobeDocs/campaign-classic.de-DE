@@ -6,11 +6,11 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a5da3f29-5eab-428c-b7c3-d9e4243fe628
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '596'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
+workflow-type: tm+mt
+source-wordcount: '593'
+ht-degree: 96%
 
 ---
 
@@ -26,7 +26,7 @@ Mit einer [Versandvorlage](../../delivery/using/creating-a-delivery-template.md)
 
 Wenn Sie mehrere Marken in Adobe Campaign verwalten, empfiehlt Adobe die Zuweisung einer Subdomain pro Marke. Eine Bank kann beispielsweise für jede ihrer regionalen Niederlassungen über eine Subdomain verfügen. Angenommen die Domain einer Bank heißt bluebank.com, dann könnten ihre Subdomains @ny.bluebank.com, @ma.bluebank.com, @ca.bluebank.com usw. lauten. Mit einer Versandvorlage pro Subdomain können Sie stets die richtigen vorkonfigurierten Parameter für jede Marke verwenden, um Fehler zu verhindern und Zeit zu sparen.
 
-**Tipp**: Zur Vermeidung von Konfigurationsfehlern in Campaign Standard wird empfohlen, keine neuen Vorlagen zu erstellen, sondern native Vorlagen zu duplizieren und die Eigenschaften nach Bedarf anzupassen.
+**Tipp**: Um Konfigurationsfehler zu vermeiden, sollten Sie eine native Vorlage Duplikat erstellen und deren Eigenschaften ändern, anstatt eine neue Vorlage zu erstellen.
 
 ## Konfigurieren von Adressen
 
