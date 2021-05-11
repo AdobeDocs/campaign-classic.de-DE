@@ -8,9 +8,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 translation-type: tm+mt
-source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
+source-git-commit: 62b2fdd807a654ab81d19a1b5c0d8ac88648e45c
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '542'
 ht-degree: 92%
 
 ---
@@ -273,7 +273,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 
-Für die Verwendung der Kampagne Client Console sind die folgenden Betriebssysteme und Browser erforderlich.
+:Warnung: Für die Verwendung der Kampagne Client Console sind die folgenden Betriebssysteme und Browser erforderlich.
 
 ### Betriebssysteme
 
@@ -284,8 +284,6 @@ Für die Verwendung der Kampagne Client Console sind die folgenden Betriebssyste
 <td>
 <p>2016</p>
 <p>2012</p>
-</td>
-<td>
 </td>
 </tr>
 <tr>
@@ -320,7 +318,6 @@ Für die Verwendung der Kampagne Client Console sind die folgenden Betriebssyste
 </tr>
 </tbody>
 </table>
-
 
 ## Mobile SDK{#MobileSDK}
 
