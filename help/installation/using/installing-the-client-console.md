@@ -6,45 +6,45 @@ description: Erfahren Sie, wie Sie die Client-Konsole installieren
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
+exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
 translation-type: tm+mt
-source-git-commit: c96a7faf5c65848a3f383a5721bfa45048ecea57
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 7%
+source-wordcount: '1001'
+ht-degree: 6%
 
 ---
 
-
-# Installieren und Aktualisieren der Client-Konsole der Kampagne{#installing-the-client-console}
-
+# Installieren und Aktualisieren der Kampagne-Client-Konsole{#installing-the-client-console}
 
 Kampagne Client Console ist ein Rich-Client, mit dem Sie eine Verbindung zu den Anwendungsservern Ihrer Kampagne herstellen können.
 
-Bevor Sie beginnen, müssen Sie die Kampagne [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) überprüfen, um Ihre Kampagnen-Server-URL und Ihre Benutzeranmeldeinformationen abzurufen.
+Bevor Sie mit der Installation der Client-Konsole beginnen, müssen Sie Folgendes tun:
 
->[!CAUTION]
->
->Kampagne Client-Konsole und Anwendungsserver der Kampagne müssen mit derselben Produktversion ausgeführt werden. Adobe empfiehlt auch, denselben Produktaufbau zu verwenden.
-
-![](assets/do-not-localize/how-to-video.png) Erfahren Sie, wie Sie den Adobe Campaign-Client in  [Video installieren und einrichten](#video)
+* Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der Kompatibilitätsmatrix [a1/>](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* Abrufen der Kampagne-Server-URL
+* Benutzeranmeldeinformationen abrufen
 
 Die Installation oder Aktualisierung der Client-Konsole hängt von der Implementierung von Adobe Campaign Classic ab.
 Bitte lesen Sie die unten stehenden Details, um zu verstehen, was für Ihre Implementierung erforderlich ist.
 
+![](assets/do-not-localize/how-to-video.png) Erfahren Sie, wie Sie den Adobe Campaign-Client in  [Video installieren und einrichten](#video)
 
-## Von Adoben gehostete Implementierungen {#hosted-customers}
+>[!CAUTION]
+>
+>Kampagne Client Console und Kampagne Application Server müssen **auf derselben Produktversion** ausgeführt werden. Adobe empfiehlt außerdem dringend, **denselben Produktaufbau** zu verwenden. Erfahren Sie, wie Sie Ihre Kampagne Client- und Serverversionen in [diesem Abschnitt ](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) überprüfen.
 
-So installieren oder aktualisieren Sie Ihre Client-Konsole(n):
+## Von Adobe gehostete Implementierungen {#hosted-customers}
+
+Zeigt einen gehosteten Kunden an, haben Sie zwei Möglichkeiten, Ihre Client-Konsole(n) zu installieren oder zu aktualisieren:
 
 1. Adobe kann direkt bereitgestellt werden. Nach der Aktualisierung der Konsole werden Benutzer aufgefordert, die neueste Version der Client-Konsole in einem Popup-Fenster herunterzuladen.
 
-1. Sie können von [Software-Distribution](https://experience.adobe.com/#/downloads/content/software-distributsion/de/campaign.html) auf Ihre Client-Konsole(n) herunterladen
+1. Sie können von [Software-Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) auf Ihre Client-Konsole(n) herunterladen
 
-   **Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator auf allen Client-Konsolen bereitstellen**
+   **Benutzer benötigen Administratorrechte, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator auf allen Client-Konsolen bereitstellen**
 
-
-
-## Hybrid- und Voll-On-Premise-Implementierungen {#hybrid-onprem-customers}
+## Hybrid- und On-Premise-Implementierungen {#hybrid-onprem-customers}
 
 Damit Adobe Campaign-Benutzer sich bei der von Ihnen erstellten und konfigurierten Instanz anmelden können, müssen sie die Client-Konsole verwenden.
 
@@ -62,9 +62,10 @@ Dazu müssen Sie:
 
 1. Beginn Adobe Campaign-Server.
 
->[!CAUTION]
->
->  Adobe empfiehlt, die Option **[!UICONTROL Diese Frage]** nicht mehr auszuwählen, um sicherzustellen, dass alle Benutzer benachrichtigt werden, wenn eine neue Konsolenversion verfügbar ist.  Wenn diese Option aktiviert ist, wird der Benutzer nicht über neue verfügbare Versionen informiert.
+
+### Option &quot;Frage nicht mehr stellen&quot;
+
+Adobe empfiehlt, die Option **[!UICONTROL Diese Frage]** nicht mehr auszuwählen, um sicherzustellen, dass alle Benutzer benachrichtigt werden, wenn eine neue Konsolenversion verfügbar ist.  Wenn diese Option aktiviert ist, wird der Benutzer nicht über neue verfügbare Versionen informiert.
 
 Wenn **[!UICONTROL Diese Frage nicht mehr stellen]** ausgewählt wurde, können Sie diese Aufforderung zurücksetzen. Die folgenden Änderungen sollten nur Systemadministratoren vornehmen, die mit der Bearbeitung der Windows-Registrierung vertraut sind:
 
@@ -82,14 +83,14 @@ Wenn **[!UICONTROL Diese Frage nicht mehr stellen]** ausgewählt wurde, können 
 >
 >Wenn Sie eine aktualisierte Konsole auf eine vorhandene Implementierung anwenden, erhalten die Benutzer automatisch eine Aufforderung, ihre Client-Konsole zu aktualisieren. Wenn Sie die Kampagne zum ersten Mal implementieren, müssen die Benutzer die Konsole herunterladen. Details zu beiden Optionen finden Sie unten
 
-### Konsole aktualisieren - vorhandene Implementierung{#update-the-client-console}
+### Konsole für vorhandene Implementierung aktualisieren{#update-the-client-console}
 
 Sobald die Konsole im Serverordner der Kampagne verfügbar ist, werden die Benutzer aufgefordert, die neueste Clientkonsole in einem Popup-Fenster herunterzuladen.
 
 **Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator auf allen Client-Konsolen bereitstellen**
 
 
-### Konsole herunterladen - neue Implementierung{#download-the-client-console}
+### Konsole für neue Implementierung herunterladen{#download-the-client-console}
 
 Die Benutzer sollten nun die Konsole herunterladen und installieren, indem sie die folgenden Schritte ausführen:
 
@@ -150,13 +151,12 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 1. Geben Sie Ihre Anmeldedaten für den Benutzer ein und klicken Sie auf **[!UICONTROL Anmelden]**
 
 
-
 **Verwandte Themen**
 
 * [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
-* [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+* [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-## Tutorial
+## Anleitungsvideo
 
 In diesem Video wird gezeigt, wie der Adobe Campaign-Client installiert und eingerichtet wird.
 
