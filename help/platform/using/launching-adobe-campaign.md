@@ -7,17 +7,22 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '583'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 2c275751ab86e98652820bf461c617442480c725
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 97%
 
 ---
 
 # Starten von Adobe Campaign{#launching-adobe-campaign}
 
 Die Clientkonsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können. Auf [dieser Seite](../../installation/using/installing-the-client-console.md) erfahren Sie, wie Sie die Clientkonsole herunterladen und konfigurieren.
+
+
+>[!CAUTION]
+>
+>Überprüfen Sie die Systemkompatibilität und Kompatibilität mit Adobe Campaign Client Console in der Kompatibilitätsmatrix [a1/>](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
 ## Adobe Campaign starten {#starting-adobe-campaign}
 
