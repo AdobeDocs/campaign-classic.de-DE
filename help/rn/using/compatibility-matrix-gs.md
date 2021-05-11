@@ -3,15 +3,15 @@ solution: Campaign Classic
 product: campaign
 title: Kompatibilitätsmatrix für Campaign [!DNL Gold Standard]
 description: Campaign Classic-Kompatibilitätsmatrix für die  [!DNL Gold Standard] -Version
-feature: Overview
+feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
 translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: 2ce19e135ce1eb47d760c5407446312bc2d3c303
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 100%
+source-wordcount: '541'
+ht-degree: 92%
 
 ---
 
@@ -270,21 +270,27 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 </tbody>
 </table>
 
-## Betriebssysteme der Clientkonsole{#ClientConsoleoperatingsystems-gs}
+
+## Client-Konsole {#ClientConsoleoperatingsystems}
+
+Für die Verwendung der Kampagne Client Console sind die folgenden Betriebssysteme und Browser erforderlich.
+
+### Betriebssysteme
 
 <table>
 <tbody>
 <tr>
-<td>Windows Server</td>
+<td>Microsoft Windows Server</td>
 <td>
 <p>2016</p>
 <p>2012</p>
 </td>
+<td>
+</td>
 </tr>
 <tr>
-<td>Windows</td>
+<td>Microsoft Windows</td>
 <td>
-<p>Sieben</p>
 <p>8</p>
 <p>10 (empfohlen für japanische Instanzen)</p>
 </td>
@@ -292,7 +298,31 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 </tbody>
 </table>
 
-## Mobile SDK{#MobileSDK-gs}
+### Browser
+
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Neueste Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+## Mobile SDK{#MobileSDK}
 
 <table>
 <tbody>
@@ -313,11 +343,54 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 </tbody>
 </table>
 
-## Browser{#Browsers-gs}
+## Browser{#Browsers}
 
-Bei den folgenden Browsern wird die aktuelle Version unterstützt: Microsoft Edge, Mozilla Firefox, Google Chrome, Safari.
+Die folgenden Browser sind mit Kampagne für Web Access kompatibel.
 
-Internet Explorer 11 wird unterstützt.
+<table>
+<tbody>
+<tr>
+<td>
+<p>Microsoft Edge</p>
+</td>
+<td>
+<p>Neueste Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Mozilla Firefox</p>
+</td>
+<td>
+<p>Neueste Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Google Chrome</p>
+</td>
+<td>
+<p>Neueste Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Safari</p>
+</td>
+<td>
+<p>Neueste Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Microsoft Internet Explorer</p>
+</td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Mehr dazu{#Morelikethis-gs}
 
