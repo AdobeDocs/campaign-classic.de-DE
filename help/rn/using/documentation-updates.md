@@ -496,7 +496,7 @@ Es wurden weitere Informationen zu SOAP-Authentifizierungsmethoden für Transakt
 
 Die Apache-Konfigurationsschritte wurden aktualisiert. [Mehr dazu](../../installation/using/integration-into-a-web-server-for-linux.md)
 
-Eine neue Seite wurde hinzugefügt, einschließlich der Liste von Endpunkten für Classic. [Mehr dazu](../../installation/using/campaign-network-endpoints.md)
+Es wurde eine neue Seite mit der Liste der Endpunkte für Campaign Classic hinzugefügt. [Mehr dazu](../../installation/using/campaign-network-endpoints.md)
 
 Der Artikel zu den Best Practices für Datenpackages wurde aktualisiert. [Mehr dazu](../../configuration/using/data-model-best-practices.md)
 
