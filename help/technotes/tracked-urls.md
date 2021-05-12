@@ -5,11 +5,11 @@ title: Technote
 description: Technote
 hide: true
 hidefromtoc: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 51773f48bac90febe44c6796b8cc08fce072bab3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ Im April 2020 wurde [Campaign Gold Standard 8](../rn/using/gold-standard.md#gs8
 Kunden, deren Umgebung auf einer der folgenden Versionen basiert, sind möglicherweise betroffen:
 
 * Gold Standard 8 bis 11. [Mehr dazu](../rn/using/gold-standard.md#gs-8)
-* Kampagne 21.1.1 (Build 9277) bis Version 21.1.2 (Build 9282). [Mehr dazu](../rn/using/latest-release.md)
-* Kampagne 20.3.1 (Build 9228) bis Version 20.3.3 (Build 9234). [Mehr dazu](../rn/using/release--20-3.md)
-* Kampagne 20.2.1 (Build 9178) bis Version 20.2.4 (Build 9187). [Mehr dazu](../rn/using/release--20-2.md)
-* Kampagne 20.1.1 (Build 9122) bis Version 21.1.3 (Build 9124). [Mehr dazu](../rn/using/release--20-1.md)
-* Kampagne 19.2.2 (Build 9080) bis Version 19.2.3 (Build 9081). [Mehr dazu](../rn/using/release--19-2.md)
-* Kampagne 19.1.5 (Build 9033) bis Version 19.1.7 (Build 9036). [Mehr dazu](../rn/using/release--19-1.md)
+* Campaign 21.1.1 (Build 9277) bis Version 21.1.2 (Build 9282). [Mehr dazu](../rn/using/latest-release.md)
+* Campaign 20.3.1 (Build 9228) bis Version 20.3.3 (Build 9234). [Mehr dazu](../rn/using/release--20-3.md)
+* Campaign 20.2.1 (Build 9178) bis Version 20.2.4 (Build 9187). [Mehr dazu](../rn/using/release--20-2.md)
+* Campaign 20.1.1 (Build 9122) bis Version 21.1.3 (Build 9124). [Mehr dazu](../rn/using/release--20-1.md)
+* Campaign 19.2.2 (Build 9080) bis Version 19.2.3 (Build 9081). [Mehr dazu](../rn/using/release--19-2.md)
+* Campaign 19.1.5 (Build 9033) bis Version 19.1.7 (Build 9036). [Mehr dazu](../rn/using/release--19-1.md)
 
 Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen.
 
