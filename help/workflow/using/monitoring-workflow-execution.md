@@ -7,11 +7,11 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d5579fa1928888a088fe99b685f4d12bf2bde25b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2082'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -261,7 +261,7 @@ Folgende Ansichten stehen zur Verfügung:
 * **[!UICONTROL Wird ausgeführt]**: listet alle ausgeführten Workflows auf.
 * **[!UICONTROL Ausgesetzt]**: listet alle ausgesetzten Workflows auf.
 * **[!UICONTROL Fehlgeschlagen]**: listet alle fehlgeschlagenen Workflows auf.
-* **[!UICONTROL Start ausstehend]**: listet alle Workflows auf, die darauf warten, vom operationMgt-Prozess gestartet zu werden. Diese Ansicht ist nur für das **Marketing-Kampagnen**-Paket verfügbar (siehe [Integrierte Kampagnen installieren](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start ausstehend]**: listet alle Workflows auf, die darauf warten, vom operationMgt-Prozess gestartet zu werden. Diese Ansicht ist nur beim Paket **Marketing-Kampagnen** verfügbar (siehe [Installieren von nativen Campaign-Paketen](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
