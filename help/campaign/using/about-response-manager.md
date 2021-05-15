@@ -7,21 +7,18 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '439'
-ht-degree: 100%
+source-git-commit: dc3151a77350aa2b2acd989a57f5b489c1a98962
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 91%
 
 ---
 
-# Über die Reaktionsverwaltung{#about-response-manager}
+# Erste Schritte mit der Kampagne Reaktionsverwaltung{#about-response-manager}
 
-## Einleitung {#objectives}
+Adobe Campaign Angebot bietet ein Antwortmanagement-Add-On, mit dem Sie den Erfolg und die Rentabilität von Marketing-Kampagnen oder -Angebotsvorschlägen in KommunikationsKanälen messen können: E-Mail, Mobil, Direktwerbung usw.
 
-Adobe Campaign bietet eine Anwendung zur Reaktionsverwaltung (Response Manager), die die Messung des Erfolgs und der Rentabilität einer Marketingkampagne oder eines Angebotsvorschlags ermöglicht, unabhängig vom verwendeten Kommunikationskanal (E-Mail, Mobilgeräte, Telefon, Briefpost, Fax, Agentur usw.).
-
-## Hypothesenprinzip {#hypothesis-concept}
+## Hypothese {#hypothesis-concept}
 
 Um das Verhalten der Empfänger eines Angebots oder Versands vorherzusagen, können für einen bestimmten Zeitraum ab dem Kontaktdatum Hypothesen konfiguriert werden. Diese Hypothesen beziehen sich auf eine **Transaktionen**-Tabelle, in der Bestellungen und deren Details gespeichert werden.
 
@@ -41,7 +38,7 @@ Es ist zudem möglich, alle Reaktionen des gesamten Haushalts eines Empfängers 
 
 Jede Hypothese wird einer einzigen Transaktionstabelle zugeordnet. Ein Versand oder ein Angebot können jedoch mehreren Hypothesen zugeordnet werden.
 
-## Vorgehensweise {#method}
+## Umsetzung {#method}
 
 Lesen Sie vor der Nutzung von Response Manager den Abschnitt [Konfiguration](../../campaign/using/configuration.md) und nehmen Sie die notwendigen Einstellungen vor.
 
