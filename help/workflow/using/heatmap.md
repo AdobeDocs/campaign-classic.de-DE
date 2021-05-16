@@ -7,10 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: f1016ddf-0c87-4611-a878-d01f3684935f
-source-git-commit: 53d8e2ff56481497c7805b92a7885a662a1924cf
+source-git-commit: 527ac9f4e408228aaa1354693a191c1e77e76b68
 workflow-type: tm+mt
 source-wordcount: '1181'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -115,7 +115,7 @@ Im folgenden Beispiel werden zwischen 8:00 und 8:05 Uhr drei Workflows ausgefüh
 
 Es gibt zwei Hauptfälle, in denen die Campaign Workflow-Heatmap nützlich sein kann.
 
-### Verringerung der Anzahl gleichzeitig ablaufender Workflows {#reducing-the-number-of-concurrent-workflows}
+### Verringerung der Anzahl gleichzeitiger Workflows {#reducing-the-number-of-concurrent-workflows}
 
 Als Campaign-Administrator kann Ihnen die Workflow-HeatMap dabei helfen, die Auslastung der Instanz zu verstehen und vorhandene oder neue Workflows zu geeigneten Zeiten zu planen.
 
