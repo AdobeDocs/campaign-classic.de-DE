@@ -7,11 +7,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 4d9c5b24-83a2-4495-a56c-5bc376d69703
-translation-type: tm+mt
 source-git-commit: 2c275751ab86e98652820bf461c617442480c725
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '598'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +21,7 @@ Die Clientkonsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung z
 
 >[!CAUTION]
 >
->Überprüfen Sie die Systemkompatibilität und Kompatibilität mit Adobe Campaign Client Console in der Kompatibilitätsmatrix [a1/>](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+>Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit der Adobe Campaign-Client-Konsole in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
 ## Adobe Campaign starten {#starting-adobe-campaign}
 
@@ -34,7 +33,7 @@ Im Clientkonsole-Verbindungsfenster können Sie mithilfe Ihrer Benutzerkennung u
 
 ## Verbindung mit Adobe Campaign herstellen {#connecting-to-adobe-campaign}
 
-Sie können über ihre Adobe ID eine Verbindung mit Adobe Campaign herstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
+Sie können über Ihre Adobe ID eine Verbindung mit Adobe Campaign herstellen. Weiterführende Informationen hierzu finden Sie auf [dieser Seite](../../integrations/using/about-adobe-id.md).
 
 Die Verbindung kann auch mit einem spezifischen Login/Passwort hergestellt werden:
 
