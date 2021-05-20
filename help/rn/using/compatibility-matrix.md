@@ -7,11 +7,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-translation-type: tm+mt
 source-git-commit: 69f6fcd21b27f095781bca4a62153086382f3d7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -202,9 +201,9 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <tr>
 <td>Oracle</td>
 <td>
-<p>19 Cups</p>
-<p>18 Cups</p>
-<p>12 Cups</p>
+<p>19c</p>
+<p>18c</p>
+<p>12c</p>
 <p>11g</p>
 </td>
 </tr>
@@ -277,7 +276,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 
-:Warnung: Für die Verwendung der Kampagne Client Console sind die folgenden Betriebssysteme und Browser erforderlich.
+:Warnung: Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
 
 ### Betriebssysteme
 
@@ -339,7 +338,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## Browser{#Browsers}
 
-Die folgenden Browser sind mit Kampagne für Web Access kompatibel.
+Die folgenden Browser sind mit Campaign für Web-Zugriff kompatibel.
 
 <table>
 <tbody>
@@ -387,7 +386,7 @@ Die folgenden Browser sind mit Kampagne für Web Access kompatibel.
 </table>
 
 
-## Mehr dazu{#Morelikethis}
+## Ähnliche Themen{#Morelikethis}
 
 * [Versionshinweise zu Campaign Classic](../../rn/using/latest-release.md)
 * [Installationsanleitung](../../installation/using/general-architecture.md)
