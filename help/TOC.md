@@ -8,17 +8,17 @@ user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalü
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: 0bb3e853299c3ce0dc1bcbc2fd8a0bd4ef110bee
+source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
 workflow-type: tm+mt
-source-wordcount: '2521'
+source-wordcount: '2522'
 ht-degree: 99%
 
 ---
 
 
-# Handbuch zu Adobe Campaign Classic v7 {#using}
+# Dokumentation zu Adobe Campaign Classic v7 {#using}
 
-+ [Produktdokumentation](campaign-classic-home.md)
++ [Dokumentation zu Campaign v7](campaign-classic-home.md)
 + [Neueste Aktualisierungen](rn/using/documentation-updates.md)
 + Versionshinweise {#release-notes}
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
