@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-translation-type: ht
-source-git-commit: 2c47a3e42260a0f04d2c9a665f28c532212997f8
-workflow-type: ht
-source-wordcount: '191'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 96%
 
 ---
 
@@ -32,12 +31,11 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 >Wenn Sie sich über den Adobe Identity Service (IMS) mit Campaign verbinden, müssen Sie eine Aktualisierung auf den aktuellen Build durchführen, um sich nach dem **30. Juni 2021** mit Campaign verbinden zu können. Dieses Upgrade ist sowohl für den Campaign-Server als auch für die Client-Konsole zwingend erforderlich. Abhängig von Ihrer aktuellen Version müssen Sie auf eine der folgenden Versionen aktualisieren:
 >
 > * [Campaign [!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md)
-> * [Campaign-Version 20.3.3](../../rn/using/latest-release.md)
-> * [Campaign-Version 20.2.5](../../rn/using/release--20-2.md)
-> * [Campaign-Version 20.1.4](../../rn/using/release--20-1.md)
-> * [Campaign-Version 19.2.4](../../rn/using/release--19-2.md)
-> * [Campaign-Version 19.1.8](../../rn/using/release--19-1.md)
->
+* [Campaign-Version 20.3.3](../../rn/using/latest-release.md)
+* [Campaign-Version 20.2.5](../../rn/using/release--20-2.md)
+* [Campaign-Version 20.1.4](../../rn/using/release--20-1.md)
+* [Campaign-Version 19.2.4](../../rn/using/release--19-2.md)
+* [Campaign-Version 19.1.8](../../rn/using/release--19-1.md)
 
 
 
@@ -45,6 +43,6 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe-Campaign
 
 | Nützliche Seiten | Zusätzliche Ressourcen |
 |---|---|
-| [IMS konfigurieren](../../integrations/using/configuring-ims.md) | [Häufig gestellte Fragen zu Experience Cloud](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/faq.html) |
+| [IMS konfigurieren](../../integrations/using/configuring-ims.md) | [Häufig gestellte Fragen zu Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) |
 | [IMS implementieren](../../integrations/using/implementing-ims.md) | [Zugriffsverwaltung](../../platform/using/access-management.md) |
 | [Fehlerbehebung bei IMS](../../integrations/using/ims-troubleshooting.md) | [Installieren von Kampagnenkits](../../installation/using/installing-campaign-standard-packages.md) |
