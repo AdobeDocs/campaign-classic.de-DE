@@ -6,11 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '743'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +31,7 @@ Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Plattfo
 
 * Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Leistung der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../workflow/using/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
 
-* Als gehosteter Kunde können Sie die Funktionen des [Campaign Control Panels](https://docs.adobe.com/content/help/de-DE/control-panel/using/discover-control-panel/key-features.html) nutzen, um Ihre Plattform mit Hilfe der [Leistungsüberwachungsfunktionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/performance-monitoring/about-performance-monitoring.html) zu überwachen.
+* Wenn Sie berechtigt sind, können Sie [Funktionen des Campaign Control Panels](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) nutzen, um Ihre Plattform mithilfe der Funktionen [Leistungsüberwachung](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html) zu überwachen.
 
 ## Prüfen der Netzwerkkonfiguration {#network-config}
 
