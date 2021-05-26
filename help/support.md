@@ -5,11 +5,10 @@ title: 'Hilfe- und Support-Optionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '799'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +26,7 @@ Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Onl
     </tr>
 </table>
 
-## Häufige Probleme und Best Practices {#faq}
+## Allgemeine Probleme und Best Practices {#faq}
 
 <img src="platform/using/assets/do-not-localize/icon-faq.svg" width="60px">
 
@@ -95,7 +94,7 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
 ### Was ist das Control Panel?
 
 Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign Classic effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen.
-[Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/discover-control-panel/key-features.html), um weitere Informationen zu erhalten.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), um weitere Informationen zu erhalten.
 
 >[!NOTE]
 >
@@ -105,29 +104,30 @@ Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign
 
 ### Zugriff auf das Control Panel
 
-Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/discover-control-panel/accessing-control-panel.html), um weitere Informationen zu erhalten.
+Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html), um weitere Informationen zu erhalten.
 
 ### Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/faq.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ### SFTP-Verwaltung
 
-Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen sowie IP-Adressen auf der Zulassungsliste und öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://docs.adobe.com/content/help/de-DE/control-panel/using/sftp-management/about-sftp-management.html), um weitere Informationen zu erhalten.
+Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen sowie IP-Adressen auf der Zulassungsliste und öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html), um weitere Informationen zu erhalten.
 
 ### Sub-Domains und Zertifikate
 
-Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Mehr dazu:
-* [Sub-Domain-Branding](https://docs.adobe.com/content/help/de-DE/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [Einrichten einer neuen Sub-Domain](https://docs.adobe.com/content/help/de-DE/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Überwachen von SSL-Zertifikaten](https://docs.adobe.com/content/help/de-DE/control-panel/using/subdomains-and-certificates/renewing-subdomain-certificate.html)
+Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Weitere Informationen finden Sie auf diesen Seiten:
+* [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
+* [Einrichten einer neuen Sub-Domain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
+* [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
 
 ### Instanzeneinstellungen
 
-Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Control Panel verwalten. Mehr dazu:
-* [IP auf der Zulassungsliste](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/ip-whitelisting-instance-access.html)
-* [URL-Genehmigungen](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/url-permissions.html)
-* [Details der Instanz](https://docs.adobe.com/content/help/de-DE/control-panel/using/instances-settings/instance-details.html)
+Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Control Panel verwalten. Weitere Informationen finden Sie auf diesen Seiten:
+* [Fügen Sie IPs auf der Zulassungsliste hinzu, um auf Ihre Campaign-Instanz(en) zuzugreifen. ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) 
+* [Verwalten von URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+* [Details der Instanz aufrufen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
+* [Verwalten von GPG-Schlüsseln für die Datenverschlüsselung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
 
 ## Hilfe anfordern {#support}
 
@@ -142,10 +142,10 @@ Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorh
 ### Aufrufen des Campaign-Download-Centers
 
 Ab Juni 2020 ersetzt die Experience Cloud-Lösung &quot;Software-Verteilung&quot; das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html), um auf die Softwareverteilung von Experience Cloud zuzugreifen.
-Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](https://docs.adobe.com/content/help/de-DE/experience-cloud/software-distribution/home.html).
+Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 ### Erstellen Sie ein Ticket oder starten Sie einen Chat
 
 Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
+Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
