@@ -7,11 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '936'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '934'
+ht-degree: 99%
 
 ---
 
@@ -27,7 +26,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 In diesem täglich ausgeführten Workflow werden alle Empfänger ausgewählt, deren Geburtstag dem aktuellen Datum entspricht.
 
-![](assets/do-not-localize/how-to-video.png) Dieses Anwendungsbeispiel ist auch als Video unter [Erstellen eines Workflows](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) verfügbar.
+![](assets/do-not-localize/how-to-video.png) Dieses Anwendungsbeispiel ist auch als Video unter [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) verfügbar.
 
 Erstellen Sie eine Kampagne und klicken Sie auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]**. Lesen Sie diesbezüglich auch den Abschnitt [Erstellen einer Hauptzielgruppe im Workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
