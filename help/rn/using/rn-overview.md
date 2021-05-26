@@ -3,15 +3,14 @@ solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Upgrades
 description: Weiterführende Informationen zu Campaign Classic-Upgrades
-feature: Overview
+feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-translation-type: tm+mt
-source-git-commit: 8294b522efb51cb1b961c9284675c7966132e957
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 100%
+source-wordcount: '413'
+ht-degree: 98%
 
 ---
 
@@ -39,7 +38,7 @@ Der **aktuelle RC-Build** ist [Campaign Classic-Version 21.1](../../rn/using/la
 
 ![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Bestehende Implementierungen müssen aktualisiert werden.
 
-## Empfehlungen{#recommendations}
+## Empfehlungen      {#recommendations}
 
 Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Build auf allen Servern installieren, die mit derselben Client-Konfiguration ausgeführt werden.
 
@@ -63,7 +62,7 @@ Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch vom [!D
 ## Support und andere nützliche Links{#support}
 
 * [Hilfe und Support](../../support.md)
-* [Control Panel-Versionen](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html)
+* [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
 * [Aktuelle Dokumentationsaktualisierungen](../../rn/using/documentation-updates.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
 
