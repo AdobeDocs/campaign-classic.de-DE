@@ -2,30 +2,29 @@
 solution: Campaign Classic
 product: campaign
 title: Externe Konten
-description: Erfahren Sie, wie Sie Externe Konti erstellen
+description: Erfahren Sie, wie Sie externe Konten erstellen
 audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-translation-type: tm+mt
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 81%
+source-wordcount: '1732'
+ht-degree: 79%
 
 ---
 
 # Externe Konten{#external-accounts}
 
-Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Um Verbindungen zu externen Systemen einzurichten, können Sie neue Externe Konti erstellen.
+Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Um Verbindungen mit externen Systemen einzurichten, können Sie neue externe Konten erstellen.
 
-Externe Konten werden von technischen Prozessen, wie technischen Workflows oder Kampagnen-Workflows, verwendet. Wenn Sie beispielsweise eine Dateiübertragung in einem Workflow oder einen Datenaustausch mit einer anderen Anwendung (Adobe Target, Experience Manager usw.) einrichten, müssen Sie ein Externe Konto auswählen.
+Externe Konten werden von technischen Prozessen, wie technischen Workflows oder Kampagnen-Workflows, verwendet. Wenn Sie beispielsweise eine Dateiübertragung in einem Workflow oder einen Datenaustausch mit einer anderen Anwendung (Adobe Target, Experience Manager usw.) einrichten, müssen Sie ein externes Konto auswählen.
 
-## Externe Konto {#creating-an-external-account} erstellen
+## Externes Konto erstellen {#creating-an-external-account}
 
-Gehen Sie wie folgt vor, um ein neues Externe Konto zu erstellen. Detaillierte Einstellungen hängen vom Typ des Externen Kontos ab.
+Gehen Sie wie folgt vor, um ein neues externes Konto zu erstellen. Detaillierte Einstellungen hängen vom Typ des externen Kontos ab.
 
-1. Wählen Sie in der Kampagne **[!UICONTROL Explorer]** **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL Externe Konti]**.
+1. Wählen Sie in Campaign **[!UICONTROL Explorer]** **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
    ![](assets/ext_account_1.png)
 
@@ -33,18 +32,18 @@ Gehen Sie wie folgt vor, um ein neues Externe Konto zu erstellen. Detaillierte E
 
    ![](assets/ext_account_2.png)
 
-1. Geben Sie eine **[!UICONTROL Beschriftung]** und eine **[!UICONTROL Interne Bezeichnung]** ein.
+1. Geben Sie einen **[!UICONTROL Titel]** und einen **[!UICONTROL Internen Namen]** ein.
 1. Wählen Sie den **[!UICONTROL Typ]** des externen Kontos aus, den Sie erstellen möchten.
 1. Konfigurieren Sie den Zugriff auf das Konto, indem Sie die Anmeldeinformationen entsprechend dem gewählten externen Kontotyp angeben.
 
    Die nötigen Informationen werden normalerweise vom Anbieter des Servers bereitgestellt, mit dem Sie eine Verbindung herstellen möchten.
 
-1. Aktivieren Sie die Option **[!UICONTROL Aktiviert]**, um die Verbindung zu aktivieren.
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Aktivieren Sie die Option **[!UICONTROL Aktiviert]** , um die Verbindung zu aktivieren.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Das Externe Konto wird erstellt und der Liste &quot;Externe Konti&quot;hinzugefügt.
+Das externe Konto wird erstellt und der Liste der externen Konten hinzugefügt.
 
-## Kampagne-spezifische Externe Konti
+## Kampagnenspezifische externe Konten
 
 ### Bounce Messages {#bounce-mails-external-account}
 
@@ -76,7 +75,7 @@ Um das externe Konto für **[!UICONTROL Bounce-Messages (defaultPopAccount)]** z
 
    Typ der gewählten Verschlüsselung: **[!UICONTROL Standardmäßig]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** oder **[!UICONTROL POP3S]**.
 
-### Routing            {#routing-external-account}
+### Routing             {#routing-external-account}
 
 Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campaign verfügbaren Kanal abhängig von den installierten Packages konfigurieren.
 
@@ -84,9 +83,9 @@ Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campa
 
 Die folgenden Kanäle können konfiguriert werden:
 
-* [Email](../../installation/using/deploying-an-instance.md#email-channel-parameters)
+* [E-Mail](../../installation/using/deploying-an-instance.md#email-channel-parameters)
 * [Mobiltelefon (SMS)](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account)
-* [Phone](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
+* [Telefon](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Briefpost](../../delivery/using/about-direct-mail-channel.md)
 * [Agentur](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels)
 * [Facebook](../../social/using/publishing-on-facebook-walls.md#delegating-write-access-to-adobe-campaign)
@@ -116,7 +115,7 @@ Wenn Sie eine aufgegliederte Architektur haben, müssen Sie die mit der Kontroll
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../message-center/using/creating-a-shared-connection.md#control-instance).
 
 
-## Zugang zu externen Externen Konti
+## Zugriff auf externe Systemkonten
 
 ### FTP {#ftp-external-account}
 
@@ -172,13 +171,13 @@ Mit dem externen SFTP-Konto können Sie den Zugriff auf einen Server außerhalb 
 
 ### Externe Datenbank (FDA) {#external-database-external-account}
 
-Verwenden Sie das Externe Konto **Externe Datenbank**, um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option &quot;Federated Data Access (FDA)&quot;in [diesem Abschnitt](../../installation/using/about-fda.md).
+Verwenden Sie das externe Konto **Externe Datenbank**, um eine Verbindung zu einer externen Datenbank herzustellen. Weitere Informationen zur Option Federated Data Access (FDA) finden Sie in [diesem Abschnitt](../../installation/using/about-fda.md).
 
-Die mit der Kampagne kompatiblen externen Datenbanken werden in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) aufgeführt.
+Externe Datenbanken, die mit Campaign kompatibel sind, sind in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) aufgeführt.
 
 ![](assets/ext_account_11.png)
 
-Die Konfigurationseinstellungen des Externen Kontos hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
+Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 * Zugriff auf [Azure synapse](../../installation/using/configure-fda-synapse.md) konfigurieren
 * Zugriff auf [Hadoop](../../installation/using/configure-fda-hadoop.md) konfigurieren
@@ -189,7 +188,7 @@ Die Konfigurationseinstellungen des Externen Kontos hängen von der Datenbank-En
 * Zugriff auf [Sybase IQ](../../installation/using/configure-fda-sybase.md) konfigurieren
 * Zugriff auf [Teradata](../../installation/using/configure-fda-teradata.md) konfigurieren
 
-### Facebook-Verbindung {#facebook-connect-external-account}
+### Facebook Connect {#facebook-connect-external-account}
 
 Mit dem externen Konto **[!UICONTROL Facebook Connect]** können Sie in Facebook-Anwendungen personalisierte Inhalte anzeigen. Dadurch wird es einfacher, über dieses soziale Netzwerk potenzielle Kunden zu gewinnen.
 
@@ -213,7 +212,7 @@ Wenn Sie den Modus &quot;Auf dieser Instanz gehostet&quot; gewählt haben, muss 
 
 Informationen zu diesen Zugangsdaten finden Sie auf dieser [Seite](https://developers.facebook.com/docs/facebook-login/access-tokens).
 
-## Externe Konti zur Integration von Adobe-Lösungen
+## Adobe Solution Integration - Externe Konten
 
 ### Adobe Experience Cloud {#adobe-experience-cloud-external-account}
 
@@ -243,7 +242,7 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
 * **[!UICONTROL Kennung der IMS-Organisation]**
 
-   ID Ihrer IMS-Organisation. Um Ihre Organisations-ID zu finden, gehen Sie auf diese [Seite](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/faq.html) (**Wo finde ich meine IMS-Organisations-ID?**).
+   Kennung Ihrer IMS-Organisation. Ihre Organisations-ID finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/faq.html) (**Wo finde ich meine IMS-Organisations-ID?**).
 
 * **[!UICONTROL Zuordnungsmaske]**
 
@@ -257,7 +256,7 @@ Um über eine Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herzustellen, 
 
    Name Ihres Adobe Experience Cloud-Mandanten
 
-Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../integrations/using/configuring-ims.md).
+Weitere Informationen zu dieser Konfiguration finden Sie auf [dieser Seite](../../integrations/using/configuring-ims.md).
 
 ## Web Analytics {#web-analytics-external-account}
 
@@ -289,17 +288,17 @@ Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../inte
 
 
 
-## CRM Connector-Externe Konti
+## Externe CRM-Connector-Konten
 
 ### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
 Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
 
-Erfahren Sie mehr über Kampagne - Microsoft Dynamics CRM Connector in dieser [Seite](../../platform/using/crm-ms-dynamics.md).
+Weitere Informationen zum CRM-Connector für Campaign mit Microsoft Dynamics finden Sie auf dieser [Seite](../../platform/using/crm-ms-dynamics.md).
 
 >[!NOTE]
 >
-> **[!UICONTROL Die Bereitstellungstypen]** für  **[!UICONTROL Office 365]** undOffice werden jetzt nicht mehr unterstützt. [Weitere Informationen](../../rn/using/deprecated-features.md).
+> **[!UICONTROL Die Bereitstellungstypen On-]** Premise und  **[!UICONTROL Office 365]**  sind jetzt veraltet. [Weitere Informationen](../../rn/using/deprecated-features.md).
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
 
@@ -379,7 +378,7 @@ Für dieses externe Konto müssen Sie Salesforce CRM mit dem Konfigurationsassis
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
 
-## Daten-Externe Konti übertragen
+## Externe Datenkonten übertragen
 
 ### Amazon Simple Storage Service (S3) {#amazon-simple-storage-service--s3--external-account}
 
@@ -413,17 +412,17 @@ Zum Einrichten dieses neuen externen Kontos benötigen Sie die folgenden Informa
 
 Informationen darüber, wo Sie die Kennung des Zugriffsschlüssels und den geheimen Zugriffsschlüssel finden, erfahren Sie im [Handbuch](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) der Amazon-Webdienste.
 
-### Azurblauch-Datenspeicherung (#azure-blob-external-account)
+### Azure Blob Storage (#azure-blob-external-account)
 
-Das Externe Konto **Blaue Datenspeicherung** kann zum Importieren oder Exportieren von Daten in Adobe Campaign mithilfe einer Workflow-Aktivität **[!UICONTROL Übertragungsdatei]** verwendet werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
+Mit dem externen Konto **Azure Blob Storage** können Daten mithilfe einer Workflow-Aktivität vom Typ **[!UICONTROL Dateiübertragung]** in Adobe Campaign importiert oder exportiert werden. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/file-transfer.md).
 
 ![](assets/ext_account_23.png)
 
-Um das **[!UICONTROL Blaue Externe Konto]** für die Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen angeben:
+Um das externe Azure-Konto **[!UICONTROL für die Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Details angeben:]**
 
 * **[!UICONTROL Server]**
 
-   URL Ihres Azurblauch-Datenspeicherung-Servers.
+   URL Ihres Azure Blob Storage-Servers
 
 * **[!UICONTROL Verschlüsselung]**
 
@@ -431,4 +430,4 @@ Um das **[!UICONTROL Blaue Externe Konto]** für die Verwendung mit Adobe Campai
 
 * **[!UICONTROL Zugriffsschlüssel]**
 
-   Um zu wissen, wo Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden, lesen Sie diese [Seite](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   Informationen darüber, wo Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden, erfahren Sie auf dieser [Seite](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
