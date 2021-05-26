@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: a3e26cff-9609-4d91-8976-9213a30c3fd2
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '542'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 98%
 
 ---
 
@@ -19,9 +18,9 @@ ht-degree: 100%
 
 Nach Übermittlung dieses Antrags wird dieser von Adobe bearbeitet. Sie werden ersucht, Informationen bereitzustellen, und darauf hingewiesen, dass Sie die Konfiguration abschließen müssen:
 
-1. [Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
+1. [Schritt 1: Konfigurieren bzw. überprüfen Sie die externen Konten in Adobe Campaign.       ](#step-1--configure-or-check-the-external-accounts-in-adobe-campaign)
 1. [Schritt 2: Konfigurieren Sie die Datenquellen.](#step-2--configure-the-data-source)
-1. [Schritt 3: Konfigurieren Sie den Campaign Tracking Server.](#step-3--configure-campaign-tracking-server)
+1. [Schritt 3: Konfigurieren Sie den Campaign Tracking Server.       ](#step-3--configure-campaign-tracking-server)
 1. [Schritt 4: Konfigurieren Sie den Visitor-ID-Dienst.](#step-4--configure-the-visitor-id-service)
 
 >[!IMPORTANT]
@@ -79,7 +78,7 @@ So konfigurieren Sie die Datenquelle **[!UICONTROL Empfänger - Besucher-ID]**:
 
    ![](assets/aam_config_3.png)
 
-## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.     {#step-3--configure-campaign-tracking-server}
+## Schritt 3: Konfigurieren Sie den Campaign Tracking Server.      {#step-3--configure-campaign-tracking-server}
 
 Für die Konfiguration der Integration mit People Core Service oder Audience Manager muss auch der Campaign Tracking Server konfiguriert werden.
 
@@ -87,6 +86,6 @@ Der Campaign Tracking Server muss in der Domain (CNAME) registriert sein. Weiter
 
 ## Schritt 4: Konfigurieren Sie den Visitor-ID-Dienst.{#step-4--configure-the-visitor-id-service}
 
-Falls Ihr Visitor-ID-Dienst nie in Ihren Web-Parametern und Webseiten konfiguriert wurde, finden Sie im folgenden [Dokument](https://docs.adobe.com/content/help/de-DE/id-service/using/implementation/setup-aam-analytics.html) oder im folgenden [Video](https://helpx.adobe.com/de/marketing-cloud/how-to/email-marketing.html#step-two) nähere Informationen dazu .
+Falls Ihr Visitor-ID-Dienst nie in Ihren Web-Parametern und Webseiten konfiguriert wurde, finden Sie im folgenden [Dokument](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-aam-analytics.html) oder im folgenden [Video](https://helpx.adobe.com/de/marketing-cloud/how-to/email-marketing.html#step-two) nähere Informationen dazu .
 
 Die Konfiguration und Einrichtung sind jetzt abgeschlossen. Die Integration kann somit zum Import und Export von Audiences und Segmenten verwendet werden.
