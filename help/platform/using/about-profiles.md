@@ -7,11 +7,10 @@ feature: Profile, Audiences
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-translation-type: ht
-source-git-commit: c733b68a06fba9bb24cd1c1995ffc99a1277be87
-workflow-type: ht
-source-wordcount: '936'
-ht-degree: 100%
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+workflow-type: tm+mt
+source-wordcount: '925'
+ht-degree: 92%
 
 ---
 
@@ -91,10 +90,6 @@ Auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md) wird die all
 
 Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt werden.
 
-Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
-
-Wenn Sie auf AWS gehostet werden, können Sie die Anzahl der in Ihren Instanzen verwendeten aktiven Profile auch direkt über das Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de).
-
 Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
 
 Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typologieregeln, Quarantänen), werden nicht berücksichtigt. Ein Profil, das mehrere Sendungen erhalten hat, wird nur einmal gezählt.
@@ -103,7 +98,13 @@ Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typolog
 >
 >Die Kanäle Facebook und Twitter werden nicht berücksichtigt.
 
-Eine Übersicht über die **[!UICONTROL Anzahl der aktiven Profile]** erhalten Sie über das Menü **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]** in Campaign Die tatsächliche Zählung erfolgt über den [technischen Workflow](../../workflow/using/about-technical-workflows.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** (**[!UICONTROL billingActiveContactCount]**), der täglich ausgeführt wird. Dabei werden die neuen Daten für den aktuellen Zeitraum im Menü **[!UICONTROL Kundenmetriken]** zum vorhandenen Bericht hinzugefügt. Jeder Zeitraum hat eine Dauer von 12 Monaten.
+Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]** , um einen Überblick über die Anzahl der aktiven Profile zu erhalten. Die tatsächliche Anzahl wird von der **[!UICONTROL Anzahl der aktiven Abrechnungsprofile]** ([!UICONTROL billingActiveContactCount]) [technischer Workflow](../../workflow/using/about-technical-workflows.md) ausgeführt. Dieser Workflow wird täglich ausgeführt und fügt die neuen Daten zum vorhandenen Bericht für den aktuellen Zeitraum im Ordner **[!UICONTROL Kundenmetriken]** hinzu.
+
+Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
+
+>[!NOTE]
+>
+>Sie können die Anzahl der aktiven Profile in Ihrer Instanz auch direkt über das Campaign Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de).
 
 ## Anleitungsvideo {#create-profiles-video}
 
