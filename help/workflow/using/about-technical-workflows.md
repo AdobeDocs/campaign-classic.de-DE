@@ -7,11 +7,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '1826'
-ht-degree: 100%
+source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +33,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | Technischer Workflow | Package | Beschreibung  |
 |------|--------|-----------|
 | **Alias-Datenbereinigung** (aliasCleansing) | Versand | Dieser Workflow vereinheitlicht Aufzählungswerte. Er wird standardmäßig täglich um 3 Uhr morgens ausgelöst. |
-| **Abrechnung** (billing) | Versand | Dieser Workflow übermittelt per E-Mail den Aktivitätsbericht des Systems an den für die Abrechnungen verantwortlichen Benutzer. Er wird standardmäßig an jedem 25. des Monats ausgelöst. |
+| **Abrechnung** (billing) | Versand | Dieser Workflow sendet den Aktivitätsbericht des Systems per E-Mail an den fakturierungsverantwortlichen Benutzer (&#39;billing&#39;). Er wird am 25. jedes Monats in der Marketing-Instanz ausgelöst. |
 | **Berechnung der Twitter-Statistiken** (statsTwitter) | Social Media (Social Marketing) | Dieser Workflow berechnet Statistiken in Bezug auf Retweets und Besuchen auf Twitter. |
 | **Vorgänge bei Kampagnen** (operationMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow verwaltet Vorgänge in Marketing-Kampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Er erstellt darüber hinaus Workflows für wiederkehrende und periodische Kampagnen. |
 | **Erfassen von Daten für den HeatMap-Service** (collectDataHeatMapService) | Standardmäßig installiert | Dieser Workflow ruft die für den HeatMap-Service erforderlichen Daten ab. |
