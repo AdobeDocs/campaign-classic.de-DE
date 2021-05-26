@@ -7,10 +7,10 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: 6d5b8584-4aa1-4d9a-89d9-d41da75dd323
-source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 100%
+source-wordcount: '497'
+ht-degree: 98%
 
 ---
 
@@ -89,6 +89,5 @@ Weitere Anleitungsvideos zu Campaign finden Sie [hier](https://experienceleague.
 
 * [Anwendung automatischer Geschäftsregeln auf Sendungen über beliebige Kanäle](https://helpx.adobe.com/de/campaign/kb/simplifying-campaign-management-acc.html#Applyautomaticbusinessrulestodeliveriesonanychannel)
 
-* [Über Kampagnentypologien](../../campaign/using/pressure-rules.md)
+* [Erste Schritte mit Typologien und Ermüdungsverwaltung](../../campaign/using/pressure-rules.md)
 
-* [Verwalten der Marketingermüdung anhand von Druckregeln](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/orchestrating-campaigns/campaign-optimization/pressure-rules.html)
