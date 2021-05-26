@@ -7,11 +7,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-translation-type: ht
-source-git-commit: 326ccbad77f3bd03a8eba22d7714084d52d2f02b
-workflow-type: ht
-source-wordcount: '777'
-ht-degree: 100%
+source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+workflow-type: tm+mt
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +18,7 @@ ht-degree: 100%
 
 Adobe Experience Cloud ist ein umfassendes Set hervorragender integrierter Lösungen, die auf einer gemeinsamen Datenplattform mit gemeinsamen leistungsstarken Core Services aufbauen.
 
-Hier erfahren Sie mehr über die funktionalen Integrationen zwischen Adobe Campaign und den verschiedenen [Adobe Experience Cloud-Lösungen](https://docs.adobe.com/content/help/de-DE/core-services/interface/marketing-cloud-integrations.html) sowie [Core Services](https://docs.adobe.com/content/help/de-DE/core-services/interface/about-core-services/core-services.html). Anschließend können Sie Ihre Lösungsimplementierungen modernisieren und Experience Cloud einrichten, sodass Sie Funktionen wie beispielsweise Kundenattribute und Audiences verwenden können.
+Hier erfahren Sie mehr über die funktionalen Integrationen zwischen Adobe Campaign und den verschiedenen [Adobe Experience Cloud-Lösungen](https://experienceleague.adobe.com/docs/core-services/interface/marketing-cloud-integrations.html) sowie [Core Services](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html). Anschließend können Sie Ihre Lösungsimplementierungen modernisieren und Experience Cloud einrichten, sodass Sie Funktionen wie beispielsweise Kundenattribute und Audiences verwenden können.
 
 ![](assets/ExCloud-solutions.png)
 
@@ -34,17 +33,17 @@ Die vollständige Liste der Adobe-Lösungen und Core Services, die mit Adobe Cam
 
 Mehrere Lösungen können mit Adobe Experience Cloud verknüpft werden. Die **Organisation** ist die Kundenentität, mit der ein Administrator Gruppen und Benutzer konfigurieren und Single Sign-on (SSO) in Adobe Experience Cloud steuern kann. Die Organisation verhält sich wie ein Anmeldeunternehmen, das alle Experience Cloud-Produkte und -Lösungen abdeckt. Normalerweise besitzt eine Organisation den Namen ihres Unternehmens. Ein Unternehmen kann jedoch über mehrere Organisationen verfügen.
 
-Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe Experience Cloud werden im [Hilfeportal von Adobe Experience Cloud](https://docs.adobe.com/content/help/de-DE/core-services/interface/manage-users-and-products/organizations.html) erläutert.
+Die Verwaltung dieser Organisationen sowie die Verknüpfung von Konten mit Adobe Experience Cloud werden im [Hilfeportal von Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de) erläutert.
 
 ## Identitäts- und Cookie-Verwaltung {#id-and-cookies}
 
-Wenn Sie Adobe Campaign installieren oder eine bestehende Installation mit Adobe Experience Cloud integrieren, ist der [Adobe Experience Cloud Identity Service](https://docs.adobe.com/content/help/de-DE/id-service/using/home.html) aktiviert. Dieser Dienst ersetzt das permanente Cookie, das von Adobe Campaign in erster Linie für seine Tracking-Funktionen verwendet wird.
+Wenn Sie Adobe Campaign installieren oder eine bestehende Installation mit Adobe Experience Cloud integrieren, ist der [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) aktiviert. Dieser Dienst ersetzt das permanente Cookie, das von Adobe Campaign in erster Linie für seine Tracking-Funktionen verwendet wird.
 
 Der ID-Dienst (Adobe Experience Cloud Identity Service) liefert eine universelle und dauerhafte ID, mit der Ihre Besucher in allen Experience Cloud-Lösungen identifiziert werden können.
 
 Empfängern, die Trackinglogs generieren, wird eine eindeutige Visitor ID zugewiesen. Diese ID wird im Feld **[!UICONTROL Anforderer-UUID (@sourceID)]** der Tabelle **[!UICONTROL nms:trackingLogRcp]** gespeichert. **Die Tracking-Daten von Empfängern, die vor der Implementierung des Visitor ID-Diensts existierten, sind daher nicht mehr nutzbar**.
 
-Unter der Voraussetzung, dass sie denselben [CNAME](https://docs.adobe.com/content/help/de-DE/id-service/using/reference/analytics-reference/cname.html) aufweisen, erkennen die anderen Lösungen der Adobe-Experience-Cloud-Lösungen diese Kennung.
+Unter der Voraussetzung, dass sie denselben CNAME aufweisen, erkennen die anderen Lösungen der Adobe-Experience-Cloud-Lösungen diese Kennung. [Mehr dazu](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/cname.html)
 
 ## Experience Cloud-Integrationen {#experience-cloud-integrations}
 
