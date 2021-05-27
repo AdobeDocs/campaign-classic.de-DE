@@ -8,15 +8,15 @@ content-type: reference
 topic-tags: response-manager
 exl-id: b5c0e960-2afe-4a98-b82c-d47a74659703
 source-git-commit: dc3151a77350aa2b2acd989a57f5b489c1a98962
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '435'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Erste Schritte mit der Kampagne Reaktionsverwaltung{#about-response-manager}
+# Erste Schritte mit Campaign Response Manager{#about-response-manager}
 
-Adobe Campaign Angebot bietet ein Antwortmanagement-Add-On, mit dem Sie den Erfolg und die Rentabilität von Marketing-Kampagnen oder -Angebotsvorschlägen in KommunikationsKanälen messen können: E-Mail, Mobil, Direktwerbung usw.
+Adobe Campaign bietet ein Add-on zur Reaktionsverwaltung (Response Manager), mit dem Sie den Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen über alle Kommunikationskanäle hinweg messen können: E-Mail, Mobilgeräte, Briefpost usw.
 
 ## Hypothese {#hypothesis-concept}
 
