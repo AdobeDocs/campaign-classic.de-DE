@@ -1,20 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Vertriebenes Marketing der Kampagne
-description: Erste Schritte mit dem Vertrieb von Marketing
+title: Dezentrales Marketing in Campaign
+description: Erste Schritte mit dezentralem Marketing
 audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 exl-id: c166409b-e040-491e-840a-a41310935d75
 source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Erste Schritte mit dem verteilten Marketing{#about-distributed-marketing}
+# Erste Schritte mit dezentralem Marketing{#about-distributed-marketing}
 
 <!--
 >[!AVAILABILITY]
@@ -51,7 +51,7 @@ Kampagnen präsentieren sich in Form von sogenannten Kits, welche auf eine lokal
 
 * **Lokale Anpassung**
 
-   Lokalstellen haben die Möglichkeit, ihnen zur Verfügung stehende Kampagnen an lokale Gegebenheiten anzupassen. Der Umfang der Anpassungsmöglichkeiten hängt vom Kampagnentyp und kann von der Zielgruppen- bis zur Inhaltsänderung reichen.
+   Lokalstellen haben die Möglichkeit, ihnen zur Verfügung stehende Kampagnen an lokale Gegebenheiten anzupassen. Der Umfang der Anpassungsmöglichkeiten hängt vom Kampagnentyp ab und kann von der Zielgruppen- bis zur Inhaltsänderung reichen.
 
 * **Kampagnenkit-Liste**
 
@@ -132,7 +132,7 @@ Dezentrale Marketingkampagnen werden von der Zentralstelle erstellt und veröffe
 
 Die Implementierungsetappen hängen vom gewählten Kittyp und dem Umfang der lokalen Verantwortung ab.
 
-### Integrator-Aufgaben {#integrator-side}
+### Aufgaben des Systemintegrators {#integrator-side}
 
 1. Erstellen Sie die Lokalstellen.
 1. Ordnen Sie die Empfänger den für die jeweiligen Lokalstellen verantwortlichen Benutzern zu.
@@ -151,7 +151,7 @@ Die Implementierungsetappen hängen vom gewählten Kittyp und dem Umfang der lok
 
    Erstellen Sie für **partizipative Kampagnen mit Zielgruppenvalidierung** die Tabelle, in der die Validierungen für jede Lokalstelle gespeichert werden.
 
-### Aufgaben für Funktionsadministratoren {#functional-administrator-side}
+### Aufgaben des funktionellen Administrators {#functional-administrator-side}
 
 Die folgenden Etappen müssen bei jeder Kampagnenerstellung durchlaufen werden.
 
@@ -160,7 +160,7 @@ Die folgenden Etappen müssen bei jeder Kampagnenerstellung durchlaufen werden.
 1. Konfigurieren Sie die Kampagne mit den Feldern der lokalen Anpassung und dem Formularverweis.
 1. Veröffentlichen Sie die Kampagne.
 
-### Lokale Operatoren-Aufgaben {#local-operator-side}
+### Aufgaben lokaler Benutzer {#local-operator-side}
 
 Die folgenden Etappen müssen bei jeder Kampagne durchlaufen werden.
 
