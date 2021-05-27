@@ -8,13 +8,13 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 8cf4d30d-f914-438d-8836-030202b6a449
 source-git-commit: 42040c519a9430ff0529913c1d567e9315b1a95d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '374'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Erste Schritte mit der Marketing-Ressource-Verwaltung{#about-marketing-resource-management}
+# Erste Schritte mit der Verwaltung von Marketing-Ressourcen{#about-marketing-resource-management}
 
 <!--
 >[!AVAILABILITY]
@@ -28,13 +28,13 @@ Adobe-Campaign-Benutzer können so ihre Aktionen koordinieren und mithilfe von u
 
 So können im Rahmen von Programmen und Unterprogrammen der Marketingpläne Aufgaben erstellt, den beteiligten Benutzern zugewiesen und über ihre gesamte Ausführung hinweg verwaltet werden.
 
-**Mit** MRM können Sie auch Marketing-Ressourcen verwalten, an denen mehrere Teilnehmer beteiligt sind: die Unversehrtheit und Überwachung der Ressourcen erfolgt über ein spezielles Dashboard.
+**MRM** ermöglicht zudem die Verwaltung von Marketing-Ressourcen, die von mehreren Beteiligten bearbeitet werden. Die Überwachung dieser Ressourcen wird über ein hierfür vorgesehenes Dashboard durchgeführt.
 
-Schließlich wird die Budgetmanagement-Funktion auf die Verwaltung von Zielgruppen und Ausgabenlinien und erweiterte integrierte Berichte erweitert. Anschließend können Sie die Produktivität und Performance aller Marketing-Aktivitäten überwachen und messen.
+Außerdem umfassen die Budgetverwaltungsfunktionen jetzt auch die Verwaltung von Zielgruppen und Ausgabenzeilen sowie erweiterte native Berichte. Damit können Sie die Produktivität und Leistung aller Marketing-Aktivitäten überwachen und messen.
 
 ## Konzepte und Terminologie {#core-concepts}
 
-Im Rahmen der Verwaltung der Adobe Campaign-Marketing-Ressource sind die folgenden Begriffe und Begriffe spezifisch:
+Bei der Verwaltung von Marketing-Ressourcen in Adobe Campaign werden die folgenden Konzepte und Begriffe verwendet:
 
 * **Aufgabe**
 
@@ -50,16 +50,16 @@ Im Rahmen der Verwaltung der Adobe Campaign-Marketing-Ressource sind die folgend
 
 >[!NOTE]
 >
->Weitere Informationen zu Adobe Campaign Workspace finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md).
+>Weitere Informationen zum Adobe Campaign-Arbeitsbereich finden Sie in [diesem Abschnitt](../../platform/using/adobe-campaign-workspace.md).
 >  
->Versand und Kanäle zur Kommunikation sind in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) beschrieben.
+>Sendungen und Kommunikationskanäle werden in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md) beschrieben.
 >
->Die Funktionen der Marketing-Kampagne sind in [diesem Abschnitt](../../campaign/using/accessing-marketing-campaigns.md) beschrieben.
+>Die Funktionen von Marketing-Kampagnen werden in [diesem Abschnitt](../../campaign/using/accessing-marketing-campaigns.md) beschrieben.
 
-Mit dem Marketing-Ressource Management (MRM)-Add-on verfügen Pläne und Programme über die folgenden zusätzlichen Funktionen:
+Mit dem MRM-Add-on (Marketing Resource Management) verfügen Pläne und Programme über die folgenden zusätzlichen Funktionen:
 
 * **Budgetverwaltung**. [Mehr dazu](../../campaign/using/controlling-costs.md)
 
-* **Aufgabenverwaltung**. [Mehr](../../campaign/using/creating-and-managing-tasks.md)
+* **Aufgabenverwaltung**. [Mehr dazu](../../campaign/using/creating-and-managing-tasks.md)
 
 * **Ressourcenverwaltung**. [Mehr dazu](../../campaign/using/managing-marketing-resources.md)
