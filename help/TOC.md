@@ -24,7 +24,7 @@ ht-degree: 99%
    + [Erste Schritte mit Upgrades](rn/using/rn-overview.md)
    + [Aktuelle Version](rn/using/latest-release.md)
    + [!DNL Gold Standard]-Version {#gs-release}
-      + [Was ist [!DNL Gold Standard]](rn/using/gs-overview.md)
+      + [Was ist  [!DNL Gold Standard]](rn/using/gs-overview.md)
       + [[!DNL Gold Standard]-Versionshinweise](rn/using/gold-standard.md)
       + [[!DNL Gold Standard]-Kompatibilitätsmatrix](rn/using/compatibility-matrix-gs.md)
    + Frühere Versionen {#previous-releases}
@@ -38,7 +38,7 @@ ht-degree: 99%
       + [Version 18.4](rn/using/release--18-4.md)
    + [Eingestellte Funktionen](rn/using/deprecated-features.md)
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
-   + [Technische Hinweise](technotes/technote.md)
+   + [Technotes](technotes/technote.md)
    + [Aktualisierung des iOS-Zertifikats](technotes/ios-certificate-update.md)
    + [Aktualisierungen der Campaign-Konfiguration](technotes/acc-config-updates.md)
    + [Aktualisierung von &quot;Getrackte URLs&quot;](technotes/tracked-urls.md)
@@ -53,14 +53,14 @@ ht-degree: 99%
       + Häufig gestellte Fragen {#faq}
          + [Die häufigsten Fragen](platform/using/common-questions.md)
          + [Globale Konzepte](platform/using/faq-key-concepts.md)
-         + [Buildupgrade](platform/using/faq-build-upgrade.md)
+         + [Build-Aktualisierung](platform/using/faq-build-upgrade.md)
          + [Datenschutz](platform/using/privacy-faq.md)
          + [Audiences](platform/using/faq-audiences.md)
          + [Erstellen von Nachrichten](platform/using/faq-designing.md)
          + [Nachrichten senden](platform/using/faq-messages.md)
          + [Workflows](platform/using/faq-workflows.md)
-         + [Konfiguration     ](platform/using/faq-campaign-config.md)
-         + [Reports](platform/using/faq-reporting.md)
+         + [Konfiguration](platform/using/faq-campaign-config.md)
+         + [Berichte](platform/using/faq-reporting.md)
          + [Entwicklung](platform/using/faq-developers.md)
          + [Tutorials](platform/using/tutorials.md)
    + Datenschutz {#privacy}
@@ -116,7 +116,7 @@ ht-degree: 99%
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
          + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
-      + [Der Data Connector von Adobe Analytics](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
    + [Hilfe- und Support-Optionen](support.md)
 + Nachrichten erstellen und senden {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
@@ -136,8 +136,8 @@ ht-degree: 99%
          + [Tracken und überwachen](delivery/using/track-and-monitor.md)
    + E-Mails senden {#sending-emails}
       + [Über den E-Mail-Kanal](delivery/using/about-email-channel.md)
-      + [Erstellen Sie in Adobe Campaign einen E-Mail-Versand](delivery/using/creating-an-email-delivery.md)
-      + [Erstellen Sie den E-Mail-Inhalt](delivery/using/defining-the-email-content.md)
+      + [E-Mail-Versand erstellen](delivery/using/creating-an-email-delivery.md)
+      + [E-Mail-Inhalte erstellen](delivery/using/defining-the-email-content.md)
       + [Interaktive Inhalte definieren](delivery/using/defining-interactive-content.md)
       + E-Mail-Versand senden {#sending-an-email}
          + [Wichtigste Schritte zum Senden einer E-Mail](delivery/using/sending-messages.md)
@@ -199,12 +199,12 @@ ht-degree: 99%
          + [Sendungen konfigurieren](delivery/using/a-b-testing-uc-configuring-deliveries.md)
          + [Skript erstellen](delivery/using/a-b-testing-uc-script.md)
          + [Endgültigen Versand definieren](delivery/using/a-b-testing-uc-final-delivery.md)
-         + [Starten Sie den Workflow](delivery/using/a-b-testing-uc-start-workflow.md)
+         + [Workflow starten](delivery/using/a-b-testing-uc-start-workflow.md)
          + [Ergebnis analysieren](delivery/using/a-b-testing-uc-analyzing.md)
    + Services und Abonnements {#subscriptions-and-referrals}
-      + [Über Dienste und Abonnements](delivery/using/about-services-and-subscriptions.md)
+      + [Über Services und Abonnements](delivery/using/about-services-and-subscriptions.md)
       + [Abonnements verwalten](delivery/using/managing-subscriptions.md)
-      + [Virale Marketingstrategien](delivery/using/viral-and-social-marketing.md)
+      + [Virales und Social-Media-Marketing](delivery/using/viral-and-social-marketing.md)
    + Sendungen überwachen {#monitoring-deliveries}
       + [Erste Schritte mit dem Überwachen des Versands](delivery/using/about-delivery-monitoring.md)
       + [Auf die Liste der Sendungen zugreifen](delivery/using/list-of-deliveries.md)
@@ -230,16 +230,16 @@ ht-degree: 99%
       + [Was ist Zustellbarkeit](delivery/using/about-deliverability.md)
       + [Steuern des Nachrichteninhalts](delivery/using/control-message-content.md)
       + [Überwachen der Zustellbarkeit](delivery/using/monitoring-deliverability.md)
-      + [Inbox Rendering  ](delivery/using/inbox-rendering.md)
+      + [Inbox Rendering](delivery/using/inbox-rendering.md)
       + [SpamAssassin](delivery/using/spamassassin.md)
       + [Fehlerbehebung](delivery/using/deliverability-faq.md)
    + Content-Management-Modul {#content-management}
-      + [Über Content Management](delivery/using/about-content-management.md)
+      + [Über Content-Management](delivery/using/about-content-management.md)
       + [Ressourcen und Grundlagen des Content-Manager-Moduls](delivery/using/content-manager-resources-and-principles.md)
-      + [Anwendungsbeispiele: Verwenden des Content Managements](delivery/using/use-case--creating-content-management.md)
+      + [Anwendungsfälle: Verwenden des Content-Managements](delivery/using/use-case--creating-content-management.md)
       + [Datenschemata](delivery/using/data-schemas.md)
       + [Formulare](delivery/using/input-forms.md)
-      + [Layout](delivery/using/formatting.md)
+      + [Formatierung](delivery/using/formatting.md)
       + [Veröffentlichungsvorlagen](delivery/using/publication-templates.md)
       + [Inhaltsvorlage verwenden](delivery/using/using-a-content-template.md)
       + [Inhalte anreichern](delivery/using/enriching-content.md)
@@ -257,7 +257,7 @@ ht-degree: 99%
       + [Genehmigungen einrichten und verwalten](campaign/using/marketing-campaign-approval.md)
       + [Kampagnen überwachen](campaign/using/marketing-campaign-monitoring.md)
       + [Dienstleister, Lager und Budgets](campaign/using/providers--stocks-and-budgets.md)
-   + Aufgaben, Budgets, Ressourcen {#tasks--resources-and-budgets}
+   + Aufgaben, Ressourcen und Budgets {#tasks--resources-and-budgets}
       + [Über die Verwaltung von Marketing-Ressourcen](campaign/using/about-marketing-resource-management.md)
       + [Aufgaben erstellen und verwalten](campaign/using/creating-and-managing-tasks.md)
       + [Kosten kontrollieren](campaign/using/controlling-costs.md)
@@ -281,7 +281,7 @@ ht-degree: 99%
       + [Anwendungsfälle](campaign/using/examples.md)
    + Reaktionsverwaltung (Response Manager) {#response-manager}
       + [Erste Schritte mit dem Response Manager](campaign/using/about-response-manager.md)
-      + [Konfiguration     ](campaign/using/configuration.md)
+      + [Konfiguration](campaign/using/configuration.md)
       + [Hypothesenvorlagen](campaign/using/hypothesis-templates.md)
       + [Erstellen von Hypothesen](campaign/using/creating-hypotheses.md)
       + [Hypothesenverfolgung](campaign/using/hypothesis-tracking.md)
@@ -326,12 +326,12 @@ ht-degree: 99%
 + Web-Inhalte gestalten {#designing-content}
    + Web-Anwendungen {#web-applications}
       + [Erste Schritte mit Web-Anwendungen](web/using/about-web-applications.md)
-      + [Neue Webanwendung erstellen](web/using/creating-a-new-web-application.md)
+      + [Neue Web-Anwendung erstellen](web/using/creating-a-new-web-application.md)
       + [Web-Anwendung konzipieren](web/using/designing-a-web-application.md)
-      + [Anwendungsbeispiele: Erstellen von Übersichten](web/using/use-cases--creating-overviews.md)
+      + [Anwendungsfälle: Erstellen von Übersichten](web/using/use-cases--creating-overviews.md)
       + [Web-Anwendung übersetzen](web/using/translating-a-web-application.md)
       + [Besuche auf einer Web-Anwendung tracken](web/using/tracking-a-web-application.md)
-      + [Opt-out vom Webanwendungs-Tracking](web/using/web-application-tracking-opt-out.md)
+      + [Opt-out vom Web-Anwendungs-Tracking](web/using/web-application-tracking-opt-out.md)
    + HTML-Inhalte bearbeiten {#editing-html-content}
       + [Erste Schritte mit dem HTML-Editor](web/using/about-campaign-html-editor.md)
       + [Vorlagenverwaltung](web/using/template-management.md)
@@ -342,9 +342,9 @@ ht-degree: 99%
       + [Anwendungsfall: Erstellen eines E-Mail-Versands](web/using/use-case--creating-an-email-delivery.md)
    + Web-Formulare {#web-forms}
       + [Erste Schritte mit Web-Formularen](web/using/about-web-forms.md)
-      + [Verwenden einer Webformular-Vorlage](web/using/using-a-web-form-template.md)
+      + [Verwenden einer Web-Formular-Vorlage](web/using/using-a-web-form-template.md)
       + [Felder zu einem Web-Formular hinzufügen](web/using/adding-fields-to-a-web-form.md)
-      + [Statische Elemente in einem Webformular](web/using/static-elements-in-a-web-form.md)
+      + [Statische Elemente in einem Web-Formular](web/using/static-elements-in-a-web-form.md)
       + [Layout eines Web-Formulars definieren](web/using/defining-web-forms-layout.md)
       + [Formular-Rendering](web/using/form-rendering.md)
       + [Seitenreihenfolge definieren](web/using/defining-web-forms-page-sequencing.md)
@@ -352,7 +352,7 @@ ht-degree: 99%
       + [Web-Formular veröffentlichen](web/using/publishing-a-web-form.md)
       + [Eigenschaften eines Web-Formulars definieren](web/using/defining-web-forms-properties.md)
       + [Web-Formular übersetzen](web/using/translating-a-web-form.md)
-      + [Anwendungsbeispiele: Webformulare](web/using/use-cases--web-forms.md)
+      + [Anwendungsfälle: Web-Formulare](web/using/use-cases--web-forms.md)
    + Online-Umfragen {#online-surveys}
       + [Erste Schritte mit Umfragen](web/using/about-surveys.md)
       + [Wichtige Schritte zum Erstellen einer Umfrage](web/using/getting-started-with-surveys.md)
@@ -363,7 +363,7 @@ ht-degree: 99%
       + [Anwendungsfall: Erstellen eines Empfehlungsformulars](web/using/use-case--creating-a-refer-a-friend-form.md)
 + Mit Adobe Experience Cloud integrieren {#integrating-with-adobe-experience-cloud}
    + [Über Campaign-Integrationen](integrations/using/about-campaign-integrations.md)
-   + Zielgruppenfreigabe {#audience-sharing}
+   + Audience-Freigabe {#audience-sharing}
       + [Audiences freigeben für [!DNL Adobe Experience Cloud]](integrations/using/sharing-audiences-with-adobe-experience-cloud.md)
       + [Anfrage an Adobe übermitteln](integrations/using/submitting-request-to-adobe.md)
       + [Integration mit freigegebenen Audiences konfigurieren in [!DNL Adobe Campaign]](integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
@@ -387,7 +387,7 @@ ht-degree: 99%
       + [Audiences synchronisieren](integrations/using/synchronizing-audiences.md)
       + [Web-Anwendungen synchronisieren](integrations/using/synchronizing-web-applications.md)
       + [Fehlerbehebung bei [!DNL ACS Connector]](integrations/using/troubleshooting-the-acs-connector.md)
-   + Adobe Experience Cloud-Trigger {#experience-triggers}
+   + Adobe Experience Cloud Triggers {#experience-triggers}
       + [Erste Schritte mit [!DNL Experience Cloud Triggers]](integrations/using/about-triggers.md)
       + [Pipeline konfigurieren](integrations/using/configuring-pipeline.md)
       + [Adobe I/O konfigurieren für [!DNL Experience Cloud Triggers]](integrations/using/configuring-adobe-io.md)
@@ -459,20 +459,20 @@ ht-degree: 99%
       + [Laden (DBMS)](workflow/using/data-loading--rdbms-.md)
       + [Laden (SOAP)](workflow/using/loading--soap-.md)
       + [Laden (Datei)](workflow/using/data-loading--file-.md)
-      + [Content Management](workflow/using/content-management.md)
+      + [Content-Management](workflow/using/content-management.md)
       + [Extraktion (Datei)](workflow/using/extraction--file-.md)
       + [SQL-Code und JavaScript-Code](workflow/using/sql-code-and-javascript-code.md)
-      + [SQL Data Management](workflow/using/sql-data-management.md)
+      + [SQL-Daten-Management](workflow/using/sql-data-management.md)
       + [nlserver-Modul](workflow/using/nlserver-module.md)
       + [Aggregat-Update](workflow/using/update-aggregate.md)
    + Ereignisaktivitäten {#event-activities}
       + [Über Ereignisaktivitäten](workflow/using/about-event-activities.md)
       + [Datei-Wächter](workflow/using/file-collector.md)
-      + [Dateiversand](workflow/using/file-transfer.md)
+      + [Dateiübertragung](workflow/using/file-transfer.md)
       + [HTTP-Übertragung](workflow/using/web-download.md)
       + [E-Mail-Empfang](workflow/using/inbound-emails.md)
       + [SMS-Empfang](workflow/using/inbound-sms.md)
-   + Anwendungsbeispiele {#use-cases}
+   + Anwendungsfälle {#use-cases}
       + [Über Workflow-Anwendungsfälle](workflow/using/about-workflow-use-cases.md)
       + Sendungen {#deliveries}
          + [Verwenden der lokalen Validierung](workflow/using/using-the-local-approval-activity.md)
@@ -480,24 +480,24 @@ ht-degree: 99%
          + [Laden des Versandinhalts](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring              {#monitoring}
+      + Monitoring  {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/using/sending-personalized-alerts-to-operators.md)
-      + Datenmanagement {#data-management}
+      + Daten-Management {#data-management}
          + [Koordinieren von Datenaktualisierungen](workflow/using/coordinating-data-updates.md)
          + [Erstellen einer zusammenfassenden Liste](workflow/using/creating-a-summary-list.md)
          + [Anreichern von Daten](workflow/using/enriching-data.md)
          + [Verwenden von Aggregaten](workflow/using/using-aggregates.md)
          + [Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität](workflow/using/deduplication-merge.md)
          + [Einrichten eines Workflows für den wiederkehrenden Import](workflow/using/recurring-import-workflow.md)
-      + Design von Abfragen {#designing-queries}
+      + Erstellen von Abfragen {#designing-queries}
          + [Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](workflow/using/quarterly-list-update.md)
       + Abfrage und Filter {#designing-queries}
          + [Abfrage zur Empfängertabelle](workflow/using/querying-recipient-table.md)
          + [Informationen zum Abfrageversand](workflow/using/querying-delivery-information.md)
          + [Durchführen von Aggregat-Berechnungen](workflow/using/performing-aggregate-computing.md)
-         + [Abfrage mit Gruppierungsbedingungen](workflow/using/querying-using-grouping-management.md)
+         + [Abfrage mit Gruppierungsverwaltung](workflow/using/querying-using-grouping-management.md)
          + [Abfrage mit einer n:n-Beziehung](workflow/using/querying-using-many-to-many-relationship.md)
          + [Hinzufügen eines berechneten Auflistungsfelds](workflow/using/adding-enumeration-type-calculated-field.md)
          + [Erstellen von Filtern](workflow/using/creating-a-filter.md)
@@ -507,9 +507,9 @@ ht-degree: 99%
       + [Überwachen technischer Workflows](workflow/using/monitoring-technical-workflows.md)
       + [Workflow-Heatmap](workflow/using/heatmap.md)
    + Fortgeschrittene Optionen {#advanced-management}
-      + [Workflow-Eigenschaften       ](workflow/using/workflow-properties.md)
+      + [Workflow-Eigenschaften](workflow/using/workflow-properties.md)
       + [Erweiterte Parameter](workflow/using/advanced-parameters.md)
-      + [Scripts/JavaScript-Templates](workflow/using/javascript-scripts-and-templates.md)
+      + [JavaScript-Skripts und -Vorlagen](workflow/using/javascript-scripts-and-templates.md)
       + [Auf eine externe Datenbank zugreifen](workflow/using/accessing-an-external-database--fda-.md)
       + [Verwalten von Berechtigungen](workflow/using/managing-rights.md)
       + [Verwalten von Aktivitätsbildern](workflow/using/managing-activity-images.md)
@@ -524,7 +524,7 @@ ht-degree: 99%
       + [Umsetzung](interaction/using/implementation-steps.md)
       + [Grundprinzipien](interaction/using/fundamental-principles.md)
    + Umgebungen verwalten {#managing-environments}
-      + [Umgebung – Übersicht](interaction/using/environments-overview.md)
+      + [Umgebungen – Übersicht](interaction/using/environments-overview.md)
       + [Benutzerprofile](interaction/using/operator-profiles.md)
       + [Live-/Design-Umgebungen](interaction/using/live-design-environments.md)
       + [Platzierungen erstellen](interaction/using/creating-offer-spaces.md)
@@ -536,27 +536,27 @@ ht-degree: 99%
       + [Angebot erstellen](interaction/using/creating-an-offer.md)
       + [Angebot genehmigen und aktivieren](interaction/using/approving-and-activating-an-offer.md)
       + [Angebotsvorlagen verwalten](interaction/using/managing-offer-templates.md)
-      + [Angebotsdarstellung verwalten](interaction/using/managing-offer-presentation.md)
+      + [Angebotsunterbreitung verwalten](interaction/using/managing-offer-presentation.md)
    + Angebotssimulationen{#simulating-offers}
       + [Über die Angebotssimulation](interaction/using/about-offers-simulation.md)
       + [Ausführungsparameter](interaction/using/execution-settings.md)
       + [Simulationsperimeter](interaction/using/simulation-scope.md)
-      + [Verfolgung](interaction/using/simulation-tracking.md)
-   + Angebot abgeben {#delivering-an-offer}
-      + [Über ausgehende Kanäle](interaction/using/about-outbound-channels.md)
+      + [Simulationsverfolgung](interaction/using/simulation-tracking.md)
+   + Angebot bereitstellen {#delivering-an-offer}
+      + [Über Outbound-Kanäle](interaction/using/about-outbound-channels.md)
       + [Ein Angebot über den Assistenten einbinden](interaction/using/integrating-an-offer-via-the-wizard.md)
       + [Ein Angebot über einen Workflow einbinden](interaction/using/integrating-an-offer-via-a-workflow.md)
    + Einzelne Interaktionen {#unitary-interactions}
-      + [Über eingehende Kanäle](interaction/using/about-inbound-channels.md)
-      + [JavaScript-Integration (clientseitig)](interaction/using/integration-via-javascript--client-side-.md)
+      + [Über Inbound-Kanäle](interaction/using/about-inbound-channels.md)
+      + [JavaScript-Integration (Client-seitig)](interaction/using/integration-via-javascript--client-side-.md)
       + [Integration mittels SOAP (Server-seitig)](interaction/using/integration-via-soap--server-side-.md)
       + [Anonyme Interaktionen](interaction/using/anonymous-interactions.md)
    + Angebote tracken {#tracking-offers}
-      + [Angebotsverlauf](interaction/using/offer-proposition-history.md)
+      + [Angebotsvorschlagsverlauf](interaction/using/offer-proposition-history.md)
       + [Angebotsanalyse-Bericht](interaction/using/offer-analysis-report.md)
    + Erweiterte Parameter {#advanced-parameters}
       + [Erweiterte Parameter verwenden](interaction/using/using-advanced-parameters.md)
-      + [Additional data](interaction/using/additional-data.md)
+      + [Zusätzliche Daten](interaction/using/additional-data.md)
       + [Beispiel einer Erweiterung](interaction/using/extension-example.md)
       + [Testumgebung erstellen](interaction/using/creating-a-test-environment.md)
       + [Erweiterungspunkte](interaction/using/hooks.md)
@@ -564,8 +564,8 @@ ht-degree: 99%
       + [Konfiguration des Datenpuffers](installation/using/interaction---data-buffer.md)
    + Anwendungsbeispiel {#case-study}
       + [Unterbreitungsregeln](interaction/using/presentation-rules.md)
-      + [Eingehender Kanal](interaction/using/offers-on-an-inbound-channel.md)
-      + [Ausgehender Kanal](interaction/using/offers-on-an-outbound-channel.md)
+      + [Angebot auf einem Inbound-Kanal](interaction/using/offers-on-an-inbound-channel.md)
+      + [Angebot auf einem Outbound-Kanal](interaction/using/offers-on-an-outbound-channel.md)
 + Transaktionsnachrichtenversand {#transactional-messaging}
    + Erste Schritte mit Transaktionsnachrichten {#introduction}
       + [Über den Versand von Transaktionsnachrichten](message-center/using/about-transactional-messaging.md)
@@ -580,7 +580,7 @@ ht-degree: 99%
       + [Ereignistypen erstellen](message-center/using/creating-event-types.md)
       + [Multibranding konfigurieren](message-center/using/configuring-multibranding.md)
    + Nachrichtenvorlagen {#message-templates}
-      + [Über Transaktionsnachrichtenvorlagen](message-center/using/introduction.md)
+      + [Über Transaktionsnachrichten-Vorlagen](message-center/using/introduction.md)
       + [Nachrichtenvorlage erstellen](message-center/using/creating-the-message-template.md)
       + [Nachrichteninhalt erstellen](message-center/using/creating-message-content.md)
       + [Testadressen in Transaktionsnachrichten verwalten](message-center/using/managing-seed-addresses-in-transactional-messages.md)
@@ -591,14 +591,14 @@ ht-degree: 99%
       + [Veröffentlichung von Vorlagen aufheben](message-center/using/template-unpublication.md)
    + Ereignisverarbeitung {#event-processing}
       + [Über die Ereignisverarbeitung](message-center/using/about-event-processing.md)
-      + [Ereignisabruf](message-center/using/event-collection.md)
+      + [Ereigniskollektion](message-center/using/event-collection.md)
       + [Weiterleitung zu Vorlagen](message-center/using/routing-towards-a-template.md)
-      + [Transaktionsnachrichten-Versand](message-center/using/delivery-execution.md)
+      + [Versandausführung](message-center/using/delivery-execution.md)
    + Berichte {#reports}
       + [Über Transaktionsnachrichten-Berichte](message-center/using/about-transactional-messaging-reports.md)
-      + [Ereignisverlauf](message-center/using/history-of-message-center-events.md)
-      + [Dienstqualität](message-center/using/message-center-service-level.md)
-      + [Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
+      + [Verlauf von Message Center-Ereignissen](message-center/using/history-of-message-center-events.md)
+      + [Message Center-Dienstqualität](message-center/using/message-center-service-level.md)
+      + [Message Center-Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
    + Anwendungsbeispiel {#use-case}
       + [Transaktions-E-Mails mit Anhängen senden](message-center/using/transactional-email-with-attachments.md)
 + Mit Social Media integrieren {#integrating-with-social-media}
@@ -606,7 +606,7 @@ ht-degree: 99%
    + Konfiguration {#configuration}
       + [Workflows starten](social/using/starting-workflows.md)
       + [Auf Facebook-Pinnwänden veröffentlichen](social/using/publishing-on-facebook-walls.md)
-      + [Erstellen Sie eine Facebook-Anwendung](social/using/creating-a-facebook-application.md)
+      + [Facebook-Anwendung erstellen](social/using/creating-a-facebook-application.md)
       + [Veröffentlichung auf Twitter konfigurieren](social/using/configuring-publishing-on-twitter.md)
    + In Social Media veröffentlichen {#publishing-on-facebook-twitter}
       + [Übersicht](social/using/overview.md)
@@ -621,12 +621,12 @@ ht-degree: 99%
       + Hosting-Modelle{#hosting-models-lp}
          + [Hosting-Modelle für Campaign](installation/using/hosting-models.md)
          + [Funktionsmatrix](installation/using/capability-matrix.md)
-   + Bereitstellungstypen {#deployment-types-}
-      + [Über Bereitstellungstypen](installation/using/about-deployment-types.md)
-      + [Eigenständige Bereitstellung](installation/using/standalone-deployment.md)
-      + [Standardbereitstellung](installation/using/standard-deployment.md)
-      + [Enterprise-Bereitstellung](installation/using/enterprise-deployment.md)
-      + [Mid-Sourcing-Bereitstellung](installation/using/mid-sourcing-deployment.md)
+   + Freigabetypen {#deployment-types-}
+      + [Über Freigabetypen](installation/using/about-deployment-types.md)
+      + [Eigenständige Freigabe](installation/using/standalone-deployment.md)
+      + [Standardfreigabe](installation/using/standard-deployment.md)
+      + [Enterprise-Freigabe](installation/using/enterprise-deployment.md)
+      + [Mid-Sourcing-Freigabe](installation/using/mid-sourcing-deployment.md)
       + [Power Booster und Power Cluster](installation/using/power-booster-and-power-cluster.md)
    + Einstellungen für Sicherheit und Datenschutz {#security-privacy}
       + [Erste Schritte mit Sicherheit und Datenschutz](installation/using/get-started-security-privacy.md)
@@ -638,7 +638,7 @@ ht-degree: 99%
       + [Sicherheitseinstellungen des Webservers](installation/using/web-server-configuration.md)
    + Campaign installieren (On-Premise){#install-campaign-on-prem}
       + Implementierungsrichtlinien {#deployment-guidelines}
-         + [Datenbankserver](installation/using/database.md)
+         + [Datenbank-Server](installation/using/database.md)
          + [Anwendungs-Server](installation/using/application-server.md)
          + [Messaging-Server](installation/using/messaging-server.md)
          + [Netzwerkkonfiguration](installation/using/network-configuration.md)
@@ -696,9 +696,9 @@ ht-degree: 99%
          + [Remote-Zugriffsberechtigungen](installation/using/remote-database-access-rights.md)
          + [Verbindung mit der Datenbank herstellen](installation/using/connecting-to-database.md)
          + [Datenschema erstellen](installation/using/creating-data-schema.md)
-         + [Datenzuordnung definieren](installation/using/defining-data-mapping.md)
+         + [Daten-Mapping definieren](installation/using/defining-data-mapping.md)
    + Anhänge {#appendices}
-      + [Serverkonfigurationsdatei](installation/using/the-server-configuration-file.md)
+      + [Server-Konfigurationsdatei](installation/using/the-server-configuration-file.md)
       + [Campaign-Netzwerkendpunkte](installation/using/campaign-network-endpoints.md)
       + [Befehlszeilen](installation/using/command-lines.md)
       + [Neue Instanzen erstellen](installation/using/creating-new-instances.md)
@@ -713,7 +713,7 @@ ht-degree: 99%
       + [Konfigurationsprinzip](production/using/configuration-principle.md)
       + [Grundprinzip](production/using/operating-principle.md)
       + [Administration](production/using/administration.md)
-      + [Konfiguration     ](production/using/configuration.md)
+      + [Konfiguration](production/using/configuration.md)
       + [Protokolldateien](production/using/log-files.md)
       + [Prozesse überwachen](production/using/monitoring-processes.md)
       + [Übliche Befehle](production/using/usual-commands.md)
@@ -726,13 +726,13 @@ ht-degree: 99%
    + Adobe Campaign aktualisieren {#updating-adobe-campaign}
       + [Einleitung](production/using/introduction.md)
       + [Ein Build-Upgrade durchführen](production/using/build-upgrade.md)
-      + [Upgrade-Verfahren (lokal)](production/using/upgrading.md)
+      + [Upgrade-Verfahren (On-Premise)](production/using/upgrading.md)
       + [Zu Unicode wechseln](production/using/switching-to-unicode.md)
       + [Migrationsverfahren](production/using/migration-procedures.md)
-   + Bereinigung der Datenbank {#database-maintenance}
-      + [Empfehlungen      ](production/using/recommendations.md)
-      + [Zu pflegende Tabellen](production/using/tables-to-maintain.md)
-      + [Arten der Pflege](production/using/types-of-maintenance.md)
+   + Wartung der Datenbank {#database-maintenance}
+      + [Recommendations](production/using/recommendations.md)
+      + [Zu wartende Tabellen](production/using/tables-to-maintain.md)
+      + [Arten der Wartung](production/using/types-of-maintenance.md)
       + [RDBMS-spezifische Empfehlungen](production/using/rdbms-specific-recommendations.md)
       + [Anwendungsobjekte](production/using/application-objects.md)
    + Fehlerbehebung {#troubleshooting-toc}
@@ -755,7 +755,7 @@ ht-degree: 99%
          + [Codierung der Oracle-Datenbank](production/using/encoding-of-the-oracle-database.md)
       + Verbindungsverbesserungen {#connection-improvements-toc}
          + [Verbindung schlägt fehl](production/using/failure-to-connect.md)
-         + [Verbindungsschwellen](production/using/connection-thresholds.md)
+         + [Verbindungsgrenzwerte](production/using/connection-thresholds.md)
       + Behebung technischer Probleme {#technical-troubleshooting-toc}
          + [Stack Trace in Linux](production/using/stack-trace-in-linux.md)
          + [JSP-Verhalten](production/using/jsp-behavior.md)
@@ -781,7 +781,7 @@ ht-degree: 99%
          + [Join](configuration/using/schema/join.md)
          + [Schlüssel](configuration/using/schema/key.md)
          + [Schlüsselfeld](configuration/using/schema/keyfield.md)
-         + [Vorgehensweise](configuration/using/schema/method.md)
+         + [Methode](configuration/using/schema/method.md)
          + [Methoden](configuration/using/schema/methods.md)
          + [Parameter](configuration/using/schema/param.md)
          + [Parameter](configuration/using/schema/parameters.md)
@@ -812,14 +812,14 @@ ht-degree: 99%
       + [Implementieren von SOAP-Methoden](configuration/using/implementing-soap-methods.md)
       + [SOAP-Methoden in JavaScript](configuration/using/soap-methods-in-javascript.md)
       + [Hinzufügen zusätzlicher SQL-Funktionen](configuration/using/adding-additional-sql-functions.md)
-   + Navigationshierarchie {#navigation-hierarchy}
+   + Navigationsbaum {#navigation-hierarchy}
       + [Explorer-Hierarchie konfigurieren](configuration/using/configuration.md)
       + [Explorer-Hierarchie bearbeiten](configuration/using/edition.md)
    + Verwenden einer benutzerdefinierten Empfängertabelle {#use-a-custom-recipient-table}
       + [Über die benutzerdefinierte Empfängertabelle](configuration/using/about-custom-recipient-table.md)
       + [Schemamerkmale](configuration/using/schema-characteristics.md)
-      + [Target mapping](configuration/using/target-mapping.md)
-      + [Konfigurieren der Oberfläche](configuration/using/configuring-the-interface.md)
+      + [Zielgruppen-Mapping](configuration/using/target-mapping.md)
+      + [Konfigurieren der Benutzeroberfläche](configuration/using/configuring-the-interface.md)
       + [Testadressen](configuration/using/seed-addresses.md)
       + [Filter erstellen](configuration/using/creating-filters.md)
       + [Erstellen einer Profilliste mit einem Workflow](configuration/using/creating-a-profile-list-with-a-workflow.md)
@@ -828,10 +828,10 @@ ht-degree: 99%
    + Einrichten von Webtracking {#setting-up-web-tracking}
       + [Über Webtracking](configuration/using/about-web-tracking.md)
       + [Webtracking-Modus](configuration/using/web-tracking-mode.md)
-      + [Webtrackingtag: Definition](configuration/using/web-tracking-tag--definition.md)
+      + [Webtracking-Tag: Definition](configuration/using/web-tracking-tag--definition.md)
       + [Einrichtungsschritte](configuration/using/setup-stages.md)
       + [Zusätzliche Parameter](configuration/using/additional-parameters.md)
-      + [Erstellen von Webtrackingtags](configuration/using/creating-web-tracking-tags.md)
+      + [Erstellen von Webtracking-Tags](configuration/using/creating-web-tracking-tags.md)
       + [Einfügen von Tags in Ihre Site](configuration/using/inserting-tags-in-your-site.md)
       + [Erfassen aller Besuche](configuration/using/collecting-all-visits.md)
       + [Anonym-Tracking](configuration/using/anonymous-tracking.md)
@@ -853,4 +853,4 @@ ht-degree: 99%
       + [Spezifische Konfigurationen in v5.11](migration/using/specific-configurations-in-v5-11.md)
       + [Spezifische Konfigurationen in v6.02](migration/using/specific-configurations-in-v6-02.md)
       + [Spezifische Konfigurationen in v6.10](migration/using/specific-configurations-in-v6-10.md)
-   + [Zurücksetzungsverfahren](migration/using/about-rollback.md)
+   + [Rollback-Verfahren](migration/using/about-rollback.md)
