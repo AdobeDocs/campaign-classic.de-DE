@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: URL-Berechtigungen konfigurieren
-description: Informationen zum Konfigurieren von URL-Berechtigungen
+title: Konfigurieren von URL-Genehmigungen
+description: Erfahren Sie, wie Sie URL-Genehmigungen konfigurieren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814,6fe8da3b-57b9-4a69-8602-a03993630b27
-translation-type: tm+mt
-source-git-commit: 5d8d9e6ba41f94179bbf5f6d41f86267381b9b93
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 32%
+ht-degree: 34%
 
 ---
 
-# URL-Berechtigungen konfigurieren (lokal){#url-permissions}
+# Konfigurieren von URL-Berechtigungen (On-Premise){#url-permissions}
 
 Die Liste der URLs, die standardmäßig von JavaScript-Codes (Workflows usw.) über Ihre Campaign Classic-Instanzen aufgerufen werden können, ist begrenzt. Diese URLs ermöglichen das ordnungsgemäße Funktionieren der Instanzen.
 
-Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URLs herzustellen. Es ist jedoch möglich, einige externe URLs zur Liste autorisierter URLs hinzuzufügen, damit Ihre Instanz eine Verbindung zu ihnen herstellen kann. Dadurch können Sie zwischen Ihren Campaign-Instanzen und externen Systemen, wie z. B. SFTP-Servern oder Websites, eine Verbindung herstellen, um den Datei- und/oder Datentransfer zu ermöglichen.
+Standardmäßig sind Instanzen nicht berechtigt, eine Verbindung zu externen URLs herzustellen. Es ist jedoch möglich, externe URLs zur Liste der berechtigten URLs hinzuzufügen, sodass Ihre Instanz eine Verbindung mit ihnen herstellen kann. Dadurch können Sie zwischen Ihren Campaign-Instanzen und externen Systemen, wie z. B. SFTP-Servern oder Websites, eine Verbindung herstellen, um den Datei- und/oder Datentransfer zu ermöglichen.
 
 >[!NOTE]
 >
->Dieses Verfahren ist auf **lokale** Bereitstellungen beschränkt.
+>Dieses Verfahren ist auf **On-Premise** -Implementierungen beschränkt.
 >
->Wenn Sie als Kunde **gehostet** auf [Kampagne Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, können Sie die Benutzeroberfläche für die Selbstbedienung der URL-Zugriffsberechtigungen verwenden. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
+>Als Kunde von **gehostet** können Sie, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, die Benutzeroberfläche für URL-Genehmigungen zur Selbstbedienung verwenden. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
 >
->Andere **hybride/gehostete**-Kunden müssen sich an das Supportteam der Adobe wenden, um der Zulassungsliste IP hinzuzufügen.
+>Andere **hybride/gehostete** -Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
 
 
-Bei Implementierungen von **Hybrid** und **On-Premise** muss der Administrator auf eine neue **urlPermission** in der Datei **serverConf.xml** verweisen.
+Bei **Hybrid**- und **On-Premise**-Bereitstellungen muss der Administrator in der Datei **serverConf.xml** auf eine neue **urlPermission** verweisen.
 
 
-Es stehen drei Verbindungsschutzmodi zur Verfügung:
+Drei Verbindungsschutzmodi sind verfügbar:
 
-* **Blockierung**: alle URLs, die nicht zur Zulassungsliste gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
-* **Zulässig**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig.
-* **Warnung**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig, der JS-Interpreter gibt jedoch eine Warnung aus, sodass der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen für JST-310027 hinzugefügt.
+* **Blockieren**: alle URLs, die nicht zur Zulassungsliste gehören, werden mit einer Fehlermeldung blockiert. Dies ist der Standardmodus nach einem Postupgrade.
+* **Permissive**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig.
+* **Warnung**: alle URLs, die nicht zur Zulassungsliste gehören, sind zulässig, doch der JS-Interpreter gibt eine Warnung aus, damit der Administrator sie erfassen kann. In diesem Modus werden Warnmeldungen vom Typ JST-310027 hinzugefügt.
 
 ```
 <urlPermission action="warn" debugTrace="true">
@@ -49,14 +47,14 @@ Es stehen drei Verbindungsschutzmodi zur Verfügung:
 
 >[!IMPORTANT]
 >
->Standardmäßig verwenden neue Implementierungen den Modus **Blocking**.
+>Standardmäßig verwenden neue Implementierungen den Modus **Blocking** .
 >
->Als bestehender Kunde, der aus einer Migration stammt, können Sie vorübergehend den Modus **Warnung** verwenden. Analysieren Sie den ausgehenden Traffic, bevor Sie die URLs zulassen. Sobald die Liste der zulässigen URLs definiert ist, können Sie die URLs der Zulassungsliste hinzufügen und den Modus **Blockieren** aktivieren.
+>Als bestehender Kunde, der aus einer Migration stammt, können Sie den Modus **Warnung** vorübergehend verwenden. Analysieren Sie den ausgehenden Traffic, bevor Sie die URLs zulassen. Sobald die Liste der zulässigen URLs definiert ist, können Sie die URLs zur Zulassungsliste hinzufügen und den Modus **Blocking** aktivieren.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 * [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html)
 * [Hosting-Modelle](hosting-models.md)
 * [Campaign-Server konfigurieren](configuring-campaign-server.md)
-* [Parameter der Konfigurationsdatei des Kampagne-Servers](the-server-configuration-file.md)
+* [Parameter der Konfigurationsdatei des Campaign-Servers](the-server-configuration-file.md)
 * [Checkliste für Sicherheit und Datenschutz](get-started-security-privacy.md)
