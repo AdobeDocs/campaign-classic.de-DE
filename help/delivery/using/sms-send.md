@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: SMS senden, überwachen und verfolgen
 description: Erfahren Sie, wie Sie SMS in Campaign senden, überwachen und verfolgen.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 100%
 
