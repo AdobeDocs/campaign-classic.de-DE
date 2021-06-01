@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elemente und Attribute
 description: Elemente und Attribute
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 8207868c-25ff-4ca9-afdd-41b324c7ac0d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 23%
+ht-degree: 25%
 
 ---
-
 
 # help element {#help--element}
 
@@ -23,19 +21,19 @@ help:==EMPTY
 
 ## Attribute {#attributes-6}
 
-Kein
+Keine
 
-## Eltern {#parents-6}
+## Übergeordnete Elemente {#parents-6}
 
 `<srcschema>`  ,   `<element>`   ,    `<attribute>`    ,     `<enumeration>`     ,      `<value>`      ,      `<param />`,       `<method />`
 
-## Kinder {#children-6}
+## Untergeordnetes Element {#children-6}
 
-Kein
+Keine
 
 ## Beschreibung {#description-6}
 
-Mit diesem Element können Sie eine `<element>` oder `<attribute>` beschreiben.   -Element. Es darf nur Text enthalten und wird in XML in der Datenbank gespeichert.
+Dieses Element ermöglicht die Beschreibung eines `<element>` oder `<attribute>`   -Element. Sie darf nur Text enthalten und wird in XML in der Datenbank gespeichert.
 
 ## Attributbeschreibung {#attribute-description-6}
 
