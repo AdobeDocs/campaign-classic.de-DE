@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Protokoll und Einstellungen des SMS-Connectors
 description: Erfahren Sie mehr über den SMS-Connector und dessen Konfiguration.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: fded088a-11a2-4b87-a368-7b197334aca4
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '8433'
 ht-degree: 100%
 
@@ -855,7 +853,7 @@ Vergewissern Sie sich, dass die `BIND_* PDUs` korrekt gesendet wurden. Am wichti
 
 Vergewissern Sie sich, dass nicht zu viele `BIND_* PDU`s vorhanden sind. Wenn es zu viele sind, kann das darauf hinweisen, dass die Verbindung instabil ist. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/sms-protocol.md#issues-unstable-connection).
 
-#### ENQUIRE_LINK {#enquire-link-pdus}
+#### INQUIRE_LINK {#enquire-link-pdus}
 
 Vergewissern Sie sich, dass `ENQUIRE_LINK PDU`s regelmäßig ausgetauscht werden, wenn die Verbindung inaktiv ist.
 
