@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aktuelle Version
 description: Aktuelle Version von Campaign Classic      Anmerkungen
@@ -7,9 +6,8 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-translation-type: ht
-source-git-commit: abd5c7430c3f7a1a056a014ad46a0b94157e259f
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 100%
 
@@ -53,7 +51,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 
 **Verbesserungen**
 
-**Email Feedback Service (EFS)** ist ein skalierbarer Dienst, der das Feedback direkt vom Enhanced MTA erfasst und damit die Reporting-Genauigkeit verbessert. Diese Funktion wird als private Beta veröffentlicht und wird in zukünftigen Versionen nach und nach allen Kunden zur Verfügung stehen.
+**Email Feedback Service (EFS)** ist ein skalierbarer Dienst, der das Feedback direkt vom Enhanced MTA erfasst und damit die Reporting-Genauigkeit verbessert. Diese Funktion wird als private Betaversion veröffentlicht und wird in zukünftigen Versionen nach und nach allen Kunden zur Verfügung stehen.
 
 * Alle Kategorien von Feedback werden jetzt für vollständiges und genaues Reporting erfasst.
 * Die Berechnung des Indikators &quot;Zugestellt&quot; basiert nun auf Echtzeit-Feedback des Enhanced MTA, um Genauigkeit und Reaktivität zu verbessern.
@@ -68,7 +66,7 @@ Wenn Sie an dieser privaten Beta teilnehmen möchten, füllen Sie dieses [Formul
 * Workflow-Heatmap wurde verbessert, um Zeitüberschreitungen zu vermeiden, wenn Workflows mit mehreren Aktivitäten ausgeführt werden. (NEO-27423).
 * Es wurde ein Problem behoben, durch das ein Angebot auch dann präsentiert werden konnte, wenn das Enddatum überschritten wurde. Campaign Classic berücksichtigt nun den gesamten Zeitstempel des Enddatums und nicht nur das Datum. (NEO-27590)
 * Der Google+-Link wurde aus dem Gestaltungsbaustein **Teilen-Links der sozialen Netzwerke** entfernt.
-* Es wurde ein Problem behoben, das nach der Implementierung einer Fehlerbehebung in der letzten Version auftrat. Beim Verbinden mit SSL/TLS wurde eine Prüfung des Host-Namens hinzugefügt, die dazu führte, dass SMS-Sendungen fehlschlugen. Die Überprüfung des Host-Namens wurde für die meisten Protokolle wie POP3, SMS und HTTP mit Proxy deaktiviert, und die Zertifikatsprüfung für das externe SMS-Konto wurde mithilfe von drei Werten verbessert (NEO-29581). [Weitere Infos](../../delivery/using/sms-protocol.md#skip-tls)
+* Es wurde ein Problem behoben, das nach der Implementierung einer Fehlerbehebung in der letzten Version auftrat. Beim Verbinden mit SSL/TLS wurde eine Prüfung des Host-Namens hinzugefügt, die dazu führte, dass der SMS-Sendungen fehlschlugen. Die Überprüfung des Host-Namens wurde für die meisten Protokolle wie POP3, SMS und HTTP mit Proxy deaktiviert, und die Zertifikatsprüfung für das externe SMS-Konto wurde mithilfe von drei Werten verbessert (NEO-29581). [Weitere Infos](../../delivery/using/sms-protocol.md#skip-tls)
 
 **Korrekturen**
 
