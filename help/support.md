@@ -1,14 +1,13 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Hilfe- und Support-Optionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '799'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -16,7 +15,7 @@ ht-degree: 86%
 
 Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 
-Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Online-Ressourcen und das Supportportal. Sie können auch der Campaign-Community beitreten, die Experten fragen oder ein Ticket erstellen.
+Support erhalten Sie über unsere häufig gestellten Fragen, Best Practices, Online-Ressourcen und das Support-Portal. Sie können auch der Campaign-Community beitreten, die Experten fragen oder ein Ticket erstellen.
 
 <table>
     <tr>
@@ -94,7 +93,7 @@ Wie wird ein Upgrade auf einen neuen Build durchgeführt? Wie lässt sich die Wo
 ### Was ist das Control Panel?
 
 Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign Classic effizienteres Arbeiten. Sie können damit die Einstellungen aller Instanzen verwalten und deren Nutzung erfassen.
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html), um weitere Informationen zu erhalten.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de), um weitere Informationen zu erhalten.
 
 >[!NOTE]
 >
@@ -104,7 +103,7 @@ Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign
 
 ### Zugriff auf das Control Panel
 
-Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html), um weitere Informationen zu erhalten.
+Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht nur Administratoren zur Verfügung. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/accessing-control-panel.html?lang=de), um weitere Informationen zu erhalten.
 
 ### Control Panel – häufig gestellte Fragen
 
@@ -117,17 +116,17 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 ### Sub-Domains und Zertifikate
 
 Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Weitere Informationen finden Sie auf diesen Seiten:
-* [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html)
-* [Einrichten einer neuen Sub-Domain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html)
-* [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html)
+* [Sub-Domain-Branding](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/subdomains-branding.html?lang=de)
+* [Einrichten einer neuen Sub-Domain](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de)
+* [Überwachen von SSL-Zertifikaten](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/monitoring-ssl-certificates.html?lang=de)
 
 ### Instanzeneinstellungen
 
 Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Control Panel verwalten. Weitere Informationen finden Sie auf diesen Seiten:
-* [Fügen Sie IPs auf der Zulassungsliste hinzu, um auf Ihre Campaign-Instanz(en) zuzugreifen. ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html) 
-* [Verwalten von URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html)
-* [Details der Instanz aufrufen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html)
-* [Verwalten von GPG-Schlüsseln für die Datenverschlüsselung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html)
+* [Fügen Sie IPs auf der Zulassungsliste hinzu, um auf Ihre Campaign-Instanz(en) zuzugreifen. ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de) 
+* [Verwalten von URL-Genehmigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
+* [Details der Instanz aufrufen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
+* [Verwalten von GPG-Schlüsseln für die Datenverschlüsselung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de)
 
 ## Hilfe anfordern {#support}
 
@@ -141,7 +140,7 @@ Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorh
 
 ### Aufrufen des Campaign-Download-Centers
 
-Ab Juni 2020 ersetzt die Experience Cloud-Lösung &quot;Software-Verteilung&quot; das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distributicampaign.html), um auf die Softwareverteilung von Experience Cloud zuzugreifen.
+Ab Juni 2020 ersetzt die Experience Cloud-Lösung &quot;Software-Verteilung&quot; das ältere Neolane-Download-Center und bietet eine effizientere Möglichkeit, Ihre Software, Packages und Tools zu finden und herunterzuladen. [Klicken Sie hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html), um auf die Softwareverteilung von Experience Cloud zuzugreifen.
 Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 ### Erstellen Sie ein Ticket oder starten Sie einen Chat
