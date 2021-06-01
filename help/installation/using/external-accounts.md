@@ -7,18 +7,18 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
 workflow-type: tm+mt
 source-wordcount: '1732'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
 # Externe Konten{#external-accounts}
 
-Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Um Verbindungen mit externen Systemen einzurichten, können Sie neue externe Konten erstellen.
+Adobe Campaign enthält eine Reihe vordefinierter externer Konten. Um Verbindungen zu externen Systemen einzurichten, können Sie neue externe Konten erstellen.
 
-Externe Konten werden von technischen Prozessen, wie technischen Workflows oder Kampagnen-Workflows, verwendet. Wenn Sie beispielsweise eine Dateiübertragung in einem Workflow oder einen Datenaustausch mit einer anderen Anwendung (Adobe Target, Experience Manager usw.) einrichten, müssen Sie ein externes Konto auswählen.
+Externe Konten werden von technischen Prozessen, wie technischen Workflows oder Kampagnen-Workflows, verwendet. Beispiel: Bei der Einrichtung eines Dateitransfers in einem Workflow oder bei einem Datenaustausch mit einem anderen Programm (Adobe Target, Experience Manager usw.) müssen Sie ein externes Konto auswählen.
 
 ## Externes Konto erstellen {#creating-an-external-account}
 
@@ -112,7 +112,7 @@ Wenn Sie eine aufgegliederte Architektur haben, müssen Sie die mit der Kontroll
 
    Passwort des Kontos, wie es im Benutzerordner definiert ist
 
-Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../message-center/using/creating-a-shared-connection.md#control-instance).
+Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../message-center/using/configuring-instances.md#control-instance).
 
 
 ## Zugriff auf externe Systemkonten
