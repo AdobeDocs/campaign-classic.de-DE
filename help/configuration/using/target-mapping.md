@@ -1,42 +1,40 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Target mapping
+title: Zielgruppen-Mapping
 description: Erfahren Sie, wie Sie ein Zielgruppen-Mapping erstellen
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 38333669-5598-4811-a121-b677c1413f56
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 2%
 
 ---
 
-
 # Zielgruppen-Mapping{#target-mapping}
 
 Die Erstellung von Zielgruppen-Mappings ist in zwei Fällen erforderlich:
 
-* wenn Sie eine andere als die von Adobe Campaign bereitgestellte Empfänger-Tabelle verwenden,
-* wenn Sie eine Filterdimension konfigurieren, die sich von der standardmäßigen Zielgruppendimension im Bildschirm &quot;Zielgruppen-Mapping&quot;unterscheidet.
+* wenn Sie eine andere als die von Adobe Campaign bereitgestellte Empfängertabelle verwenden,
+* wenn Sie im Zielgruppen-Mapping-Bildschirm eine von der Standard-Zielgruppendimension abweichende Filterdimension konfigurieren.
 
-Der Assistent zum Erstellen von Zielgruppen-Mappings hilft Ihnen, alle Schema zu erstellen, die zur Verwendung Ihrer benutzerdefinierten Tabelle erforderlich sind.
+Mit dem Assistenten zur Zielgruppen-Mapping-Erstellung können Sie alle Schemas erstellen, die zur Verwendung Ihrer benutzerdefinierten Tabelle erforderlich sind.
 
-## Erstellen und Konfigurieren von Schemas, die mit der benutzerdefinierten Tabelle {#creating-and-configuring-schemas-linked-to-the-custom-table} verknüpft sind
+## Erstellen und Konfigurieren von Schemata, die mit der benutzerdefinierten Tabelle {#creating-and-configuring-schemas-linked-to-the-custom-table} verknüpft sind
 
-Bevor Sie ein Zielgruppen-Mapping erstellen, sind mehrere Konfigurationen erforderlich, damit Adobe Campaign mit einem neuen Empfänger-Daten-Schema arbeiten kann.
+Bevor Sie ein Zielgruppen-Mapping erstellen, sind mehrere Konfigurationen erforderlich, damit Adobe Campaign mit einem neuen Empfängerdatenschema arbeiten kann.
 
 Gehen Sie hierzu wie folgt vor:
 
-1. Erstellen Sie ein neues Schema, das die zu verwendenden Felder der benutzerdefinierten Tabelle integriert.
+1. Erstellen Sie ein neues Datenschema, das die Felder der benutzerdefinierten Tabelle integriert, die Sie verwenden möchten.
 
-   Weitere Informationen finden Sie unter [Schema-Referenz (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
+   Weitere Informationen finden Sie unter [Schema reference (xtk:srcSchema)](../../configuration/using/about-schema-reference.md).
 
-   In unserem Beispiel erstellen wir ein Schema für Kunden, eine sehr einfache Tabelle mit den folgenden Feldern: ID, Vorname, Nachname, E-Mail-Adresse, Handynummer. Ziel ist es, E-Mail- oder SMS-Warnungen an die in dieser Tabelle gespeicherten Personen senden zu können.
+   In unserem Beispiel erstellen wir ein Kundenschema, eine sehr einfache Tabelle mit den folgenden Feldern: ID, Vorname, Nachname, E-Mail-Adresse, Mobiltelefonnummer. Ziel ist es, E-Mail- oder SMS-Warnungen an die in dieser Tabelle gespeicherten Personen senden zu können.
 
-   Schema (cus:single)
+   Beispielschema (cus:einzeln)
 
    ```
    <srcSchema name="individual" namespace="cus" label="Individuals">
@@ -53,7 +51,7 @@ Gehen Sie hierzu wie folgt vor:
    </srcSchema>
    ```
 
-1. Deklarieren Sie Ihr Schema als externe Ansicht mit dem Attribut =&quot;true&quot;. Weitere Informationen finden Sie unter [Das Ansichten-Attribut](../../configuration/using/schema-characteristics.md#the-view-attribute).
+1. Deklarieren Sie Ihr Schema als externe Ansicht mit dem Attribut =&quot;true&quot;. Siehe [Das Ansichtsattribut](../../configuration/using/schema-characteristics.md#the-view-attribute).
 
    ```
     <srcSchema desc="External recipient table" namespace="cus" view="true"....>
@@ -61,7 +59,7 @@ Gehen Sie hierzu wie folgt vor:
     </srcSchema>
    ```
 
-1. Wenn Sie eine E-Mail-Adresse hinzufügen müssen, verwenden Sie bitte die folgende Struktur:
+1. Wenn Sie eine Briefpost-Adresse hinzufügen müssen, verwenden Sie die folgende Struktur:
 
    ```
    <element advanced="true" name="postalAddress" template="nms:common:postalAddress">
@@ -82,47 +80,47 @@ Gehen Sie hierzu wie folgt vor:
       </element>
    ```
 
-1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Zielgruppen-Mappings]**.
-1. Klicken Sie auf die Schaltfläche **Neu**, um den Assistenten zum Erstellen von Zielgruppen-Mappings zu öffnen.
-1. Geben Sie das Feld **Beschriftung** ein und wählen Sie das Schema aus, das Sie soeben im Feld **Zielgruppendimension** erstellt haben.
+1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Kampagnenverwaltung > Zielgruppen-Mappings]** .
+1. Klicken Sie auf die Schaltfläche **Neu** , um den Assistenten zur Erstellung des Zielgruppen-Mappings zu öffnen.
+1. Geben Sie das Feld **Titel** ein und wählen Sie das Schema aus, das Sie gerade im Feld **Zielgruppendimension** erstellt haben.
 
    ![](assets/mapping_diffusion_wizard_1.png)
 
-1. Wählen Sie im Fenster **Adressformulare bearbeiten** die Felder des Schemas aus, die den verschiedenen Versand-Adressen entsprechen. Hier können wir die Felder **@email** und **@mobile** zuordnen.
+1. Wählen Sie im Fenster **Adressformulare bearbeiten** die Felder des Schemas aus, die den verschiedenen Versandadressen entsprechen. Hier können wir die Felder **@email** und **@mobile** zuordnen.
 
    ![](assets/mapping_diffusion_wizard_2.png)
 
-1. Geben Sie im folgenden Fenster **Datenspeicherung** das Suffix **der Erweiterungsschema** ein, um zwischen den neuen Schemas und den von Adobe Campaign bereitgestellten vordefinierten Schemas zu unterscheiden.
+1. Geben Sie im folgenden **Storage**-Fenster das **Suffix der Erweiterungsschemas** -Feld ein, um die neuen Schemas von den von Adobe Campaign bereitgestellten nativen Schemata zu unterscheiden.
 
-   Klicken Sie auf **[!UICONTROL Definieren Sie neue zusätzliche Felder]**, um die Dimension auszuwählen, die Sie in Ihrem Versand Zielgruppe haben möchten.
+   Klicken Sie auf **[!UICONTROL Neue zusätzliche Felder definieren]** , um die Dimension auszuwählen, die Sie in Ihrem Versand als Ziel auswählen möchten.
 
-   Standardmäßig wird die Ausschlussverwaltung in denselben Tabellen wie Nachrichten gespeichert. Markieren Sie das Feld **Datenspeicherung-Schema zur Verfolgung** erstellen, wenn Sie die Datenspeicherung für die mit Ihrem Zielgruppen-Mapping verknüpfte Verfolgung konfigurieren möchten.
+   Standardmäßig wird die Ausschlussverwaltung in denselben Tabellen wie Nachrichten gespeichert. Kreuzen Sie die Option **Speicherschema für Tracking erzeugen** an, wenn Sie die Speicherung für das Tracking konfigurieren möchten, das mit Ihrem Zielgruppen-Mapping verknüpft ist.
 
    ![](assets/mapping_diffusion_wizard_3.png)
 
    >[!IMPORTANT]
    >
-   >Adobe Campaign unterstützt nicht mehrere Empfänger-Schema, die als Targeting-Schema bezeichnet werden und mit denselben Broadlog- und/oder Trackinglog-Schemas verknüpft sind. Andernfalls kann dies zu Anomalien bei der Datenabstimmung im Anschluss führen. Weitere Informationen hierzu finden Sie auf der Seite [Empfehlung und Beschränkungen](../../configuration/using/about-custom-recipient-table.md).
+   >Adobe Campaign unterstützt nicht mehrere Empfängerschemata, so genannte Zielgruppenschemas, die mit denselben Broadlog- und/oder Trackinglog-Schemata verknüpft sind. Dies kann andernfalls zu Anomalien bei der Datenabstimmung später führen. Weitere Informationen hierzu finden Sie auf der Seite [Empfehlung und Einschränkungen](../../configuration/using/about-custom-recipient-table.md) .
 
-1. Wählen Sie im Fenster **Erweiterungen** die optionalen Schema aus, die Sie erstellen möchten (die Liste der verfügbaren Schema hängt von den auf der Adobe Campaign-Plattform installierten Modulen ab).
+1. Wählen Sie im Fenster **Erweiterungen** die optionalen Schemata aus, die Sie erstellen möchten (die Liste der verfügbaren Schemas hängt von den auf der Adobe Campaign-Plattform installierten Modulen ab).
 
    ![](assets/mapping_diffusion_wizard_4.png)
 
-1. Klicken Sie auf die Schaltfläche **Speichern**, um den Assistenten zu schließen.
+1. Klicken Sie auf die Schaltfläche **Speichern** , um den Assistenten zu schließen.
 
-   Der Assistent verwendet das Beginn-Schema, um alle anderen Schema zu erstellen, die erforderlich sind, damit das neue Zielgruppen-Mapping funktioniert.
+   Der Assistent verwendet das Startschema, um alle anderen Schemata zu erstellen, die für die Funktionsfähigkeit des neuen Zielgruppen-Mappings erforderlich sind.
 
    ![](assets/mapping_schema_list.png)
 
-## Zielgruppen-Mapping {#using-target-mapping}
+## Zielgruppen-Mapping {#using-target-mapping} verwenden
 
 Es gibt zwei Möglichkeiten, das neue Schema als Zielgruppe eines Versands zu verwenden:
 
-* Erstellen Sie eine oder mehrere Versandvorlagen basierend auf der Zuordnung
-* Wählen Sie beim Erstellen eines Versands die Zuordnung direkt während der Auswahl der Zielgruppe aus, wie nachfolgend gezeigt:
+* Erstellen einer oder mehrerer Versandvorlagen basierend auf dem Mapping
+* Wählen Sie beim Erstellen eines Versands direkt das Mapping während der Zielgruppenauswahl aus, wie unten dargestellt:
 
 ![](assets/mapping_selection_ciblage.png)
 
 **Verwandtes Thema**
 
-* [Reagieren Sie schnell auf Kundenanfragen, um auf ihre Daten zuzugreifen](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)
+* [Schnelle Beantwortung von Kundenanfragen für den Zugriff auf ihre Daten](https://helpx.adobe.com/campaign/kb/simplifying-campaign-management-acc.html#Quicklyrespondtocustomerrequeststoaccesstheirdata)
