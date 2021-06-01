@@ -7,10 +7,9 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: ae6eb4b0-b419-4661-9d63-e758f0242a0f
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '354'
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
+workflow-type: tm+mt
+source-wordcount: '346'
 ht-degree: 100%
 
 ---
@@ -27,7 +26,7 @@ Drei Einfügemodi stehen zur Verfügung:
 
 1. Eingabe einzelner Testadressen.
 
-   Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und füllen Sie die Adressfelder aus. Dies ist für jede zu erstellende Adresse zu wiederholen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../message-center/using/managing-seed-addresses-in-transactional-messages.md#creating-a-seed-address).
+   Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]** und füllen Sie die Adressfelder aus. Dies ist für jede zu erstellende Adresse zu wiederholen.
 
 1. Import von Adressenvorlagen, die je nach Bedarf angepasst werden können.
 
