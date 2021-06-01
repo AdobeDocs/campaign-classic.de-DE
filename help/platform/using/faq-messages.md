@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Häufig gestellte Fragen zum Testen und Senden
 description: Häufig gestellte Fragen zu Campaign Classic
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -39,7 +37,7 @@ Testadressen ermöglichen den Versand an Empfänger, die nicht den vorliegenden 
 
 Testadressen bieten folgende Möglichkeiten:
 
-* Fehlende Werte werden durch Empfängerdaten aus der Zielgruppe ersetzt (Zufallsauswahl). So ist es beispielsweise möglich in Testadressen nur die E-Mail-Adresse anzugeben.
+* Fehlende Werte werden durch Empfängerdaten aus der Zielgruppe ersetzt (Zufallsauswahl). So ist es beispielsweise möglich, in Testadressen nur die E-Mail-Adresse anzugeben.
 * Bei Workflows mit Datamanagement-Funktionen können die im Versand genutzten zusätzlichen Daten auf Ebene der Testadressen angegeben werden, um den entsprechenden Wert zu erzwingen. Auf diese Weise umgeht man die zufällige Wertersetzung.
 
 [Hier erfahren Sie mehr zu Testadressen](../../delivery/using/about-seed-addresses.md).
