@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit Upgrades
 description: Weiterführende Informationen zu Campaign Classic-Upgrades
@@ -7,7 +6,7 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 98%
@@ -38,7 +37,7 @@ Der **aktuelle RC-Build** ist [Campaign Classic-Version 21.1](../../rn/using/la
 
 ![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Bestehende Implementierungen müssen aktualisiert werden.
 
-## Empfehlungen      {#recommendations}
+## Recommendations{#recommendations}
 
 Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Build auf allen Servern installieren, die mit derselben Client-Konfiguration ausgeführt werden.
 
