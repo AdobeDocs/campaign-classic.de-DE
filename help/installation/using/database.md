@@ -1,37 +1,35 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Empfehlungen zur Campaign Classic-Datenbank
+title: Empfehlungen für die Campaign Classic-Datenbank
 description: Datenbankempfehlungen
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8a0426c1-9e8d-4053-bc2b-6a550e2eed2f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 2%
 
 ---
 
-
 # Datenbank{#database}
 
-Der Datenbankserver kann auf einem beliebigen Betriebssystem ausgeführt werden, unabhängig vom Betriebssystem, das vom Anwendungsserver oder von den Servern verwendet wird, sofern eine Netzwerkverbindung besteht.
+Der Datenbankserver kann unabhängig vom vom vom Anwendungsserver oder den Servern verwendeten Betriebssystem auf einem beliebigen Betriebssystem ausgeführt werden, sofern eine Netzwerkverbindung besteht.
 
 Das Betriebssystem des Datenbankservers ist nicht wichtig, solange die Verbindung mit den verschiedenen Komponenten von Adobe Campaign verfügbar ist.
 
-Überprüfen Sie auch den Abschnitt [Ebenen für den Datenbankzugriff](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).
+Überprüfen Sie auch den Abschnitt [Datenbankzugriffsebenen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers) .
 
 ## Microsoft SQL Server {#microsoft-sql-server}
 
 Der native Client muss auf den Adobe Campaign-Anwendungsservern installiert sein.
 
-Sie können den nativen Client auf dem Server über das ODBC-Treiberkonfigurationsbedienfeld unter **SQL Server Native Client 11.0** suchen.
+Sie können über das Konfigurationsfenster des ODBC-Treibers unter **SQL Server Native Client 11.0** nach dem nativen Client auf dem Server suchen.
 
 Die folgende Zugriffs-DLL muss vorhanden sein: **sqlncli11.dll**.
 
-Zugriff auf DLLs finden Sie auf der Microsoft-Website.
+Zugriffs-DLLs finden Sie auf der Microsoft-Website.
 
 >[!NOTE]
 >
@@ -41,13 +39,13 @@ Zugriff auf DLLs finden Sie auf der Microsoft-Website.
 
 >[!NOTE]
 >
->Spaltennamen mit Multibyte-Zeichen werden nicht unterstützt.
+>Spaltennamen mit Multibytezeichen werden nicht unterstützt.
 
 Die Parameter **NLS_NCHAR_CHARACTERSET** und **NLS_CHARACTERSET** müssen ordnungsgemäß konfiguriert sein, damit die Datenbank in Unicode oder ANSI funktioniert.
 
-Adobe Campaign verwendet die Oracle-Standardkodierung. Die Verwendung anderer Kodierungen kann Probleme mit der Kompatibilität mit Triggern verursachen: in diesem Fall wenden Sie sich bitte an den technischen Support.
+Adobe Campaign verwendet die standardmäßige Oracle-Kodierung. Die Verwendung einer anderen Kodierung kann Probleme mit der Kompatibilität der Trigger verursachen: Wenden Sie sich in diesem Fall an den technischen Support.
 
-Um mehr über Ihre Kodierung zu erfahren, verwenden Sie den folgenden Befehl **sqlplus**:
+Um mehr über Ihre Kodierung zu erfahren, verwenden Sie den folgenden **sqlplus**-Befehl:
 
 ```
 SELECT * FROM nls_database_parameters ;
@@ -66,7 +64,7 @@ SELECT * FROM nls_database_parameters ;
   NLS_CHARACTERSET WE8MSWIN1252
 ```
 
-Um sich bei **sqlplus** anzumelden, verwenden Sie das Oracle-Profil:
+Um sich bei **sqlplus** anzumelden, verwenden Sie das Oracle-Benutzerprofil:
 
 ```
 su - oracle 
