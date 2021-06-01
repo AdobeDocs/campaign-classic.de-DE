@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Technische E-Mail-Konfiguration
-description: Erfahren Sie, wie Sie die Kampagne konfigurieren, um die Ausgabe Ihrer Instanzen bei der Bereitstellung von E-Mails zu steuern.
+description: Erfahren Sie, wie Sie Campaign so konfigurieren, dass die Ausgabe Ihrer Instanzen beim Versand von E-Mails gesteuert wird.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-translation-type: tm+mt
-source-git-commit: c62caeacd374b31f597f3c4b23318b8705fbda61
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '3089'
 ht-degree: 20%
@@ -19,111 +17,111 @@ ht-degree: 20%
 
 ## Übersicht {#overview}
 
-Im folgenden Abschnitt erhalten Sie einen Überblick über die Konfiguration, die zur Steuerung der Ausgabe von Adobe Campaign-Instanzen bei der Bereitstellung von E-Mails erforderlich ist.
+Im folgenden Abschnitt finden Sie einen Überblick über die Konfiguration, die zum Steuern der Ausgabe von Adobe Campaign-Instanzen beim Versand von E-Mails erforderlich ist.
 
 >[!NOTE]
 >
->Einige Konfigurationen können nur von der Adobe für Bereitstellungen ausgeführt werden, die von der Adobe gehostet werden, z. B. für den Zugriff auf die Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting models](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
+>Einige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden, z. B. für den Zugriff auf Server- und Instanzkonfigurationsdateien. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
-Weitere Informationen zu den Konzepten und Best Practices im Zusammenhang mit der Lieferbarkeit mit Adobe Campaign finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
+Weitere Informationen zu Konzepten und Best Practices im Zusammenhang mit der Zustellbarkeit mit Adobe Campaign finden Sie in diesem Abschnitt [Abschnitt](../../delivery/using/about-deliverability.md).
 
-Einen tieferen Einblick in die Lieferbarkeit, einschließlich aller technischen Empfehlungen zum effizienten Versenden und Empfangen von E-Mails durch eine Adobe, finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de) zur Adobe-Auslieferung.
+Einen tieferen Einblick in die Zustellbarkeit, einschließlich aller technischen Empfehlungen bezüglich des effizienten Versands und Erhalts von E-Mails durch eine Adobe-Plattform, finden Sie im [Best Practice-Handbuch zur Zustellbarkeit von Adoben](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 ## Grundprinzip {#operating-principle}
 
-Es ist möglich, die Ausgabe einer oder mehrerer Instanzen eines Adobe Campaigns zu steuern, um die Anzahl der gesendeten E-Mails je nach Domäne einzuschränken. Beispielsweise können Sie die Ausgabe für **yahoo.com**-Adressen auf 20.000 pro Stunde beschränken, während Sie 100.000 Nachrichten pro Stunde für alle anderen Domänen konfigurieren.
+Die Ausgabe einer oder mehrerer Adobe Campaign-Instanzen kann gesteuert werden, um die Anzahl der gesendeten E-Mails auf die jeweilige Domain zu begrenzen. Sie können beispielsweise die Ausgabe für **yahoo.com**-Adressen auf 20.000 pro Stunde beschränken und gleichzeitig 100.000 Nachrichten pro Stunde für alle anderen Domänen konfigurieren.
 
-Die Nachrichtenausgabe muss für jede IP-Adresse gesteuert werden, die von den Versand-Servern verwendet wird (**mta**). Mehrere **mta**, die auf mehreren Computern unterteilt sind und zu verschiedenen Adobe Campaign-Instanzen gehören, können dieselbe IP-Adresse für E-Mail-Versand verwenden: Es muss ein Prozess zur Koordinierung der Verwendung dieser IP-Adressen eingerichtet werden.
+Die Nachrichtenausgabe muss für jede von den Versandservern verwendete IP-Adresse gesteuert werden (**mta**). Mehrere **mta**, die auf mehrere Computer verteilt sind und zu verschiedenen Adobe Campaign-Instanzen gehören, können dieselbe IP-Adresse für den E-Mail-Versand verwenden: Es muss ein Prozess eingerichtet werden, um die Verwendung dieser IP-Adressen zu koordinieren.
 
-Das **stat**-Modul tut Folgendes: es leitet alle Verbindungsanfragen und Nachrichten für eine Reihe von IP-Adressen an die Mailserver weiter. Der Statistikserver verfolgt die Versand und kann das Senden je nach festgelegten Quoten aktivieren oder deaktivieren.
+Das **stat**-Modul bewirkt Folgendes: leitet alle Verbindungsanfragen und -nachrichten für eine Reihe von IP-Adressen an die E-Mail-Server weiter. Der Statistikserver verfolgt die Sendungen und kann den Versand auf der Grundlage festgelegter Kontingente aktivieren oder deaktivieren.
 
 ![](assets/s_ncs_install_mta.png)
 
-* Der Statistikserver (**stat**) ist mit einer Adobe Campaign-Basis verknüpft, um die Konfiguration zu laden.
-* Die Versand-Server (**mta**) verwenden eine UDP, um einen Statistikserver zu kontaktieren, der nicht immer zu ihrer eigenen Instanz gehört.
+* Der Statistikserver (**stat**) ist mit einer Adobe Campaign-Basis verknüpft, um seine Konfiguration zu laden.
+* Die Versandserver (**mta**) verwenden eine UDP, um einen Statistikserver zu kontaktieren, der nicht immer zu ihrer eigenen Instanz gehört.
 
-### Versand-Server {#delivery-servers}
+### Versandserver {#delivery-servers}
 
-Das **mta**-Modul verteilt Nachrichten an seine untergeordneten Module **mtachild**. Jeder **mtachild** bereitet Nachrichten vor, bevor eine Autorisierung vom Statistikserver angefordert und gesendet wird.
+Das Modul **mta** verteilt Nachrichten an seine untergeordneten **mtachild**-Module. Jeder **mtachild** bereitet Nachrichten vor, bevor eine Autorisierung vom Statistikserver angefordert und gesendet wird.
 
 Zusammenfassend sind folgende Etappen zu durchlaufen:
 
-1. Die **mta** wählt die zulässigen Meldungen aus und weist ihnen eine verfügbare **mtachild** zu.
-1. Das **mtachild** lädt alle zum Erstellen der Nachricht erforderlichen Informationen (Inhalt, Personalisierungselemente, Anlagen, Bilder usw.) und leitet die Nachricht an den **Email Traffic Shaper** weiter.
-1. Sobald der E-Mail-Traffic-Gestalter die Autorisierung des Statistikservers (**smtp stat**) erhält, wird die Nachricht an den Empfänger gesendet.
+1. **mta** wählt die geeigneten Nachrichten aus und weist ihnen eine verfügbare **mtachild** zu.
+1. **mtachild** lädt alle Informationen, die zum Erstellen der Nachricht erforderlich sind (Inhalt, Personalisierungselemente, Anhänge, Bilder usw.) leitet die Nachricht an **Email Traffic Shaper** weiter.
+1. Sobald der E-Mail-Traffic-Planer die Autorisierung des Statistikservers (**smtp stat**) erhält, wird die Nachricht an den Empfänger gesendet.
 
 ![](assets/s_ncs_install_email_traffic_shaper.png)
 
-### E-Mail-Serverstatistiken und -Beschränkungen {#email-server-statistics-and-limitations}
+### Statistiken zu E-Mail-Servern und Einschränkungen {#email-server-statistics-and-limitations}
 
 Der Statistikserver verwaltet die folgenden Statistiken für jeden E-Mail-Server, der Nachrichten erhält:
 
-* Anzahl der offenen Point-in-Time-Verbindungen,
+* Anzahl der geöffneten Point-in-Time-Verbindungen,
 * Anzahl der in der letzten Stunde gesendeten Nachrichten,
 * Rate erfolgreicher/abgelehnter Verbindungen,
-* Anzahl der Verbindungen zu unerreichbar-Servern.
+* Rate der Verbindungen zu unerreichbaren Servern.
 
 Gleichzeitig lädt das Modul eine Liste von Einschränkungen für bestimmte E-Mail-Server:
 
-* Maximale Anzahl gleichzeitiger Verbindungen,
-* maximale Anzahl von Nachrichten pro Stunde,
-* Maximale Anzahl von Nachrichten pro Verbindung.
+* Maximale Anzahl simultaner Verbindungen,
+* Maximale Nachrichtenanzahl pro Stunde,
+* Maximale Anzahl an Nachrichten pro Verbindung.
 
 ### Verwalten von IP-Adressen {#managing-ip-addresses}
 
-Der Statistikserver kann mehrere Instanzen oder mehrere Computer mit derselben öffentlichen IP-Adresse kombinieren. Es ist daher nicht mit einer bestimmten Instanz verknüpft, sondern muss eine Instanz kontaktieren, um Einschränkungen pro Domäne wiederherzustellen.
+Der Statistikserver kann mehrere Instanzen oder mehrere Computer mit derselben öffentlichen IP-Adresse kombinieren. Sie ist daher nicht mit einer bestimmten Instanz verknüpft, muss sich jedoch an eine Instanz wenden, um die Einschränkungen pro Domäne wiederherzustellen.
 
-Für jede Zielgruppe MX und für jede Quell-IP werden Versand-Statistiken gespeichert. Wenn die Zieldomäne beispielsweise 5 MX hat und die Plattform 3 verschiedene IP-Adressen verwenden kann, kann der Server bis zu 15 Reihen von Indikatoren für diese Domäne verwalten.
+Versandstatistiken werden für jeden Ziel-MX und für jede Quell-IP-Adresse aufbewahrt. Wenn die Zieldomäne beispielsweise über 5 MX verfügt und die Plattform 3 verschiedene IP-Adressen verwenden kann, kann der Server bis zu 15 verschiedene Indikatoren für diese Domäne verwalten.
 
-Die Quell-IP-Adresse stimmt mit der öffentlichen IP-Adresse überein, d. h. mit der Adresse, die vom Remote-E-Mail-Server angezeigt wird. Diese IP-Adresse kann sich von der Adresse des Computers unterscheiden, auf dem **mta** gehostet wird, wenn ein NAT-Router angegeben ist. Aus diesem Grund verwendet der Statistikserver eine Kennung, die mit der öffentlichen IP (**publicId**) übereinstimmt. Die Verbindung zwischen der lokalen Adresse und dieser Kennung wird in der Konfigurationsdatei **serverConf.xml** deklariert. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+Die Quell-IP-Adresse entspricht der öffentlichen IP-Adresse, d. h. der Adresse, wie sie vom Remote-E-Mail-Server angezeigt wird. Diese IP-Adresse kann sich von der Adresse des Computers unterscheiden, der als Host für **mta** dient, wenn ein NAT-Router bereitgestellt wird. Aus diesem Grund verwendet der Statistikserver eine Kennung, die mit der öffentlichen IP (**publicId**) übereinstimmt. Die Verbindung zwischen der lokalen Adresse und dieser Kennung wird in der Konfigurationsdatei **serverConf.xml** deklariert. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-## Versand-Ausgabesteuerung {#delivery-output-controlling}
+## Steuerung der Versandausgabe {#delivery-output-controlling}
 
-Um Nachrichten an E-Mail-Server zu senden, fordert die Komponente **E-Mail-Traffic-Shaper** eine Verbindung vom Statistikserver an. Sobald die Anforderung akzeptiert wurde, wird die Verbindung geöffnet.
+Um Nachrichten an E-Mail-Server zu senden, fordert die Komponente **Email Traffic Shaper** eine Verbindung vom Statistikserver an. Sobald die Anfrage akzeptiert wurde, wird die Verbindung geöffnet.
 
-Vor dem Senden von Nachrichten fordert das Modul Token vom Server an. Dies sind im Allgemeinen Sätze von mindestens 10 Token, was die Anzahl der Abfragen auf den Server verringert.
+Vor dem Senden von Nachrichten fordert das Modul &quot;Tokens&quot;vom Server an. Dies sind im Allgemeinen Sets von mindestens 10 Token, wodurch die Anzahl der Abfragen an den Server verringert wird.
 
-Der Server speichert alle Statistiken zu Verbindungen und Versänden. Beim Neustart gehen die Informationen vorübergehend verloren: Jeder Kunde speichert eine lokale Kopie seiner Versandstatistik und gibt diese regelmäßig (alle 2 Minuten) an den Server zurück. Der Server kann die Daten dann erneut Aggregat machen.
+Der Server speichert alle Statistiken bezüglich Verbindungen und Sendungen. Im Falle eines Neustart gehen die Informationen vorübergehend verloren: Jeder Client speichert eine lokale Kopie seiner Versandstatistiken und gibt diese regelmäßig (alle 2 Minuten) an den Server zurück. Der Server kann die Daten dann erneut aggregieren.
 
-Die folgenden Abschnitte beschreiben die Verarbeitung einer Nachricht durch die Komponente **Email Traffic Shaper**.
+In den folgenden Abschnitten wird die Verarbeitung einer Nachricht durch die Komponente **Email Traffic Shaper** beschrieben.
 
-### Message Versand {#message-delivery}
+### Nachrichtenversand {#message-delivery}
 
-Wenn eine Nachricht gesendet wird, gibt es 3 mögliche Ergebnisse:
+Wenn eine Nachricht gesendet wird, gibt es drei mögliche Ergebnisse:
 
 1. **Erfolg**: die Nachricht erfolgreich gesendet wurde. Die Nachricht wird aktualisiert.
-1. **Meldung fehlgeschlagen**: der kontaktierte Server hat die Nachricht für den ausgewählten Empfänger abgelehnt. Dieses Ergebnis stimmt mit den Rückgabecodes 550 bis 599 überein, Ausnahmen können jedoch definiert werden.
-1. **Sitzung fehlgeschlagen**  (5.11 nach oben): Wenn die  **** Metrik eine Antwort für diese Nachricht erhält, wird die Nachricht abgebrochen (siehe  [Abbruch](#message-abandonment) der Nachricht). Die Nachricht wird an einen anderen Pfad gesendet oder auf &quot;Ausstehend&quot;eingestellt, wenn keine anderen Pfade verfügbar sind (siehe [Meldung ausstehend](#message-pending)).
+1. **Nachricht fehlgeschlagen**: Der kontaktierte Server hat die Nachricht für den ausgewählten Empfänger abgelehnt. Dieses Ergebnis entspricht den Rückgabecodes 550 bis 599, es können jedoch Ausnahmen definiert werden.
+1. **Sitzung fehlgeschlagen**  (für 5.11 nach oben): Wenn der  **** Empfänger eine Antwort auf diese Nachricht erhält, wird die Nachricht abgebrochen (siehe  [Nachrichtenabbruch](#message-abandonment)). Die Nachricht wird an einen anderen Pfad gesendet oder auf &quot;Ausstehend&quot; gesetzt, wenn keine anderen Pfade verfügbar sind (siehe [Nachricht ausstehend](#message-pending)).
 
    >[!NOTE]
    >
-   >Ein **Pfad** ist eine Verbindung zwischen dem Adobe Campaign **mta** und der Zielgruppe **mta**. Das Adobe Campaign **mta** kann aus mehreren Beginn-IPs und mehreren Zielgruppen-Domänen-IPs wählen.
+   >Ein **path** ist eine Verbindung zwischen der Adobe Campaign **mta** und der Zielgruppe **mta**. Die Adobe Campaign **mta** kann aus mehreren Start-IPs und mehreren Ziel-Domain-IPs wählen.
 
-### Abbruch der Meldung {#message-abandonment}
+### Nachrichtenabbruch {#message-abandonment}
 
 Abgebrochene Nachrichten werden an **mta** zurückgegeben und nicht mehr von **mtachild** verwaltet.
 
-Das **mta** entscheidet über das Verfahren für diese Meldung (Wiederherstellung, Abbruch, Quarantäne usw.) abhängig vom Antwortcode und den Regeln.
+Die **mta** entscheidet über das Verfahren für diese Nachricht (Wiederherstellung, Abbruch, Quarantäne usw.) abhängig vom Antwort-Code und den Regeln.
 
-### Meldung ausstehend {#message-pending}
+### Nachricht ausstehend {#message-pending}
 
-Eine Meldung wird blockiert, wenn sie in die aktive Warteschlange gelangt und keine verfügbaren Pfade vorhanden sind.
+Wenn eine Nachricht in die aktive Warteschlange gelangt, wird sie ausgesetzt und es sind keine Pfade verfügbar.
 
-Ein Pfad wird im Allgemeinen als für einen variablen Zeitraum nach einem Verbindungsfehler nicht verfügbar markiert. Die Dauer der Nichtverfügbarkeit hängt von der Häufigkeit und dem Alter der Fehler ab.
+Ein Pfad wird im Allgemeinen für einen variablen Zeitraum nach einem Verbindungsfehler als nicht verfügbar markiert. Die Dauer der Nichtverfügbarkeit hängt von der Häufigkeit und dem Alter der Fehler ab.
 
 ## Konfiguration des Statistikservers {#statistics-server-configuration}
 
-Der Statistikserver kann von mehreren Instanzen verwendet werden: Es muss unabhängig von den Instanzen konfiguriert werden, die es verwenden werden.
+Der Statistikserver kann von mehreren Instanzen verwendet werden: Sie muss unabhängig von den Instanzen konfiguriert werden, die sie verwenden.
 
-Beginn durch Definieren der Adobe Campaign-Datenbank, in der die Konfiguration gehostet wird.
+Definieren Sie zunächst die Adobe Campaign-Datenbank, in der die Konfiguration gehostet wird.
 
-### Beginn-Konfiguration {#start-configuration}
+### Konfiguration starten {#start-configuration}
 
-Standardmäßig wird für jede Instanz das Modul **stat** gestartet. Wenn die Instanzen auf demselben Computer mutualisiert werden oder wenn Instanzen dieselbe IP-Adresse haben, wird ein einzelner Statistikserver verwendet: die anderen müssen deaktiviert sein.
+Standardmäßig wird für jede Instanz das Modul **stat** gestartet. Wenn die Instanzen auf demselben Computer mutualisiert werden oder wenn Instanzen dieselbe IP-Adresse teilen, wird ein einzelner Statistikserver verwendet: die anderen müssen deaktiviert werden.
 
-### Definition des Serverports {#definition-of-the-server-port}
+### Definition des Serveranschlusses {#definition-of-the-server-port}
 
-Standardmäßig überwacht der Statistikserver den Anschluss 7777. Dieser Anschluss kann in der Datei **serverConf.xml** geändert werden. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
+Der Statistikserver überwacht standardmäßig den Port 7777. Dieser Anschluss kann in der Datei **serverConf.xml** geändert werden. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
 ```
 <stat port="1234"/>
@@ -139,11 +137,11 @@ Standardmäßig überwacht der Statistikserver den Anschluss 7777. Dieser Anschl
 
 >[!NOTE]
 >
->Dieser Abschnitt und die folgenden Abschnitte gelten nur für Installationen vor Ort und gehostete/hybride Installationen mit der Legacy-Kampagne MTA.
+>Dieser Abschnitt und die folgenden Abschnitte gelten nur für On-Premise-Installationen und gehostete/hybride Installationen, die den veralteten Campaign MTA verwenden.
 
 MX-Regeln (Mail eXchanger) dienen zur Verwaltung der Kommunikation zwischen einem Sender- und einem Empfangs-Server.
 
-Diese Regeln werden jeden Morgen um 6 Uhr (Serverzeit) automatisch neu geladen, um die Client-Instanz regelmäßig bereitzustellen.
+Diese Regeln werden automatisch jeden Morgen um 6 Uhr (Serverzeit) neu geladen, um die Client-Instanz regelmäßig bereitzustellen.
 
 Je nach Materialkapazitäten und internen Richtlinien akzeptieren ISP eine vordefinierte Anzahl an Verbindungen und Nachrichten pro Stunde. Diese Variablen können unter Umständen automatisch durch ISP-Systeme abgeändert werden, was von der Reputation der IP- und Sender-Domain abhängt. Über die Zustellbarkeitsplattform werden in Adobe Campaign pro ISP mehr als 150 spezifische Regeln und zusätzlich eine allgemeine Regel für andere Domains verwaltet.
 
@@ -212,20 +210,20 @@ Diese Nachrichten werden so schnell wie möglich gesendet.
 
 ### MX-Verwaltung konfigurieren {#configuring-mx-management}
 
-Die für MX einzuhaltenden Regeln werden im Dokument **[!UICONTROL MX management]** des Knotens **[!UICONTROL Administration > Kampagnenverwaltung > Nicht bereitstellbares Management > Mail-Regelsätze]** des Baums definiert.
+Die für MX einzuhaltenden Regeln werden im Dokument **[!UICONTROL MX-Verwaltung]** des Knotens **[!UICONTROL Administration > Kampagnenverwaltung > Unzustellbarkeitsverwaltung > E-Mail-Regelsätze]** des Navigationsbaums definiert.
 
-Wenn das Dokument **[!UICONTROL MX management]** nicht im Knoten vorhanden ist, können Sie es manuell erstellen. Gehen Sie dazu wie folgt vor:
+Wenn das Dokument **[!UICONTROL MX management]** im Knoten nicht vorhanden ist, können Sie es manuell erstellen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie einen neuen Satz von E-Mail-Regeln.
-1. Wählen Sie den Modus **[!UICONTROL MX management]**.
+1. Wählen Sie den Modus **[!UICONTROL MX Management]** aus.
 
    ![](assets/s_ncs_install_mx_mgt_rule.png)
 
 1. Geben Sie **defaultMXRules** in das Feld **[!UICONTROL Interner Name]** ein.
 
-Damit Änderungen berücksichtigt werden, müssen Sie den Statistikserver neu starten.
+Damit Änderungen berücksichtigt werden können, müssen Sie den Statistikserver neu starten.
 
-Um die Konfiguration neu zu laden, ohne den Statistikserver neu zu starten, verwenden Sie den folgenden Befehl auf dem Computer, auf dem der Server gehostet wird: `nlserver stat -reload`
+Um die Konfiguration neu zu laden, ohne den Statistikserver neu zu starten, verwenden Sie den folgenden Befehl auf dem Computer, der den Server hostet: `nlserver stat -reload`
 
 >[!NOTE]
 >
@@ -233,11 +231,11 @@ Um die Konfiguration neu zu laden, ohne den Statistikserver neu zu starten, verw
 
 ### Konfigurieren von MX-Regeln {#configuring-mx-rules}
 
-Das Dokument **[!UICONTROL MX management]** Liste alle Domänen, die mit einer MX-Regel verknüpft sind.
+Das Dokument **[!UICONTROL MX-Verwaltung]** listet alle Domänen auf, die mit einer MX-Regel verknüpft sind.
 
 Die erste Regel, deren MX-Maske mit dem gewünschten MX kompatibel ist, wird angewendet.
 
-Die folgenden Parameter stehen für jede Regel zur Verfügung:
+Die folgenden Parameter sind für jede Regel verfügbar:
 
 * **[!UICONTROL MX-Maske]**: Domäne, auf die die Regel angewendet wird. Jede Regel definiert eine Adressenmaske des MX. Jeder MX, dessen Name dieser Adressenmaske entspricht, kommt somit infrage. Die Maske kann die Joker &quot;*&quot; und &quot;?&quot; enthalten.
 
@@ -262,43 +260,43 @@ Die folgenden Parameter stehen für jede Regel zur Verfügung:
    gmail.com mail exchanger = 30 alt3.gmail-smtp-in.l.google.com.
    ```
 
-   In diesem Fall wird die MX-Regel `*.google.com` verwendet. Wie Sie sehen können, stimmt die MX-Regelmaske nicht unbedingt mit der Domäne in der E-Mail überein. Die MX-Regeln, die für gmail.com E-Mail-Adressen angewendet werden, sind die mit der Maske `*.google.com`.
+   In diesem Fall wird die MX-Regel `*.google.com` verwendet. Wie Sie sehen können, stimmt die MX-Regelmaske nicht unbedingt mit der Domain in der E-Mail überein. Die MX-Regeln, die für die E-Mail-Adressen gmail.com angewendet werden, sind diejenigen mit der Maske `*.google.com`.
 
-* **[!UICONTROL Bereich der Bezeichner]**: Mit dieser Option können Sie die Bereiche der Bezeichner (publicID) angeben, für die die Regel gilt. Folgende Angaben sind möglich:
+* **[!UICONTROL Bereich der Kennungen]**: Mit dieser Option können Sie den Bereich der Kennungen (publicID) angeben, für den die Regel gilt. Folgende Angaben sind möglich:
 
    * Eine Ziffer: Die Regel wird nur für diese publicId angewendet,
    * Ein Zahlenbereich (**number1-number2**): Die Regel gilt für alle publicIDs zwischen diesen beiden Zahlen.
 
    >[!NOTE]
    >
-   >Wenn das Feld leer ist, gilt die Regel für alle Bezeichner.
+   >Wenn das Feld leer ist, gilt die Regel für alle Kennungen.
 
    Bei einer öffentlichen Kennung handelt es sich um eine interne Kennung einer öffentlichen IP, die von einem oder mehreren MTAs verwendet wird. Diese Art von Kennungen wird in der Datei **config-instance.xml** von MTA-Servern definiert.
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-* **[!UICONTROL Freigegeben]**: definiert den Umfang der Eigenschaften für diese MX-Regel. Wenn diese Option aktiviert ist, werden alle Parameter für alle in der Instanz verfügbaren IPs freigegeben. Wenn diese Option deaktiviert ist, werden die MX-Regeln für jede IP-Adresse definiert. Die maximale Anzahl der Nachrichten wird mit der Anzahl der verfügbaren IPs multipliziert.
-* **[!UICONTROL Maximale Anzahl Verbindungen]**: maximale Anzahl gleichzeitiger Verbindungen zur Domäne des Absenders.
-* **[!UICONTROL Maximale Anzahl der Nachrichten]**: maximale Anzahl von Nachrichten, die bei einer Verbindung gesendet werden können. Wenn die Meldungen diese Zahl überschreiten, wird die Verbindung geschlossen und eine neue geöffnet.
-* **[!UICONTROL Nachrichten pro Stunde]**: maximale Anzahl von Nachrichten, die innerhalb einer Stunde an die Domäne des Absenders gesendet werden können.
-* **[!UICONTROL Zeitlimit für Verbindung]**: Zeitschwellenwert für die Verbindung mit einer Domäne.
+* **[!UICONTROL Freigegeben]**: definiert den Umfang der Eigenschaften für diese MX-Regel. Wenn diese Option aktiviert ist, werden alle Parameter für alle in der Instanz verfügbaren IPs freigegeben. Wenn diese Option deaktiviert ist, werden die MX-Regeln für jede IP definiert. Die maximale Anzahl an Nachrichten wird mit der Anzahl der verfügbaren IPs multipliziert.
+* **[!UICONTROL Maximale Verbindungsanzahl]**: Maximale Anzahl simultaner Verbindungen mit der Absenderdomäne.
+* **[!UICONTROL Maximale Nachrichtenanzahl]**: maximale Anzahl von Nachrichten, die bei einer Verbindung gesendet werden können. Wenn die Nachrichten diese Anzahl überschreiten, wird die Verbindung geschlossen und eine neue geöffnet.
+* **[!UICONTROL Nachrichten pro Stunde]**: maximale Anzahl von Nachrichten, die innerhalb einer Stunde an die Absenderdomäne gesendet werden können.
+* **[!UICONTROL Zeitüberschreitung bei Verbindung]**: Zeitschwellenwert für die Verbindung mit einer Domäne.
 
    >[!NOTE]
    >
-   >Windows kann vor diesem Schwellenwert, der von Ihrer Windows-Version abhängt, ein **timeout** ausgeben.
+   >Windows kann vor dieser Schwelle eine **Zeitüberschreitung** ausgeben, die von Ihrer Windows-Version abhängt.
 
 * **[!UICONTROL Zeitüberschreitungsdaten]**: maximale Wartezeit nach dem Senden des Nachrichteninhalts (Abschnitt &quot;DATEN&quot;des SMTP-Protokolls).
-* **[!UICONTROL Timeout]**: maximale Wartezeit für andere Austausche mit dem SMTP-Server.
-* **[!UICONTROL TLS]**: Das TLS-Protokoll, mit dem Sie E-Mail-Versand verschlüsseln können, kann selektiv aktiviert werden. Für jede MX-Maske stehen die folgenden Optionen zur Verfügung:
+* **[!UICONTROL Zeitüberschreitung]**: maximale Wartezeit für andere Austausche mit dem SMTP-Server.
+* **[!UICONTROL TLS]**: Das TLS-Protokoll, das die Verschlüsselung von E-Mail-Sendungen ermöglicht, kann selektiv aktiviert werden. Für jede MX-Maske sind die folgenden Optionen verfügbar:
 
-   * **[!UICONTROL Standardkonfiguration]**: Dies ist die allgemeine Konfiguration, die in der Konfigurationsdatei &quot;serverConf.xml&quot;angegeben ist, die angewendet wird.
+   * **[!UICONTROL Standardkonfiguration]**: Dies ist die allgemeine Konfiguration, die in der angewendeten Konfigurationsdatei serverConf.xml angegeben ist.
 
       >[!IMPORTANT]
       >
       >Es wird nicht empfohlen, die Standardkonfiguration zu ändern.
 
    * **[!UICONTROL Deaktiviert]** : Die Nachrichten werden systematisch ohne Verschlüsselung gesendet.
-   * **[!UICONTROL Opportunistisch]** : Message Versand wird verschlüsselt, wenn der empfangende Server (SMTP) das TLS-Protokoll generieren kann.
+   * **[!UICONTROL Opportunistisch]** : Die Nachrichtenbereitstellung wird verschlüsselt, wenn der Empfangs-Server (SMTP) das TLS-Protokoll generieren kann.
 
 Konfigurationsbeispiel:
 
@@ -306,46 +304,46 @@ Konfigurationsbeispiel:
 
 >[!NOTE]
 >
->Weitere Informationen zur Verwendung von MX-Servern mit Adobe Campaign finden Sie unter [dieser Abschnitt](../../installation/using/using-mx-servers.md).
+>Weitere Informationen zur Verwendung von MX-Servern mit Adobe Campaign finden Sie in [diesem Abschnitt](../../installation/using/using-mx-servers.md).
 
 ### Verwalten von E-Mail-Formaten {#managing-email-formats}
 
-Sie können das Format der gesendeten Nachrichten definieren, sodass sich der angezeigte Inhalt automatisch an die Domäne der Adresse des jeweiligen Empfängers anpasst.
+Sie können das Format der gesendeten Nachrichten definieren, sodass sich der angezeigte Inhalt automatisch an die Domain der Empfängeradresse anpasst.
 
-Gehen Sie dazu zum Dokument **[!UICONTROL Verwaltung von E-Mail-Formaten]**, das sich unter **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Verwaltung für nicht bereitgestellte Elemente]** > **[!UICONTROL Mail-Regelsätze]** befindet.
+Gehen Sie dazu zum Dokument **[!UICONTROL Verwaltung der E-Mail-Formate]**, das sich unter **[!UICONTROL Administration]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Unzustellbarkeitsverwaltung]** > **[!UICONTROL E-Mail-Regelsätze]** befindet.
 
 Dieses Dokument enthält eine Liste aller vordefinierten Domänen, die den von Adobe Campaign verwalteten japanischen Formaten entsprechen. Weitere Informationen finden Sie in [diesem Dokument](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 ![](assets/mail_rule_sets.png)
 
-Mit dem Parameter **MIME structure** (Mehrzweck-Internet-Mail-Erweiterungen) können Sie die Nachrichtenstruktur definieren, die an die verschiedenen E-Mail-Clients gesendet wird. Dabei stehen drei Optionen zur Verfügung:
+Mit dem Parameter **MIME structure** (Multizweck Internet Mail Extensions) können Sie die Nachrichtenstruktur definieren, die an die verschiedenen E-Mail-Clients gesendet wird. Dabei stehen drei Optionen zur Verfügung:
 
-* **Mehrteilig**: Die Nachricht wird im Text- oder HTML-Format gesendet. Wenn das HTML-Format nicht akzeptiert wird, kann die Nachricht weiterhin im Textformat angezeigt werden.
+* **Multipart**: Die Nachricht wird im Text- oder HTML-Format gesendet. Wenn das HTML-Format nicht akzeptiert wird, kann die Nachricht weiterhin im Textformat angezeigt werden.
 
-   Standardmäßig ist die mehrteilige Struktur **multipart/alternative**, aber sie wird automatisch **multipart/related**, wenn ein Bild zur Nachricht hinzugefügt wird. Bestimmte Anbieter erwarten standardmäßig das Format **multipart/related**. Die Option **[!UICONTROL Erzwingen Sie, dass dieses Format mehrteilig/verwandt]** verwendet wird, auch wenn kein Bild angehängt wird.
+   Standardmäßig ist die mehrteilige Struktur **multipart/alternative**, sie wird jedoch automatisch **multipart/related**, wenn ein Bild zur Nachricht hinzugefügt wird. Einige Anbieter erwarten standardmäßig das **multipart/related**-Format. Die Option **[!UICONTROL Multipart/related]** setzt dieses Format auch dann fest, wenn kein Bild angehängt ist.
 
-* **HTML**: Es wird eine Nur-HTML-Nachricht gesendet. Wenn das HTML-Format nicht akzeptiert wird, wird die Meldung nicht angezeigt.
-* **Text**: Es wird eine Meldung im Format &quot;Nur Text&quot;gesendet. Der Vorteil von Textformatmeldungen ist ihre sehr geringe Größe.
+* **HTML**: Es wird nur eine HTML-Nachricht gesendet. Wenn das HTML-Format nicht akzeptiert wird, wird die Nachricht nicht angezeigt.
+* **Text**: Eine Nachricht im reinen Textformat wird gesendet. Der Vorteil von Textformat-Nachrichten besteht in ihrer sehr geringen Größe.
 
-Wenn die Option **[!UICONTROL Bildinklusion]** aktiviert ist, werden diese direkt im Text der E-Mail angezeigt. Die Bilder werden dann hochgeladen und die URL-Verknüpfungen werden durch ihren Inhalt ersetzt.
+Wenn die Option **[!UICONTROL Bildeinbindung]** aktiviert ist, werden diese direkt im Textkörper der E-Mail angezeigt. Die Bilder werden dann hochgeladen und die URL-Links werden durch ihren Inhalt ersetzt.
 
-Diese Option wird besonders vom japanischen Markt für **Deco-Mail**, **Decore Mail** oder **Design-Mail** verwendet. Weitere Informationen finden Sie in [diesem Dokument](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
+Diese Option wird besonders vom japanischen Markt für **Deco-mail**, **Decore Mail** oder **Decoration Mail** verwendet. Weitere Informationen finden Sie in [diesem Dokument](../../delivery/using/defining-the-email-content.md#sending-emails-on-japanese-mobiles).
 
 >[!IMPORTANT]
 >
->Das Einfügen von Bildern in eine E-Mail vergrößert deren Größe erheblich.
+>Das Einfügen von Bildern in eine E-Mail vergrößert diese erheblich.
 
-## Versand-Serverkonfiguration {#delivery-server-configuration}
+## Konfiguration des Versandservers {#delivery-server-configuration}
 
-### Synchronisierung der Uhr {#clock-synchronization}
+### Synchronisation der Uhren {#clock-synchronization}
 
-Die Uhren aller Server, aus denen die Adobe Campaign-Plattform (einschließlich der Datenbank) besteht, müssen synchronisiert und ihre Systeme auf dieselbe Zeitzone eingestellt werden.
+Die Uhren aller Server, aus denen die Adobe Campaign-Plattform besteht (einschließlich der Datenbank), müssen synchronisiert und ihre Systeme auf dieselbe Zeitzone eingestellt werden.
 
 ### Koordinaten des Statistikservers {#coordinates-of-the-statistics-server}
 
 Die Adresse des Statistikservers muss im **mta** angegeben werden.
 
-Mit der Eigenschaft **statServerAddress** des Elements **mta** der Konfiguration können Sie die Adresse und die Nummer des zu verwendenden Anschlusses angeben.
+Mit der Eigenschaft **statServerAddress** des Elements **mta** der Konfiguration können Sie die Adresse und die Nummer des zu verwendenden Ports angeben.
 
 ```
 <mta statServerAddress="emailStatServer:7777">
@@ -353,7 +351,7 @@ Mit der Eigenschaft **statServerAddress** des Elements **mta** der Konfiguration
  </mta>
 ```
 
-Um den Statistiserver auf demselben Computer zu verwenden, müssen Sie mindestens den Namen des Computers mit dem Wert **localhost** eingeben:
+Um den Statistikserver auf demselben Computer zu verwenden, müssen Sie mindestens den Namen des Computers mit dem Wert **localhost** eingeben:
 
 ```
  <mta statServerAddress="localhost">
@@ -361,13 +359,13 @@ Um den Statistiserver auf demselben Computer zu verwenden, müssen Sie mindesten
 
 >[!IMPORTANT]
 >
->Wenn dieses Feld nicht ausgefüllt wird, wird der Beginn **mta** nicht angezeigt.
+>Wenn dieses Feld nicht ausgefüllt ist, beginnt **mta** nicht.
 
 ### Liste der zu verwendenden IP-Adressen {#list-of-ip-addresses-to-use}
 
 Die Konfiguration für das Traffic-Management befindet sich im Element **mta/child/smtp** der Konfigurationsdatei.
 
-Für jedes **IPAffinity**-Element müssen Sie die IP-Adressen angeben, die für den Computer verwendet werden können.
+Für jedes Element **IPAffinity** müssen Sie die IP-Adressen deklarieren, die für den Computer verwendet werden können.
 
 Beispiel:
 
@@ -381,15 +379,15 @@ Beispiel:
 
 Die Parameter lauten wie folgt:
 
-* **Adresse**: dies ist die IP-Adresse des zu verwendenden MTA-Hostcomputers.
-* **heloHost**: dieser Bezeichner stellt die IP-Adresse dar, wie sie vom SMTP-Server angezeigt wird.
+* **Adresse**: Dies ist die IP-Adresse des zu verwendenden MTA-Hostcomputers.
+* **heloHost**: Diese Kennung stellt die IP-Adresse dar, wie sie vom SMTP-Server angezeigt wird.
 
-* **publicId**: Diese Informationen sind nützlich, wenn eine IP-Adresse von mehreren Adobe Campaign- **** Mtasbehind einem NAT-Router freigegeben wird. Der Statistikserver verwendet diesen Bezeichner, um die Verbindungsdaten zu speichern und Statistiken zwischen diesem Startpunkt und dem Zielgruppen-Server zu senden.
-* **Gewichtung**: können Sie die relative Häufigkeit der Verwendung der Adresse definieren. Standardmäßig haben alle Adressen eine Gewichtung von 1.
+* **publicId**: Diese Informationen sind nützlich, wenn eine IP-Adresse von mehreren Adobe Campaign- **** MTA-Routern gemeinsam genutzt wird. Der Statistikserver verwendet diese Kennung, um die Verbindung zu speichern und Statistiken zwischen diesem Startpunkt und dem Zielserver zu senden.
+* **weight**: ermöglicht die Bestimmung der relativen Häufigkeit der Adressenverwendung. Standardmäßig haben alle Adressen eine Gewichtung von 1.
 
 >[!NOTE]
 >
->In der Datei &quot;serverConf.xml&quot;müssen Sie sicherstellen, dass eine IP einem einzelnen Helohost mit einer eindeutigen Kennung (public_id) entspricht. Es kann nicht mehreren Helohosts zugeordnet werden, was zu Problemen bei der Einschränkung des Versands führen kann.
+>In der Datei &quot;serverConf.xml&quot;müssen Sie überprüfen, ob eine IP einem einzelnen Helohost mit einer eindeutigen Kennung (public_id) entspricht. Er kann nicht mehreren Helohosts zugeordnet werden, was zu Problemen bei der Versanddrosselung führen kann.
 
 Im vorherigen Beispiel werden die Adressen unter normalen Bedingungen wie folgt verteilt:
 
@@ -397,12 +395,12 @@ Im vorherigen Beispiel werden die Adressen unter normalen Bedingungen wie folgt 
     * &quot;2&quot;: 5 / (5+5+1) = 45%
     * &quot;3&quot;: 1 / (5+5+1) = 10%
 
-Wenn zum Beispiel die erste Adresse nicht für eine bestimmte MX verwendet werden kann, werden die Nachrichten wie folgt gesendet:
+Wenn beispielsweise die erste Adresse nicht für einen bestimmten MX verwendet werden kann, werden Nachrichten wie folgt gesendet:
 
     * &quot;2&quot;: 5 / (5+1) = 83%
-    * &quot;3&quot;: 1 / (5+1) = 17 %
+    * &quot;3&quot;: 1 / (5+1) = 17%
 
-* **includeDomains**: können Sie diese IP-Adresse für E-Mails einer bestimmten Domäne reservieren. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;*&#39;) enthalten können. Wenn das Attribut nicht angegeben ist, können alle Domänen diese IP-Adresse verwenden.
+* **includeDomains**: ermöglicht Ihnen, diese IP-Adresse für E-Mails zu reservieren, die zu einer bestimmten Domain gehören. Dies ist eine Liste von Masken, die einen oder mehrere Platzhalter (&#39;*&#39;) enthalten können. Wenn das Attribut nicht angegeben ist, können alle Domänen diese IP-Adresse verwenden.
 
    Beispiel: **includeDomains=&quot;wanadoo.com,orange.com,yahoo.*&quot;**
 
@@ -410,20 +408,20 @@ Wenn zum Beispiel die erste Adresse nicht für eine bestimmte MX verwendet werde
 
    ![](assets/s_ncs_install_mta_ips.png)
 
-## E-Mail-Optimierung {#email-sending-optimization}
+## Optimierung des E-Mail-Versands {#email-sending-optimization}
 
-Die interne Architektur des Adobe Campaigns **mta** wirkt sich auf die Konfiguration zur Optimierung des E-Mail-Versands aus. Hier finden Sie einige Tipps zur Verbesserung Ihrer Versand.
+Die interne Architektur von Adobe Campaign **mta** wirkt sich auf die Konfiguration zur Optimierung des E-Mail-Versands aus. Im Folgenden finden Sie einige Tipps zur Verbesserung Ihrer Sendungen.
 
 ### Anpassen des Parameters maxWaitingMessages {#adjust-the-maxwaitingmessages-parameter}
 
 Der Parameter **maxWaitingMessages** gibt die höchste Anzahl von Nachrichten an, die im Voraus von **mtachild** vorbereitet wurden. Nachrichten werden erst dann aus dieser Liste gelöscht, wenn sie gesendet oder abgebrochen wurden.
 
-Dieser Parameter ist sehr wichtig und besonders wichtig, wenn Nachrichten nicht nach Domäne sortiert werden.
+Dieser Parameter ist sehr wichtig und besonders wichtig, wenn Nachrichten nicht nach Domain sortiert werden.
 
-Sobald der Schwellenwert **maxWorkingSetMb** (256) erreicht ist, beendet der Versand das Senden von Nachrichten. Die Leistung wird deutlich sinken, bis die **mtachild**-Beginn wieder ansteigen. Um dieses Problem zu umgehen, können Sie entweder den Schwellenwert des Parameters **maxWorkingSetMb** erhöhen oder den Schwellenwert des Parameters **maxWaitingMessages** verringern.
+Sobald der Schwellenwert **maxWorkingSetMb** (256) erreicht ist, stoppt der Versandserver den Nachrichtenversand. Die Leistung wird deutlich sinken, bis **mtachild** erneut gestartet wird. Um dieses Problem zu umgehen, können Sie entweder den Schwellenwert des Parameters **maxWorkingSetMb** erhöhen oder den Schwellenwert des Parameters **maxWaitingMessages** verringern.
 
-Der Parameter **maxWorkingSetMb** wird empirisch berechnet, indem die maximale Anzahl von Nachrichten mit der durchschnittlichen Nachrichtengröße multipliziert und das Ergebnis mit 2,5 multipliziert wird. Wenn beispielsweise eine Nachricht eine durchschnittliche Größe von 50 kB aufweist und der Parameter **maxWaitingMessages** 1.000 beträgt, beträgt der verwendete Speicher durchschnittlich 125 MB.
+Der Parameter **maxWorkingSetMb** wird empirisch berechnet, indem die maximale Nachrichtenanzahl mit der durchschnittlichen Nachrichtengröße multipliziert wird und das Ergebnis mit 2,5 multipliziert wird. Wenn beispielsweise eine Nachricht eine durchschnittliche Größe von 50 kB aufweist und der Parameter **maxWaitingMessages** 1.000 beträgt, wird der verwendete Speicher im Durchschnitt berechnet 125 MB.
 
 ### Anpassen der Anzahl der mtachild {#adjust-the-number-of-mtachild}
 
-Die Anzahl der Kinder sollte die Anzahl der Prozessoren in der Maschine nicht überschreiten (ca. 1000 Sitzungen). Es wird empfohlen, 8 **mtachild** nicht zu überschreiten. Anschließend können Sie die Anzahl der Meldungen pro **Child** (**maxMsgPerChild**) erhöhen, um eine ausreichende Lebensdauer zu erreichen.
+Die Anzahl der Kinder sollte die Anzahl der Prozessoren in der Maschine nicht übersteigen (ca. 1000 Sitzungen). Es wird empfohlen, maximal 8 **mtachild** zu verwenden. Sie können dann die Anzahl der Nachrichten pro **child** (**maxMsgPerChild**) erhöhen, um eine ausreichende Lebensdauer zu erreichen.
