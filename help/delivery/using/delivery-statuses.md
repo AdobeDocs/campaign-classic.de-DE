@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Versandstatus
 description: Erfahren Sie mehr über die Status, die in Ihrem Versand-Dashboard verfügbar sind.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-translation-type: ht
-source-git-commit: ae4f86f3703b9bfe7f08fd5c2580dd5da8c28cbd
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -140,4 +138,4 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
 * [Protokolle und Versandverlauf](#delivery-logs-and-history)
 * [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Typen und Ursachen für fehlgeschlagene Sendungen](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Typen und Ursachen für fehlgeschlagene Sendungen            ](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
