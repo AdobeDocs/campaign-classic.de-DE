@@ -1,34 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Voraussetzungen für die Installation von Campaign unter Windows
 description: Voraussetzungen für die Installation von Campaign unter Windows
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
-translation-type: tm+mt
-source-git-commit: ae4b2ba6db140cdfb9ec4a38231fcc3e54b1478c
+exl-id: a7cf59cc-9260-4109-af4c-b2e2a9c999da
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 12%
 
 ---
 
+# Erste Schritte mit der Installation von Campaign unter Windows {#prerequisites-of-campaign-installation-in-windows}
 
-# Erste Schritte mit der Installation der Kampagne unter Windows {#prerequisites-of-campaign-installation-in-windows}
+Die für die Installation von Adobe Campaign erforderliche technische Konfiguration und Software finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 
-Die zur Installation des Adobe Campaigns erforderliche technische Konfiguration und Software finden Sie in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
-
-Der Installationsvorgang für den Adobe Campaign-Server zur Verwendung mit mehreren Instanzen wird nachfolgend unter [Installieren des Servers](../../installation/using/installing-the-server.md) beschrieben.
+Der Adobe Campaign-Serverinstallationsprozess für die Verwendung mehrerer Instanzen wird nachfolgend unter [Installieren des Servers](../../installation/using/installing-the-server.md) beschrieben.
 
 Die wichtigsten Schritte sind:
 
-1. Installieren Sie den Anwendungsserver unter [Ausführen des Programms](../../installation/using/installing-the-server.md#executing-the-installation-program).
-1. Integration in einen Webserver (optional, je nach bereitgestellter Komponenten), finden Sie unter [Konfigurieren des IIS-Webservers](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
+1. Installieren Sie den Anwendungsserver, siehe [Ausführen des Installationsprogramms](../../installation/using/installing-the-server.md#executing-the-installation-program).
+1. Integration in einen Webserver (optional, je nach bereitgestellter Komponente), siehe [Konfigurieren des IIS-Webservers](../../installation/using/integration-into-a-web-server-for-windows.md#configuring-the-iis-web-server).
 
-Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen finden Sie unter [Informationen zur Erstkonfiguration](../../installation/using/about-initial-configuration.md).
+Nach Abschluss der Installationsschritte müssen Sie die Instanzen, die Datenbank und den Server konfigurieren. Weitere Informationen hierzu finden Sie unter [Über die Erstkonfiguration](../../installation/using/about-initial-configuration.md).
 
 >[!NOTE]
 >
->Wenn Adobe Campaign auf einer Windows-Umgebung bereitgestellt wird, können Benutzer mit den erforderlichen Zugriffsrechten die UNC-Syntax (Universal.Uniform Naming Convention) für den Zugriff auf Pfade während der Dateimanipulation im Netzwerk verwenden.
-
+>Wenn Adobe Campaign in einer Windows-Umgebung bereitgestellt wird, können Benutzer mit den erforderlichen Zugriffsrechten die UNC-Syntax (Universal.Uniform Naming Convention) für Zugriffspfade während der Dateibearbeitung im Netzwerk verwenden.
