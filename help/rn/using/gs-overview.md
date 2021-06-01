@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: '[!DNL Gold Standard]-Upgrade'
 description: 'Erfahren Sie, was Campaign Classic ist [!DNL Gold Standard] '
-feature: Overview
+feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-translation-type: tm+mt
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 100%
@@ -100,6 +98,6 @@ Wir werden dafür sorgen, dass Sie über alle nötigen Projekt- und Kontaktinfor
 
 ## Zusätzliche Ressourcen
 
-* [[!DNL Gold Standard] -Versionshinweise](gold-standard.md)
-* [Häufig gestellte Fragen zum Buildupgrade](../../platform/using/faq-build-upgrade.md)
-* [[!DNL Gold Standard] Kompatibilitätsmatrix](compatibility-matrix-gs.md)
+* [[!DNL Gold Standard]-Versionshinweise](gold-standard.md)
+* [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
+* [[!DNL Gold Standard]-Kompatibilitätsmatrix](compatibility-matrix-gs.md)
