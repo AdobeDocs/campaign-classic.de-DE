@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datenschutzanfragen
 description: Erfahren Sie, wie Sie Datenschutzanfragen verwalten.
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-translation-type: ht
-source-git-commit: 5b1c4426a0d59861aa61a7e53154b9adfda31d71
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '2562'
 ht-degree: 100%
 
@@ -71,7 +69,7 @@ Unter **[!UICONTROL Administration]** > **[!UICONTROL Zugriffe]** > **[!UICONTRO
 
 ![](assets/privacy-right.png)
 
-### Namespaces{#namesspaces}
+### Namespaces {#namesspaces}
 
 Bevor Sie Datenschutzanfragen erstellen können, müssen Sie den Namespace definieren, den Sie verwenden möchten. Dies ist der Schlüssel, der zur Identifikation der betroffenen Person in der Adobe Campaign-Datenbank herangezogen wird.
 
