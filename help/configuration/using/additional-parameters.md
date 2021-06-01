@@ -1,32 +1,30 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Zusätzliche Web-Tracking-Parameter
-description: Weitere Informationen zu Parametern für die Web-Verfolgung
+description: Erfahren Sie mehr über die Parameter für das Web-Tracking
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d14d94fd-b078-4893-be84-31d37a1d50f5
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 4%
 
 ---
 
-
 # Zusätzliche Parameter{#additional-parameters}
 
 ## Definition der Parameter {#definition-of-parameters}
 
-Ihre Adobe Campaign-Plattform Angebot standardmäßig zwei TRANSACTION-artige Web-Tracking-Parameter:
+Ihre Adobe Campaign-Plattform bietet standardmäßig zwei Webtrackingparameter vom Typ TRANSACTION :
 
-* **Betrag**: den Betrag einer Transaktion darstellt,
+* **amount**: den Transaktionsbetrag darstellt,
 * **Artikel**: stellt die Anzahl der Elemente in einer Transaktion dar.
 
-Diese Parameter werden im Schema **nms:webTrackingLog** definiert und sind einige der in Berichte angezeigten Indikatoren.
+Diese Parameter werden im Schema **nms:webTrackingLog** definiert und sind einige der Indikatoren, die in der Berichterstellung angezeigt werden.
 
-Um weitere Parameter zu definieren, müssen Sie dieses Schema erweitern.
+Um zusätzliche Parameter zu definieren, müssen Sie dieses Schema erweitern.
 
 **Beispiel**:
 
@@ -42,23 +40,23 @@ Um weitere Parameter zu definieren, müssen Sie dieses Schema erweitern.
 </srcSchema>
 ```
 
-Sie können die Werte dieser Parameter anzeigen, indem Sie die Verfolgungsprotokoll-Liste (eines Versands oder Empfängers) konfigurieren.
+Sie können die Werte dieser Parameter anzeigen, indem Sie die Trackinglog-Liste (eines Versands oder eines Empfängers) konfigurieren.
 
-## Umleitungs-Serverkonfiguration {#redirection-server-configuration}
+## Konfiguration des Weiterleitungsservers {#redirection-server-configuration}
 
-In der Serverkonfiguration können Sie die maximale Anzahl von Zeichen festlegen, die für Ihre Webverfolgungsparameter berücksichtigt werden sollen.
+In der Serverkonfiguration können Sie die maximale Zeichenanzahl definieren, die für Ihre Webtracking-Parameter berücksichtigt werden soll.
 
 >[!IMPORTANT]
 >
->Die Erhöhung der maximal zu berücksichtigenden Zeichenanzahl kann sich auf die Webverfolgungsleistung Ihrer Plattform auswirken.
+>Eine Erhöhung der maximal zu berücksichtigenden Zeichenanzahl kann sich auf die Webtracking-Leistung Ihrer Plattform auswirken.
 
-Ändern Sie dazu das Attribut **webTrackingParamSize** des Elements **`<trackinglogd>`** in der Datei **serverConf.xml**. Diese Datei wird im Unterverzeichnis **conf** des Installationsordners des Adobe Campaigns gespeichert.
+Ändern Sie dazu das Attribut **webTrackingParamSize** des Elements **`<trackinglogd>`** in der Datei **serverConf.xml**. Diese Datei wird im Unterverzeichnis **conf** des Adobe Campaign-Installationsordners gespeichert.
 
 **Beispiel**:
 
 Der Standardwert ist 64 Zeichen. Mit diesem Wert können Sie die Standardparameter **amount** und **article** (&quot;amount=xxxxxxxx&amp;article=xxxxxxxxxx&quot;) berücksichtigen.
 
-Unter Berücksichtigung der beiden im obigen Erweiterungsschema angegebenen Parameter (Größe und Größe des Namens) können Sie die Konfiguration ändern, um 100 Zeichen zu berücksichtigen (&quot;Betrag=xxxxxxxx&amp;article=xxxxxxxxxx&amp;mode=xxxxxxxxxxxx&amp;code=xxxxxxx&quot;).
+Unter Berücksichtigung der beiden im Beispiel des Erweiterungsschemas angegebenen Parameter (Größe des Namens + Größe des Werts) können Sie die Konfiguration so ändern, dass 100 Zeichen berücksichtigt werden (&quot;amount=xxxxxxxxxx&amp;article=xxxxxxxxxxxx&amp;mode=xxxxxxxxxx&amp;code=xxxxxxx&quot;).
 
 ```
 <trackinglogd args="" autoStart="false" initScript="" maxCreateFileRetry="5" maxLogsSizeOnDiskMb="500"
@@ -67,17 +65,17 @@ processRestartTime="06:00:00" purgeLogsPeriod="50000" runLevel="10"
 webTrackingParamSize="64"/>
 ```
 
-Nach der Änderung der Konfiguration müssen Sie:
+Nachdem die Konfiguration geändert wurde, müssen Sie:
 
-* Beenden Sie den Webserver, der das Umleitungsmodul hostet (Apache, IIS usw.),
-* Adobe Campaign-Server beenden: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux,
+* Beenden Sie den Webserver, der das Weiterleitungsmodul hostet (Apache, IIS usw.),
+* Beenden Sie den Adobe Campaign-Server: **net stop nlserver6** in Windows, **/etc/init.d/nlserver6 stop** in Linux
 
    >[!NOTE]
    >
-   >Ab 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
+   >Ab Version 20.1 wird empfohlen, stattdessen den folgenden Befehl zu verwenden (für Linux): **systemctl stop nlserver**
 
 * Löschen Sie unter Linux die freigegebenen Speichersegmente mit dem Befehl **ipcrm**,
-* Starten Sie den Adobe Campaign-Server neu: **net Beginn nlserver6** in Windows, **/etc/init.d/nlserver6 Beginn** in Linux,
+* Starten Sie den Adobe Campaign-Server neu: **net start nlserver6** in Windows, **/etc/init.d/nlserver6 start** in Linux
 
    >[!NOTE]
    >
@@ -112,4 +110,3 @@ adobe@selma:~$ systemctl start apache2
 >[!NOTE]
 >
 >Wenn Sie unter Linux die Größe der Parameter **webTrackingParamSize** oder **maxSharedLogs** erhöhen, müssen Sie möglicherweise die Größe des gemeinsamen Speichers (SHM) erhöhen.
-
