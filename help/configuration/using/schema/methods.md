@@ -1,41 +1,39 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elemente und Attribute
 description: Elemente und Attribute
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: f45e32ce-6534-4df2-ac7c-ba1134f0ffc8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '40'
-ht-degree: 25%
+ht-degree: 27%
 
 ---
-
 
 # methods element {#methods--element}
 
 ## Inhaltsmodell {#content-model-11}
 
-Methoden:==Methode
+methods:==method
 
 ## Attribute {#attributes-11}
 
-Kein
+Keine
 
-## Eltern {#parents-11}
+## Übergeordnete Elemente {#parents-11}
 
 `<srcschema>`
 
-## Kinder {#children-11}
+## Untergeordnetes Element {#children-11}
 
 method
 
 ## Beschreibung {#description-11}
 
-Mit diesem Element können Sie ein `<method>`-Element definieren. Die Angabe einer Methode ist obligatorisch.
+Mit diesem Element können Sie ein Element `<method>` definieren. Die Angabe einer Methode ist zwingend erforderlich.
 
 ## Attributbeschreibung {#attribute-description-11}
 
