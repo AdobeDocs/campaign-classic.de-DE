@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datei komprimieren oder verschlüsseln
 description: Erfahren Sie, wie Sie eine Datei im Campaign Classic vor der Verarbeitung komprimieren oder verschlüsseln.
@@ -7,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -24,7 +23,7 @@ Gehen Sie dazu folgendermaßen vor:
 
    >[!NOTE]
    >
-   >Das Control Panel ist auf Admin-Benutzer beschränkt und nur für bestimmte Campaign-Versionen verfügbar. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html)
+   >Das Control Panel ist auf Admin-Benutzer beschränkt und nur für bestimmte Campaign-Versionen verfügbar. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de)
 
 1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
 1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben, installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
