@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Häufig gestellte Fragen zum Build-Upgrade
 description: Häufige Fragen im Zusammenhang mit Campaign-Build-Upgrades
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 100%
 
@@ -89,14 +87,14 @@ Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de
 
 Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
-* Adobe-Architekt: Im Fall von gehosteten oder Cloud Messaging-/Hybridarchitekturen muss sich der Architekt mit der Adobe-Kundenunterstützung arrangieren.
+* Adobe Architect: Im Fall von gehosteten oder Cloud Messaging-/Hybridarchitekturen koordiniert der Architekt die Aktivitäten mit der Adobe-Kundenunterstützung.
 * Projekt-Manager: Gehostet: Das Hosting-Team arbeitet mit der Adobe-Kundenunterstützung und dem Kunden zusammen, um für alle Instanzen den Zeitrahmen festzulegen.
 * Adobe Campaign-Administrator – Gehostet: Das Hosting-Team nimmt das Upgrade vor.
 * Benutzer/Marketing-Benutzer von Adobe Campaign: Der Benutzer führt Tests auf Entwicklungs-, Test- und Produktionsinstanzen durch.
 
 ## Wie bereite ich das Build-Upgrade vor?
 
-Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
 
 Frischen Sie Ihr Wissen über die wichtigsten Pfad-Workflows und Sendungen auf, die in Ihren Runbooks (oder durch Ihr Beraterteam/Ihren Partner) entwickelt wurden, indem Sie die Dokumentation lesen, die Ihrem Team nach der Implementierung bereitgestellt wird.
 
@@ -104,7 +102,7 @@ Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für
 
 Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 
@@ -183,7 +181,7 @@ Weitere Informationen finden Sie in den [Hilfe- und Support-Optionen für Campai
 
 ### Checkliste für den Marketing-Server nach dem Upgrade:
 
-* Können Sie sic h beim Server anmelden? Stellen Sie sicher, dass die Client-Konsole fehlerfrei funktioniert bzw. keine Fehlerwarnungen angezeigt werden.
+* Können Sie sich beim Server anmelden? Stellen Sie sicher, dass die Client-Konsole fehlerfrei funktioniert bzw. keine Fehlerwarnungen angezeigt werden.
 * Achten Sie darauf, dass die Konsole und der Build nach dem Upgrade dieselbe Version aufweisen.
 * Haben Sie Webanwendungen, die Daten zur Campaign-Datenbank hinzufügen? Wenn ja, führen Sie sie aus und überprüfen Sie, ob neue Datensätze per API hinzugefügt werden können.
 * Können Sie eine Test-E-Mail versenden? Erstellen Sie einen neuen Versand mit einer bekannten Vorlage, senden Sie die Nachricht an einen Testempfänger, überprüfen Sie die Personalisierung und stellen Sie sicher, dass der Abmelde-Link und die Mirror-Seite funktionieren.
@@ -206,4 +204,4 @@ dass alle Inhalte vorhanden sind und angezeigt werden.
 * [Durchführen eines Build-Upgrades](../../production/using/build-upgrade.md)
 * [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
 * [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
-* [[!DNL Gold Standard] -Programm](../../rn/using/gs-overview.md)
+* [[!DNL Gold Standard]-Programm](../../rn/using/gs-overview.md)
