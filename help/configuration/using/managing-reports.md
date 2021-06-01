@@ -1,35 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Verwalten von Berichten
 description: Verwalten von Berichten
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 68908664-3cf6-4a6c-a327-c7f059c27aa3
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 3%
 
 ---
 
-
 # Verwalten von Berichten{#managing-reports}
 
-Berichte, die auf einem Schema basieren, das für die standardmäßigen Adobe Campaign-Empfänger spezifisch ist (nm:Empfänger oder verknüpftes Schema), müssen neu entwickelt werden, um die Daten aus der benutzerdefinierten Tabelle und deren über das Zielgruppen-Mapping verknüpften Tabellen zu berücksichtigen (siehe Abschnitt [Zielgruppen-Mapping](../../configuration/using/target-mapping.md)).
+Berichte, die auf einem Schema basieren, das speziell für die Standard-Adobe Campaign-Empfänger gilt (nm:recipient oder schema linked), müssen neu entwickelt werden, um die Daten der benutzerdefinierten Tabelle und deren über das Zielgruppen-Mapping verknüpften Tabellen zu berücksichtigen (siehe Abschnitt [Zielgruppen-Mapping](../../configuration/using/target-mapping.md) ).
 
 Informationen zum Erstellen neuer Berichte finden Sie in [diesem Abschnitt](../../reporting/using/about-reports-creation-in-campaign.md).
 
-In einigen Fällen müssen Sie auch neue Cuben einführen, die sich speziell auf diese Tabellen beziehen. Die Cuben sind in [diesem Abschnitt](../../reporting/using/about-cubes.md) aufgeführt.
+In einigen Fällen müssen Sie auch neue Cubes einrichten, die speziell für diese Tabellen gelten. Cubes werden in [diesem Abschnitt](../../reporting/using/about-cubes.md) beschrieben.
 
 Folgende Berichte sind betroffen:
 
-* **[!UICONTROL Nachverfolgung]**  aktueller Vorschläge (jüngste Vorschläge): Echtzeitpropositionserfassung.
-* **[!UICONTROL Aufschlüsselung von open]** (openByUserAgent): wird nach Benutzersoftware aufgeschlüsselt angezeigt.
-* **[!UICONTROL Statistik der Freigabeaktivitäten]**  (forwardActivities): Analyse der Freigabe von Aktivitäten, Öffnen und Abonnements pro Zeitraum.
-* **[!UICONTROL Tracking-Indikatoren]** (mobileAppDeliveryFeedback): Tracking-Indikatoren für einen Versand in einer Mobilanwendung.
-* **[!UICONTROL Angebot-Analyse]** (offerAnalysis): Analyse des Angebots nach Datum und Kanal.
-* **[!UICONTROL Reaktivitätsrate]** (mobileAppDistribution): Reaktivitätsrate für die neuesten Versand.
-* **[!UICONTROL Aufschlüsselung von Abonnements]**  (mobileAppDistribution): Aufschlüsselung aktiver Abonnement nach Mobilanwendung.
-
+* **[!UICONTROL Verfolgung aktueller Vorschläge]**  (recentPropositions): Echtzeitverfolgung der Vorschläge.
+* **[!UICONTROL Öffnungsverteilung]**  (opensByUserAgent): nach Benutzersoftware aufgeschlüsselte Öffnungen.
+* **[!UICONTROL Statistiken zu Teilungsaktivitäten]**  (forwardActivities): Analyse von Teilungen, Öffnungen und Abonnements nach Zeiträumen.
+* **[!UICONTROL Trackingindikatoren]**  (mobileAppDeliveryFeedback): Trackingindikatoren für einen Versand in einer Mobile App.
+* **[!UICONTROL Angebotsanalyse]**  (offerAnalysis): Angebotsanalyse nach Datum und Kanal.
+* **[!UICONTROL Reaktionsrate]**  (mobileAppDistribution): Reaktionsrate der letzten Sendungen.
+* **[!UICONTROL Abonnementverteilung]**  (mobileAppDistribution): Verteilung der aktiven Abonnements nach Mobile Apps.
