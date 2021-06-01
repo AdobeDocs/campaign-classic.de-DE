@@ -1,70 +1,68 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Leistungs- und Durchsatzprobleme
 description: Leistungs- und Durchsatzprobleme
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: d1b38acc5209a5c96ab7a35fe9640159141b110f
+exl-id: fe69efda-a052-4f67-9c13-665f011d0a2b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 9%
+ht-degree: 13%
 
 ---
-
 
 # Leistungs- und Durchsatzprobleme{#performance-and-throughput-issues}
 
 Zunächst sollten Sie überprüfen, ob der neueste Build installiert ist. Dadurch wird sichergestellt, dass Sie über die neuesten Funktionen und Fehlerbehebungen verfügen.
 
-Weitere Informationen zum Inhalt der einzelnen Versionen finden Sie in den [Versionshinweisen](../../rn/using/latest-release.md).
+Weitere Informationen zum Inhalt jeder Version finden Sie in den [Versionshinweisen](../../rn/using/latest-release.md) .
 
 ## Hardware und Infrastruktur {#hardware-and-infrastructure}
 
-Allgemeine Richtlinien für Hardwareanforderungen für lokale Campaign Classic finden Sie auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html).
+Die allgemeinen Richtlinien für Hardware-Anforderungen für On-Premise-Campaign Classic werden auf dieser [Seite](https://helpx.adobe.com/de/campaign/kb/hardware-sizing-guide.html) beschrieben.
 
-Das Beratungsteam kann gehosteten Kunden ein Tool zur Verfügung stellen, mit dem Sie ganz einfach Ansichten darüber vornehmen können, wie viel Platz die verschiedenen Datenbanktypen sowie der auf der SFTP-Site verwendete Speicherplatz nutzen. Darüber hinaus bietet es Tools, mit denen Sie unnötige Daten bereinigen können. Wenden Sie sich an den [Adobe Kundendienst](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), wenn dieses Tool implementiert werden muss. Hier einige wichtige Punkte, die Sie mit diesem Tool überprüfen müssen:
+Das Beratungsteam kann gehosteten Kunden ein Tool zur Verfügung stellen, mit dem Sie leicht erkennen können, wie viel Platz von verschiedenen Tabellentypen in der Datenbank genutzt wird und welcher Platz auf der SFTP-Site genutzt wird. Darüber hinaus stellt es Tools bereit, mit denen Sie unnötige Daten bereinigen können. Wenden Sie sich an [Adobe Customer Care](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) , wenn Sie dieses Tool implementieren möchten. Im Folgenden finden Sie einige wichtige Aspekte, die mit diesem Tool überprüft werden müssen:
 
 * Wenn die Indexgröße größer als die Tabellengröße ist, ist ein Vakuum erforderlich.
-* Überprüfen Sie die Tabellen mit der maximalen Aufblähung. Wenn diese Tabellen häufig verwendet werden, müssen sie evakuiert werden.
-* Datenbankblockierung kann dazu führen, dass E-Mails nicht mehr gesendet werden.
+* Überprüfen Sie die Tabellen, die die maximale Temperatur aufweisen. Wenn diese Tabellen häufig verwendet werden, müssen sie evakuiert werden.
+* Das Blockieren der Datenbank kann dazu führen, dass E-Mails nicht mehr gesendet werden.
 
-Adobe Campaign bietet auch ein [Tool](../../production/using/monitoring-processes.md#manual-monitoring), um die CPU- und RAM-Nutzung zu überprüfen. Verwenden Sie dieses Tool und prüfen Sie spezifische Indikatoren wie: **Arbeitsspeicher**, **Arbeitsspeicher austauschen**, **Datenträger**, **Aktive Prozesse**. Wenn die Werte zu hoch sind, können Sie versuchen, die Anzahl der Workflows zu reduzieren oder die Workflows zu verschiedenen Zeitpunkten auf den Beginn zu planen.
+Adobe Campaign bietet außerdem ein [Tool](../../production/using/monitoring-processes.md#manual-monitoring) zur Überprüfung der CPU- und RAM-Nutzung. Verwenden Sie dieses Tool und sehen Sie sich spezifische Indikatoren an, z. B.: **Memory**, **Swap Memory**, **Disk**, **Active Processes**. Wenn die Werte zu hoch sind, können Sie versuchen, die Anzahl der Workflows zu reduzieren oder Workflows so planen, dass sie zu unterschiedlichen Zeitpunkten beginnen.
 
 ## Datenbanküberprüfung {#database-performances}
 
-In den meisten Fällen sind Leistungsprobleme mit der Datenbankwartung verbunden. Im Folgenden werden die wichtigsten Elemente aufgeführt:
+In den meisten Fällen hängen Leistungsprobleme mit der Datenbankwartung zusammen. Im Folgenden finden Sie die wichtigsten zu prüfenden Elemente:
 
-* Konfiguration: Wir empfehlen, die anfängliche Plattformkonfiguration des Adobe Campaigns zu überprüfen und eine vollständige Hardwareprüfung durchzuführen.
-* Installation und Konfiguration der Adobe Campaign-Plattform: Überprüfen Sie die Optionen für die Netzwerkkonfiguration und Plattformbereitstellung.
-* Datenbankwartung: Vergewissern Sie sich, dass die Aufgabe zur Datenbankbereinigung betriebsbereit ist und dass die Datenbankwartung ordnungsgemäß geplant und ausgeführt wurde. Überprüfen Sie die Anzahl und Größe der Arbeitstabellen.
-* Echtzeitdiagnose: Überprüfen Sie die Prozess- und Plattformprotokolldateien und überwachen Sie dann die Aktivität der Datenbank, während Sie die Ausgabe erneut erstellen.
+* Konfiguration: Es wird empfohlen, die anfängliche Adobe Campaign-Plattformkonfiguration zu überprüfen und eine vollständige Hardwareprüfung durchzuführen.
+* Installation und Konfiguration der Adobe Campaign-Plattform: Aktivieren Sie die Optionen für die Netzwerkkonfiguration und die Plattform-Zustellbarkeit.
+* Datenbankwartung: Stellen Sie sicher, dass die Datenbankbereinigung betriebsbereit ist und dass die Datenbankwartung ordnungsgemäß geplant und ausgeführt wird. Überprüfen Sie die Anzahl und Größe der Arbeitstabellen.
+* Echtzeitdiagnose: Überprüfen Sie die Prozess- und Plattformprotokolldateien und überwachen Sie dann die Datenbankaktivität, während Sie das Problem neu erstellen.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in diesem Abschnitt: [Datenbankleistung](../../production/using/database-performances.md).
+>Weiterführende Informationen finden Sie in diesem Abschnitt: [Datenbankleistung](../../production/using/database-performances.md).
 
 ## Anwendungskonfiguration {#application-configuration}
 
 Im Folgenden finden Sie eine Liste von Artikeln zu Best Practices für die Anwendungskonfiguration:
 
-* MTA- und MTAChild-Prozesse und -Speicher: Das **mta**-Modul verteilt Nachrichten an seine untergeordneten Module **mtachild**. Jeder **mtachild** bereitet Nachrichten vor, bevor eine Autorisierung vom Statistikserver angefordert und gesendet wird. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
-* TLS-Konfiguration: Die globale Aktivierung von TLS wird nicht empfohlen, da dies den Durchsatz reduzieren kann. Stattdessen sollten die vom Bereitstellungsteam verwalteten TLS-Einstellungen pro Domäne je nach Bedarf angepasst werden. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md#mx-configuration)
-* DKIM: zur Gewährleistung der Sicherheit des DKIM ist 1024b die empfohlene Verschlüsselungsgröße. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Mehr dazu erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#authentication).
+* MTA- und MTAChild-Prozesse und -Speicher: das Modul **mta** verteilt Nachrichten an die untergeordneten **mtachild**-Module. Jeder **mtachild** bereitet Nachrichten vor, bevor eine Autorisierung vom Statistikserver angefordert und gesendet wird. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md)
+* TLS-Konfiguration: Die globale Aktivierung von TLS wird nicht empfohlen, da dadurch der Durchsatz reduziert werden kann. Stattdessen sollten die vom Zustellbarkeitsteam verwalteten TLS-Einstellungen pro Domäne entsprechend den Anforderungen angepasst werden. Weitere Informationen finden Sie auf dieser [Seite.](../../installation/using/email-deliverability.md#mx-configuration)
+* DKIM: Um das Sicherheitsniveau des DKIM zu gewährleisten, empfiehlt sich die Verschlüsselungsgröße 1024b als Best Practice. Niedrigere DKIM-Schlüssel werden von den meisten Zugangsanbietern nicht als gültig angesehen. Mehr dazu erfahren Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 
 ## Probleme mit der Zustellbarkeit {#deliverability-issues}
 
-Im Folgenden finden Sie eine Liste bewährter Verfahren und Artikel zur Lieferbarkeit:
+Im Folgenden finden Sie eine Liste mit Best Practices und Artikeln zur Zustellbarkeit:
 
-* IP-Ruf: Wenn der IP-Ruf nicht gut genug ist, wirkt sich dies auf die Leistung aus. Das Modul **Überwachung der Lieferbarkeit** Angebot verschiedene Tools zur Verfolgung der Bereitstellungsleistung Ihrer Plattform. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/monitoring-deliverability.md).
-* IP-Aufwärmen: die IP-Aufwärmphase wird vom Zustellteam durchgeführt. Dazu gehört die schrittweise Erhöhung der Anzahl der E-Mails durch neue IPs über einen Zeitraum von einigen Wochen.
-* IP-Affinität einrichten: Bei einer falschen IP-Affinität-Einrichtung können die E-Mails ganz gestoppt werden (falscher Operator-/Affinität-Name in der Konfiguration) oder der Durchsatz reduziert werden (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
-* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im Bericht [Versand-Durchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der Byte, die pro Stunde übertragen wurden.
-* Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinflussen. Die MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
-* Umfang der Personalisierung: Wenn ein Versand in &quot;Personalisierung in Bearbeitung&quot;bleibt, überprüfen Sie das in Gestaltungsbausteinen verwendete JavaScript.
+* IP-Reputation: Wenn die IP-Reputation nicht gut genug ist, wirkt sich dies auf die Leistung aus. Das Modul **Zustellbarkeits-Monitoring** bietet verschiedene Tools zur Verfolgung der Zustellbarkeitsleistung Ihrer Plattform. Mehr dazu erfahren Sie auf [dieser Seite](../../delivery/using/monitoring-deliverability.md).
+* IP-Warmup: Die IP-Aufwärmphase wird vom Zustellbarkeitsteam durchgeführt. Hierzu gehört eine schrittweise Erhöhung der Anzahl der E-Mails durch neue IP-Adressen über einen Zeitraum von einigen Wochen.
+* Einrichten der IP-Affinität: Eine falsche IP-Affinitätseinstellung kann die E-Mails ganz stoppen (falscher Operator-/Affinitätsname in der Konfiguration) oder den Durchsatz reduzieren (geringe Anzahl von IPs in der Affinität). Mehr dazu erfahren Sie auf [dieser Seite](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use).
+* E-Mail-Größe: Die E-Mail-Größe spielt eine wichtige Rolle beim Durchsatz. Die empfohlene maximale E-Mail-Größe beträgt 60 KB. Mehr dazu erfahren Sie auf [dieser Seite](https://helpx.adobe.com/legal/product-descriptions/campaign.html). Überprüfen Sie im Bericht [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) die Anzahl der Byte, die nach Stunde übertragen wurden.
+* Große Anzahl ungültiger Empfänger: Wenn eine große Anzahl ungültiger Empfänger vorhanden ist, kann dies den Durchsatz beeinträchtigen. Der MTA versucht weiterhin, E-Mails an ungültige Empfänger zu senden. Bitte stellen Sie sicher, dass Ihre Datenbank gut gepflegt ist.
+* Personalisierungsbetrag: Wenn ein Versand in &quot;Gestaltete Personalisierung&quot; verbleibt, überprüfen Sie das in Gestaltungsbausteinen verwendete JavaScript.
 
 >[!NOTE]
 >
->Siehe auch Abschnitt [Lieferbarkeit](../../delivery/using/about-deliverability.md). Einen tieferen Einstieg in die Lieferbarkeit finden Sie im Leitfaden [Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html) zur Adobe-Lieferbarkeit.
+>Siehe auch Abschnitt [Zustellbarkeit](../../delivery/using/about-deliverability.md) . Weitere Informationen zur Zustellbarkeit finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
