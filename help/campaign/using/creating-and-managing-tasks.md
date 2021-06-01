@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Verwaltung von Aufgaben
 description: Verwaltung von Aufgaben
@@ -7,9 +6,8 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '3901'
 ht-degree: 100%
 
@@ -410,13 +408,15 @@ Die Abhängigkeit zwischen den Aufgaben wird mithilfe von Pfeilen im Kampagnen-D
 
 Bei gruppierten Aufgaben weist Adobe Campaign der untergeordneten Aufgabe automatisch das Enddatum der übergeordneten Aufgabe als Startdatum zu. Wenn beispielsweise eine Aufgabe **Einladung erstellen** am 15. Oktober um 15:30 Uhr endet, beginnt die untergeordnete Aufgabe **Einladung per E-Mail senden** am 15. Oktober um 15:30 Uhr.
 
-Wenn Sie das Ende einer Hauptaufgabe verschieben, werden bestimmte ihrer Unteraufgaben dadurch ebenfalls verschoben: Es handelt sich hierbei um Unteraufgaben mit dem Status **[!UICONTROL Geplant]**, deren Beginndatum vor dem neuen Enddatum der Hauptaufgabe liegt. Die Dauer der Unteraufgabe bleibt gleich. Wenn das Beginndatum einer Unteraufgabe nach dem neuen Enddatum der Hauptaufabe liegt, wird die Unteraufgabe nicht verschoben.
+Wenn Sie das Ende einer übergeordneten Aufgabe verschieben, werden bestimmte ihrer untergeordneten Aufgaben dadurch ebenfalls verschoben: Es handelt sich hierbei um untergeordnete Aufgaben mit dem Status **[!UICONTROL Geplant]**, deren Beginndatum vor dem neuen Enddatum der übergeordneten Aufgabe liegt. Die Dauer der untergeordneten Aufgabe bleibt gleich. Wenn das Beginndatum einer untergeordneten Aufgabe nach dem neuen Enddatum der übergeordneten Aufabe liegt, wird die untergeordnete Aufgabe nicht verschoben.
+
+
 
 **Beispiel**
 
-Eine Hauptaufgabe, deren Ende für den 9. Oktober um 17 Uhr geplant ist, hat zwei Unteraufgaben: Aufgabe A und Aufgabe B. Der Beginn von Aufgabe A ist für den 10. Oktober um 14 Uhr, der von Aufgabe B für den 12. Oktober um 8 Uhr geplant.
+Eine übergeordnete Aufgabe, deren Ende für den 9. Oktober um 17 Uhr geplant ist, hat zwei Unteraufgaben: Aufgabe A und Aufgabe B. Der Beginn von Aufgabe A ist für den 10. Oktober um 14 Uhr, der von Aufgabe B für den 12. Oktober um 8 Uhr geplant.
 
-Nun wird das Ende der Hauptaufgabe auf den 11. Oktober um 13 Uhr verschoben. Dadurch verschiebt sich nur der Beginn von Aufgabe A auf den 11. Oktober um 13 Uhr.
+Nun wird das Ende der übergeordneten Aufgabe auf den 11. Oktober um 13 Uhr verschoben. Dadurch verschiebt sich nur der Beginn von Aufgabe A auf den 11. Oktober um 13 Uhr.
 
 ![](assets/mrm_task_parent_postpones_child.png)
 
@@ -436,6 +436,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
