@@ -1,27 +1,26 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Hinzufügen von Anhängen zu Transaktionsnachrichten mit Adobe Campaign Classic
-description: Erfahren Sie, wie Sie mit Adobe Campaign Classic Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können.
+title: Transaktions-E-Mails mit Anhängen senden
+description: Erfahren Sie, wie Sie mit Adobe Campaign Classic Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen senden.
 audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '632'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 81%
 
 ---
 
-# Anwendungsbeispiel: Senden von Transaktions-E-Mails mit Anhängen{#transactional-email-with-attachments}
+# Anwendungsfall: Transaktions-E-Mails mit Anhängen senden {#transactional-email-with-attachments}
 
 In diesem Anwendungsbeispiel sollen E-Mail-Anhänge dynamisch zu ausgehenden Sendungen hinzugefügt werden.
 
 ## Die wichtigsten Schritte {#key-steps}
 
-In diesem Szenario erfahren Sie, wie Sie Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können. Die Anhänge werden nicht vorab auf den Transaktionsnachrichtenversand-Server hochgeladen, sondern dynamisch generiert.
+In diesem Szenario erfahren Sie, wie Sie Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können. Die Anlagen werden nicht vorab auf den Transaktionsnachrichten-Server hochgeladen: Stattdessen werden sie im Handumdrehen generiert.
 
 Wenn Sie Kundeninteraktionen oder Daten erfassen, müssen Sie diese Informationen unter Umständen am Ende dieses Vorgangs beispielsweise in Form einer an eine E-Mail angehängten PDF-Datei an den Kunden zurücksenden.
 
@@ -47,16 +46,16 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
 
-* Die Transaktionsnachricht-Instanzen sollten nicht zum Speichern, Exportieren oder Hochladen von Dateien oder Daten verwendet werden. Sie dürfen nur für Ereignisdaten und zugehörige Informationen verwendet werden. Sie dürfen nicht als Dateispeichersystem betrachtet werden.
-* Da es außerhalb von Adobe keinen direkten Zugriff auf die Transaktionsnachricht-Instanzen oder Server gibt, ist keine Standardmethode zum Übertragen solcher Dateien auf diese Server verfügbar (kein FTP-Zugriff).
-* Laut Vertrag darf der Speicherplatz in Transaktionsnachricht-Instanzen nicht zum Speichern beliebiger Dateitypen verwendet werden, auch nicht für Anhänge.
+* Die Transaktionsnachrichten-Instanzen sollten nicht zum Speichern, Exportieren oder Hochladen von Dateien oder Daten verwendet werden. Sie dürfen nur für Ereignisdaten und zugehörige Informationen verwendet werden. Sie dürfen nicht als Dateispeichersystem betrachtet werden.
+* Da außerhalb von Adobe kein direkter Zugriff auf die Transaktionsnachrichten-Instanzen oder -Server besteht, ist es nicht möglich, diese Dateien per Push auf diese Server zu übertragen (kein FTP-Zugriff).
+* Es ist vertraglich nicht richtig, den Speicherplatz in den Transaktionsnachrichten-Instanzen zum Speichern beliebiger Dateitypen zu verwenden, nicht einmal für Anhänge.
 * Sie müssen zum Hosten dieser Dateien ein anderes Online-Speichersystem verwenden. Sie benötigen FTP-Zugriff auf das System und müssen Dateien schreiben und löschen können.
 
 >[!NOTE]
 >
 >Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
-## Implementierung{#implementation}
+## Umsetzung {#implementation}
 
 Das folgende Diagramm zeigt die verschiedenen Schritte bei der Implementierung dieses Szenarios:
 
