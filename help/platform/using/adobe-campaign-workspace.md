@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Campaign-Arbeitsbereich
 description: Erfahren Sie, wie Sie den Campaign-Arbeitsbereich verwenden und anpassen.
@@ -7,9 +6,8 @@ feature: Übersicht
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-translation-type: ht
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
 
@@ -43,7 +41,7 @@ So wird z. B. für einen Benutzer eine Kampagne in der Clientkonsole mit folgend
 
 ![](assets/operation_from_console.png)
 
-Im Webzugriff hingegen stehen vorwiegend konsultative Optionen zur Verfügung:
+Beim Webzugriff ermöglichen die Optionen vor allem die Anzeige von:
 
 ![](assets/operation_from_web.png)
 
@@ -145,7 +143,7 @@ Die Hauptunterschiede zwischen US-amerikanischem Englisch und britischem Englisc
 
 ### Werte in einer Auflistung hinzufügen {#add-values-in-an-enumeration}
 
-Die Eingabefelder in Dropdown-Listen ermöglichen die Angabe eines Auflistungswerts, der zur weiteren Verwendung gespeichert werden kann. Wenn Sie z. B. im Feld **[!UICONTROL Ort]** im Tab **[!UICONTROL Allgemein]** eines Empfängerprofils &quot;Berlin&quot; eingeben und auf Enter drücken, werden Sie gefragt, ob Sie diesen Wert zu der dem Feld entsprechenden Auflistung hinzufügen möchten.
+Die Eingabefelder in Dropdown-Listen ermöglichen die Angabe eines Auflistungswerts, der zur weiteren Verwendung gespeichert werden kann. Wenn Sie z. B. im Feld **[!UICONTROL Ort]** im Tab **[!UICONTROL Allgemein]** eines Empfängerprofils &quot;Berlin&quot; eingeben und die Eingabetaste drücken, werden Sie gefragt, ob Sie diesen Wert zu der dem Feld entsprechenden Auflistung hinzufügen möchten.
 
 ![](assets/s_ncs_user_wizard_email_bat_substitute_email.png)
 
@@ -168,7 +166,7 @@ In Feldern, die eine Dauer bezeichnen (z. B. Gültigkeit von Versandressourcen, 
 
 ## Anleitungsvideo {#video}
 
-In diesem Video wird der Campaign Classic-Workspace vorgestellt.
+In diesem Video wird der Campaign Classic-Arbeitsbereich vorgestellt.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35130?quality=12)
 
