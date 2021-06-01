@@ -2,25 +2,48 @@
 solution: Campaign Classic
 product: campaign
 title: Ereignistypen erstellen
-description: Ereignistypen erstellen
+description: Erfahren Sie, wie Sie Ereignistypen erstellen, die mit den Transaktionsnachrichten übereinstimmen, die Sie in Adobe Campaign Classic senden möchten.
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 98b7c827-f31d-46a6-a28d-40a78a4b4248
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '91'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 15%
 
 ---
 
-# Ereignistypen erstellen{#creating-event-types}
+# Ereignistypen erstellen {#creating-event-types}
 
-Die von Adobe Campaign zu verarbeitenden Ereignistypen müssen in der Kontrollinstanz erstellt werden. Gehen Sie hierzu in den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** des Navigationsbaums. Jedem Ereignistyp muss ein Wert in der Auflistung **[!UICONTROL eventType]** entsprechen. Es kann sich hierbei zum Beispiel um eine Bestellbestätigung, eine Passwortänderung oder den Versand einer Bestellung handeln.
+Um sicherzustellen, dass jedes Ereignis in eine personalisierte Nachricht geändert werden kann, müssen Sie zunächst **Ereignistypen** erstellen.
 
-![](assets/messagecenter_eventtype_enum_001.png)
+Wenn Sie [eine Nachrichtenvorlage](../../message-center/using/creating-the-message-template.md) erstellen, wählen Sie den Ereignistyp aus, der mit der zu sendenden Nachricht übereinstimmt.
 
-Nähere Informationen erhalten Sie im Abschnitt [Auflistungsverwaltung](../../platform/using/managing-enumerations.md).
+>[!IMPORTANT]
+>
+>Sie müssen Ereignistypen erstellen, bevor Sie sie in Nachrichtenvorlagen verwenden können.
 
-Melden Sie sich nach der Erstellung der Auflistungswerte von Ihrer Instanz ab und wieder an, damit die Änderungen berücksichtigt werden.
+Gehen Sie wie folgt vor, um Ereignistypen zu erstellen, die von Adobe Campaign verarbeitet werden:
+
+1. Melden Sie sich bei der **Kontrollinstanz** an.
+
+1. Gehen Sie zum Ordner **[!UICONTROL Administration > Plattform > Auflistungen]** des Baums.
+
+1. Wählen Sie **[!UICONTROL Ereignistyp]** aus der Liste aus.
+
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]** , um einen Auflistungswert zu erstellen. Dies kann eine Bestellbestätigung, eine Passwortänderung, eine Änderung des Bestellversands usw. sein.
+
+   ![](assets/messagecenter_eventtype_enum_001.png)
+
+   >[!IMPORTANT]
+   >
+   >Jeder Ereignistyp muss mit einem Wert in der Auflistung **[!UICONTROL Ereignistyp]** übereinstimmen.
+
+1. Melden Sie sich nach der Erstellung der Auflistungswerte von Ihrer Instanz ab und wieder an, damit die Änderungen berücksichtigt werden.
+
+>[!NOTE]
+>
+>Erfahren Sie mehr über Auflistungen in [Auflistungsverwaltung](../../platform/using/managing-enumerations.md).
+
+
