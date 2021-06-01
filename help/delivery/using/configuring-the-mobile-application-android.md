@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurieren der Android-Mobile-App in Adobe Campaign
 description: Erfahren Sie, wie Sie Ihre Mobile App für Android einrichten.
@@ -10,9 +9,8 @@ index: y
 internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 100%
 
@@ -39,7 +37,7 @@ Anschließend können Sie eine [Rich-Benachrichtigung für Android erstellen](#c
 
 Für Android sind zwei Connectoren verfügbar:
 
-* Der V1-Connector, der pro MTA-Kind eine Verbindung ermöglicht.
+* Der V1-Connector, der pro untergeordnetem MTA eine Verbindung ermöglicht.
 * Der V2-Connector, der gleichzeitige Verbindungen zum FCM-Server ermöglicht, um den Durchsatz zu erhöhen.
 
 Wählen Sie den jeweiligen Connector folgendermaßen aus:
@@ -58,7 +56,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
 1. Für Android V2 ist ein zusätzlicher Parameter in der Adobe-Server-Konfigurationsdatei (serverConf.xml) verfügbar:
 
-   * **maxGCMConnectPerChild**: Maximale Anzahl paralleler HTTP-Abfragen bei FCM durch jeden Kindserver (standardmäßig acht).
+   * **maxGCMConnectPerChild**: Maximale Anzahl paralleler HTTP-Abfragen bei FCM durch jeden untergeordneten Server (standardmäßig acht).
 
 ## Konfigurieren des Android-Dienstes {#configuring-android-service}
 
