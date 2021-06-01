@@ -1,20 +1,18 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurieren der Integration
 description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
-translation-type: ht
-source-git-commit: d7de46abb71ca25ef765c6fb5443f6e338fba56e
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 100%
 
 ---
 
 
-# Pipeline-Option &quot;NmsPipeline_Config&quot;{#nmspipeline_config}
+# Pipeline-Option &quot;NmsPipeline_Config&quot; {#nmspipeline_config}
 
 Sobald die Authentifizierung funktioniert, kann [!DNL pipelined] die Ereignisse abrufen und verarbeiten. Verarbeitet werden nur Auslöser, die in Adobe Campaign konfiguriert wurden; andere werden ignoriert. Der Auslöser muss zuvor mit Analytics erzeugt und in die Pipeline gepusht worden sein.
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
