@@ -1,33 +1,31 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Grundprinzip
 description: Grundprinzip
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 6%
+ht-degree: 11%
 
 ---
 
-
 # Grundprinzip{#operating-principle}
 
-Technisch gesehen basiert die Adobe Campaign-Plattform auf mehreren Modulen.
+Technisch betrachtet basiert die Adobe Campaign-Plattform auf mehreren Modulen.
 
-Es gibt viele Adobe Campaign-Module. Einige werden kontinuierlich ausgeführt, während andere gelegentlich gestartet werden, um administrative Aufgaben auszuführen (z. B. zum Konfigurieren der Datenbankverbindung) oder um eine wiederkehrende Aufgabe auszuführen (z. B. zum Konsolidieren von Verfolgungsinformationen).
+Es gibt viele Adobe Campaign-Module. Einige werden kontinuierlich ausgeführt, während andere gelegentlich gestartet werden, um administrative Aufgaben auszuführen (z. B. zur Konfiguration der Datenbankverbindung) oder um eine wiederkehrende Aufgabe auszuführen (z. B. Konsolidierung von Tracking-Informationen).
 
 Es gibt drei Typen von Adobe Campaign-Modulen:
 
-* Module mit mehreren Instanzen: für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **web**, **syslogd**, **trackinglogd** und **watchdog** (Aktivitäten aus der Datei **config-default.xml**).
-* Instanzmodule: pro Instanz ein Prozess ausgeführt wird. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Aktivitäten aus der **config-`<instance>`.xml**-Datei ).
-* Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge auszuführen (**Bereinigung**, **config**, Herunterladen von Trackinglogs usw.).
+* Module mit Mehrfach-Instanzen: Für alle Instanzen wird ein einzelner Prozess ausgeführt. Dies gilt für die folgenden Module: **web**, **syslogd**, **trackinglogd** und **watchdog** (Aktivitäten aus der Datei **config-default.xml**).
+* Module mit Einfach-Instanz: Für die einzelnen Instanzen wird jeweils ein Prozess ausgeführt. Dies gilt für die folgenden Module: **mta**, **wfserver**, **inMail**, **sms** und **stat** (Aktivitäten aus der Datei **config-`<instance>`.xml**) .
+* Dienstprogrammmodule: Hierbei handelt es sich um Module, die gelegentlich ausgeführt werden, um gelegentliche oder wiederkehrende Vorgänge auszuführen (**cleanup**, **config**, Download von Trackinglogs usw.).
 
-Die Modulverwaltung wird mithilfe des Befehlszeilenwerkzeugs **nlserver** durchgeführt, das im Ordner **bin** des Installationsordners installiert ist.
+Die Modulverwaltung erfolgt mithilfe des Befehlszeilen-Tools **nlserver**, das im Ordner **bin** des Installationsordners installiert ist.
 
 Die allgemeine Syntax des Tools **nlserver** lautet wie folgt:
 
@@ -35,48 +33,48 @@ Die allgemeine Syntax des Tools **nlserver** lautet wie folgt:
 
 Verwenden Sie für die Liste der verfügbaren Module den Befehl **nlserver**.
 
-Die verfügbaren Module sind in der folgenden Tabelle aufgeführt:
+Die verfügbaren Module werden in der folgenden Tabelle beschrieben:
 
 | Befehl | Beschreibung  |
 |---|---|
-| aliasCleansing | Standardisierung der Werte für die Auflistung |
-| billing | Systembericht zur Aktivität senden an billing@neolane.net |
-| cleanup | Datenbereingung der Datenbank: löscht veraltete Daten aus der Datenbank und führt eine Aktualisierung der vom Datenbank-Engine-Optimierer verwendeten Statistiken durch. |
-| config | Serverkonfiguration ändern |
-| Copybase | Kopie einer Datenbank |
-| export | Exportieren in die Befehlszeile: ermöglicht Ihnen, ein in der Adobe Campaign-Client-Konsole erstelltes Exportmodell an die Befehlszeile zu senden |
-| fileconvert | Konvertieren einer Datei mit festgelegter Größe |
-| importieren | In Befehlszeile importieren: ermöglicht Ihnen, ein in der Adobe Campaign-Client-Konsole erstelltes Importmodell an die Befehlszeile zu senden. |
-| inMail | Inbound Mail Analyzer |
+| aliasCleansing | Standardisierung der Auflistungswerte |
+| billing | Senden des Systemaktivitätsberichts an billing@neolane.net |
+| cleanup | Datenbank bereinigen: löscht veraltete Daten aus der Datenbank und führt eine Aktualisierung der vom Datenbankmodul-Optimierer verwendeten Statistiken durch. |
+| config | Ändern der Serverkonfiguration |
+| copybase | Kopie einer Datenbank |
+| export | In Befehlszeile exportieren: ermöglicht Ihnen, ein in der Adobe Campaign-Clientkonsole erstelltes Exportmodell an die Befehlszeile zu senden |
+| fileconvert | Datei mit festgelegter Größe konvertieren |
+| importieren | In Befehlszeile importieren: können Sie ein in der Adobe Campaign-Clientkonsole erstelltes Importmodell an die Befehlszeile senden. |
+| inMail | Analyse eingehender E-Mails |
 | installsetup | Verfügbarkeit der Installationsdatei des Kunden |
-| javascript | Ausführen von JavaScript-Skripten mit Zugriff auf SOAP-APIs. |
+| JavaScript | Ausführen von JavaScript-Skripten mit Zugriff auf SOAP-APIs. |
 | job | Befehlszeilenverarbeitung |
-| zusammenführen | Formularzusammenführung |
-| midSourcing | Wiederherstellung der Informationen zum Versand im Mid-Sourcing-Modus |
-| monitor | XML-Anzeige des Status von Serverprozessen und geplanten Aufgaben nach Instanz. |
-| mta | Hauptübermittlungsnachricht des Agenten |
-| Paket | Importieren oder Exportieren von Entitätspaket-Dateien |
-| pdump | Anzeigen von Serverprozessstatus |
-| Prepareda | Vorbereiten einer Versand-Aktion |
-| starten | Teilweise Neustart des Servers |
+| merge | Formular-Zusammenführung |
+| midSourcing | Abruf der Versandinformationen im Mid-Sourcing-Modus |
+| überwachen | XML Anzeige des Status von Serverprozessen und geplanten Aufgaben nach Instanz. |
+| mta | Hauptübermittlungsnachricht für Agenten |
+| Paket | Entitätspaket-Dateien importieren oder exportieren |
+| pdump | Anzeigen des Serverprozessstatus |
+| Prepareda | Versandaktion vorbereiten |
+| Neustart | Teilweise Neustart des Servers |
 | runwf | Ausführung einer Workflow-Instanz |
-| shutdown | Vollständiger Systemausfall |
-| sms | Verarbeitung von SMS-Benachrichtigungen |
+| Herunterfahren | Vollständiger Systemausfall |
+| sms | SMS-Benachrichtigungsverarbeitung |
 | sql | Ausführung von SQL-Scripts |
-| start | Zusätzliche Beginn |
+| start | Weitere Starts |
 | stat | Führt Statistiken über MTA-Verbindungen |
-| stop | Teilweise Systemabschaltung |
-| submitda | Übermitteln einer Versand-Aktion |
-| syslogd | Schreibserver protokollieren und verfolgen |
-| tracking | Konsolidieren und Abrufen von Trackinglogs |
-| trackinglogd | Verfolgen des Schreibens und Bereinigen von Protokollen |
+| stop | Teilweise Herunterfahren des Systems |
+| submitda | Senden einer Versandaktion |
+| syslogd | Protokollierungs- und Ablaufverfolgungsserver |
+| tracking | Trackinglogs konsolidieren und abrufen |
+| trackinglogd | Tracking von Protokollschreibungs- und Bereinigungs-Server |
 | watchdog | Start- und Überwachungsinstanz |
-| web | Anwendungsserver (HTTP und SOAP) |
+| Web | Anwendungsserver (HTTP und SOAP) |
 | wfserver | Workflow-Server |
 
 >[!IMPORTANT]
 >
->Es gibt ein letztes Modul: das mit dem Anwendungsserver verknüpfte Tracking- und Relaismodul, das aus Leistungsgründen über native Mechanismen in einen Apache- oder IIS-Webserver über eine dynamische Bibliothek integriert wird. Es gibt keinen Adobe Campaign-Befehl, mit dem Sie dieses Modul verwalten oder Beginn ausführen können. Daher müssen Sie die Befehle des Webservers selbst verwenden.
+>Es gibt ein letztes Modul: das mit dem Anwendungsserver verknüpfte Tracking- und Relais-Modul, das aus Leistungsgründen über native Mechanismen in einen Apache- oder IIS-Webserver über eine dynamische Bibliothek integriert wird. Es gibt keinen Adobe Campaign-Befehl, mit dem Sie dieses Modul starten oder verwalten können. Daher müssen Sie die Befehle des Webservers selbst verwenden.
 
 Die Modulverwendung und die Syntax ihrer Parameter werden mit dem folgenden Befehl angezeigt: **nlserver `[module]` -?**
 
@@ -126,4 +124,3 @@ Usage: nlserver [-verbose:<verbose mode>] [-?|h|H] [-version] [-noconsole]
 -filter : applies the XTK filter contained in the file during loading of the schema entities.
 -setactivationkey : sets the activation key
 ```
-
