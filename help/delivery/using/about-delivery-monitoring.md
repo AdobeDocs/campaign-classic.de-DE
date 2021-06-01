@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit dem Versand-Monitoring
 description: Erfahren Sie mehr über die Funktionen zum Versand-Monitoring in Campaign Classic.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 
@@ -39,7 +37,7 @@ Für jeden Versand steht ein eigenes Dashboard zur Verfügung. Sie können damit
 Sie sollten einige Richtlinien befolgen, um sicherzustellen, dass Ihre Sendungen gut funktionieren. Informationen zu häufigen Problemen, die bei Sendungen auftreten können, sind ebenfalls verfügbar, damit Sie Ihre Sendungen effizient ausführen können.
 
 * [Versandleistung und Best Practices](../../delivery/using/delivery-performances.md)
-* [Fehlerbehebung beim Versand ](../../delivery/using/delivery-troubleshooting.md)
+* [Fehlerbehebung beim Versand](../../delivery/using/delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
