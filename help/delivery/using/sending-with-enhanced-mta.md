@@ -7,9 +7,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 54d503e97a4374927c4ebe3ba4e0ec05e51d47db
+workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 100%
 
@@ -98,7 +97,7 @@ Für Kunden, die die Transaktionsnachrichtenfunktionen von Adobe Campaign nutzen
 
 ### Header des Enhanced MTA
 
-Die neuesten Campaign Classic-Instanzen enthalten Code, der jeder Nachricht die erforderlichen Enhanced MTA-Header hinzufügt. Wenn Sie Adobe Campaign 19.1 (Build 9032) oder höher verwenden und dies nicht der Fall ist, müssen Sie die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bitten, den Parameter &quot;useMomentum=true&quot; zur Konfiguration Ihrer Ausführungsinstanz hinzuzufügen (in der Datei [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), die je nach Ihrer Konfiguration möglicherweise Ihre Marketing-Instanz, [Mid-Sourcing-Instanz](../../installation/using/mid-sourcing-server.md) oder Ihre [Ausführungsinstanz für Transaktionsnachrichten](../../message-center/using/creating-a-shared-connection.md#execution-instance) ist.
+Die neuesten Campaign Classic-Instanzen enthalten Code, der jeder Nachricht die erforderlichen Enhanced MTA-Header hinzufügt. Wenn Sie Adobe Campaign 19.1 (Build 9032) oder höher verwenden und dies nicht der Fall ist, müssen Sie die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) bitten, den Parameter &quot;useMomentum=true&quot; zur Konfiguration Ihrer Ausführungsinstanz hinzuzufügen (in der Datei [serverConf.xml](../../installation/using/the-server-configuration-file.md#mta)), die je nach Ihrer Konfiguration möglicherweise Ihre Marketing-Instanz, [Mid-Sourcing-Instanz](../../installation/using/mid-sourcing-server.md) oder Ihre [Ausführungsinstanz für Transaktionsnachrichten](../../message-center/using/configuring-instances.md#execution-instance) ist.
 
 Wenn Sie jedoch eine ältere Instanz verwenden, die diesen Code nicht enthält, muss eine neue Typologieregel mit dem Namen **[!UICONTROL Typology Rule for Enhanced MTAs]** zu allen vorhandenen Typologien in Ihrer Campaign-Instanz hinzugefügt werden.
 Diese Regel wird von einem **[!UICONTROL Typologiepaket]** hinzugefügt, das im Rahmen der Aktualisierung auf den Enhanced MTA installiert wurde.
