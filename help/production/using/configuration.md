@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Konfiguration '
 description: 'Konfiguration '
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: d88815e36f7be1b010dcaeee51013a5da769b4a8
+exl-id: 80d388fd-873c-4a08-b8b6-697988f2a18c
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 4%
 
 ---
 
+# Konfiguration {#configuration}
 
-# Konfiguration{#configuration}
+## Ändern des syslogd-Listening-Ports {#changing-the-syslogd-listening-port}
 
-## Ändern des syslogd-Listening-Anschlusses {#changing-the-syslogd-listening-port}
-
-Standardmäßig ist der Listening-Anschluss für **syslogd** auf 666 (udp) eingestellt. Sie können die Variable bei Bedarf mit einer Umgebung ändern.
+Standardmäßig ist der Listening-Port **syslogd** 666 (udp). Sie können sie bei Bedarf mithilfe einer Umgebungsvariablen ändern.
 
 Nach der Konfiguration wird diese Variable von allen Adobe Campaign-Modulen berücksichtigt.
 
@@ -33,15 +31,15 @@ export TRACE_ADDR=localhost:<listening port>
 
 ### Windows {#in-windows}
 
-Sie müssen die Umgebung **TRACE_ADDR** mit dem Wert **localhost** erstellen: **`<listening port="" />`**.
+Sie müssen die Umgebungsvariable **TRACE_ADDR** mit dem Wert **localhost** erstellen: **`<listening port="" />`**.
 
 >[!IMPORTANT]
 >
->Es wird empfohlen, einige Tests durchzuführen, um sicherzustellen, dass Ihre Umgebung funktioniert, nachdem Sie diese Variable erstellt haben.
+>Es wird empfohlen, einige Tests durchzuführen, um sicherzustellen, dass Ihre Plattform funktioniert, nachdem Sie diese Umgebungsvariable erstellt haben.
 
 ## Konfigurieren von Sicherheitszonen {#configuring-security-zones}
 
-Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anzumelden, und die IP-Adresse des Betreibers muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der technischen Zone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers. Die Verknüpfung eines Operators mit einer Sicherheitszone muss in der Konsole definiert werden ( **[!UICONTROL Administration > Zugriffsverwaltung > Operatoren]**-Knoten).
+Jeder Benutzer muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die Benutzer-IP muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der technischen Zone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers. Die Verknüpfung eines Benutzers mit einer Sicherheitszone muss in der Konsole definiert werden ( Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** ).
 
 >[!NOTE]
 >
