@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 55%
+source-wordcount: '1277'
+ht-degree: 49%
 
 ---
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ **[!UICONTROL Ausführung
 
    >[!NOTE]
    >
-   >Um zu vermeiden, bei jeder Verbindung mit der Instanz ein Passwort angeben zu müssen, können Sie die IP-Adresse der Kontrollinstanz in der Ausführungsinstanz angeben. Weitere Informationen hierzu finden Sie unter [Ausführungsinstanz(en)](#execution-instance) konfigurieren.
+   >Um zu vermeiden, bei jeder Verbindung mit der Instanz ein Passwort angeben zu müssen, können Sie die IP-Adresse der Kontrollinstanz in der Ausführungsinstanz angeben. Weiterführende Informationen dazu finden Sie im Abschnitt [Ausführungsinstanz(en)](#execution-instance) konfigurieren.
 
 1. Geben Sie die von der Ausführungsinstanz zu verwendende Verbindungsmethode an. Die Ausführungsinstanz leitet die abgerufenen Daten an die Kontrollinstanz weiter, um die Transaktionsnachrichten- und Ereignisverläufe anzureichern.
 
@@ -91,7 +91,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ **[!UICONTROL Ausführung
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
-   Lesen Sie den Abschnitt [Zugriff auf eine externe Datenbank](../../installation/using/about-fda.md), um mehr Informationen über den Federated Data Access (FDA) zu erhalten.
+   Weiterführende Informationen zum Federated Data Access (FDA) finden Sie in [diesem Abschnitt](../../installation/using/about-fda.md).
 
 1. Klicken Sie auf **[!UICONTROL Verbindung testen]**, um zu überprüfen, ob die Verbindung zwischen Kontrollinstanz und Ausführungsinstanz hergestellt werden kann.
 
@@ -162,17 +162,17 @@ Erstellen Sie im Baum aller Ausführungsinstanzen einen Ordner pro Operator (**O
 >
 >Die folgenden Schritte müssen **für die Kontrollinstanzen** ausgeführt werden.
 
-1. Erstellen Sie in der Kontrollinstanz **Kontrolle 1** ein externes Konto pro Ausführungsinstanz und geben Sie den **mc1**-Operator in jedes externe Konto ein. Anschließend wird der Operator **mc1** für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
+1. Erstellen Sie in der Kontrollinstanz **Kontrolle 1** ein externes Konto pro Ausführungsinstanz und geben Sie den Operator **mc1** in jedes externe Konto ein. Anschließend wird der Operator **mc1** für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. Erstellen Sie in der Kontrollinstanz **Kontrolle 2** ein externes Konto pro Ausführungsinstanz und geben Sie den **mc2**-Operator in jedes externe Konto ein. Anschließend wird der Operator **mc2** für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
+1. Erstellen Sie in der Kontrollinstanz **Kontrolle 2** ein externes Konto pro Ausführungsinstanz und geben Sie den Operator **mc2** in jedes externe Konto ein. Anschließend wird der Operator **mc2** für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
    >[!NOTE]
    >
-   >Weiterführende Informationen zur Konfiguration einer Kontrollinstanz finden Sie in [diesem Abschnitt](#control-instance).
+   >Weitere Informationen zum Konfigurieren einer Kontrollinstanz finden Sie in [diesem Abschnitt](#control-instance).
 
 ### Ausführungsinstanzen {#configuring-execution-instances} konfigurieren
 
