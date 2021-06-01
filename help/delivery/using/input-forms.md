@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Formulare
 description: Formulare
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 
@@ -73,7 +71,7 @@ Standardmäßig wird jedes Feld, je nach Datentyp, einzeilig über den gesamten 
 >
 >Zur automatischen Formatierung als Formular muss auf ein Attribut **type=&quot;contentForm&quot;** im **`<form>`**-Element verweisen.
 
-## Layout {#formatting}
+## Formatierung {#formatting}
 
 Die Anordnung der Steuerelemente untereinander ähnelt dem in einer HTML-Tabelle verwendeten Layout. Sie haben die Möglichkeit, ein Steuerelement in mehrere Spalten aufzuteilen, Elemente zu verschachteln oder die Verwendung des vorhandenen Platzes zu definieren. Es ist jedoch zu beachten, dass nur die Proportionen der Elemente zueinander und ihre Anordnung konfiguriert werden können. Die Angabe fester Größen für einzelne Elemente ist nicht möglich.
 
@@ -98,7 +96,7 @@ Dieses Steuerelement zeigt eine Liste mit editierbaren Spalten und einer Symboll
 
 Das Steuerelement Liste muss vom Attribut **type=&quot;list&quot;** begleitet werden, der Listenpfad muss auf das Kollektionselement verweisen.
 
-Die Spalten werden als Kindelemente der Liste (**`<input>`**) definiert.
+Die Spalten werden als untergeordnete Elemente der Liste (**`<input>`**) definiert.
 
 >[!NOTE]
 >
@@ -174,7 +172,7 @@ Das Steuerelement &quot;Liste&quot; muss mit dem Attribut **type=&quot;notebookl
 
 Der Tab-Titel entspricht dem im Attribut **xpath-label** angegebenen Wert.
 
-Die Eingabefelder werden in einem **`<container>`**-Element, Kindelement des Listenelements, notiert.
+Die Eingabefelder werden in einem **`<container>`**-Element, untergeordnetem Ement des Listenelements, notiert.
 
 Mithilfe der Schaltflächen der Symbolleiste können Sie Elemente zur Liste hinzufügen oder von der Liste entfernen.
 
