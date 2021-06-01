@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Richtlinien für Skripterstellung und Kodierung
-description: Erfahren Sie mehr über die Richtlinien, die bei der Entwicklung in Adobe Campaign befolgt werden müssen (Workflows, Javascript, JSSP usw.).
+title: Richtlinien für Skripterstellung und Codierung
+description: Erfahren Sie mehr über die Richtlinien, die bei der Entwicklung in Adobe Campaign befolgt werden müssen (Workflows, JavaScript, JSSP usw.).
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: f03554302c77a39a3ad68d47417ed930f43302b7
+exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '775'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-
-# Richtlinien für Skripterstellung und Kodierung {#scripting-coding-guidelines}
+# Richtlinien für Skripterstellung und Codierung {#scripting-coding-guidelines}
 
 ## Scripts
 
-Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Weiterführende Informationen finden Sie in der [JSAPI-Dokumentation für Campaign](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html).
 
 Wenn Sie Scripts mit Workflows, Webanwendungen und JSSP verwenden, folgen Sie diesen Best Practices:
 
@@ -41,7 +39,7 @@ Wenn Sie Scripts mit Workflows, Webanwendungen und JSSP verwenden, folgen Sie di
 
    >[!IMPORTANT]
    >
-   >sqlSelect unterstützt diese Funktion nicht. Daher müssen Sie die Abfrage-Funktion der DBEngine-Klasse verwenden:
+   >sqlSelect unterstützt diese Funktion nicht, daher müssen Sie die Abfragefunktion der DBEngine-Klasse verwenden:
 
    ```
    var cnx = application.getConnection()
@@ -54,7 +52,7 @@ Um SQL-Injections zu vermeiden, müssen SQL-Funktionen auf die Zulassungsliste g
 
 >[!IMPORTANT]
 >
->Wenn Sie einen Build verwenden, der älter als 8140 ist, kann die Option **XtkPassUnknownSQLFunctionsToRDBMS** auf &#39;1&#39; eingestellt werden. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder setzen Sie sie auf &#39;0&#39;).
+>Wenn Sie einen älteren Build als 8140 verwenden, kann die Option **XtkPassUnknownSQLFunctionsToRDBMS** auf &quot;1&quot;gesetzt sein. Wenn Sie Ihre Datenbank sichern möchten, löschen Sie diese Option (oder legen Sie sie auf &quot;0&quot;fest).
 
 Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweisungen verwenden, müssen Sie sie immer escapen (siehe die [JSAPI-Dokumentation für Campaign](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html) - Schutz von Daten: Escape-Funktionen). Diese Funktionen sind:
 
@@ -67,7 +65,7 @@ Wenn Sie Benutzereingaben zur Erstellung von Filtern in Abfragen oder SQL-Anweis
 
 ### Ordnerbasis
 
-Siehe folgende Seiten:
+Weitere Informationen finden Sie auf diesen Seiten:
 
 * [Ordnerzugriffseigenschaften](../../platform/using/access-management.md)
 * [Verknüpfte Ordner](../../configuration/using/configuration.md#linked-folder)
@@ -76,7 +74,7 @@ Siehe folgende Seiten:
 
 Zusätzlich zum ordnerbasierten Sicherheitsmodell können Sie Benutzeraktionen auch mit spezifischen Berechtigungen einschränken:
 
-* Sie können einige Filter (sysFilter) hinzufügen, um zu verhindern, dass Daten gelesen/geschrieben werden (siehe [diese Seite](../../configuration/using/filtering-schemas.md)).
+* Sie können einige Systemfilter (sysFilter) hinzufügen, um das Lesen/Schreiben Ihrer Daten zu verhindern (siehe [diese Seite](../../configuration/using/filtering-schemas.md)).
 
    ```
    <sysFilter name="writeAccess">    
@@ -84,7 +82,7 @@ Zusätzlich zum ordnerbasierten Sicherheitsmodell können Sie Benutzeraktionen a
    </sysFilter>
    ```
 
-* Sie können auch einige Aktionen (SOAP-Methode) schützen, die in Schemas definiert sind. Legen Sie einfach das Attribut access mit dem entsprechenden Namen right als Wert fest.
+* Sie können auch einige in Schemas definierte Aktionen (SOAP-Methode) schützen. Legen Sie einfach das Zugriffsattribut mit der entsprechenden benannten Berechtigung als Wert fest.
 
    ```
    <method name="grantVIPAccess" access="myNewRole">
@@ -98,13 +96,13 @@ Zusätzlich zum ordnerbasierten Sicherheitsmodell können Sie Benutzeraktionen a
 
 >[!IMPORTANT]
 >
->Sie können Spezifische Berechtigungen im Befehlsknoten in einem navtree verwenden. Es bietet eine bessere Benutzererfahrung, bietet aber keinen Schutz (nur clientseitig verwenden, um sie auszublenden/zu deaktivieren). Sie müssen das Attribut access verwenden.
+>Sie können spezifische Berechtigungen im Befehlsknoten in einem Navigationsbaum verwenden. Es bietet ein besseres Benutzererlebnis, bietet jedoch keinen Schutz (nur clientseitig verwenden, um sie auszublenden/zu deaktivieren). Sie müssen das Zugriffsattribut verwenden.
 
 ### Überlauftabelle
 
-Wenn Sie vertrauliche Daten (Teil eines Schemas) je nach Zugriffsebene des Operators schützen müssen, sollten Sie sie nicht in der Formulardefinition ausblenden (enabledIf/visibleIf-Bedingungen).
+Wenn Sie vertrauliche Daten (Teil eines Schemas) je nach Zugriffsebene des Benutzers schützen müssen, sollten Sie sie nicht in der Formulardefinition ausblenden (Bedingungen enabledIf/visibleIf ).
 
-Die vollständige Entität wird vom Bildschirm geladen, Sie können sie auch in der Spaltendefinition anzeigen. Dazu müssen Sie eine Überlauftabelle erstellen. Lesen Sie [diese Seite](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
+Die gesamte Entität wird vom Bildschirm geladen. Sie können sie auch in der Spaltendefinition anzeigen. Erstellen Sie hierzu eine Überlauftabelle. Weitere Informationen finden Sie auf [dieser Seite](../../configuration/using/examples-of-schemas-edition.md#overflow-table).
 
 ## Hinzufügen von Captchas in Webanwendungen
 
@@ -116,7 +114,7 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
 1. Gehen Sie zu **[!UICONTROL Ressourcen]** > **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Gestaltungsbausteine]** und erstellen Sie einen neuen Gestaltungsbaustein.
 
-1. Verwenden Sie den Content-Typ **[!UICONTROL Webanwendung]** und aktivieren Sie **[!UICONTROL Sichtbar in den Anpassungsmenüs]**.
+1. Verwenden Sie den Content-Typ **[!UICONTROL Webanwendung]** und aktivieren Sie **[!UICONTROL Sichtbar in den Personalisierungsmenüs]**.
 
    Weitere Informationen dazu finden Sie auf [dieser Seite](../../delivery/using/personalization-blocks.md).
 
@@ -146,27 +144,27 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
    * Bevor Sie Google reCAPTCHA verwenden, müssen Sie sich bei Google registrieren und eine neue reCAPTCHA-Site erstellen.
 
       `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
-   Sie sollten die Überprüfungsschaltfläche deaktivieren können. Da jedoch keine Standardschaltfläche/-verknüpfung vorhanden ist, ist es besser, dies im HTML-Code selbst zu tun. Weitere Informationen dazu finden Sie auf [dieser Seite](https://developers.google.com/recaptcha/).
+   Sie sollten die Validierungsschaltfläche deaktivieren können. Da jedoch keine standardmäßige Schaltfläche/keinen standardmäßigen Link vorhanden ist, ist es besser, dies im HTML-Code selbst zu tun. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://developers.google.com/recaptcha/).
 
 ### Webanwendung aktualisieren
 
-1. Greifen Sie auf die Eigenschaften Ihrer Webanwendung zu, um eine boolesche Variable mit dem Namen **captchaValid** hinzuzufügen.
+1. Greifen Sie auf die Eigenschaften Ihrer Webanwendung zu, um eine boolesche Variable namens **captchaValid** hinzuzufügen.
 
    ![](assets/scripting-captcha.png)
 
-1. Fügen Sie zwischen der letzten Seite und der **[!UICONTROL Datenspeicherung]**-Aktivität ein **[!UICONTROL Script]** und einen **[!UICONTROL Test]** hinzu.
+1. Fügen Sie zwischen der letzten Seite und der Aktivität **[!UICONTROL Storage]** ein **[!UICONTROL Script]** und einen **[!UICONTROL Test]** hinzu.
 
-   Schließen Sie die Verzweigung **[!UICONTROL True]** an die **[!UICONTROL Datenspeicherung]** und die andere an die Seite an, die die captcha enthält.
+   Verbinden Sie den Zweig **[!UICONTROL True]** mit dem **[!UICONTROL Speicher]** und den anderen mit der Seite, die das Captcha enthalten wird.
 
    ![](assets/scripting-captcha2.png)
 
-1. Bearbeiten Sie die Bedingung der Verzweigung True mit `"[vars/captchaValid]"` gleich True.
+1. Bearbeiten Sie die Bedingung der Verzweigung True mit `"[vars/captchaValid]"` gleich True .
 
    ![](assets/scripting-captcha3.png)
 
-1. Bearbeiten Sie die Aktivität **[!UICONTROL Script]**. Der Inhalt hängt von der gewählten Captcha-Engine ab.
+1. Bearbeiten Sie die Aktivität **[!UICONTROL Script]** . Der Inhalt hängt von der ausgewählten Captcha-Engine ab.
 
-1. Schließlich können Sie Ihren personalisierten Block auf der Seite hinzufügen: verweisen Sie auf [diese Seite](../../web/using/editing-content.md).
+1. Schließlich können Sie Ihren personalisierten Baustein auf der Seite hinzufügen: siehe [diese Seite](../../web/using/editing-content.md).
 
    ![](assets/scripting-captcha4.png)
 
@@ -174,11 +172,11 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
 >[!IMPORTANT]
 >
->Für die reCAPTCHA-Integration müssen Sie clientseitiges JavaScript im HTML hinzufügen (in `<head>...</head>`):
+>Für die reCAPTCHA-Integration müssen Sie clientseitiges JavaScript in den HTML-Code einfügen (in `<head>...</head>`):
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
-### Kampagne captcha
+### Campaign Captcha
 
 ```javascript
 var captchaID = request.getParameter("captchaID");
@@ -196,9 +194,9 @@ else
 
 Zeile 6: Sie können eine beliebige Fehlermeldung eingeben.
 
-### Google rekaptcha
+### Google Recaptcha
 
-Bitte lesen Sie die [offizielle Dokumentation](https://developers.google.com/recaptcha/docs/verify).
+Weitere Informationen finden Sie in der [offiziellen Dokumentation](https://developers.google.com/recaptcha/docs/verify).
 
 ```javascript
 ctx.vars.captchaValid = false
