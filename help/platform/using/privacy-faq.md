@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datenschutz und Einverständniserklärung
 description: Weitere Informationen zu Datenschutz und Einverständniserklärung.
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
 
@@ -48,7 +46,7 @@ Adobe bietet keine Rechtsberatung. Sie sollten mit Ihrer eigenen Rechtsabteilung
 
 **Überarbeitung des Einverständnisprozesses**
 
-* Nennen und aktualisieren Sie alle für die DSGVO relevanten Kontaktpunkte der Datenerfassung (z. B.: Sprache, Verfahren zur Erteilung des Einverständnisses und Einverständnisprotokolle).
+* Nennen und aktualisieren Sie alle für die DSGVO relevanten Kontaktpunkte der Datenerfassung (z. B. Sprache, Verfahren zur Erteilung des Einverständnisses und Einverständnisprotokolle).
 
 * Achten Sie darauf, dass alle Marketing-E-Mails Abmelde-Links enthalten.
 
@@ -66,7 +64,7 @@ Adobe bietet keine Rechtsberatung. Sie sollten mit Ihrer eigenen Rechtsabteilung
 
 * Achten Sie darauf, dass jeder Benutzer von Adobe Campaign die entsprechenden Zugriffsberechtigungen für die Durchführung seiner Aufgaben hat, aber keine darüber hinausreichenden Rechte.
 
-## Benutzerinteraktion aufrecht erhalten{#preserve-user-engagement}
+## Benutzerinteraktion aufrechterhalten {#preserve-user-engagement}
 
 ### Wie können Datenverantwortliche das Einverständnis ihrer Kunden erlangen, ohne die Benutzerinteraktion zu beeinträchtigen?
 
