@@ -1,80 +1,77 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Über die benutzerdefinierte Empfängertabelle
 description: Über die benutzerdefinierte Empfängertabelle
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 5871674ee26766cf08439768df3fb07ea0f99e7b
+exl-id: d8cea496-b3f3-420a-bf6e-b7cbb321b30d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 2%
+ht-degree: 9%
 
 ---
 
+# Benutzerdefinierte Empfängertabelle verwenden{#about-custom-recipient-table}
 
-# Verwenden einer benutzerdefinierten Empfängertabelle{#about-custom-recipient-table}
+In diesem Abschnitt werden die Grundlagen für die Verwendung einer nicht standardmäßigen Empfängertabelle beschrieben.
 
-In diesem Abschnitt werden die Grundsätze für die Verwendung einer nicht standardmäßigen Empfänger-Tabelle erläutert.
+Standardmäßig bietet Adobe Campaign eine standardmäßige Empfängertabelle, mit der native Funktionen und Prozesse verknüpft sind. Die Standard-Empfängertabelle verfügt über eine Reihe vordefinierter Felder und Tabellen, die mithilfe einer Erweiterungstabelle einfach erweitert werden können.
 
-Standardmäßig wird von Adobe Campaign eine Standardtabelle für Empfänger Angebot, mit der vordefinierte Funktionen und Prozesse verknüpft sind. Die Standardtabelle für Empfänger enthält eine Reihe vordefinierter Felder und Tabellen, die mit einer Erweiterungstabelle leicht erweitert werden können.
+Wenn diese Erweiterungsmethode eine gute Flexibilität beim Erweitern einer Tabelle bietet, lässt sie keine Verringerung der Anzahl der Felder oder Links in der Tabelle zu. Die Verwendung einer nicht standardmäßigen Tabelle oder &quot;externen Empfängertabelle&quot;ermöglicht eine größere Flexibilität, erfordert jedoch bei der Implementierung bestimmte Vorsichtsmaßnahmen.
 
-Wenn diese Erweiterungsmethode eine gute Flexibilität beim Erweitern einer Tabelle Angebot, lässt sie keine Verringerung der Anzahl der Felder oder Links darin zu. Die Verwendung einer nicht standardmäßigen Tabelle oder einer &quot;externen Empfänger-Tabelle&quot;ermöglicht eine größere Flexibilität, erfordert jedoch bei der Implementierung bestimmte Vorsichtsmaßnahmen.
+## Abbildungen {#precisions}
 
-## Präzisionen {#precisions}
+Diese Funktion ermöglicht es Adobe Campaign, Daten aus einer externen Datenbank zu verarbeiten. Diese Daten werden als ein Satz von Profilen für den Versand verwendet. Die Implementierung dieses Prozesses umfasst mehrere Präzisionen, die je nach den Anforderungen des Kunden relevant sein können. Wie zum Beispiel:
 
-Mit dieser Funktion kann Adobe Campaign Daten aus einer externen Datenbank verarbeiten: Diese Daten werden als eine Reihe von Profilen für Versand verwendet. Die Implementierung dieses Prozesses umfasst mehrere Präzisionen, die je nach Bedarf des Kunden relevant sein können. Wie zum Beispiel:
-
-* Kein Updatestream zur und von der Adobe Campaign-Datenbank: Daten aus dieser Tabelle können direkt über die Datenbank-Engine aktualisiert werden, die sie hostet.
-* Es wurden keine Änderungen an den Prozessen vorgenommen, die auf der vorhandenen Datenbank ausgeführt werden.
-* Verwenden einer Profil-Datenbank mit einer nicht standardmäßigen Struktur: Möglichkeit, Profil, die in verschiedenen Tabellen mit verschiedenen Strukturen gespeichert sind, mit einer einzigen Instanz zu liefern.
+* Kein Aktualisierungsstream von und zur Adobe Campaign-Datenbank: Daten aus dieser Tabelle können direkt über die Datenbank-Engine aktualisiert werden, die sie hostet.
+* Keine Änderungen an den Prozessen, die mit der vorhandenen Datenbank ausgeführt werden.
+* Bei Verwendung einer Profildatenbank ohne Standardstruktur: Es besteht die Möglichkeit, dass der Versand an in verschiedenen Tabellen mit unterschiedlichen Strukturen gespeicherte Profile erfolgt, wobei eine einzelne Instanz verwendet wird.
 * Beim Aktualisieren der Adobe Campaign-Datenbank sind keine Änderungen oder Wartungsarbeiten erforderlich.
-* Die Standardtabelle für Empfänger ist nutzlos, wenn Sie die meisten Tabellenfelder nicht benötigen oder wenn die Datenbankvorlage nicht auf den Empfängern zentriert ist.
-* Um effizient zu sein, ist eine Tabelle mit wenigen Feldern erforderlich, wenn Sie über eine beträchtliche Anzahl von Profilen verfügen. Die Standardtabelle für Empfänger enthält zu viele Felder für diesen speziellen Fall.
+* Die Standard-Empfängertabelle ist nicht nützlich, wenn Sie die meisten Tabellenfelder nicht benötigen oder die Datenbankvorlage nicht auf die Empfänger zentriert ist.
+* Um effizient zu sein, ist eine Tabelle mit einigen Feldern erforderlich, wenn Sie über eine erhebliche Anzahl von Profilen verfügen. Die Standard-Empfängertabelle verfügt für diesen Fall über zu viele Felder.
 
-In diesem Abschnitt werden die Schlüsselpunkte beschrieben, mit denen Sie vorhandene Tabellen in Adobe Campaign zuordnen können, sowie die Konfiguration, die für die Ausführung von Versänden auf der Grundlage einer beliebigen Tabelle gelten soll. Schließlich wird beschrieben, wie Sie Benutzern so praktische Abfrageschnittstellen wie in der Standardtabelle für Empfänger zur Verfügung stellen. Um das in diesem Abschnitt dargestellte Material zu verstehen, ist eine gute Kenntnis der Prinzipien der Bildschirm- und Schema-Design erforderlich.
+In diesem Abschnitt werden die wichtigsten Punkte beschrieben, anhand derer Sie vorhandene Tabellen in Adobe Campaign zuordnen können, sowie die Konfiguration, die für die Ausführung von Sendungen auf der Basis einer beliebigen Tabelle angewendet werden soll. Schließlich wird beschrieben, wie Sie Benutzern so praktische Abfrageschnittstellen zur Verfügung stellen, wie sie in der Standard-Empfängertabelle verfügbar sind. Um das in diesem Abschnitt dargestellte Material zu verstehen, sind gute Kenntnisse der Prinzipien des Bildschirms und Schemadesigns erforderlich.
 
-## Empfehlungen und Einschränkungen          {#recommendations-and-limitations}
+## Empfehlungen und Einschränkungen            {#recommendations-and-limitations}
 
-Die Verwendung einer Tabelle mit einem externen Empfänger unterliegt folgenden Einschränkungen:
+Die Verwendung einer externen Empfängertabelle unterliegt folgenden Einschränkungen:
 
-* Adobe Campaign unterstützt nicht mehrere Empfänger-Schema, die als Targeting-Schema bezeichnet werden und mit denselben Broadlog- und/oder Trackinglog-Schemas verknüpft sind. Andernfalls kann dies zu Anomalien bei der Datenabstimmung im Anschluss führen.
+* Adobe Campaign unterstützt nicht mehrere Empfängerschemata, so genannte Zielgruppenschemas, die mit denselben Broadlog- und/oder Trackinglog-Schemata verknüpft sind. Dies kann andernfalls zu Anomalien bei der Datenabstimmung später führen.
 
-   Die nachstehende Abbildung zeigt die erforderliche relationale Struktur für jedes benutzerdefinierte Empfänger-Schema:
+   Die nachstehende Abbildung zeigt die erforderliche relationale Struktur für jedes benutzerdefinierte Empfängerschema:
    ![](assets/custom_recipient_limitation.png)
 
    Wir empfehlen:
 
-   * Deaktivieren Sie die Schema **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** in das vordefinierte **[!UICONTROL nms:Recipientschema]**. Diese beiden Protokolltabellen sollten nicht mit einer zusätzlichen Tabelle mit benutzerdefiniertem Empfänger verknüpft werden.
-   * Definieren dedizierter benutzerdefinierter Broadlog- und Trackinglog-Schema für jedes neue benutzerdefinierte Empfänger-Schema. Dies kann beim Einrichten des Zielgruppen-Mappings automatisch erfolgen, siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md).
+   * Die Schemas **[!UICONTROL nms:BroadLogRcp]** und **[!UICONTROL nms:TrackingLogRcp]** werden den nativen **[!UICONTROL nms:Recipientschema]** zugewiesen. Diese beiden Protokolltabellen sollten keiner zusätzlichen benutzerdefinierten Empfängertabelle zugeordnet werden.
+   * Definieren dedizierter benutzerdefinierter Broadlog- und Trackinglog-Schemata für jedes neue benutzerdefinierte Empfängerschema. Dies kann automatisch bei der Einrichtung des Zielgruppen-Mappings erfolgen, siehe [Zielgruppen-Mapping](../../configuration/using/target-mapping.md).
 
-* Sie können nicht den Standard **[!UICONTROL Dienste und Abonnement]** verwenden, der im Produkt angeboten wird.
+* Sie können den im Produkt angebotenen Standard **[!UICONTROL Dienste und Abonnements]** nicht verwenden.
 
-   Das bedeutet, dass der unter [dieser Abschnitt](../../delivery/using/managing-subscriptions.md) beschriebene Gesamtvorgang nicht anwendbar ist.
+   Das bedeutet, dass der in [diesem Abschnitt](../../delivery/using/managing-subscriptions.md) beschriebene Gesamtvorgang nicht anwendbar ist.
 
-* Die Verknüpfung mit der Tabelle **[!UICONTROL Besucher]** funktioniert nicht.
+* Die Verknüpfung mit der Tabelle **[!UICONTROL visitor]** funktioniert nicht.
 
-   Um das Modul **[!UICONTROL Social Marketing]** zu verwenden, müssen Sie den Schritt &quot;Datenspeicherung&quot;so konfigurieren, dass auf die richtige Tabelle verwiesen wird.
+   Um das Modul **[!UICONTROL Social Marketing]** zu verwenden, müssen Sie daher den Speicherschritt so konfigurieren, dass er auf die richtige Tabelle verweist.
 
-   Bei Verwendung der Verweisfunktionen muss die Standardvorlage für die Erstübermittlung von Nachrichten entsprechend angepasst werden.
+   Ebenso muss bei Verwendung von Verweisfunktionen die Standardvorlage für die Erstübermittlung von Nachrichten angepasst werden.
 
-* Profil können nicht manuell in eine Liste eingefügt werden.
+* Es ist nicht möglich, Profile manuell in eine Liste einzufügen.
 
    Daher ist das in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md) beschriebene Verfahren ohne zusätzliche Konfiguration nicht anwendbar.
 
    >[!NOTE]
    >
-   >Sie können Empfänger-Listen weiterhin mit Workflows erstellen. Weitere Informationen finden Sie unter [Erstellen einer Profil-Liste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
+   >Sie können weiterhin Empfängerlisten mithilfe von Workflows erstellen. Weitere Informationen hierzu finden Sie unter [Erstellen einer Profilliste mit einem Workflow](../../configuration/using/creating-a-profile-list-with-a-workflow.md).
 
-Es wird außerdem empfohlen, die Standardwerte zu überprüfen, die in den verschiedenen vordefinierten Konfigurationen verwendet werden: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
+Es wird außerdem empfohlen, die in den verschiedenen vordefinierten Konfigurationen verwendeten Standardwerte zu überprüfen: Je nach den verwendeten Funktionen müssen mehrere Anpassungen vorgenommen werden.
 
 Beispiel:
 
-* Bestimmte Standardberichte, insbesondere die von **Interaktion** und **Mobilanwendungen** angebotenen, müssen neu entwickelt werden. Siehe Abschnitt [Verwalten von Berichten](../../configuration/using/managing-reports.md).
-* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten verweisen auf die Standardtabelle für Empfänger (**[!UICONTROL nms:Empfänger]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine Tabelle mit externen Empfängern verwendet werden. Siehe Abschnitt [Verwalten von Workflows](../../configuration/using/managing-workflows.md).
-* Der standardmäßige Personalisierungsblock **[!UICONTROL Abmeldung]** muss angepasst werden.
+* Bestimmte Standardberichte, insbesondere die von **Interaction** und **Mobile Apps** angebotenen, müssen überarbeitet werden. Siehe Abschnitt [Verwalten von Berichten](../../configuration/using/managing-reports.md) .
+* Die Standardkonfigurationen für bestimmte Workflow-Aktivitäten beziehen sich auf die standardmäßige Empfängertabelle (**[!UICONTROL nms:recipient]**): Diese Konfigurationen müssen geändert werden, wenn sie für eine externe Empfängertabelle verwendet werden. Siehe Abschnitt [Verwalten von Workflows](../../configuration/using/managing-workflows.md) .
+* Der standardmäßige Gestaltungsbaustein **[!UICONTROL Abmelde-Link]** muss angepasst werden.
 * Das Zielgruppen-Mapping der Standard-Versandvorlagen muss geändert werden.
-* V4-Formulare sind nicht für die Verwendung mit externen Empfängern kompatibel: müssen Sie Webanwendungen verwenden.
-
+* V4-Formulare sind nicht zur Verwendung mit einer externen Empfängertabelle kompatibel: müssen Sie Webanwendungen verwenden.
