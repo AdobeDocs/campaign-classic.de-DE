@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datenschemata
 description: Datenschemata
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 
@@ -31,7 +29,7 @@ Das XML-Dokument eines Datenschemas muss die Wurzel **`<srcschema>`** mit den At
 </srcSchema>
 ```
 
-Der Startpunkt des Schemas ist sein Hauptelement. Es ist leicht identifizierbar, da sein Name mit dem des Schemas identisch ist. Außerdem handelt es sich um das direkte Kindelement der Wurzel. Ausgehend von diesem Element beginnt die Inhaltsbeschreibung.
+Der Startpunkt des Schemas ist sein Hauptelement. Es ist leicht identifizierbar, da sein Name mit dem des Schemas identisch ist. Außerdem handelt es sich um das direkte untergeordnete Element der Wurzel. Ausgehend von diesem Element beginnt die Inhaltsbeschreibung.
 
 In einem Content-Management-Schema entspricht das Hauptelement folgendem Muster:
 
