@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Spezifische Konfigurationen in v6.02
 description: Spezifische Konfigurationen in v6.02
 audience: migration
 content-type: reference
 topic-tags: configuration
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 7e8f8488-f3ef-4b64-9981-335d67caf372
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 3%
 
 ---
 
-
 # Spezifische Konfigurationen in v6.02{#specific-configurations-in-v6-02}
 
-Im folgenden Abschnitt wird die zusätzliche Konfiguration beschrieben, die bei der Migration von Version 6.02 erforderlich ist. Sie sollten auch die Einstellungen konfigurieren, die im Abschnitt [Allgemeine Konfigurationen](../../migration/using/general-configurations.md) beschrieben sind.
+Im folgenden Abschnitt wird die zusätzliche Konfiguration beschrieben, die für die Migration von v6.02 erforderlich ist. Sie sollten auch die Einstellungen konfigurieren, die im Abschnitt [Allgemeine Konfigurationen](../../migration/using/general-configurations.md) beschrieben werden.
 
-## Webanwendungen {#web-applications}
+## Web-Anwendungen {#web-applications}
 
-Wenn Sie von Version 6.02 migrieren, werden möglicherweise Fehlerprotokolle zu Webanwendungen vom Übersichtstyp angezeigt. Beispiele für Fehlermeldungen:
+Wenn Sie von v6.02 migrieren, werden möglicherweise Fehlerprotokolle zu Webanwendungen vom Typ &quot;Übersicht&quot;angezeigt. Beispiele für Fehlermeldungen:
 
 ```
 [PU-0006] Entity of type : 'xtk:entityBackupNew' and Id 'nms:webApp|taskOverview', expression '[SQLDATA[' was found : '...)) or (@id IN ([SQLDATA[select 
@@ -31,29 +29,29 @@ Wenn Sie von Version 6.02 migrieren, werden möglicherweise Fehlerprotokolle zu 
 
 Diese Webanwendungen verwendeten SQLData und sind aufgrund erhöhter Sicherheit nicht mit v7 kompatibel. Diese Fehler führen zu einem Migrationsfehler.
 
-Wenn Sie diese Webanwendungen nicht verwendet haben, führen Sie das folgende Bereinigungsskript aus und führen Sie das Post-Upgrade erneut aus:
+Wenn Sie diese Webanwendungen nicht verwendet haben, führen Sie das folgende Bereinigungsskript aus und führen Sie das Postupgrade erneut aus:
 
 ```
 Nlserver javascript -instance:[instance_name] -file [installation_path]/datakit/xtk/fra/js/removeOldWebApp.js
 ```
 
-Wenn Sie diese Webanwendungen geändert haben und weiterhin in v7 verwenden möchten, müssen Sie die Option **allowSQLInject** in den verschiedenen Sicherheitszonen aktivieren und die Nachrüstung erneut Beginn vornehmen. Weitere Informationen finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata).
+Wenn Sie diese Webanwendungen geändert haben und sie weiterhin in v7 verwenden möchten, müssen Sie die Option **allowSQLInjection** in Ihren verschiedenen Sicherheitszonen aktivieren und das Postupgrade neu starten. Weitere Informationen hierzu finden Sie im Abschnitt [SQLData](../../migration/using/general-configurations.md#sqldata) .
 
 ## Benutzerfreundlichkeit: Startseite und Navigation {#user-friendliness--home-page-and-navigation}
 
 >[!IMPORTANT]
 >
->Wenn Sie weiterhin Übersichtswebanwendungen der Version 6.02 verwenden möchten, müssen Sie die Option **allowSQLInject** in den verschiedenen Sicherheitszonen vor der Aktualisierung aktivieren. Siehe [Webanwendungen](#web-applications).
+>Wenn Sie Webanwendungen vom Typ &quot;Übersicht&quot;von v6.02 weiterhin verwenden möchten, müssen Sie die Option **allowSQLInjection** in Ihren verschiedenen Sicherheitszonen vor dem Postupgrade aktivieren. Siehe [Webanwendungen](#web-applications).
 
-Nach der Migration von Version 6.02 wird die Homepage des Adobe Campaigns v6.02 nicht mehr angezeigt, aber sie ist noch immer verfügbar und mit Adobe Campaign v7 kompatibel.
+Nach der Migration von Version 6.02 wird die Adobe Campaign v6.02-Homepage nicht mehr angezeigt, ist aber weiterhin mit Adobe Campaign v7 verfügbar und kompatibel.
 
-Um weiterhin die Homepage v6.02 zu verwenden, müssen Sie nach der Migration ein &quot;Kompatibilitätspaket&quot;installieren.
+Um die Homepage v6.02 weiterhin zu verwenden, müssen Sie nach der Migration ein Kompatibilitätspaket installieren.
 
 Importieren Sie dazu das Kompatibilitätspaket:
 
-Klicken Sie auf **[!UICONTROL Werkzeuge > Erweitert > Paket importieren]** und wählen Sie das **campaignMigration.xml**-Paket in **`\nl\datakit\nms\[Your language]\package\optional`**.
+Klicken Sie auf **[!UICONTROL Tools > Erweitert > Package importieren]** und wählen Sie das Paket **campaignMigration.xml** im Paket **`\nl\datakit\nms\[Your language]\package\optional`** aus.
 
-Um Zugriff auf die Schnittstellen des Webanwendung Typs v6.02 zuzulassen, muss die Serverkonfigurationsoption **sessionTokenOnly** in der Datei **serverConf.xml** aktiviert werden:
+Um den Zugriff auf die Schnittstellen vom Typ Web Application (v6.02) zu ermöglichen, muss die Konfigurationsoption **sessionTokenOnly** des Servers in der Datei **serverConf.xml** aktiviert sein:
 
 ```
 sessionTokenOnly="true"
@@ -61,15 +59,15 @@ sessionTokenOnly="true"
 
 Diese Option ändert die Sicherheitsstufen, um die Kompatibilität der Benutzeroberfläche sicherzustellen.
 
-Nachdem das Paket installiert wurde, wird die Adobe Campaign v7-Startseite durch Ihre alte v6.02-Homepage ersetzt, die mit den allgemeinen Konfigurationen von v7 (blaues Startseite-Banner) versehen ist.
+Nachdem das Paket installiert wurde, wird die Adobe Campaign v7-Startseite durch Ihre alte v6.02-Homepage ersetzt, die mit den allgemeinen Konfigurationen von v7 (blaues Startseitenbanner) ergänzt wird.
 
 ![](assets/dashboards.png)
 
-Alle Links auf dieser Homepage verlinken mit Ausnahme der Listen (**[!UICONTROL operation Liste]**, **[!UICONTROL Versand-Verfolgung in Vorgängen]** usw.) , der auf die v6.02-Übersicht verweist (Webanwendungen).
+Alle Links auf dieser Homepage verlinken zu v7-Bildschirmen mit Ausnahme der Listen (**[!UICONTROL Vorgangsliste]**, **[!UICONTROL Versand-Tracking in Vorgängen]** usw.) , der auf die v6.02-Übersicht (Webanwendungen) verweist.
 
 ![](assets/dashboards2.png)
 
-Wenn Sie eine weitere in Version 6.02 konfigurierte Übersicht hinzufügen möchten, müssen Sie diese der Startseite aus dem Dashboard hinzufügen. (**[!UICONTROL Administration > Zugriffsverwaltung > Dashboard]**).
+Wenn Sie eine weitere Übersicht hinzufügen möchten, die in v6.02 konfiguriert wurde, müssen Sie diese auf der Startseite im Dashboard hinzufügen. (**[!UICONTROL Administration > Zugriffe > Dashboard]**).
 
 >[!NOTE]
 >
@@ -77,6 +75,6 @@ Wenn Sie eine weitere in Version 6.02 konfigurierte Übersicht hinzufügen möch
 
 ## Message Center {#message-center}
 
-Nach der Migration einer Message Center-Kontrollinstanz müssen Sie die Transaktionsnachrichtenvorlagen erneut veröffentlichen, damit sie funktionieren.
+Nach der Migration der Kontrollinstanz von Message Center müssen Sie die Transaktionsnachrichten-Vorlagen erneut veröffentlichen, damit sie funktionieren.
 
-In v7 haben sich die Namen der Transaktionsnachrichtenvorlagen auf Ausführungsinstanzen geändert. Sie werden derzeit vom Operatornamen vorangestellt, der der Kontrollinstanz entspricht, auf der sie erstellt wurden, z. B. **control1_template1_rt** (wobei **control1** der Name des Operators ist). Wenn Sie über eine beträchtliche Menge an Vorlagen verfügen, empfehlen wir das Löschen alter Vorlagen auf Kontrollinstanzen.
+In v7 haben sich die Namen der Transaktionsnachrichten-Vorlagen auf Ausführungsinstanzen geändert. Sie erhalten derzeit das Präfix des Operatornamens, der der Kontrollinstanz entspricht, auf der sie erstellt werden, z. B. **control1_template1_rt** (wobei **control1** der Name des Operators ist). Wenn Sie eine große Menge an Vorlagen haben, empfehlen wir, alte Vorlagen in Kontrollinstanzen zu löschen.
