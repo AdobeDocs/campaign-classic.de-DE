@@ -1,35 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Verbindungsschwellen
-description: Verbindungsschwellen
+title: Verbindungsgrenzwerte
+description: Verbindungsgrenzwerte
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+exl-id: 4ee05559-e719-4e6e-b42c-1e82df428871
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
 
 ---
 
+# Verbindungsgrenzwerte{#connection-thresholds}
 
-# Verbindungsschwellen{#connection-thresholds}
+Bei stark ausgelasteten Servern kann der Verbindungsschwellenwert überschritten werden. Auf jeden Fall ist es nützlich herauszufinden, warum.
 
-Bei hochgeladenen Servern kann der Verbindungsschwellenwert überschritten werden. In jedem Ereignis ist es nützlich herauszufinden, warum.
+Es gibt drei unterschiedliche Schwellenwerte:
 
-Es gibt drei verschiedene Schwellenwerte:
+* Der **Schwellenwert für Webverbindungen**, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich zur Änderung an Ihren Systemadministrator.
 
-* Der **Webverbindungsschwellenwert**, der auf Ihrem Webserver konfiguriert ist. Wenden Sie sich zum Ändern an Ihren Systemadministrator.
+* Der **Schwellenwert für Datenbankverbindungen**. Wenden Sie sich zur Änderung an Ihren Datenbankadministrator.
 
-* Der **Datenbankverbindungsschwellenwert**. Wenden Sie sich zum Ändern an Ihren Datenbankadministrator.
+* Der **Adobe Campaign-Verbindungsschwellenwert**, der an zwei Stellen verfügbar ist:
 
-* Der **Adobe Campaign-Verbindungsschwellenwert** ist an zwei Stellen verfügbar:
+   * **** Tomcatside: alle Abfragen, die tatsächlich auf den Adobe Campaign Tomcat-Client gelangen.
 
-   * **** Tomcatside: alle Abfragen, die tatsächlich auf dem Adobe Campaign Tomcat Client ankommen.
-
-      Dieser Schwellenwert wird in der Datei **nl6/tomcat-8/conf/server.xml** konfiguriert. Mit dem Attribut **maxThreads** können Sie den Schwellenwert der Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise in 250 geändert werden.
+      Dieser Schwellenwert wird in der Datei **nl6/tomcat-8/conf/server.xml** konfiguriert. Mit dem Attribut **maxThreads** können Sie den Schwellenwert für die Anzahl der gleichzeitig verarbeiteten Abfragen erhöhen. Sie kann beispielsweise auf 250 geändert werden.
 
       ```
       <Connector protocol="HTTP/1.1" port="8080"
@@ -43,9 +41,9 @@ Es gibt drei verschiedene Schwellenwerte:
                   unpackWARs="true" autoDeploy="true">
       ```
 
-   * **Datenbank**: alle Verbindungen, die gleichzeitig in der Datenbank geöffnet werden, durch einen Prozess.
+   * **Datenbank**: Satz aller Verbindungen, die durch einen Prozess gleichzeitig in der Datenbank geöffnet werden.
 
-      Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem Attribut **maxCnx**, das sich in **Datenquellenpool** befindet, können Sie den Schwellenwert der gleichzeitig verarbeiteten Abfragen erhöhen.
+      Dieser Schwellenwert wird in der Datei **nl6/conf/serverConf.xml** konfiguriert. Mit dem Attribut **maxConx** im **Datenquellenpool** können Sie den Schwellenwert für gleichzeitig verarbeitete Abfragen erhöhen.
 
       ```
           <!-- Data source
@@ -58,4 +56,3 @@ Es gibt drei verschiedene Schwellenwerte:
               <pool aliveTestDelaySec="600" freeCnx="0" maxCnx="90" maxIdleDelaySec="1200"/>
             </dataSource>
       ```
-
