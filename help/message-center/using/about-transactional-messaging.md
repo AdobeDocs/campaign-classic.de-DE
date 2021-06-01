@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 42%
@@ -40,7 +40,7 @@ Die Funktionen für Transaktionsnachrichten unterstützen die Skalierbarkeit und
 
 Das Transaktionsnachrichtenmodul von Adobe Campaign ist in ein Informationssystem integriert, das Ereignisse zurückgibt, die in personalisierte Transaktionsnachrichten geändert werden. Diese Nachrichten können einzeln oder in Batches per E-Mail, SMS oder Push-Benachrichtigungen gesendet werden.
 
-Diese Funktion beruht auf einer bestimmten Architektur, bei der die **Ausführungsinstanz** von der **Kontrollinstanz** getrennt ist. Diese Verteilung sorgt für höhere Verfügbarkeit und bessere Lastverwaltung. Weiterführende Informationen dazu finden Sie unter [Transaktionsnachrichten-Instanzen](../../message-center/using/transactional-messaging-architecture.md).
+Diese Funktion beruht auf einer bestimmten Architektur, bei der die **Ausführungsinstanz** von der **Kontrollinstanz** getrennt ist. Diese Verteilung sorgt für höhere Verfügbarkeit und bessere Lastverwaltung. Weiterführende Informationen dazu finden Sie unter [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md).
 
 >[!NOTE]
 >
@@ -81,8 +81,8 @@ Auf der **Kontrollinstanz** müssen Sie die folgenden Aktionen durchführen:
 
 Nachdem Sie die Transaktionsnachrichtenvorlage entworfen und veröffentlicht haben und ein entsprechendes Ereignis ausgelöst wurde, werden die folgenden Hauptschritte auf der **Ausführungsinstanz** ausgeführt:
 
-1. Wenn das Ereignis vom externen Informationssystem generiert wird, werden die relevanten Daten über die Methoden **PushEvent** und **PushEvents** an Campaign gesendet. Siehe [Ereignisabruf](#event-collection).
-1. Das Ereignis ist mit der entsprechenden Nachrichtenvorlage verknüpft. Siehe [Routing zu einer Vorlage](#routing-towards-a-template).
+1. Wenn das Ereignis vom externen Informationssystem generiert wird, werden die relevanten Daten über die Methoden **PushEvent** und **PushEvents** an Campaign gesendet. Siehe [Ereignisabruf](../../message-center/using/about-event-processing.md#event-collection).
+1. Das Ereignis ist mit der entsprechenden Nachrichtenvorlage verknüpft. Siehe [Routing zu einer Vorlage](../../message-center/using/about-event-processing.md#routing-towards-a-template).
 1. Nach Abschluss der Anreicherung wird der Versand durchgeführt. Siehe [Versandausführung](../../message-center/using/delivery-execution.md). Jeder Empfänger erhält eine personalisierte Nachricht.
 
 ## Verwandte Themen {#related-topics}
@@ -90,4 +90,4 @@ Nachdem Sie die Transaktionsnachrichtenvorlage entworfen und veröffentlicht hab
 * [Erste Schritte mit Kommunikationskanälen](../../delivery/using/communication-channels.md)
 * [Wichtige Schritte bei der Versanderstellung](../../delivery/using/steps-about-delivery-creation-steps.md)
 * [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md)
-* [Über Transaktionsnachrichten-Berichte](../../message-center/using/about-transactional-messaging-reports.md)
+* [Transaktionsnachrichten-Berichte aufrufen](../../message-center/using/about-transactional-messaging-reports.md)
