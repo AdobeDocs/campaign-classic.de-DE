@@ -1,39 +1,37 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Datenschemata
 description: Datenschemata
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: d4446035-3988-4d89-b7df-7b8528c2e371
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 2%
+ht-degree: 64%
 
 ---
-
 
 # Datenschemata{#data-schemas}
 
 ## Grundsätze {#principles}
 
-Um die Schema zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie auf den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** der Adobe Campaign-Client-Konsole.
+Um Schemata zu bearbeiten, zu erstellen und zu konfigurieren, klicken Sie in der Client-Konsole von Adobe Campaign auf den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemas]**.
 
 >[!NOTE]
 >
->Standardmäßig verfügbare Schema können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole gelöscht werden.
+>Vordefinierte Datenschemata können nur von einem Administrator Ihrer Adobe Campaign Classic-Konsole gelöscht werden.
 
 ![](assets/d_ncs_integration_schema_navtree.png)
 
-Das Bearbeitungsfeld zeigt den XML-Inhalt des Quell-Schemas an:
+Das Bearbeitungsfeld zeigt den XML-Inhalt des Quellschemas an:
 
 ![](assets/d_ncs_integration_schema_edition.png)
 
 >[!NOTE]
 >
->Mit dem Bearbeitungssteuerelement &quot;Name&quot;können Sie den Schema-Schlüssel aus Name und Namensraum eingeben. Die Attribute &quot;name&quot;und &quot;Namensraum&quot;des Stammelements des Schemas werden automatisch im XML-Bearbeitungsbereich des Schemas aktualisiert.
+>Mit dem Bearbeitungssteuerelement &quot;Name&quot; können Sie den Schemaschlüssel, bestehend aus Name und Namespace, eingeben. Die Attribute &quot;Name&quot; und &quot;Namespace&quot; des Stammelements des Schemas werden automatisch im XML-Bearbeitungsbereich des Schemas aktualisiert.
 
 Die Vorschau generiert automatisch das erweiterte Schema:
 
@@ -41,34 +39,34 @@ Die Vorschau generiert automatisch das erweiterte Schema:
 
 >[!NOTE]
 >
->Beim Speichern des Quelldokuments wird die Generierung des erweiterten Schemas automatisch gestartet.
+>Beim Speichern des Quellschemas wird die Generierung des erweiterten Schemas automatisch gestartet.
 
-Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie die Registerkarte &quot;Vorschau&quot;verwenden. Wenn das Schema erweitert wurde, können Sie dann alle Erweiterungen visualisieren. Als Ergänzung werden auf der Registerkarte &quot;Dokumentation&quot;alle Schema-Attribute und -Elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) angezeigt. Die Registerkarte &quot;Dokumentation&quot;gilt nur für generierte Schema. Weitere Informationen finden Sie im Abschnitt [Regenerierende Schema](../../configuration/using/regenerating-schemas.md).
+Wenn Sie die gesamte Struktur eines Schemas überprüfen müssen, können Sie den Vorschau -Tab verwenden. Wenn das Schema erweitert wurde, können Sie alle seine Erweiterungen visuell darstellen. Ergänzend zeigt die Registerkarte Dokumentation alle Schema-Attribute und -Elemente sowie deren Eigenschaften (SQL-Feld, Typ/Länge, Bezeichnung, Beschreibung) an. Die Registerkarte Dokumentation gilt nur für generierte Schemata. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) .
 
 ## Beispiel: Erstellen einer Vertragstabelle {#example--creating-a-contract-table}
 
-Im folgenden Beispiel möchten wir eine neue Tabelle für **verträge** im Datenbankmodell der Adobe Campaign-Datenbank erstellen. In dieser Tabelle können Sie für jeden Vertrag Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern speichern.
+Im folgenden Beispiel wird eine neue Tabelle für **Contracts** im Datenbankmodell der Adobe Campaign-Datenbank erstellt. In dieser Tabelle können Sie Vor- und Nachnamen sowie E-Mail-Adressen von Inhabern und Mitinhabern für jeden Vertrag speichern.
 
 Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktualisieren, um die entsprechende Tabelle zu erstellen. Folgende Schritte sind dazu nötig:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Configuration > Data Schemas]** der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL New]** .
-1. Wählen Sie die Option **[!UICONTROL Neue Tabelle im Datenmodell]** erstellen und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
+1. Wählen Sie die Option **[!UICONTROL Neue Tabelle im Datenmodell]** erstellen und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_create_new_schema.png)
 
-1. Geben Sie einen Tabellennamen und einen Namensraum an.
+1. Geben Sie einen Tabellennamen und einen Namespace an.
 
    ![](assets/s_ncs_configuration_create_new_param.png)
 
    >[!NOTE]
    >
-   >Standardmäßig werden von Benutzern erstellte Schema im Namensraum &quot;cus&quot;gespeichert. Weitere Informationen hierzu finden Sie unter [Identifizierung eines Schemas](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
+   >Standardmäßig werden von Benutzern erstellte Schemata im Namespace &#39;cus&#39; gespeichert. Weitere Informationen hierzu finden Sie unter [Identifizierung eines Schemas](../../configuration/using/about-schema-reference.md#identification-of-a-schema).
 
-1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Einstiegsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf die Schaltfläche **[!UICONTROL Einfügen]** und wählen Sie den hinzuzufügenden Einstellungstyp.
+1. Erstellen Sie den Inhalt der Tabelle. Es wird empfohlen, den Eintragsassistenten zu verwenden, um sicherzustellen, dass keine Einstellungen fehlen. Klicken Sie dazu auf **[!UICONTROL Einfügen]** und wählen Sie die Art der Einstellung, die hinzugefügt werden soll.
 
    ![](assets/s_ncs_configuration_create_new_content.png)
 
-1. Legen Sie die Einstellungen für die Vertragstabelle fest:
+1. Legen Sie die Einstellungen für die Tabelle mit den Verträgen fest:
 
    ```
    <srcSchema desc="Active contracts" img="ncm:channels.png" label="Contracts" labelSingular="Contract" mappingType="sql" name="Contracts" namespace="cus" xtkschema="xtk:srcSchema">
@@ -86,7 +84,7 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
    </srcSchema>
    ```
 
-   hinzufügen die Art des Vertrags und fügen Sie einen Index auf die Vertragsnummer ein.
+   Fügen Sie den Vertragstyp hinzu und fügen Sie einen Index auf die Vertragsnummer ein.
 
    ```
    <srcSchema _cs="Contracts (cus)" desc="Active contracts" entitySchema="xtk:srcSchema" img="ncm:channels.png"
@@ -120,5 +118,4 @@ Dazu müssen Sie das Schema der Tabelle erstellen und die Datenbankstruktur aktu
 
    ![](assets/s_ncs_configuration_structure.png)
 
-1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. Weitere Informationen finden Sie unter [Aktualisieren der Datenbankstruktur](../../configuration/using/updating-the-database-structure.md).
-
+1. Aktualisieren Sie die Datenbankstruktur, um die Tabelle zu erstellen, mit der das Schema verknüpft werden soll. Weitere Informationen hierzu finden Sie unter [Datenbankstruktur aktualisieren](../../configuration/using/updating-the-database-structure.md).
