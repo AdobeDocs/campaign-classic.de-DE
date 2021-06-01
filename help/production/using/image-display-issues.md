@@ -1,30 +1,28 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Probleme mit der Bildanzeige
 description: Probleme mit der Bildanzeige
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 50f95d7156e7104d90fa7a31eea30711b9c11bbf
+exl-id: 62fa491e-3e83-422b-bcde-2bae2c1b676e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
 
 ---
 
-
 # Probleme mit der Bildanzeige{#image-display-issues}
 
-Wenn Bildanzeigeprobleme in einer gesendeten Meldung auftreten, können Gründe mit einem schlechten Standort in Verbindung gebracht werden:
+Wenn bei einer gesendeten Nachricht Probleme mit der Bildanzeige auftreten, können die Gründe mit einer fehlerhaften Position in Zusammenhang stehen:
 
-* Die Speicherorte stimmen ggf. nicht überein oder die Bilder wurden nicht korrekt an den Duplikat-Tracking-Server gesendet: Überprüfen Sie Ihre Konfiguration.
-* Bilder befinden sich möglicherweise nicht im Ordner öffentliche Ressource auf der Marketing-Instanz: Laden Sie die Bilder in Ihren Ressourcenordner hoch, um das Problem zu lösen.
-* Wenn Sie in einer Mid-Sourcing-Architektur arbeiten: Beim Senden von Testversänden werden die Bilder ohne Fehler hochgeladen (Informationen werden in den Analysen-Protokollen angezeigt).
+* Die Standorte stimmen möglicherweise nicht überein oder Bilder wurden möglicherweise nicht korrekt an den doppelten Tracking-Server gesendet: Überprüfen Sie Ihre Konfiguration.
+* Bilder befinden sich möglicherweise nicht im Ordner der öffentlichen Ressource auf der Marketing-Instanz: Laden Sie die Bilder in Ihren Ressourcenordner hoch, um das Problem zu beheben.
+* Wenn Sie in einer Mid-Sourcing-Architektur arbeiten: Prüfen Sie, ob Bilder beim Versand von Testsendungen fehlerfrei hochgeladen werden (Informationen werden in den Analyseprotokollen angezeigt).
 
 Fehlerbehebung:
 
 1. Senden Sie einen Testversand, der die Bilder anzeigt.
 1. Überprüfen Sie, ob die Ressourcenkonfiguration in der Instanzeinrichtung korrekt ist.
-1. Überprüfen Sie den Ordner &quot;öffentliche Ressourcen&quot;oder, falls sich dieser nicht im Ordner &quot;öffentliche Ressourcen&quot;befindet, den Ordner, auf den im Versand verwiesen wird.
+1. Überprüfen Sie den Ordner der öffentlichen Ressourcen oder, falls er sich nicht im Ordner der öffentlichen Ressourcen befindet, den im Versand referenzierten Ordner.
