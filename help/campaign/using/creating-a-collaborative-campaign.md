@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Partizipative Kampagne erstellen
 description: Partizipative Kampagne erstellen
@@ -7,9 +6,8 @@ audience: campaign
 content-type: reference
 topic-tags: distributed-marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 100%
 
@@ -53,15 +51,16 @@ Wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (Kampagnenzugriff) 
 
 Die Lokalstelle kann bei der Kampagnenbestellung die von der Zentralstelle festgelegten Kriterien erfassen und die Kampagne vor der Bestellung evaluieren.
 
-Wenn die Bestellung einer **Partizipativen Kampagne mit Kampagnenzugriff** von der Zentraleinheit validiert wurde, wird eine Kindkampagne für die Lokalstelle erstellt. Sobald diese der Lokalstelle zur Verfügung steht, kann die Lokalstelle folgende Parameter verändern:
+Wenn die Bestellung einer **Partizipativen Kampagne mit Kampagnenzugriff** von der Zentraleinheit validiert wurde, wird eine untergeordnete Kampagne für die Lokalstelle erstellt. Sobald diese der Lokalstelle zur Verfügung steht, kann die Lokalstelle folgende Parameter verändern:
 
 * Kampagnenworkflow,
 * Typologieregeln,
 * Personalisierungsfelder.
 
-Die Kindkampagne wird von der Lokalstelle, die Elternkampagne von der Zentralstelle ausgeführt.
+Die untergeordnete Kampagne wird von der Lokalstelle, die übergeordnete Kampagne von der Zentralstelle ausgeführt.
 
-Über den Link **Liste der verknüpften Kampagnen...** im Kampagnen-Dashboard kann die Zentralstelle alle Tochterkampagnen der **[!UICONTROL partizipativen Kampagne mit Kampagnenzugriff]** einsehen.
+
+Über den Link **Liste der verknüpften Kampagnen...** im Kampagnen-Dashboard kann die Zentralstelle alle untergeordneten Kampagnen der **[!UICONTROL partizipativen Kampagne mit Kampagnenzugriff]** einsehen.
 
 ![](assets/mkg_dist_mutual_op_by_op.png)
 
@@ -101,7 +100,7 @@ Der Lokalstelle steht es frei, je nach Kampagneninhalt bestimmte Kontakte zu ent
 
 ![](assets/mkg_dist_mutual_op_by_valid2.png)
 
-### Partizipative Kampagne (ohne Konfiguration){#simple}
+### Partizipative Kampagne (ohne Konfiguration) {#simple}
 
 Um eine einfache partizipative Kampagne zu erstellen, wählen Sie die Vorlage **[!UICONTROL Partizipative Kampagne (ohne Konfiguration)]** aus.
 
