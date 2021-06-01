@@ -1,53 +1,51 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Power Booster und Power Cluster
 description: Power Booster und Power Cluster
 audience: installation
 content-type: reference
 topic-tags: deployment-types-
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 7%
 
 ---
 
-
 # Power Booster und Power Cluster{#power-booster-and-power-cluster}
 
 ## Übersicht {#overview}
 
-Adobe Campaign bietet Ihnen zwei vordefinierte Architekturoptionen zur Dimensionierung Ihrer Bereitstellung:
+Adobe Campaign bietet Ihnen zwei vorab verpackte Architekturoptionen zur Dimensionierung Ihrer Implementierung:
 
-* **Leistungsverstärker**
+* **Power Booster**
 
-   Diese Option unterstützt eine einzelne zusätzliche Ausführungsinstanz, die von der primären Anwendungsinstanz des Adobe Campaigns entkoppelt ist. Dedizierte Ausführungsinstanzen können remote oder von einem Drittanbieter gehostet werden. Bei Implementierung werden E-Mail-Ausführung, Verfolgung, Mirrorseiten und Absprungmeldungen unabhängig von den zentralen Anwendungsfunktionen verarbeitet.
+   Diese Option unterstützt eine einzelne zusätzliche Ausführungsinstanz, die von der primären Adobe Campaign-Anwendungsinstanz entkoppelt ist. Dedizierte Ausführungsinstanzen können remote oder von einem Drittanbieter gehostet werden. Bei Implementierung werden E-Mail-Ausführung, -Tracking, Mirrorseiten und Bounce Messages unabhängig von den zentralen Anwendungsfunktionen verarbeitet.
 
-* **Stromverteiler**
+* **Power Cluster**
 
-   Diese Option unterstützt 2 bis N geclusterte Ausführungsinstanzen, die von der primären Anwendungsinstanz des Adobe Campaigns in Bezug auf eine bestimmte Anwendung entkoppelt sind. Cluster können remote, in verteilten Bereitstellungen und von Dritten gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Adobe Campaign Power Cluster-Option Redundanz- und Ausbaustrategien mithilfe von Warenhardware für eine vereinfachte SLA- oder Performance-Entwicklung.
+   Diese Option unterstützt zwei bis N Clusterausführungsinstanzen, die von der primären Adobe Campaign-Anwendungsinstanz in Bezug auf eine bestimmte Anwendung entkoppelt sind. Cluster können remote, in verteilten Implementierungen und von Drittanbietern gehostet werden. Zusätzlich zu den Vorteilen der Prozessisolierung ermöglicht die Option Adobe Campaign Power Cluster Redundanz und das Ausskalieren von Strategien mithilfe von Rohstoffhardware für eine vereinfachte SLA- oder Performance-Entwicklung.
 
 ![](assets/architectural_options_diagram.png)
 
 ## Förderfähige Anwendungen {#eligible-applications}
 
-Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von folgenden Anwendungen verwendet werden:
+Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendungen verwendet werden:
 
 * Campaign
 * Versand
 * Message Center
 
-## Matrix der architektonischen Empfehlungen {#matrix-of-architectural-recommendations}
+## Matrix der Architekturempfehlungen {#matrix-of-architectural-recommendations}
 
 <table> 
  <tbody> 
   <tr> 
    <td> </td> 
    <td> <strong>Standardarchitektur</strong><br /> </td> 
-   <td> <strong>Leistungsverstärker</strong><br /> </td> 
-   <td> <strong>Stromverteiler</strong><br /> </td> 
+   <td> <strong>Power Booster</strong><br /> </td> 
+   <td> <strong>Power Cluster</strong><br /> </td> 
   </tr> 
   <tr> 
    <td> E-Mail-Kampagnen und ausgehende Interaktionen<br /> </td> 
@@ -65,26 +63,25 @@ Die Optionen &quot;Stromverstärker&quot;und &quot;Stromcluster&quot;können von
    <td> Verfügbarkeit<br /> </td> 
    <td> Die primäre Datenbank<br /> </td> 
    <td> 24/7 außer Wartungsfenster und Ausfallzeiten für die Ausführungsinstanz<br /> </td> 
-   <td> 24/7/365 Dienst möglich<br /> </td> 
+   <td> 24/7/365 Service possible<br /> </td> 
   </tr> 
   <tr> 
    <td> Sicherheit<br /> </td> 
-   <td> Data Mart ist potenziell über das öffentliche Internet zugänglich<br /> </td> 
-   <td> Data Mart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
-   <td> Data Mart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
+   <td> Der Zugriff auf das Datamart ist potenziell über das öffentliche Internet möglich<br /> </td> 
+   <td> Datamart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
+   <td> Datamart wird von frontalen, internetorientierten Komponenten isoliert<br /> </td> 
   </tr> 
   <tr> 
    <td> Bereitstellungsvorlage<br /> </td> 
-   <td> Alle auf einer Site (lokal oder in der Cloud)<br /> </td> 
+   <td> Alle auf einer Site (kann On-Premise oder in der Cloud sein)<br /> </td> 
    <td> Marketing vor Ort mit Ausführung in der Cloud möglich<br /> </td> 
    <td> Marketing vor Ort mit Ausführung in der Cloud; Ausführung in verschiedenen Geos möglich<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Empfehlungen {#recommendations}
+## Recommendations {#recommendations}
 
-* Eine Ausführungsinstanz muss einem Dienst gewidmet sein. Sie können kein Paket für einen Dienst installieren, den Sie nicht abonniert haben. Wenn Sie z. B. die Option **Power Booster** für den **Message Center**-Dienst abonnieren, dürfen Sie nur das **[!UICONTROL Execution of Transaktionsnachrichten]**-Paket auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind Empfehlungen dieselben wie für eine Hauptinstanz. Weitere Informationen finden Sie in [diesem Dokument](../../production/using/foreword.md).
-* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz über einen Datenbankkomponenten-/Hardwarekomponenten-Punkt der Ansicht korrekt zu konfigurieren.
-
+* Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, für den Sie sich nicht angemeldet haben. Wenn Sie beispielsweise die Option **Power Booster** für den Dienst **Message Center** abonnieren, dürfen Sie nur das Package **[!UICONTROL Ausführung von Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+* Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind die Empfehlungen mit denen einer Hauptinstanz identisch. Weitere Informationen hierzu finden Sie in [diesem Dokument](../../production/using/foreword.md).
+* Wenden Sie sich an Adobe Campaign Professional Services, um die Instanz in einer Datenbank/Hardwarekomponente ordnungsgemäß zu konfigurieren.
