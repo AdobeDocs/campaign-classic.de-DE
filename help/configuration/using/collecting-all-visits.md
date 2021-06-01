@@ -1,39 +1,37 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erfassen aller Besuche
 description: Erfassen aller Besuche
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: cc554d0d-bbab-4f72-b870-5fef5a2fda9d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 3%
 
 ---
 
-
 # Erfassen aller Besuche{#collecting-all-visits}
 
-Mit dem von Adobe Campaign bereitgestellten Web-Tracking-Modul können Sie die Besuche bestimmter Seiten der Site erfassen, die ein Empfänger im Zusammenhang mit der Site-Verfolgung nach einem Klick in einer Nachricht durchführt.
+Mit dem von Adobe Campaign bereitgestellten Webtracking-Modul können Sie die Besuche auf bestimmten Seiten der Site erfassen, die von einem Empfänger im Rahmen des Site-Trackings nach einem Klick in einer Nachricht ausgeführt werden.
 
-Sie können Ihre Plattform jedoch so konfigurieren, dass alle Seitenbesuche mit einem Web-Trackingtag von einem Plattformbenutzer erfasst werden.
+Sie können Ihre Plattform jedoch so konfigurieren, dass alle Besuche auf Seiten mit einem Web-Tracking-Tag durch einen Benutzer erfasst werden, der der Plattform bekannt ist.
 
-Ein Plattformbenutzer ist ein Empfänger, der bereits ein Targeting durch einen Versand durchgeführt hat und mindestens einmal auf eine empfangene Nachricht geklickt hat. Zur Identifizierung dieses Empfängers wird ein permanentes Cookie verwendet.
+Ein Benutzer, der der Plattform bekannt ist, ist ein Empfänger, der bereits in der Zielgruppe eines Versands war und mindestens einmal in einer empfangenen Nachricht geklickt hat. Dieser Empfänger wird anhand eines permanenten Cookies identifiziert.
 
 >[!IMPORTANT]
 >
->Die Adobe Campaign-Plattform ist nicht zur Verwendung als Website-Verfolgungswerkzeug über den Kontext des Besuchs der Site nach einem Klick in einer Nachricht hinaus vorgesehen. Wenn diese Option aktiviert ist, kann dies zu einem sehr hohen Ressourcenverbrauch auf den Computern führen, auf denen Ihre Server gehostet werden (Umleitung, Anwendung und Datenbank). Es wird empfohlen, sicherzustellen, dass Ihre Hardwarearchitektur diese Belastung unterstützen kann, und zu vermeiden, dass Web-Trackingtag auf den am häufigsten besuchten Seiten wie der Startseite platziert werden.
+>Die Adobe Campaign-Plattform ist nicht zur Verwendung als Website-Tracking-Tool vorgesehen, das über den Kontext des Besuchs der Site nach einem Klick in einer Nachricht hinausgeht. Wenn diese Option aktiviert ist, kann dies zu einer sehr hohen Nutzung von Ressourcen auf den Computern führen, auf denen Ihre Server gehostet werden (Umleitung, Anwendung und Datenbank). Es wird empfohlen, sicherzustellen, dass Ihre Hardware-Architektur diese Auslastung unterstützen kann, und zu vermeiden, dass Webtrackingtags auf den am häufigsten besuchten Seiten wie der Startseite platziert werden.
 
 ## Serverkonfiguration {#server-configuration}
 
-Die Server werden durch Überladen bestimmter Elemente der Datei **serverConf.xml** konfiguriert. Diese Dateien werden im Unterverzeichnis **conf** des Installationsordners des Adobe Campaigns gespeichert.
+Die Server werden durch Überladen bestimmter Elemente der Datei **serverConf.xml** konfiguriert. Diese Dateien werden im Unterverzeichnis **conf** des Adobe Campaign-Installationsordners gespeichert.
 
 ### Weiterleitungsserver {#redirection-server}
 
-Legen Sie für den Umleitungsserver das Attribut **trackWebVisitors** des Elements **redirect** auf **true** fest.
+Setzen Sie für den Weiterleitungsserver das Attribut **trackWebVisitors** des Elements **redirection** auf **true**.
 
 ```
 <redirection P3PCompactPolicy="CAO DSP COR CURa DEVa TAIa OUR BUS IND UNI COM NAV"
@@ -42,11 +40,11 @@ startRedirection="true" startRedirectionInModule="true" trackWebVisitors="true"
 trackingPassword=""
 ```
 
-## Konfigurieren einer Kampagne mit Standardübereinstimmung {#configuring-a-default-matching-campaign}
+## Standardkampagne konfigurieren {#configuring-a-default-matching-campaign}
 
-Zur Ansicht von Verfolgungsinformationen über Ihre Client-Konsole müssen Sie:
+Um Tracking-Informationen über Ihre Clientkonsole anzuzeigen, müssen Sie:
 
-* Erstellen Sie einen **Dummy-Versand** (die Zuordnung des Versands muss mit der Zuordnung des Zielgruppe-Schemas identisch sein),
-* Geben Sie in der Option **NmsTracking_WebTrackingDelivery** den internen Versand **ein.**
+* Erstellen Sie einen **Platzhalterversand** (das Versand-Mapping muss mit dem Mapping des Zielschemas identisch sein),
+* Geben Sie den internen Namen **a1/> dieses Versands in die Option** NmsTracking_WebTrackingDelivery **ein.**
 
-Alle Site-Verfolgungsinformationen, die nicht direkt nach einem Klick in einer E-Mail erfolgen, können in dem erstellten Platzhalter-Versand angezeigt werden.
+Alle Site-Tracking-Informationen, die nicht direkt auf einen Klick in einer E-Mail folgen, können im erstellten Platzhalterversand angezeigt werden.
