@@ -1,44 +1,42 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Schemamerkmale
 description: Schemamerkmale
 audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 099161b4-b4cb-433c-aed6-71157269a536
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
 
 ---
 
-
 # Schemamerkmale{#schema-characteristics}
 
-Die Eigenschaften eines Schemas, das auf eine vorhandene Tabelle verweist, sind wie folgt:
+Die Merkmale eines Schemas, das auf eine vorhandene Tabelle verweist, lauten wie folgt:
 
-* Adobe Campaign darf SQL-Objekte nicht in Bezug auf vorhandene Tabellen ändern.
+* Adobe Campaign darf SQL-Objekte nicht relativ zu vorhandenen Tabellen ändern;
 * Die Namen der Tabellen und Spalten müssen explizit angegeben werden.
 * Indizes müssen deklariert werden.
 
 >[!IMPORTANT]
 >
->Löschen Sie keine Empfänger in der Standardtabelle, auch wenn sie nutzlos sind. Dies kann zu Verhaltensfehlern in der Adobe Campaign-Datenbank führen.
+>Löschen Sie keine Felder in der Standard-Empfängertabelle, auch wenn sie nutzlos sind. Dies kann zu Verhaltensfehlern in der Adobe Campaign-Datenbank führen.
 
-## Das Ansicht-Attribut {#the-view-attribute}
+## Das Ansichtsattribut {#the-view-attribute}
 
-Source-Schema akzeptieren das **Ansicht**-Attribut für das **srcSchema**-Stammelement. Es muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen manipuliert wird. Das Attribut **Ansicht=&quot;true&quot;** weist den Assistenten zum Aktualisieren der Datenbankstruktur an, dieses Schema zu ignorieren. Die Anwendung ist daher nicht berechtigt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
+Quellschemata akzeptieren das Attribut **view** für das Stammelement **srcSchema** . Sie muss verwendet werden, wenn Adobe Campaign in benutzerdefinierten Tabellen bearbeitet wird. Das Attribut **view=&quot;true&quot;** weist den Datenbankstruktur-Aktualisierungsassistenten an, dieses Schema zu ignorieren. Die Anwendung ist daher nicht berechtigt, die Tabelle, ihre Spalten und Indizes mit dem entsprechenden Schema zu synchronisieren.
 
-Wenn dieses Attribut auf **true** gesetzt ist, wird das Schema nur zum Generieren von SQL-Abfragen verwendet, um auf die Daten dieser Tabelle zuzugreifen.
+Wenn dieses Attribut auf **true** gesetzt ist, wird das Schema nur zum Generieren von SQL-Abfragen für den Zugriff auf die Daten dieser Tabelle verwendet.
 
 ## Namen von Tabellen und Spalten {#names-of-tables-and-columns}
 
-Wenn Tabellen vom Tabellenaktualisierungsassistenten erstellt werden, werden die Tabellen- und Spaltennamen automatisch anhand der jeweiligen Schema- und Attributnamen generiert. Es ist jedoch möglich, die Verwendung der SQL-Namen durch Eingabe der folgenden Attribute zu erzwingen:
+Wenn Tabellen vom Tabellenaktualisierungs-Assistenten erstellt werden, werden die Namen der Tabellen und Spalten automatisch anhand der Namen der jeweiligen Schemas und Attribute generiert. Es ist jedoch möglich, die Verwendung der SQL-Namen zu erzwingen, indem die folgenden Attribute eingegeben werden:
 
 * **** sqltableinnerhalb des Hauptelements des Schemas, um die Tabelle anzugeben,
-* **&quot;** sqlname&quot;innerhalb jedes Attributs, um die Spalten anzugeben.
+* **** sqlname in jedem Attribut angeben, um die Spalten anzugeben.
 
 **Beispiel**:
 
@@ -57,11 +55,11 @@ Wenn Tabellen vom Tabellenaktualisierungsassistenten erstellt werden, werden die
 
 Wenn in diesem Beispiel die Namen der Tabellen und Spalten nicht explizit angegeben wurden, hätte die Anwendung **CusIndividual** für die Tabelle, **lastName** und **firstName** für die Spalten verwendet.
 
-In einem Schema ist es möglich, nur einen Teil der Spalten einer vorhandenen Tabelle auszufüllen. Nicht ausgefüllte Spalten können nicht vom Benutzer aufgerufen werden.
+In einem Schema ist es möglich, nur einen Teil der Spalten einer vorhandenen Tabelle auszufüllen. Auf nicht ausgefüllte Spalten kann nicht vom Benutzer zugegriffen werden.
 
-## Indizierte Felder {#indexed-fields}
+## Indexierte Felder {#indexed-fields}
 
-Beim Sortieren der Datensätze einer Liste aus der Client-Konsole wird eine bessere Leistung durch Sortieren nach indizierten Feldern erzielt. Wenn Sie einen Index in einem Schema deklarieren, zeigt die Konsole die indizierten Felder mit einer roten Linie unter dem Sortierungspfeil links neben der Spaltenbeschriftung an, wie unten dargestellt:
+Beim Sortieren der Datensätze einer Liste in der Clientkonsole wird eine bessere Leistung erzielt, indem eine Sortierung nach indizierten Feldern vorgenommen wird. Wenn Sie einen Index in einem Schema deklarieren, zeigt die Konsole die indizierten Felder mit einer roten Linie unter dem Sortierungspfeil links neben der Spaltenbeschriftung an, wie unten dargestellt:
 
 ![](assets/s_ncs_integration_mapping_index.png)
 
@@ -77,7 +75,7 @@ In einem Schema wird ein Index wie folgt definiert:
 
 Daher ist es wichtig, vorhandene Indizes der benutzerdefinierten Tabelle im entsprechenden Schema zu deklarieren.
 
-Für jede Schlüssel- und Linkdeklaration des Quell-Schemas wird implizit ein Index deklariert. Die Indexdeklaration kann durch Angabe des Attributs **noDbIndex=&quot;true&quot;** verhindert werden:
+Ein Index wird implizit für jede Schlüssel- und Link-Deklaration des Quellschemas deklariert. Die Indexdeklaration kann durch Angabe des Attributs **noDbIndex=&quot;true&quot;** verhindert werden:
 
 **Beispiel**:
 
@@ -86,4 +84,3 @@ Für jede Schlüssel- und Linkdeklaration des Quell-Schemas wird implizit ein In
   <keyfield xpath="@customerId"/>
 </key>
 ```
-
