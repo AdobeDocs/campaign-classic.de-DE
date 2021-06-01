@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 74%
+source-wordcount: '511'
+ht-degree: 61%
 
 ---
 
@@ -19,7 +19,7 @@ Um sicherzustellen, dass jedes Ereignis in eine personalisierte Nachricht umgewa
 
 >[!IMPORTANT]
 >
->Ereignistypen müssen zuvor erstellt werden. Weiterführende Informationen finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
+>Ereignistypen müssen zuvor erstellt werden. Weitere Informationen hierzu finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
 
 Transaktionsnachrichten-Vorlagen enthalten die erforderlichen Informationen zur Personalisierung der Transaktionsnachricht. Sie können Vorlagen auch verwenden, um die Vorschau der Nachricht zu testen und einen Testversand an Testadressen zu senden, bevor Sie an die endgültige Zielgruppe versenden. Weiterführende Informationen dazu finden Sie unter [Vorlagen für Transaktionsnachrichten testen](../../message-center/using/testing-message-templates.md).
 
@@ -41,19 +41,19 @@ Transaktionsnachrichten-Vorlagen enthalten die erforderlichen Informationen zur 
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Ereignistypen müssen zuvor in der Konsole erstellt werden. Weiterführende Informationen finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
+   Ereignistypen müssen zuvor in der Konsole erstellt werden. Weitere Informationen hierzu finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
 
    >[!IMPORTANT]
    >
    >Ein Ereignistyp kann nicht mit mehreren Vorlagen verknüpft werden.
 
-1. Geben Sie eine Art und eine Beschreibung ein und klicken Sie dann auf **[!UICONTROL Weiter]**, um den Nachrichtentext zu erstellen (siehe [Nachrichteninhalt wird erstellt](#creating-message-content)).
+1. Geben Sie eine Art und eine Beschreibung ein und klicken Sie dann auf **[!UICONTROL Weiter]**, um den Nachrichtentext zu erstellen (siehe [Nachrichteninhalt erstellen](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Nachrichteninhalt erstellen {#creating-message-content}
 
-Die Erstellung des Inhalts einer Transaktionsnachricht erfolgt nach dem gleichen Prinzip wie für einen klassischen Versand in Adobe Campaign. Für einen E-Mail-Versand können Sie zum Beispiel einen Inhalt im HTML- oder im Textformat erstellen und Anhänge hinzufügen oder den Betreff des Versands personalisieren. Mehr Informationen erhalten Sie im Kapitel [E-Mail-Versand](../../delivery/using/about-email-channel.md) des entsprechenden Handbuchs.
+Der Inhalt der Transaktionsnachricht wird auf dieselbe Weise definiert wie für den klassischen Versand in Adobe Campaign. Beispielsweise können Sie für einen E-Mail-Versand Inhalte im HTML- oder Textformat erstellen, Anhänge hinzufügen oder das Versandobjekt personalisieren. Weitere Informationen hierzu finden Sie im Kapitel [E-Mail-Versand](../../delivery/using/about-email-channel.md) .
 
 >[!IMPORTANT]
 >
