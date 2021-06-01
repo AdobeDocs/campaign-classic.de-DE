@@ -1,21 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Ereignisverlauf
-description: Ereignisverlauf
+title: Verlauf von Message Center-Ereignissen
+description: Erfahren Sie mehr über den Ereignisbericht für Message Center.
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '147'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 93%
 
 ---
 
-# Ereignisverlauf{#history-of-message-center-events}
+# Ereignisverlauf {#history-of-message-center-events}
 
 Der Bericht **[!UICONTROL Ereignisverlauf]** bietet eine Übersicht über die Message-Center-Aktivitäten, d. h. die Anzahl der verarbeiteten Ereignisse und der versendeten Transaktionsnachrichten.
 
