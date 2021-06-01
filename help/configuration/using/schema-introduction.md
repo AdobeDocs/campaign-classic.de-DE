@@ -1,27 +1,25 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elemente und Attribute
 description: Elemente und Attribute
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: a469d275fdd768fbd098a0027b5096872dbf6d89
+exl-id: 5745fc60-9df3-4ad0-bbeb-f6ae8c86a5aa
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 27%
 
 ---
 
+# Schemareferenz {#schema-reference}
 
-# Schema-Referenz {#schema-reference}
+Beim Bearbeiten eines Schemas ist ein auf dem Quellschema basierendes Genehmigungssystem (xtk:srcSchema) verfügbar. Beim Aktualisieren der Datenbank mit der Option &quot;Datenbankstruktur aktualisieren..&quot; können auch Fehler erkannt werden. Assistent.
 
-Beim Bearbeiten eines Schemas ist ein auf dem Quellcode-Schema basierendes Genehmigungssystem (xtk:srcSchema) verfügbar. Beim Aktualisieren der Datenbank mit dem Befehl &quot;Datenbankstruktur aktualisieren...&quot; können auch einige Fehler erkannt werden. Assistent.
+Standardmäßig sind in Adobe Campaign-Schemata alle booleschen Typattribute &quot;false&quot;. Um sie zu aktivieren, müssen Sie das Attribut im Schema angeben und dessen Wert auf &quot;true&quot;setzen.
 
-Standardmäßig sind in Adobe Campaign-Schemas alle booleschen Typattribute &quot;false&quot;. Um sie zu aktivieren, müssen Sie das Attribut im Schema angeben und dessen Wert auf &quot;true&quot;setzen.
-
-Referenz-Liste:
+Referenzliste:
 
 * [Attribut](schema/attribute.md)
 * [Compute string](schema/compute-string.md)
