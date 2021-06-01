@@ -8,10 +8,10 @@ user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalü
 solution: Campaign Classic
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: a9a32b383d4709d9f0adf1e886d2ec3a9d601652
+source-git-commit: a9054fb8e10bef37675922b2f81c7615cd04c1bb
 workflow-type: tm+mt
-source-wordcount: '2522'
-ht-degree: 99%
+source-wordcount: '2477'
+ht-degree: 98%
 
 ---
 
@@ -567,40 +567,26 @@ ht-degree: 99%
       + [Angebot auf einem Inbound-Kanal](interaction/using/offers-on-an-inbound-channel.md)
       + [Angebot auf einem Outbound-Kanal](interaction/using/offers-on-an-outbound-channel.md)
 + Transaktionsnachrichtenversand {#transactional-messaging}
-   + Erste Schritte mit Transaktionsnachrichten {#introduction}
-      + [Über den Versand von Transaktionsnachrichten](message-center/using/about-transactional-messaging.md)
+   + [Erste Schritte mit Transaktionsnachrichten](message-center/using/about-transactional-messaging.md)
+   + Transaktionsnachrichten konfigurieren {#configure-transactional-messaging}
       + [Transaktionsnachrichten-Architektur](message-center/using/transactional-messaging-architecture.md)
-      + [Ereignisbeschreibung](message-center/using/event-description.md)
-   + Instanz konfigurieren {#instance-configuration}
-      + [Gemeinsame Verbindung erstellen](message-center/using/creating-a-shared-connection.md)
-      + [Ausführungsinstanzen identifizieren](message-center/using/identifying-execution-instances.md)
-      + [Schwellenwerte überwachen](message-center/using/monitoring-thresholds.md)
-      + [Ereignisse bereinigen](message-center/using/purging-events.md)
-      + [Technische Workflows](message-center/using/technical-workflows.md)
-      + [Ereignistypen erstellen](message-center/using/creating-event-types.md)
-      + [Multibranding konfigurieren](message-center/using/configuring-multibranding.md)
+      + [Instanzen konfigurieren](message-center/using/configuring-instances.md)
+      + [Ergänzende Konfigurationen](message-center/using/additional-configurations.md)
    + Nachrichtenvorlagen {#message-templates}
-      + [Über Transaktionsnachrichten-Vorlagen](message-center/using/introduction.md)
-      + [Nachrichtenvorlage erstellen](message-center/using/creating-the-message-template.md)
-      + [Nachrichteninhalt erstellen](message-center/using/creating-message-content.md)
-      + [Testadressen in Transaktionsnachrichten verwalten](message-center/using/managing-seed-addresses-in-transactional-messages.md)
-      + [Personalisierungsdaten](message-center/using/personalization-data.md)
-      + [Transaktionsnachrichten-Vorschau](message-center/using/transactional-message-preview.md)
-      + [Testversand durchführen](message-center/using/sending-a-proof.md)
-      + [Vorlagenveröffentlichung](message-center/using/template-publication.md)
-      + [Veröffentlichung von Vorlagen aufheben](message-center/using/template-unpublication.md)
-   + Ereignisverarbeitung {#event-processing}
-      + [Über die Ereignisverarbeitung](message-center/using/about-event-processing.md)
-      + [Ereigniskollektion](message-center/using/event-collection.md)
-      + [Weiterleitung zu Vorlagen](message-center/using/routing-towards-a-template.md)
+      + [Ereignistypen erstellen](message-center/using/creating-event-types.md)
+      + [Nachrichtenvorlagen erstellen](message-center/using/creating-the-message-template.md)
+      + [Testen von Nachrichtenvorlagen](message-center/using/testing-message-templates.md)
+      + [Nachrichtenvorlagen veröffentlichen](message-center/using/publishing-message-templates.md)
+   + Verarbeitung von Transaktionsereignissen {#processing}
+      + [Ereignisbeschreibung](message-center/using/event-description.md)
+      + [Ereignisverarbeitung](message-center/using/about-event-processing.md)
       + [Versandausführung](message-center/using/delivery-execution.md)
    + Berichte {#reports}
-      + [Über Transaktionsnachrichten-Berichte](message-center/using/about-transactional-messaging-reports.md)
+      + [Transaktionsnachrichten-Berichte aufrufen](message-center/using/about-transactional-messaging-reports.md)
       + [Verlauf von Message Center-Ereignissen](message-center/using/history-of-message-center-events.md)
       + [Message Center-Dienstqualität](message-center/using/message-center-service-level.md)
       + [Message Center-Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
-   + Anwendungsbeispiel {#use-case}
-      + [Transaktions-E-Mails mit Anhängen senden](message-center/using/transactional-email-with-attachments.md)
+   + [Anwendungsbeispiel](message-center/using/transactional-email-with-attachments.md)
 + Mit Social Media integrieren {#integrating-with-social-media}
    + [Über Social Marketing](social/using/about-social-marketing.md)
    + Konfiguration {#configuration}
