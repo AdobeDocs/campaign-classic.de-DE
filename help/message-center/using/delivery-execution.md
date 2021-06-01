@@ -1,21 +1,20 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Transaktionsnachrichten-Versand
-description: Transaktionsnachrichten-Versand
+title: Versandausführung
+description: Erfahren Sie mehr über die Ausführung und Überwachung von Sendungen mit Transaktionsnachrichten.
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '230'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 86%
 
 ---
 
-# Transaktionsnachrichten-Versand{#delivery-execution}
+# Transaktionsnachrichten-Versand {#delivery-execution}
 
 ## Senden von Transaktionsnachrichten {#transactional-message-send}
 
@@ -39,7 +38,7 @@ Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Diese Gr
 
 ## Überwachung der Transaktionsnachrichten {#transactional-message-monitoring}
 
-Um Ihre Transaktionsnachrichten zu überwachen, überprüfen Sie die Versandlogs. Der Zugriff auf die Versandlogs wird in [diesem Abschnitt](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) beschrieben.
+Um Ihre Transaktionsnachrichten zu überwachen, überprüfen Sie die [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
 
 Die von der Ausführungsinstanz gesendeten Transaktionsnachrichten werden durch einen technischen Workflow (**[!UICONTROL Message Center-Ausführungsinstanz]**), der stündlich ausgeführt wird, wieder synchronisiert und in die Kontrollinstanz transferiert.
 
@@ -73,3 +72,5 @@ Let's take a [delivery template](../../message-center/using/introduction.md) lab
 To summarize, the deliveries weekly accumulate the events based on the latest event update, and not on the event creation date.
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
+
+Informationen zum Überwachen der Aktivität und Ausführung der Ausführungsinstanz(en) finden Sie unter [Transaktionsnachrichten-Berichte](../../message-center/using/about-transactional-messaging-reports.md).
