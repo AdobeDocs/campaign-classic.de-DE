@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Über Testadressen
 description: Über Testadressen
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 100%
 
@@ -47,6 +45,7 @@ Für den Briefpost-Versand werden Testadressen während der Extraktion hinzugef�
 >
 >* Keine Verwendung der Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]**.
 >* Bei Extraktion von Kollektionselementen bleiben die entsprechenden Felder für Testadressen leer, es sei denn, die Option **[!UICONTROL Nur eine Zeile (Expertenmodus)]** wurde ausgewählt. Lesen Sie diesbezüglich auch [diesen Abschnitt](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
+
 >
 
 
