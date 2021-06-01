@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 82%
+source-wordcount: '786'
+ht-degree: 78%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 82%
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
-Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Über Transaktionsnachrichten-Berichte](../../message-center/using/about-transactional-messaging-reports.md)).
+Sie können die Warnschwellen (orange) und Warnschwellen (rot) der Indikatoren konfigurieren, die in den Berichten **Message Center Service Level** und **Message Center Processing Time** angezeigt werden (siehe [Auf Transaktionsnachrichten-Berichte zugreifen](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Gehen Sie dazu wie folgt vor:
 
@@ -109,7 +109,7 @@ Gehen Sie in den Ausführungsinstanzen wie folgt vor:
 
    >[!NOTE]
    >
-   >Erfahren Sie im Abschnitt [Kontrollinstanz](../../message-center/using/configuring-instances.md#control-instance) , wie Sie ein externes Konto vom Typ Ausführungsinstanz erstellen.
+   >Erfahren Sie, wie Sie in [diesem Abschnitt](../../message-center/using/configuring-instances.md#control-instance) ein externes Konto vom Typ Ausführungsinstanz erstellen.
 
 1. Erweitern Sie das Schema nms:extAccount, um die Tracking-URL hinzuzufügen:
 
