@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: E-Mail-Archivierung
 description: E-Mail-Archivierung
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-translation-type: tm+mt
-source-git-commit: 5fa848d86f951cb9dc40eb7981abea29c1092291
+exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
-
 
 # E-Mail-BCC {#email-archiving}
 
@@ -23,15 +21,15 @@ Adobe Campaign selbst ermöglicht zwar nicht die Verwaltung von archivierten Dat
 
 Dazu werden E-Mail-Dateien, die den gesendeten E-Mails entsprechen, auf einen Remote-Server, z. B. einen SMTP-E-Mail-Server, übertragen. Das Archivierungsziel ist eine BCC-E-Mail-Adresse (für die Versand-Empfänger unsichtbar), die Sie angeben müssen.
 
-## Empfehlungen und Einschränkungen          {#recommendations-and-limitations}
+## Empfehlungen und Einschränkungen            {#recommendations-and-limitations}
 
-* Die BCC-Funktion für E-Mail ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
-* Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die BCC-E-Mail-Adresse Ihrer Wahl muss dem Adobe-Team zur Verfügung gestellt werden, das sie für Sie konfiguriert.
-* Gehen Sie für **lokale Installationen** wie folgt vor, um sie zu aktivieren - siehe die Abschnitte [Aktivieren des E-Mail-BCC (auf der Grundlage)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (auf der Site)](#configuring-the-bcc-email-address--on-premise-).
+* Die E-Mail-BCC-Funktion ist optional. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
+* Wenden Sie sich bei **gehosteten und hybriden Architekturen** an Ihren Kundenbetreuer, um sie zu aktivieren. Die gewünschte BCC-E-Mail-Adresse muss dem Adobe-Team, das die Adresse für Sie konfigurieren wird, mitgeteilt werden.
+* Für **On-Premise-Installationen** folgen Sie den unten stehenden Richtlinien, um sie zu aktivieren. Weitere Informationen finden Sie in den Abschnitten [Aktivieren von E-Mail-BCC (vor Ort)](#activating-email-archiving--on-premise-) und [Konfigurieren der BCC-E-Mail-Adresse (vor Ort)](#configuring-the-bcc-email-address--on-premise-) .
 * Sie können nur eine einzige BCC-E-Mail-Adresse verwenden.
 * Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass die Funktion in der Versandvorlage oder im Versand über die Option **[!UICONTROL E-Mail-BCC]** aktiviert ist. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 * Nur erfolgreich gesendete E-Mails werden berücksichtigt, Absprünge nicht.
-* Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits E-Mail-Archivierung verwenden, müssen Sie manuell auf das neue E-Mail-BCC-System aktualisieren. Weitere Informationen hierzu finden Sie im Abschnitt [Wechseln zum neuen E-Mail-BCC](#updated-email-archiving-system--bcc-).
+* Das E-Mail-Archivierungssystem wurde mit Adobe Campaign 17.2 (Build 8795) geändert. Wenn Sie bereits die E-Mail-Archivierung verwendet haben, müssen Sie manuell auf das neue E-Mail-BCC-System aktualisieren. Weiterführende Informationen dazu finden Sie im Abschnitt [Wechsel zur neuen E-Mail-BCC](#updated-email-archiving-system--bcc-) .
 
 ## Aktivieren von E-Mail-BCC (vor Ort) {#activating-email-archiving--on-premise-}
 
@@ -135,7 +133,7 @@ Nehmen Sie dazu die folgenden Änderungen an der **`config-<instance>.xml`** Dat
 1. Legen Sie den Parameter **compressionFormat** bei Bedarf auf **1** fest.
 1. Legen Sie den Parameter **archivingType** auf **1** fest.
 
-Stellen Sie nach der Konfiguration des E-Mail-BCC sicher, dass Sie die Option **[!UICONTROL E-Mail-BCC]** in der Versandvorlage oder im Versand auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
+Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass Sie die Option **[!UICONTROL E-Mail-BCC]** in der Versandvorlage oder im Versand auswählen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/sending-messages.md#archiving-emails).
 
 ## Best Practices für E-Mail-BCC {#best-practices}
 
@@ -146,5 +144,4 @@ Stellen Sie nach der Konfiguration des E-Mail-BCC sicher, dass Sie die Option **
    * Wenn Sie dieselbe MTA für mehrere Instanzen verwenden (Entwicklung, Test, Test), werden die Nachrichten, die von allen drei Instanzen gesendet werden, von der Option dataLogPath dupliziert.
 
 * **E-Mails pro Verbindung**: Die BCC E-Mail-Archivierung funktioniert durch Öffnen einer Verbindung und Versenden aller E-Mails über diese Verbindung. Adobe empfiehlt, mit Ihrem internen technischen Ansprechpartner die Anzahl der E-Mails zu überprüfen, die in einer bestimmten Verbindung akzeptiert werden. Eine Erhöhung dieser Zahl kann einen großen Einfluss auf den BCC-Durchsatz haben.
-* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Das bedeutet, dass Sie je nach Konfiguration des E-Mail-Servers der Zulassungsliste Ihres Netzwerks ggf. zusätzliche IPs hinzufügen müssen.
-
+* **BCC sendet IPs**: Derzeit werden BCC-E-Mails nicht über die normalen MTA-Proxys gesendet. Stattdessen wird eine direkte Verbindung vom MTA-Server zum Ziel-E-Mail-Server geöffnet. Dies bedeutet, dass Sie je nach Konfiguration des E-Mail-Servers zusätzliche IPs zur Zulassungsliste in Ihrem Netzwerk hinzufügen müssen.
