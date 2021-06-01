@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elemente und Attribute
 description: Elemente und Attribute
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: bad7fb4b-43d9-4033-ae0d-cf191d89114b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 6%
 
 ---
-
 
 # value element {#value--element}
 
@@ -23,19 +21,19 @@ value:==help
 
 ## Attribute {#attributes-16}
 
-* @applyIf (Zeichenfolge)
-* @desc (Zeichenfolge)
+* @applyIf (string)
+* @desc (string)
 * @enabledIf (Zeichenfolge)
-* @img (Zeichenfolge)
-* @label (Zeichenfolge)
-* @name (Zeichenfolge)
-* @value (Zeichenfolge)
+* @img (string)
+* @label (string)
+* @name (string)
+* @value (string)
 
-## Eltern {#parents-16}
+## Übergeordnete Elemente {#parents-16}
 
 `<enumeration>`
 
-## Kinder {#children-16}
+## Untergeordnetes Element {#children-16}
 
 `<help>`
 
@@ -45,13 +43,13 @@ Mit diesem Element können Sie die in einer Auflistung gespeicherten Werte defin
 
 ## Attributbeschreibung {#attribute-description-16}
 
-* **applyIf (Zeichenfolge)**: Mit diesem Attribut können Sie einen Auflistung-Wert als optional definieren. Es erhält einen XTK-Ausdruck.
-* **desc (Zeichenfolge)**: Beschreibung der Auflistung.
-* **enabledIf (Zeichenfolge)**: Bedingung zum Aktivieren des Auflistung-Werts.
-* **img (Zeichenfolge)**: Bild, das mit der Auflistung im Formular &quot;Namensraum:image_name&quot;verknüpft ist. Das Bild muss auf den Anwendungsserver importiert werden.
-* **label (Zeichenfolge)**: Beschriftung des Auflistung-Werts.
-* **name (Zeichenfolge)**: interner Name des Wertes der Auflistung.
-* **Wert (Zeichenfolge)**: Wert der Auflistung. Der Werttyp wird basierend auf dem Typ der Auflistung definiert. Wenn die Auflistung vom Zeichenfolgentyp ist, darf sie nur Zeichenfolgentypwerte enthalten.
+* **applyIf (string)**: Mit diesem Attribut können Sie einen Auflistungswert optional machen. Er erhält einen XTK-Ausdruck.
+* **desc (string)**: Beschreibung des Auflistungswerts.
+* **enabledIf (Zeichenfolge)**: -Bedingung zum Aktivieren des Auflistungswerts.
+* **img (Zeichenfolge)**: Bild, das mit der Auflistung im Formular &quot;namespace:image_name&quot;verknüpft ist. Das Bild muss auf den Anwendungsserver importiert werden.
+* **label (string)**: Titel des Auflistungswerts.
+* **name (string)**: interner Name des Auflistungswerts.
+* **value (string)**: -Wert des Auflistungswerts. Der Werttyp wird basierend auf dem Auflistungstyp definiert. Wenn es sich bei der Auflistung um eine Auflistung vom Typ Zeichenfolge handelt, darf sie nur Zeichenfolgenwerte vom Typ Zeichenfolge enthalten.
 
 ## Beispiele {#examples-13}
 
