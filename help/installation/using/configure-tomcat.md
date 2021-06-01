@@ -1,36 +1,34 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Konfiguration von Kampagne Tomcat
-description: Konfiguration von Kampagne Tomcat
+title: Campaign Tomcat-Konfiguration
+description: Campaign Tomcat-Konfiguration
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf,b4a422b4-4b8b-4883-8d74-0dccda4a5ef3
-translation-type: tm+mt
-source-git-commit: 5d8d9e6ba41f94179bbf5f6d41f86267381b9b93
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-# Apache Tomcat {#configuring-tomcat} konfigurieren
+# Konfigurieren von Apache Tomcat {#configuring-tomcat}
 
-Adobe Campaign verwendet ein eingebettetes **Webservlet mit dem Namen Apache Tomcat**, um HTTP/HTTPS-Anforderungen zwischen der Anwendung und jeder externen Schnittstelle (einschließlich Client-Konsole, verfolgte URL-Links, SOAP-Aufrufe und andere) zu verarbeiten. Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
+Adobe Campaign verwendet ein **eingebettetes Webservlet namens Apache Tomcat**, um HTTP/HTTPS-Anforderungen zwischen der Anwendung und einer beliebigen externen Schnittstelle zu verarbeiten (einschließlich Client-Konsole, getrackte URL-Links, SOAP-Aufrufe und andere). Oft liegt ein externer Webserver (normalerweise IIS oder Apache) vor diesem für alle externen Adobe Campaign-Instanzen.
 
-Erfahren Sie mehr über Tomcat in Kampagne und wie Sie Ihre Tomcat-Version in [dieser Seite ](../../production/using/locate-tomcat-version.md) finden.
+Erfahren Sie mehr über Tomcat in Campaign und wie Sie Ihre Tomcat-Version in [dieser Seite](../../production/using/locate-tomcat-version.md) finden.
 
 >[!NOTE]
 >
->Dieses Verfahren ist auf **lokale** Bereitstellungen beschränkt.
+>Dieses Verfahren ist auf **On-Premise** -Implementierungen beschränkt.
 
 
 ## Standardanschluss für Apache Tomcat {#default-port-for-tomcat}
 
-Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen Anwendung besetzt ist, die für Ihre Konfiguration erforderlich ist, müssen Sie den 8080-Port durch einen kostenlosen ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die Datei **server.xml**, die im Ordner **/tomcat-8/conf** des Installationsordners des Adobe Campaigns gespeichert ist.
+Wenn der 8080-Listening-Port des Tomcat-Servers bereits mit einer anderen für Ihre Konfiguration erforderlichen Anwendung besetzt ist, müssen Sie den 8080-Port durch einen freien ersetzen (z. B. 8090). Um sie zu ändern, bearbeiten Sie die Datei **server.xml**, die im Ordner **/tomcat-8/conf** des Adobe Campaign-Installationsordners gespeichert ist.
 
-Ändern Sie dann den Anschluss der JSP-Relaisseiten. Ändern Sie dazu die Datei **serverConf.xml**, die im Ordner **/conf** des Installationsordners des Adobe Campaigns gespeichert ist.
+Ändern Sie dann den Port der JSP-Relais-Seiten. Ändern Sie dazu die Datei **serverConf.xml**, die im Ordner **/conf** des Adobe Campaign-Installationsordners gespeichert ist.
 
 ```
 <serverConf>
@@ -39,9 +37,9 @@ Wenn der 8080-Listening-Anschluss des Tomcat-Servers bereits mit einer anderen A
    <url ... targetUrl="http://localhost:8090"...
 ```
 
-## Ordnen Sie einen Ordner in Apache Tomcat zu.{#mapping-a-folder-in-tomcat}
+## Ordner in Apache Tomcat zuordnen {#mapping-a-folder-in-tomcat}
 
-Um kundenspezifische Einstellungen zu definieren, können Sie eine Datei **user_Kontexte.xml** im Ordner **/tomcat-8/conf** erstellen, die auch die Datei **Kontexte.xml** enthält.
+Um kundenspezifische Einstellungen zu definieren, können Sie eine Datei **user_contexts.xml** im Ordner **/tomcat-8/conf** erstellen, die auch die Datei **contexts.xml** enthält.
 
 Diese Datei enthält die folgenden Informationen:
 
