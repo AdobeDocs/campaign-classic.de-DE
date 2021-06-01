@@ -7,7 +7,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 214838cabeaec082080b3378f7eba837b8af89ad
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '3779'
 ht-degree: 2%
@@ -44,7 +44,8 @@ Die Liste der Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
 #### Windows {#in-windows}
 
-* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : Indikator speziell für  **Message Center**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/monitoring-thresholds.md).
+* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : Indikator speziell für  **Message Center**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+
 * **[!UICONTROL Speicher]** : Informationen zum physischen Speicher (RAM).
 
    **[!UICONTROL Aktueller Wert]** : tatsächlicher Speicherverbrauch.
@@ -101,7 +102,8 @@ Die Liste der Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
 ![](assets/production_system_indicators_linux_001.png)
 
-* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : Indikator speziell für  **Message Center**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/monitoring-thresholds.md).
+* **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : Indikator speziell für  **Message Center**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+
 * **[!UICONTROL Lastdurchschnitt (1/5/15 Minuten)]** : Informationen über die Last, d. h. die Nutzungsrate des Prozessors durch die Prozesse, die auf dem Gerät über die letzte Minute, fünf Minuten oder fünfzehn Minuten ausgeführt werden.
 
    **[!UICONTROL Aktueller Wert]** : tatsächliche Belastung der Maschine.
@@ -435,7 +437,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring              </th> 
+   <th> Monitoring  </th> 
   </tr> 
  </thead> 
  <tbody> 
