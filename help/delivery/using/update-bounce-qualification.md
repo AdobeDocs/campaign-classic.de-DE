@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Aktualisieren der Bounce-Qualifizierung nach einem ISP-Ausfall
 description: Erfahren Sie, wie Sie die Bounce-Qualifizierung nach einem ISP-Ausfall aktualisieren.
@@ -8,9 +7,8 @@ content-type: reference
 topic-tags: monitoring-deliveries
 hidefromtoc: true
 exl-id: 34be23f7-17fa-475e-9663-2e353d76b172
-translation-type: ht
-source-git-commit: 718b490d48c6cfabdb24ab18dffb6db664f2a46c
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
 
@@ -61,4 +59,4 @@ Sobald Sie die Liste der betroffenen Empfänger haben, können Sie diese entwede
 
 **Verwandte Themen:**
 * [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Bounce-Message-Qualifizierung](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)
+* [Bounce-Message-Qualifizierung            ](../../delivery/using/understanding-delivery-failures.md#bounce-mail-qualification)
