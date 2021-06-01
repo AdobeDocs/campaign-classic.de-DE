@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Allgemeine Architektur
 description: Allgemeine Architektur
 audience: production
 content-type: reference
 topic-tags: introduction
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 4%
 
 ---
-
 
 # Allgemeine Architektur{#general-architecture}
 
@@ -21,39 +19,38 @@ ht-degree: 4%
 
 In einer Mindestkonfiguration funktioniert Adobe Campaign mit:
 
-* Adobe Campaign-Anwendungsserver,
-* die Datenbank.
+* den Adobe Campaign-Anwendungsserver,
+* Datenbank.
 
    ![](assets/formation_exploitation.png)
 
-Dieses Diagramm zeigt, dass der einzige Traffic, der im Zusammenhang mit einer Mindestarchitektur involviert ist, der folgende ist:
+Dieses Diagramm zeigt, dass der einzige Traffic, der im Kontext einer minimalen Architektur involviert ist, Folgendes ist:
 
-1. HTTP-Protokoll-Datenverkehr zum Adobe Campaign-Server über das Internet,
-1. SMTP-Protokollverkehr vom und zum Adobe Campaign-Server über das Internet.
+1. HTTP-Protokollverkehr zum Adobe Campaign-Server über das Internet,
+1. Traffic des SMTP-Protokolls vom und zum Adobe Campaign-Server über das Internet.
 
 ## Verteilte Architektur {#distributed-architecture}
 
-Adobe Campaign besteht aus mehreren Modulen, die über mehrere Rechner heruntergebrochen werden können. Dieser Betriebsmodus hat mehrere Vorteile:
+Adobe Campaign besteht aus mehreren Modulen, die auf mehrere Maschinen verteilt werden können. Dieser Betriebsmodus hat mehrere Vorteile:
 
 * Lastenausgleich,
 * Einrichtung der Modulredundanz,
-* Aufbau einer auf mehrere Dienstleister aufgegliederten Architektur (Segmentierung der bereitgestellten Dienste).
+* Aufbau einer über mehrere Dienstleister verteilten Architektur (Segmentierung der angebotenen Dienste).
 
 ![](assets/architecturerepartie.png)
 
-Die Verteilung von Modulen auf mehrere Maschinen bietet große Flexibilität bei der Handhabung und verbesserte Anpassbarkeit.
+Die Verteilung der Module über mehrere Maschinen bietet große Flexibilität bei der Bedienung und verbesserte Anpassungsfähigkeit.
 
 >[!NOTE]
 >
 >Weitere Informationen zu den verschiedenen Architekturen finden Sie in [diesem Abschnitt](../../installation/using/general-architecture.md).
 
-## Liste offener Anschlüsse {#list-of-open-ports}
+## Liste offener Ports {#list-of-open-ports}
 
-| Anschlussnummer | Betroffenes Adobe Campaign-Modul oder -Anwendung | Konfigurierbar |
+| Port-Nummer | Betroffenes Adobe Campaign-Modul oder -Anwendung | Konfigurierbar |
 |---|---|---|
 | 443/tcp oder 80/tcp | Webserver (Apache/IIS) | JA |
 | 6666/udp (lokal) | Adobe Campaign: Syslogd | JA |
 | 8005/tcp (lokal) | Adobe Campaign: Webmodul | JA |
-| 8080/tcp | Adobe Campaign: web module (tomcat) | JA |
-| 7777 | Statistischer Server (STAT-Server) | JA |
-
+| 8080/tcp | Adobe Campaign: Webmodul (tomcat) | JA |
+| 7777 | Statistikserver (stat-Server) | JA |
