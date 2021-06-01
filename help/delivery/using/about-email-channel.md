@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Über den E-Mail-Kanal in Adobe Campaign Classic
 description: Dieser Abschnitt enthält allgemeine Informationen zum E-Mail-Kanal in Adobe Campaign Classic.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 100%
 
@@ -28,7 +26,7 @@ Achten Sie vor dem Versand von E-Mails auf Folgendes:
 Die wichtigsten Schritte zum Senden einer E-Mail sind:
 
 * [E-Mail-Versand erstellen](../../delivery/using/creating-an-email-delivery.md)
-* [Zielpopulation bestimmen](../../delivery/using/steps-defining-the-target-population.md)
+* [Bestimmen der Zielpopulation](../../delivery/using/steps-defining-the-target-population.md)
 * [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md)
 * [E-Mail senden](../../delivery/using/sending-messages.md)
 * [Sendung beobachten](../../delivery/using/about-delivery-monitoring.md)
