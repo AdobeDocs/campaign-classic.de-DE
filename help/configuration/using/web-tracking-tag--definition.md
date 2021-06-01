@@ -1,23 +1,21 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: '"Webtrackingtag: Definition"'
-description: '"Webtrackingtag: Definition"'
+title: '"Webtracking-Tag: Definition"'
+description: '"Webtracking-Tag: Definition"'
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0b5575be-57e7-4eee-9c0a-e9ef4b0931bf
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 6%
 
 ---
 
+# Webtracking-Tag: Definition{#web-tracking-tag-definition}
 
-# Webtrackingtag: Definition{#web-tracking-tag-definition}
-
-Ein Web-Trackingtag ist einfach eine URL, die mit den entsprechenden Parametern erstellt und über eine HTTP-Abfrage an den Umleitungsserver gesendet wird.
+Ein Webtrackingtag ist einfach eine URL, die mit den entsprechenden Parametern erstellt und über eine HTTP-Abfrage an den Weiterleitungsserver gesendet wird.
 
 ## Format der zu sendenden Daten {#format-of-the-data-to-be-sent}
 
@@ -27,7 +25,7 @@ Das Format einer Web-Tracking-URL lautet wie folgt: **https://`<name_of_redirect
 >
 >Die der URL hinzugefügte Zufallszahl vermeidet Probleme, die durch das Zwischenspeichern von Webseiten in Browsern verursacht werden.
 
-Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umleitungsserver unterstützt werden.
+Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Weiterleitungsserver unterstützt werden.
 
 <table>
                      <thead>
@@ -46,7 +44,7 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
                               <p>Sitzungs-Cookie</p> 
                            </td>
                            <td>
-                              <p>Versand-ID und Empfänger-ID.</p> 
+                              <p>Versandkennung und Empfänger-ID.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -54,7 +52,7 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
                               <p>uuid230</p> 
                            </td>
                            <td>
-                              <p>Ständiges Cookie</p> 
+                              <p>Permanentes Cookie</p> 
                            </td>
                            <td>
                               <p>Empfänger-ID (nützlich, wenn Sitzungs-Cookie fehlt).</p> 
@@ -68,7 +66,7 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Bezeichner der verfolgten Webseite: dies ist der einzige obligatorische Parameter.</p> 
+                              <p>Kennung der verfolgten Webseite: Dies ist der einzige obligatorische Parameter.</p> 
                            </td> 
                         </tr>
                         <tr>
@@ -79,8 +77,8 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
                               <p>URL-Parameter</p> 
                            </td>
                            <td>
-                              <p>Versand-ID, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert ist
-                                 ausgedrückt in Hexadezimal.
+                              <p>Die Versandkennung, die verwendet wird, wenn kein Sitzungs-Cookie vorhanden ist. Dieser Wert muss
+                                 in Hexadezimalzahl ausgedrückt.
                               </p> 
                            </td> 
                         </tr>
@@ -93,8 +91,8 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
                            </td>
                            <td>
                               <p>Parameter zur Identifizierung des Internetbenutzers. Das Format dieses Parameters ist "name=value",
-                                 wobei der Name ein Feld des Empfänger-Schemas ist. Dieser Parameter hat Priorität vor
-                                 die Kennung, die im Sitzungs-Cookie enthalten ist.
+                                 wobei der Name ein Feld des Empfängerschemas ist. Dieser Parameter hat Vorrang vor
+                                 die im Sitzungs-Cookie enthaltene Kennung.
                               </p> 
                            </td> 
                         </tr> 
@@ -103,7 +101,7 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
 
 **Einige Web-Tracking-URLs**
 
-* Besuch einer Homepage mit Identifikatoren
+* Besuch einer Homepage-Identifizierungsseite
 
    **https://myserver.adobe.com/r/9862?tagid=home**
 
@@ -111,26 +109,25 @@ Die folgende Tabelle enthält eine Liste von speziellen Parametern, die vom Umle
 
    **https://myserver.adobe.com/r/4567?tagid=command&amp;amount=100&amp;article=2l**
 
-* Festlegen eines Felds zum Suchen des Empfängers
+* Auswahl eines Empfängerfelds
 
    **https://myserver.adobe.com/r/2353?tagid=home&amp;rcpid=saccount%3D10**
 
    Ein Empfänger mit einer Kontonummer von 10 wird an die Startseite gesendet.
 
-* Verwenden eines Standard-Versands
+* Standardversand verwenden
 
    **https://myserver.adobe.com/r/2456?tagid=home&amp;jobid=e6**
 
-   Ein Empfänger wird an die Startseite gesendet. Diese Informationen werden im Versand mit dem Bezeichner 230 (e6 in Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungscookie mit einem Versand-Bezeichner gesendet.
+   Ein Empfänger wird an die Startseite gesendet. Diese Informationen werden im Versand mit der Kennung 230 (e6 in Datenbank 16) gespeichert, es sei denn, mit dieser Abfrage wird ein Sitzungs-Cookie mit einer Versandkennung gesendet.
 
 >[!NOTE]
 >
->Alle Werte, die über URL-Parameter an den Umleitungsserver gesendet werden, müssen URL-kodiert sein. Beachten Sie in den angegebenen Beispielen, dass die Zeichen &#39;=&#39; und &#39;|&#39; als &#39;%3D&#39; bzw. &#39;%7C&#39; kodiert sind.
+>Alle Werte, die über URL-Parameter an den Weiterleitungsserver gesendet werden, müssen URL-codiert sein. Beachten Sie in den Beispielen, dass die Zeichen &#39;=&#39; und &#39;|&#39; als &#39;%3D&#39; bzw. &#39;%7C&#39; kodiert sind.
 
 ## Datenübertragungsmethoden {#data-transmission-methods}
 
-Folgende Methoden sind möglich:
+Die folgenden Methoden sind möglich:
 
-* Einfügen der URL in das Attribut **&quot;src&quot;** eines HTML **`<img>`**-Tags, das in der Webseite enthalten ist, die Sie verfolgen möchten.
-* Direktaufruf an den Umleitungsserver, wenn die Webseite, die Sie verfolgen möchten, generiert wird.
-
+* Einfügen der URL in das Attribut **&quot;src&quot;** eines HTML **`<img>`**-Tags, das in die Webseite eingefügt wurde, die Sie verfolgen möchten.
+* Direkter Aufruf an den Weiterleitungsserver, wenn die Webseite, die Sie verfolgen möchten, generiert wird.
