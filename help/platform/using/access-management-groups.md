@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Benutzergruppen erstellen und verwalten
 description: Erfahren Sie, wie Sie Benutzergruppen Zugriff gewähren.
@@ -7,9 +6,8 @@ feature: Zugriffsverwaltung
 role: Business Practitioner, Administrator
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 100%
 
