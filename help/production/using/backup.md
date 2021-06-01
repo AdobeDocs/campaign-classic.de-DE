@@ -1,42 +1,40 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Backup
-description: Sicherung
+description: Backup
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e5ef6aba-dc22-4c8d-9fbb-13d507181b65
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 2%
 
 ---
 
-
 # Backup{#backup}
 
-Die Sicherung ist unverzichtbar, um zu vermeiden, dass Daten im Ereignis eines Problems (physisch oder systembezogen) auf einem Computer verloren gehen.
+Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen.
 
-Die Daten werden an zwei unterschiedlichen Speicherorten gespeichert:
+Die Daten werden an zwei verschiedenen Speicherorten gespeichert:
 
-* physikalische Dateien werden in den Adobe Campaign-Verzeichnissen gespeichert,
+* physische Dateien werden in den Adobe Campaign-Verzeichnissen gespeichert;
 * andere Daten in der Datenbank gespeichert werden.
 
 Die meisten Daten befinden sich in der Datenbank. Dies entspricht 99 % der zu sichernden Informationen.
 
-## Physikalische Dateien {#physical-files}
+## Physische Dateien {#physical-files}
 
-Die Dateien sind in mehrere Kategorien unterteilt:
+Dateien sind in mehrere Kategorien unterteilt:
 
-* Konfigurationsdateien unter **nl6/conf**
+* Konfigurationsdateien in **nl6/conf**
 
-   Dadurch können Sie Adobe Campaign sehr schnell neu konfigurieren.
+   Damit können Sie Adobe Campaign sehr schnell neu konfigurieren.
 
-* Umleitungsdateien ** nl6/var/`<instancename>`/redir**
+* Weiterleitungsdateien ** nl6/var/`<instancename>`/redir**
 
-   Diese befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot;bezeichnet) und beinhalten alle vorherigen Kampagnen-Umleitungen. Sie werden weiterhin von vorherigen Kampagnen verwendet.
+   Diese befinden sich auf den Tracking-Servern (häufig als &quot;frontal&quot; bezeichnet) und umfassen alle vorherigen Kampagnen-Umleitungen. Sie werden weiterhin von früheren Kampagnen verwendet.
 
 * Protokolldateien: **nl6/var/`<instancename>`/log**
 
@@ -50,14 +48,14 @@ Die zu sichernden Verzeichnisse sind daher:
 
 * nl6/var/`<instanceName>`/log (optional)
 
-* nl6/var/`<instanceName>`/relais (optional)
+* nl6/var/`<instanceName>`/relay (optional)
 
 >[!IMPORTANT]
 >
->Die Datenbank muss unbedingt gesichert werden.
+>Es ist wichtig, die Datenbank zu sichern.
 
 ## Datenbank {#database}
 
-Die Datenbank enthält alle in der Rich-Client-Konsole des Adobe Campaigns angezeigten Informationen sowie alle Geschäftsdaten.
+Die Datenbank enthält alle in der Rich-Client-Konsole von Adobe Campaign angezeigten Informationen sowie alle Geschäftsdaten.
 
-Für diesen Vorgang sind Ihre Hosting-Firma und insbesondere ihre Datenbankadministratoren verantwortlich.
+Für diesen Vorgang sind Ihr Hosting-Unternehmen und insbesondere dessen Datenbankadministratoren verantwortlich.
