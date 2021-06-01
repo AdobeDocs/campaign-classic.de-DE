@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 55%
+ht-degree: 57%
 
 ---
 
@@ -57,7 +57,7 @@ Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und
 
 ## Personalisierungsdaten {#personalization-data}
 
-Sie können Daten aus der Nachrichtenvorlage verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Diese Funktion wird verwendet, um eine Vorschau zu erzeugen oder einen Testversand durchzuführen. Sie können auch das Rendering der Nachricht für verschiedene Internet-Anbieter anzeigen. Weiterführende Informationen dazu finden Sie unter [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+Sie können Daten aus der Nachrichtenvorlage verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Diese Funktion wird verwendet, um eine Vorschau zu erzeugen oder einen Testversand durchzuführen. Sie können auch das Rendering der Nachricht für verschiedene Internet-Anbieter anzeigen. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
 Diese Daten dienen dazu, Ihre Nachrichten vor ihrem endgültigen Versand zu testen. Diese Nachrichten entsprechen nicht den tatsächlich zu verarbeitenden Daten. Die XML-Struktur muss jedoch mit der des in der Ausführungsinstanz gespeicherten Ereignisses identisch sein, wie unten dargestellt:
 
@@ -91,7 +91,7 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Mithilfe von Testadressen können Sie auch das Rendering der Nachricht für verschiedene Internet-Anbieter anzeigen. Weiterführende Informationen dazu finden Sie unter [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+Mithilfe von Testadressen können Sie auch das Rendering der Nachricht für verschiedene Internet-Anbieter anzeigen. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
 ## Testversand durchführen {#sending-a-proof}
 
