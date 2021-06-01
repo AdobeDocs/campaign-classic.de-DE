@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Duplizieren von Umgebungen
 description: Duplizieren von Umgebungen
 audience: production
 content-type: reference
 topic-tags: data-processing
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 5%
 
 ---
-
 
 # Duplizieren von Umgebungen{#duplicating-environments}
 
@@ -23,61 +21,62 @@ ht-degree: 5%
 
 >[!IMPORTANT]
 >
->Wenn Sie keinen Zugriff auf den Server und die Datenbank haben (gehostete Umgebung), können Sie die unten beschriebenen Schritte nicht ausführen. Bitte kontaktieren Sie die Adobe.
+>Wenn Sie keinen Zugriff auf den Server und die Datenbank (gehostete Umgebungen) haben, können Sie die unten beschriebenen Verfahren nicht durchführen. Bitte kontaktieren Sie die Adobe.
 
-Zur Verwendung von Adobe Campaign müssen eine oder mehrere Umgebung installiert und konfiguriert werden: Entwicklung, Prüfung, Vorproduktion, Produktion usw.
+Die Verwendung von Adobe Campaign erfordert die Installation und Konfiguration einer oder mehrerer Umgebungen: Entwicklung, Tests, Vorproduktion, Produktion usw.
 
 Jede Umgebung enthält eine Adobe Campaign-Instanz und jede Adobe Campaign-Instanz ist mit einer oder mehreren Datenbanken verknüpft. Der Anwendungsserver kann einen oder mehrere Prozesse ausführen: Fast alle haben direkten Zugriff auf die Instanzdatenbank.
 
-In diesem Abschnitt werden die Verfahren beschrieben, die auf Duplikat und Adobe Campaign-Umgebung angewendet werden sollen, d. h. um eine Quell-Umgebung auf eine Zielgruppe-Umgebung wiederherzustellen, was zu zwei identischen Umgebung führt.
+In diesem Abschnitt werden die Prozesse beschrieben, die auf das Duplizieren einer Adobe Campaign-Umgebung angewendet werden sollen, d. h. um eine Quellumgebung in einer Zielumgebung wiederherzustellen, was zu zwei identischen Arbeitsumgebungen führt.
 
 Gehen Sie hierzu wie folgt vor:
 
 1. Erstellen Sie eine Kopie der Datenbanken auf allen Instanzen in der Quellumgebung,
 1. Stellen Sie diese Kopien auf allen Instanzen der Zielumgebung wieder her,
-1. Führen Sie das Warnskript **nms:frizeInstance.js** auf der Umgebung Zielgruppe aus, bevor Sie es starten.
+1. Führen Sie das Warnskript **nms:freezeInstance.js** in der Zielumgebung aus, bevor Sie es starten.
 
    Dieser Prozess hat keine Auswirkungen auf die Server und deren Konfiguration.
 
    >[!NOTE]
    >
-   >Im Kontext des Adobe Campaigns kombiniert eine **Warnung** Aktionen, mit denen Sie alle Prozesse stoppen können, die mit der Außenseite interagieren: Protokolle, Verfolgung, Versände, Kampagnen-Workflows usw.\
-   >Dieser Schritt ist notwendig, um zu vermeiden, dass Nachrichten mehrmals gesendet werden (einmal von der nominalen Umgebung und einmal von der duplizierten Umgebung).
+   >Im Kontext von Adobe Campaign werden bei einer **Bluterguss** Aktionen kombiniert, die es ermöglichen, alle Prozesse zu stoppen, die mit der Außenwelt interagieren: Protokolle, Tracking, Sendungen, Kampagnen-Workflows usw.\
+   >Dieser Schritt ist erforderlich, um zu verhindern, dass Nachrichten mehrmals gesendet werden (einmal in der nominalen Umgebung und einmal in der duplizierten Umgebung).
 
    >[!IMPORTANT]
    >
-   >Eine Umgebung kann mehrere Instanzen enthalten. Jede Instanz eines Adobe Campaigns unterliegt einem Lizenzvertrag. Prüfen Sie Ihre Lizenzvereinbarung, um zu sehen, wie viele Umgebung Sie haben können.\
-   >Mit dem unten stehenden Verfahren können Sie eine Umgebung übertragen, ohne dass sich dies auf die Anzahl der installierten Umgebung und Instanzen auswirkt.
+   >Eine Umgebung kann mehrere Instanzen enthalten. Jede Adobe Campaign-Instanz unterliegt einem Lizenzvertrag. Überprüfen Sie Ihren Lizenzvertrag, um zu sehen, wie viele Umgebungen Sie nutzen können.\
+   >Mit dem unten beschriebenen Verfahren können Sie eine Umgebung übertragen, ohne die Anzahl der installierten Umgebungen und Instanzen zu beeinträchtigen.
 
-### Vor dem Beginn {#before-you-start}
-
->[!IMPORTANT]
->
->Es wird dringend empfohlen, eine vollständige Sicherung der Datenbanken für alle Instanzen der Quell- und Zielgruppe-Umgebung auszuführen, bevor der Transfervorgang gestartet wird. Auf diese Weise können Sie bei einem Problem die Backups wiederherstellen und zu Ihrer ursprünglichen Konfiguration zurückkehren.
-
-Damit dieser Vorgang ausgeführt werden kann, müssen die Quell- und Zielgruppe-Umgebung dieselbe Anzahl von Instanzen, denselben Zweck (Marketing-Instanz, Versand-Instanz) und ähnliche Konfigurationen aufweisen. Die technische Konfiguration muss den Softwarevoraussetzungen entsprechen. Die gleichen Komponenten müssen auf beiden Umgebung installiert sein.
-
-## Implementierung{#implementation}
-
-### Transferverfahren {#transfer-procedure}
-
-In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quell-Umgebung in eine Zielgruppe-Umgebung übertragen können: Unser Ziel ist es hier, eine Produktions-Umgebung (**prod** Instanz) zu einer Development-Umgebung (**dev** Instanz) wiederherzustellen, um in einem Kontext zu arbeiten, der der Live-Plattform möglichst nahe kommt.
-
-Die folgenden Schritte müssen mit größter Sorgfalt durchgeführt werden: Einige Prozesse werden möglicherweise noch ausgeführt, wenn die Quelldatenbanken der Umgebung kopiert werden. Durch die Vorsicht (Schritt 3 unten) wird verhindert, dass Nachrichten zweimal gesendet werden, und die Datenkonsistenz bleibt erhalten.
+### Bevor Sie {#before-you-start} starten
 
 >[!IMPORTANT]
 >
->* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Abfrage anders ist (z. B. Oracle), müssen die SQL-Einstellungen angepasst werden.
+>Es wird dringend empfohlen, eine vollständige Sicherung der Datenbanken für alle Instanzen der Quell- und Zielumgebungen durchzuführen, bevor der Übertragungsprozess gestartet wird. Auf diese Weise können Sie, wenn ein Problem auftritt, die Backups wiederherstellen und zu Ihrer ursprünglichen Konfiguration zurückkehren.
+
+Damit dieser Prozess funktioniert, müssen die Quell- und Zielumgebungen über dieselbe Anzahl von Instanzen, denselben Zweck (Marketing-Instanz, Versandinstanz) und ähnliche Konfigurationen verfügen. Die technische Konfiguration muss den Softwarevoraussetzungen entsprechen. Dieselben Komponenten müssen in beiden Umgebungen installiert sein.
+
+## Umsetzung {#implementation}
+
+### Übertragungsverfahren {#transfer-procedure}
+
+In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quellumgebung in eine Zielumgebung übertragen können: Unser Ziel besteht hier darin, eine Produktionsumgebung (**prod** Instanz) in einer Entwicklungsumgebung (**dev** Instanz) wiederherzustellen, um in einem Kontext zu arbeiten, der der &quot;Live&quot;-Plattform so nahe wie möglich ist.
+
+Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige Prozesse werden möglicherweise noch ausgeführt, wenn die Datenbanken der Quellumgebung kopiert werden. Durch die Vorsicht (Schritt 3 unten) wird verhindert, dass Nachrichten zweimal gesendet werden, und die Datenkonsistenz wird gewahrt.
+
+>[!IMPORTANT]
+>
+>* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Sprache unterschiedlich ist (z. B. Oracle), müssen die SQL-Abfragen angepasst werden.
 >* Die folgenden Befehle gelten im Kontext einer **prod**-Instanz und einer **dev**-Instanz unter PostgreSQL.
+
 >
 
 
 
-### Schritt 1: Erstellen Sie eine Sicherung der Quelldaten für die Umgebung (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
+### Schritt 1: Erstellen Sie eine Sicherung der Quellumgebungsdaten (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 Datenbanken kopieren
 
-Beginn durch Kopieren aller Quelldatenbanken der Umgebung. Der Vorgang ist von der Datenbank-Engine abhängig und unterliegt der Verantwortung des Datenbankadministrators.
+Kopieren Sie zunächst alle Quellumgebungsdatenbanken. Der Vorgang hängt von der Datenbank-Engine ab und liegt in der Verantwortung des Datenbankadministrators.
 
 Unter PostgreSQL lautet der Befehl:
 
@@ -85,38 +84,38 @@ Unter PostgreSQL lautet der Befehl:
 pg_dump mydatabase > mydatabase.sql
 ```
 
-### Schritt 2: Exportieren der Konfiguration der Zielgruppe-Umgebung (dev) {#step-2---export-the-target-environment-configuration--dev-}
+### Schritt 2: Exportieren der Zielumgebungskonfiguration (dev) {#step-2---export-the-target-environment-configuration--dev-}
 
-Die meisten Konfigurationselemente unterscheiden sich für jede Umgebung: Externe Konti (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.)
+Die meisten Konfigurationselemente unterscheiden sich für jede Umgebung: externe Konten (Mid-Sourcing, Routing usw.), technische Optionen (Plattformname, DatabaseId, E-Mail-Adressen und Standard-URLs usw.).
 
-Vor dem Speichern der Quelldatenbank in der Zielgruppe müssen Sie die Dev-Konfiguration (Zielgruppe Umgebung) exportieren. Exportieren Sie dazu den Inhalt dieser beiden Tabellen: **xtkoption** und **nmsextaccount**.
+Vor dem Speichern der Quelldatenbank in der Zieldatenbank müssen Sie die Konfiguration der Zielumgebung (dev) exportieren. Exportieren Sie dazu den Inhalt dieser beiden Tabellen: **xtkoption** und **nmsextaccount**.
 
-Mit diesem Export können Sie die Dev-Konfiguration beibehalten und nur die Dev-Daten (Workflows, Vorlagen, Webanwendungen, Empfänger usw.) aktualisieren.
+Mit diesem Export können Sie die Entwicklungskonfiguration beibehalten und nur Entwicklungsdaten (Workflows, Vorlagen, Webanwendungen, Empfänger usw.) aktualisieren.
 
-Führen Sie dazu einen Paketexport für die folgenden beiden Elemente durch:
+Führen Sie dazu einen Package-Export für die folgenden beiden Elemente durch:
 
-* Exportieren Sie die Tabelle **xtk:option** in eine Datei &#39;options_dev.xml&#39;, ohne die Datensätze mit den folgenden internen Namen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; und &#39;NmsBroadcast_RegexRules&#39;.
-* Exportieren Sie in einer Datei &quot;extaccount_dev.xml&quot;die Tabelle **nms:extAccount** für alle Datensätze, deren ID nicht 0 (@id &lt;> 0) ist.
+* Exportieren Sie die Tabelle **xtk:option** in eine Datei &quot;options_dev.xml&quot;, ohne dass die Datensätze die folgenden internen Namen aufweisen: &#39;WdbcTimeZone&#39;, &#39;NmsServer_LastPostUpgrade&#39; und &#39;NmsBroadcast_RegexRules&#39;.
+* Exportieren Sie in einer Datei &quot;extaccount_dev.xml&quot;die Tabelle **nms:extAccount** für alle Datensätze, deren Kennung nicht 0 ist (@id &lt;> 0).
 
 Überprüfen Sie, ob die Anzahl der exportierten Optionen/Konten der Anzahl der Zeilen entspricht, die in jeder Datei exportiert werden sollen.
 
 >[!NOTE]
 >
->Die Anzahl der zu exportierenden Zeilen in einem Paketexport beträgt 1000 Zeilen. Wenn die Anzahl der Optionen oder Externe Konti mehr als 1000 beträgt, müssen Sie mehrere Exporte durchführen.
+>Die Anzahl der zu exportierenden Zeilen in einem Package-Export beträgt 1000 Zeilen. Bei mehr als 1000 Optionen oder externen Konten müssen mehrere Exporte durchgeführt werden.
 > 
 >Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../platform/using/working-with-data-packages.md#exporting-packages).
 
 >[!NOTE]
 >
->Beim Exportieren der nmsextaccount-Tabelle werden Kennwörter zu den Externen Konti (z. B. Kennwörter zum Mid-Sourcing, zur Ausführung des Nachrichtencenters, zu SMPP, IMS und anderen Externen Konti) nicht exportiert. Vergewissern Sie sich bitte, dass Sie im Voraus Zugriff auf die richtigen Passwörter haben, da diese ggf. erneut eingegeben werden müssen, nachdem die Externe Konti wieder in die Umgebung importiert wurden.
+>Beim Exportieren der nmsextaccount -Tabelle werden Kennwörter, die sich auf externe Konten beziehen (z. B. Kennwörter für Mid-Sourcing, Message Center Execution, SMPP, IMS und andere externe Konten), nicht exportiert. Vergewissern Sie sich im Voraus, dass Sie Zugriff auf die richtigen Passwörter haben, da diese möglicherweise erneut eingegeben werden müssen, nachdem die externen Konten wieder in die Umgebung importiert wurden.
 
-### Schritt 3 - Beenden der Umgebung der Zielgruppe (dev) {#step-3---stop-the-target-environment--dev-}
+### Schritt 3: Stoppen der Zielumgebung (dev) {#step-3---stop-the-target-environment--dev-}
 
-Sie müssen Adobe Campaign-Prozesse auf allen Zielgruppe Umgebung-Servern beenden. Dieser Vorgang ist vom Betriebssystem abhängig.
+Sie müssen Adobe Campaign-Prozesse auf allen Zielumgebungsservern stoppen. Dieser Vorgang hängt von Ihrem Betriebssystem ab.
 
-Sie können alle Prozesse oder nur die Prozesse beenden, die in die Datenbank schreiben.
+Sie können alle Prozesse stoppen, oder nur die Prozesse, die in die Datenbank schreiben.
 
-Um alle Prozesse zu beenden, verwenden Sie die folgenden Befehle:
+Verwenden Sie die folgenden Befehle, um alle Prozesse zu beenden:
 
 * Windows:
 
@@ -144,20 +143,20 @@ Sie können auch überprüfen, ob noch keine Systemprozesse ausgeführt werden.
 
 Gehen Sie dazu wie folgt vor:
 
-* Windows: Öffnen Sie den **Aufgabe-Manager** und überprüfen Sie, ob keine **nlserver.exe**-Prozesse vorhanden sind.
-* Unter Linux: Führen Sie die aux **ps aus | grep nlserver** Befehl und prüfen Sie, ob keine **nlserver**-Prozesse vorhanden sind.
+* Windows: Öffnen Sie den **Task Manager** und überprüfen Sie, ob keine **nlserver.exe**-Prozesse vorhanden sind.
+* Unter Linux: Führen Sie die **ps-aux aus. | grep nlserver** Befehl und vergewissern Sie sich, dass keine **nlserver**-Prozesse vorhanden sind.
 
-### Schritt 4: Wiederherstellen der Datenbanken in der Zielgruppe Umgebung (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
+### Schritt 4: Wiederherstellen der Datenbanken in der Zielumgebung (dev) {#step-4---restore-the-databases-in-the-target-environment--dev-}
 
-Um die Quelldatenbanken in der Umgebung Zielgruppe wiederherzustellen, verwenden Sie den folgenden Befehl:
+Verwenden Sie den folgenden Befehl, um die Quelldatenbanken in der Zielumgebung wiederherzustellen:
 
 ```
 psql mydatabase < mydatabase.sql
 ```
 
-### Schritt 5: Vorsicht bei der Umgebung der Zielgruppe (dev) {#step-5---cauterize-the-target-environment--dev-}
+### Schritt 5: Vorsicht bei der Zielumgebung (dev) {#step-5---cauterize-the-target-environment--dev-}
 
-Um Funktionsstörungen zu vermeiden, dürfen die mit dem Senden des Versands und der Ausführung des Workflows verknüpften Vorgänge nicht automatisch ausgeführt werden, wenn die Umgebung der Zielgruppe aktiviert wird.
+Um Fehlfunktionen zu vermeiden, dürfen Prozesse im Zusammenhang mit dem Versand und der Ausführung des Workflows bei der Aktivierung der Zielumgebung nicht automatisch ausgeführt werden.
 
 Führen Sie dazu den folgenden Befehl aus:
 
@@ -165,9 +164,9 @@ Führen Sie dazu den folgenden Befehl aus:
 nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 ```
 
-### Schritt 6: Warnung überprüfen{#step-6---check-cauterization}
+### Schritt 6: Überprüfen der Vorsicht {#step-6---check-cauterization}
 
-1. Vergewissern Sie sich, dass der einzige Auslieferungsabschnitt derjenige ist, dessen ID auf 0 gesetzt ist:
+1. Vergewissern Sie sich, dass der einzige Versandabschnitt derjenige ist, dessen Kennung auf 0 gesetzt ist:
 
    ```
    SELECT * FROM neolane.nmsdeliverypart;
@@ -186,52 +185,52 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Schritt 7: Zielgruppe Umgebung Web Process (dev)neu starten {#step-7---restart-the-target-environment-web-process--dev-}
+### Schritt 7: Starten Sie den Webprozess der Zielumgebung (dev) {#step-7---restart-the-target-environment-web-process--dev-} neu.
 
-Stellen Sie auf der Umgebung Zielgruppe einen erneuten Beginn der Adobe Campaign-Prozesse für alle Server bereit.
+Starten Sie in der Zielumgebung die Adobe Campaign-Prozesse für alle Server neu.
 
 >[!NOTE]
 >
->Bevor Sie das Adobe Campaign auf der **dev**-Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: Beginn nur das Modul **web**.
+>Bevor Sie Adobe Campaign in der **dev**-Umgebung neu starten, können Sie ein zusätzliches Sicherheitsverfahren anwenden: Starten Sie nur das Modul **web** .
 >  
->Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**) und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot;für jedes Modul (mta, stat usw.) hinzu.
+>Bearbeiten Sie dazu die Konfigurationsdatei Ihrer Instanz (**config-dev.xml**) und fügen Sie dann das Zeichen &quot;_&quot;vor den Optionen autoStart=&quot;true&quot; für jedes Modul (mta, stat usw.) hinzu.
 
-Führen Sie den folgenden Befehl aus, um den Webprozess Beginn:
+Führen Sie den folgenden Befehl aus, um den Webprozess zu starten:
 
 ```
 nlserver start web
 ```
 
-Verwenden Sie den folgenden Befehl, um zu überprüfen, dass nur der Webprozess gestartet wurde:
+Verwenden Sie den folgenden Befehl, um zu überprüfen, ob nur der Webprozess gestartet wurde:
 
 ```
 nlserver pdump
 ```
 
-Überprüfen Sie, ob der Zugriff auf die Funktionen der Client-Konsole möglich ist.
+Überprüfen Sie, ob der Zugriff auf die Clientkonsole funktioniert.
 
-### Schritt 8: Importieren von Optionen und Externen Konti in die Zielgruppe-Umgebung (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
+### Schritt 8: Importieren von Optionen und externen Konten in die Zielumgebung (dev) {#step-8---import-options-and-external-accounts-into-the-target-environment--dev-}
 
 >[!IMPORTANT]
 >
 >In diesem Schritt sollte nur der Webprozess gestartet werden. Ist dies nicht der Fall, beenden Sie andere laufende Prozesse, bevor Sie fortfahren
 
-Überprüfen Sie vor allem die Werte mehrerer Zeilen der Dateien, bevor Sie sie importieren (z. B.: &#39;NmsTracking_Pointer&#39; für die Optionstabelle und die Versand- oder Mid-Sourcing-Konten für die Externe Konto-Tabelle)
+Überprüfen Sie vor allem die Werte mehrerer Zeilen der Dateien, bevor Sie importieren (z. B.: &#39;NmsTracking_Pointer&#39; für die Optionstabelle und die Versand- oder Mid-Sourcing-Konten für die Tabelle des externen Kontos)
 
-So importieren Sie die Konfiguration aus der Zielgruppe Umgebung-Datenbank (dev):
+So importieren Sie die Konfiguration aus der Zielumgebungsdatenbank (dev):
 
-1. Öffnen Sie die Admin-Konsole der Datenbank und löschen Sie die Externe Konti (Tabelle nms:extAccount), deren ID nicht 0 (@id &lt;> 0) ist.
-1. Importieren Sie in der Adobe Campaign-Konsole das Paket options_dev.xml, das zuvor über die Importpaket-Funktionalität erstellt wurde.
+1. Öffnen Sie die Admin Console der Datenbank und bereinigen Sie die externen Konten (Tabelle nms:extAccount), deren Kennung nicht 0 (@id &lt;> 0) ist.
+1. Importieren Sie in der Adobe Campaign-Konsole das Package options_dev.xml , das Sie zuvor über die Package-Import-Funktion erstellt haben.
 
    Überprüfen Sie, ob die Optionen tatsächlich im Knoten **[!UICONTROL Administration > Plattform > Optionen]** aktualisiert wurden.
 
-1. Importieren Sie in die Adobe Campaign-Konsole die Datei &quot;extaccount_dev.xml&quot;, die Sie zuvor über die Funktion des Importpakets erstellt haben.
+1. Importieren Sie in der Adobe Campaign-Konsole die zuvor über die Import-Paketfunktion erstellte Datei &quot;extaccount_dev.xml&quot;.
 
-   Vergewissern Sie sich, dass externe Datenbanken tatsächlich in **[!UICONTROL Administration > Plattform > Externe Konti]** importiert wurden.
+   Überprüfen Sie, ob externe Datenbanken tatsächlich in **[!UICONTROL Administration > Plattform > Externe Konten]** importiert wurden.
 
-### Schritt 9 - Alle Prozesse neu starten und Benutzer ändern (dev) {#step-9---restart-all-processes-and-change-users--dev-}
+### Schritt 9: Alle Prozesse neu starten und Benutzer ändern (dev) {#step-9---restart-all-processes-and-change-users--dev-}
 
-Um die Adobe Campaign-Prozesse Beginn, verwenden Sie die folgenden Befehle:
+Verwenden Sie die folgenden Befehle, um die Adobe Campaign-Prozesse zu starten:
 
 * Windows:
 
@@ -251,4 +250,4 @@ Verwenden Sie den folgenden Befehl, um zu überprüfen, ob die Prozesse gestarte
 nlserver pdump
 ```
 
-Ändern Sie Benutzer, um die Benutzer zu suchen, die bereits auf der dev-Plattform vorhanden waren.
+Ändern Sie Benutzer, um die Benutzer zu finden, die bereits auf der Entwicklungsplattform vorhanden waren.
