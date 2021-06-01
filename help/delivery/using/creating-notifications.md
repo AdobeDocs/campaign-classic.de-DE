@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erstellen von Push-Benachrichtigungen
 description: Erfahren Sie, wie Sie Push-Benachrichtigungen erstellen.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 100%
 
@@ -132,7 +130,7 @@ Testsendungen und der endgültige Start des Versands werden analog zum E-Mail-Ve
 
 Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finden Sie in den folgenden Abschnitten:
 
-* [Versand validieren](../../delivery/using/steps-validating-the-delivery.md)
+* [Validieren des Versands](../../delivery/using/steps-validating-the-delivery.md)
 * [Versenden der Nachrichten](../../delivery/using/steps-sending-the-delivery.md)
 
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
