@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Vor Beginn der Migration
 description: Vor Beginn der Migration
@@ -7,8 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: d666bc0b-596a-4908-9364-7df5bb8d68d0
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 2%
@@ -19,22 +17,22 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->In diesem Dokument werden die mit der Datenbank verknüpften Befehle als Beispiel genannt. Diese können je nach Konfiguration variieren. Wenden Sie sich an Ihren Datenbankadministrator.
+>In diesem Dokument werden die mit der Datenbank verknüpften Befehle als Beispiel dargestellt. Diese können je nach Konfiguration variieren. Wenden Sie sich an Ihren Datenbankadministrator.
 
 ## Warnhinweise {#warnings}
 
 * Der Migrationsprozess darf nur von erfahrenen Benutzern durchgeführt werden. Sie müssen von mindestens einem Datenbankexperten, einem Systemadministrator und einem Anwendungsentwickler aus Adobe Campaign unterstützt werden.
-* Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die verwendeten Systeme und Systemkomponenten tatsächlich mit v7 kompatibel sind. Lesen Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
-* Wenn Sie Adobe Campaign Cloud Messaging (Mid-Sourcing) verwenden, wenden Sie sich an die Adobe, bevor Sie den gesamten Migrationsvorgang starten.
+* Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die von Ihnen verwendeten Systeme und Systemkomponenten tatsächlich mit v7 kompatibel sind. Konsultieren Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
+* Wenn Sie Adobe Campaign Cloud Messaging (Mid-Sourcing) verwenden, wenden Sie sich an Adobe , bevor Sie mit dem gesamten Migrationsverfahren beginnen.
 * Bevor Sie einen Migrationsprozess starten, müssen Sie **Ihre Daten sichern.**
-* Der Migrationsvorgang kann mehrere Tage dauern.
-* Die Konfiguration von Adobe Campaign v7 ist strenger als die Version 5.11 und 6.02. Dadurch sollen Probleme wie Datenbeschädigung vermieden und die Datenintegrität in der Datenbank gewahrt werden. Daher funktionieren bestimmte Funktionen, die in Version 5.11 und Version 6.02 angeboten werden, möglicherweise nicht mehr in Version 7 und müssen daher nach der Migration angepasst werden. Vor der Inbetriebnahme sollten Sie alle Konfigurationen, insbesondere Workflows, die zur Verwendung von Adobe Campaign erforderlich sind, systematisch testen.
+* Der Migrationsprozess kann mehrere Tage in Anspruch nehmen.
+* Adobe Campaign v7 ist hinsichtlich der Konfiguration strenger als die Versionen 5.11 und 6.02. Dies dient hauptsächlich dazu, Probleme wie Datenbeschädigung zu vermeiden und die Datenintegrität in der Datenbank zu wahren. Folglich funktionieren bestimmte Funktionen, die in den Versionen 5.11 und v6.02 angeboten werden, möglicherweise nicht mehr in v7 und müssen daher nach der Migration möglicherweise angepasst werden. Bevor Sie etwas in die Produktionsumgebung übernehmen, sollten Sie alle Konfigurationen, insbesondere Workflows, die für die Verwendung von Adobe Campaign erforderlich sind, systematisch testen.
 
 ### Installierte Version {#installed-version}
 
 Vor der Migration sollten Sie den neuesten Build der aktuellen Version installieren, die Sie verwenden.
 
-Überprüfen Sie die Version auf Ihrem Server, indem Sie das Menü **[!UICONTROL Hilfe> Info]** auf der Client-Konsole mit dem Befehl **nlserver pdump** aufrufen.
+Überprüfen Sie die Version auf Ihrem Server, indem Sie das Menü **[!UICONTROL Hilfe> Versionsinformationen]** in der Clientkonsole mit dem Befehl **nlserver pdump** aufrufen.
 
 ### Datensicherung {#data-backup}
 
@@ -42,34 +40,34 @@ Bevor Sie einen Migrationsprozess starten, müssen Sie **Ihre Daten sichern.**
 
 ### Umgebung {#environment}
 
-* Es ist nicht möglich, den Datenbankmodultyp (DBMS) zu ändern. Sie können beispielsweise nicht von einer PostgreSQL-Engine zu einer Oracle-Engine wechseln. Sie können jedoch von einem Oracle 8-Motor auf einen Oracle 10-Motor umstellen.
+* Es ist nicht möglich, den Datenbankmodultyp (DBMS) zu ändern. Sie können beispielsweise nicht von einer PostgreSQL-Engine zu einer Oracle-Engine wechseln. Sie können jedoch von einem Oracle 8-Motor auf einen Oracle 10-Motor umsteigen.
 * Es ist nicht möglich, von einer Nicht-Unicode-Datenbank zu einer Unicode-Datenbank zu wechseln.
 
 ### Empfehlung {#recommendation}
 
-Da das Migrationsprozess sensibel ist, empfehlen wir dringend, dieses Dokument gründlich zu lesen, bevor das Verfahren eingeleitet wird.
+Da der Migrationsprozess sensibel ist, empfehlen wir dringend, dieses Dokument gründlich zu lesen, bevor Sie den Vorgang starten.
 
 ## Migrationsschritte {#migration-steps}
 
-Das Migrationsverfahren muss auf **allen** Servern und in einer bestimmten Reihenfolge durchgeführt werden.
+Das Migrationsverfahren muss auf **allen**-Servern und in einer bestimmten Reihenfolge durchgeführt werden.
 
-* Bei einer **eigenständigen Plattform** (Einzelmaschinenmodus) wird die Anwendung vollständig migriert.
-* Bei einer **Standardplattform** (Unternehmen) gelten folgende Migrationsschritte:
+* Im Fall einer **eigenständigen Plattform** (Einzelmodus) wird die Anwendung vollständig migriert.
+* Bei einer **Standardplattform** (Unternehmen) sind die Migrationsschritte wie folgt:
 
-   1. Migrieren des Marketing-Servers.
-   1. Migrieren Sie den Mail-Server (mta).
+   1. Migrieren Sie den Marketing-Server.
+   1. Migrieren Sie den Mailserver (mta).
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
 
-* Bei einer **Cloud Messaging-Plattform** werden die Ausführungsserver im Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
-* Bei einer **Power-Booster- oder Power-Cluster-Plattform** sind die Migrationsschritte wie folgt:
+* Bei einer **Cloud Messaging-Plattform** werden die Ausführungsserver in Adobe Campaign gehostet. Wenden Sie sich an Adobe Campaign, um die Migration zwischen verschiedenen Servern zu koordinieren.
+* Bei einer **Power Booster- oder Power Cluster-Plattform** sind die Migrationsschritte wie folgt:
 
    1. Migrieren Sie die Umleitungs- und Tracking-Server (Apache/IIS).
-   1. Migrieren Sie die Power Booster/Cluster-Server.
-   1. Migrieren des Marketing-Servers.
+   1. Migrieren Sie die Power Booster-/Cluster-Server.
+   1. Migrieren Sie den Marketing-Server.
 
 ## Benutzerkennwörter {#user-passwords}
 
-In v7 müssen die Operatorverbindungen **internal** und **admin** durch ein Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Operatorkonten vor Migration **Kennwörter zuzuweisen.** Wenn Sie kein Kennwort für **internal** angegeben haben, können Sie keine Verbindung herstellen. Um **internal** ein Kennwort zuzuweisen, geben Sie den folgenden Befehl ein:
+In v7 muss die Benutzerverbindung für **internal** und **admin** durch ein Kennwort gesichert werden. Es wird dringend empfohlen, diesen Konten und allen Benutzerkonten **vor der Migration** Passwörter zuzuweisen. Wenn Sie kein Kennwort für **internal** angegeben haben, können Sie keine Verbindung herstellen. Geben Sie den folgenden Befehl ein, um **internal** ein Kennwort zuzuweisen:
 
 ```
 nlserver config -internalpassword
@@ -77,4 +75,4 @@ nlserver config -internalpassword
 
 >[!IMPORTANT]
 >
->Das **internal**-Kennwort muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in den Abschnitten [Interne Kennung](../../installation/using/configuring-campaign-server.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md).
+>Das Kennwort **internal** muss für alle Tracking-Server identisch sein. Weitere Informationen finden Sie in den Abschnitten [Interne Kennung](../../installation/using/configuring-campaign-server.md#internal-identifier) und [Berechtigungen](../../platform/using/access-management.md) .
