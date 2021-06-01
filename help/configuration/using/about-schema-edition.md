@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Über die Schemabearbeitung
-description: Erste Schritte mit der Schema-Edition
+description: Erste Schritte mit der Schemabearbeitung
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 87028ec81a8cae6793d45d7c840511b59cd0287c
+exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 10%
+ht-degree: 65%
 
 ---
 
-
 # Über die Schemabearbeitung{#about-schema-edition}
 
-Adobe Campaign verwendet Data Schemas für:
+Adobe Campaign verwendet Datenschemata zum:
 
 * Definieren der Verknüpfung zwischen den Datenobjekten in der Anwendung mit den zugrunde liegenden Datenbanktabellen
 * Definieren von Beziehungen zwischen den unterschiedlichen Datenobjekten in der Campaign-Anwendung
 * Definieren und Beschreiben der einzelnen Felder eines jeden Objekts
 
-Ein besseres Verständnis der integrierten Kampagnen und ihrer Interaktion finden Sie in [diesem Abschnitt](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
+Nähere Erläuterungen zu den in Campaign integrierten Tabellen und ihrer Interaktion finden Sie in [diesem Abschnitt](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
 
 ## Erweitern oder Erstellen von Schemas {#extending-or-creating-schemas}
 
-Um einem der Kerndaten-Schema in der Kampagne ein field- oder index- oder ein anderes Element hinzuzufügen, z. B. die Empfänger-Tabelle (nms:Empfänger), müssen Sie dieses Schema erweitern. Weitere Informationen finden Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md).
+Um ein Feld, einen Index oder ein anderes Element zu einem der Kerndatenschemata in Campaign hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md) .
 
-Um einen völlig neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht standardmäßig vorhanden ist (z. B. eine Vertragstabelle), können Sie direkt ein benutzerdefiniertes Schema erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Data Schemas](../../configuration/using/data-schemas.md).
+Um einen komplett neuen Datentyp hinzuzufügen, der in Adobe Campaign nicht standardmäßig zur Verfügung gestellt wird (z. B. eine Vertragstabelle), können Sie direkt ein benutzerdefiniertes Schema erstellen. Weitere Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) .
 
 ![](assets/schemaextension_getting_started_1.png)
 
-Nachdem Sie ein Schema für die Verwendung erweitert oder erstellt haben, sollten Sie dessen XML-Inhaltselemente in der Reihenfolge definieren, in der sie unten aufgeführt sind.
+Nachdem Sie ein Schema für die Verwendung erweitert oder erstellt haben, empfiehlt es sich, seine XML-Inhaltselemente in der Reihenfolge zu definieren, in der sie unten aufgeführt sind.
 
 ## Auflistungen {#enumerations}
 
-Auflistungen werden zuerst definiert, bevor das Hauptelement des Schemas liegt. Sie ermöglichen es Ihnen, Werte in einer Liste anzuzeigen, um die Auswahl zu beschränken, die der Benutzer für ein bestimmtes Feld hat.
+Auflistungen werden als Erstes definiert, noch vor dem Hauptelement des Schemas. Über sie können Sie Werte in einer Liste anzeigen, um die Auswahl einzuschränken, die der Benutzer für ein bestimmtes Feld hat.
 
 Beispiel:
 
@@ -58,13 +56,13 @@ type="string" enum="exTransactionTypeEnum"/>
 
 >[!NOTE]
 >
->Sie können auch benutzerverwaltete Auflistungen verwenden (normalerweise unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Auflistungen und eine bessere Wahl, wenn Ihre Auflistung außerhalb des Schemas, in dem Sie arbeiten, verwendet werden kann.
+>Sie können auch benutzerseitig verwaltete Auflistungen verwenden (in der Regel unter **[!UICONTROL Administration]** > **[!UICONTROL Platform]**), um die Werte für ein bestimmtes Feld anzugeben. Dabei handelt es sich um globale Auflistungen. Sie sind besser geeignet, wenn Ihre Auflistung außerhalb des von Ihnen eingesetzten Schemas verwendet werden kann.
 
-Weitere Informationen zu Auflistungen finden Sie in den Abschnitten [Auflistungen](../../configuration/using/schema-structure.md#enumerations) und [`<enumeration>` element](../../configuration/using/schema/enumeration.md).
+Weiterführende Informationen zu Auflistungen finden Sie in den Abschnitten [Auflistungen](../../configuration/using/schema-structure.md#enumerations) und [`<enumeration>` Element](../../configuration/using/schema/enumeration.md) .
 
 ## Index {#index}
 
-Indizes sind die ersten im Hauptelement des Schemas deklarierten Elemente.
+Indizes sind die ersten Elemente, die im Hauptelement des Schemas deklariert werden.
 
 Sie können eindeutig sein oder nicht und auf ein oder mehrere Felder verweisen.
 
@@ -83,17 +81,17 @@ Beispiele:
 </dbindex>
 ```
 
-Das **xpath**-Attribut verweist auf das Feld in Ihrem Schema, das Sie indizieren möchten.
+Das Attribut **xpath** verweist auf das Feld in Ihrem Schema, das Sie indizieren möchten.
 
 >[!IMPORTANT]
 >
->Es ist wichtig zu bedenken, dass die SQL-Abfrage die Leistungssteigerungen von Indizes auch mit einem Leistungsschlag beim Schreiben von Datensätzen einhergeht. Die Indizes sollten daher mit Vorsicht verwendet werden.
+>Es ist wichtig zu beachten, dass die von Indizes bereitgestellten Leistungsverbesserungen bei der SQL-Abfrage auch Leistungseinbußen beim Schreiben von Datensätzen verursachen. Die Indizes sollten daher mit Vorsicht verwendet werden.
 
-Weitere Informationen zu Indizes finden Sie im Abschnitt [Indizierte Felder](../../configuration/using/database-mapping.md#indexed-fields).
+Weiterführende Informationen zu Indizes finden Sie im Abschnitt [Indizierte Felder](../../configuration/using/database-mapping.md#indexed-fields) .
 
 ## Schlüssel {#keys}
 
-Jede Tabelle muss mindestens einen Schlüssel haben. Oft wird sie automatisch im Hauptelement des Schemas mit dem auf &quot;true&quot;festgelegten Attribut **@autopk=true** erstellt.
+Jede Tabelle muss über mindestens einen Schlüssel verfügen. Oft wird sie im Hauptelement des Schemas automatisch mithilfe des Attributs **@autopk=true** erstellt, das auf &quot;true&quot;gesetzt ist.
 
 Der Primärschlüssel kann auch mit dem Attribut **internal** definiert werden.
 
@@ -105,21 +103,21 @@ Beispiel:
 </key>
 ```
 
-In diesem Beispiel geben wir anstelle des Attributs **@autopk** einen primären Standardschlüssel mit dem Namen &quot;id&quot;unseren eigenen primären Schlüssel &quot;budgetId&quot;an.
+In diesem Beispiel legen wir unseren eigenen Primärschlüssel &quot;budgetId&quot;fest, anstatt das Attribut **@autopk** einen standardmäßigen Primärschlüssel namens &quot;id&quot;erstellen zu lassen.
 
 >[!IMPORTANT]
 >
 >Beim Anlegen eines neuen Schemas oder bei einer Schema-Erweiterung müssen Sie für das gesamte Schema den gleichen Wert für die Primärschlüsselfolge (@pkSequence) beibehalten.
 
-Weitere Informationen zu Schlüsseln finden Sie im Abschnitt [Verwaltung von Schlüsseln](../../configuration/using/database-mapping.md#management-of-keys).
+Weiterführende Informationen zu Schlüsseln finden Sie im Abschnitt [Verwaltung von Schlüsseln](../../configuration/using/database-mapping.md#management-of-keys) .
 
 ## Attribute (Felder) {#attributes--fields-}
 
-Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Sie können die Schaltfläche **[!UICONTROL Einfügen]** in der Symbolleiste &quot;Schema-Edition&quot;verwenden, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weitere Informationen hierzu finden Sie im Abschnitt [Data Schemas](../../configuration/using/data-schemas.md).
+Mit Attributen können Sie die Felder definieren, aus denen Ihr Datenobjekt besteht. Klicken Sie in der Symbolleiste zur Schemabearbeitung auf **[!UICONTROL Einfügen]**, um leere Attributvorlagen an der Stelle in Ihrer XML abzulegen, an der sich Ihr Cursor befindet. Weitere Informationen hierzu finden Sie im Abschnitt [Datenschemata](../../configuration/using/data-schemas.md) .
 
 ![](assets/schemaextension_getting_started_2.png)
 
-Die vollständige Liste der Attribute ist im Abschnitt [`<attribute>` element](../../configuration/using/schema/attribute.md) verfügbar. Im Folgenden finden Sie einige der gebräuchlichsten Attribute:
+Die vollständige Liste der Attribute finden Sie im Abschnitt [`<attribute>` element](../../configuration/using/schema/attribute.md) . Im Folgenden finden Sie einige der am häufigsten verwendeten Attribute:
 
 * **@advanced**
 * **@dataPolicy**
@@ -136,13 +134,13 @@ Die vollständige Liste der Attribute ist im Abschnitt [`<attribute>` element](.
 * **@xml**
 * **@type**
 
-   Eine Ansicht der Zuordnung der Datentypen, die von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generiert wurden, finden Sie im Abschnitt [Zuordnen der Typen von Adobe Campaign-/DBMS-Daten](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data).
+   Eine Tabelle mit den Zuordnungen der von Adobe Campaign für die verschiedenen Datenbankverwaltungssysteme generierten Datentypen finden Sie im Abschnitt [Zuordnen der Datentypen von Adobe Campaign/DBMS](../../configuration/using/schema-structure.md#mapping-the-types-of-adobe-campaign-dbms-data) .
 
-Weitere Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md).
+Weiterführende Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md) .
 
-### Beispiele {#examples}
+### Beispiele      {#examples}
 
-Beispiel für die Definition eines Standardwert:
+Beispiel für die Definition eines Standardwerts:
 
 ```
 <attribute name="transactionDate" label="Transaction Date" type="datetime" default="GetDate()"/>
@@ -160,7 +158,7 @@ Beispiel eines berechneten Felds, das mit dem Attribut **@advanced** ausgeblende
 <attribute name="domain" label="Email domain" desc="Domain of recipient email address" expr="GetEmailDomain([@email])" advanced="true" />
 ```
 
-Beispiel für ein XML-Feld, das auch in einem SQL-Feld gespeichert ist und das ein **@dataPolicy**-Attribut hat.
+Beispiel für ein XML-Feld, das ebenfalls in einem SQL-Feld gespeichert ist und ein **@dataPolicy**-Attribut aufweist.
 
 ```
 <attribute name="secondaryEmail" label="Secondary email address" length="100" xml="true" sql="true" dataPolicy="email" />
@@ -168,33 +166,33 @@ Beispiel für ein XML-Feld, das auch in einem SQL-Feld gespeichert ist und das e
 
 >[!IMPORTANT]
 >
->Obwohl die meisten Attribute gemäß einer 1-1-Kardinalität mit einem physischen Feld der Datenbank verknüpft sind, ist dies bei den XML-Feldern oder den berechneten Feldern nicht der Fall.\
->Ein XML-Feld wird in einem Memofeld (&quot;mData&quot;) der Tabelle gespeichert.\
->Ein berechnetes Feld wird jedoch bei jedem Starten einer Abfrage dynamisch erstellt und ist daher nur in der Anwendungsebene vorhanden.
+>Die meisten Attribute sind zwar mittels 1-1-Kardinalität mit einem physischen Feld der Datenbank verknüpft. Bei den XML-Feldern oder den berechneten Feldern ist dies jedoch nicht der Fall.\
+>Ein XML-Feld wird in einem Memo-Feld (&quot;mData&quot;) der Tabelle gespeichert.\
+>Es wird jedoch beim Start jeder Abfrage dynamisch ein berechnetes Feld erstellt, sodass dieses auf Anwendungsebene vorhanden ist.
 
 ## Relationen {#links}
 
-Links sind einige der letzten Elemente im Hauptelement Ihres Schemas. Sie definieren, wie alle verschiedenen Schema in Ihrer Instanz miteinander in Beziehung stehen.
+Relationen gehören zu den letzten Elementen im Hauptelement Ihres Schemas. Sie definieren, wie die verschiedenen Schemata in Ihrer Instanz miteinander in Beziehung stehen.
 
-Links werden in dem Schema deklariert, das den **Fremdschlüssel** der Tabelle enthält, mit der sie verknüpft sind.
+Relationen werden in dem Schema deklariert, das den **Fremdschlüssel** der Tabelle enthält, mit der sie verknüpft sind.
 
-Es gibt drei Arten von Kardinalität: 1-1, 1-N und N-N. Es ist der 1-N-Typ, der standardmäßig verwendet wird.
+Es gibt drei Arten von Kardinalität: 1-1, 1-N und N-N. Standardmäßig wird der Typ 1-N verwendet.
 
 ### Beispiele {#examples-1}
 
-Beispiel für eine 1-N-Verknüpfung zwischen der Tabelle &quot;Empfänger&quot;(vordefiniertes Schema) und einer Tabelle mit benutzerdefinierten Transaktionen:
+Beispiel für eine 1-N-Relation zwischen der Empfängertabelle (vordefiniertes Schema) und einer Tabelle mit benutzerdefinierten Transaktionen:
 
 ```
 <element label="Recipient" name="lnkRecipient" revLink="lnkTransactions" target="nms:recipient" type="link"/>
 ```
 
-Ein Beispiel für eine Verknüpfung zwischen einem benutzerspezifischen Schema &quot;Auto&quot;(im Namensraum &quot;cus&quot;) und der Tabelle &quot;Empfänger&quot;:
+Beispiel für eine 1-1-Relation zwischen einem benutzerspezifischen Schema &quot;Car&quot; (im Namespace &quot;cus&quot;) und der Empfängertabelle:
 
 ```
 <element label="Car" name="lnkCar" revCardinality="single" revLink="recipient" target="cus:car" type="link"/>
 ```
 
-Beispiel für eine externe Verknüpfung zwischen der Tabelle &quot;Empfänger&quot;und einer Tabelle mit Adressen, die auf der E-Mail-Adresse und nicht dem Primärschlüssel basiert:
+Beispiel für eine externe Relation zwischen der Empfängertabelle und einer Tabelle mit Adressen, die auf der E-Mail-Adresse anstatt auf dem Primärschlüssel basiert:
 
 ```
 <element name="emailInfo" label="Email Info" revLink="recipient" target="nms:address" type="link" externalJoin="true">
@@ -202,13 +200,13 @@ Beispiel für eine externe Verknüpfung zwischen der Tabelle &quot;Empfänger&qu
 </element>
 ```
 
-Hier entspricht &quot;xpath-dst&quot;dem primären Schlüssel im Zielgruppe-Schema und &quot;xpath-src&quot;dem Fremdschlüssel im source-Schema.
+Hier entspricht &quot;xpath-dst&quot; dem Primärschlüssel im Zielgruppenschema und &quot;xpath-src&quot; dem Fremdschlüssel im Quellschema.
 
 ## Audit-Protokoll {#audit-trail}
 
-Ein nützliches Element, das Sie am Ende Ihres Schemas einbeziehen möchten, ist ein Verfolgungselement (Audit-Protokoll).
+Es kann sich als nützlich erweisen, am Ende Ihres Schemas ein Tracking-Element hinzuzufügen (für das Audit-Protokoll).
 
-Verwenden Sie das unten stehende Beispiel, um Felder mit Bezug auf das Erstellungsdatum, den Benutzer, der die Daten erstellt hat, das Datum und den Autor der letzten Änderung für alle Daten in Ihrer Tabelle einzuschließen:
+Gehen Sie wie im nachfolgenden Beispiel vor, um Felder mit Bezug auf das Erstellungsdatum, den Benutzer, der die Daten erstellt hat, das Datum und den Autor der letzten Änderung für alle Daten in Ihrer Tabelle einzubeziehen:
 
 ```
 <element aggregate="xtk:common:auditTrail" name="auditTrail"/>
@@ -216,7 +214,7 @@ Verwenden Sie das unten stehende Beispiel, um Felder mit Bezug auf das Erstellun
 
 ## Datenbankstruktur aktualisieren {#updating-the-database-structure}
 
-Sobald Ihre Änderungen abgeschlossen und gespeichert sind, müssen alle Änderungen, die sich auf die SQL-Struktur auswirken können, auf die Datenbank angewendet werden. Verwenden Sie dazu den Datenbankaktualisierungsassistenten.
+Sobald Ihre Änderungen abgeschlossen und gespeichert sind, müssen alle Änderungen, die sich auf die SQL-Struktur auswirken können, auf die Datenbank angewendet werden. Verwenden Sie dazu den Datenbankaktualisierungs-Assistenten.
 
 ![](assets/schemaextension_getting_started_3.png)
 
@@ -224,5 +222,4 @@ Weiterführende Informationen finden Sie im Abschnitt [Datenbankstruktur aktuali
 
 >[!NOTE]
 >
->Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur Schema neu generieren. Wählen Sie dazu die zu aktualisierenden Schema aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schema neu generieren...]** . Weitere Informationen finden Sie im Abschnitt [Regenerierende Schema](../../configuration/using/regenerating-schemas.md).
-
+>Wenn Änderungen sich nicht auf die Datenbankstruktur auswirken, müssen Sie nur die Schemata neu erstellen. Wählen Sie dazu die zu aktualisierenden Schemata aus, klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemata wiederherstellen...]**. Weitere Informationen hierzu finden Sie im Abschnitt [Regenerieren von Schemata](../../configuration/using/regenerating-schemas.md) .
