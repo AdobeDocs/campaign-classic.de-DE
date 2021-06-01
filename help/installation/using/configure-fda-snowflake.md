@@ -1,26 +1,24 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Zugriff auf Snowflake konfigurieren
-description: Erfahren Sie, wie Sie den Zugriff auf Snowflake in der FDA konfigurieren.
+description: Erfahren Sie, wie Sie den Zugriff auf Snowflake in FDA konfigurieren
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 535339b5a9b39625100d630b0b831df143dbeb01
+exl-id: bdb5e422-ecfe-42eb-bd15-39fe5ec0ff1d
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '513'
 ht-degree: 72%
 
 ---
 
-
 # Zugriff auf Snowflake konfigurieren {#configure-access-to-snowflake}
 
-Verwenden Sie die Option &quot;Kampagne **Federated Data Access** (FDA)&quot;, um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake] zu konfigurieren.
+Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Snowflake] zu konfigurieren.
 
-1. [!DNL Snowflake] auf [CentOS](#snowflake-centos), [Windows](#snowflake-windows) oder [Debian](#snowflake-debian) konfigurieren
-1. [!DNL Snowflake] [Externe Konto](#snowflake-external) in Kampagne konfigurieren
+1. [!DNL Snowflake] unter [CentOS](#snowflake-centos), [Windows](#snowflake-windows) oder [Debian](#snowflake-debian) konfigurieren
+1. Konfigurieren Sie das externe [!DNL Snowflake] [Konto](#snowflake-external) in Campaign.
 
 
 >[!NOTE]
@@ -48,7 +46,7 @@ Gehen Sie wie folgt vor, um [!DNL Snowflake] unter CentOS zu konfigurieren:
    /etc/init.d/nlserver6 start
    ```
 
-1. In Kampagne können Sie dann Ihr [!DNL Snowflake]-Externe Konto konfigurieren. Weitere Informationen zum Konfigurieren Ihres Externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
+1. In Campaign können Sie dann Ihr externes [!DNL Snowflake]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
 
 ## Snowflake unter Windows {#snowflake-windows}
 
@@ -56,7 +54,7 @@ Gehen Sie wie folgt vor, um [!DNL Snowflake] unter CentOS zu konfigurieren:
 
 1. Konfigurieren Sie den ODBC-Treiber. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.snowflake.net/manuals/user-guide/odbc-windows.html#step-2-configure-the-odbc-driver)
 
-1. In Kampagne können Sie dann Ihr [!DNL Snowflake]-Externe Konto konfigurieren. Weitere Informationen zum Konfigurieren Ihres Externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
+1. In Campaign können Sie dann Ihr externes [!DNL Snowflake]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
 
 ## Snowflake unter Debian {#snowflake-debian}
 
@@ -76,13 +74,13 @@ Gehen Sie wie folgt vor, um [!DNL Snowflake] unter CentOS zu konfigurieren:
    systemctl start nlserver.service
    ```
 
-1. In Kampagne können Sie dann Ihr [!DNL Snowflake]-Externe Konto konfigurieren. Weitere Informationen zum Konfigurieren Ihres Externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
+1. In Campaign können Sie dann Ihr externes [!DNL Snowflake]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#snowflake-external).
 
 ## Externes Snowflake-Konto {#snowflake-external}
 
-Sie müssen ein [!DNL Snowflake]-Externe Konto erstellen, um Ihre Kampagne mit Ihrer [!DNL Snowflake]-externen Datenbank zu verbinden.
+Sie müssen ein externes [!DNL Snowflake]-Konto erstellen, um Ihre Campaign-Instanz mit Ihrer externen [!DNL Snowflake]-Datenbank zu verbinden.
 
-1. Klicken Sie in der Kampagne **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Platform]** &#39;>&#39; **[!UICONTROL Externe Konti]**.
+1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** &#39;>&#39; **[!UICONTROL Plattform]** &#39;>&#39; **[!UICONTROL Externe Konten]**.
 
 1. Wählen Sie **[!UICONTROL Neu]** aus.
 
