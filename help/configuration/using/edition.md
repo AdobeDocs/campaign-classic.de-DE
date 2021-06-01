@@ -1,37 +1,34 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bearbeitung
 description: Bearbeitung
 audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
-translation-type: tm+mt
-source-git-commit: d6993725ed4060f2affce98c4a8a5211bda03bdf
+exl-id: 204d4a24-267c-4976-90d9-7bf5bee8d116
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 1%
 
 ---
 
+# Navigationsstruktur von Campaign Explorer bearbeiten{#edition}
 
-# Kampagne Explorer-Navigationsstruktur bearbeiten{#edition}
-
-Der Bildschirm zum Erstellen und Konfigurieren der Konfigurationshierarchie-Dokumente ist über den Knoten **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** verfügbar:
+Auf den Bildschirm zum Erstellen und Konfigurieren der Navigationshierarchiekonfigurationsdokumente kann über den Knoten **[!UICONTROL Administration > Konfiguration > Navigationshierarchien]** zugegriffen werden:
 
 ![](assets/d_ncs_integration_navigation_arbo.png)
 
-Die Konfiguration der Navigationshierarchie ist auf mehrere XML-Dokumente aufgeteilt. Sie verfolgt einen ähnlichen Grundsatz wie die Ausweitung des Schemas: alle Dokumente zusammengeführt werden, um ein Dokument zu generieren, das die gesamte Konfiguration enthält. Dieses Dokument kann nicht bearbeitet werden und wird über die Registerkarte &quot;Vorschau&quot;angezeigt.
+Die Konfiguration der Navigationshierarchie ist auf mehrere XML-Dokumente aufgeteilt. Sie funktioniert nach einem ähnlichen Prinzip wie die Schemaerweiterung: Alle Dokumente werden zusammengeführt, um ein einzelnes Dokument zu erstellen, das die gesamte Konfiguration enthält. Das Dokument kann nicht bearbeitet werden und wird im Tab &quot;Vorschau&quot; angezeigt.
 
-Das Bearbeitungsfeld enthält den Inhalt des XML-Dokuments:
+Das Bearbeitungsfeld stellt den Inhalt des XML-Dokuments bereit:
 
 ![](assets/d_ncs_integration_navigation_edit.png)
 
 >[!NOTE]
 >
->Mit dem Bearbeitungssteuerelement &quot;Name&quot;können Sie den Dokument-Schlüssel eingeben, der aus Name und Namensraum besteht. Die Attribute &quot;name&quot;und &quot;Namensraum&quot;des Elements **`<navtree>`** werden automatisch im XML-Bearbeitungsfeld des Schemas aktualisiert.
+>Das Eingabefeld &quot;Name&quot; ermöglicht die Eingabe des Dokumentschlüssels, der aus Name und Namespace besteht. Die Attribute &quot;name&quot; und &quot;namespace&quot; des Elements **`<navtree>`** werden automatisch im XML-Bearbeitungsfeld des Schemas aktualisiert.
 
 Die Vorschau generiert automatisch das zusammengeführte Dokument mit der vollständigen Konfiguration:
 
 ![](assets/d_ncs_integration_navigation_preview.png)
-
