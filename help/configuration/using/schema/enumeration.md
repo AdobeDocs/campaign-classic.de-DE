@@ -1,55 +1,53 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elemente und Attribute
 description: Elemente und Attribute
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
-
-# Auflistung element {#enumeration--element}
+# enumeration element {#enumeration--element}
 
 ## Inhaltsmodell {#content-model-5}
 
-Auflistung:==(help| value)
+enumeration:==(help| value)
 
 ## Attribute {#attributes-5}
 
-* @basetype (Zeichenfolge)
-* @default (Zeichenfolge)
-* @desc (Zeichenfolge)
-* @label (Zeichenfolge)
-* @name (Zeichenfolge)
-* @template (Zeichenfolge)
+* @basetype (string)
+* @default (string)
+* @desc (string)
+* @label (string)
+* @name (string)
+* @template (string)
 
-## Eltern {#parents-5}
+## Übergeordnete Elemente {#parents-5}
 
 `<srcschema>`
 
-## Kinder {#children-5}
+## Untergeordnetes Element {#children-5}
 
 * `<help>`
 * `<value>`
 
 ## Beschreibung {#description-5}
 
-Mit diesem Element können wir eine Auflistung definieren. Eine Auflistung gehört zu dem Schema, in dem sie definiert ist, ist jedoch über ein anderes Schema verfügbar.
+Mit diesem Element können wir eine Werteauflistung definieren. Eine Auflistung gehört zu dem Schema, in dem sie definiert ist, kann jedoch über ein anderes Schema aufgerufen werden.
 
 ## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-4}
 
-Auflistungen werden am Beginn eines Schemas definiert (bevor das Hauptelement definiert wird).
+Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement definiert wird).
 
 ## Attributbeschreibung {#attribute-description-5}
 
-* **basetype (Zeichenfolge)**: Typ der in der Auflistung gespeicherten Werte.
+* **basetype (string**): Typ der in der Auflistung gespeicherten Werte.
 
    Liste der verfügbaren Typen:
 
@@ -65,32 +63,32 @@ Auflistungen werden am Beginn eines Schemas definiert (bevor das Hauptelement de
    * date
    * DOMDocument
    * DOMElement
-   * Dublette
+   * double
    * enum
    * float
    * html
    * int64
    * link
    * long
-   * memo
+   * Memo
    * MNTOKEN
    * percent
    * primarykey
    * short
    * Zeichenfolge
    * Zeit
-   * Zeitspanne
+   * timespan
    * uuid
 
-* **default (Zeichenfolge)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
-* **desc (Zeichenfolge)**: Beschreibung der Auflistung.
-* **label (Zeichenfolge)**: Beschriftung der Auflistung.
-* **name (Zeichenfolge)**: interner Name der Auflistung.
-* **template (string)**: Dieses Attribut definiert einen Verweis auf ein  `<enumeration>` Element, das von mehreren Schemas gemeinsam verwendet wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
+* **default (string)**: Standardwert. Der Standardwert kann auch einer der in der Auflistung definierten Werte sein.
+* **desc (string)**: Auflistungsbeschreibung.
+* **label (string)**: Auflistungsbezeichnung.
+* **name (string)**: interner Name der Auflistung.
+* **template (string)**: Dieses Attribut definiert einen Verweis auf ein  `<enumeration>` Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 
 ## Beispiele {#examples-4}
 
-Beispiel für Auflistungen, deren Werte in der Datenbank gespeichert werden:
+Beispiel für Auflistungswerte, deren Werte in der Datenbank gespeichert sind:
 
 ```
     <enumeration name="myEnum">
