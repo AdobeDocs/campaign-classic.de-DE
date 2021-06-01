@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Verwalten und Anpassen von Listen
 description: Erfahren Sie, wie Sie Listen durchsuchen und konfigurieren.
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1198'
 ht-degree: 100%
 
@@ -35,7 +33,7 @@ Verwenden Sie die Schaltfläche **[!UICONTROL Weiter laden]**, um mehr als die s
 
 ![](assets/s_ncs_user_load_list.png)
 
-Klicken Sie zur Ladung aller Datensätze mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL Alles laden]**.
+Klicken Sie zur Laden aller Datensätze mit der rechten Maustaste auf die Liste und wählen Sie **[!UICONTROL Alles laden]**.
 
 >[!CAUTION]
 >
@@ -112,7 +110,7 @@ Sie können neue Spalten erstellen, um zusätzliche Felder in der Liste anzuzeig
 
 ![](assets/s_ncs_user_configure_list.png)
 
-Wählen Sie im Bereich der **[!UICONTROL Ausgabespalten]** des Listenkonfigurationsfensters die auszublendende Spalte aus und klicken Sie auf die Schaltfläche Löschen.
+Wählen Sie im Bereich der **[!UICONTROL Ausgabespalten]** des Listenkonfigurationsfensters die auszublendende Spalte aus und klicken Sie auf die Schaltfläche &quot;Löschen&quot;.
 
 ![](assets/s_ncs_user_removecolumn_icon.png)
 
