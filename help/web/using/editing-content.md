@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Bearbeiten von Inhalten
 description: Bearbeiten von Inhalten
@@ -7,9 +6,8 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 100%
 
@@ -133,10 +131,11 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >
 >* Sonstige (IFrame)
 >* Vorderstes Fenster (_top)
->* Elternfenster (_parent)
+>* Übergeordnetes Fenster (_parent)
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 
@@ -202,8 +201,9 @@ Folgende Optionen sind verfügbar:
 >[!NOTE]
 >
 >* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
->
->* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
+   >
+   >
+* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
 
 ## Bilder und Animationen verwalten {#managing-images-and-animations}
