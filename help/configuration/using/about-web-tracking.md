@@ -1,36 +1,33 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Über Webtracking
 description: Über Webtracking
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 91c31703-75e6-47a4-a877-35682dd687a9
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 4%
 
 ---
 
-
 # Über Webtracking{#about-web-tracking}
 
-Neben der standardmäßigen Verfolgung, die das Verhalten eines Internetbenutzers zeigt, der auf einen Link in einer E-Mail klickt, können Sie über die Adobe Campaign-Plattform Informationen darüber sammeln, wie Internetbenutzer auf Ihrer Website surfen. Diese Datenerfassung wird vom Web-Verfolgungsmodul durchgeführt.
+Zusätzlich zum Standard-Tracking, das das Verhalten eines Internetbenutzers anzeigt, der in einer E-Mail-Nachricht auf einen Link klickt, können Sie mit der Adobe Campaign-Plattform Informationen darüber sammeln, wie Internetbenutzer auf Ihrer Website surfen. Diese Datenerfassung wird vom Webtracking-Modul durchgeführt.
 
-Wenn ein Internetbenutzer auf einen verfolgten Link in einer E-Mail von einem bestimmten Versand aus klickt, speichert der kontaktierte Weiterleitungsserver ein Sitzungs-Cookie mit der Broadlog-ID (breitlogId) und der Versand-ID (deliveryId).
+Wenn ein Internetbenutzer von einem bestimmten Versand aus auf einen verfolgten Link in einer E-Mail klickt, speichert der kontaktierte Weiterleitungsserver ein Sitzungs-Cookie mit der Broadlog-Kennung (broadlogId) und der Versandkennung (deliveryId).
 
-Der Webclient sendet dieses Cookie dann jedes Mal an den Server, wenn der Benutzer eine Seite besucht, die einen Web-Trackingtag enthält. Dies wird während der gesamten Sitzung fortgesetzt, d. h. bis der Webclient geschlossen wird.
+Der Webclient sendet dieses Cookie dann jedes Mal an den Server, wenn der Benutzer eine Seite besucht, die ein Webtrackingtag enthält. Dies wird während der gesamten Sitzung fortgesetzt, d. h. bis der Web-Client geschlossen wird.
 
 Der Weiterleitungsserver erfasst auf diese Weise die folgenden Daten:
 
-* URL der angezeigten Seite mit einer als Parameter gesendeten Kennung,
-* der Versand, von dem aus die Webseite über das Sitzungs-Cookie besucht wurde,
-* Kennung des Internetnutzers, der über das Sitzungs-Cookie auf die Schaltfläche geklickt hat,
+* URL der angezeigten Seite über eine als Parameter gesendete Kennung,
+* den Versand, von dem aus die Webseite über das Sitzungs-Cookie besucht wurde,
+* Kennung des Internetbenutzers, der über das Sitzungs-Cookie geklickt hat,
 * zusätzliche Informationen, z. B. das generierte Geschäftsvolumen.
 
-Das folgende Diagramm zeigt die Phasen des Dialogs zwischen dem Client und den verschiedenen Servern.
+Das folgende Diagramm zeigt die Phasen des Dialogfelds zwischen dem Client und den verschiedenen Servern.
 
 ![](assets/d_ncs_integration_webtracking_structure1.png)
-
