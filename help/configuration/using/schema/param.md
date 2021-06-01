@@ -1,19 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elemente und Attribute
 description: Elemente und Attribute
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
-
 
 # param element {#param--element}
 
@@ -23,21 +21,21 @@ param:==help
 
 ## Attribute {#attributes-12}
 
-* @_operation (Zeichenfolge)
-* @desc (Zeichenfolge)
-* @enum (Zeichenfolge)
-* @inout (Zeichenfolge)
-* @label (Zeichenfolge)
-* @localizable (Zeichenfolge)
+* @_operation (string)
+* @desc (string)
+* @enum (string)
+* @inout (string)
+* @label (string)
+* @localizable (string)
 * @name (MNTOKEN)
-* @Namensraum (MNTOKEN)
-* @type (Zeichenfolge)
+* @namespace (MNTOKEN)
+* @type (string)
 
-## Eltern {#parents-12}
+## Übergeordnete Elemente {#parents-12}
 
 `<parameters>`
 
-## Kinder {#children-12}
+## Untergeordnetes Element {#children-12}
 
 `<help>`
 
@@ -47,11 +45,11 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
 
 ## Attributbeschreibung {#attribute-description-12}
 
-* **desc (Zeichenfolge)**: Beschreibung, die das  `<param>` Element betrifft.
-* **inout (Zeichenfolge)**: Dieses Attribut definiert, ob sich der Parameter am Eingang (in) oder an der Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben ist, lautet der Standardparameter input (&quot;@inout=in&quot;).
-* **label (Zeichenfolge)**:  `<param>` label
-* **localizable (Zeichenfolge)**: Wenn es aktiviert ist, weist dieses Attribut das Erfassungswerkzeug an, den Wert des Attributs &quot;@label&quot;für die Übersetzung wiederherzustellen (interne Verwendung).
-* **name (MNTOKEN)**: interner Name der  `<param>`
+* **desc (string)**: Beschreibung, die das  `<param>` Element betrifft.
+* **inout (string)**: Dieses Attribut definiert, ob sich der Parameter an der Eingabe (in) oder Ausgabe (out) des SOAP-Aufrufs befindet. Wenn dieses Attribut nicht angegeben ist, lautet der Standardparameter input (&quot;@inout=in&quot;).
+* **label (string)**:  `<param>` label
+* **localizable (string)**: Wenn es aktiviert ist, weist dieses Attribut das Tool zur Sammlung an, den Wert des Attributs &quot;@label&quot;für die Übersetzung abzurufen (interne Verwendung).
+* **name (MNTOKEN)**: interner Name des  `<param>`
 * **type (string)**: Dieses Attribut definiert den Typ des  `<param>` Elements
 
    Liste der verfügbaren Typen:
@@ -68,21 +66,21 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
    * date
    * DOMDocument
    * DOMElement
-   * Dublette
+   * double
    * enum
    * float
    * html
    * int64
    * link
    * long
-   * memo
+   * Memo
    * MNTOKEN
    * percent
    * primarykey
    * short
    * Zeichenfolge
    * Zeit
-   * Zeitspanne
+   * timespan
    * uuid
 
 ## Beispiele {#examples-9}
