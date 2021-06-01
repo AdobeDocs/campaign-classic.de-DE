@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Erste Schritte mit dem SMS-Kanal
 description: Erste Schritte mit dem SMS-Kanal
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 
@@ -30,7 +28,7 @@ Die wichtigsten Schritte zum Senden einer SMS sind:
 * [SMS-Kanal konfigurieren](sms-set-up.md)
 * [SMS-Versand erstellen](sms-create.md)
 * [Audience festlegen](sms-create.md#selecting-the-target-population)
-* [SMS-Inhalt definieren](sms-create.md#defining-the-sms-content)
+* [Erstellen Sie den SMS-Inhalt](sms-create.md#defining-the-sms-content)
 * [SMS senden, überwachen und verfolgen](sms-send.md)
 * [Fehler beheben](troubleshooting-sms.md)
 
