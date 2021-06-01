@@ -1,39 +1,37 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Wechseln zu Unicode
 description: Wechseln zu Unicode
 audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 4cfecf2f-cf98-42c1-b979-cdd26d5de48b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 7%
 
 ---
 
-
 # Wechseln zu Unicode{#switching-to-unicode}
 
-Für eine vorhandene **prod**-Instanz in Linux/PostgreSQL werden die folgenden Schritte zum Umstieg auf Unicode ausgeführt:
+Für eine vorhandene **prod**-Instanz in Linux/PostgreSQL sind die Schritte zum Wechseln zu Unicode wie folgt:
 
-1. Prozesse, die in die Datenbank schreiben, beenden:
+1. Beenden Sie die Prozesse, die in die Datenbank schreiben:
 
    ```
    su - neolane
    nlserver shutdown
    ```
 
-1. Datenbank ablegen:
+1. Datenbank abrufen:
 
    ```
    su - postgres
    pg_dump mydatabase > mydatabase.sql
    ```
 
-1. Eine Unicode-Datenbank erstellen:
+1. Erstellen Sie eine Unicode-Datenbank:
 
    ```
    createdb -E UNICODE mydatabase_unicode
@@ -45,7 +43,7 @@ Für eine vorhandene **prod**-Instanz in Linux/PostgreSQL werden die folgenden S
    psql mydatabase_unicode < mydatabase.sql
    ```
 
-1. Aktualisieren Sie die Option, die angibt, dass die Datenbank Unicode lautet:
+1. Aktualisieren Sie die Option, die angibt, dass die Datenbank Unicode ist:
 
    ```
    psql mydatabase_unicode
@@ -60,7 +58,7 @@ Für eine vorhandene **prod**-Instanz in Linux/PostgreSQL werden die folgenden S
    vi config-prod.xml
    ```
 
-   hinzufügen Sie das Zeichen **u** vor dem Wert, der sich auf die Datenbankkennung (**databaseId**) bezieht:
+   Fügen Sie das Zeichen **u** vor dem Wert hinzu, der sich auf die Datenbankkennung (**databaseId**) bezieht:
 
    ```
    <web>
@@ -76,7 +74,7 @@ Für eine vorhandene **prod**-Instanz in Linux/PostgreSQL werden die folgenden S
    vi config-prod.xml
    ```
 
-   Datenbankverweis ändern:
+   Ändern Sie die Datenbankreferenz:
 
    ```
    <dataSource name="default">
@@ -95,8 +93,7 @@ Für eine vorhandene **prod**-Instanz in Linux/PostgreSQL werden die folgenden S
    /etc/init.d/apache start
    ```
 
-1. Überprüfen Sie den Switch. Stellen Sie dazu eine Verbindung über die Adobe Campaign-Konsole her und:
+1. Bestätigen Sie den Schalter. Stellen Sie dazu eine Verbindung über die Adobe Campaign-Konsole her und:
 
-   * Überprüfen Sie, ob die Daten korrekt angezeigt werden, insbesondere die Zeichen mit Akzentuierung:
-   * starten Sie einen Versand und überprüfen Sie, ob der Tracking-Abruf funktioniert.
-
+   * Überprüfen Sie, ob die Daten korrekt angezeigt werden, insbesondere die akzentuierten Zeichen:
+   * Starten Sie einen Versand und vergewissern Sie sich, dass der Tracking-Abruf funktioniert.
