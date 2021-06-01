@@ -1,130 +1,128 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Allgemeine Architektur
 description: Erfahren Sie, wie Sie Campaign Classic installieren und konfigurieren können.
 audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 0%
+ht-degree: 52%
 
 ---
 
-
 # Allgemeine Architektur{#general-architecture}
 
-Die typische Adobe Campaign-Lösungsbereitstellung besteht aus den folgenden Komponenten:
+Die typische Implementierung einer Adobe Campaign-Lösung setzt sich aus folgenden Komponenten zusammen:
 
 * **Personalisierte Client-Umgebung**
 
-   Intuitive grafische Benutzeroberfläche, in der Benutzer Marketing-Angebot kommunizieren und verfolgen können, Kampagnen erstellen, alle Marketing-Aktivitäten, Programme und Pläne - einschließlich E-Mails, Workflows und Landingpages - überprüfen und verwalten, kundenspezifische Profil erstellen und verwalten und Audiencen definieren können.
+   Intuitive grafische Benutzeroberfläche, über die Benutzer Marketingangebote kommunizieren und verfolgen, Kampagnen erstellen, alle Marketing-Aktivitäten, Programme und Pläne - einschließlich E-Mails, Workflows und Landingpages - überprüfen und verwalten, Kundenprofile erstellen und verwalten sowie Kundentypen definieren können.
 
-* **Entwicklungs-Umgebung**
+* **Entwicklungsumgebung**
 
-   Serverseitige Software, die die Marketing-Kampagnen über ausgewählte Kommunikationsserver ausführt, einschließlich E-Mails, SMS, Push-Benachrichtigungen, Direktwerbung, Web- oder Social-Kanal, basierend auf den in der Benutzeroberfläche festgelegten Regeln und Workflows.
+   Eine Server-seitige Software, die Marketing-Kampagnen über benutzerseitig ausgewählte Kommunikationskanäle ausführt, die von E-Mail, SMS und Push-Benachrichtigungen über Briefpost bis zu Web- und Social-Media-Kanälen reichen. In der Benutzeroberfläche werden dabei zugehörige Regeln und Workflows festgelegt.
 
 * **Datenbank-Container**
 
-   Basierend auf relativer Datenbanktechnologie speichert die Adobe Campaign-Datenbank alle Kundeninformationen, Kampagnen, Angebot und Workflows sowie die Kampagne in Containern der Kundendatenbank.
+   Basierend auf relativer Datenbanktechnologie speichert die Adobe Campaign-Datenbank alle Kundeninformationen, Kampagnenkomponenten, Angebote und Workflows sowie Kampagnenergebnisse in Container mit Kundendatenbanken.
 
-Adobe Campaign basiert auf einer serviceorientierten Architektur (SOA) und umfasst mehrere Funktionsmodule. Diese Module können auf einem oder mehreren Computern in einer oder mehreren Instanzen bereitgestellt werden, je nach Einschränkungen hinsichtlich Skalierbarkeit, Verfügbarkeit und Dienstisolierung. Der Umfang der Implementierungskonfigurationen ist daher sehr breit gefasst und erstreckt sich über einen einzelnen zentralen Computer bis hin zu Konfigurationen, einschließlich mehrerer dedizierter Server über mehrere Sites.
+Adobe Campaign basiert auf einer Service-orientierten Architektur (SOA) und umfasst mehrere Funktionsmodule. Diese Module können auf einem oder mehreren Computern in einzelnen oder mehreren Instanzen bereitgestellt werden, je nach Einschränkungen hinsichtlich Skalierbarkeit, Verfügbarkeit und Dienstisolierung. Der Umfang der Implementierungskonfigurationen ist daher sehr breit angelegt und erstreckt sich über einen zentralen Computer bis hin zu Konfigurationen, die mehrere dedizierte Server über mehrere Sites hinweg umfassen.
 
 >[!NOTE]
 >
->Als Softwareanbieter spezifizieren wir kompatible Hardware- und Softwareinfrastruktur. Die hier abgegebenen Hardware-Empfehlungen dienen nur zu Informationszwecken und basieren auf unserer Erfahrung. Die Adobe haftet nicht für Entscheidungen, die auf der Grundlage dieser Entscheidungen getroffen werden. Es hängt auch von Ihren Geschäftsregeln und -praktiken und der Kritikalität und den erforderlichen Leistungsniveaus des Projekts ab.
+>Als Softwareanbieter spezifizieren wir kompatible Hardware- und Software-Infrastrukturen. Die hier gegebenen Hardware-Empfehlungen dienen nur zu Informationszwecken und basieren auf unserer Erfahrung. Die Adobe haftet nicht für Entscheidungen, die auf dieser Grundlage getroffen werden. Dies hängt auch von Ihren Geschäftsregeln und -praktiken sowie von der Kritikalität und den erforderlichen Leistungsstufen des Projekts ab.
 
 ![](assets/s_ncs_install_architecture.png)
 
 >[!CAUTION]
 >
->Sofern nicht ausdrücklich anders angegeben, sind die Installation, Updates und Wartung auf allen Komponenten einer Adobe Campaign-Plattform Sache des bzw. der Computeradministratoren, der bzw. die diese hostet. Dies umfasst die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Kampagne [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
+>Sofern nicht ausdrücklich anders angegeben, obliegt die Installation, Aktualisierung und Wartung auf allen Komponenten einer Adobe Campaign-Plattform dem/den Maschinadministrator(en), der/die diese Komponenten hostet. Dazu gehört die Implementierung der Voraussetzungen für Adobe Campaign-Anwendungen sowie die Einhaltung der Campaign [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) zwischen Komponenten.
 
-## Präsentationsebene {#presentation-layer}
+## Präsentationsschicht {#presentation-layer}
 
-Der Zugriff auf die Anwendung erfolgt auf unterschiedliche Weise je nach Bedarf des Benutzers: Rich Client-, Thin Client- oder API-Integration.
+Der Zugriff auf die Anwendung ist je nach den Anforderungen der Benutzer auf unterschiedliche Weise möglich: Rich-Client-, Thin-Client- oder API-Integration.
 
-* **Rich-Client**: Die Hauptbenutzeroberfläche der Applikation ist ein Rich-Client, d. h. eine native Applikation (Windows), die ausschließlich mit Standard-Internetprotokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungsserver kommuniziert. Diese Konsole bietet eine großartige Benutzerfreundlichkeit für Produktivität, verwendet sehr wenig Bandbreite (über einen lokalen Cache) und ist für eine einfache Bereitstellung konzipiert. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezielle Netzwerkkonfiguration, da nur HTTP(S)-Traffic generiert wird.
-* **Dünner Client**: Bestimmte Anwendungsbereiche können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden, einschließlich Berichte-Modul, Versand-Genehmigungsphasen, Funktionen des Dezentrale Marketing-Moduls (zentral/lokal), Instanzüberwachung usw. Dieser Modus ermöglicht es, Adobe Campaign-Funktionen in ein Intranet oder ein Extranet einzubinden.
-* **Integration über die APIs**: In bestimmten Fällen kann das System über die Web-Services-APIs, die über das SOAP-Protokoll bereitgestellt werden, von einer externen Anwendung aus aufgerufen werden.
+* **Rich-Client**: Die Hauptbenutzeroberfläche des Programms ist ein Rich-Client, d. h. eine native Anwendung (Windows), die ausschließlich mit Standardinternetprotokollen (SOAP, HTTP usw.) mit dem Adobe Campaign-Anwendungsserver kommuniziert. Diese Konsole bietet eine hervorragende Benutzerfreundlichkeit für die Produktivität, verwendet sehr wenig Bandbreite (durch die Verwendung eines lokalen Caches) und ist für eine einfache Implementierung konzipiert. Diese Konsole kann über einen Internetbrowser bereitgestellt werden, kann automatisch aktualisiert werden und erfordert keine spezifische Netzwerkkonfiguration, da sie nur HTTP(S)-Traffic generiert.
+* **Thin Client**: Bestimmte Teile der Anwendung können über einen einfachen Webbrowser über eine HTML-Benutzeroberfläche aufgerufen werden, einschließlich des Berichtmoduls, der Etappen der Versandvalidierung, der Funktionen des Moduls Dezentrales/lokales Marketing, der Instanzüberwachung usw. Auf diese Weise können Adobe Campaign-Funktionen in ein Intranet oder ein Extranet integriert werden.
+* **Integration über APIs**: In bestimmten Fällen kann das System mithilfe der Web-Services-APIs, die über das SOAP-Protokoll verfügbar gemacht werden, aus einer externen Anwendung aufgerufen werden.
 
-## Logische Anwendungsebene {#logical-application-layer}
+## Logische Anwendungsschicht {#logical-application-layer}
 
-Adobe Campaign ist eine Plattform mit verschiedenen Anwendungen, die zu einer offenen und skalierbaren Architektur kombiniert werden. Die Adobe Campaign-Plattform ist auf einer flexiblen Anwendungsschicht geschrieben und lässt sich einfach an die geschäftlichen Anforderungen einer Firma anpassen. Dies entspricht den wachsenden Bedürfnissen des Unternehmens sowohl aus funktionaler als auch aus technischer Sicht. Die verteilte Architektur gewährleistet eine lineare Skalierbarkeit des Systems von Tausenden von Nachrichten auf Millionen von Nachrichten.
+Adobe Campaign führt verschiedene Programme in einer zentralen Plattform zusammen und schafft so eine offenen und zugleich skalierbare Architektur. Die Adobe Campaign-Plattform ist auf einer flexiblen Anwendungsebene konzipiert und lässt sich einfach an die geschäftlichen Anforderungen eines Unternehmens anpassen. Dies entspricht sowohl aus funktionaler als auch aus technischer Perspektive den wachsenden Anforderungen des Unternehmens. Dank der verteilten Architektur ist das System linear von mehreren Tausend auf mehrere Millionen Nachrichten skalierbar.
 
-Adobe Campaign setzt auf eine Reihe serverseitiger Prozesse, die zusammenarbeiten.
+Adobe Campaign stützt sich auf eine Reihe von serverseitigen Prozessen, die zusammenarbeiten.
 
-Die wichtigsten Prozesse sind:
+Dies sind die wichtigsten Prozesse:
 
-**Anwendungsserver**  (nlserver-Web)
+**Anwendungs-Server** (nlserver web)
 
-Dieser Vorgang stellt die gesamte Bandbreite der Adobe Campaign-Funktionalität über Web-Services-APIs (SOAP - HTTP + XML) zur Verfügung. Darüber hinaus kann es dynamisch die Webseiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Webformulare usw.). Dazu gehört ein Apache Tomcat JSP-Server. Dies ist der Prozess, mit dem die Konsole verbunden wird.
+Dieser Prozess stellt das gesamte Spektrum an Adobe Campaign-Funktionen mittels Web-Services-APIs (SOAP - HTTP + XML) zur Verfügung. Darüber hinaus kann er dynamisch die Web-Seiten generieren, die für den HTML-basierten Zugriff verwendet werden (Berichte, Web-Formulare usw.). Um dies zu ermöglichen, umfasst der Prozess einen Apache Tomcat JSP-Server. Dies ist der Prozess, mit dem die Konsole eine Verbindung herstellt.
 
 **Workflow-Engine** (nlserver wfserver)
 
-Es führt die in der Anwendung definierten Workflow-Prozesse aus.
+Diese führt die im Programm definierten Workflow-Prozesse aus.
 
-Außerdem werden periodisch ausgeführte Technischen Workflows verarbeitet, darunter:
+Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
-* Verfolgung: Wiederherstellen und Konsolidieren von Trackinglogs. Dadurch können Sie die Protokolle vom Umleitungsserver abrufen und die vom Berichte-Modul verwendeten Aggregat-Indikatoren erstellen.
-* Bereinigung: Datenbankreinigung. Dient zum Bereinigen alter Datensätze und zur Vermeidung eines exponentiellen Wachstums der Datenbank.
-* Rechnungsstellung: Automatisches Senden eines Plattformberichts (Datenbankgröße, Anzahl der Marketingaktionen usw.) für die Aktivität.
+* Tracking: Wiederherstellen und Konsolidieren von Trackinglogs. Dadurch können Protokolle vom Weiterleitungs-Server abgerufen und die vom Reporting-Modul verwendeten aggregierten Indikatoren erstellt werden.
+* Bereinigung: zur Bereinigung von Datenbanken. Dabei wird die Datenbank von alten Datensätzen bereinigt, um zu vermeiden, dass sie übermäßig wächst.
+* Automatisches Senden eines Berichts zu Aktivitäten auf der Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen usw.) für die Aktivität.
 
-**Versand-Server** (nlserver-Metadaten)
+**Versand-Server** (nlserver mta)
 
-Adobe Campaign verfügt über eine native Funktion zum Senden von E-Mails. Dieser Prozess fungiert als SMTP Mail Transfer Agent (MTA). Es führt eine persönliche Personalisierung von Nachrichten durch und verarbeitet deren physischen Versand. Es funktioniert mit Versand-Aufträgen und verarbeitet automatische weitere Zustellversuche. Wenn die Verfolgung aktiviert ist, werden die URLs automatisch ersetzt, sodass sie auf den Umleitungsserver zeigen.
+Adobe Campaign umfasst eine native Funktion zum Senden von E-Mails. Dieser Prozess fungiert als SMTP Mail Transfer Agent (MTA). Er personalisiert Nachrichten individuell für den jeweiligen Empfänger und verarbeitet deren physischen Versand. Dies erfolgt mittels Versandvorgängen, wobei zudem auch nachgelagerte, weitere Zustellversuche automatisiert werden. Ist zusätzlich noch Tracking aktiviert, werden die URLs automatisch ersetzt, sodass sie auf den Weiterleitungs-Server verweisen.
 
-Dieser Prozess kann die Anpassung und automatische Versendung an einen Drittanbieter für SMS, Fax und Direktwerbung durchführen.
+Über diesen Prozess ist die Anpassung sowie der automatische Versand an einen Dritt-Router für SMS, Fax und Briefpost möglich.
 
-**Umleitungsserver** (nlserver webmdl)
+**Weiterleitungs-Server** (nlserver webmdl)
 
-Für E-Mails verarbeitet Adobe Campaign automatisch die Verfolgung von &quot;open&quot;und &quot;click&quot;(Transaktionserfassung auf Website-Ebene ist eine weitere Möglichkeit). Zu diesem Zweck werden die in den E-Mail-Nachrichten enthaltenen URLs umgeschrieben, um auf dieses Modul zu verweisen, das die Weitergabe des Internetbenutzers registriert, bevor sie an die erforderliche URL weitergeleitet werden.
+Bei E-Mails übernimmt Adobe Campaign automatisch das Öffnungs- und Klick-Tracking (wobei das Tracking von Transaktionen auf Website-Ebene ebenfalls möglich ist). Hierfür werden die in den E-Mail-Nachrichten enthaltenen URLs so umgeschrieben, dass sie auf dieses Modul verweisen. Dieses wiederum registriert Internet-Benutzer, während diese an die Ziel-URL weitergeleitet werden.
 
-Um eine maximale Verfügbarkeit zu gewährleisten, ist dieser Prozess völlig unabhängig von der Datenbank: die anderen Serverprozesse kommunizieren mit ihnen nur über SOAP-Aufrufe (HTTP, HTTP(S) und XML). Technisch gesehen ist diese Funktion in einem Erweiterungsmodul eines HTTP-Servers implementiert (ISAPI-Erweiterung in IIS, oder ein DSO Apache-Modul usw.) und ist nur unter Windows verfügbar.
+Zur Sicherstellung maximaler Verfügbarkeit ist dieser Prozess vollkommen unabhängig von der Datenbank: Die anderen Server-Prozesse kommunizieren mit ihm nur über SOAP-Aufrufe (HTTP, HTTPS und XML). Aus technischer Sicht ist diese Funktion in einem Erweiterungsmodul (ISAPI-Erweiterung in IIS, DSO Apache-Modul usw.) eines HTTP-Servers implementiert und nur unter Windows verfügbar.
 
-Weitere technische Verfahren sind ebenfalls verfügbar:
+Daneben sind auch noch weitere technische Prozesse verfügbar:
 
-**Verwalten von Absprung-E-Mails** (nlserver inMail)
+**Handhabung von Bounce-E-Mails** (nlserver inMail)
 
-Auf diese Weise können Sie automatisch E-Mails von Postfächern abrufen, die für den Empfang von Nachrichten mit Absprungfunktion konfiguriert sind, die bei einem Versand-Fehler zurückgegeben werden. Diese Meldungen werden dann regelbasiert verarbeitet, um die Gründe für den Nichtbesuch (unbekannter Empfänger, Überschreitung der Quote usw.) zu ermitteln. und den Datenbankstatus des Versands zu aktualisieren.
+Dieser Prozess ermöglicht den automatischen Abruf von E-Mails aus Postfächern, die für den Empfang von Nachrichten konfiguriert sind, die bei fehlgeschlagenem Versand als unzustellbar zurückgesendet werden. Diese Nachrichten werden dann regelbasiert verarbeitet, um die Gründe für die Unzustellbarkeit (z. B. Empfänger unbekannt, Nachrichtenkontingente ausgeschöpft) zu ermitteln und den Versandstatus in der Datenbank zu aktualisieren.
 
-Alle diese Vorgänge sind vollautomatisch und vorkonfiguriert.
+Alle diese Operationen laufen vollkommen automatisch und sind vorkonfiguriert.
 
-**Status**  des SMS-Versands (nlserver sms)
+**Status des SMS-Versands** (nlserver sms)
 
-Dieser Prozess fragt den SMS-Router ab, um den Statusstatus zu erfassen und die Datenbank zu aktualisieren.
+Dieser Prozess fragt beim SMS-Router den Status des Versandfortschritts ab und aktualisiert diesen in der Datenbank.
 
-**Schreiben von Protokollmeldungen**  (nlserver-syslogd)
+**Schreiben von Log-Nachrichten** (nlserver-syslogd)
 
-Dieser technische Prozess erfasst Protokollmeldungen und -spuren, die von den anderen Prozessen erzeugt wurden, und schreibt sie auf die Festplatte. Dadurch stehen im Falle von Problemen reichlich Informationen zur Diagnose zur Verfügung.
+Dieser technische Prozess erfasst von anderen Prozessen generierte Log-Nachrichten und -Traces und speichert sie auf der Festplatte. Dadurch stehen im Falle von Problemen umfangreiche Informationen zur Diagnose zur Verfügung.
 
-**Schreiben von Trackinglogs**  (nlserver trackinglogd)
+**Schreiben von Trackinglogs** (nlserver trackinglogd)
 
-Dieser Vorgang speichert die Trackinglogs, die durch die Weiterleitung generiert wurden.
+Dieser Prozess speichert die Trackinglogs, die durch vom Weiterleitungsprozess generiert werden.
 
-**Schreiben von Inbound-Ereignissen**  (nlserver-Interaktion)
+**Schreiben eingehender Ereignisse** (nlserver interactiond)
 
-Dieser Vorgang gewährleistet die Aufzeichnung von eingehenden Ereignissen auf der Festplatte im Rahmen der Interaktion.
+Dieser Vorgang gewährleistet die Aufzeichnung von im Rahmen der Interaktion eingehenden Ereignisse auf der Festplatte
 
-**Überwachungsmodule**  (nlserver watchdog)
+**Überwachungsmodule** (nlserver watchdog)
 
-Dieser technische Prozess dient als ein primäres Verfahren, das die anderen hervorbringt. Außerdem überwacht es sie und startet sie bei Vorfällen automatisch neu, sodass maximale Systemlaufzeit erhalten bleibt.
+Hierbei handelt es sich um einen technischen Primärprozess, der zur Erzeugung der anderen Prozesse dient. Zugleich überwacht er diese aber auch startet sie beim Auftreten von Vorfällen automatisch neu, sodass maximale Systemverfügbarkeit gewährleistet bleibt.
 
-**Statistischer Server**  (nlserver stat)
+**Statistik-Server** (nlserver stat)
 
-Dieser Prozess unterhält Statistiken über die Anzahl der Verbindungen, die Nachrichten, die für jeden Mail-Server gesendet werden, an den Nachrichten gesendet werden, sowie deren Einschränkungen (die höchste Anzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde/ und Verbindung). Sie können auch mehrere Instanzen oder Computer zusammenführen, wenn diese dieselben öffentlichen IP-Adressen haben.
+Dieser Prozess erstellt Statistiken zur Anzahl von Verbindungen, zu an die einzelnen Mailserver gesendeten Nachrichten und zu deren Einschränkungen (z. B. Maximalzahl gleichzeitiger Verbindungen, Nachrichten pro Stunde und/oder Verbindung usw.). Ebenfalls lassen sich über diesen Prozess Instanzen oder Computer zusammenführen, sofern diese dieselben öffentlichen IP-Adressen verwenden.
 
 >[!NOTE]
 >
->Die vollständige Liste der Adobe Campaign-Module ist in [diesem Dokument](../../production/using/operating-principle.md) verfügbar.
+>Die vollständige Liste der Adobe Campaign-Module finden Sie in [diesem Dokument](../../production/using/operating-principle.md).
 
 ## Persistenzschicht {#persistence-layer}
 
-Die Datenbank wird als Persistenzebene verwendet und enthält fast alle von Adobe Campaign verwalteten Informationen. Dazu gehören funktionale Daten (Profile, Abonnements, Inhalte usw.), technische Daten (Versand, Aufträge und Protokolle, Trackinglogs usw.) und Arbeitsdaten (Einkäufe, Interessenten).
+Die Datenbank wird als Persistenzschicht verwendet und enthält fast alle von Adobe Campaign verwalteten Informationen. Dazu gehören funktionale Daten (Profile, Abonnements, Inhalte usw.), technische Daten (Versandaufträge und Protokolle, Trackinglogs usw.) und Arbeitsdaten (Einkäufe, Leads).
 
-Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten Zugriff auf die Datenbank benötigen, um ihre Aufgaben ausführen zu können (mit Ausnahme des Umleitungsmoduls).
+Die Zuverlässigkeit der Datenbank ist von größter Bedeutung, da die meisten Adobe Campaign-Komponenten für die Ausführung ihrer Aufgaben Zugriff auf die Datenbank benötigen (mit Ausnahme des Umleitungsmoduls).
 
-Die Plattform ist vordefiniert mit einem Marketing-zentrierten Datenstrom oder kann einfach auf einem vorhandenen Datenstrom und Schema mit einem der wichtigsten Relational Database Management Systems (RDBMS) sitzen. Alle Daten im Datenverkehr werden von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign zur Datenbank aufgerufen. Adobe Campaign bietet außerdem eine vollständige Ergänzung der Tools für das Extrahieren von Transformationen und Laden (ETL), um Daten in das und aus dem System zu importieren und zu exportieren.
+Die Plattform wird mit einem vordefinierten Marketing-zentrierten Datenstrom geliefert oder kann mithilfe eines der wichtigsten RDBMS (Relational Database Management Systems) einfach auf einem vorhandenen Datenstrom und Schema sitzen. Alle Daten im Datamart werden von der Adobe Campaign-Plattform über SQL-Aufrufe von Adobe Campaign zur Datenbank aufgerufen. Adobe Campaign bietet außerdem eine vollständige Ergänzung der ETL-Tools (Extract, Transform, Load – Extrahieren, Umwandeln, Laden), mittels derer Daten in das und aus dem System importiert und exportiert werden können.
