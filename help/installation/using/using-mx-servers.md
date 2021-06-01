@@ -1,22 +1,20 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Verwenden von MX-Servern mit Kampagne
+title: MX-Server mit Campaign verwenden
 description: Erfahren Sie, wie MX-Server mit Adobe Campaign Classic funktionieren.
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
 hidefromtoc: true
 exl-id: 47f50bf5-4d5b-4c07-af71-de4390177cf5
-translation-type: tm+mt
-source-git-commit: 3b5a6e6f03d9cb26ed372c3df069cbada36756a2
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Verwenden von MX-Servern mit Kampagne {#using-mx-servers}
+# MX-Server mit Campaign verwenden {#using-mx-servers}
 
 Erfahren Sie, wie MX-Server mit Adobe Campaign Classic funktionieren.
 
@@ -24,69 +22,69 @@ Erfahren Sie, wie MX-Server mit Adobe Campaign Classic funktionieren.
 
 ### Was ist ein MX-Server?
 
-Ein Mailaustauscher-Datensatz (MX-Datensatz) ist eine Art Ressourcendatensatz im DNS (Domain Name System), der einen E-Mail-Server angibt, der für die Annahme von E-Mail-Nachrichten im Namen einer Domäne verantwortlich ist.
+Ein E-Mail-Austauschdatensatz (MX-Eintrag) ist ein Ressourcentyp im Domain Name System (DNS), der einen E-Mail-Server angibt, der für die Annahme von E-Mail-Nachrichten im Namen einer Domain zuständig ist.
 
 ### Wie funktioniert ein MX-Server?
 
-Wenn Sie eine E-Mail senden, stellt der Software-Server eine Verbindung zum Empfänger-Domänenserver her. Die Kommunikation zwischen den beiden Servern verwendet SMTP-Sprache und eine Domäne kann mehr als einen MX-Server haben. Die Verbindung zu dieser Domäne erfolgt mit der höchsten Priorität (kleinste Zahl) und andere Beginn werden als &quot;Backup-Server&quot;bezeichnet. Das Verbindungsprotokoll muss eingehalten werden.
+Wenn Sie eine E-Mail senden, stellt der Software-Server eine Verbindung zum Empfänger-Domain-Server her. Die Kommunikation zwischen den beiden Servern nutzt die SMTP-Sprache und eine Domain kann über mehr als einen MX-Server verfügen. Die Verbindung zu dieser Domäne beginnt mit der höchsten Priorität (kleinste Zahl) und andere Server werden als &quot;Backup&quot;-Server bezeichnet. Das Verbindungsprotokoll muss eingehalten werden.
 
 ### Wie funktioniert ein MX-Server mit Adobe Campaign?
 
-Im Verbindungsprotokoll müssen Regeln eingehalten werden, um Spamming und Monopolisierung von Servern zu verhindern. Die wichtigsten sind:
+Im Verbindungsprotokoll müssen Regeln eingehalten werden, um das Spamming und Monopolisieren von Servern zu verhindern. Die wichtigsten sind:
 
-* **Maximale Anzahl zulässiger** Verbindungen: Wenn diese Nummer eingehalten wird, befinden sich IPs nicht auf der Blockierungsliste und E-Mails werden aufgrund zusätzlicher Verbindungen nicht verweigert.
-* **Maximale Anzahl der Nachrichten**: Während der Verbindung muss die Anzahl der gesendeten Nachrichten definiert werden. Wenn diese Zahl nicht definiert ist, sendet der Server so viele wie möglich. Dadurch wird der ISP als Spammer identifiziert und der Blockierungsliste hinzugefügt.
-* **Nachrichten pro Stunde**: Um Ihrem e-Ruf gerecht zu werden, steuert Adobe Campaign die Anzahl der E-Mails, die Ihre IPs pro Stunde senden können. Dieses System schützt Sie vor einer E-Mail-Verweigerung oder Blockierungsliste.
+* **Maximale Anzahl erlaubter** Verbindungen: Wenn diese Zahl eingehalten wird, befinden sich IPs nicht auf der Blockierungsliste und E-Mails werden aufgrund zusätzlicher Verbindungen nicht verweigert.
+* **Maximale Nachrichtenanzahl**: Während der Verbindung muss die Anzahl der zu sendenden Nachrichten definiert werden. Wenn diese Zahl nicht definiert ist, sendet der Server so viele wie möglich. Dies führt dazu, dass der ISP als Spammer identifiziert und der Blockierungsliste hinzugefügt wird.
+* **Nachrichten pro Stunde**: Um Ihre E-Reputation zu wahren, steuert Adobe Campaign die Anzahl der E-Mails, die Ihre IPs pro Stunde senden können. Dieses System schützt Sie vor E-Mail-Verweigerung oder Blockierungsliste.
 
-## Inbounce-E-Mails
+## E-Mails in Bounce Messages
 
 ### Was ist eine Inbounce-E-Mail?
 
-Dies ist der von Adobe Campaign verwendete Prozess zur Verarbeitung von Fehlern während der Serverkommunikation.
+Dies ist der Prozess, der von Adobe Campaign zur Verarbeitung von Fehlern während der Serverkommunikation verwendet wird.
 
 ### Wie funktioniert eine Inbounce-E-Mail?
 
-Die Fehleradresse verarbeitet Absprünge, die von ISPs zurückgesendet werden. Der Prozess analysiert verschiedene SMTP-Fehlercodes und wendet die richtige Aktion gemäß dem RegEx-Standard an.
+Die Fehleradresse verarbeitet Bounces, die von ISPs zurückgesendet werden. Der Prozess analysiert verschiedene SMTP-Fehlercodes und wendet die richtige Aktion gemäß dem RegEx-Standard an.
 
-Beispielsweise enthält eine E-Mail-Adresse ein Feedback &quot;550 Benutzer unbekannt&quot;, das von einem ISP gesendet wurde. Dieser Fehlercode wird von der Fehleradresse des Adobe Campaigns (returnPath-Adresse) verarbeitet. Dieser Fehler wird dann mit dem RegEx-Standard verglichen und die richtige Regel wird angewendet. Die E-Mail wird als *Hardbounce* (passend zum Typ) und dann *Unbekannter Benutzer* (entsprechend dem Grund) betrachtet und nach der ersten Schleife in die Quarantäne gesendet.
+Beispielsweise hat eine E-Mail-Adresse ein Feedback &quot;550 Benutzer unbekannt&quot;, das von einem ISP gesendet wurde. Dieser Fehlercode wird von der Adobe Campaign-Fehleradresse verarbeitet (Rückgabepfad-Adresse). Dieser Fehler wird dann mit dem RegEx-Standard verglichen und die richtige Regel wird angewendet. Die E-Mail gilt als *Hardbounce* (entspricht dem Typ) und dann *Unbekannter Nutzer* (entspricht dem Grund) und wird nach der ersten Schleife in das System unter Quarantäne gestellt.
 
-### Wie verwaltet Adobe Campaign es?
+### Wie wird sie von Adobe Campaign verwaltet?
 
-Adobe Campaign verwaltet diesen Vorgang mit einer Übereinstimmung zwischen einem Fehlertyp und einem Grund:
+Adobe Campaign verwaltet diesen Prozess mit einer Übereinstimmung zwischen einem Fehlertyp und einem Grund:
 
-* **[!UICONTROL Benutzer unbekannt]**: Adresse, die syntaktisch korrekt ist, aber nicht existiert. Dieser Fehler wird als ein harter Absprung kategorisiert und innerhalb des ersten Fehlers in die Quarantäne verschoben.
-* **[!UICONTROL Postfach vollständig]**: Mailbox, die die maximale Kapazität erreicht hat. Dieser Fehler kann auch darauf hindeuten, dass der Benutzer diese Mailbox nicht mehr verwendet. Dieser Fehler wird als Soft Bounce kategorisiert und innerhalb des dritten Fehlers in die Quarantäne verschoben und nach 30 Tagen aus der Quarantäne entfernt.
-* **[!UICONTROL Inaktiver Benutzer]**: Der Posteingang wurde vom ISP in den letzten 6 Monaten aufgrund eines inaktiven Benutzers deaktiviert. Dieser Fehler wird als Soft Bounce kategorisiert und innerhalb des dritten Fehlers in die Quarantäne verschoben.
-* **[!UICONTROL Ungültige Domain]**: Die Domäne in der E-Mail-Adresse ist nicht vorhanden. Dieser Fehler wird als Soft Bounce kategorisiert und innerhalb des dritten Fehlers in die Quarantäne verschoben.
-* **[!UICONTROL Verweigert]**: Der ISP weigerte sich, die E-Mail an seine Benutzer zu senden. Dieser Fehler wird als Soft Bounce kategorisiert und nicht in die Quarantäne gedrängt, da der Fehler nicht mit der E-Mail-Adresse, sondern mit IP oder einem Domain-Ruf verknüpft ist.
+* **[!UICONTROL Benutzer unbekannt]**: Adresse, die syntaktisch korrekt ist, aber nicht vorhanden ist. Dieser Fehler wird als Hardbounce kategorisiert und innerhalb des ersten Fehlers unter Quarantäne gestellt.
+* **[!UICONTROL Postfach voll]**: Postfach, das die maximale Kapazität erreicht hat. Dieser Fehler kann auch darauf hinweisen, dass der Benutzer dieses Postfach nicht mehr verwendet. Dieser Fehler wird als Softbounce kategorisiert und innerhalb des dritten Fehlers unter Quarantäne gestellt und nach 30 Tagen aus der Quarantäne entfernt.
+* **[!UICONTROL Inaktiver Benutzer]**: Das Postfach wurde vom ISP aufgrund eines inaktiven Benutzers in den letzten 6 Monaten deaktiviert. Dieser Fehler wird als Softbounce kategorisiert und innerhalb des dritten Fehlers unter Quarantäne gestellt.
+* **[!UICONTROL Ungültige Domain]**: Die Domain in der E-Mail-Adresse existiert nicht. Dieser Fehler wird als Softbounce kategorisiert und innerhalb des dritten Fehlers unter Quarantäne gestellt.
+* **[!UICONTROL Abgelehnt]**: Der ISP weigerte sich, die E-Mail an seine Benutzer zu senden. Dieser Fehler wird als Softbounce kategorisiert und nicht unter Quarantäne gestellt, da der Fehler nicht mit der E-Mail-Adresse, sondern mit der IP-Adresse oder der Reputation einer Domain verknüpft ist.
 
 >[!NOTE]
 >
->Weitere Informationen zu Fehlertypen und -gründen finden Sie in diesem [Versand](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
+>Weiterführende Informationen zu Typen und Ursachen für fehlgeschlagene Sendungen finden Sie in diesem [Abschnitt](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons).
 
-## Instanz der Auslieferbarkeit
+## Zustellbarkeitsinstanz
 
-Eine tägliche Aktualisierung der MX-Regeln und -Inbounces-Regeln wird von einem bestimmten Workflow in der Client-Instanz verwaltet, der mit dem Eigentümer der Instanz im Bereich &quot;Auslieferung&quot;dieser Regeln verbunden ist.
+Eine tägliche Aktualisierung der MX-Regeln und -Inbounces-Regeln wird von einem bestimmten Workflow in der Client-Instanz verwaltet, der mit dem Eigentümer der Zustellbarkeitsinstanz dieser Regeln verbunden ist.
 
-Dieses tägliche Update wird für alle Clients ausgeführt, die ihre Instanz durch einen Transparenzvorgang auf dem neuesten Stand halten möchten.
+Diese tägliche Aktualisierung wird für alle Kunden durchgeführt, die ihre Instanz mithilfe eines Transparenzprozesses auf dem neuesten Stand halten möchten.
 
-Die MX-Regeln weisen sechs verschiedene Durchsatzstufen auf, die hauptsächlich während des Vorbeschleunigungsprozesses verwendet werden:
+Die MX-Regeln weisen 6 verschiedene Durchsatzstufen auf, die hauptsächlich während der Anlaufphase verwendet werden:
 
 ![](assets/mx-rules-throughput.png)
 
-Der benutzerdefinierte Modus ist für fortgeschrittene Clients gedacht, die ihre eigenen MX-Regeln festlegen möchten. Wenn der benutzerdefinierte Modus aktiviert ist, wird der Client nicht von der Instanz im Bereich &quot;Auslieferbarkeit&quot;aktualisiert, da die Synchronisierung deaktiviert wird.
+Der benutzerdefinierte Modus richtet sich an fortgeschrittene Clients, die eigene MX-Regeln festlegen möchten. Wenn der benutzerdefinierte Modus aktiviert ist, wird der Client von der Zustellbarkeitsinstanz nicht aktualisiert, da die Synchronisierung deaktiviert wird.
 
-## Absprungbeispiele
+## Bounce-Beispiele
 
-* **Benutzer unbekannt**  (harter Absprung): 550 5.1.1 ... Benutzer ist unbekannt {mx003}
-* **Postfach gefüllt**  (Soft-Absprung): 550 5.2.2 Benutzerquote überschritten
-* **Inaktives Postfach**  (Soft Bounce): 550 5.7.1 : Anschrift des Empfängers abgelehnt: Inaktive MailBox, nicht länger als 6 Monate gefüllt
-* **Domäne ungültig**  (Soft-Absprung): DNS-Abfrage für &#39;ourdan.com&#39; fehlgeschlagen
-* **Refused** (soft bounce): Inbound-E-Mail-Absprung (Regel &#39;Feedback_loop_Hotmail&#39; entspricht diesem Absprung)
-* **Unerreichbar**  (weicher Absprung): 421 4.16.55  [TS01] Meldungen von x.x.x.x wurden aufgrund übermäßiger Benutzerbeschwerden vorübergehend zurückgestellt
+* **Unbekannter Nutzer**  (Hardbounce): 550 5.1.1 ... Benutzer ist unbekannt {mx003}
+* **Postfach voll**  (Softbounce): 550 5.2.2 Benutzerquote überschritten
+* **Inaktives Postfach**  (Softbounce): 550 5.7.1 : Empfängeradresse abgelehnt: Inaktive MailBox, nicht länger als 6 Monate geöffnet
+* **Domäne ungültig**  (Softbounce): DNS-Abfrage für &#39;ourdan.com&#39; fehlgeschlagen
+* **Abgelehnt**  (Softbounce): Eingehender E-Mail-Bounce (Regel &#39;Feedback_loop_Hotmail&#39; entspricht diesem Bounce)
+* **Unerreichbar**  (Softbounce): 421 4.16.55  [TS01] Nachrichten von x.x.x.x wurden aufgrund übermäßiger Benutzerbeschwerden vorübergehend zurückgestellt
 
 **Verwandte Themen:**
 * [MX-Konfiguration](../../installation/using/email-deliverability.md#mx-configuration)
 * [Technische E-Mail-Konfiguration](../../installation/using/email-deliverability.md)
-* [Verstehen Sie Versand-Fehler.](../../delivery/using/understanding-delivery-failures.md)
-* [Campaign Classic - Technisches Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/acc-technical-recommendations.html)
+* [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/understanding-delivery-failures.md)
+* [Campaign Classic - Technische Recommendations](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/product-specific-resources/campaign/acc-technical-recommendations.html)
