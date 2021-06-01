@@ -1,50 +1,48 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: Erstellen von Webtrackingtags
-description: Erstellen von Webtrackingtags
+title: Erstellen von Webtracking-Tags
+description: Erstellen von Webtracking-Tags
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
 
 ---
 
+# Erstellen von Webtracking-Tags{#creating-web-tracking-tags}
 
-# Erstellen von Webtrackingtags{#creating-web-tracking-tags}
+Jede Seite der Site, die Sie verfolgen möchten, muss in Ihrer Adobe Campaign-Plattform referenziert werden. Diese Referenzierung kann auf zwei Arten durchgeführt werden:
 
-Jede Seite der Site, die Sie verfolgen möchten, muss in Ihrer Adobe Campaign-Plattform referenziert werden. Diese Referenz kann auf zwei Arten durchgeführt werden:
-
-1. manuelle Definition der zu verfolgenden URLs,
-1. Erstellen von URLs, die im Handumdrehen verfolgt werden sollen.
+1. Manuelle Definition der zu verfolgenden URLs,
+1. Erstellung von URLs, die direkt verfolgt werden sollen.
 
 ## Definieren der URLs, die in der Anwendung verfolgt werden sollen {#defining-the-urls-to-be-tracked-in-the-application}
 
-Auf diese Weise können Sie die zu verfolgenden Seiten manuell definieren und dann ein Beispiel für den zugehörigen Web-Trackingtag generieren. Dieser Vorgang wird im Knoten **[!UICONTROL Kampagne-Ausführung>Resources>Webtrackingtags]** der Client-Konsole definiert.
+Mit dieser Methode können Sie die zu verfolgenden Seiten manuell definieren und dann ein Beispiel für das zugehörige Webtrackingtag generieren. Dieser Vorgang wird im Knoten **[!UICONTROL Kampagnenausführung>Ressourcen>Web-Tracking-Tags]** der Clientkonsole definiert.
 
 ![](assets/d_ncs_integration_webtracking_screen.png)
 
 So generieren Sie den HTML-Code, der in die Seite eingefügt werden soll:
 
-* Geben Sie die Beschriftung des Tags ein: es wird in den Trackinglogs angezeigt,
-* Quell-URL angeben: dieses Feld dient Informationszwecken und ermöglicht die Angabe der verfolgten Seite (optional),
-* Geben Sie bei Bedarf eine Gültigkeitsdauer ein,
+* Geben Sie den Titel des Tags ein: wird es in den Trackinglogs angezeigt,
+* Geben Sie die Quell-URL an: Dieses Feld dient zu Informationszwecken und ermöglicht die Angabe der verfolgten Seite (optional).
+* Geben Sie bei Bedarf einen Gültigkeitszeitraum an.
 * Klicken Sie auf **[!UICONTROL HTML-Code generieren]**.
 
 Kopieren Sie dann den generierten Code und fügen Sie ihn in die zu verfolgende Seite ein.
 
-## On-the-fly-Erstellung von URLs, die verfolgt werden sollen{#on-the-fly-creation-of-urls-to-be-tracked}
+## Erstellung von zu verfolgenden URLs im Handumdrehen {#on-the-fly-creation-of-urls-to-be-tracked}
 
-Sie können die Web-Tracking-URLs spontan erstellen, indem Sie dem Wert des Parameters **tagid** Informationen hinzufügen:
+Sie können die Web-Tracking-URLs direkt erstellen, indem Sie dem Wert des Parameters **tagid** Informationen hinzufügen:
 
-* Typ der verfolgten Seite: &#39;w&#39; für WEB oder &#39;t&#39; für TRANSACTION,
+* Typ der verfolgten Seite: &quot;w&quot;für WEB oder &quot;t&quot;für TRANSAKTION,
 * Der interne Name des Ordners, in dem die URL erstellt werden muss.
 
-Diese beiden Informationen müssen mit dem Bezeichner der verfolgten Seite verknüpft werden, indem das Zeichen &quot;|&quot; hinzugefügt wird:
+Diese beiden Informationen müssen mit der Kennung der verfolgten Seite durch Hinzufügen des Zeichens &#39;|&#39; verkettet werden:
 
 ```
 tagid=<identifier>|<type>|<foldername>
@@ -54,6 +52,6 @@ tagid=<identifier>|<type>|<foldername>
 >
 >Denken Sie daran, den Wert des Parameters **tagid** zu kodieren, wenn er als URL-Parameter verwendet wird.
 
-**Beispiel**: Erstellung einer Transaktionstyp-Web-Tracking-URL.
+**Beispiel**: Erstellung einer Webtracking-URL vom Typ Transaktion.
 
 **http://myserver.adobe.com/r/a?tagid=home%7Ct%7CMyFolder**
