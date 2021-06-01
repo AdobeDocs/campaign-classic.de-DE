@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Konfigurationsprinzip
 description: Konfigurationsprinzip
@@ -7,8 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 03d7e579-8678-44b8-bbe7-cf4204bffb25
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 4%
@@ -17,29 +15,29 @@ ht-degree: 4%
 
 # Konfigurationsprinzip{#configuration-principle}
 
-Die Adobe Campaign-Plattform basiert auf dem Konzept der Instanzen, ähnlich wie die von Apache verwendeten virtuellen Hosts. In diesem Modus können Sie einen Server freigeben, indem Sie ihm mehrere Instanzen zuweisen. Instanzen sind komplett voneinander getrennt und arbeiten mit ihrer eigenen Datenbank- und Konfigurationsdatei.
+Die Adobe Campaign-Plattform basiert auf dem Konzept von Instanzen, ähnlich wie bei virtuellen Hosts, die von Apache verwendet werden. Diese Funktionsweise ermöglicht die gemeinsame Nutzung eines Servers durch Zuweisung mehrerer Instanzen. Instanzen sind völlig voneinander getrennt und arbeiten mit ihrer eigenen Datenbank und Konfigurationsdatei.
 
-Für einen bestimmten Server gibt es zwei Elemente, die allen Adobe Campaign-Instanzen gemein sind:
+Für einen bestimmten Server gibt es zwei gemeinsame Elemente für alle Adobe Campaign-Instanzen:
 
-* Das **interne**-Kennwort: dies ist das allgemeine Administratorkennwort. Sie ist für alle Instanzen eines bestimmten Anwendungsservers gültig.
+* Das Kennwort **internal**: Dies ist das allgemeine Administratorkennwort. Dies ist für alle Instanzen eines bestimmten Anwendungsservers üblich.
 
    >[!IMPORTANT]
    >
-   >Um sich mit dem Bezeichner **Internal** anzumelden, müssen Sie vorher ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+   >Um sich mit der Kennung **Internal** anzumelden, müssen Sie zuvor ein Kennwort definiert haben. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
-* Mehrere technische Serverkonfigurationen: Diese Konfigurationen können alle in der spezifischen Konfiguration einer Instanz überladen werden.
+* Mehrere technische Serverkonfigurationen: Diese Konfigurationen können alle in der spezifischen Konfiguration einer Instanz überschrieben werden.
 
 Die Konfigurationsdateien werden im Ordner **conf** des Installationsordners gespeichert. Die Konfiguration ist in drei Dateien unterteilt:
 
 * **serverConf.xml**: Gesamtkonfiguration für alle Instanzen.
-* **config-**`<instance>`**.xml** (wobei  **`<instance>`** der Instanzname lautet): spezifische Konfiguration einer Instanz.
-* **serverConf.xml.diff**: Delta zwischen der ursprünglichen Konfiguration und der aktuellen Konfiguration. Diese Datei wird automatisch von der Anwendung generiert und darf nicht manuell geändert werden. Es wird verwendet, um Benutzeränderungen beim Aktualisieren einer Buildversion automatisch zu propagieren.
+* **config-**`<instance>`**.xml**  (wobei  **`<instance>`** der Instanzname ist): spezifische Konfiguration einer Instanz.
+* **serverConf.xml.diff**: Differenz zwischen der Erstkonfiguration und der aktuellen Konfiguration. Diese Datei wird automatisch von der Anwendung generiert und darf nicht manuell geändert werden. Sie wird verwendet, um beim Aktualisieren einer Build-Version automatisch Benutzeränderungen zu propagieren.
 
 Eine Instanzkonfiguration wird wie folgt geladen:
 
 * Das Modul lädt die Datei **serverConf.xml**, um die von allen Instanzen freigegebenen Parameter abzurufen.
-* Anschließend wird die Datei **config-**`<instance>`**.xml** geladen. Die in dieser Datei gefundenen Werte haben Priorität vor den Werten in **serverConf.xml**.
+* Anschließend wird die Datei **config-**`<instance>`**.xml** geladen. Die Werte in dieser Datei haben Vorrang vor den Werten in **serverConf.xml**.
 
-   Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz in der Datei **config-`<instance>`.xml** überladen werden.
+   Diese beiden Dateien haben das gleiche Format. Jeder Wert in **serverConf.xml** kann für eine bestimmte Instanz in der Datei **config-`<instance>`.xml** überschrieben werden.
 
-Dieser Betriebsmodus bietet große Flexibilität bei Konfigurationen.
+Dieser Betriebsmodus bietet große Flexibilität bei der Konfiguration.
