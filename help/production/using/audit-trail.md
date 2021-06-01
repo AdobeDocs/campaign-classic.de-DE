@@ -1,110 +1,107 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Audit-Protokoll
 description: Audit-Protokoll
 audience: production
 content-type: reference
 topic-tags: production-procedures
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
-
 # Audit-Protokoll{#audit-trail}
 
-In Adobe Campaign gibt Ihnen der **[!UICONTROL Prüfpfad]** Zugriff auf den vollständigen Verlauf der in Ihrer Instanz vorgenommenen Änderungen.
+In Adobe Campaign erhalten Sie über das **[!UICONTROL Audit-Protokoll]** Zugriff auf den vollständigen Verlauf der in Ihrer Instanz vorgenommenen Änderungen.
 
-**[!UICONTROL Prüfen Sie]** TrailCaptures in Echtzeit auf eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten. Es bietet eine Self-Service-Möglichkeit zum Zugriff auf einen Verlauf von Daten, um Antworten zu erhalten, z. B.: was mit Ihrer Workflows passiert ist und wer sie zuletzt aktualisiert hat oder was Ihre Benutzer in der Instanz getan haben.
+**[!UICONTROL Das Audit-Protokoll erfasst in Echtzeit eine umfassende Liste von Aktionen und Ereignissen, die in Ihrer Adobe Campaign-Instanz auftreten.]** Es bietet eine Self-Service-Möglichkeit, auf einen Datenverlauf zuzugreifen, um Fragen zu beantworten, z. B.: was mit Ihren Workflows passiert ist und wer sie zuletzt aktualisiert hat oder was Ihre Benutzer in der Instanz getan haben.
 
 >[!NOTE]
 >
 >Adobe Campaign prüft keine Änderungen an Benutzerrechten, Vorlagen, Personalisierungen oder Kampagnen.\
->Prüfpfad kann nur von Administratoren der Instanz verwaltet werden.
+>Das Audit-Protokoll kann nur von Administratoren der Instanz verwaltet werden.
 
-Prüfpfad besteht aus drei Komponenten:
+Audit-Protokoll besteht aus drei Komponenten:
 
-* **Schema-Prüfpfad**: Überprüfen Sie die Aktivitäten und zuletzt vorgenommenen Änderungen an Ihren Schemas.
+* **Schema-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und letzten Änderungen an Ihren Schemas.
 
-   Weitere Informationen zu Schemas finden Sie auf dieser [Seite](../../configuration/using/data-schemas.md).
+   Weiterführende Informationen zu Schemata finden Sie auf dieser [Seite](../../configuration/using/data-schemas.md).
 
-* **Workflow-Prüfpfad**: Überprüfen Sie die Aktivitäten und zuletzt vorgenommenen Änderungen Workflows und zusätzlich den Status Ihrer Workflows, z. B.:
+* **Workflow-Audit-Protokoll**: Überprüfen Sie Aktivitäten und letzte Änderungen an Workflows sowie zusätzlich den Status Ihrer Workflows, z. B.:
 
    * Starten
    * Aussetzen
-   * Anhalten
+   * Stoppen
    * Neu starten
-   * Bereinigen was der Aktion Purge History entspricht
-   * Simulieren, was dem Beginn Aktion im Modus Simulation entspricht
-   * Wakeup, der der Aktion entspricht, Ausstehende Aufgaben jetzt ausführen
+   * Bereinigen entspricht dem Aktionsbereinigungsverlauf
+   * Simulieren, welche der Aktion Start im Simulationsmodus entspricht
+   * Wakeup, der der Aktion Ausstehende Aufgaben jetzt ausführen entspricht
    * Unbedingter Stopp
 
-   Weitere Informationen zu Workflows finden Sie auf dieser [Seite](../../workflow/using/about-workflows.md).
+   Weiterführende Informationen zu Workflows finden Sie auf dieser [Seite](../../workflow/using/about-workflows.md).
 
-   Weitere Informationen zum Überwachen von Workflows finden Sie im Abschnitt [dediziertes ](../../workflow/using/monitoring-workflow-execution.md).
+   Weiterführende Informationen zur Überwachung von Workflows finden Sie im Abschnitt [Dediziertes ](../../workflow/using/monitoring-workflow-execution.md).
 
-* **Optionsprüfungspfad**: Überprüfen Sie die Aktivitäten und zuletzt vorgenommenen Änderungen an Ihren Optionen.
+* **Option-Audit-Protokoll**: Überprüfen Sie die Aktivitäten und zuletzt vorgenommenen Änderungen an Ihren Optionen.
 
-   Weitere Informationen zu den Optionen finden Sie auf dieser [Seite](../../installation/using/configuring-campaign-options.md).
+   Weiterführende Informationen zu den Optionen finden Sie auf dieser [Seite](../../installation/using/configuring-campaign-options.md).
 
-## Zugriff auf Audit-Protokoll {#accessing-audit-trail}
+## Zugriff auf das Audit-Protokoll {#accessing-audit-trail}
 
-So greifen Sie auf den **[!UICONTROL Prüfpfad]** Ihrer Instanz zu:
+So greifen Sie auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
 1. Rufen Sie das Menü **[!UICONTROL Explorer]** Ihrer Instanz auf.
-1. Wählen Sie im Menü **[!UICONTROL Administration]** **[!UICONTROL Audit]** .
+1. Wählen Sie im Menü **[!UICONTROL Administration]** die Option **[!UICONTROL Audit]** .
 
    ![](assets/audit_trail_1.png)
 
-1. Das Fenster **[!UICONTROL Prüfpfad]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen von Workflows, Optionen und Schemas.
+1. Das Fenster **[!UICONTROL Audit trail]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen von Workflows, Optionen und Schemata.
 
    Wählen Sie eine der Entitäten aus, um mehr über die letzten Änderungen zu erfahren.
 
    ![](assets/audit_trail_2.png)
 
-1. Das Fenster **[!UICONTROL Prüfungsentität]** enthält detailliertere Informationen zu der ausgewählten Entität, z. B.:
+1. Das Fenster **[!UICONTROL Auditstelle]** enthält detailliertere Informationen zur ausgewählten Entität, z. B.:
 
-   * **[!UICONTROL Typ]** : Arbeitsablauf, Optionen oder Schema.
+   * **[!UICONTROL Typ]** : Workflow, Optionen oder Schemas.
    * **[!UICONTROL Entität]** : Interner Name Ihrer Aktivitäten.
    * **[!UICONTROL Geändert von]** : Benutzername der letzten Person, die diese Entität zuletzt geändert hat.
    * **[!UICONTROL Aktion]** : Letzte Aktion, die für diese Entität ausgeführt wurde, entweder &quot;Erstellt&quot;, &quot;Bearbeitet&quot;oder &quot;Gelöscht&quot;.
    * **[!UICONTROL Änderungsdatum]** : Datum der letzten Aktion, die für diese Entität durchgeführt wurde.
 
-   Der Codeblock enthält weitere Informationen darüber, was genau in Ihrer Entität geändert wurde.
+   Der Codeblock liefert weitere Informationen darüber, was genau in Ihrer Entität geändert wurde.
 
    ![](assets/audit_trail_3.png)
 
 >[!NOTE]
 >
->Standardmäßig ist die Aufbewahrungszeit für **[!UICONTROL Prüfprotokolle]** auf 180 Tage eingestellt. Weitere Informationen zum Ändern der Retentionszeit finden Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md#deployment-wizard).
+>Standardmäßig ist die Aufbewahrungsfrist für **[!UICONTROL Auditprotokolle]** auf 180 Tage eingestellt. Weiterführende Informationen zur Änderung des Aufbewahrungszeitraums finden Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md#deployment-wizard).
 
-## Prüfpfad {#enable-disable-audit-trail} aktivieren/deaktivieren
+## Audit-Protokoll aktivieren/deaktivieren {#enable-disable-audit-trail}
 
-Prüfpfad kann für eine bestimmte Aktivität einfach aktiviert oder deaktiviert werden, wenn Sie z. B. Speicherplatz in der Datenbank speichern möchten.
+Das Audit-Protokoll kann für eine bestimmte Aktivität einfach aktiviert oder deaktiviert werden, wenn Sie beispielsweise Speicherplatz in der Datenbank sparen möchten.
 
 Gehen Sie dabei folgendermaßen vor:
 
 1. Rufen Sie das Menü **[!UICONTROL Explorer]** Ihrer Instanz auf.
-1. Wählen Sie im Menü **[!UICONTROL Administration]** **[!UICONTROL Platform]** und dann **[!UICONTROL Options]** aus.
+1. Wählen Sie im Menü **[!UICONTROL Administration]** **[!UICONTROL Plattform]** und dann **[!UICONTROL Optionen]** aus.
 
    ![](assets/audit_trail_4.png)
 
 1. Wählen Sie je nach Entität, die Sie aktivieren/deaktivieren möchten, eine der folgenden Optionen aus:
 
    * Für Workflow: **[!UICONTROL XtkAudit_Workflows]**
-   * Schemas: **[!UICONTROL XtkAudit_DataSchema]**
+   * Für Schemas: **[!UICONTROL XtkAudit_DataSchema]**
    * Für Optionen: **[!UICONTROL XtkAudit_Option]**
    * Für jede Entität: **[!UICONTROL XtkAudit_Enable_All]**
 
    ![](assets/audit_trail_5.png)
 
-1. Ändern Sie **[!UICONTROL Wert]** in 1, wenn Sie die Entität aktivieren möchten, oder in 0, wenn Sie sie deaktivieren möchten.
+1. Ändern Sie den Wert **[!UICONTROL Wert]** in 1, wenn Sie die Entität aktivieren möchten, oder in 0 , wenn Sie sie deaktivieren möchten.
 
    ![](assets/audit_trail_6.png)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus .
-
+1. Klicken Sie auf **[!UICONTROL Speichern]** .
