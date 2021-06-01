@@ -7,9 +7,8 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-translation-type: ht
-source-git-commit: 1c59afc7021af604559184cd0c21129af3759a8c
-workflow-type: ht
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
+workflow-type: tm+mt
 source-wordcount: '2975'
 ht-degree: 100%
 
@@ -57,7 +56,7 @@ _15. April 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
 _22. Dezember 2020_
 
@@ -125,7 +124,7 @@ _22. Juli 2020_
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
@@ -206,7 +205,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Verbesserungen**
 
-* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Veröffentlichung einer Transaktionsnachrichten-Vorlage jetzt aufheben, womit sie aus den Ausführungsinstanzen gelöscht wird. [Weitere Infos](../../message-center/using/template-unpublication.md).
+* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Veröffentlichung einer Transaktionsnachrichten-Vorlage jetzt aufheben, womit sie aus den Ausführungsinstanzen gelöscht wird. [Weitere Infos](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 * Es gibt neue Optionen zum Festlegen von Einschränkungen beim Senden von E-Mails, die Bilder oder Anhänge enthalten. Damit lassen sich Leistungsprobleme verhindern, was besonders bei Transaktionsnachrichten nützlich ist. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
