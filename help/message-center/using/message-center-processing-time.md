@@ -1,27 +1,30 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Verarbeitungsdauer
-description: Verarbeitungsdauer
+title: Message Center-Verarbeitungsdauer
+description: Erfahren Sie mehr über den Verarbeitungszeitbericht für Message Center.
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: c797fd94-0c8d-480b-b22a-1489ac331e77
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '248'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 67%
 
 ---
 
-# Verarbeitungsdauer{#message-center-processing-time}
+# Verarbeitungsdauer {#message-center-processing-time}
 
-Dieser Bericht zeigt die wichtigsten Indikatoren für die Echtzeit-Warteschlange an. Auf diesen Bericht, der sich an technische Administratoren richtet, kann auch über den Tab **[!UICONTROL Monitoring]** in der Kontrollinstanz zugegriffen werden.
+Dieser Bericht zeigt die wichtigsten Indikatoren für die Echtzeit-Warteschlange an.
+
+Der für technische Administratoren bestimmte Bericht ist auch über den Tab **[!UICONTROL Monitoring]** der Kontrollinstanz zugänglich.
 
 ![](assets/mc_reports_2.png)
 
-Wie auch im Bericht **[!UICONTROL Message Center Dienstqualität]** können entweder allgemeine oder auf eine bestimmte Ausführungsinstanz bezogene Statistiken angezeigt werden. Die im Bereich **[!UICONTROL Kennzahlen über die Periode]** angezeigten Kennzahlen werden entsprechend dem gewählten Zeitraum gefiltert:
+Genau wie im Bericht **[!UICONTROL Message Center Dienstebene]** können Sie die Gesamtstatistik oder die Statistiken, die sich auf eine bestimmte Ausführungsinstanz beziehen, anzeigen. Sie können die Daten auch nach Kanal und einem bestimmten Zeitraum filtern.
+
+Die im Abschnitt **[!UICONTROL Indikatoren über den Zeitraum]** angezeigten Indikatoren werden über den ausgewählten Zeitraum berechnet:
 
 * **[!UICONTROL Durchschnittliche Verweildauer in der Warteschlange (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Verarbeitungsdauer berücksichtigt.
 * **[!UICONTROL Durchschnittliche Sendungsdauer (s)]**: Durchschnittliche Dauer, die erfolgreich verarbeitete Ereignisse in Message Center verbringen. Es wird nur die Dauer des Versands durch die MTAs berücksichtigt.
@@ -32,4 +35,4 @@ Wie auch im Bericht **[!UICONTROL Message Center Dienstqualität]** können entw
 
 >[!NOTE]
 >
->Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Software-Verteilungs-Assistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/monitoring-thresholds.md).
+>Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Software-Verteilungs-Assistenten von Adobe Campaign konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/additional-configurations.md#monitoring-thresholds).
