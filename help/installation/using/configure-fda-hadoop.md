@@ -1,26 +1,24 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Zugriff auf Hadoop konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Hadoop in FDA konfigurieren
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 82%
 
 ---
 
-
 # Zugriff auf Hadoop konfigurieren {#configure-access-to-hadoop}
 
-Verwenden Sie die Option &quot;Kampagne **Federated Data Access** (FDA)&quot;, um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Hadoop zu konfigurieren.
+Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Hadoop zu konfigurieren.
 
 1. [Hadoop-Datenbank](#configuring-hadoop) konfigurieren
-1. Konfigurieren Sie das Hadoop [Externe Konto](#hadoop-external) in der Kampagne
+1. Hadoop [externes Konto](#hadoop-external) in Campaign konfigurieren
 
 ## Konfigurieren von Hadoop 3.0 {#configuring-hadoop}
 
@@ -37,7 +35,7 @@ Die Verbindung mit einer externen Hadoop-Datenbank über die FDA-Option erforder
    systemctl start nlserver.service
    ```
 
-1. In Campaign Classic können Sie dann Ihr externes [!DNL Hadoop]-Konto konfigurieren. Weitere Informationen zum Konfigurieren Ihres Externen Kontos finden Sie in [diesem Abschnitt](#hadoop-external).
+1. In Campaign Classic können Sie dann Ihr externes [!DNL Hadoop]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#hadoop-external).
 
 ## Externes Hadoop-Konto {#hadoop-external}
 
@@ -100,7 +98,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    User/Password: admin/<your password here>
    ```
 
-1. Erstellen Sie das Hadoop-Externe Konto, wie in [diesem Abschnitt](#hadoop-external) beschrieben.
+1. Erstellen Sie das externe Hadoop-Konto, wie in [diesem Abschnitt](#hadoop-external) beschrieben.
 
 ### Hadoop 2.1 für Linux {#for-linux}
 
@@ -110,7 +108,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    apt-get install unixodbc
    ```
 
-1. ODBC-Treiber für Apache Hive von HortonWorks herunterladen und installieren: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
+1. Laden Sie ODBC-Treiber für Apache Hive von HortonWorks herunter und installieren Sie sie: [https://www.cloudera.com/downloads.html](https://www.cloudera.com/downloads.html).
 
    ```
    dpkg -i hive-odbc-native_2.1.10.1014-2_amd64.deb
@@ -187,5 +185,4 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
    isql vorac -v
    ```
 
-1. Erstellen Sie das Hadoop-Externe Konto, wie in [diesem Abschnitt](#hadoop-external) beschrieben.
-
+1. Erstellen Sie das externe Hadoop-Konto, wie in [diesem Abschnitt](#hadoop-external) beschrieben.
