@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Über Adobe Campaign Classic
 description: Erfahren sie mehr über wichtige Funktionen, die Benutzeroberfläche und globale Richtlinien.
@@ -7,9 +6,8 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
 
@@ -17,7 +15,7 @@ ht-degree: 100%
 
 # Erste Schritte mit Campaign Classic{#about-adobe-campaign-classic}
 
-Um ein hohes Maß an Kundeninteraktion und herausragende Erlebnisse zu schaffen, müssen Marken auf allen Kontaktpunkten eine konsistente Customer Journey bereitstellen. Jetzt können Marketer effizient kanalübergreifende Marketing-Kampagnen konzipieren, planen, verwalten und optimieren, die einen hohen ROI bieten und die Kundentreue fördern.
+Mit dem Ziel einer verbesserten Kundenbindung und herausragender Kundenerfahrungen müssen Marken an allen Kontaktpunkten (Touchpoints) eine einheitliche Customer Journey anbieten. Vermarkter können jetzt kanalübergreifende Marketingkampagnen effizient entwerfen, planen, ausführen, verwalten und optimieren, die eine hohe Rendite für Marketinginvestitionen erzielen und die Kundentreue fördern.
 
 Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dialogmarketing-Kampagnen zu steuern. Adobe Campaign bietet innovative Tools, um Marketingprozesse und kundenbezogene Kommunikation zu entwickeln, zu optimieren und zu automatisieren.
 
@@ -63,7 +61,7 @@ Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und
 
 ### Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
-Sie können die Funktionen des Versands und der erweiterten Kampagnenverwaltung von Adobe Campaign mit einer Reihe von Lösungen kombinieren, um das Benutzererlebnis zu personalisieren, z. B. mit Adobe Experience Manager, Adobe Analytics, Adobe Target oder Adobe Experience Cloud-Triggers. Zudem können Sie auch eine Integration mit Adobe IMS vornehmen und sich mit Ihrer Adobe-ID bei Campaign anmelden. Weiterführende Informationen zu lösungsübergreifenden und Authentifizierungsintegrationen finden Sie in [diesem Abschnitt](../../integrations/using/about-adobe-id.md).
+Sie können die Funktionen des Versands und der erweiterten Kampagnenverwaltung von Adobe Campaign mit einer Reihe von Lösungen kombinieren, um das Benutzererlebnis zu personalisieren, z. B. mit Adobe Experience Manager, Adobe Analytics, Adobe Target oder Adobe Experience Cloud-Triggern. Zudem können Sie auch eine Integration mit Adobe IMS vornehmen und sich mit Ihrer Adobe ID bei Campaign anmelden. Weiterführende Informationen zu lösungsübergreifenden und Authentifizierungsintegrationen finden Sie in [diesem Abschnitt](../../integrations/using/about-adobe-id.md).
 
 ## Kernfunktionen und Add-ons {#core-capabilities-and-add-ons}
 
@@ -74,7 +72,7 @@ Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hän
 * [Kanäle](../../delivery/using/steps-about-delivery-creation-steps.md): Konzeption und Durchführung von Sendungen auf unterschiedlichen Kanälen (E-Mail, SMS, LINE, Mobile App, Briefpost)
 * [Campaign](../../campaign/using/designing-marketing-campaigns.md): Abstimmung von Cross-Channel-Marketingkampagnen
 * [MRM](../../campaign/using/about-marketing-resource-management.md): Verwaltung von Marketing-Ressourcen und Budgets
-* [Interaction](../../interaction/using/interaction-and-offer-management.md): Verwaltung von Angeboten mit Campaign
+* [Interaktion](../../interaction/using/interaction-and-offer-management.md): Verwaltung von Angeboten mit Campaign
 * [Message Center](../../message-center/using/about-transactional-messaging.md): Versand von Transaktionsnachrichten per E-Mail, SMS oder Mobile App
 * [Social Marketing](../../social/using/about-social-marketing.md): Kommunikation in sozialen Netzwerken: Facebook, Twitter
 * [Workflow](../../workflow/using/about-workflows.md)/Data Management: Automatisierung von Prozessen und Verwaltung von Daten mithilfe von Workflows
