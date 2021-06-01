@@ -1,14 +1,12 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Integration in einen Webserver für Linux
-description: Erfahren Sie, wie Sie Kampagne in einen Webserver integrieren können (Linux)
+description: Erfahren Sie, wie Sie Campaign in einen Webserver (Linux) integrieren.
 audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-translation-type: tm+mt
-source-git-commit: b0a1e0596e985998f1a1d02236f9359d0482624f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 4%
@@ -17,32 +15,32 @@ ht-degree: 4%
 
 # Integration in einen Webserver für Linux{#integration-into-a-web-server-for-linux}
 
-Adobe Campaign enthält Apache Tomcat, der als Einstiegspunkt im Anwendungsserver über HTTP (und SOAP) fungiert.
+Adobe Campaign enthält Apache Tomcat, der über HTTP (und SOAP) als Einstiegspunkt im Anwendungsserver fungiert.
 
 Sie können diesen integrierten Tomcat-Server verwenden, um HTTP-Anforderungen zu erfüllen.
 
 In diesem Fall:
 
-* Der standardmäßige Listening-Anschluss ist 8080. Um sie zu ändern, lesen Sie [diesen Abschnitt](configure-tomcat.md).
-* Der Client Konsolen verbindet sich dann mit einer URL wie:
+* Der standardmäßige Listening-Anschluss ist 8080. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](configure-tomcat.md).
+* Die Clientkonsole Konsolen stellt dann eine Verbindung über eine URL her, z. B.:
 
    ```
    http://<computer>:8080
    ```
 
-Aus Sicherheits- und Verwaltungsgründen sollten Sie jedoch einen dedizierten Webserver als Haupteinstiegspunkt für HTTP-Traffic verwenden, wenn der Computer, auf dem Adobe Campaign ausgeführt wird, im Internet verfügbar ist und Sie den Zugriff auf die Konsole außerhalb Ihres Netzwerks öffnen möchten.
+Aus Sicherheits- und Verwaltungsgründen empfehlen wir jedoch die Verwendung eines dedizierten Webservers als Haupteinstiegspunkt für HTTP-Traffic, wenn der Computer, auf dem Adobe Campaign ausgeführt wird, im Internet verfügbar ist und Sie den Zugriff auf die Konsole außerhalb Ihres Netzwerks öffnen möchten.
 
 Mit einem Webserver können Sie auch die Vertraulichkeit von Daten mit dem HTTP-Protokoll gewährleisten.
 
-Ebenso müssen Sie einen Webserver verwenden, wenn Sie die Verfolgungsfunktion verwenden möchten, die nur als Erweiterungsmodul für einen Webserver verfügbar ist.
+Ebenso müssen Sie einen Webserver verwenden, wenn Sie die Tracking-Funktion verwenden möchten, die nur als Erweiterungsmodul für einen Webserver verfügbar ist.
 
 >[!NOTE]
 >
->Wenn Sie die Verfolgungsfunktion nicht verwenden, können Sie eine Standardinstallation von Apache oder IIS mit einer Weiterleitung zur Kampagne durchführen. Das Tracking-Webserver-Erweiterungsmodul ist nicht erforderlich.
+>Wenn Sie die Tracking-Funktion nicht verwenden, können Sie eine Standardinstallation von Apache oder IIS mit einer Umleitung zu Campaign durchführen. Das Tracking-Webserver-Erweiterungsmodul ist nicht erforderlich.
 
 ## Konfigurieren des Apache-Webservers mit Debian {#configuring-the-apache-web-server-with-debian}
 
-Dieser Vorgang gilt, wenn Sie Apache unter einer auf APT basierenden Distribution installiert haben.
+Dieser Prozess wird angewendet, wenn Sie Apache unter einer auf APT basierenden Distribution installiert haben.
 
 Gehen Sie wie folgt vor:
 
@@ -78,7 +76,7 @@ Gehen Sie wie folgt vor:
     a2enmod nlsrv
    ```
 
-   Wenn Sie das Modul **mod_rewrite** für Adobe Campaign-Seiten verwenden, müssen Sie die Dateien **nlsrv.load** und **nlsrv.conf in** zz-nlsrv.load **und** zz-nlsrv umbenennen..conf **.** Führen Sie zum Aktivieren des Moduls den folgenden Befehl aus:
+   Wenn Sie das Modul **mod_rewrite** für Adobe Campaign-Seiten verwenden, müssen Sie die Dateien **nlsrv.load** und **nlsrv.conf** in **zz-nlsrv.load** und **zz-nlsrv.umbenennen. conf**. Um das Modul zu aktivieren, führen Sie den folgenden Befehl aus:
 
    ```
    a2enmod zz-nlsrv
@@ -94,22 +92,22 @@ Gehen Sie wie folgt vor:
 
    Speichern Sie die Änderungen.
 
-1. Fügen Sie dann Adobe Campaign-Benutzer zur Apache-Benutzergruppe hinzu und umgekehrt, indem Sie den folgenden Befehlstyp verwenden:
+1. Fügen Sie dann Adobe Campaign-Benutzer zur Apache-Benutzergruppe hinzu und umgekehrt mithilfe des folgenden Befehlstyps:
 
    ```
    usermod neolane -G www-data
    usermod www-data -G neolane
    ```
 
-1. Apache neu starten:
+1. Starten Sie Apache neu:
 
    ```
    invoke-rc.d apache2 restart
    ```
 
-## Apache-Webserver in RHEL konfigurieren {#configuring-apache-web-server-in-rhel}
+## Konfigurieren des Apache-Webservers in RHEL {#configuring-apache-web-server-in-rhel}
 
-Dieses Verfahren gilt, wenn Sie Apache unter einem RPM (RHEL, CentOS und Suse)-basierten Paket installiert und gesichert haben.
+Dieses Verfahren wird angewendet, wenn Sie Apache unter einem RPM-Paket (RHEL, CentOS und Suse) installiert und gesichert haben.
 
 Gehen Sie wie folgt vor:
 
@@ -136,7 +134,7 @@ Gehen Sie wie folgt vor:
    userdir
    ```
 
-   Funktionen kommentieren, die mit deaktivierten Modulen verknüpft sind:
+   Kommentieren Sie die mit deaktivierten Modulen verknüpften Funktionen:
 
    ```
    DirectoryIndex
@@ -152,7 +150,7 @@ Gehen Sie wie folgt vor:
    ForceLanguagePriority
    ```
 
-1. Erstellen Sie eine Adobe Campaign-spezifische Konfigurationsdatei im Ordner `/etc/httpd/conf.d/`. Beispiel `CampaignApache.conf`
+1. Erstellen Sie eine Adobe Campaign-spezifische Konfigurationsdatei im Ordner `/etc/httpd/conf.d/` . Beispiel `CampaignApache.conf`
 
 1. Fügen Sie für **RHEL7** die folgenden Anweisungen in die Datei ein:
 
@@ -163,7 +161,7 @@ Gehen Sie wie folgt vor:
 
 1. Für **RHEL7**:
 
-   hinzufügen Sie die Datei `/etc/systemd/system/httpd.service` mit folgendem Inhalt:
+   Fügen Sie die Datei `/etc/systemd/system/httpd.service` mit folgendem Inhalt hinzu:
 
    ```
    .include /usr/lib/systemd/system/httpd.service
@@ -172,33 +170,33 @@ Gehen Sie wie folgt vor:
    Environment=USERPATH=/usr/local/neolane LD_LIBRARY_PATH=/usr/local/neolane/nl6/lib
    ```
 
-   Aktualisieren Sie das von system verwendete Modul:
+   Aktualisieren Sie das von systemd verwendete Modul:
 
    ```
    systemctl daemon-reload
    ```
 
-1. Fügen Sie dann der Gruppe der Apache-Operatoren Adobe Campaign-Operatoren hinzu und umgekehrt, indem Sie den Befehl ausführen:
+1. Fügen Sie dann Adobe Campaign-Operatoren zur Gruppe der Apache-Operatoren hinzu und umgekehrt, indem Sie den Befehl ausführen:
 
    ```
    usermod -a -G neolane apache
    usermod -a -G apache neolane
    ```
 
-   Die zu verwendenden Gruppennamen hängen von der Konfiguration des Apache ab.
+   Die zu verwendenden Gruppennamen hängen von der Konfiguration von Apache ab.
 
 1. Führen Sie Apache und den Adobe Campaign-Server aus.
 
-   RHEL7:
+   Für RHEL7:
 
    ```
    systemctl start httpd
    systemctl start nlserver
    ```
 
-## Webserver starten und die Konfiguration testen{#launching-the-web-server-and-testing-the-configuration}
+## Starten des Webservers und Testen der Konfiguration{#launching-the-web-server-and-testing-the-configuration}
 
-Sie können die Konfiguration jetzt testen, indem Sie Apache starten. Das Adobe Campaign-Modul sollte nun sein Banner auf der Konsole anzeigen (zwei Banner auf bestimmten Betriebssystemen):
+Sie können die Konfiguration jetzt testen, indem Sie Apache starten. Das Adobe Campaign-Modul sollte jetzt sein Banner in der Konsole anzeigen (zwei Banner auf bestimmten Betriebssystemen):
 
 ```
  /etc/init.d/apache start
@@ -215,15 +213,15 @@ Die folgenden Informationen werden angezeigt:
 12:26:28 >   Server started
 ```
 
-Überprüfen Sie dann, ob die Antwort durch Senden einer Test-URL erfolgt.
+Überprüfen Sie als Nächstes, ob die Antwort durch Senden einer Test-URL erfolgt.
 
-Sie können dies über die Befehlszeile testen, indem Sie:
+Sie können dies über die Befehlszeile testen, indem Sie Folgendes ausführen:
 
 ```
  telnet localhost 80  
 ```
 
-Sie sollten Folgendes erhalten:
+Sie sollten Folgendes abrufen:
 
 ```
 Trying 127.0.0.1...
@@ -231,7 +229,7 @@ Connected to localhost.localdomain.
 Escape character is '^]'.
 ```
 
-Geben Sie dann ein:
+Geben Sie dann Folgendes ein:
 
 ```
 GET /r/test
