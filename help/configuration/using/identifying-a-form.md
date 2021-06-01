@@ -1,24 +1,22 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Formulare identifizieren
 description: Formulare identifizieren
 audience: configuration
 content-type: reference
 topic-tags: input-forms
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 0d22b0bc-8fbc-4269-af9e-cee27e29bb27
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '62'
-ht-degree: 14%
+ht-degree: 59%
 
 ---
 
-
 # Formulare identifizieren{#identifying-a-form}
 
-Mit einem Eingabefeld können Sie eine Instanz bearbeiten, die mit einem Data Schema in der Adobe Campaign-Client-Konsole verknüpft ist.
+Mit einem Formular können Sie eine Instanz, die mit einem Datenschema verknüpft ist, über die Adobe Campaign-Client-Konsole bearbeiten.
 
-Das Formular wird anhand seines Namens und seines Namensraums identifiziert.
+Das Formular wird anhand seines Namens und seines Namespace identifiziert.
 
-Der Identifizierungsschlüssel eines Formulars ist eine Zeichenfolge, die aus dem Namensraum und dem durch einen Doppelpunkt (&#39;:&#39;) getrennten Namen besteht (z. B.: &quot;cus:contact&quot;).
+Der Identifikationsschlüssel eines Formulars ist eine Zeichenfolge, die aus dem Namespace und dem Namen besteht, getrennt durch einen Doppelpunkt (&#39;:&#39;) (z. B.: &quot;cus:contact&quot;).
