@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Scripts/JavaScript-Templates
 description: Scripts/JavaScript-Templates
@@ -7,9 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 100%
 
@@ -87,7 +85,7 @@ Ereignisvariablen sind die am häufigsten verwendeten Variablen und sind Instanz
 
 Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Zeichenfolgenvariablen. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](../../workflow/using/about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
-### Anwendungsbeispiele {#example}
+### Anwendungsfälle {#example}
 
 >[!NOTE]
 >
