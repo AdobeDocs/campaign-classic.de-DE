@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Glossar
 description: Glossar
@@ -7,9 +6,8 @@ audience: interaction
 content-type: reference
 topic-tags: interaction-overview
 exl-id: 9e199b7c-9307-4797-bf86-7940388555bc
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 100%
 
@@ -38,7 +36,8 @@ Nachfolgend werden die wichtigsten Fachbegriffe aus Interaction erläutert.
 
    >[!NOTE]
    >
-   >Unterkategorien übernehmen automatisch die Themen, die in der übergeordneten Kategorie definiert wurden.
+   >Untergeordnete Kategorien übernehmen automatisch die Themen, die in der übergeordneten Kategorie definiert wurden.
+
 
 * **Eignungsregeln**: Regeln, die sicherstellen sollen, dass ein Angebot bestmöglich dem Empfänger entspricht, dem es unterbreitet wird. Sie können sich auf eine Umgebung, eine Angebotskategorie oder ein Angebot beziehen.
 
