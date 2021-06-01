@@ -1,31 +1,29 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Zugriff auf Teradata konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Teradata in FDA konfigurieren
 audience: platform
 content-type: reference
 topic-tags: connectors
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 76%
 
 ---
 
-
 # Zugriff auf Teradata konfigurieren {#configure-access-to-teradata}
 
-Verwenden Sie die Option &quot;Kampagne [Federated Data Access](../../installation/using/about-fda.md) (FDA)&quot;, um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
+Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
 
-1. [Teradata-Treiber](#teradata-config) installieren und konfigurieren
-1. Konfigurieren Sie das Teradata [Externe Konto](#teradata-external) in der Kampagne
-1. [Zusätzliche Konfiguration](#teradata-additional-configurations) für Teradata- und Kampagne-Server einrichten
+1. Installieren und konfigurieren Sie [Teradata-Treiber](#teradata-config)
+1. Konfigurieren des externen Teradata [a1/> in Campaign](#teradata-external)
+1. [zusätzliche Konfiguration](#teradata-additional-configurations) für Teradata- und Campaign-Server einrichten
 
 ## Teradata-Konfiguration {#teradata-config}
 
-Sie müssen die Treiber für Teradata installieren, damit eine Verbindung zur Kampagne hergestellt werden kann.
+Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign herstellen kann.
 
 1. Installieren Sie den [ODBC-Treiber für Teradata](https://downloads.teradata.com/download/connectivity/odbc-driver/linux).
 
@@ -68,14 +66,14 @@ Sie müssen die Treiber für Teradata installieren, damit eine Verbindung zur Ka
 
 >[!NOTE]
 >
->Die Verbindung zu einer externen Teradata-Datenbank in FDA erfordert zusätzliche Konfigurationsschritte auf dem Adobe Campaign-Server. [Weitere Informationen](#teradata-additional-configurations).
+>Die Verbindung zu einer externen Teradata-Datenbank über die FDA-Option erfordert zusätzliche Konfigurationsschritte auf dem Adobe Campaign-Server. [Weitere Informationen](#teradata-additional-configurations).
 
 
 ## Externes Teradata-Konto{#teradata-external}
 
 Über das externe Teradata-Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden.
 
-1. Klicken Sie in Kampagne **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** / **[!UICONTROL Platform]** / **[!UICONTROL Externe Konti]**.
+1. Klicken Sie in Campaign **[!UICONTROL Explorer]** auf **[!UICONTROL Administration]** / **[!UICONTROL Plattform]** / **[!UICONTROL Externe Konten]**.
 
 1. Klicken Sie auf **[!UICONTROL Neu]** und wählen Sie **[!UICONTROL Externe Datenbank]** als **[!UICONTROL Typ]** aus.
 
@@ -83,19 +81,19 @@ Sie müssen die Treiber für Teradata installieren, damit eine Verbindung zur Ka
 
 1. Zum Konfigurieren des externen **[!UICONTROL Teradata]**-Kontos müssen Sie Folgendes angeben:
 
-   * **[!UICONTROL Typ]**: Wählen Sie den  **** Teratatatatyp.
+   * **[!UICONTROL Typ]**: Wählen Sie den  **** Teradatatatatyp aus.
 
-   * **[!UICONTROL Server]**: URL oder Name des Teradata-Servers
+   * **[!UICONTROL Server]**: URL oder Name Ihres Teradata-Servers
 
    * **[!UICONTROL Konto]**: Name des Kontos, das für den Zugriff auf die Teradata-Datenbank verwendet wird
 
-   * **[!UICONTROL Kennwort]**: Kennwort für die Verbindung zur Teradata-Datenbank
+   * **[!UICONTROL Kennwort]**: Kennwort für die Verbindung mit der Teradata-Datenbank
 
    * **[!UICONTROL Datenbank]**: Name der Datenbank (optional)
 
-   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine Halbspalte als Trennzeichen zwischen Werten.
+   * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine halbe Spalte als Trennzeichen zwischen Werten.
 
-   * **[!UICONTROL Zeitzone]**: Zeitzone in Teradata eingestellt. [Mehr dazu](#timezone)
+   * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Mehr dazu](#timezone)
 
 ### Query Banding
 
@@ -103,17 +101,17 @@ Wenn sich mehrere Adobe Campaign-Benutzer mit demselben externen FDA-Teradata-Ko
 
 ![](assets/ext_account_20.png)
 
-Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Kampagnen-Benutzer eine Abfrage in der Teradata-Datenbank ausführt, Metadaten, die aus einer Liste von Schlüsseln bestehen, die diesem Benutzer zugeordnet sind. Diese Daten können dann von Teradata-Administratoren zu Prüfzwecken oder zur Verwaltung von Zugriffsrechten verwendet werden.
+Wenn diese Option konfiguriert ist, sendet Adobe Campaign jedes Mal, wenn ein Campaign-Benutzer eine Abfrage in der Teradata durchführt, Metadaten, die aus einer Schlüsselliste bestehen und diesem Benutzer zugeordnet sind. Diese Daten können dann von Teradata-Administratoren für Prüfzwecke oder zur Verwaltung von Zugriffsrechten verwendet werden.
 
 >[!NOTE]
 >
 >Weitere Informationen zu **[!UICONTROL Query Banding]** finden Sie im [Teradata-Handbuch](https://docs.teradata.com/reader/cY5B~oeEUFWjgN2kBnH3Vw/a5G1iz~ve68yTMa24kVjVw).
 
-Gehen Sie wie folgt vor, um die Abfrage zu konfigurieren:
+Gehen Sie wie folgt vor, um Query Banding zu konfigurieren:
 
-1. Verwenden Sie **[!UICONTROL Default]**, um ein Standardband für die Abfrage einzugeben, das verwendet wird, wenn ein Benutzer über kein zugehöriges Abfragen-Band verfügt. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Abfrage Teradata nicht verwenden.
+1. Verwenden Sie **[!UICONTROL Default]**, um einen standardmäßigen Query Banding einzugeben, der verwendet wird, wenn einem Benutzer kein Query Banding zugeordnet ist. Wenn dieses Feld leer gelassen wird, können Benutzer ohne Query Banding Teradata nicht verwenden.
 
-1. Verwenden Sie das Feld **[!UICONTROL Users]**, um ein Abfragen-Band für jeden Benutzer anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Abfrage-Band zugewiesen ist, wird das Feld **[!UICONTROL Default]** angewendet.
+1. Verwenden Sie das Feld **[!UICONTROL Benutzer]** , um einen Query Banding für jeden Benutzer anzugeben. Sie können so viele Schlüssel/Wert-Paare hinzufügen, wie Sie benötigen, z. B. priority=1;workload=high. Wenn dem Benutzer kein Query Banding zugewiesen ist, wird das Feld **[!UICONTROL Default]** angewendet.
 
 1. Markieren Sie die Option **[!UICONTROL Aktiv]**, um diese Funktion zu aktivieren.
 
@@ -123,9 +121,9 @@ Wenn beim Testen der Verbindung der Fehler **TIM-030008 Datum &#39;2&#39;: fehle
 
 Der Fehler **ODB-240000 ODBC-Fehler: [Microsoft][ODBC Driver Manager]-Datenquellenname nicht gefunden und kein Standardtreiber angegeben.** tritt unter Windows auf, wenn Sie einen 16.X-Treiber verwenden. Adobe Campaign erwartet, dass Teradata in odbcinst.ini den Namen „{teradata}“ hat.
 
-* Ab Kampagne 18.10 können Sie ODBCDRiverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des Externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Führen Sie odbcad32.exe aus und gehen Sie zum Treiber-Tab, um den genauen Namen abzurufen.
+* Ab Campaign 18.10 können Sie ODBCDriverName=&quot;Teradata Database ODBC Driver 16.10&quot; in den Optionen des externen Kontos hinzufügen. Die Versionsnummer kann sich ändern. Führen Sie odbcad32.exe aus und gehen Sie zum Treiber-Tab, um den genauen Namen abzurufen.
 
-* Wenn Sie eine ältere Version der Kampagne verwenden, müssen Sie den Teradata-Abschnitt von odbcinst.ini, der von der Treiberinstallation erstellt wurde, in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 liegt, müssen Sie **APICharSize=1** in die Optionen einfügen.
+* Wenn Sie eine ältere Campaign-Version verwenden, müssen Sie den von der Treiberinstallation erstellten Teradata von odbcinst.ini in einen neuen Abschnitt mit dem Namen Teradata kopieren. In diesem Fall kann Regedit verwendet werden. Wenn Ihre Basis in latin1 ist, müssen Sie **APICharSize=1** in den Optionen hinzufügen.
 
 ## Ergänzende Konfigurationen {#teradata-additional-configurations}
 
@@ -152,7 +150,7 @@ Customers with a Latin-1 Teradata database migrating to a recent Campaign Classi
 
 ### Benutzerkonfiguration {#user-configuration}
 
-Für die externe Datenbank sind die folgenden Rechte erforderlich: Erstellen/Ablegen/Ausführen von benutzerdefinierten Prozeduren, Erstellen/Ablegen/Einfügen/Auswählen von Tabellen. Möglicherweise müssen Sie auch Benutzermodusfunktionen erstellen, wenn Sie die Funktionen md5 und sha2 in Ihrer Adobe Campaign-Instanz verwenden möchten.
+Für die externe Datenbank sind die folgenden Berechtigungen erforderlich: Erstellen/Löschen/Ausführen benutzerdefinierter Verfahren, Erstellen/Ablegen/Einfügen/Auswählen von Tabellen. Möglicherweise müssen Sie auch Benutzermodusfunktionen erstellen, wenn Sie die Funktionen md5 und sha2 in Ihrer Adobe Campaign-Instanz verwenden möchten.
 
 Stellen Sie sicher, dass Sie die richtige Zeitzone konfigurieren. Sie sollte mit der Zeitzone übereinstimmen, die in dem externen Konto eingestellt wird, das in der Adobe Campaign-Instanz erstellt wurde.
 
