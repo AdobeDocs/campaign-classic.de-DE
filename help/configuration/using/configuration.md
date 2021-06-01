@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Konfiguration '
 description: 'Konfiguration '
@@ -7,21 +6,20 @@ audience: configuration
 content-type: reference
 topic-tags: navigation-hierarchy
 exl-id: c7ae7240-0c12-4420-bbb3-4268c9ade3e7
-translation-type: tm+mt
-source-git-commit: d7eabfbebf016d2632d95d34a5b36719ccc1d88a
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Kampagne Explorer-Navigationsstruktur konfigurieren{#configuration}
+# Navigationsstruktur von Campaign Explorer konfigurieren{#configuration}
 
-Als Expertenbenutzer können Sie Ordner in der Explorer-Struktur hinzufügen und anpassen.
+Erfahrene Benutzer können Ordner im Explorer-Baum hinzufügen und anpassen.
 
-Weitere Informationen zu Kampagne Explorer und Navigationshierarchie [finden Sie in diesem Abschnitt](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+Weitere Informationen zum Campaign-Explorer und zur Navigationshierarchie [finden Sie in diesem Abschnitt](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
-Die von der Navigations-Liste verwendeten Ordnertypen werden in einem XML-Dokument beschrieben, das der Grammatik des **xtk:navtree**-Schemas folgt.
+Die von der Navigationsliste verwendeten Ordnertypen werden in einem XML-Dokument beschrieben, das der Grammatik des Schemas **xtk:navtree** folgt.
 
 Das XML-Dokument ist wie folgt strukturiert:
 
@@ -45,7 +43,7 @@ Das XML-Dokument ist wie folgt strukturiert:
 </navtree>
 ```
 
-Das XML-Dokument enthält das Stammelement **`<navtree>`** mit den Attributen **name** und **Namensraum**, um den Dokument und den Namensraum anzugeben. Der Name und der Namensraum bilden den Dokument-Identifizierungsschlüssel.
+Das XML-Dokument enthält das Stammelement **`<navtree>`** mit den Attributen **name** und **namespace**, um den Dokumentnamen und den Namespace anzugeben. Der Name und der Namespace bilden den Identifizierungsschlüssel des Dokuments.
 
 Die globalen Befehle der Anwendung werden im Dokument aus dem Element **`<commands>`** deklariert.
 
@@ -53,11 +51,11 @@ Die Deklaration von Dateitypen ist im Dokument mit den folgenden Elementen struk
 
 ## Globale Befehle {#global-commands}
 
-Mit einem globalen Befehl können Sie eine Aktion starten. Bei dieser Aktion kann es sich um ein Eingabefeld oder einen SOAP-Aufruf handeln.
+Mit einem globalen Befehl können Sie eine Aktion starten. Diese Aktion kann ein Eingabeformular oder ein SOAP-Aufruf sein.
 
-Globale Befehle können über das Hauptmenü **[!UICONTROL Tools]** aufgerufen werden.
+Auf globale Befehle kann über das Hauptmenü **[!UICONTROL Tools]** zugegriffen werden.
 
-Die Befehlskonfigurationsstruktur lautet wie folgt:
+Die Konfigurationsstruktur des Befehls sieht wie folgt aus:
 
 ```
 <commands>
@@ -82,26 +80,26 @@ Die Befehlskonfigurationsstruktur lautet wie folgt:
 
 Die Beschreibung eines globalen Befehls wird im Element **`<command>`** mit den folgenden Eigenschaften eingegeben:
 
-* **name**: Interner Name des Befehls: der Name muss eingegeben und eindeutig
-* **label**: Beschriftung des Befehls.
+* **name**: Interner Name des Befehls: der Name muss eingegeben werden und eindeutig
+* **label**: Titel des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms angezeigt wird.
-* **form**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifizierungsschlüssel des Eingabedrucks (z. &quot;cus:Empfänger&quot;)
-* **Rechte**: Liste von Spezifische Berechtigungen (durch Kommas getrennt), die Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Rechte ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** verfügbar.
-* **promptLabel**: zeigt ein Bestätigungsfeld vor Ausführung des Befehls an.
+* **form**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifikationsschlüssel des Formulars (z. B. &quot;cus:recipient&quot;)
+* **Berechtigungen**: Liste der spezifischen Berechtigungen (durch Kommas getrennt), die den Zugriff auf diesen Befehl ermöglichen. Auf die Liste der verfügbaren Berechtigungen kann über den Ordner **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** zugegriffen werden.
+* **quickLabel**: zeigt vor Ausführung des Befehls ein Bestätigungsfeld an.
 
-Ein **`<command>`**-Element kann **`<command>`**-Unterelemente enthalten. In diesem Fall können Sie mit dem übergeordneten Element ein Untermenü anzeigen, das aus diesen untergeordneten Elementen besteht.
+Ein Element **`<command>`** kann **`<command>`** Unterelemente enthalten. In diesem Fall können Sie über das übergeordnete Element ein Untermenü mit diesen untergeordneten Elementen anzeigen.
 
-Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument.
+Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument deklariert.
 
-Mithilfe einer Befehlstrennlinie können Sie eine Trennleiste zwischen Befehlen anzeigen. Er wird durch den in der Befehlsbeschriftung enthaltenen Wert **&#39;-&#39;** identifiziert.
+Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch den Wert **&#39;-&#39;** identifiziert, der in der Befehlsbezeichnung enthalten ist.
 
-Das optionale Vorhandensein des Tags **`<soapcall>`** mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der JSAPI-Dokumentation [Kampagne](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Das optionale Vorhandensein des Tags **`<soapcall>`** mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zur SOAP-API finden Sie in der [Campaign JSAPI-Dokumentation](https://docs.adobe.com/content/help/de-DE/campaign-classic/technicalresources/api/index.html).
 
-Der Formularkontext kann bei der Initialisierung vom **`<enter>`**-Tag aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zu den Eingabeformularen.
+Der Formularkontext kann bei der Initialisierung vom Tag **`<enter>`** aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zu Formularen.
 
 **Beispiel**:
 
-* Erklärung eines globalen Befehls zum Starten des Formulars &quot;xtk:import&quot;:
+* Deklaration eines globalen Befehls zum Starten des Formulars &quot;xtk:import&quot;:
 
    ```
    <command desc="Start the data import wizard" form="xtk:import" label="&amp;Data import..." name="import" rights="import,recipientImport"/>
@@ -109,7 +107,7 @@ Der Formularkontext kann bei der Initialisierung vom **`<enter>`**-Tag aktualisi
 
    Ein Tastaturbefehl wird auf dem &quot;I&quot;-Zeichen durch **&amp;** in der Befehlsbezeichnung deklariert.
 
-* Beispiel eines Untermenüs mit einer Trennlinie:
+* Beispiel eines Untermenüs mit einem Trennzeichen:
 
    ![](assets/d_ncs_integration_navigation_exemple1.png)
 
@@ -135,9 +133,9 @@ Der Formularkontext kann bei der Initialisierung vom **`<enter>`**-Tag aktualisi
 
 ## Ordnertyp {#folder-type}
 
-Mit einem Ordnertyp können Sie Zugriff auf die Daten eines Schemas gewähren. Die mit dem Ordner verknüpfte Ansicht besteht aus einer Liste und einem Eingabedatum.
+Über einen Ordnertyp können Sie auf die Daten eines Schemas zugreifen. Die mit dem Ordner verknüpfte Ansicht besteht aus einer Liste und einem Eingabeformular.
 
-Die Konfigurationsstruktur des Ordnertyps lautet wie folgt:
+Die Konfigurationsstruktur des Ordnertyps sieht wie folgt aus:
 
 ```
 <!-- Structured location to add the folder -->
@@ -157,35 +155,35 @@ Die Konfigurationsstruktur des Ordnertyps lautet wie folgt:
 </model>
 ```
 
-Die Deklaration des Ordnertyps muss unter einem **`<model>`**-Element eingegeben werden. Mit diesem Element können Sie eine hierarchische Organisation definieren, die im Menü **[!UICONTROL Hinzufügen neuer Ordner]** angezeigt wird. Ein **`<model>`**-Element muss **`<nodemodel>`**-Elemente und andere **`<model>`**-Elemente enthalten.
+Die Deklaration des Ordnertyps muss unter einem **`<model>`** -Element eingegeben werden. Mit diesem Element können Sie eine hierarchische Organisation definieren, die im Menü **[!UICONTROL Ordner hinzufügen]** angezeigt wird. Ein **`<model>`** -Element muss **`<nodemodel>`** -Elemente und andere **`<model>`** -Elemente enthalten.
 
-Die Attribute **name** und **label** füllen den internen Namen des Elements und die im Menü **[!UICONTROL Hinzufügen neuer Ordner]** angezeigte Bezeichnung aus.
+Die Attribute **name** und **label** füllen den internen Namen des Elements und die im Menü **[!UICONTROL Ordner hinzufügen]** angezeigte Bezeichnung aus.
 
-Das **`<nodemodel>`**-Element enthält die Beschreibung des Ordnertyps mit den folgenden Eigenschaften:
+Das Element **`<nodemodel>`** enthält die Beschreibung des Ordnertyps mit den folgenden Eigenschaften:
 
 * **name**: interner Name
-* **label**: -Beschriftung im  **[!UICONTROL Hinzufügen neuen]** Ordnermenü und als Standardbeschriftung beim Einfügen eines Ordners verwendet.
-* **img**: Standardbild beim Einfügen des Ordners.
-* **hiddenCommands**: Liste der zu maskierenden Befehle (durch Kommas getrennt). Mögliche Werte: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot; und &quot;adbdup&quot;.
-* **newFolderShortCuts**: Liste von Tastaturbefehlen auf Modellen (durch Kommas **`<nodemodel>`** getrennt) bei der Ordnererstellung.
-* **insertRight**,  **editRight**,  **deleteRight**: Rechte zum Einfügen, Bearbeiten und Löschen von Ordnern.
+* **label**: -Beschriftung, die beim Einfügen eines Ordners im Menü Neuen Ordner  **[!UICONTROL hinzufügen]** und als Standardbeschriftung verwendet wird.
+* **img**: Standardbild beim Einfügen von Ordnern.
+* **hiddenCommands**: Liste der Befehle (durch Kommas getrennt), die maskiert werden sollen. Mögliche Werte: &quot;adbnew&quot;, &quot;adbsave&quot;, &quot;adbcancel&quot;und &quot;adbdup&quot;.
+* **newFolderShortCuts**: Liste der Tastaturbefehle für Modelle (durch Kommas **`<nodemodel>`** getrennt) bei der Ordnererstellung.
+* **insertRight**,  **editRight**,  **deleteRight**: Berechtigungen zum Einfügen, Bearbeiten und Löschen von Ordnern.
 
-Das Element **`<view>`** unter dem Element **`<nodemodel>`** enthält die Konfiguration der mit der Ansicht verknüpften Liste. Das Schema der Liste wird im Attribut **Schema** des Elements **`<view>`** eingetragen.
+Das Element **`<view>`** unter dem Element **`<nodemodel>`** enthält die Konfiguration der Liste, die mit der Ansicht verknüpft ist. Das Schema der Liste wird im Attribut **schema** des Elements **`<view>`** angegeben.
 
-Zur Bearbeitung der Datensätze der Liste wird implizit das Eingabedatum mit demselben Namen wie das Liste-Schema verwendet. Das **type**-Attribut des **`<view>`**-Elements wirkt sich auf die Anzeige des Formulars aus. Mögliche Werte:
+Um die Datensätze der Liste zu bearbeiten, wird implizit das Formular mit demselben Namen wie das Listenschema verwendet. Das Attribut **type** des Elements **`<view>`** wirkt sich auf die Anzeige des Formulars aus. Mögliche Werte:
 
 * **listdet**: zeigt das Formular unten in der Liste an.
-* **Liste**: zeigt nur die Liste an. Das Formular wird durch Dublette-Klick oder über die &quot;Öffnen&quot; im Menü zur Auswahl der Liste gestartet.
+* **list**: zeigt nur die Liste an. Das Formular wird durch Doppelklick oder über die Option &quot;Öffnen&quot; im Menü zur Auswahl der Liste gestartet.
 * **form**: zeigt ein schreibgeschütztes Formular an.
 * **editForm**: zeigt ein Formular im Bearbeitungsmodus an.
 
 >[!NOTE]
 >
->Der Name des Eingabefelds kann überladen werden, indem Sie das Attribut **form** in das Element **`<view>`** eingeben.
+>Der Name des Formulars kann überschrieben werden, indem das Attribut **form** im Element **`<view>`** eingegeben wird.
 
-Die Standardkonfiguration der Spalten &quot;Liste&quot;wird über das Element **`<columns>`** eingegeben. Eine Spalte wird für ein **`<node>`**-Element deklariert, das das **xpath**-Attribut enthält, wobei das Feld in seinem Schema als Wert referenziert werden muss.
+Die Standardkonfiguration der Listenspalten erfolgt über das Element **`<columns>`** . Eine Spalte wird für ein Element **`<node>`** deklariert, das das Attribut **xpath** enthält, wobei das Feld als Wert im Schema referenziert werden soll.
 
-**Beispiel**: Deklaration eines Ordnertyps im Schema &quot;nms:Empfänger&quot;.
+**Beispiel**: Deklaration eines Ordnertyps im Schema &quot;nms:recipient&quot;.
 
 ```
 <model label="Profiles and targets" name="nmsProfiles">
@@ -226,13 +224,13 @@ Filtern und Sortieren können beim Laden der Liste angewendet werden:
 </view>  
 ```
 
-### Tastenkombinationsbefehle {#shortcut-commands}
+### Tastaturbefehle {#shortcut-commands}
 
-Mit einem Tastaturbefehl können Sie eine Aktion beim Auswählen der Liste starten. Die Aktion kann ein Eingabedatum oder ein SOAP-Aufruf sein.
+Mit einem Tastaturbefehl können Sie eine Aktion bei der Auswahl der Liste starten. Die Aktion kann ein Eingabeformular oder ein SOAP-Aufruf sein.
 
 Befehle können über das Menü **[!UICONTROL Aktion]** der Liste oder der zugehörigen Menüschaltfläche aufgerufen werden.
 
-Die Befehlskonfigurationsstruktur lautet wie folgt:
+Die Konfigurationsstruktur des Befehls sieht wie folgt aus:
 
 ```
 <nodeModel...
@@ -252,25 +250,25 @@ Die Befehlskonfigurationsstruktur lautet wie folgt:
 Die Beschreibung eines Befehls wird im Element **`<command>`** mit den folgenden Eigenschaften eingegeben:
 
 * **name**: Interner Name des Befehls: der Name muss eingegeben und eindeutig sein.
-* **label**: Beschriftung des Befehls.
+* **label**: Titel des Befehls.
 * **desc**: Beschreibung, die in der Statusleiste des Hauptbildschirms angezeigt wird.
-* **form**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifizierungsschlüssel des Eingabedrucks (z. &quot;cus:Empfänger&quot;).
-* **Rechte**: Liste von Spezifische Berechtigungen (durch Kommas getrennt), die Zugriff auf diesen Befehl ermöglichen. Die Liste der verfügbaren Rechte ist über den Ordner **[!UICONTROL Administration > Zugriffsverwaltung > Spezifische Berechtigungen]** verfügbar.
-* **promptLabel**: zeigt ein Bestätigungsfeld vor Ausführung des Befehls an
-* **monoSelection**: erzwingt die Mono-Auswahl (standardmäßig mehrere Auswahlen).
+* **form**: Formular, das gestartet werden soll: der einzugebende Wert ist der Identifikationsschlüssel des Formulars (z. B. &quot;cus:recipient&quot;).
+* **Berechtigungen**: Liste der spezifischen Berechtigungen (durch Kommas getrennt), die den Zugriff auf diesen Befehl ermöglichen. Auf die Liste der verfügbaren Berechtigungen kann über den Ordner **[!UICONTROL Administration > Zugriffe > Spezifische Berechtigungen]** zugegriffen werden.
+* **quickLabel**: zeigt vor Ausführung des Befehls ein Bestätigungsfeld an
+* **monoSelection**: erzwingt die Einmalauswahl (standardmäßig mehrere Auswahlmöglichkeiten).
 * **refreshView**: erzwingt das erneute Laden der Liste nach Ausführung des Befehls.
-* **enabledIf**: aktiviert den Befehl je nach eingegebenem Ausdruck.
-* **img**: gibt ein Bild ein, das den Zugriff auf den Befehl über die Werkzeugleiste &quot;Liste&quot;ermöglicht.
+* **enabledIf**: aktiviert den Befehl entsprechend dem eingegebenen Ausdruck.
+* **img**: gibt ein Bild ein, das den Zugriff auf den Befehl in der Symbolleiste der Liste ermöglicht.
 
-Ein **`<command>`**-Element kann **`<command>`**-Unterelemente enthalten. In diesem Fall können Sie mit dem übergeordneten Element ein Untermenü anzeigen, das aus diesen untergeordneten Elementen besteht.
+Ein Element **`<command>`** kann **`<command>`** Unterelemente enthalten. In diesem Fall können Sie über das übergeordnete Element ein Untermenü mit diesen untergeordneten Elementen anzeigen.
 
-Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument.
+Die Befehle werden in derselben Reihenfolge angezeigt wie im XML-Dokument deklariert.
 
-Mithilfe einer Befehlstrennlinie können Sie eine Trennleiste zwischen Befehlen anzeigen. Er wird durch den in der Befehlsbeschriftung enthaltenen Wert **&#39;-&#39;** identifiziert.
+Mithilfe eines Befehlstrennzeichens können Sie eine Trennleiste zwischen Befehlen anzeigen. Sie wird durch den Wert **&#39;-&#39;** identifiziert, der in der Befehlsbezeichnung enthalten ist.
 
-Das optionale Vorhandensein des Tags **`<soapcall>`** mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie in der JSAPI-Dokumentation [Kampagne](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
+Das optionale Vorhandensein des Tags **`<soapcall>`** mit seinen Eingabeparametern definiert den Aufruf einer auszuführenden SOAP-Methode. Weitere Informationen zu SOAP-APIs finden Sie in der [Campaign JSAPI-Dokumentation](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/index.html).
 
-Der Formularkontext kann bei der Initialisierung über das **`<enter>`**-Tag aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zum Eingabefeld.
+Der Formularkontext kann bei der Initialisierung über das Tag **`<enter>`** aktualisiert werden. Weitere Informationen zu diesem Tag finden Sie in der Dokumentation zum Formular.
 
 **Beispiel**:
 
@@ -291,20 +289,20 @@ Der Formularkontext kann bei der Initialisierung über das **`<enter>`**-Tag akt
 
 ### Verknüpfte Ordner {#linked-folder}
 
-Es gibt zwei Arten von Ordnerverwaltungsvorgängen:
+Es gibt zwei Arten von Vorgängen zur Ordnerverwaltung:
 
-1. Der Ordner ist eine Ansicht: Die Liste zeigt alle mit dem Schema verknüpften Datensätze an, mit der Möglichkeit, dass das System in die Ordnereigenschaften gefiltert werden kann.
-1. Der Ordner ist verknüpft: die Datensätze in der Liste implizit auf dem Ordnerlink gefiltert werden.
+1. Der Ordner ist eine Ansicht: Die Liste zeigt alle Datensätze an, die mit dem Schema verknüpft sind, mit der Möglichkeit, das System in die Ordnereigenschaften zu filtern.
+1. Der Ordner ist verknüpft: Die Datensätze in der Liste werden implizit nach dem Ordner-Link gefiltert.
 
-Bei einem verknüpften Ordner muss das **folderLink**-Attribut des **`<nodemodel>`**-Elements ausgefüllt werden. Dieses Attribut enthält den Namen des Links im Schema, der im Datenverzeichnis konfiguriert ist.
+Für einen verknüpften Ordner muss das Attribut **folderLink** im Element **`<nodemodel>`** ausgefüllt werden. Dieses Attribut enthält den Namen des Links im Ordner, der im Datenschema konfiguriert ist.
 
-Beispiel für die Deklaration eines verknüpften Ordners im Schema data:
+Beispiel einer Deklaration eines verknüpften Ordners im Datenschema:
 
 ```
 <element default="DefaultFolder('nmsFolder', [@_folder-id])" label="Folder" name="folder" revDesc="Recipients in the folder" revIntegrity="define" revLabel="Recipients" target="xtk:folder" type="link"/>
 ```
 
-Die Konfiguration von **`<nodemodel>`** auf dem Link des Ordners &quot;folder&quot; lautet wie folgt:
+Die Konfiguration von **`<nodemodel>`** auf der Verknüpfung des Ordners &quot;Ordner&quot;sieht wie folgt aus:
 
 ```
 <nodeModel deleteRight="folderDelete" editRight="folderEdit" folderLink="folder"
