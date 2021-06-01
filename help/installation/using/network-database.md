@@ -1,25 +1,23 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Netzwerk, Datenbank und SSL/TLS
-description: Weitere Informationen zu Best Practices für die Konfiguration von Netzwerk, Datenbank und SSL/TLS.
+description: Erfahren Sie mehr über die Best Practices für die Konfiguration von Netzwerk, Datenbank und SSL/TLS.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
-translation-type: tm+mt
-source-git-commit: 63b2e6b95812f1649e636580984a1f0dcc9c5c53
+exl-id: 2a66dfaa-7fff-48de-bdd4-62f3ebfbab19
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 65%
 
 ---
 
-
 # Netzwerk, Datenbank und SSL/TLS {#network-database}
 
 ## Netzwerkkonfiguration
 
-Bei der Bereitstellung eines lokalen Architekturtyps ist unbedingt die [Netzwerkkonfiguration](../../installation/using/network-configuration.md) zu überprüfen. Stellen Sie sicher, dass der Tomcat-Server NICHT direkt von außerhalb des Servers zugänglich ist:
+Bei der Bereitstellung einer On-Premise-Architektur muss unbedingt die [Netzwerkkonfiguration](../../installation/using/network-configuration.md) überprüft werden. Stellen Sie sicher, dass der Tomcat-Server NICHT direkt von außerhalb des Servers zugänglich ist:
 
 * Schließen Sie den Tomcat-Port (8080) auf externen IP-Adressen (muss auf localhost ausgeführt werden).
 * Ordnen Sie den Standard-HTTP-Port (80) nicht dem Tomcat-Port (8080) zu.
@@ -30,7 +28,7 @@ Verwenden Sie möglichst eine sichere Verbindung: POP3S statt POP3 (oder POP3 ü
 
 Sie müssen die Best Practices für die Sicherheit Ihrer Datenbank-Engine anwenden.
 
-## SSL/TLS-Konfiguration
+## SSL-/TLS-Konfiguration
 
 Das Zertifikat können Sie mit openssl überprüfen. Die aktive Cipher Suite können Sie mit nmap überprüfen:
 
