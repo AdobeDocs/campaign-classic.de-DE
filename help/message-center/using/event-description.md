@@ -1,25 +1,24 @@
 ---
 solution: Campaign Classic
 product: campaign
-title: Beschreibung von Message Center-Ereignissen
-description: Erfahren Sie mehr über Transaktionsnachrichtenereignisse.
+title: Ereignisbeschreibung
+description: Erfahren Sie, wie Transaktionsnachrichten-Ereignisse in Adobe Campaign Classic mithilfe der SOAP-Methoden verwaltet werden.
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 9f7f4b6c-2ee8-4091-847d-f616d6abeb6b
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
-source-wordcount: '747'
-ht-degree: 100%
+source-git-commit: d39b15b0efc6cbd6ab24e074713be6f8fc90e5fc
+workflow-type: tm+mt
+source-wordcount: '752'
+ht-degree: 94%
 
 ---
 
-# Ereignisbeschreibung{#event-description}
+# Ereignisbeschreibung {#event-description}
 
-## Über das Datenmodell für Transaktionsnachrichten {#about-transactional-messaging-datamodel}
+## Transaktionsnachrichten-Datenmodell {#about-transactional-messaging-datamodel}
 
-Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche separate Tabellen. Die [Tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** und **NmsBatchEvent** enthalten dieselben Felder und ermöglichen Ihnen die Verwaltung von Echtzeit-Ereignissen einerseits und Batch-Ereignissen andererseits.
+Transaktionsnachrichten basieren auf dem Adobe Campaign-Datenmodell und verwenden zwei zusätzliche separate Tabellen. Diese [Tabellen](../../configuration/using/data-model-description.md#message-center-module), **NmsRtEvent** und **NmsBatchEvent** enthalten dieselben Felder und ermöglichen die Verwaltung von Echtzeit-Ereignissen einerseits und Batch-Ereignissen andererseits.
 
 ## SOAP-Methoden {#soap-methods}
 
@@ -103,7 +102,7 @@ Beispiel der Methode PushEvents:
 </urn:PushEvents>
 ```
 
-Die **`<rtevent>`**- und **`<batchevent>`**-Elemente besitzen einen Satz an Attributen sowie ein unbedingt erforderliches Kindelement **`<ctx>`**, welches die Integration der Nachrichtendaten ermöglicht.
+Die **`<rtevent>`**- und **`<batchevent>`**-Elemente besitzen einen Satz an Attributen sowie ein unbedingt erforderliches untergeordnetes Element **`<ctx>`**, welches die Integration der Nachrichtendaten ermöglicht.
 
 >[!NOTE]
 >
