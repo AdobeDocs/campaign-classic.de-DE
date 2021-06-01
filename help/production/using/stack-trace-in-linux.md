@@ -1,33 +1,32 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Stack Trace in Linux
 description: Stack Trace in Linux
 audience: production
 content-type: reference
 topic-tags: troubleshooting
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
 
 ---
 
-
 # Stack Trace in Linux{#stack-trace-in-linux}
 
-Eine **Stapelablaufverfolgung** stellt eine Ablaufverfolgung dar, die in einer **core**-Typdatei enthalten ist. Diese Datei wird im Ereignis eines Computerfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
+Ein **Stacktrace** steht für eine Spur, die in einer Datei vom Typ **core** enthalten ist. Diese Datei wird im Falle eines Maschinenfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
 
 >[!NOTE]
 >
 >* Eine **core**-Datei heißt **core.`<num>`**.
 >* **gdb - Der GNU** Debugger muss auf dem Computer installiert sein.
+
 >
 
 
 
-Der technische Support von Adobe Campaign kann Sie nach diesem **Stack-Trace** fragen. Geben Sie zum Abrufen folgende Befehle in Linux ein:
+Der technische Support von Adobe Campaign kann Sie nach diesem **Stacktrace** fragen. Geben Sie die folgenden Befehle in Linux ein, um sie abzurufen:
 
 ```
 su - neolane
@@ -54,9 +53,9 @@ gdb nlserver <coreFile>
 #16 0x5565918a in clone () from /lib/tls/libc.so.6
 ```
 
-Adobe Campaign Technical Support bittet Sie, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
+Der technische Support von Adobe Campaign kann Sie bitten, diesen Befehl mit einer bestimmten ausführbaren Datei auszuführen (die von uns bereitgestellt wird).
 
-In diesem Fall führen Sie einfach den folgenden Befehl aus, indem Sie **nlserver** durch die ausführbare Datei ersetzen, die von Adobe Campaign bereitgestellt wird:
+Führen Sie in diesem Fall einfach den folgenden Befehl aus, indem Sie **nlserver** durch die von Adobe Campaign bereitgestellte ausführbare Datei ersetzen:
 
 ```
 gdb nlserver <coreFile>
@@ -67,4 +66,3 @@ Beispiel:
 ```
 gdb nlserver.1823 <coreFile>
 ```
-
