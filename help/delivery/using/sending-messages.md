@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: E-Mail-Versand mit Adobe Campaign Classic
 description: Erfahren Sie, wie Sie den Versand einer E-Mail bestätigen können, und lernen Sie die Besonderheiten des Versands von E-Mail-Nachrichten kennen.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
