@@ -1,43 +1,41 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Einrichtungsschritte
 description: Einrichtungsschritte
 audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
-translation-type: tm+mt
-source-git-commit: c625b4109e2cb47446331cd009ff9827c8267c93
+exl-id: a5ae0b61-3377-46d9-a327-6c897eeda770
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 2%
 
 ---
 
-
 # Einrichtungsschritte{#setup-stages}
 
-Das Grundprinzip ist das Einfügen von Web-Trackingtagen in bestimmte Seiten Ihrer Website.
+Das Grundprinzip ist das Einfügen von Web-Tracking-Tags in bestimmte Seiten Ihrer Website.
 
 Es gibt zwei Arten von Tags:
 
-* **WEB**: Dieses Tag zeigt Ihnen an, ob die Seite besucht wurde.
-* **TRANSAKTION**: funktioniert wie ein Web-Tag, jedoch mit der Möglichkeit, Informationen über das generierte Geschäftsvolumen hinzuzufügen, zum Beispiel (Transaktionssumme, Anzahl der gekauften Artikel usw.).
+* **WEB**: Dieses Tag gibt an, ob die Seite besucht wurde.
+* **TRANSAKTION**: funktioniert wie ein Web-Tag, bietet jedoch die Möglichkeit, Informationen zum generierten Geschäftsvolumen hinzuzufügen (z. B. Transaktionsbetrag, Anzahl der gekauften Artikel usw.).
 
-Wenden Sie die folgenden Schritte an, um diese Tags einzurichten:
+Gehen Sie wie folgt vor, um diese Tags einzurichten:
 
 1. Identifizieren Sie die Seiten, die Sie verfolgen möchten, und bestimmen Sie deren Typ (WEB oder TRANSACTION).
-1. Bestimmen Sie, welche zusätzlichen Informationen Sie erfassen möchten, und erweitern Sie das **nms:webTrackingLog**-Schema mit der Beschreibung dieser Informationen. In diesem Schema können die Transaktionsbeträge und die Anzahl der Elemente pro Transaktion standardmäßig gespeichert werden.
-1. Erstellen der Web-Trackingtag. Es gibt zwei Möglichkeiten, dies zu tun:
+1. Bestimmen Sie, welche zusätzlichen Informationen Sie erfassen möchten, und erweitern Sie das Schema **nms:webTrackingLog** mit der Beschreibung dieser Informationen. Standardmäßig kann dieses Schema die Transaktionsmengen und die Anzahl der Elemente pro Transaktion speichern.
+1. Erstellen der Webtracking-Tags. Dazu gibt es zwei Möglichkeiten:
 
-   * Fügen Sie die URLs, die diesen Seiten entsprechen, in Ihre Adobe Campaign-Plattform ein, erstellen und extrahieren Sie dann die zugehörigen Web-Trackingtag (aus dem Knoten **[!UICONTROL Kampagne-Ausführung>Resources>Webtrackingtags]** der Client-Konsole).
-   * Erstellen Sie die Web-Trackingtag selbst im &quot;on-the-fly&quot;-Erstellungsmodus: die URLs, die diesen Seiten entsprechen, werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
+   * Fügen Sie die URLs, die diesen Seiten entsprechen, in Ihre Adobe Campaign-Plattform ein und generieren Sie dann die zugehörigen Web-Tracking-Tags (aus dem Knoten **[!UICONTROL Kampagnenausführung>Ressourcen > Web-Tracking-Tags]** der Clientkonsole).
+   * Erstellen Sie die Webtracking-Tags selbst im Modus &quot;On-the-fly-Erstellung&quot;: Die URLs, die diesen Seiten entsprechen, werden automatisch in Ihre Adobe Campaign-Plattform eingefügt.
 
-1. hinzufügen Sie diese Tags statisch oder dynamisch auf den Seiten, die Sie verfolgen möchten.
+1. Fügen Sie diese Tags statisch oder dynamisch zu den Seiten hinzu, die Sie verfolgen möchten.
 
    >[!NOTE]
    >
-   >Alle WEB-Tags können so hinzugefügt werden, wie sie zu den Seiten Ihrer Site gehören. TRANSACTION-Tags müssen dynamisch geändert oder hinzugefügt werden, um die zusätzlichen Informationen (Menge, Elemente usw.) zu enthalten.
+   >Alle WEBtypen-Tags können so hinzugefügt werden, wie sie zu den Seiten Ihrer Site gehören. TRANSAKTIONS-Tags müssen dynamisch geändert oder hinzugefügt werden, um zusätzliche Informationen (Menge, Elemente usw.) zu enthalten.
 
 **Beispiel**:
 
@@ -50,4 +48,3 @@ window.location.protocol + "//tsupport/r/" +
 Math.random().toString() + "?tagid=" + escape(_t) + "'/>")
 </script>
 ```
-
