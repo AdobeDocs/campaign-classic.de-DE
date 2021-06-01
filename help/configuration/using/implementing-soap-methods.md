@@ -1,46 +1,44 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Implementieren von SOAP-Methoden
 description: Implementieren von SOAP-Methoden
 audience: configuration
 content-type: reference
 topic-tags: api
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 441a0e5c-fa7f-46c8-a65a-5cca4c846d43
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 4%
 
 ---
 
-
 # Implementieren von SOAP-Methoden{#implementing-soap-methods}
 
 ## Einleitung {#introduction}
 
-Es ist möglich, SOAP-Methoden in JavaScript zu erstellen. Diese Funktion ermöglicht einfach anwendbare Prozesse, sie kann die Entwicklung von JSPs und deren Aufruf in den Formularen vermeiden.
+Es ist möglich, SOAP-Methoden in JavaScript zu erstellen. Diese Funktion ermöglicht einfach anwendungsbezogene Prozesse. Sie kann die Entwicklung von JSPs und deren Aufruf in den Formularen vermeiden.
 
-Diese SOAP-Methoden verhalten sich genauso wie die nativ in der Anwendung definierten Methoden. Die gleichen Attribute werden unterstützt: static, key only und const.
+Diese SOAP-Methoden verhalten sich genauso wie die nativ in der Anwendung definierten Methoden. Dieselben Attribute werden unterstützt: static, key only and const.
 
 ## Definieren einer Methodenbibliothek {#defining-a-method-library}
 
-Das Erstellen einer Methodenbibliothek umfasst zwei Schritte:
+Das Erstellen einer Methodenbibliothek umfasst zwei Phasen:
 
 * die SOAP-Methodendeklaration,
 * Definition (oder Implementierung) in JavaScript.
 
-### Deklaration {#declaration}
+### Erklärung {#declaration}
 
-Beginn durch Deklarieren der Methoden in den Schemas (weitere Informationen zum Erstellen und Bearbeiten von Schemas finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
+Deklarieren Sie zunächst die Methoden in den Schemas (weitere Informationen zum Erstellen und Bearbeiten von Schemas finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-edition.md)).
 
-Ihre Deklaration ähnelt der der nativen Methoden, allerdings müssen Sie das Attribut &quot;library&quot;hinzufügen, um den Namen der Methodenbibliothek anzugeben, in der sich die Definition befindet.
+Ihre Deklaration ähnelt der nativen Methoden, allerdings müssen Sie das Attribut &quot;library&quot;hinzufügen, das den Namen der Methodenbibliothek angibt, in der sich die Definition befindet.
 
-Dieser Name fällt mit dem Namen (mit dem Namensraum) der Entität des Typs &quot;JavaScript-Code&quot;zusammen.
+Dieser Name entspricht dem Namen (mit dem Namespace) der Entität vom Typ &quot;JavaScript-Code&quot;.
 
 Beispiel:
 
-Die Methode testLog(msg) wird in der Erweiterung nms:Empfänger deklariert
+Die Methode testLog(msg) wird in der Erweiterung nms:recipient deklariert
 
 ```
 <method name="testLog" static="true" library="cus:test">
@@ -52,17 +50,17 @@ Die Methode testLog(msg) wird in der Erweiterung nms:Empfänger deklariert
 
 >[!NOTE]
 >
->Der Namensraum und der Bibliotheksname sind unabhängig vom Namensraum- und Schema-Namen, in dem die Deklaration gefunden wird.
+>Der Namespace und der für die Bibliothek verwendete Name sind unabhängig vom Namespace und vom Schemanamen, in dem die Deklaration gefunden wird.
 
 ### Definition {#definition}
 
-SOAP-Methoden werden in Form einer JavaScript-Funktion implementiert, die in einem Skript gruppiert ist, das eine Bibliothek darstellt.
+SOAP-Methoden werden in Form von JavaScript-Funktionen implementiert, die in einem Skript gruppiert sind, das eine Bibliothek darstellt.
 
 >[!NOTE]
 >
->Eine Methodenbibliothek kann Funktionen für verschiedene Schema gruppieren oder umgekehrt, die Funktionen eines Schemas können in separaten Bibliotheken definiert werden.
+>Eine Methodenbibliothek kann Funktionen für verschiedene Schemas gruppieren oder umgekehrt. Die Funktionen eines Schemas können in separaten Bibliotheken definiert werden.
 
-Das Skript kann Code enthalten, der beim ersten Laden der Bibliothek ausgeführt wird.
+Das Skript kann Code enthalten, der beim ersten Laden der Bibliothek ausgeführt werden soll.
 
 **1. Name**
 
@@ -74,7 +72,7 @@ Der Name der Funktion muss dem folgenden Format entsprechen:
 
 Beispiel:
 
-Die folgende JavaScript-Funktion ist die Implementierung der oben beschriebenen Methode. Sie wird in der Typentität &quot;JavaScript-Code&quot;unter Verwendung des Namens &quot;cus:test&quot;definiert.
+Die folgende JavaScript-Funktion ist die Implementierung der oben beschriebenen Methode. Sie wird in der Entität vom Typ &quot;JavaScript-Code&quot;unter Verwendung des Namens &quot;cus:test&quot;definiert.
 
 ```
 function nms_recipient_testLog(message)
@@ -83,18 +81,18 @@ function nms_recipient_testLog(message)
  }
 ```
 
-**2. Unterschrift**
+**2. Signature**
 
-Die Signatur der Funktion muss ein Argument für jeden &#39;in&#39;- oder &#39;inout&#39;-Parameter der Deklaration enthalten.
+Die Signatur der Funktion muss ein -Argument für jeden &quot;in&quot;- oder &quot;inout&quot;-Parameter der Deklaration enthalten.
 
 Sonderfälle:
 
-* **nichtstatische Methoden**: Die Funktion muss zuerst ein zusätzliches Argument enthalten, das mit der XML-Entität zusammenfällt, die in Form eines E4X-Objekts (XML) übergeben wird.
-* **Typmethoden** &quot;nur Schlüssel&quot;: Die Funktion muss zuerst ein zusätzliches Argument enthalten, das mit dem in Form von Zeichenfolgen übergebenen Schlüssel übereinstimmt.
+* **nichtstatische Methoden**: Die -Funktion muss zunächst ein zusätzliches -Argument enthalten, das mit der XML-Entität übereinstimmt, die in Form eines Objekts vom Typ &quot;xml&quot;(E4X) übergeben wurde.
+* **Methoden vom Typ &quot;Nur Schlüssel&quot;**: Die Funktion muss zuerst ein zusätzliches -Argument enthalten, das mit dem in Form von Zeichenfolgen übergebenen Schlüssel übereinstimmt.
 
-**3. Rückgegebene Werte**
+**3. Zurückgegebene Werte**
 
-Die Funktion muss einen Wert für jeden Parameter vom Typ &#39;out&#39; oder &#39;inout&#39; zurückgeben. Sonderfall: Wenn die Methode ohne eines der Attribute &quot;static&quot;, &quot;key only&quot;oder &quot;const&quot;deklariert wird, muss der erste zurückgegebene Wert mit der geänderten Entität übereinstimmen. Es ist möglich, ein neues Objekt zurückzugeben oder den ersten geänderten Parameter zurückzugeben.
+Die Funktion muss für jeden Parameter vom Typ &#39;out&#39; oder &#39;inout&#39; einen Wert zurückgeben. Sonderfall: Wenn die Methode ohne die Attribute &quot;static&quot;, &quot;key only&quot;oder &quot;const&quot;deklariert wird, muss der erste zurückgegebene Wert mit der geänderten Entität übereinstimmen. Es ist möglich, ein neues Objekt zurückzugeben oder den ersten geänderten Parameter zurückzugeben.
 
 Beispiel:
 
@@ -116,4 +114,3 @@ function nms_recipient_getKey(self)
    return [self.@firstName, self.@lastName]
  }
 ```
-
