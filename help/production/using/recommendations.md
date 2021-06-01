@@ -1,26 +1,24 @@
 ---
-solution: Campaign Classic
 product: campaign
-title: 'Empfehlungen    '
-description: 'Empfehlungen    '
+title: Recommendations
+description: Recommendations
 audience: production
 content-type: reference
 topic-tags: database-maintenance
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: e458f6cb-f6d1-4688-9f6d-2a27a2f90829
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 2%
 
 ---
 
+# Recommendations{#recommendations}
 
-# Empfehlungen{#recommendations}
-
-Adobe Campaign ist ein hochgradig transaktionales System (OLTP-Datenbank). Das bedeutet, dass die zugrunde liegende Datenbank häufig aktualisiert wird, was zu einer Leistungsminderung im Laufe der Zeit führt. Um dieses Problem zu vermeiden, ist eine regelmäßige Datenbankwartung erforderlich.
+Adobe Campaign ist ein hochgradig transaktionales System (OLTP-Datenbank). Dies bedeutet, dass die zugrunde liegende Datenbank häufig aktualisiert wird, was zu einer Leistungsbeeinträchtigung im Laufe der Zeit führt. Um dieses Problem zu vermeiden, ist eine regelmäßige Datenbankwartung erforderlich.
 
 >[!IMPORTANT]
 >
->Eine Datenbank funktioniert nur dann optimal, wenn sie regelmäßig gepflegt wird. Die von einigen RDBMS angebotene automatische Wartung ist nicht ausreichend und ersetzt nicht die eingehende Wartung, wie auch bei anderen relationalen Datenbank-Transaktionsmanagementsystemen.
+>Eine Datenbank funktioniert nur optimal, wenn sie regelmäßig gepflegt wird. Die automatische Wartung, die von einigen RDBMS angeboten wird, reicht nicht aus und ersetzt nicht die eingehende Wartung, wie dies bei anderen Transaktionsverwaltungssystemen der relationalen Datenbank der Fall ist.
 >  
->Die in diesem Dokument beschriebenen Verfahren sind Empfehlungen. Für Wartungspläne ist Ihr Datenbankadministrator verantwortlich, der bei Problemen als erster Ansprechpartner fungieren muss.
+>Die in diesem Dokument beschriebenen Verfahren sind Empfehlungen. Wartungspläne sind für Ihren Datenbankadministrator verantwortlich, der bei Problemen als erster Ansprechpartner fungieren muss.
