@@ -7,7 +7,7 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: b211948f1b6a64d0734d1d23f6df4951af88445a
 workflow-type: tm+mt
 source-wordcount: '4387'
 ht-degree: 98%
@@ -113,7 +113,7 @@ Es wurde ein Anwendungsfall zur Verwendung der Zusammenführungsfunktion der **[
 
 Die vollständige Beschreibung des SMS-Connector-Protokolls und der Einstellungsseite ist jetzt [hier](../../delivery/using/sms-protocol.md) verfügbar.
 
-Der Abschnitt **Transaktionsnachrichten** wurde um ein Hinweis dazu ergänzt, dass die Ereignis-Ordner nicht als Ansichten für die Ausführungsinstanzen festgelegt werden dürfen, da dies zu Problemen mit Zugriffsrechten führt. [Mehr dazu](../../message-center/using/event-collection.md)
+Der Abschnitt **Transaktionsnachrichten** wurde um ein Hinweis dazu ergänzt, dass die Ereignis-Ordner nicht als Ansichten für die Ausführungsinstanzen festgelegt werden dürfen, da dies zu Problemen mit Zugriffsrechten führt. [Mehr dazu](../../message-center/using/about-event-processing.md#event-collection)
 
 ## November 2020 {#nov-2020}
 
@@ -259,7 +259,7 @@ Datenschutzgesetze in Thailand und Brasilien – [mehr dazu](https://helpx.adobe
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichtenvorlage wird in [diesem Abschnitt](../../message-center/using/template-unpublication.md) beschrieben.
+Die neue Option zum Rückgängigmachen der Veröffentlichung einer Transaktionsnachrichtenvorlage wird in [diesem Abschnitt](../../message-center/using/publishing-message-templates.md#template-unpublication) beschrieben.
 
 Neue Optionen wurden zur Liste der Campaign Classic-Optionen hinzugefügt. Mit diesen Optionen können Einschränkungen beim Versand von E-Mails festgelegt werden, die von einer personalisierten URL und Anhängen heruntergeladene Bilder enthalten. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
@@ -519,7 +519,7 @@ Der Abschnitt zur Unter-Workflow-Aktivität wurde um ein Anwendungsbeispiel erwe
 
 Die Seite [Funktionsmatrix für On-Premise- und gehostete Campaign Classic-Versionen](../../installation/using/capability-matrix.md) wurde um Informationen zu E-Mail-BCC erweitert.
 
-Die Dokumentation zu Transaktionsnachrichten wurde mit einem Hinweis zur Vorlagenveröffentlichung aktualisiert. [Mehr dazu](../../message-center/using/template-publication.md)
+Die Dokumentation zu Transaktionsnachrichten wurde mit einem Hinweis zur Vorlagenveröffentlichung aktualisiert. [Mehr dazu](../../message-center/using/publishing-message-templates.md#template-publication)
 
 Der Abschnitt über nicht verarbeitete Bounce Messages wurde um weitere Details zu den Feldern „Weiterleitungsadresse“ und „Fehleradresse“ erweitert. [Mehr dazu](../../installation/using/deploying-an-instance.md)
 
