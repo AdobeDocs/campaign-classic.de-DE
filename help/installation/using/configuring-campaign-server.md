@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign-Server konfigurieren
 description: Campaign-Server konfigurieren
@@ -7,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: bce114f36d1ec4582fc79e750d48155ba0d7cd1f
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1580'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +21,7 @@ In diesem Kapitel werden serverseitige Konfigurationen beschrieben, die entsprec
 
 Diese Verfahren sind auf **On-Premise**/**hybride** -Implementierungen beschränkt und erfordern Administratorberechtigungen.
 
-Bei **gehosteten** -Bereitstellungen können serverseitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch innerhalb von [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html) eingerichtet werden, z. B. die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html).
+Bei **gehosteten** -Bereitstellungen können serverseitige Einstellungen nur von Adobe konfiguriert werden. Einige Einstellungen können jedoch innerhalb von [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) eingerichtet werden, z. B. die Verwaltung von IP-Zulassungslisten oder URL-Berechtigungen. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de).
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
