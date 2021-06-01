@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 81%
+source-wordcount: '1226'
+ht-degree: 76%
 
 ---
 
@@ -181,7 +181,7 @@ Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden El
 
 * Installieren Sie das Package **[!UICONTROL LINE Connect]** auf beiden Instanzen.
 * Installieren Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** auf Ihrer Marketinginstanz und das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** auf der Ausführungsinstanz.
-* Erstellen Sie ein **externes LINE-Konto** und den entsprechenden **Service** auf beiden Instanzen mit identischen Namen, damit sie synchronisiert werden können. Weiterführende Informationen zum Erstellen eines externen LINE-Kontos und Services finden Sie auf dieser [Seite](../../delivery/using/line-channel.md#creating-a-line-account-and-an-external-account-).
+* Erstellen Sie ein LINE **externes Konto** und **service** auf beiden Instanzen mit identischen Namen, damit sie synchronisiert werden können. Weitere Informationen zum Erstellen eines externen LINE-Kontos und -Dienstes finden Sie in [diesem Abschnitt](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattform]** > **[!UICONTROL Externes Konto]** unterschiedliche externe Konten auf beiden Instanzen:
 
@@ -248,4 +248,4 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
 
 
 
-1. Jetzt können Sie Transaktionsnachrichten erstellen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../message-center/using/creating-the-message-template.md).
+1. Jetzt können Sie [Transaktionsnachrichten erstellen](../../message-center/using/creating-the-message-template.md).
