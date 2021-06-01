@@ -1,38 +1,36 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Schema einer vorhandenen Tabelle
 description: Schema einer vorhandenen Tabelle
 audience: configuration
 content-type: reference
 topic-tags: editing-schemas
-translation-type: tm+mt
-source-git-commit: 972885c3a38bcd3a260574bacbb3f507e11ae05b
+exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '232'
-ht-degree: 9%
+ht-degree: 15%
 
 ---
-
 
 # Schema einer vorhandenen Tabelle{#schema-of-an-existing-table}
 
 ## Übersicht {#overview}
 
-Wenn die Anwendung auf die Daten einer vorhandenen Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
+Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
 
-* Name der Tabelle: Geben Sie den Namen der Tabelle (mit ihrem Alias bei Verwendung eines Datenbanklinks) mit dem Attribut &quot;sqltable&quot;ein,
-* Schema-Schlüssel: auf das/die Abgleichfeld(e) verweisen,
+* Name der Tabelle: Geben Sie den Namen der Tabelle mit dem Attribut &quot;sqltable&quot; ein (mit dem Alias bei Verwendung eines Datenbanklinks),
+* Schemaschlüssel: auf das/die Abstimmfeld(e) verweisen,
 * Indizes: zur Erzeugung von Abfragen verwendet werden,
-* Die Felder und ihr Speicherort in der XML-Struktur: nur die im Antrag verwendeten Felder ausfüllen,
-* Links: , wenn es Verbindungen zu den anderen Tabellen der Basis gibt.
+* Die Felder und ihre Position in der XML-Struktur: nur die im Antrag verwendeten Felder ausfüllen,
+* Links: , wenn es Verbindungen mit den anderen Tabellen der Basis gibt.
 
-## Implementierung{#implementation}
+## Umsetzung {#implementation}
 
-Um das entsprechende Schema zu erstellen, führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 
-1. Bearbeiten Sie den Knoten **[!UICONTROL Administration>Configuration>Data Schemas]** der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
-1. Wählen Sie die Option **[!UICONTROL Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Bearbeiten Sie den Knoten **[!UICONTROL Administration > Konfiguration > Datenschemata]** in der Adobe Campaign-Struktur und klicken Sie auf **[!UICONTROL Neu]** .
+1. Wählen Sie die Option **[!UICONTROL Zugreifen auf Daten aus einer vorhandenen Tabelle oder einer SQL-Ansicht]** und klicken Sie auf **[!UICONTROL Weiter]** .
 
    ![](assets/s_ncs_configuration_extand_a_schema.png)
 
@@ -40,11 +38,11 @@ Um das entsprechende Schema zu erstellen, führen Sie die folgenden Schritte aus
 
    ![](assets/s_ncs_configuration_select_table.png)
 
-1. Passen Sie die Schema-Inhalte an Ihre Anforderungen an.
+1. Passen Sie den Inhalt des Schemas an Ihre Anforderungen an.
 
    ![](assets/s_ncs_configuration_view_create_schema.png)
 
-   Das Schema muss mit dem Attribut &quot;Ansicht=&quot;true&quot;im Stammelement `<srcSchema>` gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert wird.
+   Das Schema muss mit dem Attribut view=&quot;true&quot; im Stammelement `<srcSchema>` gefüllt werden, damit kein SQL-Skript zur Tabellenerstellung generiert werden kann.
 
 **Beispiel** :
 
@@ -61,6 +59,6 @@ Um das entsprechende Schema zu erstellen, führen Sie die folgenden Schritte aus
 
 ## Zugriff auf externe Datenbanken {#accessing-an-external-database}
 
-Mit der Option **Federated Data Access - FDA** können Sie auf die in einer externen Datenbank gespeicherten Daten zugreifen.
+Die Option **Federated Data Access - FDA** bietet Zugriff auf die in einer externen Datenbank gespeicherten Daten.
 
-Die Konfiguration, die auf den Schemas für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, ist in [dieser Seite](../../installation/using/creating-data-schema.md) beschrieben.
+Die Konfiguration, die für den Zugriff auf Daten in einer externen Datenbank durchgeführt werden soll, wird auf [dieser Seite](../../installation/using/creating-data-schema.md) beschrieben.
