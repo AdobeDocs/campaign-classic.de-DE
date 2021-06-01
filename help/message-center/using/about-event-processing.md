@@ -6,7 +6,7 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: b46a483594f210c4530a934194c6d2b73deaeaf9
+source-git-commit: e86350cf12db37e3f2c227563057b97922601729
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 30%
@@ -85,7 +85,7 @@ Im **Ereignisverlauf** unter **[!UICONTROL Message Center]** > **[!UICONTROL Ere
    * Ein Ereignis, das gerade erfasst wurde und noch nicht verarbeitet wurde. Die Spalte **[!UICONTROL Fehleranzahl]** enthält den Wert 0. Die E-Mail-Vorlage wurde noch nicht zugeordnet.
    * Ein verarbeitetes Ereignis, dessen Bestätigung jedoch fehlerhaft ist. Die Spalte **[!UICONTROL Fehleranzahl]** enthält einen Wert, der nicht 0 ist. In der Spalte **[!UICONTROL Verarbeitung angefordert für]** können Sie sehen, wann dieses Ereignis erneut verarbeitet wird.
 
-* **Versand ausstehend**: Das Ereignis wurde verarbeitet und die Versandvorlage wurde verknüpft. Die E-Mail steht vor dem Versand und der klassische Versandprozess wird angewendet. Weitere Informationen erhalten Sie, wenn Sie den  [Versand](../../delivery/using/about-message-tracking.md) öffnen.
+* **Versand ausstehend**: Das Ereignis wurde verarbeitet und die Versandvorlage wurde verknüpft. Die E-Mail steht vor dem Versand und der klassische Versandprozess wird angewendet. Weitere Informationen erhalten Sie, wenn Sie den Versand öffnen möchten.
 * **Gesendet**,  **** Ignoriert und  **Versandfehler**: Diese Versandstatus werden über den  **** updateEventsStatus -Workflow abgerufen. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
 * **Ereignis wurde nicht berücksichtigt**: Die Routing-Phase der Transaktionsnachrichten schlug fehl. Beispielsweise konnte Adobe Campaign die E-Mail, die als Vorlage für das Ereignis dient, nicht finden.
 * **Ereignis ist abgelaufen**: Die maximale Anzahl von Versandversuchen wurde erreicht. Das Ereignis wird als null betrachtet.
