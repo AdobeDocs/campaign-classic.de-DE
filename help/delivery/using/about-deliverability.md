@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Über die Zustellbarkeit in Campaign
 description: Lernen Sie Best Practices zur Zustellbarkeit kennen.
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
 
@@ -33,7 +31,7 @@ Probleme mit der Zustellbarkeit hängen in der Regel mit Maßnahmen zum Schutz v
 
 >[!NOTE]
 >
->Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de), das regelmäßig aktualisiert wird.
+>Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), das regelmäßig aktualisiert wird.
 
 ### Zustellrate
 
@@ -60,9 +58,9 @@ Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zus
 Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den folgenden Abschnitten aufgeführten Best Practices. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Zustellbarkeit zu verbessern.
 
 * [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md)
-* [E-Mail-Inhalte kontrollieren](../../delivery/using/control-message-content.md)
+* [Kontrollieren von E-Mail-Inhalten](../../delivery/using/control-message-content.md)
 * [Inbox Rendering](../../delivery/using/inbox-rendering.md)
-* [Testversand durchführen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+* [Durchführen eines Testversands](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
 
 ### Einverständnis durch doppelten Opt-in überprüfen{#double-opt-in}
 
@@ -82,7 +80,7 @@ Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Ursachen für Fehler beim Versand](../../delivery/using/understanding-delivery-failures.md)
+* [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
 * [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md)
 * [Quarantäne vs. Blockierungsliste](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
 
@@ -94,7 +92,7 @@ Mit Adobe Campaign können Sie die Leistung Ihrer Sendungen anhand einer Reihe i
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Zustellbarkeit überwachen](../../delivery/using/monitoring-deliverability.md)
+* [Überwachen der Zustellbarkeit](../../delivery/using/monitoring-deliverability.md)
 * [Über die Versandverfolgung](../../delivery/using/about-delivery-monitoring.md)
 * [Über native Berichte in Campaign](../../reporting/using/about-campaign-built-in-reports.md)
 
