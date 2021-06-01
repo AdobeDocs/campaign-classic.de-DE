@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Layout
 description: Layout
@@ -7,9 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 100%
 
@@ -69,11 +67,11 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
-* **content.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
+* **Inhalt.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
 * **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
 * **content.chapter`[0]`.@name**: gibt den Namen des ersten Elements von `<chapter>` aus
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
-* **chapter.parent().name()**: gibt den Namen des Elternelements von `<chapter>` aus
+* **chapter.parent().name()**: gibt den Namen des übergeordneten Elements von `<chapter>` aus
 
 >[!CAUTION]
 >
