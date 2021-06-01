@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Campaign-Microsoft Dynamics CRM-Connector
 description: Campaign und Microsoft Dynamics verbinden
@@ -7,9 +6,8 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-translation-type: ht
-source-git-commit: 37802e52f1d1d38d9c3d59c439f23114a594bfef
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 100%
 
@@ -38,7 +36,7 @@ In Microsoft Dynamics CRM:
 1. Anwender erstellen
 1. Privaten Schlüssel kodieren
 
-[Weitere Informationen finden Sie in diesem Abschnitt](#config-crm-microsoft)
+[Weiterführende Informationen finden Sie in diesem Abschnitt](#config-crm-microsoft)
 
 In Campaign Classic:
 1. Neues externes Konto erstellen
@@ -46,14 +44,14 @@ In Campaign Classic:
 1. Konfigurationsassistenten nutzen, um Tabellen zuzuordnen und Auflistungen zu synchronisieren
 1. Synchronisations-Workflows erstellen
 
-[Weitere Informationen finden Sie in diesem Abschnitt](#configure-acc-for-microsoft).
+[Weiterführende Informationen finden Sie in diesem Abschnitt](#configure-acc-for-microsoft)
 
 
 >[!CAUTION]
->
 > Bei der Verbindung von Adobe Campaign mit Microsoft Dynamics können Sie Folgendes nicht tun:
 > * Plugins installieren, die das Verhalten des CRM verändern; dadurch könnte es zu Kompatibilitätsproblemen mit Adobe Campaign kommen
 > * Mehrere Auflistungen auswählen
+
 >
 
 
