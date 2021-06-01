@@ -1,21 +1,19 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Elemente und Attribute
 description: Elemente und Attribute
 audience: configuration
 content-type: reference
 topic-tags: schema-reference
-translation-type: tm+mt
-source-git-commit: 922257b157f8d76d6e703b0510ff689d1aa4d067
+exl-id: 0fb74318-fe09-473c-8e33-1f3afd66b4cc
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 4%
 
 ---
 
-
-# method element {#method--element}
+# Methodenelement {#method--element}
 
 ## Inhaltsmodell {#content-model-10}
 
@@ -23,21 +21,21 @@ Methode:==( help | Parameter)
 
 ## Attribute {#attributes-10}
 
-* @_operation (Zeichenfolge)
-* @access (Zeichenfolge)
+* @_operation (string)
+* @access (string)
 * @const (boolean)
 * @hidden (boolean)
-* @label (Zeichenfolge)
+* @label (string)
 * @library (string)
 * @name (MNTOKEN)
 * @pkonly (boolean)
 * @static (boolean)
 
-## Eltern {#parents-10}
+## Übergeordnete Elemente {#parents-10}
 
 `<methods>`  ,  `<interface />`
 
-## Kinder {#children-10}
+## Untergeordnetes Element {#children-10}
 
 * `<help>`
 * `<parameters>`
@@ -50,20 +48,20 @@ Mit diesem Element können Sie eine SOAP-Methode definieren.
 
 SOAP-Methoden ermöglichen Anwendungsprozesse.
 
-Die &quot;@library&quot;ist erforderlich, um eine neue Methode zu deklarieren (nicht native): der Namensraum und der Bibliotheksname sind unabhängig vom Namensraum und vom Namen des Schemas, in dem die Deklaration enthalten ist.
+Die &quot;@library&quot;ist zum Deklarieren einer neuen Methode (nicht nativ) erforderlich: der Namespace und der für die Bibliothek verwendete Name sind unabhängig vom Namespace und Namen des Schemas, in dem sich die Deklaration befindet.
 
 ## Attributbeschreibung {#attribute-description-10}
 
-* **access (Zeichenfolge)**: Dieses Attribut definiert die Zugriffskontrolle für die Verwendung der Methode. Wenn dieses Attribut fehlt, ist die Identifizierung obligatorisch. Verfügbare Werte sind: &#39;anonymous&#39;, &#39;admin&#39; und &#39;sql&#39;.
+* **access (string)**: Dieses Attribut definiert die Zugriffskontrolle für die Verwendung der -Methode. Wenn dieses Attribut fehlt, ist eine Identifizierung erforderlich. Verfügbare Werte sind: &#39;anonymous&#39;, &#39;admin&#39; und &#39;sql&#39;.
 * **const (boolean)**: Wenn es aktiviert ist, bedeutet dieses Attribut, dass die deklarierte Methode die Entität ändert
-* **label (Zeichenfolge)**: Bezeichnung der Methode.
-* **library (string)**: Diese Methode ist nicht nativ für die Anwendung. Dieses Attribut nimmt den Wert der Methodenbibliothek ein, in der die Methodendefinition gefunden wird (nms:mylibrary.js).
+* **label (string)**: Titel der Methode.
+* **library (string)**: Diese Methode ist nicht nativ für die Anwendung. Dieses Attribut nimmt den Wert der Methodenbibliothek an, in der die Methodendefinition gefunden wird (nms:mylibrary.js).
 * **name (MNTOKEN)**: eindeutiger Methodenname.
-* **statisch (boolean)**: Wenn dieses Attribut aktiviert ist, wird die Methode als autonom betrachtet, müssen alle Parameter bei Aufruf der Methode angegeben werden.
+* **static (boolean)**: Wenn dieses Attribut aktiviert ist, gilt die Methode als autonom, alle Parameter müssen der Methode zum Zeitpunkt des Aufrufs zugewiesen werden.
 
 ## Beispiele {#examples-7}
 
-Definition der Out-of-the-Box-Methode &quot;Abonnieren&quot;:
+Definition der vordefinierten Anmeldemethode:
 
 ```
  
