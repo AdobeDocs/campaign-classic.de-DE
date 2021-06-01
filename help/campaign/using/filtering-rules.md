@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Filterregeln
 description: Filterregeln
@@ -7,9 +6,8 @@ audience: campaign
 content-type: reference
 topic-tags: campaign-optimization
 exl-id: a4d12445-5680-4704-9c67-e43e0ea6631b
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
 
@@ -84,7 +82,7 @@ Im unteren Bereich des gleichen Tabs können Sie zudem einzelne Filterregeln hin
 >Diese Konfigurationen können in Versandvorlagen vorgenommen werden, um sie automatisch bei jedem mithilfe dieser Vorlagen erstellten Versand anzuwenden.
 
 
-## Standardmäßige Ausschlussregeln für Zustellbarkeit     {#default-deliverability-exclusion-rules}
+## Standardmäßige Ausschlussregeln für Zustellbarkeit      {#default-deliverability-exclusion-rules}
 
 Standardmäßig sind zwei Filterregeln verfügbar: **[!UICONTROL Ausschluss der Adressen]** (**[!UICONTROL addressExclusions]**) und **[!UICONTROL Ausschluss der Domains]** (**[!UICONTROL domainExclusions]**). Während der E-Mail-Analyse werden die E-Mail-Adressen der Empfänger anhand dieser Regeln mit den verbotenen Adressen oder Domain-Namen in einer verschlüsselten globalen in der Versandinstanz verwalteten Unterdrückungsliste verglichen. Wenn es eine Übereinstimmung gibt, wird die Nachricht nicht an den entsprechenden Empfänger gesendet.
 
