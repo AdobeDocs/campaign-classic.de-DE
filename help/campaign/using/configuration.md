@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: 'Konfiguration '
 description: 'Konfiguration '
@@ -7,15 +6,14 @@ audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
 
 ---
 
-# Konfiguration{#configuration}
+# Konfiguration {#configuration}
 
 Dieses Kapitel richtet sich an die für die Konfiguration der Reaktionsverwaltung zuständigen Benutzer. Die Umsetzung dieser Konfiguration erfordert Kenntnisse über Schemaerweiterung, Workflow-Erstellung und -Verwaltung sowie SQL-Programmierung.
 
