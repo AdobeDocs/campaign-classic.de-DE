@@ -46,8 +46,10 @@ _22. Dezember 2020_
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
 > * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte OAuth-Authentifizierungsmodus mit Campaign wird am **30. November 2021** eingestellt.
+
 >
->Weitere Informationen finden Sie in den häufig gestellten Fragen zum [[!DNL Gold Standard] -Upgrade auf Version 11](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html).
+>
+Weitere Informationen finden Sie in den häufig gestellten Fragen zum [[!DNL Gold Standard] -Upgrade auf Version 11](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html).
 
 Der Build 9032@d3b452f umfasst die folgenden Verbesserungen und Fehlerbehebungen:
 
