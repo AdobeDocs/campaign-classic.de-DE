@@ -47,7 +47,7 @@ Gehen Sie hierzu wie folgt vor:
    >Eine Umgebung kann mehrere Instanzen enthalten. Jede Adobe Campaign-Instanz unterliegt einem Lizenzvertrag. Überprüfen Sie Ihren Lizenzvertrag, um zu sehen, wie viele Umgebungen Sie nutzen können.\
    >Mit dem unten beschriebenen Verfahren können Sie eine Umgebung übertragen, ohne die Anzahl der installierten Umgebungen und Instanzen zu beeinträchtigen.
 
-### Bevor Sie starten {#before-you-start}
+### Bevor Sie {#before-you-start} starten
 
 >[!IMPORTANT]
 >
@@ -67,6 +67,7 @@ Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige P
 >
 >* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Sprache unterschiedlich ist (z. B. Oracle), müssen die SQL-Abfragen angepasst werden.
 >* Die folgenden Befehle gelten im Kontext einer **prod**-Instanz und einer **dev**-Instanz unter PostgreSQL.
+
 >
 
 
@@ -184,7 +185,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Schritt 7: Starten Sie den Webprozess der Zielumgebung (dev) neu. {#step-7---restart-the-target-environment-web-process--dev-}
+### Schritt 7: Starten Sie den Webprozess der Zielumgebung (dev) {#step-7---restart-the-target-environment-web-process--dev-} neu.
 
 Starten Sie in der Zielumgebung die Adobe Campaign-Prozesse für alle Server neu.
 
