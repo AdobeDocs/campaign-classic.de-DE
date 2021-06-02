@@ -93,7 +93,6 @@ vacuum full nmsdelivery;
 >* Die Befehle **vaku** und **re-index** sperren die Tabelle, wodurch einige Prozesse während der Wartung angehalten werden.
 >* Bei sehr großen Tabellen (typischerweise über 5 GB) kann **vakuumvoll** ziemlich ineffizient werden und sehr lange dauern. Es wird von Adobe nicht empfohlen, sie für die Tabelle **YyyNmsBroadLogXxx** zu verwenden.
 >* Dieser Wartungsvorgang kann von einem Adobe Campaign-Workflow mithilfe einer **[!UICONTROL SQL]**-Aktivität implementiert werden (weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../workflow/using/architecture.md)). Stellen Sie sicher, dass Sie die Wartung für eine niedrige Aktivitätsdauer planen, die nicht mit Ihrem Sicherungsfenster kollidiert.
-
 >
 
 
