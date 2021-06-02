@@ -22,6 +22,7 @@ Ermitteln und bestätigen Sie vor dem Starten des Aktualisierungsprozesses, auf 
 >* Adobe empfiehlt dringend, vor der Aktualisierung eine Datenbanksicherung für jede Instanz durchzuführen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../production/using/backup.md).
 >* Um eine Aktualisierung durchzuführen, stellen Sie sicher, dass Sie über die Möglichkeit und die Berechtigung zum Zugriff auf Instanzen und Protokolle verfügen.
 >* Lesen Sie [diesen Abschnitt](../../installation/using/general-architecture.md) und das Kapitel [Build-Upgrade](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) , bevor Sie beginnen.
+
 >
 
 
@@ -48,7 +49,6 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
       **iisreset /stop**
 
    * Adobe-Campaign-Dienst: **net stop nlserver6**
-
    >[!IMPORTANT]
    >
    >Außerdem müssen Sie sicherstellen, dass der Weiterleitungsserver (webmdl) angehalten wird, damit die von IIS verwendete Datei **nlsrvmod.dll** durch die neue Version ersetzt werden kann.
@@ -127,7 +127,7 @@ Beginnen Sie mit der Wiederherstellung der beiden aktualisierten Pakete von Adob
 
 Die Datei ist **nlserver6-v7-XXX.rpm**
 
-### Führen Sie eine Aktualisierung durch. {#perform-an-update}
+### Führen Sie eine Aktualisierung {#perform-an-update} durch.
 
 * RPM-basierte Verteilung (RedHat, SuSe)
 
@@ -157,7 +157,7 @@ Die Datei ist **nlserver6-v7-XXX.rpm**
 >
 >Die vollständigen Installationsverfahren werden in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md) beschrieben. Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Upgrade-Konflikten](#resolving-upgrade-conflicts).
 
-### Starten Sie den Webserver neu. {#reboot-the-web-server}
+### Starten Sie den Webserver {#reboot-the-web-server} neu.
 
 Sie müssen Apache herunterfahren, damit die neue Bibliothek angewendet wird.
 
@@ -171,8 +171,10 @@ Führen Sie dazu den folgenden Befehl aus:
 >
 >* Ihr Skript könnte **httpd** anstelle von **apache** heißen.
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
->
->   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
+
+   >
+   >   
+   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
 
 
 Starten Sie dann Apache neu:
