@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
 source-wordcount: '4416'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -25,11 +25,11 @@ Der Abschnitt **Transaktionsnachrichten** wurde umstrukturiert und mit einem neu
 
 ## Mai 2021 {#may-2021}
 
-Die Dokumentation zum Workflow-Heatmap-Bericht wurde aktualisiert und verbessert - [Mehr dazu](../../workflow/using/heatmap.md)
+Die Dokumentation zum Workflow-Heatmap-Bericht wurde aktualisiert und verbessert. [Mehr dazu](../../workflow/using/heatmap.md)
 
 Die Anforderungen an die Client-Konsole von Campaign wurden in der Kompatibilitätsmatrix aktualisiert. [Mehr dazu](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
 
-Die Installation der Campaign Client Console für Schritte wurde verbessert und klarer gestaltet. [Mehr dazu](../../installation/using/installing-the-client-console.md)
+Die Installationsschritte für die Client-Konsole von Campaign wurden verbessert und verdeutlicht. [Mehr dazu](../../installation/using/installing-the-client-console.md)
 
 Es wurde eine neue Technote zum Signaturproblem für getrackte URLs erstellt. [Mehr dazu](../../technotes/tracked-urls.md)
 
@@ -37,7 +37,7 @@ Es wurde eine neue Technote zum Signaturproblem für getrackte URLs erstellt. [M
 
 Ein neuer Abschnitt beschreibt die Verwendung von Adobe Experience Platform-Quellen und -Zielen, um Daten zwischen Campaign Classic und der Echtzeit-Kundendatenplattform (RTCDP) von Adobe auszutauschen. [Mehr dazu](../../integrations/using/get-started-sources-destinations.md)
 
-Es wurde eine neue Technote erstellt, in der erklärt wird, wie die Bounce-Qualifizierung nach einem ISP-Ausfall aktualisiert werden kann - [Mehr dazu](../../delivery/using/update-bounce-qualification.md)
+Es wurde eine neue Technote erstellt, in der erklärt wird, wie die Bounce-Qualifizierung nach einem ISP-Ausfall aktualisiert werden kann. [Mehr dazu](../../delivery/using/update-bounce-qualification.md)
 
 ## März 2021 {#march-2021}
 
@@ -134,7 +134,7 @@ Auf der Seite zur Mid-Sourcing-Server-Konfiguration wurde ein Hinweis hinzugefü
 
 Es wurden Informationen zur Syntax hinzugefügt, die beim Festlegen eines Pfades zu einem externen SFTP-Server verwendet werden muss. [Mehr dazu](../../platform/using/sftp-server-usage.md#external-SFTP-server)
 
-Der Abschnitt über persönliche Daten und Personen wurde um ein Verwendungsfallszenario bereichert, um zu veranschaulichen, wie die verschiedenen Personen in Bezug auf die Privatsphäre interagieren. [mehr dazu](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
+Der Abschnitt über persönliche Daten und Personen wurde um ein Verwendungsfallszenario bereichert, um zu veranschaulichen, wie die verschiedenen Personen in Bezug auf die Privatsphäre interagieren. [Mehr dazu](../../platform/using/privacy-and-recommendations.md#use-case-scenario)
 
 Ein neuer Abschnitt mit häufig gestellten Fragen zum Datenschutz wurde hinzugefügt – [Mehr dazu](../../platform/using/privacy-faq.md)
 
@@ -146,7 +146,7 @@ Verbesserungen bei Push-Benachrichtigungen für iOS – [mehr dazu](../../delive
 
 Verbesserungen bei Push-Benachrichtigungen für Android – [mehr dazu](../../delivery/using/configuring-the-mobile-application-android.md)
 
-**Weitere Aktualisierungen der Dokumentation zu dieser Version**
+**Weitere Dokumentationsaktualisierungen zu dieser Version**
 
 Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](../../rn/using/compatibility-matrix.md)
 
@@ -171,25 +171,25 @@ Die On-Premise-, gehosteten und hybriden Hosting-Modelle von Campaign werden jet
 
 Die Funktionsmatrix pro Campaign-Hosting-Modell wurde aktualisiert und in das Installationshandbuch verschoben. [Mehr dazu](../../installation/using/capability-matrix.md)
 
-Der Abschnitt mit den erweiterten Funktionen von Campaign Reporting wurde verbessert, um genau zu zeigen, wie sich URL-Parameter und Variablen in benutzerspezifischen Berichten verwenden lassen – [mehr dazu](../../reporting/using/advanced-functionalities.md)
+Der Abschnitt mit den erweiterten Funktionen von Campaign Reporting wurde verbessert, um genau zu zeigen, wie sich URL-Parameter und Variablen in benutzerspezifischen Berichten verwenden lassen – [Mehr dazu](../../reporting/using/advanced-functionalities.md)
 
-Die Seite mit den Berichtseigenschaften wurde neu organisiert und erweitert, um die Konfiguration zu erleichtern – [mehr dazu](../../reporting/using/properties-of-the-report.md)
+Die Seite mit den Berichtseigenschaften wurde neu organisiert und erweitert, um die Konfiguration zu erleichtern – [Mehr dazu](../../reporting/using/properties-of-the-report.md)
 
-Es wurde eine neue Technote mit Details zur Migration vom Legacy-Binärprotokoll zur HTTP/2-basierten APNs Provider-API erstellt – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)
+Es wurde eine neue Technote mit Details zur Migration vom Legacy-Binärprotokoll zur HTTP/2-basierten APNs Provider-API erstellt – [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html)
 
 ## September 2020 {#september-2020}
 
-Es wurde ein Hinweis hinzugefügt, dass die Anzahl der aktiven Profile nur für Marketing-Instanzen verfügbar ist – [mehr dazu](../../platform/using/about-profiles.md#active-profiles)
+Es wurde ein Hinweis hinzugefügt, dass die Anzahl der aktiven Profile nur für Marketing-Instanzen verfügbar ist – [Mehr dazu](../../platform/using/about-profiles.md#active-profiles)
 
-Es wurde ein neues Beispiel zur Schemabearbeitung hinzugefügt, um ein Feld mit einer vorhandenen Referenztabelle zu verknüpfen – [mehr dazu](../../configuration/using/examples-of-schemas-edition.md#uc-link)
+Es wurde ein neues Beispiel zur Schemabearbeitung hinzugefügt, um ein Feld mit einer vorhandenen Referenztabelle zu verknüpfen – [Mehr dazu](../../configuration/using/examples-of-schemas-edition.md#uc-link)
 
-Es wurde ein Hinweis zur Verwendung zusätzlicher Daten mit Testadressen in Sendungen hinzugefügt – [mehr dazu](../../delivery/using/creating-seed-addresses.md#defining-addresses)
+Es wurde ein Hinweis zur Verwendung zusätzlicher Daten mit Testadressen in Sendungen hinzugefügt – [Mehr dazu](../../delivery/using/creating-seed-addresses.md#defining-addresses)
 
 ## August 2020 {#aug-2020}
 
-Informationen zu Best Practices im Zusammenhang mit der Versandgestaltung und dem Versand mit Campaign finden Sie in einem eigenen Abschnitt – [mehr dazu](../../delivery/using/delivery-best-practices.md)
+Informationen zu Best Practices im Zusammenhang mit der Versandgestaltung und dem Versand mit Campaign finden Sie in einem eigenen Abschnitt – [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
-Die Landingpage für die Best Practices für die Zustellbarkeit wurde verbessert, um den Zugriff auf Unterabschnitte zu erleichtern – [mehr dazu](../../delivery/using/about-deliverability.md)
+Die Landingpage für die Best Practices für die Zustellbarkeit wurde verbessert, um den Zugriff auf Unterabschnitte zu erleichtern – [Mehr dazu](../../delivery/using/about-deliverability.md)
 
 Zu den folgenden Themen sind jetzt Anleitungsvideos verfügbar:
 
@@ -213,7 +213,7 @@ Zu den folgenden Themen sind jetzt Anleitungsvideos verfügbar:
 
 * [Einrichten eines Versands (fortlaufend)](../../workflow/using/continuous-delivery.md)
 
-Es wurden Informationen zu den Prüfungen und Aktionen hinzugefügt, die durchzuführen sind, wenn der Fehler &quot;Hostname konnte nicht aufgelöst werden&quot; nach der Verbindung zu einem FTP-Server auftritt – [mehr dazu](../../platform/using/sftp-server-usage.md)
+Es wurden Informationen zu den Prüfungen und Aktionen hinzugefügt, die durchzuführen sind, wenn der Fehler &quot;Hostname konnte nicht aufgelöst werden&quot; nach der Verbindung zu einem FTP-Server auftritt – [Mehr dazu](../../platform/using/sftp-server-usage.md)
 
 In der Liste der [Workflow-Anwendungsfälle](../../workflow/using/about-workflow-use-cases.md) wurden neue Anwendungsfälle referenziert:
 
@@ -222,7 +222,7 @@ In der Liste der [Workflow-Anwendungsfälle](../../workflow/using/about-workflow
 * Aufrufen von Instanzvariablen in Abfragen
 * Anwenden einer prozentualen Aufspaltung auf eine Population
 
-Der Abschnitt über die **[!UICONTROL Und-Verknüpfungsaktivität]** wurde um zusätzliche Informationen über deren Verwendung sowie um einen Hinweis zur Verwendung von Variablen erweitert – [mehr dazu](../../workflow/using/and-join.md)
+Der Abschnitt über die **[!UICONTROL Und-Verknüpfungsaktivität]** wurde um zusätzliche Informationen über deren Verwendung sowie um einen Hinweis zur Verwendung von Variablen erweitert – [Mehr dazu](../../workflow/using/and-join.md)
 
 ## Juli 2020 {#july-2020}
 
@@ -274,13 +274,13 @@ Die Parameter für den neuen Trackinglink-Signaturmechanismus wurden dem Abschni
 
 Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-Der Abschnitt zum Bereinigungs-Workflow wurde aktualisiert. [Weitere Infos](../../production/using/database-cleanup-workflow.md)
+Der Abschnitt zum Bereinigungs-Workflow wurde aktualisiert. [Mehr dazu](../../production/using/database-cleanup-workflow.md)
 
 Die Campaign-Netzwerkendpunkte wurden in diesen [Abschnitt](../../installation/using/campaign-network-endpoints.md) verschoben.
 
-Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Weitere Infos](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Mehr dazu](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
-Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Weitere Infos](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
+Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Mehr dazu](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 ## Mai 2020 {#may-2020}
 
@@ -450,7 +450,7 @@ Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisier
 
 ## Oktober 2019 {#october-2019}
 
-Die Liste der Fehlermeldungen für Campaign wurde aktualisiert – [mehr dazu](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Die Liste der Fehlermeldungen für Campaign wurde aktualisiert – [Mehr dazu](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
 
 Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA. [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
 
