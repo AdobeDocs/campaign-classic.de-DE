@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Zielgruppen synchronisieren
-description: Zielgruppen synchronisieren
+title: Synchronisieren von Audiences
+description: Synchronisieren von Audiences
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
@@ -9,13 +9,13 @@ exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '1206'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Zielgruppen synchronisieren{#synchronizing-audiences}
+# Synchronisieren von Audiences{#synchronizing-audiences}
 
-Sie können mit den erweiterten Funktionen von Campaign v7 eine umfangreiche Liste erstellen und als Zielgruppe direkt und in Echtzeit in Campaign Standard freigeben (einschließlich zusätzlicher Daten). Ihr Campaign-Standard-Benutzer kann dann die Zielgruppe in Adobe Campaign Standard verwenden.
+Sie können mit den erweiterten Funktionen von Campaign v7 eine umfangreiche Liste erstellen und als Audience direkt und in Echtzeit in Campaign Standard freigeben (einschließlich zusätzlicher Daten). Ihr Campaign-Standard-Benutzer kann dann die Audience in Adobe Campaign Standard verwenden.
 
 Eine komplexe Zielgruppenbestimmung einschließlich zusätzlicher Daten, die nicht in Campaign Standard repliziert werden, kann nur mithilfe von Campaign v7 durchgeführt werden.
 
@@ -46,7 +46,7 @@ Nachdem die Zielgruppe und ihre zusätzlichen Daten definiert wurden, können si
 >
 >Dies ist ein Beispiel. Je nach Anforderungen können Sie eine Empfängerliste einfach abfragen und in ACS ohne jegliche Weiterverarbeitung freigeben. Sie können zur Erstellung Ihrer endgültigen Zielgruppe auch andere Datenverwaltungsaktivitäten nutzen.
 
-Gehen Sie folgendermaßen vor, um die endgültige Zielgruppe und ihre zusätzlichen Daten zu erhalten:
+Gehen Sie folgendermaßen vor, um die endgültige Audience und ihre zusätzlichen Daten zu erhalten:
 
 1. Erstellen Sie einen neuen Workflow in **[!UICONTROL Profile und Zielgruppen]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Zielgruppen-Workflow]**.
 1. Fügen Sie die Aktivität **[!UICONTROL Abfrage]** hinzu und wählen Sie die Empfänger aus, denen Sie die E-Mail senden möchten, wie z. B. alle Empfänger zwischen 18 und 30 Jahren, die in Frankreich leben.
@@ -114,10 +114,10 @@ Sobald der Zielgruppen-Workflow in Campaign v7 ausgeführt wird, finden Sie die 
 
 ![](assets/acs_connect_deliveryworkflow_audience.png)
 
-Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie dann diese Zielgruppe sowie die darin enthaltenen zusätzlichen Daten in einem Versand verwenden.
+Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie dann diese Audience sowie die darin enthaltenen zusätzlichen Daten in einem Versand verwenden.
 
 1. Erstellen Sie einen neuen Workflow im Menü **[!UICONTROL Marketingaktivitäten]**.
-1. Fügen Sie die Aktivität **[!UICONTROL Zielgruppe lesen]** hinzu und wählen Sie die zuvor von Campaign v7 übertragene Zielgruppe aus.
+1. Fügen Sie die Aktivität **[!UICONTROL Zielgruppe lesen]** hinzu und wählen Sie die zuvor von Campaign v7 übertragene Audience aus.
 
    Mit dieser Aktivität können Daten aus der ausgewählten Audience abgerufen werden. Sie können bei Bedarf auch eine zusätzliche **[!UICONTROL Filterung der Quelle]** anwenden, indem Sie den entsprechenden Tab dieser Aktivität auswählen.
 
@@ -137,15 +137,15 @@ Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie da
 
 ## Versand durchführen und überwachen {#send-and-monitor-your-delivery}
 
-Sobald der Versand und sein Inhalt fertig sind, senden Sie den Versand:
+Sobald der Versand und sein Inhalt vorbereitet sind, führen Sie den Versand aus:
 
 1. Führen Sie den Versand-Workflow aus. In diesem Schritt werden die E-Mails für den Versand vorbereitet.
 1. Bestätigen Sie manuell im Versand-Dashboard, dass der Versand durchgeführt werden kann.
 1. Überwachen Sie die Berichte und Logs des Versandes:
 
-   * **In Campaign Standard**: die üblichen [Berichte](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html) und [Logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html) in Verbindung mit dem Versand
+   * **In Campaign Standard**: die üblichen [Berichte](https://experienceleague.adobe.com/docs/campaign-standard/using/reporting/about-reporting/about-dynamic-reports.html?lang=de) und [Logs](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/monitoring-a-delivery.html?lang=de) in Verbindung mit dem Versand
    * **in Campaign v7 und Campaign Standard**: Versandkennungen, E-Mail-Broadlogs und E-Mail-Trackinglogs werden mit Campaign v7 synchronisiert. Dies ermöglicht einen umfassenden Überblick Ihrer Marketingkampagnen in Campaign v7.
 
       Quarantänen werden automatisch nach Campaign v7 zurücksynchronisiert. Dadurch können Unzustellbarkeitsinformationen bei der nächsten Zielgruppenbestimmung in Campaign v7 berücksichtigt werden.
 
-      Mehr Informationen zur Quarantäneverwaltung in Campaign Standard finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=en).
+      Mehr Informationen zur Quarantäneverwaltung in Campaign Standard finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
