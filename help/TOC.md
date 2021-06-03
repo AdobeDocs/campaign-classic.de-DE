@@ -10,12 +10,12 @@ type: Documentation
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2477'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 
-# Dokumentation zu Adobe Campaign Classic v7 {#using}
+# Adobe Campaign Classic v7 – Dokumentation {#using}
 
 + [Dokumentation zu Campaign v7](campaign-classic-home.md)
 + [Neueste Aktualisierungen](rn/using/documentation-updates.md)
@@ -196,7 +196,7 @@ ht-degree: 98%
          + [Konfigurieren des Populationsmusters](delivery/using/a-b-testing-uc-population-samples.md)
          + [Versandvorlagen erstellen](delivery/using/a-b-testing-uc-delivery-templates.md)
          + [Sendungen konfigurieren](delivery/using/a-b-testing-uc-configuring-deliveries.md)
-         + [Skript erstellen](delivery/using/a-b-testing-uc-script.md)
+         + [Script erstellen](delivery/using/a-b-testing-uc-script.md)
          + [Endgültigen Versand definieren](delivery/using/a-b-testing-uc-final-delivery.md)
          + [Workflow starten](delivery/using/a-b-testing-uc-start-workflow.md)
          + [Ergebnis analysieren](delivery/using/a-b-testing-uc-analyzing.md)
@@ -479,7 +479,7 @@ ht-degree: 98%
          + [Laden des Versandinhalts](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring  {#monitoring}
+      + Monitoring   {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -508,7 +508,7 @@ ht-degree: 98%
    + Fortgeschrittene Optionen {#advanced-management}
       + [Workflow-Eigenschaften](workflow/using/workflow-properties.md)
       + [Erweiterte Parameter](workflow/using/advanced-parameters.md)
-      + [JavaScript-Skripts und -Vorlagen](workflow/using/javascript-scripts-and-templates.md)
+      + [JavaScript-Scripts und -Vorlagen](workflow/using/javascript-scripts-and-templates.md)
       + [Auf eine externe Datenbank zugreifen](workflow/using/accessing-an-external-database--fda-.md)
       + [Verwalten von Berechtigungen](workflow/using/managing-rights.md)
       + [Verwalten von Aktivitätsbildern](workflow/using/managing-activity-images.md)
@@ -617,7 +617,7 @@ ht-degree: 98%
       + [Erste Schritte mit Sicherheit und Datenschutz](installation/using/get-started-security-privacy.md)
       + [Personalisierung und Datenschutz](installation/using/privacy.md)
       + [Sichere Zugriffsverwaltung](installation/using/access-management.md)
-      + [Richtlinien für Skripterstellung und Codierung](installation/using/scripting-coding-guidelines.md)
+      + [Richtlinien für Script-Erstellung und Codierung](installation/using/scripting-coding-guidelines.md)
       + [Netzwerk, Datenbank und SSL/TLS](installation/using/network-database.md)
       + [Sicherheitseinstellungen des Servers](installation/using/server-configuration.md)
       + [Sicherheitseinstellungen des Webservers](installation/using/web-server-configuration.md)
@@ -715,7 +715,7 @@ ht-degree: 98%
       + [Zu Unicode wechseln](production/using/switching-to-unicode.md)
       + [Migrationsverfahren](production/using/migration-procedures.md)
    + Wartung der Datenbank {#database-maintenance}
-      + [Recommendations](production/using/recommendations.md)
+      + [Empfehlungen](production/using/recommendations.md)
       + [Zu wartende Tabellen](production/using/tables-to-maintain.md)
       + [Arten der Wartung](production/using/types-of-maintenance.md)
       + [RDBMS-spezifische Empfehlungen](production/using/rdbms-specific-recommendations.md)
