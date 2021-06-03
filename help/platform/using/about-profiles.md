@@ -9,7 +9,7 @@ exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '925'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ In Adobe Campaign sind die Standardprofile für Sendungen (E-Mails, SMS usw.) di
 
 ## Profiltypen {#profile-types}
 
-Die Adobe-Campaign-Plattform ermöglicht die Verwaltung von Profilen über den gesamten Zyklus hinweg, von der Erstellung oder dem Import über Zielgruppenbestimmung und Tracking bis hin zur Aktualisierung und anderen Aktivitäten.
+Die Adobe Campaign-Plattform ermöglicht die Verwaltung von Profilen über den gesamten Zyklus hinweg, von der Erstellung oder dem Import über Zielgruppenbestimmung und Tracking bis hin zur Aktualisierung und anderen Aktivitäten.
 
 Ein Profil entspricht einem Datensatz in der Datenbank, der alle nötigen Informationen enthält, um einen Kontakt zu qualifizieren, zu verfolgen und in Zielgruppen einzubeziehen.
 
@@ -63,7 +63,7 @@ Außerdem haben Sie an dieser Stelle Zugriff auf:
 
 Über die Empfängerseite sind die gängigsten Aktionen möglich. Sie können Profile bearbeiten, aktualisieren, sortieren, löschen oder neue Profile erstellen.
 
-Erweiterte Funktionalitäten stehen über den Navigationsbaum zur Verfügung. Klicken Sie hierfür auf die **[!UICONTROL Explorer]**-Schaltfläche in der Symbolleiste der Adobe-Campaign-Startseite.
+Erweiterte Funktionalitäten stehen über den Navigationsbaum zur Verfügung. Klicken Sie hierfür auf die **[!UICONTROL Explorer]**-Schaltfläche in der Symbolleiste der Adobe Campaign-Startseite.
 
 Standardmäßig sind die Empfänger im Verzeichnisknoten **[!UICONTROL Profile und Zielgruppen > Empfänger]** gespeichert. Sie haben an dieser Stelle nicht nur die Möglichkeit, Empfänger zu erstellen, sondern auch
 
@@ -97,13 +97,13 @@ Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typolog
 >
 >Die Kanäle Facebook und Twitter werden nicht berücksichtigt.
 
-Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]** , um einen Überblick über die Anzahl der aktiven Profile zu erhalten. Die tatsächliche Anzahl wird von der **[!UICONTROL Anzahl der aktiven Abrechnungsprofile]** ([!UICONTROL billingActiveContactCount]) [technischer Workflow](../../workflow/using/about-technical-workflows.md) ausgeführt. Dieser Workflow wird täglich ausgeführt und fügt die neuen Daten zum vorhandenen Bericht für den aktuellen Zeitraum im Ordner **[!UICONTROL Kundenmetriken]** hinzu.
+Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]**, um einen Überblick über die Anzahl der aktiven Profile zu erhalten. Die tatsächliche Zählung wird durch den [technischen Workflow](../../workflow/using/about-technical-workflows.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** ([!UICONTROL billingActiveContactCount]) ausgeführt. Dieser Workflow wird täglich ausgeführt und fügt die neuen Daten zum vorhandenen Bericht für den aktuellen Zeitraum im Ordner **[!UICONTROL Kundenmetriken]** hinzu.
 
 Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
 
 >[!NOTE]
 >
->Sie können die Anzahl der aktiven Profile in Ihrer Instanz auch direkt über das Campaign Control Panel überwachen. Weitere Informationen hierzu finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de).
+>Sie können auch die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Control Panel von Campaign überwachen. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de).
 
 ## Anleitungsvideo {#create-profiles-video}
 
@@ -125,4 +125,4 @@ Weitere Anleitungsvideos zu Campaign Classic finden Sie [hier](https://experienc
 
 * [Auswählen von Zielgruppen-Mapping](../../delivery/using/selecting-a-target-mapping.md)
 
-* [Bestimmen der Zielgruppe – Best Practices](../../delivery/using/define-the-right-audience.md)
+* [Bestimmen der Audience – Best Practices](../../delivery/using/define-the-right-audience.md)
