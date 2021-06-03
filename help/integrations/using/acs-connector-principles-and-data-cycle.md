@@ -9,7 +9,7 @@ exl-id: 689b6117-5143-4f85-8582-2c74cae72ca2
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '2044'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ In diesem Dokument wird ACS Connector beschrieben. In den folgenden Abschnitten 
 * [Prozesse](#process): Überblick über ACS Connector und die Verwaltung der Datenreplikation
 * [Implementierung](#implementation): Erste Schritte mit ACS Connector und eine Anleitung zur Replikation einfacher und erweiterter Datensätze
 * [Synchronisieren von Profilen](../../integrations/using/synchronizing-profiles.md): Anleitung zur Replikation von Profilen und zur Erstellung von Sendungen mit diesen Profilen
-* [Synchronisieren von Zielgruppen](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste als Zielgruppe in Campaign Standard
+* [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md): Anleitung zum Auswählen einer Empfängerliste in Campaign v7 und zur Replikation dieser Liste als Audience in Campaign Standard
 * [Synchronisieren von Webanwendungen](../../integrations/using/synchronizing-web-applications.md): Anleitung zur Verknüpfung von Webanwendungen in Campaign v7 mit Campaign Standard
 * [Fehlerbehebung bei ACS Connector](../../integrations/using/troubleshooting-the-acs-connector.md): Antworten auf häufige Probleme.
 
@@ -59,7 +59,7 @@ ACS Connector repliziert regelmäßig die folgenden Elemente von Campaign v7 nac
 
 Standardmäßig erfolgt die periodische Replikation für ACS Connector alle 15 Minuten. Dieser Zeitraum kann auf Ihre Bedürfnisse angepasst werden. Wenn Sie diese Einstellung ändern möchten, kontaktieren Sie Ihren Consultant.
 
-Die Datenreplikation von Empfängern, Abonnements, Diensten und Landingpages ist inkrementell, d. h. dass nur neue Empfänger und Änderungen an vorhandenen Empfängern von Campaign v7 nach Campaign Standard repliziert werden. Die Replikation einer Zielgruppe findet jedoch in einer einzigen Instanz statt. Sie können eine Zielgruppe in Campaign v7 erstellen und sie einmal nach Campaign Standard replizieren. Die Replikation erfolgt sofort und kann nicht so konfiguriert werden, dass regelmäßig Aktualisierungen durchgeführt werden. Anweisungen finden Sie unter [Zielgruppen synchronisieren](../../integrations/using/synchronizing-audiences.md).
+Die Datenreplikation von Empfängern, Abonnements, Diensten und Landingpages ist inkrementell, d. h. dass nur neue Empfänger und Änderungen an vorhandenen Empfängern von Campaign v7 nach Campaign Standard repliziert werden. Die Replikation einer Audience findet jedoch in einer einzigen Instanz statt. Sie können eine Audience in Campaign v7 erstellen und sie einmal nach Campaign Standard replizieren. Die Replikation erfolgt sofort und kann nicht so konfiguriert werden, dass regelmäßig Aktualisierungen durchgeführt werden. Anweisungen finden Sie unter [Synchronisieren von Audiences](../../integrations/using/synchronizing-audiences.md).
 
 >[!NOTE]
 >
@@ -83,7 +83,7 @@ Die Replikation von Versandkennungen und E-Mail-Logs ermöglicht den Zugriff auf
 
 ACS Connector synchronisiert Quarantänen zwischen Campaign v7 und Campaign Standard.
 
-Beispiel: Ein von Campaign v7 nach Campaign Standard repliziertes Profil enthält eine E-Mail-Adresse. Wenn diese E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden diese Daten bei der nächsten Synchronisation an Campaign v7 weitergegeben. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/understanding-quarantine-management.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html).
+Beispiel: Ein von Campaign v7 nach Campaign Standard repliziertes Profil enthält eine E-Mail-Adresse. Wenn diese E-Mail-Adresse von Campaign Standard unter Quarantäne gestellt wird, werden diese Daten bei der nächsten Synchronisation an Campaign v7 weitergegeben. Weiterführende Informationen zu Quarantänen finden Sie unter [Quarantäne-Verwaltung](../../delivery/using/understanding-quarantine-management.md) und [Quarantäne in Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/monitoring-messages/understanding-quarantine-management.html?lang=de).
 
 ### Replizierte Profile verwenden {#using-replicated-profiles}
 
@@ -104,7 +104,7 @@ Replizierte Profile sind zwar unmittelbar für Sendungen verfügbar, unterliegen
 
 ### Fakturierung {#billing}
 
-Die Fakturierung ist von Ihrer Wahl der Anwendung für den Versand – Campaign v7 oder Campaign Standard – nicht betroffen. Rechnungsinformationen werden zwischen Campaign v7 und Campaign Standard abgestimmt, d. h. wenn Sie über beide Anwendungen Sendungen an denselben Empfänger durchführen, wird er dennoch nur als ein aktives Profil gewertet.
+Die Fakturierung ist von Ihrer Wahl des Programms für den Versand – Campaign v7 oder Campaign Standard – nicht betroffen. Rechnungsinformationen werden zwischen Campaign v7 und Campaign Standard abgestimmt, d. h. wenn Sie über beide Programme Sendungen an denselben Empfänger durchführen, wird er dennoch nur als ein aktives Profil gewertet.
 
 ## Umsetzung {#implementation}
 
@@ -114,9 +114,9 @@ Für ACS Connector gibt es zwei Arten von Implementierungen. Beide müssen unbed
 >
 >Dieser Abschnitt richtet sich ausschließlich an Spezialisten, die einen allgemeinen Überblick über den Implementierungsvorgang und seine wichtigsten Schritte erhalten sollen.
 >
->Versuchen Sie unter keinen Umständen, diese Schritte selbst durchzuführen. Sie dürfen ausschließlich von Adobe-Campaign-Consultants vorgenommen werden.
+>Versuchen Sie unter keinen Umständen, diese Schritte selbst durchzuführen. Sie dürfen ausschließlich von Adobe Campaign-Consultants vorgenommen werden.
 
-Mit der **einfachen Implementierung** können Sie Empfänger (vordefinierte Felder), Dienste und Abonnements, Webanwendungen und Zielgruppen replizieren. Diese Replikation erfolgt in nur einer Richtung von Campaign v7 nach Campaign Standard.
+Mit der **einfachen Implementierung** können Sie Empfänger (vordefinierte Felder), Dienste und Abonnements, Web-Anwendungen und Audiences replizieren. Diese Replikation erfolgt in nur einer Richtung von Campaign v7 nach Campaign Standard.
 
 Die **erweiterte Implementierung** kann für komplexere Anwendungsfälle verwendet werden, beispielsweise wenn Sie zusätzliche Empfängerfelder oder benutzerdefinierte Empfängertabellen verwenden (z. B. eine Transaktionstabelle). Siehe [Erweiterte Implementierung](#advanced-implementation).
 
