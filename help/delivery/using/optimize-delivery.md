@@ -8,11 +8,11 @@ exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '739'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Versand optimieren {#optimize-delivery}
+# Optimieren des Versands {#optimize-delivery}
 
 Bevor Sie mit dem Erstellen von Sendungen beginnen, können Sie mehrere Maßnahmen treffen, um den vorgelagerten Versandprozess zu optimieren.
 
@@ -30,7 +30,7 @@ Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Plattfo
 
 * Workflow-Ausführung: Die Überwachung Ihrer Workflows ist unverzichtbar, um Probleme mit der Leistung der Plattform zu vermeiden. Befolgen Sie die [in diesem Dokument](../../workflow/using/workflow-best-practices.md#execution-and-performance) aufgeführten Richtlinien.
 
-* Wenn Sie berechtigt sind, können Sie [Funktionen des Campaign Control Panels](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) nutzen, um Ihre Plattform mithilfe der Funktionen [Leistungsüberwachung](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html) zu überwachen.
+* Wenn Sie berechtigt sind, können Sie die [Funktionen des Campaign Control Panels](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de) nutzen, um Ihre Plattform mit Hilfe der [Leistungsüberwachungsfunktionen](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/about-performance-monitoring.html?lang=de) zu überwachen.
 
 ## Prüfen der Netzwerkkonfiguration {#network-config}
 
