@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ---
 
-# Dateiversand{#file-transfer}
+# Dateiübertragung{#file-transfer}
 
 Die **Dateiübertragung** ermöglicht den Empfang, den Versand und die Prüfung auf Existenz von Dateien oder das Listen von Dateien auf einem Server. Als Protokoll wird der Amazon Simple Storage Service (S3), das File Transfer Protocol (FTP) oder das Secure File Transfer Protocol (SFTP) verwendet.
 Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de).
@@ -40,9 +40,9 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
    ![](assets/file_transfert_edit_external.png)
 
-1. **Dateiversand**
+1. **Dateiübertragung**
 
-   Zum Versand einer Datei an einen Server ist im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Dateiversand]** auszuwählen und im Bereich **[!UICONTROL Remote-Server]** die URL des Zielservers anzugeben. Die Parameter sind mit denen des Dateiempfangs identisch (siehe oben).
+   Zur Übertragung einer Datei an einen Server ist im Feld **[!UICONTROL Aktion]** die Option **[!UICONTROL Dateiversand]** auszuwählen und im Bereich **[!UICONTROL Remote-Server]** die URL des Zielservers anzugeben. Die Parameter sind mit denen des Dateiempfangs identisch (siehe oben).
 
    Die Quelldatei kann aus einer vorgeschalteten Aktivität stammen. In diesem Fall ist die Option **[!UICONTROL Durch vorhergehende Aktivität erzeugte Datei verwenden]** anzukreuzen.
 
