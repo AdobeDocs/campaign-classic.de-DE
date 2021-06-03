@@ -6,9 +6,9 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
 workflow-type: tm+mt
-source-wordcount: '4387'
+source-wordcount: '4416'
 ht-degree: 98%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 98%
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## Juni 2021{#june-2021}
+
+Der Abschnitt **Transaktionsnachrichten** wurde umstrukturiert und mit einem neuen Abschnitt Erste Schritte , einschließlich eines [erweiterten Schemas](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) , klarer gestaltet, um den Prozess besser zu verstehen. [Mehr dazu](../../message-center/using/about-transactional-messaging.md)
 
 ## Mai 2021 {#may-2021}
 
