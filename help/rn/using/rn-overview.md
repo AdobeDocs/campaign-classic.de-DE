@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Der **aktuelle RC-Build** ist [Campaign Classic-Version 21.1](../../rn/using/la
 
 ![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Bestehende Implementierungen müssen aktualisiert werden.
 
-## Recommendations{#recommendations}
+## Empfehlungen{#recommendations}
 
 Um eine stabile Konfiguration sicherzustellen, sollten Sie denselben stabilen Build auf allen Servern installieren, die mit derselben Client-Konfiguration ausgeführt werden.
 
@@ -61,7 +61,7 @@ Als gehosteter [!DNL Gold Standard]-Benutzer profitieren Sie automatisch vom [!D
 ## Support und andere nützliche Links{#support}
 
 * [Hilfe und Support](../../support.md)
-* [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html)
+* [Control Panel-Versionen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de)
 * [Aktuelle Dokumentationsaktualisierungen](../../rn/using/documentation-updates.md)
 * [Eingestellte und entfernte Funktionen](../../rn/using/deprecated-features.md)
 
