@@ -142,7 +142,7 @@ Adobe Campaign Classic ist mit allen Systemen und Tools kompatibel, die auf dies
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft.</p>
+<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server unter Linux läuft.</p>
 </td>
 </tr>
 <tr>
