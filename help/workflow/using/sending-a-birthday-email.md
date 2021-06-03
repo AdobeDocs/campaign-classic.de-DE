@@ -1,6 +1,6 @@
 ---
 product: campaign
-title: Geburtstags-E-Mail senden
+title: Senden einer Geburtstags-E-Mail
 description: Erfahren Sie, wie Sie eine Geburtstags-E-Mail mit einem Workflow senden.
 audience: workflow
 content-type: reference
@@ -9,11 +9,11 @@ exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '934'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Geburtstags-E-Mail senden{#sending-a-birthday-email}
+# Senden einer Geburtstags-E-Mail{#sending-a-birthday-email}
 
 ## Einleitung {#introduction}
 
@@ -25,7 +25,7 @@ Der Workflow für dieses Anwendungsbeispiel stellt sich wie folgt dar:
 
 In diesem täglich ausgeführten Workflow werden alle Empfänger ausgewählt, deren Geburtstag dem aktuellen Datum entspricht.
 
-![](assets/do-not-localize/how-to-video.png) Dieses Anwendungsbeispiel ist auch als Video unter [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html) verfügbar.
+![](assets/do-not-localize/how-to-video.png) Dieses Anwendungsbeispiel ist auch als Video unter [Erstellen eines Workflows](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/automating-with-workflows/creating-a-workflow.html?lang=de) verfügbar.
 
 Erstellen Sie eine Kampagne und klicken Sie auf den Tab **[!UICONTROL Zielbestimmungen und Workflows]**. Lesen Sie diesbezüglich auch den Abschnitt [Erstellen einer Hauptzielgruppe im Workflow](../../campaign/using/marketing-campaign-deliveries.md#building-the-main-target-in-a-workflow).
 
