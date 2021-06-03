@@ -9,7 +9,7 @@ exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ Mit Adobe Campaign können Sie komprimierte oder verschlüsselte Dateien exporti
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Installieren Sie mit dem [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data) ein GPG-Schlüsselpaar für Ihre Instanz.
+1. Installieren Sie mit dem [Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#encrypting-data) ein GPG-Schlüsselpaar für Ihre Instanz.
 
    >[!NOTE]
    >
-   >Das Control Panel ist auf Admin-Benutzer beschränkt und nur für bestimmte Campaign-Versionen verfügbar. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de)
+   >Das Control Panel ist auf Administratoren beschränkt und nur für bestimmte Campaign-Versionen verfügbar. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/key-features.html?lang=de)
 
 1. Wenn Ihre Adobe Campaign-Installation von Adobe gehostet wird, wenden Sie sich an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html), damit die nötigen öffentlichen Dienste auf dem Server installiert werden.
 1. Wenn Sie eine On-Premise-Installation von Adobe Campaign haben, installieren Sie den gewünschten öffentlichen Dienst (z. B.: GPG, GZIP) sowie die nötigen Schlüssel (zur Verschlüsselung) auf dem Anwendungs-Server.
 
-Sie können dann auf der Registerkarte **[!UICONTROL Skript]** der Aktivität oder in einer **[!UICONTROL JavaScript-Code]**-Aktivität Befehle bzw. Code verwenden. Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
+Sie können dann auf der Registerkarte **[!UICONTROL Script]** der Aktivität oder in einer **[!UICONTROL JavaScript-Code]**-Aktivität Befehle bzw. Code verwenden. Im folgenden Anwendungsfall wird ein Beispiel dargestellt.
 
 **Verwandte Themen:**
 
@@ -39,7 +39,7 @@ Sie können dann auf der Registerkarte **[!UICONTROL Skript]** der Aktivität od
 
 In diesem Anwendungsfall wird ein Workflow erstellt, um Daten mit einem im Control Panel installierten Schlüssel zu verschlüsseln und zu exportieren.
 
-![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](#video).
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#video).
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
