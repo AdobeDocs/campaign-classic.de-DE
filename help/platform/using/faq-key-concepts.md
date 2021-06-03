@@ -9,7 +9,7 @@ exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
 workflow-type: tm+mt
 source-wordcount: '885'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Bei Adobe Campaign stehen Ihnen für die Erstellung von Audiences und die Auswah
 
 Mit Adobe Campaign verfügen Sie über ein integriertes Workflow-Management-System, welches die zentrale Steuerung aller Prozesse und Vorgänge der Anwendung ermöglicht. Die Workflow-Engine dient der Modellierung und Automatisierung der verschiedenen Aufgaben der Anwendungsserver-Module. Mithilfe der grafischen Oberfläche lassen sich vollständige Arbeitsabläufe zur Segmentierung von Zielgruppen, zur Ausführung von Kampagnen, zum Umgang mit Dateien etc. gestalten.
 
-So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe-Campaign-Datenbank zu importieren.
+So bieten Workflows beispielsweise die Möglichkeit, Dateien von einem Server herunterladen, sie zu entkomprimieren und die Datensätze in die Adobe Campaign-Datenbank zu importieren.
 
 Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge zu validieren oder an Abstimmungen teilzunehmen. Auf diese Weise können Versandaktionen erstellt und anderen Benutzern vor dem Nachrichtenversand Aufgaben wie die Gestaltung des Inhalts, die Bestimmung der Zielgruppe und die Validierung von Testsendungen zugewiesen werden.
 
@@ -80,9 +80,9 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 ## Wie erstelle und sende ich die erste E-Mail? {#how-to-create-and-send-a-first-email-}
 
-[Mehr dazu hier](../../delivery/using/about-email-channel.md).
+[Hier erfahren Sie mehr darüber](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Video zum Thema](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Video zum Thema](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=de)
 
 ## Wie kann ich SMS-Nachrichten senden? {#how-to-send-sms-messages-}
 
