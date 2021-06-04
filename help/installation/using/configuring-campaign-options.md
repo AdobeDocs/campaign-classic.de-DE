@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: b99de2a47bac08578d6e660595eb14c0858bf9fd
+source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
 workflow-type: tm+mt
-source-wordcount: '3964'
+source-wordcount: '3944'
 ht-degree: 11%
 
 ---
@@ -51,10 +51,6 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Liste der Schemas, für die Sie Testadressen für das Inbox Rendering verwenden möchten. (Elementnamen sind durch Kommas getrennt) Beispiel: custom_nms_recipient.<br /> </td> 
   </tr> 
-  <tr> 
-   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
-   <td> BCC-E-Mail-Adresse, an die der Enhanced MTA eine Rohkopie der gesendeten E-Mails sendet. <br /> </td> 
-  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Hiermit können Sie dem für den Versand verantwortlichen Benutzer die Validierung des Versands gestatten, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands bestimmt ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1" als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0" ein.</p><p> Der Sendebestätigungsprozess funktioniert dann standardmäßig: Nur der Benutzer oder die Benutzergruppe, der bzw. die in den Versandeigenschaften für den Versand bestimmt ist (oder ein Administrator), kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie in <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesem Abschnitt</a>.</p> </td> 
