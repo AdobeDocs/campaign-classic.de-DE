@@ -6,10 +6,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8d535439923d6753777b7edd7fb768f685ec5522
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '4416'
-ht-degree: 99%
+source-wordcount: '4441'
+ht-degree: 98%
 
 ---
 
@@ -32,6 +32,10 @@ Die Anforderungen an die Client-Konsole von Campaign wurden in der Kompatibilit�
 Die Installationsschritte für die Client-Konsole von Campaign wurden verbessert und verdeutlicht. [Mehr dazu](../../installation/using/installing-the-client-console.md)
 
 Es wurde eine neue Technote zum Signaturproblem für getrackte URLs erstellt. [Mehr dazu](../../technotes/tracked-urls.md)
+
+**Dokumentationsaktualisierungen zu Version 21.1.3**
+
+Die technische Workflow-Beschreibung &quot;Rechnungsstellung (billing)&quot;enthält jetzt die Aufgaben, die ursprünglich von der &quot;Anzahl der aktiven Abrechnungsprofile (billingActiveContactCount)&quot;ausgeführt wurden. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
 ## April 2021 {#april-2021}
 
@@ -456,9 +460,9 @@ Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt 
 
 Eine neue Seite zur Fehlerbehebung wurde zum Tracking in Campaign Classic hinzugefügt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/classic-tracking-troubleshooting.html)
 
-Eine neue Seite mit Best Practices für Adobe Analytics Data Connector wurde hinzugefügt. [Weitere Informationen zu Adobe Analytics Data Connector](../../platform/using/adobe-analytics-data-connector.md)
+Eine neue Seite mit Best Practices für Adobe Analytics Connector wurde hinzugefügt. [Weitere Informationen zu Adobe Analytics Connector](../../platform/using/adobe-analytics-connector.md)
 
-Die ersten Schritte zum Thema Best Practices beim Versand wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
+Die ersten Schritte zum Thema Best Practices beim Versand wurden aktualisiert – [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 In der Dokumentation zum SMS-Kanal wurde eine Empfehlung hinzugefügt, um Probleme bei der Verwendung mehrerer externer Konten zu vermeiden, indem der erweiterte allgemeine SMPP-Connector mit demselben Provider-Konto genutzt wird. [Mehr dazu](../../delivery/using/sms-set-up.md#automatic-reply)
 
@@ -532,7 +536,7 @@ Der Liste der Campaign-Optionen wurden zwei neue Optionen hinzugefügt: XtkSecur
 
 Es wurden Informationen zu den verschiedenen in Campaign Classic verfügbaren externen Konten und deren Konfiguration hinzugefügt. [Mehr dazu](../../installation/using/external-accounts.md)
 
-Der Abschnitt über Analytics Data Connector wurde aktualisiert, um Änderungen an der Benutzeroberfläche widerzuspiegeln. [Mehr dazu](../../platform/using/adobe-analytics-data-connector.md)
+Der Abschnitt über Analytics Connector wurde aktualisiert, um Änderungen an der Benutzeroberfläche widerzuspiegeln. [Mehr dazu](../../platform/using/adobe-analytics-connector.md)
 
 Es wurden Informationen zum Billing-Bericht hinzugefügt. [Mehr dazu](../../production/using/monitoring-processes.md)
 
