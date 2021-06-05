@@ -6,10 +6,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: da699fbba527a44a048d5562a8311e70c00f74fd
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 100%
+source-wordcount: '1629'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +42,13 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
    <td><strong>Ersatz</strong></td>
   </tr>
     <tr>
+  <td>Adobe Analytics Data Connector<br></td>
+   <td><p>Ab Campaign-Version 21.1 wird Adobe Analytics Data Connector nicht mehr unterstützt.</p>
+   <p>Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../platform/using/adobe-analytics-connector.md">Mehr dazu</a></p>
+  <p><em>Geplantes Datum für die Entfernung: 2022.</em></p>
+  </td>
+ </tr>
+    <tr>
   <td>Bericht zum technischen Zustellbarkeits-Monitoring<br></td>
    <td><p>Ab Campaign-Version 21.1 wird der Bericht zum technischen Zustellbarkeits-Monitoring nicht mehr unterstützt.</p>
    <p>Bei Bedarf können Sie diesen Bericht bis zum Datum der Entfernung der Funktion täglich per E-Mail erhalten. Erstellen Sie zum Anfordern ein entsprechendes <a href="https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html">Support-Ticket</a> und geben Sie den Namen der Instanz und die E-Mail-Adresse(n) an, an die der Bericht gesendet werden soll.</p> 
@@ -50,60 +57,12 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </td>
  </tr>
   <tr>
-  <td>CRM-Connectoren<br></td>
-   <td><p>Ab Campaign-Version 20.3 werden folgende CRM-Connectoren eingestellt.</p>
-   <ul>
-   <li>Soap-API – On-Premise: 2007, 2015, 2016</li>
-   <li>Soap-API – Online: 2015, 2016</li>
-   <li>Web API – Microsoft Dynamics CRM On-Premise: 2016, Aktualisierung 1 2016</li>
-   <li>Web API – Microsoft Dynamics CRM Online: 2016, Aktualisierung 1 2016</li>
-   <li>Oracle On Demand-API</li>
-   </ul>
-  <p><em>Geplantes Datum für die Entfernung: Mai 2021</em></p>
-  </td>
- </tr>
-  <tr>
-  <td>Veraltete Version von iOS Binary<br></td>
-  <td><p>Ab Campaign-Version 20.3 wird die veraltete Version des iOS Binary Connectors nicht mehr unterstützt.<p>
-  <p> Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen.
-  <a href="https://helpx.adobe.com/de/campaign/kb/migrate-to-apns-http2.html">Weitere Infos</a></p>
-  <p><em>Geplantes Datum für die Entfernung: Mai 2021</em></p>
-  </td>
- </tr>
-   <tr>
-  <td>Demdex-Domain<br></td>
-  <td><p> Ab Campaign-Version 20.3 wird die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, nicht mehr unterstützt.<p>
-  <p>Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Weitere Infos</a></p> 
-  <p><em>Geplantes Datum für die Entfernung: Mai 2021</em></p>
-  </td>
-  <tr>
   <td>OAuth-Authentifizierung (OAuth und JWT)<br></td>
   <td><p> Ab Campaign-Version 20.3 wurde die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, geändert und in Adobe I/O verschoben <p>
   <p>Wenn Sie die Triggers-Integration nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../integrations/using/configuring-adobe-io.md">Weitere Infos</a></p> 
   <p>Weitere Informationen zur Einstellung der OAuth-Authentifizierung finden Sie auf dieser <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md">Seite</a>.</p> 
   <p><em>Geplantes Datum für die Entfernung: November 2021</em></p>
   </td>
-  </tr>
-  <td>SMS-Connectoren<br></td>
-  <td><p> Ab Campaign-Version 20.2 werden folgende SMS-Connectoren eingestellt.<p>
-   <ul>
-   <li>Generic SMPP (SMPP-Version 3.4 mit Unterstützung für Binärmodus)</li>
-   <li>Sybase365 (SAP SMS 365)</li>
-   <li>CLX Communications</li>
-   <li>Tele2</li>
-   <li>O2</li>
-   <li>iOS</li>
-   </ul>
-  <p>Wenn Sie einen dieser Connectoren verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/sms-channel.md">Weitere Infos</a></p> 
-  <p>Erfahren Sie in <a href="../../delivery/using/unsupported-connector-migration.md">diesem technischen Hinweis</a>, wie Sie frühere Versionen von Connectoren migrieren können.</p>
-  <p><em>Geplantes Datum für die Entfernung: Mai 2021</em></p>
-  </td> 
- </tr>
-  <tr>  
-   <td>Fax-Kanal<br></td>
-   <td><p>Ab Campaign-Version 20.2 wird der Fax-Kanal nicht mehr unterstützt.</p> 
-   <p>Wenn Sie diesen Kanal nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Erfahren Sie mehr</a> über Campaign-Kanäle.</p>
-   <p><em>Geplantes Datum für die Entfernung: Mai 2021</em></p></td>
   </tr>
  </tbody> 
 </table>
@@ -113,11 +72,20 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
 In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus Campaign Standard entfernt wurden.
 
 <table> 
- <tbody> 
+ <tbody>
   <tr> 
    <td><strong>Bereich – Funktion</strong></td>
    <td><strong>Ersatz</strong></td> 
-  </tr> 
+  </tr>
+  <tr>  
+   <td>Fax-Kanal<br></td>
+   <td><p>Ab Campaign-Version 21.1.3 ist der Fax-Kanal nicht mehr verfügbar. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Mehr dazu</a></p>
+  <tr>
+  <td>Demdex-Domain<br></td>
+  <td><p> Ab Campaign-Version 21.1.3 ist die demdex-Domäne, die zum Importieren und Exportieren von Zielgruppen in Adobe Experience Cloud verwendet wird, nicht mehr verfügbar. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Mehr dazu</a></p> 
+  </td>
+  </td>
+  </tr>
    <tr> 
    <td>Windows NT-Authentifizierung<br></td>
    <td><p>Ab Campaign-Version 20.3 wurde die Windows NT-Authentifizierung bei der Konfiguration einer neuen Datenbank mit einem Microsoft SQL Server aus den verfügbaren Authentifizierungsmechanismen entfernt. <a href="../../installation/using/creating-and-configuring-the-database.md#step-1---selecting-the-database-engine">Weitere Infos</a></p></td>
@@ -158,7 +126,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
    <tr> 
    <td>Mobiler Kanal – LINE v1</td>
    <td>Ab Campaign-Version 18.4 ist das LINE Connect-Package nicht mehr verfügbar. Adobe empfiehlt, das neue LINE Channel-Package als Ersatz zu verwenden. <a href="../../delivery/using/line-channel.md">Weitere Infos</a></td>
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -186,8 +154,9 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 >[!NOTE]
 >Ab Campaign-Version 20.1 ist Campaign Classic Client Console (32 Bit) nicht mehr mit den aktuellen Campaign-Versionen kompatibel. Sie müssen Client Console mit 64 Bit verwenden.
 
-
 ### Betriebssysteme {#o-s-eol}
+
+Ab Version 21.1.3 ist die Unterstützung für Debian 8 veraltet.
 
 Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen kompatibel.
 
@@ -243,6 +212,11 @@ Campaign Classic ist mit den folgenden Servern in Federated Data Access (FDA) ni
 * AsterData 5.0. AsterData hat das Ende des Lebenszyklus erreicht. [Weitere Infos](https://en.wikipedia.org/wiki/Aster_Data_Systems)
 * Sybase IQ 15.2, 15.4, 15.5 und Sybase ASE 15.0. Neuere Versionen von Sybase werden über Federated Data Access (FDA) unterstützt. [Weitere Infos](https://sites.google.com/site/dbatipsandtricks/time-tracker)
 * Hadoop via HiveSQL: Hadoop 2.7.3, HiveSQL 1.2.1. Adobe Campaign Classic wird die aufgelisteten Versionen von Hadoop via HiveSQL über Federated Data Access (FDA) weiter unterstützen, die Versionen werden jedoch zusammengeführt mit: HortonWorks (HDP 2.4.x, 2.5.x, 2.6.x) und HDInsight 3.4 (HDP 2.4), 3.5 (HDP 2.5), 3.6 (HDP 2.6).
+* Soap-API – On-Premise: 2007, 2015, 2016
+* Soap-API – Online: 2015, 2016
+* Web API – Microsoft Dynamics CRM On-Premise: 2016, Aktualisierung 1 2016
+* Web API – Microsoft Dynamics CRM Online: 2016, Aktualisierung 1 2016
+* Oracle On Demand-API&lt;
 
 **RDBMS-SERVER**
 
@@ -252,3 +226,14 @@ Adobe Campaign ist mit den folgenden RDBMS-Servern nicht mehr kompatibel:
 * SQL Server 2005
 * MySQL 5.1
 * DB2 UDB 9.7
+
+### SMS-Connectoren {#sms-eol}
+
+Adobe Campaign ist nicht mit den folgenden SMS-Connectoren kompatibel:
+
+* Generic SMPP (SMPP-Version 3.4 mit Unterstützung für Binärmodus)
+* Sybase365 (SAP SMS 365)
+* CLX Communications
+* Tele2
+* O2
+* iOS
