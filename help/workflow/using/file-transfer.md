@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 89%
 
 ---
 
@@ -36,7 +36,7 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
    ![](assets/file_transfert_edit.png)
 
-   Aktivieren Sie die Option **[!UICONTROL Externes Konto verwenden]**, wenn Sie ein im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** konfiguriertes S3-, FTP- oder SFTP-Konto verwenden möchten. Geben Sie anschließend das Serververzeichnis an, das die zu übertragenden Dateien enthält.
+   Aktivieren Sie **[!UICONTROL Verwenden Sie ein externes Konto]**, um ein Konto aus den Azure Blob Storage-, S3-, FTP- oder SFTP-Konten auszuwählen, die im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** des Navigationsbaums konfiguriert sind. Geben Sie dann an, welches Verzeichnis auf dem Server die herunterzuladenden Dateien enthält.
 
    ![](assets/file_transfert_edit_external.png)
 
@@ -87,7 +87,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 * **[!UICONTROL Sitzungsprotokolle anzeigen]**
 
-   Ruft die S3-, FTP- bzw. SFTP-Übertragungslogs ab und fügt sie in die Workflow-Logs ein.
+   Ruft die Protokolle des Azure Blob-Speichers, der S3-, FTP- oder SFTP-Übertragung ab und fügt sie in die Workflow-Logs ein.
 
 * **[!UICONTROL Passiven Modus deaktivieren]**
 
