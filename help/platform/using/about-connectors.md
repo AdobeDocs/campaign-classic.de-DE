@@ -6,10 +6,10 @@ feature: Übersicht
 role: Business Practitioner, Data Architect
 level: Beginner
 exl-id: 05080d7f-f2d6-4ffe-b112-05b26a3a8a1d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 100%
+source-wordcount: '194'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ Die verfügbaren Connectoren sind unten aufgeführt:
 
 * FDA Connector (**Federated Data Access**) ermöglicht Ihnen, Campaign mit einer oder mehreren externen Datenbanken zu verbinden und darauf gespeicherte Daten zu verarbeiten, ohne die Datenstruktur in Adobe Campaign zu verändern – [mehr dazu](../../installation/using/about-fda.md).
 * CRM-Connectoren ermöglichen Ihnen, Daten zwischen Adobe Campaign und Ihrer CRM-Lösung mithilfe spezifischer Workflow-Aktivitäten auszutauschen – [mehr dazu](../../platform/using/crm-connectors.md).
-* Analytics Data Connectors (zuvor **Adobe Genesis**) ermöglichen den Datenaustausch zwischen Adobe Campaign und Adobe Analytics – [mehr dazu](../../platform/using/adobe-analytics-data-connector.md).
+* Mit Analytics Connectors können Sie Daten zwischen Adobe Campaign und Adobe Analytics freigeben. [Weitere Informationen](../../platform/using/adobe-analytics-connector.md).
 
 Sie können Campaign auch mit vielen anderen Systemen integrieren, z. B.:
 
