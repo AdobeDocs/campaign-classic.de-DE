@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: campaign-integrations
 exl-id: ceb584da-bc97-4b71-9499-59df5e6d10c3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 94%
 
 ---
 
@@ -89,8 +89,8 @@ Unter der Voraussetzung, dass sie denselben CNAME aufweisen, erkennen die andere
    <td> Durch die Integration von Adobe Campaign mit dem <strong>Triggers Core Service</strong> können Sie Ihren Kunden personalisierte E-Mails senden, die auf bestimmte Verhaltensweisen abgestimmt sind, die auf Ihrer Webseite mithilfe von Adobe Analytics ermittelt wurden.<br /> <p><a href="https://helpx.adobe.com/de/campaign/kb/triggers-and-campaign.html">Informationen</a> zur Integration von Adobe Campaign mit Experience Cloud Triggers.</p><br /> </td> 
   </tr> 
   <tr> 
-   <td> <strong>Adobe Analytics – Data Connector</strong><br /> </td> 
-   <td> Der <strong>Data Connector</strong> (vormals Adobe-Genesis-Connector) ermöglicht Adobe Campaign und Adobe Analytics die Interaktion über Segmente zum Nutzerverhalten nach einer E-Mail-Kampagne. Im Gegenzug werden Indikatoren und Attribute von E-Mail-Kampagnen von Adobe Campaign an Adobe Analytics – Data Connector gesendet.<br /> <p><a href="../../platform/using/adobe-analytics-data-connector.md">Informationen</a> zur Integration von Campaign mit Data Connector.</p><br /> </td> 
+   <td> <strong>Adobe Analytics Connector</strong><br /> </td> 
+   <td> <strong>Adobe Analytics </strong> Connector ermöglicht die Interaktion zwischen Adobe Campaign und Adobe Analytics über Segmente zum Benutzerverhalten nach einer E-Mail-Kampagne. Umgekehrt werden Indikatoren und Attribute von E-Mail-Kampagnen gesendet, die von Adobe Campaign an Adobe Analytics gesendet werden.<br /> <p><a href="../../platform/using/adobe-analytics-connector.md">Erfahren Sie </a> mehr über die Integration von Campaign mit Analytics Connectors.</p><br /> </td> 
   </tr> 
  </tbody> 
 </table>
