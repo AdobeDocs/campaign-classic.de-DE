@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: c095d7ddde4b4ac23467ebd0fa8ee2fb613aacdc
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '3944'
+source-wordcount: '3975'
 ht-degree: 11%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 11%
 # Liste der Optionen von Campaign Classic{#configuring-campaign-options}
 
 Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Konfiguration von Adobe Campaign-Optionen. Einige sind bei der Installation von Campaign integriert, andere können bei Bedarf manuell hinzugefügt werden. Die verfügbaren Optionen variieren je nach den mit Ihrer Instanz installierten Packages.
+
 
 >[!CAUTION]
 >
@@ -399,6 +400,14 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
   </tr> 
  </thead> 
  <tbody> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictEditingOTBSchema</span> <br /> </td> 
+   <td> (ab Version 21.1.3) Wenn 1 ausgewählt ist (Standardwert), deaktiviert diese Option die Bearbeitung von integrierten Schemas.<br /> </td> 
+  </tr> 
+  <tr> 
+   <td> <span class="uicontrol">RestrictEditingOTBJavascript</span> <br /> </td> 
+   <td> (ab Version 21.1.3) Wenn 1 ausgewählt ist (Standardwert), deaktiviert diese Option die Bearbeitung von integrierten JavaScript-Codes.<br /> </td> 
+  </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkAcceptOldPasswords</span> <br /> </td> 
    <td> (Kompatibilitätsmodus installieren: build&gt;6000) Bei Aktivierung (Wert "1") ermöglicht diese Option die Verwendung alter, in der Datenbank gespeicherter Passwörter für die Verbindung zu externen Konten oder zur Instanz.<br /> </td> 
