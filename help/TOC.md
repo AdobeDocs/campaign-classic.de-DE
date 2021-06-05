@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalübergreifende Marketing-Kampagnen, die einen hohen Return on Marketing Investment erzielen.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 99%
+source-wordcount: '2485'
+ht-degree: 98%
 
 ---
 
@@ -115,7 +115,8 @@ ht-degree: 99%
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
          + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector.md)
+      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+      + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Hilfe- und Support-Optionen](support.md)
 + Nachrichten erstellen und senden {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
@@ -670,7 +671,9 @@ ht-degree: 99%
          + [Best Practices und Einschränkungen](installation/using/fda-best-practices.md)
          + Konfigurationsrichtlinien {#config-databases}
             + [Konfigurationsschritte](installation/using/configure-fda.md)
+            + [Vertikal konfigurieren](installation/using/configure-fda-vertica.md)
             + [Konfigurieren von Snowflake](installation/using/configure-fda-snowflake.md)
+            + [Konfigurieren von Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurieren von Azure Synapse](installation/using/configure-fda-synapse.md)
             + [Konfigurieren von Hadoop](installation/using/configure-fda-hadoop.md)
             + [Konfigurieren von Oracle](installation/using/configure-fda-oracle.md)
