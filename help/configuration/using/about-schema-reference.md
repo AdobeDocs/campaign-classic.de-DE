@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: f36a1b01-a002-4a21-9255-ea78b5f173fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 66%
+source-wordcount: '381'
+ht-degree: 58%
 
 ---
 
@@ -74,18 +74,13 @@ Ein Schema wird anhand seines Namens und seines Namespace identifiziert.
 
 Mit einem Namespace können Sie eine Reihe von Schemas nach Interessensgebieten gruppieren. Beispielsweise wird der Namespace **cus** für die kundenspezifische Konfiguration (**customers**) verwendet.
 
+Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens (durch einen Doppelpunkt getrennt) erstellt wird. Beispiel: **cus:recipient**.
+
 >[!IMPORTANT]
 >
->Generell sollte der Name des Namespace kurz gehalten sein. Zudem darf er nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
+>Der Name des Namespace muss kurz sein und darf nur autorisierte Zeichen gemäß den XML-Benennungsregeln enthalten.
 >
 >Kennungen dürfen nicht mit numerischen Zeichen beginnen.
+>
+>Die folgenden Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb der Adobe Campaign-Anwendung erforderlich sind, und dürfen nicht verwendet werden: **xtk**, **nl**, **nms**, **ncm**, **temp**, **ncl**, **crm&lt;a1 3/>,** xxl **.**
 
-Bestimmte Namespaces sind für Beschreibungen der Systementitäten reserviert, die für den Betrieb von Adobe Campaign erforderlich sind:
-
-* **xtk**: über Plattformsystemdaten,
-* **nl**: über die allgemeine Verwendung des Antrags,
-* **nms**: bezüglich des Versands (Empfänger, Versand, Tracking etc.),
-* **ncm**: über das Content Management,
-* **temp**: für temporäre Schemata reserviert.
-
-Der Identifikationsschlüssel eines Schemas ist eine Zeichenfolge, die mithilfe des Namespace und des Namens (durch einen Doppelpunkt getrennt) erstellt wird. Beispiel: **cus:recipient**.
