@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: architecture-and-hosting-models
 exl-id: 04e6dc17-427b-4745-84cc-bf45c03dbf81
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
 workflow-type: tm+mt
-source-wordcount: '1336'
-ht-degree: 52%
+source-wordcount: '1340'
+ht-degree: 51%
 
 ---
 
@@ -69,7 +69,7 @@ Außerdem verarbeitet sie zeitweise ausgeführte technische Workflows, darunter:
 
 * Tracking: Wiederherstellen und Konsolidieren von Trackinglogs. Dadurch können Protokolle vom Weiterleitungs-Server abgerufen und die vom Reporting-Modul verwendeten aggregierten Indikatoren erstellt werden.
 * Bereinigung: zur Bereinigung von Datenbanken. Dabei wird die Datenbank von alten Datensätzen bereinigt, um zu vermeiden, dass sie übermäßig wächst.
-* Automatisches Senden eines Berichts zu Aktivitäten auf der Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen usw.) für die Aktivität.
+* Rechnungsstellung: Automatischer Versand eines Aktivitätsberichts für die Plattform (Datenbankgröße, Anzahl der Marketing-Aktionen, Anzahl der aktiven Profile usw.).
 
 **Versand-Server** (nlserver mta)
 
