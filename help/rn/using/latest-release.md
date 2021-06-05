@@ -6,9 +6,9 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1953'
 ht-degree: 53%
 
 ---
@@ -23,14 +23,14 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 ## ![](assets/do-not-localize/blue_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
 
-_4. Juni 2021_
+_5. Juni 2021_
 
 **Neue Funktionen**
 
 <table>
 <thead>
 <tr>
-<th><strong>Integration von Journey Orchestrationen</strong><br/></th>
+<th><strong>Integration mit Adobe Journey Orchestration</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -47,7 +47,7 @@ _4. Juni 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Verbesserung beim LINE-Kanal</strong><br /> </th> 
+<th> <strong>LINE-Kanal-Verbesserungen</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
