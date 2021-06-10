@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: bdc19e80744643097463e4e721b05a2ac8e51a2e
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 100%
+source-wordcount: '449'
+ht-degree: 97%
 
 ---
 
@@ -72,7 +72,7 @@ Adobe empfiehlt für optimale Navigation und Nutzung eine Bildschirmauflösung v
 
 >[!CAUTION]
 >
->Auflösungen von weniger als 1.600 x 900 Pixel werden von Adobe Campaign unterstützt.
+>Auflösungen unter 1600 x 900 Pixel werden von Adobe Campaign nicht unterstützt.
 
 Wenn im **[!UICONTROL Explorer]** einige Teile des Bereichs **[!UICONTROL Details]** abgeschnitten sind, erweitern Sie den Bereich mit dem Pfeil am oberen Rand oder klicken Sie auf die Schaltfläche **[!UICONTROL Vergrößern]**.
 
