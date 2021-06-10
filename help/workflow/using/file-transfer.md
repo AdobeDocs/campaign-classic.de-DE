@@ -6,17 +6,17 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 89%
+source-wordcount: '631'
+ht-degree: 79%
 
 ---
 
 # Dateiübertragung{#file-transfer}
 
-Die **Dateiübertragung** ermöglicht den Empfang, den Versand und die Prüfung auf Existenz von Dateien oder das Listen von Dateien auf einem Server. Als Protokoll wird der Amazon Simple Storage Service (S3), das File Transfer Protocol (FTP) oder das Secure File Transfer Protocol (SFTP) verwendet.
-Mit einer S3- oder SFTP-Verbindung können Sie auch Segmentdaten mit der Adobe-Echtzeit-Kundendatenplattform in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de).
+Die Aktivität **Dateiübertragung** ermöglicht den Empfang und Versand von Dateien, den Test auf Existenz von Dateien oder die Auflistung von Dateien auf einem Server. Das verwendete Protokoll ist entweder Azure Blob Storage, Amazon Simple Storage Service (S3), FTP oder SFTP.
+Mit S3-, Azure Blob Storage- oder SFTP-Verbindungen können Sie Segmentdaten auch mit der Echtzeit-Kundendatenplattform von Adobe in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de).
 
 >[!NOTE]
 >
