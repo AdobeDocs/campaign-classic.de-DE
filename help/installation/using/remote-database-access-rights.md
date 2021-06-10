@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3d43010e-53f8-4aa2-a651-c422a02191fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 99%
+source-wordcount: '990'
+ht-degree: 98%
 
 ---
 
@@ -61,16 +61,16 @@ Der Datenbankadministrator muss sicherstellen, dass diese Berechtigungen mit den
 | **Zugreifen auf Client-Daten** | Berechtigungen SELECT für (FUTURE) TABLE(S) oder VIEW(S) | Berechtigung SELECT | Berechtigung SELECT oder SELECT ANY TABLE | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT |
 | **Zugreifen auf Metadaten** | Berechtigung SELECT für INFORMATION_SCHEMA SCHEMA | Berechtigung SELECT | Keine Berechtigung zur Verwendung der Anweisung DESCRIBE erforderlich | Berechtigung VIEW DEFINITION | Keine Berechtigung erforderlich, um den Befehl „\d table“ zu verwenden | Berechtigung SELECT |
 
-|   | DB2 UDB | Teradata | InfiniDB | Sybase IQ/Sybase ASE | Netezza | Greenplum | AsterData |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| **Herstellen einer Verbindung zu einer Remote-Datenbank** | Entscheidungsniveau CONNECT | Berechtigung CONNECT | Erstellen eines Benutzers, der mit einem Remotehost verbunden ist, der ALLE BERECHTIGUNGEN hat | Keine Berechtigung erforderlich für die Verwendung der CONNECT-Anweisung | Keine Berechtigung erforderlich | Berechtigung CONNECT | Berechtigung CONNECT |
-| **Erstellen von Tabellen** | Entscheidungsniveau CREATETAB | Schlüsselwort CREATE TABLE oder TABLE | Berechtigung CREATE | Entscheidungsniveau RESOURCE und Berechtigung CREATE | Berechtigung TABLE | Berechtigung CREATE | Berechtigung CREATE |
-| **Erstellen von Indizes** | Berechtigung INDEX | Schlüsselwort CREATE INDEX oder INDEX | Berechtigung INDEX | Entscheidungsniveau RESOURCE und Berechtigung CREATE | Berechtigung INDEX | Berechtigung CREATE | Berechtigung CREATE |
-| **Erstellen von Funktionen** | Entscheidungsniveau IMPLICIT_SCHEMA oder Berechtigung CREATEIN | Schlüsselwort CREATE FUNCTION oder FUNCTION | Berechtigung CREATE ROUTINE | Entscheidungsniveau RESOURCE oder Entscheidungsniveau DBA für Java-Funktionen | Berechtigung FUNCTION | Berechtigung USAGE | Berechtigung CREATE FUNCTION |
-| **Erstellen von Verfahren** | Entscheidungsniveau IMPLICIT_SCHEMA oder Berechtigung CREATEIN | Schlüsselwort CREATE PROCEDURE oder PROCEDURE | Berechtigung CREATE ROUTINE | Entscheidungsniveau RESOURCE | Berechtigung PROCEDURE | Berechtigung USAGE | Berechtigung CREATE FUNCTION |
-| **Entfernen von Objekten (Tabellen, Indizes, Funktionen, Verfahren)** | Berechtigung DROPIN oder Berechtigung CONTROL oder Eigentümer des Objekts | DROP &lt; Objekt > oder objektbezogenes Schlüsselwort | Berechtigung DROP | Eigentümer des Objekts oder Entscheidungsniveau DBA | Berechtigung DROP | Eigentümer des Objekts | Eigentümer des Objekts |
-| **Überwachen von Ausführungen** | Entscheidungsniveau EXPLAIN | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | Berechtigung SELECT | Nur ein Systemadministrator kann sp_showplan ausführen | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich |
-| **Schreiben von Daten** | Berechtigungen INSERT und UPDATE oder Entscheidungsniveau DATAACCESS | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE |
-| **Laden von Daten in Tabellen** | Entscheidungsniveau LOAD | Berechtigungen SELECT und INSERT, um die Anweisungen COPY TO bzw. COPY FROM zu verwenden | Berechtigung FILE | Seien Sie Eigentümer der Tabelle oder der ALTER-Berechtigung. Je nach der Option -gl kann LOAD TABLE ggf. nur ausgeführt werden, wenn der Benutzer über das Entscheidungsniveau DBA verfügt | Berechtigungen SELECT und INSERT | Berechtigungen SELECT und INSERT | Berechtigungen SELECT und INSERT |
-| **Zugreifen auf Client-Daten** | Berechtigungen INSERT/UPDATE oder Entscheidungsniveau DATAACCESS | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT |
-| **Zugreifen auf Metadaten** | Kein Entscheidungsniveau erforderlich für die Verwendung der Anweisung DESCRIBE | Berechtigung SHOW | Berechtigung SELECT | Keine Berechtigung erforderlich für die Verwendung der Anweisung DESCRIBE | Keine Berechtigung erforderlich, um den Befehl „\d table“ zu verwenden | Keine Berechtigung erforderlich, um den Befehl „\d table“ zu verwenden | Keine Berechtigung erforderlich, um den SHOW-Befehl zu verwenden |
+|   | DB2 UDB | Teradata | InfiniDB | Sybase IQ/Sybase ASE | Netezza | AsterData |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Herstellen einer Verbindung zu einer Remote-Datenbank** | Entscheidungsniveau CONNECT | Berechtigung CONNECT | Erstellen eines Benutzers, der mit einem Remotehost verbunden ist, der ALLE BERECHTIGUNGEN hat | Keine Berechtigung erforderlich für die Verwendung der CONNECT-Anweisung | Keine Berechtigung erforderlich | Berechtigung CONNECT |
+| **Erstellen von Tabellen** | Entscheidungsniveau CREATETAB | Schlüsselwort CREATE TABLE oder TABLE | Berechtigung CREATE | Entscheidungsniveau RESOURCE und Berechtigung CREATE | Berechtigung TABLE | Berechtigung CREATE |
+| **Erstellen von Indizes** | Berechtigung INDEX | Schlüsselwort CREATE INDEX oder INDEX | Berechtigung INDEX | Entscheidungsniveau RESOURCE und Berechtigung CREATE | Berechtigung INDEX | Berechtigung CREATE |
+| **Erstellen von Funktionen** | Entscheidungsniveau IMPLICIT_SCHEMA oder Berechtigung CREATEIN | Schlüsselwort CREATE FUNCTION oder FUNCTION | Berechtigung CREATE ROUTINE | Entscheidungsniveau RESOURCE oder Entscheidungsniveau DBA für Java-Funktionen | Berechtigung FUNCTION | Berechtigung CREATE FUNCTION |
+| **Erstellen von Verfahren** | Entscheidungsniveau IMPLICIT_SCHEMA oder Berechtigung CREATEIN | Schlüsselwort CREATE PROCEDURE oder PROCEDURE | Berechtigung CREATE ROUTINE | Entscheidungsniveau RESOURCE | Berechtigung PROCEDURE | Berechtigung CREATE FUNCTION |
+| **Entfernen von Objekten (Tabellen, Indizes, Funktionen, Verfahren)** | Berechtigung DROPIN oder Berechtigung CONTROL oder Eigentümer des Objekts | DROP &lt; Objekt > oder objektbezogenes Schlüsselwort | Berechtigung DROP | Eigentümer des Objekts oder Entscheidungsniveau DBA | Berechtigung DROP | Eigentümer des Objekts |
+| **Überwachen von Ausführungen** | Entscheidungsniveau EXPLAIN | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | Berechtigung SELECT | Nur ein Systemadministrator kann sp_showplan ausführen | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich | Zur Verwendung der EXPLAIN-Anweisung ist keine Berechtigung erforderlich |
+| **Schreiben von Daten** | Berechtigungen INSERT und UPDATE oder Entscheidungsniveau DATAACCESS | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE | Berechtigungen INSERT und UPDATE |
+| **Laden von Daten in Tabellen** | Entscheidungsniveau LOAD | Berechtigungen SELECT und INSERT, um die Anweisungen COPY TO bzw. COPY FROM zu verwenden | Berechtigung FILE | Seien Sie Eigentümer der Tabelle oder der ALTER-Berechtigung. Je nach der Option -gl kann LOAD TABLE ggf. nur ausgeführt werden, wenn der Benutzer über das Entscheidungsniveau DBA verfügt | Berechtigungen SELECT und INSERT | Berechtigungen SELECT und INSERT |
+| **Zugreifen auf Client-Daten** | Berechtigungen INSERT/UPDATE oder Entscheidungsniveau DATAACCESS | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT | Berechtigung SELECT |
+| **Zugreifen auf Metadaten** | Kein Entscheidungsniveau erforderlich für die Verwendung der Anweisung DESCRIBE | Berechtigung SHOW | Berechtigung SELECT | Keine Berechtigung erforderlich für die Verwendung der Anweisung DESCRIBE | Keine Berechtigung erforderlich, um den Befehl „\d table“ zu verwenden | Keine Berechtigung erforderlich, um den SHOW-Befehl zu verwenden |
