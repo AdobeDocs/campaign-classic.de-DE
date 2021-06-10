@@ -6,24 +6,14 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: f3980859-2837-416b-a0ef-2b369d2d50bd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 30%
+source-wordcount: '417'
+ht-degree: 32%
 
 ---
 
 # Best Practices und Einschränkungen
-
-## Erstellen temporärer Schemata {#create-temporary-schemas}
-
-Sie können mehrere Zugriffe auf externe Greenplum-Datenbanken über FDA verwalten. Eine dedizierte Option ermöglicht die direkte Erstellung eines Arbeitsschemas bei der Konfiguration des externen Kontos.
-
-![](assets/fda_work_table.png)
-
->[!NOTE]
->
->Diese Option ist nur bei PostgreSQL Greenplum verfügbar.
 
 ## Optimieren der E-Mail-Personalisierung mit externen Daten {#optimizing-email-personalization-with-external-data}
 
