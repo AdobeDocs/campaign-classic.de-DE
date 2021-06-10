@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
+source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
 workflow-type: tm+mt
-source-wordcount: '1726'
-ht-degree: 80%
+source-wordcount: '1739'
+ht-degree: 79%
 
 ---
 
@@ -178,6 +178,9 @@ Externe Datenbanken, die mit Campaign kompatibel sind, sind in der [Kompatibilit
 
 Die Konfigurationseinstellungen für externe Konten hängen von der Datenbank-Engine ab. Weitere Informationen finden Sie in den folgenden Abschnitten:
 
+* Zugriff auf [Vertikal](../../installation/using/configure-fda-vertica.md) konfigurieren
+* Zugriff auf [Snowflake](../../installation/using/configure-fda-snowflake.md) konfigurieren
+* Zugriff auf [Google BigQuery](../../installation/using/configure-fda-google-big-query.md) konfigurieren
 * Zugriff auf [Azure synapse](../../installation/using/configure-fda-synapse.md) konfigurieren
 * Zugriff auf [Hadoop](../../installation/using/configure-fda-hadoop.md) konfigurieren
 * Zugriff auf [Oracle](../../installation/using/configure-fda-oracle.md) konfigurieren
