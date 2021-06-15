@@ -7,9 +7,9 @@ role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: fc40dae282c045dd73547e34ea307297f64c66fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4490'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,19 +21,19 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 ## Juni 2021{#june-2021}
 
-Der Abschnitt **Transaktionsnachrichten** wurde umstrukturiert und mit einem neuen Abschnitt Erste Schritte , einschließlich eines [erweiterten Schemas](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle) , klarer gestaltet, um den Prozess besser zu verstehen. [Mehr dazu](../../message-center/using/about-transactional-messaging.md)
+Der Abschnitt **Transaktionsnachrichten** wurde umstrukturiert und mit dem neuen Abschnitt &quot;Erste Schritte&quot;, einschließlich eines [erweiterten Schemas](../../message-center/using/about-transactional-messaging.md#transactional-messaging-operating-principle), klarer gestaltet, um den Prozess besser verständlich zu machen. [Mehr dazu](../../message-center/using/about-transactional-messaging.md)
 
 **Dokumentationsaktualisierungen zu Version 21.1.3**
 
-Integration in Adobe Journey Orchestration - [Weitere Informationen](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html). Ein schrittweises Anwendungsbeispiel wird auf [dieser Seite](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html) vorgestellt
+Integration mit Adobe Journey Orchestration – [Mehr dazu](https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de). Auf dieser [Seite](https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=de) wird ein Anwendungsfall im Detail vorgestellt.
 
-LINE-Kanal-Verbesserungen - [Weitere Informationen](../../delivery/using/line-channel.md)
+Verbesserungen am LINE-Kanal – [Mehr dazu](../../delivery/using/line-channel.md)
 
-Neuer Vertica FDA-Connector - [Weitere Informationen](../../installation/using/configure-fda-vertica.md)
+Neuer Vertica FDA-Connector – [Mehr dazu](../../installation/using/configure-fda-vertica.md)
 
-Neuer Google Big Query FDA-Connector - [Weitere Informationen](../../installation/using/configure-fda-google-big-query.md)
+Neuer Google BigQuery FDA-Connector – [Mehr dazu](../../installation/using/configure-fda-google-big-query.md)
 
-Die technische Workflow-Beschreibung &quot;Rechnungsstellung (billing)&quot;enthält jetzt die Aufgaben, die ursprünglich von der &quot;Anzahl der aktiven Abrechnungsprofile (billingActiveContactCount)&quot;ausgeführt wurden. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
+Die Beschreibung des technischen Workflows &quot;Abrechnung (Billing)&quot; enthält jetzt die Aufgaben, die ursprünglich vom Workflow &quot;Zählung aktiver Profile (Billing) (billingActiveContactCount)&quot; ausgeführt wurden. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
 ## Mai 2021 {#may-2021}
 
@@ -362,7 +362,7 @@ Die Anleitungen für [Installation](../../installation/using/general-architectur
 
 Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neu unterstützte Systeme wurden hinzugefügt. Veraltete Vorfälle und nicht mehr unterstützte Systeme wurden entfernt. [Mehr dazu](../../installation/using/general-architecture.md)
 
-Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 Eine Best Practice zur IP-Affinität wurde dem Installationshandbuch hinzugefügt. [Mehr dazu](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
@@ -380,7 +380,7 @@ Der neue Parameter für die URL-Berichtkonfiguration wird [hier](../../reporting
 
 Die **On-Premise- und Hosted-Leistungsmatrix von Campaign Classic** wurde mit den neuen FDA-Connectoren aktualisiert. [Mehr dazu](../../installation/using/capability-matrix.md).
 
-Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
+Die Seite mit der **Campaign Classic-Leistungsmatrix** wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
 Der neue Workflow zur **[!UICONTROL Bereinigung von Nmsaddress]** wird [hier](../../production/using/database-cleanup-workflow.md#cleanup-of-nmsaddress) erläutert.
 
@@ -430,7 +430,7 @@ Sicherer SMS-Versand (TLS) – [mehr dazu](https://helpx.adobe.com/de/campaign/k
 
 **Weitere Dokumentationsaktualisierungen zu dieser Version**
 
-Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/campaign/kb/acc-campaign-enhanced-mta.html)
+Die Adobe Campaign Enhanced MTA-Dokumentation ist jetzt verfügbar. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
 
 Es wurde ein neuer Abschnitt hinzugefügt, in dem beschrieben wird, wie Sie Fehler in einem Workflow beheben können, der im Status „Schnellstmöglicher Start“ in einer Kampagne verbleibt.  [Mehr dazu](../../production/using/workflow-execution.md#start-as-soon-as-possible-in-campaigns)
 
@@ -500,7 +500,7 @@ Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
 Es wurden neue häufig gestellte Fragen zur Build-Aktualisierung erstellt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html)
 
-Die [Kompatibilitätsmatrix](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme sowie die Android-/iOS-Versionen und die zugehörigen SDKs wurden aktualisiert. Die [Kompatibilitätsmatrix 19.0](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix-19-0.html) wurde aktualisiert.
+Die [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme sowie die Android-/iOS-Versionen und die zugehörigen SDKs wurden aktualisiert. Die [Kompatibilitätsmatrix 19.0](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix-19-0.html) wurde aktualisiert.
 
 Die Seite mit veralteten und entfernten Funktionen in Campaign Classic wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html)
 
@@ -544,14 +544,14 @@ Der Liste der Campaign-Optionen wurden zwei neue Optionen hinzugefügt: XtkSecur
 
 Es wurden Informationen zu den verschiedenen in Campaign Classic verfügbaren externen Konten und deren Konfiguration hinzugefügt. [Mehr dazu](../../installation/using/external-accounts.md)
 
-Der Abschnitt über Analytics Connector wurde aktualisiert, um Änderungen an der Benutzeroberfläche widerzuspiegeln. [Mehr dazu](../../platform/using/adobe-analytics-connector.md)
+Der Abschnitt über Analytics Connector wurde entsprechend den an der Benutzeroberfläche vorgenommenen Änderungen aktualisiert. [Mehr dazu](../../platform/using/adobe-analytics-connector.md)
 
 Es wurden Informationen zum Billing-Bericht hinzugefügt. [Mehr dazu](../../production/using/monitoring-processes.md)
 
 Die Dokumentation zur Integration freigegebener Audiences wurde aktualisiert.
 [Mehr dazu](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 
-Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
+Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einstellungen](https://helpx.adobe.com/de/campaign/kb/sms-connector-protocol-and-settings.html) und [Automatische Erzeugung von Sequenzen](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence).
 
 Der Abschnitt „Technische Workflows“ wurde aktualisiert. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
