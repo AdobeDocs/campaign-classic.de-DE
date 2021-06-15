@@ -8,9 +8,9 @@ user-guide-description: Entwickeln, planen, verwalten und optimieren Sie kanalü
 sub-product: Adobe Campaign Classic
 type: Documentation
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2485'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -480,7 +480,7 @@ ht-degree: 98%
          + [Laden des Versandinhalts](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring   {#monitoring}
+      + Monitoring    {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/using/sending-personalized-alerts-to-operators.md)
@@ -574,15 +574,15 @@ ht-degree: 98%
       + [Ergänzende Konfigurationen](message-center/using/additional-configurations.md)
    + Nachrichtenvorlagen {#message-templates}
       + [Ereignistypen erstellen](message-center/using/creating-event-types.md)
-      + [Nachrichtenvorlagen erstellen](message-center/using/creating-the-message-template.md)
-      + [Testen von Nachrichtenvorlagen](message-center/using/testing-message-templates.md)
+      + [Nachrichtenvorlagen entwerfen](message-center/using/creating-the-message-template.md)
+      + [Nachrichtenvorlagen testen](message-center/using/testing-message-templates.md)
       + [Nachrichtenvorlagen veröffentlichen](message-center/using/publishing-message-templates.md)
    + Verarbeitung von Transaktionsereignissen {#processing}
       + [Ereignisbeschreibung](message-center/using/event-description.md)
       + [Ereignisverarbeitung](message-center/using/about-event-processing.md)
       + [Versandausführung](message-center/using/delivery-execution.md)
    + Berichte {#reports}
-      + [Transaktionsnachrichten-Berichte aufrufen](message-center/using/about-transactional-messaging-reports.md)
+      + [Auf Transaktionsnachrichten-Berichte zugreifen](message-center/using/about-transactional-messaging-reports.md)
       + [Verlauf von Message Center-Ereignissen](message-center/using/history-of-message-center-events.md)
       + [Message Center-Dienstqualität](message-center/using/message-center-service-level.md)
       + [Message Center-Verarbeitungsdauer](message-center/using/message-center-processing-time.md)
@@ -671,7 +671,7 @@ ht-degree: 98%
          + [Best Practices und Einschränkungen](installation/using/fda-best-practices.md)
          + Konfigurationsrichtlinien {#config-databases}
             + [Konfigurationsschritte](installation/using/configure-fda.md)
-            + [Vertikal konfigurieren](installation/using/configure-fda-vertica.md)
+            + [Konfigurieren von Vertica](installation/using/configure-fda-vertica.md)
             + [Konfigurieren von Snowflake](installation/using/configure-fda-snowflake.md)
             + [Konfigurieren von Google BigQuery](installation/using/configure-fda-google-big-query.md)
             + [Konfigurieren von Azure Synapse](installation/using/configure-fda-synapse.md)
