@@ -7,7 +7,7 @@ role: Business Practitioner
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2372'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ _6. Dezember 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neuheiten**
 
@@ -102,7 +102,7 @@ _5. November 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
