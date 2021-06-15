@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Aktuelle Version
-description: Aktuelle Version von Campaign Classic      Anmerkungen
+description: Aktuelle Version von Campaign Classic       Anmerkungen
 feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 28083eb0271c8c148955fa33978479dc3683eaed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1953'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ _5. Juni 2021_
 <tbody>
 <tr>
 <td>
-<p>Die Integration zwischen Journey Orchestration und Adobe Campaign Classic ist jetzt allgemein verfügbar. Sie ermöglicht Journey Orchestration das Senden von E-Mails, Push-Benachrichtigungen und SMS mithilfe von Adobe Campaign Classic-Funktionen für Transaktionsnachrichten.</p>
+<p>Die Integration zwischen Journey Orchestration und Adobe Campaign Classic ist jetzt allgemein verfügbar. Diese Integration ermöglicht Journey Orchestration das Senden von E-Mails, Push-Benachrichtigungen und SMS mit der Transaktionsnachrichtenfunktion von Adobe Campaign Classic.</p>
 <p>Die Verbindung zwischen der Journey Orchestration- und der Campaign Classic-Instanz wird bei der Bereitstellung von Adobe hergestellt.</p>
-<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html">Dokumentation zur Journey Orchestration</a>. Ein schrittweises Anwendungsbeispiel wird in diesem <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html">Abschnitt</a> vorgestellt</p>
+<p>Weitere Informationen finden Sie in der <a href="https://experienceleague.adobe.com/docs/journeys/using/action-journeys/acc-action.html?lang=de">Dokumentation zu Journey Orchestration</a>. In diesem <a href="https://experienceleague.adobe.com/docs/journeys/using/use-cases-journeys/campaign-classic-use-case.html?lang=de">Abschnitt</a> wird ein Anwendungsfall schrittweise beschrieben.</p>
 </td>
 </tr>
 </tbody>
@@ -47,7 +47,7 @@ _5. Juni 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>LINE-Kanal-Verbesserungen</strong><br /> </th> 
+<th> <strong>Verbesserungen am LINE-Kanal</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
@@ -55,9 +55,9 @@ _5. Juni 2021_
 <td> <p>Die folgenden Verbesserungen wurden dem LINE-Kanal hinzugefügt:
 </p>
 <ul> 
-<li><p>Unterstützung für LINE-Videomeldungstyp</p></li>
-<li><p>Unterstützung der LINE Partner Registration API</p></li>
-<li><p>Unterstützung eines erneuten Nachrichtenversands im Fall eines serverseitigen LINE-Fehlers oder Netzwerktimeouts</p></li>
+<li><p>Unterstützung für den LINE-Video-Nachrichten-Typ</p></li>
+<li><p>Unterstützung der LINE-Partnerregistrierungs-API</p></li>
+<li><p>Unterstützung eines erneuten Nachrichtenversands im Fall eines Server-seitigen LINE-Fehlers oder Netzwerk-Timeouts</p></li>
 </ul>
 <p>Weitere Informationen finden Sie im <a href="../../delivery/using/line-channel.md">entsprechenden Handbuch</a>.</p>
 </td> 
@@ -73,7 +73,7 @@ _5. Juni 2021_
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Jetzt können Sie Ihre Adobe Campaign Classic-Instanz mit Ihrer externen Vertikaldatenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.</p>
+<td> <p>Jetzt können Sie Ihre Adobe Campaign Classic-Instanz mit Ihrer externen Vertica-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.</p>
 <p>Weitere Informationen finden Sie im <a href="../../installation/using/configure-fda-vertica.md">entsprechenden Handbuch</a>.</p>
 </td> 
 </tr> 
@@ -83,12 +83,12 @@ _5. Juni 2021_
 <table> 
 <thead>
 <tr> 
-<th> <strong>Google Big Query FDA-Connector</strong><br /> </th> 
+<th> <strong>Google BigQuery FDA-Connector</strong><br /> </th> 
 </tr> 
 </thead> 
 <tbody> 
 <tr> 
-<td> <p>Jetzt können Sie Ihre Adobe Campaign Classic-Instanz mit Ihrer externen Google Big Query-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.
+<td> <p>Jetzt können Sie Ihre Adobe Campaign Classic-Instanz mit Ihrer externen Google BigQuery-Datenbank verbinden. Diese Verbindung wird über ein neues externes Konto verwaltet.
 </p>
 <p>Weitere Informationen finden Sie im <a href="../../installation/using/configure-fda-google-big-query.md">entsprechenden Handbuch</a>.</p>
 </td> 
@@ -98,15 +98,15 @@ _5. Juni 2021_
 
 **Verbesserungen bei der Sicherheit**
 
-* Der Zugriff auf die API-Methode **xtk:session#GetConxInfo**, die die vollständigen Details zur Datenbankverbindung zurückgibt, ist jetzt nur noch für Admin-Benutzer verfügbar. (NEO-27779)
-* Die veraltete decryptString -Funktion wurde in CRM-bezogenen JavaScript-Dateien durch decryptPassword ersetzt.
-* Die Tracking-Signaturfunktion wurde verbessert, um das Risiko von Tracking-Weiterleitungsfehlern zu verringern, wenn Drittanbieter-Tools (E-Mail-Clients, Internetbrowser, sichere Link-Sicherheitstools) den verfolgten Link ändern.
-* Fehlerkorrektur - Getrackte URLs funktionieren jetzt, wenn sie Großbuchstaben enthalten. Beim Signierungsmechanismus für getrackte URLs wird jetzt zwischen Groß- und Kleinschreibung unterschieden. (NEO-28414)
+* Der Zugriff auf die API-Methode **xtk:session#GetCnxInfo**, die die vollständigen Details zur Datenbankverbindung zurückgibt, ist jetzt nur noch für Admin-Benutzer verfügbar. (NEO-27779)
+* Die veraltete Funktion decryptString wurde in CRM-bezogenen JavaScript-Dateien durch decryptPassword ersetzt.
+* Die Funktion zum Tracking von Signaturen wurde verbessert, um das Risiko von Tracking-Weiterleitungsfehlern zu verringern, wenn Drittanbieter-Tools (E-Mail-Clients, Internetbrowser, Sicherheits-Tools für sichere Links) den getrackten Link ändern.
+* Fehlerkorrektur – Getrackte URLs funktionieren jetzt auch, wenn sie Großbuchstaben enthalten. Beim Signierungsmechanismus für getrackte URLs wird jetzt zwischen Groß- und Kleinschreibung unterschieden. (NEO-28414)
 
 **Aktualisierungen zur Kompatibilität**
 
 Die folgenden Systeme werden jetzt von Campaign unterstützt:
-* Google Big Query FDA-Connector
+* Google BigQuery FDA-Connector
 * Vertica FDA-Connector
 * PostgreSQL 13
 
@@ -114,49 +114,49 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Eingestellte Funktionen**
 
-* Ab Campaign-Version 21.1 wird Adobe Analytics Data Connector nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung entsprechend mit dem neuen Connector Adobe Analytics Connector anpassen.
+* Ab Campaign Version 21.1 wird der Adobe Analytics Data Connector nicht mehr unterstützt. Wenn Sie diesen Connector verwenden, müssen Sie Ihre Implementierung auf den neuen Adobe Analytics Connector anpassen.
 Weitere Informationen finden Sie im [entsprechenden Handbuch](../../platform/using/adobe-analytics-connector.md).
-* Die Unterstützung für Debian 8 ist jetzt veraltet.
+* Debian 8 wird jetzt nicht mehr unterstützt.
 * Nach der Einstellung von Oracle CRM in Version 20.3 wurde das zugehörige externe Konto aus der Benutzeroberfläche entfernt.
 
 Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
 
 **Verbesserungen**
 
-* Beim Speichern eines Workflows wurden zusätzliche Prüfungen hinzugefügt, um sicherzustellen, dass die Aktivitätsnamen eindeutig sind und dass Transitionen immer von einer Aktivität gefolgt werden.
-* Der technische Workflow **Rechnungsstellung (billing)** enthält jetzt die Aufgaben, die ursprünglich vom **Anzahl der aktiven Rechnungsstellungsprofile** (billingActiveContactCount) -Workflow ausgeführt wurden, der entfernt wurde. Der monatlich vom Workflow gesendete E-Mail-Bericht enthält jetzt Informationen zur Anzahl der aktiven Profile in der Instanz. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
-* Es wurde ein neues **_keyOnMData** -Attribut hinzugefügt, um einen Schlüssel für Vorgänge zu Memodaten verwenden zu können.
+* Beim Speichern eines Workflows wurden zusätzliche Prüfungen hinzugefügt, um sicherzustellen, dass Aktivitätsnamen eindeutig sind und dass auf Transitionen immer eine Aktivität folgt.
+* Der technische Workflow **Abrechnung (Billing)** enthält jetzt die Aufgaben, die ursprünglich vom mittlerweile entfernten Workflow **Zählung aktiver Profile** (billingActiveContactCount) ausgeführt wurden. Der monatlich vom Workflow gesendete E-Mail-Bericht enthält jetzt Informationen zur Anzahl der aktiven Profile in der Instanz. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
+* Es wurde das neue Attribut **_keyOnMData** hinzugefügt, um einen Schlüssel für Vorgänge zu Memo-Daten verwenden zu können.
 
 **Sonstige Änderungen**
 
 * Der Drittanbieter openssl für Windows wurde auf Version 1.1.1h aktualisiert.
-* In der Debian-Paketbeschreibung wurde nlserver auf den Adobe Campaign Classic-Server geändert.
+* In der Debian-Kit-Beschreibung wurde &quot;nlserver&quot; in &quot;Adobe Campaign Classic-Server&quot; geändert.
 
 **Korrekturen**
 
-* Fehlerkorrektur - Beim Bearbeiten des Sitzungs-Timeouts werden Benutzer nach einer bestimmten Zeit nicht mehr abgemeldet, wenn Benutzer auch nach der festgelegten Zeit angemeldet geblieben sind.
-* Fehlerkorrektur - Sendungen werden jetzt nicht mehr als schreibgeschützt angezeigt, können aber weiterhin in den Versandeigenschaften bearbeitet werden.
-* Fehlerkorrektur - die Symbolleiste für die Bearbeitung verschwindet beim Entwerfen einer Webanwendung nicht mehr.
-* Fehlerkorrektur - die Textversion einer E-Mail mit Adobe Campaign Classic-Headern wird beim Hinzufügen eines Links zu einer E-Mail nun korrekt angezeigt. (NEO-29211
-* Bei Verwendung von FDA über HTTP-Verbindung wurde der Workflow **Mid-Sourcing (Versandlogs)** (defaultMidSourcingLog) in dem von der Option **NmsMidSourcing_LogsPeriodHour** festgelegten Zeitrahmen festgehalten. Dadurch wird verhindert, dass Datensätze mit Daten aktualisiert werden, die nach diesem festgelegten Zeitraum aufgetreten sind. (NEO-30833)
-* Fehlerkorrektur - Jetzt tritt kein Fehler mehr auf, nachdem der Synchronisations-Workflow für das Message Center ausgeführt wurde. Jedes Mal, wenn ein Ordner mit Versandobjekten in einen benutzerdefinierten Ordner verschoben wurde, verschiebte der Workflow die Sendungen zurück in den Ordner **Transaktionsnachrichten-Verlauf** . (NEO-27445)
-* Fehlerkorrektur - jetzt wird keine Fehlermeldung mehr angezeigt, wenn versucht wird, die Berichte **Versandstatistiken**, **Trackingindikatoren** und **Statistiken der Teilungsaktivitäten** anzuzeigen.
+* Fehlerkorrektur – Beim Bearbeiten des Sitzungs-Timeouts zum Abmelden von Benutzern nach einer bestimmten Zeitspanne bleiben Benutzer nicht mehr über die eingestellte Zeit hinaus angemeldet.
+* Fehlerkorrektur – Sendungen können nicht mehr in den Eigenschaften der Sendungen bearbeitet werden, wenn sie als schreibgeschützt angezeigt werden.
+* Fehlerkorrektur – Die Symbolleiste zur Bearbeitung verschwindet beim Entwerfen einer Web-Anwendung nicht mehr.
+* Fehlerkorrektur – Beim Hinzufügen eines Links zu einer E-Mail wird nun nicht mehr die Textversion einer E-Mail mit Adobe Campaign Classic-Headern angezeigt. (NEO-29211
+* Bei Verwendung einer FDA-over-HTTPs-Verbindung blieb der Workflow **Mid-Sourcing** (Versandlogs) (defaultMidSourcingLog) in dem durch die Option **NmsMidSourcing_LogsPeriodHour** festgelegten Zeitrahmen stecken. Dadurch wurde verhindert, dass Datensätze mit Daten nach diesem festgelegten Zeitraum aktualisiert wurden. (NEO-30833)
+* Fehlerkorrektur – Jetzt tritt nach dem Ausführen des Synchronisations-Workflows für das Message Center kein Fehler mehr auf. Jedes Mal, wenn ein Ordner mit Versandobjekten in einen benutzerdefinierten Ordner verschoben wurde, verschob der Workflow die Sendungen zurück in den Ordner **Transaktionsnachrichten-Verlauf**. (NEO-27445)
+* Fehlerkorrektur – Jetzt wird keine Fehlermeldung mehr angezeigt, wenn versucht wird, die Berichte **Versandstatistiken**, **Tracking-Indikatoren** und **Statistiken zu Teilungsaktivitäten** anzuzeigen.
 * Die Workflow-Aktivität **Oracle On Demand** wurde nach der Einstellung des Oracle CRM-Connectors aus der Benutzeroberfläche entfernt.
-* Fehlerkorrektur - Die Ausführung von Verarbeitungs-Workflows wird jetzt nach dem täglichen Neustart des Workflow-Server-Moduls (wfserver) nicht mehr angehalten. (NEO-30047)
-* Fehlerkorrektur - Das MX-Verwaltungsdokument kann jetzt aktualisiert werden, was sich negativ auf die IP-Reputation auswirken kann. (NEO-29897)
-* Es wurden Probleme behoben, die zu Webprozessabstürzen beim Empfang eines SOAP-Aufrufs führten. (NEO-28796) (NEO-29600)
-* Es wurde ein Fehler behoben, der dazu führte, dass die Erstellung des SAP HANA-FDA-Index fehlschlug. (NEO-29664)
-* Fehlerkorrektur - Transaktionsnachrichten bleiben jetzt nicht mehr im Status **Warten**, wenn SOAP-Aufrufe mit einem Header ausgeführt werden. (NEO-28737)
-* Fehlerkorrektur - Bei der Verwendung des Teradata FDA-Connectors tritt jetzt kein Fehler mehr auf: alle temporären Tabellen wurden nur auf einem Knoten des Clusters erstellt, was letztendlich den gesamten Spool-Speicherplatz belegen und zu einem Absturz von Teradata führen konnte. Die temporären Tabellen werden jetzt auf vielen Knoten generiert. (NEO-28230)
-* Fehlerkorrektur - Bei der Verwendung von Webanwendungen werden jetzt keine falschen Primärschlüssel mehr von Trackingtags im **nms:trackingURL**-Schema erzeugt. (NEO-27931)
-* Die Kompatibilität mit ODBC 3.x wurde verbessert, um die Genauigkeit von Fehlermeldungen sicherzustellen.
-* Fehlerkorrektur - Jetzt stürzt die Konsole nicht mehr ab, wenn benutzerdefinierte Inhaltsvorlagen in E-Mail-Sendungen verwendet werden. (NEO-31547)
-* Es wurde ein Problem behoben, durch das Tomcat aufgrund einer langsamen Verbindung oder einer großen Antwortgröße keine gültigen Antworten senden konnte.
-* Fehlerkorrektur - Beim Lesen der UUID aus einer PostgreSQL-Datenbank tritt jetzt kein Fehler mehr auf.
-* Fehlerkorrektur - bei der Suche nach Vorschlagsdaten in Verbindung mit Angeboten treten keine Leistungsprobleme mehr auf. (NEO-27554)
-* Fehlerkorrektur - Der Webprozess reagiert jetzt, wenn der IMS-Dienst aktiviert, aber nicht reagiert.
-* Fehlerkorrektur - Versand mit Testsendungen ist jetzt möglich, da ein bestimmter Join-Mechanismus zur Verfügung steht, der die Versandpersonalisierung fehlgeschlagen ist. (NEO-14391)
-* Fehlerkorrektur - Jetzt wird kein Warnhinweis mehr mit der Warnungsaktivität gesendet, wenn in der Versandtabelle eine Abfrage und eine Anreicherungsaktivität enthalten sind. (NEO-25157)
+* Fehlerkorrektur – Die Ausführung von Verarbeitungs-Workflows wird jetzt nach dem täglichen Neustart des Workflow-Server-Moduls (wfserver) nicht mehr angehalten. (NEO-30047)
+* Fehlerkorrektur – Das MX-Verwaltungsdokument kann jetzt zuverlässig aktualisiert werden. Zuvor konnte sich dieses Problem negativ auf die IP-Reputation auswirken. (NEO-29897)
+* Fehlerkorrektur – Beim Empfang eines SOAP-Aufrufs kommt es nicht mehr zu Abstürzen von Web-Prozessen. (NEO-28796) (NEO-29600)
+* Fehlerkorrektur – Die Erstellung des SAP HANA-FDA-Index wird jetzt zuverlässig ausgeführt. (NEO-29664)
+* Fehlerkorrektur – Transaktionsnachrichten verbleiben jetzt nicht mehr im Status **Ausstehend**, wenn SOAP-Aufrufe mit einem Header ausgeführt werden. (NEO-28737)
+* Fehlerkorrektur – Bei der Verwendung des Teradata FDA-Connectors tritt jetzt kein Fehler mehr auf. Das Problem bestand darin, dass alle temporären Tabellen nur auf einem Knoten des Clusters erstellt wurden, was letztendlich den gesamten Spool-Speicherplatz belegen und zu einem Absturz von Teradata führen konnte. Die temporären Tabellen werden jetzt auf vielen Knoten generiert. (NEO-28230)
+* Fehlerkorrektur – Bei der Verwendung von Web-Anwendungen werden von Trackingtags jetzt keine falschen Primärschlüssel mehr im **nms:trackingURL**-Schema erzeugt. (NEO-27931)
+* Die Kompatibilität mit ODBC 3.x wurde verbessert, um die Richtigkeit von Fehlermeldungen sicherzustellen.
+* Fehlerkorrektur – Jetzt stürzt die Konsole nicht mehr ab, wenn benutzerdefinierte Inhaltsvorlagen in E-Mail-Sendungen verwendet werden. (NEO-31547)
+* Fehlerkorrektur – Tomcat sendet jetzt auch bei langsamen Verbindungen oder einer großen Antwortgröße gültige Antworten.
+* Fehlerkorrektur – Beim Lesen der UUID aus einer PostgreSQL-Datenbank tritt jetzt kein Fehler mehr auf.
+* Fehlerkorrektur – Die Suche nach Vorschlagsdaten in Verbindung mit Angeboten führt nicht mehr zu Leistungsproblemen. (NEO-27554)
+* Fehlerkorrektur – Der Web-Prozess reagiert jetzt auch, wenn der IMS-Dienst aktiviert ist, aber nicht reagiert.
+* Fehlerkorrektur – Das Durchführen eines Versandes mit einer Gruppe von Testsendungen ist jetzt zuverlässig möglich. Ein bestimmter Verbindungsmechanismus führte dazu, dass die Versandpersonalisierung fehlschlug. (NEO-14391)
+* Fehlerkorrektur – Die Warnungsaktivität sendet jetzt einen Warnhinweis, wenn eine Abfrage und eine Anreicherungsaktivität an die Versandtabelle gerichtet ist. (NEO-25157)
 
 ## ![](assets/do-not-localize/red_2.png) Version 21.1.2 – Build 9282 {#release-21-1-2-build-9282}
 
