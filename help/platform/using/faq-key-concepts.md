@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 100%
@@ -90,7 +90,7 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 ## Wie kann ich Push-Benachrichtigungen senden? {#how-to-send-push-notifications-}
 
-Hier erfahren Sie, wie Sie mit Adobe Campaign [eine personalisierte Push-Benachrichtigung](../../delivery/using/creating-notifications.md) über Apps an iOS- und Android-Geräte senden.
+Hier erfahren Sie, wie Sie mit Adobe Campaign [eine personalisierte Push-Benachrichtigung](../../delivery/using/create-notifications-ios.md) über Apps an iOS- und Android-Geräte senden.
 
 ## Wie erstelle und teile ich eine Online-Umfrage? {#how-to-design-and-share-an-online-survey-}
 
