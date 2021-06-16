@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
 workflow-type: tm+mt
-source-wordcount: '918'
-ht-degree: 100%
+source-wordcount: '926'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,11 @@ Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows ve
 
 Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes verwenden:
 
-* Adobe Campaign 20.3, 20.2.4, 19.1.8 oder [!DNL Gold Standard] 11 (mind.)
+* Mindestens einer der folgenden Adobe Campaign-Builds:
+   * 19.1.8.9039
+   * 19.1.4.9032.GS.11
+   * 20.2.4.9187
+   * 20.3.1
 * Adobe Analytics Standard-Version
 
 Sie benötigen außerdem:
