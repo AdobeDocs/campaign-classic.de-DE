@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 100%
+source-wordcount: '137'
+ht-degree: 82%
 
 ---
 
@@ -20,15 +20,15 @@ Mit Adobe Campaign können Sie personalisierte elektronische Nachrichten an eine
 Achten Sie vor dem Versand von E-Mails auf Folgendes:
 
 * Empfängerprofile müssen zumindest eine E-Mail-Adresse enthalten.
-* Erfahren Sie mehr über [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md) mit Adobe Campaign.
-* Erfahren Sie mehr über die [Zustellbarkeit](../../delivery/using/about-deliverability.md) und [Verwaltung der Zustellbarkeit](https://helpx.adobe.com/de/campaign/kb/acc-deliverability.html).
+* Erfahren Sie mehr über [Best Practices beim Versand](delivery-best-practices.md) mit Adobe Campaign.
+* Lesen Sie diese Abschnitte, um mehr über die Zustellbarkeit zu erfahren: [Verwaltung der Zustellbarkeit in Campaign](about-deliverability.md) und [Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 Die wichtigsten Schritte zum Senden einer E-Mail sind:
 
 * [E-Mail-Versand erstellen](../../delivery/using/creating-an-email-delivery.md)
 * [Bestimmen der Zielpopulation](../../delivery/using/steps-defining-the-target-population.md)
-* [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md)
+* [E-Mail-Inhalte erstellen](../../delivery/using/defining-the-email-content.md)
 * [E-Mail senden](../../delivery/using/sending-messages.md)
-* [Sendung beobachten](../../delivery/using/about-delivery-monitoring.md)
+* [Versand überwachen](../../delivery/using/about-delivery-monitoring.md)
 
-Die folgenden Abschnitte enthalten Informationen, die speziell für den E-Mail-Kanal gelten. Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+Die folgenden Abschnitte enthalten Informationen, die speziell für den E-Mail-Kanal gelten. Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
