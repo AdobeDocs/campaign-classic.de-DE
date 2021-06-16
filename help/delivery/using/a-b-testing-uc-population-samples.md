@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 100%
+source-wordcount: '191'
+ht-degree: 91%
 
 ---
 
-# Testpopulation konfigurieren {#step-2--configuring-population-samples}
+# Konfigurieren des Populationsmusters {#step-2--configuring-population-samples}
 
-## Konfiguration der Abfrage {#configuring-the-query-activity}
+## Konfiguration der Abfrageaktivität {#configuring-the-query-activity}
 
 * Öffnen Sie die **[!UICONTROL Abfrage]** per Doppelklick.
 
@@ -79,4 +79,4 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-Sie können jetzt die beiden Versandvorlagen erstellen (siehe [Schritt 3: Zwei Versandvorlagen erstellen](../../delivery/using/a-b-testing-uc-delivery-templates.md)).
+Jetzt können Sie die beiden Versandvorlagen erstellen. [Mehr dazu](a-b-testing-uc-delivery-templates.md)).
