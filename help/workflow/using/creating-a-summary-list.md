@@ -6,14 +6,14 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Erstellung einer zusammenfassenden Liste.{#creating-a-summary-list}
+# Erstellen einer zusammenfassenden Liste{#creating-a-summary-list}
 
 Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows zum Abruf und zur Anreicherung von Dateien mit dem Ziel, eine zusammenfassende Liste zu erstellen. Die zu erstellende Liste enthält Kontakte, die Einkäufe in Geschäften getätigt haben.
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um eine zusammenfassende Liste zu erstellen:
 1. Anreicherung der Kontaktdaten mit einem aus der Verkaufstabelle stammenden Aggregat.
 1. Erstellung einer zusammenfassenden Liste.
 
-## 1. Schritt: Laden der Datei und Abstimmung der importierten Daten {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Schritt 1: Datei laden und die importierten Daten abstimmen {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 Die zu ladenden Verkaufsdaten weisen folgende Struktur auf:
 
@@ -110,7 +110,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 ![](assets/uc2_enrich_population1.png)
 
-## 2. Schritt: Schreiben der angereicherten Daten in die &#39;Verkauf&#39;-Tabelle {#step-2--writing-enriched-data-to-the--purchases--table}
+## Schritt 2: Schreiben der angereicherten Daten in die &#39;Verkauf&#39;-Tabelle {#step-2--writing-enriched-data-to-the--purchases--table}
 
 In diesem Schritt werden die importierten und angereicherten Daten in die &quot;Verkauf&quot;-Tabelle geschrieben. Dies geschieht mithilfe der Aktivität **Datenaktualisierung**.
 
@@ -134,7 +134,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## 3. Schritt: Anreicherung der &#39;Kontakt&#39;-Daten {#step-3--enriching--contact--data-}
+## Schritt 3: Anreicherung der &#39;Kontakt&#39;-Daten {#step-3--enriching--contact--data-}
 
 Das Schema &quot;Kontakte&quot; steht in Relation zum Schema &#39;Verkauf&#39;. Dies ermöglicht die Verwendung einer weiteren Option der Anreicherungsaktivität, nämlich die Hinzufügung von Daten in Relation mit der Filterdimension.
 
@@ -170,7 +170,7 @@ Für die zusammenfassende Liste werden Felder aus dem Verkaufsschema und aus der
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## 4. Schritt: Erstellung einer zusammenfassenden Liste {#step-4--creating-and-adding-to-a-summary-list}
+## Schritt 4: Erstellen und Hinzufügen zu einer zusammenfassenden Liste {#step-4--creating-and-adding-to-a-summary-list}
 
 Im letzten Schritt werden die angereicherten Daten in eine Liste geschrieben.
 
