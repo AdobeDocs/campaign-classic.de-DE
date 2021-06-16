@@ -5,10 +5,10 @@ description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 45a84e1bf43678bbc31d8bac15a7e6520204fdc2
+source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 89%
+source-wordcount: '694'
+ht-degree: 80%
 
 ---
 
@@ -40,7 +40,7 @@ Der Parameter &quot;@authPrivateKey&quot; der Konfigurationsdatei der Instanz is
 
 1. Überprüfen Sie, ob &quot;authPrivateKey&quot; festgelegt ist.
 1. Vergewissern Sie sich, dass &quot;authPrivateKey:&quot; mit &quot;@&quot; beginnt, mit &quot;=&quot; endet und etwa 4.000 Zeichen lang ist.
-1. Suchen Sie nach dem Originalschlüssel und stellen Sie sicher, dass er im RSA-Format vorliegt, 4.096 Bit lang ist und mit -----BEGIN RSA PRIVATE KEY----- beginnt.
+1. Suchen Sie nach dem ursprünglichen Schlüssel und vergewissern Sie sich, dass er: im RSA-Format, 4096 Bit lang und beginnt mit `-----BEGIN RSA PRIVATE KEY-----`.
    <br> Erstellen Sie den Schlüssel ggf. neu und registrieren Sie ihn bei Adobe Analytics.
 1. Vergewissern Sie sich, dass der Schlüssel in derselben Instanz kodiert wurde wie [!DNL pipelined]. <br>Wiederholen Sie bei Bedarf die Kodierung mit dem Beispiel-JavaScript oder -Workflow.
 
@@ -51,6 +51,21 @@ Das Format des privaten Schlüssels ist ungültig.
 1. Führen Sie die Schritte zur Verschlüsselung des Schlüssels auf dieser Seite aus.
 1. Stellen Sie sicher, dass der Schlüssel auf derselben Instanz verschlüsselt wird.
 1. Überprüfen Sie, ob &quot;authPrivateKey&quot; in der Konfigurationsdatei mit dem generierten Schlüssel übereinstimmt. <br>Sorgen Sie dafür, dass Sie zur Generierung des Schlüsselpaars OpenSSL verwenden. PuttyGen beispielsweise generiert nicht das richtige Format.
+
+**Pipelined schlägt fehl mit der Fehlermeldung &quot;is not longer allowed get access token&quot;**
+
+Die Protokolle sollten wie folgt lauten:
+
+```
+2021-05-31T08:42:18.124Z        66462   66501   1       error   log     Listener: JWT Token is empty. (iRc=16384)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     Unknown authentication mode: 'Bearer realm="Adobe Analytics"'. (iRc=-55)
+2021-05-31T08:42:18.210Z        66462   66501   1       error   log     BAS-010007 Function not implemented (iRc=-55)
+2021-05-31T08:42:48.582Z        66462   66501   1       warning log     Connection seems to have been lost. Attempting to reconnect.
+2021-05-31T08:43:09.156Z        66462   66501   1       error   log     INT-150012 The HTTP query returned a 'Forbidden' type error (403) (iRc=-53)
+2021-05-31T08:43:09.160Z        66462   66501   1       error   log     Error while authenticating: '{"error":"This client: df73c224e5-triggers-test is no longer allowed to get access token."}' (iRc=16384)
+```
+
+Diese Fehlermeldung bedeutet, dass die Authentifizierung mit der alten Omniture-Basis OAuth konfiguriert ist. Informationen zum Aktualisieren Ihrer Authentifizierung finden Sie in der Dokumentation [Konfigurieren der Adobe I/O für Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md) .
 
 **Es werden keine Auslöser abgerufen**
 
