@@ -6,18 +6,18 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 77b3a906-b76e-49e1-b524-b6f1ae537259
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 100%
+source-wordcount: '93'
+ht-degree: 49%
 
 ---
 
 # Versandvorlagen erstellen {#step-3--creating-two-delivery-templates}
 
-Erstellen Sie nun zwei Versandvorlagen, die jeweils in einem an die **[!UICONTROL Aufspaltung]** angeschlossenen **[!UICONTROL E-Mail-Versand]** verwendet werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md). Gehen Sie wie folgt vor:
+Erstellen Sie nun zwei Versandvorlagen. Jede Vorlage wird in einer **[!UICONTROL E-Mail-Versand]** -Aktivität referenziert, die mit der **[!UICONTROL Aufspaltung]** -Aktivität verknüpft ist. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](about-templates.md).
 
-1. Gehen Sie im Navigationsbaum in den Knoten **[!UICONTROL Ressourcen > Versandvorlagen]**.
+1. Navigieren Sie zum Ordner **[!UICONTROL Ressourcen > Versandvorlage]** .
 1. Duplizieren Sie die Vorlage **[!UICONTROL E-Mail]**.
 
    ![](assets/use_case_abtesting_deliverymodel_001.png)
@@ -30,4 +30,4 @@ Erstellen Sie nun zwei Versandvorlagen, die jeweils in einem an die **[!UICONTRO
 
    ![](assets/use_case_abtesting_deliverymodel_003.png)
 
-Sie können jetzt die Sendungen im Workflow konfigurieren (siehe [Schritt 4: Sendungen im Workflow konfigurieren](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)).
+Jetzt können Sie die Sendungen im Workflow konfigurieren. [Weitere Informationen](a-b-testing-uc-configuring-deliveries.md).
