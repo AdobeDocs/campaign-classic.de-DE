@@ -6,20 +6,20 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4143d1b7-0e2b-4672-ad57-e4d7f8fea028
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 97%
 
 ---
 
-# Skript erstellen {#step-5--creating-the-script}
+# Script erstellen {#step-5--creating-the-script}
 
 Die Auswahl der Inhaltsversion, die an die verbleibende Population gesendet wird, erfolgt mithilfe eines Scripts. Das Script ruft die Information bezüglich der höchsten Öffnungsrate ab und kopiert den Inhalt der Siegerversion in den endgültigen Versand.
 
 ## Script-Beispiel {#example-of-a-script}
 
-Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden. Weitere Informationen hierzu finden Sie im Abschnitt [Implementierung](#implementation).
+Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](#implementation).
 
 ```
  // query the database to find the winner (best open rate)
@@ -65,7 +65,7 @@ Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden
    vars.deliveryId = delivery.id
 ```
 
-Eine ausführliche Erläuterung des Scripts finden Sie unter [Script-Details](#details-of-the-script).
+Eine detaillierte Erklärung des Scripts finden Sie in [diesem Abschnitt](#details-of-the-script).
 
 ## Umsetzung {#implementation}
 
@@ -168,4 +168,4 @@ Im zuvor dargestellten Beispiel wird die endgültige Version anhand der Öffnung
 * Niedrigste Abmelderate: `[indicators/@optOutRatio]`,
 * Höchster Gesamtumsatz infolge des Erhalts der Nachricht: `[indicators/@amount]`.
 
-Sie können jetzt den endgültigen Versand festlegen (siehe [Schritt 6: Endgültigen Versand festlegen](../../delivery/using/a-b-testing-uc-final-delivery.md)).
+Jetzt können Sie den endgültigen Versand definieren. [Weitere Informationen](a-b-testing-uc-final-delivery.md).
