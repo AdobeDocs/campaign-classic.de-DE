@@ -6,18 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 82%
 
 ---
 
 # Kanalübergreifender Versand{#cross-channel-deliveries}
 
 Auf kanalübergreifende Sendungen kann im Tab **[!UICONTROL Sendungen]** von Kampagnen-Workflows zugegriffen werden.
-
-Sie ermöglichen die Erstellung eines Versands für einen bestimmten Kanal. Die Konfiguration einer derartigen Aktivität (Auswahl der Vorlage, Inhaltserstellung etc.) erfolgt auf die gleiche Weise wie mit dem klassischen Versand-Assistenten.
 
 Die verfügbaren Kanäle sind:
 
@@ -26,12 +24,14 @@ Die verfügbaren Kanäle sind:
 * [Mobile](../../delivery/using/sms-channel.md)
 * [Twitter](../../social/using/publishing-on-twitter.md)
 * [Facebook](../../social/using/publishing-on-facebook.md)
-* [iOS](../../delivery/using/creating-notifications.md#sending-notifications-on-ios)
-* [Android](../../delivery/using/creating-notifications.md#sending-notifications-on-android)
+* [iOS](../../delivery/using/create-notifications-ios.md)
+* [Android](../../delivery/using/create-notifications-android.md)
+
+Wählen Sie die Vorlage aus, auf der der Versand basieren soll, und definieren Sie den Inhalt.
 
 Die Zielgruppe des Versands kann mithilfe der verschiedenen dedizierten Aktivitäten vorab im Workflow definiert werden.
 
-Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail oder einer SMS an Abonnenten einer Push-Benachrichtigung sowie für eine Push-Benachrichtigung eine Woche später. Gehen Sie dazu folgendermaßen vor:
+Im folgenden Beispiel wird ein Workflow erstellt, mit dem Abonnenten einer Push-Benachrichtigung eine E-Mail, eine SMS und eine Push-Benachrichtigung eine Woche später gesendet werden. Gehen Sie dazu wie folgt vor:
 
 1. Kampagne erstellen.
 1. Fügen Sie in Ihrer Kampagne dem Workflow im Tab **[!UICONTROL Zielbestimmungen und Workflows]** eine **[!UICONTROL Abfrage]** hinzu.
@@ -39,7 +39,7 @@ Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail o
 
    >[!NOTE]
    >
-   >Verwenden Sie für Push-Benachrichtigungen die Zieldimension **Abonnierte Anwendungen**.
+   >Verwenden Sie für Push-Benachrichtigungen die Zieldimension **Abonnierte Anwendungen** .
 
    ![](assets/cross_channel_delivery_1.png)
 
