@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '743'
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,18 @@ Nachdem das Paket installiert ist, können Sie in Adobe Campaign Classic die Ein
 
 >[!NOTE]
 >
->Informationen dazu, wie Sie Ihre Mobile App für iOS und konfigurieren und einen Versand für iOS erstellen, finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application-android.md).
+>Informationen dazu, wie Sie Ihre Mobile App für iOS und konfigurieren und einen Versand für iOS erstellen, finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md).
 
-## Konfigurieren eines externen iOS-Kontos {#configuring-external-account-ios}
+Die wichtigsten Schritte sind:
+
+1. [Externes iOS-Konto konfigurieren](#configuring-external-account-ios)
+1. [iOS-Dienst konfigurieren](#configuring-ios-service)
+1. [Integrieren der iOS-Mobile-App in Campaign](#creating-ios-app)
+
+Anschließend können Sie [eine Push-Benachrichtigung für iOS-Geräte erstellen](create-notifications-ios.md).
+
+
+## Externes iOS-Konto konfigurieren {#configuring-external-account-ios}
 
 Bei iOS sendet der iOS-HTTP/2-Connector Benachrichtigungen an HTTP/2-APNS.
 
@@ -37,7 +46,7 @@ Gehen Sie wie folgt vor, um diesen Connector zu konfigurieren:
 
 Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres Dienstes beginnen.
 
-## Konfigurieren des iOS-Dienstes {#configuring-ios-service}
+## iOS-Dienst {#configuring-ios-service} konfigurieren
 
 >[!CAUTION]
 >
@@ -64,9 +73,9 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 
 1. Erstellen Sie Ihre iOS-Mobile-Apps für Entwicklung und Produktion. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
 
-## Erstellen der iOS-Mobile-App {#creating-ios-app}
+## iOS Mobile App erstellen {#creating-ios-app}
 
-Nachdem Sie den Dienst erstellt haben, müssen Sie jetzt Ihre iOS-Mobile-App erstellen:
+Erstellen Sie nach der Erstellung Ihres Dienstes Ihre iOS-Anwendung in Campaign. Gehen Sie wie folgt vor:
 
 1. Klicken Sie in Ihrem neu erstellten Dienst auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um den Anwendungstyp auszuwählen.
 
@@ -118,40 +127,3 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 1. Klicken Sie auf **[!UICONTROL Beenden]**.
 
 Ihre iOS-Mobile-App kann jetzt in Campaign Classic verwendet werden.
-
-## Erstellen einer Rich-Benachrichtigung für iOS {#creating-ios-delivery}
-
-iOS 10 oder höher ermöglicht die Erstellung von Rich-Benachrichtigungen. Adobe Campaign kann mithilfe von Variablen Benachrichtigungen versenden, durch die das Gerät eine Rich-Benachrichtigung anzeigen kann.
-
-Erstellen Sie dann einen neuen Versand und verknüpfen Sie ihn mit der von Ihnen erstellten Mobile App.
-
-1. Gehen Sie zu **[!UICONTROL Kampagnenverwaltung]** > **[!UICONTROL Sendungen]**.
-
-1. Klicken Sie auf **[!UICONTROL Neu]**.
-
-   ![](assets/nmac_android_3.png)
-
-1. Wählen Sie **[!UICONTROL iOS-Versand (iOS)]** aus der Dropdown-Liste **[!UICONTROL Versandvorlage]**. Fügen Sie Ihrem Versand einen **[!UICONTROL Titel]** hinzu.
-
-1. Klicken Sie auf **[!UICONTROL An]**, um die Zielpopulation zu definieren. Standardmäßig wird das Zielgruppen-Mapping **[!UICONTROL Abonnierte Anwendung]** angewendet. Klicken Sie auf **[!UICONTROL Hinzufügen]**, um den zuvor erstellten Dienst auszuwählen.
-
-   ![](assets/nmac_ios_9.png)
-
-1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]** die Option **[!UICONTROL Abonnenten einer iOS-Mobile-App (iPhone, iPad)]** und klicken Sie auf **[!UICONTROL Weiter]**.
-
-1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die gewünschte Zielgruppe aus und klicken Sie auf **[!UICONTROL Beenden]**.
-Die **[!UICONTROL Anwendungsvariablen]** werden je nachdem, was bei den Konfigurationsschritten hinzugefügt wurde, automatisch hinzugefügt.
-
-   ![](assets/nmac_ios_6.png)
-
-1. Bearbeiten Sie Ihre Rich-Benachrichtigung.
-
-   ![](assets/nmac_ios_7.png)
-
-1. Aktivieren Sie im Fenster zur Benachrichtigungsbearbeitung die Option **[!UICONTROL Veränderlicher Inhalt]** an. Dadurch kann die Mobile App Medieninhalte herunterladen.
-
-1. Klicken Sie auf **[!UICONTROL Speichern]** und führen Sie den Versand durch.
-
-Auf iOS-Mobilgeräten der Abonnenten sollten das Bild und die Web-Seite in der Push-Benachrichtigung angezeigt werden.
-
-![](assets/nmac_ios_8.png)
