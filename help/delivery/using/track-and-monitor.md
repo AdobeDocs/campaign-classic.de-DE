@@ -1,11 +1,11 @@
 ---
 product: campaign
-title: Tracken und überwachen von Nachrichten
+title: Nachrichten tracken und überwachen
 audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: a039a288-2e7b-4f35-9885-ead3ed4347af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Sie haben auf die Schaltfläche **Senden** geklickt? Lassen Sie uns sehen, was d
 Um Ihre Kampagnen steuern zu können, müssen Sie zunächst sichergehen, dass Ihre Nachricht bei Ihren Empfängern tatsächlich angekommen ist.
 
 Prüfen Sie im Versand-Dashboard von Campaign die verarbeiteten Nachrichten und Versand-Logs.
-In den Versand-Logs können Sie den Status der Nachrichten feststellen. [Mehr dazu](../../delivery/using/about-delivery-monitoring.md).
+In den Versand-Logs können Sie den Status der Nachrichten feststellen. [Mehr dazu](about-delivery-monitoring.md).
 
 Was passiert, wenn die Nachrichten nicht gesendet werden und ihr Status weiterhin **Ausstehend** lautet?
 
@@ -41,7 +41,7 @@ Um das Verhalten Ihrer Empfänger besser kennenzulernen, können Sie ihre Reakti
 
 **Tipp**: Das Nachrichten-Tracking ist standardmäßig aktiviert. Um URLs zu konfigurieren, wählen Sie im unteren Bereich des Versandassistenten die Option „URLs anzeigen“ aus. Sie können für jede URL der Nachricht festlegen, ob Sie Tracking aktivieren möchten.
 
-Weitere Informationen hierzu finden Sie im Abschnitt [Konfigurieren des Tracking](../../delivery/using/how-to-configure-tracked-links.md) und in der Beschreibung der [Tracking-Indikatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
+Weitere Informationen hierzu finden Sie im Abschnitt [Konfigurieren des Tracking](how-to-configure-tracked-links.md) und in der Beschreibung der [Tracking-Indikatoren](../../reporting/using/delivery-reports.md#tracking-indicators).
 
 ## Versandleistung {#delivery-performances}
 
@@ -63,6 +63,6 @@ Bei Problemen mit Sendungen können spezifische Aktionen durchgeführt werden:
 
 * [Probleme mit der Bildanzeige](../../production/using/image-display-issues.md)
 
-* [Leistungsprobleme beim Versand](../../delivery/using/delivery-performances.md)
+* [Leistungsprobleme beim Versand](delivery-performances.md)
 
 * [Probleme mit temporären Dateien](../../production/using/temporary-files.md) – *nur On-Premise-Kunden*
