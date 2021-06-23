@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 93%
@@ -46,7 +46,7 @@ Gehen Sie wie folgt vor, um diesen Connector zu konfigurieren:
 
 Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres Dienstes beginnen.
 
-## iOS-Dienst {#configuring-ios-service} konfigurieren
+## iOS-Dienst konfigurieren {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -71,9 +71,9 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 
    ![](assets/nmac_service_2.png)
 
-1. Erstellen Sie Ihre iOS-Mobile-Apps für Entwicklung und Produktion. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application.md#creating-ios-app).
+1. Erstellen Sie Ihre iOS-Mobile-Apps für Entwicklung und Produktion. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md#creating-ios-app).
 
-## iOS Mobile App erstellen {#creating-ios-app}
+## Erstellen einer mobilen iOS-App {#creating-ios-app}
 
 Erstellen Sie nach der Erstellung Ihres Dienstes Ihre iOS-Anwendung in Campaign. Gehen Sie wie folgt vor:
 
@@ -100,7 +100,7 @@ Im folgenden Beispiel werden **mediaURl** und **mediaExt** hinzugefügt, um Rich
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**, um mit dem Konfigurieren der Entwicklungsanwendung zu beginnen.
 
-1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). Weiterführende Informationen finden Sie unter [Integration des Campaign SDK in Mobile Apps](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md). Mit diesem anwendungsspezifischen Integrationsschlüssel können Sie die Mobile App mit der Adobe Campaign-Plattform verbinden.
+1. Stellen Sie sicher, dass in Adobe Campaign und im Anwendungs-Code derselbe **[!UICONTROL Integrationsschlüssel]** definiert ist (über das SDK). Weiterführende Informationen finden Sie unter [Integration des Campaign SDK in Mobile Apps](integrating-campaign-sdk-into-the-mobile-application.md). Mit diesem anwendungsspezifischen Integrationsschlüssel können Sie die Mobile App mit der Adobe Campaign-Plattform verbinden.
 
    >[!NOTE]
    >
