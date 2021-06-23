@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
@@ -17,25 +17,25 @@ ht-degree: 100%
 
 In diesem Abschnitt werden häufig auftretende Probleme beim Versand sowie deren Fehlerbehebung aufgeführt.
 
-Befolgen Sie außerdem die auf [dieser Seite beschriebenen](../../delivery/using/delivery-performances.md) Best Practices und die Checkliste, um sicherzustellen, dass Ihre Sendungen gut funktionieren.
+Befolgen Sie außerdem die auf [dieser Seite beschriebenen](delivery-performances.md) Best Practices und die Checkliste, um sicherzustellen, dass Ihre Sendungen gut funktionieren.
 
 **Verwandte Themen:**
 
-* [Versandstatus](../../delivery/using/delivery-statuses.md)
-* [Versand-Dashboard](../../delivery/using/delivery-dashboard.md)
-* [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
+* [Versandstatus](delivery-statuses.md)
+* [Versand-Dashboard](delivery-dashboard.md)
+* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
 
 ## Langsame Sendungen {#slow-deliveries}
 
 Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
 
-* Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](../../delivery/using/about-deliverability.md).
+* Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](about-deliverability.md).
 
-* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md).
+* Ihr Versand könnte für eine rasche Verarbeitung zu groß sein. Dies kann passieren, wenn eine umfassende JavaScript-Personalisierung vorliegt oder die Versandgröße mehr als 60 KB beträgt. Nähere Informationen zu den Inhaltsrichtlinien finden Sie im Adobe Campaign-Handbuch [Best Practices beim Versand](delivery-best-practices.md).
 
 * Der Versand könnte im MTA (Message Transfer Agent) von Adobe Campaign gedrosselt worden sein. Dies kann folgende Ursachen haben:
 
-   * Nachricht in die Warteschlange gestellt (Meldung **[!UICONTROL Kontingente ausgeschöpft]**): Kontingente, die durch die in Campaign festgelegten deklarativen MX-Regeln angegebenen wurden, wurden ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](../../delivery/using/deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
+   * Nachricht in die Warteschlange gestellt (Meldung **[!UICONTROL Kontingente ausgeschöpft]**): Kontingente, die durch die in Campaign festgelegten deklarativen MX-Regeln angegebenen wurden, wurden ausgeschöpft. Weitere Informationen zu dieser Meldung finden Sie auf [dieser Seite](deliverability-faq.md). Weitere Informationen zu MX-Regeln finden Sie in [diesem Abschnitt](../../installation/using/email-deliverability.md#about-mx-rules).
 
    * Nachricht in die Warteschlange gestellt (Fehlermeldung **[!UICONTROL dynamische Durchsatzkontrolle]**): Vom Campaign MTA wurden beim Sendeversuch an einen ISP Fehler entdeckt, weshalb der Versand verlangsamt wurde, um die Fehlerdichte zu verringern und zu vermeiden, dass die IP-Adresse auf eine Blockierungsliste gesetzt wird.
 
