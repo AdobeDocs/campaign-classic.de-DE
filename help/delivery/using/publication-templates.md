@@ -1,12 +1,12 @@
 ---
 product: campaign
 title: Veröffentlichungsvorlagen
-description: Veröffentlichungsvorlagen
+description: Publikationsvorlagen
 audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 100%
@@ -85,7 +85,7 @@ Des Weiteren können folgende Veröffentlichungsparameter konfiguriert werden:
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Inhaltserstellung finden Sie unter [Erstellung einer Inhaltsinstanz](../../delivery/using/using-a-content-template.md#creating-a-content-instance).
+   >Weitere Informationen zur Inhaltserstellung finden Sie unter [Erstellung einer Inhaltsinstanz](using-a-content-template.md#creating-a-content-instance).
 
 ### Versand {#delivery}
 
@@ -95,7 +95,7 @@ In diesem Tab kann eine Versandvorlage ausgewählt werden, um direkt einen Versa
 
 >[!NOTE]
 >
->Ein Beispiel für einen Versand, der einen im Content-Management erstellten Inhalt verwendet, finden Sie im Abschnitt [Versand einer Inhaltsinstanz](../../delivery/using/using-a-content-template.md#delivering-a-content-instance).
+>Ein Beispiel für einen Versand, der einen im Content-Management erstellten Inhalt verwendet, finden Sie im Abschnitt [Versand einer Inhaltsinstanz](using-a-content-template.md#delivering-a-content-instance).
 
 ### Aggregator {#aggregator}
 
