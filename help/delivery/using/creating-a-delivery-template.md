@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 40a03e04-56c7-48c0-95b8-aa7bf1121048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Versandvorlage erstellen{#creating-a-delivery-template}
 
-![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](#delivery-template-video).
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](#delivery-template-video).
 
 ## Einen bestehenden Versand in eine Vorlage konvertieren {#converting-an-existing-delivery-to-a-template}
 
@@ -29,7 +29,7 @@ Geben Sie im Feld **[!UICONTROL Ordner]** an, wo die Vorlage gespeichert werden 
 
 ![](assets/s_ncs_user_campaign_save_as_scenario_a.png)
 
-Weitere Informationen zum Konfigurationsmodus finden Sie unter [Vorlage einem Versand zuordnen](../../delivery/using/creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
+Weitere Informationen zum Konfigurationsmodus finden Sie unter [Vorlage einem Versand zuordnen](creating-a-delivery-from-a-template.md#linking-the-template-to-a-delivery).
 
 ## Neue Vorlage erstellen {#creating-a-new-template}
 
