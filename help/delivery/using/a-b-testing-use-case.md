@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 4eb139a0-5342-4084-9f6d-d736e05bf1c6
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 98%
@@ -27,16 +27,16 @@ Darüber hinaus betrifft der in diesem Anwendungsfall beschriebene Test nur zwei
 
 Die wichtigsten Schritte zur Durchführung dieses Anwendungsbeispiels sind:
 
-* [Schritt 1: Zielgruppen-Workflow erstellen](../../delivery/using/a-b-testing-uc-targeting-workflow.md)
-* [Schritt 2: Testpopulation konfigurieren](../../delivery/using/a-b-testing-uc-population-samples.md)
-* [Schritt 3: Zwei Versandvorlagen erstellen](../../delivery/using/a-b-testing-uc-delivery-templates.md)
-* [Schritt 4: Sendungen im Workflow konfigurieren](../../delivery/using/a-b-testing-uc-configuring-deliveries.md)
-* [Schritt 5: Skript erstellen](../../delivery/using/a-b-testing-uc-script.md)
-* [Schritt 6: Endgültigen Versand festlegen](../../delivery/using/a-b-testing-uc-final-delivery.md)
-* [Schritt 7: Workflow starten](../../delivery/using/a-b-testing-uc-start-workflow.md)
-* [Schritt 8: Ergebnis analysieren](../../delivery/using/a-b-testing-uc-analyzing.md)
+* [Schritt 1: Zielgruppen-Workflow erstellen](a-b-testing-uc-targeting-workflow.md)
+* [Schritt 2: Testpopulation konfigurieren](a-b-testing-uc-population-samples.md)
+* [Schritt 3: Zwei Versandvorlagen erstellen](a-b-testing-uc-delivery-templates.md)
+* [Schritt 4: Sendungen im Workflow konfigurieren](a-b-testing-uc-configuring-deliveries.md)
+* [Schritt 5: Skript erstellen](a-b-testing-uc-script.md)
+* [Schritt 6: Endgültigen Versand festlegen](a-b-testing-uc-final-delivery.md)
+* [Schritt 7: Workflow starten](a-b-testing-uc-start-workflow.md)
+* [Schritt 8: Ergebnis analysieren](a-b-testing-uc-analyzing.md)
 
 **Verwandte Themen:**
 
-* [Erste Schritte mit A/B-Tests](../../delivery/using/get-started-a-b-testing.md)
-* [A/B-Tests konfigurieren](../../delivery/using/configuring-a-b-testing.md)
+* [Erste Schritte mit A/B-Tests](get-started-a-b-testing.md)
+* [A/B-Tests konfigurieren](configuring-a-b-testing.md)
