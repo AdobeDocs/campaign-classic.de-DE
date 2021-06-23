@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 100%
@@ -21,8 +21,8 @@ Klicken Sie auf **[!UICONTROL Senden]**, um die Nachrichtenerstellung abzuschlie
 
 Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finden Sie in den folgenden Abschnitten:
 
-* [Versand überprüfen](../../delivery/using/steps-validating-the-delivery.md)
-* [Versand durchführen](../../delivery/using/steps-sending-the-delivery.md)
+* [Versand überprüfen](steps-validating-the-delivery.md)
+* [Versand durchführen](steps-sending-the-delivery.md)
 
 ## Erweiterte Parameter {#advanced-parameters}
 
@@ -60,9 +60,9 @@ Folgende Optionen stehen zur Verfügung:
 
 Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
 
-* [Überwachen von Sendungen](../../delivery/using/about-delivery-monitoring.md)
-* [Ursachen für das Fehlschlagen von Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Über das Nachrichten-Tracking](../../delivery/using/about-message-tracking.md)
+* [Überwachen von Sendungen](about-delivery-monitoring.md)
+* [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
+* [Über das Nachrichten-Tracking](about-message-tracking.md)
 
 ## Eingehende Nachrichten verarbeiten {#processing-inbound-messages}
 
@@ -165,6 +165,6 @@ Der Absendername für diese Art von Nachrichten besteht aus einer kurzen Nummer 
 
 >[!IMPORTANT]
 >
->Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im Versand-Dashboard enthalten. [Weitere Informationen](../../delivery/using/delivery-dashboard.md).
+>Für diese Arten von Benachrichtigungen wird kein Verlauf erstellt. Sie sind also nicht im Versand-Dashboard enthalten. [Weitere Informationen](delivery-dashboard.md).
 >
 >Diese Nachrichten werden in den kommerziellen Druckregeln nicht berücksichtigt. [Weitere Informationen](../../campaign/using/pressure-rules.md).
