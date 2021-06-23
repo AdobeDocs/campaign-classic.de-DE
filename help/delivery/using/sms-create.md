@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 94aa4628-d973-433d-b963-b078e2d6672b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 100%
 
 ---
 
-# Erstellen eines SMS-Versands {#creating-a-sms-delivery}
+# SMS-Versand erstellen {#creating-a-sms-delivery}
 
 ## Versandkanal auswählen {#selecting-the-delivery-channel}
 
@@ -21,17 +21,17 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 
 >[!NOTE]
 >
->Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+>Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
 
 1. Erstellen Sie einen neuen Versand beispielsweise im Versand-Dashboard.
 1. Wählen Sie die zuvor erstellte Versandvorlage **Mobiltelefon-Versand (SMPP)** aus. Lesen Sie diesbezüglich auch den Abschnitt [Versandvorlage ändern](sms-set-up.md#changing-the-delivery-template).
 
    ![](assets/s_user_mobile_wizard.png)
 
-1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klicken Sie auf **[!UICONTROL Fortfahren]**, um die Eingaben zu bestätigen und in das Fenster der Nachrichtenkonfiguration zu gelangen.
 
-## SMS-Inhalt erstellen {#defining-the-sms-content}
+## Erstellen Sie den SMS-Inhalt {#defining-the-sms-content}
 
 Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
@@ -39,7 +39,7 @@ Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_sms01_138.png)
 
-   Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](../../delivery/using/about-personalization.md) beschrieben.
+   Die Verwendung von Personalisierungsfeldern wird im Abschnitt [Über die Personalisierung](about-personalization.md) beschrieben.
 
 1. Durch Auswahl des **[!UICONTROL Vorschau]**-Tabs unten auf der Seite können Sie das Rendering der personalisierten Nachricht prüfen. Klicken Sie in der Symbolleiste auf die Schaltfläche **[!UICONTROL Personalisierung testen]** und wählen Sie einen Empfänger aus der Zielgruppe oder ein anderes Profil aus.
 
@@ -65,8 +65,8 @@ Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
 ## Zielpopulation bestimmen {#selecting-the-target-population}
 
-Die detaillierten Schritte zur Auswahl der Zielpopulation eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md).
+Die detaillierten Schritte zur Auswahl der Zielpopulation eines Versands finden Sie in [diesem Abschnitt](steps-defining-the-target-population.md).
 
-Weitere Informationen zur Verwendung von Personalisierungsfeldern finden Sie in [diesem Abschnitt](../../delivery/using/about-personalization.md).
+Weitere Informationen zur Verwendung von Personalisierungsfeldern finden Sie in [diesem Abschnitt](about-personalization.md).
 
-Weitere Informationen zur Verwendung von Testadressen finden Sie auf [dieser Seite](../../delivery/using/about-seed-addresses.md).
+Weitere Informationen zur Verwendung von Testadressen finden Sie auf [dieser Seite](about-seed-addresses.md).
