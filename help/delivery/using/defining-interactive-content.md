@@ -6,9 +6,9 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1588'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,8 @@ Diese Funktion ist über ein dediziertes Package in Adobe Campaign verfügbar. 
 
 >[!NOTE]
 >
-> Bei hybriden und gehosteten Architekturen muss das Paket auf allen Servern installiert werden, einschließlich [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md) und [Ausführungsinstanz](../../message-center/using/configuring-instances.md#execution-instance). Wenden Sie sich diesbezüglich an Ihren Kundenbetreuer.
+> Bei hybriden und gehosteten Architekturen muss das Paket auf allen Servern installiert werden, einschließlich [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md) und [Ausführungsinstanz](../../message-center/using/configuring-instances.md#execution-instance).
+
 
 ## Informationen zu AMP for Email {#about-amp-for-email}
 
