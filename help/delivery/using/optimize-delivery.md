@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 24b2ee47-bec7-43ce-81b3-0b2d1a5cebae
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 100%
@@ -22,7 +22,7 @@ Im folgenden Abschnitt werden Best Practices und empfohlene Verfahren für die o
 
 Mehrere Faktoren können die Server-Leistung direkt beeinflussen und die Plattform verlangsamen:
 
-* Anzahl und Art der Personalisierungselemente: Durch Personalisierung in E-Mails werden Daten für jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung des Versands benötigt wird.  Weiterführende Informationen zur Personalisierung finden Sie in [diesem Abschnitt](../../delivery/using/about-personalization.md).
+* Anzahl und Art der Personalisierungselemente: Durch Personalisierung in E-Mails werden Daten für jeden Empfänger aus der Datenbank abgerufen. Bei vielen Personalisierungselementen erhöht sich dadurch die Datenmenge, die zur Vorbereitung des Versands benötigt wird.  Weiterführende Informationen zur Personalisierung finden Sie in [diesem Abschnitt](about-personalization.md).
 
 * Auslastung des Servers: Wenn der Marketing-Server viele verschiedene Aufgaben gleichzeitig ausführt, kann die Leistung verlangsamt werden. Der Marketing-Server muss alle eingehenden und ausgehenden Daten für alle Sendungen koordinieren, um sicherzustellen, dass die Daten korrekt sind und rechtzeitig gesendet werden.
 
@@ -46,9 +46,9 @@ Sie müssen die Zustellbarkeitsrate Ihrer Nachrichten steigern, damit Ihre Nachr
 
    * Sie bezeichnet die Faktoren, die darüber bestimmen, ob eine E-Mail vom Server eines Empfängers akzeptiert wird. ISPs (Internet Service Provider) filtern E-Mails heraus, die sie als Spam erachten, oder verhindern das Herunterladen von Bildern. Wenn sie feststellen, dass von einer Domain zu viele E-Mails gesendet werden, begrenzen sie die Anzahl der von diesem Absender akzeptierten E-Mails.
 
-   * Konzentrieren Sie sich bei der Zustellbarkeit Ihrer E-Mail auf vier Hauptkategorien: Datenqualität, Nachricht und Inhalt, Versandinfrastruktur und Reputation. Detailliertere Informationen zu diesem Thema finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md).
+   * Konzentrieren Sie sich bei der Zustellbarkeit Ihrer E-Mail auf vier Hauptkategorien: Datenqualität, Nachricht und Inhalt, Versandinfrastruktur und Reputation. Detailliertere Informationen zu diesem Thema finden Sie in [diesem Abschnitt](about-deliverability.md).
 
-* Wenden Sie die [in diesem Dokument](../../delivery/using/about-deliverability.md) beschriebenen Empfehlungen an.
+* Wenden Sie die [in diesem Dokument](about-deliverability.md) beschriebenen Empfehlungen an.
 
 * Setzen Sie sich mit Ihrem Adobe-Support-Mitarbeiter in Verbindung, wenn Sie Hilfe benötigen.
 
@@ -64,14 +64,14 @@ Wenn Sie auf einer neuen Plattform erstmals E-Mails versenden, verwenden Sie mö
 
 * Empfänger, deren Adressen sich in Quarantäne befinden, werden zum Zeitpunkt der Versandanalyse standardmäßig ausgeschlossen und fließen somit nicht in die Berechnung der Zielgruppe ein. Dies beschleunigt die Zustellung, da sich die Fehlerrate maßgeblich auf die Zustellgeschwindigkeit auswirkt. Eine E-Mail-Adresse kann zum Beispiel unter Quarantäne gestellt werden, weil das Postfach voll ist oder die Adresse nicht existiert. [Mehr dazu](#identifying-quarantined-addresses-for-a-delivery)
 
-* Adobe Campaign verwaltet fehlerhafte Adressen je nach zurückgegebenem Fehlertyp. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md).
+* Adobe Campaign verwaltet fehlerhafte Adressen je nach zurückgegebenem Fehlertyp. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](understanding-quarantine-management.md).
 
 
 * Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die Anzahl ungültiger Adressen zu hoch ist. Durch die Quarantäne können Sie also vermeiden, von diesen Providern auf eine Blockierungsliste gesetzt zu werden.
 
 * Die Quarantäneverwaltung hilft Ihnen auch, die Kosten des SMS-Versands zu senken, indem fehlerhafte Telefonnummern aus dem Versand ausgeschlossen werden.
 
-## Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in){#double-opt-in}
+## Anmeldemöglichkeit mit doppelter Bestätigung (Double opt-in) {#double-opt-in}
 
 Um den Nachrichtenversand an ungültige Adressen zu vermeiden, unnütze Kommunikation zu minimieren und die Reputation des Absenders zu schützen, empfiehlt Adobe die doppelte Anmeldung zur Bestätigung eines Abonnements. Damit können Sie sicherstellen, dass sich ein Empfänger absichtlich angemeldet hat.
 
