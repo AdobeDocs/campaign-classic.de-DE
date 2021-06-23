@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 3f567b2d-6f98-4831-af84-7db17fd12c6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 100%
@@ -32,7 +32,7 @@ Zur Verwendung der zufälligen Wertersetzung benötigen Sie:
 
 ## Versanderstellung {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [E-Mail-Versand erstellen](../../delivery/using/creating-an-email-delivery.md).
+Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [E-Mail-Versand erstellen](creating-an-email-delivery.md).
 
 Im vorliegenden Beispiel wurde der unten gezeigte Newsletter erstellt :
 
@@ -51,7 +51,7 @@ Im vorliegenden Beispiel übernimmt das Testadressen-Schema einen im Datenschema
 
 Diese Auflistung ermöglicht es dem Benutzer, das bevorzugte literarische Genre der Kunden anzugeben.
 
-Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen angezeigt werden kann, müssen Sie es aktualisieren. Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisieren](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
+Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen angezeigt werden kann, müssen Sie es aktualisieren. Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisieren](use-case--selecting-seed-addresses-on-criteria.md#updating-the-input-form).
 
 ## Personalisierung konfigurieren {#configuring-personalization}
 
@@ -61,7 +61,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    ![](assets/dlv_seeds_usecase_25.png)
 
-1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Zielpopulationen identifizieren](../../delivery/using/steps-defining-the-target-population.md).
+1. Konfigurieren Sie Ihre Versandliste und die Testadressen. Siehe [Zielpopulationen identifizieren](steps-defining-the-target-population.md).
 
    Im vorliegenden Beispiel soll der Versand an alle Kunden mit dem bevorzugten Genre **Science-Fiction** adressiert werden.
 
@@ -73,7 +73,7 @@ Damit diese Änderung des Datenschemas im **Eingabeformular** für Testadressen 
 
    >[!NOTE]
    >
-   >Weitere Informationen zum Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** finden Sie unter [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md).
+   >Weitere Informationen zum Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** finden Sie unter [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md).
 
 1. Klicken Sie auf den **[!UICONTROL Vorschau]**-Tab und wählen Sie eine Testadresse aus, um die Personalisierung zu testen.
 
