@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '133'
 ht-degree: 6%
 
 ---
@@ -27,6 +27,6 @@ Anschließend können Sie die Struktur des erstellten Schemas in den Registerkar
 >
 >Wenn Sie die Neuerstellung des gesamten Schemas erzwingen müssen, z. B. um bestimmte Abhängigkeitsprobleme in den Rückwärtslinks zu lösen, können Sie den folgenden Befehl vom Adobe Campaign-Anwendungsserver starten:
 >
->**nlserver config -postupgrade -instance:`&lt;instance_name>&#39; -force**
+> `nlserver config -postupgrade -instance:`&lt;instance_name>` -force`
 >
 >Anschließend müssen Sie den Adobe Campaign-Anwendungsserver neu starten und die Verbindung zur Clientkonsole trennen/wiederherstellen.
