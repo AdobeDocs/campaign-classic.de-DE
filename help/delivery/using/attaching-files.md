@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: db65e83e-276f-4163-98c3-3658a48acffc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Sie haben zwei Möglichkeiten:
 
 >[!NOTE]
 >
->Diese Konfiguration wird in der Regel in den Versandvorlagen vorgenommen. Weitere Informationen hierzu finden Sie im Abschnitt [Über Vorlagen](../../delivery/using/about-templates.md).
+>Diese Konfiguration wird in der Regel in den Versandvorlagen vorgenommen. Weitere Informationen hierzu finden Sie im Abschnitt [Über Vorlagen](about-templates.md).
 
 ## Lokale Datei anhängen {#attaching-a-local-file}
 
