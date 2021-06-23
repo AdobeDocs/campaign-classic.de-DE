@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: e4caa316-242f-46cd-a20b-a5eee5a0c456
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 100%
 
 ---
 
-# Zustellbarkeit überwachen{#monitoring-deliverability}
+# Überwachen der Zustellbarkeit{#monitoring-deliverability}
 
 Im Folgenden finden Sie Details zu den verschiedenen Monitoring-Tools, die Adobe Campaign zur Verfügung stellt, sowie einige zusätzliche Richtlinien zur Nutzung der von Adobe Campaign angebotenen Funktionen zur Überwachung der Zustellbarkeit Ihrer Plattform.
 
@@ -28,7 +28,7 @@ In Adobe Campaign Classic wird das **Zustellbarkeits-Monitoring** über den Wo
 
 Das Zustellbarkeits-Package ermöglicht Ihnen Zugriff auf:
 
-* Den [Inbox Rendering-Bericht](../../delivery/using/inbox-rendering.md), mit dem Sie Ihre Nachrichten auf gängigen E-Mail-Clients als Vorschau anzeigen können, um Inhalte und Reputation zu überprüfen.
+* Den [Inbox Rendering-Bericht](inbox-rendering.md), mit dem Sie Ihre Nachrichten auf gängigen E-Mail-Clients als Vorschau anzeigen können, um Inhalte und Reputation zu überprüfen.
 * Übersicht über die Nachrichtenqualität (Zustellung in der Inbox, Spam).
 
 ## Monitoring-Tools {#monitoring-tools}
@@ -41,22 +41,22 @@ Sie können auch die folgenden Tools verwenden:
    * **[!UICONTROL Softbounces]** geben Auskunft über die Reputation. Diese Zahl sollte bei keinem ISP über 10 % liegen.
 
    Lesen Sie diesbezüglich auch den Abschnitt [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
-* Allgemein bietet Ihnen das [Versand-Dashboard](../../delivery/using/about-delivery-monitoring.md) Zugriff auf:
-   * die [Versandzusammenfassung](../../delivery/using/delivery-dashboard.md#delivery-summary), die die Details des Versands und die Anzahl der zu sendenden, der verarbeiteten und der erfolgreich gesendeten Nachrichten anzeigt;
-   * die [Versandlogs und den Versandverlauf](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history), die zeigen, welche Zielgruppe ausgeschlossen wurde und warum;
-   * die [Trackinglogs](../../delivery/using/delivery-dashboard.md#tracking-logs), die Tracking-Daten wie Öffnungen und Klicks anzeigen.
+* Allgemein bietet Ihnen das [Versand-Dashboard](about-delivery-monitoring.md) Zugriff auf:
+   * die [Versandzusammenfassung](delivery-dashboard.md#delivery-summary), die die Details des Versands und die Anzahl der zu sendenden, der verarbeiteten und der erfolgreich gesendeten Nachrichten anzeigt;
+   * die [Versandlogs und den Versandverlauf](delivery-dashboard.md#delivery-logs-and-history), die zeigen, welche Zielgruppe ausgeschlossen wurde und warum;
+   * die [Trackinglogs](delivery-dashboard.md#tracking-logs), die Tracking-Daten wie Öffnungen und Klicks anzeigen.
 
 ## Richtlinien für das Monitoring {#monitoring-guidelines}
 
 Im Folgenden finden Sie einige zusätzliche Richtlinien zum Zustellbarkeits-Monitoring:
 
 * Prüfen Sie regelmäßig den [Versanddurchsatz](../../reporting/using/global-reports.md#delivery-throughput) für die gesamte Plattform, um festzustellen, ob er der ursprünglichen Einstellung entspricht.
-* Achten Sie darauf, dass [weitere Zustellversuche](../../delivery/using/understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
-* Prüfen Sie regelmäßig, ob das [Bounce](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
-* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](../../delivery/using/delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
-* Wenn der Versand in [Schüben](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves) erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
-* Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](../../delivery/using/understanding-quarantine-management.md) der anderer Sendungen entspricht.
-* Prüfen Sie in den [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
+* Achten Sie darauf, dass [weitere Zustellversuche](understanding-delivery-failures.md#retries-after-a-delivery-temporary-failure) in den Versandvorlagen korrekt eingerichtet sind (30 Minuten für das Versuchsintervall und mehr als 20 weitere Versuche).
+* Prüfen Sie regelmäßig, ob das [Bounce](understanding-delivery-failures.md#bounce-mail-management)-Postfach zugänglich ist, und sorgen Sie dafür, dass die Gültigkeit des Kontos nicht abläuft.
+* Prüfen Sie, ob die einzelnen Versanddurchsätze (über das [ Versand-Dashboard](delivery-dashboard.md) abrufbar) der Gültigkeit des Versandinhalts entsprechen (&quot;Flash Sales&quot; zum Beispiel sollten innerhalb von Minuten, nicht von Tagen zugestellt werden).
+* Wenn der Versand in [Schüben](steps-sending-the-delivery.md#sending-using-multiple-waves) erfolgt, stellen Sie sicher, dass genügend Zeit vorhanden ist, damit ein Schub fertiggestellt werden kann, bevor der nächste beginnt.
+* Prüfen Sie, ob die Anzahl der Fehler und der neuen [Quarantänen](understanding-quarantine-management.md) der anderer Sendungen entspricht.
+* Prüfen Sie in den [Versandlogs](delivery-dashboard.md#delivery-logs-and-history) sorgfältig die Art der hervorgehobenen Fehler (Blockierungsliste, DNS-Probleme, Anti-Spam-Regeln usw.).
 
 <!--### Delivery Reports - Broadcast Statistics {#broadcast-statistics}
 
