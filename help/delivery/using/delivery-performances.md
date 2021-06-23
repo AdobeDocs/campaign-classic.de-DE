@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cc793d7b-0a26-4a75-97ed-d79c87d9b3b8
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 100%
@@ -19,9 +19,9 @@ Wir empfehlen, die folgenden Richtlinien zu befolgen, um sicherzustellen, dass I
 
 **Verwandte Themen:**
 
-* [Versand-Dashboard](../../delivery/using/delivery-dashboard.md)
-* [Fehlerbehebung beim Versand](../../delivery/using/delivery-troubleshooting.md)
-* [Über die Zustellbarkeit](../../delivery/using/about-deliverability.md)
+* [Versand-Dashboard](delivery-dashboard.md)
+* [Fehlerbehebung beim Versand](delivery-troubleshooting.md)
+* [Über die Zustellbarkeit](about-deliverability.md)
 
 ## Best Practices zur Leistungserhaltung {#best-practices-performance}
 
@@ -51,6 +51,6 @@ Bei mangelhafter Zustellbarkeit überprüfen Sie Folgendes:
 
 * **Die Versandgröße**: Größere Sendungen benötigen zur Ausführung länger. Untergeordnete MTA-Prozesse werden für Standard-Bündelgrößen konfiguriert. Diese sind für die meisten Instanzen ausreichend, müssen jedoch überprüft werden, wenn Sendungen immer zu langsam durchgeführt werden.
 * **Die Zielgruppe des Versands**: Die Versandleistung kann durch Softbounce-Fehler beeinträchtigt werden, die entsprechend der Konfiguration der Neuversuche gehandhabt werden. Je größer die Anzahl der Fehler ist, desto mehr Neuversuche sind nötig.
-* **Die Gesamtlast der Plattform**: Wenn mehrere große Sendungen ausgeführt werden, kann die gesamte Plattform beeinträchtigt sein. Sie können auch die IP-Reputation und Probleme mit der Zustellbarkeit überprüfen. Weitere Informationen finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md) und im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+* **Die Gesamtlast der Plattform**: Wenn mehrere große Sendungen ausgeführt werden, kann die gesamte Plattform beeinträchtigt sein. Sie können auch die IP-Reputation und Probleme mit der Zustellbarkeit überprüfen. Weitere Informationen finden Sie in [diesem Abschnitt](about-deliverability.md) und im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 Auch die Wartung der Plattform und der Datenbank kann die Leistung beim Versand beeinträchtigen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../production/using/database-performances.md).
