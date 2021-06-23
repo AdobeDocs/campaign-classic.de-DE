@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: b0d1cf0e-656e-4d24-9a31-16fef4cd40d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 
 ---
 
-# Anwendungsbeispiele: Verwenden des Content Managements{#use-case-creating-content-management}
+# Anwendungsfälle: Verwenden des Content-Managements{#use-case-creating-content-management}
 
 Folgende Schritte sind zur Verwendung des Content Managements zu durchlaufen:
 
@@ -58,7 +58,7 @@ Ein Datenschema ist ein mit einem Inhalt verknüpftes XML-Dokument zur Beschreib
 >
 >Erstellung und Konfiguration von Datenschemata in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/about-schema-edition.md) beschrieben.
 >
->Die das Content Management betreffenden Elemente werden im Kapitel [Datenschemata](../../delivery/using/data-schemas.md) erläutert.
+>Die das Content Management betreffenden Elemente werden im Kapitel [Datenschemata](data-schemas.md) erläutert.
 
 Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
@@ -82,7 +82,7 @@ Gehen Sie wie folgt vor, um ein Datenschema zu erstellen:
 
    ![](assets/s_ncs_content_param_schema_step2.png)
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](../../delivery/using/data-schemas.md#editing-schemas).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Schemabearbeitung ](data-schemas.md#editing-schemas).
 
    Für jedes im Inhalt bezeichnete Element muss der entsprechende Datentyp eingefügt werden.
 
@@ -170,7 +170,7 @@ Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, welches di
 >
 >Erstellung und Konfiguration von Formularen in Adobe Campaign werden in [diesem Abschnitt](../../configuration/using/identifying-a-form.md) beschrieben.
 >
->Die das Content Management betreffenden Elemente werden im Kapitel [Formulare](../../delivery/using/input-forms.md) erläutert.
+>Die das Content Management betreffenden Elemente werden im Kapitel [Formulare](input-forms.md) erläutert.
 
 Gehen Sie wie folgt vor, um ein Formular für das Content Management zu erstellen:
 
@@ -220,7 +220,7 @@ Im vorliegenden Beispiel wird ein JavaScript-Template verwendet, um den Aufbau u
 
 >[!NOTE]
 >
->Eventuelle Einschränkungen in Verbindung mit der Dokumentenerstellung via JavaScript oder XSL werden im Abschnitt [Formatierung](../../delivery/using/formatting.md) behandelt.
+>Eventuelle Einschränkungen in Verbindung mit der Dokumentenerstellung via JavaScript oder XSL werden im Abschnitt [Formatierung](formatting.md) behandelt.
 
 Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstellen:
 
@@ -231,7 +231,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
 1. Geben Sie einen Namen für das Template ein und wählen Sie das zuvor für das Content Management erstellte Schema aus.
 1. Importieren Sie die Inhalte, die in allen Ausgabedokumenten, die das Template verwenden, unveränderlich angezeigt werden sollen.
 
-   Fügen Sie unter Beachtung der im Abschnitt [JavaScript-Templates](../../delivery/using/formatting.md#javascript-templates) dargestellten Syntax die variablen Elemente ein.
+   Fügen Sie unter Beachtung der im Abschnitt [JavaScript-Templates](formatting.md#javascript-templates) dargestellten Syntax die variablen Elemente ein.
 
    Für das vorliegende Beispiel stellt sich das JavaScript-Template wie folgt dar:
 
@@ -324,7 +324,7 @@ Gehen Sie wie folgt vor, um ein JavaScript-Template in Adobe Campaign zu erstell
    </html>
    ```
 
-   Der Funktionsaufruf zu Beginn des Templates steuert die Personalisierung des Dokuments und verweist auf Informationen, die in der Adobe Campaign-Datenbank gespeichert sind (hier recipient.firstName und recipient.lastName). Bei Durchführung eines Versands, der auf diesem Template beruht, werden diese Daten dynamisch ersetzt. Weitere Informationen hierzu finden Sie unter [Verwendung von JavaScript-Templates](../../delivery/using/formatting.md#including-a-javascript-template).
+   Der Funktionsaufruf zu Beginn des Templates steuert die Personalisierung des Dokuments und verweist auf Informationen, die in der Adobe Campaign-Datenbank gespeichert sind (hier recipient.firstName und recipient.lastName). Bei Durchführung eines Versands, der auf diesem Template beruht, werden diese Daten dynamisch ersetzt. Weitere Informationen hierzu finden Sie unter [Verwendung von JavaScript-Templates](formatting.md#including-a-javascript-template).
 
    Im vorliegenden Beispiel enthält die Funktion folgenden Code:
 
@@ -353,7 +353,7 @@ In diesem Schritt wird die Vorlage erstellt, die die Relation zwischen Schema, F
 
 >[!NOTE]
 >
->Weiterführende Informationen finden Sie im Abschnitt [Veröffentlichungsvorlagen](../../delivery/using/publication-templates.md).
+>Weiterführende Informationen finden Sie im Abschnitt [Veröffentlichungsvorlagen](publication-templates.md).
 
 Gehen Sie wie folgt vor:
 
@@ -379,7 +379,7 @@ Nun können Sie auf der zuvor erstellten Veröffentlichungsvorlage beruhende Inh
 
 >[!NOTE]
 >
->Weitere Informationen zum Erstellen von Inhalten finden Sie unter [Verwendung von Inhaltsvorlagen](../../delivery/using/using-a-content-template.md).
+>Weitere Informationen zum Erstellen von Inhalten finden Sie unter [Verwendung von Inhaltsvorlagen](using-a-content-template.md).
 
 ### Inhaltserstellung im Versand-Assistenten {#creating-content-in-the-delivery-wizard}
 
