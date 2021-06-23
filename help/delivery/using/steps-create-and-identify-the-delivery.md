@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 6e37bc14-b1a9-42af-8c28-ae4b5bcaa055
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Die Plattform enthält für jeden installierten Kanal (Briefpost, E-Mail, Fax, T
 >
 >Die in der Liste vorgeschlagenen Kanäle hängen von Ihrer Lizenz ab.
 
-Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre Anforderungen anzupassen. Weiterführende Informationen zu Vorlagen finden Sie in [diesem Abschnitt](../../delivery/using/about-templates.md).
+Sie können neue Versandvorlagen erstellen, um bestimmte Parameter vorab an Ihre Anforderungen anzupassen. Weiterführende Informationen zu Vorlagen finden Sie in [diesem Abschnitt](about-templates.md).
 
 ## Versand identifizieren {#identifying-the-delivery}
 
@@ -49,7 +49,7 @@ Zunächst muss der Versand durch Angabe der Parameter identifiziert werden. Gehe
 
 Der Versandinhalt ist bereit zur Konfiguration. Die Definition des Versandinhalts erfolgt für jeden Kanal einzeln. Weiterführende Informationen dazu finden Sie im entsprechenden Abschnitt:
 
-* [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md)
-* [SMS-Inhalt erstellen](../../delivery/using/sms-create.md#defining-the-sms-content)
-* [Briefpost-Inhalt definieren](../../delivery/using/defining-the-direct-mail-content.md)
-* [Push-Benachrichtigungen ](../../delivery/using/about-mobile-app-channel.md)
+* [E-Mail-Inhalt erstellen](defining-the-email-content.md)
+* [SMS-Inhalt erstellen](sms-create.md#defining-the-sms-content)
+* [Briefpost-Inhalt definieren](defining-the-direct-mail-content.md)
+* [Push-Benachrichtigungen ](about-mobile-app-channel.md)
