@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: configuring-channels
 exl-id: 841f0c2f-90ef-4db0-860a-75fc7c48804a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Sie müssen den Provider kontaktieren, um potenzielle Konflikte auf dessen Seite
    * Einige der externen Konten verwenden dieselbe Anmelde-/Kennwortkombination.
 Der Anbieter kann nicht feststellen, von welchem externen Konto die `BIND PDU` stammt, also behandelt er alle Verbindungen von mehreren Konten als eine einzige. Möglicherweise wurden MO und SR wahllos über die beiden Konten geleitet, was zu Problemen führt.
 Wenn der Provider mehrere Kurzwahlnummern für dieselbe Anmelde-/Kennwortkombination unterstützt, müssen Sie ihn fragen, wo diese Kurzwahlnummer in die `BIND PDU` eingefügt werden soll. Beachten Sie, dass diese Information in die `BIND PDU` und nicht in `SUBMIT_SM` eingefügt werden muss, da nur in der `BIND PDU` eine korrekte Weiterleitung von MOs möglich ist.
-Siehe den Abschnitt [Informationen in den verschiedenen PDU-Arten](../../delivery/using/sms-protocol.md#information-pdu) weiter oben, um zu erfahren, welches Feld in `BIND PDU` verfügbar ist. Normalerweise fügen Sie die Kurzwahlnummer in `address_range` hinzu. Dies erfordert jedoch besondere Unterstützung durch den Provider. Wenden Sie sich an diesen, um zu erfahren, wie er mehrere Kurzwahlnummern unabhängig voneinander weiterleiten wird.
+Siehe den Abschnitt [Informationen in den verschiedenen PDU-Arten](sms-protocol.md#information-pdu) weiter oben, um zu erfahren, welches Feld in `BIND PDU` verfügbar ist. Normalerweise fügen Sie die Kurzwahlnummer in `address_range` hinzu. Dies erfordert jedoch besondere Unterstützung durch den Provider. Wenden Sie sich an diesen, um zu erfahren, wie er mehrere Kurzwahlnummern unabhängig voneinander weiterleiten wird.
 Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselben externen Konto.
 
 ## Problem mit dem externen Konto im Allgemeinen {#external-account-issues}
@@ -83,7 +83,7 @@ Adobe Campaign unterstützt die Verarbeitung mehrerer Kurzwahlnummern in demselb
 
 * Überprüfen Sie die Einstellungen für **externe Konten**. Fragen Sie den Provider nach dem Wert der Felder.
 
-* Wenn die Verbindung erfolgreich, aber instabil ist, lesen Sie den Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Wenn die Verbindung erfolgreich, aber instabil ist, lesen Sie den Abschnitt [Probleme mit instabilen Verbindungen](troubleshooting-sms.md#issues-unstable-connection).
 
 * Wenn Verbindungsprobleme schwer zu diagnostizieren sind, kann eine Netzwerkaufzeichnung Informationen liefern. Achten Sie darauf, dass die Netzwerkaufzeichnung läuft, während das Problem auftritt, damit es effizient analysiert werden kann. Sie sollten auch den genauen Zeitpunkt notieren, zu dem das Problem auftritt.
 
@@ -115,9 +115,9 @@ Beheben von Problemen mit der Verbindungsstabilität:
 
 ## Problem beim Senden von MT (reguläre SMS an einen Endbenutzer){#issue-MT}
 
-* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde durchgängig bestehen (außer bei Transmittern in Adobe Campaign Classic). Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/sms-protocol.md#issues-unstable-connection).
+* Überprüfen Sie, ob die Verbindung stabil ist. Eine SMPP-Verbindung sollte mindestens eine Stunde durchgängig bestehen (außer bei Transmittern in Adobe Campaign Classic). Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](sms-protocol.md#issues-unstable-connection).
 
-* Wenn durch einen Neustart des MTA das Senden von MT für einen kurzen Zeitraum wieder funktioniert, besteht wahrscheinlich eine Drosselung aufgrund einer instabilen Verbindung. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection).
+* Wenn durch einen Neustart des MTA das Senden von MT für einen kurzen Zeitraum wieder funktioniert, besteht wahrscheinlich eine Drosselung aufgrund einer instabilen Verbindung. Weitere Informationen finden Sie im Abschnitt [Probleme mit instabilen Verbindungen](troubleshooting-sms.md#issues-unstable-connection).
 
 * Überprüfen Sie, ob das Broadlog vorhanden ist und den richtigen Status mit den richtigen Daten aufweist. Ist dies nicht der Fall, könnte es sich um ein Problem beim Versand oder bei der Versandvorbereitung handeln.
 
@@ -139,7 +139,7 @@ Duplikate werden häufig durch Wiederholungsversuche verursacht. Es ist normal, 
 
 * Wenn Sie sehen, dass Duplikate im Abstand von genau 60 Sekunden gesendet werden, ist dies wahrscheinlich ein Problem auf der Seite des Providers, der die `SUBMIT_SM_RESP` nicht schnell genug sendet.
 
-* Wenn Sie viele `BIND/UNBIND` sehen, haben Sie eine instabile Verbindung. Suchen Sie zuerst Lösungen im Abschnitt [Probleme mit instabilen Verbindungen](../../delivery/using/troubleshooting-sms.md#issues-unstable-connection), bevor Sie versuchen, Probleme mit doppelten Nachrichten zu lösen.
+* Wenn Sie viele `BIND/UNBIND` sehen, haben Sie eine instabile Verbindung. Suchen Sie zuerst Lösungen im Abschnitt [Probleme mit instabilen Verbindungen](troubleshooting-sms.md#issues-unstable-connection), bevor Sie versuchen, Probleme mit doppelten Nachrichten zu lösen.
 
 Verringerung der Anzahl von Duplikaten bei einer Wiederholung:
 
@@ -159,7 +159,7 @@ Wenn die `DELIVER_SM PDU` nicht erfolgreich quittiert wurde, sollten Sie Folgend
 
 * Überprüfen Sie, ob die Fehler in der Tabelle `broadLogMsg` richtig bereitgestellt wurden.
 
-Wenn die `DELIVER_SM PDU` vom erweiterten SMPP-Connector in Adobe Campaign Classic quittiert wurde, das broadLog jedoch nicht ordnungsgemäß aktualisiert wird, überprüfen Sie den im Abschnitt [Abgleichen von MT-, SR- und broadLog-Einträgen](../../delivery/using/sms-protocol.md#matching-mt) beschriebenen Prozess zur ID-Abstimmung.
+Wenn die `DELIVER_SM PDU` vom erweiterten SMPP-Connector in Adobe Campaign Classic quittiert wurde, das broadLog jedoch nicht ordnungsgemäß aktualisiert wird, überprüfen Sie den im Abschnitt [Abgleichen von MT-, SR- und broadLog-Einträgen](sms-protocol.md#matching-mt) beschriebenen Prozess zur ID-Abstimmung.
 
 Wenn Sie alle Probleme behoben haben, die Puffer des Providers jedoch noch einige ungültige SR enthalten, können Sie diese mit der Option &quot;Zählung der &#39;ungültige ID&#39; Antworten&quot; überspringen. Dies sollte mit Vorsicht verwendet und so schnell wie möglich auf 0 zurückgesetzt werden, nachdem die Puffer bereinigt wurden.
 
@@ -179,7 +179,7 @@ Wenn Sie alle Probleme behoben haben, die Puffer des Providers jedoch noch einig
 
 ## Problem bei der Versandvorbereitung, die Empfänger unter Quarantäne nicht ausschließt (durch die automatische Antwortfunktion in Quarantäne gestellt) {#issue-delivery-preparation}
 
-* Überprüfen Sie, ob die Telefonnummern in der Quarantänetabelle und im Versand-Log im exakt gleichen Format vorliegen. Ist dies nicht der Fall, gehen Sie zu diesem [Abschnitt](../../delivery/using/sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem &quot;+&quot;-Präfix des internationalen Telefonnummernformats haben.
+* Überprüfen Sie, ob die Telefonnummern in der Quarantänetabelle und im Versand-Log im exakt gleichen Format vorliegen. Ist dies nicht der Fall, gehen Sie zu diesem [Abschnitt](sms-protocol.md#automatic-reply), wenn Sie Probleme mit dem &quot;+&quot;-Präfix des internationalen Telefonnummernformats haben.
 
 * Prüfen Sie die Kurzwahlnummern. Es kann zu Ausschlüssen kommen, wenn die Kurzwahlnummer des Empfängers entweder dieselbe ist, wie im externen Konto definiert, oder wenn sie leer ist (leer = beliebige Kurzwahlnummer). Wenn nur eine Kurzwahlnummer für die gesamte Adobe Campaign-Instanz verwendet wird, ist es einfacher, alle Felder mit **Kurzwahlnummern** leer zu lassen.
 
@@ -267,7 +267,7 @@ In einigen Fällen ist die Aufzeichnung des Netzwerk-Traffic nicht erforderlich.
 
 * Fehler, die nicht den eigentlichen SMPP-Traffic betreffen: Versandvorbereitung, Probleme mit der Message Center-API, Workflow-Probleme usw.
 
-## Aktivieren von SMPP-Traces{#enabling-smpp-traces}
+## Aktivieren von SMPP-Traces {#enabling-smpp-traces}
 
 Der neue Connector unterstützt die erweiterte Protokollierung durch Traces: SMPP. Trace-Ergebnisse werden im MTA-Log und nicht in der Standardausgabe ausgegeben.
 
