@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 9ce11da0-e37b-459e-8ec7-d2bddf59bdf7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
@@ -27,8 +27,8 @@ Mit der Versandliste können Sie alle erstellten Sendungen an einem Ort anzeigen
 
 Für jeden Versand steht ein eigenes Dashboard zur Verfügung. Sie können damit eventuelle Probleme während des Versands sowie verschiedene Arten von Informationen zum Versand überwachen: Berichte, Mirrorseiten, Ausschlüsse, Trackinglogs, Rendering usw.
 
-* [Auf die Versandliste zugreifen](../../delivery/using/list-of-deliveries.md)
-* [Versand-Dashboard](../../delivery/using/delivery-dashboard.md)
+* [Auf die Versandliste zugreifen](list-of-deliveries.md)
+* [Versand-Dashboard](delivery-dashboard.md)
 
 <img src="assets/do-not-localize/icon_guidelines.svg" width="60px">
 
@@ -36,8 +36,8 @@ Für jeden Versand steht ein eigenes Dashboard zur Verfügung. Sie können damit
 
 Sie sollten einige Richtlinien befolgen, um sicherzustellen, dass Ihre Sendungen gut funktionieren. Informationen zu häufigen Problemen, die bei Sendungen auftreten können, sind ebenfalls verfügbar, damit Sie Ihre Sendungen effizient ausführen können.
 
-* [Versandleistung und Best Practices](../../delivery/using/delivery-performances.md)
-* [Fehlerbehebung beim Versand](../../delivery/using/delivery-troubleshooting.md)
+* [Versandleistung und Best Practices](delivery-performances.md)
+* [Fehlerbehebung beim Versand](delivery-troubleshooting.md)
 
 <img src="assets/do-not-localize/icon_failure.svg" width="60px">
 
@@ -45,7 +45,7 @@ Sie sollten einige Richtlinien befolgen, um sicherzustellen, dass Ihre Sendungen
 
 Wenn einem Profil eine Nachricht nicht zugestellt werden kann, sendet der Remote-Server automatisch eine Fehlermeldung, die von der Adobe Campaign-Plattform erfasst und ausgewertet wird, um festzustellen, ob die E-Mail-Adresse oder Telefonnummer unter Quarantäne gestellt werden soll.
 
-[Fehlgeschlagene Sendungen zu verstehen](../../delivery/using/understanding-delivery-failures.md) ist wichtig, um Ihre Marketing-Kampagnen zu verbessern.
+[Fehlgeschlagene Sendungen zu verstehen](understanding-delivery-failures.md) ist wichtig, um Ihre Marketing-Kampagnen zu verbessern.
 
 <img src="assets/do-not-localize/icon_quarantine.svg" width="60px">
 
@@ -53,4 +53,4 @@ Wenn einem Profil eine Nachricht nicht zugestellt werden kann, sendet der Remote
 
 Adobe Campaign verwaltet eine Liste von unter Quarantäne gestellten Adressen. Empfänger, deren Adressen unter Quarantäne gestellt wurden, werden bei der Versandanalyse standardmäßig ausgeschlossen und gehören nicht zur Zielgruppe.
 
-In [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md) finden Sie Informationen zum Identifizieren und Verwalten von unter Quarantäne stehenden Adressen und erhalten weitere Informationen über die Bedingungen, die erfüllt werden müssen, um eine Adresse unter Quarantäne zu stellen.
+In [diesem Abschnitt](understanding-quarantine-management.md) finden Sie Informationen zum Identifizieren und Verwalten von unter Quarantäne stehenden Adressen und erhalten weitere Informationen über die Bedingungen, die erfüllt werden müssen, um eine Adresse unter Quarantäne zu stellen.
