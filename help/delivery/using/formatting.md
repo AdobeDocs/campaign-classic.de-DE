@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 100%
+source-wordcount: '1458'
+ht-degree: 98%
 
 ---
 
@@ -364,7 +364,7 @@ Gehen Sie wie folgt vor:
 
 1. Nun können Sie diese Inhaltsvorlage in Ihren Sendungen verwenden.
 
-   Weitere Informationen hierzu finden Sie unter [Verwendung von Inhaltsvorlagen](../../delivery/using/using-a-content-template.md).
+   Weitere Informationen hierzu finden Sie unter [Verwendung von Inhaltsvorlagen](using-a-content-template.md).
 
 ## XSL-Stylesheets {#xsl-stylesheets}
 
@@ -564,7 +564,7 @@ Im Formular wird das Bildauswahlfeld mit folgender Syntax deklariert:
 
 ## Datumsangaben {#date-display}
 
-Im zugrunde liegenden XML-Quelldokument werden Datumsangaben im internen XML-Format gespeichert: **JJJJ/MM/TT HH:MM:SS** (z. B. 2018/10/01 12:23:30).
+Im XML-Eingabedokument werden die Daten im internen XML-Format gespeichert: **JJJJ/MM/TT HH:MM:SS** (Beispiel 2018/10/01 12:23:30).
 
 Adobe Campaign bietet Formatierungsfunktionen für Datumsangaben in JavaScript-Templates und XSL-Stylesheets, die im Folgenden erläutert werden:
 
