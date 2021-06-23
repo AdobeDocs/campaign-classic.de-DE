@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1329'
 ht-degree: 25%
@@ -58,7 +58,7 @@ So erstellen Sie Ihren [!DNL LINE]-Dienst:
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Weitere Informationen zu Abonnements und Diensten finden Sie unter [Abonnements verwalten](../../delivery/using/managing-subscriptions.md).
+Weitere Informationen zu Abonnements und Diensten finden Sie unter [Abonnements verwalten](managing-subscriptions.md).
 
 ### Externes LINE-Konto konfigurieren {#configure-line-external}
 
@@ -103,13 +103,13 @@ Gehen Sie wie folgt vor, um einen [!DNL LINE]-Versand zu erstellen:
 
    ![](assets/line_message_01.png)
 
-1. Identifizieren Sie Ihren Versand mit einem **[!UICONTROL Titel]**, **[!UICONTROL Versandcode]** und einer **[!UICONTROL Beschreibung]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Identifizieren Sie Ihren Versand mit einem **[!UICONTROL Titel]**, **[!UICONTROL Versandcode]** und einer **[!UICONTROL Beschreibung]**. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 
 1. Bestätigen Sie durch Verwendung der Schaltfläche **[!UICONTROL Fortfahren]** die Versanderstellung.
 
 1. Wählen Sie im Versand-Editor **[!UICONTROL To]** aus, um die Empfänger Ihres [!DNL LINE]-Versands anzusprechen. Das Targeting erfolgt über **[!UICONTROL Besucheranmeldungen (nms:visitorSub)]**.
 
-   Weitere Informationen hierzu finden Sie unter [Zielpopulationen identifizieren](../../delivery/using/steps-defining-the-target-population.md).
+   Weitere Informationen hierzu finden Sie unter [Zielpopulationen identifizieren](steps-defining-the-target-population.md).
 
    ![](assets/line_message_08.png)
 
@@ -131,13 +131,13 @@ Gehen Sie wie folgt vor, um einen [!DNL LINE]-Versand zu erstellen:
 
 1. Nach Abschluss der Konfiguration Ihres Versands können Sie ihn an die zuvor bestimmte Zielgruppe senden.
 
-   Weitere Informationen zum Versand finden Sie unter [Nachrichten senden](../../delivery/using/sending-messages.md).
+   Weitere Informationen zum Versand finden Sie unter [Nachrichten senden](sending-messages.md).
 
 1. Rufen Sie nach dem Versand Ihrer Nachricht Ihren Bericht auf, um die Effektivität Ihres Versands zu messen.
 
    Weitere Informationen zu [!DNL LINE] -Berichten finden Sie unter [Zugriff auf Berichte](#accessing-reports).
 
-## Inhaltstyp {#defining-the-content} definieren
+## Inhaltstyp definieren {#defining-the-content}
 
 Um den Inhalt eines [!DNL LINE]-Versands zu definieren, müssen Sie zunächst einen Nachrichtentyp zu Ihrem Versand hinzufügen. Jeder [!DNL LINE]-Versand kann bis zu fünf Nachrichten enthalten.
 
@@ -157,7 +157,7 @@ Ein **[!UICONTROL Textnachrichten]** [!DNL LINE]-Versand ist eine Nachricht, die
 
 ![](assets/line_message_02.png)
 
-Die Konfiguration für diesen Nachrichtentyp ähnelt der Konfiguration von **[!UICONTROL Text]** in einer E-Mail. Weitere Informationen finden Sie auf dieser [Seite](../../delivery/using/defining-the-email-content.md#message-content).
+Die Konfiguration für diesen Nachrichtentyp ähnelt der Konfiguration von **[!UICONTROL Text]** in einer E-Mail. Weitere Informationen finden Sie auf dieser [Seite](defining-the-email-content.md#message-content).
 
 ### Konfiguration eines Bild-und-Link-Versands {#configuring-an-image-and-link-delivery}
 
@@ -239,7 +239,7 @@ In diesem Beispiel wird aufgezeigt, wie Sie eine Textnachricht und ein Bild, die
 
 1. Wählen Sie im Konfigurationsfenster Ihres Versands Ihre Zielpopulation aus.
 
-   Weitere Informationen hierzu finden Sie unter [Zielpopulationen identifizieren](../../delivery/using/steps-defining-the-target-population.md).
+   Weitere Informationen hierzu finden Sie unter [Zielpopulationen identifizieren](steps-defining-the-target-population.md).
 
    ![](assets/line_usecase_02.png)
 
