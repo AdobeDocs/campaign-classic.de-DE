@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-delivery-templates
 exl-id: 7ffb649e-801f-4568-a86b-7982448e3c30
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 100%
@@ -43,4 +43,4 @@ Der Versand wird daraufhin in dem der Vorlage entsprechenden Ordner erstellt. De
 
 >[!NOTE]
 >
->Weitere Informationen zum Konfigurieren eines Versands finden Sie unter [E-Mail-Inhalt erstellen](../../delivery/using/defining-the-email-content.md).
+>Weitere Informationen zum Konfigurieren eines Versands finden Sie unter [E-Mail-Inhalt erstellen](defining-the-email-content.md).
