@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 92b5e013-b619-4f0b-b0b1-1fc2e653ceac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 100%
@@ -21,18 +21,18 @@ Zu den Kernfunktionen zählen die Zielgruppenbestimmung, die Definition und Pers
 
 >[!NOTE]
 >
->Adobe Campaign bietet eine Reihe von Tools zur Überwachung Ihrer Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-deliverability.md).
+>Adobe Campaign bietet eine Reihe von Tools zur Überwachung Ihrer Zustellbarkeit und zur Optimierung des E-Mail-Versands. Weiterführende Informationen finden Sie in diesem [Abschnitt](about-deliverability.md).
 
 Sendungen können automatisiert werden, indem ein Versand vorbereitet und/oder über einen Workflow gesendet wird. Weiterführende Informationen zu Versandaktivitäten in Workflows finden Sie in [diesem Abschnitt](../../workflow/using/about-action-activities.md).
 
 Folgende Versandkanäle stehen in Adobe Campaign zur Verfügung:
 
-1. **E-Mail-Kanal**: Ein E-Mail-Versand richtet personalisierte elektronische Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [Über den E-Mail-Kanal](../../delivery/using/about-email-channel.md).
-1. **Briefpost-Kanal**: Ein Briefpost-Versand erzeugt eine Ausgabedatei, die die Daten der Zielpopulation enthält. Weitere Informationen finden Sie unter [Über den Briefpost-Kanal](../../delivery/using/about-direct-mail-channel.md).
-1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](../../delivery/using/sms-channel.md).
-1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](../../delivery/using/about-mobile-app-channel.md).
+1. **E-Mail-Kanal**: Ein E-Mail-Versand richtet personalisierte elektronische Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [Über den E-Mail-Kanal](about-email-channel.md).
+1. **Briefpost-Kanal**: Ein Briefpost-Versand erzeugt eine Ausgabedatei, die die Daten der Zielpopulation enthält. Weitere Informationen finden Sie unter [Über den Briefpost-Kanal](about-direct-mail-channel.md).
+1. **Mobile-Kanal**: Ein Versand über den Mobile-Kanal richtet personalisierte SMS- oder LINE-Nachrichten an eine zuvor bestimmte Zielpopulation. Siehe [SMS-Kanal](sms-channel.md).
+1. **Mobile-App-Kanal**: Ein Mobile-App-Versand ermöglicht den Versand von Benachrichtigungen an iOS- und Android-Systeme. Siehe hierzu das Kapitel [Mobile App Channel](about-mobile-app-channel.md).
 
-   Andere Kanäle werden auf [dieser Seite](../../delivery/using/steps-about-delivery-creation-steps.md#other-channels) beschrieben.
+   Andere Kanäle werden auf [dieser Seite](steps-about-delivery-creation-steps.md#other-channels) beschrieben.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Die hierfür benötigten externen Konten werden im Knoten **[!UICONTROL Administ
 
 ## E-Mail-Versand {#email-deliveries}
 
-Der [E-Mail-Kanal](../../delivery/using/about-email-channel.md) ist einer der wichtigsten Kanäle in Adobe Campaign. Damit können Sie den Versand von personalisierten E-Mails an bestimmte Zielgruppen planen und durchführen.
+Der [E-Mail-Kanal](about-email-channel.md) ist einer der wichtigsten Kanäle in Adobe Campaign. Damit können Sie den Versand von personalisierten E-Mails an bestimmte Zielgruppen planen und durchführen.
 
 Verschiedene Typen von E-Mails können gesendet werden:
 
@@ -57,13 +57,13 @@ Verschiedene Typen von E-Mails können gesendet werden:
 * Wiederkehrende E-Mails: Ein und dieselbe E-Mail wird regelmäßig gesendet und die Sendungen und Berichte werden regelmäßig aggregiert. Die E-Mail selbst bleibt unverändert, doch die Zielgruppe ändert sich je nach Versandtag. Ein Beispiel dafür sind Geburtstags-E-Mails. Weiterführende Informationen dazu finden Sie unter [Wiederkehrender Versand](../../workflow/using/recurring-delivery.md).
 * Transaktions-E-Mails: einzelne E-Mails, die auf der Basis des Kundenverhaltens ausgelöst werden. Siehe auch [Transaktionsnachrichten](../../message-center/using/about-transactional-messaging.md).
 
-Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md).
+Weiterführende Informationen zum Versand und Empfehlungen dazu finden Sie im Abschnitt [Best Practices beim Versand](delivery-best-practices.md).
 
 Weiterführende Informationen zu den unterschiedlichen Versandarten finden Sie in [diesem Abschnitt](#types-of-deliveries).
 
 ## Versand über den Mobiltelefon-Kanal {#mobile-deliveries}
 
-Adobe Campaign ermöglicht den Versand von Nachrichten per [SMS](../../delivery/using/sms-channel.md) und [LINE](../../delivery/using/line-channel.md) auf Mobiltelefone.
+Adobe Campaign ermöglicht den Versand von Nachrichten per [SMS](sms-channel.md) und [LINE](line-channel.md) auf Mobiltelefone.
 
 Die Inhalt-Kachel von SMS bietet ebenfalls die Möglichkeit der Erstellung, Anpassung und Personalisierung von Nachrichteninhalten, jedoch ausschließlich im Textformat. Es ist außerdem möglich, vor dem Versand eine Vorschau der SMS zu erzeugen.
 
@@ -74,19 +74,19 @@ Folgende Voraussetzungen müssen gegeben sein, um SMS- oder LINE-Nachrichten an 
 * Ein externes Konto, das für den Kanal **[!UICONTROL Mobiltelefon (SMS)]** oder **[!UICONTROL LINE]** konfiguriert wurde.
 * Eine SMS- oder LINE-Versandvorlage, die auf das externe Konto Bezug nimmt.
 
-## Push-Benachrichtigungen {#push-notifications}
+## Push-Benachrichtigungen  {#push-notifications}
 
-Sie können mit Adobe Campaign über spezielle Apps personalisierte und zielgruppenspezifische [Push-Benachrichtigungen](../../delivery/using/about-mobile-app-channel.md) an iOS- und Android-Mobilgeräte versenden. Um derartige Sendungen vorzubereiten und durchzuführen, sind zunächst Konfigurations- und Integrationsschritte erforderlich. Zusätzlich können Rich-Benachrichtigungen mit Bildern oder Videos erstellt werden.
+Sie können mit Adobe Campaign über spezielle Apps personalisierte und zielgruppenspezifische [Push-Benachrichtigungen](about-mobile-app-channel.md) an iOS- und Android-Mobilgeräte versenden. Um derartige Sendungen vorzubereiten und durchzuführen, sind zunächst Konfigurations- und Integrationsschritte erforderlich. Zusätzlich können Rich-Benachrichtigungen mit Bildern oder Videos erstellt werden.
 
 ## Briefpost {#direct-mail}
 
-[Briefpost ist ein Offline-Kanal, über den Sie eine für Briefpost-Dienstleister nötige Datei erstellen und personalisieren können. ](../../delivery/using/about-direct-mail-channel.md) Sie erhalten damit die Möglichkeit, Online- und Offline-Kanäle in Ihren Customer Journeys zu mischen.
+[Briefpost ist ein Offline-Kanal, über den Sie eine für Briefpost-Dienstleister nötige Datei erstellen und personalisieren können. ](about-direct-mail-channel.md) Sie erhalten damit die Möglichkeit, Online- und Offline-Kanäle in Ihren Customer Journeys zu mischen.
 
 Über Online-Kanäle können Sie Nachrichten erstellen (E-Mail, SMS, Mobile-App-Versand etc.) und direkt über Adobe Campaign an Ihre Audience senden. Offline-Kanäle sind anders. Wenn Sie einen Briefpost-Versand vorbereiten, erzeugt Adobe Campaign eine Datei, die alle Zielgruppenprofile und die ausgewählte Kontaktinformationen enthält (z. B. Postanschrift). Dann senden Sie diese Datei an Ihren Briefpost-Dienstleister, der den tatsächlichen Versand vornimmt.
 
 ## Sonstige Kanäle {#other-channels}
 
-Adobe Campaign bietet eine Vorlage für den Festnetztelefon-Versand, die zur Erstellung von externen Sendungen dient. Eine Verwendung dieses Kanals setzt voraus, dass Sie spezielle Methoden zur Verarbeitung von Ausgabedateien eingerichtet haben. Die Konfigurationsschritte sind mit denen des [Brief-Kanals](../../delivery/using/about-direct-mail-channel.md) identisch.
+Adobe Campaign bietet eine Vorlage für den Festnetztelefon-Versand, die zur Erstellung von externen Sendungen dient. Eine Verwendung dieses Kanals setzt voraus, dass Sie spezielle Methoden zur Verarbeitung von Ausgabedateien eingerichtet haben. Die Konfigurationsschritte sind mit denen des [Brief-Kanals](about-direct-mail-channel.md) identisch.
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ Wenn Sie diese Aktivität beispielsweise einmal im Monat ausführen, ergibt das 
 
 Wiederkehrende Sendungen werden über Workflows mit der Aktivität [](../../workflow/using/recurring-delivery.md)Wiederkehrender Versand erstellt. Ein Beispiel für diese Aktivität finden Sie in diesem Abschnitt: [Erstellen eines wiederkehrenden Versands in einem Zielgruppen-Workflow](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow).
 
-### Versand (fortlaufend){#continuous-delivery}
+### Versand (fortlaufend) {#continuous-delivery}
 
 Bei einem **fortlaufenden Versand** können Sie einem bestehenden Versand neue Empfänger hinzufügen, sodass Sie nicht jedes Mal einen neuen Versand erstellen müssen.
 
