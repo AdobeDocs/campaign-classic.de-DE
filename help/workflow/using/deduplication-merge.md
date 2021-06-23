@@ -13,9 +13,8 @@ index: y
 internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
-translation-type: ht
-source-git-commit: 6854d06f8dc445b56ddfde7777f02916a60f2b63
-workflow-type: ht
+source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
+workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 100%
 
@@ -23,7 +22,7 @@ ht-degree: 100%
 
 # Verwenden der Zusammenführungsfunktion der Deduplizierungsaktivität {#deduplication-merge}
 
-## Über diesen Verwendungsfall {#about-this-use-case}
+## Über dieses Anwendungsbeispiel {#about-this-use-case}
 
 In diesem Verwendungsfall wird beschrieben, wie Sie die Funktion **[!UICONTROL Zusammenführen]** in der Aktivität **[!UICONTROL Deduplizierung]** verwenden.
 
@@ -100,7 +99,7 @@ Gehen Sie wie folgt vor, um diese Regeln zu konfigurieren:
 Nach dem Konfigurieren dieser Regeln werden die folgenden Daten am Ende der Aktivität **[!UICONTROL Deduplizierung]** empfangen.
 
 | Änderungsdatum | Vorname | Nachname | E-Mail | Mobiltelefon | Telefon |
------|------------|-----------|-------|--------------|------|
+|-----|------------|-----------|-------|--------------|------|
 | 19.5.2020 | Robert | Tisner | bob@mycompany.com | 444-444-444 | 777-777-7777 |
 | 22.7.2020 | Bobby | Tisner | bob@mycompany.com |  | 777-777-7777 |
 | 3.10.2020 | Bob |  | bob@mycompany.com |  | 888-888-8888 |
