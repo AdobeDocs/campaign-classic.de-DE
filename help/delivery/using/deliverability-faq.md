@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f94897c1-b44c-4100-ac50-a89b13fa6f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 100%
@@ -49,13 +49,13 @@ Wenn das Problem fortbesteht, kontaktieren Sie die entsprechenden kommerziellen 
    * Der Status **[!UICONTROL Auf Blockierungsliste]** ist das Ergebnis einer Feedback-Schleife (wenn ein Empfänger eine E-Mail als Spam meldet).
 
    * Der Status **[!UICONTROL In Quarantäne]** ist das Ergebnis eines Soft- oder Hardbounce.
-   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist).
+   Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](understanding-quarantine-management.md#quarantine-vs-denylist).
 
 * **Was bedeuten die unterschiedlichen Gründe für Quarantäne-Fehler?**
 
    Es gibt zehn mögliche Gründe: Unbestimmt, Unbekannter Nutzer, Ungültige Domain, Auf Blockierungsliste, Zurückgewiesen, Fehler ignoriert, Unerreichbar, Konto deaktiviert, Postfach voll, Nicht angemeldet.
 
-   Weitere Informationen hierzu finden Sie unter [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md).
+   Weitere Informationen hierzu finden Sie unter [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md).
 
 ## Aus Blockierungsliste entfernen {#remove-from-denylist}
 
