@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '966'
 ht-degree: 100%
@@ -71,13 +71,13 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 
 >[!NOTE]
 >
->Weitere Informationen zum Definieren des E-Mail-Inhalts finden Sie in [diesem Abschnitt](../../delivery/using/defining-the-email-content.md).
+>Weitere Informationen zum Definieren des E-Mail-Inhalts finden Sie in [diesem Abschnitt](defining-the-email-content.md).
 
 ## Mirrorseite erstellen {#generating-mirror-page}
 
 Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist.
 
-Standardmäßig wird die Mirror­Seite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](../../delivery/using/personalization-blocks.md).
+Standardmäßig wird die Mirror­Seite automatisch generiert, wenn der entsprechende Link in den Inhalt der E-Mail eingefügt wurde. Weitere Informationen zum Einfügen von Gestaltungsbausteinen finden Sie unter [Gestaltungsbausteine](personalization-blocks.md).
 
 In den Versandeigenschaften kann die Erzeugung der Seite über das Feld **[!UICONTROL Modus]** im Tab **[!UICONTROL Gültigkeit]** konfiguriert werden.
 
@@ -117,7 +117,7 @@ Sie können eine weitere Adresse angeben, die es ermöglicht, die Unzustellbarke
 
 ![](assets/s_ncs_user_email_del_properties_smtp_tab.png)
 
-Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschnitt](../../delivery/using/understanding-delivery-failures.md#bounce-mail-management).
+Weitere Informationen zur Bounce-Message-Verwaltung finden Sie in [diesem Abschnitt](understanding-delivery-failures.md#bounce-mail-management).
 
 ## SMTP-Header hinzufügen {#adding-smtp-headers}
 
