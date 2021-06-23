@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: fb2f1769aadbc128d76f343a5fa58ee4e3bda72a
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 95%
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 # Erstellen von Benachrichtigungen für Android{#create-notificaations-android}
 
-Verwenden Sie Adobe Campaign, um Push-Benachrichtigungen auf Android-Geräten zu senden. Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+Verwenden Sie Adobe Campaign, um Push-Benachrichtigungen auf Android-Geräten zu senden. Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
 
 Erstellen Sie zunächst einen neuen Versand:
 
@@ -66,11 +66,11 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
 ![](assets/nmac_android_4.png)
 
-## Erstellen einer Benachrichtigungsmeldung {#creating-notification-message}
+## Benachrichtigungsinhalt erstellen {#creating-notification-message}
 
 >[!NOTE]
 >
->Zusätzliche Optionen für Benachrichtigungsinhalte sind nur bei der HTTP v1-API-Konfiguration verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../delivery/using/configuring-the-mobile-application-android.md#android-service-httpv1).
+>Zusätzliche Optionen für Benachrichtigungsinhalte sind nur bei der HTTP v1-API-Konfiguration verfügbar. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-httpv1).
 
 ![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie eine Android-Push-Benachrichtigung erstellen](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-and-sending-push-notifications.html?lang=de#additional-resources)
 
