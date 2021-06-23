@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: a3294e70-ac96-4e51-865f-b969624528ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Die für das **Inbox Rendering** in Adobe Campaign verfügbaren Clients für Mob
 
 >[!NOTE]
 >
->Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Die Personalisierung kann auch mit Adobe-Campaign-Tools, z. B. der **[!UICONTROL Vorschau]** und [Testsendungen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof), überprüft werden.
+>Zum Testen der Personalisierung in Sendungen ist kein Inbox Rendering nötig. Die Personalisierung kann auch mit Adobe-Campaign-Tools, z. B. der **[!UICONTROL Vorschau]** und [Testsendungen](steps-validating-the-delivery.md#sending-a-proof), überprüft werden.
 
 ## Inbox Rendering aktivieren{#activating-inbox-rendering}
 
@@ -82,6 +82,7 @@ Jedes Mal, wenn Sie in einem Versand die Funktion **[!UICONTROL Inbox Rendering]
 >
 >* Das bedeutet, dass jedes Mal, wenn ein Inbox-Rendering-Bericht erstellt wird, pro E-Mail-Client ein Token abgezogen wird: ein Token für das Rendering in Outlook 2000, einer für das Rendering in Outlook 2010, einer für das Rendering in Apple Mail 9 usw.
 >* Wenn Sie für denselben Versand das Inbox Rendering wiederholen, wird die Anzahl der verfügbaren Token nochmals um die Anzahl der erzeugten Renderings reduziert.
+
 >
 
 
@@ -96,14 +97,14 @@ Normalerweise wird die Inbox-Rendering-Funktion zum Testen des HTML-Gerüsts ein
 
 Nachdem Sie Ihren E-Mail-Versand erstellt und seinen Inhalt sowie die Zielpopulation definiert haben, folgen Sie den unten stehenden Schritten.
 
-Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/about-email-channel.md).
+Weiterführende Informationen zur Erstellung, Konzeption und Ausrichtung eines Versands finden Sie in [diesem Abschnitt](about-email-channel.md).
 
 1. Wählen Sie in der Symbolleiste des Versands die Schaltfläche **[!UICONTROL Inbox Rendering]** aus.
 1. Wählen Sie **[!UICONTROL Analysieren]** aus, um den Aufnahmeprozess zu starten.
 
    ![](assets/s_tn_inbox_rendering_button.png)
 
-   Ein Testversand wird durchgeführt. Nur wenige Minuten nach dem Absenden der E-Mails kann auf die Rendering-Miniaturansichten in diesem Testversand zugegriffen werden. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+   Ein Testversand wird durchgeführt. Nur wenige Minuten nach dem Absenden der E-Mails kann auf die Rendering-Miniaturansichten in diesem Testversand zugegriffen werden. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](steps-validating-the-delivery.md#sending-a-proof).
 
 1. Nach dem Absenden erscheint der Testversand in der Versandliste. Dort kann er durch einen Doppelklick geöffnet werden.
 
