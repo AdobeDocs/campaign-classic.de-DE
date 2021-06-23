@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-direct-mail
 exl-id: 42bb395b-b3fe-4d48-8720-5a4cae191984
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 100%
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 # Validierung{#validating}
 
-In [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md) werden globale Konzepte zur Validierung eines Versands vorgestellt.
+In [diesem Abschnitt](steps-validating-the-delivery.md) werden globale Konzepte zur Validierung eines Versands vorgestellt.
 
-Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse generiert. Der Inhalt der Datei hängt von den ausgewählten Ausgabespalten ab (siehe [Extraktionsdatei](../../delivery/using/defining-the-direct-mail-content.md#extraction-file)).
+Die Ausgabedatei eines Briefpost-Versands wird während der Versandanalyse generiert. Der Inhalt der Datei hängt von den ausgewählten Ausgabespalten ab (siehe [Extraktionsdatei](defining-the-direct-mail-content.md#extraction-file)).
 
 >[!NOTE]
 >
->Die Analysephase ist im Abschnitt [Versand analysieren](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery) ausführlich beschrieben.
+>Die Analysephase ist im Abschnitt [Versand analysieren](steps-validating-the-delivery.md#analyzing-the-delivery) ausführlich beschrieben.
 
 Bei der Erzeugung der Datei werden keine Empfängerinformationen (z. B. Versandlogs) aktualisiert. Der Vorgang kann daher problemlos unterbrochen werden.
 
