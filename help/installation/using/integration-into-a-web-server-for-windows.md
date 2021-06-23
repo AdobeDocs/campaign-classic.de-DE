@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 041c4431-baae-4e64-9e9a-0daa5123bd8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 3958fff140cc9bf6c371f0c4207cafc9a27bb725
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1004'
 ht-degree: 4%
 
 ---
@@ -101,13 +101,16 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/s_ncs_install_iis7_parameters_step9.png)
 
-### Starten des Webservers und Testen der Konfiguration {#launching-the-web-server-and-testing-the-configuration}
+### Webserver starten und Konfiguration testen {#launching-the-web-server-and-testing-the-configuration}
 
 Sie müssen nun testen, ob die Konfiguration korrekt ist.
 
 Gehen Sie dazu wie folgt vor:
 
 1. Starten Sie den IIS-Server mit der Befehlszeile **iisreset** neu.
+
+1. Starten Sie den Adobe Campaign-Dienst und stellen Sie sicher, dass er ausgeführt wird.
+
 1. Testen Sie das Tracking-Modul, indem Sie die folgende URL in einen Webbrowser einfügen:
 
    ```
@@ -144,7 +147,7 @@ Gehen Sie hierzu wie folgt vor:
 
 ## Ergänzende Konfigurationen {#additional-configurations}
 
-### Ändern der Größenbeschränkung für Upload-Dateien {#changing-the-upload-file-size-limit}
+### Größenbeschränkung für Upload-Dateien ändern {#changing-the-upload-file-size-limit}
 
 Beim Konfigurieren des IIS-Webservers wird für bestimmte Dateien, die auf den Server hochgeladen werden, automatisch eine Beschränkung von ca. 28 MB festgelegt.
 
