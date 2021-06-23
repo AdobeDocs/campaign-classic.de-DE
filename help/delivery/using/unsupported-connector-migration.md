@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 hidefromtoc: true
 exl-id: 60acf80c-8506-410b-ab2c-4f67a5677b43
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 100%
@@ -43,9 +43,9 @@ Alte SMS-Connectoren verwenden den Java-SMS-Connector und überlasten damit den 
 
 >[!CAUTION]
 >
->Sie können zwar möglicherweise Parameter übertragen, benötigen aber zur Konfiguration des Connectors **[!UICONTROL Erweitertes allgemeines SMPP]** weitere Informationen von Ihrem Provider zum Einrichten der übrigen Parameter. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/sms-protocol.md).
+>Sie können zwar möglicherweise Parameter übertragen, benötigen aber zur Konfiguration des Connectors **[!UICONTROL Erweitertes allgemeines SMPP]** weitere Informationen von Ihrem Provider zum Einrichten der übrigen Parameter. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](sms-protocol.md).
 
-Zunächst müssen Sie das neue externe Konto **[!UICONTROL Erweitertes allgemeines SMPP]** erstellen. Anschließend können Sie möglicherweise einige der Parameter übertragen. Eine Anleitung mit detaillierten Schritten finden Sie auf dieser [Seite](../../delivery/using/sms-set-up.md#creating-an-smpp-external-account).
+Zunächst müssen Sie das neue externe Konto **[!UICONTROL Erweitertes allgemeines SMPP]** erstellen. Anschließend können Sie möglicherweise einige der Parameter übertragen. Eine Anleitung mit detaillierten Schritten finden Sie auf dieser [Seite](sms-set-up.md#creating-an-smpp-external-account).
 
 Sie müssen nun die Parameter im Tab **[!UICONTROL Mobile]** Ihres neu erstellten externen Kontos **[!UICONTROL Erweitertes allgemeines SMPP]** entsprechend Ihrem vorherigen Connector einrichten.
 
