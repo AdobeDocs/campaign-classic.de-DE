@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 82%
@@ -25,10 +25,10 @@ Achten Sie vor dem Versand von E-Mails auf Folgendes:
 
 Die wichtigsten Schritte zum Senden einer E-Mail sind:
 
-* [E-Mail-Versand erstellen](../../delivery/using/creating-an-email-delivery.md)
-* [Bestimmen der Zielpopulation](../../delivery/using/steps-defining-the-target-population.md)
-* [E-Mail-Inhalte erstellen](../../delivery/using/defining-the-email-content.md)
-* [E-Mail senden](../../delivery/using/sending-messages.md)
-* [Versand überwachen](../../delivery/using/about-delivery-monitoring.md)
+* [E-Mail-Versand erstellen](creating-an-email-delivery.md)
+* [Bestimmen der Zielpopulation](steps-defining-the-target-population.md)
+* [E-Mail-Inhalte erstellen](defining-the-email-content.md)
+* [E-Mail senden](sending-messages.md)
+* [Versand überwachen](about-delivery-monitoring.md)
 
 Die folgenden Abschnitte enthalten Informationen, die speziell für den E-Mail-Kanal gelten. Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
