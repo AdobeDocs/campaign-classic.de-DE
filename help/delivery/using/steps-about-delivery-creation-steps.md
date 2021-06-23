@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0188c3fe-8176-4904-8505-c47a72c20fcc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 100%
@@ -17,21 +17,21 @@ ht-degree: 100%
 
 Die Konzeption eines Versands umfasst folgende Schritte:
 
-1. **Versand erstellen und identifizieren** – [mehr dazu](../../delivery/using/steps-create-and-identify-the-delivery.md)
+1. **Versand erstellen und identifizieren** – [mehr dazu](steps-create-and-identify-the-delivery.md)
 
 1. **Versandinhalt festlegen**. Die Definition des Versandinhalts erfolgt für jeden Kanal einzeln. Weiterführende Informationen dazu finden Sie im entsprechenden Abschnitt:
 
-   * [E-Mail-Kanal](../../delivery/using/defining-the-email-content.md)
-   * [SMS-Kanal](../../delivery/using/sms-create.md#defining-the-sms-content)
-   * [Briefpost-Kanal](../../delivery/using/defining-the-direct-mail-content.md)
-   * [Mobile-App-Kanal](../../delivery/using/about-mobile-app-channel.md)
+   * [E-Mail-Kanal](defining-the-email-content.md)
+   * [SMS-Kanal](sms-create.md#defining-the-sms-content)
+   * [Briefpost-Kanal](defining-the-direct-mail-content.md)
+   * [Mobile-App-Kanal](about-mobile-app-channel.md)
 
-1. **Zielpopulation bestimmen** – [mehr dazu](../../delivery/using/steps-defining-the-target-population.md)
+1. **Zielpopulation bestimmen** – [mehr dazu](steps-defining-the-target-population.md)
 
-1. **Versand senden** – [mehr dazu](../../delivery/using/steps-sending-the-delivery.md)
+1. **Versand senden** – [mehr dazu](steps-sending-the-delivery.md)
 
-1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weiterführende Informationen dazu finden Sie in den Abschnitten [Sendungen beobachten](../../delivery/using/about-delivery-monitoring.md) und [Versandverfolgung](../../delivery/using/about-message-tracking.md).
+1. **Versand verfolgen** (Tracking, Quarantäne, Berichte usw.). Weiterführende Informationen dazu finden Sie in den Abschnitten [Sendungen beobachten](about-delivery-monitoring.md) und [Versandverfolgung](about-message-tracking.md).
 
 >[!NOTE]
 >
->Die in diesem Kapitel beschriebenen Schritte setzen voraus, dass alle Empfänger und deren Profile in einer Datenbank gespeichert sind, außer bei externen Sendungen (siehe [Externe Empfänger auswählen](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients)).
+>Die in diesem Kapitel beschriebenen Schritte setzen voraus, dass alle Empfänger und deren Profile in einer Datenbank gespeichert sind, außer bei externen Sendungen (siehe [Externe Empfänger auswählen](steps-defining-the-target-population.md#selecting-external-recipients)).
