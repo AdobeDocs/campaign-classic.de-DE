@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: e43dd68e-2e95-4367-9029-4622fbcb1759
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Die Formatierung geschieht automatisch gemäß den ausgewählten Parametern. Kli
 
 ![](assets/s_ncs_content_deliver_a_content_html.png)
 
-Weitere Informationen finden Sie im vollständigen Implementierungsbeispiel unter [Inhaltserstellung im Versand-Assistenten](../../delivery/using/use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
+Weitere Informationen finden Sie im vollständigen Implementierungsbeispiel unter [Inhaltserstellung im Versand-Assistenten](use-case--creating-content-management.md#creating-content-in-the-delivery-wizard).
 
 ## Erstellung einer Inhaltsinstanz {#creating-a-content-instance}
 
@@ -69,13 +69,13 @@ Gehen Sie wie folgt vor:
 
    >[!NOTE]
    >
-   >Sie haben auch die Möglichkeit, die Erzeugung nicht validierter Inhalte zuzulassen. Ändern Sie in diesem Fall die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](../../delivery/using/publication-templates.md#creating-and-configuring-the-template).
+   >Sie haben auch die Möglichkeit, die Erzeugung nicht validierter Inhalte zuzulassen. Ändern Sie in diesem Fall die entsprechende Option in der Veröffentlichungsvorlage. Weitere Informationen hierzu finden Sie unter [Erstellung und Konfiguration der Vorlagen](publication-templates.md#creating-and-configuring-the-template).
 
    HTML- und Text-Inhalte werden standardmäßig im **Publishing**-Ordner der Adobe-Campaign-Instanz erzeugt. Ausgehend von der Option **NcmPublishingDir** können Sie einen anderen Ordner wählen.
 
 ## Versand einer Inhaltsinstanz {#delivering-a-content-instance}
 
-Damit eine Inhaltsinstanz automatisch erstellt und versendet werden kann, muss in der Veröffentlichungsvorlage, die für die Inhaltserzeugung verwendet wird, eine Versandvorlage angegeben sein. Weitere Informationen hierzu finden Sie im Abschnitt [Versand](../../delivery/using/publication-templates.md#delivery).
+Damit eine Inhaltsinstanz automatisch erstellt und versendet werden kann, muss in der Veröffentlichungsvorlage, die für die Inhaltserzeugung verwendet wird, eine Versandvorlage angegeben sein. Weitere Informationen hierzu finden Sie im Abschnitt [Versand](publication-templates.md#delivery).
 
 Des Weiteren muss der Ordner, in dem der Inhalt gespeichert wird, den aus dieser Veröffentlichungsvorlage stammenden Inhalten vorbehalten sein. Ein Inhaltsordner, der die Erzeugung verschiedener Inhaltstypen erlaubt, ist nicht für die automatische Versanderstellung geeignet.
 
