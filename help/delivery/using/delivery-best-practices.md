@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: eb5ad5a4-f640-4b26-b04f-b5567761d996
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 100%
@@ -103,8 +103,8 @@ Lernen Sie Best Practices im Zusammenhang mit der Erstellung und Durchführung e
 
 Siehe auch:
 
-* [Erste Schritte mit der Zustellbarkeit](../../delivery/using/about-deliverability.md)
+* [Erste Schritte mit der Zustellbarkeit](about-deliverability.md)
 
-* [Schritte zum Erstellen von Sendungen](../../delivery/using/steps-about-delivery-creation-steps.md)
+* [Schritte zum Erstellen von Sendungen](steps-about-delivery-creation-steps.md)
 
 * [Checkliste für Sicherheit und Datenschutz](https://helpx.adobe.com/de/campaign/kb/acc-security.html)
