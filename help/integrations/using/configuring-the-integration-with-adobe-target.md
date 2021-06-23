@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 100%
+source-wordcount: '212'
+ht-degree: 90%
 
 ---
 
@@ -32,4 +32,9 @@ Gehen Sie wie folgt vor:
 
    * **[!UICONTROL TNT_EdgeServer]** - für die Integration verwendeter Adobe-Target-Server. Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht der Adobe-Target-**[!UICONTROL Server-Domain]** und wird vom Wert **/m2** gefolgt. Zum Beispiel: **tt.omtrdc.net/m2**.
    * **[!UICONTROL TNT_TenantName]** - Name der Adobe-Target-Organisation. Dieser Wert entspricht dem Adobe-Target-**[!UICONTROL Client]**-Namen.
+
    ![](assets/tar_options.png)
+
+>[!CAUTION]
+>
+>Bei hybriden und gehosteten Architekturen müssen diese Optionen auf allen Servern festgelegt werden, einschließlich des [Mid-Sourcing-Servers](../../installation/using/mid-sourcing-server.md) und der [Ausführungsinstanz](../../message-center/using/configuring-instances.md#execution-instance).
