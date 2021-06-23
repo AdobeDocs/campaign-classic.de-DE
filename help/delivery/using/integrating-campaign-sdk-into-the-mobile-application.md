@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
-source-git-commit: a4fc52e68cbca861e1b942e0c7e41f3d5dc3df54
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 100%
+source-wordcount: '956'
+ht-degree: 97%
 
 ---
 
@@ -62,7 +62,7 @@ Zur Integration des Campaign SDK in die Mobile App benötigt der Entwickler folg
 
    >[!NOTE]
    >
-   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md).
+   >Der Integrationsschlüssel ist in der Adobe Campaign-Konsole im Tab **[!UICONTROL Informationen]** des dedizierten Dienstes der Mobile App angegeben. Weitere Informationen finden Sie unter [Konfiguration einer Mobile App in Adobe Campaign](configuring-the-mobile-application.md).
 
 * **Tracking-URL**: entspricht der Adresse des Adobe-Campaign-Trackingservers.
 * **Marketing-URL**: zur Abfrage der Abonnements.
@@ -290,7 +290,7 @@ Die Registrierungsfunktion ermöglicht
 
    >[!NOTE]
    >
-   >Ab Version 7.0 ruft das Betriebssystem, sobald die Funktion **application:didReceiveRemoteNotification:fetchCompletionHandler** implementiert ist, ausschließlich diese Funktion auf. Die Funktion **application:didReceiveRemoteNotification** wird deshalb nicht aufgerufen.
+   >Ab Version 7.0 ruft das Betriebssystem, sobald die Funktion **application:didReceiveRemoteNotification:fetchCompletionHandler** implementiert ist, nur diese Funktion auf. Die Funktion **application:didReceiveRemoteNotification** wird daher nicht aufgerufen.
 
 ## Tracking von stillen Benachrichtigungen {#silent-notification-tracking}
 
@@ -530,7 +530,7 @@ Um die **registerDeviceStatus**-Delegation zu implementieren, gehen Sie folgende
 
 ## Variablen {#variables}
 
-Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der Mobile App und in der Adobe Campaign-Konsole auf dem Tab **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden (siehe [Konfiguration einer Mobile App in Adobe Campaign](../../delivery/using/configuring-the-mobile-application.md)). Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
+Mit den Variablen können Sie das Verhalten von Mobile Apps nach dem Erhalt einer Benachrichtigung festlegen. Diese Variablen müssen im Code der Mobile App und in der Adobe Campaign-Konsole auf dem Tab **[!UICONTROL Variablen]** im dedizierten Mobile-App-Dienst definiert werden (siehe [Konfiguration einer Mobile App in Adobe Campaign](configuring-the-mobile-application.md)). Im Folgenden finden Sie ein Beispiel für einen Code, mit dem eine Mobile App alle hinzugefügten Variablen in einer Benachrichtigung erfassen kann. In unserem Beispiel verwenden wir die Variable „VAR“.
 
 * **Für Android**:
 
