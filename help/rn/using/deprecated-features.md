@@ -6,10 +6,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 778f0a9436f26c10b266019f761b499ab7547be1
+source-git-commit: c612b47463427751eff27d6092e371c918c87d93
 workflow-type: tm+mt
-source-wordcount: '1633'
-ht-degree: 95%
+source-wordcount: '1634'
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Durch dieses Vorgehen erhält der Kunde mindestens einen Versionszyklus Zeit, um
 >[!NOTE]
 >Die Versionen und neuen Funktionen von Adobe Campaign sind in den [Versionshinweisen](../../rn/using/latest-release.md) aufgeführt.
 
-## Eingestellte Funktionen{#deprecated-features}
+## Eingestellte Funktionen {#deprecated-features}
 
 In diesem Abschnitt werden Funktionen aufgeführt, die bei den aktuellen Campaign Classic-Versionen als eingestellt gekennzeichnet wurden.
 
@@ -43,9 +43,9 @@ Kunden wird empfohlen, die Nutzung der Funktionen in ihrer aktuellen Implementie
   </tr>
     <tr>
   <td>Adobe Analytics Data Connector<br></td>
-   <td><p>Ab Campaign-Version 21.1 wird Adobe Analytics Data Connector nicht mehr unterstützt.</p>
+   <td><p>Ab Campaign Version 21.1.3 wird der Adobe Analytics Data Connector nicht mehr unterstützt.</p>
    <p>Wenn Sie diesen Connector nutzen, müssen Sie Ihre Implementierung entsprechend anpassen. <a href="../../platform/using/adobe-analytics-connector.md">Mehr dazu</a></p>
-  <p><em>Geplantes Datum für die Entfernung: 2022.</em></p>
+  <p><em>Geplantes Entfernungsdatum: 1. März 2022</em></p>
   </td>
  </tr>
     <tr>
@@ -79,10 +79,10 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr>
   <tr>  
    <td>Fax-Kanal<br></td>
-   <td><p>Ab Campaign-Version 21.1.3 ist der Fax-Kanal nicht mehr verfügbar. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Mehr dazu</a></p>
+   <td><p>Ab Campaign Version 21.1.3 ist der Fax-Kanal nicht mehr verfügbar. <a href="../../delivery/using/steps-about-delivery-creation-steps.md">Mehr dazu</a></p>
   <tr>
   <td>Demdex-Domain<br></td>
-  <td><p> Ab Campaign-Version 21.1.3 ist die demdex-Domäne, die zum Importieren und Exportieren von Zielgruppen in Adobe Experience Cloud verwendet wird, nicht mehr verfügbar. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Mehr dazu</a></p> 
+  <td><p> Ab Campaign Version 21.1.3 wird die Demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, nicht mehr unterstützt. <a href="../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md">Mehr dazu</a></p> 
   </td>
   </td>
   </tr>
@@ -156,7 +156,7 @@ Die Client Console von Adobe Campaign Classic kann in den folgenden Systemen nic
 
 ### Betriebssysteme {#o-s-eol}
 
-Ab Version 21.1.3 ist die Unterstützung für Debian 8 veraltet.
+Ab Version 21.1.3 wird Debian 8 nicht mehr unterstützt.
 
 Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen kompatibel.
 
@@ -178,7 +178,7 @@ Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden We
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden Tools kompatibel.
 
 * Java JDK 7. [Weitere Infos](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
-* Libre Office 3.5 / 4.3 / 5.x, außer wenn in ein anderes Tool eingebettet. [Weitere Infos](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
+* Libre Office 3.5 / 4.3 / 5.x, außer wenn in ein anderes Tool eingebettet. [Weitere Informationen](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Datenbank-Engines {#dbe-eol}
 
@@ -216,7 +216,7 @@ Campaign Classic ist mit den folgenden Servern in Federated Data Access (FDA) ni
 * Soap-API – Online: 2015, 2016
 * Web API – Microsoft Dynamics CRM On-Premise: 2016, Aktualisierung 1 2016
 * Web API – Microsoft Dynamics CRM Online: 2016, Aktualisierung 1 2016
-* Oracle On Demand-API&lt;
+* Oracle On Demand-API
 
 **RDBMS-SERVER**
 
@@ -230,7 +230,7 @@ Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden RD
 
 ### SMS-Connectoren {#sms-eol}
 
-Adobe Campaign ist nicht mit den folgenden SMS-Connectoren kompatibel:
+Adobe Campaign ist mit den folgenden SMS-Connectoren nicht mehr kompatibel:
 
 * Generic SMPP (SMPP-Version 3.4 mit Unterstützung für Binärmodus)
 * Sybase365 (SAP SMS 365)
