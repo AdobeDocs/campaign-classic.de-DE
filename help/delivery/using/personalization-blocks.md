@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 8d155844-d18a-4165-9886-c3b144109f6e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '965'
+ht-degree: 96%
 
 ---
 
 # Gestaltungsbausteine{#personalization-blocks}
 
-Gestaltungsbausteine sind dynamisch und personalisierbar und weisen ein spezifisches Rendering auf. Sie können Gestaltungsbausteine in Nachrichten einfügen, z. B. ein Logo, eine Grußbotschaft oder einen Mirror-Seiten-Link. Siehe [Gestaltungsbausteine einfügen](#inserting-personalization-blocks).
+Gestaltungsbausteine sind dynamisch und personalisiert und enthalten ein spezifisches Rendering, das Sie in Ihre Sendungen einfügen können. Sie können beispielsweise ein Logo, eine Grußnachricht oder einen Link zu einer Mirrorseite hinzufügen. Siehe [Gestaltungsbausteine einfügen](#inserting-personalization-blocks).
 
 ![](assets/do-not-localize/how-to-video.png)[ Mehr zu dieser Funktion erfahren Sie im Video.](#personalization-blocks-video).
 
@@ -68,7 +68,7 @@ Zu diesem Zweck müssen wir folgende Gestaltungsbausteine einfügen:
 
 >[!NOTE]
 >
->Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+>Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](sending-messages.md#generating-the-mirror-page).
 
 1. Erstellen Sie einen neuen Versand oder öffnen Sie einen existierenden E-Mail-Versand.
 1. Klicken Sie im Versand-Assistenten auf den **[!UICONTROL Betreff]**-Link, um einen Betreff einzugeben.
@@ -100,24 +100,12 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+   >Weitere Informationen zur Erstellung der Mirror-Seite finden Sie unter [Mirror-Seite erstellen](sending-messages.md#generating-the-mirror-page).
 
 * **[!UICONTROL Mirrorseiten-Link]**: Hiermit wird der Link zur Mirrorseite &quot;Wenn die Nachricht nicht richtig angezeigt wird, bitte hier klicken&quot; eingefügt.
 * **[!UICONTROL Abmelde-Link]**: Hiermit wird ein Link zur Abmeldung von allen Nachrichten (Blockierungsliste) eingefügt.
-* **[!UICONTROL Formatierungsfunktion für Eigennamen]**: Hiermit wird die JavaScript-Funktion **[!UICONTROL toSmartCase]** erstellt, mit der der erste Buchstabe eines jeden Worts in einen Großbuchstaben umgewandelt wird. Dieser Baustein muss in den Quell-Code des Versands in **`<script>...</script>`**-Tags eingefügt werden.
-
-   Im unten stehenden Beispiel wird mithilfe dieser Funktion das Element „Mein Header“ durch „Mein neuer Header“ mit Großbuchstaben für jedes Wort ersetzt:
-
-   ```
-   <h1 id="sample">My header</h1>
-   <script><%@ include view='toSmartCase'%>;
-   document.getElementById("sample").innerHTML = toSmartCase("My new header");
-   </script>
-   ```
-
-   ![](assets/s_ncs_user_personalized_block_uppercasefunction.png)
-
-* **[!UICONTROL Anmeldungsseiten-URL]**: Hiermit wird eine Anmelde-URL eingefügt (siehe [Über Dienste und Abonnements](../../delivery/using/about-services-and-subscriptions.md)).
+* **[!UICONTROL Formatierungsfunktion für Eigennamen]**: Hiermit wird die JavaScript-Funktion **[!UICONTROL toSmartCase]** erstellt, mit der der erste Buchstabe eines jeden Worts in einen Großbuchstaben umgewandelt wird.
+* **[!UICONTROL Anmeldungsseiten-URL]**: Hiermit wird eine Anmelde-URL eingefügt (siehe [Über Dienste und Abonnements](about-services-and-subscriptions.md)).
 * **[!UICONTROL Anmelde-Link]**: Hiermit wird ein Anmelde-Link eingefügt, der beim Konfigurieren der Instanz definiert wurde.
 * **[!UICONTROL Registrierungslink (mit Werber)]**: Hiermit wird ein Anmelde-Link eingefügt, über den der Besucher und der Versand identifiziert werden kann. Der Link wurde beim Konfigurieren der Instanz definiert.
 
@@ -126,7 +114,7 @@ Standardmäßig ist eine Liste mit Gestaltungsbausteinen verfügbar, um den Inha
    >Dieser Baustein kann in Sendungen verwendet werden, die nur an Besucher gerichtet sind.
 
 * **[!UICONTROL Anmeldebestätigung]**: Hiermit wird ein Link eingefügt, mit dem die Anmeldung bestätigt werden kann.
-* **[!UICONTROL Teilen-Links in Social Media]**: Hiermit werden Schaltflächen eingefügt, mit denen der Empfänger mit dem E-Mail-Client sowie mit Facebook, Twitter und LinkedIn einen Link zum Inhalt der Mirror-Seite teilen kann (siehe [Weiterleiten von Nachrichten](../../delivery/using/viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
+* **[!UICONTROL Teilen-Links in Social Media]**: Hiermit werden Schaltflächen eingefügt, mit denen der Empfänger mit dem E-Mail-Client sowie mit Facebook, Twitter und LinkedIn einen Link zum Inhalt der Mirror-Seite teilen kann (siehe [Weiterleiten von Nachrichten](viral-and-social-marketing.md#viral-marketing--forward-to-a-friend)).
 * **[!UICONTROL Stil der Inhalts-E-Mails]** und **[!UICONTROL Stil der Benachrichtigungen]**: Hiermit wird Code erstellt, mit dem eine E-Mail mit nativen HTML-Stilen formatiert werden kann. Diese Bausteine müssen in den Quell-Code des Versands im Abschnitt **[!UICONTROL ...]** in **`<style>...</style>`**-Tags eingefügt werden.
 * **[!UICONTROL Annahme-URL eines Angebots im Einzelmodus]**: Hiermit wird eine URL eingefügt, mit der ein Interaction-Angebot auf **[!UICONTROL Angenommen]** gesetzt werden kann (siehe [diesen Abschnitt](../../interaction/using/offer-analysis-report.md)).
 
