@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Zur Verwendung von dynamischen Bedingungen benötigen Sie:
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
-Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [E-Mail-Versand erstellen](../../delivery/using/creating-an-email-delivery.md).
+Die Schritte zum Erstellen eines Versands finden Sie im Abschnitt [E-Mail-Versand erstellen](creating-an-email-delivery.md).
 
 Im vorliegenden Beispiel hat der Versandverantwortliche zunächst den Newsletter erstellt und die Zielgruppe ausgewählt.
 
