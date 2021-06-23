@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: c0533148-b027-4158-9b95-8d2df769e963
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Die Bestimmung der Zielgruppen ist besonders wichtig. Gehen Sie bei der Erstellung Ihrer Kontaktlisten sorgfältig vor, testen Sie Ihre E-Mails in den gängigsten E-Mail-Clients, Smartphones und Tablets und stellen Sie sicher, dass Ihre Verteilerlisten aktuell sind (und keine unbekannten oder veralteten Adressen enthalten). Sie können auch Testsendungen vornehmen, um einen vollständigen Validierungszyklus durchzuführen.
 
-Weiterführende Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md).
+Weiterführende Informationen zu Zielgruppen finden Sie in [diesem Abschnitt](steps-defining-the-target-population.md).
 
 ## Ansprechen der richtigen Audience {#target-the-right-audience}
 
@@ -30,26 +30,26 @@ Standardmäßig werden bei Campaign Classic mit Versandvorlagen **Empfänger** a
 
 So können Sie beispielsweise Nachrichten an Benutzer senden, deren Profile Sie über soziale Netzwerke erfasst haben oder die einen Informationsdienst abonniert haben.
 
-Diese Zuordnungen (Mapping) werden [in diesem Abschnitt](../../delivery/using/selecting-a-target-mapping.md) dargestellt.
+Diese Zuordnungen (Mapping) werden [in diesem Abschnitt](selecting-a-target-mapping.md) dargestellt.
 
 Sie können auch ein benutzerdefiniertes Zielgruppen-Mapping erstellen und verwenden. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../configuration/using/target-mapping.md).
 
 ## Externe Empfänger {#external-recipients}
 
-Sie können Nachrichten an Empfänger senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Sie können Nachrichten an Empfänger senden, die in einer externen Datei anstatt in der Datenbank gespeichert sind. Weiterführende Informationen finden Sie [in diesem Abschnitt](steps-defining-the-target-population.md#selecting-external-recipients).
 
 ## Versand an Ihre Abonnenten {#send-to-subscribers}
 
-Um den Abonnenten eines Newsletters Nachrichten zu senden, können Sie die Abonnenten des jeweiligen Informationsdienstes direkt anschreiben. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
+Um den Abonnenten eines Newsletters Nachrichten zu senden, können Sie die Abonnenten des jeweiligen Informationsdienstes direkt anschreiben. Weiterführende Informationen finden Sie [in diesem Abschnitt](managing-subscriptions.md#delivering-to-the-subscribers-of-a-service).
 
 
 ## Testversand-Empfänger und Testadressen {#test-recipients-seed-addresses}
 
 Nutzen Sie Testsendungen, bevor Sie Ihre Nachricht an die Hauptzielgruppe senden.
 
-Achten Sie darauf, geeignete Testversand-Empfänger auszuwählen, da diese die Form und den Inhalt Ihrer Nachricht validieren. Die Schritte zum Festlegen der Testversand-Empfänger werden [in diesem Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-the-proof-target) beschrieben.
+Achten Sie darauf, geeignete Testversand-Empfänger auszuwählen, da diese die Form und den Inhalt Ihrer Nachricht validieren. Die Schritte zum Festlegen der Testversand-Empfänger werden [in diesem Abschnitt](steps-defining-the-target-population.md#selecting-the-proof-target) beschrieben.
 
-Testadressen werden verwendet, um Nachrichten an Empfänger zu senden, die nicht den definierten Kriterien der Zielgruppe entsprechen, damit eine Nachricht getestet werden kann, bevor sie an die Hauptzielgruppe gesendet wird. Sie werden [in diesem Abschnitt](../../delivery/using/about-seed-addresses.md) dargestellt.
+Testadressen werden verwendet, um Nachrichten an Empfänger zu senden, die nicht den definierten Kriterien der Zielgruppe entsprechen, damit eine Nachricht getestet werden kann, bevor sie an die Hauptzielgruppe gesendet wird. Sie werden [in diesem Abschnitt](about-seed-addresses.md) dargestellt.
 
 ## Deduplizieren von Adressen {#deduplicate-addresses}
 
