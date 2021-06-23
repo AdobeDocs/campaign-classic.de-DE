@@ -6,27 +6,27 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1746'
 ht-degree: 100%
 
 ---
 
-# Zielpopulation bestimmen {#defining-the-target-population}
+# Bestimmen der Zielpopulation {#defining-the-target-population}
 
 ## Über Zielpopulationen {#about-target-populations}
 
 Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
 
-* **Haupt-Audience**: Profile, die Nachrichten empfangen. [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target)
-* **Testversand**: Empfänger von Nachrichten in Testsendungen, die am Validierungszyklus beteiligt sind. [Mehr dazu](../../delivery/using/steps-defining-the-target-population.md#defining-a-specific-proof-target)
-* **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Mehr dazu](../../delivery/using/about-seed-addresses.md)
+* **Haupt-Audience**: Profile, die Nachrichten empfangen. [Mehr dazu](steps-defining-the-target-population.md#selecting-the-main-target)
+* **Testversand**: Empfänger von Nachrichten in Testsendungen, die am Validierungszyklus beteiligt sind. [Mehr dazu](steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Mehr dazu](about-seed-addresses.md)
 * **Kontrollgruppen**: Population, die den Versand nicht erhält und verwendet wird, um das Verhalten und die Auswirkungen der Kampagne zu verfolgen (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
 
-Meistens wird die Hauptzielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können aber auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/steps-defining-the-target-population.md#selecting-external-recipients).
+Meistens wird die Hauptzielgruppe aus der Adobe Campaign-Datenbank extrahiert (Standardmodus). Empfänger können aber auch in einer externen Datei gespeichert werden. Weiterführende Informationen finden Sie in diesem [Abschnitt](steps-defining-the-target-population.md#selecting-external-recipients).
 
 Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
@@ -37,7 +37,7 @@ Um die Versandempfänger auszuwählen, gehen Sie wie folgt vor:
 
 1. Wählen Sie Zielgruppen-Mapping aus der Dropdown-Liste **[!UICONTROL Zielgruppen-Mapping]** aus. Die Adobe-Campaign-Standardeinstellung für Zielgruppen-Mapping ist **[!UICONTROL Empfänger]**, basierend auf dem Schema **nms:recipient**.
 
-   Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](../../delivery/using/selecting-a-target-mapping.md).
+   Es sind weitere Zielgruppen-Mappings verfügbar, von denen sich einige auf Ihre spezifische Konfiguration beziehen können. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](selecting-a-target-mapping.md).
 
 1. Wählen Sie zur Konfiguration von Einschränkungsfiltern die Schaltfläche **[!UICONTROL Hinzufügen]** aus.
 
@@ -96,7 +96,7 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/s_ncs_user_wizard_external_recipients.png)
 
-1. Standardmäßig werden Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](../../delivery/using/selecting-a-target-mapping.md)
+1. Standardmäßig werden Empfänger in die Datenbank importiert. Sie müssen das **[!UICONTROL Zielgruppen-Mapping]** auswählen. Weitere Informationen zu Zielgruppen-Mappings finden Sie unter [Zielgruppen-Mapping wählen](selecting-a-target-mapping.md)
 
    Sie können auch **[!UICONTROL Empfänger nicht in die Datenbank importieren]** auswählen.
 
@@ -150,7 +150,7 @@ Folgende Optionen stehen zur Verfügung:
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md).
+   >Weitere Informationen zur Quarantäneverwaltung finden Sie unter [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md).
 
 * **[!UICONTROL Begrenzung des Versands]** auf eine gewisse Anzahl an Nachrichten: Es wird höchstens die angegebene Anzahl an Nachrichten gesendet, wobei die auszuschließenden Empfänger zufällig aus der Zielgruppe ausgewählt werden.
 
@@ -181,11 +181,11 @@ Um die Testversand-Zielgruppe auszuwählen, gehen Sie wie folgt vor:
 
 Bei der Auswahl der Testversand-Zielgruppe können Sie über die Option **[!UICONTROL Bestimmung einer speziellen Testversand-Zielgruppe]** die Empfänger des Testversands aus den Profilen in der Datenbank auswählen.
 
-Wählen Sie diese Option aus, um mit der Schaltfläche **[!UICONTROL Hinzufügen]** Empfänger ähnlich der Definition der Hauptzielgruppe auszuwählen. Siehe [Hauptzielgruppe auswählen](../../delivery/using/steps-defining-the-target-population.md#selecting-the-main-target).
+Wählen Sie diese Option aus, um mit der Schaltfläche **[!UICONTROL Hinzufügen]** Empfänger ähnlich der Definition der Hauptzielgruppe auszuwählen. Siehe [Hauptzielgruppe auswählen](steps-defining-the-target-population.md#selecting-the-main-target).
 
 ![](assets/s_ncs_user_wizard_email01_143.png)
 
-Weiterführende Informationen zum Testversand finden Sie in [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Weiterführende Informationen zum Testversand finden Sie in [diesem Abschnitt](steps-validating-the-delivery.md#sending-a-proof).
 
 ### Adressersetzung beim Testversand verwenden {#using-address-substitution-in-proof}
 
@@ -219,15 +219,15 @@ Sie können **[!UICONTROL Testadressen]** als Testversand-Zielgruppe verwenden: 
 
 >[!NOTE]
 >
->Die Testadressen werden unter [Über Testadressen](../../delivery/using/about-seed-addresses.md) vorgestellt.
+>Die Testadressen werden unter [Über Testadressen](about-seed-addresses.md) vorgestellt.
 
 Mit der Option **[!UICONTROL Spezifische Zielgruppe und Testadressen]** können Sie die Bestimmung einer speziellen Testversand-Zielgruppe und die Verwendung von Testadressen kombinieren. Die entsprechende Konfiguration erfolgt dann in zwei getrennten Tabs.
 
 Siehe auch:
 
 * [Testversand-Zielgruppe auswählen](#selecting-the-proof-target)
-* [Über Testadressen](../../delivery/using/about-seed-addresses.md)
-* [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](../../delivery/using/use-case--selecting-seed-addresses-on-criteria.md)
+* [Über Testadressen](about-seed-addresses.md)
+* [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md)
 
 ## Anleitungsvideo {#seeds-and-proofs-video}
 
