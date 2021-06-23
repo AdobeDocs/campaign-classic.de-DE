@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
 workflow-type: tm+mt
 source-wordcount: '2562'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Die Möglichkeit zum Opt-out aus dem Verkauf von personenbezogenen Daten, die si
 
 ## Über Datenschutzanfragen {#about-privacy-requests}
 
-Um Sie bei der Einhaltung von Datenschutzvorschriften zu unterstützen, ermöglicht Ihnen Adobe Campaign die Durchführung von Zugriffs- und Löschanfragen. Das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Löschanfrage) werden in [diesem Abschnitt](../../platform/using/privacy-management.md#right-access-forgotten) beschrieben.
+Um Sie bei der Einhaltung der Datenschutzverordnungen zu unterstützen, ermöglicht Ihnen Adobe Campaign die Durchführung von Zugriffs- und Löschanfragen. Das **Recht auf Zugriff** und das **Recht auf Vergessenwerden** (Löschanfrage) werden in [diesem Abschnitt](../../platform/using/privacy-management.md#right-access-forgotten) beschrieben.
 
 Im Folgenden wird beschrieben, wie Zugriffs- und Löschanfragen erstellt und in Adobe Campaign verarbeitet werden.
 
@@ -165,7 +165,7 @@ Die Daten sind in der Datenbank 90 Tage lang verfügbar. Wenn die Anfrage durch 
 
 Hier ist ein Beispiel für die Datendatei einer betroffenen Person:
 
-![](assets/privacy-access-file.png)
+![](assets/do-not-localize/privacy-access-file.png)
 
 Der Datenverantwortliche kann einfach eine Web-Anwendung erstellen, die die jeweilige JSSP-URL enthält, und so die Datendatei der betroffenen Person auf einer Website verfügbar machen.
 
@@ -257,7 +257,7 @@ Führen Sie zuerst die Authentifizierung über die API durch.
 
 1. Verwenden Sie die Anmeldemethode und geben Sie in der Anfrage einen Benutzernamen und ein Passwort als Parameter ein. Sie erhalten eine Antwort mit einem Sitzungs-Token. In unserem Beispiel wird SoapUI verwendet.
 
-   ![](assets/privacy-api.png)
+   ![](assets/do-not-localize/privacy-api.png)
 
 1. Verwenden Sie dieses Sitzungs-Token zur Authentifizierung für alle folgenden API-Aufrufe. Das Token ist 24 Stunden lang gültig.
 
@@ -269,7 +269,7 @@ Rufen Sie dann die Datenschutz-API auf:
 
    In diesem Beispiel wird **[!UICONTROL CreateRequestByName]** verwendet. Beachten Sie, wie das oben bereitgestellte Sitzungs-Token zur Authentifizierung verwendet wird. In der Antwort erhalten Sie die ID der erstellten Anfrage.
 
-   ![](assets/privacy-api-2.png)
+   ![](assets/do-not-localize/privacy-api-2.png)
 
    Beachten Sie bei der Durchführung der oben erläuterten Schritte Folgendes:
 
