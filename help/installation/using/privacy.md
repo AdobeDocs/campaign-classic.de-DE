@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 0a3473bf-0528-486d-a799-8db86fece522
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: f31591949bb033ff250cf4b33eddcc2c1d31cc6c
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 57%
+source-wordcount: '899'
+ht-degree: 45%
 
 ---
 
@@ -23,7 +23,7 @@ Allgemeine Informationen dazu, was unter Datenschutzverwaltung zu verstehen ist,
 
 ## URL-Personalisierung {#url-personalization}
 
-Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich mögliche Sicherheitslücken verhindern. Folgende Beispiele sollten niemals in den URL-Attributen `a href="">` oder `<img src="">` verwendet werden:
+Wenn Sie personalisierte Links zu Ihrem Inhalt hinzufügen, achten Sie darauf, dass im Hostname-Teil der URL keine Personalisierung vorhanden ist. So lassen sich mögliche Sicherheitslücken verhindern. Folgende Beispiele sollten niemals in den URL-Attributen &lt;`a href="">` oder `<img src="">` verwendet werden:
 
 * `<%= url >`
 * `https://<%= url >`
@@ -47,27 +47,35 @@ Beispiel:
 
 <img src="assets/privacy-query-dynamic-url.png">
 
-### Signaturmechanismus
+### URL-Signatur
 
-Um die Sicherheit zu verbessern, wurde in Build 19.1.4 (9032@3a9dc9c) ein neuer Signaturmechanismus zum Tracking von Links in E-Mails eingeführt, der in Build 19.1.4 (9032@3a9dc9c) und Campaign 20.2 verfügbar ist. Diese Option ist standardmäßig für alle Kunden aktiviert.
+Um die Sicherheit zu verbessern, wurde ein Signaturmechanismus für das Tracking von Links in E-Mails eingeführt. Sie ist in Build 19.1.4 (9032@3a9dc9c) und Campaign 20.2 verfügbar. Diese Funktion ist standardmäßig aktiviert.
 
 >[!NOTE]
 >
->Wenn auf eine fehlerhafte signierte URL geklickt wird, wird der folgende Fehler zurückgegeben: „Angeforderte URL &#39;... &#39; wurde nicht gefunden.“
+>Wenn auf eine fehlerhafte signierte URL geklickt wird, wird dieser Fehler zurückgegeben: &quot;Angeforderte URL &#39;...&#39; wurde nicht gefunden.&quot;
 
-Darüber hinaus können gehostete und hybride Kunden ab Campaign-Version 20.2 und [!DNL Gold Standard] eine Verbesserung verwenden, um aus früheren Builds generierte URLs zu deaktivieren. Standardmäßig ist diese Option deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
+Darüber hinaus können Sie seit Campaign-Version 20.2 und der [!DNL Gold Standard]-Version eine Verbesserung verwenden, um in früheren Builds generierte URLs zu deaktivieren. Diese Funktion ist standardmäßig deaktiviert. Sie können sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) wenden, um diese Funktion zu aktivieren.
 
-Um diesen neuen Mechanismus zu aktivieren, müssen On-Premise-Kunden auf allen Campaign-Servern die folgenden Schritte ausführen:
+Wenn Sie [!DNL Gold Standard] 19.1.4 ausführen, kann es zu Problemen mit Push-Benachrichtigungsversand über Tracking-Links oder zu Sendungen über Anker-Tags kommen. In diesem Fall wird empfohlen, die URL-Signatur zu deaktivieren.
+
+Unabhängig davon, ob Sie Campaign in Ihrem Unternehmen oder in einer Hybridarchitektur ausführen, müssen Sie sich an [Kundenunterstützung](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) wenden, damit die URL-Signatur deaktiviert wird.
+
+Wenn Sie Campaign in einer Hybridarchitektur ausführen, stellen Sie vor der Aktivierung der URL-Signatur sicher, dass die gehostete Mid-Sourcing-Instanz wie folgt aktualisiert wurde:
+* Vor der lokalen Marketinginstanz
+* Auf dieselbe Version wie die lokale Marketinginstanz oder auf eine etwas höhere Version
+
+Andernfalls können einige dieser Probleme auftreten:
+* Bevor die Mid-Sourcing-Instanz aktualisiert wird, werden URLs über diese Instanz ohne Signatur gesendet.
+* Nachdem die Mid-Sourcing-Instanz aktualisiert und die URL-Signatur auf beiden Instanzen aktiviert wurde, werden die URLs, die zuvor ohne Signatur gesendet wurden, abgelehnt. Der Grund dafür ist, dass eine Signatur von den Tracking-Dateien angefordert wird, die von der Marketing-Instanz bereitgestellt wurden.
+
+Um in früheren Builds generierte URLs zu deaktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
 1. Ändern Sie in der Server-Konfigurationsdatei (serverConf.xml) **blockRedirectForUnsignedTrackingLink** in **true**.
 1. Starten Sie den **nlserver**-Service neu.
 1. Starten Sie den Webserver (apache2 unter Debian, httpd unter CentOS/RedHat, IIS unter Windows) auf dem Trackingserver neu.
 
-Kunden, die mit [!DNL Gold Standard] 19.1.4 arbeiten, können Probleme mit Push-Benachrichtigungsversand über einen Trackinglink oder mit Sendungen über Anker-Tags haben. Wenn ja, empfiehlt Adobe, den neuen Signaturmechanismus für Tracking-Links zu deaktivieren:
-
-**Gehostete und hybride** Kunden müssen sich an die  [Kundenunterstützung wenden, ](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) damit dieser Mechanismus deaktiviert wird.
-
-**Gehen Sie wie folgt vor, um On-Premise-** Kunden-Scan durchzuführen:
+Um die URL-Signatur zu aktivieren, führen Sie die folgenden Schritte auf allen Campaign-Servern gleichzeitig aus:
 
 1. Ändern Sie in der Server-Konfigurationsdatei (serverConf.xml) den Eintrag für **signEmailLinks** in **false**.
 1. Starten Sie den **nlserver**-Service neu.
