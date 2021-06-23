@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 100%
+source-wordcount: '603'
+ht-degree: 83%
 
 ---
 
@@ -21,10 +21,17 @@ Der Begriff Tracking bezieht sich auf den Umgang der Empfänger mit Nachrichten,
 
 >[!NOTE]
 >
->Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen eine bestimmte Syntax, um nachverfolgt zu werden. Weitere Informationen zum Hinzufügen von Links in E-Mails, die personalisiert werden können und Tracking unterstützen, finden Sie in [diesem Abschnitt](../../delivery/using/tracking-personalized-links.md).
+>Die Links in E-Mail-Inhalten, die eine Personalisierung enthalten, benötigen eine bestimmte Syntax, um nachverfolgt zu werden. Weitere Informationen zum Hinzufügen von Links in E-Mails, die personalisiert werden können und Tracking unterstützen, finden Sie in [diesem Abschnitt](tracking-personalized-links.md).
 
+Es wird dringend empfohlen, URLs in Trennzeichen auf der Registerkarte **[!UICONTROL Textinhalt]** einzuschließen, bevor Sie die Verfolgungsformel anwenden. Die URL-Trennzeichen, die Sie auf dieser Registerkarte eingeben, werden von Adobe Campaign verwendet, um URLs in Zeichenfolgen zu identifizieren. Sie können diese Trennzeichen-Paare verwenden:
+* Klammern ( )
+* Brackets [ ]
+* Braces { }
 
-
+In diesem Beispiel wird der URL https://www.adobe.com ein Semikolon (;) gefolgt. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
+* (https://www.adobe.com);
+* [https://www.adobe.com];
+* {https://www.adobe.com};
 
 Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von URLs zu personalisieren, gehen Sie folgendermaßen vor:
 
