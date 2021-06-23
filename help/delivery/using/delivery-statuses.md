@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 100%
@@ -23,13 +23,13 @@ Nachdem ein Versand ausgeführt wurde, zeigt das Versand-Dashboard einen Status 
 
 ![](assets/delivery-status.png)
 
-Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren Behebung finden Sie auf [dieser Seite](../../delivery/using/understanding-delivery-failures.md).
+Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren Behebung finden Sie auf [dieser Seite](understanding-delivery-failures.md).
 
 **Verwandte Themen:**
 
-* [Versand-Dashboard](../../delivery/using/delivery-dashboard.md)
-* [Fehlerbehebung beim Versand](../../delivery/using/delivery-troubleshooting.md)
-* [Über die Zustellbarkeit](../../delivery/using/about-deliverability.md)
+* [Versand-Dashboard](delivery-dashboard.md)
+* [Fehlerbehebung beim Versand](delivery-troubleshooting.md)
+* [Über die Zustellbarkeit](about-deliverability.md)
 
 ## Liste der Versandstatus {#list-delivery-statuses}
 
@@ -51,7 +51,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr> 
   <tr> 
    <td> Fehlgeschlagen<br /> </td> 
-   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Weitere Informationen finden Sie unter <a href="../../delivery/using/understanding-delivery-failures.md" target="_blank">Ursachen von fehlgeschlagenen Sendungen</a><br /> </td> 
+   <td> Der Versand hat den Empfänger nicht erreicht, weil die Adresse ungültig oder der Posteingang voll war. Die Ursache kann auch ein Problem mit Gestaltungsbausteinen sein, da diese Fehler hervorrufen können, wenn die Schemata nicht mit dem Versand-Mapping übereinstimmen. Weitere Informationen finden Sie unter <a href="understanding-delivery-failures.md" target="_blank">Ursachen von fehlgeschlagenen Sendungen</a><br /> </td> 
   </tr>
   <tr> 
    <td> Ausstehend<br /> </td> 
@@ -67,7 +67,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
   </tr> 
   <tr> 
    <td> Vom Dienstleister berücksichtigt<br /> </td> 
-   <td> Der SMS-Dienstleister hat den Versand erhalten.<br /> Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf den <a href="../../delivery/using/sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a> durchgeführt haben, wurde die Nachricht erfolgreich von Campaign an den Enhanced MTA weitergeleitet.</td> 
+   <td> Der SMS-Dienstleister hat den Versand erhalten.<br /> Wenn Sie bei gehosteten oder hybriden Installationen ein Upgrade auf den <a href="sending-with-enhanced-mta.md" target="_blank">Enhanced MTA</a> durchgeführt haben, wurde die Nachricht erfolgreich von Campaign an den Enhanced MTA weitergeleitet.</td> 
   </tr> 
   <tr> 
    <td> Auf Mobiltelefon erhalten<br /> </td> 
@@ -85,13 +85,13 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
  </tbody> 
 </table>
 
-Weitere Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie in [diesem Abschnitt](../../delivery/using/about-deliverability.md). Weitere Informationen zur Zustellbarkeit finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+Weitere Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie in [diesem Abschnitt](about-deliverability.md). Weitere Informationen zur Zustellbarkeit finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 ## Status Ausstehend {#pending-status}
 
 Nach der Bestätigung des Versands ist dessen Status **[!UICONTROL Ausstehend]**. Das bedeutet, dass im Ausführungsprozess auf die Verfügbarkeit von Ressourcen gewartet wird.
 
-Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminiert wurde und bis zum entsprechenden Datum in der Warteschlange bleibt. Weitere Informationen hierzu finden Sie im Abschnitt [Versandauslösung](../../delivery/using/steps-sending-the-delivery.md#scheduling-the-delivery-sending).
+Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminiert wurde und bis zum entsprechenden Datum in der Warteschlange bleibt. Weitere Informationen hierzu finden Sie im Abschnitt [Versandauslösung](steps-sending-the-delivery.md#scheduling-the-delivery-sending).
 
 Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehend]** bleibt, kann dies folgende Gründe haben:
 
@@ -137,5 +137,5 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 **Verwandte Themen:**
 
 * [Protokolle und Versandverlauf](#delivery-logs-and-history)
-* [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Typen und Ursachen für fehlgeschlagene Sendungen            ](../../delivery/using/understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
+* [Typen und Ursachen für fehlgeschlagene Sendungen            ](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
