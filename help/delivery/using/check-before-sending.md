@@ -5,7 +5,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 100%
@@ -24,7 +24,7 @@ Bevor Sie einen Versand durchführen, müssen Sie sicherstellen, dass Ihre Empf�
 
 Durch diese Maßnahme können Sie mögliche Fehler erkennen und beheben, bevor Sie den Versand an Ihre Hauptzielgruppe durchführen.
 
-In [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md) werden die Schritte zur Validierung eines Versands vorgestellt.
+In [diesem Abschnitt](steps-validating-the-delivery.md) werden die Schritte zur Validierung eines Versands vorgestellt.
 
 ## Inbox Rendering {#inbox-and-email-rendering}
 
@@ -36,13 +36,13 @@ Mit Inbox Rendering können Sie sich eine Vorschau Ihrer Nachrichten in den gän
 
 * Fähigkeiten zum Inbox Rendering sind entscheidend, um festzustellen, ob Ihre E-Mail-Kampagnen erfolgreich durch die Filter der großen ISPs (Internet Service Providers) und Webmail-Dienste befördert werden. Diese Tools senden vorab eine Kopie einer E-Mail an ein Netzwerk von Test-Posteingängen, damit Sie sehen, wie eine Nachricht in diesen Diensten dargestellt wird. Manche dieser Tools bieten auch Berichte und Code-Korrektur-Möglichkeiten, mit denen Sie Fehler rasch erkennen und beheben und so die Zustellbarkeit verbessern können.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/inbox-rendering.md).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](inbox-rendering.md).
 
 ## Nachrichten in Testsendungen {#proof-messages}
 
 Mit Testsendungen können Sie den Abmelde-Link, die Mirrorseite und andere Links testen, die Nachricht validieren, die Anzeige von Bildern überprüfen, mögliche Fehler erkennen etc. Außerdem können Sie Ihr Design und die Darstellung auf verschiedenen Geräten testen.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](steps-validating-the-delivery.md#sending-a-proof).
 
 ## Einrichten von A/B-Test-Sendungen {#a-b-testing-deliveries}
 
@@ -54,7 +54,7 @@ Wenn mehrere Versionen von Inhalten für den E-Mail-Versand vorhanden sind, kön
 
 * Wählen Sie die Version mit der höchsten Erfolgsquote aus und senden Sie sie an die restliche Zielgruppe.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/get-started-a-b-testing.md).
+Weiterführende Informationen finden Sie [in diesem Abschnitt](get-started-a-b-testing.md).
 
 ## Nachrichtenzustellung überprüfen {#make-sure-your-message-is-delivered}
 
@@ -66,7 +66,7 @@ Sie können einen vollständigen Validierungsprozess einschließlich der Adobe-C
 
 ### Schübe verwenden
 
-Mit Schüben können Sie das gesendete Nachrichtenvolumen nach und nach steigern. Dadurch wird verhindert, dass Ihre Nachrichten als Spam gekennzeichnet werden, oder Sie können die Anzahl der pro Tag versendeten Nachrichten beschränken. Mit Schüben können Sie Sendungen in mehrere Teilsendungen unterteilen, anstatt große Mengen von Nachrichten gleichzeitig zu senden. Weiterführende Informationen finden Sie [in diesem Abschnitt](../../delivery/using/steps-sending-the-delivery.md#sending-using-multiple-waves).
+Mit Schüben können Sie das gesendete Nachrichtenvolumen nach und nach steigern. Dadurch wird verhindert, dass Ihre Nachrichten als Spam gekennzeichnet werden, oder Sie können die Anzahl der pro Tag versendeten Nachrichten beschränken. Mit Schüben können Sie Sendungen in mehrere Teilsendungen unterteilen, anstatt große Mengen von Nachrichten gleichzeitig zu senden. Weiterführende Informationen finden Sie [in diesem Abschnitt](steps-sending-the-delivery.md#sending-using-multiple-waves).
 
 ### Nachrichten priorisieren
 
