@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 100%
@@ -73,7 +73,7 @@ Die Werte für **[!UICONTROL Status]**, **[!UICONTROL Kanal]** und **[!UICONTROL
 
 ## Gutschein in einen E-Mail-Versand einfügen {#inserting-a-coupon-into-an-email-delivery}
 
-Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterführende Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/about-email-channel.md). Sie können auch in einem Workflow einem Versand einen Gutschein hinzufügen.
+Im folgenden Beispiel wird von der Startseite aus ein Versand erstellt. Weiterführende Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](about-email-channel.md). Sie können auch in einem Workflow einem Versand einen Gutschein hinzufügen.
 
 1. Gehen Sie zu **[!UICONTROL Kampagnen]** und wählen Sie **[!UICONTROL Sendungen]** aus.
 1. Wählen Sie **[!UICONTROL Erstellen]** aus.
