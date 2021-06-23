@@ -6,16 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 67fd9a67-cb05-46cd-acd5-e42fde6f4d4f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Personalisierungsfelder{#personalization-fields}
 
-Personalisierungsfelder bilden die erste Stufe einer Anpassung des Nachrichteninhalts. Durch Einfügen der Felder wird angegeben, an welcher Stelle die aus der gewählten Datenquelle stammenden Informationen angezeigt werden sollen.
+Personalisierungsfelder werden zur Personalisierung des Inhalts der zugestellten Nachrichten auf erster Ebene verwendet. Die Felder, die Sie in einen Hauptinhalt einfügen, zeigen die Position an, an der die Daten aus der ausgewählten Datenquelle eingefügt werden sollen.
 
 So ersetzt Adobe Campaign das Personalisierungsfeld **&lt;%= recipient.LastName %>** durch den in der Empfängertabelle der Datenbank enthaltenen Nachnamen des Empfängers.
 
@@ -75,7 +75,7 @@ In unserem Beispiel wird eine E-Mail erstellt, in der der Empfängername im Betr
 
 ## Personalisierung optimieren {#optimizing-personalization}
 
-Mit der folgenden Option können Sie die Personalisierung optimieren: Verwenden Sie dazu im **[!UICONTROL Analyse]**-Tab der Versandeigenschaften die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten.]** Weiterführende Informationen zur Versandanalyse finden Sie in [diesem Abschnitt](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Mit der folgenden Option können Sie die Personalisierung optimieren: Verwenden Sie dazu im **[!UICONTROL Analyse]**-Tab der Versandeigenschaften die Option **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten.]** Weiterführende Informationen zur Versandanalyse finden Sie in [diesem Abschnitt](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Diese Option ermöglicht es, im Zuge der Versandanalyse automatisch einen Workflow zu erstellen und auszuführen, welcher alle auf eine Zielgruppe bezogenen Daten in einer temporären Tabelle speichert (insbesondere Daten aus über FDA verknüpften Tabellen).
 
