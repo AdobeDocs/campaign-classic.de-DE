@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: dcd3a9f9-5fe9-4c28-a4a5-5aed67b036ab
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Weitere Tipps zur Optimierung der Zustellbarkeit beim Entwerfen von Inhalten fin
 
 >[!NOTE]
 >
->Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [E-Mail-Inhalte erstellen](../../delivery/using/defining-the-email-content.md) und [Personalisierte Inhalte erstellen](../../delivery/using/design-and-personalize.md).
+>Weitere Informationen zum Bearbeiten von E-Mail-Inhalten finden Sie unter [E-Mail-Inhalte erstellen](defining-the-email-content.md) und [Personalisierte Inhalte erstellen](design-and-personalize.md).
 
 ## Absenderadresse {#sender-address}
 
@@ -37,23 +37,23 @@ Bestimmte Internet-Anbieter überprüfen die Gültigkeit der Absenderadresse (**
 
 Sie müssen sicherstellen, dass auf Instanzebene (Menü **[!UICONTROL Tools > Erweitert > Softwareverteilungs-Assistent...]**) oder in den am häufigsten verwendeten Szenarien eine richtige Adresse angegeben wird.
 
-Weiterführende Informationen dazu finden Sie unter [Sender definieren](../../delivery/using/defining-the-email-content.md).
+Weiterführende Informationen dazu finden Sie unter [Sender definieren](defining-the-email-content.md).
 
 ## Personalisierung             {#personalization}
 
 Um das Nutzererlebnis zu verbessern und Empfänger dazu zu bewegen, Ihre E-Mail zu öffnen, ermöglicht Adobe Campaign Ihnen, Ihre Nachrichten zu personalisieren.
 
-Weitere Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in [diesem Abschnitt](../../delivery/using/personalization-fields.md).
+Weitere Informationen zur Verwendung von Personalisierungsfeldern in Adobe Campaign finden Sie in [diesem Abschnitt](personalization-fields.md).
 
-Einige Tipps zur Optimierung der Personalisierung beim Erstellen Ihres Inhalts finden Sie in [diesem Abschnitt](../../delivery/using/design-and-personalize.md#optimize-personalization).
+Einige Tipps zur Optimierung der Personalisierung beim Erstellen Ihres Inhalts finden Sie in [diesem Abschnitt](design-and-personalize.md#optimize-personalization).
 
 ## Ausschluss-Link und -Formular {#opt-out}
 
-Bei der Analyse einer Nachricht wird standardmäßig von einer [Typologieregel](../../delivery/using/steps-validating-the-delivery.md#validation-process-with-typologies) überprüft, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt. Sie können diese Regel ändern, sodass anstatt eines einfachen Warnhinweises ein Fehler angezeigt wird und ein Versand ohne diesen Link nicht möglich ist.
+Bei der Analyse einer Nachricht wird standardmäßig von einer [Typologieregel](steps-validating-the-delivery.md#validation-process-with-typologies) überprüft, ob ein Ausschluss-Link vorhanden ist. Ist dies nicht der Fall, wird ein Warnhinweis erstellt. Sie können diese Regel ändern, sodass anstatt eines einfachen Warnhinweises ein Fehler angezeigt wird und ein Versand ohne diesen Link nicht möglich ist.
 
 Prüfen Sie vor jedem Versand, ob der Ausschluss-Link ordnungsgemäß funktioniert. Achten Sie beispielsweise beim Testversand darauf, dass der Link gültig ist, das Formular online ist und dass sich durch seine Validierung der Wert des Feldes **[!UICONTROL Diese Person nicht mehr kontaktieren]** auf **[!UICONTROL Ja]** ändert. Führen Sie diese Prüfung regelmäßig durch, da bei der manuellen Eingabe des Links oder der Änderung des Formulars Fehler auftreten können.
 
-[In diesem Abschnitt](../../delivery/using/personalization-blocks.md#personalization-blocks-example) erfahren Sie, wie man einen Ausschluss-Link einfügt.
+[In diesem Abschnitt](personalization-blocks.md#personalization-blocks-example) erfahren Sie, wie man einen Ausschluss-Link einfügt.
 
 Wenn ein Abmeldeproblem erkannt wird, nachdem der Versand bereits begonnen hat, können Sie diejenigen, die auf den Ausschluss-Link klicken, manuell abmelden (z. B. über die gebündelte Aktualisierung), selbst wenn sie ihre Auswahl nicht bestätigen konnten.
 
@@ -67,7 +67,7 @@ Bevor Sie Ihre Nachricht senden, können Sie testen, wie responsiv Ihre Nachrich
 
 Zu diesem Zweck unterstützt Adobe Campaign das Rendering und stellt dessen Ergebnisse in einem entsprechenden Bericht zur Verfügung. Dadurch können Sie sich ansehen, wie Nachrichten je nach verwendetem Empfangsmedium beim Empfänger dargestellt werden.
 
-Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](inbox-rendering.md).
 
 ## SpamAssassin {#spamassassin}
 
@@ -75,4 +75,4 @@ Adobe Campaign bietet die Möglichkeit der Nutzung von SpamAssassin, einem Filte
 
 Auf diese Weise kann vor dem Versandstart im Tab **[!UICONTROL Vorschau]** das Spam-Risiko abgeschätzt werden. Ein Hinweis zeigt die erfolgreiche Durchführung der Anti-Spam-Prüfung an.
 
-Weitere Informationen finden Sie in diesem [Abschnitt](../../delivery/using/spamassassin.md).
+Weitere Informationen finden Sie in diesem [Abschnitt](spamassassin.md).
