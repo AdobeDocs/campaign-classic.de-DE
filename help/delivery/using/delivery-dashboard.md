@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 100%
@@ -32,10 +32,10 @@ Die folgenden Informationen können Sie mit den verschiedenen Tabs im Dashboard 
 
 **Verwandte Themen:**
 
-* [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md)
-* [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md)
-* [Verwalten der Zustellbarkeit](../../delivery/using/about-deliverability.md)
+* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
+* [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md)
+* [Best Practices beim Versand](delivery-best-practices.md)
+* [Verwalten der Zustellbarkeit](about-deliverability.md)
 
 ## Versandzusammenfassung {#delivery-summary}
 
@@ -53,7 +53,7 @@ Der Inhalt dieses Tabs kann entsprechend Ihren Anforderungen konfiguriert werden
 
 Der **[!UICONTROL Versand]**-Tab zeigt die Versandlogs, d. h. die Liste der Zustellversuche, und zeigt für jeden Empfänger den Status des Versands sowie die entsprechenden Nachrichten an.
 
-Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Auf [dieser Seite](../../delivery/using/delivery-statuses.md) werden die unterschiedlichen Status beschrieben.
+Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche anzuzeigen oder die Empfänger, die in Quarantäne gekommen sind. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Filter]** und wählen Sie **[!UICONTROL Nach Status]**. Wählen Sie nun den gewünschten Status aus der Dropdown-Liste aus. Auf [dieser Seite](delivery-statuses.md) werden die unterschiedlichen Status beschrieben.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Sie haben die Möglichkeit, beispielsweise nur fehlgeschlagene Zustellversuche a
 
 Mit dem Link **[!UICONTROL Mirrorseite für diese Nachricht anzeigen...]** können Sie die Mirrorseite für den Inhalt des aus der Liste ausgewählten Versands in einem neuen Fenster anzeigen.
 
-Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen finden Sie unter [Mirrorseite erstellen](../../delivery/using/sending-messages.md#generating-the-mirror-page).
+Die Mirrorseite steht nur für Sendungen zur Verfügung, für die HTML-Inhalte definiert wurden. Weitere Informationen finden Sie unter [Mirrorseite erstellen](sending-messages.md#generating-the-mirror-page).
 
 ![](assets/s_ncs_user_wizard_miror_page_link.png)
 
@@ -75,7 +75,7 @@ Im **[!UICONTROL Tracking]**-Tab wird der Tracking-Verlauf des Versands angezeig
 >
 >Sollte das Tracking für einen Versand nicht aktiviert worden sein, wird dieser Tab nicht angezeigt.
 
-Die Tracking-Konfiguration erfolgt im Versand-Assistenten. Siehe [Getrackte Links konfigurieren](../../delivery/using/how-to-configure-tracked-links.md).
+Die Tracking-Konfiguration erfolgt im Versand-Assistenten. Siehe [Getrackte Links konfigurieren](how-to-configure-tracked-links.md).
 
 Interpretationen der **[!UICONTROL Trackingdaten]** finden Sie in den Versandberichten. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../reporting/using/delivery-reports.md).
 
@@ -87,7 +87,7 @@ Der Tab **[!UICONTROL Inbox Rendering]** ermöglicht es Ihnen, eine Vorschau der
 
 So können Sie sicherstellen, dass Ihre Nachricht den Empfängern in unterschiedlichen Webclients, Webmails und Geräten optimal dargestellt wird.
 
-Weitere Informationen zum Inbox Rendering finden Sie auf [dieser Seite](../../delivery/using/inbox-rendering.md).
+Weitere Informationen zum Inbox Rendering finden Sie auf [dieser Seite](inbox-rendering.md).
 
 ![](assets/s_tn_inbox_rendering_tokens.png)
 
@@ -97,7 +97,7 @@ Der Tab **[!UICONTROL Audit]** enthält das Versandlog und alle Meldungen zu den
 
 Mit der Schaltfläche **[!UICONTROL Aktualisieren]** können Sie die Daten aktualisieren. Verwenden Sie die Schaltfläche **[!UICONTROL Filter]**, um einen Filter für die Daten zu definieren.
 
-Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Siehe [Versand analysieren](../../delivery/using/steps-validating-the-delivery.md#analyzing-the-delivery).
+Eventuelle Fehler oder Warnmeldungen werden durch spezifische Symbole hervorgehoben. Siehe [Versand analysieren](steps-validating-the-delivery.md#analyzing-the-delivery).
 
 Ein Untertab listet die durchgeführten **[!UICONTROL Testsendungen]** auf.
 
