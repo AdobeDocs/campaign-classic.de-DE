@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%
@@ -17,10 +17,10 @@ ht-degree: 100%
 
 Die mit Adobe Campaign versendeten Nachrichten können in verschiedener Hinsicht personalisiert werden. Sowohl Inhalt als auch Rendering der Mitteilungen können dem Empfängerprofil entsprechend angepasst werden. Bei E-Mail-Sendungen haben Sie die Möglichkeit, Personalisierungselemente und -bedingungen direkt in JavaScript über den **[!UICONTROL Quelle]**-Tab der Nachricht zu definieren. Im Allgemeinen ermöglicht es Ihnen Adobe Campaign:
 
-* Das Nachrichtenformat personalisieren. Siehe [Nachrichteninhalt](../../delivery/using/defining-the-email-content.md#message-content).
-* Dynamische Personalisierungsfelder einfügen. Siehe [Personalisierungsfelder](../../delivery/using/personalization-fields.md).
-* Vordefinierte Personalisierungsbausteine einfügen. Siehe [Gestaltungsbausteine](../../delivery/using/personalization-blocks.md).
-* Bedingte Inhalte erstellen. Siehe Abschnitt [Bedingter Inhalt](../../delivery/using/conditional-content.md).
+* Das Nachrichtenformat personalisieren. Siehe [Nachrichteninhalt](defining-the-email-content.md#message-content).
+* Dynamische Personalisierungsfelder einfügen. Siehe [Personalisierungsfelder](personalization-fields.md).
+* Vordefinierte Personalisierungsbausteine einfügen. Siehe [Gestaltungsbausteine](personalization-blocks.md).
+* Bedingte Inhalte erstellen. Siehe Abschnitt [Bedingter Inhalt](conditional-content.md).
 
 >[!CAUTION]
 >
