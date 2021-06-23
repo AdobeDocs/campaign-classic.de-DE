@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 6fc2ab09-8ea7-4865-88ad-bd45eee68958
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Verwenden Sie Adobe Campaign, um personalisierte SMS-Nachrichten zu senden.
 Achten Sie vor dem Versand von SMS-Nachrichten auf Folgendes:
 
 * Stellen Sie sicher, dass die Empfängerprofile mindestens ein Mobiltelefon enthalten.
-* Erfahren Sie mehr über [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md) mit Adobe Campaign.
+* Erfahren Sie mehr über [Best Practices beim Versand](delivery-best-practices.md) mit Adobe Campaign.
 
 Die wichtigsten Schritte zum Senden einer SMS sind:
 
@@ -34,10 +34,10 @@ Die wichtigsten Schritte zum Senden einer SMS sind:
 
 Darüber hinaus müssen Sie mit dem SMS-Protokoll und den Einstellungen vertraut sein. Lesen Sie sich die Einrichtung einer Verbindung zwischen Adobe Campaign und einem SMPP-Provider in [diesem Dokument](sms-protocol.md) durch.
 
-Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](../../delivery/using/steps-about-delivery-creation-steps.md).
+Allgemeine Informationen zum Erstellen eines Versands finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
 
 >[!NOTE]
 >
 >Die Option **Mobile App Channel (NMAC)** ermöglicht darüber hinaus den Empfang von Benachrichtigungen auf mobilen Terminals.
 > 
->Weiterführende Informationen finden Sie im Abschnitt [Erste Schritte mit dem Mobile-App-Kanal](../../delivery/using/about-mobile-app-channel.md).
+>Weiterführende Informationen finden Sie im Abschnitt [Erste Schritte mit dem Mobile-App-Kanal](about-mobile-app-channel.md).
