@@ -6,14 +6,14 @@ audience: delivery
 content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
 
 ---
 
-# Was ist Zustellbarkeit?{#about-deliverability}
+# Was ist Zustellbarkeit{#about-deliverability}
 
 Die Zustellbarkeit misst, wie viele Ihrer Nachrichten erfolgreich den Posteingang Ihrer Empfänger erreichen und nicht als unzustellbar zurückgesendet bzw. als Spam gekennzeichnet werden. [Hier erfahren Sie, warum Zustellbarkeit wichtig ist](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/deliverability-strategy-and-definition.html?lang=de#why-deliverability-matters).
 
@@ -40,11 +40,11 @@ Die Zustellrate ist der Anteil der Nachrichten, die die Postfächer der Empfäng
 Bei Adobe Campaign hängt die Zustellrate von zahlreichen Faktoren ab, insbesondere von:
 
 * Korrekte Konfiguration der Instanzen: Wenden Sie sich zwecks Hilfe an Ihren Adobe-Support-Mitarbeiter.
-* Legitime Netzwerkkonfiguration: siehe [diesen Abschnitt](../../delivery/using/optimize-delivery.md#network-config) und [Einrichtung von Domains und Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy?lang=de).
+* Legitime Netzwerkkonfiguration: siehe [diesen Abschnitt](optimize-delivery.md#network-config) und [Einrichtung von Domains und Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html#domain-setup-and-strategy?lang=de).
 * Reputation Ihrer IP-Adresse: siehe [IP-Strategie](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#ip-strategy).
-* Qualität der Zieladressen: siehe [Quarantäne-Management](../../delivery/using/optimize-delivery.md#quarantine-management).
+* Qualität der Zieladressen: siehe [Quarantäne-Management](optimize-delivery.md#quarantine-management).
 * Ein niedriger Anteil von [Beschwerden](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/complaints.html?lang=de) und [Hardbounces](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/metrics-for-deliverability/bounces.html?lang=de#hard-bounces).
-* Inhalt Ihrer Nachricht: Siehe [Kontrollieren von E-Mail-Inhalten](../../delivery/using/control-message-content.md).
+* Inhalt Ihrer Nachricht: Siehe [Kontrollieren von E-Mail-Inhalten](control-message-content.md).
 * Nachrichtenauthentifizierung (SPF, DKIM, DMARC): siehe [diesen Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/transition-process/infrastructure.html?lang=de#authentication).
 * Reputation des Absenders: Informationen darüber, wie die wichtigsten Internet-Anbieter die Reputation eines Absenders bewerten, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/internet-service-provider-specifics/overview.html?lang=de).
 
@@ -57,12 +57,12 @@ Adobe Campaign bietet verschiedene Tools zur Verfolgung und Verbesserung der Zus
 
 Befolgen Sie beim Konfigurieren, Entwerfen und Testen Ihrer Nachricht die in den folgenden Abschnitten aufgeführten Best Practices. Die Nutzung aller von Adobe Campaign bereitgestellten Funktionen hilft Ihnen, die Zustellbarkeit zu verbessern.
 
-* [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md)
-* [Kontrollieren von E-Mail-Inhalten](../../delivery/using/control-message-content.md)
-* [Inbox Rendering](../../delivery/using/inbox-rendering.md)
-* [Durchführen eines Testversands](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof)
+* [Best Practices beim Versand](delivery-best-practices.md)
+* [Kontrollieren von E-Mail-Inhalten](control-message-content.md)
+* [Inbox Rendering](inbox-rendering.md)
+* [Durchführen eines Testversands](steps-validating-the-delivery.md#sending-a-proof)
 
-### Einverständnis durch doppelten Opt-in überprüfen{#double-opt-in}
+### Einverständnis durch doppelten Opt-in überprüfen {#double-opt-in}
 
 Um das Senden von Nachrichten an ungültige Adressen zu vermeiden, unsachgemäße Kommunikation zu minimieren und die Reputation des Absenders zu verbessern, empfiehlt Adobe die Implementierung eines Mechanismus zum doppelten Opt-in. Mit dieser Methode können Sie sicherstellen, dass sich Ihre Empfänger absichtlich angemeldet haben.
 
@@ -80,9 +80,9 @@ Teilweise werden E-Mails von Providern automatisch als Spam eingestuft, wenn die
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Ursachen von fehlgeschlagenen Sendungen](../../delivery/using/understanding-delivery-failures.md)
-* [Funktionsweise der Quarantäneverwaltung](../../delivery/using/understanding-quarantine-management.md)
-* [Quarantäne vs. Blockierungsliste](../../delivery/using/understanding-quarantine-management.md#quarantine-vs-denylist)
+* [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
+* [Funktionsweise der Quarantäneverwaltung](understanding-quarantine-management.md)
+* [Quarantäne vs. Blockierungsliste](understanding-quarantine-management.md#quarantine-vs-denylist)
 
 ### Verwenden von Tools zum Monitoring und Reporting
 
@@ -92,8 +92,8 @@ Mit Adobe Campaign können Sie die Leistung Ihrer Sendungen anhand einer Reihe i
 
 Weiterführende Informationen hierzu finden Sie in den folgenden Abschnitten:
 
-* [Überwachen der Zustellbarkeit](../../delivery/using/monitoring-deliverability.md)
-* [Über die Versandverfolgung](../../delivery/using/about-delivery-monitoring.md)
+* [Überwachen der Zustellbarkeit](monitoring-deliverability.md)
+* [Über die Versandverfolgung](about-delivery-monitoring.md)
 * [Über native Berichte in Campaign](../../reporting/using/about-campaign-built-in-reports.md)
 
 <!--TO REMOVE
