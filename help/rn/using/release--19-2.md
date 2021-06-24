@@ -6,9 +6,9 @@ feature: null
 role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1542'
+source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+workflow-type: tm+mt
+source-wordcount: '1544'
 ht-degree: 100%
 
 ---
@@ -35,15 +35,16 @@ _22. März 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
 _23. Dezember 2020_
 
 >[!CAUTION]
 >
-> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.
->
-> * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
+> * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können. [Weitere Informationen](../../technotes/ims-updates.md)
+   >
+   > 
+* Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
 
 
 
@@ -59,7 +60,7 @@ _7. Februar 2020_
 * Korrektur eines Regressionsfehlers aufgrund der Implementierung der SSL-Zertifizierung, der dazu führte, dass die Benutzerverbindung auf einem Windows-Server fehlschlug. (NEO-20629)
 * Es wurde ein Problem behoben, bei dem im Menü **Versionsinformationen** eine falsche Versions-Tag-Nummer angezeigt wurde.
 
-## ![](assets/do-not-localize/red_2.png) Version 19.2 – Build 9080 {#release-19-2-build-9080}
+## ![](assets/do-not-localize/red_2.png) Version 19.2 – Build 9080 {#release-19-2-build-9080}
 
 _2. Dezember 2019_
 
