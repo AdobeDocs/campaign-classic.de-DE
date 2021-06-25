@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '203'
 ht-degree: 100%
 
 ---
@@ -32,4 +32,4 @@ Verschiedene Datentypen können in Verbindung mit Adobe Target zum Einsatz komme
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie auf den [Adobe-Target-Hilfeseiten](https://docs.adobe.com/content/help/de-DE/target/using/integrate/campaign-and-target.html).
+>Weiterführende Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie auf den [Adobe-Target-Hilfeseiten](https://experienceleague.adobe.com/docs/target/using/integrate/campaign-and-target.html?lang=de).
