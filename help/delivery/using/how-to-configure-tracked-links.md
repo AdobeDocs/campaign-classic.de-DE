@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
-source-git-commit: 0e0912c68d132919eeac9b91b93960e70011153e
+source-git-commit: 98bbbb36c9f8156cc34e826a024ff6e6e3f3fee3
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 83%
@@ -28,7 +28,7 @@ Es wird dringend empfohlen, URLs in Trennzeichen auf der Registerkarte **[!UICON
 * Brackets [ ]
 * Braces { }
 
-In diesem Beispiel wird der URL https://www.adobe.com ein Semikolon (;) gefolgt. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
+In diesem Beispiel wird der URL https://www.adobe.com ein Semikolon gefolgt. Das Semikolon kann von E-Mail-Clients der Empfänger als Teil der URL interpretiert werden. Daher kann der Link beschädigt sein. Um dieses Problem zu vermeiden, können Sie die URL auf eine der folgenden Arten in Trennzeichen einschließen:
 * (https://www.adobe.com);
 * [https://www.adobe.com];
 * {https://www.adobe.com};
