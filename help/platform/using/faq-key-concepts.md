@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: 615b56c5f4362b0f47ec5700be7d170c0e108f4c
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 100%
+source-wordcount: '881'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ In [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-ove
 
 Erfahren Sie in [diesen Abschnitt](../../platform/using/adobe-campaign-workspace.md) mehr über die Grundlagen des Arbeitsbereichs von Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://docs.adobe.com/content/help/de-DE/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
 
 ## Wie kann ich die Audience für meine Nachrichten auswählen? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -82,7 +82,7 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 [Hier erfahren Sie mehr darüber](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Video zum Thema](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=de)
+![](assets/do-not-localize/how-to-video.png) [Video zum Thema](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
 
 ## Wie kann ich SMS-Nachrichten senden? {#how-to-send-sms-messages-}
 
@@ -128,6 +128,6 @@ Adobe beurteilt laufend die Funktionen des Produkts. Manche Funktionen werden du
 
 ## Gibt es neue Dokumentationsaktualisierungen und Hilfematerialien? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-Die letzten Aktualisierungen der Campaign Classic-Dokumentation finden Sie [auf dieser Seite](https://docs.adobe.com/content/help/de-DE/campaign-classic/using/documentation-updates.html).
+Die letzten Aktualisierungen der Campaign Classic-Dokumentation finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
 
 Die aktuellen Technotes finden Sie [auf dieser Seite](https://helpx.adobe.com/de/campaign/kb/article-list.html).
