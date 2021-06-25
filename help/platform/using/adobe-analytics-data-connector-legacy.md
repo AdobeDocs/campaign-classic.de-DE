@@ -8,9 +8,9 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 6059693522850c13569b2c8f33137531276a3bd0
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1834'
 ht-degree: 99%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->Adobe Analytics Data Connector wird jetzt nicht mehr unterstützt. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
+>Der Data Connector von Adobe Analytics ist jetzt veraltet. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
 
 ## Über die Integration des Data Connectors {#about-data-connector-integration}
 
@@ -68,7 +68,7 @@ Im Folgenden wird die Konfiguration des Data Connectors mithilfe eines Assistent
 
 1. Wählen Sie im Tab **[!UICONTROL Admin]** die Option **[!UICONTROL Data Connectors]**.
 
-   Sie benötigen die folgenden Berechtigungen für Analytics-Tools, um auf das Menü **[!UICONTROL Connectoren]** zugreifen zu können. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://docs.adobe.com/content/help/de-DE/analytics/admin/admin-console/permissions/analytics-tools.html).
+   Sie benötigen die folgenden Berechtigungen für Analytics-Tools, um auf das Menü **[!UICONTROL Connectoren]** zugreifen zu können. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
    * Integrationen (Erstellen)
    * Integrationen (Aktualisieren)
    * Integrationen (Löschen)
@@ -153,7 +153,7 @@ Die Integration von Adobe Campaign in die Analytics-Plattformen geschieht mithil
 
 >[!NOTE]
 >
->Bei Verwendung verschiedener Performance-Messtools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
+>Bei Verwendung verschiedener Audience-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
 
 ### 3. Schritt: Adobe Campaign und Adobe Analytics synchronisieren {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
