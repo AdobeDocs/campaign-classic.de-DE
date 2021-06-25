@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 100%
@@ -57,9 +57,9 @@ Um Sie bei der Einhaltung der Datenschutzverordnungen zu unterstützen, ermögli
 
 * Das **Recht auf Vergessenwerden** (Löschanfrage), auch Datenlöschung genannt, bedeutet, dass das Datensubjekt vom Datenverantwortlichen verlangen kann, seine personenbezogenen Daten zu löschen, seine Daten nicht weiterzuverbreiten und mögliche Dritte anzuhalten, die Datenverarbeitung einzustellen.
 
-In den [Implementierungsschritten](../../platform/using/privacy-requests.md) erfahren Sie, wie Sie **Zugriffs-** und **Löschanfragen** erstellen können und diese in Adobe Campaign verarbeitet werden.
+Weitere Informationen zum Erstellen von **Zugriffs-** und **Löschanfragen** und zur Verarbeitung dieser Anfragen durch Adobe Campaign finden Sie in den [Implementierungsschritten](../../platform/using/privacy-requests.md).
 
-<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://docs.adobe.com/content/help/en/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
+<!--Tutorials on Privacy management in Campaign Standard are also available [here](https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html).
 https://experienceleague.adobe.com/docs/campaign-standard-learn/tutorials/privacy/privacy-overview.html?lang=en-->
 
 ## Einverständnis, Datenbeibehaltung und Benutzerrollen {#consent-retention-roles}
