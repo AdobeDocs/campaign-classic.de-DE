@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '171'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ Die Asset-Dienste sind:
 
 Bei der Bearbeitung eines E-Mail-Versands oder einer Landingpage in Adobe Campaign können Sie Assets von Ihren Adobe-Experience-Cloud-Bibliotheken einfügen. Abhängig von den von Ihnen verwendeten Lösungen können diese Assets in Assets Core Service oder Adobe Experience Manager Assets gespeichert werden.
 
-Die verfügbaren Bibliotheken werden in [diesem Dokument](https://docs.adobe.com/content/help/de-DE/core-services/interface/assets/experience-cloud-assets.html) erläutert.
+Die verfügbaren Bibliotheken werden in [diesem Dokument](https://experienceleague.adobe.com/docs/core-services/interface/assets/experience-cloud-assets.html?lang=de) erläutert.
 
 Weitere Informationen zu den Besonderheiten der einzelnen Bibliotheken finden Sie unter [Zugriff auf Assets konfigurieren](../../integrations/using/configuring-access-to-assets.md).
 
