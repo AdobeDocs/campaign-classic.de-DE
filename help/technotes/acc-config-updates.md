@@ -5,9 +5,9 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,6 @@ Wenn Ihre Umgebung einen älteren Build als die unten aufgeführten verwendet, s
 
 * Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
 * Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
-* Campaign-Version 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
 * Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
 * Campaign-Version 20.1.4. [Mehr dazu](../rn/using/release--20-1.md)
 * Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
@@ -60,7 +59,7 @@ Sie müssen ein Upgrade auf einen der neueren Builds durchführen, die oben aufg
 >Wenn Sie eine Aktualisierung nicht innerhalb des empfohlenen Zeitraums durchführen können, **sollten Sie sich an die Adobe-Kundenunterstützung wenden, um eine kurzfristige manuelle Sicherheitskorrektur auf Ihre Instanzen anzuwenden**.
 
 
-## Aktualisierung der Client-Konsole von Campaign Classic {#acc-cc-updates}
+## Aktualisierung der Client-Konsole von Campaign Classic   {#acc-cc-updates}
 
 Die folgenden **jetzt verfügbaren** Konsolenversionen sollten installiert werden, um eine kürzlich identifizierte Fehlfunktion zu beheben. Diese Fehlfunktion verhinderte die Verwendung einiger Komponenten der Client-Konsole, wie z. B. der Datumsauswahl und der Bildverwaltung in Sendungen. Das **Konsolen-Upgrade** ist obligatorisch.
 
@@ -81,7 +80,6 @@ Wenn Sie [per Adobe ID](../integrations/using/about-adobe-id.md) über Adobe Ide
 
 * Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
 * Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
-* Campaign-Version 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
 * Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
 * Campaign-Version 20.1.4. [Mehr dazu](../rn/using/release--20-1.md)
 * Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
@@ -103,7 +101,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 * [Erfahren Sie, wie Sie die Campaign-Client-Konsole installieren](../installation/using/installing-the-client-console.md).
 
-## Integration mit Experience Cloud-Triggern   {#acc-triggers-updates}
+## Integration mit Experience Cloud-Triggern {#acc-triggers-updates}
 
 Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung einer OAuth-Authentifizierung für den Pipeline-Zugriff basierte, wurde in Adobe I/O verschoben. Sie wird am **30. November 2021** eingestellt. [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
@@ -128,7 +126,7 @@ Kunden mit Hybrid-Umgebungen müssen darüber hinaus sicherstellen, dass Pipelin
 
 [Erfahren Sie, wie Sie zu Adobe I/O migrieren](../integrations/using/configuring-adobe-io.md).
 
-## APNs-Aktualisierungen    {#acc-apns-updates}
+## APNs-Aktualisierungen {#acc-apns-updates}
 
 ### HTTP/2-basierte APNs-Provider-API
 
