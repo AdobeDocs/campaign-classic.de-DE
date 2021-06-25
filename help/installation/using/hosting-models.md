@@ -6,7 +6,7 @@ feature: Übersicht
 role: Architect
 level: Beginner
 exl-id: a06b1365-d487-4df1-8f4a-7268b871a427
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
 source-wordcount: '624'
 ht-degree: 2%
@@ -41,7 +41,7 @@ Adobe Campaign kann lokal bereitgestellt werden: Alle Komponenten von Adobe Camp
 
 ![](assets/deployment_onpremise.png)
 
-Als On-Premise-Kunde müssen Sie vor der Bereitstellung von Campaign Classic folgende Voraussetzungen und Empfehlungen beachten:
+Als On-Premise-Kunde müssen Sie vor der Bereitstellung von Campaign Classic folgende Voraussetzungen und Empfehlungen erfüllen:
 
 * Lesen Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md) , in der alle Versionen der für Adobe Campaign unterstützten Systeme und Komponenten aufgelistet sind.
 * Lesen Sie je nach Umgebung die [Voraussetzungen für Windows](../../installation/using/prerequisites-of-campaign-installation-in-windows.md) und [Voraussetzungen für Linux](../../installation/using/prerequisites-of-campaign-installation-in-linux.md).
