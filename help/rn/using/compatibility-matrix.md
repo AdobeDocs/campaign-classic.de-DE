@@ -6,10 +6,10 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 1d25bdaf0d118ec5788d467c48c3c40c5891e46d
-workflow-type: ht
-source-wordcount: '559'
-ht-degree: 100%
+source-git-commit: 1caacff8b10c8593945b872d045fdaab3f26190c
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den
 
 Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, sehen Sie in der [[!DNL Gold Standard] -Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) nach.
 
-## Wichtige Hinweise{#important-notes}
+## Wichtige Hinweise       {#important-notes}
 
 Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
@@ -155,7 +155,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. <a href="https://docs.adobe.com/content/help/de-DE/campaign-classic/using/installing-campaign-classic/prerequisites-and-recommendations-/database.html#Microsoft_SQL_Server">Weitere Infos</a>.</p>
+<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. [Weitere Informationen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -284,7 +284,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 
-:Warnung: Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
+:warning: Für die Verwendung der Campaign Client Console sind die folgenden Betriebssysteme und Browser erforderlich.
 
 ### Betriebssysteme
 
