@@ -6,9 +6,9 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
-source-git-commit: c0a3d9217696f5f5622a6af8f64c62b1a9fbce20
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '2973'
 ht-degree: 100%
 
 ---
@@ -81,7 +81,7 @@ _22. Dezember 2020_
 * Fehlerkorrektur – Es wurden Probleme behoben, die bei der Sendungsvorbereitung oder der Vorschau eines wiederkehrenden Versands zum Absturz des Web-Prozesses führten. (NEO-27790, NEO-27517)
 * Fehlerkorrektur – Es wurde ein Fehler behoben, der zum Fehlschlagen von Sendungen oder Testsendungen führte, wenn diese von einem Benutzer ohne Administratorrechte ausgelöst wurden. (NEO-28597)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Weitere Infos](https://docs.adobe.com/content/help/de-DE/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Weitere Infos](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
 
@@ -123,7 +123,7 @@ _22. Juli 2020_
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://docs.adobe.com/content/help/en/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
