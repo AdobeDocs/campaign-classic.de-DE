@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Synchronisieren von Audiences
-description: Synchronisieren von Audiences
+description: Zielgruppen synchronisieren
 audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 100%
+source-wordcount: '1204'
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ Durch die Erstellung eines Versand-Workflows in Campaign Standard können Sie da
 
    Mit dieser Aktivität können Daten aus der ausgewählten Audience abgerufen werden. Sie können bei Bedarf auch eine zusätzliche **[!UICONTROL Filterung der Quelle]** anwenden, indem Sie den entsprechenden Tab dieser Aktivität auswählen.
 
-1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und konfigurieren Sie sie wie eine übliche [E-Mail-Versand-Aktivität](https://docs.adobe.com/content/help/de-DE/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
+1. Fügen Sie die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und konfigurieren Sie sie wie eine übliche [E-Mail-Versand-Aktivität](https://experienceleague.adobe.com/docs/campaign-standard/using/managing-processes-and-data/channel-activities/email-delivery.html).
 1. Öffnen Sie den Versandinhalt.
 1. Fügen Sie ein Personalisierungsfeld hinzu. Suchen Sie im Popup den Knoten **[!UICONTROL Zusätzliche Daten (targetData)]**. Dieser Knoten enthält die zusätzlichen Audience-Daten, die im anfänglichen Zielgruppen-Workflow erstellt wurden. Sie können sie wie jedes andere Personalisierungsfeld verwenden.
 
