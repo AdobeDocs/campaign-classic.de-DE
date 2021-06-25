@@ -4,7 +4,7 @@ title: Aktualisieren Ihrer Umgebung zur Verbindung mit Adobe Campaign mit IMS
 description: Campaign - IMS-Aktualisierungen
 hide: true
 hidefromtoc: true
-source-git-commit: b8f3ba60e34f6c5429c63ed934083ebae180cf43
+source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 21%
@@ -38,13 +38,13 @@ Wenn Sie bereits ein Upgrade durchgeführt haben, aber eine alte Version von Mic
    Das Upgrade auf eine der folgenden neuen Versionen ist obligatorisch:
 
    * Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
-   * Campaign-Version 20.3.3. [Mehr dazu](../rn/using/release--20-3.md)
+   * Campaign-Version 21.1.3. [Mehr dazu](../rn/using/latest-release.md)
    * Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
    * Campaign-Version 20.1.4. [Mehr dazu](../rn/using/release--20-1.md)
    * Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
    * Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
 
-Diese Versionen enthalten ein neues Verbindungsprotokoll. Aktualisierung ist sowohl für den Campaign-Server als auch für die Client Console erforderlich: Nachdem alle Instanzen aktualisiert wurden, muss die Client Console auf diese Version aktualisiert werden, damit nach dem 30. Juni 2021 **eine Verbindung zu Campaign hergestellt werden kann.**
+   Diese Versionen enthalten ein neues Verbindungsprotokoll. Aktualisierung ist sowohl für den Campaign-Server als auch für die Client Console erforderlich: Nachdem alle Instanzen aktualisiert wurden, muss die Client Console auf diese Version aktualisiert werden, damit nach dem 30. Juni 2021 **eine Verbindung zu Campaign hergestellt werden kann.**
 
 Stellen Sie außerdem sicher, dass die neueste Aktualisierung Ihrer [Windows-Version](../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) mit **Internet Explorer 11** auf dem Computer jedes Benutzers installiert ist.
 
