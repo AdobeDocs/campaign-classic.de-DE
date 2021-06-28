@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: f5d65e89-6b18-482b-97d8-11ab94f6775e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: cbfaf6a2c187ad62f7b6c9042b69f5e522fcfd02
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 100%
@@ -37,22 +37,22 @@ Allgemein gilt:
 
 Um eine einfache **Web-Anwendung** zu erstellen, müssen Sie folgende Schritte ausführen:
 
-1. Web-Anwendung erstellen – [Weitere Informationen](../../web/using/creating-a-landing-page.md)
-1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer Standardvorlage – [Weitere Informationen](../../web/using/template-management.md).
-1. Inhalt bearbeiten und konfigurieren – [Weitere Informationen](../../web/using/editing-content.md)
-1. Web-Anwendung veröffentlichen – [Weitere Informationen](../../web/using/creating-a-landing-page.md#step-3---publishing-content)
+1. Web-Anwendung erstellen – [Weitere Informationen](creating-a-landing-page.md)
+1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer Standardvorlage – [Weitere Informationen](template-management.md).
+1. Inhalt bearbeiten und konfigurieren – [Weitere Informationen](editing-content.md)
+1. Web-Anwendung veröffentlichen – [Weitere Informationen](creating-a-landing-page.md#step-3---publishing-content)
 
 >[!NOTE]
 >
->Ein vollständiges Implementierungsbeispiel im Kontext einer Web-Anwendung finden Sie in [diesem Abschnitt](../../web/using/creating-a-landing-page.md).
+>Ein vollständiges Implementierungsbeispiel im Kontext einer Web-Anwendung finden Sie in [diesem Abschnitt](creating-a-landing-page.md).
 
 Um einen **E-Mail-Versand** zu erstellen, müssen Sie folgende Schritte ausführen:
 
-1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](../../web/using/use-case--creating-an-email-delivery.md)
-1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer [Standardvorlage](../../web/using/template-management.md).
+1. Versand aus einer DCE-Vorlage erstellen – [Weitere Informationen](use-case--creating-an-email-delivery.md)
+1. Wählen Sie vorhandenen Inhalt aus oder erstellen Sie Inhalt aus einer [Standardvorlage](template-management.md).
 1. Bearbeiten und konfigurieren Sie den Online-Inhalt.
 1. Versand senden – [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md)
 
 >[!NOTE]
 >
->Ein vollständiges Implementierungsbeispiel im Kontext eines E-Mail-Versands finden Sie in [diesem Anwendungsfall](../../web/using/use-case--creating-an-email-delivery.md).
+>Ein vollständiges Implementierungsbeispiel im Kontext eines E-Mail-Versands finden Sie in [diesem Anwendungsfall](use-case--creating-an-email-delivery.md).
