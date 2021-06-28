@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 100%
@@ -169,7 +169,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 
    ![](assets/s_ncs_configuration_webapp_container.png)
 
-   Weiterführende Informationen zum Layout von Elementen erfahren Sie in [diesem Abschnitt](../../web/using/about-web-forms.md).
+   Weiterführende Informationen zum Layout von Elementen erfahren Sie in [diesem Abschnitt](about-web-forms.md).
 
 1. Wenden Sie **dottedFilter** an.
 
