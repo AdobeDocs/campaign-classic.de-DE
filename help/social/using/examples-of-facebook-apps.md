@@ -6,10 +6,10 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '2125'
-ht-degree: 100%
+source-wordcount: '2382'
+ht-degree: 94%
 
 ---
 
@@ -88,7 +88,7 @@ Gehen Sie wie folgt vor, um die Anwendung zu erstellen:
 
 ![](assets/social_webapp_042.png)
 
-## Wie lassen sich Einstellungen an eine Facebook-Anwendung weiterleiten? {#how-to-forward-settings-to-a-facebook-application-}
+## Weiterleiten von Einstellungen an eine Facebook-Anwendung? {#how-to-forward-settings-to-a-facebook-application-}
 
 >[!IMPORTANT]
 >
@@ -120,7 +120,7 @@ Für dieses Anwendungsbeispiel haben wir eine Webanwendung erstellt, die folgend
 
 ![](assets/social_webapp_018.png)
 
-## Wie lassen sich Fan-Daten erfassen? {#how-to-acquire-fan-data-}
+## Erfassen von Fan-Daten? {#how-to-acquire-fan-data-}
 
 >[!IMPORTANT]
 >
@@ -169,7 +169,7 @@ Um den mit Facebook verknüpften Anzeigefehler zu umgehen, müssen Sie auch **[!
 
 ![](assets/social_webapp_028.png)
 
-### Aktivität „Zugriffskontrolle“ {#access-control-activity}
+### Aktivität „Zugriffskontrolle“  {#access-control-activity}
 
 Mit der Aktivität **[!UICONTROL Zugriffskontrolle]** können Sie die Seite mit Anfragen für Facebook-Genehmigungen anzeigen, wenn der Benutzer am Wettbewerb teilnimmt. Wenn der Benutzer zustimmt, seine Informationen zu teilen, werden diese beim Vorausfüllen wiederhergestellt. Weitere Informationen hierzu finden Sie unter [Aktivität „Vorausfüllen“](#pre-loading-activity).
 
@@ -177,7 +177,7 @@ Wenn Sie zuvor beim Erstellen der Webanwendung das externe Konto angegeben haben
 
 ![](assets/social_webapp_024.png)
 
-### Aktivität „Vorausfüllen“ {#pre-loading-activity}
+### Aktivität „Vorausfüllen“  {#pre-loading-activity}
 
 Wählen Sie die Datenquelle aus, die zum Vorausfüllen verwendet werden soll:
 
@@ -224,7 +224,7 @@ Bevor Sie auf **[!UICONTROL OK]** klicken, aktivieren Sie die Option **[!UICONTR
 >
 >Wenn Sie beide Arten des Vorausfüllens (über Adobe Campaign und Facebook) verwenden möchten, fügen Sie nacheinander zwei Kästchen zum Vorausfüllen hinzu.
 
-### Aktivität „Speichern“ {#save-activity}
+### Aktivität „Speichern“  {#save-activity}
 
 Mit der Aktivität **[!UICONTROL Speichern]** können Sie die in den vorherigen Etappen erfassten Informationen in der Besuchertabelle speichern.
 
@@ -249,7 +249,7 @@ Wenn das Profil nicht in der Datenbank vorhanden ist und die E-Mail-Adresse des 
 
 1. Sie können einen Suchordner für die Abstimmung und einen Erstellungsordner für neue Profile auswählen. Wenn die Felder leer sind, werden Profile im Standardordner des Mapping-Schemas gesucht und erstellt.
 
-### Aktivität „Ende“ {#end-activity}
+### Endaktivität {#end-activity}
 
 Um den mit Facebook verknüpften Anzeigefehler zu umgehen, müssen Sie das Kästchen **[!UICONTROL Externe URL nutzen]** markieren und die URL der Facebook-Anwendung eingeben, gefolgt vom Parameter **[!UICONTROL app_data]** und einem Wert. Dieser Wert wird in der Aktivität **[!UICONTROL Test]** verwendet, um zu ermitteln, ob der Benutzer gerade erst in den Wettbewerb eingestiegen ist, und um gegebenenfalls eine Dankesnachricht anzuzeigen. Weitere Informationen finden Sie unter [Test-Aktivität](#test-activity).
 
@@ -297,7 +297,7 @@ Der Bildschirm **[!UICONTROL Aktivitäten]** auf der Detailseite des Besuchers e
    >
    >Damit Adobe Campaign die Check-ins eines Fans erfassen kann, müssen Sie im Dienstkonfigurationsbereich auf die Schaltfläche **[!UICONTROL Anmelden]** klicken. Weitere Informationen finden Sie unter [Externe Konten konfigurieren](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
 
-## Vorausfüllen der Felder eines Formulars mithilfe von Facebook-Profildaten {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
+## Vorausfüllen eines Formulars mit Facebook-Profildaten {#how-to-pre-load-the-fields-of-a-form-using-facebook-profile-data}
 
 Mit der **[!UICONTROL Social Marketing]**-Anwendung können Sie einem Formular auch eine Schaltfläche hinzufügen, die dem Vorausfüllen von Feldern mit Facebook-Profildaten dient. Diese Option, die in allen Webanwendungsvorlagen verfügbar ist (Aktivitäten vom Typ **[!UICONTROL Seite]**), wird in [diesem Abschnitt](../../web/using/static-elements-in-a-web-form.md#inserting-html-content) ausführlich beschrieben.
 
@@ -306,3 +306,55 @@ Mit der **[!UICONTROL Social Marketing]**-Anwendung können Sie einem Formular a
 >[!NOTE]
 >
 >Bevor Sie diese Funktion verwenden, müssen Sie eine Facebook-Anwendung und ein externes **[!UICONTROL Facebook Connect]**-Konto erstellen. Weitere Informationen finden Sie unter [Externe Konten konfigurieren](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+**Füllen Sie die Formularfelder vorab mit Daten aus dem Facebook-Profil aus.**
+
+Sie erstellen ein Webformular und schließen Elemente ein, mit denen der Benutzer auf den Formularseiten nicht interagiert. Hierbei handelt es sich um statische Elemente wie Bilder, HTML-Inhalt, einen horizontalen Balken oder einen Hypertext-Link. Weitere Informationen zu statischen Elementen in einem Webformular finden Sie auf [dieser Seite](../../web/using/static-elements-in-a-web-form.md).
+
+Beim Einfügen eines statischen Elements können Sie mit der Option **[!UICONTROL Vorausfüllen mit Facebook]** eine Schaltfläche in ein Formular einfügen, um Felder mithilfe von Facebook-Profilinformationen im Voraus zu laden.
+
+![](assets/web_social_webapp_037.png)
+
+Wenn ein Benutzer die Schaltfläche **[!UICONTROL Automatisch ausfüllen]** auswählt, öffnet sich das Facebook-Fenster mit einer Anfrage zur Genehmigung.
+
+![](assets/web_social_webapp_029.png)
+
+>[!NOTE]
+>
+>Sie können die Liste der erweiterten Berechtigungen bei der Konfiguration des externen Kontos ändern. Wenn keine erweiterten Berechtigungen konfiguriert sind, leitet Facebook die grundlegenden Profilinformationen standardmäßig weiter.\
+>Die Liste der erweiterten Berechtigungen und ihre Syntax finden Sie in der Facebook-Dokumentation](https://developers.facebook.com/docs/reference/api/permissions).[
+
+Wenn der Benutzer damit einverstanden ist, seine Informationen zu teilen, werden die Felder des Formulars vorausgefüllt.
+
+![](assets/web_social_webapp_030.png)
+
+Für dieses Anwendungsbeispiel wird eine Webanwendung erstellt, die die folgenden Elemente enthält:
+
+* Eine Seite mit dem Formular
+* Die Aktivität **[!UICONTROL Speicherung]**
+* Die Aktivität **[!UICONTROL Ende]**
+
+![](assets/social_webapp_031.png)
+
+Gehen Sie wie folgt vor, um eine Schaltfläche zum Vorausfüllen hinzuzufügen:
+
+1. Erstellen Sie ein Formular.
+
+   ![](assets/social_webapp_032.png)
+
+1. Gehen Sie auf die Ebene der Formularfelder und fügen Sie einen Link hinzu.
+
+   ![](assets/social_webapp_033.png)
+
+1. Geben Sie den Titel ein und wählen Sie den Typ **[!UICONTROL Schaltfläche]** aus.
+
+   ![](assets/social_webapp_034.png)
+
+1. Gehen Sie zum Feld **[!UICONTROL Aktion]** und wählen Sie **[!UICONTROL Via Facebook vorausfüllen]** aus.
+
+   ![](assets/social_webapp_035.png)
+
+1. Gehen Sie zum Feld **[!UICONTROL Anwendung]** und wählen Sie das zuvor erstellte externe Konto vom Typ **[!UICONTROL Facebook Connect]** aus. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
+
+   ![](assets/social_webapp_036.png)
+
