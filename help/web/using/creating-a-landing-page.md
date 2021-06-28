@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 100%
@@ -47,7 +47,7 @@ Sie erhalten dann die folgende Sequenzierung:
 
 >[!NOTE]
 >
->Weiterführende Informationen zur Erstellung einer Webanwendung finden Sie in [diesem Abschnitt](../../web/using/creating-a-new-web-application.md).
+>Weiterführende Informationen zur Erstellung einer Webanwendung finden Sie in [diesem Abschnitt](creating-a-new-web-application.md).
 
 ## Schritt 1: Auswählen und Laden von Vorlagen {#step-1---selecting-and-loading-templates}
 
