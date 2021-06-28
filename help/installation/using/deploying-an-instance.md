@@ -6,9 +6,9 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 8b07447c-9a86-4b56-8d29-e0b01357a6ec
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '3203'
+source-wordcount: '3193'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 5%
 >
 >Serverseitige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
-## Bereitstellungsassistent {#deployment-wizard}
+## Implementierungsassistent {#deployment-wizard}
 
 Mit einem grafischen Assistenten, der in der Adobe Campaign-Clientkonsole verfügbar ist, können Sie die Parameter der Instanz definieren, mit der Sie eine Verbindung herstellen möchten.
 
@@ -84,7 +84,7 @@ Geben Sie die folgenden Parameter an:
 
 Zusätzlich können Sie die **Masken** angeben, die für die Absenderadresse und die Fehleradresse autorisiert sind. Bei Angabe von mehr als einer Maske sind die Masken durch Kommata zu trennen. Hierbei handelt es sich um eine optionale Konfiguration. Wenn Felder eingegeben werden, prüft Adobe Campaign zum Zeitpunkt des Versands (während der Analyse, ob die Adresse keine Variablen enthält), ob die Adressen gültig sind. Dieser Betriebsmodus stellt sicher, dass keine Adressen verwendet werden, die Probleme beim Versand von Triggern verursachen könnten. Absenderadressen sind auf dem Versandserver zu konfigurieren.
 
-### Zulässige Zeichen in Adressen {#characters-authorized-in-addresses}
+### In Adressen zugelassene Zeichen {#characters-authorized-in-addresses}
 
 <!--This window enables you to define, for all email campaigns, the delivery and address-quality management options.-->
 
@@ -109,7 +109,7 @@ Folgende Optionen stehen zur Verfügung:
 * **[!UICONTROL Empfänger ausschließen, die nicht mehr kontaktiert]**  werden möchten: Wenn diese Option aktiviert ist, werden die Empfänger der Blockierungsliste nicht kontaktiert.
 * **[!UICONTROL Dubletten]**  automatisch ignorieren: Wenn diese Option aktiviert ist, erfolgt kein Versand an doppelte Adressen.
 
-### Parameter erneut verwenden {#retry-parameters}
+### Wiederholungsparameter {#retry-parameters}
 
 Die Informationen zu Wiederherstellungen finden Sie in den Feldern **Wiederherstellungszeiträume** und **Anzahl der Wiederherstellungen** : Wenn ein Empfänger nicht erreichbar ist, z. B. wenn sein Posteingang voll ist, versucht das Programm standardmäßig 5-mal, ihn zu kontaktieren, wobei zwischen jedem Versuch (während der maximalen Versandzeit) ein einstündiger Zeitraum liegen muss. Diese Werte können Ihren Bedürfnissen entsprechend geändert werden.
 
@@ -313,7 +313,7 @@ Hier müssen Sie auch die Veröffentlichungsoptionen angeben, die mit Webformula
 
 ![](assets/s_ncs_install_deployment_wiz_15.png)
 
-### Server, die im Web verfügbar gemacht werden {#servers-exposed-on-the-web}
+### Server im Internet verfügbar gemacht {#servers-exposed-on-the-web}
 
 Auf dieser Seite können Sie die Server-URLs folgendermaßen ausfüllen:
 
@@ -345,7 +345,7 @@ Der Zugriff auf öffentliche Ressourcen erfolgt über den Knoten **Administratio
 
 ![](assets/install_pub_resources_view.png)
 
-### URL für öffentliche Ressourcen {#public-resources-url}
+### URL öffentlicher Ressourcen {#public-resources-url}
 
 Im ersten Feld können Sie den Beginn der URL angeben, die für die Ressourcen nach dem Hochladen verwendet wird. Nach dem Hochladen können die Ressourcen über diese neue URL aufgerufen werden.
 
@@ -372,7 +372,7 @@ Sie können mehrere URL-Masken angeben, indem Sie die einzelnen URLs durch ein K
 
 ### Veröffentlichungsmodi {#publication-modes}
 
-Im unteren Bereich des Assistenten können Sie die Veröffentlichungsoptionen öffentlicher Ressourcen und Bilder auswählen. Diese Optionen stehen auch für Webformulare und Umfragen zur Verfügung.
+Im unteren Bereich des Assistenten können Sie die Veröffentlichungsoptionen öffentlicher Ressourcen und Bilder auswählen.
 
 Die folgenden Veröffentlichungsmodi sind verfügbar:
 
