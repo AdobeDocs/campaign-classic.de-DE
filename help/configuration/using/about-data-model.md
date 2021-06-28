@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 655b5928-b005-442f-b026-2f1b0c1abb99
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '985'
 ht-degree: 29%
 
 ---
@@ -43,13 +43,13 @@ Versand-Logs und Trackinglogs werden nach einem bestimmten Zeitraum gelöscht, d
 
 Schließlich besteht ein Teil des Datenmodells aus technischen Daten, die für den Anwendungsprozess verwendet werden, einschließlich Operatoren und Benutzerrechte (**NmsGroup**), Ordnern (**XtkFolder**).
 
-## Verwenden der standardmäßigen Empfängertabelle {#default-recipient-table}
+## Verwenden der integrierten Empfängertabelle {#default-recipient-table}
 
-Die vordefinierte Empfängertabelle in Adobe Campaign bietet einen guten Ausgangspunkt für die Erstellung Ihres Datenmodells. Sie verfügt über eine Reihe vordefinierter Felder und Tabellenrelationen, die leicht erweitert werden können. Dies ist besonders dann nützlich, wenn Sie vor allem auf Empfänger abzielen, da sie für ein einfaches Empfänger-orientiertes Datenmodell geeignet ist.
+Die integrierte Empfängertabelle in Adobe Campaign bietet einen guten Ausgangspunkt für die Erstellung Ihres Datenmodells. Sie verfügt über eine Reihe vordefinierter Felder und Tabellenrelationen, die leicht erweitert werden können. Dies ist besonders dann nützlich, wenn Sie vor allem auf Empfänger abzielen, da sie für ein einfaches Empfänger-orientiertes Datenmodell geeignet ist.
 
-Die Verwendung der standardmäßigen Empfängertabelle bietet folgende Vorteile:
+Die Verwendung der integrierten Empfängertabelle bietet folgende Vorteile:
 
-* Vordefinierte Funktionen wie Abonnements, Seed-Listen, Umfragen, Social usw.
+* Integrierte Funktionen wie Abonnements, Seed-Listen und mehr
 * Bereitstellen einer Marketing-Datenbank mit einem Empfänger-orientierten Datenmodell.
 * Schnellere Implementierung.
 * Einfache Wartung durch Support und Partner.
