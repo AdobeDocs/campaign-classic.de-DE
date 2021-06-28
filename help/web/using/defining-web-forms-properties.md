@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 37aaaa03-0656-4a9b-bcae-74de33e3737b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1262'
 ht-degree: 100%
@@ -27,7 +27,7 @@ Im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters können Sie den **Ti
 
 ![](assets/s_ncs_admin_survey_properties_general_tab.png)
 
-Die Formularvorlage wird bei der Formularerstellung ausgewählt. Sie kann später nicht mehr geändert werden. Weitere Informationen zum Erstellen und Verwalten von Formularvorlagen finden Sie unter [Webformularvorlage verwenden](../../web/using/using-a-web-form-template.md).
+Die Formularvorlage wird bei der Formularerstellung ausgewählt. Sie kann später nicht mehr geändert werden. Weitere Informationen zum Erstellen und Verwalten von Formularvorlagen finden Sie unter [Webformularvorlage verwenden](using-a-web-form-template.md).
 
 ## Formulardaten speichern {#form-data-storage}
 
@@ -53,7 +53,7 @@ Der Inhalt der dargestellten Strings wird im Tab **[!UICONTROL Fehlerseite]** de
 
 Im Tab **[!UICONTROL Lokalisierung]** können Sie das Design und die Anzeigesprachen für das Webformular auswählen.
 
-Siehe [Webformular übersetzen](../../web/using/translating-a-web-form.md).
+Siehe [Webformular übersetzen](translating-a-web-form.md).
 
 ## Navigation und Rendering im Formular {#form-browsing-and-rendering}
 
@@ -77,7 +77,7 @@ Diese Elemente befinden sich am unteren Rand einer jeden Seite. Ihre Position ka
 
 Das Feld **[!UICONTROL Vorlage]** des Tabs **[!UICONTROL Rendering]** ermöglicht die Auswahl eines Themas.
 
-Themen werden im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]** des Baums gespeichert. Siehe [Vorlage zum Formular-Rendering auswählen](../../web/using/form-rendering.md#selecting-the-form-rendering-template).
+Themen werden im Knoten **[!UICONTROL Administration > Konfiguration > Formular-Rendering]** des Baums gespeichert. Siehe [Vorlage zum Formular-Rendering auswählen](form-rendering.md#selecting-the-form-rendering-template).
 
 Das jeweilige Rendering wird im unteren Teil des Eigenschaftenfensters angezeigt. Über das Symbol **[!UICONTROL Link bearbeiten]** kann die Konfiguration für das ausgewählte Thema aufgerufen werden.
 
@@ -85,13 +85,13 @@ Das jeweilige Rendering wird im unteren Teil des Eigenschaftenfensters angezeigt
 
 ## Texte im Formular {#texts-in-the-form}
 
-Im Tab **[!UICONTROL Seite]** können Sie den Inhalt des Formularkopfs und -fußes definieren. Siehe [Header und Footer definieren](../../web/using/form-rendering.md#defining-headers-and-footers).
+Im Tab **[!UICONTROL Seite]** können Sie den Inhalt des Formularkopfs und -fußes definieren. Siehe [Header und Footer definieren](form-rendering.md#defining-headers-and-footers).
 
-Dort können Sie auch Übersetzungen verwalten. Siehe [Webformular übersetzen](../../web/using/translating-a-web-form.md).
+Dort können Sie auch Übersetzungen verwalten. Siehe [Webformular übersetzen](translating-a-web-form.md).
 
 ## Zugriff auf das Formular {#accessibility-of-the-form}
 
-Ein Webformular ist für Benutzer verfügbar, wenn es **[!UICONTROL online]** ist und das aktuelle Datum innerhalb der Gültigkeitsdauer liegt. Der Status des Formulars ändert sich in der Veröffentlichungsphase (siehe [Formular veröffentlichen](../../web/using/publishing-a-web-form.md#publishing-a-form)). Der Status wird im Bereich **Projekt** im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters angezeigt.
+Ein Webformular ist für Benutzer verfügbar, wenn es **[!UICONTROL online]** ist und das aktuelle Datum innerhalb der Gültigkeitsdauer liegt. Der Status des Formulars ändert sich in der Veröffentlichungsphase (siehe [Formular veröffentlichen](publishing-a-web-form.md#publishing-a-form)). Der Status wird im Bereich **Projekt** im Tab **[!UICONTROL Allgemein]** des Eigenschaftenfensters angezeigt.
 
 Der Gültigkeitszeitraum erstreckt sich vom **[!UICONTROL Startdatum]** bis zum **[!UICONTROL Enddatum]**. Wenn keine Daten in diesen Feldern eingetragen sind, hat das Formular permanente Gültigkeit.
 
@@ -150,7 +150,7 @@ Parameter können im Eigenschaftenfenster des Formulars über den Tab **[!UICONT
 
 ![](assets/s_ncs_admin_survey_properties_param.png)
 
-Spezifizieren Sie einen Speicherort, von dem der Parameterwert abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und öffnen Sie danach den Tab **[!UICONTROL Speicherung]**, um das entsprechende Feld oder die entsprechende Variable auszuwählen. Die Speicheroptionen werden in den [Speicherfeldern für Antworten](../../web/using/web-forms-answers.md#response-storage-fields) ausführlich beschrieben.
+Spezifizieren Sie einen Speicherort, von dem der Parameterwert abgerufen wird. Wählen Sie dazu eine der Speicheroptionen aus und öffnen Sie danach den Tab **[!UICONTROL Speicherung]**, um das entsprechende Feld oder die entsprechende Variable auszuwählen. Die Speicheroptionen werden in den [Speicherfeldern für Antworten](web-forms-answers.md#response-storage-fields) ausführlich beschrieben.
 
 Der Status des reagierenden Kontakts (0, 1 oder ein beliebiger anderer Wert) kann dann entsprechend dem Formularzugriff zur URL hinzugefügt werden. Diese Information kann auf den Formularseiten oder in einer Text-Box wiederverwendet werden. Die Anzeige von Seiten kann wie unten gezeigt von einem kontextuellen Wert abhängig gemacht werden:
 
