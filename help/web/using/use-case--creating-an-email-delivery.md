@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: e2679f12-459b-466d-9c82-60a28363b104
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 100%
@@ -28,7 +28,7 @@ Ein Versand soll mit einer personalisierten Vorlage erstellt werden, die Folgend
 >
 >Bevor Sie beginnen, muss mindestens eine **HTML-Vorlage** entsprechend dem Inhalt Ihrer künftigen Sendungen konfiguriert werden.
 >
->Stellen Sie in den **[!UICONTROL Versandeigenschaften]** sicher, dass die **[!UICONTROL Inhaltserstellung]** (auf dem Tab **[!UICONTROL Erweitert]**) auf **[!UICONTROL DCE]** gesetzt ist. Um sicherzustellen, dass der Editor optimal funktioniert, lesen Sie die [Best Practices bei der Inhaltsbearbeitung](../../web/using/content-editing-best-practices.md).
+>Stellen Sie in den **[!UICONTROL Versandeigenschaften]** sicher, dass die **[!UICONTROL Inhaltserstellung]** (auf dem Tab **[!UICONTROL Erweitert]**) auf **[!UICONTROL DCE]** gesetzt ist. Um sicherzustellen, dass der Editor optimal funktioniert, lesen Sie die [Best Practices bei der Inhaltsbearbeitung](content-editing-best-practices.md).
 
 ## Schritt 1: Erstellen eines Versands {#step-1---creating-a-delivery}
 
@@ -54,7 +54,7 @@ Darüber hinaus besteht die Möglichkeit, außerhalb von Adobe Campaign erstellt
 
 ![](assets/dce_select_from_file_template.png)
 
-Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachdem eine personalisierte Inhaltsvorlage erstellt wurde, können Sie sich eine Vorschau davon in der Liste der Vorlagen ansehen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](../../web/using/template-management.md).
+Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachdem eine personalisierte Inhaltsvorlage erstellt wurde, können Sie sich eine Vorschau davon in der Liste der Vorlagen ansehen. Konsultieren Sie diesbezüglich die [Vorlagenverwaltung](template-management.md).
 
 >[!CAUTION]
 >
@@ -70,7 +70,7 @@ Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachde
 
 * Link in ein Bild einfügen
 
-   Um Empfänger eines Versands über ein Bild zu einer externen Adresse weiterzuleiten, klicken Sie auf das jeweilige Bild, um die Symbolleiste zu öffnen, platzieren Sie den Cursor auf das erste Symbol und wählen Sie dann **[!UICONTROL Link auf eine externe URL]** aus. Weitere Informationen finden Sie unter [Link hinzufügen](../../web/using/editing-content.md#adding-a-link).
+   Um Empfänger eines Versands über ein Bild zu einer externen Adresse weiterzuleiten, klicken Sie auf das jeweilige Bild, um die Symbolleiste zu öffnen, platzieren Sie den Cursor auf das erste Symbol und wählen Sie dann **[!UICONTROL Link auf eine externe URL]** aus. Weitere Informationen finden Sie unter [Link hinzufügen](editing-content.md#adding-a-link).
 
    ![](assets/dce_externalpage.png)
 
@@ -80,7 +80,7 @@ Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachde
 
 * Link in Text einfügen
 
-   Um einen externen Link in den Text Ihres Versands einzufügen, wählen Sie Text aus und klicken Sie auf das erste Symbol der Pop-up-Symbolleiste. Wählen Sie **[!UICONTROL Link auf eine externe URL]** aus und geben Sie im Feld **[!UICONTROL URL]** die Adresse des Links ein. Weitere Informationen finden Sie unter [Link hinzufügen](../../web/using/editing-content.md#adding-a-link).
+   Um einen externen Link in den Text Ihres Versands einzufügen, wählen Sie Text aus und klicken Sie auf das erste Symbol der Pop-up-Symbolleiste. Wählen Sie **[!UICONTROL Link auf eine externe URL]** aus und geben Sie im Feld **[!UICONTROL URL]** die Adresse des Links ein. Weitere Informationen finden Sie unter [Link hinzufügen](editing-content.md#adding-a-link).
 
    Der Link kann jederzeit im rechten Fensterbereich geändert werden.
 
@@ -102,7 +102,7 @@ Sie können diesen Inhalt als Vorlage zur späteren Verwendung speichern. Nachde
 
 * Einen Link auf eine Webanwendung integrieren
 
-   Mit dem Digital Content Editor können Sie über die Adobe Campaign-Konsole Links auf Webanwendungen integrieren, z. B. auf eine Landingpage oder Formularseite. Weitere Informationen hierzu finden Sie unter [Link auf eine Webanwendung](../../web/using/editing-content.md#link-to-a-web-application).
+   Mit dem Digital Content Editor können Sie über die Adobe Campaign-Konsole Links auf Webanwendungen integrieren, z. B. auf eine Landingpage oder Formularseite. Weitere Informationen hierzu finden Sie unter [Link auf eine Webanwendung](editing-content.md#link-to-a-web-application).
 
    Wählen Sie ein Textfeld für Ihren Link auf eine Webanwendung aus und klicken Sie dann auf das erste Symbol. Wählen Sie **[!UICONTROL Link auf eine Webanwendung]** und danach die gewünschte Anwendung aus, indem Sie auf das Symbol am Ende des Feldes **Webanwendung** klicken.
 
