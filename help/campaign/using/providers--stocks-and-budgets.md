@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c60c4f86-a957-4c44-a0fe-39b6e3f0e5d6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1994'
 ht-degree: 100%
@@ -285,8 +285,8 @@ Die Versandkosten einer Kampagne werden in der jeweiligen Kampagne, die Kosten a
 
 ### Umsetzung {#implementation}
 
-Wenn Sie in einer Kampagne ein Budget auswählen, müssen Sie den Ausgangsbetrag angeben. Die berechneten Kosten werden automatisch aktualisiert, entsprechend dem Verbindlichkeitsniveau der angegebenen Beträge (realisierte, geplante, reservierte, eingesetzte Ausgaben). Siehe [Betragsberechnung](../../campaign/using/controlling-costs.md#calculating-amounts).
+Wenn Sie in einer Kampagne ein Budget auswählen, müssen Sie den Ausgangsbetrag angeben. Die berechneten Kosten werden automatisch aktualisiert, entsprechend dem Verbindlichkeitsniveau der angegebenen Beträge (realisierte, geplante, reservierte, eingesetzte Ausgaben). Siehe [Betragsberechnung](../../mrm/using/controlling-costs.md#calculating-amounts).
 
 >[!NOTE]
 >
->Das Verfahren zum Erstellen von Budgets finden Sie unter [Erstellung von Budgets](../../campaign/using/controlling-costs.md#creating-a-budget).
+>Das Verfahren zum Erstellen von Budgets finden Sie unter [Erstellung von Budgets](../../mrm/using/controlling-costs.md#creating-a-budget).
