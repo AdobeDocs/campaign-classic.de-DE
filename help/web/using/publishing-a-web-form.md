@@ -1,14 +1,14 @@
 ---
 product: campaign
 title: Webformular veröffentlichen
-description: Webformular veröffentlichen
+description: Webformular publizieren
 audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1026'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,7 @@ Folgende Identifizierungsmöglichkeiten gibt es:
 
    ![](assets/s_ncs_admin_survey_preload_methods_002.png)
 
-   Felder können den Formulareigenschaften über den Tab **[!UICONTROL Parameter]** hinzugefügt werden (siehe [Parameter hinzufügen](../../web/using/defining-web-forms-properties.md#adding-parameters)). Sie werden in der Formular-URL oder den Eingabefeldern platziert.
+   Felder können den Formulareigenschaften über den Tab **[!UICONTROL Parameter]** hinzugefügt werden (siehe [Parameter hinzufügen](defining-web-forms-properties.md#adding-parameters)). Sie werden in der Formular-URL oder den Eingabefeldern platziert.
 
    >[!CAUTION]
    >
@@ -81,7 +81,7 @@ Der Lebenszyklus eines Formulars besteht aus drei Phasen:
 
 1. **Das Formular wird bearbeitet**
 
-   Dies ist die anfängliche Phase, in der ein neues Formular erstellt wird; es befindet sich in der Bearbeitungsphase. Um auf das Formular zugreifen zu können, muss (ausschließlich für Testzwecke) der Parameter **[!UICONTROL __uuid]** in seine URL eingegeben werden. Auf diese URL können Sie über den Unter-Tab **[!UICONTROL Vorschau]** zugreifen. Siehe [Parameter der Formular-URL](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Dies ist die anfängliche Phase, in der ein neues Formular erstellt wird; es befindet sich in der Bearbeitungsphase. Um auf das Formular zugreifen zu können, muss (ausschließlich für Testzwecke) der Parameter **[!UICONTROL __uuid]** in seine URL eingegeben werden. Auf diese URL können Sie über den Unter-Tab **[!UICONTROL Vorschau]** zugreifen. Siehe [Parameter der Formular-URL](defining-web-forms-properties.md#form-url-parameters).
 
    >[!CAUTION]
    >
@@ -107,7 +107,7 @@ Der Veröffentlichungsstatus eines Formulars wird in der Formularliste angezeigt
 
 ![](assets/s_ncs_admin_survey_status.png)
 
-### Formular veröffentlichen{#publishing-a-form}
+### Formular veröffentlichen {#publishing-a-form}
 
 Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu oberhalb der Liste der Webformulare auf die Schaltfläche **[!UICONTROL Veröffentlichung]** und wählen Sie in der Dropdown-Liste den Status aus.
 
@@ -123,7 +123,7 @@ Damit Benutzer auf das Formular zugreifen können, muss es sich in Produktion be
 
 * Wählen Sie den Link **[!UICONTROL Nachricht personalisieren, die bei geschlossenem Formular angezeigt wird...]** aus, um eine Fehlernachricht zu definieren. Diese wird angezeigt, wenn ein Benutzer versucht, auf das Formular zuzugreifen, das nicht gültig ist;
 
-   Siehe [Zugriff auf das Formular](../../web/using/defining-web-forms-properties.md#accessibility-of-the-form).
+   Siehe [Zugriff auf das Formular](defining-web-forms-properties.md#accessibility-of-the-form).
 
 ### Formular per E-Mail versenden {#delivering-a-form-via-email}
 
@@ -135,7 +135,7 @@ Wenn Sie eine Einladung per E-Mail versenden, können Sie die Option **[!UICONTR
 
 In diesem Fall muss der Abstimmschlüssel für die Datenspeicherung die verschlüsselte Kennung des Empfängers sein. Weitere Informationen finden Sie unter [Formulardaten vorausfüllen](#pre-loading-the-form-data).
 
-In diesem Fall müssen Sie im Datensatzfeld die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weiterführende Informationen finden Sie unter [Antworten in Webformularen speichern](../../web/using/web-forms-answers.md#saving-web-forms-answers).
+In diesem Fall müssen Sie im Datensatzfeld die Option **[!UICONTROL Vorausgefüllten Datensatz aktualisieren]** aktivieren. Weiterführende Informationen finden Sie unter [Antworten in Webformularen speichern](web-forms-answers.md#saving-web-forms-answers).
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
@@ -154,7 +154,3 @@ Selektieren Sie einen Empfänger und wählen Sie dann die Schaltfläche **[!UICO
 ![](assets/s_ncs_admin_survey_trace_edit.png)
 
 Sie können die Antwortprotokolle zu den Fragen verwenden, um beispielsweise Erinnerungen nur an Kontakte zu senden, die nicht geantwortet haben, oder um reagierenden Kontakten spezielle Nachrichten zukommen zu lassen.
-
->[!NOTE]
->
->Für ein vollständiges Tracking der bereitgestellten Antworten exportieren Sie die Antworten und erstellen Sie spezielle Berichte. Verwenden Sie dazu das optionale **Umfragemodul**. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../web/using/about-surveys.md).
