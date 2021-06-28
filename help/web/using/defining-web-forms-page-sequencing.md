@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 100%
@@ -17,13 +17,13 @@ ht-degree: 100%
 
 Das Formular kann eine oder mehrere Seiten enthalten. Es wird mithilfe eines Diagramms erstellt, das die Abfolge von Seiten, Tests, Skriptausführung, Sprüngen zu Seiten und Aufzeichnungsschritten ermöglicht. Der globale Designmodus für Diagramme ist identisch mit dem für einen Campaign-Workflow.
 
-## Die Schaltflächen &quot;Weiter&quot; und &quot;Zurück&quot;{#about-previous-page-and-next-page}
+## Die Schaltflächen &quot;Weiter&quot; und &quot;Zurück&quot; {#about-previous-page-and-next-page}
 
 Sie können für jede Seite die Schaltflächen **[!UICONTROL Weiter]** oder **[!UICONTROL Zurück]** löschen. Wählen Sie dazu die entsprechende Seite und danach die Option **[!UICONTROL Weiter zur nächsten Seite nicht zulassen]** oder **[!UICONTROL Rückkehr zur vorhergehenden Seite nicht zulassen]** aus .
 
 ![](assets/s_ncs_admin_survey_no_next_page.png)
 
-Sie können diese Schaltflächen auch durch Links ersetzen. Siehe [HTML-Inhalt einfügen](../../web/using/static-elements-in-a-web-form.md#inserting-html-content).
+Sie können diese Schaltflächen auch durch Links ersetzen. Siehe [HTML-Inhalt einfügen](static-elements-in-a-web-form.md#inserting-html-content).
 
 ## Sprung einfügen {#inserting-a-jump}
 
@@ -55,7 +55,7 @@ Im folgenden Beispiel soll ein Webformular konfiguriert werden, das nach der Val
 
    ![](assets/s_ncs_admin_survey_jump_sample1.png)
 
-1. Fügen Sie in den Formulareigenschaften einen Parameter (**next**) hinzu, der in einer lokalen Variablen (**next**) gespeichert ist. Lokale Variablen werden unter [Daten in einer lokalen Variablen speichern](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable) beschrieben.
+1. Fügen Sie in den Formulareigenschaften einen Parameter (**next**) hinzu, der in einer lokalen Variablen (**next**) gespeichert ist. Lokale Variablen werden unter [Daten in einer lokalen Variablen speichern](web-forms-answers.md#storing-data-in-a-local-variable) beschrieben.
 
    ![](assets/s_ncs_admin_survey_jump_sample2.png)
 
@@ -73,7 +73,7 @@ Im folgenden Beispiel soll ein Webformular konfiguriert werden, das nach der Val
 
 ## Link zu einer anderen Seite des Formulars einfügen {#inserting-a-link-to-another-page-of-the-form}
 
-Sie können Links zu anderen Formularseiten einfügen. Fügen Sie dazu ein statisches Element vom Typ **[!UICONTROL Link]** zur Seite hinzu. Weitere Informationen hierzu finden Sie unter [Link einfügen](../../web/using/static-elements-in-a-web-form.md#inserting-a-link).
+Sie können Links zu anderen Formularseiten einfügen. Fügen Sie dazu ein statisches Element vom Typ **[!UICONTROL Link]** zur Seite hinzu. Weitere Informationen hierzu finden Sie unter [Link einfügen](static-elements-in-a-web-form.md#inserting-a-link).
 
 ## Bedingte Anzeige von Seiten {#conditional-page-display}
 
@@ -89,7 +89,7 @@ Diese Informationen können entweder in einem Datenbankfeld oder einer lokalen V
 
 >[!NOTE]
 >
->Die Speichermodi werden in [Speicherfelder für Antworten](../../web/using/web-forms-answers.md#response-storage-fields) beschrieben.
+>Die Speichermodi werden in [Speicherfelder für Antworten](web-forms-answers.md#response-storage-fields) beschrieben.
 
 In unserem Beispiel soll eine Variable verwendet werden:
 
@@ -107,7 +107,7 @@ Definieren Sie dann die Seitenreihenfolge, wenn eine der Bedingungen wahr ist, z
 
 ### Anzeige anhand von Parametern {#display-based-on-parameters}
 
-Sie können die Seitenreihenfolge auch gemäß den Initialisierungsparametern des Webformulars oder den in der Datenbank gespeicherten Werten festlegen. Siehe [Parameter der Formular-URL](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+Sie können die Seitenreihenfolge auch gemäß den Initialisierungsparametern des Webformulars oder den in der Datenbank gespeicherten Werten festlegen. Siehe [Parameter der Formular-URL](defining-web-forms-properties.md#form-url-parameters).
 
 ## Skripts hinzufügen {#adding-scripts}
 
