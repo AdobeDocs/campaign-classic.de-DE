@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 100%
@@ -57,27 +57,28 @@ Um das Webformular zu definieren und zu konfigurieren, gehen Sie folgendermaßen
 
 * Definieren Sie die Seitenreihenfolge und legen Sie für die Anzeige der Seiten Bedingungen fest.
 
-   Dieser Schritt wird unter [Seitenreihenfolge eines Webformulars definieren](../../web/using/defining-web-forms-page-sequencing.md) beschrieben.
+   Dieser Schritt wird unter [Seitenreihenfolge eines Webformulars definieren](defining-web-forms-page-sequencing.md) beschrieben.
 
 * Übersetzen Sie den Inhalt bei Bedarf.
 
-   Dieser Schritt wird unter [Webformular übersetzen](../../web/using/translating-a-web-form.md) beschrieben.
+   Dieser Schritt wird unter [Webformular übersetzen](translating-a-web-form.md) beschrieben.
 
 ## Über die Erstellung von Webformularen {#about-web-forms-designing}
 
-Die Seiten des Formulars werden mit einem bestimmten Editor erstellt, mit dem Sie Eingabebereiche (Text), Auswahlfelder (Listen, Checkboxes usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Diese können in Containern gruppiert und ihr Layout an Ihren Bedarf angepasst werden (weitere Informationen finden Sie unter [Container erstellen](../../web/using/defining-web-forms-layout.md#creating-containers)).
+Die Seiten des Formulars werden mit einem bestimmten Editor erstellt, mit dem Sie Eingabebereiche (Text), Auswahlfelder (Listen, Checkboxes usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Diese können in Containern gruppiert und ihr Layout an Ihren Bedarf angepasst werden (weitere Informationen finden Sie unter [Container erstellen](defining-web-forms-layout.md#creating-containers)).
 
 In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout von Formularen definieren.
 
-* [Felder zu einem Webformular hinzufügen](../../web/using/adding-fields-to-a-web-form.md),
-* [HTML-Inhalt einfügen](../../web/using/static-elements-in-a-web-form.md#inserting-html-content),
-* [Statische Elemente in einem Webformular](../../web/using/static-elements-in-a-web-form.md),
-* [Layout eines Webformulars definieren](../../web/using/defining-web-forms-layout.md).
+* [Felder zu einem Webformular hinzufügen](adding-fields-to-a-web-form.md),
+* [HTML-Inhalt einfügen](static-elements-in-a-web-form.md#inserting-html-content),
+* [Statische Elemente in einem Webformular](static-elements-in-a-web-form.md),
+* [Layout eines Webformulars definieren](defining-web-forms-layout.md).
 
 >[!NOTE]
 >
 >* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
 >* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
+
 >
 
 
