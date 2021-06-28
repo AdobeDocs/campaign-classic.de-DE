@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 891252b0-4700-4a2a-a632-63aad5ce75d7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 100%
@@ -25,7 +25,7 @@ In einer Kampagne können Sie auch auf andere Elemente verweisen, wie z. B. Wer
 
 >[!NOTE]
 >
->Das Marketing Resource Management-Modul von Campaign ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer zusammenarbeiten können. [Weitere Informationen](../../campaign/using/managing-marketing-resources.md).
+>Das Marketing Resource Management-Modul von Campaign ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer zusammenarbeiten können. [Weitere Informationen](../../mrm/using/managing-marketing-resources.md).
 
 ## Dokumente hinzufügen {#adding-documents}
 
@@ -102,7 +102,7 @@ Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebot
 
    >[!NOTE]
    >
-   >Weiterführende Informationen zu Marketing-Ressourcen finden Sie in [diesem Abschnitt](../../campaign/using/managing-marketing-resources.md).
+   >Weiterführende Informationen zu Marketing-Ressourcen finden Sie in [diesem Abschnitt](../../mrm/using/managing-marketing-resources.md).
 
 ### Auswählen eines Versandentwurfs {#selecting-an-outline}
 
