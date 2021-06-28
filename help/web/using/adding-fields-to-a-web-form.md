@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '2550'
-ht-degree: 100%
+source-wordcount: '2464'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ Folgende Feldtypen sind verfügbar:
 * Schaltfläche „Herunterladen“. [Datei hochladen](#uploading-a-file).
 * Ausgeblendete Konstante. Siehe [Ausgeblendete Konstante einfügen](#inserting-a-hidden-constant).
 
-Spezifizieren Sie den Speichermodus für Antworten: ein Feld in der Datenbank aktualisieren (nur der zuletzt gespeicherte Wert wird behalten) oder in einer Variablen speichern (die Antwort wird nicht aufbewahrt). Weiterführende Informationen finden Sie im Abschnitt [Speicherfelder für Antworten](../../web/using/web-forms-answers.md#response-storage-fields).
+Spezifizieren Sie den Speichermodus für Antworten: ein Feld in der Datenbank aktualisieren (nur der zuletzt gespeicherte Wert wird behalten) oder in einer Variablen speichern (die Antwort wird nicht aufbewahrt). Weiterführende Informationen finden Sie im Abschnitt [Speicherfelder für Antworten](web-forms-answers.md#response-storage-fields).
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
 * **Zahl**: ermöglicht dem Benutzer die Zahleneingabe in einer einzigen Zeile. Weitere Informationen hierzu finden Sie im Abschnitt [Zahlen hinzufügen](#adding-numbers).
 
-   Bei der Validierung der Seite wird der Feldinhalt geprüft, um sicherzugehen, dass der eingegebene Wert mit dem Feld kompatibel ist. Weiterführende Informationen finden Sie unter [Kontrolleinstellungen definieren](../../web/using/form-rendering.md#defining-control-settings).
+   Bei der Validierung der Seite wird der Feldinhalt geprüft, um sicherzugehen, dass der eingegebene Wert mit dem Feld kompatibel ist. Weiterführende Informationen finden Sie unter [Kontrolleinstellungen definieren](form-rendering.md#defining-control-settings).
 
 * **Passwort**: ermöglicht dem Benutzer die Texteingabe in einer einzigen Zeile. Während der Texteingabe werden die Buchstaben durch Punkte ersetzt:
 
@@ -90,9 +90,7 @@ Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
    >[!CAUTION]
    >
-   >Mehrzeilige Textfelder sind spezielle Felder, die Zeilenumbrüche enthalten können. Ihr Speicherplatz muss mit einem Feld verknüpft sein, das mit einem XML-Element, und nicht einem XML-Attribut gemappt ist. Weiterführende Informationen zu Datentypen in Schemata finden Sie im Kapitel &quot;Schema reference&quot; in [diesem Abschnitt](../../configuration/using/about-schema-reference.md).
-   >   
-   >Wenn Sie das **Umfragemodul** verwenden, können Sie diesen Feldtyp in einem archivierten Feld speichern, das sich automatisch an das jeweilige Format anpasst. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../web/using/about-surveys.md).
+   >Mehrzeilige Textfelder sind spezifische Felder, die Zeilenumbrüche enthalten können. Ihr Speicherplatz muss mit einem Feld verknüpft sein, das einem XML-Element zugeordnet ist, nicht mit einem XML-Attribut.
 
 * **Angereicherter mehrzeiliger Text**: ermöglicht dem Benutzer die Eingabe von Text mit einem Layout, das im HTML-Format gespeichert wird.
 
@@ -118,9 +116,9 @@ Der Speichermodus für Antworten kann über den Link **[!UICONTROL Speicherinfor
 
 >[!NOTE]
 >
->Speichermodi werden unter [Speicherfelder für Antworten](../../web/using/web-forms-answers.md#response-storage-fields) detailliert beschrieben.
+>Speichermodi werden unter [Speicherfelder für Antworten](web-forms-answers.md#response-storage-fields) detailliert beschrieben.
 
-Im Tab **[!UICONTROL Erweitert]** können Sie Anzeigeparameter für das Feld definieren (Position der Titel, Ausrichtung etc.). Siehe [Layout eines Webformulars definieren](../../web/using/defining-web-forms-layout.md).
+Im Tab **[!UICONTROL Erweitert]** können Sie Anzeigeparameter für das Feld definieren (Position der Titel, Ausrichtung etc.). Siehe [Layout eines Webformulars definieren](defining-web-forms-layout.md).
 
 ## Dropdown-Listen hinzufügen {#adding-drop-down-lists}
 
@@ -206,7 +204,7 @@ Um einen Radiobutton zu einer Formularseite hinzuzufügen, gehen Sie in der Symb
 
 ![](assets/s_ncs_admin_survey_radio_button_sample.png)
 
-Radiobuttons werden ähnlich konfiguriert wie Checkboxes (siehe [Checkboxes hinzufügen](#adding-checkboxes)). Wenn die Option nicht ausgewählt ist, wird jedoch kein Wert zugewiesen. Damit mehrere Schaltflächen voneinander abhängen, d. h. die Auswahl einer Schaltfläche automatisch die Auswahl der anderen deaktiviert, müssen sie im selben Feld gespeichert werden. Wenn sie nicht in der Datenbank gespeichert sind, muss dieselbe lokale Variable für die temporäre Speicherung verwendet werden. Siehe [Speicherfelder für Antworten](../../web/using/web-forms-answers.md#response-storage-fields).
+Radiobuttons werden ähnlich konfiguriert wie Checkboxes (siehe [Checkboxes hinzufügen](#adding-checkboxes)). Wenn die Option nicht ausgewählt ist, wird jedoch kein Wert zugewiesen. Damit mehrere Schaltflächen voneinander abhängen, d. h. die Auswahl einer Schaltfläche automatisch die Auswahl der anderen deaktiviert, müssen sie im selben Feld gespeichert werden. Wenn sie nicht in der Datenbank gespeichert sind, muss dieselbe lokale Variable für die temporäre Speicherung verwendet werden. Siehe [Speicherfelder für Antworten](web-forms-answers.md#response-storage-fields).
 
 ### Liste mit Schaltflächen hinzufügen {#add-a-list-of-buttons}
 
@@ -218,8 +216,8 @@ Fügen Sie so viele Radiobuttons hinzu wie Titel vorhanden sind. Der Vorteil die
 
 >[!NOTE]
 >
->Webformulare ermöglichen nicht die Auswahl mehrerer Werte. Die Mehrfachauswahl kann nur für Formulare vom Typ **Umfrage** aktiviert werden. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](../../web/using/about-surveys.md).\
->Es ist jedoch möglich, ein Feld vom Typ **[!UICONTROL Multiple Choice]** in eine Webanwendung einzufügen, ohne die Auswahl mehrerer Werte zu ermöglichen: Die angebotenen Optionen können mithilfe von Radiobuttons ausgewählt werden.
+>Sie können die Mehrfachauswahl in einer Webanwendung nicht aktivieren.
+>Es ist jedoch möglich, ein Feld vom Typ **[!UICONTROL Multiple Choice]** in eine Webanwendung einzufügen. Dies ermöglicht dem Benutzer jedoch nicht, mehrere Werte auszuwählen.
 
 ## Tabellen hinzufügen {#adding-grids}
 
@@ -239,7 +237,7 @@ Pro Tabellenzeile kann nur eine Option ausgewählt werden.
 
 >[!NOTE]
 >
->In unserem Beispiel ist der Titel der Tabelle ausgeblendet. Gehen Sie dazu zum Tab **[!UICONTROL Erweitert]**. Die Anzeige **[!UICONTROL Titelposition]** ist als **[!UICONTROL Ausgeblendet]** definiert. Siehe [Die Position von Titeln definieren](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels).
+>In unserem Beispiel ist der Titel der Tabelle ausgeblendet. Gehen Sie dazu zum Tab **[!UICONTROL Erweitert]**. Die Anzeige **[!UICONTROL Titelposition]** ist als **[!UICONTROL Ausgeblendet]** definiert. Siehe [Die Position von Titeln definieren](defining-web-forms-layout.md#defining-the-position-of-labels).
 
 ## Datum und Zahlen hinzufügen {#adding-dates-and-numbers}
 
@@ -265,7 +263,7 @@ Das Datum kann über einen Kalender oder ein Dropdown-Fenster ausgewählt werden
 
 >[!NOTE]
 >
->Standardmäßig wird ein in einem Formular verwendetes Datum über einen Kalender eingegeben. Achten Sie bei mehrsprachigen Formularen darauf, dass die Kalender in allen verwendeten Sprachen verfügbar sind. Siehe [Webformular übersetzen](../../web/using/translating-a-web-form.md).
+>Standardmäßig wird ein in einem Formular verwendetes Datum über einen Kalender eingegeben. Achten Sie bei mehrsprachigen Formularen darauf, dass die Kalender in allen verwendeten Sprachen verfügbar sind. Siehe [Webformular übersetzen](translating-a-web-form.md).
 
 In manchen Fällen kann es aber einfacher sein, Dropdown-Listen zu verwenden, z. B. zur Eingabe des Geburtsdatums.
 
@@ -323,8 +321,6 @@ Der Benutzer meldet sich zu diesem Dienst an, indem er die entsprechende Option 
 >
 >Wenn der Benutzer bereits zu einem Informationsdienst angemeldet ist und das mit diesem Dienst verknüpfte Kästchen bei der Validierung des Formulars nicht markiert ist, wird er abgemeldet.
 
-Beispiele für Abonnements und Anwerbungen finden Sie in [diesem Abschnitt](../../web/using/about-surveys.md).
-
 ## Captcha einfügen {#inserting-a-captcha}
 
 Mit **Captcha**-Tests können Sie verhindern, dass Ihre Webformulare missbräuchlich verwendet werden.
@@ -379,6 +375,7 @@ Sie können den Link zu diesen Dateien in einer lokalen Variablen oder in einem 
 >* Adobe Campaign kontrolliert nicht die Größe oder den Typ der hochgeladenen Ressource. Deshalb empfehlen wir dringend, Upload-Felder ausschließlich für sichere Intranet-Sites zu verwenden.
 >* Wenn mehrere Server mit der Instanz verbunden sind (Architektur mit Lastausgleich), müssen Sie darauf achten, dass Abfragen zum Webformular auf demselben Server erfolgen.
 >* Diese Implementierungen erfordern die Hilfe des Adobe Campaign-Teams.
+
 >
 
 
