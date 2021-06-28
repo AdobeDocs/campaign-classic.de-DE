@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1662'
 ht-degree: 100%
@@ -51,7 +51,7 @@ Im Tab **[!UICONTROL Übersetzungen]** können Sie die Übersetzungen der Zeiche
 
 Wenn Sie diesen Tab das erste Mal öffnen, sind keine Daten vorhanden. Wählen Sie den Link **[!UICONTROL Zu übersetzende Strings abrufen]** aus, um die Strings in der Webanwendung zu aktualisieren.
 
-Adobe Campaign ruft Titel von Feldern und Strings ab, die im Tab **[!UICONTROL Texte]** aller statischen Elemente definiert wurden: HTML-Bausteine, JavaScript usw. Statische Elemente werden in [Statische Elemente in einem Webformular](../../web/using/static-elements-in-a-web-form.md) detailliert erläutert.
+Adobe Campaign ruft Titel von Feldern und Strings ab, die im Tab **[!UICONTROL Texte]** aller statischen Elemente definiert wurden: HTML-Bausteine, JavaScript usw. Statische Elemente werden in [Statische Elemente in einem Webformular](static-elements-in-a-web-form.md) detailliert erläutert.
 
 ![](assets/s_ncs_admin_survey_trad_tab.png)
 
