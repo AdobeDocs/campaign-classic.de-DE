@@ -6,7 +6,7 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1804'
 ht-degree: 100%
@@ -133,6 +133,7 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 >
 >* Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
 >* Die Konfiguration der Testversand-Zielgruppe wird unter [Spezifische Testversand-Zielgruppe definieren](steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben.
+
 >
 
 
@@ -206,7 +207,7 @@ Im Tab **[!UICONTROL Regeln]** finden Sie die Liste der anzuwendenden Typologier
 
 >[!NOTE]
 >
->Typologien vom Typ **[!UICONTROL Schlichtung]** kommen im Bereich des Werbedruck-Managements zum Einsatz. Lesen Sie diesbezüglich [diesen Abschnitt](../../campaign/using/about-marketing-resource-management.md).
+>Typologien vom Typ **[!UICONTROL Schlichtung]** kommen im Bereich des Werbedruck-Managements zum Einsatz. Lesen Sie diesbezüglich [diesen Abschnitt](../../mrm/using/about-marketing-resource-management.md).
 
 ## Validierungsmodus ändern {#changing-the-approval-mode}
 
