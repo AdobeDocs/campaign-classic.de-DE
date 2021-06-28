@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '258'
 ht-degree: 100%
@@ -27,7 +27,7 @@ In jeder Kampagne können über den Tab **[!UICONTROL Verfolgung]** die ausgefü
 
    ![](assets/s_ncs_user_op_edit_exe_tab_b.png)
 
-* Im Unter-Tab **[!UICONTROL Aufgaben]** werden alle mit dieser Kampagne verbundenen Aufgaben aufgelistet. Sie können aus dieser Übersicht heraus geöffnet oder gelöscht werden. Aufgaben sind nur mit der Anwendung MRM verfügbar. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../campaign/using/creating-and-managing-tasks.md).
+* Im Unter-Tab **[!UICONTROL Aufgaben]** werden alle mit dieser Kampagne verbundenen Aufgaben aufgelistet. Sie können aus dieser Übersicht heraus geöffnet oder gelöscht werden. Aufgaben sind nur mit der Anwendung MRM verfügbar. Weitere Informationen dazu finden Sie in [diesem Abschnitt](../../mrm/using/creating-and-managing-tasks.md).
 
    ![](assets/s_ncs_user_op_edit_exe_tab_e.png)
 
