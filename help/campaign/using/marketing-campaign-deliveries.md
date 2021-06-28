@@ -6,14 +6,14 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '1552'
 ht-degree: 100%
 
 ---
 
-# Sendungen zur Marketing-Kampagne {#marketing-campaign-deliveries}
+# Sendungen für eine Marketing-Kampagne {#marketing-campaign-deliveries}
 
 Sendungen können über das Dashboard einer Kampagne, einen Kampagnenworkflow oder direkt über die Übersicht der Sendungen erstellt werden.
 
@@ -116,7 +116,7 @@ Die Dateiextraktion startet zwei Vorgänge: die Berechnung der Budgets und die B
 
 ## Zugeordnete Dokumente verwalten {#managing-associated-documents}
 
-Sie können einer Kampagne unterschiedliche Dokumente zuordnen: Berichte, Fotos, Web-Seiten, Schemata etc. Die Dokumente können beliebigen Formats sein (Microsoft Word, PowerPoint, PNG, JPEG, Acrobat PDF etc.). [In diesem Abschnitt](../../campaign/using/marketing-campaign-assets.md) erfahren Sie, wie Sie Dokumente mit einer Kampagne verknüpfen.
+Sie können einer Kampagne verschiedene Dokumente zuordnen: Bericht, Foto, Web-Seite, Diagramm usw. Diese Dokumente können in jedem beliebigen Format vorliegen (Microsoft Word, PowerPoint, PNG, JPG, Acrobat PDF usw.). [In diesem Abschnitt](../../campaign/using/marketing-campaign-assets.md) erfahren Sie, wie Sie Dokumente mit einer Kampagne verknüpfen.
 
 >[!IMPORTANT]
 >
@@ -126,7 +126,7 @@ Sie haben auch die Möglichkeit, externe Elemente in Kampagnen zu referenzieren,
 
 >[!NOTE]
 >
->MRM ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer partizipativ arbeiten können. Lesen Sie diesbezüglich [Verwalten von Marketing-Ressourcen](../../campaign/using/managing-marketing-resources.md).
+>MRM ermöglicht Ihnen zudem die Verwaltung einer Ressourcenbibliothek, in der mehrere Benutzer partizipativ arbeiten können. Lesen Sie diesbezüglich [Verwalten von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md).
 
 ### Hinzufügen von Dokumenten {#adding-documents}
 
@@ -203,7 +203,7 @@ Ein Versandentwurf kann Artikel, Personalisierungsfelder, Ressourcen und Angebot
 
    >[!NOTE]
    >
-   >Weiterführende Informationen zu Marketing-Ressourcen finden Sie unter [Verwalten von Marketing-Ressourcen](../../campaign/using/managing-marketing-resources.md).
+   >Weiterführende Informationen zu Marketing-Ressourcen finden Sie unter [Verwalten von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md).
 
 #### Einen Versandentwurf auswählen {#selecting-an-outline}
 
