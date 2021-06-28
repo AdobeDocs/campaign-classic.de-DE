@@ -4,10 +4,10 @@ title: Migration zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zu Campaign und Analytics Connector
 hide: true
 hidefromtoc: true
-source-git-commit: 248bd7774c01adb44ce33d0499c2b01d013e75bd
+source-git-commit: cde4ed65abb2458fc40639b92314f8d56b18b78c
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 10%
+source-wordcount: '840'
+ht-degree: 8%
 
 ---
 
@@ -22,12 +22,12 @@ Sie müssen zur neuen Adobe Analytics Connector-Integration in Adobe Exchange mi
 
 >[!NOTE]
 >
->Wenden Sie sich bei Fragen zu diesen Änderungen an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Fragen zu diesen Änderungen finden Sie in den [FAQ](#faq-aa). Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 
 ## Was hat sich geändert?
 
-Eine neue Integration zwischen Campaign Classic und Adobe Analytics ist jetzt verfügbar. Die wichtigsten Änderungen sind unten aufgeführt.
+Eine neue Integration zwischen Campaign Classic v7 und Adobe Analytics ist jetzt verfügbar. Die wichtigsten Änderungen sind unten aufgeführt.
 
 * Die Integration zwischen der Adobe Campaign Classic- und Adobe Analytics-Authentifizierung wurde von Benutzer/Kennwort in Adobe Identity Management Service (IMS) verschoben. Daher müssen Sie Adobe IMS implementieren und über eine Adobe ID](../integrations/using/about-adobe-id.md) eine Verbindung zu Campaign [herstellen, bevor Sie die Analytics Connector-Implementierung starten.
 
@@ -58,7 +58,7 @@ Als On-Premise-/Hybrid-Kunde müssen Sie auf eine der neueren Versionen aktualis
 Sobald alle Instanzen aktualisiert wurden, können Sie [die neue Integration](../platform/using/adobe-analytics-connector.md) in Adobe Analytics Connector implementieren und einen nahtlosen Übergang sicherstellen.
 
 
-## Häufig gestellte Fragen
+## Häufig gestellte Fragen{#faq-aa}
 
 **Wie erhalte ich Protokolle?**
 
@@ -71,17 +71,21 @@ Als On-Premise-Benutzer können Sie den ausführlichen Modus wie folgt implement
 * So aktivieren Sie den ausführlichen Modus für die Benutzeroberfläche: Führen Sie den Prozess `web` im ausführlichen Modus erneut aus.
 * So aktivieren Sie den ausführlichen Modus für die **webAnalytics**-Workflows: Wählen Sie in den Workflow-Eigenschaften die Option **In der Engine ausführen** und führen Sie `wfserver` im ausführlichen Modus erneut aus.
 
-**Integrationseigentümer nicht Administrator**
+**Was bedeutet der Fehler &quot;Integrationseigentümer nicht Administrator&quot;?**
 
 Weitere Informationen zum Fehler &quot;Integrationseigentümer nicht Administrator&quot;von Data Connectors finden Sie auf [dieser Seite](https://adobeexchangeec.zendesk.com/hc/en-us/articles/360035167932-Adobe-Analytics-Data-Connectors-Integration-Owner-Not-Admin-Error).
 
-**Vorhandene eVars/Ereignisse/ReportSuite in Analytics nicht in Campaign sichtbar**
+**Was passiert mit alten Daten und Report Suites, wenn die Migration zum neuen Connector abgeschlossen ist?**
+
+Nach der Migration sendet ein neuer Connector (der vom alten Connector migriert wurde) Daten an dieselbe Report Suite, und die vorhandenen Daten sind nicht betroffen: werden die vorhandenen Daten hinzugefügt.
+
+**Einige vorhandene eVars/Ereignisse/Report Suites, die in Analytics vorhanden sind, sind in Campaign nicht sichtbar. Was soll ich tun?**
 
 Die Integration beruht für die tägliche Verwendung auf Daten aus dem Token für technische Konten. Wenn für eine Dimension/Metrik/Report Suite aus dem Produktprofil, das mit dem Benutzer des technischen Kontos verknüpft ist, keine Berechtigung vorhanden ist, werden die von uns verwendeten APIs für diese Anfragen einfach fehlschlagen.
 
 Wenn wir nach Details einer Analytics-Komponente lesen (z. B. Metriken/Dimensionen/Segmente/Report Suites), gibt die API diese Komponenten nicht im Ergebnis zurück (was so aussehen kann, als würde etwas auf der Analytics-Seite gelöscht oder nicht vorhanden sein). Die Analytics-API lehnt diese Anfragen ab und führt eine Fehlermeldung aus.
 
-Die Lösung besteht darin, das Produktprofil im Analytics-Benutzerkontext des technischen Benutzer-Tokens mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in [Adobe Admin Console](https://adminconsole.adobe.com/) hinzugefügt werden.
+Die Lösung besteht darin, das **Produktprofil** im Analytics-Benutzerkontext des technischen Benutzer-Tokens mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in [Adobe Admin Console](https://adminconsole.adobe.com/) hinzugefügt werden. Weitere Anleitungen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Nützliche Links
 
