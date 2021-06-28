@@ -6,28 +6,22 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 100%
+source-wordcount: '264'
+ht-degree: 85%
 
 ---
 
 # Web-Anwendung konzipieren{#designing-a-web-application}
 
-Webanwendungen werden nach demselben Prinzip erstellt und verwaltet wie [Online-Umfragen](../../web/using/about-surveys.md).
-
-Es gibt jedoch folgende funktionelle Unterschiede:
-
-* Für Webanwendungen werden keine archivierten Felder verwendet. Daten können daher nur in Datenbankfeldern oder lokalen Variablen gespeichert werden.
-* Zu Webanwendungen sind keine nativen Berichte verfügbar.
-* Zusätzliche Felder sind verfügbar, die hauptsächlich zur Erstellung von Tabellen und Grafiken dienen.
+Webanwendungen werden nach demselben Prinzip erstellt und verwaltet wie [Webformulare](about-web-forms.md).
 
 >[!CAUTION]
 >
->Es wird dringend empfohlen, die angewendeten Konfigurationen laufend zu überprüfen, um etwaige Fehler in einer frühen Phase des Erstellungsprozesses einer Webanwendung zu erkennen. Um das Rendering einer Änderung zu überprüfen, speichern Sie die Anwendung und wählen Sie dann den Untertab **[!UICONTROL Vorschau]** aus.
+>Verwenden Sie die Unterregisterkarte **[!UICONTROL Vorschau]** , um Fehler während des Webanwendungsdesigns zu überprüfen.
 >
->Die Änderungen sind erst dann für den Endbenutzer sichtbar, wenn die Webanwendung veröffentlicht wurde.
+>Bis zur Veröffentlichung der Webanwendung werden die Änderungen den Endbenutzern nicht angezeigt.
 
 ## Grafiken in eine Webanwendung einfügen {#inserting-charts-in-a-web-application}
 
@@ -49,7 +43,7 @@ Sie können den Tabellentyp auch im Dropdown-Menü auswählen.
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
-## Webanwendungen vom Typ &quot;Übersicht&quot;{#overview-type-web-applications}
+## Webanwendungen vom Typ &quot;Übersicht&quot; {#overview-type-web-applications}
 
 In der Benutzeroberfläche von Adobe Campaign werden zahlreiche Webanwendungen bereitgestellt, die es Ihnen ermöglichen, auf Empfänger, Sendungen, Kampagnen, gespeicherte Assets etc. zuzugreifen, sie zu verwalten und mit ihnen zu interagieren.
 
@@ -70,4 +64,3 @@ Webanwendungen mit Bearbeitungsformularen für ein Extranet besitzen folgende Me
 
    Während Webanwendungen vom Typ &quot;Übersicht&quot; eine einzige Seite besitzen, bieten Bearbeitungsformulare mehrere Seiten basierend auf bestimmten Kriterien (Tests, Auswahl, Profil des verbundenen Benutzers etc.).
 
-Die Nutzung dieser Art von Webanwendung ist ähnlich den **Umfragen**, jedoch ohne Verlaufsverwaltung und Feldarchivierung. Der Zugriff durch Benutzer erfolgt normalerweise über eine Anmeldeseite, auf der sie sich identifizieren müssen.
