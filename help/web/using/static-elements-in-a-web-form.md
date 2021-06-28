@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
 workflow-type: tm+mt
-source-wordcount: '1329'
-ht-degree: 100%
+source-wordcount: '1077'
+ht-degree: 98%
 
 ---
 
@@ -46,7 +46,7 @@ Um ein Datenbankfeld einzufügen, verwenden Sie die Personalisierungs-Schaltflä
 
 >[!NOTE]
 >
->Die im HTML-Editor eingegebenen Strings werden nur übersetzt, wenn sie im Unter-Tab **[!UICONTROL Texte]** definiert sind. Ansonsten werden sie nicht erfasst. Weitere Informationen finden Sie unter [Webformular übersetzen](../../web/using/translating-a-web-form.md).
+>Die im HTML-Editor eingegebenen Strings werden nur übersetzt, wenn sie im Unter-Tab **[!UICONTROL Texte]** definiert sind. Ansonsten werden sie nicht erfasst. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
 
 ### Link einfügen {#inserting-a-link}
 
@@ -85,7 +85,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
    ![](assets/s_ncs_admin_survey_link_next.png)
 
-   Sie können die Schaltflächen **[!UICONTROL Weiter]** und/oder **[!UICONTROL Zurück]** verbergen, wenn diese durch einen Link ersetzt werden sollen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-page-sequencing.md).
+   Sie können die Schaltflächen **[!UICONTROL Weiter]** und/oder **[!UICONTROL Zurück]** verbergen, wenn diese durch einen Link ersetzt werden sollen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md).
 
    Der Link ersetzt die standardmäßig verwendete Schaltfläche **[!UICONTROL Weiter]**.
 
@@ -107,60 +107,7 @@ Sie können auch andere Aktionen für den Link definieren, sodass der Benutzer d
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Seitenreihenfolge in einem Webformular finden Sie unter [Seitenreihenfolge eines Webformulars definieren](../../web/using/defining-web-forms-page-sequencing.md).
-
-* Füllen Sie die Formularfelder vorab mit Daten aus dem Facebook-Profil aus.
-
-   >[!CAUTION]
-   >
-   >Diese Funktion ist nur verfügbar, wenn Sie die Anwendung **[!UICONTROL Social Marketing]** installiert haben. Um diese Option verwenden zu können, müssen Sie eine Facebook-Anwendung sowie ein externes Konto vom Typ **[!UICONTROL Facebook Connect]** erstellen. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-   Die Option **[!UICONTROL Via Facebook vorausfüllen]** ermöglicht Ihnen das Einfügen einer Schaltfläche in ein Formular, um Felder mit Informationen aus dem Facebook-Profil vorauszufüllen.
-
-   ![](assets/web_social_webapp_037.png)
-
-   Wenn ein Benutzer die Schaltfläche **[!UICONTROL Automatisch ausfüllen]** auswählt, öffnet sich das Facebook-Fenster mit einer Anfrage zur Genehmigung.
-
-   ![](assets/web_social_webapp_029.png)
-
-   >[!NOTE]
-   >
-   >Sie können die Liste erweiterter Berechtigungen bei der Konfiguration des externen Kontos ändern. Wenn Sie keine erweiterten Berechtigungen eingeben, leitet Facebook automatisch die allgemeinen Profilinformationen weiter.\
-   >Wenn Sie die Liste der erweiterten Berechtigungen und deren Syntax ansehen möchten, klicken Sie hier: [https://developers.facebook.com/docs/reference/api/permissions/](https://developers.facebook.com/docs/reference/api/permissions/)
-
-   Wenn der Benutzer damit einverstanden ist, seine Informationen zu teilen, werden die Felder des Formulars vorausgefüllt.
-
-   ![](assets/web_social_webapp_030.png)
-
-Für dieses Anwendungsbeispiel wird eine Webanwendung erstellt, die die folgenden Elemente enthält:
-
-* Eine Seite mit dem Formular
-* Die Aktivität **[!UICONTROL Speicherung]**
-* Die Aktivität **[!UICONTROL Ende]**
-
-![](assets/social_webapp_031.png)
-
-Gehen Sie wie folgt vor, um eine Schaltfläche zum Vorausfüllen hinzuzufügen:
-
-1. Erstellen Sie ein Formular.
-
-   ![](assets/social_webapp_032.png)
-
-1. Gehen Sie auf die Ebene der Formularfelder und fügen Sie einen Link hinzu.
-
-   ![](assets/social_webapp_033.png)
-
-1. Geben Sie den Titel ein und wählen Sie den Typ **[!UICONTROL Schaltfläche]** aus.
-
-   ![](assets/social_webapp_034.png)
-
-1. Gehen Sie zum Feld **[!UICONTROL Aktion]** und wählen Sie **[!UICONTROL Via Facebook vorausfüllen]** aus.
-
-   ![](assets/social_webapp_035.png)
-
-1. Gehen Sie zum Feld **[!UICONTROL Anwendung]** und wählen Sie das zuvor erstellte externe Konto vom Typ **[!UICONTROL Facebook Connect]** aus. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../social/using/creating-a-facebook-application.md#configuring-external-accounts).
-
-   ![](assets/social_webapp_036.png)
+   >Weitere Informationen zur Seitenreihenfolge in einem Webformular finden Sie unter [Seitenreihenfolge eines Webformulars definieren](defining-web-forms-page-sequencing.md).
 
 ### HTML-Inhalt personalisieren {#personalizing-html-content}
 
@@ -168,7 +115,7 @@ Sie können den HTML-Inhalt einer Formularseite mit auf einer vorherigen Seite e
 
 ![](assets/s_ncs_admin_survey_tag_ctx_1.png)
 
-Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte Marke nochmals auf der nächsten Seite einfügen. Die zu verwendende Syntax hängt vom Speichermodus der Informationen ab. Weitere Informationen hierzu finden Sie unter [Erfasste Informationen verwenden](../../web/using/web-forms-answers.md#using-collected-information).
+Mit Personalisierungsfeldern können Sie den Benutzernamen und die ausgewählte Marke nochmals auf der nächsten Seite einfügen. Die zu verwendende Syntax hängt vom Speichermodus der Informationen ab. Weitere Informationen hierzu finden Sie unter [Erfasste Informationen verwenden](web-forms-answers.md#using-collected-information).
 
 >[!NOTE]
 >
@@ -191,7 +138,7 @@ Das Ergebnis sieht folgendermaßen aus:
 
 Im Tab **[!UICONTROL Text]** können Sie Variablenfelder erstellen, die in HTML zwischen den Zeichen &lt;%= und %> mit der folgenden Syntax verwendet werden können: **$(IDENTIFIER)**.
 
-Verwenden Sie diese Methode zur einfachen Lokalisierung Ihrer Strings. Siehe [Webformular übersetzen](../../web/using/translating-a-web-form.md).
+Verwenden Sie diese Methode zur einfachen Lokalisierung Ihrer Strings. Siehe [Webformular übersetzen](translating-a-web-form.md).
 
 Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die Möglichkeit, den String „Datum des letzten Kontakts:“ im HTML-Inhalt anzuzeigen. Gehen Sie dazu wie folgt vor:
 
@@ -214,7 +161,7 @@ Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die M
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-Mit diesem Verfahren können Sie den Text von Web-Formularen nur einmal festlegen und Übersetzungen mit dem integrierten Übersetzungs-Tool verwalten. Weitere Informationen finden Sie unter [Webformular übersetzen](../../web/using/translating-a-web-form.md).
+Mit diesem Verfahren können Sie den Text von Web-Formularen nur einmal festlegen und Übersetzungen mit dem integrierten Übersetzungs-Tool verwalten. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
 
 ## Bilder einfügen {#inserting-images}
 
