@@ -6,7 +6,7 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 4e0df18f-3623-4dfb-a2f8-ad293dbc4dd5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 100%
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Mit Adobe Campaign können Sie Kommunikations- und Marketing-Kampagnen definieren, optimieren, ausführen und analysieren. Adobe Campaign fungiert dabei als zentrales Befehls- und Ausführungszentrum für Marketing-Strategien. Weitere Informationen finden Sie unter [Auf Kampagnen zugreifen](../../campaign/using/accessing-campaigns.md) und [Marketing-Kampagnen erstellen](../../campaign/using/setting-up-marketing-campaigns.md).
 
-Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die Steuerung von Marketing-Aktionen in einem kollaborativen Modus, indem es eine vollständige Verwaltung und Echtzeitverfolgung der betreffenden Aufgaben, Budgets und Marketing-Ressourcen erlaubt. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung der Verwaltung von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Lesen Sie diesbezüglich [diesen Abschnitt](../../campaign/using/about-marketing-resource-management.md).
+Darüber hinaus gestattet das Modul **Marketing Resource Management (MRM)** die Steuerung von Marketing-Aktionen in einem kollaborativen Modus, indem es eine vollständige Verwaltung und Echtzeitverfolgung der betreffenden Aufgaben, Budgets und Marketing-Ressourcen erlaubt. Das Marketing Resource Management ermöglicht die Optimierung und Regulierung der Verwaltung von internen und externen Prozessen, Ressourcen und Marketing-Kampagnen sowie der Zusammenarbeit mit externen Dienstleistern (Agenturen, Druckereien etc.). Lesen Sie diesbezüglich [diesen Abschnitt](../../mrm/using/about-marketing-resource-management.md).
 
 >[!NOTE]
 >
