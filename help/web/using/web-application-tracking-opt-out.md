@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: 4bff6b55-3335-433e-a2ff-5d8c83e8f0d3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 100%
@@ -33,7 +33,7 @@ Adobe Campaign stellt ein Musterbanner bereit, das Sie an Ihre Anforderungen anp
 >
 >Wenn Sie ein eigenes Banner erstellen möchten, personalisieren Sie das native Banner.
 
-Um das Banner zu aktivieren, müssen Sie die Eigenschaften für Webanwendungen konfigurieren. Weitere Informationen hierzu finden Sie im Abschnitt [Webanwendungen konzipieren](../../web/using/designing-a-web-application.md).
+Um das Banner zu aktivieren, müssen Sie die Eigenschaften für Webanwendungen konfigurieren. Weitere Informationen hierzu finden Sie im Abschnitt [Webanwendungen konzipieren](designing-a-web-application.md).
 
 Wenn Webtracking aktiviert ist, haben Sie folgende Möglichkeiten:
 
@@ -64,7 +64,7 @@ Das Standardbanner hat folgende Struktur:
 
 Ersetzen Sie **Please insert your message here** durch den Baustein, der Ihre Trackinginformation enthält. Dieser Austausch sollte in dem neuen, mit dem Opt-out-Banner verbundenen Gestaltungsbaustein ausgeführt werden.
 
-Das Banner wird mit einer spezifischen CSS-Datei bereitgestellt. Sie können die Stile aber überschreiben, wenn Sie eine Webseite erstellen und konfigurieren. Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../web/using/content-editor-interface.md).
+Das Banner wird mit einer spezifischen CSS-Datei bereitgestellt. Sie können die Stile aber überschreiben, wenn Sie eine Webseite erstellen und konfigurieren. Weiterführende Informationen dazu finden Sie auf [dieser Seite](content-editor-interface.md).
 
 ## Opt-out-Cookie mit einer API einrichten {#setting-the-opt-out-cookie-using-api}
 
