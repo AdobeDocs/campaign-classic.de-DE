@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2bc077c4-ed65-4157-bfc9-df5d0442f476
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '1208'
 ht-degree: 24%
@@ -15,7 +15,7 @@ ht-degree: 24%
 
 # Installieren von nativen Campaign Classic-Packages{#installing-campaign-standard-packages}
 
-## Über integrierte Packages {#campaign-standard-packages}
+## Über native Packages {#campaign-standard-packages}
 
 Integrierte Pakete enthalten eine Reihe von Funktionen, die je nach Ihren Anforderungen und Ihrem Vertrag installiert werden können. Die vollständige Liste der nativen Campaign-Packages finden Sie unten.
 
@@ -58,7 +58,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
  <tbody> 
   <tr> 
    <td> Versand<br /> </td> 
-   <td> Überprüft Sendungen und etwaige Probleme beim Nachrichtenversand. <a href="../../delivery/using/about-delivery-monitoring.md">Mehr dazu</a><br /> </td> 
+   <td> Überprüft Sendungen und etwaige Probleme beim Nachrichtenversand. <a href="../../delivery/using/about-delivery-monitoring.md">Weitere Informationen</a><br /> </td> 
    <td> Alle</td> 
   </tr> 
   <tr> 
@@ -68,7 +68,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Marketing-Ressourcen (MRM)<br /> </td> 
-   <td> Steuerung kollaborativer Marketing-Aktionen durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="../../campaign/using/about-marketing-resource-management.md">Weitere Infos</a> <br /> </td> 
+   <td> Steuerung kollaborativer Marketing-Aktionen durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="../../mrm/using/about-marketing-resource-management.md">Weitere Infos</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 
   <tr> 
@@ -139,7 +139,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
   </tr> 
   <tr> 
    <td> Online-Umfragen (Survey Manager)<br /> </td> 
-   <td> Erstellt und verwaltet Online-Formulare, um Profilinformationen hinzuzufügen oder zu ändern, sich anzumelden, sich abzumelden oder ein Gewinnspielformular zu erstellen. Optional. <a href="../../web/using/about-surveys.md">Weitere Infos</a> <br /> </td> 
+   <td> Erstellt und verwaltet Online-Formulare, um Profilinformationen hinzuzufügen oder zu ändern, sich anzumelden, sich abzumelden oder ein Gewinnspielformular zu erstellen. Optional. <a href="../../surveys/using/about-surveys.md">Weitere Infos</a> <br /> </td> 
    <td> Marketing<br /> </td> 
   </tr> 
   <tr> 
