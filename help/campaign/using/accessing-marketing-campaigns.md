@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 100%
+source-wordcount: '1064'
+ht-degree: 99%
 
 ---
 
@@ -34,7 +34,7 @@ Der **[!UICONTROL Navigationsblock]** im Tab **[!UICONTROL Kampagnen]** enthält
 * **Kampagnenkalender**: Kalender der Pläne, Marketing-Programme, Sendungen und Kampagnen . Siehe [Kampagnenkalender](#campaign-calendar).
 * **Kampagnen**: Zugriff auf alle in Marketingprogrammen enthaltene Kampagnen;
 * **Sendungen**: Zugriff auf in Kampagnen enthaltene Sendungen;
-* **Web-Anwendungen**: Zugriff auf Web-Anwendungen (Formulare, Umfragen etc.).
+* **Webanwendungen**: Zugriff auf Webanwendungen (Formulare, Landingpages usw.).
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Eine Kampagne umfasst mehrere Sendungen. Die Planung einer Kampagne bietet eine 
 
 Jede Kampagne verfügt über ein dediziertes Forum, in dem beteiligte Benutzer Nachrichten austauschen können.
 
-Weitere Informationen hierzu finden Sie unter [Diskussionsforen](../../campaign/using/discussion-forums.md).
+Weitere Informationen hierzu finden Sie unter [Diskussionsforen](../../mrm/using/discussion-forums.md).
 
 #### Berichte {#reports}
 
