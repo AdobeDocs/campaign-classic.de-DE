@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 100%
@@ -135,6 +135,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 
@@ -200,8 +201,9 @@ Folgende Optionen sind verfügbar:
 >[!NOTE]
 >
 >* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
->
->* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
+   >
+   >
+* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
 
 ## Bilder und Animationen verwalten {#managing-images-and-animations}
@@ -251,7 +253,7 @@ Standardmäßig stammen die dargestellten Felder aus der Tabelle **[!UICONTROL E
 
 Der Name des Feldes erscheint daraufhin gelb unterlegt im Editor. Er wird zum Zeitpunkt der Personalisierung (z. B. bei der Ansicht einer Landingpage in der Vorschau) durch das für den jeweiligen Empfänger gespeicherte Profil ersetzt.
 
-Ein Beispiel wird im Abschnitt [Personalisierungsfeld einfügen](../../web/using/creating-a-landing-page.md#inserting-a-personalization-field) dargestellt.
+Ein Beispiel wird im Abschnitt [Personalisierungsfeld einfügen](creating-a-landing-page.md#inserting-a-personalization-field) dargestellt.
 
 ### Gestaltungsbaustein einfügen {#inserting-a-personalization-block}
 
