@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: 69805e60-8fc6-45d1-9087-5f7d949cc76a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 100%
@@ -21,7 +21,7 @@ Bei der Erstellung einer Webanwendung vom Typ &quot;Landingpage&quot; können Si
 
 ![](assets/dce_popup_templatechoice.png)
 
-Weiterführende Informationen zum Hinzufügen einer Vorlage finden Sie im Abschnitt [Globale Optionen](../../web/using/content-editor-interface.md#global-options).
+Weiterführende Informationen zum Hinzufügen einer Vorlage finden Sie im Abschnitt [Globale Optionen](content-editor-interface.md#global-options).
 
 ## Versand als Vorlage speichern {#saving-a-delivery-as-a-template}
 
