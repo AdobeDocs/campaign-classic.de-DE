@@ -6,7 +6,7 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 100%
@@ -35,9 +35,9 @@ Die Zyklen einer mit Adobe Campaign gesteuerten Marketingkampagne stellen die Ha
 
 ### Integriertes Kundenprofil {#integrated-customer-profile}
 
-Alle Profile (Kunden, Interessenten, Newsletter-Abonnenten etc.) werden in der Adobe-Campaign-Datenbank zentral gespeichert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen geschehen: Online-Akquise über Webformulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie den Marketingverlauf, Kaufinformationen, Präferenzen, CRM-Daten und relevante personenbezogene Daten integrieren, analysieren und nutzen.
+Alle Profile (Kunden, Interessenten, Newsletter-Abonnenten usw.) werden in der Adobe Campaign-Datenbank zentral gespeichert. Die Akquise von Profilen und die Datenbankerstellung können auf verschiedenste Weisen geschehen: Online-Akquise über Web-Formulare, manueller oder automatisierter Import von Textdateien, Replikation von bereits existierenden Datenbanken oder Informationssystemen des Unternehmens. Mit Adobe Campaign können Sie Marketing-Verlauf, Kaufinformationen, Voreinstellungen, CRM-Daten und alle relevanten PII-Daten in eine konsolidierte Ansicht integrieren, um sie zu analysieren und Maßnahmen zu ergreifen.
 
-In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS etc.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie das Ziel filtern, das eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
+In Adobe Campaign sind Empfänger die Standardprofile, an die Sendungen übermittelt werden (E-Mails, SMS usw.). Dank der in der Datenbank gespeicherten Empfängerdaten können Sie die Zielgruppe filtern, die eine bestimmte Sendung erhält, und Personalisierungsdaten in Ihren Versandinhalten hinzufügen. In der Datenbank sind weitere Profiltypen vorhanden. Sie sind für andere Verwendungszwecke gedacht. Beispielsweise dienen Testprofile zum Testen von Sendungen, bevor sie tatsächlich an das endgültige Ziel übermittelt werden.
 
 Die Grundlagen des Profil-Managements werden im Abschnitt [Über Profile](../../platform/using/about-profiles.md) erläutert.
 
@@ -53,7 +53,7 @@ Adobe Campaign unterstützt Sie bei der Konzeption und Durchführung von zielger
 
 ### Personalisierung und Echtzeit-Interaktion {#personalization-and-real-time-interaction}
 
-Erwecken Sie die Aufmerksamkeit Ihrer Kunden und verbessern Sie Ihre Antwortraten dank einer weitreichenden, dem Profil und den Vorlieben Ihrer Kunden entsprechenden Personalisierung des Inhalts und der Header Ihrer Nachrichten. Inhaltsverwaltung und Personalisierung werden auf [dieser Seite](../../delivery/using/about-personalization.md) beschrieben. In [diesem Abschnitt](../../campaign/using/about-marketing-resource-management.md) finden Sie weiterführende Informationen zu kollaborativer Inhaltsverwaltung, Benachrichtigungskreisläufen und zum Thema Validierung.
+Erwecken Sie die Aufmerksamkeit Ihrer Kunden und verbessern Sie Ihre Antwortraten dank einer weitreichenden, dem Profil und den Vorlieben Ihrer Kunden entsprechenden Personalisierung des Inhalts und der Header Ihrer Nachrichten. Inhaltsverwaltung und Personalisierung werden auf [dieser Seite](../../delivery/using/about-personalization.md) beschrieben. In [diesem Abschnitt](../../mrm/using/about-marketing-resource-management.md) finden Sie weiterführende Informationen zu kollaborativer Inhaltsverwaltung, Benachrichtigungskreisläufen und zum Thema Validierung.
 
 ### Analyse und Reporting {#analysis-and-reporting}
 
@@ -71,13 +71,13 @@ Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hän
 
 * [Kanäle](../../delivery/using/steps-about-delivery-creation-steps.md): Konzeption und Durchführung von Sendungen auf unterschiedlichen Kanälen (E-Mail, SMS, LINE, Mobile App, Briefpost)
 * [Campaign](../../campaign/using/designing-marketing-campaigns.md): Abstimmung von Cross-Channel-Marketingkampagnen
-* [MRM](../../campaign/using/about-marketing-resource-management.md): Verwaltung von Marketing-Ressourcen und Budgets
+* [MRM](../../mrm/using/about-marketing-resource-management.md): Verwaltung von Marketing-Ressourcen und Budgets
 * [Interaktion](../../interaction/using/interaction-and-offer-management.md): Verwaltung von Angeboten mit Campaign
 * [Message Center](../../message-center/using/about-transactional-messaging.md): Versand von Transaktionsnachrichten per E-Mail, SMS oder Mobile App
 * [Social Marketing](../../social/using/about-social-marketing.md): Kommunikation in sozialen Netzwerken: Facebook, Twitter
 * [Workflow](../../workflow/using/about-workflows.md)/Data Management: Automatisierung von Prozessen und Verwaltung von Daten mithilfe von Workflows
 * [Webanwendungen](../../web/using/about-web-applications.md): Erstellen von Webseiten und Formularen
-* [Survey Manager](../../web/using/about-surveys.md): Erstellung von Online-Umfragen
+* [Survey Manager](../../surveys/using/about-surveys.md): Erstellung von Online-Umfragen
 * [Inhaltsverwaltung (Content Manager)](../../delivery/using/about-content-management.md): Verwaltung von E-Mail-Inhalten
 * [Dezentrales Marketing](../../campaign/using/about-distributed-marketing.md): Koordination von Kampagnen für zentrale/lokale Agenturen
 * [Response Manager](../../campaign/using/about-response-manager.md): Reaktionsverwaltung
