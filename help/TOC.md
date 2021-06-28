@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen zu erstellen, zu koordinieren und bereitzustellen, die Kunden tatsächlich wünschen - über E-Mail-, mobile, Offline-Kanäle und mehr.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: 9febe6bc68c8bc31714a74455fa70ef83920ded9
+source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
 workflow-type: tm+mt
 source-wordcount: '2518'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -261,12 +261,6 @@ ht-degree: 98%
       + [Genehmigungen einrichten und verwalten](campaign/using/marketing-campaign-approval.md)
       + [Kampagnen überwachen](campaign/using/marketing-campaign-monitoring.md)
       + [Dienstleister, Lager und Budgets](campaign/using/providers--stocks-and-budgets.md)
-   + Aufgaben, Ressourcen und Budgets {#tasks--resources-and-budgets}
-      + [Über die Verwaltung von Marketing-Ressourcen](campaign/using/about-marketing-resource-management.md)
-      + [Aufgaben erstellen und verwalten](campaign/using/creating-and-managing-tasks.md)
-      + [Kosten kontrollieren](campaign/using/controlling-costs.md)
-      + [Marketing-Ressourcen verwalten](campaign/using/managing-marketing-resources.md)
-      + [Diskussionsforen](campaign/using/discussion-forums.md)
    + Kampagnenoptimierung {#campaign-optimization}
       + [Über Kampagnentypologien](campaign/using/about-campaign-typologies.md)
       + [Druckregeln](campaign/using/pressure-rules.md)
@@ -275,20 +269,26 @@ ht-degree: 98%
       + [Filterregeln](campaign/using/filtering-rules.md)
       + [Regeln anwenden](campaign/using/applying-rules.md)
       + [Kampagnensimulation](campaign/using/campaign-simulations.md)
-   + Dezentrales Marketing {#distributed-marketing}
-      + [Über dezentrales Marketing](campaign/using/about-distributed-marketing.md)
-      + [Lokale Kampagnen erstellen](campaign/using/creating-a-local-campaign.md)
-      + [Partizipative Kampagnen erstellen](campaign/using/creating-a-collaborative-campaign.md)
-      + [Kampagnenkit veröffentlichen](campaign/using/publishing-the-campaign-package.md)
-      + [Auf Kampagnen zugreifen](campaign/using/accessing-campaigns.md)
-      + [Tracken einer Kampagne](campaign/using/tracking-a-campaign.md)
-      + [Anwendungsfälle](campaign/using/examples.md)
-   + Reaktionsverwaltung (Response Manager) {#response-manager}
-      + [Erste Schritte mit dem Response Manager](campaign/using/about-response-manager.md)
-      + [Konfiguration](campaign/using/configuration.md)
-      + [Hypothesenvorlagen](campaign/using/hypothesis-templates.md)
-      + [Erstellen von Hypothesen](campaign/using/creating-hypotheses.md)
-      + [Hypothesenverfolgung](campaign/using/hypothesis-tracking.md)
++ Verwaltung von Marketing-Ressourcen {#mrm}
+   + [Über die Verwaltung von Marketing-Ressourcen](mrm/using/about-marketing-resource-management.md)
+   + [Aufgaben erstellen und verwalten](mrm/using/creating-and-managing-tasks.md)
+   + [Kosten kontrollieren](mrm/using/controlling-costs.md)
+   + [Marketing-Ressourcen verwalten](mrm/using/managing-marketing-resources.md)
+   + [Diskussionsforen](mrm/using/discussion-forums.md)
++ Dezentrales Marketing {#distributed-marketing}
+   + [Über dezentrales Marketing](campaign/using/about-distributed-marketing.md)
+   + [Lokale Kampagnen erstellen](campaign/using/creating-a-local-campaign.md)
+   + [Partizipative Kampagnen erstellen](campaign/using/creating-a-collaborative-campaign.md)
+   + [Kampagnenkit veröffentlichen](campaign/using/publishing-the-campaign-package.md)
+   + [Auf Kampagnen zugreifen](campaign/using/accessing-campaigns.md)
+   + [Tracken einer Kampagne](campaign/using/tracking-a-campaign.md)
+   + [Anwendungsfälle](campaign/using/examples.md)
++ Reaktionsverwaltung (Response Manager) {#response-manager}
+   + [Erste Schritte mit dem Response Manager](campaign/using/about-response-manager.md)
+   + [Konfiguration](campaign/using/configuration.md)
+   + [Hypothesenvorlagen](campaign/using/hypothesis-templates.md)
+   + [Erstellen von Hypothesen](campaign/using/creating-hypotheses.md)
+   + [Hypothesenverfolgung](campaign/using/hypothesis-tracking.md)
 + Berichte entwerfen und freigeben {#reporting}
    + Erste Schritte mit Reporting {#reporting-in-adobe-campaign}
       + [Reporting-Tools](reporting/using/about-adobe-campaign-reporting-tools.md)
@@ -326,7 +326,6 @@ ht-degree: 98%
       + [Indikatoren erstellen](reporting/using/creating-indicators.md)
       + [Cubes zur Datenanalyse verwenden](reporting/using/using-cubes-to-explore-data.md)
       + [Konzepte und Methoden](reporting/using/concepts-and-methodology.md)
-      + [Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage](reporting/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Web-Inhalte gestalten {#designing-content}
    + Web-Anwendungen {#web-applications}
       + [Erste Schritte mit Web-Anwendungen](web/using/about-web-applications.md)
@@ -357,14 +356,15 @@ ht-degree: 98%
       + [Eigenschaften eines Web-Formulars definieren](web/using/defining-web-forms-properties.md)
       + [Web-Formular übersetzen](web/using/translating-a-web-form.md)
       + [Anwendungsfälle: Web-Formulare](web/using/use-cases--web-forms.md)
-   + Online-Umfragen {#online-surveys}
-      + [Erste Schritte mit Umfragen](web/using/about-surveys.md)
-      + [Wichtige Schritte zum Erstellen einer Umfrage](web/using/getting-started-with-surveys.md)
-      + [Umfrage entwerfen](web/using/building-a-survey.md)
-      + [Antworten verwalten](web/using/managing-answers.md)
-      + [Erfasste Daten veröffentlichen, tracken und verwenden](web/using/publish--track-and-use-collected-data.md)
-      + [Umfragen konfigurieren](web/using/configuring-surveys.md)
-      + [Anwendungsfall: Erstellen eines Empfehlungsformulars](web/using/use-case--creating-a-refer-a-friend-form.md)
++ Online-Umfragen erstellen {#online-surveys}
+   + [Erste Schritte mit Umfragen](surveys/using/about-surveys.md)
+   + [Wichtige Schritte zum Erstellen einer Umfrage](surveys/using/getting-started-with-surveys.md)
+   + [Umfrage entwerfen](surveys/using/building-a-survey.md)
+   + [Antworten verwalten](surveys/using/managing-answers.md)
+   + [Erfasste Daten veröffentlichen, tracken und verwenden](surveys/using/publish--track-and-use-collected-data.md)
+   + [Umfragen konfigurieren](surveys/using/configuring-surveys.md)
+   + [Anwendungsfall: Erstellen eines Empfehlungsformulars](surveys/using/use-case--creating-a-refer-a-friend-form.md)
+   + [Anwendungsbeispiel: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage](surveys/using/use-case--displaying-report-on-answers-to-an-online-survey.md)
 + Mit Adobe Experience Cloud integrieren {#integrating-with-adobe-experience-cloud}
    + [Über Campaign-Integrationen](integrations/using/about-campaign-integrations.md)
    + Audience-Freigabe {#audience-sharing}
