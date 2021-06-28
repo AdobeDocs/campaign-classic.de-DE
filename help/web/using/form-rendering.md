@@ -6,7 +6,7 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
 workflow-type: tm+mt
 source-wordcount: '1042'
 ht-degree: 100%
@@ -69,9 +69,9 @@ Verwenden Sie dazu den Tab **[!UICONTROL Erweitert]**.
 
 Damit können Sie die folgenden Eigenschaften definieren:
 
-* **[!UICONTROL Titelposition]**: siehe [Die Position von Titeln definieren](../../web/using/defining-web-forms-layout.md#defining-the-position-of-labels),
+* **[!UICONTROL Titelposition]**: siehe [Die Position von Titeln definieren](defining-web-forms-layout.md#defining-the-position-of-labels),
 * **[!UICONTROL Titelformat]**: mit oder ohne Zeilenumbruch,
-* **[!UICONTROL Zellenanzahl]** : siehe [Die Felder auf der Seite positionieren](../../web/using/defining-web-forms-layout.md#positioning-the-fields-on-the-page),
+* **[!UICONTROL Zellenanzahl]** : siehe [Die Felder auf der Seite positionieren](defining-web-forms-layout.md#positioning-the-fields-on-the-page),
 * **[!UICONTROL Horizontale Ausrichtung]** (links, rechts, zentriert) und **[!UICONTROL vertikale Ausrichtung]** (hoch, niedrig, Mitte),
 * **[!UICONTROL Breite]** des Bereichs: Diese kann als Prozentsatz oder in em, Punkten oder Pixeln (Standardwert) ausgedrückt werden,
 * Maximale **[!UICONTROL Länge]**: Maximale Anzahl erlaubter Zeichen (für Steuerelemente vom Typ Text, Zahl und Passwort),
@@ -146,17 +146,17 @@ Im Feldauswahl-Fenster können Sie aus folgenden Daten auswählen:
 
 * Der Hauptbaum enthält die Parameter des Formulars. Die Standardparameter sind Kennung (entspricht der verschlüsselten Kennung des Empfängers), Sprache und Ursprung.
 
-   Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-properties.md#form-url-parameters).
+   Weiterführende Informationen hierzu finden Sie auf dieser [Seite](defining-web-forms-properties.md#form-url-parameters).
 
 * Im Unterbaum **[!UICONTROL Empfänger]** befinden sich die Eingabefelder, die in das Formular eingefügt wurden und in der Datenbank gespeichert sind.
 
-   Weitere Informationen finden Sie unter [Speichern von Daten in der Datenbank](../../web/using/web-forms-answers.md#storing-data-in-the-database).
+   Weitere Informationen finden Sie unter [Speichern von Daten in der Datenbank](web-forms-answers.md#storing-data-in-the-database).
 
-* Die Unterstruktur **[!UICONTROL Variablen]** enthält die verfügbaren Variablen für dieses Formular. Weitere Informationen finden Sie unter [Daten in einer lokalen Variablen speichern](../../web/using/web-forms-answers.md#storing-data-in-a-local-variable).
+* Die Unterstruktur **[!UICONTROL Variablen]** enthält die verfügbaren Variablen für dieses Formular. Weitere Informationen finden Sie unter [Daten in einer lokalen Variablen speichern](web-forms-answers.md#storing-data-in-a-local-variable).
 
-Weitere Informationen hierzu finden Sie in diesem Anwendungsbeispiel: [Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen](../../web/using/use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
+Weitere Informationen hierzu finden Sie in diesem Anwendungsbeispiel: [Je nach den ausgewählten Werten unterschiedliche Optionen anzeigen](use-cases--web-forms.md#displaying-different-options-depending-on-the-selected-values).
 
-Sie können auch mit dem Objekt **[!UICONTROL Test]** eine Bedingung für die Anzeige von Formularseiten festlegen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../web/using/defining-web-forms-page-sequencing.md#conditional-page-display).
+Sie können auch mit dem Objekt **[!UICONTROL Test]** eine Bedingung für die Anzeige von Formularseiten festlegen. Weiterführende Informationen dazu finden Sie auf dieser [Seite](defining-web-forms-page-sequencing.md#conditional-page-display).
 
 ## Elemente aus einem vorhandenen Formular importieren {#importing-elements-from-an-existing-form}
 
