@@ -6,7 +6,7 @@ audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
 ht-degree: 100%
 
@@ -21,8 +21,8 @@ Um die kombinierte Nutzung von Adobe Campaign und Adobe Experience Manager zu er
 Führen Sie die unten aufgeführten Schritte aus, um die Konfiguration in Adobe Campaign zu beginnen:
 
 1. [Installieren Sie das AEM-Integrations-Package in Adobe Campaign.](#install-the-aem-integration-package-in-adobe-campaign)
-1. [Konfigurieren Sie das externe Konto](#configure-the-external-account)
-1. [AEM-Ressourcenfilter konfigurieren](#configure-aem-resources-filtering)
+1. [Konfigurieren Sie das externe Konto.](#configure-the-external-account)
+1. [Konfigurieren Sie AEM-Ressourcenfilter.](#configure-aem-resources-filtering)
 
 Erweiterte Konfigurationen wie die Verwaltung von Personalisierungsfeldern und -bausteinen finden Sie im [Handbuch](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/campaignonpremise.html) von Adobe Experience Manager.
 
