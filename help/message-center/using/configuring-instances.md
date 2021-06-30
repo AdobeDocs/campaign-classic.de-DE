@@ -7,40 +7,40 @@ content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1277'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 
 # Instanzen konfigurieren {#creating-a-shared-connection}
 
-Um die Funktionen für Transaktionsnachrichten zu nutzen, müssen Sie die Kontroll- und Ausführungsinstanzen konfigurieren. Sie können Folgendes verwenden:
-* [Eine Kontrollinstanz, die mit einer oder mehreren Ausführungsinstanzen ](#control-instance) verknüpft ist
-* [Mehrere ](#using-several-control-instances) Kontrollinstanzen, die mit mehreren Ausführungsinstanzen verknüpft sind
+Zur Nutzung der Transaktionsnachrichten-Funktionen müssen Sie die Kontroll- und Ausführungsinstanzen konfigurieren. Sie können dazu Folgendes verwenden:
+* [Eine Kontrollinstanz](#control-instance), die mit einer oder mehreren Ausführungsinstanzen verknüpft ist
+* [Mehrere Kontrollinstanzen](#using-several-control-instances), die mit mehreren Ausführungsinstanzen verknüpft sind
 
 >[!IMPORTANT]
 >
->Die Schemaerweiterungen haben sich auf die Ressourcen ausgewirkt, die von [technischen Workflows des Message-Center-Moduls](../../message-center/using/additional-configurations.md#technical-workflows) in Kontroll- oder Ausführungsinstanzen verwendet werden, und müssen in den anderen vom Transaktionsnachrichtenmodul verwendeten Instanzen dupliziert werden.
+>Erweiterungen von Schemata, die von [technischen Workflows des Message Center-Moduls](../../message-center/using/additional-configurations.md#technical-workflows) auf Kontroll- oder Ausführungsinstanzen verwendet werden, müssen auf den anderen vom Transaktionsnachrichten-Modul verwendeten Instanzen dupliziert werden.
 
 Außerdem müssen Sie die Ausführungsinstanz(en) angeben und mit der/den Kontrollinstanz(en) verbinden.
 
-Alle Schritte, die zum Konfigurieren und Verbinden der Kontroll- und Ausführungsinstanzen erforderlich sind, werden in diesem Abschnitt beschrieben.
+Alle Schritte für die Konfiguration und Verbindung der Kontroll- und Ausführungsinstanzen erforderlichen Schritte werden im vorliegenden Abschnitt beschrieben.
 
 >[!IMPORTANT]
 >
->Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
+>Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können nicht auf derselben Campaign-Instanz ausgeführt werden.
 
-## Kontrollinstanz {#control-instance} konfigurieren
+## Kontrollinstanz konfigurieren {#control-instance}
 
-Um die Kontrollinstanz mit den Ausführungsinstanzen zu verbinden, müssen Sie zunächst ein **[!UICONTROL Ausführungsinstanz]** externes Konto **in der Kontrollinstanz** erstellen und konfigurieren. Daher können Transaktionsnachrichten-Vorlagen nach [publish](../../message-center/using/publishing-message-templates.md#template-publication) in den Ausführungsinstanzen bereitgestellt werden.
+Um die Kontrollinstanz mit den Ausführungsinstanzen zu verbinden, müssen Sie zunächst ein externes Konto vom Typ **[!UICONTROL Ausführungsinstanz]** **auf der Kontrollinstanz** erstellen und konfigurieren. Auf diese Weise ist es möglich, Transaktionsnachrichtenvorlagen nach ihrer [Veröffentlichung](../../message-center/using/publishing-message-templates.md#template-publication) auf den Ausführungsinstanzen bereitzustellen.
 
-Wenn Sie mehrere Ausführungsinstanzen verwenden, müssen Sie so viele externe Konten wie Ausführungsinstanzen erstellen.
+Wenn Sie mehrere Ausführungsinstanzen verwenden, müssen Sie so viele externe Konten erstellen, wie Sie Ausführungsinstanzen haben.
 
 >[!NOTE]
 >
->Wenn Ausführungsinstanzen von mehreren Kontrollinstanzen verwendet werden, können die Daten nach Ordner und Operator unterteilt werden. Weitere Informationen hierzu finden Sie unter [Mehrere Kontrollinstanzen verwenden](#using-several-control-instances).
+>Wenn Ausführungsinstanzen von mehreren Kontrollinstanzen verwendet werden, können die Daten nach Ordner und Benutzer unterteilt werden. Weiterführende Informationen hierzu finden Sie unter [Mehrere Kontrollinstanzen verwenden](#using-several-control-instances).
 
 ### Externes Konto erstellen
 
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ **[!UICONTROL Ausführung
 
    >[!NOTE]
    >
-   >Um zu vermeiden, bei jeder Verbindung mit der Instanz ein Passwort angeben zu müssen, können Sie die IP-Adresse der Kontrollinstanz in der Ausführungsinstanz angeben. Weiterführende Informationen dazu finden Sie im Abschnitt [Ausführungsinstanz(en)](#execution-instance) konfigurieren.
+   >Um zu vermeiden, bei jeder Verbindung mit der Instanz ein Passwort angeben zu müssen, können Sie die IP-Adresse der Kontrollinstanz in der Ausführungsinstanz angeben. Weiterführende Informationen hierzu finden Sie unter [Ausführungsinstanzen konfigurieren](#execution-instance).
 
 1. Geben Sie die von der Ausführungsinstanz zu verwendende Verbindungsmethode an. Die Ausführungsinstanz leitet die abgerufenen Daten an die Kontrollinstanz weiter, um die Transaktionsnachrichten- und Ereignisverläufe anzureichern.
 
@@ -87,7 +87,7 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ **[!UICONTROL Ausführung
    >
    >Beachten Sie, dass bei Verwendung von FDA über HTTP nur Ausführungsinstanzen mit einer PostgreSQL-Datenbank unterstützt werden. MSSQL- oder Oracle-Datenbanken werden nicht unterstützt.
 
-   Die zweite Methode (FDA) wird empfohlen, wenn die Kontrollinstanz direkten Zugriff auf die Datenbank der Ausführungsinstanzen hat. Wenn nicht, wählen Sie den Webdienstzugriff aus. Das anzugebende FDA-Konto entspricht der Verbindung zu den Datenbanken der verschiedenen Ausführungsinstanzen, die in der Kontrollinstanz erstellt wurden.
+   Die zweite Methode (FDA) wird empfohlen, wenn die Kontrollinstanz direkten Zugriff auf die Datenbank der Ausführungsinstanzen hat. Ist das nicht der Fall, wählen Sie den Web-Dienstzugriff aus. Für das FDA-Konto ist dasjenige anzugeben, das der Verbindung für die Datenbanken der verschiedenen Ausführungsinstanzen entspricht, die auf der Kontrollinstanz erstellt wurden.
 
    ![](assets/messagecenter_create_extaccount_008.png)
 
@@ -97,31 +97,31 @@ Gehen Sie wie folgt vor, um ein externes Konto vom Typ **[!UICONTROL Ausführung
 
    ![](assets/messagecenter_create_extaccount_006.png)
 
-Wiederholen Sie diese Schritte bei Verwendung mehrerer Ausführungsinstanzen, um so viele externe Konten wie Ausführungsinstanzen zu erstellen.
+Wiederholen Sie diese Schritte bei Verwendung mehrerer Ausführungsinstanzen, um die gleiche Zahl an externen Konten zu erstellen, wie Sie Ausführungsinstanzen haben.
 
 ### Ausführungsinstanzen identifizieren {#identifying-execution-instances}
 
-Jede Ausführungsinstanz muss mit einer eindeutigen Kennung verknüpft sein, um den Verlauf jeder Ausführungsinstanz bei der Anzeige in der Kontrollinstanz zu unterscheiden.
+Jeder Ausführungsinstanz muss eine eindeutige Kennung zugewiesen werden, damit der Verlauf der einzelnen Ausführungsinstanzen bei der Anzeige auf der Kontrollinstanz unterschieden werden kann.
 
-Diese Kennung kann jeder Ausführungsinstanz **manuell** zugeordnet werden. In diesem Fall muss dieser Schritt **für jede Ausführungsinstanz** ausgeführt werden. Verwenden Sie dazu den Softwareverteilungs-Assistenten wie unten beschrieben:
+Diese Kennung kann den einzelnen Ausführungsinstanzen **manuell** zugeordnet werden. In diesem Fall muss dieser Schritt **für jede Ausführungsinstanz** ausgeführt werden. Verwenden Sie dazu den Software-Verteilungs-Assistenten wie im Folgenden beschrieben:
 
-1. Öffnen Sie den Softwareverteilungs-Assistenten in einer Ausführungsinstanz.
-1. Gehen Sie zum Fenster **[!UICONTROL Message Center]** .
+1. Öffnen Sie den Software-Verteilungs-Assistenten auf einer Ausführungsinstanz.
+1. Rufen Sie das Fenster **[!UICONTROL Message Center]** auf.
 1. Weisen Sie der Instanz die ausgewählte Kennung zu.
 
    ![](assets/messagecenter_id_execinstance_001.png)
 
 1. Wiederholen Sie die obigen Schritte für jede Ausführungsinstanz.
 
-Die Kennung kann auch **automatisch** zugeordnet werden. Gehen Sie dazu zur **Kontrollinstanz** und klicken Sie auf die Schaltfläche **[!UICONTROL Verbindung initialisieren]** .
+Die Kennung kann auch **automatisch** zugeordnet werden. Rufen Sie dazu die **Kontrollinstanz** auf und klicken Sie auf die Schaltfläche **[!UICONTROL Verbindung initialisieren]**.
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## Ausführungsinstanz(en) {#execution-instance} konfigurieren
+## Ausführungsinstanzen konfigurieren {#execution-instance}
 
 >[!NOTE]
 >
->Die folgenden Schritte müssen **für die Ausführungsinstanz(en)** ausgeführt werden.
+>Die nachfolgenden Schritte müssen **auf der/den Ausführungsinstanz(en)** ausgeführt werden.
 
 Gehen Sie wie folgt vor, um die Ausführungsinstanz(en) mit der Kontrollinstanz zu verbinden.
 
@@ -131,9 +131,9 @@ Um ein leeres Passwort zu verwenden, wechseln Sie zu den Ausführungsinstanzen u
 
 >[!NOTE]
 >
->Wenn Ausführungsinstanzen von mehreren Kontrollinstanzen verwendet werden, können die Daten nach Ordner und Operator unterteilt werden. Weitere Informationen hierzu finden Sie unter [Mehrere Kontrollinstanzen verwenden](#using-several-control-instances).
+>Wenn Ausführungsinstanzen von mehreren Kontrollinstanzen verwendet werden, können die Daten nach Ordner und Benutzer unterteilt werden. Weiterführende Informationen hierzu finden Sie unter [Mehrere Kontrollinstanzen verwenden](#using-several-control-instances).
 
-1. Wechseln Sie in einer Ausführungsinstanz zum Benutzerordner ( **[!UICONTROL Administration > Zugriffe > Benutzer]** ).
+1. Rufen Sie auf einer Ausführungsinstanz den Benutzerordner über **[!UICONTROL Administration > Zugriffe > Benutzer]** auf.
 1. Wählen Sie den **Message Center Agent** aus.
 
    ![](assets/messagecenter_operator_001.png)
@@ -146,39 +146,39 @@ Um ein leeres Passwort zu verwenden, wechseln Sie zu den Ausführungsinstanzen u
 
    ![](assets/messagecenter_operator_003.png)
 
-Wiederholen Sie diese Schritte bei Verwendung mehrerer Ausführungsinstanzen für jede Ausführungsinstanz.
+Wenn Sie mehrere Ausführungsinstanzen verwenden, wiederholen Sie diese Schritte für die einzelnen Ausführungsinstanzen.
 
-## Mehrere Kontrollinstanzen {#using-several-control-instances} verwenden
+## Mehrere Kontrollinstanzen verwenden {#using-several-control-instances}
 
-Mehrere Kontrollinstanzen können einen Ausführungscluster gemeinsam nutzen. Die für diesen Architekturtyp erforderlichen Konfigurationen werden im Folgenden dargestellt.
+Mehrere Kontrollinstanzen können einen Ausführungs-Cluster gemeinsam nutzen. Die für diesen Architekturtyp erforderlichen Konfigurationen werden im Folgenden dargestellt.
 
-Angenommen, Ihr Unternehmen verwaltet zwei Marken, von denen jede über eine eigene Kontrollinstanz verfügt: **Kontrolle 1** und **Kontrolle 2**. Außerdem werden zwei Ausführungsinstanzen verwendet. Sie müssen für jede Kontrollinstanz einen anderen Message Center-Operator eingeben: einen **mc1** -Operator für die **Control 1**-Instanz und einen **mc2** -Operator für die **Control 2**-Instanz.
+Nehmen wir an, Ihr Unternehmen verwaltet zwei Marken mit jeweils einer eigenen Kontrollinstanz: **Kontrolle 1** und **Kontrolle 2**. Außerdem gehen wir in diesem Beispiel von zwei Ausführungsinstanzen aus. Entsprechend müssen Sie für jede Kontrollinstanz einen eigenen Message Center-Benutzer eingeben: einen **mc1**-Benutzer für die Instanz **Kontrolle 1** und einen **mc2**-Benutzer für die Instanz **Kontrolle 2**.
 
-Erstellen Sie im Baum aller Ausführungsinstanzen einen Ordner pro Operator (**Ordner 1** und **Ordner 2**) und beschränken Sie den Datenzugriff der einzelnen Operatoren auf den jeweiligen Ordner.
+Erstellen Sie im Baum aller Ausführungsinstanzen einen Ordner pro Benutzer (**Ordner 1** und **Ordner 2**) und beschränken Sie den Datenzugriff der einzelnen Benutzer auf den jeweiligen Ordner.
 
-### Kontrollinstanzen {#configuring-control-instances} konfigurieren
+### Kontrollinstanzen konfigurieren {#configuring-control-instances}
 
 >[!NOTE]
 >
->Die folgenden Schritte müssen **für die Kontrollinstanzen** ausgeführt werden.
+>Die nachfolgenden Schritte müssen **auf den Kontrollinstanzen** ausgeführt werden.
 
-1. Erstellen Sie in der Kontrollinstanz **Kontrolle 1** ein externes Konto pro Ausführungsinstanz und geben Sie den Operator **mc1** in jedes externe Konto ein. Anschließend wird der Operator **mc1** für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
+1. Erstellen Sie auf der Kontrollinstanz **Kontrolle 1** für jede Ausführungsinstanz ein externes Konto und geben Sie den **mc1**-Benutzer in die einzelnen externen Konten ein. Anschließend wird der **mc1**-Benutzer für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_1.png)
 
-1. Erstellen Sie in der Kontrollinstanz **Kontrolle 2** ein externes Konto pro Ausführungsinstanz und geben Sie den Operator **mc2** in jedes externe Konto ein. Anschließend wird der Operator **mc2** für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
+1. Erstellen Sie auf der Kontrollinstanz **Kontrolle 2** für jede Ausführungsinstanz ein externes Konto und geben Sie den **mc2**-Benutzer in die einzelnen externen Konten ein. Anschließend wird der **mc2**-Benutzer für alle Ausführungsinstanzen erstellt (siehe [Ausführungsinstanzen konfigurieren](#configuring-execution-instances)).
 
    ![](assets/messagecenter_multi_control_2.png)
 
    >[!NOTE]
    >
-   >Weitere Informationen zum Konfigurieren einer Kontrollinstanz finden Sie in [diesem Abschnitt](#control-instance).
+   >Weiterführende Informationen dazu, wie Sie eine Kontrollinstanz konfigurieren, finden Sie in [diesem Abschnitt](#control-instance).
 
-### Ausführungsinstanzen {#configuring-execution-instances} konfigurieren
+### Ausführungsinstanzen konfigurieren {#configuring-execution-instances}
 
 >[!NOTE]
 >
->Die folgenden Schritte müssen **für die Ausführungsinstanzen** ausgeführt werden.
+>Die nachfolgenden Schritte müssen **auf den Ausführungsinstanzen** ausgeführt werden.
 
 Damit mehrere Kontrollinstanzen verwendet werden können, muss diese Konfiguration auf ALLEN Ausführungsinstanzen ausgeführt werden.
 
