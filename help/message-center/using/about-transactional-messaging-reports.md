@@ -1,22 +1,22 @@
 ---
 product: campaign
-title: Transaktionsnachrichten-Berichte aufrufen
-description: Erfahren Sie, wie Sie auf Transaktionsnachrichten-Berichte von Adobe Campaign Classic zugreifen können.
+title: Auf Transaktionsnachrichten-Berichte zugreifen
+description: Erfahren Sie, wie Sie in Adobe Campaign Classic auf Berichte zu Transaktionsnachrichten zugreifen können.
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 42d43d67-7660-4d81-9280-10f030aa8f0e
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '52'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # Auf Transaktionsnachrichten-Berichte zugreifen {#about-transactional-messaging-reports}
 
-Adobe Campaign bietet verschiedene Berichte, mit denen Sie die Aktivität und den reibungslosen Ablauf der Ausführungsinstanzen steuern können.
+Adobe Campaign bietet verschiedene Berichte, mit deren Hilfe Sie die Aktivitäten der Ausführungsinstanzen steuern sowie ihre reibungslose Ausführung gewährleisten können.
 
-Auf diese Message Center-Berichte kann über die Registerkarte **[!UICONTROL Berichte]** der **Kontrollinstanz** zugegriffen werden.
+Der Zugriff auf diese Message Center-Berichte erfolgt über den Tab **[!UICONTROL Berichte]** der **Kontrollinstanz**.
 
 ![](assets/messagecenter_reporting_002.png)
