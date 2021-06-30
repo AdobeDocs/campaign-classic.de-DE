@@ -19,7 +19,7 @@ Benötigen Sie Hilfe bei der Arbeit mit Campaign Classic? Dann lesen Sie im Folg
 
 * [Anleitungsvideos ansehen](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de)
 * [Angebote zur Selbsthilfe nutzen](../../platform/using/tutorials.md#how-to-videos)
-* [Erste Schritte und Anwendungsfälle durchgehen](../../platform/using/tutorials.md#step-by-step-guides)
+* [Erste Schritte und Anwendungsfälle lesen](../../platform/using/tutorials.md#step-by-step-guides)
 * Sie konnten keine Antwort finden? [Experten konsultieren](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
 * Sie benötigen Support? [Hilfe- und Support-Angebote für Campaign aufrufen](../../support.md)
 
