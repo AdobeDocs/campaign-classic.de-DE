@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Transaktionsnachrichten-Vorlagen testen
-description: Erfahren Sie, wie Sie Testadressen in Transaktionsnachrichten verwalten können, um sie in Adobe Campaign Classic in der Vorschau anzuzeigen und zu testen.
+title: Testen von Transaktionsnachrichtenvorlagen
+description: Erfahren Sie, wie Sie in Adobe Campaign Classic Testadressen in Transaktionsnachrichten zur Anzeige in einer Vorschau und zum Testen verwalten.
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 417004c9-ed96-4b98-a518-a3aa6123ee7b
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
-# Vorlagen für Transaktionsnachrichten testen {#testing-message-templates}
+# Testen von Transaktionsnachrichtenvorlagen {#testing-message-templates}
 
-Sobald Ihre [Nachrichtenvorlage](../../message-center/using/creating-the-message-template.md) fertig ist, führen Sie die folgenden Schritte aus, um sie in der Vorschau anzuzeigen und zu testen.
+Führen Sie nach Fertigstellung Ihrer [Nachrichtenvorlage](../../message-center/using/creating-the-message-template.md) die folgenden Schritte aus, um sie in einer Vorschau anzuzeigen und zu testen.
 
 ## Testadressen in Transaktionsnachrichten verwalten {#managing-seed-addresses-in-transactional-messages}
 
 Testadressen dienen dazu, eine Nachrichtenvorschau zu erzeugen, Testsendungen auszuführen und die Personalisierung der Nachricht vor dem eigentlichen Versand per E-Mail, SMS oder Mobile Apps zu prüfen. Sie werden für jeden Versand separat erstellt und können nicht in mehreren Sendungen verwendet werden.
 
-Gehen Sie wie folgt vor, um Testadressen in einer Transaktionsnachricht zu erstellen:
+Gehen Sie zur Erstellung von Testadressen in einer Transaktionsnachricht wie folgt vor:
 
 1. Gehen Sie in den Tab **[!UICONTROL Testadressen]** der Transaktionsnachrichten-Vorlage.
 
@@ -57,17 +57,17 @@ Sobald die Adressen erstellt wurden, können Sie eine Vorschau der Nachricht und
 
 ## Personalisierungsdaten {#personalization-data}
 
-Sie können Daten aus der Nachrichtenvorlage verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Diese Funktion wird verwendet, um eine Vorschau zu erzeugen oder einen Testversand durchzuführen. Sie können auch das Rendering der Nachricht für verschiedene Internet-Anbieter anzeigen. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+Sie können Daten aus der Nachrichtenvorlage verwenden, um die Personalisierung von Transaktionsnachrichten zu testen. Diese Funktion wird verwendet, um eine Vorschau zu erstellen oder einen Testversand durchzuführen. Ebenfalls können Sie anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
-Diese Daten dienen dazu, Ihre Nachrichten vor ihrem endgültigen Versand zu testen. Diese Nachrichten entsprechen nicht den tatsächlich zu verarbeitenden Daten. Die XML-Struktur muss jedoch mit der des in der Ausführungsinstanz gespeicherten Ereignisses identisch sein, wie unten dargestellt:
+Diese Daten dienen nur dazu, die Nachrichten vor dem eigentlichen Versand zu testen, und entsprechen nicht den tatsächlich verarbeiteten Daten. Ihre XML-Struktur muss jedoch identisch mit der des in der Ausführungsinstanz gespeicherten Ereignisses sein, wie im Folgenden gezeigt:
 
 ![](assets/messagecenter_create_custo_006.png)
 
-Mit diesen Informationen können Sie den Nachrichteninhalt mithilfe von Personalisierungs-Tags personalisieren (weitere Informationen hierzu finden Sie unter [Nachrichteninhalt erstellen](../../message-center/using/creating-the-message-template.md#creating-message-content)).
+Diese Informationen erlauben die Personalisierung des Nachrichteninhalts mithilfe von Personalisierungs-Tags. (Näheres hierzu siehe [Nachrichteninhalt erstellen](../../message-center/using/creating-the-message-template.md#creating-message-content).)
 
 1. Wählen Sie die Transaktionsnachrichtenvorlage aus.
 
-1. Klicken Sie in der Vorlage auf den Tab **[!UICONTROL Testadressen]** .
+1. Klicken Sie in der Nachrichtenvorlage auf den Tab **[!UICONTROL Testadressen]**.
 
 1. Geben Sie im Inhalt des Ereignisses die Testinformationen im XML-Format ein.
 
@@ -91,15 +91,15 @@ Nach der Erstellung einer oder mehrerer Testadressen sowie des Nachrichteninhalt
 
    ![](assets/messagecenter_create_seedaddr_009.png)
 
-Mithilfe von Testadressen können Sie auch das Rendering der Nachricht für verschiedene Internet-Anbieter anzeigen. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
+Mit Testadressen können Sie außerdem anzeigen, wie die Nachricht bei verschiedenen Internet-Anbietern dargestellt wird. Weiterführende Informationen dazu finden Sie im Abschnitt [Inbox Rendering](../../delivery/using/inbox-rendering.md).
 
 ## Testversand durchführen {#sending-a-proof}
 
 Mithilfe von Testadressen haben Sie die Möglichkeit, vor dem eigentlichen Versand einen Testversand durchzuführen.
 
-Der Testversand erfolgt nach dem gleichen Verfahren wie bei einem [normalen Versand](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Bei Transaktionsnachrichten müssen Sie jedoch zuvor die folgenden Vorgänge ausführen:
+Das Senden eines Testversands erfolgt nach demselben Verfahren wie bei einem [Standardversand](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof). Bei Transaktionsnachrichten müssen Sie jedoch zuvor die folgenden Schritte durchführen:
 
-* Erstellen Sie eine oder mehrere [Testadressen](#managing-seed-addresses-in-transactional-messages) mit [Personalisierungsdaten](#personalization-data).
+* Eine oder mehrere [Testadressen](#managing-seed-addresses-in-transactional-messages) mit [Personalisierungsdaten](#personalization-data) erstellen.
 * [Nachrichteninhalt erstellen](../../message-center/using/creating-the-message-template.md#creating-message-content).
 
 Gehen Sie zur Durchführung des Testversands wie folgt vor:
@@ -114,8 +114,8 @@ Gehen Sie zur Durchführung des Testversands wie folgt vor:
 
    ![](assets/messagecenter_send_proof_002.png)
 
-Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden. Weitere Informationen hierzu finden Sie unter [Testversand senden](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
+Die Testsendungen können im Tab **[!UICONTROL Verfolgung]** jeder Vorlage eingesehen werden. Weiterführende Informationen hierzu finden Sie unter [Testversand durchführen](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
 ![](assets/messagecenter_send_proof_003.png)
 
-Ihre Nachrichtenvorlage kann jetzt [publish](../../message-center/using/publishing-message-templates.md) sein.
+Ihre Nachrichtenvorlage ist jetzt zur [Veröffentlichung](../../message-center/using/publishing-message-templates.md) bereit.
