@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '467'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Ad
 
 ## Hypothesenergebnisse {#hypothesis-results}
 
-### Indicators {#indicators}
+### Indikatoren {#indicators}
 
 Nach Berechnung der Hypothese werden mehrere Messindikatoren automatisch aktualisiert. Diese sind im Tab **[!UICONTROL Allgemein]** der Hypothese verfügbar.
 
