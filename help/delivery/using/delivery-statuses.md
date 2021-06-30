@@ -138,4 +138,4 @@ Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehe
 
 * [Protokolle und Versandverlauf](#delivery-logs-and-history)
 * [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)
-* [Typen und Ursachen für fehlgeschlagene Sendungen            ](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
+* [Typen von fehlgeschlagenen Sendungen und deren Ursachen](understanding-delivery-failures.md#delivery-failure-types-and-reasons)
