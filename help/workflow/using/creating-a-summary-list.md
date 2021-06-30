@@ -110,7 +110,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 ![](assets/uc2_enrich_population1.png)
 
-## Schritt 2: Schreiben der angereicherten Daten in die &#39;Verkauf&#39;-Tabelle {#step-2--writing-enriched-data-to-the--purchases--table}
+## Schritt 2: Angereicherte Daten in die &#39;Verkauf&#39;-Tabelle schreiben {#step-2--writing-enriched-data-to-the--purchases--table}
 
 In diesem Schritt werden die importierten und angereicherten Daten in die &quot;Verkauf&quot;-Tabelle geschrieben. Dies geschieht mithilfe der Aktivität **Datenaktualisierung**.
 
@@ -134,7 +134,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Schritt 3: Anreicherung der &#39;Kontakt&#39;-Daten {#step-3--enriching--contact--data-}
+## Schritt 3: &#39;Kontakt&#39;-Daten anreichern {#step-3--enriching--contact--data-}
 
 Das Schema &quot;Kontakte&quot; steht in Relation zum Schema &#39;Verkauf&#39;. Dies ermöglicht die Verwendung einer weiteren Option der Anreicherungsaktivität, nämlich die Hinzufügung von Daten in Relation mit der Filterdimension.
 
@@ -170,7 +170,7 @@ Für die zusammenfassende Liste werden Felder aus dem Verkaufsschema und aus der
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Schritt 4: Erstellen und Hinzufügen zu einer zusammenfassenden Liste {#step-4--creating-and-adding-to-a-summary-list}
+## Schritt 4: Erstellen und Hinzufügen zu einer Zusammenfassungsliste {#step-4--creating-and-adding-to-a-summary-list}
 
 Im letzten Schritt werden die angereicherten Daten in eine Liste geschrieben.
 
