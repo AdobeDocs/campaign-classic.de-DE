@@ -1,23 +1,23 @@
 ---
 product: campaign
 title: Ereignisverarbeitung
-description: Erfahren Sie, wie die Transaktionsnachrichten-Ereignisse in Adobe Campaign Classic verarbeitet werden.
+description: Erfahren Sie, wie Transaktionsnachrichtenereignisse in Adobe Campaign Classic verarbeitet werden.
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
-ht-degree: 30%
+ht-degree: 100%
 
 ---
 
 # Ereignisverarbeitung {#about-event-processing}
 
-Im Zusammenhang mit Transaktionsnachrichten wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet (siehe [Ereignisbeschreibung](../../message-center/using/event-description.md)).
+Im Zusammenhang mit dem Transaktionsnachrichtenversand wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet (siehe [Ereignisbeschreibung](../../message-center/using/event-description.md)).
 
-Dieses Ereignis enthält Daten, die mit dem Ereignis verknüpft sind, wie z. B. sein [Typ](../../message-center/using/creating-event-types.md) (Bestellbestätigung, Kontoerstellung auf einer Website usw.), E-Mail-Adresse oder Mobiltelefonnummer sowie weitere Informationen, mit denen Sie die Transaktionsnachricht vor dem Versand anreichern und personalisieren können (Kundenkontaktdaten, Sprache der Nachricht, E-Mail-Format usw.).
+Dieses Ereignis enthält Daten, die mit dem Ereignis verknüpft sind, darunter etwa dessen [Typ](../../message-center/using/creating-event-types.md) (Bestellbestätigung, Kontoerstellung auf einer Website usw.), dessen E-Mail-Adresse oder Mobiltelefonnummer sowie weitere Informationen, mit denen Sie die Transaktionsnachricht vor dem Versand anreichern und personalisieren können (Kundenkontaktdaten, Sprache der Nachricht, E-Mail-Format usw.).
 
 Beispiel für Ereignisdaten:
 
@@ -25,30 +25,30 @@ Beispiel für Ereignisdaten:
 
 ## Schritte zur Ereignisverarbeitung {#event-processing}
 
-Um Transaktionsnachrichten-Ereignisse zu verarbeiten, werden die folgenden Schritte auf die Ausführungsinstanz(en) angewendet:
+Um Transaktionsnachrichten-Ereignisse zu verarbeiten, werden die folgenden Schritte auf der/den Ausführungsinstanz(en) ausgeführt:
 
 1. [Ereigniskollektion](#event-collection)
 1. [Weiterleitung des Ereignisses zu einer Nachrichtenvorlage](#routing-towards-a-template)
 1. Anreicherung des Ereignisses mit Personalisierungsdaten
 1. [Versandausführung](../../message-center/using/delivery-execution.md)
-1. [Recycling von ](#event-recycling) Ereignissen, deren verknüpfte Bereitstellung fehlgeschlagen ist (über einen Adobe Campaign-Workflow)
+1. [Recycling von Ereignissen](#event-recycling), bei denen der mit ihnen verknüpfte Versand fehlgeschlagen ist (über einen Adobe Campaign-Workflow)
 
-Sobald alle oben genannten Schritte in der Ausführungsinstanz ausgeführt werden, erhält jeder Zielgruppenempfänger eine personalisierte Nachricht.
+Sobald alle oben genannten Schritte auf der Ausführungsinstanz ausgeführt wurden, erhält jeder Zielkontakt eine personalisierte Nachricht.
 
 >[!NOTE]
 >
->Weitere Informationen zu den Instanzen von Transaktionsnachrichten finden Sie unter [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md).
+>Näheres zu Instanzen für Transaktionsnachrichten finden Sie unter [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md).
 
 
 ## Ereignisabruf {#event-collection}
 
 Die vom Informationssystem erzeugten Ereignisse können auf zwei Weisen abgerufen werden:
 
-* Aufrufe von SOAP-Methoden ermöglichen das Pushen von Ereignissen in Adobe Campaign: Wenn Sie mit der Methode PushEvent jeweils ein Ereignis senden, können Sie mit der Methode PushEvents mehrere Ereignisse gleichzeitig senden. Weitere Informationen hierzu finden Sie unter [Ereignisbeschreibung](../../message-center/using/event-description.md).
+* Nutzung von SOAP-Methoden, die die Ereignisse Adobe Campaign zuführen: Die PushEvent-Methode ermöglicht den Versand eines Ereignisses, die PushEvents-Methode den Versand mehrerer Ereignisse auf einmal. Weiterführende Informationen hierzu finden Sie unter [Ereignisbeschreibung](../../message-center/using/event-description.md).
 
 * Ausführung eines Workflows, der den Abruf der Ereignisse über einen Dateiimport oder ein SQL-Gateway ermöglicht (mit der Option [Federated Data Access](../../installation/using/about-fda.md)).
 
-Nach der Erfassung werden die Ereignisse durch technische Workflows zwischen Echtzeit- und Batch-Warteschlangen der Ausführungsinstanz(en) aufgeschlüsselt, wobei darauf gewartet wird, mit einer Nachrichtenvorlage verknüpft zu werden.
+Nach dem Abruf werden die Ereignisse von den technischen Workflows auf die Echtzeit- und Batch-Warteschlangen der Ausführungsinstanzen verteilt, bis sie mit einer Nachrichtenvorlage verknüpft werden.
 
 ![](assets/messagecenter_events_queues_001.png)
 
@@ -58,19 +58,19 @@ Nach der Erfassung werden die Ereignisse durch technische Workflows zwischen Ech
 
 ## Weiterleitung zu Vorlagen {#routing-towards-a-template}
 
-Nach der Publikation der Nachrichtenvorlage in der/den Ausführungsinstanz(en) werden zwei Vorlagen automatisch erzeugt: eines, das mit einem Echtzeit-Ereignis verknüpft werden soll, und eines, das mit einem Batch-Ereignis verknüpft werden soll.
+Nach der Veröffentlichung der Nachrichtenvorlage auf den Ausführungsinstanzen werden automatisch zwei Vorlagen erstellt: eine, die mit einem Echtzeit-Ereignis verknüpft wird, und eine, die mit einem Batch-Ereignis verknüpft wird.
 
-Der Routing-Schritt besteht in der Verknüpfung eines Ereignisses mit der entsprechenden Nachrichtenvorlage basierend auf:
+Beim Routing-Schritt wird ein Ereignis mit der entsprechenden Nachrichtenvorlage verknüpft. Dies erfolgt basierend auf:
 
-* Der in den Eigenschaften des Ereignisses selbst angegebene Ereignistyp:
+* dem in den Eigenschaften des Ereignisses angegebenen Ereignistyp:
 
    ![](assets/messagecenter_event_type_001.png)
 
-* Der in den Eigenschaften der Nachrichtenvorlage angegebene Ereignistyp:
+* dem in den Eigenschaften der Nachrichtenvorlage angegebenen Ereignistyp:
 
    ![](assets/messagecenter_event_type_002.png)
 
-Standardmäßig beruht das Routing auf den folgenden Informationen:
+Standardmäßig erfolgt das Routing auf Basis folgender Informationen:
 
 * dem Ereignistyp
 * dem verwendeten Kanal (standardmäßig: E-Mail)
@@ -80,15 +80,15 @@ Standardmäßig beruht das Routing auf den folgenden Informationen:
 
 Im **Ereignisverlauf** unter **[!UICONTROL Message Center]** > **[!UICONTROL Ereignisverlauf]** werden alle verarbeiteten Ereignisse in einer gemeinsamen Übersicht zusammengefasst. Sie können entweder nach Ereignistyp oder nach **Status** kategorisiert werden. Folgende Status existieren:
 
-* **Ausstehend**: Das Ereignis kann:
+* **Ausstehend**: Bei dem Ereignis kann es sich um Folgendes handeln:
 
-   * Ein Ereignis, das gerade erfasst wurde und noch nicht verarbeitet wurde. Die Spalte **[!UICONTROL Fehleranzahl]** enthält den Wert 0. Die E-Mail-Vorlage wurde noch nicht zugeordnet.
-   * Ein verarbeitetes Ereignis, dessen Bestätigung jedoch fehlerhaft ist. Die Spalte **[!UICONTROL Fehleranzahl]** enthält einen Wert, der nicht 0 ist. In der Spalte **[!UICONTROL Verarbeitung angefordert für]** können Sie sehen, wann dieses Ereignis erneut verarbeitet wird.
+   * Ereignis, das kurz zuvor eingetreten ist, jedoch noch nicht verarbeitet wurde. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt den Wert 0. Es wurde noch keine E-Mail-Vorlage zugeordnet.
+   * Ereignis, das verarbeitet wurde, bei dessen Bestätigung jedoch Fehler aufgetreten sind. Die Spalte **[!UICONTROL Fehleranzahl]** zeigt einen Wert ungleich 0 an. In der Spalte **[!UICONTROL Verarbeitung geplant für]** kann das Datum des nächsten Verarbeitungsversuchs abgelesen werden.
 
-* **Versand ausstehend**: Das Ereignis wurde verarbeitet und die Versandvorlage wurde verknüpft. Die E-Mail steht vor dem Versand und der klassische Versandprozess wird angewendet. Weitere Informationen erhalten Sie, wenn Sie den Versand öffnen möchten.
-* **Gesendet**,  **** Ignoriert und  **Versandfehler**: Diese Versandstatus werden über den  **** updateEventsStatus -Workflow abgerufen. Für weitere Informationen können Sie den entsprechenden Versand öffnen.
-* **Ereignis wurde nicht berücksichtigt**: Die Routing-Phase der Transaktionsnachrichten schlug fehl. Beispielsweise konnte Adobe Campaign die E-Mail, die als Vorlage für das Ereignis dient, nicht finden.
-* **Ereignis ist abgelaufen**: Die maximale Anzahl von Versandversuchen wurde erreicht. Das Ereignis wird als null betrachtet.
+* **Versand ausstehend**: Ereignis, das verarbeitet und dem eine Versandvorlage zugeordnet wurde. Die E-Mail ist versandbereit und der Standard-Versandprozess wird angewendet. Details können direkt im Versand eingesehen werden.
+* **Gesendet**, **Ignoriert** und **Versandfehler**: Versandstatus, die vom Workflow **updateEventsStatus** abgerufen werden. Details können direkt im entsprechenden Versand eingesehen werden.
+* **Ereignis wurde nicht berücksichtigt**: Die Routing-Phase der Transaktionsnachricht ist fehlgeschlagen. Ein Beispiel hierfür wäre, dass Adobe Campaign die E-Mail, die als Vorlage für das Ereignis dient, nicht finden konnte.
+* **Ereignis ist abgelaufen**: Die maximale Anzahl an Versandversuchen wurde erreicht. Das Ereignis wird als nichtig angesehen.
 
 ## Ereignis-Recycling {#event-recycling}
 
@@ -98,4 +98,4 @@ Konfigurieren Sie hierzu einen Workflow, der alle Ereignisse mit **Versandfehler
 
 >[!CAUTION]
 >
->Dieser Schritt kann nur mithilfe eines Workflows durchgeführt werden und ist daher erfahrenen Benutzern vorbehalten. Weitere Informationen erhalten Sie von Ihrem Kundenbetreuer bei der Adobe.
+>Dieser Schritt kann nur mithilfe eines Workflows durchgeführt werden und sollte daher erfahrenen Benutzern vorbehalten bleiben. Wenden Sie sich für weitere Informationen hierzu an Ihren Adobe-Kundenbetreuer.
