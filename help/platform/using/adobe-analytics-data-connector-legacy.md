@@ -15,11 +15,11 @@ ht-degree: 99%
 
 ---
 
-# Der Data Connector von Adobe Analytics{#adobe-analytics-data-connector-legacy}
+# Adobe Analytics Data Connector{#adobe-analytics-data-connector-legacy}
 
 >[!IMPORTANT]
 >
->Der Data Connector von Adobe Analytics ist jetzt veraltet. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
+>Adobe Analytics Data Connector wurde eingestellt. Eingestellte Funktionen sind weiterhin verfügbar, werden jedoch weder weiter verbessert noch unterstützt. Weiterführende Informationen finden Sie auf [dieser Seite](../../rn/using/deprecated-features.md).
 
 ## Über die Integration des Data Connectors {#about-data-connector-integration}
 
