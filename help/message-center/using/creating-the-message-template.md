@@ -1,27 +1,27 @@
 ---
 product: campaign
-title: Transaktionsnachrichten-Vorlagen erstellen
-description: Erfahren Sie, wie Sie in Adobe Campaign Classic eine Transaktionsnachrichtenvorlage erstellen und entwerfen.
+title: Konzipieren von Transaktionsnachrichtenvorlagen
+description: Erfahren Sie, wie Sie Transaktionsnachrichtenvorlagen in Adobe Campaign Classic erstellen und konzipieren.
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: a52bc140-072e-4f81-b6da-f1b38662bce5
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '511'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
-# Erstellen von Transaktionsnachrichten-Vorlagen {#creating-the-message-template}
+# Konzipieren von Transaktionsnachrichtenvorlagen {#creating-the-message-template}
 
-Um sicherzustellen, dass jedes Ereignis in eine personalisierte Nachricht umgewandelt werden kann, müssen Sie eine Nachrichtenvorlage erstellen, die jedem Ereignistyp entspricht.
+Um sicherzustellen, dass alle Ereignisse in eine personalisierte Nachricht umgewandelt werden können, müssen Sie für die einzelnen Ereignistypen jeweils eine Nachrichtenvorlage erstellen.
 
 >[!IMPORTANT]
 >
->Ereignistypen müssen zuvor erstellt werden. Weitere Informationen hierzu finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
+>Zunächst müssen Ereignistypen erstellt werden. Weiterführende Informationen hierzu finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
 
-Transaktionsnachrichten-Vorlagen enthalten die erforderlichen Informationen zur Personalisierung der Transaktionsnachricht. Sie können Vorlagen auch verwenden, um die Vorschau der Nachricht zu testen und einen Testversand an Testadressen zu senden, bevor Sie an die endgültige Zielgruppe versenden. Weiterführende Informationen dazu finden Sie unter [Vorlagen für Transaktionsnachrichten testen](../../message-center/using/testing-message-templates.md).
+Transaktionsnachrichtenvorlagen enthalten die für die Personalisierung der Transaktionsnachricht erforderlichen Informationen. Sie können Vorlagen auch verwenden, um die Vorschau der Nachricht zu testen und einen Testversand an Testadressen zu senden, bevor Sie sie an die endgültige Zielgruppe versenden. Weiterführende Informationen hierzu finden Sie unter [Testen von Transaktionsnachrichtenvorlagen](../../message-center/using/testing-message-templates.md).
 
 ## Nachrichtenvorlage erstellen {#creating-message-template}
 
@@ -41,19 +41,19 @@ Transaktionsnachrichten-Vorlagen enthalten die erforderlichen Informationen zur 
 
    ![](assets/messagecenter_create_model_003.png)
 
-   Ereignistypen müssen zuvor in der Konsole erstellt werden. Weitere Informationen hierzu finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
+   Ereignistypen müssen zuvor in der Konsole erstellt werden. Weiterführende Informationen hierzu finden Sie unter [Ereignistypen erstellen](../../message-center/using/creating-event-types.md).
 
    >[!IMPORTANT]
    >
-   >Ein Ereignistyp kann nicht mit mehreren Vorlagen verknüpft werden.
+   >Ein Ereignistyp kann nicht mit mehr als einer Vorlage verknüpft werden.
 
-1. Geben Sie eine Art und eine Beschreibung ein und klicken Sie dann auf **[!UICONTROL Weiter]**, um den Nachrichtentext zu erstellen (siehe [Nachrichteninhalt erstellen](#creating-message-content)).
+1. Geben Sie die Art sowie eine Beschreibung der Vorlage an und klicken Sie auf **[!UICONTROL Fortfahren]**, um den Nachrichteninhalt zu erstellen (siehe [Nachrichteninhalt erstellen](#creating-message-content)).
 
    ![](assets/messagecenter_create_model_004.png)
 
 ## Nachrichteninhalt erstellen {#creating-message-content}
 
-Der Inhalt der Transaktionsnachricht wird auf dieselbe Weise definiert wie für den klassischen Versand in Adobe Campaign. Beispielsweise können Sie für einen E-Mail-Versand Inhalte im HTML- oder Textformat erstellen, Anhänge hinzufügen oder das Versandobjekt personalisieren. Weitere Informationen hierzu finden Sie im Kapitel [E-Mail-Versand](../../delivery/using/about-email-channel.md) .
+Die Erstellung des Inhalts einer Transaktionsnachricht erfolgt nach dem gleichen Prinzip wie bei einem klassischen Versand in Adobe Campaign. Für einen E-Mail-Versand können Sie zum Beispiel einen Inhalt im HTML- oder Textformat erstellen und Anhänge hinzufügen oder den Betreff des Versands personalisieren. Weiterführende Informationen hierzu finden Sie im Kapitel zum [ E-Mail-Versand](../../delivery/using/about-email-channel.md).
 
 >[!IMPORTANT]
 >
@@ -75,7 +75,7 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
 1. Verfassen Sie den Inhalt der Nachricht.
 
-1. Fügen Sie das Tag im Textkörper mithilfe des Menüs **[!UICONTROL Echtzeit-Ereignisse > Ereignis-XML]** ein.
+1. Fügen Sie das Personalisierungsfeld über das Menü **[!UICONTROL Echtzeit-Ereignisse > Ereignis-XML]** ein.
 
    ![](assets/messagecenter_create_custo_002.png)
 
@@ -85,4 +85,4 @@ Gehen Sie wie folgt vor, um Personalisierungsfelder in einen E-Mail-Nachrichteni
 
 1. Speichern Sie Ihren Inhalt.
 
-Ihre Nachricht kann jetzt [getestet](../../message-center/using/testing-message-templates.md) sein.
+Sie können Ihre Nachricht jetzt [testen](../../message-center/using/testing-message-templates.md).
