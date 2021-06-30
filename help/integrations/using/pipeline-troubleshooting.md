@@ -8,7 +8,7 @@ exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
 source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 80%
+ht-degree: 90%
 
 ---
 
@@ -98,8 +98,8 @@ Im Allgemeinen kann es 15–90 Minuten dauern, bis eine Marketing-Kampagne gesta
 1. Prüfen Sie die [!DNL pipelined]-Statusseite auf die Warteschlangengröße. Wenn der Warteschlangenumfang groß ist, optimieren Sie die Leistung des JS.
 1. Da die Verzögerung mit zunehmender Anzahl wächst, konfigurieren Sie die Trigger in Analytics mit weniger Nachrichten.
 
-**Aktualisieren von Staging-Instanzen von der alten Authentifizierung zur Adobe IO-Authentifizierung**
+**Upgrade von Staging-Instanzen von der früheren Authentifizierung zur Authentifizierung via Adobe IO**
 
-Das Ändern der Integrationsauthentifizierung auf Ihrer Staging-Instanz wirkt sich nicht auf die Konfiguration Ihrer Produktionsinstanz aus. Sie können Ihre Staging-Instanz aktualisieren und dann die Authentifizierung auf Adobe IO aktualisieren und Ihre Trigger auf Ihrer Staging-Instanz testen.
+Die Umstellung der Authentifizierung der Integration auf Ihrer Staging-Instanz hat keine Auswirkungen auf die Konfiguration Ihrer Produktionsinstanz. Sie können ein Upgrade Ihrer Staging-Instanz vornehmen und im Anschluss daran die Authentifizierung auf Adobe IO aktualisieren und Ihre Trigger auf Ihrer Staging-Instanz testen.
 
-Ihre Produktionsinstanz verwendet weiterhin die Legacy-Authentifizierung und ist von dieser Änderung nicht betroffen.
+Ihre Produktionsinstanz verwendet weiterhin die frühere Authentifizierung und ist von dieser Änderung nicht betroffen.
