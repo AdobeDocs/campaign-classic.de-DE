@@ -1,19 +1,19 @@
 ---
 product: campaign
 title: Versandausführung
-description: Erfahren Sie mehr über die Ausführung und Überwachung von Sendungen mit Transaktionsnachrichten.
+description: Machen Sie sich mit der Ausführung und Überwachung des Versands von Transaktionsnachrichten vertraut.
 audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 930c6395-0c00-40ee-a925-3e0cae67c55f
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Transaktionsnachrichten-Versand {#delivery-execution}
+# Versandausführung {#delivery-execution}
 
 ## Senden von Transaktionsnachrichten {#transactional-message-send}
 
@@ -37,7 +37,7 @@ Sie werden standardmäßig in Unterordner nach Versandmonat unterteilt. Diese Gr
 
 ## Überwachung der Transaktionsnachrichten {#transactional-message-monitoring}
 
-Um Ihre Transaktionsnachrichten zu überwachen, überprüfen Sie die [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history).
+Zur Überwachung Ihrer Transaktionsnachrichten können Sie die [Versandlogs](../../delivery/using/delivery-dashboard.md#delivery-logs-and-history) einsehen.
 
 Die von der Ausführungsinstanz gesendeten Transaktionsnachrichten werden durch einen technischen Workflow (**[!UICONTROL Message Center-Ausführungsinstanz]**), der stündlich ausgeführt wird, wieder synchronisiert und in die Kontrollinstanz transferiert.
 
@@ -72,4 +72,4 @@ To summarize, the deliveries weekly accumulate the events based on the latest ev
 
 Therefore, when extracting transactional messaging delivery logs from the control instance, the delivery ID associated with each delivery log ID changes every week.-->
 
-Informationen zum Überwachen der Aktivität und Ausführung der Ausführungsinstanz(en) finden Sie unter [Transaktionsnachrichten-Berichte](../../message-center/using/about-transactional-messaging-reports.md).
+Näheres zum Thema Überwachung der Aktivitäten und Ausführung der Ausführungsinstanz(en) finden Sie unter [Berichte zu Transaktionsnachrichten](../../message-center/using/about-transactional-messaging-reports.md).
