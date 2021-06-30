@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1425'
 ht-degree: 100%
 
@@ -51,8 +51,8 @@ Vier Relationstypen stehen zur Auswahl:
 Anwendungsbeispiele, mit denen die Funktionsweise der Anreicherungsaktivitäten im Kontext ausführlich beschrieben wird, sind in folgenden Abschnitten verfügbar:
 
 * [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Daten anreichern ](../../workflow/using/enriching-data.md)
-* [Erstellung einer zusammenfassenden Liste.](../../workflow/using/creating-a-summary-list.md)
+* [Anreicherung von Daten](../../workflow/using/enriching-data.md)
+* [Erstellung einer zusammenfassenden Liste](../../workflow/using/creating-a-summary-list.md)
 
 ## Informationen hinzufügen {#adding-information}
 
