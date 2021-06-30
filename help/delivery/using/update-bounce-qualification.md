@@ -59,4 +59,4 @@ Sobald Sie die Liste der betroffenen Empfänger haben, können Sie diese entwede
 
 **Verwandte Themen:**
 * [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
-* [Bounce-Message-Qualifizierung    ](understanding-delivery-failures.md#bounce-mail-qualification)
+* [Bounce-Message-Qualifizierung](understanding-delivery-failures.md#bounce-mail-qualification)
