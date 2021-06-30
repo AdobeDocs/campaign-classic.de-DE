@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '182'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Die folgenden Workflows werden mit dem **Web-Analytics-Connectoren-Modul** insta
   <tr> 
    <td> <span class="uicontrol">Übermittlung der Kampagnen-Indikatoren und -Attribute</span> <br /> </td> 
    <td> <span class="uicontrol">webAnalyticsSendMetrics</span> <br /> </td> 
-   <td> Mit diesem Workflow können Sie E-Mail-Kampagnenindikatoren über den Adobe® Analytics-Connector von Adobe Campaign an die Adobe Experience Cloud Suite senden. Folgende Indikatoren sind betroffen: <strong>Gesendet</strong> (iSent), <strong>Gesamtzahl der Öffnungen</strong> (iTotalRecipientOpen), <strong>Gesamtzahl der Empfänger, die geklickt haben</strong> (iTotalRecipientClick), <strong>Fehler</strong> (iError), <strong>Opt t-out</strong> (Opt-out) (iOptOut).<br /> </td> 
+   <td> Dieser Workflow ermöglicht es, über den Adobe® Analytics-Connector Indikatoren zu E-Mail-Kampagnen von Adobe Campaign an Adobe Experience Cloud Suite zu senden. Dies betrifft die folgenden Indikatoren: <strong>Gesendet</strong> (iSent), <strong>Öffnungen insgesamt</strong> (iTotalRecipientOpen), <strong>Gesamtzahl der Empfänger, die geklickt haben</strong> (iTotalRecipientClick), <strong>Fehler</strong> (iError), <strong>Abmeldung</strong> (Opt-out) (iOptOut).<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Identifizierung der konvertierten Kontakte</span> <br /> </td> 
