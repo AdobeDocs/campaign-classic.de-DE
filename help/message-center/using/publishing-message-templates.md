@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: 'Nachrichtenvorlagen veröffentlichen '
-description: Erfahren Sie mehr über die Publikation und das Rückgängigmachen der Veröffentlichung von Transaktionsnachrichten in Adobe Campaign Classic.
+description: Erfahren Sie mehr über das Veröffentlichen von Transaktionsnachrichten sowie das Aufheben von deren Veröffentlichung in Adobe Campaign Classic.
 audience: message-center
 content-type: reference
 topic-tags: message-templates
 exl-id: 1d55f42b-64bf-4b1f-a317-c1f7456aa5b3
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 Wenn die in der Kontrollinstanz erstellte [Nachrichtenvorlage](../../message-center/using/creating-the-message-template.md) fertig ist und [getestet](../../message-center/using/testing-message-templates.md) wurde, können Sie sie veröffentlichen. Dieser Vorgang wird auch auf allen Ausführungsinstanzen veröffentlicht.
 
-Mit der Veröffentlichung können Sie **zwei Nachrichtenvorlagen** in den Ausführungsinstanzen automatisch erstellen. Dadurch können Sie Nachrichten senden, die mit **Echtzeit-Ereignissen** und **Batch-Ereignissen** verknüpft sind.
+Bei der Veröffentlichung können Sie in den Ausführungsinstanzen automatisch **zwei Nachrichtenvorlagen** erstellen, um Nachrichten senden zu können, die mit **Echtzeit-Ereignissen** und **Batch-Ereignissen** verknüpft sind.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Nach Abschluss der Veröffentlichung werden die beiden Vorlagen, die auf die Ech
 
 ![](assets/messagecenter_deployed_model_001.png)
 
-Sobald eine Vorlage veröffentlicht wurde und das entsprechende Ereignis ausgelöst wird, erhält die Ausführungsinstanz das Ereignis, verknüpft es mit der Transaktionsvorlage und sendet die entsprechende Transaktionsnachricht an jeden Empfänger. Weiterführende Informationen dazu finden Sie unter [Ereignisverarbeitung](../../message-center/using/about-event-processing.md).
+Sobald eine Vorlage veröffentlicht wurde und das entsprechende Ereignis ausgelöst wird, erhält die Ausführungsinstanz das Ereignis, verknüpft es mit der Transaktionsvorlage und sendet die entsprechende Transaktionsnachricht an jeden Empfänger. Weiterführende Informationen hierzu finden Sie unter [Ereignisverarbeitung](../../message-center/using/about-event-processing.md).
 
 >[!NOTE]
 >
