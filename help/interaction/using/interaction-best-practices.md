@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: interaction-overview
 exl-id: 98413cde-50c9-416c-8316-85837f724c27
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1197'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ In diesem Abschnitt werden Best Practices für die Verwaltung des Interaction-Mo
 
 Das Interaction-Modul in Adobe Campaign erfordert eine sorgfältige Verwaltung, um reibungslos zu funktionieren. Dabei muss die Anzahl der Kontakte gegen die Anzahl der Angebotskategorien und Angebote abgewogen werden. Wenn diese Faktoren nicht sorgfältig abgestimmt werden, kann es bei Ihrer Adobe Campaign-Instanz zu Problemen kommen.
 
-### Umsetzung {#implementation}
+### Implementierung {#implementation}
 
 Im Folgenden sind wichtige Elemente aufgelistet, die bei der Implementierung und Konfiguration von Interaktionen beachtet werden sollten.
 
