@@ -19,7 +19,7 @@ In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den
 
 Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, sehen Sie in der [[!DNL Gold Standard] -Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) nach.
 
-## Wichtige Hinweise       {#important-notes}
+## Wichtige Hinweise{#important-notes}
 
 Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
