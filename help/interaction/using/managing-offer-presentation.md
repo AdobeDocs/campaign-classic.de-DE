@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1084'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle der Empfänger,
 >
 >Sie haben die Möglichkeit, andere Tabellen zu verwenden. Zur Nutzung einer anderen Zielgruppendimension ist die Erstellung von entsprechenden Tabellen und einer dedizierten Umgebung mit dem passenden Mapping erforderlich. Weiterführende Informationen dazu finden Sie unter [Angebotsumgebungen](../../interaction/using/live-design-environments.md#creating-an-offer-environment).
 
-### Beweglicher Zeitraum {#period}
+### Zeitraum {#period}
 
 Es handelt sich um den Zeitraum, während dessen die Vorschläge von der Regel einbezogen werden. Er definiert, für welche Dauer der Vorschlagsverlauf bei Anwendung der Regel berücksichtigt wird. Die Regel kommt somit nicht bei Vorschlägen zum Tragen, die außerhalb dieses Zeitraums unterbreitet werden.
 
