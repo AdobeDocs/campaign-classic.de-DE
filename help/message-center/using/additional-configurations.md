@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Ergänzende Konfigurationen
-description: Erfahren Sie, wie Sie zusätzliche Konfigurationen für Transaktionsnachrichten in Adobe Campaign Classic einrichten.
+description: Erfahren Sie, wie Sie ergänzende Konfigurationen für Transaktionsnachrichten in Adobe Campaign Classic einrichten.
 audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '786'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 78%
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
-Sie können die Warnschwellen (orange) und Warnschwellen (rot) der Indikatoren konfigurieren, die in den Berichten **Message Center Service Level** und **Message Center Processing Time** angezeigt werden (siehe [Auf Transaktionsnachrichten-Berichte zugreifen](../../message-center/using/about-transactional-messaging-reports.md)).
+Sie können die Hinweis- und Warnschwellen der Kennzahlen konfigurieren (orange bzw. rot), die in den Berichten **Message Center Dienstqualität** und **Message Center Verarbeitungsdauer** angezeigt werden (siehe [Auf Transaktionsnachrichten-Berichte zugreifen](../../message-center/using/about-transactional-messaging-reports.md)).
 
 Gehen Sie dazu wie folgt vor:
 
-1. Öffnen Sie den Softwareverteilungs-Assistenten auf der Ausführungsinstanz **a1/>.**
+1. Öffnen Sie den Software-Verteilungs-Assistenten auf der **Ausführungsinstanz**.
 
-1. Gehen Sie zur Seite **[!UICONTROL Message Center]** .
+1. Navigieren Sie zur Seite **[!UICONTROL Message Center]**.
 
 1. Verwenden Sie die Pfeile, um die Schwellenwerte zu ändern.
 
@@ -31,7 +31,7 @@ Gehen Sie dazu wie folgt vor:
 
 >[!NOTE]
 >
->Die Anzahl der Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Softwareverteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
+>Die Anzahl der Ereignisse in der Warteschlange wird im Bereich [Systemindikator](../../production/using/monitoring-processes.md#system-indicators) der Prozessüberwachungsseite von Adobe Campaign angezeigt. Weiterführende Informationen zum Software-Verteilungs-Assistenten finden Sie in [diesem Abschnitt](../../installation/using/deploying-an-instance.md#deployment-wizard).
 
 ## Ereignisse bereinigen {#purging-events}
 
@@ -49,7 +49,7 @@ Bereinigungsparamter in Ausführungsinstanzen:
 
 ![](assets/messagecenter_delete_events_002.png)
 
-Weitere Informationen zum Datenbankbereinigungs-Workflow finden Sie in [diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
+Weiterführende Informationen zum Datenbankbereinigungs-Workflow finden Sie in [diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
 
 
 ## Technische Workflows {#technical-workflows}
@@ -91,7 +91,7 @@ Der Zugriff auf die Transaktionsnachrichten-spezifischen, technischen Workflows 
 
 ## Multibranding konfigurieren {#configuring-multibranding}
 
-In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrorseiten-URLs für jede Marke für Transaktionsnachrichten in Adobe Campaign konfiguriert werden können.
+In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrorseiten-URLs einer jeden Marke für Transaktionsnachrichten in Adobe Campaign konfiguriert werden können.
 
 ### Voraussetzungen {#prerequisites}
 
@@ -99,17 +99,17 @@ In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrors
 * Jeder Marke muss eine Sub-Domain zugewiesen werden.
 * Wenn das Webtracking auf HTTPS-Seiten erfolgt, müssen Sie für alle Marken über ein HTTPS-Zertifikat verfügen.
 
-Um Multibranding zu konfigurieren, müssen Sie sowohl Ausführungsinstanzen als auch Kontrollinstanzen konfigurieren.
+Für Multibranding müssen Sie sowohl die Ausführungsinstanzen als auch die Kontrollinstanzen konfigurieren.
 
 ### Ausführungsinstanz konfigurieren {#execution-instance}
 
-Gehen Sie in den Ausführungsinstanzen wie folgt vor:
+Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
 
 1. Erstellen Sie für jede Marke ein externes Konto.
 
    >[!NOTE]
    >
-   >Erfahren Sie, wie Sie in [diesem Abschnitt](../../message-center/using/configuring-instances.md#control-instance) ein externes Konto vom Typ Ausführungsinstanz erstellen.
+   >Näheres dazu, wie Sie ein externes Konto vom Typ Ausführungsinstanz erstellen, finden Sie in [diesem Abschnitt](../../message-center/using/configuring-instances.md#control-instance).
 
 1. Erweitern Sie das Schema nms:extAccount, um die Tracking-URL hinzuzufügen:
 
@@ -120,7 +120,7 @@ Gehen Sie in den Ausführungsinstanzen wie folgt vor:
 
    >[!NOTE]
    >
-   >Erfahren Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md) , wie Sie ein vorhandenes Schema erweitern.
+   >Näheres dazu, wie Sie ein vorhandenes Schema erweitern, finden Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md).
 
 1. Passen Sie das Formular nms:extAccount an:
 
@@ -154,16 +154,16 @@ Gehen Sie in den Ausführungsinstanzen wie folgt vor:
 
 ### Kontrollinstanz konfigurieren {#control-instance}
 
-In der Kontrollinstanz müssen Versandvorlagen mit externen Konten verknüpft werden.
+Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinander verknüpfen.
 
 Gehen Sie dazu wie folgt vor:
 
-1. Erstellen Sie für jede Marke ein externes Konto mit demselben internen Namen wie in der [Ausführungsinstanz](#execution-instance) (Schritt 1) definiert.
+1. Erstellen Sie auf der ](#execution-instance)Ausführungsinstanz[ für jede Marke ein externes Konto mit demselben internen Namen (Schritt 1).
 
 1. Erstellen Sie für jede Marke eine Standard-Versandvorlage.
 
    >[!NOTE]
    >
-   >    In [diesem Abschnitt](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template) erfahren Sie, wie Sie eine Versandvorlage erstellen.
+   >    Näheres dazu, wie Sie eine Versandvorlage erstellen, finden Sie in [diesem Abschnitt](../../delivery/using/creating-a-delivery-template.md#creating-a-new-template).
 
 1. Konfigurieren Sie in den **[!UICONTROL Eigenschaften]** der Versandvorlage das Routing zum externen Konto der Marke.
