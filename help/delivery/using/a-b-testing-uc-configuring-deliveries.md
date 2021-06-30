@@ -13,7 +13,7 @@ ht-degree: 63%
 
 ---
 
-# Konfigurieren der Sendungen im Workflow {#step-4--configuring-the-deliveries-in-the-workflow}
+# Sendungen im Workflow konfigurieren {#step-4--configuring-the-deliveries-in-the-workflow}
 
 Sobald die [Populationen](a-b-testing-uc-population-samples.md) erstellt wurden, können Sie die Sendungen konfigurieren. In diesem Anwendungsfall ermöglichen es die ersten beiden Sendungen, verschiedene Inhalte an die Population A und B zu senden. Der dritte Versand ist der Fallback-Versand: Er wird an die Empfänger gesendet, die weder zu A noch zu B gehören. Der Inhalt wird durch ein Script berechnet und ist entweder mit A oder B identisch, je nachdem, welcher Empfänger die höchste Öffnungsrate erzielt hat. Wir müssen eine Wartezeit für die dritte Sendung konfigurieren, um das Ergebnis der Sendungen A und B zu ermitteln. Aus diesem Grund beinhaltet die dritte Sendung eine Aktivität vom Typ **[!UICONTROL Warten]**.
 
