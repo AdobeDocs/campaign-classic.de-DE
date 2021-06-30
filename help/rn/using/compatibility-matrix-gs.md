@@ -17,7 +17,7 @@ ht-degree: 97%
 
 In diesem Dokument sind alle Systeme und Komponenten aufgeführt, die für Builds der **Adobe Campaign Classic[!DNL Gold Standard]**-Version 19.1 unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit dieser Version von Adobe Campaign kompatibel.
 
-## Wichtige Hinweise       {#important-notes-gs}
+## Wichtige Hinweise{#important-notes-gs}
 
 Sofern nicht anders angegeben, werden alle Nebenversionen unterstützt.
 
