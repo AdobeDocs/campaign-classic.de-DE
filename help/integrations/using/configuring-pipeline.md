@@ -52,7 +52,7 @@ Kunden gehosteter Bereitstellungen können ein Ticket bei der Adobe-Kundenunters
 
 Kunden von On-Premise-Bereitstellungen finden Informationen hierzu auf der Seite [Konfigurieren von Adobe I/O für Adobe Experience Cloud Triggers](../../integrations/using/configuring-adobe-io.md). Beachten Sie, dass für die den Adobe I/O-Anmeldedaten hinzugefügte API **[!UICONTROL Adobe Analytics]** ausgewählt sein muss.
 
-## Schritt 2: Konfigurieren der Pipeline-Option &quot;NmsPipeline_Config&quot; {#configuring-nmspipeline}
+## Schritt 2: Konfigurieren der Pipeline-Option &quot;NmsPipeline_Config&quot;  {#configuring-nmspipeline}
 
 Sobald die Authentifizierung eingerichtet ist, ruft die Pipeline die Ereignisse ab. Sie verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden. Der Auslöser muss in Adobe Analytics generiert und an die Pipeline gesendet worden sein; diese verarbeitet nur Auslöser, die in Adobe Campaign konfiguriert wurden.
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
@@ -102,7 +102,7 @@ Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöse
    }
    ```
 
-### Der Parameter &quot;Consumer&quot; {#consumer-parameter}
+### Der Parameter &quot;Consumer&quot;  {#consumer-parameter}
 
 Die Pipeline funktioniert wie ein Anbieter-Verbraucher-Modell. Nachrichten werden nur von einem einzelnen Verbraucher &quot;konsumiert&quot;; jeder Verbraucher erhält eine eigene Kopie der Nachrichten.
 
