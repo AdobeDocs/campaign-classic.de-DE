@@ -64,7 +64,7 @@ Die Deduplizierung von Adressen schützt Ihre Reputation und gewährleistet eine
 **Verwandte Themen:**
 
 * [Aktivität „Deduplizierung“](../../workflow/using/deduplication.md).
-* [Anwendungsfall: Verwenden der Zusammenführungsfunktion der Aktivität „Deduplizierung“](../../workflow/using/deduplication-merge.md)
+* [Anwendungsfall: Verwenden der Zusammenführungsfunktion der Aktivität &quot;Deduplizierung&quot;](../../workflow/using/deduplication-merge.md)
 
 ## Indizieren von E-Mail-Adressen {#index-addresses}
 
