@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
 source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
 ht-degree: 100%
 
@@ -126,7 +126,7 @@ Gehen Sie beim Aktualisieren der Option &quot;NmsTracking_Pointer&quot; wie folg
 
 1. Starten Sie den Tracking-Workflow neu.
 
-## Tracking scheint bei einigen WebMail-Services nicht zu funktionieren {#webmail}
+## Tracking scheint bei einigen Webmail-Services nicht zu funktionieren {#webmail}
 
 Sie können die Klick-Tracking-Formel anpassen und eine benutzerdefinierte Adobe Analytics-Tracking-Formel angeben.
 
