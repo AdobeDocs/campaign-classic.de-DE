@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '617'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
    Diese Option darf nur zur Problembehebung verwendet werden und nie im Produktionsalltag. Bei Aktivierung der Option wird der Workflow prioritär. Alle anderen Workflows werden bis zu seinem Abschluss von der Workflow-Engine angehalten.
 
-### Umgang mit Fehlern      {#error-management}
+### Umgang mit Fehlern       {#error-management}
 
 * **[!UICONTROL Fehlerbehebung]**
 
