@@ -7,16 +7,16 @@ content-type: reference
 topic-tags: event-activities
 exl-id: 8025d207-3bc0-400f-b6a4-a72765e5a9d2
 source-git-commit: 8c47027099559549320abf68016386cc85dcda5a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Dateiübertragung{#file-transfer}
 
-Die Aktivität **Dateiübertragung** ermöglicht den Empfang und Versand von Dateien, den Test auf Existenz von Dateien oder die Auflistung von Dateien auf einem Server. Das verwendete Protokoll ist entweder Azure Blob Storage, Amazon Simple Storage Service (S3), FTP oder SFTP.
-Mit S3-, Azure Blob Storage- oder SFTP-Verbindungen können Sie Segmentdaten auch mit der Echtzeit-Kundendatenplattform von Adobe in Adobe Campaign importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de).
+Mit der Aktivität **Dateiübertragung** können Sie Dateien senden und empfangen, das Vorhandensein von Dateien prüfen oder Dateien auf einem Server auflisten. Hierfür können die Protokolle Azure Blob Storage, Amazon Simple Storage Service (S3), FTP oder SFTP verwendet werden.
+Bei Verwendung einer S3-, Azure Blob Storage- oder SFTP-Verbindung ist es außerdem möglich, Segmentdaten über die Echtzeit-Kundendatenplattform von Adobe in Adobe Campaign zu importieren. Weitere Informationen hierzu finden Sie in [dieser Dokumentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/email-marketing/adobe-campaign.html?lang=de).
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Die weitere Konfiguration hängt von der gewählten Aktion ab.
 
    ![](assets/file_transfert_edit.png)
 
-   Aktivieren Sie **[!UICONTROL Verwenden Sie ein externes Konto]**, um ein Konto aus den Azure Blob Storage-, S3-, FTP- oder SFTP-Konten auszuwählen, die im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** des Navigationsbaums konfiguriert sind. Geben Sie dann an, welches Verzeichnis auf dem Server die herunterzuladenden Dateien enthält.
+   Aktivieren Sie das Kontrollkästchen **[!UICONTROL Externes Konto verwenden]**, um ein Konto aus den Azure Blob Storage-, S3-, FTP- oder SFTP-Konten auszuwählen, die im Knoten **[!UICONTROL Administration > Plattform > Externe Konten]** des Navigationsbaums konfiguriert sind. Geben Sie danach an, welches Verzeichnis auf dem Server die Dateien enthält, die heruntergeladen werden sollen.
 
    ![](assets/file_transfert_edit_external.png)
 
@@ -87,7 +87,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
 
 * **[!UICONTROL Sitzungsprotokolle anzeigen]**
 
-   Ruft die Protokolle des Azure Blob-Speichers, der S3-, FTP- oder SFTP-Übertragung ab und fügt sie in die Workflow-Logs ein.
+   Ruft die Logs zur Azure Blob Storage-, S3-, FTP- bzw. SFTP-Übertragung ab und fügt sie in die Workflow-Logs ein.
 
 * **[!UICONTROL Passiven Modus deaktivieren]**
 
