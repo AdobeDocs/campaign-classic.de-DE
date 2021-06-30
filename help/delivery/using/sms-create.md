@@ -31,7 +31,7 @@ Gehen Sie wie folgt vor, um einen neuen SMS-Versand zu erstellen:
 1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klicken Sie auf **[!UICONTROL Fortfahren]**, um die Eingaben zu bestätigen und in das Fenster der Nachrichtenkonfiguration zu gelangen.
 
-## Erstellen Sie den SMS-Inhalt {#defining-the-sms-content}
+## SMS-Inhalt erstellen {#defining-the-sms-content}
 
 Um den Inhalt der SMS zu erstellen, gehen Sie wie folgt vor:
 
