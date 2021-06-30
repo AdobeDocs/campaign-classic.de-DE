@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Message Center-Dienstqualität
-description: Erfahren Sie mehr über den Bericht Dienstebene des Message-Center-Dienstes.
+description: Erfahren Sie mehr über den Bericht "Message Center Dienstqualität".
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '262'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 69%
 
 Dieser Bericht enthält die Versandstatistiken zu Transaktionsnachrichten sowie die Fehleraufschlüsselung. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen.
 
-Der für technische Administratoren bestimmte Bericht ist auch über den Tab **[!UICONTROL Monitoring]** der Kontrollinstanz zugänglich.
+Auf diesen Bericht, der sich an technische Administratoren richtet, kann auch über den Tab **[!UICONTROL Monitoring]** der Kontrollinstanz zugegriffen werden.
 
 ![](assets/mc_reports_1.png)
 
-In diesem Bericht können Sie entweder die Gesamtstatistik oder die Statistiken bezüglich einer bestimmten Ausführungsinstanz anzeigen. Sie können die Daten auch nach Kanal und einem bestimmten Zeitraum filtern.
+In diesem Bericht können Sie entweder die Gesamtstatistik oder die Statistiken einer bestimmten Ausführungsinstanz anzeigen. Zusätzlich können Sie die Daten nach Kanal und Zeitraum filtern.
 
-Die im Abschnitt **[!UICONTROL Indikatoren über den Zeitraum]** angezeigten Indikatoren werden über den ausgewählten Zeitraum berechnet:
+Die im Bereich **[!UICONTROL Kennzahlen über den Zeitraum]** angezeigten Indikatoren werden über den ausgewählten Zeitraum berechnet:
 
 * **[!UICONTROL Eingehend (Ereignis/Std.)]**: Durchschnittliche Anzahl der pro Stunde neu in die Message-Center-Warteschlange eingereihten Ereignisse.
 * **[!UICONTROL Eingehend (Ereignisanz.)]**: Anzahl der neuen Ereignisse in der Warteschlange.
@@ -34,4 +34,4 @@ Die im Abschnitt **[!UICONTROL Indikatoren über den Zeitraum]** angezeigten Ind
 
 >[!NOTE]
 >
->Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Softwareverteilungs-Assistenten konfiguriert werden. Siehe [Bildschirmschwellen](../../message-center/using/additional-configurations.md#monitoring-thresholds).
+>Die Hinweis- und Warnschwellen (orange bzw. rot) der Kennzahlen können im Softwareverteilungs-Assistenten konfiguriert werden. Siehe [Überwachungsschwellen](../../message-center/using/additional-configurations.md#monitoring-thresholds).
