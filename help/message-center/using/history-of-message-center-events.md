@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Verlauf von Message Center-Ereignissen
-description: Erfahren Sie mehr über den Ereignisbericht für Message Center.
+description: Erfahren Sie mehr über den Bericht zum Verlauf von Message Center-Ereignissen.
 audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: 04d4791b-a1dd-4361-a469-6f5aff0f41b8
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '152'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
