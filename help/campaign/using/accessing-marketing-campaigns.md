@@ -19,7 +19,7 @@ Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analys
 
 ## Grundlagen zum Arbeitsbereich {#workspace-basics}
 
-### Startseite        {#home-page}
+### Startseite         {#home-page}
 
 Unmittelbar nach der Herstellung der Verbindung mit Adobe Campaign gelangen Sie auf die Startseite.
 
@@ -117,7 +117,7 @@ Adobe Campaign ermöglicht den Einsatz kollaborativer Prozesse zur Ausführung u
 
 #### Planung {#schedule}
 
-Eine Kampagne umfasst mehrere Sendungen. Die Planung einer Kampagne bietet eine Gesamtübersicht ihrer Bestandteile sowie einen einfachen Zugriff auf diese.
+Eine Kampagne umfasst mehrere Sendungen. Die Planung einer Kampagne bietet eine Gesamtübersicht ihrer Bestandteile sowie einen einfachen Zugriff darauf.
 
 ![](assets/campaign_planning_tab.png)
 
