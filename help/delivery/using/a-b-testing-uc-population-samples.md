@@ -79,4 +79,4 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-Jetzt können Sie die beiden Versandvorlagen erstellen. [Mehr dazu](a-b-testing-uc-delivery-templates.md)).
+Jetzt können Sie die beiden Versandvorlagen erstellen. [Weitere Informationen](a-b-testing-uc-delivery-templates.md)).
