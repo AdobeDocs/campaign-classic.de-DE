@@ -67,7 +67,7 @@ Das folgende Script kann wie im Zielgruppenbestimmungs-Workflow verwendet werden
 
 Eine detaillierte Erklärung des Scripts finden Sie in [diesem Abschnitt](#details-of-the-script).
 
-## Umsetzung {#implementation}
+## Implementierung {#implementation}
 
 1. Öffnen Sie die **[!UICONTROL JavaScript-Code]**-Aktivität.
 1. Kopieren Sie das in [Script-Beispiel](#example-of-a-script) angebotene Script in das Fenster **[!UICONTROL JavaScript-Code]**.
