@@ -1,33 +1,33 @@
 ---
 product: campaign
 title: Transaktionsnachrichten-Architektur
-description: In diesem Abschnitt werden die Transaktionsnachrichten-Architektur von Adobe Campaign Classic und die verfügbaren Kanäle zum Versand von Transaktionsnachrichten beschrieben.
+description: In diesem Abschnitt werden die Transaktionsnachrichten-Architektur von Adobe Campaign Classic und die verfügbaren Kanäle für den Versand von Transaktionsnachrichten erläutert.
 audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1226'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Transaktionsnachrichten-Architektur {#transactional-messaging-architecture}
 
-Transaktionsnachrichten basieren auf einer bestimmten Architektur, die aus mehreren Instanzen besteht:
+Transaktionsnachrichten basieren auf einer Architektur, die sich aus mehreren Instanzen zusammensetzt:
 
-* Eine **Kontrollinstanz**, für die die Nachrichtenvorlagen erstellt werden.
+* Eine **Kontrollinstanz**, auf der die Nachrichtenvorlagen erstellt werden.
 
-* Mindestens eine **Ausführungsinstanz**, die Ereignisse empfangen und Nachrichten senden.
+* Eine oder mehrere **Ausführungsinstanzen**, auf denen die Ereignisse empfangen und von denen aus die Transaktionsnachrichten versendet werden.
 
 ![](assets/messagecenter_diagram.png)
 
-| Kontrollinstanz konfigurieren | Ausführungsinstanz konfigurieren |
+| Kontrollinstanz | Ausführungsinstanz |
 |--- |--- |
-| Adobe Campaign-Benutzer melden sich bei der Kontrollinstanz an, um: <ul><li>Transaktionsnachrichten-Vorlagen erstellen</li><li>Nachrichtenvorschau mithilfe einer Testliste erstellen</li><li>Anzeigen von Berichten</li><li>Ausführungsinstanzen überwachen</li></ul> | Ausführungsinstanzen sind hier: <ul><li>Ereignisse empfangen</li><li>Verknüpfen Sie diese mit Transaktionsnachrichten-Vorlagen</li><li>Versand einer personalisierten Nachricht an jeden Empfänger</li></ul> |
+| Adobe Campaign-Benutzer melden sich bei der Kontrollinstanz an, um folgende Aktionen auszuführen: <ul><li>Erstellen der Transaktionsnachrichtenvorlagen</li><li>Erstellen der Nachrichtenvorschau mithilfe einer Liste von Testadressen</li><li>Anzeigen von Berichten</li><li>Überwachen der Ausführungsinstanzen</li></ul> | Ausführungsinstanzen dienen zur Ausführung folgender Aktionen: <ul><li>Empfangen von Ereignissen</li><li>Verknüpfen der Ereignisse mit Transaktionsnachrichtenvorlagen</li><li>Versenden einer personalisierten Nachricht an die einzelnen Empfänger</li></ul> |
 
-## Instanzen installieren {#installing-instances}
+## Installieren von Instanzen {#installing-instances}
 
 Bei der Installation der Transaktionsnachrichten-Packages sind mehrere Vorsichtsmaßnahmen erforderlich. Es wird empfohlen, in einer Testumgebung zu arbeiten, bevor Sie in Produktion gehen. Des Weiteren ist der Besitz einer entsprechenden Adobe-Campaign-Lizenz erforderlich. Nehmen Sie für weiterführende Informationen mit Ihrem Adobe-Kundenbetreuer Kontakt auf.
 
@@ -35,17 +35,17 @@ Bei der Installation der Transaktionsnachrichten-Packages sind mehrere Vorsichts
 >
 >Die Kontroll- und die Ausführungsinstanz(en) müssen auf unterschiedlichen Computern installiert werden. Sie können aber nicht auf derselben Campaign-Instanz ausgeführt werden.
 
-Wenn Sie mehrere Kanäle benötigen, müssen Sie die entsprechenden Packages installieren und konfigurieren, bevor Sie die Transaktionsnachrichten-Packages installieren. Weiterführende Informationen dazu finden Sie unter [Hinzufügen eines Versandkanals](#adding-a-delivery-channel).
+Wenn Sie mehrere Kanäle benötigen, müssen Sie die entsprechenden Packages installieren und konfigurieren, bevor Sie die Transaktionsnachrichten-Packages installieren. Weiterführende Informationen hierzu finden Sie unter [Hinzufügen von Versandkanälen](#adding-a-delivery-channel).
 
-## Kontrollinstanz konfigurieren {#control-instance}
+## Kontrollinstanz {#control-instance}
 
-Um die Kontrollinstanz auf Ihrem Computer zu installieren, wählen Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package importieren]** aus. Weitere Informationen hierzu finden Sie unter [Installieren von nativen Campaign Classic-Packages](../../installation/using/installing-campaign-standard-packages.md).
+Um die Kontrollinstanz auf Ihrem System zu installieren, wählen Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** über das Menü **[!UICONTROL Werkzeuge]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package importieren]** aus. Weitere Informationen hierzu finden Sie unter [Installieren von nativen Campaign Classic-Packages](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_controlinstance_001.png)
 
-Die detaillierten Schritte zum Konfigurieren der Kontrollinstanz werden in [diesem Abschnitt](../../message-center/using/configuring-instances.md#control-instance) beschrieben.
+Die detaillierten Schritte zur Konfiguration der Kontrollinstanz werden in [diesem Abschnitt](../../message-center/using/configuring-instances.md#control-instance) beschrieben.
 
-### Mehrere Kontrollinstanzen {#supporting-several-control-instances} unterstützen
+### Unterstützung mehrerer Kontrollinstanzen {#supporting-several-control-instances}
 
 >[!IMPORTANT]
 >
@@ -57,27 +57,27 @@ Mehrere Kontrollinstanzen können einen Ausführungscluster gemeinsam nutzen. We
 
 >[!NOTE]
 >
->Weitere Informationen zur erforderlichen Konfiguration finden Sie unter [Mehrere Kontrollinstanzen verwenden](../../message-center/using/configuring-instances.md#using-several-control-instances).
+>Weiterführende Informationen zur hierfür erforderlichen Konfiguration finden Sie unter [Mehrere Kontrollinstanzen verwenden](../../message-center/using/configuring-instances.md#using-several-control-instances).
 
-## Ausführungsinstanz konfigurieren {#execution-instance}
+## Ausführungsinstanz {#execution-instance}
 
-Um eine Ausführungsinstanz auf Ihrem Computer zu installieren, wählen Sie das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** über das Menü **[!UICONTROL Tools]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package importieren]** aus. Weitere Informationen hierzu finden Sie unter [Installieren von nativen Campaign Classic-Packages](../../installation/using/installing-campaign-standard-packages.md).
+Um eine Ausführungsinstanz auf Ihrem System zu installieren, wählen Sie das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** über das Menü **[!UICONTROL Werkzeuge]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package importieren]** aus. Weitere Informationen hierzu finden Sie unter [Installieren von nativen Campaign Classic-Packages](../../installation/using/installing-campaign-standard-packages.md).
 
 ![](assets/messagecenter_install_executioninstance_001.png)
 
-Die detaillierten Schritte zum Konfigurieren einer Ausführungsinstanz finden Sie in [diesem Abschnitt](../../message-center/using/configuring-instances.md#execution-instance).
+Die detaillierten Schritte zur Konfiguration einer Ausführungsinstanz finden Sie in [diesem Abschnitt](../../message-center/using/configuring-instances.md#execution-instance).
 
 ## Verfügbare Versandkanäle
 
-Der E-Mail-Kanal ist standardmäßig verfügbar. Um Ihre Transaktionsnachrichten über mehrere Kanäle zu versenden, können Sie weitere Kanäle hinzufügen (Mobile-Kanal, Mobile-App-Kanal usw.).
+Der E-Mail-Kanal ist standardmäßig verfügbar. Sie können Ihre Transaktionsnachrichten auf mehreren unterschiedlichen Kanälen versenden, indem Sie weitere Kanäle hinzufügen (z. B. Mobile-Kanal, Mobile-App-Kanal usw.).
 
 >[!IMPORTANT]
 >
->Das Hinzufügen eines Versandkanals (mobiler Kanal, mobiler App-Kanal usw.) muss vor der Installation des Transaktionsnachrichten-Packages durchgeführt werden.
+>Das Hinzufügen eines Versandkanals (Mobile-Kanal, Mobile-App-Kanal usw.) muss vor der Installation des Transaktionsnachrichten-Packages durchgeführt werden.
 
-### Hinzufügen eines Versandkanals {#adding-a-delivery-channel}
+### Hinzufügen von Versandkanälen {#adding-a-delivery-channel}
 
-Adobe empfiehlt, **immer das Versandkanalpaket hinzuzufügen, bevor Sie das Transaktionsnachrichten-Package** installieren.
+Es wird empfohlen, **das Versandkanal-Package grundsätzlich vor der Installation des Transaktionsnachrichten-Packages hinzuzufügen**.
 
 Wenn Sie jedoch ein Transaktionsnachrichtenprojekt auf dem E-Mail-Kanal gestartet haben und dann während des Projekts entscheiden, einen neuen Kanal hinzuzufügen, können Sie die folgenden Schritte ausführen.
 
@@ -181,7 +181,7 @@ Um das Transaktionsnachrichtenmodul mit LINE zu verwenden, sind die folgenden El
 
 * Installieren Sie das Package **[!UICONTROL LINE Connect]** auf beiden Instanzen.
 * Installieren Sie das Package **[!UICONTROL Transaktionsnachrichten-Kontrolle]** auf Ihrer Marketinginstanz und das Package **[!UICONTROL Transaktionsnachrichten-Ausführung]** auf der Ausführungsinstanz.
-* Erstellen Sie ein LINE **externes Konto** und **service** auf beiden Instanzen mit identischen Namen, damit sie synchronisiert werden können. Weitere Informationen zum Erstellen eines externen LINE-Kontos und -Dienstes finden Sie in [diesem Abschnitt](../../delivery/using/line-channel.md#setting-up-line-channel).
+* Erstellen Sie auf beiden Instanzen ein **externes LINE-Konto** und einen **LINE-Service** mit identischen Namen, damit sie synchronisiert werden können. Weiterführende Informationen dazu, wie Sie ein externes LINE-Konto und einen LINE-Service erstellen, finden Sie in [diesem Abschnitt](../../delivery/using/line-channel.md#setting-up-line-channel).
 
 Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattform]** > **[!UICONTROL Externes Konto]** unterschiedliche externe Konten auf beiden Instanzen:
 
@@ -248,4 +248,4 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
 
 
 
-1. Jetzt können Sie [Transaktionsnachrichten erstellen](../../message-center/using/creating-the-message-template.md).
+1. Sie können jetzt mit dem [Erstellen von Transaktionsnachrichten](../../message-center/using/creating-the-message-template.md) beginnen.
