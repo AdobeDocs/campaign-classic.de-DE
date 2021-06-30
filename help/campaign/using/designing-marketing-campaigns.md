@@ -62,7 +62,7 @@ Im Folgenden werden Termini dargestellt, die im Zusammenhang mit Campaign von Be
 
    Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#associating-and-structuring-resources-linked-via-a-delivery-outline).
 
-## Tutorial {#video}
+## Anleitungsvideo {#video}
 
 In diesem Video werden die wichtigsten Konzepte von Marketing-Kampagnen vorgestellt.
 
