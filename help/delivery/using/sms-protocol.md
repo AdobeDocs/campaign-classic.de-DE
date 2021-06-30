@@ -711,7 +711,7 @@ Ermöglicht das Hinzufügen eines benutzerdefinierten TLV. Dieses Feld legt den 
 
 Diese Einstellung erlaubt nur das Hinzufügen einer TLV-Option pro Nachricht.
 
-### Automatische Antwort auf MO          {#automatic-reply}
+### Automatische Antwort auf MO           {#automatic-reply}
 
 >[!IMPORTANT]
 >
