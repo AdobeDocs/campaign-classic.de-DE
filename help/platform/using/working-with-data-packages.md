@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
 ht-degree: 100%
 
@@ -343,7 +343,7 @@ Die wichtigsten Punkte sind folgende:
 >
 >Weiterführende Informationen zum Einrichten eines Workflows für das automatische Exportieren von Packages finden Sie auf [dieser Seite](https://helpx.adobe.com/de/campaign/kb/export-packages-automatically.html).
 
-### Empfehlungen       {#data-package-recommendations}
+### Empfehlungen        {#data-package-recommendations}
 
 Führen Sie Importe stets innerhalb derselben Version der Plattform durch. Sie müssen Ihre Packages zwischen zwei Instanzen bereitstellen, die denselben Build aufweisen. Erzwingen Sie den Import niemals und aktualisieren Sie immer zuerst die Plattform (wenn der Build abweicht).
 
