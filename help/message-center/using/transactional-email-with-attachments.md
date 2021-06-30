@@ -1,25 +1,25 @@
 ---
 product: campaign
 title: Transaktions-E-Mails mit Anhängen senden
-description: Erfahren Sie, wie Sie mit Adobe Campaign Classic Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen senden.
+description: Erfahren Sie, wie Sie mit Adobe Campaign Classic Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können.
 audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
-# Anwendungsfall: Transaktions-E-Mails mit Anhängen senden {#transactional-email-with-attachments}
+# Anwendungsbeispiel: Senden von Transaktions-E-Mails mit Anhängen {#transactional-email-with-attachments}
 
 In diesem Anwendungsbeispiel sollen E-Mail-Anhänge dynamisch zu ausgehenden Sendungen hinzugefügt werden.
 
 ## Die wichtigsten Schritte {#key-steps}
 
-In diesem Szenario erfahren Sie, wie Sie Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können. Die Anlagen werden nicht vorab auf den Transaktionsnachrichten-Server hochgeladen: Stattdessen werden sie im Handumdrehen generiert.
+In diesem Szenario erfahren Sie, wie Sie Transaktions-E-Mails mit individuellen und/oder personalisierten Anhängen versenden können. Die Anhänge werden nicht vorab auf den Transaktionsnachrichtenversand-Server hochgeladen, sondern dynamisch generiert.
 
 Wenn Sie Kundeninteraktionen oder Daten erfassen, müssen Sie diese Informationen unter Umständen am Ende dieses Vorgangs beispielsweise in Form einer an eine E-Mail angehängten PDF-Datei an den Kunden zurücksenden.
 
@@ -45,16 +45,16 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
 
-* Die Transaktionsnachrichten-Instanzen sollten nicht zum Speichern, Exportieren oder Hochladen von Dateien oder Daten verwendet werden. Sie dürfen nur für Ereignisdaten und zugehörige Informationen verwendet werden. Sie dürfen nicht als Dateispeichersystem betrachtet werden.
-* Da außerhalb von Adobe kein direkter Zugriff auf die Transaktionsnachrichten-Instanzen oder -Server besteht, ist es nicht möglich, diese Dateien per Push auf diese Server zu übertragen (kein FTP-Zugriff).
-* Es ist vertraglich nicht richtig, den Speicherplatz in den Transaktionsnachrichten-Instanzen zum Speichern beliebiger Dateitypen zu verwenden, nicht einmal für Anhänge.
+* Die Instanzen für Transaktionsnachrichten sollten nicht zum Speichern, Exportieren oder Hochladen von Dateien oder Daten verwendet werden. Sie dürfen nur für Ereignisdaten und zugehörige Informationen verwendet werden. Sie dürfen nicht als Dateispeichersystem betrachtet werden.
+* Da außerhalb von Adobe kein direkter Zugriff auf die Instanzen oder Server für Transaktionsnachrichten besteht, ist keine Standardmethode zum Übertragen solcher Dateien auf diese Server verfügbar (kein FTP-Zugriff).
+* Gemäß dem Vertrag ist es untersagt, den Speicherplatz der Instanzen für Transaktionsnachrichten zum Speichern jeglicher Typen von Dateien zu verwenden. Dies gilt auch für Anhänge.
 * Sie müssen zum Hosten dieser Dateien ein anderes Online-Speichersystem verwenden. Sie benötigen FTP-Zugriff auf das System und müssen Dateien schreiben und löschen können.
 
 >[!NOTE]
 >
 >Zur Vermeidung von Leistungsproblemen wird empfohlen, nicht mehr als einen Anhang pro E-Mail hinzuzufügen. Der empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
-## Umsetzung {#implementation}
+## Implementierung {#implementation}
 
 Das folgende Diagramm zeigt die verschiedenen Schritte bei der Implementierung dieses Szenarios:
 
