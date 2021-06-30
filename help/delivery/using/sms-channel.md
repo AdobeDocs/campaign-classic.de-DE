@@ -28,7 +28,7 @@ Die wichtigsten Schritte zum Senden einer SMS sind:
 * [SMS-Kanal konfigurieren](sms-set-up.md)
 * [SMS-Versand erstellen](sms-create.md)
 * [Audience festlegen](sms-create.md#selecting-the-target-population)
-* [Erstellen Sie den SMS-Inhalt](sms-create.md#defining-the-sms-content)
+* [SMS-Inhalt erstellen](sms-create.md#defining-the-sms-content)
 * [SMS senden, überwachen und verfolgen](sms-send.md)
 * [Fehler beheben](troubleshooting-sms.md)
 
