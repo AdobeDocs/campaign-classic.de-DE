@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: case-study
 exl-id: 90afced3-465d-4370-8a33-51a7e4356135
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Folgende Etappen sind zur Umsetzung dieser Interaktion zu durchlaufen:
 1. [Anonyme Umgebung erstellen](#creating-an-anonymous-environment)
 1. [Anonyme Platzierungen erstellen](#creating-anonymous-offer-spaces)
 1. [Angebotskategorie und Thema erstellen](#creating-an-offer-category-and-a-theme)
-1. [Anonyme Angebote erstellen.](#creating-anonymous-offers)
+1. [Anonyme Angebote erstellen](#creating-anonymous-offers)
 1. [Angebotsplatzierungen auf der Website konfigurieren](#configure-the-web-offer-space-on-the-website)
 
 ### Erstellung einer anonymen Umgebung {#creating-an-anonymous-environment}
