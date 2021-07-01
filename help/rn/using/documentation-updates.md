@@ -6,9 +6,9 @@ feature: Übersicht
 role: Business Practitioner
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
+source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
 workflow-type: tm+mt
-source-wordcount: '4486'
+source-wordcount: '4476'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisier
 
 ## Oktober 2019 {#october-2019}
 
-Die Liste der Fehlermeldungen für Campaign wurde aktualisiert – [Mehr dazu](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Die Liste der Fehlermeldungen für Campaign wurde aktualisiert – [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA. [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
 
@@ -516,7 +516,7 @@ Die Beschreibung der Workflow-Option für die Vorab-Bearbeitung wurde aktualisie
 
 Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert. [Mehr dazu](../../integrations/using/about-triggers.md)
 
-Die Liste der Fehlermeldungen wurde aktualisiert. [Mehr dazu](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/error_messages/error_codes.html)
+Die Liste der Fehlermeldungen wurde aktualisiert. [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
 
 Es wurden weitere Informationen zu SOAP-Authentifizierungsmethoden für Transaktionsnachrichten hinzugefügt. [Mehr dazu](../../message-center/using/event-description.md)
 
