@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen
 >
 >In Internet Explorer muss der vollständige Dateipfad durch den regulären Ausdruck überprüft werden.
 
-Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie den Webserver konfigurieren. [Mehr dazu](web-server-configuration.md)
+Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)
 
 ## Proxy-Verbindungskonfiguration {#proxy-connection-configuration}
 
@@ -102,6 +102,19 @@ Wenn Sie denselben Proxy für mehrere Verbindungstypen verwenden, wird nur proxy
 Wenn Sie interne Verbindungen haben, die durch den Proxy gehen sollen, fügen Sie sie im Parameter override hinzu.
 
 Wenn Sie die Proxy-Verbindung vorübergehend deaktivieren möchten, setzen Sie den aktivierten Parameter auf &quot;false&quot; oder &quot;0&quot;.
+
+Wenn Sie den iOS HTTP/2-Connector über einen Proxy verwenden müssen, werden die folgenden HTTP-Proxy-Modi unterstützt:
+
+* HTTP ohne Authentifizierung
+* Grundlegende HTTP-Authentifizierung
+
+Um den Proxy-Modus zu aktivieren, muss die folgende Änderung in der Datei `serverconf.xml` vorgenommen werden:
+
+```
+<nmac useHTTPProxy="true">
+```
+
+Weitere Informationen zu diesem iOS HTTP/2-Connector finden Sie auf dieser [Seite](../../delivery/using/about-mobile-app-channel.md).
 
 ## Verwalten öffentlicher Ressourcen {#managing-public-resources}
 
