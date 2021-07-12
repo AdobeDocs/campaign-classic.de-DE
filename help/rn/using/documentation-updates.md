@@ -3,10 +3,10 @@ product: campaign
 title: Aktualisierungen der Dokumentation für Adobe Campaign Classic
 description: Auf dieser Seite werden alle neuen Funktionen und Updates in der Adobe Campaign Classic-Dokumentation aufgelistet.
 feature: Übersicht
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '4476'
 ht-degree: 99%
