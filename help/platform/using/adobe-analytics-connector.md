@@ -4,10 +4,10 @@ product: campaign
 title: Adobe Analytics-Connector
 description: Erfahren Sie mehr über den Adobe Analytics-Connector.
 feature: Übersicht
-role: Business Practitioner, Administrator
+role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: c612b47463427751eff27d6092e371c918c87d93
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 99%
@@ -83,7 +83,7 @@ Um die Integration zwischen Adobe Analytics und Adobe Campaign Classic einzurich
 
 1. Klicken Sie nach Abschluss der Konfiguration auf **[!UICONTROL Report Suite erstellen]**.
 
-### Konfigurieren Sie Konversionsvariablen und Erfolgsereignisse. {#configure-conversion-success}
+### Konfigurieren von Konversionsvariablen und Erfolgsereignissen {#configure-conversion-success}
 
 Im Anschluss an die Erstellung Ihrer **[!UICONTROL Report Suite]** müssen Sie **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgsereignisse]** konfigurieren. Gehen Sie dazu wie folgt vor:
 
