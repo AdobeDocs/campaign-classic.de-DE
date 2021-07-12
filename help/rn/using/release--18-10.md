@@ -3,13 +3,13 @@ product: campaign
 title: Versionshinweise zu Campaign 18.10
 description: Versionshinweise zu Campaign 18.10
 feature: Übersicht
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '2372'
-ht-degree: 100%
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+workflow-type: tm+mt
+source-wordcount: '2370'
+ht-degree: 98%
 
 ---
 
@@ -80,7 +80,7 @@ _6. Dezember 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neuheiten**
 
@@ -96,13 +96,13 @@ _6. Dezember 2018_
 * Fehlerkorrektur – Die Workflow-Dauer in Workflow-Heatmap wird jetzt korrekt berechnet.
 
 
-## Version 18.10 – Build 8977{#release-18-10-build-8977}
+## Version 18.10 - Build 8977{#release-18-10-build-8977}
 
 _5. November 2018_
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -138,7 +138,7 @@ _5. November 2018_
 
 * Eine Sicherheitslücke wurde geschlossen, die potenzielle SSRF- (Server Side Request Forgery) und DoS-Angriffe (Denial of Service) ermöglicht hätte. (NEO-11453)
 * Inhalt (Tracking-Umleitung, Mirrorseiten, Umfragen etc.) wird jetzt von Campaign mit dem X-Robots-Tag-Header nocache bereitgestellt. Dadurch wird verhindert, dass dieser Inhalt von Internet-Suchmaschinen indexiert wird. (NEO-11101)
-* Ein Problem bei XTK-Injections in der Anmelde-API wurde behoben (nms:subscription:Unsubscribe und nms:subscription:Subscribe).
+* Fehlerkorrektur - Es wurde ein XTK-Injektionsfehler in der Anmelde-API behoben (nms:subscription:Unsubscribe und nms:subscription:Subscribe).
 * Ein Problem bei XTK-Injections in der Abmelde-Webanwendung wurde behoben.
 * Passwörter, die in manchen SMS-Logs angezeigt wurden und daher ein Sicherheitsrisiko darstellten, wurden entfernt.
 
