@@ -3,11 +3,11 @@ product: campaign
 title: Erstellen und Verwalten von Listen
 description: Erfahren Sie, wie Sie Listen erstellen und verwalten.
 feature: Profile
-role: Business Practitioner
+role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Erstellen und Verwalten von Listen{#creating-and-managing-lists}
 
-## Definition einer Liste {#about-lists-in-adobe-campaign}
+## Definition einer Liste  {#about-lists-in-adobe-campaign}
 
 Eine Liste ist eine statische Gruppe von Profilen, die als Zielgruppe für Sendungen verwendet oder durch Importe sowie Workflows aktualisiert werden kann. So kann beispielsweise eine mithilfe einer Abfrage aus der Datenbank gefilterte Population in einer Liste gespeichert werden.
 
