@@ -24,7 +24,7 @@ _14. April 2021_
 Build 9032@d030c36 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
-* Dieser Konsolen-Build ist erforderlich, um den [IMS-Zugriff](../../technotes/ims-updates.md) zu erhalten.
+* Dieser Konsolen-Build ist erforderlich, um den [IMS-Zugriff](../../technotes/ims-updates.md) zu verwalten.
 
 **Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
 
