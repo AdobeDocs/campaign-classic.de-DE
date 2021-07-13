@@ -6,10 +6,10 @@ feature: Übersicht
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: c5e1b10b82c8ea1cf8bcb617ee48fe13e16fbfd9
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 96%
+source-wordcount: '1066'
+ht-degree: 95%
 
 ---
 
@@ -24,19 +24,19 @@ _14. April 2021_
 Build 9032@d030c36 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
+* Dieser Konsolen-Build ist erforderlich, um den [IMS-Zugriff](../../technotes/ims-updates.md) zu erhalten.
 
 **Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
 
 >[!CAUTION]
 >
-> * Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign mit Ihrer Adobe ID herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Campaign-Server als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zu Campaign herstellen können.** [Weitere Informationen](../../technotes/ims-updates.md)
+> * Wenn Sie über Adobe Identity Management Service (IMS) eine Verbindung zu Campaign mit Ihrer Adobe ID herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Campaign-Server als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zu Campaign herstellen können.** [Weitere Informationen](../../technotes/ims-updates.md)
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
 > * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte OAuth-Authentifizierungsmodus mit Campaign wird am **30. November 2021** eingestellt.
 
 >
 >
 Weitere Informationen finden Sie in den häufig gestellten Fragen zum [[!DNL Gold Standard] -Upgrade auf Version 11](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html)
-
 
 _2. März 2021_
 
