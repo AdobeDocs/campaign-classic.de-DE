@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '514'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Wenn Sie Adobe Managed Services verwenden, können Sie von einer Aktualisierung 
 
 [Lesen Sie diesen Abschnitt](../../production/using/build-upgrade.md), um zu erfahren, wie Sie Ihre Umgebung aktualisieren können, und konsultieren Sie die [häufigen Fragen](../../platform/using/faq-build-upgrade.md) zu diesem Thema.
 
-## 2. Was ist der Workflow Bereinigung der Datenbank? {#what-is-the-database-cleanup-workflow-}
+## 2. Was ist der Workflow &quot;Bereinigung der Datenbank&quot;? {#what-is-the-database-cleanup-workflow-}
 
 Dieser technische Workflow ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Dieser integrierte technische Workflow wird automatisch ohne das Eingreifen des Benutzers ausgelöst. Der Zugriff erfolgt über den Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]**.
 
