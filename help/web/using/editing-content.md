@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1239'
 ht-degree: 100%
 
@@ -135,6 +135,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 
@@ -147,7 +148,7 @@ Mit der Option **Link auf eine externe URL** können Sie festlegen, dass eine UR
 
 Geben Sie die Link-Adresse in das Feld **URL** in diesem Format ein: **https://www.myURL.com**.
 
-### Link auf eine Webanwendung {#link-to-a-web-application}
+### Link auf eine Web-Anwendung {#link-to-a-web-application}
 
 Mit der Option **Link auf eine Webanwendung** können Sie auf eine Webanwendung in Adobe Campaign zugreifen.
 
@@ -200,17 +201,18 @@ Folgende Optionen sind verfügbar:
 >[!NOTE]
 >
 >* Symbol **Löschen**: Löscht den Baustein und seinen Inhalt.
->
->* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
+   >
+   >
+* Symbol **Duplizieren**: Dupliziert den Baustein sowie alle mit dem Baustein verknüpften Stile.
 
 
 ## Bilder und Animationen verwalten {#managing-images-and-animations}
 
-Mit dem Digital Content Editor können Sie **alle Arten von Bilder** bearbeiten, die mit Browsern kompatibel sind.
+Mit dem Digital Content Editor können Sie **alle Arten von Bildern** bearbeiten, die mit Browsern kompatibel sind.
 
 >[!CAUTION]
 >
->Externe Dateien dürfen nicht in einem **Script**-Tag der HTML-Seite aufgerufen werden. Diese Dateien werden nicht in den Adobe Campaign-Server importiert.
+>Externe Dateien dürfen nicht in einem **Skript**-Tag der HTML-Seite aufgerufen werden. Diese Dateien werden nicht in den Adobe Campaign-Server importiert.
 
 ### Bild hinzufügen/löschen/duplizieren {#adding---deleting---duplicating-an-image}
 
