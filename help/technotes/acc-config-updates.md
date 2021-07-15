@@ -6,7 +6,7 @@ hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
 source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1099'
 ht-degree: 100%
 
@@ -35,14 +35,14 @@ Die neuesten Campaign-Versionen enthalten ein Sicherheits-Update, das verstärkt
 
 Wenn Ihre Umgebung einen älteren Build als die unten aufgeführten verwendet, sind Sie betroffen:
 
-* Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
-* Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
-* Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
-* Campaign-Version 20.1.4. [Mehr dazu](../rn/using/release--20-1.md)
-* Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
-* Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
+* Gold Standard 11. [Weitere Informationen](../rn/using/gold-standard.md)
+* Campaign-Version 21.1.1. [Weitere Informationen](../rn/using/latest-release.md)
+* Campaign-Version 20.2.4. [Weitere Informationen](../rn/using/release--20-2.md)
+* Campaign-Version 20.1.4. [Weitere Informationen](../rn/using/release--20-1.md)
+* Campaign-Version 19.2.4. [Weitere Informationen](../rn/using/release--19-2.md)
+* Campaign-Version 19.1.8. [Weitere Informationen](../rn/using/release--19-1.md)
 
-Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen.
+[In diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
@@ -63,10 +63,10 @@ Sie müssen ein Upgrade auf einen der neueren Builds durchführen, die oben aufg
 
 Die folgenden **jetzt verfügbaren** Konsolenversionen sollten installiert werden, um eine kürzlich identifizierte Fehlfunktion zu beheben. Diese Fehlfunktion verhinderte die Verwendung einiger Komponenten der Client-Konsole, wie z. B. der Datumsauswahl und der Bildverwaltung in Sendungen. Das **Konsolen-Upgrade** ist obligatorisch.
 
-* Neuester Gold Standard 11-Build 9032@10c2709. [Mehr dazu](../rn/using/gold-standard.md)
-* Campaign-Version 20.1.4. [Mehr dazu](../rn/using/release--20-1.md)
-* Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
-* Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
+* Neuester Gold Standard 11-Build 9032@10c2709. [Weitere Informationen](../rn/using/gold-standard.md)
+* Campaign-Version 20.1.4. [Weitere Informationen](../rn/using/release--20-1.md)
+* Campaign-Version 19.2.4. [Weitere Informationen](../rn/using/release--19-2.md)
+* Campaign-Version 19.1.8. [Weitere Informationen](../rn/using/release--19-1.md)
 
 ## Aktualisierung von Adobe Identity Management System (IMS)
 
@@ -78,16 +78,16 @@ Um die Kompatibilität mit Adobe IMS sicherzustellen, ist ein Upgrade der Client
 
 Wenn Sie [per Adobe ID](../integrations/using/about-adobe-id.md) über Adobe Identity Management Service (IMS) eine Verbindung zu Campaign herstellen, ist ein Upgrade auf eine der folgenden neuen Versionen obligatorisch:
 
-* Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
-* Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
-* Campaign-Version 20.2.4. [Mehr dazu](../rn/using/release--20-2.md)
-* Campaign-Version 20.1.4. [Mehr dazu](../rn/using/release--20-1.md)
-* Campaign-Version 19.2.4. [Mehr dazu](../rn/using/release--19-2.md)
-* Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
+* Gold Standard 11. [Weitere Informationen](../rn/using/gold-standard.md)
+* Campaign-Version 21.1.1. [Weitere Informationen](../rn/using/latest-release.md)
+* Campaign-Version 20.2.4. [Weitere Informationen](../rn/using/release--20-2.md)
+* Campaign-Version 20.1.4. [Weitere Informationen](../rn/using/release--20-1.md)
+* Campaign-Version 19.2.4. [Weitere Informationen](../rn/using/release--19-2.md)
+* Campaign-Version 19.1.8. [Weitere Informationen](../rn/using/release--19-1.md)
 
 Diese Versionen umfassen ein neues Verbindungsprotokoll. Daher müssen sowohl der Campaign-Server als auch die Client-Konsole aktualisiert werden, damit nach dem **30. Juni 2021** weiterhin eine Verbindung zu Campaign hergestellt werden kann.
 
-Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen.
+[In diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
@@ -111,12 +111,12 @@ Wenn Ihre Instanzen mit einer **älteren Version als Campaign 19.1.8, 20.2.4 ode
 
 Das Upgrade auf eine der folgenden neuen Versionen ist obligatorisch:
 
-* Gold Standard 11. [Mehr dazu](../rn/using/gold-standard.md)
-* Campaign-Version 21.1.1. [Mehr dazu](../rn/using/latest-release.md)
-* Campaign-Version 20.2.5. [Mehr dazu](../rn/using/release--20-2.md)
-* Campaign-Version 19.1.8. [Mehr dazu](../rn/using/release--19-1.md)
+* Gold Standard 11. [Weitere Informationen](../rn/using/gold-standard.md)
+* Campaign-Version 21.1.1. [Weitere Informationen](../rn/using/latest-release.md)
+* Campaign-Version 20.2.5. [Weitere Informationen](../rn/using/release--20-2.md)
+* Campaign-Version 19.1.8. [Weitere Informationen](../rn/using/release--19-1.md)
 
-Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen.
+[In diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
@@ -136,7 +136,7 @@ Seit dem **31. März 2021** unterstützt der Push-Benachrichtigungsdienst von Ap
 
 Wenn Ihre Instanzen auf einer **älteren Version als Campaign 21.1** ausgeführt werden und Push-Benachrichtigungen mit dem veralteten Binärprotokoll von Apple gesendet werden, müssen Sie auf die HTTP/2-basierte APNs-Provider-API aktualisieren.
 
-Erfahren Sie [in diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen.
+[In diesem Abschnitt](../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) erfahren Sie, wie Sie Ihre Version überprüfen.
 
 **Wie wird die Aktualisierung durchgeführt?**
 
