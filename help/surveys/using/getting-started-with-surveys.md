@@ -7,23 +7,23 @@ content-type: reference
 topic-tags: online-surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
 
-Hier finden Sie einen kurzen Überblick über die wichtigsten Schritte zum Erstellen einer einfachen Umfrage unter Verwendung der folgenden integrierten Vorlage:
+Hier finden Sie einen kurzen Überblick über die wichtigsten Schritte zur Erstellung einer einfachen Umfrage unter Verwendung der folgenden nativen Vorlage:
 
 ![](assets/s_ncs_admin_survey_result.png)
 
 Die einzelnen Schritte sind:
 
 1. [Schritt 1: Erstellen einer Umfrage](#step-1---creating-a-survey),
-1. [2. Schritt - Vorlage](#step-2---selecting-the-template) auswählen,
-1. [Schritt 3: Erstellen der Umfrage](#step-3---building-the-survey),
+1. [Schritt 2: Auswählen der Vorlage](#step-2---selecting-the-template),
+1. [Schritt 3: Zusammenstellen der Umfrage](#step-3---building-the-survey),
 1. [Schritt 4: Erstellen des Seiteninhalts](#step-4---creating-the-page-content),
 1. [Schritt 5: Speichern der Umfragedaten](#step-5---storing-the-survey-data-),
 1. [Schritt 6: Veröffentlichen der Seiten](#step-6---publishing-the-pages),
@@ -35,13 +35,13 @@ Um eine neue Umfrage zu erstellen, rufen Sie die Registerkarte **[!UICONTROL Kam
 
 ![](assets/s_ncs_admin_survey_create.png)
 
-## 2. Schritt - Vorlage auswählen {#step-2---selecting-the-template}
+## Schritt 2: Auswählen der Vorlage {#step-2---selecting-the-template}
 
-Wählen Sie eine Umfragevorlage aus und benennen Sie die Vorlage. Dieser Name ist für die Endbenutzer unsichtbar, er dient lediglich zur Identifikation der Umfrage innerhalb von Adobe Campaign. Wählen Sie **[!UICONTROL Speichern]**, um die Umfrage zur Liste der Webanwendungen hinzuzufügen.
+Wählen Sie eine Umfragevorlage aus und benennen Sie die Vorlage. Dieser Name ist für die Endbenutzer unsichtbar, er dient lediglich zur Identifikation der Umfrage innerhalb von Adobe Campaign. Wählen Sie **[!UICONTROL Speichern]**, um die Umfrage zur Liste der Web-Anwendungen hinzuzufügen.
 
 ![](assets/s_ncs_admin_survey_wz_00.png)
 
-## Schritt 3: Erstellen der Umfrage {#step-3---building-the-survey}
+## Schritt 3: Zusammenstellen der Umfrage {#step-3---building-the-survey}
 
 Umfragen werden in einer Grafik durch Platzierung der folgenden Elemente erstellt: die Seite(n), wo der Inhalt erstellt wird, die Schritte zum Vorausfüllen der Daten und zum Speichern sowie die Testphasen. Zusätzlich können Skripts und Abfragen eingefügt werden.
 
@@ -60,7 +60,7 @@ Eine Umfrage muss **zumindest** die folgenden drei Komponenten enthalten: eine S
 
 ## Schritt 4: Erstellen des Seiteninhalts {#step-4---creating-the-page-content}
 
-Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibilität)]** verwendet. Der Zugriff auf diesen Seitentyp erfolgt über das erweiterte Menü im Tab **[!UICONTROL Bearbeiten]**.
+Im folgenden Beispiel wird die Seite vom Typ **[!UICONTROL Seite (V5-Kompatibilität)]** verwendet. Der Zugriff auf diesen Seitentyp erfolgt über das erweiterte Menü auf der Registerkarte **[!UICONTROL Bearbeiten]**.
 
 ![](assets/s_ncs_admin_survey_pagev5.png)
 
