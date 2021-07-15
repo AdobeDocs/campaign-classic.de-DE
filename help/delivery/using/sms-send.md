@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 442672ee-5037-49b7-a06f-3a99920ce2b6
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '967'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Klicken Sie auf **[!UICONTROL Senden]**, um die Nachrichtenerstellung abzuschlie
 
 Die detaillierten Schritte zur Validierung und zum Versand von Nachrichten finden Sie in den folgenden Abschnitten:
 
-* [Versand überprüfen](steps-validating-the-delivery.md)
+* [Versand validieren](steps-validating-the-delivery.md)
 * [Versand durchführen](steps-sending-the-delivery.md)
 
 ## Erweiterte Parameter {#advanced-parameters}
@@ -58,7 +58,7 @@ Folgende Optionen stehen zur Verfügung:
 
 ## SMS überwachen und verfolgen {#monitoring-and-tracking-sms-deliveries}
 
-Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
+Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
 
 * [Überwachen von Sendungen](about-delivery-monitoring.md)
 * [Ursachen für das Fehlschlagen von Sendungen](understanding-delivery-failures.md)
