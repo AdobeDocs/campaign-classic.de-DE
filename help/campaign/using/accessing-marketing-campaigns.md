@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: about-marketing-campaigns
 exl-id: 1278bda1-f83c-4d38-8042-e6611755cf36
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Auf Marketing-Kampagnen zugreifen{#accessing-marketing-campaigns}
 
-Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analyse von Marketingkampagnen. Die Anwendung stellt somit ein umfassendes Steuerungszentrum dar, über das alle Marketingkampagnen verwaltet werden können.
+Adobe Campaign ermöglicht die Erstellung, Konfiguration, Ausführung und Analyse von Marketing-Kampagnen. Das Programm stellt somit ein umfassendes Steuerungszentrum dar, über das alle Marketing-Kampagnen verwaltet werden können.
 
 ## Grundlagen zum Arbeitsbereich {#workspace-basics}
 
@@ -32,9 +32,9 @@ Kampagnenelemente befinden sich im Tab **[!UICONTROL Kampagnen]**: Hier erhalten
 Der **[!UICONTROL Navigationsblock]** im Tab **[!UICONTROL Kampagnen]** enthält je nach installierten Instanzmodulen verschiedene Einträge. Sie können beispielsweise auf Folgendes zugreifen:
 
 * **Kampagnenkalender**: Kalender der Pläne, Marketing-Programme, Sendungen und Kampagnen . Siehe [Kampagnenkalender](#campaign-calendar).
-* **Kampagnen**: Zugriff auf alle in Marketingprogrammen enthaltene Kampagnen;
+* **Kampagnen**: Zugriff auf alle in Marketing-Programmen enthaltenen Kampagnen;
 * **Sendungen**: Zugriff auf in Kampagnen enthaltene Sendungen;
-* **Webanwendungen**: Zugriff auf Webanwendungen (Formulare, Landingpages usw.).
+* **Web-Anwendungen**: Zugriff auf Web-Anwendungen (Formulare, Landingpages usw.).
 
 >[!NOTE]
 >
@@ -62,9 +62,9 @@ Sie können zur Filterung der angezeigten Elemente auch das Feld **[!UICONTROL S
 
 Die den Elementen zugeordneten Symbole geben Auskunft über ihren jeweiligen Status: Abgeschlossen, In Gang, In Bearbeitung usw.
 
-### Navigation in einem Marketingprogramm {#browsing-in-a-marketing-program}
+### Navigation in einem Marketing-Programm {#browsing-in-a-marketing-program}
 
-Campaign ermöglicht die Verwaltung von Programmen, die aus unterschiedlichen Marketingkampagnen bestehen. Jede dieser Kampagnen setzt sich wiederum aus Sendungen und mit diesen verbundenen Vorgängen und Ressourcen zusammen.
+Campaign ermöglicht die Verwaltung von Programmen, die aus unterschiedlichen Marketing-Kampagnen bestehen. Jede dieser Kampagnen setzt sich wiederum aus Sendungen und mit diesen verbundenen Vorgängen und Ressourcen zusammen.
 
 #### In einem Programm navigieren {#browsing-a-program}
 
@@ -101,7 +101,7 @@ Kampagnen sind über den Kampagnenkalender, über den Tab **[!UICONTROL Planung]
 
 #### Dashboard {#dashboard}
 
-Alle Kampagnen, Vorgänge und Ressourcen werden auf einem zentralen Bildschirm, dem Dashboard, zusammengefasst, um eine kollaborative Verwaltung der Marketingaktionen zu ermöglichen.
+Alle Kampagnen, Vorgänge und Ressourcen werden in einem zentralen Bildschirm, dem Dashboard, zusammengefasst, um eine kollaborative Verwaltung der Marketing-Aktionen zu ermöglichen.
 
 Das Dashboard einer Kampagne wird wie eine Kontrollschnittstelle verwendet. Es ermöglicht den direkten Zugriff auf die wichtigsten Etappen der Kampagnenerstellung und -verwaltung: Sendungen, Extraktonsdateien, Benachrichtigungen, Budgets usw.
 
@@ -151,7 +151,7 @@ Kampagnen werden basierend auf Kampagnenvorlagen erstellt. Diese wiederverwendba
 >
 >Zugriff auf und die Möglichkeit der Änderung von Einstellungen der Kampagne besteht über den Link **[!UICONTROL Erweiterte Kampagnenparameter...]** im Tab **[!UICONTROL Bearbeiten.]** Weitere Informationen zum Festlegen von Parametern auf Kampagnenebene, damit die Sendungen zur Kampagne die Werte automatisch erben, finden Sie in [unserer Technote](https://helpx.adobe.com/de/campaign/kb/simplifying-campaign-management-acc.html#Setparametersatthecampaignlevelsodeliveriesinheritvaluesautomatically).
 
-## Webzugriff {#using-the-web-interface-}
+## Web-Zugriff {#using-the-web-interface-}
 
 Sie haben die Möglichkeit, über einen Webbrowser auf die Adobe-Campaign-Konsole zuzugreifen, um alle Kampagnen und ihre Sendungen sowie Berichte und Informationen bezüglich der Profile Ihrer Datenbank einzusehen. Über den Webzugriff können keine Datensätze erstellt werden. Sie können jedoch eingesehen und entsprechend der jeweiligen Benutzerberechtigungen weiterverarbeitet werden. So können beispielsweise Inhalte und Zielgruppen der Kampagnen validiert oder Sendungen unterbrochen werden.
 
