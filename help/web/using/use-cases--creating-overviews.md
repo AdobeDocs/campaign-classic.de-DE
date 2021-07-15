@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: web-applications
 exl-id: a1ac3aab-dc81-4533-9207-26d5dc5e1c88
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1032'
 ht-degree: 100%
 
 ---
 
-# Anwendungsfälle: Übersichtsseiten erstellen {#use-cases-creating-overviews}
+# Anwendungsbeispiele: Übersichten erstellen {#use-cases-creating-overviews}
 
 Im folgenden Beispiel werden Webanwendungen vom Typ &quot;Übersicht&quot; erstellt, in denen alle Webanwendungen in Ihrer Datenbank angezeigt werden. Konfigurieren Sie dazu die folgenden Elemente:
 
@@ -25,7 +25,7 @@ Im folgenden Beispiel werden Webanwendungen vom Typ &quot;Übersicht&quot; erste
 
 ![](assets/s_ncs_configuration_webapp_overview.png)
 
-## Einseitige Webanwendung erstellen {#creating-a-single-page-web-application}
+## Einseitige Web-Anwendung erstellen {#creating-a-single-page-web-application}
 
 1. Erstellen Sie eine **[!UICONTROL einseitige Webanwendung]** und deaktivieren Sie ausgehende Transitionen und Transitionen zur nächsten Seite.
 
@@ -80,7 +80,7 @@ In der Übersicht haben Sie die Möglichkeit, auf Daten abhängig von ihrem Spei
    >
    >In dieser Phase befindet sich die Webanwendung nicht in ihrem Anwendungskontext. Der Filter kann daher nicht am Ordner getestet werden.
 
-## Schaltfläche hinzufügen, um eine neue Webanwendung zu konfigurieren {#adding-a-button-to-configure-a-new-web-application}
+## Schaltfläche hinzufügen, um eine neue Web-Anwendung zu konfigurieren {#adding-a-button-to-configure-a-new-web-application}
 
 1. Platzieren Sie den Cursor auf das Element **[!UICONTROL Seite]** und fügen Sie einen Link hinzu (**[!UICONTROL Statische Elemente > Link]**).
 1. Ändern Sie den Link-Titel. Dieser wird auf der Schaltfläche in der Übersicht angezeigt.
@@ -205,7 +205,7 @@ Diese beiden Elemente werden im selben Container abgelegt, damit sie in der Übe
 >
 >Der Benutzer der Webanwendung muss sich identifizieren und über die entsprechenden Adobe Campaign-Berechtigungen zum Zugriff auf diese Informationen verfügen.
 
-### Aktualisierungslink erstellen {#creating-a-refresh-link}
+### Aktualisierungs-Link erstellen {#creating-a-refresh-link}
 
 1. Platzieren Sie den Cursor auf den Container und fügen Sie einen **[!UICONTROL Link]** über das Menü **[!UICONTROL Statische Elemente]** ein.
 1. Passen Sie den Titel an.
