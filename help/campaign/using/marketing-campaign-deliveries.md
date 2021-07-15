@@ -1,13 +1,13 @@
 ---
 product: campaign
-title: Sendungen zur Marketing-Kampagne
+title: Sendungen für eine Marketing-Kampagne
 description: Erfahren Sie mehr über Sendungen zur Marketing-Kampagne
 audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 1dd3c080-444d-45f8-9562-d2d01a9d2860
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1552'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Sendungen für eine Marketing-Kampagne {#marketing-campaign-deliveries}
 
-Sendungen können über das Dashboard einer Kampagne, einen Kampagnenworkflow oder direkt über die Übersicht der Sendungen erstellt werden.
+Sendungen können über das Dashboard einer Kampagne, einen Kampagnen-Workflow oder direkt über die Übersicht der Sendungen erstellt werden.
 
 Wenn Sendungen aus einer Kampagne erstellt werden, werden sie mit dieser Kampagne verknüpft und auf der Kampagnenebene konsolidiert.
 
@@ -27,7 +27,7 @@ Um einen mit einer Kampagne verknüpften Versand zu erstellen, klicken Sie auf d
 
 ![](assets/campaign_op_add_delivery.png)
 
-Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle. [Mehr dazu](../../delivery/using/steps-about-delivery-creation-steps.md).
+Die vorgeschlagenen Konfigurationen sind an die unterschiedlichen Versandtypen angepasst: Briefpost, E-Mail, Mobile-Kanäle. [Weitere Informationen](../../delivery/using/steps-about-delivery-creation-steps.md).
 
 ## Starten eines Versands {#starting-a-delivery}
 
