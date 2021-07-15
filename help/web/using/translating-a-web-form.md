@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 72959141-ca18-4512-80c7-239efd31f711
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1662'
 ht-degree: 100%
 
@@ -410,7 +410,7 @@ Die standardmäßig verfügbaren Übersetzungssprachen und Wörterbücher sind u
 >
 >Weitere Informationen zum Hinzufügen anderer als standardmäßig angebotener Sprachen finden Sie unter [Sprache hinzufügen, in die übersetzt werden soll](#adding-a-translation-language).
 
-## Beispiel: eine Webanwendung in mehreren Sprachen anzeigen {#example--displaying-a-web-application-in-several-languages}
+## Beispiel: eine Web-Anwendung in mehreren Sprachen anzeigen {#example--displaying-a-web-application-in-several-languages}
 
 Das folgende Webformular ist in vier Sprachen verfügbar: Englisch, Französisch, Deutsch und Spanisch. Die Zeichenfolgen wurden alle über den Tab **[!UICONTROL Übersetzung]** des Webformulars übersetzt. Da die Standardsprache Englisch ist, verwenden Sie bei der Veröffentlichung der Umfrage die Standard-URL, um den Inhalt auf Englisch anzuzeigen.
 
@@ -437,7 +437,7 @@ Fügen Sie **?lang=es** oder **?lang=de** hinzu, um den Inhalt auf Spanisch oder
 >
 >Dieser Abschnitt ist nur für erfahrene Benutzer.
 
-### Systemstrings übersetzen {#translating-the-system-strings}
+### System-Strings übersetzen {#translating-the-system-strings}
 
 Systemstrings sind native Zeichenfolgen, die von allen Webanwendungen verwendet werden. Beispiel: die Schaltflächen **[!UICONTROL Weiter]**, **[!UICONTROL Zurück]**, **[!UICONTROL Validieren]**, die Nachricht **[!UICONTROL Lädt...]** usw. Standardmäßig enthalten manche Sprachen ein Wörterbuch mit Übersetzungen für diese Strings. Die Liste der Sprachen finden Sie in [Anzeigesprache in Formularen ändern](#changing-forms-display-language).
 
@@ -466,7 +466,7 @@ Gehen Sie wie folgt vor, um eine Sprache hinzuzufügen:
 
 ### Sprache hinzufügen, in die übersetzt werden soll {#adding-a-translation-language}
 
-Um Webanwendungen in andere Sprachen als die Standardsprachen zu übersetzen (siehe [Anzeigesprache in Formularen ändern](#changing-forms-display-language)), müssen Sie eine neue Übersetzungssprache hinzufügen.
+Um Web-Anwendungen in andere Sprachen als die Standardsprachen zu übersetzen (siehe [Anzeigesprache in Formularen ändern](#changing-forms-display-language)), müssen Sie eine neue Übersetzungssprache hinzufügen.
 
 1. Klicken Sie auf den Knoten **[!UICONTROL Administration > Plattform > Auflistungen]** der Adobe Campaign-Baumstruktur und wählen Sie **[!UICONTROL Für die Übersetzung verfügbare Sprachen]** aus der Liste aus. Die Liste der verfügbaren Übersetzungen wird im unteren Bereich des Fensters angezeigt.
 
