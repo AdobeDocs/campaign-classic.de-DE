@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
 source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Um ein Datenbankfeld einzufügen, verwenden Sie die Personalisierungs-Schaltflä
 >
 >Die im HTML-Editor eingegebenen Strings werden nur übersetzt, wenn sie im Unter-Tab **[!UICONTROL Texte]** definiert sind. Ansonsten werden sie nicht erfasst. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
 
-### Link einfügen {#inserting-a-link}
+### Links einfügen {#inserting-a-link}
 
 Füllen Sie im Bearbeitungsfenster die Felder wie im folgenden Beispiel gezeigt aus:
 
@@ -161,7 +161,7 @@ Sie können beispielsweise das Feld **Kontakt** erstellen. Damit haben Sie die M
 
    ![](assets/s_ncs_admin_survey_html_content_preview.png)
 
-Mit diesem Verfahren können Sie den Text von Web-Formularen nur einmal festlegen und Übersetzungen mit dem integrierten Übersetzungs-Tool verwalten. Weitere Informationen finden Sie unter [Webformular übersetzen](translating-a-web-form.md).
+Mit diesem Verfahren können Sie den Text von Web-Formularen nur einmal festlegen und Übersetzungen mit dem integrierten Übersetzungs-Tool verwalten. Weitere Informationen finden Sie unter [Web-Formular übersetzen](translating-a-web-form.md).
 
 ## Bilder einfügen {#inserting-images}
 
