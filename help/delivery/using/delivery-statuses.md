@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -87,7 +87,7 @@ Weitere Informationen zu den verschiedenen fehlgeschlagenen Sendungen und deren 
 
 Weitere Informationen zur Optimierung der Zustellbarkeit von mit Adobe Campaign gesendeten E-Mails finden Sie in [diesem Abschnitt](about-deliverability.md). Weitere Informationen zur Zustellbarkeit finden Sie im [Adobe-Handbuch mit den Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
-## Status Ausstehend {#pending-status}
+## Status &quot;Ausstehend&quot; {#pending-status}
 
 Nach der Bestätigung des Versands ist dessen Status **[!UICONTROL Ausstehend]**. Das bedeutet, dass im Ausführungsprozess auf die Verfügbarkeit von Ressourcen gewartet wird.
 
