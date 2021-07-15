@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 37b1d7fb-7ceb-4647-9aac-c8a80495c5bf
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '797'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Befolgen Sie außerdem die auf [dieser Seite beschriebenen](delivery-performance
 
 ## Langsame Sendungen {#slow-deliveries}
 
-Nach dem Anklicken der **[!UICONTROL Senden]**-Schaltfläche dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
+Nach dem Klicken auf die Schaltfläche **[!UICONTROL Senden]** dauert der Versand länger als üblich. Dies kann unterschiedliche Ursachen haben:
 
 * Einige E-Mail-Anbieter haben Ihre IP-Adressen möglicherweise auf eine Blockierungsliste gesetzt. In diesem Fall überprüfen Sie Ihre Broadlogs und konsultieren Sie [diesen Abschnitt](about-deliverability.md).
 
