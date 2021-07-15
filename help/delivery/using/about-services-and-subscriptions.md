@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: eb72f19a-7669-4596-bf9b-8c0ce22b67bf
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Über Dienste und Abonnements{#about-services-and-subscriptions}
 
-Adobe Campaign ermöglicht die Erstellung und Verwaltung von Informationsdiensten wie z. B. Newslettern. Die Möglichkeiten sind überaus vielfältig. So können beispielsweise produkt- oder themenspezifische Newsletter ebenso verwaltet werden wie interne und externe Echtzeit-Benachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt [Abonnements verwalten](managing-subscriptions.md).
+Adobe Campaign ermöglicht die Erstellung und Verwaltung von Informations-Services wie z. B. Newslettern. Die Möglichkeiten sind überaus vielfältig. So können beispielsweise produkt- oder themenspezifische Newsletter ebenso verwaltet werden wie interne und externe Echtzeit-Benachrichtigungen. Weiterführende Informationen finden Sie im Abschnitt [Abonnements verwalten](managing-subscriptions.md).
 
 Sie können Ihren Empfängern gestatten, die Nachrichten mit anderen Kontakten ihrer sozialen oder professionellen Netzwerke zu teilen, indem Sie entsprechende Links einfügen. Die Teilvorgänge und Zugriffe auf die betreffenden Web-Seiten lassen sich verfolgen. Weiterführende Informationen finden Sie unter [Virale Marketing-Strategien](viral-and-social-marketing.md).
 
