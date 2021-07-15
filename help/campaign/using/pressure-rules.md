@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: c23212f2-fdf8-4820-b389-546f7c84db27
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3428'
 ht-degree: 100%
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 
 # Druckregeln{#pressure-rules}
 
-## Über Marketingermüdung {#about-marketing-fatigue}
+## Über Marketing-Müdigkeit {#about-marketing-fatigue}
 
-Mithilfe der Werbedruckverwaltung stellen Sie sicher, dass Sie die Population der Datenbank nicht übermäßig oft ansprechen, was zur sogenannten „Marketingermüdung“ führen könnte. Hierzu kann eine maximale Anzahl an Nachrichten pro Empfänger festgelegt werden. Zudem können zwischen den Kampagnen Schlichtungsregeln eingerichtet werden, auf deren Basis an die jeweilige Zielgruppe die für sie am besten geeignete Nachricht gesendet wird.
+Mithilfe der Werbedruckverwaltung stellen Sie sicher, dass Sie die Population der Datenbank nicht übermäßig oft ansprechen, was zur sogenannten &quot;Marketing-Müdigkeit&quot; führen könnte. Hierzu kann eine maximale Anzahl an Nachrichten pro Empfänger festgelegt werden. Zudem können zwischen den Kampagnen Schlichtungsregeln eingerichtet werden, auf deren Basis an die jeweilige Zielgruppe die für sie am besten geeignete Nachricht gesendet wird.
 
-**Druckregeln** können beispielsweise dazu beitragen, der Marketingermüdung entgegenzusteuern, indem die Zahl der an eine Zielgruppe versendeten Newsletter auf zwei begrenzt wird; unter den zur Auswahl stehenden Nachrichten diejenigen ausgewählt werden, die den Interessen der Abonnentengruppe bestmöglich entsprechen; keine Angebote per SMS an einen unzufriedenen Kunden gesendet werden etc.
+**Druckregeln** können beispielsweise dazu beitragen, der Marketing-Müdigkeit entgegenzusteuern, indem die Zahl der an eine Zielgruppe versendeten Newsletter auf zwei begrenzt wird; unter den zur Auswahl stehenden Nachrichten diejenigen ausgewählt werden, die den Interessen der Abonnentengruppe bestmöglich entsprechen; keine Angebote per SMS an einen unzufriedenen Kunden gesendet werden etc.
 
 Die Kampagnen werden entsprechend der festgelegten Schwellen und des jeweiligen Gewichts jeder Nachricht ausgewählt.
 
@@ -154,12 +154,14 @@ Eine Druckregel zum Beispiel, die eine Schwelle von 2 Nachrichten pro Woche und 
 >
 >* den Wert **15T** im Feld **[!UICONTROL Betroffener Zeitraum]** eingeben: Die bis zu 15 Tage vor dem Datum des Versands, auf den die Regel angewendet wird, verschickten Sendungen werden in der Berechnung berücksichtigt;
 >
->  oder
+>  
+oder
 >
 >* **7T** in das Feld **[!UICONTROL Betroffener Zeitraum]** eingeben UND die Option **[!UICONTROL Sendungen im Planungskalender einbeziehen]**\
->prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
+   >prüfen: In dieser Berechnung werden Sendungen berücksichtigt, die bis zu sieben Tage vor dem Verfügbarkeitsdatum und bis zu sieben Tage nach dem Verfügbarkeitsdatum, an dem die Regel angewendet wird, durchgeführt werden.
 >
->Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
+>
+Das Anfangsdatum des Zeitraums hängt von der Konfiguration der Datenbank ab.
 
 Wenn man also auf einem Versand vom 12.11. eine Druckregel über einen Zeitraum von 15 Tagen ohne Gruppierung anwendet, werden Sendungen zwischen dem 27.10. und dem 12.11. berücksichtigt. Wenn die Druckregel Sendungen aus dem Planungskalender miteinberechnet, werden Sendungen zwischen dem 27.10. und dem 27.11. gezählt. Wenn man schließlich in der Regel eine Gruppierung nach Kalendermonat festlegt, werden alle Sendungen der Monate November und Dezember in der Schwellenberechnung miteinbezogen (vom 1.11. bis zum 31.12.).
 
@@ -338,7 +340,7 @@ Konfigurieren Sie zuerst die Druckregel.
 Erstellen und konfigurieren Sie jetzt einen Workflow für jeden Versand, auf den die Druckregel angewendet werden soll.
 
 1. Kampagne erstellen. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../campaign/using/setting-up-marketing-campaigns.md#creating-a-campaign).
-1. Fügen Sie im Tab **[!UICONTROL Zielbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
+1. Fügen Sie im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** Ihrer Kampagne eine **Abfrage-** Aktivität zu Ihrem Workflow hinzu. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/query.md).
 1. Fügen Sie zum Workflow die Aktivität **[!UICONTROL E-Mail-Versand]** hinzu und öffnen Sie ihn. Weiterführende Informationen zur Verwendung dieser Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/delivery.md).
 1. Gehen Sie zum Tab **[!UICONTROL Validierungen]** der **[!UICONTROL Versandeigenschaften]** und deaktivieren Sie alle Validierungen.
 
