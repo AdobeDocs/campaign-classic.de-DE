@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -36,9 +36,9 @@ Im vorliegenden Beispiel hat der Versandverantwortliche zunächst den Newsletter
 
 ![](assets/dlv_seeds_usecase_01.png)
 
-## 2. Schritt - Gemeinsamen Wert definieren {#step-2---creating-a-common-value}
+## Schritt 2: Gemeinsamen Wert definieren {#step-2---creating-a-common-value}
 
-Die Hinzufügung des Abteilung-Feldes, welches den gemeinsamen Wert aufnehmen soll, erfordert eine Erweiterung des **Datenschemas** der Testadressen und die Anpassung des entsprechenden Formulars.
+Das Hinzufügen des Felds &quot;Abteilung&quot;, das den gemeinsamen Wert aufnehmen soll, erfordert eine Erweiterung des **Datenschemas** der Testadressen und die Anpassung des entsprechenden Formulars.
 
 ### Datenschema erweitern {#extending-the-data-schema}
 
@@ -152,7 +152,7 @@ Weitere Informationen finden Sie im Abschnitt [Testadressen-Formular aktualisier
 
 1. Geben Sie nun in den Testadressen, die Sie für den Versand verwenden möchten, im Feld **[!UICONTROL Abteilung]** den Wert **Einkauf** ein.
 
-## 3. Schritt - Bedingung bestimmen {#step-3---defining-the-condition}
+## Schritt 3: Bedingung bestimmen {#step-3---defining-the-condition}
 
 Sie können nun die dynamische Bedingung für die Testadressen-Auswahl definieren. Gehen Sie wie folgt vor:
 
