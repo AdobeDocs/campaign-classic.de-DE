@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deliverability-management
 exl-id: f301b34c-244c-4279-b23f-8224ea8eedbe
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Probleme mit der Zustellbarkeit hängen in der Regel mit Maßnahmen zum Schutz v
 
 >[!NOTE]
 >
->Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html), das regelmäßig aktualisiert wird.
+>Da Internet-Anbieter gezwungen sind, ständig neue, ausgereifte Filtertechniken zu entwickeln, um ihre Kunden vor Spammern zu schützen, ändern sich die für die Zustellbarkeit von E-Mails geltenden Kriterien und Regeln sehr oft. Konsultieren Sie deshalb das [Adobe-Handbuch mit Best Practices zur Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de), das regelmäßig aktualisiert wird.
 
 ### Zustellrate
 
