@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Marketing-Ressourcen verwalten
-description: Erfahren Sie, wie Sie Marketing-Ressourcen verwalten
+description: Erfahren Sie, wie Sie Marketing-Ressourcen verwalten.
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: f661e1d1-de2f-4c6a-bbff-e3ffcd1831f0
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1445'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Campaign ermöglicht die Verwaltung und Verfolgung der im Lebenszyklus der
 
 Status, Verlauf und aktuelle Version der über Adobe Campaign verwalteten Marketing-Ressourcen können jederzeit angezeigt werden.
 
-## Hinzufügung von Marketing-Ressourcen {#adding-a-marketing-resource}
+## Hinzufügen von Marketing-Ressourcen {#adding-a-marketing-resource}
 
 Marketing-Ressourcen sind über den Tab **[!UICONTROL Kampagnen]** zugänglich.
 
