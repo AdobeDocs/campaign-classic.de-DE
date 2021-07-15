@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
 source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 Hier finden Sie die wichtigsten Schritte, um mit der Nutzung von Adobe Campaign zu beginnen.
 
-## Kann ich mich mit einer Adobe-ID bei Campaign Classic anmelden? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
+## Kann ich mich mit einer Adobe ID bei Campaign Classic anmelden? {#can-i-connect-to-campaign-classic-with-an-adobe-id-}
 
 Dank der Integration mit IMS (Adobe Identity Management System) können Benutzer über ihre Adobe ID eine Verbindung zur Adobe Campaign-Konsole herstellen. Diese Integration bringt die folgenden Vorteile mit sich:
 
@@ -26,11 +26,11 @@ Dank der Integration mit IMS (Adobe Identity Management System) können Benutzer
 * Optimierte Sicherheitsrichtlinien für die Kennwortverwaltung;
 * Verwendung von Konten des Typs Federated ID (externer Identity Provider).
 
-[Hier erfahren Sie mehr](../../integrations/using/about-adobe-id.md) über den Zugriff auf Campaign Classic mit einer Adobe-ID.
+[Hier erfahren Sie mehr](../../integrations/using/about-adobe-id.md) über den Zugriff auf Campaign Classic mit einer Adobe ID.
 
 ## Welche Version von Campaign habe ich? {#what-is-my-version-of-campaign-}
 
-Ihre [Version und Build-Nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) können Sie in der Campaign-Clientkonsole über das Menü **Hilfe > Versionsinformationen...** abrufen.
+Ihre [Version und Build-Nummer](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version) können Sie in der Client-Konsole von Campaign über das Menü **Hilfe > Versionsinformationen...** abrufen.
 
 ## Was sind die Unterschiede zwischen der On-Premise- und der gehosteten Version? {#what-are-the-differences-when-working-on-premise-vs--in-a-hosted-environment-}
 
@@ -50,7 +50,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 
 [Hier erfahren Sie mehr](../../platform/using/access-management.md) zu Benutzerberechtigungen.
 
-## Wie können Sie mit Campaign Datenschutzbestimmungen einhalten? {#how-to-be-gdpr-compliant-with-campaign-}
+## Wie kann ich mit Campaign Datenschutzbestimmungen einhalten? {#how-to-be-gdpr-compliant-with-campaign-}
 
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von Datenschutzbestimmungen wie DSGVO und CCPA unterstützen.
 
@@ -60,7 +60,7 @@ In [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-ove
 
 Erfahren Sie in [diesen Abschnitt](../../platform/using/adobe-campaign-workspace.md) mehr über die Grundlagen des Arbeitsbereichs von Adobe Campaign.
 
-![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html)
+![](assets/do-not-localize/how-to-video.png) [Campaign-Arbeitsbereich im Video kennenlernen](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/exploring-the-adobe-campaign-classic-user-interface.html?lang=de)
 
 ## Wie kann ich die Audience für meine Nachrichten auswählen? {#how-can-i-select-the-target-population-of-my-messages-}
 
@@ -82,7 +82,7 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 [Hier erfahren Sie mehr darüber](../../delivery/using/about-email-channel.md).
 
-![](assets/do-not-localize/how-to-video.png) [Video zum Thema](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html)
+![](assets/do-not-localize/how-to-video.png) [Video zum Thema](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/getting-started/creating-a-campaign-and-an-email.html?lang=de)
 
 ## Wie kann ich SMS-Nachrichten senden? {#how-to-send-sms-messages-}
 
@@ -90,7 +90,7 @@ Oder benachrichtigen Sie andere Benutzer und fordern Sie sie dazu auf, Vorgänge
 
 ## Wie kann ich Push-Benachrichtigungen senden? {#how-to-send-push-notifications-}
 
-Hier erfahren Sie, wie Sie mit Adobe Campaign [eine personalisierte Push-Benachrichtigung](../../delivery/using/create-notifications-ios.md) über Apps an iOS- und Android-Geräte senden.
+Hier erfahren Sie, wie Sie mit Adobe Campaign [eine personalisierte Push-Benachrichtigung](../../delivery/using/create-notifications-ios.md) über Mobile Apps an iOS- und Android-Geräte senden.
 
 ## Wie erstelle und teile ich eine Online-Umfrage? {#how-to-design-and-share-an-online-survey-}
 
@@ -110,15 +110,15 @@ Erfahren Sie mehr über die Tracking-Verwaltung in Campaign auf [dieser Seite](h
 
 ## Was sind die Best Practices für die Sicherheit (On-Premise)? {#what-are-security-best-practices--on-premise--}
 
-Lesen Sie die [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html), um zu erfahren, welche Schlüsselelemente geprüft werden müssen, um eine sichere Konfiguration für On-Premise-Anwendungen zu gewährleisten.
+Lesen Sie die [Checkliste zur Sicherheitskonfiguration](https://helpx.adobe.com/de/campaign/kb/acc-security.html), um zu erfahren, welche Schlüsselelemente geprüft werden müssen, um eine sichere Konfiguration für On-Premise-Implementierungen zu gewährleisten.
 
 ## Wie übersetze ich eine Fehlermeldung? {#how-to-translate-an-error-message-}
 
-Eine Fehlermeldung wird in einer Fremdsprache angezeigt? Alle Fehlermeldungen und deren Übersetzung werden auf [dieser Seite](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html) aufgelistet.
+Eine Fehlermeldung wird in einer Fremdsprache angezeigt? Alle Fehlermeldungen und deren Übersetzung werden auf [dieser Seite](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) aufgelistet.
 
-## Kann ich in Campaign ein Webformular erstellen und Antworten sammeln? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
+## Kann ich in Campaign ein Web-Formular erstellen und Antworten sammeln? {#can-i-create-a-webform-and-collect-answers-in-campaign-}
 
-Hier erfahren Sie, wie Sie ein [Webformular erstellen](../../web/using/about-web-forms.md) können: Entwerfen, testen und veröffentlichen Sie ein Web-Formular und sammeln Sie Antworten.
+Hier erfahren Sie, wie Sie ein [Web-Formular erstellen](../../web/using/about-web-forms.md) können: Entwerfen, testen und veröffentlichen Sie ein Web-Formular und sammeln Sie Antworten.
 
 ## Gibt es eine Auflistung von veralteten Funktionen und Versionen? {#is-there-a-list-of-deprecated-features-and-versions-}
 
@@ -128,6 +128,6 @@ Adobe beurteilt laufend die Funktionen des Produkts. Manche Funktionen werden du
 
 ## Gibt es neue Dokumentationsaktualisierungen und Hilfematerialien? {#are-there-new-documentation-updates-and-help-materials-released-}
 
-Die letzten Aktualisierungen der Campaign Classic-Dokumentation finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html).
+Die letzten Aktualisierungen der Campaign Classic-Dokumentation finden Sie [auf dieser Seite](https://experienceleague.adobe.com/docs/campaign-classic/using/documentation-updates.html?lang=de).
 
 Die aktuellen Technotes finden Sie [auf dieser Seite](https://helpx.adobe.com/de/campaign/kb/article-list.html).
