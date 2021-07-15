@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: content-management
 exl-id: 3b6e4974-4551-4da2-8eca-577c4f9cbd91
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '843'
 ht-degree: 100%
 
@@ -99,7 +99,7 @@ In diesem Tab kann eine Versandvorlage ausgewählt werden, um direkt einen Versa
 
 ### Aggregator {#aggregator}
 
-Sie können das XML-Ausgabedokument durch die Aggregation von Daten mithilfe eines Scripts oder einer Abfragenliste anreichern. Ziel ist es, gewisse referenzierte Informationen durch Links oder Elemente aus der Datenbank zu ergänzen.
+Sie können das XML-Ausgabedokument durch die Aggregation von Daten mithilfe eines Skripts oder einer Abfragenliste anreichern. Ziel ist es, gewisse referenzierte Informationen durch Links oder Elemente aus der Datenbank zu ergänzen.
 
 ### Multidatei-Erzeugung {#multi-file-generation}
 
