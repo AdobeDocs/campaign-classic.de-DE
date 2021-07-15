@@ -1,13 +1,13 @@
 ---
 product: campaign
 title: Import und Export von Audiences
-description: Zielgruppenimport und -export
+description: Import und Export von Audiences
 audience: integrations
 content-type: reference
 topic-tags: audience-sharing
 exl-id: c2293fc5-c9ba-4a73-8f39-fa7cdd06e8dd
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '658'
 ht-degree: 100%
 
