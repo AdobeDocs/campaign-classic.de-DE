@@ -7,9 +7,9 @@ role: null
 level: null
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
 source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3263'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 ## ![](assets/do-not-localize/limited_2.png) Version 19.1.8 – Build 9039 {#release-19-1-8-build-9039}
 
-_15. April 2021_
+_Donnerstag, 15. April 2021_
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
 
@@ -25,9 +25,9 @@ _15. April 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
-_22. März 2021_
+_Montag, 22. März 2021_
 
 * Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Sendungen verhinderte. (NEO-31453, NEO-31454)
 
@@ -35,9 +35,9 @@ _22. März 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
-_16. Dezember 2020_
+_Mittwoch, 16. Dezember 2020_
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ Unter Linux verwendet der Start des nlserver-Dienstes jetzt eine systemd-Einheit
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.7 – Build 9036 {#release-19-1-7-build-9036}
 
-_15. September 2020_
+_Dienstag, 15. September 2020_
 
 **Verbesserungen**
 
@@ -107,7 +107,7 @@ _15. September 2020_
 >
 >Dieser Build ist nur für On-Premise-Installationen gedacht. Bei Hybridbereitstellungen wird von gehosteten Instanzen weiterhin Build 9032 ausgeführt. Aktualisieren Sie Ihre Marketing-Instanz nicht auf den Build 9035, da er nicht mit Build 9032 kompatibel ist.
 
-_3. Oktober 2019_
+_Donnerstag, 3. Oktober 2019_
 
 **Neuheiten**
 
@@ -119,7 +119,7 @@ _3. Oktober 2019_
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.5 – Build 9033{#release-19-1-5-build-9033}
 
-_13. August 2019_
+_Dienstag, 13. August 2019_
 
 **Neuheiten**
 
@@ -141,7 +141,7 @@ _13. August 2019_
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.2 – Build 9029{#release-19-1-2-build-9029}
 
-_21. Juni 2019_
+_Freitag, 21. Juni 2019_
 
 **Verbesserungen bei der Sicherheit**
 
@@ -157,7 +157,7 @@ _21. Juni 2019_
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1 – Build 9026{#release-19-1-build-9026}
 
-_30. Mai 2019_
+_Donnerstag, 30. Mai 2019_
 
 **Neue Funktionen?**
 
@@ -175,7 +175,7 @@ _30. Mai 2019_
   </tr> 
     <tr> 
    <td> Audit-Protokoll<br /> </td> 
-   <td> <p>Als Administrator können Sie die Produktivität steigern, indem Sie Änderungen in der Adobe Campaign Classic-Instanz überwachen und verwalten. Im Audit-Protokoll werden die Aktionen protokolliert, die in Quellschemata, Workflows und Optionen durchgeführt wurden. Damit können Sie schnell erkennen, ob ein Element angelegt, geändert oder gelöscht wurde.</p><p>Weiterführende Informationen finden Sie im <a href="../../production/using/audit-trail.md">entsprechenden Handbuch</a> und im <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html">Anleitungsvideo</a>.</p></td> 
+   <td> <p>Als Administrator können Sie die Produktivität steigern, indem Sie Änderungen in der Adobe Campaign Classic-Instanz überwachen und verwalten. Im Audit-Protokoll werden die Aktionen protokolliert, die in Quellschemata, Workflows und Optionen durchgeführt wurden. Damit können Sie schnell erkennen, ob ein Element angelegt, geändert oder gelöscht wurde.</p><p>Weiterführende Informationen finden Sie im <a href="../../production/using/audit-trail.md">entsprechenden Handbuch</a> und im <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/monitoring/audit-trail.html?lang=de">Anleitungsvideo</a>.</p></td> 
   </tr> 
   <tr> 
    <td> Schutzmechanismen, Stabilität und Skalierbarkeit<br /> </td> 
@@ -213,7 +213,7 @@ _30. Mai 2019_
 
 **Verbesserungen bei Schutzmechanismen, Stabilität und Skalierbarkeit**
 
-* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
+* Lebensdauer – Nutzungsoptimierung der XtkNewId-Sequenz: Die leistungsintensivsten Tabellen wurden aus der XtkNewId-Sequenz in spezielle Sequenzen verschoben – [mehr dazu](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence)
 * FDA über HTTP v2: Das FDA über HTTP-Protokoll wird häufig bei hybriden Implementierungen verwendet, insbesondere für den Abruf von Broadlogs und die Versandvorbereitung. Die Stabilität wurde verbessert, um Netzwerkprobleme und mögliche Fehler beim Abrufen oder Senden von Daten zu vermeiden. Dies setzt voraus, dass die Builds an beiden Enden der Verbindung auf dem neuesten Stand sind, da ansonsten das alte Protokoll weiterhin verwendet wird.
 * Tracking-Workflow: Die Stabilität des Tracking-Workflows wurde verbessert. Mehrere Probleme im Zusammenhang mit Trackinglog-Einfügungen/-Aktualisierungen und der individuellen URL-Tracking-Anpassung wurden behoben. Darüber hinaus erkennt der Tracking-Workflow jetzt Trackinglog-Probleme, die zu Fehlern führen könnten, und stoppt den Workflow. Diese Probleme werden jetzt verworfen und nicht mehr verarbeitet.
 * Bereinigungs-Workflow: Der Bereinigungs-Workflow wurde verbessert, um mögliche Fehler und Unterbrechungen zu vermeiden. Dadurch wird auch die Größe und Leistungsfähigkeit der Datenbank optimiert.
