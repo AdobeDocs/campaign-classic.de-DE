@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: adobe-target
 exl-id: ae8c680f-52a6-4d00-91cd-44d1c3807546
 source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Um die aus der Integration von Adobe Campaign und Adobe Target resultierenden Fu
 Gehen Sie wie folgt vor:
 
 1. Installieren Sie das Standard-Package **[!UICONTROL Integration mit Adobe Experience Cloud]**. Die Integrations-Package-Installation entspricht der Installation eines Standard-Packages, die im Abschnitt [Package-Import](../../platform/using/working-with-data-packages.md#importing-packages) beschrieben wird. Dies ermöglicht den Zugriff auf über Digital Asset Manager freigegebene Assets.
-1. Aktivieren Sie die Verbindung über IMS (Adobe-ID-Verbindungsservice), wenn Sie in Ihren E-Mails freigegebene Bilder von Adobe Experience Cloud verwenden möchten. Lesen Sie diesbezüglich den Abschnitt [IMS](../../integrations/using/about-adobe-id.md).
+1. Aktivieren Sie die Verbindung über IMS (Adobe ID-Verbindungsservice), wenn Sie in Ihren E-Mails freigegebene Bilder von Adobe Experience Cloud verwenden möchten. Lesen Sie diesbezüglich den Abschnitt [IMS](../../integrations/using/about-adobe-id.md).
 1. Gehen Sie in den Knoten **[!UICONTROL Administration > Platform > Options]** und konfigurieren Sie die Server- und Organisations (Mandanten)-Optionen für Adobe Target:
 
    * **[!UICONTROL TNT_EdgeServer]** - für die Integration verwendeter Adobe-Target-Server. Diese Option ist standardmäßig ausgefüllt. Dieser Wert entspricht der Adobe-Target-**[!UICONTROL Server-Domain]** und wird vom Wert **/m2** gefolgt. Zum Beispiel: **tt.omtrdc.net/m2**.
@@ -37,4 +37,4 @@ Gehen Sie wie folgt vor:
 
 >[!CAUTION]
 >
->Bei hybriden und gehosteten Architekturen müssen diese Optionen auf allen Servern festgelegt werden, einschließlich des [Mid-Sourcing-Servers](../../installation/using/mid-sourcing-server.md) und der [Ausführungsinstanz](../../message-center/using/configuring-instances.md#execution-instance).
+>Bei hybriden und gehosteten Architekturen müssen diese Optionen auf allen Servern eingestellt werden, einschließlich [Mid-Sourcing-Server](../../installation/using/mid-sourcing-server.md) und [Ausführungsinstanz](../../message-center/using/configuring-instances.md#execution-instance).
