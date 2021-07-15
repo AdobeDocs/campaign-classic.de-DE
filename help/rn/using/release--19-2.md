@@ -7,9 +7,9 @@ role: null
 level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
 source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1542'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 ## ![](assets/do-not-localize/limited_2.png) Version 19.2.4 – Build 9082 {#release-19-2-4-build-9082}
 
-_15. April 2021_
+_Donnerstag, 15. April 2021_
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
 
@@ -25,9 +25,9 @@ _15. April 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
-_22. März 2021_
+_Montag, 22. März 2021_
 
 * Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Sendungen verhinderte. (NEO-31453, NEO-31454)
 
@@ -35,9 +35,9 @@ _22. März 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
-_23. Dezember 2020_
+_Mittwoch, 23. Dezember 2020_
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ _23. Dezember 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.2.3 – Build 9081 {#release-19-2-3-build-9081}
 
-_7. Februar 2020_
+_Freitag, 7. Februar 2020_
 
 **Neuheiten**
 
@@ -62,7 +62,7 @@ _7. Februar 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.2 – Build 9080 {#release-19-2-build-9080}
 
-_2. Dezember 2019_
+_Montag, 2. Dezember 2019_
 
 **Neue Funktionen**
 
@@ -108,7 +108,7 @@ _2. Dezember 2019_
   <tr> 
 <td> <p>Mit Adobe Campaign können Sie das neue interaktive <a href="https://amp.dev/about/email/">AMP für E-Mail</a>-Format ausprobieren, das es Marketing-Experten ermöglicht, AMP-Komponenten in Nachrichten einzuschließen, um das E-Mail-Erlebnis mit komplexen, dynamischen und interaktiven Inhalten zu verbessern, die direkt in der Nachricht selbst verarbeitet werden können.</p>
    <p> Diese Funktion ist als öffentliche Betaversion verfügbar.</p>
-   <p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/defining-interactive-content.md">ausführlichen Dokumentation</a> und im <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html">Tutorial-Video</a>.</p><br /></td> 
+   <p>Weiterführende Informationen finden Sie in der <a href="../../delivery/using/defining-interactive-content.md">ausführlichen Dokumentation</a> und im <a href="https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/email-channel/defining-interactive-email-content-with-amp.html?lang=de">Tutorial-Video</a>.</p><br /></td> 
   </tr> 
  </tbody> 
 </table>
