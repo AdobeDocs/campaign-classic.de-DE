@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: a-b-testing
 exl-id: 1ca01cab-734a-4299-b112-04eec51222fb
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren des Populationsmusters {#step-2--configuring-population-samples}
 
-## Konfiguration der Abfrageaktivität {#configuring-the-query-activity}
+## Konfigurieren der Abfrageaktivität {#configuring-the-query-activity}
 
 * Öffnen Sie die **[!UICONTROL Abfrage]** per Doppelklick.
 
@@ -29,7 +29,7 @@ ht-degree: 91%
 
    ![](assets/use_case_abtesting_createrecipients_003.png)
 
-## Konfiguration der Aufspaltung {#configuring-the-split-activity}
+## Konfigurieren der Aufspaltungsaktivität {#configuring-the-split-activity}
 
 Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest. Dank der Zufallsauswahl erhält jeweils nur ein Teil jeder Population den entsprechenden Versand.
 
@@ -79,4 +79,4 @@ Mithilfe dieser Aktivität werden die drei Populationen erstellt: A, B und Rest.
 
       ![](assets/use_case_abtesting_createrecipients_013.png)
 
-Jetzt können Sie die beiden Versandvorlagen erstellen. [Weitere Informationen](a-b-testing-uc-delivery-templates.md)).
+Jetzt können Sie die beiden Versandvorlagen erstellen. [Weitere Informationen](a-b-testing-uc-delivery-templates.md).
