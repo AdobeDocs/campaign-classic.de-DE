@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 6be12518-86d1-4a13-bbc2-b2ec5141b505
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
 ht-degree: 100%
 
 ---
 
-# Anwendungsfall: Anzeigen eines Berichts zu Antworten auf eine Online-Umfrage{#use-case-displaying-report-on-answers-to-an-online-survey}
+# Anwendungsfall: Bericht zu Antworten auf eine Online-Umfrage anzeigen{#use-case-displaying-report-on-answers-to-an-online-survey}
 
 Die Antworten auf Adobe-Campaign-Fragebögen können abgerufen und in dedizierten Berichten analysiert werden.
 
@@ -31,7 +31,7 @@ Voraussetzung für die Durchführung dieses Anwendungsbeispiels sind ein Fragebo
 >
 >Dieses Anwendungsbeispiel kann nur durchgeführt werden, wenn Sie die Option **Survey Manager** erworben haben. Überprüfen Sie Ihren Lizenzvertrag.
 
-## 1. Schritt - Erstellung des Workflows für Datenabruf und -speicherung {#step-1---creating-the-data-collection-and-storage-workflow}
+## Schritt 1: Erstellung des Workflows für Datenabruf und -speicherung {#step-1---creating-the-data-collection-and-storage-workflow}
 
 Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
@@ -63,7 +63,7 @@ Gehen Sie wie folgt vor, um die Antworten der Umfrage abzurufen:
 
    Die Aktivitäten **[!UICONTROL Listen-Update]** und **[!UICONTROL Planung]** werden erläutert in .
 
-## 2. Schritt - Erstellung des Cubes und seiner Kennzahlen {#step-2---creating-the-cube--its-measures-and-its-indicators}
+## Schritt 2: Erstellung des Cubes und seiner Kennzahlen {#step-2---creating-the-cube--its-measures-and-its-indicators}
 
 Erstellen Sie anschließend den Cube und konfigurieren Sie seine Kennzahlen: Sie werden bei der Erstellung der Indikatoren verwendet. Die Indikatoren werden später im Bericht angezeigt. Weitere Informationen zur Erstellung und Konfiguration von Cubes finden Sie unter [Über Cubes](../../reporting/using/about-cubes.md).
 
@@ -77,7 +77,7 @@ Definieren Sie die im Bericht anzuzeigenden Dimensionen und Kennzahlen. Im Beisp
 
 Im **[!UICONTROL Vorschau]**-Tab können Sie die Anzeige des Berichts überprüfen.
 
-## 3. Schritt - Berichterstellung und Konfiguration der Datenanzeige in der Tabelle {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
+## Schritt 3: Berichterstellung und Konfiguration der Datenanzeige in der Tabelle {#step-3---creating-the-report-and-configuring-the-data-layout-within-the-table}
 
 Erstellen Sie anschließend einen auf dem Cube basierenden Bericht, um dessen Informationen zu nutzen.
 
