@@ -10,9 +10,9 @@ internal: n
 snippet: y
 exl-id: 32c35e61-d0a3-478f-b73b-396e2becf7f9
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1074'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die wichtigsten Schritte sind:
 
 Anschließend können Sie eine [Rich-Benachrichtigung für Android erstellen](create-notifications-android.md).
 
-## Externes Android-Konto konfigurieren {#configuring-external-account-android}
+## Konfigurieren des externen Android-Kontos {#configuring-external-account-android}
 
 Für Android sind zwei Connectoren verfügbar:
 
@@ -58,7 +58,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
    * **maxGCMConnectPerChild**: Maximale Anzahl paralleler HTTP-Abfragen bei FCM durch jeden untergeordneten Server (standardmäßig acht).
 
-## Android-Dienst konfigurieren {#configuring-android-service}
+## Konfigurieren des Android-Service {#configuring-android-service}
 
 ![](assets/do-not-localize/how-to-video.png) [Erfahren Sie im Video, wie Sie einen Android-Service konfigurieren](https://experienceleague.adobe.com/docs/campaign-classic-learn/getting-started-with-push-notifications-for-android/configuring-an-android-service-in-campaign.html?lang=de#configuring-an-android-service-and-creating-an-android-mobile-application-in-campaign)
 
@@ -71,7 +71,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
    >[!NOTE]
    >
-   >Das standardmäßige **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** Zielgruppen-Mapping ist mit der Empfängertabelle verknüpft. Wenn Sie ein anderes Zielgruppen-Mapping verwenden möchten, müssen Sie ein neues Zielgruppen-Mapping erstellen und es im Feld **[!UICONTROL Zielgruppen-Mapping]** des Dienstes eingeben. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
+   >Das standardmäßig vorgeschlagene Zielgruppen-Mapping **[!UICONTROL Abonnierte Anwendungen (nms:appSubscriptionRcp)]** bezieht sich auf die Empfängertabelle. Wenn Sie ein anderes Zielgruppen-Mapping verwenden wollen, haben Sie die Möglichkeit, im Feld **[!UICONTROL Zielgruppen-Mapping]** des Service ein neues Zielgruppen-Mapping anzugeben. Weiterführende Informationen zur Erstellung des Zielgruppen-Mappings finden Sie in [diesem Abschnitt](../../configuration/using/about-custom-recipient-table.md).
 
    ![](assets/nmac_ios.png)
 
@@ -81,7 +81,7 @@ Wählen Sie den jeweiligen Connector folgendermaßen aus:
 
 1. Erstellen Sie Ihre Android-Mobile-App. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#creating-android-app).
 
-## Android Mobile App erstellen {#creating-android-app}
+## Android-Mobile-App erstellen {#creating-android-app}
 
 Nachdem Sie den Dienst erstellt haben, müssen Sie jetzt Ihre Android-Mobile-App erstellen:
 
@@ -109,18 +109,18 @@ Standardmäßig speichert Adobe Campaign einen Schlüssel im Feld **[!UICONTROL 
 
 ### API-Version auswählen{#select-api-version}
 
-Nachdem Sie einen Dienst und eine neue Mobile App erstellt haben, müssen Sie Ihre Mobile App entsprechend der ausgewählten API-Version konfigurieren.
+Nachdem Sie einen Service und eine neue Mobile App erstellt haben, müssen Sie Ihre Mobile App entsprechend der ausgewählten API-Version konfigurieren.
 
-* **Die Konfiguration von HTTP v1**  wird in  [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-httpv1) beschrieben.
-* **Die HTTP-Konfiguration (frühere Version)**  wird in  [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-http) beschrieben.
+* **Näheres zur Konfiguration von HTTP v1** finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-httpv1).
+* **Näheres zur Konfiguration für HTTP (frühere Version)** finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#android-service-http).
 
-#### Konfigurieren der HTTP v1 API{#android-service-httpv1}
+#### Konfigurieren der HTTP v1-API{#android-service-httpv1}
 
 Gehen Sie wie folgt vor, um die HTTP v1-API-Version zu konfigurieren:
 
 1. Wählen Sie im Fenster des **[!UICONTROL Mobile-App-Assistenten]** die Option **[!UICONTROL HTTP v1]** aus der Dropdown-Liste **[!UICONTROL API-Version]** aus.
 
-1. Klicken Sie auf **[!UICONTROL Projekt-JSON-Datei zum Extrahieren der Projektdetails laden...]**, um Ihre JSON-Schlüsseldatei direkt zu laden. Weitere Informationen zum Extrahieren Ihrer JSON-Datei finden Sie auf [dieser Seite](https://firebase.google.com/docs/admin/setup#initialize-sdk).
+1. Klicken Sie auf **[!UICONTROL Projekt-JSON-Datei zum Extrahieren der Projektdetails laden...]**, um Ihre JSON-Schlüsseldatei direkt zu laden. Weitere Informationen dazu, wie Sie die JSON-Datei extrahieren, finden Sie auf [dieser Seite](https://firebase.google.com/docs/admin/setup#initialize-sdk).
 
    Sie können auch die folgenden Details manuell eingeben:
    * **[!UICONTROL Projektkennung]**
@@ -151,7 +151,7 @@ Im Folgenden finden Sie die FCM-Payload-Namen, mit denen Sie Ihre Push-Benachric
 <br>
 <br>
 
-#### Konfigurieren der HTTP API (frühere Version){#android-service-http}
+#### Konfigurieren der HTTP-API (frühere Version){#android-service-http}
 
 Gehen Sie wie folgt vor, um die HTTP-API-Version (frühere Version) zu konfigurieren:
 
