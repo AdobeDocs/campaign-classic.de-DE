@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 23c873fd-9016-4d32-842c-772cfff0e23e
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '887'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ Die Funktionen, die bei der Verwaltung bestimmter Aspekte des Einverständnisses
 
 Weitere Informationen zur Einverständnisverwaltung finden Sie im [entsprechenden Handbuch](../../delivery/using/managing-subscriptions.md).
 
-Zusätzlich zu den von Adobe Campaign bereitgestellten Werkzeugen für die Einverständnisverwaltung können Sie verfolgen, ob ein Benutzer dem Verkauf seiner personenbezogenen Daten widersprochen hat. Siehe [diesen Abschnitt](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
+Zusätzlich zu den von Adobe Campaign bereitgestellten Werkzeugen für die Einverständnisverwaltung können Sie verfolgen, ob ein Benutzer dem Verkauf seiner personenbezogenen Daten widersprochen hat. Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/privacy-requests.md#sale-of-personal-information-ccpa).
 
 ### Datenbeibehaltung {#data-retention}
 
