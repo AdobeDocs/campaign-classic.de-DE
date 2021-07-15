@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: d0ed7be7-3147-4cb8-9ce7-ea51602e9048
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1746'
 ht-degree: 100%
 
@@ -19,9 +19,9 @@ ht-degree: 100%
 
 Für jeden Versand können verschiedene Zielpopulationen bestimmt werden:
 
-* **Haupt-Audience**: Profile, die Nachrichten empfangen. [Mehr dazu](steps-defining-the-target-population.md#selecting-the-main-target)
-* **Testversand**: Empfänger von Nachrichten in Testsendungen, die am Validierungszyklus beteiligt sind. [Mehr dazu](steps-defining-the-target-population.md#defining-a-specific-proof-target)
-* **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Mehr dazu](about-seed-addresses.md)
+* **Haupt-Audience**: Profile, die Nachrichten empfangen. [Weitere Informationen](steps-defining-the-target-population.md#selecting-the-main-target)
+* **Testversand**: Empfänger von Nachrichten in Testsendungen, die am Validierungszyklus beteiligt sind. [Weitere Informationen](steps-defining-the-target-population.md#defining-a-specific-proof-target)
+* **Testadressen**: Empfänger, die nicht zur Zielgruppe des Versands gehören, aber den Versand erhalten (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](about-seed-addresses.md)
 * **Kontrollgruppen**: Population, die den Versand nicht erhält und verwendet wird, um das Verhalten und die Auswirkungen der Kampagne zu verfolgen (nur im Rahmen einer Marketing-Kampagne). [Weitere Informationen](../../campaign/using/marketing-campaign-target.md#defining-a-control-group).
 
 ## Hauptempfänger des Versands auswählen {#selecting-the-main-target}
