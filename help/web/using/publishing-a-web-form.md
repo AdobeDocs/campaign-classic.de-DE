@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 1c66b8e8-7590-4767-9b2f-a9a509df4508
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ So können Sie beispielsweise das Geschlecht des Empfängers vorausfüllen und i
 
 ![](assets/s_ncs_admin_survey_preload_ex.png)
 
-## Versand und Tracking von Webformularen verwalten {#managing-web-forms-delivery-and-tracking}
+## Versand und Tracking von Web-Formularen verwalten {#managing-web-forms-delivery-and-tracking}
 
 Nachdem ein Formular erstellt, konfiguriert und veröffentlicht wurde, können Sie es bereitstellen und die Benutzerantworten tracken.
 
@@ -109,7 +109,7 @@ Der Veröffentlichungsstatus eines Formulars wird in der Formularliste angezeigt
 
 ### Formular veröffentlichen {#publishing-a-form}
 
-Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu oberhalb der Liste der Webformulare auf die Schaltfläche **[!UICONTROL Veröffentlichung]** und wählen Sie in der Dropdown-Liste den Status aus.
+Um den Status eines Formulars zu ändern, müssen Sie es veröffentlichen. Klicken Sie dazu oberhalb der Liste der Web-Formulare auf die Schaltfläche **[!UICONTROL Veröffentlichung]** und wählen Sie in der Dropdown-Liste den Status aus.
 
 ![](assets/webapp_publish_webform.png)
 
@@ -139,7 +139,7 @@ In diesem Fall müssen Sie im Datensatzfeld die Option **[!UICONTROL Vorausgefü
 
 ![](assets/s_ncs_admin_survey_save_box_option.png)
 
-### Log responses {#log-responses}
+### Antworten protokollieren {#log-responses}
 
 Das Tracking der Antworten kann in einem speziellen Tab aktiviert werden, um die Wirkung Ihres Webformulars zu überwachen. Wählen Sie dazu im Fenster mit den Formulareigenschaften den Link **[!UICONTROL Erweiterte Parameter...]** und dann die Option **[!UICONTROL Antworten protokollieren]** aus.
 
