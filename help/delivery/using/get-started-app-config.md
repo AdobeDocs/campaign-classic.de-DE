@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '311'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ Um Push-Benachrichtigungen in Adobe Campaign senden zu können, müssen Sie folg
 
 * Erstellen Sie für die Neotrips-App einen Informationsdienst vom Typ **[!UICONTROL Mobile App]**. Die Vorgehensweise für iOS finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md#configuring-ios-service). Die Vorgehensweise für Android finden Sie in [diesem Abschnitt](configuring-the-mobile-application-android.md#configuring-android-service).
 * Fügen Sie diesem Dienst die iOS- und Android-Versionen der Mobile App hinzu.
-* Erstellen Sie einen Versand für [iOS](create-notifications-ios.md) und [Android](create-notifications-android.md).
+* Erstellen Sie einen Versand sowohl für [iOS](create-notifications-ios.md) als auch für [Android](create-notifications-android.md).
 
 ![](assets/nmac_service_diagram.png)
 
 >[!NOTE]
 >
->Im Tab **[!UICONTROL Abonnements]** des Dienstes finden Sie alle Abonnenten, d. h. alle Nutzer, die die App auf ihrem Mobilgerät installiert und dem Erhalt von Benachrichtigungen zugestimmt haben.
+>Auf der Registerkarte **[!UICONTROL Abonnements]** des Service finden Sie alle Abonnenten, d. h. alle Nutzer, die die Mobile App auf ihrem Mobilgerät installiert und dem Erhalt von Benachrichtigungen zugestimmt haben.
 
-## Installieren Sie das Paket {#installing-package-ios}
+## Installieren des Package {#installing-package-ios}
 
 ![](assets/do-not-localize/how-to-video.png) [Video zur Installation des Mobile-App-Package ](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/sending-messages/push-channel/installing-the-mobile-app-channel.html?lang=de#sending-messages)
 
