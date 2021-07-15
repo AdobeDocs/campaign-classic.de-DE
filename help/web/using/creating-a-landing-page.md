@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: 71c737c2-b0d6-4ae8-a5df-28a08dff82d7
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
 ht-degree: 100%
 
@@ -92,7 +92,7 @@ Wiederholen Sie diese Schritte für jede Seite der Webanwendung.
 
 ## Schritt 2: Konfigurieren des Inhalts {#step-2---configuring-the-content}
 
-In diesem Abschnitt wird beschrieben, wie importierter Inhalt angepasst und die Felder der Datenbank dem Webseitenformular zugeordnet werden. Die zuvor erstellte Webanwendung ist:
+In diesem Abschnitt wird beschrieben, wie importierter Inhalt angepasst und die Felder der Datenbank dem Web-Seitenformular zugeordnet werden. Die zuvor erstellte Web-Anwendung ist:
 
 ![](assets/dce_uc1_lp_enchainement.png)
 
