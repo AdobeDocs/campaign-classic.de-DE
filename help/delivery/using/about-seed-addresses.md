@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
 ht-degree: 100%
 
@@ -45,6 +45,7 @@ F체r den Briefpost-Versand werden Testadressen w채hrend der Extraktion hinzugef�
 >
 >* Keine Verwendung der Option **[!UICONTROL Gruppierungen verwalten (GROUP BY + HAVING)]**.
 >* Bei Extraktion von Kollektionselementen bleiben die entsprechenden Felder f체r Testadressen leer, es sei denn, die Option **[!UICONTROL Nur eine Zeile (Expertenmodus)]** wurde ausgew채hlt. Lesen Sie diesbez체glich auch [diesen Abschnitt](../../platform/using/executing-export-jobs.md#step-7---data-formatting).
+
 >
 
 
