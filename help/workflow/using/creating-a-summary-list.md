@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1060'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Gehen Sie wie folgt vor, um eine zusammenfassende Liste zu erstellen:
 1. Anreicherung der Kontaktdaten mit einem aus der Verkaufstabelle stammenden Aggregat.
 1. Erstellung einer zusammenfassenden Liste.
 
-## Schritt 1: Datei laden und die importierten Daten abstimmen {#step-1--loading-the-file-and-reconciling-the-imported-data}
+## Schritt 1: Laden der Datei und Abstimmung der importierten Daten {#step-1--loading-the-file-and-reconciling-the-imported-data}
 
 Die zu ladenden Verkaufsdaten weisen folgende Struktur auf:
 
@@ -110,7 +110,7 @@ Nach der Anreicherung stellen sich die Daten der Workflow-Arbeitstabelle wie fol
 
 ![](assets/uc2_enrich_population1.png)
 
-## Schritt 2: Angereicherte Daten in die &#39;Verkauf&#39;-Tabelle schreiben {#step-2--writing-enriched-data-to-the--purchases--table}
+## Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot; {#step-2--writing-enriched-data-to-the--purchases--table}
 
 In diesem Schritt werden die importierten und angereicherten Daten in die &quot;Verkauf&quot;-Tabelle geschrieben. Dies geschieht mithilfe der Aktivität **Datenaktualisierung**.
 
@@ -134,7 +134,7 @@ Konfigurieren Sie die **Datenaktualisierung**-Aktivität wie folgt:
 
 ![](assets/uc2_enrich_miseajour.png)
 
-## Schritt 3: &#39;Kontakt&#39;-Daten anreichern {#step-3--enriching--contact--data-}
+## Schritt 3: Anreicherung der &quot;Kontakt&quot;-Daten {#step-3--enriching--contact--data-}
 
 Das Schema &quot;Kontakte&quot; steht in Relation zum Schema &#39;Verkauf&#39;. Dies ermöglicht die Verwendung einer weiteren Option der Anreicherungsaktivität, nämlich die Hinzufügung von Daten in Relation mit der Filterdimension.
 
@@ -170,7 +170,7 @@ Für die zusammenfassende Liste werden Felder aus dem Verkaufsschema und aus der
 
    ![](assets/uc2_enrich_enrich8.png)
 
-## Schritt 4: Erstellen und Hinzufügen zu einer Zusammenfassungsliste {#step-4--creating-and-adding-to-a-summary-list}
+## Schritt 4: Erstellen einer zusammenfassenden Liste und Hinzufügen der Daten {#step-4--creating-and-adding-to-a-summary-list}
 
 Im letzten Schritt werden die angereicherten Daten in eine Liste geschrieben.
 
