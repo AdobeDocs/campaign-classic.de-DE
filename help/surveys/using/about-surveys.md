@@ -7,46 +7,46 @@ content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '535'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Umfragen{#about-surveys}
 
-Adobe Campaign enthält ein Grafikmodul zur Definition und Veröffentlichung von Webanwendungen. Dies wird verwendet, um Seiten zu erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, einschließlich Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. Mit dieser Funktion können Sie Webseiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
+Adobe Campaign enthält ein Grafikmodul zur Definition und Veröffentlichung von Web-Anwendungen. Dies wird verwendet, um Seiten zu erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, einschließlich Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
-Mit dem optionalen Add-on **Umfrage** können Sie eine neue Art von Webanwendung erstellen, um Online-Fragebögen zu erstellen und zu verwalten, z. B. Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren oder Abmelden von einem Informationsdienst oder einem Gewinnspielformular. Nachdem die Antworten erfasst wurden, werden sie in der Datenbank oder in lokalen Variablen gespeichert. Das Datenmodell kann mithilfe der Fragebogenantworten dynamisch erweitert werden. Sie können die Ergebnisse in Echtzeit anzeigen, die Antworten filtern und mithilfe spezieller Diagramme analysieren.
+Mit dem optionalen **Umfrage**-Add-on können Sie eine neue Art von Web-Anwendung erstellen, um Online-Fragebögen zu erstellen und zu verwalten, z. B. Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren oder Abmelden von einem Informations-Service oder Teilnahmeformular für einen Wettbewerb. Nachdem die Antworten erfasst wurden, werden sie in der Datenbank oder in lokalen Variablen gespeichert. Das Datenmodell kann mithilfe der Fragebogenantworten dynamisch erweitert werden. Sie können die Ergebnisse in Echtzeit anzeigen, die Antworten filtern und mithilfe spezieller Diagramme analysieren.
 
-In diesem Kapitel wird beschrieben, wie Sie **Umfragen**, Feld- und Seitenverwaltung, Speichermodi und Datensätze erstellen und verwalten.
+In diesem Kapitel wird beschrieben, wie Sie **Umfragen**, Feld- und Seitenverwaltung, Speichermodi und Einträge erstellen und verwalten.
 
-[!DNL :bulb:] Erfahren Sie auf  [dieser Seite](getting-started-with-surveys.md), wie Sie Ihre erste Umfrage erstellen.
+[!DNL :bulb:] Auf [dieser Seite](getting-started-with-surveys.md) erfahren Sie, wie Sie Ihre erste Umfrage erstellen.
 
 >[!NOTE]
 >
->* Ausführliche Anweisungen zum Erstellen eines Standard-Webformulars finden Sie in [diesem Dokument](../../web/using/about-web-forms.md).
+>* Die einzelnen Schritte für die Erstellung eines Standard-Web-Formulars werden in [diesem Dokument](../../web/using/about-web-forms.md) beschrieben.
    >
    >
-* Die Verwaltung von Webanwendungen wird in [diesem Dokument](../../web/using/about-web-applications.md) beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
+* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](../../web/using/about-web-applications.md) beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
 
 
 ## Funktionsumfang {#campaign-surveys-scope}
 
-Verwenden Sie in Adobe Campaign [Webanwendungen](../../web/using/about-web-forms.md), um:
+Verwenden Sie in Adobe Campaign [Web-Anwendungen](../../web/using/about-web-forms.md), um:
 
-* Erstellen mehrseitiger Formulare,
-* Verwaltung mehrsprachiger Formulare mit einem integrierten Übersetzungstool,
-* grafische Benutzeroberfläche verwalten, mehrspaltiges Seitenlayout,
-* Personalisierung hinzufügen und Feldposition definieren,
-* Anzeige von Umfragefeldern entsprechend den Antworten,
-* Anzeige von Bedingungsseiten,
-* Prüfen Sie die Informationen vor der Genehmigung, je nach Datentyp (Anzahl, E-Mail-Adresse, Datum usw.). und Pflichtfelder,
-* E-Mail-Einladungen/Benachrichtigungen senden,
-* Fehler- und Endseiten personalisieren,
-* Bilder, Videos, Hypertext-Links, Captcha usw. in Formularen hinzufügen
+* mehrseitige Formulare zu erstellen,
+* mehrsprachige Formulare mit einem integrierten Übersetzungs-Tool zu verwalten,
+* grafische Benutzeroberflächen und ein mehrspaltiges Seiten-Layout zu verwalten,
+* Personalisierung hinzuzufügen und die Feldposition zu definieren,
+* die Anzeige von Umfragefeldern von den Antworten abhängig zu machen,
+* die Anzeige von Seiten abhängig von einer Bedingung zu machen,
+* Informationen vor der Genehmigung zu prüfen, je nach Art der erwarteten Daten (Nummer, E-Mail-Adresse, Daten usw.) Pflichtfelder hinzuzufügen,
+* E-Mail-Einladungen/Benachrichtigungen zu senden,
+* Fehler- und Endseiten zu personalisieren,
+* Bilder, Videos, Hypertext-Links, Captcha usw. in Formularen hinzuzufügen.
 
-Das optionale Modul zur Umfrageerstellung bietet eine benutzerfreundliche Benutzeroberfläche und die folgenden zusätzlichen Funktionen:
+Das optionale Modul zur Umfrageerstellung bietet eine anwenderfreundliche Benutzeroberfläche und die folgenden zusätzlichen Funktionen:
 
 * Dynamische Erweiterung der Datenbank: Erstellung von Antworten, die nicht Teil des anfänglichen Datenmodells sind. [Weitere Informationen](../../surveys/using/managing-answers.md#storing-collected-answers).
 * Verwaltung der Punktzahl. [Weitere Informationen](../../surveys/using/managing-answers.md#score-management).
@@ -64,7 +64,7 @@ Führen Sie die folgenden Schritte aus, um eine Umfrage zu erstellen und bereitz
 1. Veröffentlichen Sie die Umfrage und senden Sie sie dann an Empfänger (schließen Sie z. B. den Link in eine Sendung oder auf einer Website ein).
 1. Überwachen Sie die Antworten und prüfen Sie die entsprechenden Berichte.
 
-Weitere Informationen zum Konfigurieren und Sequenzieren dieser Schritte finden Sie in [diesem Dokument](../../web/using/about-web-forms.md). In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
+Weitere Informationen zum Konfigurieren und Festlegen der Abfolge dieser Schritte finden Sie in [diesem Dokument](../../web/using/about-web-forms.md). In dem Kapitel werden nur die für Umfragen spezifischen Konfigurationen beschrieben.
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ Weitere Informationen zum Konfigurieren und Sequenzieren dieser Schritte finden 
 
 ## Einstellungen        {#settings}
 
-Umfragen sind standardmäßig im Knoten **[!UICONTROL Ressourcen > Online > Webanwendungen]** des Adobe Campaign-Navigationsbaums verfügbar.
+Umfragen sind standardmäßig im Knoten **[!UICONTROL Ressourcen > Online > Web-Anwendungen]** der Adobe Campaign-Baumstruktur verfügbar.
 
 Einstellungen werden in den folgenden Ordnern gespeichert:
 
@@ -81,4 +81,4 @@ Einstellungen werden in den folgenden Ordnern gespeichert:
 
 >[!NOTE]
 >
->Einstellungsdetails finden Sie in [diesem Dokument](../../web/using/about-web-forms.md).
+>Details zu Einstellungen finden Sie in [diesem Dokument](../../web/using/about-web-forms.md).
