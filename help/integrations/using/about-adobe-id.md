@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Verwenden Ihrer Adobe-ID in Campaign
+title: Verwenden Ihrer Adobe ID in Campaign
 description: Weitere Informationen zur Integration von Adobe IMS
 audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
 source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 97%
 
 Adobe Identity Management System (IMS) hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
-Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe Campaign-Konsole herstellen. Diese Integration bringt die folgenden Vorteile mit sich:
+Campaign-Benutzer können über ihre Adobe ID eine Verbindung zur Adobe Campaign-Konsole herstellen. Diese Integration bringt die folgenden Vorteile mit sich:
 
 * Verwendung ein und derselben ID für alle Adobe Experience Cloud-Lösungen;
 * Speicherung der Verbindung bei der Verwendung von Adobe Campaign mit den verschiedenen Integrationen;
@@ -36,7 +36,7 @@ Campaign-Benutzer können über ihre Adobe-ID eine Verbindung zur Adobe Campaign
 * [Campaign-Version 19.2.4](../../rn/using/release--19-2.md)
 * [Campaign-Version 19.1.8](../../rn/using/release--19-1.md)
 
-[!DNL :bulb:] [Weitere Informationen zu IMS-Aktualisierungen](../../technotes/ims-updates.md)
+[!DNL :bulb:] [Weitere Informationen zu IMS-Updates](../../technotes/ims-updates.md)
 
 
 ## Mehr Ressourcen
