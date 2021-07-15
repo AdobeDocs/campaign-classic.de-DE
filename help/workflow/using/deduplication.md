@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
 source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
 ht-degree: 100%
 
@@ -107,7 +107,7 @@ Die Aktivität ist zu benennen, Deduplizierungsmethode und -bedingungen sind anz
 
    ![](assets/s_user_segmentation_dedup_param9.png)
 
-## Anwendungsbeispiel: Dubletten identifizieren, bevor ein Versand gestartet wird {#example--identify-the-duplicates-before-a-delivery}
+## Anwendungsbeispiel: Duplikate identifizieren, bevor ein Versand gestartet wird {#example--identify-the-duplicates-before-a-delivery}
 
 Im folgenden Beispiel soll die Vereinigung der Ergebnisse dreier Abfragen dedupliziert werden.
 
