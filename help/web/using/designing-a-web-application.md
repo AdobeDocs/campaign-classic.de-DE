@@ -1,29 +1,29 @@
 ---
 product: campaign
-title: Webanwendung konzipieren
-description: Webanwendung konzipieren
+title: Web-Anwendung konzipieren
+description: Web-Anwendung konzipieren
 audience: web
 content-type: reference
 topic-tags: web-applications
 exl-id: dcdf6afc-321e-4027-a350-fff6bbf22e71
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # Web-Anwendung konzipieren{#designing-a-web-application}
 
-Webanwendungen werden nach demselben Prinzip erstellt und verwaltet wie [Webformulare](about-web-forms.md).
+Web-Anwendungen werden nach dem gleichen Prinzip wie [Web-Formulare](about-web-forms.md) erstellt und verwaltet.
 
 >[!CAUTION]
 >
->Verwenden Sie die Unterregisterkarte **[!UICONTROL Vorschau]** , um Fehler während des Webanwendungsdesigns zu überprüfen.
+>Verwenden Sie die Unterregisterkarte **[!UICONTROL Vorschau]**, um Fehler beim Entwurf von Web-Anwendungen zu überprüfen.
 >
->Bis zur Veröffentlichung der Webanwendung werden die Änderungen den Endbenutzern nicht angezeigt.
+>Bis zur Veröffentlichung der Web-Anwendung werden die Änderungen den Endbenutzern nicht angezeigt.
 
-## Grafiken in eine Webanwendung einfügen {#inserting-charts-in-a-web-application}
+## Grafiken in eine Web-Anwendung einfügen {#inserting-charts-in-a-web-application}
 
 Sie können Grafiken in Webanwendungen einfügen. Verwenden Sie dazu die Grafiken-Dropdown-Liste in der Symbolleiste und wählen Sie die Art der einzufügenden Grafik aus.
 
@@ -33,7 +33,7 @@ Sie können auch das Menü **[!UICONTROL Grafik hinzufügen]** verwenden.
 
 ![](assets/s_ncs_admin_webapps_graph.png)
 
-## Tabellen in eine Webanwendung einfügen {#inserting-tables-in-a-web-application}
+## Tabellen in eine Web-Anwendung einfügen {#inserting-tables-in-a-web-application}
 
 Wenn Sie eine Tabelle hinzufügen möchten, verwenden Sie die Tabellen-Dropdown-Liste in der Symbolleiste und wählen Sie den Typ der einzufügenden Tabelle aus.
 
@@ -43,7 +43,7 @@ Sie können den Tabellentyp auch im Dropdown-Menü auswählen.
 
 ![](assets/s_ncs_admin_webapps_table.png)
 
-## Webanwendungen vom Typ &quot;Übersicht&quot; {#overview-type-web-applications}
+## Web-Anwendungen vom Typ &quot;Übersicht&quot; {#overview-type-web-applications}
 
 In der Benutzeroberfläche von Adobe Campaign werden zahlreiche Webanwendungen bereitgestellt, die es Ihnen ermöglichen, auf Empfänger, Sendungen, Kampagnen, gespeicherte Assets etc. zuzugreifen, sie zu verwalten und mit ihnen zu interagieren.
 
@@ -51,7 +51,7 @@ In der Benutzeroberfläche erscheinen sie in Form von Dashboards, die aus einer 
 
 Die nativen Webanwendungen sind im Knoten **[!UICONTROL Administration > Konfiguration > Webanwendungen]** gespeichert.
 
-## Webanwendungen mit Bearbeitungsformularen bearbeiten {#edit-forms-type-web-applications}
+## Web-Anwendungen mit Bearbeitungsformularen bearbeiten {#edit-forms-type-web-applications}
 
 Webanwendungen mit Bearbeitungsformularen für ein Extranet besitzen folgende Merkmale:
 
