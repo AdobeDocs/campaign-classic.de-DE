@@ -8,9 +8,9 @@ topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '956'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Die Registrierungsfunktion ermöglicht
    }
    ```
 
-## Trackingfunktion {#tracking-function}
+## Tracking-Funktion {#tracking-function}
 
 * **Für Android**:
 
