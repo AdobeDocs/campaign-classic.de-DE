@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 222853c5-c754-4c0b-8ee4-a64b2f8677a4
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Benutzer können Foren abonnieren, um per E-Mail über jede gepostete Nachricht 
 
 ## Zugriff auf ein Forum {#accessing-a-forum}
 
-Um auf das Forum einer Kampagne, eines Benutzers usw. zuzugreifen, klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** rechts oben im jeweiligen Dashboard. Nach dem Titel der Schaltfläche werden in Klammern die Gesamtzahl aller Nachrichten des Forums angegeben.
+Um auf das Forum einer Kampagne, eines Benutzers usw. zuzugreifen, klicken Sie auf die Schaltfläche **[!UICONTROL Forum]** rechts oben im jeweiligen Dashboard. Nach dem Titel der Schaltfläche wird in Klammern die Gesamtzahl aller Nachrichten des Forums angegeben.
 
 ![](assets/mrm_forum_access_link.png)
 
@@ -66,7 +66,7 @@ Gehen Sie ins Fenster **[!UICONTROL Diskussionsforum]**:
 >
 >Wenn die Nachricht gepostet wurde, kann sie nicht mehr geändert oder gelöscht werden.
 
-## Posten in dem persönlichen Forum eines Benutzers {#posting-to-the-personal-forum-of-an-operator}
+## Posts im persönlichen Benutzerforum eines Benutzers {#posting-to-the-personal-forum-of-an-operator}
 
 Sie haben die Möglichkeit, eine Nachricht im persönlichen Forum eines Benutzers zu posten, wenn sich diese zum Beispiel nicht auf eine bestimmte Kampagne bezieht, Sie jedoch den Diskussionsverlauf in Adobe Campaign verfolgen möchten. Die persönlichen Benutzerforen sind öffentlich, alle Benutzer können die darin enthaltenen Nachrichten lesen. Der jeweilige Benutzer wird per E-Mail über jede in seinem Forum gepostete Nachricht informiert.
 
@@ -99,7 +99,7 @@ Sie können ein Forum abonnieren, um den enthaltenen Diskussionen zu folgen und 
 
    ![](assets/mrm_forum_subscribers.png)
 
-## Überprüfen des Benachrichtigungsversands {#checking-notification-delivery}
+## Versand einer Benachrichtigung überprüfen {#checking-notification-delivery}
 
 Falls Abonnenten eines Forums nicht die erwarteten Benachrichtigungen erhalten, empfehlen wir folgende Vorgehensweise:
 
