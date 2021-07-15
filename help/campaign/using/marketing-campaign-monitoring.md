@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: c2b523ac-e900-4db8-85b0-dafc6ddb3eca
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
 ht-degree: 100%
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 # Überwachen von Marketing-Kampagnen {#monitoring-marketing-campaigns}
 
-## Tracken einer Kampagne {#tracking-a-campaign}
+## Verfolgen einer Kampagne {#tracking-a-campaign}
 
-In jeder Kampagne können über den Tab **[!UICONTROL Verfolgung]** die ausgeführten Prozesse sowie ihre Status eingesehen werden. Die Informationen sind in diverse Untertabs eingeteilt.
+In jeder Kampagne können über den Tab **[!UICONTROL Tracking]** die ausgeführten Prozesse sowie ihre Status eingesehen werden. Die Informationen sind in diverse Untertabs eingeteilt.
 
 * Im Aktivitätenprotokoll wird die Ausführung allgemeiner Kampagnenprozesse protokolliert: Workflow-Erstellung oder -Start, Validierung, Extraktion usw.
 
