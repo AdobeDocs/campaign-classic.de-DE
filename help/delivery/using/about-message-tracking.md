@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,15 +31,15 @@ Das folgende Diagramm zeigt die Phasen des Dialogs zwischen dem Benutzer und den
 
 **Grundprinzip**
 
-Bevor Sie das Tracking verwenden, müssen Sie es zunächst für Ihre Instanz konfigurieren. [Mehr dazu](../../installation/using/deploying-an-instance.md#operating-principle)
+Bevor Sie das Tracking verwenden, müssen Sie es zunächst für Ihre Instanz konfigurieren. [Weitere Informationen](../../installation/using/deploying-an-instance.md#operating-principle)
 
 **Tracking-Server**
 
-Für die Konfiguration von Tracking muss Ihre Instanz deklariert und bei dem/den Tracking-Server(n) registriert werden. [Mehr dazu](../../installation/using/deploying-an-instance.md#tracking-server)
+Für die Konfiguration von Tracking muss Ihre Instanz deklariert und bei dem/den Tracking-Server(n) registriert werden. [Weitere Informationen](../../installation/using/deploying-an-instance.md#tracking-server)
 
 **Tracking speichern**
 
-Sobald das Tracking konfiguriert und Ihre URLs ausgefüllt sind, muss der Tracking-Server registriert werden. [Mehr dazu](../../installation/using/deploying-an-instance.md#saving-tracking)
+Sobald das Tracking konfiguriert und Ihre URLs ausgefüllt sind, muss der Tracking-Server registriert werden. [Weitere Informationen](../../installation/using/deploying-an-instance.md#saving-tracking)
 
 ## Nachrichten-Tracking {#message-tracking}
 
@@ -47,23 +47,23 @@ Sobald das Tracking konfiguriert und Ihre URLs ausgefüllt sind, muss der Tracki
 
 **Getrackte Links**
 
-Sie können den Empfang von Nachrichten und die Aktivierung der im Nachrichteninhalt eingefügten Links verfolgen, um das Verhalten der Empfänger besser zu verstehen. [Mehr dazu](how-to-configure-tracked-links.md)
+Sie können den Empfang von Nachrichten und die Aktivierung der im Nachrichteninhalt eingefügten Links verfolgen, um das Verhalten der Empfänger besser zu verstehen. [Weitere Informationen](how-to-configure-tracked-links.md)
 
 **URL-Tracking**
 
-Tracking-Optionen können durch Aktivieren oder Deaktivieren von Tracking-URLs konfiguriert werden. [Mehr dazu](personalizing-url-tracking.md)
+Tracking-Optionen können durch Aktivieren oder Deaktivieren von Tracking-URLs konfiguriert werden. [Weitere Informationen](personalizing-url-tracking.md)
 
 **Personalisierung getrackter Links**
 
-Mit den Tracking-Funktionen von Campaign Classic können Sie Links in E-Mails einfügen, die personalisiert werden können und das Tracking unterstützen. [Mehr dazu](tracking-personalized-links.md)
+Mit den Tracking-Funktionen von Campaign Classic können Sie Links in E-Mails einfügen, die personalisiert werden können und das Tracking unterstützen. [Weitere Informationen](tracking-personalized-links.md)
 
 **Trackinglogs**
 
-Der technische Tracking-Workflow verfolgt die Tracking-Daten, sobald der Versand ausgeführt und das Tracking aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. [Mehr dazu](accessing-the-tracking-logs.md)
+Der technische Tracking-Workflow verfolgt die Tracking-Daten, sobald der Versand ausgeführt und das Tracking aktiviert wurde. Diese Daten finden Sie auf der Registerkarte &quot;Tracking&quot; Ihres Versands. [Weitere Informationen](accessing-the-tracking-logs.md)
 
 **Tracking testen**
 
-Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirror-Seite, in Ihren E-Mail-Protokollen und Links testen. [Mehr dazu](testing-tracking.md)
+Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking auf Ihrer Mirror-Seite, in Ihren E-Mail-Protokollen und Links testen. [Weitere Informationen](testing-tracking.md)
 
 ## Web-Anwendungs-Tracking {#web-application-tracking}
 
@@ -71,11 +71,11 @@ Bevor Sie Ihre Nachrichten mit Ihrem Tracking senden, können Sie das Tracking a
 
 **Web-Anwendung tracken**
 
-Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und messen. Diese Funktion kann für alle Webanwendungstypen wie Formulare und Landingpages verwendet werden. [Mehr dazu](../../web/using/tracking-a-web-application.md)
+Sie können auch Besuche auf Web-Anwendungsseiten mit Trackingtags verfolgen und messen. Diese Funktionalität kann für alle Web-Anwendungstypen wie Formulare und Landingpages verwendet werden. [Weitere Informationen](../../web/using/tracking-a-web-application.md)
 
 **Opt-out vom Web-Anwendungs-Tracking**
 
-Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern beenden, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Zielseiten anzuzeigen, damit Benutzer sich abmelden können. [Mehr dazu](../../web/using/web-application-tracking-opt-out.md)
+Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracking des Web-Verhaltens von Endbenutzern beenden, die sich gegen das Tracking ihres Verhaltens entschieden haben. Sie können ermöglichen, ein Banner in Web-Anwendungen oder Zielseiten anzuzeigen, damit Benutzer sich abmelden können. [Weitere Informationen](../../web/using/web-application-tracking-opt-out.md)
 
 ## Tracking-Berichte {#tracking-reports}
 
@@ -83,23 +83,23 @@ Mit der Opt-Out-Funktion für das Web-Anwendungs-Tracking können Sie das Tracki
 
 **Tracking-Statistiken**
 
-Dieser Bericht enthält Statistiken zu Öffnungen, Klicks und Transaktionen und ermöglicht es Ihnen, die Marketing-Wirkung des Versands zu verfolgen. [Mehr dazu](../../reporting/using/delivery-reports.md#tracking-statistics)
+Dieser Bericht enthält Statistiken zu Öffnungen, Klicks und Transaktionen und ermöglicht es Ihnen, die Marketing-Wirkung des Versands zu verfolgen. [Weitere Informationen](../../reporting/using/delivery-reports.md#tracking-statistics)
 
 **URLs und Clickstreams**
 
-Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Web-Seiten. [Mehr dazu](../../reporting/using/delivery-reports.md#urls-and-click-streams)
+Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Web-Seiten. [Weitere Informationen](../../reporting/using/delivery-reports.md#urls-and-click-streams)
 
 **Personen und Empfänger**
 
-Anhand dieses Beispiels können Sie den Unterschied beim Tracking zwischen einer Person/Personen und einem Empfänger in Adobe Campaign besser verstehen. [Mehr dazu](../../reporting/using/person-people-recipients.md)
+Anhand dieses Beispiels können Sie den Unterschied beim Tracking zwischen einer Person/Personen und einem Empfänger in Adobe Campaign besser verstehen. [Weitere Informationen](../../reporting/using/person-people-recipients.md)
 
 **Tracking-Indikatoren**
 
-In diesem Bericht werden die Schlüsselindikatoren zum Tracking des Verhaltens der Empfänger beim Empfang der Sendung zusammengefasst, z. B. Öffnungsraten, Clickthrough-Raten und Clickstreams. [Mehr dazu](../../reporting/using/delivery-reports.md#tracking-indicators)
+In diesem Bericht werden die Schlüsselindikatoren zum Tracking des Verhaltens der Empfänger beim Empfang der Sendung zusammengefasst, z. B. Öffnungsraten, Clickthrough-Raten und Clickstreams. [Weitere Informationen](../../reporting/using/delivery-reports.md#tracking-indicators)
 
 **Indikatorberechnung**
 
-In den verschiedenen Tabellen finden Sie nach Versandtyp geordnet die Liste der Indikatoren, die in Berichten verwendet werden, sowie ihre Berechnungsformeln. [Mehr dazu](../../reporting/using/indicator-calculation.md)
+In den verschiedenen Tabellen finden Sie nach Versandtyp geordnet die Liste der Indikatoren, die in Berichten verwendet werden, sowie ihre Berechnungsformeln. [Weitere Informationen](../../reporting/using/indicator-calculation.md)
 
 ## Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 
