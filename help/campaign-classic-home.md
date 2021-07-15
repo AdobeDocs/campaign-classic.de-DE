@@ -4,13 +4,13 @@ product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
 source-git-commit: 8a0535180640c63201d1a59539eac8c91a53cb8b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Dokumentation zu Campaign Classic v7 {#campaign-classic-documentation}
+# Campaign Classic v7 – Dokumentation {#campaign-classic-documentation}
 
 ![](platform/using/assets/do-not-localize/banner_acc_doc.jpg)
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 * **[Schützen Ihrer Campaign-Instanzen](technotes/acc-config-updates.md)**<br/> Führen Sie eine Aktualisierung auf die neuesten Builds durch, um Ihre Campaign-Plattform zu schützen.
 
-* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsdienst wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O wechseln.
+* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsdienst wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O migrieren.
 
 [Weitere Aktualisierungen](/help/rn/using/documentation-updates.md)
 
@@ -80,7 +80,7 @@ ht-degree: 96%
 
 | Nützliche Seiten | Ressourcen für Entwickler |
 |---|---|
-| [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html) |
+| [Versionshinweise](/help/rn/using/latest-release.md) | [Liste von Fehlernachrichten](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de) |
 | [Anleitungsvideos](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de) | [Campaign-Datenmodell](configuration/using/about-data-model.md) |
 | [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md) | [Campaign-JSAPI](https://docs.adobe.com/content/help/en/campaign-classic/technicalresources/api/p-1.html) |
 | [[!DNL Gold Standard] Upgrade](rn/using/gs-overview.md) | [Tracking-Handbuch](https://helpx.adobe.com/de/campaign/kb/acc-tracking.html) |
