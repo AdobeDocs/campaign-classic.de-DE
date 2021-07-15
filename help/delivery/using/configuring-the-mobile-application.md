@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 67eee1c5-a918-46b9-875d-7c3c71c00635
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '743'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ Nachdem das Paket installiert ist, können Sie in Adobe Campaign Classic die Ein
 
 Die wichtigsten Schritte sind:
 
-1. [Externes iOS-Konto konfigurieren](#configuring-external-account-ios)
-1. [iOS-Dienst konfigurieren](#configuring-ios-service)
+1. [Konfigurieren des externen iOS-Kontos](#configuring-external-account-ios)
+1. [Konfigurieren des iOS-Service](#configuring-ios-service)
 1. [Integrieren der iOS-Mobile-App in Campaign](#creating-ios-app)
 
 Anschließend können Sie [eine Push-Benachrichtigung für iOS-Geräte erstellen](create-notifications-ios.md).
 
 
-## Externes iOS-Konto konfigurieren {#configuring-external-account-ios}
+## Konfigurieren des externen iOS-Kontos {#configuring-external-account-ios}
 
 Bei iOS sendet der iOS-HTTP/2-Connector Benachrichtigungen an HTTP/2-APNS.
 
@@ -46,7 +46,7 @@ Gehen Sie wie folgt vor, um diesen Connector zu konfigurieren:
 
 Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres Dienstes beginnen.
 
-## iOS-Dienst konfigurieren {#configuring-ios-service}
+## Konfigurieren des iOS-Service {#configuring-ios-service}
 
 >[!CAUTION]
 >
@@ -73,9 +73,9 @@ Ihr iOS-Connector ist jetzt konfiguriert. Sie können mit dem Einrichten Ihres D
 
 1. Erstellen Sie Ihre iOS-Mobile-Apps für Entwicklung und Produktion. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](configuring-the-mobile-application.md#creating-ios-app).
 
-## Erstellen einer mobilen iOS-App {#creating-ios-app}
+## Erstellen einer iOS-Mobile-App {#creating-ios-app}
 
-Erstellen Sie nach der Erstellung Ihres Dienstes Ihre iOS-Anwendung in Campaign. Gehen Sie wie folgt vor:
+Erstellen Sie nach der Erstellung Ihres Services Ihre iOS-Mobile-App in Campaign. Gehen Sie wie folgt vor:
 
 1. Klicken Sie in Ihrem neu erstellten Dienst auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um den Anwendungstyp auszuwählen.
 
