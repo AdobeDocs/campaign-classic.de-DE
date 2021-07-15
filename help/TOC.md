@@ -1,16 +1,16 @@
 ---
 audience: end-user
-breadcrumb-title: Dokumentation zu Campaign Classic v7
+breadcrumb-title: Campaign Classic v7 – Dokumentation
 product: campaign
 title: Campaign Classic v7 – Handbuch
 breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
-user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen zu erstellen, zu koordinieren und bereitzustellen, die Kunden tatsächlich wünschen - über E-Mail-, mobile, Offline-Kanäle und mehr.
+user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: Adobe Campaign Classic
 type: Documentation
 source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2518'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 97%
       + [Version 19.1](rn/using/release--19-1.md)
       + [Version 18.10](rn/using/release--18-10.md)
       + [Version 18.6](rn/using/release--18-6.md)
-      + [Version 18.4](rn/using/release--18-4.md)
+      + [Version 18.4](rn/using/release--18-4.md)
    + [Eingestellte Funktionen](rn/using/deprecated-features.md)
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
-   + [Häufig gestellte Fragen zu Adobe Analytics Connector](technotes/aa-connector-migration.md)
+   + [Häufig gestellte Fragen zum Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Aktualisierung des iOS-Zertifikats](technotes/ios-certificate-update.md)
    + [Aktualisierungen der Campaign-Konfiguration](technotes/acc-config-updates.md)
    + [Aktualisierung von &quot;Getrackte URLs&quot;](technotes/tracked-urls.md)
@@ -126,7 +126,7 @@ ht-degree: 97%
       + [Erste Schritte mit Sendungen](delivery/using/steps-about-delivery-creation-steps.md)
       + [Versand erstellen und identifizieren](delivery/using/steps-create-and-identify-the-delivery.md)
       + [Audience festlegen](delivery/using/steps-defining-the-target-population.md)
-      + [Versand überprüfen](delivery/using/steps-validating-the-delivery.md)
+      + [Versand validieren](delivery/using/steps-validating-the-delivery.md)
       + [Versand durchführen](delivery/using/steps-sending-the-delivery.md)
       + Best Practices beim Versand {#delivery-bestpractices}
          + [Best Practices erlernen](delivery/using/delivery-best-practices.md)
@@ -201,7 +201,7 @@ ht-degree: 97%
          + [Konfigurieren des Populationsmusters](delivery/using/a-b-testing-uc-population-samples.md)
          + [Versandvorlagen erstellen](delivery/using/a-b-testing-uc-delivery-templates.md)
          + [Sendungen konfigurieren](delivery/using/a-b-testing-uc-configuring-deliveries.md)
-         + [Script erstellen](delivery/using/a-b-testing-uc-script.md)
+         + [Skript erstellen](delivery/using/a-b-testing-uc-script.md)
          + [Endgültigen Versand definieren](delivery/using/a-b-testing-uc-final-delivery.md)
          + [Workflow starten](delivery/using/a-b-testing-uc-start-workflow.md)
          + [Ergebnis analysieren](delivery/using/a-b-testing-uc-analyzing.md)
@@ -240,7 +240,7 @@ ht-degree: 97%
    + Content-Management-Modul {#content-management}
       + [Über Content-Management](delivery/using/about-content-management.md)
       + [Ressourcen und Grundlagen des Content-Manager-Moduls](delivery/using/content-manager-resources-and-principles.md)
-      + [Anwendungsfälle: Verwenden des Content-Managements](delivery/using/use-case--creating-content-management.md)
+      + [Anwendungsbeispiel: Verwenden des Content-Managements](delivery/using/use-case--creating-content-management.md)
       + [Datenschemata](delivery/using/data-schemas.md)
       + [Formulare](delivery/using/input-forms.md)
       + [Formatierung](delivery/using/formatting.md)
@@ -281,7 +281,7 @@ ht-degree: 97%
    + [Partizipative Kampagnen erstellen](campaign/using/creating-a-collaborative-campaign.md)
    + [Kampagnenkit veröffentlichen](campaign/using/publishing-the-campaign-package.md)
    + [Auf Kampagnen zugreifen](campaign/using/accessing-campaigns.md)
-   + [Tracken einer Kampagne](campaign/using/tracking-a-campaign.md)
+   + [Verfolgen einer Kampagne](campaign/using/tracking-a-campaign.md)
    + [Anwendungsfälle](campaign/using/examples.md)
 + Reaktionsverwaltung (Response Manager) {#response-manager}
    + [Erste Schritte mit dem Response Manager](campaign/using/about-response-manager.md)
@@ -333,7 +333,7 @@ ht-degree: 97%
       + [Web-Anwendung konzipieren](web/using/designing-a-web-application.md)
       + [Anwendungsfälle: Erstellen von Übersichten](web/using/use-cases--creating-overviews.md)
       + [Web-Anwendung übersetzen](web/using/translating-a-web-application.md)
-      + [Besuche auf einer Web-Anwendung tracken](web/using/tracking-a-web-application.md)
+      + [Besuche in einer Web-Anwendung tracken](web/using/tracking-a-web-application.md)
       + [Opt-out vom Web-Anwendungs-Tracking](web/using/web-application-tracking-opt-out.md)
    + HTML-Inhalte bearbeiten {#editing-html-content}
       + [Erste Schritte mit dem HTML-Editor](web/using/about-campaign-html-editor.md)
@@ -484,7 +484,7 @@ ht-degree: 97%
          + [Laden des Versandinhalts](workflow/using/loading-delivery-content.md)
          + [Workflow für einen kanalübergreifenden Versand](workflow/using/cross-channel-delivery-workflow.md)
          + [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](workflow/using/email-enrichment-with-custom-date-fields.md)
-      + Monitoring    {#monitoring}
+      + Monitoring     {#monitoring}
          + [Senden eines Berichts an eine Liste](workflow/using/sending-a-report-to-a-list.md)
          + [Überwachen Ihrer Workflows](workflow/using/supervising-workflows.md)
          + [Senden personalisierter Warnungen an Benutzer](workflow/using/sending-personalized-alerts-to-operators.md)
