@@ -1,23 +1,23 @@
 ---
 product: campaign
-title: Layout
-description: Layout
+title: Formatierung
+description: Formatierung
 audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1458'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Layout{#formatting}
+# Formatierung{#formatting}
 
 ## JavaScript-Templates {#javascript-templates}
 
-Ein JavaScript-Template ist ein HTML- oder Text-Dokument, welches JavaScript-Code enthält. Es wird auf die gleiche Weise wie der E-Mail-Inhalt eines Versands erstellt.
+Ein JavaScript-Template ist ein HTML- oder Text-Dokument, das JavaScript-Code enthält. Es wird auf die gleiche Weise wie der E-Mail-Inhalt eines Versands erstellt.
 
 ### Identifizierung von JavaScript-Templates {#identification-of-a-javascript-template}
 
@@ -67,7 +67,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
-* **Inhalt.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
+* **content.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
 * **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
 * **content.chapter`[0]`.@name**: gibt den Namen des ersten Elements von `<chapter>` aus
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus
@@ -564,7 +564,7 @@ Im Formular wird das Bildauswahlfeld mit folgender Syntax deklariert:
 
 ## Datumsangaben {#date-display}
 
-Im XML-Eingabedokument werden die Daten im internen XML-Format gespeichert: **JJJJ/MM/TT HH:MM:SS** (Beispiel 2018/10/01 12:23:30).
+Im zugrunde liegenden XML-Quelldokument werden Datumsangaben im internen XML-Format gespeichert: **JJJJ/MM/TT HH:MM:SS** (z. B. 2018/10/01 12:23:30).
 
 Adobe Campaign bietet Formatierungsfunktionen für Datumsangaben in JavaScript-Templates und XSL-Stylesheets, die im Folgenden erläutert werden:
 
