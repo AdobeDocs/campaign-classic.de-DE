@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 5d48bb27-1884-47f1-acb7-dff5113565bc
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '892'
 ht-degree: 100%
 
@@ -107,7 +107,7 @@ Für jedes Formular können die bereitgestellten Antworten in Feldern oder Titel
    >
    >Im Gegensatz zu anderen Feldern, bei denen `<%=`-Zeichen durch Escape-Zeichen ersetzt werden, wird der HTML-Inhalt unverändert unter Verwendung der `<%==`-Syntax gespeichert.
 
-## Webformulare-Antworten speichern {#saving-web-forms-answers}
+## Web-Formular-Antworten speichern {#saving-web-forms-answers}
 
 Um die in Formularseiten erfassten Informationen zu speichern, müssen Sie in das Diagramm die Komponente &quot;Speicherung&quot; einfügen.
 
@@ -139,4 +139,4 @@ Sie können für die Abstimmung einen Suchordner und für neue Profile den Erste
 >
 >Die möglichen Vorgänge sind: **[!UICONTROL einfache Abstimmung]**, **[!UICONTROL Aktualisieren oder Einfügen]**, **[!UICONTROL Einfügen]**, **[!UICONTROL Aktualisieren]**, **[!UICONTROL Löschen]**.\
 >Der Standardordner des Operators entspricht dem ersten Ordner, für den er Schreibzugriff hat.\
->Siehe [diesen Abschnitt](../../platform/using/access-management.md).
+>Weitere Informationen finden Sie in [diesem Abschnitt](../../platform/using/access-management.md).
