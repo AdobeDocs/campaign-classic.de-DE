@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '293'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Kanalübergreifender Versand{#cross-channel-deliveries}
 
-Auf kanalübergreifende Sendungen kann im Tab **[!UICONTROL Sendungen]** von Kampagnen-Workflows zugegriffen werden.
+Auf kanalübergreifende Sendungen kann auf der Registerkarte **[!UICONTROL Sendungen]** von Kampagnen-Workflows zugegriffen werden.
 
 Die verfügbaren Kanäle sind:
 
@@ -27,19 +27,19 @@ Die verfügbaren Kanäle sind:
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 
-Wählen Sie die Vorlage aus, auf der der Versand basieren soll, und definieren Sie den Inhalt.
+Wählen Sie die Vorlage aus, auf der der Versand basieren soll, und definieren Sie ihre Inhalte.
 
-Die Zielgruppe des Versands kann mithilfe der verschiedenen dedizierten Aktivitäten vorab im Workflow definiert werden.
+Die Zielgruppe des Versands kann mithilfe der verschiedenen dedizierten Zielgruppenbestimmungs-Aktivitäten vorab im Workflow definiert werden.
 
-Im folgenden Beispiel wird ein Workflow erstellt, mit dem Abonnenten einer Push-Benachrichtigung eine E-Mail, eine SMS und eine Push-Benachrichtigung eine Woche später gesendet werden. Gehen Sie dazu wie folgt vor:
+Hier erstellen wir beispielsweise einen Workflow für den Versand einer E-Mail oder einer SMS an Abonnenten einer Push-Benachrichtigung sowie für eine Push-Benachrichtigung eine Woche später. Gehen Sie dazu wie folgt vor:
 
 1. Kampagne erstellen.
-1. Fügen Sie in Ihrer Kampagne dem Workflow im Tab **[!UICONTROL Zielbestimmungen und Workflows]** eine **[!UICONTROL Abfrage]** hinzu.
+1. Fügen Sie in Ihrer Kampagne dem Workflow im Tab **[!UICONTROL Zielgruppenbestimmungen und Workflows]** eine **[!UICONTROL Abfrage]** hinzu.
 1. Konfigurieren Sie Ihre Abfrage. In unserem Beispiel wählen wir als Zieldimension die Empfänger aus, die Push-Benachrichtigungen abonniert haben.
 
    >[!NOTE]
    >
-   >Verwenden Sie für Push-Benachrichtigungen die Zieldimension **Abonnierte Anwendungen** .
+   >Verwenden Sie für Push-Benachrichtigungen die Zieldimension **Abonnierte Anwendungen**.
 
    ![](assets/cross_channel_delivery_1.png)
 
