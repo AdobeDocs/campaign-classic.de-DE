@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-messages-on-mobiles
 exl-id: 1baaabbd-9fd7-4d9b-b78e-d2a559d7dddb
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Zunächst müssen Sie ein [!DNL LINE]-Konto erstellen, das Sie anschließend mit
 
 Näheres dazu, wie Sie ein [!DNL LINE]-Konto erstellen und konfigurieren, finden Sie in der [LINE-Entwicklerdokumentation](https://developers.line.me/).
 
-### Erstellen und Konfigurieren des LINE-Dienstes {#configure-line-service}
+### Erstellen und Konfigurieren des LINE-Service {#configure-line-service}
 
 So erstellen Sie einen [!DNL LINE]-Dienst:
 
