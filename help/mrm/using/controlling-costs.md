@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Kosten kontrollieren
-description: Erfahren Sie, wie Sie Kosten senken können
+description: Erfahren Sie, wie Sie Kosten kontrollieren können
 audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: 6765e307-915a-44d2-a486-85c64e8ec52e
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2539'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Zur Nutzung der Budget-Verwaltung mit MRM sind folgende Etappen umzusetzen:
 
 1. Festlegung des Budgets;
 
-   Weitere Informationen hierzu finden Sie unter [Erstellen eines Budgets](#creating-a-budget).
+   Weitere Informationen hierzu finden Sie unter [Erstellen von Budgets](#creating-a-budget).
 
 1. Bestimmung des Kostenberechnungsmodus;
 
@@ -53,7 +53,7 @@ Budgets werden im Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]** des Navi
 
 * Zugeteilten Betrag eingeben
 
-   Geben Sie den zugeteilten Betrag im entsprechenden Feld ein. Die übrigen Beträge werden automatisch ausgefüllt. Siehe [Berechnete Beträge](#calculating-amounts).
+   Geben Sie den zugeteilten Betrag im entsprechenden Feld ein. Die übrigen Beträge werden automatisch ausgefüllt. Siehe [Beträge berechnen](#calculating-amounts).
 
 * Gültigkeitszeitraum bestimmen
 
@@ -71,7 +71,7 @@ Budgets werden im Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]** des Navi
 >
 >Weitere Informationen hierzu finden Sie unter [Zuordnung von Budgets untereinander](#linking-a-budget-to-another).
 
-### Betragsberechnung {#calculating-amounts}
+### Beträge berechnen {#calculating-amounts}
 
 Der Anfangsbestand eines Budgets verringert sich im Zuge der ihm zugeordneten Kampagnen, Sendungen oder Aufgaben um die anfallenden Kosten, sobald diese geplant oder realisiert wurden. Der Status der Beträge (Geplant, Reserviert, Eingesetzt, Verbraucht, Fakturiert) hängt vom Kostentyp und dem Verbindlichkeitsniveau ab, die in der Kamapgne, der Sendung oder der Aufgabe festgelegt wurden.
 
@@ -219,7 +219,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 * Aufgabe mit Fixkosten
 * Aufgabe mit Tageskosten
 
-#### 1. Schritt - Budget erstellen {#step-1---creating-the-budget}
+#### Schritt 1: Budget erstellen {#step-1---creating-the-budget}
 
 1. Erstellen Sie ein neues Budget über den Knoten **[!UICONTROL Kampagnenverwaltung > Budgets]**.
 
@@ -227,9 +227,9 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
 ![](assets/s_user_cost_mgmt_sample_1.png)
 
-#### 2. Schritt - Dienstleister konfigurieren und Kostenstrukturen festlegen {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
+#### Schritt 2: Dienstleister konfigurieren und Kostenstrukturen festlegen {#step-2---configuring-the-service-provider-and-defining-the-cost-structures}
 
-1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister.]** Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
+1. Erstellen Sie einen Dienstleister sowie eine Dienstleistungsvorlage mit Kostenstruktur über den Knoten **[!UICONTROL Administration > Kampagnen > Dienstleister]**. Weitere Informationen hierzu finden Sie unter [Erstellen eines Dienstleisters und seiner Kostenstellen](../../campaign/using/providers--stocks-and-budgets.md#creating-a-service-provider-and-its-cost-categories).
 
    Erstellen Sie für die Briefpost-Sendungen **[!UICONTROL Briefumschläge]**-Kostenstellen (Typen 114x229 und 162x229), **[!UICONTROL Porto und Versand]** und **[!UICONTROL Farbdruck]** (Typen A3 und A4). Erstellen Sie dann die folgenden Kostenstrukturen:
 
@@ -249,7 +249,7 @@ Im Folgenden wird eine Kampagne mit folgenden Elementen erstellt:
 
    ![](assets/s_user_cost_mgmt_sample_7.png)
 
-#### 3. Schritt - Anrechnung des Budgets in die Kampagne {#step-3---charging-the-budget-in-the-campaign}
+#### Schritt 3: Anfallende Kosten auf das Kampagnenbudget anrechnen {#step-3---charging-the-budget-in-the-campaign}
 
 1. Erstellen Sie eine Kampagne und wählen Sie das im 1. Schritt erstellte Budget aus.
 
@@ -297,9 +297,9 @@ Auf Versandniveau werden die berechneten Kosten mit folgenden Daten aktualisiert
 
 Beim Bearbeiten der berechneten Kosten können Sie die Kostenverteilung sowie Status und Datum der Kostenberechnung überprüfen.
 
-#### Schritt 5: Erstellen von Aufgaben {#step-5---creating-tasks}
+#### Schritt 5: Aufgaben erstellen {#step-5---creating-tasks}
 
-Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen zuvor erstellt wurden (siehe [Schritt 2 - Dienstleister konfigurieren und Kostenstrukturen](#step-2---configuring-the-service-provider-and-defining-the-cost-structures) definieren). Klicken Sie dazu im Kampagnen-Dashboard auf die Schaltfläche **[!UICONTROL Aufgabe hinzufügen]**. Benennen Sie die Aufgabe und klicken Sie auf **[!UICONTROL Speichern]**.
+Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstrukturen zuvor erstellt wurden (siehe [Schritt 2: Dienstleister konfigurieren und Kostenstrukturen festlegen](#step-2---configuring-the-service-provider-and-defining-the-cost-structures)). Klicken Sie dazu im Kampagnen-Dashboard auf die Schaltfläche **[!UICONTROL Aufgabe hinzufügen]**. Benennen Sie die Aufgabe und klicken Sie auf **[!UICONTROL Speichern]**.
 
 1. Konfigurieren Sie sie wie folgt:
 
@@ -323,7 +323,7 @@ Zu dieser Kampagne fügen wir die beiden Aufgaben hinzu, für die die Kostenstru
 
    ![](assets/s_user_cost_mgmt_sample_17.png)
 
-#### 6. Schritt - Status des Kampagnenbudgets aktualisieren {#step-6---update-the-campaign-budget-status}
+#### Schritt 6: Status des Kampagnenbudgets aktualisieren {#step-6---update-the-campaign-budget-status}
 
 Der Status eines konfigurierten Budgets kann aktualisiert werden: Setzen Sie hierzu den Status auf **[!UICONTROL Angegeben]**. Im Feld der berechneten Kosten der Kampagne wird daraufhin die Summe der für den Versand und die Aufgaben der Kampagne berechneten Kosten angezeigt.
 
@@ -351,7 +351,7 @@ Geben Sie die Nummer der Lagerergänzung, den entsprechenden Dienstleister sowie
 
 ![](assets/s_user_cost_create_order.png)
 
-### Rechnungen {#issuing-and-tracking-invoices}
+### Rechnungen erstellen und verfolgen {#issuing-and-tracking-invoices}
 
 Sie können für jeden Dienstleister Rechnungen speichern und ihren Status sowie das betroffene Budget angeben.
 
