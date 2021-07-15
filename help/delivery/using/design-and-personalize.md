@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 5bf727d2-83b1-4a99-be25-041eee8d234c
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1289'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Achten Sie besonders auf den [Betreff](defining-the-email-content.md#message-con
 
 ### Mirrorseite
 
-Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist am Anfang der E-Mail – [mehr dazu](sending-messages.md#generating-the-mirror-page)
+Beziehen Sie stets einen Link zur Mirrorseite ein. Die bevorzugte Position ist am Anfang der E-Mail – [Weitere Informationen](sending-messages.md#generating-the-mirror-page)
 
 ### Abmelde-Link
 
@@ -108,7 +108,7 @@ Weiterführende Informationen finden Sie [in diesem Abschnitt](sms-set-up.md#abo
 
 Um häufige Formatierungsfehler zu vermeiden, prüfen Sie folgende Elemente:
 
-* Richtige **Datumsformatierung**: Adobe Campaign bietet Formatierungsfunktionen für Datumsangaben in JavaScript-Vorlagen und XSL-Stylesheets – [mehr dazu](formatting.md#date-display)
+* Richtige **Datumsformatierung**: Adobe Campaign bietet Formatierungsfunktionen für Datumsangaben in JavaScript-Vorlagen und XSL-Stylesheets – [Weitere Informationen](formatting.md#date-display)
 
 * Verwendung **autorisierter Zeichen** in E-Mails: Eine Liste gültiger Zeichen für E-Mail-Adressen finden Sie in der Option „XtkEmail_Characters“. Informationen zum Zugriff auf Campaign-Optionen finden Sie [in diesem Abschnitt](../../installation/using/configuring-campaign-options.md). Um Sonderzeichen richtig zu handhaben, muss Adobe Campaign in Unicode installiert sein.
 
@@ -146,9 +146,9 @@ Verwenden Sie responsive, in der Größe veränderbare Bilder. Beachten Sie, das
 
 Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und öffentlichen Ressourcen verwendeten Bilder, die mit Kampagnen verknüpft sind, auf einem extern zugänglichen Server gespeichert sein.
 
-* Sie können überprüfen, ob durch die Instanzenkonfiguration die Verwaltung öffentlicher Ressourcen ermöglicht wird – [mehr dazu](../../installation/using/deploying-an-instance.md#managing-public-resources)
+* Sie können überprüfen, ob durch die Instanzenkonfiguration die Verwaltung öffentlicher Ressourcen ermöglicht wird – [Weitere Informationen](../../installation/using/deploying-an-instance.md#managing-public-resources)
 
-* Sie können eine HTML-Seite mit Bildern über den Versand-Assistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen – [mehr dazu](defining-the-email-content.md#adding-images)
+* Sie können eine HTML-Seite mit Bildern über den Versand-Assistenten importieren oder Bilder direkt mithilfe des HTML-Editors über das **[!UICONTROL Bildsymbol]** einfügen – [Weitere Informationen](defining-the-email-content.md#adding-images)
 
 * Wenn keine Bilder dargestellt werden, prüfen Sie, ob die Bilder auf dem Server verfügbar sind. Klicken Sie dazu in Ihrem Versand auf den Tab „Quelle“. Suchen Sie Ihre Bilder und kopieren Sie die URL eines jeden Bildes in einen Web-Browser. Wenn die Bilder nicht dargestellt werden, kontaktieren Sie Ihren IT-Administrator oder den Drittanbieter, der Ihnen den Versandinhalt bereitgestellt hat.
 
@@ -156,6 +156,6 @@ Damit Empfänger auf die Bilder zugreifen können, müssen die in E-Mails und ö
 
 Adobe empfiehlt eine Vorschau Ihrer Nachricht, um die Personalisierung zu überprüfen und festzustellen, wie Ihre Empfänger den Versand sehen werden.
 
-* Im Versand-Assistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt – [mehr dazu](defining-the-email-content.md#message-content)
+* Im Versand-Assistenten können Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** das Rendering der einzelnen Inhalte für einen Empfänger anzeigen. Die Personalisierungsfelder und bedingten Inhaltselemente werden durch die entsprechenden Informationen für das ausgewählte Profil ersetzt – [Weitere Informationen](defining-the-email-content.md#message-content)
 
-* Die Vorschauerzeugung löst automatisch die Durchführung einer Anti-Spam-Prüfung aus. Überprüfen Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** die Spam-Bewertung von [SpamAssassin](spamassassin.md). Klicken Sie auf **[!UICONTROL Details...]**, um mehr über die Warnung zu erfahren. Stellen Sie zuvor sicher, dass SpamAssassin auf dem Adobe Campaign-Anwendungs-Server ordnungsgemäß installiert und konfiguriert ist – [mehr dazu](../../installation/using/configuring-spamassassin.md)
+* Die Vorschauerzeugung löst automatisch die Durchführung einer Anti-Spam-Prüfung aus. Überprüfen Sie auf der Unterregisterkarte **[!UICONTROL Vorschau]** die Spam-Bewertung von [SpamAssassin](spamassassin.md). Klicken Sie auf **[!UICONTROL Details...]**, um mehr über die Warnung zu erfahren. Stellen Sie zuvor sicher, dass SpamAssassin auf dem Adobe Campaign-Anwendungs-Server ordnungsgemäß installiert und konfiguriert ist – [Weitere Informationen](../../installation/using/configuring-spamassassin.md)
