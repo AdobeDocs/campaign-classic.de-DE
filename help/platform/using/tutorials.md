@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: e612a4e7-f4ef-4db4-afab-5544b73430d3
 source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Unsere intuitiven Handbücher bieten Ihnen einen einfachen Einstieg in Adobe Cam
 
 * [Bearbeiten von E-Mail-Inhalt mit Adobe Experience Manager](https://helpx.adobe.com/de/campaign/kb/acc-aem.html): Machen Sie Sie sich mit den Grundlagen zur Integration zwischen Adobe Campaign und Experience Manager vertraut.
 * [Datenschutzverwaltung](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html): Hier erfahren Sie, wie Ihnen Adobe Campaign Classic hilft, die Datenschutzbestimmungen bei der Nutzung unseres Dienstes gesetzeskonform umzusetzen.
-* [Integrieren dynamischer Inhalte in einer E-Mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
+* [Integrieren dynamischer Inhalte in einer E-Mail](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/adobe-target/inserting-a-dynamic-image.html?lang=de): Machen Sie sich mit den Grundlagen zur Integration zwischen Campaign Classic und Target Standard vertraut.
 * [Verwalten der Zustellbarkeit](../../delivery/using/about-deliverability.md): In diesem Dokument erfahren Sie Begriffe und Best Practices im Zusammenhang mit der Zustellbarkeit sowie Informationen zu den Werkzeugen zur Versandoptimierung von Adobe Campaign Classic.
 * [Best Practices beim Versand](../../delivery/using/delivery-best-practices.md): Hier erfahren Sie über Best Practices in Bezug auf das Nachrichtendesign und den Versand mit Adobe Campaign Classic.
 * [Build-Aktualisierung durchführen](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html): In diesem Dokument erfahren Sie die wichtigsten Schritte und Best Practices zur Durchführung einer Build-Aktualisierung bei Campaign Classic.
@@ -41,7 +41,7 @@ Zusätzlich zur Produktdokumentation stehen Ihnen nachfolgend verschiedene Resso
 
 ### Anleitungsvideos
 
-Diese Videos bringen Ihnen die wichtigsten Funktionen von Adobe Campaign näher. [Mehr dazu](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de)
+Diese Videos bringen Ihnen die wichtigsten Funktionen von Adobe Campaign näher. [Weitere Informationen](https://experienceleague.adobe.com/docs/campaign-classic-learn/tutorials/overview.html?lang=de)
 
 ### Schulungssitzungen und Videos
 
