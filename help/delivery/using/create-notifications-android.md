@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Erstellen von Benachrichtigungen für Android{#create-notificaations-android}
 
-Verwenden Sie Adobe Campaign, um Push-Benachrichtigungen auf Android-Geräten zu senden. Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
+Verwenden Sie Adobe Campaign, um Push-Benachrichtigungen an Android-Geräte zu senden. Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
 
 Erstellen Sie zunächst einen neuen Versand:
 
@@ -47,7 +47,7 @@ Weitere Informationen zu Firebase Cloud Messaging-Nachrichtentypen finden Sie in
 
 1. Wählen Sie im Fenster **[!UICONTROL Zieltyp]****** die Option &quot;Abonnenten einer Android-Mobile-App&quot; aus und klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die Anwendung aus und wählen Sie danach **[!UICONTROL Beenden]**.
+1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Dienst]** den zuvor erstellten Dienst und dann die Anwendung aus. Klicken Sie anschließend auf **[!UICONTROL Beenden]**.
 Die **[!UICONTROL Anwendungsvariablen]** werden je nachdem, was bei den Konfigurationsschritten hinzugefügt wurde, automatisch hinzugefügt.
 
    ![](assets/nmac_android_6.png)
@@ -66,7 +66,7 @@ Auf den Android-Mobilgeräten der Abonnenten sollten das Bild und die Webseite i
 
 ![](assets/nmac_android_4.png)
 
-## Benachrichtigungsinhalt erstellen {#creating-notification-message}
+## Erstellen von Benachrichtigungsinhalten {#creating-notification-message}
 
 >[!NOTE]
 >
