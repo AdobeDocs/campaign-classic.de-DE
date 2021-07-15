@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: dbdfc04a-691b-470d-b96d-4c8a9531327d
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '137'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ Achten Sie vor dem Versand von E-Mails auf Folgendes:
 
 * Empfängerprofile müssen zumindest eine E-Mail-Adresse enthalten.
 * Erfahren Sie mehr über [Best Practices beim Versand](delivery-best-practices.md) mit Adobe Campaign.
-* Lesen Sie diese Abschnitte, um mehr über die Zustellbarkeit zu erfahren: [Verwaltung der Zustellbarkeit in Campaign](about-deliverability.md) und [Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
+* Lesen Sie diese Abschnitte, um mehr über die Zustellbarkeit zu erfahren: [Verwaltung der Zustellbarkeit in Campaign](about-deliverability.md) und [Anleitung für Best Practices für die Zustellbarkeit](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/introduction.html?lang=de).
 
 Die wichtigsten Schritte zum Senden einer E-Mail sind:
 
 * [E-Mail-Versand erstellen](creating-an-email-delivery.md)
-* [Bestimmen der Zielpopulation](steps-defining-the-target-population.md)
+* [Zielpopulation bestimmen](steps-defining-the-target-population.md)
 * [E-Mail-Inhalte erstellen](defining-the-email-content.md)
 * [E-Mail senden](sending-messages.md)
 * [Versand überwachen](about-delivery-monitoring.md)
