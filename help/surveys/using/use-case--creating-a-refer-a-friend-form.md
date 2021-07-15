@@ -1,15 +1,15 @@
 ---
 product: campaign
-title: Erstellen einer Freunde-Werben-Umfrage
-description: Erfahren Sie, wie Sie ein Freunde-Werben-Formular erstellen
+title: Erstellen einer Freundschaftswerbungsumfrage
+description: Lernen Sie die Schritte zum Erstellen eines Freundschaftswerbungsformulars kennen
 audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: bd94c41a-813a-4ddb-a2bd-c3deab022482
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '623'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
