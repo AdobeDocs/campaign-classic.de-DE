@@ -9,9 +9,9 @@ internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: 934964b31c4f8f869253759eaf49961fa5589bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 68%
 
 >[!CAUTION]
 >
->Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Der ältere OAuth-Authentifizierungsmodus für Campaign wird am 30. November 2021 eingestellt. [Mehr dazu](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
+>Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Der ältere OAuth-Authentifizierungsmodus für Campaign wird am 30. November 2021 eingestellt. [Weitere Informationen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
 >Beachten Sie, dass während dieser Umstellung auf [!DNL Adobe I/O] einige eingehende Trigger verloren gehen können.
 
@@ -29,9 +29,8 @@ Diese Integration gilt nur ab **Campaign Classic-Version 20.3, 20.2.4, 19.1.8 u
 
 Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vorhanden ist:
 
-* eine gültige **Organisationskennung**: Die IMS-Organisationskennung (Identity Management System) ist die eindeutige Kennung innerhalb von Adobe Experience Cloud, die z. B. für den Besucher-ID-Dienst und die einfache Anmeldung (Single Sign-on, SSO) verwendet wird, [Mehr dazu](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de)
-* ein **Entwicklerzugriff** auf Ihr Unternehmen. Der Systemadministrator der IMS-Organisation muss den **Entwickler zu einem einzelnen Produktprofil hinzufügen** folgen
-Anleitung [auf dieser Seite](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html), um Entwicklerzugriff für das `Analytics - {tenantID}`-Produktprofil des Adobe Analytics-Produkts zu gewähren, das Triggern zugeordnet ist.
+* eine gültige **Organisationskennung**: Die IMS-Organisationskennung (Identity Management System) ist die eindeutige Kennung innerhalb von Adobe Experience Cloud, die z. B. für den Besucher-ID-Dienst und die einfache Anmeldung (Single Sign-on, SSO) verwendet wird, [Weitere Informationen](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=de)
+* ein **Entwicklerzugriff** auf Ihr Unternehmen. Der Systemadministrator der IMS-Organisation muss der Prozedur **Entwickler zu einem einzelnen Produktprofil hinzufügen** folgen (beschrieben [auf dieser Seite](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html)), um Entwicklerzugriff für das `Analytics - {tenantID}`-Produktprofil des Adobe Analytics-Produkts zu gewähren, das mit Triggers verbunden ist.
 
 ## Schritt 1: Erstellen/Aktualisieren eines Adobe I/O-Projekts {#creating-adobe-io-project}
 
@@ -41,13 +40,13 @@ Anleitung [auf dieser Seite](https://helpx.adobe.com/de/enterprise/admin-guide.h
    >
    > Stellen Sie sicher, dass Sie beim richtigen Portal der Organisation angemeldet sind.
 
-1. Extrahieren Sie die vorhandene Integrations-Client-ID (Client-ID) aus der Konfigurationsdatei der Instanz ims/authIMSTAClientId. Ist das Attribut nicht vorhanden oder leer, bedeutet dies, dass die Client-Kennung nicht konfiguriert ist.
+1. Entnehmen Sie die vorhandene Integrations-Client-Kennung (Client-ID) aus der Konfigurationsdatei &quot;ims/authIMSTAClientId&quot; der Instanz. Ist das Attribut nicht vorhanden oder leer, bedeutet dies, dass die Client-Kennung nicht konfiguriert ist.
 
    >[!NOTE]
    >
    >Wenn die Client-Kennung leer ist, können Sie in Adobe I/O direkt ein **[!UICONTROL neues Projekt erstellen]**.
 
-1. Identifizieren Sie das vorhandene Projekt mit der gefundenen Client-ID. Suchen Sie nach vorhandenen Projekten mit derselben Client-Kennung wie im vorherigen Schritt extrahiert.
+1. Identifizieren Sie das vorhandene Projekt mit der gefundenen Client-ID. Suchen Sie nach bestehenden Projekten, die dieselbe Client-Kennung aufweisen wie die im vorherigen Schritt entnommene.
 
    ![](assets/do-not-localize/adobe_io_8.png)
 
@@ -100,7 +99,7 @@ Anleitung [auf dieser Seite](https://helpx.adobe.com/de/enterprise/admin-guide.h
 
 >[!NOTE]
 >
->Dieser Schritt ist nicht erforderlich, wenn Ihre Client-Kennung in [Schritt 1 nicht leer war: Erstellen/aktualisieren Sie Adobe I/O Project](#creating-adobe-io-project).
+>Dieser Schritt ist nicht erforderlich, wenn Ihre Client-Kennung in [Schritt 1: Erstellen/aktualisieren eines Adobe I/O-Projekts](#creating-adobe-io-project) nicht leer war.
 
 Der private Schlüssel sollte im Base64-UTF-8-Format kodiert werden. Gehen Sie dabei folgendermaßen vor:
 
@@ -112,9 +111,9 @@ Der private Schlüssel sollte im Base64-UTF-8-Format kodiert werden. Gehen Sie d
    >
    >Manchmal werden beim Kopieren/Einfügen des privaten Schlüssels automatisch zusätzliche Zeilen hinzugefügt. Vergessen Sie nicht, diese zu entfernen, bevor Sie Ihren privaten Schlüssel codieren.
 
-1. Kopieren Sie den Inhalt aus der Datei `private.key.base64`.
+1. Kopieren Sie die Inhalte aus der Datei `private.key.base64`.
 
-1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist, und fügen Sie die Projektanmeldedaten in Adobe Campaign hinzu, indem Sie den folgenden Befehl als `neolane` Benutzer ausführen. Dadurch werden die Anmeldedaten für **[!UICONTROL Technisches Konto]** in die Konfigurationsdatei der Instanz eingefügt.
+1. Melden Sie sich über SSH bei jedem Container an, in dem die Adobe Campaign-Instanz installiert ist, und fügen Sie die Projektanmeldeinformationen in Adobe Campaign hinzu, indem Sie den folgenden Befehl als `neolane`-Benutzer ausführen. Dadurch werden die Anmeldeinformationen für das **[!UICONTROL Technische Konto]** in die Konfigurationsdatei der Instanz eingefügt.
 
    ```
    nlserver config -instance:<instance name> -setimsjwtauth:Organization_Id/Client_Id/Technical_Account_ID/<Client_Secret>/<Base64_encoded_Private_Key>
@@ -124,7 +123,7 @@ Der private Schlüssel sollte im Base64-UTF-8-Format kodiert werden. Gehen Sie d
 
 >[!NOTE]
 >
->Dieser Schritt ist nicht erforderlich, wenn Ihre Client-Kennung in [Schritt 1 nicht leer war: Erstellen/aktualisieren Sie Adobe I/O Project](#creating-adobe-io-project).
+>Dieser Schritt ist nicht erforderlich, wenn Ihre Client-Kennung in [Schritt 1: Erstellen/aktualisieren eines Adobe I/O-Projekts](#creating-adobe-io-project) nicht leer war.
 
 Um das [!DNL pipelined]-Tag zu aktualisieren, müssen Sie den Authentifizierungstyp in der Konfigurationsdatei **config-&lt; Name der Instanz >.xml** wie folgt entsprechend dem Adobe I/O-Projekt aktualisieren:
 
