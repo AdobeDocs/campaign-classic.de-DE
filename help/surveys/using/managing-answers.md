@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: online-surveys
 exl-id: 0b5dc602-e16f-4bf1-bd8f-352e0bc78996
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -99,11 +99,11 @@ Die gegebenen Antworten können in allen Formularen in Feldern oder Titeln verwe
 
 ### Speichereinstellungen {#storage-settings}
 
-Sie können Antworten auf Umfragen im XML-Format archivieren. Auf diese Weise können Sie eine Rohkopie der gesammelten Antworten speichern, was bei übermäßiger Standardisierung der Daten in einer Auflistung nützlich sein kann. [Weitere Informationen](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
+Sie können Antworten auf Umfragen im XML-Format archivieren. Auf diese Weise können Sie eine Rohkopie der gesammelten Antworten speichern, was bei übermäßiger Standardisierung der Daten in einer Einzelauflistung nützlich sein kann. [Weitere Informationen](../../surveys/using/publish--track-and-use-collected-data.md#standardizing-data)
 
 >[!CAUTION]
 >
->Die Archivierung von Rohantworten wirkt sich auf den erforderlichen Speicherplatz aus. Verwenden Sie diese Option mit Vorsicht.
+>Die Archivierung von Rohantworten wirkt sich auf den erforderlichen Speicherplatz aus. Verwenden Sie diese Option mit Bedacht.
 
 Gehen Sie dazu wie folgt vor:
 
