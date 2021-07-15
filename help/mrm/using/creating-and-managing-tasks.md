@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3899'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ Die Aufgaben können in der Aufgabenliste und über das Dashboard einer Kampagne
 
 Aufgaben werden Kampagnen zugeordnet und können von anderen Aufgaben abhängig sein. Jede Aufgabe weist einen Status, eine Priorität, einen geplanten Zeitaufwand sowie eventuell verbundene Kosten auf.
 
-Alle Aufgaben sind in einer Liste gruppiert, auf die über den Tab **Kampagnen** zugegriffen werden kann. Weitere Informationen hierzu finden Sie unter [Zugriffsaufgaben](#accessing-tasks).
+Alle Aufgaben sind in einer Liste gruppiert, auf die über den Tab **Kampagnen** zugegriffen werden kann. Weitere Informationen hierzu finden Sie unter [Zugriff auf Aufgaben](#accessing-tasks).
 
 Sie können auch im Kalender des Programms, dem sie angehören, angezeigt werden.
 
 ![](assets/d_ncs_user_tasks_in_planning.png)
 
-## Auf Aufgaben zugreifen {#accessing-tasks}
+## Zugriff auf Aufgaben {#accessing-tasks}
 
 ### Aufgaben anzeigen {#displaying-tasks}
 
@@ -133,7 +133,7 @@ Der Aufgabenverantwortliche kann die Validierung selbst vornehmen und zwar auch,
 
 ### Referenzierte Dokumente {#documents-referenced}
 
-Es ist möglich, einer Aufgabe Dokumente und Marketing-Ressourcen hinzuzufügen (weitere Informationen hierzu finden Sie unter [Marketing-Ressourcen verwalten](../../mrm/using/managing-marketing-resources.md)). Öffnen Sie dazu die Aufgabe und klicken Sie in der Symbolleiste der Aufgabe auf das Symbol **[!UICONTROL Dokumente]**.
+Es ist möglich, einer Aufgabe Dokumente und Marketing-Ressourcen hinzuzufügen (weitere Informationen hierzu finden Sie unter [Verwalten von Marketing-Ressourcen](../../mrm/using/managing-marketing-resources.md)). Öffnen Sie dazu die Aufgabe und klicken Sie in der Symbolleiste der Aufgabe auf das Symbol **[!UICONTROL Dokumente]**.
 
 Klicken Sie auf **[!UICONTROL Hinzufügen]** und wählen Sie das Dokument aus, das Sie Ihrer Aufgabe hinzufügen möchten. Gehen Sie für die Marketing-Ressourcen genauso vor.
 
@@ -199,7 +199,7 @@ Wählen Sie die im Zusammenhang mit der Aufgabe anfallenden Kostenstellen aus. G
 
 >[!NOTE]
 >
->Die Methode zur Verwaltung von Budgets und Kosten finden Sie unter [Kontrollkosten](../../mrm/using/controlling-costs.md).
+>Die Verwaltung und Kontrolle von Budgets und Kosten wird im Abschnitt [Kosten kontrollieren](../../mrm/using/controlling-costs.md) beschrieben.
 
 Jeder ausgewählte Dienstleister wird im Aufgaben-Dashboard angezeigt.
 
@@ -245,7 +245,7 @@ Um eine direkt mit einem Programm verknüpfte Aufgabe zu erstellen, gehen Sie wi
 
 ### Verfügbarkeit der Benutzer {#operator-availability}
 
-Im Dashboard zeigt ein Symbol neben dem Namen des Benutzers an, dass dieser zu einem Zeitpunkt während der Aufgabenperiode bereits für eine andere Aufgabe oder ein Event eingesetzt ist. (Der für eine Aufgabe verantwortliche oder an ihr beteiligte Benutzer erscheint im Feld **[!UICONTROL Zugeordneter Benutzer]** oder im Fenster **[!UICONTROL Ressourcen]** der Aufgabe).
+Im Dashboard zeigt ein Symbol neben dem Namen des Benutzers an, dass dieser zu einem Zeitpunkt während der Aufgabenperiode bereits für eine andere Aufgabe oder ein Ereignis eingesetzt ist. (Der für eine Aufgabe verantwortliche oder an ihr beteiligte Benutzer erscheint im Feld **[!UICONTROL Zugeordneter Benutzer]** oder im Fenster **[!UICONTROL Ressourcen]** der Aufgabe).
 
 ![](assets/mrm_task_alert_operator_busy.png)
 
@@ -273,7 +273,7 @@ Folgende Arten von Aufgaben können geplant werden:
 >[!NOTE]
 >
 >**[!UICONTROL Kontrollaufgaben]** und **[!UICONTROL Gruppierungsaufgaben]** können **nur** über das Kampagnen-Dashboard erstellt werden.\
->Sie werden in der Aufgabenübersicht des ihnen zugeordneten Benutzers angezeigt. Siehe [Zugriffsaufgaben](#accessing-tasks).
+>Sie werden in der Aufgabenübersicht des ihnen zugeordneten Benutzers angezeigt. Siehe [Zugriff auf Aufgaben](#accessing-tasks).
 
 ### Kontrollaufgaben {#control-tasks}
 
@@ -347,9 +347,9 @@ Eine bereits erstellte Aufgabe kann einer Gruppierungsaufgabe über das Feld **[
 
 ### Benachrichtigungsaufgaben {#notification-task}
 
-Benachrichtigungsaufgaben ermöglichen es, den Versand von E-Mails (an Benutzer, Benutzergruppen, Dienstleister usw.) zu konfigurieren. Es können zum Beispiel E-Mails konfiguriert werden, die eine Person an den bevorstehenden Abschluss einer Kampagne erinnert. Auch Dokumente können vor dem Beginn einer Kampagne zu ihrer Vorbereitung durch die Benutzer versandt werden. Auf diese Weise wird der Informationsaustausch in der entsprechenden Kampagne oder im Programm protokolliert und Sie erhalten eine vollständige Übersicht über ausgeführte Aktionen.
+Benachrichtigungsaufgaben ermöglichen es, den Versand von E-Mails (an Benutzer, Benutzergruppen, Dienstleister usw.) zu konfigurieren. Es können zum Beispiel E-Mails konfiguriert werden, die eine Person an den bevorstehenden Abschluss einer Kampagne erinnern. Auch Dokumente können vor dem Beginn einer Kampagne zu ihrer Vorbereitung durch die Benutzer versandt werden. Auf diese Weise wird der Informationsaustausch in der entsprechenden Kampagne oder im Programm protokolliert und Sie erhalten eine vollständige Übersicht über ausgeführte Aktionen.
 
-#### Workflow-Lebenszyklen {#life-cycle}
+#### Lebenszyklus {#life-cycle}
 
 Benachrichtigungsaufgaben erfordern keine Validierung. Ihr Zyklus ist daher einfacher als der einer Standardaufgabe:
 
@@ -376,7 +376,7 @@ Bei der Erstellung müssen folgende Elemente der Aufgabe erfasst werden:
 
 Es besteht die Möglichkeit, der Aufgabe und der Benachrichtigungs-E-Mail eine Datei anzuhängen. Klicken Sie hierzu auf das Symbol **[!UICONTROL Dokumente]** in der oberen Symbolleiste.
 
-## Workflow-Lebenszyklen {#life-cycle-1}
+## Lebenszyklus {#life-cycle-1}
 
 ### Relationen zwischen Aufgaben {#links-between-tasks}
 
