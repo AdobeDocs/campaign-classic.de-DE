@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 827b6575-7206-4dfc-b2c6-b95a6d5730b1
 source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2464'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Auf einer Formularseite können fünf Typen von Textfeldern eingefügt werden:
 
    >[!CAUTION]
    >
-   >Mehrzeilige Textfelder sind spezifische Felder, die Zeilenumbrüche enthalten können. Ihr Speicherplatz muss mit einem Feld verknüpft sein, das einem XML-Element zugeordnet ist, nicht mit einem XML-Attribut.
+   >Mehrzeilige Textfelder sind spezifische Felder, die Zeilenumbrüche enthalten können. Ihr Speicherplatz muss mit einem Feld verknüpft sein, das einem XML-Element zugeordnet ist, nicht einem XML-Attribut.
 
 * **Angereicherter mehrzeiliger Text**: ermöglicht dem Benutzer die Eingabe von Text mit einem Layout, das im HTML-Format gespeichert wird.
 
@@ -172,7 +172,7 @@ Wenn das Speicherfeld (oder die Variable) boolesch ist, wird der zuzuweisende We
 
 ![](assets/s_ncs_admin_survey_check_box_enum.png)
 
-## Beispiel: Wert einem Feld zuweisen, wenn ein Kästchen markiert wird {#example--assign-a-value-to-a-field-if-a-box-is-checked}
+## Beispiel: Wert einem Feld zuweisen, wenn eine Checkbox markiert wird {#example--assign-a-value-to-a-field-if-a-box-is-checked}
 
 Eine Checkbox soll in ein Formular eingefügt werden, damit wie unten gezeigt ein Wartungsantrag gesendet wird.
 
@@ -216,8 +216,8 @@ Fügen Sie so viele Radiobuttons hinzu wie Titel vorhanden sind. Der Vorteil die
 
 >[!NOTE]
 >
->Sie können die Mehrfachauswahl in einer Webanwendung nicht aktivieren.
->Es ist jedoch möglich, ein Feld vom Typ **[!UICONTROL Multiple Choice]** in eine Webanwendung einzufügen. Dies ermöglicht dem Benutzer jedoch nicht, mehrere Werte auszuwählen.
+>Sie können die Mehrfachauswahl in einer Web-Anwendung nicht aktivieren.
+>Es ist jedoch möglich, ein Feld vom Typ **[!UICONTROL Multiple Choice]** in eine Web-Anwendung einzufügen. Dies ermöglicht dem Benutzer jedoch nicht, mehrere Werte auszuwählen.
 
 ## Tabellen hinzufügen {#adding-grids}
 
