@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
 source-git-commit: cf102a5e669ffe136e6ec2429343725ec6c3722e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Die Liste der optionalen Parameter ist nachfolgend aufgeführt:
 | retryPeriodSec | Verzögerung zwischen weiteren Zustellversuchen im Falle von Verarbeitungsfehlern. <br>Der Standardwert ist 30 (Sekunden). |
 | retryValiditySec | Verwerfen der Nachricht, wenn sie nach diesem Zeitraum nicht erfolgreich verarbeitet wurde (zu viele weitere Zustellversuche). <br>Der Standardwert ist 300 (Sekunden). |
 
-### Automatischer Start von Pipelined-Prozess {#pipelined-process-autostart}
+### Automatischer Start des Pipelined-Prozesses {#pipelined-process-autostart}
 
 Der Pipelined-Prozess muss automatisch gestartet werden.
 
@@ -154,7 +154,7 @@ Legen Sie dazu das Element &lt; pipelined > in der Konfigurationsdatei auf aut
  <pipelined autoStart="true" ... "/>
 ```
 
-### Neustart von Pipelined-Prozess {#pipelined-process-restart}
+### Neustart des Pipelined-Prozesses {#pipelined-process-restart}
 
 Ein Neustart ist erforderlich, damit die Änderungen wirksam werden:
 
