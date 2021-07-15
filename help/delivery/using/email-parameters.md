@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 1bb36e71-9f1a-4553-b266-eca3f48688e2
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '966'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Im unteren Bereich des Fensters haben Sie die Wahl zwischen:
 >
 >Weitere Informationen zum Definieren des E-Mail-Inhalts finden Sie in [diesem Abschnitt](defining-the-email-content.md).
 
-## Mirrorseite erstellen {#generating-mirror-page}
+## Mirror-Seite erstellen {#generating-mirror-page}
 
 Eine Mirrorseite ist eine HTML-Seite, die über einen Webbrowser online abgerufen werden kann und deren Inhalt mit dem der E-Mail identisch ist.
 
