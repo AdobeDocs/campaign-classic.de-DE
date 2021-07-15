@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 16dddd4a-2e1a-4c78-8168-f656657bb9b8
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1155'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 # Abonnements verwalten{#managing-subscriptions}
 
-## Über Informationsdienste {#about-information-services}
+## Über Informations-Services {#about-information-services}
 
 Ein Informationsdienst zeichnet sich durch folgende Merkmale aus:
 
@@ -38,9 +38,9 @@ Drei verschiedene Anmelde- bzw. Abmeldemodi stehen zur Auswahl:
 >
 >Ein Muster zum Erstellen eines Anmeldeformulars mit zweifacher Bestätigung finden Sie in [diesem Abschnitt](../../web/using/use-cases--web-forms.md#create-a-subscription--form-with-double-opt-in).
 
-## Informationsdienste erstellen {#creating-an-information-service}
+## Informations-Services erstellen {#creating-an-information-service}
 
-Sie haben die Möglichkeit, Abonnements für Informationsdienste zu erstellen und zu verwalten und ihnen Bestätigungsnachrichten oder andere automatische Mitteilungen zuzuordnen.
+Sie haben die Möglichkeit, Abonnements für Informations-Services zu erstellen und zu verwalten und ihnen Bestätigungsnachrichten oder andere automatische Mitteilungen zuzuordnen.
 
 Der Tab **[!UICONTROL Profile und Zielgruppen]** bietet unter dem Link **[!UICONTROL Dienste und Abonnements]** eine Übersicht über alle existierenden Informationsdienste.
 
@@ -84,7 +84,7 @@ In beiden Fällen können Sie eine Bestätigungsnachricht an die betreffenden Be
 
 Siehe [An- und Abmeldungen](#subscription-and-unsubscription-mechanisms).
 
-## An Abonnenten eines Dienstes versenden {#delivering-to-the-subscribers-of-a-service}
+## An Abonnenten eines Service versenden {#delivering-to-the-subscribers-of-a-service}
 
 Um einen Versand an alle Abonnenten eines bestimmten Informationsdienstes zu erstellen, muss die Zielgruppe wie nachfolgend beschrieben definiert werden:
 
@@ -117,7 +117,7 @@ Sie haben die Möglichkeit, An- und Abmeldevorgänge sowie die Abonnentenverwalt
 
 ![](assets/s_ncs_user_subscribe_confirmation.png)
 
-### Empfänger für Informationsdienste anmelden {#subscribing-a-recipient-to-a-service}
+### Empfänger für Informations-Services anmelden {#subscribing-a-recipient-to-a-service}
 
 Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anzumelden:
 
@@ -140,7 +140,7 @@ Sie haben verschiedene Möglichkeiten, um einen Empfänger für einen Dienst anz
 
    Workflows und ihre Verwendung in Formularen werden in [diesem Abschnitt](../../workflow/using/about-workflows.md) beschrieben.
 
-### Empfänger von einem Dienst abmelden {#unsubscribing-a-recipient-from-a-service}
+### Empfänger von einem Service abmelden {#unsubscribing-a-recipient-from-a-service}
 
 #### Manuelle Abmeldung {#manual-unsubscribing}
 
@@ -164,6 +164,6 @@ Sie haben außerdem die Möglichkeit, einen Abmelde-Workflow für eine bestimmte
 
 ### Abonnement-Verfolgung {#subscriber-tracking}
 
-Im Tab **[!UICONTROL Dashboard]** stehen Berichte zur Verfügung, die es ermöglichen, An- und Abmeldungen zu verfolgen.
+Auf der Registerkarte **[!UICONTROL Dashboard]** stehen Berichte zur Verfügung, die es ermöglichen, An- und Abmeldungen zu verfolgen.
 
 ![](assets/s_ncs_user_services_report.png)
