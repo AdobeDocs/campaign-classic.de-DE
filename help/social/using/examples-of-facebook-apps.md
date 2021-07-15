@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
 source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2382'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Um den mit Facebook verknüpften Anzeigefehler zu umgehen, müssen Sie auch **[!
 
 ![](assets/social_webapp_028.png)
 
-### Aktivität „Zugriffskontrolle“  {#access-control-activity}
+### Aktivität &quot;Zugriffskontrolle&quot;  {#access-control-activity}
 
 Mit der Aktivität **[!UICONTROL Zugriffskontrolle]** können Sie die Seite mit Anfragen für Facebook-Genehmigungen anzeigen, wenn der Benutzer am Wettbewerb teilnimmt. Wenn der Benutzer zustimmt, seine Informationen zu teilen, werden diese beim Vorausfüllen wiederhergestellt. Weitere Informationen hierzu finden Sie unter [Aktivität „Vorausfüllen“](#pre-loading-activity).
 
@@ -177,7 +177,7 @@ Wenn Sie zuvor beim Erstellen der Webanwendung das externe Konto angegeben haben
 
 ![](assets/social_webapp_024.png)
 
-### Aktivität „Vorausfüllen“  {#pre-loading-activity}
+### Aktivität &quot;Vorausfüllen&quot;  {#pre-loading-activity}
 
 Wählen Sie die Datenquelle aus, die zum Vorausfüllen verwendet werden soll:
 
@@ -224,7 +224,7 @@ Bevor Sie auf **[!UICONTROL OK]** klicken, aktivieren Sie die Option **[!UICONTR
 >
 >Wenn Sie beide Arten des Vorausfüllens (über Adobe Campaign und Facebook) verwenden möchten, fügen Sie nacheinander zwei Kästchen zum Vorausfüllen hinzu.
 
-### Aktivität „Speichern“  {#save-activity}
+### Aktivität &quot;Speichern&quot;  {#save-activity}
 
 Mit der Aktivität **[!UICONTROL Speichern]** können Sie die in den vorherigen Etappen erfassten Informationen in der Besuchertabelle speichern.
 
@@ -309,9 +309,9 @@ Mit der **[!UICONTROL Social Marketing]**-Anwendung können Sie einem Formular a
 
 **Füllen Sie die Formularfelder vorab mit Daten aus dem Facebook-Profil aus.**
 
-Sie erstellen ein Webformular und schließen Elemente ein, mit denen der Benutzer auf den Formularseiten nicht interagiert. Hierbei handelt es sich um statische Elemente wie Bilder, HTML-Inhalt, einen horizontalen Balken oder einen Hypertext-Link. Weitere Informationen zu statischen Elementen in einem Webformular finden Sie auf [dieser Seite](../../web/using/static-elements-in-a-web-form.md).
+Sie erstellen ein Web-Formular und können Elemente, mit denen der Benutzer keine Interaktion hat, in die Seiten des Formulars einfügen. Dies sind statische Elemente wie Bilder, HTML-Inhalte, eine horizontale Leiste oder ein Hypertext-Link. Weitere Informationen zu statischen Elementen in einem Web-Formular finden Sie auf [dieser Seite](../../web/using/static-elements-in-a-web-form.md).
 
-Beim Einfügen eines statischen Elements können Sie mit der Option **[!UICONTROL Vorausfüllen mit Facebook]** eine Schaltfläche in ein Formular einfügen, um Felder mithilfe von Facebook-Profilinformationen im Voraus zu laden.
+Wenn Sie ein statisches Element einfügen, ermöglicht die Option **[!UICONTROL Via Facebook vorausfüllen]** Ihnen das Einfügen einer Schaltfläche in ein Formular, um Felder mit Informationen aus dem Facebook-Profil vorauszufüllen.
 
 ![](assets/web_social_webapp_037.png)
 
@@ -322,7 +322,7 @@ Wenn ein Benutzer die Schaltfläche **[!UICONTROL Automatisch ausfüllen]** ausw
 >[!NOTE]
 >
 >Sie können die Liste der erweiterten Berechtigungen bei der Konfiguration des externen Kontos ändern. Wenn keine erweiterten Berechtigungen konfiguriert sind, leitet Facebook die grundlegenden Profilinformationen standardmäßig weiter.\
->Die Liste der erweiterten Berechtigungen und ihre Syntax finden Sie in der Facebook-Dokumentation](https://developers.facebook.com/docs/reference/api/permissions).[
+>Die Liste der erweiterten Berechtigungen und ihre Syntax [finden Sie in der Dokumentation zu Facebook](https://developers.facebook.com/docs/reference/api/permissions).
 
 Wenn der Benutzer damit einverstanden ist, seine Informationen zu teilen, werden die Felder des Formulars vorausgefüllt.
 
