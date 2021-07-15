@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
 source-git-commit: 0a80912aae4cab58b6f06918a673aaca3883fbdf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2562'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Adobe Campaign bietet Datenverantwortlichen Tools zum Erstellen und Verarbeiten 
 
 Als Datenverantwortlicher sind Sie daher außerdem verpflichtet, die Identität der betroffenen Person zu überprüfen, die die Anfrage stellt, und sicherzustellen, dass die dem Anfragenden übermittelten Daten zur betroffenen Person gehören.
 
-### Installieren des Datenschutz-Packages {#install-privacy-package}
+### Installieren des Datenschutz-Package {#install-privacy-package}
 
 Um diese Funktion nutzen zu können, müssen Sie das Package **[!UICONTROL Datenschutzbestimmung]** über das Menü **[!UICONTROL Werkzeuge]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Package-Import]** > **[!UICONTROL Adobe-Campaign-Package]** installieren. Weitere Informationen zum Installieren von Packages finden Sie im [entsprechenden Handbuch](../../installation/using/installing-campaign-standard-packages.md).
 
