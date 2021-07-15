@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
 source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '871'
 ht-degree: 100%
 
@@ -86,11 +86,11 @@ Um den ausgehenden SMTP-Traffic besser zu steuern, können Sie für jede Affinit
 
 Sie haben folgende Möglichkeiten:
 
-* Definieren Sie die IP-Affinitäten in der Konfigurationsdatei „serverConf.xml“. [Mehr dazu](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
+* Definieren Sie die IP-Affinitäten in der Konfigurationsdatei „serverConf.xml“. [Weitere Informationen](../../installation/using/configuring-campaign-server.md#managing-outbound-smtp-traffic-with-affinities)
 
-* Geben Sie für jedes IPAffinity-Element an, welche IP-Adressen verwendet werden können. [Mehr dazu](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
+* Geben Sie für jedes IPAffinity-Element an, welche IP-Adressen verwendet werden können. [Weitere Informationen](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Mehr dazu](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Weitere Informationen](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihr E-Mail-Administrator ist Ihnen beim Feststellen der Header-Informationen behilflich.
 
