@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: 94e609f3df94c553e2ec84ee427887a767b9af21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1588'
 ht-degree: 100%
 
@@ -184,7 +184,7 @@ Um AMP-E-Mails an Mail.ru-Adressen zu senden, befolgen Sie die in der [Mail.ru-E
 
 ## Senden einer AMP-E-Mail {#sending-amp-email}
 
-Sobald Ihr AMP-Inhalt und Fallback fertig sind und Sie ein kompatibles Ziel definiert haben, können Sie die E-Mail wie gewohnt senden.
+Sobald Ihr AMP-Inhalt und Fallback fertig sind und Sie eine kompatible Zielgruppe definiert haben, können Sie die E-Mail wie gewohnt senden.
 
 Derzeit unterstützen nur Gmail, Outlook und Mail.ru das AMP-Format (unter bestimmten Bedingungen). Sie können Adressen von anderen E-Mail-Anbietern als Ziele auswählen; sie werden jedoch die HTML- oder Textversion Ihrer E-Mail erhalten.
 
