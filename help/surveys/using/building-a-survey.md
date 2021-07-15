@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: online-surveys
 exl-id: 8d83dfd5-70ec-4656-965b-f6b5e6f9eec1
 source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Wählen Sie die Umfragenvorlage (standardmäßig **[!UICONTROL newSurvey]**) aus
 
 ![](assets/s_ncs_admin_survey_select_template.png)
 
-Die Seiten des Formulars werden mit einem speziellen Editor erstellt, mit dem Sie Eingabefelder (Text), Auswahlfelder (Listen, Checkboxes usw.) und statische Elemente (Bilder, HTML-Inhalte usw.) definieren und konfigurieren können. Sie können in &quot;Behältern&quot; gesammelt und entsprechend den Anforderungen angeordnet werden. [Weitere Informationen](#adding-questions)).
+Die Seiten des Formulars werden mit einem speziellen Editor erstellt, der die Definition und Konfiguration von (Text-) Eingabefeldern, Auswahlfeldern (Listen, Checkboxes usw.) und statischen Elementen (Bildern, HTML-Inhalten usw.) ermöglicht. Diese Elemente können in &quot;Containern&quot; zusammengefasst und nach Bedarf angeordnet werden. [Weitere Informationen](#adding-questions).
 
 >[!NOTE]
 >
->Weitere Informationen zum Definieren von Inhalten und Erstellen von Bildschirmlayouts für ein Webformular finden Sie in [diesem Dokument](../../web/using/about-web-forms.md).
+>Weiterführende Informationen zur Definition von Inhalten und zur Erstellung von Bildschirm-Layouts für ein Web-Formular finden Sie in [diesem Dokument](../../web/using/about-web-forms.md).
 
 ## Felder hinzufügen {#adding-fields}
 
@@ -62,7 +62,7 @@ Die unterschiedlichen Typen verfügbarer Felder werden in [diesem Abschnitt](../
 
 ## Elemente einer Umfrage {#survey-specific-elements}
 
-Online-Umfragen basieren auf den Funktionen von Webanwendungen. Im Folgenden werden die umfragespezifischen Funktionen beschrieben.
+Online-Umfragen basieren auf den Funktionen von Web-Anwendungen. Im Folgenden werden die umfragespezifischen Funktionen beschrieben.
 
 ### Multiple Choice {#multiple-choice}
 
@@ -94,7 +94,7 @@ Zusätzlich muss der Speicherort für dieses Eingabefeld ein **archiviertes Feld
 
 ### Fragen hinzufügen {#adding-questions}
 
-Es gibt zwei Typen von Containern: Standard und Frage. Standardcontainer werden verwendet, um das Seitenlayout und die bedingte Anzeige auf einer Seite zu konfigurieren. [Weitere Informationen](../../web/using/about-web-forms.md).
+Es gibt zwei Typen von Containern: Standard und Frage. Standard-Container werden zur Konfiguration des Seiten-Layouts und zur bedingten Anzeige auf einer Seite verwendet. [Weitere Informationen](../../web/using/about-web-forms.md).
 
 Mit einem **Frage**-Container können Sie eine Frage zur Seite hinzufügen und die möglichen Antworten darunter in der Hierarchie einfügen. Benutzerantworten zu Fragen, die in diesem Containertyp abgelegt werden, können in Berichten analysiert werden.
 
@@ -108,7 +108,7 @@ Der Titel der Frage wird im Titelfeld eingetragen. In diesem Fall wird der Stil 
 
 >[!NOTE]
 >
->Weitere Informationen zur Verwendung des HTML-Editors finden Sie in [diesem Dokument](../../web/using/about-web-forms.md) .
+>Weiterführende Informationen zur Verwendung des HTML-Editors finden Sie in [diesem Dokument](../../web/using/about-web-forms.md).
 
 Beispiel:
 
