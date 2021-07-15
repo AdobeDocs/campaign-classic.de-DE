@@ -7,15 +7,15 @@ content-type: reference
 topic-tags: web-applications
 exl-id: 07bd36ce-c701-4998-974f-81fd4fac22a0
 source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '400'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Besuche auf einer Web-Anwendung tracken{#tracking-a-web-application}
+# Besuche in einer Web-Anwendung tracken{#tracking-a-web-application}
 
-Mit Adobe Campaign können Sie Besuche auf Seiten von Webanwendungen verfolgen und messen, indem Sie Tracking-Tags einfügen. Diese Funktion kann für alle Webanwendungstypen (Formulare, Webseiten usw.) verwendet werden.
+Mit Adobe Campaign können Sie Besuche auf Seiten von Web-Anwendungen verfolgen und messen, indem Sie Tracking-Tags einfügen. Diese Funktion kann für alle Typen von Web-Anwendungen (Formulare, Web-Seiten usw.) verwendet werden.
 
 Auf diese Weise können Sie mehrere Navigationspfade definieren und ihren Erfolg bewerten. Diese Daten sind in den Berichten einer jeden Anwendung verfügbar.
 
@@ -55,9 +55,9 @@ Um die Traffic-Herkunft in einer Webanwendung festzustellen, sucht Adobe Campaig
 
 >[!NOTE]
 >
->Das anonyme Tracking ist nur verfügbar, wenn die Option bei der Installation von Campaign im Softwareverteilungs-Assistenten aktiviert wurde.
+>Das anonyme Tracking ist nur verfügbar, wenn die Option bei der Installation von Campaign im Software-Verteilungs-Assistenten aktiviert wurde.
 
-## Mit dem Digital Content Editor (DCE) erstellte Webanwendungen  {#web-applications-designed-with-digital-content-editor--dce-}
+## Mit dem Digital Content Editor (DCE) erstellte Web-Anwendungen  {#web-applications-designed-with-digital-content-editor--dce-}
 
 Wenn eine Webanwendung mit dem HTML-Contenteditor – dem **Digital Content Editor (DCE)** – erstellt wird, werden Trackingtags über den Tab **[!UICONTROL Eigenschaften]** des Editors eingefügt. Weiterführende Informationen zum Digital Content Editor (DCE) finden Sie in [diesem Abschnitt](about-campaign-html-editor.md).
 
