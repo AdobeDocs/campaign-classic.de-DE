@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-applications
 exl-id: 5ccf5a21-48aa-4c0d-8cc8-457eb07d9f74
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Diese Vorlage bestimmt den Typ der Webanwendung. Sie können Folgendes erstellen
 
    Mithilfe von Webformularen können Sie Webseiten mit Eingabe- oder Auswahlfeldern bereitstellen. Die von den Benutzern eingegebenen Informationen werden in der Adobe Campaign-Datenbank gespeichert. Weiterführende Informationen dazu finden Sie im Abschnitt [Webformulare](about-web-forms.md).
 
-1. Webanwendungen
+1. Web-Anwendungen
 
    Mit Adobe Campaign können Sie Webanwendungen erstellen und z. B. auf einer Webplattform oder im Extranet veröffentlichen. Dadurch haben Sie die Möglichkeit, Daten in Adobe Campaign zu bearbeiten und zu speichern. Den Datenzugriff können Sie beschränken, sodass nur authentifizierte Benutzer (über eine Zugriffskontrolle) darauf Zugriff haben. Zusätzlich können Sie das Vorausfüllen von Daten entsprechend verschiedener Kriterien einrichten. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](about-web-applications.md).
 
