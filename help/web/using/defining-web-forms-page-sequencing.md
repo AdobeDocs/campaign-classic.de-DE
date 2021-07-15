@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: c5b5c398-c13b-4ebe-88b2-8ff84741422e
 source-git-commit: 360fd1ed8970c17c0687eaca0a4c1960d6f5838c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '739'
 ht-degree: 100%
 
@@ -111,9 +111,9 @@ Sie können die Seitenreihenfolge auch gemäß den Initialisierungsparametern de
 
 ## Skripts hinzufügen {#adding-scripts}
 
-Mit dem Objekt **[!UICONTROL Script]** können Sie ein JavaScript-Element direkt einfügen, z. B. um den Wert eines Felds zu ändern, um Daten aus der Datenbank abzurufen oder um eine Adobe Campaign-API aufzurufen.
+Mit dem Objekt **[!UICONTROL Skript]** können Sie ein JavaScript-Element direkt einfügen, z. B. um den Wert eines Feldes zu ändern, um Daten aus der Datenbank abzurufen oder um eine Adobe Campaign-API aufzurufen.
 
-## Endseite anpassen {#personalizing-the-end-page}
+## Endseite personalisieren {#personalizing-the-end-page}
 
 Am Ende des Diagramms muss eine Endseite platziert werden. Diese wird angezeigt, wenn der Benutzer im Webformular die Schaltfläche **[!UICONTROL Validieren]** auswählt.
 
