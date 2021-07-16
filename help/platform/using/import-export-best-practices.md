@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: workflow-general-operation
 exl-id: 03d35202-d221-4136-aad4-00704aabb356
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Beispiel:
 * Trennzeichen: Tabulator oder Semikolon
 * Erste Zeile mit Headern
 * Keine Zeichenketten-Qualifizierer
-* Datumsformat: JJJJ/MM/TT hh:mm:ss
+* Datumsformat: JJJJ/MM/TT HH:mm:SS
 
 Beispiel einer zu importierenden Datei:
 
