@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '4476'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -286,13 +286,13 @@ Die Parameter für den neuen Trackinglink-Signaturmechanismus wurden dem Abschni
 
 Die Kompatibilitätsmatrix wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)
 
-Der Abschnitt zum Bereinigungs-Workflow wurde aktualisiert. [Mehr dazu](../../production/using/database-cleanup-workflow.md)
+Der Abschnitt zum Bereinigungs-Workflow wurde aktualisiert. [Weitere Informationen](../../production/using/database-cleanup-workflow.md)
 
 Die Campaign-Netzwerkendpunkte wurden in diesen [Abschnitt](../../installation/using/campaign-network-endpoints.md) verschoben.
 
-Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Mehr dazu](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
+Der Abschnitt &quot;Spam Assassin-Installation&quot; wurde mit dem Namen der neuen Installationsdatei aktualisiert. [Weitere Informationen](../../installation/using/configuring-spamassassin.md#installing-spamassassin)
 
-Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Mehr dazu](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
+Der Abschnitt zur Duplizierung von Umgebungen wurde aktualisiert. [Weitere Informationen](../../production/using/duplicating-environments.md#step-2---export-the-target-environment-configuration--dev-)
 
 ## Mai 2020 {#may-2020}
 
@@ -322,7 +322,7 @@ Die Abschnitte [Bounce-Message-Qualifizierung](../../delivery/using/understandin
 
 Der Artikel zum Adobe Campaign Enhanced MTA wurde aktualisiert. Er gilt jetzt nur für Campaign Classic. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-campaign-enhanced-mta.html)
 
-## März 2020 {#march-2020}
+## März 2020 {#march-2020}
 
 Die Seite mit Best Practices für das Datenmodell enthält jetzt neue Abschnitte wie [Sequenzen](../../configuration/using/data-model-best-practices.md#sequences), [Leistung](../../configuration/using/data-model-best-practices.md#performance) und [große Tabellen](../../configuration/using/data-model-best-practices.md#large-tables). [Mehr dazu](../../configuration/using/data-model-best-practices.md)
 
@@ -336,7 +336,7 @@ Ein neuer Abschnitt mit den verschiedenen Sprachen, die in Adobe Campaign verfü
 
 Die Seite zu Richtlinien für die Zugriffsverwaltung enthält jetzt zusätzliche Informationen zu spezifischen Berechtigungen. [Mehr dazu](../../platform/using/access-management-named-rights.md)
 
-## Februar 2020 {#february-2020}
+## Februar 2020 {#february-2020}
 
 Es gibt jetzt einen neuen Abschnitt, in dem Best Practices und wichtige Empfehlungen zum Entwerfen des Adobe Campaign-Datenmodells erläutert werden. [Mehr dazu](../../configuration/using/data-model-best-practices.md)
 
@@ -458,11 +458,11 @@ Es wurden Informationen hinzugefügt, die festlegen, dass der Inhalt von Persona
 
 Die Control Panel-Dokumentation wurde in den neuen kollaborativen Dokumentationssatz integriert. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de)
 
-Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert. [mehr dazu](../../delivery/using/delivery-best-practices.md)
+Die ersten Schritte zum Thema Best Practices für den Versand wurden aktualisiert. [Mehr dazu](../../delivery/using/delivery-best-practices.md)
 
 ## Oktober 2019 {#october-2019}
 
-Die Liste der Fehlermeldungen für Campaign wurde aktualisiert – [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html)
+Die Liste der Fehlermeldungen für Campaign wurde aktualisiert – [Mehr dazu](https://experienceleague.adobe.com/developer/campaign-errors/error_codes.html?lang=de)
 
 Die ersten Schritte zum Thema DSGVO wurden verbessert und erweitert. Es handelt sich nun um eine Dokumentation rund um die Gewährleistung von Datenschutz gemäß den Bestimmungen der DSGVO und des CCPA. [Mehr dazu](https://helpx.adobe.com/content/help/de/campaign/kb/campaign-privacy.html)
 
@@ -563,7 +563,7 @@ Das Handbuch zur Dimensionierung von Hardware für Campaign wurde aktualisiert. 
 
 Informationen zum Query Banding für das externe Teradata-Konto wurden hinzugefügt. [Mehr dazu](../../installation/using/external-accounts.md)
 
-## . Januar 2019_{#release-doc-16-01-2019}
+## Januar 2019{#release-doc-16-01-2019}
 
 Die Technote zu den Marketing Cloud-Triggers wurde aktualisiert. [Mehr dazu](../../integrations/using/about-triggers.md)
 
