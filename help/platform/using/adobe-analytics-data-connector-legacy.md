@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Der Data Connector von Adobe Analytics
-description: Der Data Connector von Adobe Analytics
+title: Adobe Analytics Data Connector
+description: Adobe Analytics Data Connector
 feature: Übersicht
 role: User, Admin
 level: Beginner
@@ -11,7 +11,7 @@ hide: true
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1834'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,17 +48,17 @@ Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 
 ## Integration einrichten {#setting-up-the-integration}
 
-Um den Data Connector einzurichten, verbinden Sie sich mit Ihrer Adobe-Campaign-Instanz und gehen Sie folgendermaßen vor:
+Um den Data Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
 
-* [1. Schritt: Integration in Analytics konfigurieren](#step-1--configure-integration-in-analytics)
-* [2. Schritt: Externes Konto in Adobe Campaign erstellen](#step-2--create-the-external-account-in-campaign)
-* [3. Schritt: Adobe Campaign und Adobe Analytics synchronisieren](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
+* [Schritt 1: Integration in Analytics konfigurieren](#step-1--configure-integration-in-analytics)
+* [Schritt 2: Externes Konto in Adobe Campaign erstellen](#step-2--create-the-external-account-in-campaign)
+* [Schritt 3: Adobe Campaign und Adobe Analytics synchronisieren](#step-3--synchronize-adobe-campaign-and-adobe-analytics)
 
-### 1. Schritt: Integration in Analytics konfigurieren {#step-1--configure-integration-in-analytics}
+### Schritt 1: Integration in Analytics konfigurieren {#step-1--configure-integration-in-analytics}
 
 Im Folgenden wird die Konfiguration des Data Connectors mithilfe eines Assistenten beschrieben.
 
-1. Melden Sie sich mit einer Adobe-ID oder einer Unternehmenskennung bei Adobe Experience Cloud an.
+1. Melden Sie sich mit einer Adobe ID oder einer Unternehmenskennung bei Adobe Experience Cloud an.
 
    ![](assets/adobe_genesis_install_001.png)
 
@@ -68,7 +68,7 @@ Im Folgenden wird die Konfiguration des Data Connectors mithilfe eines Assistent
 
 1. Wählen Sie im Tab **[!UICONTROL Admin]** die Option **[!UICONTROL Data Connectors]**.
 
-   Sie benötigen die folgenden Berechtigungen für Analytics-Tools, um auf das Menü **[!UICONTROL Connectoren]** zugreifen zu können. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html).
+   Sie benötigen die folgenden Berechtigungen für Analytics-Tools, um auf das Menü **[!UICONTROL Connectoren]** zugreifen zu können. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/analytics-tools.html?lang=de).
    * Integrationen (Erstellen)
    * Integrationen (Aktualisieren)
    * Integrationen (Löschen)
@@ -117,7 +117,7 @@ Achten Sie darauf, dass Ihre **[!UICONTROL Ereignisse]** vom Typ „Numerisch“
 
    Der Data Connector ist jetzt konfiguriert.
 
-### 2. Schritt: Externes Konto in Adobe Campaign erstellen {#step-2--create-the-external-account-in-campaign}
+### Schritt 2: Externes Konto in Adobe Campaign erstellen {#step-2--create-the-external-account-in-campaign}
 
 Die Integration von Adobe Campaign in die Analytics-Plattformen geschieht mithilfe eines Connectors. Gehen Sie zur Synchronisation wie folgt vor:
 
@@ -155,7 +155,7 @@ Die Integration von Adobe Campaign in die Analytics-Plattformen geschieht mithil
 >
 >Bei Verwendung verschiedener Audience-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
 
-### 3. Schritt: Adobe Campaign und Adobe Analytics synchronisieren {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
+### Schritt 3: Adobe Campaign und Adobe Analytics synchronisieren {#step-3--synchronize-adobe-campaign-and-adobe-analytics}
 
 Nach Erstellung des externen Kontos ist eine Synchronisation der beiden Anwendungen erforderlich.
 
@@ -190,7 +190,7 @@ Wenn im Data Connector-Assistenten weitere Segmente angegeben wurden, können Si
 
 ![](assets/webanalytics_segments_update.png)
 
-### Technische Workflows der Web-Analytics-Prozesse {#technical-workflows-of-web-analytics-processes}
+### Technische Workflows der Web-Analyse-Prozesse {#technical-workflows-of-web-analytics-processes}
 
 Der Datenaustausch zwischen Adobe Campaign und Adobe Analytics – Data Connector wird durch vier im Hintergrund ablaufende technische Workflows gesteuert.
 
