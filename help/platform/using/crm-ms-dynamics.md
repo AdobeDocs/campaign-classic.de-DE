@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 100%
 
 ---
 
-# Campaign und Microsoft Dynamics 365 verbinden {#connect-to-msdyn}
+# Campaign und Microsoft Dynamics 365 verbinden{#connect-to-msdyn}
 
 Auf dieser Seite erfahren Sie, wie Sie Campaign Classic mit **Microsoft Dynamics CRM 365** verbinden.
 
@@ -48,10 +48,10 @@ In Campaign Classic:
 
 
 >[!CAUTION]
->
 > Bei der Verbindung von Adobe Campaign mit Microsoft Dynamics können Sie Folgendes nicht tun:
 > * Plugins installieren, die das Verhalten des CRM verändern; dadurch könnte es zu Kompatibilitätsproblemen mit Adobe Campaign kommen
 > * Mehrere Auflistungen auswählen
+
 >
 
 
@@ -99,7 +99,7 @@ Sie müssen die **erforderlichen Berechtigungen** für die erstellte Anwendung k
 1. Klicken Sie unter **Erforderliche Berechtigungen** auf **Hinzufügen** und **wählen Sie eine API > Dynamics CRM Online**.
 1. Klicken Sie dann auf **Auswählen**, aktivieren Sie das Kontrollkästchen **Access Dynamics 365 als Organisationsbenutzer** und klicken Sie auf **Auswählen**.
 
-### Anwendungsbenutzer erstellen {#create-app-user-microsoft}
+### Anwender erstellen {#create-app-user-microsoft}
 
 Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendung verwenden wird. Alle Änderungen, die mit der oben registrierten Anwendung an Microsoft Dynamics vorgenommen werden, erfolgen über diesen Benutzer.
 
