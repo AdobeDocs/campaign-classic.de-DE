@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Die unten aufgelisteten Elemente verlinken zu den wichtigsten Begriffen und Konz
 * [Recht auf Zugriff und Recht auf Vergessenwerden](../../platform/using/privacy-management.md#right-access-forgotten)
 * [Einverständnis, Datenbeibehaltung und Benutzerrollen](../../platform/using/privacy-management.md#consent-retention-roles)
 
-## Vorbereitung auf Datenschutzverordnungen{#privacy-regulations-readiness}
+## Vorbereitung auf Datenschutzverordnungen {#privacy-regulations-readiness}
 
 ### Was empfiehlt Adobe Campaign, um die neuesten Datenschutzverordnungen einzuhalten?
 
