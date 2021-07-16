@@ -9,13 +9,13 @@ exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '2370'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
 # Version 18.10{#release-18-10}
 
-## Version 18.10.6 - Build 8985{#release-18-10-6-build-8985}
+## Version 18.10.6 – Build 8985{#release-18-10-6-build-8985}
 
 _12. Juli 2019_
 
@@ -27,7 +27,7 @@ _12. Juli 2019_
 * Erweiterte Berechtigungen zur Ausführung des Sicherheitszonen-Package bei der Verwendung eines internen Kontos.
 * Fehlerkorrektur – In den MTA-Kindprotokollen treten jetzt keine Fehler mehr auf. (NEO-8978)
 
-## Version 18.10.5 - Build 8984{#release-18-10-5-build-8984}
+## Version 18.10.5 – Build 8984{#release-18-10-5-build-8984}
 
 _23. April 2019_
 
@@ -37,7 +37,7 @@ _23. April 2019_
 * Das Datensatzlimit von 10.000 wurde in der Workflow Heatmap entfernt, um ein Problem mit fehlenden Daten zu beheben. (NEO-12329)
 * Fehlerkorrektur – Die Option &quot;Alle Zusatzdaten der Hauptmenge beibehalten&quot; funktioniert jetzt in einer Anreicherungsaktivität eines Workflows einwandfrei. (NEO-13291)
 
-## Version 18.10.4 - Build 8983{#release-18-10-4-build-8983}
+## Version 18.10.4 – Build 8983{#release-18-10-4-build-8983}
 
 _15. April 2019_
 
@@ -50,7 +50,7 @@ _15. April 2019_
 * In der Analytics-Integration ist nun das Abrufen von AAM-Segmentdaten mit %-Zeichen erlaubt. (NEO-12025)
 * Fehlerkorrektur – Beim Versand von Push-Benachrichtigungen über HTTP2 stürzt Tomcat nicht mehr ab. (NEO-12701)
 
-## Version 18.10.3 - Build 8981{#release-18-10-3-build-8981}
+## Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
 _29. Januar 2019_
 
@@ -74,7 +74,7 @@ _29. Januar 2019_
 * Fehlerkorrektur – Beim Senden einer Push-Benachrichtigung auf einer Mobile App tritt kein Escaping-Fehler mehr auf.
 * Fehlerkorrektur – In einem externen Mid-Sourcing-Konto kann jetzt von der FDA- zur SOAP-Synchronisationsmethode gewechselt werden.
 
-## Version 18.10.2 - Build 8978{#release-18-10-2-build-8978}
+## Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
 _6. Dezember 2018_
 
@@ -96,7 +96,7 @@ _6. Dezember 2018_
 * Fehlerkorrektur – Die Workflow-Dauer in Workflow-Heatmap wird jetzt korrekt berechnet.
 
 
-## Version 18.10 - Build 8977{#release-18-10-build-8977}
+## Version 18.10 – Build 8977{#release-18-10-build-8977}
 
 _5. November 2018_
 
