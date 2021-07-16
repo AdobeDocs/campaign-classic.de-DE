@@ -10,7 +10,7 @@ exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
 workflow-type: tm+mt
 source-wordcount: '1786'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Der Adobe Analytics-Connector ermöglicht die Interaktion von Adobe Campaign und
 >* Adobe Analytics Connector ist nicht kompatibel mit Transaktionsnachrichten (Message Center).
    >
    >
-* Stellen Sie vor dem Start sicher, dass das Adobe Identity Management System (IMS) in Campaign implementiert ist. [Weiterführende Informationen finden Sie auf dieser Seite](../../integrations/using/about-adobe-id.md).
+* Stellen Sie vor dem Beginn sicher, dass das Adobe Identity Management System (IMS) in Campaign implementiert ist. [Weiterführende Informationen finden Sie auf dieser Seite](../../integrations/using/about-adobe-id.md).
 
 
 Der Adobe Analytics-Connector ermöglicht es Adobe Campaign, Messungen zur Internet-Zielgruppe (Web Analytics) anzustellen. Dank dieser Integrationen kann Adobe Campaign Daten über das Besucherverhalten für eine oder mehrere Websites nach einer Marketing-Kampagne wiederherstellen und (nach der Analyse) Remarketing-Kampagnen mit dem Ziel durchführen, sie in Käufer zu konvertieren. Umgekehrt ermöglichen die Web-Analyse-Tools von Adobe Campaign die Weiterleitung von Indikatoren und Kampagnenattributen an ihre Plattformen.
@@ -45,7 +45,7 @@ Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 
 ## Integration einrichten {#setting-up-the-integration}
 
-Um den Data Connector einzurichten, verbinden Sie sich mit Ihrer Adobe-Campaign-Instanz und gehen Sie folgendermaßen vor:
+Um den Data Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
 
 1. [Erstellen Sie eine Report Suite in Adobe Analytics.](#report-suite-analytics)
 1. [Konfigurieren Sie Konversionsvariablen und Erfolgsereignisse.](#configure-conversion-success)
@@ -202,7 +202,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 >
 >Bei Verwendung verschiedener Audience-Mess-Tools können Sie bei der Erstellung des externen Kontos in der Dropdown-Liste des Felds **[!UICONTROL Partner]** die Option **[!UICONTROL Sonstige]** auswählen. Da in den Versandeigenschaften jeweils nur ein externes Konto bestimmt werden kann, ist eine Anpassung der Formel für die getrackten URLs notwendig, indem Sie die von Adobe und dem anderen Messtool erwarteten Parameter hinzufügen.
 
-### Technische Workflows der Web-Analytics-Prozesse {#technical-workflows-of-web-analytics-processes}
+### Technische Workflows der Web-Analyse-Prozesse {#technical-workflows-of-web-analytics-processes}
 
 Der Datenaustausch zwischen Adobe Campaign und Adobe Analytics wird durch vier im Hintergrund ablaufende technische Workflows gesteuert.
 
