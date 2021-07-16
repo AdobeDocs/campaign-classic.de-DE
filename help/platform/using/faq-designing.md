@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
 
-# Häufige Fragen zur Nachrichtenerstellung {#design-messages-faq}
+# Häufige Fragen zur Erstellung von Meldungen {#design-messages-faq}
 
 Hier finden Sie die wichtigsten Anleitungen zum Konzipieren von kanalübergreifenden Nachrichten mit Adobe Campaign.
 
