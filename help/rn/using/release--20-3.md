@@ -48,8 +48,8 @@ _27. Oktober 2020_
 <p>Diese beiden Authentifizierungsmodi sind jetzt für mobile iOS-Apps in Campaign Classic verfügbar:
 </p>
 <ul> 
-<li><p>Token-basierte Authentifizierung (empfohlen): dieser Authentifizierungsmodus basiert auf einer .p8-Datei. Dieser Authentifizierungsmodus ist schneller, da jede Anfrage an APNs das Token enthält. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns">Weitere Infos</a></p></li>
-<li><p>Zertifikatbasierte Authentifizierung: dieser Authentifizierungsmodus basiert auf einer .p12-Datei. Für jede App ist ein separates Zertifikat erforderlich. Dieses Zertifikat wird von Apple über Ihr Entwicklerkonto bereitgestellt. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns">Weitere Infos</a></p></li> 
+<li><p>Token-basierte Authentifizierung (empfohlen): dieser Authentifizierungsmodus basiert auf einer .p8-Datei. Dieser Authentifizierungsmodus ist schneller, da jede Anfrage an APNs das Token enthält. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_token-based_connection_to_apns">Weitere Informationen</a></p></li>
+<li><p>Zertifikatbasierte Authentifizierung: dieser Authentifizierungsmodus basiert auf einer .p12-Datei. Für jede App ist ein separates Zertifikat erforderlich. Dieses Zertifikat wird von Apple über Ihr Entwicklerkonto bereitgestellt. <a href="https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/establishing_a_certificate-based_connection_to_apns">Weitere Informationen</a></p></li> 
 </ul>
 <p>In der <a href="../../delivery/using/configuring-the-mobile-application.md">entsprechenden Dokumentation</a> erfahren Sie, wie Sie den Authentifizierungsmodus in Campaign auswählen.</p>
 </td> 
@@ -66,7 +66,7 @@ _27. Oktober 2020_
 <tbody> 
 <tr> 
 <td> <p><a href="../../delivery/using/configuring-the-mobile-application-android.md#creating-notification-message">Android-Push-Benachrichtigungen wurden verbessert, um die Version 1 der FCM HTTP-API für die Authentifizierung von Android-Push-Kanälen zu unterstützen.</a> </p>
-<p>Mit der neuen unterstützten API-Version können Sie jetzt FCM-Benachrichtigungsinhalte senden, die erweiterte Funktionen für Push-Nachrichten bieten. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Weitere Infos</a></p> 
+<p>Mit der neuen unterstützten API-Version können Sie jetzt FCM-Benachrichtigungsinhalte senden, die erweiterte Funktionen für Push-Nachrichten bieten. <a href="https://firebase.google.com/docs/cloud-messaging/migrate-v1">Weitere Informationen</a></p> 
 <p>Informationen zum Konfigurieren der Version 1 der FCM HTTP-API für Android in Adobe Campaign finden Sie in <a href="../../delivery/using/configuring-the-mobile-application-android.md">diesem Abschnitt</a>.</p>
 </td> 
 </tr> 
@@ -94,7 +94,7 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 Die folgenden Funktionen werden in Version 20.3 eingestellt:
 
-* Die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, wird nicht mehr unterstützt. Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Weitere Infos](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
+* Die demdex-Domain, die zum Importieren und Exportieren von Audiences nach Adobe Experience Cloud verwendet wird, wird nicht mehr unterstützt. Wenn Sie die demdex-Domain für Ihre externen Import-/Export-Konten verwenden, müssen Sie Ihre Implementierung entsprechend anpassen. [Weitere Informationen](../../integrations/using/configuring-shared-audiences-integration-in-adobe-campaign.md)
 * Die Authentifizierung für die Triggers-Integration, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde geändert und in Adobe I/O verschoben. [Weitere Infos](../../integrations/using/configuring-adobe-io.md)
 
 Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funktionen ](../../rn/using/deprecated-features.md).
