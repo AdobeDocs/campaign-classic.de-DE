@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
 ---
 
-# Häufige Fragen für Entwickler{#dev-faq}
+# Häufige Fragen für Entwickler {#dev-faq}
 
 Adobe Campaign ist eine offene Lösung, die die benutzerdefinierte Nutzung und die Weiterentwicklung der Anwendung ermöglicht.
 
