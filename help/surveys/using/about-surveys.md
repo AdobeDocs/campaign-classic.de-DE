@@ -26,9 +26,8 @@ In diesem Kapitel wird beschrieben, wie Sie **Umfragen**, Feld- und Seitenverwal
 >[!NOTE]
 >
 >* Die einzelnen Schritte für die Erstellung eines Standard-Web-Formulars werden in [diesem Dokument](../../web/using/about-web-forms.md) beschrieben.
-   >
-   >
-* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](../../web/using/about-web-applications.md) beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
+>
+>* Die Verwaltung von Web-Anwendungen wird in [diesem Dokument](../../web/using/about-web-applications.md) beschrieben. Weitere Informationen finden Sie in diesem Kapitel.
 
 
 ## Funktionsumfang {#campaign-surveys-scope}
