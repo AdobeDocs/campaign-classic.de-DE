@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Tabs und ihr Inhalt sind abhängig von Ihrer Konfiguration und den installierten
 >
 >Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md).
 
-## Tab &quot;Allgemein&quot;{#general-tab}
+## Im Tab Allgemein {#general-tab}
 
 Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Profil, insbesondere Nachname, Vorname, E-Mail-Adresse, E-Mail-Empfangsformat etc.:
 
@@ -41,7 +41,7 @@ Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Prof
 >
 >Wenn die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** aktiviert ist, bedeutet dies, dass das Profil auf der Blockierungsliste steht; das Profil hat also den Wunsch geäußert, nicht kontaktiert zu werden (z. B. durch Klicken auf einen Abmelde-Link in einem Newsletter). Das Profil wird keine Sendungen mehr erhalten (auf keinem Kanal: ob E-Mail, Briefpost usw.). Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/understanding-quarantine-management.md).
 
-## Tab &quot;Kontaktdaten&quot;{#contact-information-tab}
+## Tab &quot;Kontaktdaten&quot; {#contact-information-tab}
 
 Dieser Bildschirm enthält die Postanschrift des ausgewählten Profils:
 
@@ -49,7 +49,7 @@ Dieser Bildschirm enthält die Postanschrift des ausgewählten Profils:
 
 Hier werden zudem der Qualitätsindex sowie die Anzahl von fehlgeschlagenen Sendeversuchen in Bezug auf diese Adresse hinterlegt. Diese Informationen werden direkt vom für die Briefpost zuständigen Dienstleister eingespeist und können nicht manuell geändert werden.
 
-## Tab &quot;Sonstige&quot;{#other-tab}
+## Tab &quot;Sonstige&quot; {#other-tab}
 
 Dieser Bildschirm enthält frei vom Benutzer definierbare Felder. Sie haben über das Menü **[!UICONTROL Feldeigenschaften...]** die Möglichkeit, Felder umzubenennen oder das Format zu ändern, wie das folgende Beispiel zeigt:
 
@@ -59,7 +59,7 @@ Dieser Bildschirm enthält frei vom Benutzer definierbare Felder. Sie haben übe
 >
 >Auf [dieser Seite](../../configuration/using/new-field-wizard.md) finden Sie weitere Angaben zu den Feldeigenschaften und zum Hinzufügen von Feldern.
 
-## Tab &quot;Listen&quot;{#lists-tab}
+## Tab &quot;Listen&quot; {#lists-tab}
 
 Dieser Bildschirm zeigt an, welchen Gruppen der ausgewählte Empfänger angehört. Durch Klick auf die Schaltfläche **[!UICONTROL Hinzufügen]** kann das Profil zu einer Liste hinzugefügt werden. Klicken Sie auf die Schaltfläche **[!UICONTROL Details]**, um die Beschreibung der Liste und alle enthaltenen Profile anzuzeigen.
 
@@ -67,7 +67,7 @@ Dieser Bildschirm zeigt an, welchen Gruppen der ausgewählte Empfänger angehör
 
 Weitere Informationen finden Sie unter [Listen erstellen und verwalten](../../platform/using/creating-and-managing-lists.md).
 
-## Tab &quot;Abonnements&quot;{#subscriptions-tab}
+## Tab &quot;Abonnements&quot; {#subscriptions-tab}
 
 Dieser Bildschirm enthält die Informationsdienste, die das Profil abonniert hat.
 
@@ -77,7 +77,7 @@ Die Schaltfläche **[!UICONTROL Details]** zeigt die Eigenschaften des ausgewäh
 
 Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/managing-subscriptions.md).
 
-## Tab &quot;Sendungen&quot;{#deliveries-tab}
+## Tab &quot;Sendungen&quot; {#deliveries-tab}
 
 Dieser Bildschirm enthält die Versandlogs für das ausgewählte Profil. Es werden Titel, Datum und Status aller an das Profil adressierten Sendungen für alle Kanäle angezeigt.
 
