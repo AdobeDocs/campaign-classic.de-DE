@@ -19,7 +19,7 @@ Diese Seite führt [!DNL Gold Standard]-Versionen auf. Weitere Infos zu Campaign
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard]-Version 11{#gs-11}
 
-_14. April 2021_
+_Mittwoch, 14. April 2021_
 
 Build 9032@d030c36 umfasst die folgende Fehlerkorrektur:
 
@@ -38,7 +38,7 @@ Build 9032@d030c36 umfasst die folgende Fehlerkorrektur:
 >
 Weitere Informationen finden Sie in den häufig gestellten Fragen zum [[!DNL Gold Standard] -Upgrade auf Version 11](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html)
 
-_2. März 2021_
+_Dienstag, 2. März 2021_
 
 Build 9032@10c2709 umfasst die folgende Fehlerkorrektur:
 
@@ -50,7 +50,7 @@ Build 9032@10c2709 umfasst die folgende Fehlerkorrektur:
 >
 > Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
-_22. Dezember 2020_
+_Dienstag, 22. Dezember 2020_
 
 <!--
 >[!CAUTION]
@@ -75,7 +75,7 @@ Der Build 9032@d3b452f umfasst die folgenden Verbesserungen und Fehlerbehebungen
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard]-Version 10{#gs-10}
 
-_7. Juli 2020_
+_Dienstag, 7. Juli 2020_
 
 Build 9032@efd8a94 umfasst die folgende Fehlerkorrektur:
 
@@ -107,7 +107,7 @@ Die folgenden Fehlerkorrekturen beziehen sich auf den Sicherheitsmechanismus von
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard]-Version 8{#gs-8}
 
-_29. April 2020_
+_Mittwoch, 29. April 2020_
 
 Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 
@@ -132,7 +132,7 @@ Build 9032@3a9dc9c umfasst die folgenden Fehlerkorrekturen:
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard]-Version 6{#gs-6}
 
-_9. März 2020_
+_Montag, 9. März 2020_
 
 Build 9032@19f73c5 umfasst die folgende Fehlerkorrektur:
 
@@ -140,7 +140,7 @@ Build 9032@19f73c5 umfasst die folgende Fehlerkorrektur:
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard]-Version 5{#gs-5}
 
-_17. Dezember 2019_
+_Dienstag, 17. Dezember 2019_
 
 Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
@@ -148,7 +148,7 @@ Build 9032@d6b8062 umfasst die folgende Fehlerkorrektur:
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard]-Version 4{#gs-4}
 
-_11. Dezember 2019_
+_Mittwoch, 11. Dezember 2019_
 
 Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
@@ -156,7 +156,7 @@ Build 9032@bc4a935 umfasst die folgende Fehlerkorrektur:
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard]-Version 3{#gs-3}
 
-_20. November 2019_
+_Mittwoch, 20. November 2019_
 
 Build 9032@3468c7b umfasst die folgenden Fehlerkorrekturen:
 
@@ -166,7 +166,7 @@ Build 9032@3468c7b umfasst die folgenden Fehlerkorrekturen:
 
 ## ![](assets/do-not-localize/red_2.png) [!DNL Gold Standard]-Version 2{#gs-2}
 
-_19. September 2019_
+_Donnerstag, 19. September 2019_
 
 Build 9032@cee805c umfasst die folgenden Fehlerkorrekturen:
 
@@ -175,7 +175,7 @@ Build 9032@cee805c umfasst die folgenden Fehlerkorrekturen:
 
 ## ![](assets/do-not-localize/red_2.png) Version 19.1.4 – Build 9032{#release-19-1-4-build-9032}
 
-_13. August 2019_
+_Dienstag, 13. August 2019_
 
 Der erste Build 19.1.4 enthält die folgenden Fehlerkorrekturen:
 
