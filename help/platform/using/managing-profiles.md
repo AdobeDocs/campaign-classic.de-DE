@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: profile-management
 exl-id: e1d0556a-6f30-4863-9025-eb9c1b8b53d3
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Jeder Knoten entspricht einem Ordner. Die Daten eines Ordners sind als in sich a
 >
 >Um eine Liste aller in der Datenbank enthaltenen Empfänger anzuzeigen, ist die Erstellung einer Ansicht erforderlich. Weitere Informationen finden Sie unter [Ordner und Ansichten](../../platform/using/access-management-folders.md).
 
-## Empfänger verschieben {#moving-recipients} 
+## Empfänger verschieben   {#moving-recipients}
 
 Sie können einen Empfänger oder eine Gruppe von Empfängern markieren und per Drag-and-drop aus der Liste in einen anderen Ordner verschieben. Vor der endgültigen Verschiebung ist eine Bestätigung Ihrerseits erforderlich.
 
