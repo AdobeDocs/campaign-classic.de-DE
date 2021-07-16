@@ -7,13 +7,13 @@ role: null
 level: null
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2289'
 ht-degree: 100%
 
 ---
 
-# Version 18.4{#release-18-4}
+# Version 18.4{#release-18-4}
 
 ## Version 18.4.5 – Build 8937{#release-18-4-5-build-8937}
 
