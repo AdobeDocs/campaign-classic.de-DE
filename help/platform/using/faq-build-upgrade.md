@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 85e2135d-a1a3-44f0-a4f9-de38db5c8726
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2027'
 ht-degree: 100%
 
 ---
 
-# Häufig gestellte Fragen zum Build-Upgrade{#build-upgrade-faq}
+# Häufig gestellte Fragen zum Build-Upgrade {#build-upgrade-faq}
 
 Adobe Campaign wird regelmäßig aktualisiert. Wenn Sie unsere veröffentlichten [Versionshinweise](../../rn/using/rn-overview.md) kennen, wissen Sie wahrscheinlich, dass jedes Jahr im Schnitt zwei bis drei kleinere Versionen mit neuen Funktionen, Verbesserungen und Korrekturen herausgebracht werden. Zusätzlich veröffentlichen wir regelmäßig Builds, die ausschließlich Fehlerkorrekturen enthalten. Durch diese regelmäßige Bereitstellung von Updates soll sichergestellt werden, dass Sie stets die beste und neueste Version nutzen, sodass Ihre Umgebung sicher ist und Ihre Zufriedenheit bei der Nutzung unserer Produkte laufend steigt.
 
@@ -94,7 +94,7 @@ Für das Build-Upgrade sind die folgenden Ressourcen erforderlich:
 
 ## Wie bereite ich das Build-Upgrade vor?
 
-Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/de/campaign/classic/how-to/generate-packages-in-acv6.html).
+Exportieren Sie in Ihren Entwicklungs- und Staging-Systemen alle Projekte, die wichtig sind und erhalten werden müssen. Weitere Informationen dazu finden Sie in diesem [Video](https://helpx.adobe.com/campaign/classic/how-to/generate-packages-in-acv6.html).
 
 Frischen Sie Ihr Wissen über die wichtigsten Pfad-Workflows und Sendungen auf, die in Ihren Runbooks (oder durch Ihr Beraterteam/Ihren Partner) entwickelt wurden, indem Sie die Dokumentation lesen, die Ihrem Team nach der Implementierung bereitgestellt wird.
 
@@ -102,7 +102,7 @@ Ermitteln Sie Zeiten mit geringem Datenvolumen oder Traffic, die sich ideal für
 
 Gehen Sie unsere unten aufgeführte [Upgrade-Checkliste](#check-list) und Ihre Testpläne durch und stellen Sie sicher, dass Ressourcen, die diese Tests durchführen können, innerhalb von 24 bis 48 Stunden ab dem Ende des Upgrades verfügbar sind.
 
-Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html).
+Weitere Informationen finden Sie in [diesem Dokument](https://helpx.adobe.com/campaign/kb/acc-build-upgrade.html).
 
 ## Können Build-Upgrades nachts oder außerhalb der Geschäftszeiten durchgeführt werden?
 
