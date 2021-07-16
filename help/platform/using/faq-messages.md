@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 
 ### Was ist eine Typologieregel? {#what-is-a-typology-rule-}
 
-Um Konflikte zwischen Kampagnen zu vermeiden oder beispielsweise keinen erhöhten Werbedruck zu erzeugen, testet Adobe Campaign unterschiedliche Zusammenstellungen und Kombinationen von Sendungen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
+Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
 [Hier erfahren Sie mehr darüber](../../campaign/using/about-campaign-typologies.md).
 
