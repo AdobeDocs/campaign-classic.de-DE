@@ -57,7 +57,7 @@ Erwecken Sie die Aufmerksamkeit Ihrer Kunden und verbessern Sie Ihre Antwortrate
 
 ### Analyse und Reporting {#analysis-and-reporting}
 
-Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Berichts- und Analysewerkzeuge trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketingmaßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert. Weiterführende Informationen zu diesem Thema finden Sie auf [dieser Seite](../../reporting/using/delivery-reports.md).
+Adobe Campaign ermöglicht es Ihnen, das Verhalten Ihrer Kunden zu verfolgen und besser zu verstehen, indem Sie Daten und Profile kontinuierlich anreichern. Dank der Berichts- und Analyse-Tools trägt jede neue Kampagne zur Optimierung Ihrer Datenbestände bei. Marketing-Maßnahmen können besser auf die jeweiligen Zielgruppen abgestimmt werden und Wirksamkeit sowie ROI werden gesteigert. Weiterführende Informationen zu diesem Thema finden Sie auf [dieser Seite](../../reporting/using/delivery-reports.md).
 
 ### Integration mit Adobe Experience Cloud {#adobe-experience-cloud-integrations}
 
