@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: connectors
 exl-id: 7ccab3a4-f323-464a-9ec4-dd597279d0eb
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Dank der Connectoren ist eine schnelle und einfache Datenintegration möglich. M
 
 >[!NOTE]
 >
->Diese Funktion ist in Adobe Campaign über das Package **CRM Connectoren** verfügbar.
+>Diese Funktion ist in Adobe Campaign über das **CRM Connectoren-** Package verfügbar.
 
 
 ### Kompatible Systeme {#compatible-crm-systems-and-limitations}
@@ -34,7 +34,7 @@ Unterstützte CRM-Systeme und Versionen werden in der [Kompatibilitätsmatrix](.
 >
 >Die CRM-Connectoren funktionieren ausschließlich unter Verwendung einer sicheren URL (https).
 
-### Umsetzung {#crm-implementation-steps}
+### Implementierungsschritte {#crm-implementation-steps}
 
 Eine schrittweise Anleitung zum Verbinden von Campaign und Microsoft Dynamics finden Sie [in diesem Abschnitt](../../platform/using/crm-ms-dynamics.md).
 
