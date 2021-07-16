@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ## ![](assets/do-not-localize/green_2.png) Version 20.2.5 – Build 9188 {#release-20-2-5-build-9188}
 
-_15. April 2021_
+_Donnerstag, 15. April 2021_
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
 
@@ -25,9 +25,9 @@ _15. April 2021_
 
 >[!NOTE]
 >
-> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
+> Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/de/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
-_31. März 2021_
+_Mittwoch, 31. März 2021_
 
 **Verbesserungen**
 
@@ -46,7 +46,7 @@ _31. März 2021_
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.4 – Build 9187 {#release-20-2-4-build-9187}
 
-_15. April 2021_
+_Donnerstag, 15. April 2021_
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
 * Korrektur einer Regression, die die Verwendung einiger Konsolenkomponenten wie der Datumsauswahl und der Bildverwaltung in Sendungen verhinderte. (NEO-31453, NEO-31454)
@@ -57,7 +57,7 @@ _15. April 2021_
 >
 > Stellen Sie eine Verbindung zu [Adobe Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/campaign.html) her, um die neue Version herunterzuladen. Erfahren Sie [auf dieser Seite](../../installation/using/client-console-availability-for-windows.md), wie Sie die Konsolenaktualisierung allen Endbenutzern vorschlagen können.
 
-_22. Dezember 2020_
+_Dienstag, 22. Dezember 2020_
 
 >[!CAUTION]
 >
@@ -81,11 +81,11 @@ _22. Dezember 2020_
 * Fehlerkorrektur – Es wurden Probleme behoben, die bei der Sendungsvorbereitung oder der Vorschau eines wiederkehrenden Versands zum Absturz des Web-Prozesses führten. (NEO-27790, NEO-27517)
 * Fehlerkorrektur – Es wurde ein Fehler behoben, der zum Fehlschlagen von Sendungen oder Testsendungen führte, wenn diese von einem Benutzer ohne Administratorrechte ausgelöst wurden. (NEO-28597)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Weitere Infos](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version vom Oktober** mit Domain-Konfiguration unter Verwendung von CNAMEs und neuen Funktionen zur Datenbanküberwachung. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html?lang=de).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.3 – Build 9182 {#release-20-2-3-build-9182}
 
-_11. September 2020_
+_Freitag, 11. September 2020_
 
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass die Sendungsvorbereitung aufgrund einer einzigen fehlerhaften Funktion im Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
 * Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Veröffentlichung der Web-Applikation deaktiviert wurden. (NEO-27155)
@@ -98,7 +98,7 @@ _11. September 2020_
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.2 – Build 9180 {#release-20-2-2-build-9180}
 
-_22. Juli 2020_
+_Mittwoch, 22. Juli 2020_
 
 * Fehlerkorrektur – Tracking funktioniert jetzt, wenn die Signaturfunktion deaktiviert ist. (NEO-26411)
 * Fehlerkorrektur – Nicht signierte Links von personalisierten Domains werden nicht mehr blockiert, wenn sie zulässig sind. (NEO-25210)
@@ -123,11 +123,11 @@ _22. Juli 2020_
 * Nach dem Wechsel zum [neuen Sequenz-ID-Mechanismus](https://helpx.adobe.com/de/campaign/kb/sequence_auto_generation.html#Switchtoadedicatedsequence) werden alle Webanwendungen, die die Empfänger-Tabelle aktualisieren, während des Postupgrads erneut veröffentlicht.
 * Es wurde eine potenzielle XSS-Schwachstelle in Versandinhalt behoben. (NEO-17987, NEO-26073)
 
-![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Infos](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
+![](assets/do-not-localize/cp-icon.png) **Neue Control Panel-Version im Juni** mit der Überwachung aktiver Profile, der Prüfung der Subdomain-Zustellbarkeit und der GPG-Schlüsselverwaltung. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/release-notes.html).
 
 ## ![](assets/do-not-localize/red_2.png) Version 20.2.1 – Build 9178 {#release-20-2-1-build-9178}
 
-_8. Juni 2020_
+_Montag, 8. Juni 2020_
 
 **Neue Funktionen**
 
@@ -187,7 +187,7 @@ _8. Juni 2020_
 
 * Für zusätzliche Sicherheit wurde der MD5-Hashing-Algorithmus, der zum Generieren von Dateinamen dient, für den öffentlichen Dateiversand durch SHA256 verstärkt. (NEO-17044)
 
-* Für mehr Schutz gegen XSS-Angriffe werden Client-seitige Scripte beim Ausführen einer Mirrorseite deaktiviert. (NEO-17987)
+* Für mehr Schutz gegen XSS-Angriffe werden Client-seitige Skripte beim Ausführen einer Mirror-Seite deaktiviert. (NEO-17987)
 
 * Fehlerkorrektur – Der technische Workflow zur **Bereinigung von Datenschutzanfragen** kann jetzt Abstimmungsdaten löschen. (NEO-25168, NEO-21004)
 
@@ -204,11 +204,11 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
 
 **Verbesserungen**
 
-* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Veröffentlichung einer Transaktionsnachrichten-Vorlage jetzt aufheben, womit sie aus den Ausführungsinstanzen gelöscht wird. [Weitere Infos](../../message-center/using/publishing-message-templates.md#template-unpublication).
+* Transaktionsnachrichten wurden optimiert, um ein besseres Benutzererlebnis zu bieten. Sie können die Veröffentlichung einer Transaktionsnachrichten-Vorlage jetzt aufheben, womit sie aus den Ausführungsinstanzen gelöscht wird. [Weitere Informationen](../../message-center/using/publishing-message-templates.md#template-unpublication).
 
 * Es gibt neue Optionen zum Festlegen von Einschränkungen beim Senden von E-Mails, die Bilder oder Anhänge enthalten. Damit lassen sich Leistungsprobleme verhindern, was besonders bei Transaktionsnachrichten nützlich ist. [Mehr dazu](../../installation/using/configuring-campaign-options.md#delivery)
 
-* Mit der neuen Option **Versandteile in der Datenbank vorbereiten** kann die Versandvorbereitung direkt in der Datenbank vorgenommen werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur bei bestimmten Konfigurationen zur Verfügung. [Weitere Infos](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
+* Mit der neuen Option **Versandteile in der Datenbank vorbereiten** kann die Versandvorbereitung direkt in der Datenbank vorgenommen werden, was die Analyse erheblich beschleunigen kann. Diese Option steht nur bei bestimmten Konfigurationen zur Verfügung. [Weitere Informationen](../../delivery/using/steps-validating-the-delivery.md#improving-delivery-analysis). (NEO-23886)
 
 * Die Leistung der [CRM Connector-Aktivität](../../workflow/using/crm-connector.md) für Microsoft Dynamics wurde verbessert. (NEO-13303, NEO-12710)
 
@@ -218,19 +218,19 @@ Weiterführende Informationen finden Sie in der [Campaign-Kompatibilitätsmatrix
    >
    >Die Optimierung setzt einen zusätzlichen Schritt nach dem Upgrade voraus. Lesen Sie diesbezüglich den Abschnitt **Technische Entwicklungen** weiter unten.
 
-* Der Bereinigungs-Workflow wurde verbessert. Verwaiste Arbeitstabellen aller gelöschten Workflows werden vom Bereinigungs-Workflow jetzt auch automatisch gelöscht. [Weitere Infos](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
+* Der Bereinigungs-Workflow wurde verbessert. Verwaiste Arbeitstabellen aller gelöschten Workflows werden vom Bereinigungs-Workflow jetzt auch automatisch gelöscht. [Weitere Informationen](../../production/using/database-cleanup-workflow.md#cleanup-of-workflow-instances).
 
 * Zertifikate für iOS-Mobile Apps mit dem iOS-HTTP2-Connector werden jetzt vor dem Senden von Push-Benachrichtigungen validiert, was verhindert, dass Sendungen aufgrund abgelaufener Zertifikate fehlschlagen.
 
-* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Weitere Infos](../../installation/using/file-res-management.md).
+* Die Verwaltung von HTTP-Proxy-Verbindungen wurde verbessert. [Weitere Informationen](../../installation/using/file-res-management.md).
 
-* Neue Option in den Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]**, um die Ausführung nach einer Begrenzung zu beenden. Der Standardwert ist 1 Stunde. [Weitere Infos](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
+* Neue Option in den Workflow-Aktivitäten **[!UICONTROL JavaScript-Code]** und **[!UICONTROL Erweiterter JavaScript-Code]**, um die Ausführung nach einer Begrenzung zu beenden. Der Standardwert ist 1 Stunde. [Weitere Informationen](../../workflow/using/sql-code-and-javascript-code.md#javascript-code).
 
 **Sonstige Änderungen**
 
 * Alte SMS-Connectoren werden jetzt nicht mehr unterstützt. Weiterführende Informationen finden Sie auf der [Seite zu eingestellten Funktionen](../../rn/using/deprecated-features.md).
 
-* Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [Weitere Infos](../../delivery/using/inbox-rendering.md).
+* Sie können Ihr eigenes Litmus-Konto nicht mehr zur Bereitstellung und Verwendung von Inbox Rendering in Adobe Campaign nutzen. [Weitere Informationen](../../delivery/using/inbox-rendering.md).
 
 * Zur leichteren Unterscheidung von Ansichten und Ordnern wurde die Farbe der Ansichtnamen von dunkelblau in dunkeltürkis geändert. [Mehr dazu](../../platform/using/access-management-folders.md)
 
@@ -313,7 +313,7 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Workflows schlagen beim Ausführen einer Aktivität vom Typ **Anreicherung** jetzt nicht mehr fehl. (NEO-17338)
 * Zum Feld **Beizubehaltende Dubletten** in der Workflow-Aktivität **Deduplizierung** wurde eine Prüfung hinzugefügt, um die Eingabe von Null- oder Negativwerten zu verhindern.
 * Der **Planungsassistent** wurde aus den wiederkehrenden Kampagnen entfernt, um zu verhindern, dass Stunden und Minuten erwähnt werden. Es werden nur Datumswerte berücksichtigt.
-* Fehlerkorrektur – Es wurde ein Problem mit zusätzlichen Speicherfeldern behoben, das beim Erstellen von Sendungen mithilfe der Option **Wird durch ein Script erstellt** in der Workflow-Aktivität **Script** auftrat. (NEO-20609)
+* Fehlerkorrektur – Es wurde ein Problem mit zusätzlichen Speicherfeldern behoben, das beim Erstellen von Sendungen mithilfe der Option **Wird durch ein Skript erstellt** in der Workflow-Aktivität **Skript** auftrat. (NEO-20609)
 * Fehlerkorrektur – Geister-Workflows werden jetzt im Rahmen der Aufgaben zur Datenbankbereinigung gelöscht.
 * Fehlerkorrektur – Der technische Workflow **Abrechnung (aktive Profile)** schläft jetzt nicht mehr fehl. (NEO-19777)
 * Fehlerkorrektur – Es wurde ein Regressionsfehler bei Verwendung der ACS Connector-Funktion behoben, der die Verbindung zu einer Campaign Standard-Instanz verhinderte (fehlerhafte Verwaltung der FOH-/FOH2-Verbindung). (NEO-23433)
