@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1617'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -92,7 +92,7 @@ Das Datum der letzten Synchronisation wird in einer im Konfigurationsfenster ang
 >
 >Dieser Hinweis gilt nur für die allgemeine **[!UICONTROL CRM-Connector]**-Aktivität. Für andere CRM-Aktivitäten läuft der Prozess automatisch ab.
 >
->Diese Option muss unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** manuell erstellt und spezifiziert werden. Dabei muss es sich um eine Textoption handeln, deren Wert das folgende Format aufweist: **jjjj/MM/tt hh:mm:ss**.
+>Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **yyyy/MM/dd hh:mm:ss**.
 > 
 >Diese Option muss bei jedem weiteren Import manuell aktualisiert werden.
 
@@ -111,9 +111,9 @@ Die Aktivierung der Option **[!UICONTROL Automatischer Index]** erzeugt drei Var
 
    >[!NOTE]
    >
-   >Die Daten werden im Format **yyyy/MM/dd hh:mm:ss** ausgedrückt.
+   >Diese Daten werden im folgenden Format angezeigt: **yyyy/MM/dd hh:mm:ss**.
 
-### Filtern von Daten {#filtering-data}
+### Daten filtern {#filtering-data}
 
 Um eine effiziente Funktionsweise mit den diversen CRM-Systemen sicherzustellen, sind bei der Filtererstellung folgende Regeln zu beachten:
 
