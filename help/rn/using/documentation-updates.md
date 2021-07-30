@@ -6,9 +6,9 @@ feature: Übersicht
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
-source-wordcount: '4476'
+source-wordcount: '4485'
 ht-degree: 100%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 100%
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
 Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adobe Campaign Classic](../../rn/using/latest-release.md).
+
+## Juli 2021 {#july-2021}
+
+Die [Campaign-Version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330) ist jetzt allgemein verfügbar (General Availability, GA).
+
 
 ## Juni 2021 {#june-2021}
 
