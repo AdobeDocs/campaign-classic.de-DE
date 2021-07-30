@@ -4,8 +4,8 @@ title: 'Hilfe- und Support-Optionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
 
@@ -99,7 +99,7 @@ Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign
 >
 >Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
 >
->Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](rn/using/gs-overview.md)-Build oder dem [neuesten allgemein verfügbaren Build (21.1)](rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](rn/using/gs-overview.md)-Build oder dem [neuesten allgemein verfügbaren Build (21.1.3)](rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 
 ### Zugriff auf das Control Panel
 
@@ -107,7 +107,7 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 ### Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ### SFTP-Verwaltung
 
@@ -147,4 +147,4 @@ Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](ht
 
 Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
+Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
