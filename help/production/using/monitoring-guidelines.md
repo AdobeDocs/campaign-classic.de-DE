@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 30%
@@ -25,10 +25,10 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 
 ![](assets/monitoring_tab.png)
 
-## Überwachung von Campaign Classic-Prozessen {#monitoring-campaign-classic-processes}
+## Überwachen von Campaign Classic-Prozessen {#monitoring-campaign-classic-processes}
 
 <table>
-<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Instanz überwachen</a></p></td>
+<tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
 <td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Überwachen von Workflows</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Sendungen überwachen</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Überwachen der Datenbank</a></p></td></tr>
@@ -56,7 +56,7 @@ Im Control Panel können Sie verschiedene Einstellungen Ihrer Instanz verwalten:
 >
 >Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
 >
->Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md)-Build oder dem [neuesten allgemein verfügbaren Build (21.1)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](../../rn/using/gs-overview.md)-Build oder dem [neuesten allgemein verfügbaren Build (21.1.3)](../../rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](../../platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 
 ### Überwachung von Workflows {#monitoring-workflows}
 
@@ -84,13 +84,13 @@ Die Einhaltung von Richtlinien und Best Practices bei der Verwendung von Workflo
 * [Best Practices bei der Verwendung von Workflows](../../workflow/using/workflow-best-practices.md)
 * [Ausführung des Workflows überwachen](../../workflow/using/monitoring-workflow-execution.md)
 
-### Sendungen überwachen {#monitoring-deliveries}
+### Überwachen von Sendungen {#monitoring-deliveries}
 
 <img src="assets/do-not-localize/icon_send.svg" width="60px">
 
 **SMTP-Berichte**
 
-SMTP-Berichte zeigen Versandstatistiken und SMTP-Fehler nach Domain an. [Mehr dazu](../../production/using/monitoring-processes.md)
+SMTP-Berichte zeigen Versandstatistiken und SMTP-Fehler nach Domain an. [Weitere Informationen](../../production/using/monitoring-processes.md)   
 
 **Best Practices**
 
@@ -127,7 +127,7 @@ Es wird empfohlen, die Datenbankwartung regelmäßig durchzuführen, um zu verme
 
 Eine Sicherung ist unerlässlich, um zu verhindern, dass Daten im Falle eines (physischen oder systembezogenen) Problems auf einem Computer verloren gehen. [Klicken Sie hier](../../production/using/backup.md), um weitere Informationen zu erhalten. Das Wiederherstellungsverfahren wird in [diesem Abschnitt](../../production/using/restoration.md) beschrieben.
 
-## Campaign Classic-technische Grundsätze {#campaign-classic-technical-principles}
+## Technische Campaign Classic {#campaign-classic-technical-principles}
 
 Technische Ressourcen finden Sie in der Dokumentation zum Campaign Classic. Wir empfehlen Ihnen, sich mit diesen Themen vertraut zu machen, bevor Sie einen technischen Vorgang auf Ihrer Instanz durchführen.
 
