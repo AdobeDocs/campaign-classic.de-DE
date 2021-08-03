@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 11de485a97d112b308c145775537d9b6255f124f
+source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 79%
+source-wordcount: '1827'
+ht-degree: 78%
 
 ---
 
@@ -74,7 +74,7 @@ Um das externe Konto für **[!UICONTROL Bounce-Messages (defaultPopAccount)]** z
 
    Typ der gewählten Verschlüsselung: **[!UICONTROL Standardmäßig]**, **[!UICONTROL POP3 + STARTTLS]**, **[!UICONTROL POP3]** oder **[!UICONTROL POP3S]**.
 
-### Routing             {#routing-external-account}
+### Routing{#routing-external-account}
 
 Mit dem externen **[!UICONTROL Routing]**-Konto können Sie jeden in Adobe Campaign verfügbaren Kanal abhängig von den installierten Packages konfigurieren.
 
@@ -93,7 +93,7 @@ Die folgenden Kanäle können konfiguriert werden:
 * [Android-Kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
 
-### Ausführungsinstanz konfigurieren  {#execution-instance-external-account}
+### Ausführungsinstanz  {#execution-instance-external-account}
 
 Wenn Sie eine aufgegliederte Architektur haben, müssen Sie die mit der Kontrollinstanz verbundenen Ausführungsinstanzen spezifizieren und miteinander verbinden. Transaktionsnachrichtenvorlagen werden in der Ausführungsinstanz bereitgestellt.
 
@@ -288,19 +288,17 @@ Mit dem externen Konto **[!UICONTROL AEM (AEM-Instanz)]** können Sie den Inhalt
 
 Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../integrations/using/about-adobe-experience-manager.md).
 
-
-
 ## Externe CRM-Connector-Konten
 
 ### Microsoft Dynamics CRM {#microsoft-dynamics-crm-external-account}
 
-Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
-
-Weitere Informationen zum CRM-Connector für Campaign mit Microsoft Dynamics finden Sie auf dieser [Seite](../../platform/using/crm-ms-dynamics.md).
-
 >[!NOTE]
 >
 > **[!UICONTROL Die Bereitstellungstypen On-]** Premise und  **[!UICONTROL Office 365]**  sind jetzt veraltet. [Weitere Informationen](../../rn/using/deprecated-features.md).
+
+Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
+
+Weitere Informationen zum CRM-Connector für Campaign mit Microsoft Dynamics finden Sie auf dieser [Seite](../../platform/using/crm-ms-dynamics.md).
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
 
@@ -314,13 +312,15 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
    URL Ihres Microsoft CRM-Servers
 
+   Um Ihre Microsoft CRM **[!UICONTROL Server-URL]** zu finden, rufen Sie Ihr Microsoft Dynamics CRM-Konto auf, klicken Sie dann auf **Dynamics 365** und wählen Sie Ihre App aus. Sie finden dann Ihre **[!UICONTROL Server-URL]** in der Adressleiste Ihres Browsers, z. B. `https://myserver.crm.dynamics.com/`.
+
 * **[!UICONTROL Client-Kennung]**
 
    Client-ID, die Sie über das Verwaltungsportal von Microsoft Azure in der Kategorie **[!UICONTROL Code aktualisieren]** im Feld **[!UICONTROL Client-ID]** finden.
 
 * **[!UICONTROL CRM-Version]**
 
-   Version des CRM: **[!UICONTROL Dynamics CRM 2007]**, **[!UICONTROL Dynamics CRM 2015]** oder **[!UICONTROL Dynamics CRM 2016]**
+   Wählen Sie die CRM-Version **[!UICONTROL Dynamics CRM 365]** aus.
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Zertifikat]** müssen Sie die folgenden Details angeben:
 
@@ -330,9 +330,13 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
    URL Ihres Microsoft CRM-Servers
 
+   Um Ihre Microsoft CRM **[!UICONTROL Server-URL]** zu finden, rufen Sie Ihr Microsoft Dynamics CRM-Konto auf, klicken Sie dann auf **Dynamics 365** und wählen Sie Ihre App aus. Sie finden dann Ihre **[!UICONTROL Server-URL]** in der Adressleiste Ihres Browsers, z. B. `https://myserver.crm.dynamics.com/`.
+
 * **[!UICONTROL Privater Schlüssel (Base64-kodiert)]**
 
-   Privater Schlüssel mit Base64-Kodierung
+   Beachten Sie, dass der private Schlüssel in Base64 kodiert werden muss.
+
+   Dazu können Sie die Hilfe eines Base64-Encoder verwenden oder die Befehlszeile `base64 -w0 private.key` für Linux verwenden.
 
 * **[!UICONTROL Benutzerdefinierte Schlüsselkennung]**
 
@@ -348,7 +352,7 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../platform/using/crm-connectors.md).
 
-### Salesforce.com CRM {#salesforce-crm-external-account}
+### Salesforce.com CRM  {#salesforce-crm-external-account}
 
 Das externe **[!UICONTROL Salesforce CRM]**-Konto ermöglicht den Import und Export von Salesforce-Daten in Adobe Campaign.
 
@@ -420,7 +424,7 @@ Mit dem externen Konto **Azure Blob Storage** können Daten mithilfe einer Workf
 
 ![](assets/ext_account_23.png)
 
-Um das externe Azure-Konto **[!UICONTROL für die Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Details angeben:]**
+Um das externe **** Azure-Konto für die gemeinsame Verwendung mit Adobe Campaign zu konfigurieren, müssen Sie die folgenden Informationen eingeben:
 
 * **[!UICONTROL Server]**
 
@@ -432,4 +436,4 @@ Um das externe Azure-Konto **[!UICONTROL für die Verwendung mit Adobe Campaign 
 
 * **[!UICONTROL Zugriffsschlüssel]**
 
-   Informationen darüber, wo Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden, erfahren Sie auf dieser [Seite](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+   Informationen darüber, wo Sie Ihren **[!UICONTROL Zugriffsschlüssel]** finden, erfahren Sie auf dieser [Seite](https://docs.microsoft.com/de-de/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
