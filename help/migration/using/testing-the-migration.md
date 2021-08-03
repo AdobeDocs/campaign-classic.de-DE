@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: 228ee9e4-46a0-4d82-b8ba-b019bc0e7cac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 571dd96d1f3bff5c3dab05dce5319f913f29a670
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '701'
 ht-degree: 3%
 
 ---
@@ -70,7 +70,7 @@ Mithilfe verschiedener Optionen können Sie die Auswirkungen einer Migration mes
 >
 >Sie müssen die Option **-instance:`<instanceame>`** verwenden. Es wird nicht empfohlen, die Option **-allinstances** zu verwenden.
 
-### -showCustomEntities und -showDeletedEntities options {#showcustomentities-and--showdeletedentities-options}
+### -showCustomEntities und -showDeletedEntities-Optionen {#showcustomentities-and--showdeletedentities-options}
 
 * Die Option **-showCustomEntities** zeigt die Liste aller nicht standardmäßigen Objekte an:
 
@@ -156,7 +156,13 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> SQLDATA<br /> </td> 
    <td> PU-0006<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Wenn Sie Fehlerprotokolle für Webanwendungen vom Typ Übersicht erhalten (Migration von v6.02), finden Sie weitere Informationen unter <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Webanwendungen</a>.<br />. </td> 
+   <td> Dieser Fehlertyp führt zu einem Migrationsfehler. Siehe <a href="../../migration/using/general-configurations.md#sqldata" target="_blank">SQLData</a>. Wenn Sie Fehlerprotokolle für Webanwendungen vom Typ Übersicht erhalten (Migration von v6.02), finden Sie weitere Informationen unter <a href="../../migration/using/specific-configurations-in-v6-02.md#web-applications" target="_blank">Konfigurieren von Campaign</a>.<br />. </td> 
+  </tr>
+  <tr> 
+   <td> crmDeploymentType="onpremise"<br /> </td> 
+   <td> PU-0007<br /> </td> 
+   <td> Fehler<br /> </td> 
+   <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp von Microsoft CRM-Connectoren für Office 365 und On-Premise wurde eingestellt</a>. Informationen zum Wechsel zur Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>
