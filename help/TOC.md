@@ -7,10 +7,10 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: Adobe Campaign Classic
 type: Documentation
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: ht
-source-wordcount: '2518'
-ht-degree: 100%
+source-git-commit: a54a6f9b8afedf8a200b80b027f908163faebeaa
+workflow-type: tm+mt
+source-wordcount: '2525'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,6 @@ ht-degree: 100%
    + [Eingestellte Funktionen](rn/using/deprecated-features.md)
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/technote.md)
-   + [Häufig gestellte Fragen zum Adobe Analytics Connector](technotes/aa-connector-migration.md)
    + [Aktualisierung des iOS-Zertifikats](technotes/ios-certificate-update.md)
    + [Aktualisierungen der Campaign-Konfiguration](technotes/acc-config-updates.md)
    + [Aktualisierung von &quot;Getrackte URLs&quot;](technotes/tracked-urls.md)
@@ -117,8 +116,10 @@ ht-degree: 100%
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
          + [Synchronisieren von Daten mit CRM](platform/using/crm-data-sync.md)
-      + [Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
-      + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector-legacy.md)
+      + Adobe Analytics Connector{#analytics-connector}
+         + [Integration von Adobe Analytics Connector](platform/using/adobe-analytics-connector.md)
+         + [Migrieren zum Adobe Analytics Connector](technotes/aa-connector-migration.md)
+         + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector-legacy.md)
    + [Hilfe- und Support-Optionen](support.md)
 + Nachrichten erstellen und senden {#sending-messages}
    + [Erste Schritte mit Nachrichten](delivery/using/communication-channels.md)
