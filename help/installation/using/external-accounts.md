@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: administration-basics
 exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
-source-git-commit: 94664ec56d269afef926663c52b84ccaaab02480
+source-git-commit: 7adde72f615e7c697fa2284235e180c29bc6d470
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 78%
@@ -92,7 +92,6 @@ Die folgenden Kanäle können konfiguriert werden:
 * [iOS-Kanal](../../delivery/using/configuring-the-mobile-application.md)
 * [Android-Kanal](../../delivery/using/configuring-the-mobile-application-android.md)
 
-
 ### Ausführungsinstanz  {#execution-instance-external-account}
 
 Wenn Sie eine aufgegliederte Architektur haben, müssen Sie die mit der Kontrollinstanz verbundenen Ausführungsinstanzen spezifizieren und miteinander verbinden. Transaktionsnachrichtenvorlagen werden in der Ausführungsinstanz bereitgestellt.
@@ -112,7 +111,6 @@ Wenn Sie eine aufgegliederte Architektur haben, müssen Sie die mit der Kontroll
    Passwort des Kontos, wie es im Benutzerordner definiert ist
 
 Weiterführende Informationen zur Konfiguration finden Sie auf dieser [Seite](../../message-center/using/configuring-instances.md#control-instance).
-
 
 ## Zugriff auf externe Systemkonten
 
