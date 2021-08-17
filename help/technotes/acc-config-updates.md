@@ -5,8 +5,8 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 037e56040bd63edfdfee5ab6bf73b45d3a138072
-workflow-type: ht
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ Wenn Sie [per Adobe ID](../integrations/using/about-adobe-id.md) über Adobe Ide
 
 * Gold Standard 11. [Weitere Informationen](../rn/using/gold-standard.md)
 * Campaign-Version 21.1.1. [Weitere Informationen](../rn/using/latest-release.md)
-* Campaign-Version 20.2.4. [Weitere Informationen](../rn/using/release--20-2.md)
+* Campaign-Version 20.2.5. [Weitere Informationen](../rn/using/release--20-2.md)
 * Campaign-Version 20.1.4. [Weitere Informationen](../rn/using/release--20-1.md)
 * Campaign-Version 19.2.4. [Weitere Informationen](../rn/using/release--19-2.md)
 * Campaign-Version 19.1.8. [Weitere Informationen](../rn/using/release--19-1.md)
