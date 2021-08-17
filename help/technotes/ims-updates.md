@@ -4,8 +4,8 @@ title: Aktualisieren Ihrer Umgebung zur Verbindung mit Adobe Campaign mit IMS
 description: Campaign – IMS-Aktualisierungen
 hide: true
 hidefromtoc: true
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
-workflow-type: ht
+source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Wenn Sie bereits ein Upgrade durchgeführt haben, aber eine alte Version von Mic
 
    * Gold Standard 11. [Weitere Informationen](../rn/using/gold-standard.md)
    * Campaign-Version 21.1.3. [Weitere Informationen](../rn/using/latest-release.md)
-   * Campaign-Version 20.2.4. [Weitere Informationen](../rn/using/release--20-2.md)
+   * Campaign-Version 20.2.5. [Weitere Informationen](../rn/using/release--20-2.md)
    * Campaign-Version 20.1.4. [Weitere Informationen](../rn/using/release--20-1.md)
    * Campaign-Version 19.2.4. [Weitere Informationen](../rn/using/release--19-2.md)
    * Campaign-Version 19.1.8. [Weitere Informationen](../rn/using/release--19-1.md)
@@ -75,7 +75,7 @@ Die folgende Warnmeldung wird Benutzern angezeigt, wenn sie ihre Client-Konsole 
 
 ![](../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html)
+Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 **Ab dem 30. Juni 2021** wird die folgende Meldung angezeigt und Sie können keine Verbindung mehr zu Adobe Campaign herstellen:
 
