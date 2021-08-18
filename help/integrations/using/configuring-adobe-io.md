@@ -8,10 +8,10 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: f4c6e416353d6b921cefced830b3380996f10751
+source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 96%
+source-wordcount: '721'
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,9 @@ ht-degree: 96%
 
 >[!CAUTION]
 >
->Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**.
->Beachten Sie, dass während dieser Umstellung auf [!DNL Adobe I/O] einige eingehende Trigger verloren gehen können.
+>Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**. Der ältere OAuth-Authentifizierungsmodus für Campaign wird am 30. November 2021 eingestellt. [Weitere Informationen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)
 >
->Der alte oAuth-Authentifizierungsmodus mit Campaign wird für **18. August 2021** bei Hybrid- und On-Premise-Umgebungen und für gehostete Umgebungen am **30. November 2021** eingestellt. [Weitere Informationen](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411)   
-
+>Beachten Sie, dass während dieser Umstellung auf [!DNL Adobe I/O] einige eingehende Trigger verloren gehen können.
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
