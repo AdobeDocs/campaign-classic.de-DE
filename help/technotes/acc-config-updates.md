@@ -5,10 +5,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 8e18a3633e6b806a971678d985c55c123854438e
+source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1110'
+ht-degree: 96%
 
 ---
 
@@ -103,7 +103,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 ## Integration mit Experience Cloud-Triggern {#acc-triggers-updates}
 
-Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der Einrichtung einer OAuth-Authentifizierung für den Pipeline-Zugriff basierte, wurde in Adobe I/O verschoben. Sie wird am **30. November 2021** eingestellt. [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde in Adobe I/O verschoben. Sie wird am **18. August 2021** für hybride und On-Premise-Umgebungen und am **30. November 2021** für gehostete Umgebungen eingestellt. [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
 
 **Sind Sie betroffen?**
 
