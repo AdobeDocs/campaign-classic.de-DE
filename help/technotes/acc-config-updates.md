@@ -5,10 +5,10 @@ description: Technote
 hide: true
 hidefromtoc: true
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: 601cc3883d7fa8abaa86161365c4230cbe30765c
+source-git-commit: 550c4afc5cc77867b56d17565bef3f18b1df12a2
 workflow-type: tm+mt
-source-wordcount: '1110'
-ht-degree: 96%
+source-wordcount: '1131'
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 ## Integration mit Experience Cloud-Triggern {#acc-triggers-updates}
 
-Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde in Adobe I/O verschoben. Sie wird am **18. August 2021** für hybride und On-Premise-Umgebungen und am **30. November 2021** für gehostete Umgebungen eingestellt. [Weitere Informationen](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/APIEOL.md?mv=email).
+Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde in Adobe I/O verschoben. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **18. August 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 30. November 2021 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum 30. November 2021 zu erweitern. Sie müssen [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) für Adobe angeben.
 
 **Sind Sie betroffen?**
 
