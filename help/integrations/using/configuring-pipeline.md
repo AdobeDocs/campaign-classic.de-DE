@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 6a5253c1aa35e904635919f6c863930d376b473f
+source-git-commit: b6aa797133e6f916bf085794aeb99d61a8f7bc40
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '914'
 ht-degree: 99%
 
 ---
@@ -17,10 +17,6 @@ ht-degree: 99%
 Authentifizierungsparameter wie die Kunden-ID, der private Schlüssel und der Authentifizierungsendpunkt werden in den Konfigurationsdateien der Instanz konfiguriert.
 Die Liste der zu verarbeitenden Auslöser wird in einer Option im JSON-Format konfiguriert.
 Die Auslöser werden für die Zielgruppenbestimmung eines Kampagnen-Workflows verwendet, der E-Mails sendet. Die Kampagne ist so eingerichtet, dass ein Kunde, der beide Auslöserereignisse aufweist, eine E-Mail erhält.
-
->[!CAUTION]
->
->Bei Hybrid-Bereitstellungen muss die Pipeline auf einer Mid-Sourcing-Instanz konfiguriert sein.
 
 ## Voraussetzungen {#prerequisites}
 
