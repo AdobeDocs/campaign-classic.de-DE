@@ -2,14 +2,11 @@
 product: campaign
 title: Version 19.2
 description: Versionshinweise zu Campaign 19.2
-feature: null
-role: null
-level: null
 exl-id: 3c529e4e-8787-41d2-b85d-3feaa5432196
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
+source-git-commit: 2a92cfc705e27332cfdf8c7357a6a03c84dc6c9f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1542'
+ht-degree: 100%
 
 ---
 
