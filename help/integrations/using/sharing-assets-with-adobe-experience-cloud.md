@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: asset-sharing
 exl-id: b28aa5a5-afba-458b-8a85-375493c6c836
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: ht
-source-wordcount: '171'
-ht-degree: 100%
+source-git-commit: eb630b29dba8cc34046e2f14e9ed6ba8c017ea5d
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 86%
 
 ---
 
@@ -30,4 +30,4 @@ Weitere Informationen zu den Besonderheiten der einzelnen Bibliotheken finden Si
 
 >[!NOTE]
 >
->In einer Adobe Campaign On-Premise-Umgebung ist die Integration mit Assets Core Service und AEM Assets nur unter der Voraussetzung verfügbar, dass AEM Assets ebenfalls On-Premise benutzt wird.
+>Im Kontext einer On-Premise-Umgebung von Adobe Campaign ist die Integration mit Assets Core Service nicht verfügbar, es sei denn, AEM Assets ist ebenfalls On-Premise.
