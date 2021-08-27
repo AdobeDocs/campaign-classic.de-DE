@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 2c548465a73bcd817c6d2b18853f4f074ed6adfa
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 91%
+source-wordcount: '1160'
+ht-degree: 87%
 
 ---
 
@@ -18,6 +18,15 @@ ht-degree: 91%
 ![](../../assets/v7-only.svg)
 
 Diese Seite führt [!DNL Gold Standard]-Versionen auf. Weitere Infos zu Campaign [!DNL Gold Standard] finden Sie [auf dieser Seite](gs-overview.md).
+
+## ![](assets/do-not-localize/limited_2.png) [!DNL Gold Standard]-Version 12{#gs-12}
+
+_27. August 2021_
+
+Build 9032@99a3894 umfasst die folgenden Fehlerkorrekturen:
+
+* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt kodiert.
+* Fehlerkorrektur - Bei der Datumsauswahl wird in der Konsole keine Blocker-Fehlermeldung mehr angezeigt. (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard]-Version 11{#gs-11}
 
