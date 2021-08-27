@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: case-study
 exl-id: 77fee343-09d1-4d60-be43-efe02953a70c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 100%
 
 ---
 
 # Ausgehender Kanal{#offers-on-an-outbound-channel}
+
+![](../../assets/v7-only.svg)
 
 ## Angebote per E-Mail versenden {#email-offer-delivery}
 
@@ -60,7 +62,7 @@ Angenommen, Sie verfügen in Ihrer Datenbank über eine Reihe von Angeboten für
 
    ![](assets/offer_delivery_example_010.png)
 
-## Angebote simulieren {#perform-an-offer-simulation}
+## Durchführen einer Angebotssimulation {#perform-an-offer-simulation}
 
 1. Klicken Sie im Tab **[!UICONTROL Profile und Zielgruppen]** auf die Schaltfläche **[!UICONTROL Simulationen]** und anschließend auf **[!UICONTROL Erstellen]**.
 

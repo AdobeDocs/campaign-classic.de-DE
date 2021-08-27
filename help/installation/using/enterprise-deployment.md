@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 38c14010-203a-47ab-b23d-6f431dab9a88
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 8%
@@ -14,6 +14,8 @@ ht-degree: 8%
 ---
 
 # Enterprise-Freigabe{#enterprise-deployment}
+
+![](../../assets/v7-only.svg)
 
 Dies ist die vollständigste Konfiguration. Sie baut auf der Standardkonfiguration auf, um mehr Sicherheit und Verfügbarkeit zu gewährleisten:
 
@@ -46,7 +48,7 @@ Höhere Hardware- und Verwaltungskosten.
 >
 >Es ist möglich, einen vorhandenen Lastenausgleich für Traffic zu den Umleitungsservern wiederzuverwenden.
 
-## Installations- und Konfigurationsschritte {#installation-and-configuration-steps}
+## Installation und Konfiguration {#installation-and-configuration-steps}
 
 ### Voraussetzungen {#prerequisites}
 
@@ -121,7 +123,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
       Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      or
+      oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 
@@ -193,7 +195,7 @@ Die Schritte zur Installation des ersten Servers sind:
 
    ![](assets/s_ncs_install_access_client.png)
 
-### Installieren und Konfigurieren des Anwendungsservers 2 {#installing-and-configuring-the-application-server-2}
+### Installation und Konfiguration des Anwendungsservers 2 {#installing-and-configuring-the-application-server-2}
 
 Gehen Sie wie folgt vor:
 

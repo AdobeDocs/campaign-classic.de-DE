@@ -5,8 +5,8 @@ description: Erfahren Sie mehr über die Workflows für Datenschutzbestimmungen.
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 
 
 # Datenschutzbestimmung{#general-data-protection-regulation-gdpr}
+
+![](../../assets/common.svg)
 
 Die unten aufgeführten Workflows werden standardmäßig mit dem Modul **Datenschutzbestimmung** installiert. Weiterführende Informationen zu diesem Modul finden Sie in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html).
 

@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d8960a2e-6900-4346-9f06-e7dd9d7b5139
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 11%
 
 ---
 
-# param element {#param--element}
+# param-Element {#param--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model-12}
 
@@ -57,7 +59,7 @@ Mit diesem Element können Sie einen Parameter zum Aufrufen einer SOAP-Methode d
    * BELIEBIGE
    * bin
    * blob
-   * boolean
+   * Boolesch
    * Byte
    * CDATA
    * datetime

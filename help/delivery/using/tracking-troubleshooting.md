@@ -6,8 +6,8 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 100%
 
@@ -15,9 +15,11 @@ ht-degree: 100%
 
 # Fehlerbehebung beim Tracking {#tracking-troubleshooting}
 
+![](../../assets/common.svg)
+
 In diesem Abschnitt finden Sie häufige Fragen zur Konfiguration und Implementierung von Tracking in Adobe Campaign Classic.
 
-## Der Tracking-Workflow schlägt fehl. {#tracking-workflow-failing}
+## Der Tracking-Workflow schlägt fehl.  {#tracking-workflow-failing}
 
 Mein Tracking-Workflow schlägt fehl. Wie kann ich die beschädigten Zeilen in der Tracking-Datei erkennen?
 
@@ -112,7 +114,7 @@ Beim Versuch, auf die Trackinglinks zuzugreifen, wird folgende Meldung angezeigt
 
    Sie sollten mindestens die Berechtigung &quot;644&quot; haben, damit Apache die Tracking-URLs lesen kann, um den angeforderten Link weiterzuleiten.
 
-## Aktualisieren der Option &quot;NmsTracking_Pointer&quot;? {#updating-option}
+## Aktualisieren der Option &quot;NmsTracking_Pointer&quot;?  {#updating-option}
 
 Gehen Sie beim Aktualisieren der Option &quot;NmsTracking_Pointer&quot; wie folgt vor:
 

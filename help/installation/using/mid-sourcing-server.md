@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 3e55d7f5-2858-4390-bba9-8fb5be0c3d98
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Mid-Sourcing-Server{#mid-sourcing-server}
+
+![](../../assets/v7-only.svg)
 
 In diesem Abschnitt werden die Installation und Konfiguration eines Mid-Sourcing-Servers sowie die Bereitstellung einer Instanz beschrieben, die es Drittanbietern ermöglicht, Nachrichten im Modus **Mid-Sourcing** zu senden.
 
@@ -70,7 +72,7 @@ Sie müssen jedoch Folgendes anwenden:
    >
    >Das Standard-Routing technischer Sendungen wird automatisch durch E-Mail-Routing über Mid-Sourcing ersetzt.
 
-### Installation und Konfiguration des Mid-Sourcing-Servers {#installing-and-configuring-the-mid-sourcing-server}
+### Mid-Sourcing-Server installieren und konfigurieren {#installing-and-configuring-the-mid-sourcing-server}
 
 Suchen Sie in der Client-Konsole das **E-Mail-Routing mit dem Mid-Sourcing**-Mid-Sourcing-Konto (im Ordner **/Administration/Externe Konten/** ). Füllen Sie die Einstellungen **URL des Servers**, **account**, **password** und **Mirrorseiten-URL** mit den Informationen, die vom Server-Provider bereitgestellt werden, der den Mid-Sourcing-Server hostet. Testet die Verbindung
 

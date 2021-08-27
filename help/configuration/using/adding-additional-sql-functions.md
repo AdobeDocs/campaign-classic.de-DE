@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 04b0a0e5-d6df-447c-ac67-66adb1bdf717
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Hinzufügen zusätzlicher SQL-Funktionen{#adding-additional-sql-functions}
+
+![](../../assets/v7-only.svg)
 
 ## Einleitung {#introduction}
 
@@ -144,6 +146,6 @@ Ein spezieller Funktionsdeskriptor ist der Block **&quot;Pass-Through&quot;** mi
 
 In diesem Fall dient das Hinzufügen einer Funktion nur dazu, eine Datenbankfunktion zu erstellen, die standardmäßig nicht verfügbar gewesen wäre und nun für den Client sichtbar ist.
 
-## Beispiele      {#examples}
+## Beispiele {#examples}
 
 Weitere Funktionsbeispiele finden Sie im vordefinierten Paket &quot;xtkdatakitfuncList.xml&quot;.

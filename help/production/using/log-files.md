@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: c9d427da-6965-4945-90f0-d0770701d55e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Protokolldateien{#log-files}
+
+![](../../assets/v7-only.svg)
 
 Die Protokolldateien sind wie folgt organisiert:
 
@@ -31,16 +33,16 @@ Die Protokolle der anderen Module werden in einem Unterordner gespeichert, der n
 
 Protokolldateien mit mehreren Instanzen sind in der folgenden Tabelle aufgeführt:
 
-| Datei | Beschreibung  |
+| Datei | Beschreibung |
 |---|---|
 | web.log | Webmodulprotokolle (Clientkonsole, Berichte, SOAP-API usw.) |
 | webmdl.log | Protokolle vom Umleitungsmodul |
 | watchdog.log | Protokolle vom Adobe Campaign-Prozessüberwachungsmodul |
-| trackinglogd.log | Trackinglogs         |
+| trackinglogd.log | Trackinglogs          |
 
 Die Protokolldateien der Mono-Instanz sind in der folgenden Tabelle aufgeführt:
 
-| Datei | Beschreibung  |
+| Datei | Beschreibung |
 |---|---|
 | mta.log | MTA-Modulprotokolle |
 | mtachild.log | Verarbeitungslogs der Nachrichten |

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 4aaa6256-256a-441d-80c9-430f8e427875
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 13%
@@ -14,6 +14,8 @@ ht-degree: 13%
 ---
 
 # Aktualisierung auf einen neuen Build (On-Premise){#upgrading}
+
+![](../../assets/v7-only.svg)
 
 Ermitteln und bestätigen Sie vor dem Starten des Aktualisierungsprozesses, auf welche Version von Adobe Campaign aktualisiert werden soll, und lesen Sie die [Versionshinweise](../../rn/using/latest-release.md) .
 
@@ -24,7 +26,6 @@ Ermitteln und bestätigen Sie vor dem Starten des Aktualisierungsprozesses, auf 
 >* Lesen Sie [diesen Abschnitt](../../installation/using/general-architecture.md) und das Kapitel [Build-Upgrade](https://helpx.adobe.com/de/campaign/kb/acc-build-upgrade.html) , bevor Sie beginnen.
 
 >
-
 
 
 ## Windows {#in-windows}
@@ -63,7 +64,7 @@ Um alle Dateien durch die neue Version zu ersetzen, müssen Sie alle Instanzen d
 
    Sie können den Windows Task Manager verwenden, um sicherzustellen, dass alle Prozesse angehalten werden.
 
-### Aktualisieren Sie die Adobe-Campaign-Server-Anwendung.{#upgrade-the-adobe-campaign-server-application}
+### Aktualisieren Sie die Adobe-Campaign-Server-Anwendung. {#upgrade-the-adobe-campaign-server-application}
 
 Gehen Sie wie folgt vor, um die Aktualisierungsdatei auszuführen:
 
@@ -127,7 +128,7 @@ Beginnen Sie mit der Wiederherstellung der beiden aktualisierten Pakete von Adob
 
 Die Datei ist **nlserver6-v7-XXX.rpm**
 
-### Führen Sie eine Aktualisierung {#perform-an-update} durch.
+### Aktualisieren {#perform-an-update}
 
 * RPM-basierte Verteilung (RedHat, SuSe)
 
@@ -157,7 +158,7 @@ Die Datei ist **nlserver6-v7-XXX.rpm**
 >
 >Die vollständigen Installationsverfahren werden in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md) beschrieben. Ressourcen werden automatisch synchronisiert. Sie müssen jedoch sicherstellen, dass keine Fehler aufgetreten sind. Weitere Informationen hierzu finden Sie unter [Beheben von Upgrade-Konflikten](#resolving-upgrade-conflicts).
 
-### Starten Sie den Webserver {#reboot-the-web-server} neu.
+### Webserver neu starten {#reboot-the-web-server}
 
 Sie müssen Apache herunterfahren, damit die neue Bibliothek angewendet wird.
 
@@ -173,8 +174,7 @@ Führen Sie dazu den folgenden Befehl aus:
 >* Sie MÜSSEN diesen Befehl ausführen, bis Sie die folgende Antwort erhalten:
 
    >
-   >   
-   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
+   >   Dieser Vorgang ist erforderlich, damit Apache die neue Bibliothek anwendet.
 
 
 Starten Sie dann Apache neu:
@@ -183,7 +183,7 @@ Starten Sie dann Apache neu:
 /etc/init.d/apache start
 ```
 
-## Beheben von Upgrade-Konflikten {#resolving-upgrade-conflicts}
+## Beheben von Aktualisierungskonflikten {#resolving-upgrade-conflicts}
 
 Bei der Synchronisation von Ressourcen können Sie mit dem Befehl **postupgrade** erkennen, ob bei der Synchronisierung Fehler oder Warnungen aufgetreten sind.
 
@@ -242,7 +242,7 @@ Ein Aktualisierungsfehler kann mit der Datenbankkonfiguration verknüpft sein. S
 
 Beispielsweise darf eine Unicode-Datenbank nicht nur die Speicherung von LATIN1-Daten usw. zulassen.
 
-## Warnung der Client-Konsolen des verfügbaren Updates {#warn-the-client-consoles-of-the-available-update}
+## Client-Konsolen des verfügbaren Updates warnen {#warn-the-client-consoles-of-the-available-update}
 
 ### Windows {#in-windows-1}
 

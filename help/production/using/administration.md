@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 12a255fe-66f9-40ce-b19e-c24322c2e009
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Administration{#administration}
+
+![](../../assets/v7-only.svg)
 
 Automatischer Start der Adobe Campaign-Module (**Web**, **mta**, **wfserver** usw.) wird vom **nlserver** -Server bereitgestellt.
 
@@ -78,14 +80,15 @@ Im Folgenden finden Sie eine Liste der üblichen Verwaltungsbefehle, auf die unt
    >* Im Ereignis eines Notfalls verwenden Sie die **-sofortige** Option, um einen sofortigen Stopp des Vorgangs zu erzwingen (entspricht Unix Befehl **töten -9**).
    >* Verwenden Sie die Option **-noconsole** , um sicherzustellen, dass das gestartete Modul nichts in der Konsole anzeigt. Seine Protokolle werden über das **syslogd** Modul auf die Festplatte geschrieben.
    >* Verwenden Sie die Option **-verbose** , um weitere Informationen zu Prozessaktionen anzuzeigen.
-   >
-   >   Beispiel:
-   >
-   >   **nlserver Neustart web -verbose**
-   >
-   >   **nlserver-Beginn mta@myinstance -verbose**
-   >
-   >   Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
+
+      >
+      >   Beispiel:
+      >
+      >   **nlserver Neustart web -verbose**
+      >
+      >   **nlserver-Beginn mta@myinstance -verbose**
+      >
+      >   Mit dieser Option werden zusätzliche Protokolle hinzugefügt. Es wird empfohlen, die Prozesse erneut ohne die **-ausführliche** Option zu starten, sobald Sie die gewünschten Informationen gefunden haben, um zu vermeiden, dass Protokolle überladen werden.
 
 
 * Beginn aller Adobe Campaign-Prozesse (entspricht dem Starten des **nlserver6** -Dienstes):

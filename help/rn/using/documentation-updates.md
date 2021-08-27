@@ -2,18 +2,20 @@
 product: campaign
 title: Aktualisierungen der Dokumentation für Adobe Campaign Classic
 description: Auf dieser Seite werden alle neuen Funktionen und Updates in der Adobe Campaign Classic-Dokumentation aufgelistet.
-feature: Übersicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
-source-wordcount: '4485'
+source-wordcount: '4484'
 ht-degree: 100%
 
 ---
 
 # Aktualisierungen der Dokumentation{#documentation-updates}
+
+![](../../assets/v7-only.svg)
 
 Auf dieser Seite werden alle neuen Funktionen und Dokumentationsaktualisierungen pro Monat und Campaign-Version aufgeführt.
 
@@ -48,7 +50,7 @@ Die Anforderungen an die Client-Konsole von Campaign wurden in der Kompatibilit�
 
 Die Installationsschritte für die Client-Konsole von Campaign wurden verbessert und verdeutlicht. [Mehr dazu](../../installation/using/installing-the-client-console.md)
 
-Es wurde eine neue Technote zum Signaturproblem für getrackte URLs erstellt. [Mehr dazu](../../technotes/tracked-urls.md)
+Es wurde eine neue Technote zum Signaturproblem für getrackte URLs erstellt. [Mehr dazu](../../technotes/using/tracked-urls.md)
 
 ## April 2021 {#april-2021}
 
@@ -210,7 +212,7 @@ Die Landingpage für die Best Practices für die Zustellbarkeit wurde verbessert
 
 Zu den folgenden Themen sind jetzt Anleitungsvideos verfügbar:
 
-* [Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln und vordefinierten Filtern](../../campaign/using/about-campaign-typologies.md)
+* [Einrichten der Ermüdungsverwaltung mithilfe von Typologieregeln und vordefinierten Filtern](../../campaign-opt/using/about-campaign-typologies.md)
 
 * [Erstellen einer E-Mail in einer Kampagne](../../campaign/using/marketing-campaign-deliveries.md)
 

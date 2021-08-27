@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1c032ef9-af11-4947-90c6-76cb9434ae85
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Grundprinzip{#operating-principle}
+
+![](../../assets/v7-only.svg)
 
 Technisch betrachtet basiert die Adobe Campaign-Plattform auf mehreren Modulen.
 
@@ -35,7 +37,7 @@ Verwenden Sie für die Liste der verfügbaren Module den Befehl **nlserver**.
 
 Die verfügbaren Module werden in der folgenden Tabelle beschrieben:
 
-| Befehl | Beschreibung  |
+| Befehl | Beschreibung |
 |---|---|
 | aliasCleansing | Standardisierung der Auflistungswerte |
 | billing | Senden des Systemaktivitätsberichts an billing@neolane.net |

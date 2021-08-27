@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 6b308299-4d07-4c9e-bd2f-a0860c41cf02
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 13%
@@ -15,11 +15,13 @@ ht-degree: 13%
 
 # Erstellen einer Profilliste mit einem Workflow{#creating-a-profile-list-with-a-workflow}
 
+![](../../assets/v7-only.svg)
+
 Um eine auf der neuen Empfängertabelle basierende Liste vom Typ **[!UICONTROL Liste]** zu erstellen, müssen Sie einen Zielgruppen-Workflow erstellen, der die Liste generiert.
 
 Weiterführende Informationen zu Listen in Campaign finden Sie in [diesem Abschnitt](../../platform/using/creating-and-managing-lists.md#about-lists-in-adobe-campaign).
 
-![](assets/do-not-localize/how-to-video.png) [Funktion im Video kennenlernen](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video).
+![](assets/do-not-localize/how-to-video.png) [Entdecken Sie diese Funktion im Video](../../platform/using/creating-and-managing-lists.md#create-list-in-a-wf-video).
 
 Gehen Sie wie folgt vor, um einen Zielgruppen-Workflow zu erstellen und Empfänger in einer benutzerdefinierten Empfängertabelle zu aktualisieren:
 

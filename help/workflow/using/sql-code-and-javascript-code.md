@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 729a2010-c2d8-481b-8c9e-780b9e5f97ef
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
 
 ---
 
 # SQL-Code und JavaScript-Code{#sql-code-and-javascript-code}
+
+![](../../assets/common.svg)
 
 ## SQL-Code {#sql-code}
 
@@ -27,11 +29,11 @@ Die Aktivität **[!UICONTROL SQL-Code]** führt ein SQL-Script in Form eines JST
 
 * **[!UICONTROL Fehler verarbeiten]**
 
-   Siehe [Fehler verarbeiten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+   Siehe [Fehler verarbeiten](monitoring-workflow-execution.md#processing-errors).
 
 ## JavaScript-Code und erweiterter JavaScript-Code {#javascript-code}
 
-Aktivitäten mit **[!UICONTROL JavaScript-Code]** und **[!UICONTROL erweitertem JavaScript-Code]** führen im Kontext von Workflows ein JavaScript-Skript aus. Weitere Informationen zur Skripterstellung finden Sie im Abschnitt [Scripts/JavaScript-Templates](../../workflow/using/javascript-scripts-and-templates.md).
+Aktivitäten mit **[!UICONTROL JavaScript-Code]** und **[!UICONTROL erweitertem JavaScript-Code]** führen im Kontext von Workflows ein JavaScript-Skript aus. Weitere Informationen zur Skripterstellung finden Sie im Abschnitt [Scripts/JavaScript-Templates](javascript-scripts-and-templates.md).
 
 ### Ausführungsverzögerung {#exec-delay}
 
@@ -47,7 +49,7 @@ Um diese Begrenzung zu ignorieren, müssen Sie den Wert auf **0** setzen.
 
 * **[!UICONTROL Script]**: Das auszuführende Skript wird in den zentralen Bereich des Editors eingefügt.
 
-* **[!UICONTROL Fehler verarbeiten]**: Siehe [Fehler verarbeiten](../../workflow/using/monitoring-workflow-execution.md#processing-errors).
+* **[!UICONTROL Fehler verarbeiten]**: Siehe [Fehler verarbeiten](monitoring-workflow-execution.md#processing-errors).
 
 ### Erweiterter JavaScript-Code {#adv-js-code-desc}
 

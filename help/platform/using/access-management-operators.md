@@ -2,18 +2,20 @@
 product: campaign
 title: Erste Schritte mit Campaign-Benutzern
 description: Erfahren Sie, wie Sie Campaign-Benutzer erstellen und verwalten.
-feature: Zugriffsverwaltung
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1211'
+ht-degree: 100%
 
 ---
 
 # Erstellen und Verwalten von Benutzern {#operators}
+
+![](../../assets/common.svg)
 
 ## Erste Schritte mit Campaign-Benutzern  {#about-operators}
 
@@ -45,7 +47,7 @@ Gehen Sie wie folgt vor, um einen neuen Benutzer zu erstellen und Berechtigungen
 
 1. Spezifizieren Sie die **[!UICONTROL Authentifizierungsparameter]** des Benutzers: Login, Password und Name. Login und Passwort werden vom jeweiligen Benutzer zur Anmeldung bei Adobe Campaign verwendet. Nach der Anmeldung kann der Benutzer sein Passwort im Menü **[!UICONTROL Werkzeuge > Passwort ändern...]** ändern. Die E-Mail-Adresse des Benutzers ist notwendig, um dem Benutzer Benachrichtigungen zukommen zu lassen, beispielsweise wenn er für Validierungen verantwortlich ist.
 
-   In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Siehe hierzu auch [diese Seite](../../campaign/using/about-distributed-marketing.md).
+   In diesem Abschnitt kann ein Benutzer zudem einer Organisationseinheit zugeordnet werden. Siehe hierzu auch [diese Seite](../../distributed/using/about-distributed-marketing.md).
 
 1. Wählen Sie die dem Benutzer erteilten Berechtigungen im Bereich **[!UICONTROL Zugriffsberechtigungen des Benutzers]** aus.
 

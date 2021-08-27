@@ -6,14 +6,16 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 364d90af-4b18-4104-8b6a-be80cfde3b0b
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 100%
 
 ---
 
 # Statische Elemente in einem Webformular{#static-elements-in-a-web-form}
+
+![](../../assets/common.svg)
 
 Sie können Elemente, mit denen der Benutzer keine Interaktion hat, in die Seiten des Formulars einfügen; dies sind statische Elemente wie Bilder, HTML-Inhalte, eine horizontale Leiste oder ein Hypertext-Link. Diese Elemente werden über die erste Schaltfläche in der Symbolleiste erstellt, indem Sie **[!UICONTROL Statische Elemente]** auswählen.
 

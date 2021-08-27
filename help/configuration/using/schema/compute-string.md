@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 8a079bb8-3f53-4144-a065-5bd402649cc7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 12%
 
 ---
 
-# compute-string element {#compute-string--element}
+# Compute-string-Element {#compute-string--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model-1}
 
@@ -35,7 +37,7 @@ Keine
 
 Mit dem Element `<compute-string>` können Sie eine Zeichenfolge generieren, die auf einem XTK-Ausdruck basiert und eine &quot;integrierte&quot;Bezeichnung in der Benutzeroberfläche anzeigt, die auf mehreren Werten basiert.
 
-## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-1}
+## Verwendung und Verwendungskontext {#use-and-context-of-use-1}
 
 Wenn kein `<compute-string>` definiert ist, wird standardmäßig ein `<compute-string>` -Element mit den Werten des Primärschlüssels im Schema eingegeben.
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 194366ab-fd9f-4431-9163-ae16c1f96db2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Eigenständige Freigabe{#standalone-deployment}
+
+![](../../assets/v7-only.svg)
 
 Diese Konfiguration umfasst alle Komponenten auf demselben Computer:
 
@@ -55,7 +57,7 @@ Mit zunehmendem Volumen verschiebt eine Variante dieser Architektur den Datenban
 * Potenzielle Verlangsamung der Anwendung bei der Übertragung.
 * Der Anwendungsserver muss von außen verfügbar sein (z. B. während er sich in der DMZ befindet), da er den Weiterleitungsserver hostet.
 
-## Installations- und Konfigurationsschritte {#installation-and-configuration-steps}
+## Installation und Konfiguration {#installation-and-configuration-steps}
 
 ### Voraussetzungen {#prerequisites}
 
@@ -76,7 +78,7 @@ In den folgenden Beispielen sind die Parameter der Instanz:
 * DNS-Maske: **console.campaign.net*** (nur für Client-Konsolenverbindungen und für Berichte)
 * Datenbank: **campaign:demo@dbsrv**
 
-### Installation und Konfiguration (Einzelmaschine) {#installing-and-configuring--single-machine-}
+### Installation und Konfiguration (ein Computer) {#installing-and-configuring--single-machine-}
 
 Gehen Sie wie folgt vor:
 
@@ -120,7 +122,7 @@ Gehen Sie wie folgt vor:
 
       Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      or
+      oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 

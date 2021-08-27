@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 42%
@@ -14,6 +14,8 @@ ht-degree: 42%
 ---
 
 # Sicherheitseinstellungen des Servers {#server-configuration}
+
+![](../../assets/v7-only.svg)
 
 ## Schutz vor Datei-Upload
 
@@ -28,7 +30,7 @@ Erkundigen Sie sich bei den Benutzern, welche Art von Dateien sie über die Camp
 
 Fügen Sie alle zu serverConf/shared/datastore/@uploadAllowlist hinzu (gültiger regulärer Java-Ausdruck). Weiterführende Informationen finden Sie auf [dieser Seite](../../installation/using/file-res-management.md).
 
-Adobe Campaign schränkt die Dateigröße nicht ein. Sie können dies jedoch tun, indem Sie IIS/Apache konfigurieren. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../installation/using/web-server-configuration.md).
+Adobe Campaign schränkt die Dateigröße nicht ein. Sie können dies jedoch tun, indem Sie IIS/Apache konfigurieren. Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/web-server-configuration.md).
 
 ## Relais
 

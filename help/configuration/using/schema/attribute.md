@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # attribute element {#attribute--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model}
 
@@ -31,11 +33,11 @@ _operation (string), advanced (boolean), applyIf (string), autoIncrement (boolea
 
 `<help>`
 
-## Beschreibung  {#description}
+## Beschreibung {#description}
 
 `<attribute>` -Elemente können Sie ein Feld in der Datenbank definieren.
 
-## Verwendung und Kontext der Verwendung von {#use-and-context-of-use}
+## Verwendung und Verwendungskontext {#use-and-context-of-use}
 
 `<attribute>` -Elemente in einem  `<element>` Element deklariert werden.
 
@@ -131,7 +133,7 @@ Die Reihenfolge, in der `<attribute>` -Elemente in einem `<srcschema>` definiert
    * BELIEBIGE
    * bin
    * blob
-   * boolean
+   * Boolesch
    * Byte
    * CDATA
    * datetime
@@ -168,7 +170,7 @@ Die Reihenfolge, in der `<attribute>` -Elemente in einem `<srcschema>` definiert
 
 * **xml (boolesch)**: Wenn diese Option aktiviert ist, verfügen die Werte des Felds nicht über ein verknüpftes SQL-Feld. Adobe Campaign erstellt ein Feld vom Typ &quot;mData&quot; für die Speicherung von Datensätzen. Dies bedeutet, dass diese Felder nicht gefiltert oder sortiert werden.
 
-### Beispiele      {#examples}
+### Beispiele {#examples}
 
 Beispiel für Auflistungswerte, deren Werte in der Datenbank gespeichert sind:
 

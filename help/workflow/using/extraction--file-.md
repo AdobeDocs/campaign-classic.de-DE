@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 06eafedd-6386-498f-a80d-7f57ddcccad6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 100%
 
 ---
 
 # Extraktion (Datei){#extraction-file}
+
+![](../../assets/common.svg)
 
 Mithilfe der Aktivität **[!UICONTROL Extraktion (Datei)]** werden Daten einer Workflow-Tabelle in eine externe Datei extrahiert.
 
@@ -48,7 +50,7 @@ Gehen Sie wie folgt vor, um eine Extraktion zu konfigurieren:
 
 Sie können eine Nachbearbeitung definieren, die während der Datenextraktion ausgeführt werden soll, damit die Dateien komprimiert oder verschlüsselt werden. Dazu muss der gewünschte Befehl auf dem Tab **[!UICONTROL Script]** der Aktivität hinzugefügt werden.
 
-Weiterführende Informationen finden Sie in diesem Abschnitt: [Komprimieren oder Verschlüsseln einer Datei](../../workflow/using/how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
+Weiterführende Informationen finden Sie in diesem Abschnitt: [Komprimieren oder Verschlüsseln einer Datei](how-to-use-workflow-data.md#zipping-or-encrypting-a-file).
 
 ![](assets/postprocessing_dataextraction.png)
 

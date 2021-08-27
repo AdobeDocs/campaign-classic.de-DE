@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: b86236ae-95e9-4406-b60f-6d90ad0d4a01
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Netzwerkkonfiguration{#network-configuration}
+
+![](../../assets/v7-only.svg)
 
 ## Kommunikation zwischen Prozessen {#communication-between-processes}
 
@@ -55,7 +57,7 @@ Für den Versandserver (**nlserver mta**) müssen die folgenden Ports geöffnet 
  </tbody> 
 </table>
 
-### Inbound mail {#inbound-mail}
+### Eingehende E-Mails {#inbound-mail}
 
 Für den Wiederherstellungsprozess von eingehenden E-Mails (**nlserver inMail**) müssen die folgenden Ports geöffnet sein:
 
@@ -100,7 +102,7 @@ Für den Anwendungsserver (**nlserver web**) müssen die folgenden Ports geöffn
 
 Wenn mehrere Anwendungsserver einer Adobe Campaign-Plattform miteinander kommunizieren müssen, empfehlen wir die Verwendung des Anschlusses des Apache Tomcat-Servers (standardmäßig: 8080) anstelle des HTTP-Ports des Webservers, mit dem die Umleitungsmodulintegration durchgeführt wurde. Dies bedeutet, dass der Port zwischen diesen Servern geöffnet sein muss.
 
-### Status des SMS-Versands {#sms-delivery-status}
+### SMS-Versandstatus {#sms-delivery-status}
 
 Um SMS-Sendungen (**nlserver sms**) zu verfolgen, muss der folgende Port geöffnet sein:
 

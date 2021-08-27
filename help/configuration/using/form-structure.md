@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: e61f2b63-06d3-4b8c-867f-1c729176d2da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2402'
 ht-degree: 94%
@@ -14,6 +14,8 @@ ht-degree: 94%
 ---
 
 # Formularstruktur{#form-structure}
+
+![](../../assets/v7-only.svg)
 
 Die Beschreibung eines Formulars ist ein strukturiertes XML-Dokument, das die Grammatik des Formularschemas anwendet: **xtk:form**.
 
@@ -235,7 +237,7 @@ Beispiele für die Bedingungssyntax:
 * **visibleIf=&quot;@gender >= 1 and @gender != 2&quot;**: Bedingung für einen numerischen Wert.
 * **visibleIf=&quot;@boolean1=true oder @boolean2=false&quot;**: Testen von booleschen Feldern.
 
-#### Container {#enabling-container} aktivieren
+#### Container aktivieren {#enabling-container}
 
 Mit diesem Container können Sie einen Datensatz aus einer dynamischen Bedingung aktivieren oder deaktivieren. Durch Deaktivieren eines Eingabefeldes wird dessen Bearbeitung verhindert. Das folgende Beispiel veranschaulicht die Aktivierung von Eingabefeldern über den Wert des Feldes &quot;Geschlecht&quot;:
 
@@ -403,7 +405,7 @@ Mit dem Attribut **xpathChoiceTarget** können Sie ein Auswahlformular aus der e
 * **xpathEditTarget**: Legt die Bearbeitung für die eingegebene Relation fest
 * **xpathChoiceTarget**: Startet beim Hinzufügen das Auswahlformular für die eingegebene Relation
 
-## Steuerelemente für Speicherlisten {#memory-list-controls}
+## Speicherlisten-Steuerelemente {#memory-list-controls}
 
 Mithilfe von Listen von gespeicherten Elementen können Sie die Sammlungselemente bearbeiten, indem Sie Listen-Daten vorausfüllen. Diese Liste kann nicht gefiltert oder konfiguriert werden.
 
@@ -539,7 +541,7 @@ Die zu bearbeitenden Eingabefelder sind in einem **`<container>`** gruppiert, da
 
 ## Ausdrucksfeld {#expression-field}
 
-Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck aus. Das **`<input>`**-Tag wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und ein Attribut **expr** mit dem Ausdruck zur Aktualisierung einzugeben.
+Ein Ausdrucksfeld aktualisiert ein Feld dynamisch von einem Ausdruck aus. Das **`<input>`**-Tag wird mit dem Attribut **xpath** verwendet, um den Pfad des zu aktualisierenden Felds und das Attribut **expr**, das den Aktualisierungsausdruck enthält, einzugeben.
 
 ```
 <!-- Example: updating the boolean1 field from the value contained in the field with path /tmp/@flag -->

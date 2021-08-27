@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 4a41aea9edfe5e6ca0454049cbb2892449eec153
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '3975'
+source-wordcount: '3994'
 ht-degree: 11%
 
 ---
 
 # Liste der Optionen von Campaign Classic{#configuring-campaign-options}
+
+![](../../assets/v7-only.svg)
 
 Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Konfiguration von Adobe Campaign-Optionen. Einige sind bei der Installation von Campaign integriert, andere können bei Bedarf manuell hinzugefügt werden. Die verfügbaren Optionen variieren je nach den mit Ihrer Instanz installierten Packages.
 
@@ -21,9 +23,8 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
 >[!CAUTION]
 >
 >* Optionen, die nicht auf dieser Seite aufgeführt sind, sind nur intern und **dürfen nicht geändert werden**.
-   >
-   >
-* Das Ändern oder Aktualisieren von Adobe Campaign-Optionen kann nur von erfahrenen Benutzern durchgeführt werden.
+>
+>* Das Ändern oder Aktualisieren von Adobe Campaign-Optionen kann nur von erfahrenen Benutzern durchgeführt werden.
 
 
 ## Versand {#delivery}
@@ -32,7 +33,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -52,6 +53,10 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
    <td> <span class="uicontrol">DmRendering_SeedTargets</span> <br /> </td> 
    <td> Liste der Schemas, für die Sie Testadressen für das Inbox Rendering verwenden möchten. (Elementnamen sind durch Kommas getrennt) Beispiel: custom_nms_recipient.<br /> </td> 
   </tr> 
+  <tr> 
+   <td> <span class="uicontrol">EMTA_BCC_ADDRESS</span> </td> 
+   <td> BCC-E-Mail-Adresse, an die der Enhanced MTA eine Rohkopie der gesendeten E-Mails sendet. <br /> </td> 
+  </tr>
   <tr> 
    <td> <span class="uicontrol">NMS_ActivateOwnerConfirmation</span> <br /> </td> 
    <td><p> Hiermit können Sie dem für den Versand verantwortlichen Benutzer die Validierung des Versands gestatten, wenn in den Versandeigenschaften ein bestimmter Benutzer oder eine Benutzergruppe für den Start eines Versands bestimmt ist.</p><p> Aktivieren Sie dazu die Option, indem Sie "1" als Wert eingeben. Um diese Option zu deaktivieren, geben Sie "0" ein.</p><p> Der Sendebestätigungsprozess funktioniert dann standardmäßig: Nur der Benutzer oder die Benutzergruppe, der bzw. die in den Versandeigenschaften für den Versand bestimmt ist (oder ein Administrator), kann den Versand bestätigen und durchführen. Weitere Informationen finden Sie in <a href="../../campaign/using/marketing-campaign-deliveries.md#starting-an-online-delivery">diesem Abschnitt</a>.</p> </td> 
@@ -278,7 +283,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -343,7 +348,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -396,7 +401,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -449,7 +454,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -566,7 +571,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -700,7 +705,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
   </tr> 
   <tr> 
    <td> <span class="uicontrol">PostUpgradeLastError</span> <br /> </td> 
-   <td> Informationen zum Fehler, der beim Postupgrade aufgetreten ist, gemäß der folgenden Syntax:<br /> <strong>{Build-Nummer}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occur + sub-step}</strong> </td> 
+   <td> Informationen zum Fehler, der beim Postupgrade aufgetreten ist, entsprechend der folgenden Syntax:<br /> <strong>{Build-Nummer}:{mode: pre/post/..}:{The 'lessThan'/'greaterOrEquelThan' where error occur + sub-step}</strong> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkCleanup_NoStats</span> <br /> </td> 
@@ -715,7 +720,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -732,7 +737,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
    <td> Diese Option wird beim Import von Daten aus einem Drittanbietersystem über einen CRM-Connector verwendet. Durch Aktivierung dieser Option können nur die seit dem letzten Import geänderten Objekte erfasst werden. Diese Option muss manuell wie unten dargestellt erstellt und ausgefüllt werden: 
     <ul> 
      <li> <p> <span class="uicontrol">Interner Name</span> : LASTIMPORT_&lt;&gt;_&lt;&gt;</p> </li> 
-     <li> <p> <span class="uicontrol">Wert (Feld)</span> : Datum des letzten Imports mit dem Format jjjj/MM/tt hh:mm:ss. </p> </li> 
+     <li> <p> <span class="uicontrol">Wert (Feld)</span> : Datum des letzten Imports im Format JJJJ/MM/TT :mm:HSS. </p> </li> 
     </ul><br /> </td> 
   </tr> 
   <tr> 
@@ -768,7 +773,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -805,7 +810,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -842,7 +847,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -915,7 +920,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -944,7 +949,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -1019,13 +1024,13 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
  </tbody> 
 </table>
 
-## Web-Formulare {#web-forms}
+## Webformulare {#web-forms}
 
 <table> 
  <thead> 
   <tr> 
    <th> Optionsname </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
   </tr> 
  </thead> 
  <tbody> 

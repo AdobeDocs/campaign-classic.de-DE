@@ -6,24 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '2011'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '2031'
+ht-degree: 98%
 
 ---
 
 # Zielgruppendaten{#targeting-data}
 
-## Abfragen erstellen      {#creating-queries}
+![](../../assets/common.svg)
+
+## Abfragen erstellen     {#creating-queries}
 
 ### Datenauswahl {#selecting-data}
 
-Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weitere Informationen hierzu finden Sie unter [Abfragen erstellen](../../workflow/using/query.md#creating-a-query).
+Mit einer **[!UICONTROL Abfrageaktivität]** können Sie grundlegende Daten zum Aufbau der Zielpopulation auswählen. Weitere Informationen hierzu finden Sie unter [Abfragen erstellen](query.md#creating-a-query).
 
-Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage ](../../workflow/using/incremental-query.md), [Liste lesen](../../workflow/using/read-list.md).
+Sie können auch mithilfe der folgenden Aktivitäten Daten aus der Datenbank abfragen und weiter filtern: [Inkrementelle Abfrage ](incremental-query.md), [Liste lesen](read-list.md).
 
-Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen ](../../workflow/using/query.md#adding-data)und [Zusätzliche Daten bearbeiten](#editing-additional-data).
+Es ist möglich, zusätzliche Daten zu sammeln, die während des gesamten Lebenszyklus des Workflows weitergeleitet und verarbeitet werden. Weitere Informationen hierzu finden Sie unter [Daten hinzufügen ](query.md#adding-data)und [Zusätzliche Daten bearbeiten](#editing-additional-data).
 
 ### Zusätzliche Daten bearbeiten {#editing-additional-data}
 
@@ -125,7 +127,7 @@ Zur Abstimmung der Daten stehen folgende Optionen zur Verfügung:
 
 Es ist außerdem möglich, nur eine Auswahl an Spalten oder nur die Spalten, die in allen eingehenden Populationen enthalten sind, abzurufen.
 
-Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](../../workflow/using/intersection.md) detailliert beschrieben.
+Die Schnittmengenaktivität wird im Abschnitt [Schnittmenge](intersection.md) detailliert beschrieben.
 
 ### Populationen ausschließen (Ausschluss) {#excluding-a-population--exclusion-}
 
@@ -157,7 +159,7 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    ![](assets/split-subset-config-all-data.png)
 
-   Ein Beispiel für die Verwendung der Aktivität **[!UICONTROL Aufspaltung]** zur Segmentierung der Zielgruppe in unterschiedliche Populationen finden Sie in [diesem Abschnitt](../../workflow/using/cross-channel-delivery-workflow.md).
+   Ein Beispiel für die Verwendung der Aktivität **[!UICONTROL Aufspaltung]** zur Segmentierung der Zielgruppe in unterschiedliche Populationen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
 
    Im Feld **[!UICONTROL Titel]** können Sie die erstellte Teilmenge benennen. Der Titel wird auf der ausgehenden Transition angezeigt.
 
@@ -175,7 +177,11 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    ![](assets/split-subset-config-add_external_data.png)
 
-   Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../installation/using/about-fda.md).
+   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
 
 Danach müssen neue Teilmengen hinzugefügt werden:
 
@@ -193,7 +199,7 @@ Danach müssen neue Teilmengen hinzugefügt werden:
 
    >[!NOTE]
    >
-   >Wenn Sie über die Option **Federated Data Access** verfügen, können Sie Teilmengen unter Hinzuziehung von in externen Datenbanken enthaltenen Informationen erstellen. Wählen Sie hierzu im Feld **[!UICONTROL Zielgruppendimension]** das Schema der entsprechenden externen Tabelle aus. Weitere Informationen hierzu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+   >Wenn Sie über die Option **Federated Data Access** verfügen, können Sie Teilmengen unter Hinzuziehung von in externen Datenbanken enthaltenen Informationen erstellen. Wählen Sie hierzu im Feld **[!UICONTROL Zielgruppendimension]** das Schema der entsprechenden externen Tabelle aus. Weitere Informationen hierzu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](accessing-an-external-database--fda-.md).
 
 Standardmäßig erzeugt die Aufspaltungsaktivität für jede Teilmenge eine ausgehende Transition:
 
@@ -207,7 +213,7 @@ Dies ist beispielsweise dann interessant, wenn Sie eine einzige Versandaktivitä
 
 ![](assets/wf_split_single_output.png)
 
-Teilmengen können auch mithilfe der Aktivität **[!UICONTROL Segmente]** erstellt werden. Weitere Informationen hierzu finden Sie im Abschnitt [Segmente](../../workflow/using/cells.md).
+Teilmengen können auch mithilfe der Aktivität **[!UICONTROL Segmente]** erstellt werden. Weitere Informationen hierzu finden Sie im Abschnitt [Segmente](cells.md).
 
 ### Verwendung der gefilterten Daten {#using-targeted-data}
 
@@ -215,17 +221,17 @@ Nach Identifizierung und Aufbereitung der Daten können diese in folgenden Konte
 
 * Update der Datenbank im Anschluss an die verschiedenen Workflow-Aktivitäten.
 
-   Weitere Informationen hierzu finden Sie unter [Daten aktualisieren](../../workflow/using/update-data.md).
+   Weitere Informationen hierzu finden Sie unter [Daten aktualisieren](update-data.md).
 
 * Update von existierenden Listen.
 
-   Weitere Informationen hierzu finden Sie unter [Listen-Update](../../workflow/using/list-update.md).
+   Weitere Informationen hierzu finden Sie unter [Listen-Update](list-update.md).
 
 * Vorbereitung und/oder Start von Sendungen direkt im Workflow.
 
-   Weitere Informationen hierzu finden Sie unter [Versand](../../workflow/using/delivery.md), [Versand bearbeiten](../../workflow/using/delivery-control.md) und [Versand (fortlaufend)](../../workflow/using/continuous-delivery.md).
+   Weitere Informationen hierzu finden Sie unter [Versand](delivery.md), [Versand bearbeiten](delivery-control.md) und [Versand (fortlaufend)](continuous-delivery.md).
 
-## Data Management {#data-management}
+## Daten-Management {#data-management}
 
 In Adobe Campaign umfasst das Data Management eine Reihe von Aktivitäten, die mithilfe effizienterer und flexiblerer Tools komplexe Zielgruppenbestimmungen und Anreicherungen ermöglichen. Auf diese Weise ist es möglich, eine kohärente und individuelle Kommunikation mit Kontakten zu gewährleisten, indem beispielsweise Informationen zu Verträgen, Abonnements oder Reaktionen auf vorhergehende Sendungen verwendet werden. Das Data Management erlaubt es darüber hinaus, den Lebenszyklus von Daten während der Segmentierungsprozesse zu verfolgen, insbesondere werden:
 
@@ -235,9 +241,9 @@ In Adobe Campaign umfasst das Data Management eine Reihe von Aktivitäten, die m
 
 Hierfür bietet Adobe Campaign:
 
-* Datenerfassungsaktivitäten: [Dateiübertragung](../../workflow/using/file-transfer.md), [Laden (Datei)](../../workflow/using/data-loading--file-.md), [Laden (DBMS)](../../workflow/using/data-loading--rdbms-.md), [Daten-Update](../../workflow/using/update-data.md). Dieser erste Schritt der Datenerfassung bereitet die Daten so vor, dass sie in anderen Aktivitäten verarbeitet werden können. Mehrere Parameter müssen überwacht werden, um sicherzustellen, dass der Workflow korrekt ausgeführt wird und die erwarteten Ergebnisse liefert. Wenn Sie beispielsweise Daten importieren, muss der Primärschlüssel (Pkey) für diese Daten für jeden Datensatz eindeutig sein.
-* Aktivitäten mit Data Management-Optionen ([Abfrage](../../workflow/using/query.md), [Vereinigung](../../workflow/using/union.md), [Schnittmenge](../../workflow/using/intersection.md), [Aufspaltung](../../workflow/using/split.md)). Dies ermöglicht beispielsweise die Konfiguration einer Vereinigung oder einer Schnittmenge mit Daten, die unterschiedliche Zielgruppendimensionen aufweisen, vorausgesetzt eine Abstimmung der Daten ist möglich.
-* Formatierungsaktivitäten: [Anreicherung](../../workflow/using/enrichment.md), [Dimensionsänderung](../../workflow/using/change-dimension.md).
+* Datenerfassungsaktivitäten: [Dateiübertragung](file-transfer.md), [Laden (Datei)](data-loading--file-.md), [Laden (DBMS)](data-loading--rdbms-.md), [Daten-Update](update-data.md). Dieser erste Schritt der Datenerfassung bereitet die Daten so vor, dass sie in anderen Aktivitäten verarbeitet werden können. Mehrere Parameter müssen überwacht werden, um sicherzustellen, dass der Workflow korrekt ausgeführt wird und die erwarteten Ergebnisse liefert. Wenn Sie beispielsweise Daten importieren, muss der Primärschlüssel (Pkey) für diese Daten für jeden Datensatz eindeutig sein.
+* Aktivitäten mit Data Management-Optionen ([Abfrage](query.md), [Vereinigung](union.md), [Schnittmenge](intersection.md), [Aufspaltung](split.md)). Dies ermöglicht beispielsweise die Konfiguration einer Vereinigung oder einer Schnittmenge mit Daten, die unterschiedliche Zielgruppendimensionen aufweisen, vorausgesetzt eine Abstimmung der Daten ist möglich.
+* Formatierungsaktivitäten: [Anreicherung](enrichment.md), [Dimensionsänderung](change-dimension.md).
 
 >[!CAUTION]
 >
@@ -247,10 +253,10 @@ Hierfür bietet Adobe Campaign:
 
 ### Daten anreichern und ändern {#enriching-and-modifying-data}
 
-Ergänzend zur Zielgruppendimension ermöglicht es die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Siehe [Zielgruppen- und Filterdimensionen](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Ergänzend zur Zielgruppendimension ermöglicht es die Filterdimension, die Art der abgerufenen Daten zu präzisieren. Siehe [Zielgruppen- und Filterdimensionen](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 Identifizierte und abgerufene Daten können angereichert, zusammengefasst und bearbeitet werden, um die Zielgruppenerstellung zu optimieren. Verwenden Sie dazu zusätzlich zu den im Abschnitt [Daten segmentieren](#segmenting-data) beschriebenen Datenbearbeitungstätigkeiten Folgendes:
 
-* Mit der Aktivität **[!UICONTROL Anreicherung]** können Sie vorübergehend Spalten zu einem Schema sowie Informationen zu bestimmten Elementen hinzufügen. Weitere Informationen hierzu finden Sie im Abschnitt [Anreicherung](../../workflow/using/enrichment.md) des Aktivitäten-Repositorys.
-* Mit der Aktivität **[!UICONTROL Schema-Bearbeitung]** können Sie die Struktur eines Schemas ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Schema-Bearbeitung](../../workflow/using/edit-schema.md) des Aktivitäten-Repositorys.
-* Mit der Aktivität **[!UICONTROL Dimensionsänderung]** können Sie die Zielgruppendimension beim Erstellen der Zielgruppe ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Dimensionsänderung](../../workflow/using/change-dimension.md).
+* Mit der Aktivität **[!UICONTROL Anreicherung]** können Sie vorübergehend Spalten zu einem Schema sowie Informationen zu bestimmten Elementen hinzufügen. Weitere Informationen hierzu finden Sie im Abschnitt [Anreicherung](enrichment.md) des Aktivitäten-Repositorys.
+* Mit der Aktivität **[!UICONTROL Schema-Bearbeitung]** können Sie die Struktur eines Schemas ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Schema-Bearbeitung](edit-schema.md) des Aktivitäten-Repositorys.
+* Mit der Aktivität **[!UICONTROL Dimensionsänderung]** können Sie die Zielgruppendimension beim Erstellen der Zielgruppe ändern. Weitere Informationen hierzu finden Sie im Abschnitt [Dimensionsänderung](change-dimension.md).

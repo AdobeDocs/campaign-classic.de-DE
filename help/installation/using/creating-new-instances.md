@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 3b87eb3c-3b50-4ed4-80b1-4333261ffe0b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 10%
@@ -14,6 +14,8 @@ ht-degree: 10%
 ---
 
 # Erstellen neuer Instanzen{#creating-new-instances}
+
+![](../../assets/v7-only.svg)
 
 Nachdem Adobe Campaign installiert und die Instanz erstellt wurde, können Sie in der Konsole eine neue Instanz hinzufügen. Mit diesem Erstellungsmodus können Sie Tracking-Instanzen erstellen, ohne auf die Konsole zugreifen zu müssen.
 

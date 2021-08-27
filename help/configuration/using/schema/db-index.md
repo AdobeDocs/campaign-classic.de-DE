@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: d7d1e427-12e0-4f07-9e01-d184dbe2ebf1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # dbindex-Element {#dbindex--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model-3}
 
@@ -39,7 +41,7 @@ dbindex:==keyfield
 
 Mit diesem Element können Sie einen mit einer Tabelle verknüpften Index definieren.
 
-## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-3}
+## Verwendung und Verwendungskontext {#use-and-context-of-use-3}
 
 Es ist möglich, mehrere Indizes zu definieren. Ein Index kann auf ein oder mehrere Felder der Tabelle verweisen. Die Indexdeklaration folgt in der Regel der Definition des Hauptschemaelements.
 

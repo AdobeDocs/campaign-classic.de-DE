@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f40bab8c-5064-40d9-beed-101a9f22c094
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1342'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Erstellen und Konfigurieren der Vorlagen{#creating-and-configuring-the-database}
+
+![](../../assets/v7-only.svg)
 
 Beim Erstellen einer Datenbank bietet Adobe Campaign zwei verschiedene Optionen:
 
@@ -78,7 +80,7 @@ Geben Sie dazu den Namen und das Kennwort eines **Administrationssystem-Kontos**
 * **** Postgression für eine PostgreSQL-Datenbank,
 * **db2inst1**  für eine DB2-Datenbank.
 
-### Schritt 3: Verbindung und Merkmale der Datenbank {#step-3---connection-and-characteristics-of-the-database}
+### 3. Schritt - Verbindung und Merkmale der Datenbank {#step-3---connection-and-characteristics-of-the-database}
 
 Im folgenden Schritt können Sie die Einstellungen für die Anmeldung bei der Datenbank konfigurieren.
 
@@ -153,7 +155,7 @@ Beispiel einer Microsoft SQL Server-Konfiguration für die Datenbank base61, die
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
 ```
 
-## 2. Fall: Verwenden einer vorhandenen Datenbank {#case-2--using-an-existing-database}
+## 2. Fall: Vorhandene Datenbank verwenden {#case-2--using-an-existing-database}
 
 Die Datenbank sowie der Benutzer müssen vom Datenbankadministrator erstellt und die Zugriffsberechtigungen korrekt konfiguriert worden sein.
 
@@ -167,7 +169,7 @@ Gehen Sie zur Verwendung einer vorhandenen Datenbank wie folgt vor:
 * [Schritt 4: Erstellungsschritte](#step-4---creation-steps),
 * [5. Schritt - Erstellung der Datenbank](#step-5---creating-the-database).
 
-### Schritt 1: Auswählen der Datenbank-Engine {#step-1---choosing-the-database-engine}
+### 1. Schritt - Datenbank-Engine auswählen {#step-1---choosing-the-database-engine}
 
 Wählen Sie die Datenbank-Engine aus der Dropdown-Liste aus.
 
@@ -188,7 +190,7 @@ Je nach ausgewählter Datenbank-Engine können die Informationen zur Serverident
 
       ![](assets/s_ncs_install_db_mssql_exists_01.png)
 
-### Schritt 2: Datenbankverbindungseinstellungen {#step-2---database-connection-settings}
+### Schritt 2: Einstellungen für die Datenbankverbindung {#step-2---database-connection-settings}
 
 Definieren Sie im Fenster **[!UICONTROL Database]** die Einstellungen für die Datenbankverbindung.
 

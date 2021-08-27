@@ -6,14 +6,16 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 22e14b24-59ba-4a92-8ffb-f5336793d64f
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 100%
 
 ---
 
 # Wichtige Schritte zum Erstellen einer Umfrage{#getting-started-with-surveys}
+
+![](../../assets/v7-only.svg)
 
 Hier finden Sie einen kurzen Überblick über die wichtigsten Schritte zur Erstellung einer einfachen Umfrage unter Verwendung der folgenden nativen Vorlage:
 

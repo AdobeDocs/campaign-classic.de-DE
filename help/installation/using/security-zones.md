@@ -6,28 +6,29 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1493'
-ht-degree: 27%
+ht-degree: 32%
 
 ---
 
 
 # Sicherheitszonen definieren (On-Premise){#defining-security-zones}
 
-Jeder Benutzer muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die Benutzer-IP muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der Sicherheitszone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers.
+![](../../assets/v7-only.svg)
 
-Benutzer werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Benutzer]** zugegriffen werden kann. [Weitere Informationen](#linking-a-security-zone-to-an-operator).
+Jeder Operator muss mit einer Zone verknüpft sein, um sich bei einer Instanz anmelden zu können, und die IP des Operators muss in die Adressen oder Adresssätze aufgenommen werden, die in der Sicherheitszone definiert sind. Die Konfiguration der Sicherheitszone erfolgt in der Konfigurationsdatei des Adobe Campaign-Servers.
+
+Operatoren werden über ihr Profil in der Konsole mit einer Sicherheitszone verknüpft, auf die über den Knoten **[!UICONTROL Administration > Zugriffe > Operatoren]** zugegriffen werden kann. [Weitere Informationen](#linking-a-security-zone-to-an-operator).
 
 >[!NOTE]
 >
 >Dieses Verfahren ist auf **On-Premise** -Implementierungen beschränkt.
 >
->Als Kunde von **gehostet** können Sie, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, die Sicherheitszonen-Benutzeroberfläche verwenden. [Mehr dazu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)
+>Als Kunde von **gehostet** können Sie, wenn Sie auf [Campaign Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/control-panel-home.html?lang=de) zugreifen können, die Sicherheitszonen-Benutzeroberfläche verwenden. [Weitere Informationen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de)   
 >
 >Andere **hybride/gehostete** -Kunden müssen sich an das Adobe Support-Team wenden, um IP zur Zulassungsliste hinzuzufügen.
-
 
 ## Sicherheitszonen erstellen {#creating-security-zones}
 
@@ -219,7 +220,7 @@ Nachdem die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** 
 
 
 
-## Recommendations
+## Empfehlungen
 
 * Stellen Sie sicher, dass Ihr Reverse-Proxy in subNetwork nicht erlaubt ist. Ist dies der Fall, wird der **gesamte** Datenverkehr als von dieser lokalen IP-Adresse kommend und daher als vertrauenswürdig eingestuft.
 

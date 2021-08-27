@@ -6,7 +6,7 @@ description: Erfahren Sie, wie Sie den Zugriff auf Vertica über die FDA konfigu
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: a7c080fe4db72f659659c7cac8f2c02031822e04
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 19%
@@ -14,7 +14,9 @@ ht-degree: 19%
 ---
 
 
-# Zugriff auf Vertica {#configure-fda-vertica} konfigurieren
+# Zugriff auf Vertica konfigurieren {#configure-fda-vertica}
+
+![](../../assets/v7-only.svg)
 
 Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Vertica] zu konfigurieren.
 
@@ -90,7 +92,7 @@ Gehen Sie wie folgt vor, um [!DNL Vertica] unter CentOS zu konfigurieren:
 
 1. In Adobe Campaign können Sie dann Ihr externes [!DNL Vertica]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#vertical-external).
 
-## Vertica unter Debian {#vertica-debian}
+## Vertica auf Debian {#vertica-debian}
 
 1. Laden Sie die ODBC-Treiber für [!DNL Vertica] herunter. [Klicken Sie hier](https://sfc-repo.snowflakecomputing.com/odbc/linux/latest/index.html), um mit dem Herunterladen zu beginnen.
 

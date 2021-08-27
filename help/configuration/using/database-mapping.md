@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1974'
 ht-degree: 70%
@@ -14,6 +14,8 @@ ht-degree: 70%
 ---
 
 # Datenbank-Mapping{#database-mapping}
+
+![](../../assets/v7-only.svg)
 
 Das SQL-Mapping dieses Beispielschemas ergibt das folgende XML-Dokument:
 
@@ -36,7 +38,7 @@ Das SQL-Mapping dieses Beispielschemas ergibt das folgende XML-Dokument:
 </schema>
 ```
 
-## Beschreibung  {#description}
+## Beschreibung {#description}
 
 Das Stammelement des Schemas lautet nicht mehr **`<srcschema>`**, sondern **`<schema>`**.
 
@@ -174,7 +176,7 @@ Indizes folgen den folgenden Regeln:
    </srcSchema>
    ```
 
-## Verwaltung von Schlüsseln {#management-of-keys}
+## Schlüsselverwaltung {#management-of-keys}
 
 Eine Tabelle muss mindestens einen Schlüssel zur Identifizierung eines Datensatzes in der Tabelle beinhalten.
 

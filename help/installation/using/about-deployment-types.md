@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 08628efb-9186-4b67-9431-310d4bc276b4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Über Freigabetypen{#about-deployment-types}
+
+![](../../assets/v7-only.svg)
 
 Das modulare Design von Adobe Campaign ermöglicht eine breite Palette von Implementierungskonfigurationen, von eigenständigen Setups (alle Komponenten auf einem Computer) bis hin zu Enterprise-Implementierungen mit vollständig redundanter und verteilter Architektur mit mehreren Servern. Alles hängt vom erforderlichen Leistungs- und Sicherheitsniveau ab.
 

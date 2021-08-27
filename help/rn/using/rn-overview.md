@@ -2,18 +2,20 @@
 product: campaign
 title: Erste Schritte mit Upgrades
 description: Weiterführende Informationen zu Campaign Classic-Upgrades
-feature: Übersicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '412'
 ht-degree: 97%
 
 ---
 
 # Erste Schritte mit Upgrades{#rn-overview}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign wird regelmäßig aktualisiert. Im Durchschnitt werden jedes Jahr zwei oder drei Nebenversionen mit neuen Funktionen, Verbesserungen und Fehlerbehebungen veröffentlicht. Darüber hinaus veröffentlichen wir regelmäßig Builds nur mit kumulativen Fehlerbehebungen.
 

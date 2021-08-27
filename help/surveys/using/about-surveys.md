@@ -6,8 +6,8 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 7061a4f1-006f-4f19-8761-918d8930d885
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: ht
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 100%
 
@@ -15,13 +15,15 @@ ht-degree: 100%
 
 # Erste Schritte mit Umfragen{#about-surveys}
 
+![](../../assets/v7-only.svg)
+
 Adobe Campaign enthält ein Grafikmodul zur Definition und Veröffentlichung von Web-Anwendungen. Dies wird verwendet, um Seiten zu erstellen, z. B. ein Bearbeitungsformular für ein Extranet oder Benachrichtigungsformulare, einschließlich Daten aus der Datenbank mit Tabellen, Diagrammen, Formularen usw. Mit dieser Funktion können Sie Web-Seiten entwerfen und posten, auf denen Benutzer Informationen suchen oder eingeben können.
 
 Mit dem optionalen **Umfrage**-Add-on können Sie eine neue Art von Web-Anwendung erstellen, um Online-Fragebögen zu erstellen und zu verwalten, z. B. Formulare zum Hinzufügen oder Ändern von Profilinformationen, zum Abonnieren oder Abmelden von einem Informations-Service oder Teilnahmeformular für einen Wettbewerb. Nachdem die Antworten erfasst wurden, werden sie in der Datenbank oder in lokalen Variablen gespeichert. Das Datenmodell kann mithilfe der Fragebogenantworten dynamisch erweitert werden. Sie können die Ergebnisse in Echtzeit anzeigen, die Antworten filtern und mithilfe spezieller Diagramme analysieren.
 
 In diesem Kapitel wird beschrieben, wie Sie **Umfragen**, Feld- und Seitenverwaltung, Speichermodi und Einträge erstellen und verwalten.
 
-[!DNL :bulb:] Auf [dieser Seite](getting-started-with-surveys.md) erfahren Sie, wie Sie Ihre erste Umfrage erstellen.
+Auf [dieser Seite](getting-started-with-surveys.md) erfahren Sie, wie Sie Ihre erste Umfrage erstellen.
 
 >[!NOTE]
 >

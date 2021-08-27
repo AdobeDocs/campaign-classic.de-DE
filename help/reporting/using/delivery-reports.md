@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 100%
 
 ---
 
 # Versandberichte {#delivery-reports}
+
+![](../../assets/common.svg)
 
 Ausgehend von der Versandübersicht stehen diverse Berichte zur Verfügung, die Informationen bezüglich der Versanddurchführung enthalten. Gehen Sie wie folgt vor, um auf diese Berichte zuzugreifen:
 
@@ -118,7 +120,7 @@ Dieser Abschnitt zeigt die Anzahl der in einzelnen sozialen Netzwerken geteilten
 
 ## URLs und Clickstreams {#urls-and-click-streams}
 
-Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Webseiten.
+Dieser Bericht zeigt die Rangfolge der infolge eines Versands besuchten Web-Seiten.
 
 ![](assets/s_ncs_user_url_report.png)
 
@@ -182,7 +184,7 @@ Er zeigt den Nachrichteninhalt (HTML und/oder Text) mit dem prozentualen Klickan
 
 ![](assets/s_ncs_user_clic_report.png)
 
-## Trackingstatistiken {#tracking-statistics}
+## Tracking-Statistiken {#tracking-statistics}
 
 Dieser Bericht zeigt Statistiken zu Öffnungen, Klicks und Transaktionen.
 

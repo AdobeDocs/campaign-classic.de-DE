@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 12%
@@ -15,7 +15,9 @@ ht-degree: 12%
 
 # Über Web-Dienste{#about-web-services}
 
-## Definition der Adobe Campaign-APIs {#definition-of-adobe-campaign-apis}
+![](../../assets/v7-only.svg)
+
+## Definition von Adobe Campaign-APIs {#definition-of-adobe-campaign-apis}
 
 Der Adobe Campaign-Anwendungsserver wurde für Offenheit und einfache Integration in immer vielfältigere und komplexere Unternehmensinformationssysteme entwickelt.
 
@@ -62,7 +64,7 @@ Das folgende Schema zeigt die verschiedenen Ressourcen, die an der Verwendung vo
 
 ![](assets/s_ncs_integration_webservices_schema_pres.png)
 
-## Beispiel einer SOAP-Nachricht für die Methode &#39;ExecuteQuery&#39; {#example-of-a-soap-message-on-the--executequery--method--}
+## Beispiel einer SOAP-Nachricht in der &#39;ExecuteQuery&#39;-Methode {#example-of-a-soap-message-on-the--executequery--method--}
 
 In diesem Beispiel ruft eine SOAP-Abfrage die Methode &quot;ExecuteQuery&quot;auf, die eine Zeichenkette als Parameter für die Authentifizierung (Sitzungstoken) und einen XML-Inhalt für die Beschreibung der auszuführenden Abfrage akzeptiert.
 
@@ -115,7 +117,7 @@ In SOAP werden die Parameter in der Reihenfolge ihres Erscheinungsbilds erkannt.
 
 Das Ergebnis der Abfrage wird aus dem Element `<pdomoutput>` eingegeben.
 
-## Umgang mit Fehlern          {#error-management}
+## Umgang mit Fehlern       {#error-management}
 
 Beispiel für SOAP-Fehlerantwort:
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: cada78cb-658f-4b9e-8136-31c17cb1d82f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '428'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 95%
 
 ---
 
-# SQL Data Management{#sql-data-management}
+# SQL-Daten-Management{#sql-data-management}
+
+![](../../assets/common.svg)
 
 Die Aktivität **SQL Data Management** ermöglicht Ihnen das Schreiben eigener SQL-Abfragen zum Erstellen und Auffüllen von Arbeitstabellen.
 
@@ -22,7 +24,14 @@ Die Aktivität **SQL Data Management** ermöglicht Ihnen das Schreiben eigener S
 Vor der Konfiguration der Aktivität müssen folgende Voraussetzungen gegeben sein:
 
 * Die Aktivität ist nur für Remote-Datenquellen verfügbar. Deshalb muss das **[!UICONTROL FDA]**-Package (Federated Data Access) auf Ihrer Instanz installiert sein. [Weitere Informationen](../../installation/using/about-fda.md).
-* Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein. [Weitere Informationen](../../configuration/using/about-schema-reference.md).
+
+   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
+
+   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html)
+
+* Das ausgehende Schema muss in der Datenbank vorhanden und mit einer FDA-Datenbank verknüpft sein.
 * Für den Operator, der den Workflow ausführt, muss die **[!UICONTROL ANGEBOTSAKTIVITÄT SQL-DATEN-MANAGEMENT VERWENDEN (useSqlDmActivity)]** richtig benannt sein. [Weitere Informationen](../../platform/using/access-management-named-rights.md).
 
 ## SQL-Data-Management-Aktivität konfigurieren {#configuring-the-sql-data-management-activity}

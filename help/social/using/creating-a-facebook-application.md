@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 100%
 
 ---
 
-# Erstellen einer Facebook-Anwendung {#creating-a-facebook-application}
+# Erstellen einer Facebook-Anwendung{#creating-a-facebook-application}
+
+![](../../assets/v7-only.svg)
 
 Dank Webanwendungen können Sie mit Social Marketing personalisierte Inhalte in Ihren Facebook-Anwendungen anzeigen. Dadurch wird es einfacher, über dieses soziale Netzwerk potenzielle Kunden zu gewinnen. Weitere Beispiele für Facebook-Webanwendungen finden Sie unter [Beispiele für Facebook-Anwendungen](../../social/using/examples-of-facebook-apps.md).
 
@@ -31,7 +33,7 @@ Befolgen Sie zur Konfiguration die nachstehenden Etappen:
 1. Erstellen Sie für jede Facebook-Anwendung in Adobe Campaign eine Webanwendung vom Typ „Facebook“. Weitere Informationen hierzu finden Sie unter [Webanwendungen vom Typ „Facebook“ erstellen](#creating-a-facebook-type-web-application).
 1. Konfigurieren Sie Ihre Facebook-Anwendungen so, dass sie als Tabs auf Ihrer Facebook-Seite angezeigt werden. Weitere Informationen finden Sie unter [Facebook-Tabs konfigurieren](#configuring-facebook-tabs).
 
-## Externe Konten konfigurieren {#configuring-external-accounts}
+## Konfigurieren externer Konten {#configuring-external-accounts}
 
 Für jede Facebook-Anwendung müssen Sie ein externes **[!UICONTROL Facebook Connect]**-Konto erstellen.
 

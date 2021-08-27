@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: bdda98f7-a083-4f3b-b691-c28ec79af780
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 100%
 
 ---
 
 # Angebotsplatzierungen{#creating-offer-spaces}
+
+![](../../assets/v7-only.svg)
 
 Die Erstellung von Platzierungen erfolgt in der Design-Umgebung. Sie erfordert ein Benutzerprofil vom Typ **Technischer Administrator** mit Zugriff auf den Platzierungs-Unterordner. Die Platzierungen eines Angebots werden automatisch in die Live-Umgebung dupliziert, sobald das entsprechende Angebot validiert wurde.
 
@@ -69,7 +71,7 @@ Gehen Sie wie folgt vor, um eine neue Platzierung zu erstellen:
 
 Für eingehende Interaktionen können die XML-Rendering-Funktionen, für ausgehende die HTML- und Text-Rendering-Funktionen überschrieben werden. Weitere Informationen finden Sie unter [Über eingehende Kanäle](../../interaction/using/about-inbound-channels.md).
 
-## Status von Angebotsvorschlägen {#offer-proposition-statuses}
+## Vorschlagsstatus {#offer-proposition-statuses}
 
 Angebotsvorschläge können je nach Interaktion mit der Zielgruppe verschiedene Status aufweisen. Interaction enthält hierfür werksmäßig eine Reihe von Werten, die dem Angebotsvorschlag über seinen Lebenszyklus hinweg zugewiesen werden können. Es ist jedoch an Ihnen, die Plattform dahingehend zu konfigurieren, dass der bei Angebotsvorschlagserzeugung zugewiesene Status bei Annahme des Vorschlags durch einen Kontakt wechselt.
 
@@ -148,7 +150,7 @@ Bei ausgehenden Interaktionen besteht die Möglichkeit, dem Angebotsvorschlag au
 <a _urlType="11" href="<DEST_URL>">Link inserted into the delivery</a>
 ```
 
-## Vorschau der Angebote in der Platzierung {#offer-preview-per-space}
+## Angebotsvorschau in der Platzierung {#offer-preview-per-space}
 
 Im Vorschau-Tab können Sie die für einen Empfänger infrage kommenden Angebote einer einzelnen Platzierung ansehen. In unten stehenden Beispiel kommen für den ausgewählten Empfänger drei Vorschläge für die Briefpost-Platzierung infrage:
 

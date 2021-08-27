@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 43779505-9917-4e99-af25-b00a9d29a645
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 100%
 
 ---
 
 # Erste Schritte mit dem Tracking von Nachrichten {#get-started-tracking}
+
+![](../../assets/common.svg)
 
 Dank der Tracking-Funktionen können Sie mit Adobe Campaign die versendeten Nachrichten verfolgen und das Verhalten der Empfänger überprüfen: Öffnung, Klicks auf Links, Abmeldung usw.
 

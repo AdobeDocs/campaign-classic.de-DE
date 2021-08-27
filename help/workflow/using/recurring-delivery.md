@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: efd2cdfb-2e5f-4672-8be8-a424481b11ed
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
 
 ---
 
 # Wiederkehrender Versand{#recurring-delivery}
+
+![](../../assets/common.svg)
 
 Ein **[!UICONTROL wiederkehrender Versand]** dient der Konfiguration einer Versandvorlageninstanz im Rahmen einer Kampagne.
 
@@ -31,7 +33,7 @@ Gehen Sie dazu wie folgt vor:
 
 Die zur Verfügung stehenden Optionen entsprechen denen einer klassischen Versandvorlage. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../delivery/using/about-templates.md).
 
-Ein Anwendungsbeispiel für diese Aktivität ist in diesem [Abschnitt](../../workflow/using/sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow) enthalten.
+Ein Anwendungsbeispiel für diese Aktivität ist in diesem [Abschnitt](sending-a-birthday-email.md#creating-a-recurring-delivery-in-a-targeting-workflow) enthalten.
 
 ## Einrichten eines wiederkehrenden Versands
 

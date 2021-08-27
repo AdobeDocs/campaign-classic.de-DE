@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 100%
 
 ---
 
 # Lokale Validierung verwenden{#using-the-local-approval-activity}
+
+![](../../assets/common.svg)
 
 Im Rahmen eines Zielgruppen-Workflows ermöglicht die Aktivität **[!UICONTROL Lokale Validierung]** die Formalisierung eines Validierungsprozesses, der die Überprüfung der ausgewählten Empfänger vor Absendung der Kampagne sicherstellt.
 
@@ -51,7 +53,7 @@ Der lokale Validierungsprozess gliedert sich in folgende Schritte:
 
 Eine Verteilungsvorlage ermöglicht die Begrenzung der aus der Zielgruppenbestimmung resultierenden Population mithilfe einer Datengruppierung. Jedem Gruppierungswert kann dann ein lokaler Verantwortlicher zugewiesen werden. Im vorliegenden Beispiel wird die **[!UICONTROL E-Mail-Domain]** als Gruppierungswert verwendet und jedem lokalen Verantwortlichen eine Domain zugewiesen.
 
-Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution).
+Weitere Informationen zum Erstellen einer Datenverteilungsvorlage finden Sie unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](split.md#limiting-the-number-of-subset-records-per-data-distribution).
 
 1. Gehen Sie in den Knoten **[!UICONTROL Ressourcen > Kampagnenverwaltung > Datenverteilung]** und klicken Sie auf die Schaltfläche **[!UICONTROL Neu]**.
 
@@ -106,7 +108,7 @@ Folgende Aktivitäten wurden verwendet:
 
 Die Zielgruppenbestimmung geschieht mithilfe zweier Abfragen und einer Schnittmenge. Die **[!UICONTROL Aufspaltung]** schränkt die resultierende Population über eine Datenverteilungsvorlage ein.
 
-Weitere Informationen zum Konfigurieren einer Aufspaltungsaktivität finden Sie unter [Aufspaltung](../../workflow/using/split.md). Die Erstellung einer Datenverteilungsvorlage wird unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](../../workflow/using/split.md#limiting-the-number-of-subset-records-per-data-distribution) ausführlich beschrieben.
+Weitere Informationen zum Konfigurieren einer Aufspaltungsaktivität finden Sie unter [Aufspaltung](split.md). Die Erstellung einer Datenverteilungsvorlage wird unter [Anzahl an Datensätzen in Teilmengen durch Datenverteilung begrenzen](split.md#limiting-the-number-of-subset-records-per-data-distribution) ausführlich beschrieben.
 
 Wenn Sie die aus der Abfrage resultierende Population nicht einschränken möchten, ist die Verwendung der **[!UICONTROL Abfragen]**, **[!UICONTROL Schnittmenge]** und **[!UICONTROL Aufspaltung]** nicht erforderlich. Konfigurieren Sie in diesem Fall die Verteilungsvorlage in der ersten Aktivität vom Typ **[!UICONTROL Lokale Validierung]**.
 
@@ -134,7 +136,7 @@ In der Verteilungsvorlage wurde die Population auf 10 % je Gruppierungswert begr
 
 Die **[!UICONTROL Lokale Validierung]** erlaubt den Versand einer Benachrichtigung an jeden lokalen Verantwortlichen.
 
-Weiterführende Informationen zur Konfiguration der **[!UICONTROL lokalen Validierung]** finden Sie im Abschnitt [Lokale Validierung](../../workflow/using/local-approval.md).
+Weiterführende Informationen zur Konfiguration der **[!UICONTROL lokalen Validierung]** finden Sie im Abschnitt [Lokale Validierung](local-approval.md).
 
 ![](assets/local_validation_workflow_2.png)
 

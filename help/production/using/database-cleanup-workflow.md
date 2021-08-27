@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2997'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Datenbankbereinigungs-Workflow{#database-cleanup-workflow}
+
+![](../../assets/v7-only.svg)
 
 ## Einleitung {#introduction}
 
@@ -44,7 +46,7 @@ Standardmäßig ist der Workflow **[!UICONTROL Datenbankbereinigung]** so konfig
 >
 >Damit der Workflow **[!UICONTROL Datenbankbereinigung]** an dem in der Planung definierten Datum und zu der in der Planung definierten Uhrzeit beginnt, muss die Workflow-Engine (wfserver) gestartet werden. Ist dies nicht der Fall, wird die Datenbankbereinigung erst beim nächsten Start der Workflow-Engine durchgeführt.
 
-### Bereitstellungsassistent {#deployment-wizard}
+### Implementierungsassistent {#deployment-wizard}
 
 Der **[!UICONTROL Softwareverteilungs-Assistent]**, der über das Menü **[!UICONTROL Tools > Erweitert]** aufgerufen wird, ermöglicht die Konfiguration der Speicherdauer von Daten. Die Werte werden in Tagen ausgedrückt. Wenn diese Werte nicht geändert werden, verwendet der Workflow die Standardwerte.
 
@@ -75,7 +77,7 @@ Die Felder des Fensters **[!UICONTROL Datenbereinigung]** entsprechen den folgen
 
 Alle vom Workflow **[!UICONTROL Datenbankbereinigung]** ausgeführten Aufgaben werden im folgenden Abschnitt beschrieben.
 
-## Aufgaben, die vom Datenbankbereinigungs-Workflow {#tasks-carried-out-by-the-database-cleanup-workflow} ausgeführt werden
+## Vom Datenbankbereinigungs-Workflow durchgeführte Aufgaben {#tasks-carried-out-by-the-database-cleanup-workflow}
 
 Zu dem in der Workflow-Planung definierten Zeitpunkt (siehe [Scheduler](#the-scheduler)) startet die Workflow-Engine den Datenbankbereinigungsprozess. Die Datenbankbereinigung stellt eine Verbindung zur Datenbank her und führt die Aufgaben in der unten gezeigten Reihenfolge aus.
 
@@ -273,7 +275,7 @@ Bei dieser Aufgabe werden die von Sendungen verwendeten Web-Ressourcen (Mirrorse
 
    wobei **$(strIn)** die Liste der Versandkennungen ist.
 
-### Bereinigung der Arbeitstabellen {#cleanup-of-work-tables}
+### Bereinigen von Arbeitstabellen {#cleanup-of-work-tables}
 
 Diese Aufgabe löscht aus der Datenbank alle Arbeitstabellen, die Sendungen entsprechen, deren Status **[!UICONTROL In Bearbeitung]** , **[!UICONTROL Angehalten]** oder **[!UICONTROL Gelöscht]** ist.
 
@@ -315,7 +317,7 @@ In diesem Schritt können Sie Datensätze löschen, für die während des Import
    DELETE FROM XtkReject WHERE iJobId NOT IN (SELECT iJobId FROM XtkJob)
    ```
 
-### Bereinigung der Workflow-Instanzen {#cleanup-of-workflow-instances}
+### Bereinigen von Workflow-Instanzen {#cleanup-of-workflow-instances}
 
 Diese Aufgabe löscht jede Workflow-Instanz mithilfe ihres Identifikators (**lWorkflowId**) und des Verlaufs (**lHistory**). Löscht inaktive Tabellen, indem die Aufgabe zur Bereinigung der Arbeitstabelle erneut ausgeführt wird. Die Bereinigung löscht auch alle verwaisten Arbeitstabellen (wkf% und wkfhisto%) der gelöschten Workflows.
 
@@ -392,7 +394,7 @@ Diese Aufgabe löscht verwaiste Arbeitstabellen, die mit Gruppen verknüpft sind
 SELECT iGroupId FROM NmsGroup WHERE iType>0"
 ```
 
-### Bereinigung der Besucher {#cleanup-of-visitors}
+### Besucherbereinigung {#cleanup-of-visitors}
 
 Durch Massenlöschung werden veraltete Datensätze aus der Besuchertabelle gelöscht. Veraltete Datensätze sind jene, deren letzte Änderung vor dem im Softwareverteilungs-Assistenten festgelegten Erhaltungszeitraum liegt (siehe [Softwareverteilungs-Assistent](#deployment-wizard)). Die folgende Abfrage wird verwendet:
 
@@ -402,7 +404,7 @@ DELETE FROM NmsVisitor WHERE iVisitorId IN (SELECT iVisitorId FROM NmsVisitor WH
 
 wobei **$(tsDate)** das aktuelle Server-Datum ist, von dem wir den für die Option **NmsCleanup_VisitorPurgeDelay** definierten Zeitraum subtrahieren.
 
-### Bereinigung von NPAI {#cleanup-of-npai}
+### Bereinigung der NPAI {#cleanup-of-npai}
 
 Mithilfe dieser Aufgabe können Sie Datensätze, die gültigen Adressen entsprechen, aus der Tabelle **NmsAddress** löschen. Die folgende Abfrage wird verwendet, um eine Massenlöschung durchzuführen:
 
@@ -473,7 +475,7 @@ Auf diese Weise können die in verschiedenen Tabellen gespeicherten Versandlogs 
 
    wobei **$(option)** dem für die Option **NmsCleanup_BroadLogPurgeDelay** definierten Datum entspricht (siehe [Implementierungsassistent](#deployment-wizard)).
 
-### Bereinigung der NmsEmailErrorStat-Tabelle {#cleanup-of-the-nmsemailerrorstat-table-}
+### Bereinigung der Tabelle &quot;NmsEmailErrorStat&quot; {#cleanup-of-the-nmsemailerrorstat-table-}
 
 Diese Aufgabe bereinigt die Tabelle **NmsEmailErrorStat**. Das Hauptprogramm (**coalesceErrors**) definiert zwei Daten:
 
@@ -521,7 +523,7 @@ Die Schleife und die Aufgabe werden beendet.
 
 Bereinigungen werden für die Tabellen **NmsEmailError** und **cleanupNmsMxDomain** ausgeführt.
 
-### Bereinigung der NmsEmailError-Tabelle {#cleanup-of-the-nmsemailerror-table-}
+### Bereinigung der NmsEmailError -Tabelle {#cleanup-of-the-nmsemailerror-table-}
 
 Die folgende Abfrage wird verwendet:
 
@@ -589,7 +591,7 @@ DELETE FROM NmsAddress WHERE iAddressId IN (SELECT iAddressId FROM NmsAddress WH
 
 Diese Abfrage löscht alle Einträge, die sich auf iOS und Android beziehen.
 
-### Statistische Aktualisierung und Speicheroptimierung {#statistics-update}
+### Optimierung der Statistikaktualisierung und -speicherung {#statistics-update}
 
 Mit der Option **XtkCleanup_NoStats** können Sie das Verhalten des Speicheroptimierungsschritts des Bereinigungs-Workflows steuern.
 
@@ -613,7 +615,7 @@ Die Aufgabe ruft dann die Namen der mit dem Link **appSubscription** verknüpfte
 
 Dieser Bereinigungs-Workflow löscht auch alle Einträge, bei denen disabled = 1 ist und die seit der in der Option **NmsCleanup_AppSubscriptionRcpPurgeDelay** festgelegten Zeit nicht aktualisiert wurden.
 
-### Löschen von Sitzungsinformationen {#cleansing-session-information}
+### Sitzungsinformationen bereinigen {#cleansing-session-information}
 
 Diese Aufgabe bereinigt Informationen aus der **sessionInfo**-Tabelle. Die folgende Abfrage wird verwendet:
 
@@ -621,7 +623,7 @@ Diese Aufgabe bereinigt Informationen aus der **sessionInfo**-Tabelle. Die folge
  DELETE FROM XtkSessionInfo WHERE tsexpiration < $(curdate) 
 ```
 
-### Löschen abgelaufener Ereignisse {#cleansing-expired-events}
+### Bereinigen abgelaufener Ereignisse {#cleansing-expired-events}
 
 Diese Aufgabe bereinigt die in den Ausführungsinstanzen empfangenen und gespeicherten Ereignisse sowie die in einer Kontrollinstanz archivierten Ereignisse.
 

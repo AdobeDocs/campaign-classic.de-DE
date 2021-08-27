@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 4df126fa-4a6e-46a7-af6e-1e2e97f0072e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Standardfreigabe{#standard-deployment}
+
+![](../../assets/v7-only.svg)
 
 Für diese Konfiguration sind drei Computer erforderlich:
 
@@ -39,7 +41,7 @@ Diese Art von Konfiguration kann eine große Anzahl von Empfängern (500.000 bis
 * Failover-Funktion: die Möglichkeit, Prozesse bei einem Hardwareproblem auf den anderen Computer zu wechseln.
 * Bessere Gesamtleistung, da die MTA- und Umleitungsfunktionen auf beiden Computern hinter einem Lastverteiler bereitgestellt werden können. Mit zwei aktiven MTAs und ausreichend Bandbreite ist es möglich, Übertragungsraten von rund 100.000 E-Mails pro Stunde zu erreichen.
 
-## Installations- und Konfigurationsschritte {#installation-and-configuration-steps}
+## Installation und Konfiguration {#installation-and-configuration-steps}
 
 ### Voraussetzungen {#prerequisites}
 
@@ -54,7 +56,7 @@ Diese Art von Konfiguration kann eine große Anzahl von Empfängern (500.000 bis
 
 * Firewall konfiguriert zum Öffnen von STMP (25), DNS (53), HTTP (80), HTTPS (443), SQL (1521 für Oracle, 5432 für PostgreSQL usw.) Ports. Weitere Informationen finden Sie im Abschnitt [Datenbankzugriff](../../installation/using/network-configuration.md#database-access).
 
-### Installieren des Anwendungsservers {#installing-the-application-server}
+### Anwendungsserver installieren {#installing-the-application-server}
 
 Führen Sie die Schritte aus, um eine eigenständige Instanz vom Adobe Campaign-Anwendungsserver zur Erstellung der Datenbank zu installieren (Schritt 12). Siehe [Installation und Konfiguration (Einzelmaschine)](../../installation/using/standalone-deployment.md#installing-and-configuring--single-machine-).
 
@@ -90,7 +92,7 @@ Zusammenfassend sind folgende Etappen zu durchlaufen:
 
       Weitere Informationen hierzu finden Sie unter [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 
-      or
+      oder
 
    * Erstellen Sie die Instanz mithilfe der Befehlszeilen:
 

@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 263e5ffe-9302-4823-a814-fdc955e3f90a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 100%
 
 ---
 
 # Übersicht{#overview}
+
+![](../../assets/v7-only.svg)
 
 Mit Social-Media-Marketing können Sie Sendungen an Ihre verschiedenen Facebook-Seiten und Twitter-Konten vornehmen, im Gegensatz zu Empfängerprofilen. Auf Facebook werden Versandinhalte in Form von Veröffentlichungen auf Pinnwänden angezeigt und erscheinen zudem im Newsfeed aller Seiten-Fans. Auf Twitter werden Versandinhalte als Tweets angezeigt und erscheinen auf der Startseite der Konto-Follower. An die von Ihnen gesammelten Konto-Follower können Sie auch Direktnachrichten senden.
 

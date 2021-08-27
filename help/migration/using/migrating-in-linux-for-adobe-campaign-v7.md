@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 9dc0699c-0fbf-4f8e-81f7-8ca3d7e98798
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1890'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Migration in Linux zu Adobe Campaign v7{#migrating-in-linux-for-adobe-campaign-v}
+
+![](../../assets/v7-only.svg)
 
 ## Allgemeines Verfahren {#general-procedure}
 
@@ -69,7 +71,7 @@ Beenden Sie zunächst alle Prozesse mit Zugriff auf die Datenbank auf allen betr
    killall -9 nlserver
    ```
 
-## Sichern Sie die Datenbank und die vorhandene Installation {#back-up-the-database-and-the-existing-installation}.
+## Datenbank und bestehende Installation sichern {#back-up-the-database-and-the-existing-installation}
 
 Das Verfahren hängt von Ihrer vorherigen Adobe Campaign-Version ab.
 
@@ -157,7 +159,7 @@ Das Verfahren hängt von Ihrer vorherigen Adobe Campaign-Version ab.
    >
    >Als Vorsichtsmaßnahme empfehlen wir, den Ordner **nl6.back** zu komprimieren und ihn an einem anderen sicheren Speicherort als dem Server zu speichern.
 
-## Deinstallieren der vorherigen Adobe Campaign-Versionspakete {#uninstalling-adobe-campaign-previous-version-packages}
+## Deinstallieren früherer Adobe Campaign-Versionspakete {#uninstalling-adobe-campaign-previous-version-packages}
 
 Das Verfahren hängt von Ihrer vorherigen Adobe Campaign-Version ab.
 

@@ -2,18 +2,20 @@
 product: campaign
 title: Adobe Campaign-Arbeitsbereich
 description: Erfahren Sie, wie Sie den Campaign-Arbeitsbereich verwenden und anpassen.
-feature: Übersicht
+feature: Overview
 role: Data Engineer
 level: Beginner
 exl-id: 5f689679-7148-4abd-a9bf-185854c64b13
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '851'
 ht-degree: 99%
 
 ---
 
 # Adobe Campaign-Arbeitsbereich{#adobe-campaign-workspace}
+
+![](../../assets/common.svg)
 
 ## Über die Benutzeroberfläche von Adobe Campaign {#about-adobe-campaign-interface}
 

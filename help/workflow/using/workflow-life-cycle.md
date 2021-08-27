@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: fceb5752-dc73-4386-8c18-c4f3e6110ca5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%
 
 ---
 
 # Lebenszyklus eines Workflows {#workflow-life-cycle}
+
+![](../../assets/common.svg)
 
 Der Lebenszyklus eines Workflows gestaltet sich in drei Hauptetappen:
 
@@ -41,4 +43,4 @@ Der Workflow wartet also auf die Entscheidung eines Benutzers, der der Gruppe an
 
 Die Benutzerverwaltung wird in diesem [Abschnitt](../../platform/using/access-management.md) beschrieben.
 
-Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
+Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in [diesem Abschnitt](monitoring-workflow-execution.md).

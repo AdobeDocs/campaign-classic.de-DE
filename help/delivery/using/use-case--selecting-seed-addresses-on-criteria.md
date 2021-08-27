@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 091648b8-bf2d-4595-8be3-287f1ac48edd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
 ---
 
 # Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien{#use-case-selecting-seed-addresses-on-criteria}
+
+![](../../assets/common.svg)
 
 Der Link **[!UICONTROL Dynamische Bedingung bearbeiten...]** ermöglicht es, im Rahmen einer Kampagne oder einer Sendung die zu verwendenden Testadressen nach bestimmten Kriterien auszuwählen.
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 0fdf8259-5cab-4a9d-adb3-6c55ec5c8851
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 72%
@@ -14,6 +14,8 @@ ht-degree: 72%
 ---
 
 # Zugriff auf Sybase IQ konfigurieren {#configure-access-to-sybase-iq}
+
+![](../../assets/v7-only.svg)
 
 Verwenden Sie die Option Campaign **Federated Data Access** (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Sybase IQ zu konfigurieren.
 
@@ -64,7 +66,7 @@ Die Verbindung zu einer externen Sybase IQ-Datenbank über die FDA-Option erford
    * Wenn Sie eine customer.sh-Datei verwenden, um Ihren Pfad zu deklarieren: Fügen Sie den Pfad /opt/sybase/IQ-16_0/lib64 für die Variable LD_LIBRARY_PATH hinzu.
    * Verwenden Sie ansonsten einen Unix-Befehl.
 
-## Externes Sybase IQ-Konto {#sybase-external}
+## Externes Konto sybase IQ {#sybase-external}
 
 Mit dem externen Sybase IQ-Konto können Sie Ihre Campaign-Instanz mit Ihrer externen Sybase IQ-Datenbank verbinden.
 

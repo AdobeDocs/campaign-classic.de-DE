@@ -2,18 +2,20 @@
 product: campaign
 title: Erste Schritte mit Berechtigungen
 description: Erfahren Sie, wie Sie Zugriff auf Campaign-Funktionen gewähren.
-feature: Zugriffsverwaltung
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 9b616715-33cd-43ba-8548-8d96a179408e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '253'
+ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Berechtigungen{#access-management}
+
+![](../../assets/common.svg)
 
 Adobe Campaign ermöglicht es, die den unterschiedlichen Benutzern zugeteilten Rechte zu bestimmen und zu verwalten. Es handelt es sich um Berechtigungen und Beschränkungen folgender Aktivitäten:
 
@@ -51,7 +53,7 @@ In den folgenden Abschnitten erfahren Sie, wie Sie Zugriff gewähren und Berecht
 Siehe auch:
 
 * [Berechtigungen für Workflows verwalten](../../workflow/using/managing-rights.md)
-* [Berechtigungen für verteiltes Marketing verwalten](../../campaign/using/about-distributed-marketing.md#operators-and-entities)
+* [Berechtigungen für verteiltes Marketing verwalten](../../distributed/using/about-distributed-marketing.md#operators-and-entities)
 * [Berechtigungen für das Interaktionsmodul verwalten](../../interaction/using/operator-profiles.md)
 * [Filterzugriff auf Schemata](../../configuration/using/filtering-schemas.md)
 * [Einschränkung der PI-Ansicht](../../configuration/using/restricting-pii-view.md)

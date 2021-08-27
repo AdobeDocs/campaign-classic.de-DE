@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: 70cd6a4b-c839-4bd9-b9a7-5a12e59c0cbf
-source-git-commit: 1312f7c319c96851bc83ae21501164e2688d0dff
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '7969'
 ht-degree: 31%
@@ -14,6 +14,8 @@ ht-degree: 31%
 ---
 
 # Die Server-Konfigurationsdatei{#the-server-configuration-file}
+
+![](../../assets/v7-only.svg)
 
 Die Gesamtkonfiguration von Adobe Campaign wird in der Datei **serverConf.xml** definiert, die sich im Ordner **conf** des Installationsordners befindet. In diesem Abschnitt werden alle verschiedenen Knoten und Parameter der Datei **serverConf.xml** aufgelistet.
 
@@ -665,7 +667,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **ims** . Dies i
   </tr> 
   <tr> 
    <td> authIMSCode<br /> </td> 
-   <td> Zulassungscode (mit AES verschlüsselt)<br /> </td> 
+   <td> Zulassungs-Code (mit AES verschlüsselt)<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -683,7 +685,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **ims** . Dies i
   </tr> 
   <tr> 
    <td> authIMSTAClientSecret<br /> </td> 
-   <td> Geheimschlüssel des technischen Kontos (in AES verschlüsselt)<br /> </td> 
+   <td> Geheimschlüssel des technischen Kontos (mit AES verschlüsselt)<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -695,7 +697,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **ims** . Dies i
   </tr> 
   <tr> 
    <td> authIMSTAPrivateKey<br /> </td> 
-   <td> Privater Schlüssel des technischen Kontos (in AES verschlüsselt)<br /> </td> 
+   <td> Privater Schlüssel des technischen Kontos (mit AES verschlüsselt)<br /> </td> 
    <td> String <br /> </td> 
    <td> <br /> </td> 
   </tr> 
@@ -1160,7 +1162,7 @@ Weitere Informationen finden Sie unter [Aktivieren der E-Mail-Archivierung (vor 
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeArchivesDelay<br /> </td> 
@@ -1321,7 +1323,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **inMail** . Die
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriodSec<br /> </td> 
@@ -1435,7 +1437,7 @@ Weitere Informationen finden Sie unter [Interaction - Datenpuffer](../../install
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -1572,7 +1574,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **mta** . Dies i
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeDataLogDelay<br /> </td> 
@@ -2129,7 +2131,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **pipelined** . 
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> processingJSThreads<br /> </td> 
@@ -2400,7 +2402,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **sms** . Dies i
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> reloadPeriod<br /> </td> 
@@ -2506,7 +2508,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **stat** . Dies 
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2577,7 +2579,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **syslogd** . Di
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2690,7 +2692,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **tracking** . D
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -2785,7 +2787,7 @@ Im Folgenden finden Sie die verschiedenen Parameter des Knotens **trackinglogd**
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> purgeLogsPeriod<br /> </td> 
@@ -2900,7 +2902,7 @@ Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](configuring-cam
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 
@@ -3474,7 +3476,7 @@ Weitere Informationen finden Sie unter [Workflows und Affinitäten mit hoher Ver
    <td> processRestartTime<br /> </td> 
    <td> Zeitpunkt des automatischen Neustarts des Prozesses. Siehe <a href="../../installation/using/configuring-campaign-server.md#automatic-process-restart" target="_blank">Automatischer Prozess-Neustart</a>.<br /> </td> 
    <td> String <br /> </td> 
-   <td> "06:00:00" <br /> </td> 
+   <td> '06:00:00' <br /> </td> 
   </tr> 
   <tr> 
    <td> runLevel<br /> </td> 

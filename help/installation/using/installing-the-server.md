@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: c0cb4efa-cae9-4312-88fb-738857a89595
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Installieren des Servers{#installing-the-server}
+
+![](../../assets/v7-only.svg)
 
 ## Ausführen des Installationsprogramms {#executing-the-installation-program}
 
@@ -62,7 +64,7 @@ Die Installationsschritte für den Adobe Campaign-Server lauten wie folgt:
 
    Starten Sie nach Abschluss der Installation Adobe Campaign, um die Konfigurationsdateien zu erstellen. Siehe [Erster Start des Servers](#first-start-up-of-the-server).
 
-## Installationstests für die Zusammenfassung {#summary-installation-testing}
+## Zusammenfassungstests {#summary-installation-testing}
 
 Sie können die Erstinstallation mit dem folgenden Befehl testen:
 
@@ -76,7 +78,7 @@ Wenn Adobe Campaign nicht gestartet wird, lautet die Antwort:
 No task
 ```
 
-## Erststart des Servers {#first-start-up-of-the-server}
+## Erstmaliger Start des Servers {#first-start-up-of-the-server}
 
 Öffnen Sie nach Abschluss des Installationstests über das Menü **[!UICONTROL Start > Programme > Adobe Campaign]** eine Eingabeaufforderung und geben Sie den folgenden Befehl ein:
 
@@ -137,7 +139,7 @@ Die folgenden Informationen werden angezeigt:
 
 Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **internal**, die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist erforderlich, eine zu definieren.
 
-Weiterführende Informationen finden Sie in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
 
 ## Starten von Adobe Campaign-Diensten {#starting-adobe-campaign-services}
 

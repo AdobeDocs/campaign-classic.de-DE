@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Konfigurieren der Benutzeroberfläche{#configuring-the-interface}
+
+![](../../assets/v7-only.svg)
 
 Gehen Sie wie folgt vor, um die neue Empfängertabelle in der Benutzeroberfläche von Adobe Campaign anzuzeigen und mit ihr zu kommunizieren:
 
@@ -27,7 +29,7 @@ Adobe Campaign verwendet eine globale Variable &quot;Nms_DefaultRcpSchema&quot;,
 1. Ändern Sie den Wert der Variablen **Nms_DefaultRcpSchema** durch den Namen des Schemas, das mit der externen Empfängertabelle übereinstimmt (in diesem Fall: cus:einzeln).
 1. Speichern Sie Ihre Änderungen.
 
-## Erstellen eines neuen Formulars {#creating-a-new-form-}
+## Neues Formular erstellen {#creating-a-new-form-}
 
 Die Erstellung eines neuen Formulars ermöglicht die Anzeige und Bearbeitung der Daten der externen Empfängertabelle.
 

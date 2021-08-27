@@ -6,14 +6,16 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 472ccc04-e68e-4ccb-90e9-7d626a4e794f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 8%
 
 ---
 
 # Übliche Befehle{#usual-commands}
+
+![](../../assets/v7-only.svg)
 
 In diesem Abschnitt werden die üblichen Befehle in Adobe Campaign aufgeführt.
 
@@ -31,8 +33,7 @@ Der Parameter **`<command>`** entspricht dem -Modul.
 >
 
 
-
-## Überwachungsbefehle {#monitoring-commands-}
+## Überwachen von Befehlen {#monitoring-commands-}
 
 >[!NOTE]
 >
@@ -74,7 +75,7 @@ wfserver@test
 
 Dies entspricht den Modulen mit automatischem Start, die jedoch nicht gestartet wurden.
 
-## Module Launch-Befehle {#module-launch-commands}
+## Module - Launch-Befehle {#module-launch-commands}
 
 Die Syntax zum Starten von Modulen hat weiterhin das folgende Format:
 
@@ -134,7 +135,7 @@ Ebenso können Sie zum Neustart von Adobe Campaign einen der folgenden Befehle v
 
 * Andernfalls im Adobe Campaign-Konto: **nlserver watchdog -svc -noconsole**
 
-## Der Konfigurationsbefehl {#the-config-command}
+## Konfigurationsbefehl {#the-config-command}
 
 Mit dem Befehl **config** können Sie die Serverkonfiguration verwalten, einschließlich der Neukonfiguration der Datenbankverbindung.
 
@@ -161,8 +162,5 @@ So ändern Sie das Kennwort **internal**: **nlserver config -internalpassword**
 >* Im Allgemeinen können Sie den Befehl **config** verwenden, anstatt die Konfigurationsdateien manuell zu ändern
 >* Um die Liste der Parameter zu erhalten, verwenden Sie die **-?** Parameter:  **nlserver config -?**
 >* Bei einer Oracle-Datenbank darf das Konto nicht angegeben werden. Die Syntax lautet wie folgt:
-
 >
->  
-nlserver config -setdblogin:Oracle:test6@dbserver
-
+>  nlserver config -setdblogin:Oracle:test6@dbserver

@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: event-processing
 exl-id: 3d85866a-6339-458c-807a-b267cce772b8
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
 
 ---
 
 # Ereignisverarbeitung {#about-event-processing}
+
+![](../../assets/v7-only.svg)
 
 Im Zusammenhang mit dem Transaktionsnachrichtenversand wird von einem externen Informationssystem ein Ereignis generiert und über die Methoden **[!UICONTROL PushEvent]** und **[!UICONTROL PushEvents]** an Adobe Campaign gesendet (siehe [Ereignisbeschreibung](../../message-center/using/event-description.md)).
 
@@ -40,7 +42,7 @@ Sobald alle oben genannten Schritte auf der Ausführungsinstanz ausgeführt wurd
 >Näheres zu Instanzen für Transaktionsnachrichten finden Sie unter [Transaktionsnachrichten-Architektur](../../message-center/using/transactional-messaging-architecture.md).
 
 
-## Ereignisabruf {#event-collection}
+## Ereigniskollektion {#event-collection}
 
 Die vom Informationssystem erzeugten Ereignisse können auf zwei Weisen abgerufen werden:
 

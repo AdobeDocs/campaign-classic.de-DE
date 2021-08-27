@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1615'
+ht-degree: 97%
 
 ---
 
 # Daten zwischen Campaign und dem CRM-System synchronisieren {#data-synchronization}
+
+![](../../assets/common.svg)
 
 Die Datensynchronisation zwischen Adobe Campaign und dem CRM-System erfolgt über die spezifische Workflow-Aktivität [CRM-Connector](../../workflow/using/crm-connector.md).
 
@@ -251,4 +253,3 @@ Im Tab **[!UICONTROL Verhalten]** kann die Zurückweisungsverarbeitung aktiviert
 >[!NOTE]
 >
 >Auch wenn die Option **[!UICONTROL Zurückweisungen in einer Datei speichern]** nicht aktiviert wurde, wird für jede zurückgewiesene Spalte ein Warnhinweis erzeugt.
-

@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: c75a5ea2-8d62-4f98-bccd-7116a4d404fd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 100%
 
 ---
 
 # Wichtigste Schritte zum Senden einer E-Mail {#confirming-email-delivery}
+
+![](../../assets/common.svg)
 
 Nachdem Sie Ihre E-Mail erstellt und konfiguriert haben, können Sie sie an die Hauptzielgruppe senden. In diesem Abschnitt werden die wichtigsten Schritte zur Überprüfung und Bestätigung des Versand einer E-Mail beschrieben.
 

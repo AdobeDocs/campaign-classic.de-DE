@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # HTTP-Übertragung{#web-download}
+
+![](../../assets/common.svg)
 
 Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes Konto oder eine Adobe-Campaign-Instanz unter Verwendung des Hypertext Transfer Protocols (HTTP). Sowohl die GET- als auch die POST-Methode können zur Anwendung kommen.
 
@@ -61,8 +63,8 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
    ![](assets/download_web_edit_advanced.png)
 
-   Die Option **[!UICONTROL Fehler verarbeiten]** wird im Abschnitt [Verarbeitungsfehler](../../workflow/using/monitoring-workflow-execution.md#processing-errors) erläutert.
+   Die Option **[!UICONTROL Fehler verarbeiten]** wird im Abschnitt [Verarbeitungsfehler](monitoring-workflow-execution.md#processing-errors) erläutert.
 
 ## Ausgabeparameter {#output-parameters}
 
-* filename: Vollständiger Name der übertragenen Datei.
+* filename: Vollständiger Name der heruntergeladenen Datei.

@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 978e1249-f79b-4f5f-9a94-3bb2510785de
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1045'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Spezifische Konfigurationen in v5.11{#specific-configurations-in-v5-11}
+
+![](../../assets/v7-only.svg)
 
 In diesem Abschnitt wird die zusätzliche Konfiguration beschrieben, die für die Migration von Version 5.11 erforderlich ist. Sie sollten auch die Einstellungen konfigurieren, die im Abschnitt [Allgemeine Konfigurationen](../../migration/using/general-configurations.md) beschrieben werden.
 
@@ -104,7 +106,7 @@ Drei Modi sind verfügbar:
 >
 >Weitere Informationen zu diesen drei Modi finden Sie in [diesem Abschnitt](../../configuration/using/about-web-tracking.md).
 
-## Adobe Campaign v7-Baumstruktur {#campaign-vseven-tree-structure}
+## Baumstruktur von Adobe Campaign v7 {#campaign-vseven-tree-structure}
 
 Während der Migration wird die Baumstruktur automatisch basierend auf den v7-Standards neu organisiert. Die neuen Ordner werden hinzugefügt, die veralteten Ordner werden gelöscht und ihr Inhalt wird im Ordner &quot;Zu verschieben&quot;abgelegt. Alle Elemente in diesem Ordner müssen nach der Migration überprüft werden. Der Berater muss entscheiden, sie entweder zu behalten oder sie zu löschen. Die zu pflegenden Gegenstände müssen dann an den richtigen Ort verschoben werden.
 

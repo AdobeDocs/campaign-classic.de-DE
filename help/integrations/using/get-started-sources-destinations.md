@@ -5,14 +5,16 @@ description: Weitere Informationen zu Adobe Experience Platform-Quellen und -Zie
 audience: integrations
 content-type: reference
 exl-id: 8cee52c7-ea56-4701-8ebb-eb18afffea51
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Quellen und Zielen {#rtcdp}
+
+![](../../assets/common.svg)
 
 ## Über Quellen und Ziele
 

@@ -6,14 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 04daa67c-4057-42a7-b993-a6eddf2b883d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1579'
 ht-degree: 100%
 
 ---
 
-# Audience für Ihre Kampagnen auswählen {#marketing-campaign-deliveries}
+# Auswählen der Audience für Ihre Kampagnen {#marketing-campaign-deliveries}
+
+![](../../assets/common.svg)
 
 In einer Marketing-Kampagne können Sie für jeden Versand Folgendes definieren:
 
@@ -86,7 +88,7 @@ Es besteht die Möglichkeit, mehrere Zielgruppen-Workflows für eine einzelne Ka
 1. Wählen Sie die Workflow-Vorlage **[!UICONTROL Neuer Workflow]** aus und benennen Sie den Workflow.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Workflow-Erstellung zu bestätigen, und entwerfen Sie das Diagramm des Workflows.
 
-### Ausführen eines Workflows{#executing-a-workflow}
+### Ausführen eines Workflows {#executing-a-workflow}
 
 Benutzer mit entsprechenden Berechtigungen können Zielgruppen-Workflows manuell über die Schaltfläche **[!UICONTROL Starten]** in der Symbolleiste ausführen.
 

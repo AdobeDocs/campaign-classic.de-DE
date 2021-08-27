@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 12b173e9-5068-4d45-9e1e-2aecc9866e9c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 
 ---
 
-# Verwendung von Aggregaten{#using-aggregates}
+# Verwenden von Aggregaten{#using-aggregates}
+
+![](../../assets/common.svg)
 
 Ziel des folgenden Anwendungsbeispiels ist es, die zuletzt zur Datenbank hinzugefügten Empfänger zu identifizieren.
 
@@ -21,7 +23,7 @@ Hierfür wird das Datum der Empfängererstellung in der Datenbank mit dem letzte
 
 Die Konfiguration eines Empfängerfilters vom Typ **Erstellungsdatum = max (Erstellungsdatum)** ist mithilfe des folgenden Workflows möglich:
 
-1. Abrufen von Datenbankempfängern mithilfe einer einfachen Abfrage. Weitere Informationen zu diesem Schritt finden Sie unter [Abfragen erstellen](../../workflow/using/query.md#creating-a-query).
+1. Abrufen von Datenbankempfängern mithilfe einer einfachen Abfrage. Weitere Informationen zu diesem Schritt finden Sie unter [Abfragen erstellen](query.md#creating-a-query).
 1. Berechnung des letzten bekannten Empfängererstellungs-Datums mit der Aggregatfunktion **max (Erstellungsdatum)**.
 1. Zuordnung der Empfänger zum Ergebnis des Aggregats im selben Schema.
 1. Filterung der Empfänger mithilfe des Aggregats im bearbeiteten Schema.
@@ -58,7 +60,7 @@ Verwenden Sie die Schema-Bearbeitung, um die auf Empfänger bezogene Abfrage mit
 
 Auf diese Weise wird das Ergebnis des Aggregats mit jedem einzelnen der Empfänger verknüpft.
 
-## 3. Schritt: Filterung der Empfänger mithilfe des Aggregats {#step-3--filtering-recipients-using-the-aggregate-}
+## 3. Schritt: Filterung der Empfänger mithilfe des Aggregats  {#step-3--filtering-recipients-using-the-aggregate-}
 
 Nach Erzeugung der Relation sind die Empfänger und das Aggregat Teil desselben temporären Schemas. Dadurch ist es nun möglich, einen Filter auf das Schema anzuwenden, der den Vergleich zwischen dem Erstellungsdatum der Empfänger und dem letzten Erstellungsdatum (durch das Aggregat berechnet) vornimmt. Hierzu wird eine Aufspaltung verwendet.
 

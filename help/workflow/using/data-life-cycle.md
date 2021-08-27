@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 366acc1e-d769-4053-9fa1-f47182627c07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 100%
 
 ---
 
 # Lebenszyklus der Arbeitsdaten {#data-life-cycle}
+
+![](../../assets/common.svg)
 
 ## Arbeitstabellen {#work-table}
 
@@ -31,7 +33,7 @@ Wählen Sie im Kontextmenü die entsprechende Option aus:
 
    ![](assets/wf-right-click-display.png)
 
-   Weitere Informationen finden Sie unter [Arbeitstabellen und Workflow-Schemata](../../workflow/using/monitoring-workflow-execution.md#worktables-and-workflow-schema).
+   Weitere Informationen finden Sie unter [Arbeitstabellen und Workflow-Schemata](monitoring-workflow-execution.md#worktables-and-workflow-schema).
 
 * Ergebnis analysieren...
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: a380e486-a40c-4bf6-b7f4-7dcd76c34085
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 100%
 
 ---
 
 # Laden (Datei){#data-loading-file}
+
+![](../../assets/common.svg)
 
 ## Verwendung {#use}
 
@@ -88,7 +90,7 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
    Die Informationen bezüglich des oder der abzurufenden Verzeichnisse werden im **[!UICONTROL Verzeichnis]**-Tab angegeben. Im vorliegenden Beispiel sollen alle Textformat-Dateien abgerufen werden, deren Name das Wort &#39;Kunde&#39; enthält und die im Verzeichnis tmp/Adobe/Data/files des Servers gespeichert sind.
 
-   Weiterführende Informationen zum Thema **[!UICONTROL Datei-Wächter]** finden Sie im Abschnitt [Datei-Wächter](../../workflow/using/file-collector.md).
+   Weiterführende Informationen zum Thema **[!UICONTROL Datei-Wächter]** finden Sie im Abschnitt [Datei-Wächter](file-collector.md).
 
    ![](assets/s_advuser_load_file_sample_1.png)
 
@@ -100,7 +102,7 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
    Klicken Sie auf die Schaltfläche **[!UICONTROL Ändern...]** rechts unten im Editor, um die Planung entsprechend zu konfigurieren.
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Planung](../../workflow/using/scheduler.md).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Planung](scheduler.md).
 
 1. Konfigurieren Sie anschließend die Datei-Laden-Aktivität, um anzugeben, wie die abgerufenen Dateien zu lesen sind. Wählen Sie hierzu eine Beispieldatei aus, die dieselbe Struktur aufweist, wie die zu ladenden Dateien.
 
@@ -129,4 +131,4 @@ Im vorliegenden Beispiel wird täglich eine Datei vom Server abgerufen, ihr Inha
 
 1. Definieren Sie nun für jeden Populationstyp den Anschlussvorgang. Im vorliegenden Beispiel wird die Datenbank aktualisiert. Dies erfolgt im Zuge von **[!UICONTROL Daten-Update]**-Aktivitäten, die jeweils an eine der ausgehenden Transitionen der **[!UICONTROL Aufspaltung]** angeschlossen werden.
 
-   Die Aktivität **[!UICONTROL Daten-Update]** wird im Abschnitt [Daten-Update](../../workflow/using/update-data.md) genauer beschrieben.
+   Die Aktivität **[!UICONTROL Daten-Update]** wird im Abschnitt [Daten-Update](update-data.md) genauer beschrieben.

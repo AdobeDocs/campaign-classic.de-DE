@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: fc0fd23c-f9ea-4e30-b47b-a84143d882ca
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2379'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Beschreibung des Campaign-Datenmodells{#data-model-description}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign enthält ein vordefiniertes Datenmodell. Dieser Abschnitt enthält einige Details zu den integrierten Tabellen des Adobe Campaign-Datenmodells und deren Interaktion.
 
@@ -25,7 +27,7 @@ Um Beschreibungen der einzelnen Tabellen aufzurufen, navigieren Sie zu **[!UICON
 >
 >Die physische und logische Struktur der in der Anwendung übertragenen Daten wird in XML beschrieben. Sie folgt einer Adobe Campaign-spezifischen Grammatik namens „Schema“. Weiterführende Informationen zu Adobe Campaign-Schemata finden Sie in [diesem Abschnitt](../../configuration/using/about-schema-reference.md).
 
-## Beschreibung der Haupttabellen {#description-main-tables}
+## Beschreibung der wichtigsten Tabellen {#description-main-tables}
 
 Adobe Campaign stützt sich auf eine relationale Datenbank mit Tabellen, die miteinander verknüpft sind.
 
@@ -129,7 +131,7 @@ Dieser Tabellensatz ist mit dem Modul **Marketing-Kampagnen** verknüpft, das di
 
 ## Kommunikationskonsistenz {#communication-consistency}
 
-Dieser Tabellensatz ist mit dem Modul **Kampagnenoptimierung** verknüpft, das die Kontrolle, Filterung und Überwachung des Versands von Sendungen ermöglicht. Weiterführende Informationen dazu finden Sie im Abschnitt [Über Kampagnentypologien](../../campaign/using/about-campaign-typologies.md).
+Dieser Tabellensatz ist mit dem Modul **Kampagnenoptimierung** verknüpft, das die Kontrolle, Filterung und Überwachung des Versands von Sendungen ermöglicht. Weiterführende Informationen dazu finden Sie im Abschnitt [Über Kampagnentypologien](../../campaign-opt/using/about-campaign-typologies.md).
 
 ![](assets/data-model_typology.png)
 
@@ -141,7 +143,7 @@ Dieser Tabellensatz ist mit dem Modul **Kampagnenoptimierung** verknüpft, das d
 
 ## Reaktionsverwaltung {#response-management}
 
-Diese Tabellen sind mit dem Modul **Response Manager** verknüpft, mit dem der Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle gemessen werden können. Weiterführende Informationen dazu finden Sie unter [Über Response Manager](../../campaign/using/about-response-manager.md).
+Diese Tabellen sind mit dem Modul **Response Manager** verknüpft, mit dem der Erfolg und die Rentabilität von Marketing-Kampagnen oder Angebotsvorschlägen für alle Kommunikationskanäle gemessen werden können. Weiterführende Informationen dazu finden Sie unter [Über Response Manager](../../response/using/about-response-manager.md).
 
 ![](assets/data-model_response.png)
 

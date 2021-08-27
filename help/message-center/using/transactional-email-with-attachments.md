@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: use-case
 exl-id: 755d2364-f6c4-4943-97e8-3ed52a0f2665
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 7f4bbf3e79d6cdaf17987b9307ebf12801abad22
+workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 100%
 
 ---
 
 # Anwendungsbeispiel: Senden von Transaktions-E-Mails mit Anhängen {#transactional-email-with-attachments}
+
+![](../../assets/v7-only.svg)
 
 In diesem Anwendungsbeispiel sollen E-Mail-Anhänge dynamisch zu ausgehenden Sendungen hinzugefügt werden.
 
@@ -41,7 +43,7 @@ In diesem Szenario werden die Anhänge nicht vorab erstellt, sondern den ausgehe
 >
 >Zur Vermeidung von Leistungsproblemen sollten Bilder, die Sie von einer personalisierten URL direkt als Anhang herunterladen, standardmäßig nicht mehr als 100.000 Byte groß sein. Dieser empfohlene Schwellenwert kann über [die Liste der Campaign Classic-Optionen](../../installation/using/configuring-campaign-options.md#delivery) konfiguriert werden.
 
-## Empfehlungen {#important-notes}
+## Empfehlungen    {#important-notes}
 
 Bevor Sie dieses Szenario implementieren, lesen Sie die folgenden Leitlinien sorgfältig durch:
 
@@ -75,7 +77,7 @@ Gehen Sie wie folgt vor, um einer Transaktionsnachricht dynamisch einen E-Mail-A
 1. Geben Sie im Bildschirm **[!UICONTROL Definition eines Anhangs]** den SOAP-Anhangsparameter ein:
 
    ```
-   <%= rtEvent.ctx.attachementUrl %>
+   <%= rtEvent.ctx.attachmentUrl %>
    ```
 
 1. Bei der Verarbeitung der Nachricht ruft das System die Datei vom Remote-Speicherort (Drittpartei-Server) ab und hängt sie an die jeweilige Nachricht an.

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: 3bfb5448-6996-4080-bf9a-434f1207637e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 4%
@@ -15,7 +15,9 @@ ht-degree: 4%
 
 # Allgemeine Architektur{#general-architecture}
 
-## Minimale Architektur {#minimum-architecture}
+![](../../assets/v7-only.svg)
+
+## Mindestarchitektur {#minimum-architecture}
 
 In einer Mindestkonfiguration funktioniert Adobe Campaign mit:
 

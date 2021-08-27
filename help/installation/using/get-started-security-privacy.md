@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 70%
@@ -14,6 +14,8 @@ ht-degree: 70%
 ---
 
 # Erste Schritte mit Sicherheit und Datenschutz {#get-started-security-privacy}
+
+![](../../assets/v7-only.svg)
 
 In diesem Abschnitt erfahren Sie, welche Schlüsselelemente geprüft werden müssen, um Sicherheit und Datenschutz zu gewährleisten. Einige Konfigurationen können nur von On-Premise-Kunden durchgeführt werden.
 
@@ -34,7 +36,7 @@ Die Datenschutzkonfiguration und entsprechende Härtungsmaßnahmen sind zentrale
 
 <img src="assets/do-not-localize/icon_access.svg" width="60px">
 
-Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheitsmanagements. Im Folgenden finden Sie die wichtigsten Best Practices:
+Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements. Im Folgenden finden Sie die wichtigsten Best Practices:
 
 * Erstellen Sie eine ausreichende Anzahl von Sicherheitsgruppen.
 * Stellen Sie sicher, dass jeder Benutzer über geeignete Zugriffsberechtigungen verfügt.
@@ -42,7 +44,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheitsmanagements.
 
 [Mehr dazu](../../installation/using/access-management.md)
 
-## Richtlinien für Skripterstellung und Codierung
+## Richtlinien für Script-Erstellung und Codierung
 
 <img src="assets/do-not-localize/icon_scripting.svg" width="60px">
 

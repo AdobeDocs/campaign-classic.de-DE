@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: bc6ebf5d-cc21-4750-9713-2bf259e7d6bf
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 100%
 
 ---
 
-# Mit Workflows automatisieren{#automating-via-workflows}
+# Automatisieren mit Workflows{#automating-via-workflows}
+
+![](../../assets/common.svg)
 
 ## Inhaltsverwaltungsaktivitäten {#content-management-activity}
 
@@ -212,7 +214,7 @@ werden im eingehenden Ereignis angegeben.
 
 Die Aktivität endet mit der Vorbereitung und dem Start des Versands.
 
-### Inhalt von FTP importieren{#importing-content-from-ftp}
+### Inhalt von FTP importieren {#importing-content-from-ftp}
 
 Wenn Ihr Versandinhalt in einer auf FTP- oder SFTP-Servern befindlichen HTML-Datei verfügbar ist, können Sie diesen Inhalt einfach in Adobe Campaign-Sendungen laden. In [diesem Beispiel](../../workflow/using/loading-delivery-content.md) wird dies näher erläutert.
 

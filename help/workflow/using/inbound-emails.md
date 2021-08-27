@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: event-activities
 exl-id: b2a05e07-a7d7-436b-b2c6-90ab55d031cd
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 100%
 
 ---
 
 # E-Mail-Empfang{#inbound-emails}
+
+![](../../assets/common.svg)
 
 Die Aktivität **E-Mail-Empfang** ermöglicht den Abruf und die Verarbeitung von E-Mails aus Mailboxen, die über POP3 abgefragt werden können.
 
@@ -68,7 +70,7 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
    Gehen Sie in den **[!UICONTROL Planung]**-Tab und kreuzen Sie die Option **[!UICONTROL Ausführung planen an]**. Klicken Sie anschließend auf die Schaltfläche **[!UICONTROL Ändern]**, um den Ausführungsrhythmus der Aktivität zu konfigurieren.
 
-   Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Planung](../../workflow/using/scheduler.md).
+   Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Planung](scheduler.md).
 
 1. **[!UICONTROL Ablauf]**
 
@@ -76,4 +78,4 @@ Geben Sie im Tab **E-Mail-Empfang** die POP3-Parameter sowie das bei Empfang jed
 
    ![](assets/email_rec_edit_3.png)
 
-   Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Timeouts](../../workflow/using/defining-approvals.md).
+   Die Konfiguration erfolgt analog zum Planungsassistenten. Siehe [Timeouts](defining-approvals.md).

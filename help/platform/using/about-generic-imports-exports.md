@@ -2,18 +2,20 @@
 product: campaign
 title: Über allgemeine Importe und Exporte
 description: Erfahren Sie mehr über allgemeine Importe und Exporte.
-feature: Übersicht
+feature: Overview
 role: User, Data Architect
 level: Beginner
 exl-id: 9ac13db3-552f-43cc-ab67-3aea82e0519e
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '125'
 ht-degree: 100%
 
 ---
 
 # Erste Schritte mit Import- und Exportvorgängen {#about-generic-imports-exports}
+
+![](../../assets/common.svg)
 
 Adobe Campaign Classic bietet allgemeine Importe und Exporte. So können Sie beispielsweise eine Liste von Kunden oder potenziellen Kunden extrahieren, die dann Teil einer Zielpopulation werden, oder Ihre Datenbank mit Daten aus externen Dateien versorgen.
 

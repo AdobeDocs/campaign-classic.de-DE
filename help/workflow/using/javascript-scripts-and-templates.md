@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 4a3647d1-cf8c-4867-871e-472287be7c6a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1255'
 ht-degree: 100%
 
 ---
 
 # Scripts/JavaScript-Templates{#javascript-scripts-and-templates}
+
+![](../../assets/common.svg)
 
 Scripts dienen zur Berechnung von Werten, dem Austausch von Daten zwischen verschiedenen Aufgaben des Prozesses und der Ausführung von spezifischen Aktionen mithilfe von SOAP-Calls.
 
@@ -79,17 +81,17 @@ Ereignisvariablen (**[!UICONTROL vars.xxx]**) ermöglichen den Austausch von Dat
 
 >[!CAUTION]
 >
->Bei Verwendung einer [UND-Verknüpfung](../../workflow/using/and-join.md) fusionieren die Variablen. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
+>Bei Verwendung einer [UND-Verknüpfung](and-join.md) fusionieren die Variablen. Wenn eine Variable mehrmals definiert wurde entsteht ein Konflikt und es wird ein unbestimmter Wert ausgegeben.
 
 Ereignisvariablen sind die am häufigsten verwendeten Variablen und sind Instanzvariablen vorzuziehen.
 
-Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Zeichenfolgenvariablen. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](../../workflow/using/about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
+Bestimmte Ereignisvariablen werden von den verschiedenen Aktivitäten geändert oder gelesen. Dies sind alle Zeichenfolgenvariablen. Beispiel: Ein Export definiert die Variable **[!UICONTROL vars.filename]** mit dem vollständigen Namen der Datei, die gerade exportiert wurde. Alle diese gelesenen oder geänderten Variablen werden in [Über Aktivitäten](about-activities.md) in den Abschnitten **Eingabeparameter** und **Ausgabeparameter** der Aktivitäten beschrieben.
 
 ### Anwendungsfälle {#example}
 
 >[!NOTE]
 >
->Weitere Anwendungsbeispiele für Workflows sind in [diesem Abschnitt](../../workflow/using/about-workflow-use-cases.md) verfügbar.
+>Weitere Anwendungsbeispiele für Workflows sind in [diesem Abschnitt](about-workflow-use-cases.md) verfügbar.
 
 **Beispiel 1**
 
@@ -155,7 +157,7 @@ In diesem Beispiel wird eine Instanzvariable verwendet, um den auf eine Populati
 
 Das Beispiel zeigt, dass die Aktivität **JavaScript-Code** auf die Instanz- und Ereignisvariablen zugreift, während die Aufgabenvariablen ausserhalb der Aufgaben nicht verfügbar sind (&#39;undefined&#39;).
 
-### Instanzvariablen in Abfragen aufrufen {#calling-an-instance-variable-in-a-query}
+### Aufrufen von Instanzvariablen in Abfragen {#calling-an-instance-variable-in-a-query}
 
 In Aktivitäten definierte Instanzvariablen können in Workflow-Abfragen wiederverwendet werden.
 

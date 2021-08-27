@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 38006cca-e945-4b9d-8e2d-ed537b8541d9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 
 ---
 
 # Senden einer Geburtstags-E-Mail{#sending-a-birthday-email}
+
+![](../../assets/common.svg)
 
 ## Einleitung {#introduction}
 
@@ -202,7 +204,7 @@ Fügen Sie für die gewünschte Geburtstags-E-Mail-Vorlage einen **wiederkehrend
 
 >[!CAUTION]
 >
->Damit die Workflows ausgeführt werden, müssen die mit dem Campaign-Package verbundenen technischen Workflows gestartet werden. Mehr Informationen finden Sie im Abschnitt [Liste der technischen Workflows](../../workflow/using/about-technical-workflows.md).
+>Damit die Workflows ausgeführt werden, müssen die mit dem Campaign-Package verbundenen technischen Workflows gestartet werden. Mehr Informationen finden Sie im Abschnitt [Liste der technischen Workflows](about-technical-workflows.md).
 >
 >Wenn die Validierungsschritte für die Kampagne aktiviert sind, werden die Sendungen erst ausgeführt, nachdem diese Schritte bestätigt wurden. Weitere Informationen hierzu finden Sie im Abschnitt [Zu verifizierende Prozesse auswählen](../../campaign/using/marketing-campaign-approval.md#choosing-the-processes-to-be-approved).
 

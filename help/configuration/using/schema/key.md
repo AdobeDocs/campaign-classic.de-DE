@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 3d0ef574-27a3-40f2-91a0-70e9583d9980
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 3%
@@ -14,6 +14,8 @@ ht-degree: 3%
 ---
 
 # Schlüsselelement {#key--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model-8}
 
@@ -42,7 +44,7 @@ Mit diesem Element können Sie einen Schlüssel definieren, um einen Datensatz i
 
 Eine Tabelle muss mindestens einen Schlüssel haben.
 
-## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-6}
+## Verwendung und Verwendungskontext {#use-and-context-of-use-6}
 
 In der Regel werden Schlüssel nach dem Hauptelement des Schemas und der Indizes deklariert.
 

@@ -2,18 +2,20 @@
 product: campaign
 title: Erstellen und Verwalten von Listen
 description: Erfahren Sie, wie Sie Listen erstellen und verwalten.
-feature: Profile
+feature: Profiles
 role: User
 level: Beginner
 exl-id: 711b84cd-bac8-4f1a-9999-0124fbfc3a01
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 100%
 
 ---
 
 # Erstellen und Verwalten von Listen{#creating-and-managing-lists}
+
+![](../../assets/common.svg)
 
 ## Definition einer Liste  {#about-lists-in-adobe-campaign}
 

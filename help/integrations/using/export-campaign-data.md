@@ -5,14 +5,16 @@ description: Erfahren Sie, wie Sie Daten von Campaign Classic nach Adobe Experie
 audience: integrations
 content-type: reference
 exl-id: 8d1404c5-030b-47fe-a4c3-e72f15f09bbb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 100%
 
 ---
 
 # Daten von Campaign nach Adobe Experience Platform exportieren {#sources}
+
+![](../../assets/common.svg)
 
 Um Campaign Classic-Daten in die Adobe Echtzeit-Kundendatenplattform (RTCDP) zu exportieren, müssen Sie zunächst einen Workflow in Campaign Classic erstellen, um die Daten, die Sie austauschen möchten, in Ihren S3- oder Azure-Blob-Speicherort zu exportieren.
 

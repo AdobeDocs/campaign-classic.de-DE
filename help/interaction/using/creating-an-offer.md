@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 100%
 
 ---
 
-# Erstellung eines Angebots{#creating-an-offer}
+# Erstellen eines Angebots{#creating-an-offer}
+
+![](../../assets/v7-only.svg)
 
 ## Angebote erstellen {#creating-the-offer}
 
@@ -181,6 +183,6 @@ Sie haben die Möglichkeit, Hypothesen bezüglich Ihrer Angebotsvorschläge zu d
 
 Die zu einem Angebotsvorschlag definierten Hypothesen können im Tab **[!UICONTROL Messung]** des Angebots eingesehen werden.
 
-Weiterführende Informationen zum Erstellen von Hypothesen finden Sie auf [dieser Seite](../../campaign/using/about-response-manager.md).
+Weiterführende Informationen zum Erstellen von Hypothesen finden Sie auf [dieser Seite](../../response/using/about-response-manager.md).
 
 ![](assets/offer_hypothesis_001.png)

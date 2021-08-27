@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migrating-to-adobe-campaign-7
 exl-id: 3743d018-3316-4ce3-ae1c-25760aaf5785
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1561'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Migration in Windows zu Adobe Campaign 7{#migrating-in-windows-for-adobe-campaign}
+
+![](../../assets/v7-only.svg)
 
 ## Allgemeines Verfahren {#general-procedure}
 
@@ -81,7 +83,7 @@ Beenden Sie zunächst alle Prozesse mit Zugriff auf die Datenbank auf allen betr
    taskkill /F /IM nlserver* /T
    ```
 
-## Sichern Sie die Datenbank und die aktuelle Installation {#back-up-the-database-and-the-current-installation}.
+## Datenbank und aktuelle Installation sichern {#back-up-the-database-and-the-current-installation}
 
 Das Verfahren hängt von Ihrer vorherigen Adobe Campaign-Version ab.
 

@@ -6,8 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: d345ba62-c2fb-43df-a2a1-e9e4292d301a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 # Workflow starten {#starting-a-workflow}
 
-Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](../../workflow/using/scheduler.md)) oder Aktivitätsplanung angegeben wurden.
+![](../../assets/common.svg)
+
+Workflows werden grundsätzlich manuell gestartet, Nach dem Starten können sie jedoch inaktiv bleiben, je nachdem, welche Informationen über eine Planung (siehe [Planung](scheduler.md)) oder Aktivitätsplanung angegeben wurden.
 
 Die mit der Workflow-Ausführung in Zusammenhang stehenden Prozesse (starten, anhalten, aussetzen etc.) laufen **asynchron** ab, d. h. der jeweilige Befehl wird gespeichert und erst dann ausgeführt, wenn ein Server verfügbar ist.
 
@@ -25,7 +27,7 @@ Die im Menü **[!UICONTROL Aktionen]** und im Kontextmenü verfügbaren Befehle 
 
 >[!IMPORTANT]
 >
->Beachten Sie: Von Benutzern angeforderte Aktionen (Workflow starten, anhalten, aussetzen usw.) werden nicht sofort ausgeführt, sondern in eine Warteschlange eingereiht, um von einem [Workflow-Modul](../../workflow/using/architecture.md) verarbeitet zu werden.
+>Beachten Sie: Von Benutzern angeforderte Aktionen (Workflow starten, anhalten, aussetzen usw.) werden nicht sofort ausgeführt, sondern in eine Warteschlange eingereiht, um von einem [Workflow-Modul](architecture.md) verarbeitet zu werden.
 
 ## Aktionen-Symbolleiste {#actions-toolbar}
 
@@ -57,7 +59,7 @@ Die Symbolleiste wird in diesem [Abschnitt](../../campaign/using/marketing-campa
 
 * **[!UICONTROL Verlaufsbereinigung]**
 
-   Mit dieser Aktion können Sie den Workflow-Verlauf bereinigen. Weitere Informationen finden Sie unter [Verläufe bereinigen](../../workflow/using/monitoring-workflow-execution.md#purging-the-logs).
+   Mit dieser Aktion können Sie den Workflow-Verlauf bereinigen. Weitere Informationen finden Sie unter [Verläufe bereinigen](monitoring-workflow-execution.md#purging-the-logs).
 
 * **[!UICONTROL Im Simulationsmodus starten]**
 
@@ -91,7 +93,7 @@ Im Kontextmenü stehen folgende Optionen zur Verfügung:
 
 **[!UICONTROL Öffnen...]** - ermöglicht den Zugriff auf die Eigenschaften der Aktivität.
 
-**[!UICONTROL Protokoll anzeigen]** - zeigt das Ausführungsprotokoll der Aufgaben der ausgewählten Aktivität an. Weitere Informationen finden Sie unter [Protokoll anzeigen](../../workflow/using/monitoring-workflow-execution.md#displaying-logs).
+**[!UICONTROL Protokoll anzeigen]** - zeigt das Ausführungsprotokoll der Aufgaben der ausgewählten Aktivität an. Weitere Informationen finden Sie unter [Protokoll anzeigen](monitoring-workflow-execution.md#displaying-logs).
 
 **[!UICONTROL Aufgabe(n) jetzt bearbeiten]** - startet so schnell wie möglich alle ausstehenden Aufgaben der Aktivität.
 
@@ -101,7 +103,7 @@ Im Kontextmenü stehen folgende Optionen zur Verfügung:
 
 **[!UICONTROL Als Bild kopieren]** - erstellt einen Screenshot sämtlicher Aktivitäten des Workflows.
 
-**[!UICONTROL Normale Ausführung/Aktivieren, aber nicht ausführen/Nicht aktivieren]** - sind auch im Tab **[!UICONTROL Erweitert]** der Aktivitätseigenschaften verfügbar. Sie werden unter [Ausführung](../../workflow/using/advanced-parameters.md#execution) ausführlich beschrieben.
+**[!UICONTROL Normale Ausführung/Aktivieren, aber nicht ausführen/Nicht aktivieren]** - sind auch im Tab **[!UICONTROL Erweitert]** der Aktivitätseigenschaften verfügbar. Sie werden unter [Ausführung](advanced-parameters.md#execution) ausführlich beschrieben.
 
 **[!UICONTROL Speichern/Abbrechen]** - speichert oder verwirft die im Workflow vorgenommenen Änderungen.
 

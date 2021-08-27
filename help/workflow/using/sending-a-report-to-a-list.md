@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: cb24aea5-f3c7-4b17-8899-1792ea18c235
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 100%
 
 ---
 
 # Bericht-Versand an eine Liste{#sending-a-report-to-a-list}
+
+![](../../assets/common.svg)
 
 Im folgenden Anwendungsbeispiel soll jeden Monat der Standardbericht zu den **[!UICONTROL Trackingindikatioren]** erzeugt und als PDF an eine Empfängerliste gesendet werden.
 
@@ -89,7 +91,7 @@ Für das Anwendungsbeispiel ist ein Workflow mit drei Aktivitäten zu erstellen:
 
    ![](assets/use_case_report_9.png)
 
-   Weiterführende Informationen zur Konfiguration der Planung finden Sie im Abschnitt [Planung](../../workflow/using/scheduler.md).
+   Weiterführende Informationen zur Konfiguration der Planung finden Sie im Abschnitt [Planung](scheduler.md).
 
 1. Schließen Sie eine **[!UICONTROL JavaScript-Code]**-Aktivität an.
 

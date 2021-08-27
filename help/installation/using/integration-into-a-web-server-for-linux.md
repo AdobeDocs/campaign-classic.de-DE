@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: 4f8ea358-a38d-4137-9dea-f398e60c5f5d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Integration in einen Webserver für Linux{#integration-into-a-web-server-for-linux}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign enthält Apache Tomcat, der über HTTP (und SOAP) als Einstiegspunkt im Anwendungsserver fungiert.
 
@@ -194,7 +196,7 @@ Gehen Sie wie folgt vor:
    systemctl start nlserver
    ```
 
-## Starten des Webservers und Testen der Konfiguration{#launching-the-web-server-and-testing-the-configuration}
+## Webserver starten und Konfiguration testen{#launching-the-web-server-and-testing-the-configuration}
 
 Sie können die Konfiguration jetzt testen, indem Sie Apache starten. Das Adobe Campaign-Modul sollte jetzt sein Banner in der Konsole anzeigen (zwei Banner auf bestimmten Betriebssystemen):
 

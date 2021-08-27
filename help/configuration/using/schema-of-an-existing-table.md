@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 964f1027-627c-4f12-91b5-f258e9ba458b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 15%
@@ -14,6 +14,8 @@ ht-degree: 15%
 ---
 
 # Schema einer vorhandenen Tabelle{#schema-of-an-existing-table}
+
+![](../../assets/v7-only.svg)
 
 ## Übersicht {#overview}
 
@@ -25,7 +27,7 @@ Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht o
 * Die Felder und ihre Position in der XML-Struktur: nur die im Antrag verwendeten Felder ausfüllen,
 * Links: , wenn es Verbindungen mit den anderen Tabellen der Basis gibt.
 
-## Umsetzung {#implementation}
+## Implementierung {#implementation}
 
 Gehen Sie wie folgt vor, um das entsprechende Schema zu erstellen:
 

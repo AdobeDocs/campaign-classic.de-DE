@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: abc08232-1a92-41e8-90f1-02e0a673539b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
 ---
 
 # Inkrementelle Abfrage{#incremental-query}
+
+![](../../assets/common.svg)
 
 Inkrementelle Abfragen ermöglichen die regelmäßig wiederkehrende Auswahl einer Zielgruppe nach bestimmten Kriterien unter Ausschluss der Population, die in früheren Durchgängen bereits aufgrund dieser Kriterien ausgewählt wurde.
 
@@ -23,8 +25,8 @@ Die Konfiguration der Abfrage entspricht der von Standardabfragen, aber die Ausf
 
 **Verwandte Themen:**
 
-* [Anwendungsfall: Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](../../workflow/using/quarterly-list-update.md)
-* [Abfragen erstellen](../../workflow/using/query.md#creating-a-query)
+* [Anwendungsfall: Vierteljährliches Listen-Update mithilfe einer inkrementellen Abfrage](quarterly-list-update.md)
+* [Abfragen erstellen](query.md#creating-a-query)
 
 >[!CAUTION]
 >

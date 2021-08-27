@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 236afdfe-fb23-4ebb-b000-76e14bf01d9e
-source-git-commit: 939552f127207f258448b2a82bb8c4c000371694
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Datei- und Ressourcenverwaltung{#file-and-resmanagement}
+
+![](../../assets/v7-only.svg)
 
 ## Dateiformat des Uploads begrenzen {#limiting-uploadable-files}
 
@@ -31,7 +33,7 @@ Beispiel: **uploadWhiteList=&quot;.*.png,*.jpg&quot;** ermöglicht das Hochladen
 >
 >In Internet Explorer muss der vollständige Dateipfad durch den regulären Ausdruck überprüft werden.
 
-Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)
+Sie können auch verhindern, dass wichtige Dateien hochgeladen werden, indem Sie den Webserver konfigurieren. [Weitere Informationen](web-server-configuration.md)   
 
 ## Proxy-Verbindungskonfiguration {#proxy-connection-configuration}
 
@@ -44,7 +46,6 @@ Die folgenden Proxy-Verbindungen sind möglich: HTTP, HTTPS, FTP, SFTP. Bitte be
 >Nur der grundlegende Authentifizierungsmodus wird unterstützt. Die NTLM-Authentifizierung wird nicht unterstützt.
 >
 >SOCKS-Proxys werden nicht unterstützt.
-
 
 Sie können den folgenden Befehl verwenden:
 

@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-linux-
 exl-id: f41c7510-5ad7-44f3-9485-01f54994b6cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Installieren von Paketen mit Linux{#installing-packages-with-linux}
+
+![](../../assets/v7-only.svg)
 
 Installieren Sie für eine Linux-32-Bit-Plattform Adobe Campaign 32 Bit. Installieren Sie für eine Linux-64-Bit-Plattform Adobe Campaign 64 Bit.
 
@@ -126,7 +128,7 @@ Beachten Sie bei der Installation von Adobe Campaign auf einem Debian 8/9-Betrie
    aptitude install openjdk-7-jdk (Debian 9)
    ```
 
-## Parameter {#personalizing-parameters} personalisieren
+## Parameter personalisieren {#personalizing-parameters}
 
 Einige Parameter können über die Datei **customer.sh** personalisiert werden
 
@@ -298,7 +300,7 @@ Wenn Adobe Campaign nicht gestartet wird, lautet die Antwort:
 no task
 ```
 
-## Erststart des Servers {#first-start-up-of-the-server}
+## Erstmaliger Start des Servers {#first-start-up-of-the-server}
 
 Geben Sie nach Abschluss des Installationstests den folgenden Befehl ein:
 
@@ -357,4 +359,4 @@ Die folgenden Informationen werden angezeigt:
 
 Der Adobe Campaign-Server definiert eine technische Anmeldung mit dem Namen **internal**, die alle Berechtigungen für alle Instanzen besitzt. Kurz nach der Installation hat die Anmeldung kein Passwort. Es ist erforderlich, eine zu definieren.
 
-Weiterführende Informationen finden Sie in diesem [Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).
+Weiterführende Informationen finden Sie in [diesem Abschnitt](../../installation/using/configuring-campaign-server.md#internal-identifier).

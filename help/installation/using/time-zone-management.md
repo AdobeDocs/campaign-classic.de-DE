@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: e5ed96cc-3fc7-4af4-a29e-5a4c81f4fe39
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Zeitzonen-Management{#time-zone-management}
+
+![](../../assets/v7-only.svg)
 
 ## Grundprinzip {#operating-principle}
 
@@ -35,7 +37,7 @@ Jeder Adobe Campaign-Operator ist mit einer Zeitzone verknüpft: Diese Informati
 
 Wenn die Adobe Campaign-Plattform keine Zeitzonen-Verwaltung erfordert, können Sie einen Speichermodus im lokalen Format mit einer bestimmten verknüpften Zeitzone beibehalten.
 
-## Recommendations {#recommendations}
+## Empfehlungen {#recommendations}
 
 Zeitzonen kombinieren verschiedene Realitäten: Der Ausdruck kann eine konstante Zeitverzögerung mit dem UTC-Datum oder die Zeiten einer Region beschreiben, die sich zweimal jährlich ändern können (Sommerzeit).
 

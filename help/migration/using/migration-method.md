@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-overview
 exl-id: dd4d068b-f414-448f-8d9a-eedf44e7b6e6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Migrationsmethode{#migration-method}
 
-## Modernisierung Ihrer Umgebung {#modernizing-your-environment}
+![](../../assets/v7-only.svg)
+
+## Modernisierung der Umgebung {#modernizing-your-environment}
 
 Die Durchführung einer Migration kann eine Chance sein, Ihre Umgebung (Datenbank-Engines, Betriebssysteme) zu aktualisieren. Adobe Campaign empfiehlt dringend, Ihre Produktionsumgebungen auf die neuesten Versionen zu aktualisieren.
 

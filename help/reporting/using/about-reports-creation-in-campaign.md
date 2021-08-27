@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 262c1469-94b4-4f81-9f6f-5c7f481765da
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 100%
 
 ---
 
 # Wichtige Schritte zur Erstellung eines Berichts{#about-reports-creation-in-campaign}
+
+![](../../assets/common.svg)
 
 Um Statistiken über Daten Ihrer Campaign-Datenbank zu erzeugen, können Sie Berichte erstellen und ihren Inhalt sowie ihre Darstellung nach Bedarf anpassen. Die Berichte können gegebenenfalls mit anderen Benutzern geteilt werden.
 

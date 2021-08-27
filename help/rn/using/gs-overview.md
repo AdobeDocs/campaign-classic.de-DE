@@ -2,18 +2,20 @@
 product: campaign
 title: '[!DNL Gold Standard]-Upgrade'
 description: 'Erfahren Sie, was Campaign Classic ist [!DNL Gold Standard] '
-feature: Übersicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: c36a78f6-3332-465d-92f5-48f70b8bdddd
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '555'
 ht-degree: 100%
 
 ---
 
 # [!DNL Gold Standard]-Versionen  {#gs-overviews}
+
+![](../../assets/v7-only.svg)
 
 ## Was ist [!DNL Gold Standard]?
 

@@ -6,22 +6,24 @@ audience: installation
 content-type: reference
 topic-tags: installing-campaign-in-windows-
 exl-id: 7cc78214-92b8-4b1f-a307-96ec6af818d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1001'
-ht-degree: 23%
+ht-degree: 25%
 
 ---
 
-# Installieren und aktualisieren Sie die Campaign-Client-Konsole{#installing-the-client-console}
+# Installieren und Aktualisieren der Campaign-Clientkonsole{#installing-the-client-console}
+
+![](../../assets/v7-only.svg)
 
 Die Client-Konsole in Campaign ist ein Rich-Client, mit dem Sie eine Verbindung zu Ihren Campaign-Anwendungs-Servern herstellen können.
 
 Bevor Sie mit der Installation der Client Console beginnen, müssen Sie Folgendes tun:
 
-* Überprüfen Sie die Kompatibilität Ihrer Systeme und Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems) .
-* Campaign-Server-URL abrufen
-* Benutzeranmeldeinformationen abrufen
+* Überprüfen Sie die Kompatibilität Ihres Systems und Ihrer Tools mit Adobe Campaign in der [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md#ClientConsoleoperatingsystems)
+* Ermitteln Sie Ihre Campaign-Server-URL
+* Ermitteln Sie Ihre Anwender-Anmeldedaten
 
 Die Installation oder Aktualisierung der Clientkonsole hängt von Ihrer Implementierung von Adobe Campaign Classic ab.
 Lesen Sie die folgenden Details, um zu verstehen, was für Ihre Implementierung erforderlich ist.
@@ -88,7 +90,7 @@ Sobald die Konsole im Ordner Campaign-Server verfügbar ist, werden die Benutzer
 **Benutzer benötigen Administratorzugriff, um die Aktualisierung abzuschließen. Wenn die Benutzer keine Administratorrechte haben, muss ein Systemadministrator für alle Clientkonsolen** bereitstellen
 
 
-### Laden Sie die Konsole für die neue Implementierung herunter.{#download-the-client-console}
+### Herunterladen der Konsole für eine neue Implementierung{#download-the-client-console}
 
 Benutzer sollten jetzt die Konsole herunterladen und installieren, indem sie die folgenden Schritte ausführen:
 
@@ -106,7 +108,7 @@ Benutzer sollten jetzt die Konsole herunterladen und installieren, indem sie die
 1. Laden Sie die Client-Setup-Datei herunter und speichern Sie sie.
 1. Führen Sie die heruntergeladene Datei auf einem Computer unter Windows aus: Die Installation beginnt. Der Standardinstallationspfad der Clientkonsole ist **$PROGRAMFILES$/Adobe/Adobe Campaign Classic vX Client**, wobei &quot;X&quot;entsprechend Ihrer Adobe Campaign-Version &quot;6&quot;oder &quot;7&quot;ist.
 
-### Erstellen Sie die Verbindung - nur Erstbenutzer{#create-the-connection}
+### Erstellen der Verbindung - nur Erstbenutzer{#create-the-connection}
 
 Nachdem die Client-Konsole installiert wurde, führen Sie die folgenden Schritte aus, um die Verbindung zum Anwendungsserver herzustellen:
 
@@ -149,7 +151,7 @@ Gehen Sie wie folgt vor, um sich bei einer vorhandenen Instanz anzumelden:
 1. Geben Sie Ihre Anmeldedaten für den Benutzer ein und klicken Sie auf **[!UICONTROL Anmelden]**
 
 
-**Verwandte Themen**
+**Verwandte Themen** 
 
 * [Erstellen einer Instanz und Anmelden](../../installation/using/creating-an-instance-and-logging-on.md).
 * [Kompatibilitätsmatrix](https://helpx.adobe.com/de/campaign/kb/compatibility-matrix.html)

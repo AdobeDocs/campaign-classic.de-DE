@@ -2,18 +2,20 @@
 product: campaign
 title: Benutzergruppen erstellen und verwalten
 description: Erfahren Sie, wie Sie Benutzergruppen Zugriff gewähren.
-feature: Zugriffsverwaltung
+feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: d5833d3d-e8ef-4f2b-8084-4ba825c79525
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '545'
 ht-degree: 100%
 
 ---
 
 # Benutzergruppen erstellen und verwalten {#operator-groups}
+
+![](../../assets/common.svg)
 
 Benutzergruppen werden über den Verzeichnisknoten **[!UICONTROL Administration > Zugriffe > Benutzergruppen]** erstellt.
 

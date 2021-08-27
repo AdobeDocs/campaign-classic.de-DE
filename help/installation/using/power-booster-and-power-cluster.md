@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: deployment-types-
 exl-id: 59364cfc-9917-4057-ad5f-fbca7e261b07
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 ---
 
 # Power Booster und Power Cluster{#power-booster-and-power-cluster}
+
+![](../../assets/v7-only.svg)
 
 ## Übersicht {#overview}
 
@@ -29,7 +31,7 @@ Adobe Campaign bietet Ihnen zwei vorab verpackte Architekturoptionen zur Dimensi
 
 ![](assets/architectural_options_diagram.png)
 
-## Förderfähige Anwendungen {#eligible-applications}
+## Förderfähige Anträge {#eligible-applications}
 
 Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendungen verwendet werden:
 
@@ -37,7 +39,7 @@ Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendun
 * Versand
 * Message Center
 
-## Matrix der Architekturempfehlungen {#matrix-of-architectural-recommendations}
+## Matrix von Architekturempfehlungen {#matrix-of-architectural-recommendations}
 
 <table> 
  <tbody> 
@@ -80,7 +82,7 @@ Die Power Booster- und Power Cluster-Optionen können von den folgenden Anwendun
  </tbody> 
 </table>
 
-## Recommendations {#recommendations}
+## Empfehlungen {#recommendations}
 
 * Eine Ausführungsinstanz muss einem Dienst zugewiesen sein. Sie können kein Paket für einen Dienst installieren, für den Sie sich nicht angemeldet haben. Wenn Sie beispielsweise die Option **Power Booster** für den Dienst **Message Center** abonnieren, dürfen Sie nur das Package **[!UICONTROL Ausführung von Transaktionsnachrichten]** auf der dedizierten Ausführungsinstanz installieren. Prüfen Sie diesbezüglich Ihren Lizenzvertrag.
 * Da dedizierte Instanzen (oder Cluster) Adobe Campaign-Instanzen sind, sind die Empfehlungen mit denen einer Hauptinstanz identisch. Weitere Informationen hierzu finden Sie in [diesem Dokument](../../production/using/foreword.md).

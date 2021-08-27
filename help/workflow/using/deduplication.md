@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 38add4fe-6238-45de-863e-895ebca189b7
-source-git-commit: e3e2ac09de6a9e846e9f9262d522b9395a725648
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 100%
 
 ---
 
 # Deduplizierung{#deduplication}
+
+![](../../assets/common.svg)
 
 Die Deduplizierung dient der Identifizierung von Dubletten in der oder den eingehenden Aktivitäten. Zur Identifizierung können beispielsweise die E-Mail-Adresse, eine Telefonnummer oder andere Felder herangezogen werden.
 
@@ -139,7 +141,7 @@ Mit der Funktion **[!UICONTROL Zusammenführen]** können Sie einen Regelsatz f�
 
 Bei einer Reihe von Duplikat-Datensätzen können Sie beispielsweise entscheiden, jeweils die älteste Telefonnummer oder den neuesten Namen beizubehalten.
 
-Ein Anwendungsfall, der diese Funktion nutzt, ist in [diesem Abschnitt](../../workflow/using/deduplication-merge.md) verfügbar.
+Ein Anwendungsfall, der diese Funktion nutzt, ist in [diesem Abschnitt](deduplication-merge.md) verfügbar.
 
 Gehen Sie dazu wie folgt vor:
 
@@ -155,7 +157,7 @@ Gehen Sie dazu wie folgt vor:
 
 1. Nach Aktivierung der Funktion wird der Aktivität **[!UICONTROL Deduplizierung]** die Registerkarte **[!UICONTROL Zusammenführen]** hinzugefügt. Damit können Sie Gruppen von Feldern definieren, die zusammengeführt werden sollen, sowie die zugehörigen Regeln.
 
-   Weitere Informationen hierzu finden Sie im Anwendungsfall in [diesem Abschnitt](../../workflow/using/deduplication-merge.md).
+   Weitere Informationen hierzu finden Sie im Anwendungsfall in [diesem Abschnitt](deduplication-merge.md).
 
    ![](assets/dedup3.png)
 

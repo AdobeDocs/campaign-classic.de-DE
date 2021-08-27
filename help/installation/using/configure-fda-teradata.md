@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 3a5856c3-b642-4722-97ff-6ae7107efdbe
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 76%
@@ -14,6 +14,8 @@ ht-degree: 76%
 ---
 
 # Zugriff auf Teradata konfigurieren {#configure-access-to-teradata}
+
+![](../../assets/v7-only.svg)
 
 Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Teradata zu konfigurieren.
 
@@ -68,7 +70,6 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 >
 >Die Verbindung zu einer externen Teradata-Datenbank über die FDA-Option erfordert zusätzliche Konfigurationsschritte auf dem Adobe Campaign-Server. [Weitere Informationen](#teradata-additional-configurations).
 
-
 ## Externes Teradata-Konto{#teradata-external}
 
 Über das externe Teradata-Konto können Sie Ihre Kampagneninstanz mit Ihrer externen Teradata-Datenbank verbinden.
@@ -93,7 +94,7 @@ Sie müssen Treiber installieren, damit Teradata die Verbindung zu Campaign hers
 
    * **[!UICONTROL Optionen]**: Optionen, die über Teradata weitergegeben werden sollen. Verwenden Sie das folgende Format: &#39;parameter=value&#39;. Verwenden Sie eine halbe Spalte als Trennzeichen zwischen Werten.
 
-   * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Mehr dazu](#timezone)
+   * **[!UICONTROL Zeitzone]**: Die in Teradata festgelegte Zeitzone. [Weitere Informationen](#timezone)   
 
 ### Query Banding
 

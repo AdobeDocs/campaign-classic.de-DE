@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: database-maintenance
 exl-id: 08e179aa-fd83-4c0a-879e-ab7aec168d92
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Arten der Wartung{#types-of-maintenance}
+
+![](../../assets/v7-only.svg)
 
 ## Anwendungswartung {#application-maintenance}
 
@@ -47,7 +49,7 @@ Diese Aufgaben werden in der Regel einmal pro Woche während eines Zeitraums mit
 
 Detailliertere Wartungsarbeiten, wie vollständige Tabellen-Rebuilds, können einmal im Monat durchgeführt werden, vorzugsweise mit vollständig angehaltenen Anwendungen, da das System ohnehin unbrauchbar ist.
 
-### Tabellen {#rebuilding-a-table} neu erstellen
+### Tabellen neu erstellen {#rebuilding-a-table}
 
 Es stehen verschiedene Strategien zur Verfügung:
 
@@ -55,7 +57,7 @@ Es stehen verschiedene Strategien zur Verfügung:
  <thead> 
   <tr> 
    <th> Aktivitäten </th> 
-   <th> Beschreibung  </th> 
+   <th> Beschreibung </th> 
    <th> Vorteile </th> 
    <th> Nachteile </th> 
   </tr> 

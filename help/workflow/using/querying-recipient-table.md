@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5b037798-b092-4c98-9f6a-4af7fc7941c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 100%
 
 ---
 
-# Abfrage zur Empfängertabelle {#querying-recipient-table}
+# Abfrage der Empfängertabelle {#querying-recipient-table}
+
+![](../../assets/common.svg)
 
 In diesem Beispiel werden die Namen und E-Mail-Adressen der Empfänger gesucht, deren E-Mail-Domain &quot;web.de&quot; ist und die nicht in Berlin wohnen.
 

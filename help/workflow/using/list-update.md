@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: fcc51131-15d0-4d39-95cb-371d7044373b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '542'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
 # Listen-Update{#list-update}
+
+![](../../assets/common.svg)
 
 Das **Listen-Update** speichert die Ergebnisse der eingehenden Aktivitäten in einer Liste.
 
@@ -41,7 +43,7 @@ Im vorliegenden Beispiel soll eine Liste mit allen Männern über 30 Jahre, die 
 
 1. Schließen Sie an eine Abfrage ein **[!UICONTROL Listen-Update]** an und öffnen Sie die Aktivität.
 
-   Weitere Informationen zum Erstellen von Abfragen in Workflows finden unter [Abfrage](../../workflow/using/query.md).
+   Weitere Informationen zum Erstellen von Abfragen in Workflows finden unter [Abfrage](query.md).
 
 1. Benennen Sie die Aktivität.
 1. Kreuzen Sie die Option **[!UICONTROL Wenn nötig Liste erstellen (Titel berechnet)]** an, damit die Liste bei der ersten Durchführung erstellt und später jeweils aktualisiert wird.
@@ -65,7 +67,7 @@ Identifiziert die in der Gruppe zu speichernde Population.
 
 ## Ausgabeparameter {#output-parameters}
 
-* groupId: Kennung der Gruppe.
+* groupId: Gruppenkennung.
 
 ## Anleitungsvideo {#video}
 

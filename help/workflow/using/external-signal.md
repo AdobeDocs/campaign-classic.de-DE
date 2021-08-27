@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: da84d3ff-1e64-45ef-bef0-da4a24d93461
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
 
 ---
 
 # Externes Signal{#external-signal}
+
+![](../../assets/common.svg)
 
 Ein **Externes Signal** löst die Ausführung einer Reihe von Aufgaben innerhalb eines Workflows aus.
 
@@ -25,9 +27,9 @@ Es besteht die Möglichkeit, in der Aktivität Ereignisse zu konfigurieren, die 
 
 ![](assets/edit_signal.png)
 
-Die Ablauf-Konfiguration wird im Abschnitt [Timeouts](../../workflow/using/defining-approvals.md) beschrieben.
+Die Ablauf-Konfiguration wird im Abschnitt [Timeouts](defining-approvals.md) beschrieben.
 
-In der Spalte **Timeout** kann die Zeitspanne vor Ablauf in den Einheiten Ihrer Wahl definiert werden. Siehe [Warten](../../workflow/using/wait.md).
+In der Spalte **Timeout** kann die Zeitspanne vor Ablauf in den Einheiten Ihrer Wahl definiert werden. Siehe [Warten](wait.md).
 
 Jede Zeile stellt einen Ablauftypen dar und entspricht einer Transition.
 

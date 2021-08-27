@@ -5,14 +5,16 @@ description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
 exl-id: 76645a6f-9536-49d6-b12a-fdd6113d31fa
-source-git-commit: 9a126d16b394333163b974ad9690f7c93fb3034a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 100%
 
 ---
 
 # Fehlerbehebung bei Pipelines {#pipeline-troubleshooting}
+
+![](../../assets/common.svg)
 
 **Pipelined schlägt fehl mit der Fehlermeldung &quot;No task corresponds to the mask pipelined@&lt; Instanz >&quot;**
 

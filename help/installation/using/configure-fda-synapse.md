@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 59d0277a-7588-4504-94e3-50f87b60da8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 78%
@@ -14,6 +14,8 @@ ht-degree: 78%
 ---
 
 # Zugriff auf Azure Synapse konfigurieren {#configure-access-to-azure-synapse}
+
+![](../../assets/v7-only.svg)
 
 Verwenden Sie die Option Campaign [Federated Data Access](../../installation/using/about-fda.md) (FDA) , um in externen Datenbanken gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf Microsoft Azure synapse Analytics zu konfigurieren.
 

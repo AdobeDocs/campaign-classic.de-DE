@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: tracking-messages
 exl-id: 9d3f5c74-377a-4e24-81e5-bb605f69cf8a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 100%
 
 ---
 
 # Anweisungen zur Vorab-Bearbeitung {#pre-processing-instructions}
+
+![](../../assets/common.svg)
 
 Sie können eine bestimmte Syntax im Versandinhalt verwenden, um Anweisungen hinzuzufügen und die URL der getrackten E-Mail zu skripten. Die Anweisungen &quot;&lt;%@&quot; sind keine JavaScript-Anweisungen. Diese Syntax ist spezifisch für Adobe Campaign.
 

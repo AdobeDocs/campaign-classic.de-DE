@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: c5a9c99a-4078-45d8-847b-6df9047a2fe2
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '2353'
 ht-degree: 48%
@@ -14,6 +14,8 @@ ht-degree: 48%
 ---
 
 # Durchführen eines Build-Upgrades{#performing-a-build-upgrade}
+
+![](../../assets/v7-only.svg)
 
 In diesem Abschnitt erhalten Sie eine ausführliche Anleitung zum Upgrade-Prozess und zu den Schritten zur Ermittlung und Lösung von Konflikten.
 
@@ -179,7 +181,7 @@ Um alle Dateien mit der neuen Version zu ersetzen, müssen alle Instanzen von nl
 
    * Ressourcen synchronisieren
    * Schemata aktualisieren
-   * Datenbank aktualisieren
+   * Aktualisieren der Datenbank
 
    >[!NOTE]
    >
@@ -254,7 +256,6 @@ Im Kontext einer Mid-Sourcing-Umgebung müssen Sie die folgenden zusätzlichen S
 >[!NOTE]
 >
 >Der Mid-Sourcing-Server muss immer dieselbe Version (oder eine neuere Version) wie die Marketing-Server ausführen.
-
 
 ## Bei Konflikten
 
@@ -343,8 +344,7 @@ Es gibt drei Möglichkeiten, Konflikte zu lösen: **Akzeptieren Sie die neue Ver
 >[!IMPORTANT]
 >Es wird dringend empfohlen, Konflikte zu lösen.
 
-
-### Führen Sie eine Zusammenführung{#perform-a-merge} durch.
+### Zusammenführen{#perform-a-merge}
 
 Es gibt verschiedene Arten von Zusammenführungen:
 
@@ -407,10 +407,9 @@ So nehmen Sie eine komplexe Zusammenführung vor:
 >[!IMPORTANT]
 >Für komplexe Zusammenführungen sind Entwicklungsfähigkeiten erforderlich.
 
-
-**Verwandte Themen**
+**Verwandte Themen** 
 
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
-* [Versionshinweise zu Campaign Classic ](../../rn/using/rn-overview.md)
+* [Versionshinweise zu Campaign Classic](../../rn/using/rn-overview.md)
 * [Hilfe- und Support-Optionen für Campaign Classic](../../support.md)
 * [[!DNL Gold Standard]-Programm](../../rn/using/gs-overview.md)

@@ -6,20 +6,22 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 68%
 
 ---
 
-# Anzeige von personenbezogenen Daten einschränken{#restricting-pii-view}
+# Einschränken der Anzeige von personenbezogenen Daten{#restricting-pii-view}
+
+![](../../assets/v7-only.svg)
 
 ## Übersicht {#overview}
 
 Manche Kunden benötigen Marketing-Benutzer, um auf Datendatensätze zugreifen zu können, aber nicht möchten, dass sie personenbezogene Daten (PII) wie Vorname, Nachname oder E-Mail-Adresse sehen. Adobe Campaign bietet eine Möglichkeit, den Datenschutz zu schützen und zu verhindern, dass Daten von regulären Kampagnenbetreibern missbraucht werden.
 
-## Umsetzung {#implementation}
+## Implementierung {#implementation}
 
 Den Schemas wurde ein neues Attribut hinzugefügt, das auf beliebige Elemente oder Attribute angewendet werden kann. Es ergänzt das vorhandene Attribut **[!UICONTROL visibleIf]** . Dieses Attribut ist: **[!UICONTROL accessibleIf]**. Wenn ein XTK-Ausdruck im Zusammenhang mit dem aktuellen Benutzerkontext enthalten ist, kann z. B. **[!UICONTROL HasNamedRight]** oder **[!UICONTROL $(login)]** genutzt werden.
 
@@ -54,7 +56,7 @@ Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 * Beim Speichern der Zielpopulation in einer Gruppe (Liste) sind die Eigenschaften der gespeicherten Felder identisch mit der Datenquelle.
 * Die Daten sind standardmäßig nicht für JS-Code verfügbar.
 
-## Recommendations {#recommendations}
+## Empfehlungen {#recommendations}
 
 In jedem Versand werden E-Mail-Adressen in die Tabellen **[!UICONTROL broadLog]** und **[!UICONTROL forecastLog]** kopiert: Daher müssen auch diese Felder geschützt werden.
 

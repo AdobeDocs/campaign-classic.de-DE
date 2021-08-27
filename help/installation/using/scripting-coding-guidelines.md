@@ -1,19 +1,21 @@
 ---
 product: campaign
-title: Richtlinien für Skripterstellung und Codierung
+title: Richtlinien für Script-Erstellung und Codierung
 description: Erfahren Sie mehr über die Richtlinien, die bei der Entwicklung in Adobe Campaign befolgt werden müssen (Workflows, JavaScript, JSSP usw.).
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 49%
 
 ---
 
-# Richtlinien für Skripterstellung und Codierung {#scripting-coding-guidelines}
+# Richtlinien für Script-Erstellung und Codierung {#scripting-coding-guidelines}
+
+![](../../assets/v7-only.svg)
 
 ## Scripts
 

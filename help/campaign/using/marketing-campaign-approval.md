@@ -6,14 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: 8cbb2445-f5e4-4a25-ba7e-56e39ca9d3ce
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2603'
 ht-degree: 100%
 
 ---
 
 # Einrichten und Verwalten des Validierungsprozesses {#approving-marketing-campaigns}
+
+![](../../assets/common.svg)
 
 Jede Etappe eines Versands kann zur Validierung unterbreitet werden, um ein umfassendes Monitoring sowie eine nahtlose Kontrolle der unterschiedlichen Kampagnenprozesse sicherzustellen. Hierzu gehören Zielgruppenbestimmung, Inhalt, Budget, Extraktion und Testversand.
 
@@ -183,7 +185,6 @@ Die Kampagne erhält daraufhin den Status **[!UICONTROL Zu validieren]**.
 >
 >Passen Sie die Kampagnenvorlage an, um die Prozesse auszuwählen, für die eine Validierung erforderlich ist. Weitere Informationen hierzu finden Sie im Abschnitt [Kampagnenvorlagen](../../campaign/using/marketing-campaign-templates.md#campaign-templates).
 
-
 ![](assets/s_ncs_user_edit_del_to_validate.png)
 
 >[!NOTE]
@@ -251,8 +252,8 @@ Um eine Benutzerliste zu erstellen, klicken Sie auf den Link **[!UICONTROL Bearb
 >* Wenn eine Liste von Validierungsverantwortlichen definiert ist, wird ein Vorgang validiert, sobald ein Validierungsverantwortlicher ihn akzeptiert hat. Der entsprechende Validierungs-Link wird dann nicht mehr im Dashboard angezeigt. Wenn das Senden von Benachrichtigungen aktiviert ist und ein anderer Validierungsverantwortlicher auf den Validierungs-Link in der Benachrichtigung klickt, wird ihm mitgeteilt, dass ein anderer Validierungsverantwortlicher den Vorgang bereits validiert hat.
 >* Im unteren Abschnitt des Fensters der Validierungseinstellungen kann eine Validierungsplanung für die jeweilige Kampagne festgelegt werden. Standardmäßig haben Validierungsverantwortliche nach dem Unterbreitungsdatum 3 Tage Zeit, um einen Vorgang zu validieren.
 >* Es besteht die Möglichkeit, den betreffenden Benutzern vor dem Ende der Validierungsfrist eine automatische Erinnerung zu senden.
->
 
+>
 
 
 ![](assets/s_ncs_user_edit_op_valid_calendar.png)

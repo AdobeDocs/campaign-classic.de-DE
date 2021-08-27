@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3779'
 ht-degree: 2%
@@ -15,9 +15,11 @@ ht-degree: 2%
 
 # Überwachungsverfahren{#monitoring-processes}
 
+![](../../assets/v7-only.svg)
+
 Der Anwendungsserver und der Weiterleitungsserver (**tracking**) können manuell oder automatisch überwacht werden.
 
-## Manuelles Monitoring {#manual-monitoring}
+## Manuelle Überwachung {#manual-monitoring}
 
 Gehen Sie zu **[!UICONTROL Monitoring]** und klicken Sie auf den Link **[!UICONTROL Übersicht]** , um die Seite zur Adobe Campaign-Prozessüberwachung anzuzeigen.
 
@@ -31,7 +33,7 @@ Auf der angezeigten Seite können Sie den Status der verbundenen Instanz anzeige
 
 Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse werden auf [dieser Seite](../../production/using/monitoring-guidelines.md) vorgestellt.
 
-### Protokollprotokoll {#log-journal}
+### Protokoll-Protokoll {#log-journal}
 
 Es ist möglich, das Protokollprotokoll anzuzeigen, das sich auf einen Prozess bezieht. Klicken Sie dazu beispielsweise auf den Prozess **mta** und dann auf **[!UICONTROL Öffnen Sie das Protokollprotokoll]** .
 
@@ -223,7 +225,7 @@ Adobe Campaign ermöglicht die Anpassung von Indikatoren. Gehen Sie dazu wie fol
    </indicator>"
    ```
 
-   or
+   oder
 
    ```
    #!/bin/bash 
@@ -257,7 +259,6 @@ Sie sind unter **Monitoring** > &#39;SMTP Monitoring&#39; gruppiert.
 >* Die **[!UICONTROL SMTP-Versandstatistiken]** werden nur angeboten, wenn der Statistikserver auf der Instanz gestartet wird.
 
 >
-
 
 
 ### SMTP-Versandstatistiken {#smtp-sending-statistics}
@@ -428,7 +429,7 @@ Der Benutzer und seine Anmeldung müssen zuvor in der Adobe Campaign-Clientkonso
 
 Diese **jsp** stellt den Einstiegspunkt der Adobe Campaign-Anwendungs-APIs dar. Sie kann daher eine detaillierte Überwachung des Antrags vornehmen. Sie kann auch zur Überwachung von Adobe Campaign-Webdiensten verwendet werden. Sie wird in unseren Überwachungsskripts verwendet, aber beachten Sie, dass sie nur für Power-User bestimmt ist.
 
-### Überwachung basierend auf Bereitstellungstypen {#monitoring-based-on-deployment-types}
+### Überwachung anhand von Bereitstellungstypen {#monitoring-based-on-deployment-types}
 
 Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/hosting-models.md)). In diesem Abschnitt werden die verschiedenen automatischen Überwachungsverfahren beschrieben, die je nach Installationstyp anzuwenden sind.
 
@@ -436,7 +437,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring  </th> 
+   <th> Monitoring     </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -473,7 +474,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  </tbody> 
 </table>
 
-## Automatische Überwachung über Adobe Campaign-Scripts {#automatic-monitoring-via-adobe-campaign-scripts}
+## Automatische Überwachung über Adobe Campaign-Skripte {#automatic-monitoring-via-adobe-campaign-scripts}
 
 Adobe Campaign kann ein Tool zur Instanzüberwachung (netreport) bereitstellen, mit dem Sie einen Bericht über die erkannten Anomalien per E-Mail versenden können.
 
@@ -547,7 +548,7 @@ Im Folgenden finden Sie ein Konfigurationsbeispiel:
 >
 >Damit der Operator **monitoring** funktioniert, muss sich der Computer, auf dem der Netzwerkbericht ausgeführt wird, in einer Sicherheitszone befinden, die sich im Modus **sessionTokenOnly** befindet. Wenn für diesen Operator keine vertrauenswürdige IP-Maske angegeben wurde, muss sich die Sicherheitszone auch im Modus **allowEmptyPassword** und **allowUserPassword** befinden.
 
-#### &#39;Properties&#39; element {#properties--element}
+#### Element &quot;Eigenschaften&quot; {#properties--element}
 
 Dieses Element wird verwendet, um die Konfiguration von E-Mails, d. h.
 
@@ -567,7 +568,7 @@ Dieses Element wird verwendet, um die Konfiguration von E-Mails, d. h.
 >
 >Das Attribut **persistHtmlFile** mit dem Wert &quot;true&quot;im Element **`<property>`** wird verwendet, um den neuesten Überwachungsstatus in der Datei **netreport.md** aufzuzeichnen. Diese Datei wird im Installationsverzeichnis gespeichert.
 
-#### &#39;Instance&#39; element {#instance--element}
+#### &#39;Instance&#39;-Element {#instance--element}
 
 Mit diesem Element können Sie mehrere Rechner (Hosts) in derselben Instanz gruppieren. Die Instanznamen werden im ersten Teil der Monitoring-E-Mail angezeigt. Sie können auf den Namen einer Instanz klicken, um auf Details zu den einzelnen Computern zuzugreifen.
 
@@ -585,7 +586,7 @@ instance name="instanceName" recipientList="mail@mail.com,mail2@mail.com">
 * **name**: Instanzname, der im ersten Teil der E-Mail angezeigt wird.
 * **recipientList**  (optional): ermöglicht den Versand eines Überwachungsberichts über eine bestimmte Instanz per E-Mail.
 
-#### &#39;Host&#39;-Element {#host--element}
+#### Element &quot;Host&quot; {#host--element}
 
 Dieses Element konfiguriert die Überwachung eines bestimmten Servers auf dem Host, d. h.
 
@@ -621,11 +622,11 @@ In den Unterelementen **ncs**, **redir** und **http** können Sie das Attribut *
 
 Um sie zu konfigurieren, bearbeiten Sie diese Datei und geben Sie an, in welchem Ordner das JRE- oder JDK installiert ist.
 
-### Starten der Überwachung {#launching-monitoring}
+### Startüberwachung {#launching-monitoring}
 
 Um die Überwachung zu starten, führen Sie die Datei **netreport.bat** oder **netreport.sh** in regelmäßigen Abständen über ein Skript aus. Ein Bericht wird nach der ersten Ausführung und dann nur im Falle einer Statusänderung gesendet.
 
-### Monitoring der Tests {#testing-monitoring}
+### Testüberwachung {#testing-monitoring}
 
 Um die Überwachung zu testen, führen Sie die Datei **netreport.bat** oder **netreport.sh** aus.
 

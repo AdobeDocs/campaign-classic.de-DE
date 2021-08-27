@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: b5aa5663-1902-4f50-9202-783e73a28838
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 13%
@@ -14,6 +14,8 @@ ht-degree: 13%
 ---
 
 # Workflow-Ausführung{#workflow-execution}
+
+![](../../assets/v7-only.svg)
 
 Im folgenden Abschnitt finden Sie Informationen zu häufigen Problemen bei der Ausführung von Workflows und zur Fehlerbehebung.
 
@@ -24,7 +26,7 @@ Weiterführende Informationen zu Workflows finden Sie in den folgenden Abschnitt
 * [Lebenszyklus eines Workflows](../../workflow/using/workflow-life-cycle.md)
 * [Best Practices bei der Verwendung von Workflows](../../workflow/using/workflow-best-practices.md)
 
-## Beginnen Sie so bald wie möglich in Kampagnen {#start-as-soon-as-possible-in-campaigns}
+## So bald wie möglich in Kampagnen starten {#start-as-soon-as-possible-in-campaigns}
 
 In einigen Fällen starten Workflows, die von einer Kampagne ausgeführt werden, nicht, wenn auf die Schaltfläche **[!UICONTROL Starten]** geklickt wird. Statt zu beginnen, wird der Status &quot;Schnellstmöglich starten&quot;angezeigt.
 
@@ -77,7 +79,7 @@ Es kann mehrere Ursachen für dieses Problem geben. Führen Sie die folgenden Sc
 
 Weitere Informationen zur Überwachung Ihrer Workflows finden Sie in [diesem Abschnitt](../../workflow/using/monitoring-workflow-execution.md).
 
-## Gestartet {#start-in-progress}
+## In Bearbeitung {#start-in-progress}
 
 Wenn Workflows nicht ausgeführt werden und ihr Status **Gestartet wird** lautet, bedeutet dies möglicherweise, dass das Workflow-Modul nicht gestartet wird.
 

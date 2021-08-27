@@ -6,14 +6,16 @@ audience: social
 content-type: reference
 topic-tags: annexes
 exl-id: 3b8c7db4-9c55-42f6-8e09-e5ab781efe8f
-source-git-commit: c7068c172c35e067d2dbed9233ec3b84633603fd
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2382'
 ht-degree: 100%
 
 ---
 
 # Beispiele für Facebook-Anwendungen{#examples-of-facebook-apps}
+
+![](../../assets/v7-only.svg)
 
 Wenn ein Benutzer auf den Tab einer Facebook-Anwendung klickt, wird diese in einem 810 Pixel breiten Bereich angezeigt. Adobe Campaign verwendet eine Webanwendung vom Typ „Facebook“, mit der Sie die in der Facebook-Anwendung angezeigten Inhalte definieren und personalisieren können. Auf diese Weise wird das Akquirieren von Profilen erleichtert.
 

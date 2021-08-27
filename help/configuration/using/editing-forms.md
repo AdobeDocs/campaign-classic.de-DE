@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: input-forms
 exl-id: 24604dc9-f675-4e37-a848-f1911be84f3e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 56%
@@ -14,6 +14,8 @@ ht-degree: 56%
 ---
 
 # Formulare bearbeiten{#editing-forms}
+
+![](../../assets/v7-only.svg)
 
 Auf den Bildschirm zur Erstellung und Konfiguration des Formulars können Sie über den Ordner **[!UICONTROL Administration] > [!UICONTROL Configuration] > [!UICONTROL Input forms]** in der Adobe Campaign-Clientkonsole zugreifen:
 

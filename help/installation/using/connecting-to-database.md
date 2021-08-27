@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 240d7e11-da3a-4d64-8986-1f1c8ebcea3c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
 # Herstellung der Datenbankverbindung {#connecting-to-the-database}
+
+![](../../assets/v7-only.svg)
 
 Um eine Verbindung mit der externe Datenbank zu ermöglichen, müssen Sie die Verbindungsparameter angeben, d. h. die gewünschte Datenquelle und den Namen der Tabelle mit den zu ladenden Daten.
 
@@ -42,7 +44,7 @@ Sie können auf eine gemeinsam genutzte externe Datenbank über Adobe Campaign z
 
    ![](assets/wf-external-account-functions.png)
 
-Im Tab **[!UICONTROL Parameter]** können Sie spezifische Arbeits-Tablespaces für die Tabellen und den Index definieren.
+Auf der Registerkarte **[!UICONTROL Parameter]** können Sie spezifische Arbeits-Tablespaces für die Tabellen und den Index definieren.
 
 ## Herstellen einer temporären Verbindung {#creating-a-temporary-connection}
 
@@ -73,7 +75,7 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
    ![](assets/wf_add_data_local_external_data_select_table.png)
 
-1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um ein oder mehrere Abstimmungsfelder zwischen den Daten der externen Datenbank und den Daten in der Adobe-Campaign-Datenbank zu definieren. Über die Symbole **[!UICONTROL Ausdruck bearbeiten]** der Option **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** erhalten Sie Zugriff auf die Liste mit den Feldern einer jeden Tabelle.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um ein oder mehrere Abstimmungsfelder zwischen den Daten der externen Datenbank und den Daten in der Adobe Campaign-Datenbank zu definieren. Über die Symbole **[!UICONTROL Ausdruck bearbeiten]** der Option **[!UICONTROL Remote-Feld]** und **[!UICONTROL Lokales Feld]** erhalten Sie Zugriff auf die Liste mit den Feldern einer jeden Tabelle.
 
    ![](assets/wf_add_data_local_external_data_join.png)
 
@@ -92,7 +94,7 @@ Gehen Sie in der Abfrageaktivität zur Erstellung einer periodischen Verbindung 
 
 Sie können durch das Konfigurieren eines externen FDA-Kontos eine sichere Verbindung für den Zugriff auf eine externe Datenbank herstellen.
 
-Schreiben Sie zu diesem Zweck &quot;**:ssl**&quot; hinter die Serveradresse und die Adresse des verwendeten Ports. Beispiel: **192.168.0.52:4501:ssl**.
+Fügen Sie dazu &quot;**:ssl**&quot;hinter der Serveradresse und -adresse des verwendeten Ports hinzu. Beispiel: **192.168.0.52:4501:ssl**.
 
 Die Daten werden dadurch unter Verwendung des sicheren SSL-Protokolls gesendet.
 

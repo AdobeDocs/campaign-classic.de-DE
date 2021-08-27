@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 2c933fc5-1c0a-4c2f-9ff2-90d09a79c55a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Duplizieren von Umgebungen{#duplicating-environments}
+
+![](../../assets/v7-only.svg)
 
 ## Einleitung {#introduction}
 
@@ -47,7 +49,7 @@ Gehen Sie hierzu wie folgt vor:
    >Eine Umgebung kann mehrere Instanzen enthalten. Jede Adobe Campaign-Instanz unterliegt einem Lizenzvertrag. Überprüfen Sie Ihren Lizenzvertrag, um zu sehen, wie viele Umgebungen Sie nutzen können.\
    >Mit dem unten beschriebenen Verfahren können Sie eine Umgebung übertragen, ohne die Anzahl der installierten Umgebungen und Instanzen zu beeinträchtigen.
 
-### Bevor Sie {#before-you-start} starten
+### Vorbereitung {#before-you-start}
 
 >[!IMPORTANT]
 >
@@ -55,9 +57,9 @@ Gehen Sie hierzu wie folgt vor:
 
 Damit dieser Prozess funktioniert, müssen die Quell- und Zielumgebungen über dieselbe Anzahl von Instanzen, denselben Zweck (Marketing-Instanz, Versandinstanz) und ähnliche Konfigurationen verfügen. Die technische Konfiguration muss den Softwarevoraussetzungen entsprechen. Dieselben Komponenten müssen in beiden Umgebungen installiert sein.
 
-## Umsetzung {#implementation}
+## Implementierung {#implementation}
 
-### Übertragungsverfahren {#transfer-procedure}
+### Übermittlungsverfahren {#transfer-procedure}
 
 In diesem Abschnitt erfahren Sie, wie Sie mithilfe einer Fallstudie eine Quellumgebung in eine Zielumgebung übertragen können: Unser Ziel besteht hier darin, eine Produktionsumgebung (**prod** Instanz) in einer Entwicklungsumgebung (**dev** Instanz) wiederherzustellen, um in einem Kontext zu arbeiten, der der &quot;Live&quot;-Plattform so nahe wie möglich ist.
 
@@ -71,8 +73,7 @@ Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige P
 >
 
 
-
-### Schritt 1: Erstellen Sie eine Sicherung der Quellumgebungsdaten (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
+### Schritt 1: Erstellen einer Sicherungskopie der Quellumgebungsdaten (prod) {#step-1---make-a-backup-of-the-source-environment--prod--data}
 
 Datenbanken kopieren
 
@@ -109,7 +110,7 @@ Führen Sie dazu einen Package-Export für die folgenden beiden Elemente durch:
 >
 >Beim Exportieren der nmsextaccount -Tabelle werden Kennwörter, die sich auf externe Konten beziehen (z. B. Kennwörter für Mid-Sourcing, Message Center Execution, SMPP, IMS und andere externe Konten), nicht exportiert. Vergewissern Sie sich im Voraus, dass Sie Zugriff auf die richtigen Passwörter haben, da diese möglicherweise erneut eingegeben werden müssen, nachdem die externen Konten wieder in die Umgebung importiert wurden.
 
-### Schritt 3: Stoppen der Zielumgebung (dev) {#step-3---stop-the-target-environment--dev-}
+### Schritt 3: Beenden der Zielumgebung (dev) {#step-3---stop-the-target-environment--dev-}
 
 Sie müssen Adobe Campaign-Prozesse auf allen Zielumgebungsservern stoppen. Dieser Vorgang hängt von Ihrem Betriebssystem ab.
 
@@ -164,7 +165,7 @@ Führen Sie dazu den folgenden Befehl aus:
 nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
 ```
 
-### Schritt 6: Überprüfen der Vorsicht {#step-6---check-cauterization}
+### 6. Schritt - Vorsicht überprüfen {#step-6---check-cauterization}
 
 1. Vergewissern Sie sich, dass der einzige Versandabschnitt derjenige ist, dessen Kennung auf 0 gesetzt ist:
 
@@ -185,7 +186,7 @@ nlserver javascript nms:freezeInstance.js -instance:<dev> -arg:run
    SELECT iStatus, count(*) FROM neolane.xtkworkflow GROUP BY iStatus;
    ```
 
-### Schritt 7: Starten Sie den Webprozess der Zielumgebung (dev) {#step-7---restart-the-target-environment-web-process--dev-} neu.
+### Schritt 7: Starten Sie den Webprozess der Zielumgebung neu (dev) {#step-7---restart-the-target-environment-web-process--dev-}
 
 Starten Sie in der Zielumgebung die Adobe Campaign-Prozesse für alle Server neu.
 

@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 5354d608-2fea-45f9-a0aa-11c7e965ab04
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 100%
 
 ---
 
 # Workflow-Daten verwenden{#how-to-use-workflow-data}
+
+![](../../assets/common.svg)
 
 ## Datenbank aktualisieren {#updating-the-database}
 
@@ -29,21 +31,21 @@ Zur Aktualisierung der Adobe-Campaign-Datenbank und von Listen stehen zwei dediz
 
    ![](assets/s_user_create_list.png)
 
-   Siehe [Listen-Update](../../workflow/using/list-update.md).
+   Siehe [Listen-Update](list-update.md).
 
 * Die **[!UICONTROL Daten-Update]**-Aktivität ermöglicht eine gebündelte Aktualisierung von Datenbankfeldern.
 
-   Weitere Informationen hierzu finden Sie im Abschnitt [Daten-Update](../../workflow/using/update-data.md).
+   Weitere Informationen hierzu finden Sie im Abschnitt [Daten-Update](update-data.md).
 
 ### An- und Abmeldungen verwalten {#subscription-unsubscription-management}
 
-Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt [An-/Abmeldedienst](../../workflow/using/subscription-services.md) beschrieben.
+Die An- und Abmeldung von Empfängern für einen Informationsdienst im Rahmen eines Workflows wird im Abschnitt [An-/Abmeldedienst](subscription-services.md) beschrieben.
 
 ## Über einen Workflow versenden {#sending-via-a-workflow}
 
 ### Versandaktivität {#delivery-activity}
 
-Die Versandaktivität wird im Abschnitt [Versand](../../workflow/using/delivery.md) beschrieben.
+Die Versandaktivität wird im Abschnitt [Versand](delivery.md) beschrieben.
 
 ### Sendungen anreichern und personalisieren {#enriching-and-targeting-deliveries}
 
@@ -57,7 +59,7 @@ Ergänzend zu den üblichen Personalisierungsfeldern können Sie den Versandinha
 
 ![](assets/s_advuser_using_additional_data.png)
 
-Aus Workflow-Arbeitstabellen stammende Daten sind über ihren Namen leicht identifizierbar. Er beginnt jeweils mit **targetData**. Weitere Informationen hierzu finden Sie im Abschnitt [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data).
+Aus Workflow-Arbeitstabellen stammende Daten sind über ihren Namen leicht identifizierbar. Er beginnt jeweils mit **targetData**. Weitere Informationen hierzu finden Sie im Abschnitt [Zielgruppendaten](data-life-cycle.md#target-data).
 
 Auch im Rahmen eines E-Mail-Versands können Personalisierungsfelder auf Daten zugreifen, die im Zuge einer Erweiterung des Zieldatensatzes in einem Zielgruppen-Workflow erhoben wurden, wie die folgende Abbildung verdeutlicht:
 

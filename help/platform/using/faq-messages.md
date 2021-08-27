@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Nachrichten validieren, senden und tracken {#validate-send-track}
+
+![](../../assets/common.svg)
 
 ## Test und Validierung {#test-and-validate-before-sending}
 
@@ -52,7 +54,7 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 
 Um Konflikte zwischen Kampagnen zu vermeiden, kann Adobe Campaign verschiedene Kombinationen durch Anwendung spezifischer Beschränkungsregeln testen. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt.
 
-[Hier erfahren Sie mehr darüber](../../campaign/using/about-campaign-typologies.md).
+[Hier erfahren Sie mehr darüber](../../campaign-opt/using/about-campaign-typologies.md).
 
 ## Nachrichten senden {#send-your-messages}
 

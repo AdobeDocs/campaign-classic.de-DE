@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 71e98d45-3660-4d86-a5ca-8e55ae5896eb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Bedingungselement {#condition--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model-2}
 
@@ -37,7 +39,7 @@ Keine
 
 In diesem Element können Sie eine Filterbedingung definieren.
 
-## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-2}
+## Verwendung und Verwendungskontext {#use-and-context-of-use-2}
 
 Ein `<sysfiler>` -Element kann mehrere Filterbedingungen enthalten.
 

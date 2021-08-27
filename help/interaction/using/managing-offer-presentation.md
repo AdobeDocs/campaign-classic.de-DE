@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1084'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1083'
+ht-degree: 96%
 
 ---
 
 # Angebotsunterbreitung{#managing-offer-presentation}
+
+![](../../assets/v7-only.svg)
 
 ## Unterbreitungsregeln – Übersicht {#presentation-rules-overview}
 
@@ -63,7 +65,7 @@ Auf die Anwendungskriterien kann im **[!UICONTROL Allgemein]**-Tab der Typologie
 
 Die im Tab **[!UICONTROL Angebotsunterbreitung]** konfigurierten Dimensionen für die Unterbreitungsregel müssen mit denen auf Umgebungsebene übereinstimmen.
 
-Die **[!UICONTROL Zielgruppendimension]** entspricht der Tabelle der Empfänger, denen die Angebote unterbreitet werden sollen (standardmäßig nms:recipients). Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle, die den mit der Zieldimension verknüpften Vorschlagsverlauf enthält (standardmäßig nms:propositionRcp).
+Die **[!UICONTROL Zielgruppendimension]** entspricht der Empfängertabelle (standardmäßig: nms:recipients), die die Angebotsvorschläge erhalten. Die Dimension **[!UICONTROL Speicherung]** entspricht der Tabelle, die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält (standardmäßig:nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 

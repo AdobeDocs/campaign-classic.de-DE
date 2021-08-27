@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4c7bc0f3-5877-47dc-bd72-dc94fb7bd479
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1425'
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1421'
 ht-degree: 100%
 
 ---
 
 # Anreicherung{#enrichment}
+
+![](../../assets/common.svg)
 
 Eine **[!UICONTROL Anreicherung]** ermöglicht die Ergänzung einer Profilliste durch Zusatzdaten und das Hinzufügen von Relationen zu existierenden Tabellen. Dabei können Abstimmkriterien in Bezug auf die bereits in der Datenbank enthaltenen Profile definiert werden.
 
@@ -50,15 +52,15 @@ Vier Relationstypen stehen zur Auswahl:
 
 Anwendungsbeispiele, mit denen die Funktionsweise der Anreicherungsaktivitäten im Kontext ausführlich beschrieben wird, sind in folgenden Abschnitten verfügbar:
 
-* [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](../../workflow/using/email-enrichment-with-custom-date-fields.md).
-* [Anreicherung von Daten](../../workflow/using/enriching-data.md)
-* [Erstellung einer zusammenfassenden Liste](../../workflow/using/creating-a-summary-list.md)
+* [E-Mail-Anreicherung mit benutzerdefinierten Datumsfeldern](email-enrichment-with-custom-date-fields.md).
+* [Anreicherung von Daten](enriching-data.md)
+* [Erstellung einer zusammenfassenden Liste](creating-a-summary-list.md)
 
 ## Informationen hinzufügen {#adding-information}
 
 Verwenden Sie die **[!UICONTROL Anreicherung]**, um die Workflow-Arbeitstabelle um zusätzliche Daten zu ergänzen. Dies bietet sich insbesondere im Anschluss an eine Abfrage an.
 
-Die Konfiguration der zusätzlichen Spalten wird im Abschnitt [Daten hinzufügen](../../workflow/using/query.md#adding-data) beschrieben.
+Die Konfiguration der zusätzlichen Spalten wird im Abschnitt [Daten hinzufügen](query.md#adding-data) beschrieben.
 
 Wählen Sie im Feld **[!UICONTROL Hauptmenge]** die eingehende Transition aus, deren Arbeitstabelle angereichert werden soll.
 
@@ -151,13 +153,13 @@ Bei mehreren Abstimmkriterien müssen ALLE erfüllt sein, damit die Relation her
 
 Die Anreicherungsaktivität ermöglicht das Hinzufügen von Angeboten oder von Relationen zu Angeboten für Versandempfänger.
 
-Nähere Informationen zur Anreicherungsaktivität erhalten Sie in [diesem Abschnitt](../../workflow/using/enrichment.md).
+Nähere Informationen zur Anreicherungsaktivität erhalten Sie in [diesem Abschnitt](enrichment.md).
 
 Sie können beispielsweise aus einer Abfrage stammende Empfängerdaten vor Durchführung eines Versands anreichern.
 
 ![](assets/int_enrichment_offer1.png)
 
-Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](../../workflow/using/query.md)). Gehen Sie dann wie folgt vor:
+Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](query.md)). Gehen Sie dann wie folgt vor:
 
 1. Platzieren Sie im Anschluss an die Abfrage eine Anreicherungsaktivität und öffnen Sie sie zur weiteren Bearbeitung.
 1. Wählen Sie **[!UICONTROL Daten hinzufügen]** im Tab **[!UICONTROL Anreicherung]**.
@@ -176,13 +178,13 @@ Erstellen Sie zunächst Ihre Zielbestimmungsabfrage (siehe diesen [Abschnitt](..
 
       ![](assets/int_enrichment_offer4.png)
 
-1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](cross-channel-deliveries.md).
 
    Die Anzahl an für die Vorschau verfügbaren Vorschlägen hängt von der Konfiguration der Anreicherung und nicht von im Versand konfigurierten Parametern ab.
 
 Um Angebotsvorschläge anzugeben, können Sie auch auf einen Link zu einem Angebot verweisen. Weitere Informationen hierzu finden Sie im Abschnitt [Referenzierung einer Relation zu einem Angebot](#referencing-a-link-to-an-offer).
 
-## Relation zu einem Angebot referenzieren {#referencing-a-link-to-an-offer}
+## Referenzierung einer Relation zu einem Angebot {#referencing-a-link-to-an-offer}
 
 In einer Anreicherungsaktivität besteht darüber hinaus die Möglichkeit, eine Relation zu einem Angebot zu referenzieren.
 
@@ -194,11 +196,11 @@ Gehen Sie dazu wie folgt vor:
 
    ![](assets/int_enrichment_link1.png)
 
-1. Definieren Sie die Art der Relation zwischen den Daten der Eingangstabelle der Anreicherungsaktivität (hier die Empfängertabelle) und der Angebotstabelle. Sie können beispielsweise einem Empfänger einen Angebotscode zuordnen.
+1. Definieren Sie die Art der Relation zwischen den Daten der Eingangstabelle der Aktivität &quot;Anreicherung&quot; (hier die Empfängertabelle) und der Angebotstabelle. Sie können beispielsweise einem Empfänger einen Angebots-Code zuordnen.
 
    ![](assets/int_enrichment_link2.png)
 
-1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](../../workflow/using/cross-channel-deliveries.md).
+1. Konfigurieren Sie dann eine Versandaktivität, die dem von Ihnen gewählten Kanal entspricht. Siehe [Kanalübergreifender Versand](cross-channel-deliveries.md).
 
    >[!NOTE]
    >
@@ -212,8 +214,8 @@ Die Aktivität **[!UICONTROL Angebotsmodul]** speichert diese Informationen stan
 
 Gehen Sie wie folgt vor, wenn Sie diese Informationen dennoch speichern möchten:
 
-1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird. Siehe diesen [Abschnitt](../../interaction/using/integrating-an-offer-via-a-workflow.md#specifying-an-offer-or-a-call-to-the-offer-engine).
-1. Klicken Sie im Anreicherung-Tab der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
+1. Erstellen Sie eine Angebotsmodul-Abfrage in einer Anreicherungsaktivität, die nach einer Abfrage und vor einer Versandaktivität platziert wird.
+1. Klicken Sie auf der Registerkarte &quot;Anreicherung&quot; der gleichnamigen Aktivität auf den Link **[!UICONTROL Zusätzliche Daten bearbeiten...]**.
 
    ![](assets/ita_enrichment_rankweight_1.png)
 

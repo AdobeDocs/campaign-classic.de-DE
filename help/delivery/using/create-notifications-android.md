@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 13ccc5d6-4355-42ba-80dc-30a45d3b69a4
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 100%
 
 ---
 
 # Erstellen von Benachrichtigungen für Android{#create-notificaations-android}
+
+![](../../assets/common.svg)
 
 Verwenden Sie Adobe Campaign, um Push-Benachrichtigungen an Android-Geräte zu senden. Allgemeine Methoden zur Versanderstellung finden Sie in [diesem Abschnitt](steps-about-delivery-creation-steps.md).
 

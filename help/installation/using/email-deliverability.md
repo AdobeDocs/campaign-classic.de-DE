@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '3089'
 ht-degree: 20%
@@ -14,6 +14,8 @@ ht-degree: 20%
 ---
 
 # Technische E-Mail-Konfigurationen{#email-deliverability}
+
+![](../../assets/v7-only.svg)
 
 ## Übersicht {#overview}
 
@@ -75,7 +77,7 @@ Versandstatistiken werden für jeden Ziel-MX und für jede Quell-IP-Adresse aufb
 
 Die Quell-IP-Adresse entspricht der öffentlichen IP-Adresse, d. h. der Adresse, wie sie vom Remote-E-Mail-Server angezeigt wird. Diese IP-Adresse kann sich von der Adresse des Computers unterscheiden, der als Host für **mta** dient, wenn ein NAT-Router bereitgestellt wird. Aus diesem Grund verwendet der Statistikserver eine Kennung, die mit der öffentlichen IP (**publicId**) übereinstimmt. Die Verbindung zwischen der lokalen Adresse und dieser Kennung wird in der Konfigurationsdatei **serverConf.xml** deklariert. Alle in **serverConf.xml** verfügbaren Parameter sind in diesem [Abschnitt](../../installation/using/the-server-configuration-file.md) aufgeführt.
 
-## Steuerung der Versandausgabe {#delivery-output-controlling}
+## Ausgabesteuerung des Versands {#delivery-output-controlling}
 
 Um Nachrichten an E-Mail-Server zu senden, fordert die Komponente **Email Traffic Shaper** eine Verbindung vom Statistikserver an. Sobald die Anfrage akzeptiert wurde, wird die Verbindung geöffnet.
 
@@ -97,7 +99,7 @@ Wenn eine Nachricht gesendet wird, gibt es drei mögliche Ergebnisse:
    >
    >Ein **path** ist eine Verbindung zwischen der Adobe Campaign **mta** und der Zielgruppe **mta**. Die Adobe Campaign **mta** kann aus mehreren Start-IPs und mehreren Ziel-Domain-IPs wählen.
 
-### Nachrichtenabbruch {#message-abandonment}
+### Abbruch einer Nachricht {#message-abandonment}
 
 Abgebrochene Nachrichten werden an **mta** zurückgegeben und nicht mehr von **mtachild** verwaltet.
 
@@ -109,7 +111,7 @@ Wenn eine Nachricht in die aktive Warteschlange gelangt, wird sie ausgesetzt und
 
 Ein Pfad wird im Allgemeinen für einen variablen Zeitraum nach einem Verbindungsfehler als nicht verfügbar markiert. Die Dauer der Nichtverfügbarkeit hängt von der Häufigkeit und dem Alter der Fehler ab.
 
-## Konfiguration des Statistikservers {#statistics-server-configuration}
+## Statistische Serverkonfiguration {#statistics-server-configuration}
 
 Der Statistikserver kann von mehreren Instanzen verwendet werden: Sie muss unabhängig von den Instanzen konfiguriert werden, die sie verwenden.
 
@@ -335,7 +337,7 @@ Diese Option wird besonders vom japanischen Markt für **Deco-mail**, **Decore M
 
 ## Konfiguration des Versandservers {#delivery-server-configuration}
 
-### Synchronisation der Uhren {#clock-synchronization}
+### Synchronisierung der Uhr {#clock-synchronization}
 
 Die Uhren aller Server, aus denen die Adobe Campaign-Plattform besteht (einschließlich der Datenbank), müssen synchronisiert und ihre Systeme auf dieselbe Zeitzone eingestellt werden.
 
@@ -422,6 +424,6 @@ Sobald der Schwellenwert **maxWorkingSetMb** (256) erreicht ist, stoppt der Vers
 
 Der Parameter **maxWorkingSetMb** wird empirisch berechnet, indem die maximale Nachrichtenanzahl mit der durchschnittlichen Nachrichtengröße multipliziert wird und das Ergebnis mit 2,5 multipliziert wird. Wenn beispielsweise eine Nachricht eine durchschnittliche Größe von 50 kB aufweist und der Parameter **maxWaitingMessages** 1.000 beträgt, wird der verwendete Speicher im Durchschnitt berechnet 125 MB.
 
-### Anpassen der Anzahl der mtachild {#adjust-the-number-of-mtachild}
+### Anzahl der mtachild anpassen {#adjust-the-number-of-mtachild}
 
 Die Anzahl der Kinder sollte die Anzahl der Prozessoren in der Maschine nicht übersteigen (ca. 1000 Sitzungen). Es wird empfohlen, maximal 8 **mtachild** zu verwenden. Sie können dann die Anzahl der Nachrichten pro **child** (**maxMsgPerChild**) erhöhen, um eine ausreichende Lebensdauer zu erreichen.

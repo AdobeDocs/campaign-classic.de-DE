@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 5e77d196-5c71-438e-8dae-10c6a6e4f29c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 100%
 
 ---
 
 # Technische Workflows überwachen {#monitoring-technical-workflows}
+
+![](../../assets/common.svg)
 
 Technische Workflows müssen überwacht werden und bei einer Störung müssen Maßnahmen ergriffen werden.
 
@@ -37,26 +39,26 @@ Technische Workflows finden Sie unter **[!UICONTROL Administration]** > **[!UICO
 
 Folgen Sie je nach technischem Workflow den unten beschriebenen Schritten, um ein reibungsloses Funktionieren zu gewährleisten.
 
-In diesem [Abschnitt](../../workflow/using/about-technical-workflows.md) erfahren Sie, was jeder technische Workflow bewirkt.
+In diesem [Abschnitt](about-technical-workflows.md) erfahren Sie, was jeder technische Workflow bewirkt.
 
 **[!UICONTROL Datenbankbereinigungs-Workflow (‘cleanup’)]**:
 
-1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Datenbankbereinigung]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/delivery.md).
+1. Vergewissern Sie sich, dass der Workflow **[!UICONTROL Datenbankbereinigung]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](delivery.md).
 1. Vergewissern Sie sich im Protokoll, dass die Ausführungsdauer auch langfristig ungefähr konstant bleibt und andere Workflows nicht stört.
 1. Weiterführende Informationen erfahren Sie auf dieser [Seite](../../production/using/database-cleanup-workflow.md).
 
 **[!UICONTROL Tracking-Workflow (‘tracking’)]**:
 
-Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (standardmäßig jede Stunde) und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../workflow/using/delivery.md).
+Vergewissern Sie sich, dass der Tracking-Workflow plangemäß ausgeführt wird (standardmäßig jede Stunde) und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden. Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](delivery.md).
 
 **[!UICONTROL Aktualisierung der Zustellbarkeit (‘deliverabilityUpdate’)]**:
 
-1. Vergewissern Sie sich, dass der **[!UICONTROL Zustellbarkeits-Workflow]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](../../workflow/using/delivery.md).
+1. Vergewissern Sie sich, dass der **[!UICONTROL Zustellbarkeits-Workflow]** täglich ausgeführt und erfolgreich abgeschlossen wird. Weiterführende Informationen dazu finden Sie auf dieser [Seite](delivery.md).
 1. Prüfen Sie im Protokoll, ob die Regeln regelmäßig aktualisiert werden.
 
 **[!UICONTROL Kampagnenprozesse (&#39;operationMgt&#39;, &#39;deliveryMgt‘ etc.)]**:
 
-1. Sehen Sie sich die Workflows im Ordner **[!UICONTROL Kampagnenprozesse]** an. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../workflow/using/about-technical-workflows.md).
+1. Sehen Sie sich die Workflows im Ordner **[!UICONTROL Kampagnenprozesse]** an. Weiterführende Informationen hierzu finden Sie auf dieser [Seite](about-technical-workflows.md).
 1. Vergewissern Sie sich, dass die Workflows plangemäß ausgeführt werden und im Protokoll keine wiederkehrenden Fehler aufgezeigt werden.
 
 ## Workflow-Supervision {#workflow-supervision}

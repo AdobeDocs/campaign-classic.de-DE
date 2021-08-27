@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: a7ca0300-d250-429c-8ae1-2ae7dee82cf5
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 5%
 
 ---
 
-# join element {#join--element}
+# join-Element {#join--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model-7}
 
@@ -37,7 +39,7 @@ Keine
 
 Ermöglicht die Definition der Felder, die eine Verknüpfung zwischen SQL-Tabellen herstellen.
 
-## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-5}
+## Verwendung und Verwendungskontext {#use-and-context-of-use-5}
 
 Ein Element `<join>` kann nur verwendet werden, wenn das übergeordnete Element `<element>` vom Typ &quot;Link&quot;ist. Das bedeutet, dass für das übergeordnete Element das Attribut &quot;@type=link&quot;deklariert sein muss.
 

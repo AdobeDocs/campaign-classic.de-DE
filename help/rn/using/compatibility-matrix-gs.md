@@ -2,18 +2,20 @@
 product: campaign
 title: Kompatibilitätsmatrix für Campaign [!DNL Gold Standard]
 description: Campaign Classic-Kompatibilitätsmatrix für die  [!DNL Gold Standard] -Version
-feature: Übersicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 5c0ccaf6-7f82-4e4b-9247-261dbd0f127c
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 100%
 
 ---
 
 # [!DNL Gold Standard]-Kompatibilitätsmatrix{#compatibility-matrix-gs}
+
+![](../../assets/v7-only.svg)
 
 In diesem Dokument sind alle Systeme und Komponenten aufgeführt, die für Builds der **Adobe Campaign Classic[!DNL Gold Standard]**-Version 19.1 unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit dieser Version von Adobe Campaign kompatibel.
 

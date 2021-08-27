@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7ff5da71-ef82-48a2-a608-06a4ca188bb9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 100%
 
 ---
 
 # Validierung{#approval}
+
+![](../../assets/common.svg)
 
 Eine **Validierung** wartet auf ein Signal oder die Entscheidung eines Benutzers. Validierungsaufgaben werden Benutzern zugewiesen, die per E-Mail, Webzugriff oder in der Clientkonsole darauf antworten.
 
@@ -63,7 +65,7 @@ Klicken Sie auf **[!UICONTROL Erweiterte Parameter...]**, um die für die Benutz
 
 Die Vorlage kann angepasst werden. Es wird jedoch empfohlen, sie zu duplizieren und unter einem neuen Namen zu speichern. Der Zielgruppenmechanismus (externe Datei, Zielgruppen-Mapping) darf hingegen nicht geändert werden. Er ist für die korrekte Funktionsweise der Benachrichtigungen erforderlich.
 
-Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](../../workflow/using/defining-approvals.md).
+Ein Validierungsbeispiel finden Sie im Abschnitt [Validierungen definieren](defining-approvals.md).
 
 ## Ausgabeparameter {#output-parameters}
 

@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 46c8ed46-0947-47fb-abda-6541b12b6f0c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 3%
 
 ---
 
-# Erste Schritte mit der Konfiguration des Campaign-Servers{#gs-campaign-server-config}
+# Erste Schritte mit der Campaign-Serverkonfiguration{#gs-campaign-server-config}
+
+![](../../assets/v7-only.svg)
 
 In diesem Kapitel werden serverseitige Konfigurationen beschrieben, die entsprechend Ihren Anforderungen und Ihren Umgebungsspezifikationen durchgeführt werden können.
 
@@ -205,7 +207,7 @@ Standardmäßig werden nicht alle HTTP-Header weitergeleitet. Sie können bestim
    <responseHeader name="Strict-Transport-Security" value="max-age=16070400; includeSubDomains"/>
    ```
 
-## Einschränken autorisierter externer Befehle {#restricting-authorized-external-commands}
+## Eingrenzen autorisierter externer Befehle {#restricting-authorized-external-commands}
 
 Ab Build 8780 können technische Administratoren die Liste zulässiger externer Befehle einschränken, die in Adobe Campaign verwendet werden können.
 

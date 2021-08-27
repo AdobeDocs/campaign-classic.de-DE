@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: a16103bf-0498-4f59-ad96-8bfdeea26577
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -15,13 +15,15 @@ ht-degree: 3%
 
 # Testadressen{#seed-addresses}
 
+![](../../assets/v7-only.svg)
+
 Wenn es sich bei der Empfängertabelle um eine benutzerdefinierte Tabelle handelt, sind zusätzliche Konfigurationen erforderlich. Das Schema **[!UICONTROL nms:seedMember]** muss erweitert werden. Den Testadressen wird ein zusätzlicher Tab zur Definition der entsprechenden Felder hinzugefügt, wie unten dargestellt:
 
 ![](assets/s_ncs_user_seedlist_new_tab.png)
 
 Weiterführende Informationen zur Verwendung von Testadressen finden Sie in [diesem Abschnitt](../../delivery/using/about-seed-addresses.md).
 
-## Umsetzung {#implementation}
+## Implementierung {#implementation}
 
 Das Schema **nms:seedMember** und das verknüpfte Formular, das vorkonfiguriert erscheint, sollen für die Kundenkonfiguration erweitert werden, um alle erforderlichen Felder zu referenzieren. Die Schemadefinition enthält Kommentare zum Konfigurationsmodus.
 

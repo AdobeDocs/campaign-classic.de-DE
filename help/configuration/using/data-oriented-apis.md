@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: a392c55e-541a-40b1-a910-4a6dc79abd2d
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1885'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Datenorientierte APIs{#data-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 Datenorientierte APIs ermöglichen es Ihnen, das gesamte Datenmodell anzusprechen.
 
@@ -142,7 +144,7 @@ Der gewünschte Vorgangstyp wird im Attribut **operation** eingegeben und enthä
 
 Die Syntax **XPath** wird verwendet, um Daten basierend auf dem Eingabeschema zu lokalisieren. Weitere Informationen zu XPaths finden Sie unter [Datenschemata](../../configuration/using/data-schemas.md).
 
-#### Beispiel mit dem &#39;get&#39;-Vorgang {#example-with-the--get--operation}
+#### Beispiel mit dem &quot;get&quot;-Vorgang {#example-with-the--get--operation}
 
 Ruft den Vor- und Nachnamen eines Empfängers ( Schema &quot;nms:recipient&quot;) mit einem Filter für die E-Mail ab.
 
@@ -204,7 +206,7 @@ Um die nächsten 100 Datensätze abzurufen, führen Sie dieselbe Abfrage erneut 
 ...
 ```
 
-#### Beispiel mit dem &#39;count&#39;-Vorgang {#example-with-the--count--operation}
+#### Beispiel mit dem Vorgang &quot;count&quot; {#example-with-the--count--operation}
 
 So zählen Sie die Anzahl an Datensätzen in einer Abfrage:
 
@@ -257,7 +259,7 @@ Die Abfrage kann vereinfacht werden, indem das Attribut **groupBy** direkt zum z
 >
 >Es ist nicht mehr erforderlich, das Element `<groupby>` zu füllen.
 
-#### Bracken in Bedingungen {#bracketing-in-conditions}
+#### Bremsung unter Bedingungen {#bracketing-in-conditions}
 
 Im Folgenden finden Sie zwei Beispiele für die Verwendung von Klammern für dieselbe Bedingung.
 
@@ -368,7 +370,7 @@ Diese Syntax vereinfacht die Abfrage, wenn mehr als zwei Daten in der Bedingung 
    </queryDef>
    ```
 
-#### Binden der Parameter der &#39;where&#39;- und &#39;select&#39;-Klausel {#binding-the-parameters-of-the--where--and--select--clause}
+#### Parameter der &#39;where&#39;- und &#39;select&#39;-Klausel binden {#binding-the-parameters-of-the--where--and--select--clause}
 
 Durch die Bindung von Parametern kann die Engine die Werte der in der Abfrage verwendeten Parameter festlegen. Dies ist sehr nützlich, da die Engine für die Maskierung von Werten verantwortlich ist und es den zusätzlichen Vorteil eines Caches gibt, damit die Parameter abgerufen werden können.
 
@@ -405,7 +407,7 @@ Um die Syntax einer Abfrage zu vereinfachen, können Sie die Abfrage mit dem gen
 
    ![](assets/s_ncs_integration_webservices_queyr3.png)
 
-### Format des Ausgabedokuments {#output-document-format}
+### Output Document Format {#output-document-format}
 
 Der Parameter return ist ein XML-Dokument im Format des Schemas, das der Abfrage zugeordnet ist.
 
@@ -502,7 +504,7 @@ Statt:
    </SOAP-ENV:Envelope>
    ```
 
-## Write / WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
+## Write/WriteCollection (xtk:session) {#write---writecollection--xtk-session-}
 
 Diese Dienste werden zum Einfügen, Aktualisieren oder Löschen einer Entität (&quot;Write&quot;-Methode) oder einer Sammlung von Entitäten (&quot;WriteCollection&quot;-Methode) verwendet.
 
@@ -567,7 +569,7 @@ Empfänger löschen:
 >
 >Bei einem Löschvorgang darf das Eingabedokument nur die Felder enthalten, aus denen der Abstimmschlüssel besteht.
 
-### Beispiel mit der Methode &#39;WriteCollection&#39; {#example-with-the--writecollection--method}
+### Beispiel mit der Methode &quot;WriteCollection&quot; {#example-with-the--writecollection--method}
 
 Aktualisieren oder einfügen für mehrere Empfänger:
 

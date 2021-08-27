@@ -6,14 +6,16 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2841'
 ht-degree: 1%
 
 ---
 
 # Allgemeine Konfigurationen{#general-configurations}
+
+![](../../assets/v7-only.svg)
 
 In diesem Abschnitt wird die Konfiguration beschrieben, die in Adobe Campaign v7 bei einer Migration von Version 5.11 oder v6.02 durchgeführt werden soll.
 
@@ -24,7 +26,7 @@ Achten Sie außerdem auf Folgendes:
 
 ## Zeitzonen {#time-zones}
 
-### Zeitzonenmodus für mehrere Zeitzonen {#multi-time-zone-mode}
+### Mehrzeitzonenmodus {#multi-time-zone-mode}
 
 In v6.02 war der Modus &quot;Zeitzone mit mehreren Zeitzonen&quot;nur für PostgreSQL-Datenbank-Engines verfügbar. Es wird nun unabhängig vom verwendeten Datenbankmodul angeboten. Wir empfehlen dringend, Ihre Basis in eine &quot;Zeitzone mit mehreren Zeitzonen&quot;umzuwandeln.
 
@@ -190,7 +192,7 @@ Beispiel:
 
 ## Syntax {#syntax}
 
-### Javascript {#javascript}
+### JavaScript {#javascript}
 
 Adobe Campaign v7 integriert einen neueren JavaScript-Interpreter. Diese Aktualisierung kann jedoch zu Fehlfunktionen bestimmter Skripte führen. Da die vorherige Engine eher permissiv war, funktionierten bestimmte Syntaxen, was bei der neuen Version der Engine nicht mehr der Fall ist.
 
@@ -667,7 +669,7 @@ Wenn Probleme auftreten, veröffentlichen Sie die Webanwendung erneut. Wenn das 
 >[!NOTE]
 Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
 
-## Red Hat {#red-hat}
+## Red-Hat {#red-hat}
 
 Wenn native Schemas in v6.02 oder v5.11 gelöscht wurden, können Sie Ihre Schemas nach dem Postupgrade möglicherweise nicht mehr bearbeiten. In diesem Fall führen Sie den Befehl aus:
 

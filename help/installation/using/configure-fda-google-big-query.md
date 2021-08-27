@@ -6,7 +6,7 @@ description: Erfahren Sie, wie Sie den Zugriff auf Google BigQuery in FDA konfig
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 911302475b5ece96d527575148ee611fdb839753
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 7%
@@ -15,6 +15,8 @@ ht-degree: 7%
 
 
 # Zugriff auf Google BigQuery konfigurieren {#configure-fda-google-big-query}
+
+![](../../assets/v7-only.svg)
 
 Verwenden Sie die Option Adobe Campaign Classic **Federated Data Access** (FDA), um in einer externen Datenbank gespeicherte Informationen zu verarbeiten. Gehen Sie wie folgt vor, um den Zugriff auf [!DNL Google BigQuery] zu konfigurieren.
 
@@ -30,7 +32,7 @@ Verwenden Sie die Option Adobe Campaign Classic **Federated Data Access** (FDA),
 
 ## Google BigQuery unter Windows {#google-windows}
 
-### Treiber unter Windows {#driver-window}
+### Treiber unter Windows eingerichtet {#driver-window}
 
 1. Laden Sie den [ODBC-Treiber für Windows](https://cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers) herunter.
 
@@ -82,7 +84,7 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
 
 ## Google BigQuery unter Linux {#google-linux}
 
-### Treiber für Linux {#driver-linux}
+### Treiber für Linux eingerichtet {#driver-linux}
 
 1. Vor der Installation des ODBC-Treibers müssen Sie Ihr System aktualisieren. Führen Sie unter Linux oder CentOS den folgenden Befehl aus:
 
@@ -204,7 +206,7 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
 
 1. In Adobe Campaign Classic können Sie dann Ihr externes [!DNL Google BigQuery]-Konto konfigurieren. Weiterführende Informationen zur Konfiguration Ihres externen Kontos finden Sie in [diesem Abschnitt](#google-external).
 
-### Massenladevorgang unter Linux {#bulk-load-linux}
+### Massenladeeinrichtung unter Linux {#bulk-load-linux}
 
 >[!NOTE]
 >

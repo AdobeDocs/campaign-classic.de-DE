@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Versandeinstellungen konfigurieren {#delivery-settings}
+
+![](../../assets/v7-only.svg)
 
 Die Versandparameter müssen im Ordner **serverConf.xml** konfiguriert werden.
 
@@ -45,7 +47,7 @@ In diesem Fall werden diese Parameter durch Konfiguration des SMTP-Servers im Ab
 >
 >Dieser Betriebsmodus beinhaltet schwerwiegende Einschränkungen bei Sendungen, da er den Durchsatz aufgrund der inhärenten Leistung des Relais-Servers (Latenz, Bandwith..) stark reduzieren kann. Darüber hinaus wird die Fähigkeit zur Qualifizierung von Fehlern bei synchronen Sendungen (erkannt durch Analyse des SMTP-Traffics) begrenzt, und der Versand ist nicht möglich, wenn der Server nicht verfügbar ist.
 
-## MTA-Kindprozesse {#mta-child-processes}
+## Untergeordnete MTA-Prozesse {#mta-child-processes}
 
 Es ist möglich, die Anzahl der untergeordneten Prozesse (standardmäßig maxSpareServers 2) zu steuern, um die Übertragungsleistung entsprechend der CPU-Leistung der Server und den verfügbaren Netzwerkressourcen zu optimieren. Diese Konfiguration wird im Abschnitt **`<master>`** der MTA-Konfiguration auf jedem einzelnen Computer vorgenommen.
 
@@ -55,7 +57,7 @@ Es ist möglich, die Anzahl der untergeordneten Prozesse (standardmäßig maxSpa
 
 Weitere Informationen finden Sie unter [Optimierung des E-Mail-Versands](../../installation/using/email-deliverability.md#email-sending-optimization).
 
-## Ausgehenden SMTP-Traffic mit Präferenzen verwalten {#managing-outbound-smtp-traffic-with-affinities}
+## Ausgehenden SMTP-Traffic mit Affinitäten verwalten {#managing-outbound-smtp-traffic-with-affinities}
 
 >[!IMPORTANT]
 >
@@ -94,7 +96,7 @@ Gehen Sie hierzu wie folgt vor:
    >
    >Weitere Informationen finden Sie unter [Konfiguration des Versandservers](../../installation/using/email-deliverability.md#delivery-server-configuration).
 
-**Verwandte Themen**
+**Verwandte Themen** 
 * [Technische E-Mail-Konfigurationen](email-deliverability.md)
 * [MX-Server mit Campaign verwenden](using-mx-servers.md)
 * [E-Mail-BCC konfigurieren](email-archiving.md)

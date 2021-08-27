@@ -6,8 +6,8 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 23a384d1-27ce-46c2-98c3-0fb60a5c50ee
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 100%
 
@@ -15,6 +15,8 @@ ht-degree: 100%
 
 
 # Instanzen konfigurieren {#creating-a-shared-connection}
+
+![](../../assets/v7-only.svg)
 
 Zur Nutzung der Transaktionsnachrichten-Funktionen müssen Sie die Kontroll- und Ausführungsinstanzen konfigurieren. Sie können dazu Folgendes verwenden:
 * [Eine Kontrollinstanz](#control-instance), die mit einer oder mehreren Ausführungsinstanzen verknüpft ist
@@ -117,7 +119,7 @@ Die Kennung kann auch **automatisch** zugeordnet werden. Rufen Sie dazu die **Ko
 
 ![](assets/messagecenter_create_extaccount_006bis.png)
 
-## Ausführungsinstanzen konfigurieren {#execution-instance}
+## Ausführungsinstanzen konfigurieren  {#execution-instance}
 
 >[!NOTE]
 >

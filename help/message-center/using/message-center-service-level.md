@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: reports
 exl-id: b8dc9891-84c8-445d-ad6a-d06048c8faaf
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 100%
 
 ---
 
-# Dienstqualität {#message-center-service-level}
+# Message Center-Dienstqualität {#message-center-service-level}
+
+![](../../assets/v7-only.svg)
 
 Dieser Bericht enthält die Versandstatistiken zu Transaktionsnachrichten sowie die Fehleraufschlüsselung. Sie können auf einen Fehlertyp klicken, um dessen Details anzuzeigen.
 

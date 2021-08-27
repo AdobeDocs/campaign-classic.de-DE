@@ -6,14 +6,16 @@ audience: message-center
 content-type: reference
 topic-tags: instance-configuration
 exl-id: 4d25d740-db57-4d18-8cae-2dd49c4a786e
-source-git-commit: e86350cf12db37e3f2c227563057b97922601729
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 100%
 
 ---
 
 # Ergänzende Konfigurationen {#mc-additional-configurations}
+
+![](../../assets/v7-only.svg)
 
 ## Schwellenwerte überwachen {#monitoring-thresholds}
 
@@ -101,7 +103,7 @@ In diesem Abschnitt wird eine Lösung beschrieben, mit der Tracking- und Mirrors
 
 Für Multibranding müssen Sie sowohl die Ausführungsinstanzen als auch die Kontrollinstanzen konfigurieren.
 
-### Ausführungsinstanz konfigurieren {#execution-instance}
+### Ausführungsinstanz {#execution-instance}
 
 Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
 
@@ -152,7 +154,7 @@ Gehen Sie auf den Ausführungsinstanzen wie folgt vor:
    >
    >Diese Änderungen könnten beim Upgrade Konflikte verursachen. Möglicherweise müssen Sie diese Formeln manuell in ihre neue Version einbinden.
 
-### Kontrollinstanz konfigurieren {#control-instance}
+### Kontrollinstanz {#control-instance}
 
 Auf der Kontrollinstanz müssen Sie Versandvorlagen und externe Konten miteinander verknüpfen.
 

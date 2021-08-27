@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 7a38653b-c15d-4ed8-85dc-f7214409f42b
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 100%
 
 ---
 
 # Verzweigung{#fork}
+
+![](../../assets/common.svg)
 
 Mit der **[!UICONTROL Verzweigungsaktivität]** können Sie mehrfache ausgehende Transitionen erstellen, um mehrere Aktivitäten unabhängig voneinander im selben Workflow durchzuführen.
 
@@ -32,4 +34,4 @@ Um die Aktivität **[!UICONTROL Verzweigung]** zu konfigurieren, öffnen Sie sie
 
 ![](assets/s_user_segmentation_fork.png)
 
-Anschließend können Sie die einzelnen ausgehenden Transitionen konfigurieren und dann gegebenenfalls mithilfe der Aktivität [Und-Verknüpfung](../../workflow/using/and-join.md) verknüpfen. Auf diese Weise wird der Rest des Workflows erst ausgeführt, nachdem die ausgehenden Transitionen der **[!UICONTROL Verzweigungsaktivität]** abgeschlossen sind.
+Anschließend können Sie die einzelnen ausgehenden Transitionen konfigurieren und dann gegebenenfalls mithilfe der Aktivität [Und-Verknüpfung](and-join.md) verknüpfen. Auf diese Weise wird der Rest des Workflows erst ausgeführt, nachdem die ausgehenden Transitionen der **[!UICONTROL Verzweigungsaktivität]** abgeschlossen sind.

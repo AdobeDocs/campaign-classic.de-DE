@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: e6638870-3141-4f12-b904-db436127c0d1
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Geschäftsorientierte APIs{#business-oriented-apis}
+
+![](../../assets/v7-only.svg)
 
 Die Business-API ist für jeden Objekttyp spezifisch. Sie wirken sich auf Folgendes aus:
 
@@ -67,7 +69,7 @@ Die Definition des Abstimmschlüssels muss über das Attribut _**key** im Elemen
 
 Dieser Aufruf gibt außer Fehlern keine Daten zurück.
 
-### Beispiele      {#examples}
+### Beispiele {#examples}
 
 Anmeldung mit Empfänger-Abstimmschlüssel auf der E-Mail-Adresse: Das XML-Eingabedokument muss auf die E-Mail-Adresse und die Definition des Schlüssels in diesem Feld verweisen.
 
@@ -203,7 +205,7 @@ Das XML-Eingabedokument ist ein Versandvorlagenfragment, das der Struktur des Sc
 
 Dieser Aufruf gibt außer Fehlern keine Daten zurück.
 
-### Beispiel für ein XML-Dokument {#xml-document-example}
+### Beispiel für XML-Dokument {#xml-document-example}
 
 Dieses Beispiel basiert auf einer benutzerdefinierten Versandvorlage aus einer externen Datenquelle (in diesem Fall eine Datei). Die Konfiguration wird in der Versandvorlage ausführlich beschrieben, sodass beim Aufrufen nur der Inhalt der Datei aus dem Element `<externalsource>` gesendet werden muss.
 

@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Beispiele für Schemabearbeitung{#examples-of-schemas-edition}
 
-## Erweitern einer Tabelle {#extending-a-table}
+![](../../assets/v7-only.svg)
+
+## Tabellen erweitern {#extending-a-table}
 
 Gehen Sie wie folgt vor, um die Schema-Empfängertabelle **nms:recipient** zu erweitern:
 
@@ -297,7 +299,7 @@ CREATE UNIQUE INDEX CusRcpGrpRel_id ON CusRcpGrpRel(iRcpGroupId, iRecipientId);
 CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 ```
 
-## Anwendungsbeispiel: Verknüpfen eines Felds mit einer vorhandenen Referenztabelle {#uc-link}
+## Anwendungsbeispiel: ein Feld mit einer vorhandenen Referenztabelle verknüpfen {#uc-link}
 
 Dieser Anwendungsfall zeigt, wie Sie eine vorhandene Referenztabelle als Alternative zu den integrierten Adobe Campaign-Auflistungsmechanismen (enum, userEnum oder dbEnum) verwenden können.
 

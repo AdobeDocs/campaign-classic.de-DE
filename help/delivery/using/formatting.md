@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: content-management
 exl-id: d9688dc4-20c6-4a9a-990f-465f39b2faa2
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 100%
 
 ---
 
 # Formatierung{#formatting}
+
+![](../../assets/common.svg)
 
 ## JavaScript-Templates {#javascript-templates}
 
@@ -67,7 +69,7 @@ Attribute und Elemente des Inhalts werden wie JavaScript-Objekte dargestellt und
 **Beispiel**:
 
 * **content.@name**: gibt den Wert des Attributs „name“ des Hauptelements aus.
-* **content.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
+* **Inhalt.@`['name']`**: identisch mit dem **Inhalt.@name**-Syntax
 * **content.chapter.length**: gibt die Anzahl an Elementen des Kollektionselements `<chapter` aus
 * **content.chapter`[0]`.@name**: gibt den Namen des ersten Elements von `<chapter>` aus
 * **chapter.name()**: gibt den Namen des Elements `<chapter>` aus

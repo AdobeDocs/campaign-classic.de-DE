@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 8dad8fa9-674c-433c-af30-8c6d0aadf525
-source-git-commit: 883ac681e0bf0e4ccf916c745924b7340a4d22f9
-workflow-type: ht
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
 # Über die Adobe ID{#about-adobe-id}
+
+![](../../assets/common.svg)
 
 Adobe Identity Management System (IMS) hilft Administratoren beim Erstellen und Verwalten des Benutzerzugriffs auf Anwendungen und Dienste. Weiterführende Informationen zu den verschiedenen Arten von Adobe-Kennungen finden Sie auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/identity.html).
 
@@ -30,14 +32,14 @@ Campaign-Benutzer können über ihre Adobe ID eine Verbindung zur Adobe Campaig
 >Wenn Sie sich über den Adobe Identity Service (IMS) mit Campaign verbinden, müssen Sie eine Aktualisierung auf den aktuellen Build durchführen, um sich nach dem **30. Juni 2021** mit Campaign verbinden zu können. Dieses Upgrade ist sowohl für den Campaign-Server als auch für die Client-Konsole zwingend erforderlich. Abhängig von Ihrer aktuellen Version müssen Sie auf eine der folgenden Versionen aktualisieren:
 >
 > * [Campaign [!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md)
-* [Campaign-Version 21.1.3](../../rn/using/latest-release.md)
-* [Campaign-Version 20.2.5](../../rn/using/release--20-2.md)
-* [Campaign-Version 20.1.4](../../rn/using/release--20-1.md)
-* [Campaign-Version 19.2.4](../../rn/using/release--19-2.md)
-* [Campaign-Version 19.1.8](../../rn/using/release--19-1.md)
+> * [Campaign-Version 21.1.3](../../rn/using/latest-release.md)
+> * [Campaign-Version 20.2.5](../../rn/using/release--20-2.md)
+> * [Campaign-Version 20.1.4](../../rn/using/release--20-1.md)
+> * [Campaign-Version 19.2.4](../../rn/using/release--19-2.md)
+> * [Campaign-Version 19.1.8](../../rn/using/release--19-1.md)
 
-[!DNL :bulb:] [Weitere Informationen zu IMS-Updates](../../technotes/ims-updates.md)
-
+>
+> [!DNL :bulb:] [Weitere Informationen zu IMS-Updates](../../technotes/using/ims-updates.md)
 
 ## Mehr Ressourcen
 

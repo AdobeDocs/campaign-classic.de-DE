@@ -2,26 +2,31 @@
 product: campaign
 title: Über Adobe Campaign Classic
 description: Erfahren sie mehr über wichtige Funktionen, die Benutzeroberfläche und globale Richtlinien.
-feature: Übersicht
+feature: Overview
 role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
-source-git-commit: 6c28e6cd78ce7a8ee5c0dc7e671de780787b9f57
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 100%
+source-wordcount: '923'
+ht-degree: 95%
 
 ---
 
 # Erste Schritte mit Campaign Classic{#about-adobe-campaign-classic}
 
+![](../../assets/v7-only.svg)
+
 Mit dem Ziel einer verbesserten Kundenbindung und herausragender Kundenerfahrungen müssen Marken an allen Kontaktpunkten (Touchpoints) eine einheitliche Customer Journey anbieten. Vermarkter können jetzt kanalübergreifende Marketingkampagnen effizient entwerfen, planen, ausführen, verwalten und optimieren, die eine hohe Rendite für Marketinginvestitionen erzielen und die Kundentreue fördern.
 
 Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dialogmarketing-Kampagnen zu steuern. Adobe Campaign bietet innovative Tools, um Marketingprozesse und kundenbezogene Kommunikation zu entwickeln, zu optimieren und zu automatisieren.
 
->[!NOTE]
+>[!AVAILABILITY]
 >
->Adobe Campaign Classic ist in v6.11 und v7 verfügbar. Sofern nicht anders angegeben, gelten die Hilfematerialien für beide Versionen in der jeweils [aktuellen Build-Nummer](../../rn/using/latest-release.md). Screenshots beziehen sich auf die Benutzeroberfläche von Campaign Classic v7.
+>* Hilfematerialien in dieser Sammlung gelten für Campaign Classic v7 in seinem [aktuellen Build](../../rn/using/latest-release.md). Ein spezifisches Zeichen ist verfügbar, wenn ein Abschnitt auch für Campaign v8 gilt.
+>
+>* Die Dokumentation zu Adobe Campaign v8 ist [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html) verfügbar.
+
 
 ![](assets/do-not-localize/how-to-video.png) [Wichtigste Funktionen und Leistungsmerkmale im Video](#video)
 
@@ -79,8 +84,8 @@ Die folgenden Funktionen sind verfügbar. Die Nutzbarkeit dieser Funktionen hän
 * [Webanwendungen](../../web/using/about-web-applications.md): Erstellen von Webseiten und Formularen
 * [Survey Manager](../../surveys/using/about-surveys.md): Erstellung von Online-Umfragen
 * [Inhaltsverwaltung (Content Manager)](../../delivery/using/about-content-management.md): Verwaltung von E-Mail-Inhalten
-* [Dezentrales Marketing](../../campaign/using/about-distributed-marketing.md): Koordination von Kampagnen für zentrale/lokale Agenturen
-* [Response Manager](../../campaign/using/about-response-manager.md): Reaktionsverwaltung
+* [Dezentrales Marketing](../../distributed/using/about-distributed-marketing.md): Koordination von Kampagnen für zentrale/lokale Agenturen
+* [Response Manager](../../response/using/about-response-manager.md): Reaktionsverwaltung
 * [Connectoren](../../platform/using/about-connectors.md): Kommunikation mit externen Anwendungen und Datenbank-Engines
 * [Webdienste](../../configuration/using/about-web-services.md): Verwendung von Campaign über APIs/Webdienst
 * [Reporting](../../reporting/using/about-adobe-campaign-reporting-tools.md): Zugriff auf integrierte Berichte, Datenanalyse und Erstellung eigener Berichte

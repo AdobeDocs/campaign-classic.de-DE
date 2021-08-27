@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: troubleshooting
 exl-id: 91662d6d-2177-4440-b31f-7b031bd953cb
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -14,6 +14,8 @@ ht-degree: 11%
 ---
 
 # Stack Trace in Linux{#stack-trace-in-linux}
+
+![](../../assets/v7-only.svg)
 
 Ein **Stacktrace** steht für eine Spur, die in einer Datei vom Typ **core** enthalten ist. Diese Datei wird im Falle eines Maschinenfehlers generiert. Sie kann die Herkunft des Fehlers identifizieren.
 
@@ -23,7 +25,6 @@ Ein **Stacktrace** steht für eine Spur, die in einer Datei vom Typ **core** ent
 >* **gdb - Der GNU** Debugger muss auf dem Computer installiert sein.
 
 >
-
 
 
 Der technische Support von Adobe Campaign kann Sie nach diesem **Stacktrace** fragen. Geben Sie die folgenden Befehle in Linux ein, um sie abzurufen:

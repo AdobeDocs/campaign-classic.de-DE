@@ -5,14 +5,16 @@ description: Erfahren Sie, wie Sie Adobe Experience Platform-Audiences in Campai
 audience: integrations
 content-type: reference
 exl-id: 6db8a653-b649-402c-8814-24826edadba7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
 
 ---
 
 # Adobe Experience Platform-Segmente in Campaign aufnehmen {#destinations}
+
+![](../../assets/common.svg)
 
 Um Adobe Experience Platform-Segmente in Campaign aufzunehmen und sie in Ihren Workflows zu verwenden, müssen Sie zunächst Adobe Campaign als ein Adobe Experience Platform-**Ziel** verbinden und mit dem zu exportierenden Segment konfigurieren.
 

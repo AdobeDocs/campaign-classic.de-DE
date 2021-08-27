@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 009bed25-cd35-437c-b789-5b58a6d2d7c6
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 ---
 
 # Filterschemata{#filtering-schemas}
+
+![](../../assets/v7-only.svg)
 
 ## Systemfilter {#system-filters}
 
@@ -61,7 +63,7 @@ Diese Filter werden auf der Hauptseite **element** der Schemas eingegeben und k�
 >
 >Wenn kein Filter angegeben ist, verfügen alle Benutzer über Lese- und Schreibberechtigungen für das Schema.
 
-## Integrierte Protect-Schemata {#protecting-built-in-schemas}
+## Integrierte Schemata in Protect {#protecting-built-in-schemas}
 
 Standardmäßig sind integrierte Schemata nur mit WRITE-Berechtigungen für Benutzer mit ADMINISTRATION-Rechten zugänglich:
 

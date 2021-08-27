@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: 72fbdd1d-a105-4e9f-9e17-2e9d62d2bb80
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 100%
 
 ---
 
 # Versand{#delivery}
+
+![](../../assets/common.svg)
 
 Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start eines Versands verwendet. Dabei können Elemente aus eingehenden Transitionen verwendet werden.
 
@@ -81,7 +83,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
    * **[!UICONTROL Testversand]**: Ein Testversand wird ausgelöst. Diese Aktion entspricht einem Klick auf die Schaltfläche **[!UICONTROL Testversand]** in der Symbolleiste eines klassischen Versands mit dem **Delivery**-Modul.
    * **[!UICONTROL Vorbereiten und starten]**: Der Versand wird vollständig analysiert (Zielgruppenberechnung und Inhaltsvorbereitung) und abgeschickt. Diese Aktion entspricht den Optionen **[!UICONTROL Sendungen schnellstmöglich abschicken]**, **[!UICONTROL Analysieren]** und **[!UICONTROL Absendung bestätigen]** in einem klassischen Versand an eine Hauptzielgruppe mit dem **Delivery**-Modul.
 
-   Eine im weiteren Verlauf des Workflows platzierte Aktivität des Typs **[!UICONTROL Versand bearbeiten]** erlaubt die Ausführung der für den Versandstart noch fehlenden Etappen (Zielgruppenberechnung, Inhaltsvorbereitung, Versand). Weitere Informationen hierzu finden Sie unter [Versand bearbeiten](../../workflow/using/delivery-control.md).
+   Eine im weiteren Verlauf des Workflows platzierte Aktivität des Typs **[!UICONTROL Versand bearbeiten]** erlaubt die Ausführung der für den Versandstart noch fehlenden Etappen (Zielgruppenberechnung, Inhaltsvorbereitung, Versand). Weitere Informationen hierzu finden Sie unter [Versand bearbeiten](delivery-control.md).
 
    Darüber hinaus stehen folgende Optionen für die Aktivität zur Verfügung:
 
@@ -95,7 +97,7 @@ Die Aktivität **Versand** wird je nach Kontext zur Konfiguration oder zum Start
 
    * **[!UICONTROL Fehler verarbeiten]**
 
-      Siehe [Versand bearbeiten](../../workflow/using/delivery-control.md).
+      Siehe [Versand bearbeiten](delivery-control.md).
    Im Tab **Script** können die Versandparameter angepasst werden.
 
    ![](assets/edit_diffusion_fil_script.png)
@@ -125,11 +127,11 @@ Klicken Sie auf **[!UICONTROL OK]**, um die Eingaben zu speichern. Sie haben ein
    Do you wish to approve delivery (<%= vars.recCount %> recipient(s))?
    ```
 
-   Es handelt sich hierbei um eine Nachricht mit einem JavaScript-Ausdruck: **[!UICONTROL vars.recCount]** bezeichnet die Anzahl an Empfängern, die in der vorangehenden Aktivität in die Zielgruppe des Versands aufgenommen wurden. Weitere Informationen zu JavaScript-Ausdrücken finden Sie unter [Scripts/JavaScript-Templates](../../workflow/using/javascript-scripts-and-templates.md).
+   Es handelt sich hierbei um eine Nachricht mit einem JavaScript-Ausdruck: **[!UICONTROL vars.recCount]** bezeichnet die Anzahl an Empfängern, die in der vorangehenden Aktivität in die Zielgruppe des Versands aufgenommen wurden. Weitere Informationen zu JavaScript-Ausdrücken finden Sie unter [Scripts/JavaScript-Templates](javascript-scripts-and-templates.md).
 
    ![](assets/new-workflow-param-validation.png)
 
-   Weiterführende Informationen zur Validierungsaufgabe finden Sie unter [Validierung](../../workflow/using/approval.md).
+   Weiterführende Informationen zur Validierungsaufgabe finden Sie unter [Validierung](approval.md).
 
 ## Eingabeparameter {#input-parameters}
 

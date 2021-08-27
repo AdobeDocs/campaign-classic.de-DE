@@ -6,14 +6,16 @@ audience: campaign
 content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: d272d4b9-f1b2-4fb2-9ed9-91a4aea7eca3
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 100%
 
 ---
 
 # Erstellen und Konfigurieren von Kampagnenvorlagen {#campaign-templates}
+
+![](../../assets/common.svg)
 
 Alle Marketing-Kampagnen basieren auf einer Vorlage, in der die Hauptmerkmale und -funktionen gespeichert sind. Kampagnenvorlagen werden im Knoten **[!UICONTROL Ressourcen > Vorlagen > Kampagnenvorlagen]** gespeichert. Hierbei handelt es sich um Standardvorlagen. Sie ermöglichen die Erstellung einer neuen Kampagne unter Verwendung aller verfügbarer Module (Dokumente, Aufgaben, Testadressen usw.). Die vorgeschlagenen Module hängen von Ihren Berechtigungen und der Konfiguration Ihrer Adobe Campaign-Plattform ab.
 

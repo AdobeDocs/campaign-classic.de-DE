@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: -general-operation
 exl-id: 8ba20ccd-b03f-4c4f-87c1-a21e80d8e4be
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1679'
 ht-degree: 100%
 
 ---
 
 # Workflow erstellen {#building-a-workflow}
+
+![](../../assets/common.svg)
 
 In diesem Abschnitt werden die wichtigsten Grundsätze und Best Practices für den Aufbau eines Workflows in Campaign erläutert.
 
@@ -55,10 +57,10 @@ In diesem Schritt werden die Aktivitäten im Diagramm positioniert, konfiguriert
 
 In den einzelnen Tabs der Palette werden die Aktivitäten nach Kategorie geordnet angezeigt. Die verfügbaren Tabs und Aktivitäten sind je nach Workflow-Typ unterschiedlich (technischer, Zielgruppen- oder Kampagnen-Workflow).
 
-* Der erste Tab enthält Zielgruppen- und Datenmanipulationsaktivitäten. Diese Aktivitäten werden unter [Zielgruppenbestimmungsaktivitäten](../../workflow/using/about-targeting-activities.md) beschrieben.
-* Der zweite Tab enthält die Planungsaktivitäten, die in erster Linie der Koordination der anderen Aktivitäten dienen. Diese Aktivitäten werden unter [Steuerungsaktivitäten](../../workflow/using/about-flow-control-activities.md) beschrieben.
-* Der dritte Tab enthält Tools und Aktionen, die im Workflow verwendet werden können. Diese Aktivitäten werden unter [Aktionsaktivitäten](../../workflow/using/about-action-activities.md) beschrieben.
-* Der vierte Tab enthält die Aktivitäten, die von einem bestimmten Ereignis abhängen, beispielsweise vom Erhalt einer E-Mail oder dem Empfang einer Datei auf dem Server. Diese Aktivitäten werden unter [Ereignisaktivitäten](../../workflow/using/about-event-activities.md) beschrieben.
+* Der erste Tab enthält Zielgruppen- und Datenmanipulationsaktivitäten. Diese Aktivitäten werden unter [Zielgruppenbestimmungsaktivitäten](about-targeting-activities.md) beschrieben.
+* Der zweite Tab enthält die Planungsaktivitäten, die in erster Linie der Koordination der anderen Aktivitäten dienen. Diese Aktivitäten werden unter [Steuerungsaktivitäten](about-flow-control-activities.md) beschrieben.
+* Der dritte Tab enthält Tools und Aktionen, die im Workflow verwendet werden können. Diese Aktivitäten werden unter [Aktionsaktivitäten](about-action-activities.md) beschrieben.
+* Der vierte Tab enthält die Aktivitäten, die von einem bestimmten Ereignis abhängen, beispielsweise vom Erhalt einer E-Mail oder dem Empfang einer Datei auf dem Server. Diese Aktivitäten werden unter [Ereignisaktivitäten](about-event-activities.md) beschrieben.
 
 So erstellen Sie das Diagramm
 
@@ -104,7 +106,7 @@ Die Darstellung und das Layout des Diagramms kann mithilfe der folgenden Element
 
 * **Hintergrundbild und Symbole**
 
-   Das Hintergrundbild des Diagramms und die Symbole der einzelnen Aktivitäten können personalisiert werden. Siehe [Bilder für Aktivitäten verwalten](../../workflow/using/managing-activity-images.md).
+   Das Hintergrundbild des Diagramms und die Symbole der einzelnen Aktivitäten können personalisiert werden. Siehe [Bilder für Aktivitäten verwalten](managing-activity-images.md).
 
 ## Aktivitäten konfigurieren {#configuring-activities}
 
@@ -112,7 +114,7 @@ Doppelklicken Sie auf eine Aktivität, um sie zu konfigurieren oder klicken Sie 
 
 >[!NOTE]
 >
->Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](../../workflow/using/about-activities.md) erläutert.
+>Aktivitäten des Kampagnen-Workflows werden in [diesem Abschnitt](about-activities.md) erläutert.
 
 Der erste Tab enthält allgemeine Parameter, während Sie im Tab **[!UICONTROL Erweitert]** den Umgang mit Fehlern und die Ausführungsdauer der Aktivität bestimmen oder ein Initialisierungsscript erfassen können.
 
@@ -124,13 +126,13 @@ Für eine optimale Lesbarkeit des Workflows und zum besseren Verständnis seiner
 
 Zielgruppen-Workflows erlauben die Bestimmung von einer oder mehreren Versandzielgruppen. Dies geschieht mithilfe von Abfragen, Vereinigungen oder Ausschlüssen nach bestimmten Kriterien. Das Ergebnis der Zielgruppenbestimmung kann dann beispielsweise in eine Liste übertragen werden, um diese als Grundlage für Versandaktionen zu verwenden.
 
-Adobe Campaign bietet in den Workflows darüber hinaus Data Management-Optionen, die erweiterte Funktionen für komplexe Zielgruppenbestimmungen enthalten. Weitere Informationen hierzu finden Sie unter [Data Management](../../workflow/using/targeting-data.md#data-management).
+Adobe Campaign bietet in den Workflows darüber hinaus Data Management-Optionen, die erweiterte Funktionen für komplexe Zielgruppenbestimmungen enthalten. Weitere Informationen hierzu finden Sie unter [Data Management](targeting-data.md#data-management).
 
 Alle diese Aktivitäten sind im ersten Tab der Workflow-Palette enthalten.
 
 >[!NOTE]
 >
->Zielgruppenaktivitäten werden in diesem [Abschnitt](../../workflow/using/about-activities.md) beschrieben.
+>Zielgruppenaktivitäten werden in diesem [Abschnitt](about-activities.md) beschrieben.
 
 Der Zugriff auf Zielgruppen-Workflows erfolgt im Navigationsbaum über den Knoten **[!UICONTROL Profile und Zielgruppen > Vorgänge > Zielgruppen-Workflows]** oder auf der Startseite über die Rubrik **[!UICONTROL Profile und Zielgruppen]**.
 
@@ -142,11 +144,11 @@ Im Gegensatz dazu werden die im Rahmen einer Kampagne erstellten Zielgruppen-Wor
 
 In den folgenden Abschnitten finden Sie Details zum Erstellen eines Zielgruppen-Workflows:
 
-1. **Identifizieren** von Daten in der Datenbank, siehe [Abfragen erstellen](../../workflow/using/targeting-data.md#creating-queries)
-1. **Vorbereiten** von Daten auf die Versandanforderungen, siehe [Daten anreichern und ändern](../../workflow/using/targeting-data.md#enriching-and-modifying-data)
-1. **Verwenden** von Daten für Aktualisierungen oder in einem Versand, siehe [Datenbankstruktur aktualisieren](../../workflow/using/how-to-use-workflow-data.md#updating-the-database)
+1. **Identifizieren** von Daten in der Datenbank, siehe [Abfragen erstellen](targeting-data.md#creating-queries)
+1. **Vorbereiten** von Daten auf die Versandanforderungen, siehe [Daten anreichern und ändern](targeting-data.md#enriching-and-modifying-data)
+1. **Verwenden** von Daten für Aktualisierungen oder in einem Versand, siehe [Datenbankstruktur aktualisieren](how-to-use-workflow-data.md#updating-the-database)
 
-Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](../../workflow/using/data-life-cycle.md#target-data)
+Die Ergebnisse der Anreicherungen werden gespeichert und können über Personalisierungsfelder beispielsweise zur Gestaltung individueller Nachrichten verwendet werden. Weitere Informationen hierzu finden Sie unter [Zielgruppendaten](data-life-cycle.md#target-data)
 
 ### Zielgruppen- und Filterdimensionen {#targeting-and-filtering-dimensions}
 
@@ -194,7 +196,7 @@ Der Unterordner **[!UICONTROL Kampagnenprozesse]** enthält die für die Ausfüh
 
 >[!NOTE]
 >
->Die mit den verschiedenen Modulen gelieferten technischen Workflows werden in einem [gesonderten Kapitel](../../workflow/using/about-technical-workflows.md) beschrieben.
+>Die mit den verschiedenen Modulen gelieferten technischen Workflows werden in einem [gesonderten Kapitel](about-technical-workflows.md) beschrieben.
 
 Sie haben die Möglichkeit, im Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** weitere technische Workflows zu erstellen. Dies sollte jedoch erfahrenen Benutzern vorbehalten bleiben.
 

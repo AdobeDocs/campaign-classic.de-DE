@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 79d5c901-905b-4a0e-adb9-91fd6acb186f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 100%
 
 ---
 
 # Elemente anordnen{#element-layout}
+
+![](../../assets/common.svg)
 
 Ergänzend zu den verfügbaren Grafikparametern (beschrieben im Abschnitt [Grafiktypen und ihre Parameter](../../reporting/using/creating-a-chart.md#chart-types-and-variants)) haben Sie die Möglichkeit, die Anzeige zu verändern und den Seiten des Berichts Elemente hinzuzufügen.
 

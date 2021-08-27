@@ -5,14 +5,16 @@ audience: delivery
 content-type: reference
 topic-tags: deliveries-best-practices
 exl-id: 50d326b0-3c23-4dbf-9df6-d32b48e30f69
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 100%
 
 ---
 
 # Durchführen aller Prüfungen vor dem Senden {#perform-all-checks}
+
+![](../../assets/common.svg)
 
 Wenn Ihre Nachricht fertig ist, prüfen Sie, ob ihr Inhalt auf allen Geräten richtig dargestellt wird, und stellen Sie sicher, dass sie keine Fehler wie falsche Personalisierung oder defekte Links enthält.
 
@@ -36,7 +38,7 @@ Mit Inbox Rendering können Sie sich eine Vorschau Ihrer Nachrichten in den gän
 
 * Fähigkeiten zum Inbox Rendering sind entscheidend, um festzustellen, ob Ihre E-Mail-Kampagnen erfolgreich durch die Filter der großen ISPs (Internet Service Providers) und Webmail-Dienste befördert werden. Diese Tools senden vorab eine Kopie einer E-Mail an ein Netzwerk von Test-Posteingängen, damit Sie sehen, wie eine Nachricht in diesen Diensten dargestellt wird. Manche dieser Tools bieten auch Berichte und Code-Korrektur-Möglichkeiten, mit denen Sie Fehler rasch erkennen und beheben und so die Zustellbarkeit verbessern können.
 
-Weiterführende Informationen finden Sie [in diesem Abschnitt](inbox-rendering.md).
+Weitere Informationen finden Sie in [diesem Abschnitt](inbox-rendering.md).
 
 ## Nachrichten in Testsendungen {#proof-messages}
 
@@ -90,7 +92,7 @@ Sie haben folgende Möglichkeiten:
 
 * Geben Sie für jedes IPAffinity-Element an, welche IP-Adressen verwendet werden können. [Weitere Informationen](../../installation/using/email-deliverability.md#list-of-ip-addresses-to-use)
 
-* Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Weitere Informationen](../../campaign/using/applying-rules.md#control-outgoing-smtp-traffic).
+* Verbinden Sie in der von Ihnen ausgewählten [Typologie](../../campaign-opt/using/about-campaign-typologies.md) im Feld **[!UICONTROL Verwaltung der IP-Adressen-Affinitäten]** die Sendungen mit dem Versand-Server (MTA), in dem die betreffende Affinität verwaltet wird. [Weitere Informationen](../../campaign-opt/using/applying-rules.md#control-outgoing-smtp-traffic).
 
 * Prüfen Sie nach dem Versand der E-Mail den Header, um festzustellen, von welcher IP-Adresse aus der Versand erfolgte. Ihr E-Mail-Administrator ist Ihnen beim Feststellen der Header-Informationen behilflich.
 
@@ -100,7 +102,7 @@ Sie haben folgende Möglichkeiten:
 
 ### Typologien verwenden
 
-Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Zielgruppe. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt. Beispielsweise können Sie minderjährige Empfänger aus der Zielgruppe Ihres Newsletters herausfiltern. Weiterführende Informationen finden Sie [in diesem Beispiel](../../campaign/using/filtering-rules.md).
+Typologieregeln ermöglichen den kriterienbasierten Ausschluss eines Teils der Zielgruppe. Auf diese Weise werden ein ideal auf Kundenbedürfnisse abgestimmter Nachrichtenversand sowie eine kohärente Unternehmenskommunikation sichergestellt. Beispielsweise können Sie minderjährige Empfänger aus der Zielgruppe Ihres Newsletters herausfiltern. Weiterführende Informationen finden Sie [in diesem Beispiel](../../campaign-opt/using/filtering-rules.md).
 
 ### Anhänge vermeiden
 

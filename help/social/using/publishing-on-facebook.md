@@ -1,19 +1,21 @@
 ---
 product: campaign
 title: Auf Facebook veröffentlichen
-description: Auf Facebook veröffentlichen
+description: Auf Facebook publizieren
 audience: social
 content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 100%
 
 ---
 
 # Auf Facebook veröffentlichen{#publishing-on-facebook}
+
+![](../../assets/v7-only.svg)
 
 Nach Abschluss der Konfiguration können Sie mit Social Marketing auf Ihren Facebook-Seiten veröffentlichen.
 

@@ -5,17 +5,19 @@ description: Erfahren Sie mehr über das Package "Dezentrales Marketing".
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 100%
 
 ---
 
 
-# Distributed Marketing{#distributed-marketing}
+# Dezentrales Marketing{#distributed-marketing}
 
-Der folgende Workflow wird mit dem Modul **Dezentrales Marketing** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../campaign/using/about-distributed-marketing.md).
+![](../../assets/common.svg)
+
+Der folgende Workflow wird mit dem Modul **Dezentrales Marketing** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../distributed/using/about-distributed-marketing.md).
 
 <table> 
  <tbody> 

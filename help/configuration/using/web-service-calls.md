@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: ce94e7e7-b8f8-4c82-937f-e87d15e50c34
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 ---
 
 # Web-Dienstaufrufe{#web-service-calls}
+
+![](../../assets/v7-only.svg)
 
 ## Allgemeine Informationen {#general-information}
 
@@ -192,11 +194,11 @@ Es stehen zwei Authentifizierungsmodi zur Verfügung:
 
 * **über einen Aufruf von logon method()**. Dieser Modus generiert ein Sitzungstoken und ein Sicherheits-Token. Dies ist der sicherste Modus und daher der am besten empfohlene.
 
-or
+oder
 
 * **über das Adobe Campaign-Login +** Kennwort, mit dem ein Sitzungstoken erstellt wird. Das Sitzungstoken läuft nach einem festgelegten Zeitraum automatisch ab. Dieser Modus wird nicht empfohlen und erfordert eine Reduzierung der Sicherheitseinstellungen der Anwendung für einige Zoneneinstellungen (allowUserPassword=&quot;true&quot; und sessionTokenOnly=&quot;true&quot;).
 
-### Sitzungstoken-Eigenschaften {#session-token-characteristics}
+### Eigenschaften des Sitzungstokens {#session-token-characteristics}
 
 Das Sitzungstoken weist die folgenden Merkmale auf:
 

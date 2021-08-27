@@ -6,7 +6,7 @@ audience: migration
 content-type: reference
 topic-tags: migration-procedure
 exl-id: ad71dead-c0ca-42d5-baa8-0f340979231a
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 2%
@@ -14,6 +14,8 @@ ht-degree: 2%
 ---
 
 # Konfigurieren der Plattform{#configuring-your-platform}
+
+![](../../assets/v7-only.svg)
 
 Bestimmte wichtige Änderungen in Adobe Campaign v7 erfordern eine Konfiguration, um den effektiven Betrieb sicherzustellen. Diese Parameter können vor oder nach der Migration erforderlich sein. Die betroffenen Änderungen und ihr Konfigurationsmodus werden in diesem Abschnitt beschrieben.
 
@@ -121,7 +123,7 @@ Nach Ausführung von **postupgrade** müssen die folgenden Elemente berücksicht
 
    Bei der Migration von einer v5.11-Plattform müssen Sie den Tracking-Modus konfigurieren. Weitere Informationen hierzu finden Sie im Abschnitt [Tracking](../../migration/using/specific-configurations-in-v5-11.md#tracking) .
 
-* Startseite       
+* Startseite        
 
    Wenn Sie von einer v6.02-Plattform migrieren, können Sie zusätzliche Parameter definieren, um Ihre alte Homepage von v6.02 zu erhalten. Weiterführende Informationen dazu finden Sie im Abschnitt [Benutzerfreundlichkeit: Startseite und Navigation](../../migration/using/specific-configurations-in-v6-02.md#user-friendliness--home-page-and-navigation).
 

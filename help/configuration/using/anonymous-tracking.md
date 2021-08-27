@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: f251eb21-0f3c-4b46-927a-57a3291e705f
-source-git-commit: ee3d643e4ba607b3d7ca816eabf862b867d1f3f4
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 6%
@@ -14,6 +14,8 @@ ht-degree: 6%
 ---
 
 # Anonym-Tracking{#anonymous-tracking}
+
+![](../../assets/v7-only.svg)
 
 Mit Adobe Campaign können Sie die erfassten Web-Tracking-Informationen einem Empfänger zuordnen, wenn dieser Ihre Site anonym besucht. Wenn ein Benutzer die getaggten Seiten Ihrer Website durchsucht, werden diese Informationen erfasst, sodass er, sobald er in eine von Adobe Campaign gesendete E-Mail klickt, identifiziert und die Informationen automatisch mit ihm verknüpft werden.
 

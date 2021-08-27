@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 9e10b24e-c4de-4e76-bbed-0d05f62120b7
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 65%
@@ -14,6 +14,8 @@ ht-degree: 65%
 ---
 
 # Über die Schemabearbeitung{#about-schema-edition}
+
+![](../../assets/v7-only.svg)
 
 Adobe Campaign verwendet Datenschemata zum:
 
@@ -23,7 +25,7 @@ Adobe Campaign verwendet Datenschemata zum:
 
 Nähere Erläuterungen zu den in Campaign integrierten Tabellen und ihrer Interaktion finden Sie in [diesem Abschnitt](https://helpx.adobe.com/de/campaign/kb/acc-datamodel.html).
 
-## Erweitern oder Erstellen von Schemas {#extending-or-creating-schemas}
+## Erweitern oder Erstellen von Schemata {#extending-or-creating-schemas}
 
 Um ein Feld, einen Index oder ein anderes Element zu einem der Kerndatenschemata in Campaign hinzuzufügen, z. B. die Empfängertabelle (nms:recipient), müssen Sie dieses Schema erweitern. Weitere Informationen hierzu finden Sie im Abschnitt [Erweitern eines Schemas](../../configuration/using/extending-a-schema.md) .
 
@@ -138,7 +140,7 @@ Die vollständige Liste der Attribute finden Sie im Abschnitt [`<attribute>` ele
 
 Weiterführende Informationen zu den einzelnen Attributen finden Sie im Abschnitt [Attributbeschreibung](../../configuration/using/schema/attribute.md) .
 
-### Beispiele      {#examples}
+### Beispiele {#examples}
 
 Beispiel für die Definition eines Standardwerts:
 

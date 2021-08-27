@@ -6,14 +6,16 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 515587695115c23d9b248ecb87a7ae89ea7c62a0
-workflow-type: ht
+source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 100%
 
 ---
 
 # Synchronisieren von Audiences{#synchronizing-audiences}
+
+![](../../assets/v7-only.svg)
 
 Sie können mit den erweiterten Funktionen von Campaign v7 eine umfangreiche Liste erstellen und als Audience direkt und in Echtzeit in Campaign Standard freigeben (einschließlich zusätzlicher Daten). Ihr Campaign-Standard-Benutzer kann dann die Audience in Adobe Campaign Standard verwenden.
 

@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: updating-adobe-campaign
 exl-id: 3e39a0d2-ff7e-4233-82bb-2b360f696a33
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 5%
@@ -14,6 +14,8 @@ ht-degree: 5%
 ---
 
 # Einleitung{#introduction}
+
+![](../../assets/v7-only.svg)
 
 In diesem Abschnitt wird das Verfahren für die Aktualisierung von Adobe Campaign, Client- und Server-seitig beschrieben und der Wechsel zu Unicode einer vorhandenen Instanz beschrieben.
 

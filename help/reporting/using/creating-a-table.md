@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2643'
 ht-degree: 100%
 
 ---
 
 # Tabellen erstellen{#creating-a-table}
+
+![](../../assets/common.svg)
 
 Sie haben die Möglichkeit, in Berichten je nach anzuzeigenden Daten verschiedene Tabellenarten zu verwenden. Es kann sich dabei um eine Liste mit Gruppierung, eine Tabelle mit Werteverteilung oder um eine über Cube-Messungen erstellte Pivot-Tabelle handeln.
 
@@ -37,7 +39,7 @@ Sie ermöglicht es, die Liste der Kampagnen (**[!UICONTROL Titel (Kampagne)]**) 
 
 ![](assets/s_advuser_ergo_listgroup_005.png)
 
-### Umsetzung {#implementation-steps}
+### Implementierungsschritte {#implementation-steps}
 
 Ein Beispiel für die vollständige Implementierung finden Sie hier: [Anwendungsbeispiel: Bericht mit einer Liste mit Gruppierung erstellen](#use-case--create-a-report-with-a-group-list).
 

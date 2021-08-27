@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 555082a2-1b62-4aa4-b80c-77b1a1ef9491
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%
 
 ---
 
 # Erste Schritte mit der Personalisierung{#about-personalization}
+
+![](../../assets/common.svg)
 
 Die mit Adobe Campaign versendeten Nachrichten können in verschiedener Hinsicht personalisiert werden. Sowohl Inhalt als auch Rendering der Mitteilungen können dem Empfängerprofil entsprechend angepasst werden. Bei E-Mail-Sendungen haben Sie die Möglichkeit, Personalisierungselemente und -bedingungen direkt in JavaScript über den **[!UICONTROL Quelle]**-Tab der Nachricht zu definieren. Im Allgemeinen ermöglicht es Ihnen Adobe Campaign:
 

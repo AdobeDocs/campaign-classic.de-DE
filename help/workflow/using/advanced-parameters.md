@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 100%
 
 ---
 
 # Erweiterte Parameter{#advanced-parameters}
+
+![](../../assets/common.svg)
 
 Der Bildschirm der Workflow-Eigenschaften enthält einen **[!UICONTROL Erweitert]**-Tab, welcher beispielsweise die Konfiguration des Verhaltens bei Fehlern und die Ausführungsdauer sowie die Erstellung eines Initialisierungsscripts erlaubt. Der Bildschirm erscheint je nach Aktivität in vereinfachter oder detaillierter Form:
 
@@ -33,7 +35,7 @@ Dieses Feld enthält den internen Namen der Aktivität.
 
 ## Bild {#image}
 
-In diesem Feld können Sie das mit einer Aktivität verknüpfte Bild ändern. Weiterführende Informationen finden Sie unter [Bilder für Aktivitäten verwalten](../../workflow/using/managing-activity-images.md).
+In diesem Feld können Sie das mit einer Aktivität verknüpfte Bild ändern. Weiterführende Informationen finden Sie unter [Bilder für Aktivitäten verwalten](managing-activity-images.md).
 
 ## Ausführung {#execution}
 
@@ -63,9 +65,9 @@ In diesem Feld wird das Verhalten des Workflows im Fall von asynchronen Aufgaben
 * **[!UICONTROL Mehrere autorisierte Aufgaben]** - mehrere Aufgaben können gleichzeitig ausgeführt werden.
 * **[!UICONTROL Die laufende Aufgabe ist prioritär]** - solange eine Aufgabe läuft, wird keine neue Aufgabe gestartet.
 
-## Time zone {#time-zone}
+## Zeitzone {#time-zone}
 
-In diesem Feld können Sie die Zeitzone der Aktivität auswählen. Weiterführende Informationen finden Sie unter [Zeitzonen verwalten](../../workflow/using/managing-time-zones.md).
+In diesem Feld können Sie die Zeitzone der Aktivität auswählen. Weiterführende Informationen finden Sie unter [Zeitzonen verwalten](managing-time-zones.md).
 
 ## Fehler {#in-case-of-errors}
 
@@ -76,7 +78,7 @@ In diesem Feld wird angegeben, wie mit Fehlern umgegangen werden soll. Zwei Opti
 
 ## Initialisierungsscript {#initialization-script}
 
-In diesem Feld können Sie Variablen initialisieren oder Aktivitätseigenschaften ändern. Weiterführende Informationen finden Sie unter [Scripts/JavaScript-Templates](../../workflow/using/javascript-scripts-and-templates.md).
+In diesem Feld können Sie Variablen initialisieren oder Aktivitätseigenschaften ändern. Weiterführende Informationen finden Sie unter [Scripts/JavaScript-Templates](javascript-scripts-and-templates.md).
 
 ## Kommentar {#comment}
 

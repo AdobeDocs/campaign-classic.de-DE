@@ -6,14 +6,16 @@ audience: reporting
 content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: afb11ab5-bd60-4262-9dd1-fcda19cdaca0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 100%
 
 ---
 
 # Über native Berichte in Campaign{#about-campaign-built-in-reports}
+
+![](../../assets/common.svg)
 
 Dieses Kapitel enthält eine Liste der nativen Adobe-Campaign-Berichte, ihren Inhalt und den Kontext ihrer Verwendung. Die nachfolgenden Erläuterungen sollen es den Benutzern ermöglichen, standardmäßig in der Plattform verfügbare Berichte zu nutzen und somit unnötigen Konfigurationsaufwand zu vermeiden.
 

@@ -6,14 +6,16 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 4cd67278-2623-4508-9a9f-9007c6a5f8ac
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 10%
 
 ---
 
-# enumeration element {#enumeration--element}
+# Auflistungselement {#enumeration--element}
+
+![](../../../assets/v7-only.svg)
 
 ## Inhaltsmodell {#content-model-5}
 
@@ -41,7 +43,7 @@ enumeration:==(help| value)
 
 Mit diesem Element können wir eine Werteauflistung definieren. Eine Auflistung gehört zu dem Schema, in dem sie definiert ist, kann jedoch über ein anderes Schema aufgerufen werden.
 
-## Verwendung und Kontext der Verwendung von {#use-and-context-of-use-4}
+## Verwendung und Verwendungskontext {#use-and-context-of-use-4}
 
 Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement definiert wird).
 
@@ -54,7 +56,7 @@ Auflistungen werden zu Beginn eines Schemas definiert (bevor das Hauptelement de
    * BELIEBIGE
    * bin
    * blob
-   * boolean
+   * Boolesch
    * Byte
    * CDATA
    * datetime

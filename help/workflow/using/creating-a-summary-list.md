@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 39cec42a-c7ac-41b1-8f61-799b559ce002
-source-git-commit: 895aa2fd4fa9c7c71c0073e9be33c12d4e92c9fa
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 100%
 
 ---
 
 # Erstellen einer zusammenfassenden Liste{#creating-a-summary-list}
+
+![](../../assets/common.svg)
 
 Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows zum Abruf und zur Anreicherung von Dateien mit dem Ziel, eine zusammenfassende Liste zu erstellen. Die zu erstellende Liste enthält Kontakte, die Einkäufe in Geschäften getätigt haben.
 
@@ -92,7 +94,7 @@ Ziehen Sie die Anreicherung in das Diagramm und konfigurieren Sie sie wie folgt:
 
    ![](assets/uc2_enrich_enrich3.png)
 
-Weitere Informationen zu den verschiedenen Link-Typen finden Sie unter [Daten anreichern und ändern](../../workflow/using/targeting-data.md#enriching-and-modifying-data).
+Weitere Informationen zu den verschiedenen Link-Typen finden Sie unter [Daten anreichern und ändern](targeting-data.md#enriching-and-modifying-data).
 
 Im nächsten Bildschirm ist der Join zu erstellen, der die Abstimmung zwischen den Daten erlaubt. Wählen Sie aus der Hauptmenge die Quelle und aus dem Schema &quot;Geschäfte&quot; den Zieldatensatz aus.
 

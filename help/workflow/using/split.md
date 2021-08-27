@@ -6,8 +6,8 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 4204350a-c2d2-4033-9bdf-87b49d8211b9
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '2133'
 ht-degree: 100%
 
@@ -15,15 +15,17 @@ ht-degree: 100%
 
 # Aufspaltung{#split}
 
+![](../../assets/common.svg)
+
 Über die **Aufspaltung** lässt sich eine Population in verschiedene Teilmengen splitten. Die Zielgruppe wird aus allen eingehenden Ergebnissen erstellt, dies bedeutet, dass die vorgeschalteten Aktivitäten beendet sein müssen, bevor die Aufspaltung ausgeführt werden kann.
 
 Da die Aktivität die eingehenden Populationen nicht vereinigt, wird im Fall von mehreren eingehenden Transitionen empfohlen, eine **[!UICONTROL Vereinigung]** vorzuschalten, um eine korrekte Ergebnisfindung zu gewährleisten.
 
-Ein Beispiel der verwendeten Aufspaltungs-Aktivität finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](../../workflow/using/targeting-data.md#creating-subsets-using-the-split-activity).
+Ein Beispiel der verwendeten Aufspaltungs-Aktivität finden Sie unter [Teilmengen mithilfe der Aufspaltungs-Aktivität erstellen](targeting-data.md#creating-subsets-using-the-split-activity).
 
-Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](../../workflow/using/cross-channel-delivery-workflow.md).
+Ein Beispiel für die Verwendung der Aufspaltungs-Aktivität zur Segmentierung der Zielgruppe in unterschiedliche Populationen mithilfe von Filterbedingungen finden Sie in [diesem Abschnitt](cross-channel-delivery-workflow.md).
 
-Ein Beispiel für die Verwendung einer Instanzvariablen in einer Aufspaltungs-Aktivität finden Sie in [diesem Abschnitt](../../workflow/using/javascript-scripts-and-templates.md).
+Ein Beispiel für die Verwendung einer Instanzvariablen in einer Aufspaltungs-Aktivität finden Sie in [diesem Abschnitt](javascript-scripts-and-templates.md).
 
 Konfigurieren Sie die Aktivität, indem Sie im Tab **[!UICONTROL Teilmengen]** jeweils einen Titel und die Auswahlkriterien der Teilmengen angeben. Geben Sie im Tab **[!UICONTROL Allgemein]** die Zielgruppendimension an.
 
@@ -124,7 +126,7 @@ Wenn Sie beispielsweise das Feld **[!UICONTROL Sprache]** als Gruppierungsfeld a
 
 Wenn Ihre Gruppierungsfelder zu viele Werte enthalten oder Sie vermeiden möchten, dass Werte für jede neue Aufspaltungsaktivität zurückgesetzt werden, können Sie mit Adobe Campaign eine Beschränkung für die Datenverteilung erstellen. Wählen Sie bei der Auswahl von Datenbegrenzungswerten (weitere Informationen zu diesem Thema finden Sie im Abschnitt [Teilmengen erstellen](#creating-subsets)) die Option **[!UICONTROL Durch Datenverteilung]** und anschließend eine Vorlage aus dem Dropdown-Menü aus. Die Erstellung einer Datenverteilungsvorlage wird nachfolgend erläutert.
 
-Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie unter [Lokale Validierung verwenden](../../workflow/using/using-the-local-approval-activity.md).
+Ein Beispiel für die Aktivität **[!UICONTROL Lokale Validierung]** mit einer Verteilungsvorlage finden Sie unter [Lokale Validierung verwenden](using-the-local-approval-activity.md).
 
 ![](assets/s_user_segmentation_partage_wz6.png)
 
@@ -148,12 +150,12 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
    * **[!UICONTROL Zielgruppendimension]**: Geben Sie das Schema an, auf das sich die Verteilung beziehen soll, z. B. **[!UICONTROL Empfänger]**. Das Schema muss mit den im Zielgruppen-Workflow verwendeten Daten kompatibel sein.
    * **[!UICONTROL Verteilungsfeld]**: Wählen Sie ausgehend von der Zielgruppendimension ein Feld aus. Wenn Sie beispielsweise das Feld **[!UICONTROL E-Mail-Domain]** auswählen, werden die Empfänger nach ihren Domains verteilt.
    * **[!UICONTROL Verteilungstyp]**: Wählen Sie hier aus, ob der Begrenzungswert im Tab **[!UICONTROL Verteilung]** als **[!UICONTROL Feste Größe]** oder als **[!UICONTROL Größe in Prozent]** ausgedrückt werden soll.
-   * **[!UICONTROL Zuweisungstyp]**: Die Datenverteilung kann entweder einer Gruppe oder einem Benutzer bzw. einer Lokalstelle zugewiesen werden. Eine Zuweisung zu einer Lokalstelle erfolgt im Rahmen des **dezentralen Marketings**. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../campaign/using/about-distributed-marketing.md).
-   * **[!UICONTROL Validierungsspeicherung]**: Wenn Sie eine Aktivität **[!UICONTROL Lokale Validierung]** in Ihrem Zielgruppen-Workflow verwenden (siehe [Lokale Validierung](../../workflow/using/local-approval.md)), geben Sie das Schema ein, in dem die Validierungsergebnisse gespeichert werden. Sie müssen ein Speicherschema pro Zielgruppenbestimmungsschema angeben. Wenn Sie das Zielgruppenbestimmungsschema für **[!UICONTROL Empfänger]** verwenden, geben Sie das standardmäßige Speicherschema **[!UICONTROL Lokale Validierung der Empfänger]** ein.
+   * **[!UICONTROL Zuweisungstyp]**: Die Datenverteilung kann entweder einer Gruppe oder einem Benutzer bzw. einer Lokalstelle zugewiesen werden. Eine Zuweisung zu einer Lokalstelle erfolgt im Rahmen des **dezentralen Marketings**. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../distributed/using/about-distributed-marketing.md).
+   * **[!UICONTROL Validierungsspeicherung]**: Wenn Sie eine Aktivität **[!UICONTROL Lokale Validierung]** in Ihrem Zielgruppen-Workflow verwenden (siehe [Lokale Validierung](local-approval.md)), geben Sie das Schema ein, in dem die Validierungsergebnisse gespeichert werden. Sie müssen ein Speicherschema pro Zielgruppenbestimmungsschema angeben. Wenn Sie das Zielgruppenbestimmungsschema für **[!UICONTROL Empfänger]** verwenden, geben Sie das standardmäßige Speicherschema **[!UICONTROL Lokale Validierung der Empfänger]** ein.
 
       Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung, ist im Feld **[!UICONTROL Validierungsspeicherung]** keine Angabe erforderlich.
 
-1. Wenn Sie eine **[!UICONTROL Lokale Validierung]** verwenden (siehe [Lokale Validierung](../../workflow/using/local-approval.md)), sind auch die **[!UICONTROL Erweiterten Parameter]** der Datenverteilungsvorlage anzugeben:
+1. Wenn Sie eine **[!UICONTROL Lokale Validierung]** verwenden (siehe [Lokale Validierung](local-approval.md)), sind auch die **[!UICONTROL Erweiterten Parameter]** der Datenverteilungsvorlage anzugeben:
 
    ![](assets/local_validation_data_distribution_3.png)
 
@@ -189,7 +191,7 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
       Diese Spalte wird durch das Feld **[!UICONTROL Verteilungstyp]** im **[!UICONTROL Allgemein]**-Tab bestimmt.
 
    * **[!UICONTROL Titel]**: Vergeben Sie für jeden Verteilungswert einen Titel.
-   * **[!UICONTROL Gruppe oder Benutzer]**: Wählen Sie im Falle der Verwendung einer Aktivität vom Typ **[!UICONTROL Lokale Validierung]** (siehe [Lokale Validierung](../../workflow/using/local-approval.md)) für jeden Verteilungswert den zugewiesenen Benutzer oder die Benutzergruppe aus.
+   * **[!UICONTROL Gruppe oder Benutzer]**: Wählen Sie im Falle der Verwendung einer Aktivität vom Typ **[!UICONTROL Lokale Validierung]** (siehe [Lokale Validierung](local-approval.md)) für jeden Verteilungswert den zugewiesenen Benutzer oder die Benutzergruppe aus.
 
       Bei einer einfachen Begrenzung durch Datenverteilung ohne lokale Validierung ist ein Zuweisung in der Spalte **[!UICONTROL Benutzer oder Benutzergruppe]** nicht erforderlich.
 
@@ -197,7 +199,7 @@ Eine Verteilungsvorlage ermöglicht die Begrenzung der Datensatzanzahl mithilfe 
       >
       >Stellen Sie sicher, dass die Benutzer über die nötigen Berechtigungen verfügen.
 
-   * **[!UICONTROL Lokalstelle]**: Wählen Sie für jeden Verteilungswert die zugeordnete Lokalstelle aus. Lokalstellen werden im Zusammenhang mit dem **Dezentralen Marketing** verwendet. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../campaign/using/about-distributed-marketing.md).
+   * **[!UICONTROL Lokalstelle]**: Wählen Sie für jeden Verteilungswert die zugeordnete Lokalstelle aus. Lokalstellen werden im Zusammenhang mit dem **Dezentralen Marketing** verwendet. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../distributed/using/about-distributed-marketing.md).
 
 ## Filterparameter {#filtering-parameters}
 

@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: sending-emails
 exl-id: 7f44e732-4257-4d2a-800c-bde847e20f52
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 100%
 
 ---
 
 # E-Mail-Versand erstellen{#creating-an-email-delivery}
+
+![](../../assets/common.svg)
 
 Gehen Sie wie folgt vor, um einen neuen E-Mail-Versand zu erstellen:
 
@@ -26,5 +28,5 @@ Gehen Sie wie folgt vor, um einen neuen E-Mail-Versand zu erstellen:
 
    ![](assets/s_ncs_user_wizard_email01_1.png)
 
-1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
+1. Geben Sie für Ihren Versand einen Titel, einen Code und eine Beschreibung ein. Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](steps-create-and-identify-the-delivery.md#identifying-the-delivery).
 1. Klicken Sie auf **Fortfahren**, um die Eingaben zu bestätigen und in das Fenster der Nachrichtenkonfiguration zu gelangen.

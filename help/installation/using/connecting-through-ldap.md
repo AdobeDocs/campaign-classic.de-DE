@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 0533cd50-3aa4-4160-9152-e916e149e77f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 2%
@@ -15,7 +15,9 @@ ht-degree: 2%
 
 # Über LDAP verbinden{#connecting-through-ldap}
 
-## Konfigurieren von Campaign und LDAP {#configuring-campaign-and-ldap}
+![](../../assets/v7-only.svg)
+
+## Campaign und LDAP konfigurieren {#configuring-campaign-and-ldap}
 
 >[!NOTE]
 >
@@ -159,7 +161,7 @@ Sie müssen mehrere Parameter angeben, um die Gruppe(n), zu der/denen der Benutz
 
 Klicken Sie auf **[!UICONTROL Save]** , um die Konfiguration der Instanz abzuschließen.
 
-## Verwalten von Benutzern {#managing-operators}
+## Benutzer verwalten {#managing-operators}
 
 Nachdem Sie die Konfiguration bestätigt haben, müssen Sie festlegen, welche Adobe Campaign-Operatoren über den LDAP-Ordner verwaltet werden.
 

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: ce2c90cd-46d9-4365-8013-5c1273b6c176
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 100%
@@ -14,6 +14,8 @@ ht-degree: 100%
 ---
 
 # Häufig gestellte Fragen zum Datenschutz {#privacy-faq}
+
+![](../../assets/common.svg)
 
 Im Folgenden finden Sie einige häufig gestellte Fragen zu Datenschutz und Einverständniserklärung bei der Verwendung von Adobe Campaign.
 

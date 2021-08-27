@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 399e9468-bf70-425d-af0b-72c29636b513
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 100%
 
 ---
 
 # Vordefinierte Filter{#creating-predefined-filters}
+
+![](../../assets/v7-only.svg)
 
 Vordefinierte Filter erleichtern die Erstellung von auf die Zielgruppe anwendbaren Eignungsregeln, die bei der Angebotskonfiguration verwendet werden können. Die Filter beziehen sich jeweils auf eine Umgebung und können Angebotsparameter berücksichtigen.
 

@@ -6,14 +6,16 @@ audience: interaction
 content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: ed97a1b5-c870-4b67-98b6-16adc316fd46
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 100%
 
 ---
 
-# Angebotskategorien{#creating-offer-categories}
+# Erstellen von Angebotskategorien{#creating-offer-categories}
+
+![](../../assets/v7-only.svg)
 
 Angebotskategorien werden ausschließlich in der **[!UICONTROL Design-Umgebung]** erstellt. Sie werden automatisch für die **[!UICONTROL Live-Umgebung]** freigegeben (d. h. zur Unterbreitung verfügbar gemacht), wenn die enthaltenen Angebote oder ihre Änderungen validiert wurden. Standardmäßig ist in der **[!UICONTROL Design-Umgebung]** bereits eine Kategorie (der Angebotskatalog) enthalten. Sie haben die Möglichkeit, Unterkategorien zu erstellen, um die Angebote zu ordnen und zu hierarchisieren.
 
@@ -29,7 +31,7 @@ Gehen Sie wie folgt vor, um eine neue Kategorie zu erstellen:
 
    ![](assets/offer_cat_create_002.png)
 
-1. Benennen Sie die Kategorie. Der Titel kann später auch über den **[!UICONTROL Allgemein]**-Tab der Kategorie geändert werden.
+1. Benennen Sie die Kategorie. Der Titel kann später auch über die Registerkarte **[!UICONTROL Allgemein]** der Kategorie geändert werden.
 
    ![](assets/offer_cat_create_003.png)
 

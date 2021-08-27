@@ -6,19 +6,21 @@ audience: workflow
 content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '1685'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '1692'
+ht-degree: 98%
 
 ---
 
 # Abfrage{#query}
 
+![](../../assets/common.svg)
+
 ## Abfragen erstellen {#creating-a-query}
 
 Über Abfragen lassen sich Zielgruppen anhand von Filterkriterien bestimmen. Es besteht die Möglichkeit, dem Abfrageergebnis einen Segment-Code zuzuweisen und es mit Zusatzdaten zu ergänzen.
-Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnitt](../../workflow/using/querying-recipient-table.md).
+Weitere Informationen zu Beispielen für Abfragen finden Sie in diesem [Abschnitt](querying-recipient-table.md).
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
    Filterdimensionen ermöglichen die spezifische Auswahl der Elemente, beispielsweise nach Kriterien wie Verträgen, Altersgruppen etc.
 
-   Weitere Informationen hierzu finden Sie unter [Zielgruppen- und Filterdimension](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+   Weitere Informationen hierzu finden Sie unter [Zielgruppen- und Filterdimension](building-a-workflow.md#targeting-and-filtering-dimensions).
 
    ![](assets/s_user_segmentation_query_edit.png)
 
@@ -52,7 +54,7 @@ Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]** und gehen Sie wi
 
 1. Fügen Sie gegebenenfalls manuell Filterkriterien hinzu, wenn Sie im ersten Schritt **[!UICONTROL Filterbedingungen]** gewählt haben, oder verwenden Sie die Option **[!UICONTROL Filter]** > **[!UICONTROL Erweiterte Filter...]**.
 
-   Es besteht darüber hinaus die Möglichkeit, die gefilterten Daten zu gruppieren. Dies ist jedoch nur möglich, wenn die Filterdimension nicht mit der Zielgruppendimension identisch ist. Weiterführende Informationen finden Sie in diesem [Abschnitt](../../workflow/using/querying-using-grouping-management.md).
+   Es besteht darüber hinaus die Möglichkeit, die gefilterten Daten zu gruppieren. Dies ist jedoch nur möglich, wenn die Filterdimension nicht mit der Zielgruppendimension identisch ist. Weiterführende Informationen finden Sie in diesem [Abschnitt](querying-using-grouping-management.md).
 
    Mithilfe des Ausdruckseditors können verschiedene Kriterien unter Verwendung der Operatoren UND, ODER und AUSSER kombiniert werden. Bei Bedarf können Sie die **[!UICONTROL Entsprechende SQL-Abfrage...]** anzeigen. Weiterführende Informationen dazu finden Sie in diesem [Abschnitt](../../platform/using/defining-filter-conditions.md#building-expressions).
 
@@ -73,7 +75,7 @@ Wählen Sie im ersten Fenster des Assistenten zunächst den Typ der hinzuzufüge
 ![](assets/wf_add_data_1st_option.png)
 
 * Die Option **[!UICONTROL Daten in Relation mit der Filterdimension]** erlaubt den Zugriff auf Daten aus der Adobe-Campaign-Datenbank.
-* Die Option **[!UICONTROL Externe Daten]** erlaubt den Zugriff auf Daten aus einer externen Datenbank. Für diese Option benötigen Sie das optionale Modul **Federated Data Access**. Weitere Informationen hierzu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](../../workflow/using/accessing-an-external-database--fda-.md).
+* Die Option **[!UICONTROL Externe Daten]** erlaubt den Zugriff auf Daten aus einer externen Datenbank. Für diese Option benötigen Sie das optionale Modul **Federated Data Access**. Weitere Informationen hierzu finden Sie unter [Zugriff auf externe Datenbanken (FDA)](accessing-an-external-database--fda-.md).
 * Die Option **[!UICONTROL Angebotsvorschlag]** erlaubt den Zugriff auf den jeweils besten, vom Angebotsmodul erzeugten Vorschlag. Hierfür benötigen Sie das optionale Modul **Interaction**.
 
 Wenn keines der o. g. Module auf Ihrer Plattform installiert ist, überspringt der Assistent das Auswahlfenster. Sie werden direkt zum nächsten Schritt weitergeleitet.
@@ -90,10 +92,10 @@ Gehen Sie folgendermaßen vor, um Daten aus der Adobe-Campaign-Datenbank hinzuzu
 
    Hinzugefügt werden können des Weiteren:
 
-   * Aus Daten der Zielpopulation berechnete Felder oder Aggregate (z. B. Anzahl an ausstehenden Käufen im vergangenen Monat, durchschnittlicher Warenkorb usw.). Ein Beispiel finden Sie unter [Datenauswahl](../../workflow/using/targeting-data.md#selecting-data).
+   * Aus Daten der Zielpopulation berechnete Felder oder Aggregate (z. B. Anzahl an ausstehenden Käufen im vergangenen Monat, durchschnittlicher Warenkorb usw.). Ein Beispiel finden Sie unter [Datenauswahl](targeting-data.md#selecting-data).
    * Neue Felder (über die Schaltfläche **[!UICONTROL Hinzufügen]** rechts von der Liste der Ausgabespalten).
 
-      Es ist darüber hinaus möglich, Informationskollektionen hinzuzufügen, beispielsweise eine Vertragsliste, die letzten fünf Sendungen usw. Kollektionen entsprechen Feldern, die für ein Profil mehrere Werte aufweisen können (1:n-Relation). Weitere Informationen hierzu finden Sie unter [Zusätzliche Daten bearbeiten](../../workflow/using/targeting-data.md#editing-additional-data).
+      Es ist darüber hinaus möglich, Informationskollektionen hinzuzufügen, beispielsweise eine Vertragsliste, die letzten fünf Sendungen usw. Kollektionen entsprechen Feldern, die für ein Profil mehrere Werte aufweisen können (1:n-Relation). Weitere Informationen hierzu finden Sie unter [Zusätzliche Daten bearbeiten](targeting-data.md#editing-additional-data).
 
 Gehen Sie folgendermaßen vor, um eine mit einer Zielpopulation verknüpfte Informationskollektion hinzuzufügen:
 
@@ -129,7 +131,7 @@ In folgendem Beispiel sollen alle Männer zwischen 18 und 30 Jahre identifiziert
 
 >[!NOTE]
 >
->Beispiele für zusätzliche Abfragen werden in [diesem Abschnitt](../../workflow/using/querying-recipient-table.md) beschrieben.
+>Beispiele für zusätzliche Abfragen werden in [diesem Abschnitt](querying-recipient-table.md) beschrieben.
 
 1. Benennen Sie die Abfrage und klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**.
 1. Wählen Sie aus der Liste der verfügbaren Filter die Option **[!UICONTROL Filterbedingungen]** aus.
@@ -184,7 +186,11 @@ Im folgenden Abschnitt finden Sie Best Practices zur Optimierung der in Adobe Ca
 
    Informieren Sie sich über den Ausführungsplan Ihrer Anfrage. Vermeiden Sie vollständige Tabellen-Scans, insbesondere bei Echtzeitabfragen oder Abfragen nahezu in Echtzeit, die jede Minute ausgeführt werden.
 
-Weitere Informationen hierzu finden Sie in den Abschnitten [Best Practices für Datenmodelle](https://helpx.adobe.com/de/campaign/kb/acc-data-model-best-practices.html) und [Datenbank-Mapping](../../configuration/using/database-mapping.md).
+   Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
+
+   ![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../configuration/using/database-mapping.md)
+
+   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
 
 ### Funktionen {#functions}
 
@@ -211,7 +217,7 @@ Das Äquivalent der Filterdimension in SQL ist der innere Join:
 
 `select iRecipientId from nmsRecipient INNER JOIN nmsBroadLog ON (...)`
 
-Weitere Informationen zu Filterdimension finden Sie in [diesem Abschnitt](../../workflow/using/building-a-workflow.md#targeting-and-filtering-dimensions).
+Weitere Informationen zu Filterdimension finden Sie in [diesem Abschnitt](building-a-workflow.md#targeting-and-filtering-dimensions).
 
 ### Architektur {#architecture}
 

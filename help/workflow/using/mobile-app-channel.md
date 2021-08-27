@@ -5,8 +5,8 @@ description: Mobile-App-Kanal (Mobile App Channel)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 100%
 
@@ -14,6 +14,8 @@ ht-degree: 100%
 
 
 # Mobile-App-Kanal (Mobile App Channel){#mobile-app-channel}
+
+![](../../assets/common.svg)
 
 Der folgende Workflow wird mit dem Modul **Mobile App Channel** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../delivery/using/about-mobile-app-channel.md).
 

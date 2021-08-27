@@ -6,14 +6,16 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1198'
+ht-degree: 100%
 
 ---
 
 # Verwalten und Anpassen von Listen{#manage-and-customize-lists}
+
+![](../../assets/common.svg)
 
 Sie können mit dem Explorer auf die Listen von Datensätzen in der Campaign-Datenbank zugreifen. Sie können diese Listen filtern, Suchvorgänge durchführen und Informationen hinzufügen sowie Daten filtern und sortieren.
 

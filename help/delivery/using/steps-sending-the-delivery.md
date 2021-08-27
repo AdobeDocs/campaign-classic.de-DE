@@ -6,14 +6,16 @@ audience: delivery
 content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: 0411686e-4f13-401e-9333-e14b05ebe9cd
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '1617'
 ht-degree: 100%
 
 ---
 
 # Versand konfigurieren und senden {#configuring-and-sending-the-delivery}
+
+![](../../assets/common.svg)
 
 >[!NOTE]
 >
@@ -55,7 +57,7 @@ Klicken Sie abschließend auf **[!UICONTROL Absendung bestätigen]**, um den Ver
 
 Nun können Sie den Versand-Assistenten schließen und die Durchführung im **[!UICONTROL Versand]**-Tab verfolgen (entweder in der Detailansicht des Versands oder in der Versandliste).
 
-Nach Absenden der Nachrichten können Sie den Versand beobachten und verfolgen, siehe diese Abschnitte:
+Nach dem Nachrichtenversand können Sie Ihre Sendungen überwachen und verfolgen. Lesen Sie diesbezüglich auch diese Abschnitte:
 
 * [Sendungen überwachen](about-delivery-monitoring.md)
 * [Ursachen von fehlgeschlagenen Sendungen](understanding-delivery-failures.md)

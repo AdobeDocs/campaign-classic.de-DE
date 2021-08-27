@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: setting-up-web-tracking
 exl-id: 160df6e1-43e5-4eb9-ad2f-5db444e314ea
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
@@ -14,6 +14,8 @@ ht-degree: 4%
 ---
 
 # Erstellen von Webtracking-Tags{#creating-web-tracking-tags}
+
+![](../../assets/v7-only.svg)
 
 Jede Seite der Site, die Sie verfolgen möchten, muss in Ihrer Adobe Campaign-Plattform referenziert werden. Diese Referenzierung kann auf zwei Arten durchgeführt werden:
 
@@ -35,7 +37,7 @@ So generieren Sie den HTML-Code, der in die Seite eingefügt werden soll:
 
 Kopieren Sie dann den generierten Code und fügen Sie ihn in die zu verfolgende Seite ein.
 
-## Erstellung von zu verfolgenden URLs im Handumdrehen {#on-the-fly-creation-of-urls-to-be-tracked}
+## spontane Erstellung von zu verfolgenden URLs {#on-the-fly-creation-of-urls-to-be-tracked}
 
 Sie können die Web-Tracking-URLs direkt erstellen, indem Sie dem Wert des Parameters **tagid** Informationen hinzufügen:
 

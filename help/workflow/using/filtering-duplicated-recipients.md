@@ -6,14 +6,16 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: 7cbabbae-375f-4336-9afa-6356f37a79d0
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# Duplizierte Empfänger filtern {#filtering-duplicated-recipients}
+# Filtern duplizierter Empfänger {#filtering-duplicated-recipients}
+
+![](../../assets/common.svg)
 
 In diesem Beispiel werden wir Empfänger filtern, die doppelt oder öfter in einem Versand vorkommen, um duplizierte Profile festzustellen.
 

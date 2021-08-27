@@ -4,8 +4,8 @@ title: Konfigurieren der Integration
 description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 100%
 
@@ -13,6 +13,8 @@ ht-degree: 100%
 
 
 # Pipeline-Option &quot;NmsPipeline_Config&quot; {#nmspipeline_config}
+
+![](../../assets/common.svg)
 
 Sobald die Authentifizierung funktioniert, kann [!DNL pipelined] die Ereignisse abrufen und verarbeiten. Verarbeitet werden nur Auslöser, die in Adobe Campaign konfiguriert wurden; andere werden ignoriert. Der Auslöser muss zuvor mit Analytics erzeugt und in die Pipeline gepusht worden sein.
 Die Option kann auch mit einem Platzhalter konfiguriert werden, um alle Auslöser unabhängig vom Namen zu erfassen.
@@ -66,7 +68,7 @@ In diesem zweiten Beispiel werden alle Auslöser erfasst.
 >
 >Der [!DNL Trigger]-UID-Wert für einen bestimmten Trigger-Namen in der Analytics-Oberfläche wird als Teil der URL-Abfragezeichenfolgen-Parameter in der Triggers-Oberfläche angezeigt. Die UID &quot;triggerType&quot; wird im Pipeline-Datenstrom weitergeleitet. Außerdem kann Code in die Datei &quot;pipeline.JS&quot; geschrieben werden, um die Auslöser-UID einer anwenderfreundlichen Bezeichnung zuzuordnen, die in einer Spalte namens &quot;Auslösername&quot; im Schema &quot;pipelineEvents&quot; gespeichert werden kann.
 
-## Der Parameter &quot;consumer&quot; {#consumer-parameter}
+## Der Parameter &quot;consumer&quot;  {#consumer-parameter}
 
 Die Pipeline arbeitet mit einem &quot;Lieferanten- und Verbrauchermodell&quot;. In einer Warteschlange können viele Verbraucher sein. Nachrichten werden nur für einen einzelnen Verbraucher verwendet. Jeder Verbraucher erhält seine eigene &quot;Kopie&quot; der Nachrichten.
 

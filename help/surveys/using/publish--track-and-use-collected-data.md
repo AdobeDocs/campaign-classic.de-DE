@@ -6,14 +6,16 @@ audience: web
 content-type: reference
 topic-tags: online-surveys
 exl-id: 3cf3c486-6640-4d67-95cf-50d5767deb60
-source-git-commit: 86963746d3de3396963d221ddbd1ef7d89733d2f
-workflow-type: ht
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
 source-wordcount: '877'
 ht-degree: 100%
 
 ---
 
 # Erfasste Daten veröffentlichen, tracken und verwenden{#publish-track-and-use-collected-data}
+
+![](../../assets/v7-only.svg)
 
 Nachdem das Formular erstellt, konfiguriert und veröffentlicht wurde, können Sie den Link mit Ihrer Zielgruppe teilen und die Antworten tracken.
 

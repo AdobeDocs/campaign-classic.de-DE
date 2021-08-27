@@ -5,19 +5,25 @@ description: Message Center (Ausführung)
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '229'
+ht-degree: 85%
 
 ---
 
 
 # Message Center (Ausführung){#message-center-execution}
 
-Die folgenden Workflows werden mit dem Modul **Message Center – Ausführung** installiert. Weiterführende Informationen zum Modul finden Sie in diesem [Abschnitt](../../message-center/using/about-transactional-messaging.md).
+![](../../assets/common.svg)
 
-Weiterführende Informationen zur Konfiguration technischer Workflows für das Message-Center-Modul finden Sie auf [dieser Seite](../../message-center/using/technical-workflows.md).
+Die folgenden Workflows werden standardmäßig mit dem Add-on **Message Center - Execution** installiert.
+
+Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
+
+![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../message-center/using/about-transactional-messaging.md)
+
+![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/transactional.html)
 
 <table> 
  <tbody> 

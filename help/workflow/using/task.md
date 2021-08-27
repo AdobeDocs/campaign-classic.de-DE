@@ -6,20 +6,26 @@ audience: workflow
 content-type: reference
 topic-tags: flow-control-activities
 exl-id: 8549bf8c-ba23-44cb-95f2-c50f2d0f5479
-source-git-commit: 690f7c4e62203127da7a7055afa0ee8ad4a2bce4
-workflow-type: ht
-source-wordcount: '92'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 78%
 
 ---
 
 # Aufgabe{#task}
 
+![](../../assets/common.svg)
+
+>[!AVAILABILITY]
+>
+>:warning: Diese Funktion ist nur in Campaign Classic v7 verfügbar. [Weitere Informationen](../../mrm/using/creating-and-managing-tasks.md)   
+
 In Kampagnen-Workflows können mithilfe einer **[!UICONTROL Aufgabe]** zwei mögliche Szenarien definiert werden: Das erste kommt zum Tragen, wenn die Aufgabe beendet (im Sinn von erfüllt und wenn erforderlich validiert) wurde, das zweite, wenn die Aufgabe nicht beendet wurde. Dies ist beispielsweise der Fall, wenn der Benutzer die Erfüllung abgelehnt hat oder wenn sie überfällig ist.
 
 ![](assets/mrm_task_in_workflow.png)
 
-Funktionsweise und Konfiguration von Aufgaben werden in diesem [Abschnitt](../../mrm/using/creating-and-managing-tasks.md) erläutert.
+Die Konfiguration und Funktionsweise einer Aufgabe wird im [Campaign Classic v7-Handbuch](../../mrm/using/creating-and-managing-tasks.md) beschrieben.
 
 ![](assets/wkf_task_activity.png)
 

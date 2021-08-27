@@ -5,17 +5,26 @@ description: Interaction
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
-workflow-type: ht
-source-wordcount: '153'
-ht-degree: 100%
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 79%
 
 ---
 
 
 # Interaction{#interaction}
 
-Die folgenden Workflows werden standardmäßig mit dem **Angebotsmodul (Interaction)** installiert. Weiterführende Informationen zu dem Modul finden Sie in diesem [Abschnitt](../../interaction/using/interaction-and-offer-management.md).
+![](../../assets/common.svg)
+
+Die folgenden Workflows werden standardmäßig mit dem Add-on **Angebotsmodul (Interaction)** installiert.
+
+Weitere Informationen hierzu finden Sie je nach Campaign-Version in den folgenden Abschnitten:
+
+![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../interaction/using/interaction-and-offer-management.md)
+
+![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/send/interaction/interaction.html)
+
 
 <table> 
  <tbody> 

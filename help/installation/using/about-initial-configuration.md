@@ -6,14 +6,16 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: f77ba178-0dfb-4a2e-b33b-971765d42298
-source-git-commit: 98d646919fedc66ee9145522ad0c5f15b25dbf2e
+source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 8%
 
 ---
 
-# Wichtige Schritte zum Konfigurieren und Bereitstellen Ihrer Instanz{#about-initial-configuration}
+# Wichtige Schritte zum Konfigurieren und Bereitstellen der Instanz{#about-initial-configuration}
+
+![](../../assets/v7-only.svg)
 
 Nachdem die Installation von Adobe Campaign abgeschlossen ist, müssen Sie sie konfigurieren, um sicherzustellen, dass sie effizient mit Ihren Einschränkungen und Ihrer technischen Architektur funktioniert. Die Schritte zum Konfigurieren einer Adobe Campaign-Instanz werden in diesem Kapitel in der folgenden Reihenfolge beschrieben:
 
