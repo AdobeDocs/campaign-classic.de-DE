@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: e927b7fc-95cd-4e08-bab7-ceeb6e67c265
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '2010'
 ht-degree: 96%
@@ -169,4 +169,4 @@ Unter Linux wird _apache_neolane.conf_ jetzt im `conf`-Verzeichnis installiert.
 * Fehlerkorrektur – Es wurde ein Fehler behoben, der dazu führte, dass der Server abstürzte, wenn die Zieldaten des Rests einer **Aufspaltungsaktivität** in einem Workflow angezeigt wurden.
 * Fehlerkorrektur – Es wurde ein Problem behoben, das zum Absturz des Servers führte, indem eine Speicherbeschädigung beim Bereinigen des Ausdrucks-Parsers verhindert wurde. (NEO-26856)
 * Fehlerkorrektur – Es wurde ein Problem in der Anreicherungsaktivität behoben, bei dem Benutzer ohne Administratorrechte Instanzvariablen definiert haben. (NEO-25653)
-* Fehlerkorrektur - Es wurde eine Regression behoben, die den Export von Workflow-Daten in eine FDA-Datenbank blockieren konnte (Teradate, Snowflake).
+* Fehlerkorrektur - Es wurde eine Regression behoben, die den Export von Workflow-Daten in eine FDA-Datenbank (Teradata, Snowflake) blockieren konnte.

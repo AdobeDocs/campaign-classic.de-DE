@@ -3,7 +3,7 @@ product: campaign
 title: Versionshinweise zu Campaign 19.1
 description: Versionshinweise zu Campaign 19.1
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: 01f91abe127629e2d3d0889172969f2f4ba09f46
+source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
 workflow-type: tm+mt
 source-wordcount: '3319'
 ht-degree: 98%
@@ -19,7 +19,7 @@ ht-degree: 98%
 _Donnerstag, 15. April 2021_
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
-* Fehlerkorrektur - Es wurde eine Regression behoben, die den Export von Workflow-Daten in eine FDA-Datenbank blockieren konnte (Teradate, Snowflake).
+* Fehlerkorrektur - Es wurde eine Regression behoben, die den Export von Workflow-Daten in eine FDA-Datenbank (Teradata, Snowflake) blockieren konnte.
 
 **Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
 
