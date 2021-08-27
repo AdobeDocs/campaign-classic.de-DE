@@ -257,7 +257,6 @@ Sie sind unter **Monitoring** > &#39;SMTP Monitoring&#39; gruppiert.
 >
 >* Informationen zur SMTP-Überwachung sind nur verfügbar, wenn der E-Mail-Kanal aktiviert wurde.
 >* Die **[!UICONTROL SMTP-Versandstatistiken]** werden nur angeboten, wenn der Statistikserver auf der Instanz gestartet wird.
-
 >
 
 
@@ -270,7 +269,7 @@ Der Bericht **[!UICONTROL SMTP-Versandstatistiken]** ermöglicht die Steuerung d
 Die Liste der Indikatoren für diesen Bericht ist unten in der Grafik dargestellt.
 
 1. Anzahl gesendeter Nachrichten insgesamt
-1. 
+1. &#x200B;
    * Blaue Linie: Versandbereite Nachrichten, die in den Shaper gelangt sind, d. h. die letzte Phase vor dem Senden von SMTP (entspricht den eingehenden Daten).
 
    * Grüne Zeile: erfolgreich gesendete Nachrichten (entspricht den ausgehenden Daten).

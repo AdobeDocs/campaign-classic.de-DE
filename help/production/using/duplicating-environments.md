@@ -69,7 +69,6 @@ Die folgenden Schritte müssen mit großer Sorgfalt ausgeführt werden: Einige P
 >
 >* Das folgende Verfahren ist in der Sprache PostgreSQL gültig. Wenn die SQL-Sprache unterschiedlich ist (z. B. Oracle), müssen die SQL-Abfragen angepasst werden.
 >* Die folgenden Befehle gelten im Kontext einer **prod**-Instanz und einer **dev**-Instanz unter PostgreSQL.
-
 >
 
 
