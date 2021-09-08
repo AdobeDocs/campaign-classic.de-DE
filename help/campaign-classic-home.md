@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: 661a53b19e0fd8c6038c0957dbe2656152b0814c
+source-git-commit: a53ad78121c530469dc1fdc1aadd71d7d4426890
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 95%
+source-wordcount: '257'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 * **[September Release ist live!](rn/using/latest-release.md)**<br/> In den Versionshinweisen finden Sie neue Funktionen, Verbesserungen und Fehlerbehebungen.
 
-* **[Häufig gestellte Fragen zum Datenschutz bei Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/using/apple-mail-privacy-faq.html)**<br/> Erste Anleitungen als Reaktion auf die Apple-Ankündigung zu iOS 15
+* **[Häufig gestellte Fragen zum Datenschutz bei Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/technotes/apple-mail-privacy-faq.html?lang=de)**<br/> Erste Anleitungen als Reaktion auf die Apple-Ankündigung zu iOS 15
 
 * **[Nutzen Sie eine Verbindung über IMS/Adobe ID? Führen Sie ein Upgrade auf die neuesten Builds aus](technotes/using/ims-updates.md)**<br/> Wenn Sie IMS zur Verbindung mit Campaign verwenden, müssen Sie ein Upgrade durchführen, um auch nach dem** 30. Juni 2021 **eine Verbindung zu Campaign herstellen zu können.
 
