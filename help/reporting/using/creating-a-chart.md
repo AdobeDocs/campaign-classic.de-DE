@@ -6,10 +6,10 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 100%
+source-wordcount: '546'
+ht-degree: 95%
 
 ---
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Zur Verwendung der Kontextdaten aktivieren Sie die entsprechende Option und klicken Sie auf den Link **[!UICONTROL Erweiterte Parameter...]**. Wählen Sie anschließend die Daten aus, auf die sich die Statistiken beziehen werden.
+   * Um Kontextdaten zu verwenden, wählen Sie **[!UICONTROL Kontextdaten]** aus der Dropdownliste **[!UICONTROL Quelle]** aus und klicken Sie auf **[!UICONTROL Erweiterte Einstellungen...]** -Link. Wählen Sie dann die Daten aus, auf die sich die Statistiken beziehen sollen.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -118,32 +118,6 @@ Bei Bedarf können Sie die Anzeigereihenfolge der Werte umkehren. Aktivieren Sie
 ### Konversion: Trichter {#conversion--funnel}
 
 Diese Art von Grafik zeigt die Konversionsrate der gemessenen Elemente.
-
-### Fortschritt: Tacho {#progress--gauge}
-
-Diese Art von Grafik ermöglicht die Anzeige des Fortschritts eines Wertes in Bezug auf einen festgelegten Zielwert. Im unten stehenden Beispiel stellt der schwarze Pfeil die Anzahl an erfolgreich versendeten Sendungen (76) bei einem Zielwert von 100 Sendungen dar. Der Tacho ist in drei Wertebereiche unterteilt, die jeweils einem in der Konfiguration festgelegten Status entsprechen.
-
-![](assets/reporting_graph_type_gauge.png)
-
-Diese Elemente werden in den Grafikparametern definiert.
-
-![](assets/reporting_graph_type_gauge1.png)
-
-* Das Feld **[!UICONTROL Wert]** wird in der Grafik als schwarzer Pfeil dargestellt. Es legt das Element fest, dessen Fortschritt berechnet werden soll. Der zu definierende Wert muss vor-gespeichert werden, bevor er verwendet werden kann.
-* Im Feld **[!UICONTROL Zielvorgabe]** wird der zu erreichende Maximalwert angegeben.
-* Im Feld **[!UICONTROL Andere Markierung]** kann der Grafik ein zweiter Indikator hinzugefügt werden.
-* In den **[!UICONTROL Anzeigebereich]**-Feldern werden die zu berechnenden Intervalle bestimmt.
-* Die **[!UICONTROL Wertebereiche]** ermöglichen es, verschiedene Status (Ohne, Schlecht, Zufriedenstellend, Gut) an Wertegruppen zu vergeben, um den Fortschritt besser zu veranschaulichen.
-
-Über den Link **[!UICONTROL Layout ändern...]** im Bereich **[!UICONTROL Anzeigeparameter]** kann die Anzeige der Grafik konfiguriert werden.
-
-![](assets/reporting_graph_type_gauge2.png)
-
-Durch Aktivierung der Option **[!UICONTROL Wert unter dem Tacho anzeigen]** wird der erreichte Wert unter der Grafik angegeben.
-
-Das Feld **[!UICONTROL Öffnungsgrad]** muss zwischen 0 und 1 definiert werden und ermöglicht die Anzeige des Berichts in Form eines mehr oder weniger vollständig ausgefüllten Kreises. Im oben stehenden Beispiel entspricht der Wert 0,5 einem halboffenen Kreis.
-
-Über das Feld **[!UICONTROL Breite]** kann die Größe der Grafik eingestellt werden.
 
 ## Interaktion mit der Grafik {#interaction-with-the-chart}
 

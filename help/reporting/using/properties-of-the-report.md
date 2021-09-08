@@ -6,9 +6,9 @@ audience: reporting
 content-type: reference
 topic-tags: creating-new-reports
 exl-id: dfa9d329-1086-4f6d-9d03-df159cad5495
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,6 @@ Die Arbeitssprache entspricht der Sprache, in der Sie den Bericht verfassen. Bei
 
 Im Tab **[!UICONTROL Rendering]** haben Sie die Möglichkeit, den Anzeigemodus der Daten auf der Seite anzupassen. Folgende Elemente können ausgewählt werden:
 
-* Die Rendering-Engine für Grafiken: Die Rendering-Engine ist standardmäßig HTML 5.
 * Die Navigation im Bericht: über Schaltflächen oder Links.
 * Die Standardposition der Titel der Berichtelemente. Die Position kann auf Ebene jedes Elements überschrieben werden.
 * Die Vorlage oder das Thema, das zur Erzeugung der Berichtseiten verwendet wird.

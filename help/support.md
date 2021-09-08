@@ -4,7 +4,7 @@ title: 'Hilfe- und Support-Optionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 69f7b494c244fdf01a65ebe8d55c141d947a0980
+source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 100%
@@ -99,7 +99,7 @@ Das Campaign Control Panel ermöglicht Produktadministratoren von Adobe Campaign
 >
 >Das Control Panel steht allen Administratoren zur Verfügung. Die Schritte, um einem Benutzer Administratorzugriff zu gewähren, finden Sie in [diesem Abschnitt](https://experienceleague.adobe.com/docs/control-panel/using/discover-control-panel/managing-permissions.html?lang=de#discover-control-panel).
 >
->Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](rn/using/gs-overview.md)-Build oder dem [neuesten allgemein verfügbaren Build (21.1.3)](rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
+>Beachten Sie, dass Ihre Instanz auf AWS gehostet und mit dem neuesten [Gold Standard](rn/using/gs-overview.md)-Build oder dem [neuesten allgemein verfügbaren Build (21.1.4)](rn/using/latest-release.md) aktualisiert werden muss. Erfahren Sie in [diesem Abschnitt](platform/using/launching-adobe-campaign.md#getting-your-campaign-version), wie Sie Ihre Version überprüfen. Um zu überprüfen, ob Ihre Instanz auf AWS gehostet wird, folgen Sie den Schritten auf [dieser Seite](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de).
 
 ### Zugriff auf das Control Panel
 

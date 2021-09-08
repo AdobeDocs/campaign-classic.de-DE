@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 99%
+source-wordcount: '2403'
+ht-degree: 83%
 
 ---
 
@@ -19,15 +19,65 @@ ht-degree: 99%
 
 Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen aufgelistet, die mit der **aktuellen Campaign Classic-Version** bereitgestellt werden.
 
->[!NOTE]
->
->**Allgemein verfügbare Builds (General Availability, GA)** von Campaign sind: [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md#gs-11) und [Campaign Version 21.1.3](../../rn/using/latest-release.md#release-21-1-3-build-9330).
+Verstehen Sie den Build-Status von Campaign in [dieser Seite](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/green_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
+
+_7. September 2021_
+
+**Sicherheitsverbesserung**
+
+* Fehlerkorrektur - Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Directory Traversal-Angriffen zu verbessern. (NEO-28547)
+
+**Verbesserungen**
+
+* Nach seinem Ende wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Diagrammtyp **Grafik** wurde entfernt. (NEO-30330) [mehr dazu](../../reporting/using/creating-a-chart.md)
+* Bei der Installation der Clientkonsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
+* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt kodiert.
+
+**Sonstige Änderungen**
+
+* Zuvor veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Bereitstellungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
+* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der technische Workflow [Rechnungsstellung](../../production/using/monitoring-processes.md#billing-report) auf der Marketing-Instanz ausgeführt werden kann -
+* Die Identifizierung der Datenquelle wurde in den Daten- und Schema-Tabs des Fensters **Population anzeigen** der Workflow-Transitionen verbessert.
+* Fehlende Datenbankindizes wurden den folgenden Schemas hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
+
+**Korrekturen**
+
+* Fehlerkorrektur - Der Bericht Klicks funktioniert jetzt, wenn Angebote mit dem Versand verknüpft sind. (NEO-26295)
+* Fehlerkorrektur - Bei der Aktivität **Unter-Workflow** tritt jetzt kein Fehler mehr auf, wenn bei ihrer Ausführung keine Ausgabetabelle generiert wurde. (NEO-36242)
+* Verschiedene Probleme beim Exportieren des Berichts **Deskriptive Analyse** in PDF wurden behoben. (NEO-25847)
+* Fehlerkorrektur - Sendungen können jetzt problemlos durchgeführt werden, wenn ein externer E-Mail-Versand verwendet wird. (NEO-37435)
+* Fehlerkorrektur - bei der Verbindung mit Microsoft CRM über die Web-API tritt kein Fehler mehr auf. Die Fehlermeldung wurde entfernt, da die Funktionen nicht betroffen waren.
+* Fehlerkorrektur - Es wurde ein Problem mit der Trackinglog-Deduplizierung behoben, das auftrat, wenn der Mid-Server als Relais zwischen Tracking- und Marketing-Servern festgelegt wurde. (NEO-36285)
+* Korrektur einer Regression, die dazu führte, dass Vault nicht als spezifischer Code-Store verwendet werden konnte.
+* Fehlerkorrektur - Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
+* Fehlerkorrektur - URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
+
+## ![](assets/do-not-localize/red_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
 
 _5. Juni 2021_
 
 **Neue Funktionen**
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Neue Workflow-Aktivität: Datenquelle ändern</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Mit der neuen Workflow-Aktivität <b>Datenquelle ändern</b> können Sie die Datenquelle der Arbeitstabelle eines Workflows ändern. Dies bietet eine höhere Flexibilität bei der Verwaltung von Daten über verschiedene Datenquellen (FDA und lokale Datenbank) hinweg.</p>
+<p>In Adobe Campaign-Workflows werden Daten mithilfe von Arbeits- (oder temporären) Tabellen verwaltet. Während der Workflow-Ausführung geben Arbeitstabellen Daten für Workflow-Aktivitäten frei. Standardmäßig werden die Arbeitstabellen auf derselben Datenbank erstellt wie die Quelle der Daten, die abgefragt werden.</p>
+<p>Weitere Informationen finden Sie im <a href="../../workflow/using/change-data-source.md">entsprechenden Handbuch</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>

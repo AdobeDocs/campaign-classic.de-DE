@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: e5239d99-256b-412b-be20-f64f822da9c3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Über PDF-Dateien mit Variablen {#about-variable-pdf-documents}
 
-Adobe Campaign ermöglicht ausgehend von LibreOffice- oder Microsoft-Word-Dateien das Erstellen von PDF-Dateien mit Variablen, die für personalisierte E-Mail-Anhänge oder Briefpost-Sendungen genutzt werden können.
+Mit Adobe Campaign können Sie variable PDF-Dokumente für E-Mail-Anhänge aus LibreOffice- oder Microsoft Word-Dokumenten generieren.
 
 Unterstützt werden die Formate &quot;.docx&quot;, &quot;.doc&quot; und &quot;.odt&quot;.
 

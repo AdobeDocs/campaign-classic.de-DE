@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: a066eedd2ba7848f6dcefcb1476a0b834cb1d49a
+source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 99%
 
 ---
@@ -438,6 +438,7 @@ ht-degree: 99%
       + [Anmeldedienste](workflow/using/subscription-services.md)
       + [Daten-Update](workflow/using/update-data.md)
       + [CRM-Connector](workflow/using/crm-connector.md)
+      + [Datenquelle ändern](workflow/using/change-data-source.md)
    + Steuerungsaktivitäten {#flow-control-activities}
       + [Über Steuerungsaktivitäten](workflow/using/about-flow-control-activities.md)
       + [Start und Ende](workflow/using/start-and-end.md)
