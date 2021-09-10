@@ -8,7 +8,7 @@ index: y
 internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0399bca5b452533f171076aa87be8d1e8d9ad1ed
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 94%
@@ -24,7 +24,7 @@ ht-degree: 94%
 >Wenn Sie eine ältere Version der Triggers-Integration über die oAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**.
 >Beachten Sie, dass während dieser Umstellung auf [!DNL Adobe I/O] einige eingehende Trigger verloren gehen können.
 >
->Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **18. August 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 30. November 2021 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum 30. November 2021 zu erweitern. Sie müssen [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) für Adobe angeben.
+>Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **18. August 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 30. November 2021 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum 30. November 2021 zu erweitern. Sie müssen [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) zur Adobe angeben.
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
