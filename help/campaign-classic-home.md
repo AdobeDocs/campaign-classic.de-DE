@@ -3,10 +3,10 @@ keywords: Campaign Standard;Startseite;beliebte Themen
 product: campaign
 title: Produktdokumentation zu Adobe Campaign Classic v7
 exl-id: 6b3f1689-80de-49fd-b7ee-7a2a1931d157
-source-git-commit: a53ad78121c530469dc1fdc1aadd71d7d4426890
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 * **[Schützen Ihrer Campaign-Instanzen](technotes/using/acc-config-updates.md)**<br/> Führen Sie eine Aktualisierung auf die neuesten Builds durch, um Ihre Campaign-Plattform zu schützen.
 
-* **[Aktualisierung der Adobe Experience Cloud Triggers-Integration](integrations/using/configuring-adobe-io.md)**<br/> Der alte oAuth-Authentifizierungsdienst wird eingestellt. Erfahren Sie, wie Sie zu Adobe I/O migrieren.
+* **[Aktualisierung der Adobe Experience Cloud Triggers-](integrations/using/configuring-adobe-io.md)**<br/> IntegrationDer alte oAuth-Authentifizierungsdienst hat das Ende der Lebensdauer erreicht: müssen Sie zur Adobe I/O migrieren.
 
 [Weitere Aktualisierungen](/help/rn/using/documentation-updates.md)
 

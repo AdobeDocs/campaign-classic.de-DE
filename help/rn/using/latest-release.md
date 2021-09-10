@@ -6,7 +6,7 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 66533711a67950626c1e6681f88f2aaaea1ebd95
+source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
 ht-degree: 83%
@@ -55,7 +55,7 @@ _7. September 2021_
 * Fehlerkorrektur - Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
 * Fehlerkorrektur - URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
 
-## ![](assets/do-not-localize/red_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
+## ![](assets/do-not-localize/orange_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
 
 _5. Juni 2021_
 

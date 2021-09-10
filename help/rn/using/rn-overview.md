@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
-source-git-commit: 5b1c59c450aaedbd8dbf6df8685817e4a7e02056
+source-git-commit: 21c985d628f672f3c3864fff1a14ab71a24ccfc7
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 97%
+source-wordcount: '422'
+ht-degree: 93%
 
 ---
 
@@ -35,9 +35,9 @@ Die **letzten GA-Builds** sind: [[!DNL Gold Standard] Version 12](../../rn/using
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) – Aktuelle Version mit neuen Funktionen.
 
-Der **aktuelle RC-Build** ist [Campaign Classic-Version 21.1](../../rn/using/latest-release.md).
+![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar**  - Keine Bereitstellung. Keine Fehlerbehebungen. Es wird empfohlen, auf einen neueren Build zu aktualisieren.
 
-![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Bestehende Implementierungen müssen aktualisiert werden.
+![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Keine Fehlerbehebungen. Bestehende Implementierungen müssen aktualisiert werden.
 
 ## Empfehlungen{#recommendations}
 
