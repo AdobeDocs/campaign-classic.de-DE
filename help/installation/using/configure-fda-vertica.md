@@ -1,18 +1,17 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Zugriff auf Vertica konfigurieren
 description: Erfahren Sie, wie Sie den Zugriff auf Vertica über die FDA konfigurieren
 audience: platform
 content-type: reference
 topic-tags: connectors
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: 8b2a9c73-807a-4936-9fd6-9d26c805a31f
+source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 19%
 
 ---
-
 
 # Zugriff auf Vertica konfigurieren {#configure-fda-vertica}
 

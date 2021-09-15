@@ -1,5 +1,4 @@
 ---
-solution: Campaign Classic
 product: campaign
 title: Adobe Analytics-Connector
 description: Erfahren Sie mehr über den Adobe Analytics-Connector.
@@ -7,7 +6,7 @@ feature: Overview
 role: User, Admin
 level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
 workflow-type: tm+mt
 source-wordcount: '1785'
 ht-degree: 100%
@@ -16,7 +15,7 @@ ht-degree: 100%
 
 # Adobe Analytics Connector{#adobe-analytics-connector}
 
-![](../../assets/common.svg)
+![](../../assets/v7-only.svg)
 
 ## Über die Integration mittels Adobe Analytics-Connector {#about-analytics-connector-integration}
 
