@@ -7,9 +7,9 @@ breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2531'
 ht-degree: 99%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 99%
    + [Kompatibilitätsmatrix](rn/using/compatibility-matrix.md)
    + [Technotes](technotes/using/technote.md)
    + [Aktualisierung des iOS-Zertifikats](technotes/using/ios-certificate-update.md)
+   + [Datenschutz bei E-Mails auf Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
    + [Aktualisierungen der Campaign-Konfiguration](technotes/using/acc-config-updates.md)
    + [Aktualisierung von &quot;Getrackte URLs&quot;](technotes/using/tracked-urls.md)
    + [IMS-Aktualisierungen](technotes/using/ims-updates.md)

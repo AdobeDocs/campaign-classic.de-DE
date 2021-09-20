@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: sending-push-notifications
 exl-id: 95bc07cc-8837-4511-81bc-05fad28191c9
-source-git-commit: a129f49d4f045433899fd7fdbd057fb16d0ed36a
-workflow-type: ht
+source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
+workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -43,7 +43,7 @@ Wenn Sie Campaign als On-Premise-Bereitstellung nutzen, müssen Sie ein integrie
 
 Die Installationsschritte sind:
 
-1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package-Import...]** in der Adobe-Campaign-Clientkonsole auf den Package-Import-Assistenten zu.
+1. Greifen Sie über **[!UICONTROL Tools > Erweitert > Package importieren]** in der Adobe Campaign-Clientkonsole auf den Package-Import-Assistenten zu.
 
    ![](assets/package_ios.png)
 
