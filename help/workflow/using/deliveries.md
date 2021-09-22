@@ -5,9 +5,9 @@ description: Erfahren Sie mehr über die standardmäßigen Workflows für Sendun
 audience: workflow
 content-type: reference
 topic-tags: technical-workflows
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 794be3d196ea8292699bbf29c8a7038177763e31
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '323'
 ht-degree: 100%
 
 ---
@@ -35,11 +35,6 @@ Die folgenden Workflows werden standardmäßig mit dem Modul **Sendungen** insta
    <td> <span class="uicontrol">Fakturierung</span> <br /> </td> 
    <td> <span class="uicontrol">billing</span> <br /> </td> 
    <td> Übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer ('billing'). Wird standardmäßig an jedem 25. des Monats gestartet.<br /> </td> 
-  </tr> 
-  <tr> 
-   <td> <span class="uicontrol">Abrechnung (aktive Profile)</span> <br /> </td> 
-   <td> <span class="uicontrol">billingActiveContactCount</span> <br /> </td> 
-   <td> <p>Mit diesem Workflow wird die Anzahl der aktiven Profile gezählt. Er wird standardmäßig jede Nacht um 1 Uhr ausgelöst.</p> <p><strong>Profile</strong> bezeichnet einen Datensatz, der einen Endkunden, einen Prospect oder Lead repräsentiert. Bei diesen Daten kann es sich z. B. um einen Datensatz in der nmsRecipient-Tabelle oder einer externen Tabelle handeln, die die Kennung eines Cookies, eines Kunden oder eines Mobiltelefons oder andere für einen bestimmten Kanal relevante Informationen enthält. Für die Fakturierung werden nur aktive Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.</p> <p>Die Kanäle Facebook und Twitter werden nicht berücksichtigt.</p> <p>Eine Übersicht über die <span class="uicontrol">Anzahl der aktiven Profile</span> erhalten Sie über das Menü <span class="uicontrol">Administration</span> &gt; <span class="uicontrol">Kampagnenverwaltung</span> &gt; <span class="uicontrol">Kundenmetriken</span>.</p> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">Alias-Verwaltung</span> <br /> </td> 

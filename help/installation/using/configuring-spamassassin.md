@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 1f1004e2-dcd2-4ec5-98ec-720c205646d5
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >Einige Konfigurationen können nur von Adobe für Bereitstellungen durchgeführt werden, die von Adobe gehostet werden. Beispielsweise um auf die Server- und Instanzkonfigurationsdateien zuzugreifen. Weitere Informationen zu den verschiedenen Bereitstellungen finden Sie im Abschnitt [Hosting-Modelle](../../installation/using/hosting-models.md) oder auf [dieser Seite](../../installation/using/capability-matrix.md).
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 SpamAssassin ist eine Software zur Filterung unerwünschter E-Mails. In Verbindung mit dieser Software kann Adobe Campaign E-Mails eine Punktzahl zuweisen und feststellen, ob eine Nachricht vor dem Start des Versands wahrscheinlich als unerwünscht erachtet wird. Dazu muss SpamAssassin auf den Anwendungsservern von Adobe Campaign installiert und konfiguriert werden und eine bestimmte Anzahl zusätzlicher Perl-Module erfordern.
 
@@ -169,7 +169,7 @@ cpan Mail::SpamAssassin
 
 ### Aktualisieren von Filterregeln {#updating-filter-rules}
 
-Filterregeln können automatisch mit dem Tool **sa-update** aktualisiert werden. Weitere Informationen finden Sie auf der offiziellen SpamAssassin-Website [http://spamassassin.apache.org/](http://spamassassin.apache.org/) .
+Filterregeln können automatisch mit dem Tool **sa-update** aktualisiert werden. Weitere Informationen finden Sie auf der offiziellen SpamAssassin-Website [https://spamassassin.apache.org/](https://spamassassin.apache.org/) .
 
 In Debian finden Aktualisierungen automatisch jeden Tag statt.
 

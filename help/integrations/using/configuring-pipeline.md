@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 99%
@@ -113,7 +113,7 @@ Der Pipeline-Dienst dokumentiert die von jedem Verbraucher abgerufenen Nachricht
 Für die Konfiguration der Pipeline-Option wird Folgendes empfohlen:
 
 * Wenn Sie Trigger bearbeiten oder hinzufügen, tun Sie dies unter **[!UICONTROL Triggers]**; den Rest sollten Sie nicht bearbeiten.
-* Vergewissern Sie sich, dass die JSON gültig ist. Verwenden Sie einen JSON-Validator, z. B. den auf dieser [Website](http://jsonlint.com/).
+* Vergewissern Sie sich, dass die JSON gültig ist. Verwenden Sie einen JSON-Validator, z. B. den auf dieser [Website](https://jsonlint.com/).
 * &quot;name&quot; entspricht der Auslöser-ID. Ein Platzhalter (*) deckt alle Auslöser ab.
 * &quot;Consumer&quot; entspricht dem Namen der aufrufenden Instanz oder Anwendung.
 * Pipelined unterstützt auch das Thema &quot;Aliases&quot;.

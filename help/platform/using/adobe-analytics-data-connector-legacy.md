@@ -8,9 +8,9 @@ level: Beginner
 exl-id: 5bd12f65-f468-41ab-bbae-e59a6592a803
 hidefromtoc: true
 hide: true
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1810'
 ht-degree: 100%
 
 ---
@@ -32,8 +32,6 @@ ht-degree: 100%
 Der Data Connector (vormals Adobe-Genesis-Connector) ermöglicht Adobe Campaign und Adobe Analytics die Interaktion über das Package **Web-Analytics-Connectoren**. Dabei werden Daten an Adobe Campaign in Form von Segmenten zum Nutzerverhalten nach einer E-Mail-Kampagne weitergeleitet. Im Gegenzug werden Indikatoren und Attribute von E-Mail-Kampagnen von Adobe Campaign an Adobe Analytics – Data Connector gesendet.
 
 Adobe Campaign verfügt mit dem Data Connector über eine Funktion zur Messung der Performance von Online-Marketingkampagnen (Web Analytics). Adobe Campaign ist somit in der Lage, Daten zum Verhalten von Webseitenbesuchern, die auf eine Marketingkampagne reagieren, abzurufen und nach Analyse gezielte Remarketing-Kampagnen zu schalten, um die Konversionsrate zu steigern. Zugleich ermöglichen die Web-Analytics-Tools die Übermittlung der in Adobe Campaign erzeugten Kampagnenindikatoren und -attribute an die entsprechenden Plattformen.
-
-Weitere Informationen zur Implementierung der Integration von Adobe Analytics mit Adobe Campaign finden Sie in diesem [Handbuch](https://helpx.adobe.com/de/marketing-cloud/how-to/analytics-ac.html).
 
 Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 

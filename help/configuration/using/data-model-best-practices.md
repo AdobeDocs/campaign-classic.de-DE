@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 9c59b89c-3542-4a17-a46f-3a1e58de0748
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4024'
 ht-degree: 56%
 
 ---
@@ -23,7 +23,7 @@ Ein besseres Verständnis der in Campaign integrierten Tabellen und ihrer Intera
 
 Lesen Sie [diese Dokumentation](../../configuration/using/about-schema-reference.md) , um mit Campaign-Schemata zu beginnen. Erfahren Sie, wie Sie Erweiterungsschemata konfigurieren, um das konzeptionelle Datenmodell der Adobe Campaign-Datenbank in [diesem Dokument](../../configuration/using/about-schema-edition.md) zu erweitern.
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Das Adobe Campaign-System ist äußerst flexibel und kann über die ursprüngliche Implementierung hinaus erweitert werden. Obwohl die Möglichkeiten unbegrenzt sind, ist es wichtig, die richtigen Entscheidungen zu treffen und eine solide Grundlage zu schaffen, um mit der Entwicklung Ihres Datenmodells zu beginnen.
 
@@ -251,7 +251,7 @@ Standardmäßig haben Versand- und Trackinglogs von Adobe Campaign eine Aufbewah
 * Wenn Sie die Logs länger aufbewahren möchten, sollte diese Entscheidung in Abhängigkeit von der Größe der Datenbank und der Menge der gesendeten Nachrichten sorgfältig getroffen werden. Zur Erinnerung: Die Adobe Campaign-Sequenz ist eine 32-Bit-Ganzzahl.
 * Es wird empfohlen, nicht mehr als eine Milliarde Datensätze gleichzeitig in diesen Tabellen zu haben (etwa 50 % der verfügbaren 2,14 Milliarden IDs), um das Risiko des Verbrauchs aller verfügbaren IDs zu begrenzen. Dies erfordert, dass einige Kunden die Aufbewahrungsdauer unter 180 Tage senken.
 
-Weitere Informationen zur Aufbewahrung von Daten finden Sie in den [Richtlinien zum Datenschutz und zur Sicherheit von Campaign](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html#consent).
+Weitere Informationen zur Aufbewahrung von Daten finden Sie in den [Richtlinien zum Datenschutz und zur Sicherheit von Campaign](../../platform/using/privacy-and-recommendations.md).
 
 Weitere Informationen zum Campaign-Datenbasisbereinigungs-Workflow [finden Sie in diesem Abschnitt](../../production/using/database-cleanup-workflow.md).
 

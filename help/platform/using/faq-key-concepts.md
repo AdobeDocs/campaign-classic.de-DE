@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: f0d884ae-0789-4ad9-a8fa-adeffbb560ea
-source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '866'
 ht-degree: 100%
 
 ---
@@ -56,7 +56,7 @@ Die damit einhergehenden Rechte und Einschränkungen ermöglichen dem Benutzer F
 
 Adobe Campaign bietet eine Reihe von Tools, die Sie bei der Einhaltung von Datenschutzbestimmungen wie DSGVO und CCPA unterstützen.
 
-In [diesem Dokument](https://helpx.adobe.com/de/campaign/kb/campaign-privacy-overview.html) finden Sie alle in Adobe Campaign verfügbaren Tools und Funktionen sowie Best Practices, die Ihnen helfen, die DSGVO bei der Nutzung unseres Dienstes einzuhalten. Implementierungsschritte für Campaign Classic werden in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) beschrieben.
+In [diesem Dokument](privacy-and-recommendations.md) finden Sie alle in Adobe Campaign verfügbaren Tools und Funktionen sowie Best Practices, die Ihnen helfen, die DSGVO bei der Nutzung unseres Dienstes einzuhalten. Implementierungsschritte für Campaign Classic werden in [diesem Artikel](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html) beschrieben.
 
 ## Über welche Benutzeroberflächen-Konzepte von Campaign sollte ich Bescheid wissen? {#what-are-campaign-user-interface-concepts-i-should-know-}
 
@@ -126,7 +126,7 @@ Hier erfahren Sie, wie Sie ein [Web-Formular erstellen](../../web/using/about-we
 
 Adobe beurteilt laufend die Funktionen des Produkts. Manche Funktionen werden durch leistungsfähigere Versionen ersetzt, bei anderen werden ausgewählte Komponenten erneut implementiert, um besser für künftige Anforderungen oder Erweiterungen gerüstet zu sein. Da Campaign Drittanbieter-Tools verwendet, wird die Kompatibilität regelmäßig aktualisiert, damit nur unterstützte Versionen implementiert werden.
 
-[Hier erfahren Sie mehr darüber](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
+[Hier erfahren Sie mehr darüber](../../rn/using/deprecated-features.md).
 
 ## Gibt es neue Dokumentationsaktualisierungen und Hilfematerialien? {#are-there-new-documentation-updates-and-help-materials-released-}
 

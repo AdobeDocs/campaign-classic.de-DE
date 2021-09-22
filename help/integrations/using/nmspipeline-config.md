@@ -4,10 +4,10 @@ title: Konfigurieren der Integration
 description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '377'
+ht-degree: 96%
 
 ---
 
@@ -77,7 +77,7 @@ Der Parameter &quot;consumer&quot; identifiziert die Instanz als einen dieser Ve
 ## Konfigurieren der Pipeline-Option {#configure-pipeline-option}
 
 Fügen Sie unter dem Array &quot;Auslöser&quot; Experience Cloud-Auslöser hinzu oder bearbeiten Sie sie. Lassen Sie den Rest unverändert.
-Vergewissern Sie sich mithilfe dieser [Website](http://jsonlint.com/), dass die JSON gültig ist.
+Vergewissern Sie sich mithilfe dieser [Website](https://jsonlint.com/), dass die JSON gültig ist.
 
 * &quot;name&quot; ist die Auslöser-ID. Mit einem Platzhalter (*) werden alle Auslöser erfasst.
 * &quot;Consumer&quot; ist eine eindeutige Zeichenfolge, die die nlserver-Instanz eindeutig identifiziert. Normalerweise kann dies der Instanzname selbst sein. Bei verschiedenen Umgebungen (dev/stage/prod) müssen Sie jedoch sicherstellen, dass der Name für jede einzelne Instanz eindeutig ist, damit jede Instanz eine Kopie der Nachricht erhält.

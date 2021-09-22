@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: using-seed-addresses
 exl-id: 1f55eda8-c393-4f86-9118-01bcd981c6df
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 1113afb573bad958ec7cc2cf008f71c8e751e8f9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 100%
+source-wordcount: '389'
+ht-degree: 75%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 100%
 
 Testadressen ermöglichen den Versand an Empfänger, die nicht den vorliegenden Zielgruppenkriterien entsprechen. Auf diese Weise können Empfänger, die außerhalb des Versandperimeters liegen, die Nachricht so wie jeder andere Empfänger innerhalb der Zielgruppe erhalten.
 
-Einer der Hauptgründe für die Verwendung von Testadressen ist **der Schutz Ihrer Mailingliste**. Wenn Sie Testadressen in Ihre Mailingliste einfügen, erfahren Sie, wenn diese von einer Drittpartei verwendet wird, da auch die Testadressen die Sendungen an Ihre Mailingliste erhalten.
+Einer der Hauptgründe für ihre Verwendung ist **Ihr Schutz der Mailingliste**. Wenn Sie Testadressen in Ihre Mailingliste einfügen, können Sie feststellen, ob sie von einem Drittanbieter verwendet werden. Die Testadressen, die darin enthalten sind, erhalten die Sendungen an Ihre Mailingliste.
 
-Zusätzlich können Sie durch die Durchführung von Testsendungen an Testadressen die **Personalisierung und das Rendering Ihrer Sendungen vor dem Versand in der Vorschau ansehen und testen** (siehe [Testadressen als Zielgruppe verwenden](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).
+Darüber hinaus können Sie mit Testadressen **die Personalisierung und das Rendering der Sendungen vor dem Versand in der Vorschau ansehen und testen, indem Sie ihnen Testsendungen senden (siehe [Testadressen als Testversand verwenden](steps-defining-the-target-population.md#using-seed-addresses-as-proof)).**
 
 ![](assets/do-not-localize/how-to-video.png) [Mehr zu dieser Funktion erfahren Sie im Video.](steps-defining-the-target-population.md#seeds-and-proofs-video).
 
@@ -37,7 +37,7 @@ Testadressen werden entweder durch Importieren zur Versandzielgruppe hinzugefüg
 >
 >Testadressen gehören nicht zur Empfängertabelle, sondern werden in einer separaten Tabelle erstellt. Wenn Sie die Empfängertabelle mit neuen Daten erweitern, muss die Testadressen-Tabelle ebenfalls mit denselben Daten erweitert werden. Andernfalls werden diese Daten nicht für Testadressen berücksichtigt.
 >
->In diesem Abschnitt wird ein Beispiel für die Erweiterung der Tabelle mit Testadressen dargestellt: [Anwendungsbeispiel: Auswahl von Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md).
+>Ein Beispiel für die Erweiterung der Testadressen-Tabelle finden Sie in diesem Abschnitt: [Anwendungsfall: Testadressen nach Kriterien](use-case--selecting-seed-addresses-on-criteria.md) auswählen.
 
 Für den Briefpost-Versand werden Testadressen während der Extraktion hinzugefügt und im Ausgabedokument unter die restlichen Informationen gemischt.
 

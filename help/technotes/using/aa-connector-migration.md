@@ -2,14 +2,15 @@
 product: campaign
 title: Migrieren zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
+exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
+source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 94%
+source-wordcount: '850'
+ht-degree: 92%
 
 ---
 
-# Migrieren zum Adobe Analytics Connector {#acc-aa-faq}
+# Migrieren vorhandener Genesis-Integrationen zu Adobe Analytics Connector {#acc-aa-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -49,12 +50,10 @@ Wenn Sie den vorhandenen Adobe Analytics Data Connector (früher Genesis-Integra
 
 Sie müssen **vor dem 1. März 2022** das Upgrade auf Campaign 21.1.3 (oder höher) vornehmen.
 
-Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um für Ihre Instanz(en) das Upgrade auf die neuere Version vorzunehmen.
+Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um für Ihre Instanz(en) das Upgrade auf die neuere Version vorzunehmen. Anschließend können Sie [Adobe Analytics-Connector](../../platform/using/adobe-analytics-connector.md) verwenden.
 
 Als On-Premise-/Hybrid-Kunde müssen Sie das Upgrade auf eine der neueren Versionen vornehmen, um von der neuen Integration profitieren zu können.
-
-Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](../../platform/using/adobe-analytics-connector.md) in Adobe Analytics Connector implementieren und einen nahtlosen Übergang sicherstellen.
-
+Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](../../platform/using/adobe-analytics-provisioning.md) in Adobe Analytics Connector implementieren und einen nahtlosen Übergang sicherstellen.
 
 ## Häufig gestellte Fragen{#faq-aa}
 

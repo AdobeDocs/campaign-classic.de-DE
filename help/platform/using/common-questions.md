@@ -6,9 +6,9 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 9f1b0974-f8bd-430f-88fe-9c09b0074d3b
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '516'
 ht-degree: 100%
 
 ---
@@ -74,4 +74,4 @@ Die aktuellen Versionshinweise für Campaign Classic finden Sie [auf dieser Seit
 Sie können Ihre Domain in Subdomains unterteilen, um Ihre Marken oder unterschiedlichen Textsorten (Transaktionsnachrichten, Marketing-Informationen usw.) voreinander zu trennen.
 Adobe nutzt das Domain Name System (DNS) für den E-Mail-Versand. Dadurch kann der Kunde seinen Markenauftritt beibehalten, indem ein DNS-Alias mit seinem Domain-Namen verwendet wird, und Adobe kann autonom alle technischen Best Practices umsetzen, um die Zustellbarkeit von E-Mails zu optimieren.
 
-[Hier erfahren Sie mehr darüber](https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html).
+[Hier erfahren Sie mehr darüber](https://experienceleague.adobe.com/docs/control-panel/using/subdomains-and-certificates/setting-up-new-subdomain.html?lang=de).

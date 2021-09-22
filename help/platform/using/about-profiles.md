@@ -6,10 +6,10 @@ feature: Profiles, Audiences
 role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 100%
+source-wordcount: '849'
+ht-degree: 98%
 
 ---
 
@@ -93,13 +93,11 @@ Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt wer
 
 Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
 
-Die Profile, die während der Versandvorbereitung ausgeschlossen wurden (Typologieregeln, Quarantänen), werden nicht berücksichtigt. Ein Profil, das mehrere Sendungen erhalten hat, wird nur einmal gezählt.
+Ein Profil, das für mehrere Sendungen ausgewählt wurde, wird nur einmal gezählt.
 
 >[!NOTE]
 >
 >Die Kanäle Facebook und Twitter werden nicht berücksichtigt.
-
-Gehen Sie im Campaign-Explorer zu **[!UICONTROL Administration > Kampagnenverwaltung > Kundenmetriken]**, um einen Überblick über die Anzahl der aktiven Profile zu erhalten. Die tatsächliche Zählung wird durch den [technischen Workflow](../../workflow/using/about-technical-workflows.md) **[!UICONTROL Zählung aktiver Profile (Billing)]** ([!UICONTROL billingActiveContactCount]) ausgeführt. Dieser Workflow wird täglich ausgeführt und fügt die neuen Daten zum vorhandenen Bericht für den aktuellen Zeitraum im Ordner **[!UICONTROL Kundenmetriken]** hinzu.
 
 Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. Sie ist nicht für Ausführungsinstanzen verfügbar, d. h. MID (Mid-Sourcing)- und RT (Message Center-/Echtzeit-Messaging)-Instanzen.
 
@@ -107,7 +105,7 @@ Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. 
 >
 >Sie können auch die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Control Panel von Campaign überwachen. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de).
 
-## Anleitungsvideo {#create-profiles-video}
+## Tutorial {#create-profiles-video}
 
 Erfahren Sie, wie Sie auf Profildaten zugreifen, Profile sortieren und filtern und Profile manuell erstellen und verwalten können.
 

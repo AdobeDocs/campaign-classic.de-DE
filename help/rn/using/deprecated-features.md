@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
-source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '1664'
-ht-degree: 97%
+source-wordcount: '1657'
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr> 
   <tr> 
    <td>Web-Anwendungen – Microsites</td>
-   <td>Ab Campaign-Version 18.10 sind Microsites nicht mehr verfügbar. Sie können die Sicherheit erhöhen, indem Sie den Zugriff auf dedizierte Domains in Adobe Campaign-Konfigurationsdateien beschränken und in Campaign unter Verwendung von DNS-Aliassen personalisierte URLs verwenden. <a href="https://helpx.adobe.com/de/campaign/kb/domain-name-delegation.html">Weitere Informationen</a></td>
+   <td>Ab Campaign-Version 18.10 sind Microsites nicht mehr verfügbar. Sie können die Sicherheit erhöhen, indem Sie den Zugriff auf dedizierte Domains in Adobe Campaign-Konfigurationsdateien beschränken und in Campaign unter Verwendung von DNS-Aliassen personalisierte URLs verwenden.</td>
   </tr> 
   <tr> 
    <td>Push-Benachrichtigungen – iOS Binary Connector</td>
@@ -183,7 +183,7 @@ Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden We
 
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden Tools kompatibel.
 
-* Java JDK 7. [Weitere Informationen](http://www.oracle.com/technetwork/java/javase/eol-135779.html)
+* Java JDK 7. [Weitere Informationen](https://www.oracle.com/technetwork/java/javase/eol-135779.html)
 * Libre Office 3.5 / 4.3 / 5.x, außer wenn in ein anderes Tool eingebettet. [Weitere Informationen](https://wiki.documentfoundation.org/ReleasePlan/Archive#End-of-Life_Releases)
 
 ### Datenbank-Engines {#dbe-eol}
@@ -201,14 +201,14 @@ Ab Version 20.2 ist Adobe Campaign nicht mehr mit den folgenden FDA-Servern komp
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit den folgenden FDA-Servern kompatibel:
 
 * PostgreSQL 9.3. [Weitere Infos](https://www.postgresql.org/support/versioning)
-* MySQL 5.5. [Weitere Infos](http://www.fromdual.com/support-for-mysql-from-oracle)
-* DB2 9.5. [Weitere Infos](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* MySQL 5.5. [Weitere Infos](https://www.fromdual.com/support-for-mysql-from-oracle)
+* DB2 9.5. [Weitere Infos](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
 * Teradata 14 – 14.1. [Weitere Infos](https://community.teradata.com/t5/Database/Teradata-Database-Product-Life-Cycle/td-p/35068)
 
 Campaign Classic ist mit den folgenden Servern in Federated Data Access (FDA) nicht mehr kompatibel.
 
-* DB2 UDB 9.5, 9.7. Neuere Versionen von DB2 werden über Federated Data Access (FDA) unterstützt. [Weitere Informationen](http://www-01.ibm.com/support/docview.wss?uid=swg21168270)
-* Oracle 9i, 10G R2. Neuere Versionen von Oracle werden über Federated Data Access (FDA) unterstützt. [Weitere Informationen](http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
+* DB2 UDB 9.5, 9.7. Neuere Versionen von DB2 werden über Federated Data Access (FDA) unterstützt. [Weitere Informationen](https://www-01.ibm.com/support/docview.wss?uid=swg21168270)
+* Oracle 9i, 10G R2. Neuere Versionen von Oracle werden über Federated Data Access (FDA) unterstützt. [Weitere Informationen](https://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf)
 * PostgreSQL 8.3, 8.4, 9.0, 9.1, 9.2. Neuere Versionen von PostgreSQL werden über Federated Data Access (FDA) unterstützt. [Weitere Informationen](https://www.postgresql.org/support/versioning)
 * MSSQL 2000, 2005, 2008 R2. Neuere Versionen von SQL Server werden über Federated Data Access (FDA) unterstützt. [Weitere Informationen](https://support.microsoft.com/en-us/lifecycle/search/1044)
 * MySQL 5.1. Neuere Versionen von MySQL werden über Federated Data Access (FDA) unterstützt. [Weitere Informationen](https://en.wikipedia.org/wiki/InfiniDB)

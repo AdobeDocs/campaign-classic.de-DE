@@ -9,9 +9,9 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '810'
 ht-degree: 100%
 
 ---
@@ -109,7 +109,7 @@ _25. Juni 2018_
 
 decryptString
 
-Die **decryptString**-Funktion ist veraltet. Weitere Informationen finden Sie im Artikel [Veraltete und entfernte Funktionen](https://helpx.adobe.com/de/campaign/kb/deprecated-and-removed-features.html).
+Die **decryptString**-Funktion ist veraltet. Weitere Informationen finden Sie im Artikel [Veraltete und entfernte Funktionen](deprecated-features.md).
 
 Für Neukunden wird diese Funktion nun nur zum Entschlüsseln der verschlüsselten ID des Empfängers auf Landingpages verwendet. Zum Entschlüsseln von in einem externen Konto gespeicherten Passwörtern verwenden Sie die neue **decryptPassword**-Funktion.
 
