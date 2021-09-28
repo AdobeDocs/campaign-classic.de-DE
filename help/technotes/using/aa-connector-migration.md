@@ -3,10 +3,10 @@ product: campaign
 title: Migrieren zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
-source-git-commit: 4b6fc31aefd12b3667501503fc5e10d5f1f0738f
+source-git-commit: 6d3e21fa00771a47d846d502e2d4d5971aa39b29
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 92%
+source-wordcount: '855'
+ht-degree: 88%
 
 ---
 
@@ -18,7 +18,7 @@ Ab Campaign Classic Version v7 21.1.3 wird der Adobe Analytics Data Connector ni
 
 Am 1. August 2021 wurde Adobe Campaign Classic aus der alten Data Connectors-Benutzeroberfläche entfernt. Vorhandene Campaign-Integrationen werden jedoch bis zum 1. März 2022 weiterhin Daten erfassen und an Adobe Analytics weitergeben. Nach diesem Datum wird die Integration die Erfassung und Weitergabe von Daten an Adobe Analytics einstellen.
 
-Sie müssen zur neuen Adobe Analytics Connector-Integration in Adobe Exchange migrieren, die die alte Data Connectors-Integration ersetzt, wie auf [dieser Seite](../../platform/using/adobe-analytics-connector.md) beschrieben.
+**Sie müssen** die neue Adobe Analytics Connector-Integration in Adobe Exchange implementieren, die die veraltete Data Connectors-Integration ersetzt. Weitere Informationen zu Adobe Analytics Connector finden Sie auf [dieser Seite](../../platform/using/adobe-analytics-connector.md).
 
 >[!NOTE]
 >
