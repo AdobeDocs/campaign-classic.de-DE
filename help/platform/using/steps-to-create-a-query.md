@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-queries
 exl-id: cf914366-8bac-4d68-a0cc-2a43d102eef2
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
 ht-degree: 100%
 
@@ -31,13 +31,13 @@ Folgende Schritte sind auszuführen, um eine Abfrage in Adobe Campaign zu erstel
 >Alle diese Schritte können im generischen Abfragetool durchgeführt werden. In anderen Anwendungskontexten sind u. U. gewisse Schritte nicht nötig.\
 >Das Abfrage-Tool wird in [diesem Abschnitt](../../workflow/using/query.md) beschrieben.
 
-## 1. Schritt - Tabelle auswählen {#step-1---choose-a-table}
+## 1. Schritt – Tabelle auswählen {#step-1---choose-a-table}
 
 Wählen Sie im Fenster **[!UICONTROL Dokumenttyp]** die Tabelle aus, die die Daten enthält, für die Sie eine Abfrage erstellen möchten. Bei Bedarf können Sie die Auswahl unter Verwendung des Filterfeldes oder der Schaltfläche **[!UICONTROL Filter]** einschränken.
 
 ![](assets/query_editor_nveau_21.png)
 
-## 2. Schritt - Zu extrahierende Daten auswählen {#step-2---choose-data-to-extract}
+## 2. Schritt – Zu extrahierende Daten auswählen {#step-2---choose-data-to-extract}
 
 Wählen Sie im Fenster **[!UICONTROL Zu extrahierende Daten]** die Felder aus, die als Spalten angezeigt werden sollen.
 
@@ -59,7 +59,7 @@ Die Daten der Ausgabespalten können gruppiert werden. Wählen Sie hierfür im F
 
 * Die Funktion **[!UICONTROL Dubletten löschen (DISTINCT)]** dedupliziert die Daten in den Ausgabespalten, d. h. doppelte Einträge werden nicht angezeigt. Sollen z. B. Nachname, Vorname und E-Mail-Adresse der Empfänger angezeigt werden, wird für mehrere Datensätze mit identischem Nachnamen, Vornamen und E-Mail-Adresse nur ein Datensatz angezeigt.
 
-## 3. Schritt - Daten sortieren {#step-3---sort-data}
+## 3. Schritt – Daten sortieren {#step-3---sort-data}
 
 Im Fenster **[!UICONTROL Sortierung]** können Sie die Reihenfolge der Datenanzeige bestimmen. Mithilfe der Pfeile lässt sich die Spaltenreihenfolge verändern:
 
@@ -70,7 +70,7 @@ Im folgenden Beispiel werden die Daten nach dem Alter der Empfänger, vom jüngs
 
 ![](assets/query_editor_nveau_57.png)
 
-## 4. Schritt - Daten filtern {#step-4---filter-data}
+## 4. Schritt – Daten filtern {#step-4---filter-data}
 
 Um die Daten einzuschränken, bietet das Abfragetool die Möglichkeit, Filter zu verwenden.
 
@@ -107,7 +107,7 @@ Für Benutzer, die diese Programmiersprache beherrschen, kann die **[!UICONTROL 
 
 ![](assets/query_editor_nveau_99.png)
 
-## 5. Schritt - Daten formatieren {#step-5---format-data}
+## 5. Schritt – Daten formatieren {#step-5---format-data}
 
 Nach der Auswahl der Einschränkungsfilter gelangen Sie in das Fenster der **[!UICONTROL Datenformatierung]**. Hier können Sie die Anzeigereihenfolge der Ausgabespalten festlegen, die Schreibweise (Groß- oder Kleinschreibung) der Daten ändern oder die Spaltentitel anpassen. Außerdem besteht die Möglichkeit, berechnete Felder hinzuzufügen.
 
@@ -127,7 +127,7 @@ In der Spalte **[!UICONTROL Schreibweise]** haben Sie die Möglichkeit, Groß- u
 
 ![](assets/query_editor_nveau_42.png)
 
-## 6. Schritt - Vorschau der Daten anzeigen {#step-6---preview-data}
+## 6. Schritt – Vorschau der Daten anzeigen {#step-6---preview-data}
 
 Im letzten Schritt, der **[!UICONTROL Datenvorschau]**, können Sie sich das Ergebnis der Abfrage ansehen. Wählen Sie hierfür **[!UICONTROL Datenvorschau starten]** aus. Das Ergebnis liegt in Spalten oder im XML-Format vor. Wählen Sie **[!UICONTROL Erzeugte SQL-Abfragen]** aus, um sich die SQL-Entsprechung der Abfrage anzusehen.
 
