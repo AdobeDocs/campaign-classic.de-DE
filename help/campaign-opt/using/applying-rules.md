@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: 09ec0fc0-76ed-4c73-8bdf-c931e2103aa9
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1041'
 ht-degree: 100%
 
@@ -136,7 +136,7 @@ Mögliche Werte:
 >Die Affinitätenverwaltung gilt nicht für **[!UICONTROL Filter]**-Typologien.\
 >Affinitäten werden direkt in der Konfigurationsdatei der Instanz auf dem Adobe-Campaign-Server bestimmt. Weitere Informationen hierzu finden Sie in [diesem Abschnitt](../../installation/using/about-initial-configuration.md).
 
-### Campaign Optimization und Distributed Marketing {#campaign-optimization-and-distributed-marketing}
+### Kampagnenoptimierung und dezentrales Marketing {#campaign-optimization-and-distributed-marketing}
 
 Im Tab **[!UICONTROL Dezentrales Marketing]** erfolgt das erneute Mapping der Typologie, die bei der Bestellung einer partizipativen Kampagne angewendet wird. Die an dieser Stelle für eine Lokalstelle festgelegten Typologien/Regeln ersetzen die von der Zentralstelle definierten Typologien/Regeln. Das erneute Mapping ermöglicht die Anpassung der Regeln der Zentralstelle an die der Lokalstellen, die die Kampagne bestellt haben.
 
