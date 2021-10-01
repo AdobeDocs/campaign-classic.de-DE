@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 74feb13f-0994-4a6a-ae4f-2538b07cc9c0
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1628'
 ht-degree: 100%
 
@@ -44,7 +44,7 @@ Ausgehend von der Versandübersicht stehen diverse Berichte zur Verfügung, die 
    * **[!UICONTROL Versandstatistiken]**: siehe [Versandstatistiken](../../reporting/using/global-reports.md#delivery-statistics).
    * **[!UICONTROL Öffnungsverteilung]**: siehe [Öffnungsverteilung](../../reporting/using/global-reports.md#breakdown-of-opens).
 
-## Trackingindikatoren {#tracking-indicators}
+## Tracking-Indikatoren {#tracking-indicators}
 
 Dieser Bericht enthält die wichtigsten Indikatoren, die die Verfolgung des Empfängerverhaltens beim Erhalt eines Versands ermöglichen. Er bietet Zugriff auf Versand- und Empfangsstatistiken, Öffnungs- und Klickraten, erzeugte Clickstreams, Webtracking-Statistiken sowie Teilungsaktivitäten in sozialen Netzwerken.
 
