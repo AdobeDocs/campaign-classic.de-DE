@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 88995fb3-d336-4355-acd4-33118dd0e2b0
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Folgende Benutzergruppen sind im Zusammenhang mit Workflows von Bedeutung:
 
 ## Spezifische Berechtigungen {#named-rights}
 
-Nur die spezifische Berechtigung WORKFLOW bezieht sich ausschließlich auf die Bearbeitung von Workflows. Sie berechtigt zu Erstellung, Start und Stopp von Workflows. Vorraussetzung ist, dass die entsprechenden Benutzer mindestens über einen Lesezugriff auf den Workflow-Ordner verfügen. Für Zielgruppen-Workflows ist außerdem der Lesezugriff auf den Ordner **[!UICONTROL Profile und Zielgruppen]** erforderlich.
+Nur die spezifische Berechtigung WORKFLOW bezieht sich ausschließlich auf die Bearbeitung von Workflows. Sie berechtigt zu Erstellung, Start und Stopp von Workflows. Voraussetzung ist, dass die entsprechenden Benutzer mindestens über einen Lesezugriff auf den Workflow-Ordner verfügen. Für Zielgruppen-Workflows ist außerdem der Lesezugriff auf den Ordner **[!UICONTROL Profile und Zielgruppen]** erforderlich.
 
 ## Workflow-Ausführungskonto {#workflow-execution-account}
 
