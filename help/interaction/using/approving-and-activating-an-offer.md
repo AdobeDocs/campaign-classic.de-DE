@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: cf7649fe-f62a-4dfa-a19e-9c1ca545e3e3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
 ht-degree: 100%
 
@@ -85,7 +85,7 @@ Die Eignungsvalidierung umfasst die Prüfung der Gewichtung sowie der im Angebot
 
    ![](assets/offer_validate_010.png)
 
-## Validierungsverfolgung {#approval-tracking}
+## Validierungs-Tracking {#approval-tracking}
 
 Der Validierungsverlauf kann im Dashboard nachvollzogen werden. Klicken Sie hierfür auf den Link **[!UICONTROL Protokoll anzeigen/ausblenden]**.
 
@@ -105,7 +105,7 @@ Sie haben die Möglichkeit, eine bereits erfolgte Validierung zurückzusetzen. G
 
 ![](assets/offer_validate_013.png)
 
-## Angebote freigeben {#publishing-the-offer}
+## Angebote veröffentlichen {#publishing-the-offer}
 
 Nach Validierung wird das Angebot für die Live-Umgebung freigegeben. Dies geschieht mithilfe eines technischen Workflows, der automatisch startet, sobald der Validierungszyklus eines Angebots abgeschlossen wurde. Der Workflow **[!UICONTROL Angebotsbenachrichtigung]** startet darüber hinaus stündlich, um die Platzierungen und im Angebotskatalog enthaltene Kategorien der Design-Umgebung mit denen der Live-Umgebung zu synchronisieren.
 
