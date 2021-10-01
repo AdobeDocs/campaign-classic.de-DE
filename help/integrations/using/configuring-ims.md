@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: b70ca220-1c81-4b23-b07a-a2cd694877fe
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Die Nutzung dieser Funktion setzt die Installation der neuesten Version der Kons
 
 ## Package-Installation {#installing-the-package}
 
-Sie müssen das Package **[!UICONTROL Integration mit Adobe Experience Cloud]** installieren. Die Integration-Package-Installation entspricht der Installation eines Standard-Packages, die auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md) beschrieben wird.
+Sie müssen das Package **[!UICONTROL Integration mit Adobe Experience Cloud]** installieren. Die Installation eines Integrations-Packages entspricht der Installation eines Standard-Packages, die auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md) beschrieben wird.
 
 ![](assets/ims_6.png)
 
