@@ -1,23 +1,23 @@
 ---
 product: campaign
-title: Hypothesenverfolgung
-description: Erfahren Sie, wie Sie Hypothesen im Campaign Response Manager verfolgen können.
+title: Tracking von Hypothesen
+description: Erfahren Sie, wie Sie Hypothesen in Campaign Response Manager verfolgen.
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1dc6d03b-698c-4750-9563-0676fcd185df
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Hypothesenverfolgung{#hypothesis-tracking}
+# Tracking von Hypothesen{#hypothesis-tracking}
 
 ![](../../assets/v7-only.svg)
 
-Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Adobe-Campaign-Plattform eingesehen werden. So sind die von der Hypothese berechneten Indikatoren und die Empfängerreaktionen in der Messhypothese selbst verfügbar; sie werden darüber hinaus auch in den betreffenden Kampagnen und Sendungen in Form von Hypothesenberichten anschaulich dargestellt.
+Das Ergebnis der Hypothesenberechnungen kann auf unterschiedlichen Ebenen der Adobe Campaign-Plattform eingesehen werden. So sind die von der Hypothese berechneten Indikatoren und die Empfängerreaktionen in der Messhypothese selbst verfügbar; sie werden darüber hinaus auch in den betreffenden Kampagnen und Sendungen in Form von Hypothesenberichten anschaulich dargestellt.
 
 ## Hypothesenergebnisse {#hypothesis-results}
 
