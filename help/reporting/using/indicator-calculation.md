@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: 52ca1595-16b3-4323-9122-d1ac13c08147
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3021'
 ht-degree: 100%
 
@@ -494,7 +494,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Dienste]** (nms:service).
  </tbody> 
 </table>
 
-## Trackingindikatoren {#tracking-indicators-1}
+## Tracking-Indikatoren {#tracking-indicators-1}
 
 Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstatistiken]** (nms:deliveryLogStats) und **[!UICONTROL Konsolidiertes Tracking]** (nms:trackingStats).
 
@@ -611,7 +611,7 @@ Dieser Bericht basiert auf den Tabellen **[!UICONTROL Versand- und Trackingstati
    <td> count(Iif([url/@type]=4 oder [url/@type]=5, @id, 0))<br /> </td> 
   </tr> 
   <tr> 
-   <td> Transaktionen<br /> </td> 
+   <td> Transactions<br /> </td> 
    <td> @transaction<br /> </td> 
    <td> Zählung aller @id mit URL-Typ "Transaktion".<br /> </td> 
    <td> count(Iif([url/@type]=5, @id, 0))<br /> </td> 
@@ -812,7 +812,7 @@ Dieser Bericht basiert auf der Tabelle **[!UICONTROL Versand]** (nms:delivery).
  </thead> 
  <tbody> 
   <tr> 
-   <td> Transaktionen<br /> </td> 
+   <td> Transactions<br /> </td> 
    <td> @transactions<br /> </td> 
    <td> Summe aller @totalClicks, deren URL-Typ gleich "Transaktion" ist.<br /> </td> 
    <td> sum(Iif([url/@type] = 5, @totalClicks, 0))<br /> </td> 
@@ -916,17 +916,17 @@ Dieser Bericht basiert auf den **Versand-** und **Trackinglog-** Tabellen (nms:d
 
 ## Andere Indikatoren {#other-indicators}
 
-Der über den Knoten **Sendungen(nms:delivery)>Indikatoren** zugängliche Indikator **Gesendet** (@sent) entspricht der Gesamtanzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschliesslich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
+Der über den Knoten **Sendungen (nms:delivery) > Indikatoren** zugängliche Indikator **Gesendet** (@sent) entspricht der Gesamtanzahl der an den Dienstleister gesendeten SMS. Dieser Indikator wird ausschließlich für SMS-Sendungen verwendet und darf nicht für andere Versandtypen genutzt werden. Er ist nicht zu verwechseln mit den Indikatoren **@success** und **@processed**.
 
 ## Indikatoren synchronisieren {#indicator-synchronization}
 
-Falls Sie Abweichungen oder Inkohärenzen in gewissen Indikatoren bemerken, können Sie manuell eine Synchronisation durchführen. Markieren Sie im Adobe-Campaign-Explorer den entsprechenden Versand, klicken Sie mit der rechten Maustaste und wählen Sie die Option **[!UICONTROL Aktionen > Sende- und Berichtindikatoren neu berechnen...]**. Klicken Sie auf **[!UICONTROL Weiter]** und schließlich auf **[!UICONTROL Beenden]**.
+Falls Sie Abweichungen oder Inkohärenzen in gewissen Indikatoren bemerken, können Sie manuell eine Synchronisation durchführen. Markieren Sie im Adobe Campaign-Explorer den entsprechenden Versand, klicken Sie mit der rechten Maustaste und wählen Sie die Option **[!UICONTROL Aktionen > Sende- und Berichtindikatoren neu berechnen...]**. Klicken Sie auf **[!UICONTROL Weiter]** und schließlich auf **[!UICONTROL Beenden]**.
 
 ![](assets/s_ncs_user_recalculate_indicators.png)
 
-## Öffnungstracking {#tracking-opens-}
+## Öffnungs-Tracking {#tracking-opens-}
 
-Damit Adobe Campaign die Öffnung einer Nachricht erkennen kann, muss der Empfänger die Bilder der E-Mail herunterladen. HTML- und Multipart/Alternative-E-Mails enthalten ein Bild mit 0 Pixeln, welches das Öffnungstracking ermöglicht, sobald es angezeigt wird. Nachrichten im Textformat enthalten kein Bild, das Öffnungstracking ist daher nicht möglich. In Bezug auf Öffnungen berechnete Werte sind immer nur Schätzungen. Dies hängt insbesondere mit der durch den Aufruf von Bildern bedingten Fehlerquote zusammen.
+Damit Adobe Campaign die Öffnung einer Nachricht erkennen kann, muss der Empfänger die Bilder der E-Mail herunterladen. HTML- und Multipart/Alternative-E-Mails enthalten ein Bild mit 0 Pixeln, welches das Öffnungs-Tracking ermöglicht, sobald es angezeigt wird. Nachrichten im Textformat enthalten kein Bild, das Öffnungs-Tracking ist daher nicht möglich. In Bezug auf Öffnungen berechnete Werte sind immer nur Schätzungen. Dies hängt insbesondere mit der durch den Aufruf von Bildern bedingten Fehlerquote zusammen.
 
 ## Unterschied zwischen Personen und Zielgruppenempfängern {#targeted-persons---recipients}
 
