@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 4d413d51-ae5d-4e5e-bfaf-4160a6075281
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ E-Mail-Benachrichtigen werden über eine fortlaufende Versandaktion gesteuert. D
 
 Auf der genannten Vorlage basierende Sendungen werden im Knoten **[!UICONTROL Administration > Betreibung > Automatisch erstellte Objekte > Technische Sendungen > Workflow-Benachrichtigungen]** gespeichert.
 
-## Validierung in der Clientkonsole {#approval-via-the-console}
+## Validierung in der Client-Konsole {#approval-via-the-console}
 
 In Kampagnen sind die ausstehenden Validierungen im Dashboard ersichtlich.
 
@@ -106,7 +106,7 @@ Bei einer mehrfachen Validierung können alle validierungsverantwortlichen Benut
 
 Die Mehrfach-Validierung ist insbesondere für Abstimmungen oder Umfragen geeignet. Es besteht die Möglichkeit, die Antworten zu zählen und nach der definierten Ablauffrist das Ergebnis weiterzuverwenden.
 
-## Erforderliche Rechte {#required-rights}
+## Erforderliche Berechtigungen {#required-rights}
 
 Um auf eine Validierungsanfrage antworten zu können, müssen Benutzer mindestens über die folgenden Berechtigungen verfügen:
 
