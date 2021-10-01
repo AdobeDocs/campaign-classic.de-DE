@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 39c57f61-2629-4214-91e4-cb97dc039deb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1658'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 99%
 
 ![](../../assets/common.svg)
 
-## Erfüllung und Leistung {#execution-and-performance}
+## Ausführung und Leistung {#execution-and-performance}
 
 Im Folgenden finden Sie allgemeine Richtlinien zur Optimierung der Leistung von Campaign, einschließlich Best Practices zur Anwendung auf Ihre Workflows.
 
-Richtlinien zur Fehlerbehebung bei der Ausführung von Workflows finden Sie auch im [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
+Richtlinien zur Fehlerbehebung bei der Ausführung von Workflows finden Sie auch im [Produktionshandbuch zu Campaign Classic v7](../../production/using/workflow-execution.md).
 
 ### Logs {#logs}
 
@@ -98,7 +98,7 @@ Beispiel:
 * 010 – Exportieren – Versandlogs exportieren
 * 011 – Exportieren – Trackinglogs exportieren
 
-### Workflow-Schweregrad {#workflow-severity}
+### Workflow-Prioritätsstufe {#workflow-severity}
 
 Sie können die Prioritätsstufe eines Workflows im Tab **[!UICONTROL Ausführung]** der Workflow-Eigenschaften konfigurieren:
 
@@ -153,7 +153,7 @@ Um den Workflow leichter erkennbar zu machen, empfehlen wir, am Anfang und Ende 
 
 ### Signal {#signal}
 
-Meistens ist nicht bekannt, wo das Signal ausgelöst wurde. Um dies zu vermeiden, notieren Sie im Tab **[!UICONTROL Erweitert]** der Signalaktivität im Feld **[!UICONTROL Kommentar]** den angenommenen Auslöser eines Signals für diese Aktivität.
+Meistens ist nicht bekannt, wo das Signal ausgelöst wurde. Um dies zu vermeiden, notieren Sie im Tab **[!UICONTROL Erweitert]** der Signalaktivität im Feld **[!UICONTROL Kommentar]** den erwarteten Auslöser eines Signals für diese Aktivität.
 
 ![](assets/workflow-signal-bp.png)
 
