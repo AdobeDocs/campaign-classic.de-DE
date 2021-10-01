@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: content-management
 exl-id: 8ec52c96-44a2-4544-93b6-9ba251510682
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
 ht-degree: 100%
 
@@ -81,7 +81,7 @@ Weiterführende Informationen hierzu finden Sie in [diesem Abschnitt](../../conf
 
 ## Listen-Steuerelemente {#list-type-controls}
 
-Zur Anzeige von Kollektionselementen ist die Verwendung von Listenelementen erforderlich.
+Zum Bearbeiten von Kollektionselementen ist die Verwendung von Listenelementen erforderlich.
 
 ### Listen in Spalten {#column-list}
 
