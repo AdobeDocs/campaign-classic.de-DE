@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 20552812-5c58-4d48-9636-d5135197685d
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
 ht-degree: 100%
 
 ---
 
-# Häufige Fragen für Entwickler {#dev-faq}
+# Häufig gestellte Fragen für Entwickler {#dev-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -55,7 +55,7 @@ Abfragen werden entweder mit den in der ausgewählten Tabelle enthaltenen Felder
 
 [Klicken Sie hier](../../workflow/using/query.md), um mehr über den Campaign-Abfrageeditor zu erfahren.
 
-## Wie kann ich Datenpackages importieren? {#how-can-i-import-a-data-package-}
+## Wie kann ich Daten-Packages importieren? {#how-can-i-import-a-data-package-}
 
 Adobe Campaign ermöglicht über ein Package-System den Export oder Import von Plattformkonfigurationen und Daten. Mithilfe von Datenpackages können Entitäten in der Adobe Campaign-Datenbank als Dateien im XML-Format dargestellt werden. Dies umfasst alle Daten einer in einem Package enthaltenen Entität.
 
