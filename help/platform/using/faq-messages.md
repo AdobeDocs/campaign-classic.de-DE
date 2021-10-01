@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7fc24ef2-b021-440b-b1f2-8c77e2425328
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Im Zuge der Versandanalyse wird die Zielpopulation berechnet und der Versandinha
 
 ### Warum sollte ich Testsendungen durchführen? {#why-should-i-create-proofs-}
 
-Adobe empfiehlt dringend einen Testversand, um den Versand durch die Validierungsverantwortlichen zu überprüfen, bevor er an die Hauptzielgruppe gesendet wird. Damit können Inhalt, Personalisierung und Versandparameter geprüft werden.
+Adobe empfiehlt dringend einen Testversand, um den Versand anhand einer Validierungsgruppe zu überprüfen, bevor er an die Hauptzielgruppe gesendet wird. Damit können Inhalt, Personalisierung und Versandparameter geprüft werden.
 
 [Mehr dazu hier](../../delivery/using/steps-validating-the-delivery.md#sending-a-proof).
 
