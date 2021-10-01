@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 94fc473a-dc49-41e8-b572-51c162b09996
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1016'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Mit dem Export-Assistenten können Sie einen Export konfigurieren, seine Optione
 
 Der Export-Assistent wird nach der Erstellung eines neuen Exportvorgangs angezeigt (siehe [Erstellen von Import- und Exportvorgängen](../../platform/using/creating-import-export-jobs.md).
 
-## 1. Schritt - Exportvorlage auswählen {#step-1---choosing-the-export-template}
+## 1. Schritt – Exportvorlage auswählen {#step-1---choosing-the-export-template}
 
 Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Export von Empfängern zu konfigurieren, die sich kürzlich angemeldet haben, gehen Sie folgendermaßen vor:
 
@@ -41,7 +41,7 @@ Beim Start des Export-Assistenten muss zunächst eine Vorlage ausgewählt werden
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Namen für den Export ein und fügen Sie eventuell eine Beschreibung hinzu.
 1. Wählen Sie anschließend den Exporttyp aus. Mit der Option **[!UICONTROL Einfacher Export]** kann jeweils nur eine Datei exportiert werden. Die Option **[!UICONTROL Multipler Export]** hingegen bietet die Möglichkeit, in einem Durchgang mehrere Dateien u. U. mit verschiedenen Quelldokumenttypen zu exportieren.
 
-## 2. Schritt - Dateityp auswählen {#step-2---type-of-file-to-export}
+## 2. Schritt – Dateityp auswählen {#step-2---type-of-file-to-export}
 
 Wählen Sie den Typ des zu exportierenden Dokuments aus, d. h. das Schema der zu exportierenden Daten.
 
@@ -63,7 +63,7 @@ Bei einem vom Knoten **[!UICONTROL Vorgänge]** ausgehenden Export wird standard
 
    Hier ist die Angabe des Datums der letzten Änderung erforderlich. Dies geschieht durch Auswahl des entsprechenden Tabellenfelds.
 
-## 3. Schritt - Ausgabeformat bestimmen {#step-3---defining-the-output-format}
+## 3. Schritt – Ausgabeformat bestimmen {#step-3---defining-the-output-format}
 
 Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Text, Text in festen Spalten, CSV und XML.
 
@@ -74,7 +74,7 @@ Wählen Sie nun das Ausgabeformat der Exportdatei aus. Mögliche Formate sind Te
 * Die Formate für Daten und Zahlen können angepasst werden. Klicken Sie hierfür auf den Link **[!UICONTROL Bearbeiten...]** neben dem entsprechenden Feld und konfigurieren Sie die gewünschte Option.
 * Bei Feldern, die Aufzählungswerte enthalten, können Sie **[!UICONTROL Titel anstelle der internen Werte der Auflistungen exportieren]** auswählen. Der Titel kann beispielsweise im folgenden Format gespeichert werden: **1=Mr.**, **2=Miss**, **3=Mrs.**. Wenn diese Option ausgewählt wird, werden **Mr.**, **Miss** und **Mrs.** exportiert.
 
-## 4. Schritt - Daten auswählen {#step-4---data-selection}
+## 4. Schritt – Daten auswählen {#step-4---data-selection}
 
 Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor:
 
@@ -85,19 +85,19 @@ Wählen Sie die zu exportierenden Felder aus. Gehen Sie dazu folgendermaßen vor
 
 1. Klicken Sie auf die Schaltfläche **[!UICONTROL Hinzufügen]**, um Funktionen aufzurufen. Weitere Informationen hierzu finden Sie unter [Funktionsliste](../../platform/using/defining-filter-conditions.md#list-of-functions).
 
-## 5. Schritt - Spalten sortieren {#step-5---sorting-columns}
+## 5. Schritt – Spalten sortieren {#step-5---sorting-columns}
 
 An dieser Stelle kann die Sortierreihenfolge der einzelnen Spalten festgelegt werden.
 
 ![](assets/s_ncs_user_export_wizard05.png)
 
-## 6. Schritt - Filterbedingungen {#step-6---filter-conditions-}
+## 6. Schritt – Filterbedingungen {#step-6---filter-conditions-}
 
 Um nicht alle Datensätze zu exportieren, haben Sie die Möglichkeit, Filterbedingungen zu konfigurieren. Die Vorgehensweise entspricht der Zielgruppenbestimmung im Versand-Assistenten. Diese wird auf [dieser Seite](../../delivery/using/steps-defining-the-target-population.md) erläutert.
 
 ![](assets/s_ncs_user_export_wizard05_b.png)
 
-## 7. Schritt - Daten formatieren {#step-7---data-formatting}
+## 7. Schritt – Daten formatieren {#step-7---data-formatting}
 
 An dieser Stelle können die Reihenfolge der Spalten in der Ausgabedatei und ihre Titel festgelegt sowie die Schreibweise der Quelldaten angepasst werden.
 
@@ -117,7 +117,7 @@ Wenn Sie Kollektionselemente exportieren (beispielsweise Abonnements von Empfän
 
 ![](assets/s_ncs_user_export_wizard06_c.png)
 
-## 8. Schritt - Datenvorschau {#step-8---data-preview}
+## 8. Schritt – Datenvorschau {#step-8---data-preview}
 
 Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden die ersten 200 Zeilen des Abfrageergebnisses angezeigt. Durch Eingabe eines anderen Werts im Feld **[!UICONTROL Angezeigte Zeilen]** können Sie die Liste Ihren Bedürfnissen gemäß anpassen.
 
@@ -125,7 +125,7 @@ Klicken Sie auf **[!UICONTROL Datenvorschau starten]**. Standardmäßig werden d
 
 Durch Klick auf die Tabs unten im Fenster können Sie von der Ergebnisansicht in Spalten zur XML-Anzeige und zur SQL-Entsprechung der Abfrage wechseln.
 
-## 9. Schritt - Export starten {#step-9---launching-the-export}
+## 9. Schritt – Export starten {#step-9---launching-the-export}
 
 Klicken Sie auf die Schaltfläche **[!UICONTROL Starten]**, um den Exportprozess zu beginnen.
 
