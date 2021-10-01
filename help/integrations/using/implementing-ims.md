@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: connecting-via-an-adobe-id
 exl-id: 58552d6e-fbed-4944-85c4-9c14bf60d823
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Aktivierung der Verbindung über IMS {#enabling-the-ims-connection}
+## Aktivierung der IMS-Verbindung {#enabling-the-ims-connection}
 
 1. Aktivieren Sie im Fenster zur Verbindungskonfiguration der Konsole die Option **[!UICONTROL Anmeldung mit einer Adobe ID]**, um sich mit IMS anzumelden.
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
    ![](assets/ims_2.png)
 
-## Deaktivierung der Verbindung über IMS {#disabling-the-ims-connection}
+## Deaktivierung der IMS-Verbindung {#disabling-the-ims-connection}
 
 Um die Verbindung über die Adobe ID zu deaktivieren, müssen Sie sich zunächst ausloggen. Gehen Sie dann in das Menü **[!UICONTROL Datei > Verbindungen]** und deaktivieren Sie die Option **[!UICONTROL Anmeldung mit einer Adobe ID]**.
 
