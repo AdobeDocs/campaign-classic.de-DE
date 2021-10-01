@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: action-activities
 exl-id: 3bb468e2-7bcf-456f-8d8f-1c4e608e2b25
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '301'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ Die verfügbaren Kanäle sind:
 * [E-Mail](../../delivery/using/about-email-channel.md)
 * [Briefpost](../../delivery/using/about-direct-mail-channel.md)
 * [Mobile](../../delivery/using/sms-channel.md)
-* [Twitter](../../social/using/publishing-on-twitter.md)  (nur Campaign Classic v7)
-* [Facebook](../../social/using/publishing-on-facebook.md)  (nur Campaign Classic v7)
+* [Twitter](../../social/using/publishing-on-twitter.md) (nur Campaign Classic v7)
+* [Facebook](../../social/using/publishing-on-facebook.md) (nur Campaign Classic v7)
 * [iOS](../../delivery/using/create-notifications-ios.md)
 * [Android](../../delivery/using/create-notifications-android.md)
 
