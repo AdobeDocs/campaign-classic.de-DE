@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 05909ea6-2c93-42ff-9142-1dd14fa6fdec
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3201'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Der Import-Assistent wird nach der Erstellung eines neuen Importvorgangs angezei
 
 Jede Zeile der Quelldatei entspricht einem Datensatz. Die einzelnen Daten innerhalb des Datensatzes werden durch Trennzeichen (Leerzeichen, Tabstopp oder andere Zeichen) voneinander abgegrenzt. Die Daten werden somit in Form von Spalten importiert und jede Spalte wird einem Datenbankfeld zugeordnet.
 
-## 1. Schritt - Importvorlage auswählen {#step-1---choosing-the-import-template}
+## 1. Schritt – Importvorlage auswählen {#step-1---choosing-the-import-template}
 
 Beim Start des Import-Assistenten muss zunächst eine Vorlage ausgewählt werden. Um beispielsweise den Import von Empfängern zu konfigurieren, die einen Newsletter erhalten haben, gehen Sie folgendermaßen vor:
 
@@ -95,7 +95,7 @@ Der Link **[!UICONTROL Erweiterte Parameter...]** bietet Zugriff auf folgende Op
    >
    >Der Tab **[!UICONTROL Variablen]** sollte programmierten Verwendungen vom Typ Workflow sowie erfahrenen Benutzern vorbehalten bleiben.
 
-## 2. Schritt - Quelldatei auswählen {#step-2---source-file-selection}
+## 2. Schritt – Quelldatei auswählen {#step-2---source-file-selection}
 
 Die Quelldatei kann entweder in Textformat (TXT, CSV, TAB, feste Spalten) oder in XML vorliegen.
 
@@ -127,7 +127,7 @@ Das Ergebnis der Konfigurationen wird im unteren Teil des Fensters angezeigt.
 
 Klicken Sie auf **[!UICONTROL OK]**, um die Formatierung zu speichern, und anschließend auf **[!UICONTROL Weiter]**.
 
-## 3. Schritt - Felder zuordnen {#step-3---field-mapping}
+## 3. Schritt – Felder zuordnen {#step-3---field-mapping}
 
 Wählen Sie nun das Zielschema aus und ordnen Sie die Quellfelder den Datenbankfeldern zu.
 
@@ -171,7 +171,7 @@ Vier verschiedene Feldtypen stehen zur Verfügung:
 
    ![](assets/s_ncs_user_import_wizard03_4.png)
 
-## 4. Schritt - Datensätze abstimmen {#step-4---reconciliation}
+## 4. Schritt – Datensätze abstimmen {#step-4---reconciliation}
 
 Der Import-Assistent bietet die Möglichkeit, durch die Angabe von Abstimmkriterien die Art der Zusammenführung von importierten und existierenden Daten sowie Prioritätsregeln zu definieren. Dies wird anhand des folgenden Screenshots näher erläutert:
 
@@ -274,7 +274,7 @@ Der Navigationsbaum im Zurückweisungsbildschirm einer Importinstanz zeigt die z
 
 ![](assets/s_ncs_user_import_errors_export.png)
 
-## Schritt 5 - Zusätzlicher Schritt beim Import von Empfängern {#step-5---additional-step-when-importing-recipients}
+## Schritt 5 – Zusätzlicher Schritt beim Import von Empfängern {#step-5---additional-step-when-importing-recipients}
 
 Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellung eines Importordners, die automatische Zuordnung der importierten Empfänger zu einer neuen oder existierenden Liste und ihre Anmeldung für Informationsdienste.
 
@@ -330,7 +330,7 @@ Der folgende Schritt im Import-Assistenten ermöglicht die Auswahl oder Erstellu
 
 Klicken Sie auf **[!UICONTROL Weiter]**, um die in diesem Schritt vorgenommenen Konfigurationen zu bestätigen.
 
-## 6. Schritt - Import starten {#step-6---launching-the-import}
+## 6. Schritt – Import starten {#step-6---launching-the-import}
 
 Im letzten Schritt des Assistenten wird der Datenimport ausgelöst. Klicken Sie hierfür auf die Schaltfläche **[!UICONTROL Starten]**.
 
