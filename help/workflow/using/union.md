@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 1cda3146-c333-4743-a871-c44583b6e5b2
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 >
 >Weitere Informationen zur Konfiguration und Verwendung der Vereinigungsaktivität finden Sie unter [Populationen vereinen (Vereinigung)](targeting-data.md#combining-several-targets--union-).
 
-## Anwendungsbeispiel {#union-example}
+## Anwendungsbeispiel für eine Vereinigung {#union-example}
 
 Im folgenden Beispiel sollen die Ergebnisse zweier Abfragen zusammengefasst werden, um eine Liste zu aktualisieren. Beide Abfragen betreffen Empfänger. Die Ergebnisse basieren also auf derselben Tabelle.
 
