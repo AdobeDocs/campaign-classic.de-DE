@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: analyzing-populations
 exl-id: e326e32e-7bb0-46ff-9ba5-94ccd1169af2
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1420'
 ht-degree: 100%
 
@@ -271,7 +271,7 @@ Gehen Sie hierzu wie folgt vor:
 
    ![](assets/reporting_descriptive_sample_tracking_9.png)
 
-## Analyse der Versand-Ausschlusslogs {#analyzing-delivery-exclusion-logs}
+## Analyse der Versandausschluss-Logs {#analyzing-delivery-exclusion-logs}
 
 Wenn sich die Analyse auf einen Versand bezieht, besteht die Möglichkeit, die ausgeschlossene Population zu analysieren. Markieren Sie hierzu die zu analysierenden Sendungen und wählen Sie per Rechtsklick im Kontextmenü **[!UICONTROL Aktion > Ausschlüsse analysieren...]** aus.
 
