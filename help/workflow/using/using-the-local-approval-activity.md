@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: use-cases
 exl-id: cc29eec9-9c97-4d1b-9567-2581154d7b3f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1430'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ Folgende Aktivitäten wurden verwendet:
 * **[!UICONTROL Lokale Validierung]**,
 * **[!UICONTROL Ende]**.
 
-### Abfragen, Schnittmenge und Aufspaltung {#queries--intersection-and-split}
+### Abfragen, Schnittmenge und Teilung {#queries--intersection-and-split}
 
 Die Zielgruppenbestimmung geschieht mithilfe zweier Abfragen und einer Schnittmenge. Die **[!UICONTROL Aufspaltung]** schränkt die resultierende Population über eine Datenverteilungsvorlage ein.
 
@@ -176,7 +176,7 @@ Nach Ablauf der in der Warteaktivität definierten Wartezeit sendet die zweite *
 
 ![](assets/local_validation_intro_3.png)
 
-### Validierungsverfolgung durch den Administrator {#approval-tracking-by-the-administrator}
+### Validierungs-Tracking durch den Administrator {#approval-tracking-by-the-administrator}
 
 Bei jedem Start der lokalen Validierungsaktivität wird eine Validierungsaufgabe erstellt. Der Administrator hat die Möglichkeit, jede dieser Validierungsaufgaben zu prüfen.
 
