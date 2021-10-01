@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: subscriptions-and-referrals
 exl-id: 10fd561f-1b07-490e-9f66-d67e44a0def5
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-## Über virale Marketingstrategien {#about-viral-marketing}
+## Über virale Marketing-Strategien {#about-viral-marketing}
 
 Adobe Campaign bietet Features, die virale Marketingstrategien ermöglichen.
 
@@ -29,7 +29,7 @@ Sie können Empfängern Ihrer Sendungen und Webseitenbesuchern gestatten, Inform
 >
 >Damit diese Links korrekt funktionieren, muss die der Nachricht entsprechende Mirrorseite verfügbar sein. Der Versand muss demzufolge einen Link auf die Mirrorseite enthalten.
 
-## Teilen von Links {#social-networks--sharing-a-link}
+## Soziale Netzwerke: Teilen von Links {#social-networks--sharing-a-link}
 
 Um den Versandempfängern die Möglichkeit zu geben, den Inhalt der Nachrichten zu teilen, müssen Sie den entsprechenden Gestaltungsbaustein einfügen.
 
