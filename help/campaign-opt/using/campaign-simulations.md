@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: 709c64a8-34bf-43fa-a820-238295fb26b8
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1373'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Mithilfe der Simulation können die voraussichtlichen Auswirkungen von Sendungen
 
 ### Simulation erstellen {#creating-a-simulation}
 
-Folgen Sie den nachstehenden Etappen, um eine Simulation zu erstellen:
+Folgen Sie den nachstehenden Schritten, um eine Simulation zu erstellen:
 
 1. Öffnen Sie den Tab **[!UICONTROL Kampagnen]**, klicken Sie im Abschnitt **[!UICONTROL Erstellen]** auf den Link **[!UICONTROL Andere Optionen]** und wählen Sie **[!UICONTROL Simulation]** aus.
 
@@ -97,7 +97,7 @@ Im Tab **[!UICONTROL Allgemein]** der Simulation können Sie ihre Ausführungspa
 * Die **[!UICONTROL Priorität]** entspricht der Dringlichkeit, die der Simulation zugeteilt wird, um sie schnellstmöglich durchzuführen oder ihren Start zu verzögern.
 * Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]**: SQL-Logs dienen dazu, fehlerhafte oder zu langsame Simulationen zu diagnostizieren. Die entsprechenden Logs sind nach der Simulation im Untertab **[!UICONTROL SQL-Logs]** des Tabs **[!UICONTROL Verfolgung]** verfügbar.
 
-## Simulation starten {#executing-a-simulation}
+## Simulation ausführen {#executing-a-simulation}
 
 ### Simulation starten {#starting-a-simulation}
 
@@ -133,7 +133,7 @@ Sobald der Perimeter der Simulation definiert wurde, kann sie ausgeführt werden
 
 #### Verfolgung {#audit}
 
-Über den Tab **[!UICONTROL Verfolgung]** können Sie die Ausführung der Simulation überwachen. Insbesondere für erfahrene Benutzer ist hier der Untertab **[!UICONTROL SQL-Logs]** hilfreich, auf dem die Ausführungslogs im SQL-Format aufgeführt werden. Damit die SQL-Logs angezeigt werden, muss vor Ausführung der Simulation im Tab **[!UICONTROL Allgemein]** die Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]** aktiviert werden.
+Über den Tab **[!UICONTROL Verfolgung]** können Sie die Ausführung der Simulation überwachen. Insbesondere für erfahrene Benutzer ist hier der Unter-Tab **[!UICONTROL SQL-Logs]** hilfreich, auf dem die Ausführungs-Logs im SQL-Format aufgeführt werden. Damit die SQL-Logs angezeigt werden, muss vor Ausführung der Simulation im Tab **[!UICONTROL Allgemein]** die Option **[!UICONTROL SQL-Abfragen im Protokoll speichern]** aktiviert werden.
 
 ![](assets/simu_campaign_opti_11.png)
 
@@ -145,7 +145,7 @@ Weitere Informationen zur deskriptiven Analyse finden Sie in [diesem Abschnitt](
 
 ## Ergebnisse einer Simulation {#results-of-a-simulation}
 
-Die im Tab **[!UICONTROL Ergebnisse]** dargestellten Indikatoren geben einen ersten Einblick in das Ergebnis der Simulation. Anhand der vom Simulations-Dashboard aus verfügbaren **[!UICONTROL Berichte]** können Sie eine präzise Analyse der Informationen vornehmen.****
+Die in den Tabs **[!UICONTROL Log]** und **[!UICONTROL Ergebnisse]** dargestellten Indikatoren geben einen ersten Einblick in das Ergebnis der Simulation. Im Tab **[!UICONTROL Berichte]** können Sie eine präzise Analyse der Informationen vornehmen.
 
 ### Berichte {#reports}
 
