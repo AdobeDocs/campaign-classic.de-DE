@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 9f5735d2-73b8-469f-bc10-482c99cdd4a1
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '946'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/common.svg)
 
-Die **Daten-Update**-Aktivität ermöglicht eine gebündelte Aktualisierung von Datenbankfeldern.
+Die Aktivität **Daten-Update** ermöglicht eine gebündelte Aktualisierung von Datenbankfeldern.
 
 ## Aktionstyp {#operation-type}
 
@@ -118,7 +118,7 @@ Die Daten der sekundären Datensätze werden dem Hauptdatensatz zugeordnet, wenn
 
 ## Anwendungsbeispiel: Daten-Update nach einer Anreicherung {#example--update-data-following-an-enrichment}
 
-Der Abschnitt [2. Schritt: Schreiben der angereicherten Daten in die &#39;Verkauf&#39;-Tabelle](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table) des Anwendungsbeispiels, der Details zum Erstellen einer Zusammenfassungsliste liefert, ist ein Beispiel für ein Daten-Update nach einer Anreicherungsaktivität.
+Ein Beispiel für ein Daten-Update nach einer Anreicherungsaktivität finden Sie im Anwendungsbeispiel zur Erstellung einer Zusammenfassungsliste in [Schritt 2: Schreiben der angereicherten Daten in die Tabelle &quot;Bestellungen&quot;](creating-a-summary-list.md#step-2--writing-enriched-data-to-the--purchases--table).
 
 ## Eingabeparameter {#input-parameters}
 
