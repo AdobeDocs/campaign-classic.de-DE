@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: c6dd2709-06e3-4227-bbec-99f3d80144fe
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
@@ -43,9 +43,9 @@ Gehen Sie wie folgt vor, um ein Angebot zu erstellen:
 
 ## Angebotseignungen konfigurieren {#configuring-offer-eligibility}
 
-Im **[!UICONTROL Eignung]**-Tab des Angebots werden die Verwendungsdaten, auf die Zielgruppe anzuwendende Filter und die Angebotsgewichtung definiert.
+Im Tab **[!UICONTROL Eignung]** des Angebots werden der Zeitraum, in dem das Angebot gültig ist und angezeigt wird, die auf die Zielgruppe anzuwendenden Filter und die Angebotsgewichtung definiert.
 
-### Verwendungsdaten definieren {#defining-the-eligibility-period-of-an-offer}
+### Angebotszeitraum definieren {#defining-the-eligibility-period-of-an-offer}
 
 Wählen Sie mithilfe der Dropdown-Listen Start und Ende der Verwendung des Angebots aus den Kalendern aus.
 
