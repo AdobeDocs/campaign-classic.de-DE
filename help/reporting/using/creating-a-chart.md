@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: d32b614f-82c1-4363-816c-4ebedaa5cfe9
 source-git-commit: 7fa8cea04fb4e25187c48ad19330815e9b522b37
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Gehen Sie wie folgt vor, um eine Grafik in einem Bericht zu erstellen:
 
       ![](assets/reporting_graph_add_filter.png)
 
-   * Um Kontextdaten zu verwenden, wählen Sie **[!UICONTROL Kontextdaten]** aus der Dropdownliste **[!UICONTROL Quelle]** aus und klicken Sie auf **[!UICONTROL Erweiterte Einstellungen...]** -Link. Wählen Sie dann die Daten aus, auf die sich die Statistiken beziehen sollen.
+   * Um Kontextdaten zu verwenden, wählen Sie **[!UICONTROL Kontextdaten]** aus der Dropdown-Liste **[!UICONTROL Quelle]** aus und klicken Sie auf den Link **[!UICONTROL Erweiterte Einstellungen...]**. Wählen Sie dann die Daten aus, auf die sich die Statistiken beziehen sollen.
 
       ![](assets/reporting_graph_from_context.png)
 
@@ -63,7 +63,7 @@ Er kann im Abschnitt **[!UICONTROL Grafiktyp]** des Tabs **[!UICONTROL Allgemein
 
 Darüber hinaus stehen je Grafiktyp verschiedene Parameter zur Verfügung. Diese werden über den Link **[!UICONTROL Grafikparameter...]** ausgewählt.
 
-### Verteilung: Kreisdiagramm {#breakdown--pie-charts}
+### Verteilung: Tortendiagramm {#breakdown--pie-charts}
 
 Diese Darstellungsform bietet eine Übersicht der jeweiligen Anteile der gemessenen Elemente.
 
