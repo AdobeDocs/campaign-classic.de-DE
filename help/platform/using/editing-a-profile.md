@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: profile-management
 exl-id: 0f3a5582-5c90-4393-bee8-d9e2f07e5982
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -33,9 +33,9 @@ Tabs und ihr Inhalt sind abhängig von Ihrer Konfiguration und den installierten
 >
 >Weiterführende Informationen dazu finden Sie auf [dieser Seite](../../configuration/using/about-schema-edition.md).
 
-## Im Tab Allgemein {#general-tab}
+## Tab &quot;Allgemein&quot; {#general-tab}
 
-Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Profil, insbesondere Nachname, Vorname, E-Mail-Adresse, E-Mail-Empfangsformat etc.:
+Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Profil, insbesondere Nachnamen, Vornamen, E-Mail-Adresse, E-Mail-Empfangsformat etc.:
 
 ![](assets/s_ncs_user_profile_general_tab.png)
 
@@ -43,7 +43,7 @@ Dieser Bildschirm enthält alle allgemeinen Informationen zum ausgewählten Prof
 >
 >Wenn die Option **[!UICONTROL Nicht mehr kontaktieren (alle Kanäle)]** aktiviert ist, bedeutet dies, dass das Profil auf der Blockierungsliste steht; das Profil hat also den Wunsch geäußert, nicht kontaktiert zu werden (z. B. durch Klicken auf einen Abmelde-Link in einem Newsletter). Das Profil wird keine Sendungen mehr erhalten (auf keinem Kanal: ob E-Mail, Briefpost usw.). Weiterführende Informationen hierzu finden Sie auf dieser [Seite](../../delivery/using/understanding-quarantine-management.md).
 
-## Tab &quot;Kontaktdaten&quot; {#contact-information-tab}
+## Tab &quot;Postanschrift&quot; {#contact-information-tab}
 
 Dieser Bildschirm enthält die Postanschrift des ausgewählten Profils:
 
@@ -85,7 +85,7 @@ Dieser Bildschirm enthält die Versandlogs für das ausgewählte Profil. Es werd
 
 ![](assets/s_ncs_user_profile_delivery_tab.png)
 
-## Tab Tracking {#tracking-tab}
+## Tab &quot;Tracking&quot; {#tracking-tab}
 
 Dieser Bildschirm enthält die Trackinglogs für das ausgewählte Profil. Mithilfe dieser Informationen können Sie das Verhalten des Profils nach Erhalt eines Versands verfolgen.
 
