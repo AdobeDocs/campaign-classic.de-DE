@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: orchestrate-campaigns
 exl-id: a8fce21f-ffe3-4819-87ca-ac0ad9f21e41
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1294'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Um Ihre Ordnerhierarchie für Marketing-Pläne und -Programme zu konfigurieren, 
 1. Klicken Sie mit der rechten Maustaste auf den neu erstellen Plan und wählen Sie **Programm-Ordner hinzufügen**.
 1. Wiederholen Sie die obigen Schritte, um Ihren neuen Programmordner und seinen internen Namen umzubenennen.
 
-## Erstellen Sie eine Kampagne {#creating-a-campaign}
+## Erstellen einer Kampagne {#creating-a-campaign}
 
 ### Hinzufügen einer Kampagne {#adding-a-campaign}
 
@@ -142,7 +142,7 @@ Der Konfigurationsmodus der Ausführungsplanung entspricht dem der Workflow-Akti
 
    ![](assets/s_ncs_user_op_template_recur_wf_option.png)
 
-#### Kampagne erstellen {#create-the-recurring-campaign}
+#### Erstellen einer wiederkehrenden Kampagne {#create-the-recurring-campaign}
 
 Um eine wiederkehrende Kampagne zu erstellen und ihre Workflows der festgelegten Planung entsprechend auszuführen, gehen Sie wie folgt vor:
 
