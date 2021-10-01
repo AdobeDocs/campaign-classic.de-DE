@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: managing-an-offer-catalog
 exl-id: 6158ffaa-cb08-4f77-82b8-b3e5e1bf7fd7
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ![](../../assets/v7-only.svg)
 
-## Unterbreitungsregeln – Übersicht {#presentation-rules-overview}
+## Unterbreitungsregeln – Überblick {#presentation-rules-overview}
 
 Interaction bietet die Möglichkeit, die Menge der Angebotsvorschläge mithilfe von s. g. Unterbreitungsregeln zu regulieren. Diese speziell in Interaction zur Anwendung kommenden Regeln gehören zur Gruppe der Typologieregeln. Sie erlauben es, basierend auf den einem Kontakt zuvor vorgeschlagenen Angeboten bestimmte Angebote von der Unterbreitung auszuschließen. Die Zuweisung der Regeln erfolgt auf Umgebungsebene.
 
@@ -65,7 +65,7 @@ Auf die Anwendungskriterien kann im **[!UICONTROL Allgemein]**-Tab der Typologie
 
 Die im Tab **[!UICONTROL Angebotsunterbreitung]** konfigurierten Dimensionen für die Unterbreitungsregel müssen mit denen auf Umgebungsebene übereinstimmen.
 
-Die **[!UICONTROL Zielgruppendimension]** entspricht der Empfängertabelle (standardmäßig: nms:recipients), die die Angebotsvorschläge erhalten. Die Dimension **[!UICONTROL Speicherung]** entspricht der Tabelle, die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält (standardmäßig:nms:propositionRcp).
+Die **[!UICONTROL Zielgruppendimension]** entspricht der Empfängertabelle (standardmäßig: nms:recipients), die die Angebotsvorschläge erhält. Die **[!UICONTROL Speicherdimension]** entspricht der Tabelle, die den mit der Zielgruppendimension verknüpften Vorschlagsverlauf enthält (standardmäßig:nms:propositionRcp).
 
 ![](assets/offer_typology_009.png)
 
@@ -86,7 +86,7 @@ Verwenden Sie die Pfeile des Felds, um die Anzahl an Tagen zu ändern, oder gebe
 
 ![](assets/offer_typology_010.png)
 
-### Maximale Vorschlagsanzahl {#number-of-propositions}
+### Anzahl der Vorschläge {#number-of-propositions}
 
 An dieser Stelle können Sie angeben, wie oft die Angebote maximal vorgeschlagen werden dürfen, bevor sie ausgeschlossen werden.
 
