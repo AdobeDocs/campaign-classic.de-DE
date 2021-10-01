@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Hypothesenvorlagen
-description: Erfahren Sie, wie Sie Hypothesenvorlagen in Campaign Response Manager erstellen
+description: Erfahren Sie, wie Sie Hypothesenvorlagen in Campaign Response Manager erstellen.
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 428c7677-454b-4618-bae7-0be7df6dfcaa
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1505'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Folgen Sie den nachstehenden Etappen, um eine Hypothesenvorlage zu erstellen:
 1. Geben Sie den Titel der Hypothese ein.
 1. Wählen Sie im Feld **[!UICONTROL Hypothesentyp]** aus, ob die Vorlage für Hypothesen über Angebote oder Sendungen bestimmt ist.
 1. Geben Sie für Vorlagen vom Typ **[!UICONTROL Versand]** an, ob die Messungen mit oder ohne Kontrollgruppe durchgeführt werden sollen. [Weitere Informationen](#properties-of-a-hypothesis-template)   
-1. Bei Vorlagen vom Typ **[!UICONTROL Versand]** können Sie einen bestimmten Kanal auswählen oder die Vorlage mithilfe der Dropdownliste **[!UICONTROL Kanal]** auf alle in Adobe Campaign verfügbaren Kanäle anwenden. [Weitere Informationen](#properties-of-a-hypothesis-template)   
+1. Für eine Vorlage vom Typ **[!UICONTROL Versand]** können Sie mithilfe der Dropdown-Liste **[!UICONTROL Kanal]** einen bestimmten Kanal wählen oder die Vorlage auf alle in Adobe Campaign verfügbaren Kanäle anwenden. [Weitere Informationen](#properties-of-a-hypothesis-template)   
 1. Wählen Sie den **[!UICONTROL Ausführungsordner]**, in dem Sie die basierend auf der Vorlage aufgestellten Hypothesen erstellen und automatisch ausführen möchten.
-1. Wählen Sie die Ausführungsparameter aus. [Weitere Informationen](#hypothesis-template-execution-settings)   
+1. Wählen Sie die Ausführungseinstellungen aus. [Weitere Informationen](#hypothesis-template-execution-settings)   
 1. Geben Sie den Berechnungszeitraum der Hypothese an. [Weitere Informationen](#hypothesis-template-execution-settings)   
 
    >[!CAUTION]
@@ -63,9 +63,9 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage werden die allgemeinen Optionen de
    >
    >Wenn die Konfiguration der Vorlage eine Kontrollgruppe vorsieht, jedoch keine in dem Versand bestimmt ist, auf den sich die Hypothesen beziehen, werden die Ergebnisse nur auf Grundlage der Zielgruppen-Empfänger berechnet.
 
-   Weitere Informationen zum Definieren und Konfigurieren einer Kontrollgruppe finden Sie in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group).
+   Die Bestimmung und Konfiguration von Kontrollgruppen werden in [diesem Abschnitt](../../campaign/using/marketing-campaign-deliveries.md#defining-a-control-group) beschrieben.
 
-* **[!UICONTROL Kanal]**: Sie können einen bestimmten Kanal auswählen oder die Hypothesenvorlage allen Kanälen in der Adobe Campaign-Konsole zur Verfügung stellen, indem Sie in der Dropdown-Liste die Option  **[!UICONTROL Alle]** Kanäle auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können Sie Sendungen bei der Erstellung der Hypothese automatisch nach Kanal filtern. [Weitere Informationen](creating-hypotheses.md)   
+* **[!UICONTROL Kanal]**: Sie können einen spezifischen Kanal bestimmen oder die Hypothesenvorlage für alle Kanäle der Adobe Campaign-Konsole verfügbar machen, indem Sie **[!UICONTROL Alle Kanäle]** in der entsprechenden Dropdown-Liste auswählen. Wenn Sie die Vorlage für einen bestimmten Kanal konfigurieren, können die Sendungen bei der Hypothesenerstellung automatisch nach Kanal gefiltert werden. [Weitere Informationen](creating-hypotheses.md)   
 
    ![](assets/response_properties_001.png)
 
@@ -113,7 +113,7 @@ Im Tab **[!UICONTROL Allgemein]** der Vorlage können zudem die Ausführungspara
 
 ### Transactions {#transactions}
 
-Dieser Tab enthält die unterschiedlichen Felder und Tabellen, die den Verlauf der Empfängerreaktionen in Form von Transaktionen speichern. Weiterführende Informationen zu den für die Reaktionsverwaltung dedizierten Tabellen finden Sie in diesem Abschnitt [Abschnitt](../../configuration/using/about-schema-reference.md) .
+Dieser Tab enthält Felder und Tabellen, mithilfe derer Sie den Verlauf der Empfängerreaktionen bei Transaktionen speichern können. Weiterführende Informationen zu den für die Reaktionsverwaltung verwendeten Tabellen finden Sie in diesem [Abschnitt](../../configuration/using/about-schema-reference.md).
 
 * **[!UICONTROL Schema (Speicherung des Reaktionslogs)]**: Geben Sie die Tabelle der Empfängerreaktionen an. Die standardmäßige Adobe-Campaign-Tabelle hierfür ist **NmsRemaMatchRcp**.
 * **[!UICONTROL Transaktionsschema]**: Wählen Sie die Tabelle aus, auf die sich die Hypothesen beziehen sollen (also die die Bestellungen enthaltende Transaktionstabelle).
@@ -127,10 +127,10 @@ Dieser Tab enthält die unterschiedlichen Felder und Tabellen, die den Verlauf d
 
    ![](assets/response_measurement_001.png)
 
-   Wenn die Hypothese direkt gestartet wird, kann sie erzwungen werden, wenn sie sofort Trigger werden soll. Andernfalls wird sie automatisch basierend auf dem konfigurierten Berechnungsdatum ausgelöst, das auf dem Erstellungsdatum der Hypothese basiert. [Weitere Informationen](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
+   Wenn die Hypothese im laufenden Betrieb gestartet wurde, haben Sie die Möglichkeit, eine sofortige Auslösung zu forcieren. Andernfalls wird sie automatisch entsprechend dem konfigurierten Ende der Berechnung ausgelöst, das vom Erstellungsdatum der Hypothese abhängig ist. [Weitere Informationen](creating-hypotheses.md#creating-a-hypothesis-on-the-fly-on-a-delivery).
 
-* **[!UICONTROL Transaktionsbetrag/Betrag der Spanne]**: Diese Felder sind optional und ermöglichen die automatische Berechnung der Umsatzindikatoren. [Weitere Informationen](hypothesis-tracking.md#indicators)   
-* **[!UICONTROL Stückbetrag]**: können Sie einen Betrag für die Berechnung des Umsatzes festlegen. [Weitere Informationen](hypothesis-tracking.md#indicators)   
+* **[!UICONTROL Transaktionsbetrag/Betrag der Spanne]**: Diese Felder sind optional. Sie ermöglichen die automatische Berechnung der Umsatzindikatoren. [Weitere Informationen](hypothesis-tracking.md#indicators)   
+* **[!UICONTROL Stückbetrag]**: Dieses Feld ermöglicht die Festsetzung eines Betrags für die Berechnung des Umsatzes. [Weitere Informationen](hypothesis-tracking.md#indicators)   
 
    ![](assets/response_transactions_001.png)
 
@@ -143,7 +143,7 @@ Dieser Tab enthält die unterschiedlichen Felder und Tabellen, die den Verlauf d
 
 Nachdem die Transkationstabelle sowie die von der Hypothese betroffenen Felder definiert wurden, können Sie den Perimeter Ihrer Hypothese weiter einschränken, indem Sie die betreffenden Transaktionen und Sendungen mithilfe von Filtern angeben. Sie haben auch die Möglichkeit, ein JavaScript zu verwenden, um ein in der Transaktionstabelle referenziertes Produkt, für das Sie eine Hypothese erstellen möchten, explizit anzugeben.
 
-* **Transaktionsfilter**: im  **** Scopetab können Sie einen Filter für die Hypothese konfigurieren. Gehen Sie dazu wie folgt vor:
+* **Filterung der Transaktionen**: Im Tab **[!UICONTROL Umfang]** können Sie Filter für die Hypothese konfigurieren. Gehen Sie dazu wie folgt vor:
 
    1. Klicken Sie auf den Link **[!UICONTROL Abfrage bearbeiten...]**.
 
