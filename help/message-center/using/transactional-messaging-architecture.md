@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: introduction
 exl-id: 0a059397-b037-405b-b9c1-94a4a072674d
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1225'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -224,7 +224,7 @@ Konfigurieren Sie dann im **[!UICONTROL Explorer]** unter **[!UICONTROL Plattfor
    * **[!UICONTROL Server]**: Geben Sie die Kampagnenserver-URL der Ausführungsinstanz ein.
    * **[!UICONTROL Konto]**: Geben Sie das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
    * **[!UICONTROL Passwort]**: Geben Sie das Passwort für das Konto ein, über das auf Ihre Ausführungsinstanz zugegriffen wird.
-   * **[!UICONTROL Datenquelle]** : Geben Sie die folgende Syntax  **[!UICONTROL :extAccount:nmsID Ihres externen Datenbankkontos in der Ausführungsinstanz]**  ein.
+   * **[!UICONTROL Datenquelle]**: Geben Sie die Syntax **[!UICONTROL nms:extAccount:ID Ihres externen Datenbankkontos in die ausführende Instanz]** ein.
 
 
 1. Erstellen Sie in der **Marketinginstanz** das externe Konto **[!UICONTROL Ausführungsinstanz]** mit der folgenden Konfiguration, um den Datensynchronisations-Workflow zu erstellen:
