@@ -7,19 +7,19 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: c7bff902-4f5d-4783-aec4-13561fa7d242
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '621'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Workflow-Eigenschaften        {#workflow-properties}
+# Workflow-Eigenschaften{#workflow-properties}
 
 ![](../../assets/common.svg)
 
-## Ausführungstab {#execution-tab}
+## Ausführungs-Tab {#execution-tab}
 
-Der Tab **[!UICONTROL Ausführung]** im Fenster der Workflow-**[!UICONTROL Eigenschaften]** enthält 3 Bereiche:
+Der Tab **[!UICONTROL Ausführung]** im Fenster der Workflow-**[!UICONTROL Eigenschaften]** enthält drei Bereiche:
 
 ![](assets/wf_execution_tab.png)
 
@@ -41,7 +41,7 @@ Dieser Bereich wird nur in Kampagnen-Workflows angezeigt.
 
    Verwenden Sie dieses Feld, wenn Ihre Installation mehrere Workflow-Server aufweist, um festzulegen, auf welchem Server der Workflow laufen soll. Sollte der in diesem Feld angegebene Wert auf keinem Server existieren, bleibt der Workflow im Stand-by.
 
-   Weitere Informationen finden Sie in diesem [Campaign Classic v7-Installationshandbuch](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
+   Weitere Informationen finden Sie in diesem [Installationshandbuch zu Campaign Classic v7](../../installation/using/configuring-campaign-server.md#high-availability-workflows-and-affinities).
 
 * **[!UICONTROL Verlaufsumfang (Tage)]**
 
