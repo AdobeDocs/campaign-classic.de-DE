@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 48926e87-03d9-4aa0-89cb-e3fb4f99c1f5
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
 
-# Häufige Fragen zur Erstellung von Meldungen {#design-messages-faq}
+# Häufige Fragen zur Erstellung von Nachrichten {#design-messages-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -43,7 +43,7 @@ Sie können mit nur einem Klick eine vorhandene HTML-Datei importieren, um eine 
 
 ## Wie kann ich in Campaign einen Newsletter zum Abonnieren erstellen? {#how-can-i-create-a-subscription-based-newsletter-in-campaign-}
 
-[Newsletter-Dienst einrichten](../../delivery/using/managing-subscriptions.md): Die wichtigsten Schritte bei der Erstellung eines Newsletters und bei der Verwaltung von Abonnements.
+[Newsletter-Service einrichten](../../delivery/using/managing-subscriptions.md): Die wichtigsten Schritte bei der Erstellung eines Newsletters und bei der Verwaltung von Abonnements.
 
 ## Wie kann ich Nachrichten personalisieren? {#how-can-i-personalize-messages-}
 
@@ -60,6 +60,6 @@ Sie können an Empfänger je nach deren Einstellungen und deren Land mehrsprachi
 
 Zu diesem Zweck können Sie die Nachricht mithilfe der Option [Bedingungen](../../delivery/using/conditional-content.md) lokalisieren und entsprechend dem Empfängerprofil personalisieren. Sie können auch mithilfe von [Workflows](../../workflow/using/split.md) die Version der zu sendenden Nachricht auswählen und dabei die bevorzugte Sprache über einen Test ermitteln.
 
-## Wie kann ich ein Webformular übersetzen? {#how-can-i-localize-a-webform-}
+## Wie kann ich ein Web-Formular übersetzen? {#how-can-i-localize-a-webform-}
 
-Sie können eine Webanwendung in mehrere Sprachen übersetzen. Das Verfahren zur Übersetzung wird in [diesem Abschnitt](../../web/using/translating-a-web-form.md) beschrieben.
+Sie können eine Web-Anwendung in mehrere Sprachen übersetzen. Das Verfahren zur Übersetzung wird in [diesem Abschnitt](../../web/using/translating-a-web-form.md) beschrieben.
