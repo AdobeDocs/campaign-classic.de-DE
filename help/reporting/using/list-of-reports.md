@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: accessing-built-in-reports
 exl-id: c01f4850-ab17-44ac-a5e0-ff082ec206b3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1007'
 ht-degree: 100%
 
@@ -309,7 +309,7 @@ Weitere Informationen zum Inhalt dieser Berichte erhalten Sie in den zugehörige
  </tbody> 
 </table>
 
-## Berichte über Webanwendungen {#reports-on-web-applications}
+## Berichte über Web-Anwendungen {#reports-on-web-applications}
 
 Berichte über Webanwendungen beziehen sich auf die Daten der Tabelle **nms:WebApp**.
 
