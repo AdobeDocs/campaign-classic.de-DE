@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 5534bd5b-6888-4bf6-8a39-109c6fc0f6c3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '170'
 ht-degree: 100%
 
@@ -33,8 +33,8 @@ Auch über die Kampagnenübersicht in der Rubrik **[!UICONTROL Kampagnen]** best
 
 ## Verfügbare Parameter {#available-settings}
 
-Lokalstellen können den Inhalt der Kampagne anpassen, um bestmöglich den lokalen Bedürfnissen zu entsprechen. Hierzu stehen ihnen alle Elemente des Kampagnen-Dashboards zur Verfügung. Zur lokalen Anpassung werden insbesondere der Zielgruppen-Workflow und gegebenenfalls der Inhalt der Sendungen angepasst.
+Lokalstellen können den Inhalt der Kampagne an die lokalen Bedürfnisse anpassen. Hierzu stehen ihnen alle Elemente des Kampagnen-Dashboards zur Verfügung. Zur lokalen Anpassung werden insbesondere der Zielgruppen-Workflow und gegebenenfalls der Inhalt der Sendungen abgeändert.
 
 ## Kampagnenausführung {#campaign-execution}
 
-Jede Lokalstelle kann den Kampagnenworkflow ausführen und entsprechend der Validierungskonfiguration in der Kampagnenvorlage die jeweiligen Validierungen ausführen.
+Jede Lokalstelle kann den Kampagnen-Workflow ausführen und entsprechend der Validierungskonfiguration in der Kampagnen-Vorlage die jeweiligen Validierungen vornehmen.
