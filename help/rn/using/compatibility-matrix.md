@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '545'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 ![](../../assets/v7-only.svg)
 
-In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für [den neuesten Build](../../rn/using/latest-release.md) von **Adobe Campaign Classic v7** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
+In diesem Dokument werden alle Systeme und Komponenten aufgelistet, die für den [aktuellen Build](../../rn/using/latest-release.md) von **Adobe Campaign Classic v7** unterstützt werden. Produkte und Versionen, die nicht in dieser Liste enthalten sind, sind nicht mit Adobe Campaign kompatibel.
 
 Wenn Sie ein [!DNL Gold Standard]-Benutzer sind, sehen Sie in der [[!DNL Gold Standard] -Kompatibilitätsmatrix](../../rn/using/compatibility-matrix-gs.md) nach.
 
