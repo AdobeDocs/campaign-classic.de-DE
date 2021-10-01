@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 17b5865a-5e04-4b3b-8b6a-12d5c1a9c1da
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1696'
 ht-degree: 100%
 
@@ -47,9 +47,9 @@ Klicken Sie im Kampagnenfenster auf den Tab **[!UICONTROL Bearbeiten]** und ansc
 
 ![](assets/mkt_distr_4.png)
 
-### Webschnittstelle {#web-interface}
+### Web-Schnittstelle {#web-interface}
 
-Im Tab **Dezentrales Marketing** sind der Webschnittstellentyp sowie die Standardwerte und die erweiterten Parameter festzulegen, die bei der Bestellung von den Lokalstellen zu erfassen sind.
+Im Tab **Dezentrales Marketing** können Sie den Typ der Web-Schnittstelle sowie die Standardwerte und die erweiterten Parameter festlegen, die bei der Bestellung durch eine Lokalstellen einzugeben sind.
 
 Die Web-Schnittstelle stellt ein Formular dar, dass von der Lokalstelle bei der Kampagnenbestellung auszufüllen ist.
 
@@ -192,7 +192,7 @@ Diese und andere Informationen sind über den Link in der den Lokalstellen gesen
 
 ### Audience {#audience}
 
-Für eine lokale Kampagne kann die Zentralstelle durch Ankreuzen der Option **[!UICONTROL Kampagnenkit auf gewisse Lokalstellen beschränken]** die teilnehmenden Lokalstellen festlegen.
+Für eine lokale Kampagne kann die Zentralstelle die teilnehmenden Lokalstellen durch Ankreuzen der Option **[!UICONTROL Kampagnenkit auf gewisse Lokalstellen beschränken]** festlegen.
 
 ![](assets/s_advuser_mkg_dist_create_mutual_entry3.png)
 
@@ -300,7 +300,7 @@ Wenn eine Lokalstelle eine Kampagne bestellt hat, werden die validierungsverantw
 
 ![](assets/mkg_dist_command_valid_web.png)
 
-#### Validierung über die Adobe-Campaign-Konsole {#approving-via-the-adobe-campaign-console}
+#### Validierung über die Adobe Campaign-Konsole {#approving-via-the-adobe-campaign-console}
 
 Die Bestellungsvalidierung kann auch in die Konsole über die Übersicht der Kampagnenbestellungen erfolgen. Um eine Bestellung zu validieren, wählen Sie diese aus und klicken Sie auf die Schaltfläche **[!UICONTROL Anmeldung validieren]**.
 
