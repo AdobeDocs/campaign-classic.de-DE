@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: analyzing-populations
 exl-id: d133efec-33e1-4711-a90f-e40385059386
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Nachdem Sie einen Analysebericht gespeichert haben, können Sie seine Eigenschaf
 
 Diese Optionen entsprechen denen von Standardberichten. Sie werden auf [dieser Seite](../../reporting/using/properties-of-the-report.md) beschrieben.
 
-## Anzeige deskriptiver Berichte anpassen {#configuring-the-layout-of-a-descriptive-analysis-report}
+## Anzeige deskriptiver Analyseberichte anpassen {#configuring-the-layout-of-a-descriptive-analysis-report}
 
 Sie können die Anzeige und Anordnung Ihrer Daten in den Grafiken und Tabellen anpassen. Gehen Sie hierzu ausgehend vom Explorer in den Tab **[!UICONTROL Bearbeiten]** des Berichts, den Sie anpassen möchten.
 
