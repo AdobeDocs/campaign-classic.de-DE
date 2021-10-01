@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: targeting-activities
 exl-id: 20d03627-cd56-46da-bc02-73b48a02a350
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1692'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Im folgenden Abschnitt finden Sie Best Practices zur Optimierung der in Adobe Ca
 
    ![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../configuration/using/database-mapping.md)
 
-   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html)
+   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/architecture/shemas-forms/database-mapping.html?lang=de)
 
 ### Funktionen {#functions}
 
