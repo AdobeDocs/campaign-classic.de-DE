@@ -6,9 +6,9 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 75%
 
 ![](../../assets/common.svg)
 
-Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-Sourcing** installiert. Weitere Informationen zu diesem Modul finden Sie im [Campaign Classic v7-Installationshandbuch](../../installation/using/mid-sourcing-deployment.md).
+Die folgenden Workflows werden standardmäßig mit dem Modul **Sendung an Mid-Sourcing-Server** installiert. Weitere Informationen finden Sie im [Installationshandbuch zu Campaign Classic v7](../../installation/using/mid-sourcing-deployment.md).
 
 <table> 
  <tbody> 
