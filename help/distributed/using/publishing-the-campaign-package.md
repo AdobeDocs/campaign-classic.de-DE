@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: e96add16-cbc8-43af-acff-06a95d5b7749
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
 ht-degree: 100%
 
@@ -41,11 +41,11 @@ Der validierungsverantwortliche Benutzer erhält daraufhin eine Benachrichtigung
 
 ## Weitere validierende Benutzer hinzufügen {#adding-other-reviewers}
 
-Über den Link **[!UICONTROL Bearbeiten...]** im Fenster der **[!UICONTROL Validierungsparameter]** des Kampagnenkits können weitere validierungsverantwortliche Benutzer hinzugefügt werden.
+Über den Link **[!UICONTROL Bearbeiten...]** im Tab **[!UICONTROL Validierungsparameter...]** des Kampagnenkits können weitere validierungsverantwortliche Benutzer hinzugefügt werden.
 
 ![](assets/s_advuser_mkg_dist_select_op_valid.png)
 
-## Validierungs-Deadlines {#approval-periods}
+## Validierungszeitraum {#approval-periods}
 
 Wenn nicht anders angegeben, muss die Validierung innerhalb von drei Tagen ab dem Unterbreitungsdatum erfolgen.
 
@@ -57,7 +57,7 @@ Die Erinnerung kann zu einem gegebenen Datum und/oder **x** Tage vor der Validie
 
 Wenn die Planung festgelegt und das Kit zur Validierung unterbreitet wurde, wird die Vorgangsplanung im Tab **[!UICONTROL Verfolgung]** angezeigt. Er gibt die auf der vorangehenden Konfiguration basierend berechnete Bearbeitungs-Deadline sowie die Daten der konfigurierten Erinnerungen an.
 
-## Validierung über die Adobe-Campaign-Konsole {#approving-via-the-adobe-campaign-console}
+## Validierung über die Adobe Campaign-Konsole {#approving-via-the-adobe-campaign-console}
 
 Wenn kein Validierungsverantwortlicher bestimmt wurde oder keiner der benachrichtigten Benutzer das Kit validiert hat, kann die Validierung direkt über die Schaltfläche **[!UICONTROL Kampagnenkit validieren]** des **[!UICONTROL Dashboards]** des Kampagnenkits oder über die Übersicht der Kits erfolgen.
 
