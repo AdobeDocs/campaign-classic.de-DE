@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '548'
 ht-degree: 100%
 
@@ -79,7 +79,7 @@ Im oberen Bereich des Editors werden Nachrichten zum Status des Inhalts angezeig
 * **Blaue Nachricht:** Informationsnachricht im Zusammenhang mit dem bearbeiteten Inhalt.
 * **Gelbe Nachricht**: Warnhinweis oder Fehlermeldung erfordert eine Aktion vonseiten des Benutzers.
 
-### Liste der Nachrichten beim Bearbeiten einer Webanwendung {#list-of-messages-when-editing-a-web-application}
+### Liste der Nachrichten beim Bearbeiten einer Web-Anwendung {#list-of-messages-when-editing-a-web-application}
 
 * Der HTML-Inhalt ist funktionsfähig.
 * Webanwendung wurde nicht veröffentlicht. Es besteht kein Online-Zugriff.
