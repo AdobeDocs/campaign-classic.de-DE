@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuration
 exl-id: 5c11bd0f-2df7-4c7f-b682-955fedf8e664
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1103'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ Die Konfiguration stellt sich wie folgt dar:
 
    ![](assets/social_fb_terms_of_services.png)
 
-## Webanwendungen vom Typ „Facebook“ erstellen {#creating-a-facebook-type-web-application}
+## Facebook-Web-Anwendungen erstellen {#creating-a-facebook-type-web-application}
 
 Mit der Facebook-Anwendung von Adobe Campaign können Sie personalisierte Inhalte in Ihrer Facebook-Anwendung anzeigen. Für jede Facebook-Anwendung müssen Sie eine Webanwendung in Adobe Campaign erstellen. Erstellen einer Facebook-Webanwendung:
 
