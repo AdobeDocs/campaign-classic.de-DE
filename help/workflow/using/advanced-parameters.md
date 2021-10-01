@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: 6c90ac2f-0d2b-48b0-9245-3e5e3a3d027c
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Die Konfiguration von Workflows mit hoher Disponibilität wird in diesem [Abschn
 
 ## Max. Ausführungsdauer {#max--execution-period}
 
-In diesem Feld kann eine maximale Dauer für die Workflow-Ausführung bestimmt werden. Wenn eine Aufgabe die angegebene Dauer überschreitet, zeigt das **[!UICONTROL Monitoring der Instanz]** einen Warnhinweis bezüglich des Workflows an. Auf diese Seite kann von der Startseite aus über die Rubrik **[!UICONTROL Monitoring]** zugegriffen werden.****
+In diesem Feld kann eine maximale Dauer für die Workflow-Ausführung bestimmt werden. Wenn eine Aufgabe die angegebene Dauer überschreitet, zeigt das **[!UICONTROL Instanz-Monitoring]** einen Warnhinweis bezüglich des Workflows an. Auf diese Seite kann von der Startseite aus über die Rubrik **[!UICONTROL Monitoring]** zugegriffen werden.****
 
 ## Verhalten {#behavior}
 
@@ -76,7 +76,7 @@ In diesem Feld wird angegeben, wie mit Fehlern umgegangen werden soll. Zwei Opti
 * **[!UICONTROL Prozess aussetzen]** - der Workflow wird automatisch ausgesetzt, sein Status wechselt in **[!UICONTROL Fehlgeschlagen]**. Nach Beseitigung der Fehlerursache kann der Workflow neu gestartet werden.
 * **[!UICONTROL Ignorieren]** - die den Fehler verursachende Aufgabe sowie alle folgenden im selben Zweig werden nicht ausgeführt. Diese Konfiguration empfiehlt sich bei wiederkehrenden Aufgaben. Wenn der Workflow-Zweig eine Planungsaktivität enthält, löst diese automatisch zum nächsten geplanten Zeitpunkt die nächste Ausführung aus.
 
-## Initialisierungsscript {#initialization-script}
+## Initialisierungsskript {#initialization-script}
 
 In diesem Feld können Sie Variablen initialisieren oder Aktivitätseigenschaften ändern. Weiterführende Informationen finden Sie unter [Scripts/JavaScript-Templates](javascript-scripts-and-templates.md).
 
