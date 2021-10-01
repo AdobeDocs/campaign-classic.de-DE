@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: event-activities
 exl-id: b6005eae-5fbc-4e22-ab3a-c9b7ed6506f6
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '446'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 ![](../../assets/common.svg)
 
-Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes Konto oder eine Adobe-Campaign-Instanz unter Verwendung des Hypertext Transfer Protocols (HTTP). Sowohl die GET- als auch die POST-Methode können zur Anwendung kommen.
+Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes Konto oder eine Adobe Campaign-Instanz unter Verwendung des Hypertext Transfer Protocols (HTTP). Sowohl die GET- als auch die POST-Methode können zur Anwendung kommen.
 
 ## Eigenschaften {#properties}
 
@@ -67,4 +67,4 @@ Die **HTTP-Übertragung** lädt Dateien über eine explizite URL, ein externes K
 
 ## Ausgabeparameter {#output-parameters}
 
-* filename: Vollständiger Name der heruntergeladenen Datei.
+* filename: Vollständiger Name der übertragenen Datei.
