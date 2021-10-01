@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: 84d6cb2e-c7f9-43d7-a98c-22613d456193
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1253'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Nach Abschluss der Konfiguration können Sie mit Social Marketing auf Ihren Facebook-Seiten veröffentlichen.
+Nach Abschluss der Konfiguration können Sie mit Social-Media-Marketing Inhalte auf Ihren Facebook-Seiten veröffentlichen.
 
 ## Einschränkungen {#limitations}
 
