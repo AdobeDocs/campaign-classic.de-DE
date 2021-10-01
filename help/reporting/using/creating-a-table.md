@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: creating-new-reports
 exl-id: 05f76bdf-6dcd-4360-9e72-0ba6a4dd0d5e
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2643'
 ht-degree: 100%
 
@@ -203,7 +203,7 @@ In diesem Beispiel wird ein zweiseitiger Bericht erstellt: Die erste Seite soll 
 
 ![](assets/reporting_quick_start_report-final.png)
 
-### 1. Schritt - Bericht erstellen {#step-1---create-a-report}
+### 1. Schritt – Bericht erstellen {#step-1---create-a-report}
 
 Erstellen Sie einen neuen Bericht, der sich auf das Kampagnen-Schema bezieht (**[!UICONTROL Kampagnen (nms)]**).
 
@@ -215,7 +215,7 @@ Positionieren Sie im Bericht die ersten Komponenten zur Erstellung des Inhalts: 
 
 ![](assets/reporting_quick_start_diagram.png)
 
-### 2. Schritt - Erste Abfrage konfigurieren {#step-2---create-the-first-query}
+### 2. Schritt – Erste Abfrage konfigurieren {#step-2---create-the-first-query}
 
 Die erste Abfrage soll die Sendungen aller Kampagnen abrufen.
 
@@ -259,7 +259,7 @@ Doppelklicken Sie auf die erste Abfrage, um sie zu öffnen, und konfigurieren Si
 
 1. Klicken Sie zur Speicherung dieser Bedingung auf **[!UICONTROL Beenden]** und zum Schließen des Abfrage-Editors auf **[!UICONTROL OK]**.
 
-### 3. Schritt - Erste Seite konfigurieren {#step-3--create-the-first-page}
+### 3. Schritt – Erste Seite konfigurieren {#step-3--create-the-first-page}
 
 In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie folgt vor:
 
@@ -359,7 +359,7 @@ In diesem Schritt wird die erste Seite des Berichts konfiguriert. Gehen Sie wie 
    >
    >Dieser Vorgang kann nicht rückgängig gemacht werden. Daher wird ausdrücklich empfohlen, Zellen erst dann zu verbinden, wenn die Erstellung des Berichts abgeschlossen ist.
 
-### 4. Schritt - Zweite Abfrage erstellen {#step-4---create-the-second-query}
+### 4. Schritt – Zweite Abfrage erstellen {#step-4---create-the-second-query}
 
 Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details eines Versands anzuzeigen, wenn er vom Benutzer des Berichts angeklickt wird. Bevor Sie die Abfrage hinzufügen, öffnen Sie die bereits erstellte Seite und aktivieren Sie die ausgehende Transition, um sie mit der Abfrage verbinden zu können.
 
@@ -395,7 +395,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
 1. Schließen Sie das Konfigurationsfenster der Abfrage und fügen Sie dem Diagramm im Anschluss an die zweite Abfrage eine Seite hinzu.
 
-### 5. Schritt - Zweite Seite konfigurieren {#step-5---create-the-second-page}
+### 5. Schritt – Zweite Seite konfigurieren {#step-5---create-the-second-page}
 
 1. Öffnen Sie die Seite und vergeben Sie einen Titel, hier **E-Mail-Domains**.
 1. Deaktivieren Sie die Option **[!UICONTROL Ausgehende Transitionen aktivieren]**: Diese Seite ist die letzte Aktivität des Berichts.
@@ -448,7 +448,7 @@ Es werden eine zweite Abfrage und eine zweite Seite hinzugefügt, um die Details
 
    Die zweite Seite ist nun konfiguriert.
 
-### 6. Schritt - Bericht überprüfen {#step-6---viewing-the-report}
+### 6. Schritt – Bericht überprüfen {#step-6---viewing-the-report}
 
 Um das Ergebnis der Konfiguration zu überprüfen, klicken Sie auf den Tab **[!UICONTROL Vorschau]** und wählen Sie die Option **[!UICONTROL Allgemein]** aus.
 
