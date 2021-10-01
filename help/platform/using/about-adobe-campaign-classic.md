@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 8febceb0-9694-4045-a630-a7ff2fd18943
 source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Adobe Campaign ermöglicht es, die verschiedenen Schritte zur Erstellung von Dia
 
 >[!AVAILABILITY]
 >
->* Hilfematerialien in dieser Sammlung gelten für Campaign Classic v7 in seinem [aktuellen Build](../../rn/using/latest-release.md). Ein spezifisches Zeichen ist verfügbar, wenn ein Abschnitt auch für Campaign v8 gilt.
+>* Hilfematerialien in dieser Sammlung gelten für Campaign Classic v7 in seinem [aktuellen Build](../../rn/using/latest-release.md). Ein spezifisches Kennzeichen gibt an, wenn ein Abschnitt auch für Campaign v8 gilt.
 >
->* Die Dokumentation zu Adobe Campaign v8 ist [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html) verfügbar.
+>* Die Dokumentation zu Adobe Campaign v8 ist [hier](https://experienceleague.adobe.com/docs/campaign/campaign-v8/campaign-home.html?lang=de) verfügbar.
 
 
 ![](assets/do-not-localize/how-to-video.png) [Wichtigste Funktionen und Leistungsmerkmale im Video](#video)
