@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3899'
 ht-degree: 100%
 
@@ -436,6 +436,7 @@ Eine Aufgabe kann folgende Status haben: **[!UICONTROL Geplant]**, **[!UICONTROL
 >
 >* Der Status der Aufgabe wird automatisch aktualisiert.
 >* Eine Aufgabe, die nicht von ihrem Verantwortlichen geschlossen wurde, erscheint auch nach Ablauf ihres Gültigkeitszeitraums in den laufenden Aufgaben. In diesem Fall informiert ein Warnhinweis die Benutzer darüber, dass die Aufgabe überfällig ist.
+
 >
 
 
