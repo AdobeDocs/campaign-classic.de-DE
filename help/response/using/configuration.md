@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Campaign Response Manager konfigurieren
-description: Erfahren Sie, wie Sie den Campaign Response Manager konfigurieren
+description: Erfahren Sie, wie Sie Campaign Response Manager konfigurieren
 audience: campaign
 content-type: reference
 topic-tags: response-manager
 exl-id: 1a115ca9-2532-4bd3-be77-814e43250c51
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Es wird erklärt, wie die Standard-Datenmodelle den Besonderheiten einer Adobe-C
 
 Messhypothesen werden vom Kampagnenvorgänge-Workflow **[!UICONTROL operationMgt]** gestartet. Jede Hypothese repräsentiert einen separaten Prozess, der asynchron ausgeführt wird und über einen Ausführungsstatus verfügt (In Bearbeitung, Ausstehend, Abgeschlossen etc.). Er unterliegt einer Steuerung, die Prioritätseinschränkungen, Begrenzungen der Anzahl simultaner Prozesse, Zeitpunkte mit geringer Auslastung und die automatische Ausführung mit Ausführungsfrequenz berücksichtigt und verwaltet.
 
-## Schemata konfigurieren {#configuring-schemas}
+## Schemas konfigurieren {#configuring-schemas}
 
 >[!CAUTION]
 >
->Ändern Sie nicht die integrierten Schemata der Anwendung, sondern verwenden Sie den Schemaerweiterungsmechanismus. Andernfalls werden geänderte Schemata bei zukünftigen Aktualisierungen der Anwendung nicht aktualisiert. Dies kann bei der Verwendung von Adobe Campaign zu Funktionsstörungen führen.
+>Ändern Sie nicht die integrierten Schemas der Anwendung, sondern verwenden Sie den Schemaerweiterungs-Mechanismus. Andernfalls werden geänderte Schemas bei zukünftigen Aktualisierungen der Anwendung nicht aktualisiert. Dies kann bei der Verwendung von Adobe Campaign zu Funktionsstörungen führen.
 
-Vor der Anwendung dieser Option müssen die verschiedenen Tabellen (Transaktionen, Transaktionendetails) und ihre Beziehung mit Sendungen, Angeboten und Individuen definiert werden.
+Vor dem Einsatz des Reaktionsmoduls ist eine Anwendungsintegration erforderlich, um die verschiedenen zu messenden Tabellen (Transaktionen, Transaktionendetails) und ihre Beziehung mit Sendungen, Angeboten und Individuen zu definieren.
 
 ### Standardschemata {#standard-schemas}
 
@@ -57,7 +57,7 @@ Die folgende Grafik stellt die Relationen der unterschiedlichen Tabellen nach er
 
 ### Reaktionsverwaltung und Empfänger {#response-management-with-adobe-campaign-recipients}
 
-In diesem Beispiel wird mithilfe der integrierten Empfängertabelle **[!UICONTROL nms:recipient]** eine Bestelltabelle in unser Reaktionsverwaltungsmodul integriert.
+In diesem Beispiel wird unter Verwendung der in Adobe Campaign integrierten Empfängertabelle (**[!UICONTROL nms:recipients]**) eine Tabelle mit Käufen in die Reaktionsverwaltung integriert.
 
 Die Tabelle der Antwort-Logs eines **[!UICONTROL nms:remaMatchRcp]**-Empfängers wird erweitert, um einen Link zum Bestelltabelle-Schema hinzuzufügen. Im folgenden Beispiel heißt die Bestelltabelle **demo:purchase**.
 
@@ -102,9 +102,9 @@ name="remaMatchRcp" namespace="cus">
 
 ### Reaktionsverwaltung mit einer benutzerdefinierten Empfängertabelle {#response-management-with-a-personalized-recipient-table}
 
-In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der Adobe-Campaign-Empfängertabelle, eine Tabelle mit Bestelldaten in die Reaktionsverwaltung integriert.
+In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der Adobe Campaign-Empfängertabelle, eine Tabelle mit Bestelldaten in die Reaktionsverwaltung integriert.
 
-* Erstellen Sie ein neues Reaktionslog-Schema, das aus dem Schema **[!UICONTROL nms:remaMatch]** abgeleitet wurde.
+* Erstellung eines neuen Reaktionslog-Schemas basierend auf dem Schema **[!UICONTROL nms:remaMatch]**.
 
    Da es sich nicht um die Adobe-Campaign-Empfängertabelle handelt, ist es notwendig, ein neues Reaktionslog-Schema auf Grundlage des **[!UICONTROL nms:remaMatch]**-Schemas zu erstellen. Anschließend müssen die Relationen zu den Versandlogs und der die Bestelldaten enthaltenden Transaktionstabelle hinzugefügt werden.
 
@@ -127,7 +127,7 @@ In diesem Beispiel wird unter Verwendung einer Individuentabelle, also nicht der
    </srcSchema>
    ```
 
-* Ändern Sie das Hypothesenformular im Schema **[!UICONTROL nms:remaHypothesis]** .
+* Änderung des Hypothesenformulars im Schema **[!UICONTROL nms:remaHypothesis]**.
 
    Standardmäßig wird die Liste der Reaktionslogs in den Empfängerlogs angezeigt. Um die neuen, in der vorhergehenden Etappe erstellten Reaktionslogs anzuzeigen, muss daher das Hypothesenformular geändert werden.
 
