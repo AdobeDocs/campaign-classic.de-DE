@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: connectors
 exl-id: 7f9eda15-76e8-40a1-8302-004cea085778
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1615'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Das Datum der letzten Synchronisation wird in einer im Konfigurationsfenster ang
 >
 >Dieser Hinweis gilt nur für die allgemeine **[!UICONTROL CRM-Connector]**-Aktivität. Für andere CRM-Aktivitäten läuft der Prozess automatisch ab.
 >
->Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **yyyy/MM/dd hh:mm:ss**.
+>Diese Option muss manuell unter **[!UICONTROL Administration]** > **[!UICONTROL Plattform]** > **[!UICONTROL Optionen]** erstellt und ausgefüllt werden. Es muss sich um eine Textoption handeln, deren Wert dem folgenden Format entspricht: **jjjj/MM/tt hh:mm:ss**.
 > 
 >Diese Option muss bei jedem weiteren Import manuell aktualisiert werden.
 
@@ -113,7 +113,7 @@ Die Aktivierung der Option **[!UICONTROL Automatischer Index]** erzeugt drei Var
 
    >[!NOTE]
    >
-   >Diese Daten werden im folgenden Format angezeigt: **yyyy/MM/dd hh:mm:ss**.
+   >Das Datum wird im Format **jjjj/MM/tt hh:mm:ss** ausgedrückt.
 
 ### Daten filtern {#filtering-data}
 
@@ -204,7 +204,7 @@ Darüber hinaus sind folgende Konvertierungen möglich:
 * **[!UICONTROL Ohne Zeitverschiebung]**: gibt im Gegensatz zum Standardmodus die Uhrzeit ohne Berücksichtigung der Zeitzonen wieder.
 * **[!UICONTROL Kopieren/Einfügen]**: verwendet die ursprünglichen Daten als Strings weiter (keine Konvertierung).
 
-### Umgang mit Fehlern {#error-processing}
+### Fehlerverarbeitung {#error-processing}
 
 Im Rahmen eines Imports oder Exports ist es möglich, einen spezifischen Umgang mit Fehlern und Zurückweisungen zu definieren. Wählen Sie diesbezüglich im Tab **[!UICONTROL Verhalten]** die Optionen **[!UICONTROL Zurückweisungen in einer Datei speichern]** und **[!UICONTROL Fehler verarbeiten]** aus.
 
