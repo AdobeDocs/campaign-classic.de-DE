@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: content-management
 exl-id: 3e28bfee-0321-40f4-9ef6-1bdb5b25041b
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
 ht-degree: 100%
 
@@ -152,7 +152,7 @@ Das Attribut **ref** des zu referenzierenden Elements muss mit dem Pfad (XPath) 
 
 Die Struktur des Elements &quot;Kapitel&quot; wird in das Element mit Namen &quot;Segment&quot; ausgegliedert, welches außerhalb des Hauptelements liegt. Die Elemente &quot;Kapitel&quot; und &quot;Anhang&quot; referenzieren beide das Element &quot;Segment&quot;.
 
-## Compute string {#compute-string}
+## Compute-String {#compute-string}
 
 Ein **Compute string** ist ein XPath-Ausdruck, der dazu verwendet wird, einen eine Inhaltsinstanz repräsentierenden String zu erzeugen.
 
