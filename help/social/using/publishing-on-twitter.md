@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: publishing-on-facebook-twitter
 exl-id: e030c029-d1ee-4749-94e3-6bdfc8d89a34
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1026'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## In Ihren Twitter-Konten veröffentlichen {#publishing-on-your-twitter-accounts}
 
-Nach Abschluss der Konfiguration können Sie mit Social Marketing Tweets an Ihre Twitter-Konten senden.
+Nach Abschluss der Konfiguration können Sie mit Social-Media-Marketing Tweets an Ihre Twitter-Konten senden.
 
 ### Einschränkungen {#limitations}
 
@@ -154,7 +154,7 @@ Die folgenden Einschränkungen sind Beschränkungen, die Twitter-inhärent sind.
 
 ### Versand erstellen {#creating-the-delivery-}
 
-Erstellen Sie einen neuen Versand anhand der **[!UICONTROL Twittern (Direct Message)]**-Versandvorlage.
+Erstellen Sie einen neuen Versand anhand der Versandvorlage für **[!UICONTROL Twittern (Direct Message)]**.
 
 ![](assets/social_twitter_delivery_010.png)
 
