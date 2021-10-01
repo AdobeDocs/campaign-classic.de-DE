@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: -general-operation
 exl-id: 74b82019-bdab-4442-84cf-5ad18d0db788
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2031'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 ![](../../assets/common.svg)
 
-## Abfragen erstellen     {#creating-queries}
+## Abfragen erstellen {#creating-queries}
 
 ### Datenauswahl {#selecting-data}
 
@@ -181,7 +181,7 @@ Zur Konfiguration wählen Sie zunächst die Bedingungen aus:
 
    ![](assets/do-not-localize/v7.jpeg)[  Dokumentation zu Campaign v7](../../installation/using/about-fda.md)
 
-   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=en)
+   ![](assets/do-not-localize/v8.png)[  Dokumentation zu Campaign v8](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/fda.html?lang=de)
 
 Danach müssen neue Teilmengen hinzugefügt werden:
 
