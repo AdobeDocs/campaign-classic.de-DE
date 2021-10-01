@@ -7,9 +7,9 @@ role: User
 level: Beginner
 exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2369'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ _15. April 2019_
 
 ## Version 18.10.3 – Build 8981{#release-18-10-3-build-8981}
 
-_29. Januar 2019_
+29. Januar 2019
 
 >[!CAUTION]
 >
@@ -78,11 +78,11 @@ _29. Januar 2019_
 
 ## Version 18.10.2 – Build 8978{#release-18-10-2-build-8978}
 
-_6. Dezember 2018_
+6. Dezember 2018
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neuheiten**
 
@@ -100,11 +100,11 @@ _6. Dezember 2018_
 
 ## Version 18.10 – Build 8977{#release-18-10-build-8977}
 
-_5. November 2018_
+5. November 2018
 
 >[!CAUTION]
 >
->Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+>Dieser Build wurde zurückgerufen. Bitte [aktualisieren Sie auf den neuesten Build](../../production/using/build-upgrade.md) oder wenden Sie sich an die [Adobe Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 **Neue Funktionen?**
 
@@ -140,7 +140,7 @@ _5. November 2018_
 
 * Eine Sicherheitslücke wurde geschlossen, die potenzielle SSRF- (Server Side Request Forgery) und DoS-Angriffe (Denial of Service) ermöglicht hätte. (NEO-11453)
 * Inhalt (Tracking-Umleitung, Mirrorseiten, Umfragen etc.) wird jetzt von Campaign mit dem X-Robots-Tag-Header nocache bereitgestellt. Dadurch wird verhindert, dass dieser Inhalt von Internet-Suchmaschinen indexiert wird. (NEO-11101)
-* Fehlerkorrektur - Es wurde ein XTK-Injektionsfehler in der Anmelde-API behoben (nms:subscription:Unsubscribe und nms:subscription:Subscribe).
+* Fehlerkorrektur – EXTK-Injections in der Anmelde-API funktionieren jetzt problemlos (nms:subscription:Unsubscribe und nms:subscription:Subscribe).
 * Ein Problem bei XTK-Injections in der Abmelde-Webanwendung wurde behoben.
 * Passwörter, die in manchen SMS-Logs angezeigt wurden und daher ein Sicherheitsrisiko darstellten, wurden entfernt.
 
