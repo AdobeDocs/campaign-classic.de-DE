@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Dazu ist Folgendes erforderlich:
 * Ein Dienst und eine Webanwendung, die in Campaign v7 erstellt und veröffentlicht wurden.
 * Die Webanwendung muss die Aktivität **[!UICONTROL Vorausfüllen]** enthalten, die die Verschlüsselungsmethode **[!UICONTROL Adobe-Campaign-Verschlüsselung]** verwendet.
 
-## Webanwendung und Dienst erstellen {#creating-the-web-application-and-service}
+## Web-Anwendung und Service erstellen {#creating-the-web-application-and-service}
 
 Sie können in Campaign v7 Webanwendungen erstellen, mit denen sich Empfänger für einen Dienst anmelden können. Die Webanwendung und der Dienst werden in Campaign v7 konzipiert und gespeichert und Sie können diesen Dienst über eine Campaign Standard-Kommunikation aktualisieren. Weiterführende Informationen zu Webanwendungen in Campaign v7 finden Sie in [diesem Abschnitt](../../web/using/adding-fields-to-a-web-form.md#subscription-checkboxes).
 
