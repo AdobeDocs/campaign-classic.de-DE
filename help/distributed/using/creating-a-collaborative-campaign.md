@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: distributed-marketing
 exl-id: 17313fe5-ad42-45ca-a35a-1e7aa89380ef
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
 ht-degree: 100%
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ![](../../assets/v7-only.svg)
 
-Partizipative Kampagnen werden von Zentralstellen auf Basis der Kampagnenvorlagen des **dezentralen Marketing** erstellt. Lesen Sie hierzu [diese Seite](about-distributed-marketing.md#collaborative-campaign).
+Partizipative Kampagnen werden von Zentralstellen auf Basis der Kampagnenvorlagen des **dezentralen Marketings** erstellt. Lesen Sie hierzu [diese Seite](about-distributed-marketing.md#collaborative-campaign).
 
 ## Partizipative Kampagne erstellen {#creating-a-collaborative-campaign}
 
