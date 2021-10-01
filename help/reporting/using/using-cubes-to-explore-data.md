@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: designing-reports-with-cubes
 exl-id: 32696bbf-1415-4214-837f-5437fdb8b4d4
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '991'
 ht-degree: 100%
 
@@ -29,13 +29,13 @@ Marketing Analytics ermöglicht es, auf vereinfachte Weise Berichte zu erstellen
 
 ## Daten eines Berichts analysieren {#exploring-the-data-in-a-report}
 
-### 1. Schritt - Erstellung eines Cube-basierten Berichts {#step-1---creating-a-report-based-on-a-cube}
+### 1. Schritt – Erstellung eines Cube-basierten Berichts {#step-1---creating-a-report-based-on-a-cube}
 
 Klicken Sie zum Erstellen eines Cube-basierten Berichts auf die Schaltfläche **[!UICONTROL Erstellen]** im Tab **[!UICONTROL Berichte]** und wählen Sie den gewünschten Cube.
 
 Der Prozess wird hier detailliert beschrieben: [Cube-basierten Bericht erstellen](../../reporting/using/creating-indicators.md#creating-a-report-based-on-a-cube).
 
-### 2. Schritt - Auswahl der Zeilen und Spalten {#step-2---selecting-lines-and-columns}
+### 2. Schritt – Auswahl der Zeilen und Spalten {#step-2---selecting-lines-and-columns}
 
 Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unserem Beispiel: Alter und Stadt).
 
@@ -74,7 +74,7 @@ Die Standardanzeige beinhaltet die ersten beiden Dimensionen des Cubes (in unser
 
    ![](assets/s_advuser_cube_in_report_04c.png)
 
-### 3. Schritt - Konfiguration der anzuzeigenden Kennzahlen {#step-3---configuring-the-measures-to-display}
+### 3. Schritt – Konfiguration der anzuzeigenden Kennzahlen {#step-3---configuring-the-measures-to-display}
 
 Geben Sie nach der Positionierung der Zeilen und Spalten die anzuzeigenden Kennzahlen sowie ihren Anzeigemodus an.
 
