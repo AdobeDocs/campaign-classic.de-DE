@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: 7d1bb3c6-d056-4212-9500-75459a0046fa
 source-git-commit: cfba72840f7a0d335516d38be24363865d83d18d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Sie können die Daten in der Datenbank gebündelt aktualisieren, verbinden und e
 
 [Hier erfahren Sie mehr darüber](../../workflow/using/update-data.md).
 
-## Wie kann ich Data-Management-Funktionen verwenden? {#how-can-i-leverage-data-management-capabilities-}
+## Wie kann ich Daten-Management-Funktionen verwenden? {#how-can-i-leverage-data-management-capabilities-}
 
 In Adobe Campaign können Sie eine Reihe von Aktivitäten nutzen, die mithilfe effizienter und flexibler Tools komplexe Zielgruppenbestimmungen und Anreicherungen ermöglichen. Mit Data-Management-Aktivitäten ist es möglich, eine kohärente und individuelle Kommunikation mit Kontakten zu gewährleisten, indem beispielsweise Informationen zu Verträgen, Abonnements oder Reaktionen auf vorhergehende Sendungen verwendet werden. Das Data Management erlaubt es darüber hinaus, den Lebenszyklus von Daten während der Segmentierungsprozesse zu verfolgen, insbesondere werden:
 
