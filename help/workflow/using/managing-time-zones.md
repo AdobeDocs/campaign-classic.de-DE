@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: advanced-management
 exl-id: c2f6033c-30cd-4eb4-adf1-ab2de7510220
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '296'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 94%
 
 Adobe Campaign ist in der Lage, verschiedene Zeitzonen innerhalb einer Instanz zu verwalten. Die verwendeten Zeitzonen werden bei der Instanzerstellung konfiguriert.
 
-Weitere Informationen zum Konfigurieren von Zeitzonen in Adobe Campaign finden Sie im [Campaign Classic v7-Installationshandbuch](../../installation/using/time-zone-management.md).
+Weiterführende Informationen zur Zeitzonenkonfiguration in Adobe Campaign finden Sie im [Installationshandbuch zu Campaign Classic v7](../../installation/using/time-zone-management.md).
 
-In einem Workflow besteht nicht nur die Möglichkeit, die Ausführung einzelner Aktivitäten zu terminieren, sondern auch dem ganzen Workflow oder einzelnen Aktivitäten eine Zeitzone zuzuordnen. Dies kann insbesondere beim Dateiimport oder im Zuge der Versandplanung von Nutzen sein.
+In einem Workflow besteht nicht nur die Möglichkeit, die Ausführung einzelner Aktivitäten zu terminieren, sondern auch dem ganzen Workflow oder einzelnen Aktivitäten eine Zeitzone zuzuordnen. Dies kann insbesondere beim Dateiimport oder im Zuge der Versandauslösung von Nutzen sein.
 
 ## Ausführung planen {#execution-scheduling}
 
@@ -53,4 +53,4 @@ Bei Auswahl der Option **[!UICONTROL Standard]** wird die Zeitzone des Workflows
 
 ## Aktivitäten eine Zeitzone zuweisen {#linking-a-time-zone-to-an-activity}
 
-Im **[!UICONTROL Erweitert]**-Tab der Workflow-Aktivitäten besteht die Möglichkeit, die Zeitzone anzugeben. I. d. R. reicht es aus, dem gesamten Workflow eine Zeitzone zuzuweisen. Punktuell kann es jedoch interessant sein, sie für eine bestimmte Aktivität zu überschreiben, beispielsweise beim Datenimport, um den enthaltenen Datumsangaben die entsprechende Zeitzone zuzuordnen.
+Im Tab **[!UICONTROL Erweitert]** der Workflow-Aktivitäten besteht die Möglichkeit, die Zeitzone anzugeben. I. d. R. reicht es aus, dem gesamten Workflow eine Zeitzone zuzuweisen. Punktuell kann es jedoch interessant sein, sie für eine bestimmte Aktivität zu überschreiben, beispielsweise beim Datenimport, um den enthaltenen Datumsangaben die entsprechende Zeitzone zuzuordnen.
