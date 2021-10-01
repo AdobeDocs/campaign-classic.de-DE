@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: delivering-an-offer
 exl-id: 64aea8b9-7f06-4db0-a3e6-6a0e17c3ddcb
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Zwei Möglichkeiten stehen zur Verfügung, um Angebote zum Zeitpunkt der Versand
 
 ## Versand mit Abfrage des Angebotsmoduls {#delivering-with-a-call-to-the-offer-engine}
 
-Die Einbindung von Angeboten in Marketingkampagnen geschieht innerhalb von klassischen Versandaktionen. Die Abfrage des Angebotsmoduls wird bei der Erstellung des Versandinhalts eingebunden, indem Sie in der Symbolleiste auf **[!UICONTROL Angebote]** klicken.
+Um ein Angebot während einer Marketing-Kampagne zu präsentieren, erstellen Sie einfach eine klassische Versandaktion auf Basis des gewählten Kanals. Die Abfrage des Angebotsmoduls erfolgt bei der Erstellung des Versandinhalts, indem Sie in der Symbolleiste auf **[!UICONTROL Angebote]** klicken.
 
 ![](assets/offer_delivery_009.png)
 
