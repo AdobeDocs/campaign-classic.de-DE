@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: campaign-optimization
 exl-id: 757328fa-4698-4f85-a5fa-074b5152ec45
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '815'
 ht-degree: 100%
 
@@ -97,7 +97,7 @@ Der Workflow **[!UICONTROL Planungen]** erstellt automatisch alle entsprechenden
 >
 >Es wird empfohlen, Verfügbarkeitszeilen über einen Dateiimport zu erstellen. Im Kapazität-Tab können die Verfügbarkeitszeilen anschließend eingesehen und überprüft werden.
 
-## Nachrichten bei Erreichen der Kapazitätsbegrenzung ausschließen {#exclude-messages-when-capacity-limit-reached}
+## Nachrichten bei Erreichen des Kapazitätslimits ausschließen {#exclude-messages-when-capacity-limit-reached}
 
 Die Verfügbarkeitszeilen dienen nur als Richtwerte. Um überschüssige Nachrichten auszuschließen, kreuzen Sie die Option **[!UICONTROL Die die Kapazität übersteigenden Nachrichten aus der Zielgruppe ausschließen]** an. Die Kapazität kann so nicht überschritten werden. Für die gleiche Population wie im vorhergehenden Beispiel können Verbrauch und verbleibende Kapazität die Ursprungsmenge nicht übersteigen.
 
