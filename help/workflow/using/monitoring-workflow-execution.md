@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2098'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ Dieser Abschnitt enthält Informationen zur Überwachung der Ausführung Ihrer W
 
 Ein Anwendungsbeispiel zum Erstellen eines Workflows, mit dem Sie den Status einer Reihe von Workflows überwachen können, die „ausgesetzt“, „angehalten“ oder „Mit Fehlern“ sind, finden Sie zudem in [diesem Abschnitt](supervising-workflows.md#supervising-workflows).
 
-Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen hierzu finden Sie im [Campaign Classic v7 Production Guide](../../production/using/audit-trail.md).
+Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen hierzu finden Sie im [Produktionshandbuch zu Campaign Classic v7](../../production/using/audit-trail.md).
 
-Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse finden Sie im [Campaign Classic v7 Production Guide](../../production/using/monitoring-guidelines.md).
+Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse finden Sie im [Produktionshandbuch zu Campaign Classic v7](../../production/using/monitoring-guidelines.md).
 
 ## Fortschritt anzeigen {#displaying-progress}
 
@@ -143,7 +143,7 @@ In diesem Fall wird die fehlerhafte Aufgabe abgebrochen. Dieser Modus ist insbes
 >
 >Es besteht die Möglichkeit, diese Vorgehensweise innerhalb eines Workflows nur für bestimmte Aktivitäten zu konfigurieren. Gehen Sie hierzu in die Eigenschaften der entsprechenden Aktivität und wählen Sie im **[!UICONTROL Erweitert]**-Tab den gewünschten Umgang mit Fehlern aus.
 
-Weitere Informationen zur Fehlerbehebung bei der Ausführung von Workflows finden Sie im [Campaign Classic v7 Production Guide](../../production/using/workflow-execution.md).
+Weitere Informationen zur Fehlerbehebung bei der Ausführung von Workflows finden Sie im [Produktionshandbuch zu Campaign Classic v7](../../production/using/workflow-execution.md).
 
 ## Fehler verarbeiten {#processing-errors}
 
@@ -167,7 +167,7 @@ Es wird daher empfohlen, die Workflow-Ausführung nach Änderungen komplett neu 
 
 ## Instanz-Monitoring {#instance-supervision}
 
-Die Seite **[!UICONTROL Monitoring der Instanz]** bietet die Möglichkeit, den Adobe-Campaign-Server zu überwachen. Sie enthält die Liste fehlgeschlagener Workflows und Sendungen.
+Die Seite **[!UICONTROL Instanz-Monitoring]** bietet die Möglichkeit, den Adobe Campaign-Server zu überwachen. Sie enthält die Liste fehlgeschlagener Workflows und Sendungen.
 
 Auf diese Seite können Sie über den Tab **[!UICONTROL Monitoring]** zugreifen. Klicken Sie auf die Schaltfläche **[!UICONTROL Übersicht]**.
 
@@ -236,9 +236,9 @@ Im Abschnitt [Datenaktualisierungen koordinieren](coordinating-data-updates.md) 
 
 In Workflows werden zahlreiche Arbeitstabellen verwendet, die Speicherplatz benötigen und mit der Zeit die gesamte Plattform verlangsamen, wenn sie nicht gewartet wird. Weiterführende Informationen zur Datenbankwartung finden Sie in diesem [Abschnitt](../../production/using/tables-to-maintain.md).
 
-Der Workflow **Datenbankbereinigung** , auf den über den Knoten **Administration > Betreibung > Technische Workflows** zugegriffen werden kann, ermöglicht das Löschen veralteter Daten, um ein exponentielles Wachstum der Datenbank zu vermeiden. Der Workflow wird automatisch ohne Benutzereingriff ausgelöst. Siehe [Campaign Classic v7 Production Guide](../../production/using/database-cleanup-workflow.md).
+Der Workflow **Datenbankbereinigung**, auf den Sie über den Knoten **Administration > Produktion > Technische Workflows** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Der Workflow wird automatisch ohne das Eingreifen des Benutzers ausgelöst. Siehe [Produktionshandbuch zu Campaign Classic v7](../../production/using/database-cleanup-workflow.md).
 
-Sie können auch spezifische technische Workflows erstellen, um unnötige Daten zu bereinigen, die Speicherplatz belegen. Siehe [Campaign Classic v7 Production Guide](../../production/using/application-objects.md) und diesen [Abschnitt](#purging-the-logs).
+Sie können auch spezifische technische Workflows erstellen, um unnötige Daten zu bereinigen, die Speicherplatz belegen. Siehe [Produktionshandbuch zu Campaign Classic v7](../../production/using/application-objects.md) und diesen [Abschnitt](#purging-the-logs).
 
 ## Ausgesetzte Workflows handhaben {#handling-of-paused-workflows}
 
@@ -261,7 +261,7 @@ Folgende Ansichten stehen zur Verfügung:
 * **[!UICONTROL Wird ausgeführt]**: listet alle ausgeführten Workflows auf.
 * **[!UICONTROL Ausgesetzt]**: listet alle ausgesetzten Workflows auf.
 * **[!UICONTROL Fehlgeschlagen]**: listet alle fehlgeschlagenen Workflows auf.
-* **[!UICONTROL Start ausstehend]**: listet alle Workflows auf, die darauf warten, vom operationMgt-Prozess gestartet zu werden. Diese Ansicht ist nur mit dem Paket **Marketing-Kampagnen** verfügbar. Weitere Informationen finden Sie im [Campaign Classic v7-Installationshandbuch](../../installation/using/installing-campaign-standard-packages.md)).
+* **[!UICONTROL Start ausstehend]**: listet alle Workflows auf, die darauf warten, vom operationMgt-Prozess gestartet zu werden. Diese Ansicht ist nur mit dem Package **Marketing-Kampagnen** verfügbar. Weitere Informationen finden Sie im [Installationshandbuch zu Campaign Classic v7](../../installation/using/installing-campaign-standard-packages.md)).
 
 ![](assets/workflow-monitoring-views.png)
 
