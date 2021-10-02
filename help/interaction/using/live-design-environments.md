@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: managing-environments
 exl-id: 965c4a6a-6535-454d-bd37-e9c8312b4d13
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -60,7 +60,7 @@ Standardmäßig wird Interaction mit einer Umgebung geliefert, die für ein Ziel
 
    Diese Option ermöglicht die Aktivierung von für anonyme Interaktionen reservierten Funktionen, beispielsweise in Bezug auf die Konfiguration der Umgebungsplatzierungen. Dies ermöglicht es, Optionen zu konfigurieren, die den Wechsel von &quot;identifizierten&quot; zu &quot;anonymen&quot; Umgebungen erlauben.
 
-   Sie können zum Beispiel eine Platzierung der Empfängerumgebung (identifizierter Kontakt) mit der entsprechenden Platzierung der Besucherumgebung (nicht identifizierter Kontakt) verknüpfen. Auf diese Weise werden dem Kontakt verschiedene Angebote unterbreitet, je nachdem ob er identifiziert werden konnte oder nicht. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md).
+   Sie können beispielsweise eine Platzierung der Empfängerumgebung (identifizierter Kontakt) mit einer Platzierung verknüpfen, die einer Besucherumgebung entspricht (nicht identifizierter Kontakt). Auf diese Weise werden dem Kontakt verschiedene Angebote unterbreitet, je nachdem, ob er identifiziert wurde oder nicht. Weitere Informationen hierzu finden Sie unter [Angebotsplatzierungen](../../interaction/using/creating-offer-spaces.md).
 
    ![](assets/offer_env_anonymous_003.png)
 

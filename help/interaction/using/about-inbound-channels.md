@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: 33247728-b865-4dfd-814f-2900965a7187
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ Angebote können in verschiedenen Platzierungen über eingehende oder ausgehende
 
 Damit Angebote vom Angebotsmodul ausgewählt werden können, müssen sie zuvor validiert und für die Live-Umgebung freigegeben worden sein. Lesen Sie diesbezüglich den Abschnitt [Angebotsvalidierung](../../interaction/using/approving-and-activating-an-offer.md).
 
-Eingehende Interaktionen lassen sich dahingehend unterscheiden, ob der sie auslösende Kontakt identifiziert werden konnte oder nicht. Das Angebotsmodul ermöglicht es, anonymen und identifizierten Kontakten jeweils verschiedene Angebote zu unterbreiten.
+Bei eingehenden Kontakten gibt es zwei mögliche Ergebnisse: der Benutzer, der Seiten durchsucht, von der Website identifiziert werden kann oder nicht. Je nachdem, ob der Benutzer identifiziert wird, bietet das Angebotsmodul verschiedene Angebote an.
 
 Um in eingehenden Kanälen Angebote vorschlagen zu können, muss die Abfrage an das Angebotsmodul an der Stelle konfiguriert werden, an der die Angebote unterbreitet werden sollen. Der gängigste Fall einer eingehenden Interaktion ist der Besuch einer Webseite.
 

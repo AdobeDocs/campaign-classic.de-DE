@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
 exl-id: c7688c2a-f0a7-4c51-a4cf-bf96fe8bf9b6
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '2562'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '2560'
+ht-degree: 99%
 
 ---
 
@@ -384,7 +384,7 @@ Die Konfiguration und Verwendung von Zugriffs- und Löschanfragen sind für DSGV
 
 Zusätzlich zu den von Adobe Campaign bereitgestellten Werkzeugen für die [Einverständnisverwaltung](../../platform/using/privacy-management.md#consent-management) können Sie verfolgen, ob ein Benutzer dem Verkauf seiner personenbezogenen Daten widersprochen hat.
 
-Ein Verbraucher entscheidet über Ihr System, dass er nicht mit dem Verkauf seiner personenbezogenen Daten einverstanden ist. In Adobe Campaign können Sie diese Informationen speichern und verfolgen.
+Kontakte können über Ihr System entscheiden, dass sie nicht zulassen, dass ihre personenbezogenen Daten an Dritte verkauft werden. In Adobe Campaign können Sie diese Informationen speichern und verfolgen.
 
 Erweitern Sie dazu die Profiltabelle und fügen Sie ein Feld mit der Bezeichnung **[!UICONTROL Opt-out für CCPA]** hinzu.
 

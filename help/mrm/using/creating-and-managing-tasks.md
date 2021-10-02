@@ -6,10 +6,10 @@ audience: campaign
 content-type: reference
 topic-tags: tasks--resources-and-budgets
 exl-id: cc1200fa-f6d8-4f41-aed1-d1a7f229447a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '3899'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '3898'
+ht-degree: 98%
 
 ---
 
@@ -247,7 +247,7 @@ Um eine direkt mit einem Programm verknüpfte Aufgabe zu erstellen, gehen Sie wi
 
 ### Verfügbarkeit der Benutzer {#operator-availability}
 
-Im Dashboard zeigt ein Symbol neben dem Namen des Benutzers an, dass dieser zu einem Zeitpunkt während der Aufgabenperiode bereits für eine andere Aufgabe oder ein Ereignis eingesetzt ist. (Der für eine Aufgabe verantwortliche oder an ihr beteiligte Benutzer erscheint im Feld **[!UICONTROL Zugeordneter Benutzer]** oder im Fenster **[!UICONTROL Ressourcen]** der Aufgabe).
+Im Aufgaben-Dashboard zeigt ein Symbol neben dem Namen des Benutzers an, dass er während des von der Aufgabe abgedeckten Zeitraums bereits an einer anderen Aufgabe oder einem anderen Ereignis arbeitet. Die Aufgabe, für die der Benutzer verantwortlich ist oder an der er beteiligt ist, wird im Feld **[!UICONTROL Zugeordnet zu]** oder im Feld **[!UICONTROL Ressourcen]** der Aufgabe angezeigt.
 
 ![](assets/mrm_task_alert_operator_busy.png)
 

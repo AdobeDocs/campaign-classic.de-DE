@@ -6,10 +6,10 @@ feature: Access Management
 role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '1211'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '1214'
+ht-degree: 92%
 
 ---
 
@@ -99,7 +99,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
 
 Über den Link **[!UICONTROL Zugriffsparameter bearbeiten...]** sind folgende Optionen verfügbar:
 
-* Über die Option **[!UICONTROL Konto sperren]** kann das Benutzerkonto deaktiviert werden: Der Benutzer kann nicht mehr auf Adobe Campaign zugreifen.
+* Mit der Option **[!UICONTROL Konto deaktivieren]** können Sie das Benutzerkonto deaktivieren: dieser Benutzer nicht mehr auf Adobe Campaign zugreifen kann.
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
 
    >[!IMPORTANT]
    >
-   >Es handelt sich um eine die Anzeige betreffende Einschränkung, die mit Vorsicht angewandt werden sollte. Der mit dieser Art von Berechtigung angemeldete Benutzer sieht tatsächlich NUR den Inhalt des angegebenen Ordners und kann auf keinen anderen Verzeichnisknoten zugreifen. Je nach Funktionen, auf die er Zugriff hat (z. B. Workflows), kann es jedoch möglich sein, dass Daten angezeigt werden, die in Knoten enthalten sind, die normalerweise für ihn nicht verfügbar sind.
+   >Dies ist eine sehr enge Einschränkung, die mit Vorsicht angewandt werden muss. Benutzer, die mit diesen Berechtigungen angemeldet sind, können NUR den Inhalt des angegebenen Ordners sehen und über den Explorer auf keinen anderen Knoten des Navigationsbaums zugreifen. Je nach den Funktionen hat dieser Benutzer jedoch Zugriff auf (z. B.: Workflows), kann der Benutzer Daten anzeigen, die normalerweise in Knoten gespeichert sind, auf die nicht zugegriffen werden kann.
 
 ### Überprüfen von Einstellungen {#check-settings}
 

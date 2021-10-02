@@ -6,9 +6,9 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: b7ee70e0-89c6-4cd3-8116-2f073d4a2f2f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '663'
 ht-degree: 2%
 
 ---
@@ -303,7 +303,7 @@ CREATE INDEX CusRcpGrpRel_recipientId ON CusRcpGrpRel(iRecipientId);
 
 Dieser Anwendungsfall zeigt, wie Sie eine vorhandene Referenztabelle als Alternative zu den integrierten Adobe Campaign-Auflistungsmechanismen (enum, userEnum oder dbEnum) verwenden können.
 
-Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemas verwenden. Dies kann erreicht werden, indem eine Relation zwischen einer Tabelle und der Referenztabelle erstellt und das Attribut **displayAsField=&quot;true&quot;** hinzugefügt wird.
+Sie können auch eine vorhandene Referenztabelle als Auflistung in Ihren Schemas verwenden. Dies lässt sich erreichen, indem eine Relation zwischen einer Tabelle und der Referenztabelle erstellt und das Attribut **displayAsField=&quot;true&quot;** hinzugefügt wird.
 
 In diesem Beispiel enthält die Referenztabelle eine Liste von Banknamen und Kennungen:
 
@@ -327,7 +327,7 @@ Definieren Sie in jeder Tabelle, die diese Referenztabelle verwendet, einen Link
 <element displayAsField="true" label="Bank" name="bank" target="cus:bank" type="link" noDbIndex="true"/>
 ```
 
-In der Benutzeroberfläche wird kein Link, sondern ein Feld angezeigt. Wenn der Benutzer dieses Feld auswählt, kann er einen Wert aus der Referenztabelle auswählen oder die Funktion zum automatischen Ausfüllen verwenden.
+In der Benutzeroberfläche wird kein Link, sondern ein Feld angezeigt. Wenn Benutzer dieses Feld auswählen, können sie einen Wert aus der Referenztabelle auswählen oder die Funktion für die automatische Vervollständigung verwenden.
 
 ![](assets/schema-edition-ex.png)
 

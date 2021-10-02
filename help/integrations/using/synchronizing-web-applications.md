@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: ht
-source-wordcount: '853'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 92%
 
 ---
 
@@ -54,7 +54,7 @@ In Campaign v7 wurden die folgenden Objekte erstellt:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie einen Empfänger aus. Sie sehen, dass er sich noch nicht für den Dienst angemeldet hat.
+1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie einen Empfänger aus. Sie können sehen, dass dieses Profil den Dienst noch nicht abonniert hat.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -70,7 +70,7 @@ Um zu überprüfen, ob die Daten korrekt repliziert wurden, gehen Sie in Campaig
 
    ![](assets/acs_connect_lp_7.png)
 
-1. Suchen Sie nach Ihrem Campaign v7-Empfänger und vergewissern Sie sich, dass er in Campaign Standard angezeigt wird.
+1. Suchen Sie nach Ihrem Campaign v7-Empfänger und vergewissern Sie sich, dass dieser Empfänger in Campaign Standard angezeigt wird.
 
    ![](assets/acs_connect_lp_8.png)
 
@@ -102,7 +102,7 @@ Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfo
 
    ![](assets/acs_connect_lp_14.png)
 
-1. Er gibt eine Telefonnummer ein und fügt dem Kästchen zur Newsletter-Anmeldung ein Häkchen hinzu.
+1. Dieser Empfänger fügt eine Telefonnummer hinzu und markiert die Anmeldung für den Newsletter.
 
    ![](assets/acs_connect_lp_15.png)
 
@@ -118,7 +118,7 @@ Wenn der Empfänger seine Daten über die Webanwendung aktualisiert, ruft Adobe 
 
    ![](assets/acs_connect_lp_17.png)
 
-1. Außerdem ist im Tab **[!UICONTROL Abonnements]** ebenfalls ersichtlich, dass er sich für den Newsletter angemeldet hat.
+1. Im Tab **[!UICONTROL Abonnements]** können wir auch sehen, dass sich dieser Empfänger für den Newsletter-Dienst angemeldet hat.
 
    ![](assets/acs_connect_lp_18.png)
 

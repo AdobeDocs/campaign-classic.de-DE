@@ -6,10 +6,10 @@ audience: interaction
 content-type: reference
 topic-tags: unitary-interactions
 exl-id: a8face46-a933-4f2c-8299-ccb66f05967d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '467'
-ht-degree: 100%
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 91%
 
 ---
 
@@ -45,7 +45,7 @@ Wenden Sie zum Erstellen von Kategorien und Platzierungen denselben Prozess an w
 
 Anonyme Besucher können beim Webseitenaufruf einem Identifizierungsversuch durch Cookies unterzogen werden. Diese s. g. implizite Erkennung beruht auf dem Navigationsverlauf des Besuchers.
 
-Während dieser Etappe werden die mithilfe der Cookies gesammelten Informationen zu den in Ihrer Datenbank enthaltenen Daten in Beziehung gebracht. Auf diese Weise können gewisse Besucher erkannt, also implizit identifiziert werden. Gelingt die Identifizierung nicht, bleibt der Besucher anonym.
+In diesem Schritt werden die von den Cookies abgerufenen Daten mit denen in Ihrer Datenbank verglichen. In einigen Fällen werden Besucher erkannt (sie werden dann implizit identifiziert), in anderen Fällen werden sie nicht erkannt (und bleiben daher anonym).
 
 Kreuzen Sie in der Platzierung das Feld **[!UICONTROL Person implizit über den Navigationsverlauf identifizieren]** an, wenn Sie diese Möglichkeit nutzen wollen.
 

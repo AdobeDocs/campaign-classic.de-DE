@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 515adad2-6129-450a-bb9e-fc80127835af
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 20%
+source-wordcount: '3090'
+ht-degree: 19%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 20%
 
 ![](../../assets/v7-only.svg)
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Im folgenden Abschnitt finden Sie einen Überblick über die Konfiguration, die zum Steuern der Ausgabe von Adobe Campaign-Instanzen beim Versand von E-Mails erforderlich ist.
 
@@ -174,7 +174,7 @@ user:~ user$ host -t a mta5.am0.yahoodns.net
                 mta5.am0.yahoodns.net has address 98.138.112.35
 ```
 
-Was diesen Eintrag angeht, kann der Benutzer acht Peer-IP-Adressen kontaktieren. Da er über zwei öffentliche IP-Adressen verfügt, ermöglicht ihm das sechzehn (8*2) Kombinationen zum Erreichen der E-Mail-Server von yahoo.com. Jede dieser Kombinationen nennt sich Pfad.
+Für diesen Datensatz kann der Benutzer 8 Peer-IP-Adressen kontaktieren. Da der Benutzer über zwei öffentliche IP-Adressen verfügt, erhält er 8 * 2 = 16 Kombinationen, um die E-Mail-Server von yahoo.com zu erreichen. Jede dieser Kombinationen wird als Pfad bezeichnet.
 
 Der zweite MX-Eintrag stellt sich wie folgt dar:
 
