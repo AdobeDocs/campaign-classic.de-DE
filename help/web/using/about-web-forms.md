@@ -80,7 +80,6 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 >
 >* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
 >* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
-
 >
 
 
