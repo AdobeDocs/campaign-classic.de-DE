@@ -3,11 +3,10 @@ audience: end-user
 breadcrumb-title: Campaign Classic v7 – Dokumentation
 product: campaign
 title: Campaign Classic v7 – Handbuch
-breadcrumb-url: /docs/campaign-classic/using/campaign-classic-home.html
 user-guide-description: Mit Adobe Campaign können Sie umfangreiche Kundendaten verwenden, um dynamische Kampagnen, die Kunden tatsächlich wünschen, zu erstellen, zu koordinieren und bereitzustellen. Über E-Mail, mobile Kanäle, Offline-Kanäle und mehr.
 sub-product: adobe campaign classic
 type: Documentation
-source-git-commit: 37115de5871d773dc7b97c5150ef1eab583e3104
+source-git-commit: 089ade04a7324f8052738f18b34c09b429275c00
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 98%
