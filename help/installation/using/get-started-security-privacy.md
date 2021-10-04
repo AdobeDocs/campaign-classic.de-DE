@@ -1,19 +1,19 @@
 ---
 product: campaign
-title: Erste Schritte mit Sicherheit und Datenschutz
+title: Checkliste für Sicherheit und Datenschutz
 description: Erfahren Sie mehr über die Schlüsselelemente, die hinsichtlich Sicherheit und Datenschutz überprüft werden müssen.
 audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: ec40498e-e673-4792-8dcf-8bb7e852b532
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 70%
+source-wordcount: '487'
+ht-degree: 58%
 
 ---
 
-# Erste Schritte mit Sicherheit und Datenschutz {#get-started-security-privacy}
+# Checkliste für Sicherheit und Datenschutz{#get-started-security-privacy}
 
 ![](../../assets/v7-only.svg)
 
@@ -50,7 +50,7 @@ Die Zugriffsverwaltung ist ein wichtiger Bestandteil des Sicherheits-Managements
 
 Bei Entwicklungsaufgaben in Adobe Campaign (Workflows, JavaScript, JSSP usw.) sollten Sie sich grundsätzlich an diesen Leitlinien orientieren:
 
-* **Skripterstellung**: Vermeiden Sie SQL-Anweisungen, verwenden Sie parametrierte Funktionen anstelle von String-Konkatenation, und vermeiden Sie SQL-Injection, indem Sie die zu verwendenden SQL-Funktionen auf die Zulassungsliste setzen.
+* **Skripterstellung**: versuchen, SQL-Anweisungen zu vermeiden, parametrierte Funktionen anstelle von Zeichenfolgenverkettung zu verwenden und SQL-Injection zu vermeiden, indem die zu verwendenden SQL-Funktionen zur Zulassungsliste hinzugefügt werden.
 
 * **Schutz des Datenmodells**: Verwenden Sie spezifische Berechtigungen, um Benutzeraktionen einzuschränken, und fügen Sie Systemfilter hinzu (sysFilter).
 
@@ -67,6 +67,10 @@ Bei der Einrichtung einer On-Premise-Architektur muss unbedingt die Netzwerkkonf
 Außerdem müssen Sie die Sicherheit Ihrer Datenbank-Engine unbedingt befolgen.
 
 [Mehr dazu](../../installation/using/network-database.md)
+
+>[!CAUTION]
+>
+>Ab dem 14. Juli 2021 verlieren Client-Systeme, die das TLS 1.2-Protokoll nicht unterstützen, den Zugriff auf alle Adobe-Produkte und -Dienste. Stellen Sie sicher, dass alle Benutzer- und Client-Systeme vor diesem Datum TLS 1.2-konform sind. [Weitere Informationen](https://helpx.adobe.com/in/x-productkb/multi/eol-tls-support.html)   
 
 ## Konfiguration des Servers
 

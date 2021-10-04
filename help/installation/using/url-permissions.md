@@ -5,9 +5,9 @@ description: Erfahren Sie, wie Sie URL-Genehmigungen konfigurieren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '337'
 ht-degree: 34%
 
 ---

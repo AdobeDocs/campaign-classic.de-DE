@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: af88e4e7-0ee3-48b4-9db4-7dd390d9d46a
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 31%
+source-wordcount: '376'
+ht-degree: 23%
 
 ---
 
@@ -47,6 +47,6 @@ Adobe Campaign bietet drei allgemeine Berechtigungen über [spezifische Berechti
 
 * **AUSFÜHRUNG DES PROGRAMMS**  (createProcess): ermöglicht die Ausführung externer Programme (auf dem Server).
 
-* **SQL**: ermöglicht das Ausführen von SQL-Skripten in der Datenbank (sodass es das Sicherheitsmodell umgehen kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator ersuchen, eine SQL-Funktion zu erstellen und sie auf die Zulassungsliste zu setzen. Weiterführende Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
+* **SQL**: ermöglicht das Ausführen von SQL-Skripten in der Datenbank (sodass es das Sicherheitsmodell umgehen kann). Hinweis: Wenn Sie komplexe Berechnungen durchführen müssen (z. B. Filtern), können Sie Ihren Datenbankadministrator bitten, eine SQL-Funktion zu erstellen und sie der Zulassungsliste hinzuzufügen. Weiterführende Informationen finden Sie auf [dieser Seite](../../installation/using/scripting-coding-guidelines.md).
 
 * **Gewähren Sie diese Privilegien nur sehr wenigen (und vertrauenswürdigen) Benutzern.**

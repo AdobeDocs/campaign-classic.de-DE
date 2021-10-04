@@ -4,10 +4,10 @@ title: 'Hilfe- und Support-Optionen für Campaign Classic '
 description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie an der richtigen Stelle!
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 100%
+source-wordcount: '799'
+ht-degree: 96%
 
 ---
 
@@ -111,7 +111,7 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 ### SFTP-Verwaltung
 
-Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen sowie IP-Adressen auf der Zulassungsliste und öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de), um weitere Informationen zu erhalten.
+Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazität überwachen, IP-Adressen auf der Zulassungsliste verwalten und öffentliche SSH-Schlüssel verwenden. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de), um weitere Informationen zu erhalten.
 
 ### Sub-Domains und Zertifikate
 
@@ -123,7 +123,7 @@ Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Weitere Informat
 ### Instanzeneinstellungen
 
 Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Control Panel verwalten. Weitere Informationen finden Sie auf den folgenden Seiten:
-* [Hinzufügen von IP-Adressen zur Zulassungsliste](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de), um auf Campaign-Instanzen zuzugreifen 
+* [Fügen Sie IPs auf der ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de) Zulassungsliste hinzu, um auf Ihre Campaign-Instanz(en) zuzugreifen
 * [Verwalten von URL-Berechtigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
 * [Aufrufen der Instanzdetails](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
 * [Verwalten von GPG-Schlüsseln für die Datenverschlüsselung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de)

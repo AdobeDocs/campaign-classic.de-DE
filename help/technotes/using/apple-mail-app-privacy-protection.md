@@ -2,9 +2,8 @@
 product: campaign
 title: Datenschutz bei E-Mails in der Apple-E-Mail-App
 description: Erfahren Sie, wie sich die Funktion zum Schutz der Privatsphäre bei E-Mails von Apple auf Ihre Kampagnen auswirken kann.
-hide: true
-hidefromtoc: true
-source-git-commit: f73cda08183e27a222e0aa8e179ef013777435e8
+exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '2141'
 ht-degree: 1%

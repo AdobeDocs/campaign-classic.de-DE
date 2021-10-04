@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: 26737940-b3ce-425c-9604-f4cefd19afaa
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 65%
+source-wordcount: '1116'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 65%
 
 Auf dieser Seite erfahren Sie, wie Sie Campaign Classic mit **Microsoft Dynamics CRM 365** verbinden.
 
-Die mögliche Bereitstellung erfolgt über **Web API** (empfohlen). Im [folgenden Abschnitt](#microsoft-dynamics-implementation-step) erfahren Sie, wie Sie die Verbindung mit Microsoft Dynamics herstellen.
+Die Implementierung kann über die **Web-API** erfolgten (empfohlen). Im [folgenden Abschnitt](#microsoft-dynamics-implementation-step) erfahren Sie, wie Sie die Verbindung mit Microsoft Dynamics herstellen.
 
 Die Datensynchronisation erfolgt über eine eigene Workflow-Aktivität. [Weitere Informationen](../../platform/using/crm-data-sync.md).
 
@@ -85,43 +85,43 @@ Gehen Sie wie folgt vor, um die **Zertifikatschlüsselkennung (customKeyIdentifi
 
    >[!NOTE]
    >
-   >Sie können die Anzahl der Tage, hier `-days 365`, im Codebeispiel für einen längeren Gültigkeitszeitraum des Zertifikats ändern.
+   >Sie können die Anzahl der Tage, hier `-days 365`, im Code-Beispiel ändern, sodass der Gültigkeitszeitraum des Zertifikats verlängert wird.
 
-1. Sie müssen sie dann in base64 kodieren. Dazu können Sie die Hilfe eines Base64-Encoder verwenden oder die Befehlszeile `base64 -w0 private.key` für Linux verwenden.
+1. Sie müssen sie dann in Base64 codieren. Dazu können Sie einen Base64-Encoder oder die Befehlszeile `base64 -w0 private.key` für Linux verwenden.
 
-1. Klicken Sie auf den Link **Manifest**, um die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüsselkennung (keyId)** abzurufen.
+1. Klicken Sie auf den Link **Manifest**, um die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüssel-ID (keyId)** abzurufen.
 
-Die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüssel-ID (keyId)** werden später benötigt, um Ihr externes Microsoft Dynamics CRM-Konto mit dem Zertifikat **[!UICONTROL CRM O-Auth-Typ]** zu konfigurieren.
+Die **Zertifikatschlüsselkennung (customKeyIdentifier)** und die **Schlüssel-ID (keyId)** werden später benötigt, um Ihr externes Microsoft Dynamics CRM-Konto mit dem **[!UICONTROL CRM-OAuth-Zertifikat]** zu konfigurieren.
 
 ### Berechtigungen konfigurieren {#config-permissions-microsoft}
 
-**Schritt 1**: Konfigurieren Sie die  **erforderlichen** Berechtigungen für die erstellte App.
+**Schritt 1**: Konfigurieren Sie die **erforderlichen Berechtigungen** für die erstellte Anwendung.
 
 1. Navigieren Sie zu **Azure Active Directory > App-Registrierungen** und wählen Sie die zuvor erstellte Anwendung aus.
 1. Klicken Sie oben links auf **Einstellungen**.
 1. Klicken Sie unter **Erforderliche Berechtigungen** auf **Hinzufügen** und **wählen Sie eine API > Dynamics CRM Online**.
-1. Klicken Sie auf **Wählen Sie**, aktivieren Sie das Kontrollkästchen **Access Dynamics 365 als Organisationsbenutzer** und klicken Sie auf **Wählen Sie**.
-1. Wählen Sie dann aus Ihrer App das **Manifest** unter dem Menü **Verwalten** aus.
+1. Klicken Sie auf **Auswählen**, aktivieren Sie die Checkbox **Zugriff auf Dynamics 365 als Organisationsbenutzer** und klicken Sie erneut auf **Auswählen**.
+1. Wählen Sie dann aus Ihrer Anwendung das **Manifest** unter dem Menü **Verwalten** aus.
 
-1. Legen Sie im Editor **Manifest** die Eigenschaft `allowPublicClient` von `null` auf `true` fest und klicken Sie auf **Speichern**.
+1. Ändern Sie im **Manifest**-Editor die Eigenschaft `allowPublicClient` von `null` auf `true` und klicken Sie auf **Speichern**.
 
-**Schritt 2**: Erteilen der Admin-Zustimmung
+**Schritt 2**: Erteilen Sie die Zustimmung durch den Administrator
 
-1. Navigieren Sie zu **Azure Active Directory > Enterprise Applications**.
+1. Gehen Sie zu **Azure Active Directory > Enterprise-Anwendungen**.
 
-1. Wählen Sie die Anwendung aus, der Sie eine mandantenweite Admin-Zustimmung erteilen möchten.
+1. Wählen Sie die Anwendung aus, der Sie eine mandantenweite Administrator-Zustimmung erteilen möchten.
 
-1. Wählen Sie im Menü im linken Fensterbereich **Berechtigungen** unter **Sicherheit** aus.
+1. Wählen Sie im Menü im linken Fensterbereich unter **Sicherheit** die Option **Berechtigungen** aus.
 
-1. Klicken Sie auf **Administratorzustimmung gewähren**.
+1. Klicken Sie auf **Administratorzustimmung erteilen**.
 
-Weitere Informationen hierzu finden Sie in der [Azure-Dokumentation](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
+Weiterführende Informationen dazu finden Sie in der [Dokumentation zu Azure](https://docs.microsoft.com/azure/active-directory/manage-apps/grant-admin-consent#grant-admin-consent-from-the-azure-portal).
 
 ### Anwender erstellen {#create-app-user-microsoft}
 
 >[!NOTE]
 >
-> Dieser Schritt ist bei der Authentifizierung mit **[!UICONTROL Passwort-Anmeldeinformationen]** optional.
+> Dieser Schritt ist bei der Authentifizierung mit **[!UICONTROL einem Passwort]** optional.
 
 Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendung verwenden wird. Alle Änderungen, die mit der oben registrierten Anwendung an Microsoft Dynamics vorgenommen werden, erfolgen über diesen Benutzer.
 
@@ -155,23 +155,23 @@ Der Anwendungsbenutzer ist derjenige Benutzer, den die oben registrierte Anwendu
 
 >[!NOTE]
 >
-> Nach der Stilllegung von [RDS von Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint) sind die On-Premise- und Office 365-Typen von CRM-Bereitstellungen nicht mehr mit Campaign kompatibel. Adobe Campaign unterstützt jetzt nur die Web-API-Bereitstellung für die CRM-Version **Dynamisches CRM 365**. [Weitere Informationen](../../rn/using/deprecated-features.md#crm-connectors).
+> Nach der Beendigung von [RDS von Microsoft](https://docs.microsoft.com/previous-versions/dynamicscrm-2016/developers-guide/dn281891%28v=crm.8%29#microsoft-dynamics-crm-2011-endpoint) sind die CRM-Implentierungen vom Typ On-Premise und Office 365 von nicht mehr mit Campaign kompatibel. Adobe Campaign unterstützt jetzt nur mehr die Web-API-Implementierung für die CRM-Version **Dynamics CRM 365**. [Weitere Informationen](../../rn/using/deprecated-features.md#crm-connectors).
 
-Um Microsoft Dynamics 365 und Campaign zu verbinden, müssen Sie ein dediziertes **[!UICONTROL externes Konto]** in Campaign erstellen und konfigurieren.
+Um Microsoft Dynamics 365 mit Campaign zu verbinden, müssen Sie ein dediziertes **[!UICONTROL externes Konto]** in Campaign erstellen und konfigurieren.
 
 1. Navigieren Sie zu **[!UICONTROL Administration > Plattform > Externe Konten]**.
 
-1. Wählen Sie das externe Konto **[!UICONTROL Microsoft Dynamics CRM]** aus. Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
+1. Wählen Sie das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto aus. Kreuzen Sie die Option **[!UICONTROL Aktiviert]** an.
 
-1. Füllen Sie die Informationen aus, die zum Verbinden von Microsoft Dynamics 365 und Campaign erforderlich sind.
+1. Geben Sie die Informationen ein, die zum Verbinden von Microsoft Dynamics 365 und Campaign erforderlich sind.
 
    >[!NOTE]
    >
-   >Die Konfiguration des externen Microsoft Dynamics CRM-Kontos mit jedem **[!UICONTROL CRM-O-Auth-Typ]** wird in diesem Abschnitt [beschrieben.](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account)
+   >Die Konfiguration des externen Microsoft Dynamics CRM-Kontos mit jedem **[!UICONTROL CRM-OAuth-Typ]** wird [in diesem Abschnitt](../../installation/using/external-accounts.md#microsoft-dynamics-crm-external-account) beschrieben.
 
    ![](assets/crm-ms-dynamics-ext-account.png)
 
-1. Klicken Sie auf den Konfigurationsassistenten für Microsoft CRM ...]**Link. Adobe Campaign erkennt die Tabellen automatisch aus der Microsoft Dynamics-Datenvorlage.**[!UICONTROL 
+1. Klicken Sie auf den Link **[!UICONTROL Konfigurationsassistent für Microsoft CRM ...]**. Adobe Campaign erkennt die Tabellen aus der Microsoft Dynamics-Datenvorlage automatisch.
 
    ![](assets/crm_connectors_msdynamics_02.png)
 
@@ -199,7 +199,7 @@ Campaign und Microsoft Dynamics sind nun miteinander verbunden. Sie können eine
 
 >[!NOTE]
 >
-> Fügen Sie der Zulassungsliste unbedingt zwei URLs hinzu: die Server-URL und `login.microsoftonline.com` in der Server-Konfiguration.
+> Stellen Sie sicher, dass Sie der Zulassungsliste zwei URLs hinzufügen: die Server-URL und `login.microsoftonline.com` in der Server-Konfiguration.
 
 ## Unterstützte Felddatentypen {#ms-dyn-supported-types}
 

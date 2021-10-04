@@ -5,10 +5,10 @@ description: Erfahren Sie, wie Sie Sicherheitszonen konfigurieren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: dab18d24f5471034a2169dd674e6f7000de30cac
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 32%
+source-wordcount: '1491'
+ht-degree: 29%
 
 ---
 
@@ -225,7 +225,7 @@ Nachdem die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** 
 * Minimieren Sie den Einsatz von sessionTokenOnly=&quot;true&quot;:
 
    * Achtung: Wenn dieses Attribut auf true gesetzt wird, ist der Benutzer durch **CRSF-Attacken** (Cross-Site Request Forgery) angreifbar.
-   * Zusätzlich ist das sessionToken-Cookie nicht mit einem httpOnly-Flag versehen, weshalb es von einem Client-seitigen Javascript-Code gelesen werden kann.
+   * Darüber hinaus wird das sessionToken -Cookie nicht mit einem httpOnly -Flag gesetzt, sodass es von Client-seitigem JavaScript-Code gelesen werden kann.
    * Bei Verwendung von Message Center mit mehreren Ausführungsinstanzen ist jedoch der Einsatz von sessionTokenOnly unumgänglich: Erstellen Sie eine neue Sicherheitszone, setzen Sie sessionTokenOnly auf &quot;true&quot;, und fügen Sie dieser Zone **nur die benötigten IP-Adressen** hinzu.
 
 * Setzen Sie möglichst alle allowHTTP, showErrors auf &quot;false&quot; (nicht für localhost), und prüfen Sie sie.
@@ -245,6 +245,6 @@ Nachdem die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** 
 
 * HttpOnly cookie/useSecurityToken: siehe Flag **sessionTokenOnly**.
 
-* Minimieren Sie die Anzahl der IP-Adressen auf der Zulassungsliste: Standardmäßig wurden für Sicherheitszonen die drei Bereiche für private Netzwerke hinzugefügt. Es ist unwahrscheinlich, dass Sie alle diese IP-Adressen verwenden werden. Behalten Sie also nur die, die Sie brauchen.
+* Minimieren Sie IPs, die zur Zulassungsliste hinzugefügt werden: Standardmäßig haben wir in Sicherheitszonen die drei Bereiche für private Netzwerke hinzugefügt. Es ist unwahrscheinlich, dass Sie alle diese IP-Adressen verwenden werden. Behalten Sie also nur die, die Sie brauchen.
 
 * Aktualisieren Sie den WebApp-/internen Benutzer, damit er nur über localhost zugänglich sind.

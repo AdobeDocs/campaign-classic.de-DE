@@ -2,11 +2,11 @@
 product: campaign
 title: Migration zu Public Cloud
 description: Erfahren Sie mehr über die Migration von Campaign Classic zu Public Cloud.
-hidefromtoc: true
 feature: Overview
 role: User
 level: Beginner
-source-git-commit: a4e7fb474d83be821343babacc493fd43c02857d
+exl-id: 2b282221-d048-4f6e-b52e-f8e584af2c0e
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 70%
@@ -217,4 +217,3 @@ Bisher wurde die Domain, die zum Senden von E-Mails in Campaign verwendet wurde 
 * [Häufig gestellte Fragen zur Migration zu Adobe Managed Services (Public Cloud)](dc-migration-faq.md)
 * [Upgrade zum Gold-Standard](../../rn/using/gs-overview.md)
 * [Häufig gestellte Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md)
-

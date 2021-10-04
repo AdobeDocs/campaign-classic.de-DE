@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: 1f96c3df-0ef2-4f5f-9c36-988cbcc0769f
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 49%
+source-wordcount: '772'
+ht-degree: 41%
 
 ---
 
@@ -50,7 +50,7 @@ Wenn Sie Scripts mit Workflows, Webanwendungen und JSSP verwenden, folgen Sie di
    cnx.dispose()
    ```
 
-Um SQL-Injections zu vermeiden, müssen SQL-Funktionen auf die Zulassungsliste gesetzt werden, damit sie in Adobe Campaign verwendet werden können. Sobald sie auf der Zulassungsliste stehen, werden sie für Ihre Benutzer im Ausdruckseditor sichtbar. Mehr dazu erfahren Sie auf [dieser Seite](../../configuration/using/adding-additional-sql-functions.md).
+Um SQL-Injections zu vermeiden, müssen der Zulassungsliste SQL-Funktionen hinzugefügt werden, die in Adobe Campaign verwendet werden sollen. Nachdem sie der Zulassungsliste hinzugefügt wurden, werden sie für Ihre Operatoren im Ausdruckseditor sichtbar. Mehr dazu erfahren Sie auf [dieser Seite](../../configuration/using/adding-additional-sql-functions.md).
 
 >[!IMPORTANT]
 >
@@ -228,6 +228,6 @@ Um JSON.parse zu verwenden, müssen Sie &quot;shared/json2.js&quot; in Ihre Weba
 
 ![](assets/scripting-captcha6.png)
 
-Seit Build 8797 müssen Sie zur Verwendung der Verifizierungs-API-URL diese auf die Zulassungsliste in der serverConf-Datei setzen, indem Sie sie im Knoten urlPermission hinzufügen:
+Seit Build 8797 müssen Sie zur Verwendung der Verifizierungs-API-URL sie der Zulassungsliste in der Datei serverConf hinzufügen, indem Sie sie im Knoten urlPermission hinzufügen:
 
 `<url dnsSuffix="www.google.com" urlRegEx="https://www.google.com/recaptcha/api/siteverify"/>`

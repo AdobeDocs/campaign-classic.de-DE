@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: appendices
 exl-id: a979cd99-afa7-4ce6-ba0f-9495089cba08
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '3994'
 ht-degree: 11%
@@ -423,7 +423,7 @@ Der Knoten **[!UICONTROL Administration/Plattform/Options]** ermöglicht die Kon
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Allow_PrivilegeEscalation</span> <br /> </td> 
-   <td> Wenn 1 ausgewählt ist, wird diese Option zum Zulassen der PrivilegeEscalation in JavaScript verwendet.<br /> </td> 
+   <td> Wenn 1 ausgewählt ist, aktivieren Sie diese Option, um die PrivilegeEscalation in JavaScript zuzulassen.<br /> </td> 
   </tr> 
   <tr> 
    <td> <span class="uicontrol">XtkSecurity_Disable_ControlsOnFileDownload</span> <br /> </td> 

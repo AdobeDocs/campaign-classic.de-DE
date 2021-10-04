@@ -2,11 +2,9 @@
 product: campaign
 title: Aktualisieren Ihrer Umgebung zur Verbindung mit Adobe Campaign mit IMS
 description: Campaign – IMS-Aktualisierungen
-hide: true
-hidefromtoc: true
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
-source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
-workflow-type: ht
+source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
+workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 100%
 
@@ -78,7 +76,7 @@ Die folgende Warnmeldung wird Benutzern angezeigt, wenn sie ihre Client-Konsole 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html)
+Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
 
 **Ab dem 30. Juni 2021** wird die folgende Meldung angezeigt und Sie können keine Verbindung mehr zu Adobe Campaign herstellen:
 
