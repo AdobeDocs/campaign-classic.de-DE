@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 86%
+source-wordcount: '596'
+ht-degree: 85%
 
 ---
 
@@ -121,10 +121,6 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## RDBMS-Server{#RDBMSservers}
 
->[!NOTE]
->
->RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
-
 <table>
 <tbody>
 <tr>
@@ -137,7 +133,10 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 </td>
 </tr>
 <tr>
-<td>PostgreSQL</td>
+<td>
+<p>PostgreSQL</p>
+<p>Standarddatenbankserver für gehostete Umgebungen</p>
+</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -165,7 +164,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 >[!NOTE]
 >
->PostgreSQL ist der Standarddatenbankserver für gehostete Umgebungen.
+>RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
 
 ## CRM-Connectoren{#CRMconnectors}
 
@@ -315,7 +314,6 @@ Die folgenden Betriebssysteme und Browser sind **erforderlich**, um [Campaign Cl
 
 ### Browser
 
-[]
 <table>
 <tbody>
 <tr>
