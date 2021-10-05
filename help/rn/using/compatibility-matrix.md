@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: f6f1feffbd328f9756c9cd71c4186ba7cd674d76
+source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 85%
+source-wordcount: '600'
+ht-degree: 79%
 
 ---
 
@@ -119,7 +119,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 </tbody>
 </table>
 
-## RDBMS-Server{#RDBMSservers}
+## Relation Database Management Systems (RDBMS){#RDBMSservers}
 
 <table>
 <tbody>
@@ -133,10 +133,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 </td>
 </tr>
 <tr>
-<td>
-<p>PostgreSQL</p>
-<p>Standarddatenbankserver für gehostete Umgebungen</p>
-</td>
+<td>PostgreSQL</td>
 <td>
 <p>13.x</p>
 <p>12.x</p>
@@ -145,7 +142,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p>Hinweis: Sie können für PostgreSQL auch Amazon RDS mit den oben angegebenen Versionen verwenden.</p>
+<p><strong>Hinweis:</strong> Sie können auch Amazon RDS für PostgreSQL mit den oben angegebenen Versionen verwenden.</p>
 </td>
 </tr>
 <tr>
@@ -156,7 +153,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p>Warnung: Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. [Weitere Informationen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Wichtig:</strong> Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server unter Linux ausgeführt wird. [Weitere Informationen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -164,7 +161,10 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 >[!NOTE]
 >
->RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
+>* RDBMS-Treiber muss der RDBMS-Server-Version entsprechen.
+>
+>* PostgreSQL ist das RDBMS für gehostete Umgebungen.
+
 
 ## CRM-Connectoren{#CRMconnectors}
 
