@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: web-forms
 exl-id: 723a6c47-5323-4914-a014-58be493852cc
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: 9b914099f6755d6ae83f98697a3a38f8cfa625e1
+workflow-type: tm+mt
 source-wordcount: '1042'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## Vorlage zum Formular-Rendering auswählen {#selecting-the-form-rendering-template}
 
-In den Formulareinstellungen können Sie eine Vorlage zum Erstellen der Seiten auswählen. Wählen Sie dazu in der Formular-Detail-Symbolleiste die Schaltfläche **[!UICONTROL Einstellungen]** und danach den Tab **[!UICONTROL Rendering]** aus. Standardmäßig stehen mehrere Vorlagen (Stylesheets) zur Verfügung.
+Mit den Formulareinstellungen können Sie die Vorlage auswählen, die zum Generieren der Seiten verwendet wird. Um darauf zuzugreifen, klicken Sie auf die Schaltfläche **[!UICONTROL Eigenschaften]** in der Symbolleiste mit den Formulardetails und wählen Sie die Registerkarte **[!UICONTROL Rendering]** aus. Standardmäßig stehen verschiedene Vorlagen (Stylesheets) zur Verfügung.
 
 ![](assets/s_ncs_admin_survey_rendering_select.png)
 

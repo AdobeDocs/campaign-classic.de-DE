@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 6c48cfea-6d20-4462-a485-71e1575a08a7
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 6%
@@ -23,7 +23,7 @@ Wenn Sie ein Schema ändern und die Änderungen speichern, wird automatisch ein 
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Aktionen > Ausgewählte Schemas regenerieren...]** .
 1. Klicken Sie auf **[!UICONTROL OK]** , um den Prozess zu bestätigen und zu starten.
 
-Anschließend können Sie die Struktur des erstellten Schemas in den Registerkarten Vorschau und Dokumentation überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt [Prinzipien](../../configuration/using/data-schemas.md#principles) .
+Anschließend können Sie die Struktur des erstellten Schemas auf den Registerkarten Vorschau und Dokumentation überprüfen. Weitere Informationen hierzu finden Sie im Abschnitt [Prinzipien](../../configuration/using/data-schemas.md#principles) .
 
 >[!NOTE]
 >

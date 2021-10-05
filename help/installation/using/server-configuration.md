@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: prerequisites-and-recommendations-
 exl-id: e1aff73a-54fb-444e-b183-df11c9b3df31
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+source-git-commit: 4661a65c83f3b9b7da9ea902f387155c5933e59f
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 39%
+ht-degree: 35%
 
 ---
 
@@ -62,7 +62,7 @@ Es gibt drei Modi für den Verbindungsschutz:
 
 Neue Clients verwenden den Blockierungsmodus. Wenn sie eine neue URL zulassen möchten, müssen sie sich an ihren Administrator wenden, um sie der Zulassungsliste hinzuzufügen.
 
-Bestehende, aus einer Migration stammende Kunden können einige Zeit den Warnmodus verwenden. In dieser Zeit müssen sie den ausgehenden Verkehr analysieren, bevor sie die URLs genehmigen.
+Vorhandene Kunden, die aus einer Migration stammen, können den Warnmodus für eine Weile verwenden. In der Zwischenzeit müssen sie den ausgehenden Traffic analysieren, bevor sie die URLS autorisieren.
 
 ## Einschränkung der Befehle (serverseitig)
 

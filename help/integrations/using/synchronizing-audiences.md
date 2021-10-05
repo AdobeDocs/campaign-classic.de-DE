@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: acs-connector
 exl-id: 88e581cf-43cd-4c43-9347-d016c62fdf42
-source-git-commit: 91dec9adb177aedc4a82879011371b54886166be
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '1204'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -98,7 +98,7 @@ Sobald die Zielpopulation definiert ist, können Sie sie in ACS mit der Aktivit�
 
 1. Fügen Sie im zuvor erstellten Workflow die Aktivität **[!UICONTROL Listen-Update]** hinzu und spezifizieren Sie die Liste, die Sie aktualisieren oder erstellen möchten.
 
-   Spezifizieren Sie den Ordner, in dem die Liste in Campaign v7 gespeichert werden soll. Die Listen werden beeinflusst vom während der Implementierung definierten Ordner-Mapping, das sich auf ihre Sichtbarkeit nach der Übermittlung in Campaign Standard auswirken kann. Siehe Abschnitt [Konvertierung der Berechtigungen](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion).
+   Geben Sie den Ordner an, in dem Sie die Liste in Campaign v7 speichern möchten. Listen unterliegen dem während der Implementierung definierten Ordner-Mapping, das sich auf ihre Sichtbarkeit auswirken kann, sobald sie in Campaign Standard freigegeben wurden. Siehe Abschnitt [Konvertierung der Berechtigungen](../../integrations/using/acs-connector-principles-and-data-cycle.md#rights-conversion).
 
 1. Vergewissern Sie sich, dass die Option **[!UICONTROL In ACS freigeben]** mit einem Häkchen versehen ist. Standardmäßig ist diese Option aktiviert.
 

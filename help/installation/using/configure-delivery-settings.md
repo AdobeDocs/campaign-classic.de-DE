@@ -6,7 +6,7 @@ audience: installation
 content-type: reference
 topic-tags: initial-configuration
 exl-id: 2968d8db-2b4b-48e6-a22e-daba5ffe0576
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 5%
@@ -45,7 +45,7 @@ In diesem Fall werden diese Parameter durch Konfiguration des SMTP-Servers im Ab
 
 >[!IMPORTANT]
 >
->Dieser Betriebsmodus beinhaltet schwerwiegende Einschränkungen bei Sendungen, da er den Durchsatz aufgrund der inhärenten Leistung des Relais-Servers (Latenz, Bandwith..) stark reduzieren kann. Darüber hinaus wird die Fähigkeit zur Qualifizierung von Fehlern bei synchronen Sendungen (erkannt durch Analyse des SMTP-Traffics) begrenzt, und der Versand ist nicht möglich, wenn der Server nicht verfügbar ist.
+>Dieser Betriebsmodus beinhaltet schwerwiegende Einschränkungen bei Sendungen, da er den Durchsatz aufgrund der inhärenten Leistung des Relais-Servers (Latenz, Bandbreite usw.) stark reduzieren kann. Darüber hinaus wird die Fähigkeit zur Qualifizierung von Fehlern bei synchronen Sendungen (erkannt durch Analyse des SMTP-Traffics) begrenzt, und der Versand ist nicht möglich, wenn der Server nicht verfügbar ist.
 
 ## Untergeordnete MTA-Prozesse {#mta-child-processes}
 

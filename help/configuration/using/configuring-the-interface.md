@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: use-a-custom-recipient-table
 exl-id: 9f50f258-845e-4895-b1ef-b73744dea326
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Die Erstellung eines neuen Formulars ermöglicht die Anzeige und Bearbeitung der
 
 1. Wechseln Sie zum Knoten **Administration > Konfiguration > Formulare** des Explorer.
 1. Erstellen Sie eine neue **xtk:form** Typ **Formular**-Datei.
-1. Beschreiben Sie alle Überwachungen und Felder, die Sie je nach Tabellenvorlage benötigen.
+1. Beschreiben Sie alle Überwachungs- und Felder, die Sie je nach Tabellenvorlage benötigen.
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ Die Erstellung eines neuen Formulars ermöglicht die Anzeige und Bearbeitung der
 
 1. Wechseln Sie zum Knoten **[!UICONTROL Administration>Konfiguration>Navigationshierarchien]** .
 1. Erstellen Sie ein neues Dokument **xtk:navtree** vom Typ **navtree** .
-1. Beschreiben Sie alle Überwachungen und Felder, die Sie je nach Tabellenvorlage benötigen.
+1. Beschreiben Sie alle Überwachungs- und Felder, die Sie je nach Tabellenvorlage benötigen.
 
    >[!NOTE]
    >

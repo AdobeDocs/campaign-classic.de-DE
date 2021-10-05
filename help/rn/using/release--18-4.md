@@ -3,10 +3,10 @@ product: campaign
 title: Versionshinweise zu Campaign 18.4
 description: Versionshinweise zu Campaign 18.4
 exl-id: bbad81ba-a09f-4d67-9309-628ea7a08c9b
-source-git-commit: 84312974b9b7372c8a46fd1c7ead1148690bcd83
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '2289'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ _21. November 2018_
 * E-Mail-Archivierungs-Logs wurden verbessert. Dank der BCC-Archivierung kann jetzt einfacher festgestellt werden, welche E-Mails erfolgreich gesendet wurden oder fehlgeschlagen sind. (NEO-10675)
 * Fehlerkorrektur – In den Tracking-Broadlogs werden jetzt Kunden-IPs anstatt Lastverteilungs-IPs angezeigt. (NEO-11295)
 * Fehlerkorrektur – Bei der LATIN1-Codierung tritt jetzt kein Fehler mehr auf, wenn eine FDA-Verbindung zu einer PostgreSQL-Datenbank verwendet wird. (NEO-11299)
-* Fehlerkorrektur – Bei der Verwendung der Versandoption **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** tritt kein Fehler mehr auf. (NEO-11047, NEO-11301)
+* Fehlerkorrektur - Bei der Verwendung der Versandoption **[!UICONTROL Personalisierungsdaten mit einem Workflow]** vorbereiten tritt jetzt kein Fehler mehr auf. (NEO-11047, NEO-11301)
 * Fehlerkorrektur – Die Eigenschaften eines Versands werden nicht mehr fälschlicherweise überschrieben. (NEO-11015)
 * Fehlerkorrektur – Bei der Verwendung von berechneten Feldern in der Workflow-Aktivität **[!UICONTROL Umfrageantworten]** tritt kein Fehler mehr auf. (NEO-11382)
 * Es wurde ein Problem behoben, das bei der Verwendung von in XML gespeicherten Daten in einer Workflow-Aktivität **[!UICONTROL Umfrageantworten]** auftrat. (NEO-10816)
@@ -171,7 +171,7 @@ Diese würde implizit so gehandhabt werden (vor den Änderungen von 18.4):
    </select>
    <orderBy>
       <node expr="@logDate"/>
-      <node expr="@id"/> <!-- implicitely added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
+      <node expr="@id"/> <!-- implicitly added before 18.4, you can add it manually on your query, if you relied on this implicit order clauses --!>
    </orderBy>
 </queryDef>
 ```

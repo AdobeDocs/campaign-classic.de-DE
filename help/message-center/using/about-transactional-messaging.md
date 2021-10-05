@@ -6,10 +6,10 @@ audience: message-center
 content-type: reference
 topic-tags: introduction
 exl-id: dc52e789-d0bf-4e8f-b448-9d69a2762cc1
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -68,7 +68,7 @@ Die wichtigsten Schritte beim Erstellen und Verwalten personalisierter Transakti
 
 ### Auf der Kontrollinstanz durchzuführende Schritte
 
-Führen Sie auf der **Kontrollinstanz** die folgenden Aktionen aus:
+Auf der **Kontrollinstanz** müssen Sie die folgenden Aktionen durchführen:
 
 1. [Erstellen Sie einen Ereignistyp](../../message-center/using/creating-event-types.md).
 1. [Erstellen und konzipieren Sie die Nachrichtenvorlage](../../message-center/using/creating-the-message-template.md). Bei diesem Schritt müssen Sie ein Ereignis mit Ihrer Nachricht verknüpfen.

@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: 728b509f-2755-48df-8b12-449b7044e317
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1974'
-ht-degree: 70%
+ht-degree: 69%
 
 ---
 
@@ -305,7 +305,7 @@ Ab ACC 18.10 ist **XtkNewId** nicht mehr der Standardwert für die Sequenz in de
 
 >[!NOTE]
 >
->Eine Sequenz, die in einem Adobe Campaign-Schema referenziert wird (**NmsTrackingLogId** zum Beispiel), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt, getrennt durch Kommas. Diese Funktion muss **GetNew** XXX **Ids** heißen, wobei **XXX** der Name der Sequenz ist (**GetNewNmsTrackingLogIds** zum Beispiel). Zeigen Sie die Dateien **postgres-nms.sql**, **mssql-nms.sql** oder **oracle-nms.sql** an, die mit der Anwendung im Ordner **datakit/nms/eng/sql/** bereitgestellt wurden, um das Beispiel eines Ordners abzurufen. Die Sequenzerstellung von NmsTrackingLogId für jede Datenbank-Engine.
+>Eine Sequenz, die in einem Adobe Campaign-Schema referenziert wird (**NmsTrackingLogId** zum Beispiel), muss mit einer SQL-Funktion verknüpft sein, die die Anzahl der IDs in den Parametern zurückgibt, getrennt durch Kommas. Diese Funktion muss **GetNew** XXX **Ids** heißen, wobei **XXX** der Name der Sequenz ist (**GetNewNmsTrackingLogIds** zum Beispiel). Zeigen Sie die Dateien **postgres-nms.sql**, **mssql-nms.sql** oder **oracle-nms.sql** an, die mit der Anwendung im Verzeichnis **datakit/nms/eng/sql/** bereitgestellt werden, um das Beispiel einer &quot;Nms&quot;wiederherzustellen. Die Sequenzerstellung von TrackingLogId für jede Datenbank-Engine.
 
 Um einen eindeutigen Schlüssel zu deklarieren, füllen Sie das Attribut **autopk** (mit dem Wert &quot;true&quot;) im Hauptelement des Datenschemas aus.
 
@@ -361,7 +361,7 @@ Für Join-Beziehungen mit einer Campaign-Tabelle/-Datenbank:
 
 * ![](assets/join_with_campaign11.png): 1-1-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und einer aktuellen Bestellung sein. Ein Empfänger kann jeweils nur mit einer Entität der aktuellen Tabelle zu Bestellungen verknüpft sein.
 * ![](assets/externaljoin11.png): 1-1-Kardinalität, externer Join. Dies kann etwa eine Beziehung zwischen einem Empfänger und dem ihm zugehörigen Land sein. Ein Empfänger kann nur mit einer Entität der Ländertabelle verknüpft sein. Der Inhalt der Ländertabelle wird nicht gespeichert.
-* ![](assets/join_with_campaign1n.png): 1-N-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und der Tabelle zu Abonnements sein. Ein Empfänger kann mit mehreren Entitäten in der Tabelle zu Abonnements verknüpft sein.
+* ![](assets/join_with_campaign1n.png): 1-N-Kardinalität. Dies kann etwa eine Beziehung zwischen einem Empfänger und der Tabelle zu Abonnements sein. Ein Empfänger kann mit mehreren Vorkommen in der Abonnementtabelle in Verbindung gebracht werden.
 
 Für Join-Beziehungen mit Federated Database Access:
 

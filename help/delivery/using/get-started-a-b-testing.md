@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: ae046ef6-d850-4222-b82c-8ef5b3da7037
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '350'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Die wichtigsten Schritte sind:
    Sie können beispielsweise eine Version eines Versands an einen kleinen Teil der Zielgruppe und eine andere an die restliche Zielgruppe senden. Auf diese Weise können Sie eine neue Version eines Versands testen, im Gegensatz zum Versand, der normalerweise an Ihre Kunden gesendet wird. Sie können die Zielgruppe auch in drei Gruppen unterteilen, um ihnen drei verschiedene Versionen eines Versands zu senden.
 
 1. **Erstellen mehrerer Versionen** des Versands, die den einzelnen Untermengen entsprechen. Die zu testende Variante kann der Betreff, der Inhalt der Nachricht, der Name des Absenders usw. sein.
-1. Starten Sie den Workflow und analysieren Sie anhand der **Versandlogs** das Verhalten der Untermengen für jede Variante.
+1. Starten Sie den Workflow und verwenden Sie dann die **Versandlogs**, um das Verhalten der Teilmengen mit jeder Variante zu analysieren.
 
 >[!NOTE]
 >

@@ -6,10 +6,10 @@ audience: integrations
 content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: 0996cc313be93300bce2f094c97e45a794cd459e
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 91%
+source-wordcount: '171'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,6 @@ Die Integration von Adobe Campaign und Adobe Target (Classic und Standard) inner
 
 Wenn ein Empfänger eine mit Adobe Campaign versendete E-Mail öffnet, ermöglicht ein Aufruf von Adobe Target die Anzeige einer dynamischen Version des Inhalts. Diese dynamische Version wird anhand von bei der E-Mail-Erstellung definierten Regeln berechnet.
 
-Weitere Informationen zur Integration von Adobe Campaign und Adobe Target finden Sie in [diesen vier Tipps und Tricks](https://business.adobe.com/content/dam/dx/us/en/products/campaign/pdfs/Adobe_Campaign_for_Target_Tips_and_Tricks.pdf).
 >[!NOTE]
 >
 >Im Rahmen der Integration werden nur statische Bilder unterstützt. Der weitere Inhalt kann nicht personalisiert werden.
@@ -30,7 +29,7 @@ Verschiedene Datentypen können in Verbindung mit Adobe Target zum Einsatz komme
 
 * Daten aus dem Adobe Campaign-Datamart;
 * Segmente im Zusammenhang mit der Visitor ID in Adobe Target, wenn die verwendeten Daten keinen rechtlichen Beschränkungen unterliegen;
-* Daten aus Adobe Target (user agent, IP address, Daten bezüglich der Geolokalisierung).
+* Adobe Target-Daten: Benutzeragent, IP-Adresse, Geolocation-Daten
 
 >[!NOTE]
 >

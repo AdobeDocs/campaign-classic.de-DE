@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: 56470602e3acf777d5b00c293060c644c1fbbc37
+source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 97%
+source-wordcount: '1724'
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 |------|--------|-----------|
 | **Alias-Datenbereinigung** (aliasCleansing) | Versand | Dieser Workflow vereinheitlicht Aufzählungswerte. Er wird standardmäßig täglich um 3 Uhr morgens ausgelöst. |
 | **Abrechnung** (billing) | Versand | Dieser Workflow übermittelt per E-Mail den Aktivitätsbericht des Systems an den fakturierungsverantwortlichen Benutzer (&#39;billing&#39;). Er wird am 25. jedes Monats in der Marketing-Instanz ausgelöst. |
-| **Berechnung der Twitter-Statistiken** (statsTwitter) | Social Media (Social Marketing) - Nur Campaign v7 | Dieser Workflow berechnet Statistiken in Bezug auf Retweets und Besuchen auf Twitter. |
+| **Berechnung der Twitter-Statistiken** (statsTwitter) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow berechnet Statistiken in Bezug auf Retweets und Besuchen auf Twitter. |
 | **Vorgänge bei Kampagnen** (operationMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow verwaltet Vorgänge in Marketing-Kampagnen (Zielgruppenbestimmung, Dateiextraktion etc.). Er erstellt darüber hinaus Workflows für wiederkehrende und periodische Kampagnen. |
 | **Erfassen von Daten für den HeatMap-Service** (collectDataHeatMapService) | Standardmäßig installiert | Dieser Workflow ruft die für den HeatMap-Service erforderlichen Daten ab. |
 | **Erfassen von Datenschutzanfragen** (collectPrivacyRequests) | Datenschutzbestimmung | Mit diesem Workflow werden die in Adobe Campaign gespeicherten Empfängerdaten abgerufen und auf dem Bildschirm zur Datenschutzanfrage für den Download bereitgestellt. |
@@ -56,7 +56,7 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Importieren von Audiences aus Adobe Experience Cloud** (importSharedAudience) | Integration mit Adobe Experience Cloud | Dieser Workflow ermöglicht den Import von Audiences/Segmenten aus den unterschiedlichen Adobe Experience Cloud-Lösungen in Adobe Campaign. |
 | **Bearbeitungsvorgänge bezüglich Kampagnensendungen** (deliveryMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet den Versand der validierten Sendungen und die Anschlussvorgänge des Dienstleisters bei externem Versand. Außerdem werden Validierungsbenachrichtigungen und Erinnerungen gesendet. |
 | **Bearbeitungsvorgänge bezüglich der Dienstleister** (supplierMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet Provider-Vorgänge nach erfolgter Versandvalidierung (E-Mail an den Router und Anschlussvorgang). |
-| **Update des LINE V2-Zugriffs-Tokens** (updateLineV2AccessToken) | LINE-Kanal - Nur Campaign v7 | Dieser Workflow aktualisiert das Zugriffs-Token auf LINE V2. |
+| **Update des LINE V2-Zugriffs-Tokens** (updateLineV2AccessToken) | LINE-Kanal  – Nur Campaign v7 | Dieser Workflow aktualisiert das Zugriffs-Token auf LINE V2. |
 | **Migration von MID zu LineUserID** (MIDToUserIDMigration) | LINE-Kanal | Dieser Workflow erzeugt die Kennung von LINE V2-Benutzern für die Migration von LINE V1 nach LINE V2. |
 | **Benachrichtigungen bezüglich Marketing-Ressourcen** (assetMgt) | Marketing-Ressourcen (MRM) | Dieser Workflow verwaltet die Benachrichtigungen bezüglich der Validierung und der Veröffentlichung von Marketing-Ressourcen. |
 | **Message Center &lt;external_account_name>** (mcSynch_&lt;external_account_name>) | Kontrolle der Transaktionsnachrichten (Message Center – Kontrolle) | Dieser Workflow: <ul><li>Ruft die Liste der durch die Aktion(en) verarbeiteten Ereignisse ab.</li><li>Wird mit der NmsBroadLogMsg-Tabelle synchronisiert, um die Qualifizierung der Versandnachrichten abzurufen.</li><li>Ruft Ereignis-Versandlogs ab, sobald die Synchronisation mit der NmsBroadLogMsg-Tabelle abgeschlossen ist.</li><li>Wird mit der NmsTrackingUrl-Tabelle synchronisiert, um das Tracking für die Versand-URLs abzurufen.</li><li>Ruft Ereignis-Verfolgungs-URLs ab, sobald die Synchronisation mit der NmsTrackingUrl-Tabelle abgeschlossen ist.</li><li>Ruft alle drei Stunden die E-Mail-Adressen ab, die infolge eines Versands neu in Quarantäne gekommen sind.</li></ul> |
@@ -74,10 +74,10 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Berichtsaggregate** (reportingAggregates) | Versand | Dieser Workflow aktualisiert die in Berichten verwendeten Aggregate. Er wird standardmäßig täglich um 2 Uhr morgens ausgelöst. |
 | **Übermittlung von Indikatoren und Kampagnenattributen** (webAnalyticsSendMetrics) | Web Analytics-Connectoren | Dieser Workflow ermöglicht es, über den Adobe® Analytics-Connector Indikatoren zu E-Mail-Kampagnen von Adobe Campaign an die Adobe Experience Cloud Suite zu senden. Dies betrifft die folgenden Indikatoren: Gesendet (iSent), Öffnungen insgesamt (iTotalRecipientOpen), Gesamtzahl der Empfänger, die geklickt haben (iTotalRecipientClick), Fehler (iError), Abmeldung (Opt-out) (iOptOut). |
 | **Lager: Bestellungen und Warnhinweise** (stockMgt) | Marketing-Kampagnen (Campaign) | Dieser Workflow startet die Berechnung der Lagerbestände in den Bestellzeilen und verwaltet Warnschwellen. |
-| **Synchronisation von Facebook-Fans** (syncFacebookFans) | Social Media (Social Marketing) - Nur Campaign v7 | Dieser Workflow importiert täglich um 7 Uhr morgens Facebook-Fans in Adobe Campaign. |
-| **Synchronisation von Facebook-Seiten** (syncFacebook) | Social Media (Social Marketing) - Nur Campaign v7 | Dieser Workflow synchronisiert täglich um 7 Uhr morgens Facebook-Seiten mit Adobe Campaign. |
-| **Synchronisation von Twitter-Seiten** (syncTwitter) | Social Media (Social Marketing) - Nur Campaign v7 | Dieser Workflow importiert täglich um 7 Uhr morgens Twitter-Follower in Adobe Campaign. |
-| **Benachrichtigung über Aufgaben** (taskMgt) | Marketing-Ressourcen (MRM) - Nur Campaign v7 | Mit diesem Workflow können Sie Benachrichtigungen senden, die sich auf Aufgaben in Marketing-Kampagnen beziehen. |
+| **Synchronisation von Facebook-Fans** (syncFacebookFans) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow importiert täglich um 7 Uhr morgens Facebook-Fans in Adobe Campaign. |
+| **Synchronisation von Facebook-Seiten** (syncFacebook) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow synchronisiert täglich um 7 Uhr morgens Facebook-Seiten mit Adobe Campaign. |
+| **Synchronisation von Twitter-Seiten** (syncTwitter) | Social Media (Social Marketing)  – Nur Campaign v7 | Dieser Workflow importiert täglich um 7 Uhr morgens Twitter-Follower in Adobe Campaign. |
+| **Benachrichtigung über Aufgaben** (taskMgt) | Marketing-Ressourcen (MRM)  – Nur Campaign v7 | Mit diesem Workflow können Sie Benachrichtigungen senden, die sich auf Aufgaben in Marketing-Kampagnen beziehen. |
 | **Tracking** (tracking) | Versand | Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Er aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere der Statistiken, die von den Archivierungs-Workflows des Message Centers verwendet werden. Er wird standardmäßig stündlich ausgelöst. |
 | **Update des Ereignisstatus** (updateEventsStatus) | Ausführung einer Transaktionsnachricht (Message Center – Ausführung) | Dieser Workflow weist Ereignissen einen Status zu. Folgende Status sind möglich:<ul><li>Ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</li><li>Versand ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist im Gange.</li><li>Gesendet: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.</li><li>Vom Versand ignoriert: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand ignoriert wurde.</li><li>Versandfehler: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.</li><li>Ereignis wurde nicht berücksichtigt: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Es erfolgt kein weiterer Verarbeitungsversuch.</li></ul> |
-| **Update für Zustellbarkeit** (deliverabilityUpdate) | Versand | Sobald das Package zur Überwachung der Zustellbarkeit (E-Mail-Zustellbarkeit) installiert ist, wird dieser Workflow nachts ausgeführt und verwaltet die Qualifikationsregeln für unzustellbare E-Mails sowie die Liste der Domains und MXs. Dazu muss der HTTPS-Port auf der Plattform geöffnet sein |
+| **Update für Zustellbarkeit** (deliverabilityUpdate) | Versand | Sobald das Package Zustellbarkeits-Monitoring (Email Deliverability) installiert ist, wird dieser Workflow nächtlich ausgeführt und verwaltet die Qualifizierungsregeln für Bounce-E-Mails sowie die Liste der Domains und MXs. Dazu muss der HTTPS-Port auf der Plattform geöffnet sein. |

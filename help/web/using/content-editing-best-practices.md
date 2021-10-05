@@ -6,10 +6,10 @@ audience: web
 content-type: reference
 topic-tags: editing-html-content
 exl-id: c1eccb48-59bf-412f-9c18-9cda2a022096
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -49,7 +49,7 @@ Der Digital Content Editor unterstützt das HTML-Format: Sie können jederzeit i
 Die Importfunktion des Digital Content Editors funktioniert mit diesen unterstützten Formaten folgendermaßen:
 
 * CSS: Die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Referenzen auf diese Bilder in der CSS-Datei werden nicht aktualisiert.
-* JS: Die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Referenzen auf diese Bilder in der JS-Datei werden nicht aktualisiert.
+* JS: die in der ZIP-Datei vorhandenen Bilder werden nicht importiert. Die Verweise auf diese Bilder im JS werden nicht aktualisiert.
 * Iframe: Die verknüpften Seiten werden nicht importiert.
 * Landingpages und Webanwendungen: Wenn ein **form**-Tag fehlt, wird eine Warnung angezeigt. Im Nachrichtentext muss immer ein `<form> </form>` vorhanden sein.
 

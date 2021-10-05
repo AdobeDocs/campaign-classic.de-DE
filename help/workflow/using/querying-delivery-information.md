@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: use-cases
 exl-id: b699b064-1287-41c9-8d94-1c1aa2c145ab
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '1541'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -149,7 +149,7 @@ Gehen Sie wie folgt vor:
 
 Ihre ausgehende Transition wird Empfänger enthalten, die in den letzten sieben Tagen keine E-Mail geöffnet haben.
 
-Wenn Sie jedoch Empfänger herausfiltern möchten, die zumindest eine E-Mail geöffnet haben, sollte Ihre Abfrage folgendermaßen aussehen. Bitte beachten Sie, dass in diesem Fall für die **[!UICONTROL Filterdimension]** die Option **[!UICONTROL Trackinglogs (Empfänger)]** ausgewählt werden muss.
+Wenn Sie hingegen Empfänger filtern möchten, die mindestens eine E-Mail geöffnet haben, sollte Ihre Abfrage wie folgt lauten. Beachten Sie, dass in diesem Fall die **[!UICONTROL Filterdimension]** auf **[!UICONTROL Trackinglogs (Empfänger)]** gesetzt werden sollte.
 
 ![](assets/query_open_5.png)
 

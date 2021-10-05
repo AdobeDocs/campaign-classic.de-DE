@@ -6,10 +6,10 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: e3a97e55-dd8b-41e1-b48c-816d973f62a8
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '619'
-ht-degree: 82%
+ht-degree: 78%
 
 ---
 
@@ -89,7 +89,7 @@ Wenn Sie eine Verbindung zu Hadoop 2.1 herstellen müssen, führen Sie die folge
 ### Hadoop 2.1 für Windows {#for-windows}
 
 1. Installieren Sie die ODBC- und [Azure HD Insight](https://www.microsoft.com/en-us/download/details.aspx?id=40886)-Treiber für Windows.
-1. Erstellen Sie den DSN (Data Source Name), indem Sie das Tool ODBC DataSource Administrator ausführen. Dort finden Sie ein Beispiel für einen System-DSN für Hive, das Sie anpassen können.
+1. Erstellen Sie den DSN (Data Source Name), indem Sie das Tool ODBC DataSource Administrator ausführen. Ein System-DSN-Beispiel für Hive wird bereitgestellt, das Sie ändern können.
 
    ```
    Description: vorac (or any name you like)

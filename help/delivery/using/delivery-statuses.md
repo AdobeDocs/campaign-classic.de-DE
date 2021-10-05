@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 0663257a-3a70-4e0c-bbeb-8242aaa0876d
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
-source-wordcount: '639'
-ht-degree: 100%
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
+source-wordcount: '640'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ajouter screenshot -->
 
-Nachdem ein Versand ausgeführt wurde, zeigt das Versand-Dashboard einen Status an, mit dem Sie überwachen können, ob der Versand erfolgreich war. Die möglichen Status werden im folgenden Abschnitt beschrieben.
+Nachdem ein Versand durchgeführt wurde, zeigt das Versand-Dashboard einen Status an, mit dem Sie überwachen können, ob der Versand erfolgreich war. Die möglichen Status werden im folgenden Abschnitt beschrieben.
 
 ![](assets/delivery-status.png)
 
@@ -97,7 +97,7 @@ Der Status **[!UICONTROL Ausstehend]** kann bedeuten, dass der Versand terminier
 
 Wenn der Versand nicht durchgeführt wird und sein Status **[!UICONTROL Ausstehend]** bleibt, kann dies folgende Gründe haben:
 
-* Der MTA (Message Transfer Agent), der für die Durchführung von Modulen und Prozessen am Versand-Server und die Verwaltung des E-Mail-Versands verantwortlich ist, wurde möglicherweise noch nicht gestartet oder muss neu gestartet werden.
+* Der MTA (Message Transfer Agent), der auf dem Versandserver Module und Prozesse ausführt und E-Mail-Sendungen verwaltet, wurde möglicherweise nicht gestartet oder muss möglicherweise neu gestartet werden.
 
    Um dies zu überprüfen und bei Bedarf das Modul zu starten, gehen Sie wie folgt vor:
 

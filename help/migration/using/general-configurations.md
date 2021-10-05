@@ -6,9 +6,9 @@ audience: migration
 content-type: reference
 topic-tags: configuration
 exl-id: 7aad0e49-8d9c-40c7-9d6a-42fee0ae5870
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: eef2a12738ce299686857720c3dc8456ffdd0c80
 workflow-type: tm+mt
-source-wordcount: '2841'
+source-wordcount: '2719'
 ht-degree: 1%
 
 ---
@@ -620,7 +620,7 @@ Alle Standardberichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie dies
 
 ![](assets/migration_reports_1.png)
 -->
-Wenn Sie von den neuen Berichtfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Bearbeiten Sie dazu den Bericht **[!UICONTROL Eigenschaften]**, klicken Sie auf **[!UICONTROL Rendering]** und wählen Sie die Rendering-Engine v.6.x aus. Überprüfen Sie in diesem Fall alle Skripte und ändern Sie sie bei Bedarf. Wenn Sie ein spezifisches Skript für Open Office hinzugefügt haben, funktioniert dies in Bezug auf den PDF-Export nicht mehr mit der neuen PDF-Export-Engine (PhantomJS).
+Wenn Sie von den neuen Berichtfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Überprüfen Sie in diesem Fall alle Skripte und ändern Sie sie bei Bedarf. Wenn Sie ein spezifisches Skript für Open Office hinzugefügt haben, funktioniert dies in Bezug auf den PDF-Export nicht mehr mit der neuen PDF-Export-Engine (PhantomJS).
 
 ## Web-Anwendungen {#web-applications}
 
@@ -631,10 +631,7 @@ Es gibt zwei Familien von Webanwendungen:
 
 ### Identifizierte Webanwendungen {#identified-web-applications}
 
-Genau wie bei Berichten ([Weitere Informationen](#reports)) müssen Sie, wenn Sie JavaScript hinzugefügt haben, diese bei Bedarf überprüfen und anpassen. Wenn Sie vom blauen Banner v7 (mit den blauen Tabs) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen. Wenn Ihr JavaScript-Code funktioniert, können Sie die Rendering-Engine v6.x auswählen. Ist dies nicht der Fall, können Sie die v6.0-Rendering-Engine verwenden, während Sie Ihren Code anpassen, und dann die v6.x-Rendering-Engine verwenden.
-
->[!NOTE]
-Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
+Genau wie bei Berichten ([Weitere Informationen](#reports)) müssen Sie, wenn Sie JavaScript hinzugefügt haben, diese bei Bedarf überprüfen und anpassen. Wenn Sie vom blauen Banner v7 (mit den blauen Tabs) profitieren möchten, müssen Sie die Webanwendung erneut veröffentlichen.
 
 Die Verbindungsmethoden für Webanwendungen wurden in v7 geändert. Wenn in Ihren identifizierten Webanwendungen Verbindungsprobleme auftreten, müssen Sie die Optionen **allowUserPassword** und **sessionTokenOnly** in der Datei **serverConf.xml** vorübergehend aktivieren. Ändern Sie nach dem Postupgrade die folgenden Optionswerte:
 
@@ -664,10 +661,7 @@ sessionTokenOnly="false"
 
 ### Anonyme Webanwendungen {#anonymous-web-applications}
 
-Wenn Probleme auftreten, veröffentlichen Sie die Webanwendung erneut. Wenn das Problem weiterhin besteht, können Sie die Rendering-Engine v6.0 auswählen. Da Sie kein JavaScript hinzugefügt haben, können Sie die v6.x Rendering-Engine auswählen und von den neuen Funktionen profitieren.
-
->[!NOTE]
-Die Schritte zur Auswahl der Rendering-Engine entsprechen denen zur Auswahl der Berichte. Siehe [Personalisierte Berichte](#personalized-reports).
+Wenn Probleme auftreten, veröffentlichen Sie die Webanwendung erneut.
 
 ## Red-Hat {#red-hat}
 

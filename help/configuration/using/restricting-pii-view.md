@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: editing-schemas
 exl-id: 0f32d62d-a10a-4feb-99fe-4679b98957d4
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 68%
+ht-degree: 65%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 68%
 
 ![](../../assets/v7-only.svg)
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Manche Kunden benötigen Marketing-Benutzer, um auf Datendatensätze zugreifen zu können, aber nicht möchten, dass sie personenbezogene Daten (PII) wie Vorname, Nachname oder E-Mail-Adresse sehen. Adobe Campaign bietet eine Möglichkeit, den Datenschutz zu schützen und zu verhindern, dass Daten von regulären Kampagnenbetreibern missbraucht werden.
 
@@ -43,7 +43,7 @@ Nachfolgend finden Sie ein Beispiel für eine Erweiterung des Empfängerschemas,
 Die wichtigsten Eigenschaften sind:
 
 * **[!UICONTROL visibleIf]** : Blendet die Felder aus den Metadaten aus, sodass sie nicht in einer Schemaansicht, Spaltenauswahl oder einem Ausdrucksassistenten aufgerufen werden können. Dadurch werden jedoch keine Daten ausgeblendet. Wenn der Feldname manuell in einen Ausdruck eingegeben wird, wird der Wert angezeigt.
-* **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn &quot;visibleIf&quot; leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]**.
+* **[!UICONTROL accessibleIf]** : Blendet die Daten aus der resultierenden Abfrage aus (und ersetzt sie durch leere Werte). Wenn visibleIf leer ist, erhält es denselben Ausdruck wie **[!UICONTROL accessibleIf]** .
 
 Die Verwendung dieses Attributs in Campaign hat folgende Folgen:
 

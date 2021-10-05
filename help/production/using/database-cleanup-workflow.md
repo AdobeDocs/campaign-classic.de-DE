@@ -6,10 +6,10 @@ audience: production
 content-type: reference
 topic-tags: data-processing
 exl-id: 75d3a0af-9a14-4083-b1da-2c1b22f57cbe
-source-git-commit: f232588b981d262ef67ff8b7a6f39ff3ea2505d3
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '2997'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## Einleitung {#introduction}
 
-Der Workflow **[!UICONTROL Datenbankbereinigung]** , auf den über den Knoten **[!UICONTROL Administration > Betreibung > Technische Workflows]** zugegriffen werden kann, ermöglicht das Löschen veralteter Daten, um ein exponentielles Wachstum der Datenbank zu vermeiden. Der Workflow wird automatisch ohne Benutzereingriff ausgelöst.
+Der Workflow **[!UICONTROL Datenbankbereinigung]**, auf den Sie über den Knoten **[!UICONTROL Administration > Produktion > Technische Workflows]** zugreifen können, ermöglicht das Löschen veralteter Daten, um das exponentielle Anwachsen der Datenbank zu verhindern. Der Workflow wird automatisch ohne das Eingreifen des Benutzers ausgelöst.
 
 ![](assets/ncs_cleanup_workflow.png)
 
@@ -579,7 +579,7 @@ Die folgende Abfrage wird verwendet:
 DELETE FROM XtkAudit WHERE tsChanged < $(tsDate)
 ```
 
-wobei **$(tsDate)** das aktuelle Server-Datum ist, ab dem der für die Option **XtkCleanup_AuditTrailPurgeDelay** definierte Zeitraum ersetzt wird.
+wobei **$(tsDate)** das aktuelle Server-Datum ist, ab dem der für die Option **XtkCleanup_AuditTrailPurgeDelay** definierte Zeitraum abgezogen wird.
 
 ### Bereinigung von Nmsaddress {#cleanup-of-nmsaddress}
 

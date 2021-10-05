@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
-source-git-commit: 987434c2b6b92fbb6f24924f92795cb282b61cd4
-workflow-type: ht
-source-wordcount: '545'
-ht-degree: 100%
+source-git-commit: 134f248fbcd456573365d5b32831b75dac4b73de
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 86%
 
 ---
 
@@ -169,6 +169,8 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## CRM-Connectoren{#CRMconnectors}
 
+Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). [Erfahren Sie ](../../platform/using/crm-connectors.md) mehr über Campaign-CRM-Connectoren.
+
 <table>
 <tbody>
 <tr>
@@ -187,6 +189,8 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 </table>
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
+
+Die folgenden externen Datenbanken sind mit dem Adobe Campaign [Federated Data Access-Modul](../../installation/using/about-fda.md) kompatibel:
 
 <table>
 <tbody>
@@ -286,7 +290,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 
-:warning: Für die Verwendung der Campaign-Client-Konsole sind die folgenden Betriebssysteme und Browser erforderlich.
+Die folgenden Betriebssysteme und Browser sind **erforderlich**, um [Campaign Client Console](../../installation/using/installing-the-client-console.md) zu verwenden.
 
 ### Betriebssysteme
 
@@ -311,6 +315,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ### Browser
 
+[]
 <table>
 <tbody>
 <tr>
@@ -326,6 +331,8 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 
 ## Mobile SDK{#MobileSDK}
+
+Sie können Campaign verwenden, um [Push-Benachrichtigungen zu senden](../../delivery/using/about-mobile-app-channel.md) auf den unten aufgeführten Betriebssystemen zu senden, indem Sie das zugehörige [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) verwenden.
 
 <table>
 <tbody>
@@ -348,7 +355,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## Browser{#Browsers}
 
-Die folgenden Browser sind mit Campaign für Web-Zugriff kompatibel.
+Die folgenden Browser sind mit Campaign für [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
 
 <table>
 <tbody>
@@ -399,6 +406,7 @@ Die folgenden Browser sind mit Campaign für Web-Zugriff kompatibel.
 ## Ähnliche Themen{#Morelikethis}
 
 * [Versionshinweise zu Campaign Classic](../../rn/using/latest-release.md)
-* [Installationsanleitung](../../installation/using/general-architecture.md)
+* [Allgemeine Campaign-Architektur](../../installation/using/general-architecture.md)
+* [Empfehlungen zur Hardwaredimensionierung](../../technotes/using/hardware-sizing.md)
 * [Veraltete Funktionen und Systeme](../../rn/using/deprecated-features.md)
 * [Vorgehen beim Build-Upgrade](../../production/using/build-upgrade.md)

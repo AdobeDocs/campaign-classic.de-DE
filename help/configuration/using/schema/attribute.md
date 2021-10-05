@@ -6,7 +6,7 @@ audience: configuration
 content-type: reference
 topic-tags: schema-reference
 exl-id: e4d34f56-b065-4dce-8974-11dc2767873a
-source-git-commit: 34404fbe935e68f3cc11d937839209443ad4ca60
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1553'
 ht-degree: 1%
@@ -123,7 +123,7 @@ Die Reihenfolge, in der `<attribute>` -Elemente in einem `<srcschema>` definiert
 * **sqlname (string**): des Felds während der Tabellenerstellung. Wenn @sqlname nicht angegeben ist, wird standardmäßig der Wert des Attributs &quot;@name&quot; verwendet. Wenn das Schema in die Datenbank geschrieben wird, werden je nach Feldtyp automatisch Präfixe hinzugefügt.
 * **template (string)**: Dieses Attribut definiert einen Verweis auf ein  `<attribute>` Element, das von mehreren Schemas gemeinsam genutzt wird. Die Definition wird automatisch in das aktuelle Schema kopiert.
 * **translateDefault (string)**: Wenn ein &quot;@default&quot;-Attribut gefunden wird, können Sie mit &quot;@translationDefault&quot;einen Ausdruck neu definieren, der mit dem in &quot;@default&quot;definierten Ausdruck übereinstimmt, der vom Übersetzungs-Tool erfasst werden soll (interne Verwendung).
-* **translateExpr (Zeichenfolge)**: Wenn ein &quot;@expr&quot;-Attribut vorhanden ist, können Sie mit dem Attribut &quot;@translationExpr&quot; einen Ausdruck neu definieren, der mit dem in @expr definierten Ausdruck übereinstimmt, der vom Übersetzungstool (interne Verwendung) erfasst werden soll.
+* **translateExpr (Zeichenfolge)**: Wenn das Attribut &quot;@expr&quot; vorhanden ist, können Sie mit dem Attribut &quot;@translationExpr&quot; einen Ausdruck neu definieren, der mit dem in @expr definierten Ausdruck übereinstimmt, der vom Übersetzungstool (interne Verwendung) erfasst werden soll.
 * **type (MNTOKEN)**: Feldtyp.
 
    Feldtypen sind generisch. Je nach installiertem Datenbanktyp ändert Adobe Campaign den definierten Typ in einen Wert, der für die bei der Strukturaktualisierung installierte Datenbank spezifisch ist.

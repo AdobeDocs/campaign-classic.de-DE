@@ -6,10 +6,10 @@ audience: configuration
 content-type: reference
 topic-tags: api
 exl-id: 7aa2aef1-2eb6-48a6-82fa-4451bed66216
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '658'
-ht-degree: 12%
+ht-degree: 8%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Campaign-APIs werden in JavaScript innerhalb der Anwendung und in SOAP au�
 
 ## Voraussetzungen {#prerequisites}
 
-Vor der Arbeit mit Adobe Campaign-APIs sollten Sie sich mit den folgenden Themen vertraut machen:
+Bevor Sie die Adobe Campaign-APIs verwenden, müssen Sie sich mit den folgenden Themen vertraut machen:
 
 * JavaScript
 * SOAP-Protokoll
@@ -40,7 +40,7 @@ Vor der Arbeit mit Adobe Campaign-APIs sollten Sie sich mit den folgenden Themen
 
 Adobe Campaign verwendet zwei API-Typen:
 
-* APIs zum allgemeinen Datenzugriff, mittels derer Datenmodell-Daten abgefragt werden können. Näheres hierzu finden Sie unter [Datenorientierte APIs](../../configuration/using/data-oriented-apis.md).
+* Generische Data Access APIs zum Abfragen der Daten des Datenmodells. Näheres hierzu finden Sie unter [Datenorientierte APIs](../../configuration/using/data-oriented-apis.md).
 * Business-orientierte APIs, mit denen Sie auf diese einzelnen Objekte, also Versand, Workflows, Abonnements usw., Aktionen ausführen können. Siehe [Geschäftsorientierte APIs](../../configuration/using/business-oriented-apis.md).
 
 Um APIs zu entwickeln und mit Adobe Campaign zu interagieren, müssen Sie mit Ihrem Datenmodell vertraut sein. Mit Adobe Campaign können Sie eine vollständige Beschreibung der Basis erstellen. Siehe [Beschreibung des Modells](../../configuration/using/data-oriented-apis.md#description-of-the-model).

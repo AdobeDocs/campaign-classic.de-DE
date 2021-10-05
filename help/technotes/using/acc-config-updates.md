@@ -1,13 +1,11 @@
 ---
 product: campaign
-title: Technote
-description: Technote
-hide: true
-hidefromtoc: true
+title: Technote - Aktualisierungen der Adobe Campaign-Konfiguration
+description: Aktualisierungen der Adobe Campaign-Konfiguration
 exl-id: 7db02123-2e2a-40d9-8385-728ff69985e4
-source-git-commit: b458ac67733a2f0e508df729add37d9a78dbcbd8
+source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1137'
 ht-degree: 94%
 
 ---
@@ -103,7 +101,7 @@ Sobald alle Instanzen aktualisiert wurden, muss auch die Client-Konsole auf dies
 
 ## Integration mit Experience Cloud-Triggern {#acc-triggers-updates}
 
-Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde in Adobe I/O verschoben. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **18. August 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 30. November 2021 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum 30. November 2021 zu erweitern. Sie müssen [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) für Adobe angeben.
+Der ältere OAuth-Authentifizierungsdienst hat das Lebenszyklusende erreicht. Die Trigger-Integrationsauthentifizierung, die ursprünglich auf der oAUTH-Authentifizierung basierte und für den Zugriff auf die Pipeline eingerichtet wurde, wurde in Adobe I/O verschoben. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **September 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 23. Februar 2022 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu erweitern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
 
 **Sind Sie betroffen?**
 

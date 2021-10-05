@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: introduction
 exl-id: ca0c33c5-7350-462a-bc65-4cab51e529d9
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 30%
@@ -21,7 +21,7 @@ ht-degree: 30%
 
 Die Registerkarte **[!UICONTROL Monitoring]** , auf die von der Campaign Classic-Startseite aus zugegriffen werden kann, ist der Haupteinstiegspunkt, der Sie bei der Überwachung Ihrer Instanz unterstützt.
 
-Es bietet ein Dashboard darüber, was auf Ihrer Instanz geschieht: Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der letzten gesendeten Sendungen usw.
+Es bietet ein Dashboard, was auf Ihrer Instanz geschieht: Status (Build-Version, installierte Pakete usw.), Systemindikatoren, Protokolle, derzeit ausgeführte Workflows, Status der letzten gesendeten Sendungen usw.
 
 Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-processes.md).
 
@@ -31,7 +31,7 @@ Detaillierte Informationen finden Sie [hier](../../production/using/monitoring-p
 
 <table>
 <tr><td><img src="assets/do-not-localize/icon_system.svg" width="60px"><p><a href="#monitoring-instance">Überwachen der Instanz</a></p></td>
-<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#moniroting-workflows">Überwachen von Workflows</a></p></td>
+<td><img src="assets/do-not-localize/icon_workflows.svg" width="60px"><p><a href="#monitoring-workflows">Überwachen von Workflows</a></p></td>
 <td><img src="assets/do-not-localize/icon_send.svg" width="60px"><p><a href="#monitoring-deliveries">Sendungen überwachen</a></p></td>
 <td><img src="assets/do-not-localize/icon_database.svg" width="60px"><p><a href="#monitoring-database">Überwachen der Datenbank</a></p></td></tr>
 </table>

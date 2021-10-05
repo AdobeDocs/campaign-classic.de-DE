@@ -6,7 +6,7 @@ audience: production
 content-type: reference
 topic-tags: production-procedures
 exl-id: 1f5d8c7e-6f9b-46cd-a9b4-a3b48afb1794
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '3779'
 ht-degree: 2%
@@ -105,7 +105,7 @@ Die Liste der Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
 * **[!UICONTROL Ausstehende Ereignisse in die Warteschlange]** : Indikator speziell für  **Message Center**. Weitere Informationen finden Sie in [diesem Abschnitt](../../message-center/using/additional-configurations.md#monitoring-thresholds).
 
-* **[!UICONTROL Lastdurchschnitt (1/5/15 Minuten)]** : Informationen über die Last, d. h. die Nutzungsrate des Prozessors durch die Prozesse, die auf dem Gerät über die letzte Minute, fünf Minuten oder fünfzehn Minuten ausgeführt werden.
+* **[!UICONTROL Lastdurchschnitt (1/5/15 Minuten)]** : Informationen über die Last, d. h. die Nutzrate des Prozessors durch die Prozesse, die in letzter Minute, fünf Minuten oder fünfzehn Minuten auf dem Gerät ausgeführt werden.
 
    **[!UICONTROL Aktueller Wert]** : tatsächliche Belastung der Maschine.
 
@@ -257,6 +257,7 @@ Sie sind unter **Monitoring** > &#39;SMTP Monitoring&#39; gruppiert.
 >
 >* Informationen zur SMTP-Überwachung sind nur verfügbar, wenn der E-Mail-Kanal aktiviert wurde.
 >* Die **[!UICONTROL SMTP-Versandstatistiken]** werden nur angeboten, wenn der Statistikserver auf der Instanz gestartet wird.
+
 >
 
 
@@ -269,7 +270,7 @@ Der Bericht **[!UICONTROL SMTP-Versandstatistiken]** ermöglicht die Steuerung d
 Die Liste der Indikatoren für diesen Bericht ist unten in der Grafik dargestellt.
 
 1. Anzahl gesendeter Nachrichten insgesamt
-1. &#x200B;
+1. 
    * Blaue Linie: Versandbereite Nachrichten, die in den Shaper gelangt sind, d. h. die letzte Phase vor dem Senden von SMTP (entspricht den eingehenden Daten).
 
    * Grüne Zeile: erfolgreich gesendete Nachrichten (entspricht den ausgehenden Daten).
@@ -344,7 +345,7 @@ Der technische Workflow befindet sich in einem Unterordner des folgenden Knotens
 
 ![](assets/billing.png)
 
-Sobald der Workflow alle 25 Monate gestartet wird, erhält Ihr Abrechnungsbetreiber den folgenden Bericht in seinem Posteingang.
+Sobald der Workflow alle 25 Monate gestartet wird, erhält Ihr Abrechnungs-Benutzer den folgenden Bericht in seinem Posteingang.
 
 ![](assets/billing_2.png)
 
@@ -436,7 +437,7 @@ Adobe Campaign ermöglicht verschiedene Bereitstellungskonfigurationen (weitere 
  <thead> 
   <tr> 
    <th> Bereitstellungstyp </th> 
-   <th> Monitoring     </th> 
+   <th> Monitoring      </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -604,7 +605,7 @@ Dieses Element konfiguriert die Überwachung eines bestimmten Servers auf dem Ho
 
 * **tcp**: überprüft, ob der Server ausgefallen ist oder nicht. Sie müssen eine Portnummer eingeben.
 * **http**: überprüft, ob der Webserver vorhanden ist (Anwendungsserver betriebsbereit).
-* **ncs**: überprüft die Prozesse auf der Instanz, die im Attribut &quot;Instanz&quot; eingegeben wurden (Workflow-Fehler, Speicherbelegung usw.). Das Attribut **include** (obligatorisch) bietet Ihnen die Möglichkeit, tote Prozesse anzuzeigen (&quot;true&quot;- oder &quot;false&quot;-Werte).
+* **ncs**: überprüft die Prozesse auf der Instanz, die im Attribut &quot;Instanz&quot; eingegeben wurden (Workflow-Fehler, Speicherbelegung usw.). Mit dem Attribut **included** (mandatory) können Sie tote Prozesse anzeigen (&quot;true&quot;- oder &quot;false&quot;-Werte).
 * **redir**: überprüft das Tracking.
 
 In den meisten Fällen können nur die Unterelemente **ncs** und **redir** beibehalten werden.

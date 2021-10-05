@@ -6,10 +6,10 @@ audience: installation
 content-type: reference
 topic-tags: additional-configurations
 exl-id: 424faf25-2fd5-40d1-a2fc-c715fc0b8190
-source-git-commit: dccf72b200cad9ba160a496cdd13ba39c5599008
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '1313'
-ht-degree: 90%
+ht-degree: 87%
 
 ---
 
@@ -140,7 +140,7 @@ Nachdem E-Mail-BCC konfiguriert wurde, stellen Sie sicher, dass Sie die Option *
 ## Best Practices für E-Mail-BCC {#best-practices}
 
 * **BCC-Adresszeile**: Stellen Sie sicher, dass es über genügend Aufnahmekapazität verfügt, um alle E-Mails zu archivieren, die von der MTA gesendet werden.
-* **MTA-Mutualisierung**: Die BCC-Archivierungsfunktion funktioniert auf MTA-Ebene. Damit können Sie alle E-Mails, die von der MTA gesendet werden, Duplikat werden. Da die MTA über mehrere Instanzen hinweg (z. B. dev, test oder prod) oder sogar über mehrere Clients (in einer Mid-Sourcing-Umgebung) hinweg mutualisiert werden kann, wirkt sich das Einrichten dieser Funktion auf die Sicherheit aus:
+* **MTA-Pooling**: Die BCC-Archivierungsfunktion funktioniert auf MTA-Ebene. Damit können Sie alle E-Mails, die von der MTA gesendet werden, Duplikat werden. Da der MTA über mehrere Instanzen (z. B. dev, test oder prod) oder sogar über mehrere Clients (in einer Mid-Sourcing-Umgebung) hinweg gepoolt werden kann, wirkt sich die Einrichtung dieser Funktion auf die Sicherheit aus:
 
    * Wenn Sie eine MTA für mehrere Clients freigeben und bei einem dieser Clients diese Option aktiviert ist, greift dieser Client auf alle E-Mails der anderen Clients zu, die dieselbe MTA verwenden. Um eine solche Situation zu vermeiden, verwenden Sie für jeden Client eine andere MTA.
    * Wenn Sie dieselbe MTA für mehrere Instanzen verwenden (Entwicklung, Test, Test), werden die Nachrichten, die von allen drei Instanzen gesendet werden, von der Option dataLogPath dupliziert.

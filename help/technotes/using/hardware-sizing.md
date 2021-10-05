@@ -2,14 +2,14 @@
 product: campaign
 title: Empfehlungen zur Hardware-Größe für Campaign Classic v7
 description: Empfehlungen zur Hardware-Größe für Campaign Classic v7
-source-git-commit: 3912874210ab16a132e51d9bb71508c8d244fe22
+source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2512'
 ht-degree: 1%
 
 ---
 
-# Empfehlungen zur Hardware-Größe für Campaign Classic v7 {#hardware-sizing-reco}
+# Empfehlungen zur Hardwaredimensionierung{#hardware-sizing-reco}
 
 ![](../../assets/v7-only.svg)
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Dieses Handbuch dient nur als allgemeine Beispielanleitung. Sie müssen sich an Ihren Adobe Campaign Customer Success Manager wenden, um die genaue Größe Ihrer Bereitstellung zu messen, bevor Sie mit Ihrem Campaign-Projekt beginnen. **Beschaffen Sie** keine Infrastruktur oder Hardware, bis dies geschehen ist.
+>Dieser Artikel wird nur als allgemeine Beispielanleitung bereitgestellt. Sie müssen sich an Ihren Adobe Campaign Customer Success Manager wenden, um die genaue Größe Ihrer Bereitstellung zu messen, bevor Sie mit Ihrem Campaign-Projekt beginnen. **Beschaffen Sie** keine Infrastruktur oder Hardware, bis dies geschehen ist.
 
-Dieses Dokument enthält allgemeine Richtlinien für die Bereitstellung von Adobe Campaign Classic v7 in Ihrem On-Premise-Rechenzentrum oder Ihrer virtualisierten Cloud-Umgebung. Bei dieser Art der Bereitstellung, die als **hybrid** oder **Mid-Sourcing** bezeichnet wird, werden die Marketing-Instanz und die Marketing-Datenbank von Campaign unter Ihre betriebliche Kontrolle gestellt. Dabei werden Cloud Messaging-Dienste von Adobe verwendet, um E-Mails, SMS- oder SMPP-Nachrichten zu senden und E-Mail-Öffnungs-, Bounce- und Klick-Tracking-Daten zu erfassen.
+Dieses Dokument enthält allgemeine Empfehlungen für die Bereitstellung von Adobe Campaign Classic v7 in Ihrem On-Premise-Rechenzentrum oder Ihrer virtualisierten Cloud-Umgebung. Bei dieser Art der Bereitstellung, die als **hybrid** oder **Mid-Sourcing** bezeichnet wird, werden die Marketing-Instanz und die Marketing-Datenbank von Campaign unter Ihre betriebliche Kontrolle gestellt. Dabei werden Cloud Messaging-Dienste von Adobe verwendet, um E-Mails, SMS- oder SMPP-Nachrichten zu senden und E-Mail-Öffnungs-, Bounce- und Klick-Tracking-Daten zu erfassen.
 
 Die Marketing-Instanz ist der Teil der Adobe Campaign-Architektur, der alle Marketing-Aktivitäten steuert und alle von Kampagnen zurückgegebenen Empfängerdaten und Analysedaten speichert. Die Marketing-Instanz besteht aus einer Reihe von On-Premise-Servern, auf denen Adobe Campaign-Dienste ausgeführt werden, und einer relationalen Datenbank.
 
@@ -258,5 +258,6 @@ Adobe empfiehlt Leistungstests für jede virtualisierte Implementierung von Adob
 ## Verwandte Themen
 
 * [Kampagnenüberwachungsprozesse](../../production/using/monitoring-processes.md)
+* [Allgemeine Architektur von Campaign](../../installation/using/general-architecture.md)
 * [Leistungs- und Durchsatzprobleme](../../production/using/performance-and-throughput-issues.md)
 * [Checkliste für Sicherheit und Datenschutz](../../installation/using/get-started-security-privacy.md)

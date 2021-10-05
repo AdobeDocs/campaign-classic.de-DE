@@ -6,10 +6,10 @@ audience: delivery
 content-type: reference
 topic-tags: a-b-testing
 exl-id: 6adf2e75-63b1-44ad-8925-03beb3bc0bdd
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
+workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -37,6 +37,6 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Workflow zum Durchführen vo
 
    ![](assets/ab-testing-delivery.png)
 
-Sie können den Workflow jetzt starten. Sobald die Sendungen ausgeführt wurden, können Sie das Verhalten der drei Untermengen in den Versandlogs nachverfolgen, um zu sehen, welches Thema am erfolgreichsten war.
+Sie können den Workflow jetzt starten. Nach dem Versand der Nachrichten können Sie das Verhalten der drei Teilmengen in den Versandlogs verfolgen, um zu sehen, welcher Betreff am erfolgreichsten war.
 
 Mithilfe von Workflows können Sie Ihre Prozesse auch automatisieren, indem Sie automatisch die Versandvariante identifizieren, die besser abgeschnitten hat, und diese dann an die verbleibende Population senden. Weitere Informationen dazu finden Sie im [entsprechenden Anwendungsbeispiel](a-b-testing-use-case.md).

@@ -6,7 +6,7 @@ audience: platform
 content-type: reference
 topic-tags: connectors
 exl-id: ebaad59f-0607-4090-92d0-e457fbf9a348
-source-git-commit: 0cfe8439007b56014eba497c511904c4f11b39ce
+source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 7%
@@ -69,7 +69,7 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
 
 1. Laden Sie das 64-Bit-Archiv von Windows (x86_64) von dieser [Seite](https://cloud.google.com/sdk/docs/downloads-versioned-archives) herunter und extrahieren Sie es in das entsprechende Verzeichnis.
 
-1. Führen Sie das Skript `google-cloud-sdk\install.sh` aus. Sie müssen die Einstellung der Pfadvariable akzeptieren.
+1. Führen Sie das Skript `google-cloud-sdk\install.sh` aus. Sie müssen die Einstellung der Pfadvariablen akzeptieren.
 
 1. Überprüfen Sie nach der Installation, ob die Pfadvariable `...\google-cloud-sdk\bin` festgelegt ist. Wenn nicht, fügen Sie es manuell hinzu.
 
