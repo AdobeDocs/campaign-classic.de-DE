@@ -5,7 +5,7 @@ description: Erfahren Sie, wie Sie die Pipeline konfigurieren.
 audience: integrations
 content-type: reference
 exl-id: 2d214c36-8429-4b2b-b1f5-fe2730581bba
-source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
+source-git-commit: b8f74c290106d57630c5d486c04b8424132e3297
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 99%
@@ -26,7 +26,7 @@ Bevor Sie mit dieser Konfiguration beginnen, überprüfen Sie, ob Sie Folgendes 
 
 * Mindestens einer der folgenden Adobe Campaign-Builds:
    * 19.1.8.9039
-   * 19.1.4.9032 - Gold Standard 11
+   * 19.1.4.9032 – Gold Standard 11
    * 20.2.4.9187
    * 20.3.1
 * Adobe Analytics Standard-Version
@@ -127,7 +127,7 @@ Die Liste der optionalen Parameter ist nachfolgend aufgeführt:
 
 | Option | Beschreibung  |
 |:-:|:-:|
-| appName(Legacy) | AppID der OAuth-Anwendung, die in der Legacy-Oath-Anwendung registriert ist, in die der öffentliche Schlüssel hochgeladen wurde. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md.). |
+| appName(Legacy) | AppID der OAuth-Anwendung, die in der Legacy-Oath-Anwendung registriert ist, in die der öffentliche Schlüssel hochgeladen wurde. Weitere Informationen hierzu finden Sie auf [dieser Seite](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md). |
 | authGatewayEndpoint(Legacy) | URL zum Abrufen von Gateway-Tokens. Standard: ```https://api.omniture.com``` |
 | authPrivateKey(Legacy) | Der öffentliche Teil des privaten Schlüssels, der in die Legacy-Oath-Anwendung hochgeladen wurde; AES-verschlüsselt mit der XtkKey-Option: ```cryptString("PRIVATE_KEY")``` |
 | disableAuth(Legacy) | Deaktivieren der Authentifizierung; Verbindungen ohne Gateway-Tokens werden nur von einigen Endpunkten der Entwicklungs-Pipeline akzeptiert. |
