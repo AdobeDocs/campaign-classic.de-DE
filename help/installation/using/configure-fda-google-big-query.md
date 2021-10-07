@@ -61,7 +61,7 @@ Verwenden Sie die Option Adobe Campaign Classic **Federated Data Access** (FDA),
 
 >[!NOTE]
 >
->Sie müssen Python installieren, damit das Google Cloud SDK funktioniert.
+>Damit das Google Cloud SDK funktioniert, muss Python installiert sein.
 >
 >Wir empfehlen die Verwendung von Python3, siehe diese [Seite](https://www.python.org/downloads/).
 
@@ -171,7 +171,7 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
    SwapFilePath=/tmp
    ```
 
-1. Wenn Sie eine Systemtreiberdatei oder eine aktuelle `odbcinst.ini`-Datei verwenden, konfigurieren Sie `/etc/odbcinst.ini` so, dass auf den Speicherort des Google BigQuery-Treibers `/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb[Bitness].so` verwiesen wird.
+1. Wenn Sie eine Systemtreiberdatei oder eine aktuelle `odbcinst.ini`-Datei verwenden, konfigurieren Sie `/etc/odbcinst.ini` so, dass auf den Google BigQuery-Treiberspeicherort `/opt/simba/googlebigqueryodbc/lib/libgooglebigqueryodbc_sb[Bitness].so` verwiesen wird.
 
    Beispiel:
 
@@ -209,7 +209,7 @@ Das Bulk Load-Dienstprogramm ermöglicht eine schnellere Übertragung, die über
 
 >[!NOTE]
 >
->Sie müssen Python installieren, damit das Google Cloud SDK funktioniert.
+>Damit das Google Cloud SDK funktioniert, muss Python installiert sein.
 >
 >Wir empfehlen die Verwendung von Python3, siehe diese [Seite](https://www.python.org/downloads/).
 

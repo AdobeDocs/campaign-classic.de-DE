@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: importing-and-exporting-data
 exl-id: 4596638c-d75a-4e07-a2d8-5befcaad3430
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ In diesem Anwendungsfall wird ein Workflow erstellt, um Daten mit einem im Contr
 
 Die Schritte zum Ausführen dieses Anwendungsfalls lauten wie folgt:
 
-1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel im Control Panel. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de#encrypting-data).
+1. Generieren Sie ein GPG-Schlüsselpaar (öffentlich/privat) mit einem GPG-Dienstprogramm und installieren Sie dann den öffentlichen Schlüssel im Control Panel. Ausführliche Anweisungen finden Sie in der [Control Panel-Dokumentation](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=en#encrypting-data).
 
 1. Erstellen Sie einen Workflow in Campaign Classic, um die Daten zu exportieren und mithilfe des über das Control Panel installierten privaten Schlüssels zu verschlüsseln. Zu diesem Zweck wird folgender Workflow erstellt:
 

@@ -38,7 +38,7 @@ Wenn dieses Attribut auf **true** gesetzt ist, wird das Schema nur zum Generiere
 Wenn Tabellen vom Tabellenaktualisierungs-Assistenten erstellt werden, werden die Namen der Tabellen und Spalten automatisch anhand der Namen der jeweiligen Schemas und Attribute generiert. Es ist jedoch möglich, die Verwendung der SQL-Namen zu erzwingen, indem die folgenden Attribute eingegeben werden:
 
 * **** sqltableinnerhalb des Hauptelements des Schemas, um die Tabelle anzugeben,
-* **** sqlname in jedem Attribut angeben, um die Spalten anzugeben.
+* **** sqlname in jedem Attribut, um die Spalten anzugeben.
 
 **Beispiel**:
 

@@ -146,7 +146,7 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
    * Bevor Sie Google reCAPTCHA verwenden, müssen Sie sich bei Google registrieren und eine neue reCAPTCHA-Site erstellen.
 
       `<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>`
-   Sie sollten die Validierungsschaltfläche deaktivieren können. Da jedoch keine standardmäßige Schaltfläche/keinen standardmäßigen Link vorhanden ist, ist es besser, dies im HTML-Code selbst zu tun. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://developers.google.com/recaptcha/).
+   Sie sollten die Validierungsschaltfläche deaktivieren können, aber da wir keine Standardschaltfläche/keinen Standardlink haben, ist es besser, dies auf der HTML selbst zu tun. Weiterführende Informationen dazu finden Sie auf [dieser Seite](https://developers.google.com/recaptcha/).
 
 ### Webanwendung aktualisieren
 
@@ -174,7 +174,7 @@ Im Allgemeinen wird ein Captcha im DCE hinzugefügt, indem ein Gestaltungsbauste
 
 >[!IMPORTANT]
 >
->Für die reCAPTCHA-Integration müssen Sie clientseitiges JavaScript in den HTML-Code einfügen (in `<head>...</head>`):
+>Für die reCAPTCHA-Integration müssen Sie clientseitiges JavaScript in der HTML hinzufügen (in `<head>...</head>`):
 >
 >`<script src="https://www.google.com/recaptcha/api.js" async defer></script>`
 
@@ -196,7 +196,7 @@ else
 
 Zeile 6: Sie können eine beliebige Fehlermeldung eingeben.
 
-### Google Recaptcha
+### Google recaptcha
 
 Weitere Informationen finden Sie in der [offiziellen Dokumentation](https://developers.google.com/recaptcha/docs/verify).
 

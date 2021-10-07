@@ -23,6 +23,7 @@ Ein **Stacktrace** steht für eine Spur, die in einer Datei vom Typ **core** ent
 >
 >* Eine **core**-Datei heißt **core.`<num>`**.
 >* **gdb - Der GNU** Debugger muss auf dem Computer installiert sein.
+
 >
 
 

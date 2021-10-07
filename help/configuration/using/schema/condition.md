@@ -33,7 +33,7 @@ Bedingung:==EMPTY
 
 ## Untergeordnetes Element {#children-2}
 
-Keine
+Kein(e)
 
 ## Beschreibung {#description-2}
 

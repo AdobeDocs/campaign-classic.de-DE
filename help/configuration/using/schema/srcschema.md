@@ -27,7 +27,7 @@ created (datetime), createdBy-id (long), desc (string), entitySchema (string), e
 
 ## Übergeordnete Elemente {#parents-14}
 
-Keine
+Kein(e)
 
 ## Untergeordnetes Element {#children-14}
 

@@ -41,7 +41,7 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Gibt es Unterschiede in der Größe des Pakets zwischen dem alten Rechenzentrum und der Public Cloud?**
 
-   Wir stellen in der Public Cloud (AWS) neue Paketdefinitionen bereit, die auf der aktuellen Datenbankgröße, der Festplattengröße usw. basieren. Wenn beispielsweise ein Kunde in älteren Rechenzentren über einen Anwendungsserver verfügt, kann er basierend auf Paketdefinitionen über zwei Anwendungsserver in Public Cloud (AWS) verfügen.
+   Wir stellen in der Public Cloud (AWS) neue Paketdefinitionen bereit, die auf der aktuellen Datenbankgröße, der Festplattengröße usw. basieren. Wenn beispielsweise ein Kunde in älteren Rechenzentren über einen Anwendungsserver verfügt, kann er je nach Package-Definitionen über zwei Anwendungsserver in Public Cloud (AWS) verfügen.
 
 * **Wird sich die Build-Nummer oder die Campaign-Version ändern?**
 
@@ -77,7 +77,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
 * **Wie wird die Zuordnung von Subdomains gehandhabt?**
 
-   Vorhandene Subdomains werden vom alten Rechenzentrum in die Public Cloud (AWS) verschoben. Dieser Prozess wird im Rahmen des Migrationsprozesses vom Zustellbarkeitsteam von Adobe gehandhabt.
+   Bestehende Subdomains werden vom alten Rechenzentrum in die Public Cloud (AWS) verschoben. Dieser Prozess wird im Rahmen des Migrationsprozesses vom Zustellbarkeitsteam von Adobe gehandhabt.
 
    Adobe führt den Kunden durch die erforderlichen Tests, um sicherzustellen, dass die Konfiguration nach der Migration auf den neuen Public Cloud-Servern (AWS) erfolgreich durchgeführt wurde.
 
@@ -87,7 +87,7 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
 * **Wird die Subdomain von Neolane.net in campaign.adobe.com geändert?**
 
-   Sowohl `neolane.net` als auch `campaign.adobe.com` sind nach der Migration vorhanden. Einfach zu machen: wird neolane.net zu neuen Instanzen in Public Cloud (AWS) umgeleitet, sodass keine Änderungen vom Kunden erforderlich sind.
+   Sowohl `neolane.net` als auch `campaign.adobe.com` sind nach der Migration vorhanden. Einfach zu machen: wird neolane.net zu neuen Instanzen in Public Cloud (AWS) umgeleitet, sodass keine vom Kunden vorgenommenen Änderungen erforderlich sind.
 
 * **Was ist der Plan für die IP-Erwärmung?**
 

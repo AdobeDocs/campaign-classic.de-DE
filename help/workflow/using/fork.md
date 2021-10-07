@@ -53,14 +53,14 @@ Der Workflow umfasst die folgenden Aktivitäten:
 
    Die Schnittmenge der Abfrageergebnisse, also die Pariser Frauen, wird ausgewählt.
 
-1. **** Verzweigung
+1. **** forkactivity
 
    Die berechnete Population wird gespeichert und parallel dazu in zwei Gruppen unterteilt:
 
    1. Pariser Frauen im Alter zwischen 18 und 40 Jahren
    1. Pariser Frauen über 40
 
-1. **** Versandaktivität
+1. **[!UICONTROL Versandaktivität]**
 
    Jede Populationsgruppe erhält eine andere E-Mail.
 

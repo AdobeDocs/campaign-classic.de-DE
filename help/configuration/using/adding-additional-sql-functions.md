@@ -111,7 +111,7 @@ Unten finden Sie ein Beispiel für eine Funktion der &quot;relativen Reife&quot;
 
 Das Feld **@name** bezieht sich auf den Namen der Funktion und &quot;args&quot; ist die Liste der Parameter, die in der Beschreibung angezeigt werden. In diesem Fall wird die Funktion im Funktionsauswahlfenster als &quot;relativeMaturity ( `<age>` )&quot;angezeigt.
 
-* **** unterstützt das Feld, das unten im Ausdruckseditor-Fenster angezeigt wird.
+* **** unterstützt das am unteren Rand des Fensters des Ausdruckseditors angezeigte Feld.
 * **@** display ist eine informative Nachricht.
 
    >[!NOTE]

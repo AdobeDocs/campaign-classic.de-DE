@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: 9e3a11b1-3070-4d90-91d5-7c559bdd500e
-source-git-commit: a64cf63916c4e4f220ac00f3d44d0e5e747815f4
+source-git-commit: 86eb9814fae42992b5ca0ce233f88ad90086007d
 workflow-type: tm+mt
 source-wordcount: '1191'
-ht-degree: 85%
+ht-degree: 97%
 
 ---
 
@@ -25,14 +25,14 @@ _7. September 2021_
 
 Build 9032@554dbcd umfasst die folgende Fehlerkorrektur:
 
-* Fehlerkorrektur - Jetzt tritt kein 500-Fehler mehr auf, wenn der Link zu einer Webanwendung in einem LINE-Versand mit aktiviertem Tracking geöffnet wird.
+* Fehlerkorrektur – Jetzt tritt kein 500-Fehler mehr auf, wenn der Link zu einer Web-Anwendung in einem LINE-Versand mit aktiviertem Tracking geöffnet wird.
 
-_27. August 2021_
+_Freitag, 27. August 2021_
 
 Build 9032@99a3894 umfasst die folgenden Fehlerkorrekturen:
 
-* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt kodiert.
-* Fehlerkorrektur - Bei der Datumsauswahl wird in der Konsole keine Blocker-Fehlermeldung mehr angezeigt. (NEO-36345)
+* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
+* Fehlerkorrektur – Bei der Datumsauswahl wird in der Konsole keine Blocker-Fehlermeldung mehr angezeigt. (NEO-36345)
 
 ## ![](assets/do-not-localize/green_2.png) [!DNL Gold Standard]-Version 11{#gs-11}
 
@@ -41,15 +41,15 @@ _Mittwoch, 14. April 2021_
 Build 9032@d030c36 umfasst die folgende Fehlerkorrektur:
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
-* Dieser Konsolen-Build ist erforderlich, um den [IMS-Zugriff](../../technotes/using/ims-updates.md) zu verwalten.
+* Dieser Konsolen-Build ist erforderlich, um den [IMS-Zugriff](../../technotes/using/ims-updates.md) aufrechtzuerhalten.
 
 **Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
 
 >[!CAUTION]
 >
-> * Wenn Sie über Adobe Identity Management Service (IMS) eine Verbindung zu Campaign mit Ihrer Adobe ID herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Campaign-Server als auch die Client-Konsole nach dem 30. Juni 2021 **eine Verbindung zu Campaign herstellen können.** [Weitere Informationen](../../technotes/using/ims-updates.md)
+> * Wenn Sie über Adobe Identity Management Service (IMS) mit Ihrer Adobe ID eine Verbindung zu Campaign herstellen, ist eine Aktualisierung erforderlich, damit sowohl der Campaign-Server als auch die Client-Konsole nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen können. [Weitere Informationen](../../technotes/using/ims-updates.md)
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **18. August 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 30. November 2021 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum 30. November 2021 zu erweitern. Sie müssen [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) für Adobe angeben.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **September 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 23. Februar 2022 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu erweitern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
 
 >
 >Weitere Informationen finden Sie in den häufig gestellten Fragen zum [[!DNL Gold Standard] -Upgrade auf Version 11](https://helpx.adobe.com/de/campaign/kb/gold-standard-upgrade.html)
@@ -68,15 +68,6 @@ Build 9032@10c2709 umfasst die folgende Fehlerkorrektur:
 
 _Dienstag, 22. Dezember 2020_
 
-<!--
->[!CAUTION]
->
-> * This release comes with a new connection protocol: if you are connecting to Campaign through Adobe Identity Service (IMS), upgrade is mandatory for both Campaign server and client console to be able to connect to Campaign after **June 30, 2021**. [Learn more](../../technotes/using/ims-updates.md)
-> * This release comes with a [security fix](https://helpx.adobe.com/security/products/campaign/apsb21-04.html): upgrade is mandatory to reinforce your environment security. 
-> * If you are using the Experience Cloud Triggers integration through oAuth authentication, you need to move to Adobe I/O as described [in this page](../../integrations/using/configuring-adobe-io.md). Legacy oAuth authentication mode with Campaign will be retired on **November 30, 2021**.
->
->Learn more in the [[!DNL Gold Standard] 11 upgrade FAQ](https://helpx.adobe.com/campaign/kb/gold-standard-upgrade.html).
--->
 Der Build 9032@d3b452f umfasst die folgenden Verbesserungen und Fehlerbehebungen:
 
 * Das Verbindungsprotokoll wurde aktualisiert, sodass es dem neuen IMS-Authentifizierungsmechanismus entspricht.

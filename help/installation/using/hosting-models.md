@@ -25,7 +25,7 @@ Adobe Campaign bietet drei Hosting-Modelle, die Flexibilität und Freiheit biete
 
 ## Managed Services/gehostet
 
-Adobe Campaign kann als verwalteter Dienst bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungsmaschine und der Campaign-Datenbank des Kunden, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und extern orientierten Webkomponenten wie dem Abmelde-Seiten-/Präferenzzentrum und Landingpages.
+Adobe Campaign kann as a Managed Service bereitgestellt werden: Alle Komponenten von Adobe Campaign, einschließlich der Benutzeroberfläche, der Ausführungsverwaltungsmaschine und der Campaign-Datenbank des Kunden, werden vollständig von Adobe gehostet, einschließlich E-Mail-Ausführung, Mirrorseiten, Tracking-Server und extern orientierten Webkomponenten wie dem Abmelde-Seiten-/Präferenzzentrum und Landingpages.
 
 ![](assets/deployment_hosted.png)
 

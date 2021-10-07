@@ -9,7 +9,7 @@ exl-id: 4a17d5e8-c73f-42e7-b641-0fee6a52c5c0
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '1827'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -298,7 +298,7 @@ Weiterführende Informationen hierzu finden Sie in diesem [Abschnitt](../../inte
 
 Das externe **[!UICONTROL Microsoft Dynamics CRM]**-Konto ermöglicht den Import und Export von Microsoft Dynamics-Daten in Adobe Campaign.
 
-Weitere Informationen zum CRM-Connector für Campaign mit Microsoft Dynamics finden Sie auf dieser [Seite](../../platform/using/crm-ms-dynamics.md).
+Weitere Informationen zum Campaign - Microsoft Dynamics CRM-Connector finden Sie auf dieser [Seite](../../platform/using/crm-ms-dynamics.md).
 
 Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit **[!UICONTROL Passwort]** müssen Sie die folgenden Details angeben:
 
@@ -336,7 +336,7 @@ Beim Bereitstellungstyp **[!UICONTROL Web-API]** und der Authentifizierung mit *
 
    Beachten Sie, dass der private Schlüssel in Base64 kodiert werden muss.
 
-   Dazu können Sie die Hilfe eines Base64-Encoder verwenden oder die Befehlszeile `base64 -w0 private.key` für Linux verwenden.
+   Dazu können Sie einen Base64-Encoder oder die Befehlszeile `base64 -w0 private.key` für Linux verwenden.
 
 * **[!UICONTROL Benutzerdefinierte Schlüsselkennung]**
 

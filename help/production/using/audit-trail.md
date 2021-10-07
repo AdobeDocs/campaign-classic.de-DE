@@ -9,7 +9,7 @@ exl-id: 8508d879-fb38-4b1f-9f55-0341bb8d0c67
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
 workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 7%
+ht-degree: 13%
 
 ---
 
@@ -60,7 +60,7 @@ So greifen Sie auf das **[!UICONTROL Audit-Protokoll]** Ihrer Instanz zu:
 
    ![](assets/audit_trail_1.png)
 
-1. Das Fenster **[!UICONTROL Audit trail]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen von Workflows, Optionen und Schemata.
+1. Das Fenster **[!UICONTROL Audit-Protokoll]** wird mit der Liste Ihrer Entitäten geöffnet. Adobe Campaign prüft die Aktionen zum Erstellen, Bearbeiten und Löschen von Workflows, Optionen und Schemata.
 
    Wählen Sie eine der Entitäten aus, um mehr über die letzten Änderungen zu erfahren.
 

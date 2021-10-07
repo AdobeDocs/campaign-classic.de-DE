@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## Warnhinweise {#warnings}
 
-* Der Migrationsprozess darf nur von erfahrenen Benutzern durchgeführt werden. Sie müssen von mindestens einem Datenbankexperten, einem Systemadministrator und einem Anwendungsentwickler aus Adobe Campaign unterstützt werden.
+* Der Migrationsprozess darf nur von erfahrenen Benutzern durchgeführt werden. Sie müssen von mindestens einem Datenbankexperten, einem Systemadministrator und einem Anwendungsentwickler von Adobe Campaign unterstützt werden.
 * Bevor Sie mit der Migration beginnen, überprüfen Sie, ob die von Ihnen verwendeten Systeme und Systemkomponenten tatsächlich mit v7 kompatibel sind. Konsultieren Sie die [Kompatibilitätsmatrix](../../rn/using/compatibility-matrix.md).
 * Wenn Sie Adobe Campaign Cloud Messaging (Mid-Sourcing) verwenden, wenden Sie sich an Adobe , bevor Sie mit dem gesamten Migrationsverfahren beginnen.
 * Bevor Sie einen Migrationsprozess starten, müssen Sie **Ihre Daten sichern.**

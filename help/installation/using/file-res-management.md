@@ -104,7 +104,7 @@ Wenn Sie interne Verbindungen haben, die durch den Proxy gehen sollen, fügen Si
 
 Wenn Sie die Proxy-Verbindung vorübergehend deaktivieren möchten, setzen Sie den aktivierten Parameter auf &quot;false&quot; oder &quot;0&quot;.
 
-Wenn Sie den iOS HTTP/2-Connector über einen Proxy verwenden müssen, werden die folgenden HTTP-Proxy-Modi unterstützt:
+Wenn Sie den iOS HTTP/2-Connector über einen Proxy verwenden müssen, werden die folgenden HTTP-Proxymodi unterstützt:
 
 * HTTP ohne Authentifizierung
 * Grundlegende HTTP-Authentifizierung

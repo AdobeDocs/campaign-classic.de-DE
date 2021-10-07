@@ -5,8 +5,8 @@ description: Erfahren Sie, wie Sie den Campaign-Explorer verwenden.
 audience: platform
 content-type: reference
 topic-tags: starting-with-adobe-campaign
-exl-id: 21656cc2-15a1-4156-8897-ea4fe3e9b97f,f91d69a4-b794-40f0-b450-de862d7333e2
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: f91d69a4-b794-40f0-b450-de862d7333e2
+source-git-commit: 1de1f7aafd7eb18c1160460ddd5c84ac59473664
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 100%
@@ -19,7 +19,8 @@ ht-degree: 100%
 
 Auf den Adobe Campaign-Explorer kann über das entsprechende Symbol in der Symbolleiste zugegriffen werden. Mit seiner Hilfe gelangen Sie zu allen Adobe Campaign-Funktionen und in die verschiedenen Konfigurationsbildschirme der Adobe Campaign-Plattform und können einige Plattformelemente im Detail anzeigen.
 
-Die **[!UICONTROL Explorer]**-Ansicht ist in drei Bereiche unterteilt:
+Die **[!UICONTROL Explorer]**-Arbeitsbereich ist in drei Bereiche unterteilt:
+
 
 ![](assets/s_ncs_user_navigation.png)
 
@@ -76,7 +77,7 @@ Adobe empfiehlt für optimale Navigation und Nutzung eine Bildschirmauflösung v
 >
 >Auflösungen von weniger als 1.600 x 900 Pixeln werden von Adobe Campaign nicht unterstützt.
 
-Wenn im **[!UICONTROL Explorer]** einige Teile des Bereichs **[!UICONTROL Details]** abgeschnitten sind, erweitern Sie den Bereich mit dem Pfeil am oberen Rand oder klicken Sie auf die Schaltfläche **[!UICONTROL Vergrößern]**.
+Wenn im **[!UICONTROL Explorer]** Arbeitsbereich einige Teile des Bereichs **[!UICONTROL Details]** abgeschnitten sind, erweitern Sie den Bereich mit dem Pfeil am oberen Rand oder klicken Sie auf die Schaltfläche **[!UICONTROL Vergrößern]**.
 
 ![](assets/s_ncs_user_resolution.png)
 

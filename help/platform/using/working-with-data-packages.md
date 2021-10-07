@@ -17,7 +17,7 @@ ht-degree: 99%
 
 ![](../../assets/common.svg)
 
-## Über Datenpackages {#about-data-packages}
+## Über Daten-Packages {#about-data-packages}
 
 Adobe Campaign ermöglicht den Export oder Import von Plattformkonfigurationen und Daten mithilfe eines Package-Systems. Packages können unterschiedliche Konfigurationen und gefilterte oder ungefilterte Elemente enthalten.
 
@@ -327,7 +327,7 @@ Entnehmen Sie Ihrem Lizenzvertrag, welche Packages Sie installieren können.
 
 Weitere Informationen zu nativen Packages finden Sie auf [dieser Seite](../../installation/using/installing-campaign-standard-packages.md).
 
-## Best Practices für Datenpackages {#data-package-best-practices}
+## Best Practices für Daten-Packages {#data-package-best-practices}
 
 In diesem Abschnitt wird beschrieben, wie Sie Datenpackages während der ganzen Projektlaufzeit einheitlich organisieren können.
 

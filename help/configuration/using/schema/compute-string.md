@@ -31,7 +31,7 @@ compute-string:==EMPTY
 
 ## Untergeordnetes Element {#children-1}
 
-Keine
+Kein(e)
 
 ## Beschreibung {#description-1}
 

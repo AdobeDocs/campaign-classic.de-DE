@@ -5,7 +5,8 @@ description: Erfahren Sie, wie Sie Sicherheitszonen konfigurieren
 audience: installation
 content-type: reference
 topic-tags: additional-configurations
-source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
+exl-id: 67dda58f-97d1-4df5-9648-5f8a1453b814
+source-git-commit: 4fd69aa28c2e9325f4738ec571a6632c42ec26b8
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 29%
@@ -241,7 +242,7 @@ Nachdem die Zonen definiert und die Auflistung **[!UICONTROL Sicherheitszone]** 
 
    * **allowUserPassword** ermöglicht es Benutzern, ihre Zugangsdaten als Parameter zu senden (sodass sie via Apache/IIS/Proxy gespeichert werden). Diese Funktion diente in der Vergangenheit zur Vereinfachung der API-Nutzung. In Ihrem Cookbook (oder in der Spezifikation) können Sie nachsehen, ob die Funktion von Drittanwendungen genutzt wird. Ist dies der Fall, weisen Sie den Administrator dieser Drittanwendungen an, die Verwendung unserer API zu ändern und die Funktion nicht mehr zu nutzen.
 
-   * **** allowSQLInjectionermöglicht dem Benutzer die Durchführung von SQL-Injections mithilfe einer alten Syntax. Führen Sie so bald wie möglich die unter [Diese Seite](../../migration/using/general-configurations.md) beschriebenen Korrekturen durch, um dieses Attribut auf &quot;false&quot;setzen zu können. Mit /nl/jsp/ping.jsp?zones=true können Sie die Konfiguration Ihrer Sicherheitszone überprüfen. Auf dieser Seite wird der aktive Status von Sicherheitsmaßnahmen (mit diesen Sicherheits-Flags berechnet) für die aktuelle IP-Adresse angezeigt.
+   * **** allowSQLInjectionermöglicht dem Benutzer die Durchführung von SQL-Injections unter Verwendung einer alten Syntax. Führen Sie so bald wie möglich die unter [Diese Seite](../../migration/using/general-configurations.md) beschriebenen Korrekturen durch, um dieses Attribut auf &quot;false&quot;setzen zu können. Mit /nl/jsp/ping.jsp?zones=true können Sie die Konfiguration Ihrer Sicherheitszone überprüfen. Auf dieser Seite wird der aktive Status von Sicherheitsmaßnahmen (mit diesen Sicherheits-Flags berechnet) für die aktuelle IP-Adresse angezeigt.
 
 * HttpOnly cookie/useSecurityToken: siehe Flag **sessionTokenOnly**.
 

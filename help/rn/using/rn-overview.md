@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -29,7 +29,7 @@ Jedem Build wird ein Status zugeordnet. Nachfolgend finden Sie die Liste der Sta
 
 ![](assets/do-not-localize/green3.png) **Allgemeine Verfügbarkeit** (GA) – In der Produktion validiert und von Adobe empfohlen.
 
-Die **letzten GA-Builds** sind: [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md#gs-11) und [Campaign-Version 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
+Die **aktuellen allgemein verfügbaren Builds** sind: [[!DNL Gold Standard] Version 11](../../rn/using/gold-standard.md#gs-11) und [Campaign-Version 21.1.4](../../rn/using/latest-release.md#release-21-1-4-build-9340).
 
 ![](assets/do-not-localize/limited3.png) **Eingeschränkte Verfügbarkeit** (LA) – Implementierung nur auf Anfrage.
 

@@ -33,7 +33,7 @@ join:==EMPTY
 
 ## Untergeordnetes Element {#children-7}
 
-Keine
+Kein(e)
 
 ## Beschreibung {#description-7}
 

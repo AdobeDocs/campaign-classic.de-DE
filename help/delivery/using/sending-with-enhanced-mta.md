@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 58cc23f4-9ab0-45c7-9aa2-b08487ec7e91
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 100%
 
@@ -172,15 +172,15 @@ Daher sollten Sie bis zum Ende des Gültigkeitszeitraums warten, um den endgült
 
 <!--The fact that the Success percentage will go to 100% very quickly indicates that your instance has been upgraded to the Enhanced MTA.-->
 
-### Email Feedback Service (Beta) {#email-feedback-service}
+### Email Feedback Service (Betaversion) {#email-feedback-service}
 
 Mit der EFS-Funktion (Email Feedback Service) wird der Status jeder E-Mail genau gemeldet, da Feedback direkt vom erweiterten MTA (Message Transfer Agent) erfasst wird.
 
 >[!IMPORTANT]
 >
->Der Email Feedback Service ist derzeit als Betafunktion verfügbar.
+>Der Email Feedback Service ist derzeit als Funktion der Betaversion verfügbar.
 >
->Wenn Sie an diesem Beta-Programm teilnehmen möchten, füllen Sie [dieses Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus, und wir werden uns bei Ihnen melden.
+>Wenn Sie an diesem Betaversion teilnehmen möchten, füllen Sie [dieses Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus, und wir werden uns bei Ihnen melden.
 
 Nachdem der Versand gestartet wurde, ändert sich der **[!UICONTROL Erfolgsprozentsatz]** nicht, wenn die Nachricht erfolgreich von Campaign an den Enhanced MTA weitergeleitet wurde.
 

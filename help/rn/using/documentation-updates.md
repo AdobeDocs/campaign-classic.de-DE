@@ -108,7 +108,7 @@ Der Abschnitt [Zustellbarkeit](../../delivery/using/about-deliverability.md) wur
 
 **Dokumentationsaktualisierungen zu Version 21.1**
 
-Die neue Funktion **Email Feedback Service** (private Beta-Version) ist [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) dokumentiert.
+Die neue Funktion **Email Feedback Service** (private Betaversion) ist [hier](../../delivery/using/sending-with-enhanced-mta.md#email-feedback-service) dokumentiert.
 
 Der Abschnitt **Server-Konfigurationsdatei** wurde mit den Konfigurationsparametern aktualisiert, die für die Verbindung von Campaign mit einem anderen Service über IMS erforderlich sind. [Mehr dazu](../../installation/using/the-server-configuration-file.md#ims)
 

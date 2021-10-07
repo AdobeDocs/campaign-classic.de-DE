@@ -17,7 +17,7 @@ ht-degree: 7%
 
 ![](../../assets/v7-only.svg)
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Adobe Campaign bietet Ihnen zwei vorab verpackte Architekturoptionen zur Dimensionierung Ihrer Implementierung:
 

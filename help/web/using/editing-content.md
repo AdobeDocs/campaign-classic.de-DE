@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: editing-html-content
 exl-id: 968430d6-b1dd-47f8-8b31-39aaa18bc05c
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 100%
 
@@ -137,6 +137,7 @@ Gestaltungsbausteine und Felder können nur in Bausteine vom Typ &quot;Text&quot
 >* Neues Fenster (_blank)
 >* Aktuelles Fenster (_self)
 >* Standard-Navigationseinstellungen
+
 >
 
 

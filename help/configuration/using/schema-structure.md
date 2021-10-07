@@ -151,7 +151,7 @@ Die folgenden Datentypen werden in Schemata unterstützt:
 
    >[!NOTE]
    >
-   >Um ein **uuid** -Feld in anderen Engines als Microsoft SQL Server zu enthalten, muss die Funktion &quot;newuid()&quot; hinzugefügt und mit dem Standardwert ausgefüllt werden.
+   >Um ein **uuid** -Feld in anderen Engines als Microsoft SQL Server zu enthalten, muss die Funktion &quot;newuid()&quot;hinzugefügt und mit dem Standardwert ausgefüllt werden.
 
 Im Folgenden finden Sie unser Schema mit den eingegebenen Typen:
 

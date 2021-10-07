@@ -164,7 +164,7 @@ Die folgenden Ausdrücke werden gesucht (Groß-/Kleinschreibung beachten):
    <td> crmDeploymentType="onpremise"<br /> </td> 
    <td> PU-0007<br /> </td> 
    <td> Fehler<br /> </td> 
-   <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp von Microsoft CRM-Connectoren für Office 365 und On-Premise wurde eingestellt</a>. Informationen zum Wechsel zur Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
+   <td> Diese Art der Bereitstellung wird nicht mehr unterstützt. Der Bereitstellungstyp des CRM-Connectors für Office 365 und On-Premise Microsoft ist jetzt veraltet.</a>. Informationen zum Wechsel zur Web-API-Bereitstellung finden Sie unter <a href="../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft" target="_blank">Webanwendungen</a>.<br /> </td>
   </tr> 
  </tbody> 
 </table>

@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ In diesem Abschnitt werden Funktionen und Leistungsmerkmale aufgelistet, die aus
   </tr>
   <tr>  
    <td>Reporting<br></td>
-   <td><p>Nach Adobe Flash Player EOL sind die Gradungs-Report- und Grafik-Rendering-Engine nicht mehr verfügbar. <a href="../../reporting/using/creating-a-new-report.md">Weitere Informationen</a>   </p>
+   <td><p>Nach dem End-of-Life von Adobe Flash Player sind der Tacho-Bericht und die Rendering-Engine für Grafiken nicht mehr verfügbar. <a href="../../reporting/using/creating-a-new-report.md">Weitere Informationen</a>   </p>
   </tr>
   <tr>  
    <td>Fax-Kanal<br></td>
@@ -242,10 +242,10 @@ Adobe Campaign ist mit den folgenden SMS-Connectoren nicht mehr kompatibel:
 
 ### CRM-Connectoren {#crm-connectors}
 
-Ab Campaign-Version 21.1 sind die folgenden CRM-Connectoren nicht mehr mit Campaign kompatibel:
+Ab Campaign-Version 21.1 werden folgende CRM-Connectoren in Campaign eingestellt.
 
 * Soap-API – On-Premise: 2007, 2015, 2016
 * Soap-API – Online: 2015, 2016
-* Web-API - Microsoft Dynamics CRM 2016
-* Web API - Microsoft Dynamics CRM 2016 Update 1
+* Web API – Microsoft Dynamics CRM 2016
+* Web API – Microsoft Dynamics CRM 2016 Update 1
 * Oracle On Demand-API

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: about-deliveries-and-channels
 exl-id: c2f4d8d0-f0fe-4d1a-92fd-91edaf9729f3
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1804'
 ht-degree: 100%
 
@@ -135,6 +135,7 @@ Um eventuelle Konfigurationsfehler zu erkennen, ist es empfehlenswert, Ihre Send
 >
 >* Die verfügbaren Validierungsmodi werden unter [Validierungsmodus ändern](steps-validating-the-delivery.md#changing-the-approval-mode) detailliert beschrieben.
 >* Die Konfiguration der Testversand-Zielgruppe wird unter [Spezifische Testversand-Zielgruppe definieren](steps-defining-the-target-population.md#defining-a-specific-proof-target) beschrieben.
+
 >
 
 

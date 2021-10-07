@@ -42,7 +42,7 @@ Beachten Sie, dass bei Verwendung des Trackingmodus **permanente Web** oder **an
 </dbindex>
 ```
 
-**** Die Tracking-Modi &quot;Dauerhaft&quot;und &quot; **** AnonymousWeb&quot;enthalten zwei Optionen:  **Erzwungener** Versand und  **letzter Versand**.
+**** Die Tracking-Modi Dauerhaft und  **** AnonymousWeb beinhalten zwei Optionen:  **Erzwungener** Versand und  **letzter Versand**.
 
 Mit der Option **Erzwungener Versand** können Sie die Versandkennung (@jobid) während des Trackings angeben.
 

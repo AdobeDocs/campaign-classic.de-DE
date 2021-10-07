@@ -23,7 +23,7 @@ parameters:==param
 
 ## Attribute {#attributes-13}
 
-Keine
+Kein(e)
 
 ## Übergeordnete Elemente {#parents-13}
 
@@ -43,7 +43,7 @@ Dieses Element ist obligatorisch, selbst für ein einzelnes untergeordnetes `<pa
 
 ## Attributbeschreibung {#attribute-description-13}
 
-Keine
+Kein(e)
 
 ## Beispiele {#examples-10}
 

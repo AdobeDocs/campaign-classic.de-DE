@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: web-forms
 exl-id: 63602bed-ace6-4632-a735-5d268a7d72d0
 source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 100%
 
@@ -80,6 +80,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie den Inhalt und das Layout
 >
 >* Während Sie die Seite erstellen, können Sie sich im Tab **[!UICONTROL Vorschau]** das endgültige Rendering ansehen. Um Änderungen zu übernehmen, muss das Formular zuerst gespeichert werden. Etwaige Fehler werden im Tab **[!UICONTROL Log]** angezeigt.
 >* Damit die Anzeige der Seiten und die Speicherung der Informationen in der richtigen Reihenfolge ablaufen, aktivieren Sie im Webformular den Debug-Modus. Gehen Sie dazu in den Untertab **[!UICONTROL Vorschau]** und aktivieren Sie die Option **[!UICONTROL Debug-Modus aktivieren]**: Alle erfassten Informationen und möglichen Ausführungsfehler werden am unteren Rand einer jeden Seite angezeigt.
+
 >
 
 

@@ -23,7 +23,7 @@ help:==EMPTY
 
 ## Attribute {#attributes-6}
 
-Keine
+Kein(e)
 
 ## Übergeordnete Elemente {#parents-6}
 
@@ -31,7 +31,7 @@ Keine
 
 ## Untergeordnetes Element {#children-6}
 
-Keine
+Kein(e)
 
 ## Beschreibung {#description-6}
 

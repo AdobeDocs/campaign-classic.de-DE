@@ -91,7 +91,7 @@ _Freitag, 11. September 2020_
 
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass die Sendungsvorbereitung aufgrund einer einzigen fehlerhaften Funktion im Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
 * Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Veröffentlichung der Web-Applikation deaktiviert wurden. (NEO-27155)
-* Fehlerkorrektur - Es wurde eine Regression bei der Verwaltung von HTML-Vorlagen behoben, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Tabs sichtbar wurden. (NEO-25909)
+* Fehlerkorrektur - Es wurde eine Regression bei der HTML-Vorlagenverwaltung behoben, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Tabs sichtbar wurden. (NEO-25909)
 * Fehlerkorrektur – Es wurde ein Problem mit dem Datenbankbereinigungs-Workflow behoben, der aufgrund einer nicht verwalteten Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
 * Der Bereinigungs-Workflow bereinigt jetzt abgelaufene Listen in Stapeln von 100 anstelle einzeln.
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die verhinderte, dass Sie den internen Namen eines externen Kontos ändern konnten. (NEO-27323)

@@ -340,7 +340,7 @@ Um stille Benachrichtigungen zu tracken, gehen Sie analog zum folgenden Beispiel
 >
 >Bitte beachten Sie, dass diese Funktion nur für iOS verfügbar ist.
 
-Unter iOS können Sie mit dem Delegationsprotokoll das Ergebnis des Aufrufs **registerDevice** abrufen und feststellen, ob bei der Registrierung ein Fehler aufgetreten ist.
+In iOS können Sie mit dem Delegationsprotokoll das Ergebnis des Aufrufs **registerDevice** abrufen und feststellen, ob bei der Registrierung ein Fehler aufgetreten ist.
 
 Der **registerDeviceStatus**-Prototyp ist:
 

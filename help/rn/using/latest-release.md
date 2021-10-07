@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Aktuelle Version
-description: Aktuelle Version von Campaign Classic       Anmerkungen
+description: Aktuelle Version von Campaign Classic        Anmerkungen
 feature: Overview
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
 workflow-type: tm+mt
 source-wordcount: '2403'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 83%
 
 ![](../../assets/v7-only.svg)
 
-Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen aufgelistet, die mit der **aktuellen Campaign Classic-Version** bereitgestellt werden.
+Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der **aktuellen Campaign Classic-Version** aufgelistet.
 
-Verstehen Sie den Build-Status von Campaign in [dieser Seite](rn-overview.md).
+Grundlegendes zum Build-Status von Campaign finden Sie auf [dieser Seite](rn-overview.md).
 
 ## ![](assets/do-not-localize/green_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
 
@@ -27,33 +27,33 @@ _7. September 2021_
 
 **Sicherheitsverbesserung**
 
-* Fehlerkorrektur - Es wurde ein Sicherheitsproblem behoben, um den Schutz vor Directory Traversal-Angriffen zu verbessern. (NEO-28547)
+* Fehlerkorrektur – Der Schutz vor Directory-Traversal-Angriffen ist jetzt verbessert. (NEO-28547)
 
 **Verbesserungen**
 
-* Nach seinem Ende wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Diagrammtyp **Grafik** wurde entfernt. (NEO-30330) [mehr dazu](../../reporting/using/creating-a-chart.md)
-* Bei der Installation der Clientkonsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
-* Die Tracking-Signaturfunktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt kodiert.
+* Nach seinem End-of-Life wurde Flash aus allen damit verbundenen Campaign-Funktionen und -Komponenten entfernt und durch HTML5 ersetzt. Der Diagrammtyp **Tacho** wurde entfernt. (NEO-30330) [Mehr dazu](../../reporting/using/creating-a-chart.md)
+* Bei der Installation der Client-Konsole unter Windows überprüft das Installationsprogramm jetzt, ob ein übergeordneter Registrierungsknoten vorhanden ist, und erstellt einen, wenn er fehlt. Dadurch werden potenzielle Probleme beim Starten der Konsole verhindert. (NEO-34854)
+* Die Tracking-Signatur-Funktion wurde verbessert, um Fehler zu verhindern, die in Zusammenhang mit der Art und Weise stehen, in der Drittanbieter-Tools (E-Mail-Clients, Internet-Browser usw.) Sonderzeichen verarbeiten. URL-Parameter sind jetzt codiert.
 
 **Sonstige Änderungen**
 
-* Zuvor veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Bereitstellungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
+* Bereits veraltete Microsoft CRM-Connectoren (Office 365- und On-Premise-Implementierungen) wurden aus der Benutzeroberfläche entfernt. [Mehr dazu](../../platform/using/crm-ms-dynamics.md#configure-acc-for-microsoft)
 * Nach der Migration zu Tomcat 8 wurde das IIS-Setup-Skript aktualisiert, um Probleme mit der IIS-Integration zu beheben. (NEO-31019)
-* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der technische Workflow [Rechnungsstellung](../../production/using/monitoring-processes.md#billing-report) auf der Marketing-Instanz ausgeführt werden kann -
-* Die Identifizierung der Datenquelle wurde in den Daten- und Schema-Tabs des Fensters **Population anzeigen** der Workflow-Transitionen verbessert.
+* Es wurde ein Schutzmechanismus hinzugefügt, mit dem nur der [technische Workflow &quot;Abrechnung&quot;](../../production/using/monitoring-processes.md#billing-report) auf der Marketing-Instanz ausgeführt werden kann.
+* In den Daten- und Schema-Tabs des Fensters **Population ansehen** der Workflow-Transitionen wurde die Identifizierung der Datenquelle verbessert.
 * Fehlende Datenbankindizes wurden den folgenden Schemas hinzugefügt, um Probleme bei der Datenbankaktualisierung zu vermeiden: xtk:rights, nms:dlvExclusion, nms:seedMember, nms:trackingUrl
 
 **Korrekturen**
 
-* Fehlerkorrektur - Der Bericht Klicks funktioniert jetzt, wenn Angebote mit dem Versand verknüpft sind. (NEO-26295)
-* Fehlerkorrektur - Bei der Aktivität **Unter-Workflow** tritt jetzt kein Fehler mehr auf, wenn bei ihrer Ausführung keine Ausgabetabelle generiert wurde. (NEO-36242)
-* Verschiedene Probleme beim Exportieren des Berichts **Deskriptive Analyse** in PDF wurden behoben. (NEO-25847)
-* Fehlerkorrektur - Sendungen können jetzt problemlos durchgeführt werden, wenn ein externer E-Mail-Versand verwendet wird. (NEO-37435)
-* Fehlerkorrektur - bei der Verbindung mit Microsoft CRM über die Web-API tritt kein Fehler mehr auf. Die Fehlermeldung wurde entfernt, da die Funktionen nicht betroffen waren.
-* Fehlerkorrektur - Es wurde ein Problem mit der Trackinglog-Deduplizierung behoben, das auftrat, wenn der Mid-Server als Relais zwischen Tracking- und Marketing-Servern festgelegt wurde. (NEO-36285)
-* Korrektur einer Regression, die dazu führte, dass Vault nicht als spezifischer Code-Store verwendet werden konnte.
-* Fehlerkorrektur - Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
-* Fehlerkorrektur - URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
+* Fehlerkorrektur – Der Bericht &quot;Klicks&quot; funktioniert jetzt, wenn Angebote mit dem Versand verknüpft sind. (NEO-26295)
+* Fehlerkorrektur – Die Aktivität **Unter-Workflow** erzeugt bei ihrer Ausführung jetzt zuverlässig eine Ausgabetabelle. (NEO-36242)
+* Das Exportieren des Berichts **Deskriptive Analyse** in PDF funktioniert jetzt problemlos. (NEO-25847)
+* Fehlerkorrektur – Sendungen können jetzt problemlos über einen externen E-Mail-Versand durchgeführt werden. (NEO-37435)
+* Fehlerkorrektur – Die Verbindung mit Microsoft CRM über die Web-API funktioniert jetzt fehlerfrei. Die Fehlermeldung wurde entfernt, da keine Funktionen betroffen waren.
+* Fehlerkorrektur – Wenn der Mid-Server als Relais zwischen Tracking- und Marketing-Servern festgelegt wird, funktioniert die Trackinglog-Deduplizierung jetzt problemlos. (NEO-36285)
+* Fehlerkorrektur – Bei einer Regression kann Vault als spezifischer Code-Store verwendet werden.
+* Fehlerkorrektur – Variablen können jetzt in einer Workflow-Aktivität vom Typ **Anreicherung** verwendet werden, wenn die eingehende Transition aus einer FDA-Datenquelle stammt.
+* Fehlerkorrektur – URLs in E-Mail-Nachrichten werden jetzt nicht mehr beschädigt.
 
 ## ![](assets/do-not-localize/orange_2.png) Version 21.1.3 – Build 9330 {#release-21-1-3-build-9330}
 
@@ -71,7 +71,7 @@ _5. Juni 2021_
 <tbody>
 <tr>
 <td>
-<p>Mit der neuen Workflow-Aktivität <b>Datenquelle ändern</b> können Sie die Datenquelle der Arbeitstabelle eines Workflows ändern. Dies bietet eine höhere Flexibilität bei der Verwaltung von Daten über verschiedene Datenquellen (FDA und lokale Datenbank) hinweg.</p>
+<p>Mit der neuen Workflow-Aktivität <b>Datenquelle ändern</b> können Sie die Datenquelle der Arbeitstabelle eines Workflows ändern. Dies bietet eine höhere Flexibilität bei der Verwaltung von Daten in verschiedenen Datenquellen (FDA und lokale Datenbanken).</p>
 <p>In Adobe Campaign-Workflows werden Daten mithilfe von Arbeits- (oder temporären) Tabellen verwaltet. Während der Workflow-Ausführung geben Arbeitstabellen Daten für Workflow-Aktivitäten frei. Standardmäßig werden die Arbeitstabellen auf derselben Datenbank erstellt wie die Quelle der Daten, die abgefragt werden.</p>
 <p>Weitere Informationen finden Sie im <a href="../../workflow/using/change-data-source.md">entsprechenden Handbuch</a>.</p>
 </td>
@@ -247,7 +247,7 @@ Weitere Informationen finden Sie auf der Seite [Eingestellte und entfernte Funkt
 * EFS löst das Problem der Verzögerungen beim Reporting zu synchronen Softbounces.
 
 Weitere Informationen finden Sie im [entsprechenden Handbuch](../../delivery/using/sending-with-enhanced-mta.md#efs).
-Wenn Sie an dieser privaten Beta teilnehmen möchten, füllen Sie dieses [Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus. Wir werden uns bei Ihnen melden.
+Wenn Sie an dieser privaten Betaversion teilnehmen möchten, füllen Sie dieses [Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4Rol2vQGupxItW9_BerXV6VUQTJPN1Q5WUI4OFNTWkYzQjg3WllUSDAxWi4u) aus. Wir werden uns bei Ihnen melden.
 
 **Sonstige Änderungen**
 

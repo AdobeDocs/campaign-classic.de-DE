@@ -17,7 +17,7 @@ ht-degree: 15%
 
 ![](../../assets/v7-only.svg)
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Wenn das Programm auf die Daten einer existierenden Tabelle, einer SQL-Ansicht oder Daten aus einer Remote-Datenbank zugreifen muss, erstellen Sie das Schema in Adobe Campaign mit den folgenden Daten:
 

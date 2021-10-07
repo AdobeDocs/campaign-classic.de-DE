@@ -207,7 +207,7 @@ Die Liste der Systemindikatoren ermöglicht die Anzeige von Informationen über 
 
    **[!UICONTROL Warnung]** : Dieser Indikator wird angezeigt, wenn die Anzahl der Zombie-Prozesse nahe 2 liegt.
 
-   **** Diese Anzeige wird angezeigt, wenn die Anzahl der Zombie-Prozesse 2 erreicht.
+   **** Warnhinweis wird angezeigt, wenn die Anzahl der Zombie-Prozesse 2 erreicht.
 
 #### Benutzerdefinierte Indikatoren {#customized-indicators}
 

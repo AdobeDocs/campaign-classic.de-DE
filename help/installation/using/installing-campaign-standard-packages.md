@@ -69,7 +69,7 @@ In der folgenden Tabelle sind alle in Campaign integrierten Packages aufgeführt
    <td> Marketing</td>
   </tr> 
   <tr> 
-   <td> Marketing-Ressourcen (MRM)<br /> </td> 
+   <td> Marketing-Ressourcen (MRM) <br /> </td> 
    <td> Steuerung kollaborativer Marketing-Aktionen durch Verwaltung und Verfolgung von Aufgaben, Budgets und Marketing-Ressourcen. <a href="../../mrm/using/about-marketing-resource-management.md">Weitere Informationen</a> <br /> </td> 
    <td> Marketing</td> 
   </tr> 

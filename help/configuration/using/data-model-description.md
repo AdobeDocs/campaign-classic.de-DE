@@ -251,7 +251,7 @@ This set of tables is linked to the **Web applications** functionality, which al
 
 ## NMAC-Modul {#nmac-module}
 
-Dieser Tabellensatz ist mit dem **Mobile-App-Kanal** verknüpft, der den Versand personalisierter Benachrichtigungen über Apps an iOS- und Android-Geräte ermöglicht. Weiterführende Informationen dazu finden Sie unter [Über den Mobile-App-Kanal](../../delivery/using/about-mobile-app-channel.md).
+Dieser Tabellensatz ist mit dem **Mobile-App-Kanal** verknüpft, mit dem personalisierte Benachrichtigungen über Apps an iOS- und Android-Geräte gesendet werden können. Weiterführende Informationen dazu finden Sie unter [Über den Mobile-App-Kanal](../../delivery/using/about-mobile-app-channel.md).
 
 * **NmsMobileApp**: Diese Tabelle entspricht dem  **nms:** mobileAppschema. Sie enthält die in Adobe Campaign definierten Mobile Apps.
 * **NmsAppSubscription**: Diese Tabelle entspricht dem  **nms:** appSubscriptionschema. Es enthält die Abonnenteninformationen zu einer oder mehreren Anwendungen.

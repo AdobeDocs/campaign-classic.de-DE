@@ -3,7 +3,7 @@ product: campaign
 title: Versionshinweise zu Campaign 19.1
 description: Versionshinweise zu Campaign 19.1
 exl-id: 8540b5f0-194b-45f3-b497-5d30efb318b8
-source-git-commit: d5585f0130611db399811536e80e76b61c998b9c
+source-git-commit: 86eb9814fae42992b5ca0ce233f88ad90086007d
 workflow-type: tm+mt
 source-wordcount: '3319'
 ht-degree: 98%
@@ -19,7 +19,7 @@ ht-degree: 98%
 _Donnerstag, 15. April 2021_
 
 * Fehlerkorrektur – Es wurde eine Regression in der Client-Konsole korrigiert, die dazu führte, dass im IMS-Verbindungsfenster fortwährend Fehlermeldungen ausgegeben wurden. (NEO-34821)
-* Fehlerkorrektur - Es wurde eine Regression behoben, die den Export von Workflow-Daten in eine FDA-Datenbank (Teradata, Snowflake) blockieren konnte.
+* Fehlerkorrektur – Eine Regression blockiert nicht mehr den Export von Workflow-Daten in eine FDA-Datenbank (Teradata, Snowflake).
 
 **Es ist nur eine Konsolenaktualisierung obligatorisch. Eine Serveraktualisierung ist nicht erforderlich.**
 
@@ -43,7 +43,7 @@ _Mittwoch, 16. Dezember 2020_
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können. [Weitere Informationen](../../technotes/using/ims-updates.md)
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **18. August 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 30. November 2021 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum 30. November 2021 zu erweitern. Sie müssen [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) für Adobe angeben.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **September 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 23. Februar 2022 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu erweitern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
 
 
 

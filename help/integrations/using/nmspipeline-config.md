@@ -68,7 +68,7 @@ In diesem zweiten Beispiel werden alle Auslöser erfasst.
 >
 >Der [!DNL Trigger]-UID-Wert für einen bestimmten Trigger-Namen in der Analytics-Oberfläche wird als Teil der URL-Abfragezeichenfolgen-Parameter in der Triggers-Oberfläche angezeigt. Die UID &quot;triggerType&quot; wird im Pipeline-Datenstrom weitergeleitet. Außerdem kann Code in die Datei &quot;pipeline.JS&quot; geschrieben werden, um die Auslöser-UID einer anwenderfreundlichen Bezeichnung zuzuordnen, die in einer Spalte namens &quot;Auslösername&quot; im Schema &quot;pipelineEvents&quot; gespeichert werden kann.
 
-## Der Parameter &quot;consumer&quot;  {#consumer-parameter}
+## Der Parameter „consumer“  {#consumer-parameter}
 
 Die Pipeline arbeitet mit einem &quot;Lieferanten- und Verbrauchermodell&quot;. In einer Warteschlange können viele Verbraucher sein. Nachrichten werden nur für einen einzelnen Verbraucher verwendet. Jeder Verbraucher erhält seine eigene &quot;Kopie&quot; der Nachrichten.
 

@@ -620,7 +620,7 @@ Alle Standardberichte verwenden derzeit die Rendering-Engine v6.x. Wenn Sie dies
 
 ![](assets/migration_reports_1.png)
 -->
-Wenn Sie von den neuen Berichtfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Überprüfen Sie in diesem Fall alle Skripte und ändern Sie sie bei Bedarf. Wenn Sie ein spezifisches Skript für Open Office hinzugefügt haben, funktioniert dies in Bezug auf den PDF-Export nicht mehr mit der neuen PDF-Export-Engine (PhantomJS).
+Wenn Sie von den neuen Berichtfunktionen profitieren möchten, müssen Sie die Berichte erneut veröffentlichen. Überprüfen Sie in diesem Fall alle Skripte und ändern Sie sie bei Bedarf. Was den PDF-Export betrifft, so funktioniert dies nicht mehr mit der neuen PDF-Export-Engine (PhantomJS), wenn Sie ein spezifisches Skript für Open Office hinzugefügt haben.
 
 ## Web-Anwendungen {#web-applications}
 

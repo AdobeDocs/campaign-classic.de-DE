@@ -1,7 +1,7 @@
 ---
 product: campaign
 title: Datenschutz bei E-Mails in der Apple-E-Mail-App
-description: Erfahren Sie, wie sich die Funktion zum Schutz der Privatsphäre bei E-Mails von Apple auf Ihre Kampagnen auswirken kann.
+description: Erfahren Sie, wie sich die Apple-Funktion zum Schutz der Privatsphäre bei E-Mails auf Ihre Kampagnen auswirken kann.
 exl-id: e044b35a-b49f-408a-900d-2afe8ff10212
 source-git-commit: 1a9e0f8bf374e10af938d15dcebe943819ae327b
 workflow-type: tm+mt
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## Was hat sich geändert?
 
-2021 führte Apple neue Datenschutzfunktionen für ihre native Mail-App ein. Diese App enthält jetzt die Funktion zum Datenschutz bei E-Mails von Apple. Im Grunde können Absender keine Tracking-Pixel mehr verwenden, um Informationen über Empfänger zu erfassen, die sich dafür entschieden haben, die Apple-Funktion zum Datenschutz für E-Mails zu aktivieren. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}.
+2021 führte Apple neue Datenschutzfunktionen für seine native Mail-App ein. Diese App enthält jetzt die Apple-Funktion zum Datenschutz bei E-Mails. Im Grunde können Absender keine Tracking-Pixel mehr verwenden, um Informationen über Empfänger zu erfassen, die sich für die Aktivierung der Apple-Datenschutzfunktion für E-Mails entschieden haben. [Mehr dazu](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}.
 
 ## Wie wirkt sich dies auf meine Kampagnen aus?
 
@@ -24,7 +24,7 @@ Adobe Campaign bietet die Möglichkeit, Tracking-Pixel zur Verfolgung von E-Mail
 
 ## Welche Maßnahmen sollte ich ergreifen?
 
-Die neue Funktion von Apple ist die Gestalt der Dinge, die in der Branche im Hinblick auf den Schutz der E-Mail-Privatsphäre zu erwarten sind. Es wird dringend empfohlen, die Empfehlungen der Adobe zu befolgen.
+Die neue Funktion von Apple ist die Gestalt der Dinge, die in der Branche hinsichtlich des Datenschutzes von E-Mails zu erwarten sind. Es wird dringend empfohlen, die Empfehlungen der Adobe zu befolgen.
 
 ### Auswirkungen auf Ihre Kampagnen-Trigger bewerten
 
@@ -32,7 +32,7 @@ Prüfen Sie, wie sich diese Änderungen auf Ihre aktuellen Kampagnen-Trigger aus
 
 ### Daten beibehalten
 
-Speichern Sie Ihre Daten und konsolidieren Sie Ihr aktuelles Wissen auf Geräten. Sie können wichtige Leistungsindikatoren (KPIs) auf dem Benutzeragenten basieren. Sie können beispielsweise KPIs für Profile von Personen erstellen, die iOS und die Mail-App von Apple verwenden. Lesen Sie die [Tipps und Tricks](#preserve-tracking-data).
+Speichern Sie Ihre Daten und konsolidieren Sie Ihr aktuelles Wissen auf Geräten. Sie können wichtige Leistungsindikatoren (KPIs) auf dem Benutzeragenten basieren. Sie können beispielsweise KPIs für Profile von Personen erstellen, die die iOS- und die Apple-E-Mail-App verwenden. Lesen Sie die [Tipps und Tricks](#preserve-tracking-data).
 
 ### Archivieren Sie Ihre Trackinglogs über den Aufbewahrungszeitraum hinaus.
 
@@ -55,7 +55,7 @@ Es wird empfohlen, dass Sie die derzeit verfügbaren Daten untersuchen und die K
 
 ## Tipps und Tricks
 
-### Messen Sie den Gesamtbedarf an iOS-Geräten. {#measure-ios-footprint}
+### Messen des gesamten iOS-Fußabdrucks {#measure-ios-footprint}
 
 Um Einblicke aus Adobe Campaign-Daten zu gewinnen, können Sie vordefinierte Berichte verwenden:
 
@@ -328,7 +328,7 @@ Es wird dringend empfohlen, diese Daten aus mehreren Gründen zu bewahren:
 
    Überprüfen Sie die Einrichtung Ihrer Instanz. [Mehr dazu](../../platform/using/privacy-management.md#data-retention)
 
-* Neben den letzten Änderungen bei Apple können Sie Tracking-Daten verwenden, um einen immensen Wert hinzuzufügen und so die Interaktion Ihrer Zielgruppe zu fördern.
+* Zusätzlich zu den letzten Änderungen in Apple können Sie Tracking-Daten verwenden, um einen immensen Wert hinzuzufügen und so die Interaktion Ihrer Zielgruppe zu fördern.
 * Apple kann weitere Änderungen an ihrer nativen Mail-App und ihrer Funktion zum Schutz der Privatsphäre bei E-Mails vornehmen.
 
 Aus all diesen Gründen empfehlen wir dringend, diese Daten so bald wie möglich zu exportieren. Andernfalls können Ihre Tracking-Daten für einen Teil Ihrer Zielgruppe negativ beeinflusst werden.
@@ -399,7 +399,7 @@ Sie können eine inkrementelle Abfrage verwenden, um nur die Datensätze zu extr
 
 ##### Erweiterte Implementierung: Aufschlüsselung nach iOS-Gerät
 
-Sie können Workflows verwenden, um zu bestimmen, ob ein Empfänger die E-Mail-App von Apple verwendet. Sie können Trackinglogs nach Gerät aufteilen. Sie können beispielsweise Abfragefilter verwenden, um Datensätze nach iOS-Geräten aufzuschlüsseln:
+Sie können Workflows verwenden, um zu bestimmen, ob ein Empfänger die Apple-Mail-App verwendet. Sie können Trackinglogs nach Gerät aufteilen. Sie können beispielsweise Abfragefilter verwenden, um Datensätze nach iOS-Gerät aufzuschlüsseln:
 
 | Anwendung | Betriebssystem oder Gerät  | Abfragefilter |
 | --- | --- | --- |
@@ -420,7 +420,7 @@ Sie können diese Regeln für verschiedene Zwecke verwenden:
 * Erstellen von Unterdrückungslisten
 * Reporting
 
-Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Geräten aufschlüsseln können:
+Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Gerät aufschlüsseln können:
 
 * Der erste Beispiel-Workflow umfasst die folgenden Aktivitäten:
 
@@ -453,4 +453,4 @@ Diese Beispiele zeigen, wie Sie mithilfe von Workflows Datensätze nach iOS-Ger�
 
 ## Nützliche Links
 
-[Apple Mail Privacy Protection - FAQ](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}
+[Häufig gestellte Fragen zum Apple Mail-Datenschutz](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html){target=&quot;_blank&quot;}

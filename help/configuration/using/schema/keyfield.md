@@ -32,7 +32,7 @@ keyfield:==EMPTY
 
 ## Untergeordnetes Element {#children-9}
 
-Keine
+Kein(e)
 
 ## Beschreibung {#description-9}
 

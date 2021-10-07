@@ -5,8 +5,8 @@ description: Campaign Tomcat-Konfiguration
 audience: installation
 content-type: reference
 topic-tags: initial-configuration
-exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf,b4a422b4-4b8b-4883-8d74-0dccda4a5ef3
-source-git-commit: 20509f44c5b8e0827a09f44dffdf2ec9d11652a1
+exl-id: a2126458-2ae5-47c6-ad13-925f0e067ecf
+source-git-commit: ed9e76495efb0cb49e248a7d38417642c5094a11
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%

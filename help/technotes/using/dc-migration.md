@@ -19,7 +19,7 @@ ht-degree: 70%
 
 ## Kontext
 
-Als geschätzter Adobe Campaign Classic-Kunde sind wir bestrebt, Ihnen das beste Erlebnis und die beste Wertschätzung zu bieten. Im Laufe der Jahre hat sich das Hosting unserer Kunden in der Cloud als überaus effizient und zuverlässig erwiesen.  Im Rahmen unserer [Gold Standard Initiative](../../rn/using/gold-standard.md) verschieben wir alle unsere Kunden zu Adobe Managed Services (Public Cloud on AWS), um bessere und zuverlässigere Dienste bereitzustellen.
+Als geschätzter Adobe Campaign Classic-Kunde sind wir bestrebt, Ihnen das beste Erlebnis und die beste Wertschätzung zu bieten. Im Laufe der Jahre hat sich das Hosting unserer Kunden in der Cloud als überaus effizient und zuverlässig erwiesen.  Im Rahmen unserer [Gold Standard Initiative](../../rn/using/gold-standard.md) verschieben wir alle unsere Kunden zu Adobe Managed Services (Public Cloud on AWS), um bessere und zuverlässigere Services bereitzustellen.
 
 Das Programm verfolgt drei Hauptziele:
 
@@ -86,7 +86,7 @@ Eine Migration kann durch [Öffnen eines neuen Support-Tickets für die Kundenun
 
 Diese Migration in die Cloud ist **der erste Schritt zur [Gold Standard-Zertifizierung](../../rn/using/gs-overview.md)** Ihrer Adobe Campaign-Instanzen. Diese Migration ist obligatorisch, wenn Sie in einem anderen Rechenzentrum als der Public Cloud (AWS) gehostet werden.
 
-Die Adobe Managed Services-Cloud wird auf Amazon Web Services (AWS) gehostet, einer modernen, sicheren und optimierten Umgebung. [Erfahren Sie mehr über AWS](https://aws.amazon.com/application-hosting/benefits/).
+Die Adobe Managed Services-Cloud wird auf Amazon Web Services (AWS) gehostet, einer modernen, sicheren und optimierten Umgebung. [Weitere Informationen zu AWS](https://aws.amazon.com/application-hosting/benefits/).
 
 Adobe plant die Stilllegung des alten Rechenzentrums. Die dort ausgeführten Adobe Campaign-Instanzen müssen in das neue Referenz-Rechenzentrum AWS übertragen werden.
 

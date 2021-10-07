@@ -23,7 +23,7 @@ sysFilter:==condition
 
 ## Attribute {#attributes-15}
 
-Keine
+Kein(e)
 
 ## Übergeordnete Elemente {#parents-15}
 

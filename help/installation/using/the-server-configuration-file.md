@@ -3032,7 +3032,7 @@ Der Knoten **web > jsp > classpath** enthält die Liste aller Klassenpfade, die 
 
 ### Relais {#relay-2}
 
-Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > relay** . Dies ist die Konfiguration des Relais für HTTP-Anfragen zwischen zwei Bereichen.
+Im Folgenden finden Sie die verschiedenen Parameter des Knotens **web > relay** . Dies ist die Konfiguration des Relais für HTTP-Anfragen zwischen zwei Zonen.
 
 Weitere Informationen finden Sie in diesem Abschnitt [Abschnitt](../../installation/using/deploying-an-instance.md#synchronizing-public-resources).
 

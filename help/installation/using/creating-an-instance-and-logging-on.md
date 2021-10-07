@@ -67,7 +67,7 @@ Gehen Sie wie folgt vor, um eine neue Instanz zu erstellen:
 
    Der Server muss mit diesem Namen identifiziert werden, insbesondere zum Hochladen von Bildern in E-Mails.
 
-   Darüber hinaus muss der Server über diesen Namen und nach Möglichkeit über eine Loopback-Adresse - 127.0.0.1 - eine Verbindung zu sich selbst herstellen können, insbesondere um den Export von Berichten im PDF-Format zu ermöglichen.
+   Darüber hinaus muss der Server über diesen Namen und nach Möglichkeit über eine Loopback-Adresse - 127.0.0.1 - eine Verbindung zu sich selbst herstellen können, um insbesondere den Export von Berichten im PDF-Format zu ermöglichen.
 
 1. Wählen Sie in der Dropdownliste **[!UICONTROL Sprache]** die **Instanzsprache** aus: Englisch (US), Englisch (UK), Französisch oder Japanisch.
 

@@ -533,7 +533,7 @@ Definition der Methoden &quot;Write&quot;und &quot;WriteCollection&quot;im Schem
 >
 >Dies ist eine &quot;statische&quot;Methode. Die Eingabeparameter sind in einem XML-Dokument im Format des zu aktualisierenden Schemas enthalten.
 
-### Übersicht {#overview}
+### Überblick {#overview}
 
 Die Abstimmung der Daten basiert auf der Definition der im zugehörigen Schema eingegebenen Schlüssel. Beim Schreiben wird basierend auf den im Eingabedokument eingegebenen Daten nach dem ersten geeigneten Schlüssel gesucht. Die Entität wird je nach ihrer Existenz in der Datenbank hinzugefügt oder aktualisiert.
 

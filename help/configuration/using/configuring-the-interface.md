@@ -70,7 +70,7 @@ Die Erstellung eines neuen Formulars ermöglicht die Anzeige und Bearbeitung der
 
    >[!NOTE]
    >
-   >Weiterführende Informationen zu **navtree**-Dateien finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
+   >Weitere Informationen zu **navtree**-Dateien finden Sie auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md#about-navigation-hierarchy).
 
    Im aktuellen Beispiel muss die Datei **navtree** auf dem Schema **cus:einzeln** basieren und daher das folgende Format aufweisen:
 

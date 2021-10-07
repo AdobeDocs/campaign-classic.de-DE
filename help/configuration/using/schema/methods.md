@@ -23,7 +23,7 @@ methods:==method
 
 ## Attribute {#attributes-11}
 
-Keine
+Kein(e)
 
 ## Übergeordnete Elemente {#parents-11}
 

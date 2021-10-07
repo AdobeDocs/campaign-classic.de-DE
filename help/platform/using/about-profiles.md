@@ -105,7 +105,7 @@ Die Anzahl der aktiven Profile ist nur für **Marketing-Instanzen** verfügbar. 
 >
 >Sie können auch die Anzahl der aktiven Profile in Ihrer Instanz direkt über das Control Panel von Campaign überwachen. Weitere Informationen hierzu finden Sie in der [Dokumentation zu Control Panel](https://experienceleague.adobe.com/docs/control-panel/using/performance-monitoring/active-profiles-monitoring.html?lang=de).
 
-## Tutorial {#create-profiles-video}
+## Anleitungsvideo {#create-profiles-video}
 
 Erfahren Sie, wie Sie auf Profildaten zugreifen, Profile sortieren und filtern und Profile manuell erstellen und verwalten können.
 

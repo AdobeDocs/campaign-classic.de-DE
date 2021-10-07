@@ -76,7 +76,7 @@ _Montag, 2. Dezember 2019_
     <p> Zusätzlich zu den bereits verfügbaren Datenschutzfunktionen (einschließlich Zustimmungsverwaltung, Einstellungen zur Datenspeicherung und Benutzerrollen) hilft Adobe Campaign Ihnen bei der Vorbereitung auf CCPA:</p>
     <ul>
       <li>Recht auf Zugriff und Recht auf Löschung: Dazu nutzen wir die Funktionen, die wir analog dazu für die DSGVO ergänzt haben – <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#righttoaccess">mehr dazu</a></li>
-      <li>Sie können nachverfolgen, ob ein Verbraucher sich gegen den Verkauf von persönlichen Informationen entschieden hat. Dazu müssen Sie die Tabelle „Profile“ erweitern und ein Feld <strong>Opt-out für CCPA</strong> hinzufügen – <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ccpa">mehr dazu</a></li></td> 
+      <li>Sie können nachverfolgen, ob ein Verbraucher sich gegen den Verkauf von personenbezogenen Informationen entschieden hat. Dazu müssen Sie die Tabelle „Profile“ erweitern und ein Feld <strong>Opt-out für CCPA</strong> hinzufügen – <a href="https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ccpa">mehr dazu</a></li></td> 
   </tr> 
  </tbody> 
 </table>

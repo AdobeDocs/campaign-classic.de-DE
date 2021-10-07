@@ -849,8 +849,8 @@ ht-degree: 97%
       + [Aktualisierungen der Campaign-Konfiguration](technotes/using/acc-config-updates.md)
       + [IMS-Aktualisierungen](technotes/using/ims-updates.md)
    + E-Mails und Push-Benachrichtigungen{#technotes-email}
-      + [Datenschutz bei E-Mails auf Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Häufig gestellte Fragen zum Datenschutz bei Apple Mail](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Datenschutz bei E-Mails in Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Häufig gestellte Fragen zum Apple Mail-Datenschutz](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
       + [Aktualisieren falscher Hardbounces](delivery/using/update-bounce-qualification.md)
       + [Aktualisierung des iOS-Zertifikats](technotes/using/ios-certificate-update.md)
       + [Aktualisierung von &quot;Getrackte URLs&quot;](technotes/using/tracked-urls.md)

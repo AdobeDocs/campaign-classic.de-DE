@@ -59,7 +59,7 @@ Je nach ausgewählter Datenbank-Engine können die Informationen zur Serverident
 
 * Geben Sie für eine **Oracle**-Engine den **TNS-Namen** ein, der für den Anwendungsserver definiert ist.
 * Bei der Engine **PostgreSQL** oder **DB2** müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver definiert ist, um auf den Datenbankserver zuzugreifen.
-* Für eine **Microsoft SQL Server**-Engine müssen Sie Folgendes definieren: den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist: **DNS** oder **DNS`\<instance>`** (Instanzmodus),
+* Für die Engine **Microsoft SQL Server** müssen Sie Folgendes definieren: den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist: **DNS** oder **DNS`\<instance>`** (Instanzmodus),
 
    >[!CAUTION]
    >
@@ -75,8 +75,8 @@ Definieren Sie im Fenster **[!UICONTROL Server access]** den Datenbankserver-Zug
 
 Geben Sie dazu den Namen und das Kennwort eines **Administrationssystem-Kontos** ein, das Zugriff auf die Datenbanken hat, d. h.:
 
-* **** -System für eine Oracle-Datenbank,
-* **** für eine Microsoft SQL Server-Datenbank verwenden,
+* **** System für eine Oracle-Datenbank,
+* **** eine Microsoft SQL Server-Datenbank verwenden,
 * **** Postgression für eine PostgreSQL-Datenbank,
 * **db2inst1**  für eine DB2-Datenbank.
 
@@ -149,7 +149,7 @@ Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfigurat
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei **`/conf/config-<instance>.xml`** gespeichert, die sich im Installationsverzeichnis von Adobe Campaign befindet.
 
-Beispiel einer Microsoft SQL Server-Konfiguration für die Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
+Beispiel einer Microsoft SQL Server-Konfiguration auf Basis der Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
@@ -183,7 +183,7 @@ Je nach ausgewählter Datenbank-Engine können die Informationen zur Serverident
 
 * Geben Sie für eine **Oracle**-Engine den **TNS-Namen** ein, der für den Anwendungsserver definiert ist.
 * Bei der Engine **PostgreSQL** oder **DB2** müssen Sie den DNS-Namen (oder die IP-Adresse) angeben, der auf dem Anwendungsserver definiert ist, um auf den Datenbankserver zuzugreifen.
-* Für eine **Microsoft SQL Server**-Engine müssen Sie Folgendes definieren:
+* Für die Engine **Microsoft SQL Server** müssen Sie Folgendes definieren:
 
    1. den DNS-Namen (oder die IP-Adresse), der auf dem Anwendungsserver für den Zugriff auf den Datenbankserver definiert ist,
    1. die Sicherheitsmethode für den Zugriff auf Microsoft SQL Server: **[!UICONTROL SQL Server-Authentifizierung]** oder **[!UICONTROL Windows NT-Authentifizierung]**.
@@ -240,7 +240,7 @@ Sie müssen jetzt den Softwareverteilungs-Assistenten starten, um die Konfigurat
 
 Die Verbindungseinstellungen für die mit der Instanz verknüpfte Datenbank werden in der Datei **`/conf/config-<instance>.xml`** gespeichert, die sich im Installationsverzeichnis von Adobe Campaign befindet.
 
-Beispiel einer Microsoft SQL Server-Konfiguration für die Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
+Beispiel einer Microsoft SQL Server-Konfiguration auf Basis der Datenbank base61, die mit dem &#39;campaign&#39;-Konto und seinem verschlüsselten Kennwort verknüpft ist:
 
 ```
 <dbcnx encrypted="1" login="campaign:myBase" password="myPassword" provider="DB" server="dbServer"/>
