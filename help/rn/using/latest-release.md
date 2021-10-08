@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 12b191ffe3d407f1a69393278a7678a14e53d23e
+source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
 workflow-type: tm+mt
-source-wordcount: '2403'
-ht-degree: 100%
+source-wordcount: '2457'
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,19 @@ Auf dieser Seite werden neue Funktionen, Verbesserungen und Fehlerbehebungen der
 
 Grundlegendes zum Build-Status von Campaign finden Sie auf [dieser Seite](rn-overview.md).
 
-## ![](assets/do-not-localize/green_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
+
+## ![](assets/do-not-localize/green_2.png) Version 21.1.4 – Build 9343 {#release-21-1-4-build-9343}
+
+_8. Oktober 2021_
+
+**Korrekturen**
+
+* Fehlerkorrektur - Angebote können jetzt gespeichert werden, wenn das Modul **Interaction** mit der Option [Power Booster](../../installation/using/power-booster-and-power-cluster.md) verwendet wird. (NEO-39263)
+
+* Fehlerkorrektur - Jetzt tritt kein Fehler mehr auf, wenn mehr als eine IP-Affinität auf der Mid-Sourcing-Instanz verwendet wird und auf dem Mid-Sourcing-Server xxx nicht gefunden wird. (NEO-37514)
+
+
+## ![](assets/do-not-localize/orange_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
 
 _7. September 2021_
 

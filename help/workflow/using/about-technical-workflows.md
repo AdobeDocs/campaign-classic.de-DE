@@ -6,10 +6,10 @@ audience: workflow
 content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
-source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
+source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
 workflow-type: tm+mt
 source-wordcount: '1724'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 ## Über technische Workflows {#overview}
 
-Die in diesem Abschnitt beschriebenen Workflows werden mit den verschiedenen in Adobe Campaign integrierten Packages installiert. Diese Packages sowie zugehörige technische Workflows hängen von Ihrer Lizenzvereinbarung ab. Integrierte Packages werden in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md) beschrieben.
+Die in diesem Abschnitt beschriebenen Workflows werden mit den verschiedenen in Adobe Campaign integrierten Packages installiert. Diese Pakete und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung ab. Integrierte Packages werden in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md) beschrieben.
 
 Standardmäßig sind technische Workflows in einem Unterordner des folgenden Knotens verfügbar: **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Technische Workflows]**.
 
