@@ -6,10 +6,10 @@ feature: Overview
 role: User
 level: Beginner
 exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
-source-git-commit: 31ff1863623c088d28d9e4d15337bbc7a9843171
+source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
 workflow-type: tm+mt
-source-wordcount: '2457'
-ht-degree: 98%
+source-wordcount: '2459'
+ht-degree: 97%
 
 ---
 
@@ -28,9 +28,9 @@ _8. Oktober 2021_
 
 **Korrekturen**
 
-* Fehlerkorrektur - Angebote können jetzt gespeichert werden, wenn das Modul **Interaction** mit der Option [Power Booster](../../installation/using/power-booster-and-power-cluster.md) verwendet wird. (NEO-39263)
+* Fehlerkorrektur - Die ordnungsgemäße Angebotsverwaltung bei Verwendung des Moduls **Interaction** mit der Option [Power Booster](../../installation/using/power-booster-and-power-cluster.md) ist jetzt möglich. (NEO-39263)
 
-* Fehlerkorrektur - Jetzt tritt kein Fehler mehr auf, wenn mehr als eine IP-Affinität auf der Mid-Sourcing-Instanz verwendet wird und auf dem Mid-Sourcing-Server xxx nicht gefunden wird. (NEO-37514)
+* Fehlerkorrektur - Beim Versand von mehr als einer IP-Affinität in einer Mid-Sourcing-Instanz tritt jetzt kein Fehler mehr auf, wenn auf dem Mid-Server xxx die IP-Affinität nicht gefunden wird. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
