@@ -9,7 +9,7 @@ type: Documentation
 source-git-commit: 23c5892189c59008f82ec453c97d24efe82fd2ae
 workflow-type: tm+mt
 source-wordcount: '2566'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,9 +109,9 @@ ht-degree: 97%
          + [Erste Schritte mit CRM-Connectoren](platform/using/crm-connectors.md)
          + [Verbinden mit Microsoft Dynamics 365](platform/using/crm-ms-dynamics.md)
          + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
-         + [Daten mit dem CRM synchronisieren](platform/using/crm-data-sync.md)
+         + [Synchronisieren von Daten mit dem CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Adobe Analytics Connector-Bereitstellung](platform/using/adobe-analytics-provisioning.md)
+         + [Bereitstellung des Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics Connector – Integration](platform/using/adobe-analytics-connector.md)
          + [Migrieren zum Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector-legacy.md)
@@ -843,17 +843,17 @@ ht-degree: 97%
       + [Spezifische Konfigurationen in v6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Rollback-Verfahren](migration/using/about-rollback.md)
 + Technotes {#technotes}
-   + [Empfehlungen zur Hardwaredimensionierung](technotes/using/hardware-sizing.md)
-   + Upgrades und Migrationen{#technote-migration}
+   + [Empfehlungen zur Hardware-Bemessung](technotes/using/hardware-sizing.md)
+   + Aktualisierungen und Migrationen{#technote-migration}
       + [Technotes](technotes/using/technote.md)
-      + [Aktualisierungen der Campaign-Konfiguration](technotes/using/acc-config-updates.md)
+      + [Konfigurations-Aktualisierungen in Campaign](technotes/using/acc-config-updates.md)
       + [IMS-Aktualisierungen](technotes/using/ims-updates.md)
    + E-Mails und Push-Benachrichtigungen{#technotes-email}
-      + [Datenschutz bei E-Mails in Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
-      + [Häufig gestellte Fragen zum Apple Mail-Datenschutz](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html)
+      + [Datenschutz für E-Mails in Apple iOS](technotes/using/apple-mail-app-privacy-protection.md)
+      + [Häufig gestellte Fragen zum Apple Mail-Datenschutz](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/technotes/apple-mail-privacy-faq.html?lang=de)
       + [Aktualisieren falscher Hardbounces](delivery/using/update-bounce-qualification.md)
       + [Aktualisierung des iOS-Zertifikats](technotes/using/ios-certificate-update.md)
-      + [Aktualisierung von &quot;Getrackte URLs&quot;](technotes/using/tracked-urls.md)
+      + [Aktualisierung von getrackten URLs](technotes/using/tracked-urls.md)
    + Migration zu Adobe Managed Services{#dc-migration}
-      + [Migration zu Public Cloud](technotes/using/dc-migration.md)
+      + [Migration zur Public Cloud](technotes/using/dc-migration.md)
       + [Häufig gestellte Fragen](technotes/using/dc-migration-faq.md)

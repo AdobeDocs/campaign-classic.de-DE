@@ -9,7 +9,7 @@ exl-id: b8c1f287-06f4-4c34-8cca-b0c7676abbc2
 source-git-commit: 235e8abcaed2659d745ebfeca24dc2f0278a6e5a
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -142,7 +142,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>9.6.x</p>
 <p>9.5.x</p>
 <p>9.4.x</p>
-<p><strong>Hinweis:</strong> Sie können auch Amazon RDS für PostgreSQL mit den oben angegebenen Versionen verwenden.</p>
+<p><strong>Hinweis:</strong> Sie können für PostgreSQL auch Amazon RDS mit den oben angegebenen Versionen verwenden.</p>
 </td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 <p>2016</p>
 <p>2014</p>
 <p>2012 – SP1 und SP2</p>
-<p><strong>Wichtig:</strong> Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server unter Linux ausgeführt wird. [Weitere Informationen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
+<p><strong>Wichtig:</strong> Microsoft SQL Server wird nicht als primäre Datenbank unterstützt, wenn der Campaign-Server auf Linux läuft. [Weitere Informationen](../../installation/using/prerequisites-of-campaign-installation-in-linux.md#database-access-layers).</p>
 </td>
 </tr>
 </tbody>
@@ -168,7 +168,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## CRM-Connectoren{#CRMconnectors}
 
-Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). [Erfahren Sie ](../../platform/using/crm-connectors.md) mehr über Campaign-CRM-Connectoren.
+Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). [Weitere Informationen](../../platform/using/crm-connectors.md) zu Campaign-CRM-Connectoren.
 
 <table>
 <tbody>
@@ -189,7 +189,7 @@ Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relati
 
 ## Federated Data Access (FDA){#FederatedDataAccessFDA}
 
-Die folgenden externen Datenbanken sind mit dem Adobe Campaign [Federated Data Access-Modul](../../installation/using/about-fda.md) kompatibel:
+Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](../../installation/using/about-fda.md) von Adobe Campaign kompatibel:
 
 <table>
 <tbody>
@@ -289,7 +289,7 @@ Die folgenden externen Datenbanken sind mit dem Adobe Campaign [Federated Data A
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 
-Die folgenden Betriebssysteme und Browser sind **erforderlich**, um [Campaign Client Console](../../installation/using/installing-the-client-console.md) zu verwenden.
+Die folgenden Betriebssysteme und Browser **sind erforderlich** für die Verwendung der [Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md).
 
 ### Betriebssysteme
 
@@ -330,7 +330,7 @@ Die folgenden Betriebssysteme und Browser sind **erforderlich**, um [Campaign Cl
 
 ## Mobile SDK{#MobileSDK}
 
-Sie können Campaign verwenden, um [Push-Benachrichtigungen zu senden](../../delivery/using/about-mobile-app-channel.md) auf den unten aufgeführten Betriebssystemen zu senden, indem Sie das zugehörige [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) verwenden.
+Sie können Campaign verwenden, um [Push-Benachrichtigungen](../../delivery/using/about-mobile-app-channel.md) auf den unten aufgeführten Betriebssystemen zu senden, indem Sie das zugehörige [mobile SDK](../../delivery/using/integrating-campaign-sdk-into-the-mobile-application.md) verwenden.
 
 <table>
 <tbody>
@@ -353,7 +353,7 @@ Sie können Campaign verwenden, um [Push-Benachrichtigungen zu senden](../../del
 
 ## Browser{#Browsers}
 
-Die folgenden Browser sind mit Campaign für [Web Access](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
+Die folgenden Browser sind für Campaign mit [Web-Zugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
 
 <table>
 <tbody>
@@ -404,7 +404,7 @@ Die folgenden Browser sind mit Campaign für [Web Access](../../campaign/using/a
 ## Ähnliche Themen{#Morelikethis}
 
 * [Versionshinweise zu Campaign Classic](../../rn/using/latest-release.md)
-* [Allgemeine Campaign-Architektur](../../installation/using/general-architecture.md)
-* [Empfehlungen zur Hardwaredimensionierung](../../technotes/using/hardware-sizing.md)
+* [Campaign – allgemeine Architektur](../../installation/using/general-architecture.md)
+* [Empfehlungen zur Hardware-Bemessung](../../technotes/using/hardware-sizing.md)
 * [Veraltete Funktionen und Systeme](../../rn/using/deprecated-features.md)
 * [Vorgehen beim Build-Upgrade](../../production/using/build-upgrade.md)

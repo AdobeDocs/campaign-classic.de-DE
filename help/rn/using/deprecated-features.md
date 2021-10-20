@@ -9,7 +9,7 @@ exl-id: d60d67de-6618-4f3b-be4a-ad7633ab5645
 source-git-commit: 32f55d02920b0104198f809b1be0a91306a4d9e4
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -177,7 +177,7 @@ Ab Version 19.1 ist Adobe Campaign nicht mehr mit den folgenden Betriebssystemen
 Ab der Frühlingsversion 19.1 ist Adobe Campaign nicht mehr mit dem folgenden Webserver kompatibel.
 
 * Apache 2.2. [Weitere Infos](https://httpd.apache.org/)
-* Microsoft IIS 7. [Weitere Informationen](https://support.microsoft.com/en-us/lifecycle/search/810)
+* Microsoft IIS 7. [Weitere Informationen](https://support.microsoft.com/de-de/lifecycle/search/810)
 
 ### Tools {#tools-eol}
 

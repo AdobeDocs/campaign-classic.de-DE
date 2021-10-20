@@ -1,7 +1,7 @@
 ---
 product: campaign
-title: Aktualisierungen der Dokumentation zu Adobe Campaign Classic v7
-description: Auf dieser Seite werden alle neuen Funktionen und Updates in der Adobe Campaign Classic-Dokumentation aufgelistet.
+title: Aktualisierungen der Dokumentation zu Adobe Campaign Classic v7
+description: Auf dieser Seite werden alle neuen Funktionen und Aktualisierungen in der Dokumentation zu Adobe Campaign Classic aufgelistet.
 feature: Overview
 role: User
 level: Beginner
@@ -9,7 +9,7 @@ exl-id: 07c1f4a3-cf16-4a9b-b402-e13258799f91
 source-git-commit: cee019432c64eaaefac86a27b731355242fd1555
 workflow-type: tm+mt
 source-wordcount: '4580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,17 +25,17 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 Vorhandene Technotes wurden in den neuen Abschnitt **Technote** gruppiert.
 
-Die Seite **Empfehlungen zur Hardware-Skalierung** wurde aktualisiert und zum Abschnitt **Technotes** hinzugefügt. [Mehr dazu](../../technotes/using/hardware-sizing.md)
+Die Seite **Empfehlungen zur Hardware-Bemessung** wurde aktualisiert und zum Abschnitt **Technotes** hinzugefügt. [Mehr dazu](../../technotes/using/hardware-sizing.md)
 
 ## September 2021{#sept-2021}
 
-**Dokumentationsaktualisierungen zu Version 21.1.4**
+**Dokumentationsaktualisierungen in Version 21.1.4**
 
 Der Diagrammtyp **Tacho** wurde entfernt.
 
 Screenshots und Parameter von Berichten und Web-Anwendungen wurden nach der Entfernung von Adobe Flash aktualisiert.
 
-Die Beschreibung des technischen Workflows [Rechnungsstellung](../../production/using/monitoring-processes.md#billing-report) wurde mit einem neuen Limits aktualisiert.
+Die Beschreibung des technischen Workflows [Rechnungsstellung](../../production/using/monitoring-processes.md#billing-report) wurde mit einem neuen Limit aktualisiert.
 
 ## August 2021{#aug-2021}
 
@@ -278,11 +278,11 @@ Es wurde ein neuer Abschnitt mit Richtlinien für die Überwachung in Campaign C
 
 Der Abschnitt &quot;Datenschutz und Einverständnis&quot; wurde um detailliertere Informationen und nützliche Links erweitert. [Mehr dazu](../../platform/using/privacy-and-recommendations.md)
 
-Die Seite &quot;Datenschutzverwaltung in Campaign Classic&quot; wurde mit Informationen zum Feld &quot;Vorschrift&quot; aktualisiert. Dieses Feld ist jetzt bei Verwendung der API verfügbar, die die Einrichtung eines automatischen Prozesses für Datenschutzanfragen ermöglicht. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
+Die Seite &quot;Datenschutzverwaltung in Campaign Classic&quot; wurde mit Informationen zum Feld &quot;Vorschrift&quot; aktualisiert. Dieses Feld ist jetzt bei Verwendung der API verfügbar, die die Einrichtung eines automatischen Prozesses für Datenschutzanfragen ermöglicht. [Mehr dazu](https://helpx.adobe.com/ie/campaign/kb/acc-privacy.html#ManagingPrivacyRequests)
 
 Die Seite mit der Übersicht über die Datenschutzverwaltung wurde aktualisiert und enthält nun Informationen zum thailändischen Datenschutzgesetz (PDPA) und zum brasilianischen Datenschutzgesetz (Lei Geral de Proteção de Dados, LGPD) – [mehr dazu](../../platform/using/privacy-and-recommendations.md)
 
-Es wurden Informationen zu Unter-Workflows-Logs und zum Verhalten bei Fehlern hinzugefügt. [Mehr dazu](../../workflow/using/sub-workflow.md)
+Es wurden Informationen zu Sub-Workflow-Protokollen und dem Verhalten im Fehlerfall hinzugefügt. [Mehr dazu](../../workflow/using/sub-workflow.md)
 
 Im Abschnitt **[!UICONTROL Planungsaktivität]** wurden Best Practices hinzugefügt. [Mehr dazu](../../workflow/using/scheduler.md)
 
@@ -392,7 +392,7 @@ Hadoop FDA Connector-Erweiterungen – [mehr dazu](../../installation/using/conf
 
 Die Anleitungen für [Installation](../../installation/using/general-architecture.md), [Produktion](../../production/using/foreword.md) und [Konfiguration](../../configuration/using/additional-parameters.md) wurden mit der neuen systemd-Einheit aktualisiert, die vom nlserver-Dienststart verwendet wird. Sie können weiterhin &quot;/etc/init.d/nlserver6&quot; verwenden. Adobe empfiehlt jedoch, für die Interaktion mit dem nlserver-Dienst ab jetzt den Befehl &quot;systemctl&quot; zu verwenden.
 
-Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neu unterstützte Systeme wurden hinzugefügt. Vorfälle veralteter und nicht unterstützter Systeme wurden entfernt. [Mehr dazu](../../installation/using/general-architecture.md)
+Das Installationshandbuch wurde aktualisiert und mit der neuesten Version der Kompatibilitätsmatrix synchronisiert. Neue unterstützte Systeme wurden hinzugefügt. Vorkommen von veralteten und nicht mehr unterstützten Systemen wurden entfernt. [Mehr dazu](../../installation/using/general-architecture.md)
 
 Die Kompatibilitätsmatrix wurde mit den Hadoop 3.0- und Snowflake-FDA-Connectoren aktualisiert. [Mehr dazu](https://helpx.adobe.com/campaign/kb/compatibility-matrix.html)
 
@@ -532,7 +532,7 @@ Audit-Protokoll – [mehr dazu](../../production/using/audit-trail.md)
 
 Es wurden neue häufig gestellte Fragen zur Build-Aktualisierung erstellt. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/build-upgrade-faq.html)
 
-Die [Kompatibilitätsmatrix](compatibility-matrix.md) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme sowie die Android-/iOS-Versionen und die zugehörigen SDKs wurden aktualisiert. Die Kompatibilitätsmatrix 19.0 wurde aktualisiert.
+Die [Kompatibilitätsmatrix](compatibility-matrix.md) wurde aktualisiert. Die Liste der unterstützten Datenbanksysteme sowie die Android-/iOS-Versionen und die zugehörigen SDKs wurden aktualisiert. Die Kompatibilitätsmatrix 19.0 wurde archiviert.
 
 Die Seite mit veralteten und entfernten Funktionen in Campaign Classic wurde aktualisiert. [Mehr dazu](deprecated-features.md)
 
@@ -587,7 +587,7 @@ Die folgenden Technotes wurden aktualisiert: [SMS-Connector-Protokoll und Einste
 
 Der Abschnitt „Technische Workflows“ wurde aktualisiert. [Mehr dazu](../../workflow/using/about-technical-workflows.md)
 
-Das Installationserfahren für den Campaign-Domain-Namen wurde verbessert und aktualisiert.
+Die Namenseinrichtung für die Campaign-Domain wurde verbessert und aktualisiert.
 
 Das Migrationsverfahren für Android-Apps von Google Cloud Messaging (GCM) zu Firebase Cloud Messaging (FCM) wurde aktualisiert. [Mehr dazu](https://helpx.adobe.com/de/campaign/kb/migrate-to-fcm.html)
 

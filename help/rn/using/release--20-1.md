@@ -9,7 +9,7 @@ exl-id: 7e4234c9-3d8f-4014-a870-75e91cfad725
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -119,7 +119,7 @@ _Montag, 17. Februar 2020_
 
 * Verbesserte Verwaltung der Quarantäne und Bereinigung von Tabellen, die von der Push-Benachrichtigungsfunktion verwendet werden (nms:address und nms:appSubscriptionRcp). Deaktivierte Token werden jetzt unter iOS (nur HTTP2-Connector) genauso gehandhabt wie unter Android. Das disable-Flag ist in der Tabelle „NmsAppSubscriptionRcp“ jetzt gesetzt. [mehr dazu](../../production/using/database-cleanup-workflow.md#subscription-cleanup--nmac-)
 
-* Eine neue Option wurde den Workflow-Aktivitäten **JavaScript-Code** und **Erweiterter JavaScript-Code** hinzugefügt, um einen Timeout-Zeitraum zu definieren. Dadurch wird verhindert, dass die JavaScript-Ausführungsphase zu lange läuft. Sobald der Timeout-Zeitraum abgelaufen ist, wird der Workflow gestoppt. Der Standardwert für das Timeout beträgt 1 Stunde. [mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
+* Eine neue Option wurde den Workflow-Aktivitäten **JavaScript-Code** und **Erweiterter JavaScript-Code** hinzugefügt, um einen Timeout-Zeitraum zu definieren. Dadurch wird verhindert, dass die JavaScript-Ausführungsphase zu lange dauert. Sobald der Timeout-Zeitraum abgelaufen ist, wird der Workflow gestoppt. Der Standardwert für das Timeout beträgt 1 Stunde. [mehr dazu](../../workflow/using/sql-code-and-javascript-code.md)
 
 * Wenn keine übereinstimmende Affinität auf dem Mid-Sourcing-Server gefunden wird, wird die Versandanalyse jetzt angehalten und die entsprechende Fehlernachricht angezeigt.
 

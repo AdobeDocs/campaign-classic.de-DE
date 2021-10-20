@@ -9,7 +9,7 @@ exl-id: 57996f77-4ac2-402a-95db-b75d4bea4eeb
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
 workflow-type: tm+mt
 source-wordcount: '2369'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ _15. April 2019_
 
 **Neuheiten**
 
-* Fehlerkorrektur – Die Berechnung von Trackingindikatoren für Transaktionsnachrichten funktioniert jetzt einwandfrei. (NEO-12529, NEO-12581)
+* Fehlerkorrektur – Die Berechnung von Tracking-Indikatoren für Transaktionsnachrichten funktioniert jetzt einwandfrei. (NEO-12529, NEO-12581)
 * Fehlerkorrektur – Die HTTP-Abfrage-API wartet jetzt, bis alle Callbacks beendet sind. (NEO-12628)
 * In den temporären Coupon-Tabellen wurden Indizes hinzugefügt, um den Versand zu optimieren. (NEO-12437)
 * Fehlerkorrektur – Nachrichten an Empfänger in japanischen Domains (.JP) können jetzt problemlos analysiert werden. (NEO-12246)
@@ -91,7 +91,7 @@ _15. April 2019_
 * Fehlerkorrektur – Bei der Verwendung von Testadressen in einem Versand sind IDs jetzt unbegrenzt verfügbar. (NEO-11842)
 * Fehlerkorrektur – Bei der Verwendung von komplexen Workflows friert der Client nicht mehr ein. (NEO-11847)
 * Fehlerkorrektur – Die Werteverteilung mit einer 1:N-Relation wird jetzt korrekt angezeigt. (NEO-11820)
-* Es wurde ein Oracle-Fehler in der Workflow-Heatmap behoben.
+* Fehlerkorrektur – In der Workflow-Heatmap tritt kein Oracle-Fehler mehr auf.
 * Fehlerkorrektur – Beim Hinzufügen eines Angebotsvorschlags in einer Anreicherungsaktivität tritt kein Rechtefehler mehr auf.
 * Fehlerkorrektur – Bei der SQL-Daten-Management-Verbindung tritt kein Fehler mehr auf.
 * Fehlerkorrektur – Temporäre Workflow-Tabellennamen können jetzt mit negativen IDs erstellt werden.

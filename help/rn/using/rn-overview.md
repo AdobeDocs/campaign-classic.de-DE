@@ -9,7 +9,7 @@ exl-id: 7a05fdff-8f9d-4e8d-812e-0f1509db5499
 source-git-commit: b3a3ec871bca9132f10b319ba1f93aeda80d6747
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Die **aktuellen allgemein verfügbaren Builds** sind: [[!DNL Gold Standard] Vers
 
 ![](assets/do-not-localize/blue3.png) **Release Candidate** (RC) – Aktuelle Version mit neuen Funktionen.
 
-![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar**  - Keine Bereitstellung. Keine Fehlerbehebung. Es wird empfohlen, auf einen neueren Build zu aktualisieren.
+![](assets/do-not-localize/orange3.png) **Nicht mehr verfügbar** - Keine Implementierung. Keine Fehlerbehebung. Es wird empfohlen, auf einen neueren Build zu aktualisieren.
 
 ![](assets/do-not-localize/red3.png) **Eingestellt** – Keine Implementierung. Keine Fehlerbehebung. Bestehende Implementierungen müssen aktualisiert werden.
 

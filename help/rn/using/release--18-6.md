@@ -12,7 +12,7 @@ exl-id: a849ce10-0972-4c42-b10e-67a81c79bc65
 source-git-commit: c281d437907efb4d514bec7cacc698c383f3fe53
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 97%
 * Fehlerkorrektur – Bei der Verwendung von berechneten Feldern in der Workflow-Aktivität **[!UICONTROL Umfrageantworten]** tritt kein Fehler mehr auf. (NEO-11382)
 * Tomcat wurde aktualisiert, um zu verhindern, dass Schwachstellen ausgenutzt werden können. (NEO-11503)
 * Fehlerkorrektur – Bei der LATIN1-Codierung tritt jetzt kein Fehler mehr auf, wenn eine FDA-Verbindung zu einer PostgreSQL-Datenbank verwendet wird. (NEO-11299)
-* Fehlerkorrektur - Bei der Verwendung der Versandoption **[!UICONTROL Personalisierungsdaten mit einem Workflow]** vorbereiten tritt jetzt kein Fehler mehr auf. (NEO-11047)
+* Fehlerkorrektur – Bei der Verwendung der Versandoption **[!UICONTROL Personalisierungsdaten mit einem Workflow vorbereiten]** tritt kein Fehler mehr auf. (NEO-11047)
 * Fehlerkorrektur – SMS können jetzt in Verbindung mit einem erweiterten Connector gesendet werden, ohne dass ein Postupgrade-Fehler auftritt.
 * Verbesserter Package-Import/-Export (in der Benutzeroberfläche wurden Log und Region hinzugefügt).
 * Fehlerkorrektur – Im Postupgrade-Log werden keine unnützen Fehler mehr angezeigt, wenn die Workflow-Aktivität **[!UICONTROL Umfrageantworten]** nicht vollständig konfiguriert ist.

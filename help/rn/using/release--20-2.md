@@ -9,7 +9,7 @@ exl-id: fcaab1aa-c8f9-4606-b0d8-eb481a38f588
 source-git-commit: 6d53ba957fb567a9a921544418a73a9bde37c97b
 workflow-type: tm+mt
 source-wordcount: '3012'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ _Dienstag, 22. Dezember 2020_
 >
 > * Diese Version enthält ein neues Verbindungsprotokoll: Wenn Sie über Adobe Identity Service (IMS) eine Verbindung zu Campaign herstellen, ist sowohl für den Campaign-Server als auch für die Client-Konsole eine Aktualisierung zwingend erforderlich, um auch nach dem **30. Juni 2021** eine Verbindung zu Campaign herstellen zu können.  [Weitere Informationen](../../technotes/using/ims-updates.md)
 > * Diese Version enthält eine [Sicherheitskorrektur](https://helpx.adobe.com/de/security/products/campaign/apsb21-04.html): Die Aktualisierung ist zwingend erforderlich, um die Sicherheit Ihrer Umgebung zu erhöhen.
-> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Der alte oAuth-Authentifizierungsmodus mit Campaign [wurde am **September 2021** eingestellt. ](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) Gehostete Umgebungen profitieren von einer Erweiterung bis zum 23. Februar 2022 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu erweitern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
+> * Wenn Sie die Experience Cloud-Triggers-Integration über die OAuth-Authentifizierung verwenden, müssen Sie wie [auf dieser Seite](../../integrations/using/configuring-adobe-io.md) beschrieben zu Adobe I/O wechseln. Die alte oAuth-Authentifizierungsmethode mit Campaign [wurde eingestellt](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-discussions/adobe-analytics-legacy-api-end-of-life-notice/td-p/385411?profile.language=de) am **September 2021**. Gehostete Umgebungen profitieren von einer Verlängerung bis zum **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum Februar 2022 zu verlängern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
 
 
 **Verbesserungen**
@@ -91,7 +91,7 @@ _Freitag, 11. September 2020_
 
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die dazu führte, dass die Sendungsvorbereitung aufgrund einer einzigen fehlerhaften Funktion im Versand blockiert wurde, was zu einer Speicherüberlastung führte. (NEO-27346)
 * Fehlerkorrektur – Es wurde ein Problem mit einem Postupgrade behoben, durch das Apache und der Webserver vor der erneuten Veröffentlichung der Web-Applikation deaktiviert wurden. (NEO-27155)
-* Fehlerkorrektur - Es wurde eine Regression bei der HTML-Vorlagenverwaltung behoben, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Tabs sichtbar wurden. (NEO-25909)
+* Fehlerkorrektur - Eine Regression bei der Verwaltung von HTML-Vorlagen, die dazu führte, dass Tracking-URLs aufgrund einer falschen Interpretation von Tabs sichtbar wurden, wurde behoben. (NEO-25909)
 * Fehlerkorrektur – Es wurde ein Problem mit dem Datenbankbereinigungs-Workflow behoben, der aufgrund einer nicht verwalteten Datenquelle fehlschlagen konnte. (NEO-23160, NEO-23364)
 * Der Bereinigungs-Workflow bereinigt jetzt abgelaufene Listen in Stapeln von 100 anstelle einzeln.
 * Fehlerkorrektur – Es wurde eine Regression korrigiert, die verhinderte, dass Sie den internen Namen eines externen Kontos ändern konnten. (NEO-27323)
@@ -325,7 +325,7 @@ Ein Beispiel für Linux ist auf dieser [Seite](../../configuration/using/additio
 * Fehlerkorrektur – Jetzt tritt kein Regressionsfehler mehr auf, der zum Absturz des Bereinigungs-Workflows führt.
 * Beim Veröffentlichen einer Vorlage in einer Ausführungsinstanz tritt jetzt kein Fehler mehr auf.
 * Fehlerkorrektur – Die Ausführung des technischen Workflows &quot;collectPrivacyRequests&quot; wird jetzt nicht mehr verhindert. (NEO-20513, NEO-25169)
-* Fehlerkorrektur - Es wurden Probleme behoben, die nach dem Upgrade auf Build 9080 auftreten konnten, wenn versucht wurde, eine Verbindung zu Audience Manager herzustellen. (NEO-20511, NEO-25167)
+* Fehlerkorrektur – Wenn nach dem Upgrade auf Build 9080 versucht wird, eine Verbindung mit Audience Manager herzustellen, treten jetzt keine Fehler mehr auf. (NEO-20511, NEO-25167)
 * Fehlerkorrektur – Beim Exportieren von Berichten im PDF- oder XLS-Format treten jetzt keine Fehler mehr auf. (NEO-20982, NEO-23493, NEO-23348)
 * Fehlerkorrektur – Ein Versand in der Versandliste wird nach dem Senden jetzt nicht mehr zweimal angezeigt.
 * Fehlerkorrektur – Bei der Versandvorbereitung tritt jetzt kein Fehler mehr auf, wenn die Routing-Konfiguration so eingerichtet ist, dass der Versand über Mid-Sourcing erfolgt.

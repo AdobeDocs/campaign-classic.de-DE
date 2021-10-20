@@ -9,7 +9,7 @@ exl-id: d65869ca-a785-4327-8e8d-791c28e4696c
 source-git-commit: ebd5b04c30c54142433056904a5d80f5a8744ded
 workflow-type: tm+mt
 source-wordcount: '2459'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Grundlegendes zum Build-Status von Campaign finden Sie auf [dieser Seite](rn-ove
 
 _8. Oktober 2021_
 
-**Korrekturen**
+**Patches**
 
 * Fehlerkorrektur - Die ordnungsgemäße Angebotsverwaltung bei Verwendung des Moduls **Interaction** mit der Option [Power Booster](../../installation/using/power-booster-and-power-cluster.md) ist jetzt möglich. (NEO-39263)
 
-* Fehlerkorrektur - Beim Versand von mehr als einer IP-Affinität in einer Mid-Sourcing-Instanz tritt jetzt kein Fehler mehr auf, wenn auf dem Mid-Server xxx die IP-Affinität nicht gefunden wird. (NEO-37514)
+* Fehlerkorrektur - Beim Versand mit mehr als einer IP-Affinität in einer Multi-Mid-Sourcing-Instanz tritt jetzt der Fehler &#39;IP-Affinität xxx nicht in Mid-Server xxx gefunden&#39; nicht mehr auf. (NEO-37514)
 
 
 ## ![](assets/do-not-localize/orange_2.png) Version 21.1.4 – Build 9342 {#release-21-1-4-build-9342}
