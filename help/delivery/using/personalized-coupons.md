@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalizing-deliveries
 exl-id: 182939bb-7aff-4667-bda9-c5d48be3b946
 source-git-commit: 0deb18bb0376fc5e94d063145280426ff54db786
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '960'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -149,9 +149,9 @@ So prüfen Sie, ob der Versand erfolgreich war:
 
 >[!NOTE]
 >
->Standardmäßig verwendet das Gutscheinverwaltungsmodul eine **nms:recipient** -Tabelle. [Weitere Informationen](../../configuration/using/about-data-model.md#default-recipient-table).
+>Standardmäßig verwendet das Couponverwaltungsmodul eine **nms:recipient**-Tabelle. [Weitere Informationen](../../configuration/using/about-data-model.md#default-recipient-table).
 >
->Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle [verwenden.
+> [Auf dieser Seite](../../configuration/using/about-custom-recipient-table.md) erfahren Sie, wie Sie eine benutzerdefinierte Empfängertabelle verwenden.
 
 ## Ungenügende Anzahl von Gutscheinen verwalten {#managing-insufficient-coupons}
 
