@@ -14,9 +14,9 @@ internal: n
 snippet: y
 exl-id: a6b10585-7bf9-4fef-b886-db081b6d3acc
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '570'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 98%
 
 ## Über dieses Anwendungsbeispiel {#about-this-use-case}
 
-In diesem Verwendungsfall wird beschrieben, wie Sie die Funktion **[!UICONTROL Zusammenführen]** in der Aktivität **[!UICONTROL Deduplizierung]** verwenden.
+In diesem Anwendungsfall wird beschrieben, wie Sie die Funktion **[!UICONTROL Zusammenführen]** in der Aktivität **[!UICONTROL Deduplizierung]** verwenden.
 
-Weitere Informationen zu dieser Funktion finden Sie in [diesem Abschnitt](deduplication.md#merging-fields-into-single-record).
+Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](deduplication.md#merging-fields-into-single-record).
 
 Die Aktivität **[!UICONTROL Deduplizierung]** wird zum Entfernen von Duplikat-Zeilen aus einem Datensatz verwendet. In diesem Anwendungsfall werden die unten angezeigten Daten anhand des E-Mail-Felds dupliziert.
 
