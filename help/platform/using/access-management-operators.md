@@ -7,9 +7,9 @@ role: User, Admin
 level: Beginner
 exl-id: 580282ce-ee30-422a-8724-9c328637cc39
 source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1214'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
 
 Über den Link **[!UICONTROL Zugriffsparameter bearbeiten...]** sind folgende Optionen verfügbar:
 
-* Mit der Option **[!UICONTROL Konto deaktivieren]** können Sie das Benutzerkonto deaktivieren: dieser Benutzer nicht mehr auf Adobe Campaign zugreifen kann.
+* Über die Option **[!UICONTROL Konto sperren]** kann das Benutzerkonto deaktiviert werden. Der Benutzer kann nicht mehr auf Adobe Campaign zugreifen.
 
    >[!NOTE]
    >
@@ -125,7 +125,7 @@ Im Tab **[!UICONTROL Zugriffsberechtigungen]** können die dem Benutzer zugeordn
 
    >[!IMPORTANT]
    >
-   >Dies ist eine sehr enge Einschränkung, die mit Vorsicht angewandt werden muss. Benutzer, die mit diesen Berechtigungen angemeldet sind, können NUR den Inhalt des angegebenen Ordners sehen und über den Explorer auf keinen anderen Knoten des Navigationsbaums zugreifen. Je nach den Funktionen hat dieser Benutzer jedoch Zugriff auf (z. B.: Workflows), kann der Benutzer Daten anzeigen, die normalerweise in Knoten gespeichert sind, auf die nicht zugegriffen werden kann.
+   >Dies ist eine sehr große Einschränkung, die mit Vorsicht angewandt werden muss. Benutzer, die mit diesen Berechtigungen angemeldet sind, können NUR den Inhalt des angegebenen Ordners sehen und über den Explorer auf keinen anderen Knoten des Navigationsbaums zugreifen. Je nach den Funktionen hat dieser Benutzer jedoch Zugriff (z. B. auf Workflows). Der Benutzer kann Daten anzeigen, die normalerweise in Knoten gespeichert sind, auf die nicht zugegriffen werden kann.
 
 ### Überprüfen von Einstellungen {#check-settings}
 
