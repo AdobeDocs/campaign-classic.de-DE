@@ -5,9 +5,9 @@ description: Konfigurieren der Integration
 audience: integrations
 content-type: reference
 source-git-commit: c6d5e597a02a1210507b0c6d84ab7d170e877eb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '377'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Der Parameter &quot;consumer&quot; identifiziert die Instanz als einen dieser Ve
 
 ## Konfigurieren der Pipeline-Option {#configure-pipeline-option}
 
-Fügen Sie unter dem Array &quot;Auslöser&quot; Experience Cloud-Auslöser hinzu oder bearbeiten Sie sie. Lassen Sie den Rest unverändert.
+Fügen Sie unter dem Array &quot;Triggers&quot; Experience Cloud-Trigger hinzu oder bearbeiten Sie sie. Lassen Sie den Rest unverändert.
 Vergewissern Sie sich mithilfe dieser [Website](https://jsonlint.com/), dass die JSON gültig ist.
 
 * &quot;name&quot; ist die Auslöser-ID. Mit einem Platzhalter (*) werden alle Auslöser erfasst.
