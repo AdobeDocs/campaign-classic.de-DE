@@ -5,9 +5,9 @@ description: Benötigen Sie Unterstützung für Campaign Classic? Hier sind Sie 
 hidefromtoc: true
 exl-id: 3a84236f-89e5-4b8b-9a98-afdc006fd6e0
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '799'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -107,11 +107,11 @@ Das Control Panel ist direkt über Adobe Experience Cloud verfügbar. Es steht n
 
 ### Control Panel – häufig gestellte Fragen
 
-[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
+[Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/faq.html?lang=de), um die häufig gestellten Fragen zum Campaign Control Panel aufzurufen.
 
 ### SFTP-Verwaltung
 
-Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazität überwachen, IP-Adressen auf der Zulassungsliste verwalten und öffentliche SSH-Schlüssel verwenden. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de), um weitere Informationen zu erhalten.
+Über das Control Panel können Sie alle SFTP-Server verwalten, die mit den Campaign-Instanzen verbunden sind, auf die Sie Zugriff haben. Sie können ihre Speicherkapazitäten überwachen und IP-Adressen auf der Zulassungsliste sowie öffentliche SSH-Schlüssel verwalten. [Klicken Sie hier](https://experienceleague.adobe.com/docs/control-panel/using/sftp-management/about-sftp-management.html?lang=de), um weitere Informationen zu erhalten.
 
 ### Sub-Domains und Zertifikate
 
@@ -123,7 +123,7 @@ Sie können Ihre Sub-Domains und deren Zertifikate überwachen. Weitere Informat
 ### Instanzeneinstellungen
 
 Erfahren Sie, wie Sie die Einstellungen Ihrer Campaign Classic-Instanzen im Control Panel verwalten. Weitere Informationen finden Sie auf den folgenden Seiten:
-* [Fügen Sie IPs auf der ](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de) Zulassungsliste hinzu, um auf Ihre Campaign-Instanz(en) zuzugreifen
+* [Fügen Sie IP-Adressen zur Zulassungsliste hinzu](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/ip-allow-listing-instance-access.html?lang=de), um auf Ihre Campaign-Instanzen zuzugreifen 
 * [Verwalten von URL-Berechtigungen](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/url-permissions.html?lang=de)
 * [Aufrufen der Instanzdetails](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/instance-details.html?lang=de)
 * [Verwalten von GPG-Schlüsseln für die Datenverschlüsselung](https://experienceleague.adobe.com/docs/control-panel/using/instances-settings/gpg-keys-management.html?lang=de)
@@ -136,7 +136,7 @@ Das neue Ticket-System ist über die [Adobe Admin Console](https://adminconsole.
 
 ### Fragen an Experten
 
-Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community)
+Treten Sie der Campaign Classic-Community bei: Suchen Sie nach Antworten in vorhandenen Fragen oder stellen Sie Ihre Frage der Community. [Reden Sie mit](https://experienceleaguecommunities.adobe.com/t5/adobe-campaign-classic/ct-p/adobe-campaign-classic-community?profile.language=de)
 
 ### Aufrufen des Campaign-Download-Centers
 
@@ -147,4 +147,4 @@ Weitere Informationen zum neuen Download-Center finden Sie [auf dieser Seite](ht
 
 Durch das Erstellen eines Tickets können Sie sich an das Adobe-Supportteam wenden, wenn Probleme mit Ihren Adobe-Produkten auftreten. Sie können in der Adobe Admin Console mit dem Adobe-Support chatten, um Ihre Probleme zu lösen.
 
-Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
+Um in diesem neuen System ein Ticket zu erstellen oder eine Chat-Sitzung zu starten, stellen Sie eine Verbindung zur [Adobe Admin Console](https://adminconsole.adobe.com/overview) her. Befolgen Sie das auf [dieser Seite](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) beschriebene Verfahren.
