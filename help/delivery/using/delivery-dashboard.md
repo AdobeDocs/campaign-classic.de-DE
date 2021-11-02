@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: 44ecc8c6-6584-43eb-96b4-7d8463053123
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1243'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -192,7 +192,7 @@ Gehen Sie dazu wie folgt vor:
 
 >[!NOTE]
 >
->Sobald die Aktualisierung der physischen Struktur der Datenbank erfolgreich abgeschlossen ist, müssen Sie die Verbindung trennen und wieder herstellen, damit Ihre Änderungen berücksichtigt werden.
+>Sobald die Aktualisierung der physischen Struktur der Datenbank erfolgreich abgeschlossen wurde, müssen Sie sich abmelden und wieder anmelden, damit die Änderungen berücksichtigt werden.
 
 ### Schritt 3: Änderung überprüfen
 
