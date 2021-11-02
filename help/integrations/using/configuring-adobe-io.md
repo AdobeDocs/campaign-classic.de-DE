@@ -9,9 +9,9 @@ internal: n
 snippet: y
 exl-id: ab30f697-3022-4a29-bbdb-14ca12ec9c3e
 source-git-commit: bf063ec8f06c3e8e70011a5b5101f17e163a383c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '749'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 92%
 >Wenn Sie eine ältere Version der Triggers-Integration über die OAuth-Authentifizierung verwenden, **müssen Sie wie unten beschrieben zu Adobe I/O wechseln**.
 >Beachten Sie, dass während dieser Umstellung auf [!DNL Adobe I/O] einige eingehende Auslöser verloren gehen können.
 >
->Der alte oAuth-Authentifizierungsmodus mit Campaign wird am **20. Oktober 2021** eingestellt. Gehostete Umgebungen profitieren von einer Erweiterung bis zum 23. Februar 2022 **.** Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis Februar 2022 zu erweitern. Sie müssen [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) zur Adobe angeben.
+>Der alte OAuth-Authentifizierungsmodus für Campaign wird am **20. Oktober 2021** eingestellt. Gehostete Umgebungen profitieren von einer Verlängerung bis zum **23. Februar 2022**. Wenden Sie sich als On-Premise- oder Hybrid-Kunde an die Kundenunterstützung von Adobe, um den Support bis zum Februar 2022 zu verlängern. Dazu müssen Sie Adobe [die AppID der OAuth-Anwendung](../../integrations/using/configuring-pipeline.md?lang=en#step-optional) nennen.
 
 ## Voraussetzungen {#adobe-io-prerequisites}
 
-Diese Integration gilt nur ab **Campaign Classic 20.2.4 und höher, Version 19.1.8 und Gold Standard 11-Versionen**.
+Diese Integration gilt nur ab **Campaign Classic-Version 20.2.4 und höher, 19.1.8 und Gold Standard-Version 11**.
 
 Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vorhanden ist:
 
@@ -79,7 +79,7 @@ Bevor Sie mit dieser Implementierung beginnen, überprüfen Sie, ob Folgendes vo
 
    ![](assets/do-not-localize/adobe_io_5.png)
 
-1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen zu [!DNL Analytics] **[!UICONTROL Produktprofilen]** finden Sie in der [Adobe Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html#admin-console?lang=de).
+1. Wählen Sie ein vorhandenes **[!UICONTROL Produktprofil]** aus oder erstellen Sie ggf. ein neues. Für dieses **[!UICONTROL Produktprofil]** ist keine Berechtigung erforderlich. Weitere Informationen zu [!DNL Analytics] **[!UICONTROL Produktprofilen]** finden Sie in der [Adobe Analytics-Dokumentation](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=de#admin-console).
 
    Klicken Sie dann auf **[!UICONTROL Konfigurierte API speichern]**.
 
