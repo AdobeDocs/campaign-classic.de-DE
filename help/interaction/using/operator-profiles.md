@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: managing-environments
 exl-id: e11fb28c-d530-45a2-862a-ff1c20975577
 source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -52,15 +52,15 @@ Die dem Angebotsverantwortlichen zugewiesenen Berechtigungen erlauben ihm folgen
 
    ![](assets/offer_operators_create_002.png)
 
-Die den Versand-Managern zugewiesenen Rechte ermöglichen ihnen die Durchführung folgender Aufgaben:
+Die den Versandverantwortlichen zugewiesenen Berechtigungen erlauben ihnen folgende Tätigkeiten:
 
 * Ansicht der **[!UICONTROL Design-Umgebungen]**;
 * Anzeige und Änderung von Angebotskategorien;
-* Validieren Sie Angebote, wenn dieser Versandverantwortliche als einer seiner validierenden Benutzer angegeben ist.
+* Validierung von Angeboten, wenn dieser Versandverantwortliche als Validierer bezeichnet wurde.
 
    >[!NOTE]
    >
-   >Versand-Manager können ein Angebot nur validieren, wenn sie bei der Konfiguration des Angebots als Validierer definiert wurden.
+   >Der Versandverantwortliche kann nur Angebote validieren, für die er bei deren Konfiguration als Validierer bezeichnet wurde.
 
 ## Zusammenfassende Darstellung der Rechte nach Benutzertyp {#recap-of-rights-according-to-operator}
 
