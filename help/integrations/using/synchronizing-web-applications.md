@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: acs-connector
 exl-id: 975bdc94-5da4-45ae-a3bd-e8674b447098
 source-git-commit: 8b970705f0da6a9e09de9fadb3e1a8c5f4814f9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '857'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ In Campaign v7 wurden die folgenden Objekte erstellt:
 
    ![](assets/acs_connect_lp_5.png)
 
-1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie einen Empfänger aus. Sie können sehen, dass dieses Profil den Dienst noch nicht abonniert hat.
+1. Gehen Sie zu **[!UICONTROL Profile und Zielgruppen > Empfänger]** und wählen Sie einen Empfänger aus. Sie können sehen, dass dieses Profil den Service noch nicht abonniert hat.
 
    ![](assets/acs_connect_lp_6.png)
 
@@ -102,7 +102,7 @@ Die Schritte für die Erstellung, die Konzeption und den Versand der E-Mail erfo
 
    ![](assets/acs_connect_lp_14.png)
 
-1. Dieser Empfänger fügt eine Telefonnummer hinzu und markiert die Anmeldung für den Newsletter.
+1. Dieser Empfänger gibt eine Telefonnummer ein und fügt dem Kästchen zur Newsletter-Anmeldung ein Häkchen hinzu.
 
    ![](assets/acs_connect_lp_15.png)
 
@@ -118,7 +118,7 @@ Wenn der Empfänger seine Daten über die Webanwendung aktualisiert, ruft Adobe 
 
    ![](assets/acs_connect_lp_17.png)
 
-1. Im Tab **[!UICONTROL Abonnements]** können wir auch sehen, dass sich dieser Empfänger für den Newsletter-Dienst angemeldet hat.
+1. Außerdem ist auf der Registerkarte **[!UICONTROL Abonnements]** ebenfalls ersichtlich, dass dieser Empfänger sich für den Newsletter angemeldet hat.
 
    ![](assets/acs_connect_lp_18.png)
 
