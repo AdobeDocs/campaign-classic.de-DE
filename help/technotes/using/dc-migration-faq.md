@@ -1,25 +1,25 @@
 ---
 product: campaign
 title: Häufig gestellte Fragen zur Migration zu Adobe Managed Services (Public Cloud)
-description: Häufig gestellte Fragen zur Migration von Campaign Classic zu Public Cloud
+description: Häufig gestellte Fragen zur Migration von Campaign Classic zur Public Cloud
 feature: Overview
 role: User
 level: Beginner
 exl-id: a9cd08b0-55c2-4405-9fb8-f0c623cd4ccb
 source-git-commit: 1f050ada481a7307a59ea6c81290bb0b24a3bf6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2243'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
-# Häufig gestellte Fragen zur Migration zu Public Cloud{#dc-faq}
+# Häufig gestellte Fragen zur Migration zur Public Cloud{#dc-faq}
 
 ![](../../assets/v7-only.svg)
 
-Im Rahmen der [Gold Standard Initiative](../../rn/using/gold-standard.md) wird das alte Rechenzentrum von Adobe von der  eingestellt. Campaign Classic-Instanzen müssen in Public Cloud Amazon Web Services (AWS) übertragen werden. [Erfahren Sie mehr über diese Initiative](dc-migration.md).
+Im Rahmen der [Gold Standard Initiative](../../rn/using/gold-standard.md) wird das alte Rechenzentrum von Adobe eingestellt. Campaign Classic-Instanzen müssen deshalb zur Public Cloud Amazon Web Services (AWS) übertragen werden. [Erfahren Sie mehr über diese Initiative](dc-migration.md).
 
-Nachstehend finden Sie eine Reihe häufiger Fragen zu diesem Projekt, den Auswirkungen auf Ihre Campaign-Umgebungen und anderen hilfreichen Ressourcen.
+Nachstehend finden Sie eine Reihe allgemeiner Fragen zu diesem Projekt und zu den Auswirkungen auf Ihre Campaign-Umgebungen sowie weitere nützliche Informationsquellen.
 
 Für alle anderen Fragen wenden Sie sich bitte an die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support).
 
@@ -37,21 +37,21 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 * **Besteht das Risiko von Datenverlust?**
 
-   Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Wenn die Anwendung im neuen Rechenzentrum neu gestartet wird, wird sie von dem Status fortgesetzt, der vor der Migration bestand. Die Benutzer werden keinen Unterschied bemerken, außer dass sich einige geplante Aufgaben verzögert haben werden.
+   Die Datenbank wird aus dem alten Rechenzentrum entfernt und in der Public Cloud (AWS) wiederhergestellt. Beim Neustart im neuen Rechenzentrum wird die Anwendung genau in dem Zustand fortgesetzt, in dem sie sich vor der Migration befand. Die Benutzer werden keinen Unterschied bemerken, außer dass sich einige geplante Aufgaben verzögern.
 
 * **Gibt es Unterschiede in der Größe des Pakets zwischen dem alten Rechenzentrum und der Public Cloud?**
 
-   Wir stellen in der Public Cloud (AWS) neue Paketdefinitionen bereit, die auf der aktuellen Datenbankgröße, der Festplattengröße usw. basieren. Wenn beispielsweise ein Kunde in älteren Rechenzentren über einen Anwendungsserver verfügt, kann er je nach Package-Definitionen über zwei Anwendungsserver in Public Cloud (AWS) verfügen.
+   Wir stellen in der Public Cloud (AWS) neue Paketdefinitionen bereit, die auf der aktuellen Datenbankgröße, der Festplattengröße usw. basieren. Wenn beispielsweise ein Kunde in alten Rechenzentren genau einen Anwendungs-Sserver hat, kann er je nach Paketdefinitionen zwei Anwendungs-Server in der Public Cloud (AWS) verwenden.
 
 * **Wird sich die Build-Nummer oder die Campaign-Version ändern?**
 
    Als ersten Schritt werden wir den Campaign Classic-Build bei der Migration beibehalten.
 
-   In einem weiteren Schritt werden wir mit dem Upgrade auf den neuesten Campaign Classic GA-Build fortfahren. Weiterführende Informationen dazu finden Sie in den [FAQ zum Build-Upgrade](../../platform/using/faq-build-upgrade.md) und den [Versionshinweisen zu Campaign Gold Standard](../../rn/using/gold-standard.md).
+   In einem weiteren Schritt werden wir mit dem Upgrade auf den neuesten Campaign Classic GA-Build fortfahren. Weitere Informationen hierzu finden Sie in den [häufig gestellten Fragen zum Build-Upgrade](../../platform/using/faq-build-upgrade.md) und in den [Versionshinweisen für Campaign Gold Standard](../../rn/using/gold-standard.md).
 
 * **Was ist der Plan zur Behebung von Problemen nach der Migration?**
 
-   Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt [Adobe Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Expertenteam zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
+   Vor der Migration der Produktionssysteme sind umfangreiche Tests geplant. Bei Problemen bleibt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) der Hauptansprechpartner. Adobe hat ein Experten-Team zusammengestellt, das bei Bedarf zusätzliche Unterstützung bietet.
 
 ## Auswirkungen auf die Zustellbarkeit
 
@@ -59,54 +59,54 @@ Die globalen Auswirkungen auf die Datenbank und Infrastruktur sind nachstehend a
 
 Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind unten aufgeführt.
 
-* **Wie werden IP-Adressen auf der Zulassungsliste gehandhabt? Müssen die Kunden der Zulassungsliste neue IP-Adressen für eingehenden Traffic von Campaign hinzufügen?**
+* **Wie werden IPs auf der Zulassungsliste gehandhabt? Müssen Kunden für eingehenden Traffic von Campaign neue IP-Adressen auf die Zulassungsliste setzen?**
 
-   Die IP-Adresse der Adobe-Server wird sich ändern. Daher müssen die Kunden diese neuen IP-Adressen möglicherweise in der Zulassungsliste in ihr System einfügen.
+   Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Klicken Sie ](#config) hier , um weitere Informationen zur IP auf der Zulassungsliste zu erhalten.
+   [Klicken Sie hier](#config), um weitere Informationen zu IPs auf der Zulassungsliste zu erhalten.
 
-* **Wie werden wir den zur Zulassungsliste hinzugefügten Port für den SFTP-/FTP-Zugriff handhaben?**
+* **Wie werden Ports gehandhabt, die für den SFTP-/FTP-Zugriff auf die Zulassungsliste gesetzt werden?**
 
-   Die SFTP-Konfiguration (öffentliche Schlüssel + IP auf der Zulassungsliste) wird auch vom alten Rechenzentrum in die Public Cloud (AWS) verschoben. Seitens des Kunden besteht kein Handlungsbedarf.
+   Die SFTP-Konfiguration (öffentliche Schlüssel + IP auf der Zulassungsliste) wird ebenfalls vom alten Rechenzentrum in die Public Cloud (AWS) verschoben. Seitens des Kunden besteht kein Handlungsbedarf.
 
 * **Werden IPs geändert?**
 
-   Die IP-Adresse der Adobe-Server wird sich ändern. Daher müssen die Kunden diese neuen IP-Adressen möglicherweise der Zulassungsliste in ihrem System hinzufügen.
+   Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Klicken Sie ](#config) hier , um weitere Informationen zur IP auf der Zulassungsliste zu erhalten.
+   [Klicken Sie hier](#config), um weitere Informationen zu IPs auf der Zulassungsliste zu erhalten.
 
 * **Wie wird die Zuordnung von Subdomains gehandhabt?**
 
-   Bestehende Subdomains werden vom alten Rechenzentrum in die Public Cloud (AWS) verschoben. Dieser Prozess wird im Rahmen des Migrationsprozesses vom Zustellbarkeitsteam von Adobe gehandhabt.
+   Bestehende Subdomains werden vom alten Rechenzentrum in die Public Cloud (AWS) verschoben. Dieser Prozess wird im Rahmen des Migrationsprozesses vom Zustellbarkeitsteam von Adobe gehandhabt.
 
    Adobe führt den Kunden durch die erforderlichen Tests, um sicherzustellen, dass die Konfiguration nach der Migration auf den neuen Public Cloud-Servern (AWS) erfolgreich durchgeführt wurde.
 
-* **Entstehen durch die Migration neue URLs für Tracking, Ressourcen und Webanwendungen?**
+* **Entstehen durch die Migration neue URLs für Tracking, Ressourcen und Web-Anwendungen?**
 
    Nein, die bestehenden URLs bleiben erhalten.
 
 * **Wird die Subdomain von Neolane.net in campaign.adobe.com geändert?**
 
-   Sowohl `neolane.net` als auch `campaign.adobe.com` sind nach der Migration vorhanden. Einfach zu machen: wird neolane.net zu neuen Instanzen in Public Cloud (AWS) umgeleitet, sodass keine vom Kunden vorgenommenen Änderungen erforderlich sind.
+   Sowohl `neolane.net` als auch `campaign.adobe.com` sind nach der Migration vorhanden. Um den Prozess zu vereinfachen, wird neolane.net auf neue Instanzen in der Public Cloud (AWS) umgeleitet, sodass der Kunde keine Änderungen vornehmen muss.
 
-* **Was ist der Plan für die IP-Erwärmung?**
+* **Was ist der Plan für IP Warming?**
 
-   Zustellbarkeit von Adoben bewertet zunächst den Zustellbarkeitsstatus der Plattform und empfiehlt einen Plan für den Wechsel zu den neuen IPs
+   Zunächst wird die Zustellbarkeitsstatus der Plattform durch das Zustellbarkeits-Team von Adobe geprüft und ein Plan für den Wechsel zu den neuen IPs empfohlen. 
 
-   Nach der Migration ist keine Erwärmung erforderlich. Sollte jedoch in Ausnahmefällen eine Erwärmung nötig sein, wird die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden aufnehmen.
+   Nach der Migration ist kein Warm-up erforderlich. Sollte jedoch in Ausnahmefällen ein Warm-up nötig sein, nimmt die [Adobe-Kundenunterstützung](https://experienceleague.adobe.com/?support-solution=Campaign#support) Kontakt zu den jeweiligen Kunden auf.
 
-   Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als der während des Go-Live erfolgte ursprüngliche Ramp-up.
+   Es ist jedoch geplant, diesen Vorgang für Ihr Unternehmen transparent zu gestalten, anders als beim während des Go-Live erfolgten ursprünglichen Ramp-up.
 
    Nach Abschluss der Migration wird die Campaign-Instanz völlig andere Sende-IPs aufweisen. Um eine reibungslose Migration zu gewährleisten, wird Adobe ein Ramp-up der neuen Sende-IPs durchführen, indem der Traffic schrittweise von den alten auf die neuen IPs umgestellt wird.
 
-* **Wechseln wir über die URL auf der Zulassungsliste?**
+* **Werden auch URLs auf der Zulassungsliste verschoben?**
 
    Ja, dies wird in der Server-Konfigurationsdatei gespeichert, die von der Quelle in die neue Instanz kopiert wird.
 
 * **Wie wird sich das auf unsere zugewiesene Subdomain auswirken, mit der wir unsere Kommunikation branden?**
 
-   Die für die Marketing-Kommunikation verwendeten Subdomains bleiben gleich. Abhängig von der Implementierung sind jedoch Aktionen auf Client-Seite erforderlich:
-   * Bei der Zuweisung von Subdomains zu Adobe (Standardeinstellung) übernimmt Adobe alle Änderungen und sorgt für einen nahtlosen Übergang.
+   Die für die Marketing-Kommunikation verwendeten Subdomains bleiben unverändert. Abhängig von der Implementierung können jedoch auf der Client-Seite Aktionen erforderlich sein:
+   * Bei einer Subdomain-Zuweisung an Adobe (Standard) übernimmt Adobe alle Änderungen und sorgt für einen nahtlosen Übergang.
    * Bei CNAME-Setup (Ausnahme) wird der Client aufgefordert, in Abstimmung mit Adobe Änderungen zu implementieren.
 
 ## Auswirkungen auf Konfiguration und Konnektivität
@@ -115,15 +115,15 @@ Die globalen Auswirkungen auf IPs, Blockierungsliste, Subdomains und URLs sind u
 
 ### Hinweis zur IP-Adresse auf der Zulassungsliste{#config}
 
-Die Migration zur Public Cloud beinhaltet neue IPs für Adobe Campaign-Anwendungsserver, sodass sich eine IP-Änderung auf die Konnektivität zwischen Adobe-Servern und Ihren Informationssystemen auswirken kann.
+Die Migration zur Public Cloud beinhaltet neue IPs für Adobe Campaign-Anwendungs-Server, sodass sich eine IP-Änderung auf die Konnektivität zwischen Adobe-Servern und Ihren Informationssystemen auswirken kann.
 
 ![](assets/migration.png)
 
 Betrachten wir die beiden Fälle:
 
-* Eingehender Traffic: Die gesamte Netzwerkaktivität, die von Ihren Systemen oder anderen Drittanbietern an Adobe Campaign-Servern initiiert wird. Die Konfiguration wird von Adobe vorgenommen und dann während der Migration von der bestehenden Cloud in die Public Cloud kopiert. Anschließend wird die Konnektivität für den eingehenden Traffic wie nach der Migration beibehalten und es wird keine Aktion vom Kunden erwartet
+* Eingehender Traffic: Die gesamte Netzwerkaktivität, die von Ihren Systemen oder Drittanbietern an Adobe Campaign-Servern initiiert wird. Die Konfiguration wird von Adobe vorgenommen und dann während der Migration von der bestehenden Cloud in die Public Cloud kopiert. Die Konnektivität für eingehenden Traffic bleibt dann wie nach der Migration erhalten und es werden keine Maßnahmen seitens des Kunden erwartet. 
 
-* Ausgehender Traffic: Die gesamte Netzwerkaktivität, die von Adobe Campaign-Servern an Ihr Informationssystem oder einen anderen Drittanbieter initiiert wird (z. B.: SMS-Provider). Je nach den in Ihrem Unternehmen geltenden Sicherheitsrichtlinien kann die Änderung von IP-Adressen den Betrieb des Zulassungsliste-Programms über Ihr Informationssystem oder einen anderen Drittanbieter erfordern
+* Ausgehender Traffic: Die gesamte Netzwerkaktivität, die von Adobe Campaign-Servern an Ihr Informationssystem oder Drittanbieter initiiert wird (z. B. SMS-Anbieter). Je nach den in Ihrem Unternehmen geltenden Sicherheitsrichtlinien kann das Ändern von IP-Adressen einen Zulassungslisten-Vorgang Ihres Informationssystems oder eines anderen Dritten erforderlich machen.
 
 ### Globale Auswirkungen
 
@@ -131,17 +131,17 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
 * **Wirkt sich die Migration auf die Konnektivität zu externen Konten aus?**
 
-   Ja. Drittanbieterintegrationen, beispielsweise SMS-Anbieter, sollten der Zulassungsliste neue IP-Adressen von Adobe Campaign-Anwendungsservern hinzufügen.
+   Ja. Bei Integrationen von Drittanbietern, z. B. SMS-Anbietern, sollten neue IP-Adressen von Adobe Campaign-Anwendungs-Servern auf die Zulassungsliste gesetzt werden.
 
-* **Beeinträchtigt die Migration die Konnektivität zu Adobe Analytics bei Verwendung des Genesis-Connectors? Wie verhält es sich mit dem Hinzufügen von Campaign-IP-Adressen zur Zulassungsliste Adobe Analytics?**
+* **Beeinträchtigt die Migration die Konnektivität zu Adobe Analytics bei Verwendung des Genesis-Connectors? Wie sieht es mit dem Hinzufügen von Campaign-IP-Adressen zur Zulassungsliste in Adobe Analytics aus?**
 
    Die IP-Adressen der Adobe Campaign-Anwendungsserver ändern sich. Dieser Schritt wird von der Adobe-Kundenunterstützung nach der Migration ausgeführt.
 
 * **Beeinträchtigt die Migration die Konnektivität mit anderen Adobe-Lösungen (AEM, Target usw.)?**
 
-   Integrationen sind eine Kombination aus IP-Adressen, die auf der Zulassungsliste deklariert werden, und Webdienst-Kontokonfiguration. Dies wird von der Adobe-Kundenunterstützung berücksichtigt und gehört.
+   Integrationen sind eine Kombination aus IP-Adressen, die auf der Zulassungsliste angegeben werden, und Webservice-Kontokonfiguration. Dies wird von der Adobe-Kundenunterstützung berücksichtigt und liegt in ihrem Verantwortungsbereich.
 
-   Auf der Zulassungsliste werden IP-Adressen in der externen Lösung benötigt, da sich die IP der Anwendungsserver ändert. Diese Informationen werden bereitgestellt. Andere Teile der Integration sind IMS-basiert und sollten unverändert funktionieren.
+   Auf der Zulassungsliste werden IP-Adressen in der externen Lösung benötigt, da sich die IP der Anwendungs-Server ändert. Diese Informationen werden bereitgestellt. Andere Teile der Integration sind IMS-basiert und sollten unverändert funktionieren.
 
 * **Was ist mit Kunden, die keine Org-ID für die IMS-Integration haben?**
 
@@ -153,9 +153,9 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
 * **Hat die Migration Auswirkungen auf die API-Konnektivität?**
 
-   Die IP-Adresse der Adobe-Server wird sich ändern. Daher müssen die Kunden diese neuen IP-Adressen möglicherweise der Zulassungsliste in ihrem System hinzufügen.
+   Die IP-Adresse der Adobe-Server wird sich ändern. Deshalb müssen Kunden diese neuen IP-Adressen möglicherweise in ihrem System auf die Zulassungsliste setzen.
 
-   [Klicken Sie ](#config) hier , um weitere Informationen zu IP auf der Zulassungsliste zu erhalten.
+   [Klicken Sie hier](#config), um weitere Informationen zu IPs auf der Zulassungsliste zu erhalten.
 
 * **Stellt Adobe sicher, dass alle JavaScript-Speicherkonfigurationsparameter nach der Migration korrekt eingestellt sind?**
 
@@ -163,13 +163,13 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
 * **Besteht die Gefahr, dass auf bestimmte Dateierweiterungen nicht mehr zugegriffen werden kann?**
 
-   Es wird empfohlen, das Laden von Schriftartdateien und Outlook-Besprechungsdateien in den Ordner für öffentliche Ressourcen zuzulassen. Diese Konfiguration erfolgt in der aktuellen `config-<instance>.xml`-Datei. Diese wird gemeinsam mit den Konfigurationsdateien in das neue Rechenzentrum kopiert.
+   Es wird empfohlen, das Laden von Schriftartdateien und Outlook-Besprechungsdateien in den Ordner für öffentliche Ressourcen zuzulassen. Diese Konfiguration erfolgt in der aktuellen Datei `config-<instance>.xml`. Diese wird gemeinsam mit den Konfigurationsdateien in das neue Rechenzentrum kopiert.
 
 * **Ändert sich die Zeitzone auf dem neuen Server? Können Kunden ihre aktuelle Zeitzone beibehalten?**
 
    Sie kann sich je nach dem Standort des neuen Servers ändern. Die Kunden können jedoch ihre aktuelle Zeitzone beibehalten.
 
-   [Klicken Sie ](../../workflow/using/managing-time-zones.md) hier , um mehr über die Zeitzonenverwaltung in Adobe Campaign Classic v7 zu erfahren.
+   [Klicken Sie hier](../../workflow/using/managing-time-zones.md), um weitere Informationen zur Zeitzonenverwaltung in Adobe Campaign Classic v7 zu erhalten.
 
 
 ## Sicherheit und Berechtigungen
@@ -178,7 +178,7 @@ Globale Auswirkungen auf die Konfiguration, die Konnektivität mit anderen Syste
 
 Durch diese Migration zur Public Cloud (AWS) werden die Kundenumgebungen entsprechend allen nötigen Sicherheitsanforderungen laufend auf den neuesten Stand gebracht. Dies umfasst:
 
-* Neueste regelmäßige Betriebssystem- und Sicherheits-Patches
+* Regelmäßige neue Betriebssystem- und Sicherheits-Patches
 * Isolierung der Infrastruktur nach Kunden
 * Verwaltete Sicherheits- und Auditprüfungen zur Unterstützung von Cloud-Infrastrukturen wie Lastenausgleich, Netzwerksicherheitsregeln und Speicherverschlüsselung
 
@@ -186,9 +186,9 @@ Die Auswirkungen auf Berechtigungen, Zertifikate und SFTP-Zugriff sind unten auf
 
 * **Verschiebt Adobe alle Zertifikate auf die neuen Server?**
 
-   Ja, alle Zertifikate werden im Rahmen dieser Migration verschoben.
+   Ja, bei dieser Migration werden alle Zertifikate verschoben.
 
-* **Benötigt Adobe neue STP-Zugangsschlüssel vom Kunden?**
+* **Benötigt Adobe neue STP-Zugriffsschlüssel vom Kunden?**
 
    Nein, Adobe kopiert die SFTP-Zugriffsschlüssel auf den neuen Server.
 
@@ -198,17 +198,17 @@ Die Auswirkungen auf Berechtigungen, Zertifikate und SFTP-Zugriff sind unten auf
 
 * **Wie sieht der Notfallplan aus, um die Betriebsbereitschaft der Kunden sicherzustellen, sollte die SFTP-Verbindung nicht hergestellt werden können?**
 
-   Das einzige Verbindungsproblem, das auftreten kann, hängt mit der Zulassungsliste auf Kundenseite zusammen. Der Kunde sollte diesen Test in der Nicht-Produktionsumgebung durchführen, um sicherzustellen, dass alles funktioniert, bevor er zur Produktionsumgebung wechselt.
+   Das einzige Konnektivitätsproblem, das auftreten kann, hängt mit der Zulassungsliste auf Kundenseite zusammen. Der Kunde sollte diesen Test in der Nicht-Produktionsumgebung durchführen, um sicherzustellen, dass alles funktioniert, bevor er zur Produktionsumgebung wechselt.
 
-* **Gibt es für das Rechenzentrum spezifische Konfigurationen für Zulassungslisten, die verschoben werden müssen?**
+* **Gibt es spezielle Zulassungslisten-Konfigurationen für Rechenzentren, die ebenfalls migriert werden müssen?**
 
-   Nein, es gibt keine Data Center-spezifische Konfiguration für Zulassungslisten zu verwalten.
+   Nein, es gibt keine rechenzentrenspezifischen Zulassungslisten-Konfigurationen, die gehandhabt werden müssen.
 
 * **Stellt Adobe sicher, dass benutzerdefinierte Skripts in der neuen Umgebung ordnungsgemäß ausgeführt werden?**
 
    Bei der Kundenimplementierung können benutzerdefinierte Skripts (Perl/Shell/Python/JavaScript) in Workflows verwendet werden, um beispielsweise Dateien und Ordner zu bearbeiten.
 
-   Auf der gehosteten Instanz werden Skripte nur über die JavaScript-Engine ausgeführt. Andere Implementierungen können zu Sicherheitslücken und Problemen nach dem Upgrade führen. Sie werden deshalb nicht unterstützt.
+   Auf der gehosteten Instanz werden Skripts nur über die JavaScript-Engine ausgeführt. Andere Implementierungen können zu Sicherheitslücken und Problemen nach dem Upgrade führen. Sie werden deshalb nicht unterstützt.
 
 * **Wird die IMS-Integration in der neuen Instanz wie bisher funktionieren oder muss die Konfiguration aktualisiert werden?**
 
@@ -223,9 +223,9 @@ Die globalen Auswirkungen während der Migration werden unten aufgeführt.
 
 * **Sollten Vorkehrungen getroffen werden, um die Marketing-Aktivitäten während der Migration einzustellen?**
 
-   Adobe empfiehlt, alle Ausführungen zu verlangsamen und idealerweise anzuhalten, bevor die App im alten Rechenzentrum heruntergefahren wird: Sendungen und Workflows. Auf diese Weise wird der Neustart auf dem Cloud-Server (AWS) vereinfacht, da die Prozesse ausreichend Zeit hatten, ordnungsgemäß zu pausieren und den aktuellen Ausführungsstatus zu speichern.
+   Adobe empfiehlt, die Ausführung von Sendungen und Workflows zu verlangsamen und im Idealfall anzuhalten, bevor die Anwendung im alten Rechenzentrum heruntergefahren wird. Auf diese Weise wird der Neustart auf dem Cloud-Server (AWS) vereinfacht, da die Prozesse ausreichend Zeit hatten, ordnungsgemäß zu pausieren und den aktuellen Ausführungsstatus zu speichern.
 
-* **Sind Ausfallzeiten des Adobe Campaign-Dienstes zu erwarten?**
+* **Sind Ausfallzeiten des Adobe Campaign-Service zu erwarten?**
 
    Eine gewisse Ausfallzeit der Plattform ist bei der Migration unvermeidlich. Das Ziel dieses Plans ist es, Ihnen zu helfen, die Ausfallzeit möglichst gering zu halten.
 
@@ -270,13 +270,13 @@ Die globalen Auswirkungen während der Migration werden unten aufgeführt.
 
    Nach Abschluss der Anwendungsmigration ist keine erneute Ausführung von Prozessen im alten Rechenzentrum geplant. Wir gehen davon aus, dass alle Daten im alten Rechenzentrum gelöscht werden können. Die einzige Ausnahme ist das temporäre Backup, bis die geplanten Backup-Vorgänge auf Public Cloud (AWS) ausgeführt wurden.
 
-* **Wie viel Zeit wird nach der Migration zu Public Cloud für das Testen der einzelnen Instanzen benötigt?**
+* **Wie viel Zeit steht für das Testen jeder Instanz nach der Migration zur Public Cloud zur Verfügung?**
 
    Abhängig von der Komplexität des Systems des Kunden ist zwischen der Migration der Staging-Umgebung und der Produktionsumgebung eine Wartezeit von mindestens 1 Woche erforderlich.
 
-* **Wer wird mit dem Hinzufügen neuer IPs zur Zulassungsliste umgehen?**
+* **Wer kümmert sich um das Hinzufügen neuer IPs zur Zulassungsliste?**
 
-   Das Team der Kundenunterstützung von Adobe wird dafür sorgen, dass der Kunde und Dritte auf das neue System zugreifen können, indem die neuen IPs zur Zulassungsliste hinzugefügt werden.
+   Das Team der Kundenunterstützung von Adobe sorgt dafür, dass Kunden und etwaige Drittparteien Zugriff auf das neue System haben, indem die neuen IP-Adressen auf die Zulassungsliste gesetzt werden.
 
 ## Support und andere nützliche Links{#support}
 
