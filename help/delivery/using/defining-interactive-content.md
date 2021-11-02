@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: sending-emails
 exl-id: 3110c371-bbf2-4ab2-a701-3f348b5c1e7f
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1586'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -150,7 +150,7 @@ Derzeit können Sie das Senden einer AMP-E-Mail in zwei Schritten testen:
 
 1. Mit Adobe Campaign können Sie den Versand einer dynamischen AMP-E-Mail an ausgewählte E-Mail-Adressen, die entsprechend konfiguriert wurden, testen, um deren Inhalt und Verhalten zu überprüfen. Siehe [Testen des AMP-E-Mail-Versands für ausgewählte Adressen](#testing-amp-delivery-for-selected-addresses).
 
-1. Nach dem Test können Sie einen Versand oder eine Kampagne als Teil des Programms AMP for Email senden, indem Sie sich bei den entsprechenden E-Mail-Anbietern registrieren und Ihre Absender-Domain zur Zulassungsliste hinzufügen lassen. Siehe [Senden von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter](#delivering-amp-emails-by-registering).
+1. Nach dem Test können Sie einen Versand oder eine Kampagne als Teil des Programms &quot;AMP for Email&quot; senden, indem Sie sich bei den entsprechenden E-Mail-Anbietern registrieren und Ihre Absender-Domain auf die Zulassungsliste setzen lassen. Siehe [Senden von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter](#delivering-amp-emails-by-registering).
 
 ### Testen des AMP-E-Mail-Versands für ausgewählte Adressen {#testing-amp-delivery-for-selected-addresses}
 
@@ -174,7 +174,7 @@ Gehen Sie zum Testen des Versands einer AMP-E-Mail an eine Mail.ru-Adresse wie i
 
 ### Versand von AMP-E-Mails durch Registrierung bei einem E-Mail-Anbieter {#delivering-amp-emails-by-registering}
 
-Sie können mit dem Versand dynamischer E-Mails experimentieren, indem Sie sich bei den unterstützten E-Mail-Anbietern registrieren, um Ihre Absenderdomäne der Zulassungsliste hinzufügen zu lassen.
+Sie können mit dem Versand dynamischer E-Mails experimentieren, indem Sie sich bei den unterstützten E-Mail-Anbietern registrieren, um Ihre Absender-Domain der Zulassungsliste hinzufügen zu lassen.
 
 >[!NOTE]
 >
