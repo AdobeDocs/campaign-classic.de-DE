@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: adobe-target
 exl-id: 2e29d090-b87b-4cff-a703-58e1da082f04
 source-git-commit: 0996cc313be93300bce2f094c97e45a794cd459e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Verschiedene Datentypen können in Verbindung mit Adobe Target zum Einsatz komme
 
 * Daten aus dem Adobe Campaign-Datamart;
 * Segmente im Zusammenhang mit der Visitor ID in Adobe Target, wenn die verwendeten Daten keinen rechtlichen Beschränkungen unterliegen;
-* Adobe Target-Daten: Benutzeragent, IP-Adresse, Geolocation-Daten
+* Daten aus Adobe Target (Benutzera, IP-Adresse, Daten zur Geolokalisierung).
 
 >[!NOTE]
 >
