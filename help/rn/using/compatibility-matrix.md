@@ -168,7 +168,7 @@ Weitere Informationen über veraltete Elemente erhalten Sie auf [dieser Seite](.
 
 ## CRM-Connectoren{#CRMconnectors}
 
-Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). [Weitere Informationen](../../platform/using/crm-connectors.md) zu Campaign-CRM-Connectoren.
+Unten finden Sie die mit Adobe Campaign kompatiblen CRM-Systeme (Customer Relationship Management). [Weitere Informationen](../../platform/using/crm-connectors.md) zu CRM-Connectoren für Campaign.
 
 <table>
 <tbody>
@@ -289,7 +289,7 @@ Die folgenden externen Datenbanken sind mit dem [Federated Data Access-Modul](..
 
 ## Client-Konsole {#ClientConsoleoperatingsystems}
 
-Die folgenden Betriebssysteme und Browser **sind erforderlich** für die Verwendung der [Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md).
+Für die Verwendung der [Campaign-Client-Konsole](../../installation/using/installing-the-client-console.md) sind die folgenden Betriebssysteme und Browser **erforderlich**.
 
 ### Betriebssysteme
 
@@ -353,7 +353,7 @@ Sie können Campaign verwenden, um [Push-Benachrichtigungen](../../delivery/usin
 
 ## Browser{#Browsers}
 
-Die folgenden Browser sind für Campaign mit [Web-Zugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
+Die folgenden Browser sind mit Campaign für [Web-Zugriff](../../campaign/using/accessing-marketing-campaigns.md#using-the-web-interface-) kompatibel.
 
 <table>
 <tbody>
@@ -405,6 +405,6 @@ Die folgenden Browser sind für Campaign mit [Web-Zugriff](../../campaign/using/
 
 * [Versionshinweise zu Campaign Classic](../../rn/using/latest-release.md)
 * [Campaign – allgemeine Architektur](../../installation/using/general-architecture.md)
-* [Empfehlungen zur Hardware-Bemessung](../../technotes/using/hardware-sizing.md)
+* [Empfehlungen zur Hardware-Dimensionierung](../../technotes/using/hardware-sizing.md)
 * [Veraltete Funktionen und Systeme](../../rn/using/deprecated-features.md)
 * [Vorgehen beim Build-Upgrade](../../production/using/build-upgrade.md)

@@ -25,7 +25,7 @@ Die entsprechenden Aktualisierungen finden Sie in den [Versionshinweisen zu Adob
 
 Vorhandene Technotes wurden in den neuen Abschnitt **Technote** gruppiert.
 
-Die Seite **Empfehlungen zur Hardware-Bemessung** wurde aktualisiert und zum Abschnitt **Technotes** hinzugefügt. [Mehr dazu](../../technotes/using/hardware-sizing.md)
+Die Seite **Empfehlungen zur Hardware-Dimensionierung** wurde aktualisiert und zum Abschnitt **Technotes** hinzugefügt. [Mehr dazu](../../technotes/using/hardware-sizing.md)
 
 ## September 2021{#sept-2021}
 

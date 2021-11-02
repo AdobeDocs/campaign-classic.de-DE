@@ -111,7 +111,7 @@ ht-degree: 100%
          + [Verbinden mit Salesforce.com](platform/using/crm-sfdc.md)
          + [Synchronisieren von Daten mit dem CRM](platform/using/crm-data-sync.md)
       + Adobe Analytics Connector{#analytics-connector}
-         + [Bereitstellung des Adobe Analytics Connector](platform/using/adobe-analytics-provisioning.md)
+         + [Bereitstellung des Adobe Analytics Connectors](platform/using/adobe-analytics-provisioning.md)
          + [Adobe Analytics Connector – Integration](platform/using/adobe-analytics-connector.md)
          + [Migrieren zum Adobe Analytics Connector](technotes/using/aa-connector-migration.md)
          + [Adobe Analytics Data Connector](platform/using/adobe-analytics-data-connector-legacy.md)
@@ -843,7 +843,7 @@ ht-degree: 100%
       + [Spezifische Konfigurationen in v6.10](migration/using/specific-configurations-in-v6-10.md)
    + [Rollback-Verfahren](migration/using/about-rollback.md)
 + Technotes {#technotes}
-   + [Empfehlungen zur Hardware-Bemessung](technotes/using/hardware-sizing.md)
+   + [Empfehlungen zur Hardware-Dimensionierung](technotes/using/hardware-sizing.md)
    + Aktualisierungen und Migrationen{#technote-migration}
       + [Technotes](technotes/using/technote.md)
       + [Konfigurations-Aktualisierungen in Campaign](technotes/using/acc-config-updates.md)

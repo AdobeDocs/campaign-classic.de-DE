@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Version 18.6.2 – Build 8949{#release-18-6-3-build-8949}
 
-&#x200B;22. August 2018
+22. August 2018
 
 >[!CAUTION]
 >
