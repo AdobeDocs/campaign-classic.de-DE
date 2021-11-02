@@ -7,9 +7,9 @@ role: User, Admin
 level: Beginner
 exl-id: 0dc6ce98-dc3e-4242-953e-e7cec55289ff
 source-git-commit: 1f6846f29c44719fdbd334327466619ed265452a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1723'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -47,9 +47,9 @@ Der Aktionsradius der verschiedenen Tools gestaltet sich wie folgt:
 
 >[!IMPORTANT]
 >
-> Bei Hybrid- und On-Premise-Implementierungen müssen Sie die in dieser [Seite](../../platform/using/adobe-analytics-provisioning.md) beschriebenen Bereitstellungsschritte ausführen.
+> Bei Hybrid- und On-Premise-Implementierungen müssen Sie die auf dieser [Seite](../../platform/using/adobe-analytics-provisioning.md) beschriebenen Bereitstellungsschritte ausführen.
 
-Um den Data Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
+Um den Daten-Connector einzurichten, verbinden Sie sich mit Ihrer Adobe Campaign-Instanz und gehen Sie folgendermaßen vor:
 
 1. [Konfigurieren Sie Konversionsvariablen und Erfolgsereignisse.](#configure-conversion-success)
 1. [Konfigurieren Sie Ihr externes Konto in Adobe Campaign Classic.](#external-account-classic)
@@ -90,7 +90,7 @@ To set up the Adobe Analytics/Adobe Campaign Classic integration, you must conne
 
 ### Konfigurieren von Konversionsvariablen und Erfolgsereignissen {#configure-conversion-success}
 
-Sie müssen Ihre **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgsereignisse]** wie folgt konfigurieren:
+Sie müssen die **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgsereignisse]** wie folgt konfigurieren:
 
 1. Wählen Sie die **[!UICONTROL Report Suite]** aus, die Sie mit Adobe Campaign verknüpfen möchten.
 
@@ -133,7 +133,7 @@ Sie müssen Ihre **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgs
 
 1. Klicken Sie abschließend auf **[!UICONTROL Speichern]**.
 
-Nachdem Sie die **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgsereignisse]** konfiguriert haben, stellen Sie sicher, dass die Variablen in dem für den Analytics Connector erstellten **[!UICONTROL Produktprofil]** enthalten sind. Weitere Informationen hierzu finden Sie unter [Adobe Analytics-Produktprofil erstellen](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile).
+Nachdem Sie die **[!UICONTROL Konversionsvariablen]** und **[!UICONTROL Erfolgsereignisse]** konfiguriert haben, stellen Sie sicher, dass die Variablen in dem für den Analytics-Connector erstellten **[!UICONTROL Produktprofil]** enthalten sind. Weitere Informationen hierzu finden Sie unter [Adobe Analytics-Produktprofil erstellen](../../platform/using/adobe-analytics-provisioning.md#analytics-product-profile).
 
 Anschließend müssen Sie die **[!UICONTROL externen Konten]** in Adobe Campaign Classic konfigurieren.
 
@@ -161,7 +161,7 @@ Weiterführende Informationen hierzu finden Sie auf der Seite [Produktprofile f�
 
 1. Klicken Sie auf den Link **[!UICONTROL Konfigurieren]**, der sich neben der Dropdown-Liste **[!UICONTROL Integration]** befindet.
 
-1. Ordnen Sie im Fenster **[!UICONTROL Analytics-Integration konfigurieren]** Ihr externes Konto Ihrer Report Suite zu, indem Sie die folgenden Informationen bereitstellen:
+1. Ordnen Sie das externe Konto Ihrer zuvor erstellten Report Suite zu, indem Sie im Fenster **[!UICONTROL Analytics-Integration konfigurieren]** die folgenden Informationen angeben:
 
    * **[!UICONTROL E-Mail]**
    * **[!UICONTROL IMS Org]**
