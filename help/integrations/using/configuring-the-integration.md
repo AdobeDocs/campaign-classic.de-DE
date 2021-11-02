@@ -6,9 +6,9 @@ audience: integrations
 content-type: reference
 exl-id: 54ee88b2-e646-4fb9-abec-957f0096f15f
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ Wenn Ihre Campaign-Instanz von Adobe gehostet wird, wenden Sie sich an das Team 
 
 ### Externes Konto konfigurieren {#configure-the-external-account}
 
-Mit dem Package **[!UICONTROL Integration mit Adobe Experience Manager]** wurde das externe Konto für Adobe Experience Cloud erstellt. Jetzt muss es konfiguriert werden, um eine Verbindung mit Ihrer Adobe-Experience-Manager-Instanz herzustellen.
+Mit dem Package **[!UICONTROL Integration mit Adobe Experience Manager]** wurde das externe Konto für Adobe Experience Cloud erstellt. Jetzt muss es konfiguriert werden, um eine Verbindung mit Ihrer Adobe Experience Manager-Instanz herzustellen.
 
-Gehen Sie wie folgt vor, um das externe AEM-Konto zu konfigurieren:
+Gehen Sie zur Konfiguration des externen AEM-Kontos folgendermaßen vor:
 
 1. Wählen Sie die **[!UICONTROL Explorer]**-Schaltfläche aus.
 
