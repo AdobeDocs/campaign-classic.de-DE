@@ -8,13 +8,13 @@ role: User, Admin
 level: Beginner
 exl-id: 24e002aa-4e86-406b-92c7-74f242ee4b86
 source-git-commit: 0830e7b8a430fa18bc1326b972741e2e4dc76342
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# Adobe Analytics Connector-Bereitstellung {#adobe-analytics-connector-provisioning}
+# Bereitstellung des Adobe Analytics-Connectors {#adobe-analytics-connector-provisioning}
 
 ![](../../assets/v7-only.svg)
 
@@ -22,9 +22,9 @@ ht-degree: 7%
 >
 > Diese Schritte sollten nur von Hybrid- und On-Premise-Implementierungen durchgeführt werden.
 >
->Bei gehosteten Implementierungen wenden Sie sich an das [Adobe-Kundenunterstützungs-](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-Team.
+>Bei gehosteten Implementierungen wenden Sie sich an das [Adobe-Kundenunterstützungs](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)-Team.
 
-Die Integration zwischen Adobe Campaign Classic und Adobe Analytics-Authentifizierung unterstützt Adobe Identity Management Service (IMS). Sie müssen Adobe IMS implementieren und eine Verbindung zu Campaign [über eine Adobe ID](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/connect-to-campaign/connecting-via-an-adobe-id/about-adobe-id.html?lang=en) herstellen, bevor Sie die Analytics Connector-Implementierung starten.
+Die Integration zwischen Adobe Campaign Classic und Adobe Analytics-Authentifizierung unterstützt Adobe Identity Management Service (IMS). Daher müssen Sie Adobe IMS implementieren und [über eine Adobe ID](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/connect-to-campaign/connecting-via-an-adobe-id/about-adobe-id.html?lang=de) eine Verbindung zu Campaign herstellen, bevor Sie die Implementierung des Analytics-Connectors starten.
 
 Damit diese Integration funktioniert, müssen Sie ein Adobe Analytics-Produktprofil erstellen, das ausschließlich für den Analytics-Connector verwendet wird. Anschließend müssen Sie ein Adobe I/O-Projekt erstellen.
 
@@ -32,11 +32,11 @@ Damit diese Integration funktioniert, müssen Sie ein Adobe Analytics-Produktpro
 
 Das Produktprofil bestimmt die Zugriffsebene eines Benutzers auf Ihre verschiedenen Analytics-Komponenten.
 
-Wenn Sie bereits über ein Analytics-Produktprofil verfügen, sollten Sie weiterhin ein neues Adobe Analytics-Produktprofil erstellen, das ausschließlich für den Analytics-Connector verwendet wird. Dadurch wird sichergestellt, dass Ihr Produktprofil mit den richtigen Berechtigungen für diese Integration ausgestattet ist.
+Wenn Sie bereits über ein Analytics-Produktprofil verfügen, sollten Sie dennoch ein neues Adobe Analytics-Produktprofil erstellen, das ausschließlich für den Analytics-Connector verwendet wird. Dadurch wird sichergestellt, dass Ihr Produktprofil mit den richtigen Berechtigungen für diese Integration ausgestattet ist.
 
-Weitere Informationen zu Produktprofilen finden Sie in der [Dokumentation zur Admin Console](https://helpx.adobe.com/mt/enterprise/admin-guide.html).
+Weiterführende Informationen zu Produktprofilen finden Sie in der [Dokumentation zur Admin Console](https://helpx.adobe.com/de/enterprise/admin-guide.html).
 
-1. Wählen Sie in der [Admin Console](https://adminconsole.adobe.com/) Ihre Adobe Analytics **[!UICONTROL Product]** aus.
+1. Wählen Sie in der [Admin Console](https://adminconsole.adobe.com/) Ihr Adobe Analytics-**[!UICONTROL Produkt]** aus.
 
    ![](assets/do-not-localize/triggers_1.png)
 
@@ -46,25 +46,25 @@ Weitere Informationen zu Produktprofilen finden Sie in der [Dokumentation zur Ad
 
 1. Fügen Sie einen **[!UICONTROL Produktprofilnamen]** hinzu. Wir empfehlen, die folgende Syntax zu verwenden: `reserved_campaign_classic_<Company Name>`. Klicken Sie dann auf **[!UICONTROL Weiter]**.
 
-   Dieses **[!UICONTROL Produktprofil]** sollte ausschließlich für den Analytics Connector verwendet werden, um Konfigurationsfehler zu vermeiden.
+   Dieses **[!UICONTROL Produktprofil]** sollte ausschließlich für den Analytics-Connector verwendet werden, um Konfigurationsfehler zu vermeiden.
 
 1. Öffnen Sie das neu erstellte **[!UICONTROL Produktprofil]** und wählen Sie die Registerkarte **[!UICONTROL Berechtigungen]** aus.
 
    ![](assets/do-not-localize/triggers_3.png)
 
-1. Konfigurieren Sie die verschiedenen Funktionen, die auf **[!UICONTROL Bearbeiten]** klicken, und wählen Sie die Berechtigungen aus, die Sie Ihrem **[!UICONTROL Produktprofil]** zuweisen möchten, indem Sie auf das Pluszeichen (+) klicken.
+1. Konfigurieren Sie die verschiedenen Funktionen, indem Sie auf **[!UICONTROL Bearbeiten]** klicken, und wählen Sie die Berechtigungen aus, die Sie Ihrem **[!UICONTROL Produktprofil]** zuweisen möchten, indem Sie auf das Pluszeichen (+) klicken.
 
-   Weitere Informationen zum Verwalten von Berechtigungen finden Sie in der [Dokumentation zur Admin Console](https://helpx.adobe.com/mt/enterprise/using/manage-permissions-and-roles.html).
+   Weitere Informationen zum Verwalten von Berechtigungen finden Sie in der [Dokumentation zur Admin Console](https://helpx.adobe.com/de/enterprise/using/manage-permissions-and-roles.html).
 
 1. Fügen Sie für die Funktion **[!UICONTROL Report Suites]** die **[!UICONTROL Report Suites]** hinzu, die Sie später verwenden müssen.
 
-   Wenn Sie über keine Report Suites verfügen, können Sie diese wie folgt erstellen: [Diese Schritte](../../platform/using/adobe-analytics-connector.md#report-suite-analytics).
+   Wenn Sie über keine Report Suites verfügen, können Sie diese mit [diesen Schritten](../../platform/using/adobe-analytics-connector.md#report-suite-analytics) erstellen.
 
    ![](assets/do-not-localize/triggers_4.png)
 
-1. Fügen Sie für die Funktion **[!UICONTROL Metriken]** die Funktion **[!UICONTROL Metriken]** hinzu, die Sie später konfigurieren müssen.
+1. Fügen Sie für die Funktion **[!UICONTROL Metriken]** die **[!UICONTROL Metriken]** hinzu, die Sie später konfigurieren müssen.
 
-   Bei Bedarf können Sie die Option Automatisch einschließen aktivieren, mit der jedes Berechtigungselement zur eingeschlossenen Liste hinzugefügt und automatisch neue Berechtigungselemente hinzugefügt werden.
+   Bei Bedarf können Sie die Option &quot;Automatisch einschließen&quot; aktivieren, mit der jedes Berechtigungselement zur eingeschlossenen Liste hinzugefügt wird und automatisch neue Berechtigungselemente hinzugefügt werden.
 
    ![](assets/do-not-localize/triggers_13.png)
 
@@ -76,15 +76,15 @@ Weitere Informationen zu Produktprofilen finden Sie in der [Dokumentation zur Ad
    * **[!UICONTROL Konversionsvariablen]**
    * **[!UICONTROL Erfolgsereignisse]**
    * **[!UICONTROL Benutzerdefinierter Data Warehouse-Bericht]**
-   * **[!UICONTROL Data Sources Manager]**
+   * **[!UICONTROL Datenquellen-Manager]**
    * **[!UICONTROL Klassifizierungen]**
 
-1. Fügen Sie für die Funktion **[!UICONTROL Analytics Tools]** die folgenden Berechtigungen hinzu:
+1. Fügen Sie für die Funktion **[!UICONTROL Analytics-Tools]** die folgenden Berechtigungen hinzu:
 
-   * **[!UICONTROL Code-Manager - Webdienste]**
-   * **[!UICONTROL Protokolle - Webdienste]**
-   * **[!UICONTROL Webdienste]**
-   * **[!UICONTROL Webdienstzugriff]**
+   * **[!UICONTROL Code-Manager - Web-Services]**
+   * **[!UICONTROL Protokolle - Web-Services]**
+   * **[!UICONTROL Web-Services]**
+   * **[!UICONTROL Web-Service-Zugriff]**
    * **[!UICONTROL Erstellung berechneter Metriken]**
    * **[!UICONTROL Segmenterstellung]**
 
@@ -92,9 +92,9 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
 
 ## Erstellen eines Adobe I/O-Projekts {#create-adobe-io}
 
-1. Greifen Sie auf die Adobe I/O zu und melden Sie sich als **Systemadministrator** der IMS-Organisation an.
+1. Rufen Sie Adobe I/O auf und melden Sie sich als **Systemadministrator** für die IMS-Organisation an.
 
-   Weiterführende Informationen zu Admin-Rollen finden Sie auf dieser [Seite](https://helpx.adobe.com/enterprise/using/admin-roles.html).
+   Weiterführende Informationen zu Administratorrollen finden Sie auf dieser [Seite](https://helpx.adobe.com/de/enterprise/using/admin-roles.html).
 
 1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]**.
 
@@ -108,11 +108,11 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
 
    ![](assets/do-not-localize/triggers_7.png)
 
-1. Wählen Sie **[!UICONTROL Dienstkonto (JWT)]** als Authentifizierungstyp aus und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie **[!UICONTROL Dienstkonto (JWT)]** als Authentifizierungstyp aus und klicken Sie auf **[!UICONTROL Weiter]**. 
 
    ![](assets/do-not-localize/triggers_8.png)
 
-1. Wählen Sie die Option **[!UICONTROL 1 aus: Generieren Sie ein Schlüsselpaar]** und klicken Sie auf **[!UICONTROL Generieren Sie ein Schlüsselpaar]**.
+1. Wählen Sie die **[!UICONTROL Option 1: Schlüsselpaar generieren]** aus und klicken Sie auf **[!UICONTROL Schlüsselpaar generieren]**.
 
    Die Datei config.zip wird dann automatisch heruntergeladen.
 
@@ -122,7 +122,7 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
 
    ![](assets/do-not-localize/triggers_10.png)
 
-1. Wählen Sie das **[!UICONTROL Produktprofil]** aus, das in den vorherigen Schritten erstellt wurde, die in diesem Abschnitt [Abschnitt](#analytics-product-profile) beschrieben sind.
+1. Wählen Sie das **[!UICONTROL Produktprofil]** aus, das in den vorherigen Schritten erstellt wurde, die in diesem [Abschnitt](#analytics-product-profile) beschrieben sind.
 
 1. Klicken Sie dann auf **[!UICONTROL Konfigurierte API speichern]**.
 
@@ -137,7 +137,7 @@ Ihr Produktprofil ist jetzt konfiguriert. Anschließend müssen Sie das Adobe I/
 
    ![](assets/do-not-localize/triggers_12.png)
 
-1. Fügen Sie diese Anmeldedaten für Dienstkonten mithilfe des folgenden Befehls in den nlserver ein:
+1. Fügen Sie diese Anmeldedaten für das Dienstkonto mithilfe des folgenden Befehls in den nlserver ein:
 
    ```
    nlserver config -instance:<instanceName> -setimsjwtauth::<ImsOrgId>/<ClientId>/<TechnicalAccountId>/<ClientSecret>/<$(base64 -w0 /path/to/private.key)>
