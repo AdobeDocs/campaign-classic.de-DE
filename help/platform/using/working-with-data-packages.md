@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: administration-basics
 exl-id: d3369b63-a29b-43b7-b2ad-d36d4f46c82e
 source-git-commit: 00b8a9b4a693920aa6b4be9e7c41f08c2e53a0c6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -301,9 +301,9 @@ Gehen Sie wie folgt vor, um ein Package über eine Package-Definition zu exporti
 
 ## Packages importieren {#importing-packages}
 
-Auf den Package-Import-Assistenten kann über das Hauptmenü **[!UICONTROL Tools > Erweitert > Package-Import]** der Adobe Campaign-Clientkonsole zugegriffen werden.
+Der Package-Import-Assistent wird im Hauptmenü der Adobe Campaign-Client-Konsole über **[!UICONTROL Tools > Erweitert > Package importieren...]** aufgerufen.
 
-Sie können ein Package aus einem zuvor durchgeführten Export, zum Beispiel aus einer anderen Adobe Campaign-Instanz, oder je nach Ihren Lizenzbedingungen ein [natives Package](../../installation/using/installing-campaign-standard-packages.md) importieren.
+Sie können ein Package je nach Ihren Lizenzbedingungen aus einem zuvor durchgeführten Export, zum Beispiel aus einer anderen Adobe Campaign-Instanz, oder aus einem [integrierten Package](../../installation/using/installing-campaign-standard-packages.md) importieren.
 
 ![](assets/ncs_datapackage_import.png)
 
