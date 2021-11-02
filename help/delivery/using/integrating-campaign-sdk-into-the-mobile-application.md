@@ -8,9 +8,9 @@ topic-tags: sending-push-notifications
 version: Classic v7
 exl-id: a5f6b82d-5561-4e56-b2ed-7fd6fd8c2b55
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '956'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -340,7 +340,7 @@ Um stille Benachrichtigungen zu tracken, gehen Sie analog zum folgenden Beispiel
 >
 >Bitte beachten Sie, dass diese Funktion nur für iOS verfügbar ist.
 
-In iOS können Sie mit dem Delegationsprotokoll das Ergebnis des Aufrufs **registerDevice** abrufen und feststellen, ob bei der Registrierung ein Fehler aufgetreten ist.
+Mit dem Delegationsprotokoll können Sie in iOS das Ergebnis des **registerDevice**-Aufrufs abrufen und feststellen, ob bei der Registrierung ein Fehler aufgetreten ist.
 
 Der **registerDeviceStatus**-Prototyp ist:
 
@@ -348,7 +348,7 @@ Der **registerDeviceStatus**-Prototyp ist:
 - (void) registerDeviceStatus: (ACCRegisterDeviceStatus) status:(NSString *) errorReason;
 ```
 
-**** Status gibt Auskunft darüber, ob eine Registrierung erfolgreich war oder ob ein Fehler aufgetreten ist.
+**Status** ermöglicht festzustellen, ob eine Registrierung erfolgreich war oder ob ein Fehler aufgetreten ist.
 
 **ErrorReason** liefert zusätzliche Informationen zu den aufgetretenen Fehlern. Weiterführende Informationen zu möglichen Fehlern und deren Beschreibung finden Sie in der folgenden Tabelle.
 
