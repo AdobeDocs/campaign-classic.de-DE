@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: d589180b-8e1d-4149-9b16-3f541018a41f
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2098'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Dieser Abschnitt enthält Informationen zur Überwachung der Ausführung Ihrer W
 
 Ein Anwendungsbeispiel zum Erstellen eines Workflows, mit dem Sie den Status einer Reihe von Workflows überwachen können, die „ausgesetzt“, „angehalten“ oder „Mit Fehlern“ sind, finden Sie zudem in [diesem Abschnitt](supervising-workflows.md#supervising-workflows).
 
-Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows, den Status Ihrer Workflows, zu überprüfen. Weitere Informationen hierzu finden Sie im [Produktionshandbuch zu Campaign Classic v7](../../production/using/audit-trail.md).
+Darüber hinaus können Administratoren der Instanz das **Audit-Protokoll** verwenden, um Aktivitäten und letzte Änderungen an Workflows und somit den Zustand Ihrer Workflows zu überprüfen. Weitere Informationen hierzu finden Sie im [Produktionshandbuch zu Campaign Classic v7](../../production/using/audit-trail.md).
 
 Weitere Möglichkeiten zur Überwachung der verschiedenen Campaign-Prozesse finden Sie im [Produktionshandbuch zu Campaign Classic v7](../../production/using/monitoring-guidelines.md).
 
@@ -242,11 +242,11 @@ Sie können auch spezifische technische Workflows erstellen, um unnötige Daten 
 
 ## Ausgesetzte Workflows handhaben {#handling-of-paused-workflows}
 
-Wenn ein Workflow angehalten wird, werden seine Arbeitstabellen standardmäßig nie bereinigt. Ab Build 8880 werden Workflows, die zu lange ausgesetzt waren, automatisch angehalten und ihre Arbeitstabellen bereinigt. Dieses Verhalten wird wie folgt ausgelöst:
+Die Arbeitstabellen ausgesetzter Workflows werden standardmäßig nie bereinigt. Ab Build 8880 werden Workflows, die zu lange in einem ausgesetzten Zustand angehalten werden, automatisch gestoppt und deren Arbeitstabellen bereinigt. Dieses Verhalten wird wie folgt ausgelöst:
 
 * Sind Workflows länger als sieben Tage ausgesetzt, erscheint ein Warnhinweis im Monitoring-Dashboard (und in der Monitoring-API) und eine Benachrichtigung wird an die Supervisoren-Gruppe gesendet.
 * Dasselbe passiert jede Woche, wenn der technische Workflow **[!UICONTROL cleanupPausedWorkflows]** ausgelöst wird. Weiterführende Informationen dazu finden Sie in [diesem Abschnitt](delivery.md).
-* Nach vier Benachrichtigungen (d. h. standardmäßig nach einem Monat im ausgesetzten Zustand) wird der Workflow bedingungslos gestoppt. Ein Protokoll wird im Workflow angezeigt, nachdem es angehalten wurde. Die Tabellen werden bei der nächsten Ausführung des Workflows **[!UICONTROL cleanup]** bereinigt
+* Nach vier Benachrichtigungen (d. h. standardmäßig nach einem Monat im ausgesetzten Zustand) wird der Workflow bedingungslos gestoppt. Ein Protokoll wird im Workflow angezeigt, nachdem er angehalten wurde. Die Tabellen werden bei der nächsten Ausführung des Workflows **[!UICONTROL Bereinigung]** bereinigt
 
 Diese Zeiträume können mit der Option NmsServer_PausedWorkflowPeriod konfiguriert werden.
 
