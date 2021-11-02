@@ -4,13 +4,13 @@ title: Migrieren zum Adobe Analytics Connector
 description: Häufig gestellte Fragen zum Campaign und Analytics Connector
 exl-id: 5bf61654-3d68-4560-a93f-7a768a2c5be4
 source-git-commit: e82bcef34ba8a9d5a7e6c4a59552d8cb7c800ca5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '855'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Migrieren vorhandener Genesis-Integrationen zu Adobe Analytics Connector {#acc-aa-faq}
+# Migrieren vorhandener Genesis-Integrationen zum Adobe Analytics-Connector {#acc-aa-faq}
 
 ![](../../assets/v7-only.svg)
 
@@ -18,7 +18,7 @@ Ab Campaign Classic Version v7 21.1.3 wird der Adobe Analytics Data Connector ni
 
 Am 1. August 2021 wurde Adobe Campaign Classic aus der veralteten Data Connectors-Benutzeroberfläche entfernt. Vorhandene Campaign-Integrationen werden jedoch bis zum 1. März 2022 weiterhin Daten erfassen und an Adobe Analytics weitergeben können. Nach diesem Datum wird die Integration die Erfassung und Weitergabe von Daten an Adobe Analytics einstellen.
 
-**Sie müssen** die neue Adobe Analytics Connector-Integration in Adobe Exchange implementieren, die die veraltete Data Connectors-Integration ersetzt. Weitere Informationen zu Adobe Analytics Connector finden Sie auf [dieser Seite](../../platform/using/adobe-analytics-connector.md).
+Sie müssen die neue Adobe Analytics-Connector-Integration in Adobe Exchange **implementieren**, die die veraltete Daten-Connector-Integration ersetzt. Weitere Informationen zum Adobe Analytics-Connector finden Sie auf [dieser Seite](../../platform/using/adobe-analytics-connector.md).
 
 >[!NOTE]
 >
@@ -36,9 +36,9 @@ Eine neue Integration zwischen Campaign Classic v7 und Adobe Analytics ist jetzt
 
 * Die integrierten technischen Workflows und ihr Verhalten bleiben unverändert. Es wurden nur die Backend-APIs geändert, die von den Workflows zum Push/Pull von Daten zu/von Adobe Analytics verwendet werden.
 
-* Beachten Sie, dass der `nlserver`-Prozess mit dem Benutzer des technischen IMS-Kontos konfiguriert werden muss, damit der neue Connector funktioniert. Diese Änderung muss von Adobe vorgenommen werden. Wenden Sie sich zur Implementierung an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+* Beachten Sie, dass der `nlserver`-Prozess mit dem Benutzer des technischen IMS-Kontos konfiguriert werden muss, damit der neue Connector funktioniert. Diese Änderung muss von Adobe vorgenommen werden. Wenden Sie sich zur Implementierung an die [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
-* Wenn Sie Adobe Genesis-APIs in benutzerdefinierten Workflows zum Abrufen und Übertragen der Daten aus Adobe Analytics waren, müssen Sie jetzt die neuen Adobe Analytics 1.4/2.0-APIs verwenden. [Weitere Informationen](https://adobeexchangeec.zendesk.com/hc/de-de/articles/360047148832-Replacements-for-Data-Connector-API-calls)
+* Wenn Sie Adobe Genesis-APIs in benutzerdefinierten Workflows zum Abrufen und Übertragen (Pull/Push) der Daten aus Adobe Analytics verwendet haben, müssen Sie jetzt die neuen Adobe Analytics 1.4/2.0-APIs verwenden. [Weitere Informationen](https://adobeexchangeec.zendesk.com/hc/de-de/articles/360047148832-Replacements-for-Data-Connector-API-calls)
 
 ## Sind Sie betroffen?
 
@@ -50,7 +50,7 @@ Wenn Sie den vorhandenen Adobe Analytics Data Connector (früher Genesis-Integra
 
 Sie müssen **vor dem 1. März 2022** das Upgrade auf Campaign 21.1.3 (oder höher) vornehmen.
 
-Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um für Ihre Instanz(en) das Upgrade auf die neuere Version vorzunehmen. Anschließend können Sie [Adobe Analytics-Connector](../../platform/using/adobe-analytics-connector.md) verwenden.
+Wenn Sie ein gehosteter Kunde sind, wird Adobe in Kürze auf Sie zukommen, um für Ihre Instanz(en) das Upgrade auf die neuere Version vorzunehmen. Anschließend können Sie den [Adobe Analytics-Connector](../../platform/using/adobe-analytics-connector.md) verwenden.
 
 Als On-Premise-/Hybrid-Kunde müssen Sie das Upgrade auf eine der neueren Versionen vornehmen, um von der neuen Integration profitieren zu können.
 Sobald alle Instanzen das Upgrade erhalten haben, können Sie [die neue Integration](../../platform/using/adobe-analytics-provisioning.md) in Adobe Analytics Connector implementieren und einen nahtlosen Übergang sicherstellen.
@@ -82,7 +82,7 @@ Die Integration beruht für die tägliche Verwendung auf Daten aus dem Token fü
 
 Wenn Details einer Analytics-Komponente abgefragt werden (z. B. Metriken/Dimensionen/Segmente/Report Suites), gibt die API diese Komponenten nicht im Ergebnis zurück (was so aussehen kann, als würde etwas auf der Analytics-Seite gelöscht oder wäre nicht vorhanden). Die Analytics-API lehnt diese Anfragen ab und gibt eine Fehlermeldung zurück.
 
-Die Lösung besteht darin, das **Produktprofil** im Analytics-Benutzer-Kontext des technischen Benutzer-Tokens mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in der [Adobe Admin Console](https://adminconsole.adobe.com/) hinzugefügt werden. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+Die Lösung besteht darin, das **Produktprofil** im Analytics-Benutzer-Kontext des technischen Benutzer-Tokens mit den neu erstellten/fehlenden Komponenten zu aktualisieren, indem diese Komponenten in der [Adobe Admin Console](https://adminconsole.adobe.com/) hinzugefügt werden. Weitere Informationen erhalten Sie bei der [Adobe-Kundenunterstützung](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 
 ## Nützliche Links
 
