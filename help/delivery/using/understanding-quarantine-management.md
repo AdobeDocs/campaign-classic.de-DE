@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: monitoring-deliveries
 exl-id: cfd8f5c9-f368-4a31-a1e2-1d77ceae5ced
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2703'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -261,7 +261,7 @@ Adobe Campaign kontaktiert den Baidu-Server alle zehn Minuten, um den Status der
 
 **Für Android V2**
 
-Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für Android V1. Dasselbe gilt für die Aktualisierung von Anmeldungen und Ausschlüssen. Weitere Informationen hierzu finden Sie im Abschnitt [Android V1](#android-quarantine) .
+Der Quarantänemechanismus für Android V2 verwendet denselben Prozess wie für Android V1. Dasselbe gilt für die Aktualisierung von Anmeldungen und Ausschlüssen. Weiterführende Informationen hierzu finden Sie im Abschnitt [Android V1](#android-quarantine).
 
 <table> 
  <tbody> 
