@@ -7,9 +7,9 @@ role: User, Data Architect
 level: Beginner
 exl-id: 54f1ad6c-54b0-4448-8c38-806dd75c1dae
 source-git-commit: ed43a632a962747c9402ff8d5f0ce442c2cc6490
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Auf [dieser Seite](../../platform/using/adobe-campaign-explorer.md) wird die all
 
 Aktive Profile sind die Profile, die zu Fakturierungszwecken berücksichtigt werden.
 
-Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv erachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
+Für die Fakturierung werden nur **aktive** Profile berücksichtigt. Ein Profil wird als aktiv betrachtet, wenn es in den vergangenen zwölf Monaten über einen beliebigen Kanal angesprochen wurde oder mit ihm kommuniziert wurde.
 
 Ein Profil, das für mehrere Sendungen ausgewählt wurde, wird nur einmal gezählt.
 
