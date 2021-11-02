@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: ed88e1d6-c0d5-4a85-9f3e-be670f4bcc10
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '603'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von U
 
    >[!IMPORTANT]
    >
-   >Wenn die URL des Links als Titel verwendet wird, wird empfohlen, das Tracking zu deaktivieren, um das Risiko einer Zurückweisung aufgrund von Phishing zu vermeiden.
+   >Wenn die URL des Links als Titel verwendet wird, empfiehlt es sich, das Tracking zu deaktivieren, damit die Nachricht nicht wegen des Verdachts auf Phishing zurückgewiesen wird.
    >
    >Wenn Sie z. B. die URL www.adobe.com in die Nachricht einfügen und das Tracking aktivieren, wird der Hyperlink in https://nlt.adobe.net/r/?id=xxxxxx umgewandelt. Dieser wird u. U. von den E-Mail-Programmen der Empfänger als Spam interpretiert.
 
@@ -66,7 +66,7 @@ Das Tracking von Nachrichten ist standardmäßig aktiviert. Um das Tracken von U
    Für jede einzelne URL können Sie den Tracking-Modus auf einen dieser Werte festlegen.
 
    * **[!UICONTROL Aktiviert]**: Aktiviert das Tracking dieser URL.
-   * **[!UICONTROL Nicht verfolgt]** : deaktiviert das Tracking dieser URL.
+   * **[!UICONTROL Nicht aktiviert]**: Deaktiviert das Tracking dieser URL.
    * **[!UICONTROL Immer aktiviert]**: Aktiviert immer das Tracking dieser URL. Diese Eingabe wird gespeichert, sodass das Tracking automatisch aktiviert wird, wenn die URL das nächste Mal in einem Nachrichtentext vorkommt.
    * **[!UICONTROL Nie aktiviert]**: Aktiviert nie das Tracking dieser URL. Diese Eingabe wird gespeichert, sodass das Tracking automatisch deaktiviert wird, wenn die URL das nächste Mal in einem Nachrichtentext vorkommt.
    * **[!UICONTROL Opt-out]**: Diese URL wird als Opt-out-URL behandelt.
