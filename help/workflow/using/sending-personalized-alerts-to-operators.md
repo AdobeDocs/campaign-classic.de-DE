@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 21c97eb3-60cd-4d19-bc0f-5ba9ec17e70a
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Achten Sie darauf, dass der JavaScript-Code mit Ihren Workflow-Informationen üb
 
 Um diese Informationen abzurufen, gehen Sie wie folgt vor:
 
-1. Klicken Sie in der Aktivität **[!UICONTROL Abfrage]** mit der rechten Maustaste auf die ausgehende Transition und wählen Sie **[!UICONTROL Ziel anzeigen]** aus.
+1. Klicken Sie in der Aktivität **[!UICONTROL Abfrage]** mit der rechten Maustaste auf die ausgehende Transition und wählen Sie dann **[!UICONTROL Zielgruppe anzeigen...]**.
 
    ![](assets/uc_operator_4.png)
 
