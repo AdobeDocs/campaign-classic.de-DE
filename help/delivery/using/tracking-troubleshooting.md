@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: tracking-messages
 exl-id: 62e67a39-1e5c-4716-a3f3-b0ca69693cd0
 source-git-commit: e719c8c94f1c08c6601b3386ccd99d250c9e606b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '759'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ Gehen Sie beim Aktualisieren der Option &quot;NmsTracking_Pointer&quot; wie folg
 
 Sie können die Klick-Tracking-Formel anpassen und eine benutzerdefinierte Adobe Analytics-Tracking-Formel angeben.
 
-Diese Art der Anpassung muss mit Vorsicht erfolgen, um zu vermeiden, dass zusätzliche Zeilenvorschubzeichen hinzugefügt werden. Alle Linefeed-Zeichen, die außerhalb des JavaScript-Ausdrucks vorhanden sind, sind in der endgültigen Formel enthalten.
+Diese Art der Anpassung muss mit Vorsicht erfolgen, um zu vermeiden, dass zusätzliche Zeilenvorschubzeichen hinzugefügt werden. Alle Zeilenvorschubzeichen, die außerhalb des JavaScript-Ausdrucks vorhanden sind, sind in der endgültigen Formel enthalten.
 
 Diese Art von zusätzlichem Zeilenvorschubzeichen in der Tracking-URL führt bei einigen WebMail-Services (AOL, GMail usw.) zu Problemen.
 
@@ -159,7 +159,7 @@ Diese Art von zusätzlichem Zeilenvorschubzeichen in der Tracking-URL führt bei
    %>&cid=<%= message.delivery.internalName %>&bid=<%= message.id.toString().toLowerCase() %><% } %>
    ```
 
-Um zu verstehen, wo der zusätzliche Zeilenfeed ist, können Sie den JavaScript-Ausdruck durch eine feste String-STRING ersetzen.
+Um zu verstehen, wo sich der zusätzliche Zeilenvorschub befindet, können Sie den JavaScript-Ausdruck durch eine unveränderliche STRING-Zeichenkette ersetzen.
 
 ```
 // Incorrect
@@ -195,7 +195,7 @@ STRING1&cid=STRING2&bid=STRING3
    %>
    ```
 
-Um zu verstehen, wo der zusätzliche Zeilenfeed ist, können Sie den JavaScript-Ausdruck durch eine feste String-STRING ersetzen.
+Um zu verstehen, wo sich der zusätzliche Zeilenvorschub befindet, können Sie den JavaScript-Ausdruck durch eine unveränderliche STRING-Zeichenkette ersetzen.
 
 ```
 // Incorrect
