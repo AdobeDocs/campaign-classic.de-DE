@@ -1,15 +1,15 @@
 ---
 product: campaign
 title: Aggregat-Update
-description: Erfahren Sie mehr über die Workflow-Aktivität Aggregat-Update .
+description: Erfahren Sie mehr über die Workflow-Aktivität "Aggregat-Update".
 audience: workflow
 content-type: reference
 topic-tags: action-activities
 exl-id: d2b26af0-30a1-4852-acd5-996795f198a1
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '101'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
