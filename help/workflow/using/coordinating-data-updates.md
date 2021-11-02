@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: use-cases
 exl-id: 9959e22e-9aa0-410f-b22c-9ca1cac46b97
 source-git-commit: bd9f035db1cbad883e1f27fe901e34dfbc9c1229
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '303'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 ![](../../assets/common.svg)
 
-In diesem Anwendungsbeispiel wird die Erstellung eines Workflows beschrieben, mit dem gleichzeitige Aktualisierungen bei der Verwendung mehrerer Ausführungen eines Workflows verwaltet werden können.
+Das folgende Anwendungsbeispiel erläutert die Erstellung eines Workflows, mit dem begleitende Aktualisierungen bei der mehrmaligen Ausführung eines Workflows verwaltet werden können.
 
 Dabei muss sichergestellt werden, dass eine Aktualisierung beendet ist, bevor eine weitere durchgeführt wird. Wir werden zu diesem Zweck eine Instanzvariable erstellen und im Workflow testen, ob die Instanz ausgeführt wird, um zu entscheiden, ob die Ausführung des Workflows fortgesetzt und die Aktualisierung durchgeführt werden soll.
 
