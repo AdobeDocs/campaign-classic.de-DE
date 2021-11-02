@@ -1,12 +1,12 @@
 ---
 product: campaign
-title: Technote - Aktualisieren der Umgebung für die Verbindung mit Adobe Campaign mit IMS
+title: 'Technote: Aktualisieren Ihrer Umgebung zur Verbindung von Adobe Campaign mit IMS'
 description: Campaign – IMS-Aktualisierungen
 exl-id: ecb5a258-a150-46a3-8b83-2b2c06d873ee
 source-git-commit: 0c97efef21bfd3b8671847c3e1c27bb76cf167e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 84%
 
 ![](../../assets/v7-only.svg)
 
-Am 30. Juni 2021 wurden Änderungen an den Anmeldefunktionen von [Adobe Identity Management System](https://helpx.adobe.com/de/enterprise/using/identity.html) (IMS) vorgenommen, die sich auf Ihre Fähigkeit auswirken könnten, Adobe Campaign weiterhin zu verwenden. Erfahren Sie, wie Sie sicherstellen, dass Sie Adobe Campaign Classic v7 ohne Unterbrechung weiterhin verwenden können.
+Am 30. Juni 2021 wurden Änderungen an den Anmeldefunktionen des [Adobe Identity Management System](https://helpx.adobe.com/de/enterprise/using/identity.html) (IMS) vorgenommen, die Ihre Möglichkeit, Adobe Campaign weiterhin zu nutzen, beeinträchtigen könnten. Erfahren Sie, wie Sie sicherstellen, dass Sie Adobe Campaign Classic v7 ohne Unterbrechung weiterhin verwenden können.
 
 ## Was hat sich geändert?
 
-Adobe Identity Management Service (IMS) hat die Unterstützung alter Internet Explorer-Versionen auf **30. Juni 2021** eingestellt. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html).
+Adobe Identity Service (IMS) beendete am **30. Juni 2021** die Unterstützung alter Internet Explorer-Versionen. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html).
 
 Adobe möchte die IMS-Funktionalität für alle Kunden ab dem 30. Juni 2021 beibehalten. IMS ist Teil des Sicherheits-Frameworks, das es Benutzern ermöglicht, sich bei der Client-Konsole anzumelden, also bei Adobe Campaign.
 
@@ -76,7 +76,7 @@ Die folgende Warnmeldung wird Benutzern angezeigt, wenn sie ihre Client-Konsole 
 
 ![](../../integrations/using/assets/do-not-localize/errorMsg.png)
 
-Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/x-productkb/global/update-operating-system-and-browser.html)
+Wenn eine solche Warnung angezeigt wird, stellen Sie sicher, dass Sie die neuesten Updates des verwendeten Betriebssystems installieren. [Weitere Informationen](https://helpx.adobe.com/de/x-productkb/global/update-operating-system-and-browser.html)
 
 Wenn Sie Ihre Internet Explorer-Version nicht aktualisiert haben, wird die folgende Meldung angezeigt und Sie können keine Verbindung mehr zu Adobe Campaign herstellen:
 
