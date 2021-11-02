@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: technical-workflows
 exl-id: 9aed2665-cd4b-419c-b9f2-ea04fc1d8f01
 source-git-commit: f007dcbf63d7a69a6d532d0be99b0fa90f4f6d7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1724'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 94%
 
 ## Über technische Workflows {#overview}
 
-Die in diesem Abschnitt beschriebenen Workflows werden mit den verschiedenen in Adobe Campaign integrierten Packages installiert. Diese Pakete und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung ab. Integrierte Packages werden in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md) beschrieben.
+Die in diesem Abschnitt beschriebenen Workflows werden mit den verschiedenen in Adobe Campaign integrierten Paketen installiert. Diese Pakete und die damit verbundenen technischen Workflows hängen von Ihrer Lizenzvereinbarung ab. Integrierte Packages werden in [diesem Abschnitt](../../installation/using/installing-campaign-standard-packages.md) beschrieben.
 
 Standardmäßig sind technische Workflows in einem Unterordner des folgenden Knotens verfügbar: **[!UICONTROL Administration]** > **[!UICONTROL Betreibung]** > **[!UICONTROL Technische Workflows]**.
 
-Technische Workflows können nur von Benutzern mit Administratorrechten gestartet und geändert werden. Weiterführende Informationen zu Berechtigungen finden Sie in diesem Abschnitt [Abschnitt](../../platform/using/access-management-groups.md#default-groups).
+Technische Workflows können nur von Benutzern mit Administratorrechten gestartet und geändert werden. Weiterführende Informationen zu Berechtigungen finden Sie in diesem [Abschnitt](../../platform/using/access-management-groups.md#default-groups).
 
 >[!NOTE]
 >
@@ -80,4 +80,4 @@ Weiterführende Informationen zur Verfolgung technischer Workflows finden Sie in
 | **Benachrichtigung über Aufgaben** (taskMgt) | Marketing-Ressourcen (MRM)  – Nur Campaign v7 | Mit diesem Workflow können Sie Benachrichtigungen senden, die sich auf Aufgaben in Marketing-Kampagnen beziehen. |
 | **Tracking** (tracking) | Versand | Dieser Workflow ruft Tracking-Informationen ab und konsolidiert sie. Er aktualisiert außerdem die Berechnung der Tracking- und Versandstatistiken, insbesondere der Statistiken, die von den Archivierungs-Workflows des Message Centers verwendet werden. Er wird standardmäßig stündlich ausgelöst. |
 | **Update des Ereignisstatus** (updateEventsStatus) | Ausführung einer Transaktionsnachricht (Message Center – Ausführung) | Dieser Workflow weist Ereignissen einen Status zu. Folgende Status sind möglich:<ul><li>Ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde noch keine Nachrichtenvorlage zugeordnet.</li><li>Versand ausstehend: Das Ereignis befindet sich in der Warteschlange. Ihm wurde eine Nachrichtenvorlage zugeordnet und die Versandverarbeitung ist im Gange.</li><li>Gesendet: Dieser Status wird aus den Versandlogs übernommen. Er bedeutet, dass die Nachricht gesendet wurde.</li><li>Vom Versand ignoriert: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand ignoriert wurde.</li><li>Versandfehler: Dieser Status wird aus den Versand-Logs übernommen. Er bedeutet, dass der Versand fehlgeschlagen ist.</li><li>Ereignis wurde nicht berücksichtigt: Dem Ereignis konnte keine Nachrichtenvorlage zugeordnet werden. Es erfolgt kein weiterer Verarbeitungsversuch.</li></ul> |
-| **Update für Zustellbarkeit** (deliverabilityUpdate) | Versand | Sobald das Package Zustellbarkeits-Monitoring (Email Deliverability) installiert ist, wird dieser Workflow nächtlich ausgeführt und verwaltet die Qualifizierungsregeln für Bounce-E-Mails sowie die Liste der Domains und MXs. Dazu muss der HTTPS-Port auf der Plattform geöffnet sein. |
+| **Update für Zustellbarkeit** (deliverabilityUpdate) | Versand | Sobald das Paket zur Überwachung der Zustellbarkeit (E-Mail-Zustellbarkeit) installiert ist, wird dieser Workflow nachts ausgeführt und verwaltet die Qualifikationsregeln für unzustellbare E-Mails sowie die Liste der Domains und MXs. Dazu muss der HTTPS-Port auf der Plattform geöffnet sein. |
